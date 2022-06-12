@@ -451,7 +451,7 @@ function GetCityStateStatusToolTip( majorPlayerID, minorPlayerID, isFullInfo )
 		table_insert( tips, L("TXT_KEY_CSTRAIT_" .. GameInfo.MinorCivilizations[minorPlayer:GetMinorCivType()].Type))
 		
 		-- Traits and Personalities
-		local eMinorTrait = string.upper(L(GetCityStateTraitText(minorPlayerID)))
+		local eMinorTrait = GetCityStateTraitKey(minorPlayerID)
 		local eMinorPersonality = minorPlayer:GetPersonality()
 		
 		local sMinorPersonalityStr = ""
@@ -918,6 +918,23 @@ else
 end -- gk_mode
 
 function GetCityStateTraitText(minorPlayerID)
+
+	local minorPlayer = Players[minorPlayerID]
+
+	if minorPlayer then
+		local minorCivTraitID = minorPlayer:GetMinorCivTrait()
+		for key, value in pairs(MinorCivTraitTypes) do
+			if minorCivTraitID == value then
+				return L("TXT_KEY_CITY_STATE" .. key:sub(16) .. "_ADJECTIVE")
+			end
+		end
+	else
+		print("Lua error - invalid player index")
+	end
+
+	return ""
+end
+function GetCityStateTraitKey(minorPlayerID)
 
 	local minorPlayer = Players[minorPlayerID]
 
