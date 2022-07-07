@@ -3,7 +3,7 @@ SET Text = '빔 액슬'
 WHERE Tag = 'TXT_KEY_PROMOTION_ROUGH_TERRAIN_HALF_TURN';
 
 UPDATE Language_ko_KR
-SET Text = '험지 (숲, 정글, 습지, 언덕) 에서 이동력 [COLOR_NEGATIVE_TEXT]두 배[ENDCOLOR]'
+SET Text = '험지 (숲, 정글, 언덕) 에서 이동력 [COLOR_NEGATIVE_TEXT]두 배[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_PROMOTION_ROUGH_TERRAIN_HALF_TURN_HELP';
 
 INSERT INTO Language_ko_KR (Tag, Text)
