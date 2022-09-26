@@ -312,7 +312,7 @@
 			<Text>유능함이 곧 권력이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_HELP_BONUS">
-			<Text>모든 도시의 [ICON_CITIZEN]인구가 8 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
+			<Text>모든 도시의 [ICON_CITIZEN]인구가 6 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_HELP_PENALTY">
 			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
@@ -1098,7 +1098,7 @@
 			<Text>[ICON_SPY]스파이의 임무 성공률 +25%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SABOTAGE_HELP_PENALTY">
-			<Text>모든 도시의 [ICON_SPY]방첩도 -25</Text>
+			<Text>모든 도시의 [ICON_SPY]방첩도 -25%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_NONE_SHORT_DESC">
 			<Text>현행 유지</Text>
@@ -1113,7 +1113,7 @@
 			<Text>스파이는 자국의 기밀을 지킬 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_HELP_BONUS">
-			<Text>모든 도시의 [ICON_SPY]방첩도 +25</Text>
+			<Text>모든 도시의 [ICON_SPY]방첩도 +25%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_HELP_PENALTY">
 			<Text>[ICON_SPY]스파이의 임무 성공률 -25%</Text>
@@ -2510,10 +2510,10 @@
 			<Text>점령지는 우리 문명과 화합할 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_HELP_BONUS">
-			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_CITIZEN]인구에서 발생되는 [ICON_HAPPINESS_3]불행 -15%</Text>
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_CITIZEN]인구에서 발생되는 [ICON_HAPPINESS_3]불행 -20%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_HELP_PENALTY">
-			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 -25%</Text>
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 -20%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_SUBJUGATION_SHORT_DESC">
 			<Text>탄압</Text>
@@ -2528,10 +2528,10 @@
 			<Text>점령지는 우리 문명에 동화될 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_HELP_BONUS">
-			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 +25%</Text>
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 +20%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_HELP_PENALTY">
-			<Text>[ICON_OCCUPIED]점령된 도시의 [ICON_CITIZEN]인구가 발생시키는 [ICON_HAPPINESS_3]불행 +15%</Text>
+			<Text>[ICON_OCCUPIED]점령된 도시의 [ICON_CITIZEN]인구가 발생시키는 [ICON_HAPPINESS_3]불행 +10%</Text>
 		</Row>
 		<!--DEFENSES-->
 		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_DEFENSES_DESC">

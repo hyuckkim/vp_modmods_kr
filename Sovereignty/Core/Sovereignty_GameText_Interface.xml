@@ -131,9 +131,6 @@
 		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_CONFIRM">
 			<Text>정말 {1_Desc} 를 [COLOR_POSITIVE_TEXT]{2_Desc}[ENDCOLOR] 에 임명하시겠습니까?</Text>
 		</Row>
-		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_CONFIRM_WARNING">
-			<Text>[COLOR_WARNING_TEXT]이 의석에는 현재 {1_Desc} 가 임명되어있습니다. 정말 {3_Desc}을 새로운 [COLOR_POSITIVE_TEXT]{4_Desc}[ENDCOLOR]로 임명하시겠습니까?</Text>
-		</Row>
 		<!--===================================================-->
 		<!--GOVERNMENT OVERVIEW-->
 		<!--===================================================-->
@@ -162,12 +159,6 @@
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CAPITAL_STAT">
 			<Text>수도: {1_Desc}</Text>
-		</Row>
-		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CYCLE_POWER_STAT">
-			<Text>권력: {1_Desc}</Text>
-		</Row>
-		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CULTURE_STAT">
-			<Text>문화: {1_Desc}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_IDEOLOGY_STAT">
 			<Text>이념: {1_Desc}</Text>
@@ -222,7 +213,7 @@
 			<Text>이 표시가 있는 법안은 지금 시대에 해금되었음을 의미합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_DETAILED_REFORMS_TT">
-			<Text>법안의 세부 개요</Text>
+			<Text>법안 비용 표시</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_FOCUS_ICONS_TT">
 			<Text>법안 아이콘 표시</Text>
@@ -390,7 +381,7 @@
 		</Row>
 		<!--Councillor Appointed-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_COUNCILLOR_APPOINTED_SHORT_TEXT">
-			<Text>의원이 임명되었습니다!</Text>
+			<Text>장관이 임명되었습니다!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_COUNCILLOR_APPOINTED_TEXT">
 			<Text>[COLOR_POSITIVE_TEXT]{1_Desc} {2_Desc}[ENDCOLOR] 가 새로운 [COLOR_POSITIVE_TEXT]{3_Desc}[ENDCOLOR] 로 임명되었습니다.</Text>
@@ -407,7 +398,7 @@
 			<Text>독재정부 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_DICTATORSHIP_ESTABLISHED_DESC_CHANGE">
-			<Text>기존의 [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 전복시키고 [COLOR_POSITIVE_TEXT]독재 정부[ENDCOLOR]를 수립했습니다!</Text>
+			<Text>기존의 [COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR]를 전복시키고 [COLOR_POSITIVE_TEXT]독재 정부[ENDCOLOR]를 수립했습니다!</Text>
 		</Row>
 		<!--Caliphate Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_SHORT_DESC">
@@ -420,7 +411,7 @@
 			<Text>칼리파국 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--HRE Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_SHORT_DESC">
@@ -433,7 +424,7 @@
 			<Text>신성 로마 제국 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--Mandate Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_SHORT_DESC">
@@ -446,7 +437,7 @@
 			<Text>천자국 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--Papacy Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_SHORT_DESC">
@@ -459,7 +450,7 @@
 			<Text>교황청 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--Shogunate Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_SHORT_DESC">
@@ -472,7 +463,7 @@
 			<Text>막부 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--Government Established-->
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_SHORT_DESC">
@@ -485,7 +476,7 @@
 			<Text>정부 수립!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_DESC_CHANGE">
-			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+			<Text>[COLOR_WARNING_TEXT]{2_Desc}[ENDCOLOR] 를 교체하고 [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
 		</Row>
 		<!--Legislature Dissolution Imminent!-->
 		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_IMMINENT_SHORT_TEXT">
@@ -493,13 +484,6 @@
 		</Row>
 		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_IMMINENT_TEXT">
 			<Text>[ICON_JFD_GOVERNMENT_COOLDOWN]입법부 재구성 대기시간이 [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] 턴 남았습니다. 기존의 입법부는 해산되고 새로운 입법부가 구성될 것입니다.</Text>
-		</Row>
-		<!--Legislature Dissolved!-->
-		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_SHORT_TEXT">
-			<Text>입법부 해산!</Text>
-		</Row>
-		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_TEXT">
-			<Text>[ICON_JFD_LEGISLATURE]입법부가 해산되었습니다.</Text>
 		</Row>
 		<!--New Legislature!-->
 		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_SHORT_TEXT">
