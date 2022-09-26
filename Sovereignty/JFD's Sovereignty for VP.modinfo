@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="d769cac9-5608-4826-9f7f-2d308b287ea6" version="12">
+<Mod id="d769cac9-5608-4826-9f7f-2d308b287ea6" version="13">
   <Properties>
     <Name>JFD's Sovereignty for VP</Name>
     <Teaser>[COLOR_CYAN]Sovereignty[ENDCOLOR] Mod for Vox Populi.</Teaser>
@@ -28,15 +28,8 @@
     <Mod id="bf6d0feb-443e-4d49-9f2b-fe3335d5b972" minversion="0" maxversion="999" title="(3aL) Vox Populi - CF (EUI) INT" />
     <Mod id="dbf896aa-27fd-4510-87d7-f797391250db" minversion="0" maxversion="999" title="(4bL) UI - Promotion Tree for VP Localized" />
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era (Vox Populi)" />
-    <Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" minversion="0" maxversion="999" title="(overhaul) Future Age (Vox Populi)" />
-    <Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" minversion="0" maxversion="999" title="(7) Community Events" />
-    <Mod id="7b60abab-0083-4aa5-92aa-832180d7da9b" minversion="0" maxversion="999" title="(7a) Civ6AdditionEureka" />
-    <Mod id="e569b799-91d5-4360-b407-be5146fcec32" minversion="0" maxversion="999" title="(8) Events and Decisions (CBO)" />
-    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="(overhaul) Unique City-States" />
-    <Mod id="6bc3cb6e-a697-491e-9347-5e3e02640f00" minversion="0" maxversion="999" title="Historical Religions Edit (BNW or GK)" />
-    <Mod id="8562c016-f5bb-79hg-b37e-a3b40d3yg13f" minversion="0" maxversion="999" title="pdansUnitTweaks" />
-    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Vox Populi's Bare Necessities" />
-    <Mod id="60f79b1d-92a7-40fc-900e-5d766a75ed42" minversion="0" maxversion="999" title="World Congress Reformation" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="(over) More Unique Components for VP"/>
   </References>
   <Blocks />
   <Files>
@@ -249,21 +242,6 @@
     <File md5="7918E41DC1D1D8C26D5B0F6E99338077" import="1">Art/Images/NewLegislatureShogunate.dds</File>
     <File md5="4CFAD089C0576EEB78935E703FFABE1E" import="1">Art/Images/NewLegislatureTheocracy.dds</File>
     <File md5="B9CDBA85D8FC5E155E1FF5BDC6235484" import="1">Art/Images/NewLegislatureTwoParty.dds</File>
-    <File md5="17EF82C59B0165C86695C7451D6A7FF8" import="1">Art/Images/Wonders/Wonder_AbuSimbel.dds</File>
-    <File md5="CF67CFD810DB99FAFCF578B776699D74" import="1">Art/Images/Wonders/Wonder_AmerFort.dds</File>
-    <File md5="37033CB4D99ADD47FDED208F38CBE22D" import="1">Art/Images/Wonders/Wonder_Apadana.dds</File>
-    <File md5="58E80B5468C5107A2089FA141DEA3BBC" import="1">Art/Images/Wonders/Wonder_BudaCastle.dds</File>
-    <File md5="9637F74C831F77DE79E2DA7486A587BE" import="1">Art/Images/Wonders/Wonder_DogesPalace.dds</File>
-    <File md5="3D4A8FE326F7BC9D865D8419FE95296D" import="1">Art/Images/Wonders/Wonder_ForumMagnum.dds</File>
-    <File md5="AEEE93A4F727FEA838C329660C2BA707" import="1">Art/Images/Wonders/Wonder_HofburgPalace.dds</File>
-    <File md5="C81F652028B4BC1FDCC03A8707D82DDB" import="1">Art/Images/Wonders/Wonder_MesaVerde.dds</File>
-    <File md5="0D8C5347CD22BE5491D04F89AB44FAB5" import="1">Art/Images/Wonders/Wonder_MosqueDamascus.dds</File>
-    <File md5="A07A3C82B410BF96139EC5815EA71D13" import="1">Art/Images/Wonders/Wonder_MotherlandCalls.dds</File>
-    <File md5="97501FAE2F9102F856381E7B5F83A198" import="1">Art/Images/Wonders/Wonder_PotalaPalace.dds</File>
-    <File md5="8829680B0D12F749F42C52E85C33291C" import="1">Art/Images/Wonders/Wonder_SargonsPalace.dds</File>
-    <File md5="54AB32B80663254E808DA8319B7F45FF" import="1">Art/Images/Wonders/Wonder_StPetersBasilica.dds</File>
-    <File md5="FE150CE04BF6EA5385E756BC53AF99A4" import="1">Art/Images/Wonders/Wonder_TempleOfHeaven.dds</File>
-    <File md5="B87BF24F1742AF042384377AE3112F10" import="1">Art/Images/Wonders/Wonder_Versailles.dds</File>
     <File md5="6E56801386A34126721EF97A10D7D4A2" import="1">Audio/Sounds/Anarchy.mp3</File>
     <File md5="ED17F0D31A2457A1E6799A956567C1A3" import="1">Audio/Sounds/GovernmentCaliphateEstablished.mp3</File>
     <File md5="30A0FC480B29CEC4482C0F30371EDC3F" import="0">Audio/Sounds/GovernmentChoiceCaliphate128.dds</File>
@@ -278,21 +256,6 @@
     <File md5="D2C34BF257CF1F143FC9D4F0CCF15314" import="1">Audio/Sounds/GovernmentShogunateEstablished.mp3</File>
     <File md5="A9E94E8DF95AAE5453CDE9435B231C14" import="1">Audio/Sounds/ReformPassable.wav</File>
     <File md5="A901297AD964701A123F7E6060A49D1D" import="1">Audio/Sounds/ReformPassed.wav</File>
-    <File md5="3F7949573C57C359105CD3B2F11C87D3" import="1">Audio/Wonders/Wonder_AbuSimbel.mp3</File>
-    <File md5="87D3CC2770589C5A90E99FB4E26E8B4D" import="1">Audio/Wonders/Wonder_AmerFort.mp3</File>
-    <File md5="98CD64233DCD7C2671C35F10B8584739" import="1">Audio/Wonders/Wonder_Apadana.mp3</File>
-    <File md5="F46288EF932CEBAB30407098B7921315" import="1">Audio/Wonders/Wonder_BudaCastle.mp3</File>
-    <File md5="FBAD2019075C5A2319986EAFA67B13E1" import="1">Audio/Wonders/Wonder_DogesPalace.mp3</File>
-    <File md5="8A5A483B03B0A7458FEEB9D99D69AE43" import="1">Audio/Wonders/Wonder_ForumMagnum.mp3</File>
-    <File md5="8DEEBC71AFFDB7DCAA92794B2D71DDD7" import="1">Audio/Wonders/Wonder_HofburgPalace.mp3</File>
-    <File md5="9DE9B94D7759C26917312D3B4DF008C0" import="1">Audio/Wonders/Wonder_MosqueDamascus.mp3</File>
-    <File md5="54767E7E39E367FEB0D7670CEB7D527F" import="1">Audio/Wonders/Wonder_PotalaPalace.mp3</File>
-    <File md5="8B29B36432A6D24B2EF5E2B0AA6D112F" import="1">Audio/Wonders/Wonder_TempleOfHeaven.mp3</File>
-    <File md5="394CBF52925214CEF2BA26CD74883F71" import="1">Audio/Wonders/Wonder_MesaVerde.mp3</File>
-    <File md5="6E370194ED1E2F2706278F23EA93E1FC" import="1">Audio/Wonders/Wonder_MotherlandCalls.mp3</File>
-    <File md5="83C263C492B35C4F21182BC1D8845A98" import="1">Audio/Wonders/Wonder_SargonsPalace.mp3</File>
-    <File md5="D67640B16EC25409E86C25B02303DA18" import="1">Audio/Wonders/Wonder_StPetersBasilica.mp3</File>
-    <File md5="8162D5C6CABD5F952DCAC39DF351E607" import="1">Audio/Wonders/Wonder_Versailles.mp3</File>
     <File md5="9471179B50A0A420736E7643FDF648B2" import="0">Core/Sovereignty_Buildings.sql</File>
     <File md5="58363F53AD4B637ADEFACE4A83F8523A" import="0">Core/Sovereignty_DiploModifiers.sql</File>
     <File md5="22702D2983C4FB3F894BA91A1699755D" import="0">Core/Sovereignty_Wonders.sql</File>
@@ -326,19 +289,13 @@
     <File md5="58A16A96FD60F76C39457A5F03FE79EE" import="0">Lua/JFD_Sovereignty_EndTurnButton.xml</File>
     <File md5="CEA4B0725887DC866B080216C418CD6E" import="0">Lua/JFD_Sovereignty_GovernmentOverview.lua</File>
     <File md5="17D35E064ADB27D404333FC59655E74C" import="0">Lua/JFD_Sovereignty_GovernmentOverview.xml</File>
+    <File md5="17D35E064ADB27D404333FC59655E74C" import="0">Lua/JFD_Sovereignty_ChooseCouncillor.lua</File>
+    <File md5="17D35E064ADB27D404333FC59655E74C" import="0">Lua/JFD_Sovereignty_ChooseCouncillor.xml</File>
     <File md5="37BDCBFFDE667046CBD3CD39FCD0FD8A" import="0">Lua/JFD_Sovereignty_Functions.lua</File>
-    <File md5="9A5D72EA1546D093FC4CC62D7106E89A" import="1">Lua/UI/InGame/Popups/GreatPersonRewardPopup.lua</File>
-    <File md5="1D34451A1779533FAF3D242F517E37CA" import="1">Lua/UI/InGame/Popups/GreatPersonRewardPopup.xml</File>
     <File md5="499D258A7F485F8BA82863D9215E6B8D" import="1">Lua/UI/WorldView/NotificationPanel/Images/CityEventNotification80.dds</File>
     <File md5="E721649DC27B61FD4840A61585E42440" import="1">Lua/UI/WorldView/NotificationPanel/Images/EventNotification80.dds</File>
     <File md5="DE48FBA4B06265C41F73C1E0F30D6990" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCityEventGlow.dds</File>
     <File md5="4FEA391E88CC5EEF3C49EA84122B8D61" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCityEventOrange.dds</File>
-    <File md5="9B462A7834306B3AAFF520277317E62F" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCycleOfPower80.dds</File>
-    <File md5="2D61AD0B13A91BC3801C47F9516ED3DF" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCycleOfPowerAnarchy80.dds</File>
-    <File md5="7BFFB58710DC2874332A118082D7A4E3" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCycleOfPowerChoice.dds</File>
-    <File md5="166E402C9B0FFF84BACB0D7353C22AED" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCycleOfPowerChoiceGlow.dds</File>
-    <File md5="B9E7AEEC47B5364AFAF7DF28400CA453" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationCyclePower80.dds</File>
-    <File md5="15ABB7696E1038B5D450275D976B2721" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationEpithet80.dds</File>
     <File md5="95D498B7DD244272391492AF9BA4F4A1" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationEventGlow.dds</File>
     <File md5="879CF550A56D42755709363D22253E11" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationEventOrange.dds</File>
     <File md5="E463E66F2C4B4D68096FE89B649CBFF8" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationGovernment80.dds</File>
@@ -347,19 +304,10 @@
     <File md5="29009EB1EF5F8A4453D58CD7B2C25D6B" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationGovernmentLegislature80.dds</File>
     <File md5="BE942011C373A5F8796E9BCB5C75A3CA" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationGovernmentReform80.dds</File>
     <File md5="803293271444EA6ED50AB7BB23D778EA" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationGovernmentReformAnarchy80.dds</File>
-    <File md5="89B738E5E0A0F1B5E0B888979F6C0C7E" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationDarkAge.dds</File>
-    <File md5="1A94FDF4044AA8DC320F0B8571F245A3" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationDarkAgeGlow.dds</File>
-    <File md5="54B70708D12B938EC8DC6499BBD2D07F" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationModernization80.dds</File>
-    <File md5="3CF38E3B5CFCDFF35F944ECDC638BD0D" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationModernizationChoice.dds</File>
-    <File md5="220306130073FC3D8FDD8C944F5F128F" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationModernizationChoiceGlow.dds</File>
-    <File md5="686C33EE03A424DD22EC1A6DB51FF627" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationPrisonersWar80.dds</File>
-    <File md5="E3344429E77FD371EDA6FA14BF247288" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationPrisonersWarChoice.dds</File>
-    <File md5="FB9F2D4577E6E1185E6236F1CEB1A543" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationPrisonersWarChoiceGlow.dds</File>
-    <File md5="686C33EE03A424DD22EC1A6DB51FF627" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationSpiritIdeology80.dds</File>
-    <File md5="440326FB58E0E05AFAC4BD004DCA030D" import="1">Lua/UI/WorldView/NotificationPanel/Images/NotificationSpiritIdeologyGlow80.dds</File>
     <File md5="CCD06E2F126D1ABBD6E19F32FC0B9DD9" import="1">Lua/UI/WorldView/NotificationPanel/NotificationPanel.lua</File>
     <File md5="4D86196594E5DBF43C70ACAE6AA4D8CB" import="1">Lua/UI/WorldView/NotificationPanel/NotificationPanel.xml</File>
     <File md5="5690A1B2ACA2729FD9D55156E232AB1A" import="1">Lua/Utilities/PlotIterators.lua</File>
+    <File md5="5690A1B2ACA2729FD9D55156E232AB1A" import="1">Lua/Utilities/SaveUtils.lua</File>
     <File md5="2D0E5BC4C5C3C8E154D2E13836D5D7AF" import="1">Lua/Utilities/JFD_Sovereignty_IncludeUtils.lua</File>
     <File md5="2D0E5BC4C5C3C8E154D2E13836D5D7AF" import="1">Lua/Utilities/JFD_Sovereignty_Utils.lua</File>
   </Files>
@@ -413,6 +361,11 @@
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="Lua/JFD_Sovereignty_TopPanel.lua">
       <Name>JFD_Sovereignty_TopPanel.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/JFD_Sovereignty_ChooseCouncillor.lua">
+      <Name>JFD_Sovereignty_ChooseCouncillor.lua</Name>
       <Description>
       </Description>
     </EntryPoint>
