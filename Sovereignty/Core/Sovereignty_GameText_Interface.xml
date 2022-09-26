@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/2/2019 5:53:11 AM -->
+<GameData>
+	<Language_ko_KR>
+		<!--===================================================-->
+		<!--CHOOSE GOVERNMENT POPUP-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT">
+			<Text>정부를 선택하십시오</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_TITLE">
+			<Text>정부 선택</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_OPTIONS">
+			<Text>정부를 수립하면 [ICON_JFD_REFORM] 법안을 개정할 수 있습니다. [ICON_JFD_REFORM] 법안은 이익의 대가로 특정한 불이익이 부여됩니다. 법안을 개정하려면 [ICON_JFD_SOVEREIGNTY] 주권이 필요하며, 선택한 [ICON_JFD_GOVERNMENT] 정부의 당파에 기반하여 필요한 주권에 영향을 미칩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_OPTIONS_CHOOSE">
+			<Text>다음 정부 중 하나를 선택하십시오:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_OPTIONS_CHANGE">
+			<Text>다음 정부 중 하나로 변경할 수 있습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_OPTIONS_VIEW">
+			<Text>현재 선택 가능한 정부:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_CONFIRM">
+			<Text>정말 [COLOR_POSITIVE_TEXT]{1_GovtName}[ENDCOLOR] 정부를 수립하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_CONFIRM_CHANGE">
+			<Text>정말 [COLOR_POSITIVE_TEXT]{1_GovtName}[ENDCOLOR] 정부로 변경하시겠습니까? 정부를 변경하면[COLOR_WARNING_TEXT]모든[ENDCOLOR] [ICON_JFD_REFORM]법안을 재선택할 수 있습니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_CONFIRM_CHANGE_ANARCHY">
+			<Text>정말 [COLOR_POSITIVE_TEXT]{1_GovtName}[ENDCOLOR] 정부로 변경하시겠습니까? 정부를 변경하면[COLOR_WARNING_TEXT]모든[ENDCOLOR] [ICON_JFD_REFORM]법안을 재선택할 수 있고, [COLOR_WARNING_TEXT]{2_Num} 턴 동안 [ICON_RESISTANCE]무정부상태가 됩니다[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_PEDIA">
+			<Text>[COLOR_POSITIVE_TEXT]우클릭하여 더 많은 정보를 확인하십시오.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_CURRENT_HEADER">
+			<Text>[ICON_MINUS] 현재의 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_CURRENT_HEADER_COLLAPSED">
+			<Text>[ICON_PLUS] 현재의 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_AVAILABLE_HEADER">
+			<Text>[ICON_MINUS] 선택 가능한 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_AVAILABLE_HEADER_COLLAPSED">
+			<Text>[ICON_PLUS] 선택 가능한 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_LOCKED_HEADER">
+			<Text>[ICON_MINUS] 선택할 수 없는 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_LOCKED_HEADER_COLLAPSED">
+			<Text>[ICON_PLUS] 선택할 수 없는 정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_ANARCHY">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]정부를 변경하면 1턴 동안 [ICON_RESISTANCE] 무정부상태가 됩니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_CURRENT">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]당신의 현재 정부입니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_GOVERNMENT">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부를 수립하려면 {1_Description}를 수립해야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_BUILDING">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부를 수립하려면 {1_Description} 불가사의를 건설해야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_IDEOLOGY">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부를 수립하려면 이념을 선택해야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_RELIGION">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부를 수립하려면 종교가 있어야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_POPULATION">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]총 인구 {1_Num} (you have {2_Num})를 가 있어야 이 정부를 수립할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_TECH">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부는 {1_Description} 기술을 연구해야 수립할 수 있습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_UNIQUE">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부는 세계에서 한 문명만 수립할 수 있습니다. 현재 {1_Desc} 가 이 정부를 수립했습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_UNIQUE_YOU">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부는 세계에서 한 문명만 수립할 수 있습니다. 현재 이 정부를 수립한 사람은 당신입니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CHOOSE_JFD_GOVERNMENT_SHOW_FACTION_DETAILS">
+			<Text>당파 세부 정보</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_LEGISLATURE_POPUP_TITLE">
+			<Text>입법부 당파</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_LEGISLATURE_POPUP_TEXT">
+			<Text>각각의 정부는 고유의 입법부와 당파를 갖고 있습니다.[NEWLINE][NEWLINE]입법부를 구성하는 당파들은 각자의 [ICON_JFD_SOVEREIGNTY] 주권에 기반하여, 각자가 지지하는 [ICON_JFD_REFORM] 법안을 더 쉽게 통과시키고 반대하는 개정은 더 어렵게 만들 것입니다.[NEWLINE][NEWLINE] [COLOR_POSITIVE_TEXT]{1_Desc} 에 속한 파벌[ENDCOLOR]:</Text>
+		</Row>
+		<!--===================================================-->
+		<!--CIVILIZATION INFO-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_CIVILIZATION_INFO_LAST_REFORM">
+			<Text>[ICON_JFD_REFORM] Last: [COLOR_JFD_SOVEREIGNTY]{1_Desc}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CIVILIZATION_INFO_LAST_POLICY">
+			<Text>[ICON_CULTURE] Last: [COLOR_MAGENTA]{1_Desc}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CIVILIZATION_INFO_GOVERNMENT">
+			<Text>[ICON_JFD_GOVERNMENT] {1_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_CIVILIZATION_INFO_SOVEREIGNTY">
+			<Text>[ICON_JFD_SOVEREIGNTY] 주권: [COLOR_JFD_SOVEREIGNTY]{1_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<!--===================================================-->
+		<!--DIPLO CORNER-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_BUTTON_OPTIONS_GOVERNMENT_TURNS_TT">
+			<Text>정부 개요[NEWLINE][NEWLINE][ICON_JFD_REFORM_COOLDOWN] 법안 개정 대기시간: [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] 턴[NEWLINE][ICON_JFD_GOVERNMENT_COOLDOWN] 입법부 재구성 대기시간: [COLOR_POSITIVE_TEXT]{2_Num}[ENDCOLOR] 턴(s)[NEWLINE][NEWLINE]법안과 입법부 재구성 대기시간을 전환하려면 마우스 오른쪽 버튼을 클릭하십시오.</Text>
+		</Row>
+		<!--===================================================-->
+		<!--GREAT PERSON POPUP-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT">
+			<Text>의회에 임명하십시오</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_TT">
+			<Text>위인을 [COLOR_POSITIVE_TEXT]{1_Desc}[ENDCOLOR] 의회에 임명할 수 있습니다.[NEWLINE][NEWLINE]각 유형의 의석 당 한 명의 위인만 가능하며, 각각의 개혁 비용에 관련된 이익을 부여합니다. 한 번에 한 명의 위인만 의석에 임명될 수 있으며 자연적으로 탄생한 위인만 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_TT_DISABLED">
+			<Text>[COLOR_WARNING_TEXT]공식적인 정부를 수립하기 전 까지는 의석에 위인을 임명할 수 없습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_TT_WARNING">
+			<Text>[COLOR_WARNING_TEXT]현재 {1_Desc} 의원이 활동 중 입니다. 이 위인을 의회에 임명하기로 선택하면 기존 의원은 교체됩니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_CONFIRM">
+			<Text>정말 {1_Desc} 를 [COLOR_POSITIVE_TEXT]{2_Desc}[ENDCOLOR] 에 임명하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_COUNCILLOR_APPOINT_CONFIRM_WARNING">
+			<Text>[COLOR_WARNING_TEXT]이 의석에는 현재 {1_Desc} 가 임명되어있습니다. 정말 {3_Desc}을 새로운 [COLOR_POSITIVE_TEXT]{4_Desc}[ENDCOLOR]로 임명하시겠습니까?</Text>
+		</Row>
+		<!--===================================================-->
+		<!--GOVERNMENT OVERVIEW-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SCREEN_TITLE">
+			<Text>정부 개요</Text>
+		</Row>
+		<!--Tabs-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_YOUR_GOVERNMENT_TAB">
+			<Text>정부 개요</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_YOUR_REFORMS_TAB">
+			<Text>시행중인 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_WORLD_GOVERNMENTS_TAB">
+			<Text>다른 문명의 정부</Text>
+		</Row>
+		<!--Your Government-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORMS_DISABLED">
+			<Text>정부를 수립할 때까지 법안을 개정할 수 없습니다. [ICON_CITIZEN] 총 인구가 6 이상이여야 정부를 수립할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORMS_DISABLED_ANARCHY">
+			<Text>[COLOR_WARNING_TEXT]{1_Num} 턴 동안 [ICON_RESISTANCE] 무정부 상태가 됩니다! 무정부 상태 동안은 법안을 개정할 수 없습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_POLITICAL_REFORMS">
+			<Text>법안 개정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CAPITAL_STAT">
+			<Text>수도: {1_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CYCLE_POWER_STAT">
+			<Text>권력: {1_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CULTURE_STAT">
+			<Text>문화: {1_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_IDEOLOGY_STAT">
+			<Text>이념: {1_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_RELIGION_STAT">
+			<Text>국교: {1_Desc}</Text>
+		</Row>
+		<!--Your Government: Change Government-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_VIEW_GOVERNMENTS">
+			<Text>정부 확인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CHANGE_GOVERNMENTS">
+			<Text>[COLOR_WARNING_TEXT]정부 교체[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_VIEW_GOVERNMENTS_TT">
+			<Text>선택 가능한 정부를 확인합니다.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT] [ICON_JFD_FACTION_REVOLUTIONARIES] 혁명 세력이 우세할 때만 현재 정부를 교체할 수 있습니다. 정부를 교체하면 모든 법안이 초기화됩니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_VIEW_GOVERNMENTS_TT_DISABLED">
+			<Text>선택 가능한 정부를 확인합니다.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT] [ICON_JFD_FACTION_REVOLUTIONARIES] 혁명 세력이 최대 당파일 때만 현재 정부를 교체할 수 있습니다. 정부를 교체하면 모든 법안이 초기화됩니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_VIEW_GOVERNMENTS_TT_DISABLED_SPECIAL">
+			<Text>선택 가능한 정부를 확인합니다.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT] [ICON_JFD_FACTION_REVOLUTIONARIES] 혁명 세력이 최대 당파일 때만 현재 정부를 교체할 수 있습니다. 정부를 교체하면 모든 법안이 초기화됩니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]현재 정부를 교체할 수 없습니다.[ENDCOLOR]</Text>
+		</Row>
+		<!--Your Government: Councillors-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_COUNCILLORS_VACANT">
+			<Text> - [COLOR_WARNING_TEXT]공석[ENDCOLOR][NEWLINE]</Text>
+		</Row>
+		<!--Your Government: Legislature-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_LEGISLATURE">
+			<Text>입법부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_DETAILED_FACTIONS_TT">
+			<Text>공석인 당파 표시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_POWER_TT">
+			<Text>당파가 지지하거나 반대하는 개혁을 통과시키는데 필요한 [ICON_JFD_SOVEREIGNTY] 주권의 총량.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_POWER_TT_RESULT">
+			<Text>당파가 지지하거나 반대하는 개혁을 통과시키는데 필요한 [ICON_JFD_SOVEREIGNTY] 주권의 총량.[NEWLINE][NEWLINE]당신의 도시는 다음과 같이 투표했습니다:[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_POWER_TT_POLICIES">
+			<Text>정책</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_POWER_TT_TENETS">
+			<Text>이념</Text>
+		</Row>
+		<!--Your Government: Political Reforms-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_NEW_REFORMS">
+			<Text>최근 이 법안을 해금했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_NEW_REFORMS_TT">
+			<Text>이 표시가 있는 법안은 지금 시대에 해금되었음을 의미합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_DETAILED_REFORMS_TT">
+			<Text>법안의 세부 개요</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_FOCUS_ICONS_TT">
+			<Text>법안 아이콘 표시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_SHOW_NEW_REFORMS_TT">
+			<Text>새로 해금된 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FREE_REFORMS_LABEL">
+			<Text>[COLOR_JFD_SOVEREIGNTY]# of Free Reforms: {1_Num}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FREE_REFORMS_LABEL_TT">
+			<Text>[ICON_JFD_REFORM_COOLDOWN] 대기시간을 증가시키지 않고 {1_Num} 회 법안을 개정할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FREE_REFORMS_INFO">
+			<Text>이 법안은 재사용 대기시간을 발생시키지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CONFIRM_REFORM">
+			<Text>정말 [COLOR_POSITIVE_TEXT]{1_Desc}[ENDCOLOR] 을 선택하시겠습니까?</Text>
+		</Row>
+		<!--Your Government: Revolutionary Sentiment-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REVOLUTIONARY_SENTIMENT">
+			<Text>[COLOR_WARNING_TEXT]+{1_Num}[ENDCOLOR] [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REVOLUTIONARY_SENTIMENT_TT">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람은 법안 개정에 대한 불만을 의미합니다. 혁명의 바람은 입법부의 [ICON_JFD_FACTION_REVOLUTIONARIES] [COLOR_WARNING_TEXT]혁명 세력[ENDCOLOR]과 법안 개정에 필요한 [ICON_JFD_SOVEREIGNTY] 주권에 영향을 미치고, [ICON_JFD_REFORM] [ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대기시간을 증가시킵니다.{1_TT}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REVOLUTIONARY_SENTIMENT_TT_DICTATORSHIP">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람은 법안 개정에 대한 불만을 의미합니다. 혁명의 바람은 입법부의 [ICON_JFD_FACTION_REVOLUTIONARIES] [COLOR_WARNING_TEXT]혁명 세력[ENDCOLOR]과 법안 개정에 필요한 [ICON_JFD_SOVEREIGNTY] 주권에 영향을 미치고, [ICON_JFD_REFORM] [ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대기시간을 증가시킵니다.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]독재 정부는 모든 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람을 무효화합니다.</Text>
+		</Row>
+		<!--Your Government: Turn Details-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_NEXT_REFORM_TURN_LABEL">
+			<Text>[ICON_JFD_REFORM_COOLDOWN] 법안 개정 대기시간 [COLOR_WARNING_TEXT]{1_Num}[ENDCOLOR] 턴</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CURRENT_SOVEREIGNTY_LABEL">
+			<Text>[ICON_JFD_SOVEREIGNTY] 현재 주권: [COLOR_JFD_SOVEREIGNTY]{1_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<!--Your Government: Dominant Faction-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_DOMINANT_FACTION_TT">
+			<Text>집권당 : [COLOR_POSITIVE_TEXT]{1_Desc}[ENDCOLOR] 집권당은 [ICON_JFD_SOVEREIGNTY] 주권 필요량과 관련하여 가장 큰 영향을 미치며, 지배 당파의 권력을 증가시키는 모든 조건에 영향을 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_FACTION_SOV_MODIFIER_FROM_GOVERNMENT">
+			<Text>[NEWLINE][ICON_BULLET]정부에서 {2_HL}{1_Num}%[ENDCOLOR] [ICON_JFD_SOVEREIGNTY]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_FACTION_SOV_MODIFIER_FROM_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]건물에서 {2_HL}{1_Num}%[ENDCOLOR] [ICON_JFD_SOVEREIGNTY]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_FACTION_SOV_MODIFIER_FROM_POLICIES">
+			<Text>[NEWLINE][ICON_BULLET]정책에서 {2_HL}{1_Num}%[ENDCOLOR] [ICON_JFD_SOVEREIGNTY]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_FACTION_SOV_MODIFIER_FROM_REFORMS">
+			<Text>[NEWLINE][ICON_BULLET]법안에서 {2_HL}{1_Num}%[ENDCOLOR] [ICON_JFD_SOVEREIGNTY]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_FACTION_SOV_MODIFIER_FROM_TRAITS">
+			<Text>[NEWLINE][ICON_BULLET]특성에서 {2_HL}{1_Num}%[ENDCOLOR] [ICON_JFD_SOVEREIGNTY]</Text>
+		</Row>
+		<!--Your Government: Legislature-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_NEXT_GOVERNMENT_TURN_TT">
+			<Text>현재의 입법부가 해산되고 새로운 입법부가 구성되기까지의 턴: [COLOR_WARNING_TEXT]{1_Num}[ENDCOLOR] 턴</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_GENERAL_LEGISLATURE_HELP">
+			<Text>[ICON_JFD_GOVERNMENT_COOLDOWN] 입법부 재구성 대기시간이 끝나면 입법부가 재구성되고 당파의 권력 구조가 재배치됩니다. 각 당파의 점유율은 각자의 이해관계에 기반해서 법안 개정에 필요한 [ICON_JFD_SOVEREIGNTY] 주권의 필요량에 직접적인 영향을 미칩니다.[NEWLINE][NEWLINE]각 당파 위로 마우스를 올려놓으면 당파의 점유율을 결정하는 요소들을 확인할 수 있습니다.</Text>
+		</Row>
+		<!--Your Reforms-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_PANEL">
+			<Text>법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_ALIGNMENT_PANEL">
+			<Text>정치적 지지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_GROUP_PANEL">
+			<Text>유형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_BRANCH_PANEL">
+			<Text>분류</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_EFFECT_PANEL">
+			<Text>효과</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_OPNIONS_PANEL">
+			<Text>의견</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_SHOW_PENALTY_TT">
+			<Text>법안의 불이익 표시.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_SHOW_NOT_NONE_TT">
+			<Text>활성화된 법안만 표시.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_OPINION">
+			<Text>[COLOR_POSITIVE_TEXT]-{1_Num}% [COLOR_NEGATIVE_TEXT]+{2_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_OPPOSED">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]기피[ENDCOLOR] by {1_Desc} ([COLOR_JFD_SOVEREIGNTY_FADING]+{2_Num}%[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_SUPPORTED">
+			<Text>[COLOR_FADING_POSITIVE_TEXT]선호[ENDCOLOR] by {1_Desc} ([COLOR_JFD_SOVEREIGNTY]-{2_Num}%[ENDCOLOR])</Text>
+		</Row>
+		<!--World Governments-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CIVILIZATION_PANEL">
+			<Text>문명</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_LEADER_PANEL">
+			<Text>지도자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_LEADER_PANEL_TT_EMBASSY_REQ">
+			<Text>[COLOR_WARNING_TEXT]이 문명의 법안을 확인하려면 대사관을 수락해야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_LEADER_PANEL_TT_REFORM_LIST">
+			<Text>선택한 법안 개정:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_PANEL">
+			<Text>집권당</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_PANEL_NONE">
+			<Text>없음</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FACTION_PANEL_TT">
+			<Text>[COLOR_JFD_SOVEREIGNTY]{3_Icon} {1_Desc}[ENDCOLOR] ({2_Desc})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_GOVERNMENT_PANEL">
+			<Text>정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CYCLE_OF_POWER_PANEL">
+			<Text>순환 정권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_CYCLE_POWER_PANEL_NONE">
+			<Text>없음</Text>
+		</Row>
+		<!--===================================================-->
+		<!--END TURN BUTTON-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_END_TURN_JFD_CHOOSE_GOVERNMENT">
+			<Text>당신의 정부를 수립하십시오</Text>
+		</Row>
+		<Row Tag="TXT_KEY_END_TURN_JFD_CHOOSE_GOVERNMENT_TT">
+			<Text>정부를 수립할 수 있습니다.</Text>
+		</Row>
+		<!--===================================================-->
+		<!--NEW LEGISLATURE POPUP-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_NEW_LEGISLATURE_POPUP_TITLE">
+			<Text>새로운 입법부가 구성되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NEW_LEGISLATURE_POPUP_TEXT">
+			<Text>새로운 [ICON_JFD_LEGISLATURE] 입법부가 구성되었습니다! 각 당파는 [ICON_JFD_SOVEREIGNTY] 주권에 기반하여 [ICON_JFD_REFORM] 법안 개정에 영향을 미칠 것입니다. 당파가 선호하는 개정은 쉬워지지만, 기피하는 개정은 어려워질 것입니다. 결과는 다음과 같습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NEW_LEGISLATURE_POPUP_TEXT_RESULTS">
+			<Text>[COLOR_POSITIVE_TEXT]결과:[ENDCOLOR]</Text>
+		</Row>
+		<!--===================================================-->
+		<!--NOTIFICATIONS-->
+		<!--===================================================-->
+		<!--Anarchy Ends-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_ANARCHY_ENDS_SHORT_DESC">
+			<Text>무정부 상태 종료!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_ANARCHY_ENDS_DESC">
+			<Text>[ICON_RESISTANCE] 무정부 상태가 종료되고 질서가 회복되었습니다!</Text>
+		</Row>
+		<!--Choose your Government-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_CHOICE_SHORT_DESC">
+			<Text>정부를 선택하십시오</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_CHOICE_DESC">
+			<Text>정부를 수립할 수 있습니다</Text>
+		</Row>
+		<!--Councillor Appointed-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_COUNCILLOR_APPOINTED_SHORT_TEXT">
+			<Text>의원이 임명되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_COUNCILLOR_APPOINTED_TEXT">
+			<Text>[COLOR_POSITIVE_TEXT]{1_Desc} {2_Desc}[ENDCOLOR] 가 새로운 [COLOR_POSITIVE_TEXT]{3_Desc}[ENDCOLOR] 로 임명되었습니다.</Text>
+
+		</Row>
+		<!--Dictatorship Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_DICTATORSHIP_ESTABLISHED_SHORT_DESC">
+			<Text>독재정부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_DICTATORSHIP_ESTABLISHED_DESC">
+			<Text>[ICON_JFD_GOVERNMENT] 기존의 정부가 전복되고 [COLOR_POSITIVE_TEXT]독재정부[ENDCOLOR]가 수립되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_DICTATORSHIP_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>독재정부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_DICTATORSHIP_ESTABLISHED_DESC_CHANGE">
+			<Text>기존의 [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 전복시키고 [COLOR_POSITIVE_TEXT]독재 정부[ENDCOLOR]를 수립했습니다!</Text>
+		</Row>
+		<!--Caliphate Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_SHORT_DESC">
+			<Text>칼리파국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>칼리파국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_CALIPHATE_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--HRE Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_SHORT_DESC">
+			<Text>신성 로마 제국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>신성 로마 제국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--Mandate Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_SHORT_DESC">
+			<Text>천자국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>천자국 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--Papacy Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_SHORT_DESC">
+			<Text>교황청 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>교황청 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_PAPACY_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--Shogunate Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_SHORT_DESC">
+			<Text>막부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>막부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_SHOGUNATE_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--Government Established-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_SHORT_DESC">
+			<Text>정부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_DESC">
+			<Text>[COLOR_POSITIVE_TEXT]{1_Desc}[ENDCOLOR]을 당신의 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_SHORT_DESC_CHANGE">
+			<Text>정부 수립!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_GOVERNMENT_ESTABLISHED_DESC_CHANGE">
+			<Text>[COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]을 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다.</Text>
+		</Row>
+		<!--Legislature Dissolution Imminent!-->
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_IMMINENT_SHORT_TEXT">
+			<Text>입법부 해산 임박!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_IMMINENT_TEXT">
+			<Text>[ICON_JFD_GOVERNMENT_COOLDOWN]입법부 재구성 대기시간이 [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] 턴 남았습니다. 기존의 입법부는 해산되고 새로운 입법부가 구성될 것입니다.</Text>
+		</Row>
+		<!--Legislature Dissolved!-->
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_SHORT_TEXT">
+			<Text>입법부 해산!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_GOVERNMENT_COOLDOWN_ENDS_TEXT">
+			<Text>[ICON_JFD_LEGISLATURE]입법부가 해산되었습니다.</Text>
+		</Row>
+		<!--New Legislature!-->
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_SHORT_TEXT">
+			<Text>새로운 집권당:[COLOR_JFD_SOVEREIGNTY]{1_Desc}[ENDCOLOR]!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT">
+			<Text>[COLOR_JFD_SOVEREIGNTY]{1_Desc}[ENDCOLOR] 지도하에 새로운 [ICON_JFD_LEGISLATURE] 입법부가 구성되었습니다! 입법부를 구성하는 당파들은 [ICON_JFD_SOVEREIGNTY] 주권을 기반으로 [ICON_JFD_REFORM] 법안 개정에 영향을 미칩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_SHORT_TEXT_MANDATE_OF_HEAVEN">
+			<Text>[COLOR_JFD_SOVEREIGNTY]천명 집권![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_MANDATE_OF_HEAVEN">
+			<Text>[COLOR_POSITIVE_TEXT]천명[ENDCOLOR]이 집권 세력입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_SHORT_TEXT_REVOLUTIONARIES">
+			<Text>[COLOR_WARNING_TEXT]{1_Desc}[ENDCOLOR] 집권!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_REVOLUTIONARIES">
+			<Text>[COLOR_WARNING_TEXT]{1_Desc}[ENDCOLOR] (이)가 집권하여 {2_Num} 턴 동안 [ICON_RESISTANCE] 무정부상태가 됩니다! 입법부를 구성하는 당파들은 [ICON_JFD_SOVEREIGNTY] 주권을 기반으로 [ICON_JFD_REFORM] 법안 개정에 영향을 미칩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_SHORT_TEXT_MANDATE_OF_HEAVEN_LOSS">
+			<Text>[COLOR_WARNING_TEXT]천명타도![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_MANDATE_OF_HEAVEN_LOSS">
+			<Text>민심을 잃어 [COLOR_WARNING_TEXT]천명[ENDCOLOR]이 축출되고 {1_Num}턴 동안 [ICON_RESISTANCE]무정부상태가 됩니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_CITY_RESULT">
+			<Text>[COLOR_POSITIVE_TEXT]도시 선호도[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_CITY_RESULT_TT">
+			<Text>[ICON_BULLET]{1_Desc}: {2_Icon} {3_Desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_NOTIFICATION_NEW_LEGISLATURE_TEXT_CITY_RESULT_TT_SOV">
+			<Text>[ICON_BULLET]{1_Desc}: {2_Icon} {3_Desc} ([COLOR_JFD_SOVEREIGNTY]+{4_Num}% [ICON_JFD_SOVEREIGNTY][ENDCOLOR])</Text>
+		</Row>
+		<!--New Reforms!-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_NEW_REFORMS_SHORT_TEXT">
+			<Text>새로운 법안!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_NEW_REFORMS_TEXT">
+			<Text>새로운 시대가 시작되었습니다! 다음의 [ICON_JFD_REFORM]법안을 개정할 수 있습니다:{1_List}</Text>
+		</Row>
+		<!--Reform Passed-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_REFORM_PASSED_SHORT_TEXT">
+			<Text>{1_ReformBranchCategory} 법안 통과</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_REFORM_PASSED_TEXT">
+			<Text>새로운 [ICON_JFD_REFORM] {1_ReformBranchCategory} 법안 [COLOR_POSITIVE_TEXT]{2_ReformDesc}[ENDCOLOR] ({3_ReformCategory})이 통과되었습니다![NEWLINE]----------[NEWLINE]{4_ReformPedia}[NEWLINE]----------[NEWLINE][COLOR_POSITIVE_TEXT]이익:[ENDCOLOR][NEWLINE]----------[NEWLINE][ICON_BULLET]{5_ReformBonusHelp}[NEWLINE]----------[NEWLINE][COLOR_NEGATIVE_TEXT]불이익:[ENDCOLOR][NEWLINE]----------[NEWLINE][ICON_BULLET]{6_ReformPenaltyHelp}[NEWLINE]----------</Text>
+		</Row>
+		<!--Reform Can Be Passed-->
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_REFORM_COOLDOWN_ENDS_SHORT_TEXT">
+			<Text>법안을 개정할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_JFD_REFORM_COOLDOWN_ENDS_TEXT">
+			<Text>[ICON_JFD_REFORM_COOLDOWN]법안 개정의 대기시간이 끝났으며 [ICON_JFD_SOVEREIGNTY]주권이 재할당되었습니다. 당파에 요구사항에 부응하면 새로 법안을 개정할 수 있습니다.</Text>
+		</Row>
+		<!--World Event!-->
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_DICTATORSHIP_ESTABLISHED_DESC">
+			<Text>{1_CivName}'의 정부가 전복되었고, [COLOR_POSITIVE_TEXT]독재정[ENDCOLOR]이 수립되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_DICTATORSHIP_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR] 를 교체하고 [COLOR_POSITIVE_TEXT]독재정부[ENDCOLOR]를 새로운 [ICON_JFD_GOVERNMENT] 정부로 수립했습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_CALIPHATE_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_CALIPHATE_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]칼리파국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPACY_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPACY_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]교황청[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_HOLY_ROMAN_EMPIRE_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]신성 로마 제국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_MANDATE_OF_HEAVEN_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]천자국[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_SHOGUNATE_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_SHOGUNATE_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]막부[ENDCOLOR]를 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_GOVERNMENT_ESTABLISHED_DESC">
+			<Text>{1_CivName}이(가) [COLOR_POSITIVE_TEXT]{2_Desc}[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_GOVERNMENT_ESTABLISHED_DESC_CHANGE">
+			<Text>{1_CivName}이(가) [COLOR_WARNING_TEXT]{3_Desc}[ENDCOLOR]를 교체하고 [COLOR_POSITIVE_TEXT]{2_Desc}[ENDCOLOR]을 새로운 정부로 수립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_NEW_LEGISLATURE_DESC">
+			<Text>[COLOR_JFD_SOVEREIGNTY]{1_Desc}[ENDCOLOR]이(가) {2_Desc} 정부의 집권당입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_NEW_LEGISLATURE_DESC_REVOLUTIONARIES">
+			<Text>[COLOR_WARNING_TEXT]{1_Desc}[ENDCOLOR]이(가) {2_Desc} 정부를 장악합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_NEW_LEGISLATURE_DESC_MANDATE_OF_HEAVEN">
+			<Text>{2_Desc}의 정부는 [COLOR_JFD_SOVEREIGNTY]천명[ENDCOLOR]이 [COLOR_POSITIVE_TEXT]집권했습니다![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_NEW_LEGISLATURE_DESC_MANDATE_OF_HEAVEN_LOSS">
+			<Text>{2_Desc}의 정부는 [COLOR_JFD_SOVEREIGNTY]천명[ENDCOLOR]이 [COLOR_WARNING_TEXT]축출되었습니다![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_REFORM_PASSED_ANARCHY_DESC">
+			<Text>{1_CivName} 에서 법안 개정에 대한 저항이 발생했습니다.</Text>
+		</Row>
+		<!--===================================================-->
+		<!--TOOLTIPS-->
+		<!--===================================================-->
+		<!--Sovereignty-->
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_FROM_CITIES">
+			<Text>도시에서 [COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_FROM_GOLDEN_AGE">
+			<Text>[ICON_GOLDEN_AGE]황금기에서 [COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_FROM_POLICIES_AND_REFORMS">
+			<Text>[ICON_CULTURE]정책과 [ICON_JFD_REFORM]법안에서 [COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_CONNECTION">
+			<Text>모든 도시가 [COLOR_POSITIVE_TEXT][ICON_CONNECTED]연결[ENDCOLOR]되어있다면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_GARRISON">
+			<Text>모든 도시에 [COLOR_POSITIVE_TEXT][ICON_WAR]주둔군[ENDCOLOR]이 배치되었다면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_SPECIALIST">
+			<Text>모든 도시에 [ICON_CITIZEN] [COLOR_POSITIVE_TEXT]전문가[ENDCOLOR]가 있다면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_BUILDING_CLASS">
+			<Text>모든 도시에 [COLOR_POSITIVE_TEXT]{3_Desc}[ENDCOLOR]이(가) 있다면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_POPULATION">
+			<Text>모든 도시의 [ICON_CITIZEN]인구[ENDCOLOR]가 [COLOR_POSITIVE_TEXT]{3_Num} 이상이면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_RELIGION">
+			<Text>모든 도시가 당신의 [COLOR_POSITIVE_TEXT][ICON_RELIGION]종교[ENDCOLOR]를 믿는다면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_HAPPINESS">
+			<Text>모든 도시의 [ICON_HAPPINESS_1]지역 행복[ENDCOLOR]이 [COLOR_POSITIVE_TEXT]{3_Num} 이상이면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_DEFENSE">
+			<Text>모든 도시의 [ICON_STRENGTH]방어력[ENDCOLOR]이 [COLOR_POSITIVE_TEXT]{3_Num} 이상이면 {1_TextHighlight}+{2_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_HERITAGE">
+			<Text>모든 도시가 [COLOR_POSITIVE_TEXT]정통성[ENDCOLOR]법안을 하나, 혹은 둘을 만족할 때 {1_TextHighlight}+{2_Num}%[ENDCOLOR]/{3_TextHighlight}{4_Num}%[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_NUM_CITIES_OR_LESS">
+			<Text>도시가 [COLOR_POSITIVE_TEXT]{3_Num} 이하 [ENDCOLOR]면 {1_TextHighlight}{2_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_WHEN_NUM_CITIES_OR_MORE">
+			<Text>도시가 [COLOR_POSITIVE_TEXT]{3_Num} 이상 [ENDCOLOR]이면 {1_TextHighlight}{2_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<!--Reforms-->
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_NONE">
+			<Text>없음.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_ANARCHY">
+			<Text>[COLOR_WARNING_TEXT][ICON_RESISTANCE] 무정부상태 기간에는 법안을 개정할 수 없습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_COOLDOWN">
+			<Text>[COLOR_WARNING_TEXT]{1_Num}턴을 기다려야 합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_BLOCKED">
+			<Text>[COLOR_WARNING_TEXT]현재 정부는 해당 법안을 개정할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PASSED">
+			<Text>[COLOR_POSITIVE_TEXT]이 법안은 통과되었습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQS">
+			<Text>[COLOR_WARNING_TEXT]현재는 이 법안을 통과시킬 수 없습니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_SOVEREIGNTY_REQ">
+			<Text>[COLOR_WARNING_TEXT]최소 {1_Num}% 의 [ICON_JFD_SOVEREIGNTY] 주권이 필요합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_ERA">
+			<Text>[ICON_BULLET][ICON_RESEARCH] {1_EraName}의 기술을 연구해야합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_GOVERNMENT">
+			<Text>[ICON_BULLET][COLOR_CULTURE_RATE][ICON_CULTURE] {1_Desc}이(가) 필요합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_TECH">
+			<Text>[ICON_BULLET][COLOR_RESEARCH_RATE][ICON_RESEARCH] {1_Desc}을(를) 연구해야합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_POLICY">
+			<Text>[ICON_BULLET][COLOR_CULTURE_RATE][ICON_CULTURE] {1_Desc}이(가) 필요합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_REFORM">
+			<Text>[ICON_BULLET][COLOR_JFD_SOVEREIGNTY][ICON_JFD_SOVEREIGNTY] {1_Desc}이(가) 필요합니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_FOUNDED_PANTHEON">
+			<Text>[ICON_BULLET]종교관이 있어야합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_FOUNDED_RELIGION">
+			<Text>[ICON_BULLET]종교가 있어야합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_ENHANCED_RELIGION">
+			<Text>[ICON_BULLET]종교를 강화해야합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PREREQ_STATE_RELIGION">
+			<Text>[ICON_BULLET][ICON_RELIGION] 국교가 있어야합니다.</Text>
+		</Row>
+		<!--Legislature Cooldown-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_GOVERNMENT_COOLDOWN_TT">
+			<Text>입법부 재구성 대기시간: [COLOR_WARNING_TEXT]{1_Num}[ENDCOLOR]턴[NEWLINE]다음 입법부 재구성 까지: [COLOR_WARNING_TEXT]{2_Num}[ENDCOLOR]턴.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]건물에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_CITIES">
+			<Text>[NEWLINE][ICON_BULLET]도시 수에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_CITIZENS">
+			<Text>[NEWLINE][ICON_BULLET]시민에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_GOVERNMENT">
+			<Text>[NEWLINE][ICON_BULLET]정부에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_POLICIES">
+			<Text>[NEWLINE][ICON_BULLET]정책에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_REFORMS">
+			<Text>[NEWLINE][ICON_BULLET]법안에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_COOLDOWN_TT_FROM_TRAITS">
+			<Text>[NEWLINE][ICON_BULLET]특성에서 {1_Num}.</Text>
+		</Row>
+		<!--Reform Cooldown-->
+		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_REFORM_COOLDOWN_TT">
+			<Text>법안 개정 대기시간: [COLOR_WARNING_TEXT]{1_Num}[ENDCOLOR]턴[NEWLINE][ENWLINE]다음 법안 개정까지: [COLOR_WARNING_TEXT]{2_Num}[ENDCOLOR]턴.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]건물에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_CITIES">
+			<Text>[NEWLINE][ICON_BULLET]도시 수에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_CITIZENS">
+			<Text>[NEWLINE][ICON_BULLET]시민에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_GOVERNMENT">
+			<Text>[NEWLINE][ICON_BULLET]정부에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_POLICIES">
+			<Text>[NEWLINE][ICON_BULLET]정책에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_REFORMS">
+			<Text>[NEWLINE][ICON_BULLET]법안에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_REVOLUTIONARY_SENTIMENT">
+			<Text>[NEWLINE][ICON_BULLET]혁명의 바람에서 {1_Num}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COOLDOWN_TT_FROM_TRAITS">
+			<Text>[NEWLINE][ICON_BULLET]특성에서 {1_Num}.</Text>
+		</Row>
+		<!--Revolutionary Sentiment-->
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_RATE">
+			<Text>[NEWLINE][NEWLINE]기본: {2_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람.[NEWLINE]총합: {1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_CITIES">
+			<Text>[NEWLINE]도시에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_POPULATION">
+			<Text>[NEWLINE]인구에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_BUILDINGS">
+			<Text>[NEWLINE]건물에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_UNHAPPINESS">
+			<Text>[NEWLINE]불행에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_GOVERNMENT">
+			<Text>[NEWLINE]정부에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_OPPOSITION">
+			<Text>[NEWLINE]반대파에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_POLICIES">
+			<Text>[NEWLINE]정책에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_REFORMS">
+			<Text>[NEWLINE]법안에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REVOLUTIONARY_SENTIMENT_TT_FROM_TRAITS">
+			<Text>[NEWLINE]특성에서 [ICON_BULLET]{1_Num} [ICON_JFD_REVOLUTIONARY_SENTIMENT]</Text>
+		</Row>
+		<!--===================================================-->
+		<!--TOP PANEL-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_YOUR_GOVERNMENT">
+			<Text>당신의 정부는 [COLOR_POSITIVE_TEXT]{1_Desc}[ENDCOLOR]입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_YOUR_SOVEREIGNTY">
+			<Text>현재 [ICON_JFD_SOVEREIGNTY]주권: {4_HL}{1_Num}[ENDCOLOR]/[COLOR_JFD_SOVEREIGNTY]{2_Num}%[ENDCOLOR][NEWLINE][ICON_BULLET]다음 턴 주권 예상치: [ICON_JFD_SOVEREIGNTY] {5_HL}{3_Num}[ENDCOLOR]/[COLOR_JFD_SOVEREIGNTY]{2_Num}%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_INFO">
+			<Text>[ICON_JFD_SOVEREIGNTY]주권은 정부를 지배하며 법안을 개정하는 권력의 척도입니다. 이는 법안 개정 대기시간의 마지막에 계산됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_GOVERNMENT_COOLDOWN">
+			<Text>[NEWLINE][NEWLINE][ICON_JFD_GOVERNMENT_COOLDOWN]입법부 재구성 대기시간: [COLOR_WARNING_TEXT]{1_Turns}[ENDCOLOR]턴.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_REFORM_COOLDOWN">
+			<Text>[ICON_JFD_REFORM_COOLDOWN]법안 개정 대기시간: [COLOR_WARNING_TEXT]{1_Turns}[ENDCOLOR]턴.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_SOVEREIGNTY_TOP_PANEL_TT_REFORM_NONE">
+			<Text>[ICON_JFD_REFORM]법안 개정 대기시간: [COLOR_POSITIVE_TEXT]새로운 법안을 개정할 수 있습니다![ENDCOLOR]</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

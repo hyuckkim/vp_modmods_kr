@@ -1,0 +1,3978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/2/2019 5:53:11 AM -->
+<GameData> 
+	<Language_en_US>
+		<!--===================================================-->
+		<!--REFORM BRANCHES-->
+		<!--===================================================-->
+		<!--Government-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_GOVERNMENT_SHORT_DESC">
+			<Text>정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_GOVERNMENT_SHORT_DESC_CAPS">
+			<Text>정부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_GOVERNMENT_DESC">
+			<Text>정치 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_GOVERNMENT_ADJ">
+			<Text>정치적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_GOVERNMENT_HELP">
+			<Text>정부 운영과 관련해 [ICON_JFD_SOVEREIGNTY]주권에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Diplomacy-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_DIPLOMACY_SHORT_DESC">
+			<Text>외교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_DIPLOMACY_DESC">
+			<Text>외교 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_DIPLOMACY_ADJ">
+			<Text>외교적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_DIPLOMACY_HELP">
+			<Text>국제 관계와 관련해 [ICON_INFLUENCE]영향력과 [ICON_SPY]스파이에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Education-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_EDUCATION_SHORT_DESC">
+			<Text>교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_EDUCATION_DESC">
+			<Text>교육 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_EDUCATION_ADJ">
+			<Text>교육적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_EDUCATION_HELP">
+			<Text>과학 발전과 관련해 [ICON_RESEARCH]기술 연구과 [ICON_GREAT_PEOPLE] 위인에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Economy-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_ECONOMY_SHORT_DESC">
+			<Text>경제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_ECONOMY_DESC">
+			<Text>경제 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_ECONOMY_ADJ">
+			<Text>경제적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_ECONOMY_HELP">
+			<Text>경제 발전과 관련해 [ICON_GOLD]골드와 [ICON_SWAP]교역로에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Industry-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_INDUSTRY_SHORT_DESC">
+			<Text>산업</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_INDUSTRY_DESC">
+			<Text>산업 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_INDUSTRY_ADJ">
+			<Text>산업적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_INDUSTRY_HELP">
+			<Text>산업 발전과 관련해 [ICON_PRODUCTION]생산력과 [ICON_WORKER]노동자에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Law-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_LAW_SHORT_DESC">
+			<Text>규범</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_LAW_DESC">
+			<Text>규범 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_LAW_ADJ">
+			<Text>규범적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_LAW_HELP">
+			<Text>법률 구조와 관련해 [ICON_JFD_REFORM]법안 개정과 [ICON_JFD_LEGISLATURE]입법부에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Military-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_MILITARY_SHORT_DESC">
+			<Text>군사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_MILITARY_DESC">
+			<Text>군사 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_MILITARY_ADJ">
+			<Text>군사적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_MILITARY_HELP">
+			<Text>군사력과 관련해 [ICON_JFD_REFORM]법안 개정과 [ICON_WAR]전투 유닛에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Religion-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_RELIGION_SHORT_DESC">
+			<Text>종교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_RELIGION_DESC">
+			<Text>종교 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_RELIGION_ADJ">
+			<Text>종교적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_RELIGION_HELP">
+			<Text>종교와 관련해 [ICON_PEACE]신앙과 [ICON_RELIGION]종교에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Social-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_SOCIETY_SHORT_DESC">
+			<Text>사회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_SOCIETY_DESC">
+			<Text>사회 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_SOCIETY_ADJ">
+			<Text>사회적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_SOCIETY_HELP">
+			<Text>사회적 가치와 관련해 [ICON_CULTURE]문화와 [ICON_GOLDEN_AGE]황금기에 집중된 법안입니다.</Text>
+		</Row>
+		<!--Welfare-->
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_WELFARE_SHORT_DESC">
+			<Text>복지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_WELFARE_DESC">
+			<Text>복지 법안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_WELFARE_ADJ">
+			<Text>복지적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CATEGORY_WELFARE_HELP">
+			<Text>시민의 안녕과 관련해 [ICON_FOOD]식량과 [ICON_HAPPINESS_1]행복도에 집중된 법안입니다.</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS-->
+		<!--===================================================-->
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP">
+			<Text>
+				[COLOR_JFD_SOVEREIGNTY]{1_Desc}[ENDCOLOR]
+                [NEWLINE]----------
+                [NEWLINE]{2_Desc}{5_Opinions}----------
+                [NEWLINE][ICON_PLUS][COLOR_POSITIVE_TEXT]이익:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{3_Desc}
+				[NEWLINE][ICON_MINUS][COLOR_NEGATIVE_TEXT]불이익:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{4_Desc}
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HELP_PEDIA">
+			<Text>{1_Desc}
+                [NEWLINE][ICON_PLUS][COLOR_POSITIVE_TEXT]이익:[ENDCOLOR]
+				[NEWLINE]{2_Desc}
+				[NEWLINE][ICON_MINUS][COLOR_NEGATIVE_TEXT]불이익:[ENDCOLOR]
+				[NEWLINE]{3_Desc}
+			</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: GOVERMENT-->
+		<!--===================================================-->
+		<!--EXECUTIVE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EXECUTIVE_DESC">
+			<Text>행정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EXECUTIVE_HELP">
+			<Text>행정 법안은 정부의 운영과 권력을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_ABSOLUTE_SHORT_DESC">
+			<Text>순수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_ABSOLUTE_PEDIA">
+			<Text>관습만이 권력을 구속한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_ABSOLUTE_HELP_BONUS">
+			<Text>최대 [ICON_JFD_SOVEREIGNTY] 주권 +100%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_ABSOLUTE_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_DESPOTIC_SHORT_DESC">
+			<Text>독재</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_DESPOTIC_PEDIA">
+			<Text>무엇도 권력을 구속할 수 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_DESPOTIC_HELP_BONUS">
+			<Text>최대 [ICON_JFD_SOVEREIGNTY] 주권 +75%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_DESPOTIC_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_CONSTITUTIONAL_SHORT_DESC">
+			<Text>입헌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_CONSTITUTIONAL_PEDIA">
+			<Text>헌법이 권력을 구속한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_CONSTITUTIONAL_HELP_BONUS">
+			<Text>새로운 입법부가 구성된 후 집권당의 [ICON_JFD_SOVEREIGNTY] 주권 +50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EXECUTIVE_CONSTITUTIONAL_HELP_PENALTY">
+			<Text>최대 [ICON_JFD_SOVEREIGNTY] 주권 +50%</Text>
+		</Row>
+		<!--FACTIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FACTIONS_DESC">
+			<Text>당파</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FACTIONS_HELP">
+			<Text>당파 법안은 입법부를 구성하는 당파를 통제합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_MULTI_PARTY_SHORT_DESC">
+			<Text>다당제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_MULTI_PARTY_PEDIA">
+			<Text>다수의 정당이 입법부를 구성한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_MULTI_PARTY_HELP_BONUS">
+			<Text>다당제 [ICON_JFD_LEGISLATURE]입법부는 문명의 산출과 [ICON_CULTURE]사회 정책에 비례하여 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_MULTI_PARTY_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_INTERESTS_SHORT_DESC">
+			<Text>이익단체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_INTERESTS_PEDIA">
+			<Text>이익단체가 입법부를 구성한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_INTERESTS_HELP_BONUS">
+			<Text>선택한 [ICON_JFD_GOVERNMENT]정부를 기반으로 [ICON_JFD_LEGISLATURE]입법부가 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_INTERESTS_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_TWO_PARTY_SHORT_DESC">
+			<Text>양당제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_TWO_PARTY_PEDIA">
+			<Text>두 개의 정당이 입법부를 구성한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_TWO_PARTY_HELP_BONUS">
+			<Text>양당제 [ICON_JFD_LEGISLATURE]입법부는 문명의 가장 높은 산출과 [ICON_CULTURE]사회 정책에 비례하여 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FACTIONS_TWO_PARTY_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--LEGITIMACY (FIRST)-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEGITIMACY_DESC">
+			<Text>정통성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEGITIMACY_HELP">
+			<Text>정통성 법안은 통치권을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WEALTH_SHORT_DESC">
+			<Text>부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WEALTH_PEDIA">
+			<Text>부유함이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WEALTH_HELP_BONUS">
+			<Text>모든 도시가 [ICON_CONNECTED] 연결되어있다면 [ICON_JFD_SOVEREIGNTY]주권 +15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WEALTH_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_MIGHT_SHORT_DESC">
+			<Text>위엄</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_MIGHT_PEDIA">
+			<Text>무력이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_MIGHT_HELP_BONUS">
+			<Text>모든 도시에 [ICON_WAR]주둔군이 배치되어있다면 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_MIGHT_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WISDOM_SHORT_DESC">
+			<Text>지혜</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WISDOM_PEDIA">
+			<Text>현명함이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WISDOM_HELP_BONUS">
+			<Text>모든 도시에 [ICON_CITIZEN]전문가가 있다면 [ICON_JFD_SOVEREIGNTY]주권 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_WISDOM_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--LEGITIMACY (SECOND)-->
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_LAW_SHORT_DESC">
+			<Text>법률</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_LAW_PEDIA">
+			<Text>정의가 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_LAW_HELP_BONUS">
+			<Text>모든 도시에 [COLOR_SELECTED_TEXT]치안법원[ENDCOLOR]이 건설되어있다면 [ICON_JFD_SOVEREIGNTY]주권 +15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_LAW_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_SHORT_DESC">
+			<Text>통치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_PEDIA">
+			<Text>유능함이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_HELP_BONUS">
+			<Text>모든 도시의 [ICON_CITIZEN]인구가 8 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_GOVERNANCE_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_DIVINE_RIGHT_SHORT_DESC">
+			<Text>신성한 권리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_DIVINE_RIGHT_PEDIA">
+			<Text>신성함이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_DIVINE_RIGHT_HELP_BONUS">
+			<Text>모든 도시가 [ICON_RELIGION] 당신의 대중종교를 따른다면 [ICON_JFD_SOVEREIGNTY]주권 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_DIVINE_RIGHT_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--LEGITIMACY (THIRD)-->
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_SHORT_DESC">
+			<Text>카리스마</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_PEDIA">
+			<Text>저명함이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_HELP_BONUS">
+			<Text>모든 도시의 [ICON_HAPPINESS_1]지역 행복도이 10 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_TRADITION_SHORT_DESC">
+			<Text>전통</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_TRADITION_PEDIA">
+			<Text>혈통이 곧 권력이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_TRADITION_HELP_BONUS">
+			<Text>[ICON_JFD_REFORM] 다른 정통성 법안이 하나가 만족되었을 때 [ICON_JFD_SOVEREIGNTY]주권 +5% / 둘이 만족되었을 때 [ICON_JFD_SOVEREIGNTY]주권+10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_TRADITION_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_SECURITY_SHORT_DESC">
+			<Text>안보</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_SECURITY_PEDIA">
+			<Text>안보가 곧 권력이다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_SECURITY_HELP_BONUS">
+			<Text>모든 도시의 [ICON_STRENGTH]방어력이 30 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_SECURITY_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--POWER-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POWER_DESC">
+			<Text>권력</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POWER_HELP">
+			<Text>권력 법안은 정부의 목적을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_POLICE_STATE_SHORT_DESC">
+			<Text>경찰 국가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_POLICE_STATE_PEDIA">
+			<Text>권력은 질서의 집행을 위해 존재한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_POLICE_STATE_HELP_BONUS">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람이 [ICON_JFD_REFORM_COOLDOWN]법안 개정 대기시간을 발생시키지 않음.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_POLICE_STATE_HELP_PENALTY">
+			<Text>좌/우 [ICON_JFD_REFORM] 법안이 통과되었을 때 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람이 2배 증가.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_PERSONAL_SHORT_DESC">
+			<Text>개인주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_PERSONAL_PEDIA">
+			<Text>권력은 우리 스스로를 위해 존재한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_PERSONAL_HELP_PENALTY">
+			<Text>없음.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_COMMONWEALTH_SHORT_DESC">
+			<Text>커먼웰스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_COMMONWEALTH_PEDIA">
+			<Text>권력은 공익을 위해 존재한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_COMMONWEALTH_HELP_BONUS">
+			<Text>좌/우 [ICON_JFD_REFORM] 법안이 통과되었을 때 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람이 절반으로 감소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POWER_COMMONWEALTH_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람이 증가시키는 [ICON_JFD_REFORM_COOLDOWN] 법안 개정 대기시간이 2배로 증가.</Text>
+		</Row>
+		<!--TERRITORY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TERRITORY_DESC">
+			<Text>영토</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TERRITORY_HELP">
+			<Text>영토 법안은 국가의 범위를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_CITYSTATE_SHORT_DESC">
+			<Text>도시국가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_CITYSTATE_PEDIA">
+			<Text>국가는 제한된 영토로 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_CITYSTATE_HELP_BONUS">
+			<Text>도시가 2개 이하일 때 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_CITYSTATE_HELP_PENALTY">
+			<Text>도시가 3개 이상일 때 [ICON_JFD_SOVEREIGNTY]주권 -10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_STATE_SHORT_DESC">
+			<Text>민국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_STATE_PEDIA">
+			<Text>국가의 구성에는 제한이 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_EMPIRE_SHORT_DESC">
+			<Text>제국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_EMPIRE_PEDIA">
+			<Text>국가는 광활한 영토로 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_EMPIRE_HELP_BONUS">
+			<Text>도시가 7개 이상일 때 [ICON_JFD_SOVEREIGNTY]주권 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TERRITORY_EMPIRE_HELP_PENALTY">
+			<Text>도시가 6개 이하일 때 [ICON_JFD_SOVEREIGNTY]주권 -10%</Text>
+		</Row>
+		<!--SUCCESSION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SUCCESSION_DESC">
+			<Text>승계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SUCCESSION_HELP">
+			<Text>승계 법안은 공직의 채용을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_ELECTED_SHORT_DESC">
+			<Text>선출</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_ELECTED_PEDIA">
+			<Text>관료는 선출되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_ELECTED_HELP_BONUS">
+			<Text>[ICON_JFD_GOVERNMENT_COOLDOWN]입법부 재구성 대기시간 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_ELECTED_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_APPOINTED_SHORT_DESC">
+			<Text>임명</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_APPOINTED_HELP">
+			<Text>[COLOR_JFD_SOVEREIGNTY]임명[ENDCOLOR][NEWLINE]----------[NEWLINE]관료는 임명되어야한다.[NEWLINE]----------</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_APPOINTED_PEDIA">
+			<Text>관료는 임명되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_HEREDITARY_SHORT_DESC">
+			<Text>세습</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_HEREDITARY_PEDIA">
+			<Text>관료는 세습되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_HEREDITARY_HELP_BONUS">
+			<Text>[ICON_JFD_GOVERNMENT_COOLDOWN]입법부 재구성 대기시간 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUCCESSION_HEREDITARY_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--STRUCTURE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STRUCTURE_DESC">
+			<Text>구성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STRUCTURE_HELP">
+			<Text>구성 법안은 시와 중앙정부의 관계를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_FEDERATION_SHORT_DESC">
+			<Text>연방</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_FEDERATION_PEDIA">
+			<Text>시는 스스로의 권리에 따라 행동한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_FEDERATION_HELP_BONUS">
+			<Text>도시 당 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_FEDERATION_HELP_PENALTY">
+			<Text>시민 당 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +1%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_ASSOCIATION_SHORT_DESC">
+			<Text>협회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_ASSOCIATION_PEDIA">
+			<Text>시는 규제의 대상이 아니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_UNITARY_SHORT_DESC">
+			<Text>단일 민국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_UNITARY_PEDIA">
+			<Text>시는 정부에게 복종한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_UNITARY_HELP_BONUS">
+			<Text>시민 당 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 -1%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRUCTURE_UNITARY_HELP_PENALTY">
+			<Text>도시 당 [ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +20%</Text>
+		</Row>
+		<!--SUFFRAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SUFFRAGE_DESC">
+			<Text>참정권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SUFFRAGE_HELP">
+			<Text>참정권 법안은 정치 및 공직 선출과 투표권에 관한 권리를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_UNIVERSAL_SHORT_DESC">
+			<Text>보편성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_UNIVERSAL_PEDIA">
+			<Text>만민은 투표할 권리가 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_UNIVERSAL_HELP_BONUS">
+			<Text>[ICON_CITIZEN]시민 당 [ICON_JFD_REFORM] [COLOR_SELECTED_TEXT]정부 개혁[ENDCOLOR] 에 필요한 [ICON_JFD_SOVEREIGNTY] 주권 -1% (최대 30%)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_UNIVERSAL_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_NONE_PEDIA">
+			<Text>누구도 투표할 권리가 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_LANDED_SHORT_DESC">
+			<Text>지주</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_LANDED_PEDIA">
+			<Text>지주만이 투표할 권리가 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_LANDED_HELP_BONUS">
+			<Text>도시 당 [ICON_JFD_REFORM] [COLOR_SELECTED_TEXT]정부 개혁[ENDCOLOR] 에 필요한 [ICON_JFD_SOVEREIGNTY] 주권 -5% (최대 30%)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUFFRAGE_LANDED_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: LAW-->
+		<!--===================================================-->
+		<!--ANALYSIS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ANALYSIS_DESC">
+			<Text>분석</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ANALYSIS_HELP">
+			<Text>분석 개혁은 입법 고문의 성격을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_TECHNOCRATIC_SHORT_DESC">
+			<Text>기술관료</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_TECHNOCRATIC_PEDIA">
+			<Text>입법 고문은 기술 전문가들이 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_TECHNOCRATIC_HELP_BONUS">
+			<Text>[ICON_JFD_GOVERNMENT]정부청사와 [ICON_JFD_REFORM]사법기관 건물 당 [ICON_RESEARCH] +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_TECHNOCRATIC_HELP_PENALTY">
+			<Text>[ICON_JFD_GOVERNMENT]정부청사와 [ICON_JFD_REFORM]사법기관 건물 당 [ICON_GOLD] -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_NEPOCRATIC_SHORT_DESC">
+			<Text>족벌제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_NEPOCRATIC_PEDIA">
+			<Text>입법 고문은 특권층이 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_BUREAUCRATIC_SHORT_DESC">
+			<Text>관료제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_BUREAUCRATIC_PEDIA">
+			<Text>입법 고문은 정치 전문가들이 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_BUREAUCRATIC_HELP_BONUS">
+			<Text>[ICON_JFD_GOVERNMENT]정부청사와 [ICON_JFD_REFORM]사법기관 건물 당 [ICON_PRODUCTION] +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ANALYSIS_BUREAUCRATIC_HELP_PENALTY">
+			<Text>[ICON_JFD_GOVERNMENT]정부청사와 [ICON_JFD_REFORM]사법기관 건물 당 [ICON_GOLD] -5%</Text>
+		</Row>
+		<!--BASIS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_BASIS_DESC">
+			<Text>기초</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_BASIS_HELP">
+			<Text>기초 법안은 입법의 핵심 원칙을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_SECULAR_SHORT_DESC">
+			<Text>세속주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_SECULAR_PEDIA">
+			<Text>입법은 이성에 기반한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_SECULAR_HELP_BONUS">
+			<Text>모든 도시의 [ICON_RESEARCH]과학과 [ICON_GOLD]골드 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_SECULAR_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PEACE]신앙과 [ICON_CULTURE]문화 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_MORAL_SHORT_DESC">
+			<Text>도덕주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_MORAL_PEDIA">
+			<Text>입법은 도덕성에 기반한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_RELIGIOUS_SHORT_DESC">
+			<Text>제정일치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_RELIGIOUS_PEDIA">
+			<Text>율법은 신의 계시에 기반한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_RELIGIOUS_HELP_BONUS">
+			<Text>모든 도시의 [ICON_PEACE]신앙과 [ICON_CULTURE]문화 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_BASIS_RELIGIOUS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RESEARCH]과학과 [ICON_GOLD]골드 -5%</Text>
+		</Row>
+		<!--CONSTITUTION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONSTITUTION_DESC">
+			<Text>헌법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONSTITUTION_HELP">
+			<Text>헌법은 필수적인 법률의 형식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_UNCODIFIED_SHORT_DESC">
+			<Text>불문법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_UNCODIFIED_PEDIA">
+			<Text>헌법은 다양한 법률로 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_UNCODIFIED_HELP_BONUS">
+			<Text>[ICON_JFD_REFORM]법안 개정[ENDCOLOR]에 필요한 [ICON_JFD_SOVEREIGNTY] 주권 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_UNCODIFIED_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_INFORMAL_SHORT_DESC">
+			<Text>관습법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_INFORMAL_PEDIA">
+			<Text>헌법은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_CODIFIED_SHORT_DESC">
+			<Text>성문법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_CODIFIED_PEDIA">
+			<Text>헌법은 단일 문서에 기반한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_CODIFIED_HELP_BONUS">
+			<Text>사회 정책에 필요한 [ICON_CULTURE]문화 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTITUTION_CODIFIED_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<!--EQUITY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EQUITY_DESC">
+			<Text>형평성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EQUITY_HELP">
+			<Text>형평성 법안은 국민에게 적용되는 범위를 규제합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_TOTAL_SHORT_DESC">
+			<Text>전면적 적용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_TOTAL_PEDIA">
+			<Text>법은 모든 국민에게 평등하게 적용된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_TOTAL_HELP_BONUS">
+			<Text>각 도시의 [ICON_CITIZEN] 전문가 1명은 도시화에서 오는 [ICON_HAPPINESS_3] 불행을 발생시키지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_TOTAL_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_HAPPINESS_3]불행 보정 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_NONE_PEDIA">
+			<Text>법은 임의적으로 적용된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_PARTIAL_SHORT_DESC">
+			<Text>부분적 적용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_PARTIAL_PEDIA">
+			<Text>법은 동등하게 적용되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_PARTIAL_HELP_BONUS">
+			<Text>수도의 [ICON_CITIZEN] 전문가 6명은 도시화에서 오는 [ICON_HAPPINESS_3] 불행을 발생시키지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUITY_PARTIAL_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_HAPPINESS_3]불행 보정 +10%</Text>
+		</Row>
+		<!--JUDICIARY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_JUDICIARY_DESC">
+			<Text>사법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_JUDICIARY_HELP">
+			<Text>사법 법안은 법의 감독 기관을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INDEPENDENT_SHORT_DESC">
+			<Text>독립성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INDEPENDENT_PEDIA">
+			<Text>사법부와 정부는 분리되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INDEPENDENT_HELP_BONUS">
+			<Text>[ICON_JFD_REFORM] 법안 개정 대기시간 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INDEPENDENT_HELP_PENALTY">
+			<Text>[ICON_JFD_REFORM]법안 개정[ENDCOLOR] 에 필요한 [ICON_JFD_SOVEREIGNTY] 주권 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INFORMAL_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_INFORMAL_PEDIA">
+			<Text>사법부는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_DEPENDENT_SHORT_DESC">
+			<Text>종속성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_DEPENDENT_PEDIA">
+			<Text>사법부는 정부의 일개 부처이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_DEPENDENT_HELP_BONUS">
+			<Text>[ICON_JFD_REFORM]법안 개정[ENDCOLOR] 에 필요한 [ICON_JFD_SOVEREIGNTY] 주권 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUDICIARY_DEPENDENT_HELP_PENALTY">
+			<Text>[ICON_JFD_REFORM] 법안 개정 대기시간 +20%</Text>
+		</Row>
+		<!--JUSTICE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_JUSTICE_DESC">
+			<Text>정의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_JUSTICE_HELP">
+			<Text>정의 법안은 법의 궁극적인 목적을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_REDEMPTION_SHORT_DESC">
+			<Text>구원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_REDEMPTION_PEDIA">
+			<Text>법은 범죄자의 구원을 추구한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_REDEMPTION_HELP_BONUS">
+			<Text>[ICON_JFD_REFORM] 법안 건물을 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_REDEMPTION_HELP_PENALTY">
+			<Text>[ICON_SPY]방첩 건물을 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_PUNISHMENT_SHORT_DESC">
+			<Text>엄벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_PUNISHMENT_PEDIA">
+			<Text>법은 범죄자의 처벌을 추구한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_DETERRENCE_SHORT_DESC">
+			<Text>억제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_DETERRENCE_PEDIA">
+			<Text>법은 범죄자의 교화를 추구한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_DETERRENCE_HELP_BONUS">
+			<Text>[ICON_SPY]방첩 건물을 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_JUSTICE_DETERRENCE_HELP_PENALTY">
+			<Text>[ICON_JFD_REFORM] 법안 건물을 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<!--LEGISLATURE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEGISLATURE_DESC">
+			<Text>입법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEGISLATURE_HELP">
+			<Text>입법 법안은 행정부와 입법부의 관계를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_PARLIAMENTARY_SHORT_DESC">
+			<Text>평의회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_PARLIAMENTARY_PEDIA">
+			<Text>행정부와 입법부는 연합해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_PARLIAMENTARY_HELP_BONUS">
+			<Text>[COLOR_NEGATIVE_TEXT]우호[ENDCOLOR] [ICON_JFD_REFORM_OPPOSE]당파가 [ICON_JFD_REFORM]법안의 필요한 [ICON_JFD_SOVEREIGNTY]주권에 미치는 영향 +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_PARLIAMENTARY_HELP_PENALTY">
+			<Text>[COLOR_NEGATIVE_TEXT]반대[ENDCOLOR] [ICON_JFD_REFORM_OPPOSE]당파가 [ICON_JFD_REFORM]법안의 필요한 [ICON_JFD_SOVEREIGNTY]주권에 미치는 영향 +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_INFORMAL_SHORT_DESC">
+			<Text>비공식</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_INFORMAL_PEDIA">
+			<Text>입법부는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_CONGRESSIONAL_SHORT_DESC">
+			<Text>주의회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_CONGRESSIONAL_PEDIA">
+			<Text>행정부와 입법부는 분리해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_CONGRESSIONAL_HELP_BONUS">
+			<Text>[COLOR_NEGATIVE_TEXT]반대[ENDCOLOR] [ICON_JFD_REFORM_OPPOSE]당파가 [ICON_JFD_REFORM]법안의 필요한 [ICON_JFD_SOVEREIGNTY]주권에 미치는 영향 -25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEGISLATURE_CONGRESSIONAL_HELP_PENALTY">
+			<Text>[COLOR_NEGATIVE_TEXT]우호[ENDCOLOR] [ICON_JFD_REFORM_OPPOSE]당파가 [ICON_JFD_REFORM]법안의 필요한 [ICON_JFD_SOVEREIGNTY]주권에 미치는 영향 -25%.</Text>
+		</Row>
+		<!--RECORDS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RECORDS_DESC">
+			<Text>기록</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RECORDS_HELP">
+			<Text>기록 법안은 정부 문서의 발행을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PUBLIC_SHORT_DESC">
+			<Text>공표</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PUBLIC_PEDIA">
+			<Text>정부의 업무는 공표되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PUBLIC_HELP_BONUS">
+			<Text>[ICON_CULTURE_LOCAL]영토확장에 필요한 문화 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PUBLIC_HELP_PENALTY">
+			<Text>타일 구매에 필요한 [ICON_GOLD] 골드 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PERSONAL_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PERSONAL_PEDIA">
+			<Text>정부의 업무는 보관되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PRIVATE_SHORT_DESC">
+			<Text>기밀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PRIVATE_PEDIA">
+			<Text>정부의 업무는 기밀이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PRIVATE_HELP_BONUS">
+			<Text>타일 구매에 필요한 [ICON_GOLD] 골드 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECORDS_PRIVATE_HELP_PENALTY">
+			<Text>[ICON_CULTURE_LOCAL]영토확장에 필요한 문화 +20%</Text>
+		</Row>
+		<!--RIGHTS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RIGHTS_DESC">
+			<Text>권리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RIGHTS_HELP">
+			<Text>권리 법안은 기본적 자유에 대한 권리를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_HUMAN_SHORT_DESC">
+			<Text>인권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_HUMAN_PEDIA">
+			<Text>인간의 고유한 권리는 보호되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_HUMAN_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE]황금기 지속 시간 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_HUMAN_HELP_PENALTY">
+			<Text>[ICON_GOLDEN_AGE] 황금기 점수 요구량 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_NATURAL_SHORT_DESC">
+			<Text>자연권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_NATURAL_PEDIA">
+			<Text>자연의 고유한 권리는 보호되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_LEGAL_SHORT_DESC">
+			<Text>법적 권리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_LEGAL_PEDIA">
+			<Text>법에 명시된 권리는 보호되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_LEGAL_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE] 황금기 점수 요구량 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RIGHTS_LEGAL_HELP_PENALTY">
+			<Text>[ICON_GOLDEN_AGE]황금기 지속 시간 +15%</Text>
+		</Row>
+		<!--SYSTEM-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SYSTEM_DESC">
+			<Text>체계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SYSTEM_HELP">
+			<Text>체계 법안은 법률을 구성하는 선례를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_COMMON_SHORT_DESC">
+			<Text>영미법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_COMMON_PEDIA">
+			<Text>법률은 사법적 재량에 기초한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_COMMON_HELP_BONUS">
+			<Text>[ICON_SPY]방첩 건물에서 [ICON_PRODUCTION]생산력 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_COMMON_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_CULTURE]문화 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CUSTOMARY_SHORT_DESC">
+			<Text>관습법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CUSTOMARY_PEDIA">
+			<Text>법률은 사회의 관습에 기초한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CIVIL_SHORT_DESC">
+			<Text>대륙법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CIVIL_PEDIA">
+			<Text>법률은 기존에 설립된 법규에 기초한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CIVIL_HELP_BONUS">
+			<Text>[ICON_JFD_GOVERNMENT]정부청사와 [ICON_JFD_REFORM]사법기관 건물에서 [ICON_PRODUCTION]생산력 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SYSTEM_CIVIL_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_CULTURE]문화 -5%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: DIPLOMACY-->
+		<!--===================================================-->
+		<!--ALLIANCES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ALLIANCES_DESC">
+			<Text>연합</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ALLIANCES_HELP">
+			<Text>연합 법안은 도시 국가와의 동맹을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_SHORT_DESC">
+			<Text>외교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_PEDIA">
+			<Text>외교로 동맹을 맺을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가의 [ICON_DIPLOMAT]외교임무로 증가하는 ICON_INFLUENCE]영향력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_HELP_PENALTY">
+			<Text>[ICON_CITY_STATE]도시국가의 [ICOV_VIEW_CITY]퀘스트 보상으로 증가하는 ICON_INFLUENCE]영향력 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_TREATIES_SHORT_DESC">
+			<Text>조약</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_TREATIES_PEDIA">
+			<Text>조약으로 동맹을 맺을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_MARRIAGE_SHORT_DESC">
+			<Text>결혼</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_MARRIAGE_PEDIA">
+			<Text>결혼으로 동맹을 맺을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_MARRIAGE_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가의 [ICOV_VIEW_CITY]퀘스트 보상으로 증가하는 [ICON_INFLUENCE]영향력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_MARRIAGE_HELP_PENALTY">
+			<Text>[ICON_CITY_STATE]도시국가의 [ICON_DIPLOMAT]외교임무로 증가하는 [ICON_INFLUENCE]영향력 -15%</Text>
+		</Row>
+		<!--EMBASSIES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EMBASSIES_DESC">
+			<Text>대사관</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EMBASSIES_HELP">
+			<Text>대사관 법안은 외교 대사관의 성격을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_PEACE_SHORT_DESC">
+			<Text>평화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_PEACE_PEDIA">
+			<Text>대사관을 통한 평화를 추구할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_PEACE_HELP_BONUS">
+			<Text>[ICON_DIPLOMAT]위대한 외교관의 임무 수행력 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_PEACE_HELP_PENALTY">
+			<Text>[ICON_CITY_STATE]도시국가를 위협할 때 위협점수 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_RELATIONS_SHORT_DESC">
+			<Text>관계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_RELATIONS_PEDIA">
+			<Text>대사관을 통한 상호관계를 추구할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_POWER_SHORT_DESC">
+			<Text>무력</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_POWER_PEDIA">
+			<Text>대사관을 통한 무력을 추구할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_POWER_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가를 위협할 때 위협점수 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMBASSIES_POWER_HELP_PENALTY">
+			<Text>[ICON_DIPLOMAT]위대한 외교관의 임무 수행력 -25%</Text>
+		</Row>
+		<!--GIFTS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GIFTS_DESC">
+			<Text>예물</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GIFTS_HELP">
+			<Text>선물 법안은 다른 세력에 대한 우리의 외교적 제안을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_JEWELS_SHORT_DESC">
+			<Text>귀금속</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_JEWELS_PEDIA">
+			<Text>귀금속을 예물로 하사할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_JEWELS_HELP_BONUS">
+			<Text>[ICON_GREAT_PEOPLE]위인을 소모할 때 알려진 [ICON_CITY_STATE] 도시국가에 [ICON_INFLUENCE]영향력 +10</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_JEWELS_HELP_PENALTY">
+			<Text>[ICON_INFLUENCE]우호도 정지점 -5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_NONE_PEDIA">
+			<Text>예물은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_SLAVES_SHORT_DESC">
+			<Text>노예</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_SLAVES_PEDIA">
+			<Text>노예를 예물로 하사할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_SLAVES_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가에 [ICON_WAR]전투 유닛을 선물했을 때 [ICON_INFLUENCE]영향력 +10.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GIFTS_SLAVES_HELP_PENALTY">
+			<Text>[ICON_INFLUENCE]우호도 정지점 -5</Text>
+		</Row>
+		<!--IDEOLOGY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_IDEOLOGY_DESC">
+			<Text>이데올로기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_IDEOLOGY_HELP">
+			<Text>이데올로기 법안은 우리와 반대되는 이데올로기를 가진 문명에 대한 접근 방식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PROLIFERATED_SHORT_DESC">
+			<Text>확산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PROLIFERATED_PEDIA">
+			<Text>우리는 이념을 확산시킬 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PROLIFERATED_HELP_BONUS">
+			<Text>당신보다 [ICON_HAPPINESS_1] 행복도가 낮은 문명을 상대로 [ICON_TOURISM]관광 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PROLIFERATED_HELP_PENALTY">
+			<Text>같은 이념의 문명을 상대로 [ICON_TOURISM]관광 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PASSIVE_SHORT_DESC">
+			<Text>무위</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_PASSIVE_PEDIA">
+			<Text>우리는 이념에 따라 행동하지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_ENTRENCHED_SHORT_DESC">
+			<Text>확립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_ENTRENCHED_PEDIA">
+			<Text>우리는 이념의 수호자다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_ENTRENCHED_HELP_BONUS">
+			<Text>같은 이념의 문명을 상대로 [ICON_TOURISM]관광 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_IDEOLOGY_ENTRENCHED_HELP_PENALTY">
+			<Text>당신보다 [ICON_HAPPINESS_1] 행복도가 낮은 문명을 상대로 [ICON_TOURISM]관광 -15%</Text>
+		</Row>
+		<!--INTELLIGENCE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INTELLIGENCE_DESC">
+			<Text>정보</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INTELLIGENCE_HELP">
+			<Text>정보 법안은 첩보 활동의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SABOTAGE_SHORT_DESC">
+			<Text>사보타주</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SABOTAGE_PEDIA">
+			<Text>스파이는 타국의 기밀을 수집할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SABOTAGE_HELP_BONUS">
+			<Text>[ICON_SPY]스파이의 임무 성공률 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SABOTAGE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_SPY]방첩도 -25</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_NONE_PEDIA">
+			<Text>스파이는 필요에 의해 투입될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_SHORT_DESC">
+			<Text>보안</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_PEDIA">
+			<Text>스파이는 자국의 기밀을 지킬 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_HELP_BONUS">
+			<Text>모든 도시의 [ICON_SPY]방첩도 +25</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTELLIGENCE_SECURITY_HELP_PENALTY">
+			<Text>[ICON_SPY]스파이의 임무 성공률 -25%</Text>
+		</Row>
+		<!--INTERESTS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INTERESTS_DESC">
+			<Text>이해관계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INTERESTS_HELP">
+			<Text>이해관계 법안은 도시국가와 종속국에 대한 외교적 관계를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_COMMERCIAL_SHORT_DESC">
+			<Text>상업적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_COMMERCIAL_PEDIA">
+			<Text>이해관계는 상업에 기반한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_COMMERCIAL_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가와 종속국의 산출량 +50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_COMMERCIAL_HELP_PENALTY">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -10</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_DIPLOMATIC_SHORT_DESC">
+			<Text>외교적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_DIPLOMATIC_PEDIA">
+			<Text>이해관계는 외교에 기반한다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_IMPERIAL_SHORT_DESC">
+			<Text>제국적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_IMPERIAL_PEDIA">
+			<Text>이해관계는 국력에 기반한다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_IMPERIAL_HELP_BONUS">
+			<Text>국제 교역로 하나 당 [ICON_CITY_STATE] 도시국가의 [ICON_INFLUENCE] 영향력이 턴마다 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INTERESTS_IMPERIAL_HELP_PENALTY">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -10</Text>
+		</Row>
+		<!--PRECEDENCE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PRECEDENCE_DESC">
+			<Text>우선권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PRECEDENCE_HELP">
+			<Text>우선권 법안은 다른 문명이 취급되는 순서를 조정합니다.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_SPECIFIC_DIPLO_STRING_1"/>
+			<Set Text="Diplomatic effect from your Reforms."/>
+		</Update>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_RANK_SHORT_DESC">
+			<Text>계급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_RANK_PEDIA">
+			<Text>고위급 외교관이 우선권을 갖는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_RANK_HELP_BONUS">
+			<Text>[ICON_SWAP] [COLOR_POSITIVE_TEXT]국경을 개방[ENDCOLOR]한 문명의 우호도가 증가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_RANK_HELP_PENALTY">
+			<Text>[ICON_SWAP] [COLOR_POSITIVE_TEXT]국경을 개방[ENDCOLOR]한 문명의 우호도가 감소</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_RANK_BONUS">
+			<Text>국경을 개방한 문명을 선호합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_RANK_PENALTY">
+			<Text>국경을 개방한 문명을 기피합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_BASIC_SHORT_DESC">
+			<Text>기본</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_BASIC_PEDIA">
+			<Text>같은 정부를 가진 문명을 선호한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_BASIC_HELP_BONUS">
+			<Text>[COLOR_POSITIVE_TEXT]같은 체계의[ENDCOLOR] [ICON_JFD_GOVERNMENT]정부를 수립한 문명의 우호도가 증가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_BASIC_HELP_PENALTY">
+			<Text>[COLOR_NEGATIVE_TEXT]다른 체계의[ENDCOLOR] [ICON_JFD_GOVERNMENT]정부를 수립한 문명의 우호도가 감소</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_BASIC_BONUS">
+			<Text>같은 체계의 정부를 수립한 문명을 선호합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_BASIC_PENALTY">
+			<Text>다른 체계의 정부를 수립한 문명을 기피합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_POWER_SHORT_DESC">
+			<Text>권세</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_POWER_PEDIA">
+			<Text>강력한 문명이 우선권을 갖는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_POWER_HELP_BONUS">
+			<Text>플레이어보다 [COLOR_POSITIVE_TEXT]적은 도시[ENDCOLOR]를 가진 문명의 우호도가 증가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PRECEDENCE_POWER_HELP_PENALTY">
+			<Text>플레이어보다 [COLOR_POSITIVE_TEXT]많은 도시[ENDCOLOR]를 가진 문명의 우호도가 감소</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_POWER_BONUS">
+			<Text>그들보다 당신의 도시가 많다면 우호도가 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_JFD_PRECEDENCE_POWER_PENALTY">
+			<Text>들보다 당신의 도시가 적다면 우호도가 감소합니다.</Text>
+		</Row>
+		<!--REPRESENTATIVES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_REPRESENTATIVES_DESC">
+			<Text>대표</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_REPRESENTATIVES_HELP">
+			<Text>대표 법안은 우리의 외교 대표를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_TRANSIENT_SHORT_DESC">
+			<Text>단기적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_TRANSIENT_PEDIA">
+			<Text>우리의 대표들은 필요에 의해 떠난다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_TRANSIENT_HELP_BONUS">
+			<Text>[ICON_INFLUENCE] 영향력 감소율 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_TRANSIENT_HELP_PENALTY">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -10</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_INFORMAL_SHORT_DESC">
+			<Text>비공식</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_INFORMAL_PEDIA">
+			<Text>대표는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_SHORT_DESC">
+			<Text>영구적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_PEDIA">
+			<Text>우리의 대표들은 영구적으로 머문다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_HELP_BONUS">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -10</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_HELP_PENALTY">
+			<Text>[ICON_INFLUENCE] 영향력 감소율 -15%</Text>
+		</Row>
+		<!--TRIBUTE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRIBUTE_DESC">
+			<Text>상납</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRIBUTE_HELP">
+			<Text>상납 법안은 도시국가에게 요구하는 공물을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_GOLD_SHORT_DESC">
+			<Text>금전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_GOLD_PEDIA">
+			<Text>약소국은 금전을 바치도록 하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_GOLD_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가에 공물을 요구하면 요구한 공물의 25%만큼 [ICON_CAPITAL]수도에서 [ICON_GOLD]골드를 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_GOLD_HELP_PENALTY">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_NONE_PEDIA">
+			<Text>우리는 공물을 요구하지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_FOOD_SHORT_DESC">
+			<Text>곡물</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_FOOD_PEDIA">
+			<Text>약소국은 곡물을 바치도록 하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_FOOD_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시국가에 공물을 요구하면 요구한 공물의 25%만큼 [ICON_CAPITAL]수도에서 [ICON_FOOD]식량을 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRIBUTE_FOOD_HELP_PENALTY">
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -5</Text>
+		</Row>
+		<!--WORLD-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WORLD_DESC">
+			<Text>국제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WORLD_HELP">
+			<Text>국제 법안은 국제적 조직의 통합을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_SHORT_DESC">
+			<Text>세계화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_PEDIA">
+			<Text>우리는 국제적 조직을 수용할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_HELP_BONUS">
+			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 오는 [ICON_TOURISM]관광 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_CULTURE]문화 -10% [ICON_CULTURE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_NEUTRAL_SHORT_DESC">
+			<Text>중립국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_NEUTRAL_PEDIA">
+			<Text>우리는 중립국을 유지한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_ISOLATION_SHORT_DESC">
+			<Text>고립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_ISOLATION_PEDIA">
+			<Text>우리는 고유의 독립성을 유지할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_ISOLATION_HELP_BONUS">
+			<Text>모든 도시의 [ICON_CULTURE]문화 +10% [ICON_CULTURE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_ISOLATION_HELP_PENALTY">
+			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 오는 [ICON_TOURISM]관광 -10%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: ECONOMY-->
+		<!--===================================================-->
+		<!--CHARTERS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CHARTERS_DESC">
+			<Text>헌장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CHARTERS_HELP">
+			<Text>헌장 법안은 회사 설립 권리의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COMMERCIAL_SHORT_DESC">
+			<Text>이윤사업</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COMMERCIAL_PEDIA">
+			<Text>상업적 사업을 위한 헌장이 공표될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COMMERCIAL_HELP_BONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]교역 유닛을 생산할 때 [ICON_PRODUCTION]생산력 +50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COMMERCIAL_HELP_PENALTY">
+			<Text>[ICON_TEAM_1]개척자를 생산할 때 [ICON_PRODUCTION]생산력 -50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_NONE_PEDIA">
+			<Text>헌장의 공표는 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COLONIAL_SHORT_DESC">
+			<Text>식민사업</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COLONIAL_PEDIA">
+			<Text>식민 사업을 위한 헌장이 공표될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COLONIAL_HELP_BONUS">
+			<Text>[ICON_TEAM_1]개척자를 생산할 때 [ICON_PRODUCTION]생산력 +50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COLONIAL_HELP_PENALTY">
+			<Text>[ICON_INTERNATIONAL_TRADE]교역 유닛을 생산할 때 [ICON_PRODUCTION]생산력 +50%.</Text>
+		</Row>
+		<!--CURRENCY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CURRENCY_DESC">
+			<Text>통화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CURRENCY_HELP">
+			<Text>통화 법안은 상품이나 서비스가 유통되는 시장을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_CREDIT_SHORT_DESC">
+			<Text>신용거래</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_CREDIT_PEDIA">
+			<Text>거래는 신용을 통해 성사된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_CREDIT_HELP_BONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]교역로의 거리가 +50%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_CREDIT_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산이 -2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_BARTER_SHORT_DESC">
+			<Text>물물거래</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_BARTER_PEDIA">
+			<Text>거래는 물물교환을 통해 성사된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_TENDER_SHORT_DESC">
+			<Text>입찰거래</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_TENDER_PEDIA">
+			<Text>거래는 입찰을 통해 성사된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_TENDER_HELP_BONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]국제 교역로의 [ICON_GOLD]골드 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CURRENCY_TENDER_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산이 -2</Text>
+		</Row>
+		<!--ECONOMICS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ECONOMICS_DESC">
+			<Text>이코노믹스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ECONOMICS_HELP">
+			<Text>이코노믹스 법안은 경제를 좌우하는 수단을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MARKET_SHORT_DESC">
+			<Text>시장경제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MARKET_PEDIA">
+			<Text>경제는 시장에 의해 결정된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MARKET_HELP_BONUS">
+			<Text>[ICON_GOLD] [COLOR_YELLOW]대상숙소, 시장, 세관, 은행, 증권거래소[ENDCOLOR]에서 [ICON_GOLD] 골드 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MARKET_HELP_PENALTY">
+			<Text>[ICON_GOLD] [COLOR_YELLOW]대상숙소, 시장, 세관, 은행, 증권거래소[ENDCOLOR]에서 [ICON_PRODUCTION] 생산 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MIXED_SHORT_DESC">
+			<Text>혼합경제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_MIXED_PEDIA">
+			<Text>경제는 필요에 의해 결정된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_PLANNED_SHORT_DESC">
+			<Text>계획경제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_PLANNED_PEDIA">
+			<Text>경제는 정부에 의해 결정된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_PLANNED_HELP_BONUS">
+			<Text>[ICON_GOLD] [COLOR_YELLOW]대상숙소, 시장, 세관, 은행, 증권거래소[ENDCOLOR]에서 [ICON_PRODUCTION] 생산 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ECONOMICS_PLANNED_HELP_PENALTY">
+			<Text>[ICON_GOLD] [COLOR_YELLOW]대상숙소, 시장, 세관, 은행, 증권거래소[ENDCOLOR]에서 [ICON_GOLD] 골드 -5%</Text>
+		</Row>
+		<!--INFRASTRUCTURE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INFRASTRUCTURE_DESC">
+			<Text>인프라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INFRASTRUCTURE_HELP">
+			<Text>인프라 법안은 도로와 철도의 유지 보수를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PRIVATE_SHORT_DESC">
+			<Text>민영화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PRIVATE_PEDIA">
+			<Text>도로는 민간에서 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PRIVATE_HELP_BONUS">
+			<Text>도로 [ICON_GOLD]유지비 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PRIVATE_HELP_PENALTY">
+			<Text>도로나 철도 위에서 턴을 마치는 모든 유닛의 [ICON_MOVES] 이동력 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_NATURAL_SHORT_DESC">
+			<Text>자연화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_NATURAL_PEDIA">
+			<Text>도로는 수요에 의해 관리된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PUBLIC_SHORT_DESC">
+			<Text>국영화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PUBLIC_PEDIA">
+			<Text>도로는 공공기관에서 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PUBLIC_HELP_BONUS">
+			<Text>도로나 철도 위에서 턴을 마치는 모든 유닛의 [ICON_MOVES] 이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFRASTRUCTURE_PUBLIC_HELP_PENALTY">
+			<Text>도로 [ICON_GOLD]유지비 +15%</Text>
+		</Row>
+		<!--MONOPOLIES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MONOPOLIES_DESC">
+			<Text>독점</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MONOPOLIES_HELP">
+			<Text>독점 법안은 자원 독점의 허가를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_PROHIBITED_SHORT_DESC">
+			<Text>독점규제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_PROHIBITED_PEDIA">
+			<Text>독점은 규제의 대상이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_PROHIBITED_HELP_BONUS">
+			<Text>사치자원에서 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_PROHIBITED_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_NATURAL_SHORT_DESC">
+			<Text>자연독점</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_NATURAL_PEDIA">
+			<Text>독점은 수요에 의해 결정된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_STATE_SHORT_DESC">
+			<Text>공공독점</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_STATE_PEDIA">
+			<Text>정부가 독점을 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_STATE_HELP_BONUS">
+			<Text>전략 자원의 보유량 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_STATE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -10%</Text>
+		</Row>
+		<!--OWNERSHIP-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_OWNERSHIP_DESC">
+			<Text>소유권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_OWNERSHIP_HELP">
+			<Text>소유권 법안은 재산의 소유권을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_PRIVATE_SHORT_DESC">
+			<Text>사유재산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_PRIVATE_PEDIA">
+			<Text>재산은 사적인 소유물이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_PRIVATE_HELP_BONUS">
+			<Text>건물 [ICON_GOLD] 유지비 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_PRIVATE_HELP_PENALTY">
+			<Text>[ICON_GOLD]골드 구매에 필요한 비용 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_NATURAL_SHORT_DESC">
+			<Text>자연적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_NATURAL_PEDIA">
+			<Text>재산의 소유권은 자연적으로 결정된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_SOCIAL_SHORT_DESC">
+			<Text>공공재산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_SOCIAL_PEDIA">
+			<Text>모든 재산은 사회의 소유이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_SOCIAL_HELP_BONUS">
+			<Text>[ICON_GOLD]골드 구매에 필요한 비용 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OWNERSHIP_SOCIAL_HELP_PENALTY">
+			<Text>건물 [ICON_GOLD] 유지비 -10%</Text>
+		</Row>
+		<!--RELATIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RELATIONS_DESC">
+			<Text>경제 교류</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RELATIONS_HELP">
+			<Text>경제 교류 법안은 경제 관계의 조직을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MUNICIPAL_SHORT_DESC">
+			<Text>시립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MUNICIPAL_PEDIA">
+			<Text>경제는 도시를 중심으로 형성된다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MUNICIPAL_HELP_BONUS">
+			<Text>[COLOR_SELECTED_TEXT]외교 청사[ENDCOLOR]와 [COLOR_SELECTED_TEXT]통신사[ENDCOLOR]에서 [ICON_GOLD]골드 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MUNICIPAL_HELP_PENALTY">
+			<Text>[COLOR_SELECTED_TEXT]대장간[ENDCOLOR]의 [ICON_PRODUCTION]생산력 -2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_PERSONAL_SHORT_DESC">
+			<Text>인본</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_PERSONAL_PEDIA">
+			<Text>경제는 사람을 중심으로 형성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MANORIAL_SHORT_DESC">
+			<Text>영지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MANORIAL_PEDIA">
+			<Text>경제는 토지를 중심으로 형성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MANORIAL_HELP_BONUS">
+			<Text>[COLOR_YIELD_GOLD]세관[ENDCOLOR]과 [COLOR_YIELD_GOLD]증권 거래소[ENDCOLOR]에서 [ICON_GOLD]골드 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RELATIONS_MANORIAL_HELP_PENALTY">
+			<Text>[COLOR_SELECTED_TEXT]대장간[ENDCOLOR]의 [ICON_PRODUCTION]생산력 -2</Text>
+		</Row>
+		<!--TAXATION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TAXATION_DESC">
+			<Text>조세</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TAXATION_HELP">
+			<Text>조세 법안은 국민에게서 징수하는 세금의 비율을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_LOW_SHORT_DESC">
+			<Text>저세율</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_LOW_PEDIA">
+			<Text>조세는 낮게 책정될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_LOW_HELP_BONUS">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_LOW_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_MEDIUM_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_MEDIUM_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_MEDIUM_PEDIA">
+			<Text>조세는 현행을 유지한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_HIGH_SHORT_DESC">
+			<Text>고세율</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_HIGH_PEDIA">
+			<Text>조세는 높게 책정될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_HIGH_HELP_BONUS">
+			<Text>모든 도시의 [ICON_GOLD]골드 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TAXATION_HIGH_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +25%</Text>
+		</Row>
+		<!--TRADE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRADE_DESC">
+			<Text>무역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRADE_HELP">
+			<Text>무역 법안은 국제 무역에 대한 정부의 개입을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FREE_SHORT_DESC">
+			<Text>자유무역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FREE_PEDIA">
+			<Text>무역은 상업의 육성을 위해 규제되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FREE_HELP_BONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]국제 교역로에서 얻는 산출량 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FREE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_DIRECTED_SHORT_DESC">
+			<Text>보호무역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_DIRECTED_PEDIA">
+			<Text>무역은 국가의 이익을 위해 규제된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FAIR_SHORT_DESC">
+			<Text>공정무역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FAIR_PEDIA">
+			<Text>무역은 공정한 상호의 이익을 위해 규제된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FAIR_HELP_BONUS">
+			<Text>[ICON_CONNECTED]도시 연결에서 오는 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRADE_FAIR_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -5%</Text>
+		</Row>
+		<!--WEALTH-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WEALTH_DESC">
+			<Text>소득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WEALTH_HELP">
+			<Text>소득 법안은 소득의 재분배 수단을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_MARKET_SHORT_DESC">
+			<Text>시장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_MARKET_PEDIA">
+			<Text>소득은 시장을 통해 분배된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_MARKET_HELP_BONUS">
+			<Text>시장에서 [ICON_GOLD]골드 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_MARKET_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_NONE_PEDIA">
+			<Text>소득은 분배의 대상이 아니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_PALACE_SHORT_DESC">
+			<Text>궁전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_PALACE_PEDIA">
+			<Text>소득은 왕권을 통해 분배된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_PALACE_HELP_BONUS">
+			<Text>궁전에서 [ICON_GOLD]골드 +5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WEALTH_PALACE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: EDUCATION-->
+		<!--===================================================-->
+		<!--FUNDING-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FUNDING_DESC">
+			<Text>교육지원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FUNDING_HELP">
+			<Text>교육지원 법안은 고등 교육에 대한 투자의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_ACADEMIC_SHORT_DESC">
+			<Text>학술교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_ACADEMIC_PEDIA">
+			<Text>재정은 학술적 교육을 위해 투자될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_ACADEMIC_HELP_BONUS">
+			<Text>[ICON_CITIZEN]과학 전문가의 [ICON_RESEARCH]과학 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_ACADEMIC_HELP_PENALTY">
+			<Text>[ICON_CITIZEN]기술 전문가의 [ICON_PRODUCTION]생산 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_NONE_PEDIA">
+			<Text>고등 교육은 필요하지 않다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_TECHNICAL_SHORT_DESC">
+			<Text>기술교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_TECHNICAL_PEDIA">
+			<Text>재정은 기술적 교육을 위해 투자될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_TECHNICAL_HELP_BONUS">
+			<Text>[ICON_CITIZEN]기술 전문가의 [ICON_PRODUCTION]생산 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FUNDING_TECHNICAL_HELP_PENALTY">
+			<Text>[ICON_CITIZEN]과학 전문가의 [ICON_RESEARCH]과학 -1</Text>
+		</Row>
+		<!--HONOURS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HONOURS_DESC">
+			<Text>영예</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HONOURS_HELP">
+			<Text>영예 법안은 사회적으로 인정받고 존경받는 분야를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_HUMANITIES_SHORT_DESC">
+			<Text>인류애</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_HUMANITIES_PEDIA">
+			<Text>인류애에 경의를 표한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_HUMANITIES_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_GREAT_ARTIST]위대한 예술가와 [ICON_GREAT_MUSICIAN]위대한 음악가, [ICON_GREAT_WRITER]위대한 작가의 출현률 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_HUMANITIES_HELP_PENALTY">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_GREAT_SCIENTIST]위대한 과학자의 출현률 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_MERITED_SHORT_DESC">
+			<Text>공로</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_MERITED_PEDIA">
+			<Text>모든 학문 분야에 경의를 표한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_SCIENCES_SHORT_DESC">
+			<Text>과학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_SCIENCES_PEDIA">
+			<Text>과학에 경의를 표한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_SCIENCES_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_GREAT_SCIENTIST]위대한 과학자의 출현률 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HONOURS_SCIENCES_HELP_PENALTY">
+            <Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_GREAT_ARTIST]위대한 예술가와 [ICON_GREAT_MUSICIAN]위대한 음악가, [ICON_GREAT_WRITER]위대한 작가의 출현률 -15%</Text>
+		</Row>
+		<!--INFORMATION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INFORMATION_DESC">
+			<Text>학술</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INFORMATION_HELP">
+			<Text>학술 법안은 과학지식에 대한 접근성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_FREE_SHORT_DESC">
+			<Text>공개</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_FREE_PEDIA">
+			<Text>정보의 자유는 보호되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_FREE_HELP_BONUS">
+			<Text>아카데미에서 [ICON_RESEARCH]과학 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_FREE_HELP_PENALTY">
+			<Text>연구소에서 [ICON_TOURISM] 관광 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CENSORED_SHORT_DESC">
+			<Text>검열</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CENSORED_PEDIA">
+			<Text>정보의 접근은 제한적으로 허용된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CONTROLLED_SHORT_DESC">
+			<Text>통제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CONTROLLED_PEDIA">
+			<Text>정보의 접근은 엄격하게 통제된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CONTROLLED_HELP_BONUS">
+			<Text>연구소에서 [ICON_TOURISM] 관광 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INFORMATION_CONTROLLED_HELP_PENALTY">
+			<Text>아카데미에서 [ICON_RESEARCH]과학 -2</Text>
+		</Row>
+		<!--INSTRUCTION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INSTRUCTION_DESC">
+			<Text>지침</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INSTRUCTION_HELP">
+			<Text>지침 법안은 학교에서 교육할 가치를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_CRITICAL_SHORT_DESC">
+			<Text>비평</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_CRITICAL_PEDIA">
+			<Text>학교는 비판적 가치를 교육한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_CRITICAL_HELP_BONUS">
+			<Text>공립학교에서 [ICON_CULTURE]문화 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_CRITICAL_HELP_PENALTY">
+			<Text>공립학교에서 [ICON_RESEARCH]과학 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PRIVATE_SHORT_DESC">
+			<Text>사립학교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PRIVATE_PEDIA">
+			<Text>각 학교는 고유의 가치를 교육한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PATRIOTIC_SHORT_DESC">
+			<Text>애국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PATRIOTIC_PEDIA">
+			<Text>학교는 애국적 가치를 교육한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PATRIOTIC_HELP_BONUS">
+			<Text>공립학교에서 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INSTRUCTION_PATRIOTIC_HELP_PENALTY">
+			<Text>공립학교에서 [ICON_RESEARCH]과학 -10%</Text>
+		</Row>
+		<!--LEARNING-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEARNING_DESC">
+			<Text>학습</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LEARNING_HELP">
+			<Text>학습 법안은 교육의 중추기관을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_UNIVERSITIES_SHORT_DESC">
+			<Text>대학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_UNIVERSITIES_PEDIA">
+			<Text>대학이 교육의 중심지다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_UNIVERSITIES_HELP_BONUS">
+			<Text>대학에서 [ICON_RESEARCH]과학 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_UNIVERSITIES_HELP_PENALTY">
+			<Text>[ICON_CAPITAL]수도의 [ICON_RESEARCH]과학 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_PALACE_SHORT_DESC">
+			<Text>궁정학교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_PALACE_PEDIA">
+			<Text>궁정학교가 교육의 중심지다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_MONASTERIES_SHORT_DESC">
+			<Text>수도원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_MONASTERIES_PEDIA">
+			<Text>수도원이 교육의 중심지다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_MONASTERIES_HELP_BONUS">
+			<Text>수도원에서 [ICON_RESEARCH]과학 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LEARNING_MONASTERIES_HELP_PENALTY">
+			<Text>[ICON_CAPITAL]수도의 [ICON_RESEARCH]과학 -10%</Text>
+		</Row>
+		<!--RESEARCH-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RESEARCH_DESC">
+			<Text>탐구</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RESEARCH_HELP">
+			<Text>탐구 법안은 국제 연구에 접근 방식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_JOINT_SHORT_DESC">
+			<Text>협의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_JOINT_PEDIA">
+			<Text>국제 연구에 참여해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_JOINT_HELP_BONUS">
+			<Text>[COLOR_RESEARCH_STORED]연구 협정[ENDCOLOR]으로 얻는 [ICON_RESEARCH]과학 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_JOINT_HELP_PENALTY">
+			<Text>[ICON_GREAT_SCIENTIST]위대한 과학자를 소모했을 때 얻는 [ICON_RESEARCH]과학 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_ISOLATED_SHORT_DESC">
+			<Text>단독</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_ISOLATED_PEDIA">
+			<Text>국제 연구는 불필요하다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_COMPETITIVE_SHORT_DESC">
+			<Text>경합</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_COMPETITIVE_PEDIA">
+			<Text>국제 연구는 경쟁의 대상이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_COMPETITIVE_HELP_BONUS">
+			<Text>[ICON_GREAT_SCIENTIST]위대한 과학자를 소모했을 때 얻는 [ICON_RESEARCH]과학 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RESEARCH_COMPETITIVE_HELP_PENALTY">
+			<Text>[COLOR_RESEARCH_STORED]연구 협정[ENDCOLOR]으로 얻는 [ICON_RESEARCH]과학 -20%</Text>
+		</Row>
+		<!--SCHOLARSHIP-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCHOLARSHIP_DESC">
+			<Text>장학재단</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCHOLARSHIP_HELP">
+			<Text>장학재단 법안은 우리가 장려하는 학문의 성격을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_ARTS_SHORT_DESC">
+			<Text>예술대학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_ARTS_PEDIA">
+			<Text>예술학에 장학금을 수여할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_ARTS_HELP_BONUS">
+			<Text>대학에서 [ICON_CULTURE]문화 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_ARTS_HELP_PENALTY">
+			<Text>대학의 [ICON_RESEARCH]과학 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_NONE_PEDIA">
+			<Text>장학재단은 설립되지 않을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_THEOLOGY_SHORT_DESC">
+			<Text>신학대학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_THEOLOGY_PEDIA">
+			<Text>신학에 장학금을 수여할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_THEOLOGY_HELP_BONUS">
+			<Text>수도원에서 [ICON_PEACE]신앙 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOLARSHIP_THEOLOGY_HELP_PENALTY">
+			<Text>대학의 [ICON_RESEARCH]과학 -1</Text>
+		</Row>
+		<!--SCHOOLING-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCHOOLING_DESC">
+			<Text>정규교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCHOOLING_HELP">
+			<Text>정규교육 법안은 공립 교육의 대상자를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_UNIVERSAL_SHORT_DESC">
+			<Text>보편교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_UNIVERSAL_PEDIA">
+			<Text>교육은 만인에게 열려있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_UNIVERSAL_HELP_BONUS">
+			<Text>모든 도시에서 [ICON_CITIZEN] 비전문가 시민 4명 마다 [ICON_RESEARCH]과학 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_UNIVERSAL_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_ELITE_SHORT_DESC">
+			<Text>엘리트교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_ELITE_PEDIA">
+			<Text>엘리트만이 교육받을 가치가 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_MERITED_SHORT_DESC">
+			<Text>능력교육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_MERITED_PEDIA">
+			<Text>재능을 가진 사람만이 교육받을 가치가 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_MERITED_HELP_BONUS">
+			<Text>모든 [ICON_CITIZEN]전문가에서 과학 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCHOOLING_MERITED_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<!--SCRIBES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCRIBES_DESC">
+			<Text>필경</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SCRIBES_HELP">
+			<Text>필경 법안은 기록 보관의 중점을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_PHILOSOPHY_SHORT_DESC">
+			<Text>철학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_PHILOSOPHY_PEDIA">
+			<Text>기록은 철학을 보존해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_PHILOSOPHY_HELP_BONUS">
+			<Text>원형극장의 [ICON_CULTURE]문화 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_PHILOSOPHY_HELP_PENALTY">
+			<Text>도서관의 [ICON_RESEARCH]과학 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_HISTORY_SHORT_DESC">
+			<Text>사학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_HISTORY_PEDIA">
+			<Text>기록은 역사를 보존해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_MATHEMATICS_SHORT_DESC">
+			<Text>수학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_MATHEMATICS_PEDIA">
+			<Text>기록은 수학을 보존해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_MATHEMATICS_HELP_BONUS">
+			<Text>도서관의 [ICON_RESEARCH]과학 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SCRIBES_MATHEMATICS_HELP_PENALTY">
+			<Text>원형극장의 [ICON_CULTURE]문화 -1</Text>
+		</Row>
+		<!--TRAINING-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRAINING_DESC">
+			<Text>육성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TRAINING_HELP">
+			<Text>육성 법안은 국민들이 받는 교육의 성격을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_SCHOLARS_SHORT_DESC">
+			<Text>학자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_SCHOLARS_PEDIA">
+			<Text>교육을 통해 학자를 육성해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_SCHOLARS_HELP_BONUS">
+			<Text>[COLOR_RESEARCH_STORED]도서관, 대학, 공립학교, 연구소[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_SCHOLARS_HELP_PENALTY">
+			<Text>[COLOR_FONT_RED]병영, 무기고, 사관학교[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_CITIZENS_SHORT_DESC">
+			<Text>시민</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_CITIZENS_PEDIA">
+			<Text>교육을 통해 시민의식을 함양시켜야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_WARRIORS_SHORT_DESC">
+			<Text>장병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_WARRIORS_PEDIA">
+			<Text>교육을 통해 장병을 육성해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_WARRIORS_HELP_BONUS">
+			<Text>[COLOR_FONT_RED]병영, 무기고, 사관학교[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TRAINING_WARRIORS_HELP_PENALTY">
+            <Text>[COLOR_RESEARCH_STORED]도서관, 대학, 공립학교, 연구소[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: INDUSTRY-->
+		<!--===================================================-->
+		<!--ARCHITECTURE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ARCHITECTURE_DESC">
+			<Text>축조</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ARCHITECTURE_HELP">
+			<Text>축조 법안은 우리 건축 계획의 성격을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_AESTHETIC_SHORT_DESC">
+			<Text>심미적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_AESTHETIC_PEDIA">
+			<Text>아름다움이야말로 건축의 핵심이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_AESTHETIC_HELP_BONUS">
+			<Text>[ICON_GREAT_ENGINEER]위대한 기술자를 소모했을 때 얻는 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_AESTHETIC_HELP_PENALTY">
+			<Text>[ICON_GREAT_ENGINEER]위대한 기술자의 출현률 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_FUNCTIONAL_SHORT_DESC">
+			<Text>기능적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_FUNCTIONAL_PEDIA">
+			<Text>기능이야말로 건축의 핵심이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_TECHNICAL_SHORT_DESC">
+			<Text>기술적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_TECHNICAL_PEDIA">
+			<Text>기술이야말로 건축의 핵심이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_TECHNICAL_HELP_BONUS">
+			<Text>[ICON_GREAT_ENGINEER]위대한 기술자의 출현률 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ARCHITECTURE_TECHNICAL_HELP_PENALTY">
+			<Text>[ICON_GREAT_ENGINEER]위대한 기술자를 소모했을 때 얻는 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<!--CONSTRUCTION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONSTRUCTION_DESC">
+			<Text>설계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONSTRUCTION_HELP">
+			<Text>설계 법안은 우리의 건설적 열정의 초점을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WONDERS_SHORT_DESC">
+			<Text>신비</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WONDERS_PEDIA">
+			<Text>신비로운 건물을 건설할 것이다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WONDERS_HELP_BONUS">
+			<Text>[COLOR_SELECTED_TEXT]채석장[ENDCOLOR]의 [ICON_PRODUCTION]생산력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WONDERS_HELP_PENALTY">
+			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR].의 [ICON_PRODUCTION]생산력 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_BUILDINGS_SHORT_DESC">
+			<Text>시설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_BUILDINGS_PEDIA">
+			<Text>시설물을 건설할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_SHORT_DESC">
+			<Text>병기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_PEDIA">
+			<Text>무기를 생산할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_HELP_BONUS">
+			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR].의 [ICON_PRODUCTION]생산력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_HELP_PENALTY">
+			<Text>[COLOR_SELECTED_TEXT]채석장[ENDCOLOR]의 [ICON_PRODUCTION]생산력 -1</Text>
+		</Row>
+		<!--EMPLOYMENT-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EMPLOYMENT_DESC">
+			<Text>고용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EMPLOYMENT_HELP">
+			<Text>고용 법안은 노사관계를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EFFICIENCY_SHORT_DESC">
+			<Text>효율성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EFFICIENCY_PEDIA">
+			<Text>노동자는 열심히 일해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EFFICIENCY_HELP_BONUS">
+			<Text>공장의 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EFFICIENCY_HELP_PENALTY">
+			<Text>공장에서 [ICON_HAPPINESS_1]행복도 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_PRIVATE_SHORT_DESC">
+			<Text>개인계약</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_PRIVATE_PEDIA">
+			<Text>고용은 사적인 계약이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EQUITY_SHORT_DESC">
+			<Text>공평성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EQUITY_PEDIA">
+			<Text>노동자는 공정하게 대우받아야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EQUITY_HELP_BONUS">
+			<Text>공장에서 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EMPLOYMENT_EQUITY_HELP_PENALTY">
+			<Text>공장의 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<!--ENVIRONMENT-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ENVIRONMENT_DESC">
+			<Text>환경</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ENVIRONMENT_HELP">
+			<Text>환경 법안은 자연의 산업적 사용을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_EXTORTED_SHORT_DESC">
+			<Text>자연개발</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_EXTORTED_PEDIA">
+			<Text>자연은 극복해야할 대상이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_EXTORTED_HELP_BONUS">
+			<Text>산, 정글, 산호섬에서 [ICON_PRODUCTION]생산력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_EXTORTED_HELP_PENALTY">
+			<Text>산, 정글, 산호섬에서 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_NONE_PEDIA">
+			<Text>자연의 산업적 사용에 대해서 규제하지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_PROTECTED_SHORT_DESC">
+			<Text>자연보호</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_PROTECTED_PEDIA">
+			<Text>자연의 무분별한 착취는 규제되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_PROTECTED_HELP_BONUS">
+			<Text>산, 정글, 산호섬에서 [ICON_FOOD]식량 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ENVIRONMENT_PROTECTED_HELP_PENALTY">
+			<Text>산, 정글, 산호섬에서 [ICON_PRODUCTION]생산력 -1</Text>
+		</Row>
+		<!--GUILDS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GUILDS_DESC">
+			<Text>길드조합</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GUILDS_HELP">
+			<Text>길드조합 법안은 길드의 허가증 발행의 성격을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_MERCHANTS_SHORT_DESC">
+			<Text>상업길드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_MERCHANTS_PEDIA">
+			<Text>길드는 상업의 발전을 위해 허가된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_MERCHANTS_HELP_BONUS">
+			<Text>항만에서 [ICON_GOLD]골드 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_MERCHANTS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산력 -5% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_PRIVATE_SHORT_DESC">
+			<Text>사익</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_PRIVATE_PEDIA">
+			<Text>길드는 엄격한 심사 하에 허가된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_ARTISANS_SHORT_DESC">
+			<Text>예술길드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_ARTISANS_PEDIA">
+			<Text>길드는 숙련공의 육성을 위해 허가된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_ARTISANS_HELP_BONUS">
+			<Text>작업장의 [ICON_PRODUCTION]생산력 +10% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_ARTISANS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -5%</Text>
+		</Row>
+		<!--INDUSTRIES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INDUSTRIES_DESC">
+			<Text>경영</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INDUSTRIES_HELP">
+			<Text>경영 법안은 중요 산업의 경영권을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_PRIVATE_SHORT_DESC">
+			<Text>민영회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_PRIVATE_PEDIA">
+			<Text>중요 산업은 민영에서 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_PRIVATE_HELP_BONUS">
+			<Text>건물 [ICON_GOLD]유지비 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_PRIVATE_HELP_PENALTY">
+			<Text>건물을 건설할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_GUILDS_SHORT_DESC">
+			<Text>길드회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_GUILDS_PEDIA">
+			<Text>중요 산업은 길드에서 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_NATIONAL_SHORT_DESC">
+			<Text>국영회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_NATIONAL_PEDIA">
+			<Text>중요 산업은 국가가 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_NATIONAL_HELP_BONUS">
+			<Text>건물을 건설할 때 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INDUSTRIES_NATIONAL_HELP_PENALTY">
+			<Text>건물 [ICON_GOLD]유지비 +10%</Text>
+		</Row>
+		<!--LABOUR-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LABOUR_DESC">
+			<Text>노동</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LABOUR_HELP">
+			<Text>노동 법안은 노동자의 권리를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_EMANCIPATED_SHORT_DESC">
+			<Text>해방</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_EMANCIPATED_PEDIA">
+			<Text>노동자의 권리는 자유롭게 보장된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_EMANCIPATED_HELP_BONUS">
+			<Text>노동자의 [ICON_MOVES]이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_EMANCIPATED_HELP_PENALTY">
+			<Text>[ICON_WORKER]노동자의 작업 속도 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_CORVEE_SHORT_DESC">
+			<Text>역역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_CORVEE_PEDIA">
+			<Text>노동자는 국가에 봉사해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_BONDED_SHORT_DESC">
+			<Text>속박</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_BONDED_PEDIA">
+			<Text>노동자는 토지에 귀속된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_BONDED_HELP_BONUS">
+			<Text>[ICON_WORKER]노동자의 작업 속도 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LABOUR_BONDED_HELP_PENALTY">
+			<Text>노동자의 [ICON_MOVES]이동력 -1</Text>
+		</Row>
+		<!--MACHINERY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MACHINERY_DESC">
+			<Text>산업기기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MACHINERY_HELP">
+			<Text>산업기기 법안은 기계 사용의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SAIL_SHORT_DESC">
+			<Text>출항</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SAIL_PEDIA">
+			<Text>산업의 목적은 조선업에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SAIL_HELP_BONUS">
+			<Text>해상 유닛을 생산할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SAIL_HELP_PENALTY">
+			<Text>공성 유닛을 생산할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_BUILDINGS_SHORT_DESC">
+			<Text>토목</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_BUILDINGS_PEDIA">
+			<Text>산업의 목적은 토목에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SIEGE_SHORT_DESC">
+			<Text>공성술</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SIEGE_PEDIA">
+			<Text>산업의 목적은 공성기술의 발전에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SIEGE_HELP_BONUS">
+			<Text>공성 유닛을 생산할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MACHINERY_SIEGE_HELP_PENALTY">
+			<Text>해상 유닛을 생산할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<!--MANUFACTURING-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MANUFACTURING_DESC">
+			<Text>제조업</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MANUFACTURING_HELP">
+			<Text>제조업 법안은 제조업의 주요 수단을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_MECHANICAL_SHORT_DESC">
+			<Text>기계공업</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_MECHANICAL_PEDIA">
+			<Text>제조업은 기계를 통해 발전한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_MECHANICAL_HELP_BONUS">
+			<Text>제조소의 [ICON_PRODUCTION]생산력 +3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_MECHANICAL_HELP_PENALTY">
+			<Text>[ICON_CITIZEN]기술자 전문가의 [ICON_PRODUCTION]생산력 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_PRIVATE_PEDIA">
+			<Text>제조업은 개인적인 영역이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_CRAFTED_SHORT_DESC">
+			<Text>도제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_CRAFTED_PEDIA">
+			<Text>제조업은 장인을 통해 발전한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_CRAFTED_HELP_BONUS">
+			<Text>[ICON_CITIZEN]기술자 전문가의 [ICON_PRODUCTION]생산력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MANUFACTURING_CRAFTED_HELP_PENALTY">
+			<Text>제조소의 [ICON_PRODUCTION]생산력 -3</Text>
+		</Row>
+		<!--UNIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_UNIONS_DESC">
+			<Text>노동조합</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_UNIONS_HELP">
+			<Text>노동조합 법안은 노동자의 조직체를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_FREE_SHORT_DESC">
+			<Text>자유무역회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_FREE_PEDIA">
+			<Text>노동조합은 자유롭게 조직된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_FREE_HELP_BONUS">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_FREE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_NONE_SHORT_DESC">
+			<Text>길드무역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_NONE_PEDIA">
+			<Text>노동자들은 길드를 중심으로 조직된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_NONE_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_STATE_SHORT_DESC">
+			<Text>국영무역회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_STATE_PEDIA">
+			<Text>노동조합은 국가의 통제 하에 조직된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_STATE_HELP_BONUS">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_UNIONS_STATE_HELP_PENALTY">
+			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +25%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: MILITARY-->
+		<!--===================================================-->
+		<!--COMMAND-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_COMMAND_DESC">
+			<Text>지휘</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_COMMAND_HELP">
+			<Text>지휘 법안은 군 지휘관의 선출 방식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_MERIT_SHORT_DESC">
+			<Text>전공</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_MERIT_PEDIA">
+			<Text>지휘관은 전공에 따라 선발된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_MERIT_HELP_BONUS">
+			<Text>[ICON_GREAT_GENERAL]위대한 장군의 출현률 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_MERIT_HELP_PENALTY">
+			<Text>[COLOR_FONT_RED]병영, 무기고, 사관학교[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_INHERITED_SHORT_DESC">
+			<Text>위임</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_INHERITED_PEDIA">
+			<Text>지휘관은 전임자로부터 위임된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_COMMISSION_SHORT_DESC">
+			<Text>임관</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_COMMISSION_PEDIA">
+			<Text>지휘관은 훈련받은 군인에서 선발된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_COMMISSION_HELP_BONUS">
+			<Text>[COLOR_FONT_RED]병영, 무기고, 사관학교[ENDCOLOR]를 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_COMMAND_COMMISSION_HELP_PENALTY">
+			<Text>[ICON_GREAT_GENERAL]위대한 장군의 출현률 +15%</Text>
+		</Row>
+		<!--CONQUESTS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONQUESTS_DESC">
+			<Text>점령</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CONQUESTS_HELP">
+			<Text>점령 법안은 점령지의 관리를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_SHORT_DESC">
+			<Text>포섭</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_PEDIA">
+			<Text>점령지는 우리 문명과 화합할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_HELP_BONUS">
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_CITIZEN]인구에서 발생되는 [ICON_HAPPINESS_3]불행 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_COOPTATION_HELP_PENALTY">
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_SUBJUGATION_SHORT_DESC">
+			<Text>탄압</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_SUBJUGATION_PEDIA">
+			<Text>점령지는 우리 문명의 권위에 종속될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_SHORT_DESC">
+			<Text>동화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_PEDIA">
+			<Text>점령지는 우리 문명에 동화될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_HELP_BONUS">
+			<Text>[ICON_OCCUPIED]점령한 도시의 [ICON_PRODUCTION]생산 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CONQUESTS_ASSIMILATION_HELP_PENALTY">
+			<Text>[ICON_OCCUPIED]점령된 도시의 [ICON_CITIZEN]인구가 발생시키는 [ICON_HAPPINESS_3]불행 +15%</Text>
+		</Row>
+		<!--DEFENSES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_DEFENSES_DESC">
+			<Text>국방</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_DEFENSES_HELP">
+			<Text>국방 법안은 방어 수단과 목적을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_CITIES_SHORT_DESC">
+			<Text>도시 방어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_CITIES_PEDIA">
+			<Text>도시 방어에 집중하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_CITIES_HELP_BONUS">
+			<Text>도시의 [ICON_STRENGTH]전투력 +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_CITIES_HELP_PENALTY">
+			<Text>요새에 주둔하고 있는 유닛의 [ICON_STRENGTH]전투력 -25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_DEFENSES_CITIES">
+			<Text>요새방어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_DEFENSES_CITIES_HELP">
+			<Text>요새에 주둔하고 있는 유닛의 [ICON_STRENGTH]전투력 -25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_BALANCED_SHORT_DESC">
+			<Text>균형방어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_BALANCED_PEDIA">
+			<Text>균형을 유지하며 방어하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_LANDS_SHORT_DESC">
+			<Text>지형방어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_LANDS_PEDIA">
+			<Text>지형을 활용하며 방어하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_LANDS_HELP_BONUS">
+			<Text>요새에 주둔하고 있는 유닛의 [ICON_STRENGTH]전투력 +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEFENSES_LANDS_HELP_PENALTY">
+			<Text>도시의 [ICON_STRENGTH]전투력 -25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_DEFENSES_LANDS">
+			<Text>지형방어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_DEFENSES_LANDS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]요새[ENDCOLOR]에 주둔하고 있는 유닛의 [ICON_STRENGTH]전투력 +25%.</Text>
+		</Row>
+		<!--LOGISTICS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LOGISTICS_DESC">
+			<Text>군수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LOGISTICS_HELP">
+			<Text>군수 법안은 군대에 물자를 공급하는 수단을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_SUPPLIES_SHORT_DESC">
+			<Text>보급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_SUPPLIES_PEDIA">
+			<Text>군대에 지속적인 보급을 유지할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_SUPPLIES_HELP_BONUS">
+			<Text>군사 유닛 보급 한도가 [ICON_CITIZEN]인구의 25%만큼 증가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_SUPPLIES_HELP_PENALTY">
+			<Text>[ICON_WAR]전쟁 피로도 +25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PLUNDER_SHORT_DESC">
+			<Text>약탈</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PLUNDER_PEDIA">
+			<Text>현지에서 약탈을 통해 물자를 보충할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PROVISIONS_SHORT_DESC">
+			<Text>공급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PROVISIONS_PEDIA">
+			<Text>군대에 필요분만을 보급할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PROVISIONS_HELP_BONUS">
+			<Text>[ICON_WAR]전쟁 피로도 -25%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LOGISTICS_PROVISIONS_HELP_PENALTY">
+			<Text>군사 유닛 보급 한도가 [ICON_CITIZEN]인구의 25%만큼 감소</Text>
+		</Row>
+		<!--PAYMENT-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PAYMENT_DESC">
+			<Text>급료</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PAYMENT_HELP">
+			<Text>급료 법안은 군인에게 주는 급여를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_SALARIES_SHORT_DESC">
+			<Text>봉급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_SALARIES_PEDIA">
+			<Text>군인은 정기적인 급여를 받을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_SALARIES_HELP_BONUS">
+			<Text>유닛 주둔마다 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_SALARIES_HELP_PENALTY">
+			<Text>군사 유닛의 [ICON_GOLD]유지비 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LODGINGS_SHORT_DESC">
+			<Text>숙식</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LODGINGS_PEDIA">
+			<Text>군인에게 숙식이 제공될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LANDS_SHORT_DESC">
+			<Text>봉토</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LANDS_PEDIA">
+			<Text>퇴역한 군인은 봉토가 하사될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LANDS_HELP_BONUS">
+			<Text>유닛 주둔마다 [ICON_CULTURE]문화 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PAYMENT_LANDS_HELP_PENALTY">
+			<Text>군사 유닛의 [ICON_GOLD]유지비 +10%</Text>
+		</Row>
+		<!--RECRUITMENT-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RECRUITMENT_DESC">
+			<Text>징집</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RECRUITMENT_HELP">
+			<Text>징집 법안은 모병제도의 방식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_IRREGULAR_SHORT_DESC">
+			<Text>비정규군</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_IRREGULAR_PEDIA">
+			<Text>군인들은 평시에는 일반 시민이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_IRREGULAR_HELP_BONUS">
+			<Text>유닛의 [ICON_GOLD]유지비 -20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_IRREGULAR_HELP_PENALTY">
+			<Text>새로 훈련하는 유닛의 경험치 -20.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_CONSCRIPT_SHORT_DESC">
+			<Text>징병제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_CONSCRIPT_PEDIA">
+			<Text>군인들은 노련한 징집병으로 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_PROFESSIONAL_SHORT_DESC">
+			<Text>정규군</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_PROFESSIONAL_PEDIA">
+			<Text>군인들은 군사 전문가들로 구성된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_PROFESSIONAL_HELP_BONUS">
+			<Text>새로 훈련하는 유닛의 경험치 +20.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RECRUITMENT_PROFESSIONAL_HELP_PENALTY">
+			<Text>유닛의 [ICON_GOLD]유지비 +20%.</Text>
+		</Row>
+		<!--SOLDIERS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SOLDIERS_DESC">
+			<Text>군인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SOLDIERS_HELP">
+			<Text>군인 법안은 군대를 구성하는 군인의 성격을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_MERCENARIES_SHORT_DESC">
+			<Text>용병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_MERCENARIES_PEDIA">
+			<Text>군대는 용병으로 유지된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_MERCENARIES_HELP_BONUS">
+			<Text>유닛의 [ICON_GOLD]구매 비용 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_MERCENARIES_HELP_PENALTY">
+			<Text>군사 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_CITIZENS_SHORT_DESC">
+			<Text>시민군</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_CITIZENS_PEDIA">
+			<Text>군대는 시민으로 유지된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_SLAVES_SHORT_DESC">
+			<Text>노예병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_SLAVES_PEDIA">
+			<Text>군대는 노예로 유지된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_SLAVES_HELP_BONUS">
+			<Text>군사 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SOLDIERS_SLAVES_HELP_PENALTY">
+			<Text>유닛의 [ICON_GOLD]구매 비용 +15%</Text>
+		</Row>
+		<!--STRATEGY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STRATEGY_DESC">
+			<Text>전략</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STRATEGY_HELP">
+			<Text>전략 법안은 국제 사회에서 군대의 전략적 사용을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_DETERRENCE_SHORT_DESC">
+			<Text>억제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_DETERRENCE_PEDIA">
+			<Text>우리는 위협에 대한 억제를 추구한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_DETERRENCE_HELP_BONUS">
+			<Text>공물을 요구할 수 있는 [ICON_CITY_STATE]도시 국가의 [ICON_INFLUENCE]영향력이 매 턴 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_DETERRENCE_HELP_PENALTY">
+			<Text>군사 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_SURVIVAL_SHORT_DESC">
+			<Text>자위</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_SURVIVAL_PEDIA">
+			<Text>우리는 안전에 대한 보장을 추구한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_COMPELLENCE_SHORT_DESC">
+			<Text>강압</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_COMPELLENCE_PEDIA">
+			<Text>우리는 이익에 따라 군사력을 투사할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_COMPELLENCE_HELP_BONUS">
+			<Text>[ICON_CITY_STATE]도시 국가를 상대로 [ICON_STRENGTH]전투력 +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STRATEGY_COMPELLENCE_HELP_PENALTY">
+			<Text>군사 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<!--TECHNOLOGY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TECHNOLOGY_DESC">
+			<Text>군사기술</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TECHNOLOGY_HELP">
+			<Text>군사기술 법안은 군사과학 발전의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_TACTICS_SHORT_DESC">
+			<Text>전술</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_TACTICS_PEDIA">
+			<Text>전술적 우위를 점하는데 집중하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_TACTICS_HELP_BONUS">
+			<Text>전투로 얻는 경험치 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_TACTICS_HELP_PENALTY">
+			<Text>군사 유닛의 [ICON_GOLD]업그레이드 비용 +15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_MIXED_SHORT_DESC">
+			<Text>혼용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_MIXED_PEDIA">
+			<Text>전술과 기술적 우위 모두가 중요하다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_EQUIPMENT_SHORT_DESC">
+			<Text>장비</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_EQUIPMENT_PEDIA">
+			<Text>기술적 우위를 점하는데 집중하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_EQUIPMENT_HELP_BONUS">
+			<Text>군사 유닛의 [ICON_GOLD]업그레이드 비용 -15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TECHNOLOGY_EQUIPMENT_HELP_PENALTY">
+			<Text>유닛의 [ICON_GOLD]유지비 +10%.</Text>
+		</Row>
+		<!--WARFARE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WARFARE_DESC">
+			<Text>교전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WARFARE_HELP">
+			<Text>교전 법안은 전쟁의 수행 방식을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_RANGED_SHORT_DESC">
+			<Text>유격전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_RANGED_PEDIA">
+			<Text>적과 거리를 벌리며 싸워라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_RANGED_HELP_BONUS">
+			<Text>[ICON_RANGE_STRENGTH]원거리 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_RANGED_HELP_PENALTY">
+			<Text>[ICON_STRENGTH]근접 유닛과 화약 유닛을 훈현할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_FOOT_SHORT_DESC">
+			<Text>백병전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_FOOT_PEDIA">
+			<Text>적에게 달려들어 싸워라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_MOUNTED_SHORT_DESC">
+			<Text>기동전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_MOUNTED_PEDIA">
+			<Text>기병을 앞세워 돌격하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_MOUNTED_HELP_BONUS">
+			<Text>[ICON_RES_HORSE]원거리 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WARFARE_MOUNTED_HELP_PENALTY">
+			<Text>[ICON_STRENGTH]근접 유닛과 화약 유닛을 훈현할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: RELIGION-->
+		<!--===================================================-->
+		<!--AUTHORITY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_AUTHORITY_DESC">
+			<Text>교권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_AUTHORITY_HELP">
+			<Text>교권 법안은 종교의 최고 권위를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_CHURCH_SHORT_DESC">
+			<Text>교권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_CHURCH_PEDIA">
+			<Text>종교는 종단의 지배 하에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_CHURCH_HELP_BONUS">
+			<Text>모든 도시의 [ICON_RELIGION]종교 갈등[ICON_HAPPINESS_3]불행 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_CHURCH_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_CULTURE]무료[ICON_HAPPINESS_3]불행 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_PRIVATE_PEDIA">
+			<Text>종교의 권한은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_STATE_SHORT_DESC">
+			<Text>국교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_STATE_PEDIA">
+			<Text>종교는 국가의 지배 하에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_STATE_HELP_BONUS">
+			<Text>모든 도시의 [ICON_CULTURE]무료[ICON_HAPPINESS_3]불행 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_AUTHORITY_STATE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RELIGION]종교 갈등[ICON_HAPPINESS_3]불행 +10%.</Text>
+		</Row>
+		<!--CHURCH-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CHURCH_DESC">
+			<Text>교단</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CHURCH_HELP">
+			<Text>교단 법안은 종교기관의 지위를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_CULTURAL_SHORT_DESC">
+			<Text>문화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_CULTURAL_PEDIA">
+			<Text>교단은 문화를 육성하는 기관이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_CULTURAL_HELP_BONUS">
+			<Text>종교 건물에서 [ICON_CULTURE]문화 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_CULTURAL_HELP_PENALTY">
+			<Text>종교 건물의 [ICON_PEACE]신앙 -2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_INDEPENDENT_SHORT_DESC">
+			<Text>독립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_INDEPENDENT_PEDIA">
+			<Text>교단은 독립적인 기관이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_NATIONAL_SHORT_DESC">
+			<Text>국교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_NATIONAL_PEDIA">
+			<Text>교단은 국가적 기관이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_NATIONAL_HELP_BONUS">
+			<Text>종교 건물에서 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CHURCH_NATIONAL_HELP_PENALTY">
+			<Text>종교 건물의 [ICON_PEACE]신앙 -2</Text>
+		</Row>
+		<!--INQUISITION-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INQUISITION_DESC">
+			<Text>종교재판</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INQUISITION_HELP">
+			<Text>종교재판 법안은 이단을 심문하는 종교 재판의 성격을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_JUDICIAL_SHORT_DESC">
+			<Text>사법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_JUDICIAL_PEDIA">
+			<Text>이단은 법적으로 해결한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_JUDICIAL_HELP_BONUS">
+			<Text>[ICON_RELIGION]개종에 대한 [ICON_INQUISITOR]저항 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_JUDICIAL_HELP_PENALTY">
+			<Text>[ICON_PEACE]신앙 구매 비용 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_INFORMAL_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_INFORMAL_PEDIA">
+			<Text>이단심문의 방법은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_MILITANT_SHORT_DESC">
+			<Text>징벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_MILITANT_PEDIA">
+			<Text>이단은 철퇴로 처리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_MILITANT_HELP_BONUS">
+			<Text>[ICON_INQUISITOR]이단심문관의 [ICON_MOVES]이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INQUISITION_MILITANT_HELP_PENALTY">
+			<Text>[ICON_PEACE]신앙 구매 비용 +5%</Text>
+		</Row>
+		<!--INVESTITURE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INVESTITURE_DESC">
+			<Text>서임</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_INVESTITURE_HELP">
+			<Text>서임 법안은 종교 직위를 임명할 권한을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_CHURCH_SHORT_DESC">
+			<Text>종단</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_CHURCH_PEDIA">
+			<Text>종교의 최고 지도자는 교단이 임명한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_CHURCH_HELP_BONUS">
+			<Text>모든 도시의 [ICON_PEACE]신앙 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_CHURCH_HELP_PENALTY">
+			<Text>[ICON_PEACE]신앙 구매 비용 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_PRIVATE_PEDIA">
+			<Text>최고 종교 지도자의 임명은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_STATE_SHORT_DESC">
+			<Text>국교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_STATE_PEDIA">
+			<Text>종교의 최고 지도자는 국가가 임명한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_STATE_HELP_BONUS">
+			<Text>[ICON_PEACE]신앙 구매 비용 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_INVESTITURE_STATE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PEACE]신앙 -10%</Text>
+		</Row>
+		<!--MISSIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MISSIONS_DESC">
+			<Text>선교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MISSIONS_HELP">
+			<Text>선교 법안은 포교의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_DOMESTIC_SHORT_DESC">
+			<Text>국내선교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_DOMESTIC_PEDIA">
+			<Text>국내 선교를 지원한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_DOMESTIC_HELP_BONUS">
+			<Text>우호적인 영토에서 [ICON_MISSIONARY]선교사의 [ICON_MOVES]이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_DOMESTIC_HELP_PENALTY">
+			<Text>외국 영토에서 [ICON_MISSIONARY]선교사의 [ICON_MOVES]이동력 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_PRIVATE_PEDIA">
+			<Text>선교는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_ABROAD_SHORT_DESC">
+			<Text>해외선교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_ABROAD_PEDIA">
+			<Text>해외 선교를 지원한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_ABROAD_HELP_BONUS">
+			<Text>외국 영토에서 [ICON_MISSIONARY]선교사의 [ICON_MOVES]이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MISSIONS_ABROAD_HELP_PENALTY">
+			<Text>우호적인 영토에서 [ICON_MISSIONARY]선교사의 [ICON_MOVES]이동력 -1</Text>
+		</Row>
+		<!--OFFERINGS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_OFFERINGS_DESC">
+			<Text>봉헌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_OFFERINGS_HELP">
+			<Text>봉헌 법안은 신앙에 바치는 공물을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_PRAYERS_SHORT_DESC">
+			<Text>기도</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_PRAYERS_PEDIA">
+			<Text>신께 기도합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_PRAYERS_HELP_BONUS">
+			<Text>성소의 [ICON_PEACE]신앙 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_PRAYERS_HELP_PENALTY">
+			<Text>성소의 [ICON_GOLD]골드 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_NONE_PEDIA">
+			<Text>봉헌은 공식적으로 규정되지 않는다.</Text>>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_SACRIFICES_SHORT_DESC">
+			<Text>공양</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_SACRIFICES_PEDIA">
+			<Text>신께 제물을 바칩시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_SACRIFICES_HELP_BONUS">
+			<Text>야만인을 상대로 [ICON_STRENGTH]전투력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_OFFERINGS_SACRIFICES_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<!--ORDERS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ORDERS_DESC">
+			<Text>사명</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_ORDERS_HELP">
+			<Text>질서 개혁은 종교 사회의 본질을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_CHARITABLE_SHORT_DESC">
+			<Text>자선</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_CHARITABLE_PEDIA">
+			<Text>교단은 자선활동의 사회적 책임이 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_CHARITABLE_HELP_BONUS">
+			<Text>[COLOR_POSITIVE_TEXT]우호영토[ENDCOLOR]에서 체력 회복시 턴당 +5 추가회복</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_CHARITABLE_HELP_PENALTY">
+			<Text>군사 유닛을 훈련할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_ORDERS_CHARITABLE">
+			<Text>자선임무</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_ORDERS_CHARITABLE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]우호영토[ENDCOLOR]에서 체력 회복시 턴당 [COLOR_POSITIVE_TEXT]+5 추가 회복[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_PRIVATE_PEDIA">
+			<Text>교단의 사회적 책임은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_MILITANT_SHORT_DESC">
+			<Text>국방임무</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_MILITANT_PEDIA">
+			<Text>교단은 자선활동의 국방의 사회적 책임이 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_MILITANT_HELP_BONUS">
+			<Text>[ICON_PEACE]신앙으로 구매한 유닛이 [COLOR_NEGATIVE_TEXT]해외 영토[ENDCOLOR]에서 전투 시 [ICON_STRENGTH]전투력 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_ORDERS_MILITANT_HELP_PENALTY">
+			<Text>[ICON_PEACE]신앙 구매 비용 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_ORDERS_MILITANT">
+			<Text>신의 징벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_ORDERS_MILITANT_HELP">
+			<Text>해외 영토에서 전투시 전투력 + (15)</Text>
+		</Row>
+		<!--POLITICS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POLITICS_DESC">
+			<Text>신정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POLITICS_HELP">
+			<Text>신정 법안은 종교의 정치적 활동을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_SECULAR_SHORT_DESC">
+			<Text>세속주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_SECULAR_PEDIA">
+			<Text>종교는 정치에 참여할 수 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_SECULAR_HELP_BONUS">
+			<Text>모든 도시에 적어도 1명 이상의 신자를 가지고 있는 종교 1개마다 [ICON_CULTURE]문화 +4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_SECULAR_HELP_PENALTY">
+			<Text>모든 전문가의 [ICON_PEACE]신앙 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_PLURALIST_SHORT_DESC">
+			<Text>다원주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_PLURALIST_PEDIA">
+			<Text>모든 종교는 정치에 참여할 수 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_EXCLUSIVE_SHORT_DESC">
+			<Text>배타주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_EXCLUSIVE_PEDIA">
+			<Text>국교만이 정치에 참여할 수 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_EXCLUSIVE_HELP_BONUS">
+			<Text>성지의 [ICON_CULTURE]문화 +4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POLITICS_EXCLUSIVE_HELP_PENALTY">
+			<Text>성지의 [ICON_PEACE]신앙 -4</Text>
+		</Row>
+		<!--RITUAL-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RITUAL_DESC">
+			<Text>의례</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RITUAL_HELP">
+			<Text>의례 개혁은 종교 의식의 관리를 결정합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIESTS_SHORT_DESC">
+			<Text>사제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIESTS_PEDIA">
+			<Text>사제가 종교 의식을 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIESTS_HELP_BONUS">
+			<Text>사원의 [ICON_PEACE]신앙 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIESTS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RELIGION]종교 갈등[ICON_HAPPINESS_3]불행 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIVATE_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_PRIVATE_PEDIA">
+			<Text>의례의 주관은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_STATE_SHORT_DESC">
+			<Text>국교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_STATE_PEDIA">
+			<Text>국가가 종교 의식을 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_STATE_HELP_BONUS">
+			<Text>궁전의 [ICON_PEACE]신앙 +4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RITUAL_STATE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RELIGION]종교 갈등[ICON_HAPPINESS_3]불행 +10%.</Text>
+		</Row>
+		<!--TEACHINGS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TEACHINGS_DESC">
+			<Text>율법</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_TEACHINGS_HELP">
+			<Text>율법 법안은 종교적 가르침의 본질을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SCRIPTURAL_SHORT_DESC">
+			<Text>경전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SCRIPTURAL_PEDIA">
+			<Text>율법은 경전에 근거한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SCRIPTURAL_HELP_BONUS">
+			<Text>[ICON_MISSIONARY]선교사의 종교 전파 횟수 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SCRIPTURAL_HELP_PENALTY">
+			<Text>[ICON_PEACE]신앙 구매 비용 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_PRIVATE_SHORT_DESC">
+			<Text>구전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_PRIVATE_PEDIA">
+			<Text>율법은 개인을 통해 전파된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SYNCRETIC_SHORT_DESC">
+			<Text>습합</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SYNCRETIC_PEDIA">
+			<Text>율법은 현지의 신앙과 융화된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SYNCRETIC_HELP_BONUS">
+			<Text>모든 도시의 [ICON_RELIGION]종교 압력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_TEACHINGS_SYNCRETIC_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PEACE]신앙 -5%</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: SOCIETY-->
+		<!--===================================================-->
+		<!--CITIZENSHIP-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CITIZENSHIP_DESC">
+			<Text>시민권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CITIZENSHIP_HELP">
+			<Text>시민권은 시민의 권리와 의무의 균형을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_LIBERAL_SHORT_DESC">
+			<Text>자유주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_LIBERAL_PEDIA">
+			<Text>시민은 자유로운 권리를 갖고 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_LIBERAL_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_CULTURE] 문화 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_LIBERAL_HELP_PENALTY">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_SUBJECT_SHORT_DESC">
+			<Text>복종</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_SUBJECT_PEDIA">
+			<Text>시민은 국가에 복종한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_CIVIC_SHORT_DESC">
+			<Text>시민주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_CIVIC_PEDIA">
+			<Text>시민은 권리에 상응한 의무를 진다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_CIVIC_HELP_BONUS">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_PRODUCTION]생산 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_CITIZENSHIP_CIVIC_HELP_PENALTY">
+			<Text>[ICON_GOLDEN_AGE]황금기 동안 [ICON_CULTURE]문화 -10%</Text>
+		</Row>
+		<!--LANGUAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LANGUAGE_DESC">
+			<Text>언어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_LANGUAGE_HELP">
+			<Text>언어 법안은 정부에서 사용되는 언어를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_ADAPTED_SHORT_DESC">
+			<Text>방언</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_ADAPTED_PEDIA">
+			<Text>방언의 사용도 허용된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_ADAPTED_HELP_BONUS">
+			<Text>모든 도시 내 [ICON_CITIZEN]비전문가 4명마다 [ICON_CULTURE]문화 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_ADAPTED_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RESEARCH]과학 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_INFORMAL_SHORT_DESC">
+			<Text>재량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_INFORMAL_PEDIA">
+			<Text>언어 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_PURE_SHORT_DESC">
+			<Text>표준어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_PURE_PEDIA">
+			<Text>표준어의 사용만이 허용된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_PURE_HELP_BONUS">
+			<Text>모든 [ICON_CITIZEN]전문가의 [ICON_CULTURE]문화 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_LANGUAGE_PURE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_RESEARCH]과학 -5%</Text>
+		</Row>
+		<!--HERITAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HERITAGE_DESC">
+			<Text>유산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HERITAGE_HELP">
+			<Text>유산 법안은 역사적 문화 유적지의 관리를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_EXHIBITED_SHORT_DESC">
+			<Text>전시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_EXHIBITED_PEDIA">
+			<Text>문화유산은 공공에 전시되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_EXHIBITED_HELP_BONUS">
+			<Text>랜드마크의 [ICON_TOURISM]관광 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_EXHIBITED_HELP_PENALTY">
+			<Text>랜드마크의 [ICON_CULTURE]문화 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRIVATE_SHORT_DESC">
+			<Text>개인적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRIVATE_PEDIA">
+			<Text>문화유산은 지역사회에서 관리한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRESERVED_SHORT_DESC">
+			<Text>보존</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRESERVED_PEDIA">
+			<Text>문화유산은 보존되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRESERVED_HELP_BONUS">
+			<Text>랜드마트의 [ICON_RESEARCH]과학 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HERITAGE_PRESERVED_HELP_PENALTY">
+			<Text>랜드마크의 [ICON_CULTURE]문화 -1</Text>
+		</Row>
+		<!--MARRIAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MARRIAGE_DESC">
+			<Text>결혼</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MARRIAGE_HELP">
+			<Text>결혼 법안은 혼인관계의 제도적 성격을 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_CIVIC_SHORT_DESC">
+			<Text>시민</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_CIVIC_PEDIA">
+			<Text>결혼은 시민간의 관계이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_CIVIC_HELP_BONUS">
+			<Text>치안 법원의 [ICON_HAPPINESS_1]행복도 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_CIVIC_HELP_PENALTY">
+			<Text>치안 법원의 [ICON_CULTURE]문화 -2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_PRIVATE_SHORT_DESC">
+			<Text>개인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_PRIVATE_PEDIA">
+			<Text>부부는 개인간의 관계이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_RELIGIOUS_SHORT_DESC">
+			<Text>종교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_RELIGIOUS_PEDIA">
+			<Text>결혼은 종교적인 관계이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_RELIGIOUS_HELP_BONUS">
+			<Text>사원의 [ICON_PEACE]신앙 +3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MARRIAGE_RELIGIOUS_HELP_PENALTY">
+			<Text>사원의 [ICON_CULTURE]문화 -2</Text>
+		</Row>
+		<!--MEDIA-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MEDIA_DESC">
+			<Text>대중 매체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MEDIA_HELP">
+			<Text>대중 매체 법안은 대중 매체의 자유와 소유권을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_FREE_SHORT_DESC">
+			<Text>독립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_FREE_PEDIA">
+			<Text>대중 매체의 독립성은 보장되어야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_FREE_HELP_BONUS">
+			<Text>방송탑의 [ICON_CULTURE]문화 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_FREE_HELP_PENALTY">
+			<Text>방송탑에서 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_PRIVATE_SHORT_DESC">
+			<Text>민영</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_PRIVATE_PEDIA">
+			<Text>대중 매체는 비공개적으로 운영된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_CENSORED_SHORT_DESC">
+			<Text>국영</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_CENSORED_PEDIA">
+			<Text>모든 대중 매체는 국가의 통제를 받는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_CENSORED_HELP_BONUS">
+			<Text>방송탑에서 [ICON_PRODUCTION]생산 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_CENSORED_HELP_PENALTY">
+			<Text>방송탑의 [ICON_CULTURE]문화 +10%</Text>
+		</Row>
+		<!--MEMORIALS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MEMORIALS_DESC">
+			<Text>기념</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MEMORIALS_HELP">
+			<Text>기념 법안은 찬양받을 헌신의 대상을 결정합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_SOLDIERS_SHORT_DESC">
+			<Text>군인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_SOLDIERS_PEDIA">
+			<Text>호국영령들을 추모합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_SOLDIERS_HELP_BONUS">
+			<Text>기념비의 [ICON_CULTURE]문화 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_SOLDIERS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEGENDS_SHORT_DESC">
+			<Text>전설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEGENDS_PEDIA">
+			<Text>전설적 인물들을 기념합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEADERS_SHORT_DESC">
+			<Text>지도자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEADERS_PEDIA">
+			<Text>위대한 지도자를 기념합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEADERS_HELP_BONUS">
+			<Text>기념비의 [ICON_GOLDEN_AGE]황금기 점수 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_MEMORIALS_LEADERS_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<!--PATRONAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PATRONAGE_DESC">
+			<Text>후원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PATRONAGE_HELP">
+			<Text>후원 법안은 중산층을 대상으로 정부 지원의 방향성을 결정합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_MERCHANTS_SHORT_DESC">
+			<Text>지식인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_MERCHANTS_PEDIA">
+			<Text>정부는 지식인을 후원할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_MERCHANTS_HELP_BONUS">
+			<Text>[ICON_GREAT_SCIENTIST]위대한 과학자, [ICON_GREAT_ENGINEER]위대한 기술자, [ICON_GREAT_MERCHANT]위대한 상인의 출현율 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_MERCHANTS_HELP_PENALTY">
+			<Text>[ICON_GREAT_ARTIST]위대한 예술가, [ICON_GREAT_WRITER]위대한 작가, [ICON_GREAT_MUSICIAN]위대한 음악가의 출현율 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_NONE_PEDIA">
+			<Text>후원은 공식적으로 규정되지 않는다.</Text>
+
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_ARTISTS_SHORT_DESC">
+			<Text>예술인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_ARTISTS_PEDIA">
+			<Text>정부는 예술인을 후원할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_ARTISTS_HELP_BONUS">
+			<Text>[ICON_GREAT_ARTIST]위대한 예술가, [ICON_GREAT_WRITER]위대한 작가, [ICON_GREAT_MUSICIAN]위대한 음악가의 출현율 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PATRONAGE_ARTISTS_HELP_PENALTY">
+			<Text>[ICON_GREAT_SCIENTIST]위대한 과학자, [ICON_GREAT_ENGINEER]위대한 기술자, [ICON_GREAT_MERCHANT]위대한 상인의 출현율 -10%</Text>
+		</Row>
+		<!--PEERAGE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PEERAGE_DESC">
+			<Text>작위</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PEERAGE_HELP">
+			<Text>작위 법안은 세습 귀족의 지위를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_SHORT_DESC">
+			<Text>철폐</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_PEDIA">
+			<Text>세습 작위는 폐지된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_HELP_BONUS">
+			<Text>수도른 제외한 모든 도시의 [ICON_CULTURE]문화 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_HELP_PENALTY">
+			<Text>[ICON_CAPITAL]수도의 [ICON_CULTURE]문화 -15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_HONOURARY_SHORT_DESC">
+			<Text>명예직</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_HONOURARY_PEDIA">
+			<Text>세습 작위는 명예직으로 남는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_PRIVILEGED_SHORT_DESC">
+			<Text>특권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_PRIVILEGED_PEDIA">
+			<Text>세습 작위는 법적인 특권을 갖는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_PRIVILEGED_HELP_BONUS">
+			<Text>[ICON_CAPITAL]수도의 [ICON_CULTURE]문화 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_PRIVILEGED_HELP_PENALTY">
+			<Text>수도른 제외한 모든 도시의 [ICON_CULTURE]문화 -10%</Text>
+		</Row>
+		<!--PUBLICATIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PUBLICATIONS_DESC">
+			<Text>출판</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PUBLICATIONS_HELP">
+			<Text>출판 법안은 창작물의 발행할 권리를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_FREE_SHORT_DESC">
+			<Text>자유</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_FREE_PEDIA">
+			<Text>창작물은 자유롭게 출판된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_FREE_HELP_BONUS">
+			<Text>[ICON_GREAT_WORK]걸작의 [ICON_CULTURE]문화 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_FREE_HELP_PENALTY">
+			<Text>[ICON_GREAT_WORK]걸작의 [ICON_TOURISM]관광 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_CENSORED_SHORT_DESC">
+			<Text>검열</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_CENSORED_PEDIA">
+			<Text>창작물은 검열되어 출판된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_PROPAGANDA_SHORT_DESC">
+			<Text>선전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_PROPAGANDA_PEDIA">
+			<Text>창작물은 선전용으로 출판된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_PROPAGANDA_HELP_BONUS">
+			<Text>[ICON_GREAT_WORK]걸작의 [ICON_TOURISM]관광 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_PUBLICATIONS_PROPAGANDA_HELP_PENALTY">
+			<Text>[ICON_GREAT_WORK]걸작의 [ICON_CULTURE]문화 -1</Text>
+		</Row>
+		<!--STATUS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STATUS_DESC">
+			<Text>신분</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_STATUS_HELP">
+			<Text>신분 법안은 계층 구성의 본질을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CLASS_SHORT_DESC">
+			<Text>계급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CLASS_PEDIA">
+			<Text>신분은 재산으로 분류된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CLASS_HELP_BONUS">
+			<Text>상인 전문가의 [ICON_GOLD]골드 +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CLASS_HELP_PENALTY">
+			<Text>기술자 전문가의 [ICON_PRODUCTION]생산 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_FAMILY_SHORT_DESC">
+			<Text>가문</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_FAMILY_PEDIA">
+			<Text>신분은 가문으로 분류된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CASTE_SHORT_DESC">
+			<Text>카스트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CASTE_PEDIA">
+			<Text>신분은 직업으로 분류된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CASTE_HELP_BONUS">
+			<Text>기술자 전문가의 [ICON_PRODUCTION]생산 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_STATUS_CASTE_HELP_PENALTY">
+			<Text>상인 전문가의 [ICON_GOLD]골드 -2</Text>
+		</Row>
+		<!--===================================================-->
+		<!--REFORMS: WELFARE-->
+		<!--===================================================-->
+		<!--DEVELOPMENT-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_DEVELOPMENT_DESC">
+			<Text>개발</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_DEVELOPMENT_HELP">
+			<Text>개발 법안은 사회경제 발전의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_ECONOMIC_SHORT_DESC">
+			<Text>경제발전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_ECONOMIC_PEDIA">
+			<Text>경제적 발전에 집중해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_ECONOMIC_HELP_BONUS">
+			<Text>+[ICON_CONNECTED]도시 연결에서 오는 [ICON_GOLD]골드 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_ECONOMIC_HELP_PENALTY">
+			<Text>[ICON_INTERNATIONAL_TRADE] 국내 교역로의 [ICON_FOOD]식량과 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_CAPITAL_SHORT_DESC">
+			<Text>수도집중화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_CAPITAL_PEDIA">
+			<Text>수도의 개발을 우선해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_SOCIAL_SHORT_DESC">
+			<Text>사회발전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_SOCIAL_PEDIA">
+			<Text>사회적 발전에 집중해야한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_SOCIAL_HELP_BONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE] 국내 교역로의 [ICON_FOOD]식량과 [ICON_PRODUCTION]생산 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_DEVELOPMENT_SOCIAL_HELP_PENALTY">
+			<Text>[ICON_CONNECTED]도시 연결에서 오는 [ICON_GOLD]골드 -10%.</Text>
+		</Row>
+		<!--EQUALITY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EQUALITY_DESC">
+			<Text>균등</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_EQUALITY_HELP">
+			<Text>균등 법안은 국민의 사회적, 경제적 불평등을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OPPORTUNITIES_SHORT_DESC">
+			<Text>기회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OPPORTUNITIES_PEDIA">
+			<Text>모든 국민은 동등한 기회를 보장받는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OPPORTUNITIES_HELP_BONUS">
+			<Text>초과 [ICON_HAPPINESS_1]행복의 25%를 [ICON_CULTURE]문화에 추가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OPPORTUNITIES_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_NATURAL_SHORT_DESC">
+			<Text>자연</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_NATURAL_PEDIA">
+			<Text>모든 국민은 자연의 본질대로 살아간다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OUTCOMES_SHORT_DESC">
+			<Text>결과</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OUTCOMES_PEDIA">
+			<Text>모든 국민은 동등한 결과를 보장받는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OUTCOMES_HELP_BONUS">
+			<Text>모든 도시에서 [ICON_CITIZEN]시민이 증가할 때 사용한 [ICON_FOOD]식량의 15%를 다음 시민을 위해 사용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_EQUALITY_OUTCOMES_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_CULTURE]문화 -10%</Text>
+		</Row>
+		<!--FESTIVALS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FESTIVALS_DESC">
+			<Text>축일</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_FESTIVALS_HELP">
+			<Text>축일 법안은 공공 축제의 관리를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_RELIGIOUS_SHORT_DESC">
+			<Text>종교축제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_RELIGIOUS_PEDIA">
+			<Text>축제는 사제가 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_RELIGIOUS_HELP_BONUS">
+			<Text>"국왕 경축일"이 열리는 동안 [ICON_PEACE]신앙 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_RELIGIOUS_HELP_PENALTY">
+			<Text>"국왕 경축일"이 열리는 동안 [ICON_CULTURE]문화 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_FOLK_SHORT_DESC">
+			<Text>민속축제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_FOLK_PEDIA">
+			<Text>축제는 각 지역에서 주관한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_STATE_SHORT_DESC">
+			<Text>국경일</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_STATE_PEDIA">
+			<Text>축제는 국가에서 감독한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_STATE_HELP_BONUS">
+			<Text>"국왕 경축일"이 열리는 동안 [ICON_CULTURE]문화 +5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_FESTIVALS_STATE_HELP_PENALTY">
+			<Text>"국왕 경축일"이 열리는 동안 [ICON_PEACE]신앙 -5%</Text>
+		</Row>
+		<!--GOODS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GOODS_DESC">
+			<Text>공공재</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_GOODS_HELP">
+			<Text>공공재 법안은 공공재 공급의 방향성을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_ENTERTAINMENT_SHORT_DESC">
+			<Text>유흥</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_ENTERTAINMENT_PEDIA">
+			<Text>대중을 위해 유흥이 제공될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_ENTERTAINMENT_HELP_BONUS">
+			<Text>투기장, 원형극장, 경기장, 동물원을 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_ENTERTAINMENT_HELP_PENALTY">
+			<Text>물레방앗간, 송수로, 정원, 수력 발전소를 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_NONE_PEDIA">
+			<Text>대중을 위한 공공재는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_WATERWAYS_SHORT_DESC">
+			<Text>용수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_WATERWAYS_PEDIA">
+			<Text>대중을 위해 용수가 제공될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_WATERWAYS_HELP_BONUS">
+			<Text>물레방앗간, 송수로, 정원, 수력 발전소를 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_GOODS_WATERWAYS_HELP_PENALTY">
+			<Text>투기장, 원형극장, 경기장, 동물원을 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<!--HEALTHCARE-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HEALTHCARE_DESC">
+			<Text>보건</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_HEALTHCARE_HELP">
+			<Text>보건 법안은 공중 의료 체계를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_OCCUPATIONAL_SHORT_DESC">
+			<Text>기업의료보험</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_OCCUPATIONAL_PEDIA">
+			<Text>의료보험은 회사가 보장한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_OCCUPATIONAL_HELP_BONUS">
+			<Text>병원에서 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_OCCUPATIONAL_HELP_PENALTY">
+			<Text>병원에서 [ICON_FOOD]식량 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_PRIVATE_SHORT_DESC">
+			<Text>개인의료보험</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_PRIVATE_PEDIA">
+			<Text>의료보험은 개인이 가입한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_UNIVERSAL_SHORT_DESC">
+			<Text>국가의료보험</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_UNIVERSAL_PEDIA">
+			<Text>의료보험은 국가가 보장한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_UNIVERSAL_HELP_BONUS">
+			<Text>병원에서 [ICON_FOOD]식량 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_HEALTHCARE_UNIVERSAL_HELP_PENALTY">
+			<Text>병원에서 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+		<!--POOR-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POOR_DESC">
+			<Text>기초생활보장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_POOR_HELP">
+			<Text>기초생활보장 법안은 저소득층의 처우와 지급품을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_EMPLOYMENT_SHORT_DESC">
+			<Text>고용보장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_EMPLOYMENT_PEDIA">
+			<Text>저소득층을 위한 고용이 보장될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_EMPLOYMENT_HELP_BONUS">
+			<Text>모든 도시에서 비전문가 4명마다 [ICON_PRODUCTION]생산 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_EMPLOYMENT_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -5%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_CRIMINAL_SHORT_DESC">
+			<Text>현행유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_CRIMINAL_PEDIA">
+			<Text>저소득층을 위한 복지는 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_HOUSING_SHORT_DESC">
+			<Text>교육보장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_HOUSING_PEDIA">
+			<Text>저소득층을 위한 교육이 보장될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_HOUSING_HELP_BONUS">
+			<Text>모든 도시에서 비전문가 4명마다 [ICON_RESEARCH]과학 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_POOR_HOUSING_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -5%</Text>
+		</Row>
+		<!--RATIONS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RATIONS_DESC">
+			<Text>배급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_RATIONS_HELP">
+			<Text>배급 법안은 배급의 성격과 제공을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_WORK_SHORT_DESC">
+			<Text>노동</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_WORK_PEDIA">
+			<Text>필요한 이들에게 업무를 분배한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_WORK_HELP_BONUS">
+			<Text>작업장에서 [ICON_HAPPINESS_1]행복 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_WORK_HELP_PENALTY">
+			<Text>작업장의 [ICON_PRODUCTION]생산 -1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_NONE_PEDIA">
+			<Text>배급은 공식적으로 규정되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_FOOD_SHORT_DESC">
+			<Text>식품</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_FOOD_PEDIA">
+			<Text>필요한 이들에게 식량을 지급한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_FOOD_HELP_BONUS">
+			<Text>곡창에서 [ICON_HAPPINESS_1]행복 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_RATIONS_FOOD_HELP_PENALTY">
+			<Text>곡창의 [ICON_FOOD]식량 -1</Text>
+		</Row>
+		<!--SECURITY-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SECURITY_DESC">
+			<Text>사회보장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_SECURITY_HELP">
+			<Text>사회보장 법안은 경제적 복지를 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FRATERNATIES_SHORT_DESC">
+			<Text>협회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FRATERNATIES_PEDIA">
+			<Text>협회가 경제적 보장을 제공한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FRATERNATIES_HELP_BONUS">
+			<Text>[ICON_GREAT_PEOPLE]위인의 출현률 +15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FRATERNATIES_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_FOOD]식량 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FAMILY_SHORT_DESC">
+			<Text>가족</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_FAMILY_PEDIA">
+			<Text>경제적 보장은 가족 내에서 해결한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_STATE_SHORT_DESC">
+			<Text>국가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_STATE_PEDIA">
+			<Text>국가가 경제적 보장을 제공한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_STATE_HELP_BONUS">
+			<Text>모든 도시의 [ICON_FOOD]성장률 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SECURITY_STATE_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -5%</Text>
+		</Row>
+		<!--WAGES-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WAGES_DESC">
+			<Text>봉급</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WAGES_HELP">
+			<Text>봉급 법안은 임금의 제한에 대한 규제를 조정한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MAXIMUM_SHORT_DESC">
+			<Text>인하</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MAXIMUM_PEDIA">
+			<Text>최저임금은 제한된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MAXIMUM_HELP_BONUS">
+			<Text>모든 도시의 [ICON_GOLD]골드 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MAXIMUM_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_PRIVATE_SHORT_DESC">
+			<Text>동결</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_PRIVATE_PEDIA">
+			<Text>최저임금은 현상태를 유지한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MINIMUM_SHORT_DESC">
+			<Text>인상</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MINIMUM_PEDIA">
+			<Text>최저임금이 인상된다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MINIMUM_HELP_BONUS">
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WAGES_MINIMUM_HELP_PENALTY">
+			<Text>모든 도시의 [ICON_GOLD]골드 -10%</Text>
+		</Row>
+		<!--WORKS-->
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WORKS_DESC">
+			<Text>건립</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_WORKS_HELP">
+			<Text>건립 법안은 건축의 본질을 조정합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_PUBLIC_SHORT_DESC">
+			<Text>공공</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_PUBLIC_PEDIA">
+			<Text>건축은 목적은 공공 용역을 제공에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_PUBLIC_HELP_BONUS">
+			<Text>건물을 건설할 때 [ICON_PRODUCTION]생산력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_PUBLIC_HELP_PENALTY">
+			<Text>불가사의를 건설할 때 [ICON_PRODUCTION]생산력 -20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_NONE_SHORT_DESC">
+			<Text>현행 유지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_NONE_PEDIA">
+			<Text>건축은 계획된 바가 없다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_CEREMONIAL_SHORT_DESC">
+			<Text>경이</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_CEREMONIAL_PEDIA">
+			<Text>건축의 목적은 국가의 찬미에 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_CEREMONIAL_HELP_BONUS">
+			<Text>불가사의를 건설할 때 [ICON_PRODUCTION]생산력 +20%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_REFORM_WORKS_CEREMONIAL_HELP_PENALTY">
+			<Text>건물을 건설할 때 [ICON_PRODUCTION]생산력 -10%</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
