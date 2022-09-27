@@ -1,0 +1,5 @@
+UPDATE Language_ko_KR SET Text = Text ||'[NEWLINE][NEWLINE]신성 로마 제국 [ICON_JFD_GOVERNMENT] 정부를 수립할 수 있습니다.' WHERE Tag ='TXT_KEY_BUILDING_FORUM_HELP';
+UPDATE Language_ko_KR SET Text = Text ||'[NEWLINE][NEWLINE]교황청 [ICON_JFD_GOVERNMENT] 정부를 수립할 수 있습니다.'         WHERE Tag ='TXT_KEY_WONDER_SISTINE_CHAPEL_HELP';
+UPDATE Language_ko_KR SET Text = Text ||'[NEWLINE][NEWLINE]칼리파국 [ICON_JFD_GOVERNMENT] 정부를 수립할 수 있습니다.'       WHERE Tag ='TXT_KEY_WONDER_HAGIA_SOPHIA_HELP';
+UPDATE Language_ko_KR SET Text = Text ||'[NEWLINE][NEWLINE]천자국 [ICON_JFD_GOVERNMENT] 정부를 수립할 수 있습니다.'         WHERE Tag ='TXT_KEY_BUILDING_SUMMER_PALACE_HELP';
+UPDATE Language_ko_KR SET Text = Text ||'[NEWLINE][NEWLINE]막부정 [ICON_JFD_GOVERNMENT] 정부를 수립할 수 있습니다.'         WHERE Tag ='TXT_KEY_WONDER_HIMEJI_CASTLE_HELP';
