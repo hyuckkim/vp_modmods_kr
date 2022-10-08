@@ -1,4 +1,4 @@
-UPDATE Language_en_US
+UPDATE Language_ko_KR
 SET Text = '도시를 설립할 때 [ICON_GOLD]골드를 [COLOR_POSITIVE_TEXT]125[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 모든 해안 도시에 [COLOR_POSITIVE_TEXT]항만[ENDCOLOR]을 무료로 제공합니다. 교역로에서 오는 자원 다양성 수치가 양수면 [COLOR_POSITIVE_TEXT]두 배[ENDCOLOR] 증가합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_PHOENICIAN_HERITAGE';
 
