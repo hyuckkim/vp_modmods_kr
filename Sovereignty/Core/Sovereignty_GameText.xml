@@ -1706,7 +1706,7 @@
 			<Text>군주제</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_MONARCHY_HELP">
-			<Text>정부는 왕의 것이다.[NEWLINE][ICON_BULLET]-20% [ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대시기산.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_BOURGEOISIE] [ICON_JFD_FACTION_CLERGY] [ICON_JFD_FACTION_COMMONS] [ICON_JFD_FACTION_NOBILITY] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
+			<Text>정부는 왕의 것이다.[NEWLINE][ICON_BULLET]-20% [ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대기시간.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_BOURGEOISIE] [ICON_JFD_FACTION_CLERGY] [ICON_JFD_FACTION_COMMONS] [ICON_JFD_FACTION_NOBILITY] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_MONARCHY_TEXT">
 			<Text>군주제는 군주가 국가의 원수를 종신하는 형태의 정부이다. 군주가 단순한 상징인 '공화제' 부터 제한된 권력을 가진 '입헌군주제', 행정권과 입법권과 사법권을 합쳐 완전환 권력을 가진 '전제군주제' 에 이르기까지 그 형태와 속성은 다양하다. 대부분의 경우 군주는 직계에게 세습되지만, 새로운 왕조를 창건하거나 스스로 군주에 오르는 형태도 있다. 귀족들은 군주를 계승할 수는 없지만, 중요한 구성원의 역할을 하기 때문에 군주제는 과두제의 성격도 일부 갖고 있다.</Text>
@@ -1725,7 +1725,7 @@
 			<Text>대공국</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_PRINCIPALITY_HELP">
-			<Text>정부는 엘리트의 것이다.[NEWLINE][ICON_BULLET]-10% [ICON_JFD_GOVERNMENT_COOLDOWN] 정부 개혁/[ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대시기산.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_CITIZENS] [ICON_JFD_FACTION_PEASANTRY] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
+			<Text>정부는 엘리트의 것이다.[NEWLINE][ICON_BULLET]-10% [ICON_JFD_GOVERNMENT_COOLDOWN] 정부 개혁/[ICON_JFD_REFORM_COOLDOWN] 법안 개정의 대기시간.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_CITIZENS] [ICON_JFD_FACTION_PEASANTRY] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_PRINCIPALITY_TEXT">
 			<Text>대공국은 군주제의 성격을 가진 봉건국가, 혹은 주권국가로 일반적으로 대공국의 군주는 제후라는 호칭을 갖고 있었다. 제후의 영토와 재산은 공국 내부만이 아닌 외부에도 위치할 수 있다. 공국이라는 개념은 일반적으로 왕보다는 낮은 계급의 군주가 통치하는 소규모의 주권 국가를 의미한다.</Text>
@@ -1744,7 +1744,7 @@
 			<Text>공화정</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_REPUBLIC_HELP">
-			<Text>정부는 대중의 것이다.[NEWLINE][ICON_BULLET]-20% [ICON_JFD_GOVERNMENT_COOLDOWN] 정부 개혁의 대시기산.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_OLIGARCHS] [ICON_JFD_FACTION_POPULISTS] [ICON_JFD_FACTION_SOLDIERS] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
+			<Text>정부는 대중의 것이다.[NEWLINE][ICON_BULLET]-20% [ICON_JFD_GOVERNMENT_COOLDOWN] 정부 개혁의 대기시간.[NEWLINE][ICON_BULLET]당파: [ICON_JFD_FACTION_OLIGARCHS] [ICON_JFD_FACTION_POPULISTS] [ICON_JFD_FACTION_SOLDIERS] [ICON_JFD_FACTION_REVOLUTIONARIES]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GOVERNMENT_JFD_REPUBLIC_TEXT">
 			<Text>공화정은 국가를 통치자의 사적인 재산이 아닌 '공적인 사안'으로 간주하는 형태의 정부이다. 공화정의 권력은 불변의 점유물이 아닌 민주주의나 과두정치, 독재, 또는 이 모든 것을 혼합한 형태를 한다. 군주가 존재하지 않아 군주정에 반대되는 정치 체제이다.</Text>

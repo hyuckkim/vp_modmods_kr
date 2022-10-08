@@ -337,7 +337,7 @@
 			<Text>저명함이 곧 권력이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_HELP_BONUS">
-			<Text>모든 도시의 [ICON_HAPPINESS_1]지역 행복도이 10 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +15%.</Text>
+			<Text>모든 도시의 [ICON_HAPPINESS_1]지역 행복도가 10 이상이면 [ICON_JFD_SOVEREIGNTY]주권 +15%.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_LEGITIMACY_CHARISMA_HELP_PENALTY">
 			<Text>[ICON_JFD_REVOLUTIONARY_SENTIMENT] 혁명의 바람 +10%</Text>
@@ -947,10 +947,10 @@
 			<Text>외교로 동맹을 맺을 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_HELP_BONUS">
-			<Text>[ICON_CITY_STATE]도시국가의 [ICON_DIPLOMAT]외교임무로 증가하는 ICON_INFLUENCE]영향력 +15%</Text>
+			<Text>[ICON_CITY_STATE]도시국가의 [ICON_DIPLOMAT]외교임무로 증가하는 [ICON_INFLUENCE]영향력 +15%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_DIPLOMACY_HELP_PENALTY">
-			<Text>[ICON_CITY_STATE]도시국가의 [ICOV_VIEW_CITY]퀘스트 보상으로 증가하는 ICON_INFLUENCE]영향력 -15%</Text>
+			<Text>[ICON_CITY_STATE]도시국가의 [ICOV_VIEW_CITY]퀘스트 보상으로 증가하는 [ICON_INFLUENCE]영향력 -15%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_ALLIANCES_TREATIES_SHORT_DESC">
 			<Text>조약</Text>
@@ -1252,7 +1252,7 @@
 			<Text>우리의 대표들은 영구적으로 머문다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_HELP_BONUS">
-			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 -10</Text>
+			<Text>도시국가의 [ICON_INFLUENCE]우호도 정지점 +10</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_REPRESENTATIVES_PERMANENT_HELP_PENALTY">
 			<Text>[ICON_INFLUENCE] 영향력 감소율 -15%</Text>
@@ -1308,7 +1308,7 @@
 			<Text>우리는 국제적 조직을 수용할 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_HELP_BONUS">
-			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 오는 [ICON_TOURISM]관광 +10%</Text>
+			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 에서 오는 [ICON_TOURISM]관광 +10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_GLOBALIZATION_HELP_PENALTY">
 			<Text>모든 도시의 [ICON_CULTURE]문화 -10% [ICON_CULTURE]</Text>
@@ -1329,7 +1329,7 @@
 			<Text>모든 도시의 [ICON_CULTURE]문화 +10% [ICON_CULTURE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_WORLD_ISOLATION_HELP_PENALTY">
-			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 오는 [ICON_TOURISM]관광 -10%</Text>
+			<Text>[COLOR_POSITIVE_TEXT]교역로[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]국경 개방[ENDCOLOR],[COLOR_POSITIVE_TEXT]같은 대중종교[ENDCOLOR] 에서 오는 [ICON_TOURISM]관광 -10%</Text>
 		</Row>
 		<!--===================================================-->
 		<!--REFORMS: ECONOMY-->
@@ -1369,7 +1369,7 @@
 			<Text>[ICON_TEAM_1]개척자를 생산할 때 [ICON_PRODUCTION]생산력 +50%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CHARTERS_COLONIAL_HELP_PENALTY">
-			<Text>[ICON_INTERNATIONAL_TRADE]교역 유닛을 생산할 때 [ICON_PRODUCTION]생산력 +50%.</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE]교역 유닛을 생산할 때 [ICON_PRODUCTION]생산력 -50%.</Text>
 		</Row>
 		<!--CURRENCY-->
 		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_CURRENCY_DESC">
@@ -1499,7 +1499,7 @@
 			<Text>사치자원에서 [ICON_HAPPINESS_1]행복도 +1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_PROHIBITED_HELP_PENALTY">
-			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10% [ICON_PRODUCTION]</Text>
+			<Text>모든 도시의 [ICON_PRODUCTION]생산 -10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_MONOPOLIES_NATURAL_SHORT_DESC">
 			<Text>자연독점</Text>
@@ -2137,7 +2137,7 @@
 			<Text>[COLOR_SELECTED_TEXT]채석장[ENDCOLOR]의 [ICON_PRODUCTION]생산력 +1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WONDERS_HELP_PENALTY">
-			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR].의 [ICON_PRODUCTION]생산력 -1</Text>
+			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR]의 [ICON_PRODUCTION]생산력 -1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_BUILDINGS_SHORT_DESC">
 			<Text>시설</Text>
@@ -2152,7 +2152,7 @@
 			<Text>무기를 생산할 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_HELP_BONUS">
-			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR].의 [ICON_PRODUCTION]생산력 +1</Text>
+			<Text>[COLOR_SELECTED_TEXT]광산[ENDCOLOR]의 [ICON_PRODUCTION]생산력 +1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_CONSTRUCTION_WEAPONS_HELP_PENALTY">
 			<Text>[COLOR_SELECTED_TEXT]채석장[ENDCOLOR]의 [ICON_PRODUCTION]생산력 -1</Text>
@@ -2248,7 +2248,7 @@
 			<Text>항만에서 [ICON_GOLD]골드 +10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_MERCHANTS_HELP_PENALTY">
-			<Text>모든 도시의 [ICON_PRODUCTION]생산력 -5% [ICON_PRODUCTION]</Text>
+			<Text>모든 도시의 [ICON_PRODUCTION]생산력 -5%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_GUILDS_PRIVATE_SHORT_DESC">
 			<Text>사익</Text>
@@ -3412,7 +3412,7 @@
 			<Text>방송탑에서 [ICON_PRODUCTION]생산 +10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_MEDIA_CENSORED_HELP_PENALTY">
-			<Text>방송탑의 [ICON_CULTURE]문화 +10%</Text>
+			<Text>방송탑의 [ICON_CULTURE]문화 -10%</Text>
 		</Row>
 		<!--MEMORIALS-->
 		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_MEMORIALS_DESC">
@@ -3503,7 +3503,7 @@
 			<Text>세습 작위는 폐지된다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_HELP_BONUS">
-			<Text>수도른 제외한 모든 도시의 [ICON_CULTURE]문화 +10%</Text>
+			<Text>수도를 제외한 모든 도시의 [ICON_CULTURE]문화 +10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_ABOLISHED_HELP_PENALTY">
 			<Text>[ICON_CAPITAL]수도의 [ICON_CULTURE]문화 -15%</Text>
@@ -3524,7 +3524,7 @@
 			<Text>[ICON_CAPITAL]수도의 [ICON_CULTURE]문화 +15%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_REFORM_PEERAGE_PRIVILEGED_HELP_PENALTY">
-			<Text>수도른 제외한 모든 도시의 [ICON_CULTURE]문화 -10%</Text>
+			<Text>수도를 제외한 모든 도시의 [ICON_CULTURE]문화 -10%</Text>
 		</Row>
 		<!--PUBLICATIONS-->
 		<Row Tag="TXT_KEY_JFD_REFORM_SUBBRANCH_PUBLICATIONS_DESC">
