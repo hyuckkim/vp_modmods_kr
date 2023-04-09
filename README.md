@@ -1,5 +1,8 @@
 # vp_modmods_kr
+### 지금은 이 모드들이 전부 구버전으로 방치된 상태입니다!!! 사용을 권장하지 않습니다!
+
 VP의 모드-모드에 쓰이는 파일들입니다.
+
 - [Even More Resources for Vox Populi (v 8)](http://gall.dcinside.com/civilization/186196)  
 VP에 더더욱 많은 자원을 추가하는 모드입니다. 이미 번역이 있지만 vp 2.0 이후 종속성 이슈를 해결하기 위해 modinfo 파일만 수정해서 올려두었습니다.
 - [pdansUnitTweaks INT](https://gall.dcinside.com/civilization/262596)  
