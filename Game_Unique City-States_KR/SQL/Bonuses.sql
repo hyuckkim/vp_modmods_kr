@@ -1,394 +1,442 @@
 ---------------------------------------------------
 -- Updates - Language_ko_KR
 ---------------------------------------------------
-UPDATE Language_ko_KR SET Text = '[NEWLINE][COLOR_WARNING_TEXT][ICON_BULLET] 군사력이 상위 50% 안에 들어야 합니다. 당신의 군사력은 상위 {1_Num}% 입니다.[ENDCOLOR]' WHERE Tag = 'TXT_KEY_POP_CSTATE_PLEDGE_NEED_MORE_MILITARY_TT';
-UPDATE Language_ko_KR
-SET Text = '당신은 {1_CityStateName:textkey}의 [COLOR_POSITIVE_TEXT]동맹[ENDCOLOR]입니다. 만약 당신이 동맹을 잃게 된다면 보너스는 [COLOR_FONT_RED]3[ENDCOLOR]턴 동안만 지속될 것입니다. 매 턴 해당 도시 국가와의 [ICON_INFLUENCE]영향력이 {2_Num} 변경됩니다. 당신이 [COLOR_POSITIVE_TEXT]보호 선언[ENDCOLOR]을 하고서 {1_CityStateName:textkey}{@1_CityStateName: plural 1?이; 2?가;} 피해를 받으면 영향력은 3배 빠르게 감소합니다.'
-WHERE Tag = 'TXT_KEY_ALLIES_CSTATE_TT';
-UPDATE Language_ko_KR
-SET Text =  '도시 국가와의 [ICON_INFLUENCE]영향력이 [COLOR_POSITIVE_TEXT]45[ENDCOLOR]에서 시작합니다. 우호 및 동맹인 도시 국가의 산출량이 [COLOR_POSITIVE_TEXT]75%[ENDCOLOR] 증가합니다. 동맹인 도시 국가 수도의 전투력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 도시 국가로부터 선물 받은 유닛의 경험치가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR] 증가합니다.'
-WHERE Tag = 'TXT_KEY_TRAIT_CITY_STATE_BONUSES';
+UPDATE Language_ko_KR SET Text = '[NEWLINE][COLOR_WARNING_TEXT][ICON_BULLET] Must be in the top 50% of the world in terms of Military Power. Yours is ranked at {1_Num}% of world Military Power.[ENDCOLOR]' WHERE Tag = 'TXT_KEY_POP_CSTATE_PLEDGE_NEED_MORE_MILITARY_TT';
+UPDATE Language_ko_KR SET Text = 'You are [COLOR_POSITIVE_TEXT]Allies[ENDCOLOR] with {1_CityStateName:textkey}. Their bonuses will persist for [COLOR_FONT_RED]3[ENDCOLOR] turns if you lose the [COLOR_POSITIVE_TEXT]Allied[ENDCOLOR] status. Each turn, your [ICON_INFLUENCE] Influence with them will change by {2_Num}. If {1_CityStateName:textkey} is damaged and you have a [COLOR_POSITIVE_TEXT]Pledge of Protection[ENDCOLOR] with them, this decay value will triple.' WHERE Tag = 'TXT_KEY_ALLIES_CSTATE_TT';
+UPDATE Language_ko_KR SET Text = '[ICON_INFLUENCE] Influence with [ICON_CITY_STATE] City-States starts at 45. Yields from friendly and allied City-States increased by 75%. +25% to [ICON_STRENGTH] Combat Strength of Allied [ICON_CITY_STATE] City-State [ICON_CAPITAL] Capitals. +10 Experience to Units gifted from City-States.' WHERE Tag = 'TXT_KEY_TRAIT_CITY_STATE_BONUSES';
 
 UPDATE Language_ko_KR SET Text = REPLACE(Text, 'Available![ENDCOLOR]', '[ENDCOLOR]available!') WHERE Tag = 'TXT_KEY_CSTATE_CAN_EMBASSY';
 UPDATE Language_ko_KR SET Text = REPLACE(Text, 'Available![ENDCOLOR].', '[ENDCOLOR]available!') WHERE Tag = 'TXT_KEY_CSTATE_CAN_PROTECT';
 UPDATE Language_ko_KR SET Text = REPLACE(Text, 'early.[NEWLINE][NEWLINE]', 'early.') WHERE Tag = 'TXT_KEY_CSTATE_JERK_STATUS';	
----------------------------------------------------
----------------------------------------------------
----------------------------------------------------
--- Texts
----------------------------------------------------
+--==========================================================================================================================
+-- TEXTS
+--==========================================================================================================================	
 INSERT INTO Language_ko_KR (Tag, Text)
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV', '동맹 변화'  UNION ALL
-SELECT 'TXT_KEY_CS_ACTIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]도시국가의 주 플레이어 보너스:[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_CS_PASSIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]도시국가의 기본 능력:[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'고유 유닛: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR], [COLOR_CYAN]{2_Tech}[ENDCOLOR] 이후'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_BONUS', 						'[COLOR:90:205:40:255]건축가 (해양적):[ENDCOLOR][NEWLINE][ICON_BULLET] 제조공장과 추가 보너스 자원을 가지고 시작합니다.[NEWLINE][ICON_BULLET]  [ICON_FOOD] 인구 성장 +15%[NEWLINE][ICON_BULLET] [ICON_CITIZEN] 시민이 탄생할 때마다 10 [ICON_CULTURE_LOCAL] 국경 확장 점수[NEWLINE][ICON_BULLET] [COLOR_NEGATIVE_TEXT] [ICON_SPY] 스파이 작업 속도 +20%[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_FRIENDLY_BONUS', 				'[COLOR:200:240:140:255]수확자 (해양적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET] 5%의 확률로 플레이어의 영토에 노동자 또는 작업선이 등장합니다. (작업선은 해양 도시에서만 등장)[NEWLINE][ICON_BULLET] 노동자와 작업선 생산 시 [ICON_PRODUCTION] 생산 +50%[NEWLINE][ICON_BULLET] 보너스 자원 [ICON_FOOD] 식량 +1'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_NEUTRAL_BONUS', 				'[COLOR:110:160:70:255]보안 창고 (해양적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_CITIZEN] 시민 4명마다 +10 [ICON_FOOD] 식량을 얻습니다. [NEWLINE][ICON_BULLET] [ICON_STRENGTH] 방어력 +10, 도시 체력 +50'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_HOSTILE_BONUS', 				'[COLOR:60:125:40:255]탐욕스런 수집가 (해양적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET] 해상 유닛 생산시 +20% [ICON_PRODUCTION] 생산력을 얻습니다.[NEWLINE][ICON_BULLET] 유닛을 [ICON_PRODUCTION]생산 시 50 [ICON_FOOD] 식량과 20 [ICON_CULTURE_LOCAL] 국경 확장 점수[NEWLINE][ICON_BULLET] [ICON_CITIZEN]시민 2명마다 +1 [ICON_PRODUCTION] 생산'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_BONUS', 						'[COLOR:240:215:65:255]무역 센터 (상업적):[ENDCOLOR][NEWLINE][ICON_BULLET] 근처에 마을과 추가 사치자원을 가지고 시작합니다.[NEWLINE][ICON_BULLET] [ICON_GOLD] 골드 +10%[NEWLINE][ICON_BULLET]  [ICON_GOLD] 골드 생산량의 5%만큼 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 얻음[NEWLINE][ICON_BULLET] [ICON_GOLD] 투자 비용 -20%[NEWLINE][ICON_BULLET] [COLOR_NEGATIVE_TEXT]군사 유닛 [ICON_PRODUCTION] 생산 비용 -20%[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_FRIENDLY_BONUS', 			'[COLOR:240:240:165:255]황금의 도시 (상업적 우호적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_NEUTRAL_BONUS', 				'[COLOR:210:210:70:255]그림자 의회 (상업적 중립적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_HOSTILE_BONUS', 				'[COLOR:130:130:20:255]자유 도시 (상업적 적대적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_BONUS', 						'[COLOR:210:65:200:255]학습의 장 (문화적):[ENDCOLOR][NEWLINE][ICON_BULLET] 아카데미를 가지고 시작합니다.'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_FRIENDLY_BONUS', 				'[COLOR:240:180:235:255]열린 대학 (문화적 우호적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_NEUTRAL_BONUS', 				'[COLOR:210:90:195:255]후원자 (문화적 중립적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_HOSTILE_BONUS', 				'[COLOR:130:30:115:255]은둔 법원 (문화적 적대적):[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_BONUS', 						'[COLOR:25:110:250:255]신앙의 중심 (종교적):[ENDCOLOR][NEWLINE][ICON_BULLET] 근처에 성지를 가지고 시작합니다. [NEWLINE][ICON_BULLET] [ICON_PEACE] 종교 압력 +33%[NEWLINE][ICON_BULLET] 자연 불가사의, 산, 산호섬에 +2 [ICON_GOLD] 골드, +2 [ICON_CULTURE] 문화, +2 [ICON_PEACE] 신앙[NEWLINE][ICON_BULLET] [COLOR_NEGATIVE_TEXT] [ICON_CULTURE_LOCAL] 국경 확장 점수 -5[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_FRIENDLY_BONUS', 				'[COLOR:160:220:250:255]열린 정신 (종교적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET] 5%의 확률로 플레이어의 영토에 선교사가 나타납니다.[NEWLINE][ICON_BULLET] [ICON_PEACE] 개종 저항 -25%[NEWLINE][ICON_BULLET] [ICON_INTERNATIONAL_TRADE]교역로마다  +2 [ICON_CULTURE] 문화'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_NEUTRAL_BONUS', 				'[COLOR:105:155:230:255]탁발 수도회 (종교적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_PEACE] 개종 저항 +10%[NEWLINE][ICON_BULLET] 이 도시국가 내 신자가 한 명 이상인 종교의 종류 하나당 [ICON_PRODUCTION] 생산 +5[NEWLINE][ICON_BULLET] 강 근처 타일에 [ICON_FOOD] 식량 +1, 호수에 [ICON_FOOD] 식량 +2'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_HOSTILE_BONUS', 				'[COLOR:25:110:170:255]유일한 진리 (종교적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_PEACE] 개종 저항 +25%[NEWLINE][ICON_BULLET] [ICON_PEACE] 종교 압력 +25%[NEWLINE][ICON_BULLET] 유닛이 죽을 때 마다 [ICON_CULTURE] 문화 10'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_BONUS', 					'[COLOR:245:40:40:255]요새 (군사적):[ENDCOLOR][NEWLINE][ICON_BULLET] 근처에 요새와 추가 전략자원을 가지고 시작합니다.[NEWLINE][ICON_BULLET] 도시국가의 고유 유닛을 생산할 수 있습니다.[NEWLINE][ICON_BULLET] 도시 국가와 동맹이라면 도시국가 안에서 유닛 업그레이드가 가능합니다.[NEWLINE][ICON_BULLET] 군사 유닛 [ICON_PRODUCTION] 생산시 생산력 +10%[NEWLINE][ICON_BULLET] [COLOR_NEGATIVE_TEXT][ICON_FOOD] 인구 성장 -33%[ENDCOLOR]'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_FRIENDLY_BONUS', 			'[COLOR:255:180:180:255]용병 허브 (군사적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET] 우호적 플레이어에게 유닛을 5% 더 자주 선물합니다.[NEWLINE][ICON_BULLET] 도시국가에서 생산된 유닛의 경험치 +30'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_NEUTRAL_BONUS', 			'[COLOR:245:90:90:255]고용된 군대 (군사적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_WAR] 글로벌 보급 한도 +25%[NEWLINE][ICON_BULLET] 도시국가에서 생산된 유닛이 전투로 얻는 경험치 +20%[NEWLINE][ICON_BULLET] 도시국가에서 생산된 유닛의 경험치 +10'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_HOSTILE_BONUS', 			'[COLOR:170:10:10:255]숨은 용 (군사적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_WAR] 글로벌 보급 한도 +50%[NEWLINE][ICON_BULLET] 군사 유닛 [ICON_PRODUCTION] 생산시 생산력 +33%'  UNION ALL
+-- different texts
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV', 					'A Shift in Alliance'  UNION ALL
+SELECT 'TXT_KEY_CS_ACTIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]City-State''s bonuses given to Major Player:[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CS_PASSIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]City-State''s passive abilities:[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_BONUS', 						'[COLOR:90:205:40:255]Builders (Maritime):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Manufactory and an additional Bonus Resource nearby[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Growth[NEWLINE][ICON_BULLET]10 [ICON_CULTURE_LOCAL] Border Growth Points on [ICON_CITIZEN] Birth[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]+20% [ICON_SPY] Enemy Spy Effectiveness[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_FRIENDLY_BONUS', 					'[COLOR:200:240:140:255]Harvesters (Maritime Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_WORKER] Worker or a [ICON_WORKER] Fishing Boat inside Friends'' Territory (their Capital must be on a Coast to get a [ICON_WORKER] Fishing Boat)[NEWLINE][ICON_BULLET]+50% [ICON_PRODUCTION] towards [ICON_WORKER] Workers and [ICON_WORKER] Fishing Boats[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to Bonus Resources'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_NEUTRAL_BONUS', 					'[COLOR:110:160:70:255]Secured Warehouse (Maritime Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+10 [ICON_FOOD] per 4 [ICON_CITIZEN][NEWLINE][ICON_BULLET]+10 [ICON_STRENGTH] Defense and +50 City HP'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_HOSTILE_BONUS', 					'[COLOR:60:125:40:255]Selfish Gatherers (Maritime Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards all Naval Units[NEWLINE][ICON_BULLET]50 [ICON_FOOD] and 20 [ICON_CULTURE_LOCAL] Border Growth Points on [ICON_PRODUCTION] Unit Production[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] per 2 [ICON_CITIZEN].'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_BONUS', 						'[COLOR:240:215:65:255]Trade Center (Mercantile):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Town and an additional Luxury Resource nearby[NEWLINE][ICON_BULLET]+10% [ICON_GOLD][NEWLINE][ICON_BULLET]5% of [ICON_GOLD] is converted to [ICON_FOOD] and another 5% to [ICON_PRODUCTION][NEWLINE][ICON_BULLET]-20% [ICON_GOLD] Hurry Cost Modifiers[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-20% [ICON_PRODUCTION] towards all Military Units[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_FRIENDLY_BONUS', 				'[COLOR:240:240:165:255]Golden City (Mercantile Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_CARAVAN] Caravan or a [ICON_CARGO_SHIP] Cargo Ship inside Friends'' Territory (their Capital must be on a Coast to get a [ICON_CARGO_SHIP] Cargo Ship)[NEWLINE][ICON_BULLET]+2 [ICON_GOLD] to Luxury Resources'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_NEUTRAL_BONUS', 					'[COLOR:210:210:70:255]Shadow Council (Mercantile Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] and +2 [ICON_CULTURE] to Luxury Resources[NEWLINE][ICON_BULLET]20 [ICON_GOLD] from Border Growth'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_HOSTILE_BONUS', 					'[COLOR:130:130:20:255]Free City (Mercantile Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]30 [ICON_GOLD] and 10 [ICON_CULTURE] when unit is produced[NEWLINE][ICON_BULLET][ICON_GOLD] when unit level ups[NEWLINE][ICON_BULLET]25% of [ICON_PRODUCTION] is added on [ICON_CITIZEN] Birth'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_BONUS', 						'[COLOR:210:65:200:255]Center of Learning (Cultured):[ENDCOLOR][NEWLINE][ICON_BULLET]has an Academy and an Archaeological Site nearby.[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] to Forests, Jungles, Marshes, Oasis and Flood Plains.[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-20% [ICON_PEACE] Religious Pressure[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_FRIENDLY_BONUS', 					'[COLOR:240:180:235:255]Open University (Cultured Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning an [ICON_VP_ARTIFACT] Archaeologist inside Friends'' Territory (after researching Archaeology)'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_NEUTRAL_BONUS', 					'[COLOR:210:90:195:255]Patronage (Cultured Neutral):[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_HOSTILE_BONUS', 					'[COLOR:130:30:115:255]Recluse Court (Cultured Hostile):[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_BONUS', 						'[COLOR:25:110:250:255]Center of Faith (Religious):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Holy Site nearby[NEWLINE][ICON_BULLET]+33% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]+3 [ICON_FOOD], +3 [ICON_GOLD] and +3 [ICON_CULTURE] from Mountains and Atolls[NEWLINE][ICON_BULLET]+10 [ICON_STRENGTH] Defense and +50 City HP[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-5 [ICON_WAR] Military Supply Cap[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-25% [ICON_WAR] Supply Cap from [ICON_CITIZEN][ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_FRIENDLY_BONUS', 					'[COLOR:160:220:250:255]Open Mind (Religious Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_MISSIONARY] Missionary inside Friends'' Territory[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] per incoming [ICON_INTERNATIONAL_TRADE] Trade Route'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_NEUTRAL_BONUS', 					'[COLOR:105:155:230:255]Medicant Orders (Religious Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+5 [ICON_PRODUCTION] for every World Religion that has at least one Follower in this City-State[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to Rivers and +2 [ICON_FOOD] to Lakes'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_HOSTILE_BONUS', 					'[COLOR:25:110:170:255]One Truth (Religious Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+25% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+25% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]10 [ICON_CULTURE] on Unit''s Death'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_BONUS', 					'[COLOR:245:40:40:255]Fortress (Militaristic):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Fort and an additional Strategic Resource nearby[NEWLINE][ICON_BULLET]can train its Unique Unit[NEWLINE][ICON_BULLET]Player can upgrade his units inside their territory if Allied[NEWLINE][ICON_BULLET]+3 [ICON_WAR] Military Supply Cap[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] towards all Military Units[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-33% [ICON_FOOD] Growth[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_FRIENDLY_BONUS', 				'[COLOR:255:180:180:255]Mercenary Hub (Militaristic Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]+1% Rate of Unit Gifts to its Friends[NEWLINE][ICON_BULLET]All Military Units gain 30 XP when trained in this City-State'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_NEUTRAL_BONUS', 				'[COLOR:245:90:90:255]Sellsword Army (Militaristic Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+50% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN][NEWLINE][ICON_BULLET]+20% XP gained from Combat for units trained in this City-State[NEWLINE][ICON_BULLET]All Military Units gain 10 XP when trained in this City-State'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_HOSTILE_BONUS', 				'[COLOR:170:10:10:255]Hermit Dragon (Militaristic Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+100% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN][NEWLINE][ICON_BULLET]+33% [ICON_PRODUCTION] towards all Military Units'  UNION ALL
 -- main definitions
-SELECT 'TXT_KEY_CITYSTATE_CLERMONT', '클레몬트' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CLERMONT_ADJ', '클레몬트의' UNION ALL
-SELECT 'TXT_KEY_CIV5_CLERMONT_TEXT', '클레몬트는 제1차 십자군 원정의 시작점이었고, 기독교는 예루살렘을 무슬림의 지배로부터 해방시키려고 했습니다. 교황 우르바노 2세는 1095년 제2차 클레몬트 공의회에서 십자군을 모았습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_HONDURAS', '온두라스' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_HONDURAS_ADJ', '온두라스의' UNION ALL
-SELECT 'TXT_KEY_CIV5_HONDURAS_TEXT', '온두라스는 16세기에 스페인이 점령하기 전에 몇몇 메소아메리카 문화의 고향이었습니다. 온두라스는 1821년에 독립했고 그 이후로 공화국이 되었습니다. 그러나 공화국은 그들의 정부가 외국인 투자자들로부터 바나나의 개발만을 지원받은 바나나 공화국의 모습으로 남아있습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AUCKLAND', '오클랜드' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AUCKLAND_ADJ', '오클랜드의' UNION ALL
-SELECT 'TXT_KEY_CIV5_AUCKLAND_TEXT', '마오리족이 지금의 뉴질랜드 북부에 있는 지협에 정착했을 때, 그들은 비옥한 땅, 무성한 정글, 그리고 휴화산으로 가득한 주변 풍경을 발견했습니다. 지협 양쪽에 있는 자연 보호 항구는 풍부한 어업과 전쟁 카누의 기지를 제공했습니다. 정착민들은 그것을 ''타마키 마카오''라고 불렀는데, 대략 "백 명의 연인들이 찾는 소녀"로 번역됩니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ARMAGH', '아마' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ARMAGH_ADJ', '아마의' UNION ALL
-SELECT 'TXT_KEY_CIV5_ARMAGH_TEXT', '아일랜드의 마을인 아마는 오랫동안 종교를 알고 있었습니다. 고대 이교도들의 예배 장소였던 것으로 생각되는 이곳은 5세기에 기독교 선교사 성 패트릭이 언덕 꼭대기에 석조 교회를 세우고 봉헌하면서 유명해졌습니다. 그 주변에 수도원이 생겼고, 그리고 나서 신학의 첨탑인 아일랜드 전역에 기독교를 전파하는 데 헌신한 마을이 생겼습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUSCAT', '무스카트' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUSCAT_ADJ', '무스카트의' UNION ALL
-SELECT 'TXT_KEY_CIV5_MUSCAT_TEXT', '무스카트를 통해 흐르는 무역은 적어도 2천년 동안 그것의 생명선이었습니다. 알 하자르 산의 기슭에 둥지를 튼 프톨레마이오스는 이 곳을 1세기 초에 숨겨진 항구(''크립투스 포르투스'')라고 불렀습니다. 불행히도 이 도시는 잘 숨겨져 있지 않았습니다. 페르시아 만의 어귀에 위치한 이 도시의 주요 위치는 오랫동안 이곳을 정복하기 위한 매력적인 목표로 만들었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GRANADA', '그라나다' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GRANADA_ADJ', '그라나다의' UNION ALL
-SELECT 'TXT_KEY_CIV5_GRANADA_TEXT', '8세기에 우마이야 칼리프는 이베리아 반도를 통해 퍼져나가 비시고딕 히스파니아를 빠르게 정복했습니다. 현재 스페인 남부에 있는 요새화된 정착지인 그라나다가 침공으로 휩쓸렸습니다. 15세기 후반에 이르러서는 가톨릭 군주들에게 항복함으로써 안달루시아의 레키스타는 막을 내리게 되었지만, 천년의 4분의 3 동안 그라나다는 무어인의 소유가 되었습니다.
-시에라 네바다 산맥의 기슭에 위치한 그라나다는 낮은 평야에 위치해 있기 때문에 거의 방어할 수 없는 불운을 겪었습니다. 그곳의 무어 통치자들은 재빨리 이 사실을 깨닫고 그들의 권력을 마을을 내려다볼 수 있는 더 방어하기 쉬운 언덕으로 옮겼습니다. 그들의 계획 중 일부는 나중에 아름다운 알함브라로 개조될 알자르를 건설하는 것을 포함했습니다.
-그라나다의 무어족 주인들은 수세기에 걸쳐 변화했습니다. 알모아 가문은 우마이야 왕조의 잔당을 이어받은 알모라비드 가문을 대체했습니다. 그 도시의 운명은 13세기에 가톨릭 왕국 카스티야 왕국과 동맹을 맺은 나스리드 왕조와 함께 그라나다 토후국으로 다시 바뀌었습니다. 사하라 이남 아프리카에 있는 무역 센터로의 직접 접근은 그라나다를 한동안 레콩키스타로부터 해방시켰습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_NANMANDOL', '레루' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_NANMANDOL_ADJ', '레루의' UNION ALL
-SELECT 'TXT_KEY_CIV5_NANMANDOL_TEXT', '레루는 선사 시대와 역사적인 주요 고고학 유적지입니다. 그 유적들은 14세기와 15세기 경에 절정에 달했던 문명의 유적들로, 19세기 초 유럽인들의 접촉 당시에도 여전히 그 요소들을 볼 수 있습니다. 레루의 통치자들은 점차적으로 코스라에 섬을 정복하고 통일했습니다. 수도 레루에서, 그들은 고고학자들이 통가나 하와이의 왕국들과 비슷하다고 여기는 군주제로 그 섬을 통치했습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GWYNEDD', '귀네드' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GWYNEDD_ADJ', '귀네드의' UNION ALL
-SELECT 'TXT_KEY_CIV5_GWYNEDD_TEXT', '귀네드는 로마 시대 말기부터 독립적인 웨일스 왕국이었습니다. 13세기에 영국에 의해 정복되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUISCA', '무이스카' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUISCA_ADJ', '무이스카의' UNION ALL
-SELECT 'TXT_KEY_CIV5_MUISCA_TEXT', '무이스카는 16세기까지 서쪽의 판체, 북서쪽의 무조, 북쪽의 과네, 북동쪽의 라체, 동쪽의 아카과아, 그리고 남쪽의 수타가오와 같은 안데스 문화의 고향이었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LACONIA', '라코니아' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LACONIA_ADJ', '라코니아의' UNION ALL
-SELECT 'TXT_KEY_CIV5_LACONIA_TEXT', '도시 국가의 수도인 스파르타의 한 지역으로 여겨지는 라코니아는 펠로폰네소스 지역에서 지배권을 다투는 가장 강력한 지역 세력 중 하나입니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CHEVAK', '셰바크' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CHEVAK_ADJ', '셰바크의' UNION ALL
-SELECT 'TXT_KEY_CIV5_CHEVAK_TEXT', '알래스카의 체박족이 사는 지역입니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO', '산토도밍고' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO_ADJ', '산토도밍고의' UNION ALL
-SELECT 'TXT_KEY_CIV5_SANTO_DOMINGO_TEXT', '산토도밍고는 아메리카 대륙에서 가장 오래된 유럽 도시가 되었습니다. 원래 이름은 라 누에바 이사벨라였고, 1495년에 성 도미니크를 기념하기 위해 산토 도밍고로 이름이 바뀌었습니다. 산토 도밍고는 도시가 커지고 번창하면서 "캐리비안의 관문"으로 알려지게 되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MANAGUA', '마나과' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MANAGUA_ADJ', '마나과의' UNION ALL
-SELECT 'TXT_KEY_CIV5_MANAGUA_TEXT', '메스티소와 스페인 상류층 백인들로 구성된 마나과로, 이 도시는 어촌 마을에서 번영하는 스페인 도시가 되었고, 현재 가장 잘 알려진 중앙아메리카의 발전된 도시가 되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ODENSO', '헬싱키' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ODENSO_ADJ', '헬싱키의' UNION ALL
-SELECT 'TXT_KEY_CIV5_ODENSO_TEXT', '문자 그대로 오딘의 섬으로 번역된 이 섬은 핀란드 왕국에 의해 북유럽 신화의 신 오딘을 인정받아 명명되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_YANGCHENG', '양청' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_YANGCHENG_ADJ', '양청의' UNION ALL
-SELECT 'TXT_KEY_CIV5_YANGCHENG_TEXT', '하 왕조의 첫 번째 수도로 여겨지는, 그것은 음강 위에 지어졌고 그들의 왕조가 멸망할 때까지 유지되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS', '파노테우스' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS_ADJ', '파노테우스의' UNION ALL
-SELECT 'TXT_KEY_CIV5_PHANOTEUS_TEXT', '파노테우스는 매우 오래된 마을로, 원래 플라레야에가 거주했습니다. 프로메테소스가 이곳에서 인류를 만들었다고 여겨집니다. 그것은 크세르크세스 휘하의 페르시아인, 필리포스 2세 휘하의 마케도니아인, 폼페이 대왕 휘하의 로마인들에 의해 시간이 지남에 따라 파괴되고 파괴될 때까지 유지되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DOUALA', '두알라' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DOUALA_ADJ', '두알라의' UNION ALL
-SELECT 'TXT_KEY_CIV5_DOUALA_TEXT', '두알라는 카메룬에서 가장 큰 도시이자 이 지역에서 가장 강력한 경제 성장을 한 도시입니다. 1960년 카메룬의 독립은 두알라의 경제적 중요성이 발전과 번영에 결정적이 되면서 두알라의 강력한 급속한 경제 성장을 낳았습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AMBRACIA', '암브라시아' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AMBRACIA_ADJ', '암브라시아의' UNION ALL
-SELECT 'TXT_KEY_CIV5_AMBRACIA_TEXT', '암브레시아는 고대 그리스 역사에서 마케도니아 왕 카산드로스가 에피로스의 왕 피로스에게 선물한 도시입니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI', '지부티' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI_ADJ', '지부티의' UNION ALL
-SELECT 'TXT_KEY_CIV5_DJIBOUTI_TEXT', '지부티는 프랑스의 지배하에 오복으로 정착하기 전까지 원래 무인도 해안 지역이었습니다. 그것은 프랑스로부터 독립한 후에 이름이 바뀌었고 또한 각각의 이름 있는 나라의 수도가 되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DODOMA', '다르에스살람' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DODOMA_ADJ', '다르에스살람' UNION ALL
-SELECT 'TXT_KEY_CIV5_DODOMA_TEXT', '다르에스살람은 인구 규모가 작고 탄자니아 자체의 갈림길, 저렴한 개발비 가능성이 실현되면서 탄자니아의 수도로 선정된 작은 무역도시로 구성된 지역입니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_FAYA', '파야' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_FAYA_ADJ', '파야의' UNION ALL
-SELECT 'TXT_KEY_CIV5_FAYA_TEXT', '파야는 현대 차드 북부의 많은 인구를 자랑하는 열대의 더운 지역입니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_KIGALI', '키갈리' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_KIGALI_ADJ', '키갈리의' UNION ALL
-SELECT 'TXT_KEY_CIV5_KIGALI_TEXT', '키갈리는 14세기에 르완다 왕국에 의해 처음 개발되고 있는 르완다의 수도이며, 근대에 역사적인 수도가 되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LEVUKA', '나이로비' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LEVUKA_ADJ', '나이로비의' UNION ALL
-SELECT 'TXT_KEY_CIV5_LEVUKA_TEXT', 'TODO' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_QUELIMANE', '켈리마네' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_QUELIMANE_ADJ', '켈리마네의' UNION ALL
-SELECT 'TXT_KEY_CIV5_QUELIMANE_TEXT', '켈리마네는 홍수에 극도로 취약한 지역입니다. 스와힐리 교역소로 설립된 이곳은 번영하는 항구로 발전했습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE', '시에라리온' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE_ADJ', '시에라리온의' UNION ALL
-SELECT 'TXT_KEY_CIV5_SIERRA_LEONE_TEXT', '시에라리온은 사막과 습지의 다양한 지역입니다. 영국의 지배하에 세워진 이 나라는 독립성을 부여받았고 이웃나라에 비해 종교적 관용을 자랑했습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SURREY', '셔리' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SURREY_ADJ', '셔리의' UNION ALL
-SELECT 'TXT_KEY_CIV5_SURREY_TEXT', '서리는 영국 남동부에 있는 군입니다. 비행장으로서의 첫 번째 용도로 알려진, 그 카운티는 비행기와 항공기의 생산에 있어 중요시 되었습니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_TAIWAN', 						'타이페이' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_TAIWAN_ADJ', 					'타이페이의' UNION ALL
-SELECT 'TXT_KEY_CIV5_TAIWAN_TEXT', 						'타이베이는 중화민국의 수도이며, 대만의 문화, 정치, 경제의 중심입니다. 국민당의 중국 망명 정부가 수립되기 전에, 타이베이는 중국, 일본, 필리핀 사이의 무역로를 따라 위치한 작은 지방 수도였습니다. 주변 지역의 대부분은 한족에 의한 중국 본토의 지배와 구별되는 풍부한 문화적 구조를 형성하면서, 몇몇 타이완 원주민들이 계속해서 거주합니다.' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_OC_EO', 						'옥에오' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_OC_EO_ADJ', 					'옥에오의' UNION ALL
-SELECT 'TXT_KEY_CIV5_OC_EO_TEXT', 						'TODO' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_THIMPHU', 					'팀푸' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_THIMPHU_ADJ', 				'팀푸의' UNION ALL
-SELECT 'TXT_KEY_CIV5_THIMPHU_TEXT', 					'TODO' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ANDORRA', 					'안도라' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ANDORRA_ADJ', 				'안도라의' UNION ALL
-SELECT 'TXT_KEY_CIV5_ANDORRA_TEXT', 					'TODO' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CANOSSA', 					'카노사' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CANOSSA_ADJ', 				'카노사의' UNION ALL
-SELECT 'TXT_KEY_CIV5_CANOSSA_TEXT', 					'TODO' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CLERMONT', 					'Clermont' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CLERMONT_ADJ', 					'The Clermont' UNION ALL
+SELECT 'TXT_KEY_CIV5_CLERMONT_TEXT', 						'Clermont was the starting point of the First Crusade, in which Christendom sought to free Jerusalem from Muslim domination: Pope Urban II preached the crusade in 1095 at the Second Council of Clermont.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_HONDURAS', 					'Tegucigalpa' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_HONDURAS_ADJ', 					'Honduran' UNION ALL
+SELECT 'TXT_KEY_CIV5_HONDURAS_TEXT', 						'Honduras was home to several Mesoamerican cultures before the Spanish took over in the 16th century. Honduras became independent in 1821 and has since been a republic. However the republic remains a figure of a banana republic where their government encouraged developments from foreign investors which these developments came out with bananas.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AUCKLAND', 					'Parihaka' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AUCKLAND_ADJ', 					'the Maori' UNION ALL
+SELECT 'TXT_KEY_CIV5_AUCKLAND_TEXT', 						'When the Maori settled upon an isthmus in what is now northern New Zealand, they found the surrounding landscape full of fertile land, lush jungle, and dormant volcanos. Protected natural harbors on either side of the isthmus offered plentiful fishing and a base for war canoes (''waka taua''). The settlers named it ''Tamaki Makaurau''—roughly translating to "the maiden sought by a hundred lovers."' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ARMAGH', 						'Armagh' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ARMAGH_ADJ', 						'The Armagh' UNION ALL
+SELECT 'TXT_KEY_CIV5_ARMAGH_TEXT', 							'The Irish town of Armagh has long known religion. Thought to have been a worship site for ancient pagans, it gained prominence in the 5th Century when Saint Patrick, a Christian missionary, constructed and consecrated a stone church on the summit of a hill. Around that sprang a monastery, and then a town devoted to spreading Christianity throughout Ireland—a beachhead of theology.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUSCAT', 						'Muscat' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUSCAT_ADJ', 						'The Muscat' UNION ALL
+SELECT 'TXT_KEY_CIV5_MUSCAT_TEXT', 							'The trade flowing through Muscat has been its lifeblood for at least two millennia. Nestled against the foothillls of the Al Hajar mountains, Ptolemy called it the Hidden Port (''Cryptus Portus'') as early as the 1st Century. Unfortunately the city was not hidden well enough—its prime location at the mouth of the Persian Gulf has long since made it a tempting target for conquest.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GRANADA', 					'Granada' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GRANADA_ADJ', 					'The Granada' UNION ALL
+SELECT 'TXT_KEY_CIV5_GRANADA_TEXT', 						'In the 8th Century the Umayyad Caliphate spread through the Iberian Peninsula, rapidly conquering Visigothic Hispania. Granada, a fortified settlement in what is now southern Spain, was swept up in the invasion. In time to come (the late 15th Century, to be exact) its surrender to the Catholic Monarchs (''Los Reyes Católicos'') would end the Reconquista of Andalusia—but for three quarters of a millennium, Granada belonged to the Moors.
+Located at the base of the Sierra Nevada range, Granada had the misfortune of being nearly indefensible due to its location on a low-lying plain. Its Moorish rulers quickly realized this and transferred their seat of power to the more defensible foothills overlooking the town. Part of their plans involved the building of alcazars, one of which would in later years be renovated into the beautiful Alhambra.
+Granada''s Moorish masters shifted through the centuries. The Almohad replaced the Almoravids, who had themselves succeeded the remnants of the Umayyad. The city''s fortunes changed again in the 13th Century with the Nasrid dynasty, whose alliance with the Catholic kingdom of Castile led to the Emirate of Granada. Direct access to trade centers in sub-Saharan Africa bought Granada freedom from the Reconquista—for a time.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_NANMANDOL', 					'Leluh' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_NANMANDOL_ADJ', 					'The Leluh' UNION ALL
+SELECT 'TXT_KEY_CIV5_NANMANDOL_TEXT', 						'Leluh is a major prehistoric and historic archaeological site. The remains are those of a civilization that peaked around the 14th and 15th centuries, with elements still visible at the time of European contact in the early 19th century. The rulers of Leluh gradually conquered and thus unified the island of Kosrae. From the capital at Leluh, they ruled the island with a monarchy that archaeologists believe was similar to the kingdoms of Tonga or Hawaii.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GWYNEDD', 					'Aberffraw' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GWYNEDD_ADJ', 					'Welsh' UNION ALL
+SELECT 'TXT_KEY_CIV5_GWYNEDD_TEXT', 						'Gwynedd was an independent Welsh kingdom from the end of the Roman period until the 13th century, when it was conquered by England.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUISCA', 						'Suamox' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUISCA_ADJ', 						'Muiscan' UNION ALL
+SELECT 'TXT_KEY_CIV5_MUISCA_TEXT', 							'Muisca was home to several Andean cultures such as the Panche in the west, Muzo in the northwest, Guane in the north, Lache in the northeast, Achagua in the east, and Sutagao in the south until the 16th century where Spanish Conquistadors laid ruin to them.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LACONIA', 					'Sparta' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LACONIA_ADJ', 					'Spartans' UNION ALL
+SELECT 'TXT_KEY_CIV5_LACONIA_TEXT', 						'Considered a region of its city-state capital, Sparta, Laconia became one of the strongest local powers to contest control in the Peloponnese region.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CHEVAK', 						'Chevak' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CHEVAK_ADJ', 						'The Chevak' UNION ALL
+SELECT 'TXT_KEY_CIV5_CHEVAK_TEXT', 							'An area in Alaska native to the Chevak people.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO', 				'Santo Domingo' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO_ADJ', 				'Dominican' UNION ALL
+SELECT 'TXT_KEY_CIV5_SANTO_DOMINGO_TEXT', 					'Santo Domingo became the oldest European city in the Americas continent. Originally named La Nueva Isabela, it was renamed in 1495 to ''Santo Domingo'', in honor of Saint Dominic. Santo Domingo came to be known as the ''Gateway to the Caribbean'' as the city grew bigger and prosperous.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MANAGUA', 					'Managua' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MANAGUA_ADJ', 					'Managuense' UNION ALL
+SELECT 'TXT_KEY_CIV5_MANAGUA_TEXT', 						'Managua composed of mestizos and whites of Spanish decent, the city became from a fishing town to a thriving Spanish to now being the most well-known Central American developed city.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ODENSO', 						'Helsinki' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ODENSO_ADJ', 						'Finnish' UNION ALL
+SELECT 'TXT_KEY_CIV5_ODENSO_TEXT', 							'Translated literally as Odin''s Island, it was named by the Finnish Kingdom in recognition to a Norse Mythologial God, Odin.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_YANGCHENG', 					'Yangcheng' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_YANGCHENG_ADJ', 					'The Yangcheng' UNION ALL
+SELECT 'TXT_KEY_CIV5_YANGCHENG_TEXT', 						'Considered the first capital of the Xia Dynasty, it was built upon the Yin River and held until the fall of their dynasty.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS', 					'Phanoteus' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS_ADJ', 					'Phocisan' UNION ALL
+SELECT 'TXT_KEY_CIV5_PHANOTEUS_TEXT', 						'Phanoteus was a very ancient town, originally inhabited by the Phlegyae. It is believed that Promethesus made the human race here. It held until damaged and damaged until destroyed in the passage of time by the Persians under Xerxes, Macedonians under Philip II, and the Romans under Pompey the Great.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DOUALA', 						'Douala' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DOUALA_ADJ', 						'The Douala' UNION ALL
+SELECT 'TXT_KEY_CIV5_DOUALA_TEXT', 							'Douala is the largest city in Cameroon along as its city with the strongest economic growth in the region. Cameroon independence in 1960 gave rise to the strong rapid economic growth of Douala as its economic importance became critical to develop and prosper.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AMBRACIA', 					'Ambracia' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AMBRACIA_ADJ', 					'Ambracian' UNION ALL
+SELECT 'TXT_KEY_CIV5_AMBRACIA_TEXT', 						'Ambracia is a city among Ancient Greece history that was gifted by Macedonian ruler Cassander to Pyrrhus, king of Epirus' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI', 					'Djibouti' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI_ADJ', 					'Djiboutian' UNION ALL
+SELECT 'TXT_KEY_CIV5_DJIBOUTI_TEXT', 						'Djibouti was a region that originally was uninhabited coast until settled as Obock under French control. It was renamed and also became the capital of its respective named country after its independence from France.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DODOMA', 						'Dar es Salaam' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DODOMA_ADJ', 						'Dar es Salaam' UNION ALL
+SELECT 'TXT_KEY_CIV5_DODOMA_TEXT', 							'TODO' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_FAYA', 						'Faya' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_FAYA_ADJ', 						'The Faya' UNION ALL
+SELECT 'TXT_KEY_CIV5_FAYA_TEXT', 							'Faya is a tropical hot region that boast its large population in modern northern Chad.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_KIGALI', 						'Kigali' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_KIGALI_ADJ', 						'Kigalian' UNION ALL
+SELECT 'TXT_KEY_CIV5_KIGALI_TEXT', 							'Kigali is the capital city of Rwanda being initially developed by the Kingdom of Rwanda in the 14th century, and has been its historical capital in modern times.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LEVUKA', 						'Levuka' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LEVUKA_ADJ', 						'Fijian' UNION ALL
+SELECT 'TXT_KEY_CIV5_LEVUKA_TEXT', 							'TODO' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_QUELIMANE', 					'Quelimane' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_QUELIMANE_ADJ', 					'Quelimanean' UNION ALL
+SELECT 'TXT_KEY_CIV5_QUELIMANE_TEXT', 						'Quelimane is a region extremely vulnerable to flooding. Founded as a Swahili trading post, it developed into a prosperous seaport.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE', 				'Freetown' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE_ADJ', 				'Sierra Leonean' UNION ALL
+SELECT 'TXT_KEY_CIV5_SIERRA_LEONE_TEXT', 					'Freetown is a diverse region of deserts and wetlands. Founded under British control, it was given its independence and boast its religious tolerance compared to its neighbor.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SURREY', 						'Brooklands' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SURREY_ADJ', 						'The Surreys' UNION ALL
+SELECT 'TXT_KEY_CIV5_SURREY_TEXT', 							'Surrey is a county in the south-east of the United Kingdoms. Known for its first usage as an airfield, the county became critical for its production of airplanes and aero testing.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TAIWAN', 						'Taipei' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TAIWAN_ADJ', 						'Taipei' UNION ALL
+SELECT 'TXT_KEY_CIV5_TAIWAN_TEXT', 							'Taipei is the capital city of the Republic of China, and forms the cultural, political, and economic center of Taiwan. Prior to the establishment of the Kuomintang''s Chinese government in exile, Taipei was a minor provincial capital, situated along trade routes between China, Japan, and the Philippines. Much of the surrounding area continues to be inhabited by several Formosan indigenous groups, creating a rich cultural fabric distinct from mainland China''s domination by Han Chinese influence.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_OC_EO', 						'Óc Eo' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_OC_EO_ADJ', 						'The Funan' UNION ALL
+SELECT 'TXT_KEY_CIV5_OC_EO_TEXT', 							'Funan was an ancient state in Cambodia that arose in the 1st century ad and was incorporated into the state of Chenla in the 6th century. Funan (perhaps a Chinese transcription of pnom, “mountain”) was the first important Hinduized kingdom in southeast Asia. It covered portions of what are now Vietnam, Thailand, and Cambodia. Funan had trade relations with India as well as China, to whose emperor the people of Funan sent tribute between the 3rd and 6th centuries. [NEWLINE]Funan reached the apex of its power under the 3rd-century king Fan Shiman, also known as Srei Meara. Fan Shiman expanded his empire''s navy and improved the Funanese bureaucracy, creating a quasi-feudal pattern that left local customs and identities largely intact, particularly in the empire''s further reaches. Fan Shiman and his successors also sent ambassadors to China and India to regulate sea trade. The kingdom likely accelerated the process of Indianization of Southeast Asia. Later kingdoms of Southeast Asia such as Chenla may have emulated the Funanese court. The Funanese established a strong system of mercantilism and commercial monopolies that would become a pattern for empires in the region. [NEWLINE]Funan''s dependence on maritime trade is seen as a cause for the beginning of Funan''s downfall. Their coastal ports allowed trade with foreign regions that funnelled goods to the north and coastal populations. However, the shift in maritime trade to Sumatra, the rise in the Srivijaya trade empire, and the taking of trade routes all throughout Southeast Asia by China, leads to economic instability in the south, and forces politics and economy northward. Funan was superseded and absorbed in the 6th century by the Khmer polity of the Chenla Kingdom.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_THIMPHU', 					'Thimphu' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_THIMPHU_ADJ', 					'Thimphu' UNION ALL
+SELECT 'TXT_KEY_CIV5_THIMPHU_TEXT', 						'Since 1955 Thimphu is the capital of the Kingdom of Bhutan, a landlocked country in South Asia at the eastern end of the Himalayas. It is bordered to the north by Tibet (China), and to the south, east, and west by India. Bhutan existed as a patchwork of minor warring fiefs until the early 17th century. At that time the lama and military leader Ngawang Namgyal, the first Zhabdrung Rinpoche, who was fleeing religious persecution in Tibet, unified the area and cultivated a distinct Bhutanese identity. In the early 20th century, Bhutan came into contact with the British Empire and retained strong bilateral relations with India upon its independence.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ANDORRA', 					'Andorra' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ANDORRA_ADJ', 					'Andorran' UNION ALL
+SELECT 'TXT_KEY_CIV5_ANDORRA_TEXT', 						'Lying on the southern slopes of the Pyrenees, the Principality of Andorra consists of a cluster of mountain valleys whose streams form the Valira River. Andorra’s independence is traditionally ascribed to Charlemagne, who recovered the region from the Muslims in 803 CE. It was placed under the joint suzerainty of the French counts of Foix and the Spanish bishops of Urgel in 1278, and it was subsequently governed jointly by the Spanish bishop of Urgel and the French head of state. This feudal system of government, the last in Europe, continued until 1993, when a constitution was adopted that transferred most of the coprinces’ powers to the Andorran General Council, which is elected by universal suffrage. Andorra has long had a strong affinity with Catalonia; its institutions are based in Catalonian law, and it is part of the diocese of Urgel (Spain). The traditional economy was based on sheep raising, but tourism grew in importance since the 1950s and became central to Andorra’s economy by the early 21st century.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CANOSSA', 					'Canossa' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CANOSSA_ADJ', 					'Canossan' UNION ALL
+SELECT 'TXT_KEY_CIV5_CANOSSA_TEXT', 						'TODO' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BEDULU', 						'Bedulu' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BEDULU_ADJ', 						'Bali' UNION ALL
+SELECT 'TXT_KEY_CIV5_BEDULU_TEXT', 							'Known as "the island of a thousand temples", Bali and its history are steeped in culture and religion, being one of the last bastions of Hinduism in Indonesia. Bali was inhabited around 2000 BCE by Austronesian people who migrated originally from Southeast Asia and Oceania through Maritime Southeast Asia. Culturally and linguistically, the Balinese are closely related to the people of the Indonesian archipelago, Malaysia, the Philippines and Oceania. Stone tools dating from this time have been found near the village of Cekik in the island''s west. Inscriptions from 896 and 911 do not mention a king, until 914, when Sri Kesarivarma is mentioned. They also reveal an independent Bali, with a distinct dialect, where Buddhism and Shivaism were practiced simultaneously. Mpu Sindok''s great-granddaughter, Mahendradatta, married the Bali king Udayana Warmadewa around 989, giving birth to Airlangga around 1001. This marriage also brought more Hinduism and Javanese culture to Bali. Princess Sakalendukirana appeared in 1098. Suradhipa reigned from 1115 to 1119, and Jayasakti from 1146 until 1150. Jayapangus appears on inscriptions between 1178 and 1181, while Adikuntiketana and his son Paramesvara in 1204.[NEWLINE][NEWLINE]Balinese culture was strongly influenced by Indian, Chinese, and particularly Hindu culture, beginning around the 1st century AD. The name Bali dwipa ("Bali island") has been discovered from various inscriptions, including the Blanjong pillar inscription written by Sri Kesari Warmadewa in 914 and mentioning Walidwipa. It was during this time that the people developed their complex irrigation system, locally called subak, to grow rice in wet-field cultivation. Some religious and cultural traditions still practiced today can be traced to this period.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DALI', 						'Dali' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DALI_ADJ', 						'Dali' UNION ALL
+SELECT 'TXT_KEY_CIV5_DALI_TEXT', 							'The Kingdom of Dali, which meant "the great truth" or "the great administration", was a buddhist kingdom that played a vital role in south-east asia for nearly three centuries, from the 10th to the 13th century. It was a kingdom of piety, of many temples and giant stone pagodas, and was composed not of a homogeneous people but of many people and many tribes, the largest of which being the Bai and Yi. The Dali kingdom was notable for its influence in preserving and spreading Buddhism. The royal Duan clan, like that of their Nanzhao predecessors before them were devout Buddhists, and they constructed large Buddhist temples around Dali and on the Shibaoshan Mountain. These soon became centers for Buddhist teaching. Here the Kings attempted to model themselves on the models of the Buddhist- divine kings of the nearby South East Asian kingdoms.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MULTAN', 						'Multan' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MULTAN_ADJ', 						'Ghaznavid' UNION ALL
+SELECT 'TXT_KEY_CIV5_MULTAN_TEXT', 							'Multan is a city in the Punjab Province of Pakistan, and capital of Multan District. It is located in the southern part of the province, and is steeped in history. It has a population of over 3.8 million (according to 1998 census), making it the sixth largest city in Pakistan. It is built just east of the Chenab River, more or less in the geographic center of the country and about 966 km from Karachi. Multan is known as the "City of Pirs and Shrines", and is a prosperous city of bazaars, mosques and superbly designed tombs. The Multan International Airport connects flights to major cities in Pakistan and to cities in the Persian Gulf. The city''s industries include metal working, flour, sugar, oil milling, textiles manufacturing, fertilizer, soap, and glass. Multan is also known for its handicrafts, especially pottery and enamel work. One of the subcontinent''s oldest cities, Multan derives its name from an idol in the temple of the sun god, a shrine of the pre-Muslim period. The city was conquered (c.326 BC) by Alexander the Great , visited (AD 641) by the Chinese Buddhist scholar Hsüan-tsang, taken (8th cent.) by the Arabs, and captured by Muslim Turkish conqueror Mahmud of Ghazna in 1005 and by Timur in 1398. In the 16th and 17th century, Multan enjoyed peace under the rule of Mughal emperors. In 1818, the city was seized by Ranjit Singh, leader of the Sikhs. The British held it from 1848 until Pakistan achieved independence in 1947. Landmarks include an old fort containing the 14th-century tombs of two Muslim saints.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BAGAN', 						'Pagan' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BAGAN_ADJ', 						'Burmese' UNION ALL
+SELECT 'TXT_KEY_CIV5_BAGAN_TEXT', 							'The kingdom grew out of a small 9th-century settlement at Pagan (present-day Bagan) by the Mranma/Burmans, who had recently entered the Irrawaddy valley from the Kingdom of Nanzhao. Over the next two hundred years, the small principality gradually grew to absorb its surrounding regions until the 1050s and 1060s when King Anawrahta founded the Pagan Empire, for the first time unifying under one polity the Irrawaddy valley and its periphery. By the late 12th century, Anawrahta''s successors had extended their influence farther to the south into the upper Malay peninsula, to the east at least to the Salween river, in the farther north to below the current China border, and to the west, in northern Arakan and the Chin Hills. In the 12th and 13th centuries, Pagan, alongside the Khmer Empire, was one of two main empires in mainland Southeast Asia. The kingdom went into decline in the mid-13th century as the continuous growth of tax-free religious wealth by the 1280s had severely affected the crown''s ability to retain the loyalty of courtiers and military servicemen. This ushered in a vicious circle of internal disorders and external challenges by the Arakanese, Mons, Mongols and Shans. Repeated Mongol invasions (1277–1301) toppled the four-century-old kingdom in 1287. The collapse was followed by 250 years of political fragmentation that lasted well into the 16th century.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_RISHIKESH', 					'Rishikesh' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_RISHIKESH_ADJ', 					'Garhwal' UNION ALL
+SELECT 'TXT_KEY_CIV5_RISHIKESH_TEXT', 						'Known as the "Gateway to the Garhwal Himalayas" and "Yoga Capital of the World", Rishikesh, also spelt as Hrishikesh, is a city near Dehradun in Dehradun district of the Indian state Uttarakhand. It is situated on the right bank of the Ganges River and is a pilgrimage town for Hindus, with ancient sages and saints meditating here in search of higher knowledge. There are numerous temples and ashrams built along the banks of the river.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUTITJULU', 					'Mutitjulu' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUTITJULU_ADJ', 					'Anangu' UNION ALL
+SELECT 'TXT_KEY_CIV5_MUTITJULU_TEXT', 						'"Anangu" is an umbrella term that describes several Australian Aboriginal groups who speak Western Desert languages; the term is most prominently used by the Pitjantjatjara and the Yankunytjatjara. The Western Desert languages have been described as covering more of Australia''s area than any other indigenous language. Uluru and Kata Tjuta are sacred sites in the Anangu belief system, with eleven songlines passing through or near them. In 1979, the indigenous Central Land Council began a legal battle to lay claim to the Uluru-Kata Tjuta National Park; in 1985, the resulting settlement plan was implemented, which granted the Anangu a majority of the park''s Board of Management but still allowed tourists to visit the park.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ISKANWAYA', 					'Iskanwaya' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ISKANWAYA_ADJ', 					'Kallawaya' UNION ALL
+SELECT 'TXT_KEY_CIV5_ISKANWAYA_TEXT', 						'Iskanwaya is a pre-Columbian sacred site, situated on a mountain ridge above the Llica River in Bolivia, 325 km north of La Paz. In its extension and its age Iskanwaya surpasses Machu Picchu in Peru, but it is less well preserved. The Iskanwaya ruins go back to the Mollo culture which predated the Inca civilization and whose people presumably built the constructions as early as 800 BC or in their prime cultural period from 1145 to 1425.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TIWANAKU', 					'Tiwanaku' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TIWANAKU_ADJ', 					'Tiwanaku' UNION ALL
+SELECT 'TXT_KEY_CIV5_TIWANAKU_TEXT', 						'Tiwanaku (Spanish: Tiahuanaco and Tiahuanacu) is a Pre-Columbian archaeological site in western Bolivia, South America. It is the capital of an empire that extended into present-day Peru and Chile, flourishing from AD 300 to AD 1000. Tiwanaku is recognized by Andean scholars as one of the most important civilizations prior to the Inca Empire; it was the ritual and administrative capital of a major state power for approximately five hundred years. The ruins of the ancient city state are near the south-eastern shore of Lake Titicaca in the La Paz Department, Ingavi Province, Tiwanaku Municipality, about 72 km (45 mi) west of La Paz.49 while searching for the Inca capital Qullasuyu.' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DANO', 						'Dano' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DANO_ADJ', 						'Dagara' UNION ALL
+SELECT 'TXT_KEY_CIV5_DANO_TEXT', 							'TODO' UNION ALL
 -- abilities
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ALMATY', '[COLOR_MAGENTA]알마투:[ENDCOLOR] [ICON_TRADE]도시 연결에서 [ICON_RESEARCH]과학 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTANANARIVO', '[COLOR_MAGENTA]해적 피난항:[ENDCOLOR] 처치한 적의 전투력 100%만큼 [ICON_GOLD]골드 제공[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTWERP', '[COLOR_MAGENTA]이코노믹스 프로망스:[ENDCOLOR] 상인 전문가의 +2 [ICON_GOLD]골드[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BELGRADE', '[COLOR_MAGENTA]백색 요새:[ENDCOLOR] 공성 유닛 체력 +25[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BOGOTA', '[COLOR_MAGENTA]독립 연합:[ENDCOLOR] 점령한 도시가 [ICON_CULTURE]문화 20 제공, 해방시킨 도시는 시대 및 도시 수에 따라 [ICON_CULTURE]문화 15~45 제공[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BRATISLAVA', '[COLOR_MAGENTA]슬라브 문화의 심장:[ENDCOLOR] 길드의 [ICON_CULTURE]문화 +2 [ICON_TOURISM]관광 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BRUSSELS', '[COLOR_MAGENTA]습지의 고향:[ENDCOLOR] 습지 타일의 [ICON_CULTURE]문화 +1, [COLOR_POSITIVE_TEXT]습지 복원 시설[ENDCOLOR]건설 가능[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUCHAREST', '[COLOR_MAGENTA]동방의 파리:[ENDCOLOR] 걸작에서 오는 [ICON_CULTURE]문화 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUDAPEST', '[COLOR_MAGENTA]다뉴브의 진주:[ENDCOLOR] [ICON_RES_HORSE]말 +5 제공[NEWLINE][NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUENOS_AIRES', '[COLOR_MAGENTA]민중의 소리:[ENDCOLOR] 보너스 자원의 [ICON_CULTURE]문화 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BYBLOS', '[COLOR_MAGENTA]레바논 삼나무:[ENDCOLOR] 어선, 호수, 오아시스 타일의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CAHOKIA', '[COLOR_MAGENTA]카호키아 유적:[ENDCOLOR] [COLOR_POSITIVE_TEXT]카호키아 마운드[ENDCOLOR] 시설 건설 가능, 마운드의 [ICON_GOLD]골드 +1 [ICON_PEACE]신앙 +1, 마을 인접 시 [ICON_GOLD]골드 +1 [ICON_PEACE]신앙 +1, 인접 도시에 [ICON_GOLDEN_AGE]황금기 점수 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CAPE_TOWN', '[COLOR_MAGENTA]희망의 봉우리:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE]교역로 범위 +10%, [ICON_INTERNATIONAL_TRADE]교역로가 끝나는 도시의 [ICON_CITIZEN]시민 수에 따라 [ICON_GOLD]골드 20~40 제공[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_COLOMBO', '[COLOR_MAGENTA]쿠베라:[ENDCOLOR] 정글, 숲 타일의 [ICON_GOLD]골드 +2, 제재소 및 벌목장 건설 시 [ICON_GOLD]골드 [COLOR_NEGATIVE_TEXT]-2[ENDCOLOR][NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FLORENCE', '[COLOR_MAGENTA]르네상스의 요람:[ENDCOLOR] 채석장의 [ICON_CULTURE]문화 +1, 예술가 전문가의 [ICON_GOLDEN_AGE]황금기 점수 +2[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GENEVA', '[COLOR_MAGENTA]교회론:[ENDCOLOR] 도시의 [ICON_CITIZEN]시민 5명당 [ICON_PEACE]신앙 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GENOA', '[COLOR_MAGENTA]라 수페르바:[ENDCOLOR] [ICON_GREAT_PEOPLE]위인이 출현할 때 [ICON_GOLD]골드 50, [ICON_GOLDEN_AGE]황금기 점수 15[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HANOI', '[COLOR_MAGENTA]애국심:[ENDCOLOR] 우호 영토 내 [ICON_STRENGTH]전투력 +10%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HONG_KONG', '[COLOR_MAGENTA]국가 번영:[ENDCOLOR] 도시의 [ICON_CITIZEN]시민 6명당 [ICON_GOLD]골드 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_IFE', '[COLOR_MAGENTA]요루바:[ENDCOLOR] 도시의 국경이 확장될 때 [ICON_PEACE]신앙 +3, 성소의 국경 확장 점수 +2[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_JERUSALEM', '[COLOR_MAGENTA]성스러운 도시:[ENDCOLOR] 동맹인 문명의 수도와 같은 대중 종교를 채택, 예루살렘의 대한 "영향권" 제공, 성도와 같은 종교 압력을 가지고 종교 압력 +100% (점령해도 유지)[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KABUL', '[COLOR_MAGENTA]지상 낙원:[ENDCOLOR] 도시 주변 산 타일 1개마다 [ICON_CULTURE]문화 +0.66[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KATHMANDU', '[COLOR_MAGENTA]더 마운틴:[ENDCOLOR] 도시 주변 산 타일 1개마다 [ICON_PEACE]신앙 +0.66[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KIEV', '[COLOR_MAGENTA]오래된 이야기:[ENDCOLOR] [COLOR_POSITIVE_TEXT]빌리나[ENDCOLOR] 건설 가능 (걸작 음악 슬롯 +1)[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KUALA_LUMPUR', '[COLOR_MAGENTA]진흙투성이 강:[ENDCOLOR] 우물의 [ICON_CULTURE]문화 +5%, 물레방앗간의 [ICON_CULTURE]문화 +2[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KYZYL', '[COLOR_MAGENTA]아시아의 중심:[ENDCOLOR] 궁전, 기념비의 [ICON_TOURISM]관광 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LA_VENTA', '[COLOR_MAGENTA]의례적 창조물:[ENDCOLOR] 위인 시설에 [ICON_PEACE]신앙 +1, 성소의 [ICON_PEACE]신앙 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LHASA', '[COLOR_MAGENTA]신의 정원:[ENDCOLOR] [ICON_GREAT_PEOPLE]위인이 출현할 때 [ICON_PEACE]신앙 25, [COLOR_YELLOW]포탈라 궁[ENDCOLOR] 불가사의 건설 가능[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MALACCA', '[COLOR_MAGENTA]해협 식민지:[ENDCOLOR] 사치 자원의 +1 [ICON_GOLD]골드[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MANILA', '[COLOR_MAGENTA]동양의 진주:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE]교역로가 끝나는 도시의 [ICON_CITIZEN]시민 수에 따라 [ICON_FOOD]식량 [ICON_PRODUCTION]생산 1~15 제공[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MBANZA_KONGO', '[COLOR_MAGENTA]마니콩고의 영광:[ENDCOLOR] 숲, 정글, 습지, 범람원 타일에서 전투 시 [ICON_STRENGTH]전투력 보너스 +15%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MELBOURNE', '[COLOR_MAGENTA]골드 러쉬:[ENDCOLOR] 광산, 위인 시설의 [ICON_GOLD]골드 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MILAN', '[COLOR_MAGENTA]비스콘티 특사:[ENDCOLOR] [COLOR_POSITIVE_TEXT]비스콘티 저택[ENDCOLOR] 건설 가능 (걸작 예술품 슬롯 +1)[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MOGADISHU', '[COLOR_MAGENTA]떠오르는 해양 도시:[ENDCOLOR] 범람원, 해양 타일의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MOMBASA', '[COLOR_MAGENTA]개발도상 연합:[ENDCOLOR] 모든 보너스 자원의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MONACO', '[COLOR_MAGENTA]금융 천국:[ENDCOLOR] 시장, 은행의 [ICON_CULTURE]문화 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ORMUS', '[COLOR_MAGENTA]보석 반지:[ENDCOLOR] 모든 사치 자원의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PANAMA_CITY', '[COLOR_MAGENTA]파나마 운하:[ENDCOLOR] 요새, 성채, 부교의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PRAGUE', '[COLOR_MAGENTA]프라하 성:[ENDCOLOR] 성벽, 성의 [ICON_CULTURE]문화 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_QUEBEC_CITY', '[COLOR_MAGENTA]일백조합인상사:[ENDCOLOR] 야영지, 제재소, 벌목장의 [ICON_GOLD]골드 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_RAGUSA', '[COLOR_MAGENTA]해양 종속국:[ENDCOLOR] 우호 및 동맹인 도시 국가가 모든 도시에 [ICON_FOOD]식량 +1 제공, 대사관 시설의 [ICON_FOOD]식량 +1 [NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_RIGA', '[COLOR_MAGENTA]라트비아 상업중심지:[ENDCOLOR] 도시의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]+3%[ENDCOLOR][NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SAMARKAND', '[COLOR_MAGENTA]소그드:[ENDCOLOR] 국제 [ICON_INTERNATIONAL_TRADE]교역로의 [ICON_GOLD]골드 +4[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIDON', '[COLOR_MAGENTA]이웃집 불청객:[ENDCOLOR] 동맹일 때 시돈에 대한 "영향권" 제공, 적 영토 내 군사 유닛의 체력이 매 턴 +5 회복[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SINGAPORE', '[COLOR_MAGENTA]발전된 부:[ENDCOLOR] 모든 외교 유닛에 [COLOR_PURPLE_PLAYER]귀족[ENDCOLOR] 승급 부여[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SOFIA', '[COLOR_MAGENTA]세르디카:[ENDCOLOR] 위대한 장군 및 위대한 제독이 인접 유닛에 추가 [ICON_STRENGTH]전투력 보너스 +5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SYDNEY', '[COLOR_MAGENTA]자본 인프라:[ENDCOLOR] [ICON_HAPPINESS_1]국왕 경축일에 [ICON_FOOD]식량 +5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TYRE', '[COLOR_MAGENTA]고대의 유적:[ENDCOLOR] 걸작, 랜드마크 시설의 [ICON_GOLD]골드 +2[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_UR', '[COLOR_MAGENTA]문명의 요람:[ENDCOLOR] [ICON_TRADE]도시 연결에서 [ICON_FOOD]식량 +2[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VALLETTA', '[COLOR_MAGENTA]그랜드 하버:[ENDCOLOR] [COLOR_POSITIVE_TEXT]그랜드 하버[ENDCOLOR] 건설 가능[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VANCOUVER', '[COLOR_MAGENTA]터미널 시티:[ENDCOLOR] 마을, 위인 시설의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VATICAN_CITY', '[COLOR_MAGENTA]절대 믿음:[ENDCOLOR] [ICON_PEACE]신앙 구매 비용 -10%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VILNIUS', '[COLOR_MAGENTA]북쪽의 아테네:[ENDCOLOR] [COLOR_POSITIVE_TEXT]여명의 문[ENDCOLOR] 건설 가능 (걸작 문학 슬롯 +1)[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WELLINGTON', '[COLOR_MAGENTA]타라의 위대한 항구:[ENDCOLOR] 전략 자원의 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WITTENBERG', '[COLOR_MAGENTA]종교 개혁의 탄생:[ENDCOLOR] 모든 도시의 종교적 분쟁의 오는 [ICON_HAPPINESS_3]불행 -5%, 공무원, 근로자의 [ICON_PEACE]신앙 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_YEREVAN', '[COLOR_MAGENTA]손자병법:[ENDCOLOR] 처치한 적의 전투력 50%만큼 [ICON_CULTURE]문화 제공[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZANZIBAR', '[COLOR_MAGENTA]향신료의 섬:[ENDCOLOR] 보너스, 전략 자원의 [ICON_GOLD]골드 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZURICH', '[COLOR_MAGENTA]금융 박람회:[ENDCOLOR] 화폐 주조소의 [ICON_GOLD]골드 +2%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CLERMONT', '[COLOR_MAGENTA]성전의 열의:[ENDCOLOR] 새로 훈련된 근접 및 화약 유닛에 첫 전투에 따라 10턴간 무작위 승급 부여. 근접 유닛 전투 경험치 +33%.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HONDURAS', '[COLOR_MAGENTA]바나나 공화국:[ENDCOLOR] 도시 국가에서 제공하는 자원도 글로벌 독점에 포함.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AUCKLAND', '[COLOR_MAGENTA]타마키 마카우라우:[ENDCOLOR] 해안 도시의 [ICON_FOOD]식량 +3.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ARMAGH', '[COLOR_MAGENTA]성도 후원자:[ENDCOLOR] 신앙으로 위대한 아일랜드 성인 구매 가능 (대중 종교 필요).[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MUSCAT', '[COLOR_MAGENTA]은둔의 항구:[ENDCOLOR]등대, 항만, 항구, 부두의 [ICON_GOLD]골드 +1.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GRANADA', '[COLOR_MAGENTA]알카자르:[ENDCOLOR]요새, 성채, 부교의 [ICON_CULTURE]문화 +1.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_NANMANDOL', '[COLOR_MAGENTA]천상의 보초:[ENDCOLOR] 해양 타일의 [ICON_CULTURE]문화 +1.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GWYNEDD', '[COLOR_MAGENTA]허우엘 법률:[ENDCOLOR] [ICON_GOLDEN_AGE]황금기동안 [ICON_CULTURE]문화 +10%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MUISCA', '[COLOR_MAGENTA]황금 도시:[ENDCOLOR] [ICON_CAPITAL]수도의 [ICON_CITIZEN]시민 2명당 [ICON_GOLD]골드 +1[NEWLINE][ICON_BULLET]제국 전역 [ICON_CITIZEN]시민 30명당 [ICON_GOLD]골드 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LACONIA', '[COLOR_MAGENTA]스파르타의 규율:[ENDCOLOR] 우호 유닛 인접 시 [ICON_STRENGTH]전투력 보너스 +15%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CHEVAK', '[COLOR_MAGENTA]알래스카의 바람:[ENDCOLOR] 툰드라 타일 4개당 [ICON_FOOD]식량 +1[NEWLINE][ICON_BULLET]설원 타일 3개당 [ICON_FOOD]식량 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SANTO_DOMINGO', '[COLOR_MAGENTA]카리브해의 관문:[ENDCOLOR] 글로벌 독점에서 오는 행복 및 산출량의 합 +3[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MANAGUA', '[COLOR_MAGENTA]빅맨의 도시:[ENDCOLOR] 글로벌 독점에서 오는 황금기의 길이 및 산출량의 합 +7%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ODENSO', '[COLOR_MAGENTA]사냥의 군주:[ENDCOLOR] 군사 유닛의 시야 +1[NEWLINE][ICON_BULLET]중립 지역에서 매 턴 체력 회복 +5[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_YANGCHENG', '[COLOR_MAGENTA]십이간지:[ENDCOLOR] 동물 자원에 [ICON_PEACE]신앙 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PHANOTEUS', '[COLOR_MAGENTA]프로메테우스의 선물:[ENDCOLOR] 도시 국가 부정 선거 및 쿠데타 확률 +25%[NEWLINE][ICON_BULLET]적 스파이 포획 가능성 +25%[NEWLINE][ICON_BULLET]스파이가 걸작 및 기술을 훔칠 확률 +25%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DOUALA', '[COLOR_MAGENTA]호텔 아프리카:[ENDCOLOR] 추가 [ICON_INTERNATIONAL_TRADE]교역로 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AMBRACIA', '[COLOR_MAGENTA]피로스의 용병:[ENDCOLOR] 지상 주둔군이 [ICON_PRODUCTION]생산 5% 제공, 도시 국가의 군사 유닛 선물 속도 +50%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DJIBOUTI', '[COLOR_MAGENTA]타 넷제루:[ENDCOLOR] 모든 도시의 빈곤에서 오는 [ICON_HAPPINESS_3]불행 -5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DODOMA', '[COLOR_MAGENTA]황야의 항해:[ENDCOLOR] 해상 유닛 [ICON_STRENGTH]전투력 보너스 +5%, 해상 유닛 [ICON_MOVES]행동력 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FAYA', '[COLOR_MAGENTA]전쟁의 성과:[ENDCOLOR] 처치한 적 전투력의 50%만큼 [ICON_RESEARCH]과학 획득[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KIGALI', 				'[COLOR_MAGENTA]이중 커리큘럼:[ENDCOLOR] 모든 도시의 문맹에서 오는 [ICON_HAPPINESS_3]불행 -5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LEVUKA', '[COLOR_MAGENTA]바우 파괴자:[ENDCOLOR] 야만인을 처치하거나, 야만인 캠프를 파괴하거나 적 도시를 점령하면 [ICON_FOOD] 식량을 얻습니다. 정복한 도시마다 +1 [ICON_GREAT_GENERAL] 위대한 장군 점수를 얻습니다.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_NAIROBI', '[COLOR_MAGENTA]함무라비:[ENDCOLOR] 모든 도시의 [ICON_HAPPINESS_3]곤경에서 오는 불행 -5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_QUELIMANE', '[COLOR_MAGENTA]좋은 징조의 강:[ENDCOLOR] 강 타일에 [ICON_GOLDEN_AGE]황금기 점수 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIERRA_LEONE', '[COLOR_MAGENTA]자유의 왕국:[ENDCOLOR] 모든 도시의 무료에서 오는 [ICON_HAPPINESS_3]불행 -5%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SURREY', '[COLOR_MAGENTA]장엄한 비행:[ENDCOLOR] 해상 및 지상 유닛 대항 시 전투기, 폭격기의 [ICON_STRENGTH]전투력 보너스 +10%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TAIWAN', 				'[COLOR_MAGENTA]대만의 기적:[ENDCOLOR] 연구 협정의  [ICON_RESEARCH]과학 +5%. [ICON_RESEARCH]과학의 2%를 [ICON_FOOD] 식량으로 전환.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_OC_EO', 				'[COLOR_MAGENTA]위대한 글래스 강의 군주들:[ENDCOLOR] 해안 도시의 [ICON_INTERNATIONAL_TRADE] 교역로에서 [ICON_CULTURE_LOCAL] 영토 확장 점수 +1, [ICON_HAPPINESS_1] 제국 행복 +1 [NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_THIMPHU', 			'[COLOR_MAGENTA]전룡의 왕국:[ENDCOLOR] 언덕 위 도시에서 +3 [ICON_CULTURE] 문화[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANDORRA', 			'[COLOR_MAGENTA]피레네 영주:[ENDCOLOR] 일할 수 있는 범위의 산마다 +1 [ICON_TOURISM] 관광. 산 근처 도시의 [ICON_HAPPINESS_3] 무료 -10%[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CANOSSA', 			'[COLOR_MAGENTA]경건한 마음속의 열렬한 불꽃:[ENDCOLOR] 공무원 전문가에 신앙 +1. 사원이 있는 도시에 위대한 외교관 포인트 +1[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ALMATY', 				'[COLOR_MAGENTA]Almatu:[ENDCOLOR] [ICON_TRADE] City Connections and International [ICON_CARAVAN] Land Trade Routes generate +1 [ICON_RESEARCH] Science. Player gains +1 [ICON_INFLUENCE] Influence per turn with Afraid [ICON_CITY_STATE] City-States.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AMBRACIA', 			'[COLOR_MAGENTA]Pyrrhic War:[ENDCOLOR] +10% [ICON_WAR] Militaristic [ICON_CITY_STATE] City-State Gift Rate. [COLOR_YIELD_GOLD]Land Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Mercenaries of Pyrrhus[ENDCOLOR] promotion (Unit gains +5% [ICON_PRODUCTION], if it [COLOR:255:230:85:255]is Garrisoned on Land[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANDORRA', 			'[COLOR_MAGENTA]Pyrenean Paréage:[ENDCOLOR] +1 [ICON_TOURISM] Tourism for every [COLOR_CITY_BLUE]Mountain[ENDCOLOR] tile within their workable radius. -10% [ICON_HAPPINESS_3] Boredom in Cities with [COLOR_CITY_BLUE]Mountains[ENDCOLOR] nearby.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTANANARIVO', 		'[COLOR_MAGENTA]Libertalia:[ENDCOLOR] Player can see all Barbarian Encampments. Units gain [COLOR_WATER_TEXT]Pirate Haven[ENDCOLOR] promotion (Unit gains [ICON_GOLD] [COLOR:255:230:85:255]on Kill[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTWERP', 			'[COLOR_MAGENTA]Economic Prominence:[ENDCOLOR] Merchants gain +1 [ICON_GOLD] Gold. -10% [ICON_GOLD] Gold Purchase Cost.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ARMAGH', 				'[COLOR_MAGENTA]Patron of Saints:[ENDCOLOR] Player can purchase [COLOR_YIELD_FOOD]Irish Saints[ENDCOLOR] (as buildings) with [ICON_PEACE] Faith (requires a Majority Religion). Saints help with [ICON_HAPPINESS_1] Happiness management and provide some yields. You can choose only one Saint out of four possible in each City.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AUCKLAND', 			'[COLOR_MAGENTA]City of Sails:[ENDCOLOR] Coastal Cities gain +3 [ICON_FOOD] Food. [COLOR_YIELD_GOLD]Land Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Peaceful Resistance[ENDCOLOR] promotion (Unit generates [ICON_FOOD] and [ICON_GOLDEN_AGE], if it [COLOR:255:230:85:255]is Garrisoned on Land[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BAGAN', 				'[COLOR_MAGENTA]Land of Thousand Pagodas:[ENDCOLOR] [COLOR_YIELD_FOOD]Temples[ENDCOLOR] gain +1 [ICON_HAPPINESS_1] Happiness. Building construction grants 10 [ICON_PEACE] Faith.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BEDULU', 				'[COLOR_MAGENTA]Isle of Gods:[ENDCOLOR] [COLOR_GREY]Sea Resources[ENDCOLOR] gain +1 [ICON_PEACE] Faith. Cities gain +1 [ICON_PEACE] Faith for every 2 worked [COLOR_CITY_GREEN]Jungle[ENDCOLOR] tiles.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BELGRADE', 			'[COLOR_MAGENTA]Balkan Powder Keg:[ENDCOLOR] Cities gain +10% [ICON_PRODUCTION] Production towards [COLOR_YIELD_GOLD]Siege Units[ENDCOLOR]. [COLOR_YIELD_GOLD]Siege Units[ENDCOLOR] gain [COLOR_WATER_TEXT]The White Fortress[ENDCOLOR] promotion (+25[ICON_PLUS]Total HP).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BOGOTA', 				'[COLOR_MAGENTA]United Independence:[ENDCOLOR] Capturing a City grants 30 [ICON_CULTURE] Culture, scaling with Era. Liberating a City grants 20-30 [ICON_CULTURE] Culture, scaling with Era and owned Cities (caps at 6 Cities).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BRATISLAVA', 			'[COLOR_MAGENTA]Heart of Slavic Culture:[ENDCOLOR] [COLOR_YIELD_FOOD]Guilds[ENDCOLOR] gain +2 [ICON_CULTURE] Culture and +1 [ICON_TOURISM] Tourism.  When you are Allied with a [ICON_CITY_STATE] City-State, a random [ICON_GREAT_PEOPLE] [COLOR_CITY_GOLD]Great Person[ENDCOLOR] is given every couple of turns.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BRUSSELS', 			'[COLOR_MAGENTA]Home of the Marsh:[ENDCOLOR] [COLOR_CITY_GREEN]Marshes[ENDCOLOR] gain +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture. Player can build [COLOR_CITY_GREEN]Marshes[ENDCOLOR] (+1 [ICON_FOOD] Food) on coastal tiles.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUCHAREST', 			'[COLOR_MAGENTA]Curtea Veche:[ENDCOLOR] [ICON_GREAT_WORK] Great Works gain +1 [ICON_CULTURE] Culture. Player gains +25% [ICON_TOURISM] Tourism from Historic Events.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUDAPEST', 			'[COLOR_MAGENTA]Pearl of Danube:[ENDCOLOR] [ICON_RES_HORSE] [COLOR_GREY]Horses[ENDCOLOR] gain +1 [ICON_GOLDEN_AGE] Golden Age Point. Player receives +5 [ICON_RES_HORSE] [COLOR_GREY]Horses[ENDCOLOR] (can be traded and they are counted toward Monopolies).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BUENOS_AIRES', 		'[COLOR_MAGENTA]Vox Populi:[ENDCOLOR] +1 [ICON_HAPPINESS_1] Happiness per each unique owned [COLOR_GREY]Luxury Resource[ENDCOLOR].[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_BYBLOS', 				'[COLOR_MAGENTA]Byblos Cedar:[ENDCOLOR] [COLOR_CITY_BROWN]Fishing Boats[ENDCOLOR] gain +1 [ICON_FOOD] Food. Cities gain +5% [ICON_PRODUCTION] Production towards [ICON_WONDER] World Wonders and all Naval Units.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CAHOKIA', 			'[COLOR_MAGENTA]Monks Mound:[ENDCOLOR] Player can build a [COLOR_CITY_BROWN]Mounds[ENDCOLOR] improvement (not adjacent) increasing [ICON_GOLD] Gold, [ICON_RESEARCH] Science, [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Point output. Units gain +15% [ICON_STRENGTH] Defensive CS, when on a [COLOR_CITY_BROWN]Mound[ENDCOLOR].[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CANOSSA', 			'[COLOR_MAGENTA]Ardent Flame in Pious Heart:[ENDCOLOR] [COLOR_YIELD_GOLD]Civil Servants[ENDCOLOR] gain +1 [ICON_PEACE] Faith. +1 [ICON_DIPLOMAT] Great Diplomat Point, if City has a [COLOR_YIELD_FOOD]Temple[ENDCOLOR].[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CAPE_TOWN', 			'[COLOR_MAGENTA]Cape of Good Hope:[ENDCOLOR] +10% [ICON_INTERNATIONAL_TRADE] Trade Route Maximum Range. Finishing a [ICON_INTERNATIONAL_TRADE] Trade Route grants 20-40 [ICON_GOLD] Gold, scaling up with the Destination City''s [ICON_CITIZEN] Population and down with the actual number of active [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CHEVAK', 				'[COLOR_MAGENTA]Amellrutaq:[ENDCOLOR] +1 [ICON_FOOD] Food for every 3 worked [COLOR_CITY_BLUE]Tundra[ENDCOLOR] tiles, or 3 [COLOR_CITY_BLUE]Snow[ENDCOLOR] tiles within workable radius. Cities gain +10% [ICON_CULTURE_LOCAL] Border Growth Rate. Cities gain -1 [ICON_HAPPINESS_3] Unhappiness from Distress.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_CLERMONT', 			'[COLOR_MAGENTA]Crusader''s Zeal:[ENDCOLOR] Newly-produced [COLOR_YIELD_GOLD]Melee[ENDCOLOR] and [COLOR_YIELD_GOLD]Gunpowder Units[ENDCOLOR] gain a random 10-turn promotion after their first combat (out of 6). [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Crusader''s Zeal[ENDCOLOR] promotion (+15% XP [COLOR:255:230:85:255]on Fight[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_COLOMBO', 			'[COLOR_MAGENTA]Home of Cinnamon:[ENDCOLOR] [COLOR_CITY_GREEN]Forests[ENDCOLOR] and [COLOR_CITY_GREEN]Jungles[ENDCOLOR] gain +1 [ICON_GOLD] Gold. Player allied with [COLOR_CYAN]Colombo[ENDCOLOR] heals all his units by 10 HP each time the [ICON_INTERNATIONAL_TRADE] Trade Route originated from a City owned by that Player finishes.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DALI', 				'[COLOR_MAGENTA]Tea Horse Road:[ENDCOLOR] Player can purchase [ICON_CARAVAN] [COLOR_YIELD_GOLD]Caravans[ENDCOLOR] with [ICON_PEACE] Faith. All [ICON_INTERNATIONAL_TRADE] Trade Routes gain +10% [ICON_PEACE] Religious Presure.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DANO', 				'[COLOR_MAGENTA]Tendaalun:[ENDCOLOR] [COLOR_YIELD_FOOD]Shrines[ENDCOLOR] gain +2 [ICON_CULTURE_LOCAL] Border Growth Points. Border expansion grants 3 [ICON_PEACE] Faith, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DJIBOUTI', 			'[COLOR_MAGENTA]Urheimat:[ENDCOLOR] [COLOR_YIELD_FOOD]Granaries[ENDCOLOR] gain +1 [ICON_CULTURE] Culture. Cities gain +100% [ICON_PRODUCTION] Production towards [COLOR_YIELD_GOLD]Settlers[ENDCOLOR]. New Cities gain free [COLOR_YIELD_FOOD]Granary[ENDCOLOR].[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DODOMA', 				'[COLOR_MAGENTA]Abode of Peace:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] International Trade Routes grant +1 [ICON_GOLD] Gold to both: Origin and Destination City. International [ICON_CARGO] Sea Trade Routes generate +1 [ICON_TOURISM] Tourism. [COLOR_YIELD_GOLD]Civilian Naval Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Sail in the Wilderness[ENDCOLOR] promotion (+2[ICON_MOVES]Movement Point).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DOUALA', 				'[COLOR_MAGENTA]Minature Continent:[ENDCOLOR] +1 [ICON_INTERNATIONAL_TRADE] Trade Route. +10% [ICON_PRODUCTION] Production towards [COLOR_YIELD_GOLD]Trade Units[ENDCOLOR][NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FAYA', 				'[COLOR_MAGENTA]Turbulent Independence:[ENDCOLOR] [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Spoils of War[ENDCOLOR] promotion (Unit gains [ICON_RESEARCH] [COLOR:255:230:85:255]on Kill[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FLORENCE', 			'[COLOR_MAGENTA]Cradle of the Renaissance:[ENDCOLOR] [COLOR_CITY_BROWN]Quarries[ENDCOLOR] gain +1 [ICON_CULTURE] Culture. Artists gain +1 [ICON_GOLDEN_AGE] Golden Age Points. Player has 1% chance per turn of spawning the [ICON_GREAT_ARTIST] Great Artist or [ICON_GREAT_ENGINEER] Great Engineer in the Capital.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GENEVA', 				'[COLOR_MAGENTA]L''Escalade:[ENDCOLOR] Cities gain +3% [ICON_GREAT_PEOPLE] Great People Points. Birth of a [ICON_GREAT_PEOPLE] [COLOR_YIELD_GOLD]Great Person[ENDCOLOR] grants 25 [ICON_PEACE] Faith, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GENOA', 				'[COLOR_MAGENTA]La Superba:[ENDCOLOR] Birth of a [ICON_GREAT_PEOPLE] [COLOR_YIELD_GOLD]Great Person[ENDCOLOR] grants 50 [ICON_GOLD] Gold and 15 [ICON_GOLDEN_AGE] Golden Age Points, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GRANADA', 			'[COLOR_MAGENTA]Alcázars:[ENDCOLOR] [COLOR_CITY_BROWN]Forts[ENDCOLOR], [COLOR_CITY_BROWN]Citadels[ENDCOLOR] and [COLOR_CITY_BROWN]Pontoon Bridges[ENDCOLOR] gain +1 [ICON_GREAT_GENERAL] Great General Point. Player gains +10% [ICON_WAR] War Score.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_GWYNEDD', 			'[COLOR_MAGENTA]Cyfraith Hywel:[ENDCOLOR] +10% [ICON_CULTURE] Culture during the [ICON_HAPPINESS_1] WLTKD. +33% [ICON_HAPPINESS_1] WLTKD Length.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HANOI', 				'[COLOR_MAGENTA]Nine-tiered Hierarchy:[ENDCOLOR] Civil Servants gain +1 [ICON_GREAT_GENERAL] Great General Point and +1 [ICON_GREAT_ADMIRAL] Great Admiral Point. Military Units gain [COLOR_WATER_TEXT]Patriotism[ENDCOLOR] promotion (+10%[ICON_STRENGTH]CS [COLOR:255:230:85:255]inside Friendly Territory[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HONDURAS', 			'[COLOR_MAGENTA]Banana Republic:[ENDCOLOR] Resources granted from [ICON_CITY_STATE] City-States count toward Global Monopolies (doesn''t stack with [COLOR_CYAN]Exchange Markets[ENDCOLOR] policy).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_HONG_KONG', 			'[COLOR_MAGENTA]Prosperous:[ENDCOLOR] Cities gain +5% [ICON_FOOD] Growth and +1 [ICON_GOLD] Gold for every 6 [ICON_CITIZEN] Citizens. Each turn there''s a chance that 1 [ICON_CITIZEN] Citizen from 1 Player''s City will migrate to [COLOR_CYAN]Hong Kong[ENDCOLOR] granting 30 [ICON_INFLUENCE] Influence and 100-150 [ICON_GOLD] Gold, scaling with Era and current [ICON_INFLUENCE] Influence level with [COLOR_CYAN]Hong Kong[ENDCOLOR]. Chance of migration starts from 0%, if the City has equal [ICON_CITIZEN] Citizens to [COLOR_CYAN]Hong Kong[ENDCOLOR], and grows by 1% with each [ICON_CITIZEN] Citizen above that number.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_IFE', 				'[COLOR_MAGENTA]Ogbuni:[ENDCOLOR] Training or spawning a [COLOR_YIELD_GOLD]Diplomatic Unit[ENDCOLOR] grants 30 Faith, scaling with Era (doubled for [COLOR_YIELD_GOLD]Great Diplomat[ENDCOLOR]). [COLOR_YIELD_GOLD]Diplomatic Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Iwarefa[ENDCOLOR] promotion (+20 [ICON_INFLUENCE] Influence [COLOR:255:230:85:255]after Diplomatic Mission[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ISKANWAYA', 			'[COLOR_MAGENTA]Kallawaya Healers:[ENDCOLOR] [COLOR_YIELD_FOOD]Aqueducts[ENDCOLOR] gain +1 [ICON_PEACE] Faith. Units gain [COLOR_WATER_TEXT]Qolla Kapachayuh[ENDCOLOR] promotion (Unit [COLOR:255:230:85:255]Heals every turn[ENDCOLOR], if it [COLOR:255:230:85:255]is next to owned Missionary, Holy Site or Mountain[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_JERUSALEM', 			'[COLOR_MAGENTA]Holy Lands:[ENDCOLOR] [COLOR_CITY_BROWN]Holy Sites[ENDCOLOR] gain +1 [ICON_PEACE] Faith. [COLOR_CYAN]Jerusalem[ENDCOLOR] will adopt the Majority Religion of its Ally and gains at the same time permanent +100% Religious Pressure (stays on Capture). [COLOR_CYAN]Jerusalem[ENDCOLOR] has a religious pressure equal to a Holy City. When there''s a change of alliance, new Ally will gain a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] with [COLOR_CYAN]Jerusalem[ENDCOLOR], if the World Congress has been founded.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KABUL', 				'[COLOR_MAGENTA]Paradise on Earth:[ENDCOLOR] Cities gain +0.66 [ICON_CULTURE] Culture for every [COLOR_CITY_BLUE]Mountain[ENDCOLOR] tile within their workable radius. [COLOR_YIELD_GOLD]Land Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Mujahideen[ENDCOLOR] promotion (+25%[ICON_STRENGTH]Defensive CS, if standing next to a Mountain).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KATHMANDU', 			'[COLOR_MAGENTA]Gorkha Kingdom:[ENDCOLOR] Each [ICON_CITY_STATE] City-State Friend grants +1 [ICON_PEACE] Faith and each [ICON_CITY_STATE] City-State Ally grants +1 [ICON_GREAT_GENERAL] Great General Point to all Cities. Player can purchase [COLOR_YIELD_GOLD]Gurkha[ENDCOLOR] unit (unique [COLOR_YIELD_GOLD]Fusilier[ENDCOLOR]) with [ICON_GOLD] Gold.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KIEV', 				'[COLOR_MAGENTA]Stories of Old:[ENDCOLOR] Player can construct [COLOR_YIELD_FOOD]Bylina[ENDCOLOR] ([ICON_GREAT_MUSICIAN]). +5% [ICON_GREAT_MUSICIAN] Great Musicians generation.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KIGALI', 				'[COLOR_MAGENTA]Last True Rwabugiri:[ENDCOLOR] Border expansion grants +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold. Killing an Enemy Unit grants 5 [ICON_CULTURE_LOCAL] Border Growth Points in all Cities. -10% [ICON_WAR] War Weariness in the Empire.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KUALA_LUMPUR', 		'[COLOR_MAGENTA]Muddy Confluence:[ENDCOLOR] [COLOR_CITY_GREEN]River[ENDCOLOR] tiles gain +1 [ICON_GOLD] Gold. Building construction grants 20 [ICON_FOOD] Food. Birth of a [ICON_CITIZEN] Citizen grants 10 [ICON_CULTURE] Culture.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_KYZYL', 				'[COLOR_MAGENTA]Center of Asia:[ENDCOLOR] [COLOR_YIELD_FOOD]Palace[ENDCOLOR] and [COLOR_YIELD_FOOD]Monuments[ENDCOLOR] gain +1 [ICON_RESEARCH] Science. Researching a Technology grants 5-20 [ICON_PRODUCTION] Production in all Cities, scaling up with Era and down with the number of Cities (caps at 8 Cities).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LACONIA', 			'[COLOR_MAGENTA]Agoge:[ENDCOLOR] [COLOR_YIELD_GOLD]Land Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Spartan Discipline[ENDCOLOR] promotion (+15%[ICON_STRENGTH]CS if unit [COLOR:255:230:85:255]is adjacent to another Friendly Unit[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LA_VENTA', 			'[COLOR_MAGENTA]Ceremonial Creations:[ENDCOLOR] Player can build a [COLOR_CITY_BROWN]Colossal Head[ENDCOLOR] improvement on [COLOR_CITY_BLUE]Plains[ENDCOLOR] or [COLOR_CITY_BLUE]Grassland[ENDCOLOR] tiles with [COLOR_CITY_GREEN]Forest[ENDCOLOR] or [COLOR_CITY_GREEN]Jungle[ENDCOLOR] by expending the [ICON_GREAT_ARTIST] [COLOR_YIELD_GOLD]G. Artist[ENDCOLOR], [ICON_GREAT_ENGINEER] [COLOR_YIELD_GOLD]G. Engineer[ENDCOLOR], [ICON_GREAT_SCIENTIST] [COLOR_YIELD_GOLD]G. Scientist[ENDCOLOR] or [ICON_PROPHET] [COLOR_YIELD_GOLD]G. Prophet[ENDCOLOR] incresing the [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, [ICON_GOLDEN_AGE] Golden Age Point, [ICON_GREAT_GENERAL] Great General Point and [ICON_GREAT_ADMIRAL] Great Admiral Point output.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LEVUKA', 				'[COLOR_MAGENTA]Lasakau Sea Warriors:[ENDCOLOR] +1 [ICON_GREAT_GENERAL] Great General Point in the Capital per owned conquered City. [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Destroyers of Bau[ENDCOLOR] promotion (Gain [ICON_FOOD], scaling with Era, when killing Barbarians, clearing Barbarian Encampments (30-75 [ICON_FOOD] Food) or conquering enemy Cities (100-200 [ICON_FOOD] Food)).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_LHASA', 				'[COLOR_MAGENTA]A Place Among the Gods:[ENDCOLOR] Cities gain +0.66 [ICON_PEACE] Faith for every [COLOR_CITY_BLUE]Mountain[ENDCOLOR] tile within their workable radius. The [COLOR_YIELD_FOOD]Potala Palace[ENDCOLOR] World Wonder will be available for construction after the foundation of [COLOR_POSITIVE_TEXT]World Congress[ENDCOLOR]. Constructing the [COLOR_CYAN]Potala Palace[ENDCOLOR] grants a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] with [COLOR_CYAN]Lhasa[ENDCOLOR].[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MALACCA', 			'[COLOR_MAGENTA]Strait Settlements:[ENDCOLOR] [COLOR_GREY]Luxury Resources[ENDCOLOR] gain +1 [ICON_GOLD] Gold. Cities gain +10% [ICON_GREAT_MERCHANT] Great Merchant Modifier. [ICON_GREAT_MERCHANT] Great Merchants'' and [ICON_GREAT_ENGINEER] Great Engineers'' instant abilities gain +10% Yields.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MANAGUA', 			'[COLOR_MAGENTA]Place of the Big Man:[ENDCOLOR] Each currently applied percentage-based Global Monopoly modifier gains an additional +7% bonus.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MANILA', 				'[COLOR_MAGENTA]Pearl of the Orient:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] International Trade Routes gain +5% Yields. Finishing a [ICON_INTERNATIONAL_TRADE] Trade Route grants 25-50 [ICON_FOOD] Food and [ICON_PRODUCTION] Production in the City, scaling up with the Destination City''s [ICON_CITIZEN] Population and down with the actual number of active [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MBANZA_KONGO', 		'[COLOR_MAGENTA]Warrior Queen:[ENDCOLOR] [COLOR_YIELD_GOLD]Land Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Manikongo Glory[ENDCOLOR] promotion (+15%[ICON_STRENGTH]CS [COLOR:255:230:85:255]in Forest, Jungle, Marsh and Flood Plains[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MELBOURNE', 			'[COLOR_MAGENTA]Gold Rush:[ENDCOLOR] [COLOR_CITY_BROWN]Mines[ENDCOLOR] gain +1 [ICON_GOLD] Gold. Cities convert 10% of [ICON_GOLD] Gold into [ICON_FOOD] Food and 5% of [ICON_GOLD] Gold into [ICON_CULTURE_LOCAL] Border Growth Points.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MILAN', 				'[COLOR_MAGENTA]House of Visconti:[ENDCOLOR] Player can construct [COLOR_YIELD_FOOD]Visconti Emissaries[ENDCOLOR] ([ICON_GREAT_ARTIST]). +5% [ICON_GREAT_ARTIST] Great Artists generation.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MOGADISHU', 			'[COLOR_MAGENTA]Maritime Growth:[ENDCOLOR] [COLOR_CITY_BLUE]Oceans[ENDCOLOR] and [COLOR_CITY_GREEN]Flood Plains[ENDCOLOR] gain +1 [ICON_FOOD] Food. +5% [ICON_FOOD] Food during the [ICON_GOLDEN_AGE] Golden Ages. -10% [ICON_GOLDEN_AGE] Golden Age Cost.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MOMBASA', 			'[COLOR_MAGENTA]Thenashara Taifa:[ENDCOLOR] [COLOR_GREY]Bonus Resources[ENDCOLOR] gain +1 [ICON_FOOD] Food. Founding a City grants 40 [ICON_PEACE] Faith, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MONACO', 				'[COLOR_MAGENTA]Banking Haven:[ENDCOLOR] [COLOR_YIELD_FOOD]Markets[ENDCOLOR] and [COLOR_YIELD_FOOD]Banks[ENDCOLOR] gain +1 [ICON_CULTURE_LOCAL] Border Growth Point. -33% [ICON_GOLD] Tile Gold Purchase Cost in all Cities.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MUISCA', 				'[COLOR_MAGENTA]The Golden One:[ENDCOLOR] Capital gains +1 [ICON_GOLD] Gold for its every 3 [ICON_CITIZEN] Citizens and +1 [ICON_GOLD] Gold for every 20 [ICON_CITIZEN] Citizens in your Empire. Border expansion doubled during [ICON_GOLDEN_AGE] Golden Ages and [ICON_HAPPINESS_1] WLTKDs.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MULTAN', 				'[COLOR_MAGENTA]City of Saints:[ENDCOLOR] Birth of a [ICON_CITIZEN] Citizen grants 10 [ICON_PEACE] Faith. Owned [ICON_MISSIONARY] [COLOR_YIELD_GOLD]Missionaries[ENDCOLOR] can spread Religion 1 additional time.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MUSCAT', 				'[COLOR_MAGENTA]Cryptus Portus:[ENDCOLOR] Player gains +50% Modfier for Catching [ICON_SPY] Enemy Spies. Cities with garrisoned units gain +10% [ICON_STRENGTH] Strength. Garrisoned units have no [ICON_GOLD] Gold Maintenance.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_MUTITJULU', 			'[COLOR_MAGENTA]Tjukurpa:[ENDCOLOR] Cities gain +1 [ICON_GOLDEN_AGE] Golden Age Point for every 2 worked [COLOR_CITY_BLUE]Deserts[ENDCOLOR]. [COLOR_WHITE]Natural Wonders[ENDCOLOR] gain +3 [ICON_PEACE] Faith and [COLOR_CITY_BLUE]Deserts[ENDCOLOR] gain +1 [ICON_PEACE] Faith.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_NANMANDOL', 			'[COLOR_MAGENTA]Reef of Heaven:[ENDCOLOR] [COLOR_CITY_BLUE]Oceans[ENDCOLOR] gain +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture. Unit''s death grants 3 [ICON_CULTURE] Culture in all Cities.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_OC_EO', 				'[COLOR_MAGENTA]Lords of the Great Glass River:[ENDCOLOR] Coastal Cities gain +1 [ICON_CULTURE_LOCAL] Border Growth Point. +1 [ICON_HAPPINESS_1] Happiness in Empire for each active International [ICON_CARGO_SHIP] Sea Trade Route.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ODENSO', 				'[COLOR_MAGENTA]Winter War:[ENDCOLOR] [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Lord of the Hunt[ENDCOLOR] promotion (+1[ICON_VIEW_CITY]Sight. +5 HP [COLOR:255:230:85:255]on Heal inside Neutral Territory[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ORMUS', 				'[COLOR_MAGENTA]Jewel of the Ring:[ENDCOLOR] [COLOR_GREY]Luxury Resources[ENDCOLOR] gain +1 [ICON_FOOD] Food. [ICON_INTERNATIONAL_TRADE] International Trade Routes to a [ICON_CITY_STATE] City-State generate +0.4 [ICON_INFLUENCE] Influence per turn (with the target [ICON_CITY_STATE] City-State) per each owned [ICON_INTERNATIONAL_TRADE] Trade Route to a [ICON_CITY_STATE] City-State (caps at +2 [ICON_INFLUENCE] Influence).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PANAMA_CITY', 		'[COLOR_MAGENTA]Panama Canal:[ENDCOLOR] [COLOR_CITY_GREEN]Lakes[ENDCOLOR] gain +1 [ICON_GOLD] Gold. +10% [ICON_CARGO_SHIP] Sea Trade Route Maximum Range. International [ICON_CARGO_SHIP] Sea Trade Routes gain +1 [ICON_GOLD] Gold.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PHANOTEUS', 			'[COLOR_MAGENTA]Gift of Prometheus:[ENDCOLOR] Adds a flat chance to [COLOR_POSITIVE_TEXT]Rig Elections[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Start a Coup[ENDCOLOR] in [ICON_CITY_STATE] City-States. [ICON_SPY] Security Level and speed to complete Spy Events is increased by +20%.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_PRAGUE', 				'[COLOR_MAGENTA]Vysehrad:[ENDCOLOR] [COLOR_YIELD_FOOD]Walls[ENDCOLOR] and [COLOR_YIELD_FOOD]Castles[ENDCOLOR] gain +1 [ICON_CULTURE] Culture. Killed or expended [COLOR_YIELD_GOLD]Missionaries[ENDCOLOR] grant 10-30 [ICON_CULTURE] Culture and twice as much [ICON_PEACE] Faith, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_QUEBEC_CITY', 		'[COLOR_MAGENTA]Fur and Lumber:[ENDCOLOR] [COLOR_CITY_BROWN]Camps[ENDCOLOR] and [COLOR_CITY_BROWN]Lumbermills[ENDCOLOR] gain +1 [ICON_GOLD] Gold. Cutting a [COLOR_CITY_GREEN]Forest[ENDCOLOR] or [COLOR_CITY_GREEN]Jungle[ENDCOLOR] grants additional 10 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold in the City, scaling with Era.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_QUELIMANE', 			'[COLOR_MAGENTA]River of the Good Signs:[ENDCOLOR] [COLOR_CITY_GREEN]River[ENDCOLOR] tiles gain +1 [ICON_GOLDEN_AGE] Golden Age Point. +25% [ICON_GOLDEN_AGE] Golden Age Length[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_RAGUSA', 				'[COLOR_MAGENTA]Maritime Suzerainty:[ENDCOLOR] [COLOR_CITY_BROWN]Embassies[ENDCOLOR] gain +1 [ICON_FOOD] Food. Coastal Cities gain +1 [ICON_SILVER_FIST] Military Supply Cap. Each [ICON_CITY_STATE] City-State Alliance grants +1 [ICON_FOOD] Food to all Cities.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_RIGA', 				'[COLOR_MAGENTA]Hanseatic League:[ENDCOLOR] Cities gain +2% [ICON_FOOD] Food. Cities gain +1% [ICON_PRODUCTION] Production with each [ICON_INTERNATIONAL_TRADE] Trade Route to a [ICON_CITY_STATE] City-State .[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_RISHIKESH', 			'[COLOR_MAGENTA]Himalayan Yogi:[ENDCOLOR] Player can construct an [COLOR_YIELD_FOOD]Ashram[ENDCOLOR] ([ICON_RESEARCH], [ICON_PEACE], [ICON_TOURISM], [ICON_HAPPINESS_3]). Cities on [COLOR_CITY_GREEN]River[ENDCOLOR] gain +2 [ICON_PEACE] Faith.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SAMARKAND', 			'[COLOR_MAGENTA]The Sogd:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] International Trade Routes grant +4 [ICON_GOLD] Gold to both: Origin and Destination City. [COLOR_YIELD_GOLD]Trade Units[ENDCOLOR] gain +2 [ICON_SIGHT] Sight.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SANTO_DOMINGO', 		'[COLOR_MAGENTA]Caribbean''s Gateway:[ENDCOLOR] Each currently applied Happiness or flat-yield Global Monopoly modifier gains an additional +3 bonus.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIDON', 				'[COLOR_MAGENTA]City for Conquest:[ENDCOLOR] Player can gain a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] with [COLOR_CYAN]Sidon[ENDCOLOR] for bullying another [ICON_CITY_STATE] City-State. [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Neighborhood Bully[ENDCOLOR] promotion (+5 HP [COLOR:255:230:85:255]on Heal inside Enemy Territory[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIERRA_LEONE', 		'[COLOR_MAGENTA]Realm of the Free:[ENDCOLOR] [COLOR_YIELD_GOLD]Workers[ENDCOLOR] gain +20% [ICON_WORKER] Construction Modifier. Cities gain -5% [ICON_HAPPINESS_3] Distress. Each [COLOR_YIELD_GOLD]Worker[ENDCOLOR] generates 1 [ICON_CULTURE] Culture.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SINGAPORE', 			'[COLOR_MAGENTA]Developed Wealth:[ENDCOLOR] Cities gain +5% [ICON_PRODUCTION] Production towards [COLOR_YIELD_GOLD]Diplomatic Units[ENDCOLOR]. Expended [COLOR_YIELD_GOLD]Diplomatic Units[ENDCOLOR] grant 30 [ICON_GOLD] Gold, scaling with Era and current [ICON_INFLUENCE] Influence level with with a [ICON_CITY_STATE] City-State, where they were located. [COLOR_YIELD_GOLD]Diplomatic Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Noble[ENDCOLOR] promotion (+15 [ICON_INFLUENCE] Influence to Diplomatic Missions).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SOFIA', 				'[COLOR_MAGENTA]Serdica:[ENDCOLOR] Cities gain +1 [ICON_GREAT_GENERAL] Great General Point and +1 [ICON_GREAT_ADMIRAL] Great Admiral Point per Religion present in this City. [ICON_GREAT_GENERAL] [COLOR_YIELD_GOLD]Great Generals[ENDCOLOR] and [ICON_GREAT_ADMIRAL] [COLOR_YIELD_GOLD]Great Admirals[ENDCOLOR] gain +10% [ICON_STRENGTH] Combat Effectiveness Bonus.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SURREY', 				'[COLOR_MAGENTA]Center of Aviation:[ENDCOLOR] [COLOR_GREY]Strategic Resources[ENDCOLOR] gain +1 [ICON_GREAT_GENERAL] Great General Point. Cities gain +10% [ICON_PRODUCTION] Production towards [COLOR_YIELD_GOLD]Air Units[ENDCOLOR]. [COLOR_YIELD_GOLD]Air Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Magnificence in Flying Machines[ENDCOLOR] promotion (+10%[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]vs Land and Naval Units[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SYDNEY', 				'[COLOR_MAGENTA]Capital Infrastructure:[ENDCOLOR] [ICON_HAPPINESS_1] WLTKD generate +5% [ICON_FOOD] Food. [ICON_HAPPINESS_1] WLTKD start grants 5-20 [ICON_GREAT_ARTIST] Great Artist Points, [ICON_GREAT_ARTIST] Great Writer Points and [ICON_GREAT_ARTIST] Great Musician Points, scaling with Era [NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TAIWAN', 				'[COLOR_MAGENTA]Taiwanese Miracle:[ENDCOLOR] Cities gain +10% [ICON_RESEARCH] Science from the Research Process. Converts 15% of [ICON_RESEARCH] Science into [ICON_FOOD] Food.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_THIMPHU', 			'[COLOR_MAGENTA]Druk Tsendhen:[ENDCOLOR] Cities on [COLOR_CYAN]Hill[ENDCOLOR] gain +3 [ICON_CULTURE] Culture.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TIWANAKU', 			'[COLOR_MAGENTA]Hana Pacha:[ENDCOLOR] Player can build a [COLOR_CITY_BROWN]Sunken Courtyard[ENDCOLOR] improvement on flat [COLOR_CITY_BLUE]Plains[ENDCOLOR], [COLOR_CITY_BLUE]Tundra[ENDCOLOR] or [COLOR_CITY_BLUE]Desert[ENDCOLOR] tiles by expending a [ICON_MISSIONARY] [COLOR_YIELD_GOLD]Missionary[ENDCOLOR] (not adjacent) increasing your [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_TOURISM] Tourism output.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TYRE', 				'[COLOR_MAGENTA]Ruins of the Ancient World:[ENDCOLOR] [ICON_VP_ARTIFACT] [COLOR_CITY_BROWN]Landmarks[ENDCOLOR] gain +2 [ICON_GOLD] Gold. Cities gain +10% Production towards [ICON_VP_ARTIFACT] [COLOR_YIELD_GOLD]Archaeologists[ENDCOLOR]. [ICON_WONDER] World Wonder.[NEWLINE] construction grants 20-40 [ICON_TOURISM] Tourism, scaling with Era and number of [ICON_WONDER] World Wonders in that City.' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_UR', 					'[COLOR_MAGENTA]Cradle of Civilization:[ENDCOLOR] [ICON_TRADE] City Connections generate +2 [ICON_FOOD] Food. Newly founded Cities gain 1 additional [ICON_CITIZEN] Citizen.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VALLETTA', 			'[COLOR_MAGENTA]The Grand Harbor:[ENDCOLOR] Player can construct [COLOR_YIELD_FOOD]The Grand Harbor[ENDCOLOR] ([ICON_FOOD], [ICON_RESEARCH], [ICON_STRENGTH]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VANCOUVER', 			'[COLOR_MAGENTA]Terminal City:[ENDCOLOR] Each City increases [ICON_GOLD] Gold from [ICON_TRADE] City Connections by 3%. -30% [ICON_GOLD] City Connections Gold Maintenance.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VATICAN_CITY', 		'[COLOR_MAGENTA]Conclave:[ENDCOLOR] Expending a [ICON_GREAT_PEOPLE] [COLOR_YIELD_GOLD]Great Person[ENDCOLOR] grants 10 [ICON_INFLUENCE] Influence with all met [ICON_CITY_STATE] City-States. Player can purchase [COLOR_YIELD_GOLD]Swiss Guard[ENDCOLOR] unit (mercenary) with [ICON_GOLD] Gold or [ICON_PEACE] Faith.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VILNIUS', 			'[COLOR_MAGENTA]Athens of the North:[ENDCOLOR] Player can construct [COLOR_YIELD_FOOD]The Gate of Dawn[ENDCOLOR] ([ICON_GREAT_WRITER]). Writers gain +1 [ICON_GOLD] Gold.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WELLINGTON', 			'[COLOR_MAGENTA]Te Whanga-nui-a-Tara:[ENDCOLOR] [COLOR_GREY]Strategic Resources[ENDCOLOR] gain +1 [ICON_FOOD] Food. Player gains additional copies of [COLOR_GREY]Strategic Resource[ENDCOLOR]:[NEWLINE][ICON_BULLET] +1, if he has at least 1 copy and no Monopolies[NEWLINE][ICON_BULLET] +2, if he has a Strategic Monopoly[NEWLINE][ICON_BULLET] +3, if he has a Global Monopoly[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WITTENBERG', 			'[COLOR_MAGENTA]Birth of the Reformation:[ENDCOLOR] Cities gain +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per Religion present in this City. Cities gain -10% [ICON_PEACE] Religious Pressure and -10% [ICON_PEACE] Conversion Resistance. -5% [ICON_HAPPINESS_3] Religious Unrest in all Cities.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_YANGCHENG', 			'[COLOR_MAGENTA]Year of the Animal:[ENDCOLOR] [COLOR_GREY]Animal Resources[ENDCOLOR] gain +1 [ICON_PEACE] Faith. Each Era change grants 70 [ICON_PEACE] Faith, scaling with Era, increased by 30%, if Player entered that Era first, as well as an additional yield reward depending on the randomly chosen animal patron (out of 12).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_YEREVAN', 			'[COLOR_MAGENTA]Sea to Sea Armenia:[ENDCOLOR] [ICON_RES_HORSE] [COLOR_GREY]Horses[ENDCOLOR] gain +1 [ICON_CULTURE] Culture. [COLOR_YIELD_GOLD]Military Units[ENDCOLOR] gain [COLOR_WATER_TEXT]Art of War[ENDCOLOR] promotion (Unit gains [ICON_CULTURE] and [ICON_GOLDEN_AGE] [COLOR:255:230:85:255]on Kill[ENDCOLOR]).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZANZIBAR', 			'[COLOR_MAGENTA]The Spice Islands:[ENDCOLOR] [COLOR_GREY]Luxury Resources[ENDCOLOR] gain +1 [ICON_TOURISM] Tourism. +3 [ICON_HAPPINESS_3] Happiness per 4 [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZURICH', 				'[COLOR_MAGENTA]Banking Establishments:[ENDCOLOR] [COLOR_YIELD_FOOD]Banks[ENDCOLOR] and [COLOR_YIELD_FOOD]Stock Exchanges[ENDCOLOR] gain +2 [ICON_GOLD] Gold. Treasury generates +2% [ICON_GOLD] Gold as interest (caps at 20 [ICON_GOLD] Gold for each Era) per turn.[NEWLINE]' UNION ALL
 -- promotions
-SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO', 				'해적 피난항' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO_HELP', 			'처치한 적의 [ICON_STRENGTH]전투력 100%만큼 [ICON_GOLD] 골드 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_BELGRADE', 					'백색 요새' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_BELGRADE_HELP', 				'체력 +25' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_HANOI', 						'애국심' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_HANOI_HELP', 					'우호 영토 내 [ICON_STRENGTH]전투력 +10%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO', 				'마니콩고의 영광' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO_HELP', 			'숲, 정글, 습지, 범람원 타일에서 전투 시 [ICON_STRENGTH]전투력 보너스 +15%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SIDON', 						'이웃집 불청객' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SIDON_HELP', 					'적 영토 내 군사 유닛의 체력이 매 턴 +5 회복' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_YEREVAN', 					'손자병법' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_YEREVAN_HELP', 				'처치한 적의 [ICON_STRENGTH]전투력 50%만큼 [ICON_CULTURE] 문화 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LACONIA', 					'스파르타의 규율' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LACONIA_HELP', 				'우호 유닛 인접 시 [ICON_STRENGTH]전투력 보너스 +15%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ODENSO', 						'사냥의 군주' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ODENSO_HELP', 				' 군사 유닛의 시야 +1[NEWLINE][ICON_BULLET]중립 지역에서 매 턴 체력 회복 +5[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_AMBRACIA', 					'피로스의 용병' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_AMBRACIA_HELP', 				'지상 주둔군이 [ICON_PRODUCTION]생산 5% 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_DODOMA', 						'황야의 항해' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_DODOMA_HELP', 				'[ICON_STRENGTH]전투력 보너스 +5%, [ICON_MOVES]행동력 +1[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_FAYA', 						'전쟁의 성과' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_FAYA_HELP', 					'처치한 적의 [ICON_STRENGTH]전투력 50%만큼 [ICON_RESEARCH] 과학 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SURREY', 						'장엄한 비행' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SURREY_HELP', 				'해상 및 지상 유닛 대항 시 [ICON_STRENGTH]전투력 보너스 +10%.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT', 					'심판' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT_HELP', 				'전투 경험치 +15%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT1', 					'클레몬트의 축복' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT1_HELP', 				'첫 전투에 따라 임시로 무작위 [ICON_STRENGTH]전투력 보너스 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT2', 					'서두름' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT2_HELP', 				'[ICON_MOVES]이동력 +2. 공격 후 이동 가능' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT3', 					'대동단결' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT3_HELP', 				'우호 유닛 인접 시 [ICON_STRENGTH]전투력 보너스 +20%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT4', 					'충전' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT4_HELP', 				'공격 시 [ICON_STRENGTH]전투력 보너스 +10%. 요새화한 유닛 대항 시 [ICON_STRENGTH]전투력 보너스 +15%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT5', 					'보강' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT5_HELP', 				'방어 시 [ICON_STRENGTH]전투력 보너스 +15%. 공격 후 회복 가능' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT6', 					'하느님께 영광을' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT6_HELP', 				'위대한 장군처럼 인접한 유닛에 [ICON_STRENGTH]전투력 보너스 제공. 이 유닛과 인접한 타일의 모든 유닛은 매 턴 체력 회복 +5' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL', 		'고용된 군대' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL_HELP', 	'전투 경험치 +20%' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LEVUKA', 						'바우 파괴자' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LEVUKA_HELP', 				'야만인 처치 시 [ICON_FOOD] 식량 획득' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AMBRACIA', 					'Mercenaries of Pyrrhus' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AMBRACIA_HELP', 					'Generates +5% [ICON_PRODUCTION] Production when [COLOR_POSITIVE_TEXT]Garrisoned in the City[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO', 				'Pirate Haven' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO_HELP', 				'Military kills generate [ICON_GOLD] Gold equivalent to the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AUCKLAND', 					'Peaceful Resistance' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AUCKLAND_HELP', 					'+1 [ICON_FOOD] Food and +1 [ICON_GOLDEN_AGE] Golden Age Point in the City when Garrisoned.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_BELGRADE', 					'The White Fortress' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_BELGRADE_HELP', 					'+25 Max HP.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT', 					'Crusader''s Zeal' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT_HELP', 					'+15% XP gained from Combat.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT1', 					'Blessing of Clermont' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT1_HELP', 					'Receive a temporary random combat bonus upon the first combat.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT2', 					'Onward with Haste!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT2_HELP', 					'+2 [ICON_MOVES] Moves. Can move after attacking.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT3', 					'United We Stand!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT3_HELP', 					'+20% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]adjacent to a friendly unit[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT4', 					'Charge!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT4_HELP', 					'+10% [ICON_STRENGTH] Attack. +15% [ICON_STRENGTH] against [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT5', 					'Reinforce!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT5_HELP', 					'+15% [ICON_STRENGTH] Defense. Can heal after attacking.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT6', 					'Glory to God!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT6_HELP', 					'Unit awards combat bonus to nearby units as if it is a Great General. This unit and all others in adjacent tiles heal 5 additional HP per turn.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_DODOMA', 						'Sail in the Wilderness' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_DODOMA_HELP', 					'+2 [ICON_MOVES] Movement Points.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_FAYA', 						'Spoils of War' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_FAYA_HELP', 						'Military kills generate [ICON_RESEARCH] Science equivalent to 50% of the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_HANOI', 						'Patriotism' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_HANOI_HELP', 						'+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]inside Friendly Territories[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_IFE', 						'Iwarefa' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_IFE_HELP', 						'+20 [ICON_INFLUENCE] Influence from Diplomatic Missions.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ISKANWAYA', 					'Qolla Kapachayuh' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ISKANWAYA_HELP', 					'Unit automatically Heals 10 HP each turn, if next to owned [COLOR_POSITIVE_TEXT]Missionary[ENDCOLOR], [COLOR_POSITIVE_TEXT]Holy Site[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Mountain[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KABUL', 						'Mujahideen' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KABUL_HELP', 						'+25% [ICON_STRENGTH] Defensive CS.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LACONIA', 					'Spartan Discipline' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LACONIA_HELP', 					'+15% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]adjacent to a Friendly Unit[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LEVUKA', 						'Destroyers of Bau' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LEVUKA_HELP', 					'Gain [ICON_FOOD] for [COLOR_POSITIVE_TEXT]killing Barbarians[ENDCOLOR], [COLOR_POSITIVE_TEXT]taking Barbarian Encampements[ENDCOLOR] and [COLOR_POSITIVE_TEXT]capturing Cities[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO', 				'Manikongo Glory' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO_HELP', 				'+15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR], [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR], [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Flood Plains[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ODENSO', 						'Lord of the Hunt' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ODENSO_HELP', 					'+1 [ICON_VIEW_CITY] Sight and heal an additional 5 HP per turn inside Neutral Territories.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SIDON', 						'Neighborhood Bully' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SIDON_HELP', 						'Heal an additional 5 HP per turn [COLOR_POSITIVE_TEXT]inside Enemy Territories[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SURREY', 						'Magnificence in Flying Machines' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SURREY_HELP', 					'+10% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_YEREVAN', 					'Art of War' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_YEREVAN_HELP', 					'Military kills generate [ICON_CULTURE] Culture equivalent to 50% of the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA', 			'Guardia Svizzera Pontificia' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA_HELP', 			'On Kill heals 10 Damage (if in range of owned City), 30 (if in range of owned Capital) or 40 (if in range of owned Holy City).' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KATZBALGER', 					'Katzbalger' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KATZBALGER_HELP', 				'Unit generates +2 [ICON_PEACE] Faith, +2 [ICON_CULTURE] Culture with [COLOR_CYAN]Radio[ENDCOLOR] and +2 [ICON_TOURISM] Tourism with [COLOR_CYAN]Telecommunications[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL', 		'Sellsword Army' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL_HELP', 		'+20% XP gained from Combat.' UNION ALL
+-- units
+SELECT 'TXT_KEY_UNIT_SWISS_GUARD', 						'Swiss Guard' UNION ALL
+SELECT 'TXT_KEY_UNIT_SWISS_GUARD_STRATEGY', 				'The Swiss Guard is a unique mercenary unit of the Vatican City, located in the tech tree between [COLOR_POSITIVE_TEXT]Free Company[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Foreign Legion[ENDCOLOR]. It can only be purchased (with either [ICON_GOLD] Gold or [ICON_PEACE] Faith) and does move after purchase; though it does not require any policies to do so. The Swiss Guard gains extra [ICON_STRENGTH] Strength each consecutive Era and heals after killing an enemy unit, if it is close to owned City (a little), Capital (more) or Holy City (the most). It also generates yields depending on techs discovered ([COLOR_CYAN]Radio[ENDCOLOR] and [COLOR_CYAN]Telecommunications[ENDCOLOR]). This unit does not obsolete.' UNION ALL
+SELECT 'TXT_KEY_UNIT_SWISS_GUARD_HELP', 					'This unit can only be purchased with [ICON_GOLD] Gold or [ICON_PEACE] Faith (requires an access to [COLOR_CYAN]Vatican City[ENDCOLOR]''s ability).[NEWLINE][NEWLINE]Does not obsolete. Gains additional [ICON_STRENGTH] Strength each consecutive Era. May move immediately after purchase.[NEWLINE][NEWLINE]Unit heals itself after killing an Enemy Unit by value depending on the owned City it is in range of (regular, Capital, Holy City). Generates +2 [ICON_PEACE] Faith, +2 [ICON_CULTURE] Culture after [COLOR_CYAN]Radio[ENDCOLOR] and +2 [ICON_TOURISM] Tourism after [COLOR_CYAN]Telecommunications[ENDCOLOR].' UNION ALL
+SELECT 'TXT_KEY_CIV5_UNIT_SWISS_GUARD', 					'Swiss Guards describe, historically, the mercenaries who from Switzerland sought to serve as bodyguards throughout courts of Europe during the Middle Ages and the Renaissance. Lauded for their enduring loyalty and bravery, Swiss Guards served a wide variety of functions: from ceremonial guards to front-line troops, and were in use by the armies of some of Europe''s greatest powers: including France, Spain and Naples. Although in 1874 the recruitment of Swiss Guards by foreign powers was forbidden by the Swiss Constitution, the Pontifical Swiss Guard that served the Holy See was an exception, and today remains the primary force of the Vatican; responsible for the safety of the Pope and the security of the Apostolic Palace.' UNION ALL
+SELECT 'TXT_KEY_UNIT_GURKHA', 							'Gurkha' UNION ALL
+SELECT 'TXT_KEY_UNIT_GURKHA_STRATEGY', 						'The Gurkha is the Kathmandu''s replacement for the Fusilier. In addition to being unlocked earlier than the Rifleman, the Gurkha gains more experience from fights and has huge handicap against blocked enemy units.' UNION ALL
+SELECT 'TXT_KEY_UNIT_GURKHA_HELP', 							'This unit can only be purchased with [ICON_GOLD] Gold (requires an access to [COLOR_CYAN]Kathmandu[ENDCOLOR]''s ability).[NEWLINE][NEWLINE]Unique Fusilier Unit that may move immediately after purchase, can be trained earlier and does not require [COLOR_POSITIVE_TEXT]Armory[ENDCOLOR] when buying.[NEWLINE][NEWLINE]Unit starts with additional promotions that crush enemy units ([COLOR_POSITIVE_TEXT]Heavy Charge[ENDCOLOR]) and allow gaining mor XP from fights ([COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR]).' UNION ALL
+SELECT 'TXT_KEY_CIV5_UNIT_GURKHA', 							'The Gurkhas are a people native to mountainous Nepal and Gorkhaland region of India. Famed for their bravery, fearlessness and disregard for death, they impressed British military commanders as early as in 1814, during the Gurkha War waged by the East India Company against Nepal. In 1815, even before the war ended, the first regiment of Gurkhas was formed within the British Indian army. Throughout 19th and well into the 20th century, the Gurkhas remained loyal to the British crown, despite wars and numerous Indian rebellions. They fought in both World Wars as a part of the British Army, where they formed fifteen rifle regiments. They were widely admired for their ability to withstand any hardship and feared of their skill with the deadly khukuri knife. Gurkha regiments remain in service to this day.' UNION ALL
 -- improvements
-SELECT 'TXT_KEY_BUILD_MARSH', '습지 복원 시설을 건설합니다.'  UNION ALL
-SELECT 'TXT_KEY_BUILD_MARSH_HELP', '해당 타일을 습지로 바꾸고 습지 복원 시설을 건설할 수 있습니다. [COLOR_POSITIVE_TEXT]브뤼셀[ENDCOLOR]과 동맹 관계를 유지해야 건설할 수 있습니다.'  UNION ALL
-SELECT 'TXT_KEY_IMPROVEMENT_MARSH', '습지 복원 시설' UNION ALL
-SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_MARSH', '어떤 지형에서도 습지를 복원하려면 물이 자연스럽게 흐르도록 하십시오. 만약 물이 얼지 않는다면 설원에도 효과가 있습니다!' UNION ALL
-SELECT 'TXT_KEY_IMPROVEMENT_MARSH_HELP', '브뤼셀과 동맹인 문명만이 습지 복원 사업을 계속할 수 있습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILD_MOUND', '카호키아 마운드를 건설합니다.'  UNION ALL
-SELECT 'TXT_KEY_BUILD_MOUND_HELP', '도심에 인접해 건설하면 [ICON_GOLDEN_AGE]황금기 점수가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 마을에 인접하여 건설하면 [ICON_GOLD]골드 및 [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 동맹 관계가 유지되지 않으면 보너스를 잃습니다. [COLOR_POSITIVE_TEXT]카호키아[ENDCOLOR]와 동맹 관계를 유지해야 건설할 수 있습니다.' UNION ALL
-SELECT 'TXT_KEY_IMPROVEMENT_MOUND', '카호키아 마운드' UNION ALL
-SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_MOUND', '운반된 흙과 점토로 지어진 피라미드입니다.' UNION ALL
-SELECT 'TXT_KEY_IMPROVEMENT_MOUND_HELP', '카호키아와 동맹인 문명만이 이 건축물의 아름다움을 누릴 수 있습니다.' UNION ALL
+	-- marsh
+	SELECT 'TXT_KEY_BUILD_MARSH', 							'Create a Marsh'  UNION ALL
+	SELECT 'TXT_KEY_BUILD_MARSH_HELP', 						'Terraforms the landscape here into the [COLOR_CITY_GREEN]Marsh[ENDCOLOR], while installing an improvement that''ll stabilize it. Requires an access to [COLOR_CYAN]Brussels[ENDCOLOR]'' ability..'  UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_MARSH', 					'Marsh' UNION ALL
+	SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_MARSH', 				'To restore the marshlands on any terrain, just allow water to flow to it naturally. It should even work on snow! If the water doesn''t freeze that is.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_MARSH_HELP', 				'Only with the Alliance of the Brussel people can a civilization continue a restoration project of marshlands.' UNION ALL
+	-- mound
+	SELECT 'TXT_KEY_BUILD_MOUND', 							'Construct a Mound'  UNION ALL
+	SELECT 'TXT_KEY_BUILD_MOUND_HELP', 						'Cannot be built next to another [COLOR_CITY_BROWN]Mound[ENDCOLOR] or on a [COLOR_GREY]Resource[ENDCOLOR]. +1 [ICON_GOLDEN_AGE] Golden Age Point, if next to a City. Adjacent [COLOR_CITY_BROWN]Villages[ENDCOLOR] and [COLOR_CITY_BROWN]Towns[ENDCOLOR] gain +1 [ICON_GOLD] Gold. Requires an access to [COLOR_CYAN]Cahokia[ENDCOLOR]''s ability to be finished.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_MOUND', 					'Mound' UNION ALL
+	SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_MOUND', 				'It is a pyramid built of transported soil and clay.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_MOUND_HELP', 				'Only with the Alliance of the Cahokia people allow a civilization enjoy such a beauty of a structure.' UNION ALL
+	-- sunken courtyard
+	SELECT 'TXT_KEY_BUILD_SUNK_COURT', 						'Construct a Sunken Courtyard'  UNION ALL
+	SELECT 'TXT_KEY_BUILD_SUNK_COURT_HELP', 				'Cannot be built next to another [COLOR_CITY_BROWN]Sunken Courtyard[ENDCOLOR] or on a [COLOR_GREY]Resource[ENDCOLOR], and can only be built on flat [COLOR_CITY_BLUE]Plains[ENDCOLOR], [COLOR_CITY_BLUE]Tundra[ENDCOLOR] or [COLOR_CITY_BLUE]Desert[ENDCOLOR] tiles. +1 [ICON_RESEARCH] Science, if next to a City and +1 [ICON_TOURISM] Tourism with [COLOR_CYAN]Archaeology[ENDCOLOR]. Adjacent [COLOR_CITY_BLUE]Mountains[ENDCOLOR] gain +1 [ICON_CULTURE] Culture and +1 [ICON_PEACE] Faith. Requires an access to [COLOR_CYAN]Tianaku[ENDCOLOR]''s ability to be finished.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_SUNK_COURT', 				'Sunken Courtyard' UNION ALL
+	SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_SUNK_COURT', 			'At its height, Tiwanaku was home to up to 40,000 people and was centered around a ceremonial core featuring numerous buildings, platforms, and courtyards, the largest and most important being the Semi-subterranean Court, the Kalasasaya and Putuni Complex (a combination of raised platforms and courtyards), the Akapana (a complicated mound structure believed to be a recreation of the Quimsachata mountains), and a later temple complex, the Pumapunku. [NEWLINE]The sunken court style of building is found in many of the archaeological sites which pre-date the founding of Tiwanaku in the regions surrounding Lake Titicaca such as Pucara and Chiripa, but the Semi-subterranean Court is the largest found to date. Its increased size was likely a statement of growing political power by the emerging Tiwanaku polity. Completed between 300–400 C.E., it is estimated to be the earliest monumental stone building constructed in the central ceremonial area. [NEWLINE]The central stones on three of the walls (north, east, and west) of the Semi-subterranean Court mark viewing points for various astronomical events, such as solstice and equinox sunrises and sunsets, the rising and setting of important stars, and even point the way to the celestial South Pole, the pivot of the southern hemisphere. Those stones were auxiliary for participants of religious rituals to orient themselves for the appropriate celestial event.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_SUNK_COURT_HELP', 			'Only with the Alliance of the Tiwanaku people allow a civilization enjoy such a beauty of a structure.' UNION ALL
+	-- colossal head
+	SELECT 'TXT_KEY_BUILD_BIG_HEAD', 						'Construct a Colossal Head'  UNION ALL
+	SELECT 'TXT_KEY_BUILD_BIG_HEAD_HELP', 					'Cannot be build on a [COLOR_GREY]Resource[ENDCOLOR] and can only be built on [COLOR_CITY_BLUE]Plains[ENDCOLOR] or [COLOR_CITY_BLUE]Grassland[ENDCOLOR] tiles with [COLOR_CITY_GREEN]Forest[ENDCOLOR] or [COLOR_CITY_GREEN]Jungle[ENDCOLOR]. +1 [ICON_GOLDEN_AGE] Golden Age Point, if next to a City, [ICON_RES_STONE] [COLOR_GREY]Stone[ENDCOLOR] or [ICON_RES_MARBLE] [COLOR_GREY]Marble[ENDCOLOR]. +3 [ICON_GOLDEN_AGE] Golden Age Points with [COLOR_CYAN]Machinery[ENDCOLOR], +2 [ICON_RESEARCH] Science with [COLOR_CYAN]Architecture[ENDCOLOR] and +2 [ICON_PRODUCTION] Production with [COLOR_CYAN]Scientific Theory[ENDCOLOR]. +1 [ICON_GOLDEN_AGE] Golden Age Point, +1 [ICON_GREAT_GENERAL] Great General Point and +1 [ICON_GREAT_ADMIRAL] Great Admiral Point, if there are 2 adjacent [COLOR_CITY_BROWN]Colossal Heads[ENDCOLOR]. Adjacent [COLOR_CITY_BROWN]Farms[ENDCOLOR], [COLOR_CITY_BROWN]Mines[ENDCOLOR] and [COLOR_CITY_BROWN]Quarries[ENDCOLOR] gain +1 [ICON_PRODUCTION] Production. Requires an access to [COLOR_CYAN]La Venta[ENDCOLOR]''s ability to be finished.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_BIG_HEAD', 					'Colossal Head' UNION ALL
+	SELECT 'TXT_KEY_CIV5_IMPROVEMENTS_BIG_HEAD', 			'The stone head sculptures of the Olmec civilization (1200 BCE - 400 BCE) are amongst the most mysterious and debated artefacts from the ancient world. Seventeen monumental stone representations of human heads sculpted from large basalt boulders have been unearthed in the region to date. The heads date from at least before 900 BCE and are a distinctive feature of the Olmec civilization. They can be nearly 3 metres high, 4.5 metres in circumference (9.8 feet, 14.7 feet) and average around 8 tons in weight. All portray mature men with fleshy cheeks, flat noses, and slightly crossed eyes. However, none of the heads are alike, and each boasts a unique headdress, which suggests they represent specific individuals. [NEWLINE]The Olmec brought these boulders from the Sierra de los Tuxtlas mountains of Veracruz. Given that the extremely large slabs of stone used in their production were transported over large distances, requiring a great deal of human effort and resources, it is thought that the monuments represent portraits of powerful individual Olmec rulers, perhaps carved to commemorate their deaths. The heads were arranged in either lines or groups at major Olmec centers, but the method and logistics used to transport the stone to the sites remain uncertain, presumably using huge balsa river rafts wherever possible and log rollers on land.' UNION ALL
+	SELECT 'TXT_KEY_IMPROVEMENT_BIG_HEAD_HELP', 			'Only with the Alliance of the La Venta people allow a civilization enjoy such a beauty of a structure.' UNION ALL
 -- dummy buildings
-SELECT 'TXT_KEY_BUILDING_MARITIME', 					'건축가' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MARITIME', 					'(Mar) Builders' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MARITIME_HELP', 				'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MARITIME_FRIENDLY', 			'수확자' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MARITIME_FRIENDLY', 			'(Mar-F) Harvesters' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MARITIME_FRIENDLY_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MARITIME_NEUTRAL', 			'보안 창고' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MARITIME_NEUTRAL', 			'(Mar-N) Secured Warehouse' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MARITIME_NEUTRAL_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MARITIME_HOSTILE', 			'탐욕스런 수집가' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MARITIME_HOSTILE', 			'(Mar-H) Selfish Gatherers' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MARITIME_HOSTILE_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MERCANTILE', 					'무역 센터' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MERCANTILE', 					'(Mer) Trade Center' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MERCANTILE_HELP', 				'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MERCANTILE_FRIENDLY', 			'황금의 도시' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MERCANTILE_FRIENDLY', 			'(Mer-F) Golden City' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MERCANTILE_FRIENDLY_HELP', 	'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MERCANTILE_NEUTRAL', 			'그림자 의회' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MERCANTILE_NEUTRAL', 			'(Mer-N) Shadow Council' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MERCANTILE_NEUTRAL_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MERCANTILE_HOSTILE', 			'자유 도시' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MERCANTILE_HOSTILE', 			'(Mer-H) Free City' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MERCANTILE_HOSTILE_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CULTURED', 					'학습의 장' UNION ALL
+SELECT 'TXT_KEY_BUILDING_CULTURED', 					'(Cul) Center of Learning' UNION ALL
 SELECT 'TXT_KEY_BUILDING_CULTURED_HELP', 				'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CULTURED_FRIENDLY', 			'열린 대학' UNION ALL
+SELECT 'TXT_KEY_BUILDING_CULTURED_FRIENDLY', 			'(Cul-F) Open University' UNION ALL
 SELECT 'TXT_KEY_BUILDING_CULTURED_FRIENDLY_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CULTURED_NEUTRAL', 			'후원자' UNION ALL
+SELECT 'TXT_KEY_BUILDING_CULTURED_NEUTRAL', 			'(Cul-N) Patronage' UNION ALL
 SELECT 'TXT_KEY_BUILDING_CULTURED_NEUTRAL_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CULTURED_HOSTILE', 			'은둔 법원' UNION ALL
+SELECT 'TXT_KEY_BUILDING_CULTURED_HOSTILE', 			'(Cul-H) Recluse Court' UNION ALL
 SELECT 'TXT_KEY_BUILDING_CULTURED_HOSTILE_HELP', 		'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS', 					'신앙의 중심' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HELP', 				'종교적 압력 +33%,  [ICON_CULTURE_LOCAL] 국경 확장 점수 -10.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_FRIENDLY', 			'열린 정신' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_FRIENDLY_HELP', 		'[ICON_PEACE] 개종 저항 -25%. 우호적인 플레이어의 영토에 5% 확률로 선교사가 나타날 수 있음.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_NEUTRAL', 			'탁발 수도회' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_NEUTRAL_HELP', 		' 이 도시국가 내 신자가 한 명 이상인 종교의 종류 하나당 [ICON_PRODUCTION] 생산력 +3.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HOSTILE', 			'유일한 진리' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HOSTILE_HELP', 		'[ICON_PEACE] 개종 저항, [ICON_PEACE] 종교 압력 +25%.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILITARISTIC', 				'요새' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS', 					'(Rel) Center of Faith' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HELP', 				'' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_FRIENDLY', 			'(Rel-F) Open Mind' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_FRIENDLY_HELP', 		'' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_NEUTRAL', 			'(Rel-N) Medicant Orders' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_NEUTRAL_HELP', 		'' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HOSTILE', 			'(Rel-H) One Truth' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RELIGIOUS_HOSTILE_HELP', 		'' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILITARISTIC', 				'(Mil) Fortress' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MILITARISTIC_HELP', 			'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILITARISTIC_FRIENDLY', 		'용병 허브' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILITARISTIC_FRIENDLY', 		'(Mil-F) Mercenary Hub' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MILITARISTIC_FRIENDLY_HELP', 	'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILITARISTIC_NEUTRAL', 		'고용된 군대' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILITARISTIC_NEUTRAL', 		'(Mil-N) Sellsword Army' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MILITARISTIC_NEUTRAL_HELP', 	'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILITARISTIC_HOSTILE', 		'숨은 용' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILITARISTIC_HOSTILE', 		'(Mil-H) Hermit Dragon' UNION ALL
 SELECT 'TXT_KEY_BUILDING_MILITARISTIC_HOSTILE_HELP', 	'' UNION ALL
-SELECT 'TXT_KEY_BUILDING_BYBLOS', '레바논 삼나무 무역 회사' UNION ALL
-SELECT 'TXT_KEY_BUILDING_BYBLOS_HELP', '오아시스, 호수, 어선의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CAPE_TOWN', '희망봉' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CAPE_TOWN_HELP', '[ICON_INTERNATIONAL_TRADE]교역로 범위가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. [ICON_INTERNATIONAL_TRADE]교역로가 끝나는 도시의 [ICON_CITIZEN]시민 수에 비례하여 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]20~40[ENDCOLOR] 증가합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_GENEVA', '성피에르 성당' UNION ALL
-SELECT 'TXT_KEY_BUILDING_GENEVA_HELP', '[ICON_CITIZEN]시민 5명마다 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]제네바[ENDCOLOR]와 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_HONG_KONG', '국가 번영 위원회' UNION ALL
-SELECT 'TXT_KEY_BUILDING_HONG_KONG_HELP', '[ICON_CITIZEN]시민 6명마다 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]홍콩[ENDCOLOR]과 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KABUL', '지상 낙원' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KABUL_HELP', '도시 3타일 이내의 산 타일 1개마다[ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]0.66[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]카불[ENDCOLOR]과 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KATHMANDU', '더 마운틴' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KATHMANDU_HELP', '도시 3타일 이내의 산 타일 1개마다 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]0.66[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]카트만두[ENDCOLOR]와 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RAGUSA', '해양 식민 총독부' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RAGUSA_HELP', '동맹인 도시 국가가 제공하는 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]라구사[ENDCOLOR]와 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RIGA', '라트비아 상공회의소' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RIGA_HELP', '[ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]3%[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]리가[ENDCOLOR]와 동맹 관계를 유지해야 합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_SAMARKAND', '소그드' UNION ALL
-SELECT 'TXT_KEY_BUILDING_SAMARKAND_HELP', '[ICON_INTERNATIONAL_TRADE]국제 교역로의 [ICON_GOLD]골드가 [COLOR_YELLOW]4[ENDCOLOR] 증가합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CHEVAK', '[ICON_CITY_STATE]알래스카 국립야생보호구역' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CHEVAK_HELP', '툰드라 타일 4개마다 또는 설원 타일 3개마다 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_QUELIMANE', '자연보호기금' UNION ALL
-SELECT 'TXT_KEY_BUILDING_QUELIMANE_HELP', '강 타일에서 [ICON_GOLDEN_AGE]황금기 점수를 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 제공합니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_TAIWAN', 						'대만의 기적' UNION ALL
-SELECT 'TXT_KEY_BUILDING_TAIWAN_HELP', 					'연구 협정의  [ICON_RESEARCH]과학 +10%.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KIEV_2', 						'옛 이야기' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KIEV_2_HELP', 					'[ICON_GREAT_MUSICIAN] 위대한 음악가 생성 +5%' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN_2', 						'비스콘티 가문' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN_2_HELP', 				'[ICON_GREAT_ARTIST] 위대한 예술가 생성 +5%' UNION ALL
-SELECT 'TXT_KEY_BUILDING_OC_EO', 						'위대한 글래스 강의 군주들' UNION ALL
-SELECT 'TXT_KEY_BUILDING_OC_EO_HELP', 					' 해안 도시의 [ICON_INTERNATIONAL_TRADE] 교역로에서 [ICON_CULTURE_LOCAL]영토 확장 점수 +1' UNION ALL
-SELECT 'TXT_KEY_BUILDING_OC_EO_2', 						'위대한 글래스 강의 군주들' UNION ALL
-SELECT 'TXT_KEY_BUILDING_OC_EO_2_HELP', 				'해안 도시의 [ICON_INTERNATIONAL_TRADE] 교역로에서 [ICON_HAPPINESS_1] 행복 +1' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CLERMONT', 					'클레몬트의 축복' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CLERMONT_HELP', 				'첫 전투에 따라 임시로 무작위 [ICON_STRENGTH]전투력 보너스 제공' UNION ALL
-SELECT 'TXT_KEY_BUILDING_THIMPHU', 						'전룡의 왕국' UNION ALL
-SELECT 'TXT_KEY_BUILDING_THIMPHU_HELP', 				'언덕 위 도시에서 +3 [ICON_CULTURE] 문화' UNION ALL
-SELECT 'TXT_KEY_BUILDING_THIMPHU_2', 					'전룡의 왕국' UNION ALL
-SELECT 'TXT_KEY_BUILDING_THIMPHU_2_HELP', 				'도시 [ICON_CULTURE] 문화의 10%가 [ICON_STRENGTH] 방어력으로 전환' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ANDORRA', 						'피레네 영주' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ANDORRA_HELP', 				'산 근처 도시의 [ICON_HAPPINESS_3] 무료 -10%' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ANDORRA_2', 					'피레네 영주' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ANDORRA_2_HELP', 				'일할 수 있는 범위의 산마다 +1 [ICON_TOURISM] 관광.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CANOSSA', 						'경건한 마음속의 열렬한 불꽃' UNION ALL
-SELECT 'TXT_KEY_BUILDING_CANOSSA_HELP', 				'공무원 전문가에 신앙 +1. 사원이 있는 도시에 위대한 외교관 포인트 +1' UNION ALL
--- regular buildings`
-SELECT 'TXT_KEY_BUILDING_KIEV', '빌리나' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KIEV_HELP', '걸작 음악 슬롯을 제공합니다. [COLOR_POSITIVE_TEXT]키예프[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN', '비스콘티 저택' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN_HELP', '걸작 예술품 슬롯을 제공합니다. 반드시 [COLOR_POSITIVE_TEXT]밀란[ENDCOLOR]과 동맹 관계를 유지해야 합니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VALLETTA', '그랜드 하버' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VALLETTA_HELP', '[COLOR_POSITIVE_TEXT]발레타[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 도시 주변에 어선이 건설된 해양 자원이 있어야 합니다. 동맹 관계가 유지되지 않으면 산출량이 사라집니다.모든 해상 유닛의 경험치가 [COLOR_POSITIVE_TEXT]15[ENDCOLOR] 증가합니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VILNIUS', '여명의 문' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VILNIUS_HELP', '걸작 문학 슬롯을 제공합니다. [COLOR_POSITIVE_TEXT]빌뉴스[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH1', '성 파트리치오' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH1_HELP', '무료에서 오는 [ICON_HAPPINESS_3]불행 감소 [COLOR_POSITIVE_TEXT]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 동맹 관계가 유지되지 않으면 문화 보너스가 사라집니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH2', '성 베니뇨' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH2_HELP', '문맹에서 오는 [ICON_HAPPINESS_3]불행 감소 [COLOR_POSITIVE_TEXT]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 동맹 관계가 유지되지 않으면 과학 보너스가 사라집니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH3', '성 세쿤디누스' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH3_HELP', '빈곤에서 오는 [ICON_HAPPINESS_3]불행 감소 [COLOR_POSITIVE_TEXT]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 동맹 관계가 유지되지 않으면 골드 보너스가 사라집니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH4', '성 첼레스티노' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH4_HELP', '곤경에서 오는 [ICON_HAPPINESS_3]불행 감소 [COLOR_POSITIVE_TEXT]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 동맹 관계가 유지되지 않으면 식량/생산 보너스가 사라집니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_JERUSALEM', 					'성스러운 도시' UNION ALL
-SELECT 'TXT_KEY_BUILDING_JERUSALEM_HELP', 				'동맹의 대중 종교를 채택한 후 건설됩니다.[NEWLINE][NEWLINE]이 도시가 성도가 됩니다. 많은 사람들이 그들의 종교를 위해 이 도시를 순례했습니다. [NEWLINE][NEWLINE][ICON_PEACE] 종교 압력 +100%' UNION ALL
+-- regular buildings
+SELECT 'TXT_KEY_BUILDING_ARMAGH1', 						'Naomh Gaelach' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH1_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_CULTURE] Culture bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Boredom.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH2', 						'Naomh Breandán' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH2_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_RESEARCH] Science bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Illiteracy.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH3', 						'Naomh Pádraig' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH3_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_GOLD] Gold bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Poverty.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH4', 						'Naomh Bríd' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH4_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_FOOD] Food and [ICON_PRODUCTION] Production bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Distress.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_JERUSALEM', 					'Holy City' UNION ALL
+SELECT 'TXT_KEY_BUILDING_JERUSALEM_HELP', 				'Built after adopting Majority Religion of its Ally.[NEWLINE][NEWLINE]This city becomes a Holy City. Too many have made the pilgrimage to this city for their religion.[NEWLINE][NEWLINE]+100% [ICON_PEACE] Religious Pressure.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_KIEV', 						'Bylina' UNION ALL
+SELECT 'TXT_KEY_BUILDING_KIEV_HELP', 					'Requires an access to [COLOR_CYAN]Kyiv[ENDCOLOR]''s ability. +2 [ICON_GREAT_MUSICIAN]; +1 Musician Slot.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILAN', 						'Visconti Emissary' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILAN_HELP', 					'Requires an access to [COLOR_CYAN]Milan[ENDCOLOR]''s ability. +2 [ICON_GREAT_ARTIST]; +1 Artist Slot.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VILNIUS', 						'The Gate of Dawn' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VILNIUS_HELP', 				'Requires an access to [COLOR_CYAN]Vilnius[ENDCOLOR]''s ability. +2 [ICON_GREAT_WRITER]; +1 Writer Slot.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RISHIKESH', 					'Ashram' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RISHIKESH_HELP', 				'Requires an access to [COLOR_CYAN]Rishikesh[ENDCOLOR]''s ability. +1 [ICON_PEACE] Faith and +1 [ICON_TOURISM] for every Mountain tile within their workable radius. -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, Urbanization and Boredom.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VALLETTA', 					'The Grand Harbor' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VALLETTA_HELP', 				'City must have a Fishing Boat resource improved and Player must have an access to [COLOR_CYAN]Valletta[ENDCOLOR]''s ability. +2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science (lost without the Alliance). +15 XP to all newly trained Naval Units. +25 City HP.' UNION ALL
 -- world wonders
-SELECT 'TXT_KEY_BUILDING_LHASA', '포탈라 궁' UNION ALL
-SELECT 'TXT_KEY_BUILDING_LHASA_HELP', '[ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. 추가 대표단 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]을 확보합니다. 세계 의회가 열릴 때까지 [COLOR_POSITIVE_TEXT]라사[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 동맹 관계가 유지되지 않으면 산출량이 절반으로 감소합니다. 파괴될 수 없습니다.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_LHASA_QUOTE', '[NEWLINE][TAB][TAB]"내가 포탈라 궁의 옥상에 처음 발을 디뎠을 때, 이전에 느껴보지 못했고 이후로도 느껴보지 못한 신기한 느낌을 받았다. 내가 방문해보지 않은 무슨 의식의 차원 같은, 마치 내 존재의 옥상에 발을 디딘 것 같았다."[NEWLINE] – 피코 아이어';
----------------------------------------------------
+SELECT 'TXT_KEY_BUILDING_LHASA', 						'Potala Palace' UNION ALL
+SELECT 'TXT_KEY_BUILDING_LHASA_HELP', 					'+1 and +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food. Grants 1 additional delegate in the World Congress. Requires an access to [COLOR_CYAN]Lhasa[ENDCOLOR]''s ability and an active session of the [COLOR_POSITIVE_TEXT]World Congress[ENDCOLOR]. Yield modifiers halved without the Alliance. Can never be destroyed.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_LHASA_QUOTE', 					'[NEWLINE]"The first time I stepped onto the rooftop of the Potala Palace, I felt, as never before or since, as if I were stepping onto the rooftop of my being; onto some dimension of consciousness that I''d never visited before."[NEWLINE] – Pico Iyer[NEWLINE]';
+--==========================================================================================================================
+-- COMPATIBLITY
+--==========================================================================================================================
+-- POTALA PALACE - More Wonders
+UPDATE Language_ko_KR
+SET Text = '[COLOR_YIELD_FOOD]Potala Palace[ENDCOLOR] depends strongly on alliance with [COLOR_CYAN]Lhasa[ENDCOLOR] (+10%[ICON_FOOD]; +10%[ICON_CULTURE]; halved when not allied with [COLOR_CYAN]Lhasa[ENDCOLOR]). Ties bonds between these two countries ([COLOR_YIELD_GOLD]Sphere of Influence[ENDCOLOR] over [COLOR_CYAN]Lhasa[ENDCOLOR]) using special diplomatic techniques (+1[ICON_DIPLOMAT] League Vote).'
+WHERE Tag = 'TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-HELP' AND Value= 1) AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='UCS-MW' AND Value= 1);
+
+UPDATE Language_ko_KR SET Text = REPLACE(Text, 'Requires and alliance with [COLOR_POSITIVE_TEXT]Lhasa[ENDCOLOR] and an active session of the [COLOR_POSITIVE_TEXT]World Congress[ENDCOLOR]. ', '') WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-HELP' AND Value= 0) AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='UCS-MW' AND Value= 1);
+
+INSERT INTO Language_ko_KR 
+			(Tag,										Text) 
+SELECT		'TXT_KEY_BUILDING_LHASA_HELP_CUT',			Text
+FROM Language_ko_KR WHERE Tag = 'TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='UCS-MW' AND Value= 1);
+				
+UPDATE Language_ko_KR SET Text = 'Special: [COLOR_CYAN]Lhasa CS Ally[ENDCOLOR] and an [COLOR_CYAN]active session of WC[ENDCOLOR].[NEWLINE][NEWLINE]'||Text WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='UCS-MW' AND Value= 1);
+--============================================--
+-- VP FIXES (copy from MW)
+--============================================--
+-- additional combat classes for promotions
+INSERT OR REPLACE INTO Language_ko_KR 
+			(Tag,										Text) 
+VALUES		('TXT_KEY_UNITCOMBAT_SPECIAL_PEOPLE',		'Great People'),
+			('TXT_KEY_UNITCOMBAT_SPACESHIP_PART',		'Space Parts'),
+			('TXT_KEY_UNITCOMBAT_MISSILE',				'Missiles'),
+			('TXT_KEY_UNITCOMBAT_ARCHAEOLOGIST',		'Archaeologists');
