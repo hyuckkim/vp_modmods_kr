@@ -162,7 +162,7 @@ SELECT 'TXT_KEY_CIV5_WOOTEI_NIICIE_TEXT', 					'약 3,000년 전, 아라파호�
 -- abilities
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ADEJE', 				'[COLOR_MAGENTA]베네스머:[ENDCOLOR] 언덕에 [ICON_RES_DOGO_CANARIO] [COLOR_GREY]도고 까나리오[ENDCOLOR] 배치 가능 (인접 불가, [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙 제공)[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ALMATY', 				'[COLOR_MAGENTA]알마투:[ENDCOLOR] [ICON_TRADE] 도시 연결 및 [ICON_CARAVAN] 국제 교역로의 [ICON_RESEARCH] 과학 +1. 두려움 상태인 [ICON_CITY_STATE] 도시 국가에서 매 턴 [ICON_INFLUENCE] 영향력 +1.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AMBRACIA', 			'[COLOR_MAGENTA]피로스 전쟁:[ENDCOLOR] [ICON_WAR] 군사적 [ICON_CITY_STATE] 도시 국가의 선물 속도 +10%. [COLOR_YIELD_GOLD]지상 군사 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]피로스의 용병[ENDCOLOR] 승급을 얻음 ([COLOR:255:230:85:255]지상에 주둔 시 [ENDCOLOR] [ICON_PRODUCTION]+5%).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_AMBRACIA', 			'[COLOR_MAGENTA]피로스 전쟁:[ENDCOLOR] [ICON_WAR] 군사적 [ICON_CITY_STATE] 도시 국가의 선물 속도 +10%. [COLOR_YIELD_GOLD]지상 군사 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]피로스의 용병[ENDCOLOR] 승급을 얻음 ([COLOR:255:230:85:255]도시에 주둔 시 [ENDCOLOR] [ICON_PRODUCTION]+5%).[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANDORRA', 			'[COLOR_MAGENTA]피레네 파레아쥬:[ENDCOLOR]작업 가능한 영역의 모든 [COLOR_CITY_BLUE]산[ENDCOLOR] 타일이 [ICON_TOURISM] 관광 +1. [COLOR_CITY_BLUE]산[ENDCOLOR] 근처 도시의 [ICON_HAPPINESS_3] 무료 -10%.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTANANARIVO', 		'[COLOR_MAGENTA]리베르탈리아:[ENDCOLOR] 모든 야만인 주둔지를 볼 수 있음. 유닛에게 [COLOR_WATER_TEXT]해적의 천국[ENDCOLOR] 승급 부여. ([COLOR:255:230:85:255]처치[ENDCOLOR] 시 [ICON_GOLD] 골드 획득)[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ANTWERP', 			'[COLOR_MAGENTA]경제적 영향력:[ENDCOLOR] 상인의 [ICON_GOLD] 골드 +1 [ICON_GOLD] 구매 비용 -10%.[NEWLINE]' UNION ALL
@@ -187,7 +187,7 @@ SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_COLOMBO', 			'[COLOR_MAGENTA]계피의 고장:
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DALI', 				'[COLOR_MAGENTA]차마고도:[ENDCOLOR] [ICON_PEACE] 신앙으로 [ICON_CARAVAN] [COLOR_YIELD_GOLD]대상[ENDCOLOR] 구매 가능. [ICON_INTERNATIONAL_TRADE] 교역로에서 [ICON_PEACE] 종교 압력 +10%.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DANO', 				'[COLOR_MAGENTA]텐달룬:[ENDCOLOR] [COLOR_YIELD_FOOD]성소[ENDCOLOR]의 [ICON_CULTURE_LOCAL] 국경 확장 점수 +2. 모든 도시의 [ICON_CULTURE] 국경 확장 비용 -10%. 국경이 확장될 때 [ICON_PEACE] 신앙 3[COLOR:105:105:105:255](시대별 보정)[ENDCOLOR][NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DJIBOUTI', 			'[COLOR_MAGENTA]원향:[ENDCOLOR] [COLOR_YIELD_FOOD]곡창[ENDCOLOR]의 [ICON_CULTURE] 문화 +1. [COLOR_YIELD_GOLD]개척자[ENDCOLOR] 생산 시  [ICON_PRODUCTION] 생산 +80%,  [COLOR_YIELD_FOOD]곡창[ENDCOLOR] 생산 시 생산 +100%.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DODOMA', 				'[COLOR_MAGENTA]평화의 보금자리:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] 국제 교역로가 출발 도시와 목표 도시 모두에 [ICON_GOLD] 골드 +1. 국제 해양 교역로의 [ICON_TOURISM] 관광 +1. [COLOR_YIELD_GOLD]민간 해양 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]광야 항해[ENDCOLOR] 승급을 얻음. ([ICON_MOVES] 행동력 +2)[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DODOMA', 				'[COLOR_MAGENTA]평화의 보금자리:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] 국제 교역로가 출발 도시와 목표 도시 모두에 [ICON_GOLD] 골드 +1. 국제 해양 교역로의 [ICON_TOURISM] 관광 +1. [COLOR_YIELD_GOLD]민간 해양 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]광야 항해[ENDCOLOR] 승급을 얻음. ([ICON_MOVES] 이동력 +2)[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_DOUALA', 				'[COLOR_MAGENTA]작은 대륙:[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] 교역로 +1. [COLOR_YIELD_GOLD]교역 유닛[ENDCOLOR] 생산 시 생산 +10%[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FAYA', 				'[COLOR_MAGENTA]격동의 독립:[ENDCOLOR] [COLOR_YIELD_GOLD]군사 유닛[ENDCOLOR]은 [COLOR_WATER_TEXT]전쟁의 수확[ENDCOLOR] 승급을 얻음. ([COLOR:255:230:85:255]유닛[ENDCOLOR] 처치 시 [ICON_RESEARCH] 과학 획득)[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_FLORENCE', 			'[COLOR_MAGENTA]르네상스의 요람:[ENDCOLOR] [COLOR_CITY_BROWN]채석장[ENDCOLOR]의 [ICON_CULTURE] 문화 +1. 예술가의 [ICON_GOLDEN_AGE] 황금기 점수 +1. 매 턴 수도에 1%의 확률로 [ICON_GREAT_ARTIST] 위대한 예술가 또는 [ICON_GREAT_ENGINEER] 위대한 기술자 출현.[NEWLINE]' UNION ALL
@@ -245,7 +245,7 @@ SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIDON', 				'[COLOR_MAGENTA]정복 도시:[END
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SIERRA_LEONE', 		'[COLOR_MAGENTA]자유의 왕국:[ENDCOLOR] [COLOR_YIELD_GOLD]노동자[ENDCOLOR] [ICON_WORKER]건설 속도 +20%. [ICON_HAPPINESS_3] 낙후 -5%. [COLOR_YIELD_GOLD]노동자[ENDCOLOR]마다 매 턴 [ICON_CULTURE]문화 +1.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SINGAPORE', 			'[COLOR_MAGENTA]발전된 부:[ENDCOLOR][COLOR_YIELD_GOLD]외교 유닛[ENDCOLOR] 생산 시 [ICON_PRODUCTION] 생산력 +5%. [COLOR_YIELD_GOLD]외교 유닛[ENDCOLOR] 소모 시 [ICON_GOLD] 골드 30 [COLOR:105:105:105:255](시대 및 대상 도시 국가의 [ICON_INFLUENCE] 영향력에 따라 보정)[ENDCOLOR] [COLOR_YIELD_GOLD]외교 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]귀족[ENDCOLOR] 승급을 얻음 (외교 임무 수행 시 [ICON_INFLUENCE] 영향력 +15).[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SOFIA', 				'[COLOR_MAGENTA]세르디카:[ENDCOLOR] 도시 시민이 믿는 종교 하나당 도시의 [ICON_GREAT_GENERAL] 위대한 장군 포인트 +1,  [ICON_GREAT_ADMIRAL] 위대한 제독 포인트 +1. [ICON_GREAT_GENERAL] [COLOR_YIELD_GOLD]위대한 장군[ENDCOLOR] 및 [ICON_GREAT_ADMIRAL] [COLOR_YIELD_GOLD]위대한 제독[ENDCOLOR]의 [ICON_STRENGTH] 전투력 보너스 +10%.[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SURREY', 				'[COLOR_MAGENTA]장엄한 비행:[ENDCOLOR] [COLOR_GREY]전략 자원[ENDCOLOR]에서 [ICON_GREAT_GENERAL] 위대한 장군 포인트 +1. [COLOR_YIELD_GOLD]공중 유닛[ENDCOLOR] 생산 시 [ICON_PRODUCTION] 생산 +10%. [COLOR_YIELD_GOLD]공중 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]항공기의 장엄함[ENDCOLOR] 승급을 얻음 ([COLOR:255:230:85:255]지상 및 해양 유닛과 전투 시 [ENDCOLOR][ICON_RANGE_STRENGTH] 전투력 +10%).[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SURREY', 				'[COLOR_MAGENTA]장엄한 비행:[ENDCOLOR] [COLOR_GREY]전략 자원[ENDCOLOR]에서 [ICON_GREAT_GENERAL] 위대한 장군 포인트 +1. [COLOR_YIELD_GOLD]공중 유닛[ENDCOLOR] 생산 시 [ICON_PRODUCTION] 생산 +10%. [COLOR_YIELD_GOLD]공중 유닛[ENDCOLOR]이 [COLOR_WATER_TEXT]장엄한 비행[ENDCOLOR] 승급을 얻음 ([COLOR:255:230:85:255]지상 및 해양 유닛과 전투 시 [ENDCOLOR][ICON_RANGE_STRENGTH] 전투력 +10%).[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_SYDNEY', 				'[COLOR_MAGENTA]자본 인프라:[ENDCOLOR] [ICON_HAPPINESS_1] 국왕 경축일 동안 [ICON_FOOD] 식량 +5%. [ICON_HAPPINESS_1] 국왕 경축일이 시작하면 [ICON_GREAT_ARTIST] 위대한 예술가 포인트, [ICON_GREAT_ARTIST] 위대한 작가 포인트, [ICON_GREAT_ARTIST] 위대한 음악가 포인트를 5-20 얻음[COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] [NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_TAIWAN', 				'[COLOR_MAGENTA]대만의 기적:[ENDCOLOR] 도시 생산을 과학으로 전환하면 [ICON_RESEARCH] 과학 +10%. [ICON_RESEARCH] 과학의 10%를 [ICON_FOOD] 식량으로 전환.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_THIMPHU', 			'[COLOR_MAGENTA]전룡의 왕국:[ENDCOLOR] [COLOR_CYAN]언덕[ENDCOLOR] 위 도시의 [ICON_CULTURE] 문화 +3. 매 턴 [ICON_STRENGTH] 방어력 +0.1, [ICON_CULTURE] 문화 +1.[NEWLINE]' UNION ALL
@@ -264,66 +264,66 @@ SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_YEREVAN', 			'[COLOR_MAGENTA]대아르메니�
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZANZIBAR', 			'[COLOR_MAGENTA]향신료의 섬:[ENDCOLOR] [COLOR_GREY]사치 자원[ENDCOLOR]의 [ICON_TOURISM] 관광 +1. [ICON_INTERNATIONAL_TRADE] 교역로마다 [ICON_HAPPINESS_3] 행복 +1.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ZURICH', 				'[COLOR_MAGENTA]금융 박람회:[ENDCOLOR] [COLOR_YIELD_FOOD]은행[ENDCOLOR], [COLOR_YIELD_FOOD]증권거래소[ENDCOLOR]의 [ICON_GOLD] 골드 +2. 매 턴 총 [ICON_GOLD] 골드가 +2%(시대별 최대 20 [ICON_GOLD] 골드로 제한)[NEWLINE]' UNION ALL
 -- promotions
-SELECT 'TXT_KEY_PROMOTION_AMBRACIA', 					'Mercenaries of Pyrrhus' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_AMBRACIA_HELP', 					'Generates +5% [ICON_PRODUCTION] Production when [COLOR_POSITIVE_TEXT]Garrisoned in the City[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO', 				'Pirate Haven' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO_HELP', 				'Military kills generate [ICON_GOLD] Gold equivalent to the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_AUCKLAND', 					'Peaceful Resistance' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_AUCKLAND_HELP', 					'+1 [ICON_FOOD] Food and +1 [ICON_GOLDEN_AGE] Golden Age Point in the City when Garrisoned.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_BELGRADE', 					'The White Fortress' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_BELGRADE_HELP', 					'+25 Max HP.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT', 					'Crusader''s Zeal' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT_HELP', 					'+15% XP gained from Combat.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT1', 					'Blessing of Clermont' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT1_HELP', 					'Receive a random combat bonus upon the first combat.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT2', 					'Onward with Haste!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT2_HELP', 					'+1 [ICON_MOVES] Moves. Can move after attacking.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT3', 					'United We Stand!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT3_HELP', 					'+15% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]adjacent to a friendly unit[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT4', 					'Charge!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT4_HELP', 					'+5% [ICON_STRENGTH] Attack. +15% [ICON_STRENGTH] against [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT5', 					'Reinforce!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT5_HELP', 					'+5% [ICON_STRENGTH] Defense. Can heal after attacking.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT6', 					'Glory to God!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT6_HELP', 					'Unit awards combat bonus to nearby units as if it is a Great General. All adjacent units heal 5 additional HP per turn.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT7', 					'Deus Vult!' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_CLERMONT7_HELP', 					'+1 Sight. Military kills generate [ICON_PEACE] Faith equivalent to 75% of the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_DODOMA', 						'Sail in the Wilderness' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_DODOMA_HELP', 					'+2 [ICON_MOVES] Movement Points.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_FAYA', 						'Spoils of War' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_FAYA_HELP', 						'Military kills generate [ICON_RESEARCH] Science equivalent to 50% of the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_HANOI', 						'Patriotism' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_HANOI_HELP', 						'+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]inside Friendly Territories[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_IFE', 						'Iwarefa' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_IFE_HELP', 						'+20 [ICON_INFLUENCE] Influence from Diplomatic Missions.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ISKANWAYA', 					'Qolla Kapachayuh' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ISKANWAYA_HELP', 					'Unit automatically Heals 10 HP each turn, if next to owned [COLOR_POSITIVE_TEXT]Missionary[ENDCOLOR], [COLOR_POSITIVE_TEXT]Holy Site[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Mountain[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KABUL', 						'Mujahideen' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KABUL_HELP', 						'+25% [ICON_STRENGTH] Defensive CS.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KARYES', 						'Master of Cold Waters' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KARYES_HELP', 					'Unit can cross Mountains.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LACONIA', 					'Spartan Discipline' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LACONIA_HELP', 					'+15% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]adjacent to a Friendly Unit[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LEVUKA', 						'Destroyers of Bau' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_LEVUKA_HELP', 					'Gain [ICON_FOOD] for [COLOR_POSITIVE_TEXT]killing Barbarians[ENDCOLOR], [COLOR_POSITIVE_TEXT]taking Barbarian Encampements[ENDCOLOR] and [COLOR_POSITIVE_TEXT]capturing Cities[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO', 				'Manikongo Glory' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO_HELP', 				'+15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR], [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR], [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Flood Plains[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ODENSO', 						'Lord of the Hunt' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_ODENSO_HELP', 					'+1 [ICON_VIEW_CITY] Sight and heal an additional 5 HP per turn inside Neutral Territories.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SGAANG', 						'Master of Cold Waters' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SGAANG_HELP', 					'Unit can cross Ice.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SIDON', 						'Neighborhood Bully' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SIDON_HELP', 						'Heal an additional 5 HP per turn [COLOR_POSITIVE_TEXT]inside Enemy Territories[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SURREY', 						'Magnificence in Flying Machines' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_SURREY_HELP', 					'+10% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_YEREVAN', 					'Art of War' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_YEREVAN_HELP', 					'Military kills generate [ICON_CULTURE] Culture equivalent to 50% of the killed''s [ICON_STRENGTH] Combat Strength.' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA', 			'Guardia Svizzera Pontificia' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA_HELP', 			'On Kill heals 10 Damage (if in range of owned City), 30 (if in range of owned Capital) or 40 (if in range of owned Holy City).' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KATZBALGER', 					'Katzbalger' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_KATZBALGER_HELP', 				'Unit generates +2 [ICON_PEACE] Faith, +2 [ICON_CULTURE] Culture with [COLOR_CYAN]Radio[ENDCOLOR] and +2 [ICON_TOURISM] Tourism with [COLOR_CYAN]Telecommunications[ENDCOLOR].' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL', 		'Sellsword Army' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL_HELP', 		'+20% XP gained from Combat.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AMBRACIA', 					'피로스의 용병' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AMBRACIA_HELP', 					' [COLOR_POSITIVE_TEXT]도시에 주둔 시[ENDCOLOR] [ICON_PRODUCTION] 생산 +5%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO', 				'해적의 천국' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ANTANANARIVO_HELP', 				'유닛 처치 시 [ICON_STRENGTH] 전투력과 동일한 [ICON_GOLD] 골드 제공' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AUCKLAND', 					'비폭력 저항' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_AUCKLAND_HELP', 					'주둔 시 도시의 [ICON_FOOD] 식량 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_BELGRADE', 					'하얀 요새' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_BELGRADE_HELP', 					'체력 +25.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT', 					'성전사의 열의' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT_HELP', 					'전투 경험치 +15%' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT1', 					'클레몬트의 축복' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT1_HELP', 					'첫 전투에 따라 임시로 무작위 전투력 보너스 제공' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT2', 					'서둘러!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT2_HELP', 					'[ICON_MOVES]이동력 +1. 공격 후 이동 가능' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT3', 					'대동단결!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT3_HELP', 					'[COLOR_POSITIVE_TEXT]아군 유닛에 인접 시[ENDCOLOR] [ICON_STRENGTH] 전투력 +15%' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT4', 					'돌격!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT4_HELP', 					'공격 시 전투력 [ICON_STRENGTH] +5%. [COLOR_POSITIVE_TEXT]요새화한 유닛[ENDCOLOR] 상대로 [ICON_STRENGTH] +15%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT5', 					'보강!' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT5_HELP', 					'[ICON_STRENGTH] 방어력 +15%. 공격 후 회복 가능.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT6', 					'하느님께 영광을' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT6_HELP', 					'위대한 장군처럼 주변 유닛에 전투력 보너스 부여. 주변 유닛이 매 턴 체력 5 추가 회복.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT7', 					'신의 뜻으로' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_CLERMONT7_HELP', 					'시야 +1. 적 처치 시 [ICON_STRENGTH] 전투력의 75% 만큼 [ICON_PEACE] 신앙 제공' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_DODOMA', 						'광야 항해' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_DODOMA_HELP', 					'[ICON_MOVES] 이동력 +2' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_FAYA', 						'전쟁의 수확' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_FAYA_HELP', 						'처치한 적의 [ICON_STRENGTH]전투력 50%만큼 [ICON_RESEARCH] 과학 제공' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_HANOI', 						'애국주의' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_HANOI_HELP', 						'[COLOR_POSITIVE_TEXT]아군 영토 내에서[ENDCOLOR] [ICON_STRENGTH] 전투력 +10%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_IFE', 						'이와레파' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_IFE_HELP', 						'외교 임무 수행 시 [ICON_INFLUENCE] 영향력 +20.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ISKANWAYA', 					'콜라 카파차유' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ISKANWAYA_HELP', 					'[COLOR_POSITIVE_TEXT]선교사[ENDCOLOR], [COLOR_POSITIVE_TEXT]성지[ENDCOLOR], [COLOR_POSITIVE_TEXT]산[ENDCOLOR] 근처에서 매턴 체력 +10.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KABUL', 						'무자히딘' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KABUL_HELP', 						'[ICON_STRENGTH] 방어력 +25%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KARYES', 						'아토스 산 등반가' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KARYES_HELP', 					'유닛이 산을 건널 수 있음.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LACONIA', 					'스파르탄 규율' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LACONIA_HELP', 					'[COLOR_POSITIVE_TEXT]아군 유닛에 인접 시[ENDCOLOR] [ICON_STRENGTH] 전투력 +15%' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LEVUKA', 						'바우의 파괴자' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_LEVUKA_HELP', 					'[COLOR_POSITIVE_TEXT]야만인 처치[ENDCOLOR], [COLOR_POSITIVE_TEXT]야만인 주둔지 파괴[ENDCOLOR], [COLOR_POSITIVE_TEXT]도시 점령[ENDCOLOR] 시 [ICON_FOOD].' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO', 				'마니콩고의 영광' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MBANZA_KONGO_HELP', 				'[COLOR_POSITIVE_TEXT]숲[ENDCOLOR], [COLOR_POSITIVE_TEXT]정글[ENDCOLOR], [COLOR_POSITIVE_TEXT]습지[ENDCOLOR], [COLOR_POSITIVE_TEXT]범람원[ENDCOLOR]에서 전투 시 [ICON_STRENGTH] 전투력 +15%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ODENSO', 						'사냥의 제왕' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_ODENSO_HELP', 					'[ICON_VIEW_CITY] 시야 +1, 중립 영토에서 회복 시 추가로 5 회복.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SGAANG', 						'한랭해역의 전문가' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SGAANG_HELP', 					'유닛이 빙하를 건널 수 있음' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SIDON', 						'지역 불량배' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SIDON_HELP', 						'[COLOR_POSITIVE_TEXT]적 영토 내에서 회복 시[ENDCOLOR] 추가로 5 회복.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SURREY', 						'장엄한 비행' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_SURREY_HELP', 					'해상 및 지상 유닛 대항 시 [ICON_STRENGTH]전투력 보너스 +10%.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_YEREVAN', 					'손자병법' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_YEREVAN_HELP', 					'처치한 적의 [ICON_STRENGTH]전투력 50%만큼 [ICON_CULTURE] 문화 제공' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA', 			'스위스 근위대' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_GUARDIA_SVIZZERA_HELP', 			'도시 내에서 처치 시 체력 10, 수도 내에서 처치 시 30, 성도 내에서 처치 시 40 회복.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KATZBALGER', 					'카츠발게르' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_KATZBALGER_HELP', 				'유닛이 [ICON_PEACE] 신앙 +2 생산,  [COLOR_CYAN]라디오[ENDCOLOR] 연구 시 [ICON_CULTURE] 문화 +2, [COLOR_CYAN]통신[ENDCOLOR] 연구 시 [ICON_TOURISM] 관광 +2.' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL', 		'용병 군대' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_MILITARISTIC_NEUTRAL_HELP', 		'전투 경험치 +20%' UNION ALL
 -- units
 SELECT 'TXT_KEY_UNIT_SWISS_GUARD', 						'Swiss Guard' UNION ALL
 SELECT 'TXT_KEY_UNIT_SWISS_GUARD_STRATEGY', 				'The Swiss Guard is a unique mercenary unit of the Vatican City, located in the tech tree between [COLOR_POSITIVE_TEXT]Free Company[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Foreign Legion[ENDCOLOR]. It can only be purchased (with either [ICON_GOLD] Gold or [ICON_PEACE] Faith) and does move after purchase; though it does not require any policies to do so. The Swiss Guard gains extra [ICON_STRENGTH] Strength each consecutive Era and heals after killing an enemy unit, if it is close to owned City (a little), Capital (more) or Holy City (the most). It also generates yields depending on techs discovered ([COLOR_CYAN]Radio[ENDCOLOR] and [COLOR_CYAN]Telecommunications[ENDCOLOR]). This unit does not obsolete.' UNION ALL
