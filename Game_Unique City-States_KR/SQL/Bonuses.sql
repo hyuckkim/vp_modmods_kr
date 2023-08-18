@@ -255,7 +255,7 @@ SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_UR', 					'[COLOR_MAGENTA]문명의 요람:[EN
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VALLETTA', 			'[COLOR_MAGENTA]대항만:[ENDCOLOR] [COLOR_YIELD_FOOD]대항만[ENDCOLOR] 건설 가능 ([ICON_FOOD], [ICON_RESEARCH], [ICON_STRENGTH]).[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VANCOUVER', 			'[COLOR_MAGENTA]터미널 도시:[ENDCOLOR] 각 [ICON_TRADE] 도시 연결마다 [ICON_GOLD] 골드 3%. [ICON_GOLD] 도시 연결 유지비 -30%[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VATICAN_CITY', 		'[COLOR_MAGENTA]콘클라베:[ENDCOLOR] [ICON_GREAT_PEOPLE] [COLOR_YIELD_GOLD]위인[ENDCOLOR] 소모 시 만난 모든 [ICON_CITY_STATE] 도시 국가에  [ICON_INFLUENCE] 영향력 10.  [ICON_GOLD] 골드 또는 [ICON_PEACE] 신앙으로 [COLOR_YIELD_GOLD]스위스 근위대[ENDCOLOR]유닛 (용병) 구매 가능[NEWLINE]' UNION ALL
-SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VILNIUS', 			'[COLOR_MAGENTA]북방의 아테네:[ENDCOLOR] [COLOR_YIELD_FOOD]황혼의 문[ENDCOLOR] 건설 가능 ([ICON_GREAT_WRITER] +1). 작가의 [ICON_GOLD] 골드 +1.[NEWLINE]' UNION ALL
+SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_VILNIUS', 			'[COLOR_MAGENTA]북방의 아테네:[ENDCOLOR] [COLOR_YIELD_FOOD]여명의 문[ENDCOLOR] 건설 가능 ([ICON_GREAT_WRITER] +1). 작가의 [ICON_GOLD] 골드 +1.[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WELLINGTON', 			'[COLOR_MAGENTA]테 황가누이-아-타라:[ENDCOLOR] [COLOR_GREY]전략 자원[ENDCOLOR]의 [ICON_FOOD] 식량 +1. 추가로 [COLOR_GREY] 전략 자원[ENDCOLOR]의 복사본을 얻음:[NEWLINE][ICON_BULLET] +1 (가지고 있지만 독점은 없을 때)[NEWLINE][ICON_BULLET] +2 (전략 독점)[NEWLINE][ICON_BULLET] +3 (글로벌 독점)[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WITTENBERG', 			'[COLOR_MAGENTA]종교 개혁의 장:[ENDCOLOR] 도시 시민이 믿는 종교 하나당 도시의 [ICON_PRODUCTION] 생산 +1, [ICON_GOLD] 골드 +1, [ICON_CULTURE] 문화 +1. [ICON_PEACE] 종교 압력 -10%, [ICON_PEACE] 개종 저항 -10%. 모든 도시의 [ICON_HAPPINESS_3] 종교 불안 -5%[NEWLINE]' UNION ALL
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_WOOTEI_NIICIE', 		'[COLOR_MAGENTA]푸른 하늘의 인류:[ENDCOLOR] [COLOR_YIELD_GOLD]기병 및 화약 유닛[ENDCOLOR] 생산 시 [ICON_PRODUCTION] 생산 +10%. [COLOR_YIELD_FOOD]대상 숙소[ENDCOLOR]가 있거나 [ICON_RES_HORSE] [COLOR_GREY]말[ENDCOLOR] 근처에 있는 도시에서 생산한 [COLOR_YIELD_GOLD]지상 유닛[ENDCOLOR]의 경험치 +15. 유닛이 레벨업할 시 [ICON_GREAT_GENERAL] 위대한 장군 포인트 +2 [COLOR:105:105:105:255](레벨에 따라 보정)[ENDCOLOR][NEWLINE]' UNION ALL
@@ -392,91 +392,91 @@ SELECT 'TXT_KEY_RESOURCE_DOGO_CANARIO',					'도고 카나리오' UNION ALL
 SELECT 'TXT_KEY_RESOURCE_DOGO_CANARIO_TEXT',			'도고 카나리오는 카나리아 제도에 서식하는 개 품종으로 머리가 넓고 근육질의 몸을 가진 희귀견입니다. 도고 카나리아는 신화, 장례 풍습, 심지어 구안치의 식단에서 중요한 역할을 담당했습니다. 일부는 주인과 함께 미라로 만들어지기도 했습니다.' UNION ALL
 SELECT 'TXT_KEY_RESOURCE_DOGO_CANARIO_MONOPOLY',		'[COLOR_CYAN]아데헤[ENDCOLOR]와 동맹 관계를 유지해야 합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]독정 보너스:[ENDCOLOR] 모든 도시의 [ICON_PRODUCTION] 생산 +5%, [ICON_GOLD] 골드 +5%.' UNION ALL
 -- cs traits/buildings/policies
-SELECT 'TXT_KEY_MARITIME_BONUS', 						'[COLOR:90:205:40:255]Builders (Maritime):[ENDCOLOR][NEWLINE][ICON_BULLET]has a [ICON_WORKER] Manufactory and an additional Bonus Resource nearby'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_FRIENDLY_BONUS', 					'[COLOR:200:240:140:255]Harvesters (Maritime Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a Worker or a Fishing Boat inside Friends'' Territory (their Capital must be on a Coast to get a Fishing Boat)'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_NEUTRAL_BONUS', 					'[COLOR:110:160:70:255]Secured Warehouse (Maritime Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_MARITIME_HOSTILE_BONUS', 					'[COLOR:60:125:40:255]Selfish Gatherers (Maritime Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_BONUS', 						'[COLOR:240:215:65:255]Trade Center (Mercantile):[ENDCOLOR][NEWLINE][ICON_BULLET]has a [ICON_CITY_STATE] Town and an additional Luxury Resource nearby'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_FRIENDLY_BONUS', 				'[COLOR:240:240:165:255]Golden City (Mercantile Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_CARAVAN] Caravan or a [ICON_CARGO_SHIP] Cargo Ship inside Friends'' Territory (their Capital must be on a Coast to get a [ICON_CARGO_SHIP] Cargo Ship)'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_NEUTRAL_BONUS', 					'[COLOR:210:210:70:255]Shadow Council (Mercantile Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_MERCANTILE_HOSTILE_BONUS', 					'[COLOR:130:130:20:255]Free City (Mercantile Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_BONUS', 					'[COLOR:245:40:40:255]Fortress (Militaristic):[ENDCOLOR][NEWLINE][ICON_BULLET]has a [ICON_WAR] Fort and an additional Strategic Resource nearby[NEWLINE][ICON_BULLET]can train its Unique Unit[NEWLINE][ICON_BULLET]Major Player can upgrade his units inside their territory if Allied'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_FRIENDLY_BONUS', 				'[COLOR:255:180:180:255]Mercenary Hub (Militaristic Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]+1% Rate of Unit Gifts to its Friends'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_NEUTRAL_BONUS', 				'[COLOR:245:90:90:255]Sellsword Army (Militaristic Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_MILITARISTIC_HOSTILE_BONUS', 				'[COLOR:170:10:10:255]Hermit Dragon (Militaristic Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_BONUS', 						'[COLOR:210:65:200:255]Center of Learning (Cultured):[ENDCOLOR][NEWLINE][ICON_BULLET]has an [ICON_RESEARCH] Academy and an [ICON_RES_ARTIFACTS] Archaeological Site nearby'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_FRIENDLY_BONUS', 					'[COLOR:240:180:235:255]Open University (Cultured Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning an [ICON_VP_ARTIFACT] Archaeologist inside Friends'' Territory (after researching Archaeology)'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_NEUTRAL_BONUS', 					'[COLOR:210:90:195:255]Patronage (Cultured Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_CULTURED_HOSTILE_BONUS', 					'[COLOR:130:30:115:255]Recluse Court (Cultured Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]nothing'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_BONUS', 						'[COLOR:25:110:250:255]Center of Faith (Religious):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Holy Site nearby'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_FRIENDLY_BONUS', 					'[COLOR:160:220:250:255]Open Mind (Religious Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_MISSIONARY] Missionary inside Friends'' Territory[NEWLINE][ICON_BULLET]+10% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Conversion Resistance'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_NEUTRAL_BONUS', 					'[COLOR:105:155:230:255]Medicant Orders (Religious Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+25% [ICON_PEACE] Religious Pressure'  UNION ALL
-SELECT 'TXT_KEY_RELIGIOUS_HOSTILE_BONUS', 					'[COLOR:25:110:170:255]One Truth (Religious Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+40% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Conversion Resistance'  UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_FRIENDLY', 		'Small HP boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_FRIENDLY_HELP', 		'+1 City HP.' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_NEUTRAL', 			'Medium HP boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_NEUTRAL_HELP', 		'+2 City HP.' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_HOSTILE', 			'Huge HP boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_HOSTILE_HELP', 		'+3 City HP.' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_FRIENDLY', 		'Small pressure boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_FRIENDLY_HELP', 		'+10% [ICON_PEACE] Religious Pressure and -25% [ICON_PEACE] Convertion Resistance.' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_NEUTRAL', 			'Medium pressure boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_NEUTRAL_HELP', 		'+25% [ICON_PEACE] Religious Pressure.' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_HOSTILE', 			'Huge pressure boost' UNION ALL
-	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_HOSTILE_HELP', 		'+40% [ICON_PEACE] Religious Pressure and +25% [ICON_PEACE] Convertion Resistance.' UNION ALL
-		SELECT 'TXT_KEY_POLICY_CS_MARITIME', 					'Builders' UNION ALL
-		SELECT 'TXT_KEY_POLICY_CS_MERCANTILE', 					'Trade Center' UNION ALL
-		SELECT 'TXT_KEY_POLICY_CS_MILITARISTIC', 				'Fortress' UNION ALL
-		SELECT 'TXT_KEY_POLICY_CS_CULTURED', 					'Center of Learning' UNION ALL
-		SELECT 'TXT_KEY_POLICY_CS_RELIGIOUS', 					'Center of Faith' UNION ALL
+SELECT 'TXT_KEY_MARITIME_BONUS', 						'[COLOR:90:205:40:255]건축가 (해양적):[ENDCOLOR][NEWLINE][ICON_BULLET]제조소와 추가 보너스 자원을 가짐[NEWLINE][ICON_BULLET][ICON_FOOD] 성장률 +15%'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_FRIENDLY_BONUS', 					'[COLOR:200:240:140:255]수확자 (해양적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET]1%의 확률로 [ICON_WORKER] 노동자 또는 [ICON_WORKER] 작업선 획득 (수도가 해안 도시라면 [ICON_WORKER] 작업선 획득)'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_NEUTRAL_BONUS', 					'[COLOR:110:160:70:255]보안 창고 (해양적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_HOSTILE_BONUS', 					'[COLOR:60:125:40:255]탐욕스런 수집가 (해양적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_BONUS', 						'[COLOR:240:215:65:255]무역 센터 (상업적):[ENDCOLOR][NEWLINE][ICON_BULLET]소도시와 추가 사치 자원을 가짐'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_FRIENDLY_BONUS', 				'[COLOR:240:240:165:255]황금의 도시 (상업적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET]1%의 확률로 [ICON_CARAVAN] 대상 또는  [ICON_CARGO_SHIP] 무역선 획득 (수도가 해안 도시라면  [ICON_CARGO_SHIP] 무역선 획득)'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_NEUTRAL_BONUS', 					'[COLOR:210:210:70:255]그림자 의회 (상업적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_HOSTILE_BONUS', 					'[COLOR:130:130:20:255]자유 도시 (상업적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_BONUS', 					'[COLOR:245:40:40:255]요새 (군사적):[ENDCOLOR][NEWLINE][ICON_BULLET] [ICON_WAR] 요새와 추가 전략 자원을 가짐[NEWLINE][ICON_BULLET] 고유 유닛 훈련 가능[NEWLINE][ICON_BULLET]동맹 상태일 때 이 도시 국가 내에서 유닛 업그레이드 가능'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_FRIENDLY_BONUS', 				'[COLOR:255:180:180:255]용병 허브 (군사적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET]1%의 확률로 추가 유닛 획득'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_NEUTRAL_BONUS', 				'[COLOR:245:90:90:255]고용된 군대 (군사적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_HOSTILE_BONUS', 				'[COLOR:170:10:10:255]숨은 용 (군사적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_BONUS', 						'[COLOR:210:65:200:255]학습의 장 (문화적):[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_RESEARCH] 아카데미와 [ICON_RES_ARTIFACTS] 사적지를 가짐'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_FRIENDLY_BONUS', 					'[COLOR:240:180:235:255]열린 대학 (문화적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET]1%의 확률로 고고학자 획득 (고고학 연구 이후)'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_NEUTRAL_BONUS', 					'[COLOR:210:90:195:255]후원자 (문화적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_HOSTILE_BONUS', 					'[COLOR:130:30:115:255]은둔 법원 (문화적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET]능력 없음'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_BONUS', 						'[COLOR:25:110:250:255]신앙의 중심 (종교적):[ENDCOLOR][NEWLINE][ICON_BULLET]성지를 가짐'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_FRIENDLY_BONUS', 					'[COLOR:160:220:250:255]열린 정신 (종교적 우호적):[ENDCOLOR][NEWLINE][ICON_BULLET]1%의 확률로 [ICON_MISSIONARY] 선교사 획득[NEWLINE][ICON_BULLET] [ICON_PEACE] 종교 압력 +10%[NEWLINE][ICON_BULLET][ICON_PEACE] 개종 저항 -25%'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_NEUTRAL_BONUS', 					'[COLOR:105:155:230:255]탁발 수도회 (종교적 중립적):[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_PEACE] 종교 압력 +25%'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_HOSTILE_BONUS', 					'[COLOR:25:110:170:255]유일한 진리 (종교적 적대적):[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_PEACE] 종교 압력 +40%[NEWLINE][ICON_BULLET] [ICON_PEACE] 개종 저항 -25%'  UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_FRIENDLY', 		'작은 체력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_FRIENDLY_HELP', 		'도시 체력 +1.' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_NEUTRAL', 			'중간 체력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_NEUTRAL_HELP', 		'도시 체력 +2.' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_HOSTILE', 			'큰 체력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_STRENGTH_HOSTILE_HELP', 		'도시 체력 +3.' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_FRIENDLY', 		'작은 영향력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_FRIENDLY_HELP', 		'[ICON_PEACE] 종교 압력 +10% [ICON_PEACE] 개종 저항 -25%' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_NEUTRAL', 			'중간 영향력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_NEUTRAL_HELP', 		'[ICON_PEACE] 종교 압력 +25%' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_HOSTILE', 			'큰 영향력 부스트' UNION ALL
+	SELECT 'TXT_KEY_BUILDING_CS_RELIGION_HOSTILE_HELP', 		'[ICON_PEACEICON_PEACE] 종교 압력 +40%[NEWLINE][ICON_BULLET] [ICON_PEACE] 개종 저항 -25%' UNION ALL
+		SELECT 'TXT_KEY_POLICY_CS_MARITIME', 					'건축가' UNION ALL
+		SELECT 'TXT_KEY_POLICY_CS_MERCANTILE', 					'무역 센터' UNION ALL
+		SELECT 'TXT_KEY_POLICY_CS_MILITARISTIC', 				'요새' UNION ALL
+		SELECT 'TXT_KEY_POLICY_CS_CULTURED', 					'학습의 장' UNION ALL
+		SELECT 'TXT_KEY_POLICY_CS_RELIGIOUS', 					'신앙의 중심' UNION ALL
 -- regular buildings
-SELECT 'TXT_KEY_BUILDING_ARMAGH1', 						'Naomh Gaelach' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH1_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_CULTURE] Culture bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Boredom.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH2', 						'Naomh Breandán' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH2_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_RESEARCH] Science bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Illiteracy.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH3', 						'Naomh Pádraig' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH3_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_GOLD] Gold bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Poverty.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH4', 						'Naomh Bríd' UNION ALL
-SELECT 'TXT_KEY_BUILDING_ARMAGH4_HELP', 				'Requires an access to [COLOR_CYAN]Armagh[ENDCOLOR]''s ability. Grants [ICON_FOOD] Food and [ICON_PRODUCTION] Production bonus based on number of Active Events (lost without the Alliance). Reduces [ICON_HAPPINESS_3] Distress.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_JERUSALEM', 					'Holy City' UNION ALL
-SELECT 'TXT_KEY_BUILDING_JERUSALEM_HELP', 				'Built after adopting Majority Religion of its Ally.[NEWLINE][NEWLINE]This city becomes a Holy City. Too many have made the pilgrimage to this city for their religion.[NEWLINE][NEWLINE]+100% [ICON_PEACE] Religious Pressure.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KIEV', 						'Bylina' UNION ALL
-SELECT 'TXT_KEY_BUILDING_KIEV_HELP', 					'Requires an access to [COLOR_CYAN]Kyiv[ENDCOLOR]''s ability. +2 [ICON_GREAT_MUSICIAN]; +1 Musician Slot.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN', 						'Visconti Emissary' UNION ALL
-SELECT 'TXT_KEY_BUILDING_MILAN_HELP', 					'Requires an access to [COLOR_CYAN]Milan[ENDCOLOR]''s ability. +2 [ICON_GREAT_ARTIST]; +1 Artist Slot.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VILNIUS', 						'The Gate of Dawn' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VILNIUS_HELP', 				'Requires an access to [COLOR_CYAN]Vilnius[ENDCOLOR]''s ability. +2 [ICON_GREAT_WRITER]; +1 Writer Slot.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RISHIKESH', 					'Ashram' UNION ALL
-SELECT 'TXT_KEY_BUILDING_RISHIKESH_HELP', 				'Requires an access to [COLOR_CYAN]Rishikesh[ENDCOLOR]''s ability. +1 [ICON_PEACE] Faith and +1 [ICON_TOURISM] for every Mountain tile within their workable radius. -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, Urbanization and Boredom.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VALLETTA', 					'The Grand Harbor' UNION ALL
-SELECT 'TXT_KEY_BUILDING_VALLETTA_HELP', 				'City must have a Fishing Boat resource improved and Player must have an access to [COLOR_CYAN]Valletta[ENDCOLOR]''s ability. +2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science (lost without the Alliance). +15 XP to all newly trained Naval Units. +25 City HP.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH1', 						'성 파트리치오' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH1_HELP', 				'[COLOR_CYAN]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 이벤트 수에 비례해 [ICON_CULTURE] 문화를 제공합니다. [ICON_HAPPINESS_3] 무료가 감소합니다.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH2', 						'성 베니뇨' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH2_HELP', 				'[COLOR_CYAN]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 이벤트 수에 비례해 [ICON_RESEARCH] 과학을 제공합니다. [ICON_HAPPINESS_3] 문맹이 감소합니다.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH3', 						'성 세쿤디누스' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH3_HELP', 				'[COLOR_CYAN]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 이벤트 수에 비례해 [ICON_GOLD] 골드를 제공합니다. [ICON_HAPPINESS_3] 빈곤이 감소합니다.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH4', 						'성 첼레스티노' UNION ALL
+SELECT 'TXT_KEY_BUILDING_ARMAGH4_HELP', 				'[COLOR_CYAN]아마[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 이벤트 수에 비례해 [ICON_FOOD] 식량을 제공합니다. [ICON_HAPPINESS_3] 낙후가 감소합니다.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_JERUSALEM', 					'성스러운 도시' UNION ALL
+SELECT 'TXT_KEY_BUILDING_JERUSALEM_HELP', 				'동맹의 대중 종교를 채택한 후 건설됩니다.[NEWLINE][NEWLINE]이 도시가 성도가 됩니다. 많은 사람들이 그들의 종교를 위해 이 도시를 순례했습니다. [NEWLINE][NEWLINE][ICON_PEACE] 종교 압력 +100%' UNION ALL
+SELECT 'TXT_KEY_BUILDING_KIEV', 						'빌리나' UNION ALL
+SELECT 'TXT_KEY_BUILDING_KIEV_HELP', 					'[COLOR_POSITIVE_TEXT]키예프[ENDCOLOR]와 동맹 관계를 유지해야 합니다. [ICON_GREAT_MUSICIAN] +2, 음악가 슬롯 +1.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILAN', 						'비스콘티 저택' UNION ALL
+SELECT 'TXT_KEY_BUILDING_MILAN_HELP', 					'[COLOR_POSITIVE_TEXT]밀란[ENDCOLOR]과 동맹 관계를 유지해야 합니다. [ICON_GREAT_ARTIST] +2, 예술가 슬롯 +1.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VILNIUS', 						'여명의 문' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VILNIUS_HELP', 				'[COLOR_POSITIVE_TEXT]빌뉴스[ENDCOLOR]와 동맹 관계를 유지해야 합니다. [ICON_GREAT_WRITER] +2, 작가 슬롯 +1.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RISHIKESH', 					'아쉬람' UNION ALL
+SELECT 'TXT_KEY_BUILDING_RISHIKESH_HELP', 				'[COLOR_POSITIVE_TEXT]리시케시[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 작업 가능한 산 타일마다 [ICON_PEACE] 신앙 +1, [ICON_TOURISM] 관광 +1을 얻습니다.[ICON_HAPPINESS_3] 종교 불안, 도시화, 무료 -1.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VALLETTA', 					'대항만' UNION ALL
+SELECT 'TXT_KEY_BUILDING_VALLETTA_HELP', 				'[COLOR_POSITIVE_TEXT]발레타[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 도시 주변에 어선이 건설된 해양 자원이 있어야 합니다.  [ICON_FOOD] +2, [ICON_RESEARCH] +2. 모든 해상 유닛의 경험치가 [COLOR_POSITIVE_TEXT]15[ENDCOLOR] 증가합니다. 도시 체력이 +25 증가합니다.' UNION ALL
 -- world wonders
-SELECT 'TXT_KEY_BUILDING_LHASA', 						'Potala Palace' UNION ALL
-SELECT 'TXT_KEY_BUILDING_LHASA_HELP', 					'+1 and +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food. Grants 1 additional delegate in the World Congress. Requires an access to [COLOR_CYAN]Lhasa[ENDCOLOR]''s ability and an active session of the [COLOR_POSITIVE_TEXT]World Congress[ENDCOLOR]. Yield modifiers halved without the Alliance. Can never be destroyed.' UNION ALL
-SELECT 'TXT_KEY_BUILDING_LHASA_QUOTE', 					'[NEWLINE]"The first time I stepped onto the rooftop of the Potala Palace, I felt, as never before or since, as if I were stepping onto the rooftop of my being; onto some dimension of consciousness that I''d never visited before."[NEWLINE] – Pico Iyer[NEWLINE]';
+SELECT 'TXT_KEY_BUILDING_LHASA', 						'포탈라 궁' UNION ALL
+SELECT 'TXT_KEY_BUILDING_LHASA_HELP', 					'[ICON_CULTURE]문화와 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR], [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 추가 대표단 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]을 확보합니다. 세계 의회가 열릴 때까지 [COLOR_POSITIVE_TEXT]라사[ENDCOLOR]와 동맹 관계를 유지해야 합니다. 파괴될 수 없습니다.' UNION ALL
+SELECT 'TXT_KEY_BUILDING_LHASA_QUOTE', 					'[NEWLINE][TAB][TAB]"내가 포탈라 궁의 옥상에 처음 발을 디뎠을 때, 이전에 느껴보지 못했고 이후로도 느껴보지 못한 신기한 느낌을 받았다. 내가 방문해보지 않은 무슨 의식의 차원 같은, 마치 내 존재의 옥상에 발을 디딘 것 같았다."[NEWLINE] – 피코 아이어';
 --==========================================================================================================================
 -- COMPATIBLITY
 --==========================================================================================================================
 -- POTALA PALACE - More Wonders
-UPDATE Language_en_US
-SET Text = '[COLOR_YIELD_FOOD]Potala Palace[ENDCOLOR] depends strongly on alliance with [COLOR_CYAN]Lhasa[ENDCOLOR] (+10%[ICON_FOOD]; +10%[ICON_CULTURE]; halved when not allied with [COLOR_CYAN]Lhasa[ENDCOLOR]). Ties bonds between these two countries ([COLOR_YIELD_GOLD]Sphere of Influence[ENDCOLOR] over [COLOR_CYAN]Lhasa[ENDCOLOR]) using special diplomatic techniques (+1[ICON_DIPLOMAT] League Vote).'
+UPDATE Language_ko_KR
+SET Text = '[COLOR_YIELD_FOOD]포탈라궁[ENDCOLOR]은 [COLOR_CYAN]라사[ENDCOLOR]와의 동맹 관계에 의존합니다. ([ICON_FOOD] +10%; [ICON_CULTURE] +10%;  [COLOR_POSITIVE_TEXT]라사[ENDCOLOR]와 동맹 관계를 유지해야 합니다.) 양국 간의 유대 관계 강화 효과가 있습니다. ([COLOR_CYAN]라사[ENDCOLOR]의 [COLOR_YIELD_GOLD]영향권[ENDCOLOR], [ICON_DIPLOMAT] 세계 의회 표 +1).'
 WHERE Tag = 'TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-HELP' AND Value= 1) AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
 
-UPDATE Language_en_US SET Text = REPLACE(Text, 'Requires and alliance with [COLOR_POSITIVE_TEXT]Lhasa[ENDCOLOR] and an active session of the [COLOR_POSITIVE_TEXT]World Congress[ENDCOLOR]. ', '') WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-HELP' AND Value= 0) AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
+UPDATE Language_ko_KR SET Text = REPLACE(Text, '세계 의회가 열릴 때까지 [COLOR_POSITIVE_TEXT]라사[ENDCOLOR]와 동맹 관계를 유지해야 합니다. ', '') WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-HELP' AND Value= 0) AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
 
-INSERT INTO Language_en_US 
+INSERT INTO Language_ko_KR 
 			(Tag,										Text) 
 SELECT		'TXT_KEY_BUILDING_LHASA_HELP_CUT',			Text
-FROM Language_en_US WHERE Tag = 'TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
+FROM Language_ko_KR WHERE Tag = 'TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
 				
-UPDATE Language_en_US SET Text = 'Special: [COLOR_CYAN]Lhasa CS Ally[ENDCOLOR] and an [COLOR_CYAN]active session of WC[ENDCOLOR].[NEWLINE][NEWLINE]'||Text WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
+UPDATE Language_ko_KR SET Text = '특별: 세계 의회가 열릴 때까지 [COLOR_POSITIVE_TEXT]라사[ENDCOLOR]와 동맹 관계를 유지해야 합니다.[NEWLINE][NEWLINE]'||Text WHERE Tag ='TXT_KEY_BUILDING_LHASA_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='UCS-MW' AND Value= 1);
 --============================================--
 -- VP FIXES (copy from MW)
 --============================================--
 -- additional combat classes for promotions
-INSERT OR REPLACE INTO Language_en_US 
+INSERT OR REPLACE INTO Language_ko_KR 
 			(Tag,										Text) 
-VALUES		('TXT_KEY_UNITCOMBAT_SPECIAL_PEOPLE',		'Great People'),
-			('TXT_KEY_UNITCOMBAT_SPACESHIP_PART',		'Space Parts'),
-			('TXT_KEY_UNITCOMBAT_MISSILE',				'Missiles'),
-			('TXT_KEY_UNITCOMBAT_ARCHAEOLOGIST',		'Archaeologists');
+VALUES		('TXT_KEY_UNITCOMBAT_SPECIAL_PEOPLE',		'위인'),
+			('TXT_KEY_UNITCOMBAT_SPACESHIP_PART',		'로켓 부품'),
+			('TXT_KEY_UNITCOMBAT_MISSILE',				'미사일'),
+			('TXT_KEY_UNITCOMBAT_ARCHAEOLOGIST',		'고고학자');
