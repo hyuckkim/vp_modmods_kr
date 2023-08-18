@@ -25,139 +25,139 @@ SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'고유 유닛: [COLOR_YIELD_FOOD]{1_Un
 SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR]'  UNION ALL
 -- main definitions
 SELECT 'TXT_KEY_CITYSTATE_CLERMONT', 					'클레몬트' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CLERMONT_ADJ', 					'클레몬트의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CLERMONT_ADJ', 					'[COLOR:240:240:140:255]클레몬트[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_CLERMONT_TEXT', 						'클레몬트는 제1차 십자군 원정의 시작점이었고, 기독교는 예루살렘을 무슬림의 지배로부터 해방시키려고 했습니다. 교황 우르바노 2세는 1095년 제2차 클레몬트 공의회에서 십자군을 모았습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_HONDURAS', 					'테구시갈파' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_HONDURAS_ADJ', 					'온두라스의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_HONDURAS_ADJ', 					'[COLOR:240:240:140:255]온두라스[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_HONDURAS_TEXT', 						'온두라스는 16세기에 스페인이 점령하기 전에 몇몇 메소아메리카 문화의 고향이었습니다. 온두라스는 1821년에 독립했고 그 이후로 공화국이 되었습니다. 그러나 공화국은 그들의 정부가 외국인 투자자들로부터 바나나의 개발만을 지원받은 바나나 공화국의 모습으로 남아있습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_AUCKLAND', 					'파리하카' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AUCKLAND_ADJ', 					'마오리의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AUCKLAND_ADJ', 					'[COLOR:240:240:140:255]마오리[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_AUCKLAND_TEXT', 						'마오리족이 지금의 뉴질랜드 북부에 있는 지협에 정착했을 때, 그들은 비옥한 땅, 무성한 정글, 그리고 휴화산으로 가득한 주변 풍경을 발견했습니다. 지협 양쪽에 있는 자연 보호 항구는 풍부한 어업과 전쟁 카누의 기지를 제공했습니다. 정착민들은 그것을 ''타마키 마카오''라고 불렀는데, 대략 "백 명의 연인들이 찾는 소녀"로 번역됩니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_ARMAGH', 						'아마' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ARMAGH_ADJ', 						'아마의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ARMAGH_ADJ', 						'[COLOR:240:240:140:255]아마[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_ARMAGH_TEXT', 							'아일랜드의 마을인 아마는 오랫동안 종교를 알고 있었습니다. 고대 이교도들의 예배 장소였던 것으로 생각되는 이곳은 5세기에 기독교 선교사 성 패트릭이 언덕 꼭대기에 석조 교회를 세우고 봉헌하면서 유명해졌습니다. 그 주변에 수도원이 생겼고, 그리고 나서 신학의 첨탑인 아일랜드 전역에 기독교를 전파하는 데 헌신한 마을이 생겼습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_MUSCAT', 						'무스카트' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUSCAT_ADJ', 						'무스카트의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUSCAT_ADJ', 						'[COLOR:240:240:140:255]무스카트[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_MUSCAT_TEXT', 							'무스카트를 통해 흐르는 무역은 적어도 2천년 동안 그것의 생명선이었습니다. 알 하자르 산의 기슭에 둥지를 튼 프톨레마이오스는 이 곳을 1세기 초에 숨겨진 항구(''크립투스 포르투스'')라고 불렀습니다. 불행히도 이 도시는 잘 숨겨져 있지 않았습니다. 페르시아 만의 어귀에 위치한 이 도시의 주요 위치는 오랫동안 이곳을 정복하기 위한 매력적인 목표로 만들었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_GRANADA', 					'그라나다' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GRANADA_ADJ', 					'그라나다의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GRANADA_ADJ', 					'[COLOR:240:240:140:255]그라나다[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_GRANADA_TEXT', 						'8세기에 우마이야 칼리프는 이베리아 반도를 통해 퍼져나가 비시고딕 히스파니아를 빠르게 정복했습니다. 현재 스페인 남부에 있는 요새화된 정착지인 그라나다가 침공으로 휩쓸렸습니다. 15세기 후반에 이르러서는 가톨릭 군주들에게 항복함으로써 안달루시아의 레키스타는 막을 내리게 되었지만, 천년의 4분의 3 동안 그라나다는 무어인의 소유가 되었습니다.[NEWLINE][NEWLINE]시에라 네바다 산맥의 기슭에 위치한 그라나다는 낮은 평야에 위치해 있기 때문에 거의 방어할 수 없는 불운을 겪었습니다. 그곳의 무어 통치자들은 재빨리 이 사실을 깨닫고 그들의 권력을 마을을 내려다볼 수 있는 더 방어하기 쉬운 언덕으로 옮겼습니다. 그들의 계획 중 일부는 나중에 아름다운 알함브라로 개조될 알자르를 건설하는 것을 포함했습니다.[NEWLINE][NEWLINE]그라나다의 무어족 주인들은 수세기에 걸쳐 변화했습니다. 알모아 가문은 우마이야 왕조의 잔당을 이어받은 알모라비드 가문을 대체했습니다. 그 도시의 운명은 13세기에 가톨릭 왕국 카스티야 왕국과 동맹을 맺은 나스리드 왕조와 함께 그라나다 토후국으로 다시 바뀌었습니다. 사하라 이남 아프리카에 있는 무역 센터로의 직접 접근은 그라나다를 한동안 레콩키스타로부터 해방시켰습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_NANMANDOL', 					'레루' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_NANMANDOL_ADJ', 					'레루의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_NANMANDOL_ADJ', 					'[COLOR:240:240:140:255]레루[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_NANMANDOL_TEXT', 						'레루는 선사 시대와 역사적인 주요 고고학 유적지입니다. 그 유적들은 14세기와 15세기 경에 절정에 달했던 문명의 유적들로, 19세기 초 유럽인들의 접촉 당시에도 여전히 그 요소들을 볼 수 있습니다. 레루의 통치자들은 점차적으로 코스라에 섬을 정복하고 통일했습니다. 수도 레루에서, 그들은 고고학자들이 통가나 하와이의 왕국들과 비슷하다고 여기는 군주제로 그 섬을 통치했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_GWYNEDD', 					'웨일스' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_GWYNEDD_ADJ', 					'웨일스의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_GWYNEDD_ADJ', 					'[COLOR:240:240:140:255]웨일스[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_GWYNEDD_TEXT', 						'귀네드는 로마 시대 말기부터 독립적인 웨일스 왕국이었습니다. 13세기에 영국에 의해 정복되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_MUISCA', 						'무이스카' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUISCA_ADJ', 						'무이스카의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUISCA_ADJ', 						'[COLOR:240:240:140:255]무이스카[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_MUISCA_TEXT', 							'무이스카는 16세기까지 서쪽의 판체, 북서쪽의 무조, 북쪽의 과네, 북동쪽의 라체, 동쪽의 아카과아, 그리고 남쪽의 수타가오와 같은 안데스 문화의 고향이었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_LACONIA', 					'스파르타' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LACONIA_ADJ', 					'스파르타의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LACONIA_ADJ', 					'[COLOR:240:240:140:255]스파르타[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_LACONIA_TEXT', 						'도시 국가의 수도인 스파르타의 한 지역으로 여겨지는 라코니아는 펠로폰네소스 지역에서 지배권을 다투는 가장 강력한 지역 세력 중 하나입니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_CHEVAK', 						'셰바크' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CHEVAK_ADJ', 						'셰바크의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CHEVAK_ADJ', 						'[COLOR:240:240:140:255]셰바크[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_CHEVAK_TEXT', 							'알래스카의 셰바크족이 사는 지역입니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO', 				'산토도밍고' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO_ADJ', 				'도밍고의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SANTO_DOMINGO_ADJ', 				'[COLOR:240:240:140:255]도밍고[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_SANTO_DOMINGO_TEXT', 					'산토도밍고는 아메리카 대륙에서 가장 오래된 유럽 도시가 되었습니다. 원래 이름은 라 누에바 이사벨라였고, 1495년에 성 도미니크를 기념하기 위해 산토 도밍고로 이름이 바뀌었습니다. 산토 도밍고는 도시가 커지고 번창하면서 "캐리비안의 관문"으로 알려지게 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_MANAGUA', 					'마나과' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MANAGUA_ADJ', 					'마나과의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MANAGUA_ADJ', 					'[COLOR:240:240:140:255]마나과[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_MANAGUA_TEXT', 						'메스티소와 스페인 상류층 백인들로 구성된 마나과로, 이 도시는 어촌 마을에서 번영하는 스페인 도시가 되었고, 현재 가장 잘 알려진 중앙아메리카의 발전된 도시가 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_ODENSO', 						'헬싱키' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ODENSO_ADJ', 						'헬싱키의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ODENSO_ADJ', 						'[COLOR:240:240:140:255]헬싱키[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_ODENSO_TEXT', 							'문자 그대로 오딘의 섬으로 번역된 이 섬은 핀란드 왕국에 의해 북유럽 신화의 신 오딘을 인정받아 명명되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_YANGCHENG', 					'옌청' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_YANGCHENG_ADJ', 					'옌청의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_YANGCHENG_ADJ', 					'[COLOR:240:240:140:255]옌청[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_YANGCHENG_TEXT', 						'하 왕조의 첫 번째 수도로, 이허 강 위에 지어졌고 그들의 왕조가 멸망할 때까지 유지되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS', 					'파노테우스' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS_ADJ', 					'파노테우스의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_PHANOTEUS_ADJ', 					'[COLOR:240:240:140:255]파노테우스[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_PHANOTEUS_TEXT', 						'파노테우스는 매우 오래된 마을로, 원래 플라레야에가 거주했습니다. 프로메테소스가 이곳에서 인류를 만들었다고 여겨집니다. 크세르크세스 휘하의 페르시아인, 필리포스 2세 휘하의 마케도니아인, 폼페이 대왕 휘하의 로마인들에 의해 시간이 지남에 따라 파괴되고 파괴될 때까지 유지되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DOUALA', 						'두알라' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DOUALA_ADJ', 						'두알라의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DOUALA_ADJ', 						'[COLOR:240:240:140:255]두알라[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_DOUALA_TEXT', 							'두알라는 카메룬에서 가장 큰 도시이자 이 지역에서 가장 강력한 경제 성장을 한 도시입니다. 1960년 카메룬의 독립은 두알라의 경제적 중요성이 발전과 번영에 결정적이 되면서 두알라의 강력한 급속한 경제 성장을 낳았습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_AMBRACIA', 					'암브라시아' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_AMBRACIA_ADJ', 					'암브라시아의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_AMBRACIA_ADJ', 					'[COLOR:240:240:140:255]암브라시아[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_AMBRACIA_TEXT', 						'암브레시아는 고대 그리스 역사에서 마케도니아 왕 카산드로스가 에피로스의 왕 피로스에게 선물한 도시입니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI', 					'지부티' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI_ADJ', 					'지부티의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DJIBOUTI_ADJ', 					'[COLOR:240:240:140:255]지부티[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_DJIBOUTI_TEXT', 						'지부티는 프랑스의 지배하에 오복으로 정착하기 전까지 원래 무인도 해안 지역이었습니다. 프랑스로부터 독립한 후에 이름이 바뀌었고 또한 각각의 이름 있는 나라의 수도가 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DODOMA', 						'다르에스살람' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DODOMA_ADJ', 						'다르에스살람의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DODOMA_ADJ', 						'[COLOR:240:240:140:255]다르에스살람[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_DODOMA_TEXT', 							'스와힐리 해안에 위치한 다르에스살람(아랍어: "평화의 거처")은 탄자니아에서 가장 큰 도시이자 예술, 패션, 미디어, 영화, 텔레비전, 금융의 가장 유명한 중심지입니다. 인구 6백만 명이 넘는 다르는 동아프리카에서 가장 큰 도시이자 아프리카에서 6번째로 큰 도시입니다.[NEWLINE][NEWLINE]다르에스살람은 1862년 잔지바르의 초대 술탄인 마지드 빈 사이드가 음지지마(스와힐리어로 "건강한 마을") 마을이 있는 곳. 1887년 독일 동아프리카 회사가 그곳에 역을 세울 때까지 작은 항구에 불과했습니다. 1905년 이 도시는 도시의 성장과 산업 발전을 촉진한 중앙선 철도의 출발점이었습니다. 다르에스살람은 독일 동아프리카(1891~1916), 탕가니카(1961~64), 탄자니아(1964~74)의 수도였습니다. 1974년 도도마는 새 수도로 지정되었지만 공식 기능 이전은 1996년에 공식적으로 완료되었습니다. [NEWLINE][NEWLINE]다르에스살람의 건물은 종종 이 도시의 식민지 시대 과거를 반영하고 스와힐리어, 영국, 독일 및 아시아 전통을 통합하는 다양한 건축 양식을 보여줍니다. 제2차 세계대전 이후 현대화 및 확장으로 병원 단지, 기술 연구소, 고등 법원을 포함한 현대식 다층 건물이 들어섰습니다. 교육 시설로는 다르에스살람 대학교(1961), 여러 도서관 및 연구 기관, 국립 박물관이 있습니다.[NEWLINE][NEWLINE]다르에스살람의 거의 육지로 둘러싸인 자연 항구는 탄자니아 본토 대부분의 출구입니다. 농업 및 광물 수출은 우간다, 르완다, 부룬디, 콩고 민주 공화국, 잠비아 및 말라위와 같은 인근 내륙 국가에 서비스를 제공합니다. 또한 항해가 가능한 지류인 루알라바까지 철도로 도달할 수 있는 콩고 강의 환승 항구이기도 합니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_FAYA', 						'파야' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_FAYA_ADJ', 						'파야의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_FAYA_ADJ', 						'[COLOR:240:240:140:255]파야[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_FAYA_TEXT', 							'파야는 현대 차드 북부의 많은 인구를 자랑하는 열대의 더운 지역입니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_KIGALI', 						'키갈리' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_KIGALI_ADJ', 						'키갈리의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_KIGALI_ADJ', 						'[COLOR:240:240:140:255]키갈리[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_KIGALI_TEXT', 							'키갈리는 14세기에 르완다 왕국에 의해 처음 개발되고 있는 르완다의 수도이며, 근대에 역사적인 수도가 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_LEVUKA', 						'레브카' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_LEVUKA_ADJ', 						'레브카의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LEVUKA_ADJ', 						'[COLOR:240:240:140:255]레브카[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_LEVUKA_TEXT', 							'레브카는 오발라우 섬의 동해안에 있는 항구 도시이자 남태평양 국가 피지에 있는 로마위티주의 주도입니다. 1822년 미국 모험가에 의해 정착된 이 지역은 미국 남북 전쟁(1861~65) 동안 세계 면화 공급이 차질을 빚은 면화 붐의 중심지였습니다.[NEWLINE][NEWLINE]1871년 피지의 최초의 현대 민족 국가인 피지 왕국이 세워졌을 때 세루 에페니사 카코바우가 레부카에서 왕위에 올랐습니다. 1874년 피지가 영국 식민지로 합병된 후 레부카는 1877년까지 수도로 남아 있었는데, 그 때 행정부는 수바로 이전되었지만 공식적으로는 1882년 이전이 이루어지지 않았습니다.[NEWLINE][NEWLINE]지금은 주로 일본, 한국, 대만 어선이 공급하는 피지 참치 가공 산업의 중심지입니다. 마을의 19세기 건축물은 여전히 대부분 그대로 남아 있으며 2013년 레부카는 문화적, 역사적 가치로 인해 유네스코 세계 문화 유산으로 지정되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_QUELIMANE', 					'켈리마네' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_QUELIMANE_ADJ', 					'켈리마네의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_QUELIMANE_ADJ', 					'[COLOR:240:240:140:255]켈리마네[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_QUELIMANE_TEXT', 						'켈리마네는 홍수에 극도로 취약한 지역입니다. 스와힐리 교역소로 설립된 이곳은 번영하는 항구로 발전했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE', 				'시에라리온' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE_ADJ', 				'시에라리온의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SIERRA_LEONE_ADJ', 				'[COLOR:240:240:140:255]시에라리온[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_SIERRA_LEONE_TEXT', 					'시에라리온은 사막과 습지로 다양한 지역입니다. 영국의 지배하에 세워진 이 나라는 독립성을 부여받았고 이웃나라에 비해 종교적 관용을 자랑했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_SURREY', 						'셔리' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SURREY_ADJ', 						'셔리의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SURREY_ADJ', 						'[COLOR:240:240:140:255]셔리[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_SURREY_TEXT', 							'서리는 영국 남동부에 있는 마을입니다. 비행장으로서의 첫 번째 용도로 알려진, 그 마을은 비행기와 항공기의 생산에 있어 중요시 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_TAIWAN', 						'타이페이' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_TAIWAN_ADJ', 						'타이페이의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TAIWAN_ADJ', 						'[COLOR:240:240:140:255]타이페이[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_TAIWAN_TEXT', 							'타이베이는 중화민국의 수도이며, 대만의 문화, 정치, 경제의 중심입니다. 국민당의 중국 망명 정부가 수립되기 전에, 타이베이는 중국, 일본, 필리핀 사이의 무역로를 따라 위치한 작은 지방 수도였습니다. 주변 지역의 대부분은 한족에 의한 중국 본토의 지배와 구별되는 풍부한 문화적 구조를 형성하면서, 몇몇 타이완 원주민들이 계속해서 거주합니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_OC_EO', 						'옥에오' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_OC_EO_ADJ', 						'옥에오의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_OC_EO_ADJ', 						'[COLOR:240:240:140:255]옥에오[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_OC_EO_TEXT', 							'푸난은 서기 1세기에 생겨난 캄보디아의 고대 국가로 6세기에 첸라 주에 편입되었습니다. 푸난(아마도 pnom, "산"의 중국어 필사본)은 동남아시아 최초의 중요한 힌두교 왕국이었습니다. 현재 베트남, 태국, 캄보디아의 일부를 포함했습니다. 푸난은 인도 및 중국과 무역 관계를 맺었으며 푸난 사람들은 3세기에서 6세기 사이에 황제에게 조공을 바쳤습니다.[NEWLINE][NEWLINE]푸난은 수이 메아라라고도 알려진 3세기 왕 판 시만 아래에서 권력의 정점에 도달했습니다. 판 시만은 제국의 해군을 확장하고 푸난의 관료제를 개선하여 특히 제국의 더 먼 곳에서 지역 관습과 정체성을 그대로 유지하는 준 봉건적 패턴을 만들었습니다. 판 시만과 그의 후계자들은 또한 해상 무역을 규제하기 위해 중국과 인도에 대사를 보냈습니다. 왕국은 동남아시아의 인도화 과정을 가속화했을 것입니다. 진랍과 같은 동남아시아의 후기 왕국은 푸난의 법원을 모방했을 수 있습니다. 푸난은 지역 제국의 패턴이 될 강력한 중상주의 및 상업적 독점 시스템을 구축했습니다.[NEWLINE][NEWLINE]푸난의 높은 해양 무역 의존도는 그들 몰락의 원인이었습니다. 그들의 해안 항구는 상품을 북쪽과 해안 인구로 보내는 외국 지역과의 무역을 허용했습니다. 그러나 해양 무역이 수마트라로 이동하고 Srivijaya 무역 제국이 부상하고 중국이 동남아시아 전역의 무역로를 점령하면서 남쪽의 경제 불안정이 발생하고 정치와 경제가 북쪽으로 밀려났습니다. 푸난은 6세기에 첸라 왕국의 크메르 정치에 의해 대체되고 흡수되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_THIMPHU', 					'팀푸' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_THIMPHU_ADJ', 					'팀푸의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_THIMPHU_ADJ', 					'[COLOR:240:240:140:255]팀푸[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_THIMPHU_TEXT', 						'1955년부터 팀푸는 히말라야 동쪽 끝에 있는 남아시아의 내륙국인 부탄 왕국의 수도입니다. 북쪽으로는 티베트(중국), 남쪽, 동쪽, 서쪽으로는 인도와 접해 있습니다. 부탄은 17세기 초까지 소규모 전쟁 영지의 패치워크로 존재했습니다. 그 당시 티베트에서 종교적 박해를 피해 도망친 최초의 잡드룽 린포체인 라마이자 군사 지도자인 응아왕 남걀은 이 지역을 통합하고 뚜렷한 부탄 정체성을 발전시켰습니다. 20세기 초 부탄은 대영제국과 접촉했고 독립 후에도 인도와 강력한 양자 관계를 유지했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_ANDORRA', 					'안도라' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ANDORRA_ADJ', 					'안도라의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ANDORRA_ADJ', 					'[COLOR:240:240:140:255]안도라[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_ANDORRA_TEXT', 						'피레네 산맥의 남쪽 경사면에 위치한 안도라 공국은 시내가 발리라 강을 형성하는 산골짜기로 구성되어 있습니다. 안도라의 독립은 전통적으로 서기 803년에 무슬림으로부터 이 지역을 회복한 샤를마뉴에게 귀속됩니다. 1278년에 푸아의 프랑스 백작과 우르겔의 스페인 주교의 공동 종주권 아래 놓였으며, 이후 우르겔의 스페인 주교와 프랑스 국가 원수가 공동으로 다스렸습니다. 유럽에서 마지막인 이 봉건 정부 제도는 1993년 헌법이 채택되어 대부분의 공동 공직자의 권한을 보통 선거로 선출되는 안도라 총평의회로 이양할 때까지 계속되었습니다.[NEWLINE][NEWLINE]안도라는 카탈로니아와의 길고 강한 친화성; 제도는 카탈루냐 법을 기반으로 하며 우르겔 교구(스페인)의 일부입니다.[NEWLINE][NEWLINE]전통 경제는 양 사육을 기반으로 했지만 1950년대 이후 관광의 중요성이 커져 21세기 초반에는 안도라의 중심이 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_CANOSSA', 					'카노사' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_CANOSSA_ADJ', 					'카노사의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CANOSSA_ADJ', 					'[COLOR:240:240:140:255]카노사[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_CANOSSA_TEXT', 						'카노사는 이탈리아의 레조넬레밀리아 남서쪽의 폐허가 된 10세기 성으로, 1077년 교황 그레고리오 7세와 황제 하인리히 4세의 만남의 장소로 유명합니다. 940년 아토 가문의 설립자이자 카노사의 첫 번째 백작인 아달베르트 아토에 의해 세워졌습니다. [NEWLINE]서위 논란에서 교황권의 강력한 지지자였던 카노사 백작부인 마틸다(토스카나의 마틸다)의 초청으로 그레고리오 7세는 1077년 적수에 대항하기 위해 독일로 가는 길에 요새에 머물렀습니다. 헨리 4세. 그의 증언을 미연에 방지하기 위해 헨리는 단순한 참회자로 카노사로 여행했고 1월 28일에 3일을 기다린 후 사면을 받았습니다.[NEWLINE][NEWLINE]이것이 교황권의 지속적인 승리를 의미하지는 않았지만 카노사의 이름은 세속 권력이 교회에 복종하는 것을 뜻하게 되었습니다. 따라서 독일에서 로마 카톨릭의 영향에 반대하는 프로이센의 문화투쟁 동안 비스마르크의 격언: "Nach Canossa gehen wir nicht"("우리는 카노사에 가지 않을 것이다") 도 등장했습니다.[NEWLINE][NEWLINE]이 성은 1255년 레지오 사람들에 의해 파괴되었습니다. 나중에 카노사 가문에게 반환되었습니다. 1321년 길베르토 다 코레지오가 사망한 후 시모네, 귀도 및 알베르토 카노사가 다시 되찾은 1402년까지 다시 레지오의 소유였습니다. 그러나 1409년에 그들은 그것을 에스테 가문에 양도했고, 1557년 파르마 공작 오타비오 파르네세 치하의 짧은 기간을 제외하고는 1796년까지 그것을 소유했다. 그것을 발렌티누스 가문에게 맡겼습니다. 후자는 시스파다네 공화국에 합류한 반항적인 지역 주민들에 의해 1796년에 축출되었습니다. 1819년 발렌티니에게 반환된 후 1878년에 성은 이탈리아 국가에 인수되었고 국가 기념물로 지정되었습니다.[NEWLINE][NEWLINE]지명 "카노사"는 1992년 인근 마을인 샤노 덴자가 역사적, 문화적 유산을 기리기 위해 이름을 카노사로 변경하기 전까지 폐허가 된 성과 인접한 작은 마을만을 지칭했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_BEDULU', 						'발리' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_BEDULU_ADJ', 						'발리의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BEDULU_ADJ', 						'[COLOR:240:240:140:255]발리[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_BEDULU_TEXT', 							'"천 개의 사원이 있는 섬"으로 알려진 발리의 역사는 인도네시아 힌두교의 마지막 보루 중 하나인 문화와 종교로 가득 차 있습니다.[NEWLINE][NEWLINE]발리는 원래 동남아시아와 오세아니아에서 해양 동남아시아를 통해 이주한 사람들이 기원전 2000년경에 거주했습니다.[NEWLINE][NEWLINE]언어적으로 발리인들은 인도네시아 군도, 말레이시아, 필리핀, 오세아니아 사람들과 밀접한 관련이 있습니다. 섬의 서쪽에 있는 세키크 마을 근처에서 이 시기의 석기가 발견되었습니다. 896년과 911년의 비문에는 스리 케사리바마가 언급된 914년까지 왕이 언급되어 있지 않습니다. 그들은 또한 불교와 시바교가 동시에 실천되었던 독특한 방언을 가진 독립적인 발리를 드러냅니다.[NEWLINE][NEWLINE]음푸 신독의 증손녀인 마헨드라다타는 989년경 발리 왕 우다야나 워마데와와 결혼하여 1001년경 아이랑가를 낳았습니다. 이 결혼은 발리에 더 많은 힌두교와 자바 문화를 가져왔습니다. 사칼렌두키라나 공주는 1098년에 나타났습니다. 수라디파는 1115년에서 1119년까지, 자야삭티는 1146년에서 1150년까지 통치했습니다. 자야판구스는 1178년에서 1181년 사이의 비문에 나타나고 아둔쿤티케타나와 그의 아들 파라메스바라는 1204년에 나타납니다.[NEWLINE][NEWLINE]발리 문화는 서기 1세기경부터 인도, 중국, 특히 힌두 문화의 영향을 강하게 받았습니다. 발리 드위파("발리 섬")라는 이름은 914년 스리 케사리 워마데와가 쓴 블란종 기둥 비문에서 왈리드위파를 언급하는 등 다양한 비문에서 발견되었습니다. 이 시기에 사람들은 습답 재배에서 쌀을 재배하기 위해 현지에서 수박이라고 불리는 복잡한 관개 시스템을 개발했습니다. 오늘날에도 여전히 행해지는 일부 종교적, 문화적 전통은 이 시기로 거슬러 올라갑니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DALI', 						'대리국' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DALI_ADJ', 						'대리국의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DALI_ADJ', 						'[COLOR:240:240:140:255]대리국[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_DALI_TEXT', 							'"위대한 진리" 또는 "위대한 행정"이라는 뜻을 가진 대리국은 10세기부터 13세기까지 거의 3세기 동안 동남아시아에서 중요한 역할을 한 불교 왕국이었습니다. 수많은 사원과 거대한 석탑이 있는 경건한 왕국이었으며, 단일 민족이 아닌 다양한 민족과 부족으로 구성되었으며, 그 중 가장 큰 부족은 백이족과 이족이었습니다.[NEWLINE][NEWLINE]대리국은 불교를 보존하고 전파하는 데 큰 영향을 미쳤습니다. 두안 왕족은 그 이전의 난자오 선조들과 마찬가지로 독실한 불교 신자였으며, 달리 주변과 시바오산에 대형 불교 사원을 건설했습니다. 이 사원들은 곧 불교의 중심지가 되었습니다. 이곳에서 왕들은 인근 동남아시아 왕국의 불교를 신봉하는 왕들을 모델로 삼으려고 노력했습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_MULTAN', 						'물탄' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MULTAN_ADJ', 						'물탄의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MULTAN_ADJ', 						'[COLOR:240:240:140:255]물탄[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_MULTAN_TEXT', 							'물탄은 파키스탄 펀자브 주에 있는 도시이자 물탄 지구의 수도입니다. 주 남부에 위치하고 있으며 역사가 깊은 도시입니다. 인구는 380만 명 이상(1998년 인구 조사 기준)으로 파키스탄에서 6번째로 큰 도시입니다. 이 도시는 체납 강 바로 동쪽에 건설되었으며, 국가의 지리적 중심지이자 카라치에서 약 966km 떨어져 있습니다.[NEWLINE][NEWLINE]물탄은 "피르와 신전의 도시"로 알려져 있으며 바자르, 모스크, 멋진 디자인의 무덤이 있는 번영하는 도시입니다. 물탄 국제공항은 파키스탄의 주요 도시와 페르시아만의 도시로 가는 항공편을 연결합니다. 이 도시의 산업으로는 금속 가공, 밀가루, 설탕, 제분, 섬유 제조, 비료, 비누, 유리 등이 있습니다. 물탄은 수공예품, 특히 도자기 및 에나멜 작업으로도 유명합니다.[NEWLINE][NEWLINE]아대륙에서 가장 오래된 도시 중 하나인 물탄은 이슬람 이전 시대의 신전인 태양신 사원에 있던 우상에서 유래한 이름입니다.[NEWLINE][NEWLINE]이 도시는 알렉산더 대왕이 정복(기원전 326년경)하고, 중국 불교 학자 수안상이 방문(AD 641년)하고, 아랍인들이 점령(8세기)했으며, 1005년 무슬림 터키 정복자 가즈나의 마흐무드, 1398년 티무르가 점령했습니다. 16세기와 17세기에 물탄은 무굴 황제들의 통치 아래 평화를 누렸습니다. 1818년, 시크교의 지도자 란짓 싱이 이 도시를 점령했습니다. 영국은 1848년부터 1947년 파키스탄이 독립할 때까지 이곳을 점령했습니다. 랜드마크에는 두 명의 무슬림 성인의 14세기 무덤이 있는 오래된 요새가 있습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_BAGAN', 						'바간' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_BAGAN_ADJ', 						'바간의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_BAGAN_ADJ', 						'[COLOR:240:240:140:255]바간[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_BAGAN_TEXT', 							'이 왕국은 난자오 왕국에서 이라와디 계곡으로 들어온 므란마/버만족이 9세기 파간(현재의 바간)에 세운 작은 정착촌에서 성장했습니다. 그 후 200년 동안 이 작은 공국은 점차 주변 지역을 흡수하며 성장하여 1050년대와 1060년대에 아나라아타 왕이 바간 제국을 세우고 이라와디 계곡과 그 주변을 처음으로 하나의 정치 체제로 통일했습니다. 12세기 후반에 이르러 아나으라타 왕의 후계자들은 남쪽으로는 말레이 반도 상류까지, 동쪽으로는 살윈 강까지, 북쪽으로는 현재의 중국 국경 아래까지, 서쪽으로는 아라칸 북부와 친 언덕까지 영향력을 확장했습니다. 12세기와 13세기에 파간은 크메르 제국과 함께 동남아시아 본토의 두 주요 제국 중 하나였습니다. 파간 왕국은 1280년대까지 면세 종교적 부의 지속적인 증가로 인해 궁정과 군인들의 충성심을 유지하는 왕실의 능력에 심각한 영향을 미치면서 13세기 중반에 쇠퇴하기 시작했습니다. 이로 인해 아라칸족, 몽족, 몽골족, 샨족에 의한 내부 혼란과 외부 도전의 악순환이 시작되었습니다. 반복되는 몽골의 침략(1277-1301)은 1287년 4세기 동안 이어져 온 왕국을 무너뜨렸습니다. 왕국 붕괴 이후 250년간의 정치적 분열은 16세기까지 지속되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_RISHIKESH', 					'리시케시' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_RISHIKESH_ADJ', 					'리시케시의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_RISHIKESH_ADJ', 					'[COLOR:240:240:140:255]리시케시[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_RISHIKESH_TEXT', 						'"가르왈 히말라야의 관문", "세계 요가의 수도"로 알려진 리시케시는 히리시케시라고도 하며 인도 우타라칸드 주 데라둔 지구의 데라둔 근처에 있는 도시입니다. 갠지스 강 오른쪽 강변에 위치한 이곳은 힌두교도들의 순례 도시로, 고대 현자들과 성인들이 더 높은 지식을 얻기 위해 이곳에서 명상을 했던 곳입니다. 강변을 따라 수많은 사원과 아쉬람이 세워져 있습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_MUTITJULU', 					'무티출루' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_MUTITJULU_ADJ', 					'무티출루의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_MUTITJULU_ADJ', 					'[COLOR:240:240:140:255]무티출루[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_MUTITJULU_TEXT', 						'"아난구"는 서부 사막 언어를 사용하는 여러 호주 원주민 그룹을 설명하는 포괄적인 용어로, 핏잔자자라와 얀쿠니트자자라가 가장 두드러지게 사용합니다. 서부 사막 언어는 다른 어떤 원주민 언어보다 호주에서 더 많은 지역을 포괄하는 것으로 알려져 있습니다.[NEWLINE][NEWLINE]울룰루와 카타츄타는 아난구 신앙 체계에서 신성한 장소로, 11개의 송라인이 이곳을 통과하거나 그 근처를 지나갑니다. 1979년 원주민 중앙 토지 위원회)는 울룰루-카타츄타 국립공원에 대한 소유권을 주장하기 위해 법적 소송을 시작했고, 1985년 아난구족이 공원 관리위원회의 과반수를 차지하면서도 관광객의 방문을 허용하는 합의안이 시행되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_ISKANWAYA', 					'이스칸와야' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ISKANWAYA_ADJ', 					'이스칸와야의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ISKANWAYA_ADJ', 					'[COLOR:240:240:140:255]이스칸와야[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_ISKANWAYA_TEXT', 						'이스칸와야는 라파스에서 북쪽으로 325km 떨어진 볼리비아의 리카 강 위 산등성이에 위치한 콜럼버스 이전 시대의 신성한 유적지입니다. 이스칸와야는 페루의 마추픽추를 능가하는 규모와 연륜을 자랑하지만 보존 상태가 좋지 않습니다. 이스칸와야 유적은 잉카 문명 이전의 몰로 문화로 거슬러 올라가며, 기원전 800년 또는 1145년부터 1425년까지 전성기 문화 시대에 사람들이 건축물을 지었을 것으로 추정됩니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_TIWANAKU', 					'티와나쿠' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_TIWANAKU_ADJ', 					'티와나쿠의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_TIWANAKU_ADJ', 					'[COLOR:240:240:140:255]티와나쿠[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_TIWANAKU_TEXT', 						'티와나쿠(스페인어: 티아후아나코 또는 티아후아나쿠)는 남아메리카 볼리비아 서부에 있는 콜럼버스 이전 시대의 고고학 유적지입니다. 티와나쿠는 서기 300년부터 서기 1000년까지 번성했던 제국의 수도로, 현재의 페루와 칠레로 확장되었습니다. 안데스 학자들은 티와나쿠를 잉카 제국 이전의 가장 중요한 문명 중 하나로 인정하고 있으며, 약 500년 동안 주요 국가 세력의 의식 및 행정 수도로 사용되었습니다. 고대 도시 국가의 유적은 라파스에서 서쪽으로 약 72km(45마일) 떨어진 티와나쿠 지방 잉가비주 라파스 부의 티티카카 호수 남동쪽 해안 근처에 있습니다.49 잉카의 수도 쿨라수유를 찾는 중입니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DANO', 						'다노' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_DANO_ADJ', 						'다노의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_DANO_ADJ', 						'[COLOR:240:240:140:255]다노[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_DANO_TEXT', 							'다노는 부르키나파소 이오바 주의 주도입니다. 직조와 도자기 시장이 있는 작은 마을로, 식민지 기독교의 영향에도 불구하고 전통적인 우주론과 의식 관습을 이어온 다가라족의 고향입니다. 이러한 관습에는 원소의 힘과 교감하고, 다른 세계의 존재와 소통하며, 소라 껍질로 점을 치는 것이 포함됩니다.[NEWLINE][NEWLINE]다가라족 정착촌은 부르키나파소 남서부의 약 3,500평방킬로미터와 가나 북서부의 거의 같은 면적에 걸쳐 있습니다. 다가라족의 정치 및 사회 조직은 다가라 공동체를 영적으로 보호하는 텡간을 기반으로 합니다.[NEWLINE][NEWLINE]대지 신사는 주로 큰 나무 아래 돌로 이루어진 제사 장소로, 규범에 따라 해당 지역에 처음 도착한 정착민들이 세워야 합니다. 대지 신사에서는 여성과 토양의 다산과 특정 지역의 평화를 책임지는 대지신에게 제사를 지냅니다. 대지 신사에 대한 의식적 통제는 동시에 토지를 분배하고 필요한 희생에 대한 기부금을 요구할 권리를 의미합니다. 따라서 신전을 책임지는 제사장인 대지 사제는 후발 정착민에게 토지를 분배하고 다른 자원에 대한 접근을 규제하며, 때로는 상당한 선물을 대가로 후발 정착민은 집을 짓고 죽은 사람을 묻기 위해 대지 사제의 허가를 요청해야 합니다.[NEWLINE][NEWLINE]이 지역의 비중앙집권 사회에서는 텐간소브 또는 틴다나라고 불리는 대지 사제가 지역 사회의 장로 역할을 수행했으며, 식민지 이전 시기에는 유일한 지역 권위자였습니다. 전통에 따르면 대지 사제의 직책은 정착촌의 창시자 또는 같은 씨족 내의 그의 후손 중 한 명에게 주어집니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_KARYES', 						'카리에스' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_KARYES_ADJ', 						'카리에스의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_KARYES_ADJ', 						'[COLOR:240:240:140:255]카리에스[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_KARYES_TEXT', 							'아토스 산의 수도원 공동체는 그리스의 동방 정교회 수도사 공동체로, 아토스 산을 포함한 아토스 반도의 원위부를 포함하는 영토를 가진 자치 지역, 지방 자치 단체 및 지방 자치 단체의 통합 된 권리를 보유하고 있습니다. 반도의 접경 근위부는 중앙 마케도니아의 일반 아리스토텔레스 공동체에 속합니다.[NEWLINE][NEWLINE]963년 성 아타나시우스 아토나이트가 최초의 수도원을 설립하면서 체계적인 수도원 생활이 시작되었습니다. 1400년에는 40개의 수도원이 있었습니다. 오랫동안 그리스 정교회의 성산으로 여겨져 온 이곳은 1927년 신정 공화국으로 선포되었습니다. 아토나이트 수도원에는 잘 보존된 유물, 희귀 서적, 고대 문서, 엄청난 역사적 가치를 지닌 예술품이 풍부하게 소장되어 있으며, 아토스 산은 1988년부터 세계 문화유산으로 등재되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_SGAANG', 						'스구앵과이' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_SGAANG_ADJ', 						'스구앵과이의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SGAANG_ADJ', 						'[COLOR:240:240:140:255]스구앵과이[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_SGAANG_TEXT', 							'북미의 많은 원주민 부족 중 하나인 하이다 부족은 섬에 사는 민족이라는 점이 특징입니다. 틀링잇족과 침시안족과 관련이 있는 하이다 사회는 귀족, 평민, 노예로 계층화된 씨족 제도를 중심으로 조직되었습니다. 씨족은 모계 혈통을 통해 결정되는 두 개의 주요 씨족이 있었습니다. 이 씨족은 다시 혈통으로 세분화되었습니다.[NEWLINE][NEWLINE]하이다족은 특히 목공예, 직조, 항해에 재능이 뛰어났으며 토템 폴을 최초로 사용한 것으로 알려져 있습니다. 해상에서 활약한 덕분에 식민지 개척자들과 평화로운 무역로를 많이 만들었지만, 현지에서는 노예 제도를 시행하는 두려운 전사였습니다. 이런 이유로 그들은 종종 "북아메리카의 바이킹"이라고 불렸습니다.[NEWLINE][NEWLINE]오늘날 하이다 가와이 본섬의 하이다 보호구역은 하이다 국가 의회를 만들기 위해 함께 뭉쳤습니다. 그들은 문화적 부활을 경험하고 있습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_NYARYANA_MARQ', 				'네네츠' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_NYARYANA_MARQ_ADJ', 				'네네츠의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_NYARYANA_MARQ_ADJ', 				'[COLOR:240:240:140:255]네네츠[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_NYARYANA_MARQ_TEXT', 					'사모예드족이라고도 알려진 네네츠족은 러시아 북극 북부의 원주민입니다. 2010년의 최신 인구 조사에 따르면 러시아 연방에는 44,857명의 네네츠족이 거주하고 있으며, 대부분은 야말로-네네츠 자치 오크루그와 네네츠 자치 오크루그에 살고 있습니다. 이들은 툰드라 또는 포레스트 품종의 네네츠어를 사용합니다. 러시아어의 문자 그대로 변형된 사모와 예드는 경멸적인 의미로 나타나는 "스스로 먹는 사람"이라는 의미를 전달합니다. 따라서 사모예드라는 이름은 20세기에 빠르게 사용되지 않았고, 사람들은 "사람"을 의미하는 네네츠족이라는 이름을 갖게 되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_ADEJE', 						'아데헤' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_ADEJE_ADJ', 						'아데헤의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_ADEJE_ADJ', 						'[COLOR:240:240:140:255]아데헤[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_ADEJE_TEXT', 							'관체족은 북아프리카 해안에서 서쪽으로 약 100킬로미터(60마일) 떨어진 대서양의 카나리아 제도에 거주하던 원주민이었습니다. 이들은 17세기에 멸종한 구안체어를 사용했는데, 이 언어는 베르베르어와 관련이 있는 것으로 추정됩니다. 기원전 천년경에 이 군도에 도착했을 것으로 추정됩니다.[NEWLINE][NEWLINE]관체족은 유럽인이 도착하기 전에 마카로네시안 군도 지역에 살았던 것으로 알려진 유일한 원주민으로, 다른 마카로네시안 군도(카보베르데 제도, 마데이라 제도, 아조레스 제도)에 사람이 살았다는 증거가 없기 때문이죠. 15세기 초 스페인의 카나리아 정복 이후 많은 원주민이 스페인 정복자들에 의해 전멸하고 나머지는 시간이 지나면서 정착민 인구와 문화에 동화되었지만, 실보(라 고메라 섬의 휘파람 언어)와 카나리아 스페인어의 일부 어휘와 같은 원래 문화의 요소가 카나리아 관습과 전통 안에 남아 있습니다.[NEWLINE][NEWLINE]일부 학자들은 관체족과 문화에 대한 파괴를 식민지 대량 학살의 초기 사례로 분류하기도 합니다. 2017년, 관체족의 게놈 전체 데이터를 최초로 분석한 결과, 관체족이 북아프리카에서 유래했으며 인근 북아프리카 본토의 고대 북아프리카 베르베르족과 유전적으로 가장 유사하다는 사실이 확인되었습니다.' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_WOOTEI_NIICIE', 				'아라파호' UNION ALL
-SELECT 'TXT_KEY_CITYSTATE_WOOTEI_NIICIE_ADJ', 				'아라파호의' UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_WOOTEI_NIICIE_ADJ', 				'[COLOR:240:240:140:255]아라파호[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_CIV5_WOOTEI_NIICIE_TEXT', 					'약 3,000년 전, 아라파호족의 조상인 히테이노노''에이노''족은 현재 캐나다 매니토바와 미국 미네소타로 분류되는 레드 리버 계곡을 따라 서부 오대호 지역에 살았습니다. 그곳에서 아라파호 족은 옥수수를 비롯한 농작물을 재배하는 농경 민족이었습니다.[NEWLINE][NEWLINE]캐나다 동부의 유럽 식민지화 이후, 초기 샤이엔족인 히테시노족과 함께 아라파호족은 오지브웨족에 의해 동부 대평원으로 서쪽으로 이주해야만 했습니다. 그들은 프랑스 무역 동맹국으로부터 총을 얻어 수많은 무기를 보유하게 되었죠. 아라파호 족의 조상들은 1700년 이전에 오대호 서부 대평원 지역으로 들어왔습니다. 평원에서의 초기 역사 동안 아라파호 족은 캐나다 서스캐처원 강 남쪽에서 몬태나, 와이오밍, 사우스다코타 서부에 이르는 북부 평원에서 살았습니다.[NEWLINE][NEWLINE]아라파호 부족이 말을 얻기 전에는 가축인 개를 마차를 끄는 짐승으로 사용했습니다. 아라파호 부족은 1700년대 초에 다른 부족으로부터 말을 얻게 되면서 삶의 방식이 바뀌었습니다. 아라파호 부족은 말을 무리와 기마 동물로 사용하는 유목민이 되었습니다. 말을 타고 더 많은 짐을 운반하고 더 쉽게 이동할 수 있었기 때문에 평원에서 더 쉽고 광범위하게 사냥을 할 수 있었고, 사냥 성공률도 높아졌습니다. 점차 아라파호 부족은 남쪽으로 이동하여 긴밀히 연합한 북부 아라파호와 남부 아라파호로 나뉘어 몬태나 남부, 와이오밍 대부분, 네브라스카 팬핸들, 콜로라도 중부와 동부, 오클라호마 서부, 캔자스 극서부 지역에 걸쳐 넓은 공동 영토를 형성했습니다.' UNION ALL
 -- abilities
 SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV_ADEJE', 				'[COLOR_MAGENTA]베네스머:[ENDCOLOR] 언덕에 [ICON_RES_DOGO_CANARIO] [COLOR_GREY]도고 까나리오[ENDCOLOR] 배치 가능 (인접 불가, [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙 제공)[NEWLINE]' UNION ALL
@@ -292,7 +292,7 @@ SELECT 'TXT_KEY_PROMOTION_DODOMA', 						'광야 항해' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_DODOMA_HELP', 					'[ICON_MOVES] 이동력 +2' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_FAYA', 						'전쟁의 수확' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_FAYA_HELP', 						'처치한 적의 [ICON_STRENGTH]전투력 50%만큼 [ICON_RESEARCH] 과학 제공' UNION ALL
-SELECT 'TXT_KEY_PROMOTION_HANOI', 						'애국주의' UNION ALL
+SELECT 'TXT_KEY_PROMOTION_HANOI', 						'[COLOR:240:240:140:255]애국주[ENDCOLOR]의' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_HANOI_HELP', 						'[COLOR_POSITIVE_TEXT]아군 영토 내에서[ENDCOLOR] [ICON_STRENGTH] 전투력 +10%.' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_IFE', 						'이와레파' UNION ALL
 SELECT 'TXT_KEY_PROMOTION_IFE_HELP', 						'외교 임무 수행 시 [ICON_INFLUENCE] 영향력 +20.' UNION ALL
