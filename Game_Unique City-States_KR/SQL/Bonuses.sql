@@ -2,12 +2,8 @@
 -- Updates - Language_ko_KR
 ---------------------------------------------------
 UPDATE Language_ko_KR SET Text = '[NEWLINE][COLOR_WARNING_TEXT][ICON_BULLET] 군사력이 상위 50% 안에 들어야 합니다. 당신의 군사력은 상위 {1_Num}% 입니다.[ENDCOLOR]' WHERE Tag = 'TXT_KEY_POP_CSTATE_PLEDGE_NEED_MORE_MILITARY_TT';
-UPDATE Language_ko_KR
-SET Text = '당신은 {1_CityStateName:textkey}의 [COLOR_POSITIVE_TEXT]동맹[ENDCOLOR]입니다. 만약 당신이 동맹을 잃게 된다면 보너스는 [COLOR_FONT_RED]3[ENDCOLOR]턴 동안만 지속될 것입니다. 매 턴 해당 도시 국가와의 [ICON_INFLUENCE]영향력이 {2_Num} 변경됩니다. 당신이 [COLOR_POSITIVE_TEXT]보호 선언[ENDCOLOR]을 하고서 {1_CityStateName:textkey}{@1_CityStateName: plural 1?이; 2?가;} 피해를 받으면 영향력은 3배 빠르게 감소합니다.'
-WHERE Tag = 'TXT_KEY_ALLIES_CSTATE_TT';
-UPDATE Language_ko_KR
-SET Text =  '도시 국가와의 [ICON_INFLUENCE]영향력이 [COLOR_POSITIVE_TEXT]45[ENDCOLOR]에서 시작합니다. 우호 및 동맹인 도시 국가의 산출량이 [COLOR_POSITIVE_TEXT]75%[ENDCOLOR] 증가합니다. 동맹인 도시 국가 수도의 전투력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 도시 국가로부터 선물 받은 유닛의 경험치가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR] 증가합니다.'
-WHERE Tag = 'TXT_KEY_TRAIT_CITY_STATE_BONUSES';
+UPDATE Language_ko_KR SET Text = '당신은 {1_CityStateName:textkey}의 [COLOR_POSITIVE_TEXT]동맹[ENDCOLOR]입니다. 만약 당신이 동맹을 잃게 된다면 보너스는 [COLOR_FONT_RED]3[ENDCOLOR]턴 동안만 지속될 것입니다. 매 턴 해당 도시 국가와의 [ICON_INFLUENCE]영향력이 {2_Num} 변경됩니다. 당신이 [COLOR_POSITIVE_TEXT]보호 선언[ENDCOLOR]을 하고서 {1_CityStateName:textkey}{@1_CityStateName: plural 1?이; 2?가;} 피해를 받으면 영향력은 3배 빠르게 감소합니다.' WHERE Tag = 'TXT_KEY_ALLIES_CSTATE_TT';
+UPDATE Language_ko_KR SET Text =  '도시 국가와의 [ICON_INFLUENCE]영향력이 [COLOR_POSITIVE_TEXT]45[ENDCOLOR]에서 시작합니다. 우호 및 동맹인 도시 국가의 산출량이 [COLOR_POSITIVE_TEXT]75%[ENDCOLOR] 증가합니다. 동맹인 도시 국가 수도의 전투력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 도시 국가로부터 선물 받은 유닛의 경험치가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR] 증가합니다.' WHERE Tag = 'TXT_KEY_TRAIT_CITY_STATE_BONUSES';
 
 UPDATE Language_ko_KR SET Text = REPLACE(Text, '가능[ENDCOLOR]', '[ENDCOLOR]가능') WHERE Tag = 'TXT_KEY_CSTATE_CAN_EMBASSY';
 UPDATE Language_ko_KR SET Text = REPLACE(Text, '가능![ENDCOLOR].', '[ENDCOLOR]가능!') WHERE Tag = 'TXT_KEY_CSTATE_CAN_PROTECT';
@@ -22,7 +18,6 @@ SELECT 'TXT_KEY_CSTRAIT_MINOR_CIV', 					'동맹 변화'  UNION ALL
 SELECT 'TXT_KEY_CS_ACTIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]도시국가의 주 플레이어 보너스:[ENDCOLOR]'  UNION ALL
 SELECT 'TXT_KEY_CS_PASSIVE_BONUS_HEADER', 				'[COLOR_LIGHT_GREY]도시국가의 기본 능력:[ENDCOLOR]'  UNION ALL
 SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'고유 유닛: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR], [COLOR_CYAN]{2_Tech}[ENDCOLOR] 이후'  UNION ALL
-SELECT 'TXT_KEY_CS_UU_QUICK_INFO', 						'Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR]'  UNION ALL
 -- main definitions
 SELECT 'TXT_KEY_CITYSTATE_CLERMONT', 					'클레몬트' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_CLERMONT_ADJ', 					'[COLOR:240:240:140:255]클레몬트[ENDCOLOR]의' UNION ALL
@@ -331,8 +326,7 @@ SELECT 'TXT_KEY_UNIT_SWISS_GUARD_HELP', 					'[COLOR_CYAN]바티칸시티[ENDCOL
 SELECT 'TXT_KEY_CIV5_UNIT_SWISS_GUARD', 					'스위스 근위대는 역사적으로 중세와 르네상스 시대에 유럽의 궁정에서 경호원으로 활동했던 스위스 출신 용병들을 일컫는 말입니다. 변함없는 충성심과 용맹함으로 찬사를 받은 스위스 근위대는 의장대부터 최전방 부대까지 다양한 임무를 수행했으며 프랑스, 스페인, 나폴리 등 유럽 강대국의 군대에서 사용되었습니다. 1874년 스위스 헌법에 의해 외국 세력의 스위스 근위대 모집이 금지되었지만 교황청을 위해 복무한 교황청 스위스 근위대는 예외였으며, 오늘날에도 교황의 안전과 사도궁의 보안을 책임지는 바티칸의 주요 부대로 남아 있습니다.' UNION ALL
 SELECT 'TXT_KEY_UNIT_GURKHA', 							'구르카' UNION ALL
 SELECT 'TXT_KEY_UNIT_GURKHA_STRATEGY', 						'구르카는 수발총병을 대체하는 카트만두의 고유 유닛입니다. 머스킷병보다 먼저 등장하며, 경험치를 더 많이 얻고 요새화한 유닛 상대로 큰 보너스를 얻습니다.' UNION ALL
-SELECT 'TXT_KEY_UNIT_GURKHA_HELP', 							'[COLOR_CYAN]카트만두[ENDCOLOR]와 동맹인 문명만이 구르카를 [ICON_GOLD] 골드로 구매할 수 있습니다.[NEWLINE][NEWLINE]고유 수발총병 유닛으로 구매 시 즉시 이동할 수 있고, 더 빨리 학습하고 구매에 [COLOR_POSITIVE_TEXT]무기고[ENDCOLOR]가 필요하지 않습니다.[NEWLINE][NEWLINE]
-적을 밀어낼 수 있는 승급 ([COLOR_POSITIVE_TEXT]육중한 돌격[ENDCOLOR]), 추가 경험치 승급([COLOR_POSITIVE_TEXT]빠른 이해력[ENDCOLOR])을 보유합니다.' UNION ALL
+SELECT 'TXT_KEY_UNIT_GURKHA_HELP', 							'[COLOR_CYAN]카트만두[ENDCOLOR]와 동맹인 문명만이 구르카를 [ICON_GOLD] 골드로 구매할 수 있습니다.[NEWLINE][NEWLINE]고유 수발총병 유닛으로 구매 시 즉시 이동할 수 있고, 더 빨리 학습하고 구매에 [COLOR_POSITIVE_TEXT]무기고[ENDCOLOR]가 필요하지 않습니다.[NEWLINE][NEWLINE]적을 밀어낼 수 있는 승급 ([COLOR_POSITIVE_TEXT]육중한 돌격[ENDCOLOR]), 추가 경험치 승급([COLOR_POSITIVE_TEXT]빠른 이해력[ENDCOLOR])을 보유합니다.' UNION ALL
 SELECT 'TXT_KEY_CIV5_UNIT_GURKHA', 							'구르카족은 네팔 산악지대와 인도 고르칼란드 지역에 거주하는 민족입니다. 용감하고 두려움이 없으며 죽음을 두려워하지 않는 것으로 유명한 이들은 1814년 동인도회사가 네팔과 벌인 구르카 전쟁 당시 영국군 지휘관들에게 깊은 인상을 남겼습니다. 전쟁이 끝나기도 전인 1815년, 영국 인도 군대 내에 구르카족 최초의 연대가 창설되었습니다. 19세기부터 20세기까지 구르카족은 전쟁과 수많은 인도 반란에도 불구하고 영국 왕실에 충성을 다했습니다. 구르카족은 영국군의 일원으로 두 차례의 세계대전에 참전하여 15개의 소총 연대를 구성했습니다. 그들은 어떤 고난도 견뎌내는 능력으로 널리 존경받았으며 치명적인 쿠쿠리 칼을 다루는 기술로 두려움을 샀습니다. 구르카 연대는 오늘날까지 계속 복무하고 있습니다.' UNION ALL
 SELECT 'TXT_KEY_UNIT_SISQENO', 							'시스퀘노' UNION ALL
 SELECT 'TXT_KEY_UNIT_SISQENO_STRATEGY', 					'시스퀘노는 선교사를 대체하는 티와나쿠의 고유 유닛입니다. 추가 능력으로, 성큰 가든 시설을 건설할 수 있습니다. 이 능력은 전도하기 전에만 사용할 수 있습니다.' UNION ALL
