@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="f0949547-69b8-4851-b57e-de3c7d533e6b" version="3">
+<Mod id="f0949547-69b8-4851-b57e-de3c7d533e6b" version="14">
   <Properties>
     <Name>Game_Unique City-States_KR</Name>
     <Stability>Alpha</Stability>
-    <Teaser>Game_Unique City-States_KR (v 3)</Teaser>
-    <Description>Game_Unique City-States_KR (v 3)</Description>
+    <Teaser>Game_Unique City-States_KR (v 14)</Teaser>
+    <Description>Game_Unique City-States_KR (v 14)</Description>
     <Authors>molang</Authors>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
@@ -19,16 +19,19 @@
     <ReloadUnitSystem>0</ReloadUnitSystem>
   </Properties>
   <Dependencies>
+    <Mod id="64830ab8-3276-4f3c-916c-1e23f17993d6" minversion="0" maxversion="999" title="Community Balance Overhaul INT" />
     <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="Unique City-States" />
   </Dependencies>
   <References />
   <Blocks />
   <Files>
     <File md5="E45F82D8DA4F7592246ADD3F9C265B71" import="0">SQL/Bonuses.sql</File>
+    <File md5="E45F82D8DA4F7592246ADD3F9C265B71" import="0">XML/UCSTexts.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
       <UpdateDatabase>SQL/Bonuses.sql</UpdateDatabase>
+      <UpdateDatabase>XML/UCSTexts.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>
 </Mod>
