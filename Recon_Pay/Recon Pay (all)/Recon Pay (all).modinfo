@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="62a7d127-5b70-4631-bd79-9694ac641e26" version="4">
+  <Properties>
+    <Name>Recon Pay (all) INT</Name>
+    <Teaser>use every components of Recon Pay in korean</Teaser>
+    <Description>https://forums.civfanatics.com/threads/recon-pay-terrain-cost-all-you-can-move-buffet-edition.685224/</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>VP community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="5cfa5cfc-fe0f-456f-8003-73e6b56865c1" minversion="0" maxversion="999" title="(1L) Community Patch Localized" />
+    <Mod id="64830ab8-3276-4f3c-916c-1e23f17993d6" minversion="0" maxversion="999" title="(2L) Community Balance Overhaul Localized" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
+  </References>
+  <Blocks>
+    <Mod id="fce3457a-e717-4918-a374-d627568c769b" minversion="0" maxversion="999" title="Recon Terrain-Specialization" />
+  </Blocks>
+  <Files>
+    <File md5="71D301671932114AEBB1626D92666755" import="0">Promos.sql</File>
+    <File md5="88762284178B40FFB22794A70701C46F" import="0">Promos.xml</File>
+    <File md5="D17EC17F6105B151E88503790ADA93C8" import="0">RiparianAssigner.lua</File>
+    <File md5="7A11B8977D5583D0CDB1FC6C981B6433" import="0">RiparianFeature.sql</File>
+    <File md5="8A0EC73BEA8FC82B29E7FE5E6EB119EF" import="0">FastCoastal.lua</File>
+    <File md5="E7F3AA97EE26838930AA4B79E554D930" import="0">FastCoastal.sql</File>
+    <File md5="C75409EDEC14D05CD7B42FD8FD9F99D3" import="0">MountedArmorRules.sql</File>
+    <File md5="61F6D3584FFC4B0D8A0509E270E838EF" import="0">ChangePort.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Promos.xml</UpdateDatabase>
+      <UpdateDatabase>Promos.sql</UpdateDatabase>
+      <UpdateDatabase>RiparianFeature.sql</UpdateDatabase>
+      <UpdateDatabase>FastCoastal.sql</UpdateDatabase>
+      <UpdateDatabase>MountedArmorRules.sql</UpdateDatabase>
+      <UpdateDatabase>ChangePort.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="RiparianAssigner.lua">
+      <Name>Riparian Plot Maker</Name>
+      <Description>assigns riparian feature to open river plots at game start</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="FastCoastal.lua">
+      <Name>coastal feature adder</Name>
+      <Description>adds invisible coastal feature to clear land plots adjacent to water</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

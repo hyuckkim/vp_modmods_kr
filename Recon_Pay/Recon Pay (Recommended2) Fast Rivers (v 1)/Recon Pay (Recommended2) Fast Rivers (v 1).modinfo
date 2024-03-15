@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="4b4be32f-72f5-48b7-98a2-acad04934bb0" version="1">
+  <Properties>
+    <Name>Recon Pay (Recommended2) Fast Rivers</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>adds invisible 'Riparian' feature to open plots with rivers, allowing faster movement for recon</Teaser>
+    <Description>adds invisible 'Riparian' feature to open plots with rivers, allowing faster movement for recon</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>VP community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="ccfaf006-f940-467b-808e-78033bcb8b65" minversion="0" maxversion="999" title="Recon Pay Terrain Cost" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="D17EC17F6105B151E88503790ADA93C8" import="0">RiparianAssigner.lua</File>
+    <File md5="8098C471140FE0153BE3677CEED815F3" import="0">RiparianFeature.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>RiparianFeature.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="RiparianAssigner.lua">
+      <Name>Riparian Plot Maker</Name>
+      <Description>assigns riparian feature to open river plots at game start</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

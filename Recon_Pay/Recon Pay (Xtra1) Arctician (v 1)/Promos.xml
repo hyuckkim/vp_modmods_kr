@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ARCTICIAN</Type>
+			<Description>TXT_KEY_PROMOTION_ARCTICIAN</Description>
+			<Help>TXT_KEY_PROMOTION_ARCTICIAN_HELP</Help>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>promoVP_atlas_02</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_PHYSICS</TechPrereq>
+			<PromotionPrereqOr1>PROMOTION_WOODLAND_TRAILBLAZER_3</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_SURVIVALISM_3</PromotionPrereqOr2>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_ARCTICIAN</PediaEntry>
+			<CanCrossIce>1</CanCrossIce>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_ARCTICIAN</PromotionType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<Attack>15</Attack>
+			<Defense>15</Defense>
+		</Row>
+	</UnitPromotions_Terrains>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ARCTICIAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+</GameData>

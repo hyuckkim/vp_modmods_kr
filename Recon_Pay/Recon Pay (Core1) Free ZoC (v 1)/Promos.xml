@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_IGNORE_ZOC</Type>
+			<Description>TXT_KEY_PROMOTION_IGNORE_ZOC</Description>
+			<Help>TXT_KEY_PROMOTION_IGNORE_ZOC_HELP</Help>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>promoVP_atlas_01</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<IgnoreZOC>true</IgnoreZOC>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_IGNORE_ZOC</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_WOODLAND_TRAILBLAZER_2</PromotionType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<DoubleHeal>true</DoubleHeal>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_IGNORE_ZOC</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+</GameData>

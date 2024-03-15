@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="953c93bc-a53c-404a-bc35-659dbe00a170" version="1">
+  <Properties>
+    <Name>Recon Pay (Xtra2) Fast Coastal</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>adds invisible coastal feature to plots adjacent to water, allowing faster movement for recon</Teaser>
+    <Description>adds invisible coastal feature to plots adjacent to water; tb3 recon faster in coastal.  Moves enemy road/railroad bonus from TB3 to Surv2</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>VP community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="4b4be32f-72f5-48b7-98a2-acad04934bb0" minversion="0" maxversion="999" title="RPTC Fast Rivers" />
+    <Mod id="ccfaf006-f940-467b-808e-78033bcb8b65" minversion="0" maxversion="999" title="Recon Pay Terrain Cost" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="8A0EC73BEA8FC82B29E7FE5E6EB119EF" import="0">FastCoastal.lua</File>
+    <File md5="1914E37CB61F8A9EA19D0C518627A7FC" import="0">FastCoastal.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>FastCoastal.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="FastCoastal.lua">
+      <Name>coastal feature adder</Name>
+      <Description>adds invisible coastal feature to clear land plots adjacent to water</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

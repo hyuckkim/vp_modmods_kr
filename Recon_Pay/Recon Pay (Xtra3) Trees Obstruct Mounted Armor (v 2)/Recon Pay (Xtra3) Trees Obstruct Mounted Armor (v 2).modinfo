@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="42a292e5-6a9c-46db-9e98-a90cad23619f" version="2">
+  <Properties>
+    <Name>Recon Pay (Xtra3) Trees Obstruct Mounted Armor</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>slows movement of mounted and armor in forest, jungle, marsh, oasis</Teaser>
+    <Description>slows movement of mounted and armor in forest, jungle, marsh, oasis</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>VP community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="ccfaf006-f940-467b-808e-78033bcb8b65" minversion="0" maxversion="999" title="Recon Pay Terrain Cost" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="F4B7294B7762382BE1E70229E66AFF59" import="0">MountedArmorRules.sql</File>
+    <File md5="0CBF5EA8D616677D5FB2B58C6C0C6F45" import="0">Promos.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MountedArmorRules.sql</UpdateDatabase>
+      <UpdateDatabase>Promos.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
