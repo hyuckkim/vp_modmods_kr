@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1">
+      <Text>{3_PlayerName}의 종교인들이 장로회의 비밀을 밝히기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2">
+      <Text>{1_CivShortDescription}의 사람들이 장로회의 모임을 모방하여 훨씬 더 지혜로운 결정을 내릴 수 있게 되었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3">
+      <Text>{3_PlayerName}가 장로회의 비밀 탐구를 그들의 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4">
+      <Text>{3_PlayerName}가 신성한 회의 건물 내에서 숨겨진 방을 발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5">
+      <Text>{3_PlayerName}의 요원들이 침입자에 대한 방어를 강화하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6_S">
+      <Text>{3_PlayerName}가 장로회의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6">
+      <Text>{3_PlayerName}가 장로회의 비밀을 재발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION">
+      <Text>그래서 기록되었으니</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP">
+      <Text>우리의 신앙은 장로들에 의해 이끌어지며, 그들은 신의 존재를 느끼기 위해 함께 교감하여 중요한 결정을 내립니다. 하지만 그들은 불안한 비밀을 숨기고 있습니다: 세기들 동안 어떤 모임도 신성한 영감을 경험한 적이 없습니다.[NEWLINE][NEWLINE]우리는 첫 번째 모임의 비밀을 재발견해야 합니다. 그래야 다시 지침을 찾을 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 탐구의 성공 소문을 퍼뜨립니다. [ICON_CITIZEN] 시민이 태어날 때, 도시는 5 [ICON_RESEARCH] 과학의 증가를 받습니다 (시대에 따라 비례적 증가).</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_4">
+      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 신성한 회의의 [ICON_RESEARCH] 과학이 20% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_5">
+      <Text>탐구의 최종 단계에서 모든 적 [ICON_SPY] 스파이의 효과iveness이 15% 감소합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시에서 모든 [ICON_FOOD] 식량의 +10%를 [ICON_RESEARCH] 과학으로 변환합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_1">
+      <Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 첫 번째 모임에 대해 아는 모든 것을 찾아야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_2">
+      <Text>*최근의 많은 순간의 큰 통찰이 있었지만, 진정한 영감은 여전히 우리를 피합니다!*[NEWLINE]우리는 교회에 들어서는 순간부터 준비된 사람들이 나중에 모임에 앉을 수 있도록 해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_3">
+      <Text>지금 놓칠 수 없습니다, 우리는 너무 가까이 왔습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_4">
+      <Text>드디어 돌파구를 찾았습니다! 하수도를 보수하는 엔지니어들이 신성한 회의의 대강당을 연상시키는 스타일로 지어진 버려진 방을 발견했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_5">
+      <Text>우리의 적들이 이제 우리의 탐구를 알고 있을 것입니다. 모임이 방해받거나 간섭받지 않도록 해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_6">
+      <Text>각성이 있었습니다. 느껴보셨나요? 모임의 구성원들이 예전보다 더 강력해졌으며, 미래가 더 밝아 보입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

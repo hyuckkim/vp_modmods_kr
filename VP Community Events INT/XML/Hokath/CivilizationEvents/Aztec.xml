@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 새로운 틀라토아니</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1">
+      <Text>{3_PlayerName}이 새로운 틀라토아니를 임명했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 후에후테오틀의 달램</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2">
+      <Text>{3_PlayerName}이 새로 정복한 도시들에서 제물의 빈도를 증가시켰습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 정복자 철학</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3">
+      <Text>{3_PlayerName}이 작가들의 삶에 대한 사제단의 통제를 강화했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 아센다도에게로의 권한 이양</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4">
+      <Text>{3_PlayerName}이 플랜테이션에 대한 통제권을 지주들에게 이양했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 루랄레스</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5">
+      <Text>{3_PlayerName}이 최근의 불안 확산에 대처하기 위해 루랄레스 부대를 창설했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 죽은 자의 날</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6">
+      <Text>{3_PlayerName}이 디아 데 무에르토스 축제를 부활시켰습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION">
+      <Text>이미 시작된 일</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP">
+      <Text>위대한 황제여, 깃털 달린 뱀이 당신을 지켜봅니다. 연장자들이 요청하신 대로 최근의 사태를 논의하기 위해 모였습니다.[NEWLINE][NEWLINE]그들이 언제쯤 당신의 참석을 기대할 수 있겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1">
+      <Text>선택한 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2">
+      <Text>범죄자들의 희생 제사는 법원에서 +4 [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산력 및 [ICON_FOOD] 식량을 생성합니다. 적의 [ICON_SPY] 스파이가 죽으면 신앙과 식량을 시대 및 스파이의 레벨에 따라 보상으로 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 사용하여 새로운 철학적 개념을 발견합니다. 모든 도시는 [ICON_GREAT_WRITER] 위대한 작가 생산 속도가 33% 빨라집니다. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다. 각 [ICON_GREAT_WRITER] 작가는 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4">
+      <Text>아센다도들이 플랜테이션에 대한 통제권을 부여받습니다: [ICON_GOLD] 금 -1, 그러나 [ICON_PRODUCTION] 생산력 +2 및 [ICON_FOOD] 식량 +2.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5">
+      <Text>{1_YieldCost}를 투자하여 루랄레스를 창설합니다. 총기 유닛은 루랄레스 부대 승급을 받고 [ICON_STRENGTH] 불안 임계값이 10% 감소합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 활용하여 죽은 자의 날 축제를 대중화합니다. {4_Turns} 동안 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]에 진입합니다. 성지와 랜드마크는 +3 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광 및 [ICON_FOOD] 식량을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1">
+      <Text>훌륭합니다. 새로운 틀라토아니를 임명하기 위해 모였습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2">
+      <Text>*우리의 정복이 제국에 제대로 통합되고 있는지에 대한 의문이 있습니다*[NEWLINE]우리 법을 위반한 자들은 포로로 취급될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3">
+      <Text>*우리의 고위 종교 인사들이 예술가들에 대한 강력한 통제를 요구하고 있습니다*[NEWLINE]명백히, 테오틀의 본성을 표현하는 예술만이 가치가 있습니다. 신앙을 강화하려면 시민들의 정신을 계발해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4">
+      <Text>*틀라토아니가 지주들에게 국가의 통제권을 이양할 것을 제안하고 있습니다*[NEWLINE]이로 인해 도시의 수익이 감소할 수 있지만, 우리 국민들의 창의력이 이를 극복할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5">
+      <Text>*성장하는 도시들에서 불안 수준에 대한 심각한 우려가 있습니다*[NEWLINE]이 새로운 반항의 물결에 대처하기 위해 민병대를 조직할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6">
+      <Text>*사람들이 전통적인 생활 방식에 대한 존경심을 잃고 있습니다*[NEWLINE]불경스럽습니다. 더 이상 사람들의 심장을 꺼내지는 않지만, 그렇다고 해서 죽은 자들을 잊어서는 안 됩니다. 옛 방식으로 위대한 축제를 조직해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY">
+      <Text>아즈텍 정복 철학</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP">
+      <Text>[ICON_GREAT_WRITER] 위대한 작가 생성 +33%. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2">
+      <Text>아즈텍 희생 제단</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2_HELP">
+      <Text>적의 [ICON_SPY] 스파이가 죽으면 시대 및 스파이의 레벨에 따라 신앙과 식량을 보상으로 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_RURALES">
+      <Text>루랄레스 부대</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_RURALES_HELP">
+      <Text>처치 시 황금기 점수를 보상으로 받고 언덕에서 이동 속도가 두 배가 됩니다. 아즈텍 이벤트에서만 부여됩니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

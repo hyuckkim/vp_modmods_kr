@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION">
+      <Text>붉은 책</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP">
+      <Text>동지-장군님, 다른 전쟁 장관들과 저는 젊은이들의 충성도에 대해 심각한 우려를 가지고 있습니다. 그들은 우리가 겪은 혁명을 경험하지 않았고, 왜 우리가 질서를 필요로 하는지 완전히 이해하지 못합니다.[NEWLINE]동지, 우리는 어떻게 해야 합니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_1">
+      <Text>{1_YieldCost}를 활용하여 모든 도시에서 3% 공급을 얻고, 새로 훈련된 유닛에 +5 XP를 부여합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_2">
+      <Text>[ICON_RESISTANCE] 아나키 상태에 {4_Turns} 턴 동안 들어가며, [ICON_CULTURE] 지루함과 [ICON_STRENGTH] 범죄 기준이 영구적으로 5% 감소합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_3">
+      <Text>모든 도시에서 1 [ICON_CITIZEN] 인구가 감소하지만, 모든 적격 유닛과 향후 {4_Turns} 동안 건설되는 유닛이 Drill II 프로모션을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_1">
+      <Text>해답은 간단합니다, 동지들. 모든 국민에게 국가 서비스를 제공합시다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_2">
+      <Text>그들이 혁명을 잊었다면, 이념의 창시자들이 우리에게 해결책을 주었습니다: 또 다른 혁명을 일으킵시다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_3">
+      <Text>노동, 내 사랑하는 장군님,은 매우 효과적인 교훈입니다. 이 교육받지 못한 청년들에게 가르쳐 주세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY">
+      <Text>국가 서비스</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY_HELP">
+      <Text>인구로부터 +3% 공급 및 +5 XP.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

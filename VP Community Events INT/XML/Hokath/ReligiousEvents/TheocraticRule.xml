@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_1_S">
+      <Text>{3_PlayerName}가 신정 지배의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_1">
+      <Text>{3_PlayerName}의 종교인들이 그 통치자의 신성을 선포합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_2_S">
+      <Text>{3_PlayerName}가 신정 지배 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_2">
+      <Text>{1_CivShortDescription}의 사람들은 전적으로 매료되어 그들의 지도자의 불멸의 영혼을 보호하는 데 헌신하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_3_S">
+      <Text>{3_PlayerName}가 신정 지배의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_3">
+      <Text>{3_PlayerName}가 오래된 묘지에 대한 복구 작업을 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_4_S">
+      <Text>{3_PlayerName}가 신정 지배 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_4">
+      <Text>{3_PlayerName}가 대영구의 범위를 확장합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_5_S">
+      <Text>{3_PlayerName}가 신정 지배 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_5">
+      <Text>{3_PlayerName}가 장례를 국가의 사회 보장에 포함시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_6_S">
+      <Text>{3_PlayerName}가 신정 지배의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_THEOCRATIC_RULE_CHOICE_6">
+      <Text>{3_PlayerName}의 광대한 묘지는 역사상 비할 데 없는 세계의 경이로움입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION">
+      <Text>가벼운 심장</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP">
+      <Text>우리는 모두 내세로 넘어가기 위해 대수호자가 우리의 심장을 하나의 깃털과 비교할 것이라는 것을 알고 있습니다. 대부분의 사람들에게 선한 행위는 어두운 행동을 능가할 수 있습니다. 그러나 위대한 분이여, 당신은 천 개의 인간 생을 살아야 하고 천만 개의 영혼을 다음 세계로 보내야 합니다.[NEWLINE][NEWLINE]우리의 모든 작업이 헛되지 않으려면 당신의 불멸의 영혼을 구해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 대영구가 +1 [ICON_CULTURE] 문화를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 탐구의 성공을 알립니다. 도시들이 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] 동안 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_PEACE] 신앙 및 [ICON_CULTURE] 문화가 5% 더 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 대영구가 +1 [ICON_CULTURE] 문화를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_4">
+      <Text>{1_YieldCost}를 사용하여 대규모 공동묘지를 확장합니다. 대영구가 [ICON_CULTURE] 문화를 20% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_5">
+      <Text>탐구의 마지막 단계에서, 모든 [ICON_DIPLOMAT] 공무원이 +1 [ICON_PEACE] 신앙과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 궁전이 모든 수익에 +10을 추가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_1">
+      <Text>종사자와 함께 묻힌 사람이 그의 선한 성격을 증명하기 위해 그들을 증인으로 삼을 수 있는 것으로 알려져 있습니다. 내가 내 모든 신하를 심판의 자리에 데려갈 수 있는 방법을 찾아야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_2">
+      <Text>*당신에 대한 헌신이 매년 당신의 삶을 화려하고 장엄하게 기념하는 축제를 낳았습니다*[NEWLINE]보십시오! 그들은 나를 사랑합니다. 그들은 정말로 나를 사랑합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_3">
+      <Text>{3_PlayerName}의 통치 아래 모든 사람은 다음 세계에서 나와 함께 여행하겠다고 서약합니다. 그러나 오래된 시대에 살았던 사람들은 어떻게 됩니까? 우리가 기록된 모든 무덤을 발굴해야 합니다! 제사장을 보내세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_4">
+      <Text>모든 신앙의 자녀들이 함께 묻히려면 더 깊은 터널과 더 grander 방을 파야 합니다! 가능한 모든 인력을 동원하여 굴착 작업에 투입하세요. 그들이 과정에서 죽으면... 적어도 멀리 이동할 필요는 없겠군요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_5">
+      <Text>모든 실용적인 준비가 마무리되었으니, 이제 장례를 조직해야 합니다. 모든 공무원들을 대영구로 소집하세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_THEOCRATIC_RULE_DESCRIPTION_CHOICE_6">
+      <Text>*지하 묘지를 걸어가면서 평화로운 분위기가 느껴집니다. 수백만 개의 영혼이 여기에서 당신의 위대함을 죽음의 신에게 증언하기 위해 기다리고 있습니다.*</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

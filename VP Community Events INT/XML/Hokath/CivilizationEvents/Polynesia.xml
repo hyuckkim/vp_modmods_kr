@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 용기의 시험</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 패배한 적에게 명예로운 직위를 수여합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 로코 이아</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 고대 수산 양식 기술을 재발견합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 항해자의 전설</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 사람들에게 지평선 너머의 모험을 알립니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 카후나 지원</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 카후나를 궁정으로 모읍니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 어업 산업</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 폴리네시아의 어업 관행을 현대화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 천국의 해변</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 폴리네시아의 해변을 휴양지로 개방합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION">
+      <Text>마나를 찾아서</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP">
+      <Text>옛날 나하 돌을 이동시키고 많은 부족을 하나의 혈통 아래 통합했던 위대한 왕이여, 당신이 부족들 앞에서 마지막으로 자신의 가치를 증명한 지 오랜 시간이 지났습니다. 그들은 당신의 위대함을 잊었고, 마나가 당신을 떠났다고 말합니다.[NEWLINE][NEWLINE]당신이 왜 폴리네시아를 영원히 다스리기 위해 선택된 자였는지 그들에게 보여줘야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_2">
+      <Text>물고기 연못을 생성하는 방법을 발견합니다 {2_InstantYield}. 모든 등대는 +3 [ICON_FOOD] 식량을 얻으며, [ICON_RES_FISH] 물고기 수확량은 +2 [ICON_PRODUCTION] 생산량을 추가로 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_3">
+      <Text>지평선을 향한 갈망으로 [ICON_CULTURE] 지루함 비율이 10% 증가합니다. 동시에, 수중 타일은 +1 [ICON_FOOD] 식량을 얻고, 바다 타일은 +1 [ICON_PEACE] 신앙과 [ICON_CULTURE] 문화를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_4">
+      <Text>{2_InstantYield}를 사용하여 카후나를 설립합니다. 모든 도시에서 [ICON_GREAT_PEOPLE] 위대한 인물의 출현율이 20% 증가하며, 작업장에서 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_5">
+      <Text>{2_InstantYield}를 희생하여 경제를 현대화합니다. 어선, 등대, 항구, 해양 항구에서 +2 [ICON_GOLD] 금을 얻지만, [ICON_GOLD] 빈곤 수준이 5% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_6">
+      <Text>해변 방문객들이 모든 해안 타일에서 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_1">
+      <Text>그들이 나를 지도자로 도전하게 하세요. 비록 내가 이기겠지만, 그들의 용기에 대해 큰 보상을 줄 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_2">
+      <Text>*당신의 연구자들이 고대 수산 양식 기술을 재발견했습니다*[NEWLINE]내가 사람들에 대한 관심을 보여주기 위해, 고대 연못의 재건을 발표하여 이 땅에 풍요를 되돌리겠습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_3">
+      <Text>*사람들이 바다를 건너 조상들과 영웅들을 따르려는 갈망으로 지쳐갑니다*[NEWLINE]우리 민족은 항상 지평선을 넘어 무지개 끝에 있는 땅을 알고 싶어했습니다. 내 통치 하에 우리는 그 어느 때보다 멀리 항해하며, 새로운 땅과 경이로움을 찾을 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_4">
+      <Text>*우리의 위대한 대가들이 마을에 흩어져 있으며 그들의 기술이 제대로 활용되지 않고 있습니다*[NEWLINE]폴리네시아에 영광을 되찾기 위해, 나는 존경받는 카후나를 고립에서 불러와 제국의 삶에 다시 참여시킬 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_5">
+      <Text>*우리의 자급자족 경제는 외국의 기술과 아이디어로 많은 이득을 볼 수 있지만, 많은 것도 잃을 수 있습니다*[NEWLINE]우리는 평화롭고 행복한 삶을 살고 있지만, 세상은 점점 좁아지고 있습니다. 곧 우리는 현재처럼 살 수 없게 될 것이며, 다른 대제국들이 우리를 삼킬 것입니다. 우리는 그들의 방식으로 맞서 싸우거나 영원히 사라질 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_6">
+      <Text>*우리는 아름다움과 천국으로 축복받았으며, 외국인들은 우리의 행복을 맛보려고 많은 돈을 쓸 것입니다*[NEWLINE]이 새로운 비행기들 덕분에, 세계의 민족들은 몇 시간 내에 우리 도시까지 올 수 있습니다. 이것은 지구상의 천국입니다. 언젠가 그들은 올 것입니다. 우리가 다시 번영하려면 이 기회를 지혜롭게 활용해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY">
+      <Text>천국의 해변</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_HELP">
+      <Text>모든 해안 타일에서 +2 [ICON_TOURISM] 관광이 생성됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2">
+      <Text>카후나</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2_HELP">
+      <Text>위대한 인물 출현율 +20% 증가.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

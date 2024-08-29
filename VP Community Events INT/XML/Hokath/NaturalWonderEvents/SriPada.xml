@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_DESCRIPTION">
+      <Text>발을 잘못 디디다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_HELP">
+      <Text>위대한 지도자님, 청중실에 한 사람이 기다리고 있습니다. 그는 스리파다에 대해 논의하고 싶어합니다.[NEWLINE]그에게 무엇을 말해야 할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_HELP_CHOICE_1">
+      <Text>이 자연의 경이로움이 영구적으로 +1 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_HELP_CHOICE_2">
+      <Text>도시는 각 종교가 신도가 있는 경우 +1 [ICON_PEACE] 신앙과 +1 [ICON_GOLD] 금을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_HELP_CHOICE_3">
+      <Text>스리파다로부터 -5 [ICON_FOOD] 음식이 감소하지만, [ICON_RES_COFFEE] 커피와 [ICON_RES_TEA] 차를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_HELP_CHOICE_4">
+      <Text>오염 산업에 대한 엄격한 규제를 시행합니다. 도시 내 공장과 석탄 발전소는 -3 [ICON_PRODUCTION] 생산력과 -3 [ICON_GOLD] 금을 소모합니다.[NEWLINE]제국의 동물원에 있는 나비들은 +1 [ICON_RESEARCH] 과학과 +1 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_DESCRIPTION_CHOICE_1">
+      <Text>*그는 산에 조상의 명예를 위한 작은 사원을 건설하길 원합니다*[NEWLINE]조상을 기리는 것은 고귀한 일입니다. 우리는 우리의 신하의 요청을 거부하지 않을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_DESCRIPTION_CHOICE_2">
+      <Text>*방문자는 사제이며, 다른 신앙들이 산에 오르는 것을 막아달라고 요청합니다*[NEWLINE]이 사람은 정말 무지하군요! 스리파다는 다양한 평화로운 신앙들에 의해 신성하게 여겨지고 있습니다. 그의 허영심 때문에 문제를 삼지 않겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_DESCRIPTION_CHOICE_3">
+      <Text>*청원자는 상인으로, 그는 산의 경사면에 있는 벼밭을 차와 커피와 같은 값비싼 열대 식물의 농장으로 대체하고 싶어합니다*[NEWLINE]도시의 식량 공급은 충분하므로, 우리는 이 계획을 지원합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_SRI_PADA_DESCRIPTION_CHOICE_4">
+      <Text>*여성은 과학 자문의 추천을 받아 왔으며, 산의 독특한 나비 개체군의 보호와 연구를 캠페인하고 있습니다*[NEWLINE]이 보호 계획이 정확히 무엇을 포함하는지 알고 싶습니다. 나는 나비를 매우 좋아합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_SRI_PADA_DUMMY">
+      <Text>영적 의미</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_SRI_PADA_DUMMY_HELP">
+      <Text>도시 내 모든 종교가 신도가 있을 때 +1 [ICON_PEACE] 신앙과 +1 [ICON_GOLD] 금을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_SRI_PADA_DUMMY_2">
+      <Text>나비 헌장</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_SRI_PADA_DUMMY_2_HELP">
+      <Text>동물원에 +1 [ICON_TOURISM] 관광과 [ICON_RESEARCH] 과학을 제공합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

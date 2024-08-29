@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_DESCRIPTION">
+      <Text>진지함의 중요성</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_HELP">
+      <Text>당신의 개방적인 태도는 우리의 엔터테인먼트 산업과 교육 기관에서 다소... 폭발적인 발언들을 촉발했습니다.[NEWLINE]어떻게 진행할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_HELP_CHOICE_1">
+      <Text>각 도시에서 1 [ICON_HAPPINESS_4] 불행을 감수하여 정책이 채택될 때마다 모든 도시에서 [ICON_CULTURE] 문화가 생성됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_HELP_CHOICE_2">
+      <Text>당신의 [ICON_GREAT_WRITER] 작가들이 각각 +2 [ICON_GOLD] 금과 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 사회 참여 프로젝트에 투자하여 [ICON_GOLDEN_AGE] 황금 시대 동안 당신의 도시에서 +10% [ICON_CULTURE] 문화가 생산됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_DESCRIPTION_CHOICE_1">
+      <Text>이런 가벼운 불만들은 우리의 계획이 실현될 때 모두 용서받을 것입니다. 우리는 위협하거나 억압할 필요가 없으며, 자유롭고 개방적인 사회는 필연적으로 이런 대화들을 포함합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_DESCRIPTION_CHOICE_2">
+      <Text>우리를 조롱하는 쇼들이 정말로 꽤 재미있습니다. 아이러니하게도, 자유로운 공적 담론을 허용하는 것이 - 어느 정도 - 경제를 지원할 수 있다는 것은 정말로 흥미롭습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_CREATIVE_EXPRESSION_DESCRIPTION_CHOICE_3">
+      <Text>약간의 논쟁은 좋지만, 이 방향에 대해 다소 걱정이 됩니다. 사람들이 국가에 대해 위험하게 불만을 가지지 않도록 해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_CREATIVE_EXPRESSION_DUMMY">
+      <Text>자유롭고 개방적인 사회</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_CREATIVE_EXPRESSION_DUMMY_HELP">
+      <Text>사회 정책이 잠금 해제될 때 +10 [ICON_CULTURE] 문화가 시대에 따라 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_CREATIVE_EXPRESSION_DUMMY_2">
+      <Text>사회 참여 프로젝트</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_CREATIVE_EXPRESSION_DUMMY_2_HELP">
+      <Text>황금 시대 동안 +10% [ICON_CULTURE] 문화가 생성됩니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

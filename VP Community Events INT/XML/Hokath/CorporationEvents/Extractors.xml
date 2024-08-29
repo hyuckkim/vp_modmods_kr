@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_1_S">
+      <Text>{3_PlayerName}가 정부의 Firaxite 자원 정책을 명확히 합니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_1">
+      <Text>Firaxite 자원 주식이 {1_CivShortDescription}의 주식 시장에 상장됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_2_S">
+      <Text>{3_PlayerName}가 정부의 Firaxite 자원 정책을 명확히 합니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_2">
+      <Text>{2_CivDescription}가 {1_CivShortDescription}의 경제에 Firaxite 자원의 도입을 관리하는 법안을 제정합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_3_S">
+      <Text>{3_PlayerName}가 정부의 Firaxite 자원 정책을 명확히 합니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_EXTRACTOR_FRANCHISE_CHOICE_3">
+      <Text>{2_CivDescription}가 Firaxite 자원 제품에 대해 높은 세금을 부과합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_DESCRIPTION">
+      <Text>채식 옵션이 있습니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_HELP">
+      <Text>새로운 기업이 우리의 국경 내에서 운영을 시작했습니다. 이들의 등장으로 기술적 및 경제적 기회가 열리지만, 글로벌 비즈니스와 국가적 자기 이익 간의 미세한 균형이 드러납니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 전하?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_HELP_CHOICE_1">
+      <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_RESEARCH] 과학을 소비합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 지불하고 Centaurus Extractors 프랜차이즈로부터 +10 [ICON_PRODUCTION] 생산을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_HELP_CHOICE_3">
+      <Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 어선들이 +3 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_DESCRIPTION_CHOICE_1">
+      <Text>왜 여기 있나요? 주식 거래소에 올리세요! 시장이 그 복잡한 일을 대신 걱정할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_DESCRIPTION_CHOICE_2">
+      <Text>적절한 감독 및 규제 체계를 통해 진보를 지지하면서도 대기업에 의해 노동자가 착취당하지 않도록 보호해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_EXTRACTOR_FRANCHISE_DESCRIPTION_CHOICE_3">
+      <Text>우리 사람들의 삶의 방식을 이렇게 침식당하게 할 수 없습니다. Centaurus에 대해 세금을 부과하세요. 필요한 만큼 높게 설정하십시오.</Text>
+    </Row>
+    
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_RIOT_DESCRIPTION">
+      <Text>솜사탕 토끼들이 아니야!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_RIOT_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_RIOT_HELP_CHOICE_1">
+      <Text>최대 2개의 캠프가 Centaurus Extractors의 기업 관행에 항의하여 약탈당합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_RIOT_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+    
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_DESCRIPTION">
+      <Text>스테이크는 그 어느 때보다 높습니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_HELP">
+      <Text>도시 내 Centaurus Extractors 프랜차이즈의 관리자가 공동 사업에 대해 접근합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_HELP_CHOICE_1">
+      <Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_DESCRIPTION_CHOICE_1">
+      <Text>우리의 고도로 숙련된 인력을 활용하는 이 아이디어가 마음에 듭니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_HELP_CHOICE_2">
+      <Text>[ICON_GREAT_SCIENTIST] 과학자들이 도시에서 +2 [ICON_FOOD] 음식을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_DESCRIPTION_CHOICE_2">
+      <Text>유전공학을 연구하는 우리 학자들과의 협력이 합리적인 일인 것 같습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_HELP_CHOICE_3">
+      <Text>{2_InstantYield}와 {4_GPChange}를 도시에서 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_UNIVERSITY_DESCRIPTION_CHOICE_3">
+      <Text>어선에서 새로운 엔진을 시험해 보는 대규모 계획이 마음에 듭니다. 정말 우주 시대의 물건이네요.</Text>
+    </Row>
+    
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_COUNTER_DESCRIPTION">
+      <Text>정말 아름다운 코트</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_COUNTER_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_COUNTER_HELP_CHOICE_1">
+      <Text>사치품이 식료품점에서 +3 [ICON_GOLD] 금과 +3 [ICON_TOURISM] 관광을 생성합니다. {4_GPChange}를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CENTAURUS_COUNTER_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

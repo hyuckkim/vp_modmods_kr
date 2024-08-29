@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_DESCRIPTION">
+      <Text>프로젝트: 하늘</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_HELP">
+      <Text>다른 문명이 하늘을 목표로 하고 있다는 소식을 들으셨겠죠?[NEWLINE][NEWLINE]저희의 최신 프로젝트를 제안합니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_HELP_CHOICE_1">
+      <Text>{1_YieldCost}를 사보타주 계획에 배정합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_HELP_CHOICE_2">
+      <Text>아무 것도 하지 않습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_DESCRIPTION_CHOICE_1">
+      <Text>그들이 현실로 돌아오도록 도와줍시다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SABO_DESCRIPTION_CHOICE_2">
+      <Text>이것은 너무 위험한 시도입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_DESCRIPTION">
+      <Text>연구 자금 요청</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_HELP">
+      <Text>화학 분야의 새로운 발견 이후, 국가 대학의 연구팀이 비행이라는 오래된 꿈을 실현하기 위한 자금을 요청하고 있습니다.[NEWLINE][NEWLINE]다음 옵션 중 하나를 선택하십시오...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_HELP_CHOICE_1">
+      <Text>미래의 잠재적 이익을 위해 {1_YieldCost}를 사용합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 {2_InstantYield}를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_HELP_CHOICE_3">
+      <Text>아무 것도 얻지 않습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_DESCRIPTION_CHOICE_1">
+      <Text>이 시대가 사람들이 하늘을 정복하는 시대가 되기를 바랍니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_DESCRIPTION_CHOICE_2">
+      <Text>당신은 공중에 있는 바보인가요?! 사람들은 하늘을 향해 손을 뻗어서는 안 됩니다. 자금을 사용하여 우리의 신앙을 강화하겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_DESCRIPTION_CHOICE_3">
+      <Text>여기에는 여유 자금이 없습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SUCCESS_DESCRIPTION_CHOICE_1">
+      <Text>열기구가 공중에 띄워졌습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_SUCCESS_HELP_CHOICE_1">
+      <Text>실험이 성공하여 인류 비행에 한 걸음 더 가까워졌습니다. 사람들은 감탄하고 있습니다. {2_InstantYield}와 5턴의 [ICON_GOLDEN_AGE] 황금기를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_FAIL_DESCRIPTION_CHOICE_1">
+      <Text>실패한 실험</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_RESEARCHAIR_FAIL_HELP_CHOICE_1">
+      <Text>연구팀은 여러 가지 고장으로 인해 야심찬 프로젝트에 성공하지 못했습니다. 다행히 큰 사고는 없었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RESEARCHAIR_CHOICE_1_S">
+      <Text>{3_PlayerName}이 비행 연구에 자금을 지원하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RESEARCHAIR_CHOICE_1">
+      <Text>다른 문명이 실험 자금을 지원하여 하늘을 목표로 하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RESEARCHAIR_FAIL_CHOICE_1_S">
+      <Text>실험 중에 열기구가 malfunction 했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RESEARCHAIR_FAIL_CHOICE_1">
+      <Text>{3_PlayerName}의 실험적 열기구가 공개 시연 중에 malfunction 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_COOLSUMMER_DESCRIPTION">
+      <Text>여름, 날씨는 덥다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_COOLSUMMER_HELP">
+      <Text>올 여름은 특히 덥고, 주변 사람들이 더위와 싸우고 있습니다. 고문이 당신이 좋아하는 시원한 음료를 나누는 것이 좋겠다고 제안하지만, 이를 위해 대규모 원정이 필요합니다. 어떻게 하시겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_1">
+      <Text>산으로 팀을 조직하여 보내십시오. 세상에 나의 관대함을 알리겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_1_HELP">
+      <Text>{1_YieldCost}를 사용하여 {4_GPChange}와 {5_Turns} 동안 WLTKD를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_2">
+      <Text>이것은 천상의 벌이라고 말하십시오! 그들이 열심히 일해야만 더위가 사라질 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_2_HELP">
+      <Text>종교에 대한 권위를 활용하여 {1_YieldCost}를 소모하고 {2_InstantYield}를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_3">
+      <Text>얼음 빙원으로 팀을 조직하여 보내십시오. 세상에 나의 관대함을 알리겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_3_HELP">
+      <Text>{1_YieldCost}를 사용하여 {4_GPChange}와 {5_Turns} 동안 WLTKD를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_4">
+      <Text>이번 여름에는 프로젝트가 지연될 수밖에 없다는 것을 받아들여야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_4_HELP">
+      <Text>도시에서 {1_YieldCost}를 잃습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

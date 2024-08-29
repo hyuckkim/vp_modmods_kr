@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION">
+      <Text>암시장</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP">
+      <Text>당국이 도시로 밀수된 물품의 소규모 작업을 차단했습니다.[NEWLINE][NEWLINE]지사님은 이들이 유용할 수 있다고 생각하십니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_1">
+      <Text>{2_InstantYield} 상당의 물품을 압수합니다. 도시의 [ICON_GREAT_MERCHANT] 상인들이 손해를 봅니다. {4_GPChange}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_2">
+      <Text>{2_InstantYield} 황금 시대 점수를 잃습니다. [ICON_STRENGTH] 스트레스 임계값이 영구적으로 10% 감소합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_3">
+      <Text>도시의 모든 [ICON_GREAT_MERCHANT] 상인이 +1 [ICON_GOLD] 금을 생성하며, 경찰서가 +2 [ICON_PRODUCTION] 생산을 생성합니다. 그러나 [ICON_STRENGTH] 스트레스 임계값이 15% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_4">
+      <Text>도시에 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] 상태를 입력합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_1">
+      <Text>거래는 없습니다. 법이 그들의 처벌을 명확히 하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_2">
+      <Text>내 바로 앞에서 부패에 대해 말하다니?! 나는 법이다. 새로운 지사를 찾고, 옛 지사는 이 범죄자들과 함께 처형하라.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_3">
+      <Text>동의합니다. 범죄는 항상 존재할 것이며, 법의 반대편에 친구를 두는 것도 유용할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_4">
+      <Text>이 물품들을 금지하는 것은 다소 구식이라고 생각합니다. 밀수업자들을 용서하고 이러한 제품들을 합법화하세요.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

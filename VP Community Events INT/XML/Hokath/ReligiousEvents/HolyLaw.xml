@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_1_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_1">
+      <Text>{3_PlayerName}의 종교 지도자들이 신성한 법의 비밀을 찾기 위해 고대 문헌을 탐색하기 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_2_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_2">
+      <Text>{1_CivShortDescription}의 부모들이 자녀들이 적절히 신성화되도록 하기 위해 비범한 의식과 의식을 수행하는 데 기꺼이 돈을 지불하고 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_3_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_3">
+      <Text>{3_PlayerName}가 신성한 법의 비밀 탐구를 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_4_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_4">
+      <Text>{3_PlayerName}가 신성한 법정을 개혁합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_5_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_5">
+      <Text>{3_PlayerName}의 요원들이 잃어버린 신성한 문서를 찾기 위해 국제적인 사건을 일으키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_6_S">
+      <Text>{3_PlayerName}가 신성한 법의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HOLY_LAW_CHOICE_6">
+      <Text>{3_PlayerName}가 신성한 법의 성스러운 유물을 발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION">
+      <Text>번역의 오류</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP">
+      <Text>첫 번째 예언자는 신으로부터 직접 신성한 문서를 받았습니다. 그것은 완벽하고 오류가 없었습니다. 그 이후로 우리의 언어는 변했고, 문서가 여러 번 복사되었습니다. 우리의 실수로 우리는 무의식적으로 신에 대한 신성을 모독하고 그분의 말씀을 더럽혔습니다.[NEWLINE][NEWLINE]원래의 문서가 잃어버리지 않았다면, 우리의 신성한 형제단 내의 분열은 결코 일어나지 않았을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 법정이 +1 [ICON_GOLD] 금화를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 탐구의 성공을 알립니다. [ICON_CITIZEN] 시민이 태어날 때, 도시의 [ICON_GOLD] 금화 생산량이 20% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 법정이 +1 [ICON_GOLD] 금화를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_4">
+      <Text>{1_YieldCost}의 종교적 신비를 밝혀냅니다. 신성한 법정의 [ICON_GOLD] 금화가 25% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_5">
+      <Text>문서를 찾는 마지막 단계에서, 모든 [ICON_SPY] 스파이가 레벨업합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시는 [ICON_GOLDEN_AGE] 황금 시대와 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] 동안 +10% [ICON_GOLD] 금화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_1">
+      <Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 첫 번째 예언자에 대해 가능한 모든 것을 알아내야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_2">
+      <Text>*몇몇 이전에 적대적이었던 분파들이 탐구로 통합되었습니다!*[NEWLINE]모든 진리를 찾을 수 있는 하나의 오류가 없는 문서가 존재하는 것이 명백합니다. 우리가 그 문서에 가까워질수록, 갈등의 상처는 치유됩니다. 이것이 바로 신의 경이로움입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_3">
+      <Text>많은 진전을 이루었지만, 진정한 문서는 여전히 우리를 피하고 있습니다! 우리의 노력을 배가해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_4">
+      <Text>하나님께 영광을! 무너져 가는 성소를 수리하는 동안 첫 번째 예언자의 문서가 발견되었습니다! 우리는 문서에 가까워지고 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_5">
+      <Text>우리는 문서를 찾고 있는 유일한 사람들이 아닙니다. 만약 이 문서가 이단자들에게 넘어간다면, 그들은 문서를 파괴하거나 더 나쁜 일을 할 것입니다. 우리는 그들을 물리치기 위해 신중해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HOLY_LAW_DESCRIPTION_CHOICE_6">
+      <Text>문서가 우리 손에 들어왔습니다! 마침내 신성한 법정에 문서가 반환되었습니다. 평화와 정의가 영원히 지구를 지배할 것입니다! 하나님께 영광을!</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_DESCRIPTION">
+      <Text>운동은 건강에 좋다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_HELP">
+      <Text>정예 훈련 프로그램 부서가 특별 훈련을 실시할 장소를 찾고 있습니다. 도시 주변의 몇몇 환경이 유망해 보입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_HELP_CHOICE_1">
+      <Text>훈련으로 인해 정글 타일에서 -1 [ICON_FOOD] 식량이 감소합니다. 도시에서 훈련된 해당 유닛들은 Woodsman 프로모션을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_DESCRIPTION_CHOICE_1">
+      <Text>정글은 초보자에게 치명적입니다. 무자비한 킬러 팀을 훈련하기에 완벽한 장소입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_HELP_CHOICE_2">
+      <Text>도시가 {3_CityYield}를 사용하여 사막에서 군인들을 먹여야 합니다. 도시에서 훈련된 해당 유닛들은 March 프로모션을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_DESCRIPTION_CHOICE_2">
+      <Text>사막에서는 계속 걷거나 죽습니다. 사막에서 길을 잃기 전에 배우는 것이 중요한 교훈입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_HELP_CHOICE_3">
+      <Text>채석장의 일부 구역을 차단하여 -2 [ICON_PRODUCTION] 생산력을 잃습니다. 도시에서 훈련된 해당 유닛들은 Cover II 프로모션을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_TRADE_DESCRIPTION_CHOICE_3">
+      <Text>채석장은 실제 폭발 훈련에 완벽한 장소입니다. 천 개의 치명적인 발사체 사이에서 머리를 유지하는 것은 강인함의 훌륭한 시험입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY">
+      <Text>정글 훈련 프로그램</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY_HELP">
+      <Text>여기서 훈련된 군인들은 정글을 사용하여 식량 생산력을 줄이고 [COLOR_POSITIVE_TEXT]숲사람[ENDCOLOR] 인증서를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY_2">
+      <Text>사막 훈련 프로그램</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY_2_HELP">
+      <Text>여기서 훈련된 군인들은 사막에서 지구력 테스트를 통과하여 [COLOR_POSITIVE_TEXT]행군[ENDCOLOR] 인증서를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY_3">
+      <Text>채석장 훈련 프로그램</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_TRADE_DUMMY_3_HELP">
+      <Text>여기서 훈련된 군인들은 채석장에서 실제 폭발 테스트를 사용하여 생산력을 줄이고 [COLOR_POSITIVE_TEXT]엄폐 II[ENDCOLOR] 인증서를 받습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

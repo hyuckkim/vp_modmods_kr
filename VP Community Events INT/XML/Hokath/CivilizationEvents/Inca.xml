@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 혼인 이동성</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 젊은 카파크를 황태자의 자리에 올립니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 알파카 양털</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 알파카 양털을 엮는 기술을 발견합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 와카 트레일</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 알프스에 일련의 성스러운 신전을 세우고, 영구적인 꽃 [ICON_RES_DYE] 염료에 대한 지식을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 산악 채굴</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 다이너마이트의 도움으로 광물 탐사를 시작합니다. [ICON_RES_GOLD], [ICON_RES_SILVER], [ICON_RES_COPPER]에 접근합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 정치적 정화</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 과두제를 정화하여 장기적인 안정성을 희생하면서 자신의 정권에 대한 광범위한 대중의 지지를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 산악 관광</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 세계 관광객들에게 숨겨진 잉카 산악 통로를 개방합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION">
+      <Text>태양의 아들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP">
+      <Text>또 다른 세대, 또 다른 당신의 신하들의 자녀들이 궁전을 지나가며, 당신의 위대한 제국에 동화됩니다. 잉카의 위대한 인물들이 졸업식에서 당신의 연설을 듣기 위해 모였습니다.[NEWLINE][NEWLINE]우리는 당신의 지혜를 기다립니다, 사파 잉카.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2">
+      <Text>{2_InstantYield}의 대체 자원을 제공합니다. [ICON_RES_SHEEP] 양털 타일에서 생산된 직물은 +1 [ICON_CULTURE] 문화, +2 [ICON_PEACE] 신앙, +2 [ICON_GOLD] 금을 생성합니다. 모든 도시에서 +1 [ICON_HAPPINESS_2] 행복.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3">
+      <Text>와카 트레일을 설정합니다. 산에서는 +2 [ICON_PEACE] 신앙을 생성하며, [ICON_RES_DYE] 염료 두 개를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4">
+      <Text>{2_InstantYield}를 광물 탐사에 투자합니다. 산에서는 +2 [ICON_PRODUCTION] 생산을 생성하며, [ICON_RES_GOLD] 금, [ICON_RES_SILVER] 은, [ICON_RES_COPPER] 구리 하나를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5">
+      <Text>사회 정책을 강제로 시행합니다. 모든 도시는 15턴 동안 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] 상태에 들어가며, [ICON_STRENGTH] 스트레스와 [ICON_GOLD] 빈곤 기준이 영구적으로 5% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6">
+      <Text>국제적으로 유산 사이트에 대한 접근을 허용하며 {2_InstantYield}를 잃습니다. 대신, 산에서는 +2 [ICON_CULTURE] 문화와 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1">
+      <Text>이 경이로운 순간을 기념하기 위해, 졸업생이 왕녀와 결혼합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2">
+      <Text>*궁정의 직물 제조자들이 알파카가 음식과 종교적 제물로 광범위하게 사용되며, 특히 다재다능한 양털을 생산한다는 것을 발견했습니다*[NEWLINE]카파크들이 자신의 땅으로 돌아갈 때, 그들은 사파 잉카의 지식으로 풍요로워지고, 모두가 번영을 누리게 될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3">
+      <Text>*사제들은 산악 신전을 세우고, 숨겨진 영혼을 깨우며 신성한 꽃을 재배하기를 원합니다*[NEWLINE]내 학생들이 그들의 땅으로 돌아갈 때, 그들은 신의 하인으로서, 산의 비밀에 대한 교육을 받은 채로 돌아갑니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4">
+      <Text>*우리는 이제 산의 중심부까지 더 깊이 파고들 수 있는 지식을 갖추었습니다*[NEWLINE]북에서 남, 동에서 서, 우리 위대한 왕국의 모든 구석에서 지구의 비밀을 파헤칠 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5">
+      <Text>*정치적 엘리트와 일반인들 사이에 당신의 통치에 대한 광범위한 불만이 있습니다*[NEWLINE]내가 총독들을 체포하게 되어 유감입니다! 그들은 잉카와 일반인들에게 충실한 자녀들로 교체될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6">
+      <Text>*당신의 신성한 장소와 산악 마을이 수천 년 동안 세계에 숨겨져 있었으나, 이제 세계에 의해 발견되었습니다*[NEWLINE]이제 우리는 우리 위대한 보물을 세상에 숨길 수 없습니다. 잉카의 위엄 앞에 무릎을 꿇고자 하는 모든 이들은 오십시오, 그리고 보십시오!</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1_S">
+      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1">
+      <Text>Two Kay Foods의 주식이 이제 {1_CivShortDescription}의 증권 거래소에 상장되었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2_S">
+      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2">
+      <Text>{2_CivDescription}가(이) Two Kay Foods의 {1_CivShortDescription} 경제 도입을 관리하기 위해 법안을 제정했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3_S">
+      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3">
+      <Text>{2_CivDescription}가(이) Two Kay Foods 상품에 대해 높은 관세를 부과했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION">
+      <Text>슈퍼마켓 스윕</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP">
+      <Text>새로운 기업이 우리 영토 내에서 운영을 시작했습니다. 이들의 등장은 기술적 및 경제적 기회를 의미하지만, 글로벌 비즈니스와 국가의 자기 이익 간의 미묘한 균형을 가져옵니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 폐하?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_1">
+      <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_FOOD] 음식이 소비됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 지불하여 Two Kay Foods 프랜차이즈에서 +10 [ICON_FOOD] 음식을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_3">
+      <Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 농장에서는 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_1">
+      <Text>왜 또 여기에 있죠? 증권 거래소에 상장시키세요! 시장이 그런 복잡한 문제를 해결해 줄 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_2">
+      <Text>적절한 감독과 규제의 틀을 통해 진전을 추구하면서 대기업에 의해 우리의 노동자들이 착취당하지 않도록 보호합시다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_3">
+      <Text>우리 국민의 생활 방식을 이렇게 침식시킬 수는 없습니다. Two Kay에 대해 관세를 부과하겠습니다. 필요한 만큼 높게 설정하십시오.</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION">
+      <Text>말맛</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_HELP_CHOICE_1">
+      <Text>Two Kay Foods 스캔들로 인해 최대 2개의 농장이 약탈당합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION">
+      <Text>작은 도움이 됩니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP">
+      <Text>시의 Two Kay Foods 프랜차이즈 관리자가 공동 사업 제안에 접근해 왔습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_1">
+      <Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_1">
+      <Text>우리의 고도로 숙련된 인력을 활용하는 이 아이디어가 마음에 듭니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_2">
+      <Text>[ICON_GREAT_SCIENTIST] 과학자들이 이 도시에서 +1 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_2">
+      <Text>우리의 의학 실험실을 활용하여 작물 파괴 질병을 치료하는 것은 좋은 아이디어처럼 보입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_3">
+      <Text>이 도시에서 {2_InstantYield}와 {4_GPChange}를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_3">
+      <Text>이 신형 농약은 꽤 놀랍습니다. 잘 될 수 있는지 확인해 봅시다.</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_DESCRIPTION">
+      <Text>포장 및 발송</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_HELP_CHOICE_1">
+      <Text>식품 포장 혁신이 시장에서 +3 [ICON_GOLD] 금과 +3 [ICON_FOOD] 음식을 생성합니다. {4_GPChange}를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

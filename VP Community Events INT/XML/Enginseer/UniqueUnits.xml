@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNIT_DESCRIPTION">
+      <Text>외국 군대</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNIT_DESCRIPTION_S">
+      <Text>{2_City}에 용병이 고용되었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_HELP">
+      <Text>위기 상황에서 즉시 준비되는 이들은 당신의 서비스에 응합니다... 단, 대가를 지불해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_1">
+      <Text>그렇다면.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_1_SUCCESSFUL">
+      <Text>{2_City}의 농작물이 죽어가고 식량 기근이 발생하자 시민들이 국가에 긴급 식량 지원을 요구하고 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_2">
+      <Text>그들에게 대가를 지불하기보다는, 그들이 무엇을 위해 싸우고 있는지 보여주는 건 어떨까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_2_SUCCESSFUL">
+      <Text>{2_City}의 헤르미타지를 이용하여, </Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_3">
+      <Text>안타깝지만 그들을 돌려보내야겠군. 하지만 그들의 준비성을 고맙게 생각해!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_UNIQUEUNITAMERICA_CHOICE_3_HELP">
+      <Text>[ICON_BULLET]아무 일도 발생하지 않습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

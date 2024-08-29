@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION">
+      <Text>경이로운 다양성</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP">
+      <Text>항해사 길드는 대산호초의 상태에 대해 우려하고 있습니다, 주군이시여. 그들의 대표단이 다음 방에서 기다리고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1">
+      <Text>이 자연경관은 영구적으로 +1 [ICON_FOOD] 식량과 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2">
+      <Text>이 도시에서 건설된 해군 유닛은 +1 [ICON_MOVES] 이동력과 아군 영토 외부에서 치료할 수 있는 능력을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3">
+      <Text>{5_Turns} 동안 두 개의 [ICON_RES_CRAB] 게 자원을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4">
+      <Text>산업에 {2_InstantYield}을 지원하여 도시에서 -7 [ICON_PRODUCTION] 생산력을 잃습니다. 대신 {4_GPChange}와 무료 재활용 센터를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1">
+      <Text>*많은 배가 위험한 해역에서 잃어버렸고, 이로 인해 어부들이 어업에서 이익을 얻기 어려워졌습니다*[NEWLINE]이 항해사들이 수행하는 일을 높이 평가하며, 그들이 새 배로 지원받도록 하십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2">
+      <Text>*항해사들은 대산호초가 제시하는 독특한 도전에 대응하기 위해 현지 도시에 해군 학교를 설립하기를 원합니다*[NEWLINE]훌륭한 제안입니다. 궁전은 모든 항해사의 질적 향상을 기대하며 이 사업에 기꺼이 자금을 지원할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3">
+      <Text>*특정 해양 생물의 개체 수가 급증하여 어부들이 이를 포획하기 위한 원정을 원합니다.*[NEWLINE]맛있을 것 같군요. 일부가 궁전 주방으로 가도록 하십시오. 원정 비용은 판매 수익으로 충당될 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4">
+      <Text>*변화하는 기후가 섬세한 산호초 생태계를 위협하고 있으며, 어부들은 문제를 일으킨 기업에 대한 제재를 간청하고 있습니다*[NEWLINE]비용이 많이 들겠지만, 우리는 이러한 경이로운 자연을 보호해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY">
+      <Text>해군 학교</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP">
+      <Text>해당 유닛은 [COLOR_POSITIVE_TEXT]보급[ENDCOLOR] 승급을 받습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>
