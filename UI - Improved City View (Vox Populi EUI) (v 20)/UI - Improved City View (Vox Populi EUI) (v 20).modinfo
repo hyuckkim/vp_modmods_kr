@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6df65e6b-6aa4-4da2-a7fd-084d0e9c84c1" version="20">
+  <Properties>
+    <Name>UI - Improved City View (Vox Populi EUI)</Name>
+    <Teaser>More compact and concise City View (for Vox Populi with EUI), Version 20.0.</Teaser>
+    <Description>Compatible with VP 3.0![NEWLINE]
+[NEWLINE]Details:
+[NEWLINE][ICON_BULLET]Considerably smaller City Focus box.
+[NEWLINE][ICON_BULLET]Slim and informative Great Person meters.
+[NEWLINE][ICON_BULLET]Specialists grouped together in one box.
+[NEWLINE][ICON_BULLET]Great Works shown in a separate box.
+[NEWLINE][ICON_BULLET]Building information contains only Name and Yields.
+[NEWLINE]
+[NEWLINE]Requires [COLOR_POSITIVE_TEXT]Vox Populi 3.7 with EUI![ENDCOLOR].
+[NEWLINE]
+[NEWLINE]Vox Populi compatible by Infixo. Updated by balparmak, N.Core, and Enginseer. Version 20.0.</Description>
+    <Authors>bc1, Meister Maggi, Infixo</Authors>
+    <SpecialThanks>Gazebo, Sneaks, Thalassicus, whoward69, balparmak, N.Core, and Enginseer</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/threads/ui-improved-city-view-vox-populi-with-eui.627067/</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="118" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="16" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility" />
+  </Dependencies>
+  <References>
+    <Mod id="6521c02b-1c78-4826-a5b0-faed86235e98" minversion="0" maxversion="999" title="(6c) 43 Civs CP" />
+  </References>
+  <Blocks>
+    <Mod id="828b5b4b-7c62-4afb-a43f-034b596ef5e4" minversion="0" maxversion="999" title="(6b) CBO Compatibility (No-EUI)" />
+  </Blocks>
+  <Files>
+    <File md5="C894CD5873683E49C613F71ABE699B82" import="0">Text/ImprovedCityView_text.xml</File>
+    <File md5="2BED0940A863AFE50385A646E4391766" import="1">UI/CityView.lua</File>
+    <File md5="C93355DBD4A5993C7FD89728BC07689A" import="1">UI/CityView.xml</File>
+    <File md5="C93355DBD4A5993C7FD89728BC0768uu" import="1">UI/CityView_small.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text/ImprovedCityView_text.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

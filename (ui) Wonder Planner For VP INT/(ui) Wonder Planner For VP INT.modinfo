@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a3495d04-39c7-4f8d-b693-2ab34d522795" version="14">
+  <Properties>
+    <Name>(ui) Wonder Planner For VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the (ui) Wonder Planner For VP</Teaser>
+    <Description>Translation of the (ui) Wonder Planner For VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE](ui) VP용 불가사의 플래너 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" minversion="0" maxversion="999" title="(ui) Wonder Planner for VP" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="48ACEA27B45675B561D548B394D86C31" import="0">Text/WonderPlannerTexts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text/WonderPlannerTexts.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

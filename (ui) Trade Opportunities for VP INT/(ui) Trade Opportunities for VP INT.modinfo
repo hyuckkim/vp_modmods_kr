@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fc327ee6-26e8-4db2-9d4c-3cf6b7ab63af" version="23">
+  <Properties>
+    <Name>(ui) Trade Opportunities for VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the (ui) Trade Opportunities for VP</Teaser>
+    <Description>Translation of the (ui) Trade Opportunities for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE](ui) VP용 무역 기회 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+    <Mod id="9e735b12-3815-4ce3-9845-5396afb189da" minversion="0" maxversion="999" title="(ui) Trade Opportunities for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="42EDE81274435A9C07F41D3A128A88F7" import="0">Texts/TradeOpportunitiesTexts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/TradeOpportunitiesTexts.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
