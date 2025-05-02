@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="18203a10-fb70-485b-aaf1-948e7e459b6a" version="2">
+  <Properties>
+    <Name>Upgrade All Units Button In Military Overview</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Adds an "Upgrade All Units" button in military overview</Teaser>
+    <Description>Adds an "Upgrade All Units" button in military overview</Description>
+    <Authors>Vern#0465</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4A6C85B09DA146B8F7E9E32890166691" import="1">Core Files/CoreLua/MilitaryOverview.lua</File>
+    <File md5="05FF7F2B743846D7BD6F6C2B9629DF8E" import="1">Core Files/CoreLua/MilitaryOverview.xml</File>
+    <File md5="9136B930C6277DDAA1DEC588146A56F2" import="0">Text/en_US/MOTextAdditions.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text/en_US/MOTextAdditions.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

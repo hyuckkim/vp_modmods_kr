@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6fc8a968-a9e4-4017-af1b-befa81858b8e" version="3">
+  <Properties>
+    <Name>Better Lakes for Vox Populi INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Better Lakes for Vox Populi</Teaser>
+    <Description>Translation of the Better Lakes for Vox Populi into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Vox Populi용 더 나은 호수 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+    <Mod id="e37c9bba-9a02-4472-b460-617a1132fa40" minversion="0" maxversion="999" title="Better Lakes for Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="0A93EBF6FD1532AFF4E884395F54C617" import="0">core/buildings/lakeExtractor.sql</File>
+    <File md5="028BDFC8CE8EBAE6A0CF2098E02915B0" import="0">core/resources/fishResource.sql</File>
+    <File md5="231C0A4966EEAB6B707DDFD32D6B5131" import="0">core/resources/saltResource.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>core/buildings/lakeExtractor.sql</UpdateDatabase>
+      <UpdateDatabase>core/resources/fishResource.sql</UpdateDatabase>
+      <UpdateDatabase>core/resources/saltResource.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

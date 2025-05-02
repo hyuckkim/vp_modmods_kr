@@ -1,0 +1,825 @@
+﻿Changelog:
+v16.9 (in progress):
+- increased the PseudoAllyThreshold to 600 Influence (was 400);
+- fixed Gurkha (move after purchase);
+
+v16.8:
+- balanced:
+	- Prague: cut base yields; now 4-13 (was 10-30);
+	- Leluh: now 2 Faith per City on killed unit (was 5 Culture in Capital);
+- fixed
+	- fixed lua nil error on line 710 (border growth on diplo actions);
+
+v16.7:
+- compatibility with VP 4.16:
+	- obsoleted Improvement_AdjacentImprovementYieldChanges, Improvement_YieldAdjacentSameType, Improvement_YieldAdjacentSameTwoType,
+	- new feature for Improvements: NoAdjacentCity (moved from lua: Ribat, Phrourion, Monastery, Buryuut Hajar);
+- fix of Potala Palace CTD;
+
+v16.6:
+- Santo Domingo: now +2 to monopolies (was +3);
+- Rishikesh:
+	- now flat Culture instead of Tourism;
+	- corrected text and changed Mountain bonus: now +1 Faith and +1 Culture per 2 Mountain tiles (was Faith only missing Tourism);
+	- increased cost to 300 Faith (was 200);
+
+v16.5:
+- fixed a bug with proceeding to new era;
+
+v16.4:
+- Phanoteus:
+	- lost defense bonus;
+	- gained Network Points bonus (+5);
+	- fixed descritpion;
+- Managua:
+	- nerfed defense bonus to +10 (was +15);
+	- fixed descritpion;
+
+v16.3:
+- now human players can substitute UCS improvements at any time (unlike the AI);
+- fixed lua error on line 278;
+- fixed lua error on line 5953;
+- added missing entry for Daaq Ah; fixed descritpion;
+
+v16.2:
+- Reindeer finally got his own model (thanks to @ghost toast)!
+- contains new version of .xml CS sound file to substitute in DLC folder;
+- increased Swiss Guard cost from 220 to 500 Faith;
+- added pPlayer check for Saddarvazeh lua code;
+- deleted old print statements;
+
+v16.1:
+- deleted Siamese leftover code;
+
+v16:
+- new:
+	- added 10 new City-States:
+		- 3 Maritime: 
+			- Jetarkte (South America);
+			- Mendyarrup (Australia);
+			- Donostia (South-West Europe; blocked by Basques);
+		- 3 Mercantile: 
+			- Al-Tirabin (West Asia);
+			- Hanuabada (Oceania);
+			- Tunis (North Africa; blocked by Arabia);
+		- 3 Militaristic: 
+			- Bactra (Central Asia; blocked by Persia);
+			- Mbabane (F; South Africa);
+			- Palmyra (F; West Asia; blocked by Rome);
+		- 1 Religious:
+			- Saddarvazeh (West Asia; blocked by Persia);
+	- added 5 new improvements:
+		- Daaq Ah (exlusive for Mogadishu);
+		- Buryuut Hajar (exclusive for Al-Tirabin);
+		- Funerary Tower (exclusive for Palmyra);
+		- Phrourion (exlusive for Bactra);
+		- Ribat (exclusive for Tunis);
+	- added 2 new promotions:
+		- Karla Nyidiny (exclusive for Mendyarrup);
+		- Papuan Seafaring Prowess (esclusive for Hanuabada);
+	- added new model and icon for Mound improvement;
+	- added new model and icon for Monastery improvement (old one is still in the files);
+	- added new setting: enable/disable spawning of additional resources around the City-State;
+	- added new CS attitude: "Terrified" (means you can demand a Heavy Tribute); it has orange colour (previously "Afraid");
+		- "Afraid" has now Tan colour;
+		- "Angry" has now Magenta colour;
+		- "Afraid" and "Terrified" now can be shown also with positive influence value (was only negative; when positive it was neutral);
+- balanced:
+	- deleted yields from Tenets;
+	- increased tech yields from existing Unique Improvements:
+		- Colossal Head: +1 Production with Masonry;
+		- Chum: +1 Gold with Philosophy;
+		- Monastery: +1 Faith with Construction (moved from Scientific Theory); +1 Culture from Theology; +1 Tourism with Scientific Theory;
+		- Mound: +1 Gold with Currency; +1 Gold with Guilds; 
+		- Sunken Courtyard: +2 Faith with Theology;
+		- Totem Pole: +1 Culture with Navigation (was Gold); +1 Tourism with Archaeology; +1 Tourism with Replaceable Parts;
+		- Tulou: +1 Food with Engineering;
+	- reworked Totem Pole:
+		- renamed to "Gyáa'aang";
+		- now can also be built on inland Tundra, but requires adjacent Lake, City, Town or Village to start;
+		- +1 Culture when adjacent to a City, Town or Village (new);
+		- +1 Golden Age Points if there are 2 adjacent Totem Poles (was Production);
+		- +1 Golden Age Points to adjacent Coast (was Culture);
+	- reworked Mogadishu:
+		- loses bonus yields to Foodplains and Ocean tiles;
+		- gains new improvement: Daaq Ah;
+		- now gains +10% Food during GA (was +5%) and has -5% GAP needed for next GA (was -10%);
+	- Hong Kong: deleted "x10" factor from the migration threshold, so now the chance will be ten times lower;
+- changed:
+	- another huge revision of the improvement tooltips (improved visibility; tech yields listed out; added missing info; add additional spaces; reordered infos);
+	- Karyes now track the number of Monasteries nearby using dummy buildings instead of global variable;
+	- moved some tags from sql to xml, so now all are in one place;
+	- deleted multiple dummies and moved the bonus to policy instead (related to unit production modifiers);
+	- replaced manual code for Yangcheng's bonus to animals with query;
+- fixed:
+	- fixed Karyes' promotion name;
+	- fixed Colossal Head placement (it ignored terrain requirement - moved to lua);
+	- now Colossal Head does not show turn counter on the build icon (similar to how other GPTIs work);
+	- fixed Dogo Canario's placement (could be placed near already placed Dogo);
+	- fixed Clermont promotion (now given and taken by lua instead of sql; sql was totally out of control);
+	- fixed Ife's ability description;
+	- CityStateStatusHelper.lua changes/fixes:
+		- added latest Congress #6 proposal changes (Heavy Tribute; Militaristic Gift Counter; Coups; Resting Points);
+		- added a period after Unique Unit info;
+		- it is now CSL compatible and uses same function there to take current CS atitude;
+
+v15.12:
+- fixed Longyan's population increase;
+- fixed Thimphu's lua code;
+
+v15.11:
+- adjusted FlagPromoOrder values for new promotions;
+- added OrderPriority values to new promotions;
+- few text adjustments for Tulou;
+
+v15.10:
+- Brussels:
+	- now has new Promotion supporting your units, both civilian and military on Marshes and Rivers;
+- fixed few minor lua issues;
+- added info about Embassies not giving access to abilities during wars;
+- clarified the text when you have a huge influence with a City-State;
+- finally added groups for flag promotions;
+
+v15.9:
+- added new icon for Tulou (by @gwennog);
+- added unique sounds for all new City-States:
+	- readded 18 sounds unused so far (tried to match them as possible), and 2 of them will be moved to different places when appriopriate CSs will be coded:
+		- Maritime:
+			- Adeje --> Jakarta;
+			- Chevak --> Venice;
+			- Djibouti --> Rio de Janeiro;
+			- Parihaka --> Copenhagen;
+			- Taipei --> Helsinki;
+			- Honiara - Lisbon (will be moved to Bilbo, when added);
+				- Sydney, Quebec City got back their own tags (error in base files);
+		- Mercantile:
+			- Dar es Salaam --> Segou;
+			- Douala --> Luba;
+			- Ouidah --> Ouagadougou;
+			- Quelimane --> Bornu;
+			- Sanaa --> Marrakech;
+		- Militaristic:
+			- Brooklands --> Dublin;
+			- Clermont --> Edinburgh;
+			- Faya --> Sokoto;
+			- Kigali --> Bunkeya;
+		- Cultured:
+			- Andorra --> Warsaw;
+			- Ayutthaya --> Seoul;
+			- Aberffraw --> Vienna (will be moved to Vaduz, when added);
+	- replicated already used sounds for the rest, as I have no more sound files to use:
+		- 2 Maritime;
+		- 6 Mercantile;
+		- 11 Militaristic;
+		- 8 Cultured;
+		- 16 Religious;
+- Genoa's yields tuned down a bit to 40 Gold and 10 GAP (was 50 and 15; late game the yield bonus is significant, especially when you buy them with faith);
+- fixed Ambracia garrison bug;
+- moved whole changelog from the forum to this file;
+
+v15.5.3:
+- fixed Ambracia garrison bug;
+
+v15.8 and v15.5.2:
+- increased the PseudoAllies threshold factor to 5 (was 3, so now 400 Influence needed);
+- fixed PseudoAllies mechanics (lua error);
+- fixed Monastery lua bug;
+- fixed lua bug in active bonuses;
+
+v15.7:
+- reworked Armagh's Saints:
+    - now have permanent bonus yields;
+    - each of them boosts the same buildingclass by 1% of particular yield (so the more of them you build the bigger will be the bonus on all of their kind);
+    - added info about started WLTKD;
+    - clarified description;
+- fixed - sign error (was not visible; used standard - instead);
+- few text fixes;
+
+v15.6 (first only for VP 4.X):
+- added entries for conflicts table (new feature blocking certain City-States if conflicting Major Civ is in game; added in dll);
+- added automatic conflict checker printing out all conflicts in the database between major cities and city-states (commented out by default);
+- active bonuses are now not applied to Major Player if it is at war with a city-state (even if he has an Embassy there!);
+- because Gurkha uses Heavy Charge promotion it is now moved to Shared paragraph in the pedia (was in Mounted);
+
+v15.5.1:
+- added safety break for the situation when there are 0 City-States of some kind;
+- fixed trait indexes in lua file;
+- added some loggings to have better information about the situation on the map;
+- deleted CSD relic code;
+
+v15.5:
+- maybe 4th iteration of the code will block these damn UUs from CS spawning...
+- Valletta now requires only Coast (were some Sea resources);
+- real building's texts were a bit revamped;
+- Glass Monopoly now has 1% boost (was 2%);
+
+v15.4:
+- Glass, Tapestries and Champagne now have their own monopoly bonuses;
+
+v15.3:
+- changed:
+    - renamed Dali to Yangjumie (this was old name when Dali was a Kingdom);  
+- fixed:
+    - fixed crucial error when Cultured CS gifted GW filling all available player slots;
+    - CS unit gifts and barbarian units:
+        - added workaround to another mercenary and religious UUs, so CSs won't give them as gifts;
+        - added additional block for UUs, so Barbarians do not build them;
+    - art fixes:
+        - extracted original dds file for Manuscripts and resized it a bit;
+        - fixed some resource icons alignment;
+    - Levuka now gives yields rounded up;
+    - fixed Bedulu's ability text;
+
+v15.2:
+- balanced:
+    - changed HurryCostModifiers for UCS' buildings to -20 to match the VP standard (was +5);
+    - added Unhappiness reduction to Bylina, Visconti Emissary and Gate of Dawn;
+    - added back specialist slots to Bylina, Visconti Emissary and Gate of Dawn;
+- fixed:
+    - added Irrational personality;
+    - fixed Muisca yields in Capital from local population (now 1 per 3 Citizens, was 1 per 34);
+    - fixed Milan's and Kyiv's modifiers (now 5%, were 50%);
+    - fixed Milan's, Kyiv's and Vilnius' building descriptions;
+    - fixed Religious Pressure buildings;
+    - renamed some dummies to better group in the IGE;
+
+v15.1.1:
+- fixed multiple lua functions calling pPlayer;
+- fixed Sanaa's and Sarnath's functions triggered with every event (added a check for particular one);
+
+v15.1:
+- Dogo Canario: now boosted by Agribussiness with +2 Production;
+- Reindeer: now boosted by Stable with +2 Food;
+- unlocked EMR again, but only up from v11;
+
+v15.0.2:
+- fixed Dogo Canario placement (conflict with Valid Terrains probably);
+- added some crucial details to the Adeje and Karyes abilities' texts;
+
+v15.0.1:
+- fixed crucial error in lua file;
+
+v15:
+*(F) - Female leader
+
+- added:
+    - City-State blocking mechanism (lua based, because DLL is hardcoded now) (by @jarcast2 (idea and lua help) and me (coding)):
+        - when the game loads it checks all Major Player city lists and all City-States, compares them and looks for any conflicts;
+        - all conflicts are stored in special table;
+        - when a City-State with a conflict founds a city then the whole City-State (Minor Player) is changed to another one at random;
+        - whole process is repeated if new City-State is also conflicting with Major Civilizations;
+        - human player will gain a notification if substitution was impossible, so he could restart immediately;
+        - !!! if you want this tool to work correctly, do not use all possible slots for City-States (about 35 should be fine; leave few of them free for substitutions);
+        - !!! after each substitution a notification appears to remind the player to save and reload that save to avoid bugs;
+    - 16 new City-States (5 female leaders):
+        - 2 Maritime: Honiara (Oceania), Juyubit (F; North America);
+        - 2 Mercantile: Ouidah (West Africa), Sana'a (F; West Asia);
+        - 5 Militaristic: Dakkar (East Africa), Longyan (East Asia), Pelym (North Asia), Daergraevs (F; Caucassus/Central Asia), Tbilisi (F; Caucassus);
+        - 4 Cultured: Anangula (North America), Ayutthaya (South-East Asia), Karasjohka (F; North Europe), Katende (Central Africa);
+        - 3 Religious: Lahore (South Asia), Sarnath (South Asia), Suceava (East Europe);
+    - 20 new Promotions:
+        - Battle of Vaslui (exclusive for Suceava);
+        - Futuh Al-Habash (exclusive for Dakkar);
+        - Scythian Arrow Barrage (exclusive for Daergraevs);
+        - Siberian Education (exclusive for Pelym);
+        - Siida Training (exclusive for Karasjohka);
+        - 15 new Promotions (whole unique branch) for Nihang Unit (exclusive for Lahore);
+    - 3 new Units:
+        - Nihang - multi Era unit with its own Promotion Branch (exclusive for Lahore);
+        - Saka (exclusive for Daergraevs);
+        - Te'aat (exclusive for Juyubit);
+    - 1 new Improvement:
+        - Tulou (exclusive for Longyan);
+    - 2 new map Resources:
+        - Reindeer, bonus (exclusive for Karasjohka);
+        - Llao Llao, luxury (unused; blocked for now);
+    - 11 new CS related Resources (below);
+- changed:
+    - reworked civilopedia entries for: Armagh, Muscat and Nan Madol;
+    - now all events have CS names (helps with Wonder Planner compatibility);
+    - dependencies, references and blocks:
+        - EMR is blocked by UCS because of borrowing the resources for CSs;
+        - deleted unused EE reference and EMR reference;
+- balanced:
+    - overall City-State behaviour rework:
+        - Settings:
+            - now more settings to choose (UGPTIs, Luxuries);
+            - fixed not working settings (not all, but some didn't work);
+        - UGPTIs:
+            - City-States now claim their GPTIs if they are spawned outside their borders;
+            - City-States now gain a UGPTI on entering the Classical Era, instead of on founding their city, to delay the problems with culture bombing;
+            - now placed only on Strategic resources or tiles without any resource;
+        - Maritime, Cultured, Religious and Militaristic City-States now get their own pools of unique luxuries, that work the same way Mercantile's ones did:
+            - each of them has now unique monopoly bonus totally different from the "standard" luxuries)
+            - old Mercantile CS resources now have changed Monopoly abilities;
+            - from this version UCS becomes not compatible with EMR v1 to v10 (download v11);
+            - City-States related luxury resources now have weaker monopoly abilities than regular resources;
+                - Maritime: Beer, Cheese, Honey, Ropes;
+                - Mercantile: Glass (old), Jewelry (old), Coins;
+                - Cultured: Porcelain (moved from Mercantile), Tapestries, Sculptures;
+                - Religious: Champagne, Manuscripts, Mosaics;
+                - Militaristic (rare): Gunpowder;
+        - Cultured City-States now have 0.5% chance for giving the player (if he has free slots) Great Work of Art, Writing or Music (in reversed order, so first are checked music etc.);
+    - Dogo Canario rework:
+        - now has improved Camp model;
+        - now has additional Under Construction model specially for a resource placement;
+        - Dogos are now correctly placed on a hill (were fading inside);
+        - Dogos can now only be placed on Plains or Grasslands (could anywhere);
+        - Dogos cannot be placed on hiden resources (prevents substituting Strategic Resources);
+        - Dogos have now +1 base Food (was +2);
+    - Totem Pole rework:
+        - now has Pillaged and Under Construction model (by @ghost toast);
+        - has new model for constructed state;
+    - Gurkha changes:
+        - now can also be trained with Production;
+        - added FaithCost, so it may be bought with Faith after acquiring certain belief;
+        - obsoletes correctly like other UUs;
+        - has default AI;
+        - now unlocked at Rifling (like regular unit);
+    - Managua rework:
+        - Managua is now Cultured City-State to split the bunch of Mercantile CSs in the Central America;
+        - Managua now has American style (was European);
+        - Managua gets new abilities based on espionage (3rd CS using such; old ability moved to Sana'a);
+    - Nan Madol: culture on death is now applied once in Capital instead of for each city;
+- fixed:
+    - helper (aka CS tooltip) rework/fix:
+        - adapted CityStateStatusHelper.lua file to latest VP changes;
+        - added info about personality in the CS title;
+        - added info about possible Diplomatic Marriage (Austrian UA);
+        - used predefined tags for personalities and traits;
+        - added couple of text tags for localizations;
+        - fixed spacing in the title (was no space before an icon);
+        - fixed pledge of protection's text replacement added long time ago;
+        - fixed influence text;
+        - more text replacements;
+    - gifts:
+        - fixed an error in functions giving units from Friendly CSs;
+        - now free units are gifted only from Friendly CSs (were all by an error);
+    - lua workaround for UCS improvements fix:
+        - Roads and Railroads can now be built or removed on tiles with UCS improvements;
+        - can now be repaired (ups, my bad);
+        - now allow building Landmarks and doing Archaeologica digs;
+        - now allow Scrubing Fallout action;
+        - optimizing and fixing;
+    - Potala Palace now unlocked at Architecture (should help a bit with CS quests asking to build it);
+    - Jerusalem now checks if Major player created a Religion (so does not take the Pantheons into account);
+    - fixed Sidon's lua code fore Sphere of Influence;
+    - Bedulu now gets Faith from Trade Routes (and Dodoma does not);
+    - Quebec's lua now prevents "pPlayer == nil" error;
+    - fixed Ife's double trigger on faith gain;
+    - Bylina, Gate of Dawn and Visconti Emissary now have free GW slot (was specialist slot);
+    - fixed missing Milan's and Kiev's dummies in the code;
+    - Sisqeno fixes:
+        - Worker now gains same free promotions like Sisqeno (Missionary);
+        - fixed Sisqeno lua bug;
+        - Sisqeno, after SC construction, looks for all Sisqenos with full count and choose one at random (previously looked for the oldest unit on tile);
+    - Clermont:
+        - fixed Clermont promotion tags (promotions and icons didn't match);
+        - promotion icons now have dark grey background instead of light grey;
+    - unit gifts:
+        - fake Caravans cannot be gifted;
+        - changed the used column from from NoMinorGifts to NoMinorCivGift, so maybe this time CSs won't be giving UCS units to players...
+        - added special table that might block taht annoying behaviour...
+    - deleted unnecessary 32px icons for units and 128px and 32px icons for resources;
+    - filled some gaps in Units table for new Units;
+    - Promotion Flags:
+        - reranked all UCS promotion for VP Flags' component;
+        - added some new groups
+        - added missing promotions from recent updates
+    - resized unit icons to fit the icon frame better;
+    - added Defines-like array for UCS lua functions;
+    - now all UCS resources have no tech allowing for trade;
+    - Dodoma's promotion now moved to Civilian section (was Naval);
+    - text fixes (most important):
+        - "SGaang" is now "SGang" in few places;
+        - reworked a bit style of improvement texts;
+        - fixed yields descritpion for Sunken Courtyard;
+        - expanded info for Mound (CS bonus);
+        - Dogo Canario now shows correct monopoly text;
+        - monopoly texts are now shorter to save the space for Trade Opportunities window (tooltip for custom resources);
+        - deleted 3 outdated text changes (from the base UCS, one was changing Siam's trait...);
+        - Iwarefa promotion text fix;
+        - "Bullying" is now "Demanding a Tribute";
+
+v14:
+- added:
+    - new City-States:
+        - 2 Maritime CSs: SGang Gwaay (North America) and Adeje (North Africa);
+        - 1 Militaristic CS: Wootei-Niicie (North America);
+        - 1 Cultured CS: Nyar'yana Marq (North Asia);
+        - 1 Religious CS: Karyes (South Europe);
+    - new Resources:
+        - Dogo Canario (exclusive for Adeje);
+    - new Improvements:
+        - Monastery (exclusive for Karyes);
+        - Chum (exclusive for Nyar'yana Marq);
+        - Totem Pole (exclusive for SGaang Gwaay);
+    - new Promotions:
+        - Master of Cold Waters (exclusive for SGaang Gwaay);
+        - Climber of Mount Athos (exclusive for Karyes);
+        - Deus Vult! (6th promotion exclusive to Clermont, that can be randomly chosen);
+    - new Units:
+        - Sisqeno (exclusive for Tiwanaku) and Sisqeno Worker (dummy unit; used only by the AI; exclusive for Tiwanaku);
+- balanced:
+    - reworked the CS passives system:
+        - diplo actions in CS territory make them expand their border with 1/10th of the Influence value (mimicked the mechanics from Civ 6);
+        - diplo actions in CS territory make them gain a small amount of HP depending on their personality (1 for Friendly, 2 for Neutral, 3 for Hostile);
+            - this gain will be zeroed after conquering the City-State, so after liberating player must start from scratch;
+        - each CS spawns unique Great Person Improvement on its territory after founding a city (stays from old system);
+        - CSs gain additional bonuses depending on their traits:
+            - friendly CSs have 1% chance of giving the Major player a type of civilian related to their trait (Worker, Workboat, Caravan, Cargo Ship, Missionary or Archaeologist) excluding Militaristic CSs (stays from old system);;
+            - friendly Militaristic CSs have their gifting chance increased by 1% (stays from old system);
+            - maritime, mercantile and militaristic CSs spawn an additional resource (bonus, luxury, strategic respectively) nearby (stays from old system)
+            - cultured CSs spawns an archeological site nearby (stays from old system)
+            - religious CSs instead of spawning anything have increased values of Religious Pressure and changed Religious Resistance values depending also on their personality:
+                - Friendly: +10% Religious Pressure and -25% Conversion Resistance;
+                - Neutral: +25% Religious Pressure;
+                - Hostile: +40% Religious Pressure and +25% Conversion Resistance;
+        - now CSs' passive abilities are hidden by default making the tootlip much more pleasant to watch; you can enable them back in the Bonuses.sql file changing "UCS-PASSIVES-SHOW" value from 0 to 1;
+        - now CSs' passive can be disabled (enabled by default) in the Bonuses.sql file changing "UCS-PASSIVES-ON", "UCS-PASSIVES-BGP" or "UCS-PASSIVES-HP" value from 1 to 0;
+        - rest of the stuff regarding passives, that were hard to understand, check or control are now deleted and will be substituted step by step by something new I have in my mind;
+    - Colossal Head changes:
+        - tech yields changed;
+        - now has more base yields, less yields from being allied;
+        - resources give Production instead of GAP;
+        - got boost from New Deal policy like all GP improvements (Culture);
+        - now improves Strategic Resources like any other GPTI;
+    - Sunken Courtyard changes:
+        - gained additional base Faith;
+        - gained Science boost on Radar;
+        - they can be build now by special Sisqeno units:
+            - each Sisqeno can build only 1 Sunken Courtyard;
+            - after building the Sunken Courtyard Sisqeno loses 1 Spread;
+            - can only be built when Sisqeno has all of his charges (didn't perform his spread religion action);
+    - Mound changes:
+        - gained GGP boost on Military Science;
+    - Clermont promotions changes:
+        - now granted promotions are permanent instead of temporary (were 10-turn);
+        - slightly nerfed down each of 5 promotions;
+        - added 1 new promotion to the pool (Deus Vult!);
+        - all random promotions have now unique colouring (like Bushido's or Kris' promotions) (@gwennog);
+        - Blessing of Clermont now has "question mark" icon (like base Bushido's or Kris' promotions) (@gwennog);
+    - Bedulu changes:
+        - lost Faith from Sea resources;
+        - gained Faith and Golden Age Points from City-State alliances;
+        - gained Faith from International Sea Trade Routes;
+    - Dano: added -10% Culture Expansion Cost;
+    - Óc Eo: added +20% Sea Trade Route Range;
+    - Djibouti: now gives +80% Production towards Settlers (was +100%) and +100% towards Granaries (was free Granary);
+    - Zanzibar: now grants 1 Happiness per 1 active Trade Route;
+    - Prague: its ability now activates on each religious unit that can spread a religion (Missionary, Prophet, Sisqeno and any UU);
+    - all new improvements are treated as Unique Improvements, therefore gain yields from Civil Society (Food), Five Year Plan (Production) and Mobilization (Science) doctrines;
+- changed:
+    - Andorra's dummies now reordered ("*_2" is given by lua);
+    - "building based" lua abilities now use GameEvents based on changing event status instead of turn ending (great increase on turn performance);
+    - added Improvement_Flavors for all currently added improvements and a resource;
+    - fake Caravan unit for Dali is now hidden in the tech tree;
+- fixed (sorted by importance):
+    - fixed an error in function on building construction (Oc Eo, Andorra, Thimphu, Rishikesh, Ragusa, Canossa, Wootei-niicie);
+    - fixed Zanzibar's ability, so now it gives 1 Happiness per 1 Trade Route (was 0.75 per city connection);
+    - fixed Thimphu lua function error;
+    - fixed Thimphu dummies (now abilities are split; were in 1 dummy by mistake);
+    - added new Sisqeno unit (unique Missionary) for Tiwanaku to allow the AI construct Sunken Courtyards (dumb AI was going straight for Spreading Religion mission);
+    - added pillaged model for Colossal Head; Sunken Courtyard and Totem Poles have there regular models as pillaged ones added to fill the gaps (SC model is broken and Totem has no such);
+    - added missing Defines for Food values gifted by CSs and modified few other values from Defines;
+    - new UCS units are not allowed to be gifted by City-States;
+    - lua functions checking building construction now relies on building class not building type of the constructed building;
+    - dummy improvements now have yields (for worker assessing their automation tasks);
+    - Parihaka and Nan Madol have now Polynesian artstyle;
+    - Mujahideen promotion icon now uses Mountain symbol instead of a hill (@gwennog);
+    - Mujahideen promotion now given only to military units (useless on civilians);
+    - now making list of unique CSs' UUs is automated (previously done by hand);
+        - fixed and simplified the code spawning these units that probably didn't work;
+        - fixed Hunnic Battry Ram base unit, which now is Longswordman's replacement (was Spearman);
+        - code now adjust to other modmods adding (maybe UCS?) or taking (MUC) such units;
+    - Prague and Singapore now use bDelay instead of auxiliary variable for GameEvents.PreKill double trigger blocking;
+    - lua cleaning and optimizations; cutting the number of used variables;
+    - filled all remaining civilopedia gaps (@jarcast2);
+    - corrected some of the civilopedia texts and added better formatting;
+    - numerous text fixes (the most important):
+        - Thimphu lacked its 2nd ability description;
+        - improvement GAIN bonuses from adjacent Mountains, not GRANT bonuses to them (tested);
+        - some information of the Hong Kong ability now hidden (to shorten the text length);
+
+v13:
+- new:
+    - added 9 new religious CSs: Bedulu, Dali, Dano, Iskanwaya, Multan, Mutitjulu, Pagan, Rishikesh and Tiwanaku; each with interesting new abilities and compatible with CSL and MC modmods;
+    - added few missing civilopedia texts;
+    - finally used a promotion icon made by @gwennog years ago (Kallawaya Healers);
+    - almost all CSs got new abilities or revamped existing ones (mostly +X to certain thing were changed);
+    - added multiple yield gain prompts at the moment of their appearing in the city: Bogota, Cape Town, Manila, Zurich, Levuka, Hong Kong, Kyzyl, Tyre and so on...;
+    - Zurich' main notifications now are not spamming you each turn; instead they show up every 5 turns, and track each player's interests separately;
+    - Zurich gives a notification about latest savings if you are no longer an Ally; there's a special notification after game load when all data is zeroed;
+    - capturing mechanics for Bogota moved to lua to add proper notification;
+- balanced (most important changes):
+    - fixed and increased Muisca yields in Capital, now 1 per 3 Citizens (was 1 per 50), and modified yields from Empire population, now 1 per 20 Citizens (was 1 per 30);
+    - Nan Madol's Oceans got additional +1 Food (was only +1 Culture);
+    - reduced Ambracia's Gift Rate boost to +15% (was +50%);
+    - Mounds now cannot be built on Snow;
+    - Marsh's build time is now 600 (was 700) and Mound's build time is now 800 (was 700);
+    - Marsh can be build on any coastal tile (was Tundra, Snow and Desert);
+    - Brussels buffs marshes with additional 1 Gold;
+    - Sofia's boost for GGs and GAs is now +10% (was +5%);
+    - Bylina, Visconti Emissaries and Gate of Dawn now much more powerful: they got +2 points for the respective Great Person;
+    - Bogota has sliglty changed yields for liberation to 20-30 (was 15-45) and significatly for capturing to 30 (was 20);
+    - Manila has now much increased yields from TRs to 25-50 (was 1-15) and scales down with the number of Trade Routes;
+    - Cape Town like Manila scales down with the number of Trade Routes;
+    - Kathmandu's ability moved to Lhasa and Lhasa's moved to Geneva;
+    - Levuka yields from capture and clearing camps greatly incresed and randomized; now yields for capture are bigger than for a clearing camp;
+    - Taipei yields boosted to +10% from processes (was +5%) and 15% conversion rate (was 2%);
+    - Zurich interests now not rounded (were rounded down);
+    - ...
+    - and hundreds of minor stuff changes in the meantime;
+- fixed:
+    - added missing flavours for base CSs (upsi!);
+    - added missing resources resource boosts for MW (Tropical Fish, Giant Tortoise);
+    - fixed dummies showing in the city view, so now they are not;
+    - fixed Era scaling in custom lua functions - now scales from classical;
+    - now CSs starting with certain building (Kiev, Milan, Vilnius, Valetta), regain them after liberation;
+    - fixed Thimphu lua code on city capture;
+    - Brussel's Marsh is restricted to Coastal tiles (it could be built anywhere);
+    - Antananarivo promotion now triggers;
+    - added PillageGold column to Mound;
+    - fixed ReligiousUnrest in Wittenberg;
+    - moved yields on birth from sql to lua to be real "on birth" (was "on expend");
+    - Levuka now has Polynesian artstyle (was African);
+    - fixed building's art alignment;
+    - numerous text fixes, text unifications and new text icons;
+- changed:
+    - numerous lua QoL changes (the most improtant below):
+        - Levuka and Kigali are now Militaristic CSs (were Maritime and Mercantile respectively);
+        - Phanoteus is now Mercantile CS (was Militaristic);
+        - Djibouti is now Maritime CS (was Mercantile);
+        - Dar es Salaam is now Mercantile (was Militaristic);
+        - Surrey renamed to Brooklands;
+        - moved all lua texts to xml file (supports localizations);
+        - now dummy buildings have generic names and description (copy of cs trait), which means less work for me and better view in IGE;
+        - added color indicators in texts for terrain, feature, improvement and so on...;
+        - renamed some abilities for better flavour;
+
+v12:
+- now liberated CSs also get their passives;
+- fixed Jerusalem taking Religion upon meeting;
+- fixed Jerusalem's infinite Sphere of Influence (now applied only on ally change);
+- fixed IMPROVEMENT_LUMBERMILL_JUNGLE sql bug;
+- copied the Promotion Flags stuff to UCS;
+- Friendly Militaristic CSs now have an additional 1% chance to gift a unit (was 3%)
+
+v11.3:
+- reduced gift chance to 1%;
+
+v11.2:
+- add missing dummy for Levuka;
+
+v11.1 and v11.1.1:
+- lowered CS gift frequency to 3% (was 5%);
+- added lake exception for Workboat and Cargo Ship gifts;
+- added trade route limit check for Mercantile CS gifts;
+
+v11:
+- important:
+    - updated for VP 3.0!
+- new:
+    - added notifications when receiving new civilian units from CS;
+    - added missing abilities for Mercantile CSs;
+    - added few new abilities for Cultured CSs;
+- balancing:
+    - revised all abilities; tweaked values; substituted some pointless ones with more useful:
+        - deleted Border Growth malus from religious CSs and added supply cap maluses;
+        - deleted Natural Wonder boost from religious CSs and added defense and hp instead;
+        - Mountains and Atolls now give food instead of faith for religious CSs;
+        - added flat supply cap to militaristic CSs;
+        - and more...
+    - reduced cap for Zurich to 20 Gold/Era (was 50);
+- fixes:  
+    - CS now give Missionaries as follows:
+        - if player has found no Religion and has no Majority Religion in capital, then a Missionary is not spawned;
+        - if player has found no Religion and has a Majority Religion of other player in its capital, then a Missionary will spawn with that Majority Religion;
+        - if player has found a Religion then a Missionary is spawned with his Religion regardless of the Majority Religion in the capital;
+        - if player has found a Religion and lost his Holy City, a Missionary is spawned still with his Religion;
+    - reduced placement condition for CS GPTI to 2nd ring around city (was 3rd);
+    - now GPTI can be placed on resources, so greater chance to have it closer to the city (previously forbidden);
+    - fixed Muscat yields on buildings - now flat like they should be from start (were modifiers);
+    - now units can be given by CS when Allied or Friends (was only Friends);
+    - moved Potala Palace text changes from MW to UCS (allows adding reference);
+    - fixed Marsh placement (Jungle and Forest interaction deleted);
+- miscellanous:
+    - simplified (shortened) passives descriptions (f.e. omitted yield name if it was base yield);
+    - reworked, fixed, tweaked and simplified some code (both lua and sql);
+    - added reference for More Wonders mod (new resources);
+    - deleted obsolete references and blocks;
+
+v10:
+- new:
+    - added missing Jerusalem's building (now gives 100% Religious Pressure to the City-State after adopting the religion of Major Player, and to anyone who capture this City-State);
+    - added new art for Jerusalem's building (by @gwennog);
+- balance:
+    - Kyiv's, Milan's and Vilnius' buildings (those offering free GW slot) are now limited to 3 (like Guilds);
+    - all new City-States have now own set of peronal Flavors based on their history, leaders, politics or economical status (so far they have same Flavors based on their Trait);
+    - Friends/Allies threshold reduced to 40/80 from 50/100; pseudoAlly threshold still at 300;
+- other:
+    - Dodoma renamed to Dar es Salaam (more accurate for the ability);
+    - Odenso renamed to Helsinki (cosmetic change; Odenso was always weird choice to me);
+    - updated CityStateStatusHelper.lua according to notes given by @huyckkim;
+    - Granada now supports Pontoon Bridges like Panama.
+
+v9:
+- new:
+    - negative values for CS passives are now marked red in the tooltip;
+    - added new passives for Mercantile CSs;
+    - added missing art for Vilnius, Milan and Kyiv buildings (@gwennog);
+- changes:   
+    - renamed Armagh's Saints and added unique art for them (@gwennog);
+- fixes:
+    - deleted unnecessary 32px file for buildings;
+    - revisions of texts (optimizing; shortening; clarity);
+    - reduced Religious malus to -5 Border Growth Points;
+    - fixed important issue with Jersualem's lua code.
+
+v8:
+- new:
+    - added new City-States:    ==> Andorra (cultured);
+                                ==> Canossa (religious);
+                                ==> Thimphu (cultured);
+    - Canossa, Andorra, Thimphu now update on New Turn, City construction and City capturing;
+    - Canossa also updates on Building Construction;
+    - all City-States receive additional passive bonuses related to their Trait or Personality; this will give some flavour and specialize CSs better;
+    - added notifications and notes to CityStatesStatusHelper.lua about all new passive CSs' bonuses;
+    - added Reference for EE modmod for better compatibility;
+        -- added Drydock to the list of buildings boosted by Muscat;
+    - unlocked few CustomModOptions related to CS behaviour (GLOBAL_CS_OVERSEAS_TERRITORY, RELIGION_ALLIED_INQUISITORS);
+    - replaced Nairobi with Levuka (new ability as well); there was a conflict with Mombasa;
+    - added info about UU type gifted by CS in CityStateStatusHelper tooltip;
+    - added unique art for Grand Harbour (Valetta) building (@gwennog);
+    - added new promotion icons (@gwennog);
+- balance:
+    - updated Óc Eo ability (slightly buffed; now also +1 Happiness in Empire for each Sea Internation TR);
+- fixed:
+    - �c Eo now updates on City construction (builds dummies) and City capturing (checks new owner);
+    - instead of on UnitActionChanged (on Cargo Ship) �c Eo now updates on PlayerDoTurn; it will save some memory, and will prevent the bug when bonus is no more active and player still has dummies and at least one active trade route;
+    - added missing BullyUnitClass column to MinorCivilizations table;
+    - reworked icon atlases for buildings, improvements and promotions; cleaned up the folder and deleted unnecessary files;
+    - all dummies now have same generic icon;
+    - text fixes.
+
+v7:
+- new:
+    - added City-States with unique abilities:  ==> Taipei (maritime)
+                                                ==> �c Eo (mercantile);
+    - added compatibility with any mod that adds Bonus or Luxury resources (f.i. Even More Resources; that mod must be loaded before UCS to work);
+    - added manual Yangcheng compatibility with EMR (Animal Resources);
+    - added an icon for Marsh improvement by @gwennog;
+- lua:
+    - added pseudoAllies (you can get Unique CS bonus even if you are not an Ally; being over 300% of the Ally threshold is enough for it; this means multiple players can get the bonus at the same time) (lua);
+    - added Embassies mechanic (you get bonuses from CS after establishing an Embassy in CS territory; bonus is permanent);
+    - you can disable any of the 3 possible ways of getting bonuses with values in lua file: bIsAllyAnOption, bIsEmbassyAnOption or bIsPseudoAllyAnOption (changing true to false);
+    - functions on AllyChange now are checked on Turn (lua);
+    - Jerusalem now checked on turn (instead of on AllyChange); this allows transferring religion or setting Sphere of Influence even after being allied with CS; Sphere and Religion are now independent from each other (lua);
+    - added Sphere of Influence notification for Lhasa and many other Notifications; reworked many of them or rewrote the texts (lua);
+    - added notification when bonus from CS is applied (separate for each condition) (lua);
+    - modified coordinates of numerous notifications (now they focus on City-State instead of Major Player City) (lua);
+    - fixed Marsh creation (lua)
+- balance:
+    - updated UnitCombats for all UCS promotions (mainly Submarines, Carriers, but sometimes others);
+    - reworked slightly all Clermont promotions;
+    - slightly buffed: Kyiv, Milan, Vilnius, Kyzyl, Jerusalem (added specific bonus for all players, because other bonuses are only for an Ally);
+    - increased thresholds for being Friend with CS (from 35 to 50) and to be an Ally (from 70 to 100);
+- other fixes:
+    - historical correction changes:    "Gwynedd" City-State renamed to "Aberffraw";
+                                        "Auckland" City-State renamed to "Parihaka";
+                                        "Tamaki Makaurau" ability renamed to "City of Sails";
+                                        "Honduras" City-State renamed to "Tegucigalpa";
+                                        "Muisca" City-State renamed to "Suamox";
+                                        "Laconia" City-State renamed to "Sparta";
+    - updated anything regarding promotions in files (multiple errors; pedia types, pedia fixes, new text label etc.);
+    - merged all text files into one big cleaned up file easier to manage;
+    - cleaned up and reworked lua file; deleted unnecessary code;
+    - further text changes and fixes (f.i. many additional help notes added; corrected some crucial logic errors);
+
+v6.4:
+- fixed and tweaked GetCityStateStatusToolTip() function in CityStateStatusHelper.lua (better spacing, fixed war info, icons, order, colours);
+- changed few default texts to look better;
+- revised all ability texts (missing icons, clarity, logic errors, grammar issues, wording and more);
+- changed ability title color to magenta for better visibility.
+
+v6.3 (by @Padre19):
+- fix Sphere of Influence;
+- fix marsh bug (Brussels);
+- add bonus for Mongolian Ordo like Citadel (La Venta, Melbourne, Vancouver);
+
+Dark times...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+[FUTURE]
+This update contains also total rework of City-State's passives mechanic and also introduces new active-passive mechanic, which sounds bad, but is really simple.
+First, I didn't like the current state of passives and how they evolved. It was a nice concept, but turn out to be really complicated and difficult to understand, epecially when player had no impact on it at all. In its place I introduced new active-passive mechanic. It means that some Major player's actions on City-States, apart from gaining some stuff for themselves like gaining additional yields or gaining access to unique abilities I hope you like very much after rework) may change the City-State's behaviour somehow. Seems complicated? So few examples:
+	1. Each diplomatic mission performed in a City-State contributes to their border growth, incresing their territory a bit, so the more such actions, the stronger CS becomes;
+	2. Each diplomatic mission performed in a City-State increases their defensive capabilities (HP), and the value of change depends on City-State's Personality (less in Friendly, more in Hostile);
+	3. Performing some actions grants the player new Suzerain Points or takes them; Suzerain Points open up new possible outcomes when gathered in bigger quantities.
+		a) performing a diplomatic mission grants you 1 Suzerain Point with that City-State;
+		b) completing a quest grants you 1 Suzerain Point with that City-State;
+		c) pledging a protection grants you 1 Suzerain Point with that City-State (one-time boost);
+		d) liberation of a City-State grants 5 Suzerain Points with it;
+		e) taking a Tribute takes 1/3 of accumulated Suzerain Points with that City-State and Heavy Tribute takes 1/2 of them;
+		f) if player Pledges Protection, but let another civ to take the Tribute over the City-State, this player loses 1/4 of his Suzerain Points;
+		g) declaring a war to a City-State takes all accumulated Suzerain Points with that City-State;
+Suzerain Points accumulate during the game and are tied to both Major and Minor players. If player passes certain threshold of Suzerain Points then:
+	a) above 3: player gains small Production bonus in his Capital; City-State gains small Growth boost;
+	b) above 7: player gains small Science bonus; City-State gains small City HP boost;
+	c) above 12: player gains bigger Production bonus in all Cities and bigger Science bonus; City-State gains increased production of its units;
+	d) above 18: City-State gains small City Defense boost;
+	e) above 25: player gains access to City-State's ability (4th possible way of gaining the access after being an Ally, having an Embassy or achieving high Influence level);
+	f) above 30: City-State gains increased production of anything and player cannot declare war to that City-State;
+If City-State is conquered, all Suzerain Points with it are zeroed, even after liberation.
+This way player can contribute to City-States' power and increase their value. If there are multiple players taking care about the City-State, then it can become well shaped and strong ally.
+Gaining Suzerain Points is sort of automatic feature and should be AI friendly, as it requires performing regular actions AI also does during its games. Passives are granted automatically.
+
+
+
+
+/*SELECT 'TXT_KEY_MARITIME_BONUS', 						'[COLOR:90:205:40:255]Builders (Maritime):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Manufactory and an additional Bonus Resource nearby[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Growth[NEWLINE][ICON_BULLET]10 [ICON_CULTURE_LOCAL] Border Growth Points on [ICON_CITIZEN] Birth[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]+20% [ICON_SPY] Enemy Spy Effectiveness[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_FRIENDLY_BONUS', 					'[COLOR:200:240:140:255]Harvesters (Maritime Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_WORKER] Worker or a [ICON_WORKER] Fishing Boat inside Friends'' Territory (their Capital must be on a Coast to get a [ICON_WORKER] Fishing Boat)[NEWLINE][ICON_BULLET]+50% [ICON_PRODUCTION] towards [ICON_WORKER] Workers and [ICON_WORKER] Fishing Boats[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to Bonus Resources'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_NEUTRAL_BONUS', 					'[COLOR:110:160:70:255]Secured Warehouse (Maritime Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+10 [ICON_FOOD] per 4 [ICON_CITIZEN][NEWLINE][ICON_BULLET]+10 [ICON_STRENGTH] Defense and +50 City HP'  UNION ALL
+SELECT 'TXT_KEY_MARITIME_HOSTILE_BONUS', 					'[COLOR:60:125:40:255]Selfish Gatherers (Maritime Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards all Naval Units[NEWLINE][ICON_BULLET]50 [ICON_FOOD] and 20 [ICON_CULTURE_LOCAL] Border Growth Points on [ICON_PRODUCTION] Unit Production[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] per 2 [ICON_CITIZEN].'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_BONUS', 						'[COLOR:240:215:65:255]Trade Center (Mercantile):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Town and an additional Luxury Resource nearby[NEWLINE][ICON_BULLET]+10% [ICON_GOLD][NEWLINE][ICON_BULLET]5% of [ICON_GOLD] is converted to [ICON_FOOD] and another 5% to [ICON_PRODUCTION][NEWLINE][ICON_BULLET]-20% [ICON_GOLD] Hurry Cost Modifiers[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-20% [ICON_PRODUCTION] towards all Military Units[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_FRIENDLY_BONUS', 				'[COLOR:240:240:165:255]Golden City (Mercantile Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_CARAVAN] Caravan or a [ICON_CARGO_SHIP] Cargo Ship inside Friends'' Territory (their Capital must be on a Coast to get a [ICON_CARGO_SHIP] Cargo Ship)[NEWLINE][ICON_BULLET]+2 [ICON_GOLD] to Luxury Resources'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_NEUTRAL_BONUS', 					'[COLOR:210:210:70:255]Shadow Council (Mercantile Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] and +2 [ICON_CULTURE] to Luxury Resources[NEWLINE][ICON_BULLET]20 [ICON_GOLD] from Border Growth'  UNION ALL
+SELECT 'TXT_KEY_MERCANTILE_HOSTILE_BONUS', 					'[COLOR:130:130:20:255]Free City (Mercantile Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]30 [ICON_GOLD] and 10 [ICON_CULTURE] when unit is produced[NEWLINE][ICON_BULLET][ICON_GOLD] when unit level ups[NEWLINE][ICON_BULLET]25% of [ICON_PRODUCTION] is added on [ICON_CITIZEN] Birth'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_BONUS', 						'[COLOR:210:65:200:255]Center of Learning (Cultured):[ENDCOLOR][NEWLINE][ICON_BULLET]has an Academy and an Archaeological Site nearby.[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] to Forests, Jungles, Marshes, Oasis and Flood Plains.[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-20% [ICON_PEACE] Religious Pressure[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_FRIENDLY_BONUS', 					'[COLOR:240:180:235:255]Open University (Cultured Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning an [ICON_VP_ARTIFACT] Archaeologist inside Friends'' Territory (after researching Archaeology)'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_NEUTRAL_BONUS', 					'[COLOR:210:90:195:255]Patronage (Cultured Neutral):[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_CULTURED_HOSTILE_BONUS', 					'[COLOR:130:30:115:255]Recluse Court (Cultured Hostile):[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_BONUS', 						'[COLOR:25:110:250:255]Center of Faith (Religious):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Holy Site nearby[NEWLINE][ICON_BULLET]+33% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]+3 [ICON_FOOD], +3 [ICON_GOLD] and +3 [ICON_CULTURE] from Mountains and Atolls[NEWLINE][ICON_BULLET]+10 [ICON_STRENGTH] Defense and +50 City HP[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-5 [ICON_WAR] Military Supply Cap[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-25% [ICON_WAR] Supply Cap from [ICON_CITIZEN][ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_FRIENDLY_BONUS', 					'[COLOR:160:220:250:255]Open Mind (Religious Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]1% Chance for spawning a [ICON_MISSIONARY] Missionary inside Friends'' Territory[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] per incoming [ICON_INTERNATIONAL_TRADE] Trade Route'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_NEUTRAL_BONUS', 					'[COLOR:105:155:230:255]Medicant Orders (Religious Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+5 [ICON_PRODUCTION] for every World Religion that has at least one Follower in this City-State[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to Rivers and +2 [ICON_FOOD] to Lakes'  UNION ALL
+SELECT 'TXT_KEY_RELIGIOUS_HOSTILE_BONUS', 					'[COLOR:25:110:170:255]One Truth (Religious Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+25% [ICON_PEACE] Conversion Resistance[NEWLINE][ICON_BULLET]+25% [ICON_PEACE] Religious Pressure[NEWLINE][ICON_BULLET]10 [ICON_CULTURE] on Unit''s Death'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_BONUS', 					'[COLOR:245:40:40:255]Fortress (Militaristic):[ENDCOLOR][NEWLINE][ICON_BULLET]has a Fort and an additional Strategic Resource nearby[NEWLINE][ICON_BULLET]can train its Unique Unit[NEWLINE][ICON_BULLET]Player can upgrade his units inside their territory if Allied[NEWLINE][ICON_BULLET]+3 [ICON_WAR] Military Supply Cap[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] towards all Military Units[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-33% [ICON_FOOD] Growth[ENDCOLOR]'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_FRIENDLY_BONUS', 				'[COLOR:255:180:180:255]Mercenary Hub (Militaristic Friendly):[ENDCOLOR][NEWLINE][ICON_BULLET]+1% Rate of Unit Gifts to its Friends[NEWLINE][ICON_BULLET]All Military Units gain 30 XP when trained in this City-State'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_NEUTRAL_BONUS', 				'[COLOR:245:90:90:255]Sellsword Army (Militaristic Neutral):[ENDCOLOR][NEWLINE][ICON_BULLET]+50% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN][NEWLINE][ICON_BULLET]+20% XP gained from Combat for units trained in this City-State[NEWLINE][ICON_BULLET]All Military Units gain 10 XP when trained in this City-State'  UNION ALL
+SELECT 'TXT_KEY_MILITARISTIC_HOSTILE_BONUS', 				'[COLOR:170:10:10:255]Hermit Dragon (Militaristic Hostile):[ENDCOLOR][NEWLINE][ICON_BULLET]+100% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN][NEWLINE][ICON_BULLET]+33% [ICON_PRODUCTION] towards all Military Units'  UNION ALL*/
+
+
+
+/*UPDATE Policies SET CityGrowthMod = 15 WHERE Type = 'POLICY_MARITIME';
+UPDATE Policies SET CityGrowthMod = -33 WHERE Type = 'POLICY_MILITARISTIC';
+UPDATE Policies SET CityStateUnitFrequencyModifier = 1 WHERE Type = 'POLICY_MILITARISTIC_FRIENDLY';*/
+
+/*UPDATE Buildings SET ReligiousPressureModifier = 33, Defense = 1000, ExtraCityHitPoints = 50 WHERE Type = 'BUILDING_RELIGIOUS';
+UPDATE Buildings SET ReligiousPressureModifier = -20 WHERE Type = 'BUILDING_CULTURED';
+UPDATE Buildings SET ConversionModifier = 25 WHERE Type = 'BUILDING_RELIGIOUS_FRIENDLY';
+UPDATE Buildings SET ConversionModifier = -10 WHERE Type = 'BUILDING_RELIGIOUS_NEUTRAL';
+UPDATE Buildings SET ConversionModifier = -25, ReligiousPressureModifier = 25 WHERE Type = 'BUILDING_RELIGIOUS_HOSTILE';
+UPDATE Buildings SET EspionageModifier = 20 WHERE Type = 'BUILDING_MARITIME';
+UPDATE Buildings SET Defense = 500, ExtraCityHitPoints = 100 WHERE Type = 'BUILDING_MARITIME_NEUTRAL';
+UPDATE Buildings SET CitySupplyFlat = -5 WHERE Type = 'BUILDING_RELIGIOUS';
+UPDATE Buildings SET CitySupplyModifier = -25 WHERE Type = 'BUILDING_RELIGIOUS';
+UPDATE Buildings SET CitySupplyFlat = 3 WHERE Type = 'BUILDING_MILITARISTIC';
+UPDATE Buildings SET CitySupplyModifier = 50, TrainedFreePromotion = 'PROMOTION_MILITARISTIC_NEUTRAL' WHERE Type = 'BUILDING_MILITARISTIC_NEUTRAL';
+UPDATE Buildings SET CitySupplyModifier = 100 WHERE Type = 'BUILDING_MILITARISTIC_HOSTILE';*/
+
+/*INSERT INTO Building_GrowthExtraYield
+			(BuildingType, 					YieldType, 				Yield)
+SELECT 		'BUILDING_MERCANTILE_HOSTILE', 	'YIELD_PRODUCTION', 	25;*/

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<glyphgen>
+	<textures width="88" height="132">
+		<texture name="" src="UCS_ResourcesFontIcons_022.dds" allowcolor="1" alloweffects="1" inuse="1" />
+	</textures>
+	<styles count="1">
+		<style name="">
+			<layers count="1">
+				<layer tex="" />
+			</layers>
+		</style>
+	</styles>
+	<glyphs fudgeadv="0" ascadj="-6" spacing="0" count="2" height="0" ascent="0" descent="0">
+		<!-- Standard (Dogo Canario, Llao Llao, Reindeer, ???) -->
+		<glyph ch="1" u="0" v="0" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="2" u="22" v="0" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="3" u="44" v="0" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="4" u="66" v="0" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<!-- Maritime (Beer, Cheese, Honey, Ropes) -->
+		<glyph ch="5" u="0" v="22" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="6" u="22" v="22" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="7" u="44" v="22" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="8" u="66" v="22" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<!-- Cultured (Tapestries, Sculptures, ???, ???) -->
+		<glyph ch="9" u="0" v="44" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="10" u="22" v="44" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="11" u="44" v="44" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="12" u="66" v="44" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<!-- Religious (Manuscripts, Champagne, Mosaics, ???) -->
+		<glyph ch="13" u="0" v="66" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="14" u="22" v="66" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="15" u="44" v="66" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="16" u="66" v="66" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<!-- Militaristic (Gunpowder, ???, ???, ???) -->
+		<glyph ch="17" u="0" v="88" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="18" u="22" v="88" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="19" u="44" v="88" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="20" u="66" v="88" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<!-- Mercantile (Coins, ???, ???, ???) -->
+		<glyph ch="21" u="0" v="110" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="22" u="22" v="110" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="23" u="44" v="110" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+		<glyph ch="24" u="66" v="110" width="22" height="22" a="0" b="22" c="0" originx="0" originy="22" />
+	</glyphs>
+	<toolonly>
+		<metainfo pt="0.000000" width="88" height="132" alphabias="64" maxsize="88" bestfit="0" pow2="1" freetype="2" fontsrc="" />
+		<glyphsets>
+			<set name="GlyphSetAscii" />
+		</glyphsets>
+	</toolonly>
+</glyphgen>

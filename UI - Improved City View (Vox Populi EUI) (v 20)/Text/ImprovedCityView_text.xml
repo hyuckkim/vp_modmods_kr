@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/23/2012 7:45:01 PM -->
+<GameData>
+	<!-- en_US -->
+	<Language_en_US>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Specialists</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} employed at {2_Building}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_GREAT_PERSON_UNITS">
+			<Text>GREAT PERSON {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_RELIGIOUS_UNITS">
+			<Text>RELIGIOUS {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_LAND_UNITS">
+			<Text>LAND {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_SEA_UNITS">
+			<Text>SEA {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_AIR_UNITS">
+			<Text>AIR {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_MILITARY_UNITS">
+			<Text>MILITARY {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_NATIONAL_WONDERS">
+			<Text>NATIONAL {TXT_KEY_POP_WONDERS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_WORLD_WONDERS">
+			<Text>WORLD {TXT_KEY_POP_WONDERS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_PROJECTS">
+			<Text>PROJECTS</Text>
+		</Replace>
+	</Language_en_US>
+	<!-- DE_DE -->
+	<Language_DE_DE>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Spezialisten</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} besch&#228;ftigt in {2_Building}</Text>
+		</Replace>
+	</Language_DE_DE>
+	<!-- ES_ES -->
+	<Language_ES_ES>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Especialistas</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} empleado en {2_Building}</Text>
+		</Replace>
+	</Language_ES_ES>
+	<!-- FR_FR -->
+	<Language_FR_FR>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Sp&#233;cialistes</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} employ&#233; &#224; {2_Building}</Text>
+		</Replace>
+	</Language_FR_FR>
+	<!-- IT_IT -->
+	<Language_IT_IT>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Specialistas</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} impiegato presso {2_Building}</Text>
+		</Replace>
+	</Language_IT_IT>
+	<!-- JA_JP -->
+	<Language_JA_JP>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>専門家</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{2_Building}の{1_Specialist}</Text>
+		</Replace>
+	</Language_JA_JP>
+	<!-- PL_PL -->
+	<Language_PL_PL>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>Specjaliści</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} zatrudniony w {2_Building}</Text>
+		</Replace>
+	</Language_PL_PL>
+	<!-- RU_RU -->
+	<Language_RU_RU>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>специалист</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{1_Specialist} занятых на {2_Building};</Text>
+		</Replace>
+	</Language_RU_RU>
+</GameData>

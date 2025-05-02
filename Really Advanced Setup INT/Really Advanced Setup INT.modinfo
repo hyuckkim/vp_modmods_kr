@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ab0e0b35-5899-4dc2-9ffd-762c2b57e450" version="15">
+  <Properties>
+    <Name>Really Advanced Setup INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Really Advanced Setup</Teaser>
+    <Description>Translation of the Really Advanced Setup into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]진짜 고급 설정 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="34feb829-33fb-4241-956f-462e6877e070" minversion="0" maxversion="999" title="Really Advanced Setup" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="07AC3CFB17BD537006037A283822C80C" import="0">XML/GTAS_HelpText.xml</File>
+    <File md5="552C32EA0811D7FF4B2D5CD72D5E284A" import="0">XML/GTAS_ModText.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GTAS_HelpText.xml</UpdateDatabase>
+      <UpdateDatabase>XML/GTAS_ModText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
