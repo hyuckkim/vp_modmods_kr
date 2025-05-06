@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/27/2015 4:17:17 PM [ICON_GOLD][COLOR:255:235:0:255]{1_TotalGold: number "##"} {2_GoldPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[/COLOR]
+ -->
+<GameData>
+	<Language_en_US>
+		<Row>
+			<Tag>TXT_KEY_CTP_TOTAL_GOLD</Tag>
+			<Text>[COLOR:255:235:0:255]{1_TotalGold: number "##"}[/COLOR]</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_CTP_PER_TURN_GOLD</Tag>
+			<Text>[COLOR:255:235:0:255]{1_GoldPerTurn: number "'+'##' ';'[COLOR:255:60:60:255]-'##' '"}[/COLOR]</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_HAPPINESS_TOP_PANEL_CTP</Tag>
+			<Text>{2_Icon}{1_Val}%</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_CTP_HAPPINESS_EXPLANATION</Tag>
+			<Text>This is the empire-wide breakdown. [ICON_HAPPINESS_1] Happiness counters [ICON_HAPPINESS_4] Unhappiness in each city. Both are limited by the size of the city, except for urbanization! [NEWLINE] Total Happiness: [ICON_HAPPINESS_1] {1_Val} / Total Unhappiness: [ICON_HAPPINESS_3] {2_Val}.</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_CTP_HAPPINESS_SUMMARY</Tag>
+			<Text>Total Happiness: [ICON_HAPPINESS_1] {1_Val} / Total Unhappiness: [ICON_HAPPINESS_3] {2_Val}.</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_CTP_TOP_PANEL_GOLD</Tag>
+			<Text>[COLOR:255:235:0:255]{1_GoldPerTurn: number "'+'##'[ICON_GOLD]';'[COLOR:255:60:60:255]-'##'[ICON_GOLD]'"}{2_TotalGold: number "##"}[/COLOR]</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
