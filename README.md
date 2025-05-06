@@ -41,3 +41,12 @@ VP의 모드-모드에 쓰이는 파일들입니다.
 
 - [Upgrade All Units Button In Military Overview](https://forums.civfanatics.com/resources/upgrade-all-units-button-in-military-overview.30443/)
   모든 유닛을 한 번에 업그레이드 하는 버튼을 군사 화면에 추가하는 단순한 모드입니다.
+
+- [City State Leaders II]([City States Leaders II | CivFanatics Forums](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)
+  도시 국가에 초상화를 추가해주는 모드입니다.
+
+- [Elephant Sound When Circus Built]([Elephant Sound When Circus Built | CivFanatics Forums](https://forums.civfanatics.com/threads/elephant-sound-when-circus-built.690742/))
+  서커스 건물의 건설이 완료되면 코끼리 소리가 나는 사소하지만 직관적인 모드입니다.
+
+- [Reworked Top Panel](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)
+  게임 내에서 상단 패널 UI를 개선해주는 모드입니다.

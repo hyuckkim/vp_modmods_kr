@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 11/24/2013 10:24:12 PM -->
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<!--Change initial meeting popup to first person-->
 		<Update>
 			<Where Tag="TXT_KEY_CITY_STATE_MEETING"/>
@@ -69,5 +69,5 @@
 			<Set Text="We are a [COLOR_POSITIVE_TEXT]Religious[ENDCOLOR] people and we can help nurture your religious traditions."/>
 		</Update>
 		-->
-	</Language_en_US>
+	</Language_ko_KR>
 </GameData>

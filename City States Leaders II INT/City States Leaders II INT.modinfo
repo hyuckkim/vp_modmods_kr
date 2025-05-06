@@ -25,12 +25,10 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="23E31670BD68C29CEC708B9DD4D9F008" import="0">MinorCivLeaders.sql</File>
-    <File md5="E18329DF1C3CF4F0556B6EB7DE39D0A3" import="0">MinorCivLeaders_ko_KR.xml</File>
+    <File md5="01018D9C99AAA7806AEBC85414FE86EF" import="0">MinorCivLeaders_ko_KR.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>MinorCivLeaders.sql</UpdateDatabase>
       <UpdateDatabase>MinorCivLeaders_ko_KR.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>

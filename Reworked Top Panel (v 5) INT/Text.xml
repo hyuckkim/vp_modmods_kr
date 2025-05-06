@@ -2,7 +2,7 @@
 <!-- Created by ModBuddy on 1/27/2015 4:17:17 PM [ICON_GOLD][COLOR:255:235:0:255]{1_TotalGold: number "##"} {2_GoldPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[/COLOR]
  -->
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row>
 			<Tag>TXT_KEY_CTP_TOTAL_GOLD</Tag>
 			<Text>[COLOR:255:235:0:255]{1_TotalGold: number "##"}[/COLOR]</Text>
@@ -27,5 +27,5 @@
 			<Tag>TXT_KEY_CTP_TOP_PANEL_GOLD</Tag>
 			<Text>[COLOR:255:235:0:255]{1_GoldPerTurn: number "'+'##'[ICON_GOLD]';'[COLOR:255:60:60:255]-'##'[ICON_GOLD]'"}{2_TotalGold: number "##"}[/COLOR]</Text>
 		</Row>
-	</Language_en_US>
+	</Language_ko_KR>
 </GameData>
