@@ -78,40 +78,40 @@
 			<Text>([ICON_VP_MONOPOLY] 글로벌 독점에 포함되지 않음)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was 건물에 의해 제공되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 건물에 의해 제공되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_buildings} copies were 건물들에 의해 제공되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_buildings}개 사본이 건물들에 의해 제공되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_GP" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP} copies were [ICON_GREAT_ADMIRAL] 위대한 제독에 의해 승인되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP}개 사본이 [ICON_GREAT_ADMIRAL] 위대한 제독에 의해 승인되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_CORP" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp} 그리고 {2_resource_num_franch} copies were 당신의 [ICON_VP_MONOPOLY] 기업과 [ICON_VP_MONOPOLY] 프랜차이즈에서 각각 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp}개 그리고 {2_resource_num_franch} 사본이 당신의 [ICON_VP_MONOPOLY] 기업과 [ICON_VP_MONOPOLY] 프랜차이즈에서 각각 부여되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_ally} copies were 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_ally}개 사본이 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{1_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{2_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{3_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{1_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{2_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{3_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_mods} copies were 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{2_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{3_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{4_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_mods}개 사본이 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{2_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{3_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{4_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_NONE" >
@@ -548,21 +548,21 @@
 
 		<!-- Tooltip text fragments for the relationship graphs -->
 		<Row Tag="TXT_KEY_DO_GR_TT_GPT_TO">
-			<Text>턴 당 골드 to</Text>
+			<Text>턴 당 골드 →</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_GR_TT_GPT_FROM">
-			<Text>턴 당 골드 from</Text>
+			<Text>턴 당 골드 ←</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_DO_GR_TT_RESEARCH_WITH">
-			<Text>연구 협정 with</Text>
+			<Text>연구 협정 ←→</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_DO_GR_TT_TO">
-			<Text>to</Text>
+			<Text>→</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_GR_TT_FROM">
-			<Text>from</Text>
+			<Text>←</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_DO_GR_TT_EXPORTS">

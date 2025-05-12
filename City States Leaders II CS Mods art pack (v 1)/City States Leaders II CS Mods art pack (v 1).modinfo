@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c0b537ec-18cd-4b0e-a56a-076e5253109f" version="1">
+  <Properties>
+    <Name>City States Leaders II CS Mods art pack</Name>
+    <Stability>Beta</Stability>
+    <Teaser>BETA 6.  Art pack for city state mods supported by "City States Leaders II"  ACTIVATE CSL2 FIRST!</Teaser>
+    <Description>Art pack for city state mods supported by "City States Leaders II"
+Includes leaders for [most of] the additional city states from the following city state mods:
+
+* "Asgard as a City State" by hdarmy
+* "Atlantis City State" by hdarmy
+* "Fallout - City States" by Masterhummel
+* "More City States" by jc
+* "Saints Row -- Steelport City-State" by Vice Virtuoso
+* "Video Game City States" by Ultrarobprime
+* "YnAEMP City States" by Gedemon
+
+...and the following civilization mods that provide a city state replacement:
+
+* "Argentina Civilization" by Leugi
+* "The Kingdom of Armenia" by JFD
+* "Australia Civilization - Colonialist Legacies" by TPangolin et al.
+* "Canada Civilization - Colonialist Legacies" by TPangolin et al.
+* "The Kingdom of Hungary" by JFD
+* "LS Civilization Set VIII (Romania and Tibet)" by LastSword
+* "The Swiss Confederacy" by JFD
+
+ART CREDITS
+Aksum : Firaxis (Haile Selassie I)
+Asuncion : Leugi (Jose Gaspar de Francia)
+Bethlehem : J. Lievens/Nutty (Guy of Lusignan)
+Carthage : Firaxis (Dido)
+Dubai : TPangolin (Mohammed Al Maktoum)
+Inca : Firaxis (Pachacuti)
+Lubeck : Nutty (Heinrich Sudermann)
+Madrid : Firaxis (Isabella I)
+Maya : Firaxis (Pacal)
+Montevideo : P. Alonso/TPangolin (Bruno Mauricio de Zabala)
+Nuuk: Nutty (Kuupik Kleist)
+Rotterdam : Firaxis (William I)
+St. Johns: Nutty (Thomas Cochrane)
+Steelport : Volition (Joe Magarac)
+Tblisi: Nutty (Tamar)
+Tripoli : F. Duran (Turgut Reis)
+Ulundi : Firaxis (Shaka)
+[and miscellaneous photographs]</Description>
+    <Authors>Nutty.</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=473670</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="7b606e8c-da55-408f-b078-d2909b35b37f" minversion="0" maxversion="999" title="City States Leaders II" />
+  </Dependencies>
+  <References>
+    <Mod id="4abf8487-1194-4170-bf2e-acfb78a93ca5" minversion="0" maxversion="999" title="Not Another City States Mod" />
+    <Mod id="53da86d6-4a0d-4f92-a489-4d1a7fb7cd30" minversion="0" maxversion="999" title="Ynaemp City States" />
+    <Mod id="9f6d56dd-d653-4c8a-b3a7-4a30582c86c2" minversion="0" maxversion="999" title="Ynaemp City States Madeira" />
+    <Mod id="77214b67-d97a-4359-bfe6-b534905528f1" minversion="0" maxversion="999" title="Ynaemp City States Extended" />
+    <Mod id="c78ebfe1-2667-4f48-b5cc-f2db7edebcef" minversion="0" maxversion="999" title="Ynaemp City States for G+K" />
+    <Mod id="b7069e24-fb9c-4393-b836-44ec5c3dea98" minversion="0" maxversion="999" title="Ynaemp City States for BNW" />
+    <Mod id="e5ae90a4-c91f-42f9-830a-80558199bb97" minversion="0" maxversion="999" title="More City States (Vanilla)" />
+    <Mod id="cd0f69db-13b1-4715-bd0c-437d914e283d" minversion="0" maxversion="999" title="More City States (Gods &amp; Kings)" />
+    <Mod id="ba741105-ccc2-4b97-a235-c9eefa22a868" minversion="0" maxversion="999" title="City states expansion" />
+    <Mod id="4d02cc9f-0805-4988-ae84-1dc28d49e1f0" minversion="0" maxversion="999" title="City States Expansion (G&amp;K + BNW)" />
+    <Mod id="e5ae90a4-c91f-42f9-830a-80558199bb97" minversion="0" maxversion="999" title="More City States (Vanilla)" />
+    <Mod id="cd0f69db-13b1-4715-bd0c-437d914e283d" minversion="0" maxversion="999" title="More City States (Gods and Kings)" />
+    <Mod id="5059d899-bc14-451e-971d-b34deabaf59e" minversion="0" maxversion="999" title="More City States (BNW)" />
+    <Mod id="0d207775-a020-4e44-aebe-585807eee8cc" minversion="0" maxversion="999" title="Saints Row -- Steelport City-State" />
+    <Mod id="451e87c4-3007-4467-b3cb-d5b1e48337a0" minversion="0" maxversion="999" title="Fictional City States - Comedy Movies" />
+    <Mod id="bc011e1c-e076-4f9d-9efe-3e4d1a57679d" minversion="0" maxversion="999" title="Kingdom of Armenia" />
+    <Mod id="1fcd9459-75d6-4e44-83e5-c88e4b00b795" minversion="0" maxversion="999" title="Kingdom of Hungary" />
+    <Mod id="575a3187-ced4-47de-990b-53ce965035a1" minversion="0" maxversion="999" title="The Grand Duchy of Lithuania" />
+    <Mod id="205aa32b-9ee1-4ad8-8c42-4fcde1d4f417" minversion="0" maxversion="999" title="The Swiss Confederacy" />
+    <Mod id="d5306113-7b0c-4e49-b4b4-15d37157ceb8" minversion="0" maxversion="999" title="Colonialist Legacies -- Australia Civilization" />
+    <Mod id="f9507e9b-077f-4718-9389-87f7cb509ae5" minversion="0" maxversion="999" title="Colonialist Legacies -- Canada Civilization" />
+    <Mod id="29aaace7-d79a-467c-a579-f5cdb94dcc55" minversion="0" maxversion="999" title="New City State Types" />
+    <Mod id="ddb76bf3-e847-4b70-a211-6cc9435eab93" minversion="0" maxversion="999" title="Ancient Mediterranean City States" />
+    <Mod id="23dff3fb-cf43-4a66-892b-fb994354e90b" minversion="0" maxversion="999" title="Anno Domini (Gods and Kings)" />
+    <Mod id="a556bb27-8ae6-4d7b-970d-30cc54170974" minversion="0" maxversion="999" title="Centauri City States" />
+    <Mod id="0157c620-ef58-4087-b9da-52bc9df6703e" minversion="0" maxversion="999" title="Faerun for Vanilla" />
+    <Mod id="1c764b19-c940-47ce-b993-d371a7d7814b" minversion="0" maxversion="999" title="Faerun for GnK" />
+    <Mod id="fe9e9cde-f9f4-4e80-9331-6ebd49c28ca7" minversion="0" maxversion="999" title="Faerun for BNW" />
+    <Mod id="ed90c71d-589b-4325-bf32-f2652a17b40c" minversion="0" maxversion="999" title="Red Planet" />
+    <Mod id="790f1ef9-58ff-4a2f-bb49-b1a3f9a91b12" minversion="0" maxversion="999" title="Civilizations of Warcraft" />
+    <Mod id="4050cf28-434b-4df9-8689-c7d0a5a54358" minversion="0" maxversion="999" title="Argentina Civilization" />
+    <Mod id="a8278e2d-2c9c-42ea-b08f-aa09313ff929" minversion="0" maxversion="999" title="Gran Colombia Civilization" />
+    <Mod id="684ce03a-e1d4-4df9-84f8-f4543d6a435d" minversion="0" maxversion="999" title="Kongo" />
+    <Mod id="35e27828-cf22-4aec-b087-08169fa4e429" minversion="0" maxversion="999" title="Israel Civilization" />
+    <Mod id="17697195-2cc5-4ff6-984d-29f3ad206840" minversion="0" maxversion="999" title="Latvia" />
+    <Mod id="184ce8f0-91ef-46d1-9aa2-6f72cc492a85" minversion="0" maxversion="999" title="Tibetan Civilization" />
+    <Mod id="b8bba8fe-c7b7-4fe1-9e21-950fd6180e98" minversion="0" maxversion="999" title="Tuscan Civilization" />
+    <Mod id="fb32237f-8e78-42ac-aaff-21af31dc415a" minversion="0" maxversion="999" title="Kievan Rus" />
+    <Mod id="0474fd37-a41e-43b9-88be-81da4b112d52" minversion="0" maxversion="999" title="LS Civilization Set VIII" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="79ABE949F5585F06C0A4523F3609554D" import="1">Art/abidjan_leadericon.dds</File>
+    <File md5="020D503F6D5E1EA245145CC21BA4919D" import="1">Art/abu_dhabi_leadericon.dds</File>
+    <File md5="FC2BE800AE03006CA0275E59E326A5FE" import="1">Art/adelaide_leadericon.dds</File>
+    <File md5="3900138C9DC8E656E00662CB78BB2B42" import="1">Art/acre_leadericon.dds</File>
+    <File md5="404A1EBDB6B37E6D6B19E039E501AF2A" import="1">Art/aksum_leadericon.dds</File>
+    <File md5="4E0A89968776F253A77A1ACEA6F43415" import="1">Art/arefu_leadericon.dds</File>
+    <File md5="579F8C25972ECFB0BDE325BD1C12A87C" import="1">Art/arroyo_leadericon.dds</File>
+    <File md5="62B6D5DF4615B46A519E88AECAD39414" import="1">Art/asgard_leadericon.dds</File>
+    <File md5="70A279999202944EF402D8B8FCCF58AB" import="1">Art/asuncion_leadericon.dds</File>
+    <File md5="5752783049BCEAF6C22403F9DBFE4E18" import="1">Art/atlantis_leadericon.dds</File>
+    <File md5="EC7B89B3E8B9704F99C266AA274538C1" import="1">Art/baku_leadericon.dds</File>
+    <File md5="45480B4657F7CB9305EF6090C47E4C34" import="1">Art/balkh_leadericon.dds</File>
+    <File md5="7F7D6806975F4206718E3D02F60CB5E3" import="1">Art/basel_leadericon.dds</File>
+    <File md5="DDFDF12ED42B34579E25DA1D2EF84311" import="1">Art/bethlehem_leadericon.dds</File>
+    <File md5="8C48DFB9452BC9A076285D88F533D7E9" import="1">Art/big_town_leadericon.dds</File>
+    <File md5="716D308D70E0C0DF095636701435BB0E" import="1">Art/broken_hills_leadericon.dds</File>
+    <File md5="74EF3D01CFCE5564C328902DC1FC9EB0" import="1">Art/canterbury_commons_leadericon.dds</File>
+    <File md5="3B3DA5737D3A8C24069193E4B07AF5E3" import="1">Art/carthage_leadericon.dds</File>
+    <File md5="4C03FA5C3D19963F0431C7CE4BD06B16" import="1">Art/casablanca_leadericon.dds</File>
+    <File md5="5FC4C9D510DEECC240A64CE3CC81065C" import="1">Art/cheyenne_leadericon.dds</File>
+    <File md5="8EB2B8018E283AE6101276E3A34087DB" import="1">Art/cyrene_leadericon.dds</File>
+    <File md5="74018499E74AB82EB4657FC1A93D4E28" import="1">Art/dakar_leadericon.dds</File>
+    <File md5="6363AF80142BA8518F91F088685BD8D8" import="1">Art/denver_leadericon.dds</File>
+    <File md5="274598905F9BF8D61FC1F4A4B5A63D3D" import="1">Art/dhaka_leadericon.dds</File>
+    <File md5="AA33C2CAD5E1851CE7871E499456B82D" import="1">Art/dubai_leadericon.dds</File>
+    <File md5="1D29E789FD3B6FC6271E61F6EC890FFC" import="1">Art/european_union_leadericon.dds</File>
+    <File md5="3E4577E49891E3A7A747E1645011D317" import="1">Art/faisalabad_leadericon.dds</File>
+    <File md5="31F96F88248D44D7DBCC9B493A5B8BE5" import="1">Art/freeport_leadericon.dds</File>
+    <File md5="31E80F0FD0282C890FF5E60CA8BBC5D1" import="1">Art/galatia_leadericon.dds</File>
+    <File md5="851200F0773F08FCAECE96B9C3C552DB" import="1">Art/gasteiz_leadericon.dds</File>
+    <File md5="7FAE853EEB6173C33F53C54E6C7A7CB6" import="1">Art/gecko_leadericon.dds</File>
+    <File md5="AC434C9A2090B5CFAD77C01CF19034D2" import="1">Art/gibraltar_leadericon.dds</File>
+    <File md5="A3D06EC3BA4F99FE264AE32526D314F5" import="1">Art/goodsprings_leadericon.dds</File>
+    <File md5="3F5175C8AB66C88C9EB0C0DD4E2E6109" import="1">Art/guadalajara_leadericon.dds</File>
+    <File md5="07ED0F9655A3F93E1863E55D4F9F8908" import="1">Art/haifa_leadericon.dds</File>
+    <File md5="4F418EE77A49DD85644B763CC54509BA" import="1">Art/happy_happy_village_leadericon.dds</File>
+    <File md5="11B66CCACFDE43194A054F6036C828F3" import="1">Art/harappa_leadericon.dds</File>
+    <File md5="EDAADDB76A10BB6D379085F42A792B79" import="1">Art/hattusa_leadericon.dds</File>
+    <File md5="0CB3EAE34A791A7B04AAB98FAB547245" import="1">Art/havana_leadericon.dds</File>
+    <File md5="896E0E05BA71F99551CACD514C6220CC" import="1">Art/hyrule_leadericon.dds</File>
+    <File md5="E8BFD32045896BB2D1A7C19556D516E1" import="1">Art/inca_leadericon.dds</File>
+    <File md5="99EE88C796BB07486B765471EFD6ADB5" import="1">Art/johannesburg_leadericon.dds</File>
+    <File md5="6790C7F2A7E5EE30E35288D05651C9D6" import="1">Art/junction_city_leadericon.dds</File>
+    <File md5="6E0710F3E4C6BAAAB030AEB903CAAAFA" import="1">Art/junktown_leadericon.dds</File>
+    <File md5="E073D0457FBDD819F91E81F6AD59191C" import="1">Art/kinshasa_leadericon.dds</File>
+    <File md5="796A5248282AEEFD9C53804FB06DFAD7" import="1">Art/klamath_leadericon.dds</File>
+    <File md5="3A0532E1966EFC0C906D8C57F7338F77" import="1">Art/kuwait_city_leadericon.dds</File>
+    <File md5="EEAF950BA6DF4B02432C79B0155E072E" import="1">Art/lagos_leadericon.dds</File>
+    <File md5="C07230559561C0D05F484A1E71C59269" import="1">Art/la_paz_leadericon.dds</File>
+    <File md5="BF6258F930B352A5968AE1CFEE0F446C" import="1">Art/lubeck_leadericon.dds</File>
+    <File md5="C7B3B9E90FB8FA242CB7C35BF7ABCE9F" import="1">Art/luxembourg_leadericon.dds</File>
+    <File md5="C7013708D001359E05745B6DDCC604F5" import="1">Art/madrid_leadericon.dds</File>
+    <File md5="607AAE99F68367846F7BC86D519F848E" import="1">Art/mantua_leadericon.dds</File>
+    <File md5="FF8BB7A532FCA96B06E949474E222B9A" import="1">Art/maputo_leadericon.dds</File>
+    <File md5="C1FB41D49DEE16503F5BBA103CE821C5" import="1">Art/maya_leadericon.dds</File>
+    <File md5="AC43FC2537C494D6BC960ACF23A65195" import="1">Art/megaton_leadericon.dds</File>
+    <File md5="A6436F0AFBBDD6132AD8F07157629D8B" import="1">Art/minsk_leadericon.dds</File>
+    <File md5="7D0590BBD113D386F3E2A858F0F48ADD" import="1">Art/montevideo_leadericon.dds</File>
+    <File md5="24B254CEF81B301731172A01119D23AA" import="1">Art/mushroom_kingdom_leadericon.dds</File>
+    <File md5="3263B56120A1705E683DF1B3BEB7F21E" import="1">Art/napata_leadericon.dds</File>
+    <File md5="B4EC58E34B64CC21E34240EF12B511C0" import="1">Art/naples_leadericon.dds</File>
+    <File md5="129D778198963815EB0B08982A145866" import="1">Art/necropolis_leadericon.dds</File>
+    <File md5="BCA5396F49CF7AFF31F7995CE9108E8C" import="1">Art/newton_leadericon.dds</File>
+    <File md5="E94DA8DDD392BA31850CD3E760270A8D" import="1">Art/new_reno_leadericon.dds</File>
+    <File md5="07168B9F6C1F7449D27B5E54CB9332E8" import="1">Art/novac_leadericon.dds</File>
+    <File md5="AE3E82A88C11FE49E4102488385ED007" import="1">Art/nuremberg_leadericon.dds</File>
+    <File md5="506C9DB47B46449C9BA34F4540C4983E" import="1">Art/nuuk_leadericon.dds</File>
+    <File md5="86B8B7859BB8E736A0BB70104A2BD253" import="1">Art/oasis_leadericon.dds</File>
+    <File md5="F2527E134D925AF5342343C0CADC8805" import="1">Art/orgrimmar_leadericon.dds</File>
+    <File md5="C99B29DE0191392949F052ABC490BDE5" import="1">Art/paradise_falls_leadericon.dds</File>
+    <File md5="493AE97B2896E53E574BD3304E7729B5" import="1">Art/perth_leadericon.dds</File>
+    <File md5="69BBF36CDC45BF4EC40397826754DA47" import="1">Art/primm_leadericon.dds</File>
+    <File md5="05F4BDF45E94DD4DDA5384BE4CB50D0D" import="1">Art/qufu_leadericon.dds</File>
+    <File md5="3BE081577057793E08E0143C1D1EA24E" import="1">Art/quito_leadericon.dds</File>
+    <File md5="0583B6D8A39168780D353BAD5FD4B3BA" import="1">Art/reykjavik_leadericon.dds</File>
+    <File md5="72FE007C9785D614E54C2EB4E0045525" import="1">Art/rivet_city_leadericon.dds</File>
+    <File md5="3EAD21AD7F12570527CFFED3E5D7DE0A" import="1">Art/rotterdam_leadericon.dds</File>
+    <File md5="2FB870D943FE1DE8AA8F14216E8F8145" import="1">Art/salt_lake_city_leadericon.dds</File>
+    <File md5="92302F23FF1AF452E083243BFDE85E70" import="1">Art/santiago_leadericon.dds</File>
+    <File md5="76047CE23AD1E41CA9C7859A2C90F75B" import="1">Art/san_juan_leadericon.dds</File>
+    <File md5="628A2EB41B9A45D87C8C8B7C0715BC69" import="1">Art/sarnath_leadericon.dds</File>
+    <File md5="664FAB962B500D0C932CBA6A2BCE33DE" import="1">Art/scott_city_leadericon.dds</File>
+    <File md5="50D4F8F0F2A4A295E63DD1E0FDA9908C" import="1">Art/sioux_leadericon.dds</File>
+    <File md5="90A43974292ECD7B91967C97B4062FFA" import="1">Art/steelport_leadericon.dds</File>
+    <File md5="BFCD2E4B92E8A2C5F55126FD4D3D3D78" import="1">Art/stormwind_leadericon.dds</File>
+    <File md5="43A19291CD806A9272B61170873A4F1E" import="1">Art/st_johns_leadericon.dds</File>
+    <File md5="E8A46CE69E272D73CC8DB716A7538F78" import="1">Art/syracuse_leadericon.dds</File>
+    <File md5="56A3918A4D9093EF5BDA4F61537E6874" import="1">Art/taipei_leadericon.dds</File>
+    <File md5="DF5773843FD57E52E843090591BF28F7" import="1">Art/tblisi_leadericon.dds</File>
+    <File md5="6961819FEA8DB04B70822E110F1BF0D3" import="1">Art/tblisi_leadericon2.dds</File>
+    <File md5="AFC337A3FFD2D30EFC1A098E76133D5E" import="1">Art/tehran_leadericon.dds</File>
+    <File md5="210194AC8FE2D26886C97618760F5D47" import="1">Art/tenpenny_tower_leadericon.dds</File>
+    <File md5="8A0B8ECCE73514D221876FE9D60D9AD9" import="1">Art/the_den_leadericon.dds</File>
+    <File md5="1DD08639C5E789C08A25944B8F1816C7" import="1">Art/the_hub_leadericon.dds</File>
+    <File md5="31799B54198C30A3E629D17C864D7891" import="1">Art/the_pitt_leadericon.dds</File>
+    <File md5="F7D6BA2F1882CD182DC8DC5C0175FC38" import="1">Art/the_pit_leadericon.dds</File>
+    <File md5="FE6BC7387F1DB5DFB48C29D1B9E4202F" import="1">Art/thimphu_leadericon.dds</File>
+    <File md5="3A88D7A34F45DF892537B2B09ED59870" import="1">Art/toronto_leadericon.dds</File>
+    <File md5="02E495B35EB3215877B59D58E99E713B" import="1">Art/toronto_leadericon2.dds</File>
+    <File md5="BE50CD2274C752B085DAE7F96519767E" import="1">Art/touba_leadericon.dds</File>
+    <File md5="CE1AC608FC830076DFCC00052897A812" import="1">Art/tripoli_leadericon.dds</File>
+    <File md5="FBF9AD082EAC300BAE3C6E593258196B" import="1">Art/ulundi_leadericon.dds</File>
+    <File md5="22F81BEE06DEB2368ECA7C0C19126E61" import="1">Art/underworld_leadericon.dds</File>
+    <File md5="8D0CD30110BD2B7C5A3AB6DFD357F1C0" import="1">Art/united_nations_leadericon.dds</File>
+    <File md5="85CF18AF34EB396B87651F58074FDB26" import="1">Art/varanasi_leadericon.dds</File>
+    <File md5="E09FBDA7B63C77F118D6C081FB582972" import="1">Art/vault_city_leadericon.dds</File>
+    <File md5="AF24F9B0D5FF00F0D29ED6EBD041707B" import="1">Art/yangon_leadericon.dds</File>
+    <File md5="6A55E672BAC490BBA95EC0FC2725CCC1" import="0">MinorCivLeadersMods.sql</File>
+    <File md5="F8333FD41BA2542B0702F08B0AC92B2D" import="0">MinorCivLeadersModsUpdate.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MinorCivLeadersMods.sql</UpdateDatabase>
+      <UpdateDatabase>MinorCivLeadersModsUpdate.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="7f045c3b-e0b2-48c5-b2af-6caff9a59c35" version="7">
+  <Properties>
+    <Name>City States Leaders II (compatible)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>BETA 5.  [COLOR_GREEN]Adds leader icons to city state screens, making it easier to remember who is who[/COLOR]</Teaser>
+    <Description>City States Leaders II
+for Civilization V (vanilla), Gods + Kings, and Brave New World
+COMPATIBLE VERSION
+
+Adds leader icons to city state screens, making it easier to remember who is who.
+
+This is an upgrade to "City States Leaders" by mihaifx.
+
+ART CREDITS
+Almaty : knightmare13 (Janybek Khan)
+Antananarivo : Nutty (Ranavalona I)
+Antananarivo : TPangolin (Andrianampoinimerina)
+Antwerp : janboruta (Robert III)
+Belgrade : janboruta (Karadorde Petrovic)
+Bethlehem : J. Lievens/Nutty (Guy of Lusignan)
+Bogota : Leugi (Simon Bolivar)
+Bratislava : J. Kohler/Nutty (Svatopluk I)
+Brussels : janboruta (Leopold II)
+Bucharest : janboruta (Vlad III)
+Budapest : janboruta (Stephen I)
+Buenos Aires : Leugi (Eva Peron)
+Buenos Aires : Leugi (Don Jose de San Martin)
+Byblos : LastSword (Ahiram)
+Cahokia : H. Roe/Nutty (Birdman)
+Cahokia : H. Roe/TPangolin (Birdman)
+Cape Town : janboruta (Jan van Riebeeck)
+Colombo : knightmare13 (D.S Senanayake)
+Dubai : TPangolin (Mohammed Al Maktoum)
+Dublin : B. Mulrenin/Nutty (Daniel O'Connell)
+Edinburgh : LastSword (James VI)
+Florence : sukritact (Lorenzo de'Medici)
+Geneva : janboruta (John Calvin)
+Genoa : janboruta (Andrea Doria)
+Hanoi : davey_henninger (Ly Thai To)
+Hanoi : knightmare13 (Ho Chi Minh)
+Helsinki : Hypereon (Gustaf Mannerheim)
+Hong Kong : TPangolin (Kai Ho)
+Ife : janboruta (Akinmoyero)
+Jakarta : Firaxis (Gajah Mada)
+Jerusalem : Leugi (Solomon)
+Kabul : LastSword (Ahmad Shah Durrani)
+Kabul : TPangolin (Ahmad Shah Durrani)
+Kathmandu : Leugi (Tribhuvan)
+Kiev : janboruta (Yaroslav)
+Kuala Lumpur : TPangolin (Yap Ah Loy)
+Kyzyl : Nutty (Khertek Anchimaa-Toka)
+La Venta : LastSword (Po Ngbe)
+La Venta : Leugi (Po Ngbe)
+Lhasa : sukritact (Thubten Gyatso)
+Lisbon : Firaxis (Maria I)
+Lisbon : janboruta (Joao II)
+Malacca : Nutty (Abdul Halim)
+Manila : knightmare13 (Jose Rizal)
+Marrakech : Firaxis (Ahmad al-Mansur)
+Mbanza Kongo : Leugi (Njinga Mbande)
+Melbourne : TPangolin (John Batman)
+Milan : janboruta (Gian Galeazzo Visconti)
+Mogadishu : TPangolin (Aden Adde)
+Mombasa : knightmare13 (Jomo Kenyatta)
+Monaco : knightmare13 (Rainier III)
+Montevideo : P. Alonso/TPangolin (Bruno Mauricio de Zabala)
+Ormus : knightmare13 (Qaboos bin Said)
+Panama City : Leugi (Victoriano Lorenzo)
+Prague : janboruta (Wenceslaus II)
+Quebec City : davey_henninger (John A. MacDonald)
+Ragusa : Nutty (Auguste de Marmont)
+Riga : TPangolin (Janis Cakste)
+Rio De Janeiro : Firaxis (Pedro II)
+Samarkand : M. Gerasimov/LastSword (Timur)
+Samarkand : Tomatekh (Timur)
+Sidon : Leugi (Eshmunazar II)
+Singapore : TPangolin (Lee Kuan Yew)
+Sofia : D. Giudjenov/Nutty (Simeon I)
+Sofia : D. Giudjenov/TPangolin (Simeon I)
+Stockholm : Firaxis (Gustavus Adolphus)
+Sydney : TPangolin (Arthur Phillip)
+Sydney : TPangolin (Henry Parkes)
+Tripoli : F. Duran (Turgut Reis)
+Tyre : LastSword (Hiram I)
+Ur : janboruta (Eannatum)
+Valletta : TPangolin (Giovanni Paolo Lascaris)
+Vancouver : TPangolin (Mackenzie King)
+Vatican City : janboruta (Pius IX)
+Venice : Firaxis (Enrico Dandolo)
+Vienna : Firaxis (Maria Theresa)
+Vilnius : LastSword (Gediminas)
+Warsaw : Firaxis (Casimir III)
+Wellington : TPangolin (Henry Sewell)
+Wittenberg : janboruta (Frederick III)
+Yerevan : Leugi (Tigranes II)
+Zanzibar : sukritact (Majid bin Said)
+Zurich : Krateng (Matthaus Schiner)
+Zurich : G. Closs/TPangolin (Rudolf Brun)</Description>
+    <Authors>Nutty, mihaifx, Gedemon</Authors>
+    <SpecialThanks>whoward69, JFD, Moriboe, Irkalla, bc1, janboruta, Leugi, sukritact, TPangolin, knightmare13, Tomatekh, LastSword</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=473670</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="cc7356e8-ddcf-44da-85e1-a28918c93484" minversion="0" maxversion="999" title="Unofficial Patch and Vanilla Enhanced" />
+    <Mod id="01127f62-3896-4897-b169-ecab445786cd" minversion="0" maxversion="999" title="Civ V Unofficial Patch (GK)" />
+    <Mod id="69ce733f-e895-448c-babb-48c76f2e0b0c" minversion="0" maxversion="999" title="UI - CS View City" />
+    <Mod id="057224c2-b380-433c-9f64-8bbc30816688" minversion="0" maxversion="999" title="UI - CS View City (GK)" />
+  </References>
+  <Blocks>
+    <Mod id="4abf8487-1194-4170-bf2e-acfb78a93ca5" minversion="0" maxversion="999" title="Not Another City States Mod" />
+    <Mod id="b97b7d68-9b58-4245-b32c-9d499d80cd27" minversion="0" maxversion="999" title="City States Leaders (vanilla)" />
+    <Mod id="55cb70c7-5b20-4eae-90d1-ba068b241b55" minversion="0" maxversion="999" title="Ynaemp Leaders for City States" />
+    <Mod id="f67c3b31-f2b1-4d65-83c9-205920bc6d53" minversion="0" maxversion="999" title="City States Leaders for G+K" />
+    <Mod id="05d45fce-f303-477b-9670-44f29461b6fa" minversion="0" maxversion="999" title="City States Leaders for G+K (Flags)" />
+    <Mod id="15d45fce-f303-477b-9670-44f29461b6fa" minversion="0" maxversion="999" title="City States Leaders for BNW (Flags)" />
+    <Mod id="7b606e8c-da55-408f-b078-d2909b35b37f" minversion="0" maxversion="999" title="City States Leaders II" />
+    <Mod id="3fada446-9f4d-4e9b-adc2-e8daa824dccc" minversion="0" maxversion="999" title="Global - City States Gifts" />
+    <Mod id="c90ec87e-219a-40b8-a000-e03b54574e3e" minversion="0" maxversion="999" title="Global - City States Gifts (BNW)" />
+  </Blocks>
+  <Files>
+    <File md5="5A73D1BFB15D01438FF6BE109857B19F" import="1">Art/BNW/bnw_antananarivo_leadericon.dds</File>
+    <File md5="FEF2805FCA92BF89C0F12C97600DB1C5" import="1">Art/BNW/bnw_bogota_leadericon.dds</File>
+    <File md5="193FA2972FB6B4700C2D482B9C83C256" import="1">Art/BNW/bnw_bratislava_leadericon.dds</File>
+    <File md5="40FD121313341C08407AB8A2E9D5A806" import="1">Art/BNW/bnw_buenos_aires_leadericon.dds</File>
+    <File md5="8C3D8210CE020B40259930057CDD16FB" import="1">Art/BNW/bnw_byblos_leadericon.dds</File>
+    <File md5="E2A65BCE320807DFE69398DB4B5E2D78" import="1">Art/BNW/bnw_ife_leadericon.dds</File>
+    <File md5="BA05CD51E64F4B06A0DFDA713DD77686" import="1">Art/BNW/bnw_kabul_leadericon.dds</File>
+    <File md5="A85BD46F3759EB5D88F1F37CB4145994" import="1">Art/BNW/bnw_kiev_leadericon.dds</File>
+    <File md5="77A3045B17DBAB702FCD7DA053C65E67" import="1">Art/BNW/bnw_kyzyl_leadericon.dds</File>
+    <File md5="F6775E12A13974DD720DA8A14BD6FFEF" import="1">Art/BNW/bnw_malacca_leadericon.dds</File>
+    <File md5="23594C3FCADAA5219A55EA0B8FCE26F5" import="1">Art/BNW/bnw_mbanza_kongo_leadericon.dds</File>
+    <File md5="A89251E9C31D744F3A36BB67D440EA41" import="1">Art/BNW/bnw_melbourne_leadericon.dds</File>
+    <File md5="9223CF59E818968CA5A4939862D94D10" import="1">Art/BNW/bnw_mogadishu_leadericon.dds</File>
+    <File md5="FE66E40E574B08024511AEED62C6F8BB" import="1">Art/BNW/bnw_ormus_leadericon.dds</File>
+    <File md5="BFAE1901991A99DE5814400BC191E7DE" import="1">Art/BNW/bnw_panama_city_leadericon.dds</File>
+    <File md5="B2EF0A9295B18651188129B39160F3E2" import="1">Art/BNW/bnw_riga_leadericon.dds</File>
+    <File md5="80A76425E2BCCDA6FC72E367182B6F46" import="1">Art/BNW/bnw_samarkand_leadericon.dds</File>
+    <File md5="F9BBA5360FF5C94B9A4DE093D6F49876" import="1">Art/BNW/bnw_sofia_leadericon.dds</File>
+    <File md5="EC2EED675863D3ABFD27A0ECBC0AE581" import="1">Art/BNW/bnw_ur_leadericon.dds</File>
+    <File md5="7D5AD99A219ED58F29D3E673F151F517" import="1">Art/BNW/bnw_vancouver_leadericon.dds</File>
+    <File md5="66885E1AAA3B542EDA6799125F91BAE3" import="1">Art/BNW/bnw_vilnius_leadericon.dds</File>
+    <File md5="5AB60C2A372B94423D644433C1BADA65" import="1">Art/BNW/bnw_wellington_leadericon.dds</File>
+    <File md5="8AD3A28A0FD91F6CDA97ED7D8D39B661" import="1">Art/CityStateBackgroundDefault.dds</File>
+    <File md5="8B87F7605AAB1BE43634026C17D6FBA8" import="1">Art/CityStatePopupTop100.dds</File>
+    <File md5="1AE6B5AD3182C58B7F72960EF642B0C9" import="1">Art/CityStatePopupTop200.dds</File>
+    <File md5="9B4290FFF27C279453423ED0DFFB1452" import="1">Art/CityStatePopupTop300.dds</File>
+    <File md5="1F3A67E34DAB3C9BE314A597CA613406" import="1">Art/CityStatePopupTop400.dds</File>
+    <File md5="52841CCBF68C0B9BFD964F32D7BD730B" import="1">Art/CityStatePopupTop500.dds</File>
+    <File md5="3BB704C3C83A6B10E262A966F59BF4D9" import="1">Art/G+K/g+k_antwerp_leadericon.dds</File>
+    <File md5="D50B2060E3D47E8847DA5A7A08AFBE35" import="1">Art/G+K/bnw_antwerp_leadericon.dds</File>
+    <File md5="634793517D4A8565FD497D14F491392A" import="1">Art/G+K/bnw_cahokia_leadericon.dds</File>
+    <File md5="17736E9256536D343E9BA55ACECFC97C" import="1">Art/G+K/bnw_colombo_leadericon.dds</File>
+    <File md5="C38363A722D7070146603F042B71ABB7" import="1">Art/G+K/bnw_hong_kong_leadericon.dds</File>
+    <File md5="4A4DEE1AFBB9C6CFA91AD65CF02B6A7D" import="1">Art/G+K/bnw_jerusalem_leadericon.dds</File>
+    <File md5="3A0338A07F38F8333B115AE225CF7382" import="1">Art/G+K/bnw_la_venta_leadericon.dds</File>
+    <File md5="E24EC5D32C52082CF3F0A7F2A1BFC8F0" import="1">Art/G+K/bnw_manila_leadericon.dds</File>
+    <File md5="9A025BF5F10D7722E2021F4A66357E7A" import="1">Art/G+K/bnw_milan_leadericon.dds</File>
+    <File md5="A2D8AED6C45976917DF2A65213A2111F" import="1">Art/G+K/bnw_mombasa_leadericon.dds</File>
+    <File md5="BB3C72711A1DB9D4A7B219B95FF0FB49" import="1">Art/G+K/bnw_prague_leadericon.dds</File>
+    <File md5="C5EAC5E63345C839F84D6199BFFC61AA" import="1">Art/G+K/bnw_valletta_leadericon.dds</File>
+    <File md5="284EC04403021F9B5003746173C0DE40" import="1">Art/G+K/bnw_vatican_city_leadericon.dds</File>
+    <File md5="627D75F9D3E5372579F7B52C7E0171EC" import="1">Art/G+K/bnw_wittenberg_leadericon.dds</File>
+    <File md5="9038320EAD8072859C0513C9AD826E19" import="1">Art/G+K/bnw_yerevan_leadericon.dds</File>
+    <File md5="655F87F6C17FCECEBA29F2D862094A16" import="1">Art/G+K/bnw_zanzibar_leadericon.dds</File>
+    <File md5="77915FA7FA04DCBC3A5AEC8CD8A7CC83" import="1">Art/G+K/bnw_zurich_leadericon.dds</File>
+    <File md5="A2914B1B848DA555FE17291D5CAE808A" import="1">Art/G+K/bnw_zurich_leadericon2.dds</File>
+    <File md5="A7A9A2A04F13FC99BF3CF34AE5FF3466" import="1">Art/G+K/g+k_cahokia_leadericon.dds</File>
+    <File md5="0AA73F8A8B9294778CACA84FA1D15F1E" import="1">Art/G+K/g+k_colombo_leadericon.dds</File>
+    <File md5="4CAC2A34A91FBC7D1DB7D827B9E3C226" import="1">Art/G+K/g+k_jakarta_leadericon.dds</File>
+    <File md5="4CEE59E931F189E01514BA6FED6E3991" import="1">Art/G+K/g+k_lisbon_leadericon.dds</File>
+    <File md5="5D9380D3661C9AF234BBE4288AC042DE" import="1">Art/G+K/g+k_marrakech_leadericon.dds</File>
+    <File md5="1C604DD216BA7610A13A81E82336D086" import="1">Art/G+K/g+k_hong_kong_leadericon.dds</File>
+    <File md5="AC735DD2A27E9E701A6E09EB9C1748EC" import="1">Art/G+K/g+k_jerusalem_leadericon.dds</File>
+    <File md5="18AB45CDBE642841AA964D65B4A1C437" import="1">Art/G+K/g+k_la_venta_leadericon.dds</File>
+    <File md5="04FB3AC64283A6B1C2ED9AE985CF5C8E" import="1">Art/G+K/g+k_manila_leadericon.dds</File>
+    <File md5="D286407514CD38456E4911DFB3D464AC" import="1">Art/G+K/g+k_milan_leadericon.dds</File>
+    <File md5="23C3E2C2EF41FF11C1C4955DB0911C6A" import="1">Art/G+K/g+k_mombasa_leadericon.dds</File>
+    <File md5="5DB7B4A46B39014B79BDF4227584D077" import="1">Art/G+K/g+k_prague_leadericon.dds</File>
+    <File md5="AFDC3E2484EAA7DBBC9A300C7E609836" import="1">Art/G+K/g+k_valletta_leadericon.dds</File>
+    <File md5="6469AEDA061766F9E0F562B5D70D22F5" import="1">Art/G+K/g+k_vatican_city_leadericon.dds</File>
+    <File md5="1898CF175611485EA229B6142A83C3FC" import="1">Art/G+K/g+k_wittenberg_leadericon.dds</File>
+    <File md5="776E6A52D5EA954B45FF37E8E5DF492D" import="1">Art/G+K/g+k_yerevan_leadericon.dds</File>
+    <File md5="004DF2FA146D5845C8FE4F4FF69F0AF6" import="1">Art/G+K/g+k_zanzibar_leadericon.dds</File>
+    <File md5="B492C0BC18DB217A35501CF15BE096BB" import="1">Art/G+K/g+k_zurich_leadericon.dds</File>
+    <File md5="92501BC1046215AE6C2396D536C9494D" import="1">Art/vanilla/van_almaty_leadericon.dds</File>
+    <File md5="C67875E71BCD03A88F7D35BB3273F0F7" import="1">Art/vanilla/van_belgrade_leadericon.dds</File>
+    <File md5="6563494B69B5E6E39FBF684A969ED194" import="1">Art/vanilla/van_brussels_leadericon.dds</File>
+    <File md5="8D12D5D66C1AE9675C4EDA533A83E47D" import="1">Art/vanilla/van_bucharest_leadericon.dds</File>
+    <File md5="DCE198010AB77BD583F9A8401BDC38AF" import="1">Art/vanilla/van_budapest_leadericon.dds</File>
+    <File md5="C12F7EDE9318F6CA6DA66F00F2B53981" import="1">Art/vanilla/van_cape_town_leadericon.dds</File>
+    <File md5="7DD24AFDBA1B0DE2846812A88E724E4F" import="1">Art/vanilla/van_dublin_leadericon.dds</File>
+    <File md5="D7E56AEAA086DC8DCC4BCF82E25D1235" import="1">Art/vanilla/van_edinburgh_leadericon.dds</File>
+    <File md5="532BE6F52C0367B80FCBA115FFB1663F" import="1">Art/vanilla/van_florence_leadericon.dds</File>
+    <File md5="E0C1F7D44764941483DEC1D6D1770A74" import="1">Art/vanilla/g+k_almaty_leadericon.dds</File>
+    <File md5="CC09795084CF542EF9280ACECFAD88DC" import="1">Art/vanilla/g+k_belgrade_leadericon.dds</File>
+    <File md5="B5AC231894D9252A8C0326C9F8B3602B" import="1">Art/vanilla/bnw_almaty_leadericon.dds</File>
+    <File md5="3E224921FD73DE854B17EFC393B57C7D" import="1">Art/vanilla/bnw_belgrade_leadericon.dds</File>
+    <File md5="553AD8872C8DC9AE3DD5F11F9CF88588" import="1">Art/vanilla/bnw_brussels_leadericon.dds</File>
+    <File md5="AB8BB137C4928C7D2EF3BA9E370DC942" import="1">Art/vanilla/bnw_bucharest_leadericon.dds</File>
+    <File md5="329CE8869E704CC7D8797DC1A1A4FC08" import="1">Art/vanilla/bnw_budapest_leadericon.dds</File>
+    <File md5="354FF6DC33109A1F9F89F6CF0AC3EA70" import="1">Art/vanilla/bnw_cape_town_leadericon.dds</File>
+    <File md5="A11E91A54205C423FF6E96D51A4E36CE" import="1">Art/vanilla/bnw_florence_leadericon.dds</File>
+    <File md5="6D9C655F28A686CA2A9DF43564011249" import="1">Art/vanilla/bnw_geneva_leadericon.dds</File>
+    <File md5="62B925ECFCEE6D6DD70FFBB81688A5DA" import="1">Art/vanilla/bnw_genoa_leadericon.dds</File>
+    <File md5="E361C5B5B3611AEC9CAEA1BC44977239" import="1">Art/vanilla/bnw_hanoi_leadericon.dds</File>
+    <File md5="3B7F278E66675C377A233216D0338736" import="1">Art/vanilla/bnw_kathmandu_leadericon.dds</File>
+    <File md5="9BC968FED483552043F2315E65A2F599" import="1">Art/vanilla/bnw_kuala_lumpur_leadericon.dds</File>
+    <File md5="9D95759BEF8481CF7EAEEC6E451CE33C" import="1">Art/vanilla/bnw_lhasa_leadericon.dds</File>
+    <File md5="69597C2BE0C0E0BABE18956213C48794" import="1">Art/vanilla/bnw_monaco_leadericon.dds</File>
+    <File md5="EA1AF098E49FEE7C7644749FBE70A298" import="1">Art/vanilla/bnw_quebec_city_leadericon.dds</File>
+    <File md5="BA1E940AB540FFB91AD00689E1951008" import="1">Art/vanilla/bnw_ragusa_leadericon.dds</File>
+    <File md5="6BAC56EC0519DDE7E752CFDD0F631749" import="1">Art/vanilla/bnw_sidon_leadericon.dds</File>
+    <File md5="5D99AEE9C9AC273CBF5A1916EA9F580F" import="1">Art/vanilla/bnw_singapore_leadericon.dds</File>
+    <File md5="908E25A94CFABA33193888F02D37543F" import="1">Art/vanilla/bnw_sydney_leadericon.dds</File>
+    <File md5="746DABF16E394AD564E33A94DB301D05" import="1">Art/vanilla/bnw_tyre_leadericon.dds</File>
+    <File md5="8ED5A6FFBDE1A09A57FF171148296305" import="1">Art/vanilla/g+k_brussels_leadericon.dds</File>
+    <File md5="211910903740F6499D347C63854EDCD6" import="1">Art/vanilla/g+k_bucharest_leadericon.dds</File>
+    <File md5="3600E5826640F06062C7EEE6C9352454" import="1">Art/vanilla/g+k_budapest_leadericon.dds</File>
+    <File md5="533F8A41D5630573382D791F48593CB4" import="1">Art/vanilla/g+k_cape_town_leadericon.dds</File>
+    <File md5="88E62633F9D71C085F056CE108A065B6" import="1">Art/vanilla/g+k_florence_leadericon.dds</File>
+    <File md5="24E4B7E71F0002DF49F8AB48EF8C77C0" import="1">Art/vanilla/g+k_geneva_leadericon.dds</File>
+    <File md5="D5982F665796238453490296F4AD5F71" import="1">Art/vanilla/g+k_genoa_leadericon.dds</File>
+    <File md5="50DC422052372176E4E0C129CBF48A77" import="1">Art/vanilla/g+k_hanoi_leadericon.dds</File>
+    <File md5="ED4BDEE6C7B07542E2388832800AD3D3" import="1">Art/vanilla/g+k_kathmandu_leadericon.dds</File>
+    <File md5="32E58578D9986D5E56253F72E957976C" import="1">Art/vanilla/g+k_kuala_lumpur_leadericon.dds</File>
+    <File md5="54AFB3B2241B8F07F7E85E6F87B03FEB" import="1">Art/vanilla/g+k_lhasa_leadericon.dds</File>
+    <File md5="8D578D7CEB7C13735F719CA5B6C0D627" import="1">Art/vanilla/g+k_monaco_leadericon.dds</File>
+    <File md5="E2606425695462D244385FB684D69AF8" import="1">Art/vanilla/g+k_quebec_city_leadericon.dds</File>
+    <File md5="1219DEFC7C60EA8268FF70569542BE98" import="1">Art/vanilla/g+k_ragusa_leadericon.dds</File>
+    <File md5="B4EEF9B26BD3CF86BEF8F95272D42C0C" import="1">Art/vanilla/g+k_rio_de_janeiro_leadericon.dds</File>
+    <File md5="E39267ABF31A63416561634EE5C33AC7" import="1">Art/vanilla/g+k_sidon_leadericon.dds</File>
+    <File md5="D41F2FCBFFA78EE16B34C4DD5E7446BB" import="1">Art/vanilla/g+k_singapore_leadericon.dds</File>
+    <File md5="041BF8D36AFE03DFF86189C0D5C0C7B0" import="1">Art/vanilla/g+k_sydney_leadericon.dds</File>
+    <File md5="27B0C233004B2BE4CC0D0ED13C674C9B" import="1">Art/vanilla/g+k_tyre_leadericon.dds</File>
+    <File md5="E2433F164A30D69DC18933DECFA7B700" import="1">Art/vanilla/g+k_venice_leadericon.dds</File>
+    <File md5="1ACF16519D421A52293505B7D14488B0" import="1">Art/vanilla/g+k_warsaw_leadericon.dds</File>
+    <File md5="A82D26DAAACBFB28DE88F7C63E4A8C3C" import="1">Art/vanilla/van_geneva_leadericon.dds</File>
+    <File md5="83457EECAEC0B5D794571A09668BDD12" import="1">Art/vanilla/van_genoa_leadericon.dds</File>
+    <File md5="7DE52C2DA2191CDC65D66DD9B0E9EF9A" import="1">Art/vanilla/van_hanoi_leadericon.dds</File>
+    <File md5="D5F9B906C47D2B2584BF2EDBBF0D04C8" import="1">Art/vanilla/van_helsinki_leadericon.dds</File>
+    <File md5="A24C76750F02C86FB44898428437D519" import="1">Art/vanilla/van_kathmandu_leadericon.dds</File>
+    <File md5="98018814862CDF34AC5285DAA8818D4F" import="1">Art/vanilla/van_kuala_lumpur_leadericon.dds</File>
+    <File md5="9E5C7E89D8256BCFB712A2EB30D387A5" import="1">Art/vanilla/van_lhasa_leadericon.dds</File>
+    <File md5="80437055C5D0A951D0003B644C0AA005" import="1">Art/vanilla/van_monaco_leadericon.dds</File>
+    <File md5="654CACC10C75D4916A76CC221863FAF1" import="1">Art/vanilla/van_quebec_city_leadericon.dds</File>
+    <File md5="1893820D2C9708774A9899F9CA172269" import="1">Art/vanilla/van_ragusa_leadericon.dds</File>
+    <File md5="57FB387D47E02AFEEEF01C47C50D9BB4" import="1">Art/vanilla/van_rio_de_janeiro_leadericon.dds</File>
+    <File md5="85D5723CFD0FCE0D01A1D7B36D001395" import="1">Art/vanilla/van_sidon_leadericon.dds</File>
+    <File md5="F072DC9EF387C6992870572FF7B01B12" import="1">Art/vanilla/van_singapore_leadericon.dds</File>
+    <File md5="5802EB82712336876593E6CB15BEA771" import="1">Art/vanilla/van_stockholm_leadericon.dds</File>
+    <File md5="3350C3D2F3421B789CF6CE6C70B772AF" import="1">Art/vanilla/van_sydney_leadericon.dds</File>
+    <File md5="01426ACB35A99526AF25A714CBD2639C" import="1">Art/vanilla/van_tyre_leadericon.dds</File>
+    <File md5="EA0E8A726F8CC0DF5AF670E36F326B6F" import="1">Art/vanilla/van_venice_leadericon.dds</File>
+    <File md5="46AF7C54E59D44E5B663FB6823C1E979" import="1">Art/vanilla/van_vienna_leadericon.dds</File>
+    <File md5="9DB8B649EC4F26C31F8F65B4B7B40880" import="1">Art/vanilla/van_warsaw_leadericon.dds</File>
+    <File md5="B1B90EFF55824B1BF7BDD28DFA5503FC" import="0">MinorCivLeadersCompatible.lua</File>
+    <File md5="0497840786423E3E0C23DAC1AEC97185" import="0">MinorCivLeaders.sql</File>
+    <File md5="13C2F9F8477BF5814BA0F0694F810229" import="0">MinorCivLeaders_en_US.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MinorCivLeaders.sql</UpdateDatabase>
+      <UpdateDatabase>MinorCivLeaders_en_US.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="MinorCivLeadersCompatible.lua">
+      <Name>MinorCivLeadersCompatible</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

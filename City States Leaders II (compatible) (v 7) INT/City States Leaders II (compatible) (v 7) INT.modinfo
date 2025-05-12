@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c571fedf-e889-495a-bc4f-505df8d6a1b2" version="7">
+  <Properties>
+    <Name>City States Leaders II (compatible) (v 7) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the City States Leaders II (compatible)</Teaser>
+    <Description>Translation of the City States Leaders II (compatible) into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]도시 국가 지도자 2 (호환) 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="7f045c3b-e0b2-48c5-b2af-6caff9a59c35" minversion="0" maxversion="999" title="City States Leaders II (compatible)" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="09AD8CD0D85A01C781278651B69D26A0" import="0">MinorCivLeaders_ko_KR.xml</File>
+  </Files>
+</Mod>
