@@ -1,0 +1,136 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>40</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<RequiredBuildingClass>BUILDINGCLASS_CARAVANSARY</RequiredBuildingClass>
+			<IsOneShot>true</IsOneShot>
+			<HasTradeConnection>true</HasTradeConnection>
+			<CityEventArt>advisorforeign.dds</CityEventArt>
+			<CityEventAudio>AS2D_EVENT_EFOREIGN</CityEventAudio>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_GOOD</CityEventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_CAMP</ImprovementRequired>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_PLANTATION</ImprovementRequired>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_FISHING_BOATS</ImprovementRequired>
+			<RequiredBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_4</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_4</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_QUARRY</ImprovementRequired>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_GOOD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_2</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION">
+			<Text>Tricks Of The Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP">
+			<Text>Merchants courted by our Foreign Advisor have learned of the trade routes to our City, and are interested in investing in local business.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_1">
+			<Text>Trade at the Caravansary produces +3 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>Our prestigious hunters collect pelts and hides that would sell well abroad.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_2">
+			<Text>Trade at the Caravansary produces +3 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>Plantations around the City are home to fruit that will not grow in foreign lands.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_3">
+			<Text>Trade at the Lighthouse produces +2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>Our fishing industry can transport heavy equipment and materials long distances with ease, a capability these foreigners do not have access to.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_HELP_CHOICE_4">
+			<Text>Trade at the Caravansary produces +2 [ICON_CULTURE] culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>Our large scale excavations produce huge amounts of a handsome stone that is in high demand with their artists.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

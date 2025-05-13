@@ -1,0 +1,444 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_SWEDEN_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_SWEDEN</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AMPHITHEATER</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_SWEDEN_UE_DUMMY</EventBuildingClassGlobal>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+		</Row>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<PlayerHappiness>-5</PlayerHappiness>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<LosingMoney>true</LosingMoney>
+		</Row>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_RAILROAD</PrereqTech>
+			<IsUnhappy>true</IsUnhappy>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SWEDEN_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<MinimumNationalPopulation>200</MinimumNationalPopulation>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>-30</GoldMedianModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_SWEDEN_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SWEDEN_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_SWEDEN_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SWEDEN_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_SWEDEN_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_SWEDEN_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_SWEDEN_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+			<CapitalOnly>true</CapitalOnly>
+			<TradeRouteLandGoldBonus>300</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>3</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>3</TradeRouteTargetBonus>
+		</Row>
+	</Buildings>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_3</EventChoiceType>
+			<UnitType>UNIT_DANISH_BERSERKER</UnitType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>7</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_DEER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>
+		<!--<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE_VENICE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>-->
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SWEDEN_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Stalwart</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_1">
+			<Text>{3_PlayerName}'s social infrastructure produces a Great Person!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Incorporation of Sami People</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_2">
+			<Text>{3_PlayerName} welcomes the Sami peoples into Sweden!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Epic Saga</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_3">
+			<Text>{3_PlayerName} calls for warriors to start an epic saga!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Great Reduction</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_4">
+			<Text>{3_PlayerName} seizes feudal lands from his nobility.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Forest Industrialization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_5">
+			<Text>Swedish forest industry is booming.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Social Democracy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SWEDEN_UE_CHOICE_6">
+			<Text>{3_PlayerName} implements sweeping social and economic reform, at huge cost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION">
+			<Text>From Midgard to Valhalla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP">
+			<Text>From the Fjords to the frozen forests, Sweden sings of your grace and favor, my King. Yet, events external to our influence seek to throw the country into turmoil.[NEWLINE][NEWLINE]Your guidance will steady us all in what is to come.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_2">
+			<Text>Incorporate native peoples. Tundra yields +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture. Snow yields +2 [ICON_FOOD] Food and +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_3">
+			<Text>3 Berserkers spawns near the [ICON_CAPITAL] Capital. [ICON_INTERNATIONAL_TRADE] Trade Routes originating from the [ICON_CAPITAL] Capital generate +3 [ICON_GOLD] Gold. Foreign Trade Routes are enticed with your stories yielding +3 [ICON_GOLD] Gold for you and them when a Foreign [ICON_INTERNATIONAL_TRADE] Trade Route is sent to your Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_4">
+			<Text>Receive {2_InstantYield}. However, scheming at court causes 5 [ICON_HAPPINESS_3] Unhappiness, but Chanceries provide +3 [ICON_FOOD] Food, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_5">
+			<Text>Forest Lumbermills gain +1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_HELP_CHOICE_6">
+			<Text>Villages lose -1 [ICON_GOLD] Gold and Towns lose -3 [ICON_GOLD] Gold. In exchange, all Cities have their [ICON_GOLD] Poverty threshold reduced by 30%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_1">
+			<Text>In times of trouble, we look to the stalwart spirit of the Swedish people to triumph over adversity.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_2">
+			<Text>*A blight threatens the food supply*[NEWLINE]This disease has not affected the Snowy settlements of the Tundra, and the fishing tribes of the fjords. Their knowledge and skill can help us through this. If we are to live in this land, it must be as one people.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The war has seen violent factions of listless warriors battling on the streets*[NEWLINE]Society cannot hold this much hate. Our warriors are restlessness is just: they yearn for an epic tale, with a glorious death. We can offer them this, whether it be at the end of the mighty river or across the frozen straights.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The finances of the country become as moribund as the nobles responsible for them*[NEWLINE]A Great Reduction will revitalize our land; the gifted and engaged have but to gain from this! The torpid, however... I expect they will not make this easy for me.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Everyday more of my people leave their Fatherland searching for new opportunities and greener pastures*[NEWLINE]We cannot face these other industrialized nations on their own terms. If we are going to become a dynamic, modern country it must be on our terms, with our resources, and the skills we have honed over the ages.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SWEDEN_UE_DESCRIPTION_CHOICE_6">
+			<Text>*More and more fall through the cracks in society, despite your best efforts*[NEWLINE]We are one people. When one man goes without a meal, we all starve. The time is right to usher in a new, social era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEDEN_UE_DUMMY">
+			<Text>Swedish Sagas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEDEN_UE_DUMMY_HELP">
+			<Text>+3 [ICON_GOLD] Gold from any Trade Routes in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

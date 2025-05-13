@@ -1,0 +1,536 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_ENGLAND_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_ENGLAND</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CIRCUS_MAXIMUS</RequiredAnywhereBuildingClass>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<IsOneShot>true</IsOneShot>
+			<WLTKDTurns>20</WLTKDTurns>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_ENGLAND_UE_DUMMY</EventBuildingClassGlobal>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsUnhappy>true</IsUnhappy>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+			<RandomBarbarianSpawn>3</RandomBarbarianSpawn>
+			<ResistanceTurns>1</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<IsOneShot>true</IsOneShot>
+		</Row>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5</Description>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<EventPromotion>PROMOTION_UE_SUN_NEVER_SETS</EventPromotion>
+			<RandomBarbarianSpawn>2</RandomBarbarianSpawn>
+			<IsOneShot>true</IsOneShot>
+			<MinimumNumCoastalCities>7</MinimumNumCoastalCities>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ENGLAND_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6</Description>
+			<RequiresWar>true</RequiresWar>
+			<IsOneShot>true</IsOneShot>
+			<EventPromotion>PROMOTION_INTERCEPTION_3</EventPromotion>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BROADCAST_TOWER</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<WLTKDTurns>15</WLTKDTurns>
+			<Expires>false</Expires>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</EventBuildingClassGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_ENGLAND_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ENGLAND_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_ENGLAND_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_ENGLAND_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_UE_CHURCH</Type>
+			<DefaultBuilding>BUILDING_UE_CHURCH</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_UE_CHURCH</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ENGLAND_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_ENGLAND_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<ConquestProb>100</ConquestProb>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+		<Row>
+			<Type>BUILDING_ENGLAND_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_UE_CHURCH</Type>
+			<BuildingClass>BUILDINGCLASS_UE_CHURCH</BuildingClass>
+			<Description>TXT_KEY_BUILDING_UE_CHURCH</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CHURCH_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_UE_CHURCH_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_CHURCH_HELP</Help>
+			<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
+			<GreatWorkCount>1</GreatWorkCount>
+			<ConquestProb>100</ConquestProb>
+			<ArtDefineTag>TEMPLE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<WLTKDTurns>15</WLTKDTurns>
+			<ReligiousPressureModifier>40</ReligiousPressureModifier>
+			<Cost>-1</Cost>
+			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<PortraitIndex>61</PortraitIndex>
+			<FaithCost>250</FaithCost>
+			<EventChoiceRequiredActive>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceRequiredActive>
+			<MutuallyExclusiveGroup>361</MutuallyExclusiveGroup>
+			<IsDummy>true</IsDummy>
+			<NeverCapture>true</NeverCapture>
+			<CultureMedianModifier>-10</CultureMedianModifier>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>9</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_GreatWorkYieldChangesLocal>
+		<Row>
+			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_GreatWorkYieldChangesLocal>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_WLTKDYieldMod>
+		<Row>
+			<BuildingType>BUILDING_ENGLAND_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ENGLAND_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_WLTKDYieldMod>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_SUN_NEVER_SETS</Type>
+			<Description>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS</Description>
+			<Help>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CapitalDefenseModifier>1</CapitalDefenseModifier>
+			<CapitalDefenseFalloff>1</CapitalDefenseFalloff>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_SUN_NEVER_SETS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_SUN_NEVER_SETS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>325</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>325</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GRAND_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UE_CHURCH2</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Knighthood</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1">
+			<Text>{3_PlayerName} knights a commoner!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Grand Tourney</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2">
+			<Text>{3_PlayerName} has married her daughter to a handsome young knight!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Protestant Reformation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3">
+			<Text>{3_PlayerName} has martyred her archbishop. The church is in turmoil!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Civil War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4">
+			<Text>{3_PlayerName} has been temporarily usurped by Puritans and enters [ICON_RESISTANCE] Anarchy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Imperialism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5">
+			<Text>{3_PlayerName} puts down an uprising of conquered peoples across the Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Darkest Hour</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6">
+			<Text>{3_PlayerName} has given a rallying speech against their adversaries in war!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION">
+			<Text>Mightier Yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP">
+			<Text>Uneasy sits the head that wears the crown, but of late a man commanding great support amongst our subjects has directly petitioned Your Grace.[NEWLINE][NEWLINE]Will you acquiesce to his request?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2">
+			<Text>Spend {1_YieldCost} to host a Grand Tourney. The [ICON_CAPITAL] Capital enters [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] for 20 Turns and 2 Longbowmen spawn nearby. This and future [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] also increase [ICON_CULTURE] Culture generation in the [ICON_CAPITAL] Capital by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3">
+			<Text>Plea for forgiveness with {1_YieldCost}, and a tithe of 10 [ICON_GOLD] Maintenance on the Grand Temple. Pilgrims to the site of martyrdom unlock the Parish Church Building. Other Churches gain +3 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4">
+			<Text>Up to 3 [ICON_WAR] Barbarians spawn near every City and you enter [ICON_RESISTANCE] Anarchy for 1 Turn. Each [ICON_DIPLOMAT] Civil Servant generates +5 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5">
+			<Text>Up to 2 [ICON_WAR] Barbarian spawns near every City. Courthouses provide +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production. Gun and Siege Units gain the Sun Never Sets Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6">
+			<Text>Exert {1_YieldCost} of cultural influence to enter 15 Turns of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]. This and future [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] also increase [ICON_PRODUCTION] Production by 15%. All Fighters, and those constructed in the next {4_Turns}, gain the Interception III Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1">
+			<Text>*Your are petitioned by your lords to recognize a Great Person.*[NEWLINE]We and our subjects are of one mind. This champion of the common folk shall be knighted without further delay.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Your bravest knight has returned to the Capital with the mythical Excalibur. Now he is worthy, he once again asks for your daughters hand.*[NEWLINE]I don't care where this Arthur chap says he got the sword. If he wants the princess's hand in marriage he'd better win the Grand Tourney. Archery, melee, joust, the lot.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The archbishop seeks to extend the demesne of the church against your direct instruction!*[NEWLINE]The privy purse bleeds gold on a daily basis and this man dares to claim taxes in the name of the Church?! Will no one rid me of this troublesome priest...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The Commons request royal assent for the beheading of one of your closest supporters!*[NEWLINE]Rally the loyal! This man, and the puritanical faction he represents seek the destruction of the state as we know it. I pray for strength in what is to come.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5">
+			<Text>*A populist leader in one of your imperial holdings has requested independence!*[NEWLINE]The fringes peoples of our Empire are prone to these bouts of fancy. Crush this upstart rebellion and ready the troops for further conquest. Wider still shalt our bounds be set!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The Prime Minister has personally requested you to make a speech to the nation*[NEWLINE]Of course. For the sake of all that we ourselves hold dear, and of the world order and peace, it is unthinkable that we should refuse to meet the challenge.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS">
+			<Text>Sun Never Sets</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP">
+			<Text>Gain +1% [ICON_STRENGTH] Strength for every Tile from the [ICON_CAPITAL] Capital this Unit is. Granted only via England's Events.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY">
+			<Text>Grand Tourney</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP">
+			<Text>During "We Love the King Day!", this city generates +50% [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2">
+			<Text>Their Finest Hour</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP">
+			<Text>During "We Love the King Day!", this city generates +15% [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH">
+			<Text>Parish Church</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH_STRATEGY">
+			<Text>Purchasable with an Event Choice unique to England. Mutually exclusive with the Church.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

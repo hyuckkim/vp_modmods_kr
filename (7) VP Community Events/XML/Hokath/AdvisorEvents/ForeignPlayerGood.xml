@@ -1,0 +1,214 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorforeign.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<ImprovementAnywhereRequired>IMPROVEMENT_CAMP</ImprovementAnywhereRequired>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<ImprovementAnywhereRequired>IMPROVEMENT_FISHING_BOATS</ImprovementAnywhereRequired>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SUGAR</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_COCOA</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BANANA</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SPICES</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_COTTON</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_INCENSE</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_SALT</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION">
+			<Text>Teach Us Your Ways</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP">
+			<Text>Your Foreign Advisor has sent several reports of different tribes she has encountered on her voyage. We could learn much from their cultures, but only have enough supplies to bring back a contingent from one of them.[NEWLINE]Which tribe do we tell them to return to?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>Camps generate +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_2">
+			<Text>Sources of [ICON_RES_COCOA] Cocoa, [ICON_RES_SUGAR] Sugar, [ICON_RES_BANANA] Banana and [ICON_RES_SPICES] Spices yield +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_3">
+			<Text>Fishing Boats generate +1 [ICON_PRODUCTION] Production</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_4">
+			<Text>Sources of [ICON_RES_INCENSE] Incense, [ICON_RES_STONE] Stone, [ICON_RES_SALT] Salt and [ICON_RES_COTTON] Cotton yield +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>Send off for her to return with representatives of this hunter-gatherer tribe she describes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>I am interested to hear how the knowledge of this Jungle tribe can improve our planting methods.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>The description of this Fishermen tribe is fantastical. I must see their techniques with my own eyes!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>Clearly this Desert tribe of craftsmen has the expertise we need seek.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,55 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisormilitary.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_WAR_PLAYER_GOOD</EventType>
+			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>50</EventDuration>
+			<Expires>true</Expires>
+			<EventPromotion>PROMOTION_ACCURACY_4</EventPromotion>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_WAR_PLAYER_GOOD</EventType>
+		</Row>
+	</Event_ParentEvents>
+	
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_DESCRIPTION">
+			<Text>Death From Afar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>Your elite soldier program has completed the training of a class of assassins. Eligible Units receive the Firing Doctrine Promotion for the next {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>Death From Afar</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

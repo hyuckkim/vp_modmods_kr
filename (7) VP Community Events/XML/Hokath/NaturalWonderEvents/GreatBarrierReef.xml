@@ -1,0 +1,232 @@
+<GameData>
+	<!-- Great Barrier Reef -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_REEF</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_REEF</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_REEF_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_REEF_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventBuildingClass>BUILDINGCLASS_NW_REEF_DUMMY</EventBuildingClass>
+			<RequiredBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredBuildingClass>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_REEF_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<Expires>true</Expires>
+			<EventDuration>75</EventDuration>
+			<RequiredBuildingClass>BUILDINGCLASS_HARBOR</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_REEF_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<RequiredBuildingClass>BUILDINGCLASS_SEAPORT</RequiredBuildingClass>
+			<EventBuildingClass>BUILDINGCLASS_RECYCLING_CENTER</EventBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_NW_REEF_DUMMY</Type>
+			<DefaultBuilding>BUILDING_NW_REEF_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_NW_REEF_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_NW_REEF_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_NW_REEF_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TrainedFreePromotion>PROMOTION_SUPPLY</TrainedFreePromotion>
+		</Row>
+	</Buildings>
+	
+	
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_REEF</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_REEF</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>750</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-750</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-150</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_ResourceQuantity>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
+			<ResourceType>RESOURCE_CRAB</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</CityEventChoice_ResourceQuantity>
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<Points>1000</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+	<CityEventChoice_CityYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>-7</Yield>
+		</Row>
+	</CityEventChoice_CityYield>
+	
+	
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION">
+			<Text>Wonderful Diversity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP">
+			<Text>The sailor's guild is concerned about the state of the Great Reef, Your Masterfulness. Their delegation awaits you in the next room.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1">
+			<Text>The Natural Wonder permanently yields +1 [ICON_FOOD] Food and [ICON_TOURISM] Tourism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2">
+			<Text>Naval Units constructed in this City gain +1 [ICON_MOVES] Movement and can Heal outside Friendly Territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3">
+			<Text>Receive two copies of [ICON_RES_CRAB] Crab for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4">
+			<Text>Subsidize industry to the tune of {2_InstantYield}, losing -7 [ICON_PRODUCTION] Production in the City. In exchange receive {4_GPChange} and a free Recycling Center.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1">
+			<Text>*Many boats have been lost in the dangerous waters, rendering fishing unprofitable for the workers*[NEWLINE]We appreciate the job these sailors are asked to perform, see to it they are supported with fresh vessels.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2">
+			<Text>*The sailors wish to establish a Naval College in the local City to deal with the unique challenges presented by the reef*[NEWLINE]An excellent suggestion, the Palace is happy to finance this venture in the hopes that the quality of all our sailors' benefits.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3">
+			<Text>*There has been a massive increase in the population of a certain sea creature, the fishers wish for you to fund an expedition to go and retrieve them.*[NEWLINE]Sounds delicious, make sure some make it to the Palace kitchens. We trust their sale will refund the expedition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4">
+			<Text>*The changing climate threatens the delicate reef ecosystem, the fishers beg for sanctions against offending companies*[NEWLINE]This isn't going to be cheap, but we must protect such Wonders at all costs!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY">
+			<Text>Naval College</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP">
+			<Text>Eligible Units receive the [COLOR_POSITIVE_TEXT]Supply[ENDCOLOR] Promotion.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

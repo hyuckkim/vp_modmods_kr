@@ -1,0 +1,148 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_HERO</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_HERO_OF_THE_PEOPLE</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_HERO_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_1</Help>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_HERO_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FOREIGN_OFFICE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_HERO_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_PUBLIC_SCHOOL</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION">
+			<Text>Charismatic Authority</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP">
+			<Text>How does a man become great? An age-old question that you, comrade, can finally answer for our people.[NEWLINE]So. How did you do it?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_1">
+			<Text>Invest {1_YieldCost} in order to generate +2 [ICON_TOURISM] Tourism from Factories.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_2">
+			<Text>Your [ICON_DIPLOMAT] Civil Servants generate -2 [ICON_GOLD] Gold but +2 [ICON_TOURISM] Tourism. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_3">
+			<Text>Invest {1_YieldCost} in order to generate +3 [ICON_RESEARCH] Science from Universities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_1">
+			<Text>Through hard work and manual labour. You think this chiseled exterior doesn't require some kind of upkeep? Everyone should get their hands dirty in our utopian society!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_2">
+			<Text>Not by asking my superiors how to do my job! Why do other leaders seem to have infinitely more proficient PR teams? Come back when you've come up with a new poster to distribute to the masses, you sycophant!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_3">
+			<Text>Study, endless study. In my time on this planet I must have read near every book ever written! Learning should be the highest aspiration in our society!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
+
+
