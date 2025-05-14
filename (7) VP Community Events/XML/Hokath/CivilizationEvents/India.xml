@@ -1,0 +1,480 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_INDIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_INDIA</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<GoldenAgeTurns>15</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_INDIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<ResistanceTurns>1</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
+			<ReligiousUnrestModifierGlobal>-5</ReligiousUnrestModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_INDIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_UE_MANDIR</Type>
+			<DefaultBuilding>BUILDING_UE_MANDIR</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_UE_MANDIR</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_UE_MANDIR</Type>
+			<BuildingClass>BUILDINGCLASS_UE_MANDIR</BuildingClass>
+			<Cost>-1</Cost>
+			<FaithCost>250</FaithCost>
+			<IsDummy>true</IsDummy>
+			<Description>TXT_KEY_BUILDING_UE_MANDIR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MANDIR_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_UE_MANDIR_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_MANDIR_HELP</Help>
+			<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
+			<GreatWorkCount>1</GreatWorkCount>
+			<ArtDefineTag>TEMPLE</ArtDefineTag>
+			<NeverCapture>true</NeverCapture>
+			<MinAreaSize>-1</MinAreaSize>
+			<ReligiousPressureModifier>15</ReligiousPressureModifier>
+			<ConversionModifier>-10</ConversionModifier>
+			<!-- These features has been removed after Spy overhaul and I don't know what's the replacement for it-->
+			<!--<BlockGPDestructionSpies>1</BlockGPDestructionSpies>
+			<BlockUDestructionSpies>1</BlockUDestructionSpies>-->
+			<IconAtlas>EXPANSION2_BUILDING_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<EventChoiceRequiredActive>EVENT_INDIA_UE_CHOICE_3</EventChoiceRequiredActive>
+			<MutuallyExclusiveGroup>363</MutuallyExclusiveGroup>
+			<GoldMedianModifier>-10</GoldMedianModifier>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
+			<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
+			<Quantity>5</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-3</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>-1500</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+
+	<!-- TEXT -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Great Reincarnation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} discovers the reincarnation of a Great Person!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Pillars of Peace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} erects intricate Pillars to promote peace in his Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Deula</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} begins the large-scale construction of Temples throughout India!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Mughal Forts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} has his Engineers re-sculpt the various Castles in his Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Royal Military Edict</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} begins a new Era of political thought!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Satyagraha</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} personally leads a non-violent campaign for social improvement in India!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION">
+			<Text>Heart Without Words</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP">
+			<Text>Peace follows you throughout all your doings, Mahatma. If it is not to much bother, your wisdom is requested in council. We need it much of late.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_2">
+			<Text>Monuments of the conquest generate +1 [ICON_PEACE] Faith, and increase [ICON_FOOD] Growth by 10% in cities with a Courthouse.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_3">
+			<Text>Allow the priests {2_InstantYield} to unlock the Duela Building. Mandir generate +2 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_4">
+			<Text>Permit plans worth {2_InstantYield} to be enacted. All Castles generate +2 [ICON_CULTURE] Culture, [ICON_TOURISM] Tourism, and [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_5">
+			<Text>Conscript {2_InstantYield} in every City into Fusiliers. Enter a [ICON_GOLDEN_AGE] Golden Age for 15 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_6">
+			<Text>Use {2_InstantYield} to call upon 2 Turns of Resistance. Unhappiness thresholds of [ICON_PRODUCTION] Distress, [ICON_CULTURE] Boredom, [ICON_GOLD] Poverty, [ICON_RESEARCH] Illiteracy, and [ICON_RELIGION] Religious Divisions are reduced by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*A recent birth has been identified as the reincarnation of a Great Person*[NEWLINE]A Great Soul is returned to us! Make the necessary arrangements.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The conquest of foreign lands still breeds contempt among old enemies*[NEWLINE]We must start a campaign for truth and forgiveness! Let us remember that we are more similar than we are different, that we might learn to love one another again.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The priest of the Grand Temple malign the state of worship in India. They wish to see great spires erected for the glory of heaven!*[NEWLINE]We must do whatever we can to lead men towards heaven. Let it be.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Our Engineers believe that with new technologies, many of the old fortifications which are falling into disuse can be renovated in the new style*[NEWLINE]To see these bastions of war transformed into palaces of holiness and protection brings great joy to my soul.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Our Military Advisor has penned a text dubbed Adnyapatra, he would have us implement its suggestions*[NEWLINE]It pains me to see a drop of blood spilt in my name, but if I cannot convince men to accept peace, I must force it on them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The people are increasingly resentful of the roles imposed upon them by outdated social expectations*[NEWLINE]As the Empire has grown further from its roots, so too have we grown further from the Truth. It now falls to me to lead us back...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_MANDIR">
+			<Text>Deula</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_MANDIR_STRATEGY">
+			<Text>Purchasable with an Event Choice unique to India. Mutually exclusive with the Mandir.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

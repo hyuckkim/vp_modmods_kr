@@ -1,0 +1,415 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_NETHERLANDS</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_TREASURY</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARTISTS_GUILD</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</EventBuildingClassGlobal>
+			<MinimumNumCoastalCities>3</MinimumNumCoastalCities>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+			<Expires>false</Expires>
+			<EventDuration>-1</EventDuration>
+			<WLTKDTurns>1</WLTKDTurns>
+		</Row>
+		<Row>
+			<Type>EVENT_NETHERLANDS_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<WLTKDTurns>25</WLTKDTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<HappinessPerCity>2</HappinessPerCity>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_NETHERLANDS_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_NETHERLANDS_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_NETHERLANDS_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<Modifier>20</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+
+	<Building_YieldFromPurchase>
+		<Row>
+			<BuildingType>BUILDING_NETHERLANDS_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldFromPurchase>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_TOBACCO</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_COCOA</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_SUGAR</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_COFFEE</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>-10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>15</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>-250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-2000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	
+	<!-- TEXT -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Arranged Marriage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1">
+			<Text>{3_PlayerName} arranges a marriage of a notable noble of a distantly related house.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Creation Story</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2">
+			<Text>{3_PlayerName} attracts traders from all over the known world!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Dutch East India Company</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3">
+			<Text>{3_PlayerName} gives substantial powers to his East India Company!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Reinspiration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4">
+			<Text>{3_PlayerName} refuses to implement policies to the detriment of either his Artists or his Merchants.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Exploitation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5">
+			<Text>{3_PlayerName} begins forcing his colonies to make more food!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Progressiveness</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6">
+			<Text>{3_PlayerName} does not intervene, allowing the pillarized polictical landscape to crumble!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION">
+			<Text>A Miracle Mirrored</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP">
+			<Text>Your Majesty, my apologies for disturbing your silent musings. Your advisors are gathered in the Palace to discuss the recent happenings, as requested.[NEWLINE][NEWLINE]Your Grace should prepare himself, I fear the debate shall be fierce, and the consequences... severe.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_2">
+			<Text>Every [ICON_GREAT_MERCHANT] Merchant also provides +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_3">
+			<Text>The East India Company demands -10 [ICON_GOLD] Gold and -10 [ICON_GOLDEN_AGE] Golden Age Points per turn. In exchange you gain access to a copy of [ICON_RES_SUGAR] Sugar, [ICON_RES_TOBACCO] Tobacco, [ICON_RES_COCOA] Cocoa, [ICON_RES_TEA] Tea, and [ICON_RES_COFFEE] Coffee.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_4">
+			<Text>Use up to {2_InstantYield}. All Cities have a 20% increased [ICON_GREAT_MERCHANT] Great Merchant Birth Rate, and convert 10% of [ICON_GOLD] Gold to [ICON_CULTURE] Culture when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_5">
+			<Text>Create 15 [ICON_FOOD] Food and 5 [ICON_GOLDEN_AGE] Golden Age Points from all Cities with a Courthouse. During this time, all Cities experience  a brief moment of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_6">
+			<Text>Abolish {2_InstantYield} worth of outdated practices. All Cities enter [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] for 25 Turns and gain +2 [ICON_HAPPINESS_1] Happiness .</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_1">
+			<Text>*The hungry and hateful nations of the world look to devour our happy country*[NEWLINE]I need my advisors to seek out possible political marriages that might be made in the hope of avoiding conflict. I wish to review the options a week from now. Go.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The other nations of the world claim warlike, mythological histories. Not so for we Dutch*[NEWLINE]The story of the Dutch people is of ingenuity, trade, and peace. I want to celebrate that. Call on every farmer, fisherman, trader: let it be known that the Netherlands is open for business!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Your Economic Advisor's business interest - the East India Company - has become extremely influential. She would have it more so*[NEWLINE]While I do not wish to show favoritism, there is something very attractive about large amounts of luxury goods. While I hear my other advisors, I am ready to concede the 'irregularities' that may be associated with their acquisition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Our Merchants win us great bounty overseas, while at home our Artists amaze the world. But which path shall the Netherlands follow?*[NEWLINE]I do not believe in this dichotomy argument taunted by my advisors. Our Artists' works shall profit our Merchants, and in their adventures, they shall re-inspire us all; so the cycle will continue, as long as I am King!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Our colonies are inefficient and poorly managed, we are advised to forcibly extract their agricultural produce so that the rest of the Empire might flourish*[NEWLINE]We suffer at home while the colonies live blissfully, while it maybe be painful for a time we must redress the balance. It is, therefore, with a heavy heart that I consent to this plan.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The social pillars of our society prop up the establishment, our advisors are troubled by the rebellion of the youth against these power structures*[NEWLINE]I have had enough of listening to this constant backwards chatter from my so-called advisors. Let the establishment crumble, out of it shall rise a greater, happier Netherlands!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY">
+			<Text>Netherlands Reinspiration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY_HELP">
+			<Text>+20% [ICON_GREAT_MERCHANT] Great Merchant Rate. Converts 10% of [ICON_GOLD] Gold to [ICON_CULTURE] Culture on this city's purchases.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

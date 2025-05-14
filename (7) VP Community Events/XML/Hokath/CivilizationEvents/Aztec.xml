@@ -1,0 +1,530 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AZTEC_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_AZTEC</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_AZTEC_UE_DUMMY_2</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_AZTEC_UE_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_BANKING</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<EventPromotion>PROMOTION_UE_RURALES</EventPromotion>
+			<ObsoleteEra>ERA_POSTMODERN</ObsoleteEra>
+			<EraScaling>true</EraScaling>
+			<MinimumNationalPopulation>90</MinimumNationalPopulation>
+			<EventDuration>-1</EventDuration>
+			<BasicNeedsMedianModifierGlobal>-10</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_AZTEC_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<WLTKDTurns>10</WLTKDTurns>
+			<EventDuration>10</EventDuration>
+			<Expires>false</Expires>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_AZTEC_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_AZTEC_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_AZTEC_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_AZTEC_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_AZTEC_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_AZTEC_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_AZTEC_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AZTEC_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_AZTEC_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_AZTEC_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldFromPolicyUnlock>
+		<Row>
+			<BuildingType>BUILDING_AZTEC_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldFromPolicyUnlock>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_AZTEC_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+	<Building_YieldFromSpyDefense>
+		<Row>
+			<BuildingType>BUILDING_AZTEC_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AZTEC_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</Building_YieldFromSpyDefense>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_RURALES</Type>
+			<Description>TXT_KEY_PROMOTION_UE_RURALES</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<Help>TXT_KEY_PROMOTION_UE_RURALES_HELP</Help>
+			<HillsDoubleMove>true</HillsDoubleMove>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_RURALES</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_RURALES</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_RURALES</PromotionType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>250</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>250</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s New Tlatoani</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1">
+			<Text>{3_PlayerName} appoints a new tlatoani!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Huehueteotl's Appeasement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2">
+			<Text>{3_PlayerName} increases the frequency of sacrifices in his newly conquered Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Conqueror Philosophy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3">
+			<Text>{3_PlayerName} increases the control of the priesthood over the lives of writers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Devolution to Hacendados</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4">
+			<Text>{3_PlayerName} devolves control over Plantations to land owners.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Rurales</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5">
+			<Text>{3_PlayerName} raises a Rurales corps to combat a recent distress wave!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Day of the Dead</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6">
+			<Text>{3_PlayerName} revives the Dia de Muertos celebrations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION">
+			<Text>What Has Been Set In Motion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP">
+			<Text>Great Emperor, feathered serpent watch over you. The elder speakers have gathered to discuss these latest developments, as was requested.[NEWLINE][NEWLINE]When can they expect your presence?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2">
+			<Text>The sacrifice of criminals generates +4 [ICON_PEACE] Faith, [ICON_PRODUCTION] Production and [ICON_FOOD] Food in Courthouses. When an enemy [ICON_SPY] Spy is killed receive [ICON_PEACE] Faith and [ICON_FOOD] Food scaling with era and the level of the Spy killed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3">
+			<Text>Discover new philosophical concepts using {1_YieldCost}. All Cities generate [ICON_GREAT_WRITER] Great Writers 33% faster. Receive 5 [ICON_GOLDEN_AGE] Golden Age Points whenever you unlock a policy scaling with era. Each [ICON_GREAT_WRITER] Writer generates +2 [ICON_PEACE] Faith and +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4">
+			<Text>Hacendados are given control over your Plantations: -1 [ICON_GOLD] Gold, but +2 [ICON_PRODUCTION] Production and +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5">
+			<Text>Invest {1_YieldCost} in a Rurales. Gun Units receive the Rurales Corps Promotion and [ICON_STRENGTH] Distress thresholds are reduced by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6">
+			<Text>Leverage {1_YieldCost} to popularise the Day of the Dead celebrations. Enter {4_Turns} of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]. Holy Sites and Landmarks provide +3 [ICON_CULTURE] Culture, [ICON_TOURISM] Tourism and [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1">
+			<Text>Excellent. We gather to appoint a new tlatoani.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2">
+			<Text>*There are questions about whether or not our conquests are properly incorporating into our Empire*[NEWLINE]Those in violation of our laws will be treated like the captives they are!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Our senior religious figures are pushing for stronger controls over our artists*[NEWLINE]Clearly, only art that expresses the nature of the teotl is any good. We must cultivate the minds of our citizens if we are to strengthen the faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The tlatoani are suggesting a devolution of state control to landowners*[NEWLINE]While this will reduce the revenues of our Cities, we can expect the creativity of our people to win out.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5">
+			<Text>*There are serious concerns over levels of distress around our growing Cities*[NEWLINE]We shall organize a militia to oppose this new wave of defiance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6">
+			<Text>*People are losing respect in the traditional way of life*[NEWLINE]Blasphemy. We might not be ripping peoples hearts out anymore, but that doesn't mean we can forget our dead. We must organize a great celebration, in the style of the old ways.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY">
+			<Text>The Aztec Conquer Philosophy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP">
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Generation. Receive 5 [ICON_GOLDEN_AGE] Golden Age Points whenever you unlock a policy scaling with era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2">
+			<Text>Aztec Sacrificial Altar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2_HELP">
+			<Text>When an enemy [ICON_SPY] Spy is killed receive [ICON_PEACE] Faith and [ICON_FOOD] Food scaling with era and the level of the Spy killed.</Text>
+		</Row>
+			<Row Tag="TXT_KEY_PROMOTION_UE_RURALES">
+			<Text>Rurales Corps</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_RURALES_HELP">
+			<Text>Kills reward Golden Age Points and double movement on Hills. Granted only via Aztec's Events.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

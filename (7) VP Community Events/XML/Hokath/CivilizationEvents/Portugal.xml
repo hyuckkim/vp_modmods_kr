@@ -1,0 +1,487 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_PORTUGAL</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_2</Description>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredAnywhereBuildingClass>
+			<IsOneShot>true</IsOneShot>
+			<EventBuildingClassGlobal>BUILDINGCLASS_PORTUGAL_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+		</Row>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_3</Description>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<EventPromotion>PROMOTION_DRILL_4</EventPromotion>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<UnitClassRequired>UNITCLASS_CARAVEL</UnitClassRequired>
+			<EventPromotion>PROMOTION_SCOUTING_3</EventPromotion>
+			<GoldenAgeTurns>10</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_FERTILIZER</PrereqTech>
+			<LosingMoney>true</LosingMoney>
+			<ResistanceTurns>2</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_PORTUGAL_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_PORTUGAL_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+			<ScienceMedianModifierGlobal>5</ScienceMedianModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_PORTUGAL_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_PORTUGAL_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_PORTUGAL_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_PORTUGAL_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_PORTUGAL_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_PORTUGAL_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_PORTUGAL_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_PORTUGAL_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_PORTUGAL_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<CityConnectionTradeRouteModifier>2</CityConnectionTradeRouteModifier>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_BuildingClassYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_PORTUGAL_UE_DUMMY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PORTUGAL_UE_DUMMY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PORTUGAL_UE_DUMMY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</Building_BuildingClassYieldChanges>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_PORTUGAL_UE_DUMMY_2</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>15</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<EventChoice_CityYield>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</EventChoice_CityYield>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<UnitType>UNIT_EXPLORER</UnitType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ResourceType>RESOURCE_WINE</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FEITORIA</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FEITORIA</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<!--<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE_VENICE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE_VENICE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>-->
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-1</Yield>	
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PORTUGAL_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Marquis Appointment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_1">
+			<Text>{3_PlayerName} appoints a new Marquis! The old one has mysteriously disappeared...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Vandal Colonies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_2">
+			<Text>{3_PlayerName} bids farewell to the Vandal peoples, guests in her lands.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Angelic Revelation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_3">
+			<Text>{3_PlayerName} is visited by an angel, proof of worthiness to conquer her enemies!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Age of Exploration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_4">
+			<Text>{3_PlayerName} backs a daring plan to explore the far corners of the globe!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Reforms the Economy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_5">
+			<Text>{3_PlayerName} seizes the aristocracy's remaining power in a move to reform Portugal's economy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Colonial Naturalization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PORTUGAL_UE_CHOICE_6">
+			<Text>{3_PlayerName} naturalizes all her citizens, finalising decades of social reform!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION">
+			<Text>Mother Of Wisdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP">
+			<Text>Your Most Faithful Majesty, we must report the rather worrying behavior of the Marquis of Pombal as of late. Though in the past he has proved an ally to the throne, I fear for his current intentions.[NEWLINE]Perhaps the Queen would consider an extended vacation until we can resolve the matter?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_2">
+			<Text>{2_InstantYield} emigrate to set up colonies abroad. The infrastructure of their travel permenantly increases [ICON_PRODUCTION] Production of Sea Units by 15%, and [ICON_CONNECTED] City Connections provide 2% additional [ICON_GOLD] Gold for every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_3">
+			<Text>Call upon {1_YieldCost} of religious fervour to defeat your foes. Your Cities produce {3_CityYield}. All Melee and Gun Units receive the Stalwart Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_4">
+			<Text>Pour {1_YieldCost} into an Age of Discovery. An Explorer appears near every City. Enter a [ICON_GOLDEN_AGE] Golden Age for 10 Turns. Existing Scouting Units (as well as those produced in this time) receive the Scouting 3 Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_5">
+			<Text>Reform the domestic economy, entering 2 Turns of Anarchy. Receive 2 copies of [ICON_RES_WINE] Wine. Every Town, Village, and Feitoria yields +1 [ICON_GOLD] Gold and +1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_HELP_CHOICE_6">
+			<Text>Naturalisation of colonials causes Harbours to yield +1 [ICON_GOLD] Gold, [ICON_FOOD] Food and [ICON_GOLDEN_AGE] Golden Age Point per turn for every City you own. However, the many languages, practices and prejudices brought into contact by the free movement of people increases [ICON_GOLD] Poverty and [ICON_RESEARCH] Illiteracy thresholds by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_1">
+			<Text>I will not flee before some second-rate statesman! We shall simply appoint a new marquis, it's not as if the position is cursed! Off with his head!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_2">
+			<Text>*An important ethnic group are semi-nomadic, at this time they are looking to move to their next home*[NEWLINE]The Vandal ships are sitting in the Harbour, ready to depart. See to it that the Marquis wakes up on one.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Many of the nobles doubt our ability, as a woman, to win this war. It is no surprise they are considering a replacement*[NEWLINE]By my divine right, I shall pray for a sign from God! When all Portugal see that I fight for His justice, they will rally behind me to defeat these foreign devils!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The Marquis's principle enemy at court is constantly petitioning the crown for men and money for crazed voyages beyond the horizon*[NEWLINE]This 'navigator' chap seeks to do the impossible. Very well, if we put him in charge the ensuing chaos will surely take the wind out of the Marquis's sails.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The aristocracy as a whole feels threatened by the recent economic reforms proposed by your government*[NEWLINE]The elite have every right to be concerned. Their mindless squandering of our nation's wealth could very well have doomed us all. Summon the minister for the interior. I either want to see those wretches in chains, or in tatters.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PORTUGAL_UE_DESCRIPTION_CHOICE_6">
+			<Text>*What remains of the Portugese elite are disgusted that your government seems to be about to grant citizenship to our colonial vassals*[NEWLINE]I intend for Portugal to go much further than simply granting citizenship. I envisage a single people, not divided by borders or race or circumstance. These self styled lords and ladies scarcely have a place in my new Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY">
+			<Text>Colonial Naturalization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_HELP">
+			<Text>+1 [ICON_GOLD] Gold, [ICON_FOOD] Food and [ICON_GOLDEN_AGE] Golden Age Point to Harbors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_2">
+			<Text>Vandals Camps</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UE_DUMMY_2_HELP">
+			<Text>+15% [ICON_PRODUCTION] Production when producing Sea Units. +2% [ICON_GOLD] Gold from City Connections.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

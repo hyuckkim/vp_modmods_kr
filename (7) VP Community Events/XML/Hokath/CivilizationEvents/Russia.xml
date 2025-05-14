@@ -1,0 +1,493 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_RUSSIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_RUSSIA</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_RUSSIA_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CHIVALRY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<IsUnhappy>true</IsUnhappy>
+			<EventBuildingClassGlobal>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_RUSSIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<UnitClassRequired>UNITCLASS_ATOMIC_BOMB</UnitClassRequired>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_RUSSIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_RUSSIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_RUSSIA_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_RUSSIA_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_RUSSIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_RUSSIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_RUSSIA_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldPerXTerrainTimes100>
+		<Row>
+			<BuildingType>BUILDING_RUSSIA_UE_DUMMY</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</Building_YieldPerXTerrainTimes100>
+	<Building_BuildingClassYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_RUSSIA_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIA_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</Building_BuildingClassYieldChanges>
+
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<UnitType>UNIT_SPANISH_TERCIO</UnitType>
+			<Quantity>6</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_ICE</FeatureType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2500</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Political Sponsorship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} sponsors the career of a young officer.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Assimilation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} begins a campaign extoling Russian values and cultural practices!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Justice</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} defines a rigid feudal Code of Laws!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Conscription</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} conscripts an enormous force of soldiers from the civilian population!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Literature</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} sets up a prize for outstanding Russian Literature.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Militarization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} moves away from heavy state control of industry!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION">
+			<Text>The Less We Love</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP">
+			<Text>Beautiful and wise Empress of the mighty Russian people, your humbled advisors bow before your majesty. We beg you to divulge the meaning of this secret meeting.[NEWLINE][NEWLINE]How can we serve your Imperial Majesty?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_2">
+			<Text>Tundra yields +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture. The Banya generate +1 [ICON_CULTURE] Culture for every Snow tile within working range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_3">
+			<Text>Serfdom generates +1 [ICON_GOLD] Gold from Farms, and Castles increase [ICON_PRODUCTION] Production in Cities by 5%. However, the [ICON_GOLD] Poverty threshold increases by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_4">
+			<Text>In the [ICON_CAPITAL] Capital conscript {2_InstantYield} into six Tercio. All Forts and Citadels yield +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_5">
+			<Text>For every owned City, your [ICON_GREAT_WRITER] Writers' Guilds generate +1 [ICON_CULTURE] Culture and +1 [ICON_GOLDEN_AGE] Golden Age Point.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_6">
+			<Text>Increase military funding by {2_InstantYield}. All Forts and Citadels yield +3 [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>I have my eye on young and motivated military officer, see to it he... develops.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The extreme cold experienced by much of the Empire has developed a set of unique cultural practices*[NEWLINE]This frigid homeland has made the Russian people strong and resilient. Vodka, Banya, tales of Baya Yaga by the roaring hearth: I want to solidify the Russian identity however it manifests.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The serfs and lords are unruly and feud amongst one another*[NEWLINE]You, my advisors, are to draw up a great Russkaya Pravda, to order the various parts of the Empire into a more stable and governable structure. Everyone has their place in my Russia, make sure they know what it is.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The war would greatly benefit from a fresh influx of men*[NEWLINE]I wish to conscript a grand Streltsy to turn the tide of this war. We shall crush our enemies with overwhelming numbers while simultaneously putting the upstart poor back in their place. Go forth, and arm every man of fighting age with a halberd and musket!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*As the country is plunged into a great social depression, the purity of the Russian spirit has manifested in its recent literature*[NEWLINE]While I fail to see the attraction of these hopeless women and their crippling bouts of depression, the only thing worse than being talked about is not being talked about. If these books are causing a stir at home and abroad, I would like to see more of the same.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The decadent foreign pigs seek to bring the whole world under their foul ideology*[NEWLINE]Now the world is home to these 'nuclear weapons', the enemies of peace finally have it within their power to end us. This will not be allowed to happen!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY">
+			<Text>The Banya</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_HELP">
+			<Text>+2 [ICON_CULTURE] Culture for every Snow tile within working range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2">
+			<Text>Russian Literature</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2_HELP">
+			<Text>+1 [ICON_CULTURE] Culture and +1 [ICON_GOLDEN_AGE] Golden Age Point to Writers' Guilds.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

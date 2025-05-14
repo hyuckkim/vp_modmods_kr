@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<IconFontTextures>
+		<Row>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconFontTextureFile>FontIconsCTP</IconFontTextureFile>
+		</Row>
+	</IconFontTextures>
+
+	<IconFontMapping>
+		<Row>
+			<IconName>ICON_CTP_HAPPINESS_CONTENT</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>1</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_CTP_HAPPINESS_NEUTRAL</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>2</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_CTP_NAVAL_SUPPLY</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>3</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_CTP_PANTHEON</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>4</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_CTP_RELIGION</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>5</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_CTP_RELIGIOUS_BUILDING</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CTP</IconFontTexture>
+			<IconMapping>6</IconMapping>
+		</Row>
+	</IconFontMapping>	
+</GameData>

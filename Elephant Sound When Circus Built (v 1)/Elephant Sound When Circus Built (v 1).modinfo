@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9c03c26b-fbfa-4acd-8588-159efdb858c6" version="1">
+  <Properties>
+    <Name>Elephant Sound When Circus Built</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Plays the elephant sound when a circus is built.</Teaser>
+    <Description>Plays the elephant sound when a circus is built.</Description>
+    <Authors>Vern</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="8126814F2006357D1E0DD41919A119C1" import="0">ElephantSoundOnCircusBuild.lua</File>
+    <File md5="6417B07751C0A0023739A75E443819E7" import="0">ElephantSoundOnCircusBuild.sql</File>
+    <File md5="DA0C7F55D513F72EE91775ACBEFCCAA7" import="1">ELEPHANT_TRUMPETING.mp3</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>ElephantSoundOnCircusBuild.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="ElephantSoundOnCircusBuild.lua">
+      <Name>ElephantSoundOnCircusBuild</Name>
+      <Description>ElephantSoundOnCircusBuild</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,321 @@
+-- Changelog
+-- Author: adan_eslavo
+-- DateCreated: 12/01/2018
+--------------------------------------------------------------
+Promotion Overhaul for Vox Populi changelog:
+v49:
+- brought back War Canoe promotion;
+
+v48:
+- updates for VP v4.15.1;
+	- added 2 new promotions: Coastal Artillery and Mare Nostrum;
+	- updated values of Aerial Torpedo and Bomb Rack;
+	- all barbarians' Double Movement promotions are now Ignore Terrain Cost; No longer supports Flood Plains (Marsh Walker);
+	- Amphibious and Woodsman now Ignore Terrain Cost (was Double Movement);
+	- updated Scouting I and II with Embarked Vision and Movement respectively;
+	- moved Scouting III to unused section;
+	- updated Trailblazer I, II and III with multiple balance changes;
+	- updated Frogman (removed River things);
+
+v47:
+- updates for VP 4.6;
+
+v46:
+- added compatibility with Gwennog's civilizations;
+- update for UCS v16;
+- update for VP 4.4 up;
+- reworked visualisation of Plague related promotions;
+- fixed missing "Lost on upgrade" info;
+- added "first" word to withdrawing descriptions;
+- multiple minor tweaks;
+
+v45:
+- added compatibility with new mod: Additional Tweaks for VP;
+- replaced some [ICON_ARROW_RIGHT] with [ICON_MOVES] for clarity;
+
+v44:
+- added compatibility with MW v21 and UCS v15.10;
+
+v43:
+- added changes to MW and UCS parts;
+- added more corrections to main part;
+
+v42:
+- Great Merge has arrived so...:
+	- in the meantime fixed many wrong values and corrected missing bonuses or these that are nonexistent anymore;
+	- adjusted Pedia categories;
+	- fixed and changed few names;
+- deleted ENW references and compatibility files;
+- now negative promotions (or sometimes mixed) have negative things marked red (were gold);
+- many fixes to RCS-CS errors;
+- swapped [ICON_VIEW_CITY] with [ICON_VP_SIGHT];
+- many minor chages;
+
+v41 (last for VP 3.10.X):
+- fixed Accuracy/Barrage mess;
+- added new name colours for special promotions picked from unique pools (Kris, Bushido, Clermont) or unique promotion trees (Sikh); deleted prefix letters;
+- fixed "Dastar Bunga" name (was without "D");
+
+v40:
+- added new promotions for UCS v15;
+- "Faster Worker" is now "Organized";
+- "Knockback I" is now "Fasimba";
+- "Knockback III" is now "Special Operation Forces";
+
+v39:
+- added new promotion and changes from VP v3.8;
+- deleted few remaining "Lost after unit upgrade" texts;
+- promotion text mentioning modifiers with "below", "above" or "at full" now have "Offensive CS" intead of "CS" (and RCS);
+- added mising part of descritpion for Medic General promotion (Khan);
+- Bushido promotions now have (B) in their name, and Kris' have (K);
+- all Clermont promotions now have (C) in their names;
+- fixed Deus Vult! description;
+- minor icons fixes;
+
+v38:
+- updated compatibility for UCS v14 promotions (new promotions and few fixes);
+- fixed Impi's Ranged Support Fire promotion description;
+
+v37:
+- updated compatibility for UCS v13 promotions (new promotions and few fixes);
+
+v36:
+- compatibilities for VP 3.4 and 3.6;
+
+v35:
+- fixed Trailbla(i)zer typo;
+- fixed Ski Infantry error in description;
+
+v34:
+- added new promotion "Yerba de la Fleche" from MW;
+- compatibility with VP 3.0!
+
+v33:
+- added new setting allowing to choose default or improved promotion name colouring;
+- fixed Skirmisher Doctrine;
+
+v32:
+- added new "Skirmisher Doctrine" from VP 2.7;
+- added missing "Operational Range" (Thule Air Base) promotion from More Wonders;
+- added 2 new promotions from MW v0.16;
+- simplified numerous promotions (deleted yield names);
+- fixed pedia type for "Altitude Training";
+
+v31:
+- changed "Holy Mountain" to "Mahaprasthanika Parva";
+- updated "Altitude Training" for MW v0.15;
+
+v30:
+- optimized "Lost on upgrade" text addition to be automatic (thanks @N.Core);
+- "adavance" correction (thanks @Jan Sobus);
+- deleted duplicated "Atlatl Strike" text update (thanks @Jan Sobus);
+- fixed "Lightning Warfare" promotion texts (thanks @Jan Sobus);
+
+v29:
+- multiple updates, fixes up to VP 2.6;
+
+v28:
+- added compatibility to UCS v8;
+- fixed a bug caused by VP.
+
+v27:
+- further fixes for VP 2.0.3;
+- compatibility with latest UCS;
+- cleanup;
+
+v26:
+- updated for VP 2.0 (new promotions and compatibility);
+- updated Pedia categories;
+- changed "+XX HP" to "+XX HP Heal" for better understanding (its heal not an upgrade);
+
+v25:
+- updated to VP 1.2.1;
+
+v24:
+- updated promotions changes made by VP in last couple of updates and missed in v23 (Trailblaizer, Dogfighting, Interception, Strafing Run, Kris (2 promotions), etc.);
+- updated ENW version of Depth Charges I and andded Depth Charges II;
+- updated VP 1.0.3 changes (Dopelsoldner, Impi's, Kris', Atlatl, Heavy Asault etc.);
+- added "+" to Withdrawal Chances;
+- added "Railroads" keyword in addition to Roads;
+- fixed Overrun description;
+- added comaptibility with EE promotions;
+- added missing references to other mods (upsi);
+- fixed Tag issue between PO and ENW;
+- small fixes;
+
+v23:
+- compatibility with latest VP 7-1-3 (Commando and Attack(25));
+- compatibility with MUCfVP (currently no effect on game);
+- compatibility with latest ENW (Dive I-II, Hull I-III, Wolfpack III);
+- new compatibility with MB (Skillful I-III);
+- new compatibility with CIV Linked GGs (Created);
+
+v22:
+- compatibility with MW v0.10 rev. 7;
+- compatibility with latest VP;
+
+v21:
+- compatibility with VP 8-16;
+- added compatibility with EAW from @Asterix Rage;
+
+v20:
+- compatibility with MW v0.8.3;
+
+v19.1:
+- some typo fixes from @JohnnyNT;
+
+v19:
+- corrected Ski Infantry help text;
+- compatibility with VP 6-19 and MW v0.8;
+
+v18:
+- compatibility with VP 4-17;
+
+v17:
+- compatibility for VP from 1-11 to 4-7;
+- added compatibility with ENWfVP and MWfVP;
+- reverted blue color to green; blue was never good imo;
+
+v16:
+- compatibility for VP from 5-19 to 12-20.
+- small typos corrections,
+- internal structure fixes,
+- tons of values and descriptions corrections,
+- one name change: Conscript --> Enlistment,
+- inverted Helplessness I with III.
+
+v15:
+- compatibility:
+	- compatibility for VP 5-19,
+	- compatibility for VP 3-14.
+- Withdrawal Chance rework,
+- few text corrections.
+
+v14:
+- adjusted to VP 2-17:
+	- updated influence value for diplomatic promotions,
+	- added missing PediaEntry and PediaType info for UCS part,
+	- compatibility fixes.
+
+v13:
+- text:
+	- massive renaming (especially air promotions); many new promotions names and some old ones are also changed,
+	- shortened names for extremely long promotion names,
+	- corrected/rearranged few most complicated promotion descriptions,
+	- rearranged some pedia categories,
+	- reworked Cargo and Flight Deck promotions style,
+	- reworked Coastal Rider and Boarded promotions style,
+	- new icons (ICON_PLUS for Heal, ICON_SWAP for Range, ICON_RELIGION_PANTHEON for Interception, ICON_SILVER_FIST for Evasion, ICON_ARROW_LEFT for Retreat, ICON_BULLET for Cargo),
+	- reduced spaces between icons for better frame fitting,
+	- now RCS and CS abbreviations are used instead of full words; Defense/Offense Bonus/Malus is now Defensive/Offensive CS/RCS,
+	- highliting opitimization: now more important text parts are highlighted; no more whole text highlighted when not necessary,
+	- deleted "and" between different abilities (f.e. +1 Move and +10% CS); now "." is used,
+	- now order changed: special abilities like Move, Sight are placed before CS/RCS bonuses; super special abilities are in front,
+	- reduced needed technology phrase to "required",
+	- many important fixes and corrections; unification of text style (spellings, missing techs, capital letters).
+- ui:
+	- all promotion names now have coloures (blue - positive, yellow - mixed, red - negative),
+	- changed colouring palette,
+	- promotion description highlighting is now yellow instead of green,
+	- "vs" word is now highlighted,
+	- "lost on promotion" part is now highlighted with red,
+	- technology name is now highlited with light blue; added science icon.
+- code:
+	- ICON_MOVES instead of ICON_ARROW_RIGHT,
+	- cleaned sql file,
+	- deleted unnecessary/dupplicated code.
+- added:
+	- Atlatl Strike, Air Targetting III, Air Skirmisher, Imperialism, Military Tradition and Regimental Tradition promotion descriptions,
+	- compatibility with MUCfVP (now only for Atlatl Strike),
+	- compatibility to new UCSs from v4.
+
+v12:
+- updated and fixed all issues up to VP 1-29-2:
+	- updated flanking value,
+	- updated air units promotions,
+	- added heavy ship and shielded silo promotion descriptions.
+- added some colouring to names,
+- renamed few folders and files.
+
+v11:
+- adapting to VP 10-10 changes:
+	- added:
+		- Boarded I-III, Minelayer.
+	- updated:
+		- Indomitable, Boarding Party I-III.
+- tweaked:
+	- "Defense Bonus" changed to "Defense Malus" if number was lesser than 0.
+
+v10:
+- added:
+	- compatibility for UCS,
+	- additional loading conditions.
+- fixed:
+	- small corrections to the main file headers.
+
+v9:
+- adapting to VP 9-25-1 changes:
+	- added:
+		- Naval Siege, Press Gangs, Breacher, Dauntless, Encirclement, Piracy and Air Defense I-III.
+	- updated:
+		- Dreadnought I-III, Blockade, Vanguard and Boarding Party I-III
+- added technology restriction info:
+	- Fallout Reduction (Penicilin), 
+	- Embarkation and Defensive Embarkation (Sailing), 
+	- Fallout Immunity (Nanotechnology), 
+	- Ambush I-II (Combustion), 
+	- Ice Breakers (Ballistics).
+
+v8:
+- updated:
+	- fixed Targetting I-III, Coastal Rider I-III (now Swift Strike I-III), Boarding Party I-III ==> updated to VP 9-15,
+	- added Coastal Terror.
+- fixed:
+	- modified few texts with Submarines and Carriers (now Submarine and Carrier Units).
+
+v7:
+- changed:
+	- added Conscription,
+	- Parthian Tactics, Barrage IV ==> updated to VP 9-6.
+
+v6:
+- deleted Promotion Icons changes (now this mod will be fully compatible with @Asterix Rage's VPPI mod). Use it with PO to get even better experience,
+- compatibility update to changes from VP versions: 8-19, 8-6 and 7-15: 
+	- modified: Charge I and II, Glory Hounds, Slipstream (Indomitable), Trailblaizer I, II and II, Parthian Tactics, March, Medic I and II,
+	- added: Shrapnel Rounds, Skirmisher March (March ==> Hippotherapy), Skirmisher Sentry (Sentry ==> High Seat),
+	- deleted: Naval Range.
+- fixed:
+	- Heli Repair ==> changed help text from March to Repair,
+	- Morale Event ==> duplicated code for its name deleted.
+
+v5:
+- fixed many promotion description according to VP update and changes.
+
+v4: 
+- renamed 11 promotions,
+- added 1 additional promotion rename: Discipline --> Phalanx.
+
+v3:
+- fixed bug with FASTER_HEAL promotion,
+- updated Impi's promotion texts.
+
+v2.1:
+- renamed 1 (107) promotions from VP,
+- two important fixes.
+
+v2:
+- changed 14 (97) promotion icons.
+- deleted civilopedia folder (integrated into VP),
+- minor fixes.
+
+v1:
+- finished full release,
+- added new Mounted category for Civilopedia (from @Infixo),
+- added Credits.txt file,
+- sorted categories,
+- rewritten 313 promotion descriptions from VP,
+- renamed 106 promotions from VP,
+- moved 155 promotions from VP to other categories,
+- split 43 promotion descriptions from names,
+- tied 70 promotion pedias to names,
+- changed 83 promotion icons.

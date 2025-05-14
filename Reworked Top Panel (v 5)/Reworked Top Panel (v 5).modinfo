@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="24923240-xxxx-4bf6-8f0e-6e5b6cf4dRTP" version="5">
+  <Properties>
+    <Name>Reworked Top Panel</Name>
+    <Teaser>Reworked Top Panel</Teaser>
+    <Description></Description>
+    <Authors>bal</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="117" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="16" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) Vox Populi - Compatibility Files (EUI)" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09ff" import="1">FontIconsCTP.dds</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09gg" import="1">FontIconsCTP.ggxml</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09XM" import="0">FontIconsCTP.xml</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE0922" import="1">bui_bar.dds</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09IC" import="1">TopPanelIcons.dds</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09aa" import="1">TopPanel.lua</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09bb" import="1">TopPanel.xml</File>
+    <File md5="C10F916FF1CD06DB8235408C1AAE09he" import="0">Text.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text.xml</UpdateDatabase>
+      <UpdateDatabase>FontIconsCTP.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
