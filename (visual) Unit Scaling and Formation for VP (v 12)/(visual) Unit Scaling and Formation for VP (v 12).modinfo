@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" version="12">
+  <Properties>
+    <Name>(visual) Unit Scaling and Formation for VP</Name>
+    <Teaser>This mod affects the visual scale and formation of units in gameplay.</Teaser>
+    <Description>This mod affects the visual scale and formation of units in gameplay.
+[NEWLINE]Inspired by R.E.D. Modpack by Gedemon, but without ethnic diversity unit model overhaul.
+[NEWLINE]
+[NEWLINE]There are 3 types of scaling you can choose:
+[NEWLINE][ICON_BULLET] R.E.D. scaling and formation
+[NEWLINE][ICON_BULLET] Reduced Unit Graphics
+[NEWLINE][ICON_BULLET] Single Unit Graphics
+[NEWLINE]
+[NEWLINE]This mod already contains support for [COLOR:225:180:90:255]Vox Populi[ENDCOLOR], so you don't need to enable the additional VP support file.
+[NEWLINE]
+[NEWLINE]This mod includes support for additional units from:
+[NEWLINE][ICON_PLUS] More Unique Components for VP
+[NEWLINE][ICON_PLUS] Enlightenment Era
+[NEWLINE][ICON_PLUS] Enhanced Naval Warfare
+[NEWLINE][ICON_PLUS] Enhanced Air Warfare
+[NEWLINE]
+[NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-Config.sql[ENDCOLOR] file.
+[NEWLINE]You can also activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_Config.sql[ENDCOLOR] file
+[NEWLINE]
+[NEWLINE]Should be saved game compatible since it's only a visual mod.</Description>
+    <Authors>N.Core</Authors>
+    <SpecialThanks>Gedemon, Nutty, VP modding community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="15" maxversion="999" title="Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era (Vox Populi)" />
+    <Mod id="675ba5ec-dc5a-400f-9864-8170568d04e5" minversion="0" maxversion="999" title="Enhanced Naval Warfare for Vox Populi" />
+    <Mod id="871da714-b2c6-49e9-8882-57489f501dba" minversion="0" maxversion="999" title="Enhanced Air Warfare for Vox Populi" />
+  </References>
+  <Blocks>
+    <Mod id="8670da15-d435-44ea-9758-7438cb321411" minversion="0" maxversion="999" title="R.E.D. Modpack" />
+    <Mod id="de77c612-15a0-4580-92fd-535b525df700" minversion="0" maxversion="999" title="Reduced Unit Graphics" />
+    <Mod id="4a60955e-7dc2-40bc-895e-2e1dd7d46651" minversion="0" maxversion="999" title="Single Unit Graphics" />
+    <Mod id="a558047c-e8eb-4084-b30b-e6c7fb3d47ae" minversion="0" maxversion="999" title="USnF for VP Components" />
+  </Blocks>
+  <Files>
+    <File md5="4414EEF5CE7CEBEBC71581F992C1A4D6" import="0">SQL/USnF-0-TABLE.sql</File>
+    <File md5="252381B38F2D3EDC274DD0FF0F957165" import="0">SQL/USnF-1-SCALE/Base Game/USnF-BASE_AIR.sql</File>
+    <File md5="9D8217814BA8AFA99E862F96A290A997" import="0">SQL/USnF-1-SCALE/Base Game/USnF-BASE_LAND.sql</File>
+    <File md5="EB9BF88216869F0CCDB28C2F51B489E2" import="0">SQL/USnF-1-SCALE/Base Game/USnF-BASE_SEA.sql</File>
+    <File md5="3FDC067A2FC3DB2D8F6604E03BE1427E" import="0">SQL/USnF-1-SCALE/Base Game/USnF-CIVILIAN.sql</File>
+    <File md5="81DED67427127C222BBAB4841172C5E3" import="0">SQL/USnF-1-SCALE/Base Game/USnF-MISC.sql</File>
+    <File md5="6AD269B9867B7F23EB3E7B68BAD9BF40" import="0">SQL/USnF-1-SCALE/Base Game/USnF-UNIQUE_UNITS.sql</File>
+    <File md5="E2D68272F8E9C57E67F0360E5FB77DD2" import="0">SQL/USnF-1-SCALE/Other Mod Components/USnF-EAW.sql</File>
+    <File md5="7C9E69A7BD4CE2057B80F5F41A867FF5" import="0">SQL/USnF-1-SCALE/Other Mod Components/USnF-ENW.sql</File>
+    <File md5="C604CEEB7572DE5B03648995A1C69744" import="0">SQL/USnF-1-SCALE/Vox Populi Components/USnF-BASE_VP.sql</File>
+    <File md5="07427BE065D451C7A93564004DE20EB5" import="0">SQL/USnF-1-SCALE/Vox Populi Components/USnF-EEVP.sql</File>
+    <File md5="03A05A9A1D8958EE8BF3A5E3C2AE56D1" import="0">SQL/USnF-1-SCALE/Vox Populi Components/USnF-MUCfVP.sql</File>
+    <File md5="EC52AC8D2B7F2A45BB4B665906FF90B8" import="0">SQL/USnF-2-AIRSPEED.sql</File>
+    <File md5="99EF104F72F123A659F6F058629D9211" import="0">SQL/USnF-2b-AIRSPEED_VP.sql</File>
+    <File md5="8933F1541EC5418174F00E683A1CF1B7" import="0">SQL/USnF-3-SETUP.sql</File>
+    <File md5="F6B161B264F104E6DD9AEA6C3641B5B5" import="0">USnF-CONFIG.sql</File>
+    <File md5="80120431AAA916C36EC341CA7360327E" import="0">USnF-VP_CONFIG.sql</File>
+    <File md5="4EF000D5619607D1A79BADA2253B8F04" import="1">XML/UnitFormations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/USnF-0-TABLE.sql</UpdateDatabase>
+      <UpdateDatabase>USnF-CONFIG.sql</UpdateDatabase>
+      <UpdateDatabase>USnF-VP_CONFIG.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-CIVILIAN.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-BASE_LAND.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-BASE_SEA.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-BASE_AIR.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-UNIQUE_UNITS.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Base Game/USnF-MISC.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Vox Populi Components/USnF-BASE_VP.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Vox Populi Components/USnF-MUCfVP.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Vox Populi Components/USnF-EEVP.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Other Mod Components/USnF-ENW.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-1-SCALE/Other Mod Components/USnF-EAW.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-2-AIRSPEED.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-2b-AIRSPEED_VP.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/USnF-3-SETUP.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
