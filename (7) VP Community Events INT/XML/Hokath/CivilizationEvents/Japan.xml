@@ -50,10 +50,10 @@
       <Text>{1_YieldCost}의 문화적 및 종교적 관습을 촉진합니다. 타호토 건물이 잠금 해제됩니다. 파고다는 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_3">
-      <Text>궁정 음악가들이 모든 성에 거주하며, +2 [ICON_CULTURE] 문화를 생산하고, [ICON_GREAT_MUSICIAN] 위대한 음악가의 출생률을 20% 증가시키며, [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]에서 20% 증가합니다.[NEWLINE]하지만, 유지비용으로 -3 [ICON_GOLD] 금이 필요합니다.</Text>
+      <Text>궁정 음악가들이 모든 성에 거주하며, +2 [ICON_CULTURE] 문화를 생산하고, [ICON_GREAT_MUSICIAN] 위대한 음악가의 출생률을 20% 증가시키며, [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에서 20% 증가합니다.[NEWLINE]하지만, 유지비용으로 -3 [ICON_GOLD] 금이 필요합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_4">
-      <Text>엘리트 극장 관행을 후원합니다. 10턴 동안 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] 상태에 들어갑니다. 이 상태와 이후의 [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]는 [ICON_CULTURE] 문화 생성량을 15% 증가시킵니다. 그러나, 드라마 접근 감소로 인해 [ICON_CULTURE] 지루함 임계치가 10% 증가합니다.</Text>
+      <Text>엘리트 극장 관행을 후원합니다. 10턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어갑니다. 이 상태와 이후의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_CULTURE] 문화 생성량을 15% 증가시킵니다. 그러나, 드라마 접근 감소로 인해 [ICON_CULTURE] 지루함 임계치가 10% 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_5">
       <Text>석탄 정제소에서 8 [ICON_RES_OIL] 오일을 추출합니다. 그러나 이 과정은 비싸고 오염을 일으킵니다: 석탄 정제소는 추가로 -3 [ICON_GOLD] 금과 -3 [ICON_FOOD] 식량을 소모합니다.</Text>
@@ -83,13 +83,13 @@
       <Text>궁정 음악가들</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_HELP">
-      <Text>+20% [ICON_GREAT_MUSICIAN] 위대한 음악가 비율. WLTKD가 +20% [ICON_PEACE] 신앙을 생성합니다.</Text>
+      <Text>+20% [ICON_GREAT_MUSICIAN] 위대한 음악가 비율. 국왕 경축일이 +20% [ICON_PEACE] 신앙을 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2">
       <Text>엘리트 극장 후원</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2_HELP">
-      <Text>WLTKD가 +15% [ICON_CULTURE] 문화를 생성합니다.</Text>
+      <Text>국왕 경축일이 +15% [ICON_CULTURE] 문화를 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_UE_PAGODA">
       <Text>타호토</Text>
