@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_DESCRIPTION">
+      <Text>닥터 시빙스턴, 아시죠?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_HELP">
+      <Text>위대하시고 찬란하신 폐하, 과학 고문께서 최근 빅토리아 호수를 방문하고 돌아오셨으며, 그의 발견에 대해 논의하고자 합니다.[NEWLINE]3시에 뵙는 건 어떻겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_HELP_CHOICE_1">
+      <Text>이 경이로움이 영구적으로 +1 [ICON_GOLD] 황금과 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_HELP_CHOICE_2">
+      <Text>대학이 호수로 확장되며, 이 도시에 있는 [ICON_GREAT_SCIENTIST] 위대한 과학자가 +1 [ICON_RESEARCH] 과학과 +1 [ICON_FOOD] 식량을 생산할 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_HELP_CHOICE_3">
+      <Text>호수에 새로운 [ICON_RES_FISH] 물고기 종이 나타나 +3 [ICON_FOOD] 식량과 +3 [ICON_GOLD] 황금을 제공합니다. 인근의 [ICON_RES_FISH] 물고기 자원도 +1 [ICON_GOLD] 황금을 제공합니다. 그러나 지역 어부들은 고통받아 [ICON_GOLD] 빈곤 기준이 10% 상승합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_HELP_CHOICE_4">
+      <Text>호수에 수력 발전소를 건설하기 위해 {2_InstantYield} 비용을 지불하십시오. 이는 도시에 +5 [ICON_PRODUCTION] 생산력과 +5 [ICON_GOLD] 황금을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_DESCRIPTION_CHOICE_1">
+      <Text>*다시 한번, 신기술의 도입이 호수 경제에 이익을 가져다줍니다*[NEWLINE]평소처럼 훌륭한 일이군요, 박사님.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_DESCRIPTION_CHOICE_2">
+      <Text>*호수 내 물고기 종에 대한 학문적 관심이 전례 없는 수준에 도달했습니다*[NEWLINE]참으로 흥미롭군. 이 새로운 지식이 우리에게 어떤 도움을 줄 수 있을지 기대가 됩니다. 추가 자금을 지원해 주도록 하죠.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_DESCRIPTION_CHOICE_3">
+      <Text>*호수에 새로운 물고기 종을 도입하면 어업 생산성이 크게 증가할 것이라는 연구 결과가 나왔습니다*[NEWLINE]위험한 시도처럼 들리는군. 이 물고기들은 현지인들이 다루는 것보다 훨씬 크니, 부작용이 너무 심하지 않기를 바랄 뿐이네.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_LAKE_VICTORIA_DESCRIPTION_CHOICE_4">
+      <Text>*매분 엄청난 양의 물이 호수에서 흘러나오는 것을 이용해 수력 발전소를 짓기에 완벽한 장소입니다*[NEWLINE]왜 그 생각을 못했지?! 고맙네, 박사님.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

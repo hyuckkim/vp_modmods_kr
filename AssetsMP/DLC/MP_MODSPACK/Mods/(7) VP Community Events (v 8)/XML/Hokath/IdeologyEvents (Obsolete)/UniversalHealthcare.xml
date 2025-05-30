@@ -1,0 +1,117 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_UNIVERSAL_HEALTHCARE_F</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_1</Help>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION">
+			<Text>Free at the Point of Need</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP">
+			<Text>Our National Health Service is the best in the world, it is time we leverage that status!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_1">
+			<Text>Hospitals provide +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_2">
+			<Text>Hospitals provide +2 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_HELP_CHOICE_3">
+			<Text>Hospitals provide +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_1">
+			<Text>We can use our position to develop new markets for applicances and devices in the healthcare industry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_2">
+			<Text>The best hospitals attract the best doctors, we must move to secure our place at the forefront of medical research.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_UNIVERSAL_HEALTHCARE_DESCRIPTION_CHOICE_3">
+			<Text>When the peoples of the world see the life enjoyed by our citizens, they will flock to our shores. Promise of good health is worth more than gold!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
+
+

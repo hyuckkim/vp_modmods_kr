@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <!--
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1_S">
+			<Text>{1_Playername}이(가) 무기 밀매 작전을 발견했습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1">
+			<Text>{1_Playername}이(가) 자국을 지나가는 [ICON_RES_IRON] 철의 무기 선적을 급습했습니다. 그 밖에, 최근 정치 정상 회담에서 화재로 수십 명이 사망했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2_S">
+			<Text>{1_Playername}이(가) 도시 국가에서 재정 전문가를 모집했습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2">
+			<Text>{1_Playername}이(가) 잘 배치된 정치 세력의 지원을 확보했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3_S">
+			<Text>{1_Playername}이(가) 조직 범죄 집단에 대해 행동을 취했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3">
+			<Text>소문에 따르면, {1_Playername}이(가) 자국 제국 내의 상황에 대해 처음 생각했던 것보다 더 많은 정보를 알고 있다는군요!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4_S">
+			<Text>{1_Playername}이(가) 군사 정보를 더욱 정밀하게 파악하고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4">
+			<Text>소문에 따르면, {1_Playername}이(가) 다른 제국의 군사 움직임에 대해 자신이 알아야 할 만큼의 정보를 가지고 있다는군요!</Text>
+		</Row>
+		-->
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION">
+      <Text>전쟁 자재</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP">
+      <Text>우리의 첩보원들이 반란 도시 국가 파벌과 포괄적인 연결 고리를 구축했습니다. 현재 우리 영토에서 무기 밀매 작전이 진행되고 있다는 정보를 입수했습니다![NEWLINE][NEWLINE]이 상황에 어떻게 대응할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_1">
+      <Text>[ICON_CAPITAL] 수도 근처에 에방 3명을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_3">
+      <Text>당신의 영사관이 도시에서 [ICON_GOLD] 금 생산을 5% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_4">
+      <Text>적합한 군사 유닛들이 매복 I 프로모션을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_1">
+      <Text>우리의 연락망이 필사적일 겁니다. 재정 전문가를 모집하는 척하며 외교 고문을 보내 남아있는 정치적 연계망을 협상하세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_3">
+      <Text>소형 무기 거래에는 관심이 없습니다. 그러나 이 침투의 범위는 놀랍습니다. 이 첩보원들을 추출하고 독립된 기관을 만들어 보세요. CI:5라고 부릅시다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_4">
+      <Text>소형 무기 거래에는 관심이 없습니다. 그러나 이 보고서에 상세히 기술된 현장 기술은 뛰어납니다. 이 첩보원들을 추출하고 새로운 군사 정보 기관인 CI:6에 배치하세요.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

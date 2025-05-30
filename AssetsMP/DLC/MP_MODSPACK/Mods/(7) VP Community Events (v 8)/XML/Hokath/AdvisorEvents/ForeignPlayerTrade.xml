@@ -1,0 +1,220 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorforeign.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<!--<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		</Row>-->
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_IVORY</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+			<Quantity>-2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_GLASS</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_PORCELAIN</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_JEWELRY</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION">
+			<Text>Exotic Goods</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP">
+			<Text>Your Foreign Advisor writes that the caravan has stopped off in a City State. She has set about securing a set possible trade deals. However, the Merchants are in vicious competition, and signing a deal with one will alienate you from the rest.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>Trade 2 [ICON_RES_HORSE] Horses for a copy of [ICON_RES_IVORY] Ivory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>Pay {1_YieldCost} to learn the {2_InstantYield} required to produce one copy of [ICON_RES_GLASS] Glass.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>Pay {1_YieldCost} to establish a distinct style of pottery, worth {2_InstantYield} and a copy of [ICON_RES_PORCELAIN] Porcelain.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_4">
+			<Text>Pay {1_YieldCost} to impress foreign dignitaries with a copy of fine [ICON_RES_JEWELRY] Jewelry, gaining {2_InstantYield}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>I am willing to hand over several thoroughbreds in exchange for a supply of these 'elephants'.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>This fine glassware intrigues me. We lack the scientific ability to produce something so fragile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>And to think we had been eating out of Iron bowls this whole time. Who knew this Porcelain material existed?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_4">
+			<Text>If these jewelers can do what they boast of, every foreign dignitary in the Capital will be green with envy.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 새로운 국가</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 국가 고문으로 알려지지 않은 인물을 임명합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 경복궁</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 도자기 유물로 가득 찬 웅장한 새로운 궁전을 건설합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 개혁된 알파벳</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 새로운 알파벳, 한글을 발명합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 사회적 완화</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 사회적 이동성을 증진시킵니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 암살</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5">
+      <Text>한국의 여왕이 암살되어 폭력적이고 고립주의적인 감정을 불러일으킵니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 현대화</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 한국의 경제적 및 사회적 자유를 대폭 확대합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION">
+      <Text>핀페더의 돌진</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP">
+      <Text>궁정의 파벌들이 당신의 승인을 clamoring합니다, 위대한 왕이시여. 그들은 하늘, 자신들, 당신의 적들, 그리고 일부는 아마도 당신을 섬깁니다.[NEWLINE][NEWLINE]지구는 약간 흔들리고 있으며, 그들은 다시 한 번 당신에게 요구할 기회를 가집니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1">
+      <Text>원하는 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2">
+      <Text>{2_InstantYield}를 지불합니다. 궁전은 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_RESEARCH] 과학에 +5%를 제공합니다. 또한 그 영광은 +5 [ICON_PEACE] 신앙에 비추어집니다. [ICON_RES_PORCELAIN] 도자기를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3">
+      <Text>{2_InstantYield}를 지불합니다. 농장은 +1 [ICON_RESEARCH] 과학을 산출합니다. 10턴 동안 황금 시대에 들어갑니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4">
+      <Text>{2_InstantYield}를 지불합니다. 전문직에서 +1 [ICON_CULTURE] 문화.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5">
+      <Text>다음 {4_Turns} 동안: 근접 및 총기 유닛이 우호적인 지역에서 +25% [ICON_STRENGTH] 전투력을 얻습니다; 적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화가 시대 및 스파이의 수준에 따라 증가합니다; 그러나 세관 사무소는 [ICON_GOLD] 금을 -4, [ICON_TOURISM] 관광을 -4 감소시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6">
+      <Text>증권 거래소는 도시에서 +20% [ICON_GOLD] 금을 제공합니다, 그리고 [ICON_CULTURE] 지루함 임계치가 10% 감소합니다. 15턴 동안 황금 시대에 들어갑니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1">
+      <Text>이 정치적 요구를 사용하여 국회의 수장을 한국에 충성스러운 인물로 교체합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2">
+      <Text>*각료들이 대규모 건설 프로젝트와 예술적 요구를 요청합니다*[NEWLINE]이 얇게 숨겨진 강탈 시도는 용납되지 않을 것입니다. 궁정에 거대한 경복궁을 세우는 필요성을 강조하십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3">
+      <Text>*우리의 영주들은 교육 접근을 제한하여 농민들을 제어하려 합니다.*[NEWLINE]우리는 그들에게 교육 개혁을 제공하겠지만, 그들이 상상했던 방식은 아닙니다. 수석 학자를 데려오세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4">
+      <Text>*신흥 농민들이 다시 한 번 자신들의 지위 이상의 위치를 바라봅니다. 영주들은 조치를 요구합니다.*[NEWLINE]우리는 평화롭게 우리의 전통을 강화할 것입니다. 하늘 아래 질서가 있을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5">
+      <Text>*여왕이 암살되었습니다. 각료들은 항복을 요구합니다.*[NEWLINE]이 반역자들... 우리는 외국 악마들의 비참한 제국주의적 망상에 절대 굴복하지 않을 것입니다! 그들의 머리를 가져오세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6">
+      <Text>*각료들은 경제적 어려운 시기에 당신을 축출하려는 악의적인 움직임으로 자신의 권력과 당신의 권력을 파괴할 개혁을 요구합니다.*[NEWLINE]이제는 이렇게 되었군요... 문제가 아닙니다. 이 개혁들로, 내 국민의 완전한 잠재력이 드디어 발휘될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY">
+      <Text>한국 보호주의</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP">
+      <Text>적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화를 받습니다. 시대에 따라 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL">
+      <Text>거북이 갑옷</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP">
+      <Text>[ICON_RANGE_STRENGTH] 원거리 공격에서 33% 적은 피해를 받습니다. 오직 한국의 이벤트를 통해 부여됩니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

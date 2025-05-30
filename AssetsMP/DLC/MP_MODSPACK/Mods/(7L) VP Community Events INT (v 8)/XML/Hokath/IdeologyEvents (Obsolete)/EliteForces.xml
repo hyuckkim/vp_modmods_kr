@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION">
+      <Text>스톰트루퍼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP">
+      <Text>우리 엘리트 부대는 새로운 복장을 갖추었습니다. 아주 멋집니다. 하지만 검은 가죽과 반짝이는 부츠만으로는 궁극적인 군사 사단이 되지는 않습니다. 이제 모든 준비가 완료되었으니, 그들의 사용에 관한 정확한 프로토콜을 결정해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_1">
+      <Text>{1_YieldCost}를 추가 훈련에 투자합니다. 모든 적격 유닛과 다음 {4_Turns} 동안 생산된 유닛은 쇼크 II 승급을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 추가 훈련에 투자합니다. 유닛이 레벨업할 때, 그들의 원래 도시에서 [ICON_CULTURE] 문화가 생성됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 추가 훈련에 투자합니다. 유닛이 레벨업할 때, 그들의 원래 도시에서 [ICON_PRODUCTION] 생산력이 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_1">
+      <Text>간단합니다. 우리는 우리의 병사들을 세계가 본 적 없는 가장 두려운 돌격부대가 되도록 훈련시키고, 전투가 시작되면 무자비하게 적을 무찌릅니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_2">
+      <Text>이것은 섬세함의 문제입니다. 적군의 세력을 차갑고 무감정한 능력으로 해체할 수 있어야 합니다. 우리의 병사들은 공포를 퍼뜨리고 우리의 힘을 전 세계에 과시하는 임무를 수행해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_3">
+      <Text>모든 전투에서 최상의 결과를 얻고 싶습니다. 이는 최소한의 낭비를 의미합니다. 적이 남긴 모든 무기와 파괴하지 못한 도면은 전쟁 노력을 지속하기 위해 본국으로 돌아와야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY">
+      <Text>문화적 병사들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_HELP">
+      <Text>유닛이 승급할 때마다 +8 [ICON_CULTURE] 문화가 시대에 따라 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2">
+      <Text>수집된 병사들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2_HELP">
+      <Text>유닛이 승급할 때마다 +10 [ICON_PRODUCTION] 생산력이 시대에 따라 증가합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

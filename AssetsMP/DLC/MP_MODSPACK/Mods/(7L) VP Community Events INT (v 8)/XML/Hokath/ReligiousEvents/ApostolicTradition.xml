@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1">
+      <Text>{3_PlayerName}의 종교인들이 사도 전통의 비밀을 밝히기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2">
+      <Text>{1_CivShortDescription}의 문화적 규범이 종교적 인물의 모방에 지배당하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3">
+      <Text>{3_PlayerName}가 사도 전통의 비밀을 그들의 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4">
+      <Text>{3_PlayerName}가 사도 궁전을 고대 설계도에 맞게 업그레이드했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5">
+      <Text>{3_PlayerName}가 대규모 번역 프로젝트를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6_S">
+      <Text>{3_PlayerName}가 사도 전통의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6">
+      <Text>{3_PlayerName}가 사도 전통의 신성한 유물을 발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION">
+      <Text>지구에서 하늘처럼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP">
+      <Text>신이 지구에 오셨을 때, 사도들을 그분의 증인으로 삼으셨습니다. 이제 그분은 하늘로 돌아가셨고, 그들의 유산을 그분의 대리로서 우리에게 남기셨습니다. 우리의 성직자들은 그분의 지상에서의 삶과 업적을 기록한 문서에 의해 인도받고 있지만, 기록이 완전하지 않습니다. 그들은 이를 '잃어버린 복음서'라고 부릅니다.[NEWLINE][NEWLINE]이 유물을 회수한다면, 우리의 신앙의 기초를 확립하여 아무도 우리를 의심하지 않게 될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 사도 궁전이 +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 성공 소문을 퍼뜨립니다. 도시들은 [ICON_GOLDEN_AGE] 황금 시대 동안 5% 더 많은 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_PEACE] 신앙, [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 [ICON_PEACE] 신앙으로 구매한 건물과 사도 궁전이 +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_4">
+      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 사도 궁전의 [ICON_GOLDEN_AGE] 황금 시대 점수가 50% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_5">
+      <Text>책 탐구의 마지막 단계에서, 모든 [ICON_DIPLOMAT] 공무원이 +2 [ICON_PEACE] 신앙과 +2 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시들은 구매 시 [ICON_GOLD] 금의 5%를 [ICON_GOLDEN_AGE] 황금 시대 점수로 변환합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_1">
+      <Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 이 사도의 삶에 대해 아는 모든 것을 찾아야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_2">
+      <Text>*우리의 신앙의 중심 원칙 연구는 미덕 있는 삶의 실천을 강조해 왔습니다*[NEWLINE]모두가 그가 보여준 대로 조화롭게 살 때, 우리가 이룰 수 없는 것은 없습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_3">
+      <Text>탐색이 계속되고 있으며, 현재 진행 상태에 만족하지 않습니다. 사도의 마음을 이해하고 그의 동기와 변덕을 알기 위해서는 그가 살고 기도했던 대로 살아야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_4">
+      <Text>드디어 성공! 바위 낙하로 묻힌 오래된 무덤이 발견되었습니다. 그 안에는 잃어버린 사도의 것 같아 보이는 두루마리와 장신구들이 있었습니다! 그 중에는 사도 궁전의 원본 청사진도 완벽히 주석이 달려 있었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_5">
+      <Text>두루마리는 방대합니다. 모든 것을 필사하려면 우리의 성직자들에게 막대한 시간이 소요될 것입니다. 우리의 정교한 인프라를 사용하여 더 효율적인 방법을 찾을 수 있을 것입니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_6">
+      <Text>우리의 노력이 드디어 보상을 받았습니다. 잃어버린 복음서가 회수되었고, 여전히 기적적으로 온전합니다. 이를 통해 우리는 지구에서 신의 본보기를 완전히 이해하고, 제국을 하늘에 더욱 가까이 만들 수 있을 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_DUMMY">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

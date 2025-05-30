@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_DESCRIPTION">
+      <Text>사람을 삼키는 산</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_HELP">
+      <Text>위대한 지도자님, 실례를 무릅쓰고 세로 포토시에서 소식을 전해드립니다. 지난번 참혹한 광산 붕괴 이후, 저희는 노력을 배가했습니다.[NEWLINE]이 보고서가 폐하를 기쁘게 하기를 바랍니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_HELP_CHOICE_1">
+      <Text>이 경이로움이 영구적으로 +1 [ICON_PRODUCTION] 생산력과 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_HELP_CHOICE_2">
+      <Text>더 깊은 광산에서 [ICON_RES_SILVER] 은을 한 개 얻을 수 있지만, 위험한 작업 환경으로 광부들의 건강이 악화됩니다: 매 턴 -4 [ICON_FOOD] 식량.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_HELP_CHOICE_3">
+      <Text>강 준설 작업으로 매 턴 -5 [ICON_PRODUCTION] 생산력이 감소하지만, 인근 강 타일에서 +1 [ICON_GOLD] 금을 얻을 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_HELP_CHOICE_4">
+      <Text>고급 제련 기술을 사용하면 산의 광석에서 [ICON_RES_COPPER] 구리를 한 개 추출할 수 있습니다. 도시에 있는 [ICON_GREAT_ENGINEER] 기술자들이 +1 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_DESCRIPTION_CHOICE_1">
+      <Text>*일자리를 찾아 현지 마을로 이주하는 사람들이 늘어나고 있습니다*[NEWLINE]산을 위한 더 많은 사람들이군요...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_DESCRIPTION_CHOICE_2">
+      <Text>*도시의 대장장이가 산의 귀중한 은광석을 전례 없이 추출할 수 있는 방법을 개발했습니다*[NEWLINE]마침내, 은은 우리의 것이 될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_DESCRIPTION_CHOICE_3">
+      <Text>*기술자들은 산에서 빗물에 의해 운반된 금속이 물 저장소 바닥에 침전되어 있을 것이라고 믿고 있습니다*[NEWLINE]좋은 방법이 있군요. 자재를 제공하고 강의 모든 인치에 걸쳐 사람들을 파견하세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_POTOSI_DESCRIPTION_CHOICE_4">
+      <Text>*은 제련 과정의 개선으로 슬래그에서 구리를 분리할 수 있게 되었습니다*[NEWLINE]이 모든 세월 동안 얼마나 많은 것이 낭비되었을지 생각해 보십시오!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_POTOSI_DUMMY">
+      <Text>강 준설</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NW_POTOSI_DUMMY_HELP">
+      <Text>강 타일에서 +1 [ICON_GOLD] 금.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

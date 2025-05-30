@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION">
+      <Text>우리는 과거를 원하지 않습니다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP">
+      <Text>우리 예술가들이 이전의 작업에서 벗어나 새로운 문화 운동을 시작했습니다. 이 새로운 문화 운동을 어떻게 가장 잘 지원할 수 있을까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_1">
+      <Text>{1_YieldCost}를 변경하여 모든 [ICON_GREAT_ARTIST] 예술가가 +2 [ICON_TOURISM] 관광을 생성하도록 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 모든 박물관이 [ICON_RESEARCH] 과학을 5% 증가시키도록 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 사용하여 전시회를 설정합니다. [ICON_GREAT_WORK] 위대한 작품들이 시민들에게 영감을 주어 각각 +2 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_1">
+      <Text>모든 예술가들이 이 새로운 운동에 동참하는 것은 아닙니다. 모든 영향력 있는 주요 예술가들을 설득하여 이 새로운 물결을 지지하게 하지 않는 한, 우리는 우리의 잠재력을 달성하지 못할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_2">
+      <Text>이 영감을 주는 작업이 있지만, 제대로 보급되지 않고 있습니다. 이 작업들이 모든 박물관에 전시되어, 우리가 더 밝고 용감한 시대를 향해 나아갈 수 있도록 하길 바랍니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_3">
+      <Text>이 새로운 아이디어들이 박물관을 채우는 것은 좋지만, 정말로 영감을 받아야 할 사람들은 하층 계급입니다. 우리 국가의 예술 컬렉션을 이용해, 노동자들이 참석할 수 있는 전시회를 설정해 주세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY">
+      <Text>영감을 주는 예술</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY_HELP">
+      <Text>위대한 작품에 +2 [ICON_TOURISM] 관광을 추가합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

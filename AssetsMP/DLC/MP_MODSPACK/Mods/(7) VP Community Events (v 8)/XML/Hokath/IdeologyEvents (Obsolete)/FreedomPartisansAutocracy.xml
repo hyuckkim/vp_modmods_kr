@@ -1,0 +1,73 @@
+<GameData>
+	<!-- Freedom Partisans vs Autocracy -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</Type>
+			<Description>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>1</NumChoices>
+			<RandomChance>100</RandomChance>
+			<EventCooldown>25</EventCooldown>
+			<MinimumCityPopulation>18</MinimumCityPopulation>
+			<RandomChanceDelta>5</RandomChanceDelta>
+			<IsUnhappy>true</IsUnhappy>
+			<RequiredIdeology>POLICY_BRANCH_AUTOCRACY</RequiredIdeology>
+			<RequiresOccupied>true</RequiresOccupied>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</CityEventType>
+			<EventChoice>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP_CHOICE_1</Help>
+			<RandomBarbarianSpawn>2</RandomBarbarianSpawn>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_Notification>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</CityEventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</CityEventChoice_Notification>
+	
+	<!-- Text -->
+	<!-- Freedom Partisans vs Autocracy -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1_S">
+			<Text>A rebel uprising has ignited in the City of {2_CityName}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1">
+			<Text>Two [ICON_WAR] Barbarian units have spawned near {2_CityName}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION">
+			<Text>Partisan Uprising</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP">
+			<Text>Surprisingly well-armed dissidents have to the streets of our City, protesting the Occupation. Those filthy Capitalists are behind this, mark my words.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP_CHOICE_1">
+			<Text>Surprisingly well-armed dissidents have to the streets of our City, protesting the Occupation. Those filthy Capitalists are behind this, mark my words.[NEWLINE][NEWLINE]Two [ICON_WAR] Barbarian units spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION_CHOICE_1">
+			<Text></Text>
+		</Row>
+	</Language_en_US>
+</GameData>

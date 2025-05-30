@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 새로운 대통령</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1">
+      <Text>{3_PlayerName}이(가) 상원의 새로운 대통령을 임명합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 정글 무역</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2">
+      <Text>{3_PlayerName}이(가) 쿠이쿠로 민족과 무역을 시작합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 교육 개혁</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3">
+      <Text>{3_PlayerName}이(가) 교육에 전례 없는 중요성을 부여합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 골드 러시</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4">
+      <Text>{3_PlayerName}이(가) 최근의 골드 러시로 인해 이민 규제를 완화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 프라시냐</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5">
+      <Text>{3_PlayerName}이(가) 프라시냐 군대를 조직합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 바이오디젤 산업</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6">
+      <Text>{3_PlayerName}이(가) 에너지 위기에 대응하여 바이오연료 이니셔티브를 추진합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION">
+      <Text>내일의 사람들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP">
+      <Text>황제 폐하, 소규모 회의가 당신의 최신 제안을 듣기 위해 모였습니다. 당신의 발표를 둘러싸고 많은 대화와 흥분이 있습니다. 개인적으로 저는 사랑받는 통치자를 섬기게 되어 매우 영광입니다.[NEWLINE]언제나 그랬듯이, 우리는 우리 나라의 첫 번째이자 가장 사랑받는 자식에게서 위대한 일들을 기대합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2">
+      <Text>정글 부족과 무역을 합니다. 정글은 +1 [ICON_FOOD] 식량과 +1 [ICON_GOLD] 금을 제공합니다. 하지만 목재 공장은 정글 보너스를 제거합니다. 전통적인 코코아, 설탕, 바나나, 향신료 재배 방법을 배우고, 각 자원이 +2 [ICON_CULTURE] 문화를 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3">
+      <Text>엘리트와 성직자에 반대하여 {1_YieldCost}를 사용하여 [ICON_RESEARCH] 문맹률 임계치를 5% 낮춥니다. [COLOR_POSITIVE_TEXT]왕의 날[ENDCOLOR] 동안 도시는 +10% [ICON_PRODUCTION] 생산을 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4">
+      <Text>2개의 [ICON_RES_GOLD] 금을 받습니다. 이민자들의 유입으로 인구가 {2_InstantYield} 증가하지만, 모든 도시에 [ICON_GOLD] 빈곤 임계치가 5% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5">
+      <Text>프라시냐 5명이 [ICON_CAPITAL] 수도에서 모집됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 사용하여 플랜테이션이 바이오연료를 생산하기 시작합니다 (3개의 [ICON_RES_OIL] 석유를 획득). 매 턴 +2 [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학 및 [ICON_GOLDEN_AGE] 황금기 점수를 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1">
+      <Text>감사합니다, 대통령님. 후임자에 대한 결정을 내렸습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2">
+      <Text>*많은 원주민들이 제국으로부터 분리되어 정글 깊숙이 남아 있습니다*[NEWLINE]우리가 끝없는 정글로 확장하고 그곳의 놀라운 열매를 경작하려 할 때, 우리는 많은 사람들을 잃습니다. 하지만 이미 이를 할 수 있는 사람들이 존재하며, 그들은 우리에게 가르쳐 줄 수 있습니다. 우리가 요청하기만 하면 됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3">
+      <Text>*교육은 부유하고 강력한 자들을 위한 것이며, 사회적 이동성과 정의를 증가시키는 데 장애물이 됩니다*[NEWLINE]제가 지도자가 아니었다면, 저는 교사가 되고 싶었을 것입니다. 우리 국민의 밝은 미래를 보장하는 더 좋은 방법이 무엇일까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4">
+      <Text>*제국의 미개척 지역에서 귀금속이 발견되어 전 세계의 역동적인 사람들의 관심을 끌고 있습니다*[NEWLINE]골드 러시는 일시적이겠지만, 지속되는 승리는 오늘날 가장 열심히 일하는 사람들을 브라질로 끌어들이는 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5">
+      <Text>*많은 젊고 애국적인 브라질인들이 이 전쟁에 참여하기를 원합니다!*[NEWLINE]이것은 내가 우리 아이들을 위해 희망했던 미래가 아니었지만, 우리가 받은 현실입니다. 그들이 싸우게 하십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6">
+      <Text>*세계는 에너지 위기에 직면해 있습니다. 브라질의 자원은 이 문제를 해결하는 데 독특한 위치에 있습니다*[NEWLINE]우리의 숲이 시들고 죽고, 우리의 유산이 잊혀지는 것을 나는 지켜보고만 있지 않을 것입니다! 이 위협에 대처하기 위해 필요한 모든 자원을 사용하십시오. 이 위협은 강대국과 소국 모두에게 영향을 미칩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY">
+      <Text>브라질 교육</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP">
+      <Text>왕의 날 동안 +10% [ICON_PRODUCTION] 생산.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

@@ -1,0 +1,152 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_SOCIALIST_REALISM</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_1</Help>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_2</Help>
+			<ResistanceTurns>2</ResistanceTurns>
+			<EventDuration>2</EventDuration>
+			<Expires>false</Expires>
+			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_3</Help>
+			<EventDuration>10</EventDuration>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+			<EventPromotion>PROMOTION_DRILL_2</EventPromotion>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Type>
+			<DefaultBuilding>BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<CitySupplyModifier>3</CitySupplyModifier>
+			<Experience>5</Experience>
+		</Row>
+	</Buildings>
+
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION">
+			<Text>Little Red Book</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP">
+			<Text>Comrade-general, the other Ministers of War and I hold grave concerns over the allegiance of the young people. They have not struggled through the revolution as we have, they do not fully understand why we need Order.[NEWLINE]Comrade, what would you have us do?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_1">
+			<Text>Leverage {1_YieldCost} to gain 3% Supply in every City and +5 XP on newly trained Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_2">
+			<Text>Enter {4_Turns} of [ICON_RESISTANCE] Anarchy in order for [ICON_CULTURE] Boredom and [ICON_STRENGTH] Crime thresholds to permenantly be reduced by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_3">
+			<Text>All Cities lose 1 [ICON_CITIZEN] Population, but all eligible Units, as well as those constructed in the next {4_Turns}, gain the Drill II Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_1">
+			<Text>The answer is simple, comrades. National service for all.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_2">
+			<Text>If they have forgotten the revolution, the founders of our Ideology have given us the solution: have another!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_3">
+			<Text>Manual labour, my dear general, is a remarkably effective lesson. Please, teach these uneducated youths.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY">
+			<Text>National Service</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY_HELP">
+			<Text>+3% Supply from Population and +5 XP.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

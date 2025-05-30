@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" version="14">
+  <Properties>
+    <Name>(ui) Wonder Planner for VP</Name>
+    <Teaser>Lists built and available Wonders with their focus</Teaser>
+    <Description>Lists built and available Wonders with their focus. Player can sort out information by what he actually needs at the moment. Anti-cheat logic included.</Description>
+    <Authors>William Howard/adan_eslavo</Authors>
+    <SpecialThanks>William Howard, Infixo</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/wonder-planner-for-vp.636588/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="14" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="37ACAED1C2397A2AA1F6DD93790B2ED2" import="1">Art/WonderPlannerLogo.dds</File>
+    <File md5="9148C374EF4E005F67C7F46588126A21" import="0">Changelog.txt</File>
+    <File md5="1B890B6FE62C55457BF64D2966E43EFF" import="0">Text/WonderPlannerTexts.xml</File>
+    <File md5="3B7B1EE92949FC3B7B9308074F036BEB" import="1">UI/NewSaveUtils.lua</File>
+    <File md5="B9EFAD5922E719A6B04D13BDC8DB615D" import="0">UI/WonderPlanner.lua</File>
+    <File md5="2013092E959C591F83D96F9D2EE72C0E" import="0">UI/WonderPlanner.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text/WonderPlannerTexts.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/WonderPlanner.xml">
+      <Name>Wonder Planner</Name>
+      <Description>Tool for planning wonder building</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

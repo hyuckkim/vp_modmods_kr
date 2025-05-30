@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1_S">
+      <Text>{1_Playername}의 궁전이 종교적 반체제 세력에 의해 폭파되었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1">
+      <Text>그들의 수도가 [ICON_RESISTANCE] 저항 상태에 들어갔습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION">
+      <Text>화약 음모</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP">
+      <Text>소수 신앙을 가진 한 남자가 자신의 궁전을 폭파할 음모에 연루되었음을 고백했습니다. 그는 회개를 간청하지만 음모자들을 잡을 정보는 부족합니다.[NEWLINE][NEWLINE]어떻게 하시겠습니까, 귀하의 탁월하신 분?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_1">
+      <Text>50% 확률로 {5_Turns} 동안 [ICON_RESISTANCE] 저항 상태가 발생합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_2">
+      <Text>모든 [ICON_CITIZEN] 인구를 귀하의 [ICON_RELIGION] 종교로 개종시키지만, 이 과정에서 -2 [ICON_CITIZEN] 인구를 잃습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_3">
+      <Text>15턴 동안 2 [ICON_HAPPINESS_4] 불행.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_4">
+      <Text>{2_InstantYield}를 지불하고 궁전에서 +2 [ICON_PEACE] 신앙, [ICON_GOLD] 금, [ICON_CULTURE] 문화를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_1">
+      <Text>그 건물에 어떤 일이 생기면, 유일하게 달라질 점은 알림이 아니라 당신의 사임을 읽게 될 것이라는 점입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_2">
+      <Text>이 남자와 자진해서 나오려는 사람들에게 사면을 제공하세요. 그런 다음, 남아있는 그릇된 신앙의 모든 구성원을 화형에 처하세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_3">
+      <Text>그 배은망덕한 자들. 모든 예비군을 동원해 이 음모자들을 수색하라. 경비를 두 배로 늘리고, 크리스마스를 취소하라.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_4">
+      <Text>궁전을 청소하세요. 폭발이 일어나면 모두가 그것이 WTLKD 축제의 일부였다고 말하세요. 그런 다음, 더 크고 더 좋은 궁전을 지으세요.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

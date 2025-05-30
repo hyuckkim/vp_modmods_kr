@@ -1,0 +1,140 @@
+<GameData>
+	<!-- Motaba Virus -->
+	<Events>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS</Type>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<!-- Because it enable a bad event -->
+			<NumChoices>4</NumChoices>
+			<RandomChance>30</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>True</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<RandomChanceDelta>2</RandomChanceDelta>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_1</Help>
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_2</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_3</Description>
+			<PrereqTech>TECH_ROCKETRY</PrereqTech>
+			<CapitalEffectOnly>true</CapitalEffectOnly>			
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_4</Description>
+			<EventPromotion>PROMOTION_AIR_SIEGE_3</EventPromotion>
+		</Row>
+	</EventChoices>
+	<EventChoice_EventLinks>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<EventChoiceLinker>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceLinker>
+			<CheckForActive>false</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</EventChoice_EventLinks>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<UnitClassType>UNITCLASS_GUIDED_MISSILE</UnitClassType>
+			<Quantity>6</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<!-- Text  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION">
+			<Text>Motaba Virus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_HELP">
+			<Text>Our military intelligence has brought in a babbling medic, who claims to have discovered an incredibly dangerous virus while doing charity work in one of the far-flung corners of the world.[NEWLINE][NEWLINE]Only this man's research need make it to our Science Advisor...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_1">
+			<Text>Enemy Cities experience biological terrorism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_2">
+			<Text>Gain {2_InstantYield}. Your Cities become immune to biological terrorism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_3">
+			<Text>Gain 6 Guided Missiles in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_4">
+			<Text>Your Aircraft gain the Air Siege III promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_1">
+			<Text>Get me the head of CI:6. I'm authorising the use of this virus against civilian populations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_2">
+			<Text>What are you talking about?! This is horrifying. Send the Doctor to our best Medical Lab, we need to be prepared should this thing ever break loose!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_3">
+			<Text>This is just what the boys over at prototype weapons have been looking for. Green light the Scud Storm project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_4">
+			<Text>We can't trust something like this to those nutjobs over in RnD. Get me the Airforce.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,461 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_MONGOL_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_MONGOL</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CARAVANSARY</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MONGOL_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
+			<ReligiousUnrestModifierGlobal>-10</ReligiousUnrestModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<LosingMoney>true</LosingMoney>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MONGOL_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MONASTERY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MONGOL_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_MONGOL_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MONGOL_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_MONGOL_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_MONGOL_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_MONGOL_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MONGOL_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_MONGOL_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_MONGOL_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_MONGOL_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TradeRouteRecipientBonus>2</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_MONGOL_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_MONGOL_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_MONGOL_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_MONGOL_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TradeRouteRecipientBonus>4</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>4</TradeRouteTargetBonus>
+			<TradeRouteLandDistanceModifier>50</TradeRouteLandDistanceModifier>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SILK</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MONGOL_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Great Capture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_1">
+			<Text>{3_PlayerName} captures a Great Person in a raid!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Silk Road</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_2">
+			<Text>{3_PlayerName} opens a Silk Road to trade his exotic [ICON_RES_SILK] Silk far afield.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s War Reparations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_3">
+			<Text>{3_PlayerName} promises to give back to the peoples whose lands he has ravished!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Tea Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_4">
+			<Text>{3_PlayerName} opens a trade route of extreme length in order to introduce a new type of [ICON_RES_TEA] Tea.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Defender of Religions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_5">
+			<Text>{3_PlayerName} shows respect to the holy men of his Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Re-Mining</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MONGOL_UE_CHOICE_6">
+			<Text>{3_PlayerName} begins large-scale excavation of previously exhausted mining sites!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION">
+			<Text>They Call Him Temujin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP">
+			<Text>Khan, the latest round of captives is ready to kneel before you and beg for their lives.[NEWLINE]Would you like a cushion? This could go on for some time.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_2">
+			<Text>Spend {1_YieldCost} to develop a great Silk Road. The production of 3 copies of [ICON_RES_SILK] is now possible, and [ICON_INTERNATIONAL_TRADE] Trade Routes with your Cities generate +2 [ICON_GOLD] Gold for both you and the sender.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_3">
+			<Text>Declare laws to protect the poor and holy, wronged by our conquests. Courthouses give out -3 [ICON_GOLD] Gold and -1 [ICON_CULTURE] Culture. In return, your mercifulness reduces [ICON_GOLD] Poverty thresholds by 5%, and reduces [ICON_RELIGION] Religious Divisions by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_4">
+			<Text>Send out Caravans to establish a Tea Road across the expanse. The production of 2 copies of [ICON_RES_TEA] is now possible, and [ICON_INTERNATIONAL_TRADE] Trade Routes over land travel 50% further and generate +4 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_5">
+			<Text>Honour our holy men with {1_YieldCost}. A Monastery is erected in every City, and all Monasteries generate an additional +2 [ICON_CULTURE] Culture and +2 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_HELP_CHOICE_6">
+			<Text>Massively increase funding for mining in the Empire by {1_YieldCost}. Mines generate +1 [ICON_PRODUCTION] Production. You receive 3 copies of: [ICON_RES_IRON] Iron, [ICON_RES_COAL] Coal, [ICON_RES_ALUMINUM] Aluminium, and [ICON_RES_URANIUM] Uranium.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_1">
+			<Text>In all these audiences we have yet to come across a single man of merit. These men accomplished much, there must be at least one Great Person among them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_2">
+			<Text>*This tribe specialized in rearing silkworms, but their trade was limited in scope and they could not survive an incursion with Mongolian culture*[NEWLINE]You once weaved fine Silks and lived peaceful, fulfilling lives. You can again! If you serve under the Great Khan, he will see that you flourish.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Another people devastated by contact with the Horde. We cannot rule over destroyed lands*[NEWLINE]Guard, fetch me the Economic Advisor. We must do something about this predicament immediately.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_4">
+			<Text>*This tribe grew Tea unlike those seen anywhere in the world*[NEWLINE]Far across the sea of grass, there are Cities of people who would kill for this Tea you have cultivated all your days. If you serve under the Khan, he will allow you to bring it to them and prosper.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The holy men we once allowed to regroup have established a respected and peaceful community. They beg for these men's lives*[NEWLINE]Where the wildfire destroys, the growth is strongest. We shall of course honor the wishes of our wisest sages; these men will live to build great Monasteries for their saviors.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MONGOL_UE_DESCRIPTION_CHOICE_6">
+			<Text>*This small band of raiders was captured dynamiting an old quarry, it seems there are rumors of more to be found*[NEWLINE]Get my Scientific Advisor in here. I wonder if there is any truth to these rumors? This land bred a harsh people, perhaps it held more for us than we knew.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MONGOL_UE_DUMMY">
+			<Text>The Silk Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONGOL_UE_DUMMY_HELP">
+			<Text>+2 [ICON_GOLD] Gold to sending and receiving external trade routes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONGOL_UE_DUMMY_2">
+			<Text>The Tea Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONGOL_UE_DUMMY_2_HELP">
+			<Text>+4 [ICON_GOLD] Gold to sending and receiving external trade routes. +50% Land Trade Distance.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

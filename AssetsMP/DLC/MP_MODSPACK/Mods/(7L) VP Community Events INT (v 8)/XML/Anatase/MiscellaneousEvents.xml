@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION">
+      <Text>어둠 속의 빛</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP">
+      <Text>도시의 한 노동자가 어둠 속에서 반짝이는 무언가를 발견했습니다. 광부들은 그곳에서 계속 일하기를 두려워합니다.[NEWLINE]이 문제를 조사하기 위해 누구를 보내시겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_1">
+      <Text>정찰병들이 광산에 숨어있는 도적 무리를 발견했습니다. [ICON_WAR] 야만인이 도시 앞에 생성됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_2">
+      <Text>의식은 성공했습니다! 성소의 [ICON_PEACE] 신앙이 1 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_3">
+      <Text>노인이 기적적으로 상처 없이 광산을 빠져나왔습니다! {2_InstantYield}을 얻습니다.</Text>
+    </Row>
+    <!--<Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_4">
+			<Text>반짝임의 정체는 광맥이었습니다. [ICON_RES_IRON] 철을 얻습니다.</Text>
+		</Row>-->
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_5">
+      <Text>반짝임의 정체는 보석이었습니다. 시장의 [ICON_GOLD] 골드가 2 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_HELP_CHOICE_6">
+      <Text>광산이 약탈됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_1">
+      <Text>무슨 일이 일어날 지 모르니 확인을 위해 군대를 보낸다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_2">
+      <Text>이런 일에 맞는 의식이 있다. 광산을 정화하기 위해 사제를 보낸다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_3">
+      <Text>우리가 광산을 너무 깊게 파 악령이 깨어났군. 가장 현명한 장로를 보내 우리가 깨운 악령을 잠재워야 한다.</Text>
+    </Row>
+    <!--<Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_4">
+			<Text>어떻게 빛이 보이는 거지? 학자를 보내 조사한다.</Text>
+		</Row>-->
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_5">
+      <Text>반짝이는 물건이라고? 공학자를 보내 조사한다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_MINEGLINT_DESCRIPTION_CHOICE_6">
+      <Text>두렵군. 불로 모두 없애 버려라.</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION">
+      <Text>왜 싸우는가?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP">
+      <Text>제국 전역에서 전사들이 도시에서 열리는 토너먼트에 참가하기 위해 모였습니다. 모든 준비는 끝났으니 이제 대회를 여는 일만 남았습니다, 폐하.[NEWLINE]이 대회를 어떤 목적으로 활용할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_1">
+      <Text>살아남은 검투사는 군대에 입대합니다. 적절한 유닛을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_2">
+      <Text>이 경기를 기억에 남는 가장 기억에 남는 이벤트로. 투기장의 [ICON_CULTURE] 문화 및 [ICON_TOURISM] 관광이 +1 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_3">
+      <Text>우리 전사들의 용맹함은 지역 도시 국가들의 존경을 받을 것입니다. 사절을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_4">
+      <Text>두 팀 간의 경쟁이 본격적인 갈등으로 번져 교외로까지 확산됩니다. [ICON_WAR] 야만인이 둘 생성됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_5">
+      <Text>이벤트로 인한 무역 증가로 도시의 수익이 증가합니다. {5_Turns} 동안 [ICON_GOLD] 골드가 +4, [ICON_RESEARCH] 과학이 +1 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_HELP_CHOICE_6">
+      <Text>축제의 제물로 {5_Turns} 동안, [ICON_CITIZEN] 시민 2명당 [ICON_PEACE] 신앙을 +1 얻습니다. </Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_1">
+      <Text>나 또한 한 명의 전사다. 승자와 그 동료들에게 관직을 하사하라.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_2">
+      <Text>국민들이 기뻐하니, 이 축제를 문화 유산으로 남기도록 지원하자.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_3">
+      <Text>지역 도시 국가의 대표를 초대해 오락을 제공하라..</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_4">
+      <Text>군대가 주둔해야 할 것 같은데. 주최자 불러와! 잠깐, 이건 무슨 소리지?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_5">
+      <Text>도시에 여행자가 많아지니, 상인들이 당분간 혜택을 누리겠군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_OLYMPICGAMES_DESCRIPTION_CHOICE_6">
+      <Text>어떤 죽음이 나은 죽음인가? 당연히, 조상과 신의 영광을 위해 싸운다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_AA_OLYMPICGAMES_DUMMY">
+      <Text>전투의 영광</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION">
+      <Text>사후 분석</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP">
+      <Text>한 지역 농부가 지금까지 본 적 없는 거대한 생명체의 뼈를 발견했습니다. 이 유골을 수습할 병사 몇 명을 보내주시겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP_CHOICE_1">
+      <Text>{5_Turns} 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP_CHOICE_2">
+      <Text>뼈는 성소에 보관되어 영구히 [ICON_PEACE] 신앙을 +1 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP_CHOICE_3">
+      <Text>과학자가 화석을 연구해 {2_InstantYield}을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP_CHOICE_4">
+      <Text>새 전시물로 인해 [ICON_CULTURE] 문화 +2와 [ICON_TOURISM] 관광 +1을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_HELP_CHOICE_5">
+      <Text>드러난 유골이 유물 사냥꾼들에게 알려져, {5_Turns} 동안 [ICON_STRENGTH] 기아가 25% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION_CHOICE_1">
+      <Text>해골을 우리 군대가 도시를 행진하며 전시하도록 해라. 용맹한 병사들이 한 처녀를 구하기 위해 이 괴물을 처치한 장대한 전투가 있었다는 것을 모두에게 알리자!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION_CHOICE_2">
+      <Text>이 고대의 창조물은 분명히 우리의 창조주의 미움을 샀다. 그것을 신전 아래에 봉인해라!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION_CHOICE_3">
+      <Text>내가 보기에 이건 공룡 같구나. 대학에 보내 분석하게 해라.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION_CHOICE_4">
+      <Text>공룡은 참으로 영감을 준다. 이 발견물을 중심으로 박물관에 새로운 전시회를 여는 것이 좋겠다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_AA_FARMBONES_DESCRIPTION_CHOICE_5">
+      <Text>지금 그 지역에 인력을 보낼 여유가 없구나. 해골은 조금 더 방치해야 할 것이다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

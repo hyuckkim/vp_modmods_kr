@@ -1,0 +1,98 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_WAR_CITY_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>30</RandomChance>
+			<RandomChanceDelta>2</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<CityEventArt>advisormilitary.dds</CityEventArt>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_WAR_CITY_GOOD</CityEventType>
+			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_WAR_CITY_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<RequiresWar>true</RequiresWar>
+			<EventBuildingClass>BUILDINGCLASS_AES_WAR_CITY_GOOD_DUMMY</EventBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_WAR_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_WAR_CITY_GOOD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_AES_WAR_CITY_GOOD_DUMMY</Type>
+			<DefaultBuilding>BUILDING_AES_WAR_CITY_GOOD_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_AES_WAR_CITY_GOOD_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_AES_WAR_CITY_GOOD_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AES_WAR_CITY_GOOD_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_AES_WAR_CITY_GOOD_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_YieldFromDeath>
+		<Row>
+			<BuildingType>BUILDING_AES_WAR_CITY_GOOD_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AES_WAR_CITY_GOOD_DUMMY</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>4</Yield>
+		</Row>
+	</Building_YieldFromDeath>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_DESCRIPTION">
+			<Text>Memorial To The Fallen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_HELP_CHOICE_1">
+			<Text>I've managed to convince the people in this city to dedicate a memorial to bolster our morale.
+
+			[NEWLINE][NEWLINE]When a Unit dies, gain [ICON_CULTURE] Culture and [ICON_PEACE] Faith in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>Memorial To The Fallen</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_GOOD_DUMMY">
+			<Text>Memorial to The Fallen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AES_WAR_CITY_GOOD_DUMMY_HELP">
+			<Text>To those that had lost their lives in the outcomes of war, we dedicate this memorial to the fallen and brethrens.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

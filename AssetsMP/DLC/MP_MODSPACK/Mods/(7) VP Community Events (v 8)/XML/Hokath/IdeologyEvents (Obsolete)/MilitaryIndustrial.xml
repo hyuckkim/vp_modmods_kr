@@ -1,0 +1,176 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_MOBILIZATION</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_1</Help>
+			<Expires>false</Expires>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_BASE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_BASE</RequiredAnywhereBuildingClass>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION">
+			<Text>Behemoth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP">
+			<Text>Our Military-Industrial Complex now has the authority it needs to grow, but it also needs resources. We only have so much to work with, what should be our priority?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_1">
+			<Text>All Lumber Mills generate +2 [ICON_PRODUCTION] Production, but Forest and Jungle Tiles produce -2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_2">
+			<Text>Military Bases give -2 [ICON_RESEARCH] Science but +4 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_3">
+			<Text>Military Bases give +4 [ICON_RESEARCH] Science but -2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_1">
+			<Text>There is much fuel to be had in the Forest and Jungles of our Empire. Cut down those trees and feed them to my war machine!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_2">
+			<Text>We spend too much of our precious materials in prototypes and mothballed mega-projects. Cut the funding to our scientists and hand it back to the industrialists. I want our Military Bases making weapons.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_3">
+			<Text>We could do much more with what we had if our technology were more advanced. Make sure out Military Bases know that research and development is a top priority!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

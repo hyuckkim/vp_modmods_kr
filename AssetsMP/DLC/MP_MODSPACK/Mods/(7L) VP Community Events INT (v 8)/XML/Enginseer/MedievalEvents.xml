@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_DESCRIPTION">
+      <Text>전염병 발생</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_DESCRIPTION_S">
+      <Text>{2_City}에 전염병이 발생했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_HELP">
+      <Text>이 도시의 무역이 우리의 도시들에 이국적인 질병을 퍼뜨린 것 같습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_1">
+      <Text>그렇다면.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_1_SUCCESSFUL">
+      <Text>{2_City}의 농작물이 죽어가고 식량 기근이 발생하자 시민들이 국가에 긴급 식량 지원을 요구하고 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_2">
+      <Text>임시로 무역 제한을 걸어 해결할 수 있을 것 같군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_PLAGUEPLAGUE_CHOICE_2_SUCCESSFUL">
+      <Text>{2_City}의 농작물이 죽어가고 식량 기근이 발생하자 당국이 신속하게 대응하여 무역로를 차단하고 기근의 원인을 막았습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_DESCRIPTION">
+      <Text>여기가 참 지루하군</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_DESCRIPTION_S">
+      <Text>{2_City}에서 축제가 열립니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_HELP">
+      <Text>이 도시 사람들은 지루해 보입니다. 아마도 주민들에게 축제를 통해 활력을 줄 수 있을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_1">
+      <Text>음식으로 문제를 해결해 보자...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_1_HELP">
+      <Text>[ICON_BULLET]5턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR].[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_1_SUCCESSFUL">
+      <Text>{2_City}에서 음식을 사용하여 시민들이 축제를 열었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_2">
+      <Text>연예인들을 고용해 보자...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+4 [ICON_HAPPINESS_1] 행복[ENDCOLOR] {5_Turns} 동안[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_DRUNKWLTKD_CHOICE_2_SUCCESSFUL">
+      <Text>{2_City} 정부가 서커스와 축제를 개최합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

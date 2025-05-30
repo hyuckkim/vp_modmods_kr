@@ -1,0 +1,185 @@
+<GameData>
+	<!-- Contraband Smuggler (Constable) -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_CONTRABAND_SMUGGLERS</Type>
+			<Description>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>4</NumChoices>
+			<RandomChance>20</RandomChance>
+			<IsOneShot>false</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_CONSTABLE</RequiredBuildingClass>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<HasTradeConnection>true</HasTradeConnection>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+			<CityEventChoice>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</CityEventChoice>
+			<CheckForActive>false</CheckForActive>
+			<CheckOnlyEventCity>true</CheckOnlyEventCity>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+		<Row>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+			<CityEventChoice>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_1</CityEventChoice>
+			<CheckForActive>false</CheckForActive>
+			<CheckOnlyEventCity>true</CheckOnlyEventCity>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+		<Row>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+			<CityEventChoice>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_4</CityEventChoice>
+			<CheckForActive>false</CheckForActive>
+			<CheckOnlyEventCity>false</CheckOnlyEventCity>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<BasicNeedsMedianModifier>-10</BasicNeedsMedianModifier>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>false</IsOneShot>
+			<BasicNeedsMedianModifier>15</BasicNeedsMedianModifier>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_4</Description>
+			<WLTKDTurns>15</WLTKDTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_CONTRABAND_SMUGGLERS</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_1</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<Points>-75</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_SpecialistYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_3</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_SpecialistYieldChange>
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_CONTRABAND_SMUGGLERS_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- Text  -->
+	<!-- Contraband Smuggler (Constable) -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION">
+			<Text>Black Market</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP">
+			<Text>The authorities have intercepted a small scale operation smuggling contraband into the city.[NEWLINE][NEWLINE]The Governor thinks they might be of use...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_1">
+			<Text>Seize {2_InstantYield} worth of goods. The City's [ICON_GREAT_MERCHANT] Merchants lose out. {4_GPChange}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_2">
+			<Text>Lose {2_InstantYield} Golden Age Points. The threshold for [ICON_STRENGTH] Distress is permentantly reduced by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_3">
+			<Text>Every [ICON_GREAT_MERCHANT] Merchant in the City generates +1 [ICON_GOLD] Gold, and the Constabulary generates +2 [ICON_PRODUCTION]. However, the [ICON_STRENGTH] Distress threshold increases by 15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_HELP_CHOICE_4">
+			<Text>Enter [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] in the city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_1">
+			<Text>No deals. The law is clear on their punishment.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_2">
+			<Text>Talk of corruption in my very presence?! I am the law. Find me a new Governor, and hang the old one beside these criminals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_3">
+			<Text>I agree. There will always be crime; it would be useful to have friends on the other side of the law.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CONTRABAND_SMUGGLERS_DESCRIPTION_CHOICE_4">
+			<Text>Banning these goods is, I think, a little old-fashioned. Pardon the smugglers and legalise these products.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

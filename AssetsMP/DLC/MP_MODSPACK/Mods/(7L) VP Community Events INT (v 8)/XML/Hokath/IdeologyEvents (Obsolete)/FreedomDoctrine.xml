@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S">
+      <Text>{1_Playername}가 외국의 반체제 인사들에게 손을 내밀었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1">
+      <Text>{1_Playername}는 추가적인 문화적 및 외교적 영향력을 얻었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S">
+      <Text>소문이 돌고 있습니다: {1_Playername}이 테러 조직에 자금을 지원하고 있다는군요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2">
+      <Text>독재와 질서 이데올로기의 제국은 점령된 도시에서의 파르티잔 공격에 취약해졌습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION">
+      <Text>자유의 동맹</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP">
+      <Text>최근의 비밀 작전 지원으로 인해 CI:7 내에서 여러 경쟁 팀이 생겼습니다. 각 팀은 추가 자금을 어떻게 사용할지에 대한 다른 아이디어를 가지고 있습니다.[NEWLINE][NEWLINE]당신의 판결은 무엇입니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1">
+      <Text>+4 [ICON_RES_PAPER] 종이를 얻습니다. 공항이 도시에서 [ICON_CULTURE] 문화 생산량을 5% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2">
+      <Text>다른 이데올로기의 [ICON_OCCUPIED] 점령 도시가 파르티잔 공격에 취약해집니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3">
+      <Text>모든 도시에서 [ICON_GOLD] 빈곤과 [ICON_RESEARCH] 문맹의 기준을 15% 낮춥니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1">
+      <Text>저는 오퍼레이션 골든 도어가 마음에 듭니다. 우리의 신념과 이데올로기의 순수성으로 적을 물리치겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2">
+      <Text>저는 오퍼레이션 핀쿠션이 마음에 듭니다. 자유를 갈망하는 이들에게 자유를 위한 무기를 제공하겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3">
+      <Text>저는 오퍼레이션 일루미나투스가 마음에 듭니다. 때로는 자유를 유지하기 위해 스스로의 도덕적 기준에 반하는 일을 해야 합니다. 우리는 지도자로서의 부담이 있는 반면, 행복한 대중은 순진하게 간섭할 수 없습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

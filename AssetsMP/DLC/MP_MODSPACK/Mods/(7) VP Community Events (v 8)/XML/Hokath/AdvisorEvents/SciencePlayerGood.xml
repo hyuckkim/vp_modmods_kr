@@ -1,0 +1,206 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>30</RandomChance>
+			<RandomChanceDelta>2</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_SOLAR_PLANT</RequiredAnywhereBuildingClass>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NUCLEAR_PLANT</RequiredAnywhereBuildingClass>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_4</Help>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	<EventChoice_CityYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>8</Yield>
+		</Row>
+	</EventChoice_CityYield>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_NUCLEAR_PLANT</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_NUCLEAR_PLANT</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION">
+			<Text>Unlimited Power</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP">
+			<Text>Our brightest minds have devised a technology by which we will be able to supply all of our energy needs! This is truely remarkable, heralding a new era for mankind.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>Desert Tiles yield +3 [ICON_GOLD] Gold and +3 [ICON_PRODUCTION].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>Solar panels are now able to self repair damage, increasing their lifespan outside of micromanaged plants a thousand fold! It will be the Desert that feeds the world's hunger for electricity!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_2">
+			<Text>Cities save {3_CityYieldGlobal}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>Advances in nanostructuring allow us to finally perform the water splitting reaction and subsequent recombination in a single cell. Fuel is no longer necessary for everyday appliances.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_3">
+			<Text>Nuclear Plants switch to fusion power: +15% [ICON_PRODUCTION] Production and +15% [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>No one ever thought it would come in time, but we finally have a fusion reactor that is self-sustaining and stable. The power of the sun in the palm of my hand.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_4">
+			<Text>All Cities produce {3_CityYieldGlobal}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>By some miracle, the most destructive entity in the universe - antimatter - has not only been accessed, but also tamed. It will be some time before it can be used anywhere but the most secure facilities, but a single matter-drive can provide power to every City on the grid!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

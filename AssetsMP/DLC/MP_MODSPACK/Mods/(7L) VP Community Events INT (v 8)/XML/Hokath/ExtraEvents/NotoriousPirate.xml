@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_DESCRIPTION">
+      <Text>악명 높은 해적</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_HELP">
+      <Text>악명 높은 해적이 우리 항구의 술집 중 하나에 자주 출몰합니다. 그의 존재가 많은 문제를 일으키고 있습니다.[NEWLINE][NEWLINE]지금까지 그를 붙잡은 사람은 없습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_DESCRIPTION_CHOICE_1">
+      <Text>내가 들어본 적 없는 해적입니다. 해군 관계자를 보내어 이 문제를 처리하게 하세요. worst case scenario는 무엇일까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_DESCRIPTION_CHOICE_2">
+      <Text>이 선원의 업적에 대해 많이 들었습니다. 그에게 이 면허장을 전달할 에이전을 보내세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_DESCRIPTION_CHOICE_3">
+      <Text>지역 어민들이 싫어할 수 있지만, 전설적인 술집이 있는 것도 나쁘지 않다고 생각합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_HELP_CHOICE_1">
+      <Text>{5_Turns} 동안 [ICON_RESISTANCE] 폭동 발생.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_HELP_CHOICE_2">
+      <Text>400 [ICON_GOLD] 골드를 사용하여 코르벳을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_HELP_CHOICE_3">
+      <Text>5턴 동안 항구에서 +2 [ICON_CULTURE] 문화와 +4 [ICON_TOURISM] 관광을 얻지만, 인근 어선은 -3 [ICON_FOOD] 식량을 잃습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

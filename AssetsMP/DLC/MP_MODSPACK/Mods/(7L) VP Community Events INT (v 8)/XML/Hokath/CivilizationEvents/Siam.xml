@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 정치 인턴십</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 유명한 도시 국가 인물을 '인턴'으로 받아들입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 백상아리</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 상아 보호를 조직합니다, 시암 내외에서.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 도자기 신탁 기금</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 도자기 시장을 강제로 독점합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 비하라</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 새로운 유형의 스투파 청사진을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 조상 통치 자손</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 시암 내 상인들에 대한 통제력을 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 새로운 동맹</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 시암의 적들에 대한 동맹을 조직하여 그들의 반대를 비인간화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION">
+      <Text>부처님의 뒷면을 금칠하다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP">
+      <Text>폐하, 사절들이 도착했습니다. 정원에서 기다리고 있습니다. 말씀해 주십시오, 폐하, 도움이 필요하십니까? 아니면 그들이 협조할 기회를 주실 것입니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 새로운 문화적 관행을 도입합니다. 두 명의 사절이 [ICON_CAPITAL] 수도에 생성되어 소식을 전파합니다. [ICON_RES_IVORY] 상아 1개를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 도자기 산업에 투자합니다. [ICON_RES_PORCELAIN] 도자기 3개를 받고, 모든 작업장이 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_4">
+      <Text>{1_YieldCost}로 비하라 건물을 잠금 해제합니다. 스투파는 +2 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_5">
+      <Text>도시가 생성합니다: 모든 도시 국가 친구당 +33% [ICON_GREAT_DIPLOMAT] 위대한 외교관 포인트, +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_6">
+      <Text>[ICON_SPY] 스파이가 행동을 완료할 때 [ICON_PRODUCTION] 생산을 [ICON_CAPITAL] 수도에서 받습니다. 기차역이 +10 [ICON_PRODUCTION] 생산과 +10 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_1">
+      <Text>아, 아무런 문제도 예상하지 않습니다. 이번에는 인질을 요청할 뿐입니다. 일처리를 매끄럽게 해주십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_2">
+      <Text>*다양한 도시 국가의 엘리트들이 상아에 매료되어 코끼리가 지역적으로 멸종되었습니다*[NEWLINE]우리는 멸종 위기에 처한 종의 보존의 중요성에 대해 논의할 것입니다. 코끼리와... 사절들에 대해서도...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_3">
+      <Text>*상칼록 도자기가 이웃 나라의 법정에서 매우 인기를 끌었습니다*[NEWLINE]사실, 그들이 우리 상품을 사러 온 것입니다! 이번에는 자발적으로!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_4">
+      <Text>*지역 문화가 독특한 스투파를 개발하여 우리의 종교 계급의 주목을 받았습니다*[NEWLINE]금 상자를 가져오십시오. 이제 우리는 그들의 스투파 설계도 위치에 대해 논의할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_5">
+      <Text>*우리의 전통적인 수입원이 현대 국가의 요구를 충족할 수 없게 된 것 같습니다*[NEWLINE]과거에 차이가 있었던 것은 사실이지만, 그것을 뒤로하고 점점 더 가까운 연합을 논의할 때입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_6">
+      <Text>우리는 수년 동안 우리가 장난감이 아니라는 것을 분명히 해왔습니다. 그럼에도 불구하고 적들이 드러났습니다. 이 훌륭한 신사들의 도움으로, 우리는 그들을 지구에서 지워버릴 동맹을 조직할 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY">
+      <Text>조상 통치 자손</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_HELP">
+      <Text>모든 도시 국가 친구당 +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수. +33% [ICON_DIPLOMAT] 위대한 외교관 생성.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2">
+      <Text>새로운 동맹</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2_HELP">
+      <Text>[ICON_GREAT_WORK] 위대한 작품을 훔치거나 [ICON_RESEARCH] 기술을 획득하거나 도시 국가 쿠데타를 완료할 때 +150 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨). 고급 행동을 완료할 때 +37.5 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨).</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_STUPA">
+      <Text>비하라</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_STUPA_STRATEGY">
+      <Text>시암 고유의 이벤트 선택으로 구매할 수 있습니다. 스투파와 상호 배타적입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

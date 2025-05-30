@@ -1,0 +1,60 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE</Type>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP</Help>
+			<NumChoices>2</NumChoices>
+			<RandomChance>70</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1</Help>
+			<EventDuration>100</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2</Description>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION">
+			<Text>A Single Light Of Science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP">
+			<Text>Your Scientific Advisor, after months of absence, has finally returned to the council. He has outlined several highly speculative research projects to be assigned to our best and brightest.[NEWLINE][NEWLINE]He awaits your decision.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1">
+			<Text>For {4_Turns}, significant events arising from these projects may occur.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2">
+			<Text>Business continues as usual.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1">
+			<Text>I feel the hand of genius in this work. We will let nothing stand in the way of Science!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2">
+			<Text>The good doctor's absence has already caused quite enough trouble! I cannot afford to redirect our efforts at this crucial time.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

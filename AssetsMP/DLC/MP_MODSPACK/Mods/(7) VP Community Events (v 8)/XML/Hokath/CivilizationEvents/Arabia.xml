@@ -1,0 +1,457 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_ARABIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_ARABIA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AMPHITHEATER</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MINT</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_ARABIA_UE_DUMMY</EventBuildingClassGlobal>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+			<ReligiousUnrestModifierGlobal>25</ReligiousUnrestModifierGlobal>
+			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_ARABIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<ImprovementAnywhereRequired>IMPROVEMENT_WELL</ImprovementAnywhereRequired>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_ARABIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ARABIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_ARABIA_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ARABIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_ARABIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_ARABIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_ARABIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NukeImmune>true</NukeImmune>
+			<ExtraLuxuries>true</ExtraLuxuries>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+	</Buildings>
+	<Building_YieldFromPurchase>
+		<Row>
+			<BuildingType>BUILDING_ARABIA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>25</Yield>
+		</Row>
+	</Building_YieldFromPurchase>
+	
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+			<Quantity>8</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>250</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>250</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Sharif Titlement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} bestows the title of Sharif upon an estranged prince!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription} Incorporates Bedouin Tribes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} negotiates the inclusion of the Bedouin tribes into his Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Grand Souk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} greatly expands the region of the Capital given over to the Bazaar!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Religious Institution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} hands over control of academical institutions to the clergy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Religious Authority</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} appoints religious leaders to key legal positions!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Founding of OPEC</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} begins to hoard oil reserves, driving up the price massively on a world-scale level.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION">
+			<Text>No God But God</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP">
+			<Text>Caliph, the ulama have reviewed your submission, and are willing to hear you speak on the matter. My King, they request your presence in the council chamber immediately.[NEWLINE]They will surely ratify your law, for it is just and holy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_2">
+			<Text>Incorporate native peoples. Desert Tiles yield +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production. Oasis Tiles yield +3 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_3">
+			<Text>The Grand Souk is erected in the [ICON_CAPITAL] Capital. Gain an additional copy of every Luxury Resource in the City, and convert 25% of [ICON_GOLD] Gold to [ICON_PEACE] Faith when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_4">
+			<Text>Exert {1_YieldCost} worth of cultural influence to bring your centres of learning under religious leadership. These Universities and Academies yield +4 [ICON_PEACE] Faith and +1 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_5">
+			<Text>Leverage {1_YieldCost} to replace secular legal systems with those administered by the ulama. Constabularies and Police Stations yield +2 [ICON_PEACE] Faith. Everywhere, [ICON_STRENGTH] Distress thresholds are reduced by 5%. However, the [ICON_RELIGION] Religious Division threshold is increased by +25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_6">
+			<Text>Bring [ICON_RES_OIL] Oil production under political control. Gain 8 copies of [ICON_RES_OIL] Oil, and Wells and Offshore Platforms produce -2 [ICON_PRODUCTION] Production in order to generate +5 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*A member of your family who found himself on the wrong side of the clergy has repented his sins. You have begged to return his title to him*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>We were once all men of the desert, and though we now have this sophisticated civilization, they are yet to be brought into the light![NEWLINE]*The council accedes to your plans on the basis that they are integrated into our culture and faith*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>The Capital's Bazaar is a great source of wealth, but it cannot grow under current religious laws.[NEWLINE]*The council accept the necessity of the Bazaar, and will relax the forced closure at prayer time - only to foreign merchants*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>Academic institutions are currently private affairs, it is in the interests of everyone to require a certain amount of oversight[NEWLINE]*The council agrees. These institutions will be overseen by senior clerics, under the strictest of supervision*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>The plans of the Palace will help rehabilitate criminals and bring our sprawling cities into a new era of prosperity![NEWLINE]*The council considers the reduction of distress very important also. However, we have an alternative methodology...*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>Currently, Oil is partially owned by private interests. If the clergy were to validate the crown in our efforts to ascertain... stewardship over these sources, then-[NEWLINE]*The council is sympathetic to the crown in this matter. We look forward to... continued prosperity*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY">
+			<Text>The Grand Souk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY_HELP">
+			<Text>Receive an additional copy of every Luxury Resource within the city and converts 25% of [ICON_GOLD] Gold to [ICON_PEACE] Faith on this city's purchases.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

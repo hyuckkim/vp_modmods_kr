@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 새로운 대제관</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 대제관을 처형합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 카라반세라이 네트워크</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 카라반세라이 네트워크를 구축합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 종교 규제</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 종교 법에 따라 비즈니스 규정을 도입합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 사법 권한 이양</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 종교 소수 집단 내의 불만에 대한 사법 업무를 이양합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 조공 개혁</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 신하들에게 추가 조공을 요구합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 술탄 폐지</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 현대화 개혁을 위해 역사적인 조언자 회의를 해체합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION">
+      <Text>장미가 가시 없이 존재할 수 있는가?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP">
+      <Text>폐하, 대제관이 의심스러운 활동을 수행하고 있다는 보고를 받았습니다.[NEWLINE]저는 실크 로프를 추천합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 투자하여 모든 도시에 카라반세라이를 설치합니다. 카라반세라이는 +1 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 생산합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3">
+      <Text>공공장소에서 {1_YieldCost} 가치의 종교 관행을 시행합니다: 목욕탕은 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생산합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4">
+      <Text>종교 법을 시행하기 위해 {1_YieldCost}를 사용합니다. 도시마다 모든 종교에 대해 +3 [ICON_FOOD] 식량과 +3 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5">
+      <Text>{1_YieldCost}를 활용하여 신하들에게 조공을 요구합니다. 궁전은 모든 도시에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 생성합니다. 모든 배는 보급 프로모션을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 사용하여 사회 및 교육 개혁을 가져옵니다. [ICON_RELIGION] 종교 부서의 문턱이 50% 줄어들고 [ICON_RESEARCH] 문맹 문턱이 5% 줄어듭니다. 20턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 진입합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1">
+      <Text>신은 자비롭습니다. 그러나 나는 그렇지 않습니다. 나를 대체할 사람을 찾으십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2">
+      <Text>*대제관이 외교 조언자와의 계획에서 궁전의 금을 무역 경로에 사용하는 문제로 갈등을 빚었습니다*[NEWLINE]외교 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3">
+      <Text>*경제 조언자가 대제관이 종교 법을 비즈니스에 적용하지 않은 것에 대해 격노했다고 알려졌습니다*[NEWLINE]경제 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4">
+      <Text>*과학 조언자가 사법 권한을 종교 소수자에게 이양하려는 계획이 대제관을 적대시하게 만들었다는 소문이 돌았습니다*[NEWLINE]과학 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5">
+      <Text>*대제관이 군사 조언자가 전쟁 중 우리의 속국 권한을 활용하려는 계획을 견딜 수 없었다고 합니다*[NEWLINE]군사 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6">
+      <Text>충분하다! 더 이상의 음모, 불화, 반란을 용납하지 않겠습니다. 대제관들을 해체하십시오. 모든 대제관들을 처형하십시오. 이번 달 말까지 새로운 헌법을 작성하겠습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY">
+      <Text>사법 권한 이양</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP">
+      <Text>도시 내 모든 종교마다 +3 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2">
+      <Text>신하의 조공</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP">
+      <Text>궁전에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 제공합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

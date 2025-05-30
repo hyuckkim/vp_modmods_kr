@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION">
+      <Text>거대한 기계</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP">
+      <Text>우리의 군사-산업 복합체는 이제 성장할 권한을 얻었지만, 자원도 필요합니다. 사용할 수 있는 자원이 제한되어 있습니다. 우리의 우선사항은 무엇이어야 합니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_1">
+      <Text>모든 제재소가 +2 [ICON_PRODUCTION] 생산을 생성하지만, 숲과 정글 타일은 -2 [ICON_FOOD] 식량을 생산합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_2">
+      <Text>군사 기지는 -2 [ICON_RESEARCH] 과학을 제공하지만 +4 [ICON_PRODUCTION] 생산을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_HELP_CHOICE_3">
+      <Text>군사 기지는 +4 [ICON_RESEARCH] 과학을 제공하지만 -2 [ICON_PRODUCTION] 생산을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_1">
+      <Text>우리 제국의 숲과 정글에는 많은 연료가 있습니다. 나무를 베어내어 내 전쟁 기계에 공급하라!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_2">
+      <Text>우리의 귀중한 자원을 프로토타입과 보관된 거대 프로젝트에 너무 많이 소비하고 있습니다. 과학자들에게 자금을 줄이고 산업가들에게 돌려주십시오. 군사 기지에서 무기를 제작하도록 하겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_MILITARY_INDUSTRIAL_DESCRIPTION_CHOICE_3">
+      <Text>우리 기술이 더 발전한다면 현재 가진 자원으로 훨씬 더 많은 일을 할 수 있습니다. 군사 기지가 연구 개발이 최우선이라는 것을 알고 있도록 하십시오!</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

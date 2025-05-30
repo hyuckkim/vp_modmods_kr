@@ -1,0 +1,274 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT</Type>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>5</NumChoices>
+			<RandomChance>40</RandomChance>
+			<IsOneShot>false</IsOneShot>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NearbyTerrain>TERRAIN_TUNDRA</NearbyTerrain>
+			<MinimumCityPopulation>10</MinimumCityPopulation>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_1</Help>
+			<RiverOnly>true</RiverOnly>
+			<EraScaling>true</EraScaling>
+			<EventDuration>40</EventDuration>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_2</Description>
+			<CoastalOnly>true</CoastalOnly>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_3</Description>
+			<LocalResourceRequired>RESOURCE_SALT</LocalResourceRequired>
+			<EraScaling>true</EraScaling>
+			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_4</Description>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<LocalResourceRequired>RESOURCE_COAL</LocalResourceRequired>
+			<EraScaling>true</EraScaling>
+			<EventDuration>40</EventDuration>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_COLD_FRONT_CHOICE_5</Type>
+			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_5</Description>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>40</EventDuration>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_ImprovementDestructionRandom>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<Number>1</Number>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<Number>1</Number>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<Number>1</Number>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
+			<Number>1</Number>
+		</Row>
+	</CityEventChoice_ImprovementDestructionRandom>
+	<CityEventChoice_FreeUnits>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
+			<UnitType>UNIT_WORKER</UnitType>
+			<Quantity>1</Quantity>
+		</Row>
+	</CityEventChoice_FreeUnits>
+
+	<CityEventChoice_CityYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</CityEventChoice_CityYield>
+	<CityEventChoice_ImprovementYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</CityEventChoice_ImprovementYieldChange>
+	<CityEventChoice_SpecialistYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_SpecialistYieldChange>
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- Text  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION">
+			<Text>Cold Front</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP">
+			<Text>Noble leader, I bring you troubling news. The winters near our City have grown harsher of late, and our people who keep track of these things predict a particularly cold snap is on its way.[NEWLINE]We have some ideas, Your Wonderousness. How should we deal with this issue?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_1">
+			<Text>The City generates {3_CityYield} for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_2">
+			<Text>The storm pillages up to one of each: Farm, Lumbermill, Mine, and Quarry. Receive a free Worker.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_3">
+			<Text>Villages and Towns generate +1 [ICON_PRODUCTION] Production but lose -1 [ICON_FOOD] Food for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_4">
+			<Text>Villages and Towns generate +2 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold but lose -2 [ICON_FOOD] Food for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_5">
+			<Text>Every [ICON_GREAT_ENGINEER] Engineer in the City generates +2 [ICON_FOOD] Food, at the cost of {3_CityYield} in the City, all for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_1">
+			<Text>People are ice-skating on the River for the first time in living memory. How quaint. Are these extensive contingencies really necessary?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_2">
+			<Text>I'm very concerned by the weather system's interaction with the freezing ocean. This is worse than any of you thought. We need Workers here to brace ourselves against the coming storm.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_3">
+			<Text>The Science Advisor's scheme whereby our local stockpile of Salt could be used to secure some of our low-level infrastructure from this inclement weather is an elegant solution. Impliment that!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_4">
+			<Text>These are excellent plans. With our Promethean ability to generate heat, we should be able to warm every home in three Tiles for the whole winter!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_5">
+			<Text>So you are telling me that with our expertise in plumbing and manufacturing that we can fit every home with a central heating system? Get on that immediately!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

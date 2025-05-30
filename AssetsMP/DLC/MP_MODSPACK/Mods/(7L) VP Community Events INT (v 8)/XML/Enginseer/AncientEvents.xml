@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_DESCRIPTION">
+      <Text>불이야! 불이야!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_HELP">
+      <Text>도시에 불이 났습니다! 아무 조치를 취하지 않으면 큰 불이 될 것 같습니다. 어떻게 해야 할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_1">
+      <Text>모두 대피시키도록 하게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]건물이 파괴될 가능성이 있습니다![ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_2">
+      <Text>어떤 대가를 치르더라도 도시를 구하도록 하게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]인구가 1명 감소할 가능성이 있습니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_12_DISABLED">
+      <Text>바보같이 굴지 말게. 가까운 물을 이용해 불을 끌 수 있네!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_3">
+      <Text>강으로 가보게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_4">
+      <Text>우물로 가보게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_34_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]도시가 화재로부터 구해집니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_FIREFIRE_CHOICE_34_DISABLED">
+      <Text>그런 것들이 없지 않은가.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_DESCRIPTION">
+      <Text>정글 열병!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_HELP">
+      <Text>빌어먹을 모기들. 빌어먹을 이 저주!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_1">
+      <Text>어쩔 수 없지.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]인구가 1명 감소합니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_2">
+      <Text>격리를 해야겠군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]+2 [ICON_HAPPINESS_3] 지역 불행도가 {5_Turns} 동안 증가합니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_3">
+      <Text>아마도 저주에 대한 치료법을 주장하는 약사에게 가보는 게 좋겠군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_JUNGLEFEVER_CHOICE_3_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_DESCRIPTION">
+      <Text>눈에는 눈</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_HELP">
+      <Text>살인과 도둑질 혐의로 공정한 재판을 받지 못했다고 믿는 범죄자들이 현재 공개 재판을 받고 있습니다. 시 당국이 개입하여 당신의 지도를 요청합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_1">
+      <Text>눈에는 눈이네!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_1_HELP">
+      <Text>[ICON_BULLET]25% 확률로 짧은 [COLOR_POSITIVE_TEXT][ICON_HAPPINESS_1] 국왕 경축일![ENDCOLOR]이 발발합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_2">
+      <Text>신의 개입으로만 구원받을 수 있겠군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_2_DISABLED">
+      <Text>신의 개입이란 말인가?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_3">
+      <Text>눈에는 눈은 모두를 눈멀게 할 뿐이네.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_EYEFOREYE_CHOICE_3_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+2 [ICON_HAPPINESS_1] 행복도가 {5_Turns} 동안 증가합니다.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]짧은 [ICON_RESISTANCE] 저항 발생.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_DESCRIPTION">
+      <Text>이국적인 사치품</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_HELP">
+      <Text>정찰병들이 운송이 어렵고 재생산이 어려운 이국적인 사치품을 발견했지만, 비용을 지불하면 그 풍부한 혜택을 누릴 수 있을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_CHOICE_1">
+      <Text>안타깝지만 불가능하군. 대신 정찰병을 훈련시켜 다른 사치품을 찾도록 하게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]정찰 유닛이 +10 XP를 획득합니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_CHOICE_2">
+      <Text>가져오게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+3 [ICON_HAPPINESS_1] 행복[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_YieldCost}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_LOSTLUXURIES_CHOICE_2_DISABLED">
+      <Text>금이 부족하군. 나중에 정찰병에게 다른 사치품을 찾으라고 해야겠어.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

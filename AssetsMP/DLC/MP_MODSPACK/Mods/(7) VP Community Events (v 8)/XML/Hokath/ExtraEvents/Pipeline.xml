@@ -1,0 +1,141 @@
+<GameData>
+	<!-- Pipeline -->
+	<Events>
+		<Row>
+			<Type>EVENT_PIPELINE</Type>
+			<Description>TXT_KEY_EVENT_PIPELINE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_PIPELINE_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<!-- Because it enables a bad event -->
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>true</IsOneShot>
+			<RequiredIdeology>POLICY_BRANCH_AUTOCRACY</RequiredIdeology>
+			<RandomChanceDelta>1</RandomChanceDelta>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_PIPELINE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_1</Help>
+		</Row>
+		<Row>
+			<Type>EVENT_PIPELINE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_2</Description>
+			<EventDuration>20</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_PIPELINE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_3</Description>
+			<ObsoleteTech>TECH_REFRIGERATION</ObsoleteTech>
+			<EventTech>TECH_REFRIGERATION</EventTech>
+		</Row>
+	</EventChoices>
+	<EventChoice_EventLinks>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_2</EventChoiceType>
+			<EventChoiceLinker>EVENT_PIPELINE_CHOICE_2</EventChoiceLinker>
+			<CheckForActive>false</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</EventChoice_EventLinks>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_PIPELINE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_PIPELINE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_PIPELINE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_PIPELINE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_PIPELINE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PIPELINE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	
+	<!-- Text  -->
+	<!-- Pipeline -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PIPELINE_CHOICE_1_S">
+			<Text>A report has shown that the recently-constructed trans-continental pipeline was built with major structural flaws.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PIPELINE_CHOICE_1">
+			<Text>All [ICON_RES_OIL] Oil Wells are vulnerable to malfunction while an investigation takes place.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_DESCRIPTION">
+			<Text>In the Pipeline</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_HELP">
+			<Text>One of our operatives has attained a high ranking position in a foreign Oil company.[NEWLINE][NEWLINE]How should we use our asset?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_1">
+			<Text>Gain +4 [ICON_RES_OIL] Oil. Customs Houses increase [ICON_GOLD] Gold in Cities by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_2">
+			<Text>Temporarily, Foreign [ICON_RES_OIL] Oil resources will be likely to explode.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_HELP_CHOICE_3">
+			<Text>Gain the [COLOR_POSITIVE_TEXT]Refrigeration[ENDCOLOR] Technology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_1">
+			<Text>With influence over trading, we should be able to make sure some of that [ICON_RES_OIL] Oil finds its way to our ports.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_2">
+			<Text>The asset is well-placed to conduct a strategic piece of industrial espionage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PIPELINE_DESCRIPTION_CHOICE_3">
+			<Text>His report details plans for the construction of large off-shore platforms. Get me those schematics!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

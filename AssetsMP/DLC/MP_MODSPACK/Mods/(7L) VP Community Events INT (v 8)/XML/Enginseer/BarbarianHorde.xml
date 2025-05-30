@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_DESCRIPTION">
+      <Text>야만인의 습격!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_HELP">
+      <Text>야만인들이 도시를 습격하여 집을 불태우고, 물을 오염시키며, 여인들을 납치하고 있습니다! 어떻게 해야 할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_CHOICE_1">
+      <Text>일어나 그들을 처단하라!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_CHOICE_1_HELP">
+      <Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]도시 근처에 야만인 2명이 나타납니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_CHOICE_2">
+      <Text>그냥 당하게 내버려 두자.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{5_Turns} 동안 지역 불행도가 +4 [ICON_HAPPINESS_3] 증가합니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_DESCRIPTION">
+      <Text>귀족들의 반란!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_HELP">
+      <Text>귀족들이 정부에 항의하며, 정부 개혁을 요구하면서 다른 이들도 동참하도록 부추기고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_CHOICE_1">
+      <Text>정부 개혁이라니? 웃기는군!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_CHOICE_1_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]도시 근처에 반란군이 나타납니다![ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_CHOICE_2">
+      <Text>조금의 개혁은 해도 되겠지...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID2_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_DESCRIPTION">
+      <Text>노동자들의 파업!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_HELP">
+      <Text>언제나 그렇듯이, 지도자님, 그 노동자들은 또 파업을 벌이고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_CHOICE_1">
+      <Text>파업하게 놔두게. 곧 굴복할 걸세.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_CHOICE_1_HELP">
+      <Text>[ICON_BULLET]도시가 [COLOR_NEGATIVE_TEXT]혁명 상태에 들어갈 수 있으며 {5_Turns} 동안 파업이 발생할 수 있습니다.[ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_CHOICE_2">
+      <Text>그래? 파업 파괴자들을 고용하게!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_RAIDRAID3_CHOICE_2_HELP">
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{2_InstantYield}[ENDCOLOR]</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

@@ -1,0 +1,179 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_MUSKETEERS</Type>
+			<Description>TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_MUSKETEERS_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<IsOneShot>true</IsOneShot>
+			<CityHasPlayerMajorityReligion>true</CityHasPlayerMajorityReligion>
+			<CapitalOnly>true</CapitalOnly>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<RequiresWar>true</RequiresWar>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_MUSKETEERS_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_1</Help>
+			<RequiresGarrison>true</RequiresGarrison>
+			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_MUSKETEERS_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_2</Description>
+			<RequiredBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredBuildingClass>
+			<ConvertToPlayerMajorityReligionPercent>100</ConvertToPlayerMajorityReligionPercent>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_MUSKETEERS_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_3</Description>
+			<RequiredBuildingClass>BUILDINGCLASS_CONSTABLE</RequiredBuildingClass>
+			<EventBuildingClass>BUILDINGCLASS_MUSKETEERS_DUMMY</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_MUSKETEERS_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_4</Description>
+			<RequiresWLTKD>true</RequiresWLTKD>
+			<WLTKDTurns>25</WLTKDTurns>
+			<EventDuration>25</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_MUSKETEERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_MUSKETEERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_MUSKETEERS</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_MUSKETEERS</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MUSKETEERS_DUMMY</Type>
+			<DefaultBuilding>BUILDING_MUSKETEERS_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MUSKETEERS_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_MUSKETEERS_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_MUSKETEERS_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_MUSKETEERS_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>		
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+	</Buildings>
+	<Building_YieldFromSpyDefense>
+		<Row>
+			<BuildingType>BUILDING_MUSKETEERS_DUMMY</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_YieldFromSpyDefense>
+	
+	<CityEventChoice_FreeUnits>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_1</CityEventChoiceType>
+			<UnitType>UNIT_FRENCH_MUSKETEER</UnitType>
+			<Quantity>3</Quantity>
+		</Row>
+	</CityEventChoice_FreeUnits>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_2</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GRAND_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MUSKETEERS_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- Text -->
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION">
+			<Text>All For One</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP">
+			<Text>In the midsts of this war, there are rumours that your consort has not only been unfaithful, but is actively fraternising with the enemy![NEWLINE][NEWLINE]When they took their own life this morning, the court was in shock. However, we have just discovered that only thanks to the combined efforts of the Crown's many agents were critical state secrets kept from enemy hands! The mastermind of the plot? Your paramour!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_1">
+			<Text>3 Musketeers are formed near the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_2">
+			<Text>The City converts to your [ICON_RELIGION] Religion and the Grand Temple yields +3 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_3">
+			<Text>When an enemy [ICON_SPY] Spy is killed receive [ICON_GOLDEN_AGE] Golden Age Points scaling with era and the level of the Spy killed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP_CHOICE_4">
+			<Text>The [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] is extended by {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_1">
+			<Text>The valour of my soldiers was instrumental in thwarting this plot. See to it they are given promotions befitting their deeds!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_2">
+			<Text>It was only due to the presence of mind of my priest and advisor that the enemy agents were apprehended. Reward him with whatever he desires.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_3">
+			<Text>Thankfull our agents were superior to those of the enemy. With our agents, we are invincible!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION_CHOICE_4">
+			<Text>For the servant to renounce that traitor and bring this theft to our attention shows great patriotism and bravery! I must be so wonderful?! We must extend the celebrations!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MUSKETEERS_DUMMY">
+			<Text>All for One!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MUSKETEERS_DUMMY_HELP">
+			<Text>Receive [ICON_GOLDEN_AGE] Golden Age Points scaling with era and the level of the Spy killed.</Text>
+		</Row>
+		
+	</Language_en_US>
+</GameData>

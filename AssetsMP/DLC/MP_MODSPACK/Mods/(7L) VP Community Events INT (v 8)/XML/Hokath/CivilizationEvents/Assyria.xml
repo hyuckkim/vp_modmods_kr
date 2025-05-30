@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 보물 보상</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1">
+      <Text>{3_PlayerName}이 보물 사냥꾼에게 영광과 부를 보상합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 수륙 양용 업적</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2">
+      <Text>{3_PlayerName}이 제국의 기념비에 걸쳐 놀라운 군사적 업적을 찬양하며, 군사들에게 영감을 줍니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 유물 발견</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3">
+      <Text>{3_PlayerName}이 해독 불가능하다고 여겨졌던 고대 문서를 재발견합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 종교적 피난처</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4">
+      <Text>{3_PlayerName}이 고향의 파괴를 피해 도망친 사람들에게 피난처를 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 고대 사원 발견</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5">
+      <Text>{3_PlayerName}이 고대 아시리아 신앙을 되살리게 하는 고대의 대규모 구조물을 발견합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 용기의 날개</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6">
+      <Text>{3_PlayerName}이 대담하고 열정적인 엘리트 공수부대 프로그램을 조직합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION">
+      <Text>운명의 판석</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP">
+      <Text>아슈르의 축복이 당신의 매일의 삶에 함께하기를 바랍니다, 위대한 분이여. 연구를 방해하게 되어 죄송합니다만, 중요한 일이 발생했습니다.[NEWLINE][NEWLINE]운명의 판석과 관련된 일입니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_2">
+      <Text>기념비가 +1 [ICON_PRODUCTION] 생산력을 제공합니다. 모든 적합한 유닛이 수륙 양용 승진을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_3">
+      <Text>{2_InstantYield}를 지불합니다. 사원과 성스러운 장소가 +3 [ICON_RESEARCH] 과학을 생산하며, 도서관과 학원이 +3 [ICON_PEACE] 신앙을 생산합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_4">
+      <Text>{2_InstantYield}를 지불하여 세파르딕 시나고그 건물을 잠금 해제합니다. 다른 시나고그는 +1 [ICON_CULTURE] 문화를 얻으며 +2 [ICON_PEACE] 신앙을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_5">
+      <Text>발견으로 인해 모든 도시에 15턴의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]이 시작됩니다. 랜드마크는 +5 [ICON_RESEARCH] 과학, [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산량을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_6">
+      <Text>수도 [ICON_CAPITAL]에서 4명의 공수부대를 모집합니다. 모든 정찰 유닛이 용기의 날개 승진을 획득합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_1">
+      <Text>*모험가가 판석의 조각을 발견했습니다*[NEWLINE]이 유물에 대해 얻은 아름다운 보상이 모두에게 알려지도록 하세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_2">
+      <Text>*우리의 가장 용감한 영웅이 흐르는 물을 건너 적의 잠든 곳에 결정적인 타격을 가했습니다. 이것이 예언된 대로!*[NEWLINE]제국의 모든 도시에서 우리의 운명을 알리는 증거를 새기도록 하세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_3">
+      <Text>*고대 언어의 선두 전문가가 잊혀진 예언과 기록을 해독할 수 있다고 믿고 있습니다.[NEWLINE]판석의 더 많은 위치가 이 문서에 숨겨져 있다면, 반드시 알아야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_4">
+      <Text>*한때 적이었던 부족이 정복자들에게서 도망쳐 피난처를 요청합니다. 이것이 약속된 대로!*[NEWLINE]신의 뜻에 따라, 이들을 우리 땅에 정착시켜야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_5">
+      <Text>*최근의 발굴에서 역사 속에 사라졌던 대규모 사원 복합체가 발견되었습니다.*[NEWLINE]이 성소와 다른 신전들을 복원하십시오. 그들의 집이 재건될 때, 신들은 돌아올 것입니다. 그렇게 기록되어 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_6">
+      <Text>*기술 발전 덕분에 우리의 병사들이 하늘에서 날아 떨어질 수 있게 되었습니다.*[NEWLINE]아슈르의 화살이 태양의 복수를 가져옵니다... 이제는 운명을 이루어야 할 때입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR">
+      <Text>용기의 날개</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR_HELP">
+      <Text>상처를 입은 적에게 +25% [ICON_STRENGTH] 전투력을 제공합니다. 적이 후퇴하도록 강요할 수 있으며, 후퇴하지 못할 경우 추가 피해를 줍니다. 아시리아의 이벤트를 통해서만 부여됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE">
+      <Text>세파르딕 시나고그</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE_STRATEGY">
+      <Text>아시리아의 독특한 이벤트 선택으로 구매할 수 있습니다. 일반 시나고그와 상호 배타적입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

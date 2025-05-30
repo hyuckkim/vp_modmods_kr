@@ -1,0 +1,433 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_VENICE_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>15</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<!--Venice has a special exception of only needing 15 National Population, but still has to get the classical era.-->
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_VENICE</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_GUILDS</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_GARDEN</EventBuildingClassGlobal>
+			<AffectsCoastalCitiesOnly>true</AffectsCoastalCitiesOnly>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<FreeUnitsTechAppropriate>2</FreeUnitsTechAppropriate>
+			<EventDuration>-1</EventDuration>
+			<WLTKDTurns>10</WLTKDTurns>
+		</Row>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventBuildingClassGlobal>BUILDINGCLASS_VENICE_UE_DUMMY</EventBuildingClassGlobal>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MUSICIANS_GUILD</RequiredAnywhereBuildingClass>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FACTORY</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_VENICE_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventBuildingClassGlobal>BUILDINGCLASS_VENICE_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_VENICE_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_3</EventChoiceType>
+			<UnitType>UNIT_PIONEER</UnitType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<Civilization_CityNames>
+		<Row>
+			<CivilizationType>CIVILIZATION_VENICE</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_HERACLEA</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_VENICE</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_MALAMOCCO</CityName>
+		</Row>
+	</Civilization_CityNames>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_VENICE_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_VENICE_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_VENICE_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_VENICE_UE_DUMMY_2</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_VENICE_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_VENICE_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_VENICE_UE_DUMMY</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+		<Row>
+			<Type>BUILDING_VENICE_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_VENICE_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_VENICE_UE_DUMMY_2</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+	</Buildings>
+	<Building_YieldFromPurchase>
+		<Row>
+			<BuildingType>BUILDING_VENICE_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_YieldFromPurchase>
+	<Building_YieldChangesPerPop>
+		<Row>
+			<BuildingType>BUILDING_VENICE_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</Building_YieldChangesPerPop>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_VENICE_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_VENICE_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_VENICE_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+
+
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_VENETIAN_GALLEASS</UnitType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<ResourceType>RESOURCE_GLASS</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_VENICE_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Grand Invitation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_1">
+			<Text>{3_PlayerName} invites a popular Great Person to take up residence in Venice!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Grand Canals</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_2">
+			<Text>{3_PlayerName} uses huge ships to rebuild his Coastal Cities in the image of Venice!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Heraclea</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_3">
+			<Text>{3_PlayerName} retells a tale of Heraclea, a land founded by a mythological figure Heracules!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Patronage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_4">
+			<Text>{3_PlayerName} personally leads the patronage of art in Venice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Glasswork</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_5">
+			<Text>{3_PlayerName} protects the traditional Glass industry in the face of Industrialization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Capital Funds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_VENICE_UE_CHOICE_6">
+			<Text>{3_PlayerName} pledges a massive amount of public money to stop Venice from sinking!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION">
+			<Text>La Dominante</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP">
+			<Text>Your Serenity, the grandi are becoming rather impatient. In times gone by they would have waited for the Doge's death to pass judgment on his legacy, but... well.[NEWLINE]Perhaps we could distract them with some new project?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_2">
+			<Text>Send {1_YieldCost} to beautify our Coastal Cities. They receive a Garden and a Great Galleass.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_3">
+			<Text>Touched by the Doge's story, a Pioneer is recruited out of the [ICON_CAPITAL] Capital along with 2 free units to escort him to new journeys. This funding of a new journey prompts a "We Love the King Day!" in the [ICON_CAPITAL] Capital for 10 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_4">
+			<Text>The patronage of art in the [ICON_CAPITAL] Capital generates +33% [ICON_GREAT_MUSICIAN] Great Musician, [ICON_GREAT_ARTIST] Great Artist and [ICON_GREAT_WRITER] Great Writer Points. Receive +1 [ICON_CULTURE] Culture for every [ICON_POPULATION] Citizens in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_5">
+			<Text>Spend {1_YieldCost} to preserve traditional industry. Gain 4 copies of [ICON_RES_GLASS] Glass, and Workshops generate +3 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_HELP_CHOICE_6">
+			<Text>The [ICON_CAPITAL] Capital converts 50% of [ICON_GOLD] Gold spent to [ICON_FOOD] Food when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_1">
+			<Text>Let me think. We have heard of a fascinating Commendatore traveling the world. They would cause something of a stir in The City of Masks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_2">
+			<Text>The Canals of Venice are set to be introduced across the Empire. If we included rooms and ships for the guilds in this project, I am sure they would be far too busy to consider an inquisition in our private affairs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_3">
+			<Text>Allow me to tell them a story. A story of our backgrounds in a city among the Laguna del Mort.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_4">
+			<Text>The Great Musician who has been traipsing about the Palace would be a rare prize for the guildsmen. If we were to rejuvenate his career, I am sure attention would be swiftly diverted.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_5">
+			<Text>We were just in the process of subsidising the glassblowers, were we not. Perhaps some of the gold that somehow found itself to my bank vault could disappear into that, no? I am fond of those little figurines they make, and so sort after!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_VENICE_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The senate has just passed a bill requiring a percentage of public spending to go to the preservation and reconstruction of the historic districts*[NEWLINE]If some of the funding found itself directed to the guildhalls. Well. I am certain that one good deed would encourage another.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VENICE_UE_DUMMY">
+			<Text>Venetian Patronage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VENICE_UE_DUMMY_HELP">
+			<Text>+33% [ICON_GREAT_MUSICIAN] Great Musician, [ICON_GREAT_ARTIST] Great Artist and [ICON_GREAT_WRITER] Great Writer Points. Receive +1 [ICON_CULTURE] Culture for every [ICON_POPULATION] Citizens in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VENICE_UE_DUMMY_2">
+			<Text>Venetian District Preservation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VENICE_UE_DUMMY_2_HELP">
+			<Text>Converts 50% of [ICON_GOLD] Gold spent to [ICON_FOOD] Food when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_HERACLEA">
+			<Text>Heraclea</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MALAMOCCO">
+			<Text>Malamocco</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

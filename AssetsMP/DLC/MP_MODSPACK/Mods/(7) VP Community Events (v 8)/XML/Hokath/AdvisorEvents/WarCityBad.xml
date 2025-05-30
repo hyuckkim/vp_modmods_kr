@@ -1,0 +1,61 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_WAR_CITY_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>25</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<CityEventArt>advisormilitary.dds</CityEventArt>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_WAR_CITY_BAD</CityEventType>
+			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP_CHOICE_1</Help>
+			<RequiredBuildingClass>BUILDINGCLASS_BARRACKS</RequiredBuildingClass>
+			<RandomBarbarianSpawn>1</RandomBarbarianSpawn>
+			<EventBuildingClassDestruction>BUILDINGCLASS_BARRACKS</EventBuildingClassDestruction>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_WAR_CITY_BAD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_EventCostYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</CityEventChoice_EventCostYield>
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION">
+			<Text>Killing Spree</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP_CHOICE_1">
+			<Text>Crazed soldiers have burned down their Barracks, killing {1_YieldCost}, and fled to the countryside.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION_CHOICE_1">
+			<Text>Killing Spree</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

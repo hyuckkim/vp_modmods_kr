@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_DESCRIPTION">
+      <Text>백 꽃이 만발하게 하라</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_HELP">
+      <Text>이제는 여전히 우리의 교육 기관에 숨어 있는 자본주의자들을 뿌리 뽑을 때입니다.[NEWLINE]이 부패를 어떻게 찾아낼까요, 동지?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_HELP_CHOICE_1">
+      <Text>[ICON_RESISTANCE] 무정부 상태로 {4_Turns} 동안 진입합니다. 모든 [ICON_GREAT_SCIENTIST] 과학자가 +1 [ICON_RESEARCH] 과학과 +1 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_HELP_CHOICE_2">
+      <Text>모든 도시는 1 [ICON_HAPPINESS_3] 불행을 생성하지만, 그 대신 모든 대학이 [ICON_TOURISM] 관광을 5% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_HELP_CHOICE_3">
+      <Text>모든 [ICON_GREAT_SCIENTIST] 과학자는 1 [ICON_RESEARCH] 과학을 잃지만, 모든 도시는 육상 유닛을 5% 더 빠르게 생산합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_DESCRIPTION_CHOICE_1">
+      <Text>모든 학자들을 퇴출시킵니다. 간단한 투쟁 회의로 그들의 무죄를 판별할 것입니다. 그럼, 오직 신앙이 확고한 자들만이 남게 될 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_DESCRIPTION_CHOICE_2">
+      <Text>외국 학자들의 강한 경쟁이 우리의 기준을 맞출 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_YOUNG_PIONEERS_DESCRIPTION_CHOICE_3">
+      <Text>무장군으로 복무한 자만이 우리의 이념적 중심에 받아들여질 정도로 신뢰를 증명했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_YOUNG_PIONEERS_DUMMY">
+      <Text>무장한 과학자들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_YOUNG_PIONEERS_DUMMY_HELP">
+      <Text>육상 유닛 생산 시 +5% [ICON_PRODUCTION] 생산 증가.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

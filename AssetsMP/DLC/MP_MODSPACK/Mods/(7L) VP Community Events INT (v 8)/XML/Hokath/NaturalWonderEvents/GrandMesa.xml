@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_DESCRIPTION">
+      <Text>메사의 일들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_HELP">
+      <Text>광산 회사의 대표단이 다시 찾아왔습니다, 영광스러운 분. 그들이 무엇을 원하는지 정확히는 모르겠지만, 아마도 더 많은 돈을 요구하는 것 같습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_HELP_CHOICE_1">
+      <Text>이 자연경관은 영구적으로 +1 [ICON_PRODUCTION] 생산력과 [ICON_TOURISM] 관광을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_HELP_CHOICE_2">
+      <Text>이 자연경관은 영구적으로 +4 [ICON_FOOD] 식량을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_HELP_CHOICE_3">
+      <Text>지역 주민들은 {2_InstantYield}를 포기해야 하지만, 도시는 무료 석공소를 받으며, 추가로 +2 [ICON_CULTURE] 문화와 +2 [ICON_GOLD] 골드를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_HELP_CHOICE_4">
+      <Text>지역 호텔은 +10 [ICON_GOLD] 골드와 +10 [ICON_TOURISM] 관광을 제공합니다. 그러나 자연경관은 최대 -10 [ICON_PRODUCTION] 생산력을 잃습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_DESCRIPTION_CHOICE_1">
+      <Text>*예상대로 회사는 임금 인상을 요구합니다.*[NEWLINE]다행히도 이 멍청이들은 인플레이션을 이해하지 못하는군요: 우리는 실제로 그들에게 추가적인 금액을 지불하는 것이 아닙니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_DESCRIPTION_CHOICE_2">
+      <Text>*광부들은 습기를 제거하기 위한 모든 노력에도 불구하고 지속되는 습한 환경에 대해 불평하고 있습니다.*[NEWLINE]이 메사를 구성하는 암석들이 물을 배수하는 데 매우 뛰어나다는 사실을 그들이 우연히 발견한 것 같습니다... 주변 지역을 농사짓는 것이 좋을지도 모릅니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_DESCRIPTION_CHOICE_3">
+      <Text>*노동자들은 채굴 속도를 높이기 위해 다이너마이트를 요구하고 있습니다.*[NEWLINE]이 과정에는 약간의 감독이 필요할 수 있지만, 우리가 접근할 수 있는 석재의 양은 엄청날 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_NW_MESA_DESCRIPTION_CHOICE_4">
+      <Text>*노동자들은 스키 산업이 그들의 광산 마을에 리조트를 세우려는 최근 시도에 불만을 가지고 있습니다*[NEWLINE]이 브로셔를 보니, 햇빛이 그 능선을 제대로 비출 때, 이 언덕들이 노래를 부르는 것 같다고 하네요.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

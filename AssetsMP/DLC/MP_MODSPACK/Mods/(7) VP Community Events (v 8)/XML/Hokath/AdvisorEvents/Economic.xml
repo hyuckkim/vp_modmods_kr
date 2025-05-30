@@ -1,0 +1,86 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC</Type>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>70</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
+			<EventArt>advisoreconomic.dds</EventArt>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_1</Help>
+			<EventDuration>100</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_2</Description>
+			<EventDuration>100</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_3</Description>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION">
+			<Text>Self-Reliance vs. Expansion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP">
+			<Text>Recently, your Economic Advisor has been bombarding your office with folder upon folder of new schemes and projects. She wishes to explore the doctrine of economic self-reliance and expansion.[NEWLINE][NEWLINE]She awaits your decision.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_1">
+			<Text>For {4_Turns}, significant events related to self-reliance may occur.[NEWLINE]
+			[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Self-reliance in your Cities[ENDCOLOR]
+			[NEWLINE][ICON_BULLET]Cities may make donations to the pious for a sum of Faith!
+			[NEWLINE][ICON_BULLET]The option of purchasing a Caravan Company lasting {4_Turns} may appear.
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Your cities may import vice into the city, producing temporary Unhappiness![ENDCOLOR]
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Panics may randomly occur causing reduction of Gold in Markets and Banks.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_2">
+			<Text>For {4_Turns}, significant events related to expansion may occur.[NEWLINE]
+			[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Increased trade may bring prosperity to your cities in increased tax revenues![ENDCOLOR]
+			[NEWLINE][ICON_BULLET]Cities may make donations to the pious for a sum of Faith!
+			[NEWLINE][ICON_BULLET]The option of purchasing a Caravan Company lasting {4_Turns} may appear.
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Your cities may import perverse vice into the city, producing temporary Distress![ENDCOLOR]
+			[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Your currency may get inflated, providing less gold from City Connections![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_3">
+			<Text>Business continues as usual.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_1">
+			<Text>As the most accomplished advisor at my disposal, I believe she is the best advisor to explore self-reliance for our economy to be self-sufficient.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_2">
+			<Text>I believe the best interest at heart is to expand our economy as wide as the eye can see at our advisor's discretion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_3">
+			<Text>I do not believe the time is right to begin experimenting with the economy. These plans will have to be put on the backburner.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
