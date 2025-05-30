@@ -239,11 +239,11 @@ function UpdateDisplay()
 			local sCity = unit:GetPlot():GetWorkingCity():GetName()
 			
 			if unit:IsGarrisoned() then
-				sPlace = "林敌: " .. sCity
+				sPlace = .. sCity .. "? ??"
 			elseif isInFort then
-				sPlace = "啊鳖款 夸货俊 林敌: " .. sCity
+				sPlace = .. sCity .. " ?? ??? ??"
 			else
-				sPlace = "啊鳖款 己俊 林敌: " .. sCity
+				sPlace = .. sCity .. " ?? ?? ??"
 			end
 			
 			instance.Status:SetToolTipString(sPlace)

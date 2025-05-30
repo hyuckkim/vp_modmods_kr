@@ -1,0 +1,89 @@
+-- Credits
+-- Jan 5, 2020: Created, adan_eslavo
+--------------------------------------------------------------
+Special thanks to:
+- World Wonders:
+	- coders and supporters:
+		- @Infixo: base mod creator;
+		- @ProCatGamer and @Asterix Rage: other modders which supported this work during Infixo's absence;
+		- @Bordukov, @gwennog, @hokath, @Kenneth1221, @KittyKat3120, @Padre19, @pineappledan, @ProCatGamer and many others: support; 
+		- @Kenneth1221: civilopedia;
+	- art creators:
+		- "base wonders":
+			- @Pouakai, @regalmanemperor, @Envoy, @Hammurabi1337, @BoOoSs, @Epsilon, @Moriboe, @Sukritact, @janboruta;
+		- "new wonders":
+			- @guillermuin: altamira cave (mod);
+			- @Pouakai, @sukritact: goebekli tepe (mod), gate of the sun (mod), buddhas of bamyan (mod);
+			- @Pouakai, @jpbar81: ait benhaddou (mod);
+			- @Pouakai, @sukritact, @janboruta: darjeeling (mod);
+			- @Artisanix: ggantija, skara brae (both from Neolithic Wonders mod);
+			- @hokath: tons of new wonder icons;
+			- @LastSword: great zimbabwe (icon);
+			- @maxf: soloviesky (icon);
+			- @Artisanix (lots of wonder icons and splashes from World Wonders Pack 128 and World Wonders Pack 256);
+		- @Valery: peterhof palace (splash screen) (16 national wonder mod);
+		- @Asterix Rage: new promotion icons designer;
+	- images for new splash screens:
+		- CERN: https://www.flickr.com/photos/11304375@N07/2046228644 (CC BY 2.0)
+		- Louvre: https://pl.wikipedia.org/wiki/Plik:Louvre_Pyramid.jpg (CC BY 3.0)
+		- Kuk Swamp: https://ro.wikipedia.org/wiki/Revolu%C8%9Bia_neolitic%C4%83#/media/Fi%C8%99ier:Plains_south_of_Mardin,_Turkey.jpg (CC BY-SA 3.0)
+		- Mohenjo-daro https://en.wikipedia.org/wiki/Makli_Necropolis#/media/File:Beautifully_architecture_pillars.jpg (CC BY-SA 4.0)
+		- Chand Baori: https://commons.wikimedia.org/wiki/File:Chand_Baori_(Step-well)_at_Abhaneri.JPG (CC BY-SA 3.0)
+		- El Ghriba: https://commons.wikimedia.org/wiki/File:El_Ghriba-01-sparklenose.jpg (CC BY 2.0)
+		- Etchmiadzin Cathedral: https://commons.wikimedia.org/wiki/File:Etchmiadzin_Cathedral_2009.jpg (CC BY-SA 2.0)
+		- Gate of the Sun: https://commons.wikimedia.org/wiki/File:Sun_Gate,_Tiwanaku_ruins,_Bolivia.jpg (CC BY-SA 4.0)
+		- Ark of the Covenant: https://www.flickr.com/photos/blakespot/17576322644/in/photostream/ (CC BY 2.0)
+		- Holy Lance: https://commons.wikimedia.org/wiki/File:Heilige_Lanze_f.jpg (CC BY-SA 3.0)
+		- Wartburg: https://upload.wikimedia.org/wikipedia/commons/a/a8/Wartburg_Eisenach_DSCN3512.jpg (CC BY-SA 2.0)
+		- Qalhat: https://pl.m.wikipedia.org/wiki/Plik:Bibi_Maryam_mausoleum.jpg (CC BY 2.0)
+		- Mont Saint Michel: https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg (CC BY-SA 4.0)
+		- Lavaux: https://commons.wikimedia.org/wiki/File:Lavaux_(57470484).jpeg (CC BY-SA 3.0)
+		- Great Zimbabwe: https://commons.wikimedia.org/wiki/File:Great-Zimbabwe-still-standing_strong.jpg (CC BY-SA 4.0)
+		- Falun Mine: https://commons.wikimedia.org/wiki/File:Falun_Copper_Mine_14.jpg (CC BY-SA 3.0)
+		- Ahu Tongariki https://commons.wikimedia.org/wiki/File:Ahu-Tongariki-and-Traveling-Moai.jpg (CC BY-SA 3.0)
+		- Kilwa Kisiwani: https://commons.wikimedia.org/wiki/File:Ruins_of_Kilwa_Kisiwani_and_Ruins_of_Songo_Mnara-108277.jpg (CC BY-SA 3.0)
+		- Solovietsky Monastery:  https://en.wikipedia.org/wiki/Solovki_prison_camp#/media/File:%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D0%B5%D1%86%D0%BA%D0%B8%D1%85_%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%BE%D0%B2.jpg (CC BY-SA 3.0)
+		- Meenakshi Temple: https://en.wikipedia.org/wiki/Meenakshi_Temple#/media/File:Meenakshi_Amman_West_Tower.jpg (CC BY-SA 4.0)
+		- Marae Arahurahu: https://commons.wikimedia.org/wiki/File:Tahitimarae2.jpg (CC BY-SA 3.0)
+		- Ait Benhaddou: https://commons.wikimedia.org/wiki/File:Kasbah_Ait_Ben_Haddou.jpg (CC BY-SA 4.0)
+		- Bakken: https://commons.wikimedia.org/wiki/File:Bakken_entry.jpg (CC BY-SA 3.0)
+		- Slatter Mill: https://commons.wikimedia.org/wiki/File:Slater_Mill_-_Wilkinson_Machine_Shop.jpg (CC BY-SA 3.0)
+		- Banff Springs Hotel: https://commons.wikimedia.org/wiki/File:Banff_Springs_Hotel_2017.jpg (CC BY-SA 4.0)
+		- Ruhr Valley: https://en.wikipedia.org/wiki/Landschaftspark_Duisburg-Nord#/media/File:LaPaDu_Panorama_2010-10-03.jpg (CC BY-SA 3.0 de)
+		- Kew Gardens: https://en.wikipedia.org/wiki/File:Kew_Gardens_Palm_House,_London_-_July_2009.jpg (CC BY-SA 3.0)
+		- Orszaghaz: https://www.flickr.com/photos/mikelsantamaria/44555177630/ (CC BY-SA 2.0)
+		- Siku Quanshu: https://commons.wikimedia.org/wiki/File:Wenjin_Imperial_Library.JPG (CC BY-SA 3.0)
+		- Zocalo: https://commons.wikimedia.org/wiki/File:Z%C3%B3calo,_Mexico_City_(2105552839).jpg (CC BY-SA 2.0)
+		- Trans-Siberian Railway: https://commons.wikimedia.org/wiki/File:The_Trans-Siberian_Railway,_c._1913.jpg (not known)
+		- Holy Crown of Hungary: https://pl.m.wikipedia.org/wiki/Plik:Crown,_Sword_and_Globus_Cruciger_of_Hungary.jpg (CC BY-SA 3.0)
+		- Millau Viaduct: https://commons.wikimedia.org/wiki/File:Viaduc_Millau_P1010248mod.jpg (CC BY-SA 4.0)
+		- Arecibo: https://upload.wikimedia.org/wikipedia/commons/1/1c/Arecibo_radio_telescope_observatory_Puerto_Rico_-_panoramio_%2811%29.jpg (CC BY 3.0)
+		- Rockefeller: https://en.wikipedia.org/wiki/Radio_City_Music_Hall#/media/File:Radio_City_Music_Hall_Panorama.jpg (CC BY-SA 3.0)
+		- Autobahn: https://i1.wp.com/smp.edu.pl/wp-content/uploads/2016/11/nrg.tpt_.autobahn.1934.GRM-CIV347.jpg
+		- Sputnik: https://commons.wikimedia.org/wiki/File:Sputnik_1_Exploded_View_3F9A6199_(36924864550).jpg (CC BY 1.0)
+		- Concorde: https://commons.wikimedia.org/wiki/File:Concorde_1_94-9-5_kix_(cropped).jpg (CC BY-SA 3.0)
+		- Thule: https://commons.wikimedia.org/wiki/File:Thule_air_base_above.jpeg
+		- Vostok: https://argusspectrum.com/vostok_station_antarctica
+		- Revolutionary Museum: 
+		- Global Seed Vault: https://www.flickr.com/photos/croptrust/3851518425 (CC BY-SA 2.0)
+		- West Point: https://media.npr.org/assets/img/2022/08/31/west-point-campus_custom-4a62e6a258a9f3126820fca2ec645c2391dfa0c6-s1100-c50.jpg
+- Natural Wonders:
+	- initiators:
+		- @Aheadatime: initial idea of wonder balancing (Natural Wonder Enhancement);
+		- @Barathor, @whoward69: new methods for wonder placement; initial idea how to change them;
+		- @LamilLerran: initial idea and work towards adding new Natural Wonders (Wondrous Nature); art and model creator; initial coder;
+		- @Iamblicos: incorporation to dll, help with making this work;
+		- @Deliverator23, @Chimpan'G :creators of Terra Mirabilis whose work was an inspiration; borrowed quotes and ideas;
+	- art creators:
+		- Salar de Uyuni: Martin St-Amant https://en.wikipedia.org/wiki/Salar_de_Uyuni#/media/File:Salar_de_Uyuni_D%C3%A9cembre_2007_-_Centre_de_Nulle_Part.jpg (CC BY-SA 3.0)
+		- Lake Retba: https://commons.wikimedia.org/wiki/File:Lac_Retba.jpg (CC BY-SA 4.0)
+	- models:
+		- @ghost toast:
+			- new natural wonders (mt. paektu);
+			- reworked original natural wonders (great barrier reef);
+	- sv_icons:
+		- @gwennog (all new natural wonders);
+	- building and wonder icons:
+		- @adan_eslavo, @gwennog;
+	- promotion icons:
+		- @asterix rage;

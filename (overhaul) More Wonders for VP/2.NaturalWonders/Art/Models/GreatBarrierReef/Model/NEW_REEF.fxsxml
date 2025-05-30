@@ -1,0 +1,9 @@
+<Asset>
+  <Mesh file="NEW_REEF.gr2" source="Max" />
+  <BoneUsage>
+    <Bone name="FX_Reef" />
+  </BoneUsage>
+  <TimedTrigger file="FX_NEW_REEF.ftsxml" source="Tool" model="Reef" state="0,1,2,3" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+</Asset>
+

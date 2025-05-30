@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" version="5.1">
+  <Properties>
+    <Name>Vox Populi's Bare Necessities</Name>
+    <Teaser>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi. May download Referenced Mod for more options!</Teaser>
+    <Description>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi.[NEWLINE]By default, Unique Policy Buildings, More Beliefs, and More Processes are unlocked.[NEWLINE]You must activate Artisanix's Neolithic Wonder to unlock Neolithic Wonder.[NEWLINE]You must activate framedarchitecture's National Wonders Collection to unlock National Wonders.</Description>
+    <Authors>Techpriest Enginseer</Authors>
+    <SpecialThanks>Artisanix, thecrazyscotsman, framedarchitecture</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="baec6cb7-36d9-425a-a72b-e8f7d7ad1b01" minversion="0" maxversion="999" title="Artisanix's Neolithic Wonders" />
+    <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="framedarchitecture's National Wonders Collection" />
+    <Mod id="5cfa5cfc-fe0f-456f-8003-73e6b56865c1" minversion="0" maxversion="999" title="(1L) Community Patch INT" />
+    <Mod id="64830ab8-3276-4f3c-916c-1e23f17993d6" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+  </References>
+  <Blocks>
+    <Mod id="81f3ebfb-c689-4e6b-bc72-f4bac7a4e88c" minversion="0" maxversion="999" title="Unique Policy Buildings" />
+    <Mod id="1b1c0548-b197-4f9c-9621-433d3b32c826" minversion="0" maxversion="999" title="Community Patch Mod Compatibility" />
+  </Blocks>
+  <Files>
+    <File md5="D21019434D2EFF6F318C78FF7012F647" import="1">ArtAudio/Barnenez.mp3</File>
+    <File md5="C52ABD6E9F729D945DAADEF7EABA1647" import="1">ArtAudio/FaithTourismAtlas128.dds</File>
+    <File md5="223084BE44B0B006C6D829A55CB17501" import="1">ArtAudio/FaithTourismAtlas256.dds</File>
+    <File md5="729F0C204CC58D5249D4F2FDDFA68D2D" import="1">ArtAudio/FaithTourismAtlas32.dds</File>
+    <File md5="9B7E8478C20AF9E2E4B6F4EF202A93E2" import="1">ArtAudio/FaithTourismAtlas45.dds</File>
+    <File md5="1EB2BF1B3642BB19764C8CC8F6CBEE54" import="1">ArtAudio/FaithTourismAtlas64.dds</File>
+    <File md5="D65582B1AF7EB1F0754E54B13DDEE4D7" import="1">ArtAudio/FaithTourismAtlas80.dds</File>
+    <File md5="519B07CC157251B26E767D0D08398741" import="1">ArtAudio/Ggantija.mp3</File>
+    <File md5="284D88EDDE87103B44D8F51A90C7CCAC" import="1">ArtAudio/ReallyBased64.dds</File>
+    <File md5="6A08EA8F44784CA9E8C1B33EC0F2CFD2" import="1">ArtAudio/Newgrange.mp3</File>
+    <File md5="F6F355C3F5B4ECF18C7300702665481A" import="1">ArtAudio/Policy_IconAtlas128.dds</File>
+    <File md5="248E18212BF716863A1055AEACA86F63" import="1">ArtAudio/Policy_IconAtlas256.dds</File>
+    <File md5="5E25433B9F60BCF1D049F0075412788F" import="1">ArtAudio/Policy_IconAtlas45.dds</File>
+    <File md5="8DA3506FF8B8CB2B673AC7F504101F88" import="1">ArtAudio/Policy_IconAtlas64.dds</File>
+    <File md5="765AE331D37933D94B03BA8FCD94D004" import="1">ArtAudio/Policy_IconAtlas80.dds</File>
+    <File md5="C2790C2014782383EC4BA818BA0B462C" import="1">ArtAudio/SkaraBrae.mp3</File>
+    <File md5="56124D3D65F45700603EADBBF96BDA30" import="0">AutomateProductionYes.lua</File>
+    <File md5="C95F38B04F9795818C36A1762215465D" import="0">AutomateProductionYes.xml</File>
+    <File md5="64DF635BD57CDEB13DC1038934568A7E" import="0">CityInfoStack.lua</File>
+    <File md5="120EB71025973A8A48B38314241DD0B3" import="0">CityInfoStack.xml</File>
+    <File md5="F56E528FB2C2E30DFC5399B7BFFEE219" import="0">MoreText.sql</File>
+    <File md5="F19FD66869860EF40CBE1A47B8A06892" import="0">National.sql</File>
+    <File md5="C006181E9EF6466843A77822E2DAE39F" import="0">NeolithicSQL.sql</File>
+    <File md5="5F2EB57CC11C1639018FAE64BF284CDA" import="1">NW_CentralBank.lua</File>
+    <File md5="ACBEE8F79454B6C0552FFF8CD06834CA" import="1">NW_CentralStation.lua</File>
+    <File md5="5C47B3E69DEB9CF6EA542331CC49B772" import="1">NW_ElectricCompany.lua</File>
+    <File md5="B0AC44ED7F54FDC27CC5A2245E99ECD5" import="0">Policy.sql</File>
+    <File md5="CEEF25A48F22BCC5C74C417482C6B692" import="0">Processes.sql</File>
+    <File md5="1CAF0FAE6195C367A129C4813DF0B6FB" import="0">RecallAll.lua</File>
+    <File md5="1BCE60F2157084345409A8145CDB8486" import="0">RecallAll.xml</File>
+    <File md5="C3D3587E4C6242F9691049BD0BEEE0E8" import="0">SeemsGood.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MoreText.sql</UpdateDatabase>
+      <UpdateDatabase>Processes.sql</UpdateDatabase>
+      <UpdateDatabase>Policy.sql</UpdateDatabase>
+      <UpdateDatabase>SeemsGood.sql</UpdateDatabase>
+      <UpdateDatabase>National.sql</UpdateDatabase>
+      <UpdateDatabase>NeolithicSQL.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="CityInfoStack.lua">
+      <Name>CityInfoStack</Name>
+      <Description>CityInfoStack</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="AutomateProductionYes.lua">
+      <Name>AutomateProductionYes</Name>
+      <Description>AutomateProductionYes</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="RecallAll.lua">
+      <Name>RecallAll</Name>
+      <Description>RecallAll</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

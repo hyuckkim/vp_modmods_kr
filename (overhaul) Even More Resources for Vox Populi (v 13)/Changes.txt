@@ -1,0 +1,60 @@
+--------------------------------------------------------------
+v1
+--------------------------------------------------------------
+- Created.
+
+--------------------------------------------------------------
+v2
+--------------------------------------------------------------
+- Fixed bug with IGE not loading correctly.
+- Fixed bug where Songhai Tabya required an Obsidian or Sulfur in the city.
+
+--------------------------------------------------------------
+v3
+--------------------------------------------------------------
+- Fixed incompatibilities with some mods (disabled trigger which updates text string).
+- Fixed Research Lab description text.
+- Fixed Platinum unlocking at the wrong technology (should be Mining).
+- Fixed some database errors relating to Lead, Platinum, and Titanium (due to missing defines for the HEAVY and MARSH art variations).
+- Platinum monopoly now +10% science instead of +10% gold.
+
+--------------------------------------------------------------
+v4
+--------------------------------------------------------------
+- Fixed incompatibility with custom civs, potentially causing UBs to gain yield bonus for all resources of this mod.
+- Fixed incompatibility with Enlightenment Era, causing Tavern's food bonus for wheat to become a gold bonus.
+- Enlightenment Era's Tavern now grants the food bonus to rice and maize as well.
+- Increased Poppy great person modifier from monopoly from 10% to 25%.
+
+--------------------------------------------------------------
+v5
+--------------------------------------------------------------
+- Sulfur and Obsidian now correctly unlock Stone Works.
+- Luxuries now correctly unlock Corporations.
+- Backend: When farms are removed, the original continent type for the plot is restored. Works across save games.
+
+--------------------------------------------------------------
+v6
+--------------------------------------------------------------
+- Backend: No longer overrides VP's AssignStartingPlots.lua. Changes to the lua now directly within VP.
+
+--------------------------------------------------------------
+v7
+--------------------------------------------------------------
+- Added compatibility with Spain's new improvement, Hacienda. Will work with the VP version which comes after 01/12/20.
+
+--------------------------------------------------------------
+v8
+--------------------------------------------------------------
+- Fixed Tin not having a monopoly bonus.
+
+--------------------------------------------------------------
+v9
+--------------------------------------------------------------
+- Rice and Maize now merged into VP, removed all related lines.
+
+--------------------------------------------------------------
+v10
+--------------------------------------------------------------
+- Fixed duplicated monopoly bonuses from corporation buildings for luxuries.
+- Removed lines related to BUILDING_EE_TAVERN for Rice and Maize and moved it to Enlightenment Era mod

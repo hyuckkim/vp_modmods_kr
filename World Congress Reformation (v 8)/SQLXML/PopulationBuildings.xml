@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_POPULATION</Type>
+			<BuildingClass>BUILDINGCLASS_POPULATION</BuildingClass>
+			<Cost>-1</Cost>
+			<Help>TXT_KEY_BUILDING_POPULATION_HELP</Help>
+			<Description>TXT_KEY_BUILDING_POPULATION</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_POPULATION_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_POPULATION_STRATEGY</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<SingleLeagueVotes>1</SingleLeagueVotes>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Buildings>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_POPULATION</Type>
+			<DefaultBuilding>BUILDING_POPULATION</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_POPULATION</Description>
+		</Row>
+	</BuildingClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION">
+			<Text>[ICON_CITIZEN]인구 임계값</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION_HELP">
+			<Text>축하합니다! 당신의 문명은 세계 의회에서 추가 대표단을 받을 수 있는 인구 임계값을 달성했습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION_STRATEGY">
+			<Text>당신은 문명의 인구가 새 임계값에 도달하는지 주요하게 봐야합니다. (르네상스 (40), 산업 (45), 현대 (50), 원자력 (55), 정보화 (60))[NEWLINE][NEWLINE]그러면? 이전 시대는 없나요? 오 있어요, 고대 (25), 고전 (30), 중세 (35)가 있긴 하지만 랜덤으로 나올겁니다. 하지만, 당신이 아직 그 시대에 있을때 세계 의회가 어떻게든 만들어지지 않는다면, 당신은 어떤 추가 대표단을 얻을 수 없을 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_POPULATION_TEXT">
+			<Text>As the human population begin to grew massively, there was a need to represent the people in terms of the World Congress. They came with the concept on a representation basis on population.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

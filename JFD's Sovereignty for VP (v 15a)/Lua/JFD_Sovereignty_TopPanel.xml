@@ -1,0 +1,10 @@
+<Context Font="TwCenMT16" FontStyle="Base" Color="Beige" ColorSet="Beige_Black" >
+	
+    <TextButton Anchor="C,T" String="SOVEREIGNTY!" ColorLayer0="255,255,200,255" ID="SovereigntyString" ToolTip="TXT_KEY_JFD_SOVEREIGNTY_TT" ToolTipType="TooltipTypeTopPanelJFD" Hidden="1"/>
+    <ToolTipType Name="TooltipTypeTopPanelJFD" >
+		<Grid ID="TopPanelMouseover" Anchor="L,T" Offset="30,5" Size="555,12" Padding="8,8" Style="GridBlack8" Color="White,240">
+			<Label ID="TooltipLabel" Anchor="C,C" String="Brief description" WrapWidth="555" />
+		</Grid>
+	</ToolTipType>
+
+</Context>

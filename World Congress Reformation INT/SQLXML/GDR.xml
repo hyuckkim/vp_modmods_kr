@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_GDR_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP</Help>
+			<Building>BUILDING_GDR_MILITARY_SECRET</Building>	
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_GDR_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP</Help>
+			<Building>BUILDING_GDR_MILITARY_SECRET_2</Building>			
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_GDR_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP</Help>
+			<FreeUnitClass>UNITCLASS_MECH</FreeUnitClass>
+			<Building>BUILDING_GDR_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_GDR_INITIATIVE</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE_SPLASH</Help>
+			<ProjectSplashImage>GDRSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_GDR_INITIATIVE</Process>
+			<CostPerPlayer>8250</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_GDR_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_GDR_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_GDR_3</RewardTier3>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>36</PortraitIndex>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_GDR_INITIATIVE</Type>
+			<Description>TXT_KEY_RESOLUTION_GDR_INITIATIVE</Description>
+			<Help>TXT_KEY_RESOLUTION_GDR_INITIATIVE_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_ROBOTICS</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_GDR_INITIATIVE</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE">
+			<Text>TEMPEST Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE_SPLASH">			
+			<Text>Recognizing the potential cost of maintaining a large army and arsenal. Nations meet in secret to discuss the TEMPEST Prototype Project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1">
+			<Text>Patrons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP">
+			<Text>Ability to train Giant Death Robots.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2">
+			<Text>Project Sponsors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP">
+			<Text>Enrichment Facilities National wonder appear in [ICON_CAPITAL] Capital (4 copies of [ICON_RES_URANIUM] Uranium).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3">
+			<Text>Project Manager</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP">
+			<Text>Project TEMPEST wonder appears in [ICON_CAPITAL] Capital (+100% [ICON_PRODUCTION] Production to Armored Units, +15 [ICON_STRENGTH] Defense.) Receive a Giant Death Robot.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_GDR_INITIATIVE">
+			<Text>TEMPEST Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_GDR_INITIATIVE_HELP">
+			<Text>Begins the project to fund the TEMPEST Project. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Robotics.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_GDR_INITIATIVE">
+			<Text>TEMPEST Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_GDR_INITIATIVE_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the TEMPEST Project.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS">
+			<Text>TEMPEST Headquarters</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"What gunpowder did for war, a god from the machine has done for the future of war."[NEWLINE] - The Future[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS_HELP">
+			<Text>Grants the ability to train Giant Death Robots. May only be built collaboratively through the World Congress. If this city is captured, the old owner loses access while the new owner is given it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_HEADQUARTERS_TEXT">
+			<Text>The TEMPEST Project is the main research operation of the Giant Death Robot prototype. Researchers have discovered a secret here to customizing their prototype for complete adapation to the environment.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET">
+			<Text>Military Blueprints</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_HELP">
+			<Text>Giant Death Robot unlocked! May only be earned collaboratively through the World Congress.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_TEXT">
+			<Text>"Here's what I want, Giant Death Robots, I don't care what they have to do... but there must be giant death robots. And there must be a wide varity of giant death robots, there should be plasma cannon wielding giant death robots... I really don't care if the "history" is accurate or if it's "realistic" I just want really big giant huge death robots." --Perfection</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2">
+			<Text>Enrichment Facilities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2_HELP">
+			<Text>Grants 4 copies of [ICON_RES_URANIUM] Uranium. May only be earned collaboratively through the World Congress.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_2_TEXT">
+			<Text>So, there's this thing called Uranium. See and our Giant Death Robots exclusively runs on it, that's a problem since usable Uranium is hard to come by. So I'd figure natural uranium deposits are hard to come around, but uraniums are common just not common enough to be used. Here's what the enrichment facility comes into mind. It'll enrich these small amounts of Uranium to be usable enough to power our Giant Death Robots! Problem solved.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_GDR_INITIATIVE</Type>
+			<Description>TXT_KEY_PROCESS_GDR_INITIATIVE</Description>
+			<Help>TXT_KEY_PROCESS_GDR_INITIATIVE_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_GDR_INITIATIVE_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_GDR_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_GDR_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_GDR_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_GDR_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_GDR_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_GDR_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_GDR_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_GDR_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_GDR_MILITARY_SECRET</Type>
+			<DefaultBuilding>BUILDING_GDR_MILITARY_SECRET</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_GDR_MILITARY_SECRET</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_GDR_MILITARY_SECRET_2</Type>
+			<DefaultBuilding>BUILDING_GDR_MILITARY_SECRET_2</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_GDR_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_GDR_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_GDR_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_GDR_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GDR_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_GDR_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<Defense>1500</Defense>
+			<!--<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>-->
+			<HurryCostModifier>-20</HurryCostModifier>
+			<PortraitIndex>1</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<WonderSplashImage>GDRSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_GDR_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+		<Row>
+			<Type>BUILDING_GDR_MILITARY_SECRET</Type>
+			<BuildingClass>BUILDINGCLASS_GDR_MILITARY_SECRET</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<Description>TXT_KEY_BUILDING_GDR_MILITARY_SECRET</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_GDR_MILITARY_SECRET_HELP</Help>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>			
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>8</PortraitIndex>
+		</Row>
+		<Row>
+			<Type>BUILDING_GDR_MILITARY_SECRET_2</Type>
+			<BuildingClass>BUILDINGCLASS_GDR_MILITARY_SECRET_2</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<Description>TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_2_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2_HELP</Help>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>			
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>43</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_UnitCombatProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_GDR_HEADQUARTERS</BuildingType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>100</Modifier>
+		</Row>
+	</Building_UnitCombatProductionModifiers>
+	<Building_ResourceQuantity>
+		<Row>
+			<BuildingType>BUILDING_GDR_MILITARY_SECRET_2</BuildingType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</Building_ResourceQuantity>
+</GameData>

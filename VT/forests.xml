@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+num_tiles:
+  This specifies how many tile textures there are to load. For example, if this value was
+  3 then the game will try to load "forest_tile1.dds", "forest_tile2.dds" and "forest_tile3.dds"
+  
+random_trees_per_tile:
+  -Number of trees to place randomly in the tiles
+  -Must be a multiple of 200
+  
+gridded_trees_per_tile:
+  -Number of trees to place in a jittered grid inside the tiles. If a gridded tree is outside
+  of valid tile area, it will be placed randomly inside the valid tile.
+  -Must be a multiple of 200
+  
+ overlay_alpha:
+  -Alpha multiplier for the terrain overlay on trees. Setting this to 0 would not show the
+  overlay while 1 would show it at full brightness.
+  
+  space_between
+  -Minimimum space between trees. This allows us to create a rough poisson distribution
+  This is for a tree of size 1, smaller trees will get coorrispondingly less space, setting too big
+  might cause an infinite loop!
+-->
+
+<Forest num_tiles="4" random_trees_per_tile="200" gridded_trees_per_tile="0" overlay_alpha=".60" space_between="2.00"/>

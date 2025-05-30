@@ -1,0 +1,202 @@
+MW Changelog:
+v23.6:
+- fixed lua error in Natural Wonder Overview;
+- updated AssignStartingPlots.lua file to latest (VP 4.18.4);
+
+v23.5:
+- Curiosity Rover: added missing IsNoCoast requirement;
+- updated AssignStartingPlots.lua file to latest (VP 4.18.3);
+
+v23.4:
+- Siku Quanshu yield fix;
+- Wonders that place new resources fix;
+- GBH sql fix;
+
+v23.3:
+- fixed Great Barrier Reef science bug;
+- updated AssignStartingPlots.lua file to VP 4.16.2;
+
+v23.2:
+- fixed theming bonuses for multi-themed World Wonders;
+
+v23.1:
+- increased theming bonuses on all World Wonders;
+- fixed Moray Terraces/JFK Hill requirement;
+- fixed Great Zimbabwe tooltip;
+
+v23:
+- added 2 new World Wonders:
+	- Moray Terraces (Education);
+	- JFK Space Center (Rocketry, Freedom)
+- numerous text fixes and corrections;
+
+v22.8:
+- new World Wonder:
+	- Buyuk Han (Progress, instead of Qalhat);
+- some text fixes;
+
+v22.7:
+- Mohenjo-Daro now excludes Water Mill;
+- changes and fixes to World Wonders spawning resources:
+	- Falun Mine is no more Progress finisher; Qalhat was added instead;
+	- Falun Mine now requires Hill (also on Hard) and only 2 Mines (only on Hard);
+	- now all World Wonders can be built only if particular resource is present on the map (Falun Mine --> Copper etc.);
+	- added missing Oil plot requirement check;
+	- multiple text corrections;
+	
+v22.6.1:
+- new AssignStartingPlots.lua file from VP 4.15.2;
+- Ruhr Valley:
+	- now places Coal on 1 spot (was 2) of value 3 (was 1 each);
+	- now gives reduced Working Range to +1 (was +2);
+	- instead it boosts all Coals by +1 Gold and +1 Golden Age Point;
+- Polar Expedition:
+	- now places Oil on 2 spots (was 3) of value 2 and 3 (was 1 each);
+- Mohenjo-Daro:
+	- now does not give a free Well (VP change made it unable to use);
+	- gives a little bit boosted value of what Well had, so +1 Production per 4 Citizens (Well has +1 Production per 5 Citizens, but cannot be built where Mohenjo-Daro is);
+- Parthenon: 
+	- temporarily disabled text changes to Parthenon, until 4UC is be implemented;
+- slightly reworked description of Great Work slots;
+- fixed Lake Victoria bonus (now gives a real discount);
+- fixed Thule Air Base description;
+
+v22.5.2:
+- fixed one icon;
+
+v22.5.1:
+- updated World Wonder's descriiption to latest changes;
+
+v22.5:
+- new AssignStartingPlots.lua file from VP 4.9.1;
+- fixed Train Station issue;
+
+v22.4.1:
+- fixed AssignStartingPlots.lua file and added some crucial changes from VP 4.6;
+
+v22.4:
+- Peterhof:
+	- gains additional GAP;
+	- GAP boost increased to +25% (was +15%);
+- updated AssignStartingPlots.lua file;
+- fixed Sigiriya's description;
+
+v22.3:
+- clarified texts for Rock of Gibraltar and St. Peter's Basilica;
+- added 3d model for Eye of Sahara (by @ghost toast);
+- added 3d (better) model for Dallol (by @ghost toast);
+- added Falun Mine's missing requirement (possible Copper placement);
+- lowered Falun Mine's requirement (now 3 Mines);
+- Eye of the Sahara now spawns Mountains around more frequently;
+- fixed Tag error (with VP 4.5.1);
+- minor text fixes;
+
+v22.2:
+- Rock of Gibraltar: now grants 1 League Vote for each 8 CSs at the game start;
+
+v22.1:
+- Plain of Jars: moved to Military Theory (was Calendar);
+- Plain of Jars and Marae Arahurahu now mention how much Faith they produce on unit kill (base tooltip addition);
+- St. Peter's Basilica: now grants 1 League Vote for each 6 CSs at the game start;
+- Fletcher: now grants "Yerba de la Fleche" promotion globally (was only for units trained in this city);
+- "Yerba de la Fleche": now +50% Attacking RCS vs Wounded Units (was 5% chance for instakill);
+
+v22:
+- updated AssignStartinPlots.lua file; added special replacement file with only reworked functions (must be tested, but if it works, then there will be less compatibility issues);
+- new World Wonder icons for Plain of Jars, Sigiriya and Hollywood (thanks to @hokath);
+- corrected World Wonder icons for Sanbo Honbu (thanks to @hokath);
+- changed manual entries for sea resources to automatic ones with a query (Itsukushima);
+- update GPS for new Espionage System;
+- fixed Revolutionary Museum requirement description;
+
+v21.1:
+- reworked Natural Wonder's abilities giving free luxuries:
+	- Cerro de Potosi:
+		- deleted free Silver;
+		- now spawns 2 Silver around;
+		- all Silver gain +1 Science;
+	- El Dorado:
+		- deleted free Gold;
+		- deleted +2 Gold to all Gold; now all Gold gain +1 Faith;
+		- now spawns 2 Gold around;
+- added FlagPromoOrder and OrderPriority for new promotions;
+- fixed text issues:
+	- fixed Ha Long Bay's promotion pedia entry;
+	- Statue of Zeus now mentions Workers not Settlers (immunity);
+	- Updated Great Lighthouse text (now mentions about Navigation II, not Great Lighthouse promotion);
+
+v21:
+- added Aurora Borealis Natural Wonder - unique 3-tile wonder exclusive for Snow/Tundra terrain (credits to @gwennog and @ghost toast);
+- revamped era scalers for WWs to 50-30-20-10 (was 40-35-30-20);
+	- now older WWs have lower impact on the cost, but if you build one or two of the actual era, then the cost jumps more;
+	- if you capture a city with a bunch of older WWs, it will be a bit less punishing for you, so less chance contemporary WWs will be blocked;
+- some WWs have now SingleLeagueVotes parameter (not scaling) instead of ExtraLeagueVotes (scaling):
+	- Old Bridge in Mostar (2), Orszaghaz (1), Mount Rushmore (1), Anitkabir (1), Arecibo (1), Taipei 101 (1);
+	- St. Peter's Basilica have the scaler left (similarly like original Palace of Westminster, but only 1 instead of 2);
+	- Rock of Gibraltar also has the scaler left;
+		- as a compensation, defensive bonus lowered to 5% (was 10%);
+	- all corresponding texts corrected;
+- minor text corrections;
+
+v20.4:
+- small promotion's texts corrections;
+- fixed WWs description that were swapped before (Pyramids, Chichen Itza, Taj Mahal);
+
+v20.3 (last for 3.10.X):
+- fixed Soho Foundry tooltip;
+- clarified Great Firewall, Menin Gate and Brandenburg Gate;
+
+v20.2:
+- fixed resource icons sizes;
+- revived checking printouts for Mt. Paektu for a very, very rare situation when it causes map processing problems;
+
+v20.1.2:
+- fixed Skara Brae tootlip;
+
+v20.1.1:
+- fixed improvement requirements;
+
+v20.1:
+- Trans-Siberian Railway now grants gloabl yield boost to Strategic Resources (was local);
+
+v20:
+- World Wonders:
+	- now required improvements must be worked by the interested city (were all in range);
+- Natural Wonders:
+	- excluded City-States from dummy placement (should help with no capital error);
+- Resources:
+	- shortened Monopoly texts (for better look in Trade Opportunities);
+	- changed (mostly nerfed) unique luxury resources:
+		- Giant Tortoise:
+			- lost 1 Food on Camp;
+			- Monopoly bonus halved (now 10% GA Length) and corrected in descriptions;
+			- Research Lab now adds +2 Science;
+		- Sylvite:
+			- dropped Unhappiness reduction from the Monopoly;
+		- Tern Egg:
+			- deleted all flat yields;
+			- halved Monopoly bonus (now +5% Faith on Empire);
+	- deleted unnecessary icon sizes from atlas;
+- text fixes (major are mentioned):
+	- Forge of Damascus texts;
+
+v19:
+- World Wonders:
+	- updated texts for WW changes from VP v3.8 (Uffizi, Chichen Itza, statu of Zeus);
+	- added texts and compatibility for 3 new American WWs (previously they were National Wonders):
+		- splash screens:
+			- moved Slater Mill splash screen old change to American WW one (Soho Foundry is now left with original one);
+			- West Point got new splash screen;
+			- Smithsonian got a splash screen from EE;
+		- quotes:
+			- restored old Slater Mill quote with sound file assigned;
+			- Smithsonian and West Point got new unique quotes;
+	- files cleaning;
+- Natural Wonders:
+	- deleted "blank" model from Eye of the Sahara and Bermuda Triangle code (it should help with CTDs on restart, that didn't happen on my recent tests);
+	- Fountain of Youth's promotion now granted to adjacent units instead of all;
+- disabled EE compatibility until it will be redone/updated/fixed;
+- multiple minor text fixes;
+
+v0.18 and earlier changelogs:
+- they can be found on the forum; game begins from v19 and it was a long journey!

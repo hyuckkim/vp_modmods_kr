@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP</Help>
+			<FreeUnitClass>UNITCLASS_ARTIST</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP</Help>
+			<CultureBonusTurns>15</CultureBonusTurns>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP</Help>
+			<Building>BUILDING_HOLLYWOOD_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_HOLLYWOOD</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD_SPLASH</Help>
+			<ProjectSplashImage>HollywoodSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_HOLLYWOOD</Process>
+			<CostPerPlayer>3500</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_HOLLYWOOD</Type>
+			<Description>TXT_KEY_RESOLUTION_HOLLYWOOD</Description>
+			<Help>TXT_KEY_RESOLUTION_HOLLYWOOD_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_CORPORATIONS</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_HOLLYWOOD</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD">
+			<Text>The Hollywood</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD_SPLASH">			
+			<Text>When Thomas Edison invented a device that could capture motion successfully in a smooth fluid matter, he immediately created a patent to protect his invention. However... there are those who refuse to oblige by these rules and immediately set out to develop a studio that would become the cultural center of the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1">
+			<Text>Film Producer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP">
+			<Text>Receive a free [ICON_GREAT_ARTIST] Great Artist.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2">
+			<Text>Theater Chains</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP">
+			<Text>[ICON_CULTURE] Culture increases by 33% for 15 turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3">
+			<Text>Hollywood Producer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP">
+			<Text>Hollywood wonder appears in [ICON_CAPITAL] Capital (Receive +1 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works in all Cities. +25% [ICON_GREAT_ARTIST] Great Artist generation rate in the City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom in all Cities.).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_HOLLYWOOD">
+			<Text>The Hollywood</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_HOLLYWOOD_HELP">
+			<Text>Begins the project to fund Hollywood. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers {TXT_KEY_TECH_CORPORATIONS_TITLE}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_HOLLYWOOD">
+			<Text>The Hollywood</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_HOLLYWOOD_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards The Hollywood project. Cost goes up based on the number of players in the game, and the current Era.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS">
+			<Text>Hollywood Film Industry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Hollywood is a place where they'll pay you a thousand dollars for a kiss and fifty cents for your soul."[NEWLINE] -Marilyn Monroe[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_HELP">
+			<Text>May only be built collaboratively through the World Congress. Receive +1 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works in all Cities. +25% [ICON_GREAT_ARTIST] Great Artist generation rate in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom in all Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_HOLLYWOOD_HEADQUARTERS_TEXT">
+			<Text>Hollywood is a neighborhood in Los Angeles, California. Hollywood is also the center of the American film industry, making it perhaps the most potent center of cultural influence seen since Paris dominated the world of fashion, arts, and literature in the 18th and 19th centuries. Hollywood owes its existence to two important features: first, the weather is mild and pleasant for most of the year and second, because of its distance from New Jersey.[NEWLINE][NEWLINE]New Jersey was the first film center in the United States, owing to the simple fact that Thomas Edison lived in New Jersey and he held many patents regarding the new technology. He and other early film producers formed a powerful monopoly on the East Coast, where they spent much time and effort trying to stamp out the many small independent producers. To evade Edison and his lawyers, a number of these businesses relocated to Hollywood, Los Angeles, where they were to shortly put Edison and his cronies out of business.[NEWLINE][NEWLINE]The period of 1927 to 1948 was the "Golden Age of Hollywood." Five major studios dominated the industry. The studios created the "star system," in which they heavily promoted their actors and actresses, making them household names while keeping them in ironclad contracts. The system was eventually broken when the actors began refusing to sign the contracts and instead created their own production companies. During this period Hollywood produced hundreds of movies, some of which were great, many more of which were mediocre or worse.[NEWLINE]While Hollywood has diminished somewhat in power and influence, it is still home to many of the major motion picture and television production companies, and it still remains a strong exporter of American culture the worldwide.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_HOLLYWOOD</Type>
+			<Description>TXT_KEY_PROCESS_HOLLYWOOD</Description>
+			<Help>TXT_KEY_PROCESS_HOLLYWOOD_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_HOLLYWOOD_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_HOLLYWOOD</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>60</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_HOLLYWOOD</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_HOLLYWOOD_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_HOLLYWOOD_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_HOLLYWOOD_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_HOLLYWOOD_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_HOLLYWOOD_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<BoredomFlatReductionGlobal>-1</BoredomFlatReductionGlobal>
+			<WonderSplashImage>HollywoodSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_HOLLYWOOD_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+	<Building_GreatWorkYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_HOLLYWOOD_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HOLLYWOOD_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_GreatWorkYieldChanges>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_HOLLYWOOD_HEADQUARTERS</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<Modifier>25</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+</GameData>

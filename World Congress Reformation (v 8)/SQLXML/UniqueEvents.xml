@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL">
+			<Text>도시 국가 해방</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_HELP">
+			<Text>당신은 도시 국가를 해방시켰고 그들은 당신에게 빚을 졌습니다. 당신은 무엇을 하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_1">
+			<Text>우리에게 유리한 정부를 세워야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_2">
+			<Text>세계를 향해 도시 국가를 열어야 한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_3">
+			<Text>그들을 그냥 내버려 두십시오. 그들이 가까운 미래에 우리를 반대하더라도 생각과 행동은 자주적이어야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_1_HELP">
+			<Text>[ICON_BULLET]해당 [ICON_CITY_STATE]도시 국가가 [COLOR_TECH_TEXT]동맹[ENDCOLOR]이 됩니다. 도시 국가의 정부에 강력한 영향력을 끼치는 부서를 만들어서 도시 국가가 당신의 의견에 동조하고 영원한 동맹이 되라고 강요합니다![NEWLINE][ICON_BULLET]국제군이 이를 저지하기 위해 도착할 때까지 당신이 만든 연합 정부를 무너뜨리려는 반군의 움직임이 있을 것입니다![NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]세계 의회가 아직 결성되지 않았다면, 이 행위를 아무도 인지하지 못 합니다! 이 행위는 아무 소용이 없어질 것입니다![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_2_HELP">
+			<Text>[ICON_BULLET]해당 [ICON_CITY_STATE]도시 국가가 [COLOR_TECH_TEXT]우호적[ENDCOLOR]이 됩니다. 문호 개방 정책이 도시 국가에 발행되서 아무도 그들의 동맹이 될 수 없습니다![NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]세계 의회가 아직 결성되지 않았다면, 이 행위는 아무도 인지하지 못 합니다! 이 행위는 아무 소용이 없어질 것입니다![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL_CHOICE_3_HELP">
+			<Text>[ICON_BULLET]해당 [ICON_CITY_STATE]도시 국가가 [COLOR_TECH_TEXT]중립적[ENDCOLOR]이 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2">
+			<Text>도시 국가의 용서</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_HELP">
+			<Text>이제 곧 전임이 될 도시 국가의 현 지도자가 당신에게 다가와 용서를 구했습니다. 당신은 무엇을 하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_1">
+			<Text>그래요, 그들은 한때 그들의 통치 방식으로 인해 잘못된 길로 인도되었습니다. 그들이 다시 한번 더 독립심을 가지고 통치하게 하세요!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_2">
+			<Text>아니오, 꼭두각시 정부를 세우고 총독을 우리를 향한 사람으로 교체하십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_HELP">
+			<Text>당신은 꼭두각시 국가를 해방시키고 [ICON_CITY_STATE]도시 국가의 자치권을 부여하고 [COLOR_TECH_TEXT]동맹[ENDCOLOR]이 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_2_HELP">
+			<Text>그들의 불만을 무시하고 꼭두각시 [ICON_CITY_STATE]도시 국가를 당신의 제국에 편입합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_NOTIFY_SHORT">
+			<Text>전쟁이 수단을 바꿉니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_NOTIFY">
+			<Text>최근, 한 도시 국가가 외국 군대에 함락되었습니다! 하지만, 그 문명은 용서했고 그들에게 다시 한번 자율성을 부여했습니다!</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL_HELP</Help>
+			<RandomChance>-1</RandomChance>
+			<EventCooldown>1</EventCooldown>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+			<NumChoices>3</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL2</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL2</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL2_HELP</Help>
+			<RandomChance>-1</RandomChance>
+			<EventCooldown>1</EventCooldown>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+			<NumChoices>2</NumChoices>
+		</Row>
+	</Events>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_CSVASSAL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL_CHOICE_2</EventChoiceType>
+			<EventType>PLAYER_EVENT_CSVASSAL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL_CHOICE_3</EventChoiceType>
+			<EventType>PLAYER_EVENT_CSVASSAL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL2_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_CSVASSAL2</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL2_CHOICE_2</EventChoiceType>
+			<EventType>PLAYER_EVENT_CSVASSAL2</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoices>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL_CHOICE_1_HELP</Help>
+			<EventDuration>1</EventDuration>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL_CHOICE_2_HELP</Help>
+			<EventDuration>1</EventDuration>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL_CHOICE_3_HELP</Help>
+			<EventDuration>1</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL2_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL2_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_HELP</Help>
+			<EventDuration>1</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_CSVASSAL2_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_CSVASSAL2_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_CSVASSAL2_CHOICE_2_HELP</Help>
+			<EventDuration>1</EventDuration>
+		</Row>
+	</EventChoices>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL2_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL2_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_CSVASSAL2_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_NOTIFY</Description>
+			<ShortDescription>TXT_KEY_EVENT_CSVASSAL2_CHOICE_1_NOTIFY_SHORT</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+</GameData>

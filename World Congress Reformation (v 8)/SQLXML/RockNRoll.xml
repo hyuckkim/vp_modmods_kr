@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP</Help>
+			<TourismBonusTurns>10</TourismBonusTurns>
+			<Happiness>4</Happiness>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_MUSICIAN</FreeUnitClass>		
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP</Help>
+			<Building>BUILDING_ROCKNROLL_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_ROCKNROLL</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_ROCKNROLL</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_ROCKNROLL_SPLASH</Help>
+			<ProjectSplashImage>ROCKNROLLSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_ROCKNROLL</Process>
+			<CostPerPlayer>1500</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_ROCKNROLL_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_ROCKNROLL_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_ROCKNROLL_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_ROCKNROLL</Type>
+			<Description>TXT_KEY_RESOLUTION_ROCKNROLL</Description>
+			<Help>TXT_KEY_RESOLUTION_ROCKNROLL_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_RADIO</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_ROCKNROLL</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_ROCKNROLL">
+			<Text>락 페스티벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_ROCKNROLL_SPLASH">			
+			<Text>들리나요? 새로운 세대에서 새로운 트렌드가 진행되고 국가들은 자신의 용도에 맞게 이 곡을 완성할 수 있는 사람을 찾기 위해 경쟁하고 있습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1">
+			<Text>히트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP">
+			<Text>10턴 동안 [ICON_TOURISM]관광 +50%. [ICON_HAPPINESS_1]행복 +4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2">
+			<Text>기록적인 히트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP">
+			<Text>[ICON_GREAT_MUSICIAN]위대한 음악가 1명이 출현합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3">
+			<Text>역사적인 히트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP">
+			<Text>가수들의 명예의 전당이 [ICON_CAPITAL]수도에 출현합니다 ([ICON_GREAT_MUSICIAN]음악가 전문가 슬롯 1개, [ICON_HAPPINESS_1]행복 +1, 소도시의 [ICON_TOURISM]관광 +2).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_ROCKNROLL">
+			<Text>락 페스티벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_ROCKNROLL_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]락 페스티벌[ENDCOLOR]을 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]라디오[ENDCOLOR]를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_ROCKNROLL">
+			<Text>락 페스티벌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_ROCKNROLL_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 락 페스티벌에 사용합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS">
+			<Text>가수들의 명예의 전당</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"그런 다음 그녀는 뉴욕 방송을 켭니다. 그녀의 생명은 로큰롤 덕분에 구했다는 것을 알 수 있습니다." [NEWLINE] - 벨벳 언더그라운드[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_HELP">
+			<Text>[ICON_GREAT_MUSICIAN]음악가 전문가 슬롯 1개를 제공합니다. [ICON_HAPPINESS_1]전역 행복 +1. 소도시의 [ICON_TOURISM]관광이 +2 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_ROCKNROLL_HEADQUARTERS_TEXT">
+			<Text>엘비스 프레슬리, "더 킹"은 사람들이 록앤롤이라고 부르는 새로운 비트를 연주했다. 그것은 순식간에 세계적인 센세이션을 일으켰다. 엘비스의 집은 "그레이스랜드"라고 불렸고 1957년 프레슬리가 매입했다. 프레슬리는 1977년에 사망했고, 14에이커의 사유지는 5년 후에 박물관으로 바뀌었다. 프레슬리와 그의 부모, 할머니, 그리고 사산한 쌍둥이 형제가 그 땅에 묻혔다.[NEWLINE]오늘날 그레이스랜드는 미국 문화에서 거의 신화적인 지위를 얻은 한 남자의 주목할 만한 증거로 서 있다. 그 곳에서 사람들은 "흑인처럼 노래한" 청바지 차림의 빛나는 반란군인 젊은 엘비스의 모습을 볼 수 있다. 그는 미국 십대들을 영국 락커들의 손아귀에서 유혹하고 도처에 있는 겁에 질린 부모들의 손아귀에서 벗어나게 했다.[NEWLINE]이 희미한 이미지들을 덧씌우고 있는 것은 엘비스가 어떻게 되었는지에 대한 그림이다. 그 피곤에 지친 과체중인 남자는 라스베가스에서 흰 줄넘기 옷을 입고 노래하고, 중년 주부들이 던져주는 속옷을 피하고, 리차드 닉슨과 악수를 하고, 마침내 그의 지나친 행위로 죽었다.[NEWLINE]오늘날, 엘비스는 여전히 수백만의 사람들에게 사랑 받고 있으며, 그들 중 많은 사람들은 그가 죽었다는 것을 믿지 않는다. 그럼에도 불구하고, 그들은 그의 묘지에 꽃을 바치기 위해 수천 명씩 저택으로 몰려든다.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_ROCKNROLL</Type>
+			<Description>TXT_KEY_PROCESS_ROCKNROLL</Description>
+			<Help>TXT_KEY_PROCESS_ROCKNROLL_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_ROCKNROLL_HELP</Strategy>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_ROCKNROLL</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_ROCKNROLL</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_ROCKNROLL</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ROCKNROLL_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_ROCKNROLL_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ROCKNROLL_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_ROCKNROLL_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Happiness>1</Happiness>
+			<Description>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_ROCKNROLL_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<WonderSplashImage>RockNRollSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_ROCKNROLL_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+	<Building_ImprovementYieldChangesGlobal>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE_VENICE</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_ImprovementYieldChangesGlobal>
+</GameData>

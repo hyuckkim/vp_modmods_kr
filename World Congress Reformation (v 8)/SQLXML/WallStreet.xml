@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP</Help>
+			<Building>BUILDING_WALL_STREET</Building>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_MERCHANT</FreeUnitClass>		
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP</Help>
+			<Building>BUILDING_WALL_STREET_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_WALL_STREET</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_WALL_STREET</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_WALL_STREET_SPLASH</Help>
+			<ProjectSplashImage>WallStreetSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_WALL_STREET</Process>
+			<CostPerPlayer>800</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_WALL_STREET_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_WALL_STREET_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_WALL_STREET_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_WALL_STREET</Type>
+			<Description>TXT_KEY_RESOLUTION_WALL_STREET</Description>
+			<Help>TXT_KEY_RESOLUTION_WALL_STREET_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_ECONOMICS</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_WALL_STREET</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WALL_STREET">
+			<Text>국제 통화 기금</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WALL_STREET_SPLASH">			
+			<Text>세계 경제는 정리될 필요가 있다. 인프라는 개발되었습니다. 투자를 잘하는 사람들은 좋은 보상을 받을겁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1">
+			<Text>운영위원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP">
+			<Text>운영위원 자격국이 [ICON_CAPITAL]수도에 출현합니다 (모든 도시의 [ICON_GOLD]빈곤이 -10% 감소).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2">
+			<Text>이사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP">
+			<Text>[ICON_GREAT_MERCHANT]위대한 상인이 1명 출현합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3">
+			<Text>총장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP">
+			<Text>국제 통화 기금 본부가 [ICON_CAPITAL]수도에 출현합니다 ([ICON_GREAT_MERCHANT]상인 전문가 슬롯 1개 제공, 추가 대표단 1명, 도시 국가와의 상태에 따른 [ICON_GOLD]골드 보너스).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WALL_STREET">
+			<Text>국제 통화 기금 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WALL_STREET_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]국제 통화 기금 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]경제학[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_WALL_STREET">
+			<Text>국제 통화 기금 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WALL_STREET_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 국제 통화 기금 프로젝트에 사용합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET">
+			<Text>운영위원 자격국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HELP">
+			<Text>모든 도시의 [ICON_GOLD]빈곤에서 오는 [ICON_HAPPINESS_3]불행이 -10% 감소합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WALL_STREET_TEXT">
+			<Text>제대로 작동하는군.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS">
+			<Text>국제 통화 기금 본부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"경제 불황은 입법 조치나 행정 발표로는 치유될 수 없다. 경제적 상처는 생산자와 소비자 자신인 경제 주체의 세포들의 작용에 의해 치유되어야 한다."[NEWLINE] - 허버트 후버[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_HELP">
+			<Text>[ICON_GREAT_MERCHANT]상인 전문가 슬롯 1개를 제공합니다. 세계 의회에 추가 대표단 1명을 제공합니다. 동맹인 도시 국가 1개마다 [ICON_GOLD]골드 +3, [ICON_GOLDEN_AGE]황금기 점수 +1씩 증가합니다. 우호적인 도시 국가 1개마다 [ICON_GOLD]골드가 +1씩 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WALL_STREET_HEADQUARTERS_TEXT">
+			<Text>국제통화기금(IMF)은 세계 통화 협력을 촉진하고, 금융 안정을 확보하며, 국제 무역을 촉진하고, 높은 고용과 지속 가능한 경제성장을 촉진하고, 전 세계의 빈곤을 줄이기 위해 노력하는 국가들로 구성된 국제 기구이다. 그것은 국제수지 어려움과 국제 금융위기 관리에 중심적인 역할을 한다. 각국은 국제수지 문제를 겪고 있는 국가들이 돈을 빌릴 수 있는 할당제를 통해 풀에 자금을 기부한다.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_WALL_STREET</Type>
+			<Description>TXT_KEY_PROCESS_WALL_STREET</Description>
+			<Help>TXT_KEY_PROCESS_WALL_STREET_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_WALL_STREET_HELP</Strategy>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_WALL_STREET</ProcessType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_WALL_STREET</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_WALL_STREET</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_WALL_STREET_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_WALL_STREET_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_WALL_STREET</Type>
+			<DefaultBuilding>BUILDING_WALL_STREET</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_WALL_STREET</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_WALL_STREET_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_WALL_STREET_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_WALL_STREET_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<SingleLeagueVotes>1</SingleLeagueVotes>
+			<WonderSplashImage>WallStreetSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_WALL_STREET_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+		<Row>
+			<Type>BUILDING_WALL_STREET</Type>
+			<BuildingClass>BUILDINGCLASS_WALL_STREET</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<Description>TXT_KEY_BUILDING_WALL_STREET</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_WALL_STREET_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_WALL_STREET_HELP</Help>
+			<IconAtlas>NEW_BLDG_ATLAS_DLC</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<PovertyHappinessChangeGlobal>-10</PovertyHappinessChangeGlobal>
+			<MinAreaSize>-1</MinAreaSize>
+		</Row>
+	</Buildings>
+	<Building_YieldPerFriend>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldPerFriend>
+	<Building_YieldPerAlly>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldPerAlly>
+</GameData>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP</Help>
+			<FreeUnitClass>UNITCLASS_MUSICIAN</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP</Help>
+			<TourismBonusTurns>10</TourismBonusTurns>
+			<Happiness>4</Happiness>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_ROCKNROLL_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP</Help>
+			<Building>BUILDING_ROCKNROLL_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_ROCKNROLL</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_ROCKNROLL</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_ROCKNROLL_SPLASH</Help>
+			<ProjectSplashImage>ROCKNROLLSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_ROCKNROLL</Process>
+			<CostPerPlayer>3750</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_ROCKNROLL_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_ROCKNROLL_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_ROCKNROLL_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_ROCKNROLL</Type>
+			<Description>TXT_KEY_RESOLUTION_ROCKNROLL</Description>
+			<Help>TXT_KEY_RESOLUTION_ROCKNROLL_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_RADIO</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_ROCKNROLL</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_ROCKNROLL">
+			<Text>Rock-N-Roll</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_ROCKNROLL_SPLASH">			
+			<Text>You hear that? There's a new trend going on in the new generation and the nations are racing to find who can perfect this tune for their own uses!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1">
+			<Text>Hits Singles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP">
+			<Text>Receive a free [ICON_GREAT_MUSICIAN] Great Musician.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2">
+			<Text>Hits Records</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP">
+			<Text>[ICON_TOURISM] Tourism increases by 50% for 10 turns. +4 [ICON_HAPPINESS_1] Happiness</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3">
+			<Text>Exclusive Hits</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP">
+			<Text>Rock N Roll hit single appears in [ICON_CAPITAL] Capital (Receive +10000 [ICON_TOURISM] Tourism with all known Civilizations when completed. +25% [ICON_GREAT_MUSICIAN] Great Musician generation rate in the City. All Broadcast Towers, Stadiums, and Towns gain +1 [ICON_TOURISM] Tourism.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_ROCKNROLL">
+			<Text>Rock-N-Roll</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_ROCKNROLL_HELP">
+			<Text>Begins the project to fund Rock-N-Roll. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_ROCKNROLL_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers {TXT_KEY_TECH_RADIO_TITLE}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_ROCKNROLL">
+			<Text>Rock-N-Roll</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_ROCKNROLL_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards Rock-N-Roll project. Cost goes up based on the number of players in the game, and the current Era.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS">
+			<Text>Rock-N-Roll</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"And then she turns on that New York station, you know her life was saved by rock and roll." [NEWLINE] - The Velvet Underground[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_HELP">
+			<Text>May only be built collaboratively through the World Congress. Receive +10000 [ICON_TOURISM] Tourism with all known Civilizations when completed. +25% [ICON_GREAT_MUSICIAN] Great Musician generation rate in the City. 10% of [ICON_CULTURE] Culture created by all Cities on Empire counts as [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]All Broadcast Towers, Stadiums, and Towns gain +1 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_ROCKNROLL_HEADQUARTERS_TEXT">
+			<Text>Elvis Presley, "The King", played a new beat that people called Rock-n-Roll. It quickly became a worldwide sensation. Elvis' home was called "Graceland" and was purchased by Presley in 1957. Presley died in 1977; the 14-acre estate was turned into a museum five years later. Presley, his parents, grandmother, and stillborn twin brother are buried on the grounds.[NEWLINE][NEWLINE]Today Graceland stands as a remarkable testament to a man who achieved almost mythological status in American culture. Therein one can see glimpses of the young Elvis - the brilliant jeans-clad rebel who "sang like a black man," the man who seduced American teens from the clutches of British rockers and frightened parents everywhere.[NEWLINE][NEWLINE]Overlaying these faint images is the picture of what Elvis became: the jaded overweight man, singing in Las Vegas in a white sequined jumpsuit, dodging underwear thrown by middle-aged housewives, shaking hands with Richard Nixon, and finally dying of his excesses.[NEWLINE][NEWLINE]Today, Elvis is still beloved by millions, many of whom refuse to believe that he died. Despite this, they flock to the mansion by the thousands to lay flowers at his gravesite.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_ROCKNROLL</Type>
+			<Description>TXT_KEY_PROCESS_ROCKNROLL</Description>
+			<Help>TXT_KEY_PROCESS_ROCKNROLL_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_ROCKNROLL_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_ROCKNROLL</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ROCKNROLL_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_ROCKNROLL_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ROCKNROLL_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_ROCKNROLL_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_ROCKNROLL_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_ROCKNROLL_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<!--<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>-->
+			<WonderSplashImage>RockNRollSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_ROCKNROLL_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+	<Building_InstantYield>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>10000</Yield>
+		</Row>
+	</Building_InstantYield>
+	<Building_YieldFromYieldPercentGlobal>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<YieldIn>YIELD_CULTURE</YieldIn>
+			<YieldOut>YIELD_TOURISM</YieldOut>
+			<Value>10</Value>
+		</Row>
+	</Building_YieldFromYieldPercentGlobal>
+	<Building_BuildingClassYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</Building_BuildingClassYieldChanges>
+	<Building_ImprovementYieldChangesGlobal>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ImprovementYieldChangesGlobal>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_ROCKNROLL_HEADQUARTERS</BuildingType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<Modifier>25</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+</GameData>

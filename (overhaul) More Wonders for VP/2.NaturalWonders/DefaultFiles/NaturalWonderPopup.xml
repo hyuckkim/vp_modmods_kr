@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT14" FontStyle="Base" Color="Beige" Color1="Black" >
+	<Box Style="BGBlock_ClearTopBar" />
+	<Grid Size="700,560" Anchor="C,C" Offset="0,55"  Style="Grid9DetailFive140" >
+		<Image Anchor="C,T" AnchorSide="I.O"  Offset="0,-22" Texture="Assets/UI/Art/Controls/NaturalWonderPopupTop300.dds" Size="300.150" >
+			<Image ID="Icon" Anchor="C,C" Offset="0,20" TextureOffset="128.0" Texture="NaturalWonders512.dds" Size="128.128" />
+		</Image>
+
+		<!-- Side treatments -->
+		<Box Style="MenuLeftSideTreatment"/>
+		<Box Style="MenuRightSideTreatment"/>
+
+		<Label Anchor="C,T" Offset="0,22" Font="TwCenMT20" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" String="TXT_KEY_POP_NATURAL_WONDER_FOUND" ID="WonderLabel"/>
+
+		<Box Size="650,390" Anchor="C,T" Offset="0,55"  Color="255,255,255,0" >
+			<Stack Anchor="L,T" StackGrowth="B" Padding="0">
+				<Label Anchor="L,T" Offset="0,0" WrapWidth="650" Font="TwCenMT16" FontStyle="Shadow" ColorSet="Gold_Medal" String="TXT_KEY_POP_NATURAL_WONDER_FOUND" ID="QuoteLabel"/>
+
+				<Box Size="645,25" Anchor="C,T" Offset="0,0"  Color="255,255,255,0" >
+					<Label Anchor="C,C" Offset="0,0" Font="TwCenMT20" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" String="TXT_KEY_POP_NATURAL_WONDER_FOUND" ID="TitleLabel" />
+				</Box>
+
+				<Label Anchor="L,T" Offset="0,-25" WrapWidth="650" Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" String="TXT_KEY_POP_NATURAL_WONDER_FOUND" ID="DescriptionLabel" />
+			</Stack>
+		</Box>
+
+		<GridButton Size="200,36" Anchor="C,B" Style="BaseButton" AnchorSide="I.O" Offset="0,0" ID="CloseButton" Hidden="0">
+			<Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_CLOSE"  Color0="255.255.200.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow" />
+		</GridButton>
+	</Grid>
+</Context>

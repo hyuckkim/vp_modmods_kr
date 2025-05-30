@@ -50,7 +50,7 @@ There are:
 */
 
 INSERT INTO USnF_Config (Type, Value)
-VALUES ('USnF_LAND', 1);
+VALUES ('USnF_LAND', 3);
 
 /*
 ========== Sea units scaling and formation profile ==========
@@ -65,7 +65,7 @@ There are:
 */
 
 INSERT INTO USnF_Config (Type, Value)
-VALUES ('USnF_SEA', 1);
+VALUES ('USnF_SEA', 3);
 
 /*
 ========== Air units scaling and formation profile ==========
@@ -81,7 +81,7 @@ There are:
 */
 
 INSERT INTO USnF_Config (Type, Value)
-VALUES ('USnF_AIR', 1);
+VALUES ('USnF_AIR', 3);
 
 /*
 ========== Use unit scaling multiplier [EXPERIMENTAL] ==========
