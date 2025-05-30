@@ -1,0 +1,14 @@
+name: VP INT Ex build to .exe
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        run: iscc "vp_modmods_kr installer file/CPPSetupData.iss" /O"out_githubaction" /F"Vox Populi INT Ex"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "Vox Populi INT Ex"
+          path: "out_githubaction/Vox Populi INT Ex.exe"
