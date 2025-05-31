@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 위대한 결혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 위대한 인물과 약혼하였습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 경제적 결혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 페니키아인과 결혼하여 그 세력으로 권력을 이동시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 군사적 결혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 뛰어난 젊은 장군과 약혼하였습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 과학적 결혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 새로운 남편을 찾기 위해 지역의 군벌을 찾아갑니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 외국 결혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 악명 높은 해적 선장을 자신의 편으로 끌어들입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 세계 의회</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CARTHAGE_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 현재의 재정 문제를 해결하기 위해 세계 의회의 금융 기금을 상담합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION">
+      <Text>채울 수 없는 운명</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP">
+      <Text>폐하! 엘리사, 우리 국민의 상징, 아름다움의 초상, 약자의 보호자, 어머니-[NEWLINE]*기침을 함*[NEWLINE]저, 그... 폐하, 문제는 재혼입니다. 고문들이 새로운 배우자를 안절부절하고 있습니다. 왕의 사망이 갑작스러웠지만, 이제는 꽤 시간이 지났습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 선택하여 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}을(를) 투자하여 오래된 페니키아의 관습을 재발견합니다. [ICON_RES_CRAB] 게 2개를 얻으며, 어업 보트는 +1 [ICON_GOLD] 금과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_3">
+      <Text>장군 {1_YieldCost}의 자금을 지원합니다. 두 마리의 전쟁 코끼리가 [ICON_CAPITAL] 수도에서 훈련되며, 유닛이 이제 산 지형을 통과할 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_4">
+      <Text>{1_YieldCost}을(를) 사용하여 외국의 종교 전사들을 모집합니다. [ICON_CAPITAL] 수도에 세 명의 예니체리가 도착합니다. 수도의 신전, 경찰서, 그리고 치안 유지소가 +20% [ICON_PEACE] 신앙을 생성하지만, [ICON_RELIGION] 종교 분열 임계값이 15% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_5">
+      <Text>바르바리 해적들이 적의 난파선으로 [ICON_GOLD] 금과 [ICON_PRODUCTION] 생산을 교환합니다. 항구는 매 턴 +3 [ICON_GOLD] 금과 +3 [ICON_PRODUCTION] 생산을 얻지만, [ICON_STRENGTH] 위기도가 5% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_HELP_CHOICE_6">
+      <Text>세계 의회의 금융 기금을 통해 최대 {2_InstantYield}을(를) 포기합니다. [ICON_CAPITAL] 수도에 네 명의 외국 군단이 도착합니다. 수도의 세관, 은행, 증권 거래소가 +20% [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_1">
+      <Text>*의회가 여러 후보를 제시했습니다*</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_2">
+      <Text>*경제 고문은 강력한 페니키아 유산을 지닌 나이 많은 해군 장교가 가장 전략적인 후보라고 생각합니다*[NEWLINE]그가 무엇을 가지고 오는 걸까요? 어업 산업? 좋습니다... 적어도 그는 탄탄해 보입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_3">
+      <Text>*군사 고문은 뛰어난 젊은 장군이 나라를 통합할 선택이라고 생각합니다*[NEWLINE]정말 흥미롭네요. 이 남자가 코끼리가 산을 넘도록 가르칠 수 있다고 들었습니다. 산을요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_4">
+      <Text>*과학 고문은 주말마다 지역 군벌과 백개를 하고 있습니다*[NEWLINE]우리는 군대가 필요합니다. 천국에서 이루어진 만남 같은 느낌이네요! 아니면... 그 사람들이 어디로 갈 거라고 믿는 곳에서요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_5">
+      <Text>*외교 고문은 적의 항구에서 여러 번 대담한 공격을 해온 젊은 해군 장교를 가장 흥미로운 싱글로 고려합니다*[NEWLINE]눈밭이나 발이 없어서 다행입니다. 모든 팔과 다리가 그대로 있으면 좋겠네요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CARTHAGE_UE_DESCRIPTION_CHOICE_6">
+      <Text>이건 말도 안 됩니다! 우리가 문제를 해결하기 위해 나를 결혼시킬 때가 언제인지! 나라가 경제적 어려움에 처해 있다면, 이런 문제를 처리하기 위해 설정된 국제 기구에 상담할 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_PIRATE_SLAVER">
+      <Text>해적 포로상</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_PIRATE_SLAVER_HELP">
+      <Text>처치 시 금과 생산 보상. 카르타고의 이벤트를 통해서만 부여됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_MOUNTAIN_TACTICS">
+      <Text>산악 전술</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_MOUNTAIN_TACTICS_HELP">
+      <Text>산을 가로지를 수 있습니다. 카르타고의 이벤트를 통해서만 부여됩니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

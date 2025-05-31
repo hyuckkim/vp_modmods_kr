@@ -1,0 +1,473 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_GERMANY_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_GERMANY</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EventPromotion>PROMOTION_WOODSMAN</EventPromotion>
+			<ImprovementAnywhereRequired>IMPROVEMENT_LUMBERMILL</ImprovementAnywhereRequired>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+		</Row>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3</Description>
+			<RequiresWar>true</RequiresWar>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HEROIC_EPIC</RequiredAnywhereBuildingClass>
+			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
+			<IsOneShot>true</IsOneShot>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MUSICIANS_GUILD</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LABORATORY</RequiredAnywhereBuildingClass>
+			<EventFreeTechs>1</EventFreeTechs>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_GERMANY_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6</Description>
+			<RequiresWar>true</RequiresWar>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TRAINSTATION</RequiredAnywhereBuildingClass>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<ImprovementAnywhereRequired>IMPROVEMENT_MANUFACTORY</ImprovementAnywhereRequired>
+			<MinimumNationalPopulation>200</MinimumNationalPopulation>
+			<EventPromotion>PROMOTION_BLITZ</EventPromotion>
+			<EventDuration>-1</EventDuration>
+			<GoldenAgeTurns>10</GoldenAgeTurns>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_GERMANY_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_UE_ORDER</Type>
+			<DefaultBuilding>BUILDING_UE_ORDER</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_UE_ORDER</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_UE_ORDER</Type>
+			<BuildingClass>BUILDINGCLASS_UE_ORDER</BuildingClass>
+			<Cost>-1</Cost>
+			<FaithCost>250</FaithCost>
+			<Description>TXT_KEY_BUILDING_UE_ORDER</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ORDER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_UE_ORDER_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_ORDER_HELP</Help>
+			<TrainedFreePromotion>PROMOTION_MORALE</TrainedFreePromotion>
+			<ArtDefineTag>TEMPLE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<Defense>1000</Defense>
+			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<ReligiousPressureModifier>25</ReligiousPressureModifier>
+			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<EventChoiceRequiredActive>EVENT_GERMANY_UE_CHOICE_3</EventChoiceRequiredActive>
+			<MutuallyExclusiveGroup>367</MutuallyExclusiveGroup>
+			<IsDummy>true</IsDummy>
+			<BasicNeedsMedianModifier>-10</BasicNeedsMedianModifier>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Experience>15</Experience>
+		</Row>
+	</Building_DomainFreeExperiences>
+	<Building_YieldFromVictoryGlobal>
+		<Row>
+			<BuildingType>BUILDING_UE_ORDER</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Building_YieldFromVictoryGlobal>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s A New Chancellor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1">
+			<Text>{3_PlayerName} chooses a new Chancellor!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Unity Under One Flag</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2">
+			<Text>{3_PlayerName} unities minority factions within the State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Teutonic Order</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3">
+			<Text>{3_PlayerName} recalls crusaders to defend Germany!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Conservatories Sponsorships </Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4">
+			<Text>{3_PlayerName} endows a series of Conservatories.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Science Funding</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5">
+			<Text>{3_PlayerName} provides additional funding and legislature to support scientific institutes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Call for War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6">
+			<Text>{3_PlayerName} readies for a higher form of war!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION">
+			<Text>Germany, Above All Else</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP">
+			<Text>The governors of your many provinces have called a great Bundesrat to settle issues of national importance. Old feuds have flared up, and where there is any agreement, it is an ineffectual compromise.[NEWLINE][NEWLINE]Germany begs you to bring order to this rabble.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2">
+			<Text>Eligible Units receive the Woodsman promotion and all Forests gain +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3">
+			<Text>At the cost of {2_InstantYield} unlock the Teutonic Chapter Building. Other Orders gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4">
+			<Text>Opera Houses gain +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism. Every [ICON_GREAT_MUSICIAN] Musician generates +1 [ICON_CULTURE] Culture and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5">
+			<Text>Receive a [ICON_RESEARCH] Free Tech. Academies produce +2 [ICON_RESEARCH] Science, [ICON_GOLD] Gold and [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6">
+			<Text>Eligible Units receive the Blitz promotion. You enter a [ICON_GOLDEN_AGE] Golden Age for 10 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1">
+			<Text>If agreement cannot be found on these trivial issues, I will personally invest a Chancellor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The subject of purging native, pagan populations is becoming increasingly contentious*[NEWLINE]Those who dwell in the deep forests are as German as any man. Instead of shunning them, we ought to be welcoming them into this brave new world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The war is causing some extreme views to gain support and threaten the internal power structure*[NEWLINE]In this time of tribulation, we must make some concessions to the church. We must recall all those crusaders fighting in foreign lands, in order to defend the faith here, at home.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Many members of the meeting have been personally slighted by a prodigal musician, and move to see him exiled or worse*[NEWLINE]This is ridiculous! These overinflated Barons need to gain some perspective! We ought to give patronage to our composers and nurture their creativity, lest they are tempted by foreign courts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5">
+			<Text>*One faction wishes to massively increase science funding, but they cannot secure a majority*[NEWLINE]Our physical scientists are among the best in the world, and their inventions crucial to our economy. We must support them however we can.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6">
+			<Text>*A pacifistic group are trying to oppose the largescale manufacturing of arms*[NEWLINE]Our country has grown strong: our manufactories and train stations the cathedrals of this new age. Soon, we will take our rightful place in the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_ORDER">
+			<Text>Teutonic Chapter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_ORDER_STRATEGY">
+			<Text>Purchasable with an Event Choice unique to Germany. Mutually exclusive with the Order.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

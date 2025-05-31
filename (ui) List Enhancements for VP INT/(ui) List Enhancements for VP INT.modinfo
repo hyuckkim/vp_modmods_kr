@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b839505c-be69-49c3-bf90-2c31a7197ea8" version="6">
+  <Properties>
+    <Name>(ui) List Enhancements for VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the List Enhancements for VP</Teaser>
+    <Description>Translation of the List Enhancements for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 목록 개선 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="200c965c-b3c0-43e6-8656-a7df71189c81" minversion="0" maxversion="999" title="(ui) List Enhancements for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="55A77CA401C97F2254C6A14C728D4A5A" import="0">Texts/ListTextFields.xml</File>
+    <File md5="DCC8AFEE0BE68BF1FA6127E71E5C4DEB" import="0">UI/CityList.lua</File>
+    <File md5="F6289424B6F78E6235AD7ABD5675E81B" import="0">UI/UnitList.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/ListTextFields.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

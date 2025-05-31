@@ -1,0 +1,223 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>5</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiresWar>true</RequiresWar>
+			<EventArt>advisormilitary.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<PlayerHappiness>-3</PlayerHappiness>
+			<EventDuration>30</EventDuration>
+			<Expires>true</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</Type>
+			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>5</EventDuration>
+			<Expires>true</Expires>
+			<EventPromotion>PROMOTION_AES_HOSTILITY</EventPromotion>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AES_HOSTILITY</Type>
+			<Description>TXT_KEY_PROMOTION_AES_HOSTILITY</Description>
+			<Help>TXT_KEY_PROMOTION_AES_HOSTILITY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CombatPercent>-10</CombatPercent>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AES_HOSTILITY</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION">
+			<Text>War Crimes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP">
+			<Text>Sir, there are some bad news need to be dealt with...[NEWLINE][NEWLINE]
+			
+			A group of our elite troops have been discovered commiting crimes too horrible to describe. How should they be dealt with?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>Public opinion turns against you, +3 [ICON_HAPPINESS_3] Unhappiness for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2">
+			<Text>Defuse the situation with {1_YieldCost}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3">
+			<Text>Defuse the situation with {1_YieldCost}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4">
+			<Text>Your troops are demoralised by these events. -10% [ICON_STRENGTH] Strength for {4_Turns}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>War is hell, we expect there to be devils. Discipline them, send them back into battle.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2">
+			<Text>What these men have done is an abomination, but if I send them to their judgment now, they are surely damned. They should be sent to live with the priests, and atone for their sins.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3">
+			<Text>The other leaders of the world cannot find out about this. Silence all witnesses, whatever it takes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4">
+			<Text>Disgusting. Off with their heads.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY">
+			<Text>Demoralised</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY_HELP">
+			<Text>-10% [ICON_STRENGTH] Strength</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

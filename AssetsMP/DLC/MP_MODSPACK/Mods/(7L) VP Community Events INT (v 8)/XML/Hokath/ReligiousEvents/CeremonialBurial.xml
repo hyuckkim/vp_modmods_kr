@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_1_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_1">
+      <Text>{3_PlayerName}의 종교인들이 의식적 장례의 비밀을 밝히기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_2_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_2">
+      <Text>{3_PlayerName}의 군대가 {1_CivShortDescription}에서 개발 중인 새로운 종교 교리에 극단화되었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_3_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_3">
+      <Text>{3_PlayerName}가 의식적 장례의 비밀을 그들의 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_4_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_4">
+      <Text>{3_PlayerName}가 고대 설계도에 맞게 영묘를 업그레이드했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_5_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_5">
+      <Text>{3_PlayerName}가 고대 유물을 찾기 위해 요원들을 파견했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_6_S">
+      <Text>{3_PlayerName}가 의식적 장례의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CEREMONIAL_BURIAL_CHOICE_6">
+      <Text>{3_PlayerName}가 의식적 장례의 신성한 유물을 발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION">
+      <Text>육체와 영혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP">
+      <Text>우리의 첫 번째 예언자가 위대한 종교를 창립했을 때, 그는 이 세상에서 사라졌습니다. 어떤 사람들은 그가 천국에 올라갔다고 말하지만, 다른 사람들은 더 음산한 운명을 속삭입니다. 만약 우리가 문헌을 올바르게 해석한다면, 그의 잠재적인 부재는 그의 영혼을 중립 상태로 남길 수 있습니다. 게다가, 예언자의 인도가 없이는, 우리의 망자들이 사후 세계를 잘 헤쳐 나갔는지 누가 알겠습니까?[NEWLINE][NEWLINE]이것이 우리의 탐구입니다: 예언자의 유물을 회수하고, 이를 통해 우리 모두를 구원하는 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 영묘가 +1 [ICON_PEACE] 신앙을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 탐구의 성공 소문을 퍼뜨립니다. 모든 근접 및 총기 유닛이 광신주의 승급을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 영묘가 +1 [ICON_PEACE] 신앙을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_4">
+      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 영묘의 [ICON_PEACE] 신앙이 33% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_5">
+      <Text>최종 장례지 탐구에서 추가 [ICON_SPY] 스파이를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 모든 도시가 +20% [ICON_GREAT_PEOPLE] 위대한 인물 점수를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_1">
+      <Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 예언자의 삶에 대해 아는 모든 것을 찾아야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_2">
+      <Text>*우리 신앙의 중심 원칙 연구는 천국을 향한 삶의 주요 관행을 강조해 왔습니다*[NEWLINE]천국의 약속을 믿는 자들은 자신의 불멸의 영혼을 보호하기 위해 무엇이든 할 것입니다. 이것은 우리에게 큰 이익을 줄 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_3">
+      <Text>탐색이 계속되고 있으며, 현재 진행 상태에 만족하지 않습니다. 예언자의 마음을 이해하고 그의 동기와 변덕을 알기 위해서는 그가 살고 기도했던 대로 살아야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_4">
+      <Text>드디어 성공! 세상에 잊혀진 성소가 발견되었습니다. 그 안에는 예언자의 것으로 보이는 두루마리와 장신구들이 있었습니다! 그 중에는 영묘의 원본 청사진도 완벽히 주석이 달려 있었습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_5">
+      <Text>최종 두루마리의 번역이 완료되었습니다. 예언자의 마지막 안식처가 될 수 있는 장소가 식별되었습니다. 가장 신성한 유물을 잃기 전에 회수해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_CEREMONIAL_BURIAL_DESCRIPTION_CHOICE_6">
+      <Text>우리의 노력이 드디어 보상을 받았습니다. 예언자의 시신이 회수되었고, 여전히 기적적으로 온전합니다. 그는 이제 영묘의 명예의 장소에 안장될 수 있습니다. 이제 우리는 아마도 이 세상 너머의 모든 자리를 확보했을 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_CEREMONIAL_BURIAL">
+      <Text>광신주의</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_CEREMONIAL_BURIAL_HELP">
+      <Text>적 처치 시 [ICON_PEACE] 신앙을 보상하고 5 HP를 회복합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

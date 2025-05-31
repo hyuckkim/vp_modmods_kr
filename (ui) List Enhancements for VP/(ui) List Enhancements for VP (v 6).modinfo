@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="200c965c-b3c0-43e6-8656-a7df71189c81" version="6">
+  <Properties>
+    <Name>(ui) List Enhancements for VP</Name>
+    <Teaser>Ehancements for left EUI info panels</Teaser>
+    <Description>Modifies EUI lists in left info panels.</Description>
+    <Authors>William Howard/adan_eslavo</Authors>
+    <SpecialThanks>EUI makers</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/list-enhancements-for-vp.638546/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="869B233C55DC31F28A13E4680FB9BFF4" import="0">Changelog.txt</File>
+    <File md5="210391F294ABFF75EAF6EFB9084DB0BE" import="0">Texts/ListTextFields.xml</File>
+    <File md5="8C2CF14E3364450D3C6F3B1F43932B14" import="1">UI/CityList.lua</File>
+    <File md5="1D1F91AD3F06A1850DA6F8D621C1C1B3" import="1">UI/CityList.xml</File>
+    <File md5="FB661D3AAA92B0C9897595BFBFCC0360" import="1">UI/GPList.xml</File>
+    <File md5="EE6B279C6265DC95ADD55498633C0D35" import="1">UI/ResourceList.xml</File>
+    <File md5="3A1BA217364D21FECD2C38A7BECF9127" import="1">UI/UnitList.lua</File>
+    <File md5="A5D416A10E7641DB42B575CC7E634707" import="1">UI/UnitList.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/ListTextFields.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

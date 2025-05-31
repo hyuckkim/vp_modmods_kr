@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_1_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_1">
+      <Text>{3_PlayerName}의 종교인들이 순례자의 길의 비밀을 찾기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_2_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_2">
+      <Text>{1_CivShortDescription}의 부모들이 악령을 쫓기 위해 자녀에게 출생 시 장신구를 주기 시작했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_3_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_3">
+      <Text>{3_PlayerName}가 그들의 교회 문화에 순례자의 길에 대한 탐구를 더욱 깊이 새깁니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_4_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_4">
+      <Text>{3_PlayerName}가 성유물을 고대 유물로 보강합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_5_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_5">
+      <Text>{3_PlayerName}가 대규모 번역 프로젝트를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_6_S">
+      <Text>{3_PlayerName}가 순례자의 길 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_THE_PILGRIM_CHOICE_6">
+      <Text>{3_PlayerName}가 순례자의 길의 신성한 유물을 발견했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION">
+      <Text>잃어버린 성전의 약탈자들</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP">
+      <Text>성전의 경전에 고대의 유물을 실었던 용기에 대한 이야기가 나옵니다. 그 상자에 너무 많은 유물이 들어있어 그 잠재적인 힘이 오랜 시간이 지나도 기적을 일으킬 수 있었죠.[NEWLINE][NEWLINE]우리가 그 상자를 회수한다면, 우리의 힘은 무한히 증대될 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 성유물이 +1 [ICON_TOURISM] 관광을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 탐구의 성공을 알립니다. [ICON_CITIZEN] 시민이 태어날 때, 도시가 5 [ICON_TOURISM] 관광의 부스트를 받습니다 (시대에 따라 증가).</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 성유물이 +1 [ICON_TOURISM] 관광을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_4">
+      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 성유물이 [ICON_TOURISM] 관광을 20% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_5">
+      <Text>책 탐구의 마지막 단계에서, 모든 [ICON_DIPLOMAT] 공무원이 +1 [ICON_PEACE] 신앙과 +1 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시는 구매 시 [ICON_GOLD] 금의 10%를 [ICON_TOURISM] 관광으로 변환합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_1">
+      <Text>어디서 시작해야 할까요? 고대 기록을 연구하고 상자에 대한 모든 것을 알아내야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_2">
+      <Text>*우리의 신념의 중심 원리를 연구함으로써 유물 처리 방식이 정형화되었습니다*[NEWLINE]아무것도 잃어버리지 않습니다. 육체가 떠난 뒤에도 영혼은 남아 있습니다. 그것이 자연의 이치입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_3">
+      <Text>세계의 유물을 찾기 위한 우리의 노력이 배가되어야 합니다. 이 신성한 유물을 발견해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_4">
+      <Text>드디어 성공했습니다! 낡은 봉우리 위에서 상자의 시대에 해당하는 폐허가 발견되었습니다. 이 신전에는 많은 유물과 상자의 위치에 대한 단서가 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_5">
+      <Text>두루마리는 방대합니다. 모든 두루마리를 필사하려면 우리의 제사장들이 엄청난 시간이 걸릴 것입니다. 아마도 우리의 정교한 인프라를 사용하여 더 효율적인 방법을 찾을 수 있을 것입니다...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_WAY_OF_THE_PILGRIM_DESCRIPTION_CHOICE_6">
+      <Text>마침내, 우리의 모든 고통의 유물이 우리의 소유가 되었습니다! 상자는 약속대로 아름답고, 지금도 그 힘을 느낄 수 있습니다! 우리는 막을 수 없습니다!</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

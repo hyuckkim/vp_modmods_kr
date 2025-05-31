@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 대구출</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 위기에 처한 위대한 인물을 구출합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 버팔로 사냥</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 그의 국민과 버팔로 간의 유대를 강화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 카운팅 쿠프</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 카운팅 쿠프의 관행을 촉진합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 영적 재생</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 그의 국민의 고대 묘지에 더 많은 중요성을 부여합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 코드 토커스</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 군사 용도로 거의 해독 불가능한 코드를 생성합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 태양광 발전</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 기후 변화에 대응하기 위해 국가 자금과 연구를 태양광 기술에 집중합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION">
+      <Text>위대함을 조심하십시오</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP">
+      <Text>강하고 교활한 추장님, 장로들이 대화재 주변에 모여 있습니다. 의식이 다시 한 번 기다리고 있습니다.[NEWLINE]정신들이 길을 안내해 주십시오, 포카텔로.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_2">
+      <Text>[ICON_RES_BISON] 버팔로의 통합으로 우리의 근본적인 문화가 +1 [ICON_CULTURE] 문화, +1 [ICON_PEACE] 신앙, +1 [ICON_GOLD] 금, +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_3">
+      <Text>근접 전투와 총기 유닛이 카운팅 쿠프 승급을 얻습니다: 적 처치 시 [ICON_CULTURE] 문화를 얻으며, 전투에서 경험치를 25% 더 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_4">
+      <Text>{1_YieldCost}를 우리의 장례 의식에 투자하여 캠프가 +1 [ICON_PEACE] 신앙과 +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성하게 합니다. 성지와 기념비는 +5 [ICON_PEACE] 신앙과 +5 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_5">
+      <Text>{1_YieldCost}를 사용하여 매우 저항력이 강한 코드를 생성하고 모든 적격 유닛에 감시 승급을 부여합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 이용하여 초저비용 태양광 패널을 개발하고 모든 도시에서 태양광 농장을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_1">
+      <Text>*연기 속에서 한 인물이 당신에게 다가옵니다*[NEWLINE]위대한 인물의 생명이 위험에 처했습니다! 말을 준비하고 즉시 그들을 찾으러 갑니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_2">
+      <Text>*불과 화염을 통해 작은 송아지가 강력한 짐승으로 성장하며 캠프 주변의 여러 물건으로 분산됩니다*[NEWLINE]정신들이 분명합니다, 버팔로와의 공생을 강화해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_3">
+      <Text>*검은 큰 형상이 춤추는 불씨를 잡으려고 고개를 숙였다가 어둠 속으로 떨어집니다*[NEWLINE]우리 전사들이 조상님들을 기쁘게 했습니다, 카운팅 쿠프의 관행이 이 회의에서 더 이상 무시되지 않도록 합시다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_4">
+      <Text>*울고 있는 여성의 형상이 떠다니는 유령들에 의해 관찰됩니다*[NEWLINE]정신들이 불안해합니다; 우리의 제물이 그들에게 도달하지 못하고 있습니다. 우리의 장례지의 신성함을 재확인해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_5">
+      <Text>*두 개의 연기 나는 형상이 대화하고, 세 번째 그림자가 그들을 엿보려고 합니다*[NEWLINE]우리의 필요할 때 조상님들이 안내해 주십니다! 우리가 결코 깨닫지 못한 것은 그들이 우리에게 준 언어가 적들을 물리칠 힘을 가지고 있다는 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_6">
+      <Text>*어두운 강이 황량한 들판으로 증발하고, 불의 폭발이 몇 순간 동안 시력을 잃게 합니다*[NEWLINE]정신들이 울부짖습니다. 이 세상은 죽어가고 있습니다. 우리는 자녀들을 위해 미래를 확보하려면 행동해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_COUNTING_COUP">
+      <Text>카운팅 쿠프</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_COUNTING_COUP_HELP">
+      <Text>승리 시 [ICON_CULTURE] 문화를 받고, 전투에서 33% 더 많은 경험치를 얻습니다. 오직 쇼숀의 이벤트를 통해 부여됩니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

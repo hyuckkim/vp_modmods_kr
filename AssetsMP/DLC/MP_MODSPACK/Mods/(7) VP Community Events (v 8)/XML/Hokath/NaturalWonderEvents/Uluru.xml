@@ -1,0 +1,227 @@
+<GameData>
+	<!-- Mt Kailash -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_ULURU</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_ULURU_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_ULURU</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_NW_ULURU</CityEventType>
+			<CityEventChoice>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoice>
+			<CheckForActive>false</CheckForActive>
+			<CheckOnlyEventCity>true</CheckOnlyEventCity>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_ULURU_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_ULURU_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_SHRINE</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_ULURU_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+			<EventBuildingClass>BUILDINGCLASS_THEATRE</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_ULURU_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_HOTEL</RequiredBuildingClass>
+			<MinimumCityPopulation>20</MinimumCityPopulation>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_ULURU</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_ULURU</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_ULURU</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_ULURU</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_2</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_ULURU</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_ULURU</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<FeatureType>FEATURE_ULURU</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>-5</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-600</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>-5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_ULURU_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION">
+			<Text>When Two Tribes Go To War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_HELP">
+			<Text>The tribes living around Uluru have sent a delegate to treat with us, Your Mightiness.[NEWLINE]He's in the reception chamber, lecturing the guards on some Lizard Woman.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_1">
+			<Text>The Natural Wonder permanently yields +1 [ICON_PEACE] Faith and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_2">
+			<Text>The curse claims {2_InstantYield}. The Shrine in the City gains +3 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_3">
+			<Text>Spend {2_InstantYield} to receive a free Zoo, which yields an additional +2 [ICON_RESEARCH] Science and +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_HELP_CHOICE_4">
+			<Text>The local Hotel yields +10 [ICON_GOLD] Gold and +10 [ICON_TOURISM] Tourism. However, the Natural Wonder loses up to -5 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_1">
+			<Text>*The natives have completed their dreamwalk, it is once again respectful for us to go about our business near Uluru*[NEWLINE]We continue to uphold our treaty with those who live around Uluru. Peace goes with you.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_2">
+			<Text>*An ancient curse has been claiming the lives of those who have taken rocks from Uluru. The shaman warns that they must be returned!*[NEWLINE]How disturbing. We should erect a memorial at the local Shrine, that others do not make this same mistake.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_3">
+			<Text>*The natives do not wish our researchers to continue interfering with the local wildlife*[NEWLINE]In this matter, your people must trust me to have both our best interests at heart. Conservation and close study is the only way to protect these unique species.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_ULURU_DESCRIPTION_CHOICE_4">
+			<Text>*The shaman is incensed that the Governor is allowing hikers to scale Uluru*[NEWLINE]Much time has passed since first we spoke as equals. My people have grown mighty, and yours have not. You will accede to this...</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_POPULATION</Type>
+			<BuildingClass>BUILDINGCLASS_POPULATION</BuildingClass>
+			<Cost>-1</Cost>
+			<Help>TXT_KEY_BUILDING_POPULATION_HELP</Help>
+			<Description>TXT_KEY_BUILDING_POPULATION</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_POPULATION_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_POPULATION_STRATEGY</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<SingleLeagueVotes>1</SingleLeagueVotes>
+			<NeverCapture>true</NeverCapture>
+			<CapitalOnly>true</CapitalOnly>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Buildings>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_POPULATION</Type>
+			<DefaultBuilding>BUILDING_POPULATION</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_POPULATION</Description>
+		</Row>
+	</BuildingClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION">
+			<Text>[ICON_CITIZEN] Population</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION_HELP">
+			<Text>Congratulation! Your nation has achieved a threshold in population that you could potentially receive additional delegates in the World Congress!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POPULATION_STRATEGY">
+			<Text>You should be critical of looking when your population is at a new threshold of population (40/45/50/55/60) at (Renaissance/Industrial/Modern/Atomic/Information) Era.[NEWLINE][NEWLINE]What's that? You're not at those Eras? Oh right. Ancient Era (25), Classical Era (30), and Medieval Era (35) will randomly appear... but you won't get any votes unless somehow the World Congress got made while you are still at those eras.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_POPULATION_TEXT">
+			<Text>As the human population begin to grew massively, there was a need to represent the people in terms of the World Congress. They came with the concept on a representation basis on population.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

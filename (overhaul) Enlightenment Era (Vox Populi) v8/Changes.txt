@@ -1,0 +1,150 @@
+--------------------------------------------------------------
+v2 (changes from v1.2.4)
+--------------------------------------------------------------
+Units
+- Ship of the Line combat strength reduced to 45 from 50.
+- Samurai now correctly upgrades to Two-Handed Swordsman.
+- Uhlan combat strength increased to 45 from 40.
+- Cossack combat strength increased to 50 from 45.
+- Galleon range increased to 2 from 1, now no longer able to move after attacking (similar to Frigate).
+- First Rate now obsoletes at Nuclear Fission instead of Dynamite.
+- Changed the Corvette's model as it was the same as the Carrack (thanks Asterix Rage).
+
+Promotions
+- Flagship promotion now updates every time you move a unit, instead of once per turn (different underlying method).
+
+Buildings
+- Gunsmith supply reduced to 1 from 2.
+- Manor now has a new icon.
+- Menagerie now has a new icon.
+
+Wonders
+- Smithsonian theming bonus increased from 3 culture/tourism/science/gold to 6 culture/tourism/science/gold.
+- Versailles bonus to We Love The King Day duration now properly shows in the UI (different underlying method).
+- Fasil Ghebbi combat bonus now checked whenever a unit moves rather than once every turn.
+
+Technologies
+- Adjusted technology costs to be closer to recent Vox Populi changes.
+
+Policies
+- Fixed Galleries gaining +2 Golden Age Points rather than +3 with Freedom's Creative Expressions.
+- Policy values should now change automatically when VP changes (changing types of bonuses still require manual updating).
+- Tooltips should now pick up simple changes from VP (big changes still require manual updating).
+
+--------------------------------------------------------------
+v3
+--------------------------------------------------------------
+Units
+- Field Cannon no longer has the Naval Misfire promotion. The Field Cannon will now follow the given promotions for the Howitzer if a future VP version changes it.
+- Cost and Faith cost reduced for the following:
+- Carrack 250/370 (was 350/450).
+- Nau 250/370 (was 350/450).
+- Sea Beggar 250/370 (was 450/450).
+- Galleon 310/410 (was 375/450).
+
+Misc
+- Fixed missing string error (due to VP update to espionage causing conflict).
+
+--------------------------------------------------------------
+v4
+--------------------------------------------------------------
+Units
+- Adventurers now upgrade to Commandos (VP 7-1).
+- Removed Adventurer and Scouting I promotions from Adventurer (to be more consistent with the rest of the line).
+- Minuteman combat strength increased to 32 from 30.
+- Minuteman now starts with Formation, like the Line Infantry.
+- Removed Accuracy I from Minuteman.
+- Sea Beggar now obsoletes at Rocketry correctly.
+- Fixed Sea Beggar costs being changed by this mod.
+
+Buildings
+- Taverns now have +2 Food and -1 unhappiness from Boredom.
+
+Misc
+- Background SQL changes, so the mod will more likely reflect changes in VP.
+
+--------------------------------------------------------------
+v5
+--------------------------------------------------------------
+Buildings
+- Removed Bastion, now became base VP building.
+- Moved Bastion Fort (BUILDING_FORTRESS) PrereqTech to TECH_EE_FORTIFICATION (same as Bastion before).
+- Removed all defense buildings related changes.
+- Added Tavern support for new farm resources (taken from Even More Resources mod).
+
+Technologies
+- Fixed some overlapping technologies PrereqTech.
+
+Misc
+- VP 3.0 changed a lot of things around happiness and Building-related tables, so many changes have done to reflect that change.
+
+--------------------------------------------------------------
+v6
+--------------------------------------------------------------
+Buildings
+- Tavern cost 300 -> 350; gold maintenance 2 -> 3.
+- Buildings that are require tech on column 9 (GridX = 9) cost 600 -> 750; gold maintenance 4 -> 5.
+- Buildings that are require tech on column 10 (GridX = 10) cost 1000 -> 900; gold maintenance 6 -> 5.
+- Gallery now requires Amphitheater.
+- Hermitage now requires Gallery instead of Opera House.
+- Broadcast Tower now requires Opera House instead of Museum.
+- Tavern now requires Lodge; gives +1 Culture per 20 Food; and also removed Fish and Wine yield change.
+- Manor now requires Garden; added 25% Gold cost reduction to acquire new tiles; and gain +5 GAP when expanding the border, scaled with era; now reduce unhappiness from urbanization instead of distress.
+- Weigh House now requires Customs House; reduced from +3 Gold -> +2 Gold; and now have a bonus from international trade routes +1 Gold for the city and +2 Gold for the trade route owner.
+- Cloth Mill now requires Aqueduct instead of River; changed from +1 Production per 4 Citizen -> +1 Gold per 20 Production; and reduced resource yield change to +1 Gold, also added Dyes to that.
+- Menagerie changed from +3 Science/+2 Culture/+2 Gold -> +2 Science/+1 Culture/+1 Gold with additional +1 Science/+1 Culture/+1 Gold per 12 citizens; removed resource yield changes from it.
+- Drydock specialist engineer slot is now removed; added +15% Production when training naval units and gives +20 XP to them; and give temporary +1 movement point and Drydock promotion to docked naval units inside of city's border.
+- Drydock promotion changed from +15% CS -> +5% CS and +5 HP inside of friendly territory, only lasts for 2 turns.
+- Gunsmith changed from +25% Production when training gunpowder, armor, and siege units -> +15% Production when training land units; also reduced from +25 XP to +20 XP, and give it to all land units instead.
+- Gunsmith now gives 5% of Production cost of a unit as Science whenever the city trained a unit.
+- Military Base production of air units reduced from +25% -> +15%.
+- Airport now gives +15% production of air units and gives +20 XP to them.
+- Added Japan Shogunate's Culture and Faith yield bonus to Drydock and Airport.
+- Seaport as a prereq building to purchase late naval units now replaced by Drydock.
+- Armory or Military Academy as prereq buildings to purchase Industrial and Modern land units now replaced by Gunsmith.
+
+Technologies
+- Tech cost has been overhauled, so it matches VP tech cost (which was adjusted on v2.7.3) with adjusted values to compensate for additional tech and era to the game. But this has to be tested thoroughly.
+  Calculation: https://docs.google.com/spreadsheets/d/1cCWCDfSeKgDomiO2jMnPWiSHoedv57hnM9PT2CECKEw/
+
+Misc
+- Many text fixes and changes to be more informative and in line with other VP building texts.
+
+--------------------------------------------------------------
+v7
+--------------------------------------------------------------
+Buildings
+- Tavern cost supposedly fixed now. (See v6 change)
+- Cloth Mill changed from +1 Gold per 20 Production -> +1 Gold per 12 Production; now have 1 specialist engineer slot; reduce -1 unhappiness from poverty; added instant 20 Gold when you completed an internal trade route to or from this city, scaling with era.
+- Drydock ability now work when a "player has done a turn", not when a "player is doing a turn".
+- Drydock promotion duration lasts for 2 turns -> 1 turn.
+- Buildings that are require tech on column 10 (GridX = 10) gold maintenance increased from 5 -> 6.
+- Museum cost reduced from 1250 -> 1000
+- Military Academy gold maintenance increased from 7 -> 8.
+- Menagerie changed from +2 Science/+1 Culture/+1 Gold with additional +1 Science/+1 Culture/+1 Gold per 12 citizens -> +2 Science/+1 Culture/+1 Tourism with additional +1 Science/+1 Culture/+1 Tourism per 12 citizens.
+
+--------------------------------------------------------------
+v8
+--------------------------------------------------------------
+Units
+- Added a new unit for the Mounted Ranged line, Dragoon. (Credits: Janboruta for the icons and bernie14 for the unit model)
+- Dragoon unlocked at Fortification; have 34 CS/26 RCS and 5 movement points; require 475 production cost or 500 faith to purchase; comes with promotions that are same as Cuirassier got.
+- Cuirassier now upgrades to Dragoon and is obsolete at Fortification; Cuirassier UUs are now obsolete when Cavalry is unlocked instead of Light Tank.
+- Heavy Skirmisher UUs are now obsolete when Dragoon is unlocked instead of Cavalry.
+- Adventurer CS increased 23 -> 24.
+- Field Gun CS decreased 21 -> 14; production cost decreased 475 -> 450.
+- Light Infantry CS increased 25 -> 28.
+- Line Infantry CS increased 30 -> 31.
+- America's Minuteman CS increased 32 -> 33; obsolete when Rifleman is unlocked instead of Fusilier.
+- Sweden's Carolean CS decreased 34 -> 33; obsolete when Rifleman is unlocked instead of Fusilier.
+- Uhlan CS increased 45 -> 48.
+- Russia's Cossack CS increased 50 -> 52; Skirmisher Doctrine promotion is removed (unintended).
+- Caravel CS decreased 25 -> 23; production cost decreased 160 -> 150; unlocked in Chivalry from Compass.
+- Trireme now obsolete in Chivalry.
+- Corvette production cost increased 450 -> 475.
+- Dromon CS increased 7 -> 9; production cost increased 100 -> 110; unlocked in Engineering from Sailing.
+- Galleass RCS decreased 24 -> 23.
+- All units from this mod have been adjusted its flavor values, to encourage the AI to train more of those.
+
+Buildings
+- Updated text clarity for Drydock, the ability only works for naval units within the workable city plot, not city border.

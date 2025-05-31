@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION">
+      <Text>예상 성장</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP">
+      <Text>경제 고문이 상당한 자본을 축적한 상태입니다. 이제 그녀는 파일럿 계획 중 하나에 자금을 지원하고 싶어 합니다. 어떤 계획에 착수할까요?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_1">
+      <Text>각 도시에 {3_CityYieldGlobal}를 지출하여 농장, 플랜테이션, 목초지에서 추가로 +1 [ICON_FOOD] 식량을 수확합니다. {4_Turns} 동안 효과가 지속됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_2">
+      <Text>각 도시에 {3_CityYieldGlobal}를 지출하여 발굴을 확장하고, 광산과 채석장에서 +2 [ICON_PRODUCTION] 생산력을 얻습니다. {4_Turns} 동안 효과가 지속됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_3">
+      <Text>각 도시에 {3_CityYieldGlobal}를 지출하여 해안 타일에서 추가로 +1 [ICON_GOLD] 금을 얻습니다. 만약 타일에 어선도 있다면 추가로 +2 [ICON_GOLD] 금을 받습니다. {4_Turns} 동안 효과가 지속됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_4">
+      <Text>모든 도시에 예술 프로젝트에 자금을 지원하고, {3_CityYieldGlobal}를 {4_Turns} 동안 현지에서 변환합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+      <Text>수확이 다가오고 있는데, 이 농업 교환 프로그램이 아주 적절할 것 같아!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+      <Text>이 제국은 광부들의 노고로 유지되고 있어. 그들에게 우리가 지원할 수 있는 모든 것을 지원해야 해!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+      <Text>어부들이 이 사람들을 먹여살리고 있어. 이제 정부의 공식적인 지원을 받을 때가 되었어!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_4">
+      <Text>시골은 이 계획들 없이도 돌아갈 수 있지만, 도시가 발전하기 위해서는 우리의 지원이 필요해.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

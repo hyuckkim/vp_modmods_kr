@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 새로운 총리</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 새로운 총리를 선택합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 하나 된 깃발 아래에서</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 국가 내 소수 집단들을 통합합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 튜턴 기사단</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 독일을 방어하기 위해 십자군을 소환합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 음악원 후원</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 여러 음악원을 후원합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 과학 자금 지원</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 과학 연구 기관을 지원하기 위해 추가 자금과 법률을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 전쟁 발발</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 더 높은 형태의 전쟁을 준비합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION">
+      <Text>독일, 그 무엇보다 위에</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP">
+      <Text>많은 지방의 총독들이 국가의 중요 문제를 해결하기 위해 대국회(Bundesrat)를 소집했습니다. 오래된 갈등이 재발하였고, 일부 합의가 이루어졌지만 비효율적인 타협에 불과합니다.[NEWLINE][NEWLINE]독일은 이 혼란을 정리해줄 것을 간청합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2">
+      <Text>해당 유닛들은 숲길 보너스를 받고 모든 숲은 +1 [ICON_CULTURE] 문화를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3">
+      <Text>{2_InstantYield}의 비용으로 튜턴 기사단 건물을 잠금 해제합니다. 다른 기사단은 +2 [ICON_GOLD] 금과 +1 [ICON_PRODUCTION] 생산을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4">
+      <Text>오페라 하우스는 +1 [ICON_GOLD] 금과 [ICON_TOURISM] 관광을 얻습니다. 모든 [ICON_GREAT_MUSICIAN] 음악가는 +1 [ICON_CULTURE] 문화와 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5">
+      <Text>[ICON_RESEARCH] 무료 기술을 받습니다. 아카데미는 +2 [ICON_RESEARCH] 과학, [ICON_GOLD] 금과 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6">
+      <Text>해당 유닛들은 블리츠 보너스를 받고 10턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 들어갑니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1">
+      <Text>이 사소한 문제들에 대한 합의가 이루어지지 않는다면, 내가 직접 총리를 임명하겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2">
+      <Text>*토착 민족과 이교도들을 정화하는 문제는 점점 더 논란이 되고 있습니다*[NEWLINE]깊은 숲에 살고 있는 사람들은 다른 어떤 사람들보다 독일인입니다. 그들을 배척하기보다는 이 용감한 새로운 세계로 환영해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3">
+      <Text>*전쟁으로 인해 극단적인 견해가 지지를 얻고 내부 권력 구조를 위협하고 있습니다*[NEWLINE]이 시련의 시기에 우리는 교회에 일부 양보를 해야 합니다. 외국에서 싸우고 있는 십자군을 소환하여 이곳, 조국을 방어해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4">
+      <Text>*회의의 많은 구성원들이 낭비한 음악가에게 개인적으로 모욕을 당했으며, 그를 추방하거나 더 나쁜 처벌을 요구하고 있습니다*[NEWLINE]이건 터무니없습니다! 이 부풀려진 남작들은 시각을 바꿔야 합니다! 우리는 작곡가들에게 후원을 주고 그들의 창의력을 육성해야 합니다. 그렇지 않으면 외국 궁정에 유혹될 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5">
+      <Text>*한 파벌이 과학 자금을 대폭 늘리기를 원하지만 다수의 지지를 확보하지 못하고 있습니다*[NEWLINE]우리의 물리학자들은 세계 최고의 과학자들이며, 그들의 발명은 우리의 경제에 필수적입니다. 우리는 그들을 어떻게든 지원해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6">
+      <Text>*평화주의자들이 대규모 무기 제조에 반대하고 있습니다*[NEWLINE]우리 나라는 강해졌습니다: 우리의 제조업체와 기차역은 이 새로운 시대의 성당입니다. 곧 우리는 세계에서 정당한 자리를 차지할 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_ORDER">
+      <Text>튜턴 기사단</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_ORDER_STRATEGY">
+      <Text>독일 고유의 이벤트 선택으로 구매할 수 있습니다. 다른 기사단과 상호 배타적입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_FIREWORKS_CHOICE_1">
+      <Text>불꽃놀이!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FIREWORKS_CHOICE_1_HELP">
+      <Text>국왕 경축일을 기념하기 위해 저녁에 대규모 불꽃놀이가 있었습니다. 시민들이 멀리서 이 모습을 보러 왔습니다. {5_Turns} 동안 +2 [ICON_HAPPINESS_1] 행복을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_FOREIGNAID_DESCRIPTION">
+      <Text>외국 원조</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PLAYER_EVENT_FOREIGNAID_HELP">
+      <Text>우리나라가 정말 어려운 상황에 처해 있습니다. 자존심을 버리고 외국 원조와 기부금을 요청하자고 제안합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FOREIGNAID_CHOICE_1">
+      <Text>명성이 나빠지더라도 가능한 모든 것을 얻어보자.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FOREIGNAID_CHOICE_1_HELP">
+      <Text>{1_YieldCost}. {2_InstantYield}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FOREIGNAID_CHOICE_2">
+      <Text>스스로 이 상황을 극복하겠다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FOREIGNAID_CHOICE_2_HELP">
+      <Text>아무것도 얻지 않습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_DESCRIPTION">
+      <Text>항구 무역</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_HELP">
+      <Text>지역 항구가 무역으로 번창하고 있으며 이제 외국 상인들이 여기 지사를 세우길 원하고 있습니다. 하지만 우리는 한 곳만을 선택할 수 있습니다:</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_1">
+      <Text>새로운 도구와 연구를 가져오는 상인들을 환영합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_1_HELP">
+      <Text>항구가 +1 [ICON_RESEARCH] 과학을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_2">
+      <Text>문화 유물과 예술을 가져오는 상인들을 환영합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_2_HELP">
+      <Text>항구가 +1 [ICON_CULTURE] 문화를 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_3">
+      <Text>보물과 부를 가져오는 상인들을 환영합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HARBORTRADE_CHOICE_3_HELP">
+      <Text>항구가 +2 [ICON_GOLD] 금을 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_COOLSUMMER_DESCRIPTION">
+      <Text>여름, 날씨는 덥다</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_COOLSUMMER_HELP">
+      <Text>올 여름은 특히 더운 날씨가 계속되며 주변 사람들이 더위와 싸우고 있습니다. 고문이 당신이 좋아하는 시원한 음료를 나누는 것이 좋겠다고 제안하지만, 이를 위해서는 대규모 원정을 통해 얼음을 가져와야 합니다. 어떻게 하시겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_1">
+      <Text>팀을 조직하여 산으로 가게 하십시오. 세계에 나의 관대함을 알리겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_1_HELP">
+      <Text>{1_YieldCost}를 사용하여 {4_GPChange}와 {5_Turns} 동안 국왕 경축일을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_2">
+      <Text>이것이 천상의 벌이라고 말하시오! 그들이 열심히 일해야만 더위가 사라질 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_2_HELP">
+      <Text>종교에 대한 권위를 활용하여 {1_YieldCost}를 소모하고 {2_InstantYield}를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_3">
+      <Text>팀을 조직하여 얼음 빙원으로 나가게 하십시오. 세계에 나의 관대함을 알리겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_3_HELP">
+      <Text>{1_YieldCost}를 사용하여 {5_Turns} 동안 국왕 경축일을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_4">
+      <Text>이번 여름에는 프로젝트가 지연될 수밖에 없다는 것을 받아들여야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_COOLSUMMER_CHOICE_4_HELP">
+      <Text>도시에서 {1_YieldCost}를 잃습니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

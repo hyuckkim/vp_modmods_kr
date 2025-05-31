@@ -1,0 +1,515 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<RandomChance>60</RandomChance>
+			<RandomChanceDelta>6</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_APOSTOLIC_PALACE</RequiredAnywhereBuildingClass>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<ImprovementAnywhereRequired>IMPROVEMENT_HOLY_SITE</ImprovementAnywhereRequired>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CONSTABLE</RequiredAnywhereBuildingClass>
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+			<RequiresIdeology>true</RequiresIdeology>
+		</Row>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<RequiresWar>true</RequiresWar>
+		</Row>
+		<Row>
+			<Type>EVENT_APOSTOLIC_TRADITION_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_APOSTOLIC_TRADITION</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_EventLinks>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceType>
+			<EventChoiceLinker>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceLinker>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<EventChoiceLinker>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceLinker>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<EventChoiceLinker>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceLinker>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceType>
+			<EventChoiceLinker>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceLinker>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<EventChoiceLinker>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceLinker>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+	</EventChoice_EventLinks>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY</Type>
+			<DefaultBuilding>BUILDING_APOSTOLIC_TRADITION_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_APOSTOLIC_TRADITION_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_APOSTOLIC_TRADITION_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_DUMMY</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IsDummy>true</IsDummy>
+			<GreatWorkCount>-1</GreatWorkCount>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+		<Row>
+			<Type>BUILDING_APOSTOLIC_TRADITION_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_APOSTOLIC_TRADITION_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_DUMMY</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IsDummy>true</IsDummy>
+			<GreatWorkCount>-1</GreatWorkCount>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+	</Buildings>
+	<Building_YieldFromPurchase>
+		<Row>
+			<BuildingType>BUILDING_APOSTOLIC_TRADITION_DUMMY_2</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldFromPurchase>
+	<Building_GoldenAgeYieldMod>
+		<Row>
+			<BuildingType>BUILDING_APOSTOLIC_TRADITION_DUMMY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_APOSTOLIC_TRADITION_DUMMY</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_APOSTOLIC_TRADITION_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_APOSTOLIC_TRADITION_DUMMY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_GoldenAgeYieldMod>
+	
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>250</Yield>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>250</Yield>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_APOSTOLIC_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_APOSTOLIC_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PAGODA</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_APOSTOLIC_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Modifier>50</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_APOSTOLIC_TRADITION_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1_S">
+			<Text>{3_PlayerName} begins on the quest of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_1">
+			<Text>{3_PlayerName}'s religious men and women begin scouring ancient texts for clues to the secrets of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2_S">
+			<Text>{3_PlayerName} continues on the quest of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_2">
+			<Text>Cultural norms in {1_CivShortDescription} are being dominated by imitation of their religious figure.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3_S">
+			<Text>{3_PlayerName} continues on the quest of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_3">
+			<Text>{3_PlayerName} further embeds the quest for the secrets of Apostolic Tradition in the culture of their Church.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4_S">
+			<Text>{3_PlayerName} continues on the quest of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_4">
+			<Text>{3_PlayerName} upgrades the Apostolic Palace to reflect ancient schematics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5_S">
+			<Text>{3_PlayerName} continues on the quest of Apostolic Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_5">
+			<Text>{3_PlayerName} begins a massive translation project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6_S">
+			<Text>{3_PlayerName} completes the quest of Apostolic Tradition!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_APOSTOLIC_TRADITION_CHOICE_6">
+			<Text>{3_PlayerName} has uncovered the holy relic of Apostolic Tradition!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION">
+			<Text>On Earth As It Is In Heaven</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP">
+			<Text>When God came to Earth he took apostles to be his witnesses. Now he has returned to Heaven, and left their legacy to guide us in his stead. Our holy men are guided by the recording of his life and works on Earth, but the record is incomplete. They call it the Lost Gospel.[NEWLINE][NEWLINE]If we were to recover this artifact, it would solidify the foundations of our faith such that none would question us ever again!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_1">
+			<Text>Invoke {1_YieldCost} of new doctrine, causing your Temples and the Apostolic Palace to generate +1 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_2">
+			<Text>Use {1_YieldCost} to spread word of your success in the quest. Cities generate 5% more [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_PEACE] Faith and [ICON_CULTURE] Culture during a [ICON_GOLDEN_AGE] Golden Age.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_3">
+			<Text>Invoke {1_YieldCost} of new doctrine, causing your Buildings purchased with [ICON_PEACE] Faith and the Apostolic Palace to generate +1 [ICON_GOLDEN_AGE] Golden Age Point.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_4">
+			<Text>Reveal {1_YieldCost} worth of religious mysteries. The Apostolic Palace increases [ICON_GOLDEN_AGE] Golden Age Points by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_5">
+			<Text>In the final stage of the quest for the book, all [ICON_DIPLOMAT] Civil Servants generate +2 [ICON_PEACE] Faith and +2 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_HELP_CHOICE_6">
+			<Text>Bring together {1_YieldCost} to complete the quest. Cities convert 5% of [ICON_GOLD] Gold to [ICON_GOLDEN_AGE] Golden Age Points when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_1">
+			<Text>Where do we even begin? We need to study the ancient records, and find out everything we can about the life of this apostle!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_2">
+			<Text>*Study into the central tenets of our belief have emphasised the practices of a virtuous life*[NEWLINE]When all live together in harmony, as He showed us, there is nothing we cannot achieve!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_3">
+			<Text>The search continues, and I am not satisfied with our current progress. If we are to get into the mind of the apostle, to understand his motives and whims, we must live and pray as he did.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_4">
+			<Text>Finally, success! A old tomb, buried by rockfall, has been uncovered. Inside were scrolls and trinkets that seem to have belonged to the lost apostle! Among them, the original blueprints for the Apostolic Palace, fully annotated!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_5">
+			<Text>The scrolls are extensive. In order to transcribe all of them would take our priests an enormous amount of time. Perhaps we can find a more efficient way using our sophisticated infrastructure...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_APOSTOLIC_TRADITION_DESCRIPTION_CHOICE_6">
+			<Text>Our efforts have finally been rewarded. The Lost Gospel was recovered, still miraculously whole. From it we will complete our understanding of God's example to us on Earth, and perhaps make the Empire that little bit more like Heaven!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DUMMY">
+			<Text></Text>
+		</Row>
+	</Language_en_US>
+</GameData>

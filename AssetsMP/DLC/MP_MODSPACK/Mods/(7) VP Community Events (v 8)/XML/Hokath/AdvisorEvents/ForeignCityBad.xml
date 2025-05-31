@@ -1,0 +1,74 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>25</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<CityEventArt>advisorforeign.dds</CityEventArt>
+			<CityEventAudio>AS2D_EVENT_EFOREIGN</CityEventAudio>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_BAD</CityEventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP_CHOICE_1</Help>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_BAD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-75</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-75</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<Points>-200</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+	
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION">
+			<Text>Foreigner Murdered!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP_CHOICE_1">
+			<Text>Pay {2_InstantYield} in compensation and {4_GPChange} harms further relations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION_CHOICE_1">
+			<Text>Foreigner Murdered!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

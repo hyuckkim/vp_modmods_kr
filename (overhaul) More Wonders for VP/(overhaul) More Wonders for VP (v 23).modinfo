@@ -1,0 +1,953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3e151552-1683-4881-b736-8ee89226f599" version="23">
+  <Properties>
+    <Name>(overhaul) More Wonders for VP</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>More World Wonders for Vox Populi</Teaser>
+    <Description>This mod adds more World Wonders for Vox Populi.
+Currently compatible with VP 4.4.X.</Description>
+    <Authors>Infixo, adan_eslavo</Authors>
+    <SpecialThanks>Infixo, Asterix_Rage, hokath, Artisanix, Gwennog and others in credits file</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/more-wonders-for-vp.653498/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="14" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References>
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Vox Populi's Bare Necessities" />
+    <Mod id="8e54eb87-31e8-4fcd-aafe-ede055b463d0" minversion="0" maxversion="999" title="Even More Resources for Vox Populi" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightment Era for VP" />
+    <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mod" />
+    <Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" minversion="0" maxversion="999" title="(civ) Louisiana" />
+  </References>
+  <Blocks>
+    <Mod id="1c6595cb-fe8a-4030-b3cf-e6549b58b468" minversion="0" maxversion="999" title="Wonders Expanded" />
+  </Blocks>
+  <Files>
+    <File md5="9237D48FF5695B49C8401D52D4F633FA" import="1">1.WorldWonders/Art/5.Industrial/Wonder_America_West_Point_splash.dds</File>
+    <File md5="F2C71619278BE0854D5C9AA0D4500F1F" import="1">1.WorldWonders/Art/5.Industrial/Wonder_America_Smithsonian_splash.dds</File>
+    <File md5="649742386EC25D7E3525D2271694F98A" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_splash.dds</File>
+    <File md5="2C1FD86D1C1FE6F8FA993E650B4EDF9F" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
+    <File md5="F3A4645CDC2FF2A7A4F9955E812DF602" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
+    <File md5="6714DBFB6CECDA44CAB2A39477A8427E" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
+    <File md5="F368E62D8519BCB0B58AFD7341834CCC" import="0">1.WorldWonders/Lua/UniqueWorldWondersRequirements.lua</File>
+    <File md5="7267B512675433D1B7E4B4226D820E9F" import="0">1.WorldWonders/Lua/DummyBuildingsForWonders.lua</File>
+    <File md5="F76F274BFF177971B7765CE885D1B102" import="1">1.WorldWonders/DefaultFiles/WonderPopup.lua</File>
+    <File md5="C5FF77C0C8C2D752C3AB0247156710E3" import="1">1.WorldWonders/DefaultFiles/WonderPopup.xml</File>
+    <File md5="47B66A27464EE3919811178A561E840A" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_128.dds</File>
+    <File md5="E22259EC840374C6DD817A9B8F3B5EB8" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_256.dds</File>
+    <File md5="E9BBA9DD5D5E5D8ECDB14DD9BF51C260" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_45.dds</File>
+    <File md5="C579C14869EEBA04F3C298954B38CD3E" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_64.dds</File>
+    <File md5="D0C688480C6EA4B48DAC6114425773F3" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_80.dds</File>
+    <File md5="71D4D32E2A590E91EA15E29C9AB91274" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_splash.dds</File>
+    <File md5="12FB51DF9B6D70848BA747301C48498C" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_128.dds</File>
+    <File md5="4A1E848F42CF74C78EC839B04C08787F" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_256.dds</File>
+    <File md5="FED24CF1BA87C6D008B63DAB38C08375" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_45.dds</File>
+    <File md5="B7A8D2AE62E9EED21B69B29178708722" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_64.dds</File>
+    <File md5="5FCB4F7E298BA28ADF1B72A23388BD8D" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_80.dds</File>
+    <File md5="931507FABA284D58875453C0EB463C23" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Ggantija_splash.dds</File>
+    <File md5="BC17556787859434040A86A271249798" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_128.dds</File>
+    <File md5="D91FEC760BF8882B090F6F5BB0B70AAE" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_256.dds</File>
+    <File md5="8206098AAC5782E146018433865E66DA" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_45.dds</File>
+    <File md5="F78F34CF532C346822857CA7B8F2D553" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_64.dds</File>
+    <File md5="BE3D89F41FB876B4C56E7260553E0539" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_80.dds</File>
+    <File md5="1A3296336D45AC69FE5A69F863386C82" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Goebekli_Tepe_splash.dds</File>
+    <File md5="EE89806DC3D1497DA6723AECDF03FF95" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_128.dds</File>
+    <File md5="C56146744B9253674FD655F35677C8CA" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_256.dds</File>
+    <File md5="7120A6F59C626A0AED09AD4BE4B7E8DB" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_45.dds</File>
+    <File md5="7F39EAB09070D163C5294EE134176223" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_64.dds</File>
+    <File md5="3EF7646FE0044FE7829CB348902035E9" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_80.dds</File>
+    <File md5="DA9AA8792559F0FB54C9FBFDC48D8A41" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Karnak_splash.dds</File>
+    <File md5="7FF4D11378B3AD010EBC71803DCBCFDB" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_128.dds</File>
+    <File md5="9115FBE61AA18CE5D829997A0AAC1837" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_256.dds</File>
+    <File md5="2ADAA06C56B33AB0BD225CB7E0E8F51D" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_45.dds</File>
+    <File md5="2DB3165BC38EEC8ED1FBE202FC54B636" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_64.dds</File>
+    <File md5="F01143D24DCAB208C2333880977518F6" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_80.dds</File>
+    <File md5="9C11693CAF92FC7901C482D31AF92E73" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Kuk_splash.dds</File>
+    <File md5="B1A053EE040ACD815EA79986471BDA17" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_128.dds</File>
+    <File md5="6FC626B3EBED3EA3BD6E0A3CF43EF09E" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_256.dds</File>
+    <File md5="DCD187F8249E9518178834E1298313A1" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_45.dds</File>
+    <File md5="C4A26AD823B0281F9A25FEECF0099DC3" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_64.dds</File>
+    <File md5="2F8CC7AF5AD99EB972760C21C4789ECB" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_80.dds</File>
+    <File md5="66AA886EDEDC0DD20A3480D6E9D290A3" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Majorville_splash.dds</File>
+    <File md5="700A45CFC9F9E4FDD38F26534141BCAC" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_128.dds</File>
+    <File md5="F9E37C17DAF7E5BEA95C85A9E97278E6" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_256.dds</File>
+    <File md5="9BF5F8D420E1EF5EC0584F95F0CD848F" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_45.dds</File>
+    <File md5="0A54D5EA0115559CF1755AC883801963" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_64.dds</File>
+    <File md5="84922DF9244D28808526A55E4AD28ABA" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_80.dds</File>
+    <File md5="D2BD865BA50F101AA46AB277AD75AD67" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Mohenjo_Daro_splash.dds</File>
+    <File md5="FBF215067886AB11A73A11EE27DE16C7" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_128.dds</File>
+    <File md5="F19912B539173E37CCFBE9A148D0219A" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_256.dds</File>
+    <File md5="3D82196EB0183E223D44BA642B1E837B" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_45.dds</File>
+    <File md5="F62C0CDA1DED46314DE9631669325BC3" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_64.dds</File>
+    <File md5="669AB1782351DBB2DD733FBE2C5A7951" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_80.dds</File>
+    <File md5="1D350EC3E10B43B19068F2AC38B406C3" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Nazca_splash.dds</File>
+    <File md5="EB868A4EBC8110485E7272A251BBD055" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_128.dds</File>
+    <File md5="E045D7C0B0984A24D8E9A30523BD1970" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_256.dds</File>
+    <File md5="768AF0C998F6E80C86495D44993499F9" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_45.dds</File>
+    <File md5="486572BAA73CF27DA88C7EB3DB15C35C" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_64.dds</File>
+    <File md5="C27CDA2CFB8344C6C734EDF06E2B2900" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_80.dds</File>
+    <File md5="F7BE3D0E6BE3A545FC22A112C797D983" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Skara_Brae_splash.dds</File>
+    <File md5="F086C0CA598B433F3388E980399B6B69" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_128.dds</File>
+    <File md5="4D99CD4AC1D32AF90BEEEE496A3D6480" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_256.dds</File>
+    <File md5="A5C423527E73EE5FFB60361447D79662" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_45.dds</File>
+    <File md5="9C11E726BDE8BAF631AC38C5F50AF634" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_64.dds</File>
+    <File md5="3566ED07D08F44847942BFE84FD58555" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_80.dds</File>
+    <File md5="6F8BD7A4403DB589838079A5714183D5" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Wieliczka_splash.dds</File>
+    <File md5="EE89806DC3D1497DA6723AECDF03FF95" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_128.dds</File>
+    <File md5="C56146744B9253674FD655F35677C8CA" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_256.dds</File>
+    <File md5="7120A6F59C626A0AED09AD4BE4B7E8DB" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_45.dds</File>
+    <File md5="7F39EAB09070D163C5294EE134176223" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_64.dds</File>
+    <File md5="3EF7646FE0044FE7829CB348902035E9" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_80.dds</File>
+    <File md5="DA9AA8792559F0FB54C9FBFDC48D8A41" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Karnak_splash.dds</File>
+    <File md5="FBF215067886AB11A73A11EE27DE16C7" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_128.dds</File>
+    <File md5="F19912B539173E37CCFBE9A148D0219A" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_256.dds</File>
+    <File md5="3D82196EB0183E223D44BA642B1E837B" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_45.dds</File>
+    <File md5="F62C0CDA1DED46314DE9631669325BC3" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_64.dds</File>
+    <File md5="669AB1782351DBB2DD733FBE2C5A7951" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_80.dds</File>
+    <File md5="1D350EC3E10B43B19068F2AC38B406C3" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Nazca_splash.dds</File>
+    <File md5="F086C0CA598B433F3388E980399B6B69" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_128.dds</File>
+    <File md5="4D99CD4AC1D32AF90BEEEE496A3D6480" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_256.dds</File>
+    <File md5="A5C423527E73EE5FFB60361447D79662" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_45.dds</File>
+    <File md5="9C11E726BDE8BAF631AC38C5F50AF634" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_64.dds</File>
+    <File md5="3566ED07D08F44847942BFE84FD58555" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_80.dds</File>
+    <File md5="6F8BD7A4403DB589838079A5714183D5" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Wieliczka_splash.dds</File>
+    <File md5="DF54C419D4E6C6F433368D31CF5F8C2F" import="1">1.WorldWonders/Art/2.Classical/Great_Work_Ark_of_the_Covenant.dds</File>
+    <File md5="221B37D643E75D788B82D6B2317DD4E6" import="1">1.WorldWonders/Art/2.Classical/Great_Work_Holy_Lance.dds</File>
+    <File md5="68591AC0E75DC75C9F18B38C64F3410C" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_128.dds</File>
+    <File md5="F08C252DBF461932A25A7CC24449A992" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_256.dds</File>
+    <File md5="54662136CC0C11DCE30FC52E80240F3B" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_45.dds</File>
+    <File md5="48AAF39296AB67783435AB61F8D40DDB" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_64.dds</File>
+    <File md5="441A13FA94D117AF0FC7934B9CAD0197" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_80.dds</File>
+    <File md5="40B00A4C499DF82FBCDD6E5A05410363" import="1">1.WorldWonders/Art/2.Classical/Wonder_Bamyan_splash.dds</File>
+    <File md5="BF91F792BFCA8B236486E7934370D879" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_128.dds</File>
+    <File md5="0FC3BF00E21E1C022649F93F54CCAAF6" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_256.dds</File>
+    <File md5="03E3FC567FDAFCE9CF402D510DF4075E" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_45.dds</File>
+    <File md5="9CD7A18FBD88DA036916EEB6D1A700CC" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_64.dds</File>
+    <File md5="16C2AF3E050893D775B2BAC239096934" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_80.dds</File>
+    <File md5="C2FAECF08DFD7C4A717BBA6F96D29C44" import="1">1.WorldWonders/Art/2.Classical/Wonder_Chand_Baori_splash.dds</File>
+    <File md5="766C82E56A3E110A25AAE0E40DF3A0BF" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_128.dds</File>
+    <File md5="880F151A4B20A5B218DF14DDD6C724D8" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_256.dds</File>
+    <File md5="D20A30315B6D5C8DFB6BFE8BBEA381AD" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_45.dds</File>
+    <File md5="6B836907A01DC67211002DD49DC908DC" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_64.dds</File>
+    <File md5="AF41BB1CBEA1A2EBD7358FB96391C61E" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_80.dds</File>
+    <File md5="D530FE7A042A222939C74822E401C0BD" import="1">1.WorldWonders/Art/2.Classical/Wonder_El_Ghriba_splash.dds</File>
+    <File md5="E47575B1B61E7C2E5C146EF6E20D8D66" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_128.dds</File>
+    <File md5="A41F29C80FE41B2183701F062A0DA5B6" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_256.dds</File>
+    <File md5="AC6F28933C61EA3CED43E5EC0F5A841A" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_45.dds</File>
+    <File md5="A87DE4966E0E15D092AA20F72B3133E2" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_64.dds</File>
+    <File md5="9C85C81B158E80924FC0CE33D69C4CDF" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_80.dds</File>
+    <File md5="628B7A475AB6C1FD47892E1D8661DB19" import="1">1.WorldWonders/Art/2.Classical/Wonder_Etchmiadzin_splash.dds</File>
+    <File md5="C9F84FA840748562B7E346AE6D3EBD82" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_128.dds</File>
+    <File md5="2FCEC9D403CA599E53222EAD77D7B1E5" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_256.dds</File>
+    <File md5="5DA43E4BE93F22E6C4573578EDBD1EA5" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_45.dds</File>
+    <File md5="A345D2688D1B44F3BC4D9850C10C8FE0" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_64.dds</File>
+    <File md5="BA98D02517B5BBAB5CA92D0F1FC7E0E9" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_80.dds</File>
+    <File md5="0C88524C8830E3EC08D72DD9FD906405" import="1">1.WorldWonders/Art/2.Classical/Wonder_Gate_of_Sun_splash.dds</File>
+    <File md5="AAAED692B311CC6BC5391A245FC286D2" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_128.dds</File>
+    <File md5="7D5221D104866DD0229786F34093FE2C" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_256.dds</File>
+    <File md5="E5FAD60FF53CD86C9E3D6AE0BDFE80D7" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_45.dds</File>
+    <File md5="595320AA1C1D90E582F78A10A6EE33CD" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_64.dds</File>
+    <File md5="55B24532503794A5B75DB0B4A989D364" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_80.dds</File>
+    <File md5="F3A1F9B3CBE680A49D90FAEA8BE06D11" import="1">1.WorldWonders/Art/2.Classical/Wonder_Malwiya_splash.dds</File>
+    <File md5="F3D1DB9035F10385A6752C70712E15F6" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_128.dds</File>
+    <File md5="1B53F9C6C444F02EAC86047E94A8DA5A" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_256.dds</File>
+    <File md5="4A45296894E79FFFE720FCD1680812E8" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_45.dds</File>
+    <File md5="1D348404C0F858266F2C3B1018D0B830" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_64.dds</File>
+    <File md5="0C74C102A52CB0A88BE75B7F802E8E6C" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_80.dds</File>
+    <File md5="98B99FCCB0F4FDB7C9E14A1A4EDDF5BE" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Ahu_splash.dds</File>
+    <File md5="8226BB9FE73D1809A5584794A29069A0" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_128.dds</File>
+    <File md5="377CB0D31CF7A9E731978E378837EBA4" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_256.dds</File>
+    <File md5="20C32443AC0D7B31C91B37CA6807EEF7" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_45.dds</File>
+    <File md5="C9F9954E256DEEE264514B7891FCDA58" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_64.dds</File>
+    <File md5="70B77651050D8680142FFC1E58CED9B0" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_80.dds</File>
+    <File md5="325ABA9A8E2212D071B8B246A742CB7F" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Chevaliers_splash.dds</File>
+    <File md5="AB8666EE2DC2963F3483DCF534CEC7A9" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_128.dds</File>
+    <File md5="D0ED54A64D317989937FD6FEE9929382" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_256.dds</File>
+    <File md5="1C44E51A10A39E443036F70946183A6A" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_45.dds</File>
+    <File md5="29922E3B88CD02E62B904473C0C2B8AD" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_64.dds</File>
+    <File md5="CEC972B70DB5D50D2EA28810EE6730E8" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_80.dds</File>
+    <File md5="B6F69C7490FA3B8FC410924D69BFD3D2" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Damascus_splash.dds</File>
+    <File md5="C6C2BE7EAEF6B98AD14C777461B02E58" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_128.dds</File>
+    <File md5="E536A837B6AA79DE8F0CECAEDBEA7FC6" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_256.dds</File>
+    <File md5="CF5537CF79F47067B1F7C14B558F6345" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_45.dds</File>
+    <File md5="35A5BD5CCFC11313E61DE938DA9874F3" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_64.dds</File>
+    <File md5="236D9EFE197A96E41C122C7C359C6E18" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_80.dds</File>
+    <File md5="3867BCBADF6520F1D7AC4F5E9D316A74" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Falun_splash.dds</File>
+    <File md5="660D809BCFCBB55A8FE963FA7D9C7978" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_128.dds</File>
+    <File md5="95F2806F79697B0927959CBBEC7B8E93" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_256.dds</File>
+    <File md5="1175F6EEB1A4B492F32C818D0E79E594" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_45.dds</File>
+    <File md5="B90AC4ADF70F2BA7750677D3BA6E7FA4" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_64.dds</File>
+    <File md5="455FF10F43FC1C2F01134C1645BD6FA1" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_80.dds</File>
+    <File md5="756E953A72CEDBDAB383C44648B43893" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Great_Zimbabwe_splash.dds</File>
+    <File md5="FA2BA91FE9EF5D2536FEC0E18F98BF26" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_128.dds</File>
+    <File md5="962EE37B63D1146D73D82C9D8E4E2827" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_256.dds</File>
+    <File md5="ABABC22A6BE21E7F28736963787176F5" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_45.dds</File>
+    <File md5="FDDF9EAD1C35806448B6AB1B9A726A9C" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_64.dds</File>
+    <File md5="2E50C6F1FE7952D9FF3A787D35C79A64" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_80.dds</File>
+    <File md5="F77821B86DA8AC9D54CA06E6ED67D843" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Itsukushima_splash.dds</File>
+    <File md5="96570613679527334BC3BEF020E1FFAF" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Kremlin_splash.dds</File>
+    <File md5="F8B3F6F88398C496F1E028EBBD5F63EC" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_128.dds</File>
+    <File md5="56B0769D3C973A5EC401C14B4FAC4AB3" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_256.dds</File>
+    <File md5="F7A4C046B63FDD079ACCC59DEE98D7D9" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_45.dds</File>
+    <File md5="1D6086456FF6ABCEEC4FABA45F76862F" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_64.dds</File>
+    <File md5="BD1CB1A5214F53BA64EB6E178628FD0F" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_80.dds</File>
+    <File md5="7ADCF804483F4A8BACEA52569F669465" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Lavaux_splash.dds</File>
+    <File md5="0768DCDBD3289DD23A1B1472197C0A34" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_128.dds</File>
+    <File md5="CE60431292261167117CF5F053BA1BEC" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_256.dds</File>
+    <File md5="F4DEB12860ACCBDDB7216480AE6C8589" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_45.dds</File>
+    <File md5="D005DCC413C6475E9DDA22BAADD3B479" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_64.dds</File>
+    <File md5="EC7F997059AFB415A483A5FD031B7399" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_80.dds</File>
+    <File md5="CE9DFA4ED7D40823613542FA23E82123" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Michel_splash.dds</File>
+    <File md5="A3BCD034E232C2CC8B22A3A3E0796CA8" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_128.dds</File>
+    <File md5="1C006F8CCD228B202127E216640A0F75" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_256.dds</File>
+    <File md5="C5E5CD25C40915841B085711689C02A5" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_45.dds</File>
+    <File md5="585D2A95409A1A7D5EC12E2CD768B4A7" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_64.dds</File>
+    <File md5="C378DC8A5DCFD9580523ECC13C7941DC" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_80.dds</File>
+    <File md5="9817B95D9BB43BAE42248BA9B7C5ABF1" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Nabawi_splash.dds</File>
+    <File md5="27E2B2A1D1AC1307EB33DDC7120B7EFC" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_128.dds</File>
+    <File md5="1A755C3D08F1BDAC2AFB48D91ACEBCEB" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_256.dds</File>
+    <File md5="888EEFC128F025B01043E6DD55D9A19A" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_45.dds</File>
+    <File md5="B98E83154AD1BC1F963436B441B38735" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_64.dds</File>
+    <File md5="EC811199F8078AEDB387B16FA4CFCF7D" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_80.dds</File>
+    <File md5="6EB774FCDD1B9F8F99B81D8F1FBDC7CB" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Qalhat_splash.dds</File>
+    <File md5="18E536F20979C4ED392273E3170207FA" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_128.dds</File>
+    <File md5="762DD9F886A762334E384DE67BDA7205" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_256.dds</File>
+    <File md5="245BD5A3AB9D8A794D4646A8B5ABC58F" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_45.dds</File>
+    <File md5="33A79D5B30E06ECBA56D6E3FAA33D3E8" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_64.dds</File>
+    <File md5="E0869C4829ED9F550DFD3BB062010294" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_80.dds</File>
+    <File md5="919386579AACA20B89EE285FB5DBF308" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Shwedagon_splash.dds</File>
+    <File md5="7D661391902A1681E5E6C033A53DD7D3" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_128.dds</File>
+    <File md5="5893DC94D9F22AB7A241BB4F66E896A7" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_256.dds</File>
+    <File md5="A64F6473E97E2F051C8AC7A6E69EAD1D" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_45.dds</File>
+    <File md5="F937D660338F6F366CD1DF4A8D3745BE" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_64.dds</File>
+    <File md5="D506030B671A4B3EEE887F7816D67444" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_80.dds</File>
+    <File md5="2FA6F7D37559DF188762C976D3E8F1B4" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Wartburg_splash.dds</File>
+    <File md5="D2E33A3B05C608217EEA9FCA0C337DB1" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_128.dds</File>
+    <File md5="7DBC1E104DBD93EC55CEDD27952C9997" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_256.dds</File>
+    <File md5="80DBB16E22C948CF5502B69FD218DF3D" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_45.dds</File>
+    <File md5="35BB33C34CFD0CB159FCDAB160B1B0F7" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_64.dds</File>
+    <File md5="DB3EBF508E5227A6E017FCEF9B8C22FE" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_80.dds</File>
+    <File md5="7C21325B77A467F95DBFE26A40B39526" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Bakken_splash.dds</File>
+    <File md5="B71430D19BF83C76DA722DDEBDAD4D06" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_128.dds</File>
+    <File md5="063DED9289BEDD97BEA0CE27C4C6059B" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_256.dds</File>
+    <File md5="7A356B03C37A5D43D5C89910416F672E" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_45.dds</File>
+    <File md5="16C751E1815C859922301A53D19764C5" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_64.dds</File>
+    <File md5="0A5D53239448B18C51F9C3D3D61DB5A3" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_80.dds</File>
+    <File md5="9B3125B9497281D0AEA6993B11136BCB" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Benhaddou_splash.dds</File>
+    <File md5="3E258565DE5C910E097BD14ED3382A8C" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_128.dds</File>
+    <File md5="95F03685F1B444815AB58692F000D35D" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_256.dds</File>
+    <File md5="5B1CA35B1DB13895DF142E5EBBE05E1C" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_45.dds</File>
+    <File md5="E1E42E58A1564719E768866FA8445FAA" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_64.dds</File>
+    <File md5="1C517AC8EB209273F1A20538587F3EFB" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_80.dds</File>
+    <File md5="ABA8EEA336835B58772D2ED45C4B8A8C" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_House_of_Trade_splash.dds</File>
+    <File md5="74CC9F4F2B6927ECE3CF9B1CDDDD7A96" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_128.dds</File>
+    <File md5="BD985C6FDAF4191179D2481FB9254C29" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_256.dds</File>
+    <File md5="4836BE2A39D316E1D12F6B31FC42F6C6" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_45.dds</File>
+    <File md5="DB80BB28F783E382A9FB0F44318A799B" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_64.dds</File>
+    <File md5="22D103C933681DF6BB50F11171C7A13D" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_80.dds</File>
+    <File md5="D362DE64C8F89C42414D23C9F87CD16F" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kilwa_Kisiwani_splash.dds</File>
+    <File md5="F57DFABD6684677A1E8BE6B98796EDAC" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_128.dds</File>
+    <File md5="5B96A13244EE3C7AEF0623147A434D80" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_256.dds</File>
+    <File md5="56A5845EE028C4F865EBE6BC3EEE3D23" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_45.dds</File>
+    <File md5="6FEFF4461AFF772692BDD0223E4E7185" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_64.dds</File>
+    <File md5="A42642FE19AD1B21A3E08925BBC9CA57" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_80.dds</File>
+    <File md5="4B4745B6704468EBE2D668EB5982BD0D" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Kinkaku_Ji_splash.dds</File>
+    <File md5="83BFACACF888E841A8B70F892CEA78BB" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_128.dds</File>
+    <File md5="230167EB3DD935CA7D2DCE1E113462FD" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_256.dds</File>
+    <File md5="49CA107A1C6CC2181532DF0A98899004" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_45.dds</File>
+    <File md5="9C796EAACED31E23004A3B4F39267E76" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_64.dds</File>
+    <File md5="6E769F021181C1088938713772BEF3CD" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_80.dds</File>
+    <File md5="AA80A49022C8D4622EA8022388C977F9" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Marae_splash.dds</File>
+    <File md5="8ED2F61FDD6B6460F2BA2414B0D09F5C" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_128.dds</File>
+    <File md5="45DAC547F0F9B4AB55458178BB4D8B50" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_256.dds</File>
+    <File md5="FF9E3B08EDDFC28C63278198BAA464E4" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_45.dds</File>
+    <File md5="820ACF6A64B77B0E54213CC025251E50" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_64.dds</File>
+    <File md5="CB7A9585EE81B2E40A5A7DEB398F6419" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_80.dds</File>
+    <File md5="1503B0D4E0D08C163078914844BE35C2" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Meenakshi_splash.dds</File>
+    <File md5="D490FD1C88858E7A8922CFBB2BDA4CD7" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_128.dds</File>
+    <File md5="9CDF2E43876E250EECAC1750AF750EFD" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_256.dds</File>
+    <File md5="0AAD7C7A8929DC0F237E1E8793E55E72" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_45.dds</File>
+    <File md5="E98F01B68B8EE34FFF180BC7CE09F0D9" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_64.dds</File>
+    <File md5="D9B8E2565FF40E4B103EA474FED723CA" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_80.dds</File>
+    <File md5="688C29C221508D5324ABAC189B455B6F" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Old_Bridge_splash.dds</File>
+    <File md5="396C8BB8079CF6781EACEFD04A4479B8" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_128.dds</File>
+    <File md5="32AE15D08A3C0F5D74317DC4B18792D3" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_256.dds</File>
+    <File md5="6433C6FB959E4A73B657C34CB6D68EE6" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_45.dds</File>
+    <File md5="DCAE4DCCF66B990FC6F4B8C17B7EAFCF" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_64.dds</File>
+    <File md5="3A749B91F92F723C8B44D79541F82C7A" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_80.dds</File>
+    <File md5="4DF228A2B2EDABA7468CB64FE1DA62CF" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Peterhof_splash.dds</File>
+    <File md5="F9212220F3A6C43FA61577195A682F01" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_128.dds</File>
+    <File md5="09C113C2A3FBBAD4F41C411C8D112EB8" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_256.dds</File>
+    <File md5="31EF86B626B84BAFBF3BF19792046968" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_45.dds</File>
+    <File md5="C5B433AEF706CC842CFD7E83C79A7B24" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_64.dds</File>
+    <File md5="5A7441CF089E6B27FE61451B5F718EE3" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_80.dds</File>
+    <File md5="832DE8A14B8846FF79F9A6045C6D991C" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Solovietsky_splash.dds</File>
+    <File md5="54AB32B80663254E808DA8319B7F45FF" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_St_Peters_splash.dds</File>
+    <File md5="B42F6A2EB672D7658892AEA429E8A469" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Taj_Mahal_splash.dds</File>
+    <File md5="EE34CF4A0A5C6BEC971C0C93CEF80A09" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_128.dds</File>
+    <File md5="179D099D9846AB9A2FB38EB6571D505F" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_256.dds</File>
+    <File md5="9377C807264386F4A4784FC3654AF7D7" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_45.dds</File>
+    <File md5="C244275C5F45CF2042F441B4E9EDCCC9" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_64.dds</File>
+    <File md5="1DCB4B069269D6F67F794282B69D23A6" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_80.dds</File>
+    <File md5="C20C734CAF13AB94012FA51082DF8B12" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Brooklyn_splash.dds</File>
+    <File md5="9F7DCFDEAD4F6C792CEAD610C07F5853" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_128.dds</File>
+    <File md5="BA9FC2ABF3404451496C00FD148D5981" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_256.dds</File>
+    <File md5="C220B33B4FB3C29045E8AA67D39BDAA3" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_45.dds</File>
+    <File md5="0C41B46D2820B8BEB0087F1CD1B1DC17" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_64.dds</File>
+    <File md5="41DD06B7748726DF4CBB4B2A754C5C7A" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_80.dds</File>
+    <File md5="C40E4CD32D15EFCEDF4F43F3BFF537D2" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Darjeeling_splash.dds</File>
+    <File md5="B6902420C7BF13FA3E4BA0FC58020331" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Louvre_splash.dds</File>
+    <File md5="61F63DA7CA77041C523011A6280239DB" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_128.dds</File>
+    <File md5="6279CC8040B46A22B160D7321F5D5AF8" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_256.dds</File>
+    <File md5="D3738FF94D4C2380C86A406E31BD03B2" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_45.dds</File>
+    <File md5="8E21100F5AE234329F19BFC7996CE9C6" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_64.dds</File>
+    <File md5="DA61402E73A7172C01A1497FE8631A3A" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_80.dds</File>
+    <File md5="C50E0BC1BD0D61F750A43241F2205A48" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Monte_Carlo_splash.dds</File>
+    <File md5="A0A515EF699A55DF4589E0F7FC1136C0" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_128.dds</File>
+    <File md5="3A6212BCA64D8D30FF8610A6701CE7A2" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_256.dds</File>
+    <File md5="15472BF70AB14C076117CE066DAD33B3" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_45.dds</File>
+    <File md5="252894B08E6E6196A72E8263EA4D915E" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_64.dds</File>
+    <File md5="CCBE9F263E81739301EAF7B5752F0B35" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_80.dds</File>
+    <File md5="CEE53D0D2F537EAEA1CFA5E55964ACF9" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Museum_Island_splash.dds</File>
+    <File md5="8665F19D98811D40281713A51B590D49" import="1">1.WorldWonders/Art/5.Industrial/Wonder_America_Slater_Mill_splash.dds</File>
+    <File md5="791553A900CE9A2160C81DA1158CA037" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_128.dds</File>
+    <File md5="47D84344F39B6BA02E7C8E33A5693D67" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_256.dds</File>
+    <File md5="4BE82FED570988F10C1BE5B6F1CEB9E9" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_45.dds</File>
+    <File md5="55157998DF81B26ADCF252F66B2F2DD1" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_64.dds</File>
+    <File md5="723A87095379ACBC4370ACE7636BD890" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_80.dds</File>
+    <File md5="6E8122847425FF74AACBB7D2711713FD" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Anitkabir_splash.dds</File>
+    <File md5="8B6C29D75089FBFC4B2341E1A2C58D34" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_128.dds</File>
+    <File md5="DA54DB667CC6D91749E3A45A9FC150F0" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_256.dds</File>
+    <File md5="0B603E752A6F787D2BE6EBD49487AC8F" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_45.dds</File>
+    <File md5="F5D28DFB0879DA6AE94E3DECB609E259" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_64.dds</File>
+    <File md5="D69F1B8EA06853DFF14344240FCC5265" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_80.dds</File>
+    <File md5="6ADAF27F16D0BB885C926C9D59965C18" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Arecibo_splash.dds</File>
+    <File md5="5A2E05635BE07D0AB2AC6E8347E01A3A" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_128.dds</File>
+    <File md5="C308815F434C3ABEF0745B9B19EB0D05" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_256.dds</File>
+    <File md5="BD870AD905DB4C8FD64AF9A805F9AFB2" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_45.dds</File>
+    <File md5="AB95DF5A962F40DC1BB387409DF9670A" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_64.dds</File>
+    <File md5="89B12FD2B8F8EB7D60124D14C48CE338" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_80.dds</File>
+    <File md5="6A8D4A716F4508595F039ABE695C6482" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Millau_splash.dds</File>
+    <File md5="9251AFF71EC617669ECBBAAFDE691808" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_128.dds</File>
+    <File md5="354C5F99735FD01AC08DC4CB6BF02AB4" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_256.dds</File>
+    <File md5="59C19A9B2FD176F24A41D64806845235" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_45.dds</File>
+    <File md5="A6B201E123FC81D7C45A5243666A7478" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_64.dds</File>
+    <File md5="094E0A50DA85D6F7CE1ACBB044704C85" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_80.dds</File>
+    <File md5="71486F2A0C5B027EB5FD628DF957B902" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Sputnik_splash.dds</File>
+    <File md5="7C89B4BFD9ABF536847B1CFB967C1D71" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_128.dds</File>
+    <File md5="444A6658B2EDF775ED632ADC4B0B34C2" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_256.dds</File>
+    <File md5="F49B25CD3CFC642B7507BF16FD3A929C" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_45.dds</File>
+    <File md5="91B9F2FF7F6CEC80068912C8E65208EE" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_64.dds</File>
+    <File md5="F03CF99D81BC42F906B19246CAEC5CB7" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_80.dds</File>
+    <File md5="C5666E7B77FD76AA844982DFEE592AB4" import="1">1.WorldWonders/Art/7.Atomic/Wonder_White_Sands_splash.dds</File>
+    <File md5="C78CBD867A962E5D4C6AD9AE93544BEA" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_128.dds</File>
+    <File md5="8598EDA8894A8F7670758E8A3D90F87E" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_256.dds</File>
+    <File md5="1D4FEB94BB0694E1214050ACF39FD87C" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_45.dds</File>
+    <File md5="6E7950F405365C95D05CC9F3BC153E52" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_64.dds</File>
+    <File md5="A2B02093A8FD0176CED60F98CCB11F94" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_80.dds</File>
+    <File md5="E3A073AB7A2CBAB9D548638A71E005D6" import="1">1.WorldWonders/Art/8.Information/Wonder_Jumeirah_Splash.dds</File>
+    <File md5="F921824A796E719082E06AA5FC03A260" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_128.dds</File>
+    <File md5="90FAFD0D7D027873AD94DDA059055B09" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_256.dds</File>
+    <File md5="B9980EF22F81FEC203818CE73A93AA87" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_45.dds</File>
+    <File md5="6E3C5F47B7850E4D34E1AABADD8092A6" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_64.dds</File>
+    <File md5="DDCAA6C87F366B1BE228FC71BD166A91" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_80.dds</File>
+    <File md5="E2189BE9ACDDFBCC75087871622F0948" import="1">1.WorldWonders/Art/8.Information/Wonder_Taipei_splash.dds</File>
+    <File md5="1E79360EB146FC5C5B5628CB293738D6" import="1">1.WorldWonders/Art/8.Information/Wonder_CERN_splash.dds</File>
+    <File md5="469839B684703B40A2B64BF11F94B72F" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_128.dds</File>
+    <File md5="42AB4FFFD5C163D312E80FC411DF7D41" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_256.dds</File>
+    <File md5="156FF46E6990E754FBE11667D663CE4F" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_45.dds</File>
+    <File md5="2EC9CAA11C85DDC2F2A799EA71273479" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_64.dds</File>
+    <File md5="A3909C7FD4C9D9BFDF7059CA68B2092B" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_80.dds</File>
+    <File md5="6AEB032EDF21EE513DC785E7A0F56D6F" import="1">1.WorldWonders/Art/1.Ancient/Wonder_Thong_Hai_Hin_splash.dds</File>
+    <File md5="62E448368F826CDCB3E01E5C7853D65D" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_128.dds</File>
+    <File md5="D7CF0431D318B7B5DA361B3A92FCF1D3" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_256.dds</File>
+    <File md5="B560FFBDDDFC90F00FA0E1879659D71D" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_45.dds</File>
+    <File md5="C95FAFC15810F5E5B96CB59B858E87C5" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_64.dds</File>
+    <File md5="95A6D9FEAAAB5EB8EF3005ACA7E0DE0E" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_80.dds</File>
+    <File md5="A3B809C77B6D9449A49F699FB764B72C" import="1">1.WorldWonders/Art/2.Classical/Wonder_Sigiriya_splash.dds</File>
+    <File md5="59AF2880F87BB6FDC4477AB34B7B2C98" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_128.dds</File>
+    <File md5="F2443F781AE6A3D05F0DB26B22E75468" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_256.dds</File>
+    <File md5="1AA65BFE859FC82F17335572A8F4A353" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_45.dds</File>
+    <File md5="898E46951DCD23A6CF58AB054D49CFAB" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_64.dds</File>
+    <File md5="F28AC2F5F0A708B668A1F0708C9CA4E5" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_80.dds</File>
+    <File md5="580A2FB2646926133BB16312CF1A3D2D" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Buyuk_Han_splash.dds</File>
+    <File md5="7AF78A052E38EBB4DE771A6A25DF9EDE" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_128.dds</File>
+    <File md5="345516F6FB1A91D4AF181B69AEA6EFAB" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_256.dds</File>
+    <File md5="A349C86E3E95276D9C76DDF876D9EE84" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_45.dds</File>
+    <File md5="377EBB36C9196CC69B17309CDC34A856" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_64.dds</File>
+    <File md5="CB47381B5C64513013578BF3301369D0" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_80.dds</File>
+    <File md5="FC97D0012853565F1B175058F4B86BFB" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Moray_splash.dds</File>
+    <File md5="F113510199E76564E358EBE54477D3E7" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_128.dds</File>
+    <File md5="63DDBA914C4C3AD4A9895352E48CD42C" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_256.dds</File>
+    <File md5="DFAF02F3560A6E238FAB62479D3DC45C" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_45.dds</File>
+    <File md5="ED28250F852E3E7E8808E08F821BF02E" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_64.dds</File>
+    <File md5="2B6713A6612BD1C7561276C396535BD2" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_80.dds</File>
+    <File md5="4CBE8188384E59CED27351B1BCC09DB7" import="1">1.WorldWonders/Art/3.Medieval/Wonder_Rila_splash.dds</File>
+    <File md5="30AF8EA6AEF42E73478945AF0AC6C3AC" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_128.dds</File>
+    <File md5="2F9D07713AA032D60AF4D3092A846BAE" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_256.dds</File>
+    <File md5="F305AC315AC6BF2A2A247C5AB47FAEE8" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_45.dds</File>
+    <File md5="FCA6F37760D9A41640B81B4BBDF152AB" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_64.dds</File>
+    <File md5="C4CB37964F78B366A46413B5204C7C0A" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_80.dds</File>
+    <File md5="221FD1A262EBAF10775A5CA5DDC37700" import="1">1.WorldWonders/Art/4.Renaissance/Wonder_Tembleque_splash.dds</File>
+    <File md5="E7C7182191A69ED7D882A75D23C4E335" import="1">1.WorldWonders/Art/5.Industrial/Great_Work_Holy_Crown.dds</File>
+    <File md5="1F40B0AB7EAC7BE71E0F1E4CEAB367EF" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_128.dds</File>
+    <File md5="D9F84EFE5600BF542155D3E70A9349C1" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_256.dds</File>
+    <File md5="3CDDA36BE0EAD10AE8ED33259181F10D" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_45.dds</File>
+    <File md5="37BA9DFAD33E6C53717A5536F336AB54" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_64.dds</File>
+    <File md5="D03C41493A59561DD4D6365AF5D9238C" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_80.dds</File>
+    <File md5="9A74C8CB56C4B8659D6EBA5EC8508EDB" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Banff_splash.dds</File>
+    <File md5="740833F70802D460DCFE0395CBAA15A5" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_128.dds</File>
+    <File md5="FE7EB8CD1A0D9B80F05A4F2C9ABCFEBD" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_256.dds</File>
+    <File md5="39762CC54ED24B1F28C9D70E86B60401" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_45.dds</File>
+    <File md5="12DAEA8C367A92601F017A5D0D5DBD4A" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_64.dds</File>
+    <File md5="57D62396D6D42603DCBBC1F27C77EBE7" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_80.dds</File>
+    <File md5="8C34010FE4A4218EF6129E56598EEAE8" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Kew_Gardens_splash.dds</File>
+    <File md5="9918B4159F72837C2615152EC750AC36" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_128.dds</File>
+    <File md5="84088BFC042C1949397BF52A941189A2" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_256.dds</File>
+    <File md5="F1C96DADD0F44B5A91C88AA70EB14C66" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_45.dds</File>
+    <File md5="9975F7657BBB4D6CCA0028F2F86C4401" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_64.dds</File>
+    <File md5="FC8DC48DD5439668C8DB82FFF3B6AF09" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_80.dds</File>
+    <File md5="8BF5A4BEBDA6C85C8935CD307567EEFD" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Orszaghaz_splash.dds</File>
+    <File md5="067C73E04E0E90DCF4EDB75DC8D2013A" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_128.dds</File>
+    <File md5="143D094C0A26D2EACB6442EB9A87729F" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_256.dds</File>
+    <File md5="4BB3771F17457A3873815470C4ECCF52" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_45.dds</File>
+    <File md5="B0F4CADC9194D6EEC0A876099228CEF9" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_64.dds</File>
+    <File md5="C85862E51A74256427DDB5728D62B8E5" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_80.dds</File>
+    <File md5="D1C2E6649BBF14854975DA03F24C5FCB" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Ruhr_Valley_splash.dds</File>
+    <File md5="4D30098E914D102BF80E523E149158CF" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_splash.dds</File>
+    <File md5="5B9B1FCA7DE8911A47258B64628B7E47" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_128.dds</File>
+    <File md5="8F09011D0141AB41E965A690DFD06B21" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_256.dds</File>
+    <File md5="F8246FB3BAF6457B09FB0A29A4B79C36" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_45.dds</File>
+    <File md5="83B57DB05F1DA277CC06ABFC7E51CF67" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_64.dds</File>
+    <File md5="4E3CFF8A912286B74BEAE0550B1785AA" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_80.dds</File>
+    <File md5="B9186A0753242C19FC2357C230459995" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_128.dds</File>
+    <File md5="931B673FBDF6CC96677BC7D7779F4C40" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_256.dds</File>
+    <File md5="C0199834109B716E5FCF68C069334A81" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_45.dds</File>
+    <File md5="89B676B6D8CD1885602E08A2A79EE7F0" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_64.dds</File>
+    <File md5="99CABC0CC9104B0C51AFD89EE1E08DBD" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siberian_Railway_80.dds</File>
+    <File md5="5ECD7F75292B78369438CCEC74B83BD1" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Siku_Quanshu_splash.dds</File>
+    <File md5="16E794D20F796342403554CC8EFFE37A" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_128.dds</File>
+    <File md5="C5F88D156671795AD340716B0C21D796" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_256.dds</File>
+    <File md5="D8CA562311C9C4DB1AE9FA1E0273A6FD" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_45.dds</File>
+    <File md5="04ADD68BFF0D7E6DFB047C4B98B0ABB8" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_64.dds</File>
+    <File md5="81364C8B330A3685DF91E558B5C101BF" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_80.dds</File>
+    <File md5="D24F7BFDD57F5027C2A58CC46F6ACF2F" import="1">1.WorldWonders/Art/5.Industrial/Wonder_Zocalo_splash.dds</File>
+    <File md5="60ACC85CDCA2C001236B71D83C46DB88" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_128.dds</File>
+    <File md5="7F33C5390D0E8B4F704F06EBB2F4B523" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_256.dds</File>
+    <File md5="FF67B33A1E93BF7A545278DB5E55D74E" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_45.dds</File>
+    <File md5="62BB8EC16E301D62DA5DD5E09975DFD5" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_64.dds</File>
+    <File md5="4290B98AFC2CA39D922D6727BF2E2097" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_80.dds</File>
+    <File md5="D6A696A37E2BAE1FDC72BFAC464ECD43" import="1">1.WorldWonders/Art/6.Modern/Wonder_Akihabara_splash.dds</File>
+    <File md5="5459BC88B0B30BE7CD1432B68AAB029A" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_128.dds</File>
+    <File md5="3DFABFFB67CD1F68A0205AB95ADC455A" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_256.dds</File>
+    <File md5="7367C7DF16B4649DFEAF37863FF7CF68" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_45.dds</File>
+    <File md5="83616DD5B452D7EF9A299925CC327CCE" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_64.dds</File>
+    <File md5="0C5DD5B418A2D84CF948BCF6EA087F24" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_80.dds</File>
+    <File md5="FFE87A0F3915670238834B1D56A2BAAC" import="1">1.WorldWonders/Art/6.Modern/Wonder_Autobahn_splash.dds</File>
+    <File md5="FAEA697FD8D996B87A97127C75D7A661" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_128.dds</File>
+    <File md5="36D14535116D12157C1DFF3FC4A1DEA3" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_256.dds</File>
+    <File md5="C4FDD0100F719BEDB655D74CC1EF09DF" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_45.dds</File>
+    <File md5="F0784FCD4FE5DF0BCA959D731B05DDCA" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_64.dds</File>
+    <File md5="2621AAE260C642B4B74E8727B7437DB9" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_80.dds</File>
+    <File md5="888F0D08025DE3868391F37FBE94265C" import="1">1.WorldWonders/Art/6.Modern/Wonder_Concorde_splash.dds</File>
+    <File md5="255F6247CEF47FFC4CAB0373457AC70E" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_45.dds</File>
+    <File md5="0426F96DA2BAB51C491F3A64EF97F404" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_64.dds</File>
+    <File md5="F90CCB5D3C54812B25B83B9F9D95CE27" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_80.dds</File>
+    <File md5="38010348570F4237FB63F4E04C8E5314" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_128.dds</File>
+    <File md5="76DC84B76931E92B5AC4392628FD375C" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_256.dds</File>
+    <File md5="F8286DF36A3940BC3F379F89E7D5ECD3" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_splash.dds</File>
+    <File md5="4A578364526B02526D21CCA62BF5FF3F" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_splash.dds</File>
+    <File md5="3E47854E3A8F7D06731743FAA2D7BEFA" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_128.dds</File>
+    <File md5="7BC784AD2779B153DF568058DA231CB4" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_256.dds</File>
+    <File md5="FAB5BBF3AE74388CE217087F086EFCE1" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_45.dds</File>
+    <File md5="C0CB4CC3DF95FBD965E41B63EB1C1140" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_64.dds</File>
+    <File md5="DBA8C1036469A0B04B0A1E7C0BD8C83F" import="1">1.WorldWonders/Art/6.Modern/Wonder_Polar_Expedition_80.dds</File>
+    <File md5="018C979140D8782221BFAD3D9B744AD0" import="1">1.WorldWonders/Art/6.Modern/Wonder_Hollywood_splash.dds</File>
+    <File md5="8ED71E9857E5A425BEC210B70037575E" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_128.dds</File>
+    <File md5="8105BA5043D4064DA70A21C16185A638" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_256.dds</File>
+    <File md5="E554FDF8CE477BC67FD524584E216407" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_45.dds</File>
+    <File md5="41F56F760AE2B67215873566ECCDA475" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_64.dds</File>
+    <File md5="DF67935195A363D6F50F19803497E0F0" import="1">1.WorldWonders/Art/6.Modern/Wonder_Interstate_80.dds</File>
+    <File md5="BDE9BC13C9276AE02F01D9D92499FD39" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_128.dds</File>
+    <File md5="E3922E74EEA5CA35AF099F1F038687F6" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_256.dds</File>
+    <File md5="812C9A787C4E3604EF4468F9AE9244D9" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_45.dds</File>
+    <File md5="2782EDAA34DD01E4DD6C9AB3DD99789A" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_64.dds</File>
+    <File md5="C40810A769FE0F3C8C75811D30BC8516" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_80.dds</File>
+    <File md5="73D91DB26B6A6E82AC0CDEE72F186896" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rockefeller_splash.dds</File>
+    <File md5="6C85057D3D886D6B1550D37FE876DA97" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_128.dds</File>
+    <File md5="14330C59F668B5DA9A3702DD73FB1FE4" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_256.dds</File>
+    <File md5="B56B9108E799A929582550C210A2BB89" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_45.dds</File>
+    <File md5="386C270516641467FECC54D76E53FEF8" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_64.dds</File>
+    <File md5="135D0BD8472296D91AD5257309F8B852" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_80.dds</File>
+    <File md5="BBC9B1FD4802D1851ED5077BDB35D4AB" import="1">1.WorldWonders/Art/6.Modern/Wonder_Rushmore_splash.dds</File>
+    <File md5="E38CA0E6ED0FD6DB64040EEC038A301C" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_128.dds</File>
+    <File md5="AF0F05838199DACB2B188CA4417FE26C" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_256.dds</File>
+    <File md5="5597093294643E5BF8AD3715515FAE2C" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_45.dds</File>
+    <File md5="DB45648CCBA98965E84F66B1F0BF19EE" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_64.dds</File>
+    <File md5="5719ABB02DEE5FAB30D2180E89CD92E5" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_80.dds</File>
+    <File md5="0F9A3EF0BF1A4F4900A445B640B12ED1" import="1">1.WorldWonders/Art/6.Modern/Wonder_Sanbo_splash.dds</File>
+    <File md5="7F84B788590E1E5CA50668BED67B929D" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_128.dds</File>
+    <File md5="03FA45456F3B544A69EADFBD976F4025" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_256.dds</File>
+    <File md5="5698485D8DF82C966F1CF006C5DE6934" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_45.dds</File>
+    <File md5="CEF7762687F34B4E40D1EA51B600C2AA" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_64.dds</File>
+    <File md5="C0ECC123ABEA3D7DE13E0B42F5AE0035" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_80.dds</File>
+    <File md5="6F1A64C10E3078B60286E76354238D32" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Habitat_splash.dds</File>
+    <File md5="DB4AE499B5D8D495773CC64FB703FC0B" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_128.dds</File>
+    <File md5="B37F56CE373D92F5E3D492E745634E5C" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_256.dds</File>
+    <File md5="FCD0607CCEFA755ECB7D03E2CA0535C2" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_45.dds</File>
+    <File md5="12C27DC170006931C37FF3690D900654" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_64.dds</File>
+    <File md5="44AA8F4F3CFDB7B84B57AD0EDFAB0738" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_80.dds</File>
+    <File md5="10BC6EBF6593B4FD3DA15479E217AF93" import="1">1.WorldWonders/Art/7.Atomic/Wonder_JFK_splash.dds</File>
+    <File md5="517CD9C9524A12A312FAC048B2D82622" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_128.dds</File>
+    <File md5="BA634FE0276DC6EABF2636C0D07FE28B" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_256.dds</File>
+    <File md5="0B8013A0780A560017461A5F4EE8574B" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_45.dds</File>
+    <File md5="9A465EA286BBAC070297CFDBB653D6B5" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_64.dds</File>
+    <File md5="279F7C779A59BA4B5ECFA74FA57D1101" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_80.dds</File>
+    <File md5="D49D417ADD625A79D773D77A95E8CFE2" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Revolutionary_Museum_splash.dds</File>
+    <File md5="87D145BEA863479BAED40E9AB105D5F9" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_128.dds</File>
+    <File md5="84D48BB7901337C191B79F19947358E0" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_256.dds</File>
+    <File md5="ECD426D9FB61943ABE2254697060B580" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_45.dds</File>
+    <File md5="520FDFEA1CEB8383D55FC5454823FAAD" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_64.dds</File>
+    <File md5="6C50410A57A243C5223057061673E4F9" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_80.dds</File>
+    <File md5="BC67043D31B05383442E8C45842966C2" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Milestii_Mici_splash.dds</File>
+    <File md5="01C39ADFAE1B0E8A342844D198CCFF63" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_128.dds</File>
+    <File md5="584CC269DA954DC023F8AF1F91C4506C" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_256.dds</File>
+    <File md5="C0CECDAC34E73C4F41D42B0330DB0BA1" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_45.dds</File>
+    <File md5="CBDC0F4EE86D0F66C748971195F4B4DA" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_64.dds</File>
+    <File md5="2293B9E83407ABB7688B4E93012C30D8" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_80.dds</File>
+    <File md5="79AEEB2EDC4C623F62974FAD74243C2F" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Thule_splash.dds</File>
+    <File md5="0027934E70974EB68DB69E395DB28B3E" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_128.dds</File>
+    <File md5="34C6880B66A266597E92783943BC5FB1" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_256.dds</File>
+    <File md5="8B9B60A9DB70E5018DE6142C95D2C304" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_45.dds</File>
+    <File md5="0854826D5ABF58CA657E55591BF4CA63" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_64.dds</File>
+    <File md5="21917A28A9806D306DBFAEDBF8D6EACB" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_80.dds</File>
+    <File md5="61E7792F141696D97F94EB7C523B9CEB" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Vostok_splash.dds</File>
+    <File md5="C939EFE2351EAE421A99A21CA1E113AA" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_128.dds</File>
+    <File md5="8F4D729D1E214D045163F92E543AB031" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_256.dds</File>
+    <File md5="1DA5CF05C040D04F1E6F585C47274015" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_45.dds</File>
+    <File md5="2CEE5DBD9378D7B01905133EFDDFAA70" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_64.dds</File>
+    <File md5="164B840D8F3F19744A4CCA6F29F1FA21" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_80.dds</File>
+    <File md5="C97497A301A1CD6D75BA37E4870CD45D" import="1">1.WorldWonders/Art/8.Information/Wonder_Curiosity_splash.dds</File>
+    <File md5="79B3039BFFD233B80318B2FB7A22ABFD" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_128.dds</File>
+    <File md5="4D3E9BCC1E6EAE99637FCCBCCBD0C2BD" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_256.dds</File>
+    <File md5="AF61B8DB19244AA5D6C75FAE5BD6578C" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_45.dds</File>
+    <File md5="6A11AEE744E3120B00C51F5EA280DBC1" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_64.dds</File>
+    <File md5="8032AE27BC74874ADA1766E7B9F84F22" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_80.dds</File>
+    <File md5="3B600A4ACC755AB7AE973F73B0FD19BA" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_128.dds</File>
+    <File md5="D7C1142217B0976248DD6855E7931763" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_256.dds</File>
+    <File md5="F5AF50A8A71143DEFB4EF5D4FA3CD34F" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_45.dds</File>
+    <File md5="D0DD965F78F757B990093BCDDC9FA566" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_64.dds</File>
+    <File md5="232E717B5D699AD51F40205EAE06EADA" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_80.dds</File>
+    <File md5="FF2991B9AC80776CD8553C6CEC4894CD" import="1">1.WorldWonders/Art/8.Information/Wonder_GPS_splash.dds</File>
+    <File md5="FE4DB14B91F3FB53AD40D8E330709177" import="1">1.WorldWonders/Sounds/wonder_ahu_man.mp3</File>
+    <File md5="FF2DA64D0D20B087D2C5CFBF95A03EF9" import="1">1.WorldWonders/Sounds/wonder_ahu_woman.mp3</File>
+    <File md5="373E28FF6C192B01D333A7FC28793B38" import="1">1.WorldWonders/Sounds/wonder_akihabara_man.mp3</File>
+    <File md5="373E28FF6C192B01D333A7FC28793B38" import="1">1.WorldWonders/Sounds/wonder_akihabara_woman.mp3</File>
+    <File md5="AFC14A081CFCE45C992BB06E3907EE0E" import="1">1.WorldWonders/Sounds/wonder_altamira_man.mp3</File>
+    <File md5="26BF58E3E933F891EC870FC6F270335E" import="1">1.WorldWonders/Sounds/wonder_altamira_woman.mp3</File>
+    <File md5="5DC1885EDFDF9A1549F5317E41563E51" import="1">1.WorldWonders/Sounds/art_ark_of_the_covenant_man.mp3</File>
+    <File md5="5283ED80F56235106E2775C188A7AF1A" import="1">1.WorldWonders/Sounds/art_ark_of_the_covenant_woman.mp3</File>
+    <File md5="9A1AAF3E44FE5390DE8FBF2867E05C02" import="1">1.WorldWonders/Sounds/wonder_arecibo_man.mp3</File>
+    <File md5="9A1AAF3E44FE5390DE8FBF2867E05C02" import="1">1.WorldWonders/Sounds/wonder_arecibo_woman.mp3</File>
+    <File md5="FE8612656C3246949C51C48214A15BA1" import="1">1.WorldWonders/Sounds/wonder_bakken_man.mp3</File>
+    <File md5="9196210AFE6EA20EC2E46415B5FF91CB" import="1">1.WorldWonders/Sounds/wonder_bakken_woman.mp3</File>
+    <File md5="F5FB9AC7591E0E173C03DA813B6DDA7D" import="1">1.WorldWonders/Sounds/wonder_bamyan_man.mp3</File>
+    <File md5="5B0DBB73BD18D8BBFAE99EDA1311EB91" import="1">1.WorldWonders/Sounds/wonder_bamyan_woman.mp3</File>
+    <File md5="CF37FB0790F2EB58F002BB308BBF5CB7" import="1">1.WorldWonders/Sounds/wonder_banff_man.mp3</File>
+    <File md5="076AA3A7B53BE0E515A423AFB418C623" import="1">1.WorldWonders/Sounds/wonder_banff_woman.mp3</File>
+    <File md5="DBC2DC391743E271FCF998F31B49FD9A" import="1">1.WorldWonders/Sounds/wonder_benhaddou_man.mp3</File>
+    <File md5="6212A4DC9FB599FD75D5CDF77EDDAF24" import="1">1.WorldWonders/Sounds/wonder_benhaddou_woman.mp3</File>
+    <File md5="8434D8AF355C3EBC8FEE365E2CBAA2D2" import="1">1.WorldWonders/Sounds/wonder_bletchley_man.mp3</File>
+    <File md5="8434D8AF355C3EBC8FEE365E2CBAA2D2" import="1">1.WorldWonders/Sounds/wonder_bletchley_woman.mp3</File>
+    <File md5="26AE6AFEFA9EF1C7689CAC71E50438FF" import="1">1.WorldWonders/Sounds/wonder_brooklyn_man.mp3</File>
+    <File md5="C51ADB4AD0AB8B82B15713E9E1F3B78A" import="1">1.WorldWonders/Sounds/wonder_brooklyn_woman.mp3</File>
+    <File md5="6D31B7C3779697827488BEDDBE7AEF0D" import="1">1.WorldWonders/Sounds/wonder_cern_man.mp3</File>
+    <File md5="6D31B7C3779697827488BEDDBE7AEF0D" import="1">1.WorldWonders/Sounds/wonder_cern_woman.mp3</File>
+    <File md5="4E5BC29E2B3E68E79BB301A1DCEAFDDA" import="1">1.WorldWonders/Sounds/wonder_chand_baori_man.mp3</File>
+    <File md5="B68D2D13BFDF3D5F2F2C7E5FE80BFB09" import="1">1.WorldWonders/Sounds/wonder_chand_baori_woman.mp3</File>
+    <File md5="F4608D5A1C5D4D8755828B6AA5B2AE98" import="1">1.WorldWonders/Sounds/wonder_chevaliers_man.mp3</File>
+    <File md5="1926BA44B3AAA7B40F1745E512AB06A1" import="1">1.WorldWonders/Sounds/wonder_chevaliers_woman.mp3</File>
+    <File md5="99DB5BE559131E494AB6569294BF5009" import="1">1.WorldWonders/Sounds/wonder_crystal_palace_man.mp3</File>
+    <File md5="99DB5BE559131E494AB6569294BF5009" import="1">1.WorldWonders/Sounds/wonder_crystal_palace_woman.mp3</File>
+    <File md5="7DEBB55E47CA8B35AF07DA1A0FF523DB" import="1">1.WorldWonders/Sounds/wonder_damascus_man.mp3</File>
+    <File md5="DCEA6CF82DFE606AA795284BF54F7379" import="1">1.WorldWonders/Sounds/wonder_damascus_woman.mp3</File>
+    <File md5="124F12C2A33E05500FA2155E2D7DABA2" import="1">1.WorldWonders/Sounds/wonder_darjeeling_man.mp3</File>
+    <File md5="B131E2DA9DED1993A9FDB6B99C6FCAAE" import="1">1.WorldWonders/Sounds/wonder_darjeeling_woman.mp3</File>
+    <File md5="32964B8ADD533923EFAD7BBE339BFD3D" import="1">1.WorldWonders/Sounds/wonder_el_ghriba_man.mp3</File>
+    <File md5="B7400304AA78E603AE4CF059EA7AFFA6" import="1">1.WorldWonders/Sounds/wonder_el_ghriba_woman.mp3</File>
+    <File md5="C96EA49F24FBCC64A28920EF1175E083" import="1">1.WorldWonders/Sounds/wonder_empire_state_man.mp3</File>
+    <File md5="C96EA49F24FBCC64A28920EF1175E083" import="1">1.WorldWonders/Sounds/wonder_empire_state_woman.mp3</File>
+    <File md5="348CD2053ED7FF8690DF48FE935F351C" import="1">1.WorldWonders/Sounds/wonder_etchmiadzin_man.mp3</File>
+    <File md5="2012D76C910619170248C31B473F3354" import="1">1.WorldWonders/Sounds/wonder_etchmiadzin_woman.mp3</File>
+    <File md5="E6C03341BC914B198D9B2116FD5019E4" import="1">1.WorldWonders/Sounds/wonder_falun_man.mp3</File>
+    <File md5="BBEE922B41D3D6375EF0947E3A9C1E04" import="1">1.WorldWonders/Sounds/wonder_falun_woman.mp3</File>
+    <File md5="DC53DAC5F97CB17B658C9E058D49B8DB" import="1">1.WorldWonders/Sounds/wonder_forum_man.mp3</File>
+    <File md5="DC53DAC5F97CB17B658C9E058D49B8DB" import="1">1.WorldWonders/Sounds/wonder_forum_woman.mp3</File>
+    <File md5="A93CBB40526567CBEA3809CFBAC37D23" import="1">1.WorldWonders/Sounds/wonder_gate_of_sun_man.mp3</File>
+    <File md5="E37B4F44F8C54C17D08E32E8499D052E" import="1">1.WorldWonders/Sounds/wonder_gate_of_sun_woman.mp3</File>
+    <File md5="F9BB5C8BDBA3FA418708BCA9F056DD71" import="1">1.WorldWonders/Sounds/wonder_ggantija_man.mp3</File>
+    <File md5="AFF752A4715ABEFE4F0318B38209A74E" import="1">1.WorldWonders/Sounds/wonder_ggantija_woman.mp3</File>
+    <File md5="8E4F6B05495E19CAE3FD4C2DE47F0BB0" import="1">1.WorldWonders/Sounds/wonder_goebekli_tepe_man.mp3</File>
+    <File md5="9BEB4F628CC3783864FC60C5140938B9" import="1">1.WorldWonders/Sounds/wonder_goebekli_tepe_woman.mp3</File>
+    <File md5="AA33A2685E91B44F8AE07D72F80F98B3" import="1">1.WorldWonders/Sounds/wonder_grand_canal_man.mp3</File>
+    <File md5="AA33A2685E91B44F8AE07D72F80F98B3" import="1">1.WorldWonders/Sounds/wonder_grand_canal_woman.mp3</File>
+    <File md5="763D4BB61804949F0B70F42EF641AC6B" import="1">1.WorldWonders/Sounds/wonder_great_zimbabwe_man.mp3</File>
+    <File md5="BFE9DDB09D00E1604B3DEF2069DC4495" import="1">1.WorldWonders/Sounds/wonder_great_zimbabwe_woman.mp3</File>
+    <File md5="100C57A7B4DE8DFC5ADACE3F269FA279" import="1">1.WorldWonders/Sounds/art_holy_crown_man.mp3</File>
+    <File md5="7C60B62E017901E7B27C08D90DBEA35E" import="1">1.WorldWonders/Sounds/art_holy_crown_woman.mp3</File>
+    <File md5="993E43BBA8EB4E532846F8E27E335131" import="1">1.WorldWonders/Sounds/art_holy_lance_man.mp3</File>
+    <File md5="6552B16B11C89EEDD669F25B2A9E327E" import="1">1.WorldWonders/Sounds/art_holy_lance_woman.mp3</File>
+    <File md5="4A43DE2A9E88D1686AE2704979CB4956" import="1">1.WorldWonders/Sounds/wonder_house_of_trade_man.mp3</File>
+    <File md5="461FC9C8AEF4B535B4ACE689EF626E86" import="1">1.WorldWonders/Sounds/wonder_house_of_trade_woman.mp3</File>
+    <File md5="C2BF0F12BC93BA0FE26668B4573FF1D7" import="1">1.WorldWonders/Sounds/wonder_itsukushima_man.mp3</File>
+    <File md5="6A2360271F5A086157A5C2F14CD3CD8C" import="1">1.WorldWonders/Sounds/wonder_itsukushima_woman.mp3</File>
+    <File md5="6B00A63842E264B11E291C82EA4BD34B" import="1">1.WorldWonders/Sounds/wonder_jumeirah_man.mp3</File>
+    <File md5="6B00A63842E264B11E291C82EA4BD34B" import="1">1.WorldWonders/Sounds/wonder_jumeirah_woman.mp3</File>
+    <File md5="E47D9F32243195A2666CC4BF1C39C682" import="1">1.WorldWonders/Sounds/wonder_karnak_man.mp3</File>
+    <File md5="3E41102E4F775127929AA88DAB8FBECB" import="1">1.WorldWonders/Sounds/wonder_karnak_woman.mp3</File>
+    <File md5="DADF2051A3CBD76426E79B5D1FAD58CC" import="1">1.WorldWonders/Sounds/wonder_kew_gardens_man.mp3</File>
+    <File md5="0789E5BACE63214078657EBDBE7F7C84" import="1">1.WorldWonders/Sounds/wonder_kew_gardens_woman.mp3</File>
+    <File md5="25D72BE92D3317971D28C63A56C4413C" import="1">1.WorldWonders/Sounds/wonder_kilwa_kisiwani_man.mp3</File>
+    <File md5="D676B075B2508DBE91F40A5CE26BC441" import="1">1.WorldWonders/Sounds/wonder_kilwa_kisiwani_woman.mp3</File>
+    <File md5="14179A13EDAB1FC8087079FE2143A91C" import="1">1.WorldWonders/Sounds/wonder_kinkaku_ji_man.mp3</File>
+    <File md5="257407ABAC2DA2DCA5E45E3890EBED69" import="1">1.WorldWonders/Sounds/wonder_kinkaku_ji_woman.mp3</File>
+    <File md5="8F98F06B3395216CFFAAEB3CC6E925F4" import="1">1.WorldWonders/Sounds/wonder_kuk_man.mp3</File>
+    <File md5="AC8B5F35144F1CFF8287FE0B4E8691DD" import="1">1.WorldWonders/Sounds/wonder_kuk_woman.mp3</File>
+    <File md5="3F9AD7F588940549511C4D3530551F11" import="1">1.WorldWonders/Sounds/wonder_lavaux_man.mp3</File>
+    <File md5="328362F6419A6F8B3BAE7F97969AEB6B" import="1">1.WorldWonders/Sounds/wonder_lavaux_woman.mp3</File>
+    <File md5="6FA08E760E4642B71F229E2994FEE245" import="1">1.WorldWonders/Sounds/wonder_majorville_man.mp3</File>
+    <File md5="6AD65018F1E4A397C50075E739AFFCEC" import="1">1.WorldWonders/Sounds/wonder_majorville_woman.mp3</File>
+    <File md5="557EEEB8967805D3E0D452BBB93F14BE" import="1">1.WorldWonders/Sounds/wonder_malwiya_man.mp3</File>
+    <File md5="723D7CCD872E39CD031C32F77B9B0E2F" import="1">1.WorldWonders/Sounds/wonder_malwiya_woman.mp3</File>
+    <File md5="06EA561FC80670E83BAFF246E5C4EE5A" import="1">1.WorldWonders/Sounds/wonder_marae_man.mp3</File>
+    <File md5="334C54764B4CBB4791B88A0F9B5E2957" import="1">1.WorldWonders/Sounds/wonder_marae_woman.mp3</File>
+    <File md5="AC692F063445CB60D3553A7740C59D02" import="1">1.WorldWonders/Sounds/wonder_meenakshi_man.mp3</File>
+    <File md5="3DB8AFDCCF6AD548869C0DCA56889572" import="1">1.WorldWonders/Sounds/wonder_meenakshi_woman.mp3</File>
+    <File md5="9EF21F8159B2F540C98564FF0C8771E1" import="1">1.WorldWonders/Sounds/wonder_menin_gate_woman.mp3</File>
+    <File md5="9EF21F8159B2F540C98564FF0C8771E1" import="1">1.WorldWonders/Sounds/wonder_menin_gate_man.mp3</File>
+    <File md5="9E63D2B03203354331047E9B662CBDD8" import="1">1.WorldWonders/Sounds/wonder_michel_man.mp3</File>
+    <File md5="4BC53A36964525F767BC7C01232A4030" import="1">1.WorldWonders/Sounds/wonder_michel_woman.mp3</File>
+    <File md5="5F884E47A5739B5BE96D908316EEEF57" import="1">1.WorldWonders/Sounds/wonder_millau_man.mp3</File>
+    <File md5="5F884E47A5739B5BE96D908316EEEF57" import="1">1.WorldWonders/Sounds/wonder_millau_woman.mp3</File>
+    <File md5="010B0009294E3437C75DBC4F254ED7A1" import="1">1.WorldWonders/Sounds/wonder_mohenjo_daro_man.mp3</File>
+    <File md5="87525728D2655808E7B92031B2254156" import="1">1.WorldWonders/Sounds/wonder_mohenjo_daro_woman.mp3</File>
+    <File md5="E12142ECA54530D08F4BFB326C5853C3" import="1">1.WorldWonders/Sounds/wonder_monte_carlo_man.mp3</File>
+    <File md5="B8220EA62EAD1C6D47D5199D86A2216D" import="1">1.WorldWonders/Sounds/wonder_monte_carlo_woman.mp3</File>
+    <File md5="62B7F656DCB39447CD87A1FEFB559641" import="1">1.WorldWonders/Sounds/wonder_motherland_man.mp3</File>
+    <File md5="62B7F656DCB39447CD87A1FEFB559641" import="1">1.WorldWonders/Sounds/wonder_motherland_woman.mp3</File>
+    <File md5="EF312C25DE96DA9F446E3CFE713B1D11" import="1">1.WorldWonders/Sounds/wonder_museum_island_man.mp3</File>
+    <File md5="39D9E89C8E8186B271E1173CDCA1D04F" import="1">1.WorldWonders/Sounds/wonder_museum_island_woman.mp3</File>
+    <File md5="D7A3F089D3BE088D568E2E639CF19BAE" import="1">1.WorldWonders/Sounds/wonder_nabawi_man.mp3</File>
+    <File md5="0CACD4F37FBC9F9571ECBA5D21925198" import="1">1.WorldWonders/Sounds/wonder_nabawi_woman.mp3</File>
+    <File md5="BAC6F1750B9F574872C53C4E3613BE24" import="1">1.WorldWonders/Sounds/wonder_nazca_man.mp3</File>
+    <File md5="EE290121E6F0E4A066AD5D9A4E7599C3" import="1">1.WorldWonders/Sounds/wonder_nazca_woman.mp3</File>
+    <File md5="3B00DC21EF28BF0AF158BECD777FC0DE" import="1">1.WorldWonders/Sounds/wonder_old_bridge_man.mp3</File>
+    <File md5="DFA4E3AC6BBE4062BB85FB1D8BF9C95C" import="1">1.WorldWonders/Sounds/wonder_old_bridge_woman.mp3</File>
+    <File md5="42BD222CB3E26ED4E73D218C741FD7BF" import="1">1.WorldWonders/Sounds/wonder_olympic_village_man.mp3</File>
+    <File md5="42BD222CB3E26ED4E73D218C741FD7BF" import="1">1.WorldWonders/Sounds/wonder_olympic_village_woman.mp3</File>
+    <File md5="9E741412DA9A49FDC49D9C1BED5D651B" import="1">1.WorldWonders/Sounds/wonder_orszaghaz_man.mp3</File>
+    <File md5="E2230F1928BA01C9269CCE54B1AFF44C" import="1">1.WorldWonders/Sounds/wonder_orszaghaz_woman.mp3</File>
+    <File md5="FD929BAD302A373B711D2B9B242CDB69" import="1">1.WorldWonders/Sounds/wonder_panama_canal_man.mp3</File>
+    <File md5="FD6B300DE4555B8DE89415F293915332" import="1">1.WorldWonders/Sounds/wonder_panama_canal_woman.mp3</File>
+    <File md5="B5F8CF044DBB91C531DBC74797EA9C70" import="1">1.WorldWonders/Sounds/wonder_peterhof_man.mp3</File>
+    <File md5="4E2B3DB95253070C8A3960C9AD92072B" import="1">1.WorldWonders/Sounds/wonder_peterhof_woman.mp3</File>
+    <File md5="03DE8E8105D3FF343E594FF2FD826E96" import="1">1.WorldWonders/Sounds/wonder_polar_expedition_man.mp3</File>
+    <File md5="03DE8E8105D3FF343E594FF2FD826E96" import="1">1.WorldWonders/Sounds/wonder_polar_expedition_woman.mp3</File>
+    <File md5="6E478070977F3BD2EE971044A3631287" import="1">1.WorldWonders/Sounds/wonder_qalhat_man.mp3</File>
+    <File md5="6D8B6CA350367BAD34C7CAAD27F027B0" import="1">1.WorldWonders/Sounds/wonder_qalhat_woman.mp3</File>
+    <File md5="6938E8D1D7B88005D2F4B206B93C938C" import="1">1.WorldWonders/Sounds/wonder_rockefeller_man.mp3</File>
+    <File md5="6938E8D1D7B88005D2F4B206B93C938C" import="1">1.WorldWonders/Sounds/wonder_rockefeller_woman.mp3</File>
+    <File md5="0EAD4A1A70A8649C5E13F911C3EA8808" import="1">1.WorldWonders/Sounds/wonder_ruhr_valley_man.mp3</File>
+    <File md5="0EAD4A1A70A8649C5E13F911C3EA8808" import="1">1.WorldWonders/Sounds/wonder_ruhr_valley_woman.mp3</File>
+    <File md5="C113F891E9A80862FD1995D8D714B3A9" import="1">1.WorldWonders/Sounds/wonder_rushmore_man.mp3</File>
+    <File md5="C113F891E9A80862FD1995D8D714B3A9" import="1">1.WorldWonders/Sounds/wonder_rushmore_woman.mp3</File>
+    <File md5="A2BC6250CCFE1C6898D6491C28B741B5" import="1">1.WorldWonders/Sounds/wonder_sanbo_man.mp3</File>
+    <File md5="A2BC6250CCFE1C6898D6491C28B741B5" import="1">1.WorldWonders/Sounds/wonder_sanbo_woman.mp3</File>
+    <File md5="8A10888C145AEC18F5CA0F75CF0F6797" import="1">1.WorldWonders/Sounds/wonder_shwedagon_man.mp3</File>
+    <File md5="82682752450724E8E56210BE57DDA7F1" import="1">1.WorldWonders/Sounds/wonder_shwedagon_woman.mp3</File>
+    <File md5="7CB0DBA8F3FF9AEF6523207169CC162D" import="1">1.WorldWonders/Sounds/wonder_siberian_railway_man.mp3</File>
+    <File md5="C48F00F688DAD7C37B000A5B428BFF23" import="1">1.WorldWonders/Sounds/wonder_siberian_railway_woman.mp3</File>
+    <File md5="09C04E7032461597286695CF86B67C1A" import="1">1.WorldWonders/Sounds/wonder_siku_quanshu_man.mp3</File>
+    <File md5="C0BAAC8DB8DBDE879E3616AFDE737BB8" import="1">1.WorldWonders/Sounds/wonder_siku_quanshu_woman.mp3</File>
+    <File md5="9543FBEA0A02B7188E3DF659BF2C5D62" import="1">1.WorldWonders/Sounds/wonder_skara_brae_man.mp3</File>
+    <File md5="769D694E0C6A8D7BC847DDAFD7D98774" import="1">1.WorldWonders/Sounds/wonder_skara_brae_woman.mp3</File>
+    <File md5="6E607C3392DBCF078CE1D0801E19DED0" import="1">1.WorldWonders/Sounds/wonder_america_slater_mill_man.mp3</File>
+    <File md5="6E607C3392DBCF078CE1D0801E19DED0" import="1">1.WorldWonders/Sounds/wonder_america_slater_mill_woman.mp3</File>
+    <File md5="48210E0F32FA900965C71C236F6EE5C4" import="1">1.WorldWonders/Sounds/wonder_solovietsky_man.mp3</File>
+    <File md5="71D8164D9B3EF5BD8692F5C9C78AA675" import="1">1.WorldWonders/Sounds/wonder_solovietsky_woman.mp3</File>
+    <File md5="19B0FCC351DE853CA716E09B8FED9F6E" import="1">1.WorldWonders/Sounds/wonder_st_peters_man.mp3</File>
+    <File md5="C8CC04533F2896792D9AA5260FF2FE03" import="1">1.WorldWonders/Sounds/wonder_st_peters_woman.mp3</File>
+    <File md5="0796B557B73639C1D9D4FD1589C66B01" import="1">1.WorldWonders/Sounds/wonder_summer_palace_man.mp3</File>
+    <File md5="0796B557B73639C1D9D4FD1589C66B01" import="1">1.WorldWonders/Sounds/wonder_summer_palace_woman.mp3</File>
+    <File md5="4DCDD70A3E1BA608B34062CB84A52833" import="1">1.WorldWonders/Sounds/wonder_taipei_man.mp3</File>
+    <File md5="4DCDD70A3E1BA608B34062CB84A52833" import="1">1.WorldWonders/Sounds/wonder_taipei_woman.mp3</File>
+    <File md5="751A2EB14EDB0C8CF1EC70A3A26E85A9" import="1">1.WorldWonders/Sounds/wonder_wartburg_man.mp3</File>
+    <File md5="FAA4913941BFF9886FBCC229AAD915FA" import="1">1.WorldWonders/Sounds/wonder_wartburg_woman.mp3</File>
+    <File md5="E6270ED77BA3ADAE1DE7F3E54AB8B13E" import="1">1.WorldWonders/Sounds/wonder_white_sands_man.mp3</File>
+    <File md5="E6270ED77BA3ADAE1DE7F3E54AB8B13E" import="1">1.WorldWonders/Sounds/wonder_white_sands_woman.mp3</File>
+    <File md5="ED33C4C6A6710BC95963DEA8AA10A130" import="1">1.WorldWonders/Sounds/wonder_wieliczka_man.mp3</File>
+    <File md5="A013551B4C6415AC49A75CB7F9ED0A3F" import="1">1.WorldWonders/Sounds/wonder_wieliczka_woman.mp3</File>
+    <File md5="F1DB6F71284A13FCCED9A182BED04B60" import="1">1.WorldWonders/Sounds/wonder_zocalo_man.mp3</File>
+    <File md5="5DC647616F3BC1D05818B1F8FD5232D7" import="1">1.WorldWonders/Sounds/wonder_zocalo_woman.mp3</File>
+    <File md5="77427228144FADBD2E07AB46EDB6CD63" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_128.dds</File>
+    <File md5="61578697DFD2E2C6CC781E309D2C9C47" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_256.dds</File>
+    <File md5="018A93A4883F1DFFA1FB7405E09DCA94" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_45.dds</File>
+    <File md5="1B63523BD8B52B2CE67F3602FC82D636" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_64.dds</File>
+    <File md5="AAF45A046F7D36BFBCD1D108A49DBDC1" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_80.dds</File>
+    <File md5="259A53419E3D9FE2C42BC1E4101541BF" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_Buildings_128.dds</File>
+    <File md5="4FB6A576A0A95983AB14F3496615B0F4" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_Buildings_256.dds</File>
+    <File md5="9F054958412A49CD449F50A07A5EEC6E" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_Buildings_45.dds</File>
+    <File md5="FD8DAFE5282629B04487A73EF77BC1D2" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_Buildings_64.dds</File>
+    <File md5="AB7591F12B3440813DB2CE304662EB1D" import="1">2.NaturalWonders/Art/Atlases/More_Natural_Wonders_Buildings_80.dds</File>
+    <File md5="F22C2FDBC03486CCE36AA5AC81627A51" import="1">2.NaturalWonders/Art/Models/AuroraBorealis/Model/AURORA_BOREALIS.fxsxml</File>
+    <File md5="B6E45E3E479551C6E36992046017E97D" import="1">2.NaturalWonders/Art/Models/AuroraBorealis/Model/AURORA_BOREALIS.gr2</File>
+    <File md5="33D0CBE97E2FD90882CDC9BFB7ACBCFB" import="1">2.NaturalWonders/Art/Models/AuroraBorealis/Model/fx_triggers_aurora_borealis_1.ftsxml</File>
+    <File md5="F328305FAB74D71D4B6BC30C341DA94C" import="1">2.NaturalWonders/Art/Models/AuroraBorealis/sv_Aurora.dds</File>
+    <File md5="456BC73CFD6885A730097C47D35D6D6E" import="1">2.NaturalWonders/Art/Models/BermudaTriangle/Model/bermuda_triangle.dds</File>
+    <File md5="067D3BBFA0CEEF90E203F0B28FEA15C9" import="1">2.NaturalWonders/Art/Models/BermudaTriangle/Model/bermuda_triangle_1.fxsxml</File>
+    <File md5="B81F4AFD7D977165D55E2A300751A8B1" import="1">2.NaturalWonders/Art/Models/BermudaTriangle/Model/bermuda_triangle_1.gr2</File>
+    <File md5="9098645B0FC7EE47E10F59D4434129D0" import="1">2.NaturalWonders/Art/Models/BermudaTriangle/sv_Bermuda.dds</File>
+    <File md5="71E6B3A4B8AB5D1CE65AC872D08A169E" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/fx_triggers_lumi_bay_1.ftsxml</File>
+    <File md5="F6838A0D9A322683C57C484E03E457A9" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/fx_triggers_lumi_bay_2.ftsxml</File>
+    <File md5="59820398D3E3E078E075A64C61536EFE" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/lumi_bay.fxsxml</File>
+    <File md5="70160A40E5A9B9A4CD6EE454320A3006" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/lumi_bay.gr2</File>
+    <File md5="3F1F44AE24015F7C6D701570C55E6893" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/lumi_bay_diff.dds</File>
+    <File md5="C3AE61BF4CE21616F8055DA752AFBCAC" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/Model/lumi_bay_sref.dds</File>
+    <File md5="C00B843FCA850971BB75C64510D949C2" import="1">2.NaturalWonders/Art/Models/BioluminescentBay/sv_Lumi_Bay.dds</File>
+    <File md5="4E0B2522A3C443401C2BD187362B7822" import="1">2.NaturalWonders/Art/Models/Dallol/Model/dallol_3d_v3.dds</File>
+    <File md5="4548A8E46F3FBC173377BE7DAB2D6652" import="1">2.NaturalWonders/Art/Models/Dallol/Model/dallol_3d_v3.fxsxml</File>
+    <File md5="2F78940B970E97FBEA2FE1C0C7879505" import="1">2.NaturalWonders/Art/Models/Dallol/Model/dallol_3d_v3.gr2</File>
+    <File md5="441F7227FC3DCE7FF775386335A74379" import="1">2.NaturalWonders/Art/Models/Dallol/sv_Dallol.dds</File>
+    <File md5="EF8D103E0A17DD41B665F92EBA008EA8" import="1">2.NaturalWonders/Art/Models/EyeOfTheSahara/Model/3d_eye_of_the_sahara.fxsxml</File>
+    <File md5="7B794EBDD2153BEEF391C3AE185598E6" import="1">2.NaturalWonders/Art/Models/EyeOfTheSahara/Model/3d_eye_of_the_sahara.gr2</File>
+    <File md5="4261BA740250E2749949C9847FF8C3E7" import="1">2.NaturalWonders/Art/Models/EyeOfTheSahara/Model/blank.dds</File>
+    <File md5="90E0A8CB09F3BB2016E78094CB47DC32" import="1">2.NaturalWonders/Art/Models/EyeOfTheSahara/Model/eye of the sahara.dds</File>
+    <File md5="A82FE160C6580BA43747523683C976C3" import="1">2.NaturalWonders/Art/Models/EyeOfTheSahara/sv_Sahara_Eye.dds</File>
+    <File md5="4603DD41DBC11A0082B8C078F47FE64F" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos.fxsxml</File>
+    <File md5="7200A2D60943286EDC1FF19321C2CF80" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos.gr2</File>
+    <File md5="DE830F6785D5416ADE7CFB96B2B1C9AD" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos_2.fxsxml</File>
+    <File md5="3FC3B877208F732CB2DD482FCD695020" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos_2.gr2</File>
+    <File md5="BF15977629239BD3507F746DAC27DF92" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos_tile_1.dds</File>
+    <File md5="995D752CE0BEBAE56A4A868582B235CD" import="1">2.NaturalWonders/Art/Models/Galapagos/Model/galapagos_tile_2.dds</File>
+    <File md5="57486A8FCCF50512D02A9255553466A6" import="1">2.NaturalWonders/Art/Models/Galapagos/sv_Galapagos_A.dds</File>
+    <File md5="456611FA56F0FA6124F5E47579319158" import="1">2.NaturalWonders/Art/Models/Galapagos/sv_Galapagos_B.dds</File>
+    <File md5="779683E07AE45A2604904D81997F439A" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/Model/causeway_land.fxsxml</File>
+    <File md5="AE0F010E82CC74DC22968B53EA9BF8A0" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/Model/causeway_land.gr2</File>
+    <File md5="0C73B75EFACD002F6C175D985856E93E" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/Model/causeway_sea.fxsxml</File>
+    <File md5="B2081FEA9DDEB9F5EF36679EFE4F4650" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/Model/causeway_sea.gr2</File>
+    <File md5="4E15F8D9FB5AFB40DF46EE63A33FE1A1" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/Model/giants cause way.dds</File>
+    <File md5="6B81267C12AA00EC16AE244A8554F7CE" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/sv_Causeway_C.dds</File>
+    <File md5="5948FFD1699D216BC75276DE5129831C" import="1">2.NaturalWonders/Art/Models/GiantsCauseway/sv_Causeway_T.dds</File>
+    <File md5="993221711FE2AEDCF905DD199176740B" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 1 orange.dds</File>
+    <File md5="D997534A0E2A19DED7E7962882E23646" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 1 pink.dds</File>
+    <File md5="7EA485B9089F4E5636BD5D32834BEA57" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 1 red.dds</File>
+    <File md5="B31148BECE3E602EC404104937EA53D1" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 2 orange.dds</File>
+    <File md5="1CE1DA7EF6B252B9A844628928D17069" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 2 pink.dds</File>
+    <File md5="F3F58C730A9B2428DCE183DA17DBCB42" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 3 pink.dds</File>
+    <File md5="1E77C0ED37AE3683ABED4E08461AEF3D" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 3 purple.dds</File>
+    <File md5="3638B4E6EE8CE569827253B7C861EEFF" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/coral plant type - 3 yellow.dds</File>
+    <File md5="18EAE18AB2B49E68643C5778B95077B9" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/FX_NEW_REEF.ftsxml</File>
+    <File md5="C867A47962A37D60C75C4FA86BC10FC8" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/great_barrier_reef_main_1_orange.dds</File>
+    <File md5="A4F03AC012E85A20A7606D87A943553B" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/great_barrier_reef_main_1_white.dds</File>
+    <File md5="3E1F8A71EDC549B03910A13F7A40199C" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/great_barrier_reef_main_2.dds</File>
+    <File md5="31FF1EEE9CE16DD532EEC0CCC7B67EE0" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/NEW_REEF.fxsxml</File>
+    <File md5="FC3D249367443A7814F17D0EA41A0E63" import="1">2.NaturalWonders/Art/Models/GreatBarrierReef/Model/NEW_REEF.gr2</File>
+    <File md5="79CEB08B40E5BDAD42D637252C2DDA58" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/great blue hole.dds</File>
+    <File md5="AD5F8763105C9EC1325AB3DC119E5FF0" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole.fxsxml</File>
+    <File md5="C8079CB99A9FD45426FC0BFC770419AE" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole.gr2</File>
+    <File md5="E6FAD28999E267B4E6758A53FCF62E2C" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_Boats_early.fxsxml</File>
+    <File md5="2D0E87C175EE9911BCB654D53EE0BF1D" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_Boats_early.gr2</File>
+    <File md5="6EA43BB2C0ABB31ABF9D4F6A81C4EA38" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_Boats_ind.fxsxml</File>
+    <File md5="6E6389BB6FE3FB09BE65F447601B2709" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_Boats_ind.gr2</File>
+    <File md5="5180DE6476A3F865888C1B83419DA77B" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_oil_platform.fxsxml</File>
+    <File md5="4DCCDD70B843DD2B92A8F24D5E6ECC9E" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/Model/Great_blue_hole_oil_platform.gr2</File>
+    <File md5="4071008E935887D824266E833BD42112" import="1">2.NaturalWonders/Art/Models/GreatBlueHole/sv_Blue_Hole.dds</File>
+    <File md5="F595F478EF38B94E373D78353C7E437D" import="1">2.NaturalWonders/Art/Models/HaLongBay/Model/halong_bay_1.dds</File>
+    <File md5="076C1E3017C7D452302618225BDBA34F" import="1">2.NaturalWonders/Art/Models/HaLongBay/Model/Halong_Bay_1.fxsxml</File>
+    <File md5="21AF87AC6601B260A87DA80586E2C987" import="1">2.NaturalWonders/Art/Models/HaLongBay/Model/Halong_Bay_1.gr2</File>
+    <File md5="DD994426D1680A29BEC276CCF23DAE25" import="1">2.NaturalWonders/Art/Models/HaLongBay/Model/Halong_Bay_2.fxsxml</File>
+    <File md5="4264E38E766247A28717ADBD9B61B66E" import="1">2.NaturalWonders/Art/Models/HaLongBay/Model/Halong_Bay_2.gr2</File>
+    <File md5="776E6262EB1EF814A1AB4D929FDC4916" import="1">2.NaturalWonders/Art/Models/HaLongBay/sv_Ha_Long_A.dds</File>
+    <File md5="326F41D8DB9DF80955A95D152E77551C" import="1">2.NaturalWonders/Art/Models/HaLongBay/sv_Ha_Long_B.dds</File>
+    <File md5="B7768D625A31B8C52D77D8B22330C2F8" import="1">2.NaturalWonders/Art/Models/LakeRetba/Model/Lake_Retba.fxsxml</File>
+    <File md5="4266898357C101E20E47DB314BF8261F" import="1">2.NaturalWonders/Art/Models/LakeRetba/Model/Lake_Retba.gr2</File>
+    <File md5="FC6CB4A26743D41AF90A8A4DD53F5F29" import="1">2.NaturalWonders/Art/Models/LakeRetba/Model/Lake_Retba_d.dds</File>
+    <File md5="845452F51C5F61B933D3234240C9640E" import="1">2.NaturalWonders/Art/Models/LakeRetba/sv_Retba.dds</File>
+    <File md5="63EABBCD35C244AF5F6F15878CB97E53" import="1">2.NaturalWonders/Art/Models/Matterhorn/sv_Matterhorn.dds</File>
+    <File md5="1B3D98BFE0F230899C35A87C6BF7E0E5" import="1">2.NaturalWonders/Art/Models/MountEverest/Model/Mt_Everest.fxsxml</File>
+    <File md5="EBD553BB53F30978D6984571FDD8A10E" import="1">2.NaturalWonders/Art/Models/MountEverest/Model/Mt_Everest.gr2</File>
+    <File md5="60B34AC450D2AA9D8A09C3FBC957CB3D" import="1">2.NaturalWonders/Art/Models/MountEverest/Model/mt_everest_diff_1.dds</File>
+    <File md5="77E5C70ACD75669350DF476DECB95FD8" import="1">2.NaturalWonders/Art/Models/MountEverest/Model/mt_everest_diff_2.dds</File>
+    <File md5="C5A759111BA2B7D629F43AD4412D0932" import="1">2.NaturalWonders/Art/Models/MountEverest/sv_Everest.dds</File>
+    <File md5="913BCD23C524075C3DEAAAD9E95858DC" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/FX_TRIGGERS_MT_PAEKTU_CLOUDS.ftsxml</File>
+    <File md5="D32B4ED694782D04703975077BC861A0" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/FX_TRIGGERS_MT_PAEKTU_WATERFALL.ftsxml</File>
+    <File md5="2BCF5C1D685E2F555793186B15B1706B" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/FX_TRIGGERS_MT_PAEKTU_WATERFALL_2.ftsxml</File>
+    <File md5="8CACDAC5AE685B22A4C309DEDE5918E1" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/MT_PAEKTU_GRASS.fxsxml</File>
+    <File md5="26E311B90F0F0408EEB9C254A3D7A055" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/MT_PAEKTU_GRASS.gr2</File>
+    <File md5="5AD41DB4EBCEF4E1F77515F2B1C6BA9E" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Ice Water 1.dds</File>
+    <File md5="802BEAC8396E113545064D5C92E25004" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Ice Water 2.dds</File>
+    <File md5="647666BB83064E3321D4B095DD72ECA0" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Ice Water 3.dds</File>
+    <File md5="C9E0A7A8BE10A1747069464CB9FE8987" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv1.dds</File>
+    <File md5="881D04326CFB61A8A064FE9A113EC668" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv2.dds</File>
+    <File md5="AB4CEF301C55A6288FE39803F10E8549" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv3.dds</File>
+    <File md5="8DD48C7E92D05EA6AD73A16235B910E7" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv4.dds</File>
+    <File md5="F0A9E0E3166CE23AD055F95E2BD35024" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv5.dds</File>
+    <File md5="DE9484B5FE89A7A0E354ECC65F6B78D2" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv6.dds</File>
+    <File md5="6EDDD83D0580304BFCD715E11D7FFE5C" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Snowy Mountain fade to greenv7.dds</File>
+    <File md5="CA7079E2D54EDD284E94DE8BABE72F37" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Tundra 2.dds</File>
+    <File md5="B11075DAC0CD9F79E5A725C13435BAD6" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Tundra 3.dds</File>
+    <File md5="964941ECB5971573182038A13B8C0115" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Tundra 4.dds</File>
+    <File md5="01C81C936B479B7BCC58484D2E4A9FD8" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu Tundra.dds</File>
+    <File md5="A58E11C198B30AC8AAC3B4156CBD559A" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu water.dds</File>
+    <File md5="B4E4B235DDEB91A1D4D840CF23B55D2F" import="1">2.NaturalWonders/Art/Models/MountPaektu/Model/textures/mount paektu waterfall base.dds</File>
+    <File md5="34C453982997DFC0E194A231E7FE5EB6" import="1">2.NaturalWonders/Art/Models/MountPaektu/sv_Paektu.dds</File>
+    <File md5="745B38BAD329A67EEA6865F0E369CC2F" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/feature_salar.fxsxml</File>
+    <File md5="7C4D6EA14DD5C0B1ED0AAD986F17EBB1" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/feature_salar.gr2</File>
+    <File md5="45FC7202564D43198A710A6051461C8F" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/feature_salar_b.fxsxml</File>
+    <File md5="71B4A4507F7BCDFEA5B184D55CDF79C0" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/feature_salar_b.gr2</File>
+    <File md5="210147D8F1EAC8DA950262BF05EBE9F2" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/salar_b_ground_diff.dds</File>
+    <File md5="2791714BCCDEEA93E5B2428DDBF317A2" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/salar_b_ground_h.dds</File>
+    <File md5="4B295092FDF3D0AA5125AE85A902347D" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/salar_ground_diff.dds</File>
+    <File md5="293050E3EC692F96C804609F2E482493" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/Model/salar_ground_h.dds</File>
+    <File md5="4C2E3E20D2380F8325030BAAFE603AEE" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/sv_Salar_B.dds</File>
+    <File md5="8A11FF8E247D41834A0ED6E2AB46025E" import="1">2.NaturalWonders/Art/Models/SalarDeUyuni/sv_Salar_S.dds</File>
+    <File md5="EC9BB5CD04C320F6B560AFA8B17CE464" import="1">2.NaturalWonders/Art/Models/Zhangjiajie/Model/feature_zhangjiajie.fxsxml</File>
+    <File md5="1B7349B90AACC3CC1256BFD69D1E22F3" import="1">2.NaturalWonders/Art/Models/Zhangjiajie/Model/zhamgiajie.gr2</File>
+    <File md5="33B77C942DA4B8AAA004791E2E54A253" import="1">2.NaturalWonders/Art/Models/Zhangjiajie/Model/zhamgiajie_Jungle1.dds</File>
+    <File md5="7E2CBE8BDF7DFC071A1D69E2C1E6B064" import="1">2.NaturalWonders/Art/Models/Zhangjiajie/Model/zhamgiajie_stone.dds</File>
+    <File md5="486A1F729D22530371D96B6D0C27D526" import="1">2.NaturalWonders/Art/Models/Zhangjiajie/sv_Zhangjiajie.dds</File>
+    <File md5="75C34517B6F40364E8BF496E103942CB" import="1">2.NaturalWonders/Art/OverviewPanel/Civilipedia_icon.dds</File>
+    <File md5="7E32BFF0332C5A6D0FDB763331BA7CD6" import="1">2.NaturalWonders/Art/OverviewPanel/NWOverviewLogo.dds</File>
+    <File md5="06DE72859B149E6E0B57FF00B766E604" import="1">2.NaturalWonders/DefaultFiles/ASP_replacement.lua</File>
+    <File md5="5BF7207655A8B653349E4BB6D0AF06A6" import="0">2.NaturalWonders/UI/NaturalWonderPopupOnClick.lua</File>
+    <File md5="B880C4A306892D3504D3D2075F38959A" import="0">2.NaturalWonders/UI/NaturalWonderPopupOnClick.xml</File>
+    <File md5="7C05D9FC22499103595F2F40A37ADDD3" import="0">2.NaturalWonders/UI/NaturalWondersOnStrategicMap.lua</File>
+    <File md5="78CEE02AC1476B6D780A6BF2CB8E8509" import="0">2.NaturalWonders/UI/NaturalWondersOnStrategicMap.xml</File>
+    <File md5="1E09F508905CEC4FC560AC6F117873FD" import="1">2.NaturalWonders/Art/Great_Work_Mt_Paektu.dds</File>
+    <File md5="F2AC8117D2A71D410EAEF83192010D96" import="0">2.NaturalWonders/DefaultFiles/AssignStartingPlots_unused.lua</File>
+    <File md5="6BD85739F3C78E909DA796D778AB15D3" import="1">2.NaturalWonders/DefaultFiles/NaturalWonderPopup.lua</File>
+    <File md5="E77F69CF0801EAA4B126363257B2EB24" import="1">2.NaturalWonders/DefaultFiles/NaturalWonderPopup.xml</File>
+    <File md5="56FD8A47C41D428AB4E698C0F679E39C" import="1">2.NaturalWonders/DefaultFiles/NaturalWondersCustomMethods.lua</File>
+    <File md5="A8EF13E8E0C42D8C60DA59B365939E9E" import="0">2.NaturalWonders/Lua/UniqueNaturalWondersAbilities.lua</File>
+    <File md5="38112C24CC7F1AB9F85C451FC112CC04" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
+    <File md5="66BAFDF4392C8D5FAE79FA9C9D96296A" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
+    <File md5="EC2CC12DF50A4F08F3C23CF1092C7AB5" import="0">2.NaturalWonders/XML/NaturalWondersLocations.xml</File>
+    <File md5="D620FC7AF8D62B3C775196822D998529" import="0">2.NaturalWonders/XML/NaturalWondersParameters.xml</File>
+    <File md5="CF7470CEDFA614818B3AC7A623615CFC" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
+    <File md5="6508CDC37AF02C28296121FBBF812895" import="0">Addons/43-civ/AssignStartingPlots.lua</File>
+    <File md5="EA58E4A71D4EE94DCBD457CA60EC13D7" import="0">Buildings/FletcherPromotion.lua</File>
+    <File md5="7DB2CAF99DE49F045B76858EE1B67D1E" import="1">Buildings/Atlases/More_Wonders_Buildings_128.dds</File>
+    <File md5="4214B6103B14ED90DA74516BC9BDD673" import="1">Buildings/Atlases/More_Wonders_Buildings_256.dds</File>
+    <File md5="7745889B313ADEEC4DFACB01141D349D" import="1">Buildings/Atlases/More_Wonders_Buildings_45.dds</File>
+    <File md5="D026C6DC81E9A1C57970CAEC4A681618" import="1">Buildings/Atlases/More_Wonders_Buildings_64.dds</File>
+    <File md5="DE6455BB97536A9AF661507F297326D0" import="1">Buildings/Atlases/More_Wonders_Buildings_80.dds</File>
+    <File md5="75218E0CB6974907AD53A0C8F0881E39" import="0">Buildings/BuildingsDefinitions.sql</File>
+    <File md5="C64BF234719710014D4D6A73FC1EB4A6" import="0">Changelog.txt</File>
+    <File md5="7F16621FD94CBA59A74EAA966000FCF4" import="1">Promotions/Atlases/More_Wonders_Promotions_16.dds</File>
+    <File md5="863EC94BBAC7040AF006595E9307DF80" import="1">Promotions/Atlases/More_Wonders_Promotions_256.dds</File>
+    <File md5="19446C3951C77454341280E024490BCE" import="1">Promotions/Atlases/More_Wonders_Promotions_32.dds</File>
+    <File md5="F1E1106DA9EE8B62821A2E88E27DDAFD" import="1">Promotions/Atlases/More_Wonders_Promotions_45.dds</File>
+    <File md5="015B4C9142410004F502CE309A5A252D" import="1">Promotions/Atlases/More_Wonders_Promotions_64.dds</File>
+    <File md5="E834127E59DFD5F83E4E1CAD6113871B" import="0">Promotions/PromotionsDefinitions.sql</File>
+    <File md5="74391A2241256AB47A51B2A32AB39C44" import="1">Resources/Atlases/More_Wonders_Resources_256.dds</File>
+    <File md5="248A8DF4A43CBA841BFA96CB42A57932" import="1">Resources/Atlases/More_Wonders_Resources_45.dds</File>
+    <File md5="906E155A63B5CBA38EB6DD9B00A55D10" import="1">Resources/Atlases/More_Wonders_Resources_64.dds</File>
+    <File md5="D81FB8E9B1BDB442D8CD68FF54D79716" import="1">Resources/Atlases/More_Wonders_Resources_80.dds</File>
+    <File md5="4B9082E859B2D87B2DB1E5640F3F1AC8" import="1">Resources/FontIcons/More_Wonders_Resources_Font_22.dds</File>
+    <File md5="8548BAF35614C9D347FB779BEFBE8D98" import="1">Resources/FontIcons/More_Wonders_Resources_Font_22.ggxml</File>
+    <File md5="5274D246284F94DD4132BC94183834BC" import="1">Resources/Models/GiantTortoise/fx_triggers_tortis_camp.ftsxml</File>
+    <File md5="6F0E51BC493F52F987DD18CB7623E1CB" import="1">Resources/Models/GiantTortoise/tortoise.dds</File>
+    <File md5="ABC1119D0586BAC62588037A791B946C" import="1">Resources/Models/GiantTortoise/tortoise_camp_cn.fxsxml</File>
+    <File md5="3EE59785629B4135725B7AFB08569A3A" import="1">Resources/Models/GiantTortoise/tortoise_camp_cn.gr2</File>
+    <File md5="96C8CA4F62A360820D46CD706D7E112A" import="1">Resources/Models/GiantTortoise/tortoise_camp_hb.fxsxml</File>
+    <File md5="17A5E9ED6037924202A9C9D3F7570280" import="1">Resources/Models/GiantTortoise/tortoise_camp_hb.gr2</File>
+    <File md5="F2EE1B78F9384031147AB6BF40FDD307" import="1">Resources/Models/GiantTortoise/tortoise_camp_pl.fxsxml</File>
+    <File md5="BB6784182ED40A6448201D6B9FA855DF" import="1">Resources/Models/GiantTortoise/tortoise_camp_pl.gr2</File>
+    <File md5="6C3FE409A7B3B875FE4697C49E2EEE6F" import="1">Resources/Models/GiantTortoise/tortoise_resource.fxsxml</File>
+    <File md5="9721C479DF41FAF3ED49032549E8FD12" import="1">Resources/Models/GiantTortoise/tortoise_resource.gr2</File>
+    <File md5="348694F090DD77117DDF51DFFD0CC8FD" import="1">Resources/Models/TropicalFish/fish_tropical.fxsxml</File>
+    <File md5="2F89C9C1D696D83660E149C1343F3F4F" import="1">Resources/Models/TropicalFish/fishingboats_improved.fxsxml</File>
+    <File md5="E85E72ED44A6AE5A3B3590D60A4D2D40" import="1">Resources/Models/TropicalFish/fishingboats_improved.gr2</File>
+    <File md5="A612CF716D3128C4759B23ADD05A7CA8" import="1">Resources/Models/TropicalFish/fishingboats_underconstruction.fxsxml</File>
+    <File md5="846381D6DD875713AFE546E0F306637F" import="1">Resources/Models/TropicalFish/fishingboats_underconstruction.gr2</File>
+    <File md5="3484E11D101F7826AA36C219F4F63F8D" import="1">Resources/Models/TropicalFish/fish_tropical_industrial.fxsxml</File>
+    <File md5="FAD271F79FA2A68C48CE06B4F73A6D3A" import="1">Resources/Models/TropicalFish/fish_resource_sref.dds</File>
+    <File md5="740C78FE3C5779C624413B6F63218977" import="1">Resources/Models/TropicalFish/fish_tropical.gr2</File>
+    <File md5="BC5FE74786D653BDA838588159B157D0" import="1">Resources/Models/TropicalFish/fish_tropical_industrial.gr2</File>
+    <File md5="C271A28576E9F7B87C83E05F947B8D27" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_blue_2.dds</File>
+    <File md5="C29DD7E932383C476F2500E12D33C32D" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_blue_3.dds</File>
+    <File md5="5DBBE87FD2887DE5D5518BB7A73AB133" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_orange_1.dds</File>
+    <File md5="88845B9510D1FCAE315A8CD26369E099" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_purple_1.dds</File>
+    <File md5="BB0ABE4D180804747A4A7C22849E18CB" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_red_1.dds</File>
+    <File md5="5EB5625203265E392EB05F49F458430F" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_red_2.dds</File>
+    <File md5="AE5241BE919BFC28000A363CF7636ED0" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_yellow_1.dds</File>
+    <File md5="DBB67A35E329DB1E745D0EB4D5C123AE" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_yellow_2.dds</File>
+    <File md5="B33F9A9CE3EE47F86825468F44AAF258" import="0">Resources/ResourcesDefinitions.sql</File>
+    <File md5="EA45542B34B5902ECA8EDC20B3A3915B" import="1">Resources/sv_icons/sv_Sylvite.dds</File>
+    <File md5="B6B251DEEAD5A4D309698A4D3C51BC2E" import="1">Resources/sv_icons/sv_Tern_Egg.dds</File>
+    <File md5="41A936F4E81B11CBC8D3D2B17717BE41" import="1">Resources/sv_icons/sv_Tortoise.dds</File>
+    <File md5="79DD3D1C7FFFC463AE787F28DF855A1B" import="1">Resources/sv_icons/sv_Tropical_Fish.dds</File>
+    <File md5="9F5479F99D7C370166AD2FD4EAE07629" import="0">Credits.txt</File>
+    <File md5="4D7C029E26934D9D8F9EB66DA71E0A4E" import="0">GlobalSettings.sql</File>
+    <File md5="FACB5FB804115CADF473EE762C7A8F1C" import="0">NaturalWonders.ods</File>
+    <File md5="9A85AE01E057905E82FAE90FC91368CA" import="0">WorldWonders.ods</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>GlobalSettings.sql</UpdateDatabase>
+      <UpdateDatabase>Promotions/PromotionsDefinitions.sql</UpdateDatabase>
+      <UpdateDatabase>Resources/ResourcesDefinitions.sql</UpdateDatabase>
+      <UpdateDatabase>1.WorldWonders/SQL/MainRulesForWorldWonders.sql</UpdateDatabase>
+      <UpdateDatabase>1.WorldWonders/SQL/WorldWondersDefinitions.sql</UpdateDatabase>
+      <UpdateDatabase>1.WorldWonders/SQL/WorldWondersTexts.sql</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/XML/NaturalWondersParameters.xml</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/XML/NaturalWondersLocations.xml</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/XML/NaturalWondersTexts.xml</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</UpdateDatabase>
+      <UpdateDatabase>Buildings/BuildingsDefinitions.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="1.WorldWonders/Lua/UniqueWorldWondersRequirements.lua">
+      <Name>UniqueWorldWondersRequirements</Name>
+      <Description>Non sql requirements</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="1.WorldWonders/Lua/DummyBuildingsForWonders.lua">
+      <Name>DummyBuildingsForWonders</Name>
+      <Description>Dummy buildings for wonders</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="2.NaturalWonders/Lua/UniqueNaturalWondersAbilities.lua">
+      <Name>UniqueNaturalWondersAbilities</Name>
+      <Description>Natural Wonders abilities</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="2.NaturalWonders/UI/NaturalWondersOnStrategicMap.xml">
+      <Name>NaturalWondersOnStrategicMapXML</Name>
+      <Description>Prints NW icons on SV map</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="2.NaturalWonders/UI/NaturalWonderPopupOnClick.xml">
+      <Name>NaturalWonderPopupOnClick.xml</Name>
+      <Description>Shows up Natural Wonder popup window on demand</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Buildings/FletcherPromotion.lua">
+      <Name>AbilitiesForBuildings</Name>
+      <Description>Code some unique lua stuff</Description>
+    </EntryPoint>
+    <EntryPoint type="PreMapGenScript" file="2.NaturalWonders/DefaultFiles/ASP_replacement.lua">
+      <Name>ASP</Name>
+      <Description>Overriding functions</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

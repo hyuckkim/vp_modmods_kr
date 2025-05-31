@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 기사 작위</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 평민을 기사로 서임합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 대회</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 딸을 잘생긴 젊은 기사와 결혼시킵니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 개신교 개혁</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 대주교를 순교시키며 교회가 혼란에 빠졌습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 내전</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 청교도에게 일시적으로 권력을 빼앗기고 [ICON_RESISTANCE] 무정부 상태에 빠집니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 제국주의</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 제국 전역에서 피지배 민족의 봉기를 진압합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 가장 어두운 시기</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 적들에 맞서 국민들에게 연설을 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION">
+      <Text>더 강해진 영국</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP">
+      <Text>왕관을 쓴 자는 불안하지만, 최근에 우리 신하 중 한 명이 직접 Your Grace께 요청하였습니다.[NEWLINE][NEWLINE]이 요청에 응하시겠습니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}을(를) 사용하여 대회를 개최합니다. [ICON_CAPITAL] 수도는 20턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, 인근에 2명의 장궁병이 생성됩니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 수도에서 [ICON_CULTURE] 문화 생성량을 50% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3">
+      <Text>{1_YieldCost}과 대성전의 10 [ICON_GOLD] 유지비를 지불하여 용서를 요청합니다. 순교지로 향하는 순례자들이 교구 교회 건물을 잠금 해제합니다. 다른 교회는 +3 [ICON_GOLD] 금을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4">
+      <Text>최대 3 [ICON_WAR] 야만인이 모든 도시에 근처에 생성되며, 1턴 동안 [ICON_RESISTANCE] 무정부 상태에 빠집니다. 각 [ICON_DIPLOMAT] 공무원은 +5 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5">
+      <Text>최대 2 [ICON_WAR] 야만인이 모든 도시에 근처에 생성됩니다. 법원은 +2 [ICON_CULTURE] 문화와 +2 [ICON_PRODUCTION] 생산을 제공합니다. 총기와 포위 유닛은 '해가 지지 않는 나라' 승급을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}의 문화적 영향을 사용하여 15턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에 진입합니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_PRODUCTION] 생산을 15% 증가시킵니다. 모든 전투기 및 다음 {4_Turns} 동안 건설되는 전투기는 'Interception III' 승급을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1">
+      <Text>*귀하의 영주들이 위대한 인물을 인정할 것을 청원합니다.*[NEWLINE]우리와 우리의 신하들은 한 마음입니다. 이 민중의 챔피언은 지체 없이 기사로 서임될 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2">
+      <Text>*귀하의 가장 용감한 기사가 전설의 엑스칼리버를 가지고 수도로 돌아왔습니다. 이제 그는 합당하며 다시금 귀하의 딸의 손을 요구합니다.*[NEWLINE]이 아서라는 녀석이 칼을 어디서 얻었는지는 중요하지 않습니다. 그가 공주를 얻고 싶다면 대회에서 승리해야 합니다. 궁술, 근접전, 마상 경기, 모두 다 포함입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3">
+      <Text>*대주교가 귀하의 직접 지시에 반하여 교회의 영토를 확장하려 합니다!*[NEWLINE]사무소가 매일 금을 소모하고 이 사람이 교회의 이름으로 세금을 부과하다니?! 이 성가신 사제를 없애 줄 사람은 없습니까...</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4">
+      <Text>*서민들이 귀하의 가장 가까운 지지자를 처형할 것을 요청합니다!*[NEWLINE]충성스러운 이들을 모아라! 이 사람과 그가 대표하는 청교도 파는 국가를 파괴하려 하고 있습니다. 다가오는 일에 대한 힘을 기도합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5">
+      <Text>*제국의 한 식민지에서 독립을 요청하는 대중적 지도자가 있습니다!*[NEWLINE]제국의 변방 민족들은 이러한 고집을 부리기 쉽습니다. 이 반란을 진압하고 군대를 추가 정복을 준비시키세요. 우리의 경계는 더 넓어질 것입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6">
+      <Text>*총리가 국가에 연설할 것을 개인적으로 요청했습니다*[NEWLINE]물론입니다. 우리가 소중히 여기는 모든 것과 세계의 질서와 평화를 위해, 이 도전에 응하지 않을 수는 없습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS">
+      <Text>해가 지지 않는 나라</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP">
+      <Text>[ICON_CAPITAL] 수도에서 이 유닛까지의 각 타일마다 +1% [ICON_STRENGTH] 전투력을 얻습니다. 영국의 이벤트를 통해서만 부여됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY">
+      <Text>대회</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP">
+      <Text>"We Love the King Day!" 동안 이 도시는 +50% [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2">
+      <Text>그들의 최후의 순간</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP">
+      <Text>"We Love the King Day!" 동안 이 도시는 +15% [ICON_PRODUCTION] 생산을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH">
+      <Text>교구 교회</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH_STRATEGY">
+      <Text>영국에 독특한 이벤트 선택으로 구매할 수 있습니다. 교회와 상호 배타적입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

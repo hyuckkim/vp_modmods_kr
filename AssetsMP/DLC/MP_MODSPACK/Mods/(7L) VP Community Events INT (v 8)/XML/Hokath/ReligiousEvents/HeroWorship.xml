@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1">
+      <Text>{3_PlayerName}의 지도 하에, {1_CivShortDescription}의 사람들이 완전한 순수함을 지닌 인물을 탄생시키기 위해 노력하고 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2">
+      <Text>{3_PlayerName}는 희생자 할당량을 채우기 위해 모든 범죄자에게 사형을 승인합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3">
+      <Text>{3_PlayerName}가 영웅 숭배의 비밀 탐구를 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4">
+      <Text>{3_PlayerName}가 위대한 제단의 방 접근을 확대하여 선택된 자를 찾기 위한 탐구를 진전시키고자 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5">
+      <Text>{3_PlayerName}가 예언의 아이를 찾기 위해 요원들을 파견합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6_S">
+      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 완료했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6">
+      <Text>{3_PlayerName}가 직접 선택된 자의 심장을 도려내어, 그들의 종교에 중심이 되는 예언을 실현했습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION">
+      <Text>순수한 영혼</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP">
+      <Text>신성한 세계의 톱니바퀴가 계속 돌려지려면 큰 노력이 필요합니다. 오직 큰 힘만이... 그리고 그 힘은 피 속에 있습니다. 셀 수 없이 많은 사람들이 창조의 갈증을 채우기 위해 목숨을 바쳐야 합니다.[NEWLINE][NEWLINE]단, 우리가 선택된 자를 찾을 수 있다면. 한 명의 순수한 영혼이 마지막 죽음을 맞이하고 순환을 깨뜨릴 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_1">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 위대한 제단이 +1 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_2">
+      <Text>수감자와 범죄자의 희생을 {1_YieldCost}로 승인합니다. 법원, 공증소, 경찰서가 +1 [ICON_PRODUCTION] 생산, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_3">
+      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 위대한 제단이 +2 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_4">
+      <Text>{1_YieldCost}로 시민의 권능을 시작합니다. 위대한 제단의 [ICON_PRODUCTION] 생산이 25% 증가합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_5">
+      <Text>선택된 자를 찾기 위해 세계를 수색하며 추가 [ICON_SPY] 스파이를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 모든 근접 전투 유닛과 총기 유닛이 혈전사 프로모션을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_1">
+      <Text>우리는 어디서 그런 인물을 찾을 수 있을까요? 분명 우리는 실제로 그들을 만들어야 합니다. 우리는 우리의 자녀와 자손들을 인류의 완벽한 예로 키워야 합니다. 완전히 순수한 영혼이 태어날 때까지 계속해야 합니다. 그리고 나서... 우리는 그들의 심장을 도려냅니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_2">
+      <Text>*우리 인구가 점점 더 신성해지면서, 희생물이 점점 더 어려워지고 있습니다*[NEWLINE]피는 흐를 필요가 있습니다. 이렇게 많은 순수함이 있는 나라에서, 가장 사소한 범죄에 대해서도... 사형이 되어야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_3">
+      <Text>우리는 계속해서 성장하고 있습니다. 예언자들은 우리가 선택된 자의 탄생을 눈앞에서 목격할 것이라고 믿고 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_4">
+      <Text>우주는 우리에게 만족하고 있습니다. 우리의 제사장들이 강력해지고, 우리는 침울하고 먼 과거에는 상상도 할 수 없었던 업적을 이룰 수 있습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_5">
+      <Text>예언자들은 지금이 바로 그때라고 말합니다. 왕국 어딘가에 순수한 자가 곧 태어날 것입니다. 그들을 만나는 사람들이 그들의 운명을 즉시 인식할 것이며, 아마도 우리에게서 그들을 지키려고 할 것입니다. 우리는 거절당하지 않을 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_6">
+      <Text>완료되었습니다. 평온을 느끼십니까? 마치 모든 세월의 짐이 갑자기 내려놓아진 듯이, 아예 존재하지 않았던 것처럼 느껴집니다. 우리의 미래는 보장되었으며, 우리는 우리의 영혼의 구원이 마침내 확보되었다는 것을 알고 싸우고 죽을 수 있습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR">
+      <Text>혈전사</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR_HELP">
+      <Text>[ICON_STRENGTH] 전투력 10% 증가</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

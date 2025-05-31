@@ -1,0 +1,455 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_CHINA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_CHINA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CHIVALRY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OPERA_HOUSE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ARCHAEOLOGY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<ScienceMedianModifierGlobal>5</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiresWar>true</RequiresWar>
+			<ResistanceTurns>1</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MONASTERY</EventBuildingClassGlobal>
+			<FreeUnitsTechAppropriate>1</FreeUnitsTechAppropriate>
+		</Row>
+		<Row>
+			<Type>EVENT_CHINA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_6</Description>
+			<EraScaling>true</EraScaling>
+			<IsOneShot>true</IsOneShot>
+			<ResistanceTurns>1</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<MinimumNationalPopulation>120</MinimumNationalPopulation>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_CHINA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-1500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-500</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>-6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s A Noble Rising</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1">
+			<Text>{3_PlayerName} rewards a loyal subject with wealth and lands!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Assassination Plot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2">
+			<Text>{3_PlayerName} evades assassination, responding with the implementation of draconian policies on recalcitrant clans.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Tea Culture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3">
+			<Text>{3_PlayerName} sparks a fashion of Tea drinking amongst Chinese society.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Folklore</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4">
+			<Text>{3_PlayerName}'s archaeologists have reignited Chinese folk culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Boxer Rebellion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5">
+			<Text>Chinese citizens rise up against foreign influence, both military and civilian!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Five-Year Plans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6">
+			<Text>{3_PlayerName} begins a series of chaotic policies, with the result of bringing the country under unprecendented control!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION">
+			<Text>The Dragon Throne</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP">
+			<Text>Great Empress, beloved of Heaven, your servant kneels before you. A messenger awaits you in the courtyard![NEWLINE][NEWLINE]Will you receive them?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_2">
+			<Text>Enranged by this assassination attempt, you begin levying heavier demands on the farms and plantations yielding an additional +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production. However, the [ICON_STRENGTH] Distress threshold increases by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_3">
+			<Text>Pay {2_InstantYield}. Opera Houses provide +3 [ICON_FOOD] Food. Receive 3 copies of [ICON_RES_TEA] Tea.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_4">
+			<Text>Herbalists and Temples provide +1, and Holy Sites yield +2, [ICON_FOOD] FOOD, [ICON_PEACE] Faith, and [ICON_CULTURE] Culture. However, the [ICON_RESEARCH] Illiteracy threshold increases by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_5">
+			<Text>After 1 Turn of Anarchy, every City receives a free Monastery and Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_6">
+			<Text>Pay {2_InstantYield} and enter 1 Turn of Anarchy. In return, Factories increase [ICON_GOLD] Gold, [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science, [ICON_FOOD] Food by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*The messenger has brought you the head of a wanted man. He asks for your blessing in his endeavors.*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*As the messenger enters, you recognize  him as the son of your rival in war!*[NEWLINE]You fools! This man is an assassin, sent by my hapless enemies! Guards!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The man is a Tea merchant, he brings an offering of every Tea in the Empire. He asks for your patronage at his new Tea Pavilion.*[NEWLINE]How can an Empress refuse her subjects?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The envoy brings you word of an excavation which has rediscovered the mysticism of your early Empire.*[NEWLINE]This rekindled interest in the old ways will bring unprecedented influence to the throne!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The man is a delegate from the Boxer movement, they demand the deaths of all foreigners within our borders and the abandonment of their ideals!*[NEWLINE]So it shall be.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*When you appear, the man promptly curses the government and immolates himself.*[NEWLINE]Bring me the High Councillor, I wish to propose some... extensive reforms.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

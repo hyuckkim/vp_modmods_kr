@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 사회 조정자</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 잠재적인 테르미도르를 끌어들입니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 획득한 장인</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 에나멜 장식품과 보석의 수출을 시작합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 살롱 방문</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 유명한 살롱을 직접 방문하여 상류 사회를 흥분시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 혁명!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4">
+      <Text>제3계급이 {3_PlayerName}에 맞서 일어났습니다! 그의 제국은 무정부 상태에 빠졌습니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 인상파 운동</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5">
+      <Text>프랑스에서 인상파 학파가 번성합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 농장 무역 거래</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 무역 파트너와 광범위하고 보호주의적인 농업 거래를 협상합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION">
+      <Text>모든 재능에게</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP">
+      <Text>최근 국민투표가 공화국에 불리하게 작용했습니다. 실제로 참여율이 비정상적으로 높았습니다.[NEWLINE][NEWLINE]우리는 어떻게 대중의 목소리에 맞서 헌법을 구현할 수 있을까요?!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_1">
+      <Text>원하는 위인을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}을(를) 사용하여 장인들을 자극합니다. [ICON_RES_JEWELRY] 보석 사치 자원을 받습니다. 대장간은 +2 [ICON_GOLD] 금과 +2 [ICON_TOURISM] 관광을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_3">
+      <Text>당신의 도시 정원 주변에 살롱이 생깁니다: +3 [ICON_RESEARCH] 과학과 +5% [ICON_CULTURE] 문화.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_4">
+      <Text>무료 정책을 통과시키지만, 이로 인해 2턴 동안 [ICON_RESISTANCE] 무정부 상태에 진입합니다. 모든 도시에서 2명의 [ICON_CITIZEN] 시민이 감소합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_5">
+      <Text>{2_InstantYield}을(를) 새로운 학교에 투자합니다. [ICON_GREAT_ARTIST] 예술가의 길드가 있는 도시는 +10 [ICON_TOURISM] 관광과 +10% [ICON_CULTURE] 문화를 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_6">
+      <Text>{2_InstantYield}을(를) 지불합니다. 농장은 +2 [ICON_GOLD] 금과 +1 [ICON_CULTURE] 문화를 생성합니다. 농업 기업은 +5 [ICON_GOLD] 금을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_1">
+      <Text>반대자들 중 가장 자격 있는 사람을 찾으십시오. 그에게 직책을 부여하십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_2">
+      <Text>재정이 곧 회복되고 사람들도 다시 만족하게 될 것입니다. 우리의 에나멜 장식품의 인기가 해외에서 유명해지면서 무역도 따를 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_3">
+      <Text>영향력 있는 사람들의 지원이 줄어드는 이유는 제가 이 주류 살롱 문화에 참여하지 않기 때문입니다. 이제 제가 등장할 때가 된 것 같습니다. 어쩌면 그들이 몇 가지를 배울지도 모릅니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_4">
+      <Text>재정이 바보들에 의해 관리되고 제가 이 처참한 상황을 고치려고 할 때, 제 개혁이 반대받습니다?! 그들이 빈곤을 견딜 수 없다면, 케이크를 먹으라 하십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_5">
+      <Text>이 문화 개혁이 이 아카데미 조직의 캠페인에 의해 저지되었을지라도 문제는 없습니다. 우리는 이 예술적 혁명이 펼쳐지는 것을 지켜봐야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_6">
+      <Text>최근의 무역 거래에 대한 광범위한 불만은 충분히 이해할 수 있지만, 농업에 대한 혜택이 돌아오면 지지가 다시 돌아올 것이라고 확신합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

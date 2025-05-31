@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Released under GPLv3 -->
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT14" FontStyle="Shadow" ConsumeMouse="0" >
+
+	<Instance Name="NWHexInstance" >
+		<WorldAnchor ID="NWAnchor" Scaling="True" Anchor="C,C" Offset="0,0">
+			<Image ID="FeatureShadow" Size="256,256" Anchor="C,C" Offset="0,0" Texture="sv_forest.dds" Sampler="Linear" Color="Black,128"/>
+			<Image ID="Feature"	Size="256,256" Anchor="C,C" Offset="0,0" Texture="sv_forest.dds" Sampler="Linear"/>
+			<!--<Image ID="Resource" Size="176,176"	Anchor="C,C" Offset="105,0" Texture="sv_pearl.dds" Sampler="Linear"/>-->
+		</WorldAnchor>
+	</Instance>
+
+	<Container ID="NWHexContainer"	Size="F,F"	Hidden="0"/>
+</Context>

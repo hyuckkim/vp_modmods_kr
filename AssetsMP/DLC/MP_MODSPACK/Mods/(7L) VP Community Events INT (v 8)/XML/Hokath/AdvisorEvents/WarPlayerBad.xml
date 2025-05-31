@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION">
+      <Text>전쟁 범죄</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP">
+      <Text>사령관님, 처리해야 할 나쁜 소식이 있습니다...[NEWLINE][NEWLINE]
+			
+			우리 정예 부대의 일부가 묘사하기 힘든 범죄를 저지한 것으로 발견되었습니다. 이들을 어떻게 처리해야 합니까?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1">
+      <Text>여론이 당신에게 불리해집니다. {4_Turns} 동안 +3 [ICON_HAPPINESS_3] 불행.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3">
+      <Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4">
+      <Text>이 사건으로 인해 군대의 사기가 떨어졌습니다. {4_Turns} 동안 -10% [ICON_STRENGTH] 전투력.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+      <Text>전쟁은 지옥입니다. 악마가 있는 것은 예상된 일입니다. 이들을 처벌하고 다시 전투에 투입하세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2">
+      <Text>이들이 저지른 일은 혐오스럽지만, 지금 그들을 처형하면 그들은 영원히 저주받을 것입니다. 이들은 사제들과 함께 보내어 죄를 씻도록 해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3">
+      <Text>세계의 다른 지도자들이 이 사실을 알면 안 됩니다. 어떤 방법을 써서라도 모든 증인들을 침묵시키세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4">
+      <Text>역겹습니다. 그들의 목을 베어야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY">
+      <Text>사기 저하</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY_HELP">
+      <Text>-10% [ICON_STRENGTH] 전투력</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

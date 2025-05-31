@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="60f79b1d-92a7-40fc-900e-5d766a75ed42" version="12">
+  <Properties>
+    <Name>World Congress Reformation</Name>
+    <Teaser>Reform the World Congress with greater participation into the World Congress.</Teaser>
+    <Description>Reform the World Congress with greater participation into the World Congress.</Description>
+    <Authors>Techpriest Enginseer</Authors>
+    <SpecialThanks>LeeS</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="2ff819d7-e472-42a1-9449-437235a28d5d" minversion="0" maxversion="999" title="Morality" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="2559E7DFBDD3AD36EBA85DC473B0606C" import="1">Art/GDRSplashy.dds</File>
+    <File md5="E08674EE814AC951578DBCD791EC036B" import="1">Art/HollywoodSplashy.dds</File>
+    <File md5="010F6DD92F935803CCD223CA0AD49FC0" import="1">Art/RockNRollSplashy.dds</File>
+    <File md5="6B9A51D532BB6DEB08543381996B5E5C" import="1">Art/ANewOrderBegins.dds</File>
+    <File md5="04965EBBD06CE25622D54AD4145A621D" import="1">Art/ThreeGorgesDamSplashy.dds</File>
+    <File md5="89A1F0C026DAD77D02E73DE69E51FFF5" import="1">Art/WallStreetSplashy.dds</File>
+    <File md5="C99A8C744ED0BBCF05A13616C6AE69B6" import="1">Art/WCRAtlas128.dds</File>
+    <File md5="E142384A2FA57A39DBA73C92BCA41C78" import="1">Art/WCRAtlas256.dds</File>
+    <File md5="348FFE16DB9EF74CDA64549AF723E577" import="1">Art/WCRAtlas32.dds</File>
+    <File md5="EE2C8C353E8368234AE83341629CABFE" import="1">Art/WCRAtlas45.dds</File>
+    <File md5="04EFAEA9F267F7F333C4EDCBA2CCC5C5" import="1">Art/WCRAtlas64.dds</File>
+    <File md5="D9FAE4575FEDE50F665CF105DD104FB9" import="1">Art/WCRAtlas80.dds</File>
+    <File md5="5F24A06EF40F22352AD16586FEC6065A" import="1">Art/WriterSplashy.dds</File>
+    <File md5="0D78793754ABBF194A1E2748E4FD8C10" import="1">Art/XCOMSplashy.dds</File>
+    <File md5="CE81457BDA867C57E24513B9270FDDF2" import="1">Audio/BletcheyPark.mp3</File>
+    <File md5="FBC8D2DA51F93878A9FB738B912DD0E6" import="1">Audio/CentaurusExtractors.mp3</File>
+    <File md5="D76CBBC03A78A0B337C1FA134370A7D2" import="1">Audio/CERN.mp3</File>
+    <File md5="E4F572CB5E0B7FC1BE9B9C0F87736E19" import="1">Audio/CivilizedJewelers.mp3</File>
+    <File md5="C7EC1921D1D482E2C9EFB1B202CD4A13" import="1">Audio/CrystalPalace.mp3</File>
+    <File md5="F4E6CB8DE148122D73D2974C5994389F" import="1">Audio/EmpireState.mp3</File>
+    <File md5="8FAB712C60137299FE47DE696DDE3FC0" import="1">Audio/FiraxiteMaterials.mp3</File>
+    <File md5="70B322B72E807B1F442EEE037631E6DF" import="1">Audio/Forum.mp3</File>
+    <File md5="370CD9DCFDDD6D864A913C0D8BF4BD74" import="1">Audio/GiorioArmeier.mp3</File>
+    <File md5="E7B45677022F686492C23B856BBA714D" import="1">Audio/GrandCanal.mp3</File>
+    <File md5="C0E24B0ACB390FC1A1AD395D825E8EC3" import="1">Audio/HexxonRefinery.mp3</File>
+    <File md5="0C8C77BF8E08527C1DDEF2C45146E47A" import="1">Audio/Hollywood.mp3</File>
+    <File md5="25C862631644E355007731BF228C7022" import="1">Audio/Initiation.mp3</File>
+    <File md5="7F37C6434883618B45E8F3DE4EF2399C" import="1">Audio/OlympicGame.mp3</File>
+    <File md5="19CED8BA039252750BB598FE311A0AF0" import="1">Audio/RockNRoll.mp3</File>
+    <File md5="4E7B65CB0F69084B4B98314434C95695" import="1">Audio/SlaterMill.mp3</File>
+    <File md5="C20F101573FA926B7C3D2170B7DA0767" import="1">Audio/SummerPalace.mp3</File>
+    <File md5="5FCD688F7127D9EDEA6290A3E7A6479E" import="1">Audio/TechCorporation.mp3</File>
+    <File md5="7497A99F14F2598C183F425180C1B8DB" import="1">Audio/Tempest.mp3</File>
+    <File md5="F13EA492D8D6C42CCA090282D41CB610" import="1">Audio/TheBook.mp3</File>
+    <File md5="FDCF24E945618DDB7EACAA21276C325C" import="1">Audio/ThreeGorgesDam.mp3</File>
+    <File md5="47877DE9AE41047B0F7562253AD9FBC4" import="1">Audio/TraderSids.mp3</File>
+    <File md5="437FA68B02A6AE80BAC535A6F2369063" import="1">Audio/TwoKayFoods.mp3</File>
+    <File md5="415C5DF795F87BEAF14D060E838BB0C3" import="1">Audio/WallStreet.mp3</File>
+    <File md5="515C7867A59843695059B3E237E7E5D4" import="1">Audio/WonderCorporation.mp3</File>
+    <File md5="57BF505E8D0CBC53191FAECF3E683A42" import="0">LUA/PillageMyShip.lua</File>
+    <File md5="8E935740D733326E5E23835256DDF30C" import="0">LUA/Population.lua</File>
+    <File md5="7F008422C30CB3567327414DBB3D8E99" import="0">LUA/SphereOfInfluences.lua</File>
+    <File md5="D82A1DC81F3103DD399517DD563F689E" import="0">LUA/TradeResolutions.lua</File>
+    <File md5="415876E179E66408B1A8F68B3C9DE42E" import="0">LUA/XCOM.lua</File>
+    <File md5="01C88B4F5710ADFC3992185A7B280A07" import="0">SQLXML/Hollywood.xml</File>
+    <File md5="2E3290D61C6CC268E37D2E347E254A85" import="0">SQLXML/RockNRoll.xml</File>
+    <File md5="15BB6B204B842058665ACF3065980A84" import="0">SQLXML/TGD.xml</File>
+    <File md5="A50E49B06C4B1F6AE9C8F5167218EB32" import="0">SQLXML/UniqueEvents.xml</File>
+    <File md5="7C19E92277040FE8CC0905B6CFCFA8A0" import="0">SQLXML/WallStreet.xml</File>
+    <File md5="E13AA520027572E9FA9EFE2E7DDAEBA7" import="0">SQLXML/WCR_IconAtlas.sql</File>
+    <File md5="A6D45734787738FA1C32D0ED280FD6A3" import="0">SQLXML/WCR_SpeechAudioDefines.xml</File>
+    <File md5="9236C1482DB898B19B401BFA50E79368" import="0">SQLXML/WCR_WonderAudio.sql</File>
+    <File md5="616D95F4A1EF7407D1127D3D7C9B1ECE" import="0">SQLXML/PopulationBuildings.xml</File>
+    <File md5="1740B8A2CFCA7B7E085D43E7AB632D4A" import="0">SQLXML/WorldCongress.sql</File>
+    <File md5="08F1E8D50350503D6DC682F94F379964" import="0">SQLXML/GDR.xml</File>
+    <File md5="AF01C7889ECC7407F1A66549AA16D117" import="0">SQLXML/WriterMovement.xml</File>
+    <File md5="2370017422AEF237580C9BA1A9045115" import="0">SQLXML/XCOM.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQLXML/WCR_IconAtlas.sql</UpdateDatabase>
+      <UpdateDatabase>SQLXML/WCR_SpeechAudioDefines.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/WCR_WonderAudio.sql</UpdateDatabase>
+      <UpdateDatabase>SQLXML/PopulationBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/XCOM.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/GDR.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/WorldCongress.sql</UpdateDatabase>
+      <UpdateDatabase>SQLXML/UniqueEvents.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/WallStreet.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/RockNRoll.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/Hollywood.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/WriterMovement.xml</UpdateDatabase>
+      <UpdateDatabase>SQLXML/TGD.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/Population.lua">
+      <Name>FindLelPopulation</Name>
+      <Description>FindLelPopulation</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/XCOM.lua">
+      <Name>XCOM</Name>
+      <Description>XCOM</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/SphereOfInfluences.lua">
+      <Name>A</Name>
+      <Description>B</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

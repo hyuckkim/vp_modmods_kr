@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP</Help>
+			<FreeSocialPolicies>1</FreeSocialPolicies>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_WRITER</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP</Help>
+			<Building>BUILDING_THEBOOK</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_WRITER</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_WRITER</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_WRITER_SPLASH</Help>
+			<ProjectSplashImage>WriterSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_WRITER</Process>
+			<CostPerPlayer>800</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_WRITER_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_WRITER_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_WRITER_3</RewardTier3>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_WRITER</Type>
+			<Description>TXT_KEY_RESOLUTION_WRITER</Description>
+			<Help>TXT_KEY_RESOLUTION_WRITER_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_WRITER</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WRITER">
+			<Text>국제 문화 교류회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WRITER_SPLASH">			
+			<Text>시대가 변했습니다. 새로운 세계 무대는 진화하고 있습니다. 사람들이 갈등하고 있고, 사람들은 더 나은 삶의 새로운 전망을 갈망하고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1">
+			<Text>사회 이론가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP">
+			<Text>정책 1개를 무료로 제공받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2">
+			<Text>혁명가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP">
+			<Text>[ICON_GREAT_WRITER]위대한 작가 1명이 출현합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3">
+			<Text>영향력 있는 인사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP">
+			<Text>국제 문화 보고서가 [ICON_CAPITAL]수도에 출현합니다 ([ICON_GREAT_WRITER]작가 전문가 슬롯 1개 제공, [ICON_TOURISM]관광 +5, [ICON_PEACE]신앙, [ICON_GOLD]골드, [ICON_RESEARCH]과학이 각각 +5%.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WRITER">
+			<Text>국제 문화 교류회 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WRITER_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]국제 문화 교류회 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]증기력[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_WRITER">
+			<Text>국제 문화 교류회 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WRITER_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 국제 문화 교류회 프로젝트에 사용합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK">
+			<Text>국제 문화 보고서</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"하루에 반 펜스나 사소한 차이 때문에 스스로 목숨을 끊지는 않는다. 그를 흥분시키기 위해서는 영혼에게 말해야 한다."[NEWLINE]- 나폴레옹 보나파르트[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK_HELP">
+			<Text>[ICON_GREAT_WRITER]작가 전문가 슬롯을 1개 제공합니다. [ICON_TOURISM]관광을 +5 제공합니다. [ICON_PEACE]신앙, [ICON_GOLD]골드, [ICON_RESEARCH]과학이 +5% 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_THEBOOK_TEXT">
+			<Text>우리는 이 자명한 텍스트 안에 무엇이 선과 악이 내재되어 있는지를 정의한다.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_WRITER</Type>
+			<Description>TXT_KEY_PROCESS_WRITER</Description>
+			<Help>TXT_KEY_PROCESS_WRITER_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_WRITER_HELP</Strategy>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_WRITER</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_WRITER</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_THEBOOK</Type>
+			<DefaultBuilding>BUILDING_THEBOOK</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_THEBOOK</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_THEBOOK</Type>
+			<BuildingClass>BUILDINGCLASS_THEBOOK</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_THEBOOK</Description>
+			<Quote>TXT_KEY_BUILDING_THEBOOK_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_THEBOOK_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_THEBOOK_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<WonderSplashImage>ANewOrderBegins.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_THEBOOK</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldModifiers>
+</GameData>

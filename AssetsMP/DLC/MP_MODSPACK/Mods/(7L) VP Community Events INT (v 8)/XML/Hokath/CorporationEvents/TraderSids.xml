@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_1_S">
+      <Text>{3_PlayerName}이(가) Trader Sid's에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_1">
+      <Text>Trader Sid's의 주식이 이제 {1_CivShortDescription}의 증권 거래소에 상장되었습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_2_S">
+      <Text>{3_PlayerName}이(가) Trader Sid's에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_2">
+      <Text>{2_CivDescription}가(이) Trader Sid's의 {1_CivShortDescription} 경제 도입을 관리하기 위해 법안을 제정했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_3_S">
+      <Text>{3_PlayerName}이(가) Trader Sid's에 대한 정부의 정책을 명확히 했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TRADER_FRANCHISE_CHOICE_3">
+      <Text>{2_CivDescription}가(이) Trader Sid's 상품에 대해 높은 관세를 부과했습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_DESCRIPTION">
+      <Text>인생의 향신료</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_HELP">
+      <Text>새로운 기업이 우리 영토 내에서 운영을 시작했습니다. 이들의 등장은 기술적 및 경제적 기회를 의미하지만, 글로벌 비즈니스와 국가의 자기 이익 간의 미묘한 균형을 가져옵니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 폐하?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_HELP_CHOICE_1">
+      <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_FOOD] 음식이 소비됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_HELP_CHOICE_2">
+      <Text>{1_YieldCost}를 지불하여 Trader Sid's 프랜차이즈에서 +10 [ICON_GOLD] 금을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_HELP_CHOICE_3">
+      <Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 농장에서는 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_DESCRIPTION_CHOICE_1">
+      <Text>왜 또 여기에 있죠? 증권 거래소에 상장시키세요! 시장이 그런 복잡한 문제를 해결해 줄 것입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_DESCRIPTION_CHOICE_2">
+      <Text>적절한 감독과 규제의 틀을 통해 진전을 추구하면서 대기업에 의해 우리의 노동자들이 착취당하지 않도록 보호합시다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_TRADER_FRANCHISE_DESCRIPTION_CHOICE_3">
+      <Text>우리 국민의 생활 방식을 이렇게 침식시킬 수는 없습니다. Trader Sid's에 대해 관세를 부과하겠습니다. 필요한 만큼 높게 설정하십시오.</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_RIOT_DESCRIPTION">
+      <Text>전투를 선택하라</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_RIOT_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_RIOT_HELP_CHOICE_1">
+      <Text>Trader Sid's가 필요한 노동력을 확보하지 못해 최대 2개의 농장이 약탈당합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_RIOT_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_DESCRIPTION">
+      <Text>시의적절한 발명</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_HELP">
+      <Text>시의 Trader Sid's 프랜차이즈 관리자가 공동 사업 제안에 접근해 왔습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_HELP_CHOICE_1">
+      <Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_DESCRIPTION_CHOICE_1">
+      <Text>우리의 고도로 숙련된 인력을 활용하는 이 아이디어가 마음에 듭니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_HELP_CHOICE_2">
+      <Text>[ICON_GREAT_ENGINEER] 엔지니어들이 이 도시에서 +1 [ICON_GOLD] 금을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_DESCRIPTION_CHOICE_2">
+      <Text>우리 엔지니어들을 고용하여 온실 디자인을 개선하는 계약은 훌륭한 아이디어처럼 보입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_HELP_CHOICE_3">
+      <Text>이 도시에서 {2_InstantYield}와 {4_GPChange}를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_UNIVERSITY_DESCRIPTION_CHOICE_3">
+      <Text>제안된 이 수경 재배 시설의 프로토타입이 마음에 듭니다. 한번 해보죠, 큰 성과를 거둘 수 있을 것입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_COUNTER_DESCRIPTION">
+      <Text>경이로운 다양성</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_COUNTER_HELP">
+      <Text></Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_COUNTER_HELP_CHOICE_1">
+      <Text>사용 가능한 재료의 대규모 확장이 시장에서 +3 [ICON_GOLD] 금과 +3 [ICON_FOOD] 음식을 생성합니다. {4_GPChange}를 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_EVENT_TRADER_COUNTER_DESCRIPTION_CHOICE_1">
+      <Text></Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

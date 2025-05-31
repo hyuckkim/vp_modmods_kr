@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP</Help>
+			<FreeUnitClass>UNITCLASS_ARTIST</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP</Help>
+			<CultureBonusTurns>10</CultureBonusTurns>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP</Help>
+			<Building>BUILDING_HOLLYWOOD_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_HOLLYWOOD</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD_SPLASH</Help>
+			<ProjectSplashImage>HollywoodSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_HOLLYWOOD</Process>
+			<CostPerPlayer>1500</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_HOLLYWOOD_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_HOLLYWOOD_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_HOLLYWOOD_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_HOLLYWOOD</Type>
+			<Description>TXT_KEY_RESOLUTION_HOLLYWOOD</Description>
+			<Help>TXT_KEY_RESOLUTION_HOLLYWOOD_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_RADIO</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_HOLLYWOOD</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD">
+			<Text>할리우드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_HOLLYWOOD_SPLASH">			
+			<Text>토마스 에디슨이 부드러운 유체 물질에서 성공적으로 움직임을 포착할 수 있는 장치를 발명했을 때, 그는 즉시 그의 발명을 보호하기 위한 특허를 만들었습니다. 하지만... 이러한 규칙들을 따르기를 거부하고 세계의 문화 중심지가 될 스튜디오를 개발하는데 즉시 착수하는 사람들이 있었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1">
+			<Text>영화 감독</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP">
+			<Text>[ICON_GREAT_ARTIST]예술가 1명이 출현합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2">
+			<Text>영화관 체인점</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP">
+			<Text>10턴 동안 [ICON_CULTURE]문화 +33% 증가.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3">
+			<Text>할리우드 감독</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP">
+			<Text>할리우드가 [ICON_CAPITAL]수도에 출현합니다 (예술 전문가 슬롯 1개, 모든 도시의 [ICON_CULTURE]무료함 -10% 감소).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_HOLLYWOOD">
+			<Text>할리우드 건설 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_HOLLYWOOD_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]할리우드 건설 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_HOLLYWOOD_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]라디오[ENDCOLOR]를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_HOLLYWOOD">
+			<Text>할리우드 건설 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_HOLLYWOOD_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 할리우드 프로젝트에 사용합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS">
+			<Text>할리우드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"할리우드는 키스에 천 달러, 영혼에 50센트를 지불하는 곳입니다."[NEWLINE] -마릴린 먼로[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_HELP">
+			<Text>[ICON_GREAT_ARTIST]예술가 전문가 슬롯 1개를 제공합니다. 모든 도시의 [ICON_HAPPINESS_3]무료함을 -10% 감소시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_HOLLYWOOD_HEADQUARTERS_TEXT">
+			<Text>할리우드는 캘리포니아 주 로스앤젤레스에 있는 이웃이다. 할리우드는 또한 미국 영화 산업의 중심지이며, 18세기와 19세기에 파리가 패션, 예술, 문학의 세계를 지배한 이래 아마도 가장 강력한 문화적 영향력의 중심지가 될 것이다. 할리우드는 두 가지 중요한 특징에 의해 존재하게 된다: 첫째, 날씨는 일년 내내 온화하고 쾌적하며, 둘째는 뉴저지와의 거리 때문이다.[NEWLINE]토머스 에디슨이 뉴저지에 살았고, 그는 새로운 기술에 관한 많은 특허를 가지고 있었기 때문에 뉴저지는 미국의 첫 번째 영화 센터였다. 그와 다른 초기 영화 제작자들은 동부 해안에 강력한 독점권을 형성했고, 그곳에서 많은 시간과 노력을 들여 많은 소규모 독립 제작자들을 몰아냈다. 에디슨과 그의 변호사들을 피하기 위해, 많은 사업체들이 로스앤젤레스의 할리우드로 이전했고, 그곳에서 그들은 에디슨과 그의 동료들을 파산시켰다.[NEWLINE]1927년부터 1948년까지는 "할리우드의 황금기"였다. 5개의 주요 스튜디오가 그 산업을 지배했다. 스튜디오는 스타 제도를 만들어 배우들을 대대적으로 홍보하면서 철통같은 계약을 맺게 했다. 이 제도는 배우들이 계약을 거절하고 대신 그들만의 제작사를 만들면서 결국 깨졌다. 이 기간 동안 할리우드는 수백 편의 영화를 제작했는데, 그 중 일부는 훌륭했고, 더 많은 영화들은 평범하거나 더 나빴다.[NEWLINE]할리우드는 권력과 영향력이 다소 줄어들었지만, 여전히 많은 주요 영화사와 텔레비전 제작사의 본거지이며, 여전히 전 세계적으로 미국 문화의 강력한 수출국으로 남아 있다.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_HOLLYWOOD</Type>
+			<Description>TXT_KEY_PROCESS_HOLLYWOOD</Description>
+			<Help>TXT_KEY_PROCESS_HOLLYWOOD_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_HOLLYWOOD_HELP</Strategy>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_HOLLYWOOD</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_HOLLYWOOD</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_HOLLYWOOD</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_HOLLYWOOD_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_HOLLYWOOD_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_HOLLYWOOD_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_HOLLYWOOD_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_HOLLYWOOD_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_HOLLYWOOD_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<UnculturedHappinessChangeGlobal>-10</UnculturedHappinessChangeGlobal>
+			<WonderSplashImage>HollywoodSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_HOLLYWOOD_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+</GameData>

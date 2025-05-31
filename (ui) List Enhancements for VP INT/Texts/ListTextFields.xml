@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_LI_NAME" >
+			<Text>이름</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_STATUS" >
+			<Text>상태</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_XP" >
+			<Text>XP:Lv</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LI_NUMBER_AND_NAME" >
+			<Text>#    이름</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LI_SORT_NAME" >
+			<Text>왼쪽 클릭: 이름으로 정렬[NEWLINE]오른쪽 클릭: 현재 체력 포인트로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_STATUS" >
+			<Text>현재 상태로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_XP" >
+			<Text>경험치 축적으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_UPGRADE" >
+			<Text>가능한 업그레이드로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_MOVES" >
+			<Text>남은 이동 포인트로 정렬</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_LI_SORT_POPULATION" >
+			<Text>정렬:[NEWLINE]왼쪽 클릭: 현재 인구[NEWLINE]오른쪽 클릭: 다음 인구 성장까지 남은 턴</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_BORDER_GROWTH" >
+			<Text>다음 국경 성장까지 남은 턴으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_DEFENSE" >
+			<Text>방어 값으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_CITY_NAME" >
+			<Text>정렬:[NEWLINE]왼쪽 클릭: 이름[NEWLINE]오른쪽 클릭: 현재 체력 포인트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_HAPPINESS" >
+			<Text>불행 값으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_PRODUCTION" >
+			<Text>정렬:[NEWLINE]왼쪽 클릭: 현재 생산을 마치기까지 남은 턴[NEWLINE]오른쪽 클릭: 작업 이름</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_SORT_RESOURCE_DEMAND" >
+			<Text>요구되는 자원 이름으로 정렬</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_LI_SORT_RESOURCE" >
+			<Text>사치 자원의 총계로 종렬</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_LI_SORT_PROGRESS" >
+			<Text>새 위인 생성까지 남은 턴</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_SLEEPING" >
+			<Text>비활성화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_EMBARKED" >
+			<Text>승선</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_WORKER_AUTOMATED" >
+			<Text>자동화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_WORKER_IDLE" >
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_TRADING">
+			<Text>교역 ({1_TurnLeft})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_TRADING_TT">
+			<Text>{1_FromCity}에서 {2_ToCity}{3_Recall}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_RECALLING_TT">
+			<Text>[COLOR_WARNING_TEXT] (다시 부르는 중)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_RECALLED_TT">
+			<Text>[COLOR_WARNING_TEXT] (다시 부름)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_EXPLORING" >
+			<Text>탐색</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_ALERT" >
+			<Text>경계</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_FORTIFIED" >
+			<Text>요새화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_IN_CITY" >
+			<Text>도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_IN_FORT" >
+			<Text>요새</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_IN_CITADEL" >
+			<Text>성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_HEALING" >
+			<Text>회복</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_UPGRADE_TT" >
+			<Text>{1_Unit} 업그레이드 비용: [ICON_GOLD]{2_Cost}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LI_UNIT_STATUS_BUILD_SKIP_WORDS" >
+			<Text>건설 벌목 삭제 제거 중지 a an</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LI_CITY_RANGE_ATTACK_TOOLTIP" >
+			<Text>도시는 적에게 원거리 공격을 수행할 수 있습니다.[NEWLINE][NEWLINE]왼쪽 클릭: 공격받은 도시를 중심으로 화면 이동</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LI_CITY_NAME_TOOLTIP" >
+			<Text>[NEWLINE][NEWLINE]왼쪽 클릭: 도시 화면 들어가기[NEWLINE]오른쪽 클릭: 도시를 중심으로 화면 이동</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

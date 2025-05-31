@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/23/2012 7:45:01 PM -->
+<GameData>
+	<Language_ko_KR>
+		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS">
+			<Text>전문가 유닛</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT">
+			<Text>{2_Building}에 {1_Specialist} 고용됨.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_GREAT_PERSON_UNITS">
+			<Text>위인 {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_RELIGIOUS_UNITS">
+			<Text>종교 {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_LAND_UNITS">
+			<Text>지상 {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_SEA_UNITS">
+			<Text>해상 {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_AIR_UNITS">
+			<Text>공중 {TXT_KEY_POP_MILITARY_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_MILITARY_UNITS">
+			<Text>군사 {TXT_KEY_POP_UNITS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_NATIONAL_WONDERS">
+			<Text>국가 {TXT_KEY_POP_WONDERS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_WORLD_WONDERS">
+			<Text>세계 {TXT_KEY_POP_WONDERS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_PROJECTS">
+			<Text>프로젝트</Text>
+		</Replace>
+	</Language_ko_KR>
+</GameData>

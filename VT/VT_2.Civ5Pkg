@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ5Package>
+	<GUID>{b5932ae4-0f4f-498f-9333-e2d31b20e095}</GUID>
+	<Version>1</Version>
+	<Priority>050</Priority>
+	<Key>bf6d34a0074b7ad4b1d1716475f7f7fe</Key>
+	<PTags>
+		<Tag>Version</Tag>
+	</PTags>
+	<Name>
+		<Value language="en_US">Vibrant Textures</Value>
+	</Name>
+	<Description>
+	<Value language="en_US">Vibrant Textures</Value>
+	</Description>
+	<UISkin name="Expansion2Primary" set="Expansion2" platform="Common">
+		<GameplaySkin>
+			<Directory>Cities</Directory>
+			<Directory>Landmarks</Directory>
+			<Directory>Terrain</Directory>
+			<Directory>Water</Directory>
+		</GameplaySkin>
+	</UISkin>
+</Civ5Package>

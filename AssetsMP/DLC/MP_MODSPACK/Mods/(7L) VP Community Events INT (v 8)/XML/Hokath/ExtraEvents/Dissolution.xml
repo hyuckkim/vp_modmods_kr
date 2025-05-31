@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_DESCRIPTION">
+      <Text>불건강한 식습관</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_HELP">
+      <Text>이단적인 성직자가 우리의 종교 관행에 대해 공개적으로 비판했습니다. 선함을 위해 사용한 자원들이 이 개혁자에 의해 빼앗기게 될 것입니다. 여기와 해외에서 신자들은 그들의 신앙을 의심하라고 들고 있습니다! 조치를 취해야 합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_HELP_CHOICE_1">
+      <Text>3명의 선교사가 [ICON_CAPITAL] 수도 근처에 나타납니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_HELP_CHOICE_2">
+      <Text>다음 {4_Turns} 동안 생산되는 선교사들은 추가적인 [COLOR_POSITIVE_TEXT]종교 전파[ENDCOLOR] 충전을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_HELP_CHOICE_3">
+      <Text>당신의 수도원들이 도시에서 [ICON_GOLD] 금 생산을 5% 증가시킵니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_HELP_CHOICE_4">
+      <Text>당신의 근접 전투 유닛과 총기 유닛들이 신성함 프로모션을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_DESCRIPTION_CHOICE_1">
+      <Text>우리는 즉시 신앙을 재확인해야 합니다! 방금 졸업한 모든 훈련생들을 보내서 모든 전도사를 동원하세요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_DESCRIPTION_CHOICE_2">
+      <Text>한 사람이 이렇게 신앙에 위기를 초래할 수 있다면 뭔가 심각히 잘못된 것입니다. 우리는 앞으로 강해지기 위해 스스로 개혁해야 합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_DESCRIPTION_CHOICE_3">
+      <Text>신학적 문제는 저를 별로 괴롭히지 않습니다. 그러나 이 순간의 약점을 활용할 수 있습니다. 오랫동안 성직자들이 이 국가의 부를 소유해 왔습니다. 이제 그 상황을 바꿀 때입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_DISSOLUTION_DESCRIPTION_CHOICE_4">
+      <Text>저에 대한 확고한 헌신만을 바랍니다. 그를 붙잡아라. 그의 혀를 잘라내고 모든 사람이 볼 수 있도록 십자가에 못 박으라.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_DISSOLUTION_DUMMY">
+      <Text>모든 은총</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_DISSOLUTION_DUMMY_HELP">
+      <Text>+1 [ICON_MISSIONARY] 선교사 전파.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_RIGHTEOUSNESS_UE">
+      <Text>신성함</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

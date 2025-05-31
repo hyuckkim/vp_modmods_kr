@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Concepts>
+		<Row>
+			<Type>CONCEPT_CIVICS_INTRODUCTION</Type>
+			<Topic>TXT_KEY_TOPIC_CIVICS</Topic>
+			<Description>TXT_KEY_CIVICS_TITLE</Description>
+			<Summary>TXT_KEY_CIVICS_BODY</Summary>
+			<AdvisorQuestion>TXT_KEY_CIVICS_QUESTION</AdvisorQuestion>
+			<Advisor>ECONOMIC</Advisor>
+			<CivilopediaHeaderType>HEADER_POLICIES</CivilopediaHeaderType>
+		</Row>
+	</Concepts>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_TOPIC_CIVICS">
+			<Text>Civics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVICS_TITLE">
+			<Text>{TXT_KEY_TOPIC_CIVICS}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVICS_BODY">
+			<Text>[COLOR_POSITIVE_TEXT]Civics[ENDCOLOR] are one of the new gameplay elements added to simulate the infrastructure of your empire.
+
+			[NEWLINE][NEWLINE]The essence of the civic system follows an exponential expansion: as your infrastructure expands, your bonuses and maintenance will be much higher, so be on the lookout for your treasury. As various technologies become unlocked, you will have more variety at choosing your civics. Beware however that changing your civics may change other leaders' opinion on the world stage. Each civic has a unique bonus and penalty - some grant additional yields to your tiles, whereas others grants additional yields to your empire nationally. Beware changing to a type of civic may occasionally lead to a revolution in your cities. So don't change too often![NEWLINE][NEWLINE]To find what civics other Civilizations have, you can simply have an embassy at their capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVICS_QUESTION">
+			<Text>What are Civics?</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

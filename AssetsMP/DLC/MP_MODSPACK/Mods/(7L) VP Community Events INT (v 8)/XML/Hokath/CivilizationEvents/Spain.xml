@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_1_S">
+      <Text>{1_CivShortDescription}의 기적적인 부활</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_1">
+      <Text>{3_PlayerName}가 기적의 부활을 목격합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_2_S">
+      <Text>{1_CivShortDescription}의 이베리아 열정</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_2">
+      <Text>{3_PlayerName}가 기사들에게 신이 그들과 함께한다고 약속합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_3_S">
+      <Text>{1_CivShortDescription}의 로마 가톨릭</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_3">
+      <Text>{3_PlayerName}가 왕국의 막대한 재산을 교회에 기부합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_4_S">
+      <Text>{1_CivShortDescription}의 발견 시대</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_4">
+      <Text>{3_PlayerName}가 새로운 세계를 스페인에 가져오는 자들에게 보상을 약속합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_5_S">
+      <Text>{1_CivShortDescription}의 크리올로 강화</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_5">
+      <Text>{3_PlayerName}가 크리올로 민족에 사회적 및 경제적 개혁을 약속합니다!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_6_S">
+      <Text>{1_CivShortDescription}의 관광 보조금</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SPAIN_UE_CHOICE_6">
+      <Text>{3_PlayerName}가 스페인 전역에서 대규모 관광 이동을 허용합니다.[NEWLINE][NEWLINE]+3 [ICON_GOLD] 금과 +3 [ICON_TOURISM] 관광을 성스러운 장소, 요새 및 성에 제공합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION">
+      <Text>우리를 악에서 구하소서</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP">
+      <Text>전하, 기도를 방해해 드려 죄송합니다. 고위 평의회 전체 회의가 소집되었으며, 당신의 참석이 요청됩니다.[NEWLINE]그분이 당신을 축복하시고 지키시길 바랍니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_1">
+      <Text>선택한 위대한 인물을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_2">
+      <Text>당신의 기마 유닛과 장갑 유닛이 종교적 열정으로 활력을 얻어, 이베리아 열정 승급을 받습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_3">
+      <Text>예배 장소를 {1_YieldCost}로 확장하여 화려한 대성당 건물을 잠금 해제합니다. 다른 대성당이 +1 [ICON_CULTURE] 문화와 +2 [ICON_GOLD] 금을 얻습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_4">
+      <Text>새로운 정복을 {1_YieldCost}로 보상합니다. 탐험가들이 [ICON_RES_GOLD] 금을 가져오고, 코르벳 선원들이 모든 해안 도시에서 그들의 서비스를 약속합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_5">
+      <Text>크리올로 계층에 권한을 위임합니다. 모든 법원에서 +3 [ICON_CULTURE] 문화와 -3 [ICON_GOLD] 금을 교환하고, 모든 농장과 마을에서 +1 [ICON_CULTURE] 문화와 -1 [ICON_GOLD] 금을 교환합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_HELP_CHOICE_6">
+      <Text>{1_YieldCost}를 사용하여 대규모 관광을 허용하고, 성스러운 장소, 요새 및 성에서 +3 [ICON_GOLD] 금과 +3 [ICON_TOURISM] 관광을 생성합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_1">
+      <Text>*기적이 일어났습니다! 한 젊은 학생이 죽음에서 돌아온 것으로 보입니다*[NEWLINE]저는 끊임없이 기도합니다. 이것은 신의 선물입니다! 신의 선물입니다. 신성한 그릇을 제게 가져오세요!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_2">
+      <Text>*우리의 적들이 우리의 신념을 무시하고 신에게 불명예를 안깁니다*[NEWLINE]우리가 승리한다면, 그것은 신의 뜻입니다. 모든 기사 대대는 기사와 하인뿐만 아니라 사제들도 포함되어야 합니다: 우리가 신을 위해 싸운다는 것을 보여주기 위해서입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_3">
+      <Text>*대성전의 사제들이 그들의 건축적 비전을 위해 막대한 양의 금과 인력을 요청합니다*[NEWLINE]하나님의 사자들이 매우 영감을 받았습니다! 그들은 필요한 모든 것을 얻을 것입니다, 그리고 그 이상으로!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_4">
+      <Text>*발견 시대가 도래하였고, 우리의 정복자들이 국가의 상상력을 사로잡았습니다*[NEWLINE]정의롭고 의로운 왕국의 전사들. 새로운 세계의 보물을 가져오는 자들에게는 이 세상과 다음 세상에서 보상하겠습니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_5">
+      <Text>*우리의 정착지와 정복이 대규모적인 불만을 야기하고 있으며, 여론이 악화되고 있습니다*[NEWLINE]우리는 그들이 잃어버린 신과 왕을 되돌릴 수는 없지만, 그들이 우리와 조화를 이루며 새로운 삶을 찾을 수 있도록 할 수 있습니다. 사랑과 희망으로 모두를 위해서입니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_EVENT_SPAIN_UE_DESCRIPTION_CHOICE_6">
+      <Text>*우리의 위대한 제국 역사적 유물은 웅장하고 중요한 만큼, 세계의 사람들이 스페인을 방문하고 싶어합니다*[NEWLINE]이 새로운 세계의 흐름을 더 이상 막을 수 없습니다. 스페인의 역사는 세계의 역사입니다. 모든 사람들이 보고 가십시오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_IBERIAN_FERVOR">
+      <Text>이베리아 열정</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_UE_IBERIAN_FERVOR_HELP">
+      <Text>턴당 추가로 10 HP를 회복합니다. 처치 시 신앙을 얻습니다. 스페인의 이벤트를 통해서만 부여됩니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_CATHEDRAL">
+      <Text>화려한 대성당</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_UE_CATHEDRAL_STRATEGY">
+      <Text>스페인 고유의 이벤트 선택으로 구매할 수 있습니다. 대성당과 상호 배타적입니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>
