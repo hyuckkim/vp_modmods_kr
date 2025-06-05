@@ -1,5 +1,42 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<GameData>
+﻿<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE</Type>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP</Help>
+			<NumChoices>2</NumChoices>
+			<RandomChance>70</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1</Help>
+			<EventDuration>100</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2</Description>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE</EventType>
+		</Row>
+	</Event_ParentEvents>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION">
       <Text>한 줄기의 과학의 빛</Text>

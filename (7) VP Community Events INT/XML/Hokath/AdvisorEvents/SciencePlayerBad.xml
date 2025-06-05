@@ -1,5 +1,56 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<GameData>
+﻿<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>40</RandomChance>
+			<RandomChanceDelta>2</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
+			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LABORATORY</RequiredAnywhereBuildingClass>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION">
       <Text>트리피드의 날</Text>
@@ -14,6 +65,163 @@
       <Text>트리피드의 날</Text>
     </Row>
   </Language_ko_KR>
+  
+  	<!-- Follow up 'cures', require later techs-->
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP</Help>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+			<NumChoices>3</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>25</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+			<EventLinker>EVENT_AES_SCIENCE_PLAYER_BAD</EventLinker>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOSPITAL</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>-2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+  
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION">
       <Text>제1급 제초제</Text>
@@ -37,7 +245,7 @@
       <Text>분명 생물학자들은 심각한 과학 연구에 가까이 해서는 안 됩니다. 문제를 물리학자들에게 맡기세요, 그들이 효과적인 해결책을 찾을 것이라고 확신합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
-      <Text>사람들은 GMOs가 실패했다고 말하지만, 저는 동의하지 않습니다. 이 전말은 과학이 제대로 작동한다는 것을 보여주었습니다! 우리는 더 많은 연구와 실험이 필요합니다! 우리는 단순히 이 식물들을 제거하는 것을 넘어, 더 나은 식물들을 만들 것입니다!</Text>
+      <Text>사람들은 GMO가 실패했다고 말하지만, 저는 동의하지 않습니다. 이 전말은 과학이 제대로 작동한다는 것을 보여주었습니다! 우리는 더 많은 연구와 실험이 필요합니다! 우리는 단순히 이 식물들을 제거하는 것을 넘어, 더 나은 식물들을 만들 것입니다!</Text>
     </Row>
   </Language_ko_KR>
 </GameData>

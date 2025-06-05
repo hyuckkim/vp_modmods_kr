@@ -1,0 +1,20 @@
+
+--------------------------------------------
+-- Versailles: Extends WLTKD duration by 50%
+--------------------------------------------
+function EE_Versailles(iPlayer, iPlotX, iPlotY, iChange)
+	local pPlayer = Players[iPlayer]
+	if pPlayer:IsAlive() and pPlayer:CountNumBuildings(iBuildingVersailles) > 0 then
+		local pPlot = Map.GetPlot(iPlotX, iPlotY)
+		if pPlot then
+			local pCity = pPlot:GetPlotCity()
+			if pCity then
+				local iWLTKDTurns = pCity:GetWeLoveTheKingDayCounter() + (iChange * 50 / 100) -- the hook is called after the game has already increased the WLTKD turns in the city
+				pCity:SetWeLoveTheKingDayCounter(iWLTKDTurns) -- DO NOT use pCity:ChangeWeLoveTheKingDayCounter as it will call the hook again, resulting in an infinite loop
+			end
+		end
+	end
+end
+GameEvents.CityBeginsWLTKD.Add(EE_Versailles) -- city starts celebrating WLTKD
+GameEvents.CityExtendsWLTKD.Add(EE_Versailles) -- city already celebrating WLTKD, which then gets extended
+
