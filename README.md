@@ -2,10 +2,55 @@
 
 ### (아마도) 더 이상 업데이트가 없는 VP용 모드입니다. 최신 VP에서 정상 작동을 보증하지 않습니다.
 
-VP의 모드-모드에 쓰이는 파일들입니다.
+1. VP의 한국어 번역 모드:
+- (1L) Community Patch INT
+- (2L) Vox Populi INT
+- (3aL) VP - EUI Compatibility Files INT
+- (4aL) Squads for VP INT
+- (overL) More Unique Components for VP (v 88) INT
+
+2. VP에서 별도로 분리된 모드:
+- (7) VP Community Events  
+  VP에 내장된 이벤트는 데모 버전 수준으로 이 모드를 설치해야 이벤트가 풍성해집니다.
+- (over) More Unique Components for VP (v 88)  
+  이 모드는 VP에서 별도로 분리된 건 아니지만, 추후 VP 5.0에서 합쳐질 예정인 모드입니다.
+- UI - Promotion Tree for VP  
+  유닛의 승급 트리를 보여주는 모드로 관리 인원이 없어 별도로 분리 되었습니다.
+
+3. VP용 모드-모드:
+
+- (overhaul) Enlightenment Era for VP  
+  계몽 시대를 추가해주는 모드로 최근 VP 4.22 버전에 맞춰 업데이트 되었으며 추후 VP 5.0용으로 업데이트될 예정입니다.
+
+- (overhaul) More Wonders for VP  
+  자연 불가사의를 늘려주는 모드입니다.
 
 - [Unique City States for VP](https://gall.dcinside.com/civilization/265235)  
   모든 도시국가에 각각의 특성을 추가하는 모드입니다.
+
+- (text) Promotion Overhaul for VP  
+  승급 설명을 개선시켜주는 모드입니다.
+
+- (ui) List Enhancements for VP  
+  도시 화면의 유닛 목록을 개선시켜주는 모드입니다.
+
+- (visual) Unit Scaling and Formation for VP (v 12)  
+  유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다.
+
+- Civic And Reform (v 22)  
+  이 모드도 VP의 시스템을 바꾸는 모드 중 하나인데 솔직히 아직 이해를 못 했습니다.
+
+- InGame Editor+ (v 46)  
+  약칭 IGE라 불리는 모드로 게임 도중 게임 내의 요소들을 수정할 수 있게 해주는 모드입니다.
+
+- Quick Turns (v 10)  
+  게임 내의 애니메이션을 보다 자유롭게 끄고 킬 수 있게 해주는 모드입니다.
+
+- Vox Populi's Bare Necessities (v 12)  
+  VP에 여러가지 요소들을 추가해주는 모드입니다.
+
+- World Congress Reformation (v 12)  
+  세계 의회를 재구성하는 모드입니다.
 
 - [JFD's Sovereignty for VP](https://gall.dcinside.com/civilization/275728)  
   공화정, 과두정같은 정부를 선택하고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. 구버전은 번역이 있지만 13버전에서 추가된 내용을 수정해서 올렸습니다.

@@ -50,7 +50,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
         --  FIELD GUN [EE]
             (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'RED',  'LAND', 'EEVP', 0.09,   3,          'CannonLine'),
             (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'RUG',  'LAND', 'EEVP', 0.175,  2,          'TwoBigGunsRUG'),
-            (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'SUG',  'LAND', 'EEVP', 0.245,  1,          ''),
+            (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'SUG',  'LAND', 'EEVP', 0.22,  1,          ''),
         --  LINE INFANTRY
             (   'ART_DEF_UNIT_EE_LINE_INFANTRY',    'ART_DEF_UNIT_MEMBER_EE_LINE_INFANTRY',     'RED',  'LAND', 'EEVP', 0.09,   19,         'HonorableGunpowderRED'),
             (   'ART_DEF_UNIT_EE_LINE_INFANTRY',    'ART_DEF_UNIT_MEMBER_EE_LINE_INFANTRY',     'RUG',  'LAND', 'EEVP', 0.18,   3,          'HonorableGunpowderRUG'),
@@ -60,9 +60,9 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_EE_SKIRMISHER',       'ART_DEF_UNIT_MEMBER_EE_SKIRMISHER',        'RUG',  'LAND', 'EEVP', 0.18,   3,          'UnFormedRUG'),
             (   'ART_DEF_UNIT_EE_SKIRMISHER',       'ART_DEF_UNIT_MEMBER_EE_SKIRMISHER',        'SUG',  'LAND', 'EEVP', 0.25,   1,          ''),
         --  TWO-HANDED SWORDSMAN
-            (   'ART_DEF_UNIT_2HANDER',             'ART_DEF_UNIT_MEMBER_2HANDER',              'RED',  'LAND', 'EEVP', 0.093,  16,         'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_2HANDER',             'ART_DEF_UNIT_MEMBER_2HANDER',              'RUG',  'LAND', 'EEVP', 0.182,  3,          'DefaultMeleeRUG'),
-            (   'ART_DEF_UNIT_2HANDER',             'ART_DEF_UNIT_MEMBER_2HANDER',              'SUG',  'LAND', 'EEVP', 0.251,  1,          ''),
+            (   'ART_DEF_UNIT_EE_2HANDER',             'ART_DEF_UNIT_MEMBER_EE_2HANDER',              'RED',  'LAND', 'EEVP', 0.093,  16,         'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_EE_2HANDER',             'ART_DEF_UNIT_MEMBER_EE_2HANDER',              'RUG',  'LAND', 'EEVP', 0.182,  3,          'DefaultMeleeRUG'),
+            (   'ART_DEF_UNIT_EE_2HANDER',             'ART_DEF_UNIT_MEMBER_EE_2HANDER',              'SUG',  'LAND', 'EEVP', 0.251,  1,          ''),
         --  UHLAN
             (   'ART_DEF_UNIT_EE_UHLAN',            'ART_DEF_UNIT_MEMBER_EE_UHLAN',             'RED',  'LAND', 'EEVP', 0.085,  7,          'WedgeCavalry'),
             (   'ART_DEF_UNIT_EE_UHLAN',            'ART_DEF_UNIT_MEMBER_EE_UHLAN',             'RUG',  'LAND', 'EEVP', 0.17,   3,          'DefaultCavalryRUG'),

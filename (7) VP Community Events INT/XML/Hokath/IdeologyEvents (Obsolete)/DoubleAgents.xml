@@ -1,5 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_DOUBLE_AGENTS</Type>
+			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_DOUBLE_AGENTS</RequiredPolicy>
+			<RandomChanceDelta>1</RandomChanceDelta>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_DOUBLE_AGENTS_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_2</Description>
+			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_DOUBLE_AGENTS_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_3</Description>
+			<FreeGreatPeople>1</FreeGreatPeople>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_DOUBLE_AGENTS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_DOUBLE_AGENTS</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>-500</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_WIRE_SERVICE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1_S">
       <Text>{1_Playername}가 외국 시민을 납치했습니다.</Text>
@@ -17,7 +86,7 @@
       <Text>전선 서비스가 도시의 [ICON_RESEARCH] 과학을 10% 증가시킵니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_3">
-      <Text>500 [ICON_GOLDEN_AGE] 황금 시대 포인트를 잃고 [ICON_GREAT_PERSON] 위대한 인물을 교환합니다.</Text>
+      <Text>500 [ICON_GOLDEN_AGE] 황금기 포인트를 잃고 [ICON_GREAT_PERSON] 위대한 인물을 교환합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_2">
       <Text>모든 것을 도청하세요. 우리는 그들이 항상 무엇을 하고 있는지 알아야 합니다!</Text>

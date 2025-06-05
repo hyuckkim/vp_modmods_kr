@@ -41,9 +41,9 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
     --  ASSYRIA
         ------- UnitInfo ------------------------------------------ UnitMemberInfo -------------------------------------------- Type -- Domain  Scale - NumMembers  Formation ---
         --  SIEGE TOWER
-            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'RED',  'LAND', 0.09,   1,          'TwoBigGuns'),
-            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'RUG',  'LAND', 0.17,   1,          'TwoBigGuns'),
-            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'SUG',  'LAND', 0.24,   1,          ''),
+            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'RED',  'LAND', 0.9,   1,          'TwoBigGuns'),
+            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'RUG',  'LAND', 0.9,   1,          'TwoBigGuns'),
+            (   'ART_DEF_UNIT_U_ASSYRIAN_SIEGE_TOWER',              'ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER',               'SUG',  'LAND', 0.9,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  AUSTRIA
         ------- UnitInfo ------------------------------------------ UnitMemberInfo -------------------------------------------- Type -- Domain  Scale - NumMembers  Formation ---
@@ -164,7 +164,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
         --	AFRICAN FOREST ELEPHANT
             (   'ART_DEF_UNIT_U_CARTHAGE_AFRICANFOREST_ELEPHANT',   'ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT',    'RED',  'LAND', 0.08,   3,          'ChariotElephantRED'),
             (   'ART_DEF_UNIT_U_CARTHAGE_AFRICANFOREST_ELEPHANT',   'ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT',    'RUG',  'LAND', 0.16,   2,          'ChariotElephantRUG'),
-            (   'ART_DEF_UNIT_U_CARTHAGE_AFRICANFOREST_ELEPHANT',   'ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT',    'SUG',  'LAND', 0.20,   1,          ''),
+            (   'ART_DEF_UNIT_U_CARTHAGE_AFRICANFOREST_ELEPHANT',   'ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT',    'SUG',  'LAND', 0.17,   1,          ''),
         --  QUINQUEREME
             (   'ART_DEF_UNIT_U_CARTHAGE_QUINQUEREME',              'ART_DEF_UNIT_MEMBER_U_CARTHAGE_QUINQUEREME',               'RED',  'SEA',  0.047,  2,          'Colomb'),
             (   'ART_DEF_UNIT_U_CARTHAGE_QUINQUEREME',              'ART_DEF_UNIT_MEMBER_U_CARTHAGE_QUINQUEREME',               'RUG',  'SEA',  0.085,  1,          ''),

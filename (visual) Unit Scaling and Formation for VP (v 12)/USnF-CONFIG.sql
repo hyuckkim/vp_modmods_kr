@@ -146,7 +146,7 @@ Description:
 */
 
 INSERT INTO USnF_Config (Type, Value)
-VALUES ('USnF_AIRSPEED', 4);
+VALUES ('USnF_AIRSPEED', 0);
 
 --==================================================================================================================
 -- MOD SETUP (DO NOT CHANGE ANY VALUE!)
