@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="13">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="14">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -254,7 +254,7 @@
     <File md5="EEVPK40378429FEF129EBE6FEFEB8B1D" import="0">SQL/Hotel_Zoo_Swap.sql</File>
     <File md5="EEVPK40378429FEF129EBE6FEFEB8B1D" import="0">SQL/Observatory.sql</File>
     <File md5="EEVPK40378429FEF129EBE6FEFEB8B1D" import="0">SQL/Industrial_Improvements.sql</File>
-    <File md5="EEVPK40378429FEF129EBE6FEFEB8B1D" import="0">SQL/PolicyCosts.sql</File>
+    <File md5="EEVPK40378429FEF129EBE6FEFEB8B1D" import="0">SQL/CostSweeps.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -270,20 +270,21 @@
       <UpdateDatabase>SQL/EEVP_Eras.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Techs.sql</UpdateDatabase>
 
+      <UpdateDatabase>SQL/EEVP_Buildings.sql</UpdateDatabase>
+
       <UpdateDatabase>SQL/Windmill_Workshop_Swap.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Hotel_Zoo_Swap.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Observatory.sql</UpdateDatabase>
       <UpdateDatabase>SQL/Industrial_Improvements.sql</UpdateDatabase>
-      <!--- make sure these happen before sweep in Buildings file -->
 
-      <UpdateDatabase>SQL/EEVP_Buildings.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Wonders.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_UnitPromotions.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Units.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Policies.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Other.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Text.sql</UpdateDatabase> 
-      <UpdateDatabase>SQL/PolicyCosts.sql</UpdateDatabase>
+      <!-- must go last -->
+      <UpdateDatabase>SQL/CostSweeps.sql</UpdateDatabase>
          
     </OnModActivated>
   </Actions>

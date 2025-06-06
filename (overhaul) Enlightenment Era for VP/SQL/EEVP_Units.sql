@@ -921,41 +921,6 @@ INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor) VALUES
 ('UNIT_EE_LINE_INFANTRY','FLAVOR_OFFENSE', 14),
 ('UNIT_EE_LINE_INFANTRY','FLAVOR_DEFENSE', 14);
 
--------------------------------------------------------
--- Align unit costs and make gold purchases available
--- Guidelines: Cost is 300-450, FaithCost is 250
--- VP 2/27 guidelines
--- MED:(135)160-200, 300 faith
--- REN:     300-375, 400 faith
--- ENL: 400-550, 500 faith
--- IND: 600-900, 600 faith
--- MOD: 800-1300, 700 faith
--------------------------------------------------------
-
--- Allow for Faith purchases
-INSERT INTO Belief_EraFaithUnitPurchase (BeliefType, EraType)
-VALUES ('BELIEF_HEATHEN_CONVERSION', 'ERA_ENLIGHTENMENT');
-
--- Renaissance
-UPDATE Units SET Cost = 325, FaithCost = 400 WHERE Type = 'UNIT_EE_2HANDER';
-UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_EE_CARRACK'; -- Renaissance
-UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_DUTCH_SEA_BEGGAR'; -- (350p)
-UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_PORTUGUESE_NAU'; -- replaces EE_CARRACK (originally PRIVATEER)
-UPDATE Units SET Cost = 325, FaithCost = 450 WHERE Type = 'UNIT_EE_ADVENTURER';
-UPDATE Units SET Cost = 400, FaithCost = 450 WHERE Type = 'UNIT_EE_GALLEON'; 
--- Enlightenment 
-UPDATE Units SET Cost = 500, FaithCost = 500 WHERE Type = 'UNIT_EE_FIELD_GUN';
-UPDATE Units SET Cost = 400, FaithCost = 500 WHERE Type = 'UNIT_PRIVATEER'; -- (350p)
-UPDATE Units SET Cost = 475, FaithCost = 550 WHERE Type = 'UNIT_EE_SKIRMISHER';
-UPDATE Units SET Cost = 475, FaithCost = 500 WHERE Type = 'UNIT_AMERICAN_MINUTEMAN';
-UPDATE Units SET Cost = 500, FaithCost = 550 WHERE Type = 'UNIT_EE_DRAGOON';
-UPDATE Units SET Cost = 500, FaithCost = 550 WHERE Type = 'UNIT_FRIGATE'; -- (475p)
-UPDATE Units SET Cost = 500, FaithCost = 550 WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE'; -- (375p) replaces FRIGATE
-UPDATE Units SET Cost = 400, FaithCost = 500 WHERE Type = 'UNIT_EE_LINE_INFANTRY';
-UPDATE Units SET Cost = 400, FaithCost = 500 WHERE Type = 'UNIT_SWEDISH_CAROLEAN'; -- replaces EE_LINE_INF (originally TERCIO)
--- Industrial
-UPDATE Units SET Cost = 700, FaithCost = 600 WHERE Type = 'UNIT_EE_UHLAN';
-UPDATE Units SET Cost = 700, FaithCost = 600 WHERE Type = 'UNIT_RUSSIAN_COSSACK'; -- replaces EE_UHLAN
 
 INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) VALUES
 ('UNIT_EE_2HANDER',		'BUILDINGCLASS_ARMORY'),
