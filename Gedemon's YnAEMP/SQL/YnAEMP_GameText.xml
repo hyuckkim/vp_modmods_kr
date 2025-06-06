@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_en_US>
+		<!--OPTIONS-->
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ALL">
+			<Text>Cultures: All</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ALL_HELP">
+			<Text>Allows All Civilizations to spawn regardless of the options checked below.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ABORIGINAL">
+			<Text>Cultures: Aboriginal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ABORIGINAL_HELP">
+			<Text>Allows Aboriginal Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ANDEAN">
+			<Text>Cultures: Andean</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ANDEAN_HELP">
+			<Text>Allows Andean Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BANTU">
+			<Text>Cultures: Bantu</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BANTU_HELP">
+			<Text>Allows Bantu Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BHARATA">
+			<Text>Cultures: Bharata</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BHARATA_HELP">
+			<Text>Allows Bharata Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CENTRAL">
+			<Text>Cultures: Central</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CENTRAL_HELP">
+			<Text>Allows Central Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CLASSICAL">
+			<Text>Cultures: Classical</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CLASSICAL_HELP">
+			<Text>Allows Classical Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_COLONIAL">
+			<Text>Cultures: Colonial</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_COLONIAL_HELP">
+			<Text>Allows Colonial Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EASTERN">
+			<Text>Cultures: Eastern</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EASTERN_HELP">
+			<Text>Allows Eastern Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EAST_INDIES">
+			<Text>Cultures: East Indies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EAST_INDIES_HELP">
+			<Text>Allows East Indies Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_GREAT_PLAINS">
+			<Text>Cultures: Great Plains</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_GREAT_PLAINS_HELP">
+			<Text>Allows Great Plains Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_HIMALAYAN">
+			<Text>Cultures: Himalayan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_HIMALAYAN_HELP">
+			<Text>Allows Himalayan Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_IRANIAN">
+			<Text>Cultures: Iranian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_IRANIAN_HELP">
+			<Text>Allows Iranian Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ISLAMIC">
+			<Text>Cultures: Islamic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ISLAMIC_HELP">
+			<Text>Allows Islamic Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_KATUJE">
+			<Text>Cultures: Katuje</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_KATUJE_HELP">
+			<Text>Allows Katuje Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MANDALA">
+			<Text>Cultures: Mandala</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MANDALA_HELP">
+			<Text>Allows Mandala Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOAMERICAN">
+			<Text>Cultures: Mesoamerican</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOAMERICAN_HELP">
+			<Text>Allows Mesoamerican Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOPOTAMIC">
+			<Text>Cultures: Mesopotamic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOPOTAMIC_HELP">
+			<Text>Allows Mesopotamic Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_NORTHERN">
+			<Text>Cultures: Northern</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_NORTHERN_HELP">
+			<Text>Allows Northern Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_OCEANIC">
+			<Text>Cultures: Oceanic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_OCEANIC_HELP">
+			<Text>Allows Oceanic Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ORIENTAL">
+			<Text>Cultures: Oriental</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ORIENTAL_HELP">
+			<Text>Allows Oriental Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_PACIFIC">
+			<Text>Cultures: Pacific</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_PACIFIC_HELP">
+			<Text>Allows Pacific Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_POLAR">
+			<Text>Cultures: Polar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_POLAR_HELP">
+			<Text>Allows Polar Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SAHARAN">
+			<Text>Cultures: Saharan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SAHARAN_HELP">
+			<Text>Allows Saharan Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SEMITIC">
+			<Text>Cultures: Semitic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SEMITIC_HELP">
+			<Text>Allows Semitic Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SOUTHERN">
+			<Text>Cultures: Southern</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SOUTHERN_HELP">
+			<Text>Allows Southern Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_STEPPE">
+			<Text>Cultures: Steppe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_STEPPE_HELP">
+			<Text>Allows Steppe Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_TOTALITARIAN">
+			<Text>Cultures: Totalitarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_TOTALITARIAN_HELP">
+			<Text>Allows Totalitarian Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WEST_AFRICAN">
+			<Text>Cultures: West African</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WEST_AFRICAN_HELP">
+			<Text>Allows West African Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WESTERN">
+			<Text>Cultures: Western</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WESTERN_HELP">
+			<Text>Allows Western Civilizations to spawn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WOODLANDS">
+			<Text>Cultures: Woodlands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WOODLANDS_HELP">
+			<Text>Allows Woodlands Civilizations to spawn.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
