@@ -1,5 +1,348 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<GameData>
+﻿<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_IROQUOIS</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementAnywhereRequired>IMPROVEMENT_LUMBERMILL</ImprovementAnywhereRequired>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MONUMENT</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CHIVALRY</PrereqTech>
+			<EventPromotion>PROMOTION_UE_MOURNING</EventPromotion>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FACTORY</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IROQUOIS_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_IROQUOIS_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STADIUM</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_IROQUOIS_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_MOURNING</Type>
+			<Description>TXT_KEY_PROMOTION_UE_MOURNING</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<Help>TXT_KEY_PROMOTION_UE_MOURNING_HELP</Help>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_MOURNING</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_MOURNING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_MOURNING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_MOURNING</PromotionType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>-1250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_TOBACCO</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<ResourceType>RESOURCE_JEWELRY</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<ResourceType>RESOURCE_PEARLS</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IROQUOIS_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_1_S">
       <Text>{1_CivShortDescription}의 투자</Text>
@@ -20,16 +363,16 @@
       <Text>{3_PlayerName}가 애도 전쟁을 선포합니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 가이위:이오</Text>
+      <Text>{1_CivShortDescription}의 가이위요</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_4">
       <Text>{3_PlayerName}가 종교적 각성을 경험하고 있습니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 웜품 산업</Text>
+      <Text>{1_CivShortDescription}의 왐펌 산업</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 국제적 열풍을 일으키기 위해 웜품을 대량 생산하기 시작했습니다!</Text>
+      <Text>{3_PlayerName}가 국제적 열풍을 일으키기 위해 왐펌을 대량 생산하기 시작했습니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_IROQUOIS_UE_CHOICE_6_S">
       <Text>{1_CivShortDescription}의 라크로스</Text>
@@ -74,7 +417,7 @@
       <Text>*종교적 관습이 최근 갑자기 변했습니다*[NEWLINE]이러한 관습은 새롭지만, 이전 시절을 떠오르게 합니다. 파이프와 깃털, 드럼을 두려워하지 말고, 우리의 꿈을 나누고 앞으로 나아갈 길을 보여받읍시다!</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_5">
-      <Text>*외국 제국들이 우리의 고대 웜품 비즈를 화폐로 착각하고 있으며, 빠르게 이 껍질에 집착하고 있습니다*[NEWLINE]이 관행으로 우리의 유산을 불명예스럽게 만들지만, 이 열풍이 우리에게 행운과 번영을 가져다 줄 것입니다.</Text>
+      <Text>*외국 제국들이 우리의 고대 왐펌 구슬을 화폐로 착각하고 있으며, 빠르게 이 껍질에 집착하고 있습니다*[NEWLINE]이 관행으로 우리의 유산을 불명예스럽게 만들지만, 이 열풍이 우리에게 행운과 번영을 가져다 줄 것입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IROQUOIS_UE_DESCRIPTION_CHOICE_6">
       <Text>*우리의 전통 스포츠가 전 세계에서 가장 인기 있는 활동이 되었습니다!*[NEWLINE]경기를 시작합시다!</Text>
@@ -83,7 +426,7 @@
       <Text>애도 전사</Text>
     </Row>
     <Row Tag="TXT_KEY_PROMOTION_UE_MOURNING_HELP">
-      <Text>킬 시 수도에 식량을 보상으로 줍니다. 이로쿼이의 이벤트를 통해서만 부여됩니다.</Text>
+      <Text>처치 시 수도에 식량을 보상으로 줍니다. 이로쿼이의 이벤트를 통해서만 부여됩니다.</Text>
     </Row>
   </Language_ko_KR>
 </GameData>

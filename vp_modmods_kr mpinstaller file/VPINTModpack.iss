@@ -47,11 +47,11 @@ Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignore
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "VP"; Description: "Vox Populi + 34UC + 편의성 모드팩"; Types: VP; Flags: exclusive disablenouninstallwarning
+Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가"; Types: VP; Flags: exclusive disablenouninstallwarning
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: NVC; Flags: exclusive disablenouninstallwarning
 
 [Types]
-Name: "VP"; Description: "Vox Populi + 34UC 한국어 번역 모드팩";
+Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가";
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치";
 
 [InstallDelete]

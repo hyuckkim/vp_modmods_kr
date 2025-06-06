@@ -1,11 +1,181 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_GIBRALTAR</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_GIBRALTAR</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_GIBRALTAR_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GIBRALTAR_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<CoastalOnly>true</CoastalOnly>
+			<HasTradeConnection>true</HasTradeConnection>
+			<EventBuildingClass>BUILDINGCLASS_HARBOR</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+			<EventBuildingClass>BUILDINGCLASS_THEATRE</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<EventBuildingClass>BUILDINGCLASS_MILITARY_BASE</EventBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GIBRALTAR</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GIBRALTAR</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GIBRALTAR</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GIBRALTAR</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_GIBRALTAR</FeatureType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_GIBRALTAR</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>900</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-600</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-900</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GIBRALTAR_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION">
-      <Text>넘지 못할 경계</Text>
+      <Text>더 나아갈 수 없음</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP">
-      <Text>당신의 고문들이 지브롤타르 방문을 마치고 돌아왔습니다, 위대하신 분.[NEWLINE]그들과 다과를 함께 하시겠습니까?</Text>
+      <Text>당신의 고문들이 지브롤터 방문을 마치고 돌아왔습니다, 위대하신 분.[NEWLINE]그들과 다과를 함께 하시겠습니까?</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_NW_GIBRALTAR_HELP_CHOICE_1">
       <Text>이 경이로움이 영구적으로 +1 [ICON_Gold] 금과 [ICON_TOURISM] 관광을 제공합니다.</Text>
@@ -20,7 +190,7 @@
       <Text>{2_InstantYield}을 사용하여 무료 군사 기지를 받으며, 이는 추가로 +3 [ICON_CULTURE] 문화를 제공합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_1">
-      <Text>*당신의 경제 고문이 지브롤타르의 인프라가 제국에 계속 이익을 주고 있다고 보고합니다*[NEWLINE]섬은 이상적인 위치에 있습니다, 오랫동안 유지합시다.</Text>
+      <Text>*당신의 경제 고문이 지브롤터의 인프라가 제국에 계속 이익을 주고 있다고 보고합니다*[NEWLINE]섬은 이상적인 위치에 있습니다, 오랫동안 유지합시다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_NW_GIBRALTAR_DESCRIPTION_CHOICE_2">
       <Text>*당신의 외교 고문이 섬에서의 무역이 허술한 항구 건설로 이어졌다고 보고합니다*[NEWLINE]궁전에서 작은 금액을 지원받으면, 지역에서 가장 수익성 있는 허브를 만들 수 있을 것입니다.</Text>
