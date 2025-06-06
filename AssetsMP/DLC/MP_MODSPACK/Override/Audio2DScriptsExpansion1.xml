@@ -1542,6 +1542,15 @@
 			<bIsMusic>0</bIsMusic> 
 			<iPriority>1</iPriority> 
 		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_ELEPHANT_TRUMPETING</ScriptID> 
+			<SoundID>SND_ELEPHANT_TRUMPETING</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
 	</Script2DSounds>
 </Script2DFile> 
 

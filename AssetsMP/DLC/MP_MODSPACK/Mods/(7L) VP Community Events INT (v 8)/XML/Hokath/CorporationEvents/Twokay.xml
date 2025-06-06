@@ -1,26 +1,167 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+
+	<Events>
+		<Row>
+			<Type>EVENT_TWOKAY_FRANCHISE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>60</RandomChance>
+			<RandomChanceDelta>20</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</RequiredAnywhereBuildingClass>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_TWOKAY_FRANCHISE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_1</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STOCK_EXCHANGE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_TWOKAY_FRANCHISE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WIRE_SERVICE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_TWOKAY_FRANCHISE_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiresIdeology>true</RequiresIdeology>
+			<ImprovementAnywhereRequired>IMPROVEMENT_FARM</ImprovementAnywhereRequired>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_TWOKAY_FRANCHISE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_TWOKAY_FRANCHISE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_TWOKAY_FRANCHISE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>500</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
   <Language_ko_KR>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1_S">
-      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+      <Text>{3_PlayerName}이(가) 투 케이 식품에 대한 정부의 정책을 명확히 했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_1">
-      <Text>Two Kay Foods의 주식이 이제 {1_CivShortDescription}의 증권 거래소에 상장되었습니다.</Text>
+      <Text>투 케이 식품의 주식이 이제 {1_CivShortDescription}의 증권 거래소에 상장되었습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2_S">
-      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+      <Text>{3_PlayerName}이(가) 투 케이 식품에 대한 정부의 정책을 명확히 했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_2">
-      <Text>{2_CivDescription}가(이) Two Kay Foods의 {1_CivShortDescription} 경제 도입을 관리하기 위해 법안을 제정했습니다.</Text>
+      <Text>{2_CivDescription}가(이) 투 케이 식품의 {1_CivShortDescription} 경제 도입을 관리하기 위해 법안을 제정했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3_S">
-      <Text>{3_PlayerName}이(가) Two Kay Foods에 대한 정부의 정책을 명확히 했습니다.</Text>
+      <Text>{3_PlayerName}이(가) 투 케이 식품에 대한 정부의 정책을 명확히 했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_EVENT_TWOKAY_FRANCHISE_CHOICE_3">
-      <Text>{2_CivDescription}가(이) Two Kay Foods 상품에 대해 높은 관세를 부과했습니다.</Text>
+      <Text>{2_CivDescription}가(이) 투 케이 식품 상품에 대해 높은 관세를 부과했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_DESCRIPTION">
-      <Text>슈퍼마켓 스윕</Text>
+      <Text>슈퍼마켓 스위프</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP">
       <Text>새로운 기업이 우리 영토 내에서 운영을 시작했습니다. 이들의 등장은 기술적 및 경제적 기회를 의미하지만, 글로벌 비즈니스와 국가의 자기 이익 간의 미묘한 균형을 가져옵니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 폐하?</Text>
@@ -29,7 +170,7 @@
       <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_FOOD] 음식이 소비됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 지불하여 Two Kay Foods 프랜차이즈에서 +10 [ICON_FOOD] 음식을 받습니다.</Text>
+      <Text>{1_YieldCost}를 지불하여 투 케이 식품 프랜차이즈에서 +10 [ICON_FOOD] 음식을 받습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_TWOKAY_FRANCHISE_HELP_CHOICE_3">
       <Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 농장에서는 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
@@ -44,6 +185,49 @@
       <Text>우리 국민의 생활 방식을 이렇게 침식시킬 수는 없습니다. Two Kay에 대해 관세를 부과하겠습니다. 필요한 만큼 높게 설정하십시오.</Text>
     </Row>
   </Language_ko_KR>
+  
+  	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_RIOT</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_RIOT_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<NumChoices>1</NumChoices>
+			<RandomChance>50</RandomChance>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</RequiredBuildingClass>
+			<RandomChanceDelta>1</RandomChanceDelta>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_TWOKAY_RIOT</CityEventType>
+			<EventChoice>EVENT_TWOKAY_FRANCHISE_CHOICE_1</EventChoice>
+			<CheckForActive>false</CheckForActive>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_RIOT_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_RIOT_HELP_CHOICE_1</Help>
+			<ImprovementRequired>IMPROVEMENT_FARM</ImprovementRequired>
+		</Row>
+	</CityEventChoices>
+	<CityEventChoice_ImprovementDestructionRandom>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_RIOT_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<Number>2</Number>
+		</Row>
+	</CityEventChoice_ImprovementDestructionRandom>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_RIOT_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_TWOKAY_RIOT</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+  
   <Language_ko_KR>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION">
       <Text>말맛</Text>
@@ -52,18 +236,134 @@
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_HELP_CHOICE_1">
-      <Text>Two Kay Foods 스캔들로 인해 최대 2개의 농장이 약탈당합니다.</Text>
+      <Text>투 케이 식품 스캔들로 인해 최대 2개의 농장이 약탈당합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_RIOT_DESCRIPTION_CHOICE_1">
       <Text></Text>
     </Row>
   </Language_ko_KR>
+  
+  <CityEvents>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_UNIVERSITY</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP</Help>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<NumChoices>3</NumChoices>
+			<RandomChance>50</RandomChance>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</RequiredBuildingClass>
+			<RandomChanceDelta>0</RandomChanceDelta>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_TWOKAY_UNIVERSITY</CityEventType>
+			<Event>EVENT_TWOKAY_FRANCHISE</Event>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<CityEventType>CITY_EVENT_TWOKAY_UNIVERSITY</CityEventType>
+			<EventChoice>EVENT_TWOKAY_FRANCHISE_CHOICE_3</EventChoice>
+			<CheckForActive>false</CheckForActive>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_1</Help>
+			<RequiredBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_2</Help>
+			<RequiredBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_3</Help>
+			<ImprovementRequired>IMPROVEMENT_FARM</ImprovementRequired>
+			<PrereqTech>TECH_PENICILIN</PrereqTech>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_TWOKAY_UNIVERSITY</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_TWOKAY_UNIVERSITY</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_TWOKAY_UNIVERSITY</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_1</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+
+	<CityEventChoice_SpecialistYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_2</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_SpecialistYieldChange>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_3</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<Points>500</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_UNIVERSITY_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+  
   <Language_ko_KR>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_DESCRIPTION">
-      <Text>작은 도움이 됩니다</Text>
+      <Text>티끌 모아 태산</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP">
-      <Text>시의 Two Kay Foods 프랜차이즈 관리자가 공동 사업 제안에 접근해 왔습니다.</Text>
+      <Text>시의 투 케이 식품 프랜차이즈 관리자가 공동 사업 제안에 접근해 왔습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_UNIVERSITY_HELP_CHOICE_1">
       <Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
@@ -84,6 +384,69 @@
       <Text>이 신형 농약은 꽤 놀랍습니다. 잘 될 수 있는지 확인해 봅시다.</Text>
     </Row>
   </Language_ko_KR>
+  
+  	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_COUNTER</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_HELP</Help>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<NumChoices>1</NumChoices>
+			<RandomChance>50</RandomChance>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</RequiredBuildingClass>
+			<RandomChanceDelta>1</RandomChanceDelta>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_TWOKAY_COUNTER</CityEventType>
+			<Event>EVENT_TWOKAY_FRANCHISE</Event>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+		<Row>
+			<CityEventType>CITY_EVENT_TWOKAY_COUNTER</CityEventType>
+			<EventChoice>EVENT_TWOKAY_FRANCHISE_CHOICE_2</EventChoice>
+			<CheckForActive>false</CheckForActive>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_TWOKAY_COUNTER_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_HELP_CHOICE_1</Help>
+			<RequiredBuildingClass>BUILDINGCLASS_CARAVANSARY</RequiredBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_COUNTER_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_TWOKAY_COUNTER</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_COUNTER_CHOICE_1</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_COUNTER_CHOICE_1</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_TWOKAY_COUNTER_CHOICE_1</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<Points>500</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+  
   <Language_ko_KR>
     <Row Tag="TXT_KEY_CITY_EVENT_TWOKAY_COUNTER_DESCRIPTION">
       <Text>포장 및 발송</Text>

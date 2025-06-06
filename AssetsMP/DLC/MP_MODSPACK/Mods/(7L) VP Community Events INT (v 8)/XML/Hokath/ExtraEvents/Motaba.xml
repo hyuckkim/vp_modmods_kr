@@ -1,5 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS</Type>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<!-- Because it enable a bad event -->
+			<NumChoices>4</NumChoices>
+			<RandomChance>30</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>True</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<RandomChanceDelta>2</RandomChanceDelta>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_1</Help>
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_2</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_3</Description>
+			<PrereqTech>TECH_ROCKETRY</PrereqTech>
+			<CapitalEffectOnly>true</CapitalEffectOnly>			
+		</Row>
+		<Row>
+			<Type>EVENT_MOTABA_VIRUS_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_MOTABA_VIRUS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_4</Description>
+			<EventPromotion>PROMOTION_AIR_SIEGE_3</EventPromotion>
+		</Row>
+	</EventChoices>
+	<EventChoice_EventLinks>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<EventChoiceLinker>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceLinker>
+			<CheckForActive>false</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</EventChoice_EventLinks>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MOTABA_VIRUS</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<UnitClassType>UNITCLASS_GUIDED_MISSILE</UnitClassType>
+			<Quantity>6</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOTABA_VIRUS_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION">
       <Text>모타바 바이러스</Text>
@@ -20,16 +123,16 @@
       <Text>귀하의 항공기가 공중 포위 III 승급을 얻습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_1">
-      <Text>CI:6의 머리를 가져오세요. 이 바이러스를 민간인에 대해 사용할 것을 승인합니다.</Text>
+      <Text>CI:6의 수장을 데려오세요. 이 바이러스를 민간인에 대해 사용할 것을 승인합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_2">
       <Text>무슨 말을 하고 있는 거죠?! 이건 끔찍합니다. 의사를 최고의 의료 연구소로 보내서 이 것이 만약 유출될 경우를 대비해야 합니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_3">
-      <Text>이건 프로토타입 무기 부서에서 찾고 있던 것과 정확히 맞습니다. 스커드 스톰 프로젝트에 대한 녹색 신호를 보내세요.</Text>
+      <Text>이건 프로토타입 무기 부서에서 찾고 있던 것과 정확히 맞습니다. 스커드 폭풍 프로젝트에 대한 녹색 신호를 보내세요.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_MOTABA_VIRUS_DESCRIPTION_CHOICE_4">
-      <Text>이런 것을 RnD의 미친놈들에게 맡길 수는 없습니다. 공군을 호출하세요.</Text>
+      <Text>이런 것을 연구개발부서의 미친놈들에게 맡길 수는 없습니다. 공군을 호출하세요.</Text>
     </Row>
   </Language_ko_KR>
 </GameData>

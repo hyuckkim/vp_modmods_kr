@@ -1,17 +1,54 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<GameData>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION">
-      <Text>불순한 유인</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP_CHOICE_1">
-      <Text>경제 정책이 의도치 않게 [ICON_STRENGTH] 범죄 기준을 {5_Turns} 동안 20% 증가시켰습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION_CHOICE_1">
-      <Text>불순한 유인</Text>
-    </Row>
-  </Language_ko_KR>
+﻿<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>30</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<CityEventArt>advisoreconomic.dds</CityEventArt>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_BAD</CityEventType>
+			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP_CHOICE_1</Help>
+			<EventDuration>30</EventDuration>
+			<RequiredBuildingClass>BUILDINGCLASS_BANK</RequiredBuildingClass>
+			<Expires>true</Expires>
+			<BasicNeedsMedianModifier>20</BasicNeedsMedianModifier>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_BAD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_BAD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION">
+		  <Text>불순한 유인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP">
+		  <Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_HELP_CHOICE_1">
+		  <Text>경제 정책이 의도치 않게 [ICON_STRENGTH] 범죄 기준을 {5_Turns} 동안 20% 증가시켰습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_BAD_DESCRIPTION_CHOICE_1">
+		  <Text>불순한 유인</Text>
+		</Row>
+	</Language_ko_KR>
 </GameData>

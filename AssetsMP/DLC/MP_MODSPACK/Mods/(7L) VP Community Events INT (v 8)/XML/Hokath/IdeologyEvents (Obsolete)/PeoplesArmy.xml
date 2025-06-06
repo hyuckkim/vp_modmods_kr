@@ -1,8 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_SOCIALIST_REALISM</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_1</Help>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_2</Help>
+			<ResistanceTurns>2</ResistanceTurns>
+			<EventDuration>2</EventDuration>
+			<Expires>false</Expires>
+			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_3</Help>
+			<EventDuration>10</EventDuration>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+			<EventPromotion>PROMOTION_DRILL_2</EventPromotion>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_SOCIALIST_REALISM</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Type>
+			<DefaultBuilding>BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_IDEOLOGY_SOCIALIST_REALISM_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_IDEOLOGY_SOCIALIST_REALISM_DUMMY</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<CitySupplyModifier>3</CitySupplyModifier>
+			<Experience>5</Experience>
+		</Row>
+	</Buildings>
+
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_SOCIALIST_REALISM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_DESCRIPTION">
-      <Text>붉은 책</Text>
+      <Text>마오 쩌둥 어록</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP">
       <Text>동지-장군님, 다른 전쟁 장관들과 저는 젊은이들의 충성도에 대해 심각한 우려를 가지고 있습니다. 그들은 우리가 겪은 혁명을 경험하지 않았고, 왜 우리가 질서를 필요로 하는지 완전히 이해하지 못합니다.[NEWLINE]동지, 우리는 어떻게 해야 합니까?</Text>
@@ -11,7 +126,7 @@
       <Text>{1_YieldCost}를 활용하여 모든 도시에서 3% 공급을 얻고, 새로 훈련된 유닛에 +5 XP를 부여합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_2">
-      <Text>[ICON_RESISTANCE] 아나키 상태에 {4_Turns} 턴 동안 들어가며, [ICON_CULTURE] 지루함과 [ICON_STRENGTH] 범죄 기준이 영구적으로 5% 감소합니다.</Text>
+      <Text>[ICON_RESISTANCE] 아나키 상태에 {4_Turns} 턴 동안 들어가며, [ICON_CULTURE] 무료와 [ICON_STRENGTH] 저항 기준이 영구적으로 5% 감소합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_SOCIALIST_REALISM_HELP_CHOICE_3">
       <Text>모든 도시에서 1 [ICON_CITIZEN] 인구가 감소하지만, 모든 적격 유닛과 향후 {4_Turns} 동안 건설되는 유닛이 Drill II 프로모션을 획득합니다.</Text>

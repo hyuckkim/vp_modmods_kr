@@ -1,14 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_PATRIOTIC_WAR</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_1</Help>
+			<RequiresWar>true</RequiresWar>
+			<EventPromotion>PROMOTION_ANTIAIR_LAND_I</EventPromotion>
+			<EventDuration>10</EventDuration>
+			<Expires>false</Expires>	
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_2</Help>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>50</EventDuration>
+			<Expires>true</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<ImprovementAnywhereRequired>IMPROVEMENT_CITADEL</ImprovementAnywhereRequired>
+			<RequiresWar>true</RequiresWar>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION">
-      <Text>지하로의 이동</Text>
+      <Text>지하 속으로</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP">
       <Text>전쟁이 격화되며 적의 요원들이 민간인을 위협하고 있습니다. 모든 남녀 노소가 적과의 접촉에 대비해야 합니다.[NEWLINE]어떻게 할 것을 제안하십니까, 동지?</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_1">
-      <Text>모든 적합한 유닛과 향후 {4_Turns} 동안 생산되는 유닛들이 플락 타겟팅 프로모션을 받습니다.</Text>
+      <Text>모든 적합한 유닛과 향후 {4_Turns} 동안 생산되는 유닛들이 플랙 타겟팅 승급을 받습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_2">
       <Text>모든 숲과 정글 타일이 {4_Turns} 동안 +1 [ICON_PRODUCTION] 생산력을 제공합니다.</Text>

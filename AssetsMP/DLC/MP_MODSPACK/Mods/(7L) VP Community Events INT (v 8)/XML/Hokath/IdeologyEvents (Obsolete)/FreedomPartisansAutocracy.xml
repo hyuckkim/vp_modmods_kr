@@ -1,5 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</Type>
+			<Description>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP</Help>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<NumChoices>1</NumChoices>
+			<RandomChance>100</RandomChance>
+			<EventCooldown>25</EventCooldown>
+			<MinimumCityPopulation>18</MinimumCityPopulation>
+			<RandomChanceDelta>5</RandomChanceDelta>
+			<IsUnhappy>true</IsUnhappy>
+			<RequiredIdeology>POLICY_BRANCH_AUTOCRACY</RequiredIdeology>
+			<RequiresOccupied>true</RequiresOccupied>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</CityEventType>
+			<EventChoice>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_HELP_CHOICE_1</Help>
+			<RandomBarbarianSpawn>2</RandomBarbarianSpawn>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_Notification>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</CityEventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</CityEventChoice_Notification>
   <Language_ko_KR>
     <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_FREEDOM_PARTISANS_AUTOCRACY_CHOICE_1_S">
       <Text>{2_CityName}에서 반란이 일어났습니다.</Text>
