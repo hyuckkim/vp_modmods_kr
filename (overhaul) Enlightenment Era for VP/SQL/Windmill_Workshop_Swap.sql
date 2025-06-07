@@ -31,7 +31,8 @@ BEGIN
 	GoldMaintenance = 3,
 	BuildingProductionModifier = 15,
 	SpecialistType = 'SPECIALIST_ENGINEER',
-	SpecialistCount = 0
+	SpecialistCount = 0,
+	AllowsProductionTradeRoutes=0
 	WHERE Type = NEW.Type;
 
 	INSERT INTO Building_GrowthExtraYield
@@ -51,7 +52,8 @@ BEGIN
 	GoldMaintenance = 2,
 	BuildingProductionModifier = 0,
 	SpecialistType = 'SPECIALIST_ENGINEER',
-	SpecialistCount = 1
+	SpecialistCount = 1,
+	AllowsProductionTradeRoutes=1
 	WHERE Type = NEW.Type;
 
 	INSERT INTO Building_BuildingClassLocalYieldChanges
@@ -81,7 +83,7 @@ BEGIN
 	INSERT INTO Building_LakePlotYieldChanges
 		(BuildingType, YieldType, Yield)
 	SELECT
-		NEW.Type, YieldType, Yield
+		NEW.Type, YieldType, 1
 	FROM Building_LakePlotYieldChanges WHERE BuildingType = 'BUILDING_WINDMILL';
 END;
 
@@ -95,7 +97,8 @@ GoldMaintenance = 2,
 BuildingProductionModifier = 0,
 SpecialistType = 'SPECIALIST_ENGINEER',
 SpecialistCount = 1,
-Help = 'TXT_KEY_BUILDING_WORKSHOP_HELP'
+Help = 'TXT_KEY_BUILDING_WORKSHOP_HELP',
+AllowsProductionTradeRoutes=1
 WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
 
 UPDATE Building_ClassesNeededInCity SET BuildingClassType = 'BUILDINGCLASS_FORGE' WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL');
@@ -115,7 +118,8 @@ GoldMaintenance = 3,
 BuildingProductionModifier = 15,
 SpecialistType = 'SPECIALIST_ENGINEER',
 SpecialistCount = 0,
-Help = 'TXT_KEY_BUILDING_WINDMILL_HELP'
+Help = 'TXT_KEY_BUILDING_WINDMILL_HELP',
+AllowsProductionTradeRoutes=0
 WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP';
 
 UPDATE Building_ClassesNeededInCity SET BuildingClassType = 'BUILDINGCLASS_WINDMILL' WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
@@ -144,6 +148,8 @@ UPDATE Building_ImprovementYieldChanges SET Yield = 1 WHERE BuildingType IN (SEL
 
 UPDATE Building_FeatureYieldChanges SET Yield = 1 WHERE BuildingType = 'BUILDING_WINDMILL';
 
+UPDATE Building_LakePlotYieldChanges SET Yield = 1 WHERE BuildingType = 'BUILDING_WINDMILL';
+
 INSERT INTO Building_FeatureYieldChanges
 	(BuildingType, FeatureType, YieldType, Yield)
 SELECT
@@ -152,7 +158,7 @@ FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
 
 --swap the help texts for modded civ to grab
 UPDATE Language_en_US
-SET Text = '{TXT_KEY_BUILDING_STABLE}s and {TXT_KEY_BUILDING_GROCER} in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms and Marshes worked by the City. Nearby Lakes produce +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.'
+SET Text = '{TXT_KEY_BUILDING_STABLE}s and {TXT_KEY_BUILDING_GROCER} in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_HELP';
 
 UPDATE Language_en_US

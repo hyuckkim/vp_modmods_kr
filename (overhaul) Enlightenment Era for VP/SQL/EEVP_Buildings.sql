@@ -332,10 +332,17 @@ WHERE Type = 'BUILDING_EE_MANOR';
 INSERT INTO Building_YieldFromBorderGrowth (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_EE_MANOR', 'YIELD_GOLDEN_AGE_POINTS', 20;
 
-INSERT INTO Building_YieldFromPurchase
+INSERT INTO Building_LakePlotYieldChanges
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_EE_MANOR', 'YIELD_GOLDEN_AGE_POINTS', 10);
+	('BUILDING_EE_MANOR', 'YIELD_GOLD', 2),
+	('BUILDING_EE_MANOR', 'YIELD_TOURISM', 1);
+
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_EE_MANOR', 'IMPROVEMENT_TRADING_POST', 'YIELD_PRODUCTION', 1),
+	('BUILDING_EE_MANOR', 'IMPROVEMENT_TRADING_POST', 'YIELD_GOLDEN_AGE_POINTS', 1);	
 
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 
@@ -570,135 +577,6 @@ SELECT
 FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
 
 UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType = 'BUILDING_PUBLIC_SCHOOL';
-
------------------------------------------------
--- Building Costs
-----------------------------------------------
-
-CREATE TEMP TABLE BuildingCost (
-	GridXTemp INTEGER,
-	CostTemp INTEGER,
-	GoldMaintenanceTemp INTEGER
-);
-
-INSERT INTO BuildingCost
-VALUES
-	(0, 65, 0),
-	(1, 65, 1),
-	(2, 110, 1),
-	(3, 150, 1),  --classical
-	(4, 200, 1),
-	(5, 300, 2),  --medieval
-	(6, 350, 2),
-	(7, 500, 2),  --renai
-	(8, 600, 3),
-	(9, 800, 3),  --enlight
-	(10, 950, 4),
-	(11, 1200, 4),  --indust
-	(12, 1350, 5),
-	(13, 1750, 6),  --modern
-	(14, 2000, 7),
-	(15, 2250, 8),  --atomic
-	(16, 2450, 9),
-	(17, 2650, 10),  --info
-	(18, 2850, 11),
-	(19, 3100, 12);
-
-UPDATE Buildings
-SET
-	Cost = (
-		SELECT CostTemp FROM BuildingCost WHERE PrereqTech IN (
-			SELECT Type FROM Technologies WHERE GridX = GridXTemp
-		)
-	),
-	GoldMaintenance = (
-		SELECT GoldMaintenanceTemp FROM BuildingCost WHERE PrereqTech IN (
-			SELECT Type FROM Technologies WHERE GridX = GridXTemp
-		)
-	)
-WHERE WonderSplashImage IS NULL
-AND BuildingClass NOT IN (
-	SELECT Type FROM BuildingClasses
-	WHERE MaxPlayerInstances = 1
-)
-AND EXISTS (
-	SELECT 1 FROM BuildingCost WHERE PrereqTech IN (
-		SELECT Type FROM Technologies WHERE GridX = GridXTemp
-	)
-);
-
--- National Wonders
-UPDATE Buildings
-SET
-	Cost = (
-		SELECT CostTemp FROM BuildingCost WHERE PrereqTech IN (
-			SELECT Type FROM Technologies WHERE GridX = GridXTemp
-		)
-	) * 100 / 250,
-	GoldMaintenance = 0
-WHERE BuildingClass IN (
-	SELECT Type FROM BuildingClasses
-	WHERE MaxPlayerInstances = 1
-)
-AND EXISTS (
-	SELECT 1 FROM BuildingCost WHERE PrereqTech IN (
-		SELECT Type FROM Technologies WHERE GridX = GridXTemp
-	)
-);
-
--- Ideology National Wonders should have the same costs
-UPDATE Buildings
-SET Cost = (SELECT CostTemp FROM BuildingCost WHERE GridXTemp = 12) * 100 / 250
-WHERE BuildingClass IN (
-	SELECT Type FROM BuildingClasses
-	WHERE MaxPlayerInstances = 1
-) AND PolicyBranchType IS NOT NULL;
-
-DROP TABLE BuildingCost;
-
--- Corporations
-UPDATE Buildings
-SET Cost = 1750, GoldMaintenance = 6
-WHERE BuildingClass IN (
-	SELECT OfficeBuildingClass FROM Corporations
-);
-
--- Outliers
--- Council, Agribusiness, guild support, and Gold buildings, tavern
-UPDATE Buildings
-SET GoldMaintenance = 0
-WHERE BuildingClass IN (
-	'BUILDINGCLASS_GROVE',
-	'BUILDINGCLASS_STOCKYARD',
-	'BUILDINGCLASS_AMPHITHEATER',
-	'BUILDINGCLASS_GALLERY',
-	'BUILDINGCLASS_OPERA_HOUSE',
-	'BUILDINGCLASS_MARKET',
-	'BUILDINGCLASS_CARAVANSARY',
-	'BUILDINGCLASS_MINT',
-	'BUILDINGCLASS_BANK',
-	'BUILDINGCLASS_STOCK_EXCHANGE',
-	'BUILDINGCLASS_EE_WEIGH_HOUSE',
-	'BUILDINGCLASS_EE_TAVERN'
-);
-
--- Non-unique Courthouse, Garden and Chancery
-UPDATE Buildings
-SET GoldMaintenance = 3
-WHERE Type IN (
-	'BUILDING_COURTHOUSE',
-	'BUILDING_GARDEN',
-	'BUILDING_CHANCERY'
-);
-
--- Maintenance-free Unique Buildings
-UPDATE Buildings
-SET GoldMaintenance = 0
-WHERE Type IN (
-	'BUILDING_SATRAPS_COURT',
-	'BUILDING_BASILICA'
-);
-
 
 
 

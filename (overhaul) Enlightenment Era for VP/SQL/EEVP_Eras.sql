@@ -70,3 +70,7 @@ INSERT INTO Era_Soundtracks (EraType, SoundTrack) VALUES
 UPDATE PostDefines
 SET Key = 'ERA_ENLIGHTENMENT'
 WHERE Name = 'RELIGION_LAST_FOUND_ERA';
+
+-- Allow for Faith purchases
+INSERT INTO Belief_EraFaithUnitPurchase (BeliefType, EraType)
+VALUES ('BELIEF_HEATHEN_CONVERSION', 'ERA_ENLIGHTENMENT');

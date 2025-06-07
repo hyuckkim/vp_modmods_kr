@@ -359,3 +359,19 @@ Misc
 Bugfixes
 -- fixed Bombard skin being broken (ty Jarcast)
 -- fixed a number of tooltip errors
+
+-----------------
+v14
+-----------------
+Buildings
+--Windmill now has the enables Production ITR from Workshop so it stays in the same place
+--Windmill Lake bonus lowered to +1 Prod/Gold (was +2)
+--Manor 
+ -gains +2 Gold/+1 Tourism to Lakes
+ -gain +1 Prod/GAP from Villages
+ -Loses 10% Investment to GAP (it was too much, one of the largest sources)
+--Cost sweeps
+ -Moved to separate file for ease of access
+ -Wonder Prod and Policy costs harmonized with More Wonders
+ -Building Prod costs smoothed (and overall increased) and Gold Maintenance adjusted
+ -Unit costs moved to sweeps and smoothed. Removed some outliers like Field Gun (Howitzer) being abnormally expensive
