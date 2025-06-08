@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" version="14">
+  <Properties>
+    <Name>(overhaul) Enlightenment Era for VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Enlightenment Era for VP</Teaser>
+    <Description>Translation of the Enlightenment Era for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 계몽　시대 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>CAYM, 디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="871da714-b2c6-49e9-8882-57489f501dba" minversion="0" maxversion="999" title="(overhaul) Enhanced Air Warfare 4VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="EA76CAAACAAA8DEDB243DC26778713C1" import="0">SQL/EEVP_Other.sql</File>
+    <File md5="6A1EA93F4690EC4A9D98FB2A9CDF1FBA" import="0">SQL/EEVP_Text.sql</File>
+    <File md5="54526EBF3ECDFFA18F6064D621D26B9D" import="0">SQL/EEVP_Wonders.sql</File>
+    <File md5="73BE4FF6A41F597BEED694E2AA048D5B" import="0">SQL/Hotel_Zoo_Swap.sql</File>
+    <File md5="82B24176C3B2EAF89B26CB952FF6058F" import="0">SQL/Observatory.sql</File>
+    <File md5="0E620EDD4A15A8C69BF120479431D28B" import="0">SQL/Windmill_Workshop_Swap.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/EEVP_Other.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Text.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Wonders.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Hotel_Zoo_Swap.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Observatory.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Windmill_Workshop_Swap.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
