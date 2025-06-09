@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_ko_KR>
+		<!--OPTIONS-->
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ALL">
+			<Text>문화: 전체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ALL_HELP">
+			<Text>아래 체크된 설정에 관계 없이 모든 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ABORIGINAL">
+			<Text>문화: 원주민</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ABORIGINAL_HELP">
+			<Text>원주민 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ANDEAN">
+			<Text>문화: 안데스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ANDEAN_HELP">
+			<Text>안데스 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BANTU">
+			<Text>문화: 반투족</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BANTU_HELP">
+			<Text>반투족 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BHARATA">
+			<Text>문화: 바라타</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_BHARATA_HELP">
+			<Text>바라타 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CENTRAL">
+			<Text>문화: 중앙</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CENTRAL_HELP">
+			<Text>중앙 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CLASSICAL">
+			<Text>문화: 고전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_CLASSICAL_HELP">
+			<Text>고전 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_COLONIAL">
+			<Text>문화: 식민지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_COLONIAL_HELP">
+			<Text>식민지 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EASTERN">
+			<Text>문화: 동부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EASTERN_HELP">
+			<Text>동부 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EAST_INDIES">
+			<Text>문화: 동인도 제도</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_EAST_INDIES_HELP">
+			<Text>동인도 제도 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_GREAT_PLAINS">
+			<Text>문화: 대평원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_GREAT_PLAINS_HELP">
+			<Text>대평원 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_HIMALAYAN">
+			<Text>문화: 히말라야</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_HIMALAYAN_HELP">
+			<Text>히말라야 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_IRANIAN">
+			<Text>문화: 이란</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_IRANIAN_HELP">
+			<Text>이란 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ISLAMIC">
+			<Text>문화: 이슬람</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ISLAMIC_HELP">
+			<Text>이슬람 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_KATUJE">
+			<Text>문화: Katuje</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_KATUJE_HELP">
+			<Text>Katuje 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MANDALA">
+			<Text>문화: 만다라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MANDALA_HELP">
+			<Text>만다라 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOAMERICAN">
+			<Text>문화: 메소아메리카</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOAMERICAN_HELP">
+			<Text>메소아메리카 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOPOTAMIC">
+			<Text>문화: 메소포타미아</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_MESOPOTAMIC_HELP">
+			<Text>메소포타미아 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_NORTHERN">
+			<Text>문화: 북부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_NORTHERN_HELP">
+			<Text>북부 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_OCEANIC">
+			<Text>문화: 대양</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_OCEANIC_HELP">
+			<Text>대양 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ORIENTAL">
+			<Text>문화: 동양</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_ORIENTAL_HELP">
+			<Text>동양 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_PACIFIC">
+			<Text>문화: 태평양</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_PACIFIC_HELP">
+			<Text>태평양 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_POLAR">
+			<Text>문화: 북극</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_POLAR_HELP">
+			<Text>북극 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SAHARAN">
+			<Text>문화: 사하라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SAHARAN_HELP">
+			<Text>사하라 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SEMITIC">
+			<Text>문화: 셈족</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SEMITIC_HELP">
+			<Text>셈족 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SOUTHERN">
+			<Text>문화: 남부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_SOUTHERN_HELP">
+			<Text>남부 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_STEPPE">
+			<Text>문화: 스텝</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_STEPPE_HELP">
+			<Text>스텝 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_TOTALITARIAN">
+			<Text>문화: 전체주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_TOTALITARIAN_HELP">
+			<Text>전체주의 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WEST_AFRICAN">
+			<Text>문화: 서아프리카</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WEST_AFRICAN_HELP">
+			<Text>서아프리카 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WESTERN">
+			<Text>문화: 서부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WESTERN_HELP">
+			<Text>서부 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WOODLANDS">
+			<Text>문화: 우드랜즈</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAME_OPTION_JFD_WOODLANDS_HELP">
+			<Text>우드랜즈 문명이 생성되도록 허용합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

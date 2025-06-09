@@ -23,6 +23,10 @@ VALUES
 ('TXT_KEY_RESOURCE_IA_SALT_LAKE', 'Salt Lake'),
 ('TXT_KEY_CIV5_RESOURCE_IA_SALT_LAKE_TEXT', 'Salt Lakes are inland lakes with no outlets, causing them to be saline. Notable examples include The Great Salt Lake in Utah, The Dead Sea in Israel and Jordan, and Lake Retba in Senegal.'); --Add more
 
+INSERT INTO Language_ko_KR (Tag, Text)
+VALUES
+('TXT_KEY_RESOURCE_IA_SALT_LAKE', '염호'),
+('TXT_KEY_CIV5_RESOURCE_IA_SALT_LAKE_TEXT', '염호는 배출구가 없는 내륙 호수로 염분이 있습니다. 예시로는 유타의 그레이트솔트호, 이스라엘과 요르단의 사해, 세네갈의 레트바 호수가 있습니다.'); --Add more
 
 --Resource Yield Changes
 INSERT INTO Resource_YieldChanges
@@ -71,3 +75,10 @@ VALUES	('TXT_KEY_IMPROVEMENT_IA_SALT_LAKE', 'Salt Gatherer'),
 		('TXT_KEY_IMPROVEMENT_IA_SALT_LAKE_TEXT', 'Salt Gatherers gather salt from saline lakes. Historically, salt has been valuable as it is not only an essential nutrient but it also adds flavor and can be used to preserve food. Salt is often mined, but it can also be gathered from saline lakes. After it was gathered, use as a preservative was common, and as refrigeration was not available, this was often the only way to keep many food items from deteriorating.'),
 		('TXT_KEY_BUILD_SALT_LAKE', 'Construct a [LINK=IMPROVEMENT_IA_SALT_LAKE]Salt Gatherer[\LINK]'),
 		('TXT_KEY_BUILD_SALT_LAKE_REC', 'Improves [ICON_RES_IA_SALT_LAKE] Lake Salt.');
+		
+INSERT INTO Language_ko_KR (Tag, Text)
+VALUES	('TXT_KEY_IMPROVEMENT_IA_SALT_LAKE', '염전'),
+		('TXT_KEY_IMPROVEMENT_IA_SALT_LAKE_HELP', '[ICON_RES_IA_SALT_LAKE] 염호를 개선합니다.'),
+		('TXT_KEY_IMPROVEMENT_IA_SALT_LAKE_TEXT', '염전은 염호에서 소금을 채취합니다. 역사적으로 소금은 필수 영양소일 뿐만 아니라 풍미를 더하고 식품을 보존하는 데에도 사용되어 귀중한 가치를 지녔습니다. 소금은 채굴되는 경우가 많지만, 염호에서도 채취할 수 있습니다. 채취한 후에는 방부제로 사용하는 것이 일반적이었고, 냉장 보관이 어려웠기 때문에 많은 식품의 변질을 막는 유일한 방법이었습니다.'),
+		('TXT_KEY_BUILD_SALT_LAKE', '[LINK=IMPROVEMENT_IA_SALT_LAKE]염전[\LINK] 건설'),
+		('TXT_KEY_BUILD_SALT_LAKE_REC', '[ICON_RES_IA_SALT_LAKE] 염호를 개선합니다.');

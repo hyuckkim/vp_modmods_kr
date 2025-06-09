@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="faebb955-c595-4006-8561-18a060cdedc7" version="25">
+  <Properties>
+    <Name>Gedemon's YnAEMP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Gedemon's YnAEMP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Gedemon의 YnA</Teaser>
+    <Description>Translation of the Gedemon's YnAEMP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Gedemon의 YnAEMP 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="36e88483-48fe-4545-b85f-bafc50dde315" minversion="0" maxversion="999" title="Gedemon's YnAEMP" />
+  </Dependencies>
+  <References>
+    <Mod id="be2d13ee-d18d-410e-8f04-7cd19cd99a98" minversion="0" maxversion="999" title="More Luxuries" />
+    <Mod id="4d02cc9f-0805-4988-ae84-1dc28d49e1f0" minversion="0" maxversion="999" title="City States Expansion (G&amp;amp;amp;K + BNW)" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="39E3A4CDDA952C611362E300733D294B" import="0">SQL/YnAEMP_GameText.xml</File>
+    <File md5="DB232D7D20696D977AB0A6AE8AA2C1C5" import="0">SQL/YnAEMP_GameText_Interface.xml</File>
+    <File md5="A6D3857B296AF1952557DCAE18E835EC" import="0">XML/MinorCivAdded_.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/YnAEMP_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/YnAEMP_GameText_Interface.xml</UpdateDatabase>
+      <UpdateDatabase>XML/MinorCivAdded_.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

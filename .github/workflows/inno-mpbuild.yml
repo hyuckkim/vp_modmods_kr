@@ -1,4 +1,4 @@
-name: VP INT MP Ex build to .exe
+name: VP INT MP+
 on: push
 jobs:
   build:
@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: iscc "vp_modmods_kr mpinstaller file/VPINTModpack.iss" /O"out_githubaction" /F"VP INT Modpack Ex"
+        run: iscc "vp_modmods_kr mpinstaller file/VPINTModpack.iss" /O"out_githubaction" /F"VP INT Modpack+"
       - uses: actions/upload-artifact@v4
         with:
-          name: "VP INT Modpack Ex"
-          path: "out_githubaction/VP INT Modpack Ex.exe"
+          name: "VP INT Modpack+"
+          path: "out_githubaction/VP INT Modpack+.exe"

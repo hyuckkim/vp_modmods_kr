@@ -1,4 +1,4 @@
-name: VP INT Ex build to .exe
+name: VP INT+
 on: push
 jobs:
   build:
@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: iscc "vp_modmods_kr installer file/CPPSetupData.iss" /O"out_githubaction" /F"Vox Populi INT Ex"
+        run: iscc "vp_modmods_kr installer file/CPPSetupData.iss" /O"out_githubaction" /F"Vox Populi INT+"
       - uses: actions/upload-artifact@v4
         with:
-          name: "Vox Populi INT Ex"
-          path: "out_githubaction/Vox Populi INT Ex.exe"
+          name: "Vox Populi INT+"
+          path: "out_githubaction/Vox Populi INT+.exe"

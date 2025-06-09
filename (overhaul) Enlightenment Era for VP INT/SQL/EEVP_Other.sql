@@ -2,6 +2,7 @@
 -- Enlightenment Era (Vox Populi)
 -- UNITS
 -- 2018-02-01 Reworked by Infixo from EE & VP-EE mods
+-- 2023-11-06 Updated by CAYM to be compatible with VP 4.2.7
 ----------------------------------------------------
 
 ----------------------------------------------------
@@ -26,17 +27,68 @@ VALUES ('LEAGUE_NAME_ASSEMBLY', 'TXT_KEY_LEAGUE_WORLD_CONGRESS_4');
 UPDATE LeagueSpecialSessions SET EraTrigger = 'ERA_ENLIGHTENMENT' WHERE Type = 'LEAGUE_SPECIAL_SESSION_WELCOME_CITY_STATES';
 UPDATE LeagueSpecialSessions SET EraTrigger = 'ERA_INDUSTRIAL' WHERE Type = 'LEAGUE_SPECIAL_SESSION_LEADERSHIP_COUNCIL';
 UPDATE LeagueSpecialSessions SET TurnsBetweenSessions = 15 WHERE EraTrigger = 'ERA_INDUSTRIAL';
---UPDATE LeagueSpecialSessions SET TurnsBetweenSessions = 10, CivDelegates = 3 WHERE EraTrigger = 'ERA_MODERN';
+
 
 ----------------------------------------------------
--- Text (en_US)
+-- Other RER tweaks
 ----------------------------------------------------
+-- Landsknecht
 
-INSERT INTO Language_en_US (Tag, Text) VALUES
-('TXT_KEY_LEAGUE_WORLD_CONGRESS_4', '{@1_Ordinal} {@2_CityName} Convention'),
-('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY', 'World Congress Continues to Expand'),
-('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY_HELP',
-	'The rapid changes within nations around the world result in equally rapid changes to the international relations between them, prompting the World Congress to adapt to meet new challenges.  A special session is called to choose the next host to lead the Congress forward.');
+--UPDATE ArtDefine_StrategicView
+--SET Asset = 'sv_Landsknecht.dds'
+--WHERE StrategicViewType = 'ART_DEF_UNIT_U_GERMAN_LANDSKNECHT';
+
+--UPDATE Units
+--SET UnitFlagIconOffset = 0, UnitFlagAtlas = 'UNIT_FLAG_LANDSKNECHT_ATLAS'
+--WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
+
+-- Tercio
+UPDATE ArtDefine_UnitMemberInfos
+SET Model = 'TER_PIKE_piquero.fxsxml'
+WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO';
+
+-- Pikeman
+UPDATE ArtDefine_UnitMemberInfos
+SET Model = 'RER_PIKE.fxsxml'
+WHERE Type = 'ART_DEF_UNIT_MEMBER_PIKEMAN';
+
+-- New icon for Cuirassier
+UPDATE Units
+SET PortraitIndex = 1, IconAtlas = 'RER_UNITS_ATLAS'
+WHERE Type = 'UNIT_CUIRASSIER';
+
+----------------------------------------------------
+-- ArtDef
+----------------------------------------------------
+UPDATE Units SET PortraitIndex = '0', IconAtlas = 'RER_BOMBARD_ATLAS', UnitFlagAtlas = 'RER_BOMBARD_FLAG_ATLAS', UnitFlagIconOffset = 0 WHERE Type = 'UNIT_CANNON';
+UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, Model = 'RER_bombard.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_CANNON';
+UPDATE ArtDefine_StrategicView SET Asset = 'sv_Bombard.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_CANNON';
+
+-----------------------------
+-- HOWITZER PORTRAIT CHANGED
+------------------------------
+INSERT INTO IconTextureAtlases 
+	    (Atlas, 	               		IconSize, 	           Filename, 			IconsPerRow, 	IconsPerColumn)
+VALUES		
+            ('UNIT_HOWITZER_ATLAS', 			256, 		'Howitzer_256.dds',		1, 				1),
+	    ('UNIT_HOWITZER_ATLAS', 			128, 		'Howitzer_128.dds',		1, 				1),
+	    ('UNIT_HOWITZER_ATLAS', 			80, 		'Howitzer_080.dds',		1, 				1),
+	    ('UNIT_HOWITZER_ATLAS', 			64, 		'Howitzer_064.dds',		1, 				1),
+	    ('UNIT_HOWITZER_ATLAS', 			45, 		'Howitzer_045.dds',		1, 				1);
+
+UPDATE Units SET PortraitIndex = '0', IconAtlas = 'UNIT_HOWITZER_ATLAS' WHERE Type = 'UNIT_FIELD_GUN';
+
+---------------------------
+-- Grocer with Era-appropriate icon and name
+---------------------------
+UPDATE Language_ko_KR
+SET Text = '약제사'
+WHERE Tag = 'TXT_KEY_BUILDING_GROCER';
+
+UPDATE Buildings SET 
+PortraitIndex = 8, 
+IconAtlas = 'ENLIGHTENMENT_BUILDING_ATLAS'
+WHERE Type = 'BUILDING_GROCER';
 
 ----------------------------------------------------
 -- ICONS
@@ -54,17 +106,17 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 ('ENLIGHTENMENT_WONDER_ATLAS',80,'Enlightenment_Wonders_80.dds',5,2),
 ('ENLIGHTENMENT_WONDER_ATLAS',64,'Enlightenment_Wonders_64.dds',5,2),
 ('ENLIGHTENMENT_WONDER_ATLAS',45,'Enlightenment_Wonders_45.dds',5,2),
-('ENLIGHTENMENT_TECH_ATLAS',256,'Enlightenment_Techs_256.dds',4,2),
-('ENLIGHTENMENT_TECH_ATLAS',214,'Enlightenment_Techs_214.dds',4,2),
-('ENLIGHTENMENT_TECH_ATLAS',128,'Enlightenment_Techs_128.dds',4,2),
-('ENLIGHTENMENT_TECH_ATLAS',80,'Enlightenment_Techs_80.dds',4,2),
-('ENLIGHTENMENT_TECH_ATLAS',64,'Enlightenment_Techs_64.dds',4,2),
-('ENLIGHTENMENT_TECH_ATLAS',45,'Enlightenment_Techs_45.dds',4,2),
-('ENLIGHTENMENT_BUILDING_ATLAS',256,'Enlightenment_Buildings_256.dds',4,2),
-('ENLIGHTENMENT_BUILDING_ATLAS',128,'Enlightenment_Buildings_128.dds',4,2),
-('ENLIGHTENMENT_BUILDING_ATLAS',80,'Enlightenment_Buildings_80.dds',4,2),
-('ENLIGHTENMENT_BUILDING_ATLAS',64,'Enlightenment_Buildings_64.dds',4,2),
-('ENLIGHTENMENT_BUILDING_ATLAS',45,'Enlightenment_Buildings_45.dds',4,2),
+('ENLIGHTENMENT_TECH_ATLAS',256,'Enlightenment_Techs_256.dds',4,3),
+('ENLIGHTENMENT_TECH_ATLAS',214,'Enlightenment_Techs_214.dds',4,3),
+('ENLIGHTENMENT_TECH_ATLAS',128,'Enlightenment_Techs_128.dds',4,3),
+('ENLIGHTENMENT_TECH_ATLAS',80,'Enlightenment_Techs_80.dds',4,3),
+('ENLIGHTENMENT_TECH_ATLAS',64,'Enlightenment_Techs_64.dds',4,3),
+('ENLIGHTENMENT_TECH_ATLAS',45,'Enlightenment_Techs_45.dds',4,3),
+('ENLIGHTENMENT_BUILDING_ATLAS',256,'Enlightenment_Buildings_256.dds',4,3),
+('ENLIGHTENMENT_BUILDING_ATLAS',128,'Enlightenment_Buildings_128.dds',4,3),
+('ENLIGHTENMENT_BUILDING_ATLAS',80,'Enlightenment_Buildings_80.dds',4,3),
+('ENLIGHTENMENT_BUILDING_ATLAS',64,'Enlightenment_Buildings_64.dds',4,3),
+('ENLIGHTENMENT_BUILDING_ATLAS',45,'Enlightenment_Buildings_45.dds',4,3),
 ('ENLIGHTENMENT_UNIT_ATLAS',256,'Enlightenment_Units_256.dds',4,3),
 ('ENLIGHTENMENT_UNIT_ATLAS',128,'Enlightenment_Units_128.dds',4,3),
 ('ENLIGHTENMENT_UNIT_ATLAS',80,'Enlightenment_Units_80.dds',4,3),
@@ -76,18 +128,28 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 ('EECBO_ICON_ATLAS',128,'Mausoleum128.dds',1,1),
 ('EECBO_ICON_ATLAS',64,'Mausoleum64.dds',1,1),
 ('EECBO_ICON_ATLAS',45,'Mausoleum45.dds',1,1),
-('ENLIGHTENMENT_VP_BUILDING_ATLAS',256,'EnlightenmentVP_Buildings_256.dds',2,2),
-('ENLIGHTENMENT_VP_BUILDING_ATLAS',128,'EnlightenmentVP_Buildings_128.dds',2,2),
-('ENLIGHTENMENT_VP_BUILDING_ATLAS',80,'EnlightenmentVP_Buildings_80.dds',2,2),
-('ENLIGHTENMENT_VP_BUILDING_ATLAS',64,'EnlightenmentVP_Buildings_64.dds',2,2),
-('ENLIGHTENMENT_VP_BUILDING_ATLAS',45,'EnlightenmentVP_Buildings_45.dds',2,2);
-
-INSERT INTO IconTextureAtlases	(Atlas, IconSize, Filename, IconsPerRow, IconsPerColumn) VALUES
-	('vpee_promoAtlas', 256, 'VPEE_promo_icons_256.dds', '8', '1'),
-	('vpee_promoAtlas', 064, 'VPEE_promo_icons_064.dds', '8', '1'),
-	('vpee_promoAtlas', 045, 'VPEE_promo_icons_045.dds', '8', '1'),
-	('vpee_promoAtlas', 032, 'VPEE_promo_icons_032.dds', '8', '1'),
-	('vpee_promoAtlas', 016, 'VPEE_promo_icons_016.dds', '8', '1');
+('vpee_promoAtlas', 256, 'VPEE_promo_icons_256.dds', '8', '1'),
+('vpee_promoAtlas', 064, 'VPEE_promo_icons_064.dds', '8', '1'),
+('vpee_promoAtlas', 045, 'VPEE_promo_icons_045.dds', '8', '1'),
+('vpee_promoAtlas', 032, 'VPEE_promo_icons_032.dds', '8', '1'),
+('vpee_promoAtlas', 016, 'VPEE_promo_icons_016.dds', '8', '1'),
+('RER_UNITS_ATLAS', 256, 'RER_UNITS_atlas_256.dds', 2, 1),
+('RER_UNITS_ATLAS', 128, 'RER_UNITS_atlas_128.dds', 2, 1),
+('RER_UNITS_ATLAS', 80, 'RER_UNITS_atlas_80.dds',  2, 1),
+('RER_UNITS_ATLAS', 64, 'RER_UNITS_atlas_64.dds',  2, 1),
+('RER_UNITS_ATLAS', 45, 'RER_UNITS_atlas_45.dds',  2, 1),
+('vpee_promoAtlas', 256, 'VPEE_promo_icons_256.dds', '8', '1'),
+('vpee_promoAtlas', 64, 'VPEE_promo_icons_064.dds', '8', '1'),
+('vpee_promoAtlas', 45, 'VPEE_promo_icons_045.dds', '8', '1'),
+('vpee_promoAtlas', 32, 'VPEE_promo_icons_032.dds', '8', '1'),
+('vpee_promoAtlas', 16, 'VPEE_promo_icons_016.dds', '8', '1'),
+('UNIT_FLAG_LANDSKNECHT_ATLAS', 32, 'LandsknechtFlag.dds', 1, 1),
+('RER_BOMBARD_ATLAS', 256, 'Bombard_256.dds', 1, 1),
+('RER_BOMBARD_ATLAS', 128, 'Bombard_128.dds', 1, 1),
+('RER_BOMBARD_ATLAS', 80, 'Bombard_080.dds',  1, 1),
+('RER_BOMBARD_ATLAS', 64, 'Bombard_064.dds',  1, 1),
+('RER_BOMBARD_ATLAS', 45, 'Bombard_045.dds',  1, 1),
+('RER_BOMBARD_FLAG_ATLAS', 32, 'BombardFlag.dds',  1, 1);
 
 ----------------------------------------------------
 -- SOUNDS
