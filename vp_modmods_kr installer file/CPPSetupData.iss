@@ -3,7 +3,7 @@
 
 #define MyAppName "Vox Populi INT+"
 #define MyAppVersion "4.22"
-#define MyAppPublisher "DCinside Civilization Gallery"
+#define MyAppPublisher "디시인사이드 문명 갤러리(DCinside Civilization Gallery)"
 #define MyAppURL "https://github.com/hyuckkim/vp_modmods_kr"
 
 [Setup]
@@ -138,6 +138,9 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP INT"
 
 [Code]
 var
