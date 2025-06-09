@@ -1,8 +1,8 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "Vox Populi INT Ex"
-#define MyAppVersion "4.21.1"
+#define MyAppName "Vox Populi INT+"
+#define MyAppVersion "4.22"
 #define MyAppPublisher "DCinside Civilization Gallery"
 #define MyAppURL "https://github.com/hyuckkim/vp_modmods_kr"
 
@@ -43,46 +43,59 @@ UsedUserAreasWarning=no
 Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Files]
-Source: "..\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(over) More Unique Components for VP (v 88)\*"; DestDir: "{app}\MODS\(over) More Unique Components for VP (v 88)"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
-Source: "..\(overL) More Unique Components for VP (v 88) INT\*"; DestDir: "{app}\MODS\(overL) More Unique Components for VP (v 88) INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
+Source: "..\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(over) More Unique Components for VP (v 88)\*"; DestDir: "{app}\MODS\(over) More Unique Components for VP (v 88)"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(overL) More Unique Components for VP (v 88) INT\*"; DestDir: "{app}\MODS\(overL) More Unique Components for VP (v 88) INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
 
-Source: "..\(ui) Trade Opportunities for VP (v 23)\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\(ui) Wonder Planner For VP (v 14)\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\(ui) Wonder Planner For VP INT\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\Upgrade All Units Button In Military Overview (v 2)\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
-Source: "..\Upgrade All Units Button In Military Overview INT\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC
+Source: "..\(ui) Trade Opportunities for VP (v 23)\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(ui) Wonder Planner For VP (v 14)\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\(ui) Wonder Planner For VP INT\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\Upgrade All Units Button In Military Overview (v 2)\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
+Source: "..\Upgrade All Units Button In Military Overview INT\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
 
-Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCEX
-Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCNVC VP34UCEXNVC
-Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC
+Source: "..\(overhaul) Enhanced Air Warfare 4VP (v 1.9)\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\Gedemon's YnAEMP\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\Gedemon's YnAEMP INT\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
+
+Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCEX VP34UCMAX
+Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCNVC VP34UCEXNVC VP34UCMAXNVC
+Source: "..\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC"; Types: VP34UC; Flags: exclusive disablenouninstallwarning 
 Name: "VP34UCNVC"; Description: "[기본] Vox Populi + 34UC (투표 문명색 제거)"; Types: VP34UCNVC; Flags: exclusive disablenouninstallwarning
-Name: "VP34UCEX"; Description: "[확장] Vox Populi + 34UC + 편의성 추가"; Types: VP34UC; Flags: exclusive disablenouninstallwarning
-Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)"; Types: VP34UC; Flags: exclusive disablenouninstallwarning 
+Name: "VP34UCEX"; Description: "[확장] Vox Populi + 34UC + 편의성 추가"; Types: VP34UCEX; Flags: exclusive disablenouninstallwarning
+Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)"; Types: VP34UCEXNVC; Flags: exclusive disablenouninstallwarning 
+Name: "VP34UCMAX"; Description: "[전체] Vox Populi + 34UC + 편의성 추가"; Types: VP34UCMAX; Flags: exclusive disablenouninstallwarning
+Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)"; Types: VP34UCMAXNVC; Flags: exclusive disablenouninstallwarning 
 
 [Types]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";
-Name: "VP34UCNVC"; Description: "[기본] Vox Populi + 34UC (투표 문명색 제거)";
+Name: "VP34UCNVC"; Description: "[기본] Vox Populi (투표 문명색 제거) + 34UC ";
 Name: "VP34UCEX"; Description: "[확장] Vox Populi + 34UC + 편의성 추가";
-Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)";
+Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi (투표 문명색 제거) + 34UC + 편의성 추가 ";
+Name: "VP34UCMAX"; Description: "[전체] Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
+Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi  (투표 문명색 제거) + 34UC + 편의성 추가 + 컨텐츠 추가";
 
 [InstallDelete]
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\cache"
@@ -121,8 +134,12 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Upgrade All Units Button In Military Overview (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Upgrade All Units Button In Military Overview INT"
 
-[Code]
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
 
+[Code]
 var
   CIVDirPage: TInputDirWizardPage;
 
