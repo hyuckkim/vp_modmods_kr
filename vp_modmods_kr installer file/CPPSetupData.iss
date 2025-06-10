@@ -77,7 +77,7 @@ Source: "..\Gedemon's YnAEMP INT\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP INT";
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCEX VP34UCMAX
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCNVC VP34UCEXNVC VP34UCMAXNVC
-Source: "..\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCMAX VP34UCMAXNVC
+Source: "..\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
 Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
@@ -139,8 +139,6 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi (v 3)"
-Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP"
-Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP INT"
 
 [Code]
 var
