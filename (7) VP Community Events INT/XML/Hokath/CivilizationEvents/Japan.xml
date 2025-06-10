@@ -1,505 +1,101 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_JAPAN_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_JAPAN</RequiredCiv>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 견습 과정</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1">
+			<Text>황제의 아들이 {3_PlayerName}의 견습생이 됩니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 타호토</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClassGlobal>BUILDINGCLASS_JAPAN_UE_DUMMY</EventBuildingClassGlobal>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 종교 집단을 위해 많은 훌륭한 파고다를 세웁니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClassGlobal>BUILDINGCLASS_JAPAN_UE_DUMMY_2</EventBuildingClassGlobal>
-			<WLTKDTurns>10</WLTKDTurns>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OPERA_HOUSE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<CultureMedianModifierGlobal>10</CultureMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 궁정 음악가들</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COAL_PLANT</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 일본 궁정에서 음악가들의 사회적 지위와 기대를 높입니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_JAPAN_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<UnitClassRequired>UNITCLASS_BATTLESHIP</UnitClassRequired>
-			<EventPromotion>PROMOTION_BOMBARDMENT_4</EventPromotion>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 엘리트 극장</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 낮은 계층의 극장을 억제하고 역사적이고 세련된 스타일을 선호합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 셰일 오일</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 셰일에서 [ICON_RES_OIL] 오일을 추출하기 시작합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 야마토 설계</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6">
+			<Text>{3_PlayerName}의 야마토 클래스 전함이 공개됩니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_JAPAN_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION">
+			<Text>떠오르는 태양의 땅</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_JAPAN_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_JAPAN_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP">
+			<Text>쇼군 도쿠가와님, 당신의 가족에게 큰 영광을 안겨 주십시오. 국화의 왕좌에서 긴급히 당신을 요청합니다.[NEWLINE]황제 만세!</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_JAPAN_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_JAPAN_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_1">
+			<Text>원하는 위대한 인물을 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_UE_PAGODA</Type>
-			<DefaultBuilding>BUILDING_UE_PAGODA</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_PAGODA</Description>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}의 문화적 및 종교적 관습을 촉진합니다. 타호토 건물이 잠금 해제됩니다. 파고다는 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_JAPAN_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_JAPAN_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_JAPAN_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_JAPAN_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_3">
+			<Text>궁정 음악가들이 모든 성에 거주하며, +2 [ICON_CULTURE] 문화를 생산하고, [ICON_GREAT_MUSICIAN] 위대한 음악가의 출생률을 20% 증가시키며, [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에서 20% 증가합니다.[NEWLINE]하지만, 유지 비용으로 -3 [ICON_GOLD] 금이 필요합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_JAPAN_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_JAPAN_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_4">
+			<Text>엘리트 연극 활동을 후원합니다. 10턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어갑니다. 이 상태와 이후의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_CULTURE] 문화 생산량을 15% 증가시킵니다. 그러나, 드라마에 대한 접근성 감소로 인해 [ICON_CULTURE] 무료 임계치가 10% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_UE_PAGODA</Type>
-			<BuildingClass>BUILDINGCLASS_UE_PAGODA</BuildingClass>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<Description>TXT_KEY_BUILDING_UE_PAGODA</Description>
-			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_PAGODA_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_PAGODA_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_PAGODA_HELP</Help>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_ART_ARTIFACT</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<IconAtlas>BW_ATLAS_2</IconAtlas>
-			<PortraitIndex>16</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<EventChoiceRequiredActive>EVENT_JAPAN_UE_CHOICE_2</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>368</MutuallyExclusiveGroup>
-			<ReligiousUnrestModifier>-10</ReligiousUnrestModifier>
-			<CultureMedianModifier>-10</CultureMedianModifier>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_5">
+			<Text>석탄 정제소에서 8 [ICON_RES_OIL] 셰일 오일을 추출합니다. 그러나 이 과정은 비싸고 오염을 일으킵니다: 석탄 정제소는 추가로 -3 [ICON_GOLD] 금과 -3 [ICON_FOOD] 식량을 소모합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>4</Flavor>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_6">
+			<Text>전함에 야마토 지정 무기를 장착합니다. 모든 적격 유닛이 브로드사이드 프로모션을 획득합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_1">
+			<Text>*황제께서는 그의 새 아들이 당신의 견습생으로 공부하기를 원합니다. 이것은 큰 영광입니다*</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_2">
+			<Text>*황제께서는 최근 신비로운 종교적 관습에 집착하고 있으며, 이를 널리 퍼지게 하라고 명령하셨습니다*[NEWLINE]천하의 일은, 황제께서 명령한 대로 쇼군이 이를 집행합니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_YieldChangesPerReligion>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_3">
+			<Text>*황제의 음악가들이 그를 불쾌하게 했으며, 당신에게 그들과 그 가족들을 처형하라고 명령하셨습니다*[NEWLINE]이제부터 일본에서 더 나은 음악가들이 활약할 수 있도록 하겠습니다! 국화의 궁정에서부터 가장 천한 다이묘의 성까지.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_4">
+			<Text>*황제께서는 최근 노가쿠의 질 저하에 대해 걱정하고 있습니다. 쇼군께서는 무엇을 할 것인가요?*[NEWLINE]우리는 노의 의례적 성격을 강조하고, 이러한 농민 이야기꾼들을 우리의 앞에서 몰아낼 것입니다!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_5">
+			<Text>*다른 제국들이 일본을 조롱하고 있습니다. 황제께서 이를 알고 계십니다. 쇼군께서는 우리의 명예를 회복하기 위해 무엇을 할 것인가요?*[NEWLINE]황제께서는 안심하셔야 합니다. 우리는 과거에 제약이 있었지만, 독창적인 발상으로 곧 일본은 가장 강력한 적들에 맞설 자원을 갖추게 될 것입니다!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_6">
+			<Text>*황제께서 혼란스러워하십니다. 전쟁이 시작되지 않았습니까? 왜 적들의 머리가 궁전의 벽에 장식되어 있지 않습니까?[NEWLINE]우리는 황제 폐하의 조급함에 공감하며, 내일 새 전함 공개 행사에 황제 폐하를 초대합니다. 일본인들의 독보적인 기술로, 우리는 역사상 가장 거대한 전함을 만들었습니다!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY">
+			<Text>궁정 음악가들</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_PAGODA</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_HELP">
+			<Text>+20% [ICON_GREAT_MUSICIAN] 위대한 음악가 비율. 국왕 경축일이 +20% [ICON_PEACE] 신앙을 생성합니다.</Text>
 		</Row>
-	</Building_YieldChangesPerReligion>
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_JAPAN_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>20</Yield>
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2">
+			<Text>엘리트 극장 후원</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_JAPAN_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>15</Yield>
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2_HELP">
+			<Text>국왕 경축일이 +15% [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Building_WLTKDYieldMod>
-
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_JAPAN_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<Modifier>20</Modifier>
+		<Row Tag="TXT_KEY_BUILDING_UE_PAGODA">
+			<Text>타호토</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PAGODA</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_PAGODA_STRATEGY">
+			<Text>일본 고유의 이벤트 선택으로 구매할 수 있습니다. 파고다와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COAL_PLANT</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COAL_PLANT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-3</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>8</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>13</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>14</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_JAPAN_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 견습 과정</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_1">
-      <Text>황제의 아들이 {3_PlayerName}의 견습생이 됩니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 타호토</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 종교 집단을 위해 많은 훌륭한 파고다를 세웁니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 궁정 음악가들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 일본 궁정에서 음악가들의 사회적 지위와 기대를 높입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 엘리트 극장</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 낮은 계층의 극장을 억제하고 역사적이고 세련된 스타일을 선호합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 셰일 오일</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 셰일에서 [ICON_RES_OIL] 오일을 추출하기 시작합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 야마토 설계</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_JAPAN_UE_CHOICE_6">
-      <Text>{3_PlayerName}의 야마토 클래스 전함이 공개됩니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION">
-      <Text>떠오르는 태양의 땅</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP">
-      <Text>쇼군 도쿠가와님, 당신의 가족에게 큰 영광을 안겨 주십시오. 국화의 왕좌에서 긴급히 당신을 요청합니다.[NEWLINE]황제 만세!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_1">
-      <Text>원하는 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}의 문화적 및 종교적 관습을 촉진합니다. 타호토 건물이 잠금 해제됩니다. 파고다는 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_3">
-      <Text>궁정 음악가들이 모든 성에 거주하며, +2 [ICON_CULTURE] 문화를 생산하고, [ICON_GREAT_MUSICIAN] 위대한 음악가의 출생률을 20% 증가시키며, [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에서 20% 증가합니다.[NEWLINE]하지만, 유지 비용으로 -3 [ICON_GOLD] 금이 필요합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_4">
-      <Text>엘리트 연극 활동을 후원합니다. 10턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어갑니다. 이 상태와 이후의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_CULTURE] 문화 생산량을 15% 증가시킵니다. 그러나, 드라마에 대한 접근성 감소로 인해 [ICON_CULTURE] 무료 임계치가 10% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_5">
-      <Text>석탄 정제소에서 8 [ICON_RES_OIL] 셰일 오일을 추출합니다. 그러나 이 과정은 비싸고 오염을 일으킵니다: 석탄 정제소는 추가로 -3 [ICON_GOLD] 금과 -3 [ICON_FOOD] 식량을 소모합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_HELP_CHOICE_6">
-      <Text>전함에 야마토 지정 무기를 장착합니다. 모든 적격 유닛이 브로드사이드 프로모션을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_1">
-      <Text>*황제께서는 그의 새 아들이 당신의 견습생으로 공부하기를 원합니다. 이것은 큰 영광입니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_2">
-      <Text>*황제께서는 최근 신비로운 종교적 관습에 집착하고 있으며, 이를 널리 퍼지게 하라고 명령하셨습니다*[NEWLINE]천하의 일은, 황제께서 명령한 대로 쇼군이 이를 집행합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_3">
-      <Text>*황제의 음악가들이 그를 불쾌하게 했으며, 당신에게 그들과 그 가족들을 처형하라고 명령하셨습니다*[NEWLINE]이제부터 일본에서 더 나은 음악가들이 활약할 수 있도록 하겠습니다! 국화의 궁정에서부터 가장 천한 다이묘의 성까지.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_4">
-      <Text>*황제께서는 최근 노가쿠의 질 저하에 대해 걱정하고 있습니다. 쇼군께서는 무엇을 할 것인가요?*[NEWLINE]우리는 노의 의례적 성격을 강조하고, 이러한 농민 이야기꾼들을 우리의 앞에서 몰아낼 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_5">
-      <Text>*다른 제국들이 일본을 조롱하고 있습니다. 황제께서 이를 알고 계십니다. 쇼군께서는 우리의 명예를 회복하기 위해 무엇을 할 것인가요?*[NEWLINE]황제께서는 안심하셔야 합니다. 우리는 과거에 제약이 있었지만, 독창적인 발상으로 곧 일본은 가장 강력한 적들에 맞설 자원을 갖추게 될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_JAPAN_UE_DESCRIPTION_CHOICE_6">
-      <Text>*황제께서 혼란스러워하십니다. 전쟁이 시작되지 않았습니까? 왜 적들의 머리가 궁전의 벽에 장식되어 있지 않습니까?[NEWLINE]우리는 황제 폐하의 조급함에 공감하며, 내일 새 전함 공개 행사에 황제 폐하를 초대합니다. 일본인들의 독보적인 기술로, 우리는 역사상 가장 거대한 전함을 만들었습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY">
-      <Text>궁정 음악가들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_HELP">
-      <Text>+20% [ICON_GREAT_MUSICIAN] 위대한 음악가 비율. 국왕 경축일이 +20% [ICON_PEACE] 신앙을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2">
-      <Text>엘리트 극장 후원</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_JAPAN_UE_DUMMY_2_HELP">
-      <Text>국왕 경축일이 +15% [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_PAGODA">
-      <Text>타호토</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_PAGODA_STRATEGY">
-      <Text>일본 고유의 이벤트 선택으로 구매할 수 있습니다. 파고다와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,450 +1,89 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_BRAZIL_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_BRAZIL</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 새로운 대통령</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1">
+			<Text>{3_PlayerName}이(가) 상원의 새로운 대통령을 임명합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 정글 무역</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_EDUCATION</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<EventBuildingClassGlobal>BUILDINGCLASS_BRAZIL_UE_DUMMY</EventBuildingClassGlobal>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2">
+			<Text>{3_PlayerName}이(가) 쿠이쿠로 민족과 무역을 시작합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_BANKING</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<YieldBonusAllCities>true</YieldBonusAllCities>
-			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 교육 개혁</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_FLIGHT</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<ObsoleteEra>ERA_FUTURE</ObsoleteEra>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3">
+			<Text>{3_PlayerName}이(가) 교육에 전례 없는 중요성을 부여합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BRAZIL_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_PLASTIC</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 골드 러시</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4">
+			<Text>{3_PlayerName}이(가) 최근의 골드 러시로 인해 이민 규제를 완화합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 프라시냐</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5">
+			<Text>{3_PlayerName}이(가) 프라시냐 군대를 조직합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 바이오디젤 산업</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6">
+			<Text>{3_PlayerName}이(가) 에너지 위기에 대응하여 바이오연료 이니셔티브를 추진합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_BRAZIL_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION">
+			<Text>내일의 사람들</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_BRAZIL_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_BRAZIL_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP">
+			<Text>황제 폐하, 소규모 회의가 당신의 최신 제안을 듣기 위해 모였습니다. 당신의 발표를 둘러싸고 많은 대화와 흥분이 있습니다. 개인적으로 저는 사랑받는 통치자를 섬기게 되어 매우 영광입니다.[NEWLINE]언제나 그랬듯이, 우리는 우리 나라의 첫 번째이자 가장 사랑받는 자식에게서 위대한 일들을 기대합니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_BRAZIL_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_BRAZIL_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_BRAZIL_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_BRAZIL_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2">
+			<Text>정글 부족과 무역을 합니다. 정글은 +1 [ICON_FOOD] 식량과 +1 [ICON_GOLD] 금을 제공합니다. 하지만 목재 공장은 정글 보너스를 제거합니다. 전통적인 코코아, 설탕, 바나나, 향신료 재배 방법을 배우고, 각 자원이 +2 [ICON_CULTURE] 문화를 제공합니다.</Text>
 		</Row>
-	</Building_WLTKDYieldMod>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
-			<UnitType>UNIT_BRAZILIAN_PRACINHA</UnitType>
-			<Quantity>5</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3">
+			<Text>엘리트와 성직자에 반대하여 {1_YieldCost}를 사용하여 [ICON_RESEARCH] 문맹률 임계치를 5% 낮춥니다. [COLOR_POSITIVE_TEXT]왕의 날[ENDCOLOR] 동안 도시는 +10% [ICON_PRODUCTION] 생산을 증가시킵니다.</Text>
 		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<Quantity>3</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4">
+			<Text>2개의 [ICON_RES_GOLD] 금을 받습니다. 이민자들의 유입으로 인구가 {2_InstantYield} 증가하지만, 모든 도시에 [ICON_GOLD] 빈곤 임계치가 5% 증가합니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>3</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5">
+			<Text>프라시냐 5명이 [ICON_CAPITAL] 수도에서 모집됩니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 사용하여 플랜테이션이 바이오연료를 생산하기 시작합니다 (3개의 [ICON_RES_OIL] 석유를 획득). 매 턴 +2 [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학 및 [ICON_GOLDEN_AGE] 황금기 점수를 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1">
+			<Text>감사합니다, 대통령님. 후임자에 대한 결정을 내렸습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2">
+			<Text>*많은 원주민들이 제국으로부터 분리되어 정글 깊숙이 남아 있습니다*[NEWLINE]우리가 끝없는 정글로 확장하고 그곳의 놀라운 열매를 경작하려 할 때, 우리는 많은 사람들을 잃습니다. 하지만 이미 이를 할 수 있는 사람들이 존재하며, 그들은 우리에게 가르쳐 줄 수 있습니다. 우리가 요청하기만 하면 됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3">
+			<Text>*교육은 부유하고 강력한 자들을 위한 것이며, 사회적 이동성과 정의를 증가시키는 데 장애물이 됩니다*[NEWLINE]제가 지도자가 아니었다면, 저는 교사가 되고 싶었을 것입니다. 우리 국민의 밝은 미래를 보장하는 더 좋은 방법이 무엇일까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4">
+			<Text>*제국의 미개척 지역에서 귀금속이 발견되어 전 세계의 역동적인 사람들의 관심을 끌고 있습니다*[NEWLINE]골드 러시는 일시적이겠지만, 지속되는 승리는 오늘날 가장 열심히 일하는 사람들을 브라질로 끌어들이는 것입니다.</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_FeatureYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5">
+			<Text>*많은 젊고 애국적인 브라질인들이 이 전쟁에 참여하기를 원합니다!*[NEWLINE]이것은 내가 우리 아이들을 위해 희망했던 미래가 아니었지만, 우리가 받은 현실입니다. 그들이 싸우게 하십시오.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6">
+			<Text>*세계는 에너지 위기에 직면해 있습니다. 브라질의 자원은 이 문제를 해결하는 데 독특한 위치에 있습니다*[NEWLINE]우리의 숲이 시들고 죽고, 우리의 유산이 잊혀지는 것을 나는 지켜보고만 있지 않을 것입니다! 이 위협에 대처하기 위해 필요한 모든 자원을 사용하십시오. 이 위협은 강대국과 소국 모두에게 영향을 미칩니다.</Text>
 		</Row>
-	</EventChoice_FeatureYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY">
+			<Text>브라질 교육</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_ResourceYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SUGAR</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP">
+			<Text>왕의 날 동안 +10% [ICON_PRODUCTION] 생산.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_COCOA</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_BANANA</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SPICES</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ResourceYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>750</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>750</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 새로운 대통령</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1">
-      <Text>{3_PlayerName}이(가) 상원의 새로운 대통령을 임명합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 정글 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2">
-      <Text>{3_PlayerName}이(가) 쿠이쿠로 민족과 무역을 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 교육 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3">
-      <Text>{3_PlayerName}이(가) 교육에 전례 없는 중요성을 부여합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 골드 러시</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4">
-      <Text>{3_PlayerName}이(가) 최근의 골드 러시로 인해 이민 규제를 완화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 프라시냐</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5">
-      <Text>{3_PlayerName}이(가) 프라시냐 군대를 조직합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 바이오디젤 산업</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6">
-      <Text>{3_PlayerName}이(가) 에너지 위기에 대응하여 바이오연료 이니셔티브를 추진합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION">
-      <Text>내일의 사람들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP">
-      <Text>황제 폐하, 소규모 회의가 당신의 최신 제안을 듣기 위해 모였습니다. 당신의 발표를 둘러싸고 많은 대화와 흥분이 있습니다. 개인적으로 저는 사랑받는 통치자를 섬기게 되어 매우 영광입니다.[NEWLINE]언제나 그랬듯이, 우리는 우리 나라의 첫 번째이자 가장 사랑받는 자식에게서 위대한 일들을 기대합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2">
-      <Text>정글 부족과 무역을 합니다. 정글은 +1 [ICON_FOOD] 식량과 +1 [ICON_GOLD] 금을 제공합니다. 하지만 목재 공장은 정글 보너스를 제거합니다. 전통적인 코코아, 설탕, 바나나, 향신료 재배 방법을 배우고, 각 자원이 +2 [ICON_CULTURE] 문화를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3">
-      <Text>엘리트와 성직자에 반대하여 {1_YieldCost}를 사용하여 [ICON_RESEARCH] 문맹률 임계치를 5% 낮춥니다. [COLOR_POSITIVE_TEXT]왕의 날[ENDCOLOR] 동안 도시는 +10% [ICON_PRODUCTION] 생산을 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4">
-      <Text>2개의 [ICON_RES_GOLD] 금을 받습니다. 이민자들의 유입으로 인구가 {2_InstantYield} 증가하지만, 모든 도시에 [ICON_GOLD] 빈곤 임계치가 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5">
-      <Text>프라시냐 5명이 [ICON_CAPITAL] 수도에서 모집됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 사용하여 플랜테이션이 바이오연료를 생산하기 시작합니다 (3개의 [ICON_RES_OIL] 석유를 획득). 매 턴 +2 [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학 및 [ICON_GOLDEN_AGE] 황금기 점수를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1">
-      <Text>감사합니다, 대통령님. 후임자에 대한 결정을 내렸습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2">
-      <Text>*많은 원주민들이 제국으로부터 분리되어 정글 깊숙이 남아 있습니다*[NEWLINE]우리가 끝없는 정글로 확장하고 그곳의 놀라운 열매를 경작하려 할 때, 우리는 많은 사람들을 잃습니다. 하지만 이미 이를 할 수 있는 사람들이 존재하며, 그들은 우리에게 가르쳐 줄 수 있습니다. 우리가 요청하기만 하면 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3">
-      <Text>*교육은 부유하고 강력한 자들을 위한 것이며, 사회적 이동성과 정의를 증가시키는 데 장애물이 됩니다*[NEWLINE]제가 지도자가 아니었다면, 저는 교사가 되고 싶었을 것입니다. 우리 국민의 밝은 미래를 보장하는 더 좋은 방법이 무엇일까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4">
-      <Text>*제국의 미개척 지역에서 귀금속이 발견되어 전 세계의 역동적인 사람들의 관심을 끌고 있습니다*[NEWLINE]골드 러시는 일시적이겠지만, 지속되는 승리는 오늘날 가장 열심히 일하는 사람들을 브라질로 끌어들이는 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5">
-      <Text>*많은 젊고 애국적인 브라질인들이 이 전쟁에 참여하기를 원합니다!*[NEWLINE]이것은 내가 우리 아이들을 위해 희망했던 미래가 아니었지만, 우리가 받은 현실입니다. 그들이 싸우게 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6">
-      <Text>*세계는 에너지 위기에 직면해 있습니다. 브라질의 자원은 이 문제를 해결하는 데 독특한 위치에 있습니다*[NEWLINE]우리의 숲이 시들고 죽고, 우리의 유산이 잊혀지는 것을 나는 지켜보고만 있지 않을 것입니다! 이 위협에 대처하기 위해 필요한 모든 자원을 사용하십시오. 이 위협은 강대국과 소국 모두에게 영향을 미칩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY">
-      <Text>브라질 교육</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP">
-      <Text>왕의 날 동안 +10% [ICON_PRODUCTION] 생산.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,478 +1,89 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_INDIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_INDIA</RequiredCiv>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 위대한 환생</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 위대한 인물의 환생을 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 평화의 기둥</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 제국 내 평화를 촉진하기 위해 정교한 기둥을 세웁니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 드왈라</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_RIFLING</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<GoldenAgeTurns>15</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 인도 전역에 대규모 사원 건설을 시작합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<RequiredEra>ERA_MODERN</RequiredEra>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
-			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
-			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
-			<ReligiousUnrestModifierGlobal>-5</ReligiousUnrestModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 무굴 성채</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 그의 도시들에 있는 다양한 성채들을 재조각하도록 엔지니어들에게 지시합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 왕실 군사 칙령</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 새로운 정치 사상의 시대를 시작합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 사티아그라하</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 인도에서 사회 개선을 위한 비폭력 캠페인을 직접 이끕니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_INDIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION">
+			<Text>말 없는 마음</Text>
 		</Row>
-	</Event_ParentEvents>
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_UE_MANDIR</Type>
-			<DefaultBuilding>BUILDING_UE_MANDIR</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_MANDIR</Description>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP">
+			<Text>평화가 당신의 모든 일에 따릅니다, 마하트마. 번거롭지 않다면, 당신의 지혜를 협의에 요청합니다. 최근에 우리가 매우 필요로 하고 있습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_UE_MANDIR</Type>
-			<BuildingClass>BUILDINGCLASS_UE_MANDIR</BuildingClass>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<IsDummy>true</IsDummy>
-			<Description>TXT_KEY_BUILDING_UE_MANDIR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MANDIR_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_MANDIR_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_MANDIR_HELP</Help>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<NeverCapture>true</NeverCapture>
-			<MinAreaSize>-1</MinAreaSize>
-			<ReligiousPressureModifier>15</ReligiousPressureModifier>
-			<ConversionModifier>-10</ConversionModifier>
-			<!-- These features has been removed after Spy overhaul and I don't know what's the replacement for it-->
-			<!--<BlockGPDestructionSpies>1</BlockGPDestructionSpies>
-			<BlockUDestructionSpies>1</BlockUDestructionSpies>-->
-			<IconAtlas>EXPANSION2_BUILDING_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<EventChoiceRequiredActive>EVENT_INDIA_UE_CHOICE_3</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>363</MutuallyExclusiveGroup>
-			<GoldMedianModifier>-10</GoldMedianModifier>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_2">
+			<Text>정복의 기념비는 +1 [ICON_PEACE] 신앙을 생성하며, 법원이 있는 도시는 [ICON_FOOD] 성장률이 10% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_3">
+			<Text>사제들에게 {2_InstantYield}를 허용하여 드왈라 건물을 잠금 해제합니다. 만디르는 +2 [ICON_FOOD] 식량과 +1 [ICON_PEACE] 신앙을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}의 계획을 승인합니다. 모든 성채는 +2 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광, 그리고 [ICON_GOLDEN_AGE] 황금기 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-			<Flavor>1</Flavor>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_5">
+			<Text>모든 도시에서 {2_InstantYield}를 퓨질리에르로 징집합니다. 15턴 동안 [ICON_GOLDEN_AGE] 황금기를 경험합니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_YieldModifiers>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>10</Yield>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield}를 사용하여 2턴의 저항을 호출합니다. [ICON_PRODUCTION] 스트레스, [ICON_CULTURE] 무료, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_RELIGION] 종교적 분열의 불만 임계값이 5% 감소합니다.</Text>
 		</Row>
-	</Building_YieldModifiers>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*최근 출생한 인물이 위대한 인물의 환생으로 확인되었습니다*[NEWLINE]위대한 영혼이 우리에게 돌아왔습니다! 필요한 준비를 하십시오.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MANDIR</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*외국 땅의 정복은 여전히 옛 적들 사이에서 경멸을 불러일으킵니다*[NEWLINE]우리는 진리와 용서의 캠페인을 시작해야 합니다! 우리가 서로 다른 것보다 더 유사하다는 것을 기억합시다. 다시 서로 사랑하는 법을 배울 수 있기를 바랍니다.</Text>
 		</Row>
-	</Building_YieldChanges>
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
-			<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
-			<Quantity>5</Quantity>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*대사원의 사제들이 인도의 예배 상태를 악화시키고 있습니다. 그들은 하늘의 영광을 위해 큰 첨탑을 세우기를 원합니다!*[NEWLINE]우리는 사람들을 천국으로 인도하기 위해 할 수 있는 모든 것을 해야 합니다. 그렇게 하십시오.</Text>
 		</Row>
-	</EventChoice_FreeUnitClasses>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Modifier>10</Modifier>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*우리 엔지니어들은 새로운 기술로 많은 오래된 요새들이 새로운 스타일로 개조될 수 있다고 믿고 있습니다*[NEWLINE]이 전쟁의 요새들이 신성하고 보호의 궁전으로 변하는 것을 보는 것이 제 영혼에 큰 기쁨을 줍니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*우리 군사 고문이 아데냐파트라라는 문서를 작성했으며, 그 제안 사항을 시행하자고 합니다*[NEWLINE]제 이름으로 흘린 피를 보는 것은 고통스럽지만, 내가 사람들을 평화롭게 수용하도록 설득할 수 없다면, 강제로라도 시행해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*사람들은 구식 사회적 기대에 의해 부과된 역할에 점점 더 불만을 느끼고 있습니다*[NEWLINE]제국이 뿌리에서 멀어질수록, 진리에서 더욱 멀어지게 되었습니다. 이제 제가 우리를 다시 이끌어야 합니다...</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_MANDIR">
+			<Text>드왈라</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_MANDIR_STRATEGY">
+			<Text>인도 고유의 이벤트 선택으로 구매할 수 있습니다. 만디르와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1500</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-3</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-1500</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 위대한 환생</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 위대한 인물의 환생을 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 평화의 기둥</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 제국 내 평화를 촉진하기 위해 정교한 기둥을 세웁니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 드왈라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 인도 전역에 대규모 사원 건설을 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 무굴 성채</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 그의 도시들에 있는 다양한 성채들을 재조각하도록 엔지니어들에게 지시합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 왕실 군사 칙령</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 새로운 정치 사상의 시대를 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 사티아그라하</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 인도에서 사회 개선을 위한 비폭력 캠페인을 직접 이끕니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION">
-      <Text>말 없는 마음</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP">
-      <Text>평화가 당신의 모든 일에 따릅니다, 마하트마. 번거롭지 않다면, 당신의 지혜를 협의에 요청합니다. 최근에 우리가 매우 필요로 하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_2">
-      <Text>정복의 기념비는 +1 [ICON_PEACE] 신앙을 생성하며, 법원이 있는 도시는 [ICON_FOOD] 성장률이 10% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_3">
-      <Text>사제들에게 {2_InstantYield}를 허용하여 드왈라 건물을 잠금 해제합니다. 만디르는 +2 [ICON_FOOD] 식량과 +1 [ICON_PEACE] 신앙을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}의 계획을 승인합니다. 모든 성채는 +2 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광, 그리고 [ICON_GOLDEN_AGE] 황금기 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_5">
-      <Text>모든 도시에서 {2_InstantYield}를 퓨질리에르로 징집합니다. 15턴 동안 [ICON_GOLDEN_AGE] 황금기를 경험합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield}를 사용하여 2턴의 저항을 호출합니다. [ICON_PRODUCTION] 스트레스, [ICON_CULTURE] 무료, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_RELIGION] 종교적 분열의 불만 임계값이 5% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>*최근 출생한 인물이 위대한 인물의 환생으로 확인되었습니다*[NEWLINE]위대한 영혼이 우리에게 돌아왔습니다! 필요한 준비를 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*외국 땅의 정복은 여전히 옛 적들 사이에서 경멸을 불러일으킵니다*[NEWLINE]우리는 진리와 용서의 캠페인을 시작해야 합니다! 우리가 서로 다른 것보다 더 유사하다는 것을 기억합시다. 다시 서로 사랑하는 법을 배울 수 있기를 바랍니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*대사원의 사제들이 인도의 예배 상태를 악화시키고 있습니다. 그들은 하늘의 영광을 위해 큰 첨탑을 세우기를 원합니다!*[NEWLINE]우리는 사람들을 천국으로 인도하기 위해 할 수 있는 모든 것을 해야 합니다. 그렇게 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*우리 엔지니어들은 새로운 기술로 많은 오래된 요새들이 새로운 스타일로 개조될 수 있다고 믿고 있습니다*[NEWLINE]이 전쟁의 요새들이 신성하고 보호의 궁전으로 변하는 것을 보는 것이 제 영혼에 큰 기쁨을 줍니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*우리 군사 고문이 아데냐파트라라는 문서를 작성했으며, 그 제안 사항을 시행하자고 합니다*[NEWLINE]제 이름으로 흘린 피를 보는 것은 고통스럽지만, 내가 사람들을 평화롭게 수용하도록 설득할 수 없다면, 강제로라도 시행해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*사람들은 구식 사회적 기대에 의해 부과된 역할에 점점 더 불만을 느끼고 있습니다*[NEWLINE]제국이 뿌리에서 멀어질수록, 진리에서 더욱 멀어지게 되었습니다. 이제 제가 우리를 다시 이끌어야 합니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_MANDIR">
-      <Text>드왈라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_MANDIR_STRATEGY">
-      <Text>인도 고유의 이벤트 선택으로 구매할 수 있습니다. 만디르와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

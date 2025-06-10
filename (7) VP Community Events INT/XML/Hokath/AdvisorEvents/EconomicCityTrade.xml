@@ -1,249 +1,47 @@
-﻿<GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<RandomChance>30</RandomChance>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementRequired>IMPROVEMENT_TRADING_POST</ImprovementRequired>
-			<CityEventArt>advisoreconomic.dds</CityEventArt>
-			<CityEventAudio>AS2D_EVENT_EECONOMIC</CityEventAudio>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION">
+			<Text>열망의 가난</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
-			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP">
+			<Text>도시 주변의 마을 사람들은 단순하고 고립된 삶을 살고 있습니다. 우리 사람들은 이런 삶에 그치지 않을 운명이었어요. 얼마나 많은 뛰어난 인재들이 도시 밖에서 낭비됐는지 모릅니다. 무슨 성과를 이룰 수 있었을까요!</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_BANK</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_1">
+			<Text>사업 계획을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_GOLD] 금이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_MONASTERY</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>경제를 성장시키려면, 모두가 참여해야 해.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_PUBLIC_SCHOOL</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_2">
+			<Text>농촌 사명을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_PEACE] 신앙이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_4</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_4</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_MUSEUM</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>일생을 두고 진정한 신앙을 찾지 못하는 사람들이 있어. 사람들이 손에 빠져 나가는 것을 막아야 해.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_5</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_5</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_FACTORY</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_3">
+			<Text>과학적 아웃리치 프로그램을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_RESEARCH] 과학이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_6</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_6</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<RequiredBuildingClass>BUILDINGCLASS_STOCKYARD</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>우리는 모두 이 우주의 메커니즘에 어느 정도 매료돼 있어.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_4">
+			<Text>국립 유산 사이트를 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_CULTURE] 문화가 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_4">
+			<Text>도시 벽 밖에는 너무나 많은 문화가 있고, 마을 사람들이 우리 기록되지 않은 과거에 대해 가장 많이 알아.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_5">
+			<Text>공학 아웃리치 프로그램을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_PRODUCTION] 생산성이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_5">
+			<Text>우리가 지금 만들 수 있는 기계들은 수공업과 Cottage 산업에 그 어떤 것보다 더 많은 혜택을 주지. 사람들은 그들의 경제적 해방에 참여해야 해.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_6">
+			<Text>산림 훈련을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_FOOD] 음식이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_6">
+			<Text>현대 화학 기술로 몇몇 농부들의 무지가 전체 마을을 기아에 빠뜨릴 수 있어. 사람들에게 생태학에 대해 교육할 필요가 있어.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_ImprovementYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</CityEventChoice_ImprovementYieldChange>
-	<CityEventChoice_EventCostYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-	</CityEventChoice_EventCostYield>
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION">
-      <Text>열망의 가난</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP">
-      <Text>도시 주변의 마을 사람들은 단순하고 고립된 삶을 살고 있습니다. 우리 사람들은 이런 삶에 그치지 않을 운명이었어요. 얼마나 많은 뛰어난 인재들이 도시 밖에서 낭비됐는지 모릅니다. 무슨 성과를 이룰 수 있었을까요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_1">
-      <Text>사업 계획을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_GOLD] 금이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>경제를 성장시키려면, 모두가 참여해야 해.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_2">
-      <Text>농촌 사명을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_PEACE] 신앙이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>일생을 두고 진정한 신앙을 찾지 못하는 사람들이 있어. 사람들이 손에 빠져 나가는 것을 막아야 해.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_3">
-      <Text>과학적 아웃리치 프로그램을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_RESEARCH] 과학이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>우리는 모두 이 우주의 메커니즘에 어느 정도 매료돼 있어.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_4">
-      <Text>국립 유산 사이트를 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_CULTURE] 문화가 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_4">
-      <Text>도시 벽 밖에는 너무나 많은 문화가 있고, 마을 사람들이 우리 기록되지 않은 과거에 대해 가장 많이 알아.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_5">
-      <Text>공학 아웃리치 프로그램을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_PRODUCTION] 생산성이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_5">
-      <Text>우리가 지금 만들 수 있는 기계들은 수공업과 Cottage 산업에 그 어떤 것보다 더 많은 혜택을 주지. 사람들은 그들의 경제적 해방에 참여해야 해.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_6">
-      <Text>산림 훈련을 위해 {1_YieldCost}를 지원하면, 인근 마을에서 +2 [ICON_FOOD] 음식이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_6">
-      <Text>현대 화학 기술로 몇몇 농부들의 무지가 전체 마을을 기아에 빠뜨릴 수 있어. 사람들에게 생태학에 대해 교육할 필요가 있어.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

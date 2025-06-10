@@ -1,251 +1,43 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>40</RandomChance>
-			<RandomChanceDelta>2</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisorscience.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION">
+			<Text>트리피드의 날</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
-			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP">
+			<Text></Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LABORATORY</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>제초제에 저항하는 식물들이 연구소 근처에서 자생하고 있는 것이 발견되었습니다. 현재 제국의 모든 농장과 농장이 오염되었으며, 따라서 생산량이 -2 [ICON_FOOD] 식량 감소합니다. 미래에는 이 문제에 대한 해결책이 있을지도 모르겠습니다...</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>트리피드의 날</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-2</YieldChange>
+	</Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION">
+			<Text>제1급 제초제</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP">
+			<Text>‘트리피드’ 잡초에 대한 검토가 완료되었습니다. 피해의 전체 범위가 드러났으며, 관련된 과학자들과 정부 관계자들에 대한 강한 비판이 제기되었습니다. 권장 사항은 즉각적이고 높은 비용의 해결책을 승인하는 것입니다.</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION">
-      <Text>트리피드의 날</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1">
-      <Text>제초제에 저항하는 식물들이 연구소 근처에서 자생하고 있는 것이 발견되었습니다. 현재 제국의 모든 농장과 농장이 오염되었으며, 따라서 생산량이 -2 [ICON_FOOD] 식량 감소합니다. 미래에는 이 문제에 대한 해결책이 있을지도 모르겠습니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1">
-      <Text>트리피드의 날</Text>
-    </Row>
-  </Language_ko_KR>
-  
-  	<!-- Follow up 'cures', require later techs-->
-	<Events>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP</Help>
-			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
-			<NumChoices>3</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>25</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1">
+			<Text>{1_YieldCost}에 해당하는 생물학자를 현재 프로젝트에서 제외시킵니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복합니다.</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
-			<EventLinker>EVENT_AES_SCIENCE_PLAYER_BAD</EventLinker>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2">
+			<Text>2개의 [ICON_RES_URANIUM] 우라늄을 물리학자들에게 전달합니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복합니다.</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOSPITAL</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}에 해당하는 생물학자를 현재 프로젝트에서 제외시킵니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복하고 추가로 +1 [ICON_FOOD] 식량을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
+			<Text>이 괴물들에 생명을 준 생물학자들이 분명히 이를 근절할 방법을 찾을 수 있을 것입니다. 분명히 이것이 우리의 최우선 과제가 되어야 합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
+			<Text>분명 생물학자들은 심각한 과학 연구에 가까이 해서는 안 됩니다. 문제를 물리학자들에게 맡기세요, 그들이 효과적인 해결책을 찾을 것이라고 확신합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
+			<Text>사람들은 GMO가 실패했다고 말하지만, 저는 동의하지 않습니다. 이 전말은 과학이 제대로 작동한다는 것을 보여주었습니다! 우리는 더 많은 연구와 실험이 필요합니다! 우리는 단순히 이 식물들을 제거하는 것을 넘어, 더 나은 식물들을 만들 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
-		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>-2</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>-4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION">
-      <Text>제1급 제초제</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP">
-      <Text>‘트리피드’ 잡초에 대한 검토가 완료되었습니다. 피해의 전체 범위가 드러났으며, 관련된 과학자들과 정부 관계자들에 대한 강한 비판이 제기되었습니다. 권장 사항은 즉각적이고 높은 비용의 해결책을 승인하는 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1">
-      <Text>{1_YieldCost}에 해당하는 생물학자를 현재 프로젝트에서 제외시킵니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2">
-      <Text>2개의 [ICON_RES_URANIUM] 우라늄을 물리학자들에게 전달합니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}에 해당하는 생물학자를 현재 프로젝트에서 제외시킵니다. 농장과 농장이 +2 [ICON_FOOD] 식량을 회복하고 추가로 +1 [ICON_FOOD] 식량을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
-      <Text>이 괴물들에 생명을 준 생물학자들이 분명히 이를 근절할 방법을 찾을 수 있을 것입니다. 분명히 이것이 우리의 최우선 과제가 되어야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
-      <Text>분명 생물학자들은 심각한 과학 연구에 가까이 해서는 안 됩니다. 문제를 물리학자들에게 맡기세요, 그들이 효과적인 해결책을 찾을 것이라고 확신합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
-      <Text>사람들은 GMO가 실패했다고 말하지만, 저는 동의하지 않습니다. 이 전말은 과학이 제대로 작동한다는 것을 보여주었습니다! 우리는 더 많은 연구와 실험이 필요합니다! 우리는 단순히 이 식물들을 제거하는 것을 넘어, 더 나은 식물들을 만들 것입니다!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

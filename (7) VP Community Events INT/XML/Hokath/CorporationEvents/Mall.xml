@@ -1,383 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_EVENTS_MALL</Type>
-			<DefaultBuilding>BUILDING_EVENTS_MALL</DefaultBuilding>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL">
+			<Text>쇼핑몰</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_EVENTS_MALL</Type>
-			<BuildingClass>BUILDINGCLASS_EVENTS_MALL</BuildingClass>
-			<Cost>1800</Cost>
-			<GoldMaintenance>8</GoldMaintenance>
-			<PrereqTech>TECH_CORPORATIONS</PrereqTech>
-			<Description>TXT_KEY_BUILDING_EVENTS_MALL</Description>
-			<Civilopedia>TXT_KEY_BUILDING_EVENTS_MALL_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_EVENTS_MALL_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_EVENTS_MALL_HELP</Help>
-			<ArtDefineTag>ART_DEF_BUILDING_GARDEN</ArtDefineTag>
-			<ConquestProb>66</ConquestProb>
-			<MinAreaSize>-1</MinAreaSize>
-			<IconAtlas>MALL_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<GoldMedianModifier>10</GoldMedianModifier>
-			<TradeRouteRecipientBonus>2</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_HELP">
+			<Text>[ICON_HAPPINESS_3] 빈곤이 약간 증가합니다. [ICON_INTERNATIONAL_TRADE] 무역 노선이 이 도시에 대해 +2 [ICON_GOLD] 금을 생성합니다.[NEWLINE][NEWLINE]이 도시의 모든 기업 프랜차이즈는 +5 [ICON_GOLD] 금과 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_ClassesNeededInCity>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_GROCER</BuildingClassType>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_STRATEGY">
+			<Text>쇼핑몰은 기업과 무역 노선 하위 시스템과 상호 작용합니다. 적절한 도시에서는 금과 관광을 생성합니다. 그러나 쇼핑몰은 빈곤을 증가시키며 도시의 필요에 대해서는 거의 중립적입니다. 결국, 돈으로 행복을 살 수는 없으니까요.</Text>
 		</Row>
-	</Building_ClassesNeededInCity>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_TEXT">
+			<Text>[SPACE]20세기에 자동차의 출현으로 사람들이 한 지역에 살면서 쇼핑, 오락, 일 등은 다른 지역에서 하는 도시 및 교외 풍경이 만들어졌습니다. 특히 미국에서 이 현상이 두드러지며, 시민들은 자동차에 대한 거의 광신적인 집착으로 유명합니다. 이로 인해 미국 생활에 중요한 사회적, 환경적, 경제적 영향을 미치게 되었고, 미국의 가장 전형적인 제도인 쇼핑몰이 탄생했습니다.[NEWLINE][NEWLINE]미국의 쇼핑몰은 넓은 주차장으로 둘러싸여 있으며, 수십 개(혹은 수백 개)의 상점이 의류, 보석, 전자기기, 서적, 컴퓨터, 비디오 등을 판매합니다. 미국의 쇼핑몰은 어떤 면에서는 옛 아라비아 시장과 유사하지만, 미국인들은 일반적으로 흥정을 즐기지 않으며 가격이 일반적으로 고정되어 있습니다.[NEWLINE][NEWLINE]자동차 중심의 가장 초기 쇼핑센터는 1916년 시카고, 일리노이에서 열린 "Market Square"였습니다. 1992년 미네소타에서 건설된 "Mall of America"는 세계에서 가장 큰 쇼핑몰입니다. 500개 이상의 상점, 80개의 레스토랑, 테마파크, 호텔, 영화관이 있으며, 30대 이상의 보잉 747 비행기를 수용할 수 있는 크기의 건물입니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>3</Yield>
+	</Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION">
+			<Text>지름신이 강림하다</Text>
 		</Row>
-	</Building_YieldChanges>
-	<Building_BuildingClassLocalYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_FIRAXITE_MATERIALS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP">
+			<Text>소비자 문화의 출현은 이념적으로 우리에게 어려운 질문을 제기합니다. 우리는 삶의 질 향상에 참여할 것인가, 국가 통제를 강화할 것인가요?</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TRADER_SIDS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_1">
+			<Text>마을에서는 +1 [ICON_FOOD] 음식, [ICON_GOLD] 금, [ICON_CULTURE] 문화가 생성됩니다. 도시에서는 +2가 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_2">
+			<Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_HEXXON_REFINERY_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_3">
+			<Text>쇼핑몰은 -2 [ICON_RESEARCH] 과학을 감소시킵니다. 제조업체는 +4 [ICON_PRODUCTION] 생산을 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_4">
+			<Text>쇼핑몰은 +3 [ICON_CULTURE] 문화를 증가시킵니다. 그러나 [ICON_STRENGTH] 범죄와 [ICON_GOLD] 빈곤 임계값이 5% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_5">
+			<Text>쇼핑몰은 -2 [ICON_TOURISM] 관광을 감소시킵니다. [ICON_DIPLOMAT] 공무원들이 +2 [ICON_GOLD] 금과 +2 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CIVILIZED_JEWELERS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_1">
+			<Text>우리의 발전은 모두에게 혜택을 줍니다. 나의 자비가 나타납니다!</Text>
 		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_FIRAXITE_MATERIALS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_2">
+			<Text>더 큰 내부 시장에서 상품을 판매할 수 있으니, 우리의 상인들은 더욱 수익성 있게 될 것입니다!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TRADER_SIDS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_3">
+			<Text>'혁신'이 필요 없습니다. 모든 시민들이 동일한 '선택'의 상품을 가지게 되면, 우리의 제조업체는 다른 것들을 생산할 수 있을 것입니다...</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_4">
+			<Text>사람들은 원하는 무엇이든 자유롭게 구매해야 합니다! 그리고 만약 그들이 감당할 수 없다면? 그건 자유롭지 않죠! 모두에게 신용 카드를 제공하고 쇼핑을 계속하게 하세요! 만세!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_HEXXON_REFINERY_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_5">
+			<Text>국가 산업은 국가 사회주의자들을 위한 것입니다. 외국 기업들은 이 위대하고 고귀한 민족에 대한 국제적 음모의 또 다른 수단에 불과합니다.[NEWLINE]...[NEWLINE]이미 여기에 있다면? 그들의 물건을 압수합시다, 물론이죠!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CIVILIZED_JEWELERS_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</Building_BuildingClassLocalYieldChanges>
-
-  <Language_ko_KR>
-    <!-- New Corporation Building -->
-    <Row Tag="TXT_KEY_BUILDING_EVENTS_MALL">
-      <Text>쇼핑몰</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_HELP">
-      <Text>
-        [ICON_HAPPINESS_3] 빈곤이 약간 증가합니다. [ICON_INTERNATIONAL_TRADE] 무역 노선이 이 도시에 대해 +2 [ICON_GOLD] 금을 생성합니다.[NEWLINE][NEWLINE]이 도시의 모든 기업 프랜차이즈는 +5 [ICON_GOLD] 금과 +2 [ICON_TOURISM] 관광을 생성합니다.
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_STRATEGY">
-      <Text>쇼핑몰은 기업과 무역 노선 하위 시스템과 상호 작용합니다. 적절한 도시에서는 금과 관광을 생성합니다. 그러나 쇼핑몰은 빈곤을 증가시키며 도시의 필요에 대해서는 거의 중립적입니다. 결국, 돈으로 행복을 살 수는 없으니까요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_TEXT">
-      <Text>[SPACE]20세기에 자동차의 출현으로 사람들이 한 지역에 살면서 쇼핑, 오락, 일 등은 다른 지역에서 하는 도시 및 교외 풍경이 만들어졌습니다. 특히 미국에서 이 현상이 두드러지며, 시민들은 자동차에 대한 거의 광신적인 집착으로 유명합니다. 이로 인해 미국 생활에 중요한 사회적, 환경적, 경제적 영향을 미치게 되었고, 미국의 가장 전형적인 제도인 쇼핑몰이 탄생했습니다.[NEWLINE][NEWLINE]미국의 쇼핑몰은 넓은 주차장으로 둘러싸여 있으며, 수십 개(혹은 수백 개)의 상점이 의류, 보석, 전자기기, 서적, 컴퓨터, 비디오 등을 판매합니다. 미국의 쇼핑몰은 어떤 면에서는 옛 아라비아 시장과 유사하지만, 미국인들은 일반적으로 흥정을 즐기지 않으며 가격이 일반적으로 고정되어 있습니다.[NEWLINE][NEWLINE]자동차 중심의 가장 초기 쇼핑센터는 1916년 시카고, 일리노이에서 열린 "Market Square"였습니다. 1992년 미네소타에서 건설된 "Mall of America"는 세계에서 가장 큰 쇼핑몰입니다. 500개 이상의 상점, 80개의 레스토랑, 테마파크, 호텔, 영화관이 있으며, 30대 이상의 보잉 747 비행기를 수용할 수 있는 크기의 건물입니다.
-      </Text>
-    </Row>
-  </Language_ko_KR>
-  
-  	<Events>
-		<Row>
-			<Type>EVENT_MALL_EVENT</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP</Help>
-			<NumChoices>5</NumChoices>
-			<RandomChance>45</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_EVENTS_MALL</RequiredAnywhereBuildingClass>
-		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_MALL_EVENT_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_1</Help>
-		</Row>
-		<Row>
-			<Type>EVENT_MALL_EVENT_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredPolicy>POLICY_COMMERCE_FINISHER</RequiredPolicy>
-		</Row>
-		<Row>
-			<Type>EVENT_MALL_EVENT_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredIdeology>POLICY_BRANCH_ORDER</RequiredIdeology>
-		</Row>
-		<Row>
-			<Type>EVENT_MALL_EVENT_CHOICE_4</Type>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_4</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_4</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredIdeology>POLICY_BRANCH_FREEDOM</RequiredIdeology>
-			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
-			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
-		</Row>
-		<Row>
-			<Type>EVENT_MALL_EVENT_CHOICE_5</Type>
-			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_5</Description>
-			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_5</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredIdeology>POLICY_BRANCH_AUTOCRACY</RequiredIdeology>
-		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_MALL_EVENT</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_MALL_EVENT</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_MALL_EVENT</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_MALL_EVENT</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_MALL_EVENT</EventType>
-		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>4</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION">
-      <Text>지름신이 강림하다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP">
-      <Text>소비자 문화의 출현은 이념적으로 우리에게 어려운 질문을 제기합니다. 우리는 삶의 질 향상에 참여할 것인가, 국가 통제를 강화할 것인가요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_1">
-      <Text>마을에서는 +1 [ICON_FOOD] 음식, [ICON_GOLD] 금, [ICON_CULTURE] 문화가 생성됩니다. 도시에서는 +2가 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_2">
-      <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_3">
-      <Text>쇼핑몰은 -2 [ICON_RESEARCH] 과학을 감소시킵니다. 제조업체는 +4 [ICON_PRODUCTION] 생산을 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_4">
-      <Text>쇼핑몰은 +3 [ICON_CULTURE] 문화를 증가시킵니다. 그러나 [ICON_STRENGTH] 범죄와 [ICON_GOLD] 빈곤 임계값이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_5">
-      <Text>쇼핑몰은 -2 [ICON_TOURISM] 관광을 감소시킵니다. [ICON_DIPLOMAT] 공무원들이 +2 [ICON_GOLD] 금과 +2 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_1">
-      <Text>우리의 발전은 모두에게 혜택을 줍니다. 나의 자비가 나타납니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_2">
-      <Text>더 큰 내부 시장에서 상품을 판매할 수 있으니, 우리의 상인들은 더욱 수익성 있게 될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_3">
-      <Text>'혁신'이 필요 없습니다. 모든 시민들이 동일한 '선택'의 상품을 가지게 되면, 우리의 제조업체는 다른 것들을 생산할 수 있을 것입니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_4">
-      <Text>사람들은 원하는 무엇이든 자유롭게 구매해야 합니다! 그리고 만약 그들이 감당할 수 없다면? 그건 자유롭지 않죠! 모두에게 신용 카드를 제공하고 쇼핑을 계속하게 하세요! 만세!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_5">
-      <Text>국가 산업은 국가 사회주의자들을 위한 것입니다. 외국 기업들은 이 위대하고 고귀한 민족에 대한 국제적 음모의 또 다른 수단에 불과합니다.[NEWLINE]...[NEWLINE]이미 여기에 있다면? 그들의 물건을 압수합시다, 물론이죠!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

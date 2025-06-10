@@ -1,244 +1,43 @@
-﻿<GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>25</RandomChance>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<CityEventArt>advisorscience.dds</CityEventArt>
-			<CityEventAudio>AS2D_EVENT_ESCIENCE</CityEventAudio>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION">
+			<Text>간격에 주의하세요</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE</CityEventType>
-			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP">
+			<Text>오랜 시간 동안 계획 승인, 강제 구매 명령 및 자금 부족으로 어려움을 겪은 끝에, 도시가 마침내 대중 교통 네트워크를 구축할 수 있게 되었습니다.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_TRAINSTATION</RequiredBuildingClass>
-			<PrereqTech>TECH_REFRIGERATION</PrereqTech>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_1">
+			<Text>{1_YieldCost}를 사용하여 지하철 시스템을 구축하고, {4_GPChange}를 얻습니다. 지하철은 도시에서 {3_CityYield}를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
-			<EraScaling>true</EraScaling>
-			
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>광대한 지하 철도 네트워크.[NEWLINE]기차. 지하.[NEWLINE]미래가 정말로 여기에 온 것 같습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_2">
+			<Text>기차 시스템을 {1_YieldCost}와 1 [ICON_RES_IRON] 철로 구축합니다. 도시가 {3_CityYield}를 얻습니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>기차는 교통 문제를 해결하기 위한 매우 기발한 솔루션이었습니다. 많은 시간과 돈을 절약할 수 있습니다. 놀라운 작업입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 사용하여 버스 서비스를 구현합니다. 효율성이 향상되지만 오염이 증가합니다. 도시는 {3_CityYield}를 경험합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>효율성 면에서, 크기가 정말로 더 좋습니다. 하지만 우리의 엔진 기술에는 같은 말을 할 수 없네요.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+	</Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION">
+			<Text>설탕 러시 아워</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP">
+			<Text>버스 서비스로 효율성이 향상되었지만, 절약된 공간 덕분에 도시에 더 많은 차를 넣을 수 있었습니다. 이제 과학자들이 재생 가능한 작물 자원에서 수확할 수 있는 바이오 연료를 설계했습니다.</Text>
 		</Row>
-
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP_CHOICE_1">
+			<Text>과학자들이 재생 가능한 작물 자원에서 수확할 수 있는 바이오 연료를 설계했습니다. {4_GPChange}를 얻습니다! 이제 버스가 더 이상 심각한 오염을 일으키지 않으며, {3_CityYield}를 얻습니다!</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>4</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION_CHOICE_1">
+			<Text>설탕 러시 아워</Text>
 		</Row>
-
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>-4</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-	<CityEventChoice_ResourceQuantity>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>-1</Quantity>
-		</Row>
-	</CityEventChoice_ResourceQuantity>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<Points>100</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-	<CityEventChoice_EventCostYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>75</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>75</Yield>
-		</Row>
-	</CityEventChoice_EventCostYield>
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-1</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION">
-      <Text>간격에 주의하세요</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP">
-      <Text>오랜 시간 동안 계획 승인, 강제 구매 명령 및 자금 부족으로 어려움을 겪은 끝에, 도시가 마침내 대중 교통 네트워크를 구축할 수 있게 되었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_1">
-      <Text>{1_YieldCost}를 사용하여 지하철 시스템을 구축하고, {4_GPChange}를 얻습니다. 지하철은 도시에서 {3_CityYield}를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>광대한 지하 철도 네트워크.[NEWLINE]기차. 지하.[NEWLINE]미래가 정말로 여기에 온 것 같습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_2">
-      <Text>기차 시스템을 {1_YieldCost}와 1 [ICON_RES_IRON] 철로 구축합니다. 도시가 {3_CityYield}를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>기차는 교통 문제를 해결하기 위한 매우 기발한 솔루션이었습니다. 많은 시간과 돈을 절약할 수 있습니다. 놀라운 작업입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 사용하여 버스 서비스를 구현합니다. 효율성이 향상되지만 오염이 증가합니다. 도시는 {3_CityYield}를 경험합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>효율성 면에서, 크기가 정말로 더 좋습니다. 하지만 우리의 엔진 기술에는 같은 말을 할 수 없네요.</Text>
-    </Row>
-  </Language_ko_KR>
-  
-  	<!-- choice 3 upgrade-->
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>30</RandomChance>
-			<RandomChanceDelta>5</RandomChanceDelta>
-		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP</CityEventType>
-			<CityEventChoice>CITY_EVENT_AES_SCIENCE_CITY_TRADE_CHOICE_3</CityEventChoice>
-			<CheckOnlyEventCity>true</CheckOnlyEventCity>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<ImprovementRequired>IMPROVEMENT_PLANTATION</ImprovementRequired>
-			<EraScaling>true</EraScaling>
-		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>4</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_CHOICE_1</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<Points>50</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-  
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION">
-      <Text>설탕 러시 아워</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP">
-      <Text>버스 서비스로 효율성이 향상되었지만, 절약된 공간 덕분에 도시에 더 많은 차를 넣을 수 있었습니다. 이제 과학자들이 재생 가능한 작물 자원에서 수확할 수 있는 바이오 연료를 설계했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_HELP_CHOICE_1">
-      <Text>과학자들이 재생 가능한 작물 자원에서 수확할 수 있는 바이오 연료를 설계했습니다. {4_GPChange}를 얻습니다! 이제 버스가 더 이상 심각한 오염을 일으키지 않으며, {3_CityYield}를 얻습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_TRADE_FOLLOWUP_DESCRIPTION_CHOICE_1">
-      <Text>설탕 러시 아워</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

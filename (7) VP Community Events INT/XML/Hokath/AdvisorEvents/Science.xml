@@ -1,60 +1,23 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_SCIENCE</Type>
-			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP</Help>
-			<NumChoices>2</NumChoices>
-			<RandomChance>70</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
-			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
-			<EventArt>advisorscience.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION">
+			<Text>한 줄기의 과학의 빛</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1</Help>
-			<EventDuration>100</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP">
+			<Text>과학 고문이 몇 달의 공백 끝에 마침내 회의에 돌아왔습니다. 그는 우리의 최고 인재들에게 배정할 수 있는 여러 가지 매우 실험적인 연구 프로젝트를 제안했습니다.[NEWLINE][NEWLINE]당신의 결정을 기다리고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2</Description>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1">
+			<Text>{4_Turns} 동안 이 프로젝트에서 중요한 사건이 발생할 수 있습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2">
+			<Text>사업은 평상시처럼 계속됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1">
+			<Text>이 작업에서 천재의 손길을 느낍니다. 과학의 길에 어떤 장애물도 허용하지 않겠습니다!</Text>
 		</Row>
-	</Event_ParentEvents>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION">
-      <Text>한 줄기의 과학의 빛</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP">
-      <Text>과학 고문이 몇 달의 공백 끝에 마침내 회의에 돌아왔습니다. 그는 우리의 최고 인재들에게 배정할 수 있는 여러 가지 매우 실험적인 연구 프로젝트를 제안했습니다.[NEWLINE][NEWLINE]당신의 결정을 기다리고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_1">
-      <Text>{4_Turns} 동안 이 프로젝트에서 중요한 사건이 발생할 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_HELP_CHOICE_2">
-      <Text>사업은 평상시처럼 계속됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_1">
-      <Text>이 작업에서 천재의 손길을 느낍니다. 과학의 길에 어떤 장애물도 허용하지 않겠습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2">
-      <Text>좋은 박사의 부재로 이미 많은 문제가 발생했습니다! 이 중요한 시점에서 우리의 노력을 다른 방향으로 전환할 여유가 없습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_DESCRIPTION_CHOICE_2">
+			<Text>좋은 박사의 부재로 이미 많은 문제가 발생했습니다! 이 중요한 시점에서 우리의 노력을 다른 방향으로 전환할 여유가 없습니다.</Text>
+		</Row>
+	</Language_ko_KR>
 </GameData>

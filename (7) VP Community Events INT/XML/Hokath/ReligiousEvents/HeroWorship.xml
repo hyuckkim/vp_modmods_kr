@@ -1,533 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<RandomChance>60</RandomChance>
-			<RandomChanceDelta>20</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GREAT_ALTAR</RequiredAnywhereBuildingClass>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 시작합니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1">
+			<Text>{3_PlayerName}의 지도 하에, {1_CivShortDescription}의 사람들이 완전한 순수함을 지닌 인물을 탄생시키기 위해 노력하고 있습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<ImprovementAnywhereRequired>IMPROVEMENT_HOLY_SITE</ImprovementAnywhereRequired>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OPERA_HOUSE</RequiredAnywhereBuildingClass>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2">
+			<Text>{3_PlayerName}는 희생자 할당량을 채우기 위해 모든 범죄자에게 사형을 승인합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<RequiresIdeology>true</RequiresIdeology>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClassGlobal>BUILDINGCLASS_HERO_WORSHIP_DUMMY</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
-			<RequiresWar>true</RequiresWar>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3">
+			<Text>{3_PlayerName}가 영웅 숭배의 비밀 탐구를 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HERO_WORSHIP_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<EventPromotion>PROMOTION_BLOOD_WARRIOR</EventPromotion>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4">
+			<Text>{3_PlayerName}가 위대한 제단의 방 접근을 확대하여 선택된 자를 찾기 위한 탐구를 진전시키고자 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5">
+			<Text>{3_PlayerName}가 예언의 아이를 찾기 위해 요원들을 파견합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6_S">
+			<Text>{3_PlayerName}가 영웅 숭배의 탐구를 완료했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6">
+			<Text>{3_PlayerName}가 직접 선택된 자의 심장을 도려내어, 그들의 종교에 중심이 되는 예언을 실현했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_HERO_WORSHIP</EventType>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION">
+			<Text>순수한 영혼</Text>
 		</Row>
-	</Event_ParentEvents>
-	<EventChoice_EventLinks>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<EventChoiceLinker>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP">
+			<Text>신성한 세계의 톱니바퀴가 계속 돌려지려면 큰 노력이 필요합니다. 오직 큰 힘만이... 그리고 그 힘은 피 속에 있습니다. 셀 수 없이 많은 사람들이 창조의 갈증을 채우기 위해 목숨을 바쳐야 합니다.[NEWLINE][NEWLINE]단, 우리가 선택된 자를 찾을 수 있다면. 한 명의 순수한 영혼이 마지막 죽음을 맞이하고 순환을 깨뜨릴 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<EventChoiceLinker>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_1">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 위대한 제단이 +1 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceType>
-			<EventChoiceLinker>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_2">
+			<Text>수감자와 범죄자의 희생을 {1_YieldCost}로 승인합니다. 법원, 공증소, 경찰서가 +1 [ICON_PRODUCTION] 생산, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_5</EventChoiceType>
-			<EventChoiceLinker>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_3">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 위대한 제단이 +2 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<EventChoiceLinker>EVENT_HERO_WORSHIP_CHOICE_5</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_4">
+			<Text>{1_YieldCost}로 시민의 권능을 시작합니다. 위대한 제단의 [ICON_PRODUCTION] 생산이 25% 증가합니다.</Text>
 		</Row>
-	</EventChoice_EventLinks>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_HERO_WORSHIP_DUMMY</Type>
-			<DefaultBuilding>BUILDING_HERO_WORSHIP_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_5">
+			<Text>선택된 자를 찾기 위해 세계를 수색하며 추가 [ICON_SPY] 스파이를 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_HERO_WORSHIP_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_HERO_WORSHIP_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 모아 탐구를 완료합니다. 모든 근접 전투 유닛과 총기 유닛이 피의 전사 승급을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_HERO_WORSHIP_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_HERO_WORSHIP_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IsDummy>true</IsDummy>
-			<GreatWorkCount>-1</GreatWorkCount>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<ExtraSpies>1</ExtraSpies>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_1">
+			<Text>우리는 어디서 그런 인물을 찾을 수 있을까요? 분명 우리는 실제로 그들을 만들어야 합니다. 우리는 우리의 자녀와 자손들을 인류의 완벽한 예로 키워야 합니다. 완전히 순수한 영혼이 태어날 때까지 계속해야 합니다. 그리고 나서... 우리는 그들의 심장을 도려냅니다!</Text>
 		</Row>
-	</Buildings>
-
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_BLOOD_WARRIOR</Type>
-			<Description>TXT_KEY_PROMOTION_BLOOD_WARRIOR</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<Help>TXT_KEY_PROMOTION_BLOOD_WARRIOR_HELP</Help>
-			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_BLOOD_WARRIOR</PediaEntry>
-			<CombatPercent>10</CombatPercent>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_2">
+			<Text>*우리 인구가 점점 더 신성해지면서, 희생물이 점점 더 어려워지고 있습니다*[NEWLINE]피는 흐를 필요가 있습니다. 이렇게 많은 순수함이 있는 나라에서, 가장 사소한 범죄에 대해서도... 사형이 되어야 합니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_BLOOD_WARRIOR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_3">
+			<Text>우리는 계속해서 성장하고 있습니다. 예언자들은 우리가 선택된 자의 탄생을 눈앞에서 목격할 것이라고 믿고 있습니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_BLOOD_WARRIOR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_4">
+			<Text>우주는 우리에게 만족하고 있습니다. 우리의 제사장들이 강력해지고, 우리는 침울하고 먼 과거에는 상상도 할 수 없었던 업적을 이룰 수 있습니다!</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_5">
+			<Text>예언자들은 지금이 바로 그때라고 말합니다. 왕국 어딘가에 순수한 자가 곧 태어날 것입니다. 그들을 만나는 사람들이 그들의 운명을 즉시 인식할 것이며, 아마도 우리에게서 그들을 지키려고 할 것입니다. 우리는 거절당하지 않을 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_6">
+			<Text>완료되었습니다. 평온을 느끼십니까? 마치 모든 세월의 짐이 갑자기 내려놓아진 듯이, 아예 존재하지 않았던 것처럼 느껴집니다. 우리의 미래는 보장되었으며, 우리는 우리의 영혼의 구원이 마침내 확보되었다는 것을 알고 싸우고 죽을 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR">
+			<Text>혈전사</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR_HELP">
+			<Text>[ICON_STRENGTH] 전투력 10% 증가</Text>
 		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>750</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>750</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GREAT_ALTAR</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GREAT_ALTAR</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PAGODA</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GREAT_ALTAR</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>25</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HERO_WORSHIP_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 시작합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_1">
-      <Text>{3_PlayerName}의 지도 하에, {1_CivShortDescription}의 사람들이 완전한 순수함을 지닌 인물을 탄생시키기 위해 노력하고 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_2">
-      <Text>{3_PlayerName}는 희생자 할당량을 채우기 위해 모든 범죄자에게 사형을 승인합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_3">
-      <Text>{3_PlayerName}가 영웅 숭배의 비밀 탐구를 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_4">
-      <Text>{3_PlayerName}가 위대한 제단의 방 접근을 확대하여 선택된 자를 찾기 위한 탐구를 진전시키고자 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_5">
-      <Text>{3_PlayerName}가 예언의 아이를 찾기 위해 요원들을 파견합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6_S">
-      <Text>{3_PlayerName}가 영웅 숭배의 탐구를 완료했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HERO_WORSHIP_CHOICE_6">
-      <Text>{3_PlayerName}가 직접 선택된 자의 심장을 도려내어, 그들의 종교에 중심이 되는 예언을 실현했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION">
-      <Text>순수한 영혼</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP">
-      <Text>신성한 세계의 톱니바퀴가 계속 돌려지려면 큰 노력이 필요합니다. 오직 큰 힘만이... 그리고 그 힘은 피 속에 있습니다. 셀 수 없이 많은 사람들이 창조의 갈증을 채우기 위해 목숨을 바쳐야 합니다.[NEWLINE][NEWLINE]단, 우리가 선택된 자를 찾을 수 있다면. 한 명의 순수한 영혼이 마지막 죽음을 맞이하고 순환을 깨뜨릴 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_1">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 위대한 제단이 +1 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_2">
-      <Text>수감자와 범죄자의 희생을 {1_YieldCost}로 승인합니다. 법원, 공증소, 경찰서가 +1 [ICON_PRODUCTION] 생산, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_3">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 위대한 제단이 +2 [ICON_PRODUCTION] 생산을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_4">
-      <Text>{1_YieldCost}로 시민의 권능을 시작합니다. 위대한 제단의 [ICON_PRODUCTION] 생산이 25% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_5">
-      <Text>선택된 자를 찾기 위해 세계를 수색하며 추가 [ICON_SPY] 스파이를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 모든 근접 전투 유닛과 총기 유닛이 피의 전사 승급을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_1">
-      <Text>우리는 어디서 그런 인물을 찾을 수 있을까요? 분명 우리는 실제로 그들을 만들어야 합니다. 우리는 우리의 자녀와 자손들을 인류의 완벽한 예로 키워야 합니다. 완전히 순수한 영혼이 태어날 때까지 계속해야 합니다. 그리고 나서... 우리는 그들의 심장을 도려냅니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_2">
-      <Text>*우리 인구가 점점 더 신성해지면서, 희생물이 점점 더 어려워지고 있습니다*[NEWLINE]피는 흐를 필요가 있습니다. 이렇게 많은 순수함이 있는 나라에서, 가장 사소한 범죄에 대해서도... 사형이 되어야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_3">
-      <Text>우리는 계속해서 성장하고 있습니다. 예언자들은 우리가 선택된 자의 탄생을 눈앞에서 목격할 것이라고 믿고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_4">
-      <Text>우주는 우리에게 만족하고 있습니다. 우리의 제사장들이 강력해지고, 우리는 침울하고 먼 과거에는 상상도 할 수 없었던 업적을 이룰 수 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_5">
-      <Text>예언자들은 지금이 바로 그때라고 말합니다. 왕국 어딘가에 순수한 자가 곧 태어날 것입니다. 그들을 만나는 사람들이 그들의 운명을 즉시 인식할 것이며, 아마도 우리에게서 그들을 지키려고 할 것입니다. 우리는 거절당하지 않을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HERO_WORSHIP_DESCRIPTION_CHOICE_6">
-      <Text>완료되었습니다. 평온을 느끼십니까? 마치 모든 세월의 짐이 갑자기 내려놓아진 듯이, 아예 존재하지 않았던 것처럼 느껴집니다. 우리의 미래는 보장되었으며, 우리는 우리의 영혼의 구원이 마침내 확보되었다는 것을 알고 싸우고 죽을 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR">
-      <Text>혈전사</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_BLOOD_WARRIOR_HELP">
-      <Text>[ICON_STRENGTH] 전투력 10% 증가</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

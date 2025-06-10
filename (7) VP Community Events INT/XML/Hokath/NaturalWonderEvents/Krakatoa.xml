@@ -1,176 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_VOLCANO</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_VOLCANO</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION">
+			<Text>초열화염</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_VOLCANO_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP">
+			<Text>화산에 있는 우리 요원에게서 소식이 왔습니다, 관대한 폐하. 이번에는 좋은 소식인 것 같긴 한데, 항상 확신할 수는 없군요.[NEWLINE]읽어드릴까요?</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_VOLCANO_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<CityLacksPlayerMajorityReligion>true</CityLacksPlayerMajorityReligion>
-			<EventDuration>15</EventDuration>
-			<WLTKDTurns>15</WLTKDTurns>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_1">
+			<Text>이 경이로움이 영구적으로 +1 [ICON_SCIENCE] 과학과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_VOLCANO_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<NearbyFeature>FEATURE_JUNGLE</NearbyFeature>
-			<RequiredBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_2">
+			<Text>화왕을 제물로 바쳐 인구 -1 [ICON_POPULATION] 감소, 크라카토아가 +3 [ICON_PEACE] 신앙을 제공하고 {4_Turns} 동안 [COLOR_POSITIVE_TEXT]황금기[ENDCOLOR]가 시작됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_VOLCANO_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<NearbyFeature>FEATURE_ATOLL</NearbyFeature>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_3">
+			<Text>인근 정글이 추가로 +2 [ICON_RESEARCH] 과학을 제공합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_VOLCANO</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_4">
+			<Text>인근 산호초가 +5 [ICON_RESEARCH] 과학을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_VOLCANO</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_1">
+			<Text>*아시다시피, 지구의 중심에서 초고열 마그마가 지각을 뚫고 분출되는 과정이...*[NEWLINE]간단히 말해, 새로운 발견을 했다는 건가? 훌륭하군, 도서관에 추가해라.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_VOLCANO</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_2">
+			<Text>*지역 종교 지도자들이 매우 기묘한 천문 의식을 따르며, 이는 내가 섬에서 만났던 원주민들을 연상시키는데...*[NEWLINE]종교 분쟁에 대한 해결책을 찾았다고? 아주 좋군, 그에게 진행하도록 허가해라.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_VOLCANO</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_3">
+			<Text>*지역의 생태계는 정말 놀랍습니다, 폐하. 이와 같은 최종 생태계를 본 적이 없습니다, 심지어 산악 탐험 때에도...*[NEWLINE]또 과학적 발견인가? 좋다, 이건 내 과학 고문에게 전달해라. 그가 알아서 처리할 것이다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_VOLCANO</FeatureType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_4">
+			<Text>*이 편지를 시작하기 전에, 극히 신중을 기해야 한다는 점을 강조해야 합니다. 제가 이 서신에서 밝히려고 하는 가능성을 이해할 상상력을 가진 사람은 극소수입니다! 제가 믿기로는 용융해안의 산호초가, 사실 비교적 최근에 형성된 것입니다! 그렇죠! 그 놀라운 지각 변동 과정이...*[NEWLINE]미안하다, 잠깐 졸았군. 너도 알다시피, 모든 걸 내 과학 고문에게 전달해라.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_VOLCANO</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_2</CityEventChoiceType>
-			<FeatureType>FEATURE_VOLCANO</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_3</CityEventChoiceType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_4</CityEventChoiceType>
-			<FeatureType>FEATURE_ATOLL</FeatureType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-1</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_VOLCANO_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION">
-      <Text>초열화염</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP">
-      <Text>화산에 있는 우리 요원에게서 소식이 왔습니다, 관대한 폐하. 이번에는 좋은 소식인 것 같긴 한데, 항상 확신할 수는 없군요.[NEWLINE]읽어드릴까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_1">
-      <Text>이 경이로움이 영구적으로 +1 [ICON_SCIENCE] 과학과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_2">
-      <Text>화왕을 제물로 바쳐 인구 -1 [ICON_POPULATION] 감소, 크라카토아가 +3 [ICON_PEACE] 신앙을 제공하고 {4_Turns} 동안 [COLOR_POSITIVE_TEXT]황금기[ENDCOLOR]가 시작됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_3">
-      <Text>인근 정글이 추가로 +2 [ICON_RESEARCH] 과학을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_HELP_CHOICE_4">
-      <Text>인근 산호초가 +5 [ICON_RESEARCH] 과학을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_1">
-      <Text>*아시다시피, 지구의 중심에서 초고열 마그마가 지각을 뚫고 분출되는 과정이...*[NEWLINE]간단히 말해, 새로운 발견을 했다는 건가? 훌륭하군, 도서관에 추가해라.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_2">
-      <Text>*지역 종교 지도자들이 매우 기묘한 천문 의식을 따르며, 이는 내가 섬에서 만났던 원주민들을 연상시키는데...*[NEWLINE]종교 분쟁에 대한 해결책을 찾았다고? 아주 좋군, 그에게 진행하도록 허가해라.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_3">
-      <Text>*지역의 생태계는 정말 놀랍습니다, 폐하. 이와 같은 최종 생태계를 본 적이 없습니다, 심지어 산악 탐험 때에도...*[NEWLINE]또 과학적 발견인가? 좋다, 이건 내 과학 고문에게 전달해라. 그가 알아서 처리할 것이다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_VOLCANO_DESCRIPTION_CHOICE_4">
-      <Text>*이 편지를 시작하기 전에, 극히 신중을 기해야 한다는 점을 강조해야 합니다. 제가 이 서신에서 밝히려고 하는 가능성을 이해할 상상력을 가진 사람은 극소수입니다! 제가 믿기로는 용융해안의 산호초가, 사실 비교적 최근에 형성된 것입니다! 그렇죠! 그 놀라운 지각 변동 과정이...*[NEWLINE]미안하다, 잠깐 졸았군. 너도 알다시피, 모든 걸 내 과학 고문에게 전달해라.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

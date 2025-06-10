@@ -1,141 +1,29 @@
-﻿<GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>30</RandomChance>
-			<RandomChanceDelta>2</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_WALLS</RequiredBuildingClass>
-			<CityEventArt>advisorforeign.dds</CityEventArt>
-			<CityEventAudio>AS2D_EVENT_EFOREIGN</CityEventAudio>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION">
+			<Text>이주, 이주</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
-			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP">
+			<Text>이주민인 난민 공동체가 도시의 문 앞에 도착하여 보호를 요청하고 있습니다. 그들은 길에서 당신의 외교 고문을 만났으며, 피난처를 약속받았다고 주장합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
-			<CityEventLinker>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventLinker>
-			<CheckForActive>false</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_1">
+			<Text>근처 농장들이 [ICON_GOLD] 금화 +1 , [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1을 제공합니다. 그러나 [ICON_RESEARCH] 문맹 임계값이 +10% 증가합니다.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementRequired>IMPROVEMENT_PLANTATION</ImprovementRequired>
-			<EventDuration>100</EventDuration>
-			<ScienceMedianModifier>10</ScienceMedianModifier>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>농장 소유자들은 항상 새로운 노동자를 찾고 있습니다. 잘 벌지는 못하지만, 정직한 일입니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_2</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<CityHappiness>-2</CityHappiness>
-			<EventDuration>100</EventDuration>
-			<EventBuildingClass>BUILDINGCLASS_SYNAGOGUE</EventBuildingClass>
-			<CannotHaveBuildingClass>BUILDINGCLASS_SYNAGOGUE</CannotHaveBuildingClass>
-			<CityHasPlayerReligion>true</CityHasPlayerReligion>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_2">
+			<Text>사람들이 시나고그를 세우고 그 주위에서 살기 시작합니다. 그러나 도시 내 반유대주의로 인해 [ICON_HAPPINESS_3] 불행 +2가 발생합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<RequiresGarrison>true</RequiresGarrison>
-			<RandomBarbarianSpawn>3</RandomBarbarianSpawn>
-			<EraScaling>true</EraScaling>
-			<EventDuration>100</EventDuration>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>새로운 시민을 위한 충분한 공간이 있습니다. 하지만 그들의 특정 종파가 신자들 사이에서 많은 적을 만들 것이라고 경고해야 합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_3">
+			<Text>사람들의 산출물에서 {2_InstantYield}를 얻습니다. 도시 주변에 최대 3 [ICON_WAR] 야만인이 나타납니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>피난처? 우리는 지금도 간신히 버티고 있습니다. 그들의 자원을 압수하고 저항하는 자는 처치하십시오.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>75</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>50</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_ImprovementYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</CityEventChoice_ImprovementYieldChange>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION">
-      <Text>이주, 이주</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP">
-      <Text>이주민인 난민 공동체가 도시의 문 앞에 도착하여 보호를 요청하고 있습니다. 그들은 길에서 당신의 외교 고문을 만났으며, 피난처를 약속받았다고 주장합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_1">
-      <Text>근처 농장들이 +1 [ICON_GOLD] 금화, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙을 제공합니다. 그러나 [ICON_RESEARCH] 문해력 임계값이 +10% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>농장 소유자들은 항상 새로운 노동자를 찾고 있습니다. 잘 벌지는 못하지만, 정직한 일입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_2">
-      <Text>사람들이 시나고그를 세우고 그 주위에서 살기 시작합니다. 그러나 도시 내 반유대주의로 인해 +2 [ICON_HAPPINESS_3] 불행이 발생합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>새로운 시민을 위한 충분한 공간이 있습니다. 하지만 그들의 특정 종파가 신자들 사이에서 많은 적을 만들 것이라고 경고해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_3">
-      <Text>사람들의 공급물에서 {2_InstantYield}를 얻습니다. 도시 주변에 최대 3 [ICON_WAR] 야만인이 나타납니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>피난처? 우리는 지금도 간신히 충분합니다. 그들의 자원을 압수하고 저항하는 자는 처치하십시오.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

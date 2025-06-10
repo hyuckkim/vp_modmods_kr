@@ -1,274 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_HEADS</Type>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_HEADS_HELP</Help>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<!-- So major I think it needs to go in this category -->
-			<NumChoices>6</NumChoices>
-			<RandomChance>100</RandomChance>
-			<RandomChanceDelta>100</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<IsSuperUnhappy>true</IsSuperUnhappy>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION">
+			<Text>목을 베어라!</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_1</Help>
-			<RequiresHolyCity>true</RequiresHolyCity>
-			<EventBuildingClassGlobal>BUILDINGCLASS_HEADS_RELIGION_DUMMY</EventBuildingClassGlobal>
-			<ReligiousUnrestModifierGlobal>-35</ReligiousUnrestModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP">
+			<Text>위대한 당신, 제국이 미쳐가고 잔인해지고 있습니다! 범죄가 거리에서 공개적으로 자행되며, 학교와 사업체는 버려지고, 남성과 여성은 먹거리를 확보하기 위해 끔찍한 일을 해야만 하는 상황입니다.[NEWLINE]우리는 통제력을 회복해야 합니다. 국민들은 당신이 누구인지 기억해야 합니다! 국가에 도전하는 자들은 죽어야 합니다![NEWLINE]저희는 당신에게 조치를 취할 것을 간곡히 권고합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_2</Description>
-			<PrereqTech>TECH_METALLURGY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_HEADS_CULTURE_DUMMY</EventBuildingClassGlobal>
-			<CultureMedianModifierGlobal>-20</CultureMedianModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_1">
+			<Text>[ICON_PEACE] 종교 불행의 임계점이 35% 감소합니다. 당신의 도시에서 [ICON_CITIZEN] 시민이 태어날 때마다, 해당 도시의 [ICON_PEACE] 신앙 출력의 50%를 즉시 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_3</Description>
-			<PrereqTech>TECH_RIFLING</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARSENAL</RequiredAnywhereBuildingClass>
-			<BasicNeedsMedianModifierGlobal>-20</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_2">
+			<Text>[ICON_CULTURE] 무료의 임계점이 20% 감소합니다. [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 동안 당신의 도시는 +15% [ICON_CULTURE] 문화를 생산합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_4</Description>
-			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_POLICE_STATION</RequiredAnywhereBuildingClass>
-			<GoldMedianModifierGlobal>-20</GoldMedianModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_3">
+			<Text>[ICON_STRENGTH] 고통의 임계점이 20% 감소합니다. 병영은 도시의 [ICON_PRODUCTION] 생산을 5% 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_5</Description>
-			<PrereqTech>TECH_PENICILIN</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredAnywhereBuildingClass>
-			<ScienceMedianModifierGlobal>-20</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_4">
+			<Text>[ICON_GOLD] 빈곤의 임계점이 20% 감소합니다. 경찰서가 도시에서 생성되는 [ICON_GOLD] 금을 10% 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HEADS_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_6</Description>
-			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
-			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
-			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_5">
+			<Text>[ICON_RESEARCH] 문맹의 임계점이 20% 감소합니다. 병원은 도시에서 생성되는 [ICON_RESEARCH] 과학을 15% 증가시킵니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_6">
+			<Text>[ICON_GOLD] 빈곤, [ICON_STRENGTH] 범죄, [ICON_CULTURE] 무료, 및 [ICON_RESEARCH] 문맹의 임계점이 5% 감소합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_1">
+			<Text>무리들이 나를 두려워하지 않는 것 같습니다. 하지만 신을 두려워하겠죠... 이단자들을 모아서 모두에게 보이도록 십자가형에 처해 주세요. 그들이 내 발 앞에서 회개할 때까지 살육은 멈추지 않을 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_2">
+			<Text>짐이 곧 국가다! 목을 베어라! 이 농민들의 머리를 내 궁전의 성벽에 꽂아 놓으세요!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_3">
+			<Text>세상에는 자연스러운 질서가 있으며, 이를 뒤엎으려는 자들은 잘 되지 않습니다. 질서를 회복하시오, 군사 고문관!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_4">
+			<Text>인생에서 확실한 두 가지는 죽음과 세금입니다. 후자를 지불하지 않는 자들은 전자를 향해 걸어가게 될 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_HEADS</EventType>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_5">
+			<Text>분명히 이들 중 일부는 도움이 불가능합니다. 우리가 청산하고 다시 시작해야 할 곳이 있습니다. 우리는 체계적이어야 합니다. 우리는 철저해야 합니다. 우리는 고통을 주기 위해 여기 있는 것이 아니라, 우리가 수행해야 할 작업을 잔인하게 효율적으로 처리할 것입니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_HEADS_RELIGION_DUMMY</Type>
-			<DefaultBuilding>BUILDING_HEADS_RELIGION_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_6">
+			<Text>국내 고문관, 당신이 이 괴물들처럼 정신을 잃었단 말인가요?! 그들이 어떻게 단두대, 총살대, 전기 의자, 그리고 치사 주사를 제안할 수 있습니까?! 분명히 이성으로 해결할 방법이 있을 것입니다. 사람들이 평화와 번영을 갈망하고 있지 않습니까?</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_HEADS_CULTURE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_HEADS_CULTURE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY">
+			<Text>참회</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_HEADS_RELIGION_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_HEADS_RELIGION_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<IsDummy>true</IsDummy>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY_HELP">
+			<Text>시민이 태어날 때마다, 도시의 생산량의 50%에 해당하는 [ICON_PEACE] 신앙을 획득합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_HEADS_CULTURE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_HEADS_CULTURE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<IsDummy>true</IsDummy>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY">
+			<Text>짐이 곧 국가다</Text>
 		</Row>
-	</Buildings>
-	<Building_GrowthExtraYield>
-		<Row>
-			<BuildingType>BUILDING_HEADS_RELIGION_DUMMY</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 동안 +15% [ICON_CULTURE] 문화를 생산합니다.</Text>
 		</Row>
-	</Building_GrowthExtraYield>
-
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_HEADS_CULTURE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>15</Yield>
-		</Row>
-	</Building_WLTKDYieldMod>
-
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION">
-      <Text>목을 베어라!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP">
-      <Text>위대한 당신, 제국이 미쳐가고 잔인해지고 있습니다! 범죄가 거리에서 공개적으로 자행되며, 학교와 사업체는 버려지고, 남성과 여성은 먹거리를 확보하기 위해 끔찍한 일을 해야만 하는 상황입니다.[NEWLINE]우리는 통제력을 회복해야 합니다. 국민들은 당신이 누구인지 기억해야 합니다! 국가에 도전하는 자들은 죽어야 합니다![NEWLINE]저희는 당신에게 조치를 취할 것을 간곡히 권고합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_1">
-      <Text>[ICON_PEACE] 종교 불행의 임계점이 35% 감소합니다. 당신의 도시에서 [ICON_CITIZEN] 시민이 태어날 때마다, 해당 도시의 [ICON_PEACE] 신앙 출력의 50%를 즉시 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_2">
-      <Text>[ICON_CULTURE] 무료의 임계점이 20% 감소합니다. [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 동안 당신의 도시는 +15% [ICON_CULTURE] 문화를 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_3">
-      <Text>[ICON_STRENGTH] 고통의 임계점이 20% 감소합니다. 병영은 도시의 [ICON_PRODUCTION] 생산을 5% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_4">
-      <Text>[ICON_GOLD] 빈곤의 임계점이 20% 감소합니다. 경찰서가 도시에서 생성되는 [ICON_GOLD] 금을 10% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_5">
-      <Text>[ICON_RESEARCH] 문맹의 임계점이 20% 감소합니다. 병원은 도시에서 생성되는 [ICON_RESEARCH] 과학을 15% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_6">
-      <Text>[ICON_GOLD] 빈곤, [ICON_STRENGTH] 범죄, [ICON_CULTURE] 무료, 및 [ICON_RESEARCH] 문맹의 임계점이 5% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_1">
-      <Text>무리들이 나를 두려워하지 않는 것 같습니다. 하지만 신을 두려워하겠죠... 이단자들을 모아서 모두에게 보이도록 십자가형에 처해 주세요. 그들이 내 발 앞에서 회개할 때까지 살육은 멈추지 않을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_2">
-      <Text>짐이 곧 국가다! 목을 베어라! 이 농민들의 머리를 내 궁전의 성벽에 꽂아 놓으세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_3">
-      <Text>세상에는 자연스러운 질서가 있으며, 이를 뒤엎으려는 자들은 잘 되지 않습니다. 질서를 회복하시오, 군사 고문관!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_4">
-      <Text>인생에서 확실한 두 가지는 죽음과 세금입니다. 후자를 지불하지 않는 자들은 전자를 향해 걸어가게 될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_5">
-      <Text>분명히 이들 중 일부는 도움이 불가능합니다. 우리가 청산하고 다시 시작해야 할 곳이 있습니다. 우리는 체계적이어야 합니다. 우리는 철저해야 합니다. 우리는 고통을 주기 위해 여기 있는 것이 아니라, 우리가 수행해야 할 작업을 잔인하게 효율적으로 처리할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_6">
-      <Text>국내 고문관, 당신이 이 괴물들처럼 정신을 잃었단 말인가요?! 그들이 어떻게 단두대, 총살대, 전기 의자, 그리고 치사 주사를 제안할 수 있습니까?! 분명히 이성으로 해결할 방법이 있을 것입니다. 사람들이 평화와 번영을 갈망하고 있지 않습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY">
-      <Text>참회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY_HELP">
-      <Text>시민이 태어날 때마다, 도시의 생산량의 50%에 해당하는 [ICON_PEACE] 신앙을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY">
-      <Text>짐이 곧 국가다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY_HELP">
-      <Text>[COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 동안 +15% [ICON_CULTURE] 문화를 생산합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

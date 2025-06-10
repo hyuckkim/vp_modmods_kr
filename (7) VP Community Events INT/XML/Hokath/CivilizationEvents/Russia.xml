@@ -1,494 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_RUSSIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_RUSSIA</RequiredCiv>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 정치적 후원</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 젊은 장교의 경력을 후원합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_RUSSIA_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 동화</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_CHIVALRY</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 러시아의 가치와 문화적 관행을 찬양하는 캠페인을 시작합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 법정</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<IsUnhappy>true</IsUnhappy>
-			<EventBuildingClassGlobal>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 엄격한 봉건 법전을 정의합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_RUSSIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<UnitClassRequired>UNITCLASS_ATOMIC_BOMB</UnitClassRequired>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 징병</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 민간인들로부터 막대한 군대를 징집합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 문학</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 뛰어난 러시아 문학을 위한 상을 설정합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 군사화</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 산업에 대한 국가의 중대한 통제를 벗어납니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_RUSSIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION">
+			<Text>우리가 사랑하는 것이 적어질 때</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_RUSSIA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_RUSSIA_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP">
+			<Text>위대한 러시아 국민의 아름답고 지혜로운 여왕님, 당신의 겸손한 조언자들이 당신의 위엄 앞에 무릎을 꿇습니다. 이 비밀 회의의 의미를 밝히시기를 간청드립니다.[NEWLINE][NEWLINE]황제 폐하를 어떻게 도와드릴 수 있을까요?</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_RUSSIA_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_RUSSIA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_RUSSIA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_2">
+			<Text>툰드라에서 +1 [ICON_FOOD] 식량과 +1 [ICON_CULTURE] 문화를 얻습니다. 반야는 작업 범위 내의 모든 눈 덮인 타일에 대해 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_RUSSIA_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_RUSSIA_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_3">
+			<Text>농장에서 +1 [ICON_GOLD] 금을 생성하고, 성은 도시의 [ICON_PRODUCTION] 생산량을 5% 증가시킵니다. 그러나 [ICON_GOLD] 빈곤 임계값이 5% 증가합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldPerXTerrainTimes100>
-		<Row>
-			<BuildingType>BUILDING_RUSSIA_UE_DUMMY</BuildingType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_4">
+			<Text>[ICON_CAPITAL] 수도에서 {2_InstantYield}를 징집하여 여섯 개의 테르시오를 만듭니다. 모든 요새와 성채는 +2 [ICON_FOOD] 식량을 생성합니다.</Text>
 		</Row>
-	</Building_YieldPerXTerrainTimes100>
-	<Building_BuildingClassYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_RUSSIA_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_5">
+			<Text>소유한 도시마다 당신의 [ICON_GREAT_WRITER] 작가 조합이 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIA_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_6">
+			<Text>군사 자금을 {2_InstantYield}만큼 증가시킵니다. 모든 요새와 성채는 +3 [ICON_PRODUCTION] 생산량, [ICON_RESEARCH] 과학, [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
 		</Row>
-	</Building_BuildingClassYieldChanges>
-
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<UnitType>UNIT_SPANISH_TERCIO</UnitType>
-			<Quantity>6</Quantity>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>젊고 의욕적인 군 장교를 주목하고 있습니다. 그가... 발전하도록 하십시오.</Text>
 		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_ICE</FeatureType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*제국의 대부분이 경험하는 극한의 추위가 독특한 문화적 관행을 발전시켰습니다*[NEWLINE]이 차가운 고향이 러시아 사람들을 강하고 탄력 있게 만들었습니다. 보드카, 반야, 불타는 벽난로 옆의 바야 야가 이야기: 러시아 정체성을 어떻게든 확립하고 싶습니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>5</Modifier>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*농노와 영주들이 무질서하고 서로 싸우고 있습니다*[NEWLINE]당신, 나의 조언자들은 대러시아 법전을 작성하여 제국의 다양한 부분을 더 안정적이고 지배 가능한 구조로 정리해야 합니다. 모두가 나의 러시아에서 제자리를 찾게 하십시오.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*전쟁은 새로운 병력의 대규모 유입으로 크게 혜택을 볼 것입니다*[NEWLINE]전세를 뒤집기 위해 대규모 스트렐치 군대를 징집하고 싶습니다. 우리는 압도적인 숫자로 적을 무찌르고 동시에 자립적인 가난한 자들을 제자리에 돌려보낼 것입니다. 나아가서, 모든 전투 가능한 남자에게 할버드와 머스킷을 지급하십시오!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*나라가 큰 사회적 침체에 빠지면서, 러시아 정신의 순수함이 최근 문학에 드러났습니다*[NEWLINE]이 절망적인 여성들과 그들의 고통스러운 우울증의 매력을 이해하지 못하지만, 논의되는 것보다 논의되지 않는 것이 더 나쁩니다. 이러한 책들이 국내외에서 주목을 받고 있다면, 더 많은 책들을 보고 싶습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*타락한 외국 돼지들이 전 세계를 그들의 더러운 이데올로기로 지배하려 합니다*[NEWLINE]이제 세계는 '핵무기'를 가진 적들로 가득 차 있으며, 평화의 적들은 우리를 끝내기 위해 그 힘을 가지고 있습니다. 이런 일은 허용될 수 없습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY">
+			<Text>반야</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_HELP">
+			<Text>작업 범위 내의 모든 눈 덮인 타일에 대해 +2 [ICON_CULTURE] 문화.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2">
+			<Text>러시아 문학</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2_HELP">
+			<Text>[ICON_GREAT_WRITER] 작가 조합에 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수 추가.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_TerrainYieldChange>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-2</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-2500</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2500</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_RUSSIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 정치적 후원</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 젊은 장교의 경력을 후원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 동화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 러시아의 가치와 문화적 관행을 찬양하는 캠페인을 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 법정</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 엄격한 봉건 법전을 정의합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 징병</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 민간인들로부터 막대한 군대를 징집합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 문학</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 뛰어난 러시아 문학을 위한 상을 설정합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 군사화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_RUSSIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 산업에 대한 국가의 중대한 통제를 벗어납니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION">
-      <Text>우리가 사랑하는 것이 적어질 때</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP">
-      <Text>위대한 러시아 국민의 아름답고 지혜로운 여왕님, 당신의 겸손한 조언자들이 당신의 위엄 앞에 무릎을 꿇습니다. 이 비밀 회의의 의미를 밝히시기를 간청드립니다.[NEWLINE][NEWLINE]황제 폐하를 어떻게 도와드릴 수 있을까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_2">
-      <Text>툰드라에서 +1 [ICON_FOOD] 식량과 +1 [ICON_CULTURE] 문화를 얻습니다. 반야는 작업 범위 내의 모든 눈 덮인 타일에 대해 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_3">
-      <Text>농장에서 +1 [ICON_GOLD] 금을 생성하고, 성은 도시의 [ICON_PRODUCTION] 생산량을 5% 증가시킵니다. 그러나 [ICON_GOLD] 빈곤 임계값이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_4">
-      <Text>[ICON_CAPITAL] 수도에서 {2_InstantYield}를 징집하여 여섯 개의 테르시오를 만듭니다. 모든 요새와 성채는 +2 [ICON_FOOD] 식량을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_5">
-      <Text>소유한 도시마다 당신의 [ICON_GREAT_WRITER] 작가 조합이 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_HELP_CHOICE_6">
-      <Text>군사 자금을 {2_InstantYield}만큼 증가시킵니다. 모든 요새와 성채는 +3 [ICON_PRODUCTION] 생산량, [ICON_RESEARCH] 과학, [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>젊고 의욕적인 군 장교를 주목하고 있습니다. 그가... 발전하도록 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*제국의 대부분이 경험하는 극한의 추위가 독특한 문화적 관행을 발전시켰습니다*[NEWLINE]이 차가운 고향이 러시아 사람들을 강하고 탄력 있게 만들었습니다. 보드카, 반야, 불타는 벽난로 옆의 바야 야가 이야기: 러시아 정체성을 어떻게든 확립하고 싶습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*농노와 영주들이 무질서하고 서로 싸우고 있습니다*[NEWLINE]당신, 나의 조언자들은 대러시아 법전을 작성하여 제국의 다양한 부분을 더 안정적이고 지배 가능한 구조로 정리해야 합니다. 모두가 나의 러시아에서 제자리를 찾게 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*전쟁은 새로운 병력의 대규모 유입으로 크게 혜택을 볼 것입니다*[NEWLINE]전세를 뒤집기 위해 대규모 스트렐치 군대를 징집하고 싶습니다. 우리는 압도적인 숫자로 적을 무찌르고 동시에 자립적인 가난한 자들을 제자리에 돌려보낼 것입니다. 나아가서, 모든 전투 가능한 남자에게 할버드와 머스킷을 지급하십시오!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*나라가 큰 사회적 침체에 빠지면서, 러시아 정신의 순수함이 최근 문학에 드러났습니다*[NEWLINE]이 절망적인 여성들과 그들의 고통스러운 우울증의 매력을 이해하지 못하지만, 논의되는 것보다 논의되지 않는 것이 더 나쁩니다. 이러한 책들이 국내외에서 주목을 받고 있다면, 더 많은 책들을 보고 싶습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_RUSSIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*타락한 외국 돼지들이 전 세계를 그들의 더러운 이데올로기로 지배하려 합니다*[NEWLINE]이제 세계는 '핵무기'를 가진 적들로 가득 차 있으며, 평화의 적들은 우리를 끝내기 위해 그 힘을 가지고 있습니다. 이런 일은 허용될 수 없습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY">
-      <Text>반야</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_HELP">
-      <Text>작업 범위 내의 모든 눈 덮인 타일에 대해 +2 [ICON_CULTURE] 문화.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2">
-      <Text>러시아 문학</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_RUSSIA_UE_DUMMY_2_HELP">
-      <Text>[ICON_GREAT_WRITER] 작가 조합에 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수 추가.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

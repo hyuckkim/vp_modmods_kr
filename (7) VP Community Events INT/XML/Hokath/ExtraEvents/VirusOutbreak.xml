@@ -1,129 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_MOTABA_OUTBREAK</Type>
-			<Description>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP</Help>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<NumChoices>2</NumChoices>
-			<RandomChance>10</RandomChance>
-			<EventCooldown>25</EventCooldown>
-			<MinimumCityPopulation>20</MinimumCityPopulation>
-			<RandomChanceDelta>2</RandomChanceDelta>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1_S">
+			<Text>{2_CityName} 도시가 끔찍한 바이러스 발병에 시달리고 있습니다.</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_MOTABA_OUTBREAK</CityEventType>
-			<EventChoice>EVENT_MOTABA_VIRUS_CHOICE_1</EventChoice>
-			<CheckKnownPlayers>true</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
-			<CheckOnlyEventCity>false</CheckOnlyEventCity>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1">
+			<Text>{2_CityName} 도시의 [ICON_CITIZEN] 인구가 5 감소했습니다!</Text>
 		</Row>
-		<Row>
-			<CityEventType>CITY_EVENT_MOTABA_OUTBREAK</CityEventType>
-			<CityEventChoice>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoice>
-			<CheckForActive>false</CheckForActive>
-			<CheckOnlyEventCity>false</CheckOnlyEventCity>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2_S">
+			<Text>{2_CityName} 도시가 끔찍한 바이러스 발병과 싸우고 있습니다.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_1</Help>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2">
+			<Text>{2_CityName} 도시가 5명의 [ICON_CITIZEN] 인구를 잃었지만, 연구자들이 치료제를 개발 중입니다!</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_2</Description>
-			<RequiredBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredBuildingClass>
-			<EventDuration>2</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION">
+			<Text>바이러스 발병</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-2000</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP">
+			<Text>도시가 치명적인 모타바 바이러스에 휘말렸습니다. 현재로서는 치료제가 없습니다. 최악의 상황에 대비해야 합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-5</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_1">
+			<Text>{2_InstantYield}를 잃습니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-5</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_2">
+			<Text>{2_InstantYield}를 잃지만, 앞으로 이러한 사건에 면역이 됩니다.</Text>
 		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_MOTABA_OUTBREAK</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_1">
+			<Text>격리 조치만이 우리가 사용할 수 있는 유일한 방법입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_MOTABA_OUTBREAK</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_2">
+			<Text>의료 연구소에 필요한 모든 것을 제공하세요. 이 사태가 다시 발생하기 전에 답을 얻어야 합니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-	<CityEventChoice_Notification>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1</CityEventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</CityEventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1_S">
-      <Text>{2_CityName} 도시가 끔찍한 바이러스 발병에 시달리고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_1">
-      <Text>{2_CityName} 도시의 [ICON_CITIZEN] 인구가 5 감소했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2_S">
-      <Text>{2_CityName} 도시가 끔찍한 바이러스 발병과 싸우고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2">
-      <Text>{2_CityName} 도시가 5명의 [ICON_CITIZEN] 인구를 잃었지만, 연구자들이 치료제를 개발 중입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION">
-      <Text>바이러스 발병</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP">
-      <Text>도시가 치명적인 모타바 바이러스에 휘말렸습니다. 현재로서는 치료제가 없습니다. 최악의 상황에 대비해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_1">
-      <Text>{2_InstantYield}를 잃습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_HELP_CHOICE_2">
-      <Text>{2_InstantYield}를 잃지만, 앞으로 이러한 사건에 면역이 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_1">
-      <Text>격리 조치만이 우리가 사용할 수 있는 유일한 방법입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_MOTABA_OUTBREAK_DESCRIPTION_CHOICE_2">
-      <Text>의료 연구소에 필요한 모든 것을 제공하세요. 이 사태가 다시 발생하기 전에 답을 얻어야 합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

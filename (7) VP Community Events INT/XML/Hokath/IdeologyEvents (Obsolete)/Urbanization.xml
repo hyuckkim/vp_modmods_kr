@@ -1,201 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_IDEOLOGY_URBANIZATION</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>45</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_URBANIZATION</RequiredPolicy>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION">
+			<Text>런던의 커다란 연기</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_1</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TRAINSTATION</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_URBANIZATION_DUMMY</EventBuildingClassGlobal>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP">
+			<Text>우리의 거대한 도시들의 분주한 거리들이 외곽과 상공으로 확장되기를 열망하고 있습니다. 그러나 우리는 더 많은 인프라가 필요하며, 구체적으로 우리의 목표에 맞는 교통 수단이 필요합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_SEAPORT</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_1">
+			<Text>5 [ICON_RES_IRON] 철을 할당하여 도시 연결당 2% [ICON_GOLD] 골드를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_URBANIZATION_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 투자하여 등대, 항구, 해군기지에서 +1 [ICON_GOLD] 골드 및 +2 [ICON_FOOD] 식량을 얻습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_URBANIZATION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_3">
+			<Text>공항이 -3 [ICON_FOOD] 식량을 소모하여 +2 [ICON_GOLD] 골드를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_URBANIZATION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_1">
+			<Text>우리의 영광스러운 산업 혁명의 굉음을 내는 증기 기관들이 새로운 번영의 시대로 우리를 이끌어 갈 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_URBANIZATION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_2">
+			<Text>우리가 이 나라를 발전시키기 위해 필요한 대부분의 자재는 해외에 있습니다. 우리는 우리가 필요로 하는 수입 물량을 처리할 수 있는 충분한 조선소를 건설해야 합니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_3">
+			<Text>비행기는 여행의 미래입니다. 비행기를 통해 우리는 사람들과 상품을 지역 경제를 강화할 수 있도록 운송할 수 있으며, 어떤 대가를 치르더라도 이를 달성해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY">
+			<Text>산업 혁명</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY_HELP">
+			<Text>[ICON_CONNECTED] 도시 연결에서 +2% [ICON_GOLD] 골드.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>125</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_IDEOLOGY_URBANIZATION_DUMMY</Type>
-			<DefaultBuilding>BUILDING_IDEOLOGY_URBANIZATION_DUMMY</DefaultBuilding>
-		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_IDEOLOGY_URBANIZATION_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_IDEOLOGY_URBANIZATION_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<CityConnectionTradeRouteModifier>2</CityConnectionTradeRouteModifier>
-		</Row>
-	</Buildings>
-
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>-5</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>5</Quantity>
-		</Row>
-	</EventChoice_MinimumResourceRequired>
-		
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_URBANIZATION_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION">
-      <Text>런던의 커다란 연기</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP">
-      <Text>우리의 거대한 도시들의 분주한 거리들이 외곽과 상공으로 확장되기를 열망하고 있습니다. 그러나 우리는 더 많은 인프라가 필요하며, 구체적으로 우리의 목표에 맞는 교통 수단이 필요합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_1">
-      <Text>5 [ICON_RES_IRON] 철을 할당하여 도시 연결당 2% [ICON_GOLD] 골드를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 투자하여 등대, 항구, 해군기지에서 +1 [ICON_GOLD] 골드 및 +2 [ICON_FOOD] 식량을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_HELP_CHOICE_3">
-      <Text>공항이 -3 [ICON_FOOD] 식량을 소모하여 +2 [ICON_GOLD] 골드를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_1">
-      <Text>우리의 영광스러운 산업 혁명의 굉음을 내는 증기 기관들이 새로운 번영의 시대로 우리를 이끌어 갈 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_2">
-      <Text>우리가 이 나라를 발전시키기 위해 필요한 대부분의 자재는 해외에 있습니다. 우리는 우리가 필요로 하는 수입 물량을 처리할 수 있는 충분한 조선소를 건설해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_URBANIZATION_DESCRIPTION_CHOICE_3">
-      <Text>비행기는 여행의 미래입니다. 비행기를 통해 우리는 사람들과 상품을 지역 경제를 강화할 수 있도록 운송할 수 있으며, 어떤 대가를 치르더라도 이를 달성해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY">
-      <Text>산업 혁명</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_IDEOLOGY_URBANIZATION_DUMMY_HELP">
-      <Text>[ICON_CONNECTED] 도시 연결에서 +2% [ICON_GOLD] 골드.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

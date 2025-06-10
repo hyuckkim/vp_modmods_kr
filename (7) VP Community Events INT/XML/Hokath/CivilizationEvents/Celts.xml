@@ -1,522 +1,107 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_CELTS_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_CELTS</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 잠재적인 자식</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 위대한 잠재력을 지닌 아이에게 축복을 내립니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
-			<ImprovementAnywhereRequired>IMPROVEMENT_MINE</ImprovementAnywhereRequired>
-			<UnitClassRequired>UNITCLASS_CARGO_SHIP</UnitClassRequired>
-			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY_2</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 주석 독점</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY_3</EventBuildingClassGlobal>
-			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
-			<RequiresWar>true</RequiresWar>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 주석을 독점하여 거래로부터 건강한 수익을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
-			<EventPromotion>PROMOTION_UE_BAGPIPES</EventPromotion>
-			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 부족 통합</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OXFORD_UNIVERSITY</RequiredAnywhereBuildingClass>
-			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 하나의 켈트 배너 아래 부족들을 통합합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CELTS_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STADIUM</RequiredAnywhereBuildingClass>
-			<EraScaling>true</EraScaling>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 영광의 파이프</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4">
+			<Text>켈트의 파이프 소리가 가장 단단한 군인들도 두려워하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 해부학 대학</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5">
+			<Text>켈트 해부학 대학이 인체 생리학에 관한 여러 혁신적인 발견을 통해 세계 최고의 의료 기관이 됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 낭만주의</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 켈트 예술가들의 군대를 지원하여 지구상에서 가장 훌륭한 공연을 선보입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_CELTS_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION">
+			<Text>별들이 정렬되다</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_CELTS_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP">
+			<Text>여왕님, 전쟁의 여왕님. 여름 동지가 다가오고 있으며, 목성과 화성이 함께합니다. 관례에 따라, 우리의 장로들이 귀하의 편의에 따라 모입니다.[NEWLINE][NEWLINE]신들이 당신을 통해 말씀하십니다, 위대한 여왕님. 우리가 해야 할 일을 말씀해 주십시오.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_CELTS_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_CELTS_UE_DUMMY_3</Type>
-			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY_3</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_2">
+			<Text>광산에서 +1 [ICON_GOLD] 금을 얻습니다. 또한, [ICON_INTERNATIONAL_TRADE] 무역 노선에서 +2 [ICON_GOLD] 금을 얻습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_CELTS_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_3">
+			<Text>[ICON_CAPITAL] 수도에 세 명의 광전사가 도착합니다. 성과 요새에서 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_CELTS_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<TradeRouteLandGoldBonus>200</TradeRouteLandGoldBonus>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_4">
+			<Text>근접 전투 유닛과 총기 유닛이 파이퍼 프로모션을 받아, 주변 적의 [ICON_STRENGTH] 전투력을 10% 감소시키고 처치 시 [ICON_CULTURE] 문화를 얻습니다. 모든 도시에서 +33% [ICON_GREAT_MUSICIAN] 위대한 음악가 포인트를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_CELTS_UE_DUMMY_3</Type>
-			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY_3</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY_3</Description>
-			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_3_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_5">
+			<Text>{2_InstantYield}을(를) 투자합니다. 옥스포드 대학교가 +10 [ICON_FOOD] 식량, [ICON_TOURISM] 관광, [ICON_RESEARCH] 과학을 생산합니다. 대학들이 +2 [ICON_FOOD] 식량, [ICON_TOURISM] 관광, [ICON_RESEARCH] 과학을 생산합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_CELTS_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<Modifier>33</Modifier>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_6">
+			<Text>예술가들에게 국가 자금을 제공합니다. 비용은 {2_InstantYield}입니다. 모든 [ICON_GREAT_MUSICIAN] 음악가, [ICON_GREAT_ARTIST] 예술가, [ICON_GREAT_WRITER] 작가들이 +3 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-	<Building_BuildingClassYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_CELTS_UE_DUMMY_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_1">
+			<Text>*9월의 춘분에 위대한 의식 중에 태어난 아이가 있습니다*[NEWLINE]이 아이는 위대한 운명을 지닌 것으로 알려져 있습니다.</Text>
 		</Row>
-	</Building_BuildingClassYieldChanges>
-	
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_BAGPIPES</Type>
-			<Description>TXT_KEY_PROMOTION_UE_BAGPIPES</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<NearbyEnemyCombatMod>-10</NearbyEnemyCombatMod>
-			<NearbyEnemyCombatRange>1</NearbyEnemyCombatRange>
-			<Help>TXT_KEY_PROMOTION_UE_BAGPIPES_HELP</Help>
-			<PortraitIndex>2</PortraitIndex>
-			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_BAGPIPES</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_2">
+			<Text>*장로들은 항구에서 상인들이 멀리서 켈트족이 풍부한 부드러운 금속을 찾으러 온다고 보고합니다*[NEWLINE]지구는 신실한 자만 축복하니, 우리의 번영은 신들의 기쁨의 표징입니다!</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_3">
+			<Text>*명백한 징후에 비추어 부족들이 그들의 차이점을 제쳐두고, 하나의 배너 아래 당신에게 그들의 자원을 약속합니다*[NEWLINE]켈트의 전사 전통은 결코 죽지 않을 것입니다! 내가 통치하는 동안은! 이것을 맹세합니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*위대한 음악가가 업그레이드된 파이프 세트의 디자인을 의회에 가져옵니다*[NEWLINE]이 도면으로 우리의 군대는 어디에서든 켈트의 음악에 맞춰 행진할 것입니다. 다가오는 음악의 악명이 우리의 적들을 두렵게 하게 하십시오.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-	<UnitPromotions_YieldFromKills>
-		<Row>
-			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*새로 설립된 해부학 대학이 의회에 음산한 요청을 합니다*[NEWLINE]우리의 빈 몸이 제물로 사용되는 것은 신앙의 핵심 원칙 중 하나입니다. 치유자들은 먼 곳에서 우리 방법을 배우기 위해 올 것입니다.</Text>
 		</Row>
-	</UnitPromotions_YieldFromKills>
-	
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-500</Yield>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*우리의 방식과 역사에 대한 관심이 폭발적으로 증가하였습니다*[NEWLINE]우리는 전 세계를 돌며 켈트 예술의 대축제를 열 것입니다. 우리는 모든 경기장을 가득 채울 것입니다. 살아있는 사람은 누구도 우리의 이야기를 모르는 채로 죽지 않을 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-400</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES">
+			<Text>파이프</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES_HELP">
+			<Text>-10% [ICON_STRENGTH] 전투력 감소. 처치 시 [ICON_CULTURE] 문화 획득. 켈트의 이벤트를 통해서만 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY">
+			<Text>파이프</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_HELP">
+			<Text>+33% [ICON_GREAT_MUSICIAN] 위대한 음악가 포인트.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2">
+			<Text>주석 무역</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2_HELP">
+			<Text>무역 노선에서 +2 [ICON_GOLD] 금을 추가로 얻습니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>10</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3">
+			<Text>켈트 전사 전통</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>10</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3_HELP">
+			<Text>성에 +2 [ICON_CULTURE] 문화를 추가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<UnitType>UNIT_DANISH_BERSERKER</UnitType>
-			<Quantity>3</Quantity>
-		</Row>
-	</EventChoice_FreeUnits>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 잠재적인 자식</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 위대한 잠재력을 지닌 아이에게 축복을 내립니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 주석 독점</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 주석을 독점하여 거래로부터 건강한 수익을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 부족 통합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 하나의 켈트 배너 아래 부족들을 통합합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 영광의 파이프</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4">
-      <Text>켈트의 파이프 소리가 가장 단단한 군인들도 두려워하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 해부학 대학</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5">
-      <Text>켈트 해부학 대학이 인체 생리학에 관한 여러 혁신적인 발견을 통해 세계 최고의 의료 기관이 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 낭만주의</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 켈트 예술가들의 군대를 지원하여 지구상에서 가장 훌륭한 공연을 선보입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION">
-      <Text>별들이 정렬되다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP">
-      <Text>여왕님, 전쟁의 여왕님. 여름 동지가 다가오고 있으며, 목성과 화성이 함께합니다. 관례에 따라, 우리의 장로들이 귀하의 편의에 따라 모입니다.[NEWLINE][NEWLINE]신들이 당신을 통해 말씀하십니다, 위대한 여왕님. 우리가 해야 할 일을 말씀해 주십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_2">
-      <Text>광산에서 +1 [ICON_GOLD] 금을 얻습니다. 또한, [ICON_INTERNATIONAL_TRADE] 무역 노선에서 +2 [ICON_GOLD] 금을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_3">
-      <Text>[ICON_CAPITAL] 수도에 세 명의 광전사가 도착합니다. 성과 요새에서 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_4">
-      <Text>근접 전투 유닛과 총기 유닛이 파이퍼 프로모션을 받아, 주변 적의 [ICON_STRENGTH] 전투력을 10% 감소시키고 처치 시 [ICON_CULTURE] 문화를 얻습니다. 모든 도시에서 +33% [ICON_GREAT_MUSICIAN] 위대한 음악가 포인트를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_5">
-      <Text>{2_InstantYield}을(를) 투자합니다. 옥스포드 대학교가 +10 [ICON_FOOD] 식량, [ICON_TOURISM] 관광, [ICON_RESEARCH] 과학을 생산합니다. 대학들이 +2 [ICON_FOOD] 식량, [ICON_TOURISM] 관광, [ICON_RESEARCH] 과학을 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_6">
-      <Text>예술가들에게 국가 자금을 제공합니다. 비용은 {2_InstantYield}입니다. 모든 [ICON_GREAT_MUSICIAN] 음악가, [ICON_GREAT_ARTIST] 예술가, [ICON_GREAT_WRITER] 작가들이 +3 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_1">
-      <Text>*9월의 춘분에 위대한 의식 중에 태어난 아이가 있습니다*[NEWLINE]이 아이는 위대한 운명을 지닌 것으로 알려져 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_2">
-      <Text>*장로들은 항구에서 상인들이 멀리서 켈트족이 풍부한 부드러운 금속을 찾으러 온다고 보고합니다*[NEWLINE]지구는 신실한 자만 축복하니, 우리의 번영은 신들의 기쁨의 표징입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_3">
-      <Text>*명백한 징후에 비추어 부족들이 그들의 차이점을 제쳐두고, 하나의 배너 아래 당신에게 그들의 자원을 약속합니다*[NEWLINE]켈트의 전사 전통은 결코 죽지 않을 것입니다! 내가 통치하는 동안은! 이것을 맹세합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_4">
-      <Text>*위대한 음악가가 업그레이드된 파이프 세트의 디자인을 의회에 가져옵니다*[NEWLINE]이 도면으로 우리의 군대는 어디에서든 켈트의 음악에 맞춰 행진할 것입니다. 다가오는 음악의 악명이 우리의 적들을 두렵게 하게 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_5">
-      <Text>*새로 설립된 해부학 대학이 의회에 음산한 요청을 합니다*[NEWLINE]우리의 빈 몸이 제물로 사용되는 것은 신앙의 핵심 원칙 중 하나입니다. 치유자들은 먼 곳에서 우리 방법을 배우기 위해 올 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_6">
-      <Text>*우리의 방식과 역사에 대한 관심이 폭발적으로 증가하였습니다*[NEWLINE]우리는 전 세계를 돌며 켈트 예술의 대축제를 열 것입니다. 우리는 모든 경기장을 가득 채울 것입니다. 살아있는 사람은 누구도 우리의 이야기를 모르는 채로 죽지 않을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES">
-      <Text>파이프</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES_HELP">
-      <Text>-10% [ICON_STRENGTH] 전투력 감소. 처치 시 [ICON_CULTURE] 문화 획득. 켈트의 이벤트를 통해서만 부여됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY">
-      <Text>파이프</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_HELP">
-      <Text>+33% [ICON_GREAT_MUSICIAN] 위대한 음악가 포인트.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2">
-      <Text>주석 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2_HELP">
-      <Text>무역 노선에서 +2 [ICON_GOLD] 금을 추가로 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3">
-      <Text>켈트 전사 전통</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3_HELP">
-      <Text>성에 +2 [ICON_CULTURE] 문화를 추가합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

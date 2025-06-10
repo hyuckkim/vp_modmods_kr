@@ -1,151 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_FREEDOM_DOCTRINE</Type>
-			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<RandomChance>40</RandomChance>
-			<EventCooldown>75</EventCooldown>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_COVERT_ACTION</RequiredPolicy>
-			<RandomChanceDelta>3</RandomChanceDelta>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S">
+			<Text>{1_Playername}가 외국의 반체제 인사들에게 손을 내밀었습니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1</Help>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1">
+			<Text>{1_Playername}는 추가적인 문화적 및 외교적 영향력을 얻었습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2</Description>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S">
+			<Text>소문이 돌고 있습니다: {1_Playername}이 테러 조직에 자금을 지원하고 있다는군요!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3</Description>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_POLICE_STATION</RequiredAnywhereBuildingClass>
-			<GoldMedianModifierGlobal>-10</GoldMedianModifierGlobal>
-			<ScienceMedianModifierGlobal>-10</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2">
+			<Text>독재와 질서 이데올로기의 제국은 점령된 도시에서의 파르티잔 공격에 취약해졌습니다.</Text>
 		</Row>
-	</EventChoices>
-	<EventChoice_EventLinks>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
-			<EventChoiceLinker>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceLinker>
-			<CheckForActive>false</CheckForActive>
-			<CheckKnownPlayers>true</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION">
+			<Text>자유의 동맹</Text>
 		</Row>
-	</EventChoice_EventLinks>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP">
+			<Text>최근의 비밀 작전 지원으로 인해 CI:7 내에서 여러 경쟁 팀이 생겼습니다. 각 팀은 추가 자금을 어떻게 사용할지에 대한 다른 아이디어를 가지고 있습니다.[NEWLINE][NEWLINE]당신의 판결은 무엇입니까?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1">
+			<Text>+4 [ICON_RES_PAPER] 종이를 얻습니다. 공항이 도시에서 [ICON_CULTURE] 문화 생산량을 5% 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2">
+			<Text>다른 이데올로기의 [ICON_OCCUPIED] 점령 도시가 파르티잔 공격에 취약해집니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_PAPER</ResourceType>
-			<Quantity>4</Quantity>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3">
+			<Text>모든 도시에서 [ICON_GOLD] 빈곤과 [ICON_RESEARCH] 문맹의 기준을 15% 낮춥니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Modifier>5</Modifier>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1">
+			<Text>저는 오퍼레이션 골든 도어가 마음에 듭니다. 우리의 신념과 이데올로기의 순수성으로 적을 물리치겠습니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2">
+			<Text>저는 오퍼레이션 핀쿠션이 마음에 듭니다. 자유를 갈망하는 이들에게 자유를 위한 무기를 제공하겠습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>10</Flavor>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3">
+			<Text>저는 오퍼레이션 일루미나투스가 마음에 듭니다. 때로는 자유를 유지하기 위해 스스로의 도덕적 기준에 반하는 일을 해야 합니다. 우리는 지도자로서의 부담이 있는 반면, 행복한 대중은 순진하게 간섭할 수 없습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S">
-      <Text>{1_Playername}가 외국의 반체제 인사들에게 손을 내밀었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1">
-      <Text>{1_Playername}는 추가적인 문화적 및 외교적 영향력을 얻었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S">
-      <Text>소문이 돌고 있습니다: {1_Playername}이 테러 조직에 자금을 지원하고 있다는군요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2">
-      <Text>독재와 질서 이데올로기의 제국은 점령된 도시에서의 파르티잔 공격에 취약해졌습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION">
-      <Text>자유의 동맹</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP">
-      <Text>최근의 비밀 작전 지원으로 인해 CI:7 내에서 여러 경쟁 팀이 생겼습니다. 각 팀은 추가 자금을 어떻게 사용할지에 대한 다른 아이디어를 가지고 있습니다.[NEWLINE][NEWLINE]당신의 판결은 무엇입니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1">
-      <Text>+4 [ICON_RES_PAPER] 종이를 얻습니다. 공항이 도시에서 [ICON_CULTURE] 문화 생산량을 5% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2">
-      <Text>다른 이데올로기의 [ICON_OCCUPIED] 점령 도시가 파르티잔 공격에 취약해집니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3">
-      <Text>모든 도시에서 [ICON_GOLD] 빈곤과 [ICON_RESEARCH] 문맹의 기준을 15% 낮춥니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1">
-      <Text>저는 오퍼레이션 골든 도어가 마음에 듭니다. 우리의 신념과 이데올로기의 순수성으로 적을 물리치겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2">
-      <Text>저는 오퍼레이션 핀쿠션이 마음에 듭니다. 자유를 갈망하는 이들에게 자유를 위한 무기를 제공하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3">
-      <Text>저는 오퍼레이션 일루미나투스가 마음에 듭니다. 때로는 자유를 유지하기 위해 스스로의 도덕적 기준에 반하는 일을 해야 합니다. 우리는 지도자로서의 부담이 있는 반면, 행복한 대중은 순진하게 간섭할 수 없습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

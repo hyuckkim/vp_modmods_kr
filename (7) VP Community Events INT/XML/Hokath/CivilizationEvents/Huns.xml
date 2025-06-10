@@ -1,557 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_HUNS_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_HUNS</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 궁정의 군주</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 새로운 군주를 선택합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_DRAMA</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_HUNS_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 장례식</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
-			<ImprovementAnywhereRequired>IMPROVEMENT_CITADEL</ImprovementAnywhereRequired>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 전사들을 위한 복잡한 장례식을 공식화합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			<EventTech>TECH_METALLURGY</EventTech>
-			<ObsoleteTech>TECH_METALLURGY</ObsoleteTech>
-			<GoldenAgeTurns>20</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 국경 방어</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<IsUnhappy>true</IsUnhappy>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 강력한 국경 방어를 구축하기 시작합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_HUNS_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<EventBuildingClassGlobal>BUILDINGCLASS_HUNS_UE_DUMMY_2</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 군대 현대화</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 총기 설계에서 급속한 발전을 이루었습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 시민 불복종</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5">
+			<Text>훈족의 도시들이 [ICON_RESISTANCE] 폭동에 휘말리며, 사람들은 사회경제적 개혁을 요구합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 군사-산업 복합체</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 점점 더 격화되는 전쟁에 대비합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_HUNS_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION">
+			<Text>피의 맹세</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_HUNS_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_HUNS_UE_DUMMY</DefaultBuilding>
-			<MaxPlayerInstances>1</MaxPlayerInstances>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP">
+			<Text>위대하고 두려운 왕이시여, 부족들에 의해 전쟁 수장으로 명명된 자들이 당신 앞에 와서 피의 맹세로 영원한 충성을 다짐합니다.[NEWLINE]훈족의 영광이여!</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_HUNS_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_HUNS_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_HUNS_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_HUNS_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_HUNS_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_HUNS_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<CapitalOnly>true</CapitalOnly>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_2">
+			<Text>[ICON_CAPITAL] 수도에 공성 연대기와 두 명의 검투사를 배치합니다. 당신의 유닛이 사망할 때마다 [ICON_CULTURE] 문화와 [ICON_PEACE] 신앙을 5 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_HUNS_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_HUNS_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_HUNS_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_HUNS_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 국경 방어에 투자합니다. 성, 요새 및 성채는 +2 [ICON_PRODUCTION] 생산과 +2 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromDeath>
-		<Row>
-			<BuildingType>BUILDING_HUNS_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>5</Yield>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 [COLOR_POSITIVE_TEXT]금속학[ENDCOLOR] 연구에 투입합니다. 20턴 동안 [ICON_GOLDEN_AGE] 황금기를 맞이합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_HUNS_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>5</Yield>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_5">
+			<Text>사람들의 요구를 수용하여 1턴 동안 [ICON_RESISTANCE] 무정부 상태에 진입합니다. 서기 사무소, 인쇄소, 그리고 은신처는 +25% [ICON_PRODUCTION] 생산과 +25% [ICON_GOLD] 금을 생성합니다. 에키스는 +1 [ICON_GOLD] 금과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Building_YieldFromDeath>
-	<Building_DomainProductionModifiers>
-		<Row>
-			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
-			<DomainType>DOMAIN_LAND</DomainType>
-			<Modifier>15</Modifier>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 군사-산업 복합체에 투자합니다. 모든 도시는 유닛 생산 시 +15% [ICON_PRODUCTION] 생산을 얻습니다. 요새와 성채는 +3 [ICON_PRODUCTION] 생산과 +3 [ICON_GOLD] 금을 생성합니다. 에키스는 +1 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
-			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>15</Modifier>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_1">
+			<Text>나는 기쁩니다. 이제 우리 사람들에게 영감을 줄 비전이 있는 군주를 찾아야 할 때입니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
-			<DomainType>DOMAIN_SEA</DomainType>
-			<Modifier>15</Modifier>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_2">
+			<Text>좋습니다. 전쟁의 시기에 우리는 우리의 명성을 얻을 기회를 가졌습니다. 모든 이들이 우리 전쟁단에 합류할 것입니다, 그들의 풍성한 무덤 속에서 영광스러운 정복의 기억이 살아 있을 것입니다!</Text>
 		</Row>
-	</Building_DomainProductionModifiers>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<UnitType>UNIT_HUN_BATTERING_RAM</UnitType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_3">
+			<Text>우리는 땅을 개척했지만, 이제는 방어해야 합니다. 모든 부족이 나를 지지하여 불침범의 벽을 구축하기를 기대합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<UnitType>UNIT_SWORDSMAN</UnitType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*화약 무기가 끔찍하게 효과적임을 증명했습니다*[NEWLINE]훌륭합니다. 이 기회를 통해 총기 문제를 논의하고, 우리 군대를 위한 새로운 모델을 논의하겠습니다.</Text>
 		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*사람들이 사회적 및 경제적 개혁을 요구하며, 국가의 사무소와 기념비에 행진하고 있습니다*[NEWLINE]그들이 모인 김에, 이 부족장들이 사람들이 무엇 때문에 이렇게 불만을 갖고 있는지, 내가 반란에 직면하고 있는 이유를 설명할 수 있을까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*당신의 이전 군주가 적의 요원에 의해 암살되었습니다*[NEWLINE]나는 맹세를 수정하기로 결정했습니다. 우리는 서로에 대한 충성뿐만 아니라, 적들을 발 아래 짓밟고 그들의 여성들이 울부짖는 소리를 들을 결의를 다짐할 것입니다!</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURT_SCRIBE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>25</Modifier>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY">
+			<Text>훈족의 장례식</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HERMITAGE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>25</Modifier>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_HELP">
+			<Text>전투에서 사망한 유닛에 대해 [ICON_CULTURE] 문화와 [ICON_PEACE] 신앙을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>25</Modifier>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2">
+			<Text>훈족 군사-산업 복합체</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURT_SCRIBE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>25</Modifier>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2_HELP">
+			<Text>군사 유닛에 대해 +15% [ICON_PRODUCTION] 생산 증가.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HERMITAGE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>25</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>25</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>700</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>700</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 궁정의 군주</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 새로운 군주를 선택합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 장례식</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 전사들을 위한 복잡한 장례식을 공식화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 국경 방어</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 강력한 국경 방어를 구축하기 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 군대 현대화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 총기 설계에서 급속한 발전을 이루었습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 시민 불복종</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5">
-      <Text>훈족의 도시들이 [ICON_RESISTANCE] 폭동에 휘말리며, 사람들은 사회경제적 개혁을 요구합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 군사-산업 복합체</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 점점 더 격화되는 전쟁에 대비합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION">
-      <Text>피의 맹세</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP">
-      <Text>위대하고 두려운 왕이시여, 부족들에 의해 전쟁 수장으로 명명된 자들이 당신 앞에 와서 피의 맹세로 영원한 충성을 다짐합니다.[NEWLINE]훈족의 영광이여!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_2">
-      <Text>[ICON_CAPITAL] 수도에 공성 연대기와 두 명의 검투사를 배치합니다. 당신의 유닛이 사망할 때마다 [ICON_CULTURE] 문화와 [ICON_PEACE] 신앙을 5 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 국경 방어에 투자합니다. 성, 요새 및 성채는 +2 [ICON_PRODUCTION] 생산과 +2 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 [COLOR_POSITIVE_TEXT]금속학[ENDCOLOR] 연구에 투입합니다. 20턴 동안 [ICON_GOLDEN_AGE] 황금기를 맞이합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_5">
-      <Text>사람들의 요구를 수용하여 1턴 동안 [ICON_RESISTANCE] 무정부 상태에 진입합니다. 서기 사무소, 인쇄소, 그리고 은신처는 +25% [ICON_PRODUCTION] 생산과 +25% [ICON_GOLD] 금을 생성합니다. 에키스는 +1 [ICON_GOLD] 금과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 군사-산업 복합체에 투자합니다. 모든 도시는 유닛 생산 시 +15% [ICON_PRODUCTION] 생산을 얻습니다. 요새와 성채는 +3 [ICON_PRODUCTION] 생산과 +3 [ICON_GOLD] 금을 생성합니다. 에키스는 +1 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_1">
-      <Text>나는 기쁩니다. 이제 우리 사람들에게 영감을 줄 비전이 있는 군주를 찾아야 할 때입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_2">
-      <Text>좋습니다. 전쟁의 시기에 우리는 우리의 명성을 얻을 기회를 가졌습니다. 모든 이들이 우리 전쟁단에 합류할 것입니다, 그들의 풍성한 무덤 속에서 영광스러운 정복의 기억이 살아 있을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_3">
-      <Text>우리는 땅을 개척했지만, 이제는 방어해야 합니다. 모든 부족이 나를 지지하여 불침범의 벽을 구축하기를 기대합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_4">
-      <Text>*화약 무기가 끔찍하게 효과적임을 증명했습니다*[NEWLINE]훌륭합니다. 이 기회를 통해 총기 문제를 논의하고, 우리 군대를 위한 새로운 모델을 논의하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_5">
-      <Text>*사람들이 사회적 및 경제적 개혁을 요구하며, 국가의 사무소와 기념비에 행진하고 있습니다*[NEWLINE]그들이 모인 김에, 이 부족장들이 사람들이 무엇 때문에 이렇게 불만을 갖고 있는지, 내가 반란에 직면하고 있는 이유를 설명할 수 있을까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_6">
-      <Text>*당신의 이전 군주가 적의 요원에 의해 암살되었습니다*[NEWLINE]나는 맹세를 수정하기로 결정했습니다. 우리는 서로에 대한 충성뿐만 아니라, 적들을 발 아래 짓밟고 그들의 여성들이 울부짖는 소리를 들을 결의를 다짐할 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY">
-      <Text>훈족의 장례식</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_HELP">
-      <Text>전투에서 사망한 유닛에 대해 [ICON_CULTURE] 문화와 [ICON_PEACE] 신앙을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2">
-      <Text>훈족 군사-산업 복합체</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2_HELP">
-      <Text>군사 유닛에 대해 +15% [ICON_PRODUCTION] 생산 증가.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,143 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>45</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_VOLUNTEER_ARMY</RequiredPolicy>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION">
+			<Text>군 복무중</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_1</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_BASE</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP">
+			<Text>우리의 자원 봉사 군대는 자유 사회의 힘을 보여주는 증거입니다. 징병이 불필요하다는 것을 입증한 지금, 우리는 어떻게 우리의 모집 노력을 사회에 가장 잘 봉사하도록 이끌 수 있을까요?</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_ACADEMY</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_1">
+			<Text>군사 기지는 턴당 -2 [ICON_GOLD] 골드가 소모되지만, [ICON_RESEARCH] 과학이 5% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FOREIGN_OFFICE</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_2">
+			<Text>군사 기지는 턴당 -2 [ICON_GOLD] 골드가 소모되지만, [ICON_CULTURE] 문화가 5% 증가합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_3">
+			<Text>외무부는 해당 도시에 [ICON_TOURISM] 관광을 10% 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_1">
+			<Text>군대는 사회에서 소외되고 억압된 청소년들에게 올바르게 사회에 통합할 수 있는 전망과 기술을 제공하는 도구입니다. 우리는 이 방향으로 노력을 집중해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_2">
+			<Text>군대는 항상 - 그리고 앞으로도 - 국가의 위계질서에서 중요한 역할을 할 것입니다. 우리의 임무의 무결성을 확보하기 위해 숙련되고 헌신적인 장교들을 모집하는 것이 매우 중요합니다!</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_3">
+			<Text>우리의 남성과 여성을 효과적으로 사용하려면, 그들이 직면한 적과 평화로 가는 길을 인식할 필요가 있습니다. 세계의 다른 지역들은 안정화가 필요하며, 우리는 효과적인 평화 유지군을 배치할 수 있는 위치로 나아가야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FOREIGN_OFFICE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION">
-      <Text>군 복무중</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP">
-      <Text>우리의 자원 봉사 군대는 자유 사회의 힘을 보여주는 증거입니다. 징병이 불필요하다는 것을 입증한 지금, 우리는 어떻게 우리의 모집 노력을 사회에 가장 잘 봉사하도록 이끌 수 있을까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_1">
-      <Text>군사 기지는 턴당 -2 [ICON_GOLD] 골드가 소모되지만, [ICON_RESEARCH] 과학이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_2">
-      <Text>군사 기지는 턴당 -2 [ICON_GOLD] 골드가 소모되지만, [ICON_CULTURE] 문화가 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_3">
-      <Text>외무부는 해당 도시에 [ICON_TOURISM] 관광을 10% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_1">
-      <Text>군대는 사회에서 소외되고 억압된 청소년들에게 올바르게 사회에 통합할 수 있는 전망과 기술을 제공하는 도구입니다. 우리는 이 방향으로 노력을 집중해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_2">
-      <Text>군대는 항상 - 그리고 앞으로도 - 국가의 위계질서에서 중요한 역할을 할 것입니다. 우리의 임무의 무결성을 확보하기 위해 숙련되고 헌신적인 장교들을 모집하는 것이 매우 중요합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_3">
-      <Text>우리의 남성과 여성을 효과적으로 사용하려면, 그들이 직면한 적과 평화로 가는 길을 인식할 필요가 있습니다. 세계의 다른 지역들은 안정화가 필요하며, 우리는 효과적인 평화 유지군을 배치할 수 있는 위치로 나아가야 합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

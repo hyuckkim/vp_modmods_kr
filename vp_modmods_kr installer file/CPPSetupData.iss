@@ -83,11 +83,11 @@ Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignore
 
 [Components]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC"; Types: VP34UC; Flags: exclusive disablenouninstallwarning 
-Name: "VP34UCNVC"; Description: "[기본] Vox Populi + 34UC (투표 문명색 제거)"; Types: VP34UCNVC; Flags: exclusive disablenouninstallwarning
+Name: "VP34UCNVC"; Description: "[기본] Vox Populi (투표 문명색 제거) + 34UC "; Types: VP34UCNVC; Flags: exclusive disablenouninstallwarning
 Name: "VP34UCEX"; Description: "[확장] Vox Populi + 34UC + 편의성 추가"; Types: VP34UCEX; Flags: exclusive disablenouninstallwarning
-Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)"; Types: VP34UCEXNVC; Flags: exclusive disablenouninstallwarning 
-Name: "VP34UCMAX"; Description: "[전체] Vox Populi + 34UC + 편의성 추가"; Types: VP34UCMAX; Flags: exclusive disablenouninstallwarning
-Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi + 34UC + 편의성 추가 (투표 문명색 제거)"; Types: VP34UCMAXNVC; Flags: exclusive disablenouninstallwarning 
+Name: "VP34UCEXNVC"; Description: "[확장] Vox Populi (투표 문명색 제거) + 34UC + 편의성 추가 "; Types: VP34UCEXNVC; Flags: exclusive disablenouninstallwarning 
+Name: "VP34UCMAX"; Description: "[전체] Vox Populi + 34UC + 편의성 추가  + 컨텐츠 추가"; Types: VP34UCMAX; Flags: exclusive disablenouninstallwarning
+Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi (투표 문명색 제거)+ 34UC + 편의성 추가  + 컨텐츠 추가"; Types: VP34UCMAXNVC; Flags: exclusive disablenouninstallwarning 
 
 [Types]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";

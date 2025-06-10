@@ -1,274 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT</Type>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP</Help>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<NumChoices>5</NumChoices>
-			<RandomChance>40</RandomChance>
-			<IsOneShot>false</IsOneShot>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<NearbyTerrain>TERRAIN_TUNDRA</NearbyTerrain>
-			<MinimumCityPopulation>10</MinimumCityPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION">
+			<Text>한파</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_1</Help>
-			<RiverOnly>true</RiverOnly>
-			<EraScaling>true</EraScaling>
-			<EventDuration>40</EventDuration>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP">
+			<Text>존경하는 지도자님, 걱정스러운 소식을 전해드립니다. 최근 우리 도시 근처의 겨울이 점점 더 혹독해지고 있으며, 이 문제를 추적하는 우리 사람들은 특히 추운 날씨가 다가오고 있다고 예측하고 있습니다.[NEWLINE]우리는 몇 가지 아이디어를 가지고 있습니다, 존경하는 지도자님. 이 문제를 어떻게 해결해야 할까요?</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_2</Description>
-			<CoastalOnly>true</CoastalOnly>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_1">
+			<Text>도시는 {3_CityYield}을 {5_Turns} 동안 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_3</Description>
-			<LocalResourceRequired>RESOURCE_SALT</LocalResourceRequired>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_2">
+			<Text>폭풍이 최대 1개씩의 농장, 목재소, 광산, 채석장을 약탈합니다. 무료로 일꾼을 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_4</Description>
-			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
-			<LocalResourceRequired>RESOURCE_COAL</LocalResourceRequired>
-			<EraScaling>true</EraScaling>
-			<EventDuration>40</EventDuration>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_3">
+			<Text>마을과 도시가 +1 [ICON_PRODUCTION] 생산을 생성하지만 {5_Turns} 동안 -1 [ICON_FOOD] 식량을 잃습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_COLD_FRONT_CHOICE_5</Type>
-			<Help>TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_5</Description>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>40</EventDuration>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_4">
+			<Text>마을과 도시가 +2 [ICON_PRODUCTION] 생산과 +2 [ICON_GOLD] 금을 생성하지만 {5_Turns} 동안 -2 [ICON_FOOD] 식량을 잃습니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_5">
+			<Text>도시의 모든 [ICON_GREAT_ENGINEER] 엔지니어가 {5_Turns} 동안 +2 [ICON_FOOD] 식량을 생성합니다. 도시에서는 {3_CityYield}를 잃습니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_1">
+			<Text>사람들이 강 위에서 처음으로 아이스 스케이트를 타고 있습니다. 참으로 멋지군요. 이런 광범위한 대책이 정말 필요한가요?</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_2">
+			<Text>날씨 시스템이 얼어붙은 바다와 상호작용하는 것에 대해 매우 걱정됩니다. 이 상황은 여러분이 생각했던 것보다 더 나쁩니다. 다가오는 폭풍에 대비하기 위해 일꾼이 필요합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_3">
+			<Text>우리의 과학 자문가가 제안한 계획으로, 지역에 저장된 소금을 활용하여 저수준 인프라를 이 악천후로부터 보호할 수 있다는 것은 우아한 해결책입니다. 이를 실행하세요!</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_COLD_FRONT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_4">
+			<Text>이 계획들은 훌륭합니다. 우리의 프로메테우스적인 열 생성 능력으로, 겨울 내내 3개의 타일에 있는 모든 집을 따뜻하게 할 수 있을 것입니다!</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_ImprovementDestructionRandom>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<Number>1</Number>
+		<Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_5">
+			<Text>우리의 배관 및 제조 전문 지식을 이용해 모든 집에 중앙 난방 시스템을 설치할 수 있다고요? 즉시 진행하십시오!</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<Number>1</Number>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<Number>1</Number>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
-			<Number>1</Number>
-		</Row>
-	</CityEventChoice_ImprovementDestructionRandom>
-	<CityEventChoice_FreeUnits>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_2</CityEventChoiceType>
-			<UnitType>UNIT_WORKER</UnitType>
-			<Quantity>1</Quantity>
-		</Row>
-	</CityEventChoice_FreeUnits>
-
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-	<CityEventChoice_ImprovementYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</CityEventChoice_ImprovementYieldChange>
-	<CityEventChoice_SpecialistYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</CityEventChoice_SpecialistYieldChange>
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-20</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_COLD_FRONT_CHOICE_5</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION">
-      <Text>한파</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP">
-      <Text>존경하는 지도자님, 걱정스러운 소식을 전해드립니다. 최근 우리 도시 근처의 겨울이 점점 더 혹독해지고 있으며, 이 문제를 추적하는 우리 사람들은 특히 추운 날씨가 다가오고 있다고 예측하고 있습니다.[NEWLINE]우리는 몇 가지 아이디어를 가지고 있습니다, 존경하는 지도자님. 이 문제를 어떻게 해결해야 할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_1">
-      <Text>도시는 {3_CityYield}을 {5_Turns} 동안 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_2">
-      <Text>폭풍이 최대 1개씩의 농장, 목재소, 광산, 채석장을 약탈합니다. 무료로 일꾼을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_3">
-      <Text>마을과 도시가 +1 [ICON_PRODUCTION] 생산을 생성하지만 {5_Turns} 동안 -1 [ICON_FOOD] 식량을 잃습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_4">
-      <Text>마을과 도시가 +2 [ICON_PRODUCTION] 생산과 +2 [ICON_GOLD] 금을 생성하지만 {5_Turns} 동안 -2 [ICON_FOOD] 식량을 잃습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_HELP_CHOICE_5">
-      <Text>도시의 모든 [ICON_GREAT_ENGINEER] 엔지니어가 {5_Turns} 동안 +2 [ICON_FOOD] 식량을 생성합니다. 도시에서는 {3_CityYield}를 잃습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_1">
-      <Text>사람들이 강 위에서 처음으로 아이스 스케이트를 타고 있습니다. 참으로 멋지군요. 이런 광범위한 대책이 정말 필요한가요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_2">
-      <Text>날씨 시스템이 얼어붙은 바다와 상호작용하는 것에 대해 매우 걱정됩니다. 이 상황은 여러분이 생각했던 것보다 더 나쁩니다. 다가오는 폭풍에 대비하기 위해 일꾼이 필요합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_3">
-      <Text>우리의 과학 자문가가 제안한 계획으로, 지역에 저장된 소금을 활용하여 저수준 인프라를 이 악천후로부터 보호할 수 있다는 것은 우아한 해결책입니다. 이를 실행하세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_4">
-      <Text>이 계획들은 훌륭합니다. 우리의 프로메테우스적인 열 생성 능력으로, 겨울 내내 3개의 타일에 있는 모든 집을 따뜻하게 할 수 있을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_COLD_FRONT_DESCRIPTION_CHOICE_5">
-      <Text>우리의 배관 및 제조 전문 지식을 이용해 모든 집에 중앙 난방 시스템을 설치할 수 있다고요? 즉시 진행하십시오!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

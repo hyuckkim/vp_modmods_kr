@@ -1,470 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_INDONESIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_INDONESIA</RequiredCiv>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 부관 관리</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 위대한 인물을 부관으로 임명했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredAnywhereBuildingClass>
-			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_INDONESIA_UE_DUMMY</EventBuildingClassGlobal>
-			<AffectsCoastalCitiesOnly>true</AffectsCoastalCitiesOnly>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 해상 무역</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AMPHITHEATER</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 그의 국민들에게 세계의 섬들 사이에서 안전한 위치를 보장하겠다고 연설합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 그림자 극장</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClassGlobal>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</EventBuildingClassGlobal>
-			<RequiredEra>ERA_MODERN</RequiredEra>
-			<LosingMoney>true</LosingMoney>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 극장 공연자들에게 후원을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INDONESIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<ImprovementAnywhereRequired>IMPROVEMENT_LUMBERMILL</ImprovementAnywhereRequired>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 가믈란 스타일</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 그의 음악가 조합에 많은 양의 금속을 기부합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 향신료 무역</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 외국 투자를 개방합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 환경 보호</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 산림 벌채의 환경적 영향을 막기 위해 조치를 취합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_INDONESIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION">
+			<Text>탑엥 마니스, 탑엥 크라스</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_INDONESIA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_INDONESIA_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP">
+			<Text>마하파티, 왕과 그의 궁정들은 당신이 이러한 문제를 어떻게 처리할지 알고 싶어합니다. 궁정은 특히 당신의 연설을 듣고 싶어합니다.[NEWLINE]궁전으로 가실래요?</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_INDONESIA_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_INDONESIA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_INDONESIA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_2">
+			<Text>해안 무역의 중요성을 강조합니다. 도시에서는 작업 가능한 해안 타일 2개마다 +1 [ICON_GOLD] 금을 받고, +20% [ICON_GREAT_MERCHANT] 위대한 상인 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_INDONESIA_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<TradeRouteTargetBonus>5</TradeRouteTargetBonus>
-			<TradeRouteRecipientBonus>5</TradeRouteRecipientBonus>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_3">
+			<Text>와양을 지원합니다. 작가들은 +1 [ICON_PEACE] 신앙과 +2 [ICON_CULTURE] 문화를 생성합니다. 암피극장은 +1 [ICON_PEACE] 신앙과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_INDONESIA_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<Modifier>20</Modifier>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_4">
+			<Text>새로운 악기로 [ICON_GREAT_MUSICIAN] 음악가들이 +5 [ICON_CULTURE] 문화와 +5 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-	<Building_YieldPerXTerrainTimes100>
-		<Row>
-			<BuildingType>BUILDING_INDONESIA_UE_DUMMY</BuildingType>
-			<TerrainType>TERRAIN_COAST</TerrainType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_5">
+			<Text>외국 투자를 장려하여 [ICON_INTERNATIONAL_TRADE] 무역 루트로부터 +5 [ICON_GOLD] 금을 생성합니다. [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 축하하는 도시는 +15% [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-	</Building_YieldPerXTerrainTimes100>
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_INDONESIA_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>15</Yield>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_6">
+			<Text>정글의 제재소는 +2 [ICON_GOLD] 금을 생성하지만 -1 [ICON_FOOD] 식량이 감소합니다. 환경 피해를 상쇄하기 위해 {1_YieldCost}를 보존 프로젝트에 투자하십시오: 동물원은 +6 [ICON_RESEARCH] 과학과 +4 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Building_WLTKDYieldMod>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*새로운 부관을 임명할 사람에 대한 논의가 이루어집니다*[NEWLINE]법원은 제가 후보자 목록에 대한 생각을 자세히 설명한 연설을 준비한 것을 기쁘게 생각할 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*문제는 경제와 대규모 해상 부문을 유지할지 여부에 관한 것입니다*[NEWLINE]바다는 우리가 사는 섬만큼이나 인도네시아 문화의 일부입니다. 만약에라도, 저는 우리의 해양 관계를 새로운 차원으로 끌어올리겠습니다!</Text>
 		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>4</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*귀족들은 다른 문명들의 극적인 유산을 부러워합니다, 왜 우리는 우리만의 유산이 없나요*[NEWLINE]부유한 가문들로부터 조금의 격려를 받으면, 독특하고 유명한 스타일이 놀라울 정도로 빠르게 발전할 것이라고 확신합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>6</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*장관들은 가믈란 음악 스타일을 매우 좋아합니다, 왜 더 널리 퍼지지 않는지 알고 싶어합니다*[NEWLINE]과거에는 금속 공급에 대한 긴급한 수요가 있었습니다. 이제는 더 많은 예비 자원이 있으므로 일부를 음악가 훈련에 사용할 수 있습니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*경제가 통제를 벗어나고 있으며, 귀족들은 당신이 그들의 자산이 안전하다고 보장할 것을 요구합니다!*[NEWLINE]저는 경제를 고치거나 자산을 압수할 수 있습니다. 가치 없는 투자를 갖는 것에는 의미가 없으므로, 저는 경제를 우선시하겠습니다. 실패할 경우 미리 사과드립니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*확장하는 팜 오일 산업이 엘리트를 매우 부유하게 만들었지만, 이제 생태학적 결과가 명확해지자 그들은 당신을 비난하고 있습니다*[NEWLINE]내 군주들이 얼마나 현명한지. 제가 할 수 있는 일을 자세히 설명한 대규모 보고서를 가지고 있습니다.</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY">
+			<Text>인도네시아 해상 무역</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_HELP">
+			<Text>작업 가능한 해안 타일 2개마다 +1 [ICON_GOLD] 금. +20% [ICON_GREAT_MERCHANT] 위대한 상인 점수.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2">
+			<Text>인도네시아 외국 무역</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2_HELP">
+			<Text>외국 무역 루트로부터 +5 [ICON_GOLD] 금. 국왕 경축일 동안 +15% [ICON_GOLD] 금.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 부관 관리</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 위대한 인물을 부관으로 임명했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 해상 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 그의 국민들에게 세계의 섬들 사이에서 안전한 위치를 보장하겠다고 연설합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 그림자 극장</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 극장 공연자들에게 후원을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 가믈란 스타일</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 그의 음악가 조합에 많은 양의 금속을 기부합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 향신료 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 외국 투자를 개방합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 환경 보호</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 산림 벌채의 환경적 영향을 막기 위해 조치를 취합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION">
-      <Text>탑엥 마니스, 탑엥 크라스</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP">
-      <Text>마하파티, 왕과 그의 궁정들은 당신이 이러한 문제를 어떻게 처리할지 알고 싶어합니다. 궁정은 특히 당신의 연설을 듣고 싶어합니다.[NEWLINE]궁전으로 가실래요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_2">
-      <Text>해안 무역의 중요성을 강조합니다. 도시에서는 작업 가능한 해안 타일 2개마다 +1 [ICON_GOLD] 금을 받고, +20% [ICON_GREAT_MERCHANT] 위대한 상인 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_3">
-      <Text>와양을 지원합니다. 작가들은 +1 [ICON_PEACE] 신앙과 +2 [ICON_CULTURE] 문화를 생성합니다. 암피극장은 +1 [ICON_PEACE] 신앙과 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_4">
-      <Text>새로운 악기로 [ICON_GREAT_MUSICIAN] 음악가들이 +5 [ICON_CULTURE] 문화와 +5 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_5">
-      <Text>외국 투자를 장려하여 [ICON_INTERNATIONAL_TRADE] 무역 루트로부터 +5 [ICON_GOLD] 금을 생성합니다. [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 축하하는 도시는 +15% [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_6">
-      <Text>정글의 제재소는 +2 [ICON_GOLD] 금을 생성하지만 -1 [ICON_FOOD] 식량이 감소합니다. 환경 피해를 상쇄하기 위해 {1_YieldCost}를 보존 프로젝트에 투자하십시오: 동물원은 +6 [ICON_RESEARCH] 과학과 +4 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>*새로운 부관을 임명할 사람에 대한 논의가 이루어집니다*[NEWLINE]법원은 제가 후보자 목록에 대한 생각을 자세히 설명한 연설을 준비한 것을 기쁘게 생각할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*문제는 경제와 대규모 해상 부문을 유지할지 여부에 관한 것입니다*[NEWLINE]바다는 우리가 사는 섬만큼이나 인도네시아 문화의 일부입니다. 만약에라도, 저는 우리의 해양 관계를 새로운 차원으로 끌어올리겠습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*귀족들은 다른 문명들의 극적인 유산을 부러워합니다, 왜 우리는 우리만의 유산이 없나요*[NEWLINE]부유한 가문들로부터 조금의 격려를 받으면, 독특하고 유명한 스타일이 놀라울 정도로 빠르게 발전할 것이라고 확신합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*장관들은 가믈란 음악 스타일을 매우 좋아합니다, 왜 더 널리 퍼지지 않는지 알고 싶어합니다*[NEWLINE]과거에는 금속 공급에 대한 긴급한 수요가 있었습니다. 이제는 더 많은 예비 자원이 있으므로 일부를 음악가 훈련에 사용할 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*경제가 통제를 벗어나고 있으며, 귀족들은 당신이 그들의 자산이 안전하다고 보장할 것을 요구합니다!*[NEWLINE]저는 경제를 고치거나 자산을 압수할 수 있습니다. 가치 없는 투자를 갖는 것에는 의미가 없으므로, 저는 경제를 우선시하겠습니다. 실패할 경우 미리 사과드립니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*확장하는 팜 오일 산업이 엘리트를 매우 부유하게 만들었지만, 이제 생태학적 결과가 명확해지자 그들은 당신을 비난하고 있습니다*[NEWLINE]내 군주들이 얼마나 현명한지. 제가 할 수 있는 일을 자세히 설명한 대규모 보고서를 가지고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY">
-      <Text>인도네시아 해상 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_HELP">
-      <Text>작업 가능한 해안 타일 2개마다 +1 [ICON_GOLD] 금. +20% [ICON_GREAT_MERCHANT] 위대한 상인 점수.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2">
-      <Text>인도네시아 외국 무역</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2_HELP">
-      <Text>외국 무역 루트로부터 +5 [ICON_GOLD] 금. 국왕 경축일 동안 +15% [ICON_GOLD] 금.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

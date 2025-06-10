@@ -1,204 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_FOUNTAIN_YOUTH</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_FOUNTAIN_YOUTH</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION">
+			<Text>만병통치약</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_NW_FOUNTAIN_YOUTH</CityEventType>
-			<CityEventChoice>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</CityEventChoice>
-			<CheckForActive>false</CheckForActive>
-			<CheckOnlyEventCity>true</CheckOnlyEventCity>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP">
+			<Text>폐하, 검은 망토를 두른 인물들이 대기실에서 당신을 기다리고 있습니다. 그들은... 젊음의 샘에 대해 논의하기를 원합니다.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_1">
+			<Text>이 자연경관은 영구적으로 +1 [ICON_FOOD] 식량과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_AQUEDUCT</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_2">
+			<Text>샘의 물이 수도교, 목욕탕, 식료품점 등을 통해 배포됩니다. 이 모든 건물들은 +3 [ICON_FOOD] 식량을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<ConvertToPlayerMajorityReligionPercent>75</ConvertToPlayerMajorityReligionPercent>
-			<CityLacksPlayerMajorityReligion>true</CityLacksPlayerMajorityReligion>
-			<EventBuildingClass>BUILDINGCLASS_CATHEDRAL</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_3">
+			<Text>샘은 최대 -10 [ICON_FOOD] 식량을 잃습니다. 폐허 위에 성당이 세워지며, 도시의 75%가 주류 종교로 개종합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_4</Help>
-			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
-			<Description>TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_4">
+			<Text>인근 농장이 +2 [ICON_FOOD] 식량을 제공합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEventChoice_EventLinks>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<CityEventChoiceLinker>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceLinker>
-			<CheckForActive>true</CheckForActive>
-			<CheckOnlyEventCity>true</CheckOnlyEventCity>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_1">
+			<Text>그것이 마법이든, 단순한 기분 탓이든, '젊음의 샘'이 그 물을 마신 사람들에게 눈에 띄는 효과를 준다는 것은 의심할 여지가 없습니다. 우리는 계속해서 이... 조직에 자금을 지원할 것입니다.</Text>
 		</Row>
-	</CityEventChoice_EventLinks>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_FOUNTAIN_YOUTH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_2">
+			<Text>*사절들이 샘을 대중에게 공개하는 것의 위험성에 대해 경고하려 합니다*[NEWLINE]신사들의 보안에 대한 입장은 존중하지만, 샘의 물을 최소한 지역적으로 배포하는 것은 누구도 눈치채지 못하게 할 수 있을 것입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_FOUNTAIN_YOUTH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_3">
+			<Text>*망토를 쓴 인물들이 자신들이 성직자임을 밝히며 이 이교도 성소의 파괴를 요구합니다!*[NEWLINE]젠장, 그들이 알아버렸군요. 교회의 일부 보장을 대가로 샘을 묻어버릴 수밖에 없겠군요.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_FOUNTAIN_YOUTH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_4">
+			<Text>*비밀 결사는 이전의 샘물을 비밀리에 배포하는 정책에 매우 만족합니다. 이제 그들은 이 계획을 농지 관개로 확대하고자 합니다*[NEWLINE]훌륭합니다. 마침내 그들이 우리의 생각을 받아들이게 되어 기쁩니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_FOUNTAIN_YOUTH</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-5</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-	<CityEventChoice_BuildingClassYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GROCER</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</CityEventChoice_BuildingClassYieldChange>
-	<CityEventChoice_ImprovementYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</CityEventChoice_ImprovementYieldChange>
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_FOUNTAIN_YOUTH</FeatureType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_FOUNTAIN_YOUTH</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</CityEventChoiceType>
-			<FeatureType>FEATURE_FOUNTAIN_YOUTH</FeatureType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-10</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	
-	
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-5</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION">
-      <Text>만병통치약</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP">
-      <Text>폐하, 검은 망토를 두른 인물들이 대기실에서 당신을 기다리고 있습니다. 그들은... 젊음의 샘에 대해 논의하기를 원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_1">
-      <Text>이 자연경관은 영구적으로 +1 [ICON_FOOD] 식량과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_2">
-      <Text>샘의 물이 수도교, 목욕탕, 식료품점 등을 통해 배포됩니다. 이 모든 건물들은 +3 [ICON_FOOD] 식량을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_3">
-      <Text>샘은 최대 -10 [ICON_FOOD] 식량을 잃습니다. 폐허 위에 성당이 세워지며, 도시의 75%가 주류 종교로 개종합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_HELP_CHOICE_4">
-      <Text>인근 농장이 +2 [ICON_FOOD] 식량을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_1">
-      <Text>그것이 마법이든, 단순한 기분 탓이든, '젊음의 샘'이 그 물을 마신 사람들에게 눈에 띄는 효과를 준다는 것은 의심할 여지가 없습니다. 우리는 계속해서 이... 조직에 자금을 지원할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_2">
-      <Text>*사절들이 샘을 대중에게 공개하는 것의 위험성에 대해 경고하려 합니다*[NEWLINE]신사들의 보안에 대한 입장은 존중하지만, 샘의 물을 최소한 지역적으로 배포하는 것은 누구도 눈치채지 못하게 할 수 있을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_3">
-      <Text>*망토를 쓴 인물들이 자신들이 성직자임을 밝히며 이 이교도 성소의 파괴를 요구합니다!*[NEWLINE]젠장, 그들이 알아버렸군요. 교회의 일부 보장을 대가로 샘을 묻어버릴 수밖에 없겠군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_FOUNTAIN_YOUTH_DESCRIPTION_CHOICE_4">
-      <Text>*비밀 결사는 이전의 샘물을 비밀리에 배포하는 정책에 매우 만족합니다. 이제 그들은 이 계획을 농지 관개로 확대하고자 합니다*[NEWLINE]훌륭합니다. 마침내 그들이 우리의 생각을 받아들이게 되어 기쁩니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

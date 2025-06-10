@@ -1,449 +1,89 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_BABYLON_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_BABYLON</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 예언</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1">
+			<Text>{3_PlayerName}이 예언의 아이를 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<ScienceMedianModifierGlobal>5</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 티아마트의 귀환</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2">
+			<Text>{3_PlayerName}이 사제단 내에서 더 많은 권력을 모으고 있습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_OBSERVATORY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 이슈타르 문</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HYDRO_PLANT</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_BABYLON_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
-			<YieldBonusAllCities>true</YieldBonusAllCities>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3">
+			<Text>{3_PlayerName}이 수천 명을 노예로 삼아 신들에게 바치는 이슈타르 문을 건설하고 있습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BABYLON_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOSPITAL</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 하늘의 혜성</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4">
+			<Text>{3_PlayerName}이 여러 관측소를 설립했습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 물막이</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5">
+			<Text>{3_PlayerName}이 세계에서 가장 큰 댐을 건설하여 수천 명을 이주시키고 죽였습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 신성한 우라늄</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6">
+			<Text>바빌로니아인들은 우라늄을 신성한 것으로 여기기 시작했습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_BABYLON_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION">
+			<Text>티아마트의 눈</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-2500</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP">
+			<Text>이번 아키투 축제에서 바빌론의 위대한 이들이 모여, 우리 아버지이자 창조자인 마르둑이 티아마트를 물리친 이야기를 들을 것입니다. 그러나 밤하늘에는 분노한 불덩이가 분명히 보입니다![NEWLINE][NEWLINE]이것은 무엇을 예고하는 것일까요, 현명한 느부갓네살이여?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-150</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_1">
+			<Text>선택한 위인을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_2">
+			<Text>사원은 +2 [ICON_FOOD] 식량과 +2 [ICON_RESEARCH] 과학을 생산하고, [ICON_GREAT_SCIENTIST] 과학자는 +1 [ICON_PEACE] 신앙을 생성합니다. 그러나, [ICON_RESEARCH] 문맹률이 5% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-2</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_3">
+			<Text>프로젝트가 [ICON_GOLD] 빈곤율을 5% 증가시킵니다. 그 대가로 두 개의 [ICON_RES_LAPIS] 라피스 라줄리와 궁전이 +2 [ICON_CULTURE] 문화와 +10% [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2500</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}를 사용합니다. 모든 도시에 무료 관측소를 제공하고, [ICON_GREAT_SCIENTIST] 과학자는 +2 [ICON_PEACE] 신앙을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_5">
+			<Text>모든 도시에서 {2_InstantYield}을 잃습니다. 도시들은 강 타일에서 +1 [ICON_PRODUCTION] 생산력과 +1 [ICON_FOOD] 식량을 얻습니다. 수력 발전소는 +5 [ICON_GOLD] 금을 획득합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield}를 재할당합니다. 6개의 [ICON_RES_URANIUM] 우라늄을 받습니다. 병원은 +5 [ICON_FOOD] 식량과 +5 [ICON_RESEARCH] 과학을 제공합니다.</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_1">
+			<Text>이것은 마르둑의 축복입니다. 이 별자리 아래 태어난 아이가 바빌론을 확실한 파멸로부터 구해낼 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_2">
+			<Text>*사람들이 공포에 빠집니다! 이것은 분명히 티아마트의 귀환을 예고하는 것입니다!*[NEWLINE]신들의 영역은 오직 성직자들만의 것입니다. 모든 권력을 지구라트 위에 집중시켜야 합니다. 일반인들에게는 안전하지 않습니다!</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_LAPIS</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_3">
+			<Text>이것은 신들의 경고입니다. 천 명의 노예가 천 일 동안 거대한 천상의 문을 건설한다면, 우리는 그들의 분노로부터 구원을 받을 수 있을 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>6</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_4">
+			<Text>*우리는 처음으로 이 '혜성'을 조사할 수 있는 기술을 보유하고 있습니다*[NEWLINE]모든 도시에 현자들에게 위대한 망원경을 장비하여 이 신성한 물체를 면밀히 연구하게 하십시오. 이번 시대에는 다시 기회가 없을 것입니다!</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>3</Quantity>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_5">
+			<Text>*당신은 우리의 가장 강력한 강에 댐을 건설하겠다는 야심찬 - 그러나 잠재적으로 파괴적인 - 계획에 대한 지원을 찾지 못했습니다*[NEWLINE]대사제를 불러오십시오. 그가 나의 의심을 확인해 줄 것입니다: 물의 신들이 우리에게 반란을 일으키려 하고 있습니다! 이것은 막아야 합니다...</Text>
 		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_6">
+			<Text>*정밀한 기구들이 혜성의 핵에 지구에 있는 것과 유사한 방사성 물질이 가득 차 있음을 보여줍니다*[NEWLINE]우리는 이 신성한 광물에 대해 모든 것을 알아야 합니다! 이것이 신들의 것이라면, 그것은 파괴와 치유의 힘을 동시에 가지고 있을 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY">
+			<Text>바빌론의 댐</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY_HELP">
+			<Text>강 타일에 +1 [ICON_FOOD] 식량 및 [ICON_PRODUCTION] 생산력.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HYDRO_PLANT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_BABYLON_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_BABYLON_UE_DUMMY</DefaultBuilding>
-		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_BABYLON_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_BABYLON_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_BABYLON_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_BABYLON_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
-		</Row>
-	</Buildings>
-	<Building_RiverPlotYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_BABYLON_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_BABYLON_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_RiverPlotYieldChanges>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 예언</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1">
-      <Text>{3_PlayerName}이 예언의 아이를 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 티아마트의 귀환</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2">
-      <Text>{3_PlayerName}이 사제단 내에서 더 많은 권력을 모으고 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 이슈타르 문</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3">
-      <Text>{3_PlayerName}이 수천 명을 노예로 삼아 신들에게 바치는 이슈타르 문을 건설하고 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 하늘의 혜성</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4">
-      <Text>{3_PlayerName}이 여러 관측소를 설립했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 물막이</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5">
-      <Text>{3_PlayerName}이 세계에서 가장 큰 댐을 건설하여 수천 명을 이주시키고 죽였습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 신성한 우라늄</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6">
-      <Text>바빌로니아인들은 우라늄을 신성한 것으로 여기기 시작했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION">
-      <Text>티아마트의 눈</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP">
-      <Text>이번 아키투 축제에서 바빌론의 위대한 이들이 모여, 우리 아버지이자 창조자인 마르둑이 티아마트를 물리친 이야기를 들을 것입니다. 그러나 밤하늘에는 분노한 불덩이가 분명히 보입니다![NEWLINE][NEWLINE]이것은 무엇을 예고하는 것일까요, 현명한 느부갓네살이여?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_1">
-      <Text>선택한 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_2">
-      <Text>사원은 +2 [ICON_FOOD] 식량과 +2 [ICON_RESEARCH] 과학을 생산하고, [ICON_GREAT_SCIENTIST] 과학자는 +1 [ICON_PEACE] 신앙을 생성합니다. 그러나, [ICON_RESEARCH] 문맹률이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_3">
-      <Text>프로젝트가 [ICON_GOLD] 빈곤율을 5% 증가시킵니다. 그 대가로 두 개의 [ICON_RES_LAPIS] 라피스 라줄리와 궁전이 +2 [ICON_CULTURE] 문화와 +10% [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}를 사용합니다. 모든 도시에 무료 관측소를 제공하고, [ICON_GREAT_SCIENTIST] 과학자는 +2 [ICON_PEACE] 신앙을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_5">
-      <Text>모든 도시에서 {2_InstantYield}을 잃습니다. 도시들은 강 타일에서 +1 [ICON_PRODUCTION] 생산력과 +1 [ICON_FOOD] 식량을 얻습니다. 수력 발전소는 +5 [ICON_GOLD] 금을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield}를 재할당합니다. 6개의 [ICON_RES_URANIUM] 우라늄을 받습니다. 병원은 +5 [ICON_FOOD] 식량과 +5 [ICON_RESEARCH] 과학을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_1">
-      <Text>이것은 마르둑의 축복입니다. 이 별자리 아래 태어난 아이가 바빌론을 확실한 파멸로부터 구해낼 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_2">
-      <Text>*사람들이 공포에 빠집니다! 이것은 분명히 티아마트의 귀환을 예고하는 것입니다!*[NEWLINE]신들의 영역은 오직 성직자들만의 것입니다. 모든 권력을 지구라트 위에 집중시켜야 합니다. 일반인들에게는 안전하지 않습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_3">
-      <Text>이것은 신들의 경고입니다. 천 명의 노예가 천 일 동안 거대한 천상의 문을 건설한다면, 우리는 그들의 분노로부터 구원을 받을 수 있을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_4">
-      <Text>*우리는 처음으로 이 '혜성'을 조사할 수 있는 기술을 보유하고 있습니다*[NEWLINE]모든 도시에 현자들에게 위대한 망원경을 장비하여 이 신성한 물체를 면밀히 연구하게 하십시오. 이번 시대에는 다시 기회가 없을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_5">
-      <Text>*당신은 우리의 가장 강력한 강에 댐을 건설하겠다는 야심찬 - 그러나 잠재적으로 파괴적인 - 계획에 대한 지원을 찾지 못했습니다*[NEWLINE]대사제를 불러오십시오. 그가 나의 의심을 확인해 줄 것입니다: 물의 신들이 우리에게 반란을 일으키려 하고 있습니다! 이것은 막아야 합니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_6">
-      <Text>*정밀한 기구들이 혜성의 핵에 지구에 있는 것과 유사한 방사성 물질이 가득 차 있음을 보여줍니다*[NEWLINE]우리는 이 신성한 광물에 대해 모든 것을 알아야 합니다! 이것이 신들의 것이라면, 그것은 파괴와 치유의 힘을 동시에 가지고 있을 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY">
-      <Text>바빌론의 댐</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY_HELP">
-      <Text>강 타일에 +1 [ICON_FOOD] 식량 및 [ICON_PRODUCTION] 생산력.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>
