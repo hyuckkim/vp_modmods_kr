@@ -1,9 +1,9 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "VP INT Modpack Ex"
+#define MyAppName "VP INT Modpack+"
 #define MyAppVersion "4.22"
-#define MyAppPublisher "DCinside Civilization Gallery"
+#define MyAppPublisher "디시인사이드 문명 갤러리(DCinside Civilization Gallery)"
 #define MyAppURL "https://github.com/hyuckkim/vp_modmods_kr"
 
 [Setup]
