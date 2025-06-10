@@ -1,68 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_PLAYER_GOOD</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisoreconomic.dds</EventArt>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION">
+			<Text></Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_ECONOMIC_PLAYER_GOOD</EventType>
-			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP">
+			<Text></Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_PLAYER_GOOD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>혁신적인 실천이 공장 생산량을 +2 [ICON_RESEARCH] 과학과 [ICON_PRODUCTION] 생산력으로 향상시킵니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_ECONOMIC_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>검정색으로만 남으면 돼</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_HELP_CHOICE_1">
-      <Text>혁신적인 실천이 공장 생산량을 +2 [ICON_RESEARCH] 과학과 [ICON_PRODUCTION] 생산력으로 향상시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
-      <Text>검정색으로만 남으면 돼</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

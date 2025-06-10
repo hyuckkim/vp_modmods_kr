@@ -1,461 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_PERSIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_PERSIA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 왕자 통치</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 빈 사트라피에 자신의 아들을 임명합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<EventPromotion>PROMOTION_UE_INCORPORATE</EventPromotion>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 통합</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_CHIVALRY</PrereqTech>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 군대를 확장하기 위한 새로운 군사 이니셔티브를 시행합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClassGlobal>BUILDINGCLASS_PERSIA_UE_DUMMY</EventBuildingClassGlobal>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_PRINTING_PRESS</RequiredAnywhereBuildingClass>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 코끼리</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FACTORY</RequiredAnywhereBuildingClass>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 전쟁을 지원하기 위해 외국 용병을 고용하여 대형 코끼리를 탑니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_PERSIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<GoldenAgeTurns>20</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
-			<RequiredEra>ERA_MODERN</RequiredEra>
-			<EventBuildingClassGlobal>BUILDINGCLASS_PERSIA_UE_DUMMY_2</EventBuildingClassGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 학문의 시대</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 황금기의 학문적 성장을 시작하기 위해 정부 내 종교 극단주의자들을 억제합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 카펫 산업</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 산업화의 진행 속에서도 전통적인 페르시아 카펫 산업을 보호합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 민주 개혁</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 페르시아 생활의 여러 측면을 현대화하는 광범위한 법적 개혁을 시행합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_PERSIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION">
+			<Text>자비로운 신</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_PERSIA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_PERSIA_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP">
+			<Text>왕자들이 사냥을 마치고 돌아왔습니다, 다리우스 폐하. 그들은 몇 년 동안 아버지를 보지 못했습니다. 그들을 만나시겠습니까?[NEWLINE]여왕은 확실히 매우 감사할 것입니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_PERSIA_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_PERSIA_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_PERSIA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_PERSIA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_PERSIA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_PERSIA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_2">
+			<Text>근접 전투 및 총기 유닛이 '통합' 프로모션을 얻어 패배한 적을 포로로 삼을 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_PERSIA_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_PERSIA_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 지불하여 이국적인 외국에서 용병을 고용합니다. [ICON_RES_IVORY] 상아 2개와 [ICON_CAPITAL] 수도에 3개의 나레수안 코끼리를 얻습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromPurchase>
-		<Row>
-			<BuildingType>BUILDING_PERSIA_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>5</Yield>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 사용하여 제국의 종교적 영향을 억제합니다. 총리실은 +3 [ICON_RESEARCH] 과학을 생산하며, 도시들은 [ICON_GOLDEN_AGE] 황금기 동안 추가로 20% [ICON_RESEARCH] 과학을 생성합니다.</Text>
 		</Row>
-	</Building_YieldFromPurchase>
-	<Building_GoldenAgeYieldMod>
-		<Row>
-			<BuildingType>BUILDING_PERSIA_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>20</Yield>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_5">
+			<Text>{1_YieldCost}를 사용하여 전통 산업을 보존합니다. [ICON_RES_COTTON] 면화 3개와 작업장은 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Building_GoldenAgeYieldMod>
-	
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_INCORPORATE</Type>
-			<Description>TXT_KEY_PROMOTION_UE_INCORPORATE</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<RangedDefenseMod>50</RangedDefenseMod>
-			<Help>TXT_KEY_PROMOTION_UE_INCORPORATE_HELP</Help>
-			<PortraitIndex>59</PortraitIndex>
-			<IconAtlas>ABILITY_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_INCORPORATE</PediaEntry>
-			<CaptureDefeatedEnemy>true</CaptureDefeatedEnemy>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 소비하여 20턴 동안 조기에 [ICON_GOLDEN_AGE] 황금기에 진입합니다. 도시에서 구매 시 [ICON_GOLD] 금의 5%를 [ICON_GOLDEN_AGE] 황금기 점수로 변환합니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_INCORPORATE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>새로운 사트라프를 임명할 때가 왔습니다. 충성스러운 통치자가 부족합니다. 국내 업무에 뛰어난 아들을 저에게 데려오세요.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_INCORPORATE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>시티 스테이트의 반란 중에 가족 문제에 시간을 할애할 수 없습니다... 마조르도모, 군사 업무에서 가장 뛰어난 아들을 저에게 데려오세요. 그에게 임무를 주겠습니다.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<UnitType>UNIT_SIAMESE_WARELEPHANT</UnitType>
-			<Quantity>3</Quantity>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>여왕이 이 전쟁을 이길 수 있을까요? 제 생각엔 불가능합니다. 저의 궁정에서 돌아다니는 외국 용병 대리인들을 저에게 데려오세요. 아마도 그들이 도움이 될 것입니다.</Text>
 		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_IVORY</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>이 개혁들을 검토하는 데 신선한 시각이 필요합니다. 과학 문제를 가장 잘 이해하는 아들을 저에게 데려오세요. 나머지는... 그들이 제 compound에서 하는 일로 돌아가게 하세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_COTTON</ResourceType>
-			<Quantity>3</Quantity>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>제 아들들은 잊으세요, 그들은 쓸모없는 자들입니다. 제 딸을 저에게 데려오세요. 그녀는 정치 경제에 뛰어난 지성을 가지고 있으며, 섬유 산업에 대한 제 계획을 검토하길 원합니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>무한한 왕자와 공주들을 최고 직책에 임명해야 합니다. 이 후원 시스템에 지쳤습니다. 이제 나라가 스스로 통치하는 법을 배워야 합니다. 언젠가는 제가 더 이상 여기에서 인도하지 않을 날이 올 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY">
+			<Text>세속적 개혁</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_HELP">
+			<Text>황금기 동안 +20% [ICON_RESEARCH] 과학을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>500</Yield>
+		<Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2">
+			<Text>조언자 선출</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2_HELP">
+			<Text>이 도시의 구매 시 [ICON_GOLD] 금의 5%를 [ICON_GOLDEN_AGE] 황금기 점수로 변환합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_INCORPORATE">
+			<Text>통합</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>200</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_INCORPORATE_HELP">
+			<Text>패배한 적이 당신을 위해 싸울 기회를 갖습니다. 오직 페르시아의 이벤트를 통해만 부여됩니다.</Text>
 		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>200</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_PERSIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 왕자 통치</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 빈 사트라피에 자신의 아들을 임명합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 통합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 군대를 확장하기 위한 새로운 군사 이니셔티브를 시행합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 코끼리</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 전쟁을 지원하기 위해 외국 용병을 고용하여 대형 코끼리를 탑니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 학문의 시대</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 황금기의 학문적 성장을 시작하기 위해 정부 내 종교 극단주의자들을 억제합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 카펫 산업</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 산업화의 진행 속에서도 전통적인 페르시아 카펫 산업을 보호합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 민주 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_PERSIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 페르시아 생활의 여러 측면을 현대화하는 광범위한 법적 개혁을 시행합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION">
-      <Text>자비로운 신</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP">
-      <Text>왕자들이 사냥을 마치고 돌아왔습니다, 다리우스 폐하. 그들은 몇 년 동안 아버지를 보지 못했습니다. 그들을 만나시겠습니까?[NEWLINE]여왕은 확실히 매우 감사할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_2">
-      <Text>근접 전투 및 총기 유닛이 '통합' 프로모션을 얻어 패배한 적을 포로로 삼을 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 지불하여 이국적인 외국에서 용병을 고용합니다. [ICON_RES_IVORY] 상아 2개와 [ICON_CAPITAL] 수도에 3개의 나레수안 코끼리를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 사용하여 제국의 종교적 영향을 억제합니다. 총리실은 +3 [ICON_RESEARCH] 과학을 생산하며, 도시들은 [ICON_GOLDEN_AGE] 황금기 동안 추가로 20% [ICON_RESEARCH] 과학을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_5">
-      <Text>{1_YieldCost}를 사용하여 전통 산업을 보존합니다. [ICON_RES_COTTON] 면화 3개와 작업장은 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 소비하여 20턴 동안 조기에 [ICON_GOLDEN_AGE] 황금기에 진입합니다. 도시에서 구매 시 [ICON_GOLD] 금의 5%를 [ICON_GOLDEN_AGE] 황금기 점수로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>새로운 사트라프를 임명할 때가 왔습니다. 충성스러운 통치자가 부족합니다. 국내 업무에 뛰어난 아들을 저에게 데려오세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>시티 스테이트의 반란 중에 가족 문제에 시간을 할애할 수 없습니다... 마조르도모, 군사 업무에서 가장 뛰어난 아들을 저에게 데려오세요. 그에게 임무를 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>여왕이 이 전쟁을 이길 수 있을까요? 제 생각엔 불가능합니다. 저의 궁정에서 돌아다니는 외국 용병 대리인들을 저에게 데려오세요. 아마도 그들이 도움이 될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>이 개혁들을 검토하는 데 신선한 시각이 필요합니다. 과학 문제를 가장 잘 이해하는 아들을 저에게 데려오세요. 나머지는... 그들이 제 compound에서 하는 일로 돌아가게 하세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>제 아들들은 잊으세요, 그들은 쓸모없는 자들입니다. 제 딸을 저에게 데려오세요. 그녀는 정치 경제에 뛰어난 지성을 가지고 있으며, 섬유 산업에 대한 제 계획을 검토하길 원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_PERSIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>무한한 왕자와 공주들을 최고 직책에 임명해야 합니다. 이 후원 시스템에 지쳤습니다. 이제 나라가 스스로 통치하는 법을 배워야 합니다. 언젠가는 제가 더 이상 여기에서 인도하지 않을 날이 올 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY">
-      <Text>세속적 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_HELP">
-      <Text>황금기 동안 +20% [ICON_RESEARCH] 과학을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2">
-      <Text>조언자 선출</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_PERSIA_UE_DUMMY_2_HELP">
-      <Text>이 도시의 구매 시 [ICON_GOLD] 금의 5%를 [ICON_GOLDEN_AGE] 황금기 점수로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_INCORPORATE">
-      <Text>통합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_INCORPORATE_HELP">
-      <Text>패배한 적이 당신을 위해 싸울 기회를 갖습니다. 오직 페르시아의 이벤트를 통해만 부여됩니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

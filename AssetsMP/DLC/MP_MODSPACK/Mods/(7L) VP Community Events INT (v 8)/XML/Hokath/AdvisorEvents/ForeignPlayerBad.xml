@@ -1,230 +1,43 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>40</RandomChance>
-			<RandomChanceDelta>3</RandomChanceDelta>
-			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisorforeign.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION">
+			<Text>침입종</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD</EventType>
-			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP">
+			<Text></Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>외국 인사들이 선물로 보낸 애완동물들이 야생으로 탈출했습니다. 이들은 빠르게 번식하여 농작물을 파괴하고 있습니다. 농장에서는 [ICON_FOOD] 식량이 -1 감소하며, 시장에서는 [ICON_FOOD] 식량이 +1 증가합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>침입종</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>-1</YieldChange>
+	</Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION">
+			<Text>토끼 시즌</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP">
+			<Text>시골 지역을 괴롭히던 해충 문제가 드디어 해결될 듯합니다! 완전히 쾌적하지는 않지만...</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION">
-      <Text>침입종</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP_CHOICE_1">
-      <Text>외국 인사들이 선물로 보낸 애완동물들이 야생으로 탈출했습니다. 이들은 빠르게 번식하여 농작물을 파괴하고 있습니다. 농장에서는 [ICON_FOOD] 식량이 -1 감소하며, 시장에서는 [ICON_FOOD] 식량이 +1 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION_CHOICE_1">
-      <Text>침입종</Text>
-    </Row>
-  </Language_ko_KR>
-  
-  	<!-- Follow up 'cures', require later techs-->
-	<Events>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>25</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_1">
+			<Text>[ICON_RES_IRON] 철 4개를 화학자들에게 넘기십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}에 해당하는 생물학자들을 현재 프로젝트에서 빼내십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_3">
+			<Text>모든 도시에 {2_InstantYield}의 비축량을 확보하십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<PrereqTech>TECH_RIFLING</PrereqTech>
-			<YieldBonusAllCities>true</YieldBonusAllCities>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
+			<Text>철 산화물에서 유래한 소금이 작물에는 무해하지만, 토끼에게는 매우 독성이 강하다는 것이 입증되었습니다...</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
+			<Text>극도로 전염성이 강한 질병이 토끼 개체군의 일부에서 관찰되었습니다. 피해자들이 끔찍하게 사망하게 됩니다. 약간의 재배로 감염된 개체를 주요 위치에 방출하면 해충을 완전히 근절할 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
+			<Text>우리의 퓨질리어는 움직이는 표적을 맞추는 데 매우 서투릅니다. 두 마리 토끼를 한 번에 잡을 수 있을 것 같습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
-		</Row>
-	</Event_ParentEvents>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
-			<EventLinker>EVENT_AES_FOREIGN_PLAYER_BAD</EventLinker>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-		</Row>
-	</Event_EventLinks>
-
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>4</Quantity>
-		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>-4</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>350</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION">
-      <Text>토끼 시즌</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP">
-      <Text>시골 지역을 괴롭히던 해충 문제가 드디어 해결될 듯합니다! 완전히 쾌적하지는 않지만...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_1">
-      <Text>[ICON_RES_IRON] 철 4개를 화학자들에게 넘기십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}에 해당하는 생물학자들을 현재 프로젝트에서 빼내십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_3">
-      <Text>모든 도시에 {2_InstantYield}의 비축량을 확보하십시오. 농장에서는 [ICON_FOOD] 식량이 +1 회복됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
-      <Text>철 산화물에서 유래한 소금이 작물에는 무해하지만, 토끼에게는 매우 독성이 강하다는 것이 입증되었습니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
-      <Text>극도로 전염성이 강한 질병이 토끼 개체군의 일부에서 관찰되었습니다. 피해자들이 끔찍하게 사망하게 됩니다. 약간의 재배로 감염된 개체를 주요 위치에 방출하면 해충을 완전히 근절할 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
-      <Text>우리 총포병은 움직이는 표적을 맞추는 데 매우 서투릅니다. 두 마리 토끼를 한 번에 잡을 수 있을 것 같습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

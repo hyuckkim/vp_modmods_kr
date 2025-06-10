@@ -1,401 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_MAYA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_MAYA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 실수</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 달력의 오류를 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COLOSSEUM</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 포크타포크</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 제국 전역에 포크타포크 경기장을 개설합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_MAYA_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 로인 스톤</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<IsUnhappy>true</IsUnhappy>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<WLTKDTurns>12</WLTKDTurns>
-			<ResistanceTurns>2</ResistanceTurns>
-			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 대량의 [ICON_RES_JADE] 비취를 확보합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MAYA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<EventDuration>-1</EventDuration>
-			<ReligiousUnrestModifierGlobal>-50</ReligiousUnrestModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 적자 생존</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 도시 간 경쟁을 촉진하여 궁전을 이익을 얻도록 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 정치적 희생</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 주요 야당 인물들을 희생시켜 [ICON_RESISTANCE] 무정부 상태를 촉발합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 현대적 실천</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 마야의 종교적 실천을 현대화합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_MAYA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION">
+			<Text>더 큰 선물은 없다</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_MAYA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_MAYA_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP">
+			<Text>롱 카운트가 또 다른 축제의 날에 도달했지만, 우리는 어떻게든 자원봉사자가 부족합니다. 상황이 심각해 보입니다, 당신의 찬란함. 신들을 만족시킬 수 없다면, 우리가 희생될 것입니다![NEWLINE][NEWLINE]대체 제물을 찾을 생각이 있으십니까?</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_MAYA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_MAYA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_MAYA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_MAYA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_1">
+			<Text>원하는 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromInternalTREnd>
-		<Row>
-			<BuildingType>BUILDING_MAYA_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>25</Yield>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_2">
+			<Text>볼코트는 쿠나가 +1 [ICON_PRODUCTION] 생산력과 [ICON_CULTURE] 문화를 산출하도록 합니다.</Text>
 		</Row>
-	</Building_YieldFromInternalTREnd>
-	<EventChoice_ResourceYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_JADE</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}의 가치가 있는 자재를 확보합니다. 이는 기념비에서 +2 [ICON_PEACE] 신앙을 생성하게 하며, 두 개의 [ICON_RES_JADE] 비취를 받습니다. 이러한 돌의 신성함은 채굴 시 +2 [ICON_PEACE] 신앙을 부여합니다.</Text>
 		</Row>
-	</EventChoice_ResourceYieldChange>
-
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_JADE</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}의 영향력을 사용하여 무역을 촉진합니다. 내부 무역은 [ICON_CONNECTED] 도시 연결에서 [ICON_GOLD] 금을 2% 증가시킵니다. 이 도시의 내부 [ICON_INTERNATIONAL_TRADE] 무역 노선은 완료 시 기원 도시에서 30 [ICON_GOLD] 금을 생성하며, 이는 시대에 따라 증가합니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_5">
+			<Text>모든 도시에 12턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 시작합니다. 그러나 이 기간의 처음 2턴은 [ICON_RESISTANCE] 무정부 상태에서 시작됩니다. [ICON_RESEARCH] 문해력 및 [ICON_GOLD] 빈곤에 대한 불행 임계치는 영구적으로 5% 감소합니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Modifier>20</Modifier>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield}를 사용하여 혼합주의를 구현하고 [ICON_RELIGION] 종교적 분열로 인한 50% 불행을 제거합니다. 모든 사원은 도시에서 [ICON_PEACE] 신앙을 20% 증가시킵니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_KUNA</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_1">
+			<Text>달력에 실수가 없다는 것이 확실합니까? 과학 자문을 불러서 혹시 윤년을 놓쳤는지 확인해 보세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_KUNA</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*포크타포크 게임이 우리의 문화 내에서 의례적 중요성을 가지게 되었습니다*[NEWLINE]영광과 죽음은 승자에게! 운동적인 희생의 풍부한 공급이 보장됩니다!</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>750</Yield>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*마법의 돌, 비취는 우리의 숭배에 필수적입니다.*[NEWLINE]우리의 의식에 반드시 필요합니다! 모든 기념비를 석회로 덮어 장식이 풍부한 것처럼 보이게 하십시오. 이것이 신들을 달래줄 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>750</Yield>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*도시 간 경쟁이 치열합니다.*[NEWLINE]이 경쟁을 미묘하게 후원함으로써 얻을 수 있는 것이 많습니다. 몇 가지 희생은 쉬울 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1500</Yield>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*도시들이 새로운 연합을 구성할 가능성이 커졌습니다. 이는 당신의 통치를 사실상 종식시킬 수 있습니다!*[NEWLINE]사람들에게 도시들의 자랑스럽고 독특한 역사를 상기시켜야 합니다. 이러한 현대적인 개념은 빠르게 사라질 것입니다, 희망적으로 제단에서.</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-750</Yield>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_6">
+			<Text>이제 신들을 기쁘게 할 수 있는 방법이 많이 있습니다. 모든 방법이 우리의 사원 내에서 잘 작동하도록 해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-750</Yield>
+		<Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY">
+			<Text>마야의 생존 경쟁</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-1500</Yield>
+		<Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY_HELP">
+			<Text>도시 연결에서 +2% [ICON_GOLD] 금을 제공합니다. 내부 [ICON_INTERNATIONAL_TRADE] 무역 노선은 완료 시 기원 도시에서 30 [ICON_GOLD] 금을 생성하며, 이는 시대에 따라 증가합니다.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 실수</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 달력의 오류를 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 포크타포크</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 제국 전역에 포크타포크 경기장을 개설합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 로인 스톤</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 대량의 [ICON_RES_JADE] 비취를 확보합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 적자 생존</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 도시 간 경쟁을 촉진하여 궁전을 이익을 얻도록 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 정치적 희생</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 주요 야당 인물들을 희생시켜 [ICON_RESISTANCE] 무정부 상태를 촉발합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 현대적 실천</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 마야의 종교적 실천을 현대화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION">
-      <Text>더 큰 선물은 없다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP">
-      <Text>롱 카운트가 또 다른 축제의 날에 도달했지만, 우리는 어떻게든 자원봉사자가 부족합니다. 상황이 심각해 보입니다, 당신의 찬란함. 신들을 만족시킬 수 없다면, 우리가 희생될 것입니다![NEWLINE][NEWLINE]대체 제물을 찾을 생각이 있으십니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_1">
-      <Text>원하는 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_2">
-      <Text>볼코트는 쿠나가 +1 [ICON_PRODUCTION] 생산력과 [ICON_CULTURE] 문화를 산출하도록 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}의 가치가 있는 자재를 확보합니다. 이는 기념비에서 +2 [ICON_PEACE] 신앙을 생성하게 하며, 두 개의 [ICON_RES_JADE] 비취를 받습니다. 이러한 돌의 신성함은 채굴 시 +2 [ICON_PEACE] 신앙을 부여합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}의 영향력을 사용하여 무역을 촉진합니다. 내부 무역은 [ICON_CONNECTED] 도시 연결에서 [ICON_GOLD] 금을 2% 증가시킵니다. 이 도시의 내부 [ICON_INTERNATIONAL_TRADE] 무역 노선은 완료 시 기원 도시에서 30 [ICON_GOLD] 금을 생성하며, 이는 시대에 따라 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_5">
-      <Text>모든 도시에 12턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 시작합니다. 그러나 이 기간의 처음 2턴은 [ICON_RESISTANCE] 무정부 상태에서 시작됩니다. [ICON_RESEARCH] 문해력 및 [ICON_GOLD] 빈곤에 대한 불행 임계치는 영구적으로 5% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield}를 사용하여 혼합주의를 구현하고 [ICON_RELIGION] 종교적 분열로 인한 50% 불행을 제거합니다. 모든 사원은 도시에서 [ICON_PEACE] 신앙을 20% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_1">
-      <Text>달력에 실수가 없다는 것이 확실합니까? 과학 자문을 불러서 혹시 윤년을 놓쳤는지 확인해 보세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*포크타포크 게임이 우리의 문화 내에서 의례적 중요성을 가지게 되었습니다*[NEWLINE]영광과 죽음은 승자에게! 운동적인 희생의 풍부한 공급이 보장됩니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*마법의 돌, 비취는 우리의 숭배에 필수적입니다.*[NEWLINE]우리의 의식에 반드시 필요합니다! 모든 기념비를 석회로 덮어 장식이 풍부한 것처럼 보이게 하십시오. 이것이 신들을 달래줄 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*도시 간 경쟁이 치열합니다.*[NEWLINE]이 경쟁을 미묘하게 후원함으로써 얻을 수 있는 것이 많습니다. 몇 가지 희생은 쉬울 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*도시들이 새로운 연합을 구성할 가능성이 커졌습니다. 이는 당신의 통치를 사실상 종식시킬 수 있습니다!*[NEWLINE]사람들에게 도시들의 자랑스럽고 독특한 역사를 상기시켜야 합니다. 이러한 현대적인 개념은 빠르게 사라질 것입니다, 희망적으로 제단에서.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_6">
-      <Text>이제 신들을 기쁘게 할 수 있는 방법이 많이 있습니다. 모든 방법이 우리의 사원 내에서 잘 작동하도록 해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY">
-      <Text>마야의 생존 경쟁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY_HELP">
-      <Text>도시 연결에서 +2% [ICON_GOLD] 금을 제공합니다. 내부 [ICON_INTERNATIONAL_TRADE] 무역 노선은 완료 시 기원 도시에서 30 [ICON_GOLD] 금을 생성하며, 이는 시대에 따라 증가합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

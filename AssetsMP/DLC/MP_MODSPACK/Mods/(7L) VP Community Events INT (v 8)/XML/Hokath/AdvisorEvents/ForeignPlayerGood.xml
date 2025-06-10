@@ -1,212 +1,35 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP</Help>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisorforeign.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION">
+			<Text>우리를 가르쳐 주세요</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
-			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP">
+			<Text>외교 고문이 그녀의 여행 중 만난 다양한 부족들에 대한 여러 보고서를 보냈습니다. 이들의 문화에서 많은 것을 배울 수 있지만, 한 부족만 데려올 수 있는 자원밖에 없습니다.[NEWLINE]어떤 부족에게 돌아오라고 말할까요?</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<ImprovementAnywhereRequired>IMPROVEMENT_CAMP</ImprovementAnywhereRequired>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>야영지에서 +2 [ICON_GOLD] 금이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_2">
+			<Text>[ICON_RES_COCOA] 코코아, [ICON_RES_SUGAR] 설탕, [ICON_RES_BANANA] 바나나, [ICON_RES_SPICES] 향신료 자원에서 +2 [ICON_FOOD] 식량이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<ImprovementAnywhereRequired>IMPROVEMENT_FISHING_BOATS</ImprovementAnywhereRequired>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_3">
+			<Text>어업 보트에서 +1 [ICON_PRODUCTION] 생산력이 생성됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_4">
+			<Text>[ICON_RES_INCENSE] 향, [ICON_RES_STONE] 석재, [ICON_RES_SALT] 소금, [ICON_RES_COTTON] 면화 자원에서 +2 [ICON_CULTURE] 문화가 생성됩니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>이 사냥-채집 부족의 대표들을 데려오도록 그녀를 보내세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>이 정글 부족의 지식이 우리의 재배 방법을 어떻게 개선할 수 있는지 듣고 싶습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>이 어부 부족의 설명은 환상적입니다. 그들의 기술을 직접 보고 싶습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>분명 이 사막 부족의 장인들이 우리가 찾는 전문 지식을 가지고 있습니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-			<Quantity>2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<FeatureType>FEATURE_OASIS</FeatureType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<Quantity>3</Quantity>
-		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_ResourceYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SUGAR</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_COCOA</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_BANANA</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SPICES</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_COTTON</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_STONE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_INCENSE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_SALT</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ResourceYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION">
-      <Text>우리를 가르쳐 주세요</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP">
-      <Text>외교 고문이 그녀의 여행 중 만난 다양한 부족들에 대한 여러 보고서를 보냈습니다. 이들의 문화에서 많은 것을 배울 수 있지만, 한 부족만 데려올 수 있는 자원밖에 없습니다.[NEWLINE]어떤 부족에게 돌아오라고 말할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_1">
-      <Text>야영지에서 +2 [ICON_GOLD] 금이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_2">
-      <Text>[ICON_RES_COCOA] 코코아, [ICON_RES_SUGAR] 설탕, [ICON_RES_BANANA] 바나나, [ICON_RES_SPICES] 향신료 자원에서 +2 [ICON_FOOD] 식량이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_3">
-      <Text>어업 보트에서 +1 [ICON_PRODUCTION] 생산력이 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_HELP_CHOICE_4">
-      <Text>[ICON_RES_INCENSE] 향, [ICON_RES_STONE] 석재, [ICON_RES_SALT] 소금, [ICON_RES_COTTON] 면화 자원에서 +2 [ICON_CULTURE] 문화가 생성됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
-      <Text>이 사냥-채집 부족의 대표들을 데려오도록 그녀를 보내세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
-      <Text>이 정글 부족의 지식이 우리의 재배 방법을 어떻게 개선할 수 있는지 듣고 싶습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
-      <Text>이 어부 부족의 설명은 환상적입니다. 그들의 기술을 직접 보고 싶습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
-      <Text>분명 이 사막 부족의 장인들이 우리가 찾는 전문 지식을 가지고 있습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

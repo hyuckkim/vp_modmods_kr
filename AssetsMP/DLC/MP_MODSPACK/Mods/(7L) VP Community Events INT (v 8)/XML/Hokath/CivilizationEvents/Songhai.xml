@@ -1,538 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_SONGHAI_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_SONGHAI</RequiredCiv>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 재능 있는 학생</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 유망한 학생에게 선물을 쏟아 붓습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COLOSSEUM</RequiredAnywhereBuildingClass>
-			<PlayerHappiness>-2</PlayerHappiness>
-			<EventPromotion>PROMOTION_UE_SOFA</EventPromotion>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 노예 거래</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 노예 거래를 지원하는 법적 틀을 세웁니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CONSTABLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 대순례</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<ImprovementAnywhereRequired>IMPROVEMENT_WELL</ImprovementAnywhereRequired>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 대순례를 떠나며 엄청난 양의 금을 아낌없이 나눕니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_SONGHAI_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 금 독점</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 [ICON_RES_GOLD] 금의 소유를 엄격히 통제합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 숨겨진 석유</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 [ICON_RES_OIL] 석유 관련 기술의 세계 선두주자가 됩니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 기후 협정</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 자신의 영토를 사막화로부터 보호하고 기후 변화를 저지하겠다고 약속합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_SONGHAI_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION">
+			<Text>의도 없는 선물</Text>
 		</Row>
-	</Event_ParentEvents>
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_UE_MOSQUE</Type>
-			<DefaultBuilding>BUILDING_UE_MOSQUE</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_MOSQUE</Description>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP">
+			<Text>위대한 황제님, 당신의 백성들은 당신의 정의와 올바름을 갈망합니다. 시대는 힘들고, 당신의 백성들은 다가오는 날들에 대한 강력한 지도력을 원합니다.[NEWLINE][NEWLINE]어쩌면 당신의 자선의 작은 상징이 적절할지도 모릅니다?</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_UE_MOSQUE</Type>
-			<BuildingClass>BUILDINGCLASS_UE_MOSQUE</BuildingClass>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<Description>TXT_KEY_BUILDING_UE_MOSQUE</Description>
-			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_MOSQUE_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_MOSQUE_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_MOSQUE_HELP</Help>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<ReligiousPressureModifier>25</ReligiousPressureModifier>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_LITERATURE</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
-			<PortraitIndex>2</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<EventChoiceRequiredActive>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>364</MutuallyExclusiveGroup>
-			<ScienceMedianModifier>-10</ScienceMedianModifier>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_2">
+			<Text>근접 전투 및 총기 유닛이 처치 시 수도에 [ICON_PRODUCTION] 생산을 얻습니다. 노예 경매는 시장에서 +4 [ICON_PRODUCTION] 생산을 생성하지만, 그들의 존재는 [ICON_HAPPINESS_3] 불행을 [ICON_CAPITAL] 수도에 +2 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>7</Flavor>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_3">
+			<Text>대순례를 떠나 {2_InstantYield}를 사용하여 어도비 모스크 건물을 잠금 해제합니다. 다른 모스크가 +3 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>4</Flavor>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}를 사용하여 2개의 [ICON_RES_GOLD] 금을 보호합니다. 당신의 경찰서가 [ICON_GOLD] 금 수입을 5% 증가시킵니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_GoldenAgeYieldMod>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>20</Yield>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_5">
+			<Text>{2_InstantYield}에 해당하는 자원을 [ICON_RES_OIL] 석유 부문에 쏟아 부어, 5개를 얻고, 각 우물 및 해양 플랫폼에서 +3 [ICON_GOLD] 금, [ICON_PRODUCTION] 생산 및 [ICON_GOLDEN_AGE] 황금 시대 점수를 얻습니다.</Text>
 		</Row>
-	</Building_GoldenAgeYieldMod>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_6">
+			<Text>기후 변화를 저지하기 위한 광범위한 정책을 시행합니다. 도시가 사막 타일당 +2 [ICON_RESEARCH] 과학, [ICON_FOOD] 식량 및 [ICON_TOURISM] 관광을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_MOSQUE</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_1">
+			<Text>사람들은 역할 모델이 필요합니다, 무엇이 가치 있는 삶인지 알기 위해서. 가장 똑똑한 학생을 데려오세요, 저는 송하이의 모든 사람들 앞에서 그에게 선물을 쏟아 부을 것입니다.</Text>
 		</Row>
-	</Building_YieldChanges>
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_SOFA</Type>
-			<Description>TXT_KEY_PROMOTION_UE_SOFA</Description>
-			<Help>TXT_KEY_PROMOTION_UE_SOFA_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_SOFA</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_2">
+			<Text>*노예제도가 널리 퍼졌지만 명확한 법적 인프라 부족으로 이들은 당신이나 신에게 답하지 않습니다*[NEWLINE]저는 먼저 노예들에게 관대함을 보일 것입니다. 누가 사고 팔 수 있는지, 그리고 어떻게 다뤄야 하는지 정의한 다음, 노예 상인들에게 모든 도시마다 그들의 거래를 위한 구역을 제공하겠습니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_YieldFromKills>
-		<Row>
-			<PromotionType>PROMOTION_UE_SOFA</PromotionType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_3">
+			<Text>*대사원의 성직자들은 모든 영광이 신께 돌아가야 한다는 행동을 원합니다*[NEWLINE]저는 이 요청을 불쾌하게 여기지 않습니다. 그것은 정당하고 신성한 요청입니다. 저는 신성한 도시로 여행하면서 제 재산의 큰 부분을 가난한 이들에게 줄 것입니다!</Text>
 		</Row>
-	</UnitPromotions_YieldFromKills>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_SOFA</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_4">
+			<Text>*우리는 부유하지만 부의 변덕스럽고 일시적인 본성에 깊이 우려합니다*[NEWLINE]하나님의 선물을 낭비하는 것은 큰 불명예입니다. 우리는 우리의 부를 금으로 보호하고, 우리의 번영의 원천을 철저히 지킬 것입니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_SOFA</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_5">
+			<Text>*이 검은 금 - 석유 - 제국 아래 깊은 곳에서 발견되는 자원은 이전의 모든 자원보다 소중합니다*[NEWLINE]우리가 과거에 우리의 부의 원천을 보호하고자 했던 것처럼, 미래로 나아가기 위해서는 이 석유도 반드시 보호해야 합니다. 이것은 확실히 신의 선물입니다.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<FeatureType>FEATURE_OASIS</FeatureType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_6">
+			<Text>*지구는 변하고, 사막이 이전에 비옥했던 땅을 침범할 위협이 있습니다*[NEWLINE]우리는 이 재앙을 초래했습니다, 이제는 우리가 고쳐야 합니다. 우리는 지구를 이해하고 사랑하며 배워야 합니다, 그렇지 않으면 우리는 확실히 멸망할 것입니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>5</Modifier>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SOFA">
+			<Text>노예상인</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>4</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SOFA_HELP">
+			<Text>처치 시 [ICON_PRODUCTION]를 얻습니다. 송하이의 이벤트를 통해서만 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_MOSQUE">
+			<Text>어도비 모스크</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>500</Yield>
+		<Row Tag="TXT_KEY_BUILDING_UE_MOSQUE_STRATEGY">
+			<Text>송하이 고유의 이벤트 선택으로 구매할 수 있습니다. 모스크와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1000</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1000</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>5</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_TerrainYieldChange>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SONGHAI_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 재능 있는 학생</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 유망한 학생에게 선물을 쏟아 붓습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 노예 거래</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 노예 거래를 지원하는 법적 틀을 세웁니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 대순례</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 대순례를 떠나며 엄청난 양의 금을 아낌없이 나눕니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 금 독점</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 [ICON_RES_GOLD] 금의 소유를 엄격히 통제합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 숨겨진 석유</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 [ICON_RES_OIL] 석유 관련 기술의 세계 선두주자가 됩니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 기후 협정</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SONGHAI_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 자신의 영토를 사막화로부터 보호하고 기후 변화를 저지하겠다고 약속합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION">
-      <Text>의도 없는 선물</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP">
-      <Text>위대한 황제님, 당신의 백성들은 당신의 정의와 올바름을 갈망합니다. 시대는 힘들고, 당신의 백성들은 다가오는 날들에 대한 강력한 지도력을 원합니다.[NEWLINE][NEWLINE]어쩌면 당신의 자선의 작은 상징이 적절할지도 모릅니다?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_2">
-      <Text>근접 전투 및 총기 유닛이 처치 시 수도에 [ICON_PRODUCTION] 생산을 얻습니다. 노예 경매는 시장에서 +4 [ICON_PRODUCTION] 생산을 생성하지만, 그들의 존재는 [ICON_HAPPINESS_3] 불행을 [ICON_CAPITAL] 수도에 +2 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_3">
-      <Text>대순례를 떠나 {2_InstantYield}를 사용하여 어도비 모스크 건물을 잠금 해제합니다. 다른 모스크가 +3 [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}를 사용하여 2개의 [ICON_RES_GOLD] 금을 보호합니다. 당신의 경찰서가 [ICON_GOLD] 금 수입을 5% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_5">
-      <Text>{2_InstantYield}에 해당하는 자원을 [ICON_RES_OIL] 석유 부문에 쏟아 부어, 5개를 얻고, 각 우물 및 해양 플랫폼에서 +3 [ICON_GOLD] 금, [ICON_PRODUCTION] 생산 및 [ICON_GOLDEN_AGE] 황금 시대 점수를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_HELP_CHOICE_6">
-      <Text>기후 변화를 저지하기 위한 광범위한 정책을 시행합니다. 도시가 사막 타일당 +2 [ICON_RESEARCH] 과학, [ICON_FOOD] 식량 및 [ICON_TOURISM] 관광을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_1">
-      <Text>사람들은 역할 모델이 필요합니다, 무엇이 가치 있는 삶인지 알기 위해서. 가장 똑똑한 학생을 데려오세요, 저는 송하이의 모든 사람들 앞에서 그에게 선물을 쏟아 부을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_2">
-      <Text>*노예제도가 널리 퍼졌지만 명확한 법적 인프라 부족으로 이들은 당신이나 신에게 답하지 않습니다*[NEWLINE]저는 먼저 노예들에게 관대함을 보일 것입니다. 누가 사고 팔 수 있는지, 그리고 어떻게 다뤄야 하는지 정의한 다음, 노예 상인들에게 모든 도시마다 그들의 거래를 위한 구역을 제공하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_3">
-      <Text>*대사원의 성직자들은 모든 영광이 신께 돌아가야 한다는 행동을 원합니다*[NEWLINE]저는 이 요청을 불쾌하게 여기지 않습니다. 그것은 정당하고 신성한 요청입니다. 저는 신성한 도시로 여행하면서 제 재산의 큰 부분을 가난한 이들에게 줄 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_4">
-      <Text>*우리는 부유하지만 부의 변덕스럽고 일시적인 본성에 깊이 우려합니다*[NEWLINE]하나님의 선물을 낭비하는 것은 큰 불명예입니다. 우리는 우리의 부를 금으로 보호하고, 우리의 번영의 원천을 철저히 지킬 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_5">
-      <Text>*이 검은 금 - 석유 - 제국 아래 깊은 곳에서 발견되는 자원은 이전의 모든 자원보다 소중합니다*[NEWLINE]우리가 과거에 우리의 부의 원천을 보호하고자 했던 것처럼, 미래로 나아가기 위해서는 이 석유도 반드시 보호해야 합니다. 이것은 확실히 신의 선물입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SONGHAI_UE_DESCRIPTION_CHOICE_6">
-      <Text>*지구는 변하고, 사막이 이전에 비옥했던 땅을 침범할 위협이 있습니다*[NEWLINE]우리는 이 재앙을 초래했습니다, 이제는 우리가 고쳐야 합니다. 우리는 지구를 이해하고 사랑하며 배워야 합니다, 그렇지 않으면 우리는 확실히 멸망할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_SOFA">
-      <Text>노예상인</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_SOFA_HELP">
-      <Text>처치 시 [ICON_PRODUCTION]를 얻습니다. 송하이의 이벤트를 통해서만 부여됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_MOSQUE">
-      <Text>어도비 모스크</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_MOSQUE_STRATEGY">
-      <Text>송하이 고유의 이벤트 선택으로 구매할 수 있습니다. 모스크와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

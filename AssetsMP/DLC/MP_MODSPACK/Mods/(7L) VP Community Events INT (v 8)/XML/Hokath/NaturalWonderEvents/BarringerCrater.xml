@@ -1,200 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_BARRINGER_CRATER</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_CRATER</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION">
+			<Text>세상을 뒤흔든 대폭발</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP">
+			<Text>상인들이 배링거 크레이터 주변의 상황을 이용하려 하며, 그들의 사업에 대한 당신의 지원을 요청하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_2</Description>
-			<ImprovementRequired>IMPROVEMENT_TRADING_POST</ImprovementRequired>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>75</EventDuration>
-			<Expires>true</Expires>
-			<BasicNeedsMedianModifier>10</BasicNeedsMedianModifier>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_1">
+			<Text>이 자연경관은 영구적으로 +1 [ICON_RESEARCH] 과학과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_3</Description>
-			<PrereqTech>TECH_DYNAMITE</PrereqTech>
-			<EventChance>100</EventChance>
-			<IsOneShot>false</IsOneShot>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_2">
+			<Text>다음 {4_Turns} 동안 인근 마을들이 +2 [ICON_CULTURE] 문화와 +2 [ICON_GOLD] 골드를 생성하지만, 도시에 [ICON_STRENGTH] 불만이 10% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_4</Description>
-			<PrereqTech>TECH_ROCKETRY</PrereqTech>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClass>BUILDINGCLASS_SPACESHIP_FACTORY</EventBuildingClass>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_3">
+			<Text>대규모 발굴을 허가하여, {2_InstantYield}을 대가로 대규모 철광석 매장지(3개 복사본)를 구매할 기회를 얻습니다!</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_BARRINGER_CRATER</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_4">
+			<Text>{2_InstantYield}을 할당하고 {4_GPChange}와 무료 우주선 공장을 받습니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_BARRINGER_CRATER</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_1">
+			<Text>상인들은 희귀한 보석과 금속을 발견하기 위해 크레이터의 일부를 발굴하려고 연구자 탐험대를 자금 지원하기를 원합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_BARRINGER_CRATER</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_2">
+			<Text>크레이터 주변의 화산 균열은 시골을 가로지르는 여정을 길고 위험하게 만듭니다. 상인들은 평야에서 생계를 꾸리는 다양한 사람들을 위해 무역 거점을 세우고자 합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_BARRINGER_CRATER</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_3">
+			<Text>상인들은 크레이터가 거대한 철 운석에 의해 만들어졌다는 이론을 듣고, 그 가설적 대광맥을 확보하기 위해 크레이터 깊숙이 드릴링을 하고자 합니다. 그들은 정부 자금 지원의 대가로 일부 보물을 약속합니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_MinimumStartYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>500</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_4">
+			<Text>최근 Barringer의 가설이 입증되면서 크레이터는 천문학 커뮤니티에서 상징적인 존재가 되었습니다. 기업가들은 이 새로운 관심을 활용하여 크레이터 인근에 민간 우주 탐사 회사를 설립하려고 합니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>150</Yield>
-		</Row>
-	</CityEventChoice_MinimumStartYield>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-500</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-150</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_ImprovementYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</CityEventChoice_ImprovementYieldChange>
-	<CityEventChoice_ResourceQuantity>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_3</CityEventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>3</Quantity>
-		</Row>
-	</CityEventChoice_ResourceQuantity>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<Points>100</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_CRATER</FeatureType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_CRATER</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	
-	
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-5</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_BARRINGER_CRATER_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION">
-      <Text>세상을 뒤흔든 대폭발</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP">
-      <Text>상인들이 배링거 크레이터 주변의 상황을 이용하려 하며, 그들의 사업에 대한 당신의 지원을 요청하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_1">
-      <Text>이 자연경관은 영구적으로 +1 [ICON_RESEARCH] 과학과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_2">
-      <Text>다음 {4_Turns} 동안 인근 마을들이 +2 [ICON_CULTURE] 문화와 +2 [ICON_GOLD] 골드를 생성하지만, 도시에 [ICON_STRENGTH] 불만이 10% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_3">
-      <Text>대규모 발굴을 허가하여, {2_InstantYield}을 대가로 대규모 철광석 매장지(3개 복사본)를 구매할 기회를 얻습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_HELP_CHOICE_4">
-      <Text>{2_InstantYield}을 할당하고 {4_GPChange}와 무료 우주선 공장을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_1">
-      <Text>상인들은 희귀한 보석과 금속을 발견하기 위해 크레이터의 일부를 발굴하려고 연구자 탐험대를 자금 지원하기를 원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_2">
-      <Text>크레이터 주변의 화산 균열은 시골을 가로지르는 여정을 길고 위험하게 만듭니다. 상인들은 평야에서 생계를 꾸리는 다양한 사람들을 위해 무역 거점을 세우고자 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_3">
-      <Text>상인들은 크레이터가 거대한 철 운석에 의해 만들어졌다는 이론을 듣고, 그 가설적 대광맥을 확보하기 위해 크레이터 깊숙이 드릴링을 하고자 합니다. 그들은 정부 자금 지원의 대가로 일부 보물을 약속합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_BARRINGER_CRATER_DESCRIPTION_CHOICE_4">
-      <Text>최근 Barringer의 가설이 입증되면서 크레이터는 천문학 커뮤니티에서 상징적인 존재가 되었습니다. 기업가들은 이 새로운 관심을 활용하여 크레이터 인근에 민간 우주 탐사 회사를 설립하려고 합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

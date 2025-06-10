@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c5f1693f-be17-4df6-9428-ab56f60a9c96" version="1">
+  <Properties>
+    <Name>(overhaul) Enhanced Air Warfare 4VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Enhanced Air Warfare 4VP</Teaser>
+    <Description>Translation of the Enhanced Air Warfare 4VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 공중전 향상 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>CAYM, 디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="871da714-b2c6-49e9-8882-57489f501dba" minversion="0" maxversion="999" title="(overhaul) Enhanced Air Warfare 4VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1DB522BF682C93BAA2C835B72F4B0480" import="0">core/eaw_OUTRO.sql</File>
+    <File md5="4DD4C6E9F1F21BA51C28E6F254A9355C" import="0">core/eaw_TEXT.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>core/eaw_OUTRO.sql</UpdateDatabase>
+      <UpdateDatabase>core/eaw_TEXT.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

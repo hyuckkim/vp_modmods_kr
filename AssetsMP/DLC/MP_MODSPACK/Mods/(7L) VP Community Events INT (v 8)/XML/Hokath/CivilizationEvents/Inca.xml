@@ -1,397 +1,83 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_INCA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_INCA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 혼인 이동성</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 젊은 카파크를 황태자의 자리에 올립니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<HappinessPerCity>1</HappinessPerCity>
-			<ImprovementAnywhereRequired>IMPROVEMENT_TRADING_POST</ImprovementAnywhereRequired>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 알파카 양털</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 알파카 양털을 엮는 기술을 발견합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_DYNAMITE</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 와카 트레일</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<IsUnhappy>true</IsUnhappy>
-			<RequiredEra>ERA_MODERN</RequiredEra>
-			<WLTKDTurns>15</WLTKDTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<EventFreePolicies>1</EventFreePolicies>
-			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
-			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 알프스에 일련의 성스러운 신전을 세우고, 영구적인 꽃 [ICON_RES_DYE] 염료에 대한 지식을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_INCA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_INTERPRETIVE_CENTER</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 산악 채굴</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 다이너마이트의 도움으로 광물 탐사를 시작합니다. [ICON_RES_GOLD], [ICON_RES_SILVER], [ICON_RES_COPPER]에 접근합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 정치적 정화</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 과두제를 정화하여 장기적인 안정성을 희생하면서 자신의 정권에 대한 광범위한 대중의 지지를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 산악 관광</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 세계 관광객들에게 숨겨진 잉카 산악 통로를 개방합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_INCA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION">
+			<Text>태양의 아들</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-200</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP">
+			<Text>또 다른 세대, 또 다른 당신의 신하들의 자녀들이 궁전을 지나가며, 당신의 위대한 제국에 동화됩니다. 잉카의 위대한 인물들이 졸업식에서 당신의 연설을 듣기 위해 모였습니다.[NEWLINE][NEWLINE]우리는 당신의 지혜를 기다립니다, 사파 잉카.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-2000</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-2000</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2">
+			<Text>{2_InstantYield}의 대체 자원을 제공합니다. [ICON_RES_SHEEP] 양털 타일에서 생산된 직물은 +1 [ICON_CULTURE] 문화, +2 [ICON_PEACE] 신앙, +2 [ICON_GOLD] 금을 생성합니다. 모든 도시에서 +1 [ICON_HAPPINESS_2] 행복.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3">
+			<Text>와카 트레일을 설정합니다. 산에서는 +2 [ICON_PEACE] 신앙을 생성하며, [ICON_RES_DYE] 염료 두 개를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2000</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}를 광물 탐사에 투자합니다. 산에서는 +2 [ICON_PRODUCTION] 생산을 생성하며, [ICON_RES_GOLD] 금, [ICON_RES_SILVER] 은, [ICON_RES_COPPER] 구리 하나를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2000</Yield>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5">
+			<Text>사회 정책을 강제로 시행합니다. 모든 도시는 15턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, [ICON_STRENGTH] 스트레스와 [ICON_GOLD] 빈곤 기준이 영구적으로 5% 증가합니다.</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_COPPER</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6">
+			<Text>국제적으로 유산 사이트에 대한 접근을 허용하며 {2_InstantYield}를 잃습니다. 대신, 산에서는 +2 [ICON_CULTURE] 문화와 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1">
+			<Text>이 경이로운 순간을 기념하기 위해, 졸업생이 왕녀와 결혼합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_SILVER</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*궁정의 직물 제조자들이 알파카가 음식과 종교적 제물로 광범위하게 사용되며, 특히 다재다능한 양털을 생산한다는 것을 발견했습니다*[NEWLINE]카파크들이 자신의 땅으로 돌아갈 때, 그들은 사파 잉카의 지식으로 풍요로워지고, 모두가 번영을 누리게 될 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_DYE</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*사제들은 산악 신전을 세우고, 숨겨진 영혼을 깨우며 신성한 꽃을 재배하기를 원합니다*[NEWLINE]내 학생들이 그들의 땅으로 돌아갈 때, 그들은 신의 하인으로서, 산의 비밀에 대한 교육을 받은 채로 돌아갑니다!</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_MinimumResourceRequired>
-	<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<Quantity>2</Quantity>
-	</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_ResourceYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*우리는 이제 산의 중심부까지 더 깊이 파고들 수 있는 지식을 갖추었습니다*[NEWLINE]북에서 남, 동에서 서, 우리 위대한 왕국의 모든 구석에서 지구의 비밀을 파헤칠 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*정치적 엘리트와 일반인들 사이에 당신의 통치에 대한 광범위한 불만이 있습니다*[NEWLINE]내가 총독들을 체포하게 되어 유감입니다! 그들은 잉카와 일반인들에게 충실한 자녀들로 교체될 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*당신의 신성한 장소와 산악 마을이 수천 년 동안 세계에 숨겨져 있었으나, 이제 세계에 의해 발견되었습니다*[NEWLINE]이제 우리는 우리 위대한 보물을 세상에 숨길 수 없습니다. 잉카의 위엄 앞에 무릎을 꿇고자 하는 모든 이들은 오십시오, 그리고 보십시오!</Text>
 		</Row>
-	</EventChoice_ResourceYieldChange>
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_TerrainYieldChange>
-
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 혼인 이동성</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 젊은 카파크를 황태자의 자리에 올립니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 알파카 양털</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 알파카 양털을 엮는 기술을 발견합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 와카 트레일</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 알프스에 일련의 성스러운 신전을 세우고, 영구적인 꽃 [ICON_RES_DYE] 염료에 대한 지식을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 산악 채굴</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 다이너마이트의 도움으로 광물 탐사를 시작합니다. [ICON_RES_GOLD], [ICON_RES_SILVER], [ICON_RES_COPPER]에 접근합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 정치적 정화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 과두제를 정화하여 장기적인 안정성을 희생하면서 자신의 정권에 대한 광범위한 대중의 지지를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 산악 관광</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 세계 관광객들에게 숨겨진 잉카 산악 통로를 개방합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION">
-      <Text>태양의 아들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP">
-      <Text>또 다른 세대, 또 다른 당신의 신하들의 자녀들이 궁전을 지나가며, 당신의 위대한 제국에 동화됩니다. 잉카의 위대한 인물들이 졸업식에서 당신의 연설을 듣기 위해 모였습니다.[NEWLINE][NEWLINE]우리는 당신의 지혜를 기다립니다, 사파 잉카.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2">
-      <Text>{2_InstantYield}의 대체 자원을 제공합니다. [ICON_RES_SHEEP] 양털 타일에서 생산된 직물은 +1 [ICON_CULTURE] 문화, +2 [ICON_PEACE] 신앙, +2 [ICON_GOLD] 금을 생성합니다. 모든 도시에서 +1 [ICON_HAPPINESS_2] 행복.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3">
-      <Text>와카 트레일을 설정합니다. 산에서는 +2 [ICON_PEACE] 신앙을 생성하며, [ICON_RES_DYE] 염료 두 개를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}를 광물 탐사에 투자합니다. 산에서는 +2 [ICON_PRODUCTION] 생산을 생성하며, [ICON_RES_GOLD] 금, [ICON_RES_SILVER] 은, [ICON_RES_COPPER] 구리 하나를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5">
-      <Text>사회 정책을 강제로 시행합니다. 모든 도시는 15턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, [ICON_STRENGTH] 스트레스와 [ICON_GOLD] 빈곤 기준이 영구적으로 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6">
-      <Text>국제적으로 유산 사이트에 대한 접근을 허용하며 {2_InstantYield}를 잃습니다. 대신, 산에서는 +2 [ICON_CULTURE] 문화와 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1">
-      <Text>이 경이로운 순간을 기념하기 위해, 졸업생이 왕녀와 결혼합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*궁정의 직물 제조자들이 알파카가 음식과 종교적 제물로 광범위하게 사용되며, 특히 다재다능한 양털을 생산한다는 것을 발견했습니다*[NEWLINE]카파크들이 자신의 땅으로 돌아갈 때, 그들은 사파 잉카의 지식으로 풍요로워지고, 모두가 번영을 누리게 될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*사제들은 산악 신전을 세우고, 숨겨진 영혼을 깨우며 신성한 꽃을 재배하기를 원합니다*[NEWLINE]내 학생들이 그들의 땅으로 돌아갈 때, 그들은 신의 하인으로서, 산의 비밀에 대한 교육을 받은 채로 돌아갑니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*우리는 이제 산의 중심부까지 더 깊이 파고들 수 있는 지식을 갖추었습니다*[NEWLINE]북에서 남, 동에서 서, 우리 위대한 왕국의 모든 구석에서 지구의 비밀을 파헤칠 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*정치적 엘리트와 일반인들 사이에 당신의 통치에 대한 광범위한 불만이 있습니다*[NEWLINE]내가 총독들을 체포하게 되어 유감입니다! 그들은 잉카와 일반인들에게 충실한 자녀들로 교체될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*당신의 신성한 장소와 산악 마을이 수천 년 동안 세계에 숨겨져 있었으나, 이제 세계에 의해 발견되었습니다*[NEWLINE]이제 우리는 우리 위대한 보물을 세상에 숨길 수 없습니다. 잉카의 위엄 앞에 무릎을 꿇고자 하는 모든 이들은 오십시오, 그리고 보십시오!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

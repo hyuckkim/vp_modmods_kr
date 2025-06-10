@@ -1,160 +1,29 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NUCLEAR_PLANT</RequiredAnywhereBuildingClass>
-			<EventArt>advisorscience.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION">
+			<Text>연금술</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
-			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP">
+			<Text>핵 반응기의 강렬한 방사선을 이용하여, 요소를 합리적인 비용으로 변환할 수 있는 방법이 개발되었습니다. 이 기술을 확실히 활용할 수 있을 것입니다.</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>2 [ICON_RES_IRON] 철을 1 복사본의 약간 무거운 [ICON_RES_COPPER] 구리로 변환합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>4 [ICON_RES_IRON] 철을 8 복사본의 더 가벼운 [ICON_RES_ALUMINUM] 알루미늄으로 변환합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>2 [ICON_RES_URANIUM] 우라늄을 2 복사본의 약간 더 가벼운 [ICON_RES_GOLD] 금으로 변환합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>더 많이 필요한 것을 시도해 보겠습니다. 요즘 구리선이 매우 비쌉니다. 더 만들 수 있는 방법이 있을까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>가까운 미래에 많은 양의 알루미늄이 필요할 것입니다. 가능할까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>철에서 금으로 변환할 수 없다고요? 실망스럽군요. 다른 것은요? 우라늄은 어떻습니까?</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>4</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_COPPER</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>-2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Quantity>-4</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
-			<Quantity>8</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>-2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION">
-      <Text>연금술</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP">
-      <Text>핵 반응기의 강렬한 방사선을 이용하여, 요소를 합리적인 비용으로 변환할 수 있는 방법이 개발되었습니다. 이 기술을 확실히 활용할 수 있을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_1">
-      <Text>2 [ICON_RES_IRON] 철을 1 복사본의 약간 무거운 [ICON_RES_COPPER] 구리로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_2">
-      <Text>4 [ICON_RES_IRON] 철을 8 복사본의 더 가벼운 [ICON_RES_ALUMINUM] 알루미늄으로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_3">
-      <Text>2 [ICON_RES_URANIUM] 우라늄을 2 복사본의 약간 더 가벼운 [ICON_RES_GOLD] 금으로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>더 많이 필요한 것을 시도해 보겠습니다. 요즘 구리선이 매우 비쌉니다. 더 만들 수 있는 방법이 있을까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>가까운 미래에 많은 양의 알루미늄이 필요할 것입니다. 가능할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>철에서 금으로 변환할 수 없다고요? 실망스럽군요. 다른 것은요? 우라늄은 어떻습니까?</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

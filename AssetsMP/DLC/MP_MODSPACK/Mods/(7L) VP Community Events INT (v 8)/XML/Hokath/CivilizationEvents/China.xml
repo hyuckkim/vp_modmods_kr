@@ -1,455 +1,83 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_CHINA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_CHINA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 고귀한 일어남</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 충성스러운 신하에게 재산과 토지를 보상으로 줍니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_CHIVALRY</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 암살 음모</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OPERA_HOUSE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 암살을 피하고, 반항하는 부족들에게 가혹한 정책을 시행합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ARCHAEOLOGY</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<ScienceMedianModifierGlobal>5</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 차 문화</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<RequiresWar>true</RequiresWar>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<EventBuildingClassGlobal>BUILDINGCLASS_MONASTERY</EventBuildingClassGlobal>
-			<FreeUnitsTechAppropriate>1</FreeUnitsTechAppropriate>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 중국 사회에서 차 마시기 유행을 일으킵니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_CHINA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_6</Description>
-			<EraScaling>true</EraScaling>
-			<IsOneShot>true</IsOneShot>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<MinimumNationalPopulation>120</MinimumNationalPopulation>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 민속</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4">
+			<Text>{3_PlayerName}의 고고학자들이 중국의 민속 문화를 재점화했습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 의화단 운동</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5">
+			<Text>중국 시민들이 군사적 및 민간적 외국 영향에 맞서 일어섭니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 5개년 계획</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 혼란스러운 정책을 시작하여 국가를 전례 없는 통제 아래 둡니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_CHINA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION">
+			<Text>용의 왕좌</Text>
 		</Row>
-	</Event_ParentEvents>
-	
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP">
+			<Text>위대한 황후님, 하늘이 사랑하는 당신께서 그 앞에 무릎을 꿇으셨습니다. 궁정에서 사자가 기다리고 있습니다![NEWLINE][NEWLINE]그들을 맞이하시겠습니까?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_2">
+			<Text>이 암살 시도에 격분하여, 농장과 농장에 더 높은 요구를 시작합니다. 추가로 +1 [ICON_FOOD] 식량과 +1 [ICON_PRODUCTION] 생산을 얻습니다. 그러나, [ICON_STRENGTH] 불안 임계값이 5% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}을(를) 지불합니다. 오페라 하우스가 +3 [ICON_FOOD] 식량을 제공합니다. [ICON_RES_TEA] 차 3개를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_4">
+			<Text>약초상과 사원이 +1, 성지에서 +2 [ICON_FOOD] 식량, [ICON_PEACE] 신앙, [ICON_CULTURE] 문화를 제공합니다. 그러나, [ICON_RESEARCH] 문해율 임계값이 5% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_5">
+			<Text>1턴의 무정부 상태 후, 모든 도시에 무료로 수도원과 유닛을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield}을(를) 지불하고 1턴의 무정부 상태에 들어갑니다. 대신, 공장들이 [ICON_GOLD] 금, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_FOOD] 식량을 10% 증가시킵니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*사자가 당신에게 원했던 자의 머리를 가져왔습니다. 그는 당신의 축복을 구합니다.*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*사자가 들어오면서, 당신은 그가 전쟁의 적의 아들임을 알아봅니다!*[NEWLINE]너희 바보들! 이 자는 내 적들이 보낸 암살자다! 경비병들!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*그 남자는 차 상인으로, 제국의 모든 차를 가져왔습니다. 그는 새 차 파빌리온에서 당신의 후원을 요청합니다.*[NEWLINE]황후가 어떻게 자신의 신하들을 거절할 수 있을까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*사절이 당신에게 당신 초기 제국의 신비주의를 재발견한 발굴 소식을 전합니다.*[NEWLINE]이 옛날 방식에 대한 재조명은 왕좌에 전례 없는 영향을 미칠 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*그 남자는 의화단의 대표로, 우리 국경 내 모든 외국인의 사망과 그들의 이상을 포기할 것을 요구합니다!*[NEWLINE]그렇게 하겠다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*당신이 나타나자, 그 남자는 즉시 정부를 저주하며 자살합니다.*[NEWLINE]고위 의원을 데려와라, 나는... 광범위한 개혁을 제안하고 싶다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>10</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-500</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_TEA</ResourceType>
-			<Quantity>3</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>-6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_CHINA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 고귀한 일어남</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 충성스러운 신하에게 재산과 토지를 보상으로 줍니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 암살 음모</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 암살을 피하고, 반항하는 부족들에게 가혹한 정책을 시행합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 차 문화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 중국 사회에서 차 마시기 유행을 일으킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 민속</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_4">
-      <Text>{3_PlayerName}의 고고학자들이 중국의 민속 문화를 재점화했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 의화단 운동</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_5">
-      <Text>중국 시민들이 군사적 및 민간적 외국 영향에 맞서 일어섭니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 5개년 계획</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_CHINA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 혼란스러운 정책을 시작하여 국가를 전례 없는 통제 아래 둡니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION">
-      <Text>용의 왕좌</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP">
-      <Text>위대한 황후님, 하늘이 사랑하는 당신께서 그 앞에 무릎을 꿇으셨습니다. 궁정에서 사자가 기다리고 있습니다![NEWLINE][NEWLINE]그들을 맞이하시겠습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_2">
-      <Text>이 암살 시도에 격분하여, 농장과 농장에 더 높은 요구를 시작합니다. 추가로 +1 [ICON_FOOD] 식량과 +1 [ICON_PRODUCTION] 생산을 얻습니다. 그러나, [ICON_STRENGTH] 불안 임계값이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}을(를) 지불합니다. 오페라 하우스가 +3 [ICON_FOOD] 식량을 제공합니다. [ICON_RES_TEA] 차 3개를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_4">
-      <Text>약초상과 사원이 +1, 성지에서 +2 [ICON_FOOD] 식량, [ICON_PEACE] 신앙, [ICON_CULTURE] 문화를 제공합니다. 그러나, [ICON_RESEARCH] 문해율 임계값이 5% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_5">
-      <Text>1턴의 무정부 상태 후, 모든 도시에 무료로 수도원과 유닛을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield}을(를) 지불하고 1턴의 무정부 상태에 들어갑니다. 대신, 공장들이 [ICON_GOLD] 금, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_FOOD] 식량을 10% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_1">
-      <Text>*사자가 당신에게 원했던 자의 머리를 가져왔습니다. 그는 당신의 축복을 구합니다.*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*사자가 들어오면서, 당신은 그가 전쟁의 적의 아들임을 알아봅니다!*[NEWLINE]너희 바보들! 이 자는 내 적들이 보낸 암살자다! 경비병들!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*그 남자는 차 상인으로, 제국의 모든 차를 가져왔습니다. 그는 새 차 파빌리온에서 당신의 후원을 요청합니다.*[NEWLINE]황후가 어떻게 자신의 신하들을 거절할 수 있을까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*사절이 당신에게 당신 초기 제국의 신비주의를 재발견한 발굴 소식을 전합니다.*[NEWLINE]이 옛날 방식에 대한 재조명은 왕좌에 전례 없는 영향을 미칠 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*그 남자는 의화단의 대표로, 우리 국경 내 모든 외국인의 사망과 그들의 이상을 포기할 것을 요구합니다!*[NEWLINE]그렇게 하겠다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_CHINA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*당신이 나타나자, 그 남자는 즉시 정부를 저주하며 자살합니다.*[NEWLINE]고위 의원을 데려와라, 나는... 광범위한 개혁을 제안하고 싶다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

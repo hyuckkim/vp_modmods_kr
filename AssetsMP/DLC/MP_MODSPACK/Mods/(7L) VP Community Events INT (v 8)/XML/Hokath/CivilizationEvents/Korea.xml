@@ -1,504 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_KOREA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_KOREA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 새로운 국가</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 국가 고문으로 알려지지 않은 인물을 임명합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_CHIVALRY</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 경복궁</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<GoldenAgeTurns>10</GoldenAgeTurns>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 도자기 유물로 가득 찬 웅장한 새로운 궁전을 건설합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>false</EraScaling>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 개혁된 문자</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MINT</RequiredAnywhereBuildingClass>
-			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
-			<EventPromotion>PROMOTION_UE_TURTLE_SHELL</EventPromotion>
-			<EventDuration>-1</EventDuration>
-			<EventBuildingClassGlobal>BUILDINGCLASS_KOREA_UE_DUMMY</EventBuildingClassGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 새로운 문자, 한글을 발명합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_KOREA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<MinimumNationalPopulation>120</MinimumNationalPopulation>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<GoldenAgeTurns>15</GoldenAgeTurns>
-			<LosingMoney>true</LosingMoney>
-			<CultureMedianModifierGlobal>-10</CultureMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 사회적 완화</Text>
 		</Row>
-	</EventChoices>
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_TURTLE_SHELL</Type>
-			<Description>TXT_KEY_PROMOTION_UE_TURTLE_SHELL</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<RangedDefenseMod>33</RangedDefenseMod>
-			<Help>TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP</Help>
-			<PortraitIndex>15</PortraitIndex>
-			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_TURTLE_SHELL</PediaEntry>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 사회적 이동성을 증진시킵니다!</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_TURTLE_SHELL</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 암살</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_TURTLE_SHELL</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5">
+			<Text>한국의 왕후가 암살되어 폭력적이고 고립주의적인 감정을 불러일으킵니다!</Text>
 		</Row>
-		<!-- Adds homeland guardian to melee and gun class upon eventchoice, affects other events too! -->
-		<Row>
-			<PromotionType>PROMOTION_HOMELAND_GUARDIAN</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 현대화</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_HOMELAND_GUARDIAN</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 한국의 경제적 및 사회적 자유를 대폭 확대합니다!</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION">
+			<Text>솜털 찌르기</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP">
+			<Text>편전의 파벌들이 당신의 승인을 갈구하고 있습니다, 대왕이시여. 그들은 하늘, 자신들, 당신의 적들을 섬기고 있으며, 그들 중 일부는 당신을 섬길지도 모릅니다.[NEWLINE][NEWLINE]땅은 조금 떨리고 있고, 그들은 다시 한 번 당신에게 요구할 기회를 얻었습니다...</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1">
+			<Text>원하는 위대한 인물을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2">
+			<Text>{2_InstantYield}를 지불합니다. 궁전은 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_RESEARCH] 과학에 +5%를 제공합니다. 또한 그 영광은 +5 [ICON_PEACE] 신앙에 비추어집니다. [ICON_RES_PORCELAIN] 도자기를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}를 지불합니다. 농장은 +1 [ICON_RESEARCH] 과학을 산출합니다. 10턴 동안 황금 시대에 들어갑니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_KOREA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}를 지불합니다. 전문직에서 +1 [ICON_CULTURE] 문화.</Text>
 		</Row>
-	</Event_ParentEvents>
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_KOREA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_KOREA_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5">
+			<Text>다음 {4_Turns} 동안: 근접 및 총기 유닛이 우호적인 지역에서 +25% [ICON_STRENGTH] 전투력을 얻습니다; 적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화가 시대 및 스파이의 수준에 따라 증가합니다; 그러나 세관 사무소는 [ICON_GOLD] 금을 -4, [ICON_TOURISM] 관광을 -4 감소시킵니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_KOREA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_KOREA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_KOREA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6">
+			<Text>증권 거래소는 도시에서 +20% [ICON_GOLD] 금을 제공합니다, 그리고 [ICON_CULTURE] 무료 임계치가 10% 감소합니다. 15턴 동안 황금기에 들어갑니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromSpyDefense>
-		<Row>
-			<BuildingType>BUILDING_KOREA_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1">
+			<Text>이 정치적 요구를 사용하여 국회의 수장을 한국에 충성스러운 인물로 교체합니다.</Text>
 		</Row>
-	</Building_YieldFromSpyDefense>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*신료들이 대규모 건설 계획과 예술적 수요를 요청합니다*[NEWLINE]나를 강탈하려는 이 얄팍한 시도는 결코 용납될 수 없습니다. 편전에 웅장한 경복궁을 세워야 할 필요성을 강조해 주십시오.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*우리 양반들은 농민들을 통제하기 위해 교육에 대한 접근을 제한하고자 합니다.*[NEWLINE]우리는 그들에게 교육 개혁을 제공하겠지만, 그들이 상상했던 방식은 아닙니다. 수석 학자를 데려오세요!</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-750</Yield>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*신흥 농민들이 다시 한 번 자신들의 지위 이상의 위치를 바라봅니다. 양반들은 조치를 요구합니다.*[NEWLINE]우리는 평화롭게 우리의 전통을 강화할 것입니다. 하늘 아래 질서가 확립될 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*중전마마가 암살되었습니다. 신료들은 항복을 요구합니다.*[NEWLINE]이 역적놈들... 우리는 결코 외세의 마귀들의 비참하고 제국주의적인 망상에 굴복하지 않을 것이다! 놈들의 목을 베어라!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*신료들은 경제적 어려운 시기에 당신을 폐위하려는 악의적인 움직임으로 그들 자신의 권력과 당신의 권력을 모두 파괴할 개혁을 요구합니다.*[NEWLINE]결국 이렇게 되었군... 상관없다. 이 개혁을 통해 우리 국민의 잠재력이 마침내 발휘될 것이다!</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>750</Yield>
+		<Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY">
+			<Text>한국 보호주의</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP">
+			<Text>적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화를 받습니다. 시대에 따라 증가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL">
+			<Text>귀갑</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP">
+			<Text>[ICON_RANGE_STRENGTH] 원거리 공격에서 33% 적은 피해를 받습니다. 오직 한국의 이벤트를 통해 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STOCK_EXCHANGE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>20</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>5</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_PORCELAIN</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 새로운 국가</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 국가 고문으로 알려지지 않은 인물을 임명합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 경복궁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 도자기 유물로 가득 찬 웅장한 새로운 궁전을 건설합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 개혁된 문자</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 새로운 문자, 한글을 발명합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 사회적 완화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 사회적 이동성을 증진시킵니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 암살</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5">
-      <Text>한국의 왕후가 암살되어 폭력적이고 고립주의적인 감정을 불러일으킵니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 현대화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 한국의 경제적 및 사회적 자유를 대폭 확대합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION">
-      <Text>솜털 찌르기</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP">
-      <Text>편전의 파벌들이 당신의 승인을 갈구하고 있습니다, 대왕이시여. 그들은 하늘, 자신들, 당신의 적들을 섬기고 있으며, 그들 중 일부는 당신을 섬길지도 모릅니다.[NEWLINE][NEWLINE]땅은 조금 떨리고 있고, 그들은 다시 한 번 당신에게 요구할 기회를 얻었습니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1">
-      <Text>원하는 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2">
-      <Text>{2_InstantYield}를 지불합니다. 궁전은 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_RESEARCH] 과학에 +5%를 제공합니다. 또한 그 영광은 +5 [ICON_PEACE] 신앙에 비추어집니다. [ICON_RES_PORCELAIN] 도자기를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}를 지불합니다. 농장은 +1 [ICON_RESEARCH] 과학을 산출합니다. 10턴 동안 황금 시대에 들어갑니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}를 지불합니다. 전문직에서 +1 [ICON_CULTURE] 문화.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5">
-      <Text>다음 {4_Turns} 동안: 근접 및 총기 유닛이 우호적인 지역에서 +25% [ICON_STRENGTH] 전투력을 얻습니다; 적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화가 시대 및 스파이의 수준에 따라 증가합니다; 그러나 세관 사무소는 [ICON_GOLD] 금을 -4, [ICON_TOURISM] 관광을 -4 감소시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6">
-      <Text>증권 거래소는 도시에서 +20% [ICON_GOLD] 금을 제공합니다, 그리고 [ICON_CULTURE] 무료 임계치가 10% 감소합니다. 15턴 동안 황금기에 들어갑니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1">
-      <Text>이 정치적 요구를 사용하여 국회의 수장을 한국에 충성스러운 인물로 교체합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*신료들이 대규모 건설 계획과 예술적 수요를 요청합니다*[NEWLINE]나를 강탈하려는 이 얄팍한 시도는 결코 용납될 수 없습니다. 편전에 웅장한 경복궁을 세워야 할 필요성을 강조해 주십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*우리 양반들은 농민들을 통제하기 위해 교육에 대한 접근을 제한하고자 합니다.*[NEWLINE]우리는 그들에게 교육 개혁을 제공하겠지만, 그들이 상상했던 방식은 아닙니다. 수석 학자를 데려오세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*신흥 농민들이 다시 한 번 자신들의 지위 이상의 위치를 바라봅니다. 양반들은 조치를 요구합니다.*[NEWLINE]우리는 평화롭게 우리의 전통을 강화할 것입니다. 하늘 아래 질서가 확립될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*중전마마가 암살되었습니다. 신료들은 항복을 요구합니다.*[NEWLINE]이 역적놈들... 우리는 결코 외세의 마귀들의 비참하고 제국주의적인 망상에 굴복하지 않을 것이다! 놈들의 목을 베어라!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*신료들은 경제적 어려운 시기에 당신을 폐위하려는 악의적인 움직임으로 그들 자신의 권력과 당신의 권력을 모두 파괴할 개혁을 요구합니다.*[NEWLINE]결국 이렇게 되었군... 상관없다. 이 개혁을 통해 우리 국민의 잠재력이 마침내 발휘될 것이다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY">
-      <Text>한국 보호주의</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP">
-      <Text>적 [ICON_SPY] 스파이가 사망할 때 [ICON_CULTURE] 문화를 받습니다. 시대에 따라 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL">
-      <Text>귀갑</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP">
-      <Text>[ICON_RANGE_STRENGTH] 원거리 공격에서 33% 적은 피해를 받습니다. 오직 한국의 이벤트를 통해 부여됩니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

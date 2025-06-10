@@ -1,219 +1,40 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP</Help>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>5</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<EventArt>advisormilitary.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION">
+			<Text>전쟁 범죄</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
-			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP">
+			<Text>사령관님, 처리해야 할 나쁜 소식이 있습니다...[NEWLINE][NEWLINE]우리 정예 부대의 일부가 묘사하기 힘든 범죄를 저지한 것으로 발견되었습니다. 이들을 어떻게 처리해야 합니까?</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<PlayerHappiness>-3</PlayerHappiness>
-			<EventDuration>30</EventDuration>
-			<Expires>true</Expires>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>여론이 당신에게 불리해집니다. {4_Turns} 동안 +3 [ICON_HAPPINESS_3] 불행.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>5</EventDuration>
-			<Expires>true</Expires>
-			<EventPromotion>PROMOTION_AES_HOSTILITY</EventPromotion>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4">
+			<Text>이 사건으로 인해 군대의 사기가 떨어졌습니다. {4_Turns} 동안 -10% [ICON_STRENGTH] 전투력.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>전쟁은 지옥입니다. 악마가 있는 것은 예상된 일입니다. 이들을 처벌하고 다시 전투에 투입하세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2">
+			<Text>이들이 저지른 일은 혐오스럽지만, 지금 그들을 처형하면 그들은 영원히 저주받을 것입니다. 이들은 사제들과 함께 보내어 죄를 씻도록 해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3">
+			<Text>세계의 다른 지도자들이 이 사실을 알면 안 됩니다. 어떤 방법을 써서라도 모든 증인들을 침묵시키세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4">
+			<Text>역겹습니다. 그들의 목을 베어야 합니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_AES_HOSTILITY</Type>
-			<Description>TXT_KEY_PROMOTION_AES_HOSTILITY</Description>
-			<Help>TXT_KEY_PROMOTION_AES_HOSTILITY_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<CombatPercent>-10</CombatPercent>
-			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_AES_HOSTILITY</PediaEntry>
+		<Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY">
+			<Text>사기 저하</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		<Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY_HELP">
+			<Text>-10% [ICON_STRENGTH] 전투력</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AES_HOSTILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
-		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>-1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_BAD_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION">
-      <Text>전쟁 범죄</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP">
-      <Text>사령관님, 처리해야 할 나쁜 소식이 있습니다...[NEWLINE][NEWLINE]
-			
-			우리 정예 부대의 일부가 묘사하기 힘든 범죄를 저지한 것으로 발견되었습니다. 이들을 어떻게 처리해야 합니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_1">
-      <Text>여론이 당신에게 불리해집니다. {4_Turns} 동안 +3 [ICON_HAPPINESS_3] 불행.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 사용하여 상황을 완화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_HELP_CHOICE_4">
-      <Text>이 사건으로 인해 군대의 사기가 떨어졌습니다. {4_Turns} 동안 -10% [ICON_STRENGTH] 전투력.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_1">
-      <Text>전쟁은 지옥입니다. 악마가 있는 것은 예상된 일입니다. 이들을 처벌하고 다시 전투에 투입하세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_2">
-      <Text>이들이 저지른 일은 혐오스럽지만, 지금 그들을 처형하면 그들은 영원히 저주받을 것입니다. 이들은 사제들과 함께 보내어 죄를 씻도록 해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_3">
-      <Text>세계의 다른 지도자들이 이 사실을 알면 안 됩니다. 어떤 방법을 써서라도 모든 증인들을 침묵시키세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_BAD_DESCRIPTION_CHOICE_4">
-      <Text>역겹습니다. 그들의 목을 베어야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY">
-      <Text>사기 저하</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_AES_HOSTILITY_HELP">
-      <Text>-10% [ICON_STRENGTH] 전투력</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

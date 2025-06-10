@@ -1,218 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_KAILASH</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_MT_KAILASH</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION">
+			<Text>대지의 기둥</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_NW_MT_KAILASH</CityEventType>
-			<CityEventChoice>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoice>
-			<CheckForActive>false</CheckForActive>
-			<CheckOnlyEventCity>true</CheckOnlyEventCity>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP">
+			<Text>경이로우신 폐하, 카일라스 산에서 살고 있는 괴상한 승려들이 대기실에서 폐하를 기다리고 있습니다.[NEWLINE]평소처럼 그들은 빙빙 돌고 있군요.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_KAILASH_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>	
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_1">
+			<Text>이 경이로움이 영구적으로 +1 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClass>BUILDINGCLASS_MANDIR</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_2">
+			<Text>승려들에게 {2_InstantYield}를 허락하십시오. 이 도시에 무료 만디르가 건설되며, +3 [ICON_PEACE] 신앙을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClass>BUILDINGCLASS_STUPA</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_3">
+			<Text>승려들에게 {2_InstantYield}를 허락하십시오. 이 도시에 무료 스투파가 건설되며, +3 [ICON_CULTURE] 문화를 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_HOTEL</RequiredBuildingClass>
-			<MinimumCityPopulation>20</MinimumCityPopulation>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_4">
+			<Text>지역 호텔이 +10 [ICON_GOLD] 황금과 +10 [ICON_TOURISM] 관광을 제공합니다. 그러나 이 경이로움은 최대 -5 [ICON_PEACE] 신앙을 잃게 됩니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_KAILASH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_1">
+			<Text>*승려들은 최근 카일라스 산을 향한 순례가 그곳의 생명력을 강화했다고 설명합니다*[NEWLINE]이 문제에 대해서는 더 지혜로운 스승들에게 맡기겠습니다. 아주 좋군요.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_KAILASH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_2">
+			<Text>*한 숭배자 집단이 카일라스 산 정상에 사는 신을 숭배하기 위해 순례자들을 위한 사원을 건립해달라고 청원하고 있습니다*[NEWLINE]카일라스 산 정상에 신이 있다면, 그를 우리 편으로 만드는 것이 매우 도움이 될 것입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_KAILASH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_3">
+			<Text>*한 숭배자 집단이 카일라스 산에서 벌어진 전설적인 마법 대결을 기리기 위한 사원을 건립해달라고 청원하고 있습니다*[NEWLINE]전설적인 마법 대결이 더 이상 흔하지 않다는 것은 참으로 안타까운 일입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_KAILASH</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_4">
+			<Text>*지역 총독이 처음으로 등산객들이 카일라스 산을 오르는 것을 허용하여 그 신성함을 모독할 위기에 처해 있다는 소식에 승려들이 격분하고 있습니다*[NEWLINE]신과 마법사의 시대는 이미 오래전에 지나갔습니다. 카일라스 산을 정복하는 것은 현대의 숭배 방식입니다. 이는 인간이 지구를 정복하고 숭고한 도전을 추구하는 행위입니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-
-	<CityEventChoice_BuildingClassYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-	</CityEventChoice_BuildingClassYieldChange>
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_MT_KAILASH</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_MT_KAILASH</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<FeatureType>FEATURE_MT_KAILASH</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	<CityEventChoice_MinimumStartYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</CityEventChoice_MinimumStartYield>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_KAILASH_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>-6</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION">
-      <Text>대지의 기둥</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP">
-      <Text>경이로우신 폐하, 카일라스 산에서 살고 있는 괴상한 승려들이 대기실에서 폐하를 기다리고 있습니다.[NEWLINE]평소처럼 그들은 빙빙 돌고 있군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_1">
-      <Text>이 경이로움이 영구적으로 +1 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_2">
-      <Text>승려들에게 {2_InstantYield}를 허락하십시오. 이 도시에 무료 만디르가 건설되며, +3 [ICON_PEACE] 신앙을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_3">
-      <Text>승려들에게 {2_InstantYield}를 허락하십시오. 이 도시에 무료 스투파가 건설되며, +3 [ICON_CULTURE] 문화를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_HELP_CHOICE_4">
-      <Text>지역 호텔이 +10 [ICON_GOLD] 황금과 +10 [ICON_TOURISM] 관광을 제공합니다. 그러나 이 경이로움은 최대 -5 [ICON_PEACE] 신앙을 잃게 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_1">
-      <Text>*승려들은 최근 카일라스 산을 향한 순례가 그곳의 생명력을 강화했다고 설명합니다*[NEWLINE]이 문제에 대해서는 더 지혜로운 스승들에게 맡기겠습니다. 아주 좋군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_2">
-      <Text>*한 숭배자 집단이 카일라스 산 정상에 사는 신을 숭배하기 위해 순례자들을 위한 사원을 건립해달라고 청원하고 있습니다*[NEWLINE]카일라스 산 정상에 신이 있다면, 그를 우리 편으로 만드는 것이 매우 도움이 될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_3">
-      <Text>*한 숭배자 집단이 카일라스 산에서 벌어진 전설적인 마법 대결을 기리기 위한 사원을 건립해달라고 청원하고 있습니다*[NEWLINE]전설적인 마법 대결이 더 이상 흔하지 않다는 것은 참으로 안타까운 일입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_KAILASH_DESCRIPTION_CHOICE_4">
-      <Text>*지역 총독이 처음으로 등산객들이 카일라스 산을 오르는 것을 허용하여 그 신성함을 모독할 위기에 처해 있다는 소식에 승려들이 격분하고 있습니다*[NEWLINE]신과 마법사의 시대는 이미 오래전에 지나갔습니다. 카일라스 산을 정복하는 것은 현대의 숭배 방식입니다. 이는 인간이 지구를 정복하고 숭고한 도전을 추구하는 행위입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

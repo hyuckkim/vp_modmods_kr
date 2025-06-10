@@ -1,87 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC</Type>
-			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>70</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
-			<EventArt>advisoreconomic.dds</EventArt>
-		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_1</Help>
-			<EventDuration>100</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_2</Description>
-			<EventDuration>100</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_3</Description>
-		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_ECONOMIC</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_ECONOMIC</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_ECONOMIC</EventType>
-		</Row>
-	</Event_ParentEvents>
 	<Language_ko_KR>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION">
-		  <Text>자립 대 확장</Text>
+			<Text>자립 대 확장</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP">
-		  <Text>최근 경제 고문이 새로운 계획과 프로젝트가 담긴 서류들을 연달아 당신의 사무실로 가져왔습니다. 그녀는 경제적 자립과 확장 교리를 탐구하고 싶어합니다.[NEWLINE][NEWLINE]당신의 결정을 기다리고 있습니다.</Text>
+			<Text>최근 경제 고문이 새로운 계획과 프로젝트가 담긴 서류들을 연달아 당신의 사무실로 가져왔습니다. 그녀는 경제적 자립과 확장 교리를 탐구하고 싶어합니다.[NEWLINE][NEWLINE]당신의 결정을 기다리고 있습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_1">
-		  <Text>{4_Turns} 동안 자립과 관련된 주요 사건들이 발생할 수 있습니다.[NEWLINE]
-				[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]당신의 도시에서 자립이 강화될 수 있습니다.[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]도시가 신자들에게 신앙으로 기부할 수 있는 기회가 생길 수 있습니다!
-				[NEWLINE][ICON_BULLET]지속 기간 {4_Turns}의 카라반 회사 구매 옵션이 제공될 수 있습니다.
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]도시가 악행을 수입할 수 있어 일시적인 불행이 발생할 수 있습니다![ENDCOLOR]
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]패닉이 무작위로 발생해 시장과 은행의 금액이 줄어들 수 있습니다.[ENDCOLOR]</Text>
+			<Text>{4_Turns} 동안 자립과 관련된 주요 사건들이 발생할 수 있습니다.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]당신의 도시에서 자립이 강화될 수 있습니다.[ENDCOLOR][NEWLINE][ICON_BULLET]도시가 신자들에게 신앙으로 기부할 수 있는 기회가 생길 수 있습니다![NEWLINE][ICON_BULLET]지속 기간 {4_Turns}의 카라반 회사 구매 옵션이 제공될 수 있습니다.[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]도시가 악행을 수입할 수 있어 일시적인 불행이 발생할 수 있습니다![ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]패닉이 무작위로 발생해 시장과 은행의 금액이 줄어들 수 있습니다.[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_2">
-		  <Text>{4_Turns} 동안 확장과 관련된 주요 사건들이 발생할 수 있습니다.[NEWLINE]
-				[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]무역이 증가해 도시의 세수에 기여할 수 있습니다![ENDCOLOR]
-				[NEWLINE][ICON_BULLET]도시가 신자들에게 신앙으로 기부할 기회가 생길 수 있습니다!
-				[NEWLINE][ICON_BULLET]지속 기간 {4_Turns}의 카라반 회사 구매 옵션이 제공될 수 있습니다.
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]도시가 부정한 악행을 수입할 수 있어 일시적인 고통이 발생할 수 있습니다![ENDCOLOR]
-				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]통화가 인플레이션되어 도시 연결에서 얻는 금이 줄어들 수 있습니다.[ENDCOLOR]</Text>
+			<Text>{4_Turns} 동안 확장과 관련된 주요 사건들이 발생할 수 있습니다.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]무역이 증가해 도시의 세수에 기여할 수 있습니다![ENDCOLOR][NEWLINE][ICON_BULLET]도시가 신자들에게 신앙으로 기부할 기회가 생길 수 있습니다![NEWLINE][ICON_BULLET]지속 기간 {4_Turns}의 카라반 회사 구매 옵션이 제공될 수 있습니다.[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]도시가 부정한 악행을 수입할 수 있어 일시적인 고통이 발생할 수 있습니다![ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]통화가 인플레이션되어 도시 연결에서 얻는 금이 줄어들 수 있습니다.[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_HELP_CHOICE_3">
-		  <Text>사업은 평소와 다름없이 계속됩니다.</Text>
+			<Text>사업은 평소와 다름없이 계속됩니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_1">
-		  <Text>가장 유능한 고문이기에, 그녀가 자립을 통해 경제가 자립할 수 있도록 탐구하는 게 최선이라고 생각해.</Text>
+			<Text>가장 유능한 고문이기에, 그녀가 자립을 통해 경제가 자립할 수 있도록 탐구하는 게 최선이라고 생각해.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_2">
-		  <Text>우리 경제를 최대한 확장하는 게 좋다고 생각해. 그녀의 판단에 따라 진행하자.</Text>
+			<Text>우리 경제를 최대한 확장하는 게 좋다고 생각해. 그녀의 판단에 따라 진행하자.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_DESCRIPTION_CHOICE_3">
-		  <Text>지금은 경제 실험을 시작할 때가 아니라고 생각해. 이 계획들은 잠시 보류해야겠어.</Text>
+			<Text>지금은 경제 실험을 시작할 때가 아니라고 생각해. 이 계획들은 잠시 보류해야겠어.</Text>
 		</Row>
 	</Language_ko_KR>
 </GameData>

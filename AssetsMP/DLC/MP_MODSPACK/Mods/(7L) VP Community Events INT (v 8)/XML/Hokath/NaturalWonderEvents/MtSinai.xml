@@ -1,208 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_SINAI</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_MT_SINAI</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION">
+			<Text>항상 거룩하라</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_NW_MT_SINAI</CityEventType>
-			<CityEventChoice>CITY_EVENT_NW_MT_SINAI_CHOICE_4</CityEventChoice>
-			<CheckForActive>false</CheckForActive>
-			<CheckOnlyEventCity>true</CheckOnlyEventCity>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP">
+			<Text>폐하의 관대하심이여, 반도에서 온 세 명의 사내들이 다시 찾아왔습니다. 그들은 도시 상공에서 별을 보았다고 말하며, 평소처럼 뭔가 중요한 일이 일어날 거라 주장합니다.[NEWLINE]그들은 전실에서 귀환 경로를 계획하며 폐하를 기다리고 있습니다.</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_SINAI_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_1">
+			<Text>이 경이로움이 영구적으로 +1 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_SINAI_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClass>BUILDINGCLASS_CHURCH</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_2">
+			<Text>첫 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 교회가 건설되며, +3 [ICON_PEACE] 신앙을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_SINAI_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClass>BUILDINGCLASS_MOSQUE</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_3">
+			<Text>두 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 모스크가 건설되며, +3 [ICON_GOLDEN_AGE] 황금기 점수를 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_MT_SINAI_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClass>BUILDINGCLASS_MONASTERY</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_4">
+			<Text>세 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 수도원이 건설되며, [ICON_RES_WINE] 와인 한 개를 획득합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_SINAI</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_1">
+			<Text>*세 명의 사내들은 시나이 산이 신의 징표이며, 곧 중요한 사건이 일어날 것이라고 주장합니다*[NEWLINE]나는 매우 중요한 인물이고, 나는 지나가고 있다. 그들의 말이 맞는 것 같군. 그들을 고맙게 여기고 집으로 돌려보내라.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_SINAI</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_2">
+			<Text>*첫 번째 사내는 시나이 산 정상에서 신이 인간에게 지식을 내려주었다는 이야기를 들려줍니다*[NEWLINE]분명히, 교회는 이 거룩한 장소에 대한 존경을 표하는 적절한 방법이 될 것입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_SINAI</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_3">
+			<Text>*두 번째 사내는 첫 번째 사내의 이야기가 약간 잘못되었으며, 타오르는 떨기나무가 관련되어 있다고 주장합니다*[NEWLINE]만약 이 이야기가 사실이라면 모스크가 더 적절할 것입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_MT_SINAI</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_4">
+			<Text>*세 번째 사내는 다른 두 명의 이야기를 인정하지 않으며, 중요한 사건이 실제로는 시나이 산 주변의 사막에서 일어났다고 주장합니다*[NEWLINE]그렇다면 신의 영광을 위해 신도들이 이 계곡을 경작하도록 하라!</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-
-	<CityEventChoice_BuildingClassYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_2</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_3</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</CityEventChoice_BuildingClassYieldChange>
-	<CityEventChoice_ResourceQuantity>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_EL_DORADO_CHOICE_4</CityEventChoiceType>
-			<ResourceType>RESOURCE_WINE</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-	</CityEventChoice_ResourceQuantity>
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_MT_SINAI</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_MT_SINAI</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	<CityEventChoice_MinimumStartYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-	</CityEventChoice_MinimumStartYield>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>-200</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_MT_SINAI_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION">
-      <Text>항상 거룩하라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP">
-      <Text>폐하의 관대하심이여, 반도에서 온 세 명의 사내들이 다시 찾아왔습니다. 그들은 도시 상공에서 별을 보았다고 말하며, 평소처럼 뭔가 중요한 일이 일어날 거라 주장합니다.[NEWLINE]그들은 전실에서 귀환 경로를 계획하며 폐하를 기다리고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_1">
-      <Text>이 경이로움이 영구적으로 +1 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_2">
-      <Text>첫 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 교회가 건설되며, +3 [ICON_PEACE] 신앙을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_3">
-      <Text>두 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 모스크가 건설되며, +3 [ICON_GOLDEN_AGE] 황금기 점수를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_HELP_CHOICE_4">
-      <Text>세 번째 종파를 허락하십시오 {2_InstantYield}. 이 도시에 무료 수도원이 건설되며, [ICON_RES_WINE] 와인 한 개를 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_1">
-      <Text>*세 명의 사내들은 시나이 산이 신의 징표이며, 곧 중요한 사건이 일어날 것이라고 주장합니다*[NEWLINE]나는 매우 중요한 인물이고, 나는 지나가고 있다. 그들의 말이 맞는 것 같군. 그들을 고맙게 여기고 집으로 돌려보내라.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_2">
-      <Text>*첫 번째 사내는 시나이 산 정상에서 신이 인간에게 지식을 내려주었다는 이야기를 들려줍니다*[NEWLINE]분명히, 교회는 이 거룩한 장소에 대한 존경을 표하는 적절한 방법이 될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_3">
-      <Text>*두 번째 사내는 첫 번째 사내의 이야기가 약간 잘못되었으며, 타오르는 떨기나무가 관련되어 있다고 주장합니다*[NEWLINE]만약 이 이야기가 사실이라면 모스크가 더 적절할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_MT_SINAI_DESCRIPTION_CHOICE_4">
-      <Text>*세 번째 사내는 다른 두 명의 이야기를 인정하지 않으며, 중요한 사건이 실제로는 시나이 산 주변의 사막에서 일어났다고 주장합니다*[NEWLINE]그렇다면 신의 영광을 위해 신도들이 이 계곡을 경작하도록 하라!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -72,8 +72,6 @@ Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(ov
 Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
 Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
-Source: "..\Gedemon's YnAEMP\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
-Source: "..\Gedemon's YnAEMP INT\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: VP34UCMAX VP34UCMAXNVC
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UC VP34UCEX VP34UCMAX
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: VP34UCNVC VP34UCEXNVC VP34UCMAXNVC
