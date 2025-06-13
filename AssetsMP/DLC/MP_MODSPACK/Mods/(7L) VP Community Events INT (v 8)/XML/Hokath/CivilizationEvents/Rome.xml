@@ -1,474 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_ROME_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_ROME</RequiredCiv>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 집정관직</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 고위직을 위한 치열한 선거를 감독합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_ROME_UE_DUMMY</EventBuildingClassGlobal>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 로마 포럼</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_EDUCATION</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 소박한 출신의 상인이 집정관의 지위에 오르는 것을 목격합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
-			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
-			<FreeUnitsTechAppropriate>3</FreeUnitsTechAppropriate>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 공중목욕탕</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<EventPromotion>PROMOTION_BARRAGE_4</EventPromotion>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3">
+			<Text>로마에서 계급 분리에 대한 논쟁이 평민 지지파의 승리로 끝났습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ROME_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<EventPromotion>PROMOTION_UE_ALPINI</EventPromotion>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 궁정 시장</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 원로원에 봉사할 새로운 외교관과 용병 세대를 모집합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 이레덴타</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 도시 국가들을 로마의 이레덴타로 선언하고, 모두를 로마의 권력 아래에 두겠다고 약속합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 알프니 군단</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 공화국의 적들과 싸우기 위해 알프니 군단을 결성합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_ROME_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION">
+			<Text>Vini, Vidi, Vici</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_ROME_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_ROME_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP">
+			<Text>시민의 수장, 집정관 중 한 명이 사망했습니다. 올해가 몇 달 남지 않았습니다. 우리에게 유리한 새 집정관을 보려면 신속하게 행동해야 합니다![NEWLINE]황제의 뜻은 무엇입니까?</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_ROME_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_ROME_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_ROME_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_ROME_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<PlotCultureCostModifier>-15</PlotCultureCostModifier>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-
-
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_ALPINI</Type>
-			<Description>TXT_KEY_PROMOTION_UE_ALPINI</Description>
-			<Help>TXT_KEY_PROMOTION_UE_ALPINI_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>8</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<CanMoveImpassable>true</CanMoveImpassable>
-			<RoughDefense>20</RoughDefense>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_ALPINI</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_2">
+			<Text>포럼을 도입합니다: 시장이 +1 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다. 또한, 국경 확장 시 [ICON_CULTURE] 문화 비용이 -15% 감소합니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_ALPINI</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}의 자재를 공중목욕탕에 제공합니다: 목욕탕이 +3 [ICON_FOOD] 식량과 +2 [ICON_RESEARCH] 과학을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_ALPINI</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 사용하여 두 명의 [COLOR_POSITIVE_TEXT] 외교관[ENDCOLOR]과 세 명의 적절한 [COLOR_POSITIVE_TEXT] 유닛[ENDCOLOR]을 [ICON_CAPITAL] 수도에 유치합니다. 4 [ICON_RES_PAPER] 종이 복사본을 받습니다.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-	
-	
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_5">
+			<Text>모든 적격 유닛과 향후 생산되는 유닛이 침투자 승급을 받습니다. 당신의 통제 하에 있는 모든 대사관은 +5 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield}를 동원하여 [ICON_CAPITAL] 수도에서 네 개의 소총병 대대에 배치합니다. 당신의 총기 및 공성 유닛은 알프니 승급을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>150</Yield>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_1">
+			<Text>이 후보들 중 아무도 내 리더십에 대한 악의는 없습니다. 공화국은 이들을 동등하게 환영합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>350</Yield>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_2">
+			<Text>*유일한 평민 후보는 위대한 상인으로, 대중적으로 인기 있는 포럼의 주된 설계자입니다*[NEWLINE]제국 전역에서 포럼의 성장이 정치적 내-fighting에 의해 방해받지 않도록 해야 합니다.</Text>
 		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-2</Yield>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_3">
+			<Text>*귀족들은 번성하는 공중목욕탕에서 가장 존경받는 가문을 제외한 모든 가문을 금지하려 합니다*[NEWLINE]귀족의 자부심이 로마의 발전보다 우선할 수는 없습니다. 그런 후보가 선출되지 않도록 하십시오.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_4">
+			<Text>*로마의 군단들이 역사 속으로 사라지고, 우리의 오래된 속국들이 우리의 영향권 밖에서 강해지고 있습니다*[NEWLINE]도시 국가들을 다시 제국에 포함시키기 위해 외교관이 필요하고, 저항하는 국가를 정복하기 위해 군인이 필요합니다. 나와 같은 견해를 가진 집정관을 원합니다, 마이오르 도무스!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_5">
+			<Text>*가련한 도시 국가들이 위대한 로마에 전쟁을 선포하는 것이 한때는 감히 하지 못했던 일입니다*[NEWLINE]우리는 굴욕당하고 있습니다! 집정관이 죽었고, 아마 우리의 적의 손에 의해, 소규모 파벌들이 감히 우리에게 도전하고 있습니다. 불타는 열정을 가진 집정관이 필요합니다. 로마인을 원합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_6">
+			<Text>*우리는 역사상 전례 없는 전쟁을 치르고 있으며, 전례 없는 용기가 필요합니다*[NEWLINE]희귀한 용기를 지닌, 날카로운 군사 지휘관이자 교활한 외교관만이 이 전쟁에서 승리할 수 있습니다. 그런 사람을 찾아오십시오! 찾을 때까지 돌아오지 마십시오.</Text>
 		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY">
+			<Text>포럼</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY_HELP">
+			<Text>-15% [ICON_CULTURE] 문화 비용으로 타일 획득</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<UnitClassType>UNITCLASS_DIPLOMAT</UnitClassType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_PROMOTION_UE_ALPINI">
+			<Text>알프니</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<UnitClassType>UNITCLASS_GREAT_WAR_INFANTRY</UnitClassType>
-			<Quantity>4</Quantity>
+		<Row Tag="TXT_KEY_PROMOTION_UE_ALPINI_HELP">
+			<Text>산을 횡단할 수 있으며, 거친 지형에서 +20% [ICON_STRENGTH] 방어력 증가. 로마의 이벤트를 통해서만 부여됨.</Text>
 		</Row>
-	</EventChoice_FreeUnitClasses>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_PAPER</ResourceType>
-			<Quantity>4</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 집정관직</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 고위직을 위한 치열한 선거를 감독합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 로마 포럼</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 소박한 출신의 상인이 집정관의 지위에 오르는 것을 목격합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 공중목욕탕</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3">
-      <Text>로마에서 계급 분리에 대한 논쟁이 평민 지지파의 승리로 끝났습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 궁정 시장</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 원로원에 봉사할 새로운 외교관과 용병 세대를 모집합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 이레덴타</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 도시 국가들을 로마의 이레덴타로 선언하고, 모두를 로마의 권력 아래에 두겠다고 약속합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 알프니 군단</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 공화국의 적들과 싸우기 위해 알프니 군단을 결성합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION">
-      <Text>Vini, Vidi, Vici</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP">
-      <Text>시민의 수장, 집정관 중 한 명이 사망했습니다. 올해가 몇 달 남지 않았습니다. 우리에게 유리한 새 집정관을 보려면 신속하게 행동해야 합니다![NEWLINE]황제의 뜻은 무엇입니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_2">
-      <Text>포럼을 도입합니다: 시장이 +1 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다. 또한, 국경 확장 시 [ICON_CULTURE] 문화 비용이 -15% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}의 자재를 공중목욕탕에 제공합니다: 목욕탕이 +3 [ICON_FOOD] 식량과 +2 [ICON_RESEARCH] 과학을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 사용하여 두 명의 [COLOR_POSITIVE_TEXT] 외교관[ENDCOLOR]과 세 명의 적절한 [COLOR_POSITIVE_TEXT] 유닛[ENDCOLOR]을 [ICON_CAPITAL] 수도에 유치합니다. 4 [ICON_RES_PAPER] 종이 복사본을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_5">
-      <Text>모든 적격 유닛과 향후 생산되는 유닛이 침투자 승급을 받습니다. 당신의 통제 하에 있는 모든 대사관은 +5 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_GOLDEN_AGE] 황금 시대 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield}를 동원하여 [ICON_CAPITAL] 수도에서 네 개의 소총병 대대에 배치합니다. 당신의 총기 및 공성 유닛은 알프니 승급을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_1">
-      <Text>이 후보들 중 아무도 내 리더십에 대한 악의는 없습니다. 공화국은 이들을 동등하게 환영합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_2">
-      <Text>*유일한 평민 후보는 위대한 상인으로, 대중적으로 인기 있는 포럼의 주된 설계자입니다*[NEWLINE]제국 전역에서 포럼의 성장이 정치적 내-fighting에 의해 방해받지 않도록 해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_3">
-      <Text>*귀족들은 번성하는 공중목욕탕에서 가장 존경받는 가문을 제외한 모든 가문을 금지하려 합니다*[NEWLINE]귀족의 자부심이 로마의 발전보다 우선할 수는 없습니다. 그런 후보가 선출되지 않도록 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_4">
-      <Text>*로마의 군단들이 역사 속으로 사라지고, 우리의 오래된 속국들이 우리의 영향권 밖에서 강해지고 있습니다*[NEWLINE]도시 국가들을 다시 제국에 포함시키기 위해 외교관이 필요하고, 저항하는 국가를 정복하기 위해 군인이 필요합니다. 나와 같은 견해를 가진 집정관을 원합니다, 마이오르 도무스!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_5">
-      <Text>*가련한 도시 국가들이 위대한 로마에 전쟁을 선포하는 것이 한때는 감히 하지 못했던 일입니다*[NEWLINE]우리는 굴욕당하고 있습니다! 집정관이 죽었고, 아마 우리의 적의 손에 의해, 소규모 파벌들이 감히 우리에게 도전하고 있습니다. 불타는 열정을 가진 집정관이 필요합니다. 로마인을 원합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_6">
-      <Text>*우리는 역사상 전례 없는 전쟁을 치르고 있으며, 전례 없는 용기가 필요합니다*[NEWLINE]희귀한 용기를 지닌, 날카로운 군사 지휘관이자 교활한 외교관만이 이 전쟁에서 승리할 수 있습니다. 그런 사람을 찾아오십시오! 찾을 때까지 돌아오지 마십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY">
-      <Text>포럼</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY_HELP">
-      <Text>-15% [ICON_CULTURE] 문화 비용으로 타일 획득</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_ALPINI">
-      <Text>알프니</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_ALPINI_HELP">
-      <Text>산을 횡단할 수 있으며, 거친 지형에서 +20% [ICON_STRENGTH] 방어력 증가. 로마의 이벤트를 통해서만 부여됨.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

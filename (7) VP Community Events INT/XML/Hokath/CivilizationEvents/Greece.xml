@@ -1,447 +1,89 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_GREECE_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_GREECE</RequiredCiv>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 예언의 자녀</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 예언의 자녀의 탄생 소식을 듣습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_GREECE_UE_DUMMY</EventBuildingClassGlobal>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 집회</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredAnywhereBuildingClass>
-			<RequiresWar>true</RequiresWar>
-			<EventFreeTechs>1</EventFreeTechs>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 그리스 문화 중심지인 아고라를 지원합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WIRE_SERVICE</RequiredAnywhereBuildingClass>
-			<ObsoleteEra>ERA_POSTMODERN</ObsoleteEra>
-			<LosingMoney>true</LosingMoney>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 학문주의</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<IsUnhappy>true</IsUnhappy>
-			<EventDuration>-1</EventDuration>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3">
+			<Text>그리스 학자들이 전쟁으로 황폐해진 고향을 떠나 궁전으로 돌아옵니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GREECE_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 친구의 사회</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 어떻게든 가장 불가능한 거래를 성사시킵니다...</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 언어 국가화</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 데모틱 방언을 국가의 공식 언어로 채택한다고 발표합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6_S">
+			<Text>{3_PlayerName}가 {1_CivShortDescription}을 위한 독특한 이벤트를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 전 세계에 대사들을 파견하여 올림픽 게임을 조직합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_GREECE_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION">
+			<Text>세상의 끝까지</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_GREECE_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_GREECE_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP">
+			<Text>오늘도 궁정에 낯선 사람들이 방문했습니다. 그들은 평소처럼 당신과의 면담을 요청하지만, 궁금하게도 그 목적을 밝히지 않습니다.[NEWLINE]그들을 돌려보내야 할까요?</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_GREECE_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_GREECE_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_GREECE_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_GREECE_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<GreatPeopleRateModifier>10</GreatPeopleRateModifier>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</Buildings>
-
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_2">
+			<Text>시장이 {1_YieldCost}로 아고라로 변경되며, +1 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다. 또한, 모든 도시에서 +10% [ICON_GREAT_PEOPLE] 위인 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_3">
+			<Text>당신의 학자들이 시골에서 돌아오면서 학문적 르네상스가 일어납니다: [ICON_GREAT_SCIENTIST] 무료 기술을 선택합니다. 대학은 +1 [ICON_CULTURE] 문화와 +1 [ICON_RESEARCH] 과학을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 동원합니다. 각 [ICON_DIPLOMAT] 공무원은 매턴 +2 [ICON_PRODUCTION] 생산, [ICON_GOLD] 금, [ICON_TOURISM] 관광, [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_5">
+			<Text>인쇄기가 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_CULTURE] 문화를 +15% 증가시킵니다. [ICON_RESEARCH] 문맹도 5% 감소합니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>4000</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 투자하여 {2_InstantYield}의 부스트를 얻습니다. 준비를 위해 4명의 대사가 [ICON_CAPITAL] 수도에 임명됩니다.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_1">
+			<Text>*사람들이 신탁에서 예언을 가져왔습니다. 예언의 자녀가 곧 탄생할 것입니다*[NEWLINE]징후에 따르면 이 아이가 우리를 위대하게 만들 수도 있고 파멸시킬 수도 있습니다! 우리는 전자가 되도록 해야 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_2">
+			<Text>*방문자들은 시장에서의 대우에 불만을 품고, 당신과만 대면하기를 요구합니다*[NEWLINE]당신의 땅에서 어떻게 일이 진행되는지 모르겠지만, 그리스에서는 아고라가 단순한 시장 이상의 의미를 갖습니다. 상상의 불쾌감에 대한 보상은 없습니다. 경비원들, 그들을 데리고 가세요!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_3">
+			<Text>*청중은 시골로 은퇴했던 오래된 스승들입니다. 전쟁으로 모든 것을 잃었고, 그리스의 방치를 용서해 달라고 부탁하러 왔습니다*[NEWLINE]용서할 것이 없습니다. 내 오래된 친구들이 안전하다는 것에 감사하며, 그들은 항상 내 궁정에 집이 있을 것입니다.</Text>
 		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_4">
+			<Text>*이 사절들은 그리스의 우위를 재건하기 위해 헌신하는 비밀 사회, 필리키 에테리아의 사람들입니다*[NEWLINE]어떠한 도움이라도 거절할 수 없습니다. 이 계획을 지지하겠습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_5">
+			<Text>*기다리는 사람들은 성직자들의 대리인들입니다. 그들은 교회의 고대 언어 사용 중단을 억제해달라고 요구합니다*[NEWLINE]우리는 오랜 세월 동안 두 가지 언어를 사용해왔습니다, 하나는 부유한 자를 위한 것이고 다른 하나는 가난한 자를 위한 것이죠. 이제는 이것이 끝나야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_6">
+			<Text>*당신은 공무원들의 대표단을 만났습니다. 그들은 고대 올림픽 게임을 재현하여 그리스에 주목을 끌게 하려는 대담한 계획을 설명합니다*[NEWLINE]우리가 세계를 하나로 모을 수 있다는 것을 보여준다면, 멀리 떨어진 국가들도 우리의 대의에 동참할 것입니다!</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY">
+			<Text>아고리즘</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY_HELP">
+			<Text>+10% [ICON_GREAT_PEOPLE] 위인 생성</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<UnitClassType>UNITCLASS_AMBASSADOR</UnitClassType>
-			<Quantity>4</Quantity>
-		</Row>
-	</EventChoice_FreeUnitClasses>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 예언의 자녀</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 예언의 자녀의 탄생 소식을 듣습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 집회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 그리스 문화 중심지인 아고라를 지원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 학문주의</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3">
-      <Text>그리스 학자들이 전쟁으로 황폐해진 고향을 떠나 궁전으로 돌아옵니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 친구의 사회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 어떻게든 가장 불가능한 거래를 성사시킵니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 언어 국가화</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 데모틱 방언을 국가의 공식 언어로 채택한다고 발표합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6_S">
-      <Text>{3_PlayerName}가 {1_CivShortDescription}을 위한 독특한 이벤트를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 전 세계에 대사들을 파견하여 올림픽 게임을 조직합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION">
-      <Text>세상의 끝까지</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP">
-      <Text>오늘도 궁정에 낯선 사람들이 방문했습니다. 그들은 평소처럼 당신과의 면담을 요청하지만, 궁금하게도 그 목적을 밝히지 않습니다.[NEWLINE]그들을 돌려보내야 할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_2">
-      <Text>시장이 {1_YieldCost}로 아고라로 변경되며, +1 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_FOOD] 식량을 생성합니다. 또한, 모든 도시에서 +10% [ICON_GREAT_PEOPLE] 위인 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_3">
-      <Text>당신의 학자들이 시골에서 돌아오면서 학문적 르네상스가 일어납니다: [ICON_GREAT_SCIENTIST] 무료 기술을 선택합니다. 대학은 +1 [ICON_CULTURE] 문화와 +1 [ICON_RESEARCH] 과학을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 동원합니다. 각 [ICON_DIPLOMAT] 공무원은 매턴 +2 [ICON_PRODUCTION] 생산, [ICON_GOLD] 금, [ICON_TOURISM] 관광, [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_5">
-      <Text>인쇄기가 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_CULTURE] 문화를 +15% 증가시킵니다. [ICON_RESEARCH] 문맹도 5% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 투자하여 {2_InstantYield}의 부스트를 얻습니다. 준비를 위해 4명의 대사가 [ICON_CAPITAL] 수도에 임명됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_1">
-      <Text>*사람들이 신탁에서 예언을 가져왔습니다. 예언의 자녀가 곧 탄생할 것입니다*[NEWLINE]징후에 따르면 이 아이가 우리를 위대하게 만들 수도 있고 파멸시킬 수도 있습니다! 우리는 전자가 되도록 해야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_2">
-      <Text>*방문자들은 시장에서의 대우에 불만을 품고, 당신과만 대면하기를 요구합니다*[NEWLINE]당신의 땅에서 어떻게 일이 진행되는지 모르겠지만, 그리스에서는 아고라가 단순한 시장 이상의 의미를 갖습니다. 상상의 불쾌감에 대한 보상은 없습니다. 경비원들, 그들을 데리고 가세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_3">
-      <Text>*청중은 시골로 은퇴했던 오래된 스승들입니다. 전쟁으로 모든 것을 잃었고, 그리스의 방치를 용서해 달라고 부탁하러 왔습니다*[NEWLINE]용서할 것이 없습니다. 내 오래된 친구들이 안전하다는 것에 감사하며, 그들은 항상 내 궁정에 집이 있을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_4">
-      <Text>*이 사절들은 그리스의 우위를 재건하기 위해 헌신하는 비밀 사회, 필리키 에테리아의 사람들입니다*[NEWLINE]어떠한 도움이라도 거절할 수 없습니다. 이 계획을 지지하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_5">
-      <Text>*기다리는 사람들은 성직자들의 대리인들입니다. 그들은 교회의 고대 언어 사용 중단을 억제해달라고 요구합니다*[NEWLINE]우리는 오랜 세월 동안 두 가지 언어를 사용해왔습니다, 하나는 부유한 자를 위한 것이고 다른 하나는 가난한 자를 위한 것이죠. 이제는 이것이 끝나야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_6">
-      <Text>*당신은 공무원들의 대표단을 만났습니다. 그들은 고대 올림픽 게임을 재현하여 그리스에 주목을 끌게 하려는 대담한 계획을 설명합니다*[NEWLINE]우리가 세계를 하나로 모을 수 있다는 것을 보여준다면, 멀리 떨어진 국가들도 우리의 대의에 동참할 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY">
-      <Text>아고리즘</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY_HELP">
-      <Text>+10% [ICON_GREAT_PEOPLE] 위인 생성</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

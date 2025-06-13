@@ -1,536 +1,107 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_ENGLAND_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_ENGLAND</RequiredCiv>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 기사 작위</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 평민을 기사로 서임합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2</Description>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CIRCUS_MAXIMUS</RequiredAnywhereBuildingClass>
-			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
-			<IsOneShot>true</IsOneShot>
-			<WLTKDTurns>20</WLTKDTurns>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_ENGLAND_UE_DUMMY</EventBuildingClassGlobal>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 대회</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3</Description>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
-			<EraScaling>true</EraScaling>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 딸을 잘생긴 젊은 기사와 결혼시킵니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsUnhappy>true</IsUnhappy>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
-			<RandomBarbarianSpawn>3</RandomBarbarianSpawn>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<IsOneShot>true</IsOneShot>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 개신교 개혁</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5</Description>
-			<PrereqTech>TECH_RIFLING</PrereqTech>
-			<EventPromotion>PROMOTION_UE_SUN_NEVER_SETS</EventPromotion>
-			<RandomBarbarianSpawn>2</RandomBarbarianSpawn>
-			<IsOneShot>true</IsOneShot>
-			<MinimumNumCoastalCities>7</MinimumNumCoastalCities>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 대주교를 순교시키며 교회가 혼란에 빠졌습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ENGLAND_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6</Description>
-			<RequiresWar>true</RequiresWar>
-			<IsOneShot>true</IsOneShot>
-			<EventPromotion>PROMOTION_INTERCEPTION_3</EventPromotion>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BROADCAST_TOWER</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<WLTKDTurns>15</WLTKDTurns>
-			<Expires>false</Expires>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</EventBuildingClassGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 내전</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 청교도에게 일시적으로 권력을 빼앗기고 [ICON_RESISTANCE] 무정부 상태에 빠집니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 제국주의</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 제국 전역에서 피지배 민족의 봉기를 진압합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 가장 어두운 시기</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 적들에 맞서 국민들에게 연설을 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_ENGLAND_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION">
+			<Text>더 강해진 영국</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_ENGLAND_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_ENGLAND_UE_DUMMY</DefaultBuilding>
-			<MaxPlayerInstances>1</MaxPlayerInstances>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP">
+			<Text>왕관을 쓰신 분께서는 불안해하시지만, 최근 우리 신민들 사이에서 큰 지지를 얻고 있는 한 사람이 폐하께 직접 청원하였습니다.[NEWLINE][NEWLINE]그의 청을 들어주시겠습니까?</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_ENGLAND_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_UE_CHURCH</Type>
-			<DefaultBuilding>BUILDING_UE_CHURCH</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_CHURCH</Description>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}을(를) 사용하여 대회를 개최합니다. [ICON_CAPITAL] 수도는 20턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, 인근에 2명의 장궁병이 생성됩니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 수도에서 [ICON_CULTURE] 문화 생성량을 50% 증가시킵니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_ENGLAND_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_ENGLAND_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<ConquestProb>100</ConquestProb>
-			<NeverCapture>true</NeverCapture>
-			<IsDummy>true</IsDummy>
-			<CapitalOnly>true</CapitalOnly>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}과 대성전의 10 [ICON_GOLD] 유지비를 지불하여 용서를 요청합니다. 순교지로 향하는 순례자들이 교구 교회 건물을 잠금 해제합니다. 다른 교회는 +3 [ICON_GOLD] 금을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_ENGLAND_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_ENGLAND_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4">
+			<Text>최대 3 [ICON_WAR] 야만인이 모든 도시에 근처에 생성되며, 1턴 동안 [ICON_RESISTANCE] 무정부 상태에 빠집니다. 각 [ICON_DIPLOMAT] 공무원은 +5 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_UE_CHURCH</Type>
-			<BuildingClass>BUILDINGCLASS_UE_CHURCH</BuildingClass>
-			<Description>TXT_KEY_BUILDING_UE_CHURCH</Description>
-			<Civilopedia>TXT_KEY_BUILDING_CHURCH_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_CHURCH_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_CHURCH_HELP</Help>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<ConquestProb>100</ConquestProb>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<WLTKDTurns>15</WLTKDTurns>
-			<ReligiousPressureModifier>40</ReligiousPressureModifier>
-			<Cost>-1</Cost>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
-			<PortraitIndex>61</PortraitIndex>
-			<FaithCost>250</FaithCost>
-			<EventChoiceRequiredActive>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>361</MutuallyExclusiveGroup>
-			<IsDummy>true</IsDummy>
-			<NeverCapture>true</NeverCapture>
-			<CultureMedianModifier>-10</CultureMedianModifier>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5">
+			<Text>최대 2 [ICON_WAR] 야만인이 모든 도시에 근처에 생성됩니다. 법원은 +2 [ICON_CULTURE] 문화와 +2 [ICON_PRODUCTION] 생산을 제공합니다. 총기와 포위 유닛은 '해가 지지 않는 나라' 승급을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>9</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}의 문화적 영향을 사용하여 15턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에 진입합니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_PRODUCTION] 생산을 15% 증가시킵니다. 모든 전투기 및 다음 {4_Turns} 동안 건설되는 전투기는 '요격 III' 승급을 받습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1">
+			<Text>*귀하의 영주들이 위대한 인물을 인정할 것을 청원합니다.*[NEWLINE]우리와 우리의 신하들은 한 마음입니다. 이 민중의 챔피언은 지체 없이 기사로 서임될 것입니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_GreatWorkYieldChangesLocal>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2">
+			<Text>*귀하의 가장 용감한 기사가 전설의 엑스칼리버를 가지고 수도로 돌아왔습니다. 이제 그는 합당하며 다시금 귀하의 딸의 손을 요구합니다.*[NEWLINE]이 아서라는 녀석이 칼을 어디서 얻었는지는 중요하지 않습니다. 그가 공주를 얻고 싶다면 대회에서 승리해야 합니다. 궁술, 근접전, 마상 경기, 모두 다 포함입니다.</Text>
 		</Row>
-	</Building_GreatWorkYieldChangesLocal>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>4</Yield>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3">
+			<Text>*대주교가 귀하의 직접 지시에 반하여 교회의 영토를 확장하려 합니다!*[NEWLINE]사무소가 매일 금을 소모하고 이 사람이 교회의 이름으로 세금을 부과하다니?! 이 성가신 사제를 없애 줄 사람은 없습니까...</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4">
+			<Text>*서민들이 귀하의 가장 가까운 지지자를 처형할 것을 요청합니다!*[NEWLINE]충성스러운 이들을 모아라! 이 사람과 그가 대표하는 청교도 파는 국가를 파괴하려 하고 있습니다. 다가오는 일에 대한 힘을 기도합니다.</Text>
 		</Row>
-	</Building_YieldChanges>
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_ENGLAND_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5">
+			<Text>*제국의 한 식민지에서 독립을 요청하는 대중적 지도자가 있습니다!*[NEWLINE]제국의 변방 민족들은 이러한 고집을 부리기 쉽습니다. 이 반란을 진압하고 군대를 추가 정복을 준비시키세요. 우리의 경계는 더 넓어질 것입니다!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENGLAND_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6">
+			<Text>*총리가 국가에 연설할 것을 개인적으로 요청했습니다*[NEWLINE]물론입니다. 우리가 소중히 여기는 모든 것과 세계의 질서와 평화를 위해, 이 도전에 응하지 않을 수는 없습니다.</Text>
 		</Row>
-	</Building_WLTKDYieldMod>
-
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_SUN_NEVER_SETS</Type>
-			<Description>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS</Description>
-			<Help>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<CapitalDefenseModifier>1</CapitalDefenseModifier>
-			<CapitalDefenseFalloff>1</CapitalDefenseFalloff>
-			<PortraitIndex>3</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS</PediaEntry>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS">
+			<Text>해가 지지 않는 나라</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_SUN_NEVER_SETS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP">
+			<Text>[ICON_CAPITAL] 수도에서 이 유닛까지의 각 타일마다 +1% [ICON_STRENGTH] 전투력을 얻습니다. 영국의 이벤트를 통해서만 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_SUN_NEVER_SETS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY">
+			<Text>대회</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP">
+			<Text>"국왕 경축일!" 동안 이 도시는 +50% [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2">
+			<Text>그들의 최후의 순간</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>325</Yield>
+		<Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP">
+			<Text>"국왕 경축일!" 동안 이 도시는 +15% [ICON_PRODUCTION] 생산을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH">
+			<Text>교구 교회</Text>
 		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH_STRATEGY">
+			<Text>영국에 독특한 이벤트 선택으로 구매할 수 있습니다. 교회와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>325</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>400</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GRAND_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-10</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UE_CHURCH2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ENGLAND_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 기사 작위</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 평민을 기사로 서임합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 대회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 딸을 잘생긴 젊은 기사와 결혼시킵니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 개신교 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 대주교를 순교시키며 교회가 혼란에 빠졌습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 내전</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 청교도에게 일시적으로 권력을 빼앗기고 [ICON_RESISTANCE] 무정부 상태에 빠집니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 제국주의</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 제국 전역에서 피지배 민족의 봉기를 진압합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 가장 어두운 시기</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ENGLAND_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 적들에 맞서 국민들에게 연설을 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION">
-      <Text>더 강해진 영국</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP">
-      <Text>왕관을 쓰신 분께서는 불안해하시지만, 최근 우리 신민들 사이에서 큰 지지를 얻고 있는 한 사람이 폐하께 직접 청원하였습니다.[NEWLINE][NEWLINE]그의 청을 들어주시겠습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}을(를) 사용하여 대회를 개최합니다. [ICON_CAPITAL] 수도는 20턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, 인근에 2명의 장궁병이 생성됩니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 수도에서 [ICON_CULTURE] 문화 생성량을 50% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}과 대성전의 10 [ICON_GOLD] 유지비를 지불하여 용서를 요청합니다. 순교지로 향하는 순례자들이 교구 교회 건물을 잠금 해제합니다. 다른 교회는 +3 [ICON_GOLD] 금을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_4">
-      <Text>최대 3 [ICON_WAR] 야만인이 모든 도시에 근처에 생성되며, 1턴 동안 [ICON_RESISTANCE] 무정부 상태에 빠집니다. 각 [ICON_DIPLOMAT] 공무원은 +5 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_5">
-      <Text>최대 2 [ICON_WAR] 야만인이 모든 도시에 근처에 생성됩니다. 법원은 +2 [ICON_CULTURE] 문화와 +2 [ICON_PRODUCTION] 생산을 제공합니다. 총기와 포위 유닛은 '해가 지지 않는 나라' 승급을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}의 문화적 영향을 사용하여 15턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에 진입합니다. 이와 미래의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]은 [ICON_PRODUCTION] 생산을 15% 증가시킵니다. 모든 전투기 및 다음 {4_Turns} 동안 건설되는 전투기는 '요격 III' 승급을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_1">
-      <Text>*귀하의 영주들이 위대한 인물을 인정할 것을 청원합니다.*[NEWLINE]우리와 우리의 신하들은 한 마음입니다. 이 민중의 챔피언은 지체 없이 기사로 서임될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_2">
-      <Text>*귀하의 가장 용감한 기사가 전설의 엑스칼리버를 가지고 수도로 돌아왔습니다. 이제 그는 합당하며 다시금 귀하의 딸의 손을 요구합니다.*[NEWLINE]이 아서라는 녀석이 칼을 어디서 얻었는지는 중요하지 않습니다. 그가 공주를 얻고 싶다면 대회에서 승리해야 합니다. 궁술, 근접전, 마상 경기, 모두 다 포함입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_3">
-      <Text>*대주교가 귀하의 직접 지시에 반하여 교회의 영토를 확장하려 합니다!*[NEWLINE]사무소가 매일 금을 소모하고 이 사람이 교회의 이름으로 세금을 부과하다니?! 이 성가신 사제를 없애 줄 사람은 없습니까...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_4">
-      <Text>*서민들이 귀하의 가장 가까운 지지자를 처형할 것을 요청합니다!*[NEWLINE]충성스러운 이들을 모아라! 이 사람과 그가 대표하는 청교도 파는 국가를 파괴하려 하고 있습니다. 다가오는 일에 대한 힘을 기도합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_5">
-      <Text>*제국의 한 식민지에서 독립을 요청하는 대중적 지도자가 있습니다!*[NEWLINE]제국의 변방 민족들은 이러한 고집을 부리기 쉽습니다. 이 반란을 진압하고 군대를 추가 정복을 준비시키세요. 우리의 경계는 더 넓어질 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ENGLAND_UE_DESCRIPTION_CHOICE_6">
-      <Text>*총리가 국가에 연설할 것을 개인적으로 요청했습니다*[NEWLINE]물론입니다. 우리가 소중히 여기는 모든 것과 세계의 질서와 평화를 위해, 이 도전에 응하지 않을 수는 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS">
-      <Text>해가 지지 않는 나라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_SUN_NEVER_SETS_HELP">
-      <Text>[ICON_CAPITAL] 수도에서 이 유닛까지의 각 타일마다 +1% [ICON_STRENGTH] 전투력을 얻습니다. 영국의 이벤트를 통해서만 부여됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY">
-      <Text>대회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_HELP">
-      <Text>"국왕 경축일!" 동안 이 도시는 +50% [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2">
-      <Text>그들의 최후의 순간</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ENGLAND_UE_DUMMY_2_HELP">
-      <Text>"국왕 경축일!" 동안 이 도시는 +15% [ICON_PRODUCTION] 생산을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH">
-      <Text>교구 교회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH_STRATEGY">
-      <Text>영국에 독특한 이벤트 선택으로 구매할 수 있습니다. 교회와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,98 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_DOUBLE_AGENTS</Type>
-			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP</Help>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<NumChoices>3</NumChoices>
-			<RandomChance>45</RandomChance>
-			<EventCooldown>75</EventCooldown>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_DOUBLE_AGENTS</RequiredPolicy>
-			<RandomChanceDelta>1</RandomChanceDelta>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1_S">
+			<Text>{1_Playername}가 외국 시민을 납치했습니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_DOUBLE_AGENTS_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_2</Description>
-			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1">
+			<Text>{1_Playername}가 [ICON_GREAT_PEOPLE] 위대한 인물을 획득했습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DOUBLE_AGENTS_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_3</Description>
-			<FreeGreatPeople>1</FreeGreatPeople>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION">
+			<Text>그들이 우리가 그들이 아는 것을 안다는 것을 안다...</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_DOUBLE_AGENTS</EventType>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP">
+			<Text>우리가 심어 놓은 외국 정보 기관의 요원이 자신이 잘못된 정보를 받고 있다고 믿고 있습니다.[NEWLINE][NEWLINE]우리는 그녀에게 어떻게 지시해야 할까요?</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_DOUBLE_AGENTS</EventType>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_2">
+			<Text>전선 서비스가 도시의 [ICON_RESEARCH] 과학을 10% 증가시킵니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MOTABA_OUTBREAK_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>-500</Yield>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_3">
+			<Text>500 [ICON_GOLDEN_AGE] 황금기 포인트를 잃고 [ICON_GREAT_PERSON] 위대한 인물을 교환합니다.</Text>
 		</Row>
-	</CityEventChoice_InstantYield>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_WIRE_SERVICE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>10</Modifier>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_2">
+			<Text>모든 것을 도청하세요. 우리는 그들이 항상 무엇을 하고 있는지 알아야 합니다!</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
+		<Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_3">
+			<Text>부패된 정보는 위험합니다. 우리의 자산이 다음 주요 목표에 접근하면 그녀와 함께 본국으로 데려와야 합니다.</Text>
 		</Row>
-	</EventChoiceFlavors>
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_DOUBLE_AGENTS_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1_S">
-      <Text>{1_Playername}가 외국 시민을 납치했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DOUBLE_AGENTS_CHOICE_1">
-      <Text>{1_Playername}가 [ICON_GREAT_PEOPLE] 위대한 인물을 획득했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION">
-      <Text>그들이 우리가 그들이 아는 것을 안다는 것을 안다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP">
-      <Text>우리가 심어 놓은 외국 정보 기관의 요원이 자신이 잘못된 정보를 받고 있다고 믿고 있습니다.[NEWLINE][NEWLINE]우리는 그녀에게 어떻게 지시해야 할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_2">
-      <Text>전선 서비스가 도시의 [ICON_RESEARCH] 과학을 10% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_HELP_CHOICE_3">
-      <Text>500 [ICON_GOLDEN_AGE] 황금기 포인트를 잃고 [ICON_GREAT_PERSON] 위대한 인물을 교환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_2">
-      <Text>모든 것을 도청하세요. 우리는 그들이 항상 무엇을 하고 있는지 알아야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DOUBLE_AGENTS_DESCRIPTION_CHOICE_3">
-      <Text>부패된 정보는 위험합니다. 우리의 자산이 다음 주요 목표에 접근하면 그녀와 함께 본국으로 데려와야 합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

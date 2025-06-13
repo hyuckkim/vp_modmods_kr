@@ -1,502 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_ASSYRIA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 보물 보상</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}이 보물 사냥꾼에게 영광과 부를 보상합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<EventPromotion>PROMOTION_AMPHIBIOUS</EventPromotion>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 수륙 양용 업적</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OXFORD_UNIVERSITY</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}이 제국의 기념비에 걸쳐 놀라운 군사적 업적을 찬양하며, 군사들에게 영감을 줍니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARSENAL</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 유물 발견</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementAnywhereRequired>IMPROVEMENT_LANDMARK</ImprovementAnywhereRequired>
-			<WLTKDTurns>15</WLTKDTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}이 해독 불가능하다고 여겨졌던 고대 문서를 재발견합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ASSYRIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_RADIO</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventPromotion>PROMOTION_UE_WINGED_VALOR</EventPromotion>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 종교적 피난처</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}이 고향의 파괴를 피해 도망친 사람들에게 피난처를 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 고대 사원 발견</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}이 고대 아시리아 신앙을 되살리게 하는 고대의 대규모 구조물을 발견합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 용기의 날개</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}이 대담하고 열정적인 엘리트 공수부대 프로그램을 조직합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_ASSYRIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION">
+			<Text>운명의 판석</Text>
 		</Row>
-	</Event_ParentEvents>
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_UE_SYNAGOGUE</Type>
-			<DefaultBuilding>BUILDING_UE_SYNAGOGUE</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_SYNAGOGUE</Description>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP">
+			<Text>아슈르의 축복이 당신의 매일의 삶에 함께하기를 바랍니다, 위대한 분이여. 연구를 방해하게 되어 죄송합니다만, 중요한 일이 발생했습니다.[NEWLINE][NEWLINE]운명의 판석과 관련된 일입니다...</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_UE_SYNAGOGUE</Type>
-			<BuildingClass>BUILDINGCLASS_UE_SYNAGOGUE</BuildingClass>
-			<Description>TXT_KEY_BUILDING_UE_SYNAGOGUE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_SYNAGOGUE_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_SYNAGOGUE_STRATEGY</Strategy>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_LITERATURE</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<Help>TXT_KEY_BUILDING_SYNAGOGUE_HELP</Help>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<ConversionModifier>-15</ConversionModifier>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>53</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<EventChoiceRequiredActive>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>366</MutuallyExclusiveGroup>
-			<BasicNeedsMedianModifier>-10</BasicNeedsMedianModifier>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_2">
+			<Text>기념비가 +1 [ICON_PRODUCTION] 생산력을 제공합니다. 모든 적합한 유닛이 수륙 양용 승진을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}를 지불합니다. 사원과 성스러운 장소가 +3 [ICON_RESEARCH] 과학을 생산하며, 도서관과 학원이 +3 [ICON_PEACE] 신앙을 생산합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>4</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_4">
+			<Text>{2_InstantYield}를 지불하여 세파르딕 시나고그 건물을 잠금 해제합니다. 다른 시나고그는 +1 [ICON_CULTURE] 문화를 얻으며 +2 [ICON_PEACE] 신앙을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>6</Flavor>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_5">
+			<Text>발견으로 인해 모든 도시에 15턴의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]이 시작됩니다. 랜드마크는 +5 [ICON_RESEARCH] 과학, [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산량을 제공합니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_WLTKDYieldMod>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_6">
+			<Text>수도 [ICON_CAPITAL]에서 4명의 공수부대를 모집합니다. 모든 정찰 유닛이 용기의 날개 승진을 획득합니다.</Text>
 		</Row>
-	</Building_WLTKDYieldMod>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*모험가가 판석의 조각을 발견했습니다*[NEWLINE]이 유물에 대해 얻은 아름다운 보상이 모두에게 알려지도록 하세요!</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_SYNAGOGUE</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*우리의 가장 용감한 영웅이 흐르는 물을 건너 적의 잠든 곳에 결정적인 타격을 가했습니다. 이것이 예언된 대로!*[NEWLINE]제국의 모든 도시에서 우리의 운명을 알리는 증거를 새기도록 하세요!</Text>
 		</Row>
-	</Building_YieldChanges>
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_WINGED_VALOR</Type>
-			<Description>TXT_KEY_PROMOTION_UE_WINGED_VALOR</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<AttackWoundedMod>25</AttackWoundedMod>
-			<HeavyCharge>true</HeavyCharge>
-			<Help>TXT_KEY_PROMOTION_UE_WINGED_VALOR_HELP</Help>
-			<PortraitIndex>15</PortraitIndex>
-			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_WINGED_VALOR</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*고대 언어의 선두 전문가가 잊혀진 예언과 기록을 해독할 수 있다고 믿고 있습니다.[NEWLINE]판석의 더 많은 위치가 이 문서에 숨겨져 있다면, 반드시 알아야 합니다!</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_WINGED_VALOR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*한때 적이었던 부족이 정복자들에게서 도망쳐 피난처를 요청합니다. 이것이 약속된 대로!*[NEWLINE]신의 뜻에 따라, 이들을 우리 땅에 정착시켜야 합니다.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-500</Yield>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*최근의 발굴에서 역사 속에 사라졌던 대규모 사원 복합체가 발견되었습니다.*[NEWLINE]이 성소와 다른 신전들을 복원하십시오. 그들의 집이 재건될 때, 신들은 돌아올 것입니다. 그렇게 기록되어 있습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*기술 발전 덕분에 우리의 병사들이 하늘에서 날아 떨어질 수 있게 되었습니다.*[NEWLINE]아슈르의 화살이 태양의 복수를 가져옵니다... 이제는 운명을 이루어야 할 때입니다!</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR">
+			<Text>용기의 날개</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR_HELP">
+			<Text>상처를 입은 적에게 +25% [ICON_STRENGTH] 전투력을 제공합니다. 적이 후퇴하도록 강요할 수 있으며, 후퇴하지 못할 경우 추가 피해를 줍니다. 아시리아의 이벤트를 통해서만 부여됩니다.</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE">
+			<Text>세파르딕 시나고그</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE_STRATEGY">
+			<Text>아시리아의 독특한 이벤트 선택으로 구매할 수 있습니다. 일반 시나고그와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UE_SYNAGOGUE2</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UE_SYNAGOGUE2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_6</EventChoiceType>
-			<UnitClassType>UNITCLASS_PARATROOPER</UnitClassType>
-			<Quantity>4</Quantity>
-		</Row>
-	</EventChoice_FreeUnitClasses>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ASSYRIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 보물 보상</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}이 보물 사냥꾼에게 영광과 부를 보상합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 수륙 양용 업적</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}이 제국의 기념비에 걸쳐 놀라운 군사적 업적을 찬양하며, 군사들에게 영감을 줍니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 유물 발견</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}이 해독 불가능하다고 여겨졌던 고대 문서를 재발견합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 종교적 피난처</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}이 고향의 파괴를 피해 도망친 사람들에게 피난처를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 고대 사원 발견</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}이 고대 아시리아 신앙을 되살리게 하는 고대의 대규모 구조물을 발견합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 용기의 날개</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ASSYRIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}이 대담하고 열정적인 엘리트 공수부대 프로그램을 조직합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION">
-      <Text>운명의 판석</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP">
-      <Text>아슈르의 축복이 당신의 매일의 삶에 함께하기를 바랍니다, 위대한 분이여. 연구를 방해하게 되어 죄송합니다만, 중요한 일이 발생했습니다.[NEWLINE][NEWLINE]운명의 판석과 관련된 일입니다...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_2">
-      <Text>기념비가 +1 [ICON_PRODUCTION] 생산력을 제공합니다. 모든 적합한 유닛이 수륙 양용 승진을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}를 지불합니다. 사원과 성스러운 장소가 +3 [ICON_RESEARCH] 과학을 생산하며, 도서관과 학원이 +3 [ICON_PEACE] 신앙을 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_4">
-      <Text>{2_InstantYield}를 지불하여 세파르딕 시나고그 건물을 잠금 해제합니다. 다른 시나고그는 +1 [ICON_CULTURE] 문화를 얻으며 +2 [ICON_PEACE] 신앙을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_5">
-      <Text>발견으로 인해 모든 도시에 15턴의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]이 시작됩니다. 랜드마크는 +5 [ICON_RESEARCH] 과학, [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산량을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_HELP_CHOICE_6">
-      <Text>수도 [ICON_CAPITAL]에서 4명의 공수부대를 모집합니다. 모든 정찰 유닛이 용기의 날개 승진을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>*모험가가 판석의 조각을 발견했습니다*[NEWLINE]이 유물에 대해 얻은 아름다운 보상이 모두에게 알려지도록 하세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>*우리의 가장 용감한 영웅이 흐르는 물을 건너 적의 잠든 곳에 결정적인 타격을 가했습니다. 이것이 예언된 대로!*[NEWLINE]제국의 모든 도시에서 우리의 운명을 알리는 증거를 새기도록 하세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>*고대 언어의 선두 전문가가 잊혀진 예언과 기록을 해독할 수 있다고 믿고 있습니다.[NEWLINE]판석의 더 많은 위치가 이 문서에 숨겨져 있다면, 반드시 알아야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>*한때 적이었던 부족이 정복자들에게서 도망쳐 피난처를 요청합니다. 이것이 약속된 대로!*[NEWLINE]신의 뜻에 따라, 이들을 우리 땅에 정착시켜야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>*최근의 발굴에서 역사 속에 사라졌던 대규모 사원 복합체가 발견되었습니다.*[NEWLINE]이 성소와 다른 신전들을 복원하십시오. 그들의 집이 재건될 때, 신들은 돌아올 것입니다. 그렇게 기록되어 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ASSYRIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>*기술 발전 덕분에 우리의 병사들이 하늘에서 날아 떨어질 수 있게 되었습니다.*[NEWLINE]아슈르의 화살이 태양의 복수를 가져옵니다... 이제는 운명을 이루어야 할 때입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR">
-      <Text>용기의 날개</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_WINGED_VALOR_HELP">
-      <Text>상처를 입은 적에게 +25% [ICON_STRENGTH] 전투력을 제공합니다. 적이 후퇴하도록 강요할 수 있으며, 후퇴하지 못할 경우 추가 피해를 줍니다. 아시리아의 이벤트를 통해서만 부여됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE">
-      <Text>세파르딕 시나고그</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_SYNAGOGUE_STRATEGY">
-      <Text>아시리아의 독특한 이벤트 선택으로 구매할 수 있습니다. 일반 시나고그와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

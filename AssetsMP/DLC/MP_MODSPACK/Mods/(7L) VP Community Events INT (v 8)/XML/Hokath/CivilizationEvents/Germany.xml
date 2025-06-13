@@ -1,474 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_GERMANY_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_GERMANY</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 새로운 총리</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 새로운 총리를 선택합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EventPromotion>PROMOTION_WOODSMAN</EventPromotion>
-			<ImprovementAnywhereRequired>IMPROVEMENT_LUMBERMILL</ImprovementAnywhereRequired>
-			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 하나 된 깃발 아래에서</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3</Description>
-			<RequiresWar>true</RequiresWar>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HEROIC_EPIC</RequiredAnywhereBuildingClass>
-			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
-			<IsOneShot>true</IsOneShot>
-			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 국가 내 소수 집단들을 통합합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MUSICIANS_GUILD</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 튜턴 기사단</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LABORATORY</RequiredAnywhereBuildingClass>
-			<EventFreeTechs>1</EventFreeTechs>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 독일을 방어하기 위해 십자군을 소환합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_GERMANY_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6</Description>
-			<RequiresWar>true</RequiresWar>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TRAINSTATION</RequiredAnywhereBuildingClass>
-			<RequiredEra>ERA_MODERN</RequiredEra>
-			<ImprovementAnywhereRequired>IMPROVEMENT_MANUFACTORY</ImprovementAnywhereRequired>
-			<MinimumNationalPopulation>200</MinimumNationalPopulation>
-			<EventPromotion>PROMOTION_BLITZ</EventPromotion>
-			<EventDuration>-1</EventDuration>
-			<GoldenAgeTurns>10</GoldenAgeTurns>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 음악원 후원</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 여러 음악원을 후원합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 과학 자금 지원</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 과학 연구 기관을 지원하기 위해 추가 자금과 법률을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 전쟁 발발</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 더 높은 형태의 전쟁을 준비합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_GERMANY_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION">
+			<Text>독일, 그 무엇보다 위에</Text>
 		</Row>
-	</Event_ParentEvents>
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_UE_ORDER</Type>
-			<DefaultBuilding>BUILDING_UE_ORDER</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_ORDER</Description>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP">
+			<Text>많은 지방의 총독들이 국가의 중요 문제를 해결하기 위해 연방 상원을 소집했습니다. 오래된 갈등이 재발하였고, 일부 합의가 이루어졌지만 비효율적인 타협에 불과합니다.[NEWLINE][NEWLINE]독일은 이 혼란을 정리해줄 것을 간청합니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_UE_ORDER</Type>
-			<BuildingClass>BUILDINGCLASS_UE_ORDER</BuildingClass>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<Description>TXT_KEY_BUILDING_UE_ORDER</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ORDER_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_ORDER_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_ORDER_HELP</Help>
-			<TrainedFreePromotion>PROMOTION_MORALE</TrainedFreePromotion>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<Defense>1000</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
-			<ReligiousPressureModifier>25</ReligiousPressureModifier>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
-			<PortraitIndex>5</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<EventChoiceRequiredActive>EVENT_GERMANY_UE_CHOICE_3</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>367</MutuallyExclusiveGroup>
-			<IsDummy>true</IsDummy>
-			<BasicNeedsMedianModifier>-10</BasicNeedsMedianModifier>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2">
+			<Text>해당 유닛들은 숲길 보너스를 받고 모든 숲은 +1 [ICON_CULTURE] 문화를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}의 비용으로 튜턴 기사단 건물을 잠금 해제합니다. 다른 기사단은 +2 [ICON_GOLD] 금과 +1 [ICON_PRODUCTION] 생산을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4">
+			<Text>오페라 하우스는 +1 [ICON_GOLD] 금과 [ICON_TOURISM] 관광을 얻습니다. 모든 [ICON_GREAT_MUSICIAN] 음악가는 +1 [ICON_CULTURE] 문화와 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5">
+			<Text>[ICON_RESEARCH] 무료 기술을 받습니다. 아카데미는 +2 [ICON_RESEARCH] 과학, [ICON_GOLD] 금과 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6">
+			<Text>해당 유닛들은 블리츠 보너스를 받고 10턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 들어갑니다.</Text>
 		</Row>
-	</Building_YieldChanges>
-	<Building_DomainFreeExperiences>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<DomainType>DOMAIN_LAND</DomainType>
-			<Experience>15</Experience>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1">
+			<Text>이 사소한 문제들에 대한 합의가 이루어지지 않는다면, 내가 직접 총리를 임명하겠습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<DomainType>DOMAIN_AIR</DomainType>
-			<Experience>15</Experience>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2">
+			<Text>*토착 민족과 이교도들을 정화하는 문제는 점점 더 논란이 되고 있습니다*[NEWLINE]깊은 숲에 살고 있는 사람들은 다른 어떤 사람들보다 독일인입니다. 그들을 배척하기보다는 이 용감한 새로운 세계로 환영해야 합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<DomainType>DOMAIN_SEA</DomainType>
-			<Experience>15</Experience>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3">
+			<Text>*전쟁으로 인해 극단적인 견해가 지지를 얻고 내부 권력 구조를 위협하고 있습니다*[NEWLINE]이 시련의 시기에 우리는 교회에 일부 양보를 해야 합니다. 외국에서 싸우고 있는 십자군을 소환하여 이곳, 조국을 방어해야 합니다.</Text>
 		</Row>
-	</Building_DomainFreeExperiences>
-	<Building_YieldFromVictoryGlobal>
-		<Row>
-			<BuildingType>BUILDING_UE_ORDER</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4">
+			<Text>*회의의 많은 구성원들이 낭비한 음악가에게 개인적으로 모욕을 당했으며, 그를 추방하거나 더 나쁜 처벌을 요구하고 있습니다*[NEWLINE]이건 터무니없습니다! 이 부풀려진 남작들은 시각을 바꿔야 합니다! 우리는 작곡가들에게 후원을 주고 그들의 창의력을 육성해야 합니다. 그렇지 않으면 외국 궁정에 유혹될 수 있습니다.</Text>
 		</Row>
-	</Building_YieldFromVictoryGlobal>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5">
+			<Text>*한 파벌이 과학 자금을 대폭 늘리기를 원하지만 다수의 지지를 확보하지 못하고 있습니다*[NEWLINE]우리의 물리학자들은 세계 최고의 과학자들이며, 그들의 발명은 우리의 경제에 필수적입니다. 우리는 그들을 어떻게든 지원해야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6">
+			<Text>*평화주의자들이 대규모 무기 제조에 반대하고 있습니다*[NEWLINE]우리 나라는 강해졌습니다: 우리의 제조업체와 기차역은 이 새로운 시대의 성당입니다. 곧 우리는 세계에서 정당한 자리를 차지할 것입니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<Quantity>4</Quantity>
+		<Row Tag="TXT_KEY_BUILDING_UE_ORDER">
+			<Text>튜턴 기사단</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_ORDER_STRATEGY">
+			<Text>독일 고유의 이벤트 선택으로 구매할 수 있습니다. 다른 기사단과 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_FeatureYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_FeatureYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GERMANY_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 새로운 총리</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 새로운 총리를 선택합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 하나 된 깃발 아래에서</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 국가 내 소수 집단들을 통합합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 튜턴 기사단</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 독일을 방어하기 위해 십자군을 소환합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 음악원 후원</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 여러 음악원을 후원합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 과학 자금 지원</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 과학 연구 기관을 지원하기 위해 추가 자금과 법률을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 전쟁 발발</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GERMANY_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 더 높은 형태의 전쟁을 준비합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION">
-      <Text>독일, 그 무엇보다 위에</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP">
-      <Text>많은 지방의 총독들이 국가의 중요 문제를 해결하기 위해 연방 상원을 소집했습니다. 오래된 갈등이 재발하였고, 일부 합의가 이루어졌지만 비효율적인 타협에 불과합니다.[NEWLINE][NEWLINE]독일은 이 혼란을 정리해줄 것을 간청합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_2">
-      <Text>해당 유닛들은 숲길 보너스를 받고 모든 숲은 +1 [ICON_CULTURE] 문화를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}의 비용으로 튜턴 기사단 건물을 잠금 해제합니다. 다른 기사단은 +2 [ICON_GOLD] 금과 +1 [ICON_PRODUCTION] 생산을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_4">
-      <Text>오페라 하우스는 +1 [ICON_GOLD] 금과 [ICON_TOURISM] 관광을 얻습니다. 모든 [ICON_GREAT_MUSICIAN] 음악가는 +1 [ICON_CULTURE] 문화와 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_5">
-      <Text>[ICON_RESEARCH] 무료 기술을 받습니다. 아카데미는 +2 [ICON_RESEARCH] 과학, [ICON_GOLD] 금과 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_HELP_CHOICE_6">
-      <Text>해당 유닛들은 블리츠 보너스를 받고 10턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 들어갑니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_1">
-      <Text>이 사소한 문제들에 대한 합의가 이루어지지 않는다면, 내가 직접 총리를 임명하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_2">
-      <Text>*토착 민족과 이교도들을 정화하는 문제는 점점 더 논란이 되고 있습니다*[NEWLINE]깊은 숲에 살고 있는 사람들은 다른 어떤 사람들보다 독일인입니다. 그들을 배척하기보다는 이 용감한 새로운 세계로 환영해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_3">
-      <Text>*전쟁으로 인해 극단적인 견해가 지지를 얻고 내부 권력 구조를 위협하고 있습니다*[NEWLINE]이 시련의 시기에 우리는 교회에 일부 양보를 해야 합니다. 외국에서 싸우고 있는 십자군을 소환하여 이곳, 조국을 방어해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_4">
-      <Text>*회의의 많은 구성원들이 낭비한 음악가에게 개인적으로 모욕을 당했으며, 그를 추방하거나 더 나쁜 처벌을 요구하고 있습니다*[NEWLINE]이건 터무니없습니다! 이 부풀려진 남작들은 시각을 바꿔야 합니다! 우리는 작곡가들에게 후원을 주고 그들의 창의력을 육성해야 합니다. 그렇지 않으면 외국 궁정에 유혹될 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_5">
-      <Text>*한 파벌이 과학 자금을 대폭 늘리기를 원하지만 다수의 지지를 확보하지 못하고 있습니다*[NEWLINE]우리의 물리학자들은 세계 최고의 과학자들이며, 그들의 발명은 우리의 경제에 필수적입니다. 우리는 그들을 어떻게든 지원해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GERMANY_UE_DESCRIPTION_CHOICE_6">
-      <Text>*평화주의자들이 대규모 무기 제조에 반대하고 있습니다*[NEWLINE]우리 나라는 강해졌습니다: 우리의 제조업체와 기차역은 이 새로운 시대의 성당입니다. 곧 우리는 세계에서 정당한 자리를 차지할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_ORDER">
-      <Text>튜턴 기사단</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_ORDER_STRATEGY">
-      <Text>독일 고유의 이벤트 선택으로 구매할 수 있습니다. 다른 기사단과 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

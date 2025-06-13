@@ -1,9 +1,9 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "VP INT Modpack Ex"
-#define MyAppVersion "4.21.1"
-#define MyAppPublisher "DCinside Civilization Gallery"
+#define MyAppName "VP INT Modpack+"
+#define MyAppVersion "4.22"
+#define MyAppPublisher "디시인사이드 문명 갤러리(DCinside Civilization Gallery)"
 #define MyAppURL "https://github.com/hyuckkim/vp_modmods_kr"
 
 [Setup]
@@ -47,11 +47,11 @@ Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignore
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가"; Types: VP; Flags: exclusive disablenouninstallwarning
+Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP; Flags: exclusive disablenouninstallwarning
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: NVC; Flags: exclusive disablenouninstallwarning
 
 [Types]
-Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가";
+Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치";
 
 [InstallDelete]
@@ -90,6 +90,12 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Improved City View (Vox Populi EUI) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Upgrade All Units Button In Military Overview (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Upgrade All Units Button In Military Overview INT"
+
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi (v 3)"
 
 [Code]
 

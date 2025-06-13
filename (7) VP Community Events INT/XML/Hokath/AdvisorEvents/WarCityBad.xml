@@ -1,60 +1,17 @@
-﻿<GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_WAR_CITY_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>25</RandomChance>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<CityEventArt>advisormilitary.dds</CityEventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION">
+			<Text>살육의 광란</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_WAR_CITY_BAD</CityEventType>
-			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP">
+			<Text></Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP_CHOICE_1</Help>
-			<RequiredBuildingClass>BUILDINGCLASS_BARRACKS</RequiredBuildingClass>
-			<RandomBarbarianSpawn>1</RandomBarbarianSpawn>
-			<EventBuildingClassDestruction>BUILDINGCLASS_BARRACKS</EventBuildingClassDestruction>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP_CHOICE_1">
+			<Text>광기에 휩싸인 병사들이 막사에 불을 지르고 {1_YieldCost}을 잃은 후, 시골로 도망쳤습니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_WAR_CITY_BAD</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION_CHOICE_1">
+			<Text>살육의 광란</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-	<CityEventChoice_EventCostYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_WAR_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</CityEventChoice_EventCostYield>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION">
-      <Text>살육의 광란</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_HELP_CHOICE_1">
-      <Text>광기에 휩싸인 병사들이 막사에 불을 지르고 {1_YieldCost}을 잃은 후, 시골로 도망쳤습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_WAR_CITY_BAD_DESCRIPTION_CHOICE_1">
-      <Text>살육의 광란</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

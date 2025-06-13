@@ -1,478 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<RandomChance>60</RandomChance>
-			<RandomChanceDelta>20</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_SACRED_GARDEN</RequiredAnywhereBuildingClass>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 시작합니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1">
+			<Text>{3_PlayerName}의 종교인들이 초월의 길의 비밀을 찾기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<ImprovementAnywhereRequired>IMPROVEMENT_HOLY_SITE</ImprovementAnywhereRequired>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GROCER</RequiredAnywhereBuildingClass>
-			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2">
+			<Text>{1_CivShortDescription}의 사람들이 물질적 삶을 떠나 신성한 정원을 돌보는 공동체에 합류합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<RequiresIdeology>true</RequiresIdeology>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<RequiresWar>true</RequiresWar>
-			<EventBuildingClassGlobal>BUILDINGCLASS_WAY_OF_TRANSCENCE_DUMMY_2</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3">
+			<Text>{3_PlayerName}가 초월의 길의 비밀에 대한 탐구를 그들의 교회 문화에 더욱 깊이 새깁니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4">
+			<Text>{3_PlayerName}가 신성한 정원의 확장을 감독합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5">
+			<Text>{3_PlayerName}의 요원들이 침입자에 대한 방어를 강화합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6_S">
+			<Text>{3_PlayerName}가 초월의 길 탐구를 완료했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6">
+			<Text>{3_PlayerName}가 초월의 길의 비밀을 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_WAY_OF_TRANSCENCE</EventType>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION">
+			<Text>팔정도</Text>
 		</Row>
-	</Event_ParentEvents>
-	<EventChoice_EventLinks>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceType>
-			<EventChoiceLinker>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP">
+			<Text>제국에서 가장 고귀한 사람은 누구일까요? 황제일까요? 아니면 대사제일까요? 또는 친구를 위해 모든 것을 희생한 무명의 병사일까요? 사실, 그것은 겸손한 정원사입니다. 세상을 있는 그대로 보고, 그것과 조화롭게 살아가려는 사람만이 영원과 하나가 될 것입니다.[NEWLINE][NEWLINE]당신은 배우고 싶어하지만, 당신을 가르칠 사람은 당신 밖에 없습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<EventChoiceLinker>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_1">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 정원이 +1 [ICON_FOOD] 식량을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<EventChoiceLinker>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 사용하여 탐구의 성공을 알립니다. 신성한 정원이 +10 [ICON_FOOD] 식량을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_5</EventChoiceType>
-			<EventChoiceLinker>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 정원이 +2 [ICON_FOOD] 식량을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<EventChoiceLinker>EVENT_WAY_OF_TRANSCENCE_CHOICE_5</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}의 종교적 신비를 공개합니다. 신성한 정원이 [ICON_FOOD] 식량을 25% 증가시킵니다.</Text>
 		</Row>
-	</EventChoice_EventLinks>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_WAY_OF_TRANSCENCE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_WAY_OF_TRANSCENCE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_5">
+			<Text>탐구의 마지막 단계에서, 모든 적 [ICON_SPY] 스파이의 효과가 15% 감소합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_WAY_OF_TRANSCENCE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_WAY_OF_TRANSCENCE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 모아 탐구를 완료합니다. 당신의 [ICON_GREAT_WRITER] 작가, [ICON_GREAT_ARTIST] 예술가, [ICON_GREAT_MUSICIAN] 음악가 전문가들이 +3 [ICON_FOOD] 식량을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_WAY_OF_TRANSCENCE_DUMMY_3</Type>
-			<DefaultBuilding>BUILDING_WAY_OF_TRANSCENCE_DUMMY_3</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_1">
+			<Text>한 사람만이 초월의 길을 완전히 이해했을지 모르지만, 함께하면 그 비밀을 발견할 수 있습니다!</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_WAY_OF_TRANSCENCE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_WAY_OF_TRANSCENCE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IsDummy>true</IsDummy>
-			<GreatWorkCount>-1</GreatWorkCount>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<GlobalEspionageModifier>-15</GlobalEspionageModifier>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_2">
+			<Text>*도시의 작은 구역을 차지하던 신성한 정원이 수백 명의 땅을 받아 확장되었습니다*[NEWLINE]정원의 평화와 고요함이 천국으로 가는 문입니다. 그러나 그 안에서만 진정한 영원을 찾을 수 있습니다.</Text>
 		</Row>
-	</Buildings>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_3">
+			<Text>움직임이 강력해지고 있지만, 성공하려면 더 나아가야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_4">
+			<Text>정원이 확장됨에 따라, 우주 그 자체의 비밀이 드러나는 것 같은 정교한 패턴과 상호 관계를 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_5">
+			<Text>적들이 이제 우리의 탐구를 알고 있을 것입니다. 정원을 어떤 대가를 치르더라도 지켜야 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_6">
+			<Text>그때 나는 깨달았습니다. 정원도 제국도 없습니다. 이 게임은 수백 번이나 반복되었고, 앞으로도 수백 번 반복될 것입니다. 나는 평화롭습니다.</Text>
 		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SACRED_GARDEN</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SACRED_GARDEN</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SACRED_GARDEN</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PAGODA</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SACRED_GARDEN</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Modifier>25</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_WAY_OF_TRANSCENCE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 시작합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_1">
-      <Text>{3_PlayerName}의 종교인들이 초월의 길의 비밀을 찾기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_2">
-      <Text>{1_CivShortDescription}의 사람들이 물질적 삶을 떠나 신성한 정원을 돌보는 공동체에 합류합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_3">
-      <Text>{3_PlayerName}가 초월의 길의 비밀에 대한 탐구를 그들의 교회 문화에 더욱 깊이 새깁니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_4">
-      <Text>{3_PlayerName}가 신성한 정원의 확장을 감독합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_5">
-      <Text>{3_PlayerName}의 요원들이 침입자에 대한 방어를 강화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6_S">
-      <Text>{3_PlayerName}가 초월의 길 탐구를 완료했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAY_OF_TRANSCENCE_CHOICE_6">
-      <Text>{3_PlayerName}가 초월의 길의 비밀을 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION">
-      <Text>팔정도</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP">
-      <Text>제국에서 가장 고귀한 사람은 누구일까요? 황제일까요? 아니면 대사제일까요? 또는 친구를 위해 모든 것을 희생한 무명의 병사일까요? 사실, 그것은 겸손한 정원사입니다. 세상을 있는 그대로 보고, 그것과 조화롭게 살아가려는 사람만이 영원과 하나가 될 것입니다.[NEWLINE][NEWLINE]당신은 배우고 싶어하지만, 당신을 가르칠 사람은 당신 밖에 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_1">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 정원이 +1 [ICON_FOOD] 식량을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 사용하여 탐구의 성공을 알립니다. 신성한 정원이 +10 [ICON_FOOD] 식량을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 정원이 +2 [ICON_FOOD] 식량을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 신성한 정원이 [ICON_FOOD] 식량을 25% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_5">
-      <Text>탐구의 마지막 단계에서, 모든 적 [ICON_SPY] 스파이의 효과가 15% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 당신의 [ICON_GREAT_WRITER] 작가, [ICON_GREAT_ARTIST] 예술가, [ICON_GREAT_MUSICIAN] 음악가 전문가들이 +3 [ICON_FOOD] 식량을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_1">
-      <Text>한 사람만이 초월의 길을 완전히 이해했을지 모르지만, 함께하면 그 비밀을 발견할 수 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_2">
-      <Text>*도시의 작은 구역을 차지하던 신성한 정원이 수백 명의 땅을 받아 확장되었습니다*[NEWLINE]정원의 평화와 고요함이 천국으로 가는 문입니다. 그러나 그 안에서만 진정한 영원을 찾을 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_3">
-      <Text>움직임이 강력해지고 있지만, 성공하려면 더 나아가야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_4">
-      <Text>정원이 확장됨에 따라, 우주 그 자체의 비밀이 드러나는 것 같은 정교한 패턴과 상호 관계를 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_5">
-      <Text>적들이 이제 우리의 탐구를 알고 있을 것입니다. 정원을 어떤 대가를 치르더라도 지켜야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_WAY_OF_TRANSCENCE_DESCRIPTION_CHOICE_6">
-      <Text>그때 나는 깨달았습니다. 정원도 제국도 없습니다. 이 게임은 수백 번이나 반복되었고, 앞으로도 수백 번 반복될 것입니다. 나는 평화롭습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

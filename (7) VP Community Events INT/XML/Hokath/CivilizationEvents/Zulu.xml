@@ -1,405 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_ZULU_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_ZULU</RequiredCiv>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 재능 있는 아이</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 영혼들의 축복을 받습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementAnywhereRequired>IMPROVEMENT_CAMP</ImprovementAnywhereRequired>
-			<PrereqTech>TECH_DRAMA</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_ZULU_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 불의 시험</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<EventDuration>-1</EventDuration>
-			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
-			<YieldBonusAllCities>true</YieldBonusAllCities>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 고대의 성년식을 시행하여 소년들을 사바나로 보내어 그들의 힘을 증명하게 합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 음페카네</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<EventDuration>-1</EventDuration>
-			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 모든 능력 있는 남성들을 전쟁으로 소집합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ZULU_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<IsUnhappy>true</IsUnhappy>
-			<EventBuildingClassGlobal>BUILDINGCLASS_CHURCH</EventBuildingClassGlobal>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STADIUM</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<CultureMedianModifierGlobal>-10</CultureMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 상고마</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 전통적인 치유 방법을 홍보하는 데 집중합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 광산 해방</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 불법적인 도시 국가의 [ICON_RES_COAL] 석탄, [ICON_RES_COPPER] 구리, [ICON_RES_GOLD] 금, [ICON_RES_GEMS] 보석 채굴을 발견합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 우리가 하나</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 줄라랜드에서 평화와 화해의 과정을 시작합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_ZULU_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION">
+			<Text>오르길 많은 언덕들</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_ZULU_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_ZULU_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP">
+			<Text>사우보나, 전쟁의 대장. 조상들이 당신을 인도하십니다. 상고마들이 신성한 장소에서 꿈의 의미를 가지고 돌아왔습니다.[NEWLINE]샤카여, 영혼들의 뜻을 들으십시오.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_ZULU_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_ZULU_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_ZULU_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_ZULU_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IsDummy>true</IsDummy>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldPerXTerrainTimes100>
-		<Row>
-			<BuildingType>BUILDING_ZULU_UE_DUMMY</BuildingType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>34</Yield>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 사용하여 평원으로 돌아가는 것을 장려합니다. 도시마다 풀밭에서 +1 [ICON_FOOD] 음식과 평원 타일 3개마다 +1 [ICON_PRODUCTION] 생산을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_ZULU_UE_DUMMY</BuildingType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>34</Yield>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_3">
+			<Text>근로자들이 가난한 경작지를 떠나 음페카네에 참여합니다. {2_InstantYield}가 모든 도시에서 임피가 됩니다.</Text>
 		</Row>
-	</Building_YieldPerXTerrainTimes100>
-
-
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<UnitClassType>UNITCLASS_TERCIO</UnitClassType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 사용하여 농촌 공동체를 지원합니다. 마을은 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산을 생성하고, 2개의 [ICON_RES_TEA] 차를 받습니다.</Text>
 		</Row>
-	</EventChoice_FreeUnitClasses>
-
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_5">
+			<Text>[ICON_RES_COAL] 석탄, [ICON_RES_GEMS] 보석, [ICON_RES_COPPER] 구리, [ICON_RES_GOLD] 금을 각각 획득합니다. 불법 물질의 확산은 [ICON_STRENGTH] 스트레스 한계를 5% 증가시킵니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_6">
+			<Text>모두가 함께하면 [ICON_CULTURE] 무료 임계점을 -10% 줄이고, 모든 도시가 교회를 건설합니다.</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_GEMS</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_1">
+			<Text>*모든 조상의 축복을 받은 아이가 있습니다. 그들은 파괴와 치유의 힘을 가지고 있습니다*[NEWLINE]우리는 이 아이를 찾을 것입니다. 그들이 우리를 도울 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_2">
+			<Text>*영혼들이 불안해하고 있습니다. 너무 많은 줄루가 도시에서 쉬고 있으며, 열린 평원에서 멀리 떨어져 있습니다*[NEWLINE]명백합니다. 우리는 우리의 유산에서 벗어나왔습니다. 우리는 사바나에서의 힘의 시험과 구술의 전통을 되찾아야 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_COPPER</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_3">
+			<Text>*이 전쟁은 그 어떤 전쟁과도 다를 것입니다. 어떤 줄루가 조상에게 명예를 가져다주길 꿈꿨다면, 지금이 그 시점입니다. 이 위대한 전쟁에서*[NEWLINE]대궁전에서 가장 작은 농장까지 전령을 보내십시오. 모든 남성들이 전쟁에 소집됩니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<ResourceType>RESOURCE_COAL</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_4">
+			<Text>*조상들은 당신의 리더십에 대한 명예를 기쁘게 생각하지만, 여전히 해야 할 일이 있습니다. 당신은 마을을 봐야 합니다*[NEWLINE]우리는 평원을 계속 정착하고, 옛 방식을 따를 것입니다. 각 상고마는 우리의 정복에서 금을 가져와 새롭게 건설할 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_TEA</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_5">
+			<Text>*적들이 자신들의 이중적이고 비겁한 본성을 드러낸 것은 의심의 여지가 없지만, 진정한 공포는 그 아래 숨겨져 있습니다. 그들이 지구를 더럽히는 곳*[NEWLINE]영혼들이 우리에게 이를 알린 것은 좋은 일입니다. 주인을 위해 채굴하는 노예는 정말로 악랄합니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_6">
+			<Text>*많은 전쟁, 많은 민족들. 그들의 조상들은 집단적인 고통에 대해 울고 있습니다. 이제 치유의 시간이 다가옵니다*[NEWLINE]색깔이나 신념에 관계없이 하나의 민족, 하나의 가족으로 모입시다. 줄라랜드에서 우리는 하나입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>400</Yield>
+		<Row Tag="TXT_KEY_BUILDING_ZULU_UE_DUMMY">
+			<Text>불의 시험</Text>
 		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_POPULATION</YieldType>
-			<Yield>-1</Yield>
+		<Row Tag="TXT_KEY_BUILDING_ZULU_UE_DUMMY_HELP">
+			<Text>풀밭 타일 3개마다 +1 [ICON_FOOD] 음식과 평원 타일 3개마다 +1 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ZULU_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 재능 있는 아이</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 영혼들의 축복을 받습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 불의 시험</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 고대의 성년식을 시행하여 소년들을 사바나로 보내어 그들의 힘을 증명하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 음페카네</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 모든 능력 있는 남성들을 전쟁으로 소집합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 상고마</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 전통적인 치유 방법을 홍보하는 데 집중합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 광산 해방</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 불법적인 도시 국가의 [ICON_RES_COAL] 석탄, [ICON_RES_COPPER] 구리, [ICON_RES_GOLD] 금, [ICON_RES_GEMS] 보석 채굴을 발견합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 우리가 하나</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ZULU_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 줄라랜드에서 평화와 화해의 과정을 시작합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION">
-      <Text>오르길 많은 언덕들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP">
-      <Text>사우보나, 전쟁의 대장. 조상들이 당신을 인도하십니다. 상고마들이 신성한 장소에서 꿈의 의미를 가지고 돌아왔습니다.[NEWLINE]샤카여, 영혼들의 뜻을 들으십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 사용하여 평원으로 돌아가는 것을 장려합니다. 도시마다 풀밭에서 +1 [ICON_FOOD] 음식과 평원 타일 3개마다 +1 [ICON_PRODUCTION] 생산을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_3">
-      <Text>근로자들이 가난한 경작지를 떠나 음페카네에 참여합니다. {2_InstantYield}가 모든 도시에서 임피가 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 사용하여 농촌 공동체를 지원합니다. 마을은 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산을 생성하고, 2개의 [ICON_RES_TEA] 차를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_5">
-      <Text>[ICON_RES_COAL] 석탄, [ICON_RES_GEMS] 보석, [ICON_RES_COPPER] 구리, [ICON_RES_GOLD] 금을 각각 획득합니다. 불법 물질의 확산은 [ICON_STRENGTH] 스트레스 한계를 5% 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_HELP_CHOICE_6">
-      <Text>모두가 함께하면 [ICON_CULTURE] 무료 임계점을 -10% 줄이고, 모든 도시가 교회를 건설합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_1">
-      <Text>*모든 조상의 축복을 받은 아이가 있습니다. 그들은 파괴와 치유의 힘을 가지고 있습니다*[NEWLINE]우리는 이 아이를 찾을 것입니다. 그들이 우리를 도울 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_2">
-      <Text>*영혼들이 불안해하고 있습니다. 너무 많은 줄루가 도시에서 쉬고 있으며, 열린 평원에서 멀리 떨어져 있습니다*[NEWLINE]명백합니다. 우리는 우리의 유산에서 벗어나왔습니다. 우리는 사바나에서의 힘의 시험과 구술의 전통을 되찾아야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_3">
-      <Text>*이 전쟁은 그 어떤 전쟁과도 다를 것입니다. 어떤 줄루가 조상에게 명예를 가져다주길 꿈꿨다면, 지금이 그 시점입니다. 이 위대한 전쟁에서*[NEWLINE]대궁전에서 가장 작은 농장까지 전령을 보내십시오. 모든 남성들이 전쟁에 소집됩니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_4">
-      <Text>*조상들은 당신의 리더십에 대한 명예를 기쁘게 생각하지만, 여전히 해야 할 일이 있습니다. 당신은 마을을 봐야 합니다*[NEWLINE]우리는 평원을 계속 정착하고, 옛 방식을 따를 것입니다. 각 상고마는 우리의 정복에서 금을 가져와 새롭게 건설할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_5">
-      <Text>*적들이 자신들의 이중적이고 비겁한 본성을 드러낸 것은 의심의 여지가 없지만, 진정한 공포는 그 아래 숨겨져 있습니다. 그들이 지구를 더럽히는 곳*[NEWLINE]영혼들이 우리에게 이를 알린 것은 좋은 일입니다. 주인을 위해 채굴하는 노예는 정말로 악랄합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ZULU_UE_DESCRIPTION_CHOICE_6">
-      <Text>*많은 전쟁, 많은 민족들. 그들의 조상들은 집단적인 고통에 대해 울고 있습니다. 이제 치유의 시간이 다가옵니다*[NEWLINE]색깔이나 신념에 관계없이 하나의 민족, 하나의 가족으로 모입시다. 줄라랜드에서 우리는 하나입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ZULU_UE_DUMMY">
-      <Text>불의 시험</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ZULU_UE_DUMMY_HELP">
-      <Text>풀밭 타일 3개마다 +1 [ICON_FOOD] 음식과 평원 타일 3개마다 +1 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,457 +1,89 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_ARABIA_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_ARABIA</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 샤리프 칭호</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1">
+			<Text>{3_PlayerName}이 소외된 왕자에게 샤리프 칭호를 수여합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AMPHITHEATER</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 베두인 부족 통합</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MINT</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_ARABIA_UE_DUMMY</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2">
+			<Text>{3_PlayerName}이 베두인 부족을 제국에 포함시키는 협상을 합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
-			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 대바자르</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<RequiresHolyCity>true</RequiresHolyCity>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<ReligiousUnrestModifierGlobal>25</ReligiousUnrestModifierGlobal>
-			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3">
+			<Text>{3_PlayerName}이 수도의 바자르 지역을 크게 확장합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_ARABIA_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<ImprovementAnywhereRequired>IMPROVEMENT_WELL</ImprovementAnywhereRequired>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 종교 기관</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}이 학문 기관의 관리 권한을 성직자에게 넘깁니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 종교 권위</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5">
+			<Text>{3_PlayerName}이 주요 법적 직책에 종교 지도자를 임명합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 OPEC 창설</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}이 석유 매장량을 비축하기 시작하며, 세계적으로 석유 가격이 크게 상승합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_ARABIA_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION">
+			<Text>신 외에는 없다</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_ARABIA_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_ARABIA_UE_DUMMY</DefaultBuilding>
-			<MaxPlayerInstances>1</MaxPlayerInstances>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP">
+			<Text>칼리프님, 울라마가 귀하의 제안을 검토하였으며, 귀하가 이 문제에 대해 말씀해 주시기를 원하고 있습니다. 왕님, 그들이 즉시 의회에 참석해 주실 것을 요청하고 있습니다.[NEWLINE]그들은 분명히 귀하의 법안을 승인할 것입니다. 이는 공정하고 신성한 법안입니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_ARABIA_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_ARABIA_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_ARABIA_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_ARABIA_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<NukeImmune>true</NukeImmune>
-			<ExtraLuxuries>true</ExtraLuxuries>
-			<NeverCapture>true</NeverCapture>
-			<IsDummy>true</IsDummy>
-			<CapitalOnly>true</CapitalOnly>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_1">
+			<Text>원하는 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromPurchase>
-		<Row>
-			<BuildingType>BUILDING_ARABIA_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>25</Yield>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_2">
+			<Text>토착민을 통합합니다. 사막 타일에서 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산량을 얻습니다. 오아시스 타일에서 +3 [ICON_CULTURE] 문화를 얻습니다.</Text>
 		</Row>
-	</Building_YieldFromPurchase>
-	
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_OASIS</FeatureType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_3">
+			<Text>대바자르가 [ICON_CAPITAL] 수도에 세워집니다. 도시 내 모든 사치 자원의 추가 복사본을 얻고, 구매 시 [ICON_GOLD] 금의 25%를 [ICON_PEACE] 신앙으로 전환합니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_FeatureYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_OASIS</FeatureType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost} 만큼의 문화적 영향력을 발휘하여 학습 센터를 종교 지도하에 두십시오. 이 대학과 학원은 +4 [ICON_PEACE] 신앙과 +1 [ICON_RESEARCH] 과학을 생산합니다.</Text>
 		</Row>
-	</EventChoice_FeatureYieldChange>
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_5">
+			<Text>{1_YieldCost}를 활용하여 세속적인 법률 시스템을 울라마가 관리하는 법률 시스템으로 교체합니다. 경찰서와 경찰서가 +2 [ICON_PEACE] 신앙을 생산합니다. 모든 지역의 [ICON_STRENGTH] 불안 임계값이 5% 감소하지만, [ICON_RELIGION] 종교 부서의 임계값은 +25% 증가합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_6">
+			<Text>[ICON_RES_OIL] 석유 생산을 정치적 통제 하에 둡니다. 8개의 [ICON_RES_OIL] 석유 복사본을 얻고, 유정 및 해양 플랫폼이 -2 [ICON_PRODUCTION] 생산량을 생성하여 +5 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-	</EventChoice_TerrainYieldChange>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>4</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*성직자와 갈등을 겪던 가족의 일원이 자신의 죄를 뉘우쳤습니다. 그의 칭호를 되돌려 주시기를 간청하셨습니다*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>우리는 한때 모두 사막의 사람들이었습니다. 지금은 이 복잡한 문명이 있지만, 그들은 아직도 빛을 보지 못했습니다![NEWLINE]*의회는 당신의 계획이 우리 문화와 신앙에 통합될 것이라는 점에서 동의합니다*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>수도의 바자르는 막대한 부의 원천이지만, 현재의 종교 법 아래에서는 성장할 수 없습니다.[NEWLINE]*의회는 바자르의 필요성을 인정하며, 기도 시간에 외국 상인들에 대해서만 강제 폐쇄를 완화할 것입니다*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>학문 기관은 현재 개인적인 사안으로, 모든 이에게 일정한 감독이 필요한 상황입니다.[NEWLINE]*의회는 동의합니다. 이러한 기관들은 가장 엄격한 감독 하에 고위 성직자들에 의해 감독될 것입니다*</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>4</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>궁전의 계획은 범죄자들을 재활시키고, 우리의 광활한 도시를 새로운 번영의 시대에 맞출 것입니다![NEWLINE]*의회는 불안의 감소를 매우 중요하게 생각합니다. 그러나 우리는 대안 방법이 있습니다...*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>현재 석유는 부분적으로 민간의 소유입니다. 성직자들이 우리의 노력에 대한 왕관의 통치를 인정한다면...-[NEWLINE]*의회는 이 문제에 대해 왕관에 동정적입니다. 우리는 지속적인 번영을 기대합니다*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY">
+			<Text>대바자르</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY_HELP">
+			<Text>도시 내 모든 사치 자원의 추가 복사본을 얻으며, 이 도시의 구매 시 [ICON_GOLD] 금의 25%를 [ICON_PEACE] 신앙으로 전환합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>8</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>250</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>250</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_ARABIA_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 샤리프 칭호</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_1">
-      <Text>{3_PlayerName}이 소외된 왕자에게 샤리프 칭호를 수여합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 베두인 부족 통합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_2">
-      <Text>{3_PlayerName}이 베두인 부족을 제국에 포함시키는 협상을 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 대바자르</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_3">
-      <Text>{3_PlayerName}이 수도의 바자르 지역을 크게 확장합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 종교 기관</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_4">
-      <Text>{3_PlayerName}이 학문 기관의 관리 권한을 성직자에게 넘깁니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 종교 권위</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_5">
-      <Text>{3_PlayerName}이 주요 법적 직책에 종교 지도자를 임명합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 OPEC 창설</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_ARABIA_UE_CHOICE_6">
-      <Text>{3_PlayerName}이 석유 매장량을 비축하기 시작하며, 세계적으로 석유 가격이 크게 상승합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION">
-      <Text>신 외에는 없다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP">
-      <Text>칼리프님, 울라마가 귀하의 제안을 검토하였으며, 귀하가 이 문제에 대해 말씀해 주시기를 원하고 있습니다. 왕님, 그들이 즉시 의회에 참석해 주실 것을 요청하고 있습니다.[NEWLINE]그들은 분명히 귀하의 법안을 승인할 것입니다. 이는 공정하고 신성한 법안입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_1">
-      <Text>원하는 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_2">
-      <Text>토착민을 통합합니다. 사막 타일에서 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산량을 얻습니다. 오아시스 타일에서 +3 [ICON_CULTURE] 문화를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_3">
-      <Text>대바자르가 [ICON_CAPITAL] 수도에 세워집니다. 도시 내 모든 사치 자원의 추가 복사본을 얻고, 구매 시 [ICON_GOLD] 금의 25%를 [ICON_PEACE] 신앙으로 전환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost} 만큼의 문화적 영향력을 발휘하여 학습 센터를 종교 지도하에 두십시오. 이 대학과 학원은 +4 [ICON_PEACE] 신앙과 +1 [ICON_RESEARCH] 과학을 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_5">
-      <Text>{1_YieldCost}를 활용하여 세속적인 법률 시스템을 울라마가 관리하는 법률 시스템으로 교체합니다. 경찰서와 경찰서가 +2 [ICON_PEACE] 신앙을 생산합니다. 모든 지역의 [ICON_STRENGTH] 불안 임계값이 5% 감소하지만, [ICON_RELIGION] 종교 부서의 임계값은 +25% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_HELP_CHOICE_6">
-      <Text>[ICON_RES_OIL] 석유 생산을 정치적 통제 하에 둡니다. 8개의 [ICON_RES_OIL] 석유 복사본을 얻고, 유정 및 해양 플랫폼이 -2 [ICON_PRODUCTION] 생산량을 생성하여 +5 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_1">
-      <Text>*성직자와 갈등을 겪던 가족의 일원이 자신의 죄를 뉘우쳤습니다. 그의 칭호를 되돌려 주시기를 간청하셨습니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_2">
-      <Text>우리는 한때 모두 사막의 사람들이었습니다. 지금은 이 복잡한 문명이 있지만, 그들은 아직도 빛을 보지 못했습니다![NEWLINE]*의회는 당신의 계획이 우리 문화와 신앙에 통합될 것이라는 점에서 동의합니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_3">
-      <Text>수도의 바자르는 막대한 부의 원천이지만, 현재의 종교 법 아래에서는 성장할 수 없습니다.[NEWLINE]*의회는 바자르의 필요성을 인정하며, 기도 시간에 외국 상인들에 대해서만 강제 폐쇄를 완화할 것입니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_4">
-      <Text>학문 기관은 현재 개인적인 사안으로, 모든 이에게 일정한 감독이 필요한 상황입니다.[NEWLINE]*의회는 동의합니다. 이러한 기관들은 가장 엄격한 감독 하에 고위 성직자들에 의해 감독될 것입니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_5">
-      <Text>궁전의 계획은 범죄자들을 재활시키고, 우리의 광활한 도시를 새로운 번영의 시대에 맞출 것입니다![NEWLINE]*의회는 불안의 감소를 매우 중요하게 생각합니다. 그러나 우리는 대안 방법이 있습니다...*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_ARABIA_UE_DESCRIPTION_CHOICE_6">
-      <Text>현재 석유는 부분적으로 민간의 소유입니다. 성직자들이 우리의 노력에 대한 왕관의 통치를 인정한다면...-[NEWLINE]*의회는 이 문제에 대해 왕관에 동정적입니다. 우리는 지속적인 번영을 기대합니다*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY">
-      <Text>대바자르</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_ARABIA_UE_DUMMY_HELP">
-      <Text>도시 내 모든 사치 자원의 추가 복사본을 얻으며, 이 도시의 구매 시 [ICON_GOLD] 금의 25%를 [ICON_PEACE] 신앙으로 전환합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

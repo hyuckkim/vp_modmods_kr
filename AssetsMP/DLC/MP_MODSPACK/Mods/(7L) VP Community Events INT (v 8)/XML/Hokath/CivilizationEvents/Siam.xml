@@ -1,540 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_SIAM_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_SIAM</RequiredCiv>
-		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
-		</Row>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WORKSHOP</RequiredAnywhereBuildingClass>
-			<ImprovementAnywhereRequired>IMPROVEMENT_MANUFACTORY</ImprovementAnywhereRequired>
-			<EventDuration>-1</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
-			<EventDuration>-1</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_METALLURGY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_SIAM_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
-		</Row>
-		<Row>
-			<Type>EVENT_SIAM_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_SIAM_UE_DUMMY_2</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<RequiresWar>true</RequiresWar>
-			<EventDuration>-1</EventDuration>
-		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_SIAM_UE</EventType>
-		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_SIAM_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_SIAM_UE_DUMMY</DefaultBuilding>
-		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_SIAM_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_SIAM_UE_DUMMY_2</DefaultBuilding>
-		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_UE_STUPA</Type>
-			<DefaultBuilding>BUILDING_UE_STUPA</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_STUPA</Description>
-		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_SIAM_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_SIAM_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_SIAM_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_SIAM_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
-		</Row>
-		<Row>
-			<Type>BUILDING_SIAM_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_SIAM_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_SIAM_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_SIAM_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IsDummy>true</IsDummy>
-		</Row>
-		<Row>
-			<Type>BUILDING_UE_STUPA</Type>
-			<BuildingClass>BUILDINGCLASS_UE_STUPA</BuildingClass>
-			<Cost>-1</Cost>
-			<FaithCost>250</FaithCost>
-			<Description>TXT_KEY_BUILDING_UE_STUPA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_STUPA_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_STUPA_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_STUPA_HELP</Help>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<ReligiousPressureModifier>25</ReligiousPressureModifier>
-			<IconAtlas>EXPANSION2_WONDER_ATLAS</IconAtlas>
-			<PortraitIndex>5</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<EventChoiceRequiredActive>EVENT_SIAM_UE_CHOICE_4</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>365</MutuallyExclusiveGroup>
-			<IsDummy>true</IsDummy>
-			<ScienceMedianModifier>-10</ScienceMedianModifier>
-		</Row>
-	</Buildings>
-	<Building_YieldFromSpyAttack>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>150</Yield>
-		</Row>
-	</Building_YieldFromSpyAttack>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_STUPA</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_STUPA</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-	</Building_Flavors>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_STUPA</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_STUPA</BuildingType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>3</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_STUPA</BuildingType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>5</Yield>
-		</Row>
-	</Building_YieldChanges>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<Modifier>33</Modifier>
-		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-	<Building_YieldPerFriend>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_YieldPerFriend>
-	<Building_YieldPerAlly>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_SIAM_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_YieldPerAlly>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<UnitType>UNIT_EMISSARY</UnitType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_IVORY</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_PORCELAIN</ResourceType>
-			<Quantity>3</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TRAINSTATION</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TRAINSTATION</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_SIAM_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 정치 인턴십</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 유명한 도시 국가 인물을 '인턴'으로 받아들입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 백상아리</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 상아 보호를 조직합니다, 시암 내외에서.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 도자기 신탁 기금</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 도자기 시장을 강제로 독점합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 비하라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 새로운 유형의 스투파 청사진을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 조상 통치 자손</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 시암 내 상인들에 대한 통제력을 증가시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 새로운 동맹</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 시암의 적들에 대한 동맹을 조직하여 그들의 반대를 비인간화합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION">
-      <Text>부처님의 뒷면을 금칠하다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP">
-      <Text>폐하, 사절들이 도착했습니다. 정원에서 기다리고 있습니다. 말씀해 주십시오, 폐하, 도움이 필요하십니까? 아니면 그들이 협조할 기회를 주실 것입니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 사용하여 새로운 문화적 관행을 도입합니다. 두 명의 사절이 [ICON_CAPITAL] 수도에 생성되어 소식을 전파합니다. [ICON_RES_IVORY] 상아 1개를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 도자기 산업에 투자합니다. [ICON_RES_PORCELAIN] 도자기 3개를 받고, 모든 작업장이 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}로 비하라 건물을 잠금 해제합니다. 스투파는 +2 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_5">
-      <Text>도시가 생성합니다: 모든 도시 국가 친구당 +33% [ICON_GREAT_DIPLOMAT] 위대한 외교관 포인트, +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_6">
-      <Text>[ICON_SPY] 스파이가 행동을 완료할 때 [ICON_PRODUCTION] 생산을 [ICON_CAPITAL] 수도에서 받습니다. 기차역이 +10 [ICON_PRODUCTION] 생산과 +10 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_1">
-      <Text>아, 아무런 문제도 예상하지 않습니다. 이번에는 인질을 요청할 뿐입니다. 일처리를 매끄럽게 해주십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_2">
-      <Text>*다양한 도시 국가의 엘리트들이 상아에 매료되어 코끼리가 지역적으로 멸종되었습니다*[NEWLINE]우리는 멸종 위기에 처한 종의 보존의 중요성에 대해 논의할 것입니다. 코끼리와... 사절들에 대해서도...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_3">
-      <Text>*상칼록 도자기가 이웃 나라의 법정에서 매우 인기를 끌었습니다*[NEWLINE]사실, 그들이 우리 상품을 사러 온 것입니다! 이번에는 자발적으로!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_4">
-      <Text>*지역 문화가 독특한 스투파를 개발하여 우리의 종교 계급의 주목을 받았습니다*[NEWLINE]금 상자를 가져오십시오. 이제 우리는 그들의 스투파 설계도 위치에 대해 논의할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_5">
-      <Text>*우리의 전통적인 수입원이 현대 국가의 요구를 충족할 수 없게 된 것 같습니다*[NEWLINE]과거에 차이가 있었던 것은 사실이지만, 그것을 뒤로하고 점점 더 가까운 연합을 논의할 때입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_6">
-      <Text>우리는 수년 동안 우리가 장난감이 아니라는 것을 분명히 해왔습니다. 그럼에도 불구하고 적들이 드러났습니다. 이 훌륭한 신사들의 도움으로, 우리는 그들을 지구에서 지워버릴 동맹을 조직할 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY">
-      <Text>조상 통치 자손</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_HELP">
-      <Text>모든 도시 국가 친구당 +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수. +33% [ICON_DIPLOMAT] 위대한 외교관 생성.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2">
-      <Text>새로운 동맹</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2_HELP">
-      <Text>[ICON_GREAT_WORK] 위대한 작품을 훔치거나 [ICON_RESEARCH] 기술을 획득하거나 도시 국가 쿠데타를 완료할 때 +150 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨). 고급 행동을 완료할 때 +37.5 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨).</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_STUPA">
-      <Text>비하라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_STUPA_STRATEGY">
-      <Text>시암 고유의 이벤트 선택으로 구매할 수 있습니다. 스투파와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 정치 인턴십</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 유명한 도시 국가 인물을 '인턴'으로 받아들입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 백상아리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 상아 보호를 조직합니다, 시암 내외에서.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 도자기 신탁 기금</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 도자기 시장을 강제로 독점합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 비하라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 새로운 유형의 스투파 청사진을 획득합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 조상 통치 자손</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 시암 내 상인들에 대한 통제력을 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 새로운 동맹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SIAM_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 시암의 적들에 대한 동맹을 조직하여 그들의 반대를 비인간화합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION">
+			<Text>부처님의 뒷면을 금칠하다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP">
+			<Text>폐하, 사절들이 도착했습니다. 정원에서 기다리고 있습니다. 말씀해 주십시오, 폐하, 도움이 필요하십니까? 아니면 그들이 협조할 기회를 주실 것입니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 사용하여 새로운 문화적 관행을 도입합니다. 두 명의 사절이 [ICON_CAPITAL] 수도에 생성되어 소식을 전파합니다. [ICON_RES_IVORY] 상아 1개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 도자기 산업에 투자합니다. [ICON_RES_PORCELAIN] 도자기 3개를 받고, 모든 작업장이 +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}로 비하라 건물을 잠금 해제합니다. 스투파는 +2 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_5">
+			<Text>도시가 생성합니다: 모든 도시 국가 친구당 +33% [ICON_GREAT_DIPLOMAT] 위대한 외교관 포인트, +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_HELP_CHOICE_6">
+			<Text>[ICON_SPY] 스파이가 행동을 완료할 때 [ICON_PRODUCTION] 생산을 [ICON_CAPITAL] 수도에서 받습니다. 기차역이 +10 [ICON_PRODUCTION] 생산과 +10 [ICON_GOLD] 금을 생성합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_1">
+			<Text>아, 아무런 문제도 예상하지 않습니다. 이번에는 인질을 요청할 뿐입니다. 일처리를 매끄럽게 해주십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_2">
+			<Text>*다양한 도시 국가의 엘리트들이 상아에 매료되어 코끼리가 지역적으로 멸종되었습니다*[NEWLINE]우리는 멸종 위기에 처한 종의 보존의 중요성에 대해 논의할 것입니다. 코끼리와... 사절들에 대해서도...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_3">
+			<Text>*상칼록 도자기가 이웃 나라의 법정에서 매우 인기를 끌었습니다*[NEWLINE]사실, 그들이 우리 상품을 사러 온 것입니다! 이번에는 자발적으로!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_4">
+			<Text>*지역 문화가 독특한 스투파를 개발하여 우리의 종교 계급의 주목을 받았습니다*[NEWLINE]금 상자를 가져오십시오. 이제 우리는 그들의 스투파 설계도 위치에 대해 논의할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_5">
+			<Text>*우리의 전통적인 수입원이 현대 국가의 요구를 충족할 수 없게 된 것 같습니다*[NEWLINE]과거에 차이가 있었던 것은 사실이지만, 그것을 뒤로하고 점점 더 가까운 연합을 논의할 때입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SIAM_UE_DESCRIPTION_CHOICE_6">
+			<Text>우리는 수년 동안 우리가 장난감이 아니라는 것을 분명히 해왔습니다. 그럼에도 불구하고 적들이 드러났습니다. 이 훌륭한 신사들의 도움으로, 우리는 그들을 지구에서 지워버릴 동맹을 조직할 것입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY">
+			<Text>조상 통치 자손</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_HELP">
+			<Text>모든 도시 국가 친구당 +1 [ICON_GOLD] 금과 +1 [ICON_PEACE] 신앙, 모든 동맹당 +1 [ICON_CULTURE] 문화와 +1 [ICON_GOLDEN_AGE] 황금 시대 점수. +33% [ICON_DIPLOMAT] 위대한 외교관 생성.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2">
+			<Text>새로운 동맹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SIAM_UE_DUMMY_2_HELP">
+			<Text>[ICON_GREAT_WORK] 위대한 작품을 훔치거나 [ICON_RESEARCH] 기술을 획득하거나 도시 국가 쿠데타를 완료할 때 +150 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨). 고급 행동을 완료할 때 +37.5 [ICON_PRODUCTION] 생산 (시대에 따라 조정됨).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_STUPA">
+			<Text>비하라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UE_STUPA_STRATEGY">
+			<Text>시암 고유의 이벤트 선택으로 구매할 수 있습니다. 스투파와 상호 배타적입니다.</Text>
+		</Row>
+	</Language_ko_KR>
 </GameData>

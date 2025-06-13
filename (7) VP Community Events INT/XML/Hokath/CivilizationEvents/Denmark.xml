@@ -1,483 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_DENMARK_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_DENMARK</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 충성스러운 신하</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 전투에서 사망한 적을 기리기 위해 자신의 아들을 종사 직위로 승진시킵니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 롱하우스</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 덴마크 전역에 훌륭한 롱하우스를 건설합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 목재 교회</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<EventBuildingClassGlobal>BUILDINGCLASS_DENMARK_UE_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 목재 자원을 이용하여 통널 교회를 건축합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_DENMARK_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_RADIO</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 해상 패권</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 해양 적들에 대한 위협 캠페인을 시작합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 스키 보병 대대</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 스키 보병 대대를 조직합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 역사 보존</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 덴마크 문화 기관과 역사적 유적지 보존에 투자합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_DENMARK_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION">
+			<Text>오딘이 모두를 지배하다</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_DENMARK_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_DENMARK_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP">
+			<Text>고위 종사님, 당신의 투구와 도끼를 드높이소서! 불에 취한 군중이 궁전에 접근하고 있습니다. 당신이 그들의 정치적 요구를 받아들이지 않으면 축출당할 것이라고 합니다![NEWLINE]그들이 위대한 블루투스에게 도전하는 것은 생각조차 하지 말았어야 했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_UE_CHURCH2</Type>
-			<DefaultBuilding>BUILDING_UE_CHURCH2</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_UE_CHURCH2</Description>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_UE_CHURCH2</Type>
-			<BuildingClass>BUILDINGCLASS_UE_CHURCH2</BuildingClass>
-			<Description>TXT_KEY_BUILDING_UE_CHURCH2</Description>
-			<Civilopedia>TXT_KEY_BUILDING_CHURCH_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_UE_CHURCH2_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_CHURCH_HELP</Help>
-			<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
-			<GreatWorkCount>1</GreatWorkCount>
-			<ArtDefineTag>TEMPLE</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<WLTKDTurns>15</WLTKDTurns>
-			<ReligiousPressureModifier>40</ReligiousPressureModifier>
-			<Cost>-1</Cost>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
-			<PortraitIndex>61</PortraitIndex>
-			<FaithCost>250</FaithCost>
-			<EventChoiceRequiredActive>EVENT_DENMARK_UE_CHOICE_3</EventChoiceRequiredActive>
-			<MutuallyExclusiveGroup>361</MutuallyExclusiveGroup>
-			<IsDummy>true</IsDummy>
-			<NeverCapture>true</NeverCapture>
-			<CultureMedianModifier>-10</CultureMedianModifier>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_2">
+			<Text>롱하우스를 {1_YieldCost}에 도입하여 병영을 업그레이드합니다. 추가로 +2 [ICON_FOOD] 식량, +1 [ICON_PRODUCTION] 생산, +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_DENMARK_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_DENMARK_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_DENMARK_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_DENMARK_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_3">
+			<Text>석조 사원에서 벗어나 목재 자원을 활용하여 통널 교회를 건축합니다. 다른 교회들은 +2 [ICON_PEACE] 신앙을 얻습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH2</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>4</Yield>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_4">
+			<Text>해상 패권 정책으로 인해 항구와 성이 +1 [ICON_GOLDEN_AGE] 황금 시대 포인트를 제공하며, 성채는 +3 [ICON_GOLDEN_AGE] 황금 시대 포인트를 제공합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH2</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_5">
+			<Text>모든 도시에서 게릴라가 모집됩니다. 새로운 군사 확장으로 인해 도시가 작업 가능한 모든 눈 타일에 대해 +3 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
 		</Row>
-	</Building_YieldChanges>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH2</BuildingType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>9</Flavor>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}을(를) 지출하여 덴마크 문화를 증진합니다. 작가 조합은 [ICON_CULTURE] 문화 생성량을 20% 증가시키며, 젤링 스톤은 +5 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH2</BuildingType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_1">
+			<Text>난 몇 달 동안 제대로 된 전투를 한 번도 치르지 못했어. 자, 저들 중에 내게 도전할 위대한 인물이 있을 거야!</Text>
 		</Row>
-	</Building_Flavors>
-	<Building_GreatWorkYieldChangesLocal>
-		<Row>
-			<BuildingType>BUILDING_UE_CHURCH2</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_2">
+			<Text>*궁전 밖에 모인 많은 사람들이 겨울철을 견딜 수 있는 신뢰할 만한 피난처가 없습니다*[NEWLINE]강한 전사들이 있다 해도 우리가 우리의 국민을 추위로부터 보호할 수 없다면 무슨 소용이겠습니까? 병영을 열고 우리의 군인들을 덴마크에 걸맞는 집을 짓게 하십시오.</Text>
 		</Row>
-	</Building_GreatWorkYieldChangesLocal>
-	<Building_YieldPerXTerrainTimes100>
-		<Row>
-			<BuildingType>BUILDING_DENMARK_UE_DUMMY</BuildingType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>300</Yield>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_3">
+			<Text>*대중은 신들에 대한 당신의 명백한 무시에 격분하고 더 많은 사원을 원합니다*[NEWLINE]신들을 존경하기 위해 내가 할 수 있는 일을 하고 있습니다. 더 많은 일을 하지 못하는 것이 아쉽습니다. 오늘부터 새로운 건축 프로젝트를 시작하여 새로운 종류의 교회를 세우겠습니다! 이 교회들은 모든 공동체에 세워져 우리 문화를 상징할 것입니다.</Text>
 		</Row>
-	</Building_YieldPerXTerrainTimes100>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_5</EventChoiceType>
-			<UnitType>UNIT_DANISH_SKI_INFANTRY</UnitType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_4">
+			<Text>*세계의 작은 도시들이 우리의 해상 지배를 경시하고 있습니다. 시위자들은 당신이 확고한 지배력을 확립할 것을 요구합니다.*[NEWLINE]군중과 나는 동의합니다. 바다는 덴마크의 것입니다!</Text>
 		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<Quantity>10</Quantity>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_5">
+			<Text>*대중은 전쟁의 비용에 대해 우려하고 있습니다. 전쟁을 빨리 끝낼 수 없다면 당신이 물러나야 한다고 요구합니다.*[NEWLINE]전쟁은 모든 전선에서 진행되고 있지만, 덴마크가 적보다 잘 아는 기술이 있습니다. 나는 집합한 군중에게 우리의 새로운 계획을 발표할 것입니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Modifier>20</Modifier>
+		<Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_6">
+			<Text>*대중은 전쟁 대안을 촉진하지 않는 궁전의 무관심에 분노하고 있습니다.*[NEWLINE]우리 문화는 오랫동안 전쟁에 기반을 두어왔습니다. 이제 우리는 우리의 역사 다른 부분을 되돌아볼 기회를 가지고 있습니다. 나는 덴마크 문화를 축하하는 큰 축제를 통해 이 소원을 실현하겠습니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_DENMARK_UE_DUMMY">
+			<Text>스키 보병 대대</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UE_CHURCH</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_DENMARK_UE_DUMMY_HELP">
+			<Text>작업 가능한 눈 타일마다 +3 [ICON_PRODUCTION] 생산.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH2">
+			<Text>통널 교회</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_UE_CHURCH2_STRATEGY">
+			<Text>덴마크 고유 이벤트 선택으로 구매 가능합니다. 교회와 상호 배타적입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_DENMARK_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 충성스러운 신하</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 전투에서 사망한 적을 기리기 위해 자신의 아들을 종사 직위로 승진시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 롱하우스</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 덴마크 전역에 훌륭한 롱하우스를 건설합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 목재 교회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 목재 자원을 이용하여 통널 교회를 건축합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 해상 패권</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 해양 적들에 대한 위협 캠페인을 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 스키 보병 대대</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 스키 보병 대대를 조직합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 역사 보존</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_DENMARK_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 덴마크 문화 기관과 역사적 유적지 보존에 투자합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION">
-      <Text>오딘이 모두를 지배하다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP">
-      <Text>고위 종사님, 당신의 투구와 도끼를 드높이소서! 불에 취한 군중이 궁전에 접근하고 있습니다. 당신이 그들의 정치적 요구를 받아들이지 않으면 축출당할 것이라고 합니다![NEWLINE]그들이 위대한 블루투스에게 도전하는 것은 생각조차 하지 말았어야 했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_2">
-      <Text>롱하우스를 {1_YieldCost}에 도입하여 병영을 업그레이드합니다. 추가로 +2 [ICON_FOOD] 식량, +1 [ICON_PRODUCTION] 생산, +2 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_3">
-      <Text>석조 사원에서 벗어나 목재 자원을 활용하여 통널 교회를 건축합니다. 다른 교회들은 +2 [ICON_PEACE] 신앙을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_4">
-      <Text>해상 패권 정책으로 인해 항구와 성이 +1 [ICON_GOLDEN_AGE] 황금 시대 포인트를 제공하며, 성채는 +3 [ICON_GOLDEN_AGE] 황금 시대 포인트를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_5">
-      <Text>모든 도시에서 게릴라가 모집됩니다. 새로운 군사 확장으로 인해 도시가 작업 가능한 모든 눈 타일에 대해 +3 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}을(를) 지출하여 덴마크 문화를 증진합니다. 작가 조합은 [ICON_CULTURE] 문화 생성량을 20% 증가시키며, 젤링 스톤은 +5 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_1">
-      <Text>난 몇 달 동안 제대로 된 전투를 한 번도 치르지 못했어. 자, 저들 중에 내게 도전할 위대한 인물이 있을 거야!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_2">
-      <Text>*궁전 밖에 모인 많은 사람들이 겨울철을 견딜 수 있는 신뢰할 만한 피난처가 없습니다*[NEWLINE]강한 전사들이 있다 해도 우리가 우리의 국민을 추위로부터 보호할 수 없다면 무슨 소용이겠습니까? 병영을 열고 우리의 군인들을 덴마크에 걸맞는 집을 짓게 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_3">
-      <Text>*대중은 신들에 대한 당신의 명백한 무시에 격분하고 더 많은 사원을 원합니다*[NEWLINE]신들을 존경하기 위해 내가 할 수 있는 일을 하고 있습니다. 더 많은 일을 하지 못하는 것이 아쉽습니다. 오늘부터 새로운 건축 프로젝트를 시작하여 새로운 종류의 교회를 세우겠습니다! 이 교회들은 모든 공동체에 세워져 우리 문화를 상징할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_4">
-      <Text>*세계의 작은 도시들이 우리의 해상 지배를 경시하고 있습니다. 시위자들은 당신이 확고한 지배력을 확립할 것을 요구합니다.*[NEWLINE]군중과 나는 동의합니다. 바다는 덴마크의 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_5">
-      <Text>*대중은 전쟁의 비용에 대해 우려하고 있습니다. 전쟁을 빨리 끝낼 수 없다면 당신이 물러나야 한다고 요구합니다.*[NEWLINE]전쟁은 모든 전선에서 진행되고 있지만, 덴마크가 적보다 잘 아는 기술이 있습니다. 나는 집합한 군중에게 우리의 새로운 계획을 발표할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_DENMARK_UE_DESCRIPTION_CHOICE_6">
-      <Text>*대중은 전쟁 대안을 촉진하지 않는 궁전의 무관심에 분노하고 있습니다.*[NEWLINE]우리 문화는 오랫동안 전쟁에 기반을 두어왔습니다. 이제 우리는 우리의 역사 다른 부분을 되돌아볼 기회를 가지고 있습니다. 나는 덴마크 문화를 축하하는 큰 축제를 통해 이 소원을 실현하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_DENMARK_UE_DUMMY">
-      <Text>스키 보병 대대</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_DENMARK_UE_DUMMY_HELP">
-      <Text>작업 가능한 눈 타일마다 +3 [ICON_PRODUCTION] 생산.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH2">
-      <Text>통널 교회</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_UE_CHURCH2_STRATEGY">
-      <Text>덴마크 고유 이벤트 선택으로 구매 가능합니다. 교회와 상호 배타적입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

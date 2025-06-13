@@ -1,530 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AZTEC_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_AZTEC</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 새로운 틀라토아니</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1">
+			<Text>{3_PlayerName}이 새로운 틀라토아니를 임명했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2</Description>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EventBuildingClassGlobal>BUILDINGCLASS_AZTEC_UE_DUMMY_2</EventBuildingClassGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 후에후테오틀의 달램</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_AZTEC_UE_DUMMY</EventBuildingClassGlobal>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2">
+			<Text>{3_PlayerName}이 새로 정복한 도시들에서 제물의 빈도를 증가시켰습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_BANKING</PrereqTech>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 정복자 철학</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_RIFLING</PrereqTech>
-			<EventPromotion>PROMOTION_UE_RURALES</EventPromotion>
-			<ObsoleteEra>ERA_POSTMODERN</ObsoleteEra>
-			<EraScaling>true</EraScaling>
-			<MinimumNationalPopulation>90</MinimumNationalPopulation>
-			<EventDuration>-1</EventDuration>
-			<BasicNeedsMedianModifierGlobal>-10</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3">
+			<Text>{3_PlayerName}이 작가들의 삶에 대한 사제단의 통제를 강화했습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AZTEC_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<WLTKDTurns>10</WLTKDTurns>
-			<EventDuration>10</EventDuration>
-			<Expires>false</Expires>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 아센다도에게로의 권한 이양</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4">
+			<Text>{3_PlayerName}이 플랜테이션에 대한 통제권을 지주들에게 이양했습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 루랄레스</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5">
+			<Text>{3_PlayerName}이 최근의 불안 확산에 대처하기 위해 루랄레스 부대를 창설했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 죽은 자의 날</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6">
+			<Text>{3_PlayerName}이 디아 데 무에르토스 축제를 부활시켰습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_AZTEC_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION">
+			<Text>이미 시작된 일</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_AZTEC_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_AZTEC_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP">
+			<Text>위대한 황제여, 깃털 달린 뱀이 당신을 지켜봅니다. 연장자들이 요청하신 대로 최근의 사태를 논의하기 위해 모였습니다.[NEWLINE][NEWLINE]그들이 언제쯤 당신의 참석을 기대할 수 있겠습니까?</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_AZTEC_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_AZTEC_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1">
+			<Text>선택한 위인을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_AZTEC_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_AZTEC_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_AZTEC_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2">
+			<Text>범죄자들의 희생 제사는 법원에서 +4 [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산력 및 [ICON_FOOD] 식량을 생성합니다. 적의 [ICON_SPY] 스파이가 죽으면 신앙과 식량을 시대 및 스파이의 레벨에 따라 보상으로 받습니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_AZTEC_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_AZTEC_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 사용하여 새로운 철학적 개념을 발견합니다. 모든 도시는 [ICON_GREAT_WRITER] 위대한 작가 생산 속도가 33% 빨라집니다. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다. 각 [ICON_GREAT_WRITER] 작가는 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생성합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromPolicyUnlock>
-		<Row>
-			<BuildingType>BUILDING_AZTEC_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>5</Yield>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4">
+			<Text>아센다도들이 플랜테이션에 대한 통제권을 부여받습니다: [ICON_GOLD] 금 -1, 그러나 [ICON_PRODUCTION] 생산력 +2 및 [ICON_FOOD] 식량 +2.</Text>
 		</Row>
-	</Building_YieldFromPolicyUnlock>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_AZTEC_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<Modifier>33</Modifier>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5">
+			<Text>{1_YieldCost}를 투자하여 루랄레스를 창설합니다. 총기 유닛은 루랄레스 부대 승급을 받고 [ICON_STRENGTH] 불안 임계값이 10% 감소합니다.</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-	<Building_YieldFromSpyDefense>
-		<Row>
-			<BuildingType>BUILDING_AZTEC_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 활용하여 죽은 자의 날 축제를 대중화합니다. {4_Turns} 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에 진입합니다. 성지와 랜드마크는 +3 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광 및 [ICON_FOOD] 식량을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_AZTEC_UE_DUMMY_2</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1">
+			<Text>훌륭합니다. 새로운 틀라토아니를 임명하기 위해 모였습니다.</Text>
 		</Row>
-	</Building_YieldFromSpyDefense>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2">
+			<Text>*우리의 정복이 제국에 제대로 통합되고 있는지에 대한 의문이 있습니다*[NEWLINE]우리 법을 위반한 자들은 포로로 취급될 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3">
+			<Text>*우리의 고위 종교 인사들이 예술가들에 대한 강력한 통제를 요구하고 있습니다*[NEWLINE]명백히, 테오틀의 본성을 표현하는 예술만이 가치가 있습니다. 신앙을 강화하려면 시민들의 정신을 계발해야 합니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_RURALES</Type>
-			<Description>TXT_KEY_PROMOTION_UE_RURALES</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<Help>TXT_KEY_PROMOTION_UE_RURALES_HELP</Help>
-			<HillsDoubleMove>true</HillsDoubleMove>
-			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_RURALES</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4">
+			<Text>*틀라토아니가 지주들에게 국가의 통제권을 이양할 것을 제안하고 있습니다*[NEWLINE]이로 인해 도시의 수익이 감소할 수 있지만, 우리 국민들의 창의력이 이를 극복할 것입니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_RURALES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5">
+			<Text>*성장하는 도시들에서 불안 수준에 대한 심각한 우려가 있습니다*[NEWLINE]이 새로운 반항의 물결에 대처하기 위해 민병대를 조직할 것입니다.</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-	<UnitPromotions_YieldFromKills>
-		<Row>
-			<PromotionType>PROMOTION_UE_RURALES</PromotionType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6">
+			<Text>*사람들이 전통적인 생활 방식에 대한 존경심을 잃고 있습니다*[NEWLINE]불경스럽습니다. 더 이상 사람들의 심장을 꺼내지는 않지만, 그렇다고 해서 죽은 자들을 잊어서는 안 됩니다. 옛 방식으로 위대한 축제를 조직해야 합니다.</Text>
 		</Row>
-	</UnitPromotions_YieldFromKills>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY">
+			<Text>아즈텍 정복 철학</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP">
+			<Text>[ICON_GREAT_WRITER] 위대한 작가 생성 +33%. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2">
+			<Text>아즈텍 희생 제단</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2_HELP">
+			<Text>적의 [ICON_SPY] 스파이가 죽으면 시대 및 스파이의 레벨에 따라 신앙과 식량을 보상으로 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_RURALES">
+			<Text>루랄레스 부대</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_RURALES_HELP">
+			<Text>처치 시 황금기 점수를 보상으로 받고 언덕에서 이동 속도가 두 배가 됩니다. 아즈텍 이벤트에서만 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>4</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>4</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>4</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>250</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>250</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AZTEC_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 새로운 틀라토아니</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_1">
-      <Text>{3_PlayerName}이 새로운 틀라토아니를 임명했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 후에후테오틀의 달램</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_2">
-      <Text>{3_PlayerName}이 새로 정복한 도시들에서 제물의 빈도를 증가시켰습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 정복자 철학</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_3">
-      <Text>{3_PlayerName}이 작가들의 삶에 대한 사제단의 통제를 강화했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 아센다도에게로의 권한 이양</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_4">
-      <Text>{3_PlayerName}이 플랜테이션에 대한 통제권을 지주들에게 이양했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 루랄레스</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_5">
-      <Text>{3_PlayerName}이 최근의 불안 확산에 대처하기 위해 루랄레스 부대를 창설했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 죽은 자의 날</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_AZTEC_UE_CHOICE_6">
-      <Text>{3_PlayerName}이 디아 데 무에르토스 축제를 부활시켰습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION">
-      <Text>이미 시작된 일</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP">
-      <Text>위대한 황제여, 깃털 달린 뱀이 당신을 지켜봅니다. 연장자들이 요청하신 대로 최근의 사태를 논의하기 위해 모였습니다.[NEWLINE][NEWLINE]그들이 언제쯤 당신의 참석을 기대할 수 있겠습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_1">
-      <Text>선택한 위인을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_2">
-      <Text>범죄자들의 희생 제사는 법원에서 +4 [ICON_PEACE] 신앙, [ICON_PRODUCTION] 생산력 및 [ICON_FOOD] 식량을 생성합니다. 적의 [ICON_SPY] 스파이가 죽으면 신앙과 식량을 시대 및 스파이의 레벨에 따라 보상으로 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 사용하여 새로운 철학적 개념을 발견합니다. 모든 도시는 [ICON_GREAT_WRITER] 위대한 작가 생산 속도가 33% 빨라집니다. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다. 각 [ICON_GREAT_WRITER] 작가는 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_4">
-      <Text>아센다도들이 플랜테이션에 대한 통제권을 부여받습니다: [ICON_GOLD] 금 -1, 그러나 [ICON_PRODUCTION] 생산력 +2 및 [ICON_FOOD] 식량 +2.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_5">
-      <Text>{1_YieldCost}를 투자하여 루랄레스를 창설합니다. 총기 유닛은 루랄레스 부대 승급을 받고 [ICON_STRENGTH] 불안 임계값이 10% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 활용하여 죽은 자의 날 축제를 대중화합니다. {4_Turns} 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]에 진입합니다. 성지와 랜드마크는 +3 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광 및 [ICON_FOOD] 식량을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_1">
-      <Text>훌륭합니다. 새로운 틀라토아니를 임명하기 위해 모였습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_2">
-      <Text>*우리의 정복이 제국에 제대로 통합되고 있는지에 대한 의문이 있습니다*[NEWLINE]우리 법을 위반한 자들은 포로로 취급될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_3">
-      <Text>*우리의 고위 종교 인사들이 예술가들에 대한 강력한 통제를 요구하고 있습니다*[NEWLINE]명백히, 테오틀의 본성을 표현하는 예술만이 가치가 있습니다. 신앙을 강화하려면 시민들의 정신을 계발해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_4">
-      <Text>*틀라토아니가 지주들에게 국가의 통제권을 이양할 것을 제안하고 있습니다*[NEWLINE]이로 인해 도시의 수익이 감소할 수 있지만, 우리 국민들의 창의력이 이를 극복할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_5">
-      <Text>*성장하는 도시들에서 불안 수준에 대한 심각한 우려가 있습니다*[NEWLINE]이 새로운 반항의 물결에 대처하기 위해 민병대를 조직할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AZTEC_UE_DESCRIPTION_CHOICE_6">
-      <Text>*사람들이 전통적인 생활 방식에 대한 존경심을 잃고 있습니다*[NEWLINE]불경스럽습니다. 더 이상 사람들의 심장을 꺼내지는 않지만, 그렇다고 해서 죽은 자들을 잊어서는 안 됩니다. 옛 방식으로 위대한 축제를 조직해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY">
-      <Text>아즈텍 정복 철학</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_HELP">
-      <Text>[ICON_GREAT_WRITER] 위대한 작가 생성 +33%. 정책을 해제할 때마다 시대에 따라 5 [ICON_GOLDEN_AGE] 황금기 점수를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2">
-      <Text>아즈텍 희생 제단</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_AZTEC_UE_DUMMY_2_HELP">
-      <Text>적의 [ICON_SPY] 스파이가 죽으면 시대 및 스파이의 레벨에 따라 신앙과 식량을 보상으로 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_RURALES">
-      <Text>루랄레스 부대</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_RURALES_HELP">
-      <Text>처치 시 황금기 점수를 보상으로 받고 언덕에서 이동 속도가 두 배가 됩니다. 아즈텍 이벤트에서만 부여됩니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

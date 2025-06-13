@@ -1,176 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_IDEOLOGY_ECONOMIC_UNION</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>45</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_ECONOMIC_UNION</RequiredPolicy>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION">
+			<Text>어느 때보다 더 가까운 연합</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_1</Help>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_FLIGHT</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP">
+			<Text>자유의 힘을 통합하는 것을 목표로 삼으면서, 자원을 공유하고 더 밀접하게 결속하는 것이 필수적입니다.[NEWLINE]가장 시급한 접근 방식은 무엇일까요?</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STOCK_EXCHANGE</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_1">
+			<Text>{1_YieldCost}의 손실을 감수하고 세관, 항구, 공항에서 +1 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<PrereqTech>TECH_ROCKETRY</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_2">
+			<Text>모든 [ICON_GREAT_MERCHANT] 상인이 -2 [ICON_GOLD] 금을 생성하지만, 모든 농장과 농업 플랜테이션이 +1 [ICON_GOLD] 금을 생성합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_ECONOMIC_UNION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_3">
+			<Text>2 [ICON_RES_OIL]를 교환하여 [ICON_CAPITAL] 수도에 6개의 유도 미사일을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_ECONOMIC_UNION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_1">
+			<Text>사람들의 자유로운 이동은 우리 세계를 글로벌화하고 지속 가능한 평화를 가져올 것입니다. 우리는 나누는 것보다 공통된 것이 더 많습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_ECONOMIC_UNION</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_2">
+			<Text>하나의 블록으로 묶여서 우리의 거래력을 통해 우리의 이익에 맞는 사람만이 이익을 볼 수 있게 될 것입니다. 이러한 통제 아래에서는 평화가 따라올 것입니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>-2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_3">
+			<Text>평화를 보장하는 유일한 방법은 전쟁의 전망이 너무 추악해서 아무도 전쟁을 시작할 용기를 가지지 않도록 만드는 것입니다.</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</EventChoiceType>
-			<UnitClassType>UNITCLASS_GUIDED_MISSILE</UnitClassType>
-			<Quantity>6</Quantity>
-		</Row>
-	</EventChoice_FreeUnitClasses>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_ECONOMIC_UNION_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION">
-      <Text>어느 때보다 더 가까운 연합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP">
-      <Text>자유의 힘을 통합하는 것을 목표로 삼으면서, 자원을 공유하고 더 밀접하게 결속하는 것이 필수적입니다.[NEWLINE]가장 시급한 접근 방식은 무엇일까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_1">
-      <Text>{1_YieldCost}의 손실을 감수하고 세관, 항구, 공항에서 +1 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_2">
-      <Text>모든 [ICON_GREAT_MERCHANT] 상인이 -2 [ICON_GOLD] 금을 생성하지만, 모든 농장과 농업 플랜테이션이 +1 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_HELP_CHOICE_3">
-      <Text>2 [ICON_RES_OIL]를 교환하여 [ICON_CAPITAL] 수도에 6개의 유도 미사일을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_1">
-      <Text>사람들의 자유로운 이동은 우리 세계를 글로벌화하고 지속 가능한 평화를 가져올 것입니다. 우리는 나누는 것보다 공통된 것이 더 많습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_2">
-      <Text>하나의 블록으로 묶여서 우리의 거래력을 통해 우리의 이익에 맞는 사람만이 이익을 볼 수 있게 될 것입니다. 이러한 통제 아래에서는 평화가 따라올 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_ECONOMIC_UNION_DESCRIPTION_CHOICE_3">
-      <Text>평화를 보장하는 유일한 방법은 전쟁의 전망이 너무 추악해서 아무도 전쟁을 시작할 용기를 가지지 않도록 만드는 것입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,146 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_IDEOLOGY_HERO</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>45</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredPolicy>POLICY_HERO_OF_THE_PEOPLE</RequiredPolicy>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION">
+			<Text>카리스마적 권위</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_IDEOLOGY_HERO_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_1</Help>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP">
+			<Text>사람이 어떻게 위대해지는가? 동지, 동지가 마침내 우리 동포들을 위해 답할 수 있는, 아주 오래된 질문입니다.[NEWLINE]자, 어떻게 하셨습니까?</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_HERO_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FOREIGN_OFFICE</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_1">
+			<Text>{1_YieldCost}를 투자하여 공장에서 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_IDEOLOGY_HERO_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_PUBLIC_SCHOOL</RequiredAnywhereBuildingClass>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_2">
+			<Text>당신의 [ICON_DIPLOMAT] 공무원들이 -2 [ICON_GOLD] 금을 생성하지만 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 투자하여 대학에서 +3 [ICON_RESEARCH] 과학을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_1">
+			<Text>열심히 일하고 육체 노동을 통해서. 이 조각된 외모가 유지되는 데 아무런 노력이 필요 없다고 생각합니까? 우리의 유토피아 사회에서는 모두가 손을 더럽혀야 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_IDEOLOGY_HERO</EventType>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_2">
+			<Text>내 상사에게 내 일을 어떻게 해야 하는지 물어본다고 해서? 왜 다른 지도자들은 무한히 더 능숙한 PR 팀을 갖고 있는 것 같습니까? 대중들에게 배포할 새로운 포스터를 만들어올 때까지 돌아오세요, 아첨꾼이여!</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_3">
+			<Text>연구, 끝없는 연구. 이 지구에서 내 시간 동안 나는 거의 모든 책을 읽었어야 합니다! 학습은 우리 사회에서 최고의 열망이어야 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_IDEOLOGY_HERO_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION">
-      <Text>카리스마적 권위</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP">
-      <Text>사람이 어떻게 위대해지는가? 이 고대의 질문에 대해, 동지, 이제 우리 사람들을 위해 답할 수 있습니다.[NEWLINE]자, 어떻게 하셨습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_1">
-      <Text>{1_YieldCost}를 투자하여 공장에서 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_2">
-      <Text>당신의 [ICON_DIPLOMAT] 공무원들이 -2 [ICON_GOLD] 금을 생성하지만 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 투자하여 대학에서 +3 [ICON_RESEARCH] 과학을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_1">
-      <Text>열심히 일하고 육체 노동을 통해서. 이 조각된 외모가 유지되는 데 아무런 노력이 필요 없다고 생각합니까? 우리의 유토피아 사회에서는 모두가 손을 더럽혀야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_2">
-      <Text>내 상사에게 내 일을 어떻게 해야 하는지 물어본다고 해서? 왜 다른 지도자들은 무한히 더 능숙한 PR 팀을 갖고 있는 것 같습니까? 대중들에게 배포할 새로운 포스터를 만들어올 때까지 돌아오세요, 아첨꾼이여!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_IDEOLOGY_HERO_DESCRIPTION_CHOICE_3">
-      <Text>연구, 끝없는 연구. 이 지구에서 내 시간 동안 나는 거의 모든 책을 읽었어야 합니다! 학습은 우리 사회에서 최고의 열망이어야 합니다!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

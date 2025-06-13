@@ -1,62 +1,17 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_PLAYER_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisoreconomic.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION">
+			<Text>은행 붕괴</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_ECONOMIC_PLAYER_BAD</EventType>
-			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP">
+			<Text>경제 자문이 접근성을 성공적으로 확장했으나, 갑작스러운 축소로 위기가 발생했습니다! 은행에서 생성되는 [ICON_GOLD] 금이 {5_Turns} 동안 20% 줄어듭니다.</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_ECONOMIC_PLAYER_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>16</EventDuration>
-			<Expires>true</Expires>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>경제 자문이 접근성을 성공적으로 확장했으나, 갑작스러운 축소로 위기가 발생했습니다! 은행에서 생성되는 [ICON_GOLD] 금이 {5_Turns} 동안 20% 줄어듭니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_ECONOMIC_PLAYER_BAD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>은행 붕괴</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_BAD_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Modifier>-20</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION">
-      <Text>은행 붕괴</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP">
-      <Text>경제 자문이 접근성을 성공적으로 확장했으나, 갑작스러운 축소로 위기가 발생했습니다! 은행에서 생성되는 [ICON_GOLD] 금이 {5_Turns} 동안 20% 줄어듭니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_HELP_CHOICE_1">
-      <Text>경제 자문이 접근성을 성공적으로 확장했으나, 갑작스러운 축소로 위기가 발생했습니다! 은행에서 생성되는 [ICON_GOLD] 금이 {5_Turns} 동안 20% 줄어듭니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_BAD_DESCRIPTION_CHOICE_1">
-      <Text>은행 붕괴</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

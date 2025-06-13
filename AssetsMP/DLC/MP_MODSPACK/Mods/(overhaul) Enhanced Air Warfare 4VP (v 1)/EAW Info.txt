@@ -1,0 +1,134 @@
+-------------------------
+-------------------------    (9a) Enhance Air Warfare 4VP
+-------------------------
+-------------------------    Version  1.0
+-------------------------
+-------------------------    by Asterix Rage
+-------------------------
+
+https://forums.civfanatics.com/threads/enhanced-air-warfare-4vp.656114/
+
+
+(9a)EAW4VP provides 5 new Fighters and 4 new Bombers through a simple concept that promises to improve
+gameplay while remaining manageable by the AI.
+New Air Units are part of an entirely new line interlaced in the technology tree with the one that already exist.
+A greater variety of Fighters and Bombers will be involved in the game with the same upgrade rate than before.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Vox Populi
+
+
+Some modifications had to be made to the original VP Air Units.
+
+- RC are slightly adjusted to be coherent with the new Units.
+- The Vanilla Jet Fighter (F-22 model) is renamed Stealth Fighter.
+---- A new Jet Bomber replaces the Stealth Bomber that comes later.
+- Pentagon WW gives 2x exclusive P-80 Shooting Star instead of 2x Stealth Fighters.
+- Guerilla gets Light Air Cover Promo to balance "Guerilla Warfare" with "Air Supremacy" and "Their Finest Hour" Tenets
+  that allow MiG-29 and B-52 to be built in addition to the regular Zero and B-17.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Unit Animation
+
+
+All animation sequences have been rewritten.
+
+- Each Air Unit (Vanilla and EAW) have a specific looking when moving, fighting and crashing.
+- Movement speed increases on a scale of 1.3 to 3 depending on the generation of the aircraft.
+- Different sound sources are mixed to improve the immersion effect. (Will be improved in a future release)
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Faster Aircraft Animations
+
+
+Faster Aircraft Animations (v 3) by Gedemon is included in VP since version (4-17) in 2020
+Set at x3, all Air Units fly at Mach3 minimun!
+
+EAW4VP takes control of the speed factor and set it at x1 by default.
+To change the speed of Airplane animations, open \MODS\(9a) Enhanced Air Warfare 4VP\Faster Aircraft Animations.sql with Notepad2 or Notepad++ and follow the instruction.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Compatibility
+
+
+The mode was supposed to be named: Enhance Air Warfare 4VP
+(9a) at the front is to make sure the Mod will be loaded before any other Modmods that use a regular Air Unit .ftsxml
+e.g. : the SPAD S.VII in More Unique Components for VP
+
+(9a) Enhance Air Warfare 4VP is compatible with all good modmods that do not affect Air Units mechanics.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Authors of Model Units
+
+
+PZL P.11: danrell
+Vickers Wellington: danrell
+P-80 Shooting Star: danrell
+Mirage 2000: (unknown) Do you know who?
+MiG-29: snafusmith
+Tu-95: Wolfdog and ArdRaeiss
+B-52 : Ekmek
+B-1 Lancer: Wolfdog and The Conquests
+Su-57: Wolfdog and TheCoyote
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Unit Icons
+
+
+PZL P.11: Asterix Rage
+(From a drawing made by Stratocaster @ https://community.foundry.com/discuss/topic/93592/p-11c)
+
+Vickers Wellington: Asterix Rage
+(From a drawing made by Jaobasilone  @ https://www.goodfon.com/user/jaobasilone/)
+
+P-80 Shooting Star: Asterix Rage
+(From a drawing made by Jerry Boucher @ https://www.the-vaw.com/index.html)
+
+Mirage 2000: Asterix Rage
+(From a drawing made by Julien Camp @ http://www.checksix-forums.com/viewtopic.php?t=196459)
+
+MiG-29: Asterix Rage
+(From a drawing made by A. Kuphob?)
+
+TU-95: Asterix Rage
+(From a drawing made by Mark Karvon @ https://www.ebay.com/itm/Show-of-Force-Mark-Karvon-Giclee-Print-USSR-Tsar-Bomba-Test-TU-95-Bomber-/350584560440)
+
+B-52: jinzor
+
+B-1 Lancer: Asterix Rage
+(From a drawing made by Stu Shepherd @ https://www.stushepherdart.com/)
+
+Su-57: Asterix Rage
+(From a drawing made by an unknown author)
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Special Thanks to:
+
+
+- civplayer33 with whom I built the general concept at the very beginning of the project.
+- jarcast2 who is always keen to help with sql.
+- Nutty who gave me valuable tips to deal with animation files.
+- pineappledan who never balks at correcting my bad english.
+- All modders and their files where I learn everything about VP modding.
+And of course, the authors of Model Units.

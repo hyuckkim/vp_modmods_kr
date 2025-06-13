@@ -1,494 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<RandomChance>60</RandomChance>
-			<RandomChanceDelta>20</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOLY_COUNCIL</RequiredAnywhereBuildingClass>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 시작합니다.</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1">
+			<Text>{3_PlayerName}의 종교인들이 장로회의 비밀을 밝히기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
-			<ImprovementAnywhereRequired>IMPROVEMENT_HOLY_SITE</ImprovementAnywhereRequired>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_PRINTING_PRESS</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2">
+			<Text>{1_CivShortDescription}의 사람들이 장로회의 모임을 모방하여 훨씬 더 지혜로운 결정을 내릴 수 있게 되었습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
-			<RequiresIdeology>true</RequiresIdeology>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<RequiresWar>true</RequiresWar>
-			<EventBuildingClassGlobal>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_2</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3">
+			<Text>{3_PlayerName}가 장로회의 비밀 탐구를 그들의 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_3</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4">
+			<Text>{3_PlayerName}가 신성한 회의 건물 내에서 숨겨진 방을 발견했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5">
+			<Text>{3_PlayerName}의 요원들이 침입자에 대한 방어를 강화하고 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6_S">
+			<Text>{3_PlayerName}가 장로회의 탐구를 완료했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6">
+			<Text>{3_PlayerName}가 장로회의 비밀을 재발견했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_COUNCIL_OF_ELDERS</EventType>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION">
+			<Text>그래서 쓰여졌나니</Text>
 		</Row>
-	</Event_ParentEvents>
-	<EventChoice_EventLinks>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceType>
-			<EventChoiceLinker>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP">
+			<Text>우리의 신앙은 장로들에 의해 이끌어지며, 그들은 신의 존재를 느끼기 위해 함께 교감하여 중요한 결정을 내립니다. 하지만 그들은 불안한 비밀을 숨기고 있습니다: 수 세기 동안 어떤 모임도 신성한 영감을 경험한 적이 없습니다.[NEWLINE][NEWLINE]우리는 첫 번째 모임의 비밀을 재발견해야 합니다. 그래야 다시 지침을 찾을 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<EventChoiceLinker>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_1">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<EventChoiceLinker>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 사용하여 탐구의 성공 소문을 퍼뜨립니다. [ICON_CITIZEN] 시민이 태어날 때, 도시는 5 [ICON_RESEARCH] 과학의 증가를 받습니다 (시대에 따라 비례적 증가).</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_5</EventChoiceType>
-			<EventChoiceLinker>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_3">
+			<Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<EventChoiceLinker>EVENT_COUNCIL_OF_ELDERS_CHOICE_5</EventChoiceLinker>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_4">
+			<Text>{1_YieldCost}의 종교적 신비를 공개합니다. 신성한 회의의 [ICON_RESEARCH] 과학이 20% 증가합니다.</Text>
 		</Row>
-	</EventChoice_EventLinks>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY</Type>
-			<DefaultBuilding>BUILDING_COUNCIL_OF_ELDERS_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_5">
+			<Text>탐구의 마지막 단계를 보호하는 동안 모든 적 [ICON_SPY] 스파이의 효율성이 15% 감소합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_COUNCIL_OF_ELDERS_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시에서 모든 [ICON_FOOD] 식량의 +10%를 [ICON_RESEARCH] 과학으로 변환합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_3</Type>
-			<DefaultBuilding>BUILDING_COUNCIL_OF_ELDERS_DUMMY_3</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_1">
+			<Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 첫 번째 모임에 대해 아는 모든 것을 찾아야 합니다!</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_COUNCIL_OF_ELDERS_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IsDummy>true</IsDummy>
-			<GreatWorkCount>-1</GreatWorkCount>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_2">
+			<Text>*최근의 많은 순간의 큰 통찰이 있었지만, 진정한 영감은 여전히 우리를 피합니다!*[NEWLINE]우리는 교회에 들어서는 순간부터 준비된 사람들이 나중에 모임에 앉을 수 있도록 해야 합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_COUNCIL_OF_ELDERS_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IsDummy>true</IsDummy>
-			<GreatWorkCount>-1</GreatWorkCount>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<GlobalEspionageModifier>-15</GlobalEspionageModifier>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_3">
+			<Text>지금 놓칠 수 없습니다, 우리는 너무 가까이 왔습니다!</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_COUNCIL_OF_ELDERS_DUMMY_3</Type>
-			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_ELDERS_DUMMY_3</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_DUMMY</Description>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IsDummy>true</IsDummy>
-			<GreatWorkCount>-1</GreatWorkCount>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_4">
+			<Text>드디어 돌파구를 찾았습니다! 하수도를 보수하는 기술자들이 신성한 회의의 대강당을 연상시키는 스타일로 지어진 버려진 방을 발견했습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldFromYieldPercent>
-		<Row>
-			<BuildingType>BUILDING_COUNCIL_OF_ELDERS_DUMMY_3</BuildingType>
-			<YieldOut>YIELD_SCIENCE</YieldOut>
-			<YieldIn>YIELD_FOOD</YieldIn>
-			<Value>10</Value>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_5">
+			<Text>우리의 적들이 이제 우리의 탐구를 알고 있을 것입니다. 모임이 방해받거나 간섭받지 않도록 해야 합니다.</Text>
 		</Row>
-	</Building_YieldFromYieldPercent>
-	<Building_YieldFromBirth>
-		<Row>
-			<BuildingType>BUILDING_COUNCIL_OF_ELDERS_DUMMY</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+		<Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_6">
+			<Text>각성이 있었습니다. 느껴보셨나요? 모임의 구성원들이 예전보다 더 강력해졌으며, 미래가 더 밝아 보입니다.</Text>
 		</Row>
-	</Building_YieldFromBirth>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>750</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>300</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>400</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>500</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>750</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOLY_COUNCIL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOLY_COUNCIL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MOSQUE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_PAGODA</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_SYNAGOGUE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MANDIR</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_STUPA</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_ORDER</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_HOLY_COUNCIL</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>20</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_COUNCIL_OF_ELDERS_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 시작합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_1">
-      <Text>{3_PlayerName}의 종교인들이 장로회의 비밀을 밝히기 위해 고대 문헌을 조사하기 시작했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_2">
-      <Text>{1_CivShortDescription}의 사람들이 장로회의 모임을 모방하여 훨씬 더 지혜로운 결정을 내릴 수 있게 되었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_3">
-      <Text>{3_PlayerName}가 장로회의 비밀 탐구를 그들의 교회 문화에 더욱 깊이 배속시키고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_4">
-      <Text>{3_PlayerName}가 신성한 회의 건물 내에서 숨겨진 방을 발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 계속하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_5">
-      <Text>{3_PlayerName}의 요원들이 침입자에 대한 방어를 강화하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6_S">
-      <Text>{3_PlayerName}가 장로회의 탐구를 완료했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_COUNCIL_OF_ELDERS_CHOICE_6">
-      <Text>{3_PlayerName}가 장로회의 비밀을 재발견했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION">
-      <Text>그래서 쓰여졌나니</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP">
-      <Text>우리의 신앙은 장로들에 의해 이끌어지며, 그들은 신의 존재를 느끼기 위해 함께 교감하여 중요한 결정을 내립니다. 하지만 그들은 불안한 비밀을 숨기고 있습니다: 수 세기 동안 어떤 모임도 신성한 영감을 경험한 적이 없습니다.[NEWLINE][NEWLINE]우리는 첫 번째 모임의 비밀을 재발견해야 합니다. 그래야 다시 지침을 찾을 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_1">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 사원과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 사용하여 탐구의 성공 소문을 퍼뜨립니다. [ICON_CITIZEN] 시민이 태어날 때, 도시는 5 [ICON_RESEARCH] 과학의 증가를 받습니다 (시대에 따라 비례적 증가).</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_3">
-      <Text>{1_YieldCost}의 새로운 교리를 발동하여, 당신의 신앙으로 구매한 건물과 신성한 회의가 +1 [ICON_RESEARCH] 과학을 생성하게 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_4">
-      <Text>{1_YieldCost}의 종교적 신비를 공개합니다. 신성한 회의의 [ICON_RESEARCH] 과학이 20% 증가합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_5">
-      <Text>탐구의 마지막 단계를 보호하는 동안 모든 적 [ICON_SPY] 스파이의 효율성이 15% 감소합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 모아 탐구를 완료합니다. 도시에서 모든 [ICON_FOOD] 식량의 +10%를 [ICON_RESEARCH] 과학으로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_1">
-      <Text>어디서부터 시작해야 할까요? 우리는 고대 기록을 연구하고 첫 번째 모임에 대해 아는 모든 것을 찾아야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_2">
-      <Text>*최근의 많은 순간의 큰 통찰이 있었지만, 진정한 영감은 여전히 우리를 피합니다!*[NEWLINE]우리는 교회에 들어서는 순간부터 준비된 사람들이 나중에 모임에 앉을 수 있도록 해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_3">
-      <Text>지금 놓칠 수 없습니다, 우리는 너무 가까이 왔습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_4">
-      <Text>드디어 돌파구를 찾았습니다! 하수도를 보수하는 기술자들이 신성한 회의의 대강당을 연상시키는 스타일로 지어진 버려진 방을 발견했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_5">
-      <Text>우리의 적들이 이제 우리의 탐구를 알고 있을 것입니다. 모임이 방해받거나 간섭받지 않도록 해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_COUNCIL_OF_ELDERS_DESCRIPTION_CHOICE_6">
-      <Text>각성이 있었습니다. 느껴보셨나요? 모임의 구성원들이 예전보다 더 강력해졌으며, 미래가 더 밝아 보입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

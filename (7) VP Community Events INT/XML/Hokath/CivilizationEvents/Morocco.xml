@@ -1,379 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_MOROCCO_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_MOROCCO</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 신비한 여행자</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 개인적으로 신원을 알 수 없는 여행자를 재정적으로 지원하여 큰 성공을 거두었습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 베르베르 통합</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARTISTS_GUILD</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 고립된 베르베르 부족들을 제국에 통합하기 위해 협상합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventPromotion>PROMOTION_HOMELAND_GUARDIAN</EventPromotion>
-			<RequiresWar>true</RequiresWar>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<BasicNeedsMedianModifierGlobal>-10</BasicNeedsMedianModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 숭배의 발견</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
-			<RequiresWar>true</RequiresWar>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<RandomBarbarianSpawn>6</RandomBarbarianSpawn>
-			<FreeUnitsTechAppropriate>3</FreeUnitsTechAppropriate>
-			<GoldenAgeTurns>10</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 예배와 학습의 장소를 자일리히 타일로 장식합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_MOROCCO_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 블랙 가드</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 귀화된 노예들로부터 새로운 군사 기관을 설립합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 왕과 국민의 혁명!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5">
+			<Text>{3_PlayerName}는 전쟁 중에 반란과 맞서 싸워야 합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 관광 산업</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 관광 촉진을 위한 대규모 계획을 시행합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_MOROCCO_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION">
+			<Text>타마즈가의 사람들</Text>
 		</Row>
-	</Event_ParentEvents>
-	
-	<EventChoice_MinimumFeatureRequired>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<FeatureType>FEATURE_OASIS</FeatureType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP">
+			<Text>나의 왕이여, 한 사자가 제국의 먼 구석에서 모험을 하던 신뢰받는 친구 중 한 명에게서 긴 서신을 가지고 도착했습니다.[NEWLINE][NEWLINE]가장 인내심이 많은 왕이여, 이 소식을 듣고 싶어 하실 것이라 확신합니다.</Text>
 		</Row>
-	</EventChoice_MinimumFeatureRequired>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_1">
+			<Text>원하는 위대한 인물을 받습니다.</Text>
 		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_2">
+			<Text>원주율 민족들을 통합합니다. 사막 타일은 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산력을 제공합니다. 산지는 +3 [ICON_FOOD] 음식과 +2 [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
 		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_3">
+			<Text>{2_InstantYield}를 지불합니다. 신전, 아카데미 및 성지에서 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_4">
+			<Text>블랙 가드는 도시에서 [ICON_STRENGTH] 스트레스를 10% 감소시킵니다. 자격이 있는 유닛들은 홈랜드 가디언 프로모션을 받습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>3</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_5">
+			<Text>6 [ICON_WAR] 야만인과 3명의 충성스러운 민병대가 [ICON_CAPITAL] 수도 근처에서 교전합니다. 10턴 동안 [ICON_GOLDEN_AGE] 황금기로 진입합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_6">
+			<Text>당신의 카스바, 사막 및 산지 타일은 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_1">
+			<Text>*편지에는 보유자가 당신의 친구의 생명을 구한 방법이 설명되어 있습니다. 그는 당신의 법정에서 기회를 받을 자격이 있는 훌륭한 인물입니다.*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_2">
+			<Text>*메시지는 당신의 친구가 사막에서 모험하면서 현지 부족민들을 수도로 데려오도록 설득한 방법을 전합니다. 그들은 사자보다 멀지 않을 것입니다.*</Text>
 		</Row>
-	</EventChoice_TerrainYieldChange>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_3">
+			<Text>*봉투 안에는 비쌀지라도 아름다운 타일 가마에 대한 도면이 들어 있습니다. 이들은 고대에 잃어버린 것으로 생각되었죠!*</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_4">
+			<Text>*당신의 친구는 이전에 정복한 땅의 부족들과 함께 수도로 향하고 있으며, 이제 왕국을 보호하겠다고 서약했습니다!*</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_5">
+			<Text>*편지에는 경고가 담겨 있습니다. 사아디 가문의 하급 지부가 쿠데타를 준비하고 있으며, 당신이 그들의 본거지를 방문할 때 억제할 계획을 세우고 있습니다!*[NEWLINE]그 배신자들! 우리가 완전히 파괴될 위기에 처한 가운데서도 말이죠! 그들의 반역적인 계획이 드러나면, 사람들은 확실히 저를 지지할 것입니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_KASBAH</ImprovementType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_6">
+			<Text>*전신은 당신의 친구가 해외에서 유명 인사가 되었고, 많은 사람들이 모로코를 방문하는 데 관심을 가지게 되었다고 전합니다.*[NEWLINE]현재의 환율도 무관하지 않을 것입니다...</Text>
 		</Row>
-	</EventChoice_ImprovementYieldChange>
-	
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>-3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 신비한 여행자</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 개인적으로 신원을 알 수 없는 여행자를 재정적으로 지원하여 큰 성공을 거두었습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 베르베르 통합</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 고립된 베르베르 부족들을 제국에 통합하기 위해 협상합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 숭배의 발견</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 예배와 학습의 장소를 자일리히 타일로 장식합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 블랙 가드</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 귀화된 노예들로부터 새로운 군사 기관을 설립합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 왕과 국민의 혁명!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5">
-      <Text>{3_PlayerName}는 전쟁 중에 반란과 맞서 싸워야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 관광 산업</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 관광 촉진을 위한 대규모 계획을 시행합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION">
-      <Text>타마즈가의 사람들</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP">
-      <Text>나의 왕이여, 한 사자가 제국의 먼 구석에서 모험을 하던 신뢰받는 친구 중 한 명에게서 긴 서신을 가지고 도착했습니다.[NEWLINE][NEWLINE]가장 인내심이 많은 왕이여, 이 소식을 듣고 싶어 하실 것이라 확신합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_1">
-      <Text>원하는 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_2">
-      <Text>원주율 민족들을 통합합니다. 사막 타일은 +1 [ICON_FOOD] 음식과 +1 [ICON_PRODUCTION] 생산력을 제공합니다. 산지는 +3 [ICON_FOOD] 음식과 +2 [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_3">
-      <Text>{2_InstantYield}를 지불합니다. 신전, 아카데미 및 성지에서 +2 [ICON_CULTURE] 문화를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_4">
-      <Text>블랙 가드는 도시에서 [ICON_STRENGTH] 스트레스를 10% 감소시킵니다. 자격이 있는 유닛들은 홈랜드 가디언 프로모션을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_5">
-      <Text>6 [ICON_WAR] 야만인과 3명의 충성스러운 민병대가 [ICON_CAPITAL] 수도 근처에서 교전합니다. 10턴 동안 [ICON_GOLDEN_AGE] 황금기로 진입합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_6">
-      <Text>당신의 카스바, 사막 및 산지 타일은 +2 [ICON_TOURISM] 관광을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_1">
-      <Text>*편지에는 보유자가 당신의 친구의 생명을 구한 방법이 설명되어 있습니다. 그는 당신의 법정에서 기회를 받을 자격이 있는 훌륭한 인물입니다.*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_2">
-      <Text>*메시지는 당신의 친구가 사막에서 모험하면서 현지 부족민들을 수도로 데려오도록 설득한 방법을 전합니다. 그들은 사자보다 멀지 않을 것입니다.*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_3">
-      <Text>*봉투 안에는 비쌀지라도 아름다운 타일 가마에 대한 도면이 들어 있습니다. 이들은 고대에 잃어버린 것으로 생각되었죠!*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_4">
-      <Text>*당신의 친구는 이전에 정복한 땅의 부족들과 함께 수도로 향하고 있으며, 이제 왕국을 보호하겠다고 서약했습니다!*</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_5">
-      <Text>*편지에는 경고가 담겨 있습니다. 사아디 가문의 하급 지부가 쿠데타를 준비하고 있으며, 당신이 그들의 본거지를 방문할 때 억제할 계획을 세우고 있습니다!*[NEWLINE]그 배신자들! 우리가 완전히 파괴될 위기에 처한 가운데서도 말이죠! 그들의 반역적인 계획이 드러나면, 사람들은 확실히 저를 지지할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_6">
-      <Text>*전신은 당신의 친구가 해외에서 유명 인사가 되었고, 많은 사람들이 모로코를 방문하는 데 관심을 가지게 되었다고 전합니다.*[NEWLINE]현재의 환율도 무관하지 않을 것입니다...</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

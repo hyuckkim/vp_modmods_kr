@@ -1,230 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_NW_REEF</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP</Help>
-			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
-			<EventCooldown>30</EventCooldown>
-			<NearbyFeature>FEATURE_REEF</NearbyFeature>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION">
+			<Text>경이로운 다양성</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_NW_REEF_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1</Help>
-			<IsOneShot>false</IsOneShot>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP">
+			<Text>항해사 길드는 대보초의 상태에 대해 우려하고 있습니다, 주군이시여. 그들의 대표단이 다음 방에서 기다리고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_REEF_CHOICE_2</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventBuildingClass>BUILDINGCLASS_NW_REEF_DUMMY</EventBuildingClass>
-			<RequiredBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredBuildingClass>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1">
+			<Text>이 자연경관은 영구적으로 +1 [ICON_FOOD] 식량과 [ICON_TOURISM] 관광을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_REEF_CHOICE_3</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<Expires>true</Expires>
-			<EventDuration>75</EventDuration>
-			<RequiredBuildingClass>BUILDINGCLASS_HARBOR</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2">
+			<Text>이 도시에서 건설된 해군 유닛은 +1 [ICON_MOVES] 이동력과 아군 영토 외부에서 치료할 수 있는 능력을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_NW_REEF_CHOICE_4</Type>
-			<Help>TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<RequiredBuildingClass>BUILDINGCLASS_SEAPORT</RequiredBuildingClass>
-			<EventBuildingClass>BUILDINGCLASS_RECYCLING_CENTER</EventBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3">
+			<Text>{5_Turns} 동안 두 개의 [ICON_RES_CRAB] 게 자원을 획득합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4">
+			<Text>산업에 {2_InstantYield}을 지원하여 도시에서 -7 [ICON_PRODUCTION] 생산력을 잃습니다. 대신 {4_GPChange}와 무료 재활용 센터를 받습니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1">
+			<Text>*많은 배가 위험한 해역에서 잃어버렸고, 이로 인해 어부들이 어업에서 이익을 얻기 어려워졌습니다*[NEWLINE]이 항해사들이 수행하는 일을 높이 평가하며, 그들이 새 배로 지원받도록 하십시오.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2">
+			<Text>*항해사들은 대산호초가 제시하는 독특한 도전에 대응하기 위해 현지 도시에 해군 학교를 설립하기를 원합니다*[NEWLINE]훌륭한 제안입니다. 궁전은 모든 항해사의 질적 향상을 기대하며 이 사업에 기꺼이 자금을 지원할 것입니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_NW_REEF</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3">
+			<Text>*특정 해양 생물의 개체 수가 급증하여 어부들이 이를 포획하기 위한 원정을 원합니다.*[NEWLINE]맛있을 것 같군요. 일부가 궁전 주방으로 가도록 하십시오. 원정 비용은 판매 수익으로 충당될 것입니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_NW_REEF_DUMMY</Type>
-			<DefaultBuilding>BUILDING_NW_REEF_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4">
+			<Text>*변화하는 기후가 섬세한 산호초 생태계를 위협하고 있으며, 어부들은 문제를 일으킨 기업에 대한 제재를 간청하고 있습니다*[NEWLINE]비용이 많이 들겠지만, 우리는 이러한 경이로운 자연을 보호해야 합니다!</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_NW_REEF_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_NW_REEF_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_NW_REEF_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<TrainedFreePromotion>PROMOTION_SUPPLY</TrainedFreePromotion>
+		<Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY">
+			<Text>해군 학교</Text>
 		</Row>
-	</Buildings>
-	
-	
-	<CityEventChoice_FeatureYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_REEF</FeatureType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP">
+			<Text>해당 유닛은 [COLOR_POSITIVE_TEXT]보급[ENDCOLOR] 승급을 받습니다.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
-			<FeatureType>FEATURE_REEF</FeatureType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-	</CityEventChoice_FeatureYieldChange>
-	<CityEventChoice_MinimumStartYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>750</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>150</Yield>
-		</Row>
-	</CityEventChoice_MinimumStartYield>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-750</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-150</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_ResourceQuantity>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
-			<ResourceType>RESOURCE_CRAB</ResourceType>
-			<Quantity>2</Quantity>
-		</Row>
-	</CityEventChoice_ResourceQuantity>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<Points>1000</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_4</CityEventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-7</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-	
-	
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_NW_REEF_CHOICE_4</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION">
-      <Text>경이로운 다양성</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP">
-      <Text>항해사 길드는 대보초의 상태에 대해 우려하고 있습니다, 주군이시여. 그들의 대표단이 다음 방에서 기다리고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_1">
-      <Text>이 자연경관은 영구적으로 +1 [ICON_FOOD] 식량과 [ICON_TOURISM] 관광을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_2">
-      <Text>이 도시에서 건설된 해군 유닛은 +1 [ICON_MOVES] 이동력과 아군 영토 외부에서 치료할 수 있는 능력을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_3">
-      <Text>{5_Turns} 동안 두 개의 [ICON_RES_CRAB] 게 자원을 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_HELP_CHOICE_4">
-      <Text>산업에 {2_InstantYield}을 지원하여 도시에서 -7 [ICON_PRODUCTION] 생산력을 잃습니다. 대신 {4_GPChange}와 무료 재활용 센터를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_1">
-      <Text>*많은 배가 위험한 해역에서 잃어버렸고, 이로 인해 어부들이 어업에서 이익을 얻기 어려워졌습니다*[NEWLINE]이 항해사들이 수행하는 일을 높이 평가하며, 그들이 새 배로 지원받도록 하십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_2">
-      <Text>*항해사들은 대산호초가 제시하는 독특한 도전에 대응하기 위해 현지 도시에 해군 학교를 설립하기를 원합니다*[NEWLINE]훌륭한 제안입니다. 궁전은 모든 항해사의 질적 향상을 기대하며 이 사업에 기꺼이 자금을 지원할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_3">
-      <Text>*특정 해양 생물의 개체 수가 급증하여 어부들이 이를 포획하기 위한 원정을 원합니다.*[NEWLINE]맛있을 것 같군요. 일부가 궁전 주방으로 가도록 하십시오. 원정 비용은 판매 수익으로 충당될 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_NW_REEF_DESCRIPTION_CHOICE_4">
-      <Text>*변화하는 기후가 섬세한 산호초 생태계를 위협하고 있으며, 어부들은 문제를 일으킨 기업에 대한 제재를 간청하고 있습니다*[NEWLINE]비용이 많이 들겠지만, 우리는 이러한 경이로운 자연을 보호해야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY">
-      <Text>해군 학교</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_NW_REEF_DUMMY_HELP">
-      <Text>해당 유닛은 [COLOR_POSITIVE_TEXT]보급[ENDCOLOR] 승급을 받습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

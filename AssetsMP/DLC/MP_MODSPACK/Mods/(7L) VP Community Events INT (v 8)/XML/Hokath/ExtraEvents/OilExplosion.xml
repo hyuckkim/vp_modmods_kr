@@ -1,73 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_OIL_EXPLOSION</Type>
-			<Description>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP</Help>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<NumChoices>1</NumChoices>
-			<RandomChance>60</RandomChance>
-			<ImprovementRequired>IMPROVEMENT_WELL</ImprovementRequired>
-			<RandomChanceDelta>5</RandomChanceDelta>
-			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1_S">
+			<Text>{2_CityName}의 유정이 오작동했습니다.</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_OIL_EXPLOSION</CityEventType>
-			<EventChoice>EVENT_PIPELINE_CHOICE_2</EventChoice>
-			<CheckKnownPlayers>true</CheckKnownPlayers>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1">
+			<Text>유정이 폭발했습니다!</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP_CHOICE_1</Help>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION">
+			<Text>불길 속으로</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEventChoice_ImprovementDestructionRandom>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<Number>1</Number>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP">
+			<Text>[ICON_RES_OIL] 유정이 파괴되었습니다.</Text>
 		</Row>
-	</CityEventChoice_ImprovementDestructionRandom>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_OIL_EXPLOSION</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP_CHOICE_1">
+			<Text>[ICON_RES_OIL] 유정이 파괴되었습니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-	<CityEventChoice_Notification>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
-			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION_CHOICE_1">
+			<Text>불길 속으로</Text>
 		</Row>
-	</CityEventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1_S">
-      <Text>{2_CityName}의 유정이 오작동했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1">
-      <Text>유정이 폭발했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION">
-      <Text>불길 속으로</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP">
-      <Text>[ICON_RES_OIL] 유정이 파괴되었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP_CHOICE_1">
-      <Text>[ICON_RES_OIL] 유정이 파괴되었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION_CHOICE_1">
-      <Text>불길 속으로</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

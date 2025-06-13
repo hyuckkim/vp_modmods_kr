@@ -1,5 +1,7 @@
 # vp_modmods_kr
 
+### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/Vox%20Populi%20INT%2B.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20INT%20Modpack%2B.zip)
+
 ### (아마도) 더 이상 업데이트가 없는 VP용 모드입니다. 최신 VP에서 정상 작동을 보증하지 않습니다.
 
 1. VP의 한국어 번역 모드:

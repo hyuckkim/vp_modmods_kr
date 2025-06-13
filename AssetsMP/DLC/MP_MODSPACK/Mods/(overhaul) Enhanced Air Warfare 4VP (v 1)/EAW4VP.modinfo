@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="871da714-b2c6-49e9-8882-57489f501dba" version="1">
+
+  <Properties>
+    <Name>(overhaul) Enhanced Air Warfare 4VP</Name>
+    <Teaser>[COLOR_YELLOW]More airplanes in the sunny skies of Vox Populi[ENDCOLOR]</Teaser>
+    <Description>Version 1.9[NEWLINE]EAW4VP provides 5 new Fighters and 4 new Bombers through a simple concept that promises to improve gameplay while remaining manageable by the AI.[NEWLINE]New Air Units are part of an entirely new line interlaced in the technology tree with the ones that already exist. A greater variety of Fighters and Bombers will be involved in the game with the same upgrade rate than before.[NEWLINE]
+[NEWLINE][COLOR_NEGATIVE_TEXT]To easily adjust the speed of the aircrafts animation (x1 by default), open[ENDCOLOR] Faster Aircraft Animations.sql [COLOR_NEGATIVE_TEXT]and follow the instructions.[ENDCOLOR][NEWLINE]
+[NEWLINE]
+[COLOR_CYAN]Author of the unit models:[ENDCOLOR][NEWLINE]
+[ICON_BULLET] PZL P.11 (Monoplane)                                             danrell[NEWLINE]
+[ICON_BULLET] Vickers Wellington (Medium Bomber)                    danrell[NEWLINE]
+[ICON_BULLET] P-80 Shooting Star                                                  danrell[NEWLINE]
+[ICON_BULLET] Mirage 2000 (Jet Fighter)                                      (unknown)[NEWLINE]
+[ICON_BULLET] MiG-29                                                                   snafusmith[NEWLINE]
+[ICON_BULLET] B-52                                                                         Ekme[NEWLINE]
+[ICON_BULLET] B-1 Lancer (Jet Bomber)                                         Wolfdog and The Conquests[NEWLINE]
+[ICON_BULLET] Tu-95 (Strategic Bomber)                                        Wolfdog and ArdRaeiss[NEWLINE]
+[ICON_BULLET] Su-57 (Advanced Fighter)                                        Wolfdog and TheCoyote[NEWLINE][NEWLINE]
+[COLOR_CYAN]More info:[ENDCOLOR] EAW Info.txt[NEWLINE]
+[COLOR_CYAN]Homepage:[ENDCOLOR] https://forums.civfanatics.com/threads/enhanced-air-warfare-4vp.656114/
+
+    </Description>
+    <Authors>Asterix Rage on civfanatics.com</Authors>
+    <SpecialThanks>civplayer33, jarcast2, Nutty, pineappledan</SpecialThanks>
+    
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="13" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  
+  <References />
+  
+  <Blocks />
+  
+  <Files>
+
+    <File md5="00000000000000000000000000000000" import="1">icons/EAW_i_045.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">icons/EAW_i_064.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">icons/EAW_i_080.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">icons/EAW_i_128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">icons/EAW_i_256.dds</File>
+    <File md5="eda584bb13c3bc1cdfe21415695d29b1" import="1">icons/eaw_PI_016.dds</File>
+    <File md5="924bdf10d789f9a4f9d3a8df93cdaf7c" import="1">icons/eaw_PI_032.dds</File>
+    <File md5="142609f6b66b2e6b7ed13140b26b4635" import="1">icons/eaw_PI_045.dds</File>
+    <File md5="6184c376a1c6df8f7ab66c5911ee4347" import="1">icons/eaw_PI_064.dds</File>
+    <File md5="ab4a6e1702af1b05a969a738760359f7" import="1">icons/eaw_PI_256.dds</File>   
+    <File md5="e6084e8bc90e5fdcb01c4e0b05c81855" import="1">icons/EAW_flag_32.dds</File>
+    <File md5="604d820f99500bb7a41eb5fec1572eca" import="1">icons/sv_B1flag_128.dds</File>
+    <File md5="e1e6ae2757ce3e9300789a05890a0047" import="1">icons/sv_B52flag_128.dds</File>
+    <File md5="b6b49527ab2ec8a64dada8e82db1e666" import="1">icons/sv_M2kflag_128.dds</File>
+    <File md5="9057f6f5310177768f17811b45864161" import="1">icons/sv_Mig29flag_128.dds</File>
+    <File md5="aa97a66d25e776f793c8d3a518f6a6c0" import="1">icons/sv_P11flag_128.dds</File>
+    <File md5="e0ce22fcf08c3e512015417148741c8f" import="1">icons/sv_P80flag_128.dds</File>
+    <File md5="8d7d9dc88b55741b8a56a5da8f8fde5b" import="1">icons/sv_SU57flag_128.dds</File>
+    <File md5="c445f6e7501b78e7d5b620b7d7233120" import="1">icons/sv_tu95flag_128.dds</File>
+    <File md5="d9440ee8f5dd8d3ae23ba5c8566da03d" import="1">icons/sv_VickWflag_128.dds</File>
+
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_PZL11.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_P80.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_Mk2.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_M29.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_Su57.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_VickW.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_Tu95.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_B52.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_EAW_B-1.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_ww1_fighter.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_fighter.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_u_japanese_zero.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_ww1_bomber.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_bomber.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_u_american_b17.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ftsxml/fx_triggers_stealthbomber.ftsxml</File>
+    
+    <File md5="00000000000000000000000000000000" import="1">models/advJet/EAW_SuT-50cammo.fxsxml</File>
+    <File md5="323c79a7b1f08bef3c089474a5a555bb" import="1">models/advJet/cammo.dds</File>
+    <File md5="a0713cf5fb3c973aa44f581be64d2c75" import="1">models/advJet/SuT-50cammo.gr2</File>
+    <File md5="ed962f070c71fe7e8f20a5fdf4dc1b4f" import="1">models/advJet/SuT-50_sref.dds</File> 
+
+    <File md5="00000000000000000000000000000000" import="1">models/jetfight/EAW_Mirage2000.fxsxml</File>
+    <File md5="c062dbfa70549d84b3e36341b713dbad" import="1">models/jetfight/Mirage2000.gr2</File>
+    <File md5="eb1a5e34d768e3594d240b5bb2ab8d17" import="1">models/jetfight/Mirage2000_diff.dds</File>
+    <File md5="e589c62e3398dbc2c49277fe80dab513" import="1">models/jetfight/Mirage2000_sref.dds</File>
+    
+    <File md5="00000000000000000000000000000000" import="1">models/MiG29/EAW_MiG29Russia.fxsxml</File>
+    <File md5="86665e40b6f034c18312d18bb5ae8293" import="1">models/MiG29/MiG29Russia.gr2</File>
+    <File md5="25fa2354b74068bf199eaaf73ad78149" import="1">models/MiG29/MiG29Russia.dds</File>
+    <File md5="1296471c049eba2ee57d7a04cf640779" import="1">models/MiG29/MiG29SREF.dds</File>
+    
+    <File md5="00000000000000000000000000000000" import="1">models/earlyMono/EAW_PZL_P.11.fxsxml</File>
+    <File md5="0441556cd84200f327094d9b49bbcab3" import="1">models/earlyMono/PZL_P.11.gr2</File>
+    <File md5="d49a31e254e127ef7ef61d47fc6fe0f5" import="1">models/earlyMono/PZL_P.11.dds</File>
+    <File md5="3ccc9a0363a3d0840f3d72fa803034a4" import="1">models/earlyMono/PZL_P.11.blend</File>
+    <File md5="d6ccf0fa563c4855e5c824ff0c0dc38b" import="1">models/earlyMono/PZL_P.11_gloss.dds</File>
+    
+    <File md5="00000000000000000000000000000000" import="1">models/earlyJet/EAW_P-80_Shooting_Star.fxsxml</File>
+    <File md5="3424c68c41878d711b1f1e411e2f072d" import="1">models/earlyJet/P-80_Shooting_Star.gr2</File>
+    <File md5="adfb6a6ed8983e11c6afd98cb75a2cff" import="1">models/earlyJet/P-80_Shooting_Star.dds</File>
+    <File md5="5384a96fb014ad0625d1bf655c749056" import="1">models/earlyJet/P-80_Shooting_Star.blend</File>
+    <File md5="ac41c06ba721315512f26433220fedf7" import="1">models/earlyJet/no_gloss.dds</File>
+   
+    <File md5="00000000000000000000000000000000" import="1">models/B52/EAW_B52.fxsxml</File>
+    <File md5="cef5304a4b810775b212cd1c2e4b9ad8" import="1">models/B52/B52.gr2</File>
+    <File md5="825c1f3ffdc2f1aef3a6ed8d5a0d830a" import="1">models/B52/B52.dds</File>
+    <File md5="fcfa69a4d8e0a3557bcdb0a4a20ba815" import="1">models/B52/stealthbomber_gloss.dds</File>
+   
+    <File md5="00000000000000000000000000000000" import="1">models/strBomb/EAW_Tu-95.fxsxml</File>
+    <File md5="bc73597bbe73d122520939f0cdac1d6c" import="1">models/strBomb/Tu-95.gr2</File>
+    <File md5="230356034cff1b81b38f46fb0c80eac4" import="1">models/strBomb/Tu-95_diff.dds</File>
+    <File md5="e938e2e61bdcfc60f1c8e890db620d70" import="1">models/strBomb/Tu-95_sref.dds</File>
+    
+    <File md5="00000000000000000000000000000000" import="1">models/mediumBomb/EAW_Vickers_Wellington.fxsxml</File>
+    <File md5="d210e0be7209beac0602cc64cc0e22a7" import="1">models/mediumBomb/Vickers_Wellington.gr2</File>
+    <File md5="75b2e0201c0683aac4a315e5076b9f17" import="1">models/mediumBomb/Vickers_Wellington.dds</File>
+    <File md5="5ac0eeaa4b969199afba6bc7a1cace3b" import="1">models/mediumBomb/Vickers_Wellington.blend</File>
+
+    <File md5="00000000000000000000000000000000" import="1">models/ultJetBomb/EAW_B-1_Lancer.fxsxml</File>
+    <File md5="577226fd37210747e64a1068abc1f74c" import="1">models/ultJetBomb/B-1_Lancer.gr2</File>
+    <File md5="8fbf360e1f299b1ec93b7bc51d05da5a" import="1">models/ultJetBomb/B-1_Lancer_diff.dds</File>
+    <File md5="0c759f1ced95795ccfbe40c6bd9a963c" import="1">models/ultJetBomb/no_gloss.dds</File>
+
+    <File md5="00000000000000000000000000000000" import="0">core/eaw_INTRO.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/advJet.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/jetfight.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/MiG29.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/earlyMono.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/earlyJet.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/strBomb.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/B52.sql</File> 
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/mediumBomb.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/_Units/ultJetBomb.sql</File>
+    <File md5="00000000000000000000000000000000" import="0">core/eaw_OUTRO.sql</File>
+    <File md5="638119974dd374baae3ec2d83c6f0ddc" import="0">core/eaw_TEXT.xml</File>
+    <File md5="00000000000000000000000000000000" import="0">core/EAW_Fine_Setting.sql</File>
+    <File md5="24d99df766f2f50cfa7731179a43b1de" import="0">Faster Aircraft Animations.sql</File>
+
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/gotharun-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/gotharun-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/gothaturn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/gothaselect.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/vwrun-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/vwrun-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/vwturn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/vwselect.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/avroLrun-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/avroLrun-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/avroLturn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/avroLselect.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b17run-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b17run-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b17turn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b17select.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/tu95run-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/tu95run-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/tu95turn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/tu95select.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b52run-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b52run-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b52turn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b52select.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b1run-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b1run-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b1turn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b1select.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/b2select.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/fokrun-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/fokrun-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/fokturn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/fokselect.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/p11run-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/p11run-001.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/p11turn-000.mp3</File>
+    <File md5="00000000000000000000000000000000" import="1">core/_EAW_ASD/p11select.mp3</File>
+
+  </Files>
+
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>core/eaw_INTRO.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/advJet.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/jetfight.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/MiG29.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/earlyMono.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/earlyJet.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/strBomb.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/B52.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/mediumBomb.sql</UpdateDatabase>
+      <UpdateDatabase>core/_Units/ultJetBomb.sql</UpdateDatabase>
+      <UpdateDatabase>core/eaw_OUTRO.sql</UpdateDatabase>
+      <UpdateDatabase>core/eaw_TEXT.xml</UpdateDatabase>
+      <UpdateDatabase>core/EAW_Fine_Setting.sql</UpdateDatabase> 
+      <UpdateDatabase>Faster Aircraft Animations.sql</UpdateDatabase> 
+    </OnModActivated>
+  </Actions>
+  
+
+  
+</Mod>

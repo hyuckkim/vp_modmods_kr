@@ -1,0 +1,377 @@
+--------------------------------------------------------------
+v2 (changes from v1.2.4)
+--------------------------------------------------------------
+Units
+- Ship of the Line combat strength reduced to 45 from 50.
+- Samurai now correctly upgrades to Two-Handed Swordsman.
+- Uhlan combat strength increased to 45 from 40.
+- Cossack combat strength increased to 50 from 45.
+- Galleon range increased to 2 from 1, now no longer able to move after attacking (similar to Frigate).
+- First Rate now obsoletes at Nuclear Fission instead of Dynamite.
+- Changed the Corvette's model as it was the same as the Carrack (thanks Asterix Rage).
+
+Promotions
+- Flagship promotion now updates every time you move a unit, instead of once per turn (different underlying method).
+
+Buildings
+- Gunsmith supply reduced to 1 from 2.
+- Manor now has a new icon.
+- Menagerie now has a new icon.
+
+Wonders
+- Smithsonian theming bonus increased from 3 culture/tourism/science/gold to 6 culture/tourism/science/gold.
+- Versailles bonus to We Love The King Day duration now properly shows in the UI (different underlying method).
+- Fasil Ghebbi combat bonus now checked whenever a unit moves rather than once every turn.
+
+Technologies
+- Adjusted technology costs to be closer to recent Vox Populi changes.
+
+Policies
+- Fixed Galleries gaining +2 Golden Age Points rather than +3 with Freedom's Creative Expressions.
+- Policy values should now change automatically when VP changes (changing types of bonuses still require manual updating).
+- Tooltips should now pick up simple changes from VP (big changes still require manual updating).
+
+--------------------------------------------------------------
+v3
+--------------------------------------------------------------
+Units
+- Field Cannon no longer has the Naval Misfire promotion. The Field Cannon will now follow the given promotions for the Howitzer if a future VP version changes it.
+- Cost and Faith cost reduced for the following:
+- Carrack 250/370 (was 350/450).
+- Nau 250/370 (was 350/450).
+- Sea Beggar 250/370 (was 450/450).
+- Galleon 310/410 (was 375/450).
+
+Misc
+- Fixed missing string error (due to VP update to espionage causing conflict).
+
+--------------------------------------------------------------
+v4
+--------------------------------------------------------------
+Units
+- Adventurers now upgrade to Commandos (VP 7-1).
+- Removed Adventurer and Scouting I promotions from Adventurer (to be more consistent with the rest of the line).
+- Minuteman combat strength increased to 32 from 30.
+- Minuteman now starts with Formation, like the Line Infantry.
+- Removed Accuracy I from Minuteman.
+- Sea Beggar now obsoletes at Rocketry correctly.
+- Fixed Sea Beggar costs being changed by this mod.
+
+Buildings
+- Taverns now have +2 Food and -1 unhappiness from Boredom.
+
+Misc
+- Background SQL changes, so the mod will more likely reflect changes in VP.
+
+--------------------------------------------------------------
+v5
+--------------------------------------------------------------
+Buildings
+- Removed Bastion, now became base VP building.
+- Moved Bastion Fort (BUILDING_FORTRESS) PrereqTech to TECH_EE_FORTIFICATION (same as Bastion before).
+- Removed all defense buildings related changes.
+- Added Tavern support for new farm resources (taken from Even More Resources mod)
+
+Technologies
+- Fixed some overlapping technologies PrereqTech.
+
+Misc
+- VP 3.0 changed a lot of things around happiness and Building-related tables, so many changes have done to reflect that change
+---------------------
+v8
+-------------
+ N.core edited
+
+------------------
+CAYM EDITED  (vp3.8)
+--------------------
+
+WONDER
+- 3 wonder plus, 1 deleted (Belem tower, Crystal palace, Kaiser-Wilhelm-Gesellschaft), (smithonian deleted)
+- switching (chichen iza <-> Machu pichu)
+Buildings
+- Removed Gallery, now became base VP building
+- Manor changed
+- Taverns changed
+Technologies
+- Fixed some overlapping technologies PrereqTech.
+
+Units
+- new unit (Dragoon, Steamfrigate)
+- Art info changed (Portrait, unitmodel)
+- early version Carrier (SHIP OT THE LINE->STEAMFRIGATE->CARRIER)
+- sea begars, corsair, armada (4uc ua - v87 is not balanced, so it needs caym patch version)
+
+Misc
+- VP 3.8 changed a lot of things around happiness and Building-related tables, so many changes have done to reflect that change
+
+------------------
+CAYM EDITED  (vp3.9)
+--------------------
+
+Error fixed (Kaisserich image error fixed)
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.01)
+--------------------
+
+Error fixed (Kaisserich image error fixed)
+- 1 Removed wonder (i do mistake, VP - Crystal palace)
+=> changed Lowell Mills 
+- France Salon 4ucua image same "EE building: EE_SALON"
+=> changed Image EE_SALON
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.03)
+--------------------
+
+Image fiexed (Kaisserich)
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.06)
+--------------------
+
+-- Manor Removed distress flat
+-- MENAGERIE -> PARK CHANGED
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.10)
+--------------------
+
+-- Dragoon Art code mistake fixed
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.12)
+--------------------
+
+-- Text fixed
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.15)
+--------------------
+
+-- Text "english" fixed
+
+------------------
+CAYM EDITED  (vp3.9-2023.09.23)
+--------------------
+
+-- Text "english" fixed
+-- Policies (Tradtion Manor, Park +2 culture)
+
+------------------
+CAYM EDITED  (vp 4.2-2023.10.22)
+--------------------
+
+-- Text "english" fixed
+-- Carrack move->4
+
+------------------
+CAYM EDITED  (vp 4.2-2023.11.1)
+--------------------
+
+-- Deleted Indirect fire ee field gun.
+
+------------------
+CAYM EDITED  (vp 4.2-2023.11.8)
+--------------------
+
+-- Galleon image comeback
+
+------------------
+CAYM EDITED  (vp 4.2-2023.11.27)
+--------------------
+
+-- Maori-> tercio upgrade changed
+
+-----------------
+v13 (Hokath)
+-----------------
+Pre 5.0 update
+Techs
+- Reordered the tree to respect dates and optimize links
+- Removed all badly-displayed "2-row prereqs" (un-VP-like)
+
+Printing Press-------Humanism------Sovereignty-----
+		X		X		   |----Acoustics-----------Romanticism--
+Banking----------- Architecture------Economics-----		        X
+		X		X		   |----Scientific Th'y-----Railroad-----
+Astronomy-------------Optics---------Strongholds---		        X
+		X		X		   |----Manufacturing-------Steam Power--
+Gunpowder----------Exploration-------Navigation----			X
+		X		X		   |----Warships------------Rifling------
+Chemistry-----------Metallurgy-------Flintlock-----
+
+- Introduced the Optics Tech (TECH_EE_REFRACTION) with Astronomy Icon and Quote. 
+- Added new Icon and Quote to Astronomy referencing Islamic Golden Age, pre-telescopes
+- Renamed Fortification to Strongholds to avoid overlap of game terms
+- Moved some Yield increases and added new ones for Citizen Specialists (total +1 Food/Science/Culture/Faith)
+- Moved Railroad Town bonus to Acoustics and Village bonus to Romanticism to unstack the Tech
+- Moved a Quarry bonus from Industrial to Optics (represents lens manufacturing)
+- Moved Map Trading to Navigation (from Military Science)
+- Extra trade routes are at Exploration and Warships
+
+Buildings
+-- 1 yield per 6 Citizens on
+ -Menagerie: Tourism
+ -Cafe: Food
+ -Seminary: Faith
+ -Polytechnic: Science
+ -Weigh House: Gold
+ -Cloth Mill: Production
+ -Opera House: Culture (no 5% anymore)
+-- Menagerie (re)added with updated icon. Line goes Circus->Menagerie->Zoo
+  -250 Tourism on complete
+  -1 less Boredom
+-- Academy renamed Polytechnic to avoid overlap with the Improvement
+  -10% reduction to Gold purchase cost in City
+  -Gain 10 GG Points and 20 Science when you discover a Technology, scaling with Era
+  -20% GE, GS, GM, GD rate in City
+-- Newly introduced Seminary, exclusive with the Polytechnic (Humanism)
+  -+5% Missionary Strength on Empire
+  -Receive 10% Faith purchase refund in this City
+  -Gain 10 Faith and 20 Tourism when you discover a Technology, scaling with Era
+-- BUILDING_EE_SALON changed to the Cafe (Navigation)
+  -20% GWAM rate in City
+  -1 less Urbanization
+-- Tavern moved to Exploration, changed as
+ -Gain 15 Gold and Tourism from Pillage, scaling with Era
+ -Recon Units +30 XP
+ -+15% Production to Recon Units
+ -Requires the Harbor (Coastal)
+-- Manor rebalance
+ -+1 Happiness
+ -+20 GAP on Border Expand, scaling with Era
+ -10% of all Gold purchases converted to GAP
+-- Public School rebalanced
+ -Reduced to 1 Science per 4 Citizens (was 2)
+ -Gain 25% Science output when a Citizen is born as a boost
+-- Broadcast Tower to 1 Culture/Tourism per 4 Citizens (was 2)
+-- Weigh House (Economics; Bank->Weigh House->Stock Exchange)
+ -+2 City/+1 Owner from International Trade
+-- Cloth Mill +1 Gold from River tiles
+-- Stock Exchange to 1 Gold per 4 Citizens (was 2)
+-- Expanded the Cloth Mill Luxury boosts
+ -All Resources receive +2/3 yields (depending on the yield)
+ -Tavern: Cow/Fish/Cereal
+ -Menagerie: Horse/Banana/Ivory/Whales/Coral
+ -Cafe: Cinnamon/Citrus/Cocoa/Coffee/Tea/Sugar
+ -Manor: Deer/Jade/Amber/Pearls/Lapis/Incense
+ -Opera House: Crab/Wine/Truffles/Olives/Marble
+ -Weigh House: Gold/Silver/Copper/Gems/Salt
+ -Cloth Mill: Sheep/Dye/Cotton/Silk/Furs
+ -Gunsmith: Coal/Iron
+--Gunsmith
+ -No bonus XP
+ -10% Science from Production on Unit Train (up from 5)
+ -+2 Production and Science
+--Windmill moved to Machinery
+ -loses +15% to Buildings
+ -+1 Production to Forest
+ -+1 Production and Gold to Farms
+ -+2 Food to Stables and Apothecary (was +1 to Granary and Apothecary)
+--Workshop moved to Architecture
+ -Gain 25% Production output as instant boost when a Citizen is born
+ -+15% Production to Buildings
+--Grocer changed to Apothecary
+ -1 Faith, 25% Faith output as boost on new Citizen
+ -+1 Science and Faith from Marshes
+ -10% Food kept (down from 15%)
+ -+1 Happiness removed (moved to Manor)
+--Gallery +1 Culture and GAP to Manor, Menagerie and Cafe in the City
+--Zoo (Romanticism) +1 Culture from Camps
+--Hotel 
+ -+1 Gold and Tourism from Snow and nearby Mountain
+ -33% Nearby Culture to Tourism (up 25%)
+ -Tourism from Trade Routes (from Zoo) 
+--Observatory no longer requires a Policy (which now gives 25% GPP rate in GA)
+ -1 Scientist Slow
+ -4 Science at Optics Tech
+ -1 faith from buildings tha must be purchased with Faith
+ -25% Sea Trade Route range (Harbor reduced to 25% from 50%)
+ -+1 Science and GAP from Harbor
+ -+3 science from Atolls (and +1 from 2 Mountains in range)
+
+Wonders
+-- Topkapi Palace buffed
+  -2 Art/Artifact Slots
+  -Themed with 1 Art, 1 Artifact from Consecutive Eras and different Civs for +8
+  -+3 Science and production if Themed
+  -Comes with a Free Artifact
+-- Versailles redesigned
+  -Free Gallery in the City
+  -+2 Gold from all Monument, Amphitheater, Gallery, and Opera House in the Empire
+  -10% of Gold in Empire converts to Culture
+-- Wat Phra Kaew rebalanced
+  -+2 Science from Temples and Seminaries (was Shrines)
+  -+2 Faith and Tourism from Holy Sites in the Empire
+  -Free Stupa in the City
+-- Changed Kaiserreich with The Royal Society (Scientific Theory)
+  -Gain a Free Great Scientist. 
+  -+2 Science from all Universities, Polytechnics, and Research Labs. 
+  -+2 Science and Golden Age Points from all Academies in the Empire. 
+-- Changed Lowell Mills with Derwent Mills (Manufacturing)
+  -Provides a Free Cloth Mill in the City.
+  -+2 Gold from Cloth Mills, Seaports, and Coaling Stations in the Empire.
+  -+2 Production and Golden Age Points from all Towns in the Empire. 
+-- Sistine Chapel grants 2 Faith and Tourism to Seminaries in the Empire
+-- Tower of Buddhist Incense and Summer Palace name swaps. Summer Palace (national wonder) is prereq for Tower
+-- Summer Palace no longer affects Religious Unrest, grants 2 Tourism to Menageries in the Empire.
+-- Chartered Company moved to Economics, Great Cothon changed to be Ironworks replacement instead
+
+Units
+--Pioneer moved to Astronomy
+--Pirates reverted to Explorer (removing Captain Jack Sparrow)
+--Two-handed Swordsman at Chemistry has Greatsword model and icon, no Cover I
+--Tercio renamed Pike-and-Shot, loses Field Works
+--Impi gains 33% against Gun Units (up from 25) and Cover I
+--Yellow Brow gains Formation II
+--German Landsknecht renamed to Doppelsoldner, replaces the Two-handed Swordsman
+--French Musketeer replaces the Two-handed Swordsman (cost Iron)
+--Carrack at Exploration (Renaissance)
+--Galleon at Navigation (Enlightenment)
+ -Can Move after Attack
+ -Reduced to 1 Range
+ -Upgrades to Cruiser (Torpedo Boat with modmod)
+--Dragoon and UNIT_EE_SKIRMISHER (now "Marksman") to Manufacturing
+
+Misc
+--Policy costs increased to account for additional techs and yields
+50 + (4n+0.2)**2.22 --> 60 + (3.34*n)**2.4#
+--Additions to Industry Policies removed (too strong)
+--Steam Power gives +3 Gold to Fresh Water Villages
+--Fertilizer gives +1 Food to non-Fresh Water Farms
+  Together, with Railroads, these change the optimal distribution of Improvements
+  Giving Workers stuff to do and changing the look of your Empire
+
+4UC 
+----Buildings
+--Moroccan Riad 50% Nearby Culture to Tourism (up from 25->33%)
+--French Salon now replaces Gallery
+--German Beer Hall replaces the Tavern
+--Indian Qila replaces the Bastion Fort
+ -Gain 2% progress to a Great Artist when you complete a Building
+ -No bonus City HP
+----Units
+--Korean Turtle Ship replaces the Carrack (Strength of a Privateer)
+--Spanish Armada replaces the Galleon (i.e. a ranged ship)
+
+Bugfixes
+-- fixed Bombard skin being broken (ty Jarcast)
+-- fixed a number of tooltip errors
+
+-----------------
+v14
+-----------------
+Buildings
+--Windmill now has the enables Production ITR from Workshop so it stays in the same place
+--Windmill Lake bonus lowered to +1 Prod/Gold (was +2)
+--Manor 
+ -gains +2 Gold/+1 Tourism to Lakes
+ -gain +1 Prod/GAP from Villages
+ -Loses 10% Investment to GAP (it was too much, one of the largest sources)
+--Cost sweeps
+ -Moved to separate file for ease of access
+ -Wonder Prod and Policy costs harmonized with More Wonders
+ -Building Prod costs smoothed (and overall increased) and Gold Maintenance adjusted
+ -Unit costs moved to sweeps and smoothed. Removed some outliers like Field Gun (Howitzer) being abnormally expensive

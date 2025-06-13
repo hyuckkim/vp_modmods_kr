@@ -1,510 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_OTTOMAN</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 새로운 대제관</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 대제관을 처형합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<LessThanMaximumTradeRoutes>true</LessThanMaximumTradeRoutes>
-			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventBuildingClassGlobal>BUILDINGCLASS_CARAVANSARY</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 카라반세라이 네트워크</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresHolyCity>true</RequiresHolyCity>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 카라반세라이 네트워크를 구축합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_OTTOMAN_UE_DUMMY</EventBuildingClassGlobal>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 종교 규제</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresWar>true</RequiresWar>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
-			<EraScaling>true</EraScaling>
-			<EventPromotion>PROMOTION_SUPPLY</EventPromotion>
-			<EventBuildingClassGlobal>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</EventBuildingClassGlobal>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 종교 법에 따라 비즈니스 규정을 도입합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_OTTOMAN_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<IsUnhappy>true</IsUnhappy>
-			<EraScaling>true</EraScaling>
-			<GoldenAgeTurns>20</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
-			<ReligiousUnrestModifierGlobal>-50</ReligiousUnrestModifierGlobal>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 사법 권한 이양</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 종교 소수 집단 내의 불만에 대한 사법 업무를 이양합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 조공 개혁</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 신하들에게 추가 조공을 요구합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 술탄 폐지</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 현대화 개혁을 위해 역사적인 조언자 회의를 해체합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_OTTOMAN_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION">
+			<Text>장미가 가시 없이 존재할 수 있는가?</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_OTTOMAN_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_OTTOMAN_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP">
+			<Text>폐하, 대제관이 의심스러운 활동을 수행하고 있다는 보고를 받았습니다.[NEWLINE]저는 실크 로프를 추천합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</Type>
-			<DefaultBuilding>BUILDING_OTTOMAN_UE_DUMMY_2</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_OTTOMAN_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_OTTOMAN_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 투자하여 모든 도시에 카라반세라이를 설치합니다. 카라반세라이는 +1 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 생산합니다.</Text>
 		</Row>
-		<Row>
-			<Type>BUILDING_OTTOMAN_UE_DUMMY_2</Type>
-			<BuildingClass>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2</Description>
-			<Help>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3">
+			<Text>공공장소에서 {1_YieldCost} 가치의 종교 관행을 시행합니다: 목욕탕은 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생산합니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_YieldChangesPerReligion>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4">
+			<Text>종교 법을 시행하기 위해 {1_YieldCost}를 사용합니다. 도시마다 모든 종교에 대해 +3 [ICON_FOOD] 식량과 +3 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5">
+			<Text>{1_YieldCost}를 활용하여 신하들에게 조공을 요구합니다. 궁전은 모든 도시에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 생성합니다. 모든 배는 보급 프로모션을 받습니다.</Text>
 		</Row>
-	</Building_YieldChangesPerReligion>
-	<Building_BuildingClassYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}를 사용하여 사회 및 교육 개혁을 가져옵니다. [ICON_RELIGION] 종교 부서의 문턱이 50% 줄어들고 [ICON_RESEARCH] 문맹 문턱이 5% 줄어듭니다. 20턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 진입합니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1">
+			<Text>신은 자비롭습니다. 그러나 나는 그렇지 않습니다. 나를 대체할 사람을 찾으십시오.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2">
+			<Text>*대제관이 외교 조언자와의 계획에서 궁전의 금을 무역 경로에 사용하는 문제로 갈등을 빚었습니다*[NEWLINE]외교 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3">
+			<Text>*경제 조언자가 대제관이 종교 법을 비즈니스에 적용하지 않은 것에 대해 격노했다고 알려졌습니다*[NEWLINE]경제 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
 		</Row>
-	</Building_BuildingClassYieldChanges>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4">
+			<Text>*과학 조언자가 사법 권한을 종교 소수자에게 이양하려는 계획이 대제관을 적대시하게 만들었다는 소문이 돌았습니다*[NEWLINE]과학 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5">
+			<Text>*대제관이 군사 조언자가 전쟁 중 우리의 속국 권한을 활용하려는 계획을 견딜 수 없었다고 합니다*[NEWLINE]군사 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6">
+			<Text>충분하다! 더 이상의 음모, 불화, 반란을 용납하지 않겠습니다. 대제관들을 해체하십시오. 모든 대제관들을 처형하십시오. 이번 달 말까지 새로운 헌법을 작성하겠습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY">
+			<Text>사법 권한 이양</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP">
+			<Text>도시 내 모든 종교마다 +3 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2">
+			<Text>신하의 조공</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP">
+			<Text>궁전에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>400</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>400</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 새로운 대제관</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 대제관을 처형합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 카라반세라이 네트워크</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 카라반세라이 네트워크를 구축합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 종교 규제</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 종교 법에 따라 비즈니스 규정을 도입합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 사법 권한 이양</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 종교 소수 집단 내의 불만에 대한 사법 업무를 이양합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 조공 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 신하들에게 추가 조공을 요구합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 술탄 폐지</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 현대화 개혁을 위해 역사적인 조언자 회의를 해체합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION">
-      <Text>장미가 가시 없이 존재할 수 있는가?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP">
-      <Text>폐하, 대제관이 의심스러운 활동을 수행하고 있다는 보고를 받았습니다.[NEWLINE]저는 실크 로프를 추천합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 투자하여 모든 도시에 카라반세라이를 설치합니다. 카라반세라이는 +1 [ICON_CULTURE] 문화와 +1 [ICON_PEACE] 신앙을 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3">
-      <Text>공공장소에서 {1_YieldCost} 가치의 종교 관행을 시행합니다: 목욕탕은 +2 [ICON_PEACE] 신앙과 +2 [ICON_FOOD] 식량을 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4">
-      <Text>종교 법을 시행하기 위해 {1_YieldCost}를 사용합니다. 도시마다 모든 종교에 대해 +3 [ICON_FOOD] 식량과 +3 [ICON_PRODUCTION] 생산을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5">
-      <Text>{1_YieldCost}를 활용하여 신하들에게 조공을 요구합니다. 궁전은 모든 도시에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 생성합니다. 모든 배는 보급 프로모션을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}를 사용하여 사회 및 교육 개혁을 가져옵니다. [ICON_RELIGION] 종교 부서의 문턱이 50% 줄어들고 [ICON_RESEARCH] 문맹 문턱이 5% 줄어듭니다. 20턴 동안 [ICON_GOLDEN_AGE] 황금 시대에 진입합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1">
-      <Text>신은 자비롭습니다. 그러나 나는 그렇지 않습니다. 나를 대체할 사람을 찾으십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2">
-      <Text>*대제관이 외교 조언자와의 계획에서 궁전의 금을 무역 경로에 사용하는 문제로 갈등을 빚었습니다*[NEWLINE]외교 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3">
-      <Text>*경제 조언자가 대제관이 종교 법을 비즈니스에 적용하지 않은 것에 대해 격노했다고 알려졌습니다*[NEWLINE]경제 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그녀에게 제 인감을 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4">
-      <Text>*과학 조언자가 사법 권한을 종교 소수자에게 이양하려는 계획이 대제관을 적대시하게 만들었다는 소문이 돌았습니다*[NEWLINE]과학 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5">
-      <Text>*대제관이 군사 조언자가 전쟁 중 우리의 속국 권한을 활용하려는 계획을 견딜 수 없었다고 합니다*[NEWLINE]군사 조언자를 저에게 데려오십시오. 이 반역을 조사하는 동안 그에게 제 인감을 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6">
-      <Text>충분하다! 더 이상의 음모, 불화, 반란을 용납하지 않겠습니다. 대제관들을 해체하십시오. 모든 대제관들을 처형하십시오. 이번 달 말까지 새로운 헌법을 작성하겠습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY">
-      <Text>사법 권한 이양</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP">
-      <Text>도시 내 모든 종교마다 +3 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2">
-      <Text>신하의 조공</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP">
-      <Text>궁전에서 +1 [ICON_RESEARCH] 과학, [ICON_GOLD] 금, [ICON_FOOD] 식량, [ICON_PEACE] 신앙을 제공합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

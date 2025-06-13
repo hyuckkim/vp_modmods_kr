@@ -1,61 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_PETA</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_PETA_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_PETA_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>20</RandomChance>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<IsOneShot>false</IsOneShot>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION">
+			<Text>결국 세상은 잔인하다</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_PETA_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_PETA_HELP_CHOICE_1</Help>
-			<EraScaling>true</EraScaling>
-			<ImprovementRequired>IMPROVEMENT_CAMP</ImprovementRequired>
-			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP">
+			<Text></Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_PETA</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP_CHOICE_1">
+			<Text>동물 권리 단체가 캠프를 불태우고 포획된 동물들을 모두 야생으로 돌려보냈습니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-
-	<CityEventChoice_ImprovementDestructionRandom>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<Number>1</Number>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1">
+			<Text>결국 세상은 잔인하다</Text>
 		</Row>
-	</CityEventChoice_ImprovementDestructionRandom>
-	<CityEventChoice_EventCostYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
-		</Row>
-	</CityEventChoice_EventCostYield>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION">
-      <Text>결국 세상은 잔인하다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP_CHOICE_1">
-      <Text>동물 권리 단체가 캠프를 불태우고 포획된 동물들을 모두 야생으로 돌려보냈습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1">
-      <Text>결국 세상은 잔인하다</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

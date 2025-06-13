@@ -1,205 +1,35 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP</Help>
-			<NumChoices>4</NumChoices>
-			<RandomChance>30</RandomChance>
-			<RandomChanceDelta>2</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisorscience.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION">
+			<Text>무한 에너지</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
-			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP">
+			<Text>우리의 가장 뛰어난 두뇌들이 모든 에너지 요구를 충족할 수 있는 기술을 개발했습니다! 이는 정말로 놀라운 일로, 인류의 새로운 시대를 열어줍니다.</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_SOLAR_PLANT</RequiredAnywhereBuildingClass>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_1">
+			<Text>사막 타일이 +3 [ICON_GOLD] 금과 +3 [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_2</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>태양광 패널이 자가 수리 기능을 갖추어, 관리되지 않는 지역에서도 수명이 천 배로 늘어났습니다! 이제는 사막이 전 세계의 전력 수요를 충족시킬 것입니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_3</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NUCLEAR_PLANT</RequiredAnywhereBuildingClass>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_2">
+			<Text>도시의 유지비가 {3_CityYieldGlobal} 절감됩니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</Type>
-			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_4</Description>
-			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_4</Help>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
-			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>나노 구조화 기술의 발전 덕분에 물 분해 반응과 이후 재조합을 하나의 셀에서 수행할 수 있게 되었습니다. 일상적인 기기에는 더 이상 연료가 필요하지 않습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_3">
+			<Text>원자력 발전소가 핵융합 에너지로 전환됩니다: +15% [ICON_PRODUCTION] 생산력과 +15% [ICON_RESEARCH] 과학력을 제공합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>언제 올지 몰랐지만, 드디어 자가 지속적이고 안정적인 핵융합 반응로를 갖게 되었습니다. 태양의 힘을 손 안에 담았습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_4">
+			<Text>모든 도시에서 {3_CityYieldGlobal}을(를) 생산합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_AES_SCIENCE_PLAYER_GOOD</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>우주의 가장 파괴적인 존재인 반물질을 단지 접근하는 데 그치지 않고 제어할 수 있게 되었습니다. 가장 안전한 시설을 제외하고는 사용하기까지 시간이 걸리겠지만, 하나의 물질 드라이브로 모든 도시에 전력을 공급할 수 있습니다!</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_TerrainYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_TerrainYieldChange>
-	<EventChoice_CityYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>3</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>8</Yield>
-		</Row>
-	</EventChoice_CityYield>
-	<EventChoice_BuildingClassYieldModifier>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_NUCLEAR_PLANT</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_NUCLEAR_PLANT</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Modifier>15</Modifier>
-		</Row>
-	</EventChoice_BuildingClassYieldModifier>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_GOOD_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>4</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION">
-      <Text>무한 에너지</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP">
-      <Text>우리의 가장 뛰어난 두뇌들이 모든 에너지 요구를 충족할 수 있는 기술을 개발했습니다! 이는 정말로 놀라운 일로, 인류의 새로운 시대를 열어줍니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_1">
-      <Text>사막 타일이 +3 [ICON_GOLD] 금과 +3 [ICON_PRODUCTION] 생산력을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_1">
-      <Text>태양광 패널이 자가 수리 기능을 갖추어, 관리되지 않는 지역에서도 수명이 천 배로 늘어났습니다! 이제는 사막이 전 세계의 전력 수요를 충족시킬 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_2">
-      <Text>도시의 유지비가 {3_CityYieldGlobal} 절감됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_2">
-      <Text>나노 구조화 기술의 발전 덕분에 물 분해 반응과 이후 재조합을 하나의 셀에서 수행할 수 있게 되었습니다. 일상적인 기기에는 더 이상 연료가 필요하지 않습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_3">
-      <Text>원자력 발전소가 핵융합 에너지로 전환됩니다: +15% [ICON_PRODUCTION] 생산력과 +15% [ICON_RESEARCH] 과학력을 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_3">
-      <Text>언제 올지 몰랐지만, 드디어 자가 지속적이고 안정적인 핵융합 반응로를 갖게 되었습니다. 태양의 힘을 손 안에 담았습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_HELP_CHOICE_4">
-      <Text>모든 도시에서 {3_CityYieldGlobal}을(를) 생산합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_GOOD_DESCRIPTION_CHOICE_4">
-      <Text>우주의 가장 파괴적인 존재인 반물질을 단지 접근하는 데 그치지 않고 제어할 수 있게 되었습니다. 가장 안전한 시설을 제외하고는 사용하기까지 시간이 걸리겠지만, 하나의 물질 드라이브로 모든 도시에 전력을 공급할 수 있습니다!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

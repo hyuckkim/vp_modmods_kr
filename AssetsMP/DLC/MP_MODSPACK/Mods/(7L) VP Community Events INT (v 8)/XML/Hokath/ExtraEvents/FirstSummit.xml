@@ -1,63 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_FIRST_SUMMIT</Type>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>10</RandomChance>
-			<RandomChanceDelta>2</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION">
+			<Text>아무리 높은 산이라도</Text>
 		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_FIRST_SUMMIT_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<RequiresNearbyMountain>true</RequiresNearbyMountain>
-			<RequiredBuildingClass>BUILDINGCLASS_HOTEL</RequiredBuildingClass>
-			<PrereqTech>TECH_FLIGHT</PrereqTech>
-			<EventDuration>20</EventDuration>
-			<Expires>true</Expires>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP">
+			<Text></Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_FIRST_SUMMIT_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_FIRST_SUMMIT</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP_CHOICE_1">
+			<Text>등반가가 마침내 지역에서 가장 높은 산의 정상에 도달했습니다! {2_InstantYield}와 {3_CityYield}를 {5_Turns} 동안 얻습니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_FIRST_SUMMIT_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>250</Yield>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION_CHOICE_1">
+			<Text>아무리 높은 산이라도</Text>
 		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_CityYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_FIRST_SUMMIT_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>5</Yield>
-		</Row>
-	</CityEventChoice_CityYield>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION">
-      <Text>아무리 높은 산이라도</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_HELP_CHOICE_1">
-      <Text>등반가가 마침내 지역에서 가장 높은 산의 정상에 도달했습니다! {2_InstantYield}와 {3_CityYield}를 {5_Turns} 동안 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_FIRST_SUMMIT_DESCRIPTION_CHOICE_1">
-      <Text>아무리 높은 산이라도</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

@@ -1,474 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-
-	<Events>
-		<Row>
-			<Type>EVENT_GIORGIO_FRANCHISE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>60</RandomChance>
-			<RandomChanceDelta>20</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</RequiredAnywhereBuildingClass>
-		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_GIORGIO_FRANCHISE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_1</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STOCK_EXCHANGE</RequiredAnywhereBuildingClass>
-		</Row>
-		<Row>
-			<Type>EVENT_GIORGIO_FRANCHISE_CHOICE_2</Type>
-			<Description>TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_2</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WIRE_SERVICE</RequiredAnywhereBuildingClass>
-		</Row>
-		<Row>
-			<Type>EVENT_GIORGIO_FRANCHISE_CHOICE_3</Type>
-			<Description>TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_3</Help>
-			<EventDuration>-1</EventDuration>
-			<RequiresIdeology>true</RequiresIdeology>
-			<ImprovementAnywhereRequired>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementAnywhereRequired>
-		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_GIORGIO_FRANCHISE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_GIORGIO_FRANCHISE</EventType>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_GIORGIO_FRANCHISE</EventType>
-		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>500</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-2</YieldChange>
-		</Row>
-	</EventChoice_BuildingClassYieldChange>
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>-1</YieldChange>
-		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_ImprovementYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</EventChoice_ImprovementYieldChange>
-
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1_S">
-      <Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1">
-      <Text>조르지오 아르미에 주식이 {1_CivShortDescription}의 주식 시장에 상장됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2_S">
-      <Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2">
-      <Text>{2_CivDescription}가 {1_CivShortDescription}의 경제에 조르지오 아르미에의 도입을 관리하는 법안을 제정합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3_S">
-      <Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3">
-      <Text>{2_CivDescription}가 조르지오 아르미에의 제품에 대해 높은 세금을 부과합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION">
-      <Text>악마는 시드를 입는다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP">
-      <Text>새로운 기업이 우리의 국경 내에서 운영을 시작했습니다. 이들의 등장은 기술적 및 경제적 기회를 제공하지만, 글로벌 비즈니스와 국가적 자기 이익 간의 미세한 균형이 드러납니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 전하?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_1">
-      <Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_CULTURE] 문화를 소비합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 지불하고 조르지오 아르미에의 프랜차이즈로부터 +10 [ICON_TOURISM] 관광을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_3">
-      <Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 마을이 +3 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_1">
-      <Text>왜 다시 여기 있나요? 주식 거래소에 올리세요! 시장이 그런 복잡한 일을 걱정할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_2">
-      <Text>적절한 감독 및 규제 체계를 통해 진보를 지지하면서도 대기업에 의해 노동자가 착취당하지 않도록 보호해야 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_3">
-      <Text>우리 사람들의 삶의 방식을 이렇게 침식당하게 할 수 없습니다. 조르지오 아르미에에 대해 세금을 부과하세요. 필요한 만큼 높게 설정하십시오.</Text>
-    </Row>
-    </Language_ko_KR>
-	
-		<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_RIOT</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP</Help>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<NumChoices>1</NumChoices>
-			<RandomChance>50</RandomChance>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</RequiredBuildingClass>
-			<RandomChanceDelta>1</RandomChanceDelta>
-		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_GIORGIO_RIOT</CityEventType>
-			<EventChoice>EVENT_GIORGIO_FRANCHISE_CHOICE_1</EventChoice>
-			<CheckForActive>false</CheckForActive>
-		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_RIOT_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP_CHOICE_1</Help>
-			<ImprovementRequired>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementRequired>
-		</Row>
-	</CityEventChoices>
-	<CityEventChoice_ImprovementDestructionRandom>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_RIOT_CHOICE_1</CityEventChoiceType>
-			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<Number>2</Number>
-		</Row>
-	</CityEventChoice_ImprovementDestructionRandom>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_RIOT_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_GIORGIO_RIOT</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
-	
 	<Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION">
-      <Text>블랙 프라이데이</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP_CHOICE_1">
-      <Text>최대 2개의 마을이 조르지오 아르미에의 매장에서 폭력이 발생해 약탈당합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION_CHOICE_1">
-      <Text></Text>
-    </Row>
-    </Language_ko_KR>
-	
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_UNIVERSITY</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP</Help>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<NumChoices>3</NumChoices>
-			<RandomChance>50</RandomChance>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</RequiredBuildingClass>
-			<RandomChanceDelta>0</RandomChanceDelta>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1_S">
+			<Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_GIORGIO_UNIVERSITY</CityEventType>
-			<Event>EVENT_GIORGIO_FRANCHISE</Event>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_1">
+			<Text>조르지오 아르미에 주식이 {1_CivShortDescription}의 주식 시장에 상장됩니다.</Text>
 		</Row>
-		<Row>
-			<CityEventType>CITY_EVENT_GIORGIO_UNIVERSITY</CityEventType>
-			<EventChoice>EVENT_GIORGIO_FRANCHISE_CHOICE_3</EventChoice>
-			<CheckForActive>false</CheckForActive>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2_S">
+			<Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_1</Help>
-			<RequiredBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_2">
+			<Text>{2_CivDescription}가 {1_CivShortDescription}의 경제에 조르지오 아르미에의 도입을 관리하는 법안을 제정합니다.</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_2</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_2</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_2</Help>
-			<RequiredBuildingClass>BUILDINGCLASS_AIRPORT</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3_S">
+			<Text>{3_PlayerName}가 정부의 조르지오 아르미에에 대한 정책을 명확히 합니다</Text>
 		</Row>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_3</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_3</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_3</Help>
-			<ImprovementRequired>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementRequired>
-			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GIORGIO_FRANCHISE_CHOICE_3">
+			<Text>{2_CivDescription}가 조르지오 아르미에의 제품에 대해 높은 세금을 부과합니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_GIORGIO_UNIVERSITY</CityEventType>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION">
+			<Text>악마는 시드를 입는다</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_2</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_GIORGIO_UNIVERSITY</CityEventType>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP">
+			<Text>새로운 기업이 우리의 국경 내에서 운영을 시작했습니다. 이들의 등장은 기술적 및 경제적 기회를 제공하지만, 글로벌 비즈니스와 국가적 자기 이익 간의 미세한 균형이 드러납니다.[NEWLINE][NEWLINE]어떻게 진행할까요, 전하?</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_3</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_GIORGIO_UNIVERSITY</CityEventType>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_1">
+			<Text>[ICON_GREAT_MERCHANT] 상인들이 +1 [ICON_GOLD] 금을 생성하지만 -1 [ICON_CULTURE] 문화를 소비합니다.</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-	<CityEventChoice_BuildingClassYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_1</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>4</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 지불하고 조르지오 아르미에의 프랜차이즈로부터 +10 [ICON_TOURISM] 관광을 받습니다.</Text>
 		</Row>
-	</CityEventChoice_BuildingClassYieldChange>
-
-	<CityEventChoice_SpecialistYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_2</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_HELP_CHOICE_3">
+			<Text>세관이 -2 [ICON_GOLD] 금을 잃습니다. 마을이 +3 [ICON_CULTURE] 문화를 생성합니다.</Text>
 		</Row>
-	</CityEventChoice_SpecialistYieldChange>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_3</CityEventChoiceType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>750</Yield>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_1">
+			<Text>왜 다시 여기 있나요? 주식 거래소에 올리세요! 시장이 그런 복잡한 일을 걱정할 것입니다.</Text>
 		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_3</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<Points>500</Points>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_2">
+			<Text>적절한 감독 및 규제 체계를 통해 진보를 지지하면서도 대기업에 의해 노동자가 착취당하지 않도록 보호해야 합니다.</Text>
 		</Row>
-	</CityEventChoice_GreatPersonPoints>
-
-	<CityEventChoiceFlavors>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_1</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
+		<Row Tag="TXT_KEY_EVENT_GIORGIO_FRANCHISE_DESCRIPTION_CHOICE_3">
+			<Text>우리 사람들의 삶의 방식을 이렇게 침식당하게 할 수 없습니다. 조르지오 아르미에에 대해 세금을 부과하세요. 필요한 만큼 높게 설정하십시오.</Text>
 		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_2</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_UNIVERSITY_CHOICE_3</CityEventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-	</CityEventChoiceFlavors>
-	
+	</Language_ko_KR>
 	<Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION">
-      <Text>나를 자주 기억하라</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP">
-      <Text>도시 내 조르지오 아르미에 프랜차이즈의 관리자가 공동 사업에 대해 접근합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_1">
-      <Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_1">
-      <Text>우리의 고도로 숙련된 인력을 활용하는 이 아이디어가 마음에 듭니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_2">
-      <Text>[ICON_GREAT_MERCHANT] 상인들이 도시에서 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_2">
-      <Text>국제 시장과의 상호 작용이 패션에 매우 중요합니다. 수입 및 수출 전문가를 참여시키는 것이 합리적입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_3">
-      <Text>{2_InstantYield}와 {4_GPChange}를 도시에서 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_3">
-      <Text>쇼핑객에 대한 데이터에서 많은 것을 배울 수 있을 것 같습니다. 그들이 제시한 디지털 전략을 보는 것이 매우 흥미로울 것입니다.</Text>
-    </Row>
-    </Language_ko_KR>
-	
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_COUNTER</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP</Help>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<NumChoices>1</NumChoices>
-			<RandomChance>50</RandomChance>
-			<IsOneShot>true</IsOneShot>
-			<RequiredBuildingClass>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</RequiredBuildingClass>
-			<RandomChanceDelta>1</RandomChanceDelta>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION">
+			<Text>블랙 프라이데이</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_GIORGIO_COUNTER</CityEventType>
-			<Event>EVENT_GIORGIO_FRANCHISE</Event>
-			<CheckForActive>true</CheckForActive>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP">
+			<Text></Text>
 		</Row>
-		<Row>
-			<CityEventType>CITY_EVENT_GIORGIO_COUNTER</CityEventType>
-			<EventChoice>EVENT_GIORGIO_FRANCHISE_CHOICE_2</EventChoice>
-			<CheckForActive>false</CheckForActive>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_HELP_CHOICE_1">
+			<Text>최대 2개의 마을이 조르지오 아르미에의 매장에서 폭력이 발생해 약탈당합니다!</Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_GIORGIO_COUNTER_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP_CHOICE_1</Help>
-			<RequiredBuildingClass>BUILDINGCLASS_AIRPORT</RequiredBuildingClass>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_RIOT_DESCRIPTION_CHOICE_1">
+			<Text></Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_COUNTER_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_GIORGIO_COUNTER</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
-	<CityEventChoice_BuildingClassYieldChange>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_COUNTER_CHOICE_1</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_COUNTER_CHOICE_1</CityEventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>3</YieldChange>
-		</Row>
-	</CityEventChoice_BuildingClassYieldChange>
-
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_GIORGIO_COUNTER_CHOICE_1</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<Points>500</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-	
+	</Language_ko_KR>
 	<Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION">
-      <Text>이제 우리는 구찌</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP_CHOICE_1">
-      <Text>사람들이 우리 매장에서 쇼핑하기 위해 멀리서 몰려들고 있습니다. 공항에서 +3 [ICON_GOLD] 금과 +3 [ICON_TOURISM] 관광을 생성합니다. {4_GPChange}를 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION_CHOICE_1">
-      <Text></Text>
-    </Row>
-  </Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION">
+			<Text>나를 자주 기억하라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP">
+			<Text>도시 내 조르지오 아르미에 프랜차이즈의 관리자가 공동 사업에 대해 접근합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_1">
+			<Text>대학에서 +4 [ICON_GOLD] 금을 생성합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_1">
+			<Text>우리의 고도로 숙련된 인력을 활용하는 이 아이디어가 마음에 듭니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_2">
+			<Text>[ICON_GREAT_MERCHANT] 상인들이 도시에서 +1 [ICON_CULTURE] 문화를 생성합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_2">
+			<Text>국제 시장과의 상호 작용이 패션에 매우 중요합니다. 수입 및 수출 전문가를 참여시키는 것이 합리적입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_HELP_CHOICE_3">
+			<Text>{2_InstantYield}와 {4_GPChange}를 도시에서 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_UNIVERSITY_DESCRIPTION_CHOICE_3">
+			<Text>쇼핑객에 대한 데이터에서 많은 것을 배울 수 있을 것 같습니다. 그들이 제시한 디지털 전략을 보는 것이 매우 흥미로울 것입니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION">
+			<Text>이제 우리는 구찌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_HELP_CHOICE_1">
+			<Text>사람들이 우리 매장에서 쇼핑하기 위해 멀리서 몰려들고 있습니다. 공항에서 +3 [ICON_GOLD] 금과 +3 [ICON_TOURISM] 관광을 생성합니다. {4_GPChange}를 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GIORGIO_COUNTER_DESCRIPTION_CHOICE_1">
+			<Text></Text>
+		</Row>
+	</Language_ko_KR>
 </GameData>

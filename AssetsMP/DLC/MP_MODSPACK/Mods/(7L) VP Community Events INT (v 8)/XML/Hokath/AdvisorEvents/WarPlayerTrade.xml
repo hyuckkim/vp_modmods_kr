@@ -1,141 +1,29 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP</Help>
-			<NumChoices>4</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisormilitary.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION">
+			<Text>슈퍼 트루퍼</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_WAR_PLAYER_TRADE</EventType>
-			<EventChoice>EVENT_AES_WAR_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP">
+			<Text>군사 고문이 새로운 특수부대 장교들이 졸업했다는 기쁜 소식을 전해왔습니다. 그들을 어디에 배치할까요?</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredAnywhereBuildingClass>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>{1_YieldCost}를 추가 훈련에 투자하여 [ICON_CAPITAL] 수도에서 두 명의 특사들을 받을 수 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>장교들을 외국 군대에 임대하여 {1_YieldCost}를 {2_InstantYield}로 교환합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<FreeUnitsTechAppropriate>2</FreeUnitsTechAppropriate>
-			<RequiresWar>true</RequiresWar>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>장교들에게 {1_YieldCost}를 지급하여 [ICON_CAPITAL] 수도에서 그들이 선호하는 두 개의 군단을 모집합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>이 병사들은 맨손으로 사람을 죽일 수 있을지 몰라도, 내 암살자들에겐 좀 더 정교함이 필요합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>여기서 이들을 잘 활용할 기회가 많지 않은 것 같습니다. 아마 우리의 동맹국 중 몇몇이 그들의 전문성에 관심이 있을지도 모릅니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_WAR_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>훌륭합니다. 그들에게 자금을 배정하고 현장에 보내십시오.</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<EventChoice_FreeUnitClasses>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<UnitClassType>UNITCLASS_EMISSARY</UnitClassType>
-			<Quantity>2</Quantity>
-		</Row>
-	</EventChoice_FreeUnitClasses>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>50</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>300</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION">
-      <Text>슈퍼 트루퍼</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP">
-      <Text>군사 고문이 새로운 특수부대 장교들이 졸업했다는 기쁜 소식을 전해왔습니다. 그들을 어디에 배치할까요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_1">
-      <Text>{1_YieldCost}를 추가 훈련에 투자하여 [ICON_CAPITAL] 수도에서 두 명의 특사들을 받을 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_2">
-      <Text>장교들을 외국 군대에 임대하여 {1_YieldCost}를 {2_InstantYield}로 교환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_HELP_CHOICE_3">
-      <Text>장교들에게 {1_YieldCost}를 지급하여 [ICON_CAPITAL] 수도에서 그들이 선호하는 두 개의 군단을 모집합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>이 병사들은 맨손으로 사람을 죽일 수 있을지 몰라도, 내 암살자들에겐 좀 더 정교함이 필요합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>여기서 이들을 잘 활용할 기회가 많지 않은 것 같습니다. 아마 우리의 동맹국 중 몇몇이 그들의 전문성에 관심이 있을지도 모릅니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>훌륭합니다. 그들에게 자금을 배정하고 현장에 보내십시오.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

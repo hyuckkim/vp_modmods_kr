@@ -1,413 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_NETHERLANDS</RequiredCiv>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 정략 결혼</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1">
+			<Text>{3_PlayerName}가 먼 친척 가문의 유명한 귀족과의 결혼을 주선합니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 창조 이야기</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_TREASURY</RequiredAnywhereBuildingClass>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2">
+			<Text>{3_PlayerName}가 전 세계의 상인들을 유치합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARTISTS_GUILD</RequiredAnywhereBuildingClass>
-			<EventBuildingClassGlobal>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</EventBuildingClassGlobal>
-			<MinimumNumCoastalCities>3</MinimumNumCoastalCities>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 네덜란드 동인도 회사</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
-			<Expires>false</Expires>
-			<EventDuration>-1</EventDuration>
-			<WLTKDTurns>1</WLTKDTurns>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3">
+			<Text>{3_PlayerName}가 동인도 회사에 상당한 권한을 부여합니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_NETHERLANDS_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<RequiredEra>ERA_POSTMODERN</RequiredEra>
-			<WLTKDTurns>25</WLTKDTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
-			<HappinessPerCity>2</HappinessPerCity>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 재영감</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4">
+			<Text>{3_PlayerName}가 예술가와 상인 중 어느 쪽도 손해 보지 않도록 정책을 시행하지 않습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 착취</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5">
+			<Text>{3_PlayerName}가 식민지에서 더 많은 식량을 생산하도록 강요하기 시작합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 진보성</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6">
+			<Text>{3_PlayerName}가 개입하지 않고, 기둥화된 정치적 풍경이 무너지는 것을 허용합니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_NETHERLANDS_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION">
+			<Text>거울에 비친 기적</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_NETHERLANDS_UE_DUMMY</DefaultBuilding>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP">
+			<Text>폐하, 조용한 사색을 방해해서 죄송합니다. 폐하의 요청에 따라 궁전에서 최근의 사건들에 대해 논의하기 위해 조언자들이 모였습니다.[NEWLINE][NEWLINE]폐하께서는 준비를 하셔야 합니다. 논쟁이 치열할 것이며, 결과는... 심각할 것입니다.</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_NETHERLANDS_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_NETHERLANDS_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NeverCapture>true</NeverCapture>
-			<NukeImmune>true</NukeImmune>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<IsDummy>true</IsDummy>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_1">
+			<Text>선택한 위대한 인물을 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_NETHERLANDS_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<Modifier>20</Modifier>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_2">
+			<Text>모든 [ICON_GREAT_MERCHANT] 상인은 추가로 +1 [ICON_FOOD] 식량과 +1 [ICON_CULTURE] 문화를 제공합니다.</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-
-	<Building_YieldFromPurchase>
-		<Row>
-			<BuildingType>BUILDING_NETHERLANDS_UE_DUMMY</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>10</Yield>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_3">
+			<Text>동인도 회사는 매턴 -10 [ICON_GOLD] 금과 -10 [ICON_GOLDEN_AGE] 황금 시대 포인트를 요구합니다. 대신 [ICON_RES_SUGAR] 설탕, [ICON_RES_TOBACCO] 담배, [ICON_RES_COCOA] 코코아, [ICON_RES_TEA] 차, [ICON_RES_COFFEE] 커피를 얻습니다.</Text>
 		</Row>
-	</Building_YieldFromPurchase>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_4">
+			<Text>최대 {2_InstantYield}를 사용합니다. 모든 도시는 20% 증가된 [ICON_GREAT_MERCHANT] 위대한 상인 출생률을 가지며, 구매 시 [ICON_GOLD] 금의 10%를 [ICON_CULTURE] 문화로 변환합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_5">
+			<Text>모든 도시에서 15 [ICON_FOOD] 식량과 5 [ICON_GOLDEN_AGE] 황금 시대 포인트를 생성합니다. 이 기간 동안 모든 도시는 잠깐의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 경험합니다.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_TOBACCO</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_6">
+			<Text>{2_InstantYield} 만큼의 구식 관행을 폐지합니다. 모든 도시는 25 턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, +2 [ICON_HAPPINESS_1] 행복을 얻습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_COCOA</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_1">
+			<Text>*세계의 배고프고 증오하는 국가들이 우리의 행복한 나라를 삼키려 합니다*[NEWLINE]내 조언자들이 충돌을 피하기 위한 정치적 결혼을 모색하도록 해야 합니다. 일주일 후에 옵션을 검토하겠습니다. 가세요.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_SUGAR</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_2">
+			<Text>*다른 나라들은 전쟁과 신화적인 역사를 주장합니다. 하지만 네덜란드는 그렇지 않습니다*[NEWLINE]네덜란드 사람들의 이야기는 창의성, 무역, 평화입니다. 이를 기념하고 싶습니다. 모든 농부, 어부, 상인들에게 알리십시오: 네덜란드는 사업에 열려 있습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_COFFEE</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_3">
+			<Text>*당신의 경제 조언자의 사업 관심사인 동인도 회사가 매우 영향력 있게 되었습니다. 그녀는 이를 더 강화하기를 원합니다*[NEWLINE]편애를 보이고 싶지는 않지만, 많은 사치품을 얻는 것은 매우 매력적입니다. 다른 조언자들의 의견을 들으면서도, ‘불규칙성’이 수반될 수 있음을 인정할 준비가 되어 있습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_TEA</ResourceType>
-			<Quantity>1</Quantity>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*우리 상인들은 해외에서 큰 이득을 얻고, 집에서는 예술가들이 세계를 놀라게 합니다. 하지만 네덜란드는 어떤 길을 따라야 할까요?*[NEWLINE]저는 조언자들이 제기한 이 이분법적인 논쟁을 믿지 않습니다. 우리 예술가들의 작품이 상인들에게 이익을 주며, 그들의 모험에서 재영감을 얻을 것입니다; 이 사이클은 제가 왕으로 있는 한 계속될 것입니다!</Text>
 		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_BuildingClassYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>-10</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*우리 식민지들은 비효율적이고 관리가 부실합니다. 우리는 식민지에서 농산물을 강제로 추출하여 제국의 나머지 부분이 번창하도록 해야 한다는 조언을 받았습니다*[NEWLINE]우리는 집에서 고통을 겪으면서 식민지들은 행복하게 살아갑니다. 잠시 고통스럽더라도 균형을 바로잡아야 합니다. 그러므로, 저는 이 계획에 무거운 마음으로 동의합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>-10</YieldChange>
+		<Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*우리 사회의 사회적 기둥들이 기득권을 지탱하고 있으며, 조언자들은 청년들의 반란에 대해 걱정하고 있습니다*[NEWLINE]이렇게 계속해서 역행하는 소리만 듣는 것에 지쳤습니다. 기득권이 무너지고 더 크고 행복한 네덜란드가 일어설 것입니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>15</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY">
+			<Text>네덜란드 재영감</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY_HELP">
+			<Text>+20% [ICON_GREAT_MERCHANT] 위대한 상인 출생률 증가. 이 도시의 구매 시 [ICON_GOLD] 금의 10%를 [ICON_CULTURE] 문화로 변환합니다.</Text>
 		</Row>
-	</EventChoice_BuildingClassYieldChange>
-
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2000</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<Yield>-250</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-2000</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>-2</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_NETHERLANDS_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 정략 결혼</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_1">
-      <Text>{3_PlayerName}가 먼 친척 가문의 유명한 귀족과의 결혼을 주선합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 창조 이야기</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_2">
-      <Text>{3_PlayerName}가 전 세계의 상인들을 유치합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 네덜란드 동인도 회사</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_3">
-      <Text>{3_PlayerName}가 동인도 회사에 상당한 권한을 부여합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 재영감</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_4">
-      <Text>{3_PlayerName}가 예술가와 상인 중 어느 쪽도 손해 보지 않도록 정책을 시행하지 않습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 착취</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_5">
-      <Text>{3_PlayerName}가 식민지에서 더 많은 식량을 생산하도록 강요하기 시작합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 진보성</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_NETHERLANDS_UE_CHOICE_6">
-      <Text>{3_PlayerName}가 개입하지 않고, 기둥화된 정치적 풍경이 무너지는 것을 허용합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION">
-      <Text>거울에 비친 기적</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP">
-      <Text>폐하, 조용한 사색을 방해해서 죄송합니다. 폐하의 요청에 따라 궁전에서 최근의 사건들에 대해 논의하기 위해 조언자들이 모였습니다.[NEWLINE][NEWLINE]폐하께서는 준비를 하셔야 합니다. 논쟁이 치열할 것이며, 결과는... 심각할 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_1">
-      <Text>선택한 위대한 인물을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_2">
-      <Text>모든 [ICON_GREAT_MERCHANT] 상인은 추가로 +1 [ICON_FOOD] 식량과 +1 [ICON_CULTURE] 문화를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_3">
-      <Text>동인도 회사는 매턴 -10 [ICON_GOLD] 금과 -10 [ICON_GOLDEN_AGE] 황금 시대 포인트를 요구합니다. 대신 [ICON_RES_SUGAR] 설탕, [ICON_RES_TOBACCO] 담배, [ICON_RES_COCOA] 코코아, [ICON_RES_TEA] 차, [ICON_RES_COFFEE] 커피를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_4">
-      <Text>최대 {2_InstantYield}를 사용합니다. 모든 도시는 20% 증가된 [ICON_GREAT_MERCHANT] 위대한 상인 출생률을 가지며, 구매 시 [ICON_GOLD] 금의 10%를 [ICON_CULTURE] 문화로 변환합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_5">
-      <Text>모든 도시에서 15 [ICON_FOOD] 식량과 5 [ICON_GOLDEN_AGE] 황금 시대 포인트를 생성합니다. 이 기간 동안 모든 도시는 잠깐의 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]을 경험합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_HELP_CHOICE_6">
-      <Text>{2_InstantYield} 만큼의 구식 관행을 폐지합니다. 모든 도시는 25 턴 동안 [COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR] 상태에 들어가며, +2 [ICON_HAPPINESS_1] 행복을 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_1">
-      <Text>*세계의 배고프고 증오하는 국가들이 우리의 행복한 나라를 삼키려 합니다*[NEWLINE]내 조언자들이 충돌을 피하기 위한 정치적 결혼을 모색하도록 해야 합니다. 일주일 후에 옵션을 검토하겠습니다. 가세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_2">
-      <Text>*다른 나라들은 전쟁과 신화적인 역사를 주장합니다. 하지만 네덜란드는 그렇지 않습니다*[NEWLINE]네덜란드 사람들의 이야기는 창의성, 무역, 평화입니다. 이를 기념하고 싶습니다. 모든 농부, 어부, 상인들에게 알리십시오: 네덜란드는 사업에 열려 있습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_3">
-      <Text>*당신의 경제 조언자의 사업 관심사인 동인도 회사가 매우 영향력 있게 되었습니다. 그녀는 이를 더 강화하기를 원합니다*[NEWLINE]편애를 보이고 싶지는 않지만, 많은 사치품을 얻는 것은 매우 매력적입니다. 다른 조언자들의 의견을 들으면서도, ‘불규칙성’이 수반될 수 있음을 인정할 준비가 되어 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_4">
-      <Text>*우리 상인들은 해외에서 큰 이득을 얻고, 집에서는 예술가들이 세계를 놀라게 합니다. 하지만 네덜란드는 어떤 길을 따라야 할까요?*[NEWLINE]저는 조언자들이 제기한 이 이분법적인 논쟁을 믿지 않습니다. 우리 예술가들의 작품이 상인들에게 이익을 주며, 그들의 모험에서 재영감을 얻을 것입니다; 이 사이클은 제가 왕으로 있는 한 계속될 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_5">
-      <Text>*우리 식민지들은 비효율적이고 관리가 부실합니다. 우리는 식민지에서 농산물을 강제로 추출하여 제국의 나머지 부분이 번창하도록 해야 한다는 조언을 받았습니다*[NEWLINE]우리는 집에서 고통을 겪으면서 식민지들은 행복하게 살아갑니다. 잠시 고통스럽더라도 균형을 바로잡아야 합니다. 그러므로, 저는 이 계획에 무거운 마음으로 동의합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_NETHERLANDS_UE_DESCRIPTION_CHOICE_6">
-      <Text>*우리 사회의 사회적 기둥들이 기득권을 지탱하고 있으며, 조언자들은 청년들의 반란에 대해 걱정하고 있습니다*[NEWLINE]이렇게 계속해서 역행하는 소리만 듣는 것에 지쳤습니다. 기득권이 무너지고 더 크고 행복한 네덜란드가 일어설 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY">
-      <Text>네덜란드 재영감</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_NETHERLANDS_UE_DUMMY_HELP">
-      <Text>+20% [ICON_GREAT_MERCHANT] 위대한 상인 출생률 증가. 이 도시의 구매 시 [ICON_GOLD] 금의 10%를 [ICON_CULTURE] 문화로 변환합니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

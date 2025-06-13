@@ -1,60 +1,23 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_WAR</Type>
-			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
-			<Description>TXT_KEY_EVENT_AES_WAR_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_HELP</Help>
-			<NumChoices>2</NumChoices>
-			<RandomChance>70</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
-			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
-            <EventArt>advisormilitary.dds</EventArt>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION">
+			<Text>불길이 치솟다</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_WAR_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_1</Help>
-			<EventDuration>100</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_HELP">
+			<Text>우리 군사 고문이 비밀스럽고, 엄격하며 종종 치명적인 훈련 프로그램의 도입을 원하고 있습니다. 이 프로그램의 목표는 엘리트 돌격 대원을 양성하는 것입니다.[NEWLINE][NEWLINE]결정을 기다리고 있습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_WAR_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_2</Description>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_1">
+			<Text>{4_Turns} 동안, 프로그램으로 인해 중요한 사건이 발생할 수 있습니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_WAR</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_2">
+			<Text>업무는 평소와 같이 진행됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_WAR_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_WAR</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_1">
+			<Text>우리는 즉시 지옥을 풀어놓을 준비가 되어 있어야 합니다. 우리는 어떤 비책을 준비하는 것이 좋겠습니다.</Text>
 		</Row>
-	</Event_ParentEvents>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION">
-      <Text>불길이 치솟다</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_HELP">
-      <Text>우리 군사 고문이 비밀스럽고, 엄격하며 종종 치명적인 훈련 프로그램의 도입을 원하고 있습니다. 이 프로그램의 목표는 엘리트 돌격 대원을 양성하는 것입니다.[NEWLINE][NEWLINE]결정을 기다리고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_1">
-      <Text>{4_Turns} 동안, 프로그램으로 인해 중요한 사건이 발생할 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_HELP_CHOICE_2">
-      <Text>업무는 평소와 같이 진행됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_1">
-      <Text>우리는 즉시 지옥을 풀어놓을 준비가 되어 있어야 합니다. 우리는 어떤 비책을 준비하는 것이 좋겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_2">
-      <Text>우리 스스로를 고문하고 심지어 죽이기까지 한다면, 우리가 적들보다 나을 게 무엇이겠습니까? 아니요, 그런 방향은 지지할 수 없습니다.</Text>
-    </Row>
-  </Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_WAR_DESCRIPTION_CHOICE_2">
+			<Text>우리 스스로를 고문하고 심지어 죽이기까지 한다면, 우리가 적들보다 나을 게 무엇이겠습니까? 아니요, 그런 방향은 지지할 수 없습니다.</Text>
+		</Row>
+	</Language_ko_KR>
 </GameData>

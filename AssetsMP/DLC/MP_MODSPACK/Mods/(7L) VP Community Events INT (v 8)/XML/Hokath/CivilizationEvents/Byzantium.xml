@@ -1,466 +1,95 @@
-﻿<GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE</Type>
-			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP</Help>
-			<NumChoices>6</NumChoices>
-			<EventArt>basedcivevent.dds</EventArt>
-			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
-			<RandomChance>125</RandomChance>
-			<RandomChanceDelta>125</RandomChanceDelta>
-			<EventCooldown>0</EventCooldown>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_CLASSICAL</RequiredEra>
-			<RequiredCiv>CIVILIZATION_BYZANTIUM</RequiredCiv>
-			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}의 기적적인 탄생</Text>
 		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_1</Help>
-			<FreeGreatPeople>1</FreeGreatPeople>
-			<EventDuration>150</EventDuration>
-			<IsOneShot>false</IsOneShot>
-			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1">
+			<Text>비잔틴 제국은 기적을 행하는 사람의 탄생으로 축복받았습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EraScaling>true</EraScaling>
-			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
-			<RequiresWarMinor>true</RequiresWarMinor>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}의 외국 용병</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
-			<EventBuildingClassGlobal>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</EventBuildingClassGlobal>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2">
+			<Text>{3_PlayerName}는 비잔틴 군대를 다변화하기 위해 외국 용병을 고용했습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<LosingMoney>true</LosingMoney>
-			<WLTKDTurns>20</WLTKDTurns>
-			<GoldenAgeTurns>20</GoldenAgeTurns>
-			<EventDuration>-1</EventDuration>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}의 콘스탄티노플 성벽</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_5</Type>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_5</Help>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_5</Description>
-			<IsOneShot>true</IsOneShot>
-			<RequiresIdeology>true</RequiresIdeology>
-			<EraScaling>true</EraScaling>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3">
+			<Text>{3_PlayerName}는 수도의 성벽을 전례 없는 수준의 방어로 보강했습니다!</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_BYZANTIUM_UE_CHOICE_6</Type>
-			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_6</Help>
-			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_6</Description>
-			<IsOneShot>true</IsOneShot>
-			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
-			<FreeUnitsTechAppropriate>6</FreeUnitsTechAppropriate>
-			<CapitalEffectOnly>true</CapitalEffectOnly>
-			<EventPromotion>PROMOTION_UE_DEUS_VEULT</EventPromotion>
-			<EraScaling>true</EraScaling>
-			<RequiresWar>true</RequiresWar>
-			<EventDuration>-1</EventDuration>
-			<RequiresHolyCity>true</RequiresHolyCity>
-			<Expires>false</Expires>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}의 세금 개혁</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4">
+			<Text>{3_PlayerName}는 구식 세금 제도를 폐지하여 전국적인 축제를 촉발시켰습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}의 성상 숭배</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5">
+			<Text>{3_PlayerName}는 성상 숭배를 지지하여 수세기 동안 이어진 종교적 논쟁을 종식시켰습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}의 성전</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6">
+			<Text>{3_PlayerName}는 신앙심 있는 자들에게 이교도에 대한 현대의 성전을 선포했습니다!</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION">
+			<Text>새로운 로마</Text>
 		</Row>
-	</Event_ParentEvents>
-
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</Type>
-			<DefaultBuilding>BUILDING_BYZANTIUM_UE_DUMMY</DefaultBuilding>
-			<MaxPlayerInstances>1</MaxPlayerInstances>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP">
+			<Text>고귀한 여제시여, 다시 한번 성직자들이 당신을 정당한 왕좌에서 끌어내리려 합니다! 그들은 결코 당신과 같은 여성을 왕좌에 앉히는 것을 참지 못할 것입니다.[NEWLINE]그들의 계획을 무너뜨리기 위해 서둘러야 합니다!</Text>
 		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_BYZANTIUM_UE_DUMMY</Type>
-			<BuildingClass>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</BuildingClass>
-			<Cost>-1</Cost>
-			<Description>TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY</Description>
-			<Help>TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY_HELP</Help>
-			<FaithCost>-1</FaithCost>
-			<PrereqTech>NULL</PrereqTech>
-			<NukeImmune>true</NukeImmune>
-			<Defense>1000</Defense>
-			<ExtraCityHitPoints>200</ExtraCityHitPoints>
-			<IconAtlas>CE123_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<NeverCapture>true</NeverCapture>
-			<IsDummy>true</IsDummy>
-			<CapitalOnly>true</CapitalOnly>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_1">
+			<Text>원하는 위인을 선택하여 받습니다.</Text>
 		</Row>
-	</Buildings>
-	<Building_SpecificGreatPersonRateModifier>
-		<Row>
-			<BuildingType>BUILDING_BYZANTIUM_UE_DUMMY</BuildingType>
-			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<Modifier>33</Modifier>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}을(를) 지불하여 4명의 흉노 기마 궁수를 [ICON_CAPITAL] 수도에서 모집합니다.</Text>
 		</Row>
-	</Building_SpecificGreatPersonRateModifier>
-
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_UE_DEUS_VEULT</Type>
-			<Description>TXT_KEY_PROMOTION_UE_DEUS_VEULT</Description>
-			<CannotBeChosen>true</CannotBeChosen>
-			<OutsideFriendlyLandsModifier>15</OutsideFriendlyLandsModifier>
-			<Help>TXT_KEY_PROMOTION_UE_DEUS_VEULT_HELP</Help>
-			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_UE_DEUS_VEULT</PediaEntry>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_3">
+			<Text>[ICON_CAPITAL] 수도의 방어력을 개선하여 +10 [ICON_STRENGTH] 전투력, +200 HP, 그리고 +33% [ICON_GREAT_ENGINEER] 위대한 기술자 포인트를 제공합니다.</Text>
 		</Row>
-	</UnitPromotions>
-	<UnitPromotions_YieldFromKills>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>50</Yield>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_4">
+			<Text>비효율적인 세금을 철폐하여 경제를 활성화합니다: 제국은 20턴 동안 [ICON_GOLDEN_AGE] 황금기와 [COLOR_POSITIVE_TEXT]시민의 날[ENDCOLOR]에 돌입합니다.</Text>
 		</Row>
-	</UnitPromotions_YieldFromKills>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_5">
+			<Text>{1_YieldCost}을(를) 사용하여 제국에 성상 숭배를 복원하십시오. 모든 [ICON_GREAT_ARTIST] 예술가는 추가로 +5 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_GOLDEN_AGE] 황금기 점수, 그리고 [ICON_TOURISM] 관광 점수를 생성합니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_6">
+			<Text>{1_YieldCost}을(를) 소집하여 적에 대한 성전을 시작하십시오. 모든 도시 근처에서 무작위 유닛이 모집되며, 모든 유닛과 다음 {4_Turns} 동안 모집된 유닛은 성전 프로모션을 받습니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_1">
+			<Text>*외딴 지역의 한 어린이가 기적을 일으켰습니다. 성직자들은 그들을 꼭두각시로 왕좌에 앉히려는 음모를 꾸미고 있습니다*[NEWLINE]우리가 먼저 그들에게 도달하지 못하게 해서는 안 됩니다. 그 아이를 데려오십시오!</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_2">
+			<Text>*성직자들의 아들들이 이제 군대의 모든 고위직을 차지하고 있습니다*[NEWLINE]나는 도시 경비대에 대한 절대적인 신뢰가 있지만, 그들은 전면적인 쿠데타에 맞설 수 없습니다. 성직자들의 손아귀에서 벗어난 군인들이 필요합니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_3">
+			<Text>*우리의 적들이 다음으로 침략을 시도할 때, 총독들이 방어선을 풀고 수도로 행진할 수 있도록 할 것이라는 음모가 있습니다!*[NEWLINE]궁전은 주요 국가 기관들로 둘러싸여 있습니다. 이 소문이 사실이 아니더라도, 수도가 함락되는 것을 절대 용납할 수 없습니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_4">
+			<Text>*엘리트들은 고대 법에 따라 그들의 세입자들로부터 무거운 공물을 징수하며 부를 축적하고 있습니다*[NEWLINE]이 크리사르기론 세금은 암흑 시대의 잔재입니다. 우리는 현대 경제의 웃음거리가 되고 있습니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_5">
+			<Text>*한동안 성직자들은 '성상 파괴 운동'을 명분으로 예술 작품들을 몰수하여 부를 축적해왔습니다*[NEWLINE]우리가 이 관행을 금지할 의도를 보인다면, 교회 내에서 상당한 지지를 받을 것입니다.</Text>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_6">
+			<Text>*비잔틴 제국에 대한 외부의 위협만이 성직자들을 권력에 남게 합니다. 우리가 그들 없이 적들과 싸울 수 있다면...*[NEWLINE]우리 백성은 자유로워질 것입니다! 신의 뜻입니다!</Text>
 		</Row>
-	</UnitPromotions_UnitCombats>
-
-	<EventChoice_SpecialistYieldChange>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT">
+			<Text>성전</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT_HELP">
+			<Text>외국 영토에서 전투력 +15%. 처치 시 신앙 획득. 비잔틴 제국 이벤트에서만 부여됩니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY">
+			<Text>콘스탄티노플 성벽</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
-			<YieldChange>5</YieldChange>
+		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY_HELP">
+			<Text>+10 [ICON_STRENGTH] 전투력, +200 HP, 그리고 +33% [ICON_GREAT_ENGINEER] 위대한 기술자 포인트.</Text>
 		</Row>
-	</EventChoice_SpecialistYieldChange>
-	<EventChoice_FreeUnits>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<UnitType>UNIT_HUN_HORSE_ARCHER</UnitType>
-			<Quantity>4</Quantity>
-		</Row>
-	</EventChoice_FreeUnits>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>50</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_MinimumStartYield>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>50</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>350</Yield>
-		</Row>
-	</EventChoice_MinimumStartYield>
-
-<!--<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>8</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>1</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>7</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-	</EventChoiceFlavors>-->
-	<EventChoice_Notification>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
-			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
-			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6</Description>
-			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6_S</ShortDescription>
-			<IsWorldEvent>true</IsWorldEvent>
-		</Row>
-	</EventChoice_Notification>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1_S">
-      <Text>{1_CivShortDescription}의 기적적인 탄생</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1">
-      <Text>비잔틴 제국은 기적을 행하는 사람의 탄생으로 축복받았습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2_S">
-      <Text>{1_CivShortDescription}의 외국 용병</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2">
-      <Text>{3_PlayerName}는 비잔틴 군대를 다변화하기 위해 외국 용병을 고용했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3_S">
-      <Text>{1_CivShortDescription}의 콘스탄티노플 성벽</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3">
-      <Text>{3_PlayerName}는 수도의 성벽을 전례 없는 수준의 방어로 보강했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4_S">
-      <Text>{1_CivShortDescription}의 세금 개혁</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4">
-      <Text>{3_PlayerName}는 구식 세금 제도를 폐지하여 전국적인 축제를 촉발시켰습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5_S">
-      <Text>{1_CivShortDescription}의 성상 숭배</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5">
-      <Text>{3_PlayerName}는 성상 숭배를 지지하여 수세기 동안 이어진 종교적 논쟁을 종식시켰습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6_S">
-      <Text>{1_CivShortDescription}의 성전</Text>
-    </Row>
-    <Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6">
-      <Text>{3_PlayerName}는 신앙심 있는 자들에게 이교도에 대한 현대의 성전을 선포했습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION">
-      <Text>새로운 로마</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP">
-      <Text>고귀한 여제시여, 다시 한번 성직자들이 당신을 정당한 왕좌에서 끌어내리려 합니다! 그들은 결코 당신과 같은 여성을 왕좌에 앉히는 것을 참지 못할 것입니다.[NEWLINE]그들의 계획을 무너뜨리기 위해 서둘러야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_1">
-      <Text>원하는 위인을 선택하여 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}을(를) 지불하여 4명의 흉노 기마 궁수를 [ICON_CAPITAL] 수도에서 모집합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_3">
-      <Text>[ICON_CAPITAL] 수도의 방어력을 개선하여 +10 [ICON_STRENGTH] 전투력, +200 HP, 그리고 +33% [ICON_GREAT_ENGINEER] 위대한 기술자 포인트를 제공합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_4">
-      <Text>비효율적인 세금을 철폐하여 경제를 활성화합니다: 제국은 20턴 동안 [ICON_GOLDEN_AGE] 황금기와 [COLOR_POSITIVE_TEXT]시민의 날[ENDCOLOR]에 돌입합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_5">
-      <Text>{1_YieldCost}을(를) 사용하여 제국에 성상 숭배를 복원하십시오. 모든 [ICON_GREAT_ARTIST] 예술가는 추가로 +5 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_GOLDEN_AGE] 황금기 점수, 그리고 [ICON_TOURISM] 관광 점수를 생성합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_6">
-      <Text>{1_YieldCost}을(를) 소집하여 적에 대한 성전을 시작하십시오. 모든 도시 근처에서 무작위 유닛이 모집되며, 모든 유닛과 다음 {4_Turns} 동안 모집된 유닛은 성전 프로모션을 받습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_1">
-      <Text>*외딴 지역의 한 어린이가 기적을 일으켰습니다. 성직자들은 그들을 꼭두각시로 왕좌에 앉히려는 음모를 꾸미고 있습니다*[NEWLINE]우리가 먼저 그들에게 도달하지 못하게 해서는 안 됩니다. 그 아이를 데려오십시오!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_2">
-      <Text>*성직자들의 아들들이 이제 군대의 모든 고위직을 차지하고 있습니다*[NEWLINE]나는 도시 경비대에 대한 절대적인 신뢰가 있지만, 그들은 전면적인 쿠데타에 맞설 수 없습니다. 성직자들의 손아귀에서 벗어난 군인들이 필요합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_3">
-      <Text>*우리의 적들이 다음으로 침략을 시도할 때, 총독들이 방어선을 풀고 수도로 행진할 수 있도록 할 것이라는 음모가 있습니다!*[NEWLINE]궁전은 주요 국가 기관들로 둘러싸여 있습니다. 이 소문이 사실이 아니더라도, 수도가 함락되는 것을 절대 용납할 수 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_4">
-      <Text>*엘리트들은 고대 법에 따라 그들의 세입자들로부터 무거운 공물을 징수하며 부를 축적하고 있습니다*[NEWLINE]이 크리사르기론 세금은 암흑 시대의 잔재입니다. 우리는 현대 경제의 웃음거리가 되고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_5">
-      <Text>*한동안 성직자들은 '성상 파괴 운동'을 명분으로 예술 작품들을 몰수하여 부를 축적해왔습니다*[NEWLINE]우리가 이 관행을 금지할 의도를 보인다면, 교회 내에서 상당한 지지를 받을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_6">
-      <Text>*비잔틴 제국에 대한 외부의 위협만이 성직자들을 권력에 남게 합니다. 우리가 그들 없이 적들과 싸울 수 있다면...*[NEWLINE]우리 백성은 자유로워질 것입니다! 신의 뜻입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT">
-      <Text>성전</Text>
-    </Row>
-    <Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT_HELP">
-      <Text>외국 영토에서 전투력 +15%. 처치 시 신앙 획득. 비잔틴 제국 이벤트에서만 부여됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY">
-      <Text>콘스탄티노플 성벽</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY_HELP">
-      <Text>+10 [ICON_STRENGTH] 전투력, +200 HP, 그리고 +33% [ICON_GREAT_ENGINEER] 위대한 기술자 포인트.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

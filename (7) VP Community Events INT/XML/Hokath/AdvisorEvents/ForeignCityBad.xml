@@ -1,72 +1,17 @@
-﻿<GameData>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_BAD</Type>
-			<EventClass>EVENT_CLASS_BAD</EventClass>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP</Help>
-			<NumChoices>1</NumChoices>
-			<RandomChance>25</RandomChance>
-			<RandomChanceDelta>0</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<CityEventArt>advisorforeign.dds</CityEventArt>
-			<CityEventAudio>AS2D_EVENT_EFOREIGN</CityEventAudio>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION">
+			<Text>외국인 살해 사건!</Text>
 		</Row>
-	</CityEvents>
-	<CityEvent_EventLinks>
-		<Row>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_BAD</CityEventType>
-			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP">
+			<Text></Text>
 		</Row>
-	</CityEvent_EventLinks>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP_CHOICE_1</Help>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP_CHOICE_1">
+			<Text>{2_InstantYield}을 보상으로 지불하고, {4_GPChange}는 관계를 더 악화시킵니다.</Text>
 		</Row>
-	</CityEventChoices>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_BAD</CityEventType>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION_CHOICE_1">
+			<Text>외국인 살해 사건!</Text>
 		</Row>
-	</CityEvent_ParentEvents>
-
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-75</Yield>
-		</Row>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-75</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEventChoice_GreatPersonPoints>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_BAD_CHOICE_1</CityEventChoiceType>
-			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
-			<Points>-200</Points>
-		</Row>
-	</CityEventChoice_GreatPersonPoints>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION">
-      <Text>외국인 살해 사건!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_HELP_CHOICE_1">
-      <Text>{2_InstantYield}을 보상으로 지불하고, {4_GPChange}는 관계를 더 악화시킵니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_BAD_DESCRIPTION_CHOICE_1">
-      <Text>외국인 살해 사건!</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>

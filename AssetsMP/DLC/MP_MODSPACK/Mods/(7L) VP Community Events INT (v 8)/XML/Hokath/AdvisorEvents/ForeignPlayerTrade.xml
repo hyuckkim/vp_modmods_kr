@@ -1,219 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Events>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE</Type>
-			<EventClass>EVENT_CLASS_TRADE</EventClass>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP</Help>
-			<NumChoices>3</NumChoices>
-			<RandomChance>50</RandomChance>
-			<RandomChanceDelta>10</RandomChanceDelta>
-			<IsOneShot>true</IsOneShot>
-			<EventArt>advisorforeign.dds</EventArt>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION">
+			<Text>이국적인 상품</Text>
 		</Row>
-	</Events>
-	<Event_EventLinks>
-		<Row>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
-			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
-			<CheckForActive>true</CheckForActive>
-			<CheckKnownPlayers>false</CheckKnownPlayers>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP">
+			<Text>외교 고문이 상인이 도시 국가에 들렀다는 소식을 전해왔습니다. 그녀는 가능한 거래를 확보하려고 하고 있지만, 상인들이 치열한 경쟁을 벌이고 있어서 한 상인과 거래를 하면 나머지 상인들과의 관계가 악화될 수 있습니다.</Text>
 		</Row>
-	</Event_EventLinks>
-	<EventChoices>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_1</Help>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>2 [ICON_RES_HORSE] 말을 교환하여 [ICON_RES_IVORY] 상아를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_2</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>{1_YieldCost}를 지불하여 [ICON_RES_GLASS] 유리 한 개를 생산하는 데 필요한 {2_InstantYield}를 배웁니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_3</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>{1_YieldCost}를 지불하여 {2_InstantYield}의 가치가 있는 독특한 도자기 스타일을 설정하고 [ICON_RES_PORCELAIN] 도자기 한 개를 얻습니다.</Text>
 		</Row>
-		<Row>
-			<Type>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</Type>
-			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_4</Help>
-			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_4</Description>
-			<IsOneShot>true</IsOneShot>
-			<EventDuration>-1</EventDuration>
-			<EraScaling>true</EraScaling>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_4">
+			<Text>{1_YieldCost}를 지불하여 외국 사절들을 감동시킬 고급 [ICON_RES_JEWELRY] 보석을 얻으며 {2_InstantYield}를 획득합니다.</Text>
 		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<!--<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
-		</Row>-->
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>여러 마리의 경주마를 제공하고 이 '코끼리들'의 공급을 얻겠습니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>이 훌륭한 유리제품이 흥미롭습니다. 이렇게 섬세한 것을 생산할 과학적 능력이 부족합니다.</Text>
 		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<EventType>EVENT_AES_FOREIGN_PLAYER_TRADE</EventType>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>그동안 우리가 철제 그릇을 사용해왔다는 게 믿기지 않습니다. 도자기라는 재료가 존재했다니요?</Text>
 		</Row>
-	</Event_ParentEvents>
-	
-	<EventChoice_MinimumResourceRequired>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>2</Quantity>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_4">
+			<Text>이 보석 상인들이 자랑하는 대로 할 수 있다면, 수도의 모든 외국 사절들이 질투할 것입니다.</Text>
 		</Row>
-	</EventChoice_MinimumResourceRequired>
-	<EventChoice_ResourceQuantity>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_IVORY</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>-2</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<ResourceType>RESOURCE_GLASS</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<ResourceType>RESOURCE_PORCELAIN</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<ResourceType>RESOURCE_JEWELRY</ResourceType>
-			<Quantity>1</Quantity>
-		</Row>
-	</EventChoice_ResourceQuantity>
-	<EventChoice_EventCostYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>200</Yield>
-		</Row>
-	</EventChoice_EventCostYield>
-	<EventChoice_InstantYield>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<YieldType>YIELD_TOURISM</YieldType>
-			<Yield>100</Yield>
-		</Row>
-	</EventChoice_InstantYield>
-	
-	<EventChoiceFlavors>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_1</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_2</EventChoiceType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_3</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_TRADE_CHOICE_4</EventChoiceType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-	</EventChoiceFlavors>
-  <Language_ko_KR>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION">
-      <Text>이국적인 상품</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP">
-      <Text>외교 고문이 상인이 도시 국가에 들렀다는 소식을 전해왔습니다. 그녀는 가능한 거래를 확보하려고 하고 있지만, 상인들이 치열한 경쟁을 벌이고 있어서 한 상인과 거래를 하면 나머지 상인들과의 관계가 악화될 수 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_1">
-      <Text>2 [ICON_RES_HORSE] 말을 교환하여 [ICON_RES_IVORY] 상아를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_2">
-      <Text>{1_YieldCost}를 지불하여 [ICON_RES_GLASS] 유리 한 개를 생산하는 데 필요한 {2_InstantYield}를 배웁니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_3">
-      <Text>{1_YieldCost}를 지불하여 {2_InstantYield}의 가치가 있는 독특한 도자기 스타일을 설정하고 [ICON_RES_PORCELAIN] 도자기 한 개를 얻습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_HELP_CHOICE_4">
-      <Text>{1_YieldCost}를 지불하여 외국 사절들을 감동시킬 고급 [ICON_RES_JEWELRY] 보석을 얻으며 {2_InstantYield}를 획득합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
-      <Text>여러 마리의 경주마를 제공하고 이 '코끼리들'의 공급을 얻겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
-      <Text>이 훌륭한 유리제품이 흥미롭습니다. 이렇게 섬세한 것을 생산할 과학적 능력이 부족합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
-      <Text>그동안 우리가 철제 그릇을 사용해왔다는 게 믿기지 않습니다. 도자기라는 재료가 존재했다니요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_TRADE_DESCRIPTION_CHOICE_4">
-      <Text>이 보석 상인들이 자랑하는 대로 할 수 있다면, 수도의 모든 외국 사절들이 질투할 것입니다.</Text>
-    </Row>
-  </Language_ko_KR>
+	</Language_ko_KR>
 </GameData>
