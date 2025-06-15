@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+
+<!-- Fishing Boat Expedition -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION">
+			<Text>Old Men and the Sea</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_HELP">
+			<Text>A band of local fishermen have appealed to the City for funding for a seasonal fishing expedition.[NEWLINE][NEWLINE]Choose from the following options...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_1">
+			<Text>Let's focus on something simple.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_1_HELP">
+			<Text>Spend {1_Scaled}. Gain {2_InstantYield} Food in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_2">
+			<Text>A large investment will pay dividends.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_2_HELP">
+			<Text>Spend {1_Scaled}. Fishing Boats near the City will gain +5 [ICON_FOOD] Food for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_3">
+			<Text>I'd rather invest in something much more lucrative...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_3_HELP">
+			<Text>Invest {1_Scaled}. 33% chance for a Harbor to be constructed in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_3_SUCCESSFUL">
+			<Text>The investment in {2_City} was successful and paid for construction!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FISHING_EXPEDITION_CHOICE_3_SUCCESSFUL_S">
+			<Text>Harbor Constructed!</Text>
+		</Row>
+
+<!-- Amphitheater -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA">
+			<Text>Dramatic Masterpiece</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_HELP">
+			<Text>Writers from the City have penned a new work, and critics are calling it a 'masterpiece'. News of this has reached your ear, and your advisors await your response.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_1">
+			<Text>Send news to the other civilizations of the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_1_HELP">
+			<Text>{1_YieldCost}. Gain {2_InstantYield} Tourism with all known Civilizations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_2">
+			<Text>Let's celebrate this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_2_HELP">
+			<Text>Gain {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_3">
+			<Text>Make sure the writers are praised for this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_3_HELP">
+			<Text>Gain {4_GPChange} points in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_4">
+			<Text>They should have been praying instead.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_4_HELP">
+			<Text>Gain {2_InstantYield}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_1_SUCCESSFUL">
+			<Text>Writers from {2_City} have penned a new dramatic work, attracting visitors from around the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AMPHITHEATER_NEW_DRAMA_CHOICE_1_SUCCESSFUL_S">
+			<Text>Writers from {2_CityName} create a masterpiece.</Text>
+		</Row>
+
+<!-- Temple Woes -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS">
+			<Text>Trouble at the Temple</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_HELP">
+			<Text>Priests from the City demand that you weigh in on a religious debate. As the City grows, more and more people of different faiths are asking for use of the Temple. People of the majority faith resent this and threaten violence if you allow nonbelievers into the Temple. Nonbelievers, however, threaten to leave if you do not let them in. What will you do?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_1">
+			<Text>Drive the non-believers from the City!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_1_HELP">
+			<Text>-1 [ICON_CITIZEN] Population in the City, and 2 turns of [ICON_RESISTANCE] Resistance. Gain {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_2">
+			<Text>Let the foreigners in, but make them pay for it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_2_HELP">
+			<Text>Temple gains +2 [ICON_GOLD] Gold and +1 [ICON_PEACE] Faith. -1 [ICON_HAPPINESS_1] Happiness in City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_3">
+			<Text>We must accept the nonbelievers as they are.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_3_HELP">
+			<Text>50% chance that the Temple is destroyed. If so, the city gains +1 [ICON_PEACE] Faith and +1 [ICON_HAPPINESS_1] Happiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_3_SUCCESSFUL">
+			<Text>The nonbelievers in {2_City} struck out at the Temple, burning it to the ground in protest. Your people are not shaken, however. City receives +1 [ICON_HAPPINESS_1] Happiness, and: {5_Help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_3_SUCCESSFUL_S">
+			<Text>Temple in {2_City} destroyed!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_4">
+			<Text>We should think bigger.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_TEMPLE_CONCERNS_CHOICE_4_HELP">
+			<Text>{1_YieldCost}. The Temple is destroyed, and a Grand Temple is built in its place.</Text>
+		</Row>
+
+<!-- Lighthouse -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE">
+			<Text>Beacon of Hope</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_HELP">
+			<Text>Fishermen in the City are concerned about the fate of the City's Lighthouse. In recent years it has fallen under disrepair, and it needs to be rebuilt. How should we deal with this?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_1">
+			<Text>Let private citizens manage it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_1_HELP">
+			<Text>Lighthouse gains +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_2">
+			<Text>The city should manage it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_2_HELP">
+			<Text>Lose {1_YieldCost}. The Lighthouse gains +1 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_3">
+			<Text>Sell off the land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_LIGHTHOUSE_CHOICE_3_HELP">
+			<Text>Gain {2_InstantYield}. The Lighthouse is destroyed.</Text>
+		</Row>
+		
+<!-- Hokath Musketeers - modified -->	
+
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_DESCRIPTION">
+			<Text>All For One</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_HELP">
+			<Text>In the midsts of this war, there are rumours that your consort has not only been unfaithful, but is actively fraternising with the enemy![NEWLINE][NEWLINE] However, thanks to the combined efforts of the Crown's many agents, critical state secrets were kept from enemy hands! The mastermind of the plot? Your paramour!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_1">
+			<Text>The valour of my soldiers was instrumental in thwarting this plot. See to it they are given promotions befitting their deeds!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_1_HELP">
+			<Text>3 Musketeers are formed near the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_2">
+			<Text>It was only due to the presence of mind of my priests and advisors that the enemy agents were apprehended. Reward him with whatever he desires.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_2_HELP">
+			<Text>3 Inquisitors are formed near the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_3">
+			<Text>For these servants to renounce that traitor and bring this theft to our attention shows great patriotism and bravery! We should reward them with diplomatic appointments. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_3_HELP">
+			<Text>3 Envoys are formed near the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_4">
+			<Text>We must thank our secret agents who have proven that they were superior to those of the enemy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MUSKETEERS_CHOICE_4_HELP">
+			<Text>When an enemy [ICON_SPY] Spy is killed receive [ICON_GOLDEN_AGE] Golden Age Points scaling with era and the level of the Spy killed.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MUSKETEERS_DUMMY">
+			<Text>All for One!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MUSKETEERS_DUMMY_HELP">
+			<Text>Receive [ICON_GOLDEN_AGE] Golden Age Points scaling with era and the level of the Spy for each enemy Spy killed.</Text>
+		</Row>
+
+<!-- Hokath Notorious Pirate - modified -->
+	
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_DESCRIPTION">
+			<Text>A Notorious Pirate</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_HELP">
+			<Text>My Liege, a notorious pirate is now known to spend his time ashore in one of our Harbor's taverns. His presence is attracting a slew of undiserables. So far, no one has been able to catch him.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_1">
+			<Text>Certainly no pirate I've ever heard of. Send some Navy official to deal with this. What's the worse that could happen?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_1_HELP">
+			<Text>This crackdown has some risk. There is a chance the Harbor could be destroyed.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_1_SUCCESSFUL">
+			<Text>Because of the attempt to round up pirates, rioters in {2_City} have burned the Harbor to the ground in protest and are terrorizing the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_1_SUCCESSFUL_S">
+			<Text>The Harbor in {2_City} has been destroyed!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_2">
+			<Text>I've heard much of this sailor's exploits. Send an agent to present him with this letter of marque.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_2_HELP">
+			<Text>Spend 1000 [ICON_GOLD] Gold to gain a Corvette.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_3">
+			<Text>Though the local fishermen may not like it, I can see the benefits of having a legendary tavern.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NOTORIOUS_PIRATE_CHOICE_3_HELP">
+			<Text>For {5_Turns}, the City's Harbor gains +2 [ICON_CULTURE] Culture and +2 [ICON_TOURISM] Tourism; however, nearby Fishing Boats lose 3 [ICON_FOOD] Food and 1 [ICON_GOLD] Gold.</Text>
+		</Row>
+
+<!-- Xony Fireworks -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FIREWORKS_CHOICE_1">
+			<Text>Fireworks!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIREWORKS_CHOICE_1_HELP">
+			<Text>To celebrate the WLTKD, there was a huge firework display in {2_City} during the evening. Citizens came from far and wide to see it. Gain 2 [ICON_HAPPINESS_1] Happiness for {5_Turns}.</Text>
+		</Row>
+
+<!-- Xony HarborTrade -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_DESCRIPTION">
+			<Text>Harbor Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_HELP">
+			<Text>The local harbor is flourishing with trade and now foreign merchants are asking to establish a branch office here; however,we only have enough place for one of them. Which kind of merchants should we approve?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_1">
+			<Text>Merchants who bring new tools and studies are welcomed here!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_1_HELP">
+			<Text>Harbor provides +1 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_2">
+			<Text>Merchants who bring in cultural artifacts and art are welcomed here!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_2_HELP">
+			<Text>Harbor provides +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_3">
+			<Text>Merchants who bring in treasures and riches are welcomed here!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HARBORTRADE_CHOICE_3_HELP">
+			<Text>Harbor provides +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

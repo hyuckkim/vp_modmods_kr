@@ -1,0 +1,434 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_ETHIOPIA</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<LessThanMaximumTradeRoutes>true</LessThanMaximumTradeRoutes>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CARAVANSARY</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<IsUnhappy>true</IsUnhappy>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_ETHIOPIA_UE_DUMMY</EventBuildingClassGlobal>
+			<GoldenAgeTurns>20</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_ETHIOPIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<EraScaling>true</EraScaling>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_ETHIOPIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ETHIOPIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_ETHIOPIA_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ETHIOPIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_ETHIOPIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_ETHIOPIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_ETHIOPIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldFromPurchase>
+		<Row>
+			<BuildingType>BUILDING_ETHIOPIA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldFromPurchase>
+
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_4</EventChoiceType>
+			<UnitType>UNIT_ZULU_IMPI</UnitType>
+			<Quantity>5</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>500</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ETHIOPIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Great Speech</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} inspires his people to Great Deeds!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Special Coins</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} mints iconic coinage to send with his merchants to heathen lands.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Stone Worship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} begins the practice of carving places of worship directly into outcrops of stone.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Ormo Tribesman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_4">
+			<Text>{3_PlayerName}'s words of unity inspire Oromo tribesmen to come to his aid!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Social Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} begins a [ICON_GOLDEN_AGE] Golden Age of social reform!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Breadbasket of Africa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ETHIOPIA_UE_CHOICE_6">
+			<Text>{3_PlayerName}'s agricultural science promises to make Ethiopia the bread basket of the World!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION">
+			<Text>Lion Of Zion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP">
+			<Text>Ras Tafari, your people are gathered in the square to hear your words of wisdom.[NEWLINE][NEWLINE]Show them the truth!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_2">
+			<Text>Mint {1_YieldCost} special coinage for your traders. Every [ICON_GREAT_MERCHANT] Merchant provides +1 [ICON_PEACE] Faith and +1 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_3">
+			<Text>Monolithic architecture allows Temples and sources of [ICON_RES_STONE] Stone to generate +2 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_4">
+			<Text>Rural tribes come to your aid. 5 Impi spawns in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_5">
+			<Text>Expend up to {2_InstantYield} to enter a 20 Turns [ICON_GOLDEN_AGE] Golden Age. Reforms allow Cities to convert 10% of [ICON_GOLD] Gold spent to [ICON_CULTURE] Culture when purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_HELP_CHOICE_6">
+			<Text>Divert {1_YieldCost} into agricultural science. Farms and Plantations generate +2 [ICON_FOOD] Food, and [ICON_GREAT_MERCHANT] Merchants generate +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>When good men do nothing, evil triumphs. I call upon each citizen to do their duty. Together, through cooperation and faith, we shall enough peace, righteousness and prosperity.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>With 30 pieces of silver, our Lord was betrayed. We will print His likeness into seventy times seven coins, and spread them around the whole World! So every man, woman, and child knows the name of their savior!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>Just as God carved his love into stone, we too must show our love of Him. Not just in our temples, but in all our works.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>In this world plagued by division, we allow things like race and creed to set us apart. But God does not see the color of our skin, only the goodness of our soul. In this time of war, we must all come together to protect all that is good and just.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>My children you must know by now. You must know that until the color of a man's skin is of no more significance than the color of his eyes we will not have peace on Earth. We will write it in our songs, in our tales, in our laws. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ETHIOPIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>When they came to hear the Lord, they were called away to eat. But instead, he told them, stay, and fed them with manna from Heaven. How can we come closer to the Lord when our thoughts are shackled to the necessities of Earth. I will see that no man wants for bread, but no man can live by bread alone...</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_UE_DUMMY">
+			<Text>Ethiopian Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_UE_DUMMY_HELP">
+			<Text>Converts 5% of [ICON_GOLD] Gold to [ICON_CULTURE] Culture on this city's purchases.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

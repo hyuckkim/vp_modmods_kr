@@ -1,0 +1,381 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_FRANCE_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_FRANCE</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FORGE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<MinimumNationalPopulation>50</MinimumNationalPopulation>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GARDEN</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<LosingMoney>true</LosingMoney>
+			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+			<ResistanceTurns>2</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<EventFreePolicies>1</EventFreePolicies>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+		</Row>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HERMITAGE</RequiredAnywhereBuildingClass>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_FRANCE_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_6</Description>
+			<EraScaling>true</EraScaling>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_FRANCE_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_JEWELRY</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STOCKYARD</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FRANCE_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Societal Moderator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_1">
+			<Text>{3_PlayerName} brings a potential thermidor into the fold!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Acquired Craftsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_2">
+			<Text>{3_PlayerName} begins export of enamelled crockery and jewelry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Salon Visit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_3">
+			<Text>{3_PlayerName} personally visits a noted Salon, titillating high society.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Revolution!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_4">
+			<Text>The Third Estate have risen against {3_PlayerName}! His Empire is in anarchy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Impressionist Movement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_5">
+			<Text>The Impressionist school flourishes in France!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Farm Trade Deals</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FRANCE_UE_CHOICE_6">
+			<Text>{3_PlayerName} negotiates an extensive, protectionist agricultural deal with its trade partners.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION">
+			<Text>To All Talents</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP">
+			<Text>The most recent plebiscite has not been favorable to the Republic. Indeed, the participation rate has been unusually high.[NEWLINE][NEWLINE]How can we implement a constitution against the vox populi?!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_2">
+			<Text>Stimulate craftsmen with {1_YieldCost}. Receive a copy of the [ICON_RES_JEWELRY] Jewelry Luxury Resource. Forges gain +2 [ICON_GOLD] Gold and +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_3">
+			<Text>Salons spring up around your Cities' Gardens: +3 [ICON_RESEARCH] Science and +5% [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_4">
+			<Text>Force through a Free Policy, causing you to enter 2 Turns of [ICON_RESISTANCE] Anarchy. All cities lose 2 [ICON_CITIZEN] Citizens.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_5">
+			<Text>Invest {2_InstantYield} in this new school. Cities with [ICON_GREAT_ARTIST] Artist's Guilds gain +10 [ICON_TOURISM] Tourism and +10% [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_HELP_CHOICE_6">
+			<Text>Pay {2_InstantYield}. Farms yield +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture. Agribusinesses gain +5 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_1">
+			<Text>Find me the most qualified man amongst the dissenters. Give him an office.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_2">
+			<Text>When the finances will soon be righted and the people content once again. Our the popularity of our enameled trinkets are becoming renowned abroad, trade will follow.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_3">
+			<Text>Support from the influential is waining because I do not engage in this prevailing salon culture. Perhaps it is time I made an appearance. Who knows, they might just learn a thing or two.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_4">
+			<Text>The finances are managed by idiots and when I try to fix this woeful situation, my reforms are opposed?! If they can't stomach poverty, let them eat cake.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_5">
+			<Text>These cultural reforms may have been shot down by this Academie orchestrated campaign, it is no matter. We need but watch this artistic revolution unfurl before us.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FRANCE_UE_DESCRIPTION_CHOICE_6">
+			<Text>This widespread dissatisfaction over the recent trade deals are entirely understandable, but I am confident support will return when the benefits to our agriculture kick in.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
