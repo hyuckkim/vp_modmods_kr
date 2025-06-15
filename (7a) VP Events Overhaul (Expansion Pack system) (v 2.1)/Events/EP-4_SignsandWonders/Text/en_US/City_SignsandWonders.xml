@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/31/2016 12:08:05 AM -->
+<GameData>
+	<Language_en_US>
+	
+		<!-- ENG Talking Voices -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_MOUNTAINVOICES_DESCRIPTION">
+			<Text>Voices of the Mountains</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FORESTVOICES_DESCRIPTION">
+			<Text>Talking Trees</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DESERTVOICES_DESCRIPTION">
+			<Text>Air of the Sand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MOUNTAINVOICES_HELP">
+			<Text>People have been hearing strange whispers coming from the mountains. The citizens are curious and want an explanation. What should we say?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FORESTVOICES_HELP">
+			<Text>People have been hearing strange whispers coming from the forests. The citizens are curious and want an explanation. What should we say?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DESERTVOICES_HELP">
+			<Text>People have been hearing strange whispers coming from the desert. The citizens are curious and want an explanation. What should we say?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEVOICES_CHOICE_1">
+			<Text>Tell them they are hearing the sighs of our mother, Earth. Let it teach us!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEVOICES_CHOICE_2">
+			<Text>Tell them they are hearing the words of an ancient oracle! Let it inspire us!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEVOICES_CHOICE_3">
+			<Text>Tell them they are hearing the voices of our ancestors! Let us embrace them!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEVOICES_ALL_HELP">
+			<Text>The dedication of our citizens has resulted in {2_InstantYield}.</Text>
+		</Row>
+		
+
+		<!-- Wanderer -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER">
+			<Text>Mysterious Wanderer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_HELP">
+			<Text>A cloaked figure lingers outside the City's Walls. When asked why he has come to the city, he hands the guard a tattered letter:[NEWLINE][NEWLINE]"I am a man of many talents, but I have no home. Mute since birth, I teach and train without words. I can offer you one of three talents in exchange for hospitality and a home."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_1">
+			<Text>"The gift of the artist."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_1_HELP">
+			<Text>Gain {4_GPChange} in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_2">
+			<Text>"The gift of the craftsman."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_2_HELP">
+			<Text>Gain {4_GPChange} in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_3">
+			<Text>"The gift of the soothsayer."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_3_HELP">
+			<Text>Gain {4_GPChange} in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_4">
+			<Text>"The gift of the trader."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_4_HELP">
+			<Text>Gain {4_GPChange} in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_5">
+			<Text>"The gift of the warrior."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_5_HELP">
+			<Text>Gain {2_InstantYield} in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_6">
+			<Text>"The gift of the explorer."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WANDERER_CHOICE_6_HELP">
+			<Text>Gain {2_InstantYield} in the City.</Text>
+		</Row>
+		
+		<!-- Hokath Prize Hide - modified -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_DESCRIPTION_CHOICE_1">
+			<Text>Quite The Rug</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_CHOICE_1_HELP">
+			<Text>An enormous beast, responsible for deaths of many men, has finally fallen. Hunters flock to see the proof of the deed, which hold pridge of place in the - now legendary - lodge.[NEWLINE][NEWLINE]As a result, a short WLTKD starts in the City.</Text>
+		</Row>
+
+		<!-- AA Farm Bones - modified  -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_DESCRIPTION">
+			<Text>The Remains of a Terrible Monster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_HELP">
+			<Text>A local farmer has uncovered the bones of some kind of huge creature unlike any seen in living memory. Would you like us to send some men to acquire these remains?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_DESCRIPTION_CHOICE_1">
+			<Text>Find out if there are more of these creatures in the area then put them all on public display.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_CHOICE_1_HELP">
+			<Text>Begin 5 turns of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] and gain {2_InstantYield} towards Border Growth in this City (only affects Border Growth); however, local Farms lose 1 [ICON_FOOD] Food for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_DESCRIPTION_CHOICE_2">
+			<Text>We should find a great storyteller to create a tale about some brave knight who must have killed the beast in an epic battle to rescue a damsel in distress!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_CHOICE_2_HELP">
+			<Text>The monetary prize of {1_YieldCost} has resulted in {4_GPChange} for the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_DESCRIPTION_CHOICE_3">
+			<Text>Although it will not make our citizens happy, see if we can sell this creature. Our treasury needs a boost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_CHOICE_3_HELP">
+			<Text>Gain {2_InstantYield} from the auction of the fossil.The City revolts for 2 turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_DESCRIPTION_CHOICE_4">
+			<Text>Have our finest craftsmen carve up these relics to sell in the marketplace.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_EARLY_FARMBONES_CHOICE_4_HELP">
+			<Text>After a production cost of {1_YieldCost}, the sale of the relics result in a gain of {3_CityYield} for the next {5_Turns}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_DESCRIPTION">
+			<Text>A Terrible Lizard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_HELP">
+			<Text>Some of those dinosaur bones that get people so excited have been dug up at a local farm. What do you want us to do about it?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_DESCRIPTION_CHOICE_1">
+			<Text>I don't care about any dead reptiles! Turn them into something useful like chess pieces or musical instruments!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_CHOICE_1_HELP">
+			<Text>You gain 1 copy of [ICON_RES_IVORY], but it costs {1_YieldCost}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_DESCRIPTION_CHOICE_2">
+			<Text>The existence of these 'dinosaurs' is a matter of some debate. We should ask our religious leaders what their opinion is.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_CHOICE_2_HELP">
+			<Text>The trust you put into the clergy results in {2_InstantYield}, but this action angers many of our scientists resulting in {1_YieldCost}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_DESCRIPTION_CHOICE_3">
+			<Text>Who knows what other discoveries are in this area. Create a new department at the University to continue these digs and study these fossils.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_CHOICE_3_HELP">
+			<Text>All local Tundra permanently loses 1 [ICON_FOOD]; however, the City gains {4_GPChange} and local Stone resources gain 1 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_DESCRIPTION_CHOICE_4">
+			<Text>Dinosaurs are so inspirational. We should fund a new exhibit at the Museum with this find taking center stage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AA_LATE_FARMBONES_CHOICE_4_HELP">
+			<Text>Funding the musuem grant costs {1_YieldCost}. For the next {5_Turns}, the new exhibit yields +2 [ICON_CULTURE] Culture and +1 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+
+		<!-- Religious Relics -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_DESCRIPTION">
+			<Text>Religious Relics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_HELP">
+			<Text>A local community leader, known for his piety and devotion, has recently died in the City. There are starting to be rumors of miracles happening when people visit his tomb. How do you want us to respond?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_DESCRIPTION_CHOICE_1">
+			<Text>We must spread the word about these miracles far and wide.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_CHOICE_1_HELP">
+			<Text>A Missionary appears near the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_DESCRIPTION_CHOICE_2">
+			<Text>Instruct the priests to accomodate any visitors. We can turn the Temple into a new pilgrimage site.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_CHOICE_2_HELP">
+			<Text>For the next {5_Turns}, the Temple gains +2 [ICON_PEACE] Faith and +1 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_DESCRIPTION_CHOICE_3">
+			<Text>Find me a person who will pay for the relics of this saint!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RELIGIOUS_RELICS_CHOICE_3_HELP">
+			<Text>Gain {2_InstantYield} from the sale of these relics.</Text>
+		</Row>
+	
+	</Language_en_US>
+</GameData>

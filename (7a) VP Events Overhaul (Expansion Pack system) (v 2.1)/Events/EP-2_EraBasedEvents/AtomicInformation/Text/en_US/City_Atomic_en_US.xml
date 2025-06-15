@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+
+		<!-- WSO International - Default Event -->
+		<Row Tag="TXT_KEY_CITY_EVENT_STADIUM_WORLD_EVENT_CHOICE_1">
+			<Text>Stadium Sellout!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_STADIUM_WORLD_EVENT_CHOICE_1_HELP">
+			<Text>A game was held in your stadium as part of the WSO International! You gain {1_YieldCost} with all known Civilizations and {2_InstantYield}.</Text>
+		</Row>
+		
+		<!-- Local Stadium Event - modified -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT">
+			<Text>International Festival</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_HELP">
+			<Text>The local Chamber of Commerce is reviewing proposals for an international festival to be held in the City. There are many different options, and they are asking which one you prefer.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_1">
+			<Text>Definitely an international movie festival. Lights! Camera! Action!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_1_HELP">
+			<Text>The City enters a WLTKD for 10 turns and gains {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_2">
+			<Text>All you need is love. We don't really care about money because money cannot buy us love. We can take a sad song and make it better. Maybe we can get high with a little help from our friends with a music festival.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_2_HELP">
+			<Text>The City gains {4_GPChange}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_3">
+			<Text>I would recommend a Symposium of the Future. Let's see these new inventions and wander through the House of Tomorrow.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_3_HELP">
+			<Text>Merchants and Engineers in the City gain +3 [ICON_RESEARCH] for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_4">
+			<Text>Everyone loves Sportball. We should host World Sportball Championship and crown a winner!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_4_HELP">
+			<Text>You gain {1_YieldCost} with all known Civilizations and {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_5">
+			<Text>Béchamel, Velouté, Espagnole, Hollandaise, and Tomato. Yes...I'm talking about an international food festival. Someone get me a plate of curried ribs covered in sauerkraut and a glass of artisanal beer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_WORLD_FESTIVAL_EVENT_CHOICE_5_HELP">
+			<Text>Gain 1 copy of [ICON_RES_PEPPER] Pepper for {5_Turns}.</Text>
+		</Row>	
+
+	<!-- Hokath Fake Painting -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_DESCRIPTION">
+			<Text>Art Forgery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_HELP">
+			<Text>New, 'non-destructive' analysis is all the rage in our galleries. Unfortunately, our Cultural Advisor believes at least one of our paintings is, in fact, a fake.[NEWLINE][NEWLINE]They are going to find out...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_DESCRIPTION_CHOICE_1">
+			<Text>This is going to severely damage the reputation of the City's Artists' Guild...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_CHOICE_1_HELP">
+			<Text>Lose {3_GPChange}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_DESCRIPTION_CHOICE_2">
+			<Text>Oh well. Isn't all art a lie?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FAKE_PAINTING_CHOICE_2_HELP">
+			<Text>Lose {2_InstantYield}.</Text>
+		</Row>
+		
+		<!-- Hokath PETA - modified -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION">
+			<Text>101 Dalmatians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_CHOICE_1_HELP">
+			<Text>A animals rights group has burned down a number of Camps and released all of the captured animals back into the wild.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1">
+			<Text>101 Dalmatians</Text>
+		</Row>
+		
+		</Language_en_US>
+</GameData>

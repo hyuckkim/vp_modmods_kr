@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/31/2016 12:08:14 AM -->
+<GameData>
+	<Language_en_US>
+
+		<!-- Heat Wave -->
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_DESCRIPTION">
+			<Text>Heat wave!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_HELP">
+			<Text>Every summer seems hotter than the last, and our lakes and rivers are drying up. Soon a drought may be upon us. What should we do?[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_1">
+			<Text>We cannot allow this to happen! Subsidize the farms.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_1_HELP">
+			<Text>[NEWLINE]Use {1_YieldCost} to provide additional water resources to farmers across the empire. You are confident that you can avoid a drought.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_2">
+			<Text>Just in case there is something to this, let's set aside some national emergency funds.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_2_HELP">
+			<Text>[NEWLINE]You allocate {1_YieldCost} from the national treasury to offset any potential damages. You are hopeful that you can avoid a drought.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_3">
+			<Text>We have to look like we are taking this seriously. Send some money to local officials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_3_HELP">
+			<Text>[NEWLINE]You send {1_YieldCost} to the local governors. At least it will look like you did something if people start asking questions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_4">
+			<Text>Grin and bear it. There's nothing we can do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_HEAT_WAVE_CHOICE_4_HELP">
+			<Text>[NEWLINE]Unfortunately, we don't have the funds to do anything. Let's hope for cooler, wetter weather soon.</Text>
+		</Row>
+
+
+		<!-- Ice Age -->
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_DESCRIPTION">
+			<Text>Ice age!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_HELP">
+			<Text>It seems like every year is a little bit colder, and the sun doesn't seem to shine as brightly as it used to. Our Science Advisor is telling us that average temperatures seem to be dropping across the known world. How should we prepare?[NEWLINE]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_1">
+			<Text>People should stay indoors, even if that means less commerce.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_1_HELP">
+			<Text>[NEWLINE]Expect overall tax collections in each City to lose {3_CityYieldGlobal} for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_2">
+			<Text>Take fuel from our industries and distribute it to the poor and needy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_2_HELP">
+			<Text>[NEWLINE] This fuel diversion results in a loss of {3_CityYieldGlobal} in each City for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_3">
+			<Text>Let's deal with problems as they arise.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ICE_AGE_CHOICE_3_HELP">
+			<Text>We should probably expect the cold to cause problems in our Cities.</Text>
+		</Row>
+
+
+		<!-- Rain Rain Rain -->
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_DESCRIPTION">
+			<Text>la Grande Déluge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_HELP">
+			<Text>Weather patterns seem to be getting wetter and wetter. Our rivers and streams are running full, and water abounds. It seems like we are only one big storm away from disaster. What would you like to do?[NEWLINE]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_1">
+			<Text>We can not prevent the rain from falling, but hopefully, we can prevent major damage from occuring. How is our Treasury looking?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_1_HELP">
+			<Text>[NEWLINE]Allocate {1_YieldCost} to build flood control infrastructure in all our cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_2">
+			<Text>We can not prevent the rain from falling, but hopefully, we can prevent major damage from occuring. Mobilize our militia to help.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_2_HELP">
+			<Text>[NEWLINE]Allocate {1_YieldCost} to build flood control infrastructure in all our cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_3">
+			<Text>It's only a little rain. I have more important things to focus on.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_RAINRAINRAIN_CHOICE_3_HELP">
+			<Text>[NEWLINE]As long as it doesn't keep raining too much, we should be okay.</Text>
+		</Row>
+
+
+		<!-- Pollution -->
+
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_DESCRIPTION">
+			<Text>Belching Smokestacks and Dirty Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_HELP">
+			<Text>With the shift in our economy towards larger scale manufacturing, energy-intenstive industries are springing up everywhere. With little regulation and unrestrained growth, the very air we breathe and water we drink is becoming unfit for use. Our waterways are toxic channels, full of slime and dead fish. The smell of smoke is constantly in the air, and the stain of soot is all over our buildings and clothes. We must rein in these industrialists, or the consequences could be dire.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CHOICE_1">
+			<Text>Dead fish and unbreathable air? I even hear that one of our rivers even caught on fire and burned for days! Have our Science Advisor and Economic Advisor work together to come up with some kind of rules to govern these industries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CHOICE_1_HELP">
+			<Text>[NEWLINE]As a result of these regulations, [ICON_PRODUCTION] Production in all of our Cities is reduced by 5%. But look at the clear air and taste the clean water!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CHOICE_2">
+			<Text>We are building the greatest civilization in the world! We cannot be slowed down for bugs and bunnies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CHOICE_2_HELP">
+			<Text>[NEWLINE]Machines are our future. The future is now!</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_DESCRIPTION">
+			<Text>Clean Air, Part Une</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_HELP">
+			<Text>Finally! The political winds have shifted, and we have another chance to slow down our industries.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_CHOICE_1">
+			<Text>Our farmers have suffered enough. Get me some kind of framework for new laws so we can and do something about the environment.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_CHOICE_1_HELP">
+			<Text>[NEWLINE]As a result of these regulations, [ICON_PRODUCTION] Production in all of our Cities is reduced by 5%. But, if you look out the window, you can see the air is just a little bit clearer...and the water doesn't taste quite so bad.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_CHOICE_2">
+			<Text>Industry is the mark of modern mankind. We will not be slowed down.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP1_CHOICE_2_HELP">
+			<Text>[NEWLINE]Machines are our future. The future is now!</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_DESCRIPTION">
+			<Text>Clean Air, Part Une</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_HELP">
+			<Text>This may be the last chance, but we have another opportunity to do something to heal the damage that our industry has done to the land. A little pain now might just save a lot of pain later.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_CHOICE_1">
+			<Text>It seems like we don't have much of a choice. Let's pass some kind of legislation to protect our future.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_CHOICE_1_HELP">
+			<Text>[NEWLINE]As a result of this new legislation, [ICON_PRODUCTION] Production in all of our Cities is reduced by 5%. Hopefully, if given enough time, our citizens will be able to step outside without their lungs burning and eyes watering.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_CHOICE_2">
+			<Text>Enough with these infernal requests! Needless regulation will only slow down our economy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_POLLUTION_CLEANUP2_CHOICE_2_HELP">
+			<Text>[NEWLINE]Machines are our future. The future is now!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ENVIRONMENTAL_REGULATIONS_DUMMY">
+			<Text>Clean Air and Water Environmental Regulations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ENVIRONMENTAL_REGULATIONS_DUMMY_HELP">
+			<Text>Clean Air and Water Environmental Regulations help control industry to prevent pollution. By slightly reducing a City's productivity, local farms are able to thrive.</Text>
+		</Row>
+
+
+		<!-- Plague -->
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_DESCRIPTION">
+			<Text>Plague Looming</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_HELP">
+			<Text>Your advsiors tell you of a distant, virulent disease that is crippling other empires. Hopefully, the disease stays far away from our land. Our Science Advisor is advising that we quarantine our cities.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_CHOICE_1">
+			<Text>Let's follow his advice. That's why we have advisors in the first place.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_CHOICE_1_HELP">
+			<Text>[NEWLINE]Our Economic Advisor has looked over the numbers and figures the reduction in taxes from this is going to cost the Treasury {3_CityYieldGlobal} from each City for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_CHOICE_2">
+			<Text>We are not stifling commerce for a mere rumor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_PLAGUE_CHOICE_2_HELP">
+			<Text>[NEWLINE]Do nothing.</Text>
+		</Row>
+
+	</Language_en_US>
+</GameData>

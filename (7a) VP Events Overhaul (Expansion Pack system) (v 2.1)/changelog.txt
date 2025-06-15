@@ -1,0 +1,26 @@
+-- Changelog
+-- Author: rsc2a
+-- DateCreated: 18/02/2024
+--------------------------------------------------------------
+(7a) VP Events Overhaul (Expansion Pack system) changelog:
+
+v2.0 (08/09/2024)
+-- Added EP-8 Corporation Events
+-- Set Event and CityEvent databases to clear when mod fires (to remove base VP events)
+-- Added Hokath Civilization Events from Community Events mod (temporary until adjustment) and blocked Community Events mod
+
+
+-- Added audio and art files from Community Events mod
+-- Set Religious Relics and Notorious Pirate city events to only fire for one city at a time. Was seeing it way too often.
+-- Corrected text errors on Guild Sponsorship event (under City Specialization)
+-- Took expiration timer off of Harbor Trade city event.
+-- Reduced chance for Voices city event. Was seeing it way too often.
+-- Reduced chance for AA Mineglint city event. Was seeing it way too often.
+-- Increased chance for farm floods. Rarely saw it, and seemed like it should be a more common natural disaster.
+
+-- BROKEN FOR NOW - LOOKING FOR A FIX --
+-- LUA error causing religious events not to fire - My belief is that the dummy policy is not being created
+-- Hide unavailable Religion and NW events behind new disabled text
+
+v2.1 (08/09/2024)
+-- Corrected database errors in Religious Events
