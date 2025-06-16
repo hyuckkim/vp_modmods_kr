@@ -99,7 +99,7 @@ Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VP34UCEX 
 Name: "eaw"; Description: "VP 개선된 항공 전쟁 ((overhaul) Enhanced Air Warfare 4VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ee"; Description: "VP 계몽 시대 ((overhaul) Enlightenment Era for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-                                                                                                                                                                                                           
+
 [Types]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";
 Name: "VP34UCNVC"; Description: "[기본] Vox Populi (투표 문명색 제거) + 34UC ";
