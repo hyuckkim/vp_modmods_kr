@@ -1,95 +1,95 @@
 --==========================================================================================================================
--- GAME TEXT
+-- 게임 텍스트
 --==========================================================================================================================
--- Language_en_US
+-- Language_ko_KR
 --------------------------------------------------------------------------------------------------------------------------
--- Update policy text
-UPDATE Language_en_US
-SET Text = REPLACE(Text, 'Yield and [ICON_GOLDEN_AGE] Golden Age duration', 'Yield, [ICON_GOLDEN_AGE] Golden Age duration, [ICON_GREAT_PEOPLE] Great Person generation, and [ICON_STRENGTH] Combat')
+-- 정책 텍스트 업데이트
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '산출량 및 [ICON_GOLDEN_AGE] 황금기 기간', '산출량, [ICON_GOLDEN_AGE] 황금기 기간, [ICON_GREAT_PEOPLE] 위인 생성, 그리고 [ICON_STRENGTH] 전투력')
 WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
 
--- Update belief text
-UPDATE Language_en_US
-SET Text = REPLACE(Text, '[ICON_RES_WHEAT] Wheat', 'improved resources')
+-- 신앙 텍스트 업데이트
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '[ICON_RES_WHEAT] 밀', '향상된 자원')
 WHERE Tag = 'TXT_KEY_BELIEF_SUN_GOD';
 
--- Windmills
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_LAVENDER] Lavender: +3 [ICON_CULTURE] Culture.'
+-- 풍차
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_LAVENDER] 라벤더: [ICON_CULTURE] 문화 +3'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL' AND ((Type = 'BUILDING_WINDMILL' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Herbalists
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_OBSIDIAN] Obsidian: +2 [ICON_PEACE] Faith.'
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_OBSIDIAN] 흑요석: [ICON_PEACE] 신앙 +2'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_HERBALIST' AND ((Type = 'BUILDING_HERBALIST' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Public Schools
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_PLATINUM] Platinum: +3 [ICON_RESEARCH] Science.'
+-- 공립학교
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_PLATINUM] 백금:  [ICON_RESEARCH] 과학 +3'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL' AND ((Type = 'BUILDING_PUBLIC_SCHOOL' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Gardens
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE]Nearby [ICON_RES_POPPY] Poppy: +2 [ICON_RESEARCH] Science.'
+-- 정원
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][ICON_RES_POPPY] 양귀비: [ICON_RESEARCH] 과학 +2'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GARDEN' AND ((Type = 'BUILDING_GARDEN' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Forges
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE]Nearby [ICON_RES_TIN] Tin: +1 [ICON_PRODUCTION] Production, +1 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_LEAD] Lead: +2 [ICON_PRODUCTION] Production.'
+-- 대장간
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][ICON_RES_TIN] 주석: [ICON_PRODUCTION] 생산력 +1 ,  [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_LEAD] 납: [ICON_PRODUCTION] 생산력 +2'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FORGE' AND ((Type = 'BUILDING_FORGE' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Workshops
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_COCONUT] Coconut: +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_HARDWOOD] Hardwood: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.'
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_COCONUT] 코코넛: [ICON_PRODUCTION] 생산력 +2[NEWLINE][ICON_RES_HARDWOOD] 견목: [ICON_PRODUCTION] 생산력 +1, [ICON_GOLD] 골드 +1 '
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP' AND ((Type = 'BUILDING_WORKSHOP' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Granaries
-UPDATE Language_en_US
-SET Text = REPLACE(Text, 'Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.', 'Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_GOLD] Gold.')
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '[ICON_RES_WHEAT] 밀: [ICON_FOOD] 식량 +1', '[ICON_RES_WHEAT] 밀: [ICON_GOLD] 골드 +1')
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GRANARY' AND ((Type = 'BUILDING_GRANARY' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Grocers
-UPDATE Language_en_US
-SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]Requires an Aqueduct in the City.','[NEWLINE]Nearby [ICON_RES_POTATO] Potato: +2 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_PINEAPPLE] Pineapple: +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Requires an Aqueduct in the City.')
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.','[NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +2, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_PINEAPPLE] 파인애플: [ICON_GOLD] 골드 +3[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.')
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GROCER' AND ((Type = 'BUILDING_GROCER' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Factories
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_RUBBER] Rubber: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SULFUR] Sulfur: +3 [ICON_PRODUCTION] Production.'
+-- 공장
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_RUBBER] 고무: [ICON_GOLD] 골드 +3[NEWLINE][ICON_RES_SULFUR] 유황: [ICON_PRODUCTION] 생산력 +3'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FACTORY' AND ((Type = 'BUILDING_FACTORY' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Research Labs
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_ALUMINUM] Aluminum: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_URANIUM] Uranium: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_TITANIUM] Titanium: +1 [ICON_PRODUCTION] Production, +3 [ICON_RESEARCH] Science.'
+-- 연구소
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_ALUMINUM] 알루미늄: [ICON_RESEARCH] 과학 +4[NEWLINE][ICON_RES_URANIUM] 우라늄: [ICON_RESEARCH] 과학 +4[NEWLINE][ICON_RES_TITANIUM] 티타늄: [ICON_PRODUCTION] 생산력 +1, [ICON_RESEARCH] 과학 +3'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_LABORATORY' AND ((Type = 'BUILDING_LABORATORY' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
-UPDATE Language_en_US
-SET Text = REPLACE(Text, '[ICON_RES_ALUMINUM] Aluminum, [ICON_RES_URANIUM] Uranium, and ', '')
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '[ICON_RES_ALUMINUM] 알루미늄, [ICON_RES_URANIUM] 우라늄, 그리고 ', '')
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_LABORATORY' AND ((Type = 'BUILDING_LABORATORY' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Markets
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE]Nearby [ICON_RES_PINEAPPLE] Pineapple: +2 [ICON_GOLD] Gold.'
+-- 시장
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][ICON_RES_PINEAPPLE] 파인애플: [ICON_GOLD] 골드 +2'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_MARKET' AND ((Type = 'BUILDING_MARKET' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Councils
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_MAIZE] Maize: +1 [ICON_PRODUCTION] Production.'
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_MAIZE] 옥수수: [ICON_PRODUCTION] 생산력 +1'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GROVE' AND ((Type = 'BUILDING_GROVE' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Watermills
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_POTATO] Potato: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food.'
+-- 물레방아
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +1[NEWLINE][ICON_RES_RICE] 쌀: [ICON_FOOD] 식량 +1'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WATERMILL' AND ((Type = 'BUILDING_WATERMILL' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Well
-UPDATE Language_en_US
-SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_POTATO] Potato: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food.'
+-- 우물
+UPDATE Language_ko_KR
+SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +1[NEWLINE][ICON_RES_RICE] 쌀: [ICON_FOOD] 식량 +1'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WELL' AND ((Type = 'BUILDING_WELL' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
--- Compatibility (with custom civs, 4UC, etc)
--- Disabled because of load order issues.
----- The trigger can only work if mods update Language_en_US before Civilization_BuildingClassOverrides, otherwise the trigger breaks.
+-- 호환성 (커스텀 문명, 4UC, 기타 등등)
+-- load order 문제로 인해 사용할 수 없습니다..
+---- 트리거는 모드가 Civilization_BuildingClassOverrides보다 먼저 Language_ko_KR을 업데이트한 경우에만 작동하며, 그렇지 않으면 트리거가 작동하지 않습니다.
 /*CREATE TRIGGER EvenMoreResourcesForVP_BuildingResourceYieldsText
 AFTER INSERT ON Civilization_BuildingClassOverrides 
 WHEN NEW.BuildingClassType
@@ -101,73 +101,73 @@ IN(
 	AND b.Type = ryc.BuildingType
 )
 BEGIN
-	-- Windmills
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_LAVENDER] Lavender: +3 [ICON_CULTURE] Culture.'
+	-- 풍차
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_LAVENDER] 라벤더: [ICON_CULTURE] 문화 +3'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL' AND Type = NEW.BuildingType);
 
 	-- Herbalists
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_OBSIDIAN] Obsidian: +2 [ICON_PEACE] Faith.'
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_OBSIDIAN] 흑요석: [ICON_PEACE] 신앙 +2'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_HERBALIST' AND Type = NEW.BuildingType);
 
-	-- Public Schools
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_PLATINUM] Platinum: +3 [ICON_RESEARCH] Science.'
+	--  공립학교
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_PLATINUM] 백금: [ICON_RESEARCH] 과학 +3'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL' AND Type = NEW.BuildingType);
 
-	-- Gardens
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE]Nearby [ICON_RES_POPPY] Poppy: +2 [ICON_RESEARCH] Science.'
+	-- 정원
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][ICON_RES_POPPY] 양귀비: [ICON_RESEARCH] 과학 +2'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GARDEN' AND Type = NEW.BuildingType);
 
-	-- Forges
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE]Nearby [ICON_RES_TIN] Tin: +1 [ICON_PRODUCTION] Production, +1 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_LEAD] Lead: +2 [ICON_PRODUCTION] Production.'
+	-- 대장간
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][ICON_RES_TIN] 주석: [ICON_PRODUCTION] 생산력 +1, [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_LEAD] 납: [ICON_PRODUCTION] 생산력 +2'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FORGE' AND Type = NEW.BuildingType);
 
 	-- Workshops
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_COCONUT] Coconut: +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_HARDWOOD] Hardwood: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.'
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_COCONUT] 코코넛: [ICON_PRODUCTION] 생산력 +2[NEWLINE][ICON_RES_HARDWOOD] 견목: [ICON_PRODUCTION] 생산력 +1, [ICON_GOLD] 골드 +1'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP' AND Type = NEW.BuildingType);
 
 	-- Granaries
-	UPDATE Language_en_US
-	SET Text = REPLACE(Text, 'Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.', 'Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_GOLD] Gold.')
+	UPDATE Language_ko_KR
+	SET Text = REPLACE(Text, '[ICON_RES_WHEAT] 밀: [ICON_FOOD] 식량 +1', '[ICON_RES_WHEAT] 밀: [ICON_GOLD] 골드 +1')
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GRANARY' AND Type = NEW.BuildingType);
 
 	-- Grocers
-	UPDATE Language_en_US
-	SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]Requires an Aqueduct in the City.','[NEWLINE]Nearby [ICON_RES_POTATO] Potato: +2 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_PINEAPPLE] Pineapple: +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Requires an Aqueduct in the City.')
+	UPDATE Language_ko_KR
+	SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.','[NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +2, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_PINEAPPLE] 파인애플: [ICON_GOLD] 골드 +3.[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.')
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GROCER' AND Type = NEW.BuildingType);
 
-	-- Factories
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_RUBBER] Rubber: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SULFUR] Sulfur: +3 [ICON_PRODUCTION] Production.'
+	-- 공장
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_RUBBER] 고무: [ICON_GOLD] 골드 +3[NEWLINE][ICON_RES_SULFUR] 유황: [ICON_PRODUCTION] 생산력 +3'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FACTORY' AND Type = NEW.BuildingType);
 
-	-- Research Labs
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE]Nearby [ICON_RES_TITANIUM] Titanium: +1 [ICON_PRODUCTION] Production, +3 [ICON_RESEARCH] Science.'
+	-- 연구소
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][ICON_RES_TITANIUM] 티타늄: [ICON_PRODUCTION] 생산력 +1, [ICON_RESEARCH] 과학 +3'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_LABORATORY' AND Type = NEW.BuildingType);
 
-	-- Markets
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE]Nearby [ICON_RES_PINEAPPLE] Pineapple: +2 [ICON_GOLD] Gold.'
+	-- 시장
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][ICON_RES_PINEAPPLE] 파인애플: [ICON_GOLD] 골드 +2'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_MARKET' AND Type = NEW.BuildingType);
 
 	-- Councils
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_MAIZE] Maize: +1 [ICON_PRODUCTION] Production.'
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_MAIZE] 옥수수: [ICON_PRODUCTION] 생산력 +1'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GROVE' AND Type = NEW.BuildingType);
 
-	-- Watermills
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_POTATO] Potato: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food.'
+	-- 물레방아
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +1[NEWLINE][ICON_RES_RICE] 쌀: [ICON_FOOD] 식량 +1'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WATERMILL' AND Type = NEW.BuildingType);
 
-	-- Well
-	UPDATE Language_en_US
-	SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_POTATO] Potato: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food.'
+	-- 우물
+	UPDATE Language_ko_KR
+	SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_POTATO] 감자: [ICON_FOOD] 식량 +1[NEWLINE][ICON_RES_RICE] 쌀: [ICON_FOOD] 식량 +1'
 	WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WELL' AND Type = NEW.BuildingType);
 END;*/
