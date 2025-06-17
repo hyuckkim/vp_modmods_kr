@@ -1,0 +1,448 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_GREECE_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_GREECE</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_GREECE_UE_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredAnywhereBuildingClass>
+			<RequiresWar>true</RequiresWar>
+			<EventFreeTechs>1</EventFreeTechs>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WIRE_SERVICE</RequiredAnywhereBuildingClass>
+			<ObsoleteEra>ERA_POSTMODERN</ObsoleteEra>
+			<LosingMoney>true</LosingMoney>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<IsUnhappy>true</IsUnhappy>
+			<EventDuration>-1</EventDuration>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_GREECE_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_GREECE_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_GREECE_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_GREECE_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_GREECE_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_GREECE_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_GREECE_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_GREECE_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<GreatPeopleRateModifier>10</GreatPeopleRateModifier>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>4000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<UnitClassType>UNITCLASS_AMBASSADOR</UnitClassType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_GREECE_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Child of Prophecy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_1">
+			<Text>{3_PlayerName} hears of the birth of a child of prophecy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s The Assembly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_2">
+			<Text>{3_PlayerName} supports the Greek cultural center of the Agora.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Scholasticism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_3">
+			<Text>Greek scholars make an Exodus back to the Palace, their homes ravaged by war!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Society of Friends</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_4">
+			<Text>{3_PlayerName} is somehow able to secure even the most unlikely trade deals...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Nationalize Language</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_5">
+			<Text>{3_PlayerName} announces the adoption of the Demotic dialect as the formal language of State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6_S">
+			<Text>{3_PlayerName} receives a Unique Event for {1_CivShortDescription}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_GREECE_UE_CHOICE_6">
+			<Text>{3_PlayerName} sends out Ambassadors across the world to organise an Olympic Games!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION">
+			<Text>To The Ends Of The Earth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP">
+			<Text>Strangers in the court again today, My King. As usual, they seek an audience with Your Highness, but curiously they will not say for what purpose.[NEWLINE]Shall I send them away?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_2">
+			<Text>Markets change to Agora with {1_YieldCost}, which generate +1 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_FOOD] Food. In addition, all your Cities generate +10% [ICON_GREAT_PEOPLE] Great People Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_3">
+			<Text>The return of your scholars from the countryside triggers a renaissance of scholarship: choose a [ICON_GREAT_SCIENTIST] Free Tech. Universities generate +1 [ICON_CULTURE] Culture and +1 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_4">
+			<Text>Mobilise {1_YieldCost}. Each [ICON_DIPLOMAT] Civil Servant generates +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_CULTURE] Culture per turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_5">
+			<Text>The Printing Press boosts [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_CULTURE] Culture by +15%. The [ICON_RESEARCH] Illiteracy threshold is everywhere reduced by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_HELP_CHOICE_6">
+			<Text>Invest {1_YieldCost} to gain a boost of {2_InstantYield}. In preparation, 4 Ambassador are appointed in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_1">
+			<Text>*The men bring a prophecy from an Oracle, a birth of prophecy is soon to take place*[NEWLINE]The omens suggest this baby could either grow to make us great or destroy us! We must ensure it is the former!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Your visitors are merchants who are incensed by their treatment at the market, and demanded to speak only to you*[NEWLINE]I don't know how things are done in your lands, but in Greece, the Agora is more than just a simple Market. You will receive no compensation for your imagined slight. Guards, away with them!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The audience is with some of your old teachers who had retired to the countryside. They have lost everything in the war, and come to beg your forgiveness for abandoning Greece*[NEWLINE]There is nothing to forgive. I am thankful that my old friends are safe. They will always have a home at my court.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_4">
+			<Text>*These emissaries are from the Filiki Eteria, a secret society dedicated to the renewal of Greek supremacy*[NEWLINE]It would be remiss of me to turn down any assistance, even such as this... I will support this scheme of yours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The men in waiting are agents of the clergy. They come to demand you suppress efforts to abandon the ancient language of the church*[NEWLINE]For as long as can be remembered we have been a country of two languages, one for the rich and one for the poor. It is time this ended.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_GREECE_UE_DESCRIPTION_CHOICE_6">
+			<Text>*You are met by a delegation of civil servants. They describe to you a daring scheme to revive the ancient Olympic Games in a bid to draw attention to Greece*[NEWLINE]When we show that we can bring the whole world together, States far and wide will pledge themselves to our cause!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY">
+			<Text>Agorism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GREECE_UE_DUMMY_HELP">
+			<Text>+10% [ICON_GREAT_PEOPLE] Great People Generation</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

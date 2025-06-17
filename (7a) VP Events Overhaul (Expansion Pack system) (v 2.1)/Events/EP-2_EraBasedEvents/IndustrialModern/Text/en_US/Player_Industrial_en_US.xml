@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+
+		<!-- Bank Decision - modified -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_DESCRIPTION">
+			<Text>A New Banking System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_HELP">
+			<Text>The complexities of our banking systems are growing, and economic advisors recommend that you establish an empire-wide banking regulation. Guilds currently manage all money in our empire, but some believe this is an outdated management method. Some believe that centralization is the best option, but your advisors are torn on the issue. Of the following options, which do you prefer?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_1">
+			<Text>Decentralize it. Our people are more than capable of managing their own money.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_1_HELP">
+			<Text>Poverty thresholds are reduced by 5% in every City..</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_2">
+			<Text>Guilds should continue to manage our money.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_2_HELP">
+			<Text>All Banks produce +3 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_3">
+			<Text>Centralize it. Money is too important to leave to private citizens.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BANK_DECISION_CHOICE_3_HELP">
+			<Text>The Palace increases [ICON_GOLD] Gold in the [ICON_CAPITAL] Capital by 5%.</Text>
+		</Row>
+
+		<!-- Modernize Windmills - modified -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_DESCRIPTION">
+			<Text>Aging Windmills</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_HELP">
+			<Text>Once the pinnacle of industrial design, our nation's Windmills now appear quite outdated. A few industrialists approach you about this topic, hoping to garner imperial support for the modernization of our Windmills. The following proposals are offered to you by these engineers. Which do you prefer?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_1">
+			<Text>Integrate the Windmills into our agricultural industries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_1_HELP">
+			<Text>For {1_YieldCost} and 2 [ICON_RES_IRON] Iron, all Farms gain a +1 [ICON_PRODUCTION] Production boost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_2">
+			<Text>Coordinate with our Engineers and integrate the Windmills into our modern industrial processes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_2_HELP">
+			<Text>For {1_YieldCost} and 2 [ICON_RES_IRON] Iron, all Mines gain a +1 [ICON_PRODUCTION] Production boost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_3">
+			<Text>Retrofit the Windmills where we can, otherwise they're fine.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_WINDMILLS_MODERNIZE_CHOICE_3_HELP">
+			<Text>For {1_YieldCost}, all Windmills gain +2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+
+		<!-- Corruption Science -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CORRUPTION_SCIENCE_FAILURE_CHOICE_1">
+			<Text>Research Setback</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CORRUPTION_SCIENCE_FAILURE_CHOICE_1_HELP">
+			<Text>Your researchers regret to inform you that recent research was flawed, and {1_YieldCost} worth of advancement had to be discarded.</Text>
+		</Row>
+
+		<!-- Baby Boom -->
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BABY_BOOM_CHOICE_1">
+			<Text>Baby Boom!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_BABY_BOOM_CHOICE_1_HELP">
+			<Text>Your population is growing exponentially, thanks to a large upswing in births as of late. All Cities gain +1 [ICON_CITIZEN] Population and experience 5 turns (scaling with game speed) of [COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR].</Text>
+		</Row>
+
+		<!-- Advisor Debate modified -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE">
+			<Text>Special Session</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_HELP">
+			<Text>A diplomatic summit has been called to assess the budget of the World Congress. All our rival nations will be there aiming to frustrate us. We must be shrewd if we are to come away richer than we entered.[NEWLINE][NEWLINE]Given we can only work towards one of many competing goals, who will you place at the head of our delegation?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_1">
+			<Text>International trade and friendship are the ultimate forces for good in this world. Appoint our Foreign Advisor to the head of the delegation. Tears down tariffs, closed borders and all other barriers to closer coorperation and understanding!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_1_HELP">
+			<Text>For {4_Turns}, all Customs Houses produce +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_2">
+			<Text>Only by working together will we be able to unravel the secrets of the universe! Place our Science Advisor in charge. We must come away with a leading voice in the world's greatest scientific organisations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_2_HELP">
+			<Text>Your Science Advisor claims that this will benefit us with expanded knowledge, providing us with a sixteen point six six chance for a Free Technology. Repeating, of course.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_3">
+			<Text>A summit like this gives us an unprecedented opportunity to enact cross-border monetary policy. If our Economic Advisor plays her cards right, we should be able to unlock vast amounts of capital. Now, and in the future.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_3_HELP">
+			<Text>For {4_Turns}, the Bank increases the [ICON_CAPITAL] Capital's [ICON_GOLD] Gold output by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_4">
+			<Text>The idea of an international peacekeeping organisation has gathered support around the world. We cannot allow such a force to exist without being at its head. Send our Military Advisor as our chief representative. Argue strongly for this army, and for our men as its leaders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_4_HELP">
+			<Text>The nations of the world respect your resolve. For {4_Turns}, all of your military units will gain the Peacekeeper promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_2_SUCCESSFUL_S">
+			<Text>Research Grant!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ADVISOR_DEBATE_CHOICE_2_SUCCESSFUL">
+			<Text>Your Science Advisor notes that our leverage over the international research council has successfully unlocked a new technology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PEACEKEEPER">
+			<Text>Peacekeeper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PEACEKEEPER_HELP">
+			<Text>Provides a 10% combat bonus in friendly territories. Also includes a 10% combat penalty in enemy territories.</Text>
+		</Row>
+	
+	</Language_en_US>
+</GameData>

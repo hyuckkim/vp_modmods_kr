@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_ORBITAL_DROP">
+			<Text>Orbital Drop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ORBITAL_DROP_HELP">
+			<Text>Allows the Unit to deploy anywhere on the entire map.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE">
+			<Text>Mnemosyne Learning</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE_HELP">
+			<Text>Earns experience toward promotions 25% faster.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PARADROP_2">
+			<Text>Aerospace's Paradrop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PARADROP_2_HELP">
+			<Text>May paradrop up to 40 tiles away for the next turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_PARADROP_2">
+			<Text>May paradrop up to 40 tiles away.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NETWORKED">
+			<Text>Battle Network</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NETWORKED_HELP">
+			<Text>+[COLOR_POSITIVE_TEXT]10[ENDCOLOR]% [ICON_STRENGTH] Combat Strength when adjacent to another friendly unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NETWORKED">
+			<Text>+10% [ICON_STRENGTH] Combat Strength when adjacent to another friendly unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PARASITISM">
+			<Text>Parasitism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PARASITISM_HELP">
+			<Text>No movement cost to pillage and +10 HP while healing in [COLOR_NEGATIVE_TEXT]Enemy[ENDCOLOR] or [COLOR_PLAYER_GRAY]Neutral[ENDCOLOR] lands.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_PARASITISM">
+			<Text>No movement cost to pillage and +10 HP while healing in [COLOR_NEGATIVE_TEXT]Enemy[ENDCOLOR] or [COLOR_PLAYER_GRAY]Neutral[ENDCOLOR] lands.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_AUTO_REPAIR">
+			<Text>Auto Repair</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_AUTO_REPAIR_HELP">
+			<Text>While in friendly lands, [COLOR_GREEN]+10 HP[ENDCOLOR] per turn when healing and +10 [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_AUTO_REPAIR">
+			<Text>While in friendly lands, [COLOR_GREEN]+10 HP[ENDCOLOR] per turn when healing and +10 [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_HEALING_CORE">
+			<Text>On Core</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_HEALING_CORE_HELP">
+			<Text>Robot unis, Naval Units every turn HP [COLOR_GREEN]+10[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_HEALING_CORE">
+			<Text>Robot unis, Naval Units every turn HP [COLOR_GREEN]+10[ENDCOLOR]</Text>
+		</Row>				
+		<Row Tag="TXT_KEY_PROMOTION_FW_SKYNET_LINK">
+			<Text>Skynet Uplink</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SKYNET_LINK_HELP">
+			<Text>+10% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_SKYNET_LINK">
+			<Text>+10% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FW_THALASSOCRACY">
+			<Text>Thalassocracy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_THALASSOCRACY_HELP">
+			<Text>+2 [ICON_MOVES] Movements, +1 View of Sight and +10% [ICON_STRENGTH] Combat Strength for all Naval Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_THALASSOCRACY">
+			<Text>+2 [ICON_MOVES] Movements, +1 View of Sight and +10% [ICON_STRENGTH] Combat Strength for all Naval Units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEPHILIM">
+			<Text>Nephilim Gene</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEPHILIM_HELP">
+			<Text>+10% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NEPHILIM">
+			<Text>+10% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FW_NANOHIVE_PROMOTION">
+			<Text>Swarm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NANOHIVE_PROMOTION_HELP">
+			<Text>Heals friendly units within two tiles for 10 HP each turn, and damages enemy units within two tiles for 10 HP each turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NANOHIVE_PROMOTION">
+			<Text>Heals friendly units within two tiles for 10 HP each turn, and damages enemy units within two tiles for 10 HP each turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEXUS">
+			<Text>Command Nexus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEXUS_HELP">
+			<Text>Reduces the combat strength of enemy units within two tiles by 20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NEXUS">
+			<Text>Reduces the combat strength of enemy units within two tiles by 20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_MUTATION">
+			<Text>Mutation Virus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_MUTATION_HELP">
+			<Text>[COLOR_CYAN]Mutation Virus[ENDCOLOR]-when attacking injured units [ICON_STRENGTH]combat strength [COLOR_POSITIVR_TEXT]+10%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_MUTATION">
+			<Text>[COLOR_CYAN]Mutation Virus[ENDCOLOR]-when attacking injured units [ICON_STRENGTH]combat strength [COLOR_POSITIVR_TEXT]+10%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_GENGINEERED">
+			<Text>Gengineered</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_GENGINEERED_HELP">
+			<Text>Permits choice of gengineered promotions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_GENGINEERED">
+			<Text>Permits choice of gengineered promotions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS">
+			<Text>Adrenal Glands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength in rough terrain (attacking and defending).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_ADRENAL_GLANDS">
+			<Text>+15% [ICON_STRENGTH] Combat Strength in rough terrain (attacking and defending).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT">
+			<Text>Predatorial Instinct</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT_HELP">
+			<Text>+25% [ICON_STRENGTH] Combat Strength in Forest and Jungle terrain (attacking and defending).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_PREDATOR_INSTINCT">
+			<Text>+25% [ICON_STRENGTH] Combat Strength in Forest and Jungle terrain (attacking and defending).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES">
+			<Text>Enhanced Reflexes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES_HELP">
+			<Text>25% bonus against ranged attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_VISION">
+			<Text>Enhanced Vision</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_VISION_HELP">
+			<Text>+1 Sight Range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES">
+			<Text>Enhanced Musculature</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES_HELP">
+			<Text>+1 Movement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_URBAN_WARFARE">
+			<Text>Urban Warfare</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_URBAN_WARFARE_HELP">
+			<Text>+33% [ICON_STRENGTH] Combat Strength when attacking [COLOR_GREEN]Cities[ENDCOLOR].[NEWLINE]Damage from Cities reduced by 33%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_CHAMELEON">
+			<Text>Photomorphic Camouflage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_CHAMELEON_HELP">
+			<Text>Invisible unless adjacent to an enemy unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_CHAMELEON">
+			<Text>Invisible unless adjacent to an enemy unit.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOMODS">
+			<Text>Biomods</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOMODS_HELP">
+			<Text>Permits choice of biomod promotions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NUCLEAR_SMR">
+			<Text>Nuclear SMR</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NUCLEAR_SMR_HELP">
+			<Text>When this unit dies, it deals 20 damage to adjacent enemy units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_TOXIN_MOD">
+			<Text>Toxin Mod</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_TOXIN_MOD_HELP">
+			<Text>When this unit dies, it deals 10 damage to adjacent enemy units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BOOST_MOD">
+			<Text>Boost Mod</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BOOST_MOD_HELP">
+			<Text>+10% Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD">
+			<Text>Bio-Regeneration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD_HELP">
+			<Text>Units in adjacent tiles receive +5 HP when healing.[NEWLINE]+10 HP if you destroy an Enemy Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD">
+			<Text>Synthetic Lungs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD_HELP">
+			<Text>Unit can cross Mountains and double movement on Hills.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD">
+			<Text>Vision Enhanced</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD_HELP">
+			<Text>Weaknesses of enemies are shown; +15% Combat Strength against damaged Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_REFLEX_MOD">
+			<Text>Reflex Booster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_REFLEX_MOD_HELP">
+			<Text>15% Chance to withdraw from melee attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD">
+			<Text>Shock Wave Shield</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD_HELP">
+			<Text>While [COLOR_GREEN]Fortified[ENDCOLOR], adjacent Enemy Units take [COLOR_GREEN]10 Damage[ENDCOLOR] at the beginning of every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_IMPACT_MOD">
+			<Text>Impact Mod</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_IMPACT_MOD_HELP">
+			<Text>[COLOR_GREEN]On move[ENDCOLOR] unit inflicts 5 [COLOR_GREEN]to all new adjacent Enemy Units[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AUGMENTED">
+			<Text>Augmented Diplomat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AUGMENTED_HELP">
+			<Text>Earn 105 [ICON_INFLUENCE] Influence when you conduct a Diplomatic Mission.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUBORBITAL_EVASION">
+			<Text>Suborbital Bomber Evasion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUBORBITAL_EVASION_HELP">
+			<Text>40% chance of evading interception.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PLASMA_EVASION">
+			<Text>Plasma Bomber Evasion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PLASMA_EVASION_HELP">
+			<Text>50% chance of evading interception.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SPACE_EVASION">
+			<Text>Space Evasion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SPACE_EVASION_HELP">
+			<Text>60% chance of evading interception by escaping velocity from Earth.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2">
+			<Text>Stealth Drone Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_TEXT">
+			<Text>Advances in drone technology and autonomous computer systems lead to the development of advanced drone fighters, capable of handling air superiority roles. One of the major limitations on the development of fighter aircraft was the human element, as there was a limit to how many G stresses a human body could tolerate before failing. An automated fighter had no such restrictions, and thus could perform to the full capability of modern engineering.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_STRATEGY">
+			<Text>The Stealth Drone Fighter is a futuristic air unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_HELP">
+			<Text>Air Unit designed to dominate the skies and intercept incoming enemy aircraft.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER">
+			<Text>Suborbital Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_TEXT">
+			<Text>In an effort to try and push the range and striking power of bombers to their limit, newer generations of bombers were developed capable of travelling high in the atmosphere, just short of actually travelling into orbit. At these altitudes, they were extremely difficult to intercept, and could travel quickly through the thin atmosphere on semi-ballistic trajectories.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_STRATEGY">
+			<Text>The Suborbital Bomber is a futuristic ranged unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_HELP">
+			<Text>A long-range Air Unit that rains death from above onto enemy Units and Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER">
+			<Text>Space Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_TEXT">
+			<Text>The Space Bomber is a unique space bombardment unit that can be mounted on the Nexus or Helicarrier and is a key component of the Nexus' strategic offensive capabilities. They embody the levitation facility Helicarrier and the Nexus' serious offensive power, and are effectively commanded by the highly concentrated Nexus Command Nodes. The Space Bomber is designed with advanced smart materials, allowing it to carry out attacks in extreme space environments. They can carry out large-scale attacks with powerful engines and a variety of weapons, including large amounts of bombs and lasers. The Space Bomber protects itself from enemy counterattack with a strong shield, and the Nexus serves to keep it safe from threats. Through this, it supports mankind's space colonization and plays an important role in removing risk factors in advance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_STRATEGY">
+			<Text>Unique Spaceship Bomber. Can be carried aboard Nexuses and Helicarriers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_HELP">
+			<Text>Unique Spaceship Bomber. Can be carried aboard Nexuses and Carriers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER">
+			<Text>Space Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_TEXT">
+			<Text>The Space Fighter is a unique space fighter unit that can be mounted on a Nexus or Helicarrier. They form the levitating facility Helicarrier and the Nexus key line of defense, and are effectively piloted and controlled by the Nexus highly-focused command node. Space fighters have powerful space combat capabilities, with the ability to attack from the air into and out of the atmosphere. Space fighters are designed with advanced smart materials, and are purpose-built units for operations in space. They are equipped with powerful engines capable of operating in extreme space environments, as well as various weapons such as missiles and lasers. In addition, they protect themselves from enemy attacks with a strong shield and protect the Nexus. Through this, it acts as an important factor in supporting human space colonization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_STRATEGY">
+			<Text>Unique Spaceship Fighter. Can be carried aboard Nexuses and Helicarriers. It has increased range and combat ability compared to other aircrafts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_HELP">
+			<Text>Unique Spaceship Fighter good for intercepting and air sweeping. Can be carried aboard Nexuses and Carriers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON">
+			<Text>Automaton</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_TEXT">
+			<Text>Since the earliest robots were developed, the concept of a robotic soldier has existed. While some success was had with remote-controlled machines as early as World War Two, it wasn't until the deployment of drone combat vehicles at the end of the 20th century that the concept of an autonomous combat machine began to seem feasible. It would still take more extensive development of cognitive technology for autonomous weapon systems, often termed "automatons", to become practical on the battlefield.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_STRATEGY">
+			<Text>The Automaton is a futuristic infantry unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_HELP">
+			<Text>Cheap and powerful futuristic Unit that is stronger in groups. Constructed more quickly in cities with Autoplants and Drone Hives.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA">
+			<Text>Chimera</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_TEXT">
+			<Text>With the development of gengineering permitting the creation of entirely new organisms to fill various needs, many new chimeras were developed to be utilized in combat environments. With predatorial instincts and engineered abilities allowing them to move quickly, traverse rough terrain, and even adaptive camouflage, these chimeras proved to be terrifying to human military forces.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_STRATEGY">
+			<Text>The Chimera is a futuristic Mounted and Mobile Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_HELP">
+			<Text>A future era unit that is very versatile and mobile, strong against fortified units. Heals every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA">
+			<Text>Bio-Titan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_TEXT">
+			<Text>Representing the end of biotechnology, Bio-Titans are gigantic organisms designed entirely for combat. As the genetic chimeras and the various battle forms became increasingly complex, some bioengineers decided to see how much power the battle forms could have. Bio-Titans used the knowledge gained from cloning the genes of ancient dinosaurs to clone some of Earth's most massive creatures and accelerate their genes. It doesn't stop there, but surprisingly it has also resulted in research into integrating small nuclear reactors, powerful energy sources, into organisms. This influx of ex vivo energy sources boosted the Bio-Titans' metabolism, dramatically affecting their growth, recovery abilities, and combat performance. These in-body atoms replaced conventional radioisotope generators, allowing organisms to generate and store powerful energy. This technology allowed the Bio-Titans to have very powerful attacks that surpassed those of the Carnage Robots, while also giving them great regenerative abilities in their organic combat form. The Bio-Titans fear no battle now, and their strength and vitality are a testament to the limits of human engineering and biotechnology. Through this, we see how humans can create infinite possibilities by combining nature and engineering.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_STRATEGY">
+			<Text>The Bio-Titan is a futuristic melee unit. Slower than Giant Death Robots but stronger. Has also the Titanic promotion that allows to double attack.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_HELP">
+			<Text>One of the most powerful units towards the end of the game. Slower than carnage robots, but stronger. Visibility increases due to massiveness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM">
+			<Text>Genoswarm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_TEXT">
+			<Text>The original biotech chimeras were mostly short-lived, and some lacked basic survival instincts and even the organs necessary for long-term survival. Most of these earlier forms of combat were used with more success, but with the advent of the Bio-Titans, this style of combat was later revisited. Apart from the development of the Bio-Titans, these early Chimeras were primarily intended to disrupt and disrupt enemy attacks. They were support units of sorts, charged swiftly and mercilessly into enemy formations, disrupting their strategy. Their job was to distract the enemy, delay their attacks, and cause as much confusion and damage as possible. Even if they do not have abundant life force, they have high energy stores that allow them to continue to be active until they die. Despite lacking a camouflage system, their primary mission was to attack and harass the enemy, requiring aggressive action rather than survival. For this reason, they were tasked with attacking relentlessly, breaking enemy defenses, and constantly putting pressure on the enemy. Their only goal was to charge endlessly at their enemies, which made them powerful and ruthless attackers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_STRATEGY">
+			<Text>The Genoswarm is a futuristic infantry unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_HELP">
+			<Text>Mobile and weak unit that causes a strong Neurotic Poison effect for 3 turns on Attack. Good against Titan Units if it has some backup.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY">
+			<Text>Organic Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_TEXT">
+			<Text>Advances in genetic engineering and forced tissue growth lead to increasing developments in the fields of organic composites and implants. Many of these advances were turned towards military ends, used to develop regenerative body armor and combat implants that enhanced the performance of soldiers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_STRATEGY">
+			<Text>The Organic Infantry is a futuristic infantry unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_HELP">
+			<Text>Elite Unit of the future and first to requires implant to build.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER">
+			<Text>Clone Trooper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_TEXT">
+			<Text>These clones are 'breeded' and ready for war, they have the Phase I armor which consist of twenty form-fitting plates of lightweight plastoid-alloy composite. Those plates were sealed to a black temperature control bodysuit via magnatomic gription panels. The bodysuit was also pressurized, offering temporary protection against the vacuum of space, and the body glove protected the clone from the extreme cold and heat. The armor's design was reminiscent of the Mandalorian armor, including the helmet with a distinctive T-shaped visor. Despite its advantages, the Phase I armor proved uncomfortable for the troopers to fit in, which was due to the Kaminoans' unfamiliarity with human ergonomics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_STRATEGY">
+			<Text>The Clone Trooper is a basic futuristic Infantry Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_HELP">
+			<Text>Unit that can be produced with ADN Fungus in the future era. Regeneration is enhanced. [ICON_RES_ADN_FUNGUS] 1 ADN fungus is required.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT">
+			<Text>Mutant</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_TEXT">
+			<Text>As soon as the earliest forms of genetic manipulation techniques were perfected, it was inevitable that there would be some less ethical organizations that would seek to experiment on human subject, often with an eye towards creating powerful new super soldiers or bioweapons. More often than not, however, these crude experiments resulted in hideous monstrosities, although many were noted to have exceptional durability and regenerative capbilities that made them useful to field in combat. The most insidious cases also carried dangerous viruses that were released upon their death, often resulting in insanity amongst their attackers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_STRATEGY">
+			<Text>Attack Infantry unit that heals every turn and after killing an enemy unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_HELP">
+			<Text>Mobile Unit that heals itself. Become stronger against injured units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER">
+			<Text>BioTrooper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_TEXT">
+			<Text>Advances in biomodification eventually permitted extensive modifications to the human body, to the point that they barely seemed human anymore. Nowhere was this most apparent than in the development of biomodified soldiers, often called "biotroopers". These soldiers were as fast and durable as infantry wearing powered armor, but with fewer logistical demands, and the capability to regenerate combat damage with relative ease. Biotroopers did tend to cause a certain amount of unease around less heavily modified individuals, however, and typically ended up forming their own insular communities amongst ecocities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_STRATEGY">
+			<Text>The BioTrooper is a futuristic infantry unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_HELP">
+			<Text>Elite infantry unit of the future that can travel through rough terrain and is stronger in enemy territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT">
+			<Text>Nano-Battlesuit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_TEXT">
+			<Text>Nano-Battle suits provided unparalleled protection and strength to human soldiers, yet their operation still required human control. The advancement of artificial intelligence gave birth to robotic units, and while they demonstrated combat capabilities on par with human soldiers, they ultimately needed direct human intervention to confront new threats. With the emergence of colossal creature units like Tyrannosaurs and Chimeras on the battlefield, there was a pressing need for human agility and decisiveness for effective counteraction. As a result, bipedal mechanical armor, which could be directly controlled by humans and manipulate hands with dexterity, was developed. These suits proved highly efficient in combating massive creatures under human control and, after the conflicts, possessed the flexibility to be repurposed for various civilian tasks. This process clearly highlighted the need for a proper balance between the automated efficiency of robotic units and the versatility of machines requiring human operation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_STRATEGY">
+			<Text>The Nano-Battlesuit is a futuristic infantry unit. Although fast, they cannot move after combat like Tanks; their primary responsibility is, as always, to take and hold the ground.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_HELP">
+			<Text>Futuristic infantry unit with ranged attacks and effective defense against mounted units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS">
+			<Text>Super Soldiers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_TEXT">
+			<Text>The Supersoldier is a concept soldier, often capable of operating beyond normal human limits or abilities either through genetic modification, implants or cybernetic augmentation. Supersoldiers are common in military science fiction literature, films, and video games. Fictional supersoldiers are usually heavily augmented, either through surgical means, eugenics, genetic engineering, cybernetic implants, drugs, brainwashing, traumatic events, an extreme training regimen or other scientific and pseudoscientific means. In entertainment, the creators of such programs are viewed often as mad scientists or stern military personnel depending on the emphasis, as their programs would typically go past ethical boundaries in the pursuit of science or military might.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_STRATEGY">
+			<Text>Super Soldiers are an important guerrilla infiltration force capable of entering enemy territory. They are spotted by scout drone units, destroyers, and submarines, and can be detected if they attack or come right next to another unit. You can secretly approach other units to inflict great damage, infiltrate enemy territory and destroy facilities, destroy great people, or interfere with the movement of ship parts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_HELP">
+			<Text>Super Soldiers are an important guerrilla infiltration force capable of entering enemy territory. [COLOR_PLAYER_PURPLE] Chameleon [ENDCOLOR] There is an upgrade, so you can't be detected by enemies. They are detected if they attack, are in line of sight of a detectable unit, or are directly next to another unit. You can disrupt enemy territory by invading it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER">
+			<Text>Orbital Drop Shock Trooper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_TEXT">
+			<Text>The Orbital Drop Shock Troopers or Space Marines are a special operations military that specialize in orbital-dropped shock infantry and special warfare tactics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_STRATEGY">
+			<Text>The Orbital Drop Shock Trooper squad is designed for quick reaction and fast response, capable of deploying anywhere in the world at a moment's notice as long as there is a sight radius. Whether it be for storming enemy lines or positions, striking strategic tile improvements, or deploying as quick reaction reinforcements or to simply holding the line against enemies, there is little the ODST cannot do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_HELP">
+			<Text>Fast and strong Infantry of the future that cannot move after combat like Tanks. It is capable of deploying anywhere on the entire map, as long as it begins its turn within friendly territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY">
+			<Text>Robot Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_TEXT">
+			<Text>While powered armor gave human soldiers unparalleled protection and strength, it still relies on a human to operate the suit. Advances in artificial intelligence eventually lead to the ultimate soldier - a robotic unit that could fight equally as well as a human. Although there were a number of concerns about the prospect of fielding large numbers of robotic units with minimal human control, those societies that did so found them to be highly efficient and effective on the battlefield, with fewer issues involved in adapting them back to civilian duties during peacetime.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_STRATEGY">
+			<Text>The Robot Infantry is the ultimatum Anti-Armor infantry unit with stronger than the regular Automaton. More powerful in groups.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_HELP">
+			<Text>Powerful futuristic Unit that is stronger in groups. Constructed more quickly in cities with Autoplants and Drone Hives.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS">
+			<Text>Colossus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_HELP">
+			<Text>Colossus is an anti-armored infantry unit that is more powerful than the Robot Infantry. This final Ranged Unit has Indirect Fire (can perform attacks over obstacles) and is stronger in group.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_TEXT">
+			<Text>
+				One of the principles of strategic defense is that fewer troops are required to defend than to attack. Defenders can deploy their resources more efficiently with a deep understanding of the positions they are guarding. Indeed, even the most basic military AI systems can build effective defenses with limited time and intelligence. However, when advanced AI systems intervene, these defenses become far more efficient and effective. Developed in this way is the Cognitive Neuroelectronic Defense Registry (CNDR), a system with robust connectivity and high modularity that provides the best defense capabilities to observe, report, adapt and respond to incoming threats. This system also has the ability to prepare for the case of communication control of the robot corps. In particular, the CNDR system serves as a key component of the Colossus, a defense unit. The Colossus is armed with a powerful plasma cannon, which itself has high defense. With the help of the CNDR system, Colossus will be able to respond faster and more accurately to incoming threats, while at the same time gaining control over the entire operation of its robot corps. In this way, CNDR and Colossus are seamlessly linked to each other, opening up a new dimension of military strategy.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_STRATEGY">
+			<Text>
+				Colossus is a powerful ranged robotic unit equipped with a plasma cannon mounted on a launcher. A powerful and solid defensive ranged archer unit.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK">
+			<Text>Railgun Armor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_TEXT">
+			<Text>While conventional tank munitions have continued to improve over the decades, electromotive weapons hold the potential to be even more devastating. Conventional cannons had increasingly adopted sabot rounds to penetrate enemy armor, as these rounds could focus more energy on a smaller area, but railguns could fire rounds with a similarly small surface area even faster. The earliest railguns were mounted upon naval vessels, but advances in power plants and energy systems eventually lead to newer generations of railguns that could be mounted on armored vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_STRATEGY">
+			<Text>The Railgun Armor is a futuristic armored tank and is also the first unit to benefit from [ICON_RES_NANOMAT] Nanomaterials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_HELP">
+			<Text>Fast and powerful futuristic Tank that is the first unit to benefit from [ICON_RES_NANOMAT] Nanomaterials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS">
+			<Text>Mobile Launch Rocket Systems</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_TEXT">
+			<Text>This Rocket Artillery is a highly mobile automatic system that fires 12 surface-to-surface missiles in less than a minute.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_STRATEGY">
+			<Text>Launch Rocket Systems are pre-future Siege units, with better mobility and sight compared to it's predecessor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_HELP">
+			<Text>Powerful siege unit with more mobility and sight than its predecessor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY">
+			<Text>Mech Artillery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_TEXT">
+			<Text>While wheeled and tracked vehicles are still the most practical, the concept of a legged combat vehicle has long captured the imagination of engineers and scientists. It was inevitable that experimentation towards making viable legged vehicles would be conducted, with the earliest practical prototypes being multilegged frames. These walkers could traverse some rough terrain that even tracked vehicles couldn't, although most were outfitted with wheeled secondary movement systems to allow them to drive along roads and smooth terrain at higher speeds than they could walk. Their articulated frames had difficulty withstanding the recoil of tank cannons, however, and thus they were typically outfitted with missile systems to avoid any problems. These mechs became useful as artillery platforms, able to fire from locations unreachable by conventional vehicles, confounding efforts to deter them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_STRATEGY">
+			<Text>The Mech Artillery is a futuristic siege unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_HELP">
+			<Text>Powerful siege unit of the future.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE">
+			<Text>Zeke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_TEXT">
+			<Text>Zeke is a powerful unit of the future era that can walk on two legs unlike existing tanks. Through research and development of bipedalism and AI, it has become possible to handle the center of gravity and joints freely.  In fact, considering the price, performance, and mobility due to the limitations of new materials, there was an advantage in not losing mobility in places such as rivers and wetlands. The high field of view provided a good view of the battlefield, but the high position had the disadvantage of increasing the chance of firing against tanks with an enemy's low center of gravity. However, with the advent of fast guerrilla units of dinosaurs such as Tyrannosaurus and Chimera, a biped walking robot was needed to avoid the enemy's fast movement and river movement restrictions, so it was developed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_STRATEGY">
+			<Text>Zeke is a powerful bipedal mecha tower, but requires 2 Nanomaterials instead. It is not blocked by rivers nor marshes, like than it's predecessor, the wheeled tanks. You can move immediately after attacking.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_HELP">
+			<Text>Powerful Tank unit with double armor, but also double material cost. It's mobility is similar to the previous tanks, but is not obstructed by rivers nor marshes. It's field of view increases by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM">
+			<Text>Gundam</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_TEXT">
+			<Text>Gundam is a powerful defense unit from the future. The center of gravity and joints can be handled freely. The high field of view provided a good view of the battlefield, but the high position had the disadvantage of increasing the chance of firing against tanks with an enemy's low center of gravity. In fact, considering price, performance, and mobility due to limitations of new materials, there was an advantage in being able to move through boosters without losing mobility in places such as rivers and wetlands. It is similar to the two-legged robot Zeke and Massacre, but it is a system that is controlled by a human pilot. Humans have developed Gundams that can maximize the capabilities of pure humans and demonstrate the advantages of science and technology without relying on genetic evolution and digital assimilation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_STRATEGY">
+			<Text>Gundam is a final Gunpowder and powerful defensive Robot type weapon. It is not blocked by rivers and can para-drop almost anywhere on the World.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_HELP">
+			<Text>Gundam is a final Gunpowder and powerful defensive Robot type weapon. It is not blocked by rivers and can para-drop almost anywhere on the World. It's Field of View is increased.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL">
+			<Text>Vertol Gunship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_TEXT">
+			<Text>As the technology behind vertical take-off and landing aircraft matured, an increasing variety of designs began to appear, displacing the standard helicopter gunship. An increasing number of VTOL aircraft utilized jet turbines, but were designed to allow the engines to pivot or otherwise direct their thrust. These aircraft, because of their VTOL capabilities, were often referred to as "vertols" as a shorthand.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_STRATEGY">
+			<Text>The Vertol is a futuristic aerial unit designed to hunt enemy Armor units, it is now able to cross the ocean, but not attack on it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_HELP">
+			<Text>Unit specialized in fighting Modern and Railgun Armor. It is capable of hovering over Mountains and the Ocean.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK">
+			<Text>Hovertank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_TEXT">
+			<Text>The concept of a tank that could cross any terrain by hovering over it has long been a staple of science fiction. Eventually, however, advances in materials engineering, power plants, and control systems made this a reality. With improved power plants, vertols could be configured to carry enough armor to rival a ground-based tank, and sophisticated expert systems and cybernetic controls permitted their crews to handle the aerodynamically unstable craft. These new units were as fast as older vertols, but as heavily armed and armored as tanks. Often they were configured with missiles with EMP warheads, allowing them to devastate advanced armor units, although they proved to be less successful against infantry utilizing biomodifications.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_STRATEGY">
+			<Text>The Hovertank is a futuristic aerial unit designed to hunt enemy Armor units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_HELP">
+			<Text>Unit specialized in fighting Railgun Armor and Giant Death Robots. It is capable of hovering over Mountains and the Ocean.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB">
+			<Text>Cybersub</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_TEXT">
+			<Text>Life on board a submarine has always been stressful for its crews, demanding long periods of time spent in extremely confined quarters. As computer systems became more sophisticated, it was a natural conclusion to try and automate as many of the processes on board submarines, to reduce the number of crew required. Advanced in nanomaterials also permitted a new generation of submarine hulls and torpedo weapons that could move faster and hit targets further away. The extensive automation and computer-assisted controls lead to this new generation of submarines being termed "cybersubs".</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_STRATEGY">
+			<Text>The Cybersub is a futuristic submarine.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_HELP">
+			<Text>Invisible to all Units except Destroyers, Missile Cruisers, Arsenal Ships, and other Submarines, or until it attacks or is adjacent to another unit. Can carry two Missiles, and is specialized in attacking Naval Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER">
+			<Text>Zumwalt Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_TEXT">
+			<Text>Ever since their development, destroyers have been an indispensable part of modern navies. With their high speed and sensor suites, they could serve as a first line of defense, spotting hostile ships and submarines. Advanced in materials engineering and sensor technology have lead to continuous upgrades in their design, however. Particularly with the advent of stealth technology and computer systems to enhance the effectiveness of sensor systems, these new, advanced destroyers have become an even more essential part of the navy. The 21st Century Destroyer is the global standard for surface warships. They tend to display features such as large, slab-sided, free of complex corners and crevices to keep the radar cross section small, and vertical launch systems for carrying large numbers of missiles and helicopter flight decks and hangars ready to launch. The combination of hardware and software allows for a wider detection range, improved sensitivity, and more accurate identification. Only one of these ships can simultaneously defend an entire fleet from ballistic missiles, cruise missiles, enemy aircraft and surface ships.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_STRATEGY">
+			<Text>The Zumwalt Destroyer is a futuristic version of the Destroyer. A very powerful and expensive naval melee unit, capable of tracking submarines from a distance and effectively dealing with all air threats.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_HELP">
+			<Text>Capable of carrying four missiles, this extremely powerful naval melee unit can see submarines from a distance. The value of Aegis destroyers is to intercept air units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP">
+			<Text>Arsenal Ship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_TEXT">
+			<Text>An arsenal ship is a concept for a floating missile platform intended to have as many as five hundred vertical launch bays for mid-sized missiles, most likely cruise missiles. In some naval doctrines, arsenal ships would be commanded remotely by another ship, although as computer systems became more sophisticated some were converted to become largely autonomous.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_STRATEGY">
+			<Text>The Arsenal Ship is a futuristic successor to the Missile Cruiser. It can carry four Missile units, as well as having its own powerful ranged attack.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_HELP">
+			<Text>The Arsenal Ship is a futuristic successor to the Missile Cruiser. It can carry four Missile units, as well as having its own powerful ranged attack.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER">
+			<Text>Advanced Aegis Aircraft Carrier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_HELP">
+			<Text>Carries 10 Aircraft (up to 13 with promotions), has better vision, armor and anti-air weapons.[NEWLINE][NEWLINE]May only have [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Carriers active at one time.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_STRATEGY">
+			<Text>Advanced Aegis Aircraft Carrier is a specialized vessel which carries fighter airplanes, bombers (but not stealth bombers), and atomic bombs. While the Supercarrier cannot directly attack, the aircraft it carries makes it the most powerful offensive weapon afloat. Defensively, while the Supercarrier can defend itself from both close range surface and long range air attacks, the Supercarrier is still weak and should be escorted by Missile Destroyers and Nuclear Submarines.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_TEXT">
+			<Text>The Advanced Aegis Aircraft Carrier is the Nanotech evolution of the Nuclear Aircraft Carrier.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE">
+			<Text>Hybrid Drone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_TEXT">
+			<Text>Advances in biocomputers and organic composites have led to experiments with integrating biological components into existing unmanned devices. The unit's organic component, called the Hybrid Drone, made it easier to repair and maintain the unit in the field due to regenerative technology developed for specific infantry units. One unusual side effect was that the drones seemed to develop an almost animalistic urge, becoming prey to enemy aircraft, particularly slow-moving submarines and armored units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_STRATEGY">
+			<Text>Hybrid drones are future-era hovering recon units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_HELP">
+			<Text>A recon unit from the future era. Specialized in fighting submarines and armored units. Recovers HP each turn and can move. It is also possible to float on Ocean tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB">
+			<Text>Antimatter Fusion Nuclear Bomb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_TEXT">
+			<Text>Antimatter fusion bombs are weapons that go beyond current scientific and technological principles. This weapon harnesses the tremendous energy generated by the interaction of antimatter and matter, and combines it with nuclear fusion to further enhance its destructive power. The weapon's basic principle is to use antimatter to create an environment of extremely high temperature and pressure, which causes hydrogen isotopes to fuse. The energy released in the fusion process further promotes the interaction of antimatter with matter, which in turn releases more energy. The energy thus created has far-reaching and destructive effects on the earth's surface.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_STRATEGY">
+			<Text>When it detonates, a Pure Fusion Nuclear Bomb will destroy all cities and units within its blast radius of 2 tiles. It is automatically destroyed when it attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_HELP">
+			<Text>Unleash the ultimate destruction upon your foes. Does extreme damage to Cities and kill any Unit caught in the blast radius.[NEWLINE][NEWLINE]Requires [COLOR_POSITIVE_TEXT]Manhattan Project[ENDCOLOR] and 3 [ICON_RES_URANIUM] Uranium.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE">
+			<Text>Biodrone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_TEXT">
+			<Text>Revolutionary advances in biotechnology and organic composites have led to the experimental development of biodrone, or organism-based drones. Biodrones are the result of a combination of biogenetic technology and high-level technological innovation, and have unique characteristics. In particular, they have developed survival instincts, allowing them to sensitively detect and destroy submarines and camouflaged infantry. The bio-drones' bio-components give them self-repair and maintenance capabilities. This is due to the regenerative technology developed for certain infantry units, which enhances their continuity on the battlefield and their ability to operate over a long period of time. Also, the biodrone had an unexpected result, as the drones seemed to develop animal-like instincts. They are particularly sensitive against submarines and camouflaged infantry, and certainly against armored units. These detailed characteristics make BioDrones highly effective reconnaissance units, and their existence makes them crucial in gathering vital intelligence and destroying enemies on the battlefield.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_STRATEGY">
+			<Text>Bio-Drone is the ultimate recon unit of the future era, and can quickly suppress terrorism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_HELP">
+			<Text>A very powerful hovering recon unit. Recovers HP every turn and can move quickly. Specialized in fighting submarines and armored units. It is also possible to float on Ocean tiles. You can watch the sky over 6 tiles regardless of obstacles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE">
+			<Text>Railgun missile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_TEXT">
+			<Text>Improvements in nanomaterials engineering and propulsion technologies lead to a leap forwards in the design of guided missiles. Utilizing ramjet engines with extra-lightweight frames, this new generation of missiles was capable of reaching hypersonic speeds, allowing them to strike from further away before a response could be made.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_STRATEGY">
+			<Text>Railgun missiles are a futuristic version of Guided Missile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_HELP">
+			<Text>A one-shot Unit that may be used once to damage enemy Units or Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE">
+			<Text>Plama Bomb Missile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_TEXT">
+			<Text>The fusion of plasma and superconductors has made it possible to dramatically increase the destructive power of railgun missiles. It was possible to increase the destructive power by using the plasma phenomenon in it at the supersonic speed of the existing ultra-light rail gun, and it could attack from a farther distance with more advanced nanotechnology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_STRATEGY">
+			<Text>Plasma Missile is a futuristic version of the Railgun Missile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_HELP">
+			<Text>A one-shot Unit that may be used once to damage enemy Units or Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER">
+			<Text>Crawler SAM</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_TEXT">
+			<Text>The Crawler SAM is an advanced anti-air unit that pushes the limits of traditional resupply systems with innovative logistics methods. The Crawler SAM is equipped with a small nuclear reactor to secure an energy source to improve mobility, and also to continuously produce and equip powerful plasma missiles. This unit utilizes self-made missiles to effectively attack enemies in the air, and is also used for self-defence. These capabilities make crawler SAMs essential for countering air threats while providing logistical support to units on the ground. This unit introduces a new paradigm of combat by providing tactical flexibility while solving complex logistical challenges. This unit will ultimately be a major factor in tactical battlefield dominance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_STRATEGY">
+			<Text>The Crawler SAM is an anti-air unit capable of carrying 4 missile units. Each player can have up to 4.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_HELP">
+			<Text>Anti-aircraft unit of the future era that can mount 4 missiles and can attack 3 consecutive times in one turn. You can hold up to 4 units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL">
+			<Text>Angel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_TEXT">
+			<Text>While walking-type self-propelled guns are predominantly used on the battlefield, Angel was born to compensate for the shortcomings of walking-type self-propelled guns. This ultra-powerful combat unit was created based on advanced materials engineering and advances in micro-reactor generators, solving some of the logistical and defense-related problems faced by walking self-propelled guns. The Angel shows more solid defense compared to the existing walking-type self-propelled guns. This has been made possible by a defense shield system based on the use of new materials and the development of nuclear fusion power generation technology. This shield system allows it to withstand heavy weapon damage, while at the same time providing strong resistance to physical attacks from melee units. Also, this unit has excellent siege abilities. The compact fusion power plant provides extreme power, and can be equipped with a plasma cannon to unleash heavy damage. As a result, the Angel is active as a siege unit with strong breakthrough power on the battlefield. Angels can determine their strength on the battlefield by strengthening their defense and maximizing their attack power. This unit will play an important role on the battlefield of the future, supporting the rear and spearheading the attack.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_STRATEGY">
+			<Text>The Angel is a siege unit that can mount one missile unit. Each player can have up to 4.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_HELP">
+			<Text>The Angel is a siege unit that can mount one missile unit. Each player can have up to 4.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE">
+			<Text>Nanohive</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_TEXT">
+			<Text>The development of nanomachines, particularly nanoassemblers and nanodisassemblers, inevitably resulted in a search to weaponize these devices and utilize them for military purposes. While some success was had with short-lived nanoswarms delivered as missile payloads, most nanoswarms had difficulty surviving extended periods in battlefield conditions. Eventually, the idea of using autonomous carriers, termed "nanohives", to deliver swarms of nanomachines to the battlefield was conceived. Using sophisticated low-altitude hovering technology, these nanohives were able to traverse nearly any terrain to bring nanoswarms to the front. With proper programming, nanoswarms could be assigned to both heal friendly units, as well as attack enemy units, slowly but inexorably dissolving targets away as they were disassembled on a molecular level.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_STRATEGY">
+			<Text>The Nanohive is a futuristic unit that heals friendly units while damaging enemy units within two tiles of it each turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_HELP">
+			<Text>The Nanohive is a futuristic unit that heals friendly units while damaging enemy units within two tiles of it each turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS">
+			<Text>Nexus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_TEXT">
+			<Text>The ultimate turning point in the War of the Future Era is represented by the arrival of the Nexus. The Nexus is an advanced spacecraft designed for colonization, designed to support human life in the harsh conditions of space. A combination of advanced smart materials and miniaturized fusion power plants, this airborne complex enables virtually self-sustaining life and effective defense in space. At the heart of the nexus are highly concentrated command nodes with people's living spaces. This node provides continuous combat situation analysis and provides necessary updates in real time based on the situation around the nexus. In addition, inside the Nexus, a nanohive is installed that instantly repairs damaged parts or creates materials necessary for human survival, increasing independence. The Nexus has space fighters and bombers, so you can deploy them instantly when you need to defend or attack your enemies. These space combat vehicles work in tandem with the Nexus' railguns and missile batteries to provide heavy fire support to the enemy. [NEWLINE][NEWLINE]Finally, the Nexus has its own very strong defense system. It effectively deters enemies from attacking the Nexus, while protecting lifeforms and facilities inside the Nexus. As such, the Nexus serves as a powerful base for life and survival in space and an important stepping stone for human colonization of space.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_STRATEGY">
+			<Text>The Nexus is a futuristic support unit that heals friendly units while reducing combat strength and damaging enemy units adjacent to it each turn. Cannot own more than 4 Nexus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_HELP">
+			<Text>Futuristic support unit that heals friendly units while reducing combat strength and damaging enemy units adjacent to it each turn, and can carry up to 4 Aircraft. Cannot own more than 4 Nexus.</Text>
+		</Row>
+	
+		<Row Tag="TXT_KEY_UNIT_FW_AIRBORNE_FORCES">
+			<Text>Airborne Forces</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_FW_AIRBORNE_FORCES">
+			<Text>Strong infantry Unit capable of paradropping up to 5 tiles from friendly territory. Paratrooper can also move and pillage after paradropping, but cannot enter combat until the following turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AIRBORNE_FORCES_STRATEGY">
+			<Text>The Paratrooper is a late-game infantryman. It is about as strong mechanized infantry unit; however, it can parachute up to 5 tiles away (when starting in friendly territory). This allows the airborne forces to literally jump over enemy positions and destroy road networks, pillage vital resources and so forth, wrecking havoc behind his lines. The Airborne Forces are at great risk when on such missions, so make sure the target is worth it!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FW_AIRBORNE_FORCES_TEXT">
+			<Text>Airborne forces are military units, usually light infantry, set up to be moved by aircraft and "dropped" into battle, typically by parachute. Thus, they can be placed behind enemy lines, and have the capability to deploy almost anywhere with little warning. The formations are limited only by the number and size of their aircraft, so given enough capacity a huge force can appear "out of nowhere" in minutes, an action referred to as vertical envelopment.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES">
+			<Text>Space Marines</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_HELP">
+			<Text>A powerful recon land unit capable of airdropping from friendly territory. After descending, you can move and loot, but you cannot fight until the next turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_STRATEGY">
+			<Text>Space Marine is a reconnaissance ground unit that helps capture cities in the later stages. Can orbital drop in friendly territory. This allows a Space Marine to cause mayhem behind his lines, literally outrunning enemy positions, destroying road networks and plundering vital resources.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_TEXT">
+			<Text>The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's warriors. They are barely Human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. The armor of a Space Marine is composed of layered ceramite and adamantium, Terminator Armour is threaded through with electromotivated fibre bundles and servo-assisted interfaces that link into the user's own neurological and muscular systems to enhance movement.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_TREX">
+			<Text>Tyrannosaurus Rex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_TEXT">
+			<Text>One of the most iconic of the dinosaurs, it was inevitable that efforts would be made to resurrect the Tyrannosaurus Rex. Benefiting from genetic manipulation, the Tyrannosaurus Rex of Jurassic Park is powerful and fast, but its strength has made it difficult to deal with any animals that escape.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_STRATEGY">
+			<Text>An agressive dinosaur unit that escaped from Jurassic Park. No cost and hunt better in open terrains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_HELP">
+			<Text>An agressive dinosaur unit that escaped from Jurassic Park. No cost and hunt better in open terrains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS">
+			<Text>Triceratops</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_TEXT">
+			<Text>An iconic plant-eating dinosaur, the Triceratops is slow-moving, but its hide and bony plates give it immense protection. Some animals have escaped from their captivity, and have required anti-tank weapons to be brought down.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_STRATEGY">
+			<Text>A defensive dinosaur unit that escaped from Jurassic Park. No cost and can overturn heavy vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_HELP">
+			<Text>A defensive dinosaur unit that escaped from Jurassic Park. No cost and can overturn heavy vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR">
+			<Text>Velociraptor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_TEXT">
+			<Text>One of the most frightening of the genetically re-engineered dinosaurs of Jurassic Park, Velociraptors are quite intelligent and frequently try to find ways to escape captivity. While not as strong as the T-Rex and not as tough as a Triceratops, they are extremely fast and can be difficult to hunt down once they've escaped.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_STRATEGY">
+			<Text>A mobile dinosaur unit that escaped from Jurassic Park. No cost and hunt better in vegetations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_HELP">
+			<Text>A mobile dinosaur unit that escaped from Jurassic Park. No cost and hunt better in vegetations.</Text>
+		</Row>
+	
+
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM">
+			<Text>Advanced Mobile SAM</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_STRATEGY">
+			<Text>Advanced Mobile SAM (surface-to-air) units provide an army with anti-air defense. Advanced Mobile SAM units can intercept and shoot at enemy aircraft bombing targets within 4 hexes (but only one unit per turn). These units are fairly vulnerable to non-air attack and should be accompanied by infantry or armor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_HELP">
+			<Text>Will intercept enemy aircraft which try to bomb nearby Units. Two missiles can be mounted.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_PEDIA">
+			<Text>As helicopters developed into more efficient killing machines, the infantry in turn developed weapons designed to combat the growing menace - not to mention the danger posed by jet fighters. Modern "SAMs" (surface-to-air missiles) are fast, light, and contain radar, allowing them to "lock on" to enemy aircraft and fly into them, exploding violently and doing all sorts of probably lethal damage to the fragile planes and choppers. In response more stealthy vehicles have been created and also better missile-jamming technology has been employed. Still, SAM launchers make it hot indeed for enemy aircraft, providing good protection to fellow ground-pounders from the airborne menace.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_JAVELIN">
+			<Text>Javelin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELP_JAVELIN">
+			<Text>Information late-era Ranged unit specialized against Armor Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_JAVELIN_STRATEGY">
+			<Text>The Javelin has better range and deals mored damage than it's predecessor, the Bazooka. It is designed for hitting and destroying heavily armored military vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_FW_JAVELIN_TEXT">
+			<Text>The Javelin (Advanced Anti-Tank Weapon System-Medium) is a ranged unit that can do massive damage, especially against armored units. It is the most powerful ranged unit, boasting a long range of 3, but slow movement and weak when defending. Therefore, it must be used to consume enemy units. It has better range and more damage than the traditional bazooka. Like a machine gun, it weakens nearby enemy units. When attacking, mobile anti-tank missiles deal reduced damage to fortified units and cities, but more damage to armored units. This makes a great defensive unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ATGM">
+			<Text>ATGM Vehicle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELP_ATGM">
+			<Text>Information late-era Ranged unit specialized against Armor Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ATGM_STRATEGY">
+			<Text>The ATGM vehicle has more mobility and deals mored damage than it's predecessor, the Javelin. It is designed for hitting and destroying heavily armored military vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_FW_ATGM_TEXT">
+			<Text>The ATGM vehicle (Anti-Tank Guided Missile Vehicle) is a ranged unit that can do massive damage, especially against armored units. It is the most powerful ranged unit, boasting a long range of 3, but weak when defending. Therefore, it must be used to consume enemy units. It has better range, mobility and damage than the traditional bazooka. Like a machine gun, it weakens nearby enemy units. When attacking, mobile anti-tank missiles deal reduced damage to fortified units and cities, but more damage to armored units. This makes a great defensive unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVIL_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>A powered exoskeleton (also known as power armor, powered armor, powered suit, cybernetic suit, cybernetic armor, exosuit, hardsuit, exoframe or augmented mobility) is a wearable mobile machine that is powered by a system of electric motors, pneumatics, levers, hydraulics, or a combination of technologies that allow for limb movement with increased strength and endurance. Its design aims to provide back support, sense the user's motion, and send a signal to motors which manage the gears. The exoskeleton supports the shoulder, waist and thigh, and assists movement for lifting and holding heavy items, while lowering back stress. The earliest-known exoskeleton-like device was an apparatus for assisting movement developed in 1890 by Russian engineer Nicholas Yagin. It used energy stored in compressed gas bags to assist in movement, although it was passive and required human power. While Power Armors were only a domain of science fiction, today they are simple and 'cheap' to build and are already employed in the Medical, Civilian, Industrial and of course Military fields.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>Power Armor Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_STRATEGY_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>Power Armor Infantry are stronger and faster to build than regular Infantry. Although fast, they cannot move after combat like Tanks; their primary responsibility is, as always, to take and hold the ground.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HELP_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>Fast, basic Unit of the future that requires no special resources to build.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ELITE_MERCENARIES">
+			<Text>Elite Mercenaries</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ENHANCED_MERCENARIES">
+			<Text>Enhanced Mercenaries</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_MERCENARIES">
+			<Text>BioMercenaries</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED">
+			<Text>Intercontinental Ballistic Missile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNIT_FW_ADVANCED_MISSILE_GUIDED_TEXT">
+			<Text>An Intercontinental Ballistic Missile (ICBM) is a ballistic missile with a range of more than 5,500 kilometres (3,400 mi). typically designed for nuclear weapons delivery (delivering one or more nuclear warheads). Most modern designs support multiple independently targetable reentry vehicles (MIRVs), allowing a single missile to carry several warheads, each of which can strike a different target.[NEWLINE][NEWLINE]Early ICBMs had limited accuracy and that allowed them to be used only against the largest targets such as cities. They were seen as a "safe" basing option, one that would keep the deterrent force close to home where it would be difficult to attack. Attacks against military targets, if desired, still demanded the use of a manned bomber. Second and third generation designs dramatically improved accuracy to the point where even the smallest point targets can be successfully attacked. Similar evolution in size has allowed similar missiles to be placed on submarines, where they are known as submarine-launched ballistic missiles, or SLBMs. Submarines are an even safer basing option than land-based missiles, able to move about the ocean at will. This evolution in capability has pushed the manned bomber from the front-line deterrent forces, and land-based ICBMs have similarly given way largely to SLBMs.[NEWLINE][NEWLINE]ICBMs are differentiated by having greater range and speed than other ballistic missiles: intermediate-range ballistic missiles (IRBMs), medium-range ballistic missiles (MRBMs), short-range ballistic missiles (SRBMs)—these shorter range ballistic missiles are known collectively as theatre ballistic missiles. There is no single, standardized definition of what ranges would be categorized as intercontinental, intermediate, medium, or short.[NEWLINE][NEWLINE]The launch of a non-nuclear ICBM would be considered so threatening that it would demand a nuclear response, eliminating any military value of such a weapon. The greatest known range of an ICBM is 16,000 km (RSM-56 Bulava).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED_STRATEGY">
+			<Text>When you want to have the power to touch any part of the world, this is the tool that you should use.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED_HELP">
+			<Text>The ICBM is an advanced guided missile with a staggering range and no maintenance cost. Requires 1 [ICON_RES_OIL] to build.</Text>
+		</Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB">
+      <Text>Ballistic Missile Submarine</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_STRATEGY">
+      <Text>Tougher and stronger than the normal Nuclear Submarine. It too is invisible to most units and can see other submarines, but becomes visible when it attacks or is adjacent to another unit. Most importantly, the Ballistic Missile Sub can carry guided missiles and nuclear missiles (up to 8). This vessel excels at carrying large numbers of missiles to rain death down on your enemies.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_HELP">
+      <Text>The Ballistic Missile Submarine is invisible to all Units except Destroyers and other Submarines. Can carry 2 Missiles. Extremely strong against Naval Units. Requires [ICON_RES_URANIUM] Uranium.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_PEDIA">
+      <Text>
+		  The Ballistic Missile Submarine is an upgrade to the Nuclear Submarine and is available on the discovery of Advanced Ballistics. It does not become obsolete. Requires [ICON_RES_URANIUM] Uranium. The Surface Warship Dockyard is required to build this unit. Limit of 4 per civilization.[NEWLINE][NEWLINE]A Ballistic Missile Submarine is a submarine capable of deploying submarine-launched ballistic missiles (SLBMs) with nuclear warheads. The United States Navy's hull classification symbols for ballistic missile submarines are SSB and SSBN – the SS denotes submarine (or submersible ship), the B denotes ballistic missile, and the N denotes that the submarine is nuclear powered.[NEWLINE][NEWLINE]These submarines became a major weapon system in the Cold War because of their nuclear deterrence capability. They can fire missiles thousands of kilometers from their targets, and acoustic quieting makes them difficult to detect, thus making them a survivable deterrent in the event of a first strike and a key element of the mutual assured destruction policy of nuclear deterrence. Their deployment has been dominated by the United States and the Soviet Union / Russia, with smaller numbers in service with France, the United Kingdom, China, and India.
+	  </Text>
+    </Row>	 
+	  
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE">
+			<Text>Megahive</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_TEXT">
+			<Text>The Megahive is capable of insterstellar travel is perhaps the ultimate expression of AI-Technology. Its ability to hover over any terrain gives it unparalleled mobility, and it has incredible combat ability from its own ranged attack. It cannot take cities on its own, however, and thus requires at least some ground units to assist it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_STRATEGY">
+			<Text>The Megahive is a Spaceship Unit that can traverse any terrain. Has a combat bonus against cities, but cannot capture them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_HELP">
+			<Text>Unique Spaceship hovering unit that can cross any terrain. Has a combat bonus against cities, but cannot capture them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE">
+			<Text>Advanced Helicopter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_HELP">
+			<Text>Unit specialized in fighting Armor tanks and hovering over mountains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_STRATEGY">
+			<Text>The Advanced Helicopter is a deadly air unit that in most respects acts like any ground unit, except that it cannot capture cities. Its movement of 7 makes it extremely quick, and it can move over all terrain types including mountains as if they were clear, but it must embark to cross water. Modern Helicopters receive a hefty combat bonus when fighting tanks. It's strength of 85 and its ability to outflank opponents allows it to triumph over Giant Death Robots.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_TEXT">
+			<Text>The Boeing AH-64 Apache is a four-blade, twin-engine attack helicopter with a tailwheel-type landing gear arrangement, and a tandem cockpit for a two-man crew. It features a nose-mounted sensor suite for target acquisition and night vision systems. It is armed with a 30 mm (1.18 in) M230 Chain Gun carried between the main landing gear, under the aircraft's forward fuselage. It has four hardpoints mounted on stub-wing pylons, typically carrying a mixture of AGM-114 Hellfire missiles and Hydra 70 rocket pods. The AH-64 has a large amount of systems redundancy to improve combat survivability.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER">
+			<Text>Bio Cruiser</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_HELP">
+			<Text> The last powerful ranged naval unit of the future era. Recovers HP each turn and can move. Contains 4 missiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_TEXT">
+			<Text>In a new era of advanced biotechnology and genetic research, the Navy's cruisers have undergone revolutionary changes. Using breakthroughs in gene acceleration and the knowledge gained from extensive studies of the ocean and marine life, the Navy has driven changes to the hulls of its ships. This change is vastly different from the methods used before, and ships now have the ability to move and recover very quickly. The key to this change is the aircraft's automatic recovery system. This system adopts the biological recovery system's algorithm, allowing damaged hulls to be quickly repaired. This technology is the result of research on hybrid drones, which can maximize the aircraft's recovery ability and ensure a much longer ship lifespan. While the ship's basic structure still follows the traditional methods used, these innovative technologies allow ships to be operated in a more effective way. They can still be equipped with radar and guns and can move anywhere on the sea, but now they have the opportunity to mount much larger weapons and thicker armor. Thanks to cutting-edge research on marine life, it is now possible to develop ships with the ability to be protected from predators, work effectively in the depths, or even survive in hostile environments. This innovation has given humanity a new way to reimagine life at sea.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_STRATEGY">
+			<Text>Dominate the seas and show your enemies the might of your civilization. Let's show the enemy the power of the sea with excellent survival!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER">
+			<Text>Bio Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_HELP">
+			<Text> The last powerful melee naval unit of the future era. Recovers HP each turn, and you can see the submarine from a distance. It is possible to move. Contains 4 missiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_TEXT">
+			<Text>In a new era of advanced biotechnology and genetic research, the Navy's destroyers have undergone unprecedented changes. Leveraging breakthroughs in gene acceleration and knowledge gained from comprehensive studies of the ocean and marine life, the Navy pushed for changes to the destroyer's hull. As a result of this change, destroyers now have the ability to move and recover faster. Advanced research into marine life has revolutionized hull design and defense systems. Now you can develop destroyers with the capabilities you need to detect submarines hiding in the deepest reaches of the ocean, show off your power at sea, or even attack cities. This innovation gave humanity a new way to gain a tactical advantage at sea.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_STRATEGY">
+			<Text>A very powerful and expensive naval melee unit, capable of tracking submarines from a distance and effectively dealing with all air threats.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER">
+			<Text>Railgun Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_HELP">
+			<Text> A powerful melee naval unit from the future. Submarines can be seen from afar. Contains 4 missiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_TEXT">
+			<Text>The Railgun Destroyer is a state-of-the-art naval ship equipped with modern cutting-edge technology. This destroyer is equipped with a railgun, a fast-firing weapon that uses electromagnetic waves as its main weapon, replacing traditional projectile weapons. The railgun is a weapon that fires projectiles at super high speed to destroy targets. It boasts tremendous destructive power with speed close to the speed of light and tremendous energy. Destroyers were originally intended to detect and eliminate subsurface threats, particularly submarines. However, the railgun destroyer has gone beyond these functions and has more powerful offensive and defensive capabilities. Because the railgun has no atmospheric resistance, its trajectory is remarkably accurate, and it reaches the target very quickly, greatly reducing the enemy's reaction time. These capabilities are critical in modern naval combat armed with a variety of weapons and sensors.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_STRATEGY">
+			<Text>A very powerful and expensive naval melee unit, capable of tracking submarines from a distance and effectively dealing with all air threats.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER">
+			<Text>Railgun Cruiser</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_HELP">
+			<Text> A powerful long-range naval unit from the future. Contains 4 missiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_TEXT">
+			<Text>The Railgun Cruiser is the Navy's flagship combat vessel equipped with a larger platform Railgun weapon system. These cruisers are equipped with larger and more powerful railguns than railgun destroyers, allowing them to attack farther, more accurately, and more destructively. The cruiser's role is to balance offensive and defensive power, and perform various missions. While a railgun cruiser meets these requirements, she has relatively strong firepower due to her amazing railgun weaponry. The high speed and high energy characteristics of her railguns make this cruiser effective at gaining superiority at sea, besieging or attacking cities. She utilizes the cutting edge of electromagnetic wave science and engineering to enhance her performance. They are a prime example of the power of modern naval forces, and their mighty railguns are formidable at sea.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_STRATEGY">
+			<Text>Dominate the seas and show your enemies the might of your civilization. Let's show the enemy the power of the sea with excellent survival!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER">
+			<Text>Plasma Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_TEXT">
+			<Text>It has formidable attack power against ground targets. The Plasma Bomber developed a plasma missile using superconductor technology with an engine that harnesses plasma energy. These missiles use high-energy plasma to unleash tremendous destructive power, allowing bombers to accurately strike targets from safe altitudes. Additionally, the stealth feature allows the bomber to approach its target while evading enemy defenses. These features make it the bomber with the best precision strike capability.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_STRATEGY">
+			<Text>Plasma Bomber with high-powered plasma engines that can only be transported by Nexus and Helicarrier. Attack cities and units while avoiding enemy air defenses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_HELP">
+			<Text>Plasma Bomber with high-powered plasma engines that can only be transported by Nexus and Helicarrier. Nanomaterials are needed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER">
+			<Text>Plasma Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_TEXT">
+			<Text>Combining advanced stealth technology with powerful plasma engine propulsion using superconductors, it is a fighter that plays a key role in the modern combat space. The unique plasma engine uses ionized particles in the atmosphere to generate tremendous thrust, allowing the plasma fighter to move quickly and flexibly while consuming relatively little energy. Additionally, these engines allow fighters to fly at high altitudes while avoiding enemy detection. This fighter's weapon is equipped with a superconductor-powered railgun, which fires large amounts of plasma at high speed to deliver powerful attacks in and out of the atmosphere.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_STRATEGY">
+			<Text>Plasma Fighter is a fighter with a high-powered plasma engine that can only be moved by Nexus and Helicarrier. Attack cities and units while avoiding enemy air defenses, and defend cities and Helicarriers from enemy airstrikes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_HELP">
+			<Text>Plasma Fighter is a fighter with a high-powered plasma engine that can only be moved by Nexus and Helicarrier. Nanomaterials are needed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER">
+			<Text>Helicarrier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_TEXT">
+			<Text>The Helicarrier is an air unit created through a combination of advanced technology and new technology. It is an innovative combat and support platform that replaces the capabilities of an aircraft carrier and provides flexibility and maneuverability far beyond that. During the development of advanced spaceship engines, the technology to continuously levitate was obtained. This helicarrier, which is not very fast but can move compliantly, compensates for the shortcomings of any existing air unit and enables flexible operation. . It is designed to operate in almost all types of weather conditions and environments, and can provide air support in any area. The Helicarrier is equipped with a variety of equipment and systems required to perform a variety of combat and support missions. You can operate a variety of air units, including high-speed fighters, combat helicopters, and drones, and counter airborne threats with powerful weaponry, including high-intensity lasers and missile systems. In addition, the Helicarrier enables information collection and analysis on the battlefield and rapid command delivery through complex sensors and communication equipment. This allows the Helicarrier to perform surveillance, communications, command, control, and intelligence functions in the air, all of which are crucial to tactical superiority. Overall, the Helicarrier sets new standards in combat support through its innovative design and functionality, constantly pushing the boundaries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_STRATEGY">
+			<Text>The Helicarrier is a futuristic support unit capable of hovering on the ground. You cannot have more than 4 Helicarriers in your civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_HELP">
+			<Text>As an auxiliary unit of the future era, it can hover on the ground and can load 6 basic aircraft. Limited to 4 per civilization.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_ADVANCED_MEC_INFANTRY">
+			<Text>Advanced Mechanized Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ADVANCED_MEC_INFANTRY">
+			<Text>Incredibly fast and powerful, this late-game Unit require Aluminum to be built.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ADVANCED_MEC_INFANTRY_STRATEGY">
+			<Text>Advanced Mechanized Infantry are stronger and faster than Mechanized Infantry. In addition to fast, Advanced Mech Infantry move after combat like Modern Armor and can heal even we in make an action; A mix between the Infantry and the armored vehicles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_ADVANCED_MEC_INFANTRY_TEXT">
+			<Text>Unit powered with exoskeleton, also known as powered armor, or exoframe, is a powered mobile machine consisting primarily of an exoskeleton-like framework worn by a person and a power supply that supplies at least part of the activation-energy for limb movement. [NEWLINE] [NEWLINE]These depictions can be described as a battlesuit with mechanical and electronic mechanisms designed to augment the wearer's abilities. Other power armors are portrayed as being much larger, more like a bipedal vehicle the size of a tank or much larger. The line between mecha and power armor is necessarily vague.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_TITLE">
+			<Text>Distributed Computing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING">
+			<Text>Distributed Computing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_DESC">
+			<Text>The advancement of computing systems has increasingly resulted in their distribution across a wider network of computers. Parallel processing allows computations to be conducted more quickly, as various calaculations can be carried out simultaneously, while distributed computer networks create systems that are more flexible and resilient against mechanical failure, as they are no longer limited to single machines.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Vertols[ENDCOLOR], a hovering military unit, and [COLOR_POSITIVE_TEXT]Arsenal Ships[ENDCOLOR], a futuristic ranged naval unit, as well as [COLOR_POSITIVE_TEXT]Research Servers[ENDCOLOR] which increase [ICON_RESEARCH] Science and [COLOR_POSITIVE_TEXT]Autoplants[ENDCOLOR] which increase [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"All of a sudden, we've lost a lot of control. We can't turn off our internet; we can't turn off our smartphones; we can't turn off our computers." -- Steve Wozniak[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_TITLE">
+			<Text>Environmentalism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM">
+			<Text>Environmentalism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_DESC">
+			<Text>The increasing awareness of ecological systems and how they work has, in turn, lead to concerns about the impact of human activity upon them. Environmentalism is a broad social movement that emphasizes environmental protection and the health of the environment. It advocates for the lawful preservation, restoration, and improvement of the natural environment, and typically seeks to control pollution and encourage natural diversity.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Geothermal Plants[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Tidal Plants[ENDCOLOR], which increase [ICON_PRODUCTION] Production. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Nature Preserves[ENDCOLOR], which provide [ICON_CULTURE] Culture and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"We have lived our lives by the assumption that what was good for us would be good for the world. We have been wrong. We must change our lives so that it will be possible to live by the contrary assumption, that what is good for the world will be good for us. And that requires that we make the effort to know the world and learn what is good for it." -- Wendell Berry[NEWLINE][TAB]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TECH_FW_AUGMENTED_REALITY_TITLE">
+			<Text>Augmented Reality</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUGMENTED_REALITY">
+			<Text>Augmented Reality</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_TITLE">
+			<Text>Superconductivity - Plasma Energy Dynamics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY">
+			<Text>Superconductivity - Plasma Energy Dynamics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_DESC">
+			<Text>Superconducting-Plasma Energy Mechanics is an innovative field of study created through the combination of superconducting and plasma technologies. Research in this field has developed a technology that generates a strong magnetic field and uses it to control plasma. This field of study has revolutionized the way we produce energy. The use of superconducting-plasma energy dynamics allows stable control of fusion reactions, which can be a powerful means of providing safe and efficient energy. This made it possible to control the plasma and maintain a high energy state, enabling efficient generation of fusion energy. Additionally, this technology has been used in the research and development of high-speed electromagnetic flight vehicles. This enables a high degree of energy efficiency and high power output, which has been used to make spacecraft faster than ever before. Finally, the technology of superconducting-plasma energy mechanics also had an impact on weapon systems. Plasma-powered weapons have great destructive power, which has brought about a great change in military strategy. Superconducting-plasma energy dynamics is expected to play a pivotal role in future technological development, which is expected to greatly change our lives in many ways.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_HELP">
+			<Text>You can build high-speed railways in your city, with walking self-propelled artillery and magnetic levitation trains available to help you attack the city. Plasma bombers and fighters can be mass produced. In addition, the quantum mechanical part has been improved, so it can be developed into various modules within the space station.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Physics is the only profession in which prophecy is not only accurate but routine."[NEWLINE][TAB][TAB] - Neil deGrasse Tyson[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_TITLE">
+			<Text>Orbital Development</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_DESC">
+			<Text>While national governments still have the most resources to invest in space exploration, commercial enterprises have become increasingly interested in the opportunities of privatized access to space. Either way, orbital development holds opportunities for both research and industrial production, as well as helping facilitate and maintain increasingly complex orbital communication networks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_HELP">
+			<Text>You can develop space by building a spaceship factory and a spaceship launch facility. Through related research, it is possible to produce defensive ground units called battle suits. In order to adapt to the external environment, technology for alternative meat factories has also developed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"The exploration and use of outer space,including the moon and other celestial bodies, shall be carried out for the benefit and in the interests of all countries, irrespective of their degree of economic or scientific development, and shall be the province of all mankind."[NEWLINE][TAB][TAB] - Article 1 of the Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space, Including the Moon and Other Celestial Bodies[NEWLINE][TAB]</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_TITLE">
+			<Text>Euthenics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_DESC">
+			<Text>The science concerned with establishing the optimum living conditions for humans, animals and plants, especially through proper provisioning and environment. If Facism is your ideology, Eugenics will improve the genetic quality of a human population, enhancing individual traits, in favor of certain group membership.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_HELP">
+			<Text>You can build clonetroopers and eco-friendly villages using AND fungus. You can construct a fungal agronomic laboratory that can utilize ADN fungus and a building that increases the production of the ocean.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"People used to say to my friend Mary, a quadriplegic, 'You still have your mind.' She would say, 'I still have my body.' The world tells me to divorce myself from my flesh, to live in my head... I don't want to be fleshless."[NEWLINE][TAB][TAB] - Anne Finger[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_TITLE">
+			<Text>Organics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_DESC">
+			<Text>As the methods of genetic manipulation become increasingly refined, the possibiilty of using genetics to produce more effective organs and organic components increases. While the wholescale manipulation of the human genome would produce more effective results, the sheer complexity of the task makes it easier to focus on engineering organic components to specific standards, even if the rest of the host body suffers significant problems. While there are some concerns about the ethics of using these engineered host bodies to incubate augmented organs, they do prove to be increasingly valuable and useful, whether in enhancing the productivity and effectiveness of workers, or in making more powerful soldiers for the battlefield.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_HELP">
+			<Text>You can build reinforced body infantry and hybird drones.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Life is an inherently depreciating asset."[NEWLINE][TAB][TAB] - Suzanne Marjorie Fielding, Transplanetary Management, Methods, and Resources[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_TITLE">
+			<Text>Mechatronics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_DESC">
+			<Text>Mechatronics, developed in the early stages of the 21st Century, is an interdisciplinary, synergistic melding of electrical and computer engineering, telecommunications and control systems in mechanical design. It allows for advanced automation in “dumb” machines. Programmed in repetitive patterns free of expensive oversight, mechatronics allows for inexpensive, efficient automated production facilities of basic consumer items. Things like furnishings, clothing, hand tools … indeed, anything without elaborate moving parts … can be produced in large quantities with minimal human involvement. An offshoot of mechatronics is the field of bio-mechatronics, which seeks to integrate mechanical parts with a human body, usually in the form of removable items such as powered myoelectric prostheses or exoskeletons.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_HELP">
+			<Text>Mechatronics allows for the development of remotely operated machinery and robotics, including the mobile and ballistic LEV units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Machines can be journeymen to machine apprentices, as long as we are still the masters."[NEWLINE][TAB][TAB] - Hutama, We are All Destined to Prosper[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_TITLE">
+			<Text>ECO-Power Systems</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_DESC">
+			<Text>From the crude coal-fired electrical generators to the massive “sunscoop,” the production of Energy on Old Earth was a race against demand and dwindling resources. On this planet, plentiful sources, traditional or unexpected, for the production of Energy to feed the needs of the growing colonies exist. It was only a matter of those first colonial engineers discovering how to extract and utilize those sources, constructing innovative power plants and transmission systems; utilizing a variety of methods, colonial survival is a testament to their success in doing so. Even today research into sustainable power systems is critical if we are to avoid the Energy crises that plagued distant Earth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_HELP">
+			<Text>Oil can be extracted from wheat resources. Build generators to strengthen towns, industrial parks and advanced energy research parks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"The necessity of an artificial power source is a myth. An ecosystem powers itself. When humanity learns to live in harmony with its surroundings, we will reap the same benefits of power."[NEWLINE][TAB][TAB] - Daoming Sochua, Scientific Morality Vol.VII[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_TITLE">
+			<Text>Astrodynamics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_DESC">
+			<Text>The application of celestial mechanics to practical matters concerning orbital flight development and interstellar mapping lately has become one of the most vital topics of research for space exploration. As the colonists contemplated a return to space, astrodynamics – founded on the ancient laws of Newton and Kepler – laid out the unvarying formulae of free, circular, elliptical, parabolic and hyperbolic orbits. But advances in design and energy sources, coupled with the differences in mass and rotational period of this planet compared to Old Earth, meant that velocities and orbital periods could be increased and shortened respectively. Soon enough, satellites of every sort circled overhead. This in turn triggered a new interest in the “geography” of near space among the Earth; the result was a plentitude of new planetariums and research grants devoted to the heavens as many felt manned space missions would occur within their lifetime.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_HELP">
+			<Text>Astrodynamics allows space navigation, “Space Surveillance Network”</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"I never cease to find beauty in the fact that even though we walk among the stars, we still hold them in awe."[NEWLINE][TAB][TAB] - Samatar Jama Barre, This is Not Exile[NEWLINE][TAB]
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_TITLE">
+			<Text>Implants</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS">
+			<Text>Implants</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_DESC">
+			<Text>Implants are man-made devices that are implanted or grafted to living tissue. They came in a wide range of types and effects, and would most likely work like mutations, but are artifacts that must be surgically implanted to the host's body. While there are some concerns about the ethics of using these implants, they do prove to be increasingly valuable and useful, whether in enhancing the productivity and effectiveness of workers, or in making more powerful soldiers for the battlefield.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_HELP">
+			<Text>Prosthetic transplants allow fast walking, bio-enhanced infantry with excellent body regeneration, and mutant diplomats invisible to external enemies. You can also build implant parlors to strengthen your ground units. Installing an Apex Center will enhance your spy's abilities and give you a great diplomat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"And he causeth all, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads: And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name."[NEWLINE][TAB][TAB] - Revelations, the Bible[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_TITLE">
+			<Text>Neural Interface</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE">
+			<Text>Neural Interface</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_DESC">
+			<Text>As machines have become increasingly sophisticated, the interfaces required to interact with them have as well. Being able to control a machine with one's thoughts as an extension of one's body would be an incredible achievement, making it far simpler to perform complex tasks with mechanical assistance. However, the brain is itself a highly complex organ, and achieving a direct interface a significant challenge. Still, progress is being made in establishing connections between computers and other technological devices and human nerves, allowing both motor control and sensory input of technological devices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Cybersubs[ENDCOLOR], the most advanced submarine unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"A picture is worth a thousand words. An interface is worth a thousand pictures."[NEWLINE][TAB][TAB] - Ben Shneiderman[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_TITLE">
+			<Text>Cognitive Technology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH">
+			<Text>Cognitive Technology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_DESC">
+			<Text>As the capability to produce increasingly small-scale devices develops, so has the capacity to integrate computer systems into practically any item or material, and with the development of networked computing, allows appliances or other objects to be made increasingly "smart". A smart home, for example, can monitor activity in various rooms, adjusting lighting or temperature as needed to conserve power. Smart appliances can monitor usage and even determine when to place orders for new food or other supplies as needed. Furthermore, even simple "smart" systems acting in concert can display increasingly intelligent emergent behavior.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_HELP">
+			<Text>Combining automation systems and cognitive engineering can produce offensive robots and arsenal ships. Network hubs can be installed to strengthen sub-connections between cities. Virtua Idol World Wonders can be built.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Digital behavior is just a replication of human behavior."[NEWLINE][TAB][TAB] - Paul Papadimitriou[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_TITLE">
+			<Text>Rare Resource Exploration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_DESC">
+			<Text>The development of nanomaterials derived from rare resource exploration has shown that it is possible to manipulate materials at the molecular and atomic level to create new materials and structures. The next challenge in finding true nanotechnology is to produce real working components (power sources, motors and other mechanical parts) at this scale so that nanoscale machines can do the work. Increasingly sophisticated tools are devised to manipulate molecules at the nanoscale, making sophisticated and futuristic materials much more common and usable.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_HELP">
+			<Text>It will enable deep-sea mining and exploration of the Earth, enabling production in many cities and nanomaterials in the ocean. Hills and mountains can also be explored for minerals, increasing the city's output.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Infinities and indivisibles transcend our finite understanding, the former on account of their magnitude, the latter because of their smallness; Imagine what they are when combined."[NEWLINE][TAB][TAB] - Galileo Galilei[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_TITLE">
+			<Text>Designer Lifeforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING">
+			<Text>Designer Lifeforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_DESC">
+			<Text>While the genetic modification of the human genome holds the most promise for human augmentation, it is a highly complex endeavor as the human genome is the product of millions of years of evolution. A simpler undertaking is to take much simpler genomes, such as those found in plants and animals, in order to modify them more drastically -- or even produce entirely new genomes. In time, experimentation with genetic manipulation lead to the capability to craft and engineer entirely new organisms, leading to the term "gengineering", a portmanetau of the term "genetic engineering". With the capbility to engineer living organisms to fill specific ecological niches and other roles, it becomes increasingly possible to manipulate the environment to meet particular needs or desires.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Chimeras[ENDCOLOR], genetically engineered combat units, as well as [COLOR_POSITIVE_TEXT]Biogenesis pods[ENDCOLOR] which increase the production of Mutants and Chimeras, and provide newly created units with unique promotions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"If you realize that all things change, there is nothing you will try to hold on to. If you are not afraid of dying, there is nothing you cannot achieve."[NEWLINE][TAB][TAB] - Lao Tzu, Tao Te Ching[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_TITLE">
+			<Text>Biomodification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_DESC">
+			<Text>While the term "gengineering" refers to the creation of entirely new organisms through genetic manipulation, biomodification reflects taking existing organisms and modifying them to improve their capabilities in various ways. In particular, modification of the human genome allows the adaptation of individuals to augmented forms that can meet a variety of needs, whether it be strength and durability in combat, or the ability to work in hazardous environments. As biomodfication becomes increasingly prevalent, more environments become available to humans to live and work, although the definition of what constitutes being "human" starts to become blurred.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Biotroopers[ENDCOLOR], the most powerful genetically-engineered infantry, as well as [COLOR_POSITIVE_TEXT]Bioenhancement Centres[ENDCOLOR] which increase the production of Mutants and Chimeras, and provide newly created units with unique promotions, as well as [COLOR_POSITIVE_TEXT]Genejack Facilities[ENDCOLOR], which increase [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"As human beings, our only sensible scale of values is one based on lessening the agony of existence."[NEWLINE][TAB][TAB] - H.P. Lovecraft[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_TITLE">
+			<Text>Artificial Environments</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_DESC">
+			<Text>Manned exploration and inhabitation of outer space will require significant advances in the technologies available to sustain humans in one of the most hostile environment possible. In particular, self-sustaining environments that can provide breathable atmosphere, drinkable water, and food will be needed. These technologies will not be applicable only to space travel, however, as it will enable us to create self-contained environments underground, in arid regions, or under the ocean, greatly increasing the volume of space available for human habitation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Vertical Farms[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Hydroponics Domes[ENDCOLOR] in order to increase [ICON_FOOD] Food output, as well as [COLOR_POSITIVE_TEXT]Geofronts[ENDCOLOR] to improve city defense.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"The more artificial a human environment becomes, the more the word 'natural' becomes a term of value."[NEWLINE][TAB][TAB] - Wendell Berry[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_TITLE">
+			<Text>Orbital Space Production</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_DESC">
+			<Text>Orbital production is a concept that encompasses the cultivation, purification, manufacture, and production of various biological and non-biological raw materials in Earth orbit. It crosses the boundaries of scientific research and the commercial space industry, and presents a wide range of application possibilities for production systems in space environments.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_HELP">
+			<Text>Later in the game, you can build X-COM, a powerful recon unit. It can also create orbital refineries and orbital food-growing facilities that provide production and nanomaterials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"The tricky thing about adamantium is, that if you ever manage to process its raw, liquid form, you got to keep it that way, keep it hot. Because once the metal cools, it's indestructible."[NEWLINE][TAB][TAB] - X-Men[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_TITLE">
+			<Text>Arcologies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_DESC">
+			<Text>The term 'arcology' is a portmaneteau of the words 'architecture' and 'ecology', and is a vision of architectural design principles for very densely populated habitats. An arcology is distinguished from a merely large building in that it is designed to lessen the impact of human habitation on any given ecosystem. Adapting to life within an arcology would likely require social and cultural adaptation as well, with an increased emphasis on frugality and shared social resources, and a lessening of private space.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Aerospace Complexes[ENDCOLOR], which increase the air capacity of a City, [COLOR_POSITIVE_TEXT]Orbital Habitats[ENDCOLOR], which increase [ICON_FOOD] Food, and the [COLOR_POSITIVE_TEXT]Central Command[ENDCOLOR], which improves Information Hubs, Distribution Hubs, and Metroplex Hubs across the empire. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Arcologies[ENDCOLOR], which provide [ICON_FOOD] Food and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Architecture is the physical form of the ecology of the human, the configuration of matter which allows for the best energetic and willful flux"[NEWLINE][TAB][TAB] - Paolo Soleri[NEWLINE][TAB]</Text>
+		</Row>
+			
+		<Row Tag="TXT_KEY_TECH_FW_AI_TITLE">
+			<Text>Artificial Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI">
+			<Text>Artificial Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_DESC">
+			<Text>Artifical intelligence is the intelligence exhibited by machines and software. Although technically any intelligent agent is one that can perceive its environment and undertake actions that maximize its chances of success, colloquially the term refers to a machine or software that displays a notable degree of self-awareness and sentience, displaying a human-like level of intelligence. With the development of "smart" devices and other forms of cognitive technology, achieving this goal becomes a possibility, although there are some concerns that, as such intelligences may not think in a truly "human" fashion, they may become rivals or otherwise hostile towards humanity. Still, as intelligent behavior may be defined as being logical or human-like, it is also possible such new intelligences would be benevolent or friendly towards humanity, so long as humanity acted intelligently themselves.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]AI Networks[ENDCOLOR], which increase [ICON_RESEARCH] Science and [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"I think, therefore I am"[NEWLINE][TAB][TAB] - Rene Descartes[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_TITLE">
+			<Text>Cybernetics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS">
+			<Text>Cybernetics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_DESC">
+			<Text>Although cybernetics as a science is broadly concerned the study of systems of any nature which are capable of receiving, storing, and processing information so as to use it for control, its study of the connection between stimulus and action lends itself to the common perception of the study of interfaces between humans and machines, and how mechanical sensors and agents might be integrated with human decision-making processes. However, cybernetics can also be applied to such things as purely mechanical systems (studying artificial intelligence and emergent behavior), as well as biological and social systems.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Hovertanks[ENDCOLOR], the most advanced mobile unit in the game, as well as [COLOR_POSITIVE_TEXT]Telepresence Hubs[ENDCOLOR], which increase [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"The world of the future will be an even more demanding struggle against the limitations of our intelligence, not a comfortable hammock in which we can lie down to be waited upon by our robot slaves." -- Norbert Weiner[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_TITLE">
+			<Text>Ecotheory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_DESC">
+			<Text>While environmentalism has been a social movement concerned with the preservation of nature against human activity, it does also have the drawback of regarding both "nature" and "humanity" as separate and distinct from each other. As the study of ecological systems progresses, increasing movements that seek to view both humans and their environment more holistically start to develop, encouraging people to view themselves as part of a single, unified system. Some of the more radical proponents of these new ecological philosophies (or "ecosophies") advocate that thought should be given to modifying both humans and the environment so they can live in greater harmony with each other -- with competing needs, simply preserving both humanity and the environment as they are is likely to lead to further conflict.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Ecosanctuaries[ENDCOLOR] which provide [ICON_CULTURE] Culture and [ICON_HAPPINESS_1] Happiness and [COLOR_POSITIVE_TEXT]Biofactories[ENDCOLOR] which provide [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Every living being is connected intimately, and from this intimacy follows the capacity of identification and as its natural consequences, practice of non-violence."[NEWLINE][TAB][TAB] - Arne Næss[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_TITLE">
+			<Text>Nanomaterials</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS">
+			<Text>Nanomaterials</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_DESC">
+			<Text>Nanomaterials research takes a materials science-based approach to nanotechnology, leveraging advances in materials metrology and synthesis which have been developed in support of microfabrication research. Materials with structure at the nanoscale often have unique optical, electronic, or mechanical properties.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Power Armor Infantry[ENDCOLOR], a futuristic infantry unit, and [COLOR_POSITIVE_TEXT]Nanomaterial Plants[ENDCOLOR] which provide Nanomaterials. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Generators[ENDCOLOR], which provide [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Carbon atoms on a distant planet rearranged themselves into DNA, microorganisms formed, grew backbones, swam around the ocean, mutated into amphibians and crawled onto dry land — and finally a cab appeared at the mouth of the alley."[NEWLINE][TAB][TAB] - Mark Coggins, "The Immortal Game"[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_TITLE">
+			<Text>Transgenics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS">
+			<Text>Transgenics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_DESC">
+			<Text>As the technology to clone existing organisms matured, it also permitted the increasing development of new, genetically modified organisms that incorporated previously nonexistent traits that could breed true in future generations. Most transgenic organisms could only grow and develop under controlled environments, such as specialized plant nurseries, but new ecotheories helped scientists understand the complex interactions in ecologies and environments, allowing more stable transgenic organisms that could survive in open environments without upsetting the existing ecological balance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_HELP">
+			<Text>You can build a genetic research complex to increase production, gold, and food output. Increases the gold output of ranches, fishing boats, farms, and camps. You can produce mutated units with great resilience.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Nothing is so painful to the human mind as a great and sudden change."[NEWLINE][TAB][TAB] - Mary Shelley, Frankenstein[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_TITLE">
+			<Text>Cloning</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING">
+			<Text>Cloning</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_DESC">
+			<Text>The advancing study of biology and medicine lead to the creation of methods for artifical gestation, and manipulation of organisms on a cellular level. Once the ability to incubate organisms artifically in a laboratory environment was achieved, attention was turned to the capability to replicate particularly useful organisms, eventually leading to the search for some means to replicate an actual human being. Still, while it is possible to replicate an organism genetically, that organism may not mature into an identical twin of its predecssor, due to environmental influences.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Clone Labs[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aquaculture Labs[ENDCOLOR], which enhance nearby resources.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Why would you clone people when you can go to bed with them and make a baby? C'mon, it's stupid."[NEWLINE][TAB][TAB] - Ray Bradbury[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_TITLE">
+			<Text>Genetic Engineering</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP">
+			<Text>Genetic Engineering</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_DESC">
+			<Text>With the discovery of DNA, and the increasing ability to manipulate organisms on a genetic level, it was inevitable that some would investigate the effects of manipulating the genetic composition of organisms, in an effort to improve them in various ways. Genetic manipulation can be highly problematic, however, as even simpler organisms that have been genetically modified may prove to have unintended biological and environmental effects. The possibility of human genetic modification is an issue with many social and ethical concerns, although some feel the potential benefits would outweigh such risks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Mutants[ENDCOLOR], a cheap infantry unit that can heal itself, as well as [COLOR_POSITIVE_TEXT]Gene Labs[ENDCOLOR], which provide a bonus to certain resources, as well as increasing the production of [ICON_GREAT_PEOPLE] Great People.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"We cannot become what we need to be, remaining what we are."[NEWLINE][TAB][TAB] - Max De Pree[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_TITLE">
+			<Text>Supercomputers and Digitization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS">
+			<Text>Supercomputers and Digitization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_DESC">
+			<Text>A supercomputer is a computer with a high-level computational capacity compared to a general-purpose computer.[NEWLINE][NEWLINE]Supercomputers were introduced in the 1960s and the first supercomputers only used a few processors. In the 1990s, machines with thousands of processors began to appear and, by the end of the 20th century, massively parallel supercomputers with tens of thousands of "off-the-shelf" processors were the norm.[NEWLINE][NEWLINE]Supercomputers play an important role in the field of computational science, and are used for a wide range of computationally intensive tasks in various fields, including quantum mechanics, weather forecasting, climate research, oil and gas exploration, molecular modeling (computing the structures and properties of chemical compounds, biologicalmacromolecules, polymers, and crystals), and physical simulations (such as simulations of the early moments of the universe, airplane and spacecraft aerodynamics, the detonation of nuclear weapons, and nuclear fusion) and would eventualy leads to the Digital revolution, also knows as the 4th industrial revolution that has been occurring since the middle of the last century. It is characterized by a fusion of technologies that is blurring the lines between the physical, digital, and biological spheres that include technologies like artifical intelligence, augmented reality, virtual reality, blockchain, cryptocurrency, 3D printers, big data, robotics, etc... As the physical, digital, and biological worlds continue to converge, new technologies and platforms will increasingly enable citizens to engage with governments, voice their opinions, coordinate their efforts, and even circumvent the supervision of public authorities. Simultaneously, governments will gain new technological powers to increase their control over populations, based on pervasive surveillance systems and the ability to control digital infrastructure, would profoundly impact the nature of national and international security, affecting both the probability and the nature of conflict.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_HELP">
+			<Text>You can build e-commerce servers that increase your city's gold output. You can build a cyber police station to increase your city's security. You can build a communication base station that informs city landmarks, towns, etc. You can produce UAVs that navigate your borders to establish your first line of defense.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"We cannot become what we need to be, remaining what we are."[NEWLINE][TAB][TAB] - Max De Pree[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_TITLE">
+			<Text>Future Ballistics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS">
+			<Text>Future Ballistics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_DESC">
+			<Text>The development and launch of artificial satellites has brought great advances in science and technology, particularly in space development. These technological advances did not simply push the boundaries of science, but served to enhance our understanding of the world and the universe. These technological leaps have also contributed significantly to the development and production of intercontinental ballistic missiles (ICBMs). The technology of ICBMs is complex in itself and requires technological leaps in many of the areas that make it possible. Advanced physics, materials science, electromagnetics, and control systems are all critical factors in the design and implementation of these advanced weapon systems. Technological advances in these areas can be applied not only to ICBMs, but also to other types of missiles, spacecraft, and aircraft.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_HELP">
+			<Text>Can produce intercontinental ballistic missiles. Enhanced Operational Ability increases the abilities of Generals and Admirals. It can produce futuristic infantry power armor prostheses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"We cannot become what we need to be, remaining what we are."[NEWLINE][TAB][TAB] - Max De Pree[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_TITLE">
+			<Text>Memetics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS">
+			<Text>Memetics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_DESC">
+			<Text>Memetics is the study of the development and spread of memes -- self-contained units that carry cultural ideas, symbols, or practices that can be transmitted from one mind to another. They are considered by some to be a cultural analogue to genes, in the way they replicate, mutate, and respond to selective pressures. The study of memetics may help us understand how societies and cultures develop and evolve over time, although some suggest it may ultimately also help people manipulate and shape socieities into more desirable forms.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Entertainment Servers[ENDCOLOR], which increase [ICON_CULTURE] Culture output, and [COLOR_POSITIVE_TEXT]VR Training Centres[ENDCOLOR] to help train veteran units. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Eco-Communes[ENDCOLOR], which provide [ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Not even the most heavily-armed police state can exert brute force to all of its citizens all of the time. Meme management is so much subtler; the rose-tinted refraction of perceived reality, the contagious fear of threatening alternatives."[NEWLINE][TAB][TAB] - Peter Watts, Blindsight[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_TITLE">
+			<Text>Autonomous Systems</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS">
+			<Text>Autonomous Systems</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_DESC">
+			<Text>As cognitive technology advanced, fully autonomous mechanical systems became increasingly feasible. While not fully sentient or self-aware, these systems were capable of sufficiently complex decision-making that they could handle unexpected circumstances. This allowed human operators to provide simpler instructions and commands, and mechanical systems required less oversight, making them increasingly practical in real-world environments rather than controlled settings.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Advanced Destroyers[ENDCOLOR], the most powerful naval melee unit, as well as [COLOR_POSITIVE_TEXT]Drone Hives[ENDCOLOR] which provide [ICON_PRODUCTION] Production and [ICON_GOLD] Gold, and the [COLOR_POSITIVE_TEXT]Borehole[ENDCOLOR], which improves Geothermal Plants and Mines. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Support Nodes[ENDCOLOR], which provide [ICON_PRODUCTION] Production and [ICON_GOLD] Gold, and heal nearby units each turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Never do anything yourself that others can do for you."[NEWLINE][TAB][TAB] - Agatha Christie, The Labours of Hercules[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_TITLE">
+			<Text>Hyperstructures</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES">
+			<Text>Hyperstructures</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_DESC">
+			<Text>Expanding upon the concept of the arcology towards urban development, advances in materials engineering and other technologies may someday make it feasible to accomplish tremendous feats of engineering -- housing an entire city of people in a single structure, designed to optimize human comfort and society while minimizing their impact on the surrounding environment. Such a structure would be a tremendous accomplishment, and would undoubtably have an equally great impact upon human society.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Crawlers[ENDCOLOR], the most powerful siege unit, as well as [COLOR_POSITIVE_TEXT]Metroplex Hubs[ENDCOLOR], which provide [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_QUOTE">
+			<Text>[NEWLINE][ TAB ][ TAB ]"Men have become the tools of their tools"[NEWLINE][ TAB ][ TAB ]  - David Thoreau [NEWLINE][ TAB ]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TECH_FW_MICROSCALE_ENGINEERING_TITLE">
+			<Text>Microscale Engineering</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MICROSCALE_ENGINEERING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Infinities and indivisibles transcend our finite understanding, the former on account of their magnitude, the latter because of their smallness; Imagine what they are when combined."[NEWLINE][TAB][TAB] - Galileo Galilei[NEWLINE][TAB]
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_TITLE">
+			<Text>Homo Superior</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"I teach you the Overman. Man is something which shall be surpassed."[NEWLINE][TAB][TAB] - Friedrich Nietzsche[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_DESC">
+			<Text>With the full maturation of both biomodfication and cybernetics, it becomes possible to augment the human body in almost limitless ways. Human beings can be stronger, smarter, live longer and be relatively free from disease or injury. While there are ethical and even logistical concerns with such human augmentation, it would leave humanity poised to transcend its limitations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_HELP">
+			<Text>Allows you to build the [COLOR_POSITIVE_TEXT]Spaceship Stasis Chamber[ENDCOLOR], which is one of the spaceship components required for the Science Victory.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_TITLE">
+			<Text>Digital Society</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"If you stay right where you are, then people will eventually come to you."[NEWLINE][TAB][TAB] - Robert Doisneau[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_DESC">
+			<Text>With the proliferation of artificial intelligences, as well as the advancement of cybernetics allowing humans to utilize mind-machine interfaces and telepresence, the concept of the mind and personality being linked to one's physical body becomes increasingly outmoded. Advances in computer networks and technology allow people to project themselves anywhere on the planet, or perceive entirely artifical worlds. Ultimately, such a society may discard concerns about the physical world, with identity being determined solely by one's mind, rather than one's body, and one's perceptions may be determined largely by one's interactions with the electronic environment humanity lives in.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Brain Uploading Facilities[ENDCOLOR], which increase [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science, [ICON_GOLD] Gold, and [ICON_CULTURE] Culture but reduce population.</Text>
+		</Row>
+
+		
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_TITLE">
+			<Text>Smart Materials</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Everything changes, nothing remains without change."[NEWLINE][TAB][TAB] - Siddhārtha Gautama[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_DESC">
+			<Text>The culimination of nanotechnology would be the development of "smart materials" -- materials that are actually comprised of intelligent nanomachines, capable of adapting themselves to their environments or other stimuli. Nanomachines like these, working in concert, would allow humans to have complete control over their environments -- construction shelters or other objects upon demand. Depending on the nature and distribution of the nanomachines, they could also serve other roles, such as personal defense or even transportation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Nexus[ENDCOLOR] units, a powerful carrier and support unit, as well as the [COLOR_POSITIVE_TEXT]Utility Fog[ENDCOLOR], which improves city defense and increases [ICON_HAPPINESS_1] Happiness.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_TITLE">
+			<Text>Energy Theory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_QUOTE">
+			<Text>[NEWLINE][ TAB ][ TAB ]"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."[NEWLINE][ TAB ][ TAB ]  - Nikola Tesla [NEWLINE][ TAB ]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_DESC">
+			<Text>The human investigation of the principles under which the universe operates have lead to investigations of the functioning of the universe at the smallest and most high-energy states. The most evident products of this research can be found in the extended exploration and development of the solar system, resulting in powerful booster engines capable of propelling spacecraft between interplanetary colonies, as well as facilitating the development of new generations of space stations and bases on other worlds.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Spaceship Boosters[ENDCOLOR], one of the spaceship components required for the Science Victory, as well as the [COLOR_POSITIVE_TEXT]Spaceship Factory[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Moon Base[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_TITLE">
+			<Text>Gene Acceleration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"Man does not weave this web of life. He is merely a strand of it. Whatever he does to the web, he does to himself."[NEWLINE][TAB][TAB] - Chief Seattle[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_DESC">
+			<Text>Dielectric acceleration is the pinnacle of life science, and humanity has challenged the realm of the gods. It is used to accelerate species evolution or to create new species. This scientific approach further enhances strategic depth on the battlefield, helping players create powerful units with special abilities. This technology is used in two main ways. First, "genetic enhancement" improves the genes of existing creatures, enhancing their abilities. It enhances characteristics such as health, speed, and intelligence, and the enhanced unit brings many advantages in battle. Second, "Gene Creation" is a way of creating new creatures, creating new units with unique combat-specific abilities. This can be seen as the ultimate tool created by mankind to challenge the realm of the gods.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_HELP">
+			<Text>You can produce genoswarms that move quickly and harass opponents, and biodrones, the ultimate recon unit.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_TITLE">
+			<Text>Space Colonization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_QUOTE">
+			<Text>[NEWLINE][ TAB ][ TAB ]"There is no easy way to the stars from the earth."[NEWLINE][ TAB ][ TAB ]  - Seneca [NEWLINE][ TAB ]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_DESC">
+			<Text>Humanity has always felt an underlying desire to explore and expand, to find what lies beyond the horizon. Outer space provides the ultimate frontier, a broad expanse that humanity can expand into and explore. The achievement of a level of technology that would permit humans to travel to another star system may be as pivotal in human history as the development of the first tools.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_HELP">
+			<Text>Allows you to build the [COLOR_POSITIVE_TEXT]Spaceship Engine[ENDCOLOR], which is one of the spaceship components required for the Science Victory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_TITLE">
+			<Text>Computronium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_QUOTE">
+			<Text>[NEWLINE][ TAB ][ TAB ]"Men are only as good as their technical development allows them to be."[NEWLINE][ TAB ][ TAB ]  - George Orwell [NEWLINE][ TAB ]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_DESC">
+			<Text>Computronium is a material hypothesized by Norman Margolus and Tommaso Toffoli of the Massachusetts Institute of Technology to be used as "programmable matter," a substrate for computer modeling of virtually any real object.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_HELP">
+			<Text>Allows you to build the [COLOR_POSITIVE_TEXT]Spaceship Cockpit[ENDCOLOR], which is one of the spaceship components required for the Science Victory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_TITLE">
+			<Text>Human Augmentation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_QUOTE">
+			<Text>[NEWLINE][ TAB ][ TAB ]"Mind you, I've always wondered if Kei wasn't one of those Yamashita upgrades -- you know, with too much adrenocorticotropic hormone, too little monoamine oxidase?"[NEWLINE][ TAB ][ TAB ]  - Adam Warren, A Plague of Angels [NEWLINE][ TAB ]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_DESC">
+			<Text>With the development of both genetic biomodification and cybernetics, limitless possibilities for human augmentation became possible. Virtually any component of the human body could be replaced with a vat-grown or cybernetic replacement. Eventually, however, some began to see baseline humanity as the limitation, as it could only accept so much modification, and more experimentation began on establishing improved versions of the human genome.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_HELP">
+			<Text>Allows you to build [COLOR_POSITIVE_TEXT]Birthing Pods[ENDCOLOR], which increase [ICON_RESEARCH] Science and [ICON_PRODUCTION] Production.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NUCLEAR_FUSION_HELP">
+			<Text>Can produce carnage robots.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOTECHNOLOGY_HELP">
+			<Text>Build powerful railgun tanks that use nanomaterials.</Text>
+		</Row>
+
+
+		
+		<!-- <Row Tag="TXT_KEY_UNIT_RAILGUN_ARMOR">
+			<Text>Railgun Armor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_RAILGUN_ARMOR">
+			<Text>Fast and powerful post late-game Armor Unit. Requires 1[ICON_RES_ALUMINUM] Aluminum to build.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_RAILGUN_ARMOR_STRATEGY">
+			<Text>Railgun Armor is stronger than the Modern Armor unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_RAILGUN_ARMOR_TEXT">
+			<Text>Railguns differ from current conventional weapons in their means of propulsion. Bullets fired from a typical assault rifle are accelerated to approximately 900m/s using the explosive force of an ignited chemical compound, channelled down a barrel. Railguns use two parallel metal 'rails' and a powerful magnetic field to launch a projectile at much higher velocity, around 3,500 m/s. [NEWLINE][NEWLINE]This design decreases ammunition size and weight by eliminating the need for a casing of chemical propellant, which also removes hazards of carrying explosive material in a tank or on a ship. The higher projectile velocities also grants a vastly increased range and a shorter travel time, which in turn lessens the effect of gravity and wind conditions on the projectile, resulting in a more accurate, more precise and far deadlier weapons system.</Text>
+		</Row> -->
+
+
+		<!-- <Row Tag="TXT_KEY_BUILDING_FW_KingdomTowerCT">
+			<Text>Kingdom Tower</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FW_MiapolisCT">
+			<Text>Miapolis</Text>
+		</Row> -->
+	
+		<!-- <Update>
+			<Where Tag="TXT_KEY_TECH_ADVANCED_BALLISTICS_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Nuclear Missile[ENDCOLOR], a frightening weapon that requires [ICON_RES_URANIUM] Uranium, and is capable of destroying units and cities. Also allows you to build the [COLOR_POSITIVE_TEXT]Modern Armor[ENDCOLOR], an incredibly fast and powerful Armored Unit."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_LASERS_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Jet Fighter[ENDCOLOR], a powerful late-game fighter unit, and the [COLOR_POSITIVE_TEXT]Guided Missile[ENDCOLOR], an inexpensive single-use Unit that can damage enemy Units. Also allows your Workers to build [COLOR_POSITIVE_TEXT]Industrial Sites[ENDCOLOR]."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_ROBOTICS_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Missile Cruiser[ENDCOLOR], a Naval Unit capable of carrying 3 Missiles and spotting enemy Submarines, and the [COLOR_POSITIVE_TEXT]Supercarrier[ENDCOLOR], a Naval Unit capable of carrying 4 Fighters."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_MOBILE_TACTICS_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Mechanized Infantry[ENDCOLOR], a fast and versatile late game Unit that doesn't require any resources. Also allows your Workers to build [COLOR_POSITIVE_TEXT]Comm Arrays[ENDCOLOR]."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_STEALTH_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Stealth Bomber[ENDCOLOR], a powerful Ranged unit, as well as the [COLOR_POSITIVE_TEXT]Launch Facility[ENDCOLOR], which enables you to start building Space Stations once they are researched."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_INTERNET_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Drone UAV[ENDCOLOR], as well as [COLOR_POSITIVE_TEXT]Server Hubs[ENDCOLOR] and [COLOR_POSITIVE_TEXT]E-Commerce Servers[ENDCOLOR]."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_GLOBALIZATION_HELP"/>
+			<Set Text="Allows you to build [COLOR_POSITIVE_TEXT]Special Forces[ENDCOLOR] units."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_PARTICLE_PHYSICS_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Missile Destroyer[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Particle Accelerator[ENDCOLOR]."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_NANOTECHNOLOGY_HELP"/>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]XCOM Squad[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Nanohive[ENDCOLOR], as well as the [COLOR_POSITIVE_TEXT]Nanoforge[ENDCOLOR] to increase military unit production."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_NUCLEAR_FUSION_HELP"/>
+			<Set Text="Allows you to build [COLOR_POSITIVE_TEXT]Suborbital Bombers[ENDCOLOR], the most powerful bomber unit, as well as [COLOR_POSITIVE_TEXT]Fusion Plants[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Distribution Hubs[ENDCOLOR] to increase Production in your cities."/>
+		</Update> -->
+<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY">
+			<Text>Arcology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY_TEXT">
+			<Text>An arcology is a massive structure designed to be largely, if not fully, self-sustaining, providing a completely enclosed environment for a large number of citizens to work and live.[NEWLINE][NEWLINE]This custom improvement provides 2 [ICON_FOOD] Food and 2 [ICON_GOLD] Gold to the tile it's built on, with an additional +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold if adjacent to a City, and +2 [ICON_GOLD] if adjacent to a Coast. Cannot be built adjacent to another Arcology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY_HELP">
+			<Text>This custom improvement provides 2 [ICON_FOOD] Food, 2 [ICON_GOLD] Gold and 2 [ICON_PRODUCTION] Production to the tile it's built on, with an additional +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold if adjacent to a City, and +2 [ICON_GOLD] if adjacent to a Coast. Cannot be built adjacent to another Arcology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY">
+			<Text>Build an Arcology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY_HELP">
+			<Text>Build an Arcology which increases the Food, Science and Gold yield of the tile. Gives 100% defense bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY_REC">
+			<Text>It will increases the Food, Science and Gold yield of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME">
+			<Text>Hydroponics Dome</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME_TEXT">
+			<Text>Artificial methods of cultivating food have grown increasingly sophisticated over time. The advent of new technologies such as hydroponics and aeroponics means that crops can be cultivated in entirely artificial environments, and communities that would normally struggle to feed their citizens can now cultivate crops nearby without needing to import food from more fertile areas.[NEWLINE][NEWLINE]This improvement provides additional +1 [ICON_FOOD] Food if built adjacent any Farms or Terraces nearby and +1 [ICON_RESEARCH] Science to .</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME_HELP">
+			<Text>This custom improvement provides 3 [ICON_FOOD] Food, 2 [ICON_RESEARCH] Science and 1 [ICON_PRODUCTION] Production to the tile it's built on. All adjacent Farms and Terraces gain +1 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME">
+			<Text>Build a Hydroponics Dome</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME_HELP">
+			<Text>Build a Hydroponics Dome which increases the Food, Science and Production yields of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME_REC">
+			<Text>It will increase the Food, Science and Production yields of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX">
+			<Text>Industrial Complex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX_TEXT">
+			<Text>The industrial complex is a socioeconomic concept wherein businesses become entwined in social or political systems or institutions, creating or bolstering a profit economy from these systems. Such a complex is said to pursue its own financial interests regardless of, and often at the expense of, the best interests of society and individuals. Businesses within an industrial complex may have been created to advance a social or political goal, but mostly profit when the goal is not reached. The industrial complex may profit financially from maintaining socially detrimental or inefficient systems. Increasingly large and complex collections of factories, assembly plants, foundries, and other such industrial buildings begin to appear, as industries are grouped together to help facilitate production and encourage economies of scale. While the Industrial Site isn't as fully effective as the Manufactory, it can still provide a significant boost to production. The concept was popularized by President Dwight Eisenhower in his Jan. 17, 1961 farewell speech. Eisenhower described a "threat to democratic government" called the military industrial complex. This complex involved the military establishment gaining "unwarranted influence" over the economic, political, and spiritual realms of American society due to the profitability of the US arms industry and the number of citizens employed in various branches of military service, the armaments industry, and other businesses providing goods to the US army. The "complex" arises from the creation of a multilateral economy serving military goals, as well as the paradox that arises from the goal of the multilateralism (sustained profit) as antithetical to the military's theoretical goal (peace).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX_HELP">
+			<Text>This improvement provides 5 [ICON_PRODUCTION] Production and 2 [ICON_GOLD] Gold. Also adds 3 [ICON_PRODUCTION] Production to every adjacent manufactory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX">
+			<Text>Build an Industrial Complex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX_HELP">
+			<Text>Build an Industrial Complex which increases the Production yield of the tile and adjacent manufactories. +20% Defense Bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX_REC">
+			<Text>It will increase the Production yield of the tile and adjacent manufactories gain 3 Production.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC">
+			<Text>High-Energy Research Centre</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC_TEXT">
+			<Text>As science has advanced, so have the tools needed to probe deeper into the secrets of the universe. While a lot of research is still conducted on an academic and theoretical level, the tools required to explore the mysteries of quantum mechanics, astrophysics and particle physics require specialized high-tech laboratories and research centres.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC_HELP">
+			<Text>This improvement provides 5 [ICON_RESEARCH] Science and 2 [ICON_GOLD] Gold. Also adds 3 [ICON_RESEARCH] Science to every adjacent academy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HERC_HELP">
+			<Text>Build an High-Energy Research Centre which increases the Science yield of the tile and adjacent academies. +20% Defense Bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HERC_REC">
+			<Text>It will increase the Science yield of the tile and adjacent academies gain 3 Science.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE">
+			<Text>Nature Preserve</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE_TEXT">
+			<Text>Scientific advancement has given mankind an increasing number of tools with which to manipulate their environment, but this has also meant that pristine, natural environments have become increasingly scarce. Whether to preserve natural ecosystems, or to encourage an increasing ecotourism industry, more and more Nature Preserves are being set aside.[NEWLINE][NEWLINE]This improvement provides 3 [ICON_CULTURE] Culture and 2 [ICON_RESEARCH] Science to the tile it's built on.[NEWLINE][NEWLINE][ICON_CULTURE]Culture is additionally increased by +1 at campsites, Brazilian firewood lumberyards, polders and Nature Preserve adjacent to the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE_HELP">
+			<Text>This improvement provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science and [ICON_TOURISM] Tourism to the tile it's built on.[NEWLINE][NEWLINE][ICON_CULTURE]Culture is additionally increased by +1 at campsites, Brazilian firewood lumberyards, polders and Nature Preserve adjacent to the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE">
+			<Text>Build a Nature Preserve</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE_HELP">
+			<Text>Build a Nature Preserve which increases the Culture and Science yield of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE_REC">
+			<Text>It will increase the Culture and Science yields of the tile. Bonus of [ICON_CULTURE] if adjacent to another preserve.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL">
+			<Text>Eco-Commune</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL_TEXT">
+			<Text>With increasing awareness of the impact of urbanization upon the environment, there were numerous efforts to try and establish more environmentally friendly and sustainable communities. While these communities always remained somewhat small, particularly compared to the much denser arcologies that began to appear afterwards, they were self-sufficient, and their location in relatively unspoilt areas of the wilderness meant they had a certain appeal for ecotourists.[NEWLINE][NEWLINE]This improvement provides +1 [ICON_FOOD] to any Farms or Terraces adjacent.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL_HELP">
+			<Text>Functions All adjacent Farms, Terraces gain +1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL">
+			<Text>Build an Eco-Commune</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL_HELP">
+			<Text>Build an Eco-Commune which increases the Food, Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL_REC">
+			<Text>It will increase the Food, Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE">
+			<Text>Genocentre</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE_TEXT">
+			<Text>While most experimentation in genetic manipulation and engineering took place in dedicated genemod and transgenics labs located in urban centres, the development of increasingly diverse biomanufacturing processes created an increasing need for centres dedicated to genetic experimentation and development located away from the controlled environments of the cities. Built in undeveloped areas, these genocentres studied the impact of genetically modified organisms within natural environments.[NEWLINE][NEWLINE]This custom improvement replaces most of the food for Production, it provides 1 [ICON_FOOD] Food, 2 [ICON_GOLD] Gold, and 4 [ICON_PRODUCTION] Production to the tile it's built on. Also adds +2[ICON_GOLD] to adjacent trading posts, +2 [ICON_PRODUCTION] to adjacent pastures, +2 [ICON_FOOD] Food to all adjacent fishing boats and +2 [ICON_FOOD] to all adjacent farms. Cannot be built adjacent to another Genocentre.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE_HELP">
+			<Text>This custom improvement provides 1 [ICON_FOOD] Food, 2 [ICON_GOLD] Gold and 4 [ICON_PRODUCTION] Production to the tile it's built on. Also adds +2 [ICON_GOLD] to adjacent trading posts, +2 [ICON_PRODUCTION] to adjacent pastures and +2 [ICON_FOOD] Food to all adjacent fishing boats. Buildable on Water. Cannot be built adjacent to another Genocentre.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE">
+			<Text>Build a Genocentre</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE_HELP">
+			<Text>Build a Genocentre which increases the Food, Production, Gold and Defense (100%) yield of the tile. Buildable on Water.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE_REC">
+			<Text>It will increases the Food, Production, Gold and Defense (100%) yield of the tile. Buildable on Water.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY">
+			<Text>Communications Array</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY_TEXT">
+			<Text>A communications array is an installation dedicated to helping facilitate the exchange of information across an area.  It initially provides a small increase in Gold over the Trading Post, but depending on which technologies have been researched, may also provide additional Culture or Science.  However, the Comm Array cannot be built adjacent to each other, limiting the number that can be constructed.[NEWLINE][NEWLINE]This custom improvement provides 2 [ICON_GOLD] Gold to the tile it's built on. [NEWLINE][NEWLINE][ICON_CULTURE]Culture is additionally increased by [COLOR_POSITIVE_TEXT]1[ENDCOLOR] in villages, sacred sites, landmarks, and special tile facilities of civilizations adjacent to the tile. Cannot be built adjacent to another Communications Array.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY_HELP">
+			<Text>This custom improvement provides 2 [ICON_GOLD] Gold, 2 [ICON_CULTURE] Culture and 2 [ICON_RESEARCH] Science to the tile it's built on. 1 Science and Gold bonus if built on any hills. Cannot be built adjacent to another Communications Array.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY">
+			<Text>Build a Communications Array</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY_HELP">
+			<Text>Build a Communications Array which increases the Science, Culture and Gold yield of the tile. Bonus on hills.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY_REC">
+			<Text>It will increase the Science, Culture and Gold yield of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR">
+			<Text>Power Generator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR_TEXT">
+			<Text>As more and more industries became computerized, automated, they placed an increasing demand for power on available power plants and generators. The most heavily industrialized and automated regions began to develop numerous supplemental power generators to help provide industries.[NEWLINE][NEWLINE]This custom improvement provides 5 [ICON_GOLD] Gold and 2 [ICON_PRODUCTION] Production to the tile it's built on.[NEWLINE][NEWLINE] [ICON_GOLD] Gold of adjacent small towns, industrial complexes, high-tech industrial complexes, gene research complexes, and complete environmental city facilities increases by +1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR_HELP">
+			<Text>This custom improvement provides 5 [ICON_GOLD] Gold and 2 [ICON_PRODUCTION] Production to the tile it's built on. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR">
+			<Text>Build a Power Generator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR_HELP">
+			<Text>Build a Power Generator which increases the Gold and Production yield of the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR_REC">
+			<Text>[ICON_GOLD] +1 gold to all adjacent towns and research-industrial complexes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE">
+			<Text>Support Node</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE_TEXT">
+			<Text>As military units became increasingly sophisticated, it also became increasingly difficult to help maintain their equipment in the field. This was particularly prevalent in militaries that utilized extensive cybernetics, which lead to the development of the Support Node. These modular facilities provided both strong defensive positions, as well as extensive repair facilities and workshops to help maintain technologically sophisticated equipment for units in the field.[NEWLINE][NEWLINE]This custom improvement provides 3 [ICON_GOLD] Gold and 3 [ICON_PRODUCTION] Production to the tile it's built on, with an additional +1 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold if adjacent to a City and +2 [ICON_PRODUCTION] Production, +1 [ICON_FOOD] FOOD if built on a Hill. It also damages nearby enemy units for 20 HP each turn. Cannot be built adjacent to another Support Node.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE_HELP">
+			<Text>This custom improvement provides 3 [ICON_GOLD] Gold and 3 [ICON_RESEARCH] Science to the tile it's built on, with an additional +1 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold if adjacent to a City and +2 [ICON_PRODUCTION] Production, +1 [ICON_FOOD] FOOD if built on a Hill. It also damages nearby enemies and heals allies for 20 HP each turn. Cannot be built adjacent to another Support Node. Allows Ships to traverse.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE">
+			<Text>Build a Support Node</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE_HELP">
+			<Text>Build a Support Node which provides Gold and Science, and also Damages 20HP to nearby enemies. 1 Science/Gold bonus if adjacent to any city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE_REC">
+			<Text>It will increase the Gold and Science yield of the tile, as well as damaging 20HP nearby enemies and healing allies each turn.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH">
+			<Text>Build a Fungal Growth Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH_HELP">
+			<Text>Build a Fungal Growth Farm which will give you ADN Fungal Resources for building Mutant Units. +50% Defense Bonus and 10 Damage to nearby enemy units.  Does not remove the current Feature and allows Ships to traverse.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH_REC">
+			<Text>It will provides 2 [ICON_FOOD] Food, 2 [ICON_RESEARCH] Science, and 2 [ICON_CULTURE] Culture to the tile it's built on while keeping the Forest, Jungle or Marsh intact. It also inflicts 10 HP damage on any units that end their turn on or adjacent to it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH">
+			<Text>Fungal Growth Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH_TEXT">
+			<Text>The most visible effect of the release of the Pholus Mutagen has been the mutation of plants into fungal growths. The unusual plant forms have been observed to developing neural-like structures that allow them to interpret sensory information from their environments, and even respond with toxins and biochemical attacks against those they consider hostile, making areas overrun by the fungus to be quite hazardous for those unprepared for them to traverse. However, the fungus itself also appears to be living in symbiosis with humans and animals affected by the mutagen, providing them with useful sustenance and other valuable materials such as pharmaceuticals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH_HELP">
+			<Text>This custom improvement provides 2 [ICON_FOOD] Food, 2 [ICON_RESEARCH] Science, and 2 [ICON_CULTURE] Culture to the tile it's built on. It also inflicts 10 HP damage on any units that end their turn on or adjacent to it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT">
+			<Text>Construct a [LINK=IMPROVEMENT_FW_VAULT]Nuclear Vault[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT_HELP">
+			<Text>Permits up to 3 Nuclear Missiles to be based on the tile and grants Fallout immunity to stationed Units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT_REC">
+			<Text>It provides +25% Defensive Strength in this Tile, and Permits up to 3 Nuclear Missiles to be based on the tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT">
+			<Text>Nuclear Vault</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT_TEXT">
+			<Text>A fallout shelter is an enclosed space specially designated to protect occupants from radioactive debris or fallout resulting from a nuclear explosion. Many such shelters were constructed as civil defense measures during the Cold War. [NEWLINE][NEWLINE]During a nuclear explosion, matter vaporized in the resulting fireball is exposed to neutrons from the explosion, absorbs them, and becomes radioactive. When this material condenses in the rain, it forms dust and light sandy materials that resemble ground pumice. The fallout emits alpha and beta particles, as well as gamma rays. [NEWLINE][NEWLINE]Much of this highly radioactive material falls to Earth, subjecting anything within the line of sight to radiation, becoming a significant hazard. A fallout shelter is designed to allow its occupants to minimize exposure to harmful fallout until radioactivity has decayed to a safer level. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT_HELP">
+			<Text>The Nuclear Vault functions both as a Missile Silo and Fallout Shelter. [NEWLINE][NEWLINE]Can stash up to 3 Nuclear Missiles and provides Fallout Immunity to units stationed on this tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_FW_FUTURE">
+			<Text>Future Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_FW_FUTURE_SHORT">
+			<Text>Future</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT">
+			<Text>Human Genome Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the Human Genome project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING">
+			<Text>Asteroid Mining Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the Asteroid Mining project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT">
+			<Text>Human Genome Project</Text>
+		</Row>
+        <Row Tag="TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP">
+			<Text>Every Specialist working in the city gets +1 of their current value and also change all Great People rate by 3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT_SPLASH">
+			<Text>The Human Genome Project is an effort to map out the human genome, in an effort to better understand human genetics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1">
+			<Text>Research Exchange</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1_HELP">
+			<Text>Research Labs gain +2 [ICON_RESEARCH] Science. Medical Labs gain +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2">
+			<Text>Genetic Treatments</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2_HELP">
+			<Text>All cities gain +1 [ICON_CITIZEN] Citizen. Gene Labs gain +2 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3">
+			<Text>Applied Genomics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP">
+			<Text>Human Genome Project wonder appears in [ICON_CAPITAL] Capital. ({TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT">
+			<Text>Human Genome Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP">
+			<Text>Begins the project to fund the Human Genome Project. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Genetic Manipulation.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING">
+			<Text>International Asteroid Mining Conference</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING_SPLASH">
+			<Text>The International Asteroid Mining Conference was convened in an effort to establish an international agreement on how the extensive mineral resources of the solar system, particularly within the asteroid belt, would be exploited, distributed, or protected.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1">
+			<Text>M-Type Asteroids</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP">
+			<Text>Gain 3 [ICON_RES_ALUMINUM] Aluminum, 2 [ICON_RES_IRON] Iron and 1 [ICON_RES_NANOMAT] Nanomaterials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2">
+			<Text>S-Type Asteroids</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP">
+			<Text>Gain 6 [ICON_RES_NANOMAT] Nanomaterials.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3">
+			<Text>C-Type Asteroids</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP">
+			<Text>Ceres Station wonder appears in [ICON_CAPITAL] Capital and 2 [ICON_RES_URANIUM] Uranium.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING">
+			<Text>International Asteroid Mining Conference</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING_HELP">
+			<Text>Begins the project to fund the International Asteroid Mining Conference. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Orbital Development.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

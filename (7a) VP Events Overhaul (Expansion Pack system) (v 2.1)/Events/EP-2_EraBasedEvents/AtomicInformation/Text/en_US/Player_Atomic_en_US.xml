@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+
+		<!-- Stadium WSO International -->
+		<Row Tag="TXT_KEY_PLAYER_EVENT_STADIUM_WORLD_EVENT_CHOICE_1">
+			<Text>World Sporting Event!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_STADIUM_WORLD_EVENT_CHOICE_1_HELP">
+			<Text>The World Sports Organization has chosen your empire to host the WSO International! For the next {4_Turns}, Cities with a Stadium will host games, boosting the [ICON_TOURISM] Tourism output of that City!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_STADIUM_WORLD_EVENT_CHOICE_1_SUCCESSFUL">
+			<Text>The WSO chose {3_PlayerName} to host their International Tournament. Their Stadiums will produce lots of [ICON_GOLD] Gold and [ICON_TOURISM] Tourism!{4_Help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_STADIUM_WORLD_EVENT_CHOICE_1_SUCCESSFUL_S">
+			<Text>{3_PlayerName} to host World Sports Organization Tournament!</Text>
+		</Row>
+
+	</Language_en_US>
+</GameData>

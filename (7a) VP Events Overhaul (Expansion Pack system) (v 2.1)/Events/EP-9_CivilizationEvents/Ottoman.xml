@@ -1,0 +1,510 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_OTTOMAN</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<LessThanMaximumTradeRoutes>true</LessThanMaximumTradeRoutes>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_CARAVANSARY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<PrereqTech>TECH_THEOLOGY</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresWar>true</RequiresWar>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_OTTOMAN_UE_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresWar>true</RequiresWar>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventPromotion>PROMOTION_SUPPLY</EventPromotion>
+			<EventBuildingClassGlobal>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_OTTOMAN_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<IsUnhappy>true</IsUnhappy>
+			<EraScaling>true</EraScaling>
+			<GoldenAgeTurns>20</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+			<ReligiousUnrestModifierGlobal>-50</ReligiousUnrestModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_OTTOMAN_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_OTTOMAN_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_OTTOMAN_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_OTTOMAN_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_OTTOMAN_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_OTTOMAN_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_OTTOMAN_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_OTTOMAN_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldChangesPerReligion>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Building_YieldChangesPerReligion>
+	<Building_BuildingClassYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_UE_DUMMY_2</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</Building_BuildingClassYieldChanges>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_OTTOMAN_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s New Vizier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_1">
+			<Text>{3_PlayerName} executes his Grand Vizier!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Caravansary Network</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_2">
+			<Text>{3_PlayerName} sets up a network of Caravanserai.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Religious Regulations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_3">
+			<Text>{3_PlayerName} introduces regulations for business in accordance with religious law.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Devolved Jurisprudence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_4">
+			<Text>{3_PlayerName} devolves judicial duties for grievances within religious minority groups.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Tributary Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_5">
+			<Text>{3_PlayerName} demands additional tribute from his vassals!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Abolition of the Sultan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_OTTOMAN_UE_CHOICE_6">
+			<Text>{3_PlayerName} disbands his historic council of advisors in favour of modernising reform!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION">
+			<Text>Does Any Rose Lack Thorns?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP">
+			<Text>Your Magnificence, I was instructed to inform you if the Grand Vizier had been noticed conducting any... suspicious activities.[NEWLINE]I recommend the Silk Rope.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_2">
+			<Text>Invest {1_YieldCost} in your trade network, receiving a Caravansary in every City. Your Caravansary produce +1 [ICON_CULTURE] Culture and +1 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_3">
+			<Text>Enforce {1_YieldCost} worth of religious practices in public places: Baths yield +2 [ICON_PEACE] Faith and +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_4">
+			<Text>Enforce religious law using {1_YieldCost}. Cities generate +3 [ICON_FOOD] and +3 [ICON_PRODUCTION] for every Religion present.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_5">
+			<Text>Leverage {1_YieldCost} to demand tribute from your subjects. The Palace generates +1 [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_FOOD] Food, [ICON_PEACE] Faith for every City under your control. All Ships receive the Supply Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_HELP_CHOICE_6">
+			<Text>Bring about social and educational reforms using {1_YieldCost}. Your [ICON_RELIGION] Religious Divisons thershold are reduced by 50% and [ICON_RESEARCH] Illiteracy thresholds are reduced by 5%. Enter a [ICON_GOLDEN_AGE] Golden Age for 20 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_1">
+			<Text>God is merciful. I, however, am not. Find me a replacement.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The Vizier was known to have fallen out with your Foreign Advisor over her plans to spend the Palace's gold on trade routes*[NEWLINE]Bring my Foreign Advisor to me. We shall give her my seal while we investigate this treason.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_3">
+			<Text>*It was well known that your Economic Advisor was furious with the Vizier after he refused to enforce our religious laws on businesses*[NEWLINE]Bring my Economic Advisor to me. We shall give her my seal while we investigate this treason.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_4">
+			<Text>*There had been whispers around the court that your Scientific Advisor's plans to devolve jurisprudence to religious minorities had set the Vizier against him*[NEWLINE]Bring my Scientific Advisor to me. We shall give him my seal while we investigate this treason.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_5">
+			<Text>*If there was one policy the Vizier could not tolerate, it was our Military Advisor's plans to leverage our suzerainty during this time of war*[NEWLINE]Bring my Military Advisor to me. We shall give him my seal while we investigate this treason.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_OTTOMAN_UE_DESCRIPTION_CHOICE_6">
+			<Text>Enough! I will stand no more schemes, feuds and rebellions. Disband the Viziers. Execute every last one of them. I want plans for a new constitution drawn up by the end of the month!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY">
+			<Text>Devolved Jurisprudence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_HELP">
+			<Text>+3 [ICON_FOOD] Food and [ICON_PRODUCTION] Production per Religion in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2">
+			<Text>A Subject's Tributes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_UE_DUMMY_2_HELP">
+			<Text>+1 [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_FOOD] Food, and [ICON_PEACE] Faith to the Palace.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

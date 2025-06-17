@@ -1,0 +1,470 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_POLYNESIA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AQUEDUCT</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HARBOR</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<CultureMedianModifierGlobal>10</CultureMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_POLYNESIA_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_POLYNESIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_POLYNESIA_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_POLYNESIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_POLYNESIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_POLYNESIA_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_POLYNESIA_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_POLYNESIA_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_POLYNESIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_POLYNESIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_POLYNESIA_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_POLYNESIA_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<GreatPeopleRateModifier>20</GreatPeopleRateModifier>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldPerXTerrainTimes100>
+		<Row>
+			<BuildingType>BUILDING_POLYNESIA_UE_DUMMY</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</Building_YieldPerXTerrainTimes100>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_FISH</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_FISH</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>-250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-1500</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_POLYNESIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Test of Bravery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} rewards a defeated adversary with a prestigious position!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Loko Iʻa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} rediscovers ancient aquacultural techniques!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Tales of the Wayfinder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} tells his people of the life of adventure awaiting over the horizon!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Kahuna Support</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} rallies the Kahuna to his court!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Fishing Industry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} modernizes Polynesian fishing practices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Paradise Beaches</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_POLYNESIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} opens the beaches of Polynesia to holidaymakers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION">
+			<Text>In Search Of Mana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP">
+			<Text>Great King who once moved the Naha Stone and united the many tribes under one bloodline, it has been many years since you last proved your worth before the clans. They have forgotten your greatness, and say the mana has deserted you.[NEWLINE][NEWLINE]You must show them why it was you who was chosen to rule Polynesia for all time!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_2">
+			<Text>Discover how to create Fish Ponds for {2_InstantYield}. All Lighthouses gain +3 [ICON_FOOD] Food and [ICON_RES_FISH] Fish yield +2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_3">
+			<Text>Longing for the horizon, [ICON_CULTURE] Boredom rates increase by 10%. At the same time, Water Tiles yield +1 [ICON_FOOD] Food, while Ocean Tiles yields +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_4">
+			<Text>Use {2_InstantYield} to establish the Kahuna. The birth rate of [ICON_GREAT_PEOPLE] Great People increases in all Cities by 20%, and Workshops yield +2 [ICON_CULTURE].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_5">
+			<Text>Accept the loss of {2_InstantYield} in order to modernize the economy. Fishing Boats, Lighthouses, Harbors, and Seaports yield +2 [ICON_GOLD] Gold, but [ICON_GOLD] Poverty levels increase by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_HELP_CHOICE_6">
+			<Text>Holidaymakers generate +2 [ICON_TOURISM] Tourism for every Coast Tile.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>Let the champion of the people challenge me for leadership. Though I will win, I shall be merciful and grant them a great reward for their bravery!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Your researchers have rediscovered the ancient aquaculture techniques*[NEWLINE]To show my care for the people, I will announce the reconstruction of the ancient ponds, bringing the plenty of the bountiful feast back to these lands!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The people grow listless, longing to follow their ancestors and heroes across the seas*[NEWLINE]As a people we have always longed to travel over the horizon, to know that land at the end of the rainbow. Under my rule, we will sail further out than ever before, ever in search of new lands and wonders!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Our great masters are scattered amongst the villages, and their skills are underused*[NEWLINE]In order to bring glory back to Polynesia, I will rally the revered Kahuna from their isolation and bring them back into the life of the Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Our subsistence economy could benefit much from foreign techniques and ideas, though much could also be lost*[NEWLINE]Though we live peaceful, happy lives, the world becomes smaller around us. Soon it will not be possible to live as we do, and the other great Empires of the world will swallow us up. We must engage them on their own terms or disappear forever.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_POLYNESIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*We are blessed with beauty and paradise, foreigners will give much for just a taste of our happiness*[NEWLINE]With these new airplanes, the peoples of the world are only hours away from our cities. This is paradise on Earth, sooner or later, they will come. If we are to prosper again, we must use this opportunity wisely.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY">
+			<Text>Paradise Beaches</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_HELP">
+			<Text>+2 [ICON_TOURISM] Tourism generated for every Coastal tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2">
+			<Text>Kahuna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_UE_DUMMY_2_HELP">
+			<Text>+20% [ICON_GREAT_PEOPLE] Great People Generation.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

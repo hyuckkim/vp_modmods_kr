@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/31/2016 12:08:14 AM -->
+<GameData>
+	<Language_en_US>
+<!--		<Row Tag="TXT_KEY_PLAYER_EVENT_NO_CHOICE">
+			<Text>I'm not interested in this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_NO_CHOICE_HELP">
+			<Text>Ends Event with no effect.</Text>
+		</Row> >>
+		
+		
+		<!-- Comet Sighted -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMET_DESCRIPTION">
+			<Text>Comet sighted!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMET_HELP">
+			<Text>A comet has appeared in our night sky. Some believe it to be a miracle, others an ill omen. Your advisors are unsure and look to you for guidance. What does this mean?</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_1">
+			<Text>This is a good omen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_1_HELP">
+			<Text>{2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_2">
+			<Text>Our gods favor us.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_2_HELP">
+			<Text>+1 [ICON_HAPPINESS_1] Happiness in all Cities for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_3">
+			<Text>Our priests will conduct a divination to see if this is a positive sign.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_3_HELP">
+			<Text>50% chance to gain {2_InstantYield}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMET_CHOICE_3_SUCCESSFUL">
+			<Text>Your priests believe that the divination was successful, and your [ICON_PEACE] Faith has increased greatly as a result.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMET_CHOICE_3_SUCCESSFUL_S">
+			<Text>Divination successful!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_4">
+			<Text>Our observatories are going to learn a lot from this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMET_CHOICE_4_HELP">
+			<Text>+500 [ICON_RESEARCH] Science.</Text>
+		</Row>
+
+
+		<!-- Meteor -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_DESCRIPTION">
+			<Text>Shooting Stars</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_HELP">
+			<Text>Last night a series of bright flashes of light filled the sky as a meteor shower visited our planet. Large meteorites have landed across the world. Your officials have collected one such specimen and brought it to the Capital for study. What should they do with it?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_1">
+			<Text>Break it up and send it to the Forge.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_1_HELP">
+			<Text>50% chance to gain 2 [ICON_RES_IRON] Iron.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_1_SUCCESSFUL">
+			<Text>Your smiths were able to break large lumps of iron out of the meteor and can forge fine swords and spears from the material.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_1_SUCCESSFUL_S">
+			<Text>[ICON_RES_IRON] Iron extracted from meteorite!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_2">
+			<Text>A gift from the heavens should be divided up and given to our priests.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_2_HELP">
+			<Text>+1 [ICON_PEACE] Faith in all Shrines.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_3">
+			<Text>Carve into decorative objects to be placed in my throne room.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_3_HELP">
+			<Text>+2 [ICON_CULTURE] Culture from Palace.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_4">
+			<Text>Donate it to the Universities for study.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_4_HELP">
+			<Text>+1 [ICON_RESEARCH] Science from all Universities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_5">
+			<Text>It belongs in a Museum.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_METEOR_CHOICE_5_HELP">
+			<Text>+1 [ICON_CULTURE] Culture from all Museums.</Text>
+		</Row>
+		
+		
+		<!-- Eclipse -->
+		
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_DESCRIPTION">
+			<Text>A Heavenly Sign of Favor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_HELP">
+			<Text>Our people were surprised to witness an eclipse today and are demanding answers. What does this mean for our empire?[NEWLINE]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_1">
+			<Text>Your advisors tell you that this is proof of your good rule; however, you must convince the public that this is true.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_1_HELP">
+			<Text>[NEWLINE]The fear from your citizenry immediately costs the empire {1_YieldCost}; but there is a good chance that you can calm the people and win over their hearts and gain {2_InstantYield}!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_1_SUCCESSFUL">
+			<Text>Your speeches were successful, and your citizens are looking forward to good times.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_1_SUCCESSFUL_S">
+			<Text>Bright days are ahead.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_2">
+			<Text>Our priests tell us that it was a sign from the gods. Quick, make a sacrifice!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_2_HELP">
+			<Text>[NEWLINE]Expend {1_YieldCost} in [ICON_CAPITAL] Capital. Gain {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_3">
+			<Text>Our people have no need to fear. Science can explain this!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_3_HELP">
+			<Text>[NEWLINE]Scientists used the eclipse as an opportunity to learn more about our solar system resulting in {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_4">
+			<Text>The eclipse was widely anticipated by many and has become a talking point at dinner parties and coffee shops across the nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_ECLIPSE_CHOICE_4_HELP">
+			<Text>[NEWLINE]Photographs and paintings of the eclipse in all the newspapers. This interest has resulted in {2_InstantYield} as people show more interest in the arts.</Text>
+		</Row>
+
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ccfaf006-f940-467b-808e-78033bcb8b65" version="7">
+  <Properties>
+    <Name>Recon Pay (Core0) Terrain Cost</Name>
+    <Teaser>ignore terrain cost is out for recon</Teaser>
+    <Description>removes "ignore terrain cost" from all recon.  early recon reset to 2 base moves. changes TB move bonuses to ignoreFrom instead of ignoreIn</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>VP community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="100" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="8562c016-f5bb-79hg-b37e-a3b40d3yg13l" minversion="0" maxversion="999" title="pineappledan's Vox Populi Tweaks" />
+    <Mod id="9562c016-f5bb-79hg-b37e-a3b40d3yg13a" minversion="0" maxversion="999" title="(9b) CAYM Unit Change (for VP 4.2)" />
+  </References>
+  <Blocks>
+    <Mod id="fce3457a-e717-4918-a374-d627568c769b" minversion="0" maxversion="999" title="Recon Terrain-Specialization" />
+  </Blocks>
+  <Files>
+    <File md5="E7216FFC4DCFA3E1F78937D9B01F8749" import="0">Promos.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Promos.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

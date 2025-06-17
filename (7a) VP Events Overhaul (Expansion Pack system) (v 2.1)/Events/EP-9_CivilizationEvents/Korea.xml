@@ -1,0 +1,504 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_KOREA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_KOREA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_CHIVALRY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_UNIVERSITY</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<GoldenAgeTurns>10</GoldenAgeTurns>
+		</Row>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>false</EraScaling>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MINT</RequiredAnywhereBuildingClass>
+			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+			<EventPromotion>PROMOTION_UE_TURTLE_SHELL</EventPromotion>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_KOREA_UE_DUMMY</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_KOREA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<MinimumNationalPopulation>120</MinimumNationalPopulation>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<GoldenAgeTurns>15</GoldenAgeTurns>
+			<LosingMoney>true</LosingMoney>
+			<CultureMedianModifierGlobal>-10</CultureMedianModifierGlobal>
+		</Row>
+	</EventChoices>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_TURTLE_SHELL</Type>
+			<Description>TXT_KEY_PROMOTION_UE_TURTLE_SHELL</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<RangedDefenseMod>33</RangedDefenseMod>
+			<Help>TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP</Help>
+			<PortraitIndex>15</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_TURTLE_SHELL</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_TURTLE_SHELL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_TURTLE_SHELL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<!-- Adds homeland guardian to melee and gun class upon eventchoice, affects other events too! -->
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_KOREA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_KOREA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_KOREA_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_KOREA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_KOREA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_KOREA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldFromSpyDefense>
+		<Row>
+			<BuildingType>BUILDING_KOREA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</Building_YieldFromSpyDefense>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-1000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STOCK_EXCHANGE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>20</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_PORCELAIN</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_KOREA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s New State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_1">
+			<Text>{3_PlayerName} places an unknown in the role of State Councillor!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Gyeongbok Palace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_2">
+			<Text>{3_PlayerName} builds a spectacular new Palace, filled with Porcelain artifacts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Reformed Alphabet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_3">
+			<Text>{3_PlayerName} invents Hangul, a new alphabet!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Societal Appeasement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_4">
+			<Text>{3_PlayerName} gives rise to social mobility!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Assassination</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_5">
+			<Text>The Queen of Korea has been assassinated, sparking violent, isolationist sentiment!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Modernization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_KOREA_UE_CHOICE_6">
+			<Text>{3_PlayerName} massively increases economic and social freedom in Korea!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION">
+			<Text>A Pinfeather Thrust</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP">
+			<Text>The factions of the court clamor for your approval, Great King. They serve either the heavens, themselves, your enemies, and some of them possibly serve you.[NEWLINE][NEWLINE]The Earth trembles but slightly, and they have the opportunity to make demands of you once again...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_2">
+			<Text>Pay {2_InstantYield}. The Palace provides +5% to [ICON_CULTURE] Culture, [ICON_GOLD] Gold and [ICON_RESEARCH] Science. Its glory also bask in +5 [ICON_PEACE] Faith. Receive a copy of [ICON_RES_PORCELAIN] Porcelain.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_3">
+			<Text>Pay {2_InstantYield}. Farms yield +1 [ICON_RESEARCH] Science. Enter a Golden Age for 10 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_4">
+			<Text>Pay {2_InstantYield}. +1 [ICON_CULTURE] Culture from Specialists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_5">
+			<Text>For the next {4_Turns}: Melee and Gun Units gain +25% [ICON_STRENGTH] Combat Strength in Friendly territory; when an enemy [ICON_SPY] Spy is killed receive [ICON_CULTURE] Culture scaling with era and the level of the Spy killed; however, Customs Houses reduce [ICON_GOLD] Gold by -4 and [ICON_TOURISM] Tourism by -4.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_HELP_CHOICE_6">
+			<Text>Stock Exchanges provide +20% [ICON_GOLD] Gold in Cities, and the [ICON_CULTURE] Boredom threshold is reduced by 10%. Enter a Golden Age for 15 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_1">
+			<Text>Use these political demands to replace the head of the Council with a man loyal to Korea.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The councilors request large building projects and artistic requisitions*[NEWLINE]This thinly veiled attempt to rob me will not stand. Emphasize the need for a grand Gyeongbok to be erected for... the court.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Our lords wish to restrict access to education, in order to keep the peasants in check.*[NEWLINE]We will give them their educational reform, but not in the way they imagined. Bring me the Head Scholar!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Upstart peasantry once again looks to positions beyond their station. The lords demand action.*[NEWLINE]We will peacefully reinforce our tradition. There will be order under heaven.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The queen has been assassinated. The councilors call for capitulation.*[NEWLINE]These traitors... we will never accede to the pathetic, imperialistic delusions of foreign devils! BRING ME THEIR HEADS!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_KOREA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The councilors, in a spiteful move to dethrone you at this difficult time for our economy, call for reforms which would destroy both their own power and yours.*[NEWLINE]So it has come to this... It is no matter. With these reforms, the full potential of my people shall finally be unleashed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY">
+			<Text>Korean Protectionism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_KOREA_UE_DUMMY_HELP">
+			<Text>Receive [ICON_CULTURE] Culture when an enemy [ICON_SPY] Spy is killed scaling upon era.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL">
+			<Text>Turtle Armor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_TURTLE_SHELL_HELP">
+			<Text>Receive 33% less damage from [ICON_RANGE_STRENGTH] Ranged attacks. Granted only via Korea's Events.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

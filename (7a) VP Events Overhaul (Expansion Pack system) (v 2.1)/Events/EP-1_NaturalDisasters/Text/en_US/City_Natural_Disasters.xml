@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/31/2016 12:08:05 AM -->
+<GameData>
+	<Language_en_US>
+
+		<!-- Drought -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_DROUGHT_DESCRIPTION">
+			<Text>Drought</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DROUGHT_HELP">
+			<Text>Drought has struck the City, crippling its [ICON_FOOD] Food output. For the next {5_Turns}, Farms produce -1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_SEVERE_DROUGHT_DESCRIPTION">
+			<Text>Severe Drought</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_SEVERE_DROUGHT_HELP">
+			<Text>Severe drought has struck the City, crippling its [ICON_FOOD] Food output. For the next {5_Turns}, Farms and Pastures containing Sheep and Cattle produce -1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CRITICAL_DROUGHT_DESCRIPTION">
+			<Text>Critical Drought</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CRITICAL_DROUGHT_HELP">
+			<Text>Critical drought has struck the City, crippling its [ICON_FOOD] Food output. For the next {5_Turns}, Farms produce -2 [ICON_FOOD] Food and Pastures containing Sheep and Cattle produce -1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DROUGHT_FOREST_FIRE_DESCRIPTION">
+			<Text>Up in Flames</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DROUGHT_FOREST_FIRE_HELP">
+			<Text>Due to the overly dry conditions, wildfires have broken out in the forest around the City. The resulting damage results in losses amounting to -1 [ICON_PRODUCTION] Production over the next {5_Turns} for every forest worked by the City.</Text>
+		</Row>
+
+
+		<!-- Ice Age -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_EXPOSURE_DESCRIPTION">
+			<Text>Exposure</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_EXPOSURE_HELP">
+			<Text>Sub-zero temperatures have left many people in the City at risk to exposure resulting a loss of 1 [ICON_CITIZEN] Population in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_NO_FUEL_DESCRIPTION">
+			<Text>Fuel Shortage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_NO_FUEL_HELP">
+			<Text>Due to extreme cold, the City is currently experiencing a major fuel shortage. {1_YieldCost} has been diverted from our industries to compensate provide heat to the citizens.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_FROZEN_WATER_DESCRIPTION">
+			<Text>Frozen Waters</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_FROZEN_WATER_HELP">
+			<Text>The city's river has frozen over, severely hampering commerce. Our Economic Advisor said that we can expect City tax revenues to drop by {3_CityYield} for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_BITTER_WINDS_DESCRIPTION">
+			<Text>Bitter Winds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_ICE_AGE_BITTER_WINDS_HELP">
+			<Text>Bitterly cold winds are severely hampering production in the lands around the City. For {5_Turns}, all Quarries, Pastures, Farms, and Lumbermills produce -1 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+
+
+		<!-- Rain Rain Rain -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN1_DESCRIPTION">
+			<Text>Bumper Crop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN1_HELP">
+			<Text>Farmers near the City report that the rainy weather has greatly benefited them, and that they are expecting much larger crop yields than normal. You can likely expect an additional {2_InstantYield} from this harvest.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN2_DESCRIPTION">
+			<Text>Desert in Bloom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN2_HELP">
+			<Text>Steady rains have given the once barren desert new life. Desert tiles without water can now grow +1 [ICON_FOOD] Food until the rains stop.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN3_DESCRIPTION">
+			<Text>Good Harvest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN3_HELP">
+			<Text>This favorable drizzly weather around the City has been very good for our local Farms and Plantations. They are anticipating a +1 [ICON_FOOD] Food increase for the next {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN4_DESCRIPTION">
+			<Text>Farms Underwater</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN4_HELP">
+			<Text>The never-ending rains have caused the City's rivers to rise above flood levels. Nearby Farms are suffering -1 [ICON_FOOD] Food production losses, and our Science Advisor is suggesting it may last up to {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN5_DESCRIPTION">
+			<Text>Crop Blight</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN5_HELP">
+			<Text>All this rain and damp is not good at all for crops. The City governor is now hearing reports of crops rotting in the fields before they can be harvested. Damages are estimated to result in -1 [ICON_FOOD] in all the City's Farms until things can dry out. Our weather advisors forecast things should begin to dry up within {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN6_DESCRIPTION">
+			<Text>Mudslides Hinder Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN6_HELP">
+			<Text>The slopes of the City's nearby mountains are inundated with water, and mudslides are becoming a hazard to travelers. Between road repairs and lost commerce taxes, our City treasury will likely drop by {3_CityYield} for {5_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN7_DESCRIPTION">
+			<Text>Massive Flooding!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_RAINRAINRAIN7_HELP">
+			<Text>As a result of the heavy rainfall, water is pouring over the river's banks and flooding into the streets. Lack of investment in flood protection around the City has only made matters worse. We can expect some significant infrastructure damage to City buildings and figure on some prime farmland being destroyed with an overall effect that we should expect -2 [ICON_FOOD] Food at nearby Farms for the next {5_Turns}.</Text>
+		</Row>
+
+
+		<!-- Pollution -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_MINOR_DESCRIPTION">
+			<Text>Bad Water = Bad Farms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_MINOR_HELP">
+			<Text>With the lack of regulation, industry seems to be thriving in the City. Granted, the water seems to be a strange color and has a certain funny smell. Our Science advisor tells us this is the reason that nearby Farms are suffering -1 [ICON_FOOD] Food loss.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_CLEANUP1_DESCRIPTION">
+			<Text>Clean Air, Part Une</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_CLEANUP1_HELP">
+			<Text>Thanks to the new regulations, our City's industries were able to clean up their act. After spending {1_YieldCost} to repair the environmental damage, local Farms have recovered from their -1 [ICON_FOOD] Food loss.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_MAJOR_DESCRIPTION">
+			<Text>Mercury on Marigolds and Arsenic on Mittens</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_MAJOR_HELP">
+			<Text>Is this really progress? Our water taste vile...our air is foul... The insects have disappeared. You rarely ever see any birds or furry animals. And, after seeing another-1 [ICON_FOOD] Food loss, our local Farms are less and less productive.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_CLEANUP2_DESCRIPTION">
+			<Text>Clean Air, Part Deux</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_CLEANUP2_HELP">
+			<Text>Thanks to the new regulations, our City's industries were able to clean up their act. After spending {1_YieldCost} to repair the environmental damage, local Farms have recovered from their -2 [ICON_FOOD] Food loss.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_BAD_ACTOR_DESCRIPTION">
+			<Text>Bad Actor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_POLLUTION_BAD_ACTOR_HELP">
+			<Text> In spite of the new environmental regulations, you just discovered a local industry has continued to dump waste into their nearby waterway. It looks like the City's Farms will be impacted with -1 [ICON_FOOD] Food production for {5_Turns}. You have to spend {2_InstantYield} to repair the damage.</Text>
+		</Row>
+
+
+		<!-- Plague! -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_PLAGUE_DESCRIPTION">
+			<Text>Plague!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PLAGUE_HELP">
+			<Text>Our worst fears have come true. Plague has reached the City! People lie dead in the streets, and hundreds more die every day. Our doctors report that 2 [ICON_CITIZEN] Citizen communities have already died in the City.</Text>
+		</Row>
+
+
+		<!-- Volcano! -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_VOLCANO_DESCRIPTION">
+			<Text>Eruption!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_VOLCANO_HELP">
+			<Text>Oh no! A once-dormant mountain near the City has suddenly erupted, pouring down lava into the City and the surrounding countryside! The City has lost 3 [ICON_CITIZEN] Population, multiple Improvements are damaged, and many City buildings are destroyed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_VOLCANO_SPECIAL_DESCRIPTION">
+			<Text>Krakatoa Erupts!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_VOLCANO_SPECIAL_HELP">
+			<Text>Krakatoa has erupted! Massive plumes of ash, smoke, and lava have enveloped the nearby City and its countryside. The City has lost 3 [ICON_CITIZEN] Population, multiple Improvements are damaged, and many City buildings are destroyed!</Text>
+		</Row>
+
+
+		<!-- Earthquake -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_EARTHQUAKE_MINOR_DESCRIPTION">
+			<Text>Earthquake!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EARTHQUAKE_MINOR_HELP">
+			<Text>Oh no! There was a minor earthquake near the City. Several Improvements are damaged, and some City buildings are destroyed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EARTHQUAKE_MAJOR_DESCRIPTION">
+			<Text>A Major Earthquake!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EARTHQUAKE_MAJOR_HELP">
+			<Text>A massive earthquake has struck the City causing widespread death and major damage all across the area. The City has lost 3 [ICON_CITIZEN] Population, multiple Improvements are damaged, and many City buildings are destroyed!</Text>
+		</Row>
+
+
+
+		<!-- Avalanche -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_AVALANCHE_DESCRIPTION">
+			<Text>Avalanche</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AVALANCHE_HELP">
+			<Text>Snow melt from a nearby mountain has collapsed, causing a massive avalanche. You should probably expect some Improvements to need repair.</Text>
+		</Row>
+
+
+
+		<!-- Forest Fire / City Fire -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FOREST_FIRE_DESCRIPTION">
+			<Text>Up in Flames</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FOREST_FIRE_HELP">
+			<Text>Due to the overly dry conditions, wildfires have broken out in the forest around the City. The resulting damage results in losses amounting to -1 [ICON_PRODUCTION] Production over the next {5_Turns} for every forest worked by the City.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FOREST_FIRE_REGROWTH_DESCRIPTION">
+			<Text>Life Finds a Way</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FOREST_FIRE_REGROWTH_HELP">
+			<Text>While the forest fires were devestating around the City, they did reinvigorate the local flora. The resulting growth results +1 [ICON_FOOD] Food over the next {5_Turns} for every forest worked by the City.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_DESCRIPTION">
+			<Text>Mrs. O'Leary's Cow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_HELP">
+			<Text>A major fire has broken out in the City! We must contain it, or it could destroy everything? What do you want us to do?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_CHOICE_1_DESCRIPTION">
+			<Text>Our people are our most valuable resource. Tell everyone to get out of there as quickly as possible!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_CHOICE_1_HELP">
+			<Text>With no one to fight the fire, there is a good chance we may lose a number of buildings. But, more importantly, our citizens know that you are prioritizing them over infrastructure.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_CHOICE_2_DESCRIPTION">
+			<Text>Get the citizen's to form a temporary fire brigade. We must save the City, no matter the cost!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_CHOICE_2_HELP">
+			<Text>Calling upon the citizenry should greatly reduce the damage to the City. Hopefully, no one gets hurt too badly in the process.</Text>
+		</Row>
+
+		<!-- Flavor Event -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_FLAVOR_CHOICE_1_DESCRIPTION">
+			<Text>Fire Stopped in {3_CityName}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_FLAVOR_CHOICE_1_HELP">
+			<Text>A fire broke out in {3_CityName}, but citizens were able to use the river to save the city.</Text>
+		</Row>
+		
+		<!-- Chance to stop city fires -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_DESCRIPTION">
+			<Text>Fire Brigades and Building Codes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_HELP">
+			<Text>As our history has shown, fire is one of the most destructive elements of nature. Concerned citizens have come forward asking to establish a permanent fire brigade. They are also hoping to adopt some new building codes to prevent our City from burning down around us? What would you like us to do with this petition?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_CHOICE_1_DESCRIPTION">
+			<Text>I think it's a splendid idea! Provide them with the requested funding.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_CHOICE_1_HELP">
+			<Text>Allocate {2_InstantYield} in spending to fund the brigade and bring our public buildings up to this new code.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_CHOICE_2_DESCRIPTION">
+			<Text>Fires are so rare, and our budgets are already stretch too thin. Maybe we can do this when the economy is doing better.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_CITY_FIRE_NOMORE_CHOICE_2_HELP">
+			<Text>Nothing happens.</Text>
+		</Row>
+
+
+
+		<!-- Nuclear Meltdown -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_NUCLEAR_MELTDOWN_DESCRIPTION">
+			<Text>Nuclear meltdown!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NUCLEAR_MELTDOWN_HELP">
+			<Text>The worst has happened. The City's Nuclear Plant has had a meltdown, rendering vast sections of the city uninhabitable. The building is destroyed, and all other buildings in the City are at risk. The City loses 5 [ICON_CITIZEN] Population.</Text>
+		</Row>
+
+
+
+		<!-- Major Hurricane -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_DESCRIPTION">
+			<Text>Major hurricane approaches</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_HELP">
+			<Text>A major hurricane looms on the horizon, and is headed straight for the City. It may or may not hit the city. If we do nothing and it hits, we can expect major losses of life and property. The City's council is unsure of how to respond, and looks to you for guidance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_1_DESCRIPTION">
+			<Text>Send in the military to start putting down sandbags and boarding windows.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_1_HELP">
+			<Text>The disruption costs {1_YieldCost}. If the hurricane hits, expect large losses of life.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_2_DESCRIPTION">
+			<Text>Send in the military to evacuate the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_2_HELP">
+			<Text>The evacuation costs {1_YieldCost}. If the hurricane hits, expect major property damage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_3_DESCRIPTION">
+			<Text>Evacuate the City and sandbag everything.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_3_HELP">
+			<Text>These efforts will take {1_YieldCost}. The City is well-prepared for the hurricane.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_4_DESCRIPTION">
+			<Text>Buckle down and hope for the best. There's nothing we can do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_4_HELP">
+			<Text>No preparation. Good luck!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_5_DESCRIPTION">
+			<Text>Our river's levee should protect us from storm.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_5_HELP">
+			<Text>Rely on the City's hurricane levee. If the levee system is breached, expect some loss of life and property damage.</Text>
+		</Row> 
+
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_SUCCESSFUL_S">
+			<Text>Major hurricane strikes {2_City}!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_1_SUCCESSFUL">
+			<Text>A very powerful Hurricane struck {2_City}. The City itself was well-protected, but there were lives lost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_2_SUCCESSFUL">
+			<Text>A very powerful Hurricane struck {2_City}. The City's population was well-protected, but the City itself was decimated.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_3_SUCCESSFUL">
+			<Text>A very powerful Hurricane struck {2_City}. Thankfully, the City was well-prepared and was minimally damaged.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_4_SUCCESSFUL">
+			<Text>A very powerful Hurricane struck {2_City}. The City was not well-prepared, and there are reports of major loss of life and property damage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MAJOR_HURRICANE_CHOICE_5_SUCCESSFUL">
+			<Text>A very powerful Hurricane struck {2_City}. The City's levees were breached, and there are reports of some loss of life and property damage.</Text>
+		</Row>
+
+		<!-- Minor Hurricane -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_DESCRIPTION">
+			<Text>Minor hurricane approaches</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_HELP">
+			<Text>A minor hurricane looms on the horizon, and is headed straight for the City. It may or may not hit the city. If we do nothing and it hits, we can possibly expect loss of life and property. The City's council is unsure of how to respond, and looks to you for guidance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_1_DESCRIPTION">
+			<Text>Send in the military to start putting down sandbags and boarding windows.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_1_HELP">
+			<Text>The disruption costs {1_YieldCost}. If the hurricane hits, expect loss of life.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_2_DESCRIPTION">
+			<Text>Send in the military to evacuate the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_2_HELP">
+			<Text>The evacuation costs {1_YieldCost}. If the hurricane hits, expect some property damage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_3_DESCRIPTION">
+			<Text>Evacuate the City and sandbag everything.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_3_HELP">
+			<Text>These efforts will take {1_YieldCost}. The City is well-prepared for the hurricane.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_4_DESCRIPTION">
+			<Text>Buckle down and hope for the best. There's nothing we can do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_4_HELP">
+			<Text>No preparation. Good luck!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_SUCCESSFUL_S">
+			<Text>Minor hurricane strikes {2_City}!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_1_SUCCESSFUL">
+			<Text>A Hurricane struck {2_City}. The City itself was well-protected, but there were lives lost.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_2_SUCCESSFUL">
+			<Text>A Hurricane struck {2_City}. The City's population was well-protected, but the City itself was badly damaged.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_3_SUCCESSFUL">
+			<Text>A Hurricane struck {2_City}. Thankfully, the City was well-prepared and was minimally damaged.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_MINOR_HURRICANE_CHOICE_4_SUCCESSFUL">
+			<Text>A Hurricane struck {2_City}. The City was not well-prepared, and there are reports of significant loss of life and property damage.</Text>
+		</Row>
+		
+		<!-- Hurricane levee system -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE">
+			<Text>Hurricane Levee System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE_HELP">
+			<Text>Concerned citizens have come forward asking us to build a levee to protect from hurricanes. Our engineers are telling us a proper levee system could protect the City from minor hurricanes and reduce the damage from major hurricanes. What would you like us to do with this petition?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE_CHOICE_1_DESCRIPTION">
+			<Text>I think it's a splendid idea! Provide them with the requested funding.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE_CHOICE_1_HELP">
+			<Text>Allocate {1_YieldCost} in spending to fund the new levee system.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE_CHOICE_2_DESCRIPTION">
+			<Text>Hurricanes are so rare, and our budgets are already stretch too thin. Maybe we can do this when the economy is doing better.</Text>
+		</Row>
+		<!-- <Row Tag="TXT_KEY_CITY_EVENT_HURRICANE_LEVEE_CHOICE_2_HELP">
+			Using "TXT_KEY_CITY_EVENT_DO_NOTHING_HELP" in EventCore_en_US.xml 
+		</Row> -->
+
+		<Row Tag="TXT_KEY_BUILDING_HURRICANE_LEVEE">
+			<Text>Hurricane Levee System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HURRICANE_LEVEE_HELP">
+			<Text>This hurricane levee system will protect the City from minor hurricanes and may protect the City from major hurricanes.</Text>
+		</Row>
+
+
+		<!-- Pestilence -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE">
+			<Text>Insect Swarms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_HELP">
+			<Text>Swarms of flying insects are covering the local countryside and eating everything in sight. It is not clear how far the infestation has spread, but a large part of the harvest has been compromised.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_1_DESCRIPTION">
+			<Text>Get our Science Advisor on this right away!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_1_HELP">
+			<Text>Allocate {1_YieldCost} worth of research to find a way to permanently eradicate these pests</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_2_DESCRIPTION">
+			<Text>Attempt to replant before winter.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_2_HELP">
+			<Text>Take {1_YieldCost} from the City's Granary in order to seed another set of crops. This should allow the region's agriculture to continue as normal.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_3_DESCRIPTION">
+			<Text>There is nothing we can do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE_CHOICE_3_HELP">
+			<Text>For the next {5_Turns}, Farms and Pastures containing Sheep and Cattle produce -1 [ICON_FOOD] Food.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2">
+			<Text>Invasive Species</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_HELP">
+			<Text>Some kind of invasive species has appeared around the City and is wreaking havoc on nearby farms. We need to figure out the source and get this under control.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_1_DESCRIPTION">
+			<Text>Assign a research team to address the issue.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_1_HELP">
+			<Text>Allocate {1_YieldCost} worth of research to find a way to permanently stop the spread of this creature.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_2_DESCRIPTION">
+			<Text>Surely, we have some kind of pesticide that can take care of this problem.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_2_HELP">
+			<Text>Destroy {1_YieldCost} worth of crops to slow down this agricultural invasion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_3_DESCRIPTION">
+			<Text>There is nothing we can do.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PESTILENCE2_CHOICE_3_HELP">
+			<Text>For the next {5_Turns}, Farms and Grasslands produce -1 [ICON_FOOD] Food.</Text>
+		</Row>
+-->
+
+	</Language_en_US>
+</GameData>

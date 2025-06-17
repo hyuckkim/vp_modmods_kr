@@ -1,0 +1,523 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_EGYPT_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_EGYPT</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_1</Type>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_1</Help>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_1</Description>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_2</Help>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_WATERMILL</RequiredAnywhereBuildingClass>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_3</Description>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+			<IsUnhappy>true</IsUnhappy>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CHANCERY</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_4</Description>
+			<EraScaling>true</EraScaling>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<ImprovementAnywhereRequired>IMPROVEMENT_MANUFACTORY</ImprovementAnywhereRequired>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsUnhappy>true</IsUnhappy>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RandomBarbarianSpawn>2</RandomBarbarianSpawn>
+			<GoldenAgeTurns>20</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+			<Expires>-1</Expires>
+			<FreeUnitsTechAppropriate>1</FreeUnitsTechAppropriate>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_EGYPT_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_6</Description>
+			<RequiresWar>true</RequiresWar>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<EventPromotion>PROMOTION_UE_JIHAD</EventPromotion>
+			<EventDuration>-1</EventDuration>
+			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_EGYPT_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_JIHAD</Type>
+			<Description>TXT_KEY_PROMOTION_UE_JIHAD</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<FriendlyLandsModifier>15</FriendlyLandsModifier>
+			<Help>TXT_KEY_PROMOTION_UE_JIHAD_HELP</Help>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_JIHAD</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_JIHAD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>150</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_COTTON</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_INCENSE</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_COTTON</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_INCENSE</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>20</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_COTTON</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_INCENSE</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_EGYPT_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Rise to Greatness</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_1">
+			<Text>{3_PlayerName} has seen a Great Person reach intellectual maturity.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Inundation System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_2">
+			<Text>{3_PlayerName} revolutionizes flood-based farming.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Out with the Old</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_3">
+			<Text>{3_PlayerName} purges local government and begins to adopt foreign methodology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Cotton</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_4">
+			<Text>{3_PlayerName} reinvigorates manufactoring by exporting unique cultural goods.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Spring</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_5">
+			<Text>{3_PlayerName} sparks an Egyptian Spring!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s National Struggle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_EGYPT_UE_CHOICE_6">
+			<Text>{3_PlayerName} calls a Jihad to defend their Holy City!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION">
+			<Text>Child of the Nile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP">
+			<Text>An orphan, raised in the temples, is maturing into a gifted, ingenious, and loyal celebrity.[NEWLINE][NEWLINE]How shall we direct their energy?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_2">
+			<Text>Every [ICON_GREAT_ENGINEER] Engineer provides +2 [ICON_FOOD] Food. Flood Plains yield +1 [ICON_CULTURE] Culture and +1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_3">
+			<Text>Every [ICON_DIPLOMAT] Civil Servant generates +2 [ICON_PRODUCTION] Production and +2 [ICON_CULTURE] Culture. The Printing Press increases [ICON_CULTURE] Culture by 20% in the City in which it is built.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_4">
+			<Text>Expend {1_YieldCost}. Every [ICON_GREAT_ENGINEER] Engineer provides +1 [ICON_GOLD] Gold and +1 [ICON_TOURISM] Tourism. Gain +2 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold on [ICON_RES_INCENSE] Incense, [ICON_RES_PERFUME] Perfume and [ICON_RES_COTTON] Cotton Resources, and receive one additional copy of each.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_5">
+			<Text>Consume {1_YieldCost} to enter an early [ICON_GOLDEN_AGE] Golden Age for 20 Turns. 1 Friendly and 2 Hostile Unit spawn next to every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_HELP_CHOICE_6">
+			<Text>Receive {2_InstantYield}. Military Units gain the Jihad Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_1">
+			<Text>It is not for we to decide the fate of Great People.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Their ideas and inventions pertaining to the farming of our wonderous rivers amaze me*[NEWLINE]Construct these... 'Nilometers'.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Their criticisms of our outdated, idiosyncratic civil infrastructure are well-founded*[NEWLINE]He is right. These Mamluks have held sway long enough. Summon them to the citadel!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Their novel, patriotic approach to economic theory will revitalize our manufacturing sector*[NEWLINE]The ingenuity of Egyptians has waited a long time for this recognition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Their impassioned essays, advocating radical political reform, should be made widely available*[NEWLINE]It is time for a new Era to dawn on Egypt. Arrest my deputy, bring him to the square!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EGYPT_UE_DESCRIPTION_CHOICE_6">
+			<Text>*Their religious fervor will ignite the fires of our people in defense of our Holiest of Holies*[NEWLINE]If Egypt can win this war, then to God goes the glory!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_UE_JIHAD">
+			<Text>Jihadist</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_JIHAD_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength in Friendly Territory. Earn Faith from Kills. Granted only via Egypt's Events.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

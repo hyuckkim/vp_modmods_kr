@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+
+		<!-- Fields of Gold -->
+
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION">
+			<Text>Fields of Gold</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_HELP">
+			<Text>A local benefactor has donated some land to the City to create a new public space. Several options have been provided by the local citizens, but the final decision is up to you. What do you want to do with this property?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DISABLED_HELP">
+			<Text>Only 5 allowed in the Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_1">
+			<Text>We should use the property to create a new Military Parade Ground.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_1a_HELP">
+			<Text>Build a new Military Parade Ground. Ongoing maintenance will cost 1 [ICON_GOLD] Gold, but the City will earn 1 [ICON_GREAT_GENERAL] Great General point every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_1b_HELP">
+			<Text>Build a new Naval Parade Ground. Ongoing maintenance will cost 1 [ICON_GOLD] Gold, but the City will earn 1 [ICON_GREAT_ADMIRAL] Great Admiral point every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_2">
+			<Text>We should use it to better our citizens' health. Let's turn this new property into a local farmer market.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_2_HELP">
+			<Text>A new Farmer's Market is built. The new Farmer's Market carries over 5% of [ICON_FOOD] Food after City growth, but will cost 2 [ICON_GOLD] Gold for upkeep.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_3">
+			<Text>Commission someone to make an enormous statue of our civilization's great leader...me! This property can be the statue's new home.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_3_HELP">
+			<Text>A new Statuary Park is built that increases the City's [ICON_CULTURE_LOCAL] Border Growth Rate by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_4">
+			<Text>We should use this space to celebrate the proletariat. Let's use this land to create People's Park.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_4_HELP">
+			<Text>People's Park is constructed on the land. The new Park grants the [COLOR_POSITIVE_TEXT]Celebration[ENDCOLOR] Promotion to all Workers built in this City which results in a +15% [ICON_WORKER] Work Rate for those Workers. Park maintenance will cost 1 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_5">
+			<Text>We should use this space to celebrate our wealth. Let's use this land to create Golden Park.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_5_HELP">
+			<Text>Golden Park is constructed on the land. Revenue from the new Park grants +1 [ICON_GOLD] Gold to the City every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_6">
+			<Text>We don't need the space. Let's sell the land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_6_HELP">
+			<Text>The sale of the land results in {2_InstantYield} for the City's coffers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_7">
+			<Text>This benefactor was a known person of faith. Let's create a park for people to meditate in.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_7_HELP">
+			<Text>The land is used to build Meditation Park. The new Park grants +1 [ICON_PEACE] Faith for every 5 [ICON_CITIZEN] Citizens but costs 2 [ICON_GOLD] Gold per turn.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_DESCRIPTION_CHOICE_8">
+			<Text>Well, our cemeteries are running out of room....</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_FIELDS_OF_GOLD_CHOICE_8_HELP">
+			<Text>Memorial Park is created on the land. The new Park grants +2 [ICON_GOLDEN_AGE] Golden Age Points per turn.</Text>
+		</Row> 
+		
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GENERAL_DUMMY">
+			<Text>Military Parade Ground</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GENERAL_DUMMY_HELP">
+			<Text>Grants 1 [ICON_GREAT_GENERAL] Great General point every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_ADMIRAL_DUMMY">
+			<Text>Naval Parade Ground</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_ADMIRAL_DUMMY_HELP">
+			<Text>Grants 1 [ICON_GREAT_ADMIRAL] Great Admiral point every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GROWTH_DUMMY">
+			<Text>Farmer's Market</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GROWTH_DUMMY_HELP">
+			<Text>Carries over 5% of [ICON_FOOD] Food after City growth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_BORDER_DUMMY">
+			<Text>Statuary Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_BORDER_DUMMY_HELP">
+			<Text>Increases local [ICON_CULTURE_LOCAL] Border Growth Rate by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_WORKER_DUMMY">
+			<Text>People's Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_WORKER_DUMMY_HELP">
+			<Text>Grants the [COLOR_POSITIVE_TEXT]Celebration[ENDCOLOR] Promotion to all Workers built in this City which results in a +15% [ICON_WORKER] Work Rate for those Workers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GOLDEN_DUMMY">
+			<Text>Golden Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GOLDEN_DUMMY_HELP">
+			<Text>Grants +1 [ICON_GOLD] Gold to the City every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_FAITH_DUMMY">
+			<Text>Meditation Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_FAITH_DUMMY_HELP">
+			<Text>Grants +1 [ICON_PEACE] Faith for every 5 [ICON_CITIZEN] Citizens but costs 2 [ICON_GOLD] Gold per turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GRAVE_DUMMY">
+			<Text>Memorial Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FIELDS_GRAVE_DUMMY_HELP">
+			<Text>Grants +2 [ICON_GOLDEN_AGE] Golden Age Points per turn.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_CELEBRATION">
+			<Text>Celebration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CELEBRATION_HELP">
+			<Text>Provides a +15% Work Rate for Workers.</Text>
+		</Row> -->
+		
+		<!-- University Policy - modified -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_DESCRIPTION">
+			<Text>University Curriculum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_HELP">
+			<Text>Faculty and administration from the City's University are ready to offer a specalized curriculum. As head of state, they look to you for the final decision on where they should focus. Which would you prefer?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_1">
+			<Text>Focus on the hard sciences.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_1_HELP">
+			<Text>With a new grant from the City totaling 5 [ICON_GOLD] Gold per turn, the University is able to expand one of its research deparments and gains +2 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_2">
+			<Text>Liberal arts education is most important.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_2_HELP">
+			<Text>Utilizing a 5 [ICON_GOLD] Gold per turn stipend from the City, local Academies manage to gain +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_3">
+			<Text>Divinity education will benefit us the most.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_3_HELP">
+			<Text>Using the 5 [ICON_GOLD] Gold per turn that has been so graciously awarded to the University allows it to chair a new Theology Department resulting in +2 [ICON_PEACE] Faith and a local increase in religious pressure by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_4">
+			<Text>Military education seems most prudent.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_4_HELP">
+			<Text>The University takes the 5 [ICON_GOLD] Gold per turn and uses it to build a new officer training program. This program provides an additional +5 XP for new melee and mounted units built in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_5">
+			<Text>I am not interested in making changes at this time. Maybe later?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_5_HELP">
+			<Text>Nothing happens at this time.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_6">
+			<Text>I do not want to change anything at this University.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_UNIVERSITY_POLICY_CHOICE_6_HELP">
+			<Text>The local University permanently remains unchanged.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_UNIVERSITY_FAITH_DUMMY">
+			<Text>Theology Department in University</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UNIVERSITY_FAITH_DUMMY_HELP">
+			<Text>Provides +2 [ICON_PEACE] Faith to th and boosts local religious pressure by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UNIVERSITY_MILITARY_DUMMY">
+			<Text>Officer Training Program at University</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UNIVERSITY_MILITARY_DUMMY_HELP">
+			<Text>Provides an additional 5 XP for new melee and mounted units built in this City.</Text>
+		</Row>
+
+		<!-- Guild Sponsorship -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_DESCRIPTION">
+			<Text>Guild Sponsorship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_HELP">
+			<Text>The local guilds in the City are wanting you to sponsor a promising group of individuals so they can devote more attention to their chosen fields of expertise. Which group would you like to devote our resources to?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_1">
+			<Text>I want us to reward the local [ICON_VP_SCIENTIST] Scientists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_1_HELP">
+			<Text>[ICON_VP_SCIENTIST] Each Scientist working in the City gains an additional +1 [ICON_RESEARCH] Science but require a stipend of -4 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_2">
+			<Text>I want us to reward the local [ICON_VP_ENGINEER] Engineers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_2_HELP">
+			<Text>[ICON_VP_ENGINEER] Each Engineer working in the City gain an additional +2 [ICON_PRODUCTION] Production but requires a stipend of -4 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_3">
+			<Text>I want us to reward those in the arts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_3_HELP">
+			<Text>[ICON_VP_ENGINEER] Each [ICON_VP_WRITER] Writer, [ICON_VP_ARTIST] Artist, and [ICON_VP_MUSICIAN] working in the City gain an additional +1 [ICON_CULTURE] Culture but requires a stipend of -4 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_4">
+			<Text>I want us to reward the local [ICON_CSD_CIVIL_SERVANT] Civil Servants.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_4_HELP">
+			<Text>[ICON_CSD_CIVIL_SERVANT] Each Civil Servant working in the City gains an additional +2 [ICON_TOURISM] Tourism but requires a stipend of -4 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_5">
+			<Text>I do not want to show favoritism towards any group of people.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUILD_SPONSORSHIP_CHOICE_5_HELP">
+			<Text>Nothing happens at this time.</Text>
+		</Row>
+		
+		<!-- Public School Decision - modified -->
+		
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_DESCRIPTION">
+			<Text>School Boards Established</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_HELP">
+			<Text>School boards were recently established in the City, and they seek to reform the local public school system. They look to you for guidance. What would you prefer the City's Public School to focus on?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_1">
+			<Text>Our schools should emphasize the hard sciences: chemistry, physics, biology!.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_1_HELP">
+			<Text>The local Public School requires an additional 5 [ICON_GOLD] Gold in funding but provide +2% [ICON_RESEARCH] Science in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_2">
+			<Text>Our educational system should focus on the arts. We could be developing the next Great Artist.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_2_HELP">
+			<Text>The local Public School requires an additional 5 [ICON_GOLD] Gold in funding but provide +2% [ICON_CULTURE] Culture in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_3">
+			<Text>We need to provide training to the workforce of tomorrow. We need plumbers, electricians, and welders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_3_HELP">
+			<Text>The local Public School requires an additional 5 [ICON_GOLD] Gold in funding but provide +2% [ICON_PRODUCTION] Production in the City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_4">
+			<Text>Education should only be available to those who can afford it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_4_HELP">
+			<Text>The local Public School provides 5 [ICON_GOLD] Gold in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_5">
+			<Text>I am not interested in making changes at this time. Maybe later?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_5_HELP">
+			<Text>Nothing happens at this time.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_6">
+			<Text>I do not want to change anything at this Public School.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PUBLIC_SCHOOL_DECISION_CHOICE_6_HELP">
+			<Text>The local Public School permanently remains unchanged.</Text>
+		</Row>
+		
+	</Language_en_US>
+</GameData>

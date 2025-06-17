@@ -1,0 +1,401 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_MAYA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_MAYA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COLOSSEUM</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_MAYA_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<IsUnhappy>true</IsUnhappy>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<WLTKDTurns>12</WLTKDTurns>
+			<ResistanceTurns>2</ResistanceTurns>
+			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_MAYA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<EventDuration>-1</EventDuration>
+			<ReligiousUnrestModifierGlobal>-50</ReligiousUnrestModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_MAYA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MAYA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_MAYA_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MAYA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_MAYA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_MAYA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_MAYA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldFromInternalTREnd>
+		<Row>
+			<BuildingType>BUILDING_MAYA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>30</Yield>
+		</Row>
+	</Building_YieldFromInternalTREnd>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Modifier>20</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_KUNA</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_KUNA</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1500</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>-1500</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MAYA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Mistake</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_1">
+			<Text>{3_PlayerName} has discovered an error in the Calendar!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Pok Ta Pok</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_2">
+			<Text>{3_PlayerName} inaugurates Pok Ta Pok courts across the Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Loin Stone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_3">
+			<Text>{3_PlayerName} acquires large amounts of [ICON_RES_JADE] Jade stone.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Survival of the Fittest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_4">
+			<Text>{3_PlayerName} encourages inter-city rivalries to profit the Palace!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Political Sacrifice</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_5">
+			<Text>{3_PlayerName} sacrifices leading opposition figures, sparking a period of [ICON_RESISTANCE] Anarchy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Modern Practice</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MAYA_UE_CHOICE_6">
+			<Text>{3_PlayerName} modernizes Mayan religious practices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION">
+			<Text>No Greater Gift</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP">
+			<Text>The Long Count has reached another festival day, but we have somehow run out of willing sacrifices. Things are looking dire, Your Resplendence. If we cannot satisfy the Gods, we will be sacrificed instead![NEWLINE][NEWLINE]Any thoughts as to an alternative source of offerings?[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_1">
+			<Text>[NEWLINE]Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_2">
+			<Text>[NEWLINE]Ballcourts allow Kuna to yield +1 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_3">
+			<Text>[NEWLINE]Acquire materials worth {2_InstantYield}. This allows the generation of +2 [ICON_PEACE] Faith by Monuments, and you receive two copies of [ICON_RES_JADE] Jade. The holiness of such stones grant you +2 [ICON_PEACE] Faith when they are mined.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_4">
+			<Text>[NEWLINE]Use {2_InstantYield} worth of influence to promote trade. Internal trade increases [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection by 2% per City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 30 [ICON_GOLD] Gold in their Origin City when completed, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_5">
+			<Text>[NEWLINE]Start 12 Turns of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] in all Cities; however, you begin the first 2 Turns period of this time in [ICON_RESISTANCE] Anarchy. Unhappiness thresholds for [ICON_RESEARCH] Illiteracy and [ICON_GOLD] Poverty are permenantly reduced by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_HELP_CHOICE_6">
+			<Text>[NEWLINE]Use {2_InstantYield} to impliment syncretism, elimating 50% unhappiness due to [ICON_RELIGION] religious divisions. All Temples increase the [ICON_PEACE] Faith generated in a City by 20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_1">
+			<Text>Are we sure there isn't a mistake in the Calendar? Get the Science Advisor in here in case we missed a leap year or something?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_2">
+			<Text>The game of pok ta pok has taken on a ritualistic significance within our culture. Glory and death to the victors! A plentiful supply of athletic sacrifices is guaranteed for some time!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_3">
+			<Text>The magic stone, Jade, is essential to our worship. We must have it for our ceremonies! Lather every monument with lime to make it seem as though they were too adorned. This will appease the Gods.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Competition between the various Cities is fierce.*[NEWLINE]There is much we can gain from our subtle patronage of these rivalries. A few sacrifices should be easy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_5">
+			<Text>A notion has grown up that the Cities could unite in a new federation, effectively ending your rule! The people must be reminded of the Cities' proud and distinct histories. These modern notions will quickly die out, hopefully upon an altar.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MAYA_UE_DESCRIPTION_CHOICE_6">
+			<Text>There are now many ways to please the Gods, we must see that they all thrive within our Temples.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY">
+			<Text>Mayan's Competition of the Fittest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MAYA_UE_DUMMY_HELP">
+			<Text>+2% [ICON_GOLD] Gold from City Connections. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 30 [ICON_GOLD] Gold in their Origin City when completed, scaling with Era.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

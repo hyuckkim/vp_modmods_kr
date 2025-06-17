@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f3556ed1-01ec-41b2-99a1-967a52783cc3" version="2.1">
+  <Properties>
+    <Name>(7a) VP Events Overhaul (Expansion Pack system)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Overhauls core VP events and many Community Events</Teaser>
+    <Description>Modifies the default events that come with VP and integrating various events from the Community Events mod. Objectives are to: [NEWLINE]
+
+[NEWLINE][ICON_BULLET]Re-balance events so there is a more evenly distributed range of good/neutral/bad events across all eras.
+
+[NEWLINE][ICON_BULLET]Re-balance events so that yields are more aligned.
+
+[NEWLINE][ICON_BULLET]Set more events to expire to remove yield bloat. 
+
+[NEWLINE][ICON_BULLET]Diversifying the different kinds of events so you don't see the same thing over and over.
+
+[NEWLINE][ICON_BULLET]Developing event chains that tie more events together based on previous event choices while maintaining balance.[NEWLINE][NEWLINE]
+
+Events are divided into various "expansion packs" (EPs) and include:
+
+[NEWLINE][ICON_BULLET] (EP-0) Tutorial and Set-up Events
+
+[NEWLINE][ICON_BULLET] (EP-1) Natural Disasters
+
+[NEWLINE][ICON_BULLET] (EP-2) Era-based Events
+
+[NEWLINE][ICON_BULLET] (EP-3) City Specialization Events 
+
+[NEWLINE][ICON_BULLET] (EP-4) Signs and Wonders
+
+[NEWLINE][ICON_BULLET] (EP-5) Natural Wonder Events
+
+[NEWLINE][ICON_BULLET] (EP-6) Religious Events
+
+[NEWLINE][ICON_BULLET] (EP-7) Policy Events (pending)
+
+[NEWLINE][ICON_BULLET] (EP-8) Corporation Events 
+
+[NEWLINE][ICON_BULLET] (EP-9) Civilization Events (using Community Events - need to balance / update)</Description>
+    <Authors>Multiple</Authors>
+    <SpecialThanks>VP development team, Enginseer, Hokath, Xony, Anatase, N.Core</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks>
+    <Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" minversion="0" maxversion="999" title="(7) VP Community Events" />
+  </Blocks>
+  <Files>
+    <File md5="7AD8801F39094B10695480F6843FBCB3" import="1">Art/advisoreconomic.dds</File>
+    <File md5="86236D6198FC4B7FC05E89A2059342EE" import="1">Art/advisorforeign.dds</File>
+    <File md5="789B7113FB8D0A9C611622C8C81749D6" import="1">Art/advisormilitary.dds</File>
+    <File md5="F08012D06417FA5CAB189DC1ACFAE617" import="1">Art/advisorscience.dds</File>
+    <File md5="E63F495530830ACDA63D58F4239814D2" import="1">Art/AirBalloon.dds</File>
+    <File md5="FBE7D0620F5256D72DC21D4318427269" import="1">Art/AncientRefugee.dds</File>
+    <File md5="4E188274DE1EEF16AB1FD324B897620A" import="1">Art/basedcivevent.dds</File>
+    <File md5="22DF8EC9DDF8103BC381BC819738D687" import="1">Art/cedummy128.dds</File>
+    <File md5="0286FAD4AD16D8ED1C5FEA88920A837C" import="1">Art/cedummy256.dds</File>
+    <File md5="A540495E07012B0B321E6C8013C0FB3C" import="1">Art/cedummy45.dds</File>
+    <File md5="1A0D0BD87F2F53AA57BD00C10E3CA14E" import="1">Art/cedummy64.dds</File>
+    <File md5="67D889A9EEEC4AB0E1ED942570D7BDAD" import="1">Art/cedummy80.dds</File>
+    <File md5="30272260861F6F1A949486F354C58AE7" import="1">Art/CityRaid.dds</File>
+    <File md5="CC4780DA2F00EEBF0AE029B4EE591066" import="1">Art/ExoticLuxury.dds</File>
+    <File md5="1E5274E454E2453CF336BD7BD74E9CE6" import="1">Art/EyeForEye.dds</File>
+    <File md5="962A7CDC3EBD64D01B045C7A6494E540" import="1">Art/FireFire.dds</File>
+    <File md5="6BB340B55207D61CEB2102D83CD5D480" import="1">Art/FireWorks.dds</File>
+    <File md5="EC82E102C774F8FCC83CA0C84BE91890" import="1">Art/Gladiator.dds</File>
+    <File md5="76612195A00BC36769E291C91151B518" import="1">Art/GlintMine.dds</File>
+    <File md5="6AADF65C7F52C2582215C19E8B81219B" import="1">Art/GoldStandard.dds</File>
+    <File md5="CE4F1D1578C73C83718580A0F0D95CA9" import="1">Art/HarborTrade.dds</File>
+    <File md5="968715465F9647AF7CF12738D79F38C8" import="1">Art/JungleDisease.dds</File>
+    <File md5="4B376A5B2465E539918F7F086E01B13A" import="1">Art/Mall-FontIcons.dds</File>
+    <File md5="80FCA7A8933F9B199FE5DC3794056C5F" import="1">Art/Mall-FontIcons.ggxml</File>
+    <File md5="3543ADBF2A7184359545BC379918B542" import="1">Art/MallAtlas128.dds</File>
+    <File md5="491A1874F6B569DED1978E1A8317F098" import="1">Art/MallAtlas256.dds</File>
+    <File md5="25B29BAAE936443286783319502315D0" import="1">Art/MallAtlas45.dds</File>
+    <File md5="59404569049E7156DD4042EA6B05CB9F" import="1">Art/MallAtlas64.dds</File>
+    <File md5="7C7BD27ED5936333EC088EDF2F8FED5A" import="1">Art/MallAtlas80.dds</File>
+    <File md5="AF8E8E683115CC06750A1F126C11BFD7" import="1">Art/NaturalBeauty.dds</File>
+    <File md5="FC2DC1AA455210D54F9C2E0310AFBFF4" import="1">Art/naturalwonderpopup.dds</File>
+    <File md5="7AE54BA5A31E80A1745528F5EC9924D7" import="1">Art/StockMarketCrash.dds</File>
+    <File md5="26908BC94A3A9C3ED9F9A59E48C609EC" import="1">Art/SunHeat.dds</File>
+    <File md5="0CA2948C0904B3C2455055D2C1E3D5B2" import="1">Art/WTC128.dds</File>
+    <File md5="AD37F6D755789CD53224CB7AD2337A89" import="1">Art/WTC256.dds</File>
+    <File md5="D7A7CCD323504FE0C72621777CDBFE64" import="1">Art/WTC45.dds</File>
+    <File md5="E22879BA3084949DF3B81E2E31F0B8EF" import="1">Art/WTC64.dds</File>
+    <File md5="AB3CB7DBEB7C6F8D19A676218689E0BA" import="1">Art/WTC80.dds</File>
+    <File md5="32EA80F1FB5A59301FB5A37EB2AC6473" import="1">Art/WTC_Splash.dds</File>
+    <File md5="C6620CD7F92C1BD52C35D4FFAE0085E0" import="0">Audio/AudioDefines.sql</File>
+    <File md5="494AD233607DA22A86EDE501A395DC83" import="1">Audio/EAircraft.mp3</File>
+    <File md5="5FB18F80EA5E6E403ED198BE9AAFEAF5" import="1">Audio/EBankCashCash.mp3</File>
+    <File md5="E2118701BE55DB406245B9472E36E9B2" import="1">Audio/ECityCapture.mp3</File>
+    <File md5="AD7CB7001B6FF51CD7D57FCF36F5FC40" import="1">Audio/ECityRevolt.mp3</File>
+    <File md5="2762F61B59A37931BDC9578EF87459C9" import="1">Audio/ECiv.mp3</File>
+    <File md5="29215DCC7303D6888D68522C405712BE" import="1">Audio/ECrowdCheer.mp3</File>
+    <File md5="E1AD93C61D2CA38AB911BE628A8D553D" import="1">Audio/ECultureExpands.mp3</File>
+    <File md5="5D6E715321BB7CCE42B5EFF7D22626DE" import="1">Audio/EDeclareWar.mp3</File>
+    <File md5="BC26E88534B77C912B3E966EFDA00218" import="1">Audio/EDiscovery.mp3</File>
+    <File md5="6EC7DC5E7205587F667C94E45D2464BC" import="1">Audio/EEconomic.mp3</File>
+    <File md5="B4A7FF0EB215563E5CD86B2B35E2856A" import="1">Audio/EFeatureGrowth.mp3</File>
+    <File md5="369BC87ECF80935DDD9AF2B1791160B7" import="1">Audio/EFirstToSomething.mp3</File>
+    <File md5="D4238ECE8524B5A818A0A50407C50A8E" import="1">Audio/EForeign.mp3</File>
+    <File md5="2B23B7EA7DA75B0D90D52DBE92CF16EE" import="1">Audio/EGhast.mp3</File>
+    <File md5="B0E713C002D9476B456F966C51B139C1" import="1">Audio/EGoldenAge.mp3</File>
+    <File md5="A06242927B0DB0549C4015D56B8E0F63" import="1">Audio/EGreatPeople.mp3</File>
+    <File md5="8BB65711E100486516B584D56889397B" import="1">Audio/EMilitary.mp3</File>
+    <File md5="B50DF289370B6A6E9CE16BCDAE5DAF7B" import="1">Audio/EPlague.mp3</File>
+    <File md5="1A3D5153C2A4E7972B99B11C06E921F3" import="1">Audio/ERelic.mp3</File>
+    <File md5="10FE83D564A3A1A2BE0425572010B16D" import="1">Audio/ERevolutionEnd.mp3</File>
+    <File md5="1616AA367FED0424AE00C8514AD4555C" import="1">Audio/ERevolutionStart.mp3</File>
+    <File md5="3C9EAE74A4C8598059D7F668D4FAEABD" import="1">Audio/EScience.mp3</File>
+    <File md5="48DC69F25E1C99A6EE60678A10454C3A" import="1">Audio/EStrike.mp3</File>
+    <File md5="86CCCA0E058D63E5872770B9C723978B" import="1">Audio/ETroops.mp3</File>
+    <File md5="EBC507153D12C389B3838E94502A16EF" import="1">Audio/WTC_Quote.mp3</File>
+    <File md5="1D3DCB532E14E9E2F5E56D3AD9ED6456" import="0">Events/EP-0_Tutorial_and_Setup/Blocks.sql</File>
+    <File md5="BFCBC6970E0508DB565A8015B3649C30" import="0">Events/EP-3_CitySpecialization/CitySpecialization.sql</File>
+    <File md5="BEA3ED7A321388DED5C8C6310E6B24E6" import="0">Events/EP-3_CitySpecialization/Text/en_US/City_Specialization_en_US.xml</File>
+    <File md5="8EBB2EBE3679A9EBAF5B26BF822F5B76" import="0">Events/EP-3_CitySpecialization/Text/en_US/Player_Specialization_en_US.xml</File>
+    <File md5="B8FB31D17B7FD7DBC451F77F62B4684F" import="0">Events/EP-0_Tutorial_and_Setup/Setup_Events.sql</File>
+    <File md5="5C84D4F1C78E41C7868E30988FD14289" import="0">Events/EP-0_Tutorial_and_Setup/Tutorial_Events.sql</File>
+    <File md5="431F2F54FFA0AEB64CB018F4BDAFA010" import="0">Events/EP-2_EraBasedEvents/AncientClassical/AncientClassicalEvents.sql</File>
+    <File md5="97B7EF7B65449AFF3A0B5B818596E2CD" import="0">Events/EP-2_EraBasedEvents/AncientClassical/Text/en_US/City_Ancient_en_US.xml</File>
+    <File md5="EB423D3959A275E99379DBC3E4250680" import="0">Events/EP-2_EraBasedEvents/AncientClassical/Text/en_US/Player_Ancient_en_US.xml</File>
+    <File md5="5805A4EE7DA5C184E8B86741D95173BA" import="0">Events/EP-2_EraBasedEvents/AtomicInformation/AtomicInformationEvents.sql</File>
+    <File md5="0DDE3738817A96FEB228D61040160525" import="0">Events/EP-2_EraBasedEvents/AtomicInformation/Text/en_US/City_Atomic_en_US.xml</File>
+    <File md5="8C239ED8FF4570CD7D40B6BBFD35A97A" import="0">Events/EP-2_EraBasedEvents/AtomicInformation/Text/en_US/Player_Atomic_en_US.xml</File>
+    <File md5="0F55E2230449C63A9CEAB7AC6F3AB887" import="0">Events/EP-2_EraBasedEvents/IndustrialModern/IndustrialModernEvents.sql</File>
+    <File md5="3DAA8FC96F2F9BF5E6184E0A02804FC9" import="0">Events/EP-2_EraBasedEvents/IndustrialModern/Text/en_US/City_Industrial_en_US.xml</File>
+    <File md5="3B601A5E57301AE58FA086FEAF0403EC" import="0">Events/EP-2_EraBasedEvents/IndustrialModern/Text/en_US/Player_Industrial_en_US.xml</File>
+    <File md5="1666C868B5D47AE7A335B8CBADDB435D" import="0">Events/EP-2_EraBasedEvents/MedievalReniassance/MedievalReniassanceEvents.sql</File>
+    <File md5="89E18C621D9FCC70E7FFA2C6F22BBCA1" import="0">Events/EP-2_EraBasedEvents/MedievalReniassance/Text/en_US/City_Medieval_en_US.xml</File>
+    <File md5="CF73D00A0B7FB37FADC42CA78BBFA9D2" import="0">Events/EP-2_EraBasedEvents/MedievalReniassance/Text/en_US/Player_Medieval_en_US.xml</File>
+    <File md5="8CE05306A2701B3AC980151E6BEF5609" import="0">Events/EP-1_NaturalDisasters/City_NaturalDisasters_1.sql</File>
+    <File md5="B9BDAD5001A4939D79129AA9C9D813A4" import="0">Events/EP-1_NaturalDisasters/City_NaturalDisasters_2.sql</File>
+    <File md5="AB6B39E8588EAA7D2B07C4A211B00728" import="0">Events/EP-1_NaturalDisasters/Player_NaturalDisasters.sql</File>
+    <File md5="19D12DEC1E5094F3B74DA9A2037882B0" import="0">Events/EP-1_NaturalDisasters/Text/en_US/City_Natural_Disasters.xml</File>
+    <File md5="572A8CCB466ACDF4977C709F3C14209D" import="0">Events/EP-1_NaturalDisasters/Text/en_US/Player_Natural_Disasters.xml</File>
+    <File md5="09644473B04EE02EF25B65DAAC2EF617" import="0">Events/EP-5_NaturalWonderEvents/1_CoreChanges.sql</File>
+    <File md5="C2BC366343F67F46DA3012304CB0191E" import="0">Events/EP-5_NaturalWonderEvents/BarringerCrater.sql</File>
+    <File md5="E76E74E1988332694CE891EB0CC6E800" import="0">Events/EP-5_NaturalWonderEvents/ElDorado.sql</File>
+    <File md5="96A896DEA8437C396FA09D0BB90F6F75" import="0">Events/EP-5_NaturalWonderEvents/FountainofYouth.sql</File>
+    <File md5="F18C49A01DD4445EDFF64D1084116A68" import="0">Events/EP-5_NaturalWonderEvents/Fuji.sql</File>
+    <File md5="E8494DB9DC943A7BEF1A06A88F64FE21" import="0">Events/EP-5_NaturalWonderEvents/GrandMesa.sql</File>
+    <File md5="F58DCC6746ACADF66F5B8E966B7DBC97" import="0">Events/EP-5_NaturalWonderEvents/GreatBarrierReef.sql</File>
+    <File md5="59ADF0C0A3E30AD95A468431653E3E24" import="0">Events/EP-5_NaturalWonderEvents/Kilimanjaro.sql</File>
+    <File md5="5F1552A78B4991EB34F499C48F1E3C6B" import="0">Events/EP-5_NaturalWonderEvents/Krakatoa.sql</File>
+    <File md5="38D4E0C41B50C5EBAC673179D2195953" import="0">Events/EP-5_NaturalWonderEvents/LakeVictoria.sql</File>
+    <File md5="79768D5215B7E1BA9D082829AC50A16E" import="0">Events/EP-5_NaturalWonderEvents/MtKailash.sql</File>
+    <File md5="E942725F4D7FC1C9F352BCAF8DB4D6D8" import="0">Events/EP-5_NaturalWonderEvents/MtSinai.sql</File>
+    <File md5="565FE5C9EF7439EBEC7E479F4EF7769E" import="0">Events/EP-5_NaturalWonderEvents/OldFaithful.sql</File>
+    <File md5="0D4B5A59368DBAE558F7D26E74DBBA3E" import="0">Events/EP-5_NaturalWonderEvents/Potosi.sql</File>
+    <File md5="98B54BBE8F29D2092E2EE250E96F5743" import="0">Events/EP-5_NaturalWonderEvents/RockofGibraltar.sql</File>
+    <File md5="9F39A425DBA3D739F78D59FC750D2040" import="0">Events/EP-5_NaturalWonderEvents/SolomonsMines.sql</File>
+    <File md5="3011C9B0AF47C510CFFE4DA64913CA52" import="0">Events/EP-5_NaturalWonderEvents/SriPada.sql</File>
+    <File md5="EA4C7C8C3B96E8A7F2052375BEA229C4" import="0">Events/EP-5_NaturalWonderEvents/Text/en_US/Natural_Wonder_Event_Text.sql</File>
+    <File md5="C8FCE151707EF3A7D5EF46900606D42F" import="0">Events/EP-5_NaturalWonderEvents/Uluru.sql</File>
+    <File md5="EB3859F896D7AFBD141A56FA55A8E756" import="0">Events/EP-5_NaturalWonderEvents/z_NWtemplate.sql</File>
+    <File md5="ACE8224DF6888C91E9E04E076A8C3CD0" import="0">Events/EP-5_NaturalWonderEvents/z_NWtemplate_2.sql</File>
+    <File md5="BF862FFC015458C8A55EE90E4E6E3D43" import="0">Events/EP-6_ReligiousEvents/CeremonialBurial.sql</File>
+    <File md5="E19F7F88A2C6487793DBD3F4BFA71E0E" import="0">Events/EP-6_ReligiousEvents/CouncilofElders.sql</File>
+    <File md5="18D546DE0638C629CE5567B24E7089B9" import="0">Events/EP-6_ReligiousEvents/DivineInheritance.sql</File>
+    <File md5="23C8B329A60F3A1BE46EE77B7D05E9A3" import="0">Events/EP-6_ReligiousEvents/HeroWorship.sql</File>
+    <File md5="DB10D2981F0DC4B6041C7EDB896F0BD0" import="0">Events/EP-6_ReligiousEvents/HolyLaw.sql</File>
+    <File md5="18BB7DD2DE64287B846F5AC78AA47E05" import="0">Events/EP-6_ReligiousEvents/Pilgrimage.sql</File>
+    <File md5="30DFC0F8F321C93997A78E6145F85015" import="0">Events/EP-6_ReligiousEvents/Religious_Event_Setup.sql</File>
+    <File md5="034508347F2181A61EDDE7483BC5E3D1" import="0">Events/EP-6_ReligiousEvents/Revelation.sql</File>
+    <File md5="81F95C280DEC38C426EE87CCCDF9C75E" import="0">Events/EP-6_ReligiousEvents/TheocraticRule.sql</File>
+    <File md5="BFA560EB13D978CF2EBB9F78A548070C" import="0">Events/EP-6_ReligiousEvents/TranscendentThoughts.sql</File>
+    <File md5="29FEC1865C4E9E12EFC7EEE7DBD810FF" import="0">Events/EP-6_ReligiousEvents/z_ReligionTemplate.sql</File>
+    <File md5="97E00E8F72E82A1ABDC6BF9EE235B510" import="0">Events/EP-4_SignsandWonders/SignsandWonders.sql</File>
+    <File md5="5EAE3ED12692456D878835ACFD1DBFEC" import="0">Events/EP-4_SignsandWonders/Text/en_US/City_SignsandWonders.xml</File>
+    <File md5="F0FE4FB2DFB7442EE7E76CFF560CB330" import="0">Events/EP-4_SignsandWonders/Text/en_US/Player_SignsandWonders.xml</File>
+    <File md5="201D8029F855D8553FBA45180CFE81BB" import="0">Events/EP-8_CorporationEvents/Extractors.sql</File>
+    <File md5="76CFDDED29F6F0A39CDBC5DF766E6984" import="0">Events/EP-8_CorporationEvents/Firaxite.sql</File>
+    <File md5="BB660172CF24DF51CCC889B60D56AD78" import="0">Events/EP-8_CorporationEvents/Corp_Shared.sql</File>
+    <File md5="6EB687C5F729FFB6381C943DEE322454" import="0">Events/EP-8_CorporationEvents/Giorgio.sql</File>
+    <File md5="6A478610CF5E626DD84F13D5A457BA30" import="0">Events/EP-8_CorporationEvents/Hexxon.sql</File>
+    <File md5="1C228A4ABF4931FE4A76079F6DD2F740" import="0">Events/EP-8_CorporationEvents/Jewelers.sql</File>
+    <File md5="3AB7639E86E9F4B4EB7797947BB8D1AF" import="0">Events/EP-8_CorporationEvents/TwoKay.sql</File>
+    <File md5="DA5C922F3A9A8BFCDAAEEC2802AAD3FA" import="0">Events/EP-8_CorporationEvents/TraderSid.sql</File>
+    <File md5="965A5ECAE80D0C0D5B7C9C7B1F67EB7D" import="0">Events/EP-8_CorporationEvents/z_CorpTemplate.sql</File>
+    <File md5="2FA569FBDDC4EE760FBEFF1915E9BFBE" import="0">Events/EP-9_CivilizationEvents/America.xml</File>
+    <File md5="795B978F961258FFDC51C16C45E8840F" import="0">Events/EP-9_CivilizationEvents/Arabia.xml</File>
+    <File md5="72CBBDD8C95C887867C7317B399BF6FA" import="0">Events/EP-9_CivilizationEvents/Assyria.xml</File>
+    <File md5="6CC634E06286DA3B6A3ADD0FBBF347DF" import="0">Events/EP-9_CivilizationEvents/Austria.xml</File>
+    <File md5="11653AEC57E1A7E4EE90113380D10746" import="0">Events/EP-9_CivilizationEvents/Aztec.xml</File>
+    <File md5="7B6507C1A85639964081878844568515" import="0">Events/EP-9_CivilizationEvents/Babylon.xml</File>
+    <File md5="B8688AD1B60DF45550A775B73A7752E5" import="0">Events/EP-9_CivilizationEvents/Brazil.xml</File>
+    <File md5="3B65A824CECFA9668FB26D472460E449" import="0">Events/EP-9_CivilizationEvents/Byzantium.xml</File>
+    <File md5="5044C33178576EAD6D40E642FA3F8D2A" import="0">Events/EP-9_CivilizationEvents/Carthage.xml</File>
+    <File md5="F4B95B70113350AAC6DC9F754501B31A" import="0">Events/EP-9_CivilizationEvents/Celts.xml</File>
+    <File md5="9DEEFA024EA5569DC8E5C706976CB4C7" import="0">Events/EP-9_CivilizationEvents/China.xml</File>
+    <File md5="85034361DAD8184B79C805AED1B398C9" import="0">Events/EP-9_CivilizationEvents/_CompatibilityFile.lua</File>
+    <File md5="9A48E1D149642DED7CD5A692BFD5AE88" import="0">Events/EP-9_CivilizationEvents/_demcivcompatibilityfile.sql</File>
+    <File md5="F735468E284E969EB53E5B919F52A284" import="0">Events/EP-9_CivilizationEvents/Denmark.xml</File>
+    <File md5="29186133AEA72A808069F3B5174D519D" import="0">Events/EP-9_CivilizationEvents/Egypt.xml</File>
+    <File md5="4F7672505FA159900532036CC780A9E7" import="0">Events/EP-9_CivilizationEvents/England.xml</File>
+    <File md5="EFE3D5CDCB085BE391DF97D5A581D119" import="0">Events/EP-9_CivilizationEvents/Ethiopia.xml</File>
+    <File md5="DF2977B64686D5D5A51545112D7AE398" import="0">Events/EP-9_CivilizationEvents/France.xml</File>
+    <File md5="D478D59E04054016B15B82F2037724A8" import="0">Events/EP-9_CivilizationEvents/Germany.xml</File>
+    <File md5="EDF401D208281D14938BE79E5910026A" import="0">Events/EP-9_CivilizationEvents/Greece.xml</File>
+    <File md5="A99CB9149EC2B25FEA616B9CA9CFBF71" import="0">Events/EP-9_CivilizationEvents/Huns.xml</File>
+    <File md5="E19CE6C5864DBD0DD42BBA4F212043DF" import="0">Events/EP-9_CivilizationEvents/Inca.xml</File>
+    <File md5="7B68539F2DA978CD783C812FFFB0943D" import="0">Events/EP-9_CivilizationEvents/India.xml</File>
+    <File md5="934942E4A84E2ADABA346993F3EEC63C" import="0">Events/EP-9_CivilizationEvents/Indonesia.xml</File>
+    <File md5="383939850882191487BCCC441C3F81F0" import="0">Events/EP-9_CivilizationEvents/Iroquois.xml</File>
+    <File md5="A206EC7A04A8341AF94034ABFE43D35A" import="0">Events/EP-9_CivilizationEvents/Japan.xml</File>
+    <File md5="8F36B7DB352088725B4ADEA95298D4E6" import="0">Events/EP-9_CivilizationEvents/Korea.xml</File>
+    <File md5="1103D2A9469850F09F50B25A97A49351" import="0">Events/EP-9_CivilizationEvents/Maya.xml</File>
+    <File md5="305D1E8EB8F212C479DFDBFF96162A78" import="0">Events/EP-9_CivilizationEvents/Mongolia.xml</File>
+    <File md5="E62CA728380CCC7200BC736A6B883335" import="0">Events/EP-9_CivilizationEvents/Morocco.xml</File>
+    <File md5="D254581B87619FB733B84239940EB707" import="0">Events/EP-9_CivilizationEvents/MutuallyExclusive.sql</File>
+    <File md5="E053F23EFDBA6FE94B5108F1D3209319" import="0">Events/EP-9_CivilizationEvents/Netherlands.xml</File>
+    <File md5="431842D32C3826A3CC3EC86DAE11E7DB" import="0">Events/EP-9_CivilizationEvents/Ottoman.xml</File>
+    <File md5="49D6AF9A031E9CAE2B5087AE5EC26C75" import="0">Events/EP-9_CivilizationEvents/Persia.xml</File>
+    <File md5="2FE240091CB1AE1B9CB8E7617EDDC6D2" import="0">Events/EP-9_CivilizationEvents/Poland.xml</File>
+    <File md5="1D4FA1CB512DA3FB3635AA97BECCE493" import="0">Events/EP-9_CivilizationEvents/Polynesia.xml</File>
+    <File md5="5864A6EC22C4DB94F26B5F9D5102929C" import="0">Events/EP-9_CivilizationEvents/Portugal.xml</File>
+    <File md5="E7E304F912A4972BA5AE118404C709B8" import="0">Events/EP-9_CivilizationEvents/Rome.xml</File>
+    <File md5="B0159B4E21FF9EA4A24C9E4A343578D0" import="0">Events/EP-9_CivilizationEvents/Russia.xml</File>
+    <File md5="B15C3EF6CC2B8AF89BF4D2FCB760EB1E" import="0">Events/EP-9_CivilizationEvents/Shoshone.xml</File>
+    <File md5="7CCE5246CFFCCB8B4A29180C99ECBE85" import="0">Events/EP-9_CivilizationEvents/Siam.xml</File>
+    <File md5="101145BA4F854E76C38EF6512A5D1AB1" import="0">Events/EP-9_CivilizationEvents/Songhai.xml</File>
+    <File md5="1849E25D5602313C414C88F2A26F8F10" import="0">Events/EP-9_CivilizationEvents/Spain.xml</File>
+    <File md5="5929B71B5FE8E99F330422F0C93C9EDD" import="0">Events/EP-9_CivilizationEvents/Sweden.xml</File>
+    <File md5="2BD7EB760AE064551CE16F36CBF93A51" import="0">Events/EP-9_CivilizationEvents/Venice.xml</File>
+    <File md5="BB65D35817DEE5A95DDC9AF06C76A85E" import="0">Events/EP-9_CivilizationEvents/Zulu.xml</File>
+    <File md5="7B467020073482E7800BCD8BE2494146" import="0">Extra_Stuff/CoreFiles.sql</File>
+    <File md5="66486FD83A6A7CB596F2048AB8143646" import="0">LUA/AncientClassicalEventLUA.lua</File>
+    <File md5="F259BD3C9592A90387CCA5FE3A2F5EB4" import="0">LUA/CityCreatedStatusLUA.lua</File>
+    <File md5="BD7EF1B6434DA4EBF7696642470C2D6D" import="0">LUA/ReligionEventsLUA.lua</File>
+    <File md5="31E86CE863BEFFE9114BFE6607B9F1CB" import="0">changelog.txt</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Audio/AudioDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Extra_Stuff/CoreFiles.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-0_Tutorial_and_Setup/Blocks.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-0_Tutorial_and_Setup/Tutorial_Events.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-0_Tutorial_and_Setup/Setup_Events.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-1_NaturalDisasters/Player_NaturalDisasters.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-1_NaturalDisasters/City_NaturalDisasters_1.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-1_NaturalDisasters/City_NaturalDisasters_2.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-1_NaturalDisasters/Text/en_US/Player_Natural_Disasters.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-1_NaturalDisasters/Text/en_US/City_Natural_Disasters.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AncientClassical/AncientClassicalEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AncientClassical/Text/en_US/Player_Ancient_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AncientClassical/Text/en_US/City_Ancient_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/MedievalReniassance/MedievalReniassanceEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/MedievalReniassance/Text/en_US/Player_Medieval_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/MedievalReniassance/Text/en_US/City_Medieval_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/IndustrialModern/IndustrialModernEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/IndustrialModern/Text/en_US/Player_Industrial_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/IndustrialModern/Text/en_US/City_Industrial_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AtomicInformation/AtomicInformationEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AtomicInformation/Text/en_US/Player_Atomic_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-2_EraBasedEvents/AtomicInformation/Text/en_US/City_Atomic_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-3_CitySpecialization/CitySpecialization.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-3_CitySpecialization/Text/en_US/Player_Specialization_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-3_CitySpecialization/Text/en_US/City_Specialization_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-4_SignsandWonders/SignsandWonders.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-4_SignsandWonders/Text/en_US/Player_SignsandWonders.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-4_SignsandWonders/Text/en_US/City_SignsandWonders.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/1_CoreChanges.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/BarringerCrater.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/ElDorado.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/FountainofYouth.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/Fuji.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/GrandMesa.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/GreatBarrierReef.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/Kilimanjaro.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/Krakatoa.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/LakeVictoria.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/MtKailash.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/MtSinai.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/OldFaithful.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/Potosi.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/RockofGibraltar.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/SolomonsMines.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/SriPada.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-5_NaturalWonderEvents/Uluru.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/Religious_Event_Setup.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/CeremonialBurial.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/CouncilofElders.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/DivineInheritance.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/HeroWorship.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/HolyLaw.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/Pilgrimage.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/Revelation.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/TheocraticRule.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-6_ReligiousEvents/TranscendentThoughts.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Corp_Shared.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Extractors.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Firaxite.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Giorgio.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Hexxon.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/Jewelers.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/TraderSid.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-8_CorporationEvents/TwoKay.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/_demcivcompatibilityfile.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/America.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Arabia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Assyria.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Austria.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Aztec.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Babylon.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Brazil.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Byzantium.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Carthage.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Celts.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/China.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Denmark.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Egypt.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/England.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Ethiopia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/France.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Germany.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Greece.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Huns.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Inca.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/India.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Indonesia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Iroquois.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Japan.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Korea.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Maya.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Mongolia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Morocco.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/MutuallyExclusive.sql</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Netherlands.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Ottoman.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Persia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Poland.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Polynesia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Portugal.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Rome.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Russia.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Shoshone.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Siam.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Songhai.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Spain.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Sweden.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Venice.xml</UpdateDatabase>
+      <UpdateDatabase>Events/EP-9_CivilizationEvents/Zulu.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/AncientClassicalEventLUA.lua">
+      <Name>XP for scouting</Name>
+      <Description>XP for scouting</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/ReligionEventsLUA.lua">
+      <Name>Religious Events LUA</Name>
+      <Description>Religious Events LUA</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/CityCreatedStatusLUA.lua">
+      <Name>CityCreatedLUA</Name>
+      <Description>Places NoRIver, NoCoast and DryTown tags for Events system</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Events/EP-9_CivilizationEvents/_CompatibilityFile.lua">
+      <Name>Civilization Event Compatiblity File (from Community Events)</Name>
+      <Description>Civilization Event Compatiblity File (from Community Events)</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

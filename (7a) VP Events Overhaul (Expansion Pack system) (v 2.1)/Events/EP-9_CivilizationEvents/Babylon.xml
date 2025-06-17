@@ -1,0 +1,450 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_BABYLON_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_BABYLON</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_TEMPLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<ScienceMedianModifierGlobal>5</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_OBSERVATORY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HYDRO_PLANT</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_BABYLON_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+		</Row>
+		<Row>
+			<Type>EVENT_BABYLON_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOSPITAL</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_BABYLON_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-2500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_LAPIS</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>6</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HYDRO_PLANT</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_BABYLON_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_BABYLON_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_BABYLON_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_BABYLON_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_BABYLON_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_BABYLON_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_RiverPlotYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_BABYLON_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BABYLON_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_RiverPlotYieldChanges>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BABYLON_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Prophecy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_1">
+			<Text>{3_PlayerName} identifies a child of prophecy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Return of Tiamat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_2">
+			<Text>{3_PlayerName} gathers more power within the priesthood!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Ishtar Gate</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_3">
+			<Text>{3_PlayerName} enslaves thousands to construct the Ishtar Gate, a monument to his Gods!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Comet in the Sky</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_4">
+			<Text>{3_PlayerName} creates an array of Observatories.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Stopping the Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_5">
+			<Text>{3_PlayerName} builds the biggest dams the world has ever seen, displacing and killing thousands!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Sacred Uranium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BABYLON_UE_CHOICE_6">
+			<Text>Babylonians have come to consider Uranium sacred.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION">
+			<Text>The Eyes of Tiamat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP">
+			<Text>In this season of Akitu, the great and powerful of Babylon gather to hear of the defeat of Tiamat at the hands of our father and creator, Marduk. Yet in the night's sky, an angry, streaming fire can so clearly be seen![NEWLINE][NEWLINE]What does this portend, wise Nebuchadnezzar?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_2">
+			<Text>Temples produce +2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science and [ICON_GREAT_SCIENTIST] Scientists generate +1 [ICON_PEACE] Faith. However, [ICON_RESEARCH] Illiteracy increases by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_3">
+			<Text>Your project increases [ICON_GOLD] Poverty levels by 5%. In return, receieve two copies of [ICON_RES_LAPIS] Lapis Lazuli, and the Palace provides +2 [ICON_CULTURE] Culture and +10% [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_4">
+			<Text>Spend {2_InstantYield}. Receieve a free Observatory in every City and [ICON_GREAT_SCIENTIST] Scientists generate +2 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_5">
+			<Text>Lose {2_InstantYield} in every City. Cities gain +1 [ICON_PRODUCTION] Production and +1 [ICON_FOOD] Food from their River Tiles. Hydro Plants gain +5 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_HELP_CHOICE_6">
+			<Text>Reallocate {2_InstantYield}. Receive 6 copies of [ICON_RES_URANIUM] Uranium. Hospitals provide +5 [ICON_FOOD] Food and +5 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_1">
+			<Text>It is a blessing from Marduk. A child born under this sign shall save Babylon from certain doom!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The people panic! Surely this a sign of Tiamat's return!*[NEWLINE]The domain of the Gods concerns only holy men. We must draw all power atop the Ziggurats, where it is safe from the common man!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_3">
+			<Text>This is a warning from the Gods. If a thousand slaves labor a thousand days to construct a great celestial gate, we may yet be spared their wrath!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_4">
+			<Text>*For the first time, we have the technology to investigate this 'comet'*[NEWLINE]Equip the wise men of every City with a great telescope, that they may closely study this divine object. We will not have another chance this Age!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_5">
+			<Text>*You have not been able to find support for your ambitious - but potentially ruinous - plans to dam our mightiest river*[NEWLINE]Bring me the chief priest. He shall confirm my suspicions: that the Water Gods mean to rise against us! This must be stopped...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BABYLON_UE_DESCRIPTION_CHOICE_6">
+			<Text>*Delicate instruments show that the core of the comet is filled with a radioactive element, much like one on Earth*[NEWLINE]We must know all there is about this holy mineral! If it is of the Gods, it will have the power to both destroy and heal!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY">
+			<Text>Babylonian Dam</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BABYLON_UE_DUMMY_HELP">
+			<Text>+1 [ICON_FOOD] Food and [ICON_PRODUCTION] to River Tiles.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

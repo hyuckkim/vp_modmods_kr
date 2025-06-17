@@ -21,6 +21,12 @@
 
 3. VP용 모드-모드:
 
+- (6) Future Age for VP  
+  미래 시대를 추가해주는 모드로 여러 다른 게임의 지적재산권이 활용된 모드입니다.
+
+- (7a) VP Events Overhaul (Expansion Pack system)  
+  VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다. 
+
 - (overhaul) Enlightenment Era for VP  
   계몽 시대를 추가해주는 모드로 최근 VP 4.22 버전에 맞춰 업데이트 되었으며 추후 VP 5.0용으로 업데이트될 예정입니다.
 
@@ -32,6 +38,9 @@
 
 - (text) Promotion Overhaul for VP  
   승급 설명을 개선시켜주는 모드입니다.
+
+- (ui) City-States Leaders for VP  
+  도시 국가에 지도자를 추가해주는 모드입니다.
 
 - (ui) List Enhancements for VP  
   도시 화면의 유닛 목록을 개선시켜주는 모드입니다.

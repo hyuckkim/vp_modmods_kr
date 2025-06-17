@@ -1,0 +1,524 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_CELTS_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_CELTS</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+			<ImprovementAnywhereRequired>IMPROVEMENT_MINE</ImprovementAnywhereRequired>
+			<UnitClassRequired>UNITCLASS_CARGO_SHIP</UnitClassRequired>
+			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY_3</EventBuildingClassGlobal>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
+			<EventPromotion>PROMOTION_UE_BAGPIPES</EventPromotion>
+			<EventBuildingClassGlobal>BUILDINGCLASS_CELTS_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OXFORD_UNIVERSITY</RequiredAnywhereBuildingClass>
+			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_CELTS_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_STADIUM</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_CELTS_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_CELTS_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_CELTS_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_CELTS_UE_DUMMY_3</Type>
+			<DefaultBuilding>BUILDING_CELTS_UE_DUMMY_3</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_CELTS_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_CELTS_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TradeRouteLandGoldBonus>200</TradeRouteLandGoldBonus>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_CELTS_UE_DUMMY_3</Type>
+			<BuildingClass>BUILDINGCLASS_CELTS_UE_DUMMY_3</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_CELTS_UE_DUMMY_3</Description>
+			<Help>TXT_KEY_BUILDING_CELTS_UE_DUMMY_3_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_CELTS_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+	<Building_BuildingClassYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_CELTS_UE_DUMMY_3</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Building_BuildingClassYieldChanges>
+	
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_BAGPIPES</Type>
+			<Description>TXT_KEY_PROMOTION_UE_BAGPIPES</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<NearbyEnemyCombatMod>-10</NearbyEnemyCombatMod>
+			<NearbyEnemyCombatRange>1</NearbyEnemyCombatRange>
+			<Help>TXT_KEY_PROMOTION_UE_BAGPIPES_HELP</Help>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_BAGPIPES</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_BAGPIPES</PromotionType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-400</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<UnitType>UNIT_DANISH_BERSERKER</UnitType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_CELTS_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Potential Child</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_1">
+			<Text>{3_PlayerName} blesses a child of great potents!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Tin Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_2">
+			<Text>{3_PlayerName} monopolises Tin, turning a healthy profit from trade.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Tribal Unification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_3">
+			<Text>{3_PlayerName} unites the clans under one Celtic banner.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Pipes of Glory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_4">
+			<Text>The sound of the Celtic Pipes has come to strike fear into even the most hardened soldiers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s College of Anatomy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_5">
+			<Text>The Celtic College of Anatomy becomes the World's leading medical institute after making several pioneering discoveries in human physiology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Romanticism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_CELTS_UE_CHOICE_6">
+			<Text>{3_PlayerName} funds a troop of Celtic artists to put on the greatest show on Earth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION">
+			<Text>The Stars Align</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP">
+			<Text>Road rise to meet you, Warrior Queen. The summer solstice is upon us again, and Jupiter is with Mars. As is customary, the elders of our land convene at your leisure.[NEWLINE][NEWLINE]The gods speak through you, Great Queen. Tell us what must be done.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_2">
+			<Text>Mines yield +1 [ICON_GOLD] Gold. Additionally, [ICON_INTERNATIONAL_TRADE] Trade Routes generate +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_3">
+			<Text>Receive three Berserkers in the [ICON_CAPITAL] Capital. Castles and Citadels produce +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_4">
+			<Text>Melee and Gun Units receive the Pipers Promotion, reducing nearby enemy [ICON_STRENGTH] Combat Strength by 10% and earn [ICON_CULTURE] on kills. All Cities generate +33% [ICON_GREAT_MUSICIAN] Great Musician Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_5">
+			<Text>Invest {2_InstantYield}. Oxford University produces +10 [ICON_FOOD] Food, [ICON_TOURISM] Tourism, and [ICON_RESEARCH] Science. Universites produce +2 [ICON_FOOD] Food, [ICON_TOURISM] Tourism, and [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_HELP_CHOICE_6">
+			<Text>Provide a source of state funding to artists, costing {2_InstantYield}. All [ICON_GREAT_MUSICIAN] Musicians, [ICON_GREAT_ARTIST] Artists and [ICON_GREAT_WRITER] Writers generate +3 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_1">
+			<Text>*A child, conceived under the September equinox in a great ritual, has been born*[NEWLINE]This child is destined for greatness, it is known.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The elders report that in the harbors, merchants come from far and wide to seek a soft metal abundant to Celtia*[NEWLINE]The Earth blesses only the faithful, our prosperity is a sign of the gods' pleasure!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_3">
+			<Text>*In light of the clear omens, the clans have put aside their differences and pledge their reserves to you, under one banner*[NEWLINE]The warrior tradition of the Celts will never die! Not while I rule! This I swear.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*A Great Musician brings his design for an upgraded set of pipes before the council*[NEWLINE]With these schematics, our troops will march under Celtic tune wherever they may be. Let the infamy of the approaching tune strike fear into our enemies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The newly founded College of Anatomy petitions the council with a macabre request*[NEWLINE]That our empty bodies be used as offerings is one of the central tenets of our faith. Healers will come from far and wide to learn our ways.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CELTS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The interest in our ways and histories has reached fever pitch*[NEWLINE]We shall send our Artists, Writers, and Musicians around the globe in a great festival of Celtic art. We shall fill every stadium. Not a man alive will die not knowing our story.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES">
+			<Text>Pipers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_BAGPIPES_HELP">
+			<Text>-10% [ICON_STRENGTH] Combat Strength to neighbouring enemies. Receive [ICON_CULTURE] Culture on kill. Granted only via Celtic's Events.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY">
+			<Text>Bagpipes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_HELP">
+			<Text>+33% [ICON_GREAT_MUSICIAN] Great Musician Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2">
+			<Text>The Tin Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_2_HELP">
+			<Text>+2 [ICON_GOLD] Gold from your Trade Routes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3">
+			<Text>Celtic Warrior Tradition</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CELTS_UE_DUMMY_3_HELP">
+			<Text>+2 [ICON_CULTURE] Culture to Castles.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,378 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_MOROCCO_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_MOROCCO</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementAnywhereRequired>IMPROVEMENT_ACADEMY</ImprovementAnywhereRequired>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARTISTS_GUILD</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventPromotion>PROMOTION_HOMELAND_GUARDIAN</EventPromotion>
+			<RequiresWar>true</RequiresWar>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<BasicNeedsMedianModifierGlobal>-10</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<RandomBarbarianSpawn>6</RandomBarbarianSpawn>
+			<FreeUnitsTechAppropriate>3</FreeUnitsTechAppropriate>
+			<GoldenAgeTurns>10</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_MOROCCO_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_MOROCCO_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-1000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_KASBAH</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MOROCCO_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Mysterious Traveler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_1">
+			<Text>{3_PlayerName} personally financially backs an unknown traveller, to great success!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Berber Inclusion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_2">
+			<Text>{3_PlayerName} negotiates the inclusion of isolated Berber tribes into his Empire!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Discovery in Worship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_3">
+			<Text>{3_PlayerName} adorns places of worship and learning with zellige tiling!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s The Black Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_4">
+			<Text>{3_PlayerName} forms a new military institution from naturalized slaves!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Revolution of the King and People!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_5">
+			<Text>{3_PlayerName} is forced to contend with a rebellion while already at war!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Tourism Industry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_MOROCCO_UE_CHOICE_6">
+			<Text>{3_PlayerName} implements a massive plan for the promotion of tourism!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION">
+			<Text>Men of Tamazgha</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP">
+			<Text>My King, a messenger has arrived with lengthy correspondence from one of your trusted friends, last seen adventuring in some far-flung corner of the Empire.[NEWLINE][NEWLINE]Most patient King, I am sure you are eager to receive this news.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_2">
+			<Text>Incorporate native peoples. Desert Tiles yield +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production. Mountains yield +3 [ICON_FOOD] and +2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_3">
+			<Text>Pay {2_InstantYield}. Gain +2 [ICON_CULTURE] Culture from Temples, Academies and Holy Sites.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_4">
+			<Text>Your Black Guard reduce [ICON_STRENGTH] Distress in Cities by 10%. Eligible Units receive the Homeland Guardian Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_5">
+			<Text>6 [ICON_WAR] Barbarians and 3 loyal militia engage near the [ICON_CAPITAL] Capital. Enter a [ICON_GOLDEN_AGE] Golden Age for 10 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_HELP_CHOICE_6">
+			<Text>Your Kasbah, Desert and Mountain Tiles yield +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_1">
+			<Text>*The letter explains how the bearer saved your friends life. He is a brilliant man who deserves the opportunities of your court.*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The messages relay how your friend, adventuring in the desert, convinced local tribespeople to make the journey to the Capital to meet you. They cannot be far behind the messenger.*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The envelope contains schematics for an expensive but beautiful tile kiln. These were thought lost to antiquity!*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Your friend is on the way to the Capital with a host of tribesmen from previously conquered lands, now pledged to protect the kingdom!*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The letter contains a warning. The armies of a cadet branch of House Saadi are being readied for a coup. They plan to detain you when you visit their seat as part of the campaign!*[NEWLINE]Those traitors! While we are in midst of a conflict that threatens our very destruction! When their treasonous plans are revealed, the people will surely flock to me in support.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MOROCCO_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The telegraph relays how your friend has become something of a celebrity abroad. A great many people have become interested in visiting Morocco.*[NEWLINE]No doubt the current exchange rate also has something to do with it...</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

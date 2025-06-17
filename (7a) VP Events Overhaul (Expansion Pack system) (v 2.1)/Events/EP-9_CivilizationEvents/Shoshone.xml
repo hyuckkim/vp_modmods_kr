@@ -1,0 +1,420 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_SHOSHONE</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ENGINEERING</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventPromotion>PROMOTION_UE_COUNTING_COUP</EventPromotion>
+			<RequiresWar>true</RequiresWar>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventPromotion>PROMOTION_SENTRY</EventPromotion>
+			<PrereqTech>TECH_RADIO</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_SHOSHONE_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_SOLAR_PLANT</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_SHOSHONE_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_COUNTING_COUP</Type>
+			<Description>TXT_KEY_PROMOTION_UE_COUNTING_COUP</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<Help>TXT_KEY_PROMOTION_UE_COUNTING_COUP_HELP</Help>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_COUNTING_COUP</PediaEntry>
+			<ExperiencePercent>33</ExperiencePercent>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_COUNTING_COUP</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_COUNTING_COUP</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_COUNTING_COUP</PromotionType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ENCAMPMENT_SHOSHONE</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_ENCAMPMENT_SHOSHONE</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_SHOSHONE_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Great Rescue</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_1">
+			<Text>{3_PlayerName} rescues a Great Person from certain death!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Buffalo Hunt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_2">
+			<Text>{3_PlayerName} strengths the bond between his people and the Buffalo.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Counting Coup</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_3">
+			<Text>{3_PlayerName} promotes the practice of Counting Coup!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Spiritual Renewal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_4">
+			<Text>{3_PlayerName} places increased importance on the ancient burial sites of his people.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Code Talkers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_5">
+			<Text>{3_PlayerName} creates a nigh uncrackable code for military use!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Solar Advancement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_SHOSHONE_UE_CHOICE_6">
+			<Text>{3_PlayerName} combats climate change by giving over state funding and research to solar technology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION">
+			<Text>Be Careful With Greatness</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP">
+			<Text>Strong and cunning Chief, the elders are assembled around the Great Fire. The ritual awaits once more.[NEWLINE]Spirits guide you, Pocatello.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_2">
+			<Text>Incorporation of [ICON_RES_BISON] Bison into our fundamental culture boosts their [ICON_CULTURE] Culture, [ICON_PEACE] Faith, [ICON_GOLD] Gold and [ICON_GOLDEN_AGE] Golden Age Points by +1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_3">
+			<Text>Melee and Gun Units gain the Counting Coup promotion: earning [ICON_CULTURE] Culture on kill, and increasing experience gains by 25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_4">
+			<Text>Invest {1_YieldCost} in our funerary rites, allowing Encampments to generate +1 [ICON_PEACE] Faith and +1 [ICON_GOLDEN_AGE] Golden Age Points. Holy Sites and Landmarks generate +5 [ICON_PEACE] Faith and +5 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_5">
+			<Text>Spend {1_YieldCost} to create an extremely resilient code that grants the Sentry Promotion to all eligible Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_HELP_CHOICE_6">
+			<Text>Utilise {1_YieldCost} to develop ultra-low cost solar panels, receiving a Solar Farm in all Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_1">
+			<Text>*A figure is seen standing in the smoke, reaching out toward you*[NEWLINE]The life of a Great Man is in danger! Prepare the horses, we go to find them, immediately.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Through the fire and flames, a small calf grows into a mighty beast, who is felled and then disperses into many objects around the camp*[NEWLINE]The spirits are clear, our symbiosis with the Bison must be strengthened still!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_3">
+			<Text>*A great black figure stoops and spins trying to catch a dancing ember before falling back into darkness*[NEWLINE]Our warriors have pleased our ancestors, let it be known that the practice of Counting Coup shall no longer be looked down upon by this council!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The figure of a crying woman is observed by a host of floating spectres*[NEWLINE]The spirits are restless; our offerings are not reaching them. We must reaffirm the holiness of our burial grounds.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Two smokey figures converse while a third shadow can be seen trying to listen in*[NEWLINE]In our time of need, we are guided by our ancestors! What we have never realized is that even the language they gave us has the power to defeat our enemies!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SHOSHONE_UE_DESCRIPTION_CHOICE_6">
+			<Text>*A dusky river evaporates into a barren field, then the burst of the fire leaves you blind for a few moments*[NEWLINE]The spirits cry out. This world is dying. We must act if we are to secure the future for our children.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_UE_COUNTING_COUP">
+			<Text>Counting Coup</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_COUNTING_COUP_HELP">
+			<Text>Receive [ICON_CULTURE] Culture from victories, and earn 33% more experience from battle. Granted only via Shoshone's Events.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

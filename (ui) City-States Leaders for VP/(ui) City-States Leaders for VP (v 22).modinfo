@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5594cb50-a30e-4abf-a249-69704fc95da9" version="22">
+  <Properties>
+    <Name>(ui) City-States Leaders for VP</Name>
+    <Teaser>Adds leader icons to city state screens, making it easier to remember who is who</Teaser>
+    <Description>Adds leader icons to city state screens, making it easier to remember who is who. This is an modification to "City-States Leaders" by mihaifx and "City-State Leaders II" by Nutty.</Description>
+    <Authors>Nutty, mihaifx, Gedemon, bc1, adan_eslavo</Authors>
+    <SpecialThanks>whoward69, JFD, Moriboe, Irkalla, bc1, janboruta, Leugi, sukritact, TPangolin, knightmare13, Tomatekh, LastSword, Gedemo, Urdnot_Scott, TarcisioCM, Firebug, Hypereon, pienappledan, Mosile, TranceBlossom, Danmacsch</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/city-states-leaders-for-vp.636763/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="Unique City-States" />
+  </References>
+  <Blocks>
+    <Mod id="c1871abe-b596-4028-a121-6568c154cb8d" minversion="0" maxversion="999" title="Sukritact's Suzerainity" />
+    <Mod id="828b5b4b-7c62-4afb-a43f-034b596ef5e4" minversion="0" maxversion="999" title="(6b) Community Balance Overhaul - Compatibility Files (No-EUI)" />
+  </Blocks>
+  <Files>
+    <File md5="8915B40469F90D7515C9AC897FEBDD90" import="0">Art/!Finished/balley_chashtal_leadericon.dds</File>
+    <File md5="4131F7D4C29C15526E136C7078B99F28" import="0">Art/!Finished/kagyrgyn_leadericon.dds</File>
+    <File md5="A5FCD9AC79E0014E530B5156D83AF3A8" import="0">Art/!Queue/ishiyama_leadericon.dds</File>
+    <File md5="443EA9454E09F293A1C5DE877C287986" import="0">Art/!Queue/shahrazur_leadericon.dds</File>
+    <File md5="2AB4767E3802D8A4AEA4EFFD0A25C29F" import="0">Art/!Queue/yaiuwa_leadericon.dds</File>
+    <File md5="CD36888BD68A0125A19F306AA19AF45A" import="0">Art/!Reserve/brunaboinne_leadericon.dds</File>
+    <File md5="74D6EE6CB9274ED7CF43F3BDA53538E5" import="0">Art/!Reserve/bukhara_leadericon.dds</File>
+    <File md5="D66836314C10637D05B32AFF4B489F55" import="0">Art/!Reserve/elea_leadericon.dds</File>
+    <File md5="F3F433692202C5A77655BB5555F2ADD9" import="0">Art/!Reserve/isca_leadericon.dds</File>
+    <File md5="BFEE935FD6DF7BF41C496A2B26AC5E86" import="0">Art/!Reserve/muarojambi_leadericon.dds</File>
+    <File md5="A9B646DE7E8F601111D5359F3EAAB05F" import="0">Art/!Reserve/pskov_leadericon.dds</File>
+    <File md5="8C42C3518FE50007C640A3CAA1B75703" import="0">Art/!Reserve/sanggyeong_leadericon.dds</File>
+    <File md5="D016BE98A96B27569BA0C6009CE0E219" import="0">Art/!Reserve/tholing_leadericon.dds</File>
+    <File md5="40984CB1B6952D1AA52F8262A2DAD276" import="0">Art/!Reserve/sahuyn_leadericon.dds</File>
+    <File md5="6B5863307CDE57DC5A3A7D8AEA88BD19" import="0">Art/!Reserve/agadez_leadericon.dds</File>
+    <File md5="DD8F59C16C4FFF12068383FADA4814CA" import="0">Art/!Reserve/ashdod_leadericon.dds</File>
+    <File md5="038ABE20C3F7C2F556D5855830F48015" import="0">Art/!Reserve/baguio_leadericon.dds</File>
+    <File md5="5E5950A748E04EC420DDA866C4FC092E" import="0">Art/!Reserve/ghazni_leadericon.dds</File>
+    <File md5="146A9689B9EED0BC2F88A0FB415B66F9" import="0">Art/!Reserve/gonur_leadericon.dds</File>
+    <File md5="58D42E9F4FEC4C102DBA976C7F9CB549" import="0">Art/!Reserve/halicarnassus_leadericon.dds</File>
+    <File md5="7B98C3AC449DBB5B14FE715E90E2F263" import="0">Art/!Reserve/ithaca_leadericon.dds</File>
+    <File md5="F02F4F271BDD7D6FA60A721815CD449C" import="0">Art/!Reserve/kanonwalohale_leadericon.dds</File>
+    <File md5="69BDD6795D729266BFB0A414B3F616F8" import="0">Art/!Reserve/kespukwitk_leadericon.dds</File>
+    <File md5="0A11257C00477B0042D920C77CB0E904" import="0">Art/!Reserve/luangprabang_leadericon.dds</File>
+    <File md5="233CE8D487F6A1B79149E38CA4B25A4B" import="0">Art/!Reserve/shuri_leadericon.dds</File>
+    <File md5="250CBFBAC8B3596CED5802C93300C5FB" import="0">Art/!Reserve/susa_leadericon.dds</File>
+    <File md5="BC717D7ECF5AEF7F91FA06109067E352" import="0">Art/!Reserve/tartessos_leadericon.dds</File>
+    <File md5="67E957108A8E9BDF6576A7D784488DA5" import="0">Art/!Reserve/tintagel_leadericon.dds</File>
+    <File md5="9DEF4D04B99D9754CB19B61723D104AB" import="0">Art/!Reserve/tintagel_leadericon2.dds</File>
+    <File md5="FDF2D71C09200D7384BCE2002D2EE902" import="0">Art/!Reserve/ujjain_leadericon.dds</File>
+    <File md5="757D15402B48C56A747511FEDA5E50C1" import="0">Art/!Reserve/yambio_leadericon.dds</File>
+    <File md5="1CEFA394F0E8E025E749AA0A8BD87E37" import="0">Art/!Unfinished/Cul/cararies_leadericon.dds</File>
+    <File md5="DEB2F50AA29D10360D897263C11F3522" import="0">Art/!Unfinished/Cul/kitcisipirinik_leadericon.dds</File>
+    <File md5="16B0CD87FECFF2E2B682E48FB7A4BE76" import="0">Art/!Unfinished/Cul/kokand_leadericon.dds</File>
+    <File md5="0F1A2D5773CF208C0FDB25E6E18FA9AA" import="0">Art/!Unfinished/Cul/mohenjodaro_leadericon.dds</File>
+    <File md5="284B7CDDE2490D5D33FE1E45483C013B" import="0">Art/!Unfinished/Cul/mutawaynatji_leadericon.dds</File>
+    <File md5="3EE87638142AA760B798D5E63F89C848" import="0">Art/!Unfinished/Cul/ngazargamu_leadericon.dds</File>
+    <File md5="43C35250123C3DB599D1D4D9FA7545EC" import="0">Art/!Unfinished/Cul/shamakhi_leadericon.dds</File>
+    <File md5="7A530C7E691E328BAD594AE5260A64EF" import="0">Art/!Unfinished/Cul/thababosiu_leadericon.dds</File>
+    <File md5="68CED42EA1696CAE6A872F037E8765BF" import="0">Art/!Unfinished/Cul/tula_leadericon.dds</File>
+    <File md5="68316ADD447B1D269EAABB96CDDAB8A9" import="0">Art/!Unfinished/Cul/vaduz_leadericon.dds</File>
+    <File md5="646FAB0D436BF649D75750162CD20233" import="0">Art/!Unfinished/Cul/victoria_leadericon.dds</File>
+    <File md5="428459B04C5B9C55FAE0381B9B8BBF3F" import="0">Art/!Unfinished/Mar/asmara_leadericon.dds</File>
+    <File md5="FB86117D9313346EE316D48BA709E4CA" import="0">Art/!Unfinished/Mar/caral_leadericon.dds</File>
+    <File md5="BEFCEB601E5B8D9B09813D724CF398E3" import="0">Art/!Unfinished/Mar/dakar_leadericon.dds</File>
+    <File md5="48811FDE8C91077E9AEA24BB4A17C599" import="0">Art/!Unfinished/Mar/kariatebike_leadericon.dds</File>
+    <File md5="AD530B3FF711BCF57142F829E78C878A" import="0">Art/!Unfinished/Mar/madurai_leadericon.dds</File>
+    <File md5="6B07C60573C09274862E1D85A6602D81" import="0">Art/!Unfinished/Mar/okak_leadericon.dds</File>
+    <File md5="0698E2CD791D514B94973EA4FFCBBD9E" import="0">Art/!Unfinished/Mar/reykjavik_leadericon.dds</File>
+    <File md5="C2F45C442132FB6988ADC736E4F170AE" import="0">Art/!Unfinished/Mar/skara_brae_leadericon.dds</File>
+    <File md5="70D2A93E12FED1B9D61F1681435E8682" import="0">Art/!Unfinished/Mer/abalessa_leadericon.dds</File>
+    <File md5="7CCD249E199108A1D9D3F6AC88E4F724" import="0">Art/!Unfinished/Mer/azeba_leadericon.dds</File>
+    <File md5="185426FC570F09D483B754876A252DD5" import="0">Art/!Unfinished/Mer/gaborone_leadericon.dds</File>
+    <File md5="D57F64AF19B322B361493552D7C1D24C" import="0">Art/!Unfinished/Mer/hanthawaddy_leadericon.dds</File>
+    <File md5="2F015C1AAE5ECDB814BB631B805106BF" import="0">Art/!Unfinished/Mer/luxembourg_leadericon.dds</File>
+    <File md5="B78B4D482CBE0653757D4FF6F2E991D2" import="0">Art/!Unfinished/Mer/nyeni_leadericon.dds</File>
+    <File md5="0BEE3B13968758F82B8C6DE4B0D68D7E" import="0">Art/!Unfinished/Mer/ouagadougou_leadericon.dds</File>
+    <File md5="109F3202ACE08AF9F8C8D787A1EB3731" import="0">Art/!Unfinished/Mer/pomberuk_leadericon.dds</File>
+    <File md5="A24420CF8FFF8BD8E1F6D27B79D3B703" import="0">Art/!Unfinished/Mer/ugarit_leadericon.dds</File>
+    <File md5="A775DE9CC9A8B7D7D3401ECCB85C33B5" import="0">Art/!Unfinished/Mil/diego_garcia_leadericon.dds</File>
+    <File md5="25C9EFF2C987B6A3ABD38C186D0460B7" import="0">Art/!Unfinished/Mil/gungnae_leadericon.dds</File>
+    <File md5="5A1784DC9742A22B4824AC082495D5E3" import="0">Art/!Unfinished/Mil/macaco_leadericon.dds</File>
+    <File md5="173B073B978E39CA3DB37016366B0CAD" import="0">Art/!Unfinished/Mil/manthimba_leadericon.dds</File>
+    <File md5="BC7AA068824E76BC8BB5B37C1BD0E685" import="0">Art/!Unfinished/Mil/oristano_leadericon.dds</File>
+    <File md5="69885F070310EEB99D491E0AFBBF80B0" import="0">Art/!Unfinished/Mil/pontotoc_leadericon.dds</File>
+    <File md5="03B9169C086F328321638EC4D34A34D3" import="0">Art/!Unfinished/Mil/purukcahu_leadericon.dds</File>
+    <File md5="0994CD5EBBC9B81F4CBCDC738C202023" import="0">Art/!Unfinished/Mil/scodra_leadericon.dds</File>
+    <File md5="41671CEF3B7467A9CEBDA1624BCA7A99" import="0">Art/!Unfinished/Mil/tittawan_leadericon.dds</File>
+    <File md5="4873A173EE9F83C3B61E3D23A22AB9E3" import="0">Art/!Unfinished/Mil/tilantongo_leadericon.dds</File>
+    <File md5="E697453CE45E046E8E5841F7E0FBA8D8" import="0">Art/!Unfinished/Mil/vaitape_leadericon.dds</File>
+    <File md5="FF8F6F04B87B08AF54571F45014611A8" import="0">Art/!Unfinished/Mil/valjala_leadericon.dds</File>
+    <File md5="A3FFE7DF5F56641CE901B0B06E33BB06" import="0">Art/!Unfinished/Mil/waitikubuli_leadericon.dds</File>
+    <File md5="27B28138AFFCB41B652216F576485570" import="0">Art/!Unfinished/Rel/avi_kwa_ame_leadericon.dds</File>
+    <File md5="16F2284CAEFAD403C84DC90CC9A82AAA" import="0">Art/!Unfinished/Rel/cahuachi_leadericon.dds</File>
+    <File md5="3CA62BB857D2EC1E15BEEE094F585282" import="0">Art/!Unfinished/Rel/cairo_leadericon.dds</File>
+    <File md5="5CCCECB0BF29E6762AB5CB5A6F0FD2D3" import="0">Art/!Unfinished/Rel/camutins_leadericon.dds</File>
+    <File md5="3248F7905A530F2E23CAF9FB362E3079" import="0">Art/!Unfinished/Rel/dongola_leadericon.dds</File>
+    <File md5="06BD681612E3AA8C112F79930FC1CDC4" import="0">Art/!Unfinished/Rel/gondar_leadericon.dds</File>
+    <File md5="EB77228ED30F11256938E8F207A83B8A" import="0">Art/!Unfinished/Rel/grozny_leadericon.dds</File>
+    <File md5="CC0FF742AAADF2515151E4C1E30B0E4B" import="0">Art/!Unfinished/Rel/matonjeni_leadericon.dds</File>
+    <File md5="63CEA3593FE7C1657FE41B723995A2E4" import="0">Art/!Unfinished/Rel/sambaa_ke_leadericon.dds</File>
+    <File md5="54805970B6FA577F849AB746FB46A038" import="0">Art/!Unfinished/Rel/tura_leadericon.dds</File>
+    <File md5="BA30353E3D8BCDBFDCA0FB5D0CF18BFA" import="0">Art/!Unfinished/Rel/yirrkala_leadericon.dds</File>
+    <File md5="8B87F7605AAB1BE43634026C17D6FBA8" import="1">Art/Backgrounds/CityStatePopupTop100.dds</File>
+    <File md5="1AE6B5AD3182C58B7F72960EF642B0C9" import="1">Art/Backgrounds/CityStatePopupTop200.dds</File>
+    <File md5="9B4290FFF27C279453423ED0DFFB1452" import="1">Art/Backgrounds/CityStatePopupTop300.dds</File>
+    <File md5="1F3A67E34DAB3C9BE314A597CA613406" import="1">Art/Backgrounds/CityStatePopupTop400.dds</File>
+    <File md5="52841CCBF68C0B9BFD964F32D7BD730B" import="1">Art/Backgrounds/CityStatePopupTop500.dds</File>
+    <File md5="C17E7D676C8FBADB5135A067B94857A7" import="1">Art/Backgrounds/CityStatePopupTopCSLBG.dds</File>
+    <File md5="5A64CCE012B63EC8074751E62C9B9B33" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWBG.dds</File>
+    <File md5="20CE1BC8558FC08823D48BCE6A119E05" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWCultured.dds</File>
+    <File md5="59992CDD7B888DF18BE087C6FBED0B8A" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWMaritime.dds</File>
+    <File md5="054D48649DE4FF44800E7C5B03CE5DFC" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWMercantile.dds</File>
+    <File md5="3B71A4F6F58A2ECDCEBB72F67E1D7F34" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWMilitaristic.dds</File>
+    <File md5="C4FB507B4915400314FA8C73047F740B" import="1">Art/Backgrounds/CityStatePopupTopCSLBNWReligious.dds</File>
+    <File md5="7C7B89660F68052CCC5F98AACBE6764E" import="1">Art/Base/almaty_leadericon.dds</File>
+    <File md5="B14C9C9BE39C764725338DE8EC5A4489" import="1">Art/Base/almaty_leadericon2.dds</File>
+    <File md5="DBEA0F6200410062FD291BE7FDB32E34" import="1">Art/Base/antananarivo_leadericon.dds</File>
+    <File md5="DDD023974833AEAF65F4F24266D9B903" import="1">Art/Base/antananarivo_leadericon2.dds</File>
+    <File md5="BF5E7D4C090F68654ED268161D1346D2" import="1">Art/Base/antananarivo_leadericon3.dds</File>
+    <File md5="43470EBB451D1A128FFC521D8BFBCC3F" import="1">Art/Base/antwerp_leadericon.dds</File>
+    <File md5="407F6177B2AE55A4BC02E102469EC65B" import="1">Art/Base/belgrade_leadericon.dds</File>
+    <File md5="096D10015D79CF174536BE5E9A821F23" import="1">Art/Base/belgrade_leadericon2.dds</File>
+    <File md5="17B4A5830A122006D6A788E9FEA6EF1B" import="1">Art/Base/bogota_leadericon.dds</File>
+    <File md5="83D5B82F91A7D1D5214762181DEBD648" import="1">Art/Base/bratislava_leadericon.dds</File>
+    <File md5="17C71D098167F00EBE71403306BA68F4" import="1">Art/Base/brussels_leadericon.dds</File>
+    <File md5="04EE21DC4D7C2B560D28F11F0C6ED03F" import="1">Art/Base/brussels_leadericon2.dds</File>
+    <File md5="88402AB78A165EE4B81E816F7D0E8231" import="1">Art/Base/bucharest_leadericon.dds</File>
+    <File md5="334C4B8FEA3822610BC0C750087007BE" import="1">Art/Base/budapest_leadericon.dds</File>
+    <File md5="E3ECA1D584386F3589449CC84CC97613" import="1">Art/Base/buenos_aires_leadericon.dds</File>
+    <File md5="1944F1661C456CE2BD9C759E92F46446" import="1">Art/Base/buenos_aires_leadericon2.dds</File>
+    <File md5="C5E990D1A28F20DCB26DEA7E8CAA6169" import="1">Art/Base/byblos_leadericon.dds</File>
+    <File md5="F3221067B2E19A5A9BF2317E75F6FFBC" import="1">Art/Base/cahokia_leadericon2.dds</File>
+    <File md5="7CD07970953CA7BE9FB2EBB52B340933" import="1">Art/Base/cahokia_leadericon.dds</File>
+    <File md5="E09A569577BA1F743DA3BB70134DE0CA" import="1">Art/Base/cape_town_leadericon.dds</File>
+    <File md5="ABA18161E84069DDA5A28EE890BBD72D" import="1">Art/Base/colombo_leadericon.dds</File>
+    <File md5="D8E0CE45F6829B3CE27613B1F57EE402" import="1">Art/Base/dublin_leadericon.dds</File>
+    <File md5="ED88A8F87611B01DAE8C0763A6FD14E4" import="1">Art/Base/edinburgh_leadericon.dds</File>
+    <File md5="7AED2E9287AA8897CB4FD9EFF8CF17DF" import="1">Art/Base/florence_leadericon.dds</File>
+    <File md5="3E215CF4993B27FD9BAAC02D82257DA4" import="1">Art/Base/geneva_leadericon.dds</File>
+    <File md5="7E5242D7E42888CA53D84D9CD62C6885" import="1">Art/Base/genoa_leadericon.dds</File>
+    <File md5="A02CB185D8D12CBDCC682FBA5594C774" import="1">Art/Base/hanoi_leadericon.dds</File>
+    <File md5="F357DDD66F7139689C54C2D393AE8458" import="1">Art/Base/hanoi_leadericon2.dds</File>
+    <File md5="8CD8B3B70864E90CCDBF96A2E05E1408" import="1">Art/Base/hanoi_leadericon3.dds</File>
+    <File md5="336CE626A9704D5EF542BD81BFF77348" import="1">Art/Base/helsinki_leadericon.dds</File>
+    <File md5="B55DFFB1F2B18CECAD8E3C326DB30F03" import="1">Art/Base/hong_kong_leadericon.dds</File>
+    <File md5="E175E8FCDBE118D9B22B2668EFBC8839" import="1">Art/Base/ife_leadericon.dds</File>
+    <File md5="D786D70EC69A3E8791BD769A109F9AA7" import="1">Art/Base/jerusalem_leadericon.dds</File>
+    <File md5="488D0B1FD03557A4CB1FCE42FF45F6FD" import="1">Art/Base/kabul_leadericon.dds</File>
+    <File md5="5C6E6D96EB5BCAF9847DF457118776BF" import="1">Art/Base/kabul_leadericon2.dds</File>
+    <File md5="50FC3E2513C5DD71323AAC1875B31E6B" import="1">Art/Base/kabul_leadericon3.dds</File>
+    <File md5="322FA7FF896B27F29BEC32DE116ABCFD" import="1">Art/Base/kathmandu_leadericon.dds</File>
+    <File md5="EE5EFC4453DFA8D135CB97205D37CA6B" import="1">Art/Base/kathmandu_leadericon2.dds</File>
+    <File md5="9016401C69CD851FEB2975CDE13ADE01" import="1">Art/Base/kiev_leadericon.dds</File>
+    <File md5="76CEA906D0B1FDF2C37F36C52AFC8515" import="1">Art/Base/kuala_lumpur_leadericon.dds</File>
+    <File md5="94A0B71FF8C3CEEA7B89EBF9A0E3CAAF" import="1">Art/Base/kyzyl_leadericon.dds</File>
+    <File md5="065636D57BB5B5732CC6258FC97C4DA2" import="1">Art/Base/la_venta_leadericon.dds</File>
+    <File md5="DBAD19907073A80C9AE1599365BEFF5C" import="1">Art/Base/la_venta_leadericon2.dds</File>
+    <File md5="80AC46BB095CB5429EE8C4B96C8067FC" import="1">Art/Base/la_venta_leadericon3.dds</File>
+    <File md5="1F1EBA4CA150A039FBDE9455F34C451F" import="1">Art/Base/lhasa_leadericon.dds</File>
+    <File md5="44B989046BF302C44B0D0C71BE6EACF3" import="1">Art/Base/lisbon_leadericon2.dds</File>
+    <File md5="200C42D14242EB40A9630A4E5435A0A1" import="1">Art/Base/malacca_leadericon.dds</File>
+    <File md5="7A9BD9BEFBD94715695B2E3D724A89BA" import="1">Art/Base/malacca_leadericon2.dds</File>
+    <File md5="EBFF68D8C9F47F8849C05FBFF5C6D52C" import="1">Art/Base/malacca_leadericon3.dds</File>
+    <File md5="859BDE85299CA91CE7C41B6B4134573E" import="1">Art/Base/manila_leadericon.dds</File>
+    <File md5="6B2E1D314012B2EAA17385C53BF168BD" import="1">Art/Base/mbanza_kongo_leadericon.dds</File>
+    <File md5="D2DE540AA6C5C4474FD45AA290FEC1F3" import="1">Art/Base/melbourne_leadericon.dds</File>
+    <File md5="5D58919CF6D50A8C01913132C2045D63" import="1">Art/Base/melbourne_leadericon2.dds</File>
+    <File md5="C5E2E41E42859DBFF72CD465D496EF9A" import="1">Art/Base/milan_leadericon.dds</File>
+    <File md5="D5B2B6BF639BBC1561130E691F0DA072" import="1">Art/Base/mogadishu_leadericon.dds</File>
+    <File md5="689B2BD7062E98781094AE5BEFB739FD" import="1">Art/Base/mogadishu_leadericon2.dds</File>
+    <File md5="6022C47C04F634F1978D8678C4D0C030" import="1">Art/Base/mogadishu_leadericon3.dds</File>
+    <File md5="00C4F4A05ED02219F7672514C011857C" import="1">Art/Base/mombasa_leadericon.dds</File>
+    <File md5="B7689D585794E30CACF6D263432F38A9" import="1">Art/Base/mombasa_leadericon2.dds</File>
+    <File md5="73C81C161234D0336A555AB86FEABFAF" import="1">Art/Base/monaco_leadericon.dds</File>
+    <File md5="20C6A0611F189D64A2ECB013D03F6F02" import="1">Art/Base/ormus_leadericon.dds</File>
+    <File md5="A2096854CBEBC50AC0F17E4D38C367A2" import="1">Art/Base/panama_city_leadericon.dds</File>
+    <File md5="A7EF3F933662055186C1760AC94266C1" import="1">Art/Base/panama_city_leadericon2.dds</File>
+    <File md5="8C7335AF90F5C2BA7CA91F9E8A88A617" import="1">Art/Base/prague_leadericon.dds</File>
+    <File md5="5F9BBA2B74E4B1972B772E2E032EE950" import="1">Art/Base/quebec_city_leadericon.dds</File>
+    <File md5="E177DCB2D839EC04E8D1B6A2071C8560" import="1">Art/Base/ragusa_leadericon.dds</File>
+    <File md5="A63F9C157E59094863B8B988203750F4" import="1">Art/Base/ragusa_leadericon2.dds</File>
+    <File md5="92EAFB562826EC713858F93AF3977926" import="1">Art/Base/riga_leadericon.dds</File>
+    <File md5="F4C49C07539AF3CD0202BC1BA515F399" import="1">Art/Base/samarkand_leadericon.dds</File>
+    <File md5="311864A56C1027BC87819AFB2743F632" import="1">Art/Base/samarkand_leadericon2.dds</File>
+    <File md5="074D9109AD5BD65FC299A2C98106A78F" import="1">Art/Base/sidon_leadericon.dds</File>
+    <File md5="7436563D87F03EC20D9232B5E7B5CED8" import="1">Art/Base/singapore_leadericon.dds</File>
+    <File md5="9789A1C784BF80FFA4D60050FF99D4FA" import="1">Art/Base/singapore_leadericon2.dds</File>
+    <File md5="C43AA4D71BFE1FD2FF0BD3AF2F5A3BA2" import="1">Art/Base/sofia_leadericon.dds</File>
+    <File md5="A95F8595475E91A4F2006D761588A530" import="1">Art/Base/sofia_leadericon2.dds</File>
+    <File md5="8B646B97188E06A24503D388B403F23B" import="1">Art/Base/sydney_leadericon.dds</File>
+    <File md5="8F3F7B945A326A1B252A22AC7E4BC42B" import="1">Art/Base/sydney_leadericon2.dds</File>
+    <File md5="58C5B6F02C1659A3A20AB0668693E4E3" import="1">Art/Base/tyre_leadericon.dds</File>
+    <File md5="8F1AE2EB3670EE4D5558937FF703498C" import="1">Art/Base/ur_leadericon.dds</File>
+    <File md5="5DA2BCD1346595F1BA87CBEC2172D61D" import="1">Art/Base/valletta_leadericon.dds</File>
+    <File md5="DDB8B25B341BC48C7EF484EBC25B47EE" import="1">Art/Base/vancouver_leadericon2.dds</File>
+    <File md5="5E59F2EE7E421BCBE70B2E0DAD2778E5" import="1">Art/Base/vancouver_leadericon.dds</File>
+    <File md5="88F2D0A4D4892032C1298C526CA7EE4D" import="1">Art/Base/vatican_city_leadericon.dds</File>
+    <File md5="BC6E7F889AF91845DD549A7204DDF6F6" import="1">Art/Base/vatican_city_leadericon2.dds</File>
+    <File md5="B9515C1FBE2D09FA711E4F6C468032E5" import="1">Art/Base/vilnius_leadericon.dds</File>
+    <File md5="42F0FC6C986E51F7241C7A5876BF8A57" import="1">Art/Base/vilnius_leadericon2.dds</File>
+    <File md5="1C8C79A5B131B43F6067803862D1D549" import="1">Art/Base/wellington_leadericon.dds</File>
+    <File md5="20428B8BB1610C1BE1E655A6D6546A12" import="1">Art/Base/wellington_leadericon2.dds</File>
+    <File md5="7DD9FDB0C1C6F393B3EBB1AC55DB34D5" import="1">Art/Base/wellington_leadericon3.dds</File>
+    <File md5="3958635F79EB8A397F5DD02D5600BDC5" import="1">Art/Base/wittenberg_leadericon.dds</File>
+    <File md5="EE0865256C93B2932050F976F1B1C648" import="1">Art/Base/yerevan_leadericon.dds</File>
+    <File md5="D102BF3B91E769F19F01099A80E9CDAC" import="1">Art/Base/yerevan_leadericon2.dds</File>
+    <File md5="AB02901E068071A939802BD7E3545573" import="1">Art/Base/zanzibar_leadericon.dds</File>
+    <File md5="86C2F72191178F5C85AC052B9648E62D" import="1">Art/Base/zurich_leadericon.dds</File>
+    <File md5="4564249E85B5A17D48233D71DC88ECB8" import="1">Art/Base/zurich_leadericon2.dds</File>
+    <File md5="5619B186C37C3069B20869A5F9067FBA" import="1">Art/UCS/adeje_leadericon.dds</File>
+    <File md5="C7147047715BCFE36A64F6F0623FDD18" import="1">Art/UCS/al_tarabin_leadericon.dds</File>
+    <File md5="A17FF28466EEDD9FC7BB0E80E4364EAB" import="1">Art/UCS/ambracia_leadericon.dds</File>
+    <File md5="129AD2591BB4DEF8489BA4A133069F32" import="1">Art/UCS/anangula_leadericon.dds</File>
+    <File md5="D22308EF89D0F6C6C6FE94751D069F7A" import="1">Art/UCS/andorra_leadericon.dds</File>
+    <File md5="89D98DB6D3118D3DDB1AC4BDA28B9C53" import="1">Art/UCS/andorra_leadericon2.dds</File>
+    <File md5="4503B1757354D6CE7BFF547B5162B3CC" import="1">Art/UCS/armagh_leadericon.dds</File>
+    <File md5="70D19503B0109637A27C2D86C568EA7E" import="1">Art/UCS/ayutthaya_leadericon.dds</File>
+    <File md5="75F1C6153FFE62E02D70CA21FCD13DB0" import="1">Art/UCS/bagan_leadericon.dds</File>
+    <File md5="957DE5BAE05D6CB7E5A31010D6669232" import="1">Art/UCS/balkh_leadericon.dds</File>
+    <File md5="84FA6A18A86FF1BBF1B3F82E483D9537" import="1">Art/UCS/bedulu_leadericon.dds</File>
+    <File md5="3003DDFF0CDC7240E09464DB10089A68" import="1">Art/UCS/dakkar_leadericon.dds</File>
+    <File md5="18A40E36094128F85D34F3C2A768EC5D" import="1">Art/UCS/dano_leadericon.dds</File>
+    <File md5="F19E010D90C1A4DA25FCE0EA0A1AF91E" import="1">Art/UCS/hanuabada_leadericon.dds</File>
+    <File md5="D9BA9BDDED842A154077F0C85655E3F3" import="1">Art/UCS/honiara_leadericon.dds</File>
+    <File md5="19239012067A1415997CDF0302F9E584" import="1">Art/UCS/irunea_leadericon.dds</File>
+    <File md5="63CFFD1BBB22D34D293A1B74A2E5FB17" import="1">Art/UCS/irunea_leadericon2.dds</File>
+    <File md5="EC1D11D7341DEBD54B60866F5C96B9E6" import="1">Art/UCS/jetarkte_leadericon.dds</File>
+    <File md5="2345C15B702175DFB35F17122478A7F3" import="1">Art/UCS/juyubit_leadericon.dds</File>
+    <File md5="07DEAF09DA845CDAF3E70750B90B955D" import="1">Art/UCS/karasjohka_leadericon.dds</File>
+    <File md5="FAAD65E7A017F917E1D8962D30F5EAD9" import="1">Art/UCS/karyes_leadericon.dds</File>
+    <File md5="4EB29425B6C185E7985AFA50E6C71144" import="1">Art/UCS/katende_leadericon.dds</File>
+    <File md5="27FB821A522DAB035E005EB98485BA91" import="1">Art/UCS/lahore_leadericon.dds</File>
+    <File md5="DD05AAFC14BDFA73416C80BB090F6E3F" import="1">Art/UCS/longyan_leadericon.dds</File>
+    <File md5="E6EE9F33AAD5ED789583E8D993AB323C" import="1">Art/UCS/longyan_leadericon2.dds</File>
+    <File md5="5621DB807B55BA9F6631102518C278BE" import="1">Art/UCS/leluh_leadericon.dds</File>
+    <File md5="2BC6913CB90E4B07006EE3E1816A7A07" import="1">Art/UCS/mbabane_leadericon.dds</File>
+    <File md5="2D8376F574FDDBFE6CE1ECE27CA71DD6" import="1">Art/UCS/mendyarrup_leadericon.dds</File>
+    <File md5="A7F8EB53080B6F954B0DD98094700765" import="1">Art/UCS/nyaryana_marq_leadericon.dds</File>
+    <File md5="28453F5CF6E62F7C0027B9A6B328587D" import="1">Art/UCS/ouidah_leadericon.dds</File>
+    <File md5="95265A709B97CC2C2C6013B2BC9AF238" import="1">Art/UCS/palmyra_leadericon.dds</File>
+    <File md5="9ED681921973C2BB93390CCDF336A932" import="1">Art/UCS/pelym_leadericon.dds</File>
+    <File md5="2DA240BA1533209B91EF9AA7AA1A2AC6" import="1">Art/UCS/pokrovka_leadericon.dds</File>
+    <File md5="F74236A4A90334F5D3062397560057DA" import="1">Art/UCS/saddarvazeh_leadericon.dds</File>
+    <File md5="A12AA39E812C0575D5BC45C0DEB0AC6E" import="1">Art/UCS/sanaa_leadericon.dds</File>
+    <File md5="A9B2B17538351AC0726FDF3E21D04C52" import="1">Art/UCS/sanaa_leadericon2.dds</File>
+    <File md5="827CB410D4A1835AAD4ECCABD83A605D" import="1">Art/UCS/sarnath_leadericon.dds</File>
+    <File md5="8A12BCF1F0A0F605896DEC015A5CD0A3" import="1">Art/UCS/sarnath_leadericon2.dds</File>
+    <File md5="679A9B7ACC82726EB439B4CB3930E0A8" import="1">Art/UCS/sgang_leadericon.dds</File>
+    <File md5="86A82E72793E1ED55F0F92CC0BCAB16E" import="1">Art/UCS/sgang_leadericon2.dds</File>
+    <File md5="8687741468AB7CA3776F4F213E14E064" import="1">Art/UCS/suceava_leadericon.dds</File>
+    <File md5="4501520AEFEC5AC7C30B550D98A374CC" import="1">Art/UCS/surrey_leadericon.dds</File>
+    <File md5="1134F429188085B31874E23B055AEDE7" import="1">Art/UCS/canossa_leadericon.dds</File>
+    <File md5="6C96C1CF2161AEFC6F9C8586427534EC" import="1">Art/UCS/chevak_leadericon.dds</File>
+    <File md5="C5FEFB1F5FD14AE4CF7A58CCACA51977" import="1">Art/UCS/clermont_leadericon.dds</File>
+    <File md5="2054ADF96884C563A95FFB7B2768DC83" import="1">Art/UCS/clermont_leadericon2.dds</File>
+    <File md5="C28EA99B9844466EB2C02EBD022D1315" import="1">Art/UCS/dali_leadericon.dds</File>
+    <File md5="43AACF9F690CDE927186C24DFC888D6C" import="1">Art/UCS/djibouti_leadericon.dds</File>
+    <File md5="865532D49C697E92DB4A54E8F0333057" import="1">Art/UCS/dodoma_leadericon.dds</File>
+    <File md5="109D4F4282E8744B365409A245F14BD8" import="1">Art/UCS/douala_leadericon.dds</File>
+    <File md5="DEA5E8F54CCFF1C550FCB14CC3818E05" import="1">Art/UCS/faya_leadericon.dds</File>
+    <File md5="F7A01C9C00040782FB82585A0B41B1AB" import="1">Art/UCS/faya_leadericon2.dds</File>
+    <File md5="12E2C74E0CF98872A6BFEE8A4ECA220D" import="1">Art/UCS/granada_leadericon.dds</File>
+    <File md5="01C5496C880A040D352C8CECBC3308E0" import="1">Art/UCS/granada_leadericon2.dds</File>
+    <File md5="61C5D751EEB3C0CEB64451F7636FAC83" import="1">Art/UCS/gwynedd_leadericon.dds</File>
+    <File md5="FBA0DEF8CF9D86E5C77891D24A35C485" import="1">Art/UCS/honduras_leadericon.dds</File>
+    <File md5="532FDAB0DAE94034EA8E220664EA9A78" import="1">Art/UCS/iskanwaya_leadericon.dds</File>
+    <File md5="A4EE4581AAFB17C5FCCFCA65509CEE1F" import="1">Art/UCS/kigali_leadericon.dds</File>
+    <File md5="E054FB0E800C790ABB01D7A95D7B9931" import="1">Art/UCS/lacedaemon_leadericon.dds</File>
+    <File md5="604459668592897F861E95312E2DCEC5" import="1">Art/UCS/leluh_leadericon2.dds</File>
+    <File md5="0999E2471B57DED9AA107EE759F89A48" import="1">Art/UCS/levuka_leadericon.dds</File>
+    <File md5="0BB728531A8E6E7057009BE15F5D7B8B" import="1">Art/UCS/managua_leadericon.dds</File>
+    <File md5="C89AB5B6FF0115F3EFD51D0B9C6BF985" import="1">Art/UCS/managua_leadericon2.dds</File>
+    <File md5="BA537E04FECBA309BA9677D8BB5997E6" import="1">Art/UCS/muisca_leadericon.dds</File>
+    <File md5="2418F286C2DE0412078EEA210F0D0929" import="1">Art/UCS/multan_leadericon.dds</File>
+    <File md5="03CC9A8AED393FCC9AA7453B91803314" import="1">Art/UCS/muscat_leadericon.dds</File>
+    <File md5="21F0001D3E221CF747E46508172B9B67" import="1">Art/UCS/mutitjulu_leadericon.dds</File>
+    <File md5="2BB69535049D8010C817A703B7E68E3A" import="1">Art/UCS/oc_eo_leadericon.dds</File>
+    <File md5="9D3F4CCFEC52D3F3AB9761F786EE9A4C" import="1">Art/UCS/odenso_leadericon.dds</File>
+    <File md5="FE622A0B2BA55F953284CCE2FF2C1BD9" import="1">Art/UCS/parihaka_leadericon.dds</File>
+    <File md5="7C3C0509620C74BA12809ECAD606A9E1" import="1">Art/UCS/phanoteus_leadericon.dds</File>
+    <File md5="8CBCA8607517C0446075DE487A5C9373" import="1">Art/UCS/phanoteus_leadericon2.dds</File>
+    <File md5="93B48D3719BEB30C0AC3D3ACC860C7BC" import="1">Art/UCS/quelimane_leadericon.dds</File>
+    <File md5="F45560E36106E57B56AF3D7C462AC2CC" import="1">Art/UCS/rishikesh_leadericon.dds</File>
+    <File md5="2C105635F429CA9CD6D5BA09085BFDAC" import="1">Art/UCS/santo_domingo_leadericon.dds</File>
+    <File md5="2414A6F7FF1A17C0D1ED1A8C50A50ED7" import="1">Art/UCS/sierra_leone_leadericon.dds</File>
+    <File md5="496E0ADAC827F0A286EFDB27268DB74E" import="1">Art/UCS/surrey_leadericon2.dds</File>
+    <File md5="F0694FB8B88C51283FD5069DC8A5B21F" import="1">Art/UCS/taipei_leadericon.dds</File>
+    <File md5="83D76DB602716239C0EF36CACE34CA52" import="1">Art/UCS/taipei_leadericon2.dds</File>
+    <File md5="1E1AF3F28C18BA90D3C280536CE11FA0" import="1">Art/UCS/tbilisi_leadericon.dds</File>
+    <File md5="B45CE1EDC4DCD9DC1CEAC66B3194A6C2" import="1">Art/UCS/tbilisi_leadericon2.dds</File>
+    <File md5="8E7E9A889512C797E03C8F3C68BC35CE" import="1">Art/UCS/thimphu_leadericon.dds</File>
+    <File md5="D31933C478FB0AE5E23B6826F18B1CE5" import="1">Art/UCS/tiwanaku_leadericon.dds</File>
+    <File md5="148068B8CD0A6A6869EA38063B5EA48A" import="1">Art/UCS/tunis_leadericon.dds</File>
+    <File md5="A6CC9E3B3CD1975BA1804714418D7645" import="1">Art/UCS/wootei_niicie_leadericon.dds</File>
+    <File md5="03EE99D83E6AC8592AA9129AD6CD58C8" import="1">Art/UCS/yangcheng_leadericon.dds</File>
+    <File md5="C5202F63F8AEAB699D07E72EED775114" import="1">Assets/CityStateDiploPopup.lua</File>
+    <File md5="73FF1611B5A5CB7792A11D0F74788A98" import="1">Assets/CityStateDiploPopup.xml</File>
+    <File md5="D32D6F0E1A63B783340DB467E743BA18" import="0">Changelog.txt</File>
+    <File md5="57858FBE0766F4EF28153BE4EA2C7397" import="0">Compatibility/CSL-UCS.sql</File>
+    <File md5="D0A77597E8D23E87643FE4DD7498B6AF" import="0">Credits.txt</File>
+    <File md5="03167BAFFF46FDE2F739DF427F3959C6" import="0">Texts/MinorCivNewTexts.xml</File>
+    <File md5="7B84BAE8236BFA261D4E6FFE4513BBE1" import="0">Texts/MinorCivLeaders.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/MinorCivLeaders.sql</UpdateDatabase>
+      <UpdateDatabase>Texts/MinorCivNewTexts.xml</UpdateDatabase>
+      <UpdateDatabase>Compatibility/CSL-UCS.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
