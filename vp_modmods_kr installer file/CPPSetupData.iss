@@ -71,8 +71,8 @@ Source: "..\(overhaul) Enhanced Air Warfare 4VP (v 1.9)\*"; DestDir: "{app}\MODS
 Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eaw
 Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
 Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
-Source: "..\(overhaul) Even More Resources for Vox Populi UCS (v 13)\*"; DestDir: "{app}\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
-Source: "..\(overhaul) Even More Resources for Vox Populi UCS (v 13) INT\*"; DestDir: "{app}\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 13) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr 
+Source: "..\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
+Source: "..\Even More Resources for Vox Populi UCS (v 14) INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr 
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp  
