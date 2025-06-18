@@ -17,10 +17,45 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	--------------------------------------------
 	-- Units
 	--------------------------------------------
+	-- baochuan
+	UPDATE Units SET
+	Class = 'UNITCLASS_EE_GALLEON',
+	Combat = 23,
+	RangedCombat = 31,
+	Range = 1,
+	Class = 'UNITCLASS_EE_GALLEON',
+	Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+	FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+	ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_CRUISER')
+	WHERE Type = 'UNIT_CHINA_XIAFAN_GUANJUN' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+	SELECT 'UNIT_CHINA_XIAFAN_GUANJUN', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING' 
+	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+	SELECT 'UNIT_CHINA_XIAFAN_GUANJUN', 'PROMOTION_NAVAL_INACCURACY' 
+	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GALLEON' WHERE UnitType = 'UNIT_CHINA_XIAFAN_GUANJUN' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Unit_ClassUpgrades SET 
+	UnitClassType = 'UNITCLASS_TORPEDO' WHERE UnitType = 'UNIT_CHINA_XIAFAN_GUANJUN'
+	AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1)
+	AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
+
+	UPDATE Language_en_US SET 
+	Text = 'Hulking Enlightenment Era Naval Ranged Unit. Only China may build it. Starts with the [COLOR_POSITIVE_TEXT]Hull III[ENDCOLOR] promotion.[NEWLINE][NEWLINE]Generates [ICON_INFLUENCE] Influence every turn when stationed in a [ICON_CITY_STATE] City-State''s borders.'
+	WHERE Tag = 'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Language_en_US SET 
+	Text = 'The Baochuan is a Chinese unique unit. It is much sturdier than the Galleon it replaces. You can use your Baochuan to passively bring City-States under your sway, or take advantage of its sturdiness to dominate coastal empires.'
+	WHERE Tag = 'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- yellow brow
 	INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
-	VALUES ('UNIT_SHOSHONE_YELLOW_BROW', 'PROMOTION_FORMATION_2');
+	SELECT 'UNIT_SHOSHONE_YELLOW_BROW', 'PROMOTION_FORMATION_2' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- turtle ship
 	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
@@ -40,16 +75,27 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_CRUISER' WHERE UnitType = 'UNIT_SPAIN_ARMADA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	UPDATE Units SET 
-	ObsoleteTech = 'TECH_RADIO',
-	PrereqTech = 'TECH_NAVIGATION',
-	Cost = 460,
-	FaithCost = 450,
-	Combat = 23,
-        RangedCombat = 31,
+	Class = 'UNITCLASS_EE_GALLEON',
+	ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_CRUISER'),
+	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+	Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_GALLEON') + 50,
+	FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_GALLEON') + 50,
+	Combat = 25,
+        RangedCombat = 32,
 	Range = 1,
         CombatClass = 'UNITCOMBAT_NAVALRANGED',
         DefaultUnitAI = 'UNITAI_ASSAULT_SEA'
 	WHERE Type = 'UNIT_SPAIN_ARMADA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	DELETE FROM Unit_FreePromotions WHERE PromotionType = 'PROMOTION_BOARDING_PARTY_1' AND UnitType = 'UNIT_SPAIN_ARMADA';
+
+	UPDATE Language_en_US
+	SET Text = 'A Slow, but incredibly dangerous ship. Only the Spanish may build it.[NEWLINE][NEWLINE]More expensive than the Galleon it replaces. Gains additional Strength when at full HP and generates [ICON_GREAT_ADMIRAL] Great Admiral Points when it defeats a Unit.'
+	WHERE Tag = 'TXT_KEY_UNIT_SPAIN_ARMADA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Language_en_US
+	SET Text = 'The Armada is a very powerful ship. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Much more imposing when at full health, make sure to make contact with the enemy before they can place ranged attacks, or you will lose a great deal of power in your initial combat.'
+	WHERE Tag = 'TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- Cacadores
 	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_SKIRMISHER' WHERE UnitType = 'UNIT_PORTUGUESE_CACADORES' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
@@ -91,6 +137,9 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	UPDATE Language_en_US
 		SET Text = 'Unique Enlightenment Era Siege Unit. Only the Russians may build it. This Unit has better mobility in enemy territory, can move after attacking, and is more effective against Unmounted Melee units.'
 		WHERE Tag = 'TXT_KEY_UNIT_RUSSIA_LICORNE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	
+	-- goedendag obsolete, not sure why the trigger doesnt do it
+	UPDATE Units SET ObsoleteTech = 'TECH_EE_FLINTLOCK' WHERE Type = 'UNIT_NETHERLANDS_GOEDENDAG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	--------------------------------------------
 	-- Buildings
@@ -371,7 +420,7 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 
 	UPDATE Language_en_US
 	SET Text = Replace(Text, '+15% [ICON_PRODUCTION] Production when constructing Buildings. Grocers, Granaries, and Nearby [ICON_RES_WHEAT] Wheat, [ICON_RES_MAIZE] Maize, and [ICON_RES_RICE] Rice Resources produce +1 [ICON_FOOD] Food and [ICON_CULTURE] Culture. Nearby Marshes and Lakes produce +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness for every 9 Policies you have adopted. Gain 10 [ICON_CULTURE] Culture in this City whenever you gift a military unit to a City-State, Scaling with Era.', 
-	'When a Unit [COLOR_POSITIVE_TEXT]created by this City[ENDCOLOR] [ICON_RAZING] Pillages a tile, gain 15 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism, scaling with Era. +15% [ICON_PRODUCTION] Production when training [COLOR_POSITIVE_TEXT]Recon Units[ENDCOLOR], and they receive +30 XP.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness for every 9 Policies you have adopted. Gain 10 [ICON_CULTURE] Culture in this City whenever you gift a military Unit to a City-State, scaling with Era.[NEWLINE][NEWLINE][ICON_RES_FISH] Fish: +1 [ICON_FOOD] Food and [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat, [ICON_RES_MAIZE] Maize, [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture.')
+	'When a Unit [COLOR_POSITIVE_TEXT]created by this City[ENDCOLOR] [ICON_RAZING] Pillages a tile, gain 15 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism, scaling with Era. +15% [ICON_PRODUCTION] Production when training [COLOR_POSITIVE_TEXT]Recon Units[ENDCOLOR], and they receive +30 XP.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness for every 9 Policies you have adopted. Gain 10 [ICON_CULTURE] Culture in this City whenever you gift a military Unit to a City-State, scaling with Era.[NEWLINE][NEWLINE]Nearby [ICON_RES_FISH] Fish: +1 [ICON_FOOD] Food and [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat, [ICON_RES_MAIZE] Maize, [ICON_RES_RICE] Rice: +1 [ICON_FOOD] Food, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture.')
 	WHERE Tag = 'TXT_KEY_BUILDING_GERMANY_BEER_HALL_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	UPDATE Language_en_US

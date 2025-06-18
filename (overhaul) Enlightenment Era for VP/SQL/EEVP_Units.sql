@@ -17,7 +17,7 @@ INSERT INTO Units (Type, Class, PrereqTech, Combat, Moves, RequiresFaithPurchase
 ('UNIT_EE_DRAGOON',	'UNITCLASS_EE_DRAGOON',     'TECH_EE_MANUFACTURING',34, 5, 1, 'UNITCOMBAT_ARCHER',      'DOMAIN_LAND','UNITAI_RANGED',      30, 10,9,'UNITCLASS_CAVALRY'),
 ('UNIT_EE_UHLAN',       'UNITCLASS_EE_UHLAN',       'TECH_RIFLING',       48, 4, 1, 'UNITCOMBAT_MOUNTED',     'DOMAIN_LAND','UNITAI_FAST_ATTACK', 30, 3, 3,'UNITCLASS_WWI_TANK'),
 ('UNIT_EE_CARRACK',     'UNITCLASS_EE_CARRACK',     'TECH_EE_REFRACTION',   32, 4, 0, 'UNITCOMBAT_NAVALMELEE',  'DOMAIN_SEA', 'UNITAI_ATTACK_SEA',  50, 9,19,'UNITCLASS_PRIVATEER'),
-('UNIT_EE_GALLEON',     'UNITCLASS_EE_GALLEON',     'TECH_NAVIGATION',      20, 4, 0, 'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA', 'UNITAI_ASSAULT_SEA', 50, 5, 5,'UNITCLASS_CRUISER'),
+('UNIT_EE_GALLEON',     'UNITCLASS_EE_GALLEON',     'TECH_EE_EXPLORATION',      20, 4, 0, 'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA', 'UNITAI_ASSAULT_SEA', 50, 5, 5,'UNITCLASS_CRUISER'),
 ('UNIT_EE_2HANDER',     'UNITCLASS_EE_2HANDER',     'TECH_CHEMISTRY',       28,  2, 1, 'UNITCOMBAT_MELEE',    'DOMAIN_LAND', 'UNITAI_ATTACK',  25,  33, 11, 'UNITCLASS_EE_LINE_INFANTRY'),
 ('UNIT_EE_LINE_INFANTRY', 'UNITCLASS_EE_LINE_INFANTRY', 'TECH_EE_FLINTLOCK',    31, 2, 1, 'UNITCOMBAT_GUN',         'DOMAIN_LAND','UNITAI_DEFENSE',     30, 1, 1,'UNITCLASS_RIFLEMAN');
 
@@ -593,16 +593,22 @@ UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass F
 UPDATE Units SET 
 PrereqTech = 'TECH_EE_REFRACTION',	
 ObsoleteTech = 'TECH_INDUSTRIALIZATION',
-Class = 'UNITCLASS_EE_CARRACK'
+Class = 'UNITCLASS_EE_CARRACK',
+Combat = 35,
+GoodyHutUpgradeUnitClass = 'UNITCLASS_PRIVATEER'
 WHERE Type = 'UNIT_DUTCH_SEA_BEGGAR';
 
 UPDATE Civilization_UnitClassOverrides SET 
 UnitClassType = 'UNITCLASS_EE_CARRACK' 
 WHERE UnitType IN ('UNIT_DUTCH_SEA_BEGGAR');
 
+UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_DUTCH_SEA_BEGGAR';
+
 -------------------------------------------------------
 -- Carrack
 -------------------------------------------------------
+
+UPDATE Units SET PrereqTech = 'TECH_EE_WARSHIPS' WHERE Class = 'UNITCLASS_PRIVATEER';
 
 UPDATE Units SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_PRIVATEER') WHERE Type = 'UNIT_EE_CARRACK';
 
@@ -633,7 +639,6 @@ BEGIN
 END;
 
 -- Caravel UUs now obsolete on Corvette and upgrade to Carrack
-UPDATE Units SET PrereqTech = 'TECH_EE_WARSHIPS' WHERE Class = 'UNITCLASS_PRIVATEER';
 
 UPDATE Units
 SET Combat = Combat - 2, Cost = Cost - 10,
@@ -658,10 +663,28 @@ END;
 -------------------------------------------------------
 
 -- Frigate changes
-UPDATE Units
-SET PrereqTech = 'TECH_EE_WARSHIPS'
+UPDATE Units SET PrereqTech = 'TECH_EE_WARSHIPS'
 WHERE Class IN ('UNITCLASS_FRIGATE', 'UNITCLASS_PRIVATEER');
 
+UPDATE Units SET 
+Combat = 28,
+RangedCombat = 36
+WHERE Class = 'UNITCLASS_FRIGATE';
+
+UPDATE Units SET 
+Combat = Combat+1,
+RangedCombat = RangedCombat+2
+WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
+
+INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
+SELECT Type, 'RESOURCE_IRON', 1
+FROM Units WHERE Class = 'UNITCLASS_FRIGATE';
+
+UPDATE Unit_BuildingClassPurchaseRequireds SET
+BuildingClassType = 'BUILDINGCLASS_EE_DRYDOCK'
+WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_FRIGATE');
+
+-- galleon
 UPDATE Units SET 
 RangedCombat = 29, Range = 1,
 ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_CRUISER')
@@ -669,8 +692,16 @@ WHERE Type = 'UNIT_EE_GALLEON';
 
 -- compatibility with torpedo boat
 UPDATE Units
+SET PrereqTech = 'TECH_STEAM_POWER'
+WHERE Type = 'UNIT_TORPEDO' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
+
+UPDATE Units
 SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_TORPEDO')
 WHERE Type = 'UNIT_EE_GALLEON' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
+
+UPDATE Unit_ClassUpgrades SET 
+UnitClassType = 'UNITCLASS_TORPEDO' WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_EE_GALLEON')
+AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
@@ -920,7 +951,6 @@ INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor) VALUES
 ('UNIT_EE_2HANDER', 'FLAVOR_DEFENSE', 12),
 ('UNIT_EE_LINE_INFANTRY','FLAVOR_OFFENSE', 14),
 ('UNIT_EE_LINE_INFANTRY','FLAVOR_DEFENSE', 14);
-
 
 INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) VALUES
 ('UNIT_EE_2HANDER',		'BUILDINGCLASS_ARMORY'),

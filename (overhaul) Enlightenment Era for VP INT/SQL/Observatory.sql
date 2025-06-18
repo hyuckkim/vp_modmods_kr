@@ -7,7 +7,7 @@ INSERT INTO Building_FeatureYieldChanges
 VALUES
 	('BUILDING_OBSERVATORY', 'FEATURE_ATOLL', 'YIELD_SCIENCE', 2);
 
-INSERT INTO Building_BuildingClassYieldChanges
+INSERT INTO Building_BuildingClassLocalYieldChanges
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 VALUES
 	('BUILDING_OBSERVATORY', 'BUILDINGCLASS_HARBOR', 'YIELD_SCIENCE', 1),

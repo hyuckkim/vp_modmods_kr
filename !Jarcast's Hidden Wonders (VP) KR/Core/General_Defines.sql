@@ -6,8 +6,8 @@ UPDATE Defines SET Value = 30 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_PREVIOUS_E
 UPDATE Defines SET Value = 20 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_SECOND_PREVIOUS_ERA_COST_MODIFIER'; --original: 10
 UPDATE Defines SET Value = 10 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_EARLIER_ERA_COST_MODIFIER'; --original: 5
 
-UPDATE Language_en_US
-SET Text = 'Additional [ICON_PRODUCTION] Production Cost due to owned World Wonders: [COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR].[NEWLINE][ICON_PRODUCTION] Production Cost increase factors:[NEWLINE][ICON_BULLET] Wonders from the same Era: [COLOR_NEGATIVE_TEXT]40%.[ENDCOLOR][NEWLINE][ICON_BULLET] Wonders from the previous Era: [COLOR_NEGATIVE_TEXT]35%[ENDCOLOR].[NEWLINE][ICON_BULLET] Wonders from two Eras earlier: [COLOR_NEGATIVE_TEXT]30%.[ENDCOLOR][NEWLINE][ICON_BULLET] Wonders from three Eras earlier or more do not add any penalties.'
+UPDATE Language_ko_KR
+SET Text = '소유한 세계 불가사의로 인해 요구되는 추가 [ICON_PRODUCTION] 생산력: [COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR][NEWLINE][ICON_PRODUCTION] 생산력 요구 증가 요인:[NEWLINE][ICON_BULLET] 같은 시대의 불가사의: [COLOR_NEGATIVE_TEXT]40%[ENDCOLOR][NEWLINE][ICON_BULLET] 이전 시대의 불가사의: [COLOR_NEGATIVE_TEXT]35%[ENDCOLOR][NEWLINE][ICON_BULLET] 두 시대 이전의 불가사의: [COLOR_NEGATIVE_TEXT]30%[ENDCOLOR][NEWLINE][ICON_BULLET] 3개 시대 또는 그 이상 과거 시대의 불가사의는 어떠한 페널티도 받지 않습니다.'
 WHERE Tag = 'TXT_KEY_WONDER_COST_INCREASE_METRIC';
 --======================================================================================================================================--
 -- Table with new Wonder Types
@@ -24,6 +24,7 @@ INSERT INTO JHWfVPConfig
 	--------------CLASSICAL------------------------------------------------------------
 	('AKRAGATOS'),			-- Temple of Heracles Akragatos
 	('PISCINA_MIR'),		-- Piscina Mirabilis
+	('BANAUE'),				-- Banaue Rice Terraces
 	--------------MEDIEVAL-------------------------------------------------------------
 	('KYZ_KALA'),			-- Kyz Kala 
 	('ST_CATHERINE'),		-- Saint Catherine's Monastery
@@ -36,9 +37,10 @@ INSERT INTO JHWfVPConfig
 	('HORYUJI'),			-- Horyu-ji
 	('TLACHIHUALTEPETL'),	-- Tlachihualtepetl 
 	('KELDUR_HALL'),		-- Keldur Hall
+	('SHAOLIN'),			-- Shaolin Temple
 	--------------RENAISSANCE----------------------------------------------------------
 	('PADUA_GARDEN'),		-- Botanical Garden of Padua
-	('CHAANGDEOKGUNG'),		-- Changdeokgung
+	('CHANGDEOKGUNG'),		-- Changdeokgung
 	('HARMANDIR_SAHIB'),	-- Harmandir Sahib
 	('LARABANGA'),			-- Larabanga Mosque
 	('DAMNOEN_SADUAK'),		-- Damnoen Saduak Kesgarh Qila
@@ -108,7 +110,7 @@ UPDATE Buildings SET PortraitIndex = 9  WHERE Type='BUILDING_HOSPITAL_STJOHN';
 UPDATE Buildings SET PortraitIndex = 10 WHERE Type='BUILDING_SONGYUE_PAGODA';
 UPDATE Buildings SET PortraitIndex = 11 WHERE Type='BUILDING_TLACHIHUALTEPETL';
 UPDATE Buildings SET PortraitIndex = 12 WHERE Type='BUILDING_PADUA_GARDEN';
-UPDATE Buildings SET PortraitIndex = 13 WHERE Type='BUILDING_CHAANGDEOKGUNG';
+UPDATE Buildings SET PortraitIndex = 13 WHERE Type='BUILDING_CHANGDEOKGUNG';
 UPDATE Buildings SET PortraitIndex = 14 WHERE Type='BUILDING_HARMANDIR_SAHIB';
 UPDATE Buildings SET PortraitIndex = 15 WHERE Type='BUILDING_LARABANGA';
 UPDATE Buildings SET PortraitIndex = 16 WHERE Type='BUILDING_CAPITOLINE';
@@ -117,7 +119,6 @@ UPDATE Buildings SET PortraitIndex = 18 WHERE Type='BUILDING_KESHGARH_QILA';
 UPDATE Buildings SET PortraitIndex = 19 WHERE Type='BUILDING_VICTORIA_TERMINUS';
 UPDATE Buildings SET PortraitIndex = 20 WHERE Type='BUILDING_LAFERRIERE';
 UPDATE Buildings SET PortraitIndex = 21 WHERE Type='BUILDING_TAKTSANG';
---UPDATE Buildings SET PortraitIndex = 9  WHERE Type='BUILDING_KASANGLAYAN';
 UPDATE Buildings SET PortraitIndex = 24 WHERE Type='BUILDING_HORYUJI';
 UPDATE Buildings SET PortraitIndex = 25 WHERE Type='BUILDING_TE_TII_MARAE';
 UPDATE Buildings SET PortraitIndex = 28 WHERE Type='BUILDING_GOLDEN_GATE';
@@ -125,5 +126,7 @@ UPDATE Buildings SET PortraitIndex = 30 WHERE Type='BUILDING_CHANGI_AIRPORT';
 UPDATE Buildings SET PortraitIndex = 31 WHERE Type='BUILDING_WATSON_RC';
 UPDATE Buildings SET PortraitIndex = 32 WHERE Type='BUILDING_KELDUR_HALL';
 UPDATE Buildings SET PortraitIndex = 33 WHERE Type='BUILDING_KASUBI_TOMBS';
+UPDATE Buildings SET PortraitIndex = 34 WHERE Type='BUILDING_BANAUE';
+UPDATE Buildings SET PortraitIndex = 35 WHERE Type='BUILDING_SHAOLIN';
 --======================================================================================================================================--
 --======================================================================================================================================--

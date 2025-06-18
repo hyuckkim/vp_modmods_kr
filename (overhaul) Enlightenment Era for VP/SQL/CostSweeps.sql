@@ -15,9 +15,9 @@
 --UPDATE Defines SET Value = 1.416 WHERE Name = 'POLICY_COST_EXTRA_VALUE';
 
 -- try to find a middle way with improved optimization algorithm
-UPDATE Defines SET Value = 60.0 WHERE Name = 'BASE_POLICY_COST';
-UPDATE Defines SET Value = 2.4 WHERE Name = 'POLICY_COST_EXPONENT';
-UPDATE Defines SET Value = 3.34 WHERE Name = 'POLICY_COST_INCREASE_TO_BE_EXPONENTED';
+UPDATE Defines SET Value = 65.0 WHERE Name = 'BASE_POLICY_COST';
+UPDATE Defines SET Value = 2.46 WHERE Name = 'POLICY_COST_EXPONENT';
+UPDATE Defines SET Value = 3.107 WHERE Name = 'POLICY_COST_INCREASE_TO_BE_EXPONENTED';
 UPDATE Defines SET Value = 0.0 WHERE Name = 'POLICY_COST_EXTRA_VALUE';
 
 ------------------------------------------------------------------------------------------------------------------------	
@@ -146,17 +146,17 @@ VALUES
 	(4, 200, 1),
 	(5, 300, 2),  --medieval
 	(6, 350, 2),
-	(7, 500, 2),  --renai
+	(7, 500, 3),  --renai
 	(8, 600, 3),
-	(9, 800, 3),  --enlight
+	(9, 800, 4),  --enlight
 	(10, 925, 4),
-	(11, 1150, 4),  --indust
-	(12, 1300, 5),
-	(13, 1750, 6),  --modern
-	(14, 2000, 7),
-	(15, 2250, 8),  --atomic
-	(16, 2450, 9),
-	(17, 2650, 10),  --info
+	(11, 1150, 5),  --indust
+	(12, 1300, 6),
+	(13, 1750, 7),  --modern
+	(14, 2000, 8),
+	(15, 2250, 9),  --atomic
+	(16, 2450, 10),
+	(17, 2650, 11),  --info
 	(18, 2850, 11),
 	(19, 3100, 12);
 
@@ -271,7 +271,7 @@ VALUES
 	(3, 130),
 	(4, 275),
 	(5, 500),
-	(6, 700),
+	(6, 825),  -- increased based on vern's data
 	(7, 1750),
 	(8, 2400),
 	(9, 3600),
@@ -404,7 +404,7 @@ VALUES
 	-- Naval Ranged
 	('UNITCLASS_LIBURNA', 100),
 	('UNITCLASS_GALLEASS', 175),
-	('UNITCLASS_EE_GALLEON', 450),
+	('UNITCLASS_EE_GALLEON', 400),
 	('UNITCLASS_FRIGATE', 500),
 	('UNITCLASS_CRUISER', 900),
 	('UNITCLASS_DREADNOUGHT', 1300),
@@ -439,7 +439,7 @@ DROP TABLE UnitClass_Costs;
 UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_EE_CARRACK';
 UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_DUTCH_SEA_BEGGAR';
 UPDATE Units SET Cost = 350, FaithCost = 400 WHERE Type = 'UNIT_PORTUGUESE_NAU'; 
-UPDATE Units SET Cost = 450, FaithCost = 450 WHERE Type = 'UNIT_EE_GALLEON'; 
+UPDATE Units SET Cost = 400, FaithCost = 400 WHERE Type = 'UNIT_EE_GALLEON'; 
 -- Enlightenment 
 UPDATE Units SET Cost = 475, FaithCost = 500 WHERE Type = 'UNIT_PRIVATEER'; -- (350p)
 UPDATE Units SET Cost = 500, FaithCost = 550 WHERE Type = 'UNIT_FRIGATE'; -- (475p)
