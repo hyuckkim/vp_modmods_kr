@@ -72,7 +72,17 @@ Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(ov
 Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
 Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
 Source: "..\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
-Source: "..\Even More Resources for Vox Populi UCS (v 14) INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr 
+Source: "..\Even More Resources for Vox Populi UCS (v 14) INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
+Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
+Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
+Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
+Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
+Source: "..\(text) Promotion Overhaul for VP\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
+Source: "..\(text) Promotion Overhaul for VP INT\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po 
+Source: "..\Vox Populi's Bare Necessities (v 12)\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
+Source: "..\Vox Populi's Bare Necessities INT\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
+Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
+Source: "..\World Congress Reformation INT\*"; DestDir: "{app}\MODS\World Congress Reformation INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr 
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp  
@@ -101,8 +111,12 @@ Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VP34UCEX 
 Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ee"; Description: "VP 계몽 시대 (Enlightenment Era for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "emr"; Description: "VP + UCS 한층 더 많은 자원 (Even More Resources for Vox Populi UCS)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "po"; Description: "VP 승급 오버홀 (Promotion Overhaul for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "bn"; Description: "VP 아주 적은 필수품 (Vox Populi's Bare Necessities)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-
 
 [Types]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";
@@ -155,6 +169,14 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 13)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 13) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) More Wonders for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) More Wonders for VP INT (AI)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Unique City States for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Unique City States for VP INT (AI)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Vox Populi's Bare Necessities (v 12)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Vox Populi's Bare Necessities INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World Congress Reformation (v 12)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World Congress Reformation INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi (v 3)"
 
 [Code]
