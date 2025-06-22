@@ -1,5 +1,5 @@
 --============================================--
--- ICONS ATLASES
+-- 아이콘 아틀라스
 --============================================--
 INSERT INTO IconTextureAtlases 
 			(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
@@ -12,34 +12,31 @@ INSERT INTO IconFontTextures
 			(IconFontTexture, 				IconFontTextureFile)
 VALUES		('MORE_WONDERS_FONT_ATLAS', 	'More_Wonders_Resources_Font_22');
 --============================================--
--- TEXTS
+-- 텍스트
 --============================================--			
-INSERT INTO Language_en_US 
+INSERT INTO Language_ko_KR 
 			(Tag,											Text) 
-VALUES		('TXT_KEY_RESOURCE_TERN',						'Tern Egg'),
-			('TXT_KEY_RESOURCE_TERN_TEXT',					'TODO'),
-			('TXT_KEY_RESOURCE_TERN_MONOPOLY',				'Granted by [ICON_WONDER] Ahu Tongariki. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +5% [ICON_PEACE] on Empire.'),
-			--('TXT_KEY_RESOURCE_TERN_MONOPOLY_FULL',		'1 copy is granted by Ahu Tongariki [ICON_WONDER] World Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +5% [ICON_PEACE] Faith in all owned Cities.'),
-			('TXT_KEY_RESOURCE_SYLVITE',					'Sylvite'),
-			('TXT_KEY_RESOURCE_SYLVITE_TEXT',				'TODO'),
-			('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY',			'Granted by Dallol. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] [COLOR_WATER_TEXT]Explosive Mixture[ENDCOLOR]/[COLOR_YIELD_GOLD]Siege[ENDCOLOR].'),
-			--('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY_FULL',	'1 copy is granted by Dallol Natural Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] Promotion [COLOR_POSITIVE_TEXT]Explosive Mixture[ENDCOLOR] for owned [COLOR:255:230:85:255]Siege[ENDCOLOR] units (tied to dummy building).'),
-			('TXT_KEY_RESOURCE_TROPICAL_FISH',				'Tropical Fish'),
-			('TXT_KEY_RESOURCE_TROPICAL_FISH_TEXT',			'TODO'),
-			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'Can be spawned by Great Barrier Reef and Galapagos Natural Wonders.'),
-			('TXT_KEY_RESOURCE_TORTOISE',					'Giant Tortoise'),
-			('TXT_KEY_RESOURCE_TORTOISE_TEXT',				'TODO'),
-			('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY',			'Spawned by Galapagos. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] Length.');
-			--('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY_FULL',	'Can be spawned by Galapagos Natural Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] Golden Age Length.');
+VALUES		('TXT_KEY_RESOURCE_TERN',						'제비갈매기 알'),
+			('TXT_KEY_RESOURCE_TERN_TEXT',					'작성 필요'),
+			('TXT_KEY_RESOURCE_TERN_MONOPOLY',				'[ICON_WONDER] 아후 통가리키가 부여합니다. [COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 제국에 [ICON_PEACE] +5%.'),
+			('TXT_KEY_RESOURCE_SYLVITE',					'실바이트'),
+			('TXT_KEY_RESOURCE_SYLVITE_TEXT',				'작성 필요'),
+			('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY',			'달롤이 부여합니다. [COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] [COLOR_WATER_TEXT]폭발성 혼합물[ENDCOLOR]/[COLOR_YIELD_GOLD]공성[ENDCOLOR].'),
+			('TXT_KEY_RESOURCE_TROPICAL_FISH',				'열대어'),
+			('TXT_KEY_RESOURCE_TROPICAL_FISH_TEXT',			'작성 필요'),
+			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'그레이트배리어리프와 갈라파고스 자연 불가사의에 의해 생성될 수 있습니다.'),
+			('TXT_KEY_RESOURCE_TORTOISE',					'거대 거북'),
+			('TXT_KEY_RESOURCE_TORTOISE_TEXT',				'작성 필요'),
+			('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY',			'갈라파고스에 의해 생성됩니다. [COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] 황금기 길이.');
 
-UPDATE Language_en_US SET Text = Text||'[NEWLINE][NEWLINE]Nearby [ICON_RES_TORTOISE]: +2 [ICON_RESEARCH] Science.' WHERE Tag = 'TXT_KEY_BUILDING_LABORATORY_HELP';
+UPDATE Language_ko_KR SET Text = Text||'[NEWLINE][NEWLINE]인접한 [ICON_RES_TORTOISE]: [ICON_RESEARCH] 과학 +2.' WHERE Tag = 'TXT_KEY_BUILDING_LABORATORY_HELP';
 --=====================================================--
--- RESURCES
+-- 자원
 ---------------------------------------------------------
--- Tern Egg - added by Ahu Tongariki WW
--- Sylvite - added by Dallol NW
--- Tropical Fish - added by Great Barrier Reef and Galapagos NWs
--- Giant Tortoise - added by Galapagos NW
+-- 제비갈매기 알 - 아후 통가리키 세계 불가사의에 의해 추가됨
+-- 실바이트 - 달롤 자연 불가사의에 의해 추가됨
+-- 열대어 - 그레이트배리어리프와 갈라파고스 자연 불가사의에 의해 추가됨
+-- 거대 거북 - 갈라파고스 자연 불가사의에 의해 추가됨
 --=====================================================--
 INSERT INTO Resources 
 			(Type,						TechReveal,			TechCityTrade, 		Description,						Civilopedia, 							Help,										ResourceClassType, 			IsMonopoly, 	ArtDefineTag, 						CivilizationType,		OnlyMinorCivs,  Happiness,  ResourceUsage,	SeaResource,	AnimalResource,	PlantResource,	RockResource,	IconString, 				PortraitIndex, 	IconAtlas)
@@ -93,10 +90,10 @@ VALUES 		('ART_DEF_RESOURCE_TERN', 			'Resource', 	'sv_Tern_Egg.dds'),
 
 INSERT INTO ArtDefine_LandmarkTypes
 			(Type, 								LandmarkType, 	FriendlyName)
-VALUES 		('ART_DEF_RESOURCE_TERN', 			'Resource', 	'Tern Egg'),
-			('ART_DEF_RESOURCE_SYLVITE', 		'Resource', 	'Sylvite'),
-			('ART_DEF_RESOURCE_TROPICAL_FISH', 	'Resource', 	'Tropical Fish'),
-			('ART_DEF_RESOURCE_TORTOISE', 		'Resource', 	'Giant Tortoise');
+VALUES 		('ART_DEF_RESOURCE_TERN', 			'Resource', 	'제비갈매기 알'),
+			('ART_DEF_RESOURCE_SYLVITE', 		'Resource', 	'실바이트'),
+			('ART_DEF_RESOURCE_TROPICAL_FISH', 	'Resource', 	'열대어'),
+			('ART_DEF_RESOURCE_TORTOISE', 		'Resource', 	'거대 거북');
 
 INSERT INTO ArtDefine_Landmarks
 			(Era,	State,	Scale,	ImprovementType,	LayoutHandler,	ResourceType,						Model,					TerrainContour,	Tech) 
@@ -124,4 +121,3 @@ VALUES		('ICON_RES_TERN', 			'MORE_WONDERS_FONT_ATLAS',	1),
 			('ICON_RES_SYLVITE', 		'MORE_WONDERS_FONT_ATLAS',	2),
 			('ICON_RES_TROPICAL_FISH', 	'MORE_WONDERS_FONT_ATLAS',	3),
 			('ICON_RES_TORTOISE', 		'MORE_WONDERS_FONT_ATLAS',	4);
---------------------------------------------------------------

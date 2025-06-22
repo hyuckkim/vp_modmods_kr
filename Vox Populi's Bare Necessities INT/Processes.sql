@@ -22,15 +22,15 @@ VALUES ('REALLYBASED_ATLAS', 64, 'ReallyBased64.dds', 1, 3);
 INSERT OR REPLACE INTO LocalizedText
 	(Language, Tag, Text)
 VALUES
-	--('en_US', 'TXT_KEY_PROCESS_TOURISM', 'Propaganda'),
-	--('en_US', 'TXT_KEY_PROCESS_TOURISM_HELP', '[COLOR_POSITIVE_TEXT]Propaganda[ENDCOLOR] converts 15% of the [ICON_PRODUCTION] Production of this City into [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]Requires the Socialist Realism Tenet to be unlocked.'),
-	--('en_US', 'TXT_KEY_PROCESS_TOURISM_STRATEGY', '{TXT_KEY_PROCESS_TOURISM_HELP}[NEWLINE][NEWLINE]Investing production in propaganda is a good way to boost your City''s influence in the world, which can be useful if you are currently in a revolutionary wave, or if you want to force other Civilizations to experience one.'),
-	('en_US', 'TXT_KEY_PROCESS_GOLDEN_AGE', 'Prosperity'),
-	('en_US', 'TXT_KEY_PROCESS_GOLDEN_AGE_HELP', '[COLOR_POSITIVE_TEXT]Prosperity[ENDCOLOR] converts 25% of [ICON_PRODUCTION] Production of this City into [ICON_GOLDEN_AGE] Golden Age Points and 5% of [ICON_PRODUCTION] Production into [ICON_GOLD] Gold, [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, [ICON_FOOD] Food, and [ICON_PEACE] Faith. It also reduces [ICON_GOLD] Gold Needs by 5%. [ICON_RESEARCH] Science Needs, [ICON_CULTURE] Culture Need, [ICON_FOOD]/[ICON_PRODUCTION] Basic Needs, and [ICON_RELIGION] Religious Unrest by 5%.'),
-	('en_US', 'TXT_KEY_PROCESS_GOLDEN_AGE_STRATEGY', 'Investing production in prosperity is a good way to boost your nation''s production, science, culture, and wealth. Which is useful for forming an utopian society for the people to live in.'),
-	('en_US', 'TXT_KEY_PROCESS_FAITH', 'Prayer'),
-	('en_US', 'TXT_KEY_PROCESS_FAITH_HELP', '[COLOR_POSITIVE_TEXT]Prayer[ENDCOLOR] converts 25% of [ICON_PRODUCTION] Production of this City into [ICON_PEACE] Faith, and reduces [ICON_RELIGION] Religious Unrest by 25%.'),
-	('en_US', 'TXT_KEY_PROCESS_FAITH_STRATEGY', 'Investing production in prayer is a good way to boost your City''s faith output, which can be useful if you are currently in need of missionaires and inquisitors or if your cities need to birth Great People! Also reduce Religious Unrest.');
+	--('ko_KR', 'TXT_KEY_PROCESS_TOURISM', '선전'),
+	--('ko_KR', 'TXT_KEY_PROCESS_TOURISM_HELP', '[COLOR_POSITIVE_TEXT]Propaganda[ENDCOLOR] converts 15% of the [ICON_PRODUCTION] Production of this City into [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]Requires the Socialist Realism Tenet to be unlocked.'),
+	--('ko_KR', 'TXT_KEY_PROCESS_TOURISM_STRATEGY', '{TXT_KEY_PROCESS_TOURISM_HELP}[NEWLINE][NEWLINE]Investing production in propaganda is a good way to boost your City''s influence in the world, which can be useful if you are currently in a revolutionary wave, or if you want to force other Civilizations to experience one.'),
+	('ko_KR', 'TXT_KEY_PROCESS_GOLDEN_AGE', '번성'),
+	('ko_KR', 'TXT_KEY_PROCESS_GOLDEN_AGE_HELP', '[COLOR_POSITIVE_TEXT]Prosperity[ENDCOLOR] converts 25% of [ICON_PRODUCTION] Production of this City into [ICON_GOLDEN_AGE] Golden Age Points and 5% of [ICON_PRODUCTION] Production into [ICON_GOLD] Gold, [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, [ICON_FOOD] Food, and [ICON_PEACE] Faith. It also reduces [ICON_GOLD] Gold Needs by 5%. [ICON_RESEARCH] Science Needs, [ICON_CULTURE] Culture Need, [ICON_FOOD]/[ICON_PRODUCTION] Basic Needs, and [ICON_RELIGION] Religious Unrest by 5%.'),
+	('ko_KR', 'TXT_KEY_PROCESS_GOLDEN_AGE_STRATEGY', 'Investing production in prosperity is a good way to boost your nation''s production, science, culture, and wealth. Which is useful for forming an utopian society for the people to live in.'),
+	('ko_KR', 'TXT_KEY_PROCESS_FAITH', '기도'),
+	('ko_KR', 'TXT_KEY_PROCESS_FAITH_HELP', '[COLOR_POSITIVE_TEXT]Prayer[ENDCOLOR] converts 25% of [ICON_PRODUCTION] Production of this City into [ICON_PEACE] Faith, and reduces [ICON_RELIGION] Religious Unrest by 25%.'),
+	('ko_KR', 'TXT_KEY_PROCESS_FAITH_STRATEGY', 'Investing production in prayer is a good way to boost your City''s faith output, which can be useful if you are currently in need of missionaires and inquisitors or if your cities need to birth Great People! Also reduce Religious Unrest.');
 
 
 INSERT OR REPLACE INTO Processes (Type, Description, Help, Strategy, TechPrereq, IconAtlas, PortraitIndex)

@@ -1,3 +1,3 @@
 -- "Lost on upgrade" update
-UPDATE Language_en_US SET Text = Text||' [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].'
+UPDATE Language_ko_KR SET Text = Text||' [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]'
 WHERE Tag IN (SELECT Help FROM UnitPromotions WHERE LostWithUpgrade = 1);

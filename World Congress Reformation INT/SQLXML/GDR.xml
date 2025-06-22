@@ -47,76 +47,75 @@
 			<LeagueProjectEnabled>LEAGUE_PROJECT_GDR_INITIATIVE</LeagueProjectEnabled>
 		</Row>
 	</Resolutions>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE">
-			<Text>TEMPEST Project</Text>
+			<Text>템페스트 프로젝트</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_GDR_INITIATIVE_SPLASH">			
-			<Text>Recognizing the potential cost of maintaining a large army and arsenal. Nations meet in secret to discuss the TEMPEST Prototype Project.</Text>
+			<Text>대규모 군대와 무기고를 유지하는데 드는 잠재적인 비용을 인식합니다. 국가들이 비밀리에 만나 템페스트 프로토타입 프로젝트를 논의합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1">
-			<Text>Patrons</Text>
+			<Text>후원자</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP">
-			<Text>Ability to train Giant Death Robots.</Text>
+			<Text>대학살 로봇을 훈련시킬 수 있습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2">
-			<Text>Project Sponsors</Text>
+			<Text>프로젝트 스폰서</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP">
-			<Text>Enrichment Facilities National wonder appear in [ICON_CAPITAL] Capital (4 copies of [ICON_RES_URANIUM] Uranium).</Text>
+			<Text>우라늄 농축 시설이 [ICON_CAPITAL]수도에 출현합니다 ([ICON_RES_URANIUM]우라늄 4개 제공)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3">
-			<Text>Project Manager</Text>
+			<Text>프로젝트 관리자</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP">
-			<Text>Project TEMPEST wonder appears in [ICON_CAPITAL] Capital (+100% [ICON_PRODUCTION] Production to Armored Units, +15 [ICON_STRENGTH] Defense.) Receive a Giant Death Robot.</Text>
+			<Text>템페스트 본부가 [ICON_CAPITAL]수도에 출현합니다 (기갑 유닛 [ICON_PRODUCTION]생산보너스 +100%, [ICON_STRENGTH]방어력 +15) 대학살 로봇을 받습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOLUTION_GDR_INITIATIVE">
-			<Text>TEMPEST Project</Text>
+			<Text>템페스트 프로젝트</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOLUTION_GDR_INITIATIVE_HELP">
-			<Text>Begins the project to fund the TEMPEST Project. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Robotics.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]템페스트 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_GDR_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]로봇공학[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROCESS_GDR_INITIATIVE">
-			<Text>TEMPEST Project</Text>
+			<Text>템페스트 프로젝트</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROCESS_GDR_INITIATIVE_HELP">
-			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the TEMPEST Project.</Text>
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 템페스트 프로젝트에 사용합니다.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS">
-			<Text>TEMPEST Headquarters</Text>
+			<Text>템페스트 본부</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS_QUOTE">
-			<Text>[NEWLINE][TAB][TAB]"What gunpowder did for war, a god from the machine has done for the future of war."[NEWLINE] - The Future[NEWLINE][TAB]</Text>
+			<Text>[NEWLINE][TAB][TAB]"화약이 전쟁을 위해 한 일을 기계의 신이 미래의 전쟁을 위해 한 일이 된다."[NEWLINE] - The Future[NEWLINE][TAB]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS_HELP">
-			<Text>Grants the ability to train Giant Death Robots. May only be built collaboratively through the World Congress. If this city is captured, the old owner loses access while the new owner is given it.</Text>
+			<Text>대학살 로봇을 훈련시킬 수 있습니다. [NEWLINE][NEWLINE]오직 세계 의회를 통해서만 건설할 수 있습니다. 이 도시가 점령당하면, 해당 건물의 소유권은 도시의 소유 문명이 가지게 됩니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_HEADQUARTERS_TEXT">
-			<Text>The TEMPEST Project is the main research operation of the Giant Death Robot prototype. Researchers have discovered a secret here to customizing their prototype for complete adapation to the environment.</Text>
+			<Text>템페스트 프로젝트는 대학살 로봇 프로토 타입의 주요 연구 프로젝트입니다. 환경에 완벽하게 적응하기 위한 프로토타입을 커스텀하기 위한 비밀을 연구원들은 이곳에서 발견했습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET">
-			<Text>Military Blueprints</Text>
+			<Text>로봇 설계도</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_HELP">
-			<Text>Giant Death Robot unlocked! May only be earned collaboratively through the World Congress.</Text>
+			<Text>대학살 로봇이 해금됩니다! 오직 세계의회를 통해서만 받을 수 있습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_TEXT">
-			<Text>"Here's what I want, Giant Death Robots, I don't care what they have to do... but there must be giant death robots. And there must be a wide varity of giant death robots, there should be plasma cannon wielding giant death robots... I really don't care if the "history" is accurate or if it's "realistic" I just want really big giant huge death robots." --Perfection</Text>
+			<Text>"여기에 내가 원하는 것이 있다, 바로 대학살 로봇. 난 그것들이 뭘 해야 하는지 신경 안 써...그저 대학살 로봇을 원할 뿐이야. 다양한 종류의 죽음의 로봇, 플라즈마 캐논을 휘두르는 대학살 로봇...난 정말로 "역사"가 정확할지 이것이 "현실적"인지 신경 안 써, 난 그저 대학살 로봇을 원해." - Perfection</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2">
-			<Text>Enrichment Facilities</Text>
+			<Text>우라늄 농축 시설</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GDR_MILITARY_SECRET_2_HELP">
-			<Text>Grants 4 copies of [ICON_RES_URANIUM] Uranium. May only be earned collaboratively through the World Congress.</Text>
+			<Text>[ICON_RES_URANIUM]우라늄 4개를 제공합니다. 오직 세계 의회를 통해서만 건설할 수 있습니다.</Text>
+		</Row>		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_2_TEXT">
+			<Text>우라늄이라는 것이 있습니다. 대학살 로봇들이 작동하는데 그것들이 필요합니다. 문제가 있다면, 사용가능한 우라늄을 구하기가 어렵다는 겁니다. 그래서 천연 우라늄 매장량도, 어딘가에서 가져오기도 힘들고, 사용하기에도 충분치 않습니다. 여기 농축시설이 생각났습니다. 이 적은 양의 우라늄을 농축해서 우리의 로봇에 동력을 공급할 수 있을 겁니다! 문제는 해결됐습니다.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_BUILDINGS_GDR_MILITARY_SECRET_2_TEXT">
-			<Text>So, there's this thing called Uranium. See and our Giant Death Robots exclusively runs on it, that's a problem since usable Uranium is hard to come by. So I'd figure natural uranium deposits are hard to come around, but uraniums are common just not common enough to be used. Here's what the enrichment facility comes into mind. It'll enrich these small amounts of Uranium to be usable enough to power our Giant Death Robots! Problem solved.</Text>
-		</Row>
-	</Language_en_US>
+	</Language_ko_KR>
 	<Processes>
 		<Row>
 			<Type>PROCESS_GDR_INITIATIVE</Type>

@@ -46,64 +46,64 @@
 			<LeagueProjectEnabled>LEAGUE_PROJECT_THREEGORGESDAM</LeagueProjectEnabled>
 		</Row>
 	</Resolutions>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM">
-			<Text>Engineering Service Corp</Text>
+			<Text>엔지니어링 서비스 주식회사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM_SPLASH">			
-			<Text>A vision was made. A huge project was established. Cities were to be developed.</Text>
+			<Text>비전이 만들어졌다. 거대한 프로젝트가 세워졌다. 도시들은 개발될 것이다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1">
-			<Text>Student</Text>
+			<Text>실습생</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP">
-			<Text>Receive a free [ICON_GREAT_ENGINEER] Great Engineer.</Text>
+			<Text>무료로 [ICON_GREAT_ENGINEER] 위대한 기술자가 출현합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2">
-			<Text>Teacher</Text>
+			<Text>교육자</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP">
-			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE} National wonder appears in [ICON_CAPITAL] Capital (+1 [ICON_CITIZEN_RED] Laborer in this City. [ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in all Cities.)</Text>
+			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE} 국가적 불가사의가 [ICON_CAPITAL] 수도에 등장합니다. (이 도시에 [ICON_CITIZEN_RED] 노동자가 1명 추가됩니다. [ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3">
-			<Text>Mentor</Text>
+			<Text>멘토</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP">
-			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS} wonder appears in [ICON_CAPITAL] Capital (+1 [ICON_CITIZEN_RED] Laborer in all Cities. [ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in all Cities.)</Text>
+			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS} 불가사의가 [ICON_CAPITAL] 수도에 나타납니다. (모든 도시에 [ICON_CITIZEN_RED] 노동자 +1명 추가. [ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOLUTION_THREEGORGESDAM">
-			<Text>Engineering Service Corp</Text>
+			<Text>엔지니어링 서비스 주식회사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOLUTION_THREEGORGESDAM_HELP">
-			<Text>Begins the project to fund Engineering Service Corp. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers {TXT_KEY_TECH_ELECTRICITY_TITLE}.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]엔지니어링 서비스 주식회사 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION] 생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP}[NEWLINE][NEWLINE]{TXT_KEY_TECH_ELECTRICITY_TITLE}를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROCESS_THREEGORGESDAM">
-			<Text>Engineering Service Corp</Text>
+			<Text>엔지니어링 서비스 주식회사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROCESS_THREEGORGESDAM_HELP">
-			<Text>Contribute this city's [ICON_PRODUCTION] Production towards {TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM} project. Cost goes up based on the number of players in the game, and the current Era.</Text>
+			<Text>이 도시의 [ICON_PRODUCTION] 생산을 {TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM} 프로젝트에 사용합니다. 비용은 게임에 참여하는 플레이어 수와 현재 시대에 따라 증가합니다.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS">
-			<Text>Engineering Service Corp</Text>
+			<Text>엔지니어링 서비스 주식회사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE">
-			<Text>Engineering Service Corp Office</Text>
+			<Text>엔지니어링 서비스 주식회사 사무소</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HELP">
-			<Text>May only be built collaboratively through the World Congress. +1 [ICON_CITIZEN_RED] Laborer in this Cities.[NEWLINE][NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in all Cities.</Text>
+			<Text>세계 의회를 통해 협력적으로만 건설할 수 있습니다. 이 도시의 [ICON_CITIZEN_RED] 노동자가 +1명 증가합니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_QUOTE">
-			<Text>[NEWLINE][TAB][TAB]"The people turn to a benevolent ruler as water flows downwards and as wild beasts fly to the wilderness."[NEWLINE]- Mencius[NEWLINE][TAB]</Text>
+			<Text>[NEWLINE][TAB][TAB]"民之歸仁也 猶水之就下 獸之走壙也(민지귀인야 유수지취하 수지주광야) 백성이 어진 정치로 돌아가는 것은, 물이 아래로 흐르고 짐승이 넓은 들판으로 달려가는 것과 같다."[NEWLINE]- 맹자 이루장구 상편 9장[NEWLINE][TAB]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_HELP">
-			<Text>May only be built collaboratively through the World Congress. +1 [ICON_CITIZEN_RED] Laborer in all Cities.[NEWLINE][NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in all Cities.</Text>
+			<Text>세계 의회를 통해 협력적으로만 건설할 수 있습니다. 모든 도시에 [ICON_CITIZEN_RED] 노동자가 +1명 증가합니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_THREEGORGESDAM_HEADQUARTERS_TEXT">
-			<Text>National groups created a way to train engineering students where students are put into foreign nations to build infrastructure and return with a vast amount of experience.</Text>
+			<Text>국가적 단체들은 학생들이 외국에 파견되어 인프라를 구축하고 방대한 경험을 가지고 돌아오는 방식으로 공학 학생들을 교육하는 방법을 만들어냈습니다.</Text>
 		</Row>
-	</Language_en_US>
+	</Language_ko_KR>
 	<Processes>
 		<Row>
 			<Type>PROCESS_THREEGORGESDAM</Type>
