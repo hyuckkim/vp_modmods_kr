@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_XCOM_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1_HELP</Help>
+			<Building>BUILDING_XCOM_MILITARY_SECRET</Building>	
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_XCOM_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_XCOM_SQUAD</FreeUnitClass>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_XCOM_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3_HELP</Help>
+			<Building>BUILDING_XCOM_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_XCOM_INITIATIVE</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE_SPLASH</Help>
+			<ProjectSplashImage>XCOMSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_XCOM_INITIATIVE</Process>
+			<CostPerPlayer>7500</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_XCOM_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_XCOM_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_XCOM_3</RewardTier3>
+			<IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>15</PortraitIndex>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_XCOM_INITIATIVE</Type>
+			<Description>TXT_KEY_RESOLUTION_XCOM_INITIATIVE</Description>
+			<Help>TXT_KEY_RESOLUTION_XCOM_INITIATIVE_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_LASERS</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_XCOM_INITIATIVE</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE">
+			<Text>XCOM Initation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE_SPLASH">			
+			<Text>Recognizing the potential threat from aliens and other external threats, the XCOM Initiative was born to protect the populace from enemies known, and unknown.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1">
+			<Text>Council Member</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1_HELP">
+			<Text>Receive the ability to train XCOM Squads.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2">
+			<Text>Founding Member</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2_HELP">
+			<Text>Receive 1 XCOM Squad. +5 [ICON_HAPPINESS_1] Happiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3">
+			<Text>Creator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3_HELP">
+			<Text>XCOM Headquarters wonder appears in [ICON_CAPITAL] Capital (FREE Strategic Defense System in all Cities).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_XCOM_INITIATIVE">
+			<Text>XCOM Initation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_XCOM_INITIATIVE_HELP">
+			<Text>Begins the project to fund the XCOM Project. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Lasers.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE">
+			<Text>XCOM Initiation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the XCOM Project.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS">
+			<Text>XCOM Headquarters</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Two possibilities exist: Either we are alone in the Universe or we are not. Both are equally terrifying."[NEWLINE] - Arthur C. Clarke[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS_HELP">
+			<Text>May only be built collaboratively through the World Congress.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_XCOM_HEADQUARTERS_TEXT">
+			<Text>The XCOM Headquarters is the main operation of the XCOM Project. Originally created to establish communications and order in certain dangerous situation, but has evolved as a global operation to uphold the peace of the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_MILITARY_SECRET">
+			<Text>XCOM Clearance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_MILITARY_SECRET_HELP">
+			<Text>XCOM Squad Unlocked! May only be earned collaboratively through the World Congress.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_XCOM_MILITARY_SECRET_TEXT">
+			<Text>To those that funded the XCOM Intiatives, the nations are rewarded with access to one of the most elite troop squadron known to man.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_XCOM_INITIATIVE</Type>
+			<Description>TXT_KEY_PROCESS_XCOM_INITIATIVE</Description>
+			<Help>TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>16</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_XCOM_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_XCOM_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_XCOM_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_XCOM_MILITARY_SECRET</Type>
+			<DefaultBuilding>BUILDING_XCOM_MILITARY_SECRET</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_XCOM_MILITARY_SECRET</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_XCOM_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_XCOM_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<!--<FreeBuildingThisCity>BUILDINGCLASS_BOMB_SHELTER</FreeBuildingThisCity>-->
+			<FreeBuilding>BUILDINGCLASS_BOMB_SHELTER</FreeBuilding>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_XCOM_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_XCOM_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_XCOM_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_XCOM_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<!--<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>-->
+			<MinAreaSize>-1</MinAreaSize>
+			<WonderSplashImage>XCOMSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_XCOM_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+			<HurryCostModifier>-20</HurryCostModifier>
+		</Row>
+		<Row>
+			<Type>BUILDING_XCOM_MILITARY_SECRET</Type>
+			<BuildingClass>BUILDINGCLASS_XCOM_MILITARY_SECRET</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<Description>TXT_KEY_BUILDING_XCOM_MILITARY_SECRET</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_XCOM_MILITARY_SECRET_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_XCOM_MILITARY_SECRET_HELP</Help>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>			
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>7</PortraitIndex>
+		</Row>
+	</Buildings>
+</GameData>

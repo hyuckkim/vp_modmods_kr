@@ -39,6 +39,13 @@ BEGIN
 		(BuildingType, YieldType, Yield)
 	SELECT
 		NEW.Type, 'YIELD_PRODUCTION', 25;
+
+	INSERT INTO Building_ResourceYieldChanges 
+		(BuildingType, ResourceType, YieldType, Yield) 
+	SELECT
+		NEW.Type, 'RESOURCE_STONE',	y.Type, 1
+	FROM Yields y
+	WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION');
 END;
 
 CREATE TRIGGER IF NOT EXISTS JarEECivCompatibility03 AFTER INSERT ON Buildings
@@ -200,6 +207,14 @@ INSERT INTO Building_GrowthExtraYield
 SELECT
 	Type, 'YIELD_PRODUCTION', 25
 FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP';
+
+INSERT INTO Building_ResourceYieldChanges 
+	(BuildingType, ResourceType, YieldType, Yield) 
+SELECT
+	b.Type, 'RESOURCE_STONE',	y.Type, 1
+FROM Buildings b, Yields y
+WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION')
+AND b.Type IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
 
 -- swap the help text
 UPDATE Language_ko_KR SET

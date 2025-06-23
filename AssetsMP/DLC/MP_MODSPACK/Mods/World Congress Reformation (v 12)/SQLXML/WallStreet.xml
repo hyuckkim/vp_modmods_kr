@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP</Help>
+			<FreeUnitClass>UNITCLASS_MERCHANT</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP</Help>
+			<Building>BUILDING_WALL_STREET</Building>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WALL_STREET_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP</Help>
+			<Building>BUILDING_WALL_STREET_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_WALL_STREET</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_WALL_STREET</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_WALL_STREET_SPLASH</Help>
+			<ProjectSplashImage>WallStreetSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_WALL_STREET</Process>
+			<CostPerPlayer>5100</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_WALL_STREET_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_WALL_STREET_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_WALL_STREET_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_WALL_STREET</Type>
+			<Description>TXT_KEY_RESOLUTION_WALL_STREET</Description>
+			<Help>TXT_KEY_RESOLUTION_WALL_STREET_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_ATOMIC_THEORY</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_WALL_STREET</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WALL_STREET">
+			<Text>International Monetary Fund</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WALL_STREET_SPLASH">			
+			<Text>The world's economy needs to be shaped. Infrastructure developed. Those that invest well are well-rewarded.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1">
+			<Text>Governor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP">
+			<Text>Receive a free [ICON_GREAT_MERCHANT] Great Merchant.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2">
+			<Text>Executive Director</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP">
+			<Text>The {TXT_KEY_BUILDING_WALL_STREET} National Wonder appears in [ICON_CAPITAL] Capital ({TXT_KEY_BUILDING_WALL_STREET_HELP}).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3">
+			<Text>Executive Managing Director</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP">
+			<Text>{TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS} Wonder appears in [ICON_CAPITAL] Capital (Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 8 [ICON_CITY_STATE] City-States in the game. +1 [ICON_GOLD] Gold and +1 [ICON_GOLDEN_AGE] Golden Age Point in City for every City-State Friend, and additionally +2 [ICON_GOLD] Gold for every Ally.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WALL_STREET">
+			<Text>International Monetary Fund</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WALL_STREET_HELP">
+			<Text>Begins the project to fund {TXT_KEY_LEAGUE_PROJECT_WALL_STREET}. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WALL_STREET_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers {TXT_KEY_TECH_ATOMIC_THEORY_TITLE}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_WALL_STREET">
+			<Text>International Monetary Fund</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WALL_STREET_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards {TXT_KEY_LEAGUE_PROJECT_WALL_STREET} project. Cost goes up based on the number of players in the game, and the current Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET">
+			<Text>IMF Office</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HELP">
+			<Text>Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty in all Cities. All Diplomatic Units receive the [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_WALL_STREET}[ENDCOLOR] Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WALL_STREET_TEXT">
+			<Text>It just works.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS">
+			<Text>International Monetary Fund</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Economic depression cannot be cured by legislative action or executive pronouncement. Economic wounds must be healed by the action of the cells of the economic body - the producers and consumers themselves."[NEWLINE] - Herbert Hoover[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_HELP">
+			<Text>May only be built collaboratively through the World Congress. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 8 [ICON_CITY_STATE] City-States in the game. +2 [ICON_GOLD] Gold and +1 [ICON_GOLDEN_AGE] Golden Age Point in City for every City-State Friend, and additionally +3 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points for every Ally.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WALL_STREET_HEADQUARTERS_TEXT">
+			<Text>The International Monetary Fund (IMF) is an international organization headquartered in Washington, D.C., of countries working to foster global monetary cooperation, secure financial stability, facilitate international trade, promote high employment and sustainable economic growth, and reduce poverty around the world. It plays a central role in the management of balance of payments difficulties and international financial crises. Countries contribute funds to a pool through a quota system from which countries experiencing balance of payments problems can borrow money.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WALL_STREET">
+			<Text>Financial Aid</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WALL_STREET_HELP">
+			<Text>+30 [ICON_INFLUENCE] Influence when you conduct a Diplomatic Mission with a City-State.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_WALL_STREET</Type>
+			<Description>TXT_KEY_PROCESS_WALL_STREET</Description>
+			<Help>TXT_KEY_PROCESS_WALL_STREET_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_WALL_STREET_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_WALL_STREET</ProcessType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_WALL_STREET</ProcessType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_WALL_STREET_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_WALL_STREET_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_WALL_STREET</Type>
+			<DefaultBuilding>BUILDING_WALL_STREET</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_WALL_STREET</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_WALL_STREET_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_WALL_STREET_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_WALL_STREET_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_WALL_STREET_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<!--<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<GreatPeopleRateChange>3</GreatPeopleRateChange>
+			<SpecialistCount>1</SpecialistCount>-->
+			<ExtraLeagueVotes>1</ExtraLeagueVotes>
+			<WonderSplashImage>WallStreetSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_WALL_STREET_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+		<Row>
+			<Type>BUILDING_WALL_STREET</Type>
+			<BuildingClass>BUILDINGCLASS_WALL_STREET</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_WALL_STREET</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_WALL_STREET_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_WALL_STREET_HELP</Help>
+			<IconAtlas>NEW_BLDG_ATLAS_DLC</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<PovertyFlatReductionGlobal>1</PovertyFlatReductionGlobal>
+			<SingleLeagueVotes>1</SingleLeagueVotes>
+			<FreePromotion>PROMOTION_WALL_STREET</FreePromotion>
+			<MinAreaSize>-1</MinAreaSize>
+		</Row>
+	</Buildings>
+	<Building_YieldPerFriend>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldPerFriend>
+	<Building_YieldPerAlly>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WALL_STREET_HEADQUARTERS</BuildingType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldPerAlly>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WALL_STREET</Type>
+			<Description>TXT_KEY_PROMOTION_WALL_STREET</Description>
+			<Help>TXT_KEY_PROMOTION_WALL_STREET_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<DiploMissionInfluence>30</DiploMissionInfluence>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_DIPLO</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_WALL_STREET</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_WALL_STREET</PromotionType>
+			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+</GameData>

@@ -39,6 +39,13 @@ BEGIN
 		(BuildingType, YieldType, Yield)
 	SELECT
 		NEW.Type, 'YIELD_PRODUCTION', 25;
+
+	INSERT INTO Building_ResourceYieldChanges 
+		(BuildingType, ResourceType, YieldType, Yield) 
+	SELECT
+		NEW.Type, 'RESOURCE_STONE',	y.Type, 1
+	FROM Yields y
+	WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION');
 END;
 
 CREATE TRIGGER IF NOT EXISTS JarEECivCompatibility03 AFTER INSERT ON Buildings
@@ -201,9 +208,17 @@ SELECT
 	Type, 'YIELD_PRODUCTION', 25
 FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP';
 
+INSERT INTO Building_ResourceYieldChanges 
+	(BuildingType, ResourceType, YieldType, Yield) 
+SELECT
+	b.Type, 'RESOURCE_STONE',	y.Type, 1
+FROM Buildings b, Yields y
+WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION')
+AND b.Type IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
+
 -- swap the help text
 UPDATE Language_en_US SET
-Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
+Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production. Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.'
 WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
 
 UPDATE Language_en_US

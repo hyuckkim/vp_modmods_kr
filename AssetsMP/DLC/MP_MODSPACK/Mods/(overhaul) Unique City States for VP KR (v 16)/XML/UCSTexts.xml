@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<!-- text for gaining bonuses with CSs -->
+		<Row Tag="TXT_KEY_UCS_BONUS_ALLY">
+            <Text>[COLOR_CYAN]{1_CS}[ENDCOLOR]{1: plural 1?과; 2?와;} 동맹이 되어, 이 도시국가의 시민들의 지식, 기술, 경험 및 정보를 가장 먼저 활용할 수 있습니다. 이 도시국가에서 새로운 보너스를 기대하세요.</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_BONUS_ALLY_TITLE">
+            <Text>도시국가 동맹 보너스!</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_BONUS_EMBASSY">
+            <Text>[COLOR_CYAN]{1_CS}[ENDCOLOR]에 대사관을 수립하여, 해당 도시국가의 시민들의 지식, 기술, 경험 및 정보에 영구적으로 접근할 수 있습니다. 이 도시국가에서 새로운 보너스를 기대하세요.</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_BONUS_EMBASSY_TITLE">
+            <Text>대사관으로 인한 도시국가의 영구적 보너스!</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_BONUS_INFLUENCE">
+            <Text>이제 [COLOR_CYAN]{1_CS}[ENDCOLOR]{1: plural 1?은; 2?는;} 당신의 영향력 하에 있으며, 해당 도시국가의 시민들의 지식, 기술, 경험 및 정보를 활용할 수 있습니다. 이 도시국가에서 새로운 보너스를 기대하세요.</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_BONUS_INFLUENCE_TITLE">
+            <Text>도시국가와의 압도적인 영향력!</Text>
+        </Row>
+		
+		<!-- notifications for friendly unit gifts -->
+        <Row Tag="TXT_KEY_UCS_PASSIVES_GIFTS">
+            <Text>[COLOR_POSITIVE_TEXT]{1_UnitName}[ENDCOLOR] 유닛을 [COLOR_CYAN]{2_CS}[ENDCOLOR]로부터 받았습니다. 이는 훌륭한 협력과 친절한 태도에 대한 감사의 표시입니다.</Text>
+        </Row>
+        <Row Tag="TXT_KEY_UCS_PASSIVES_GIFTS_TITLE">
+            <Text>우호적인 도시국가에서 시민이 도착했습니다!</Text>
+        </Row>
+
+		<!-- notifications for unit actions -->
+		<Row Tag="TXT_KEY_UCS_NIHANG_RIPOSTED">
+			<Text>유닛은 [COLOR:6:82:255:255]니항[ENDCOLOR]의 비밀 병기인 [COLOR:6:82:255:255]트레술 무크[ENDCOLOR]라는 작은 황금 삼지창을 알지 못했습니다. 그의 터번. 불행하게도 이 예상치 못한 반발은 당신의 부대에 치명적이었습니다. 다음에는 더 조심하십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_NIHANG_RIPOSTED_TITLE">
+			<Text>니항의 복수!</Text>
+		</Row>
+		
+		<!-- notifications for CSs' lua custom events -->
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_LIBERATION">
+			<Text>당신의 해방을 위한 노력은 무시되지 않으며, [COLOR_CYAN]{1_Bogota}[ENDCOLOR]는 당신을 경외합니다! 노력에 지원을 아끼지 않고 {2_Culture} [ICON_CULTURE] 문화로 보답합니다. 이제 무엇을 하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_LIBERATION_TITLE">
+			<Text>독립 연합!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_CAPTURE">
+			<Text>도시를 해방시키는 대신, 시민들은 당신 하에서 잘 살 수 있습니다. [COLOR_CYAN]{1_Bogota}[ENDCOLOR]는 당신이 계속 미션을 수행하기를 바라며 약간의 {2_Culture} [ICON_CULTURE] 문화를 제공해 당신의 세계 통합을 돕습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_CAPTURE_TITLE">
+			<Text>독립 연합?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_CAPE_TOWN">
+			<Text>희망봉을 지나는 수송은 매우 훌륭한 사업입니다. 수익의 일부는 당신에게 추가로 돌아옵니다. [COLOR_CYAN]{1_CapeTown}[ENDCOLOR] 이 당신에게 {2_Gold} [ICON_GOLD] 골드를 지급합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_CAPE_TOWN_TITLE">
+			<Text>희망봉</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MANILA">
+			<Text>[COLOR_CYAN]{1_Manila}[ENDCOLOR]의 길잡이들이 이국적인 상품을 사고팔 수 있는 곳으로 안내했습니다. 당신의 상인은 {2_FoodAndProduction} [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산을 보냅니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MANILA_TITLE">
+			<Text>동양의 진주</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_COLOMBO">
+			<Text>[COLOR_CYAN]{1_CityOfTrade}[ENDCOLOR]에서 [ICON_INTERNATIONAL_TRADE] 교역로를 완료했습니다. [COLOR_CYAN]{2_Colombo}[ENDCOLOR]에서 상품을 통해 전체 무역로를 지킬 만큼 방어력을 높이도록 군대를 재편할 충분한 수익을 얻었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_COLOMBO_TITLE">
+			<Text>특별 교역로 파트너</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH">
+			<Text>[COLOR_CYAN]{1_Zurich}[ENDCOLOR]의 은행원들이 지출에서 약간의 불일치를 발견하고 지난 {3_Turns}턴 동안 {2_Interests} [ICON_GOLD]골드를 절약했습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_TITLE">
+			<Text>옳은 손에 있는 돈</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY">
+			<Text>더 이상 [COLOR_CYAN]{1_Zurich}[ENDCOLOR]와 동맹이 아닙니다. 계속 이득을 얻으려면 대사관을 설립하십시오. 지난 {2_Turns}턴 동안 {3_Interests} [ICON_GOLD]골드를 절약했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY_ZERO">
+			<Text>더 이상 [COLOR_CYAN]{1_Zurich}[ENDCOLOR]와 동맹이 아닙니다. 계속 이득을 얻으려면 대사관을 설립하십시오. 불행히도 골드 절약을 위한 데이터가 없지만, 미래에는 개선될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY_TITLE">
+			<Text>당신의 금고가 위험합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_RELIGION">
+			<Text>[COLOR_CYAN]{1_Jerusalem}[ENDCOLOR]이 당신의 주요 종교를 받아들였습니다. 그들은 이제 당신의 진리를 세계에 전합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_RELIGION_TITLE">
+			<Text>불신자의 개종!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_SPHERE">
+			<Text>당신의 거룩함을 인정해, [COLOR_CYAN]{1_Jerusalem}[ENDCOLOR]의 지도자가 충성의 의미로 [COLOR_POSITIVE_TEXT]영향권[ENDCOLOR]을 제시합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_SPHERE_TITLE">
+			<Text>종교 보호국!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SIDON">
+			<Text>당신의 힘을 인정하고 경외해, [COLOR_CYAN]{1_Sidon}[ENDCOLOR]의 지도자가 충성의 의미로 [COLOR_POSITIVE_TEXT]영향권[ENDCOLOR]을 제시합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SIDON_TITLE">
+			<Text>도움이 필요한 친구!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LHASA">
+			<Text>[COLOR_CYAN]{1_Lhasa}[ENDCOLOR]의 시민들은 당신의 건축물을 경외합니다. 그들은 충성의 의미로 [COLOR_POSITIVE_TEXT]영향권[ENDCOLOR]을 제시합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LHASA_TITLE">
+			<Text>당신은 경이입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_CONQUEST">
+			<Text>[COLOR_CYAN]{1_Levuka}[ENDCOLOR]는 당신의 성공적인 점령을 기념하며 모든 도시에 각각 {2_Food} [ICON_FOOD] 식량을 제공합니다. 그들은 당신을 경외합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_CONQUEST_TITLE">
+			<Text>확장 후에 필요한 관리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_BARBARIANS">
+			<Text>[COLOR_CYAN]{1_Levuka}[ENDCOLOR]는 당신의 야만인 주둔지 파괴를 기념하며 모든 도시에 각각 {2_Food} [ICON_FOOD] 식량을 제공합니다. 그들은 당신의 도움에 매우 감사해합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_BARBARIANS_TITLE">
+			<Text>야만인 주둔지 파괴!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONG_KONG">
+			<Text>시민이 [COLOR_CYAN]{1_YourCity}[ENDCOLOR]에서 [COLOR_CYAN]{2_HongKongCity}[ENDCOLOR]으로 이주합니다. [COLOR_CYAN]{3_HongKong}[ENDCOLOR]은 감사하며 보상하려 합니다.  {4_Gold} [ICON_GOLD] 골드를 얻고, 양측이 접촉하여 {5_Influence} [ICON_INFLUENCE] 영향력을 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONG_KONG_TITLE">
+			<Text>시민들이 도시를 떠나다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_FLORENCE">
+			<Text>[COLOR_CYAN]{1_Florence}[ENDCOLOR]에서는 예술가와 기술자들이 밤낮으로 작품을 만들어냅니다. 그 중 {2_GreatPerson}{2: plural 1?이; 2?가;} 당신을 위해 일하기로 합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_FLORENCE_TITLE">
+			<Text>A {1_GreatPerson}{1: plural 1?이; 2?가;} 직업을 구하다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KYZYL">
+			<Text>[COLOR_CYAN]{1_Kyzyl}[ENDCOLOR]이 당신의 건설을 도우려 도시에 전문가들을 보냈습니다: {2_CityList}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KYZYL_TITLE">
+			<Text>과학자들의 지식 공유!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_TYRE">
+			<Text>[COLOR_YIELD_FOOD]{1_WorldWonder}[ENDCOLOR]를 건설합니다. 멋진 도시를 방문해야 할 또 다른 이유가 생깁니다. [COLOR_CYAN]{2_Tyre}[ENDCOLOR]는 {3_Tourism} [ICON_TOURISM] 관광을 통해 관광 수입을 늘리고 품질을 확인하고 정보를 전파하기 위해 첫 방문자를 보냅니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_TYRE_TITLE">
+			<Text>새 불가사의가 개방되다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_QUEBEC_CITY">
+			<Text>[COLOR_CYAN]{1_QuebecCity}[ENDCOLOR]은 벌목 산업에 경험이 많은 회사들로 가득합니다. 그들의 인맥과 경험 덕분에 방금 획득한 상품에서 더 많은 것을 얻을 수 있습니다. [COLOR_CYAN]{2_City}{2: plural 1?이; 2?가;} [ENDCOLOR]{4_Feature}에서 추가 {3_Yields} [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_QUEBEC_CITY_TITLE">
+			<Text>벌목 회사의 핵심 지원!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_PRAGUE">
+			<Text>[COLOR_CYAN]{1_Prague}[ENDCOLOR]의 성직자들은 이교도들을 개종시키려 했던 당신 {2_LostUnit}의 죽음을 소중히 여깁니다. 이 비극적인 사건을 보상하고 선교를 계속하도록 그들은 {2_Faith} [ICON_PEACE] 신앙, {3_Culture} [ICON_CULTURE] 문화로 당신을 지원합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_PRAGUE_TITLE">
+			<Text>영광스러운 순교!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SINGAPORE">
+			<Text>[COLOR_CYAN]{1_Singapore}[ENDCOLOR]의 현명한 외교관들이 협상을 성공적으로 마무리하여 [COLOR_CYAN]{2_CityState}[ENDCOLOR]에서 당신의 영향력을 증가시켰습니다! 게다가 그들은 지역 스폰서로부터 다음 프로젝트를 위한 약간의 자금을 얻을 수 있었습니다. 귀하의 금고는 {3_Gold} [ICON_GOLD]골드만큼 풍부해집니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SINGAPORE_TITLE">
+			<Text>외교 성공!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SYDNEY">
+			<Text>[COLOR_CYAN]{1_Sydney}[ENDCOLOR]는 거대하고 멋진 이벤트를 주최하는 것으로 유명합니다. 많은 예술가와 제작자가 자신의 작품을 더 많은 청중에게 선보이기 위해 이곳에 도착합니다. [COLOR_CYAN]{2_City}[ENDCOLOR]{2: plural 1?은; 2?는;} 당신을 돕기 위해 일부 사람들이 귀하의 도시로 와 [ICON_GREAT_ARTIST] {3_GreatArtist}, [ICON_GREAT_WRITER] {4_GreatWriter} 및 [ICON_GREAT_MUSICIAN] {5_GreatMusician}의 진행 상황을 높입니다.  {6_PointsArtist}, {7_PointsWriter} 및 {8_PointsMusician} [ICON_GREAT_PEOPLE] 위인 포인트를 각각 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SYDNEY_TITLE">
+			<Text>크리에이터 붐!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_A">
+			<Text>[COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]에서 [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR]{2: plural 1?을; 2?를;} 고용했습니다. 군사적 가치 외에도 매 턴마다 더 가치 있는 것, 즉 특별한 종교적 경험을 얻을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_B">
+			<Text>[COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]에서 [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR]{2: plural 1?을; 2?를;} 고용했습니다. 군사적 가치 외에도 매 턴마다 더 가치 있는 것, 즉 특별한 종교적, 문화적 경험을 얻을 수 있습니다. [COLOR_CYAN]라디오[ENDCOLOR]에 신의 축복이 있기를!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_C">
+			<Text>[COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]에서 [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR]를 고용했습니다. 명백한 군사적 가치 외에도 매 턴마다 더 가치 있는 무언가를 생성할 수 있습니다. 특별한 종교적, 문화적 경험과 관광입니다. [COLOR_CYAN]라디오[ENDCOLOR]와 모든 종류의 [COLOR_CYAN]통신[ENDCOLOR]에 신의 축복이 있기를!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_TITLE">
+			<Text>교황을 지켜라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_YANGCHENG">
+			<Text>[COLOR_CYAN]{1_Yangcheng}[ENDCOLOR]의 현명한 영주들이 설날을 함께 축하하고 모든 특전을 여러분과 공유하기를 원합니다. 추가 {2_Faith} [ICON_PEACE] 신앙으로 종교 의식을 풍요롭게 하고 [ICON_CAPITAL] 수도에서 {4_BonusYields}를 제공하는 새로운 [COLOR_HIGHLIGHT_TEXT]{3_Animal}[ENDCOLOR] 해의 후원자에게 감사하십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_YANGCHENG_TITLE">
+			<Text>{1_Animal}의 해!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IFE">
+			<Text>최근 [COLOR_CYAN]{2_Ife}[ENDCOLOR]에서 교육받은 {1_DiploUnit} {1: plural 1?은; 2:는;} 현명한 외교 조치를 수행하는 방법을 알고 있으며 협상에 도움이 될 수 있는 몇 가지 종교 의식을 수행하여 {3_Faith} [ICON_PEACE] 신앙을 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IFE_TITLE">
+			<Text>요루바 외교!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENEVA">
+			<Text>[COLOR_CYAN]{1_Geneva}[ENDCOLOR]는 삶을 바꾸고자 하는 용감한 남녀에게 기회의 도시입니다. 도시를 개선하고 이상적인 사회를 만들기 위해 많은 교양 있는 인물들이 이곳에 도착합니다. 그들 중 한 명인 {2_GreatPerson}{2: plural 1?이; 2:가} 오늘 이곳에 와서 {3_Faith} [ICON_PEACE] 신앙으로 지역 종교 공동체를 풍요롭게 했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENEVA_TITLE">
+			<Text>살기 좋은 곳!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENOA">
+			<Text>[COLOR_CYAN]{1_Genoa}[ENDCOLOR]의 상인들은 부자가 되고 고향을 황금기로 이끌 모든 기회를 찾습니다. 마지막 목표인 {2_GreatPerson}{2: plural 1?이; 2:가} 도움이 될 수 있습니다. 최근 작업으로 {3_Gold} [ICON_GOLD] 골드와 {4_GoldenAge} [ICON_GOLDEN_AGE] 황금기 포인트를 추가로 부여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENOA_TITLE">
+			<Text>황금인간!</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

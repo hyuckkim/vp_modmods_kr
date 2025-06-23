@@ -363,15 +363,57 @@ Bugfixes
 -----------------
 v14
 -----------------
+Techs
+--Fixed an error where Optics was an Enlightenment Tech in the database
+--Moved +1 of the +2 Production on Mines from Steam Power to Fortifications
+  There was a long period where isolated Lumbermill was dominating Mine handily
+
 Buildings
 --Windmill now has the enables Production ITR from Workshop so it stays in the same place
 --Windmill Lake bonus lowered to +1 Prod/Gold (was +2)
+--Workshop gains +1 Prod/GAP to Stone (resource was overlooked)
 --Manor 
  -gains +2 Gold/+1 Tourism to Lakes
  -gain +1 Prod/GAP from Villages
  -Loses 10% Investment to GAP (it was too much, one of the largest sources)
---Cost sweeps
+ -Fixed Lapis yields (had too many)
+--Opera House 
+  gains boost to Tobacco (was overlooked) 
+  reduced Marble yields by 1 (considered moving to Workshop but want to keep that modular)
+--Added Bison to Menagerie (resource was overlooked)
+--Fixed Seminary having Polytechnic's tech discovery effects also
+--Fixed Zoo text incorrectly missing Forest/Jungle boosts
+--Fixed typo that made Observatories' Harbor bonus global
+--Drydock now also gives +1 Prod/Gold to Harbor/Tavern/Seaport
+
+Wonders
+--Versailles 10% global conversion changed to 15% just in that City.
+--Derwent Mills text was incomplete
+
+Units
+--Frigate 
+  costs 1 Iron 
+  has 28/36 stats, up from 26/35 (with +1/+2 for Ship of the Line)
+  requires Drydock to purchase
+--4UC Compatibility has Baochuan as Galleon to better fit the historical era (and still be ranged)
+--Dutch Sea Beggar combat fixed and text upgraded to reflect
+
+Cost Sweeps
  -Moved to separate file for ease of access
  -Wonder Prod and Policy costs harmonized with More Wonders
  -Building Prod costs smoothed (and overall increased) and Gold Maintenance adjusted
  -Unit costs moved to sweeps and smoothed. Removed some outliers like Field Gun (Howitzer) being abnormally expensive
+
+------------------
+-- v15
+------------------
+Buildings
+--Menagerie moved later to Strongholds
+
+Units
+--Galleon moved earlier to Exploration (Renaissance)
+--If Torpedo Boat is enabled it is brought earlier to Steam Power
+
+Cost Sweeps
+ -Policy costs increased slightly
+ -Gold Maintenance starts to increase a bit earlier (now 4 in whole Enlightenment, was 3)

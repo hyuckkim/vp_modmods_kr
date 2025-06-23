@@ -1,0 +1,11 @@
+<Asset>
+  <Mesh file="dogs_canario_PL.gr2" source="Max" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <BoneUsage>
+    <Bone name="tent.001" />
+    <Bone name="tent.002" />
+  </BoneUsage>
+  <TimedTrigger file="fx_triggers_Dogs_canario_PL.ftsxml" source="Tool" model="tent.001" state="0,1,2,3"/>
+  <TimedTrigger file="fx_triggers_Dogs_canario_PL.ftsxml" source="Tool" model="tent.002" state="0,1,2,3"/>
+</Asset>
+

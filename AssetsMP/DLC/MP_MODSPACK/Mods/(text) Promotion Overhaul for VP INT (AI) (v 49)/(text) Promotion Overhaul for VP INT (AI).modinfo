@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="49e0bc9b-c3d5-40e9-bab8-e0bc44332b8c" version="49">
+  <Properties>
+    <Name>(text) Promotion Overhaul for VP INT (AI)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Promotion Overhaul for VP.</Teaser>
+    <Description>Translation of the Promotion Overhaul for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 승급 오버홀 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI, Gemini 2.5 Pro</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="6f162445-8dd2-4809-b8b4-aa405d4b2107" minversion="0" maxversion="999" title="(text) Promotion Overhaul for VP" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="53F8402869A0C42F0263363874885C70" import="0">Texts/Closer.sql</File>
+    <File md5="74410C458595B331E90B95C3099E664A" import="0">Texts/PromotionTextChanges.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/Closer.sql</UpdateDatabase>
+      <UpdateDatabase>Texts/PromotionTextChanges.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

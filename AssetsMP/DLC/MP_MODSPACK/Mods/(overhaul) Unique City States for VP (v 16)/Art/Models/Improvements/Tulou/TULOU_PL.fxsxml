@@ -1,0 +1,8 @@
+<Asset>
+	<Mesh file="Tulou_PL.gr2" source="Max" />
+	<DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+	<TimedTrigger file="TULOU_PL.ftsxml" source="Tool" model="globeTheatre" state="0,1,2,3" />
+	<BoneUsage>
+		<Bone name="globeTheatre" />
+	</BoneUsage>
+</Asset>

@@ -1,0 +1,9 @@
+<Asset>
+  <Mesh file="tortoise_camp_pl.gr2" source="Max" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <TimedTrigger file="fx_triggers_tortis_camp.ftsxml" source="Tool" model="CAMP" state="0,1,2,3" />
+  <BoneUsage>
+    <Bone name="PL_1" />
+    <Bone name="PL_2" />
+  </BoneUsage>
+</Asset>
