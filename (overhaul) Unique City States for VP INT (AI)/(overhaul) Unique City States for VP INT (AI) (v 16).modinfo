@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8d4681c5-bbb9-4c4f-9cc3-0ce7d0827810" version="16">
+  <Properties>
+    <Name>(overhaul) Unique City States for VP INT (AI)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Unique City States.</Teaser>
+    <Description>Translation of the Unique City States into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]고유 도시 국가 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>molang, Gemini 2.5 Pro</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="(overhaul) Unique City States for VP" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="512EC667EE371DFC304D5A82E24ABE55" import="0">SQL/Bonuses.sql</File>
+    <File md5="16958D548774126BBAA63FC5F845C7DC" import="0">XML/UCSTexts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/Bonuses.sql</UpdateDatabase>
+      <UpdateDatabase>XML/UCSTexts.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

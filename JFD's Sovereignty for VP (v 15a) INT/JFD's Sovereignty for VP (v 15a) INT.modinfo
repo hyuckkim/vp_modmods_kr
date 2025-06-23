@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="dea13118-36a1-4ce8-b44e-cdf9bf8604a5" version="15">
+  <Properties>
+    <Name>JFD's Sovereignty for VP (v 15a) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the JFD's Sovereignty for VP.</Teaser>
+    <Description>Translation of the JFD's Sovereignty for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP JFD의 주권 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>hyuckkim</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
+    <Mod id="7e5f1de1-bb2f-4b4d-b326-06e2969d0738" minversion="0" maxversion="999" title="(1L) Community Patch INT" />
+    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+    <Mod id="4d22275e-c50f-4550-9c33-97a813b8559f" minversion="0" maxversion="999" title="(3aL) VP - EUI Compatibility Files INT" />
+  </Dependencies>
+  <References>
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era (Vox Populi)" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="(over) More Unique Components for VP" />
+    <Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era for VP INT" />
+    <Mod id="5d9cc89c-97b6-4070-96b0-4d871c640c1a" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP INT" />
+    <Mod id="460268e7-87f9-4d69-a5c7-b8c67aaa5281" minversion="0" maxversion="999" title="(overL) More Unique Components for VP (v 88) INT" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="12B39A68C09BB8B937A7AADBD97DC5CA" import="0">Core/Sovereignty_Buildings.sql</File>
+    <File md5="102F4300E8EA416FE959FB63E0FAD6F7" import="0">Core/Sovereignty_GameText.sql</File>
+    <File md5="974D92948510F71D123D3E704D75B64C" import="0">Core/Sovereignty_GameText.xml</File>
+    <File md5="7CCE8D92E20BFCD9C9E2E47BB61A253D" import="0">Core/Sovereignty_GameText_Interface.xml</File>
+    <File md5="CD53E5D98BE01F80F4B14C6BD6785D17" import="0">Core/Sovereignty_GameText_Reforms.xml</File>
+    <File md5="6F4B7EA2207C9B3BB54788998F743766" import="0">Core/Sovereignty_GameText_Titles.xml</File>
+    <File md5="62F217987B76375A26044E862BDD7DF7" import="0">Core/Sovereignty_Wonders.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/Sovereignty_Buildings.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Interface.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Reforms.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Titles.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_Wonders.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

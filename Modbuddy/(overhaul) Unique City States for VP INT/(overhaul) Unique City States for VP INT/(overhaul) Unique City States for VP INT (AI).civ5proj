@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{1d4b8588-0892-4af3-9a8c-0417d2b545df}</ProjectGuid>
+    <Name>(overhaul) Unique City States for VP INT (AI)</Name>
+    <Guid>8d4681c5-bbb9-4c4f-9cc3-0ce7d0827810</Guid>
+    <ModVersion>16</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Unique City States.</Teaser>
+    <Description>Translation of the Unique City States into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]고유 도시 국가 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>molang, Gemini 2.5 Pro</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>(overhaul) Unique City States for VP INT</AssemblyName>
+    <RootNamespace>(overhaul) Unique City States for VP INT</RootNamespace>
+    <ModReferences />
+    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/Bonuses.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/UCSTexts.xml</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(overhaul) Unique City States for VP</Name>
+        <Id>b2eb6d1e-1fcb-4a0d-829c-51691aa3183a</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(2L) Vox Populi INT</Name>
+        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(2L) Vox Populi INT</Name>
+        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+    <Folder Include="XML\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\Bonuses.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\UCSTexts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

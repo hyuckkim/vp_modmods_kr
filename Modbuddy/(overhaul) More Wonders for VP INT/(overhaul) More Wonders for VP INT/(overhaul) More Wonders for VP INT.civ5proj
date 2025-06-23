@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{115230dc-295e-4e95-b9a9-1799f82ba079}</ProjectGuid>
+    <Name>(overhaul) More Wonders for VP INT</Name>
+    <Guid>5d9cc89c-97b6-4070-96b0-4d871c640c1a</Guid>
+    <ModVersion>23</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>AI Translation of the More Wonders for VP</Teaser>
+    <Description>AI Translation of the More Wonders for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 더 많은 불가사의 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>ㅇㅇ, Gemini 2.5 Pro</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>(overhaul) More Wonders for VP INT</AssemblyName>
+    <RootNamespace>(overhaul) More Wonders for VP INT</RootNamespace>
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Vox Populi's Bare Necessities</Name>
+        <Id>6eab2123-f4cb-401a-a165-55833306c1ae</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Even More Resources for Vox Populi</Name>
+        <Id>8e54eb87-31e8-4fcd-aafe-ede055b463d0</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enlightment Era for VP</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>New Beliefs Mod</Name>
+        <Id>d600c443-2f04-469a-9475-e857284d5992</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(civ) Louisiana</Name>
+        <Id>3ea46c4f-6e13-46bf-ba28-71a3ffa85b53</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(overhaul) Enlightenment Era for VP INT</Name>
+        <Id>fa8e0af1-732f-4ee8-b6f6-41faa8c33a42</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(overhaul) Even More Resources for Vox Populi (v 14) INT</Name>
+        <Id>a9ab7ce3-f2ae-462d-a339-36c83678e604</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Vox Populi's Bare Necessities INT</Name>
+        <Id>334be884-7eb4-409e-97c7-e3cbe13967d3</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
+    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=300915</Homepage>
+    <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Vox Populi</Name>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(2L) Vox Populi INT</Name>
+        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1.WorldWonders/SQL/MainRulesForWorldWonders.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1.WorldWonders/SQL/WorldWondersDefinitions.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1.WorldWonders/SQL/WorldWondersTexts.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>2.NaturalWonders/XML/NaturalWondersTexts.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Buildings/BuildingsDefinitions.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/ResourcesDefinitions.sql</FileName>
+      </Action>
+    </ModActions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="1.WorldWonders\" />
+    <Folder Include="1.WorldWonders\SQL\" />
+    <Folder Include="2.NaturalWonders\" />
+    <Folder Include="2.NaturalWonders\SQL\" />
+    <Folder Include="2.NaturalWonders\XML\" />
+    <Folder Include="Buildings\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.WorldWonders\SQL\MainRulesForWorldWonders.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1.WorldWonders\SQL\WorldWondersDefinitions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1.WorldWonders\SQL\WorldWondersTexts.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2.NaturalWonders\SQL\NaturalWondersCivilopediaTexts.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2.NaturalWonders\SQL\UniqueNaturalWondersAbilities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2.NaturalWonders\XML\NaturalWondersTexts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Buildings\BuildingsDefinitions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\ResourcesDefinitions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

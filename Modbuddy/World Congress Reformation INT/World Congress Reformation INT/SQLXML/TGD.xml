@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP</Help>
+			<GoldenAgePoints>4000</GoldenAgePoints>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_ENGINEER</FreeUnitClass>		
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP</Help>
+			<Building>BUILDING_THREEGORGESDAM_HEADQUARTERS</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_THREEGORGESDAM</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM_SPLASH</Help>
+			<ProjectSplashImage>ThreeGorgesDamSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_THREEGORGESDAM</Process>
+			<CostPerPlayer>3300</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_THREEGORGESDAM</Type>
+			<Description>TXT_KEY_RESOLUTION_THREEGORGESDAM</Description>
+			<Help>TXT_KEY_RESOLUTION_THREEGORGESDAM_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<TechPrereqAnyMember>TECH_ELECTRICITY</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_THREEGORGESDAM</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM">
+			<Text>엔지니어링 서비스 주식회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM_SPLASH">			
+			<Text>비전이 만들어졌다. 거대한 프로젝트가 세워졌다. 도시들은 개발될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1">
+			<Text>실습생</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP">
+			<Text>무료로 [ICON_GREAT_ENGINEER] 위대한 기술자가 출현합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2">
+			<Text>교육자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP">
+			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE} 국가적 불가사의가 [ICON_CAPITAL] 수도에 등장합니다. (이 도시에 [ICON_CITIZEN_RED] 노동자가 1명 추가됩니다. [ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3">
+			<Text>멘토</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP">
+			<Text>{TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS} 불가사의가 [ICON_CAPITAL] 수도에 나타납니다. (모든 도시에 [ICON_CITIZEN_RED] 노동자 +1명 추가. [ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_THREEGORGESDAM">
+			<Text>엔지니어링 서비스 주식회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_THREEGORGESDAM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]엔지니어링 서비스 주식회사 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION] 생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_THREEGORGESDAM_1_HELP}[NEWLINE][NEWLINE]{TXT_KEY_TECH_ELECTRICITY_TITLE}를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_THREEGORGESDAM">
+			<Text>엔지니어링 서비스 주식회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_THREEGORGESDAM_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION] 생산을 {TXT_KEY_LEAGUE_PROJECT_THREEGORGESDAM} 프로젝트에 사용합니다. 비용은 게임에 참여하는 플레이어 수와 현재 시대에 따라 증가합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS">
+			<Text>엔지니어링 서비스 주식회사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE">
+			<Text>엔지니어링 서비스 주식회사 사무소</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HELP">
+			<Text>세계 의회를 통해 협력적으로만 건설할 수 있습니다. 이 도시의 [ICON_CITIZEN_RED] 노동자가 +1명 증가합니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"民之歸仁也 猶水之就下 獸之走壙也(민지귀인야 유수지취하 수지주광야) 백성이 어진 정치로 돌아가는 것은, 물이 아래로 흐르고 짐승이 넓은 들판으로 달려가는 것과 같다."[NEWLINE]- 맹자 이루장구 상편 9장[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_HELP">
+			<Text>세계 의회를 통해 협력적으로만 건설할 수 있습니다. 모든 도시에 [ICON_CITIZEN_RED] 노동자가 +1명 증가합니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 모든 도시에서 문명 크기 수정치가 5% 감소합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_THREEGORGESDAM_HEADQUARTERS_TEXT">
+			<Text>국가적 단체들은 학생들이 외국에 파견되어 인프라를 구축하고 방대한 경험을 가지고 돌아오는 방식으로 공학 학생들을 교육하는 방법을 만들어냈습니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Processes>
+		<Row>
+			<Type>PROCESS_THREEGORGESDAM</Type>
+			<Description>TXT_KEY_PROCESS_THREEGORGESDAM</Description>
+			<Help>TXT_KEY_PROCESS_THREEGORGESDAM_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_THREEGORGESDAM_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_THREEGORGESDAM</ProcessType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_THREEGORGESDAM</ProcessType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_THREEGORGESDAM</ProcessType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_THREEGORGESDAM_HEADQUARTERS</Type>
+			<DefaultBuilding>BUILDING_THREEGORGESDAM_HEADQUARTERS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_THREEGORGESDAM</Type>
+			<DefaultBuilding>BUILDING_THREEGORGESDAM</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_THREEGORGESDAM_HEADQUARTERS</Type>
+			<BuildingClass>BUILDINGCLASS_THREEGORGESDAM_HEADQUARTERS</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS</Description>
+			<Quote>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_THREEGORGESDAM_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<!--<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<GreatPeopleRateChange>3</GreatPeopleRateChange>
+			<SpecialistCount>1</SpecialistCount>-->
+			<HurryCostModifier>-20</HurryCostModifier>
+			<EmpireSizeModifierReductionGlobal>-5</EmpireSizeModifierReductionGlobal>
+			<GlobalCityAutomatonWorkersChange>1</GlobalCityAutomatonWorkersChange>
+			<WonderSplashImage>ThreeGorgesDamSplashy.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_THREEGORGESDAM_HEADQUARTERS</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+		<Row>
+			<Type>BUILDING_THREEGORGESDAM</Type>
+			<BuildingClass>BUILDINGCLASS_THREEGORGESDAM</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_THREEGORGESDAM_HEADQUARTERS_OFFICE</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_THREEGORGESDAM_HEADQUARTERS_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_THREEGORGESDAM_HELP</Help>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<EmpireSizeModifierReductionGlobal>-5</EmpireSizeModifierReductionGlobal>
+			<CityAutomatonWorkersChange>1</CityAutomatonWorkersChange>
+		</Row>
+	</Buildings>
+</GameData>
