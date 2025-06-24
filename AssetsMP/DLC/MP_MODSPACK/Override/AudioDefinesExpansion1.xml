@@ -1376,6 +1376,27 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
+			<SoundID>SND_UNIT_VELOCIRAPTOR_ATTACK</SoundID> 
+			<Filename>VelociraptorAttack</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_UNIT_TREX</SoundID> 
+			<Filename>trex</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_UNIT_TREX_STEP</SoundID> 
+			<Filename>trexstep</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
 			<SoundID>SND_EVENT_EAIRCRAFT</SoundID> 
 			<Filename>EAircraft</Filename> 
 			<LoadType>STREAMED</LoadType> 
