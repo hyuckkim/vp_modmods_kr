@@ -35,7 +35,7 @@ WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GAR
 
 -- 대장간
 UPDATE Language_ko_KR
-SET Text = Text || '[NEWLINE][ICON_RES_TIN] 주석: [ICON_PRODUCTION] 생산력 +1 ,  [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_LEAD] 납: [ICON_PRODUCTION] 생산력 +2'
+SET Text = Text || '[NEWLINE][ICON_RES_TIN] 주석: [ICON_PRODUCTION] 생산력 +1,  [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_LEAD] 납: [ICON_PRODUCTION] 생산력 +2'
 WHERE Tag IN(SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FORGE' AND ((Type = 'BUILDING_FORGE' OR Type IN(SELECT BuildingType FROM Civilization_BuildingClassOverrides))));
 
 -- Workshops
