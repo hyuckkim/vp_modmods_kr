@@ -759,34 +759,34 @@ WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_PEDIA';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_SPECIALUNIT_SPACESHIP', '우주선');
 
-UPDATE Language_ko_KR
-SET Text = '자주포'
-WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY';
+--UPDATE Language_ko_KR
+--SET Text = '자주포'
+--WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY';
 
-UPDATE Language_ko_KR
-SET Text = '자주포는 포병대보다 훨씬 성능이 좋은 무시무시하게 강력한 공성유닛입니다. 자주포는 적 영토에서 이동력이 감소하지 않으며 자주포보다 공력력이 훨씬 강합니다. 자주포의 시야는 제한적이지만 볼 수 없는 목표도 곡사능력으로 타격할 수 있습니다. 다른대포처럼 자주포는 보병이나 전차의 공격에 약하므로 적절히 유닛으로 보호해야 합니다.'
-WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_STRATEGY';
+--UPDATE Language_ko_KR
+--SET Text = '자주포는 포병대보다 훨씬 성능이 좋은 무시무시하게 강력한 공성유닛입니다. 자주포는 적 영토에서 이동력이 감소하지 않으며 자주포보다 공력력이 훨씬 강합니다. 자주포의 시야는 제한적이지만 볼 수 없는 목표도 곡사능력으로 타격할 수 있습니다. 다른대포처럼 자주포는 보병이나 전차의 공격에 약하므로 적절히 유닛으로 보호해야 합니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_STRATEGY';
 
-UPDATE Language_ko_KR
-SET Text = '정보화시대의 공성 유닛입니다. 다른 공성 유닛과 달리 적 영토에서 이동 속도가 느려지지 않습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_HELP';
+--UPDATE Language_ko_KR
+--SET Text = '정보화시대의 공성 유닛입니다. 다른 공성 유닛과 달리 적 영토에서 이동 속도가 느려지지 않습니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_HELP';
 
-UPDATE Language_ko_KR
-SET Text = '이 자주포는 1분도 안 되는 시간에 12발의 포탄을 발사하는 고도로 기동성이 뛰어나고 파괴력이 뛰어난 공성 유닛입니다.  높은 연사력으로 미리 적진을 무너뜨리고, 도시를 공략하거나 방어하는 데 매우 주요한 역할을 수행합니다. 자주포에 궤도를 장착해서 기존에 무거운 야포를 가지고 다닐 수 있으며 험지로도 주행이 있어 빠르게 이동할 수 있는 공성유닛이 되었습니다. 아마도 이보다 더 진보된 포는 발사체 안에 자체 추진체가 장착된 체계를 가지고 있게 됩니다.'
-WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_PEDIA';
+--UPDATE Language_ko_KR
+--SET Text = '이 자주포는 1분도 안 되는 시간에 12발의 포탄을 발사하는 고도로 기동성이 뛰어나고 파괴력이 뛰어난 공성 유닛입니다.  높은 연사력으로 미리 적진을 무너뜨리고, 도시를 공략하거나 방어하는 데 매우 주요한 역할을 수행합니다. 자주포에 궤도를 장착해서 기존에 무거운 야포를 가지고 다닐 수 있으며 험지로도 주행이 있어 빠르게 이동할 수 있는 공성유닛이 되었습니다. 아마도 이보다 더 진보된 포는 발사체 안에 자체 추진체가 장착된 체계를 가지고 있게 됩니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_ROCKET_ARTILLERY_PEDIA';
 
-UPDATE Language_ko_KR
-SET Text = '자주대공포'
-WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM';
+--UPDATE Language_ko_KR
+--SET Text = '자주대공포'
+--WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM';
 
-UPDATE Language_ko_KR
-SET Text = '자주대공포는 군대에 대공 방어를 제공합니다. 자주대공포(지상 대 공중) 유닛은 방공으로 전진하는 군대를 제공합니다. 이동식 SAM 유닛은 4개의 타일 이내의 적 항공기 폭격 목표물을 요격할 수 있습니다(한 턴에 한 유닛만 막아낼 수 있습니다.). 이러한 부대는 공습이 아닌 공격에 상당히 취약하므로 보병이나 기갑 유닛을 동반해야 합니다.'
-WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_STRATEGY';
+--UPDATE Language_ko_KR
+--SET Text = '자주대공포는 군대에 대공 방어를 제공합니다. 자주대공포(지상 대 공중) 유닛은 방공으로 전진하는 군대를 제공합니다. 이동식 SAM 유닛은 4개의 타일 이내의 적 항공기 폭격 목표물을 요격할 수 있습니다(한 턴에 한 유닛만 막아낼 수 있습니다.). 이러한 부대는 공습이 아닌 공격에 상당히 취약하므로 보병이나 기갑 유닛을 동반해야 합니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_STRATEGY';
 
-UPDATE Language_ko_KR
-SET Text = '주변에 폭격을 시도하는 적의 비행 유닛을 요격합니다.'
-WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_HELP';
+--UPDATE Language_ko_KR
+--SET Text = '주변에 폭격을 시도하는 적의 비행 유닛을 요격합니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_HELP';
 
-UPDATE Language_ko_KR
-SET Text = '헬리콥터와 전투기가 보다 효율적인 살인 기계로 발전함에 따라 보병은 제트 전투기가 제기하는 위험은 말할 것도 없고 점점 커지는 위협에 맞서 싸우도록 설계된 무기를 개발했습니다. 자주대공포는 빠르고 가벼우며 레이더를 포함하여 적 항공기에 "고정"되어 그 속으로 날아가 격렬하게 폭발하고 깨지기 쉬운 비행기에 모든 종류의 치명적인 피해를 입힐 수 있습니다. 그리고 헬기. 이에 대응하여 더 많은 스텔스 차량이 만들어졌고 더 나은 미사일 재밍 기술도 사용되었습니다. 그럼에도 불구하고 SAM 발사기는 적군 항공기를 실제로 뜨겁게 만들어 공수 위협으로부터 동료 지상 유닛을 보호하는데 도움이 됩니다.'
-WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_PEDIA';
+--UPDATE Language_ko_KR
+--SET Text = '헬리콥터와 전투기가 보다 효율적인 살인 기계로 발전함에 따라 보병은 제트 전투기가 제기하는 위험은 말할 것도 없고 점점 커지는 위협에 맞서 싸우도록 설계된 무기를 개발했습니다. 자주대공포는 빠르고 가벼우며 레이더를 포함하여 적 항공기에 "고정"되어 그 속으로 날아가 격렬하게 폭발하고 깨지기 쉬운 비행기에 모든 종류의 치명적인 피해를 입힐 수 있습니다. 그리고 헬기. 이에 대응하여 더 많은 스텔스 차량이 만들어졌고 더 나은 미사일 재밍 기술도 사용되었습니다. 그럼에도 불구하고 SAM 발사기는 적군 항공기를 실제로 뜨겁게 만들어 공수 위협으로부터 동료 지상 유닛을 보호하는데 도움이 됩니다.'
+--WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_PEDIA';

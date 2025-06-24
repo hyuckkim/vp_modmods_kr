@@ -92,6 +92,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>XML/Buildings.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>XML/FutureText.sql</FileName>
       </Action>
       <Action>
@@ -118,6 +123,10 @@
     <Folder Include="XML\Units\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XML\Buildings.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\FutureText.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
