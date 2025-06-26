@@ -81,7 +81,7 @@ Source: "..\JFD's Sovereignty for VP (v 15a) INT\*"; DestDir: "{app}\MODS\JFD's 
 Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
 Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
 Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
-Source: "..\(overhaul) Unique City States for VP KR (v 16)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP KR (v 16)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
+Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(text) Promotion Overhaul for VP\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
 Source: "..\(text) Promotion Overhaul for VP INT (AI)\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po 
 Source: "..\Vox Populi's Bare Necessities (v 12)\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn

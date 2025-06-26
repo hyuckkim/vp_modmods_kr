@@ -8,7 +8,7 @@
     <ModVersion>12</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>Translation of the World Congress Reformation</Teaser>
-    <Description>Translation of the World Congress Reformation into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]세계 의회 개선 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Description>Translation of the World Congress Reformation into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]세계 의회 개선 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.[NEWLINE][NEWLINE]http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266788</Description>
     <Authors>ㅇㅇ(周年)</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -28,7 +28,7 @@
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModReferences>
-    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266788</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <ReloadAudioSystem>true</ReloadAudioSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -86,34 +86,6 @@
       </Action>
     </ModActions>
     <ModDependencies>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Community Patch</Name>
-        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Vox Populi</Name>
-        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(1L) Community Patch INT</Name>
-        <Id>7e5f1de1-bb2f-4b4d-b326-06e2969d0738</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(2L) Vox Populi INT</Name>
-        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
       <Association>
         <Type>Mod</Type>
         <Name>World Congress Reformation</Name>

@@ -7,8 +7,8 @@
     <Guid>8d4681c5-bbb9-4c4f-9cc3-0ce7d0827810</Guid>
     <ModVersion>16</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the Unique City States.</Teaser>
-    <Description>Translation of the Unique City States into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]고유 도시 국가 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Teaser>AI Translation of the Unique City States.</Teaser>
+    <Description>AI Translation of the Unique City States for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 고유 도시 국가 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
     <Authors>molang, Gemini 2.5 Pro</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -42,20 +42,6 @@
         <Type>Mod</Type>
         <Name>(overhaul) Unique City States for VP</Name>
         <Id>b2eb6d1e-1fcb-4a0d-829c-51691aa3183a</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(2L) Vox Populi INT</Name>
-        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(2L) Vox Populi INT</Name>
-        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>

@@ -4,11 +4,11 @@
     <Name>Vox Populi's Bare Necessities INT</Name>
     <Stability>Beta</Stability>
     <Teaser>Translation of the Vox Populi's Bare Necessities</Teaser>
-    <Description>Translation of the Vox Populi's Bare Necessities into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 기본 필수품 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Description>Translation of the Vox Populi's Bare Necessities into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 기본 필수품 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.[NEWLINE][NEWLINE]http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266786</Description>
     <Authors>ㅇㅇ(周年)</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
-    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266786</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -21,13 +21,9 @@
     <ReloadUnitSystem>1</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
-    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
     <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Vox Populi's Bare Necessities" />
   </Dependencies>
   <References>
-    <Mod id="baec6cb7-36d9-425a-a72b-e8f7d7ad1b01" minversion="0" maxversion="999" title="Artisanix's Neolithic Wonders" />
-    <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="framedarchitecture's National Wonders Collection" />
     <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mod" />
   </References>
   <Blocks />

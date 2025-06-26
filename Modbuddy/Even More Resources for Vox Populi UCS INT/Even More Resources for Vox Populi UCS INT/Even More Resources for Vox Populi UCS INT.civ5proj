@@ -2,14 +2,14 @@
 <Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <ProjectGuid>{a633b6e2-9d30-4673-8dcb-a6e85695dc54}</ProjectGuid>
-    <Name>(6) Future Age for VP INT (AI)</Name>
-    <Guid>ed2bcb8e-7b51-4799-bd3d-aaf96bb00c54</Guid>
-    <ModVersion>10</ModVersion>
+    <ProjectGuid>{97436402-e79b-42fa-bca2-4429672c3265}</ProjectGuid>
+    <Name>Even More Resources for Vox Populi UCS INT</Name>
+    <Guid>de10665d-dab2-4251-8aee-e77fd22e4045</Guid>
+    <ModVersion>14</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>AI Translation of the Future Age for VP</Teaser>
-    <Description>AI Translation of the Future Age for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 미래 시대 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
-    <Authors>CAYM, Gemini 2.5 Pro</Authors>
+    <Teaser>Translation of the Even More Resources for Vox Populi UCS</Teaser>
+    <Description>Translation of the Even More Resources for Vox Populi UCS into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP와 UCS용 한층 더 많은 자원 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
@@ -17,53 +17,40 @@
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
     <SupportsMac>true</SupportsMac>
-    <AssemblyName>(6) Future Age for VP INT</AssemblyName>
-    <RootNamespace>(6) Future Age for VP INT</RootNamespace>
-    <ModReferences>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Enlightenment Era for VP INT</Name>
-        <Id>fa8e0af1-732f-4ee8-b6f6-41faa8c33a42</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-    </ModReferences>
+    <AssemblyName>Even More Resources for Vox Populi UCS INT</AssemblyName>
+    <RootNamespace>Even More Resources for Vox Populi UCS INT</RootNamespace>
+    <ModReferences />
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadAudioSystem>true</ReloadAudioSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
-    <ModDependencies>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(6) Future Age for VP</Name>
-        <Id>a1dfe224-6cd8-4519-a58a-c417b59cdf99</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-    </ModDependencies>
     <ModActions>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/Units/Promotions.sql</FileName>
+        <FileName>Core/GameDefines.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/Buildings.sql</FileName>
+        <FileName>Core/GameText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/FutureText.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/FutureText.xml</FileName>
+        <FileName>Core/GameText.xml</FileName>
       </Action>
     </ModActions>
-    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Even More Resources for Vox Populi - UCS</Name>
+        <Id>8e54eb87-31e8-4fcd-aafe-ede055b463d0</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -77,23 +64,18 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="XML\" />
-    <Folder Include="XML\Units\" />
+    <Folder Include="Core\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XML\Buildings.sql">
+    <Content Include="Core\GameDefines.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\FutureText.sql">
+    <Content Include="Core\GameText.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\FutureText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="XML\Units\Promotions.sql">
+    <Content Include="Core\GameText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

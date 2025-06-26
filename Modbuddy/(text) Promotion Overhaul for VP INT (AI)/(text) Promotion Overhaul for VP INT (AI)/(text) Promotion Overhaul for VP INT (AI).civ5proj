@@ -7,8 +7,8 @@
     <Guid>49e0bc9b-c3d5-40e9-bab8-e0bc44332b8c</Guid>
     <ModVersion>49</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the Promotion Overhaul for VP.</Teaser>
-    <Description>Translation of the Promotion Overhaul for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 승급 오버홀 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Teaser>AI Translation of the Promotion Overhaul for VP.</Teaser>
+    <Description>AI Translation of the Promotion Overhaul for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 승급 오버홀 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
     <Authors>HANDANI, Gemini 2.5 Pro</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -20,26 +20,12 @@
     <AssemblyName>(text) Promotion Overhaul for VP INT (AI)</AssemblyName>
     <RootNamespace>(text) Promotion Overhaul for VP INT (AI)</RootNamespace>
     <ModReferences />
-    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
         <Name>(text) Promotion Overhaul for VP</Name>
         <Id>6f162445-8dd2-4809-b8b4-aa405d4b2107</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Vox Populi</Name>
-        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(2L) Vox Populi INT</Name>
-        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>

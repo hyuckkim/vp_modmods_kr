@@ -8,7 +8,7 @@
     <ModVersion>23</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>AI Translation of the More Wonders for VP</Teaser>
-    <Description>AI Translation of the More Wonders for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 더 많은 불가사의 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Description>AI Translation of the More Wonders for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 더 많은 불가사의 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.[NEWLINE][NEWLINE]http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=300915</Description>
     <Authors>HANDANI</Authors>
     <SpecialThanks>ㅇㅇ, Gemini 2.5 Pro</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -22,74 +22,18 @@
     <ModReferences>
       <Association>
         <Type>Mod</Type>
-        <Name>Vox Populi's Bare Necessities</Name>
-        <Id>6eab2123-f4cb-401a-a165-55833306c1ae</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Even More Resources for Vox Populi</Name>
-        <Id>8e54eb87-31e8-4fcd-aafe-ede055b463d0</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Enlightment Era for VP</Name>
-        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>New Beliefs Mod</Name>
-        <Id>d600c443-2f04-469a-9475-e857284d5992</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(civ) Louisiana</Name>
-        <Id>3ea46c4f-6e13-46bf-ba28-71a3ffa85b53</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(overhaul) Enlightenment Era for VP INT</Name>
-        <Id>fa8e0af1-732f-4ee8-b6f6-41faa8c33a42</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(overhaul) Even More Resources for Vox Populi (v 14) INT</Name>
-        <Id>a9ab7ce3-f2ae-462d-a339-36c83678e604</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
         <Name>Vox Populi's Bare Necessities INT</Name>
         <Id>334be884-7eb4-409e-97c7-e3cbe13967d3</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModReferences>
-    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=300915</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
-        <Name>Vox Populi</Name>
-        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>(2L) Vox Populi INT</Name>
-        <Id>559f86b1-5b57-4975-a9ed-b9f3855506f5</Id>
+        <Name>(overhaul) More Wonders for VP</Name>
+        <Id>3e151552-1683-4881-b736-8ee89226f599</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>

@@ -22,7 +22,7 @@ UPDATE Language_ko_KR SET Text = 'IX'   WHERE Tag = 'TXT_KEY_ERA_7_ABBREV'; -- �
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_LEAGUE_WORLD_CONGRESS_4', '{@1_Ordinal} {@2_CityName} 세계 의회'),
-('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY', '세계 의회는 계속 성장하고 있습니다'),
+('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY', '세계 의회는 계속 성장하고 있습니다.'),
 ('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY_HELP',
 	'전 세계 각국의 급격한 변화는 국제 관계 또한 빠르게 변화시키고 있으며, 이로 인해 세계 의회는 새로운 도전에 대응하기 위해 적응해야 합니다. 의회를 이끌어갈 차기 개최국을 선정하기 위해 특별 회의가 소집됩니다.');
 --------------------------------------------------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ SET Text = REPLACE(Text, '병영, 무기고, 사관 학교, ', '병영, 무기�
 WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
 
 --------------------------------------------------------------------------------------------------------------------------
--- Tech
+-- 기술
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_EXPLORATION', '탐험'),
@@ -53,7 +53,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_EXPLORATION_QUOTE', '[NEWLINE][TAB][TAB]"우리는 탐험을 멈추지 않을 것이다. 그리고 우리의 모든 탐험이 끝나는 그날 비로소 우리는 최초의 시작점에 도착하여 그곳이 어디였는지 처음으로 알게 될 것이다."[NEWLINE][TAB][TAB] - T. S. 엘리엇[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_FLINTLOCK', '플린트락'),
-('TXT_KEY_TECH_EE_FLINTLOCK_DESC', '플린트락은 머스킷이나 소총의 화약에 불을 붙이기 위해 부싯돌을 사용하는 특정한 잠금 방식으로 설명할 수도 있고, 17세기, 18세기, 19세기의 무기 전체를 지칭할 수도 있습니다. 프랑스에서 처음 개발된 이 무기는 부싯돌 조각으로 만들어졌는데, 이 부싯돌을 강철(프리젠이라고 함)로 치면 불꽃이 생기고, 이 불꽃이 화약이 담긴 팬에 떨어지면서 불이 붙어 무기가 발사되는 방식이었습니다.[NEWLINE][NEWLINE]플린트락 소총은 이전의 매치락 소총보다 개량되었기 때문에 빠르게 인기를 얻었으며, 1630년대에는 영국 내전에서 복무하는 용기병이 선호하는 무기로 명성을 얻었고, 1700년대에는 대부분 유럽 보병의 제식 무기로 자리 잡았습니다. 19세기 중반까지 이러한 지위를 유지했지만, 이후 점차 폐지되고 퍼커션 캡으로 대체되었고, 나중에는 탄환 기반 시스템으로 대체되었습니다.'),('TXT_KEY_TECH_EE_FLINTLOCK_HELP', '화약 유닛의 생산력을 늘릴 수 있습니다.'),
+('TXT_KEY_TECH_EE_FLINTLOCK_DESC', '플린트락은 머스킷이나 소총의 화약에 불을 붙이기 위해 부싯돌을 사용하는 특정한 잠금 방식으로 설명할 수도 있고, 17세기, 18세기, 19세기의 무기 전체를 지칭할 수도 있습니다. 프랑스에서 처음 개발된 이 무기는 부싯돌 조각으로 만들어졌는데, 이 부싯돌을 강철(프리젠이라고 함)로 치면 불꽃이 생기고, 이 불꽃이 화약이 담긴 팬에 떨어지면서 불이 붙어 무기가 발사되는 방식이었습니다.[NEWLINE][NEWLINE]플린트락 소총은 이전의 매치락 소총보다 개량되었기 때문에 빠르게 인기를 얻었으며, 1630년대에는 영국 내전에서 복무하는 용기병이 선호하는 무기로 명성을 얻었고, 1700년대에는 대부분 유럽 보병의 제식 무기로 자리 잡았습니다. 19세기 중반까지 이러한 지위를 유지했지만, 이후 점차 폐지되고 퍼커션 캡으로 대체되었고, 나중에는 탄환 기반 시스템으로 대체되었습니다.'),
+('TXT_KEY_TECH_EE_FLINTLOCK_HELP', '화약 유닛의 생산력을 늘릴 수 있습니다.'),
 ('TXT_KEY_TECH_EE_FLINTLOCK_QUOTE', '[NEWLINE][TAB][TAB]"전쟁에 대비하는 것은 평화를 유지하는 가장 효과적인 수단이다."[NEWLINE][TAB][TAB] - 조지 워싱턴[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_FORTIFICATION', '성채'),
@@ -63,7 +64,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_EE_HUMANISM', '인본주의'),
 --TXT_KEY_TECH_EE_HUMANISM_DESC - 바닐라 게임의 TXT_KEY_TECH_HUMANISM_DESC 를 사용
-('TXT_KEY_TECH_EE_HUMANISM_QUOTE', '[NEWLINE][TAB][TAB]"인간이 무어란 말이냐? 불쌍하고 하찮은 모순 덩어리들이 아니더냐!"[NEWLINE][TAB][TAB] - 드라큘라 백작 [NEWLINE][TAB]'),
+('TXT_KEY_TECH_EE_HUMANISM_QUOTE', '[NEWLINE][TAB][TAB]"인간이 무어란 말이냐? 불쌍하고 하찮은 모순 덩어리들이 아니더냐!"[NEWLINE][TAB][TAB] - 드라큘라 백작[NEWLINE][TAB]'),
 ('TXT_KEY_TECH_EE_HUMANISM_HELP', '[COLOR_POSITIVE_TEXT]아카데미[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]응접실[ENDCOLOR]모두 건설할 수 있습니다. 이 두 건물은 상호 배타적이며, 각각 도시의 과학 또는 문화 산출량을 높여줍니다.'),
 
 ('TXT_KEY_TECH_EE_MANUFACTURING', '제조업'),
@@ -116,7 +117,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_PROMOTION_EE_DRYDOCK_HELP', '해군 유닛 [ICON_STRENGTH] 전투력 +15%');
 
 --------------------------------------------------------------------------------------------------------------------------
--- UNITS
+-- 유닛
 --------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
@@ -162,9 +163,9 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY_PEDIA', '17세기 중반에 총이 대량으로 보급되면서 전장은 선형 전술이 지배하게 되었고, 이에 따라 보병은 길고 얇은 대열로 배치되어 일제 사격을 했습니다. 전열은 2열, 3열, 또는 4열의 병사들로 구성되었습니다. 활강 머스킷총은 사거리가 비교적 짧았고, 재장전 속도도 느렸기 때문에 적의 사상자를 극대화하기 위해서는 대규모 대열 사격이 필수적이었습니다. 이 전열은 가장 광범위한 화력 배치를 가능하게 하므로 기본적인 전투 대형으로 여겨졌습니다. 나폴레옹 전쟁 이후, 보병은 주력 전투 부대로 계속 배치되었고, 경보병은 화력 지원을 제공하고 부대의 움직임을 엄호했습니다. 새로운 무기가 발명되면서 전열보병이라는 개념은 쇠퇴하기 시작했습니다. 대열을 지어 걷는 병사들은 너무나 쉬운 표적이 되었습니다. 소총의 정확도와 발사 속도가 향상되고, 개틀링 기관총과 기관총이 발명되면서, 근접전 보병은 적에게 접근하기도 전에 막대한 손실을 입게 되었습니다. 20세기에 들어서면서 보병들은 점차 전투에서 산병 스타일의 경보병 전술을 채택하게 되었고, 훈련을 위해 일반 보병 훈련을 유지하게 되었습니다.'),
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY_STRATEGY', '계몽 시대의 표준 화약 유닛으로, 테르시오보다 업그레이드되어 상당히 성능이 뛰어납니다. 전열보병은 계몽군의 중추를 이루며, 다른 근접 유닛과 싸우고 공성 및 원거리 부대를 보호하는 데 사용됩니다.');
 
--- 스웨덴 캐롤리언
+-- 스웨덴 카롤리너
 UPDATE Language_ko_KR
-SET Text = '캐롤리언은 계몽 시대 스웨덴 군대의 중추였습니다. 그들은 행동을 수행하더라도 매 턴마다 치유를 할 수 있는 행군 승급을 가지고 시작합니다. 캐롤리언은 위대한 장군과 함께 배치될 경우 전투력이 15% 증가하고, 유닛을 처치한 후 전진하면 인접한 모든 유닛에 피해를 입힙니다.'
+SET Text = '카롤리너는 계몽 시대 스웨덴 군대의 중추였습니다. 그들은 행동을 수행하더라도 매 턴마다 치유를 할 수 있는 행군 승급을 가지고 시작합니다. 카롤리너는 위대한 장군과 함께 배치될 경우 전투력이 15% 증가하고, 유닛을 처치한 후 전진하면 인접한 모든 유닛에 피해를 입힙니다.'
 WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- 미국 미니트맨
@@ -238,7 +239,7 @@ UPDATE Language_ko_KR
 SET Text = '적에게 빠른 공격을 가하는 데 탁월한 프랑스 고유 {TXT_KEY_UNIT_EE_2HANDER}입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_2HANDER}[ENDCOLOR] 승급 대신, 더 빠르게 움직이고 통제 구역(ZOC)를 무시할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
 UPDATE Language_ko_KR
-SET Text = 'The {TXT_KEY_UNIT_FRENCH_MUSKETEER} 프랑스 유닛으로 {TXT_KEY_UNIT_EE_2HANDER}을 대체 합니다.더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
+SET Text = '{TXT_KEY_UNIT_FRENCH_MUSKETEER}은 프랑스 유닛으로 {TXT_KEY_UNIT_EE_2HANDER}을 대체 합니다.더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
 
 -- 독일 란츠크네히트 (도펠죌트너)
@@ -254,6 +255,15 @@ WHERE Tag = 'TXT_KEY_UNIT_GERMAN_LANDSKNECHT_STRATEGY';
 UPDATE Language_ko_KR
 SET Text = '도펠죌트너 또는 "이중 급여 지급자"는 유럽 전쟁의 창총진 시대에 등장해 자원하여 최전선에서 싸우고 두 배의 급여를 받는 사람들을 말합니다. 부대의 약 4분의 1은 파이크병 앞에서 날개를 형성한 최전선 군인이었고, 파이크병은 석궁병 및/또는 화승총병을 방어했습니다. 도펠죌트너의 주된 무기는 가벼운 원거리 무기였지만, 적의 창과 그 휘두르는 자의 머리를 자르는 데 사용된 것은 거대한 양손검인 츠바이헨더였습니다!'
 WHERE Tag = 'TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_LANDSKNECHT_TEXT';
+
+-- 네덜란드 바다 거지(Geuzen)
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '{TXT_KEY_UNIT_PRIVATEER}', '카락')
+WHERE Tag = 'TXT_KEY_UNIT_SEA_BEGGAR_STRATEGY';
+
+UPDATE Language_ko_KR
+SET Text = '도시와 선박을 모두 공격하는 데 특화된 고유한 네덜란드 카락입니다. [COLOR_POSITIVE_TEXT]선봉[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]보급[ENDCOLOR] 승급을 가지고 시작합니다.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_SEA_BEGGAR';
 
 -- 테르시오
 UPDATE Language_ko_KR
@@ -375,7 +385,7 @@ WHERE Tag = 'TXT_KEY_WONDER_SISTINE_CHAPEL_HELP';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 아카데미
 ('TXT_KEY_BUILDING_EE_ACADEMY', '폴리테크닉'),
-('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 기술을 잠금 해제하면 [ICON_RESEARCH] 과학 +20과 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR].가 있어서는 안 됩니다.'),
+('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 기술을 잠금 해제하면 [ICON_RESEARCH] 과학 +20과 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR]가 있어서는 안 됩니다.'),
 ('TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY', '폴리테크닉은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 계몽 시대의 건물입니다. 응접실이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 과학 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_ACADEMY_PEDIA', '폴리테크닉 또는 그랑에콜은 프랑스와 함께 모로코, 튀니지 등의 다른 나라에도 있는 최고 수준의 전문 교육 기관으로, 아이비 리그나 옥스브리지 같은 다른 엘리트 기관과 비교할 수 있습니다. 최초의 폴리테크닉은 1794년 프랑스 혁명 당시 공학자와 군 장교 부족 문제를 해결하기 위해 수학자 가스파르 몽주에 의해 설립되었고, 1804년 나폴레옹 1세에 의해 군사화되었습니다. 프랑스 국방부의 감독을 받고 있습니다. 대학과는 별개로 운영되기 때문에 대부분 프랑스의 학사(Licence) 학위를 제공하지 않고, 공학계 준박사 학위(écoles d’ingénieurs)와 같은 그랑제콜 석사 학위를 제공합니다.'),
 -- 신학교
@@ -470,11 +480,3 @@ WHERE Tag = 'TXT_KEY_BUILDING_FORTRESS_STRATEGY';
 UPDATE Language_ko_KR
 SET Text = REPLACE(Text, '르네상스 시대', '계몽 시대')
 WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = REPLACE(Text, '근처 정글과 숲 타일은 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광이 +1 증가합니다.', '')
-WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_HELP';
-
-UPDATE Language_ko_KR
-SET Text = REPLACE(Text, '추가 문화를 생산하고 근처 정글 및 숲 타일의 문화 가치를 높입니다.', '그리고 추가적인 문화를 생산합니다.')
-WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_STRATEGY';

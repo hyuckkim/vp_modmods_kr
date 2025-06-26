@@ -72,7 +72,7 @@
 			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부를 수립하려면 종교가 있어야합니다.[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_POPULATION">
-			<Text>[COLOR_FADING_NEGATIVE_TEXT]총 인구 {1_Num} (you have {2_Num})를 가 있어야 이 정부를 수립할 수 있습니다.</Text>
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]총 인구가 {1_Num}명 있어야 이 정부를 수립할 수 있습니다. (현재 {2_Num}명)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_CHOOSE_GOVERNMENT_WARNING_REQUIRES_TECH">
 			<Text>[COLOR_FADING_NEGATIVE_TEXT]이 정부는 {1_Description} 기술을 연구해야 수립할 수 있습니다.[ENDCOLOR]</Text>
@@ -222,7 +222,7 @@
 			<Text>새로 해금된 법안</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FREE_REFORMS_LABEL">
-			<Text>[COLOR_JFD_SOVEREIGNTY]# of Free Reforms: {1_Num}[ENDCOLOR]</Text>
+			<Text>[COLOR_JFD_SOVEREIGNTY]# 무료 개정 횟수: {1_Num}[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_JFD_GOVERNMENT_OVERVIEW_FREE_REFORMS_LABEL_TT">
 			<Text>[ICON_JFD_REFORM_COOLDOWN] 대기시간을 증가시키지 않고 {1_Num} 회 법안을 개정할 수 있습니다.</Text>
