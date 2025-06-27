@@ -4,11 +4,11 @@
     <Name>(overhaul) More Wonders for VP INT</Name>
     <Stability>Beta</Stability>
     <Teaser>AI Translation of the More Wonders for VP</Teaser>
-    <Description>AI Translation of the More Wonders for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 더 많은 불가사의 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Description>AI Translation of the More Wonders for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 더 많은 불가사의 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.[NEWLINE][NEWLINE]http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=300915</Description>
     <Authors>HANDANI</Authors>
     <SpecialThanks>ㅇㅇ, Gemini 2.5 Pro</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
-    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=300915</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -21,18 +21,9 @@
     <ReloadUnitSystem>0</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
-    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP" />
   </Dependencies>
   <References>
-    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Vox Populi's Bare Necessities" />
-    <Mod id="8e54eb87-31e8-4fcd-aafe-ede055b463d0" minversion="0" maxversion="999" title="Even More Resources for Vox Populi" />
-    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightment Era for VP" />
-    <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mod" />
-    <Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" minversion="0" maxversion="999" title="(civ) Louisiana" />
-    <Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era for VP INT" />
-    <Mod id="a9ab7ce3-f2ae-462d-a339-36c83678e604" minversion="0" maxversion="999" title="(overhaul) Even More Resources for Vox Populi (v 14) INT" />
-    <Mod id="334be884-7eb4-409e-97c7-e3cbe13967d3" minversion="0" maxversion="999" title="Vox Populi's Bare Necessities INT" />
   </References>
   <Blocks />
   <Files>
@@ -41,7 +32,7 @@
     <File md5="51E090809380E081A1572F57CAAD550B" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
     <File md5="0BA3E426DF9FD3D3F0162CAFE89BCFBB" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
     <File md5="82AF5C7D789A260BC6DCD3289E3BC1DC" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
-    <File md5="0B444420A1EDD0E723E903AA99D4612C" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
+    <File md5="4496971D4749B20B6A1A91DEFACA2800" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
     <File md5="4C03D57C5E3ED4F5B9D66BB3A6512EFD" import="0">Buildings/BuildingsDefinitions.sql</File>
     <File md5="8E180D25AD5A3E7BD3257AC97177C1BD" import="0">Resources/ResourcesDefinitions.sql</File>
   </Files>

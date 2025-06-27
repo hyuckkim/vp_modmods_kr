@@ -3,12 +3,12 @@
   <Properties>
     <Name>World Congress Reformation INT</Name>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the World Congress Reformation into several non-English languages.</Teaser>
-    <Description>Translation of the World Congress Reformation into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]세계 의회 개선 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Teaser>Translation of the World Congress Reformation</Teaser>
+    <Description>Translation of the World Congress Reformation into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]세계 의회 개선 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.[NEWLINE][NEWLINE]http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266788</Description>
     <Authors>ㅇㅇ(周年)</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
-    <Homepage>http://gall.dcinside.com/mgallery/board/view/?id=civilization&amp;no=266788</Homepage>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -21,14 +21,9 @@
     <ReloadUnitSystem>1</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
-    <Mod id="7e5f1de1-bb2f-4b4d-b326-06e2969d0738" minversion="0" maxversion="999" title="(1L) Community Patch INT" />
-    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
     <Mod id="60f79b1d-92a7-40fc-900e-5d766a75ed42" minversion="0" maxversion="999" title="World Congress Reformation" />
   </Dependencies>
   <References>
-    <Mod id="2ff819d7-e472-42a1-9449-437235a28d5d" minversion="0" maxversion="999" title="Morality" />
   </References>
   <Blocks />
   <Files>

@@ -1,33 +1,3 @@
-UPDATE Units 
-SET ObsoleteTech = NULL 
-WHERE Type = 'UNIT_MARINE';
-
-INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost) 
-SELECT 'UNIT_XCOM_SQUAD', 'RESOURCE_ALUMINUM', 1;
-
-INSERT INTO Unit_FreePromotions (UnitType, PromotionType) 
-SELECT 'UNIT_XCOM_SQUAD', 'PROMOTION_AMPHIBIOUS';
-
-UPDATE LeagueSpecialSessions
-Set CivDelegates = 1, HostDelegates = 2, CityStateDelegates = 1
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_START_WORLD_CONGRESS';
-
-UPDATE LeagueSpecialSessions
-Set CivDelegates = 1, HostDelegates = 3
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_WELCOME_CITY_STATES';
-
-UPDATE LeagueSpecialSessions
-Set CivDelegates = 1, HostDelegates = 4, CityStateDelegates = 1
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_LEADERSHIP_COUNCIL';
-
-UPDATE LeagueSpecialSessions
-Set CivDelegates = 2, HostDelegates = 5
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_START_UNITED_NATIONS';
-
-/*UPDATE Resolutions
-Set NoProposalByPlayer = 0
-WHERE Type = 'RESOLUTION_CHANGE_LEAGUE_HOST';*/
-
 UPDATE Language_ko_KR
 SET Text = '[NEWLINE][ICON_BULLET]세계 불가사의와 인구에서 {1_NumVotes}표'
 WHERE Tag = 'TXT_KEY_LEAGUE_OVERVIEW_MEMBER_DETAILS_WONDER_VOTES';
@@ -71,59 +41,6 @@ WHERE Tag = 'TXT_KEY_RESOLUTION_DIPLO_VICTORY_HELP';
 UPDATE Language_ko_KR SET
 Text = REPLACE(Text, '도시 국가의 동맹까지', '도시 국가의 동맹 또는 도시 국가를 괴롭히는')
 WHERE Tag = 'TXT_KEY_RESOLUTION_OPEN_DOOR_HELP';
-
-UPDATE Resolutions
-Set LeadersVoteBonusOnFail = 0
-WHERE Type = 'RESOLUTION_DIPLOMATIC_VICTORY';
-
-UPDATE LeagueSpecialSessions
-Set TurnsBetweenSessions = TurnsBetweenSessions/1.25
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_START_WORLD_CONGRESS' ;
-
-UPDATE LeagueSpecialSessions
-Set TurnsBetweenSessions = TurnsBetweenSessions/1.25
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_WELCOME_CITY_STATES';
-
-UPDATE LeagueSpecialSessions
-Set TurnsBetweenSessions = TurnsBetweenSessions/1.25
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_LEADERSHIP_COUNCIL';
-
-UPDATE LeagueSpecialSessions
-Set TurnsBetweenSessions = TurnsBetweenSessions/1.25
-WHERE Type = 'LEAGUE_SPECIAL_SESSION_START_UNITED_NATIONS';
-
-UPDATE Defines
-SET Value = '-3.758'
-WHERE Name = 'DIPLO_VICTORY_CS_DELEGATES_CONSTANT';
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'EVENTS_LIBERATION' AND Value = 0;
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'EVENTS_MINORS_INTERACTION' AND Value = 0;
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'EVENTS_UNIT_UPGRADES' AND Value = 0;
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'EVENTS_RESOLUTIONS' AND Value = 0;
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'GLOBAL_CITY_AUTOMATON_WORKERS' AND Value = 0;
-
-UPDATE CustomModOptions
-SET Value = 1
-WHERE Name = 'BUILDINGS_CITY_AUTOMATON_WORKERS' AND Value = 0;
-
-UPDATE UnitPromotions
-SET IconAtlas = 'extraPromo_Atlas', PortraitIndex = 7
-WHERE Type = 'PROMOTION_WALL_STREET'
-AND EXISTS (SELECT * FROM IconTextureAtlases WHERE Atlas = 'extraPromo_Atlas');
 
 UPDATE Language_ko_KR SET
 Text = REPLACE(Text, '세계 의회를 통해 협력적으로만 건설할 수 있습니다.', '')

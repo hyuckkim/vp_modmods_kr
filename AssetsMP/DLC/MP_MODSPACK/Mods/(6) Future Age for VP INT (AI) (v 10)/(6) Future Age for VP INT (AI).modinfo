@@ -3,7 +3,7 @@
   <Properties>
     <Name>(6) Future Age for VP INT (AI)</Name>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the Future Age for VP.</Teaser>
+    <Teaser>AI Translation of the Future Age for VP</Teaser>
     <Description>AI Translation of the Future Age for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 미래 시대 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
     <Authors>CAYM, Gemini 2.5 Pro</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
@@ -21,26 +21,21 @@
     <ReloadUnitSystem>1</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
-    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
-    <Mod id="7e5f1de1-bb2f-4b4d-b326-06e2969d0738" minversion="0" maxversion="999" title="(1L) Community Patch INT" />
-    <Mod id="559f86b1-5b57-4975-a9ed-b9f3855506f5" minversion="0" maxversion="999" title="(2L) Vox Populi INT" />
-    <Mod id="4d22275e-c50f-4550-9c33-97a813b8559f" minversion="0" maxversion="999" title="(3aL) VP - EUI Compatibility Files INT" />
+    <Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" minversion="0" maxversion="999" title="(6) Future Age for VP" />
   </Dependencies>
   <References>
-    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era for VP" />
-    <Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" minversion="0" maxversion="999" title="Enlightenment Era for VP INT" />
   </References>
   <Blocks />
   <Files>
-    <File md5="178A6AD0934E6FF47DD48E6CD63A5660" import="0">XML/FutureText.sql</File>
-    <File md5="2511CA3537CE87B678ABE6DADBBDC634" import="0">XML/FutureText.xml</File>
+    <File md5="EEAEDC4431D06867AFE34D68111A83B3" import="0">XML/Buildings.sql</File>
+    <File md5="F8DAF9025C795C94CA0E79ED8A15640F" import="0">XML/FutureText.sql</File>
+    <File md5="A6A9398FF95902B91AA715CAE7E8FC2D" import="0">XML/FutureText.xml</File>
     <File md5="01B84BBDAACD7D44CA6BDDFC167A7890" import="0">XML/Units/Promotions.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
       <UpdateDatabase>XML/Units/Promotions.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Buildings.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.xml</UpdateDatabase>
     </OnModActivated>
