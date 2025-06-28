@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!--New Coporation Building-->
+		<Row Tag="TXT_KEY_BUILDING_VP_MALL">
+			<Text>Shopping Mall</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MALL_HELP">
+			<Text>When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_TOURISM] Tourism. Incoming [ICON_ARROW_LEFT] Trade Routes to this City generate +2 [ICON_GOLD] Gold for the City, and +2 [ICON_GOLD] Gold for [ICON_ARROW_RIGHT] Trade Route owner.[NEWLINE][NEWLINE]All Corporate Franchises in this City generate +4 [ICON_GOLD] Gold and +2 [ICON_CULTURE] Culture.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MALL_STRATEGY">
+			<Text>The Mall interacts with Corporations and the Trade Route subsystem on which they rely. In an appropriate City, it turns Franchises from a cost into a benefit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MALL_TEXT">
+			<Text>
+				[SPACE]During the 20th century, the advent of the automobile has created an urban and suburban landscape in which people live in one area but can shop, play and work elsewhere - often miles away from their homes. Nowhere is this more true than in the United States of America, whose citizens are noted for an almost fanatical devotion to their cars. This has had important social, environmental and economic affects upon life in America, leading to (among other things) the creation of that most American of institution - the shopping mall.
+				[NEWLINE][NEWLINE]
+				American shopping malls are surrounded by acres and acres of parking lots, and they may contain dozens (if not hundreds) of stores selling everything from clothing to jewelry to electronics to books to computers to videos. In some ways American shopping malls are akin in spirit to the old Arabian markets (although Americans don't particularly enjoy haggling and prices are generally fixed).
+				[NEWLINE][NEWLINE]
+				The earliest automobile-centered shopping center was the "Market Square," opened in Chicago, Illinois, in 1916. Constructed in Minnesota in 1992, the "Mall of America" is the largest mall in the world at time of writing. It contains over 500 shops, 80 restaurants, a theme park, hotel, and movie theatres. It is housed in a building large enough to hold over 30 Boeing 747 airplanes.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,12 @@
+UPDATE Language_en_US
+SET Text = Replace(Text, ' Requires a Zoo in the City.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_STADIUM_HELP';
+------------------------------
+-- Text
+------------------------------
+INSERT INTO Language_en_US (Tag, Text)
+VALUES	('TXT_KEY_BUILDING_RESTAURANT',			'Restaurant'),
+		('TXT_KEY_BUILDING_RESTAURANT_TEXT',		'The earliest modern-format "restaurants" to use that word in Paris were the establishments which served bouillon, a broth made of meat and egg which was said to restore health and vigour. The first restaurant of this kind was opened in 1765 or 1766 by Mathurin Roze de Chantoiseau on rue des Poulies, now part of the Rue de Louvre. Unlike earlier eating places, it was elegantly decorated, and besides meat broth offered a menu of several other "restorative" dishes, including macaroni. While not the first establishment where one could order food, or even soups, it is thought to be the first to offer a menu of available choices.[NEWLINE][NEWLINE]The restaurant of Hotel Ritz Paris, opened in 1898, was made famous by its chef of haute cuisine, Auguste Escoffier. In a time when kitchens were loud, riotous places where drinking on the job was commonplace, Escoffier demanded cleanliness, discipline, and silence from his staff. In bringing order to the kitchen, he tapped into his own military experience to develop the hierarchical brigade de cuisine system for organizing the kitchen staff which is still standard in many restaurants today. This elevated the profession to new heights of artistry and also profit.'),
+		('TXT_KEY_BUILDING_RESTAURANT_STRATEGY',	'The Restaurant continues the building line that began with the Arena, and in addition to instant Gold when constructed, it increases the value of Food producing Farms, and also Plantations, allowing them to increase the Culture output of your City. With a focus on Food you can work more Specialists, and the Restaurant makes an additional Specialist Unhappiness-free. Additionally, you can alleviate the Gold Maintenance of the building by pairing it with a Hotel, Agribusiness, and Marina, and you''ll even receive Tourism for doing so!'),
+		('TXT_KEY_BUILDING_RESTAURANT_HELP',		'+400 [ICON_GOLD] Gold when completed. +2 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism from Hotels, Agribusinesses, and Marina in this City.[NEWLINE][NEWLINE]Nearby Farm: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby Plantation: +2 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.');
+

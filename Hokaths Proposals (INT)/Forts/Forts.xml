@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!-- consider changing name to Military Base and renaming the building to Command Centre or similar -->
+		<Row Tag="TXT_KEY_IMPROVEMENT_FORT_2">
+			<Text>Airbase</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FORT_2_TEXT">
+			<Text>{TXT_KEY_IMPROVEMENT_FORT_2_HELP}[NEWLINE][NEWLINE]A {TXT_KEY_IMPROVEMENT_FORT_2} is a more sophisticated military infrastructure that receives the same bonuses as the {TXT_KEY_IMPROVEMENT_FORT}, but can even more concretely expand your reach across the world. Upon the advent of air travel, {TXT_KEY_IMPROVEMENT_FORT_2}s can be the recipients of Airlifts from your Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FORT_2_HELP">
+			<Text>Can only be built on top of {TXT_KEY_IMPROVEMENT_FORT}s and not next to other {TXT_KEY_IMPROVEMENT_FORT_2}s. Constructing the {TXT_KEY_IMPROVEMENT_FORT_2} will expand your Culture borders to this tile. [COLOR_NEGATIVE_TEXT]Costs[ENDCOLOR] 5 [ICON_GOLD] Gold per turn to maintain. +75% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this tile. Any enemy unit which ends its turn next to this tile takes 10 damage (damage does not stack with other improvements). Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FORT_2">
+			<Text>Build a [LINK=IMPROVEMENT_FORT_2]Airbase[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FORT_2_HELP">
+			<Text>Constructing the {TXT_KEY_IMPROVEMENT_FORT_2} will expand your Culture borders to this tile. [COLOR_NEGATIVE_TEXT]Costs[ENDCOLOR] 5 [ICON_GOLD] Gold per turn to maintain. +75% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this tile. Any enemy unit which ends its turn next to this tile takes 10 damage (damage does not stack with other improvements). Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FORT_2_REC">
+			<Text>It will increase improve the {TXT_KEY_IMPROVEMENT_FORT}'s bonuses and claim the Tile. However it will also cost more [ICON_GOLD] Gold.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
