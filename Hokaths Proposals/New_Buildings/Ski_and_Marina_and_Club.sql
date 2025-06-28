@@ -1,0 +1,133 @@
+------------------
+-- BuildingClasses
+INSERT INTO BuildingClasses
+		(Type, 							DefaultBuilding,		Description)
+VALUES	('BUILDINGCLASS_SKI_RESORT',	'BUILDING_SKI_RESORT',	'TXT_KEY_SKI_RESORT'),
+		('BUILDINGCLASS_MARINA', 		'BUILDING_MARINA', 		'TXT_KEY_MARINA'),
+		('BUILDINGCLASS_GOLFCLUB', 		'BUILDING_GOLFCLUB', 		'TXT_KEY_GOLFCLUB');
+
+------------
+-- Buildings
+INSERT INTO Buildings
+		(Type, 					BuildingClass, 				Cost,	HurryCostModifier,		GoldMaintenance,	MutuallyExclusiveGroup,	MinAreaSize,	NoUnhappfromXSpecialists,	PrereqTech,				IconAtlas, 						PortraitIndex,	Description,			Help,						Civilopedia, Strategy,					NearbyTerrainRequired,	Water,	NeverCapture,	ConquestProb)
+VALUES 	('BUILDING_SKI_RESORT', 'BUILDINGCLASS_SKI_RESORT',	2250,	-20,					8,					310,					0,				1,							'TECH_ROCKETRY',	'CORP2_ATLAS',		28,				'TXT_KEY_SKI_RESORT',	'TXT_KEY_SKI_RESORT_HELP',	'TXT_KEY_CIV5_SKI_RESORT_TEXT', 'TXT_KEY_SKI_RESORT_STRATEGY', 'TERRAIN_MOUNTAIN',		0,		0,				80),
+		('BUILDING_MARINA', 	'BUILDINGCLASS_MARINA',		2250,	-20,					8,					310,					10,				1,							'TECH_REFRIGERATION',	'CORP2_ATLAS',		27,				'TXT_KEY_MARINA',		'TXT_KEY_MARINA_HELP',		'TXT_KEY_CIV5_MARINA_TEXT', 'TXT_KEY_MARINA_STRATEGY',		null,					1,		0,				80),
+		('BUILDING_GOLFCLUB', 'BUILDINGCLASS_GOLFCLUB',	2250,	-20,					8,					310,					0,					1,							'TECH_ATOMIC_THEORY',	'CORP2_ATLAS',		16,				'TXT_KEY_GOLFCLUB',	'TXT_KEY_GOLFCLUB_HELP',	'TXT_KEY_CIV5_GOLFCLUB_TEXT', 'TXT_KEY_GOLFCLUB_STRATEGY', null,		0,		0,				80);
+
+------------------------------------
+-- Building_YieldPerXTerrainTimes100
+INSERT INTO Building_YieldPerXTerrainTimes100
+	(BuildingType, TerrainType, YieldType, Yield)
+VALUES 
+	('BUILDING_SKI_RESORT', 'TERRAIN_MOUNTAIN',	'YIELD_TOURISM', 250),
+	('BUILDING_SKI_RESORT', 'TERRAIN_MOUNTAIN',	'YIELD_GOLD', 250),
+	('BUILDING_SKI_RESORT', 'TERRAIN_MOUNTAIN',	'YIELD_CULTURE', 250),
+
+	('BUILDING_SKI_RESORT', 'TERRAIN_TUNDRA',	'YIELD_TOURISM', 50),
+	('BUILDING_SKI_RESORT', 'TERRAIN_TUNDRA',	'YIELD_GOLD', 50),
+	('BUILDING_SKI_RESORT', 'TERRAIN_TUNDRA',	'YIELD_CULTURE', 50);	
+
+
+INSERT INTO Building_TerrainYieldChanges
+	(BuildingType, TerrainType, YieldType, Yield)
+VALUES
+	('BUILDING_MARINA', 'TERRAIN_COAST', 'YIELD_GOLD', 1),
+	('BUILDING_MARINA', 'TERRAIN_COAST', 'YIELD_CULTURE', 1),
+	('BUILDING_MARINA', 'TERRAIN_COAST', 'YIELD_TOURISM', 1),
+
+	('BUILDING_SKI_RESORT', 'TERRAIN_SNOW', 'YIELD_GOLD', 1),
+	('BUILDING_SKI_RESORT', 'TERRAIN_SNOW', 'YIELD_CULTURE', 1),
+	('BUILDING_SKI_RESORT', 'TERRAIN_SNOW', 'YIELD_TOURISM', 1);
+	
+INSERT INTO Building_FeatureYieldChanges
+		(BuildingType, 		FeatureType, YieldType, Yield)
+SELECT 'BUILDING_MARINA', 'FEATURE_ATOLL', 'YIELD_TOURISM', 2 UNION ALL
+SELECT 'BUILDING_MARINA', 'FEATURE_ATOLL', 'YIELD_GOLD', 2 UNION ALL
+SELECT 'BUILDING_MARINA', 'FEATURE_ATOLL', 'YIELD_CULTURE', 2;
+
+INSERT INTO Building_SeaResourceYieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_MARINA', 'YIELD_GOLD', 2),
+	('BUILDING_MARINA', 'YIELD_CULTURE', 2),
+	('BUILDING_MARINA', 'YIELD_TOURISM', 2);
+
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_GOLFCLUB', 'IMPROVEMENT_TRADING_POST', 'YIELD_GOLD', 2),
+	('BUILDING_GOLFCLUB', 'IMPROVEMENT_TRADING_POST', 'YIELD_CULTURE', 2),
+	('BUILDING_GOLFCLUB', 'IMPROVEMENT_CUSTOMS_HOUSE', 'YIELD_GOLD', 2),
+	('BUILDING_GOLFCLUB', 'IMPROVEMENT_CUSTOMS_HOUSE', 'YIELD_CULTURE', 2);
+
+INSERT INTO Building_LakePlotYieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_GOLFCLUB', 'YIELD_GOLD', 2),
+	('BUILDING_GOLFCLUB', 'YIELD_CULTURE', 2);
+
+
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES	
+	('BUILDING_SKI_RESORT', 'YIELD_CULTURE_LOCAL', 5),
+	('BUILDING_MARINA', 'YIELD_FOOD', 3),
+	('BUILDING_GOLFCLUB', 'YIELD_GOLD', 2),
+	('BUILDING_GOLFCLUB', 'YIELD_CULTURE', 2);
+
+---------------------------------	
+-- Building_YieldFromYieldPercent
+INSERT INTO Building_YieldFromYieldPercent
+	(BuildingType, YieldIn, YieldOut, Value)
+VALUES	
+	('BUILDING_GOLFCLUB', 'YIELD_GOLD', 'YIELD_CULTURE', 5),
+	('BUILDING_SKI_RESORT', 'YIELD_TOURISM', 'YIELD_GOLD', 20),
+	('BUILDING_MARINA', 	'YIELD_TOURISM', 'YIELD_GOLD', 20);
+		
+-------------------
+-- Building_Flavors
+INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor)
+VALUES
+	('BUILDING_GOLFCLUB', 'FLAVOR_GOLD',		30),
+	('BUILDING_GOLFCLUB', 'FLAVOR_CULTURE',		30),
+	('BUILDING_SKI_RESORT', 'FLAVOR_GOLD',		30),
+	('BUILDING_SKI_RESORT', 'FLAVOR_CULTURE',	30),
+	('BUILDING_MARINA', 	'FLAVOR_GOLD',		30),	
+	('BUILDING_MARINA', 	'FLAVOR_I_SEA_TRADE_ROUTE',	10),
+	('BUILDING_MARINA', 	'FLAVOR_CULTURE',	30);
+
+INSERT INTO Building_ClassesNeededInCity 	
+		(BuildingType, 			BuildingClassType)
+VALUES
+	('BUILDING_SKI_RESORT', 'BUILDINGCLASS_HOTEL'),
+	('BUILDING_GOLFCLUB', 'BUILDINGCLASS_HOTEL'),
+	('BUILDING_GOLFCLUB', 'BUILDINGCLASS_STOCK_EXCHANGE'),
+	('BUILDING_MARINA', 'BUILDINGCLASS_SEAPORT'),	
+	('BUILDING_MARINA', 'BUILDINGCLASS_HOTEL');
+
+UPDATE Buildings SET
+	TradeRouteSeaGoldBonus = 500
+WHERE BuildingClass = 'BUILDINGCLASS_MARINA';
+
+
+----------------
+-- text
+----------------
+
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_SKI_RESORT_HELP', '+5 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Mountain tiles within the workable territory of the City. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Tundra tiles worked by the City, and for every Snow tile. 20% of [ICON_TOURISM] Tourism created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City must be built on or next to Mountain. City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Country Club or Marina.'),
+	('TXT_KEY_SKI_RESORT', 'Ski Resort'),
+	('TXT_KEY_CIV5_SKI_RESORT_TEXT', 'A ski resort is a resort developed for skiing, snowboarding, and other winter sports. In Europe, most ski resorts are towns or villages in or adjacent to a ski area   a mountainous area with pistes (ski trails) and a ski lift system. In North America, it is more common for ski areas to exist well away from towns, so ski resorts usually are destination resorts, often purpose-built and self-contained, where skiing is the main activity.'),	
+	('TXT_KEY_SKI_RESORT_STRATEGY', 'The Ski Resort is the ultimate building for a City with Mountain Tiles. It also provides major bonuses in the Tundra and Snow, producing large amounts of Gold, Culture, and Tourism and further converts Tourism into more Gold! If you have time to build a Ski Resort, you should! However the tourist industry of your City can only be so big! You will have to choose between the Marina, Country Club, and Ski Resort Buildings based on which Terrain is favoured.'),	
+
+	('TXT_KEY_MARINA_HELP', '+1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism from all Coast Tiles and an additional +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism from all Atolls and Sea Resources worked by the City. 20% of [ICON_TOURISM] Tourism created by the City counts as [ICON_GOLD] Gold Per Turn. [ICON_CARGO_SHIP] Sea Trade Routes gain +5 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]Can only be constructed in a Coastal City. City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Country Club or Ski Resort.'),
+	('TXT_KEY_MARINA', 'Marina'),
+	('TXT_KEY_CIV5_MARINA_TEXT', 'A Marina is a dock or basin with moorings and supplies for yachts and small boats. Marinas may be located along the banks of rivers connecting to lakes or seas. Marinas are often components of a resort and include all facilities for yachtsmen but also for other tourists.'),	
+	('TXT_KEY_MARINA_STRATEGY', 'The Marina is the ultimate building for a Coastal City. It produces large amounts of Gold, Culture, and Tourism and further converts Tourism into more Gold! If you have time to build a Marina, you should! However the tourist industry of your City can only be so big! You will have to choose between the Marina, Country Club, and Ski Resorts Buildings based on which Terrain is favoured.'),
+
+	('TXT_KEY_GOLFCLUB_HELP', '+2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all Villages, Towns, and Lakes worked by the City. 5% of [ICON_GOLD] Gold created by the City counts as [ICON_CULTURE] Culture Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Ski Resort or Marina.'),
+	('TXT_KEY_GOLFCLUB', 'Country Club'),
+	('TXT_KEY_CIV5_GOLFCLUB_TEXT', 'A country club is a privately owned club, often with a membership quota and admittance by invitation or sponsorship, that generally offers both a variety of recreational sports and facilities for dining and entertaining. In large Cities like London, gentlemen''s clubs took over some parts of the role occupied by coffee houses in the 18th-century. Later, in America, the first modern country clubs founded by upper-class elites between 1880 and 1930. The number of country clubs increased greatly with industrialization, the rise in incomes, and suburbanization in the 1920s. Over time the restrictions on membership have been liberalized, but the upper-class income bracket of the clientele has remained. At the other end of the spectrum is the health club, or gym, which has a reduced offering based purely on recreation. Somewhere between these two extremes are clubs where golf is the principal or sole sporting activity. Indeed, especially outside of the United States and Canada, it is common for a country club to be referred to simply as a golf club.'),	
+	('TXT_KEY_GOLFCLUB_STRATEGY', 'Rather than turning your City into a major tourist destination with the Marina or Ski Resort, you can keep it exclusive to your own wealthy upper class with the Country Club. You can still receive Gold and Culture from Tiles, but not Tourism. Furthermore, instead of producing Gold from Tourism, you will produce a smaller amount of Culture from Gold.');
