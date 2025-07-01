@@ -13,10 +13,10 @@ ELEVATION_RANDOM = 5;
 
 ElevationText = {
 	[ELEVATION_NO_CHANGE] = "*",
-	[ELEVATION_MOUNTAIN] = "Mountain",
-	[ELEVATION_HILLS] = "Hill",
-	[ELEVATION_FLAT] = "Flat",
-	[ELEVATION_RANDOM] = "Random",
+	[ELEVATION_MOUNTAIN] = "산",
+	[ELEVATION_HILLS] = "언덕",
+	[ELEVATION_FLAT] = "평지",
+	[ELEVATION_RANDOM] = "무작위",
 };
 
 NEAR_PLACEMENT = 1;		-- Spiral out from a central plot.
@@ -26,11 +26,11 @@ FILL_PLACEMENT = 4;		-- Fill the area around a cental plot.
 MAP_PLACEMENT = 5;		-- Place randomly on entire map.
 
 PlacementText = { 
-	[NEAR_PLACEMENT] = "Near", 
-	[FAR_PLACEMENT] = "Far", 
-	[RND_PLACEMENT] = "Random",
-	[FILL_PLACEMENT] = "Fill",
-	[MAP_PLACEMENT] = "Map",
+	[NEAR_PLACEMENT] = "가까이", 
+	[FAR_PLACEMENT] = "멀리", 
+	[RND_PLACEMENT] = "무작위",
+	[FILL_PLACEMENT] = "채우기",
+	[MAP_PLACEMENT] = "지도",
 };
 
 TERRAIN_BORDER_X = 0;

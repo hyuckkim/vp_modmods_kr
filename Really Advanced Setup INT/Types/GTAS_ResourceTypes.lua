@@ -15,10 +15,10 @@ local Groups = {
 };
 
 local Descriptions = {
-	[RESOURCE_GROUP_ALL] = "Random (All)",
-	[RESOURCE_GROUP_BONUS] = "Random (Bonus)",
-	[RESOURCE_GROUP_LUXURY] = "Random (Luxury)",
-	[RESOURCE_GROUP_STRATEGIC] = "Random (Strategic)",
+	[RESOURCE_GROUP_ALL] = "무작위 (전체)",
+	[RESOURCE_GROUP_BONUS] = "무작위 (보너스)",
+	[RESOURCE_GROUP_LUXURY] = "무작위 (사치)",
+	[RESOURCE_GROUP_STRATEGIC] = "무작위 (전략)",
 };
 
 
@@ -46,7 +46,7 @@ end
 
 --------------------------------------------------------------------------------
 function GetResourceGroupDescription(group)
-	return Descriptions[group] or "Resource Group?";
+	return Descriptions[group] or "자원 그룹?";
 end
 
 --------------------------------------------------------------------------------

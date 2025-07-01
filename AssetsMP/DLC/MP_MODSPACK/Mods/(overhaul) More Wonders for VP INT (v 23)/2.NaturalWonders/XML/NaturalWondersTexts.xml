@@ -141,7 +141,7 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI">
-			<Text>[NEWLINE][ICON_BULLET]이 자연 불가사의를 소유할 때마다 [ICON_PEACE] 신앙 50[NEWLINE][ICON_BULLET][ICON_GREAT_WORK][ICON_GREAT_WORK]에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1[NEWLINE][ICON_BULLET]모든 성지에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1</Text>
+			<Text>[NEWLINE][ICON_BULLET]이 자연경관을 소유할 때마다 [ICON_PEACE] 신앙 50[NEWLINE][ICON_BULLET][ICON_GREAT_WORK][ICON_GREAT_WORK]에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1[NEWLINE][ICON_BULLET]모든 성지에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_KAILASH">
 			<Text>[NEWLINE][ICON_BULLET]모든 기념비와 사원에서 [ICON_PEACE] 신앙 +2</Text>
@@ -500,13 +500,13 @@
 
 
 		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK">
-			<Text>자연 불가사의 개요</Text>
+			<Text>자연경관 개요</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK_TT">
-			<Text>발견된 모든 자연 불가사의와 그 능력을 보여줍니다</Text>
+			<Text>발견된 모든 자연경관과 그 능력을 보여줍니다</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATURAL_WONDER_OVERVIEW">
-			<Text>자연 불가사의 개요</Text>
+			<Text>자연경관 개요</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_NAME">
 			<Text>이름</Text>
@@ -537,11 +537,11 @@
 		</Row>
 		
 		<Row Tag="TXT_KEY_NATURAL_WONDER_NO_WONDER">
-			<Text>아직 자연 불가사의를 발견하지 못했습니다!</Text>
+			<Text>아직 자연경관을 발견하지 못했습니다!</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_NATURAL_WONDER_COUNT">
-			<Text>발견된 자연 불가사의: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}</Text>
+			<Text>발견된 자연경관: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NATURAL_WONDER_DISTANCE">
 			<Text>[COLOR_CYAN]{2_ClosestCity}[ENDCOLOR]에서 {1_Distance} 타일</Text>

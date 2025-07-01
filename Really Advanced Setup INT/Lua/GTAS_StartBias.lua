@@ -8,7 +8,7 @@ START_REGION_PRIORITY = 4;
 START_REGION_AVOID = 5;
 START_BIAS_COUNT = 5;
 
-START_BIAS_TEXT = { "Default", "Along Ocean", "Along River", "Region Priority", "Region Avoid" };
+START_BIAS_TEXT = { "기본", "대양을 따라", "강을 따라", "지역 우선 순위", "지역 무시" };
 
 function GetStartBiasText(startType)
 	return START_BIAS_TEXT[startType] or "";

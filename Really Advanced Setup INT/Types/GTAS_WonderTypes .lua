@@ -41,7 +41,7 @@ end
 --------------------------------------------------------------------------------
 function GetWonderText(feature)
 	if feature == nil then
-		return "Natural Wonder will be randomly selected.";
+		return "자연 불가사의가 무작위로 선택됩니다.";
 	end
 	
 	local text = "";
@@ -61,7 +61,7 @@ function GetWonderText(feature)
 	end
 
 	if text ~= "" then
-		text = "Plot Yield:   " .. text;
+		text = "구역 산출량:   " .. text;
 	else
 		text = Locale.ConvertTextKey("TXT_KEY_PEDIA_NO_YIELD");
 	end
@@ -73,7 +73,7 @@ function GetWonderText(feature)
 
 		if resource ~= nil then
 			if resourceText == "" then
-				resourceText = Locale.ConvertTextKey("[NEWLINE]Sprinkles:   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description));
+				resourceText = Locale.ConvertTextKey("[NEWLINE]스프링클:   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description));
 			else
 				resourceText = resourceText .. "   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description);
 			end

@@ -1,7 +1,7 @@
 
--- AdvancedSetup - Part of Really Advanced Setup Mod
--- This is a greatly modified version of the original game file.
--- Most code has been changed and/or moved to other files.
+-- AdvancedSetup - Really Advanced Setup Mod의 일부
+-- 원본 게임 파일을 대폭 수정한 버전입니다.
+-- 대부분의 코드가 변경되었거나 다른 파일로 이동되었습니다.
 
 -------------------------------------------------
 -- Advanced Settings Screen
@@ -153,18 +153,18 @@ function ValidateControls()
 
 	if isValid then
 		if isWarning then
-			Controls.StartLabel:SetText("[COLOR0:195:180:60:255]Start Game[ENDCOLOR]");
+			Controls.StartLabel:SetText("[COLOR0:195:180:60:255]게임 시작[ENDCOLOR]");
 		else
-			Controls.StartLabel:SetText("[COLOR_BEIGE]Start Game[ENDCOLOR]");
+			Controls.StartLabel:SetText("[COLOR_BEIGE]게임 시작[ENDCOLOR]");
 		end
 	else
-		Controls.StartLabel:SetText("[COLOR0:210:70:70:255]Start Game[ENDCOLOR]");
+		Controls.StartLabel:SetText("[COLOR0:210:70:70:255]게임 시작[ENDCOLOR]");
 	end
 
 	if MapData.isRandomWorldSize then
-		Controls.CivsButton:SetText("?  Players");
+		Controls.CivsButton:SetText("?  플레이어");
 	else
-		Controls.CivsButton:SetText(string.format("%d  Players", SlotData:GetSlotCount()));
+		Controls.CivsButton:SetText(string.format("플레이어 %d", SlotData:GetSlotCount()));
 	end
 end
 LuaEvents.GTAS_ValidateControls.Add(ValidateControls)
@@ -181,15 +181,15 @@ function ValidateStart()
 		newline = "[NEWLINE]";
 	end
 
-	-- Hard warnings located here. -----------------------------------------------------------------
-	-- Game will not be allowed to start if one of these are triggered.
+-- 심각한 경고는 여기에 있습니다. -----------------------------------------------------------------
+-- 이 중 하나가 발생하면 게임을 시작할 수 없습니다.
 
 	local humanSlot = SlotData:GetSlot(0);
 
 	if humanSlot ~= nil and not MapData.isRandomWorldSize then
 		isValid = false;
 
-		-- Check if there is two or more teams.
+		-- 팀이 2개 이상 있는지 확인하세요.
 		for _, slot in SlotData:AISlotList() do
 			if slot.team ~= humanSlot.team then
 				isValid = true;
@@ -198,11 +198,11 @@ function ValidateStart()
 		end
 
 		if not isValid then
-			AddHelpText(Locale.ConvertTextKey("You must have at least 2 teams!"));
+			AddHelpText(Locale.ConvertTextKey("최소 2개의 팀이 있어야 합니다!"));
 		end
 	end
 
-	-- Count active civs.
+	-- 활동 중인 문명을 세어보세요.
 	local activeCivs = 0;
 	for civType, _ in pairs(MapData.activeCivs) do
 		if MapData.activeCivs[civType] then
@@ -210,39 +210,39 @@ function ValidateStart()
 		end
 	end
 
-	-- Check for at least one active civ.
+	-- 적어도 하나의 활성화된 문명이 있는지 확인하세요.
 	if activeCivs == 0 then
 		isValid = false;
-		AddHelpText("At least one Civilization must be active!");
+		AddHelpText("최소한 하나의 문명이 활성화되어 있어야 합니다!");
 	end
 
-	-- Soft warnings located here. ---------------------------------------------------------------------
-	-- Game can be allowed to start even if one of these are triggered. (These only happen if start is valid.)
+-- 약한 경고는 여기에 있습니다. ---------------------------------------------------------------------
+-- 이러한 경고 중 하나가 발생하더라도 게임을 시작할 수 있습니다. (시작이 유효한 경우에만 발생합니다.)
 
-	-- Are there enough active civs?
+	-- 활동하는 문명이 충분한가요?
 	if isValid then
 		if activeCivs == 1 then
 			isWarning = true;
-			AddHelpText("There is only one active Civ. This will cause duplicate Civs to appear in the Game!");
+			AddHelpText("활성화된 문명이 하나뿐입니다. 이로 인해 게임에 중복된 문명이 등장하게 됩니다!");
 		elseif not MapData.isRandomWorldSize and activeCivs < SlotData:GetSlotCount() then
 			isWarning = true;
-			AddHelpText("There are less active Civs than players. This will cause duplicate Civs to appear in the Game!");
+			AddHelpText("플레이어보다 활동하는 문명의 수가 적습니다. 이로 인해 게임에 중복된 문명이 등장하게 됩니다!");
 		end
 
 		if MapData.disableAllNaturalWonders then
 			isWarning = true;
-			AddHelpText("All Natural Wonders are disabled!");
+			AddHelpText("모든 자연 불가사의가 비활성화되었습니다!");
 		end
 		
 		if GameData.disableNukes then
 			isWarning = true;
-			AddHelpText("All Nuclear weapons are disabled!");
+			AddHelpText("모든 핵무기가 비활성화되었습니다!");
 		end
 	end
 
-	-- If no warnings then let the player know that it's OK to start the game.
+	-- 경고가 없다면 플레이어에게 게임을 시작해도 괜찮다는 것을 알려주세요.
 	if helpText == "" then
-		helpText = "Start the game using the current settings.";
+		helpText = "현재 설정을 사용하여 게임을 시작합니다.";
 	end
 
 	return isValid, isWarning, helpText;
@@ -266,13 +266,13 @@ ContextPtr:SetInputHandler(InputHandler);
 
 ----------------------------------------------------------------
 function StartMod()
-	local version = Modding.GetActivatedModVersion(MOD_ID) or "Unknown";
+	local version = Modding.GetActivatedModVersion(MOD_ID) or "알 수 없음";
 	
-	print(string.format("(Really Advanced Setup)  Version: %s  -------------------------------------------------------------------------------", version));
+	print(string.format("(진짜 고급 설정)  버전: %s  -------------------------------------------------------------------------------", version));
 
-	Controls.MainTitle:SetToolTipString(string.format("Really Advanced Setup Mod by General Tso. Version: %s", version));
+	Controls.MainTitle:SetToolTipString(string.format("General Tso의 진짜 고급 설정 모드. 버전: %s", version));
 
-	-- Load data into DataManager.
+	-- DataManager에 데이터를 로드합니다.
 	LoadData();
 	
 	if GlobalData.currentMainPanel == CIV_BONUS_MAIN_PANEL then
@@ -289,7 +289,7 @@ function StartMod()
 end
 
 
--- Start The Mod -------------------------------------------------------------------------------------------------------------------------------
+-- 모드 시작 -------------------------------------------------------------------------------------------------------------------------------
 StartMod();
 
 
