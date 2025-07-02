@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{8d03a9c8-298d-4abe-9696-7e9b3931f69d}</ProjectGuid>
+    <Name>Recon Pay (Core1) Exploration Balancer (v 3) INT</Name>
+    <Guid>176fbd92-733c-4fee-ac13-0d79b02b3c23</Guid>
+    <ModVersion>3</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Recon Pay (Core1) Exploration Balancer</Teaser>
+    <Description>Translation of the Recon Pay (Core1) Exploration Balancer into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]정찰 유닛 이동 강화 (코어 1) 탐사 밸런스 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Civ5Mod1</AssemblyName>
+    <RootNamespace>Civ5Mod1</RootNamespace>
+    <ModReferences />
+    <Homepage>http://github.com/handanikr</Homepage>
+    <ReloadUnitSystem>false</ReloadUnitSystem>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Promos.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Recon Pay (Core1) Exploration Balancer</Name>
+        <Id>1cff1964-6f7c-413f-8c44-af802fc65086</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Promos.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
