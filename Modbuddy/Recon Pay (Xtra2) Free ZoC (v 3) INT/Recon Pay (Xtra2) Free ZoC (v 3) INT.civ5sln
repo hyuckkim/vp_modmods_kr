@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Recon Pay (Xtra2) Free ZoC (v 3) INT", "Recon Pay (Xtra2) Free ZoC (v 3) INT\Recon Pay (Xtra2) Free ZoC (v 3) INT.civ5proj", "{9F74A1D7-0B15-407E-A203-345A79DDBBB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Default|x86.ActiveCfg = Default|x86
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Default|x86.Build.0 = Default|x86
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Package Only|x86.ActiveCfg = Package Only|x86
+		{9F74A1D7-0B15-407E-A203-345A79DDBBB7}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Recon Pay (Xtra1) Arctician (v 2) INT", "Recon Pay (Xtra1) Arctician (v 2) INT\Recon Pay (Xtra1) Arctician (v 2) INT.civ5proj", "{AC5BEC44-9259-4575-B27B-A2EA236CE66E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Default|x86.ActiveCfg = Default|x86
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Default|x86.Build.0 = Default|x86
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Package Only|x86.ActiveCfg = Package Only|x86
+		{AC5BEC44-9259-4575-B27B-A2EA236CE66E}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
