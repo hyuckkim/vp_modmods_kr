@@ -152,5 +152,5 @@
 - [City State Leaders II](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
   도시 국가에 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
 
-  - [Reworked Top Panel](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  
+ - [Reworked Top Panel](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  
   게임 내에서 상단 패널 UI를 개선해주는 모드입니다. 현재 VP와 호환되지 않아 흔적만 남겨두고 계획은 드랍되었습니다.  
