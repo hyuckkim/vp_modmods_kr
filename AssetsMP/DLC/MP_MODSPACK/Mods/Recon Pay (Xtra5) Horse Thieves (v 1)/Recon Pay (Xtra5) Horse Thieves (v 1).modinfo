@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bb278f0a-a6aa-4a34-ba42-c68514dbba85" version="1">
+  <Properties>
+    <Name>Recon Pay (Xtra5) Horse Thieves</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>allows recon to increase moves near horses</Teaser>
+    <Description>allows recon to increase moves near horses</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>vp community</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="999" title="Hokath's Proposals" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="C046CE366E74ACD7A862530CE099522B" import="0">HorseThievesPromos.xml</File>
+    <File md5="9E6E78F5100953A99346A9A87A2058A2" import="0">HorseThievesDB.sql</File>
+    <File md5="0D34B7AEB93E42B72A22EDBD67DA3D66" import="0">HorseThieves.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>HorseThievesPromos.xml</UpdateDatabase>
+      <UpdateDatabase>HorseThievesDB.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="HorseThieves.lua">
+      <Name>Horse Thieves</Name>
+      <Description>adds movement buff to recon near horses</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

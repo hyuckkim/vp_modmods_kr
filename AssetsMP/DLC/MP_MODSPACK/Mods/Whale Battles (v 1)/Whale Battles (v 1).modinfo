@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f524c8b5-8ab9-4c64-b4b5-5be1820a2515" version="1">
+  <Properties>
+    <Name>Whale Battles</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>whales migrate around and can be captured by workboats</Teaser>
+    <Description>whale resource spawns whale units, which toggle between a resource and unit on barbarian turns.  Workboats can capture whales for reward.</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>LeeS, CF and VP communities</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </References>
+  <Blocks>
+    <Mod id="cfb8e034-1190-4016-b9a1-8f7138dee5bc" minversion="0" maxversion="999" title="Wildlife (Reborn)" />
+  </Blocks>
+  <Files>
+    <File md5="AFAB2A0D5AEE2EB0D843F4C5C135FB76" import="1">Basilosauros/basilosaurus.DDS</File>
+    <File md5="87E1369CF3A38511A1B3EEB5B77F6082" import="1">Basilosauros/basilosaurus.ftsxml</File>
+    <File md5="6EC9427DDF56C457293D1A36E8A8FC81" import="1">Basilosauros/basilosaurus.fxsxml</File>
+    <File md5="036467AC82B1BAA74400193D67D4C3C5" import="1">Basilosauros/basilosaurus.gr2</File>
+    <File md5="D5BC4B2A855C3F216C14B08DD9034A60" import="1">Basilosauros/basilo_attack_anim.gr2</File>
+    <File md5="54EE0B166AC6273071EB0E6BBBAECF92" import="1">Basilosauros/basilo_dead_anim.gr2</File>
+    <File md5="B2B1AA34840A692A79732F638C8C3CF9" import="1">Basilosauros/basilo_die_anim.gr2</File>
+    <File md5="FE9B7A061A5A03BE739C535F4613F0A4" import="1">Basilosauros/basilo_stand_anim.gr2</File>
+    <File md5="6381236B3B2FF0837CD6829277710236" import="1">Basilosauros/basilo_swim_anim.gr2</File>
+    <File md5="5962DF174D7DC1AE3A7381BBF3362C23" import="0">BasilosaurusUnitArt.xml</File>
+    <File md5="84D305A5B28F54ED78DCD80CD13DB42F" import="1">IconMap/WhaleUnitIcon.dds</File>
+    <File md5="2C2EF2EE68105DA958A63BD3F568417A" import="0">WhaleBattles.lua</File>
+    <File md5="A408FECE41F99C31B1CA8FEBE1E3B1A9" import="0">WhaleBattles.xml</File>
+    <File md5="DD31721675EBD00CB3E750FE9B45DCAD" import="0">WhaleBattles.sql</File>
+    <File md5="FA8203FF1B69DC87CE6FA1BAADE16BB4" import="1">IconMap/Wildlife_Dinos_Art_128.dds</File>
+    <File md5="DE73774C0164A5E5054868652169E23C" import="1">IconMap/Wildlife_Dinos_Art_256.dds</File>
+    <File md5="AC2DE9E711D07130EE663DF22829D4E6" import="1">IconMap/Wildlife_Dinos_Art_32.dds</File>
+    <File md5="5A94759A4848CE68F490C71D21D6ECE2" import="1">IconMap/Wildlife_Dinos_Art_45.dds</File>
+    <File md5="DD78D00A2F8BCCC7DA4697914A816F0D" import="1">IconMap/Wildlife_Dinos_Art_64.dds</File>
+    <File md5="ADFFE733E7463F40C728680C51DF18EC" import="1">IconMap/Wildlife_Dinos_Art_80.dds</File>
+    <File md5="7C760635962FDE641DFA2DDFB12A1476" import="0">IconTextureAtlases.xml</File>
+    <File md5="B048F4C56451F33F881C3A9287C34903" import="0">UnitSound.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>BasilosaurusUnitArt.xml</UpdateDatabase>
+      <UpdateDatabase>IconTextureAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>UnitSound.xml</UpdateDatabase>
+      <UpdateDatabase>WhaleBattles.sql</UpdateDatabase>
+      <UpdateDatabase>WhaleBattles.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="WhaleBattles.lua">
+      <Name>whale battles</Name>
+      <Description>whale battles</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

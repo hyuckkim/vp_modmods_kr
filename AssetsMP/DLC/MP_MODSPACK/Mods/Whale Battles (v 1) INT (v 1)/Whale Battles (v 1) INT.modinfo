@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b9f856bf-d13a-4628-a10b-ceab6f7081a1" version="1">
+  <Properties>
+    <Name>Whale Battles (v 1) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Whale Battles</Teaser>
+    <Description>Translation of the Whale Battles into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]포경 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="f524c8b5-8ab9-4c64-b4b5-5be1820a2515" minversion="0" maxversion="999" title="Whale Battles" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1EA1F0525177A56F58F813BB8658F5FA" import="0">WhaleBattles.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>WhaleBattles.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

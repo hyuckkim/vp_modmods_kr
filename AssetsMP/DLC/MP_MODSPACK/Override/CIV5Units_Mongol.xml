@@ -12438,7 +12438,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_LABORATORY_HELP"> 
 			<Text>
-				+4 [ICON_RESEARCH] Science from [ICON_RES_OIL] Oil, Academies worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Hospitals, Factories, and Medical Labs, and [ICON_GREAT_SCIENTIST] Great Scientists are produced 33% more quickly in this City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Nearby [ICON_RES_TORTOISE]: +2 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Nearby [ICON_RES_ALUMINUM] Aluminum: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_URANIUM] Uranium: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_TITANIUM] Titanium: +1 [ICON_PRODUCTION] Production, +3 [ICON_RESEARCH] Science.
+				+4 [ICON_RESEARCH] Science from [ICON_RES_OIL] Oil, Academies worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Hospitals, Factories, and Medical Labs, and [ICON_GREAT_SCIENTIST] Great Scientists are produced 33% more quickly in this City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Nearby [ICON_RES_ALUMINUM] Aluminum: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_URANIUM] Uranium: +4 [ICON_RESEARCH] Science.[NEWLINE]Nearby [ICON_RES_TITANIUM] Titanium: +1 [ICON_PRODUCTION] Production, +3 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Nearby [ICON_RES_TORTOISE]: +2 [ICON_RESEARCH] Science.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_LABORATORY_STRATEGY"> 
@@ -14812,7 +14812,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP"> 
 			<Text>
-				+1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills near this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in this City. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.
+				+1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills near this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in this City. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.[NEWLINE][NEWLINE]Nearby [ICON_RES_LAVENDER] Lavender: +3 [ICON_CULTURE] Culture.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY"> 
@@ -41713,6 +41713,16 @@
 				Resource Accessed
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_STORM_HELP"> 
+			<Text>
+				A storm is any disturbed state of the natural environment or the atmosphere.  It may be marked by significant disruptions to normal conditions such as strong wind, tornadoes, hail, thunder and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), wind transporting some substance through the atmosphere such as in a dust storm, among other forms of severe weather.  Storms have the potential to harm lives and property, and limit human mobility and visibility.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_STORM_TEXT"> 
+			<Text>
+				Storms develop spontaneously in ocean and coast tiles.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SUNK_COURT"> 
 			<Text>
 				At its height, Tiwanaku was home to up to 40,000 people and was centered around a ceremonial core featuring numerous buildings, platforms, and courtyards, the largest and most important being the Semi-subterranean Court, the Kalasasaya and Putuni Complex (a combination of raised platforms and courtyards), the Akapana (a complicated mound structure believed to be a recreation of the Quimsachata mountains), and a later temple complex, the Pumapunku.[NEWLINE][NEWLINE]The sunken court style of building is found in many of the archaeological sites which pre-date the founding of Tiwanaku in the regions surrounding Lake Titicaca such as Pucara and Chiripa, but the Semi-subterranean Court is the largest found to date. Its increased size was likely a statement of growing political power by the emerging Tiwanaku polity. Completed between 300-400 C.E., it is estimated to be the earliest monumental stone building constructed in the central ceremonial area.[NEWLINE][NEWLINE]The central stones on three of the walls (north, east, and west) of the Semi-subterranean Court mark viewing points for various astronomical events, such as solstice and equinox sunrises and sunsets, the rising and setting of important stars, and even point the way to the celestial South Pole, the pivot of the southern hemisphere. Those stones were auxiliary for participants of religious rituals to orient themselves for the appropriate celestial event.
@@ -41881,6 +41891,21 @@
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS__TITLE6"> 
 			<Text>
 				Coastal Improvements
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_TEXT"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
@@ -46034,6 +46059,11 @@ Nebuchadnezzar II died in Babylon in 562 BC. He is remembered as a successful mi
 				Happiness Bonus
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MIGRATORY_WHALE_TEXT"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_NUTMEG_TEXT"> 
 			<Text>
 				Nutmeg trees are evergreens indigenous to the Banda Islands in Indonesia. Nutmeg has been used in the culinary culture of several civilizations for centuries. In Penang cuisine it is often boiled or blended as a drink; in India it used as a sweet; and in Middle Eastern cooking it is used to spice savory dishes. But it was the discovery of the source of nutmeg in Indonesia in 1511 AD by the Portuguese explorer Albuquerque that set off the rush to import the spice to the tables of Europe.
@@ -48564,6 +48594,11 @@ Nebuchadnezzar II died in Babylon in 562 BC. He is remembered as a successful mi
 		<Replace Tag="TXT_KEY_CIV5_WARSAW_TITLE"> 
 			<Text>
 				Warsaw
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_WASHOUT"> 
+			<Text>
+				[COLOR_MENU_BLUE]Washout[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_WELLINGTON_TEXT"> 
@@ -75508,6 +75543,16 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Chimborazo
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_COASTAL"> 
+			<Text>
+				Coastal
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_COASTAL_PEDIA"> 
+			<Text>
+				Coastal hexes are clear (no forest, jungle, marsh) hexes directly adjacent to water. They provide movement bonuses to some units.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_CRATER"> 
 			<Text>
 				Barringer Crater
@@ -75758,6 +75803,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		<Replace Tag="TXT_KEY_FEATURE_SRI_PADA"> 
 			<Text>
 				Sri Pada
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_STORM"> 
+			<Text>
+				Restricted Visibility & Movement
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_TSOODZIL"> 
@@ -95860,6 +95910,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Fishing Boats
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_FISHWHALING"> 
+			<Text>
+				Whaling
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_FORT"> 
 			<Text>
 				Fort
@@ -96229,6 +96284,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Only with the Alliance of the Cahokia people allow a civilization enjoy such a beauty of a structure.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MWHALE"> 
+			<Text>
+				[ICON_RES_WHALE] Whales
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_OFFSHORE_PLATFORM"> 
 			<Text>
 				Offshore Platform
@@ -96353,6 +96413,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT"> 
 			<Text>
 				{TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP}[NEWLINE][NEWLINE]Haciendas are colonial estates constructed by the Spanish for the administration and extraction of resources from their native subjects. Haciendas were based on grants of property and enterprise, rather than the strict grant of indigenous labor as described by the older Encomienda system. Haciendas were generally large estates, but the nature of the work varied from plantations, to mining, to factories.[NEWLINE][NEWLINE]The owner of a Hacienda was called a Hacendado, but the wealthy landowners rarely visited their holdings and preferred to live in nearby cities. Day-to-day operations of a Hacienda were the responsibility of hired managers. Some unusually large and profitable Haciendas were the property of the Roman Catholic Church, exacerbating tension between native laborers and their Christian taskmasters.[NEWLINE][NEWLINE]The Hacienda system was abolished in most countries after the dissolution of the Spanish Empire, but with mixed results. Efforts to break apart the large estates into individual holdings for subsistence farmers led to crushing poverty in some South American nations. In contrast, Latin American and Filipino Haciendas were mostly left intact, but without the same legal standing or permissions of their colonial past.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_STORM"> 
+			<Text>
+				Storm
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SUNK_COURT"> 
@@ -159237,6 +159302,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Bonus vs Tanks (100)
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_ARCTICIAN"> 
+			<Text>
+				Arctician
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_ATTACK_BONUS"> 
 			<Text>
 				Combat Bonus When Attacking (25)
@@ -159417,6 +159487,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Ignores Terrain Cost
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_IGNORE_ZOC"> 
+			<Text>
+				Ignores Zone of Control
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_INTERCEPTION_I"> 
 			<Text>
 				Interception (20)
@@ -159527,6 +159602,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Heals 25 Damage If Kills a Unit
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_PATHFINDER"> 
+			<Text>
+				Exploration Logistics
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_PATHFINDER_2"> 
+			<Text>
+				Combat Logistics
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_RANGED_SUPPORT_FIRE"> 
 			<Text>
 				Ranged Support Fire
@@ -159560,6 +159645,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_SIGHT_PENALTY"> 
 			<Text>
 				Limited Visibility
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_SLOW_WOODS"> 
+			<Text>
+				Obstructed Movement in Wooded Terrain
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_SPAWN_GENERALS_I"> 
@@ -167586,6 +167676,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				+25%[ICON_RANGE_STRENGTH]Offensive RCS [COLOR:255:230:85:255]vs Naval and Land Units[ENDCOLOR].
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_WEATHER"> 
+			<Text>
+				Weather Sensitive
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_WEATHER_HELP"> 
+			<Text>
+				-20% [ICON_WAR] [COLOR_NEGATIVE_TEXT]Attack Strength[ENDCOLOR] & Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALHAMBRA"> 
 			<Text>
 				[COLOR:100:155:60:255]Jinete[ENDCOLOR]
@@ -167603,7 +167703,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Embarked Unit [COLOR:255:230:85:255]can Enter Ocean[ENDCOLOR]. +2 [ICON_VP_VISION] Sight.
+				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Embarked Unit [COLOR:255:230:85:255]can Enter Ocean[ENDCOLOR]. +2 [ICON_VP_VISION] Sight.[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALTITUDE_TRAINING"> 
@@ -167844,6 +167944,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_ARAHURAHU_HELP"> 
 			<Text>
 				Gain 120% of an Enemy Unit's [ICON_STRENGTH]CS as a [ICON_CULTURE] Culture [COLOR:255:230:85:255]on Kill[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ARCTICIAN"> 
+			<Text>
+				Arctician
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ARCTICIAN_HELP"> 
+			<Text>
+				Can cross [COLOR_WATER_TEXT]Ice[ENDCOLOR]. +15% [ICON_STRENGTH] Combat Strength in Snow.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ARMOR_PLATING_1"> 
@@ -168948,7 +169058,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKATION_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Sailing[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Sailing[ENDCOLOR].[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKED_SIGHT"> 
@@ -169423,7 +169533,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FROGMAN_HELP"> 
 			<Text>
-				Unit has no combat penalties [COLOR:255:230:85:255]for Attacking from the Sea[ENDCOLOR]. Unit uses 1[ICON_MOVES]Movement Point [COLOR:255:230:85:255]to Embark or Disembark[ENDCOLOR]. +50%[ICON_STRENGTH]Defensive CS if unit [COLOR:255:230:85:255]is Embarked[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Railroad[ENDCOLOR].
+				Unit has no combat penalties [COLOR:255:230:85:255]for Attacking from the Sea[ENDCOLOR]. Unit uses 1[ICON_MOVES]Movement Point [COLOR:255:230:85:255]to Embark or Disembark[ENDCOLOR]. +50%[ICON_STRENGTH]Defensive CS if unit [COLOR:255:230:85:255]is Embarked[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Railroad[ENDCOLOR].[NEWLINE]Half [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR][NEWLINE]+1 [ICON_MOVES] Embarked Movement.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS"> 
@@ -170071,6 +170181,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				+10%[ICON_STRENGTH]CS/[ICON_RANGE_STRENGTH]RCS.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT"> 
+			<Text>
+				Horse Theft
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT_HELP"> 
+			<Text>
+				Unit acquired horses: +1 [ICON_MOVES] Movement. Lost if the unit engages in combat, pillages or embarks. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES"> 
+			<Text>
+				Horse Thieves
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES_HELP"> 
+			<Text>
+				Unit can acquire +1 [ICON_MOVES] Movement adjacent to [COLOR_YIELD_FOOD]horses or friendly mounted units[ENDCOLOR], or pillaging/attacking [COLOR_RED]enemy horses[ENDCOLOR].
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT"> 
 			<Text>
 				[COLOR:190:180:45:255]Edge of a Cliff[ENDCOLOR]
@@ -170078,7 +170208,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Enter Mountain[ENDCOLOR]. If unit [COLOR_NEGATIVE_TEXT]ends turn on Mountain[ENDCOLOR] then it takes Damage [COLOR_NEGATIVE_TEXT]at the beginning of next turn[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]can Enter Mountain[ENDCOLOR]. If unit [COLOR_NEGATIVE_TEXT]ends turn on Mountain[ENDCOLOR] then it takes Damage [COLOR_NEGATIVE_TEXT]at the beginning of next turn[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].[NEWLINE]-20% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Combat Strength[ENDCOLOR] & Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HUNTER_KILLER"> 
@@ -170119,6 +170249,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST_HELP"> 
 			<Text>
 				Unit [COLOR:255:230:85:255]ignores Terrain Cost[ENDCOLOR]. +10%[ICON_STRENGTH]CS/[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]outside Friendly Territory[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_ZOC"> 
+			<Text>
+				Ignores Zone of Control
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_ZOC_HELP"> 
+			<Text>
+				Ignores enemy unit [COLOR_UNIT_TEXT]Zone of Control[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_IKLWA"> 
@@ -170238,7 +170378,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]is Invisible[ENDCOLOR] to other Enemy Units without special ability. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]is Invisible[ENDCOLOR] to other Enemy Units without special ability. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].[NEWLINE]Immune to [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement penalty[ENDCOLOR] from [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVULNERABIILITY"> 
@@ -170888,7 +171028,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NAVIGATOR_2_HELP"> 
 			<Text>
-				+1[ICON_MOVES]Movement Point. +1 [ICON_VP_VISION] Sight.
+				+1[ICON_MOVES]Movement Point. +1 [ICON_VP_VISION] Sight.[NEWLINE]Half [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_EMBARKATION_HELP"> 
@@ -171116,6 +171256,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				+25 HP Heal [COLOR:255:230:85:255]on Kill[ENDCOLOR].
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER"> 
+			<Text>
+				Exploration Logistics
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_2"> 
+			<Text>
+				Combat Logistics
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_2_HELP"> 
+			<Text>
+				Ignores [ICON_MOVES] Movement Cost from Marsh, Snow, & Desert. Ignores enemy [COLOR_SELECTED_TEXT]Zone of Control[ENDCOLOR].[NEWLINE]Lost on upgrade.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_HELP"> 
+			<Text>
+				Ignores [ICON_MOVES] Movement Cost from Forest, Jungle, Hills, Snow, Desert, & Marsh. Can cross [COLOR_WATER_TEXT]Rivers[ENDCOLOR] without penalty. [COLOR_SELECTED_TEXT]Withdraws[ENDCOLOR] from 1 melee attack per turn.[NEWLINE]Lost on combat.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_PAX"> 
 			<Text>
 				[COLOR:100:155:60:255]Imperial Seal[ENDCOLOR]
@@ -171263,7 +171423,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_EXPERIENCE_HELP"> 
 			<Text>
-				Unit gains XP [COLOR:255:230:85:255]for revealing tiles[ENDCOLOR].
+				Unit gains XP [COLOR:255:230:85:255]for revealing tiles[ENDCOLOR].[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_RANGE_1"> 
@@ -171468,7 +171628,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP"> 
 			<Text>
-				+1 [ICON_VP_VISION] Sight (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]).
+				+1 [ICON_VP_VISION] Sight (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]). [COLOR_CYAN]Embarking[ENDCOLOR] costs 1 [ICON_MOVES] Move. Can use Enemy Roads/Railroads.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2"> 
@@ -171976,6 +172136,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Unit [COLOR:255:230:85:255]ignores Zone of Control[ENDCOLOR]. [COLOR:255:230:85:255]After Attack[ENDCOLOR] Defending Enemy Unit is Dazed (-15%[ICON_STRENGTH]CS/[ICON_RANGE_STRENGTH]RCS).
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS"> 
+			<Text>
+				Obstructed Movement in Wooded Terrain
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS_HELP"> 
+			<Text>
+				Slower [ICON_MOVES] Movement in Forest, Jungle, Marsh, Oasis. Can use enemy roads.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SMALLPOX"> 
 			<Text>
 				Smallpox
@@ -172188,7 +172358,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP"> 
 			<Text>
-				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal outside Friendly Territory[ENDCOLOR].
+				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal outside Friendly Territory[ENDCOLOR].[NEWLINE]Eliminate combat penalties for attacking over a river.[NEWLINE]Crossing a river costs only 1 [ICON_MOVES] Movement.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2"> 
@@ -172198,7 +172368,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP"> 
 			<Text>
-				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal[ENDCOLOR].
+				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal[ENDCOLOR].[NEWLINE]Double [ICON_MOVES] Movement adjacent to [COLOR_CITY_BLUE]Rivers[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3"> 
@@ -172208,7 +172378,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]heals every turn[ENDCOLOR], even after performing an action. Unit uses [COLOR:255:230:85:255]no[ENDCOLOR][ICON_MOVES]Movement Points [COLOR:255:230:85:255]on Pillage[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]heals every turn[ENDCOLOR], even after performing an action. Unit uses [COLOR:255:230:85:255]no[ENDCOLOR][ICON_MOVES]Movement Points [COLOR:255:230:85:255]on Pillage[ENDCOLOR]. Double [ICON_MOVES] Movement in [COLOR_CYAN]Coast[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_TARGETING_1"> 
@@ -173381,6 +173551,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				-50% strength when using Ranged Attacks.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB"> 
+			<Text>
+				Cetacean
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB_HELP"> 
+			<Text>
+				Roams around looking for fish. [COLOR_NEGATIVE_TEXT]May attack Fishing Boats and Civilians![ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_SANDS"> 
 			<Text>
 				[COLOR:100:155:60:255]White Sands Facility[ENDCOLOR]
@@ -173468,7 +173648,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Embark, Enter Mountain and use Enemy Roads and Railroads[ENDCOLOR]. Unit [COLOR:255:230:85:255]ignores Zone of Control[ENDCOLOR]. +20%[ICON_STRENGTH]CS [COLOR:255:230:85:255]outside Friendly Territory[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]can Enter Mountain and use Enemy Roads and Railroads[ENDCOLOR]. Unit [COLOR:255:230:85:255]ignores Zone of Control[ENDCOLOR]. +20%[ICON_STRENGTH]CS [COLOR:255:230:85:255]outside Friendly Territory[ENDCOLOR]. Double [ICON_MOVES] Movement in clear plots adjacent to [COLOR_CITY_BLUE]Lakes/Coast/Ocean[ENDCOLOR]. Double [COLOR_POSITIVE_TEXT]Heal[ENDCOLOR] in Oasis.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODSMAN"> 
@@ -175894,6 +176074,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_MARBLE"> 
 			<Text>
 				Marble
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MIGRATORY_WHALE"> 
+			<Text>
+				Migratory Whales
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY"> 
@@ -204305,6 +204490,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Welsh Longbowman is a Celtic unique unit, replacing the Crossbowman. The Welsh Longbowman has a greater range than the Crossbowman, allowing it to attack enemies three hexes away, often destroying them before they can strike back. Like other ranged units, it is vulnerable to melee attack.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB"> 
+			<Text>
+				Whale
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_HELP"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_PEDIA"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_STRATEGY"> 
+			<Text>
+				Whale
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WORKER"> 
 			<Text>
 				Worker
@@ -206604,6 +206809,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_WAITING_FOR_PLAYERS_TT"> 
 			<Text>
 				The game is waiting for other players to finish their turn.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_ALL_UNITS"> 
+			<Text>
+				Wake All Units
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WAR"> 
@@ -219332,17 +219542,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_DISCOVERED_NATURAL_WONDER_ACTIVATE_BUTTON"> 
 			<Text>
-				자연 불가사의 찾기
+				자연경관 찾기
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_DISCOVERED_NATURAL_WONDER_BODY"> 
 			<Text>
-				자연 불가사의는 세계 곳곳에 숨어 있습니다. 이것을 발견한다면 당신의 문명에 영구적인 행복을 가져다 줍니다. 만약, 당신이 도시를 그것에 인접하여 건설하게 된다면, 상당한 이익을 얻을 수 있습니다. 더 많이 탐색하도록 하십시오!
+				자연경관은 세계 곳곳에 숨어 있습니다. 이것을 발견한다면 당신의 문명에 영구적인 행복을 가져다 줍니다. 만약, 당신이 도시를 그것에 인접하여 건설하게 된다면, 상당한 이익을 얻을 수 있습니다. 더 많이 탐색하도록 하십시오!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_DISCOVERED_NATURAL_WONDER_DISPLAY"> 
 			<Text>
-				자연 불가사의
+				자연경관
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_DONT_SHOW_AGAIN"> 
@@ -220223,7 +220433,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_TUTORIAL_1_INTRO_MOVEMENT_AND_EXPLORATION_BODY"> 
 			<Text>
-				저는 당신의 과학 보좌관입니다. 이번 강의에서 저는 당신에게 어떻게 하면 지도 상의 유닛을 움직이는지 알려 드립니다. 이번 과정에서 당신은 고대 유적, 자연 불가사의, 그리고 새로운 대륙을 발견하게 될 겁니다!
+				저는 당신의 과학 보좌관입니다. 이번 강의에서 저는 당신에게 어떻게 하면 지도 상의 유닛을 움직이는지 알려 드립니다. 이번 과정에서 당신은 고대 유적, 자연경관, 그리고 새로운 대륙을 발견하게 될 겁니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ADVISOR_TUTORIAL_1_INTRO_MOVEMENT_AND_EXPLORATION_DISPLAY"> 
@@ -229384,12 +229594,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_IA_LAKE_EXTRACTOR_HELP"> 
 			<Text>
-				[ICON_PRODUCTION] 생산력 +2, [ICON_FOOD] 식량 +2[NEWLINE][ICON_GOLD] 골드 +3[NEWLINE][NEWLINE]호수: [ICON_FOOD] 식량 +2,[ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_IA_SALT_LAKE] 염호: [ICON_PRODUCTION] 생산력 +2[NEWLINE][NEWLINE]도시가 호수 근처에 있어야 합니다.
+				[ICON_PRODUCTION] 생산, [ICON_FOOD] 식량 +2[NEWLINE][ICON_GOLD] 골드 +3.[NEWLINE][NEWLINE]호수: [ICON_FOOD] 식량 +2,[ICON_GOLD] 골드 +1.[NEWLINE] [ICON_RES_IA_SALT_LAKE] 염호: [ICON_PRODUCTION] 생산 +2.[NEWLINE][NEWLINE]도시가 호수 근처에 있어야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_IA_LAKE_EXTRACTOR_STRATEGY"> 
 			<Text>
-				염전은 호수의 [ICON_FOOD] 식량과 [ICON_GOLD] 골드를 증가시키고 염호의 [ICON_PRODUCTION] 생산력을 증가시킵니다. 호수 근처, 특히 염호 근처 도시에 이 건물을 건설하십시오.
+				염전은 호수의 [ICON_FOOD] 식량과 [ICON_GOLD] 골드를 증가시키고 염호의 [ICON_PRODUCTION] 생산을 증가시킵니다. 호수 근처, 특히 염호 근처 도시에 이 건물을 건설하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_IA_LAKE_EXTRACTOR_TEXT"> 
@@ -233002,7 +233212,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_TOURIST_CENTER_HELP"> 
 			<Text>
-				세계 불가사의, 자연 경관 및 타일 시설이 제공하는 [ICON_CULTURE]문화의 [COLOR_POSITIVE_TEXT]100%[ENDCOLOR]가 도시의 [ICON_TOURISM]관광에 추가됩니다. [ICON_GREAT_WORK]걸작에서 얻는 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]100%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]모든 도시에 호텔이 있어야 건설할 수 있습니다. 문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산이 증가합니다.[NEWLINE][NEWLINE]이 불가사의는 문명당 하나만 건설할 수 있는 [COLOR_YELLOW]국가 불가사의[ENDCOLOR]입니다.
+				세계 불가사의, 자연경관 및 타일 시설이 제공하는 [ICON_CULTURE]문화의 [COLOR_POSITIVE_TEXT]100%[ENDCOLOR]가 도시의 [ICON_TOURISM]관광에 추가됩니다. [ICON_GREAT_WORK]걸작에서 얻는 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]100%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]모든 도시에 호텔이 있어야 건설할 수 있습니다. 문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산이 증가합니다.[NEWLINE][NEWLINE]이 불가사의는 문명당 하나만 건설할 수 있는 [COLOR_YELLOW]국가 불가사의[ENDCOLOR]입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_TOURIST_CENTER_STRATEGY"> 
@@ -233991,7 +234201,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_EKI_REC"> 
 			<Text>
-				현재 타일의 [ICON_PRODUCTION]생산, [ICON_CULTURE]문화, [ICON_FOOD]식량을 증가시킵니다. 인접한 에키 2개마다 [ICON_PRODUCTION]생산과 [ICON_GOLD] 골드가 추가로 증가합니다. 건설 시 모든 타일의 특성을 제거합니다. 훈 영토 내부 또는 영토에 인접한 타일에만 건설할 수 있습니다.
+				현재 타일의 [ICON_PRODUCTION]생산, [ICON_CULTURE]문화, [ICON_FOOD]식량을 증가시킵니다. 인접한 에키 2개마다 [ICON_PRODUCTION]생산과 [ICON_GOLD] 골드가 추가로 증가합니다. 건설 시 모든 타일의 특징을 제거합니다. 훈 영토 내부 또는 영토에 인접한 타일에만 건설할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_EMBASSY"> 
@@ -234011,7 +234221,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_ENCAMPMENT_SHOSHONE_REC"> 
 			<Text>
-				현재 타일의 [ICON_FOOD]식량, [ICON_PRODUCTION]생산, [ICON_CULTURE]문화를 증가시킵니다. 건설 시 모든 타일의 특성을 제거합니다. [NEWLINE]근처 쇼숀 유닛에게 전투력을 제공하고 주둔한 유닛에 방어력 보너스를 제공하며 인접한 적 유닛에 소량의 피해를 입힙니다.
+				현재 타일의 [ICON_FOOD]식량, [ICON_PRODUCTION]생산, [ICON_CULTURE]문화를 증가시킵니다. 건설 시 모든 타일의 특징을 제거합니다. [NEWLINE]근처 쇼숀 유닛에게 전투력을 제공하고 주둔한 유닛에 방어력 보너스를 제공하며 인접한 적 유닛에 소량의 피해를 입힙니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH"> 
@@ -234476,7 +234686,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_MONGOLIA_ORDO_HELP"> 
 			<Text>
-				영토 내의 아무 곳 또는 영토와 인접한 타일에 오르도를 건설할 수 있고, 다른 오르도와 인접할 수 없습니다. 이 타일의 특성이 사라집니다.[NEWLINE][NEWLINE]오르도를 건설하면 유닛을 소모하고, 당신의 [ICON_WAR] 군사 유닛 보급 한도가 1 증가하고, 오르도 주위로 해당 문명의 영토가 한 타일씩 증가합니다. 이런 식으로 다른 문명의 문화 경계를 잠식했다면 해당 문명과의 외교관계가 악화됩니다. [NEWLINE][NEWLINE]이 타일에 주둔한 유닛은 [ICON_STRENGTH] 방어력 +50%를 얻고 [ICON_MOVES] 이동력을 모두 회복합니다. [COLOR_POSITIVE_TEXT]요새[ENDCOLOR] 역할을 제공해, 공격 후에도 그 타일에 계속 주둔할 수 있습니다. [COLOR_POSITIVE_TEXT]운하[ENDCOLOR] 역할을 제공해, 아군 [COLOR_POSITIVE_TEXT]해양[ENDCOLOR] 유닛이 이 타일을 통과할 수 있게 합니다.
+				영토 내의 아무 곳 또는 영토와 인접한 타일에 오르도를 건설할 수 있고, 다른 오르도와 인접할 수 없습니다. 이 타일의 특징이 사라집니다.[NEWLINE][NEWLINE]오르도를 건설하면 유닛을 소모하고, 당신의 [ICON_WAR] 군사 유닛 보급 한도가 1 증가하고, 오르도 주위로 해당 문명의 영토가 한 타일씩 증가합니다. 이런 식으로 다른 문명의 문화 경계를 잠식했다면 해당 문명과의 외교관계가 악화됩니다. [NEWLINE][NEWLINE]이 타일에 주둔한 유닛은 [ICON_STRENGTH] 방어력 +50%를 얻고 [ICON_MOVES] 이동력을 모두 회복합니다. [COLOR_POSITIVE_TEXT]요새[ENDCOLOR] 역할을 제공해, 공격 후에도 그 타일에 계속 주둔할 수 있습니다. [COLOR_POSITIVE_TEXT]운하[ENDCOLOR] 역할을 제공해, 아군 [COLOR_POSITIVE_TEXT]해양[ENDCOLOR] 유닛이 이 타일을 통과할 수 있게 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY"> 
@@ -234741,7 +234951,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_SIHEYUAN_REC"> 
 			<Text>
-				현재 타일의 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화가 증가합니다. 건설 시 모든 타일의 특성을 제거합니다. 황후 경축일 동안 더 많은 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화를 제공합니다.
+				현재 타일의 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화가 증가합니다. 건설 시 모든 타일의 특징을 제거합니다. 황후 경축일 동안 더 많은 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화를 제공합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_SPAIN_HACIENDA"> 
@@ -234781,7 +234991,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_TERRACE_FARM_REC"> 
 			<Text>
-				[ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 증가시킵니다. 타일의 특성을 제거합니다.[NEWLINE]산 또는 다른 계단식 농장과 인접 시 추가 [ICON_FOOD] 식량을 얻습니다. 인접한 농장에 [ICON_FOOD] 식량을 제공합니다.
+				[ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 증가시킵니다. 타일의 특징을 제거합니다.[NEWLINE]산 또는 다른 계단식 농장과 인접 시 추가 [ICON_FOOD] 식량을 얻습니다. 인접한 농장에 [ICON_FOOD] 식량을 제공합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_TIPI"> 
@@ -237665,7 +237875,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CITYSTATE_MISSIONS_HEADING2_BODY"> 
 			<Text>
-				도시 국가는 주기적으로 임무를 요청할 것입니다. 야만인과 관련된 임무일 수도 있고, 자연 불가사의에 관한 것일 수도 있으며, 혹은 그들이 다른 문명과 전쟁 중이면 도와달라고 요청할 수도 있습니다. [NEWLINE][NEWLINE]당신이 다른 문명들보다 그 임무를 먼저 완료한다면, 당신은 그 도시 국가로의 영향력을 얻게 됩니다.
+				도시 국가는 주기적으로 임무를 요청할 것입니다. 야만인과 관련된 임무일 수도 있고, 자연경관에 관한 것일 수도 있으며, 혹은 그들이 다른 문명과 전쟁 중이면 도와달라고 요청할 수도 있습니다. [NEWLINE][NEWLINE]당신이 다른 문명들보다 그 임무를 먼저 완료한다면, 당신은 그 도시 국가로의 영향력을 얻게 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CITYSTATE_MISSIONS_HEADING2_TITLE"> 
@@ -240586,12 +240796,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CITY_EVENT_HOTEL_ESTABLISHED_CHOICE_1"> 
 			<Text>
-				자연 경관 휴양
+				자연경관 휴양
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CITY_EVENT_HOTEL_ESTABLISHED_CHOICE_1_HELP"> 
 			<Text>
-				주변의 자연 경관에서 관광이 형성된 결과, 사업 협력단이 이 도시에 호텔을 건설하기로 결정했습니다.
+				주변의 자연경관에서 관광이 형성된 결과, 사업 협력단이 이 도시에 호텔을 건설하기로 결정했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CITY_EVENT_HURRICANE"> 
@@ -261100,7 +261310,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FEATURES_HEADING"> 
 			<Text>
-				타일 특성
+				타일 특징
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FEATURES_HEADING_TEXT"> 
@@ -261270,12 +261480,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FEATURES_NATURALWONDER"> 
 			<Text>
-				자연 불가사의
+				자연경관
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FEATURES_NATURALWONDER_TEXT"> 
 			<Text>
-				자연 불가사의는 보는 이 모두를 경이와 경탄에 빠지게 하는 자연의 위대하고 장엄한 창조물입니다. 북아메리카의 그랜드 캐년, 호주의 에어즈락, 아프리카의 빅토리아 폭포 등 자연계의 진정 눈부신 아름다움을 보여주는 장소들입니다. 자연 불가사의는 당신의 문명에 부를 가져다 줄 뿐만 아니라, 최초로 발견한다면 황금기를 불러일으킬 수도 있습니다.
+				자연경관은 보는 이 모두를 경이와 경탄에 빠지게 하는 자연의 위대하고 장엄한 창조물입니다. 북아메리카의 그랜드 캐년, 호주의 에어즈락, 아프리카의 빅토리아 폭포 등 자연계의 진정 눈부신 아름다움을 보여주는 장소들입니다. 자연경관은 당신의 문명에 부를 가져다 줄 뿐만 아니라, 최초로 발견한다면 황금기를 불러일으킬 수도 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FEATURES_NATURALWONDER_TITLE1"> 
@@ -263229,6 +263439,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				입수 자원
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_STORM_HELP"> 
+			<Text>
+				폭풍은 자연환경이나 대기가 교란되는 상태를 말합니다. 강풍, 토네이도, 우박, 천둥과 번개(뇌우), 호강수(눈보라, 폭우), 어는 비(착빙성 폭풍우), 강풍(열대성 저기압, 폭풍), 모래 폭풍과 같이 대기를 통해 어떤 물질을 운반하는 바람 등 정상적인 조건에 심각한 교란이 발생하는 경우를 말합니다.  폭풍은 생명과 재산에 피해를 줄 수 있으며, 인간의 이동과 시야를 제한할 수도 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_STORM_TEXT"> 
+			<Text>
+				폭풍은 대양과 해안 지역에서 자연스럽게 발생합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SUNK_COURT"> 
 			<Text>
 				티와나쿠는 전성기에는 최대 4만 명이 거주했으며 수많은 건물과 플랫폼, 안뜰을 갖춘 의식 중심지를 중심으로 가장 크고 중요한 반지하 궁전, 칼라사사야와 푸투니 콤플렉스(높은 플랫폼과 안뜰의 조합), 아카파나(킴사차타 산맥을 재현한 것으로 추정되는 복잡한 토루 구조), 후기 사원 단지인 푸마풍쿠가 있습니다.[NEWLINE][NEWLINE]가라앉은 궁정 스타일의 건물은 푸카라나 치리파 등 티티카카 호수 주변 지역의 티와나쿠 건국 이전의 고고학 유적지에서 많이 발견되지만, 반지하 궁정은 현재까지 발견된 것 중 가장 큰 규모입니다. 그 규모가 커진 것은 신흥 티와나쿠 정권의 정치력이 커졌음을 보여주는 증거일 가능성이 높습니다. 기원전 300~400년 사이에 완공된 이 건물은 중앙 의식 구역에 건설된 가장 초기의 기념비적인 석조 건물로 추정됩니다.[NEWLINE][NEWLINE]반지하 궁전의 세 벽(북쪽, 동쪽, 서쪽)에 있는 중앙 돌은 동지 및 춘분 일출과 일몰, 중요한 별의 일출과 일몰과 같은 다양한 천문학적 사건의 관측 지점을 표시하고 남반구의 중심인 천상의 남극으로 가는 길을 가리키기도 합니다. 이 돌들은 종교 의식 참가자들이 적절한 천체 행사를 위해 방향을 잡을 수 있도록 도와주는 보조 도구였습니다.
@@ -263397,6 +263617,21 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS__TITLE6"> 
 			<Text>
 				해양 시설
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_TEXT"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
@@ -266989,6 +267224,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				해제
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_COCONUT_TEXT"> 
+			<Text>
+				코코넛은 음식부터 화장품까지 다양한 용도로 쓰이는 것으로 알려져 있습니다. 잘 익은 씨앗의 과육과 거기에서 추출한 코코넛 밀크는 열대 및 아열대 지역의 많은 사람들의 식단에 정기적으로 포함되어 있습니다. 딱딱한 껍질, 섬유질 껍질, 긴 깃꼴잎은 다양한 가구와 장식 제품을 만드는 소재로 사용될 수 있습니다. 코코넛은 특정 사회, 특히 인도에서는 문화적, 종교적 의미를 지니고 있으며, 힌두교 의식에 사용됩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_COFFEE_TEXT"> 
 			<Text>
 				커피는 커피나무속에 속하는 상록 관목 중 몇몇 종의 씨를 볶은 것을 끓여 만든 음료입니다. 최초로 커피라는 음료를 마셨다는 확실한 증거 또는 처음으로 커피라는 작물에 대한 정보가 등장하는 것은 15세기 중반 예멘의 한 수피교도의 언급에서입니다. 아라비아 반도에 있는 이곳 예멘에서 처음으로 커피나무의 씨를 볶고 끓여냈는데, 이는 오늘날 커피를 준비하는 과정과 비슷했습니다. 16세기에 커피는 북아프리카와 중동지방을 포함한 이슬람 세계로 확산되었고 결국 1600여년 경 무역을 통해 이탈리아의 베네치아 항을 통해 커피가 유입되었고, 곧 전 유럽에 알려지게 되었습니다.
@@ -267309,6 +267549,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				수확 보너스
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_HARDWOOD_TEXT"> 
+			<Text>
+				견목은 쌍떡잎식물의 목재입니다. 이들은 일반적으로 활엽수림인 온대와 열대 우림에서 발견됩니다. 온대와 아한대 지역에서는 대부분 낙엽수이지만, 열대와 아열대 지역에서는 대부분 상록수입니다. 이름에서 알 수 있듯이, 이 나무의 목재는 일반적으로 연목의 목재보다 단단하지만, 중요한 예외도 있습니다. 견목은 연료, 도구, 건설, 조선, 가구 제작, 악기, 바닥재, 요리, 통, 숯 제조 등 광범위한 용도로 사용됩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_HORSE"> 
 			<Text>
 				말
@@ -267479,6 +267724,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				라피스 라줄리(Lapis Lazuli), 또는 청금석은 군청색의 준보석으로 그 강렬한 색깔 덕분에 귀하게 여겨져 왔습니다. 아프가니스탄에서는 6000년이 넘는 세월동안 청금석을 채광해왔으며 고대 이집트와 메소포타미아 문명뿐만 아니라 이후 그리스 로마 문명까지 청금석을 공급하였습니다. 청금석은 아프가니스탄뿐만 아니라 러시아, 칠레, 캐나다, 인도, 이탈리아, 미국에서도 찾아볼 수 있습니다. 청금석은 그 훌륭한 광택으로 보석, 조각품, 화병, 기타 가치 있는 장식품으로 사용됩니다. 특히 고대 이집트에서 그런 경향이 두드러졌습니다. 또한 금보다도 비싼 군청색, 울트라마린(Ultramarine) 색소를 만드는 데 가장 필요한 색재료입니다. 르네상스 시기 동안 이 값비싼 색소는 드물게 사용되었는데 성모 마리아의 로브나 다른 중요한 종교적 인물을 채색할 때 사용되었습니다. 현재도 이 색소의 가격은 1 kg당 1500만원이 넘습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_LAVENDER_TEXT"> 
+			<Text>
+				라벤더는 꿀풀과에 속하는 47종의 꽃식물로 이루어진 속입니다. 이 식물은 구세계(구대륙)가 원산지이며, 카보베르데와 카나리아 제도, 유럽을 거쳐 아프리카 북부와 동부, 지중해, 서남 아시아에서 인도 남동부에 이르기까지 분포합니다. 이 속에 속하는 많은 식물은 온대 기후에서 관상용 식물로 정원이나 조경용으로 널리 재배되고, 요리용 허브로 사용되며, 또한 상업적으로는 에센셜 오일을 추출하기 위해 재배됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_LEAD_TEXT"> 
+			<Text>
+				납은 대부분의 일반적인 물질보다 밀도가 높은 중금속입니다. 납은 부드럽고 연성이 좋으며, 녹는점도 비교적 낮습니다. 납은 광석에서 쉽게 추출할 수 있으며, 서아시아의 선사 시대 사람들도 이를 알고 있었습니다. 납의 주요 광석인 방연석에서는 종종 은이 발견되는데, 은에 대한 관심은 고대 로마에서 납을 광범위하게 채굴하고 사용하는 데 영향을 미쳤습니다. 로마 제국의 멸망 이후 납 생산은 감소하였고, 산업 혁명이 일어나기 전까지는 비슷한 수준에 도달하지 못했습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_LUXURY"> 
 			<Text>
 				사치 자원
@@ -267527,6 +267782,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MARBLE_TITLE5"> 
 			<Text>
 				행복 보너스
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MIGRATORY_WHALE_TEXT"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_NUTMEG_TEXT"> 
@@ -267634,14 +267894,39 @@ The ship has weather'd every rack; the prize we sought is won."
 				향수는 가장 이른 시기의 몇몇 고대 인류 문명에서부터 존재한 것으로 알려져 있습니다. 향수 제조법은 고대 메소포타미아와 이집트에서 시작되어 로마와 페르시아인들에 의해 더욱 발전하였습니다. 그 중 장미향수의 생산기술은 페르시아에서 시작되어 아라비아와 인도로 퍼져나갔고, 훨씬 최근에 유럽으로 들어왔습니다. 이 중 장미 기름은 여러 종류의 장미의 꽃잎에서 뽑아낸 정유(essential oil)입니다. 노동집약적인 생산과정과 꽃 한 송이에 들어있는 양 자체가 적기 때문에 장미유는 굉장히 높은 가격을 형성하고 있습니다. 그럼에도 장미유는 향수 제조 과정에서 아직도 가장 널리 사용되는 정유입니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_PINEAPPLE_TEXT"> 
+			<Text>
+				파인애플은 식용 과일을 맺는 열대 식물이며, 파인애플과에 속하는 식물 중 경제적으로 가장 중요한 식물입니다. 파인애플은 남아메리카가 원산지이며, 수세기 동안 재배되어 왔습니다. 17세기에 파인애플 재배가 유럽에 소개되면서 파인애플은 사치의 중요한 문화적 상징이 되었습니다. 파인애플은 1820년대부터 온실과 많은 열대 농장에서 상업적으로 재배되어 왔으며, 세계 생산량에서 세 번째로 중요한 열대 과일입니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_PLATINUM_TEXT"> 
+			<Text>
+				백금은 부식에 매우 강한 화학 원소이자 귀금속입니다.따라서 백금은 화학적으로 결합되지 않은 천연 백금으로 발견되는 경우가 많습니다. 다양한 강의 퇴적된 모래에서 자연적으로 발생하기 때문에 콜럼버스 이전의 남미 원주민이 유물을 만드는 데 처음으로 사용했습니다. 백금은 촉매 변환기, 실험실 장비, 전기 접점 및 전극, 백금 저항 온도계, 치과 장비, 보석류 등에 사용됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_POPPY_TEXT"> 
+			<Text>
+				양귀비는 양귀비과의 양귀비아과에 속하는 꽃식물입니다. 양귀비는 초본 식물로, 종종 화려한 꽃을 보기 위해 재배됩니다. 양귀비의 한 종인 "Papaver somniferum"은 모르핀과 같은 강력한 의약 알칼로이드를 함유한 마약인 아편의 원료이며 고대부터 진통제, 마약성 의약품 및 오락용으로 사용되어 왔습니다. 또한 식용 씨앗도 생산합니다. 1차 세계대전 당시 벨기에 플랑드르 지방의 양귀비밭에서 벌어진 참호전 이후, 양귀비는 전쟁 중 전사한 군인들을 추모하는 상징이 되었습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_PORCELAIN_TEXT"> 
 			<Text>
 				중국에서 약 3,000년 전에 최초로 만들어진 도자기는 점토를 가열해 다양한 모양과 크기로 만든 반투명 공예품이다. 예술가와 공예가들은 수 세기에 걸쳐 도자기의 미적 감각을 살리면서 동시에 물리적 내구성을 강화해 사용 효율을 높이는 방법을 연구했다. 도자기로 만든 식기 역시 중국에서 처음 만들어졌기 때문에 유럽에서는 흔히 '차이나'라고 불린다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_POTATO_TEXT"> 
+			<Text>
+				감자는 아메리카가 원산지인 뿌리채소입니다. 처음으로 기르기 시작한 곳은 기원전 8,000년에서 5,000년 사이 오늘날의 페루 남부와 볼리비아 북서부 지역으로, 그 지역에서는 잉카 제국과 콜럼버스 이전 대부분의 마푸체족의 주식이었습니다. 이 음식은 16세기 말 이전에 두 개의 다른 입국 항구를 통해 유럽에 들어왔습니다. 첫 번째는 1570년경 스페인을 통해 들어왔고, 두 번째는 1588년에서 1593년 사이에 영국 제도를 거쳐 들어왔습니다. 19세기에는 순무와 루타바가(스웨덴 순무)를 널리 대체했습니다. 이 작물은 유럽 전역으로 천천히 퍼져나갔고, 특히 아일랜드에서 19세기 중반에 이르러 주요 주식으로 자리 잡았습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_RICE_TEXT"> 
 			<Text>
 				쌀은 외떡잎식물 오리자 사티바 (아시아 쌀) 또는 오리자 글라베리마 (아프리카 쌀)의 씨앗입니다. 곡물로써, 그것은 특히 아시아와 서인도 제도에서 세계 인구의 많은 부분을 위해 가장 널리 소비되는 주식입니다. 2010년 자료에 따르면, 그것은 옥수수 다음으로 전 세계에서 두 번째로 높은 생산량을 가진 곡물입니다.[NEWLINE][NEWLINE]옥수수 작물의 많은 부분이 인간의 소비 이외의 목적으로 재배되기 때문에, 쌀은 인간의 영양과 칼로리 섭취와 관련하여 가장 중요한 곡물이며, 전 세계적으로 인간이 소비하는 칼로리의 5분의 1 이상을 제공합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_RUBBER_TEXT"> 
+			<Text>
+				고무는 처음에는 메소아메리카의 토착 문화에서 사용되었습니다. 헤베아 나무에서 추출한 천연 라텍스를 사용한 가장 오래된 고고학적 증거는 올멕 문화에서 나왔는데, 이 문화에서 고무는 메소아메리카의 공놀이용 공을 만드는 데 처음으로 사용되었습니다. 고무는 나중에 마야와 아즈텍 문화권에서 사용되었습니다. 아즈텍인들은 공을 만드는 것 외에도 용기를 만들거나 라텍스 수액을 직물에 스며들게 하여 방수 처리하는 등 다른 목적으로도 고무를 사용했습니다. 천연고무는 단독으로 또는 다른 재료와 결합하여 다양한 응용 분야와 제품에 광범위하게 사용됩니다. 대부분의 유용한 형태는 신축성이 크고 회복성이 높으며, 방수성이 매우 뛰어납니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_SALT_TEXT"> 
@@ -267849,9 +268134,24 @@ The ship has weather'd every rack; the prize we sought is won."
 				행복 보너스
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_SULFUR_TEXT"> 
+			<Text>
+				유황은 우주에서 질량 기준으로 10번째로 흔한 원소이고, 지구에서는 5번째로 흔한 원소입니다. 때로는 순수한 자연 상태로 발견되지만, 지구상의 유황은 대개 황화물과 황산염 광물로 존재합니다. 유황은 원래 풍부한 형태로 존재했기 때문에 고대부터 알려져 있었으며, 고대 인도, 고대 그리스, 중국, 이집트에서 사용되었다는 기록이 있습니다. 1044년 송나라 병법(무경총요)에는 초석(질산 칼륨), 숯(목탄, 탄소), 유황의 혼합물인 중국 흑색 화약의 다양한 제조법이 기술되어 있습니다. 이는 여전히 흑색 화약의 성분으로 남아 있습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_TEA_TEXT"> 
 			<Text>
 				차는 보통 보존 처리된 차잎에 뜨거운 물을 부어 만드는 향 있는 음료입니다. 차를 마시는 건 중국의 상나라에서부터 시작되었는데, 원래 다른 약초와 섞어서 의학적 용도로 쓰였습니다. 서구권에는 16세기에 중국에 있던 포르투갈인 성직자와 상인에 의해 최초로 알려지게 되었습니다. 17세기에는 영국인들 사이에서 차를 마시는 것이 대중화되고, 중국의 차 독점으로 인해 손해가 커지자 결국 거기에 대항해 19세기 초 영국은 당시 식민지였던 인도에서 차를 대량생산하게 만들었습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_TIN_TEXT"> 
+			<Text>
+				주석은 은빛 금속으로 특징적으로 희미한 노란색을 띕니다. 최초로 대규모로 사용된 주석 합금은 청동으로, 주석의 1/8과 구리의 7/8로 만들어졌으며 기원전 3000년경부터 사용되었습니다. 기원전 600년 이후에는 순수한 금속 주석이 생산되었습니다. 주석이 85~90%를 차지하고 나머지가 구리, 안티몬, 납으로 구성된 합금인 주석은 청동기 시대부터 20세기까지 식기류를 만드는 데 사용되었습니다. 현대에 들어 주석은 다양한 합금에 사용되고 있으며, 특히 주석/납 연성 땜납(일반적으로 주석 함량이 60% 이상)과 광전자 응용 분야에서 투명하고 전도성이 있는 인듐 주석 산화물 필름 제조에 사용됩니다. 주석의 또 다른 주요 용도는 강철의 내식성을 위한 주석 도금입니다. 무기 주석은 독성이 낮기 때문에 주석 도금 강철은 주석 통조림과 같은 식품 포장재에 널리 사용됩니다..
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_TITANIUM_TEXT"> 
+			<Text>
+				티타늄은 은색을 띠고 밀도가 낮으며 강도가 높은 광택이 나는 전이 금속입니다. 티타늄은 바닷물, 왕수, 염소에 대한 부식에 강합니다. 티타늄은 1791년 윌리엄 그레고르가 영국 콘월에서 발견하였고, 마르틴 하인리히 클라프로트가 그리스 신화에 나오는 티탄의 이름을 따서 명명했습니다. 티타늄은 철, 알루미늄, 바나듐, 몰리브덴 등의 원소와 합금되어 항공우주 산업, 군사, 산업 공정 및 기타 응용 분야에 사용되는 강하고 가벼운 합금을 생산할 수 있습니다. 티타늄은 합금되지 않은 상태에서는 일부 강철만큼 강하지만 밀도는 낮습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_TOBACCO_TEXT"> 
@@ -270020,6 +270320,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_WARSAW_TITLE"> 
 			<Text>
 				바르샤바
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_WASHOUT"> 
+			<Text>
+				[COLOR_MENU_BLUE]유실[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_WELLINGTON_TEXT"> 
@@ -277979,7 +278284,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CONCEPT_DIPLOMACY_MAP_TRADING_SUMMARY"> 
 			<Text>
-				문명의 세계 지도는 모든 섬, 바다, 자연 경관 및 거래한 문명이 발견하고 기록한 문명을 상세히 보여줍니다. 문명의 세계 지도 거래는 군사 과학의 발견 이후 가능하며, 거래한 문명이 발견한 모든 타일을 드러낼 것입니다. 세계 지도로 만나지 못한 문명과 접촉할 수는 없지만 해당 문명의 위치를 파악할 수는 있습니다. 세계 지도의 가치는 지도를 제공할 문명이 당신이 발견하지 못한 땅을 얼마나 발견했는지에 따라 달라집니다. 자연 경관, 자원에 대한 정보는 아무 것도 없는 대양에 대한 정보보다 훨씬 귀중합니다. 세계 지도는 비싸질 수 있으므로 세계를 발견하여 지도 거래를 통해 수익을 얻을 수도 있습니다.
+				문명의 세계 지도는 모든 섬, 바다, 자연경관 및 거래한 문명이 발견하고 기록한 문명을 상세히 보여줍니다. 문명의 세계 지도 거래는 군사 과학의 발견 이후 가능하며, 거래한 문명이 발견한 모든 타일을 드러낼 것입니다. 세계 지도로 만나지 못한 문명과 접촉할 수는 없지만 해당 문명의 위치를 파악할 수는 있습니다. 세계 지도의 가치는 지도를 제공할 문명이 당신이 발견하지 못한 땅을 얼마나 발견했는지에 따라 달라집니다. 자연경관, 자원에 대한 정보는 아무 것도 없는 대양에 대한 정보보다 훨씬 귀중합니다. 세계 지도는 비싸질 수 있으므로 세계를 발견하여 지도 거래를 통해 수익을 얻을 수도 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CONCEPT_DIPLOMACY_MAP_TRADING_TOPIC"> 
@@ -278397,7 +278702,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CONCEPT_RELIGION_FAITH_EARNING_SUMMARY"> 
 			<Text>
-				[ICON_PEACE]신앙은 종교관을 세우고 위대한 선지자를 출현하게 하고 종교 유닛이나 건물을 구입할 때 쓰는 골드와 같은 기능을 합니다.[NEWLINE][NEWLINE]신앙 점수를 얻는 여러 가지 방법이 있습니다. 먼저, 도시에 건설하면 턴마다 일정한 양의 신앙을 생산하는 건물이나 불가사의가 있습니다. 시민을 투입하면 신앙을 생산하는 자연 경관도 있습니다. 고대 유적을 방문하면 신앙을 얻을 수 있습니다. 종교 도시 국가와의 영향력이 높다면 일정한 간격으로 문명의 신앙을 올려주는 선물을 보냅니다. 마지막으로 위대한 선지자로 성지를 건설하면 신앙을 얻을 수 있습니다.
+				[ICON_PEACE]신앙은 종교관을 세우고 위대한 선지자를 출현하게 하고 종교 유닛이나 건물을 구입할 때 쓰는 골드와 같은 기능을 합니다.[NEWLINE][NEWLINE]신앙 점수를 얻는 여러 가지 방법이 있습니다. 먼저, 도시에 건설하면 턴마다 일정한 양의 신앙을 생산하는 건물이나 불가사의가 있습니다. 시민을 투입하면 신앙을 생산하는 자연경관도 있습니다. 고대 유적을 방문하면 신앙을 얻을 수 있습니다. 종교 도시 국가와의 영향력이 높다면 일정한 간격으로 문명의 신앙을 올려주는 선물을 보냅니다. 마지막으로 위대한 선지자로 성지를 건설하면 신앙을 얻을 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CONCEPT_RELIGION_FAITH_EARNING_TOPIC"> 
@@ -279612,7 +279917,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_TILES"> 
 			<Text>
-				[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  세계 불가사의, 자연 경관 및 시설로부터 얻는 [ICON_CULTURE]문화의 {2_Num}%에서 획득
+				[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  세계 불가사의, 자연경관 및 시설로부터 얻는 [ICON_CULTURE]문화의 {2_Num}%에서 획득
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_TRADE_ROUTE_BONUS"> 
@@ -283598,7 +283903,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_ALMOST_LOST_CITY_STATE_ALLY_QUEST_FIND_NATURAL_WONDER"> 
 			<Text>
-				이대로 뭔가를 하지 않는다면, 우리와 {1_MinorCivName:textkey}의 동맹이 깨질겁니다. 자연 불가사의를 발견함으로써, 약간의 영향력을 증가시킬 수 있습니다. 탐색을 시작합시다!
+				이대로 뭔가를 하지 않는다면, 우리와 {1_MinorCivName:textkey}의 동맹이 깨질겁니다. 자연경관을 발견함으로써, 약간의 영향력을 증가시킬 수 있습니다. 탐색을 시작합시다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_ALMOST_LOST_CITY_STATE_ALLY_QUEST_FIND_PLAYER"> 
@@ -283653,7 +283958,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_ALMOST_LOST_CITY_STATE_FRIENDSHIP_QUEST_FIND_NATURAL_WONDER"> 
 			<Text>
-				이대로 뭔가를 하지 않는다면, 우리와 {1_MinorCivName:textkey}의 친분이 사라질 것입니다. 자연 불가사의를 발견함으로써, 약간의 영향력을 증가시킬 수 있습니다. 탐색을 시작합시다!
+				이대로 뭔가를 하지 않는다면, 우리와 {1_MinorCivName:textkey}의 친분이 사라질 것입니다. 자연경관을 발견함으로써, 약간의 영향력을 증가시킬 수 있습니다. 탐색을 시작합시다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_ALMOST_LOST_CITY_STATE_FRIENDSHIP_QUEST_FIND_PLAYER"> 
@@ -283708,7 +284013,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_BEFRIEND_CITY_STATE_QUEST_FIND_NATURAL_WONDER"> 
 			<Text>
-				자연 불가사의를 발견하면, 우리는 {1_MinorCivName:textkey}에 대한 영향력을 얻을 수 있습니다.
+				자연경관을 발견하면, 우리는 {1_MinorCivName:textkey}에 대한 영향력을 얻을 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_DIPLOSTRATEGY_BEFRIEND_CITY_STATE_QUEST_FIND_PLAYER"> 
@@ -288536,7 +288841,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_ECONOMICAISTRATEGY_NEED_RECON"> 
 			<Text>
-				우리는 고대 유적, 자연 불가사의, 그리고 다른 문명을 발견할 때까지 탐색을 계속 해야합니다!
+				우리는 고대 유적, 자연경관, 그리고 다른 문명을 발견할 때까지 탐색을 계속 해야합니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ECONOMICAISTRATEGY_NEED_RECON_SEA"> 
@@ -291966,7 +292271,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_EUROPEAN_NATURAL_WONDER_FOUNDFIRST"> 
 			<Text>
-				다른 유럽인들보다 앞서 자연 경관을 발견해 {1_AdmiralPoints}점의 위대한 제독 점수를 얻었습니다. 점수를 사용해 중국을 발견하거나 '무역 임무'를 수행하세요.
+				다른 유럽인들보다 앞서 자연경관을 발견해 {1_AdmiralPoints}점의 위대한 제독 점수를 얻었습니다. 점수를 사용해 중국을 발견하거나 '무역 임무'를 수행하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_EUROPEAN_TITLE"> 
@@ -297273,6 +297578,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				침보라조 산
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_COASTAL"> 
+			<Text>
+				연안의
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_COASTAL_PEDIA"> 
+			<Text>
+				연안 육각 타일은 (물에 바로 인접한, 숲, 정글, 습지가 없는) 깨끗한 육각 타일입니다. 일부 유닛에 이동 보너스를 제공합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_CRATER"> 
 			<Text>
 				배린저 운석공
@@ -297470,7 +297785,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_NATURAL_WONDER"> 
 			<Text>
-				자연 불가사의
+				자연경관
 			</Text>
 			<Plurality>
 				2
@@ -297560,6 +297875,11 @@ The ship has weather'd every rack; the prize we sought is won."
 			<Plurality>
 				2
 			</Plurality>
+		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_STORM"> 
+			<Text>
+				시야 및 이동 제한
+			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_TSOODZIL"> 
 			<Text>
@@ -297804,7 +298124,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_FOGOFWAR_OBSCURINGTERRAIN_HEADING2_BODY"> 
 			<Text>
-				산들과 자연 불가사의는 통행이 불가합니다. 그것들은 모든 유닛에게 건너편 시야를 확보하는데 있어 완전한 장애물입니다. (공중 유닛 제외)[NEWLINE]숲과 산, 언덕은 모두 시야를 가리는 지형입니다. 유닛들이 타일을 보는것은 가능하지만, 언덕을 넘지 않는다면 타일을 통해 반대편을 볼 수는 없습니다. 언덕에 올라 있는 유닛은 시야를 가리는 지형을 넘어서 볼 수 있습니다.
+				산들과 자연경관은 통행이 불가합니다. 그것들은 모든 유닛에게 건너편 시야를 확보하는데 있어 완전한 장애물입니다. (공중 유닛 제외)[NEWLINE]숲과 산, 언덕은 모두 시야를 가리는 지형입니다. 유닛들이 타일을 보는것은 가능하지만, 언덕을 넘지 않는다면 타일을 통해 반대편을 볼 수는 없습니다. 언덕에 올라 있는 유닛은 시야를 가리는 지형을 넘어서 볼 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_FOGOFWAR_OBSCURINGTERRAIN_HEADING2_TITLE"> 
@@ -304182,17 +304502,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_GOAL_TUTORIAL_2_DISCOVER_NATURAL_WONDERS"> 
 			<Text>
-				자연 불가사의를 {1_Num}개 찾습니다.
+				자연경관을 {1_Num}개 찾습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOAL_TUTORIAL_2_DISCOVER_NATURAL_WONDERS_COMPLETE"> 
 			<Text>
-				자연 불가사의를 {1_Num}개 찾습니다. 발견 완료!
+				자연경관을 {1_Num}개 찾습니다. 발견 완료!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOAL_TUTORIAL_2_DISCOVER_NATURAL_WONDERS_PROGRESS"> 
 			<Text>
-				자연 불가사의를 {1_Num}개 찾습니다. ({2_Num}개 찾았고, {3_Num}개 남음)
+				자연경관을 {1_Num}개 찾습니다. ({2_Num}개 찾았고, {3_Num}개 남음)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOAL_TUTORIAL_2_FOUND_CITIES"> 
@@ -304680,7 +305000,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_GOLD_TERRAIN_HEADING3_BODY"> 
 			<Text>
-				노동자가 일을 할 때, 다음의 타일들은 골드를 제공해줄 것입니다.: [NEWLINE]- 연안 타일[NEWLINE]- 대양 타일[NEWLINE]- 강 타일[NEWLINE]- 자연 불가사의[NEWLINE]- 오아시스
+				노동자가 일을 할 때, 다음의 타일들은 골드를 제공해줄 것입니다.: [NEWLINE]- 연안 타일[NEWLINE]- 대양 타일[NEWLINE]- 강 타일[NEWLINE]- 자연경관[NEWLINE]- 오아시스
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOLD_TERRAIN_HEADING3_TITLE"> 
@@ -317823,12 +318143,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_EXPLORE_MAP_BUTTON_HELP"> 
 			<Text>
-				모든 지도의 안개를 없앱니다. 자연 불가사의 등은 발견되지만 문명 만남이 활성화되지 않습니다.
+				모든 지도의 안개를 없앱니다. 자연경관 등은 발견되지만 문명 만남이 활성화되지 않습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_FEATURES_AND_WONDERS"> 
 			<Text>
-				특징과 자연 불가사의
+				특징과 자연경관
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_FLAG_STATE_LIBERATED"> 
@@ -318123,7 +318443,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_NATIONAL_WONDER"> 
 			<Text>
-				[COLOR:125:250:250:255]자연 불가사의[ENDCOLOR]
+				[COLOR:125:250:250:255]자연경관[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_NEVER_LOST_CITY_CB"> 
@@ -318348,7 +318668,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_REVEAL_MAP_BUTTON_HELP"> 
 			<Text>
-				모든 지도를 밝힙니다. 자연 불가사의, 고대 유적, 문명 만남 등이 활성화됩니다.
+				모든 지도를 밝힙니다. 자연경관, 고대 유적, 문명 만남 등이 활성화됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_SAFE_MODE"> 
@@ -318548,7 +318868,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_UNEXPLORE_MAP_BUTTON_HELP"> 
 			<Text>
-				모든 지도를 탐험하지 않은 상태로 만듭니다. 자연 불가사의 발견과 문명 만남 등이 이전 상태로 되돌아가지는 않습니다.
+				모든 지도를 탐험하지 않은 상태로 만듭니다. 자연경관 발견과 문명 만남 등이 이전 상태로 되돌아가지는 않습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_UNIMPROVED_NAME"> 
@@ -318831,6 +319151,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_FISHING_BOATS"> 
 			<Text>
 				어선
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_FISHWHALING"> 
+			<Text>
+				포경
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_FORT"> 
@@ -319214,6 +319539,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				카호키아 문명과 동맹을 맺어야만 이 아름다운 건축물을 즐길 수 있습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MWHALE"> 
+			<Text>
+				[ICON_RES_WHALE] 고래
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_OFFSHORE_PLATFORM"> 
 			<Text>
 				해양 구조물
@@ -319340,6 +319670,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT"> 
 			<Text>
 				{TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP}[NEWLINE][NEWLINE]하시엔다는 스페인인들이 원주민들로부터 자원을 얻고 관리하기 위해 건설한 식민지이다. 하시엔다는 이전의 엔코미엔다 제도에 의해 기술된 토착 노동력의 엄격한 부여보다는 재산과 기업의 부여에 기반을 두었다. 하시엔다는 일반적으로 큰 사유지였지만, 그 일의 성격은 플랜테이션, 광업, 공장까지 다양했다.[NEWLINE][NEWLINE]하시엔다의 소유자는 하켄다도라고 불렸지만, 부유한 지주들은 그들의 소유지를 거의 방문하지 않았고 근처의 도시에서 사는 것을 선호했다. 하시엔다의 일상적인 운영은 고용된 관리자의 책임이었다. 몇몇 비정상적으로 크고 수익성이 높은 아시엔다들은 로마 가톨릭 교회의 재산이었고, 토착 노동자들과 그들의 기독교 작업 주인들 사이의 긴장을 악화시켰다.[NEWLINE][NEWLINE]아시엔다 제도는 스페인 제국이 해체된 후 대부분의 국가에서 폐지되었지만, 결과는 엇갈렸다. 대규모 사유지를 자급자족하는 농부들을 위한 개별 소유지로 분리하려는 노력은 일부 남미 국가들에서 극심한 빈곤을 초래했다. 이와는 대조적으로, 라틴 아메리카와 필리핀의 하시엔다는 대부분 온전하게 남아있었지만, 그들의 식민지 시대에 대한 동일한 법적 지위나 허가가 없었다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_STORM"> 
+			<Text>
+				폭풍
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SUNK_COURT"> 
@@ -362107,7 +362442,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_MINOR_CIV_QUEST_FIND_NATURAL_WONDER_NAME"> 
 			<Text>
-				자연 경관 발견
+				자연경관 발견
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MINOR_CIV_QUEST_FIND_PLAYER_NAME"> 
@@ -365964,7 +366299,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI"> 
 			<Text>
-				[NEWLINE][ICON_BULLET]이 자연 불가사의를 소유할 때마다 [ICON_PEACE] 신앙 50[NEWLINE][ICON_BULLET][ICON_GREAT_WORK][ICON_GREAT_WORK]에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1[NEWLINE][ICON_BULLET]모든 성지에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1
+				[NEWLINE][ICON_BULLET]이 자연경관을 소유할 때마다 [ICON_PEACE] 신앙 50[NEWLINE][ICON_BULLET][ICON_GREAT_WORK][ICON_GREAT_WORK]에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1[NEWLINE][ICON_BULLET]모든 성지에서 [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_A"> 
@@ -367589,17 +367924,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_COUNT"> 
 			<Text>
-				발견된 자연 불가사의: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}
+				발견된 자연경관: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK"> 
 			<Text>
-				자연 불가사의 개요
+				자연경관 개요
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK_TT"> 
 			<Text>
-				발견된 모든 자연 불가사의와 그 능력을 보여줍니다
+				발견된 모든 자연경관과 그 능력을 보여줍니다
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_DISTANCE"> 
@@ -367649,12 +367984,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_NO_WONDER"> 
 			<Text>
-				아직 자연 불가사의를 발견하지 못했습니다!
+				아직 자연경관을 발견하지 못했습니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_OVERVIEW"> 
 			<Text>
-				자연 불가사의 개요
+				자연경관 개요
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NATURAL_WONDER_OWNER_UNKNOWN_TT"> 
@@ -367804,12 +368139,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NEED_FEATURE"> 
 			<Text>
-				[NEWLINE] [ICON_BULLET] {1_Desc} 지형 특성이 있어야 합니다.
+				[NEWLINE] [ICON_BULLET] {1_Desc} 지형 특징이 있어야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEED_FEATURE_NEARBY"> 
 			<Text>
-				[NEWLINE] [ICON_BULLET] 도시 주변에 {1_Desc} 지형 특성이 있어야 합니다.
+				[NEWLINE] [ICON_BULLET] 도시 주변에 {1_Desc} 지형 특징이 있어야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEED_GARRISON"> 
@@ -368069,17 +368404,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLDDLX_SCENARIO_CIV5_DAWN_AMERICAN_NEWWORLD_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년, 대서양 너머에 위치한 중국과 서인도제도를 발견하기 위해 안달이 난 탐험가들이 유럽의 왕정을 알현했다. 과연 그들은 새로운 교역로를 찾고 아시아의 해안에 숨겨진 막대한 보물을 발견할 것인가? 아니면 도중에 미지의 땅에 좌초되고 말 것인가? 원주민들은 지식과 무역의 기회를 수용할 것인가? 아니면 영토의 침입자들과 싸울 것인가? 미지의 바다를 항해할 준비가 된 자들에게 어떤 부와 명성, 기회가 기다리고 있을까? 누가 신세계의 패권을 차지할 수 있을까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다. 아메리카는 [ICON_PEACE]신앙으로, 유럽은 [ICON_GOLD]골드로 승리 점수를 획득합니다. 열 개의 문명을 마음껏 즐겨보세요. 아메리카의 지도는 매번 변화합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연 경관을 발견할 때만 생성됩니다. 유럽에 있는 도시와 아메리카 문명의 마지막 도시를 제외한 신세계의 모든 도시는 [ICON_RAZING]파괴할 수 있습니다. 아메리카 문명은 수도에 정착한 후 첫 턴에 소수 신앙을 발견합니다. 이 소수 신앙은 (강력한) 단일 종교관 교리로 구성되며 새로 건설되는 각 도시로 퍼집니다. 특별 규칙에 대한 상세한 정보는 브리핑 화면에서 확인하세요.
+				시나리오 설명[NEWLINE]때는 1492년, 대서양 너머에 위치한 중국과 서인도제도를 발견하기 위해 안달이 난 탐험가들이 유럽의 왕정을 알현했다. 과연 그들은 새로운 교역로를 찾고 아시아의 해안에 숨겨진 막대한 보물을 발견할 것인가? 아니면 도중에 미지의 땅에 좌초되고 말 것인가? 원주민들은 지식과 무역의 기회를 수용할 것인가? 아니면 영토의 침입자들과 싸울 것인가? 미지의 바다를 항해할 준비가 된 자들에게 어떤 부와 명성, 기회가 기다리고 있을까? 누가 신세계의 패권을 차지할 수 있을까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다. 아메리카는 [ICON_PEACE]신앙으로, 유럽은 [ICON_GOLD]골드로 승리 점수를 획득합니다. 열 개의 문명을 마음껏 즐겨보세요. 아메리카의 지도는 매번 변화합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연경관을 발견할 때만 생성됩니다. 유럽에 있는 도시와 아메리카 문명의 마지막 도시를 제외한 신세계의 모든 도시는 [ICON_RAZING]파괴할 수 있습니다. 아메리카 문명은 수도에 정착한 후 첫 턴에 소수 신앙을 발견합니다. 이 소수 신앙은 (강력한) 단일 종교관 교리로 구성되며 새로 건설되는 각 도시로 퍼집니다. 특별 규칙에 대한 상세한 정보는 브리핑 화면에서 확인하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLDDLX_SCENARIO_CIV5_DAWN_NEWWORLDLOAD_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년, 대서양 너머에 위치한 중국과 서인도제도를 발견하기 위해 안달이 난 탐험가들이 유럽의 왕정을 알현했다. 과연 그들은 새로운 교역로를 찾고 아시아의 해안에 숨겨진 막대한 보물을 발견할 것인가? 아니면 도중에 미지의 땅에 좌초되고 말 것인가? 원주민들은 지식과 무역의 기회를 수용할 것인가? 아니면 영토의 침입자들과 싸울 것인가? 미지의 바다를 항해할 준비가 된 자들에게 어떤 부와 명성, 기회가 기다리고 있을까? 누가 신세계의 패권을 차지할 수 있을까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다. 아메리카 문명은 [ICON_PEACE]신앙으로, 유럽 문명은 [ICON_GOLD]골드로 승리 점수를 획득합니다. 열 개의 문명을 마음껏 즐겨보세요. 아메리카의 지도는 새 게임을 시작할 때마다 변화합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]유럽 열강은 한 국가가 해적 행위 기술을 개발할 때까지 서로 선전포고할 수 없습니다. 보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연 경관을 발견할 때만 생성됩니다. 해상 유닛은 괴혈병에 시달립니다. 이 질병에 대항하려면 국가 불가사의인 항해 학교를 건설하세요. 유럽 문명은 신대륙에 자신의 종교를 전파하고자 합니다. 특별 규칙에 대한 상세한 정보는 브리핑 화면에서 확인하세요.
+				시나리오 설명[NEWLINE]때는 1492년, 대서양 너머에 위치한 중국과 서인도제도를 발견하기 위해 안달이 난 탐험가들이 유럽의 왕정을 알현했다. 과연 그들은 새로운 교역로를 찾고 아시아의 해안에 숨겨진 막대한 보물을 발견할 것인가? 아니면 도중에 미지의 땅에 좌초되고 말 것인가? 원주민들은 지식과 무역의 기회를 수용할 것인가? 아니면 영토의 침입자들과 싸울 것인가? 미지의 바다를 항해할 준비가 된 자들에게 어떤 부와 명성, 기회가 기다리고 있을까? 누가 신세계의 패권을 차지할 수 있을까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다. 아메리카 문명은 [ICON_PEACE]신앙으로, 유럽 문명은 [ICON_GOLD]골드로 승리 점수를 획득합니다. 열 개의 문명을 마음껏 즐겨보세요. 아메리카의 지도는 새 게임을 시작할 때마다 변화합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]유럽 열강은 한 국가가 해적 행위 기술을 개발할 때까지 서로 선전포고할 수 없습니다. 보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연경관을 발견할 때만 생성됩니다. 해상 유닛은 괴혈병에 시달립니다. 이 질병에 대항하려면 국가 불가사의인 항해 학교를 건설하세요. 유럽 문명은 신대륙에 자신의 종교를 전파하고자 합니다. 특별 규칙에 대한 상세한 정보는 브리핑 화면에서 확인하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLDDLX_SCENARIO_CIV5_NEWWORLD_BRIEFING_TEXT"> 
 			<Text>
-				승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다.[NEWLINE][NEWLINE]아메리카는 다음과 같이 획득한 신앙에 대해 [ICON_PEACE]신앙 2마다 승리 점수 1점을 획득합니다.[NEWLINE][ICON_BULLET]턴 시작 시 얻은 신앙[NEWLINE][ICON_BULLET]전투에서 얻은 신앙[NEWLINE][ICON_BULLET]쇼숀 길잡이로부터 얻은 신앙[NEWLINE][NEWLINE]유럽은 다음과 같이 획득한 골드에 대해 [ICON_GOLD]골드 12개마다 승리 점수 1점을 획득합니다.[NEWLINE][ICON_BULLET]턴 시작 시 전체 골드 수입[NEWLINE][ICON_BULLET]전투 시 파괴한 적 유닛으로부터 얻은 골드[NEWLINE][ICON_BULLET]수도로 다시 가져온 보물의 골드[NEWLINE][ICON_BULLET]무역 임무로부터 얻은 골드[NEWLINE][ICON_BULLET]나우로 중국에 도달하여 얻은 골드[NEWLINE][ICON_BULLET]스페인의 특성으로 얻은 골드[NEWLINE][NEWLINE]특별 규칙[NEWLINE]해상 유닛은 괴혈병에 시달립니다. 이 질병에 대항하려면 국가 불가사의인 항해 학교를 건설하세요. 유럽 열강은 한 국가가 해적 행위 기술을 개발할 때까지 서로 선전포고할 수 없습니다. 보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연 경관을 발견할 때만 생성됩니다. 유럽에 있는 도시와 아메리카 문명의 마지막 도시를 제외한 신세계의 모든 도시는 [ICON_RAZING]파괴될 수 있습니다. 시야 보너스를 2만큼 보유한 위대한 제독을 제외하면, 모든 해상 유닛의 시야에 1만큼 페널티가 주어집니다. 위대한 제독 탄생에 필요한 점수는 각 턴마다 자동으로 생성되며 탐험 성과로도 생성됩니다. 유럽과 아메리카 종교에 관한 정보는 화면 상단 정보 바의 신앙 항목에 마우스를 올려서 확인하세요.
+				승리 조건[NEWLINE]150턴이 지난 후에 최고 점수를 거둔 자가 승리를 거둡니다. 위대한 제독으로 중국에 도달하면 보너스 승리 점수를 획득합니다.[NEWLINE][NEWLINE]아메리카는 다음과 같이 획득한 신앙에 대해 [ICON_PEACE]신앙 2마다 승리 점수 1점을 획득합니다.[NEWLINE][ICON_BULLET]턴 시작 시 얻은 신앙[NEWLINE][ICON_BULLET]전투에서 얻은 신앙[NEWLINE][ICON_BULLET]쇼숀 길잡이로부터 얻은 신앙[NEWLINE][NEWLINE]유럽은 다음과 같이 획득한 골드에 대해 [ICON_GOLD]골드 12개마다 승리 점수 1점을 획득합니다.[NEWLINE][ICON_BULLET]턴 시작 시 전체 골드 수입[NEWLINE][ICON_BULLET]전투 시 파괴한 적 유닛으로부터 얻은 골드[NEWLINE][ICON_BULLET]수도로 다시 가져온 보물의 골드[NEWLINE][ICON_BULLET]무역 임무로부터 얻은 골드[NEWLINE][ICON_BULLET]나우로 중국에 도달하여 얻은 골드[NEWLINE][ICON_BULLET]스페인의 특성으로 얻은 골드[NEWLINE][NEWLINE]특별 규칙[NEWLINE]해상 유닛은 괴혈병에 시달립니다. 이 질병에 대항하려면 국가 불가사의인 항해 학교를 건설하세요. 유럽 열강은 한 국가가 해적 행위 기술을 개발할 때까지 서로 선전포고할 수 없습니다. 보물 유닛은 도시를 파괴하거나 엘도라도와 포토시 자연경관을 발견할 때만 생성됩니다. 유럽에 있는 도시와 아메리카 문명의 마지막 도시를 제외한 신세계의 모든 도시는 [ICON_RAZING]파괴될 수 있습니다. 시야 보너스를 2만큼 보유한 위대한 제독을 제외하면, 모든 해상 유닛의 시야에 1만큼 페널티가 주어집니다. 위대한 제독 탄생에 필요한 점수는 각 턴마다 자동으로 생성되며 탐험 성과로도 생성됩니다. 유럽과 아메리카 종교에 관한 정보는 화면 상단 정보 바의 신앙 항목에 마우스를 올려서 확인하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLDDLX_SCENARIO_DESC"> 
@@ -369743,22 +370078,22 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_AZTECS_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_ENGLAND_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_FRANCE_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_INCA_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_INCA_TITLE"> 
@@ -369768,17 +370103,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_IROQUOIS_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_NEWWORLD_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_SPAIN_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연 경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
+				시나리오 설명[NEWLINE]때는 1492년입니다. 대서양을 건너 중국과 인도제국으로 향하는 새로운 항로를 개척하고 싶어 안달이 난 용감무쌍한 탐험가들이 영국과 프랑스 그리고 스페인의 궁궐로 몰려들었습니다. 이들이 새로운 교역로를 개척하고 아시아의 해안에서 이제껏 알려지지 않은 부를 발견할 수 있을까요? 아니면 탐험 도중에 배가 좌초되어 미지의 땅을 헤매게 될까요? 원주민들이 그들에게 제공된 지식과 교역에 대한 가능성을 선뜻 받아들일까요? 아니면 그들의 모국에 쳐들어온 침략자들에 맞서 싸울까요? 용감하게 미지의 바다를 향해 나가는 자들을 부와 명예 그리고 기회가 기다리고 있을까요? 어떤 길을 선택하시겠습니까? 신세계의 패권을 잡기 위한 싸움에서 누가 승리할까요?[NEWLINE][NEWLINE]승리 조건[NEWLINE]제일 먼저 1,000VP를 달성하는 문명이 승리합니다. 탐험 캐러벨로 중국에 도달하고 수도로 보물 유닛을 가져온 대가로 보너스 VP를 획득했습니다. 여섯 개의 문명을 각각 경험해 보고 원하는 만큼 플레이하십시오. 매번 신규 게임을 시작할 때마다 아메리카 지도가 달라집니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]모든 해군 전투 유닛은 우호적인 지형 밖에서 차례를 마감할 때마다 체력이 깎이는 괴혈병 피해를 봅니다. 심각한 문제에 맞서기 위해 국가의 불가사의인 항해술 학교를 건설하십시오. 유럽의 열강은 해적 기술을 연구하기 전에는 서로에게 전쟁을 선포하지 않습니다. 보물 유닛은 도시가 완전히 파괴됐을 때 생성되거나 엘도라도와 포토시의 자연경관에 의해 생성됩니다. (만약 이 지도에 존재한다면) 골드와 VP를 획득하려면 이 시민 유닛을 수도로 이동시키십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_DAWN_SPAIN_TITLE"> 
@@ -373087,7 +373422,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_TRAIT_SEVEN_CITIES"> 
 			<Text>
-				자연 경관을 발견하면 [ICON_GOLD]골드를 획득합니다. 해당 자연 경관을 처음 발견하면 더 많은 보너스를 받습니다. 자연 경관 타일이 생산하는 [ICON_CULTURE]문화, [ICON_HAPPINESS_1]행복 및 기타 생산 항목이 두 배로 증가합니다.
+				자연경관을 발견하면 [ICON_GOLD]골드를 획득합니다. 해당 자연경관을 처음 발견하면 더 많은 보너스를 받습니다. 자연경관 타일이 생산하는 [ICON_CULTURE]문화, [ICON_HAPPINESS_1]행복 및 기타 생산 항목이 두 배로 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_TRAIT_SEVEN_CITIES_SHORT"> 
@@ -383962,6 +384297,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				전차 유닛 대항 보너스(100)
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_ARCTICIAN"> 
+			<Text>
+				극지인
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_ATTACK_BONUS"> 
 			<Text>
 				공격할 때 전투 보너스 (25)
@@ -384154,6 +384494,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				지형 페널티 없음
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_IGNORE_ZOC"> 
+			<Text>
+				통제 구역(ZOC) 무시
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_INTERCEPTION_I"> 
 			<Text>
 				요격 보너스 (20)
@@ -384294,6 +384639,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				유닛 처치 시 체력 회복 (25)
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_PATHFINDER"> 
+			<Text>
+				탐사 논리
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_PATHFINDER_2"> 
+			<Text>
+				전투 논리
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_RANGED_SUPPORT_FIRE"> 
 			<Text>
 				원거리 지원 사격
@@ -384334,6 +384689,11 @@ The ship has weather'd every rack; the prize we sought is won."
 			<Plurality>
 				2
 			</Plurality>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_SLOW_WOODS"> 
+			<Text>
+				산림 지역 이동 방해
+			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_SPAWN_GENERALS_I"> 
 			<Text>
@@ -392581,6 +392941,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR:255:230:85:255]해상 및 지상 유닛 상대 시[ENDCOLOR] [ICON_RANGE_STRENGTH]원거리 공격력 +25%.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_WEATHER"> 
+			<Text>
+				민감한 날씨
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_WEATHER_HELP"> 
+			<Text>
+				[COLOR_MENU_BLUE]폭풍[ENDCOLOR] 속에서 [ICON_WAR] [COLOR_NEGATIVE_TEXT]공격력[ENDCOLOR]이 -20% 감소하고 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]이 발생합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALHAMBRA"> 
 			<Text>
 				[COLOR:100:155:60:255]히네테[ENDCOLOR]
@@ -392601,7 +392971,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. 승선한 유닛은 [COLOR:255:230:85:255]대양에 진입할 수 있습니다[ENDCOLOR]. [ICON_VP_VISION] 시야 +2.
+				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. 승선한 유닛은 [COLOR:255:230:85:255]대양에 진입할 수 있습니다[ENDCOLOR]. [ICON_VP_VISION] 시야 +2.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALTITUDE_TRAINING"> 
@@ -392857,6 +393227,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_ARAHURAHU_HELP"> 
 			<Text>
 				적 유닛의 [ICON_STRENGTH] 전투력의 120%를 [ICON_CULTURE] 문화로 [COLOR:255:230:85:255]처치 시[ENDCOLOR] 얻습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ARCTICIAN"> 
+			<Text>
+				극지인
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ARCTICIAN_HELP"> 
+			<Text>
+				[COLOR_WATER_TEXT]빙판[ENDCOLOR]을 건널 수 있습니다. 눈에서 [ICON_STRENGTH] 전투력이 +15% 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ARMOR_PLATING_1"> 
@@ -394045,7 +394425,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKATION_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. [ICON_RESEARCH][COLOR_RESEARCH_STORED]항해[ENDCOLOR] 필요.
+				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. [ICON_RESEARCH][COLOR_RESEARCH_STORED]항해[ENDCOLOR] 필요.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKED_SIGHT"> 
@@ -394562,7 +394942,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FROGMAN_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]해상에서 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]승선 또는 하선 시[ENDCOLOR] [ICON_MOVES]이동력 1 소모. 유닛이 [COLOR:255:230:85:255]승선 시[ENDCOLOR] [ICON_STRENGTH]방어 전투력 +50%. [ICON_RESEARCH][COLOR_RESEARCH_STORED]철도[ENDCOLOR] 필요.
+				유닛이 [COLOR:255:230:85:255]해상에서 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]승선 또는 하선 시[ENDCOLOR] [ICON_MOVES]이동력 1 소모. 유닛이 [COLOR:255:230:85:255]승선 시[ENDCOLOR] [ICON_STRENGTH]방어 전투력 +50%. [ICON_RESEARCH][COLOR_RESEARCH_STORED]철도[ENDCOLOR] 필요.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한 [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동 비용[ENDCOLOR] 절반으로 감소[NEWLINE][ICON_MOVES] 승선 이동력이 +1 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS"> 
@@ -395204,6 +395584,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				[ICON_STRENGTH]전투력/[ICON_RANGE_STRENGTH]원거리 전투력 +10%.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT"> 
+			<Text>
+				말 훔치기
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT_HELP"> 
+			<Text>
+				유닛이 말을 획득: [ICON_MOVES] 이동력이 +1 증가합니다. 해당 유닛이 전투, 약탈 또는 승선하면 손실됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES"> 
+			<Text>
+				말 도둑
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES_HELP"> 
+			<Text>
+				유닛은 [COLOR_YIELD_FOOD] 말이나 아군 기마 유닛[ENDCOLOR]에 인접해 있을 경우 [ICON_MOVES] 이동력 +1을 획득할 수 있으며, [COLOR_RED]적의 말[ENDCOLOR]을 약탈/공격할 경우 +1 이동력을 획득할 수 있습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT"> 
 			<Text>
 				[COLOR:190:180:45:255]절벽의 가장자리[ENDCOLOR]
@@ -395211,7 +395611,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]산을 통과할 수 있습니다[ENDCOLOR]. 유닛이 [COLOR_NEGATIVE_TEXT]산에서 턴을 마치면[ENDCOLOR] 다음 턴 시작 시 [COLOR_NEGATIVE_TEXT]피해를 입습니다[ENDCOLOR].
+				유닛이 [COLOR:255:230:85:255]산을 통과할 수 있습니다[ENDCOLOR]. 유닛이 [COLOR_NEGATIVE_TEXT]산에서 턴을 마치면[ENDCOLOR] 다음 턴 시작 시 [COLOR_NEGATIVE_TEXT]피해를 입습니다[ENDCOLOR].[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]공격력[ENDCOLOR] -20% 및 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HUNTER_KILLER"> 
@@ -395252,6 +395652,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST_HELP"> 
 			<Text>
 				유닛이 [COLOR:255:230:85:255]지형 비용을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]아군 영토 밖에서[ENDCOLOR] [ICON_STRENGTH]전투력/[ICON_RANGE_STRENGTH]원거리 전투력 +10%.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_ZOC"> 
+			<Text>
+				통제 구역(ZOC) 무시
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_IGNORE_ZOC_HELP"> 
+			<Text>
+				적 유닛의 [COLOR_UNIT_TEXT]통제 구역(ZOC)[ENDCOLOR]을 무시합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_IKLWA"> 
@@ -395377,7 +395787,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP"> 
 			<Text>
-				유닛이 특수 능력이 없는 다른 적 유닛에게 [COLOR:255:230:85:255]보이지 않습니다[ENDCOLOR].
+				유닛이 특수 능력이 없는 다른 적 유닛에게 [COLOR:255:230:85:255]보이지 않습니다[ENDCOLOR].[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한  [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동[ENDCOLOR] 페널티에 면역
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVULNERABIILITY"> 
@@ -396050,7 +396460,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NAVIGATOR_2_HELP"> 
 			<Text>
-				[ICON_MOVES]이동력 +1. [ICON_VP_VISION] 시야 +1.
+				[ICON_MOVES]이동력 +1. [ICON_VP_VISION] 시야 +1.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한 [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동 비용[ENDCOLOR] 절반으로 감소
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_EMBARKATION_HELP"> 
@@ -396060,7 +396470,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_NATIVE_TONGUE_HELP"> 
 			<Text>
-				자연 경관을 발견하면 [ICON_PEACE]신앙을 받습니다. 처음으로 발견할 경우 보너스가 증가하지만, 이 승급을 가진 유닛 중 하나가 이미 발견한 경우에는 보너스가 없습니다.
+				자연경관을 발견하면 [ICON_PEACE]신앙을 받습니다. 처음으로 발견할 경우 보너스가 증가하지만, 이 승급을 가진 유닛 중 하나가 이미 발견한 경우에는 보너스가 없습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_SELL_EXOTIC_GOODS_HELP"> 
@@ -396284,6 +396694,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR:255:230:85:255]적 처치 시[ENDCOLOR] 체력 +25 회복.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER"> 
+			<Text>
+				탐사 논리
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_2"> 
+			<Text>
+				전투 논리
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_2_HELP"> 
+			<Text>
+				습지, 눈, 사막에서의 [ICON_MOVES] 이동 비용을 무시합니다. 적의 [COLOR_SELECTED_TEXT]통제 구역(ZOC)[ENDCOLOR]을 무시합니다.[NEWLINE]업그레이드시 소실됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_HELP"> 
+			<Text>
+				숲, 정글, 언덕, 눈, 사막, 습지에서의 [ICON_MOVES] 이동 비용을 무시합니다. 페널티 없이 [COLOR_WATER_TEXT]강[ENDCOLOR]을 건널 수 있습니다. 매 턴마다 근접 공격 1회를 [COLOR_SELECTED_TEXT]회피[ENDCOLOR]합니다.[NEWLINE]전투시 잃습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_PAX"> 
 			<Text>
 				[COLOR:100:155:60:255]황실 봉인[ENDCOLOR]
@@ -396446,7 +396876,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_EXPERIENCE_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]타일을 밝힐 때마다[ENDCOLOR] 경험치 획득.
+				유닛이 [COLOR:255:230:85:255]타일을 밝힐 때마다[ENDCOLOR] 경험치 획득.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_RANGE_1"> 
@@ -396654,7 +397084,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP"> 
 			<Text>
-				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]).
+				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). [COLOR_CYAN]승선[ENDCOLOR]시 [ICON_MOVES] 이동 비용 1이 듭니다. Can use Enemy Roads/Railroads.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2"> 
@@ -397177,6 +397607,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				유닛이 [COLOR:255:230:85:255]지배 지역을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]공격 후[ENDCOLOR] 방어하는 적 유닛은 멍해집니다 ([ICON_STRENGTH]전투력/[ICON_RANGE_STRENGTH]원거리 전투력 -15%).
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS"> 
+			<Text>
+				산림 지역 이동 방해
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS_HELP"> 
+			<Text>
+				숲, 정글, 습지, 오아시스에서는 [ICON_MOVES] 이동력이 떨어집니다. 적의 도로에서 사용할 수 있습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SMALLPOX"> 
 			<Text>
 				천연두
@@ -397398,7 +397838,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP"> 
 			<Text>
-				[ICON_STRENGTH]방어 전투력 +25%. 아군 영토 밖에서 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].
+				[ICON_STRENGTH]방어 전투력 +25%. 아군 영토 밖에서 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].[NEWLINE]강을 건너 공격할 경우 전투 페널티를 제거합니다.[NEWLINE]강을 건너는 데 [ICON_MOVES] 이동력을 1만 소모합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2"> 
@@ -397408,7 +397848,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP"> 
 			<Text>
-				[ICON_STRENGTH]방어 전투력 +25%. 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].
+				[ICON_STRENGTH]방어 전투력 +25%. 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].[NEWLINE][COLOR_CITY_BLUE]강[ENDCOLOR]에 인접한 깨끗한 구역에서 [ICON_MOVES] 이동력이 두 배로 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3"> 
@@ -397418,7 +397858,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]행동 여부와 상관없이 매 턴 회복합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]약탈 시[ENDCOLOR] [ICON_MOVES]이동력을 [COLOR:255:230:85:255]소모하지 않습니다[ENDCOLOR].
+				유닛이 [COLOR:255:230:85:255]행동 여부와 상관없이 매 턴 회복합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]약탈 시[ENDCOLOR] [ICON_MOVES]이동력을 [COLOR:255:230:85:255]소모하지 않습니다[ENDCOLOR]. [COLOR_CYAN]연안[ENDCOLOR]에서  [ICON_MOVES] 이동력이 2배가 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_TARGETING_1"> 
@@ -398600,6 +399040,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				[ICON_RANGE_STRENGTH]원거리 전투력 [COLOR_NEGATIVE_TEXT]-50%[ENDCOLOR
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB"> 
+			<Text>
+				고래목
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB_HELP"> 
+			<Text>
+				물고기를 찾아 돌아다닙니다. [COLOR_NEGATIVE_TEXT]어선과 민간인을 공격할 수 있습니다![ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_SANDS"> 
 			<Text>
 				화이트 샌즈 시설
@@ -398708,7 +399158,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선, 산 진입, 적 도로 및 철도 사용이 가능합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]지배 지역을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]아군 영토 밖에서[ENDCOLOR] [ICON_STRENGTH]전투력 +20%.
+				유닛이 [COLOR:255:230:85:255]산 진입, 적 도로 및 철도 사용이 가능합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]지배 지역을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]아군 영토 밖에서[ENDCOLOR] [ICON_STRENGTH]전투력 +20%. [COLOR_CITY_BLUE]호수/연안/대양[ENDCOLOR]에 인접한 깨끗한 구역에서 연속 [ICON_MOVES] 이동이 가능합니다. 오아시스에서 두 배로 [COLOR_POSITIVE_TEXT]회복[ENDCOLOR]됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODSMAN"> 
@@ -400830,6 +401280,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				코카는 남아메리카 서부에 자생하는 에리트로실라과의 네 가지 재배종 중 어느 한 종이라도 속하는 잎입니다. 코카는 다양한 약용과 영양 사용, 경계 강화, 통증 완화, 식욕 억제, 고산병 치료로 유명합니다. 잎은 전통적으로 씹거나 차로 양조됩니다. 코카는 피로를 겪거나 배고픔을 겪으면서도 사람들이 더 열심히 일하도록 돕는 능력으로 스페인 정복자들에게 깊은 인상을 남겼습니다.[NEWLINE][NEWLINE]오늘날 코카는 향정신성 알칼로이드인 코카인으로 가장 잘 알려져 있습니다. 코카 잎의 알칼로이드 함량은 상대적으로 낮기 때문에 단일 배치의 코카인에 많은 수의 코카 잎이 필요합니다. 코카 잎 추출물은 1885년에 코카콜라 제품에 사용되기 시작했지만 1903년경 제품에서 코카인이 완전히 제거되었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_COCONUT"> 
+			<Text>
+				코코넛
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_COCONUT_HELP"> 
+			<Text>
+				nil
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_COFFEE"> 
 			<Text>
 				커피
@@ -400974,6 +401434,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				화약의 발명은 일반적으로 당나라 시대 중국 연금술사들에게 귀속되며, "중국의 4대 발명품" 중 하나입니다. 가장 오래된 기록인 송나라 후기의 유황, 숯, 질산칼륨으로 구성된 공식은 불멸의 비약으로 여겨졌지만... 전혀 그렇지 않았습니다. 하지만 중국인들은 그것이 폭발적으로 연소하고 생성된 가스가 열에 노출되면 빠르게 팽창한다는 것을 발견했습니다. 그래서 불꽃놀이를 만드는 데 유용했습니다. 중국인들은 화약을 조잡한 폭탄과 로켓에 더 실용적으로 사용하여 몽골에 대항했습니다... 몽골이 중국을 점령하고 서쪽으로 가는 길에 만나는 모든 사람에게 새로운 무기를 사용할 때까지 말이죠.[NEWLINE][NEWLINE]몽골인들이 화약을 사용하여 마주치는 유럽인들을 위협하는 동안, 아랍인들은 1240년에서 1280년 사이에 더 나은 조리법, 더 순수한 질산염, 그리고 더 치명적인 무기, 특히 대포와 원시적인 아쿼버스를 개발했습니다. 일부 역사 문헌에 따르면 맘루크 왕조는 1260년 아인 잘루트 전투에서 몽골에 대항하여 역사상 최초의 대포를 사용했다고 하지만, 이는 논란의 여지가 있습니다. 그러나 "휴대용 수포"에 대한 가장 오래된 설명은 14세기 아랍어 필사본에 나타납니다. 몽골을 물리친 후, 아랍인들은 이것을 다른 곳에서 사용했습니다.[NEWLINE][NEWLINE]하지만 대량 학살의 수단으로 화약을 진정으로 받아들인 것은 유럽인들이었습니다. 그들은 공식을 개선하고 "코닝"(액체를 사용하여 입도를 높여 안정성을 높이는 것)과 "무연 화약"과 같은 기술을 추가했을 뿐만 아니라, 그것을 사용하여 작고 큰 납과 철 조각을 사람들에게 던지는 온갖 종류의 장난감을 만들었습니다. 르네상스 시대부터 유럽의 군사 역사는 화약에 의해 형성되었으며, 이전의 어떤 기술과도 비교할 수 없을 정도로 전장을 지배하게 되었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_HARDWOOD"> 
+			<Text>
+				견목
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_HARDWOOD_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]지역 도시 보너스:[ENDCOLOR] 산업화 이전 해상 근접 유닛과 해상 원거리 유닛, 르네상스 이전 공성 유닛이 요구하는 [ICON_PRODUCTION] 생산력이 20% 감소합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_HIDDEN_ARTIFACTS"> 
 			<Text>
 				숨겨진 사적지
@@ -401093,6 +401563,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				청금석
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_LAVENDER"> 
+			<Text>
+				라벤더
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_LAVENDER_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 소유한 모든 도시에서 [ICON_CULTURE] 문화가 +10% 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_LEAD"> 
+			<Text>
+				납
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_LEAD_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]지역 도시 보너스:[ENDCOLOR] 고대 및 고전 건축물이 요구하는 [ICON_PRODUCTION] 생산력이 10% 감소합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_LLAO_LLAO"> 
 			<Text>
 				야오야오
@@ -401141,6 +401631,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_MARBLE"> 
 			<Text>
 				대리석
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MIGRATORY_WHALE"> 
+			<Text>
+				이주하는 고래
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY"> 
@@ -401409,6 +401904,36 @@ The ship has weather'd every rack; the prize we sought is won."
 				2
 			</Plurality>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_PINEAPPLE"> 
+			<Text>
+				파인애플
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_PINEAPPLE_HELP"> 
+			<Text>
+				nil
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_PLATINUM"> 
+			<Text>
+				백금
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_PLATINUM_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 소유한 모든 도시에서 [ICON_RESEARCH] 과학이 +10%  증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_POPPY"> 
+			<Text>
+				양귀비
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_POPPY_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 소유한 모든 도시에서 [ICON_GREAT_PEOPLE] 위인 생성량이 +25% 증가합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_PORCELAIN"> 
 			<Text>
 				도자기
@@ -401420,6 +401945,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_PORCELAIN_HELP"> 
 			<Text>
 				도자기는 상업 도시 국가를 통해서만 얻을 수 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_POTATO"> 
+			<Text>
+				감자
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_POTATO_HELP"> 
+			<Text>
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_POTENTIAL"> 
@@ -401480,6 +402015,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_ROPES_TEXT"> 
 			<Text>
 				내용을 입력해주세요
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_RUBBER"> 
+			<Text>
+				고무
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_RUBBER_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]지역 도시 보너스:[ENDCOLOR] 민간 유닛이 요구하는 [ICON_PRODUCTION] 생산력이 20% 감소합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_SALT"> 
@@ -401546,6 +402091,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_SUGAR"> 
 			<Text>
 				설탕
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_SULFUR"> 
+			<Text>
+				유황
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_SULFUR_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]지역 도시 보너스:[ENDCOLOR] 중세 이후의 총기 유닛과 공성 유닛이 요구하는 [ICON_PRODUCTION] 생산력이 20% 감소합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_SYLVITE"> 
@@ -401616,6 +402171,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_NEGATIVE_TEXT]상대 문명의 현재 전략 자원 독점 보너스:[ENDCOLOR][NEWLINE][NEWLINE]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_TIN"> 
+			<Text>
+				주석
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_TIN_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 자원 타일에서 [ICON_GOLD] 골드 +3.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_TITANIUM"> 
+			<Text>
+				티타늄
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_TITANIUM_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]지역 도시 보너스:[ENDCOLOR] 현대 이후의 전투기와 폭격기 유닛이 요구하는  [ICON_PRODUCTION] 생산력이 20% 감소합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_TOBACCO"> 
 			<Text>
 				연초
@@ -401666,7 +402241,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY"> 
 			<Text>
-				그레이트배리어리프와 갈라파고스 자연 불가사의에 의해 생성될 수 있습니다.
+				그레이트배리어리프(대보초)와 갈라파고스 자연경관에 의해 생성될 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_TROPICAL_FISH_TEXT"> 
@@ -403806,7 +404381,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_SCRAMBLE_AFRICA_CIV5_DAWN_TEXT"> 
 			<Text>
-				시나리오 설명[NEWLINE]유럽 열강은 아프리카 대륙을 제외한 거의 모든 지역에 식민지를 건설했습니다. 모험과 보물, 지식을 갈구하는 탐험가와 이주민들이 북쪽과 서쪽에서 아프리카 대륙으로 몰려왔습니다. 그들 앞에 펼쳐진 것은 잃어버린 왕국과 신비한 동물, 식민지 건설을 방해하는 원주민 왕국이었습니다. 오토만 제국이 북아프리카에서 물러나자 유럽의 여러 국가는 아프리카 대륙을 차지하려고 싸웁니다. 유럽 열강 중 하나가 되어 풍요로운 아프리카를 차지하시겠습니까? 아니면 아프리카의 전사가 되어 침입자들을 몰아내시겠습니까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]100턴이 끝날 때 가장 점수가 높은 문명이 승리합니다. 자연 경관을 처음 발견하면 하나당 4만큼의 [ICON_HAPPINESS_1]행복이 증가합니다. 유럽(벨기에, 잉글랜드, 프랑스, 독일, 이탈리아, 포르투갈) 문명의 탐험가가 자연 경관에 처음 근접하거나 유물을 발견하면 승점을 획득합니다. 북아프리카(이집트, 모로코, 오토만 제국) 문명은 [ICON_GOLD]골드를 얻으면 승점을 획득합니다. 사하라 이남(에티오피아, 보어, 줄루) 문명은 [ICON_CULTURE]문화로 승점을 획득합니다. 수에즈 운하의 지배권 획득과 두 도시 사이의 가장 긴 철도 연결로도 승점을 얻을 수 있습니다. 토지의 가치가 두 배 증가합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]아프리카의 내부 구조는 플레이할 때마다 바뀝니다. 유럽 문명만이 승선/하선하거나 철도 또는 고고학 발굴 현장을 건설할 수 있으며, 같은 문명끼리 선전포고할 수 없습니다. 북아프리카 문명 역시 같은 문명끼리 선전포고할 수 없습니다.
+				시나리오 설명[NEWLINE]유럽 열강은 아프리카 대륙을 제외한 거의 모든 지역에 식민지를 건설했습니다. 모험과 보물, 지식을 갈구하는 탐험가와 이주민들이 북쪽과 서쪽에서 아프리카 대륙으로 몰려왔습니다. 그들 앞에 펼쳐진 것은 잃어버린 왕국과 신비한 동물, 식민지 건설을 방해하는 원주민 왕국이었습니다. 오토만 제국이 북아프리카에서 물러나자 유럽의 여러 국가는 아프리카 대륙을 차지하려고 싸웁니다. 유럽 열강 중 하나가 되어 풍요로운 아프리카를 차지하시겠습니까? 아니면 아프리카의 전사가 되어 침입자들을 몰아내시겠습니까?[NEWLINE][NEWLINE]승리 조건[NEWLINE]100턴이 끝날 때 가장 점수가 높은 문명이 승리합니다. 자연경관을 처음 발견하면 하나당 4만큼의 [ICON_HAPPINESS_1]행복이 증가합니다. 유럽(벨기에, 잉글랜드, 프랑스, 독일, 이탈리아, 포르투갈) 문명의 탐험가가 자연경관에 처음 근접하거나 유물을 발견하면 승점을 획득합니다. 북아프리카(이집트, 모로코, 오토만 제국) 문명은 [ICON_GOLD]골드를 얻으면 승점을 획득합니다. 사하라 이남(에티오피아, 보어, 줄루) 문명은 [ICON_CULTURE]문화로 승점을 획득합니다. 수에즈 운하의 지배권 획득과 두 도시 사이의 가장 긴 철도 연결로도 승점을 얻을 수 있습니다. 토지의 가치가 두 배 증가합니다.[NEWLINE][NEWLINE]특별 규칙[NEWLINE]아프리카의 내부 구조는 플레이할 때마다 바뀝니다. 유럽 문명만이 승선/하선하거나 철도 또는 고고학 발굴 현장을 건설할 수 있으며, 같은 문명끼리 선전포고할 수 없습니다. 북아프리카 문명 역시 같은 문명끼리 선전포고할 수 없습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SCRAMBLE_AFRICA_CIV5_FEATURES_FOUNTAIN_YOUTH_TEXT"> 
@@ -403924,7 +404499,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_SCRAMBLE_AFRICA_DIPLO_MY_SCORE_SCENARIO2"> 
 			<Text>
-				자연 경관/유물 발견으로 획득: {1_Num}
+				자연경관/유물 발견으로 획득: {1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SCRAMBLE_AFRICA_DIPLO_MY_SCORE_SCENARIO3"> 
@@ -405049,12 +405624,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_SHOSHONE_NATURAL_WONDER_FOUNDFIRST"> 
 			<Text>
-				자연 경관을 최초로 발견하여 [ICON_PEACE]신앙을 {1_FaithPoints}만큼 얻었습니다.
+				자연경관을 최초로 발견하여 [ICON_PEACE]신앙을 {1_FaithPoints}만큼 얻었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SHOSHONE_NATURAL_WONDER_FOUNDLATER"> 
 			<Text>
-				길잡이가 다른 사람보다 늦게 자연 경관을 발견해 [ICON_PEACE]신앙을 {1_FaithPoints}만큼 얻었습니다.
+				길잡이가 다른 사람보다 늦게 자연경관을 발견해 [ICON_PEACE]신앙을 {1_FaithPoints}만큼 얻었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SIAM_CITY_NAME_AYUTTHAYA"> 
@@ -422137,17 +422712,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_NATURALWONDERS_ADV_QUEST"> 
 			<Text>
-				자연 불가사의란 무엇인가요?
+				자연경관이란 무엇인가요?
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_NATURALWONDERS_HEADING3_BODY"> 
 			<Text>
-				자연 불가사의는 티티카카 호수, 그랜드 메사, 대보초 등과 같은 경이로운 것입니다. (모든 자연 불가사의는 그 위대한 아름다움을 사실성 있게 표현됩니다.) 자연 불가사의는 부를 제공해줄 뿐만 아니라 문명에 의해 처음 발견된 시점에서 영구적인 행복을 증가시켜 줍니다. 자연 불가사의는 이동할 수 없는 지역입니다. (공중유닛 제외)[NEWLINE][NEWLINE]타일 산출량: 2 생산 , 3 골드 [NEWLINE]소모하는 이동력: 통과 불가능[NEWLINE]전투 보정치: 없음
+				자연경관은 티티카카 호수, 그랜드 메사, 대보초 등과 같은 경이로운 것입니다. (모든 자연경관은 그 위대한 아름다움을 사실성 있게 표현됩니다.) 자연경관은 부를 제공해줄 뿐만 아니라 문명에 의해 처음 발견된 시점에서 영구적인 행복을 증가시켜 줍니다. 자연경관은 이동할 수 없는 지역입니다. (공중유닛 제외)[NEWLINE][NEWLINE]타일 산출량: 2 생산 , 3 골드 [NEWLINE]소모하는 이동력: 통과 불가능[NEWLINE]전투 보정치: 없음
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_NATURALWONDERS_HEADING3_TITLE"> 
 			<Text>
-				자연 불가사의
+				자연경관
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_OASIS_ADV_QUEST"> 
@@ -422350,7 +422925,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRIFIED"> 
 			<Text>
-				겁에 질림
+				두려워함
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_THEMING_BONUS_AMPHITHEATER_GLOBAL"> 
@@ -425991,7 +426566,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_CONFLICT_RESOLVED_TITLE"> 
 			<Text>
-				충돌 해결됨! 재장전 필요...
+				충돌 해결됨! 재시작 필요...
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_CONFLICT_TITLE"> 
@@ -426016,12 +426591,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_HOSTILE"> 
 			<Text>
-				([COLOR_RED]배타적[ENDCOLOR])
+				([COLOR_RED]적대적[ENDCOLOR])
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_IRRATIONAL"> 
 			<Text>
-				([COLOR:240:105:255:255]불가해함[ENDCOLOR])
+				([COLOR:240:105:255:255]비이성적[ENDCOLOR])
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_NEUTRAL"> 
@@ -430207,7 +430782,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_NEWWORLD_SCENARIO_SHOSHONE_PATHFINDER"> 
 			<Text>
-				탐사 능력이 뛰어나며 전투력도 강한 이 쇼숀족 고유 유닛은 정찰병을 대체합니다. 승급하면 자연 경관 발견 시 [ICON_PEACE]신앙을 얻을 수 있습니다.
+				탐사 능력이 뛰어나며 전투력도 강한 이 쇼숀족 고유 유닛은 정찰병을 대체합니다. 승급하면 자연경관 발견 시 [ICON_PEACE]신앙을 얻을 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_NORMAN_KNIGHT"> 
@@ -431411,7 +431986,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_NEWWORLD_SCENARIO_SHOSHONE_PATHFINDER_STRATEGY"> 
 			<Text>
-				길잡이는 정찰병을 대신하며 쇼숀족만이 생산할 수 있습니다. 정찰병처럼 탐색 능력이 뛰어나며 전사처럼 강력합니다. 자연 경관을 발견하면 [ICON_PEACE]신앙 보너스를 받습니다. 정찰병보다 비쌉니다.
+				길잡이는 정찰병을 대신하며 쇼숀족만이 생산할 수 있습니다. 정찰병처럼 탐색 능력이 뛰어나며 전사처럼 강력합니다. 자연경관을 발견하면 [ICON_PEACE]신앙 보너스를 받습니다. 정찰병보다 비쌉니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_NIHANG"> 
@@ -432485,6 +433060,26 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_WELSH_LONGBOWMAN_STRATEGY"> 
 			<Text>
 				웨일스 장궁병는 켈트족 고유 유닛으로, 석궁병을 대체합니다. 웨일스 장궁병는 석궁병보다 공격 사정거리가 길어 3타일 밖에서 적을 공격해 적이 반격하기 전 적을 제거할 수 있습니다. 다른 원거리 공격 유닛들과 마찬가지로 근접 공격에 취약합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB"> 
+			<Text>
+				고래
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_HELP"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_PEDIA"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_STRATEGY"> 
+			<Text>
+				고래
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WORKER"> 
@@ -434804,6 +435399,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_WAITING_FOR_PLAYERS_TT"> 
 			<Text>
 				다른 플레이어가 턴을 종료하기를 기다리는 중입니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_ALL_UNITS"> 
+			<Text>
+				모든 유닛 깨우기
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WAR"> 
@@ -439094,7 +439694,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_WORKERS_FARM_HEADING3_BODY"> 
 			<Text>
-				농장은 가장 초기에 거의 대부분의 사람이 건설하는 시설입니다. 모든 문명은 농업을 하는 법에 대해 배우고 시작합니다. 농장 시설은 대부분의 타일위에 건설할 수 있으며, 수많은 자원들 중 으뜸입니다:[NEWLINE]요구 기술: 농업 (게임 시작시 획득합니다.)[NEWLINE]건설 가능 지역: 농장 시설은 빙하와 산 지형, 자연 불가사의 위에는 건설할 수 없습니다. 농장을 사막이나 언덕 타일에 짓기 위해서는 반드시 그 곁에 강이나 호수, 다른 농장 시설과 같은 담수공급원이 필요합니다. 농장 시설은 타일의 식량을 1 증가시킵니다.[NEWLINE]소요 건설 시간: 5 턴[NEWLINE]숲: 당신이 채광 기술을 배웠다면, 농장을 숲에도 지을 수 있을 것입니다. 농장이 지어지면 숲은 제거됩니다. 총 건설 소요 시간: 9 턴[NEWLINE]정글: 당신이 청동기술을 배웠다면, 농장을 정글에도 지을 수 있을 것입니다. 농장이 지어지면 정글은 제거됩니다. 총 건설 소요 시간: 12 턴[NEWLINE]습지: 당신이 석조기술을 배웠다면, 농장을 습지에도 지을 수 있을 것입니다. 농장이 지어지면 습지는 제거됩니다. 총 건설 소요 시간: 11 턴[NEWLINE]자원 이용 가능: 농장은 "밀"자원을 이용할 수 있게 해주며, 타일의 식량 1과 골드 1을 증가시켜줍니다.
+				농장은 가장 초기에 거의 대부분의 사람이 건설하는 시설입니다. 모든 문명은 농업을 하는 법에 대해 배우고 시작합니다. 농장 시설은 대부분의 타일위에 건설할 수 있으며, 수많은 자원들 중 으뜸입니다:[NEWLINE]요구 기술: 농업 (게임 시작시 획득합니다.)[NEWLINE]건설 가능 지역: 농장 시설은 빙하와 산 지형, 자연경관 위에는 건설할 수 없습니다. 농장을 사막이나 언덕 타일에 짓기 위해서는 반드시 그 곁에 강이나 호수, 다른 농장 시설과 같은 담수공급원이 필요합니다. 농장 시설은 타일의 식량을 1 증가시킵니다.[NEWLINE]소요 건설 시간: 5 턴[NEWLINE]숲: 당신이 채광 기술을 배웠다면, 농장을 숲에도 지을 수 있을 것입니다. 농장이 지어지면 숲은 제거됩니다. 총 건설 소요 시간: 9 턴[NEWLINE]정글: 당신이 청동기술을 배웠다면, 농장을 정글에도 지을 수 있을 것입니다. 농장이 지어지면 정글은 제거됩니다. 총 건설 소요 시간: 12 턴[NEWLINE]습지: 당신이 석조기술을 배웠다면, 농장을 습지에도 지을 수 있을 것입니다. 농장이 지어지면 습지는 제거됩니다. 총 건설 소요 시간: 11 턴[NEWLINE]자원 이용 가능: 농장은 "밀"자원을 이용할 수 있게 해주며, 타일의 식량 1과 골드 1을 증가시켜줍니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WORKERS_FARM_HEADING3_TITLE"> 

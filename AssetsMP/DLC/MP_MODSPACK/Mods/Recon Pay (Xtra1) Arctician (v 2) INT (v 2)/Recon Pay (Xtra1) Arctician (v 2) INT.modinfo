@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="21fab6af-a997-4665-856a-2cc801cc560b" version="2">
+  <Properties>
+    <Name>Recon Pay (Xtra1) Arctician (v 2) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Recon Pay (Xtra1) Arctician (v 2) INT</Teaser>
+    <Description>Translation of the Recon Pay (Xtra1) Arctician into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]정찰 유닛 이동 강화 (엑스트라 1) 극지인 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="fb105862-6e2e-42f0-95fd-3e7273927454" minversion="0" maxversion="999" title="Recon Pay (Xtra1) Arctician" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="E712977FB4140E4BFC8E88D9ED147E51" import="0">Promos.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Promos.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="7db75fa8-0dd6-424d-8130-b79c37b04398" version="16">
+  <Properties>
+    <Name>(ui) Meaningful Colours</Name>
+	<Teaser>Former "Meaningful City-States Colours" and "Redesigned Colours and Icons" with only first part left. Compatible with UCS</Teaser>
+    <Description>New colour schemes for every City-State, for more variety, more historical accuracy, and more enjoyment. Replaces both the icons themselves and the colors of units and cities. All City States get new unique colours, and the colours are grouped by the traits of the city states.</Description>
+    <Authors>adan_eslavo, ryanmusante</Authors>
+    <SpecialThanks>whoward69, jptrrs, dylansan, Sylvestrina</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/meaningful-colours.636237/</Homepage>
+	<AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
+	<Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="VP - EUI Compatibility Files" />
+	<Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="Unique City-States" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="A73EA4EE67174607C5CBDC47770BA231" import="1">Icons/IconAtlas128.dds</File>
+    <File md5="DC5FE0D74B03D102AFD456F33725998D" import="1">Icons/IconAtlas256.dds</File>
+    <File md5="ADAD83F139E3671BDEAA1FF3E4181194" import="1">Icons/IconAtlas32.dds</File>
+    <File md5="DD0F37C3E4EBD656C2D37996D7C68BBE" import="1">Icons/IconAtlas45.dds</File>
+    <File md5="900CFDC23049720CE6C489F3B14F60C7" import="1">Icons/IconAtlas64.dds</File>
+    <File md5="9C4582D81261C2E42D08825C52AC27C6" import="1">Icons/IconAtlas80.dds</File>
+    <File md5="761863C7B1BA66E9B2D1643575E3D5A4" import="1">Icons/IconAtlasAlpha128.dds</File>
+    <File md5="AA108E466EBB2E1B019A79F43DF77874" import="1">Icons/IconAtlasAlpha16.dds</File>
+    <File md5="6C1193394212DD22A065DE15F7217E90" import="1">Icons/IconAtlasAlpha24.dds</File>
+    <File md5="0B98A98F8A2D1672FB92734BFFCFD987" import="1">Icons/IconAtlasAlpha32.dds</File>
+    <File md5="92E5842B12B412DE9CFB1D23400B9CA4" import="1">Icons/IconAtlasAlpha48.dds</File>
+    <File md5="77259FF05FFB6A0EDB477103811971A3" import="1">Icons/IconAtlasAlpha64.dds</File>
+    <File md5="615D77B6B65646097F0FC385475DD0AE" import="0">xml/Atlas.xml</File>
+    <File md5="843229BC16874641CC6AA33FF881F895" import="0">xml/Colors.xml</File>
+    <File md5="6AB1FA43E59A2CD9EB969EB5DCD4859A" import="0">xml/PlayerColors.xml</File>
+    <File md5="B9AD45CE8090D0AD73C5127111B785B5" import="0">xml/MinorCivs.xml</File>
+	<File md5="B9AD45CF8090D0AD73C5347111B785B5" import="0">Compatibility/Colors-UCS.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+	  <UpdateDatabase>xml/Atlas.xml</UpdateDatabase>
+	  <UpdateDatabase>xml/Colors.xml</UpdateDatabase>
+	  <UpdateDatabase>xml/PlayerColors.xml</UpdateDatabase>
+	  <UpdateDatabase>xml/MinorCivs.xml</UpdateDatabase>
+	  <UpdateDatabase>Compatibility/Colors-UCS.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

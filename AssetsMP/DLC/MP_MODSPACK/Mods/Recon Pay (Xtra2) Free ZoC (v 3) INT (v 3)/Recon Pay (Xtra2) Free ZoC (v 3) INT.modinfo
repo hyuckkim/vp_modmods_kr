@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6e59661c-7828-4c2c-8002-28e40e924853" version="3">
+  <Properties>
+    <Name>Recon Pay (Xtra2) Free ZoC (v 3) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Recon Pay (Xtra2) Free ZoC</Teaser>
+    <Description>Translation of the Recon Pay (Xtra2) Free ZoC into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]정찰 유닛 이동 강화 (엑스트라 2) 통제 구역 무시 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="37e77137-4219-4f9c-a7c9-bb0f60695fb9" minversion="0" maxversion="999" title="Recon Pay (Xtra2) Free ZoC" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="AE9EB9591FA21F8B13563018C8D423DF" import="0">Promos.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Promos.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

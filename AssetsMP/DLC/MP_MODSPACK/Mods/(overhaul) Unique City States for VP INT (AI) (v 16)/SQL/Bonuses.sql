@@ -765,13 +765,6 @@ VALUES		('UNITCOMBAT_SPECIAL_PEOPLE',	'TXT_KEY_UNITCOMBAT_SPECIAL_PEOPLE'),
 			('UNITCOMBAT_SPACESHIP_PART',	'TXT_KEY_UNITCOMBAT_SPACESHIP_PART'),
 			('UNITCOMBAT_MISSILE',			'TXT_KEY_UNITCOMBAT_MISSILE'),
 			('UNITCOMBAT_ARCHAEOLOGIST',	'TXT_KEY_UNITCOMBAT_ARCHAEOLOGIST');
-
-UPDATE Units SET CombatClass = 'UNITCOMBAT_ARCHAEOLOGIST'	WHERE Type ='UNIT_ARCHAEOLOGIST';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SIEGE'			WHERE Type ='UNIT_ASSYRIAN_SIEGE_TOWER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SPECIAL_PEOPLE'	WHERE Special ='SPECIALUNIT_PEOPLE';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_MISSILE'			WHERE Special ='SPECIALUNIT_MISSILE';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_MISSILE'			WHERE Type ='UNIT_ATOMIC_BOMB';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SPACESHIP_PART'	WHERE DefaultUnitAI ='UNITAI_SPACESHIP_PART';
 ------------------------------
 --UPDATE Technologies SET GridY = 0 WHERE Type ='TECH_SAILING';
 --UPDATE Technologies SET GridY = 10 WHERE Type ='TECH_BRONZE_WORKING';
@@ -798,14 +791,4 @@ CREATE TABLE IF NOT EXISTS MinorCivilizations_Copy (
 	foreign key (ShortDescription) references Language_ko_KR(Tag), 
 	foreign key (Adjective) references Language_ko_KR(Tag), 
 	foreign key (MinorCivTrait) references MinorCivTraits(Type));
-
-INSERT INTO MinorCivilizations_Copy
-			(Type,	Description, ShortDescription, Adjective, Civilopedia, DefaultPlayerColor, ArtDefineTag, ArtStyleType, ArtStyleSuffix, ArtStylePrefix, MinorCivTrait,	FixedPersonality, BullyUnitClass)
-SELECT		Type,	Description, ShortDescription, Adjective, Civilopedia, DefaultPlayerColor, ArtDefineTag, ArtStyleType, ArtStyleSuffix, ArtStylePrefix, MinorCivTrait,	FixedPersonality, BullyUnitClass
-FROM MinorCivilizations
-ORDER BY (abs(random()) % (SELECT max(_ROWID_) FROM MinorCivilizations));
-
-DELETE FROM MinorCivilizations;
-INSERT INTO MinorCivilizations SELECT * FROM MinorCivilizations_Copy;
-DROP TABLE IF EXISTS MinorCivilizations_Copy;
 ---------------------------------------------------
