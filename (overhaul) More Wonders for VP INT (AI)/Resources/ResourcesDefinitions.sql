@@ -11,7 +11,7 @@ VALUES		('TXT_KEY_RESOURCE_TERN',						'제비갈매기 알'),
 			('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY',			'달롤이 부여합니다. [COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] [COLOR_WATER_TEXT]폭발성 혼합물[ENDCOLOR]/[COLOR_YIELD_GOLD]공성[ENDCOLOR].'),
 			('TXT_KEY_RESOURCE_TROPICAL_FISH',				'열대어'),
 			('TXT_KEY_RESOURCE_TROPICAL_FISH_TEXT',			'작성 필요'),
-			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'그레이트배리어리프와 갈라파고스 자연 불가사의에 의해 생성될 수 있습니다.'),
+			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'그레이트배리어리프(대보초)와 갈라파고스 자연경관에 의해 생성될 수 있습니다.'),
 			('TXT_KEY_RESOURCE_TORTOISE',					'거대 거북'),
 			('TXT_KEY_RESOURCE_TORTOISE_TEXT',				'작성 필요'),
 			('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY',			'갈라파고스에 의해 생성됩니다. [COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] 황금기 길이.');
