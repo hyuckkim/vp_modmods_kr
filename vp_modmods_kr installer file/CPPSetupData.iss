@@ -64,8 +64,8 @@ Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced
 Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
 Source: "..\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
 Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
-Source: "..\Upgrade All Units Button In Military Overview (v 2)\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ua
-Source: "..\Upgrade All Units Button In Military Overview INT\*"; DestDir: "{app}\MODS\Upgrade All Units Button In Military Overview INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ua  
+Source: "..\Wake All and Upgrade All Units In Military Overview (v 1)\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: waua
+Source: "..\Wake All and Upgrade All Units In Military Overview (v 1) INT\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: waua  
 
 Source: "..\!Jarcast's Hidden Wonders (VP) KR (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) KR (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhw
 Source: "..\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: fa
@@ -89,6 +89,31 @@ Source: "..\Vox Populi's Bare Necessities INT\*"; DestDir: "{app}\MODS\Vox Popul
 Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
 Source: "..\World Congress Reformation INT\*"; DestDir: "{app}\MODS\World Congress Reformation INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr 
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
+Source: "..\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
+Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: Mariw
+Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: Mariw
+Source: "..\Whale Battles (v 1)\*"; DestDir: "{app}\MODS\Whale Battles (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
+Source: "..\Whale Battles (v 1) INT\*"; DestDir: "{app}\MODS\Whale Battles (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
+
+Source: "..\Recon Pay (Core0) Terrain Cost (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Core0) Terrain Cost (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc0
+Source: "..\Recon Pay (Core1) Exploration Balancer (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc1
+Source: "..\Recon Pay (Core1) Exploration Balancer (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc1
+Source: "..\Recon Pay (Recommended1) Fast Coast (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr1
+Source: "..\Recon Pay (Recommended1) Fast Coast (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr1
+Source: "..\Recon Pay (Recommended2) Fast Rivers (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr2
+Source: "..\Recon Pay (Recommended2) Fast Rivers (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr2
+Source: "..\Recon Pay (Recommended3) Fast Coastal (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr3
+Source: "..\Recon Pay (Recommended3) Fast Coastal (v 7) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr3
+Source: "..\Recon Pay (Xtra1) Arctician (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx1
+Source: "..\Recon Pay (Xtra1) Arctician (v 2) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx1
+Source: "..\Recon Pay (Xtra2) Free ZoC (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx2
+Source: "..\Recon Pay (Xtra2) Free ZoC (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx2
+Source: "..\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx3
+Source: "..\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx3
+Source: "..\Recon Pay (Xtra4) Change Port (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra4) Change Port (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx4
+Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
+Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
+Source: "..\Recon Pay (xtra6) Exploration Specialization (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (xtra6) Exploration Specialization (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx6
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp  
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpnvc 
@@ -110,7 +135,7 @@ Name: "ige"; Description: "인게임 편집기 (InGame Editor+)"; Types: VP34UCE
 Name: "qt"; Description: "빠른 턴 (Quick Turns)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ua"; Description: "모든 유닛 업그레이드 (Upgrade All Units Button In Military Overview)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "waua"; Description: "다 깨우기 & 다 업그레이드 버튼 (Wake All and Upgrade All Units In Military Overview)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
 Name: "jhw"; Description: "VP Jarcast의 숨겨진 불가사의 (Jarcast's Hidden Wonders VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -125,6 +150,20 @@ Name: "po"; Description: "VP 승급 오버홀 (Promotion Overhaul for VP)"; Type
 Name: "bn"; Description: "VP 아주 적은 필수품 (Vox Populi's Bare Necessities)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "Mariw"; Description: "해양 날씨 (Maritime Weather+)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "wb"; Description: "포경 (Whale Battles)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+
+Name: "rpc0"; Description: "정찰 강화 지형 비용 (Recon Pay (Core0) Terrain Cost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpc1"; Description: "정찰 강화 탐사 밸런스 (Recon Pay (Core1) Exploration Balancer)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpr1"; Description: "정찰 강화 빠른 연안 (Recon Pay (Recommended1) Fast Coast)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpr2"; Description: "정찰 강화 빠른 강 (Recon Pay (Recommended2) Fast Rivers)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpr3"; Description: "정찰 강화 빠른 연안의 (Recon Pay (Recommended3) Fast Coastal)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx1"; Description: "정찰 강화 극지인 (Recon Pay (Xtra1) Arctician)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx2"; Description: "정찰 강화 통제 구역 무시 (Recon Pay (Xtra2) Free ZoC)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx3"; Description: "정찰 강화 산림 이동 방해 (Recon Pay (Xtra3) Trees Obstruct Mounted Armor)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx4"; Description: "정찰 강화 항구 변경 (Recon Pay (Xtra4) Change Port)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx5"; Description: "정찰 강화 말 도둑 (Recon Pay (Xtra5) Horse Thieves)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rpx6"; Description: "정찰 강화 탐사 전문화 (Recon Pay (xtra6) Exploration Specialization)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
 [Types]
 Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";
@@ -195,6 +234,33 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World Congress Reformation (v 12)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World Congress Reformation INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Whale Battles (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Whale Battles (v 1) INT"
+
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Core0) Terrain Cost (v 7)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Core1) Exploration Balancer (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Core1) Exploration Balancer (v 3) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended1) Fast Coast (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended1) Fast Coast (v 3) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended2) Fast Rivers (v 6)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended2) Fast Rivers (v 6) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended3) Fast Coastal (v 7)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Recommended3) Fast Coastal (v 7) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra1) Arctician (v 2)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra1) Arctician (v 2) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra2) Free ZoC (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra2) Free ZoC (v 3) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra4) Change Port (v 2)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra5) Horse Thieves (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (Xtra5) Horse Thieves (v 1) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Recon Pay (xtra6) Exploration Specialization (v 1)"
 
 [Code]
 var
