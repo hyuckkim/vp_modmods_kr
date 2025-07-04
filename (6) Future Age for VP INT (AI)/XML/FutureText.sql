@@ -243,6 +243,12 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_GEOTHERMAL_FACTORY_STRATEGY', "도시에서 작업하는 모든 언덕과 산을 추가 생산 및 골드와 생산 보너스 산출물로 개발하십시오."),
 ('TXT_KEY_BUILDING_FW_GEOTHERMAL_FACTORY_PEDIA', "지열 발전소는 지하 저장소에서 표면으로 유체를 끌어와 증기를 생성합니다. 이 증기는 전기를 생성하는 터빈을 구동합니다. 지열 발전소 기술에는 건증기, 재증발증기 및 이원주기의 세 가지 주요 유형이 있습니다. 변환 유형은 발전소 설계의 일부이며 일반적으로 지하 유체(증기 또는 물)의 상태와 온도에 따라 달라집니다."),
 
+-- Hydrothermal Factory
+('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY', '열수 공장'),
+('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_HELP', "도시에서 작업하는 대향과 연안 타일에 [ICON_PRODUCTION] 생산력 1을 추가합니다. 턴 마다 도시의  [ICON_PRODUCTION] 생산량 5%는 [ICON_FOOD] 식량으로 전환 되고, 5%는 다시 [ICON_RESEARCH] 과학으로 전환 됩니다.[NEWLINE][NEWLINE]도시에 이미 시추공, 지열 또는 바이오 공장이 있거나 물가에 위치해야 하는 경우 건설할 수 없습니다."),
+('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_STRATEGY', '열수공장은 과학, 식량, 생산에 유용합니다. 도시가 물가에 있다면 꼭 있어야 할 곳입니다.'),
+('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_PEDIA', "열수 분출구는 지열로 가열된 물이 분출되는 해저의 균열입니다. 이들은 일반적으로 화산 활동이 활발한 곳, 지각판이 중앙 해령, 해양 분지, 열점에서 멀어지는 지역 근처에서 발견됩니다. 열수성 퇴적물은 열수 분출공의 작용으로 형성된 암석과 광석 퇴적물입니다."),
+
 -- Launch Facility
 ('TXT_KEY_BUILDING_FW_LAUNCH_FACILITY', '우주선 발사시설'),
 ('TXT_KEY_BUILDING_FW_LAUNCH_FACILITY_HELP', "도시의 [ICON_CITIZEN]시민 10명마다 [ICON_RESEARCH]과학 +1, [ICON_PRODUCTION]생산 +1, [ICON_GOLD]골드 +1.[NEWLINE][NEWLINE]공중부양 유닛과 공중 유닛의 생산 속도를 15% 증가시킵니다.[NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]결핍 및 도시화로 인한 [ICON_HAPPINESS_3]불행 -1."),
@@ -254,6 +260,12 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_HELP', "완료 시 [ICON_CITIZEN]인구 +2. 이 도시의 인구에 의해 공급되는 군사 유닛을 10% 증가시키고 위인 출현율을 10% 증가시킵니다. 무료 클론 트루퍼 1명을 제공합니다.[NEWLINE]복제인간, 돌연변이 및 기타 혐오스러운 존재를 모집하는 데 필요합니다!"),
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_STRATEGY', "복제된 인간을 모집할 수 있는 최초의 군사 건물"),
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_PEDIA', "복제의 초기 실험은 농장 동물에 대해 수행되었습니다. 인간 복제에는 다양한 윤리적 문제가 있기 때문에, 가까운 장래에 복제의 가장 가능성 있는 용도는 동물 무리의 생산성을 높이는 것입니다."),
+
+-- Bio-Flesh Industry
+('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY', '배양육 산업'),
+('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY_HELP', "건설이 완료되면 [ICON_RES_ADN_FUNGUS] ADN 균 +4를 받습니다.[NEWLINE][NEWLINE][ICON_RES_COW][ICON_RES_DEER][ICON_RES_BISON][ICON_RES_HORSE][ICON_RES_SHEEP][ICON_RES_WHALE]로 부터 [ICON_GOLD] 골드 +2를 받습니다.[NEWLINE][NEWLINE]도시의 [ICON_FOOD] 식량이 [COLOR_NEGATIVE_TEXT]-6[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_HORSE] 말 3마리가 필요합니다."),
+('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY_STRATEGY', "생물의 도움으로 합성 ADN 균을 생산합니다. 동물이 가장 많은 도시에 이 건물을 건설하면 균을 돌려받을 수 있습니다."),
+('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY_PEDIA', "복제에 관한 가장 초기의 실험은 농장 동물을 대상으로 수행되었습니다. 인간 복제에는 다양한 윤리적 문제가 있기 때문에 가까운 미래에 복제의 가장 가능성 있는 용도는 동물 무리의 생산성을 높이는 것이 될 것입니다."),
 
 -- Genejack Facility
 ('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY', '유전자조작 시설'),
