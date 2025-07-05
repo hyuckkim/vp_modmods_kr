@@ -1,13 +1,13 @@
-INSERT INTO Language_en_US (Text, Tag)
-SELECT  'No thanks. I don''t want to change now.',
+INSERT INTO Language_ko_KR (Text, Tag)
+SELECT  '아니요. 지금은 바꾸고 싶지 않아요.',
 		'TXT_KEY_EVENT_CIVIC_NOPE' UNION ALL
-SELECT  'The old ways are best.[NEWLINE][NEWLINE]Don''t use this option more than twice in the same turn!',
+SELECT  '구관이 명관이죠.[NEWLINE][NEWLINE]같은 턴에 이 설정을 두 번 이상 사용하지 마세요!',
 		'TXT_KEY_EVENT_CIVIC_NOPE_HELP' UNION ALL		
-SELECT  'Government Civics',
+SELECT  '정부 정책',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_DESCRIPTION' UNION ALL
-SELECT  '"We admit of no government by divine right ... the only legitimate right to govern is an express grant of power from the governed."[NEWLINE]--William Henry Harrison', 
+SELECT  '"우리는 신성한 권리에 의한 정부를 인정하지 않습니다. 유일하게 합법적인 정부권은 통치받는 자로부터 명시적으로 부여된 권력입니다."[NEWLINE]-- 윌리엄 헨리 해리슨', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_HELP' UNION ALL
-SELECT 	'Despotism',
+SELECT 	'전제정치',
 		'TXT_KEY_EVENT_GOVERNMENTCIVIC_CHOICE_1' UNION ALL
 SELECT  '[ICON_BULLET]Low Upkeep (-{1_Maintenance}[ICON_GOLD])
 [NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]-10% [ICON_HAPPINESS_3] from Illiteracy[ENDCOLOR]

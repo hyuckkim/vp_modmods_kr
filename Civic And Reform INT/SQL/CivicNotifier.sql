@@ -1,121 +1,121 @@
-INSERT INTO Language_en_US (Text, Tag)
-SELECT  'Hereditary Rule Unlocked!',
+INSERT INTO Language_ko_KR (Text, Tag)
+SELECT  '세습 통치 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_2' UNION ALL
-SELECT  'Hereditary Rule is a form of government wherein the rulership is passed down from one member of the family to the next. There is often a religious justification for hereditary rule; kings are said to rule by "divine right" or "the mandate of Heaven." The strength of hereditary rule is that there is usually a clear line of succession, and thus perhaps less squabbling for power when the current monarch dies. However, hereditary rule suffers the same kind of weaknesses as do all unelected rulers: the leader is not answerable to the people, and it can be extremely difficult to get rid of a bad one.', 
+SELECT  '세습 통치는 통치권이 가족 구성원 간에 물려지는 정부 형태입니다. 세습 통치에는 종종 종교적 정당성이 있습니다. 왕은 "신성한 권리"나 "하늘의 명령"에 따라 통치한다고 합니다. 세습 통치의 장점은 보통 왕위 계승이 명확하기 때문에 현 군주가 죽었을 때 권력 다툼이 덜할 수 있다는 것입니다. 그러나 세습 통치는 모든 비선출 통치자와 마찬가지로 약점을 갖고 있습니다. 즉, 지도자가 국민에게 책임을 질 필요가 없고, 나쁜 지도자를 제거하는 것은 극히 어려울 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_2_HELP' UNION ALL
-SELECT  'Patronage Unlocked!',
+SELECT  '후원 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_3' UNION ALL
-SELECT  'Patronage in government has an unorthodox performance when compared to the other forms of government tried in which the appointing of power are derived through sponsorships or from government job grants. This system has its merit and flaws considering that many nations can benefit from individual sponsorships, while some consider this kind of government to be corruption and bribery with a smile.', 
+SELECT  '후원을 통해 권력을 임명하거나 정부 일자리 보조금을 받는 다른 형태의 정부와 비교했을 때, 정부의 후원 제도는 특이한 성과를 보입니다. 이 시스템은 장점과 단점이 있는데, 많은 국가가 개별 후원을 통해 이익을 얻을 수 있는 반면, 일부 국가는 이런 종류의 정부를 미소를 곁들인 부패와 뇌물이라고 여깁니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  'Representation Unlocked!',
+SELECT  '대표자 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_4' UNION ALL
-SELECT  'In a representative government the population elects a number of "representatives" to run the government on their behalf. These representatives form a group that determines and implements government policy. In some cases the government may have a monarch at its head, while in other cases there may be a separately elected ruler, or the representatives themselves may elect one or more of their members to be the executive power.', 
+SELECT  '대표 정부에서는 국민이 자신들을 대신하여 정부를 운영할 여러 명의 "대표자"를 선출합니다. 이러한 대표자들은 정부 정책을 결정하고 실행하는 집단을 형성합니다. 어떤 경우에는 정부 수반으로 군주가 있을 수 있고, 다른 경우에는 별도로 선출된 통치자가 있을 수도 있고, 대표자들이 직접 구성원 중 한 명 이상을 선출하여 행정권을 행사할 수도 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_4_HELP' UNION ALL
-SELECT  'Police State Unlocked!',
+SELECT  '경찰국가 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_5' UNION ALL
-SELECT  'Government under a police state maintains strict control over its populace by means of a police force. The strength of police states lies in their ability to control the population in bad times, forcing them to do what''s necessary no matter what their personal opinions of the matter may be. The weakness of the police state comes from its tendency to crush individual initiative and inventiveness.', 
+SELECT  '경찰국가의 정부는 경찰력을 통해 국민을 엄격하게 통제합니다. 경찰국가의 강점은 어려운 시기에 국민을 통제하여, 문제에 대한 개인의 의견과 관계없이 필요한 조치를 취하도록 강요할 수 있는 능력에 있습니다. 경찰국가의 약점은 개인의 주도성과 창의성을 억압하는 경향에서 비롯됩니다', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_5_HELP' UNION ALL
-SELECT  'Universal Suffrage Unlocked!',
+SELECT  '보통 선거권 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_6' UNION ALL
-SELECT  'Government under universal suffrage means extending the vote to everyone, regardless of race, creed, or gender. The positive side of universal suffrage is that everyone is allowed an equal say in electing those who will run the country. The negative side is that this includes everyone, regardless of intelligence, honesty, or any other characteristic. As someone once said, "I reject any form of government in which the opinion of the village idiot is given the same weight as the opinion of Aristotle."', 
+SELECT  '보통 선거권이 보장된 정부는 인종, 신앙, 성별에 관계없이 모든 사람에게 투표권을 확대하는 것을 의미합니다. 보통 선거의 긍정적인 측면은 모든 사람이 나라를 운영할 사람을 선출하는 데 동등한 발언권을 갖는다는 것입니다. 부정적인 측면은 지능, 정직성 또는 다른 특성에 관계없이 모든 사람이 여기에 포함된다는 것입니다. 누군가가 이렇게 말한 적이 있습니다. "나는 마을 바보의 의견을 아리스토텔레스의 의견과 같은 무게로 여기는 모든 형태의 정부를 거부한다."', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  'Confederation Unlocked!',
+SELECT  '연방 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_7' UNION ALL
-SELECT  'Confederation in government consists of multiple rulerships over multiple territories ruled with different sovereignty. The advantage can help in achieving a favorable economy as each territory can manage their affairs much more efficiently without a higher form of red tape. However, the advantage can turn to be a problem when the federal government attempts to threaten their independence.', 
+SELECT  '연방 정부란 여러 영토에 대한 여러 통치권이 서로 다른 주권으로 통치되는 형태를 말합니다. 이러한 이점은 각 지역이 엄격한 행정절차 없이 훨씬 더 효율적으로 업무를 관리할 수 있으므로, 유리한 경제를 이루는 데 도움이 될 수 있습니다. 그러나 연방 정부가 독립을 위협하려고 할 때 이러한 이점은 문제가 될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  'Civil Law Unlocked!',
+SELECT  '민법 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_2' UNION ALL
-SELECT  'Civil Law refers to the first early developments of laws that allowed for management of early empires.', 
+SELECT  '민법은 초기 제국의 관리를 가능하게 한 법률의 초기 발전을 말합니다.', 
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_2_HELP' UNION ALL
-SELECT  'Vassalage Unlocked!',
+SELECT  '봉건제 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_3' UNION ALL
-SELECT  'Vassalage is a feudal term referring to a person who enters a contract with his or her lord, agreeing to serve and protect the lord in return for monetary rewards or ownership or sovereignty over a parcel of land. The contract is often of both political and religious significance, binding both parties by the rules of man and of God.', 
+SELECT  '봉건제란 영주와 계약을 맺고 영주를 섬기고 보호하는 대가로 금전적 보상이나 토지 소유권 또는 주권을 받는 사람을 가리키는 봉건 용어입니다. 계약은 종종 정치적, 종교적 의미를 지니고 있으며, 양 당사자를 인간의 규칙과 신의 규칙에 따라 구속합니다.', 
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  'Bureaucracy Unlocked!',
+SELECT  '관료제 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_4' UNION ALL
-SELECT  'Bureaucracy is a form of government in which a professional class manages the day-to-day operations of the government. They collect the taxes. They build the roads. They turn the ruler''s wishes into actuality. Bureaucracies provide a certain amount of stability and competence to a government, ensuring that the government will continue to operate efficiently even if the old ruler is thrown out and a new and totally inexperienced ruler takes his or her place. Over time, though, a bureaucracy may become "entrenched" - growing in size and inefficiency to the point where it is extremely difficult for a leader to accomplish anything - good or ill.', 
+SELECT  '관료제는 전문가 계층이 정부의 일상 업무를 관리하는 정부 형태입니다. 그들은 세금을 징수합니다. 그들은 도로를 건설합니다. 그들은 통치자의 뜻을 실현합니다. 관료제는 정부에 일정 수준의 안정성과 역량을 제공하여, 기존의 통치자가 물러나고 전혀 경험이 없는 새로운 통치자가 들어선 경우에도 정부가 계속해서 효율적으로 운영될 수 있도록 보장합니다. 그러나 시간이 지나면서 관료주의가 "고착화"가 (지도자가 어떤 일이라도 성취하기 어려울 정도로 규모가 커지고 비효율성이 커지면서) 좋은 쪽으로든 나쁜 쪽으로든 일어날 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_4_HELP' UNION ALL
-SELECT  'Nationhood Unlocked!',
+SELECT  '국가주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_5' UNION ALL
-SELECT  'A "nation" is a group of people sharing some kind of common identity. Nations may be united by language, custom, history, or religion. Sharing languages, customs, histories and so forth provides strength to a nation - the sense of identity and commonality reduces internal strife, civil and religious wars, and so forth. Unfortunately, citizens with different languages, customs, and backgrounds may be looked upon with suspicion, distrust, and contempt, promoting unhappiness and unrest from the minority and limiting their ability to fully contribute to the society.', 
+SELECT  '"국가"란 어떤 종류의 공통 정체성을 공유하는 사람들의 집단입니다. 국가는 언어, 관습, 역사 또는 종교로 연합될 수 있습니다. 언어, 관습, 역사 등을 공유하는 것은 국가에 힘을 실어줍니다. 정체성과 공동성에 대한 감각은 내부 갈등, 내전, 종교 전쟁 등을 줄여줍니다. 불행히도 서로 다른 언어, 관습, 배경을 가진 시민들은 의심, 불신, 경멸의 시선을 받을 수 있으며, 이는 소수 민족의 불행과 불안을 조장하고 사회에 온전히 기여할 수 있는 능력을 제한합니다.', 
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_5_HELP' UNION ALL
-SELECT  'Free Speech Unlocked!',
+SELECT  '표현의 자유 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_6' UNION ALL
-SELECT  'The benefits of free speech are many. The citizens may debate their government''s policies and actions fully, without fear of punishment. A free press allows the citizens great access to news and information, allowing them to more accurately judge the events taking place in the world around them. On the other hand, free speech may be hate speech; it may be lies. Such speech must be allowed: once a government is allowed to determine which speech is to be allowed and which is to be suppressed, the temptation to abuse that power is overwhelming, and speech isn''t free any more.',
+SELECT  '언론의 자유에는 많은 이점이 있습니다. 시민들은 처벌을 두려워하지 않고도 정부의 정책과 조치에 대해 충분히 토론할 수 있습니다. 언론의 자유로 인해 시민들은 뉴스와 정보에 쉽게 접근할 수 있으며, 이를 통해 주변 세계에서 일어나는 사건에 대해 보다 정확하게 판단할 수 있습니다. 반면에, 자유로운 언론은 증오 표현일 수도 있고, 거짓말일 수도 있습니다. 이런 언론도 허용되어야 합니다. 정부가 어떤 언론을 허용하고 어떤 언론을 억압할지 결정할 수 있게 되면, 그 권력을 남용하려는 유혹이 엄청나고, 언론은 더 이상 자유롭지 않습니다.',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  'Constutionalism Unlocked!',
+SELECT  '입헌주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_7' UNION ALL
-SELECT  'All are bounds to a rule of laws and texts. There could be one to make changes to this rule. There must be one that follows these rules. There has to be one to interpret the rules.',
+SELECT  '모든 것은 법과 규범의 구속을 받습니다. 이 규칙을 변경할 사람이 있을 수도 있습니다. 이 규칙을 따르는 자가 하나쯤은 있어야 합니다. 규칙을 해석하는 사람이 꼭 있어야 합니다.',
 		'TXT_KEY_PLAYER_EVENT_LEGALCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  'Slavery Unlocked!',
+SELECT  '노예제 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_2' UNION ALL
-SELECT  'Slavery is a system whereby some people are judged far inferior to others and are treated as objects or possessions, with no more rights than those afforded to chairs or cattle. The advantage of slavery is that it allows people to be forced to do jobs that they would otherwise refuse to do without adequate compensation. Cheap labor results in concentration of wealth and thus the creation of great buildings and temples or the maintenance of large professional armies. Aside from its basic moral repugnance, the disadvantages of slavery are numerous; it corrupts both slave and master, it badly underutilizes the intelligence and creativity of the subject people, and it almost inevitably leads to revolts and internal strife.', 
+SELECT  '노예제도는 일부 사람들이 다른 사람들보다 훨씬 열등하다고 판단되어 물건이나 소유물처럼 취급되고, 의자나 가축에게 부여되는 권리 그 이상의 권리가 주어지지 않는 제도입니다. 노예제도의 장점은 사람들이 적절한 보상 없이는 하지 않을 일을 하도록 강요할 수 있다는 것입니다. 저렴한 노동력으로 인해 부가 집중되고, 그 결과 거대한 건물과 사원이 건설되거나 대규모 전문 군대가 유지됩니다. 기본적인 도덕적 혐오감 외에도 노예 제도에는 수많은 단점이 있습니다. 노예와 주인 모두를 타락시키고, 피지배 계층의 지성과 창의력을 제대로 활용하지 못하며, 거의 필연적으로 반란과 내부 갈등을 초래합니다.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_2_HELP' UNION ALL
-SELECT  'Serfdom Unlocked!',
+SELECT  '농노제 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_3' UNION ALL
-SELECT  'Serfdom is a more "enlightened" form of slavery in that the power of the master is not absolute and the serfs are accorded a certain number of rights. The basic premise of serfdom is that one group of people are superior to another, and that they have the political and god-given right to control the other group''s destiny. Thus serfdom only makes sense if one agrees with the group currently in power about who is superior to whom.', 
+SELECT  '농노제는 주인의 권력이 절대적이지 않고 농노에게 특정 수의 권리가 부여된다는 점에서 더 "계몽된" 형태의 노예제입니다. 농노제의 기본 전제는 한 집단의 사람들이 다른 집단보다 우월하며, 다른 집단의 운명을 통제할 수 있는 정치적, 신이 부여한 권리가 있다는 것입니다. 따라서 농노제는 현재 권력을 쥐고 있는 집단이 누가 누구보다 우월한지에 대해 동의할 때에만 의미가 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  'Caste System Unlocked!',
+SELECT  '신분제 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_4' UNION ALL
-SELECT  'The caste system is one where one''s parentage determines one''s place in society. There is little advantage to the caste system, except to the people whose parents are on the top of the heap. Merit and initiative are useless.', 
+SELECT  '신분제는 혈통에 따라 사회에서 그 사람의 위치가 결정되는 제도입니다. 부모가 상류층에 속하는 사람들을 제외하면 신분제에는 별로 이점이 없습니다. 공로와 주도성은 쓸모가 없습니다.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_4_HELP' UNION ALL
-SELECT  'Industrial Servitude Unlocked!',
+SELECT  '산업 노예 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_5' UNION ALL
-SELECT  'When an economy cannot rely on slavery for cheap labor, they may look toward using immigrants for industrial labor. The disadvantage is that it is a degraded form of slavery in which the immigrants may not even have rights to have safe work-safe environment or safety precautions in their workspace causing dangerous hazards since slaves were often expensive whereas immigrants became expendable.', 
+SELECT  '경제가 저렴한 노동력을 위해 노예 제도에 의존할 수 없을 때, 산업 노동력을 위해 이민자들을 활용하는 방안을 고려할 수도 있습니다. 단점은 이민자들이 안전한 작업 환경이나 작업 공간에서 안전 예방 조치를 취할 권리조차 없어 위험한 상황을 초래하는 타락한 형태의 노예제도라는 것입니다. 노예는 값비싼 반면 이민자들은 소모품이 되어 버렸기 때문입니다.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_5_HELP' UNION ALL
-SELECT  'Emancipation Unlocked!',
+SELECT  '해방 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_6' UNION ALL
-SELECT  'Emancipation refers to the abolition of slavery, serfdom, and caste system. Members of the society are on an equal footing: you may be rich and I poor, but if I''m smarter or more cunning than you, I can end up as your boss or even your ruler. Merit and experience and initiative are fully rewarded; each member of a nation can reach his or her potential, to the benefit of all.', 
+SELECT  '해방은 노예제도, 농노제, 신분제의 폐지를 의미합니다. 사회 구성원들은 모두 동등한 입장에 있습니다. 당신은 부자이고 나는 가난할 수도 있지만, 내가 당신보다 더 똑똑하거나 교활하다면, 나는 당신의 상사나 심지어 통치자가 될 수 있습니다. 공로와 경험, 주도성은 충분히 보상되며, 국가의 각 구성원은 모든 사람의 이익을 위해 자신의 잠재력을 발휘할 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  'Mechanization Unlocked!',
+SELECT  '기계화 해제!',
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_7' UNION ALL
-SELECT  'Rather than using humans for cheap labor, we should replace them with machinery that''ll soon replace all of them, but let''s keep it between ourselves for now.', 
+SELECT  '인간을 싼 노동력으로 쓰기보다는, 머지않아 모든 인간을 대체할 기계로 대체해야 합니다. 하지만 지금은 우리끼리만 알고 지내도록 하죠.', 
 		'TXT_KEY_PLAYER_EVENT_LABORCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  'Mercantilism Unlocked!',
+SELECT  '중상주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_2' UNION ALL
-SELECT  'Mercantilism refers to government policy that strictly manages the nation''s production. The government determines which farmers produce which crops, decides who will be allowed to sew pants and who will have a monopoly on shirts, and so on. The nation may ban all foreign imports.', 
+SELECT  '중상주의는 국가가 국가의 생산을 엄격하게 관리하는 정책을 말합니다. 정부는 어떤 농부가 어떤 작물을 생산할지 결정하고, 누가 바지를 만들 수 있는지, 누가 셔츠를 독점할 수 있는지 등을 결정합니다. 해당 국가는 모든 외국 수입을 금지할 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_2_HELP' UNION ALL
-SELECT  'Free Market Unlocked!',
+SELECT  '자유 시장 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_3' UNION ALL
-SELECT  'A free market system is similar to a decentralized system, in that the government doesn''t try to impose price controls, quotas or other artificial limits on production. The market - what people want and what they are willing to pay for it - determines production. Unlike in decentralization the state maintains some controls over the system, attempting to ensure that the markets remain truly free and is not distorted by monopolies or corruption.', 
+SELECT  '자유 시장 시스템은 분산형 시스템과 유사합니다. 즉, 정부가 가격 통제, 할당량 또는 기타 인위적인 생산 제한을 부과하지 않습니다. 시장은 (사람들이 원하는 것이 무엇이고, 그것을 위해 기꺼이 지불할 금액은 얼마인가) 생산을 결정합니다. 분권화와는 달리 국가는 시스템에 대한 어느 정도의 통제를 유지하며, 시장이 진정으로 자유로워지고 독점이나 부패로 인해 왜곡되지 않도록 보장하려고 노력합니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  'State Property Unlocked!',
+SELECT  '국유 재산 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_4' UNION ALL
-SELECT  'The state property civic describes an economy in which the citizens have no private property: everything belongs to the State. The State owns the factories, the farms, the universities, the grocery stores and virtually everything else. A citizen may own his or her clothing, furniture, and vehicle, but everything else he has is given to him by the State, and may be taken away any time the State sees fit.', 
+SELECT  '국가 소유의 시민 경제는 시민들이 사유재산을 갖지 않는 경제를 설명합니다. 즉, 모든 것이 국가에 속합니다. 국가는 공장, 농장, 대학, 식료품점 등 사실상 모든 것을 소유하고 있습니다. 시민은 자신의 옷, 가구, 차량을 소유할 수 있지만, 그 외의 모든 소유물은 국가로부터 제공되며, 국가가 적절하다고 판단할 때는 언제든지 몰수될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_4_HELP' UNION ALL
-SELECT  'Corporatism Unlocked!',
+SELECT  '협동조합주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_5' UNION ALL
-SELECT  'A nation can be influenced heavily by corporations to the point where corporations can have strong political ties to the government and may influence the government itself. However, there are times when corporations have helped nations greatly out of bankruptcy such as the cases of J.P. Morgan and the Panic of 1893 in the United States.', 
+SELECT  '국가는 기업의 영향을 크게 받을 수 있으며, 기업이 정부와 강력한 정치적 유대관계를 맺고 정부 자체에 영향을 미칠 수도 있습니다. 그러나 기업이 국가의 파산을 크게 도운 경우도 있습니다. 대표적인 사례로는 J.P.모건의 사례나 1893년 미국 공황이 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_5_HELP' UNION ALL
-SELECT  'Environmentalism Unlocked!',
+SELECT  '환경주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_6' UNION ALL
-SELECT  'Environmentalism is the civic which describes a society in which every effort is made to remain in balance with nature. Emphasis is placed upon renewable resources and energy, and every possible item is recycled. This, of course, describes the ideal; no modern society on earth of any size can as yet achieve perfect harmony with the world around it.', 
+SELECT  '환경주의는 자연과의 균형을 유지하기 위해 모든 노력을 기울이는 사회를 설명하는 시민적 태도입니다. 재생 가능한 자원과 에너지에 중점을 두고, 가능한 모든 품목을 재활용합니다. 물론 이는 이상을 설명하는 것입니다. 지구상의 어떤 규모의 현대 사회도 아직까지 주변 세계와 완벽한 조화를 이룰 수 없습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  'Ingenious Craft Unlocked!',
+SELECT  '독창적인 기술 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7' UNION ALL
-SELECT  'Each region may produce a special brand of products that the world finds an interest in. This could be very important information if their economy entirely depend on this special brand.', 
+SELECT  '각 지역에서는 전 세계가 관심을 갖는 특별한 브랜드의 제품을 생산할 수 있습니다. 만약 그들의 경제가 전적으로 이 특별한 브랜드에 달려 있다면, 이는 매우 중요한 정보가 될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  'Organized Religion Unlocked!',
+SELECT  '기성 종교 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2' UNION ALL
-SELECT  'An organized religion is one in which there is a central authority which interprets or determines theology, which decides which ceremonies are to be performed at which times, and which appoints priests or holy men to keep worshipers on the correct path. The central authority may be a rigid and powerful hierarchy with great religious and secular power.', 
+SELECT  '조직화된 종교란 신학을 해석하거나 결정하고, 어떤 의식을 언제 거행해야 하는지 결정하고, 예배자들이 올바른 길을 가도록 사제나 성직자를 임명하는 중앙 권위가 있는 종교입니다. 중앙 권력은 종교적, 세속적 권력이 막강한 엄격하고 강력한 계층 구조일 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2_HELP' UNION ALL
-SELECT  'Theocracy Unlocked!',
+SELECT  '신정제 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_3' UNION ALL
-SELECT  'A theocracy is a form of government where priests or holy men are in charge of the government. The government is run to benefit the people, but, more importantly, in accord with the wishes of the almighty, as interpreted by the holy men and priests. According to the theory, it is the will of God that such men be in charge of running things, and political dissent is sinful and wrong-headed, if not outright heresy.', 
+SELECT  '신권정치란 사제나 성직자가 정부를 맡는 정부 형태입니다. 정부는 국민의 이익을 위해 운영되지만, 무엇보다도 중요한 것은 성직자와 사제들이 해석한 대로 전능한 신의 뜻에 따라 운영된다는 것입니다. 이 이론에 따르면, 그런 사람들이 세상을 운영하는 것은 신의 뜻이며, 정치적 반대는 죄악이고 잘못된 것이며, 심지어 완전한 이단이라고 합니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  'Pacifism Unlocked!',
+SELECT  '평화주의 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_4' UNION ALL
-SELECT  'Pacifism is the religious belief that all conflict is against the will of God.', 
+SELECT  '평화주의는 모든 갈등이 신의 뜻에 반한다는 종교적 신념입니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_4_HELP' UNION ALL
-SELECT  'Celebrity Worship Unlocked!',
+SELECT  '유명인 숭배 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_5' UNION ALL
-SELECT  'Celebrity Worship refers to a society in which no single religion should never be dominant at all, in which people should never be free to worship on some nonexistent beings, but should rather stick to their strong traditions in government and abstain from traditions in religion. Instead, they should worship toward an individual that could relate toward its people, usually its founder, leader, or a popular figure.', 
+SELECT  '유명인 숭배란 어떤 단일 종교도 결코 지배적이어서는 안 되고, 사람들이 존재하지 않는 존재를 자유롭게 숭배해서는 안 되며, 오히려 정부 내의 강력한 전통을 고수하고 종교적 전통을 삼가야 하는 사회를 말합니다. 그 대신, 그들은 보통 창립자, 지도자 또는 인기 있는 인물 등 국민과 공감할 수 있는 개인을 숭배해야 합니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_5_HELP' UNION ALL
-SELECT  'Free Religion Unlocked!',
+SELECT  '종교의 자유 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_6' UNION ALL
-SELECT  'Free religion refers to a society in which no single religion is dominant, in which people are free to worship or not worship as they please. There is no state religion; the government is totally secular.', 
+SELECT  '자유종교란 단일 종교가 지배적이지 않고, 사람들이 원하는 대로 종교를 갖고, 갖지 않을 자유가 있는 사회를 말합니다. 국교는 없습니다. 정부는 완전히 세속적입니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  'Ancestor Worship Unlocked!',
+SELECT  '조상 숭배 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_7' UNION ALL
-SELECT  'We have always wondered what happened in the afterlife. Nevertheless, we shall always remember those in the afterlife through our worship.', 
+SELECT  '우리는 항상 사후세계에서 무슨 일이 일어나는지 궁금해했습니다. 그럼에도 불구하고, 우리는 항상 예배를 통해 저승에 있는 사람들을 기억할 것입니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_7_HELP';
