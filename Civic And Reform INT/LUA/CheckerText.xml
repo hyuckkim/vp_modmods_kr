@@ -11,7 +11,7 @@
       <Text>정부</Text>
     </Row>
     <Row Tag="TXT_KEY_TEST_GOVERNMENT_BUTTON_OK_TT">
-      <Text>[ICON_BULLET]전제정치: {1}[NEWLINE][ICON_BULLET]세습 통치: {2}[NEWLINE][ICON_BULLET]연방: {3}[NEWLINE][ICON_BULLET]후원: {4}[NEWLINE][ICON_BULLET]대표자: {5}[NEWLINE][ICON_BULLET]전체주의: {6}[NEWLINE][ICON_BULLET]국민 참정권: {7}</Text>
+      <Text>[ICON_BULLET]전제정치: {1}[NEWLINE][ICON_BULLET]세습 통치: {2}[NEWLINE][ICON_BULLET]연방: {3}[NEWLINE][ICON_BULLET]후원: {4}[NEWLINE][ICON_BULLET]대의권: {5}[NEWLINE][ICON_BULLET]전체주의: {6}[NEWLINE][ICON_BULLET]국민 참정권: {7}</Text>
     </Row>
     <Row Tag="TXT_KEY_TEST_LEGAL_BUTTON_OK">
       <Text>법률</Text>
@@ -77,7 +77,7 @@
 		<Text>도움말: [COLOR_POSITIVE_TEXT]세습 통치[ENDCOLOR]는 불가사의의 생산 비용을 완화하고 주둔군을 통해 행복을 부여합니다.</Text>
 	</Row>
 	<Row Tag="TXT_KEY_CIVIC_TIP_2">
-		<Text>도움말: [COLOR_POSITIVE_TEXT]대표자[ENDCOLOR]는 도시에서 잘 발휘되는데, 그 이유는 전문화를 통해 국가가 훨씬 더 빨리 발전하는 데 도움이 될 수 있기 때문입니다!</Text>
+		<Text>도움말: [COLOR_POSITIVE_TEXT]대의권[ENDCOLOR]은 도시에서 잘 발휘되는데, 그 이유는 전문화를 통해 국가가 훨씬 더 빨리 발전하는 데 도움이 될 수 있기 때문입니다!</Text>
 	</Row>
 	<Row Tag="TXT_KEY_CIVIC_TIP_3">
 		<Text>도움말: [COLOR_POSITIVE_TEXT]전체주의[ENDCOLOR]는 지역 주민의 질서와 지속적인 복종을 보장하는 데 필요할 수도 있습니다.</Text>
@@ -110,7 +110,7 @@
 		<Text>도움말: [COLOR_POSITIVE_TEXT]높은 유지비[ENDCOLOR]를 갖춘 정책은 기본 건물 유지비를 16%-20% 늘립니다!</Text>
 	</Row>
 	<Row Tag="TXT_KEY_CIVIC_TIP_13">
-		<Text>도움말: [COLOR_POSITIVE_TEXT]보통 유지비[ENDCOLOR]를 갖춘 정책은 기본 건물 유지비를 11%-15% 늘립니다!</Text>
+		<Text>도움말: [COLOR_POSITIVE_TEXT]중간 유지비[ENDCOLOR]를 갖춘 정책은 기본 건물 유지비를 11%-15% 늘립니다!</Text>
 	</Row>
 	<Row Tag="TXT_KEY_CIVIC_TIP_14">
 		<Text>도움말: [COLOR_POSITIVE_TEXT]낮은 유지비[ENDCOLOR]를 갖춘 정책은 기본 건물 유지비를 5%-10%! 늘립니다!</Text>

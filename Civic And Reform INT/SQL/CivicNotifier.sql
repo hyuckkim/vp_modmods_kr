@@ -7,9 +7,9 @@ SELECT  '후원 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_3' UNION ALL
 SELECT  '후원을 통해 권력을 임명하거나 정부 일자리 보조금을 받는 다른 형태의 정부와 비교했을 때, 정부의 후원 제도는 특이한 성과를 보입니다. 이 시스템은 장점과 단점이 있는데, 많은 국가가 개별 후원을 통해 이익을 얻을 수 있는 반면, 일부 국가는 이런 종류의 정부를 미소를 곁들인 부패와 뇌물이라고 여깁니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_3_HELP' UNION ALL
-SELECT  '대표자 해제!',
+SELECT  '대의권 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_4' UNION ALL
-SELECT  '대표 정부에서는 국민이 자신들을 대신하여 정부를 운영할 여러 명의 "대표자"를 선출합니다. 이러한 대표자들은 정부 정책을 결정하고 실행하는 집단을 형성합니다. 어떤 경우에는 정부 수반으로 군주가 있을 수 있고, 다른 경우에는 별도로 선출된 통치자가 있을 수도 있고, 대표자들이 직접 구성원 중 한 명 이상을 선출하여 행정권을 행사할 수도 있습니다.', 
+SELECT  '대의민주주의 정부에서는 국민이 자신들을 대신하여 정부를 운영할 여러 명의 "대표자"를 선출합니다. 이러한 대표자들은 정부 정책을 결정하고 실행하는 집단을 형성합니다. 어떤 경우에는 정부 수반으로 군주가 있을 수 있고, 다른 경우에는 별도로 선출된 통치자가 있을 수도 있고, 대표자들이 직접 구성원 중 한 명 이상을 선출하여 행정권을 행사할 수도 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_4_HELP' UNION ALL
 SELECT  '경찰국가 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_5' UNION ALL
@@ -95,7 +95,7 @@ SELECT  '독창적인 기술 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7' UNION ALL
 SELECT  '각 지역에서는 전 세계가 관심을 갖는 특별한 브랜드의 제품을 생산할 수 있습니다. 만약 그들의 경제가 전적으로 이 특별한 브랜드에 달려 있다면, 이는 매우 중요한 정보가 될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  '기성 종교 해제!',
+SELECT  '조직화된 종교 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2' UNION ALL
 SELECT  '조직화된 종교란 신학을 해석하거나 결정하고, 어떤 의식을 언제 거행해야 하는지 결정하고, 예배자들이 올바른 길을 가도록 사제나 성직자를 임명하는 중앙 권위가 있는 종교입니다. 중앙 권력은 종교적, 세속적 권력이 막강한 엄격하고 강력한 계층 구조일 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2_HELP' UNION ALL
