@@ -1,57 +1,57 @@
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, '+25% [ICON_STRENGTH] Combat Strength when defending.[NEWLINE]+5 HP when Healing [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].', '+10% [ICON_STRENGTH] Defence in [COLOR_POSITIVE_TEXT]Open[ENDCOLOR] terrain.')
+SET Text = REPLACE (Text, '방어 시 [ICON_STRENGTH] 전투력이 +25% 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]아군 영토 밖에서[ENDCOLOR] 회복할 경우 체력을 +5  더 회복합니다.', '[COLOR_POSITIVE_TEXT]개방된[ENDCOLOR] 지형에서 [ICON_STRENGTH] 방어력이 +10% 증가합니다.')
 WHERE Tag = 'TXT_KEY_PROMOTION_SURVIVALISM_1_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, '+25% [ICON_STRENGTH] Combat Strength when defending.[NEWLINE]+5 HP when Healing [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].', '+10% [ICON_STRENGTH] Defense against [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] Attacks. +10% [ICON_STRENGTH] Combat Strength within 3 plots of a [COLOR_POSITIVE_TEXT]Friendly City[ENDCOLOR].')
+SET Text = REPLACE (Text, '방어 시 [ICON_STRENGTH] 전투력이 +25% 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]아군 영토 밖에서[ENDCOLOR] 회복할 경우 체력을 +5  더 회복합니다.', '[COLOR_POSITIVE_TEXT]원거리[ENDCOLOR] 공격에 대한 [ICON_STRENGTH] 방어력이 10% 증가합니다. [COLOR_POSITIVE_TEXT]아군 도시[ENDCOLOR] 주변 3 칸 내에서 [ICON_STRENGTH] 전투력이 +10% 증가합니다.')
 WHERE Tag = 'TXT_KEY_PROMOTION_SURVIVALISM_2_HELP';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_VP_VISION] Sight.[NEWLINE]+10% [ICON_STRENGTH] Combat Strength if not adjacent to any friendly unit. '||Text
+SET Text = '[ICON_VP_VISION] 시야가 +1 증가합니다.[NEWLINE]아군 유닛과 인접해 있지 않으면 [ICON_STRENGTH] 전투력이 +10% 증가합니다. '||Text
 WHERE Tag = 'TXT_KEY_PROMOTION_SURVIVALISM_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, '+1 [ICON_VP_VISION] Sight and Embarked Sight.[NEWLINE]', ' +10% [ICON_WAR] Attack Strength in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR], [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR]. ')
+SET Text = REPLACE (Text, '[ICON_VP_VISION] 시야와 승선 시야가 +1 증가합니다.[NEWLINE]', ' [COLOR_POSITIVE_TEXT]숲[ENDCOLOR], [COLOR_POSITIVE_TEXT]정글[ENDCOLOR], [COLOR_POSITIVE_TEXT]언덕[ENDCOLOR]에서 [ICON_WAR] 공격력이 +10% 증가합니다. ')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_1_HELP';
 
 UPDATE Language_ko_KR
-SET Text = '+10% [ICON_STRENGTH] Combat Strength from [COLOR_POSITIVE_TEXT]Rough terrain[ENDCOLOR]. -10% Damage from Cities. '||Text
+SET Text = '[COLOR_POSITIVE_TEXT]험난한 지형[ENDCOLOR]으로 인해 [ICON_STRENGTH] 전투력이 +10% 증가합니다. 도시로부터의 피해가 -10% 감소합니다. '||Text
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_2_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, '+20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]', '+1 [ICON_VP_VISION] Sight.[NEWLINE]+10% [ICON_STRENGTH] Combat Strength per [COLOR_POSITIVE_TEXT]adjacent[ENDCOLOR] recon. Double Heal in [COLOR_POSITIVE_TEXT]Forest, Jungle, Marsh, Oasis[ENDCOLOR].')
+SET Text = REPLACE (Text, '[COLOR_POSITIVE_TEXT]아군 영토 밖[ENDCOLOR]에서 [ICON_STRENGTH] 전투력이 +20% 증가합니다.[NEWLINE]', '[ICON_VP_VISION] 시야가 +1 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]인접한[ENDCOLOR] 정찰 유닛 1개당 [ICON_STRENGTH] 전투력이 +10% 증가합니다. [COLOR_POSITIVE_TEXT]숲, 정글, 습지, 오아시스[ENDCOLOR]에서 두 배로 회복합니다.')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, ' Embark, cross Mountains,', '')
+SET Text = REPLACE (Text, ' 승선, 산 건너기,', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, 'Can Embark, cross Mountains.', '')
+SET Text = REPLACE (Text, '승선할 수 있고, 산을 건널 수 있습니다.', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, 'Can Embark and cross Mountains.', '')
+SET Text = REPLACE (Text, '승선할 수 있고 산을 건널 수 있습니다.', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, 'Can cross Mountains.', '')
+SET Text = REPLACE (Text, '산을 건널 수 있습니다.', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, ' cross Mountains,', '')
+SET Text = REPLACE (Text, ' 산 건너기,', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, 'Can Embark.', '')
+SET Text = REPLACE (Text, '승선할 수 있습니다.', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, ' Embark,', '')
+SET Text = REPLACE (Text, ' 승선,', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = REPLACE (Text, '+1 [ICON_VP_VISION] Sight and Embarked Sight.', '+10% [ICON_WAR] Attack Strength against units under half HP. Can Embark and cross Mountains.')
+SET Text = REPLACE (Text, '[ICON_VP_VISION] 시야와 승선 시야가 +1 증가합니다.', '체력이 절반 이하인 유닛에 대한 [ICON_WAR] 공격력이 +10% 증가합니다. 승선할 수 있고 산을 건널 수 있습니다.')
 WHERE Tag = 'TXT_KEY_PROMOTION_SCOUTING_1_HELP';
 
 UPDATE Language_ko_KR
@@ -79,5 +79,5 @@ SET Text = REPLACE (Text, '[NEWLINE][COLOR_POSITIVE_TEXT]통제 구역(ZOC)[ENDC
 WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
 
 UPDATE Language_ko_KR
-SET Text = Text||' +10% [ICON_WAR] Attack Strength against wounded units.'
+SET Text = Text||' 부상당한 유닛에 대한 [ICON_WAR] 공격력이 +10% 증가합니다.'
 WHERE Tag = 'TXT_KEY_PROMOTION_SCOUTING_2_HELP';

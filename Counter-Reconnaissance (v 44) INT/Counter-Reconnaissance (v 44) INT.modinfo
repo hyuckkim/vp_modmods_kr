@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8daa0fe3-b9db-4dd2-affc-be1418944177" version="44">
+  <Properties>
+    <Name>Counter-Reconnaissance (v 44) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Counter-Reconnaissance (v 44) INT</Teaser>
+    <Description>Translation of the Counter-Reconnaissance into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]역정찰 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="1b711d47-31fd-4d4d-b40a-0b5e1d808f58" minversion="0" maxversion="999" title="Counter-Reconnaissance" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1CB2ABA8E9ECC5702D5EE439FABFC2CF" import="0">417TreeRebalancer.sql</File>
+    <File md5="68081D49237EADBA720BEE7F8DA41D69" import="0">CounterRecon.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>417TreeRebalancer.sql</UpdateDatabase>
+      <UpdateDatabase>CounterRecon.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
