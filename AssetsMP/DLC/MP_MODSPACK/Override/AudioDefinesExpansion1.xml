@@ -1404,13 +1404,6 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_EVENT_EBANK</SoundID> 
-			<Filename>EBankCashCash</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_EVENT_ECITYCAPTURE</SoundID> 
 			<Filename>ECityCapture</Filename> 
 			<LoadType>STREAMED</LoadType> 
@@ -1432,29 +1425,8 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_EVENT_ECROWDCHEER</SoundID> 
-			<Filename>ECrowdCheer</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ECULTUREEXPANDS</SoundID> 
-			<Filename>ECultureExpands</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_EVENT_EDECLAREWAR</SoundID> 
 			<Filename>EDeclareWar</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EDISCOVERY</SoundID> 
-			<Filename>EDiscovery</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
@@ -1495,20 +1467,6 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_EVENT_EGOLDENAGE</SoundID> 
-			<Filename>EGoldenAge</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EGREATPEOPLE</SoundID> 
-			<Filename>EGreatPeople</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_EVENT_EMILITARY</SoundID> 
 			<Filename>EMilitary</Filename> 
 			<LoadType>STREAMED</LoadType> 
@@ -1532,13 +1490,6 @@
 		<SoundData> 
 			<SoundID>SND_EVENT_EREVOLUTIONEND</SoundID> 
 			<Filename>ERevolutionEnd</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EREVOLUTIONSTART</SoundID> 
-			<Filename>ERevolutionStart</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
@@ -2624,6 +2575,55 @@
 		<SoundData> 
 			<SoundID>SND_WONDER_LHASA</SoundID> 
 			<Filename>PotalaPalace</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_EBANK</SoundID> 
+			<Filename>EBankCashCash</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_ECROWDCHEER</SoundID> 
+			<Filename>ECrowdCheer</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_ECULTUREEXPANDS</SoundID> 
+			<Filename>ECultureExpands</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_EDISCOVERY</SoundID> 
+			<Filename>EDiscovery</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_EGOLDENAGE</SoundID> 
+			<Filename>EGoldenAge</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_EGREATPEOPLE</SoundID> 
+			<Filename>EGreatPeople</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_EVENT_EREVOLUTIONSTART</SoundID> 
+			<Filename>ERevolutionStart</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 

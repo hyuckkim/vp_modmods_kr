@@ -237,7 +237,7 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_HELP', "+2 [ICON_CITIZEN] Population when completed. Increases Military Units Supplied by this City's population by 10% and Great Persons rate by 10%. Gives 1 free Clone Troopers.[NEWLINE]Required for the recruitment of clones, mutants and other abominations !"),
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_STRATEGY', "The first military building that allows the recruitement of cloned Humans"),
 ('TXT_KEY_BUILDING_FW_CLONE_LAB_PEDIA', "The earliest experiments in cloning were conducted on farm animals. As human cloning has a variety of ethical concerns, the most likely uses of cloning in the near future will be to increase the productivity of animal herds."),
--- Cloning Lab
+-- Bio-Flesh Industry
 ('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY', 'Bio-Flesh Industry'),
 ('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY_HELP', "+4 [ICON_RES_ADN_FUNGUS] ADN Fungus when completed.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold from [ICON_RES_COW][ICON_RES_DEER][ICON_RES_BISON][ICON_RES_HORSE][ICON_RES_SHEEP][ICON_RES_WHALE].[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]-6[ENDCOLOR] [ICON_FOOD] Food in the City.[NEWLINE][NEWLINE]Requires 3 [ICON_RES_HORSE] Horses."),
 ('TXT_KEY_BUILDING_FW_BIOFLESH_INDUSTRY_STRATEGY', "Grants synthetic ADN Fungus with by the help of the living. Place this building in cities with the most animals to pay it back."),

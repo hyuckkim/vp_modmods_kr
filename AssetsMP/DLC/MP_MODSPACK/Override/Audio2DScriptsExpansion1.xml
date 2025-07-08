@@ -1615,15 +1615,6 @@
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_EBANK</ScriptID> 
-			<SoundID>SND_EVENT_EBANK</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
 			<ScriptID>AS2D_EVENT_ECITYCAPTURE</ScriptID> 
 			<SoundID>SND_EVENT_ECITYCAPTURE</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 
@@ -1651,35 +1642,8 @@
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_ECROWDCHEER</ScriptID> 
-			<SoundID>SND_EVENT_ECROWDCHEER</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_ECULTUREEXPANDS</ScriptID> 
-			<SoundID>SND_EVENT_ECULTUREEXPANDS</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
 			<ScriptID>AS2D_EVENT_EDECLAREWAR</ScriptID> 
 			<SoundID>SND_EVENT_EDECLAREWAR</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_EDISCOVERY</ScriptID> 
-			<SoundID>SND_EVENT_EDISCOVERY</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 
 			<iMaxVolume>100</iMaxVolume> 
 			<iMinVolume>100</iMinVolume> 
@@ -1732,24 +1696,6 @@
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_EGOLDENAGE</ScriptID> 
-			<SoundID>SND_EVENT_EGOLDENAGE</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_EGREATPEOPLE</ScriptID> 
-			<SoundID>SND_EVENT_EGREATPEOPLE</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
 			<ScriptID>AS2D_EVENT_EMILITARY</ScriptID> 
 			<SoundID>SND_EVENT_EMILITARY</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 
@@ -1779,15 +1725,6 @@
 		<Script2DSound> 
 			<ScriptID>AS2D_EVENT_EREVOLUTIONEND</ScriptID> 
 			<SoundID>SND_EVENT_EREVOLUTIONEND</SoundID> 
-			<SoundType>GAME_SFX</SoundType> 
-			<iMaxVolume>100</iMaxVolume> 
-			<iMinVolume>100</iMinVolume> 
-			<bIsMusic>0</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
-			<ScriptID>AS2D_EVENT_EREVOLUTIONSTART</ScriptID> 
-			<SoundID>SND_EVENT_EREVOLUTIONSTART</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 
 			<iMaxVolume>100</iMaxVolume> 
 			<iMinVolume>100</iMinVolume> 
@@ -3187,6 +3124,69 @@
 			<iMaxVolume>85</iMaxVolume> 
 			<iMinVolume>85</iMinVolume> 
 			<bIsMusic>1</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_EBANK</ScriptID> 
+			<SoundID>SND_EVENT_EBANK</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_ECROWDCHEER</ScriptID> 
+			<SoundID>SND_EVENT_ECROWDCHEER</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_ECULTUREEXPANDS</ScriptID> 
+			<SoundID>SND_EVENT_ECULTUREEXPANDS</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_EDISCOVERY</ScriptID> 
+			<SoundID>SND_EVENT_EDISCOVERY</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_EGOLDENAGE</ScriptID> 
+			<SoundID>SND_EVENT_EGOLDENAGE</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_EGREATPEOPLE</ScriptID> 
+			<SoundID>SND_EVENT_EGREATPEOPLE</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_EVENT_EREVOLUTIONSTART</ScriptID> 
+			<SoundID>SND_EVENT_EREVOLUTIONSTART</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>100</iMaxVolume> 
+			<iMinVolume>100</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
