@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="c271c060-a46e-4576-938a-23d484a6239b" version="22">
   <Properties>
-    <Name>Civic And Reform INT</Name>
+    <Name>Civic And Reform (v 22) INT</Name>
     <Stability>Beta</Stability>
     <Teaser>Translation of the Civic And Reform</Teaser>
     <Description>Translation of the Civic And Reform into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]정책과 개혁 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
@@ -28,7 +28,7 @@
   <Files>
     <File md5="81EB625FDB21439CF3A2EE1F6A80723D" import="0">LUA/CheckerText.xml</File>
     <File md5="8E6C04F425123B99B52A76CF8F0CA22A" import="0">SQL/CivicNotifier.sql</File>
-    <File md5="0F417BC7C6D5B15D4544BBC135AD2A6B" import="0">SQL/Civics.sql</File>
+    <File md5="0AD94660ECE8DED200C915559F1070DE" import="0">SQL/Civics.sql</File>
     <File md5="4DE1A7A66E4F3D81F40F2327740881E2" import="0">SQL/CivilopediaText.xml</File>
     <File md5="B5FE095F0EE1FAF649C25E9DEFDF0B05" import="0">SQL/CompatibilityChecks.sql</File>
     <File md5="193DA5326A5BEDB8381495605858BA7C" import="0">SQL/MoreGuilds.sql</File>
@@ -37,6 +37,7 @@
     <OnModActivated>
       <UpdateDatabase>LUA/CheckerText.xml</UpdateDatabase>
       <UpdateDatabase>SQL/CivicNotifier.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Civics.sql</UpdateDatabase>
       <UpdateDatabase>SQL/CivilopediaText.xml</UpdateDatabase>
       <UpdateDatabase>SQL/CompatibilityChecks.sql</UpdateDatabase>
       <UpdateDatabase>SQL/MoreGuilds.sql</UpdateDatabase>
