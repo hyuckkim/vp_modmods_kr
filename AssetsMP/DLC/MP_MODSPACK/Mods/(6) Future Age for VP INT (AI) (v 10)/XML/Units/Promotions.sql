@@ -1,8 +1,6 @@
 ----------------------------------------------
 -- Summer Palace
 ----------------------------------------------
-UPDATE UnitPromotions SET RivalTerritory = 0 WHERE Type = 'PROMOTION_NOBILITY';
-UPDATE UnitPromotions SET RivalTerritory = 0 WHERE Type = 'PROMOTION_IMMUNITY';
 UPDATE Language_ko_KR SET Text = '도시 국가와 외교 임무를 수행할 때 [ICON_INFLUENCE]영향력 +15를 부여합니다.' WHERE Tag = 'TXT_KEY_PROMOTION_NOBILITY_HELP';
 UPDATE Language_ko_KR SET Text = '도시 국가와 외교 임무를 수행할 때 [ICON_INFLUENCE]영향력 +10을 부여합니다.' WHERE Tag = 'TXT_KEY_PROMOTION_IMMUNITY_HELP';
 ----------------------------------------------------

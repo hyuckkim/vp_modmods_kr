@@ -42252,6 +42252,21 @@
 				Coastal Improvements
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_TEXT"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
+			<Text>
+				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
 			<Text>
 				Incan Factoids
@@ -46406,6 +46421,11 @@ Nebuchadnezzar II died in Babylon in 562 BC. He is remembered as a successful mi
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MARBLE_TITLE5"> 
 			<Text>
 				Happiness Bonus
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MIGRATORY_WHALE_TEXT"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_NUTMEG_TEXT"> 
@@ -96623,6 +96643,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Fishing Boats
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_FISHWHALING"> 
+			<Text>
+				Whaling
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_FORT"> 
 			<Text>
 				Fort
@@ -96990,6 +97015,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_MOUND_HELP"> 
 			<Text>
 				Only with the Alliance of the Cahokia people allow a civilization enjoy such a beauty of a structure.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MWHALE"> 
+			<Text>
+				[ICON_RES_WHALE] Whales
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_OFFSHORE_PLATFORM"> 
@@ -152468,7 +152498,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Embarked Unit [COLOR:255:230:85:255]can Enter Ocean[ENDCOLOR]. +2 [ICON_VP_VISION] Sight.
+				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Embarked Unit [COLOR:255:230:85:255]can Enter Ocean[ENDCOLOR]. +2 [ICON_VP_VISION] Sight.[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALPINE"> 
@@ -153268,7 +153298,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CCDCONCEALED_HELP"> 
 			<Text>
-				Strict camouflage, concealment and decoy discipline conceals the unit from rival detection.[NEWLINE]-10% [ICON_WAR] Attack Strength against Cities & Units that are Fortified, at Full HP, or above 50% HP. Ranged [ICON_RANGE_STRENGTH] Attack enabled. Lost after combat. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Strict camouflage, concealment and decoy discipline conceals the unit from rival detection.[NEWLINE]-10% [ICON_WAR] Attack Strength against Cities & Units that are Fortified, at Full HP, or above 50% HP. Ranged [ICON_RANGE_STRENGTH] Attack enabled. Lost after combat.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CEREMONIAL_BURIAL"> 
@@ -153883,7 +153913,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKATION_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Sailing[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]can Embark[ENDCOLOR]. Requires [ICON_RESEARCH][COLOR_RESEARCH_STORED]Sailing[ENDCOLOR].[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKED_SIGHT"> 
@@ -154368,7 +154398,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FROGMAN_HELP"> 
 			<Text>
-				+1 [ICON_MOVES] Embarked Movement.[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.[NEWLINE]+50% [ICON_STRENGTH] Defense when Embarked.
+				+1 [ICON_MOVES] Embarked Movement.[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.[NEWLINE]+50% [ICON_STRENGTH] Defense when Embarked.[NEWLINE]Half [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS"> 
@@ -155033,7 +155063,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT_HELP"> 
 			<Text>
-				Unit acquired horses: +1 [ICON_MOVES] Movement. Lost if the unit engages in combat, pillages or embarks. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Unit acquired horses: +1 [ICON_MOVES] Movement. Lost if the unit engages in combat, pillages or embarks.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES"> 
@@ -155053,7 +155083,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]can Enter Mountain[ENDCOLOR]. If unit [COLOR_NEGATIVE_TEXT]ends turn on Mountain[ENDCOLOR] then it takes Damage [COLOR_NEGATIVE_TEXT]at the beginning of next turn[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]can Enter Mountain[ENDCOLOR]. If unit [COLOR_NEGATIVE_TEXT]ends turn on Mountain[ENDCOLOR] then it takes Damage [COLOR_NEGATIVE_TEXT]at the beginning of next turn[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].[NEWLINE]-20% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Combat Strength[ENDCOLOR] & Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HUNTER_KILLER"> 
@@ -155233,7 +155263,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]is Invisible[ENDCOLOR] to other Enemy Units without special ability. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Unit [COLOR:255:230:85:255]is Invisible[ENDCOLOR] to other Enemy Units without special ability. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].[NEWLINE]Immune to [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement penalty[ENDCOLOR] from [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVULNERABIILITY"> 
@@ -155583,7 +155613,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC_II_HELP"> 
 			<Text>
-				+5 HP Heal [COLOR:255:230:85:255]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. +5 HP Heal [COLOR:255:230:85:255]on Heal inside Enemy Territory[ENDCOLOR].
+				+5 HP Heal [COLOR:255:230:85:255]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. +5 HP Heal [COLOR:255:230:85:255]on Heal inside Enemy Territory[ENDCOLOR].[NEWLINE] Blocks selection of Survivalism III, Trailblazer III
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MENDYARRUP"> 
@@ -155843,7 +155873,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NAVIGATOR_2_HELP"> 
 			<Text>
-				+1[ICON_MOVES]Movement Point. +1 [ICON_VP_VISION] Sight.
+				+1[ICON_MOVES]Movement Point. +1 [ICON_VP_VISION] Sight.[NEWLINE]Half [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_EMBARKATION_HELP"> 
@@ -156268,7 +156298,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_EXPERIENCE_HELP"> 
 			<Text>
-				Unit gains XP [COLOR:255:230:85:255]for revealing tiles[ENDCOLOR].
+				Unit gains XP [COLOR:255:230:85:255]for revealing tiles[ENDCOLOR].[NEWLINE]Extra [ICON_MOVES] [COLOR_NEGATIVE_TEXT]Movement cost[ENDCOLOR] in [COLOR_MENU_BLUE]Storms[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_RANGE_1"> 
@@ -156533,7 +156563,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP"> 
 			<Text>
-				+1 [ICON_VP_VISION] Sight (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]).
+				+1 [ICON_VP_VISION] Sight (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]). Can use Enemy Roads/Railroads.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2"> 
@@ -156543,7 +156573,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2_HELP"> 
 			<Text>
-				+1[ICON_MOVES]Movement Point (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]).
+				+1[ICON_MOVES]Movement Point (also [COLOR:255:230:85:255]on Embark[ENDCOLOR]). +10% [ICON_WAR] Attack Strength against wounded units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_3"> 
@@ -157083,7 +157113,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS_HELP"> 
 			<Text>
-				Slower [ICON_MOVES] Movement in Forest, Jungle, Marsh, Oasis. Can use enemy roads. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].
+				Slower [ICON_MOVES] Movement in Forest, Jungle, Marsh, Oasis. Can use enemy roads.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SMALLPOX"> 
@@ -157318,7 +157348,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP"> 
 			<Text>
-				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal outside Friendly Territory[ENDCOLOR].
+				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal outside Friendly Territory[ENDCOLOR]. [COLOR_POSITIVE_TEXT]+1 HP[ENDCOLOR] from Rivers during non-combat turns.[NEWLINE]Eliminate combat penalties for attacking over a river.[NEWLINE]Crossing a river costs only 1 [ICON_MOVES] Movement.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2"> 
@@ -157328,7 +157358,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP"> 
 			<Text>
-				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal[ENDCOLOR].
+				+25%[ICON_STRENGTH]Defensive CS. +5 HP Heal [COLOR:255:230:85:255]on Heal[ENDCOLOR]. [COLOR_POSITIVE_TEXT]+1 HP[ENDCOLOR] from Fresh Water during non-combat turns.[NEWLINE]Double [ICON_MOVES] Movement adjacent to [COLOR_CITY_BLUE]Rivers[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3"> 
@@ -157338,7 +157368,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP"> 
 			<Text>
-				Unit [COLOR:255:230:85:255]heals every turn[ENDCOLOR], even after performing an action. Unit uses [COLOR:255:230:85:255]no[ENDCOLOR][ICON_MOVES]Movement Points [COLOR:255:230:85:255]on Pillage[ENDCOLOR].
+				+1 [ICON_VP_VISION] Sight.[NEWLINE]+10% [ICON_STRENGTH] Combat Strength if not adjacent to any friendly unit. Unit [COLOR:255:230:85:255]heals every turn[ENDCOLOR], even after performing an action. Unit uses [COLOR:255:230:85:255]no[ENDCOLOR][ICON_MOVES]Movement Points [COLOR:255:230:85:255]on Pillage[ENDCOLOR].[NEWLINE] Blocks selection of Trailblazer III, Medic II
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURV_COMBAT"> 
@@ -158561,6 +158591,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				-50% strength when using Ranged Attacks.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB"> 
+			<Text>
+				Cetacean
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB_HELP"> 
+			<Text>
+				Roams around looking for fish. [COLOR_NEGATIVE_TEXT]May attack Fishing Boats and Civilians![ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_SANDS"> 
 			<Text>
 				[COLOR:100:155:60:255]White Sands Facility[ENDCOLOR]
@@ -158648,7 +158688,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP"> 
 			<Text>
-				+1 [ICON_MOVES] Movement.[NEWLINE]Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR].
+				Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR]. Double [ICON_MOVES] Movement in clear plots adjacent to [COLOR_CITY_BLUE]Lakes/Coast/Ocean[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODSMAN"> 
@@ -161009,6 +161049,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_MARBLE"> 
 			<Text>
 				Marble
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MIGRATORY_WHALE"> 
+			<Text>
+				Migratory Whales
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY"> 
@@ -189450,6 +189495,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Welsh Longbowman is a Celtic unique unit, replacing the Crossbowman. The Welsh Longbowman has a greater range than the Crossbowman, allowing it to attack enemies three hexes away, often destroying them before they can strike back. Like other ranged units, it is vulnerable to melee attack.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB"> 
+			<Text>
+				Whale
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_HELP"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_PEDIA"> 
+			<Text>
+				Migratory whales are aquatic mammals that spawn from Whale resource plots. A migratory whale may convert a fish resource into new whale breeding waters.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_STRATEGY"> 
+			<Text>
+				Whale
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WORKER"> 
 			<Text>
 				Worker
@@ -194418,7 +194483,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_HELP"> 
 			<Text>
-				Requires completion of [COLOR_MAGENTA]Imperialism[ENDCOLOR] Branch. Increases the Military Unit Supply Cap by 1, and the Air Unit Cap by 2 in every City. Receive 2 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] exclusive P-80 Shooting Star in the City when completed. +50% [ICON_PRODUCTION] Production of Air Units in the City, and Air Units created in the City gain +20 XP. Owned [ICON_SPY] Spies are much more likely to disrupt Unit [ICON_PRODUCTION] Production via Advanced Actions.
+				Special: [COLOR_MAGENTA]Imperialism Finisher[ENDCOLOR]; Feature: [COLOR_CYAN]River[ENDCOLOR]; Improvement: [COLOR_CYAN]Citadel/Fort[ENDCOLOR].[NEWLINE][NEWLINE][COLOR_YIELD_FOOD]Pentagon[ENDCOLOR] focuses on military abilities of your cities (+1[ICON_SILVER_FIST][ICON_SILVER_FIST]; +2 global City Air Cap). Increased forces for production of your planes (+50%[ICON_PRODUCTION], +20 XP/[COLOR_YIELD_GOLD]Air[ENDCOLOR]; 2 [COLOR_YIELD_GOLD]free Jet Fighters[ENDCOLOR]. And it can even more, thanks to hidden intelligence agency, making your spies more effective (higher chance to: Disrupt [ICON_PRODUCTION]).
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_HELP_CUT"> 
@@ -213951,7 +214016,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_COTHON_HELP"> 
 			<Text>
-				이 도시의 모든 사치 자원을 추가로 한 개씩 [COLOR_POSITIVE_TEXT]복제[ENDCOLOR]하고 모든 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] {TXT_KEY_BUILDING_HARBOR}을 제공합니다. 이 도시로 향하는 [ICON_ARROW_LEFT] 교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가하고 [ICON_ARROW_RIGHT] 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. [ICON_INTERNATIONAL_TRADE]교역로의 자원 다양성 수치가 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]  모든 항만의 [ICON_PRODUCTION] 생산이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가하고, 모든 등대의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]추가 [ICON_INTERNATIONAL_TRADE]교역로를 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]이 도시에서 [ICON_GOLD] 빈곤 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 감소하고, 다른 모든 도시에서 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION] 생산이 증가합니다.
+				모든 해안 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] {TXT_KEY_BUILDING_HARBOR}가 생깁니다. 유입되는 [ICON_ARROW_LEFT] 교역로를 통해 도시는 [ICON_GOLD] 골드 +2를 얻고, 교역로 소유자는 [ICON_GOLD] 골드 +1을 얻습니다. [ICON_INTERNATIONAL_TRADE] 교역로 2개를 [COLOR_POSITIVE_TEXT]추가[ENDCOLOR]로 얻습니다. 모든 항구는 [ICON_PRODUCTION] 생산력이 +3 증가하고, 모든 등대는 [ICON_CULTURE] 문화가 +2 증가합니다.[NEWLINE][NEWLINE][ICON_RES_IRON] 철 2개를 제공합니다. 이 도시에 건물을 건설하면 [ICON_RESEARCH] 과학이 +25 증가합니다. (시대에 따라 조정됨)[NEWLINE][NEWLINE]이 도시의 [ICON_GOLD] 빈곤으로 인해 [ICON_HAPPINESS_3] 불행 -1을 얻습니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산 비용은 소유한 도시의 수에 따라 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_COTHON_PEDIA"> 
@@ -213961,7 +214026,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_COTHON_STRATEGY"> 
 			<Text>
-				{TXT_KEY_BUILDING_EAST_INDIA}를 대체하는 카르타고의 고유 건물입니다. {TXT_KEY_BUILDING_GREAT_COTHON}은 {TXT_KEY_BUILDING_EAST_INDIA}의 보너스에 더해, 모든 도시에 {TXT_KEY_BUILDING_HARBOR}을 제공하고, 추가 [ICON_INTERNATIONAL_TRADE] 교역로 2개를 제공하며, 기아를 더 감소시키고, 교역 시 양 쪽이 받는 [ICON_GOLD] 골드를 더 많이 증가시킵니다. 또한 제국의 등대와 항만을 강화합니다. {TXT_KEY_BUILDING_EAST_INDIA}와 달리, {TXT_KEY_BUILDING_GREAT_COTHON}은 [COLOR_CYAN]고전 시대[ENDCOLOR]에 [COLOR_CYAN]{TXT_KEY_TECH_CURRENCY_TITLE}[ENDCOLOR] 연구 시 생산이 가능합니다. 요구하는 건물이 없지만, 해안 도시에만 건설할 수 있습니다.
+				{TXT_KEY_BUILDING_IRONWORKS}를 대체하는 고유한 카르타고식 건물입니다. {TXT_KEY_BUILDING_IRONWORKS}의 보너스에 더해, {TXT_KEY_BUILDING_GREAT_COTHON}은 모든 해안 도시에 무료 {TXT_KEY_BUILDING_HARBOR}, 2 개의 [ICON_INTERNATIONAL_TRADE] 교역로, [ICON_GOLD] 교역로에서 보내고 받는 양쪽이 모두 골드를 획득하고, 건설된 도시의 빈곤 감소 효과를 일정량만큼 획득하며, 문명 내 모든 등대와 항구의 생산력을 향상시킵니다. {TXT_KEY_BUILDING_IRONWORKS}와 달리, {TXT_KEY_BUILDING_GREAT_COTHON}은 [COLOR_CYAN]고전 시대[ENDCOLOR]에 [COLOR_CYAN]{TXT_KEY_TECH_CURRENCY_TITLE}[ENDCOLOR] 발견과 함께 만들 수 있습니다. {TXT_KEY_BUILDING_GREAT_COTHON}은 건설에 필요한 어떠한 조건도 없지만, 해안 도시에서만 건설할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_FIREWALL"> 
@@ -214044,7 +214109,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GROCER"> 
 			<Text>
-				식료품 상점
+				약제사
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GROCER_HELP"> 
@@ -216124,12 +216189,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_OBSERVATORY_HELP"> 
 			<Text>
-				도시 주변 작업 가능한 범위의 산 1개마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] 정책을 채택해야 건설할 수 있습니다.
+				도시는 작업 가능한 타일 내의 산 하나당 [ICON_RESEARCH] 과학 +1을 얻습니다. 도시에 의해 작동 중인 산호섬은 [ICON_RESEARCH] 과학 +2를 얻습니다. [ICON_PEACE] 신앙으로 구매해야 하는 도시 내 모든 건물에서 [ICON_PEACE] 신앙이 +1 증가합니다.[NEWLINE][NEWLINE][ICON_CARGO_SHIP] 해상 교역로의 범위가 +25% 증가합니다. 도시 내 항구는 [ICON_RESEARCH] 과학과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE][NEWLINE][COLOR_CYAN]{TXT_KEY_TECH_EE_REFRACTION}[ENDCOLOR]이 발견되면 [ICON_RESEARCH] 과학이 +4 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_OBSERVATORY_STRATEGY"> 
 			<Text>
-				천문대는 과학 산출을 증가시키고, 특히 도시 근처에 산이 있을 때 과학을 특히 더 증가시킵니다. 건설하려면 '{TXT_KEY_POLICY_SECULARISM}' 정책을 채택해야 합니다.
+				천문대는 [ICON_RESEARCH] 과학 산출량을 증가시키며, 특히 산이 많거나 산호섬에 접근할 수 있는 도시의 경우 더욱 그렇습니다. 해안 도시, 특히 해상 교역로를 운영하는 도시에도 천문대를 고려해 볼 수 있습니다. 마지막으로, 종교 문명을 운영한다면 천문학을 통해 신앙을 강화할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_OCEAN_FACILITY"> 
@@ -217259,7 +217324,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP"> 
 			<Text>
-				작업장을 대체하는 시암의 고유 건물입니다. [NEWLINE]해당 도시에서 작업중인 모든 숲 타일에 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_PRODUCTION]생산 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]. 도시 야영지의 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]. 제제소의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]이 증가합니다. [ICON_CITIZEN]시민 4명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 증가합니다.[NEWLINE][NEWLINE]동맹인 도시국가로부터 받는 전략자원 2개당 [ICON_GOLD]골드와 [ICON_PRODUCTION]생산이 각각 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시국가에 유닛을 선물하면 [ICON_PRODUCTION]생산과 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]을 받습니다.[NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_INTERNATIONAL_TRADE]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다. 국내 [ICON_INTERNATIONAL_TRADE]교역로를 통해 당신 문명의 다른 도시로  [ICON_PRODUCTION]생산 보너스를 제공할 수 있습니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]대장간[ENDCOLOR]이 있어야 합니다.
+				작업장을 대체하는 시암의 고유 건물입니다. [NEWLINE]해당 도시에서 작업중인 모든 숲 타일에 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_PRODUCTION]생산 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]. 도시 야영지의 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]. 제제소의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]이 증가합니다. [ICON_CITIZEN]시민 4명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 증가합니다.[NEWLINE][NEWLINE]동맹인 도시국가로부터 받는 전략자원 2개당 [ICON_GOLD]골드와 [ICON_PRODUCTION]생산이 각각 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시국가에 유닛을 선물하면 [ICON_PRODUCTION]생산과 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]을 받습니다.[NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_INTERNATIONAL_TRADE]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다. 국내 [ICON_INTERNATIONAL_TRADE]교역로를 통해 당신 문명의 다른 도시로  [ICON_PRODUCTION]생산 보너스를 제공할 수 있습니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]대장간[ENDCOLOR]이 있어야 합니다.[NEWLINE][NEWLINE][ICON_RES_LAVENDER] 라벤더: [ICON_CULTURE] 문화 +3
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY"> 
@@ -248464,6 +248529,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				해양 시설
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_TEXT"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
+			<Text>
+				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
 			<Text>
 				잉카 정보
@@ -252612,6 +252692,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MARBLE_TITLE5"> 
 			<Text>
 				행복 보너스
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_MIGRATORY_WHALE_TEXT"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_NUTMEG_TEXT"> 
@@ -304295,6 +304380,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				어선
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_FISHWHALING"> 
+			<Text>
+				포경
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_FORT"> 
 			<Text>
 				요새
@@ -304674,6 +304764,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_MOUND_HELP"> 
 			<Text>
 				카호키아 문명과 동맹을 맺어야만 이 아름다운 건축물을 즐길 수 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MWHALE"> 
+			<Text>
+				[ICON_RES_WHALE] 고래
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_OFFSHORE_PLATFORM"> 
@@ -362450,7 +362545,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. 승선한 유닛은 [COLOR:255:230:85:255]대양에 진입할 수 있습니다[ENDCOLOR]. [ICON_VP_VISION] 시야 +2.
+				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. 승선한 유닛은 [COLOR:255:230:85:255]대양에 진입할 수 있습니다[ENDCOLOR]. [ICON_VP_VISION] 시야 +2.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ALTITUDE_TRAINING"> 
@@ -363267,7 +363362,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CCDCONCEALED_HELP"> 
 			<Text>
-				엄격한 위장, 은폐 및 미끼 훈련을 통해 해당 유닛이 경쟁자의 탐지로부터 안전하게 보호됩니다.[NEWLINE]요새화된 도시 및 부대, 체력이 최대이거나 50% 이상인 도시 및 유닛에 대한 [ICON_WAR] 공격력이 -10% 감소합니다. 원거리 [ICON_RANGE_STRENGTH] 공격이 가능해집니다.전투 후 없어집니다. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
+				엄격한 위장, 은폐 및 미끼 훈련을 통해 해당 유닛이 경쟁자의 탐지로부터 안전하게 보호됩니다.[NEWLINE]요새화된 도시 및 부대, 체력이 최대이거나 50% 이상인 도시 및 유닛에 대한 [ICON_WAR] 공격력이 -10% 감소합니다. 원거리 [ICON_RANGE_STRENGTH] 공격이 가능해집니다.전투 후 없어집니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CEREMONIAL_BURIAL"> 
@@ -363924,7 +364019,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKATION_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. [ICON_RESEARCH][COLOR_RESEARCH_STORED]항해[ENDCOLOR] 필요.
+				유닛이 [COLOR:255:230:85:255]승선할 수 있습니다[ENDCOLOR]. [ICON_RESEARCH][COLOR_RESEARCH_STORED]항해[ENDCOLOR] 필요.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EMBARKED_SIGHT"> 
@@ -364451,7 +364546,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FROGMAN_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]해상에서 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]승선 또는 하선 시[ENDCOLOR] [ICON_MOVES]이동력 1 소모. 유닛이 [COLOR:255:230:85:255]승선 시[ENDCOLOR] [ICON_STRENGTH]방어 전투력 +50%. [ICON_RESEARCH][COLOR_RESEARCH_STORED]철도[ENDCOLOR] 필요.
+				유닛이 [COLOR:255:230:85:255]해상에서 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]승선 또는 하선 시[ENDCOLOR] [ICON_MOVES]이동력 1 소모. 유닛이 [COLOR:255:230:85:255]승선 시[ENDCOLOR] [ICON_STRENGTH]방어 전투력 +50%. [ICON_RESEARCH][COLOR_RESEARCH_STORED]철도[ENDCOLOR] 필요.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한 [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동 비용[ENDCOLOR] 절반으로 감소[NEWLINE][ICON_MOVES] 승선 이동력이 +1 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS"> 
@@ -365140,7 +365235,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THEFT_HELP"> 
 			<Text>
-				유닛이 말을 획득: [ICON_MOVES] 이동력이 +1 증가합니다. 해당 유닛이 전투, 약탈 또는 승선하면 손실됩니다. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
+				유닛이 말을 획득: [ICON_MOVES] 이동력이 +1 증가합니다. 해당 유닛이 전투, 약탈 또는 승선하면 손실됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HORSE_THIEVES"> 
@@ -365160,7 +365255,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]산을 통과할 수 있습니다[ENDCOLOR]. 유닛이 [COLOR_NEGATIVE_TEXT]산에서 턴을 마치면[ENDCOLOR] 다음 턴 시작 시 [COLOR_NEGATIVE_TEXT]피해를 입습니다[ENDCOLOR].
+				유닛이 [COLOR:255:230:85:255]산을 통과할 수 있습니다[ENDCOLOR]. 유닛이 [COLOR_NEGATIVE_TEXT]산에서 턴을 마치면[ENDCOLOR] 다음 턴 시작 시 [COLOR_NEGATIVE_TEXT]피해를 입습니다[ENDCOLOR].[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]공격력[ENDCOLOR] -20% 및 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HUNTER_KILLER"> 
@@ -365326,7 +365421,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP"> 
 			<Text>
-				유닛이 특수 능력이 없는 다른 적 유닛에게 [COLOR:255:230:85:255]보이지 않습니다[ENDCOLOR].
+				유닛이 특수 능력이 없는 다른 적 유닛에게 [COLOR:255:230:85:255]보이지 않습니다[ENDCOLOR].[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한  [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동[ENDCOLOR] 페널티에 면역
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVULNERABIILITY"> 
@@ -365678,7 +365773,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC_II_HELP"> 
 			<Text>
-				이 유닛과 인접한 모든 아군 유닛 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR]. [COLOR:255:230:85:255]적 영토 내에서 회복 시[ENDCOLOR] 체력 +5 회복.
+				이 유닛과 인접한 모든 아군 유닛 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR]. [COLOR:255:230:85:255]적 영토 내에서 회복 시[ENDCOLOR] 체력 +5 회복.[NEWLINE] 생존 III, 개척자 III 선택 막힘
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MENDYARRUP"> 
@@ -365959,7 +366054,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NAVIGATOR_2_HELP"> 
 			<Text>
-				[ICON_MOVES]이동력 +1. [ICON_VP_VISION] 시야 +1.
+				[ICON_MOVES]이동력 +1. [ICON_VP_VISION] 시야 +1.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인한 [ICON_MOVES] [COLOR_POSITIVE_TEXT]이동 비용[ENDCOLOR] 절반으로 감소
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_NEWWORLD_SCENARIO_EMBARKATION_HELP"> 
@@ -366205,7 +366300,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_2_HELP"> 
 			<Text>
-				습지, 눈, 사막에서의 [ICON_MOVES] 이동 비용을 무시합니다. 적의 [COLOR_SELECTED_TEXT]통제 구역(ZOC)[ENDCOLOR]을 무시합니다.[NEWLINE]업그레이드시 소실됩니다. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
+				습지, 눈, 사막에서의 [ICON_MOVES] 이동 비용을 무시합니다. 적의 [COLOR_SELECTED_TEXT]통제 구역(ZOC)[ENDCOLOR]을 무시합니다.[NEWLINE]업그레이드시 소실됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_PATHFINDER_HELP"> 
@@ -366405,7 +366500,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_EXPERIENCE_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]타일을 밝힐 때마다[ENDCOLOR] 경험치 획득.
+				유닛이 [COLOR:255:230:85:255]타일을 밝힐 때마다[ENDCOLOR] 경험치 획득.[NEWLINE][COLOR_MENU_BLUE]폭풍[ENDCOLOR]으로 인해 추가 [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동 비용[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RECON_RANGE_1"> 
@@ -366623,7 +366718,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP"> 
 			<Text>
-				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]).
+				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). [COLOR_CYAN]승선[ENDCOLOR]시 [ICON_MOVES] 이동 비용 1이 듭니다. Can use Enemy Roads/Railroads.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2"> 
@@ -366633,7 +366728,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_2_HELP"> 
 			<Text>
-				[ICON_MOVES]이동력 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]).
+				[ICON_MOVES]이동력 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). 부상당한 유닛에 대한 [ICON_WAR] 공격력이 +10% 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SCOUTING_3"> 
@@ -367183,7 +367278,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SLOW_WOODS_HELP"> 
 			<Text>
-				숲, 정글, 습지, 오아시스에서는 [ICON_MOVES] 이동력이 떨어집니다. 적의 도로에서 사용할 수 있습니다. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
+				숲, 정글, 습지, 오아시스에서는 [ICON_MOVES] 이동력이 떨어집니다. 적의 도로에서 사용할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SMALLPOX"> 
@@ -367407,7 +367502,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP"> 
 			<Text>
-				[ICON_STRENGTH]방어 전투력 +25%. 아군 영토 밖에서 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].
+				[ICON_STRENGTH]방어 전투력 +25%. 아군 영토 밖에서 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR]. 전투가 없는 턴 동안 강에서 [COLOR_POSITIVE_TEXT]체력을 +1[ENDCOLOR] 회복합니다.[NEWLINE]강을 건너 공격할 경우 전투 페널티를 제거합니다.[NEWLINE]강을 건너는 데 [ICON_MOVES] 이동력을 1만 소모합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2"> 
@@ -367417,7 +367512,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP"> 
 			<Text>
-				[ICON_STRENGTH]방어 전투력 +25%. 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR].
+				[ICON_STRENGTH]방어 전투력 +25%. 회복 시 [COLOR:255:230:85:255]체력 +5 회복[ENDCOLOR]. 전투가 없는 턴 동안 담수에서 [COLOR_POSITIVE_TEXT]체력을 +1[ENDCOLOR] 회복합니다.[NEWLINE][COLOR_CITY_BLUE]강[ENDCOLOR]에 인접한 깨끗한 구역에서 [ICON_MOVES] 이동력이 두 배로 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3"> 
@@ -367427,7 +367522,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]행동 여부와 상관없이 매 턴 회복합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]약탈 시[ENDCOLOR] [ICON_MOVES]이동력을 [COLOR:255:230:85:255]소모하지 않습니다[ENDCOLOR].
+				[ICON_VP_VISION] 시야가 +1 증가합니다.[NEWLINE]아군 유닛과 인접해 있지 않으면 [ICON_STRENGTH] 전투력이 +10% 증가합니다. 유닛이 [COLOR:255:230:85:255]행동 여부와 상관없이 매 턴 회복합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]약탈 시[ENDCOLOR] [ICON_MOVES]이동력을 [COLOR:255:230:85:255]소모하지 않습니다[ENDCOLOR].[NEWLINE] 개척자 III, 의무병 II 선택 막힘 [COLOR_CYAN]연안[ENDCOLOR]에서  [ICON_MOVES] 이동력이 2배가 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SURV_COMBAT"> 
@@ -368639,6 +368734,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				[ICON_RANGE_STRENGTH]원거리 전투력 [COLOR_NEGATIVE_TEXT]-50%[ENDCOLOR
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB"> 
+			<Text>
+				고래목
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WHALE_MWB_HELP"> 
+			<Text>
+				물고기를 찾아 돌아다닙니다. [COLOR_NEGATIVE_TEXT]어선과 민간인을 공격할 수 있습니다![ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_SANDS"> 
 			<Text>
 				화이트 샌즈 시설
@@ -368721,7 +368826,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_1_HELP"> 
 			<Text>
-				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). 유닛이 [COLOR:255:230:85:255]숲, 정글, 언덕에서 지형 비용을 무시합니다[ENDCOLOR].
+				[ICON_VP_VISION] 시야 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). 유닛이 [COLOR:255:230:85:255]숲, 정글, 언덕에서 지형 비용을 무시합니다[ENDCOLOR]. 전투가 없는 턴 동안 숲과 정글에서 [COLOR_POSITIVE_TEXT]체력을 +1[ENDCOLOR] 회복합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_2"> 
@@ -368734,7 +368839,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_2_HELP"> 
 			<Text>
-				[ICON_MOVES]이동력 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). 유닛이 [COLOR:255:230:85:255]사막, 설원, 습지에서 지형 비용을 무시합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]강 건너 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]강을 건널 때[ENDCOLOR] [ICON_MOVES]이동력 1 소모.
+				[COLOR_POSITIVE_TEXT]험난한 지형[ENDCOLOR]으로 인해 [ICON_STRENGTH] 전투력이 +10% 증가합니다. 도시로부터의 피해가 -10% 감소합니다. [ICON_MOVES]이동력 +1 ([COLOR:255:230:85:255]승선 시에도[ENDCOLOR]). 유닛이 [COLOR:255:230:85:255]사막, 설원, 습지에서 지형 비용을 무시합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]강 건너 공격 시[ENDCOLOR] 전투 페널티 없음. 유닛이 [COLOR:255:230:85:255]강을 건널 때[ENDCOLOR] [ICON_MOVES]이동력 1 소모. 전투가 없는 턴 동안 습지와 오아시스에서 [COLOR_POSITIVE_TEXT]체력을 +1[ENDCOLOR] 회복합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3"> 
@@ -368747,7 +368852,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP"> 
 			<Text>
-				유닛이 [COLOR:255:230:85:255]승선, 산 진입, 적 도로 및 철도 사용이 가능합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]지배 지역을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]아군 영토 밖에서[ENDCOLOR] [ICON_STRENGTH]전투력 +20%.
+				유닛이 [COLOR:255:230:85:255]산 진입, 적 도로 및 철도 사용이 가능합니다[ENDCOLOR]. 유닛이 [COLOR:255:230:85:255]지배 지역을 무시합니다[ENDCOLOR]. [COLOR:255:230:85:255]아군 영토 밖에서[ENDCOLOR] [ICON_STRENGTH]전투력 +20%.[NEWLINE] 생존 III, 의무병 II 선택 막힘 [COLOR_CITY_BLUE]호수/연안/대양[ENDCOLOR]에 인접한 깨끗한 구역에서 연속 [ICON_MOVES] 이동이 가능합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WOODSMAN"> 
@@ -371155,6 +371260,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_MARBLE"> 
 			<Text>
 				대리석
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MIGRATORY_WHALE"> 
+			<Text>
+				이주하는 고래
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY"> 
@@ -392500,6 +392610,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				고대의 전당
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_THEMING_BONUS_EE_TOPKAPI"> 
+			<Text>
+				왕실 보물 박물관
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_THEMING_BONUS_EE_TOPKAPI_HELP"> 
+			<Text>
+				보너스를 극대화하려면 걸작 슬롯에 연속된 시대 그리고 다른 문명의 예술 작품과 유물을 채워 넣으세요.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_1"> 
 			<Text>
 				호기심의 캐비넷
@@ -396125,7 +396245,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_HOSTILE"> 
 			<Text>
-				([COLOR_RED]적대적[ENDCOLOR])
+				([COLOR_RED]배타적[ENDCOLOR])
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_IRRATIONAL"> 
@@ -402594,6 +402714,26 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_WELSH_LONGBOWMAN_STRATEGY"> 
 			<Text>
 				웨일스 장궁병는 켈트족 고유 유닛으로, 석궁병을 대체합니다. 웨일스 장궁병는 석궁병보다 공격 사정거리가 길어 3타일 밖에서 적을 공격해 적이 반격하기 전 적을 제거할 수 있습니다. 다른 원거리 공격 유닛들과 마찬가지로 근접 공격에 취약합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB"> 
+			<Text>
+				고래
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_HELP"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_PEDIA"> 
+			<Text>
+				이주하는 고래는 고래 자원 지역에서 산란하는 수생 포유류입니다. 이주하는 고래는 어류 자원을 새로운 고래 번식지로 바꿀 수도 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WHALE_MWB_STRATEGY"> 
+			<Text>
+				고래
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WORKER"> 
