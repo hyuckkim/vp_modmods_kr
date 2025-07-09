@@ -136,7 +136,8 @@
   고레벨 정찰 유닛이 손실되면 경험치 풀이 증가하여 수도와의 거리에 따라 대학에서 승격된 손상되지 않은 정찰 유닛에 턴당 보너스 경험치가 부여됩니다.  
 
 - [Hokaths Proposals](https://forums.civfanatics.com/threads/hokaths-changes.690601/)  
-- Hokath님이 제작한 모드들의 집합체입니다.
+- Hokaths Proposals (현재 미번역)  
+  Hokath님이 제작한 모드들의 집합체로 일부 국가, 기업, 트리, 요새, 건물, 유닛 등 많은 구성요소의 밸런스를 조정합니다.  
 
 5. 번역은 완료되었으나 미포함된 모드-모드:
 - [JFD's Sovereignty for VP](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
@@ -164,6 +165,7 @@
   VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
 
 - [Gedemon's YnAEMP](https://steamcommunity.com/sharedfiles/filedetails/?id=1623957266)  
+  실제 세계의 시작 위치와 사용자 정의 옵션이 포함된 지구 지도 모드입니다. 모드팩 한정으로 YnAEMP 전용 메뉴를 사용할 수 없습니다.
 
 6. 영구적으로 제외 결정한 모드-모드:
 - [City State Leaders II](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
