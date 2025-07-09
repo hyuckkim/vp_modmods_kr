@@ -93,10 +93,6 @@
 - Even More Resources for Vox Populi UCS (v 14) INT  
   더 많은 자원을 추가하는 이 모드는 두 종류가 있는데, 일반 버전과 위의 Unique City States 모드와 호환되는 버전이 있습니다. 당연히 여기엔 UCS가 포함되기에 호환 버전을 택했습니다. [어느 분이 먼저 번역](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=186196) 했었으나 글의 존재를 몰라(...) 직접 번역했습니다.  
 
-- [JFD's Sovereignty for VP (v 15a)](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
-- JFD's Sovereignty for VP (v 15a) INT  
-  정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
-
 - [Vox Populi's Bare Necessities (v 12)](https://forums.civfanatics.com/threads/bare-necessities.645157/)  
 - Vox Populi's Bare Necessities INT  
   잡다하게 많은 것들을 추가해주는 모드로 [ㅇㅇ(周年)님의 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=266786) 을 기반으로 최신 버전에 맞게 수정했습니다.  
@@ -109,33 +105,17 @@
 - Better Lakes for Vox Populi INT  
   호수의 용도를 좀 더 늘려주는 모드로 호수가 민물 호수와 염호(소금 호수)로 나뉘고 이에 따라 다른 자원(물고기, 민물고기)이 나옵니다. hyuckkim님의 번역을 최신 버전에 맞게 수정했습니다.  
 
-5. 번역은 완료되었으나 미포함된 모드-모드:
 - [Maritime Weather+](https://forums.civfanatics.com/threads/maritime-weather.695562/)  
+- Maritime Weather+ (v 6) INT  
+  Maritime Battles에서 분리된 모드로 폭풍이라는 움직이는 기상 현상을 추가시켜주는 모드입니다.  
 
 - [Whale Battles](https://forums.civfanatics.com/threads/maritime-battles-for-vp.625642/post-16829248)  
+- Whale Battles (v 1) INT  
+  Maritime Battles에 추가 예정인 모드로 고래를 사냥하는 포경을 할 수 있게 해주는 모드입니다.  
 
 - [Recon Pay](https://forums.civfanatics.com/threads/recon-pay-terrain-cost-all-you-can-move-buffet-edition.685224/)  
 
 - [Meaningful Colours](https://forums.civfanatics.com/threads/meaningful-colours.636237/)  
-
-- [(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
-  유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다.  그러나 경우에 따라 유닛이 바다 위에 떠 있어 보이거나 가시성이 떨어지는 등의 문제가 발생합니다.
-  
-6. 번역이 미완료된 모드-모드:
-- [(ui) List Enhancements for VP](https://forums.civfanatics.com/threads/list-enhancements-for-vp.638546/)  
-  도시 화면의 유닛 목록을 개선시켜주는 모드입니다.  
-  ※ 현재 번역은 할 수 있는 만큼 했으나 보이는 부분들 중 번역이 불가한 구간이 있어 번역 진행이 멈췄습니다.  
-
-- [Really Advanced Setup](https://forums.civfanatics.com/threads/really-advanced-setup.486324/)  
-  게임을 시작하기 전의 고급 설정 화면을 훨씬 더 세세하게 바꿔주는 모드입니다.  
-  ※ 현재 번역은 할 수 있는 만큼 했으나 보이는 부분들 중 번역이 불가한 구간이 있어 번역 진행이 멈췄습니다.  
-
-- [(ui) City-States Leaders for VP](https://forums.civfanatics.com/threads/city-states-leaders-for-vp.636763/)  
-  도시 국가에 지도자를 추가해주는 모드입니다.  
-  ※ 비영어판 문명 5 한정으로 오류가 발생하는 문제가 있습니다.  
-
-- [(7a) VP Events Overhaul (Expansion Pack system)](https://forums.civfanatics.com/threads/7a-vp-events-overhaul-expansion-pack-system.688052/)  
-  VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
 
 - [Civic And Reform (v 22)](https://forums.civfanatics.com/threads/civics-and-reforms.568603/)  
   이 모드도 VP의 시스템을 바꾸는 모드 중 하나인데 솔직히 아직 이해를 못 했습니다.  
@@ -146,9 +126,34 @@
 
 - [Hokaths Proposals](https://forums.civfanatics.com/threads/hokaths-changes.690601/)  
 
+5. 번역은 완료되었으나 미포함된 모드-모드:
+- [JFD's Sovereignty for VP (v 15a)](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
+- JFD's Sovereignty for VP (v 15a) INT  
+  정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
+  ※ 모드팩에 포함시 건물 건설이 불가한 문제가 있어 모드팩 한정으로 제외됩니다.  
+
+- [(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
+  유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다.  그러나 경우에 따라 유닛이 바다 위에 떠 있어 보이거나 가시성이 떨어지는 등의 문제가 발생합니다.
+  
+6. 번역이 미완료된 모드-모드:
+- [(ui) List Enhancements for VP](https://forums.civfanatics.com/threads/list-enhancements-for-vp.638546/)  
+  도시 화면의 유닛 목록을 개선시켜주는 모드입니다.  
+  ※ 현재 번역은 할 수 있는 만큼 했으나 보이는 부분들 중 번역이 불가한 구간이 있어 번역 진행이 멈췄습니다. 모드팩 한정으로 UI가 망가져 플레이에 불편을 줍니다.
+
+- [Really Advanced Setup](https://forums.civfanatics.com/threads/really-advanced-setup.486324/)  
+  게임을 시작하기 전의 고급 설정 화면을 훨씬 더 세세하게 바꿔주는 모드입니다.  
+  ※ 현재 번역은 할 수 있는 만큼 했으나 보이는 부분들 중 번역이 불가한 구간이 있어 번역 진행이 멈췄습니다.  모드팩 한정으로 고급 옵션 UI가 망가져 게임 시작이 불가합니다.
+
+- [(ui) City-States Leaders for VP](https://forums.civfanatics.com/threads/city-states-leaders-for-vp.636763/)  
+  도시 국가에 지도자를 추가해주는 모드입니다.  
+  ※ 비영어판 문명 5 한정으로 오류가 발생하는 문제가 있습니다.  
+
+- [(7a) VP Events Overhaul (Expansion Pack system)](https://forums.civfanatics.com/threads/7a-vp-events-overhaul-expansion-pack-system.688052/)  
+  VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
+
 - [Gedemon's YnAEMP](https://steamcommunity.com/sharedfiles/filedetails/?id=1623957266)  
 
-6. 확실하게 드랍을 결정한 모드-모드:
+6. 영구적으로 제외 결정한 모드-모드:
 - [City State Leaders II](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
   도시 국가에 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
 

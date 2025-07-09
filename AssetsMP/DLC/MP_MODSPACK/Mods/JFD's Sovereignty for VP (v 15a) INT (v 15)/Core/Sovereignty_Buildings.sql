@@ -1,6 +1,0 @@
-------------------------------------------------------------------------------------------------------------------------
--- Building_JFD_SovereigntyMods
-------------------------------------------------------------------------------------------------------------------------
-UPDATE Language_ko_KR SET Text = '도시와 [ICON_CITIZEN] 인구가 감소하면 [ICON_JFD_GOVERNMENT_COOLDOWN] 의회의 쿨타임이 25% 감소합니다.[NEWLINE][NEWLINE]' || Text WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass IN ('BUILDINGCLASS_PRINTING_PRESS')); --'TXT_KEY_BUILDING_PRINTING_PRESS_HELP';
-UPDATE Language_ko_KR SET Text = '도시와 [ICON_CITIZEN] 인구가 감소하면 [ICON_JFD_GOVERNMENT_COOLDOWN] 의회의 쿨타임이 25% 감소합니다.[NEWLINE][NEWLINE]' || Text WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass IN ('BUILDINGCLASS_CHANCERY', 'BUILDINGCLASS_WIRE_SERVICE')); --='TXT_KEY_BUILDING_CHANCERY_HELP';
---UPDATE Language_ko_KR SET Text = '도시와 [ICON_CITIZEN] 인구가 감소하면 [ICON_JFD_GOVERNMENT_COOLDOWN] 의회의 쿨타임이 25% 감소합니다.[NEWLINE][NEWLINE]' || Text WHERE Tag ='TXT_KEY_BUILDING_WIRE_SERVICE_HELP';

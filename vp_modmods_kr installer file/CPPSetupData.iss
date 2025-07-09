@@ -83,6 +83,8 @@ Source: "..\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MO
 Source: "..\Even More Resources for Vox Populi UCS INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
 Source: "..\Exploration Heritage (v 46)\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eh
 Source: "..\Exploration Heritage (v 46) INT\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eh
+Source: "..\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
+Source: "..\Hokaths Proposals (INT)\*"; DestDir: "{app}\MODS\Hokaths Proposals (INT)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
 Source: "..\JFD's Sovereignty for VP (v 15a)\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
 Source: "..\JFD's Sovereignty for VP (v 15a) INT\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
 Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
@@ -232,6 +234,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 14)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 14) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Hokaths Proposals"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Hokaths Proposals (INT)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Sovereignty for VP (v 15a)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Sovereignty for VP (v 15a) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) More Wonders for VP"
