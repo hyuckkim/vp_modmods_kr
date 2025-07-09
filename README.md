@@ -54,9 +54,9 @@
 - UI - Improved City View (Vox Populi EUI) INT  
   도시 화면을 개선해주는 34UC 다음으로 VP 채용설이 나오고 있는 모드로 걸작, 위인 미터, 건물 관리, 특히 전문가 때문에 많은 분들이 필수라고 여기는 모드입니다.  
 
-- [Upgrade All Units Button In Military Overview (v 2)](https://forums.civfanatics.com/threads/qol-upgrade-all-units-button-in-military-overview.682903/)  
-- Upgrade All Units Button In Military Overview INT  
-  이름 그대로 군사 화면에서 모든 유닛 업그레이드 버튼을 추가해주는 모드입니다. 근데 이 글 쓰면서 [이런 모드를 찾게 되는 바람에](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/) 교체를 검토 중입니다.  
+- [Wake All and Upgrade All Units In Military Overview (v 1)](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/)
+  Wake All and Upgrade All Units In Military Overview (v 1) (INT)
+  모든 유닛을 업그레이드하는 버튼을 추가하는 Upgrade All Units Button In Military Overview의 상위 호환으로 옆에 모두 꺠우는 버튼도 추가해줍니다.  
 
 - [Vibrant Textures](https://forums.civfanatics.com/resources/vibrant-terrain-textures.29607/)  
   지형의 질감을 개선해주는 모드로 특히 누렇게 내지는 약간 녹조처럼 보이던 물을 새파랗게 만들어줍니다.  
@@ -93,6 +93,10 @@
 - Even More Resources for Vox Populi UCS (v 14) INT  
   더 많은 자원을 추가하는 이 모드는 두 종류가 있는데, 일반 버전과 위의 Unique City States 모드와 호환되는 버전이 있습니다. 당연히 여기엔 UCS가 포함되기에 호환 버전을 택했습니다. [어느 분이 먼저 번역](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=186196) 했었으나 글의 존재를 몰라(...) 직접 번역했습니다.  
 
+- [JFD's Sovereignty for VP](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
+- JFD's Sovereignty for VP (v 15a) INT  
+  정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
+
 - [Vox Populi's Bare Necessities (v 12)](https://forums.civfanatics.com/threads/bare-necessities.645157/)  
 - Vox Populi's Bare Necessities INT  
   잡다하게 많은 것들을 추가해주는 모드로 [ㅇㅇ(周年)님의 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=266786) 을 기반으로 최신 버전에 맞게 수정했습니다.  
@@ -114,25 +118,33 @@
   Maritime Battles에 추가 예정인 모드로 고래를 사냥하는 포경을 할 수 있게 해주는 모드입니다.  
 
 - [Recon Pay](https://forums.civfanatics.com/threads/recon-pay-terrain-cost-all-you-can-move-buffet-edition.685224/)  
+  정찰 유닛의 이동 능력을 강화하는 여러 모드의 집합체입니다.
 
 - [Meaningful Colours](https://forums.civfanatics.com/threads/meaningful-colours.636237/)  
+  도시 국가 이름의 색깔이 구분하기 쉬운 가독성 높은 색깔로 바뀝니다.  
 
-- [Civic And Reform (v 22)](https://forums.civfanatics.com/threads/civics-and-reforms.568603/)  
-  이 모드도 VP의 시스템을 바꾸는 모드 중 하나인데 솔직히 아직 이해를 못 했습니다.  
+- [Civic And Reform](https://forums.civfanatics.com/threads/civics-and-reforms.568603/)  
+- Civic And Reform (v 22) INT
+  정책을 바꿔가며 문명의 방향성을 조정해 지지와 저항, 그리고 외교적 영향을 받게 됩니다.  
 
 - [Counter-Reconnaissance](https://forums.civfanatics.com/threads/counter-reconnaissance.684481/)  
+- Counter-Reconnaissance (v 44) INT  
+  정찰 유닛이 전투에 참여시 이동력이 감소하고 생존 가능성이 높아집니다.  
 
 - [Exploration Heritage](https://forums.civfanatics.com/threads/exploration-heritage.662115/)  
+- Exploration Heritage (v 46) INT  
+  고레벨 정찰 유닛이 손실되면 경험치 풀이 증가하여 수도와의 거리에 따라 대학에서 승격된 손상되지 않은 정찰 유닛에 턴당 보너스 경험치가 부여됩니다.  
 
 - [Hokaths Proposals](https://forums.civfanatics.com/threads/hokaths-changes.690601/)  
+- Hokath님이 제작한 모드들의 집합체입니다.
 
 5. 번역은 완료되었으나 미포함된 모드-모드:
-- [JFD's Sovereignty for VP (v 15a)](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
+- [JFD's Sovereignty for VP](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212)  
 - JFD's Sovereignty for VP (v 15a) INT  
   정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
   ※ 모드팩에 포함시 건물 건설이 불가한 문제가 있어 모드팩 한정으로 제외됩니다.  
 
-- [(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
+- [Unit Scaling and Formation for VP ](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
   유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다.  그러나 경우에 따라 유닛이 바다 위에 떠 있어 보이거나 가시성이 떨어지는 등의 문제가 발생합니다.
   
 6. 번역이 미완료된 모드-모드:
@@ -159,3 +171,7 @@
 
  - [Reworked Top Panel](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  
   게임 내에서 상단 패널 UI를 개선해주는 모드입니다. 현재 VP와 호환되지 않아 흔적만 남겨두고 계획은 드랍되었습니다.  
+
+- [Upgrade All Units Button In Military Overview (v 2)](https://forums.civfanatics.com/threads/qol-upgrade-all-units-button-in-military-overview.682903/)  
+- Upgrade All Units Button In Military Overview INT  
+  이름 그대로 군사 화면에서 모든 유닛 업그레이드 버튼을 추가해주는 모드입니다. 근데 [이런 모드를 찾게 되는 바람에](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/) 교체 되었습니다.  
