@@ -19,7 +19,7 @@ SELECT  '보통 선거권 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_6' UNION ALL
 SELECT  '보통 선거권이 보장된 정부는 인종, 신앙, 성별에 관계없이 모든 사람에게 투표권을 확대하는 것을 의미합니다. 보통 선거의 긍정적인 측면은 모든 사람이 나라를 운영할 사람을 선출하는 데 동등한 발언권을 갖는다는 것입니다. 부정적인 측면은 지능, 정직성 또는 다른 특성에 관계없이 모든 사람이 여기에 포함된다는 것입니다. 누군가가 이렇게 말한 적이 있습니다. "나는 마을 바보의 의견을 아리스토텔레스의 의견과 같은 무게로 여기는 모든 형태의 정부를 거부한다."', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_6_HELP' UNION ALL
-SELECT  '연방 해제!',
+SELECT  '연방제 해제!',
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_7' UNION ALL
 SELECT  '연방 정부란 여러 영토에 대한 여러 통치권이 서로 다른 주권으로 통치되는 형태를 말합니다. 이러한 이점은 각 지역이 엄격한 행정절차 없이 훨씬 더 효율적으로 업무를 관리할 수 있으므로, 유리한 경제를 이루는 데 도움이 될 수 있습니다. 그러나 연방 정부가 독립을 위협하려고 할 때 이러한 이점은 문제가 될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_GOVERNMENTCIVIC_CHOICE_7_HELP' UNION ALL
@@ -95,9 +95,9 @@ SELECT  '독창적인 기술 해제!',
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7' UNION ALL
 SELECT  '각 지역에서는 전 세계가 관심을 갖는 특별한 브랜드의 제품을 생산할 수 있습니다. 만약 그들의 경제가 전적으로 이 특별한 브랜드에 달려 있다면, 이는 매우 중요한 정보가 될 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_ECONOMYCIVIC_CHOICE_7_HELP' UNION ALL
-SELECT  '조직화된 종교 해제!',
+SELECT  '조직된 신앙 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2' UNION ALL
-SELECT  '조직화된 종교란 신학을 해석하거나 결정하고, 어떤 의식을 언제 거행해야 하는지 결정하고, 예배자들이 올바른 길을 가도록 사제나 성직자를 임명하는 중앙 권위가 있는 종교입니다. 중앙 권력은 종교적, 세속적 권력이 막강한 엄격하고 강력한 계층 구조일 수 있습니다.', 
+SELECT  '조직된 신앙이란 신학을 해석하거나 결정하고, 어떤 의식을 언제 거행해야 하는지 결정하고, 예배자들이 올바른 길을 가도록 사제나 성직자를 임명하는 중앙 권위가 있는 종교입니다. 중앙 권력은 종교적, 세속적 권력이 막강한 엄격하고 강력한 계층 구조일 수 있습니다.', 
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_2_HELP' UNION ALL
 SELECT  '신정제 해제!',
 		'TXT_KEY_PLAYER_EVENT_RELIGIONCIVIC_CHOICE_3' UNION ALL

@@ -998,124 +998,124 @@ function UnderCloudBeneathTheStars(iTeam, iTech, iChange)
 			if (pPlayer:GetTeam() == iTeam) then
 				if (iTech == GameInfoTypes.TECH_ARCHERY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "Hereditary Rule Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "세습 통치가 해제되었습니다!!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 						--LuaEvents.VP_AdvisorDisplayShow(GameInfo.CustomTutorials["CIVIC_HEREDITARY_RULE"], iPlayer)
 					end
 				elseif (iTech == GameInfoTypes.TECH_EDUCATION) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "Patronage Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "후원이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_CHIVALRY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Feudalism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "봉건제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_RIFLING) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "Totalitarianism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "전체주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_PRINTING_PRESS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "Representation Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "대의권이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_MILITARY_SCIENCE) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Nationhood Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "국가주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_ATOMIC_THEORY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "National Suffrage Suffrage Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "국민 참정권이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_MATHEMATICS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Codified Law Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "성문화된 법률이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_PHYSICS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Bureaucracy Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "관료제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_CIVIL_SERVICE) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Manorialism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "장원제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_RADIO) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Free Speech Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "표현의 자유가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_BRONZE_WORKING) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Slavery Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "노예제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_GUILDS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Caste System Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "신분제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_CURRENCY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "Commercialism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "상업주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_INDUSTRIALIZATION) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Industrial Servitude Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "산업 노예가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_GLOBALIZATION) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Emancipation Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "해방이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_ECONOMICS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "Free Market Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "자유시장이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_SCIENTIFIC_THEORY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "State Property Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "국유재산이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_CORPORATIONS) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "Corporatism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "협동조합주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_ECOLOGY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "Environmentalism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "환경주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_PHILOSOPHY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Organized Faith Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "조직된 신앙이 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_THEOLOGY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Theocracy Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "신정제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_BIOLOGY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Pacifism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "평화주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_FLIGHT) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Celebrity Worship Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "유명인 숭배가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_PENICILIN) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Free Religion Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "종교의 자유가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_WRITING) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new government civic!", "Confederation Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 정부 정책이 해제되었습니다!", "연방제가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_TELECOM) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new legal civic!", "Constituionalism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 법률 정책이 해제되었습니다!", "입헌주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_ELECTRICITY) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new labor civic!", "Unionism Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 노동 정책이 해제되었습니다!", "노동조합주의가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_HORSEBACK_RIDING) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new economy civic!", "Decentralization Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 경제 정책이 해제되었습니다!", "탈집중화가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				elseif (iTech == GameInfoTypes.TECH_CALENDAR) then
 					if pPlayer:IsHuman() then
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "You have unlocked a new religion civic!", "Ancestor Veneration Unlocked!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "새로운 종교 정책이 해제되었습니다!", "조상 숭배가 해제되었습니다!", pPlayer:GetCapitalCity():GetX(), pPlayer:GetCapitalCity():GetY())
 					end
 				end
 			end
