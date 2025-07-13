@@ -1,4 +1,4 @@
-INSERT OR REPLACE INTO Language_en_US 
+INSERT OR REPLACE INTO Language_ko_KR
 	(Tag, Text)
 Values
 	('TXT_KEY_UNIT_PIKEMAN', 'Halberdier'),
@@ -7,7 +7,7 @@ Values
 --==========================================================================================================================
 -- UnitPromotions
 --==========================================================================================================================
-INSERT OR REPLACE INTO Language_en_US 
+INSERT OR REPLACE INTO Language_ko_KR
 	(Tag, Text)
 Values 
 	('TXT_KEY_PROMOTION_DOPPELSOLDNER', 'Pike Tactics'),

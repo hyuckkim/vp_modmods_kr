@@ -2,7 +2,7 @@
 -- text
 ----------------
 
-INSERT INTO Language_en_US
+INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_SKI_RESORT_HELP', '+5 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Mountain tiles within the workable territory of the City. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Tundra tiles worked by the City, and for every Snow tile. 20% of [ICON_TOURISM] Tourism created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City must be built on or next to Mountain. City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Country Club or Marina.'),

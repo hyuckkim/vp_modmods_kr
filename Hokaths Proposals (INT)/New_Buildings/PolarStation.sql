@@ -1,7 +1,7 @@
 --------
 -- text 
 --------
-INSERT INTO Language_en_US
+INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_BUILDING_POLAR_STATION', 'Ice Station'),	

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<!-- consider changing name to Military Base and renaming the building to Command Centre or similar -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_FORT_2">
 			<Text>Airbase</Text>
@@ -20,5 +20,5 @@
 		<Row Tag="TXT_KEY_BUILD_FORT_2_REC">
 			<Text>It will increase improve the {TXT_KEY_IMPROVEMENT_FORT}'s bonuses and claim the Tile. However it will also cost more [ICON_GOLD] Gold.</Text>
 		</Row>
-	</Language_en_US>
+	</Language_ko_KR>
 </GameData>

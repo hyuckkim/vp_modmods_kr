@@ -1,4 +1,4 @@
-INSERT OR REPLACE INTO Language_en_US 
+INSERT OR REPLACE INTO Language_ko_KR
 	(Tag, Text)
 Values 
 	('TXT_KEY_BUILD_FISHING_BOAT_HELP', 'Constructs Fishing Boats on a Sea Resource, which increases the yields based on the Resource.'),
@@ -7,7 +7,7 @@ Values
 
 -----------------------------
 
-INSERT OR REPLACE INTO Language_en_US 
+INSERT OR REPLACE INTO Language_ko_KR
 	(Tag, Text)
 Values 
 	('TXT_KEY_BUILD_OFFSHORE_PLATFORMS_HELP', 'Constructs an Offshore Platform, which improves the Oil Strategic Resource when it appears on Sea Tiles. Generates a large increase in [ICON_GOLD] Gold and [ICON_PRODUCTION] Production.'),
