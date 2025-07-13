@@ -1,7 +1,7 @@
 ---------------------------------------------
 -- unit def
 ---------------------------------------------
-INSERT INTO Language_en_US
+INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_SWEDISH_LION', 'Swedish Lion'),
@@ -32,7 +32,7 @@ VALUES
 	('TXT_KEY_UNIT_SWEDISH_JARL_STRATEGY', 'Whereas other Generals lead their army from the safety of a ranged encampment or otherwise defensible location, the Swedish Jarl leads the army from the frontline! By ignoring terrain costs they can easily be maneuvered into the optimal position, and then gain strength by being surrounded by their troops on all sides to punch a hole in the enemy line. As you progress through the game all your Jarls will naturally increase in strength so you don''t even have to worry about upgrading them! In addition to the [COLOR_POSITIVE_TEXT]Swedish Lion[ENDCOLOR] Promotion, there are 6 additional choices upon level up that unlock progressively throughout the early game, allowing you to customize your heroic Jarl to suit your needs, be they military, exploratory, or civilian.'),
 	('TXT_KEY_UNIT_SWEDISH_JARL_HELP', 'Unique Swedish Great General that behaves like a Melee Land Unit. It fights with a scaling [ICON_STRENGTH] Strength appropriate to the [COLOR_CYAN]Era[ENDCOLOR] you are currently in. In addition to usual Leadership bonuses, it has access to a set of unique [COLOR_POSITIVE_TEXT]Promotions[ENDCOLOR]. Starts with the [COLOR_POSITIVE_TEXT]Swedish Lion[ENDCOLOR] Promotion, and additionally the [COLOR_POSITIVE_TEXT]Ski Infantry[ENDCOLOR] Promotion if born after entering the [COLOR_CYAN]Industrial Era[ENDCOLOR].[NEWLINE][NEWLINE]Can be expended to construct a [COLOR_POSITIVE_TEXT]Citadel[ENDCOLOR] improvement which gives a big defensive bonus to any Unit occuping it, damages Enemy Units that finish their turn adjacent to it, puts all adjacent tiles into your territory, and increases your Military Unit Supply Cap by 1.');
 
-INSERT INTO Language_en_US
+INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_UNIT_SWEDISH_JARL_1', 'Birger Brosa'),
