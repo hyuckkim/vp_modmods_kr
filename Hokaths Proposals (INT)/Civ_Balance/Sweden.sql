@@ -49,6 +49,6 @@ VALUES
 	('TXT_KEY_UNIT_SWEDISH_JARL_12', 'Oscar Bernadotte'),
 	('TXT_KEY_UNIT_SWEDISH_JARL_13', 'Bertil of Halland'),
 	('TXT_KEY_UNIT_SWEDISH_JARL_14', 'Carl Gustaf'),
-	('TXT_KEY_UNIT_SWEDISH_JARL_15', 'The Blue Prince'),  -- son was a rotter, dont want to confuse
+	('TXT_KEY_UNIT_SWEDISH_JARL_15', 'The Blue Prince'),  -- 아들은 썩은 놈이었어, 혼란스럽게 하고 싶지 않아
 	('TXT_KEY_UNIT_SWEDISH_JARL_16', 'Carl of Öland'),
 	('TXT_KEY_UNIT_SWEDISH_JARL_17', 'Carolus');
