@@ -1,0 +1,205 @@
+<GameData>
+	<!-- Mt Kilimanjaro -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_KILIMANJARO</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_KILIMANJARO</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_KILIMANJARO_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_STABLE</RequiredBuildingClass>
+			<LocalResourceRequired>RESOURCE_COW</LocalResourceRequired>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ARCHAEOLOGY</PrereqTech>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_HOTEL</RequiredBuildingClass>
+			<MinimumCityPopulation>20</MinimumCityPopulation>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_KILIMANJARO</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_KILIMANJARO</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_KILIMANJARO</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_KILIMANJARO</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_KILIMANJARO</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_KILIMANJARO</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<FeatureType>FEATURE_KILIMANJARO</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>8</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<FeatureType>FEATURE_KILIMANJARO</FeatureType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>8</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-600</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_ResourceQuantity>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</CityEventChoiceType>
+			<ResourceType>RESOURCE_IVORY</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</CityEventChoice_ResourceQuantity>
+	<CityEventChoice_CityYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>-3</Yield>
+		</Row>
+	</CityEventChoice_CityYield>
+	<CityEventChoice_ResourceYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</CityEventChoiceType>
+			<ResourceType>RESOURCE_COW</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</CityEventChoiceType>
+			<ResourceType>RESOURCE_COW</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_ResourceYieldChange>
+
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_KILIMANJARO_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION">
+			<Text>I Bless The Rains</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP">
+			<Text>The National Park is honored to receive you, wise and powerful Leader. Perhaps we could walk by Kilimanjaro, while we discuss the problems we face here. It is a lovely day for it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_1">
+			<Text>The Natural Wonder permanently yields +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_2">
+			<Text>The husbandry program allows nearby [ICON_RES_COW] Cattle to produce +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_3">
+			<Text>Allow the excavation, costing -3 [ICON_PRODUCTION] Production per turn. Receive two copies of [ICON_RES_IVORY] Ivory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_HELP_CHOICE_4">
+			<Text>Pay {2_InstantYield} for the protection and provision of tourists. Kilimanjaro produces +8 [ICON_TOURISM] Tourism and +8 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_1">
+			<Text>*More and more, poachers make their camps on the slopes of Kilimanjaro, plundering her natural wealth*[NEWLINE]Kilimanjaro is so important to local peoples, I shall insist on the harshest penalties for those who would disrespect the land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_2">
+			<Text>*The small cattle population native to Kilimanjaro's southern slopes are exceptional specimen*[NEWLINE]I'm sure the local farmers would be interested in the husbandry of these animals. It would both benefit them, while simultaneously funding the park.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_3">
+			<Text>*While Elephants are no longer seen in the shade of Kilimanjaro, archaeologists speculate the existence of a large elephant graveyard, buried by landslides*[NEWLINE]With the help of local laborers, we can provide at least a small degree of access to this resource, hopefully leading to a reduction in the suffering of those animals still alive in the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_KILIMANJARO_DESCRIPTION_CHOICE_4">
+			<Text>*The striking form of Kilimanjaro has seduced travelers from far and wide. More and more, people are coming to experience Kilimanjaro.*[NEWLINE]Such an influx of people must be offset by spending on infrastructure! The government will be happy to supply funds for the park authority's continued stewardship.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

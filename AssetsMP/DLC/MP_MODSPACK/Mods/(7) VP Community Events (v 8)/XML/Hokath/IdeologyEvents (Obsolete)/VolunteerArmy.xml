@@ -1,0 +1,143 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_VOLUNTEER_ARMY</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_1</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_BASE</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MILITARY_ACADEMY</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_FOREIGN_OFFICE</RequiredAnywhereBuildingClass>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_VOLUNTEER_ARMY</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_FOREIGN_OFFICE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_VOLUNTEER_ARMY_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION">
+			<Text>In The Army Now</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP">
+			<Text>Our volunteer army is a demonstration of the strength of our free society. Now that we have shown that conscription is unnecessary, how can we direct our recruitment efforts to best serve our society?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_1">
+			<Text>Military Bases cost -2 [ICON_GOLD] Gold per turn, but boost [ICON_RESEARCH] Science by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_2">
+			<Text>Military Bases cost -2 [ICON_GOLD] Gold per turn, but boost [ICON_CULTURE] Culture by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_HELP_CHOICE_3">
+			<Text>The Foreign Office boosts [ICON_TOURISM] Tourism in that City by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_1">
+			<Text>The army is a vehicle to take underpriviledged, downtrodden youths and give them the outlook and skills to properly integrate into society. This is how we should focus our efforts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_2">
+			<Text>The army has always - and will always - play an important roll in the heirarchy of state. The recruitment of skilled and committed officers to secure the integrity of our mission is of paramount importance!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_VOLUNTEER_ARMY_DESCRIPTION_CHOICE_3">
+			<Text>If we want to use our men and women effectively, they need to be aware of the enemies they face and the routes to peace. Other parts of the world are in need of stabilising forces, we need to move to a position where we can deploy effective peacekeeping forces.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

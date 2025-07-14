@@ -1,0 +1,277 @@
+﻿<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_HEADS</Type>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_HEADS_HELP</Help>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<!-- So major I think it needs to go in this category -->
+			<NumChoices>6</NumChoices>
+			<RandomChance>100</RandomChance>
+			<RandomChanceDelta>100</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<IsSuperUnhappy>true</IsSuperUnhappy>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_1</Help>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<EventBuildingClassGlobal>BUILDINGCLASS_HEADS_RELIGION_DUMMY</EventBuildingClassGlobal>
+			<ReligiousUnrestModifierGlobal>-35</ReligiousUnrestModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_2</Description>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_HEADS_CULTURE_DUMMY</EventBuildingClassGlobal>
+			<CultureMedianModifierGlobal>-20</CultureMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_3</Description>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_ARSENAL</RequiredAnywhereBuildingClass>
+			<BasicNeedsMedianModifierGlobal>-20</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_4</Description>
+			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_POLICE_STATION</RequiredAnywhereBuildingClass>
+			<GoldMedianModifierGlobal>-20</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_5</Description>
+			<PrereqTech>TECH_PENICILIN</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MEDICAL_LAB</RequiredAnywhereBuildingClass>
+			<ScienceMedianModifierGlobal>-20</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_HEADS_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_HEADS_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_6</Description>
+			<BasicNeedsMedianModifierGlobal>-5</BasicNeedsMedianModifierGlobal>
+			<GoldMedianModifierGlobal>-5</GoldMedianModifierGlobal>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+			<CultureMedianModifierGlobal>-5</CultureMedianModifierGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_HEADS</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_HEADS_RELIGION_DUMMY</Type>
+			<DefaultBuilding>BUILDING_HEADS_RELIGION_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_HEADS_CULTURE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_HEADS_CULTURE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_HEADS_RELIGION_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_HEADS_RELIGION_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+		<Row>
+			<Type>BUILDING_HEADS_CULTURE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_HEADS_CULTURE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY</Description>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_GrowthExtraYield>
+		<Row>
+			<BuildingType>BUILDING_HEADS_RELIGION_DUMMY</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_GrowthExtraYield>
+
+	<Building_WLTKDYieldMod>
+		<Row>
+			<BuildingType>BUILDING_HEADS_CULTURE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>15</Yield>
+		</Row>
+	</Building_WLTKDYieldMod>
+
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>10</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>15</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HEADS_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<!-- Text  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION">
+			<Text>Off With Their Heads!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP">
+			<Text>Your Greatness, the Empire slips into madness and brutality! Crimes are openly perpetrated on the streets, schools and businesses lie abandoned, while men and women are forced to do terrible things to ensure they have enough food to eat.[NEWLINE]We must restablish control. The people must remember who you are! Those who would defy the state must die![NEWLINE]We, your advsiors, urge you to take action!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_1">
+			<Text>The threshold for [ICON_PEACE] Religious Unhappiness is reduced by 35%. When a [ICON_CITIZEN] Citizen is born in one of your Cities, receive 50% of that City's [ICON_PEACE] Faith output immediately.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_2">
+			<Text>The threshold for [ICON_CULTURE] Boredom is reduced by 20%. During [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] your Cities produce +15% [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_3">
+			<Text>The threshold for [ICON_STRENGTH] Distress is reduced by 20%. Barracks increase [ICON_PRODUCTION] Production in Cities by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_4">
+			<Text>The threshold for [ICON_GOLD] Poverty is reduced by 20%. Constabularies increase [ICON_GOLD] Gold generated in Cities by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_5">
+			<Text>The threshold for [ICON_RESEARCH] Illiteracy is reduced by 20%. Hospitals increase [ICON_RESEARCH] Science generated in Cities by 15%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_HELP_CHOICE_6">
+			<Text>The threshold for [ICON_GOLD] Poverty, [ICON_STRENGTH] Crime, [ICON_CULTURE] Boredom, and [ICON_RESEARCH] Illiteracy are reduced by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_1">
+			<Text>It seems the rabble do not fear me. But do fear God... Round up heretics and cruxify them where all can see. The killings will stop when they fall penitent at my feet!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_2">
+			<Text>L'état, c'est moi! Off with their heads! I want these upstart peasants' heads impaled on the battlements of my Palace!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_3">
+			<Text>There is a natural order to this world, and those who try to upend it do not fare well. Restore order, my Military Advisor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_4">
+			<Text>Two things in life are certain. Death and taxes. Those who don't get back to paying the latter will walk the Green Mile to the former.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_5">
+			<Text>Clearly some of these people are beyond help. In places we shall have to wipe the slate clean and begin again. We must be methodical. We must be thorough. We are not here to cause pain, but we shall be ruthlessly efficient in this task we must perform.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HEADS_DESCRIPTION_CHOICE_6">
+			<Text>Domestic Advisor, surely you have not lost your mind with the rest of these monsters?! How can they be suggesting Guillotines, Firing Squads, Electric Chairs, and Lethal Injections?! Surely there is some way that reason can out? Surely the people yearn for peace and prosperity?</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY">
+			<Text>Penitence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_RELIGION_DUMMY_HELP">
+			<Text>When a citizen is born, earn [ICON_PEACE] Faith equivalent to 50% of the City's Output.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY">
+			<Text>L'état, c'est moi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEADS_CULTURE_DUMMY_HELP">
+			<Text>WLTKD produces +15% [ICON_CULTURE] Culture.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

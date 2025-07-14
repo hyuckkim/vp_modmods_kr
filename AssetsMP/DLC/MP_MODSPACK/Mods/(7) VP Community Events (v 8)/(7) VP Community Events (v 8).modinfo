@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" version="8">
+  <Properties>
+    <Name>(7) VP Community Events</Name>
+    <Teaser>Creates more events for Vox Populi.</Teaser>
+    <Description>Creates more events for Vox Populi.</Description>
+    <Authors>The Community: Enginseer, Hokath, Xony, Anatase, N.Core</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/community-patch-events-development.569321/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="114" maxversion="999" title="Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="16" maxversion="999" title="Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="1b1c0548-b197-4f9c-9621-433d3b32c826" minversion="0" maxversion="999" title="Community Balance Patch Mod Compatibility" />
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Vox Populi Bare Necessities" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="7AD8801F39094B10695480F6843FBCB3" import="1">Art/advisoreconomic.dds</File>
+    <File md5="86236D6198FC4B7FC05E89A2059342EE" import="1">Art/advisorforeign.dds</File>
+    <File md5="789B7113FB8D0A9C611622C8C81749D6" import="1">Art/advisormilitary.dds</File>
+    <File md5="F08012D06417FA5CAB189DC1ACFAE617" import="1">Art/advisorscience.dds</File>
+    <File md5="E63F495530830ACDA63D58F4239814D2" import="1">Art/AirBalloon.dds</File>
+    <File md5="FBE7D0620F5256D72DC21D4318427269" import="1">Art/AncientRefugee.dds</File>
+    <File md5="4E188274DE1EEF16AB1FD324B897620A" import="1">Art/basedcivevent.dds</File>
+    <File md5="22DF8EC9DDF8103BC381BC819738D687" import="1">Art/cedummy128.dds</File>
+    <File md5="0286FAD4AD16D8ED1C5FEA88920A837C" import="1">Art/cedummy256.dds</File>
+    <File md5="A540495E07012B0B321E6C8013C0FB3C" import="1">Art/cedummy45.dds</File>
+    <File md5="1A0D0BD87F2F53AA57BD00C10E3CA14E" import="1">Art/cedummy64.dds</File>
+    <File md5="67D889A9EEEC4AB0E1ED942570D7BDAD" import="1">Art/cedummy80.dds</File>
+    <File md5="30272260861F6F1A949486F354C58AE7" import="1">Art/CityRaid.dds</File>
+    <File md5="CC4780DA2F00EEBF0AE029B4EE591066" import="1">Art/ExoticLuxury.dds</File>
+    <File md5="1E5274E454E2453CF336BD7BD74E9CE6" import="1">Art/EyeForEye.dds</File>
+    <File md5="962A7CDC3EBD64D01B045C7A6494E540" import="1">Art/FireFire.dds</File>
+    <File md5="6BB340B55207D61CEB2102D83CD5D480" import="1">Art/FireWorks.dds</File>
+    <File md5="EC82E102C774F8FCC83CA0C84BE91890" import="1">Art/Gladiator.dds</File>
+    <File md5="76612195A00BC36769E291C91151B518" import="1">Art/GlintMine.dds</File>
+    <File md5="6AADF65C7F52C2582215C19E8B81219B" import="1">Art/GoldStandard.dds</File>
+    <File md5="CE4F1D1578C73C83718580A0F0D95CA9" import="1">Art/HarborTrade.dds</File>
+    <File md5="968715465F9647AF7CF12738D79F38C8" import="1">Art/JungleDisease.dds</File>
+    <File md5="4B376A5B2465E539918F7F086E01B13A" import="1">Art/Mall-FontIcons.dds</File>
+    <File md5="80FCA7A8933F9B199FE5DC3794056C5F" import="1">Art/Mall-FontIcons.ggxml</File>
+    <File md5="3543ADBF2A7184359545BC379918B542" import="1">Art/MallAtlas128.dds</File>
+    <File md5="491A1874F6B569DED1978E1A8317F098" import="1">Art/MallAtlas256.dds</File>
+    <File md5="25B29BAAE936443286783319502315D0" import="1">Art/MallAtlas45.dds</File>
+    <File md5="59404569049E7156DD4042EA6B05CB9F" import="1">Art/MallAtlas64.dds</File>
+    <File md5="7C7BD27ED5936333EC088EDF2F8FED5A" import="1">Art/MallAtlas80.dds</File>
+    <File md5="AF8E8E683115CC06750A1F126C11BFD7" import="1">Art/NaturalBeauty.dds</File>
+    <File md5="FC2DC1AA455210D54F9C2E0310AFBFF4" import="1">Art/naturalwonderpopup.dds</File>
+    <File md5="7AE54BA5A31E80A1745528F5EC9924D7" import="1">Art/StockMarketCrash.dds</File>
+    <File md5="26908BC94A3A9C3ED9F9A59E48C609EC" import="1">Art/SunHeat.dds</File>
+    <File md5="0CA2948C0904B3C2455055D2C1E3D5B2" import="1">Art/WTC128.dds</File>
+    <File md5="AD37F6D755789CD53224CB7AD2337A89" import="1">Art/WTC256.dds</File>
+    <File md5="D7A7CCD323504FE0C72621777CDBFE64" import="1">Art/WTC45.dds</File>
+    <File md5="E22879BA3084949DF3B81E2E31F0B8EF" import="1">Art/WTC64.dds</File>
+    <File md5="AB3CB7DBEB7C6F8D19A676218689E0BA" import="1">Art/WTC80.dds</File>
+    <File md5="32EA80F1FB5A59301FB5A37EB2AC6473" import="1">Art/WTC_Splash.dds</File>
+    <File md5="830932B637213E0931E222634D300361" import="0">AudioThings.sql</File>
+    <File md5="CCBA8404BF4CC6E7DB722C535E466BB2" import="0">Audio/AudioDefines.sql</File>
+    <File md5="494AD233607DA22A86EDE501A395DC83" import="1">Audio/EAircraft.mp3</File>
+    <File md5="5FB18F80EA5E6E403ED198BE9AAFEAF5" import="1">Audio/EBankCashCash.mp3</File>
+    <File md5="E2118701BE55DB406245B9472E36E9B2" import="1">Audio/ECityCapture.mp3</File>
+    <File md5="AD7CB7001B6FF51CD7D57FCF36F5FC40" import="1">Audio/ECityRevolt.mp3</File>
+    <File md5="2762F61B59A37931BDC9578EF87459C9" import="1">Audio/ECiv.mp3</File>
+    <File md5="29215DCC7303D6888D68522C405712BE" import="1">Audio/ECrowdCheer.mp3</File>
+    <File md5="E1AD93C61D2CA38AB911BE628A8D553D" import="1">Audio/ECultureExpands.mp3</File>
+    <File md5="5D6E715321BB7CCE42B5EFF7D22626DE" import="1">Audio/EDeclareWar.mp3</File>
+    <File md5="BC26E88534B77C912B3E966EFDA00218" import="1">Audio/EDiscovery.mp3</File>
+    <File md5="6EC7DC5E7205587F667C94E45D2464BC" import="1">Audio/EEconomic.mp3</File>
+    <File md5="B4A7FF0EB215563E5CD86B2B35E2856A" import="1">Audio/EFeatureGrowth.mp3</File>
+    <File md5="369BC87ECF80935DDD9AF2B1791160B7" import="1">Audio/EFirstToSomething.mp3</File>
+    <File md5="D4238ECE8524B5A818A0A50407C50A8E" import="1">Audio/EForeign.mp3</File>
+    <File md5="2B23B7EA7DA75B0D90D52DBE92CF16EE" import="1">Audio/EGhast.mp3</File>
+    <File md5="B0E713C002D9476B456F966C51B139C1" import="1">Audio/EGoldenAge.mp3</File>
+    <File md5="A06242927B0DB0549C4015D56B8E0F63" import="1">Audio/EGreatPeople.mp3</File>
+    <File md5="8BB65711E100486516B584D56889397B" import="1">Audio/EMilitary.mp3</File>
+    <File md5="B50DF289370B6A6E9CE16BCDAE5DAF7B" import="1">Audio/EPlague.mp3</File>
+    <File md5="1A3D5153C2A4E7972B99B11C06E921F3" import="1">Audio/ERelic.mp3</File>
+    <File md5="10FE83D564A3A1A2BE0425572010B16D" import="1">Audio/ERevolutionEnd.mp3</File>
+    <File md5="1616AA367FED0424AE00C8514AD4555C" import="1">Audio/ERevolutionStart.mp3</File>
+    <File md5="3C9EAE74A4C8598059D7F668D4FAEABD" import="1">Audio/EScience.mp3</File>
+    <File md5="48DC69F25E1C99A6EE60678A10454C3A" import="1">Audio/EStrike.mp3</File>
+    <File md5="86CCCA0E058D63E5872770B9C723978B" import="1">Audio/ETroops.mp3</File>
+    <File md5="EBC507153D12C389B3838E94502A16EF" import="1">Audio/WTC_Quote.mp3</File>
+    <File md5="1B64DA0EF859CC3079FC3FFD23696CB6" import="0">Developmental.sql</File>
+    <File md5="9C25E1CDC3B5122842A6A70FAB49A522" import="0">LICENSE</File>
+    <File md5="85034361DAD8184B79C805AED1B398C9" import="0">LUA/CompatibilityFile.lua</File>
+    <File md5="CE334DC9AA3261EC54D70493EE026D74" import="0">LUA/demcivcompatibilityfile.sql</File>
+    <File md5="598C0932C72E1E83ED98B9AF5C5D3ECC" import="0">LUA/EventLUA.lua</File>
+    <File md5="78B2A68B8EE5180F0F8451D10C96B545" import="0">LUA/InstructionsCivCompatibility.sql</File>
+    <File md5="9754CFE56464114B22FAE870C4E2BC61" import="0">XML/Anatase/MiscellaneousEvents.xml</File>
+    <File md5="AF7CF333AC47C62626176EB972C5C2A9" import="0">XML/Enginseer/AncientEvents.xml</File>
+    <File md5="D8788E43DF288FE84539FE745A5E43BF" import="0">XML/Enginseer/BarbarianHorde.xml</File>
+    <File md5="356CC8F23C1C59B0F4183BFA847224CA" import="0">XML/Enginseer/BOGO.xml</File>
+    <File md5="4D517A5DD73132E099297A92240F414D" import="0">XML/Enginseer/DoomsdayEvents.xml</File>
+    <File md5="14A201AD0C83D41BF677755C45C1C48D" import="0">XML/Enginseer/MedievalEvents.xml</File>
+    <File md5="F7282753415A1A2B197F2461FDDA04AE" import="0">XML/Enginseer/ModernEvents.xml</File>
+    <File md5="08CD1C650D3B918B557F802A6BA9D790" import="0">XML/Enginseer/RenaissanceEvents.xml</File>
+    <File md5="830313DADEC3362DD2B7F1DD6B2717CF" import="0">XML/Enginseer/ResourceEvents.xml</File>
+    <File md5="C05B6ED56581331DA04C14791F844F36" import="0">XML/Enginseer/UniqueUnits.xml</File>
+    <File md5="0616C2F8FA27735129A22DA14B222914" import="0">XML/Hokath/AdvisorEvents/Economic.xml</File>
+    <File md5="D3AC6FAD34250ECFA7D13C6DF4CD5612" import="0">XML/Hokath/AdvisorEvents/EconomicCityBad.xml</File>
+    <File md5="070B0EBF1472A4CF274B43CDA05D5FAB" import="0">XML/Hokath/AdvisorEvents/EconomicCityGood.xml</File>
+    <File md5="B66FA6DA8D56A53B02A16EB13753C67E" import="0">XML/Hokath/AdvisorEvents/EconomicCityTrade.xml</File>
+    <File md5="E0F08401E5D9F922E38E1083A80CB654" import="0">XML/Hokath/AdvisorEvents/EconomicPlayerBad.xml</File>
+    <File md5="10F30C66228D23F7EA67D60A72FFABBE" import="0">XML/Hokath/AdvisorEvents/EconomicPlayerGood.xml</File>
+    <File md5="B5013344F82F1D95A83C7D58543E6A3A" import="0">XML/Hokath/AdvisorEvents/EconomicPlayerTrade.xml</File>
+    <File md5="30B06A2BD5CA95DDEE9A4AD749D6F868" import="0">XML/Hokath/AdvisorEvents/Foreign.xml</File>
+    <File md5="E9ED6674FDE2C611EFF838B85B1E1266" import="0">XML/Hokath/AdvisorEvents/ForeignCityBad.xml</File>
+    <File md5="C97F9A7491A2ABB58D66E19FE2FECFD1" import="0">XML/Hokath/AdvisorEvents/ForeignCityGood.xml</File>
+    <File md5="387CB54AF6D7120492A164CF56AFFC3E" import="0">XML/Hokath/AdvisorEvents/ForeignCityTrade.xml</File>
+    <File md5="FB910F87C06F2479BC585C248D2663F6" import="0">XML/Hokath/AdvisorEvents/ForeignPlayerBad.xml</File>
+    <File md5="A268426F48B4C29D5035B70E0BBDC494" import="0">XML/Hokath/AdvisorEvents/ForeignPlayerGood.xml</File>
+    <File md5="FD45FAD781B0987D03D06CEE68B2005C" import="0">XML/Hokath/AdvisorEvents/ForeignPlayerTrade.xml</File>
+    <File md5="E368F509DF1687E90E77B77386B92CA3" import="0">XML/Hokath/AdvisorEvents/Science.xml</File>
+    <File md5="BD391A57BB40C0D0CE4BBE0F1A1C214C" import="0">XML/Hokath/AdvisorEvents/ScienceCityBad.xml</File>
+    <File md5="97FBBF5D9E7FF384CDF3980AAF154CEC" import="0">XML/Hokath/AdvisorEvents/ScienceCityGood.xml</File>
+    <File md5="C12E738FE3CBA48426F06FD5CA55CCB2" import="0">XML/Hokath/AdvisorEvents/ScienceCityTrade.xml</File>
+    <File md5="CE24CC243577CA0C8135A09AE738F49F" import="0">XML/Hokath/AdvisorEvents/SciencePlayerBad.xml</File>
+    <File md5="A3E83AA0A2595566ADAC9061B8E5F25B" import="0">XML/Hokath/AdvisorEvents/SciencePlayerGood.xml</File>
+    <File md5="6C48464CAE89B4F927142A6E13DC8C48" import="0">XML/Hokath/AdvisorEvents/SciencePlayerTrade.xml</File>
+    <File md5="64A3DD6A7460616134DFA03DDF47BC14" import="0">XML/Hokath/AdvisorEvents/War.xml</File>
+    <File md5="B275E6EBC814EBBF21DF4AEEF0E996AA" import="0">XML/Hokath/AdvisorEvents/WarCityBad.xml</File>
+    <File md5="84AD960D9695FCF7D478A882C2C9485F" import="0">XML/Hokath/AdvisorEvents/WarCityGood.xml</File>
+    <File md5="2CD56389C329E44BB1F414A8B1939CEA" import="0">XML/Hokath/AdvisorEvents/WarCityTrade.xml</File>
+    <File md5="1CF12BB34C30ECB7DC22E9BD8161EADE" import="0">XML/Hokath/AdvisorEvents/WarPlayerBad.xml</File>
+    <File md5="25630BD026B4646D6F2BAFA193207AFA" import="0">XML/Hokath/AdvisorEvents/WarPlayerGood.xml</File>
+    <File md5="F484194E051F8011896C189A7EAAD5B2" import="0">XML/Hokath/AdvisorEvents/WarPlayerTrade.xml</File>
+    <File md5="2FA569FBDDC4EE760FBEFF1915E9BFBE" import="0">XML/Hokath/CivilizationEvents/America.xml</File>
+    <File md5="795B978F961258FFDC51C16C45E8840F" import="0">XML/Hokath/CivilizationEvents/Arabia.xml</File>
+    <File md5="72CBBDD8C95C887867C7317B399BF6FA" import="0">XML/Hokath/CivilizationEvents/Assyria.xml</File>
+    <File md5="6CC634E06286DA3B6A3ADD0FBBF347DF" import="0">XML/Hokath/CivilizationEvents/Austria.xml</File>
+    <File md5="11653AEC57E1A7E4EE90113380D10746" import="0">XML/Hokath/CivilizationEvents/Aztec.xml</File>
+    <File md5="7B6507C1A85639964081878844568515" import="0">XML/Hokath/CivilizationEvents/Babylon.xml</File>
+    <File md5="B8688AD1B60DF45550A775B73A7752E5" import="0">XML/Hokath/CivilizationEvents/Brazil.xml</File>
+    <File md5="3B65A824CECFA9668FB26D472460E449" import="0">XML/Hokath/CivilizationEvents/Byzantium.xml</File>
+    <File md5="5044C33178576EAD6D40E642FA3F8D2A" import="0">XML/Hokath/CivilizationEvents/Carthage.xml</File>
+    <File md5="F4B95B70113350AAC6DC9F754501B31A" import="0">XML/Hokath/CivilizationEvents/Celts.xml</File>
+    <File md5="9DEEFA024EA5569DC8E5C706976CB4C7" import="0">XML/Hokath/CivilizationEvents/China.xml</File>
+    <File md5="F735468E284E969EB53E5B919F52A284" import="0">XML/Hokath/CivilizationEvents/Denmark.xml</File>
+    <File md5="29186133AEA72A808069F3B5174D519D" import="0">XML/Hokath/CivilizationEvents/Egypt.xml</File>
+    <File md5="4F7672505FA159900532036CC780A9E7" import="0">XML/Hokath/CivilizationEvents/England.xml</File>
+    <File md5="EFE3D5CDCB085BE391DF97D5A581D119" import="0">XML/Hokath/CivilizationEvents/Ethiopia.xml</File>
+    <File md5="DF2977B64686D5D5A51545112D7AE398" import="0">XML/Hokath/CivilizationEvents/France.xml</File>
+    <File md5="D478D59E04054016B15B82F2037724A8" import="0">XML/Hokath/CivilizationEvents/Germany.xml</File>
+    <File md5="EDF401D208281D14938BE79E5910026A" import="0">XML/Hokath/CivilizationEvents/Greece.xml</File>
+    <File md5="A99CB9149EC2B25FEA616B9CA9CFBF71" import="0">XML/Hokath/CivilizationEvents/Huns.xml</File>
+    <File md5="E19CE6C5864DBD0DD42BBA4F212043DF" import="0">XML/Hokath/CivilizationEvents/Inca.xml</File>
+    <File md5="7B68539F2DA978CD783C812FFFB0943D" import="0">XML/Hokath/CivilizationEvents/India.xml</File>
+    <File md5="934942E4A84E2ADABA346993F3EEC63C" import="0">XML/Hokath/CivilizationEvents/Indonesia.xml</File>
+    <File md5="383939850882191487BCCC441C3F81F0" import="0">XML/Hokath/CivilizationEvents/Iroquois.xml</File>
+    <File md5="A206EC7A04A8341AF94034ABFE43D35A" import="0">XML/Hokath/CivilizationEvents/Japan.xml</File>
+    <File md5="8F36B7DB352088725B4ADEA95298D4E6" import="0">XML/Hokath/CivilizationEvents/Korea.xml</File>
+    <File md5="B0A3B1F7DDDF69A3C7FD372D85311C85" import="0">XML/Hokath/CivilizationEvents/Maya.xml</File>
+    <File md5="305D1E8EB8F212C479DFDBFF96162A78" import="0">XML/Hokath/CivilizationEvents/Mongolia.xml</File>
+    <File md5="E62CA728380CCC7200BC736A6B883335" import="0">XML/Hokath/CivilizationEvents/Morocco.xml</File>
+    <File md5="D254581B87619FB733B84239940EB707" import="0">XML/Hokath/CivilizationEvents/MutuallyExclusive.sql</File>
+    <File md5="E053F23EFDBA6FE94B5108F1D3209319" import="0">XML/Hokath/CivilizationEvents/Netherlands.xml</File>
+    <File md5="431842D32C3826A3CC3EC86DAE11E7DB" import="0">XML/Hokath/CivilizationEvents/Ottoman.xml</File>
+    <File md5="49D6AF9A031E9CAE2B5087AE5EC26C75" import="0">XML/Hokath/CivilizationEvents/Persia.xml</File>
+    <File md5="2FE240091CB1AE1B9CB8E7617EDDC6D2" import="0">XML/Hokath/CivilizationEvents/Poland.xml</File>
+    <File md5="1D4FA1CB512DA3FB3635AA97BECCE493" import="0">XML/Hokath/CivilizationEvents/Polynesia.xml</File>
+    <File md5="5864A6EC22C4DB94F26B5F9D5102929C" import="0">XML/Hokath/CivilizationEvents/Portugal.xml</File>
+    <File md5="E7E304F912A4972BA5AE118404C709B8" import="0">XML/Hokath/CivilizationEvents/Rome.xml</File>
+    <File md5="B0159B4E21FF9EA4A24C9E4A343578D0" import="0">XML/Hokath/CivilizationEvents/Russia.xml</File>
+    <File md5="B15C3EF6CC2B8AF89BF4D2FCB760EB1E" import="0">XML/Hokath/CivilizationEvents/Shoshone.xml</File>
+    <File md5="7CCE5246CFFCCB8B4A29180C99ECBE85" import="0">XML/Hokath/CivilizationEvents/Siam.xml</File>
+    <File md5="101145BA4F854E76C38EF6512A5D1AB1" import="0">XML/Hokath/CivilizationEvents/Songhai.xml</File>
+    <File md5="1849E25D5602313C414C88F2A26F8F10" import="0">XML/Hokath/CivilizationEvents/Spain.xml</File>
+    <File md5="5929B71B5FE8E99F330422F0C93C9EDD" import="0">XML/Hokath/CivilizationEvents/Sweden.xml</File>
+    <File md5="2BD7EB760AE064551CE16F36CBF93A51" import="0">XML/Hokath/CivilizationEvents/Venice.xml</File>
+    <File md5="BB65D35817DEE5A95DDC9AF06C76A85E" import="0">XML/Hokath/CivilizationEvents/Zulu.xml</File>
+    <File md5="EA5810F2A05EE1B9E5B59ADFC4FBD6DB" import="0">XML/Hokath/CorporationEvents/CorporationAtlas.sql</File>
+    <File md5="C26B4F0388D387D5D050B5707BF1173C" import="0">XML/Hokath/CorporationEvents/Extractors.xml</File>
+    <File md5="DA2CE8AF572A2739733D07184065164F" import="0">XML/Hokath/CorporationEvents/Firaxite.xml</File>
+    <File md5="7C01B9E6BA7D031D37FC9B47B9767E00" import="0">XML/Hokath/CorporationEvents/Giorgio.xml</File>
+    <File md5="A9E0AA26CC10FEC5C8C67BAD0E2C4311" import="0">XML/Hokath/CorporationEvents/Hexxon.xml</File>
+    <File md5="E4FAE12DD011CCD8C9811BE949017D0A" import="0">XML/Hokath/CorporationEvents/Jewelers.xml</File>
+    <File md5="EC1F51A9DB0038F5289783785F19D647" import="0">XML/Hokath/CorporationEvents/Mall.xml</File>
+    <File md5="B7D314DDC30B15A11A34A11AC8A96481" import="0">XML/Hokath/CorporationEvents/TraderSids.xml</File>
+    <File md5="A234049D00E73D871774F9798A0A7D92" import="0">XML/Hokath/CorporationEvents/Twokay.xml</File>
+    <File md5="39B0176ED69D82A54BEC8ECF9AC63154" import="0">XML/Hokath/CorporationEvents/Wonder_WTC.xml</File>
+    <File md5="D8FB3112050C015F54923881E54EECE7" import="0">XML/Hokath/ExtraEvents/ColdFront.xml</File>
+    <File md5="C9C4F6AC5EB9951D79CEBE788A864BBD" import="0">XML/Hokath/ExtraEvents/ContrabandSmugglers.xml</File>
+    <File md5="F124974518F38B8271837F8B7AFC3F6F" import="0">XML/Hokath/ExtraEvents/Dissolution.xml</File>
+    <File md5="1F6096D4D6A8E7156AE725E47869390D" import="0">XML/Hokath/ExtraEvents/FakePainting.xml</File>
+    <File md5="E9822AB6B721501B8D431F9AF2F1C0FB" import="0">XML/Hokath/ExtraEvents/FirstSummit.xml</File>
+    <File md5="B0520A3A43E30D1420BED2D7E0368AE1" import="0">XML/Hokath/ExtraEvents/GunpowderPlot.xml</File>
+    <File md5="24ABC62AB9E4ECCD4852FE3FA4A7CBAE" import="0">XML/Hokath/ExtraEvents/Motaba.xml</File>
+    <File md5="0FD096A81D0BC97ABA79F657147CFBE2" import="0">XML/Hokath/ExtraEvents/Musketeers.xml</File>
+    <File md5="F320FBE2A227876F2EB6A75FFCDBA8B6" import="0">XML/Hokath/ExtraEvents/NotoriousPirate.xml</File>
+    <File md5="F13D0ABCB06BE8122FFF417E119A9425" import="0">XML/Hokath/ExtraEvents/OffWithTheirHeads.xml</File>
+    <File md5="8D66D8F7E5D36E8350F6EE543DBD3C0A" import="0">XML/Hokath/ExtraEvents/OilExplosion.xml</File>
+    <File md5="07C20DFF6C7E3DED2B8DC44FF3770D1A" import="0">XML/Hokath/ExtraEvents/PETA.xml</File>
+    <File md5="E5E77D5FC1A9448137419618477C0508" import="0">XML/Hokath/ExtraEvents/Pipeline.xml</File>
+    <File md5="63A3C56A5AE24FC7DD9A28EF0D6BEA0B" import="0">XML/Hokath/ExtraEvents/PrizeHide.xml</File>
+    <File md5="848B1E805946CF2985653A3313BFB8C5" import="0">XML/Hokath/ExtraEvents/Renaissance.xml</File>
+    <File md5="41510EDE54D00A9F4417BA82D06CA52E" import="0">XML/Hokath/ExtraEvents/VirusOutbreak.xml</File>
+    <File md5="1E2DBDCE2CF2E542225EFC455A305383" import="0">XML/Hokath/ExtraEvents/WarMaterials.xml</File>
+    <File md5="DE9DE15705FB616B0982DF3793445AF9" import="0">XML/Hokath/IdeologyEvents (Obsolete)/AvantGarde.xml</File>
+    <File md5="4E7398F5210809D986549FFE46BDDC6F" import="0">XML/Hokath/IdeologyEvents (Obsolete)/Communism.xml</File>
+    <File md5="59C955C80416503DD3EC3A2910DAFD73" import="0">XML/Hokath/IdeologyEvents (Obsolete)/CreativeExpression.xml</File>
+    <File md5="977F798B7EFCBD219E859D2A32B8878F" import="0">XML/Hokath/IdeologyEvents (Obsolete)/DoubleAgents.xml</File>
+    <File md5="944031107F1A044D01DAF0F7822AD9A5" import="0">XML/Hokath/IdeologyEvents (Obsolete)/EconomicUnion.xml</File>
+    <File md5="0E51A25A7F8157C7916ACFE75E18592E" import="0">XML/Hokath/IdeologyEvents (Obsolete)/EliteForces.xml</File>
+    <File md5="0280F4BF34CE12904E2D04D286C90F5D" import="0">XML/Hokath/IdeologyEvents (Obsolete)/FreedomDoctrine.xml</File>
+    <File md5="818B1DD960218A3B118648630C5A9DDB" import="0">XML/Hokath/IdeologyEvents (Obsolete)/FreedomPartisansAutocracy.xml</File>
+    <File md5="A582505D70B115373BBA9BE24CDD30D9" import="0">XML/Hokath/IdeologyEvents (Obsolete)/FreedomPartisansOrder.xml</File>
+    <File md5="0EFBD6F8776FA1C57F12426436013CA2" import="0">XML/Hokath/IdeologyEvents (Obsolete)/Futurism.xml</File>
+    <File md5="378AAAA5ABA8568EA4AFE949F904369C" import="0">XML/Hokath/IdeologyEvents (Obsolete)/GreatLeapForward.xml</File>
+    <File md5="9EC62EE9FA7E6FEA362E411764BE1F2F" import="0">XML/Hokath/IdeologyEvents (Obsolete)/GuerillaWarfare.xml</File>
+    <File md5="A41ADD3E559554EB1BD4AE86C969B8D1" import="0">XML/Hokath/IdeologyEvents (Obsolete)/HeroOfThePeople.xml</File>
+    <File md5="85074743EF62914BEF1E84F1002D48C9" import="0">XML/Hokath/IdeologyEvents (Obsolete)/IronFist.xml</File>
+    <File md5="202FBA58436123CF8219ADDE8B67D7AC" import="0">XML/Hokath/IdeologyEvents (Obsolete)/Lebensraum.xml</File>
+    <File md5="B64009EA15195912F4E58C5596B9A4EF" import="0">XML/Hokath/IdeologyEvents (Obsolete)/lol.txt</File>
+    <File md5="7D3092FC91A8F818CCB34677FBC89595" import="0">XML/Hokath/IdeologyEvents (Obsolete)/MilitaryIndustrial.xml</File>
+    <File md5="6782744BD67ADC91EBAE78FD53E99D82" import="0">XML/Hokath/IdeologyEvents (Obsolete)/NewWorldOrder.xml</File>
+    <File md5="629AAB2AB40B42C93527C6F9DB8798E2" import="0">XML/Hokath/IdeologyEvents (Obsolete)/PeaceLandBread.xml</File>
+    <File md5="C014EED08A96A3E54D9BE8D77E92EA90" import="0">XML/Hokath/IdeologyEvents (Obsolete)/PeoplesArmy.xml</File>
+    <File md5="562A70A55D391ECBA4DDB826F5CB4450" import="0">XML/Hokath/IdeologyEvents (Obsolete)/UnitedFront.xml</File>
+    <File md5="698FFC26C9CE6C53B5D95D41E3EFBABA" import="0">XML/Hokath/IdeologyEvents (Obsolete)/UniversalHealthcare.xml</File>
+    <File md5="0710D9B5FEDA2B3B92EB3FF6E3C741BC" import="0">XML/Hokath/IdeologyEvents (Obsolete)/Urbanization.xml</File>
+    <File md5="4219695C4CA6616EA5E49880115E66AC" import="0">XML/Hokath/IdeologyEvents (Obsolete)/VolunteerArmy.xml</File>
+    <File md5="50BE85B5F1FD946B327A9D07745C7918" import="0">XML/Hokath/IdeologyEvents (Obsolete)/WorkersFaculties.xml</File>
+    <File md5="8BB55887577A082D22E12BA186B1E934" import="0">XML/Hokath/NaturalWonderEvents/BarringerCrater.xml</File>
+    <File md5="B30562255428E25886E7B229D02B381E" import="0">XML/Hokath/NaturalWonderEvents/ElDorado.xml</File>
+    <File md5="00D9287EED481D93CE5701BE5250663C" import="0">XML/Hokath/NaturalWonderEvents/FountainOfYouth.xml</File>
+    <File md5="134E00B86AF15010D09C724CDFD73DE6" import="0">XML/Hokath/NaturalWonderEvents/Fuji.xml</File>
+    <File md5="E896FE3032A0A5A2BC119AFE85816677" import="0">XML/Hokath/NaturalWonderEvents/GrandMesa.xml</File>
+    <File md5="C2D73B5794675175E9A258D828986541" import="0">XML/Hokath/NaturalWonderEvents/GreatBarrierReef.xml</File>
+    <File md5="1BEF70527E776615A7F4D007EE9CB1EC" import="0">XML/Hokath/NaturalWonderEvents/Kilimanjaro.xml</File>
+    <File md5="7E9C8C427B9F5EAF9915C948DEF8D2D4" import="0">XML/Hokath/NaturalWonderEvents/Krakatoa.xml</File>
+    <File md5="A7883A8CCB52384CCA113B20C2754123" import="0">XML/Hokath/NaturalWonderEvents/LakeVictoria.xml</File>
+    <File md5="1535428FEF4D80FA7DE1A2C6656AD80E" import="0">XML/Hokath/NaturalWonderEvents/MtKailash.xml</File>
+    <File md5="5BFD85E1C39C3C87F3B751AC24773D5B" import="0">XML/Hokath/NaturalWonderEvents/MtSinai.xml</File>
+    <File md5="42D8322B8E3A73ED0D90C0A634C925C2" import="0">XML/Hokath/NaturalWonderEvents/OldFaithful.xml</File>
+    <File md5="CF14D8EC58B8B12DAE437B8B09D96083" import="0">XML/Hokath/NaturalWonderEvents/Potosi.xml</File>
+    <File md5="B491609BFE09FA66C48EE4850E3E4AE6" import="0">XML/Hokath/NaturalWonderEvents/RockOfGibraltar.xml</File>
+    <File md5="EF63973C1BCDD730F8711823919DC244" import="0">XML/Hokath/NaturalWonderEvents/SolomonsMines.xml</File>
+    <File md5="027A19C5B2BC04FAC1C68045C05DCA42" import="0">XML/Hokath/NaturalWonderEvents/SriPada.xml</File>
+    <File md5="154EA3B64490F61659C45C990A7D0671" import="0">XML/Hokath/NaturalWonderEvents/Uluru.xml</File>
+    <File md5="F506625088DEB6F72E0B6A48845DD074" import="0">XML/Hokath/ReligiousEvents/ApostolicTradition.xml</File>
+    <File md5="B122EA3CEE0EA6F3D704C950299C55ED" import="0">XML/Hokath/ReligiousEvents/CeremonialBurial.xml</File>
+    <File md5="244435791C2A470024C8CB26D666E5B0" import="0">XML/Hokath/ReligiousEvents/CouncilOfElders.xml</File>
+    <File md5="99DF2B4C8A48F2CB6F28F79C0C2455E4" import="0">XML/Hokath/ReligiousEvents/HeroWorship.xml</File>
+    <File md5="33E3337F6FF5D756BAEAB69727888118" import="0">XML/Hokath/ReligiousEvents/HolyLaw.xml</File>
+    <File md5="67869975D9755CE827FFC909A045CBE1" import="0">XML/Hokath/ReligiousEvents/MandateOfHeaven.xml</File>
+    <File md5="9FF511047244D71BAB56984D97ABF5C2" import="0">XML/Hokath/ReligiousEvents/ReligiousCompatibility.sql</File>
+    <File md5="455D38E28818AE87A363D0802721FDE1" import="0">XML/Hokath/ReligiousEvents/TheocraticRule.xml</File>
+    <File md5="C38D1D5FCDED84CDE5F22A947E7BC114" import="0">XML/Hokath/ReligiousEvents/WayOfThePilgrim.xml</File>
+    <File md5="FA190144AF67F49322F5A2BE510E254B" import="0">XML/Hokath/ReligiousEvents/WayOfTranscendance.xml</File>
+    <File md5="C748F2C45D05EA78EF34ABB81CBF1306" import="0">XML/Xony/MiscellaneousEvents.xml</File>
+    <File md5="96AE9DACB2D7A4B0D21D5011D54C6ADC" import="0">XML/Xony/ResearchRCSD (Obsolete).xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Developmental.sql</UpdateDatabase>
+      <UpdateDatabase>Audio/AudioDefines.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Anatase/MiscellaneousEvents.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Enginseer/AncientEvents.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/America.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Arabia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Assyria.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Austria.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Aztec.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Babylon.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Brazil.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Byzantium.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Carthage.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Celts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/China.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Denmark.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Egypt.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/England.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Ethiopia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/France.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Germany.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Greece.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Huns.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Inca.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/India.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Indonesia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Iroquois.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Japan.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Korea.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Maya.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Mongolia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Morocco.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Netherlands.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Ottoman.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Persia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Poland.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Polynesia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Portugal.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Rome.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Russia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Shoshone.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Siam.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Songhai.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Spain.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Sweden.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Venice.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/Zulu.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/BarringerCrater.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/ElDorado.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/FountainOfYouth.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/Fuji.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/GrandMesa.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/GreatBarrierReef.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/Kilimanjaro.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/Krakatoa.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/LakeVictoria.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/MtKailash.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/SolomonsMines.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/MtSinai.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/OldFaithful.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/RockOfGibraltar.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/Potosi.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/SriPada.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/NaturalWonderEvents/Uluru.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/WarMaterials.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/Motaba.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/VirusOutbreak.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/GunpowderPlot.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/NotoriousPirate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/ContrabandSmugglers.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/FakePainting.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/Pipeline.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/OilExplosion.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/PETA.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/PrizeHide.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/FirstSummit.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/Musketeers.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/ApostolicTradition.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/CeremonialBurial.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/CouncilOfElders.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/HeroWorship.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/HolyLaw.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/MandateOfHeaven.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/WayOfThePilgrim.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/WayOfTranscendance.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/TheocraticRule.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ReligiousEvents/ReligiousCompatibility.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Enginseer/BarbarianHorde.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Enginseer/MedievalEvents.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Xony/MiscellaneousEvents.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/ColdFront.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/Dissolution.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/OffWithTheirHeads.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/ExtraEvents/Renaissance.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CivilizationEvents/MutuallyExclusive.sql</UpdateDatabase>
+      <UpdateDatabase>AudioThings.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Enginseer/BOGO.xml</UpdateDatabase>
+      <UpdateDatabase>LUA/demcivcompatibilityfile.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/CorporationAtlas.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Extractors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Firaxite.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Giorgio.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Hexxon.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Jewelers.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Mall.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/TraderSids.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Twokay.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Hokath/CorporationEvents/Wonder_WTC.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/EventLUA.lua">
+      <Name>EventLUA</Name>
+      <Description>LUA purposes.</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/CompatibilityFile.lua">
+      <Name>TOTALLY</Name>
+      <Description>THE SAME THING</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

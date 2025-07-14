@@ -1,0 +1,250 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<RandomChance>30</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_TRADING_POST</ImprovementRequired>
+			<CityEventArt>advisoreconomic.dds</CityEventArt>
+			<CityEventAudio>AS2D_EVENT_EECONOMIC</CityEventAudio>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_BANK</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_MONASTERY</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_PUBLIC_SCHOOL</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_4</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_MUSEUM</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_5</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_5</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_FACTORY</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_6</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_6</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredBuildingClass>BUILDINGCLASS_STOCKYARD</RequiredBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_ImprovementYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_ImprovementYieldChange>
+	<CityEventChoice_EventCostYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+	</CityEventChoice_EventCostYield>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_5</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_ECONOMIC_CITY_TRADE_CHOICE_6</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION">
+			<Text>A Poverty Of Aspiration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP">
+			<Text>In the Villages surrounding the City, the people lead simple, isolated lives. Our people were destined for more than this! Who knows how many great minds have been wasted just because they weren't born in the City? What could have been achieved!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_1">
+			<Text>Fund a business scheme for {1_YieldCost}. Nearby Villages generate +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>If we are to grow the economy, we need everyone involved.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_2">
+			<Text>Fund a rural mission for {1_YieldCost}. Nearby Villages generate +2 [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>Some men go their whole lives without truely finding faith. We cannot allow people to slip through our fingers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_3">
+			<Text>Fund a scientific outreach program for {1_YieldCost}. Nearby Villages generate +2 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>We are all of us, on some level, intrigued my the mechanisms of this universe.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_4">
+			<Text>Fund national heritage sites for {1_YieldCost}. Nearby Villages generate +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_4">
+			<Text>There is so much culture outside of the City walls, and the townspeople know the most about our undocumented past.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_5">
+			<Text>Fund an engineering outreach program for {1_YieldCost}. Nearby Villages generate +2 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_5">
+			<Text>The machines we can now create benefit manual, cottage industry more than any other. People should be part of their economic liberation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_HELP_CHOICE_6">
+			<Text>Fund forestry training for {1_YieldCost}. Nearby Villages generate +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_ECONOMIC_CITY_TRADE_DESCRIPTION_CHOICE_6">
+			<Text>With modern chemical technology the ignorance of a few farmers could starve a whole Town, we need to educate people about ecology.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

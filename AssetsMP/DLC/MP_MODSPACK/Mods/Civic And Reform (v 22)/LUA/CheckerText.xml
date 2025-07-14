@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_en_US>
+    <Row Tag="TXT_KEY_TEST_MENU_BUTTON_OK">
+      <Text>Close</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_MENU_BUTTON_OK_TT">
+      <Text>Click to dismiss the popup.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_GOVERNMENT_BUTTON_OK">
+      <Text>Government</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_GOVERNMENT_BUTTON_OK_TT">
+      <Text>[ICON_BULLET]Despotism: {1}[NEWLINE][ICON_BULLET]Hereditary Rule: {2}[NEWLINE][ICON_BULLET]Confederation: {3}[NEWLINE][ICON_BULLET]Patronage: {4}[NEWLINE][ICON_BULLET]Representation: {5}[NEWLINE][ICON_BULLET]Totalitarianism: {6}[NEWLINE][ICON_BULLET]National Suffrage: {7}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_LEGAL_BUTTON_OK">
+      <Text>Legal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_LEGAL_BUTTON_OK_TT">
+      <Text>[ICON_BULLET]Anarchism: {1}[NEWLINE][ICON_BULLET]Codified Law: {2}[NEWLINE][ICON_BULLET]Feudalism: {3}[NEWLINE][ICON_BULLET]Bureaucracy: {4}[NEWLINE][ICON_BULLET]Nationhood: {5}[NEWLINE][ICON_BULLET]Free Speech: {6}[NEWLINE][ICON_BULLET]Constutionalism: {7}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_LABOR_BUTTON_OK">
+      <Text>Labor</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_LABOR_BUTTON_OK_TT">
+      <Text>[ICON_BULLET]Tribalism: {1}[NEWLINE][ICON_BULLET]Slavery: {2}[NEWLINE][ICON_BULLET]Manorialism: {3}[NEWLINE][ICON_BULLET]Caste System: {4}[NEWLINE][ICON_BULLET]Industrial Servitude: {5}[NEWLINE][ICON_BULLET]Unionism: {6}[NEWLINE][ICON_BULLET]Emancipation: {7}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_ECONOMY_BUTTON_OK">
+      <Text>Economy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_ECONOMY_BUTTON_OK_TT">
+      <Text>[ICON_BULLET]Bartering: {1}[NEWLINE][ICON_BULLET]Decentralization: {2}[NEWLINE][ICON_BULLET]Commercialism: {3}[NEWLINE][ICON_BULLET]Free Market: {4}[NEWLINE][ICON_BULLET]State Property: {5}[NEWLINE][ICON_BULLET]Corporatism: {6}[NEWLINE][ICON_BULLET]Environmentalism: {7}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_RELIGION_BUTTON_OK">
+      <Text>Religion</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_RELIGION_BUTTON_OK_TT">
+      <Text>[ICON_BULLET]Paganism: {1}[NEWLINE][ICON_BULLET]Ancestor Veneration: {2}[NEWLINE][ICON_BULLET]Organized Faith: {3}[NEWLINE][ICON_BULLET]Theocracy: {4}[NEWLINE][ICON_BULLET]Pacifism: {5}[NEWLINE][ICON_BULLET]Celebrity Worship: {6}[NEWLINE][ICON_BULLET]Free Religion: {7}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_IS_THERE_SOMETHING_YOU_NEED">
+      <Text>Greetings {1_Name}, is there something you need?[NEWLINE][NEWLINE]{2_EconomyWise}[NEWLINE][NEWLINE]{3_HappinessWise}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_IS_THERE_SOMETHING_YOU_NEED1">
+      <Text>Greetings {1_Name}.[NEWLINE]Here are the reports of our vassals. We can indirectly influence how they choose their civics by taxing them, but we should beware of the likelihood for them to revolt if that is even such a thing.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_IS_THERE_SOMETHING_YOU_NEED2">
+      <Text>Greetings {1_Name}.[NEWLINE]We have an accurate information due to their willingness to share their government functions with us. We can increase our friendliness with them by having the same type of civics as them, but we should be wary whenever our own infrastructure can handle it.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_IS_THERE_SOMETHING_YOU_NEED3">
+      <Text>Greetings {1_Name}.[NEWLINE]Our Embassy at their [ICON_CAPITAL] Capital can make a somewhat-accurate report in what their government looks like. We could be more accurate if we had a [ICON_DIPLOMAT] Diplomat stationed or signed a [ICON_FLOWER] Declaration of Friendship with them.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_IS_THERE_SOMETHING_YOU_NEED4">
+      <Text>It seems we have little information on their political form of governing. Spies do very little in securing any accurate retainable information. Perhaps, we can establish an embassy in their [ICON_CAPITAL] Capital? We can probably assume what their civics are like if we share our similar taste in civic form.. but other than that. We're going have to guess a lot on things.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_ARENTYOU">
+      <Text>Oh my. Are you hiding a banana in your pant or are you just glad to see me?[NEWLINE][NEWLINE]You shouldn't be seeing this. Report this to the developer with what civilization you are seeing at.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_BASED_TOTAL_DEFAULT">
+      <Text>[ICON_GOLD][ICON_GOLD][ICON_GOLD]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_BASED_TOTAL">
+      <Text>Total (-{1_CivicKeep}[ICON_GOLD])</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_MENU_CIVIC_TITLE">
+      <Text>Civics of Other Civilizations</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TEST_MENU_CIVIC_CHOOSE">
+      <Text>Select to View</Text>
+    </Row>
+	<Row Tag="TXT_KEY_CIVIC_OVERVIEW">
+		<Text>Civic Overview</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_LOOKAT">
+		<Text>{1_CivicName} (-{2_CivicKeep}[ICON_GOLD])</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_1">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Hereditary Rule[ENDCOLOR] can mitigate the production cost of wonders and grants happiness through garrisons.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_2">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Representation[ENDCOLOR] works well in urban cities as the specialization can help progress the nation much quicker!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_3">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Totalitarianism[ENDCOLOR] might be necessary to ensure order and constant obedience from the local populace.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_4">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]National Suffrage[ENDCOLOR] may be useful in cities with many Great People Improvements and villages.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_5">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Patronage[ENDCOLOR] synergizes well in obtaining city-state alliances.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_6">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Codified Law[ENDCOLOR] can help with border growth significantly in the early game.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_7">
+		<Text>Tip: Stay hydrated!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_8">
+		<Text>Tip: In war, a fool's first lesson is his last.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_9">
+		<Text>Tip: You may want to review some of the civics best suited to you as you advance through the eras.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_10">
+		<Text>Tip: The default civics will not cause a revolution in your cities, try it!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_11">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Feudalism[ENDCOLOR] may be effective when in need of experienced units and leadership.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_12">
+		<Text>Tip: Civics with [COLOR_POSITIVE_TEXT]High Upkeep[ENDCOLOR] will increase your base building maintenance from 16%-20%!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_13">
+		<Text>Tip: Civics with [COLOR_POSITIVE_TEXT]Medium Upkeep[ENDCOLOR] will increase your base building maintenance from 11%-15%!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_14">
+		<Text>Tip: Civics with [COLOR_POSITIVE_TEXT]Low Upkeep[ENDCOLOR] will increase your base building maintenance from 5%-10%!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_15">
+		<Text>Tip: Civics with [COLOR_POSITIVE_TEXT]No Upkeep[ENDCOLOR] won't increase your building maintenance at all. Now that's efficiency!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_16">
+		<Text>Tip: Civic and Reform is always evolving, but it can evolve faster with your help. Post reports and suggestions!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_17">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Bureaucracy[ENDCOLOR] may be inefficient and expanding, but it is expanding to meet the need of the bureaucracy!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_18">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Nationhood[ENDCOLOR] is perfect for civilizations who prefer espionage.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_19">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Free Speech[ENDCOLOR] is ultimately the best for protecting against the propaganda of the enemies!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_20">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Slavery[ENDCOLOR] may be considered immoral, but production is production.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_21">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Manorialism[ENDCOLOR] may be for those who prefer more out of the farms and growing!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_22">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Celebrity Worship[ENDCOLOR] may be powerful to establish a strong cultural defense!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_23">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Commercialism[ENDCOLOR] can help civilizations who prefer trading with themselves.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_24">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Environmentalism[ENDCOLOR] can aid in a cultural victory and help improve the unclaimed wilderness.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_25">
+		<Text>Tip: Salt may be the preferred human satisfaction, but there are more to things in life than salt.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_26">
+		<Text>Tip: If you're an avid crusader, [COLOR_POSITIVE_TEXT]Theocracy[ENDCOLOR] may be perfect for you.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_27">
+		<Text>Tip: Be wary of gold maintenance, maximize your merchants and you can have efficiency in maintaining your infrastructure!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_28">
+		<Text>Tip: Are your cities heavily religious and devoted? An [COLOR_POSITIVE_TEXT]Organized Faith[ENDCOLOR] can be of great use!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_29">
+		<Text>Tip: Switching to civics with higher upkeep tend to have less chances of revolution!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_30">
+		<Text>Tip: People tend to be a little more unhappy due to different government types being more acceptable. Be diverse in your civic selection!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_31">
+		<Text>Tip: Sharing civics with higher upkeeps tend to have a higher diplomatic likening.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_32">
+		<Text>Tip: Never starve your people. If you can't stop the insane growth, you can ask the governor to avoid growth for you.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_33">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]State Property[ENDCOLOR] works well to defund those corporations to produce food and hammers for the people!</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_34">
+		<Text>Tip: Having an open-mind to [COLOR_POSITIVE_TEXT]Free Religion[ENDCOLOR] somehow leads to philosophical thoughts.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_35">
+		<Text>Tip: Sometime you can predict what other leaders are going for based on what civics they are pursuing.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_36">
+		<Text>Tip: When building roads, keep in mind about military manueverment as well.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_37">
+		<Text>Tip: It's okay if foreign leaders give you less compensation than expected. You'll be compensated in the relationship instead.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_38">
+		<Text>Tip: Take control of your cities more if you have to. The city governors can never be trusted with efficiency.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_39">
+		<Text>Tip: The pen is mightier than the sword. Use diplomacy when force does not warrant the situation.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_40">
+		<Text>Tip: If you chase two rabbits, you will lose them both.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_41">
+		<Text>Tip: The wisest men follow their own direction.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_42">
+		<Text>Tip: One doesn't discover new lands without losing sight of the shore.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_43">
+		<Text>Tip: There is no wealth like knowledge, no poverty like ignorance.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_44">
+		<Text>Tip: The whole is more than the sum of its parts.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_45">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Confederation[ENDCOLOR] helps grant your cities greater economic independence at a cost of happiness issues.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_46">
+		<Text>Tip: For nations who rely on golden ages, [COLOR_POSITIVE_TEXT]Constutionalism[ENDCOLOR] can truly turn a nation great.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_47">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Unionism[ENDCOLOR] is perhaps powerful for developing cities through guilds.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_48">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Decentralization[ENDCOLOR] can be preferred if you have a small need for infrastructure.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_49">
+		<Text>Tip: [COLOR_POSITIVE_TEXT]Ancestor Veneration[ENDCOLOR] may be powerful earlier when sources of faith are limited.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_CIVIC_TIP_50">
+		<Text>Tip: It doesn't matter what your political beliefs are. You choose what is the best for your people.</Text>
+	</Row>
+  </Language_en_US>
+</GameData>

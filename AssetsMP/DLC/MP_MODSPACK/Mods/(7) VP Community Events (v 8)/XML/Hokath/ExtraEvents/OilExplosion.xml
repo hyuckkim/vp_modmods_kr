@@ -1,0 +1,76 @@
+<GameData>
+	<!-- Pipeline Explosion -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_OIL_EXPLOSION</Type>
+			<Description>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<NumChoices>1</NumChoices>
+			<RandomChance>60</RandomChance>
+			<ImprovementRequired>IMPROVEMENT_WELL</ImprovementRequired>
+			<RandomChanceDelta>5</RandomChanceDelta>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_OIL_EXPLOSION</CityEventType>
+			<EventChoice>EVENT_PIPELINE_CHOICE_2</EventChoice>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+			<CheckForActive>true</CheckForActive>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP_CHOICE_1</Help>
+		</Row>
+	</CityEventChoices>
+	<CityEventChoice_ImprovementDestructionRandom>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
+			<Number>1</Number>
+		</Row>
+	</CityEventChoice_ImprovementDestructionRandom>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_OIL_EXPLOSION</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_Notification>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_OIL_EXPLOSION_CHOICE_1</CityEventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</CityEventChoice_Notification>
+	
+	<!-- Text  -->
+	<!-- Pipeline Explosion -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1_S">
+			<Text>The City of {2_CityName}'s Oil Wells have malfunctioned.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_OIL_EXPLOSION_CHOICE_1">
+			<Text>An Oil Well has exploded!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION">
+			<Text>Up In Flames</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP">
+			<Text>An [ICON_RES_OIL] Oil Well is destroyed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_HELP_CHOICE_1">
+			<Text>An [ICON_RES_OIL] Oil Well is destroyed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_OIL_EXPLOSION_DESCRIPTION_CHOICE_1">
+			<Text>Up In Flames</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,171 @@
+<GameData>
+	<!-- War Materials -->
+	<Events>
+		<Row>
+			<Type>EVENT_WAR_MATERIALS</Type>
+			<Description>TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_WAR_MATERIALS_HELP</Help>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<NumChoices>4</NumChoices>
+			<RandomChance>45</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_PHILANTHROPY</RequiredPolicy>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_WAR_MATERIALS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_1</Help>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BANK</RequiredAnywhereBuildingClass>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_WAR_MATERIALS_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_3</Description>
+		</Row>
+		<Row>
+			<Type>EVENT_WAR_MATERIALS_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_4</Description>
+			<EventPromotion>PROMOTION_AMBUSH_1</EventPromotion>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_WAR_MATERIALS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_WAR_MATERIALS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_WAR_MATERIALS</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_1</EventChoiceType>
+			<UnitClassType>UNITCLASS_ENVOY</UnitClassType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CHANCERY</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<!--
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_WAR_MATERIALS_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	-->
+	<!-- Text -->
+	<!-- War Materials -->
+	<Language_en_US>
+		<!--
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1_S">
+			<Text>{1_Playername} discovered an arms smuggling operation!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_1">
+			<Text>{1_Playername} raided an arms shipment of [ICON_RES_IRON] Iron passing through their territory. In other news, a fire has left dozens dead at a recent political summet.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2_S">
+			<Text>{1_Playername} recruits financial experts from a City State!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_2">
+			<Text>{1_Playername} has secured backing from a well placed political faction.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3_S">
+			<Text>{1_Playername} moves againt organised-crime syndicates.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_3">
+			<Text>Rumours suggest that {1_Playername} has more knowledge about goings on within their Empire than first thought!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4_S">
+			<Text>{1_Playername} displays heightened levels of military intelligence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_WAR_MATERIALS_CHOICE_4">
+			<Text>Rumours suggest that {1_Playername} has more knowledge about other Empires' military movements than they should!</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION">
+			<Text>War Materials</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP">
+			<Text>Our agents have estabilished comprehensive links within a dissident City-State faction. They have leaked us intelligence of an arms smuggling operation occuring in our territory at this very moment![NEWLINE][NEWLINE]How should we act on this?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_1">
+			<Text>Gain three Envoy near the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_3">
+			<Text>Your Chanceries increase [ICON_GOLD] Gold production in cities by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_HELP_CHOICE_4">
+			<Text>Your eligible Military Units gain the Ambush I promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_1">
+			<Text>Our contacts must be desperate. Under the guise of recruiting financial experts, send our Foreign Advisor to negotiate for their remaining political links.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_3">
+			<Text>Small arms deals do not interest me. However, the extent of this infiltration is astouding. Exfiltrate these agents and give them their own agency. Let's call it CI:5.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_WAR_MATERIALS_DESCRIPTION_CHOICE_4">
+			<Text>Small arms deals do not interest me. However, the field skills detailed in this report are second to none. Exfiltrate these agents and send them to the new military intelligence branch, CI:6.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

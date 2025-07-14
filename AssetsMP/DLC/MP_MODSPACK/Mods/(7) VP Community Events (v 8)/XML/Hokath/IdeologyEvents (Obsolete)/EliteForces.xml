@@ -1,0 +1,190 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_ELITE_FORCES</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_ELITE_FORCES</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_1</Help>
+			<EventDuration>10</EventDuration>
+			<Expires>false</Expires>
+			<EraScaling>true</EraScaling>
+			<EventPromotion>PROMOTION_SHOCK_2</EventPromotion>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY_2</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_ELITE_FORCES</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_ELITE_FORCES</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_ELITE_FORCES</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY</Type>
+			<DefaultBuilding>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+		<Row>
+			<Type>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_IDEOLOGY_ELITE_FORCES_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>			
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+	</Buildings>
+	<Building_YieldFromUnitLevelUp>
+		<Row>
+			<BuildingType>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>8</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldFromUnitLevelUp>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_ELITE_FORCES_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION">
+			<Text>Stormtroopers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP">
+			<Text>Our Elite Forces have received their new outfits. Very snazzy. But some black leather and shiny boots do not an ultimate military deathsquad make. Now we have everything in place, we need to decide the precise protocol regarding their use.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_1">
+			<Text>Invest {1_YieldCost} in additional training. All eligible units, as well as those produced in the next {4_Turns}, receive the Shock II promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_2">
+			<Text>Invest {1_YieldCost} in additional training. When a Unit levels up, they generate [ICON_CULTURE] Culture in their City of origin.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_HELP_CHOICE_3">
+			<Text>Invest {1_YieldCost} in additional training. When a Unit levels up, they generate [ICON_PRODUCTION] Production in their City of origin.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_1">
+			<Text>Well it's simple. We train our solider to be the most terrifying shock troops the world has ever seen, and then when battle is joined we rout our enemies with brutal efficiency.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_2">
+			<Text>This is about finesse. This is about being able to dissect an enenmy force with cold, unfeeling competance. Our solider should be used to perform acts that spread terror, that project our power across the globe.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_ELITE_FORCES_DESCRIPTION_CHOICE_3">
+			<Text>We want the best possible outcome from every engagement. That means minimal waste. Every weapon the enemy leaves behind, every schematic their fail to destroy, needs to be returned home to continue fueling our war effort.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY">
+			<Text>Cultured Troopers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_HELP">
+			<Text>+8 [ICON_CULTURE] Culture scaling upon era when a unit of the city origin receive a promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2">
+			<Text>Scavenged Troopers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_ELITE_FORCES_DUMMY_2_HELP">
+			<Text>+10 [ICON_PRODUCTION] Production scaling upon era when a unit of the city origin receives a promotion.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
+
+
+
+
+
+
+

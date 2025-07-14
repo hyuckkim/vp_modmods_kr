@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE">
+			<Text>XCOM 개시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_XCOM_INITIATIVE_SPLASH">			
+			<Text>외계인과 다른 외부 위협으로부터 잠재적인 위협을 인식하고, XCOM 계획은 알려진, 그리고 알려지지 않은 적들로부터 대중들을 보호하기 위해 만들어졌습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1">
+			<Text>회원 멤버</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1_HELP">
+			<Text>XCOM 분대 훈련이 가능해집니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2">
+			<Text>창립 멤버</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2_HELP">
+			<Text>XCOM 1개 분대를 받습니다. [ICON_HAPPINESS_1] 행복이 +5 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3">
+			<Text>창안자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3_HELP">
+			<Text>XCOM 본부 불가사의가 [ICON_CAPITAL]수도에 출현합니다. (모든 도시에 무료로 전략 방어 시스템을 제공합니다.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_XCOM_INITIATIVE">
+			<Text>XCOM 개시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_XCOM_INITIATIVE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]XCOM 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_XCOM_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]레이저[ENDCOLOR]를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE">
+			<Text>XCOM 개시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION] 생산을 XCOM 프로젝트에 사용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS">
+			<Text>XCOM 본부</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"두 가지 가능성이 있다. 우주에 우리만 존재하거나 그렇지 않거나. 둘 다 똑같이 끔찍하다."[NEWLINE] - 아서 C. 클라크[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_HEADQUARTERS_HELP">
+			<Text>세계 의회를 통해 협력적으로만 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_XCOM_HEADQUARTERS_TEXT">
+			<Text>XCOM 본부는 XCOM 프로젝트의 주요 작전입니다. 원래는 위험한 상황에서 통신과 질서를 확립하기 위해 만들어졌지만, 세계의 평화를 유지하기 위한 세계적인 작전으로서 발전해 왔습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_MILITARY_SECRET">
+			<Text>XCOM 승인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_XCOM_MILITARY_SECRET_HELP">
+			<Text>XCOM 분대가 해금됩니다! 오직 세계 의회를 통해서만 받을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_XCOM_MILITARY_SECRET_TEXT">
+			<Text>XCOM 계획에 자금을 지원한 이들에게, 사람들에게 알려진 최고 정예 부대 중 하나에 접근할 수 있는 보상을 받습니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

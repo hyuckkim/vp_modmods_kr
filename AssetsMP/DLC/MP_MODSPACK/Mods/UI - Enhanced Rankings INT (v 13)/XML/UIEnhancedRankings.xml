@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_RANKINGS_DIPLO_CORNER_HOOK" >
+			<Text>문명 순위</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RANKINGS_DIPLO_CORNER_HOOK_TT" >
+			<Text>순위 유형: 종합 점수, [ICON_FOOD] 식량 생산, [ICON_PRODUCTION] 생산력, 총 [ICON_GOLD] 골드, 턴 당 [ICON_GOLD] 골드, 알려진 기술 수, 턴 당 [ICON_RESEARCH] 과학, 활성화된 사회 정책 수, 턴 당 [ICON_CULTURE] 문화, 국가의 [ICON_HAPPINESS_1] 행복, 건설된 불가사의 수, 군사력.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_NEXT">
+			<Text>다음</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_PREV">
+			<Text>이전</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_OVERALL" >
+			<Text>종합 점수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_OVERALL_TT" >
+			<Text>플레이어의 종합 점수를 기준으로 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_GPT" >
+			<Text>턴 당 새로운 반짝임</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_GPT_TT" >
+			<Text>턴 당 [ICON_GOLD] 골드 획득량에 따라 플레이어의 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_SPT" >
+			<Text>턴 당 점화된 분젠 버너</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_SPT_TT" >
+			<Text>턴 당 [ICON_RESEARCH] 과학의 양에 따라 플레이어의 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_CPT" >
+			<Text>턴 당 판매된 DVD 수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_CPT_TT" >
+			<Text>턴 당 [ICON_CULTURE] 문화 획득량에 따라 플레이어의 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_FAITH">
+			<Text>세계에서 가장 종교적인 사람들</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_FAITH_TT">
+			<Text>플레이어가 창시한 종교를 따르는 도시의 수에 따라 플레이어의 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_FPT" >
+			<Text>턴 당 기도 횟수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_FPT_TT" >
+			<Text>플레이어의 턴 당 [ICON_PEACE] 신앙의 양을 기준으로 순위를 매깁니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_TPT" >
+			<Text>턴 당 사진 수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROGRESS_SCREEN_TPT_TT" >
+			<Text>턴 당 [ICON_TOURISM] 관광의 양에 따라 플레이어의 순위를 매깁니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DUDE_A" >
+			<Text>웨일스 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_B" >
+			<Text>보디 밤사가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_C" >
+			<Text>폴란드 왕과 왕자들의 연대기 또는 원본이 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_D" >
+			<Text>디오클레누스 사제의 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_E" >
+			<Text>크로이랜드 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_F" >
+			<Text>프로아사르의 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_G" >
+			<Text>사도들과 왕들의 역사가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_H" >
+			<Text>데일 켄트가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_I" >
+			<Text>얀스 더 에니켈이 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_J" >
+			<Text>황제 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_K" >
+			<Text>레트렌스 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_L" >
+			<Text>나보니도스의 연대기가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_M" >
+			<Text>푸라나가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_N" >
+			<Text>라자타란기니가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_O" >
+			<Text>삼국지가 편찬되었습니다:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUDE_P" >
+			<Text>스위스 그림 연대기가 편찬되었습니다:</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

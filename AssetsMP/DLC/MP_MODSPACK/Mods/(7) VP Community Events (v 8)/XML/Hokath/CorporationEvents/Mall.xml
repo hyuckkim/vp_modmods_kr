@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_EVENTS_MALL</Type>
+			<DefaultBuilding>BUILDING_EVENTS_MALL</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_EVENTS_MALL</Type>
+			<BuildingClass>BUILDINGCLASS_EVENTS_MALL</BuildingClass>
+			<Cost>1800</Cost>
+			<GoldMaintenance>8</GoldMaintenance>
+			<PrereqTech>TECH_CORPORATIONS</PrereqTech>
+			<Description>TXT_KEY_BUILDING_EVENTS_MALL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_EVENTS_MALL_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_EVENTS_MALL_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_EVENTS_MALL_HELP</Help>
+			<ArtDefineTag>ART_DEF_BUILDING_GARDEN</ArtDefineTag>
+			<ConquestProb>66</ConquestProb>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>MALL_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<GoldMedianModifier>10</GoldMedianModifier>
+			<TradeRouteRecipientBonus>2</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
+		</Row>
+	</Buildings>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GROCER</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_BuildingClassLocalYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_FIRAXITE_MATERIALS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TRADER_SIDS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HEXXON_REFINERY_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CIVILIZED_JEWELERS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_FIRAXITE_MATERIALS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TRADER_SIDS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HEXXON_REFINERY_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GIORGIO_ARMEIER_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TWOKAY_FOODS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EVENTS_MALL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CIVILIZED_JEWELERS_FRANCHISE</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Building_BuildingClassLocalYieldChanges>
+
+	<Language_en_US>
+		<!--New Coporation Building-->
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL">
+			<Text>Shopping Mall</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_HELP">
+			<Text>
+				Increases [ICON_HAPPINESS_3] Poverty slightly. [ICON_INTERNATIONAL_TRADE] Trade Routes to this City generate +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]All Corporate Franchises in this City generate +5 [ICON_GOLD] Gold and +2 [ICON_TOURISM] Tourism.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_STRATEGY">
+			<Text>The Mall interacts with Corporations and the Trade Route subsystem on which they rely. In an appropriate City, it generates Gold and Tourism. However, the Mall also increases Poverty remaining fairly netural to the Needs of the City. Afterall, money can't buy you happiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_EVENTS_MALL_TEXT">
+			<Text>
+				[SPACE]During the 20th century, the advent of the automobile has created an urban and suburban landscape in which people live in one area but can shop, play and work elsewhere - often miles away from their homes. Nowhere is this more true than in the United States of America, whose citizens are noted for an almost fanatical devotion to their cars. This has had important social, environmental and economic affects upon life in America, leading to (among other things) the creation of that most American of institution - the shopping mall.[NEWLINE]
+[NEWLINE]American shopping malls are surrounded by acres and acres of parking lots, and they may contain dozens (if not hundreds) of stores selling everything from clothing to jewelry to electronics to books to computers to videos. In some ways American shopping malls are akin in spirit to the old Arabian markets (although Americans don't particularly enjoy haggling and prices are generally fixed).[NEWLINE]
+[NEWLINE]The earliest automobile-centered shopping center was the "Market Square," opened in Chicago, Illinois, in 1916. Constructed in Minnesota in 1992, the "Mall of America" is the largest mall in the world. It contains over 500 shops, 80 restaurants, a theme park, hotel, and movie theatres. It is housed in a building large enough to hold over 30 Boeing 747 airplanes.
+			</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>EVENT_MALL_EVENT</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP</Help>
+			<NumChoices>5</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_EVENTS_MALL</RequiredAnywhereBuildingClass>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_MALL_EVENT_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_1</Help>
+		</Row>
+		<Row>
+			<Type>EVENT_MALL_EVENT_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_2</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredPolicy>POLICY_COMMERCE_FINISHER</RequiredPolicy>
+		</Row>
+		<Row>
+			<Type>EVENT_MALL_EVENT_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredIdeology>POLICY_BRANCH_ORDER</RequiredIdeology>
+		</Row>
+		<Row>
+			<Type>EVENT_MALL_EVENT_CHOICE_4</Type>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_4</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredIdeology>POLICY_BRANCH_FREEDOM</RequiredIdeology>
+			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_MALL_EVENT_CHOICE_5</Type>
+			<Description>TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_5</Description>
+			<Help>TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_5</Help>
+			<EventDuration>-1</EventDuration>
+			<RequiredIdeology>POLICY_BRANCH_AUTOCRACY</RequiredIdeology>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_MALL_EVENT</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_MALL_EVENT</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_MALL_EVENT</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_MALL_EVENT</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_MALL_EVENT</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_CIVIL_SERVANT</SpecialistType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_EVENTS_MALL</BuildingClassType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_MALL_EVENT_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION">
+			<Text>Shop 'Til You Drop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP">
+			<Text>The advent of consumer culture poses a difficult question to us, ideologocially. Do we engage with the increased quality of life, of sieze state control?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_1">
+			<Text>Villages +1 [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_CULTURE] Culture. Towns gain +2.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_2">
+			<Text>[ICON_GREAT_MERCHANT] Merchants generate +1 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_3">
+			<Text>Shopping Malls reduce -2 [ICON_RESEARCH] Science. Manufactories gain +4 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_4">
+			<Text>Shopping Malls boost +3 [ICON_CULTURE] Culture. However [ICON_STRENGTH] Crime and [ICON_GOLD] Poverty thresholds increase by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_HELP_CHOICE_5">
+			<Text>Shopping Malls reduce -2 [ICON_TOURISM] Tourism. [ICON_DIPLOMAT] Civil Servants generate +2 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_1">
+			<Text>Our advancement as a nation yields benefits for all. My benevolance manifests!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_2">
+			<Text>With a larger internal market in which to sell goods, our Merchants will become yet more profitable!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_3">
+			<Text>We have no need of 'innovation'. All our citizens shall have the same 'choice' of goods, leaving our Manufactories free to produce other things...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_4">
+			<Text>People should be free to buy whatever they want! And if they can't afford it? Well that's not very free, is it! Let's give everyone credit cards and then they can keep shopping! HURRAY!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MALL_EVENT_DESCRIPTION_CHOICE_5">
+			<Text>National industry for national socialists. Foreign companies are just another vehicle for the international conspiracy against this great and noble people.[NEWLINE]...[NEWLINE]If they're already here? Well confiscate their stuff, of course!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

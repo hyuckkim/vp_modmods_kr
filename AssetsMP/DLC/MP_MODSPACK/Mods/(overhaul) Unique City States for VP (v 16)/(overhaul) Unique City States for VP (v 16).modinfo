@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" version="16">
+  <Properties>
+    <Name>(overhaul) Unique City States for VP</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Inspired by Civilization 6's Suzerain concept, this mod intends to bring that concept into Civilization V.</Teaser>
+    <Description>Inspired by Civilization 6's Suzerain concept, this mod intends to bring that concept into Vox Populi allowing City-States to feel unique when forming an alliance with them.
+
+Not compatible with Sukritact's Suzerians for obvious reasons since these two are basically the same concept.</Description>
+    <Authors>Techpriest Enginseer, adan_eslavo</Authors>
+    <SpecialThanks>Techpriest Enginseer</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/unique-city-states.607883/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Overhaul" />
+  </Dependencies>
+  <References>
+    <Mod id="e53b3cb8-48a9-4f46-8e1d-c9d3e8fa2233" minversion="0" maxversion="999" title="Pontoon Bridges for VP" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP" />
+    <Mod id="63b1732e-5fff-449e-a5bc-17ab5ed71e3a" minversion="0" maxversion="999" title="(@gwennog's) Basques" />
+  </References>
+  <Blocks>
+    <Mod id="c1871abe-b596-4028-a121-6568c154cb8d" minversion="0" maxversion="999" title="Sukritact's Suzerainity" />
+    <Mod id="8e54eb87-31e8-4fcd-aafe-ede055b463d0" minversion="0" maxversion="10" title="Even More Resources" />
+  </Blocks>
+  <Files>
+    <File md5="6A5B6A2CB892DB8A393E7FA6157988C4" import="1">Art/FontIcons/UCS_ResourcesFontIcons_022.ggxml</File>
+    <File md5="164F923767D14BAE971A5769C3031AFA" import="1">Art/FontIcons/UCS_ResourcesFontIcons_022.dds</File>
+    <File md5="A044CB32A1C21DE33BE15C997E74B091" import="1">Art/Icons/AllianceShift.dds</File>
+    <File md5="E95EB6476AC162A77B1A1AE34B5D782D" import="1">Art/Icons/UCS_Buildings_045.dds</File>
+    <File md5="2D9FB854A47572DA99AD00C7E5A0B7BF" import="1">Art/Icons/UCS_Buildings_064.dds</File>
+    <File md5="77F1ECAED465325414B4EF35B420D422" import="1">Art/Icons/UCS_Buildings_080.dds</File>
+    <File md5="76B7AD9C772F649485D77A5E10B44641" import="1">Art/Icons/UCS_Buildings_128.dds</File>
+    <File md5="7C66EF879D4F42B651F95FAE651FF978" import="1">Art/Icons/UCS_Buildings_256.dds</File>
+    <File md5="D5A7CDF2F69B0F8E6024778AD49EFC59" import="1">Art/Icons/UCS_Improvements_045.dds</File>
+    <File md5="F698C7DC90CF62234DC92CD6E31F8155" import="1">Art/Icons/UCS_Improvements_064.dds</File>
+    <File md5="15B274A267B0BC928837108C3FDE23DD" import="1">Art/Icons/UCS_Improvements_256.dds</File>
+    <File md5="0322790216D3A4CFAA88CFC746064AC7" import="1">Art/Icons/UCS_Potala_Palace_splash.dds</File>
+    <File md5="A90E42942D4F61B3FCB836E905F09EDF" import="1">Art/Icons/UCS_Promotions_016.dds</File>
+    <File md5="BF922C1661F4FE4F50D560043F7F5945" import="1">Art/Icons/UCS_Promotions_032.dds</File>
+    <File md5="C27D396701DA6FF1C6987CACD20B24EA" import="1">Art/Icons/UCS_Promotions_045.dds</File>
+    <File md5="F704D592D99D9C09101979DB4E10BE75" import="1">Art/Icons/UCS_Promotions_064.dds</File>
+    <File md5="5C8F68DE15A1287221EE871422549F3D" import="1">Art/Icons/UCS_Promotions_256.dds</File>
+    <File md5="331ACD346E6A9A79EE95B818B9A3693D" import="1">Art/Icons/UCS_Resources_045.dds</File>
+    <File md5="21E943957E74E6790108B0E1A03BBE26" import="1">Art/Icons/UCS_Resources_064.dds</File>
+    <File md5="DA0332B836439BF9E3BFD9E596DA65FE" import="1">Art/Icons/UCS_Resources_080.dds</File>
+    <File md5="99BF15CA1EA5FFFCF9C4AE1BF9207B02" import="1">Art/Icons/UCS_Resources_256.dds</File>
+    <File md5="177BF887C3354EEBC7025B36BFB21668" import="1">Art/Icons/UCS_UnitsFlags_032.dds</File>
+    <File md5="CC8F62D2A12045ED5F46705E6C5FF291" import="1">Art/Icons/UCS_Units_045.dds</File>
+    <File md5="1FF2220EFB27ABE80BBE16C18408A01D" import="1">Art/Icons/UCS_Units_064.dds</File>
+    <File md5="1DAEF339534E7143F75AD7935FF3A991" import="1">Art/Icons/UCS_Units_080.dds</File>
+    <File md5="3450E328CAF3836121DAABC6B07D25EF" import="1">Art/Icons/UCS_Units_128.dds</File>
+    <File md5="8031DC51B7437E7A1EBA37159CFFC1EA" import="1">Art/Icons/UCS_Units_256.dds</File>
+    <File md5="C0E453596FA760D1147C26819A33D4DA" import="1">Art/Miscellanous/citystatemeterbasemagenta.dds</File>
+    <File md5="52758125CE81E0390CBEE2A17FD6E162" import="1">Art/Miscellanous/citystatemeterbasetan.dds</File>
+    <File md5="1A8A84F7EB68575F65DAD941327F5315" import="1">Art/Miscellanous/citystatemeterframeicon16.dds</File>
+    <File md5="9C6A22C684DBF3D17AE0A70217B9D90D" import="1">Art/Miscellanous/citystatemeterframeicon32.dds</File>
+    <File md5="A4AD50C5D359EBD5BA386BE099474E93" import="1">Art/Miscellanous/citystatemetermagenta32.dds</File>
+    <File md5="5A191FFA40A4E1C928B621ECE533E7C4" import="1">Art/Miscellanous/citystatemetertan32.dds</File>
+    <File md5="4D3B0A668BC4CF99E63E2EF892F01C8A" import="1">Art/Models/Improvements/BedouinCamp/fx_triggers_bedouin.ftsxml</File>
+    <File md5="E5BF769A9E817BCE28AF77AB90113B55" import="1">Art/Models/Improvements/BedouinCamp/Tribe_Bedouin.dds</File>
+    <File md5="42456F1B02321554189B0D991E12FF5C" import="1">Art/Models/Improvements/BedouinCamp/Tribe_Bedouin.fxsxml</File>
+    <File md5="5F1449E0845D243E09B145DB13BFB342" import="1">Art/Models/Improvements/BedouinCamp/Tribe_Bedouin.gr2</File>
+    <File md5="C7D85AF0C1AA90F45AD75CB908A937C9" import="1">Art/Models/Improvements/Chum/fx_triggers_woodententSD.ftsxml</File>
+    <File md5="9D74329F2DDCC8B1AF698C632227CC1C" import="1">Art/Models/Improvements/Chum/iroqueseWorkshop_cm.dds</File>
+    <File md5="C78370460F6DB271756A87C89A2AA243" import="1">Art/Models/Improvements/Chum/WoodenTent Ground H.dds</File>
+    <File md5="79BB2DB28F2C5AD258C2BBDD71B1B4AB" import="1">Art/Models/Improvements/Chum/WoodenTent Ground.dds</File>
+    <File md5="4A373FC68D0280C9BE963881B406D92E" import="1">Art/Models/Improvements/Chum/WoodenTent_B.fxsxml</File>
+    <File md5="DF1A99848DC9AA49BD13E645A1ECCF1B" import="1">Art/Models/Improvements/Chum/WoodenTent_diff.dds</File>
+    <File md5="AF27AE8398384796F9B43A6008D2BC1C" import="1">Art/Models/Improvements/Chum/WoodenTent_HB.fxsxml</File>
+    <File md5="FAD1CA51546935B396073225D3074560" import="1">Art/Models/Improvements/Chum/WoodenTent_PL.fxsxml</File>
+    <File md5="1F2DDF5AEF6A3E654BCB182E2F85F8D8" import="1">Art/Models/Improvements/Chum/WoodenTent_SD HBPL.gr2</File>
+    <File md5="E05A6B86455B16C8AFE88A72DA48CDBD" import="1">Art/Models/Improvements/Chum/WoodenTent_SD.gr2</File>
+    <File md5="B7E3457D1BE2F55A7D2EB8627EFB5CA3" import="1">Art/Models/Improvements/Chum/WoodenTotem_diff.dds</File>
+    <File md5="8ED798C5395DF9C8B71A9D8F923E74ED" import="1">Art/Models/Improvements/ColossalHead/olmec_colossalheads.fxsxml</File>
+    <File md5="DE81EF912FD3226CBC3580D3F8DBA5C3" import="1">Art/Models/Improvements/ColossalHead/olmec_colossalheads.gr2</File>
+    <File md5="2202D80B590A3B6090E95785E7BF149E" import="1">Art/Models/Improvements/ColossalHead/olmec_colossalheads_pl.fxsxml</File>
+    <File md5="E0C2D0D0FB2869430D3EE8CF6B8F7EDE" import="1">Art/Models/Improvements/ColossalHead/olmec_heads.gr2</File>
+    <File md5="1FF685BC9DCD528E859CE663AED55A8E" import="1">Art/Models/Improvements/ColossalHead/olmec_heads_diff.dds</File>
+    <File md5="E75AB40CC96C6FF9BA634061E529F60B" import="1">Art/Models/Improvements/ColossalHead/olmec_heads_pl.gr2</File>
+    <File md5="73461A84539A49D9F04E6766F5FF5F72" import="1">Art/Models/Improvements/ColossalHead/olmec_heads_pl_diff.dds</File>
+    <File md5="D7AFA8336400620E67470909EAFC432D" import="1">Art/Models/Improvements/ColossalHead/olmec_head_decal_01.dds</File>
+    <File md5="5C05FCE7E368EC26A11926EE80CDE49A" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah.fxsxml</File>
+    <File md5="56B3866CD093CA5708E84410BC577E0A" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah.gr2</File>
+    <File md5="F02D42CF744DA4B1653B38889DCBCA1F" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah_diff.dds</File>
+    <File md5="29AC49901E1507AC3D2F946B7DD08F43" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah_ground.dds</File>
+    <File md5="6570F9F725F65D5637C3476951F7F6CC" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah_ground_h.dds</File>
+    <File md5="1BD0EA1560EB2FD93D50C43495ED3A87" import="1">Art/Models/Improvements/DaaqAh/er_daaq_ah_sref.dds</File>
+    <File md5="1681AAABA1652ACCC93AA6F046F3F697" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah.fxsxml</File>
+    <File md5="6163736BFF14DD9A9BDA2A3CA9830024" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah.gr2</File>
+    <File md5="89B46AB631045C8D7F3829C1ADAFD306" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah_diff.dds</File>
+    <File md5="6570F9F725F65D5637C3476951F7F6CC" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah_groud_h.dds</File>
+    <File md5="F0084425BE7CCAE54E614EB6E037EF18" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah_ground.dds</File>
+    <File md5="1BD0EA1560EB2FD93D50C43495ED3A87" import="1">Art/Models/Improvements/DaaqAh/hb_er_daaq_ah_sref.dds</File>
+    <File md5="80ECA7353E2531D9099F25D5CF569777" import="1">Art/Models/Improvements/DaaqAh/pl_er_daaq_ah.fxsxml</File>
+    <File md5="1F19AE1048A23ABAE2F566E10FF8D965" import="1">Art/Models/Improvements/DaaqAh/pl_er_daaq_ah.gr2</File>
+    <File md5="1E1C4BAC4E22772352B49D23064DBA19" import="1">Art/Models/Improvements/FuneraryTower/Funerary Towers Ground H.dds</File>
+    <File md5="4FABA5F63A65098B32C134703E444661" import="1">Art/Models/Improvements/FuneraryTower/Funerary Towers Ground.dds</File>
+    <File md5="5E94A118328FC0622F48A6965A06C1D7" import="1">Art/Models/Improvements/FuneraryTower/Funerary Towers.dds</File>
+    <File md5="E6D2C34A02A9CF69A3B55254F1D2BE7D" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers HB.gr2</File>
+    <File md5="E676A6FAC638BEF38064EF9AFAB8BBBF" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers PL.gr2</File>
+    <File md5="73F6A0E3B99438A5F8C8AFA77449A78F" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers.gr2</File>
+    <File md5="68DEB0F4A5C6C97BE1F64EFD0493B70B" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers_B.fxsxml</File>
+    <File md5="593D35D9499248BD281FED326EF10B5A" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers_HB.fxsxml</File>
+    <File md5="C930AADF32DCBC4FD547A29D160D8EA9" import="1">Art/Models/Improvements/FuneraryTower/Palmyra Funerary Towers_PL.fxsxml</File>
+    <File md5="A9EC89F8D8011D0E885F9046105292BC" import="1">Art/Models/Improvements/Monastery/Judea/greek fortress HB.gr2</File>
+    <File md5="1C2DA8F784BA8EA22CC365100BDD7705" import="1">Art/Models/Improvements/Monastery/Judea/Greek Fortress PL.gr2</File>
+    <File md5="B1D3F5E1C052A8FD3BAB0F737D8B3D33" import="1">Art/Models/Improvements/Monastery/Judea/greek fortress.gr2</File>
+    <File md5="14890B61AB842062C179DF8BCCFE1FFF" import="1">Art/Models/Improvements/Monastery/Judea/greek-fortress.dds</File>
+    <File md5="0B3A6AE341AAE260BF6FC4BB0D193F23" import="1">Art/Models/Improvements/Monastery/Judea/WTI_B.fxsxml</File>
+    <File md5="6F57F9C8F952E30E09D64B6B84E5C7DA" import="1">Art/Models/Improvements/Monastery/Judea/WTI_HB.fxsxml</File>
+    <File md5="865BB5FC7B4D9FED8FAE126CE224AD83" import="1">Art/Models/Improvements/Monastery/Judea/WTI_PL.fxsxml</File>
+    <File md5="3F805B2AB893F36BBFABA59C381A47E9" import="1">Art/Models/Improvements/Monastery/Serbia/Fruska_Gora.dds</File>
+    <File md5="BE9BDE63875788A62455721BF3996A54" import="1">Art/Models/Improvements/Monastery/Serbia/sistineTI_B.fxsxml</File>
+    <File md5="12E4EE30913BA3B0E33B3282A223DC77" import="1">Art/Models/Improvements/Monastery/Serbia/sistineTI_B.gr2</File>
+    <File md5="9986CACE6AD8C97DFDD06C57056AE7F7" import="1">Art/Models/Improvements/Monastery/Serbia/sistineTI_HB.fxsxml</File>
+    <File md5="1FA20CCA1D22D98553FB081914135E8A" import="1">Art/Models/Improvements/Monastery/Serbia/sistineTI_HB.gr2</File>
+    <File md5="976C29F37CA05B5409B0EB17D73F19A7" import="1">Art/Models/Improvements/Monastery/Serbia/Wonder_grnd_diff.dds</File>
+    <File md5="3E72CE4C071592D55FB4C08E3D4FCE87" import="1">Art/Models/Improvements/Monastery/Serbia/wonder_grnd_h.dds</File>
+    <File md5="4DCBDD65E117E4242917B61765FC406D" import="1">Art/Models/Improvements/Monastery/Serbia/WTI_PL.fxsxml</File>
+    <File md5="C4089962F18D8E73929965C380301DEB" import="1">Art/Models/Improvements/Monastery/Serbia/WTI_PL.gr2</File>
+    <File md5="8B0984F47EADC6A8ED53ED288D040239" import="1">Art/Models/Improvements/Mound/Serpent Mound Ex.gr2</File>
+    <File md5="69460C00B95BD1D80F6B94044025B9AA" import="1">Art/Models/Improvements/Mound/Serpent Mound H.dds</File>
+    <File md5="8B3B21BC55CD68AD9CBBB605D2EEADCC" import="1">Art/Models/Improvements/Mound/Serpent Mound HBPL.gr2</File>
+    <File md5="42F73A2F96FBA654C702E4CB4477387D" import="1">Art/Models/Improvements/Mound/Serpent Mound.dds</File>
+    <File md5="02E20C5601F581DE6A2F079B5D53C4AA" import="1">Art/Models/Improvements/Mound/Serpent Mound.gr2</File>
+    <File md5="E1E472A3227993FBD02CE29B291C53BB" import="1">Art/Models/Improvements/Mound/Serpent Mound.png</File>
+    <File md5="303CAF181C553278F54A2C2F7DFA2AAE" import="1">Art/Models/Improvements/Mound/Serpent Mound_B.fxsxml</File>
+    <File md5="0A1E1177F6077871B0AE6FB815BB9284" import="1">Art/Models/Improvements/Mound/Serpent Mound_B_Ex.fxsxml</File>
+    <File md5="65DC990EEBEAE3401EF916B605D2648C" import="1">Art/Models/Improvements/Mound/Serpent Mound_HB.fxsxml</File>
+    <File md5="0DC6572166B5B1B14421C5F7CA854D6D" import="1">Art/Models/Improvements/Mound/Serpent Mound_PL.fxsxml</File>
+    <File md5="7F0F6615BA8B3E99DC0B597FF40071C9" import="1">Art/Models/Improvements/Mound/stromouch.dds</File>
+    <File md5="5DC0F28D4A7CA4576D0AFD8C18D23713" import="1">Art/Models/Improvements/Mound/travka.dds</File>
+    <File md5="765DD4859FF39F34D916A68618D80031" import="1">Art/Models/Improvements/Phrourion/Oriental Fort B.fxsxml</File>
+    <File md5="F8FA8281A685BBEEBB15EFA03AE2C328" import="1">Art/Models/Improvements/Phrourion/Oriental Fort HB.fxsxml</File>
+    <File md5="50D3505CFC2FC91E772CF9A6D42D3484" import="1">Art/Models/Improvements/Phrourion/oriental fort HB.gr2</File>
+    <File md5="3EB47940004D1599BDDF99521958F9C4" import="1">Art/Models/Improvements/Phrourion/Oriental Fort PL.fxsxml</File>
+    <File md5="8B05BA3F28CEF78AE3A4230F26804C19" import="1">Art/Models/Improvements/Phrourion/oriental fort PL.gr2</File>
+    <File md5="79E8BBD25091B1F81E818CC3D9FE23B1" import="1">Art/Models/Improvements/Phrourion/oriental fort.gr2</File>
+    <File md5="8D0D6329BE849693E7DF19072311F4A8" import="1">Art/Models/Improvements/Phrourion/s_oriental_fort_diff_2.dds</File>
+    <File md5="CFDD4F3C5FF0089957A9E34D464C2DEE" import="1">Art/Models/Improvements/SunkenCourtyard/akapana_diff.dds</File>
+    <File md5="93AA12EFFAB2F3CDC497FFCB40E986DF" import="1">Art/Models/Improvements/SunkenCourtyard/akapana_sref.dds</File>
+    <File md5="BF2F0F72366E4E6729F60F7A93117698" import="1">Art/Models/Improvements/SunkenCourtyard/chatallatadecal.dds</File>
+    <File md5="E173063592BA7ED5EC0FFDD1E0887A88" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_6.fxsxml</File>
+    <File md5="C6529560C0B1A35EEBD3CB62217026CF" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_6.gr2</File>
+    <File md5="909E4EDC4AD50B8D1978A040909EB77F" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_hb.fxsxml</File>
+    <File md5="8A6B2848188EF943144F7EFF9121C48F" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_hb.gr2</File>
+    <File md5="5514654813036A8FED674C566737DB3D" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_pl.fxsxml</File>
+    <File md5="13E32A3D275F83EF4BE7C5ACBC6B6DD6" import="1">Art/Models/Improvements/SunkenCourtyard/chatallata_pl.gr2</File>
+    <File md5="CC20E049DA4C04D5867FD85C2B8E87BE" import="1">Art/Models/Improvements/SunkenCourtyard/kalasasaya_diff.dds</File>
+    <File md5="3A7ACEF7CCC551D8561D7385911517AB" import="1">Art/Models/Improvements/SunkenCourtyard/kalasasaya_sref.dds</File>
+    <File md5="121BDBC1C57159D267C6D983096BF380" import="1">Art/Models/Improvements/SunkenCourtyard/templete_diff.dds</File>
+    <File md5="ADF4514BE8CC4A64AEB6FDD74936E4F6" import="1">Art/Models/Improvements/SunkenCourtyard/templete_sref.dds</File>
+    <File md5="DF7F1257B426F588D700E6EC092E1841" import="1">Art/Models/Improvements/TotemPole/totem_pole.dds</File>
+    <File md5="0922A9DD08325578A78704D225E5CB6D" import="1">Art/Models/Improvements/TotemPole/totem_pole_CN.fxsxml</File>
+    <File md5="62B1803BBDEBF674CC47AA69CFB32B92" import="1">Art/Models/Improvements/TotemPole/totem_pole_CN.gr2</File>
+    <File md5="136394EA7A635EC02CE120BE961105AC" import="1">Art/Models/Improvements/TotemPole/totem_pole_HB.fxsxml</File>
+    <File md5="8CC4910993DEB63CFB11470348C6FAE8" import="1">Art/Models/Improvements/TotemPole/totem_pole_HB.gr2</File>
+    <File md5="C44BBD848D64D8CE3B33AB58A2B116FE" import="1">Art/Models/Improvements/TotemPole/totem_pole_PL.dds</File>
+    <File md5="578BCF1079336FC226B003C85965507E" import="1">Art/Models/Improvements/TotemPole/totem_pole_PL.fxsxml</File>
+    <File md5="05E524724832A92CB289F9A85976E596" import="1">Art/Models/Improvements/TotemPole/totem_pole_PL.gr2</File>
+    <File md5="94F741948BD0C1574C7D605A08D0132B" import="1">Art/Models/Improvements/Tulou/tulou.dds</File>
+    <File md5="5F320435B73955966B329624AA46D2F0" import="1">Art/Models/Improvements/Tulou/TULOU.fxsxml</File>
+    <File md5="77AADDE7832E72E112897CE708B64EB2" import="1">Art/Models/Improvements/Tulou/Tulou_CN.fbx</File>
+    <File md5="0A64D4154139798C26E87ED11266D7DB" import="1">Art/Models/Improvements/Tulou/Tulou_CN.gr2</File>
+    <File md5="B5A5FD818F4409E4AFFCCC1E488A2A13" import="1">Art/Models/Improvements/Tulou/Tulou_HB.fbx</File>
+    <File md5="0675A735E5271210B02C2C0DB4C975BF" import="1">Art/Models/Improvements/Tulou/TULOU_HB.fxsxml</File>
+    <File md5="DDDA5E8736A216B3AE91D1046085E818" import="1">Art/Models/Improvements/Tulou/Tulou_HB.gr2</File>
+    <File md5="DB6C1E2906D901AAAFAFB0C74BCD8711" import="1">Art/Models/Improvements/Tulou/Tulou_PL.fbx</File>
+    <File md5="23B5F158DF7083C2508CA197EE212784" import="1">Art/Models/Improvements/Tulou/TULOU_PL.ftsxml</File>
+    <File md5="87C75CCF70AC929A4AE2B14BD0275B6A" import="1">Art/Models/Improvements/Tulou/TULOU_PL.fxsxml</File>
+    <File md5="E33B36960A26AE511597EBA656D07488" import="1">Art/Models/Improvements/Tulou/Tulou_PL.gr2</File>
+    <File md5="B64C079C06BF48CD67B50AE31426E555" import="1">Art/Models/Resources/DogoCanario/DogoCanario.dds</File>
+    <File md5="3805AB15227159AAFCFC4AB447804DAB" import="1">Art/Models/Resources/DogoCanario/dogs_canario_CN.fxsxml</File>
+    <File md5="1DF57DB5755D0C405A4EA3AAEAC8C6BC" import="1">Art/Models/Resources/DogoCanario/dogs_canario_CN.gr2</File>
+    <File md5="356B8410A3DC3BE56B1825DABB6A5164" import="1">Art/Models/Resources/DogoCanario/dogs_canario_HB.fxsxml</File>
+    <File md5="030B069D3565A1BC6F62447D7B750002" import="1">Art/Models/Resources/DogoCanario/dogs_canario_HB.gr2</File>
+    <File md5="65CA6044509A365C5D0C58E733F75E07" import="1">Art/Models/Resources/DogoCanario/dogs_canario_PL.fxsxml</File>
+    <File md5="5BCF0911FEFBC48880ED217C2547D9DE" import="1">Art/Models/Resources/DogoCanario/dogs_canario_PL.gr2</File>
+    <File md5="6C64FFBC8A00DA07F28EE8BB33F8038A" import="1">Art/Models/Resources/DogoCanario/dogs_dummy.fxsxml</File>
+    <File md5="231D3C452BBB66E3BD47E7E3843ADA89" import="1">Art/Models/Resources/DogoCanario/dogs_dummy.gr2</File>
+    <File md5="BB7FFF730344916F42985C7E33CDABDC" import="1">Art/Models/Resources/DogoCanario/dogs_resource.fxsxml</File>
+    <File md5="006DB4C8E8E0AA8B30438CBB419F0AC9" import="1">Art/Models/Resources/DogoCanario/dogs_resource.gr2</File>
+    <File md5="20A741539310D2CABF7C7524B80445A4" import="1">Art/Models/Resources/DogoCanario/encampment.dds</File>
+    <File md5="C2DDC8464778A1936720251F5BC04C99" import="1">Art/Models/Resources/DogoCanario/fx_triggers_Dogs_canario_PL.ftsxml</File>
+    <File md5="8802162671AA9D97D92DA6A37E652215" import="1">Art/Models/Resources/DogoCanario/planks and stone.dds</File>
+    <File md5="9D8734DB108841402F69C5D996487834" import="1">Art/Models/Resources/Reindeer/resource_reindeer.fxsxml</File>
+    <File md5="56E4473528A38188F347FFE812BE77BB" import="1">Art/Models/Resources/Reindeer/resource_reindeer.gr2</File>
+    <File md5="AAEB26FF6E52868F4636A0460708C981" import="1">Art/Models/Resources/Reindeer/resource_reindeer_diff.dds</File>
+    <File md5="52412BFB63B611D2956711ED3FAF833F" import="1">Art/Models/Units/Ghurka/gurkha.fxsxml</File>
+    <File md5="4C41A4E5AF432900A9D49204E51442AB" import="1">Art/Models/Units/Ghurka/gurkha.gr2</File>
+    <File md5="EFF5409A4D8D39A45EA3CA78CC2DCB47" import="1">Art/Models/Units/Ghurka/gurkha_diff.dds</File>
+    <File md5="9D7E6844EA94E147D46729B2CE19A1FF" import="1">Art/Models/Units/Ghurka/gurkha_sref.dds</File>
+    <File md5="E1115A2AF17246BB3D768139AA82E049" import="1">Art/Models/Units/Nihang/Akali_blue.dds</File>
+    <File md5="B222CC62D95D95B3E89186F7C6908BC7" import="1">Art/Models/Units/Nihang/Akali_blue.fxsxml</File>
+    <File md5="64BB66CF4BBBB3B62B2D8709F5E66094" import="1">Art/Models/Units/Nihang/Akali_blue.gr2</File>
+    <File md5="E852AD5BC109377C27888893AE1D4BDE" import="1">Art/Models/Units/Saka/Horseman_Mongol.dds</File>
+    <File md5="1E286628CE142B35DDF2AC505EB97E1F" import="1">Art/Models/Units/Saka/Horseman_Mongol.fxsxml</File>
+    <File md5="53AA25D584C18D723F17C212EA1CEED9" import="1">Art/Models/Units/Saka/Horseman_Mongol.gr2</File>
+    <File md5="D15C10FBE1007F03B3FF3652CD921F2B" import="1">Art/Models/Units/Saka/Horseman_Mongol_gloss.dds</File>
+    <File md5="ED76F6C0472BACA1DE4B269178C0501C" import="1">Art/Models/Units/Saka/Horseman_Mongol_Horse.dds</File>
+    <File md5="AC41C06BA721315512F26433220FEDF7" import="1">Art/Models/Units/Saka/no_gloss.dds</File>
+    <File md5="CDC5F1A7A3A8FE1D47C55AC92926668E" import="1">Art/Models/Units/Sisqeno/amauta.fxsxml</File>
+    <File md5="FE44CDCEB697283AA06DCDDF1F7DE888" import="1">Art/Models/Units/Sisqeno/Amauta.gr2</File>
+    <File md5="09A646FE041CD0F45B8BFAB365051394" import="1">Art/Models/Units/Sisqeno/amauta2.gr2</File>
+    <File md5="816621C3FB876E60C9117B14A5B913D0" import="1">Art/Models/Units/Sisqeno/amauta_diff.dds</File>
+    <File md5="A6CCDE935AFD654B6803717FFF4773C6" import="1">Art/Models/Units/SwissGuard/reislaufer.fxsxml</File>
+    <File md5="54466258F5A615864E2F2FC808E6ACF6" import="1">Art/Models/Units/SwissGuard/reislaufer.gr2</File>
+    <File md5="DD4DBB6FB2E7E11ADBE9B37D53560428" import="1">Art/Models/Units/SwissGuard/reislaufer_diff.dds</File>
+    <File md5="C17C1A9359A378E1F1FF8A47F4D40308" import="1">Art/Models/Units/SwissGuard/reislaufer_sref.dds</File>
+    <File md5="4A8F0953D8E13AA8B2951816E714A1B7" import="1">Art/Models/Units/Teaat2/anan.gr2</File>
+    <File md5="B0E83C9A7A20409E59C2CADC928CCC43" import="1">Art/Models/Units/Teaat2/anan_diff.dds</File>
+    <File md5="32B9ED39608C068B0E4C974F7F5F8A02" import="1">Art/Models/Units/Teaat2/anan_flag.dds</File>
+    <File md5="21A9DE76B520C43D4FC6919AADC385B4" import="1">Art/Models/Units/Teaat2/anan_model.fxsxml</File>
+    <File md5="4DA6E824B78BBDEA4B0E2D509908AAD5" import="1">Art/Models/Units/Teaat2/anan_rower.dds</File>
+    <File md5="23444E6085E458AE7C53477482AC5EC4" import="1">Art/Models/Units/Teaat2/anan_sv.dds</File>
+    <File md5="5706BF34E2C4E028663AE1AD53339227" import="1">Art/Models/Units/Teaat2/black_4x4.dds</File>
+    <File md5="DF9335C5F579BA6E7A10D188D295C2C0" import="1">Art/Models/Units/Teaat/MC_Noka_Canoe.fxsxml</File>
+    <File md5="445E3494704332723949EB9D4E00FCC4" import="1">Art/Models/Units/Teaat/MC_Noka_Canoe.gr2</File>
+    <File md5="A3EF598E3DE8537B6AB0406A9AF5A1C7" import="1">Art/Models/Units/Teaat/MC_Noka_Canoe_diff.dds</File>
+    <File md5="CE7FE5F6F35C5F89CE41B2FC61EEA66D" import="1">Art/Models/Units/Teaat/MC_Noka_Canoe_sref.dds</File>
+    <File md5="5C432E8B870E60A21F5E2222FB86595B" import="1">Art/SV_Icons/sv_BuildBedouinCamp.dds</File>
+    <File md5="DC886BC35BC29E5FDDB7CB60A03F1B19" import="1">Art/SV_Icons/sv_BuildChum.dds</File>
+    <File md5="606441987419C3B6007B4B52993DD2B9" import="1">Art/SV_Icons/sv_BuildColossalHead.dds</File>
+    <File md5="3F051CBAA706AADAE2065E8797B8A406" import="1">Art/SV_Icons/sv_BuildFuneraryTower.dds</File>
+    <File md5="7957FA3400F9586325A68B88690A53CF" import="1">Art/SV_Icons/sv_BuildMarsh.dds</File>
+    <File md5="4697D3A264AE76638E0E2971A64B44B2" import="1">Art/SV_Icons/sv_BuildMonastery1.dds</File>
+    <File md5="5D7E4467F12ED05DC18C1B427A946D37" import="1">Art/SV_Icons/sv_BuildRibat.dds</File>
+    <File md5="39EC0B8AB001FEE02D3B234EE5DE8DF0" import="1">Art/SV_Icons/sv_BuildSunkenCourtyard.dds</File>
+    <File md5="E5A69EA52EDC046AA07CB0D754F5E152" import="1">Art/SV_Icons/sv_BuildTotemPole.dds</File>
+    <File md5="216331984EAF5CF216691B4EFFB52A07" import="1">Art/SV_Icons/sv_BuildTulou.dds</File>
+    <File md5="DAFECAAFF8EF376330725167D98E27B3" import="1">Art/SV_Icons/sv_BuildMound.dds</File>
+    <File md5="84B90BBF289247AD61911EA43E4C836A" import="1">Art/SV_Icons/sv_BuildDaaqAh.dds</File>
+    <File md5="EDABD667B6F0DBF7BFF2341C6FAA0CE0" import="0">Art/SV_Icons/sv_BuildMonastery2.dds</File>
+    <File md5="EBF50849DF81473110ACD565802A9B90" import="1">Art/SV_Icons/sv_UnitTeaat.dds</File>
+    <File md5="CC761A914731048A9BC6DEA7A13043C0" import="1">Art/SV_Icons/sv_ResourceDogoCanario.dds</File>
+    <File md5="2C461B32D470564DF511F085436D8F61" import="1">Art/SV_Icons/sv_ResourceLlaoLlao.dds</File>
+    <File md5="F7FF108AD63834CF282C3CF9BCEA070A" import="1">Art/SV_Icons/sv_ResourceReindeer.dds</File>
+    <File md5="B99F8D0F9CD12F819082D5FA5870460C" import="1">Art/SV_Icons/sv_UnitSaka.dds</File>
+    <File md5="5D8934009187A82E2AE4BA4CDB0160EC" import="1">Art/SV_Icons/sv_UnitGurkha.dds</File>
+    <File md5="331DEF040B0EC61D41166A45E5BCB236" import="1">Art/SV_Icons/sv_UnitNihang.dds</File>
+    <File md5="6D884827053824213C3DF896B570E405" import="1">Art/SV_Icons/sv_UnitSisqeno.dds</File>
+    <File md5="5632FD033DFBC01D596860C64D09DAA7" import="1">Art/SV_Icons/sv_UnitSwissGuard.dds</File>
+    <File md5="CD1AD31616389B25B40F14BE3B039DE9" import="0">Art/SV_Icons/sv_BuildPhrouria.dds</File>
+    <File md5="A3CF20BF41460A0D3A41910C2AE68362" import="0">Changelog.txt</File>
+    <File md5="0F77C81F49AAB839E5F7CED14F2532EB" import="0">HongKong.ods</File>
+    <File md5="B3F74528D0CFF210776DBE1346A468BC" import="1">Lua/CityStateStatusHelper.lua</File>
+    <File md5="FFE0BAB4D1D7B3DCC42867D7D68507CA" import="0">Lua/TheBalanceDemandsIt.lua</File>
+    <File md5="251A3EFB7D38E43515E5788D754EE35E" import="1">Sound/PotalaPalace.mp3</File>
+    <File md5="5E30526E1672CDBDAD1696B0B7AEADB6" import="0">SQL/Bonuses.sql</File>
+    <File md5="EF79BAB4AAED2F82E064C9D05CAF9C13" import="1">XML/MinorCivSounds_Expansion2.xml</File>
+    <File md5="F0EDF2D87A4AD4FF1FD68C376CCD3640" import="0">XML/UCSTexts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UCSTexts.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/Bonuses.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/TheBalanceDemandsIt.lua">
+      <Name>CityStateStatusHelper.lua</Name>
+      <Description>City-State abilities</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

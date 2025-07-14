@@ -1,0 +1,161 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_PATRIOTIC_WAR</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_1</Help>
+			<RequiresWar>true</RequiresWar>
+			<EventPromotion>PROMOTION_ANTIAIR_LAND_I</EventPromotion>
+			<EventDuration>10</EventDuration>
+			<Expires>false</Expires>	
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_2</Help>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>50</EventDuration>
+			<Expires>true</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_3</Help>
+			<EventDuration>-1</EventDuration>
+			<ImprovementAnywhereRequired>IMPROVEMENT_CITADEL</ImprovementAnywhereRequired>
+			<RequiresWar>true</RequiresWar>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_PATRIOTIC_WAR</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_PATRIOTIC_WAR_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION">
+			<Text>Going Underground</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP">
+			<Text>The war rages, and the agents of the enemy threaten the common man. Every man, woman and child needs to be prepared in the event of contact with the enemy.[NEWLINE]What do you suggest, comrade?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_1">
+			<Text>All eligible Units, as well as those built in the next {4_Turns} gain the Flak Targeting Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_2">
+			<Text>All Forest and Jungle Tiles produce +1 [ICON_PRODUCTION] Production for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_HELP_CHOICE_3">
+			<Text>Forts and Citadels generate +2 [ICON_RESEARCH] Science and +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_1">
+			<Text>We need to prepare networks of tunnels to hide from enemy air support. Start digging.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_2">
+			<Text>Our natural defenses provide adequate cover from the enemy. Move our operations to the deep woods and jungles where the enemy forces cannot hope to find them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_PATRIOTIC_WAR_DESCRIPTION_CHOICE_3">
+			<Text>All peoples must band together against our common foes. Send out the word to the peoples of Order. Let our allies stockpile our fortresses with weapons and soldiers in the name of the common good!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

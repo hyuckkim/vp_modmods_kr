@@ -1,0 +1,264 @@
+Changelog:
+v23:
+- fixed labeling for policies and traits;
+- now policies and traits are only applied for strategic resources like they should be;
+
+v22:
+- added two missing labels for resources from Traits and Buidlings;
+- adjusted note about Global Monopoly exclusion;
+
+v21:
+- Marriages are shown only when Austria is met by the Active Player;
+- now Unknown Players are mentioned as Allies and Protecting players (were blanks);
+- now Unknown Players are mentioned as Embassy Owners (were shown as met players);
+- reverted fix for Third Alternative (fixed in VP);
+
+v20:
+- now City-State with diplomatic Marriage (of Austria) have named coloured Magenta and additional info in tooltip;
+
+v19:
+- embargoed resources are now coloured dark purple;
+- non-active player now has 2 new colours:
+	- when he has only 1 tradable copy, but he has more of them from other sources (yellow);
+	- when he has only 1 tradable copy, and it is the only one he has (pink)
+		- exception is for Strategic Resources, so they always have yellow, even if they have only 1 copy;
+- adjusted colour key;
+
+v18:
+- sanctioned players are now marked in the Trade window;
+- WAR marker is move to the center like SANCTIONED;
+
+v17:
+- Graph:
+	- added +/-10% error while assessing military strength of other players (so now you can under- or overestimate the actual power of his military);
+	- added info to the tooltips about number of technologies researched by the player and the difference between him and the active player;
+- Trade Opportunities:
+	- expanded the tooltip by the number of copies player got from different non-map sources and additional note that they do or do not count towards monopolies (in the case when there are no other copies on the map);
+		- now resources given by Great People (Great Admirals) should show up in the table;
+		- fixed the table for the Dutch (added imported luxuries in their case to the monopoly calculator);
+			- added case when Dutch got Statecraft policy or are allied to Tegucigalpa (was duplicating imported resources);
+		- added info about modifiers from Third Alternative policy and Zealotry belief;
+		- added info about free copies from Foreign Service policy;
+		- added info about free copies from corporations and franchises;
+
+v16.1:
+- now Tegucigalpa's ability also counts for the monopoly tooltip (same as Statecraft);
+
+v16:
+- cleaning the tags and file names;
+- fixed Monopolies marker for players that got Statecraft's policy;
+
+v15:
+- added new Relationship Graph (from Global Relationship, and this from InfoAddict):
+	- changed the way income and GPT are described;
+	- added additional colours for one-sided relations (Open Borders, Denouncements and Trade Routes);
+		- reworked the key table;
+	- reworked colours for military strength comparison;
+		- added 2 more levels and reworked thresholds;
+	- changed order of elements for both key tables;
+	- changed attitude colours:
+		- Guarded now orange (previously Hostile);
+		- Hostile now magenta (like in the EUI);
+	- added resetting connections on panel change (Political <--> Economic);
+- changed the order of tabs in Diplo Overview;
+- now RelationshipGraph is a default tab after opening the Diplo Overview;
+- City-State screen:
+	- Embassy and Sphere of Influence info moved to separate column allowing sorting;
+	- replaced some icons with another;
+- Trade Opportunities:
+	- now "/Turn" instead of "GPT";
+
+v14.1:
+- fixed bug for CS placed near border of the map (pPlot=nil);
+
+v14:
+- City-State screen:
+	- added Irrational personality (pink flag);
+	- added info and icon about the Embassy owner;
+	- added info and icon about the Sphere of Influence owner;
+
+v13:
+- fix for number of resources granted from CSs' alliances;
+- prepared stuff for UCS v15 additions;
+
+v12:
+- small corrections;
+
+v11.1:
+- fix: for CS which have resource improved (via f.e. Embassy, GPI), but they don't have it connected, because of tech restriction (f.e. Oil);
+
+v11:
+- City States View:
+	- added Pasture and to improvement list;
+	- added Building to improvement list (like Tern Egg from MWfVP);
+	- added resource icons for available resources in CS name's tooltip;
+	- increased and corrected sign "You have not met...";
+	- added majority religion in CS;
+- Trade View:
+	- centering on CS on right click;
+	- added found religion in major player's tooltip;
+	- added info about current amount of resources and resources available in every tooltip;
+
+v10:
+- Trade View:
+	- fix for resources added by Great Admiral;
+	- added colours for cs approach;
+	- reworked player's tooltip (added name; name coloured instead of approach text; coloured leaders name; added back (in different place) gold and gold per turn info);
+	- fixed player's highlight;
+	- lenghten trim under player's resources;
+- City-State View:
+	- better colours for cs approach;
+	- added colours for allies and protectors approach;
+	- added background colours;
+	- reworked table structure:
+		- much wider table with more content;
+		- added new columns:
+			- spawn state (they were added to cs name before) for military cs (shows different flags described in tooltip; unique unit with description in tooltip; you can change spawn option on LMB);
+			- spies (shows where they are located in tooltip; shows if at least one is unassigned; opens Espionage Overview on LMB);
+			- personality;
+			- possible protection (you can pledge or revoke protection on LMB);
+			- distance (shows which city is the closest one in tooltip; you can center on LMB);
+		- added sorting for all columns; improved existing sorting;
+		- added new and modified existing tooltips:
+			- added approach colors; highlighted important parts;
+			- fixed spaces and newlines;
+	- reworked tooltips for headers; added colours;
+	- added influence change value;
+	- added temporary "Refresh" button;
+	- used abbreviation "M.B.:" instead of "Monopoly Bonus:" make other resources description more compact;
+- overall:
+	- code cleaning;
+	- added credits file and supporters;
+	- changed colour of buttons for pages in Diplomacy View;
+
+v9:
+- sorted luxuries alphabetically (after cinnamon change);
+- added info in other resources about OnlyMinorCiv value and required improvement;
+- added deals to players' headers;
+- reworked help text formatting for all possible outcomes (less newlines, colouring, less space);
+- refined ui file and colouring:
+	- added other players' approach colors;
+	- resource name colors (gold for luxury, silver for strategic; useful for non-vp resources), 
+	- "unavailable" now brown;
+	- "..." has now more color variants depending on what's inside;
+- reworked tooltips (new formatting for needed resources, less new lines, les spaces, no doubled info);
+- reworked totally CS icon tooltip:
+	- number + resource icon in front of tooltip;
+	- ally color is set depending on your current approach;
+	- other resources that CS has are listed in line below and do not consist currently checked resource;
+	- added "?" for resources that are inside the borders, but not improved, pillaged or with wrong improvement on them;
+	- number + "?" for improvement which are available, but still there are few that can be improved;
+	- added current CS influence;
+	- greyed out icon with red "?" for resources that have not been improved yet;
+- moved "WAR" sign by few pixels;
+- increased truncate for CS Ally in City-States screen;
+- different luxury and strategic color;
+
+v8.2:
+- compatibility fix by @civplayer33;
+
+v8.1:
+- lua error fix.
+
+v8:
+- code:
+	- deleted check for useful resources at the lua file load (now only on window opening left),
+- texts:
+	- modified tooltips (those with monopoly info) for standard resources to be compatible with "Other luxury resources",
+	- "..." instead of "?" for "Other luxury resources,
+	- "City-State" instead of "CS" as a header for luxury resources form City-States,
+	- some capital letters substituted by small ones (Protected (B)y, Allied (W)ith, Current (D)eals and so on),
+	- fixed "Colour Key" tab,
+	- fixed spelling errors.
+- UI:
+	- made "..." mark for "Other luxury resources" more visible (orange),
+	- fixed alignment like always.
+- files:
+	- renamed few folders and files.
+
+v7:
+- new version numbering system: dropped "28m" part because mod was changed so hard including code refining; now any version starts counting from "v7".
+- resources:
+	- added Paper to "Strategics" part,
+	- added "Other luxury resources" to "Luxuries" part; makes all mod which add new luxuries compatible with TO; significantly reworked basic feature.
+- UI:
+	- totally reworked "Colour Key" tab,
+	- totally new colour palette in main window:
+		- cyan or blue - one or more cities respectively demands that resource (unavailable for non-active players),
+		- dark green, light green, yellowish green - player has more than 3, 1 or equal to 1 tradable resource copies respectively:
+			- yellowish green is not available for non-active players.
+		- orange - player has no tradable resources,
+		- red - new category: player uses more resources than he has (has deficit - means that he uses imported ones from CSs or from other players),
+		- brownish grey - rest of cases; new grey colour is much darker; now other colours are visible at first glance.
+	- now numbers are centred in the window instead of aligned to the right,
+	- new markers:
+		- ' shows strategic monopoly bonus for the resource,
+		- " shows strategic global bonus for the resource.
+	- bigger "No player met" text label,
+	- "War" status is now moved to the right; red background shows up instead with increased opacity; it now does not hide content below (you can still see numbers underneath),
+	- now different columns' colours for luxury (light gold) and strategic (light silver) resources,
+	- added ICON_CAPITAL icon before capital city on list with cities demanding some resource; added icon, name and some generic text; city names coloured,
+	- added icon, name and some generic text for unavailable resources,
+	- deleted resource icon before city-state name in tooltip,
+	- slightly scaled down CS icons to better fit the frames,
+	- added "Monopoly bonus" info to resource icon (header) tooltip,
+	- added "Current Deals" tooltip separate for every non-active player,
+	- few things moved in the main and City-State windows for better alignment.
+- code:
+	- cleaned UI xml code,
+	- cleaned and refined main lua code,
+	- fixed resource calculation: now it takes also resource used for units or buildings into account,
+	- hovering over CS icon shows all its resources instead of only strategic ones,
+	- reduced spoiler informations:
+		- now player on start can see only its own resources,
+		- during exploration, after meeting new players, new sources are "discovered",
+		- code checks available resources and resources in nearby area from cities,
+		- fixed resource logic for strategics: same like in CSL mod (now shows resource visible for active player not for target player; means that if active player researches iron then it will be searched for every other player including CSs):
+			- hovering the CS's icon still shows resources improved by that CS.
+	- reworked main file.
+
+v28m6:
+- added:
+	- strategic resources to the table,
+	- colour key info tab,
+	- orange colour when active player has only 1 copy of resource available for trade.
+- deleted:
+	- action icons for active player (useless),
+	- gold info in main tab (to make space for strategic resources).
+- improved "City-states View" tab:
+	- each line takes less space,
+	- better alignment,
+	- smaller font,
+	- deleted old gold gift options.
+- revised texts.
+
+v28m5:
+- added block condition from Global Relations and changed dependency from CBO to More Luxuries part of VP.
+
+v28m4:
+- refined working area (lines, fonts, scroll bar, positioning, icon resizing),
+- inverted grid colours,
+- war status centred,
+- small text corrections.
+
+v28m3:
+- further window adjustments,
+- moved Marble and Ivory to the left (new group: Special luxuries),
+- moved Fur from Plantation group to Camp where it should be,
+- added headers for each group.
+
+v28m2:
+- small fixes to scroll bar.
+
+v28m:
+- added all resources from VP,
+- sorted out existing resources grouping them using following pattern (alphabetical order inside groups):
+	- sea,
+	- mine,
+	- quarry,
+	- plantation,
+	- camp,
+	- Brazilian,
+	- Indonesian,
+	- city-states',
+- adjusted window to match new resources.

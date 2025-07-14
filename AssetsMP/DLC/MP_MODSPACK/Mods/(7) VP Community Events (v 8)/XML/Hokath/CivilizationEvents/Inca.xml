@@ -1,0 +1,397 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_INCA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_INCA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<HappinessPerCity>1</HappinessPerCity>
+			<ImprovementAnywhereRequired>IMPROVEMENT_TRADING_POST</ImprovementAnywhereRequired>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_GRAND_TEMPLE</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_DYNAMITE</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<IsUnhappy>true</IsUnhappy>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<WLTKDTurns>15</WLTKDTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<EventFreePolicies>1</EventFreePolicies>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+			<BasicNeedsMedianModifierGlobal>5</BasicNeedsMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_INCA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_INTERPRETIVE_CENTER</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_INCA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-2000</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2000</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_COPPER</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_GOLD</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_SILVER</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_DYE</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_MinimumResourceRequired>
+	<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SHEEP</ResourceType>
+			<Quantity>2</Quantity>
+	</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SHEEP</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SHEEP</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SHEEP</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>-4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INCA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Marital Mobility</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_1">
+			<Text>{3_PlayerName} elevates a young Capac to the rank of Crown Prince!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Alpaca Wool</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_2">
+			<Text>{3_PlayerName} discovers the techniques of weaving Alapaca wool.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Wak'a Trail</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_3">
+			<Text>{3_PlayerName} establishes a series of alpine shrines, acquiring knowledge of perennial floral [ICON_RES_DYE] Dyes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Mountain Mining</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_4">
+			<Text>{3_PlayerName} begins a campaign of mineral exploration with the aid of Dynamite. Gaining access to [ICON_RES_GOLD], [ICON_RES_SILVER] and [ICON_RES_COPPER].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Political Purge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_5">
+			<Text>{3_PlayerName} purges the oligarchy, winning widespread popular support for his regime at the expense of long-term stability.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Mountain Tourism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INCA_UE_CHOICE_6">
+			<Text>{3_PlayerName} opens up the hidden Incan mountain passes to the World's tourists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION">
+			<Text>Son Of The Sun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP">
+			<Text>Another generation, another cohort of your vassals' children pass through the Palace, indoctrinated into your great Empire. The great and powerful of Inca are gathered to hear you speak at the Feast of Graduation.[NEWLINE][NEWLINE]We await your wisdom, Sapa Inca.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_2">
+			<Text>Supply an alternative source of {2_InstantYield}. Textiles produced from [ICON_RES_SHEEP] Sheep Tiles produce +1 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith, and +2 [ICON_GOLD] Gold. +1 [ICON_HAPPINESS_2] Happiness in all Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_3">
+			<Text>Establish the Wak'a trail. Mountains produce +2 [ICON_PEACE] Faith, and you receive two copies of [ICON_RES_DYE] Dye.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_4">
+			<Text>Invest {2_InstantYield} in mineral exploration. Mountains produce +2 [ICON_PRODUCTION], and you receive a copy of [ICON_RES_GOLD] Gold, [ICON_RES_SILVER] Silver and [ICON_RES_COPPER] Copper.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_5">
+			<Text>Forcibly enact a free Social Policy. All Cities enter 15 Turns of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR], but [ICON_STRENGTH] Distress and [ICON_GOLD] Poverty thresholds permenantly increase by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_HELP_CHOICE_6">
+			<Text>Allow international access to your hertiage sites, losing {2_InstantYield}. In return, Mountains produce +2 [ICON_CULTURE] Culture and +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_1">
+			<Text>To commemorate this wondrous occasion, the valedictorian shall be married to the Princess Royal!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Weavers in the court have discovered that the Alpaca, employed extensively as a food source and religious offering, produces a particularly versatile wool*[NEWLINE]When the Capac return to their lands, they do so enriched by the knowledge of the Sapa Inca, to the prosperity of all!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The priesthood wishes to establish mountain shrines: to awaken the hidden spirits and cultivate the sacred flowers which grow there*[NEWLINE]When my student return to their lands, they go as servants of the Gods, initiated in the secrets of the mountains!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*We now have the knowledge to burrow deeper into the heart of the mountain than ever before*[NEWLINE]From North to South, East to West, in every corner of our great kingdom, we will ply the secrets of the Earth!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*There is widespread dissent amongst both the political elite and the common man at your rule*[NEWLINE]It is with regret that I place my Governors under arrest! They shall be replaced with their children, whom I know to be loyal to Inca and the common man!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*Your sacred sites and mountain villages, which have remained hidden to the world for millenniums, have been discovered by the world*[NEWLINE]We can no longer hide our great treasures from the world. Let all who wish to bow before the majesty of Inca come, and see!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

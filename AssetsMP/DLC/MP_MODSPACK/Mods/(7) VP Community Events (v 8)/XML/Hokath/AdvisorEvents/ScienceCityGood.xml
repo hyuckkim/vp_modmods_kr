@@ -1,0 +1,180 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_SCIENCE_CITY_GOOD</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>40</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<CityEventArt>advisorscience.dds</CityEventArt>
+			<CityEventAudio>AS2D_EVENT_ESCIENCE</CityEventAudio>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_GOOD</CityEventType>
+			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<RiverOnly>true</RiverOnly>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_WELL</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<RequiresNearbyMountain>true</RequiresNearbyMountain>
+			<RequiredEra>ERA_POSTMODERN</RequiredEra>
+			<EventBuildingClass>BUILDINGCLASS_HYDRO_PLANT</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_4</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_4</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_4</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_QUARRY</ImprovementRequired>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_GOOD</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_SCIENCE_CITY_GOOD</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_WATERMILL</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>6</YieldChange>
+		</Row>
+		
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HYDRO_PLANT</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HYDRO_PLANT</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_BuildingClassYieldModifier>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_2</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</CityEventChoice_BuildingClassYieldModifier>
+	<CityEventChoice_ImprovementYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_ImprovementYieldChange>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_SCIENCE_CITY_GOOD_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+	
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION">
+			<Text>Pure Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP">
+			<Text>Our surveyers have been conducting an ongoing study of the City's water supply: where it comes from, where it goes, how clean it is, and so on. They have some easily implemented suggestions that could make a big difference to our infrastructure.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_1">
+			<Text>Water treatment generates +8 [ICON_FOOD] Food at the Watermill.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_1">
+			<Text>The river is polluted from upstream effluents. Small changes to the Watermill could allow it to filter off pollutants before they reach the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_2">
+			<Text>Distributing minerals via the centralized water supply allows the Well to increase [ICON_FOOD] Growth by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_2">
+			<Text>Our citizens could greatly benefit from an increased mineral intake. By adding ions such as flouride directly to the Well, we can increase the overall health of our population.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_3">
+			<Text>A Hydro Plant is constructed to access the various tarns and glacial caps of the nearby Mountains. It produces an additional +2 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_3">
+			<Text>There is a considerable amount of water that is not making it to the local basin in good time. By gently altering the landscape of the nearby mountains, we can produce both water and power in high abundance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_HELP_CHOICE_4">
+			<Text>Converting abandoned Quarries into reservoirs allows them to generate +3 [ICON_FOOD] Food and +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_SCIENCE_CITY_GOOD_DESCRIPTION_CHOICE_4">
+			<Text>We find it difficult to store water, but such sites are available all around. Not only would converting them increase our supply, we would also regenerate the areas for wildlife, creating sites of outstanding natural beauty.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

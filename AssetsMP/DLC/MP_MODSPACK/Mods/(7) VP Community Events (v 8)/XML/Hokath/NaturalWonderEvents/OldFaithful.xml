@@ -1,0 +1,198 @@
+<GameData>
+	<!-- Old Faithful -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_GEYSER</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_GEYSER_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_GEYSER</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_GEYSER_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GEYSER_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_CARAVANSARY</RequiredBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GEYSER_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_LUMBERMILL</ImprovementRequired>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_GEYSER_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GEYSER</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GEYSER</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GEYSER</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_GEYSER</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_CityYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FOUNTAIN_YOUTH_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>-5</Yield>
+		</Row>
+	</CityEventChoice_CityYield>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MEDICAL_LAB</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_SPACESHIP_FACTORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_ResourceQuantity>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_2</CityEventChoiceType>
+			<ResourceType>RESOURCE_FUR</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+	</CityEventChoice_ResourceQuantity>
+	<CityEventChoice_ImprovementYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_2</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_3</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+	</CityEventChoice_ImprovementYieldChange>
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_GEYSER</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_GEYSER</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_3</CityEventChoiceType>
+			<FeatureType>FEATURE_GEYSER</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>6</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_GEYSER_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION">
+			<Text>Pretty Cool-dera</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_HELP">
+			<Text>Greetings to Your Majesty. I bring a report from our man stationed at the Geyser. The Yellowstone Caldera has been seeing some unusual activity recently, and he is looking for advice on how to proceed.[NEWLINE]What shall I write, Your Grace?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_1">
+			<Text>The Natural Wonder permanently yields +1 [ICON_RESEARCH] Science and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_2">
+			<Text>At the expense of -5 [ICON_FOOD] Food per turn, all nearby Camps provide +1 [ICON_GOLD] Gold and you receive a copy of [ICON_RES_FUR] Furs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_3">
+			<Text>Regulations reduce the [ICON_PRODUCTION] of nearby Lumbermills by -1. In return, the Natural Wonder yields +6 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_HELP_CHOICE_4">
+			<Text>Investigating the various phenomena of The Caldera allows any Research Lab, Medical Lab or Spaceship Factory present in the City to generate +5 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_1">
+			<Text>These disturbances he describes must have a rational explanation, see to it we find them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_2">
+			<Text>*The correspondence goes into depth about trappers who have set up camp in the region*[NEWLINE]The culling of nature is sometimes necessary if our current populations can take the hit, I'd like to see how much this development could benefit the hunting industry locally.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_3">
+			<Text>*Logging ventures in the local regions infringe on The Caldera, threatening natural habitats*[NEWLINE]Place restrictions on how much these loggers can chop, we must ensure such a bountiful resource is not damaged, accidentally or otherwise.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_GEYSER_DESCRIPTION_CHOICE_4">
+			<Text>*Modern scientific techniques have discovered much in the region, from the small to the... disastrously large*[NEWLINE]This is excellent news, once again Nature inspires us to higher things!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

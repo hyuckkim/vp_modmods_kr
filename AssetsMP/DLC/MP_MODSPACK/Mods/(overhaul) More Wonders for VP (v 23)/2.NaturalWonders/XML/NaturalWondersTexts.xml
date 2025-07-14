@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_TITLE">
+			<Text>You found [COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR] and gain 1 [ICON_HAPPINESS_1] from the discovery!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_HAPPINESS">
+			<Text>(unused)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS">
+			<Text>[NEWLINE][NEWLINE]Base yields:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_PER_ERA">
+			<Text>(Per Era yields: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_ADJACENT">
+			<Text>[NEWLINE]Adjacent Plot yields: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_RIVER">
+			<Text>[NEWLINE]River yields: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]Abilities:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PASSABLE">
+			<Text>[NEWLINE][ICON_BULLET]passable after researching [COLOR_CYAN]{1_Tech}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_MOVE_END">
+			<Text>[NEWLINE][ICON_BULLET]entering the tile finishes movement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_GOLD_FIRST_FIND">
+			<Text>[NEWLINE][ICON_BULLET]first finder: {1_Gold} [ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_GOLD_NEXT_FIND">
+			<Text>[NEWLINE][ICON_BULLET]subsequent finder: {1_Gold} [ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_DEFENSE">
+			<Text>[NEWLINE][ICON_BULLET]tile defense: +{1_Defense}% [ICON_STRENGTH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_DAMAGE">
+			<Text>[NEWLINE][ICON_BULLET]damage to units: [COLOR_NEGATIVE_TEXT]-{1_Damage} HP[ENDCOLOR]/Turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_OTHER_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]Owner abilities (if inside City borders):</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_MAP_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]Map abilities (affect map creation):</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET]is a source of [COLOR_POSITIVE_TEXT]Fresh Water[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FREE_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]all[ENDCOLOR] {1_Unit_types} units: {2_Promotion} ({3_Help})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_NEAR_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]nearby[ENDCOLOR] {1_Unit_types} units: {2_Promotion} ({3_Help})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_LOCATION_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to {1_Unit_types} units [COLOR_POSITIVE_TEXT]on the tile[ENDCOLOR]: {2_Promotion} ({3_Help})</Text>
+		</Row>
+
+
+		<!-- Unit types elligible for promotions (for text purpose) -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_EVERLASTING_YOUTH"> <!-- Fountain of Youth -->
+			<Text>[COLOR_YIELD_GOLD]Melee Military[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_SACRED_STEPS"> <!-- Sri Pada -->
+			<Text>[COLOR_YIELD_GOLD]Civilian[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_KAILASH">
+			<Text>[COLOR_YIELD_GOLD]Missionary[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_ULURU">
+			<Text>[COLOR_YIELD_GOLD]Diplomatic[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_ALTITUDE_TRAINING"> <!-- Kilimanjaro -->
+			<Text>[COLOR_YIELD_GOLD]Recon[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_SOLOMONS_MINES">
+			<Text>[COLOR_YIELD_GOLD]Worker[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_BERMUDA_TRIANGLE">
+			<Text>[COLOR_YIELD_GOLD]all[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_DALLOL">
+			<Text>[COLOR_YIELD_GOLD]Siege[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_CAUSEWAY">
+			<Text>[COLOR_YIELD_GOLD]Archaeologist[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_MT_EVEREST">
+			<Text>[COLOR_YIELD_GOLD]Recon[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_HA_LONG">
+			<Text>[COLOR_YIELD_GOLD]Naval[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_AURORA">
+			<Text>[COLOR_YIELD_GOLD]Land[ENDCOLOR]</Text>
+		</Row>
+
+
+
+		<!-- Special abilities -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_A">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/all Sea luxury resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_B">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD]/all Fishing Boats</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_C">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD]/all Fishing Boats</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CRATER">
+			<Text>[NEWLINE][ICON_BULLET]10 [ICON_GOLDEN_AGE] every time you research a [ICON_RESEARCH] Technology[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FUJI">
+			<Text>[NEWLINE][ICON_BULLET]+3 [ICON_GREAT_ARTIST] in Capital[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_WRITER] in Capital[NEWLINE][ICON_BULLET]+1 [ICON_GREAT_MUSICIAN] in Capital</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MESA">
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] towards Mounted Military Units[NEWLINE][ICON_BULLET]+1 [ICON_SILVER_FIST][ICON_SILVER_FIST] Military Supply Cap</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_VOLCANO">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD], +1 [ICON_RESEARCH]/all Scientists[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_SCIENTIST] in Capital</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GIBRALTAR">
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_STRENGTH][ICON_STRENGTH][NEWLINE][ICON_BULLET]+1 [ICON_DIPLOMAT] World Congress Vote for every 8 [ICON_CITY_STATE] City-States at the start of the game</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GEYSER">
+			<Text>[NEWLINE][ICON_BULLET]-10% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Needs Modifier[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/all Engineers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FOUNTAIN_YOUTH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_POTOSI">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_SILVER][ICON_RES_SILVER]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EL_DORADO">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PEACE]/[ICON_RES_GOLD][ICON_RES_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SRI_PADA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI">
+			<Text>[NEWLINE][ICON_BULLET]50 [ICON_PEACE] every time you gain possesion of this Natural Wonder[NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/all Holy Sites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_KAILASH">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE]/all Monuments and Temples</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ULURU">
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards Diplomatic Units in Capital</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LAKE_VICTORIA">
+			<Text>[NEWLINE][ICON_BULLET]allows establishing [ICON_FOOD] Trade Routes across the Empire[NEWLINE][ICON_BULLET]-10% [ICON_GOLD][ICON_GOLD] Hurry Cost Modifier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_KILIMANJARO">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE]/[ICON_RES_IVORY][ICON_RES_IVORY]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SOLOMONS_MINES">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_GOLDEN_AGE]/all Mines</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_A">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION]/all Factories and (any) Power Plants[NEWLINE][ICON_BULLET]+7% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_B">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION]/all Factories and (any) Power Plants[NEWLINE][ICON_BULLET]+3% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_A">
+			<Text>[NEWLINE][ICON_BULLET]+6% [ICON_TOURISM][ICON_TOURISM]/all Landmarks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_B">
+			<Text>[NEWLINE][ICON_BULLET]+14% [ICON_TOURISM][ICON_TOURISM]/all Landmarks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_EVEREST">
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_TOURISM][ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_RETBA">
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_FOOD][ICON_FOOD][NEWLINE][ICON_BULLET]+10% [ICON_FOOD][ICON_FOOD] during [ICON_HAPPINESS_1] WLTKD[NEWLINE][ICON_BULLET]15 [ICON_TOURISM] every time a [ICON_CITIZEN] Citizen is born</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_A">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_B">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_C">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LUMI_BAY">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_FISH][ICON_RES_FISH], [ICON_RES_TROPICAL_FISH][ICON_RES_TROPICAL_FISH][NEWLINE][ICON_BULLET]25 [ICON_TOURISM] every time a Civilian unit is created</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DALLOL">
+			<Text>[NEWLINE][ICON_BULLET]+1 flat [ICON_RES_SYLVITE][NEWLINE][ICON_BULLET]-5% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Boredom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_PAEKTU">
+			<Text>[NEWLINE][ICON_BULLET]first owner gets unique building in the City nearby: [COLOR_YIELD_FOOD]Altar of the Born under the Mountain[ENDCOLOR] with unique [ICON_GREAT_WORK] [COLOR_CULTURE_STORED]Kim Il-sung and Kim Jong-il standing at the peak of Mount Paektu[ENDCOLOR], and other bonuses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_A">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_B">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_C">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BLUE_HOLE">
+			<Text>[NEWLINE][ICON_BULLET]can be improved with [COLOR_POSITIVE_TEXT]Fishing Boat[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Offshore Platform[ENDCOLOR][NEWLINE][ICON_BULLET]allows construction of 3 late game coastal city buildings: [COLOR_YIELD_FOOD]Scuba Diving Resort[ENDCOLOR], [COLOR_YIELD_FOOD]Deep Ocean Research Facility[ENDCOLOR] and [COLOR_YIELD_FOOD]Bathyscaphe Docking Bay[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_A">
+			<Text>[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] to all Writers' Guilds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_B">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] to all Writers' Guilds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_A">
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_B">
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE][ICON_BULLET]+1 [ICON CULTURE] to all [ICON_GREAT_WORK] Artifacts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ZHANGJIAJIE">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]50 [ICON_TOURISM] every time a [ICON_GREAT_PEOPLE] Great Person is expended</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_A">
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_B">
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_C">
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+		</Row>
+
+
+
+		<!-- Map abilities -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_A">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_B">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_C">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CRATER">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_FUJI">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MESA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_VOLCANO">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]3 additional island tiles[ENDCOLOR] in the 2nd ring of water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GIBRALTAR">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GEYSER">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_FOUNTAIN_YOUTH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_POTOSI">
+			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_SILVER] on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EL_DORADO">
+			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_GOLD] on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SRI_PADA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_SINAI">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_KAILASH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ULURU">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_LAKE_VICTORIA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_KILIMANJARO">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SOLOMONS_MINES">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SALAR_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SALAR_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CAUSEWAY_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CAUSEWAY_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_EVEREST">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_RETBA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_LUMI_BAY">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DALLOL">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_PAEKTU">
+			<Text>[NEWLINE][ICON_BULLET]is a source of [COLOR_POSITIVE_TEXT]3 new Rivers[ENDCOLOR] on the map</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BLUE_HOLE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_A">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] Tropical Fish and up to 1 [ICON_RES_TORTOISE] Giant Tortoise on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_B">
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] Tropical Fish and up to 1 [ICON_RES_TORTOISE] Giant Tortoise on adjacent tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_HA_LONG_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_HA_LONG_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ZHANGJIAJIE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_C">
+			<Text></Text>
+		</Row>
+
+
+
+		<!-- Quotes -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_A">
+			<Text>"Organisms don't think of carbon dioxide as a poison. Plants and organisms that make shells, coral, think of it as a building block."[NEWLINE] - Janine Benyus[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_B">
+			<Text>"Organisms don't think of carbon dioxide as a poison. Plants and organisms that make shells, coral, think of it as a building block."[NEWLINE] - Janine Benyus[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_C">
+			<Text>"Organisms don't think of carbon dioxide as a poison. Plants and organisms that make shells, coral, think of it as a building block."[NEWLINE] - Janine Benyus[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CRATER">
+			<Text>"In fact we can now prove that this crater is due to the collision with the earth of an extra-terrestrial body, possibly a small asteroid, which was presumably metallic in nature."[NEWLINE] - Daniel Barringer[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_FUJI">
+			<Text>"O snail, climb Mount Fuji, but slowly, slowly!"[NEWLINE] - Kobayashi Issa[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MESA">
+			<Text>"The Colorado plateau with its magnificent deep canyons and towering peaks has not been an environment particularly hospitable to man. It is a land of extremes: flat-topped plateaus and mesas or vertical-walled canyons; ice-draped peaks or desert sands; unbearable heat or arctic blizzards; great aridity or thundering rapids."[NEWLINE] - Donald L. Baars[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_VOLCANO">
+			<Text>"I saw with amazement that the island of Krakatoa lay completely burnt and barren in front of our eyes and that at four locations was throwing up large chunks of fire."[NEWLINE] - Johann Wilhelm Vogel[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GIBRALTAR">
+			<Text>"Look round, my boys, and view how beautiful the Rock appears by the light of the glorious fire."[NEWLINE] - George Augustus Eliott[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GEYSER">
+			<Text>"It spouted at regular intervals nine times during our stay, the columns of boiling water being thrown from ninety to one hundred and twenty-five feet at each discharge, which lasted from fifteen to twenty minutes. We gave it the name of Old Faithful."[NEWLINE] - Nathaniel P. Langford[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_FOUNTAIN_YOUTH">
+			<Text>"There is a fountain of youth: it is your mind, your talents, the creativity you bring to your life and the lives of people you love. When you learn to tap this source, you will truly have defeated age."[NEWLINE] - Sophia Loren[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_POTOSI">
+			<Text>"I am rich Potosi, treasure of the world, king of all mountains and envy of kings."[NEWLINE] - First Coat of Arms of Potosi[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EL_DORADO">
+			<Text>"This is the ceremony that became the famous El Dorado, which has taken so many lives and fortunes."[NEWLINE] - Juan Rodriguez Freyle[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SRI_PADA">
+			<Text>"After long waiting, he was able to climb to the summit and contemplate the impression of the Buddha's foot. From the top he saw to the north west the kingdom of Ceylon and on the other side the ocean."[NEWLINE] - notes from the pilgrimage of Vajrabodhi[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_SINAI">
+			<Text>"When the Lord finished speaking to Moses on Mount Sinai, he gave him the two tablets of the covenant law, the tablets of stone inscribed by the finger of God."[NEWLINE] - Exodus 31:18[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_KAILASH">
+			<Text>"After thus having instructed the godly ones Lord Brahma went away with in his wake the forefathers and the leaders of the people whom he took from his own place to the abode of Lord Shiva, Kailash, the best of all mountains that is so dear to the master."[NEWLINE] - The Bhagavata Purana[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ULURU">
+			<Text>"Australia is the home of the largest living thing on Earth, the Great Barrier Reef, and of the largest monolith, Ayers Rock (or Uluru to use its now-official, more respectful aboriginal name)."[NEWLINE] - Bill Bryson[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_LAKE_VICTORIA">
+			<Text>"I saw that old father Nile without any doubt rises in the Victoria Nyanza, and as I had foretold, that lake is the great source of the holy river which cradled the first expounder of our religious belief."[NEWLINE] - John Hanning Speke[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_KILIMANJARO">
+			<Text>"As it turns out, Mount Kilimanjaro is not wi-fi enabled, so I had to spend two weeks in Tanzania talking to the people on my trip."[NEWLINE] - Nancy Bonds[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SOLOMONS_MINES">
+			<Text>"With my own eyes have I seen the countless diamonds stored in Solomon's treasure chamber behind the white Death; but through the treachery of Gagool, the witch-finder, I might bring naught away, scarcely my life."[NEWLINE] - King Solomon's Mines, page 25[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SALAR_A">
+			<Text>"I shivered in those solitudes when I heard the voice of the salt in the desert."[NEWLINE] - Pablo Neruda[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SALAR_B">
+			<Text>"I shivered in those solitudes when I heard the voice of the salt in the desert."[NEWLINE] - Pablo Neruda[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CAUSEWAY_A">
+			<Text>"The remains of some mighty fabric, hurled into desolation by a tremendous earthquake, or some other equally terrible convulsion of nature."[NEWLINE] - Philip Dixon Hardy[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CAUSEWAY_B">
+			<Text>"The remains of some mighty fabric, hurled into desolation by a tremendous earthquake, or some other equally terrible convulsion of nature."[NEWLINE] - Philip Dixon Hardy[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_EVEREST">
+			<Text>"No one remembers who climbed Mount Everest the second time."[NEWLINE] - Sir Edmund Hillary[NEWLINE][NEWLINE]"If it is a shame to be the second man on Mount Everest, then I will have to live with this shame."[NEWLINE] - Tenzing Norgay[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_RETBA">
+			<Text>"Water, water everywhere, nor any drop to drink."[NEWLINE] - Samuel Taylor Coleridge[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_A">
+			<Text>"Bermuda Triangle are much older than many people think. Ever since the earliest days of oceanic exploration sailors have witnessed strange sights."[NEWLINE] - C.R. Hale[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_B">
+			<Text>"Bermuda Triangle are much older than many people think. Ever since the earliest days of oceanic exploration sailors have witnessed strange sights."[NEWLINE] - C.R. Hale[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_C">
+			<Text>"Bermuda Triangle are much older than many people think. Ever since the earliest days of oceanic exploration sailors have witnessed strange sights."[NEWLINE] - C.R. Hale[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_LUMI_BAY">
+			<Text>"The emission of light from fire, lightning bolts, stars or living beings attracts the attention of any human being. In the case of bioluminescence the light has a strange glow, something magic and mysterious."[NEWLINE] - Cassius Stevani[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DALLOL">
+			<Text>"Welcome to Dallol, Ethiopia, where the air is toxic, the ground spits acid, and there is no fresh water!"[NEWLINE] - National Geographic TV[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_PAEKTU">
+			<Text>"We will go on spring days, we will go on winter, Mount Paektu, Paektu, home of my heart."[NEWLINE] - "We will go to Mount Paektu", North Korean anthem[NEWLINE][NEWLINE]"Until the East Sea's waves are dry, Mt. Baekdu worn away, God watch o'er our land forever, our Korea manse."[NEWLINE] - "Aegugka", South Korean anthem[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_A">
+			<Text>"Oddly, it appears not to be the scar of a meteorite but a deeply eroded dome, with a rainbow-inspired color scheme."[NEWLINE] - Chris Hadfield[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_B">
+			<Text>"Oddly, it appears not to be the scar of a meteorite but a deeply eroded dome, with a rainbow-inspired color scheme."[NEWLINE] - Chris Hadfield[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_C">
+			<Text>"Oddly, it appears not to be the scar of a meteorite but a deeply eroded dome, with a rainbow-inspired color scheme."[NEWLINE] - Chris Hadfield[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BLUE_HOLE">
+			<Text>"Scuba divers and snorkelers have been cruising the surface waters for decades, but few have dared to venture deeper and explore what lies beyond the blackness."[NEWLINE] -  Steve Cameron and Rebecca Wilkin[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GALAPAGOS_A">
+			<Text>"The archipelago is a little world within itself, or rather a satellite attached to America, whence it has derived a few stray colonists, and has received the general character of its indigenous population."[NEWLINE] -  Charles Darwin[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GALAPAGOS_B">
+			<Text>"The archipelago is a little world within itself, or rather a satellite attached to America, whence it has derived a few stray colonists, and has received the general character of its indigenous population."[NEWLINE] -  Charles Darwin[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_HA_LONG_A">
+			<Text>"If you don't like my ocean don't fish in my sea. Stay out of my valley and let my mountain be."[NEWLINE] - Ma Rainey[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_HA_LONG_B">
+			<Text>"If you don't like my ocean don't fish in my sea. Stay out of my valley and let my mountain be."[NEWLINE] - Ma Rainey[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ZHANGJIAJIE">
+			<Text>"Mountains teach that not everything in this world can be rationally explained."[NEWLINE] - Aleksander Lwow[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_A">
+			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
+			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_B">
+			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
+			<!---->
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_C">
+			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
+			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
+		</Row>
+		
+
+
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK">
+			<Text>Natural Wonders Overview</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK_TT">
+			<Text>Shows all discovered Natural Wonders and their abilities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_OVERVIEW">
+			<Text>Natural Wonders Overview</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_NAME">
+			<Text>Name</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_CIV">
+			<Text>Pedia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_OWNER">
+			<Text>Owner</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_DISTANCE">
+			<Text>Distance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_NAME_TT">
+			<Text>LMB: Sort by name</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_CIV_TT">
+			<Text>LMB: Sort by name</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_OWNER_TT">
+			<Text>LMB: Sort by current owner alphabetically[NEWLINE]RMB: Sort by current owner alphabetically with yours on top</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_DISTANCE_TT">
+			<Text>LMB: Sort by lowest distance from your cities[NEWLINE]RMB: Sort by your cities with lowest distances</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_OWNER_UNKNOWN_TT">
+			<Text>Unknown</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_NATURAL_WONDER_NO_WONDER">
+			<Text>You have found no Natural Wonder yet!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_NATURAL_WONDER_COUNT">
+			<Text>Natural Wonders found: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DISTANCE">
+			<Text>{1_Distance} tiles from[NEWLINE][COLOR_CYAN]{2_ClosestCity}[ENDCOLOR]</Text>
+		</Row>
+
+		
+		
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_A">
+			<Text>Great Barrier Reef (core)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_B">
+			<Text>Great Barrier Reef (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_C">
+			<Text>Great Barrier Reef (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_FEATURE_REEF"/>
+			<Set Text="[COLOR:50:50:50:255](unused) Great Barrier Reef[ENDCOLOR]"/>
+		</Update>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_SALAR_A">
+			<Text>Salar de Uyuni (big)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_SALAR_B">
+			<Text>Salar de Uyuni (small)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_A_TEXT">
+			<Text>Salar de Uyuni is the largest salt flat in the world. When wet, its surface becomes a massive mirror, which is famously beautiful. Several species of flamingo use Salar de Uyuni as their breeding ground. Salar de Uyuni is particularly rich in lithium salt, and contains over half of the world's lithium reserves. Its large, flat surface is excellent for calibrating distance measurements in satellites. Satellites have been able to measure distances from points on the earth accurate to within an inch when calibrated against the surface of Salar de Uyuni.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_B_TEXT">
+			<Text>Salar de Uyuni is the largest salt flat in the world. When wet, its surface becomes a massive mirror, which is famously beautiful. Several species of flamingo use Salar de Uyuni as their breeding ground. Salar de Uyuni is particularly rich in lithium salt, and contains over half of the world's lithium reserves. Its large, flat surface is excellent for calibrating distance measurements in satellites. Satellites have been able to measure distances from points on the earth accurate to within an inch when calibrated against the surface of Salar de Uyuni.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_CAUSEWAY_A">
+			<Text>Giant's Causeway (sea)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_CAUSEWAY_B">
+			<Text>Giant's Causeway (land)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_CAUSEWAY_TEXT">
+			<Text>Giant's Causeway is large cluster of hexagonal basalt columns formed from an ancient volcanic eruption. The tallest columns reach approximately 40 feet high. The columns formed during the Paleocene Epoch when molten basalt cooled and cracked into columns in a process similar to how cracks form in drying mud. According to legend, the causeway was built by an Irish giant in order to respond to a challenge issued by a Scottish giant. The causeway between the islands was destroyed in the resulting fight, with Giant's Causeway the principle remains. There is a smaller cluster of basalt columns across the North Sea in Scotland formed as part of the same ancient lava flow, leading to speculation that these matching columns inspired the legend.</Text>
+		</Row>
+
+
+
+		<!-- This name have already existed in Civ 5 files! -->
+		<!--<Row Tag="TXT_KEY_FEATURE_MT_EVEREST">
+			<Text>Mt. Everest</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>-->
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_EVEREST_TEXT">
+			<Text>Mount Everest is the tallest mountain in the world, towering 29,029 feet (8,848 meters) above sea level. The mountain reaches to the stratosphere, causing wind speeds to routinely exceed 100 miles per hour at the summit. The atmospheric pressure at the peak of Mount Everest is roughly one third of the pressure at sea level. In 1953, Tenzing Norgay and Edmund Hillary became the first humans known to have ascended to the summit. However, it is possible that Everest was summited in 1924 when George Mallory and Andrew Irving disappeared into clouds high on the mountain. Tragically, they did not successfully descend the mountain, and whether they reached the peak first is unknown. Mount Everest is named after Sir George Everest, a former Surveyor General of India. Everest himself opposed this name, arguing that there were local names for the mountain which would be better choices.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_RETBA">
+			<Text>Lake Retba</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_RETBA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_BERMUDA">
+			<Text>Bermuda Triangle</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_BERMUDA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_LUMI_BAY">
+			<Text>Bioluminescent Bay</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_LUMI_BAY_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_DALLOL">
+			<Text>Dallol</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_DALLOL_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_MT_PAEKTU">
+			<Text>Mt. Paektu</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_PAEKTU_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_EYE_OF_SAHARA">
+			<Text>Eye of the Sahara</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_EYE_OF_SAHARA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+		
+		
+		
+		<Row Tag="TXT_KEY_FEATURE_BLUE_HOLE">
+			<Text>Great Blue Hole</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_BLUE_HOLE_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_GALAPAGOS_A">
+			<Text>Galapagos (big)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_GALAPAGOS_B">
+			<Text>Galapagos (small)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_GALAPAGOS_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_HA_LONG_A">
+			<Text>Ha Long Bay (primary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_HA_LONG_B">
+			<Text>Ha Long Bay (secondary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_HA_LONG_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_ZHANGJIAJIE">
+			<Text>Zhangjiajie</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_ZHANGJIAJIE_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_AURORA">
+			<Text>Aurora Borealis</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_AURORA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

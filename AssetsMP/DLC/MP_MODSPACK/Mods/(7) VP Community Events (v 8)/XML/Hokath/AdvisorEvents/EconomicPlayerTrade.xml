@@ -1,0 +1,230 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_PLAYER_TRADE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP</Help>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisoreconomic.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+			<EventChoice>EVENT_AES_ECONOMIC_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<Event_MinimumStartYield>
+		<Row>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+	</Event_MinimumStartYield>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>75</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>75</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>75</EventDuration>
+			<EraScaling>true</EraScaling>
+			<MinimumNumCoastalCities>4</MinimumNumCoastalCities>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>75</EventDuration>
+			<EraScaling>true</EraScaling>
+			<RequiredPolicy>POLICY_AESTHETICS</RequiredPolicy>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AES_ECONOMIC_PLAYER_TRADE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_WHEAT</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_CityYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</EventChoice_CityYield>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_TerrainYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_TerrainYieldChange>
+	
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_ECONOMIC_PLAYER_TRADE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION">
+			<Text>Projected Growth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP">
+			<Text>Our Economic Advisor has overseen the stockpiling of a significant amount of capital. She would now like to begin funding one of her pilot schemes. Which scheme should be given the green light?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>Spend {3_CityYieldGlobal} in each City in order to harvest an additional +1 [ICON_FOOD] Food from Farms, Plantations and Pastures for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>Spend {3_CityYieldGlobal} in each City in order to expand excavations, yielding +2 [ICON_PRODUCTION] Production from Mines and Quarries for {4_Turns}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>Spend {3_CityYieldGlobal} in each City in order to gain an additional +1 [ICON_GOLD] Gold from Coastal Tiles for {4_Turns}. Receive an additional +2 [ICON_GOLD] Gold if the Tile also hosts Fishing Boats.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_HELP_CHOICE_4">
+			<Text>Fund artistic projects in every City, locally converting {3_CityYieldGlobal} for {4_Turns}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>It is nearing harvest time, it strikes me that this agricultural exchange program would be very timely!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>This Empire is carried on the backs of its miners, they deserve any financial support we can muster!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>Fishermen feed this people, it is high time they saw some formal support from the government!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_ECONOMIC_PLAYER_TRADE_DESCRIPTION_CHOICE_4">
+			<Text>The countryside will get by with or without these schemes, it is the inner-cities that need our support in order to develop.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

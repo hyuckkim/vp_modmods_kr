@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_PROMOTION_ROUGH_WALKER">
+			<Text>모험가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ROUGH_WALKER_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]숲[ENDCOLOR], [COLOR_POSITIVE_TEXT]정글[ENDCOLOR], [COLOR_POSITIVE_TEXT]사막[ENDCOLOR], [COLOR_POSITIVE_TEXT]언덕[ENDCOLOR]의 지형 비용을 무시합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ALPINE">
+			<Text>스키 보병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ALPINE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]눈[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]산[ENDCOLOR]에서는 [ICON_MOVES] 이동력이 2배 증가하고 지형 비용 소모도 없습니다.[NEWLINE]산에서는 [ICON_STRENGTH] 공격력이 +25% 증가합니다.[NEWLINE]눈 속에서는 [ICON_STRENGTH] 방어력이 +30% 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING">
+			<Text>스틸워터 훈련</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]습지[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]오아시스[ENDCOLOR]에서 [ICON_STRENGTH] 공격력이 +15% 증가합니다.[NEWLINE]공격 시 또는 근접 방어 시 적 부대에[COLOR_POSITIVE_TEXT]중독[ENDCOLOR] 상태를 부여하여 5턴 동안 회복량을 10 감소시킵니다.</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE">
+			<Text>중독</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE_HELP">
+			<Text>5턴 동안 [COLOR_NEGATIVE_TEXT]치유량이 10 감소[ENDCOLOR]합니다.</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_1">
+			<Text>사보타주 I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_1_HELP">
+			<Text>공성 유닛에 대한 [ICON_STRENGTH] 전투력이 +33% 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]시설을 약탈[ENDCOLOR]하면 [ICON_RESEARCH] 과학 15를 얻습니다. (시대에 따라 보정)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_2">
+			<Text>사보타주 II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_2_HELP">
+			<Text>공성 유닛에 대한 [ICON_STRENGTH] 전투력이 +33% 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]시설을 약탈[ENDCOLOR]하면 [ICON_RESEARCH] 과학 15를 얻습니다. (시대에 따라 보정)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_3">
+			<Text>철거 전문가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABATEUR_3_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]시설을 약탈[ENDCOLOR]할 때 인접한 모든 적군 유닛이 15의 피해를 입습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_1">
+			<Text>은신 I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_1_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]적 영토[ENDCOLOR]에서 턴을 시작할 때 체력을 10 회복합니다.[NEWLINE][COLOR_POSITIVE_TEXT]요새화[ENDCOLOR]된 유닛에 대한 [ICON_STRENGTH] 공격력이 +50% 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_2">
+			<Text>은신 II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_2_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]적 영토[ENDCOLOR]에서 턴을 시작할 때 체력을 10 회복합니다.[NEWLINE][COLOR_POSITIVE_TEXT]요새화[ENDCOLOR]된 유닛에 대한 [ICON_STRENGTH] 공격력이 +50% 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_3">
+			<Text>흑색작전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSASSIN_3_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]체력이 가득 찬 유닛[ENDCOLOR]에 대한 [ICON_STRENGTH] 공격력이 +50% 증가합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

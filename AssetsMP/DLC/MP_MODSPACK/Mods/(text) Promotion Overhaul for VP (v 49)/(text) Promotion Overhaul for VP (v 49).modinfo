@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6f162445-8dd2-4809-b8b4-aa405d4b2107" version="49">
+  <Properties>
+    <Name>(text) Promotion Overhaul for VP</Name>
+    <Teaser>Promotion Overhaul for VP</Teaser>
+    <Description>Promotion Overhaul for VP 4.2.X
+Compatible with MW v21.
+Compatible with UCS v16.
+Compatible with AT v2
+Compatible with EAW v1,9.
+Compatible with MB.
+Compatible with EE v4.
+
+Look into Credits and Changelog for more information.</Description>
+    <Authors>adan_eslavo</Authors>
+    <SpecialThanks>Credits.txt</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="Unique City-States" />
+    <Mod id="871da714-b2c6-49e9-8882-57489f501dba" minversion="0" maxversion="999" title="Enhanced Air Warfare 4VP" />
+    <Mod id="b78bcb1e-7a4a-421c-bc4d-46bd727f1761" minversion="0" maxversion="999" title="Recruitment Office" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonder for VP" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightment Era for VP" />
+    <Mod id="fe245559-0525-41bb-9e1c-b281e018b5fc" minversion="0" maxversion="999" title="CIV-linked GGs and GAs" />
+    <Mod id="af808977-d774-48c3-9b02-a7d23c34cc3f" minversion="0" maxversion="999" title="Additional Tweaks for VP" />
+    <Mod id="7b2d759e-3366-41c7-8e0c-b4ebfe1c79g2" minversion="0" maxversion="999" title="(@pineappledan's) Cambodia" />
+    <Mod id="8562c016-f5bb-40f1-b37e-d3b40d3fg13e" minversion="0" maxversion="999" title="(@pineappledan's) Canada" />
+    <Mod id="bb769714-1243-4d42-9c13-bdbb37925449" minversion="0" maxversion="999" title="(@pineappledan's) Chola" />
+    <Mod id="161f4dde-bbb8-41d2-8999-30250d9ba231" minversion="0" maxversion="999" title="(@pineappledan's) Goths" />
+    <Mod id="dcdaabd2-b224-4680-bdc0-d8692a1a1249" minversion="0" maxversion="999" title="(@pineappledan's) Inuit" />
+    <Mod id="35e27828-cf22-4aec-b087-08169fa4e430" minversion="0" maxversion="999" title="(@pineappledan's) Israel" />
+    <Mod id="d4d41747-f4f3-4861-9346-928634c8c68f" minversion="0" maxversion="999" title="(@pineappledan's) Macedon" />
+    <Mod id="4bd78158-67ce-4bd5-9b43-c7d4b1503a96" minversion="0" maxversion="999" title="(@pineappledan's) Nubia" />
+    <Mod id="2b5ad645-8094-4ed7-a488-1e49eb9277aa" minversion="0" maxversion="999" title="(@pineappledan's) Philippines" />
+    <Mod id="7762c016-f5bb-40f1-b37e-d3b40d4gh23e" minversion="0" maxversion="999" title="(@pineappledan's) Phoenicia" />
+    <Mod id="7dbedfbe-cce4-49cd-a2bc-3507e38f4bd4" minversion="0" maxversion="999" title="(@pineappledan's) Sumer" />
+    <Mod id="cc3e1671-2832-40dc-9bfd-8e053d3b76b2" minversion="0" maxversion="999" title="(@pineappledan's) Timurids" />
+    <Mod id="bb769714-1243-4d42-9c13-bdbb55405064" minversion="0" maxversion="999" title="(@pineappledan's) Tlingit" />
+    <Mod id="3499cc3d-2073-42c9-9bf0-f39db982e741" minversion="0" maxversion="999" title="(@gwennog's) Ainu" />
+    <Mod id="63b1732e-5fff-449e-a5bc-17ab5ed71e3a" minversion="0" maxversion="999" title="(@gwennog's) Basques" />
+    <Mod id="55abc424-63ea-4858-a3e5-15e8cca4890b" minversion="0" maxversion="999" title="(@gwennog's) Corsica" />
+    <Mod id="5bc5cebf-f7fc-4cf7-8669-726e58ad476e" minversion="0" maxversion="999" title="(@gwennog's) Ireland" />
+    <Mod id="a17e6c5d-d00b-4650-a09b-61c34a299f51" minversion="0" maxversion="999" title="(@gwennog's) Kyivian Rus" />
+    <Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" minversion="0" maxversion="999" title="(@gwennog's) Louisiana" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="6F661EA800680C8F3B41894885DF93EA" import="0">Changelog.txt</File>
+    <File md5="90757CCDB3D07FBF821C300AF0AC3F47" import="0">Compatibility/PO-AT.sql</File>
+    <File md5="0476C6ABA3B823A508F1AAC0DA065BF0" import="0">Compatibility/PO-CIV.sql</File>
+    <File md5="70EDFF9A8BBA7604E60BC14487CA1A54" import="0">Compatibility/PO-EAW.sql</File>
+    <File md5="0038CB8D0566F522582C6788C003B7A1" import="0">Compatibility/PO-EE.sql</File>
+    <File md5="6E12217EEC3662B561842E6C9E682E79" import="0">Compatibility/PO-MB.sql</File>
+    <File md5="9CA80C83CE429676F69964AEB47CD71B" import="0">Compatibility/PO-MUCfVP.sql</File>
+    <File md5="79851FBCD1C4CE5A50EC054DB47D27F2" import="0">Compatibility/PO-MW.sql</File>
+    <File md5="3E30767B2DB51689DD18052F4DD4B222" import="0">Compatibility/PO-UCS.sql</File>
+    <File md5="01902724B62AA52B9A26FBE6837C1382" import="0">Credits.txt</File>
+    <File md5="931B8F1A245FB328057687FBCF1EE807" import="0">Texts/Closer.sql</File>
+    <File md5="C0C5A7B200D5FD61857B599250E0BB32" import="0">Texts/PromotionTextChanges.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Texts/PromotionTextChanges.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-MW.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-UCS.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-AT.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-CIV.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-MB.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-EAW.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-EE.sql</UpdateDatabase>
+      <UpdateDatabase>Compatibility/PO-MUCfVP.sql</UpdateDatabase>
+      <UpdateDatabase>Texts/Closer.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

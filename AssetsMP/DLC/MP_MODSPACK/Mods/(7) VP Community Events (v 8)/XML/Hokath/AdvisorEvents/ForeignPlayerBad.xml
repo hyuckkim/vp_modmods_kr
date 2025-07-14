@@ -1,0 +1,233 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>40</RandomChance>
+			<RandomChanceDelta>3</RandomChanceDelta>
+			<RequiredEra>ERA_MEDIEVAL</RequiredEra>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorforeign.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD</EventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION">
+			<Text>Invasive Species</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>Pets sent as a gift by foreign dignitaries have escaped into the wild. They are rapidly breeding, consuming crops everywhere. Farms lose -1 [ICON_FOOD] Food until something can be done. Markets gain +1 [ICON_FOOD] Food.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>Invasive Species</Text>
+		</Row>
+	</Language_en_US>
+	
+	<!-- Follow up 'cures', require later techs-->
+	<Events>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>25</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE</EventType>
+			<EventLinker>EVENT_AES_FOREIGN_PLAYER_BAD</EventLinker>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>-4</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>150</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_FOREIGN_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION">
+			<Text>Rabbit Season</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP">
+			<Text>The pest problem that has been ravaging the countryside finally appears to have a solution! It's not entirely pleasant...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_1">
+			<Text>Hand over 4 copies of [ICON_RES_IRON] Iron to your chemists. Farms regain +1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_2">
+			<Text>Pull {1_YieldCost} worth of biologists off their current projects. Farms regain +1 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_HELP_CHOICE_3">
+			<Text>Gain a stockpile of {2_InstantYield} in every City. Farms regain +1 [ICON_FOOD] Food.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
+			<Text>Salts derived from Iron oxides have been demonstrated to be neutral towards crops, but highly toxic towards rabbits...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
+			<Text>A highly infectious disease, that causes its victims to die horribly, has been observed in some members of the rabbit population. With a little bit of cultivation, we can release infected specimens into key locations, eradicating the pests once and for all.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_FOREIGN_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
+			<Text>Our Fusiliers are absolutely atrocious at hitting moving targets. It looks like we will be able to kill two rabbits with one stone.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

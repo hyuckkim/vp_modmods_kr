@@ -1,0 +1,475 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_ROME_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_ROME</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_COURTHOUSE</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_ROME_UE_DUMMY</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_BATH</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresWar>true</RequiresWar>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+			<ObsoleteEra>ERA_MODERN</ObsoleteEra>
+			<FreeUnitsTechAppropriate>3</FreeUnitsTechAppropriate>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<RequiresWarMinor>true</RequiresWarMinor>
+			<EventPromotion>PROMOTION_BARRAGE_4</EventPromotion>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_ROME_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<EventPromotion>PROMOTION_UE_ALPINI</EventPromotion>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_ROME_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ROME_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_ROME_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ROME_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_ROME_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_ROME_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_ROME_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<PlotCultureCostModifier>-15</PlotCultureCostModifier>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_ALPINI</Type>
+			<Description>TXT_KEY_PROMOTION_UE_ALPINI</Description>
+			<Help>TXT_KEY_PROMOTION_UE_ALPINI_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<RoughDefense>20</RoughDefense>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_ALPINI</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_ALPINI</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_ALPINI</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	
+	
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BATH</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_FreeUnitClasses>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<UnitClassType>UNITCLASS_DIPLOMAT</UnitClassType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<UnitClassType>UNITCLASS_GREAT_WAR_INFANTRY</UnitClassType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_FreeUnitClasses>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_PAPER</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_ROME_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Consulship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_1">
+			<Text>{3_PlayerName} oversees a fiercly competative election for high office.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Roman Forum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_2">
+			<Text>{3_PlayerName} sees a merchant of humble beginnings rise to the rank of consul!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Thermae</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_3">
+			<Text>A debate over class-segregation in Rome sees the pro-plebian faction victorious.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Mayor of the Palace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_4">
+			<Text>{3_PlayerName} recruits a new generation of diplomats and mercenaries in service of the senate.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Irredenta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_5">
+			<Text>{3_PlayerName} declares City States Roman irredenta, promising to bring them all under the power of Rome.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Alphini Formation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_ROME_UE_CHOICE_6">
+			<Text>{3_PlayerName} forms the Alpini regiments to fight the enemies of the Republic!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION">
+			<Text>Vini, Vidi, Vici</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP">
+			<Text>Princeps Civitatis, one of the Consuls has died. There are many months remaining in the year, if we are to see a new consul favorable to us we must act quickly![NEWLINE]What is the will of the Emperor?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_2">
+			<Text>Introduce the Forum: Markets generate +1 [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_FOOD] Food. In addition, Border Expansion requires -15% [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_3">
+			<Text>Provide {1_YieldCost} worth of material for the Thermae: Baths generate +3 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_4">
+			<Text>Use {1_YieldCost} to attract two [COLOR_POSITIVE_TEXT]Envoy[ENDCOLOR] and three appropriate [COLOR_POSITIVE_TEXT]Unit[ENDCOLOR] to the [ICON_CAPITAL] Capital. Receive 4 [ICON_RES_PAPER] copies of Paper.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_5">
+			<Text>All eligible Units, as well as those produced in the future, gain the Infiltrators Promotion. All Embassies under your control yield +5 [ICON_CULTURE] Culture, [ICON_GOLD] Gold and [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_HELP_CHOICE_6">
+			<Text>Conscript {2_InstantYield} into four Riflemen battalions in the [ICON_CAPITAL] Capital. Your Gun and Siege Units receive the Alpini Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_1">
+			<Text>None of these candidates bear any ill will toward my leadership. The Republic welcomes them equally.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The only plebian standing is a Great Merchant, and principal architect of the massively popular Forum*[NEWLINE]We should see to it that the growth of Fora across the Empire is not impeded by political infighting.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The patricians would ban all but the most respected families from our flourishing Thermae*[NEWLINE]We cannot allow the pride of the nobility to come before the development of Rome. See to it no such candidate is elected.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The legions of Rome fade into history and our old vassals grow strong outside of our sphere of influence*[NEWLINE]We need diplomats to bring the City States back to the fold, and soldiers to conquer the ones who resist. I want a consul who shares my views, Maior Domus!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Pitiful City States dare war with the great Rome, when once they would not have dared*[NEWLINE]We are humiliated! A consul dead, likely at the hands of our enemies, and minor factions dare stand against us. I want a firebrand. I want a roman!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ROME_UE_DESCRIPTION_CHOICE_6">
+			<Text>*We are fighting a war unlike any before in history, it calls for daring unlike any before in history*[NEWLINE]Only a man of rare courage, a keen military commander and shrewd diplomat, can help me win this war. Go, find me such a man! Do not return until you have.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY">
+			<Text>Forum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ROME_UE_DUMMY_HELP">
+			<Text>-15% [ICON_CULTURE] Culture cost of acquiring tiles.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_UE_ALPINI">
+			<Text>Alpini</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_ALPINI_HELP">
+			<Text>Can transverse Mountains, +20% [ICON_STRENGTH] Defense in Rough Terrain. Granted only via Rome's Events.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

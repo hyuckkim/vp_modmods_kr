@@ -1,0 +1,162 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>10</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NUCLEAR_PLANT</RequiredAnywhereBuildingClass>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_TRADE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_COPPER</ResourceType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>-2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>-4</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Quantity>8</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>-2</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<ResourceType>RESOURCE_GOLD</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_TRADE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION">
+			<Text>Alchemy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP">
+			<Text>Researchers using the intense radiation of a nuclear reactor have developed a cost effective way of transmuting elements, within reason. We could certainly make use of this technology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_1">
+			<Text>Transmute 2 [ICON_RES_IRON] into a copy of the slightly heavier [ICON_RES_COPPER] Copper.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_2">
+			<Text>Transmute 4 [ICON_RES_IRON] into 8 copies of the lighter [ICON_RES_ALUMINUM] Aluminum.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_HELP_CHOICE_3">
+			<Text>Transmute 2 [ICON_RES_URANIUM] into 2 copies of the slightly lighter [ICON_RES_GOLD] Gold.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>Let's try something we need more of. Copper wire is extremely expensive these days, any chance we could make some more?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>In the near future I am going to need a large amount of Aluminum. Possible?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>So we can't do Iron to Gold? Disappointing. How about something else? Uranium?</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

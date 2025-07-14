@@ -1,0 +1,451 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_BRAZIL_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_BRAZIL</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_BRAZIL_UE_DUMMY</EventBuildingClassGlobal>
+			<ScienceMedianModifierGlobal>-5</ScienceMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_BANKING</PrereqTech>
+			<EventDuration>-1</EventDuration>
+			<YieldBonusAllCities>true</YieldBonusAllCities>
+			<GoldMedianModifierGlobal>5</GoldMedianModifierGlobal>
+		</Row>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_FLIGHT</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<ObsoleteEra>ERA_FUTURE</ObsoleteEra>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_BRAZIL_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_PLASTIC</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_BRAZIL_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_BRAZIL_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_BRAZIL_UE_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_BRAZIL_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_BRAZIL_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_BRAZIL_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_WLTKDYieldMod>
+		<Row>
+			<BuildingType>BUILDING_BRAZIL_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_WLTKDYieldMod>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
+			<UnitType>UNIT_BRAZILIAN_PRACINHA</UnitType>
+			<Quantity>5</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_MinimumFeatureRequired>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_MinimumFeatureRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_FeatureYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_FeatureYieldChange>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<ResourceType>RESOURCE_GOLD</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_ResourceYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SUGAR</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_COCOA</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_BANANA</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_SPICES</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ResourceYieldChange>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>750</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>750</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BRAZIL_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s New President</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_1">
+			<Text>{3_PlayerName} appoints a new president of the senate.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Jungle Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_2">
+			<Text>{3_PlayerName} begins trade with the Kuikuro peoples!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Education Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_3">
+			<Text>{3_PlayerName} places an unprecedented level of importance on education.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Gold Rush</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_4">
+			<Text>{3_PlayerName} relaxes immigration controls in light of the recent gold rush.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Pracinhas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_5">
+			<Text>{3_PlayerName} oversees the formation of an army of Pracinhas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Biodiesel Industry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BRAZIL_UE_CHOICE_6">
+			<Text>{3_PlayerName} spearheads a biofuel initiative in response to the energy crisis.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION">
+			<Text>The Men Of Tomorrow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP">
+			<Text>Emperor, the small council gathers to hear your latest proposal. There are much talk and excitement surrounding your announcement, I am personally very honored to serve such a beloved ruler.[NEWLINE]As always, we expect great things from our country's first and favorite child.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_2">
+			<Text>Trade with the Jungle tribes. Jungles yield +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold. Lumber Mills however, remove the jungle bonus. Learn the traditional ways of cultivating [ICON_RES_COCOA] Cocoa, [ICON_RES_SUGAR] Sugar, [ICON_RES_BANANA] Banana and [ICON_RES_SPICES] Spices, allowing each of these resources to yield +2 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_3">
+			<Text>Against the elites and the clergy, spend {1_YieldCost} to reduce [ICON_RESEARCH] Illiteracy thresholds by 5%. During [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR], Cities produce +10% [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_4">
+			<Text>You receive two copies of [ICON_RES_GOLD] Gold. An influx of migrants boosts population by {2_InstantYield}, but also +5% [ICON_GOLD] Poverty thresholds in every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_5">
+			<Text>Five Pracinha is recruited in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_HELP_CHOICE_6">
+			<Text>By spending {1_YieldCost} your Platations begin to produce biofuel (Gain 3 copies of [ICON_RES_OIL] Oil), yielding +2 [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Points per turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_1">
+			<Text>Thank you, President. I have come to a decision regarding your successor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_2">
+			<Text>*Many indigenous peoples remain disconnected from the Empire, deep in the jungle*[NEWLINE]We lose many in our attempt to expand into the endless jungle and cultivate the wondrous fruits of that place. Yet there exist a people who can already do this, and they can teach us, all we have to do is ask.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_3">
+			<Text>*Education is for the rich and powerful, and represents an obstacle to increased social mobility and justice*[NEWLINE]If I were not a leader, I should like to be a teacher. What better way to ensure the bright future of our people than through learning?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Precious metals are being uncovered in the unexplored reaches of the Empire, attracting much attention from dynamic people across the world*[NEWLINE]The gold rush will come and go, we can exploit it while it lasts, but the real victory will be attracting the hardest working people of today to Brazil.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_5">
+			<Text>*Many young and patriotic Brazilians wish to fight in this war!*[NEWLINE]It is not the future I had hoped for our children, yet it is the one we are given. Let them fight.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BRAZIL_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The world faces an energy crisis. The resources of Brazil place it in a unique position to combat this*[NEWLINE]I will not stand by while our forests wither and die, and our heritage is forgotten! Spend whatever resources are necessary to combat this threat which faces countries great and small.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY">
+			<Text>Brazilian Education</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_UE_DUMMY_HELP">
+			<Text>+10% [ICON_PRODUCTION] Production during WLTKD.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

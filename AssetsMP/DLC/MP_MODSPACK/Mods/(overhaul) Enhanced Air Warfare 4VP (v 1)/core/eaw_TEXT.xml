@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rev 10 -->
+
+<GameData>
+	<Language_en_US>
+	
+	
+<!-- MEDIUM BOMBER -->	
+		<Row Tag="TXT_KEY_UNIT_MEDIUMBOMBER">
+			<Text>Medium Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_MEDIUMBOMBER">
+			<Text>Air Unit that can bombard enemy Units and Cities. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MEDIUMBOMBER_STRATEGY">
+			<Text>The Medium Bomber is effective against cities, ground targets, less so against naval targets, and it is quite vulnerable to enemy aircraft. The Medium Bomber can be based on a player-owned city or aboard a carrier. It can move from base to base and perform missions within its range. Use it to attack enemy units and cities. When possible, send in Monoplanes or Fighters first to "use up" the enemy's anti-aircraft defenses for that turn. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MEDIUMBOMBER_TEXT">
+			<Text>The period in the history of aviation between the end of World War I (1918) and the beginning of World War II (1939) was characterised by a progressive change from the slow wood-and-fabric biplanes of World War I to fast, streamlined metal monoplanes. Geodesic airframe, liquid-cooled engines, variable-pitch propellers and new aluminium alloys as the Duralumin are some of the many inventions that gave birth to a medium Bomber such as the British Vicker Wellington. On 4 September 1939, less than 24 hours after the commencement of hostility, a total of 14 Wellingtons, performed the first RAF bombing raid against Nazi Germany. More than 11000 of them were built during WWII.</Text>
+		</Row>
+
+
+<!-- STRATEGIC BOMBER -->	
+		<Row Tag="TXT_KEY_UNIT_STRBOMB">
+			<Text>Strategic Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_STRBOMB">
+			<Text>Long Range Air Unit that can heavily bombard enemy Units and Cities. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_STRBOMB_STRATEGY">
+			<Text>The Strategic Bomber is effective against cities, ground targets, less so against naval targets, and it is quite vulnerable to enemy aircraft. It can be based on a player-owned city or aboard a carrier. It can move from base to base and perform missions within its range. Use it to attack enemy units and cities. When possible, send in Fighters or Jet Fighters first to "use up" the enemy's anti-aircraft defenses for that turn. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_STRBOMB_TEXT">
+			<Text>A strategic bomber is a medium- to long-range penetration bomber aircraft designed to drop large amounts of air-to-ground weaponry onto a distant target for the purposes of debilitating the enemy's capacity to wage war. Unlike tactical bombers, penetrators, fighter-bombers, and attack aircraft, which are used in air interdiction operations to attack enemy combatants and military equipment, strategic bombers are designed to fly into enemy territory to destroy strategic targets (e.g., infrastructure, logistics, military installations, factories, and cities). In addition to strategic bombing, strategic bombers can be used for tactical missions.[NEWLINE]The first strategic bombing efforts took place during World War I, by the Russians with their Sikorsky Ilya Muromets bomber (the first heavy four-engine aircraft), and by the Germans using Zeppelins or long-range multi-engine Gotha aircraft.[NEWLINE][NEWLINE]It was widely believed by the late 1930s that strategic "terror" bombing of cities in any war would quickly result in devastating losses and might decide a conflict in a matter of days or weeks. But theory far exceeded what most air forces could actually put into the air.[NEWLINE]Britain's Royal Air Force began developing four-engine long-range bombers only in the late 1930s. The U.S. Army Air Corps (Army Air Forces as of mid-1941) was severely limited by small budgets in the late 1930s, and only barely saved the B-17 bomber that would soon be vital. The equally important B-24 first flew in 1939. Both aircraft would constitute the bulk of the American bomber force that made the Allied daylight bombing of Nazi Germany possible in 1943–45.[NEWLINE][NEWLINE]During the Cold War, the United States and United Kingdom on one side and the Soviet Union on the other kept strategic bombers ready to take off on short notice as part of the deterrent strategy of mutual assured destruction (MAD). Most strategic bombers of the two superpowers were designed to deliver nuclear weapons. For a time, some squadrons of Boeing B-52 Stratofortress bombers were kept in the air around the clock, orbiting some distance away from their fail-safe points near the Soviet border.[NEWLINE][NEWLINE]Nomenclature for size classification of aircraft types used in strategic bombing varies, particularly since the time of World War II due to sequential technological advancements and changes in aerial warfare strategy and tactics. The B-29, for example was a benchmark aircraft of the heavy bomber type at end of World War II due to its size, range and load carrying ability; as the Cold War began, it became an intercontinental range strategic bomber with the development of new techniques, such as aerial refueling (which also greatly extended the range of other medium- to long-range bombers, fighter-bombers and attack aircraft). During the 1950s the U.S. Strategic Air Command also briefly brought back the outdated term "medium bomber" to distinguish its Boeing B-47 Stratojets from somewhat larger contemporary Boeing B-52 Stratofortress "heavy bombers" in bombardment wings; older B-29 and B-50 heavy bombers were also redesignated as "medium" during this period. Bombers Nomenclature was purely semantic and bureaucratic, however as both the B-47 and B-52 strategic bombers were much larger and had far greater performance and load-carrying ability than any of the World War II-era heavy or medium bombers. Other aircraft such as the twin-jet US FB-111, Douglas A-3 Skywarrior and France's Dassault Mirage IV had nominal warloads of less than 20,000 lb (9,100 kg), and were significantly smaller in size and gross weight compared with their strategic bomber contemporaries, based on which they might be classified as medium bombers. In the nuclear strike role, France would replace its Mirage IVs beginning in the late 1980s with the even smaller, single-engine Mirage 2000N fighter-bomber, a further example of advancing technologies and changing tactics in military aviation and aircraft design.</Text>
+		</Row>
+
+
+<!-- B-52 -->	
+		<Row Tag="TXT_KEY_UNIT_B52">
+			<Text>B-52</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_B52">
+			<Text>Air Unit that rains death from above onto Enemy Units and Cities. This Unit has a chance of evading interception, and does additional damage to Cities compared to the Strategic Bomber. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Freedom[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Their Finest Hour[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_B52_STRATEGY">
+			<Text>The B-52 Bomber is unique to the Freedom Ideology and will never be obsolete. Requires the Their Finest Hour Tenet to be unlocked. It is similar to the bomber, but it is more difficult for enemy anti-aircraft and fighters to target. The B-52 also receives a bonus when attacking enemy cities. Unlike the Strategic Bomber, its range is 10. See the rules on Aircraft for more details.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_B52_TEXT">
+			<Text>Also called Stratofortress, the B-52 is a U.S. long-range heavy bomber, designed by the Boeing Company in 1948, first flown in 1952, and first delivered for military service in 1955. Though originally intended to be an atomic-bomb carrier capable of reaching the Soviet Union, it has proved adaptable to a number of missions, and dozens of B-52s remained in service in the early 21st century. With its eight jet engines mounted under the wings, The plane's maximum speed at 55,000 feet is Mach 0.9 and Mach 0.5 at a few hundred feet above the ground. The huge airframe of the B-52 earned it the nickname "Big Ugly Fat Fellow" (BUFF), but it also allowed the plane to be retrofitted with highly sophisticated navigational, weapons-control, and electronic countermeasures systems. Over the years, the bomber has frequently served as a "mother ship" for air-launching experimental aircraft, such as the X-15 and the X-43.</Text>
+		</Row>
+
+	
+<!-- JET BOMBER -->			
+		<Row Tag="TXT_KEY_UNIT_ULTJETBOMB">
+			<Text>Jet Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ULTJETBOMB">
+			<Text>Long Range Air Unit that rains death from above onto Enemy Units and Cities.[NEWLINE][COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ULTJETBOMB_STRATEGY">
+			<Text>The Jet Bomber is effective against cities, ground targets, less so against naval targets, and it is quite vulnerable to enemy aircraft. It can be based on a player-owned city or aboard a carrier. It can move from base to base and perform missions within its range. Use it to attack enemy units and cities. When possible, send in Jet Fighters or Stealth Fighters first to "use up" the enemy's anti-aircraft defenses for that turn. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ULTJETBOMB_TEXT">
+			<Text>A rudimentary form of jet power dates back to the "Aeolipile", a device described by Hero of Alexandria in 1st-century Roman Egypt. This device directed steam power through two nozzles to cause a sphere to spin rapidly on its axis. It was seen as a curiosity. The first practical applications of jet propulsion appeared with the invention of the gunpowder-powered rocket by the Chinese in the 13th century. It was initially a type of firework, and gradually progressed to propel formidable weaponry. The principles used by the Chinese to send their rockets and fireworks was similar to that of a jet engine.[NEWLINE][NEWLINE]The first patent for using a gas turbine to power an aircraft was filed in 1921 by Maxime Guillaume. His engine was an axial-flow turbojet, but was never constructed, as it would have required considerable advances over the state of the art in compressors.[NEWLINE]The world's first aircraft to fly under turbojet power was the Heinkel He 178 developped by a young engineer named Hans von Ohain. Following the end of the war the German jet aircraft and jet engines were extensively studied by the victorious allies and contributed to work on early Soviet and US jet fighters.[NEWLINE][NEWLINE]The legacy of the axial-flow engine is seen in the fact that practically all jet engines on fixed-wing aircraft have had some inspiration from this design. By the 1950s, the jet engine was almost universal in combat aircraft, with the exception of cargo, liaison and other specialty types.</Text>
+		</Row>
+
+
+
+<!-- P-80 Shooting Star -->	
+		<Row Tag="TXT_KEY_UNIT_EARLYJET">
+			<Text>P-80 Shooting Star</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_EARLYJET">
+			<Text>Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply nor Strategic Resource.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Two for free with Pentagon World Wonder.[ENDCOLOR][COLOR_NEGATIVE_TEXT] Can not be built otherwise[ENDCOLOR] [COLOR_POSITIVE_TEXT]and Comes with four extra Promotions:[ENDCOLOR][NEWLINE][COLOR_YELLOW][NEWLINE][ICON_BULLET] Air Supremacy II[NEWLINE][ICON_BULLET] Air Repair[NEWLINE][ICON_BULLET] Range[NEWLINE][ICON_BULLET] Shooting Star (Unique)[ENDCOLOR][NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EARLYJET_STRATEGY">
+			<Text>Two P-80 Shooting Star are offered for free to the civilization that built the Pentagon World Wonder. It cannot be obtained otherwise. With no XP but highly promoted in standard, the P-80 Shooting Star can be based in any city you own or aboard an aircraft carrier. It can move from city to city (or carrier) and can perform "missions" within its range. Use fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EARLYJET_TEXT">
+			<Text>The P-80 Shooting Star was the first jet fighter used operationally by the United States Army Air Forces (USAAF). Designed and built by Lockheed in 1943 and delivered just 143 days from the start of the design process, production models were flying, and two pre-production models did see very limited service in Italy just before the end of World War II. Designed with straight wings, the type saw extensive combat in Korea with the United States Air Force (USAF) as the F-80.</Text>
+		</Row>
+
+	
+<!-- EARLY MONOPLANE -->	
+		<Row Tag="TXT_KEY_UNIT_EARLYMONOPLAN">
+			<Text>Monoplane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_EARLYMONOPLAN">
+			<Text>Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EARLYMONOPLAN_STRATEGY">
+			<Text>The Monoplane can be based in any city you own or aboard an aircraft carrier. It can move from city to city (or carrier) and can perform "missions" within its range. Use fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EARLYMONOPLAN_TEXT">
+			<Text>There were many advancements in aviation that took place between the wars (1919-1938). Airplane designs greatly improved as they went from 80 mph biplanes to race planes that could soar through the sky at over 200 mph. By the 1920s the advancements of airplanes made them much more reliable as they could fly longer distances and carry heavier loads. Fighter armament eventually began to be mounted inside the wings, outside the arc of the propeller, though most designs retained two synchronized machine guns directly ahead of the pilot. The rotary engine, popular during World War I, quickly disappeared, its development having reached the point where rotational forces prevented more fuel and air from being delivered to the cylinders, which limited horsepower. They were replaced chiefly by the stationary radial engine though major advances led to inline engines, which gained ground with several exceptional engines.[NEWLINE]Given limited defense budgets, air forces tended to be conservative in their aircraft purchases, and biplanes remained popular with pilots because of their agility, and remained in service long after they had ceased to be competitive. Designs such as the Gloster Gladiator, Fiat CR.42, and Polikarpov I-15 were common even in the late 1930s, and many were still in service as late as 1942.[NEWLINE]One of the most breakthrough fighter that appeared at this time was the PZL P.11 developed by  aeronautical engineer Zygmunt Pulawski for Warsaw-based aircraft manufacturer PZL. First flight in 1934, Possessing an all-metal structure, metal-covering, and high-mounted gull wing, the type held the distinction of being widely considered to have briefly been the most advanced fighter aircraft of its kind in the world.[NEWLINE]This first Monoplane fighter was a considerable export success with a total of 325 fighter built.</Text>
+		</Row>
+		
+		
+<!-- JET FIGHTER -->		
+		<Row Tag="TXT_KEY_UNIT_JET27">
+			<Text>Jet Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_JET27">
+			<Text>Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JET27_STRATEGY">
+			<Text>The Jet Fighter is a powerful air unit. It can be based in any city you own or aboard an aircraft carrier. It can move from base to base and can perform "missions" within its range. Use Jet Fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Jet Fighters are especially effective against enemy helicopters. The Jet Fighter has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JET27_TEXT">
+			<Text>The Jet Fighter is extremely similar in role to its ancestor, the World War II propeller-driven fighter, but there are huge differences in the planes' power, armament, weaponry,  computer and communications equipment.[NEWLINE]The best World War II aircraft could fly at best 400 miles per hour, while a modern jet fighter can fly three times that fast. A World War II aircraft could carry one or two machine guns and possibly one or two bombs. A modern fighter can carry a 20mm Gatling gun, 10 or so air-to air missiles, and dozens of different rockets. The vehicle is equipped with sophisticated computers, radar, and communications equipment far exceeding anything available anywhere before in history. Like other aircraft, jet fighters are vulnerable to surface-to air missiles, but their largest threat comes from enemy fighters. Whichever side achieves air superiority will gain a nearly unbeatable advantage in combat.</Text>
+		</Row>
+
+	
+<!-- MiG-29 -->		
+		<Row Tag="TXT_KEY_UNIT_MIG29">
+			<Text>MiG-29</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_MIG29">
+			<Text>Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Like the zero Fighter, this Unit has a bonus against other Fighters and does not require Oil. Only available to Civilizations following the [COLOR_MAGENTA]Autocracy[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Air Supremacy[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MIG29_STRATEGY">
+			<Text>The MiG-29 is unique to the Autocracy Ideology. Requires the Air Supremacy Tenet to be unlocked. The MiG-29 is a decently powerful air unit that will never be obsolete. It is like the standard Jet Fighter, except that it gets a significant combat bonus when battling other fighters and [COLOR_POSITIVE_TEXT]does not require the Oil resource[ENDCOLOR]. It can be based in any city you own or aboard an aircraft carrier. It can move from city to city (or carrier) and can perform "missions" within its range of 9 tiles. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MIG29_TEXT">
+			<Text> Developed by the Mikoyan design bureau as an air superiority fighter during the 1970s, the MiG-29, was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon. The MiG-29 entered service with the Soviet Air Forces in 1982.[NEWLINE]Early MiG-29s with their aerodynamic designs extremely advanced for their times, were very agile aircraft, capable of rivalling the performance of contemporary F-18 and F-16 aircraft.[NEWLINE]In the mid-1980s, a development of the original MiG-29 was proposed to meet the Soviet western frontline requirement. It achieved a more robust multi-role capability with enhanced use of air-to-air and air-to-ground high-precision weapons. It also featured a considerably increased combat range, owing to an increase in its internal fuel capacity.</Text>
+		</Row>
+	
+		
+<!-- ADVANCED FIGHTER -->			
+		<Row Tag="TXT_KEY_UNIT_ADVJET">
+			<Text>Advanced Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ADVJET">
+			<Text>Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ADVJET_STRATEGY">
+			<Text>The Advanced Fighter is a very powerful air unit. It can be based in any city you own or aboard an aircraft carrier. It can move from base to base and can perform "missions" within its range. Use Advanced Fighter to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Advanced Fighter are especially effective against enemy helicopters and has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ADVJET_TEXT">
+			<Text>An Advanced/fifth-generation/sixth-generation Jet Fighter are jet fighter classifications used around the world that encompasses the fighter technologies developed during the first part of the 21st century. As of 2020 these are the most advanced aircraft. The exact characteristics of those jet fighters are controversial and vague. Among the new mentioned concepts, the most common ones are "all-aspect stealth" even when armed, low-probability-of-intercept radar, high-performance airframes, advanced avionics features, and highly integrated computer systems capable of networking with other elements within the battlespace for situation awareness.[NEWLINE][NEWLINE]As of 2020, the most advanced fighters available are the american F-22 and F-35, the chinese J-20 and the russian Su-57.[NEWLINE]Several other countries are developping their own designs. France, Germany and Spain are jointly developping a new combat European New Generation Aircraft, Japan is working on its X-2 Shinshin demonstrator, United Kingdom, Sweden and Italy are developping together a sixth-generation fighter concept named the Tempest and Turkey, calling on international suppliers, is determined to develop its own national stealth fighter, the TF-X project. Iran and Pakistan also announced the development of a such aircraft.</Text>
+		</Row>
+		
+		
+<!-- Shooting Star Promotion -->
+		<Row Tag="TXT_KEY_PROMOTION_JET_DOM">
+			<Text>Shooting Star</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_JET_DOM">
+			<Text>Shooting Star</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_JET_DOM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]+10%[ENDCOLOR] [ICON_RANGE_STRENGTH] Range Combat Strength.[NEWLINE][COLOR_POSITIVE_TEXT]+10%[ENDCOLOR] [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Air Fighters[ENDCOLOR].[NEWLINE][COLOR_POSITIVE_TEXT]-10%[ENDCOLOR] Damage received from Interceptions.</Text>
+		</Row>
+			
+		
+		
+	</Language_en_US>
+</GameData>
+

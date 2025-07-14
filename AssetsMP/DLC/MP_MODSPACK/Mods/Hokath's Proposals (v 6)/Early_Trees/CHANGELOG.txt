@@ -1,0 +1,86 @@
+Tree Descriptions (not intended to be deleted)
+-- Increased the length of descriptive text for each Policy Tree to 5-6 lines
+  This is meant to help new comers who have no idea what these things do.
+  It also informs the design of the trees, see below
+-- For the 3 Ancient Era Trees, the text also delineates the `early game' bonuses (what sort of start it supports) and the 'throughout the game' bonuses.
+
+Tradition
+-- Justice loses +1 Production per City
+  This is a Progress effect, Tradition yields should come from Buildings
+-- All starting Policies now give yields to a T1 and T2 Building, where the T2 Builiding is an 'improvement' building
+  Justice gains +1 Production on Council and Forge
+    Bring up to Ceremony power level
+  Ceremony loses +1 Science on Council
+    Balance this against other choices with the small nerf
+  Ceremony's "with requirements" clause removed.
+    1 Happiness from Scrivener's Office early would be nice, later it matters very little.
+    Requirement is just a bit convoluted imo, especially for the start of the game.
+    Therefore all the Tradition buildings must no longer count as national wonders (why were they? who knows)
+  Sovereignty gains +2 Border Growth Points on Shrine and Stoneworks
+    Balance this against other path with targeted yield change (not Gold or Production, etc.) 
+    Currently if you open this you are starting Shrine, you are delaying Splendor where the Gold and Culture comes from
+    Together this means your Cities are very slow to grow borders, noticably compared to Population
+    This also buffs the `Border Blobs' strategy heavily nerfed by Authority rework
+-- Second tier policies tweaked for relative power
+  Splendor +2 Culture is now on Monument/Aqueduct/Baths
+    This smooths the gain of yields, since both Garden and Baths were later and on opposite sides
+  Majesty gains +2 Tourism on Granary/Caravansary/Gardens
+    Complete the symmetry of each policy buffing a building
+    Choice of buildings meant to mirror Splendor
+    Tourism won't upset early game balance strongly like Food or Gold would
+    However Tourism will benefit Trade Routes via Influence. The early you pick, the sooner you get.
+-- Name and Art changes -- personal taste -- where appropriate Flavor text is also changed.
+  Sovereignty renamed to Ceremony
+    Sovereignty is such a non-name. Other choices mean you aren't sovreign? Que??
+  Ceremony renamed Mysticism
+    I'm such a Scorpio
+  Royal Astrologer renamed to Astrologer's Sanctum
+    Just don't like having 2 different "Royal" somethings
+  State Treasury renamed to Treasure Hoard
+    Check the description, it's a bit different to a finance ministry
+    I want to make a proper State Treasury UNW in Renaissance
+  Treasure Hoard has new icon
+    More appropriate to text description ;)
+  Majesty renamed to Bounty
+    Too close to Divine Right in Fealty
+
+Authority
+-- Opener loses +1 Production per City
+  This is a Progress effect, Authority yields should come from Units
+-- Militarism gains +2 Production for City with greater than 10 Strength
+  Buffed to +2 because it comes later (and with the requirement)
+  This should also present more of a choice between left and right sides
+  Currently left side is much stronger, not least because you want Production early
+-- Dominance +1 Production per City for every 10 Unit removed
+  people don't like this and I tend to agree
+-- Dominance gains +1 Production and +2 Border Growth Points on Strategics
+  it's a small, non-scaling bonus as is more appropriate for the tree, honing in on war resources
+
+Fealty
+-- Fiefdoms and Divine Right: Names, icons, and text swapped
+  makes more sense this way around
+-- (now) Divine Right loses +1 Happiness per 10 Military Units
+  if we are going to remove this type of bonus then remove it everywhere
+-- (now) Divine Right -1 Illiteracy in every City
+-- (now) Divine Right +5 Happiness in the Capital
+
+Statecraft
+-- Shuffle bonuses for better left-right balance
+  Move +1 strategic per 3 Alliances from Foreign Service to Exchange Markets
+    Foreign Service is stacked and Resources make more sense on Exchange Markets
+  Move +1 Happiness per trade route from Exchange Markets to Trade Confederacy
+    Buff Trade Confederacy to compete with Foreign Service
+    The other Medieval Trees have +1 Happiness effects on the first row
+    Exchange Markets needs to lose something to offset gain above
+-- Delete the 'Scholasticism' bonus from Shadow Networks
+     In Vanilla +25% Science of Allies is a very strong effect
+     In VP this does basically nothing (last game was +3 Science upon adoption)
+     New players therefore can be tricked into thinking this important
+     Shadow Networks is already really good
+
+Artistry
+-- Moved the +2 Science on Artifacts to the finisher
+  you can basically never activate this when it is unlocked anyway
+-- Increased to +3 Science in line with Landmarks
+-- (re)Added +75 Gold from expending a Great Person, scaling with Era to National Treasure
+  Artistry feeling a touch weak, and in Industrial trees I will steal its Hidden Sites

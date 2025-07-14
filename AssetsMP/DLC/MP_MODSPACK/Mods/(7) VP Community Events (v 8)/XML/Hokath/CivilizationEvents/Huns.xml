@@ -1,0 +1,560 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_HUNS_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_HUNS</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_DRAMA</PrereqTech>
+			<RequiresWar>true</RequiresWar>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClassGlobal>BUILDINGCLASS_HUNS_UE_DUMMY</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
+			<ImprovementAnywhereRequired>IMPROVEMENT_CITADEL</ImprovementAnywhereRequired>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<EventTech>TECH_METALLURGY</EventTech>
+			<ObsoleteTech>TECH_METALLURGY</ObsoleteTech>
+			<GoldenAgeTurns>20</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<ResistanceTurns>1</ResistanceTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<IsUnhappy>true</IsUnhappy>
+		</Row>
+		<Row>
+			<Type>EVENT_HUNS_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<RequiresWarMinor>true</RequiresWarMinor>
+			<EventBuildingClassGlobal>BUILDINGCLASS_HUNS_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_HUNS_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_HUNS_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_HUNS_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_HUNS_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_HUNS_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_HUNS_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_HUNS_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_HUNS_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_HUNS_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<CapitalOnly>true</CapitalOnly>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_HUNS_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_HUNS_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_HUNS_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_HUNS_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_YieldFromDeath>
+		<Row>
+			<BuildingType>BUILDING_HUNS_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HUNS_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldFromDeath>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>15</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HUNS_UE_DUMMY_2</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>15</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_HUN_BATTERING_RAM</UnitType>
+			<Quantity>1</Quantity>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURT_SCRIBE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERMITAGE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURT_SCRIBE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_HERMITAGE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PRINTING_PRESS</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Modifier>25</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_EKI</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>700</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>700</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>400</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_HUNS_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+
+	<!-- TEXT -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Lord of the Court</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_1">
+			<Text>{3_PlayerName} chooses a new Warlord!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Burial Rites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_2">
+			<Text>{3_PlayerName} formalizes elaborate burial rites for warriors.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Land Carving</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_3">
+			<Text>{3_PlayerName} begins the construction of mighty border fortifications!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Modernize the Army</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_4">
+			<Text>{3_PlayerName} makes rapid advances in firearm design!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Civil Disobedience</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_5">
+			<Text>Hunnic Cities are embroiled in [ICON_RESISTANCE] Rioting, as the people call for socio-economic reform!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Military-Industrial Complex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_HUNS_UE_CHOICE_6">
+			<Text>{3_PlayerName} readies his people for ever escalating war!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION">
+			<Text>The Blood Oath</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP">
+			<Text>Great and Fearsome King, those named Warchief by their tribes come before you to swear the undying loyalty of the Blood Oath.[NEWLINE]Glory to the Huns!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_2">
+			<Text>Gain a Battering Ram and two Swordsmen in the [ICON_CAPITAL] Capital. When one of your Units is Killed, receive 5 [ICON_CULTURE] Culture and [ICON_PEACE] Faith in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_3">
+			<Text>Invest {1_YieldCost} into border defences. Castles, Forts and Citadels generate +2 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_4">
+			<Text>Funnel {1_YieldCost} into discovering [COLOR_POSITIVE_TEXT]Metallurgy[ENDCOLOR]. Enter a [ICON_GOLDEN_AGE] Golden Age for 20 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_5">
+			<Text>Give in to the demands of your people, entering 1 Turn of [ICON_RESISTANCE] Anarchy. The Scrivener's Office, Printing Press, and Hermitage generate +25% [ICON_PRODUCTION] Production and +25% [ICON_GOLD] Gold. Ekis generate +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_HELP_CHOICE_6">
+			<Text>Invest {1_YieldCost} in the military-industrial complex. All Cities gain +15% [ICON_PRODUCTION] Production when producing Units. Forts and Citadels generate +3 [ICON_PRODUCTION] Production and +3 [ICON_GOLD] Gold. Ekis generate +1 [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_1">
+			<Text>I am pleased. It is high time I found myself a visionary Warlord to inspire our people.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_2">
+			<Text>Good. In this time of war, we have the chance to win our fame. Let all men come and join our warband, for in their rich graves will live memories of glorious conquest!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_3">
+			<Text>We have carved out a land, but now we must defend it. I expect all the tribes to unite behind me as we construct an impenetrable wall of Vegvar.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_4">
+			<Text>*Gunpowder weapons have proved monstrously effective*[NEWLINE]Excellent. I will use this opportunity to discuss the issue of firearms, and a new model for our army.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The people demand social and economic reforms, they march on the offices and monuments of state*[NEWLINE]Perhaps, while they are gathered, these chiefs can explain to me exactly what the people are so upset about, that I have a rebellion on my hands?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_HUNS_UE_DESCRIPTION_CHOICE_6">
+			<Text>*Your previous Warlord was assassinated by enemy agents*[NEWLINE]I have decided to amend the oath. We will not only pledge our loyalty to each other, but also our resolve. Our resolve to crush our enemies beneath our feet, and hear the lamentations of their women!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY">
+			<Text>Hunnic Burial Rites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_HELP">
+			<Text>Receive [ICON_CULTURE] Culture and [ICON_PEACE] Faith for units killed in combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2">
+			<Text>Hunnic Military-Industrial Complex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUNS_UE_DUMMY_2_HELP">
+			<Text>+15% [ICON_PRODUCTION] Production to Military Units.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

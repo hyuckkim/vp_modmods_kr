@@ -1,0 +1,470 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_BYZANTIUM</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
+			<RequiresWarMinor>true</RequiresWarMinor>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_CASTLE</RequiredAnywhereBuildingClass>
+			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</EventBuildingClassGlobal>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<LosingMoney>true</LosingMoney>
+			<WLTKDTurns>20</WLTKDTurns>
+			<GoldenAgeTurns>20</GoldenAgeTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_BYZANTIUM_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
+			<FreeUnitsTechAppropriate>6</FreeUnitsTechAppropriate>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<EventPromotion>PROMOTION_UE_DEUS_VEULT</EventPromotion>
+			<EraScaling>true</EraScaling>
+			<RequiresWar>true</RequiresWar>
+			<EventDuration>-1</EventDuration>
+			<RequiresHolyCity>true</RequiresHolyCity>
+			<Expires>false</Expires>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_BYZANTIUM_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_BYZANTIUM_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_BYZANTIUM_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_BYZANTIUM_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NukeImmune>true</NukeImmune>
+			<Defense>1000</Defense>
+			<ExtraCityHitPoints>200</ExtraCityHitPoints>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<IsDummy>true</IsDummy>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+	</Buildings>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_BYZANTIUM_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<Modifier>33</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_DEUS_VEULT</Type>
+			<Description>TXT_KEY_PROMOTION_UE_DEUS_VEULT</Description>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OutsideFriendlyLandsModifier>15</OutsideFriendlyLandsModifier>
+			<Help>TXT_KEY_PROMOTION_UE_DEUS_VEULT_HELP</Help>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>KRIS_SWORDSMAN_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_DEUS_VEULT</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_YieldFromKills>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</UnitPromotions_YieldFromKills>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_DEUS_VEULT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_HUN_HORSE_ARCHER</UnitType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_BYZANTIUM_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+
+	<!-- TEXT -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Miracle Birth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_1">
+			<Text>Byzantium is blessed by the birth of a miracle worker!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Foreign Mercenaries</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_2">
+			<Text>{3_PlayerName} hires foreign sellswords to diversify the Byzantine army.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Walls of Constantinople</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_3">
+			<Text>{3_PlayerName} renovates the walls of her Capital with an unprecedented level of fortification!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Tax Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_4">
+			<Text>{3_PlayerName} abolishes archaic forms of taxation, sparking a national celebration!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Iconolatry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_5">
+			<Text>{3_PlayerName} backs the iconodules, ending the centuries old debate over religious imagery!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Deus Vult!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_BYZANTIUM_UE_CHOICE_6">
+			<Text>{3_PlayerName} calls the faithful to a modern crusade against the Infidel!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION">
+			<Text>Nova Roma</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP">
+			<Text>Noble Empress, once again the Patriarchy seek to unseat you from your rightful throne! I fear they will never suffer a woman such as yourself to sit the throne.[NEWLINE]We must move quickly to unravel their plans!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_2">
+			<Text>For the sum of {1_YieldCost}, 4 Hunnic Horse Archers are recruited in the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_3">
+			<Text>The improvement of the [ICON_CAPITAL] Capital's defenses provides +10 [ICON_STRENGTH] Strength, +200 HP, and +33% [ICON_GREAT_ENGINEER] Great Engineer Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_4">
+			<Text>Repeal ineffectual taxation to stimulate the economy: the Empire enters a [ICON_GOLDEN_AGE] Golden Age and [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] for 20 Turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_5">
+			<Text>Leverage {1_YieldCost} to restore iconography to the Empire. Every [ICON_GREAT_ARTIST] Artist generates an additional +5 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, [ICON_GOLDEN_AGE] Golden Age Points, and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_HELP_CHOICE_6">
+			<Text>By calling upon {1_YieldCost}, start a crusade against your enemies. A random Unit is recruited near every City, and all Units, as well as those recruited in the next {4_Turns}, receive the Deus Veult Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_1">
+			<Text>*A young child in a remote area has performed a miracle. The clergy are plotting to put them on the throne as their puppet*[NEWLINE]We cannot let our enemies get there first. Bring me the child!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The sons of the Patriarchs now occupy every senior position in the military*[NEWLINE]While I have absolute confidence in the city guard, they cannot defend us against a full-scale coup. We need soldiers who are not under the Patriarchs' thumbs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_3">
+			<Text>*There is word of a plot: that when our enemies next attempt an invasion, the governors will stand down and allow them to march on the Capital!*[NEWLINE]The Palace is surrounded by the key institutions of state, even without this rumor, we cannot allow the Capital to fall. Ever.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The elite ascertain their wealth from an ancient law allowing them to levy heavy tribute from their tenants*[NEWLINE]This Chrysargyron tax is a remnant of the dark ages. We are the laughing stock of modern economics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_5">
+			<Text>*For some time, the clergy have made themselves wealthy by seizing works of art under the pretense of an ongoing 'iconoclasm'*[NEWLINE]Once we demonstrate our intention to outlaw this practice, we will no doubt attract considerable support within the Church.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_BYZANTIUM_UE_DESCRIPTION_CHOICE_6">
+			<Text>*Only the external threats to Byzantium keep the Patriarchy in power. If we could fight our enemies without them...*[NEWLINE]Our people will be free! God wills it!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT">
+			<Text>Deus Vult</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_DEUS_VEULT_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength in Foreign Territory. Earn Faith from Kills. Granted only via Byzantium's Events.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY">
+			<Text>Walls of Constantinople</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_UE_DUMMY_HELP">
+			<Text>+10 [ICON_STRENGTH] Strength, +200 HP, and +33% [ICON_GREAT_ENGINEER] Great Engineer Points.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

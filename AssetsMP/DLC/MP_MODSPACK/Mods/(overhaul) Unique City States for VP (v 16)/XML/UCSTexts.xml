@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!-- text for gaining bonuses with CSs -->
+		<Row Tag="TXT_KEY_UCS_BONUS_ALLY">
+			<Text>You became an Ally of [COLOR_CYAN]{1_CS}[ENDCOLOR] and you are first in queue to benefit from the knowledge, technologies, experience and informations of its citizens. Watch for the new bonuses from this City-State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ALLY_TITLE">
+			<Text>City-State's Alliance bonuses!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_EMBASSY">
+			<Text>You established an Embassy in [COLOR_CYAN]{1_CS}[ENDCOLOR], therefore you gain a permanent access to the knowledge, technologies, experience and informations of its citizens. Remember that this connection is lost if you are at war with this City-State! Watch for the new bonuses from this City-State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_EMBASSY_TITLE">
+			<Text>City-State's permanent bonuses from an Embassy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_INFLUENCE">
+			<Text>Now [COLOR_CYAN]{1_CS}[ENDCOLOR] is under your influence, so you may benefit from the knowledge, technologies, experience and informations of its citizens. Watch for the new bonuses from this City-State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_INFLUENCE_TITLE">
+			<Text>Overwhelming influence with a City-State!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSTRAIT_MINOR_CIV">
+			<Text>A Shift in Alliance</Text>
+		</Row>
+		
+
+		<!-- text for CityStateStatusHelper.lua -->
+		<Row Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_FRIENDLY">
+			<Text>([COLOR:205:255:105:255]Affable[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_NEUTRAL">
+			<Text>([COLOR_WHITE]Pragmatic[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_HOSTILE">
+			<Text>([COLOR_RED]Reclusive[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_HEADER_PERSONALITY_IRRATIONAL">
+			<Text>([COLOR:240:105:255:255]Enigmatic[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TERRIFIED">
+			<Text>Terrified</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CS_ACTIVE_BONUS_HEADER">
+			<Text>[COLOR_LIGHT_GREY]City-State''s bonuses given to Major Player:[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CS_PASSIVE_BONUS_HEADER">
+			<Text>[COLOR_LIGHT_GREY]City-State''s passive abilities:[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_ACTION_MARRIAGE">
+			<Text>[COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] available!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_PROTECTED">
+			<Text>[ICON_STRENGTH] Protected by: [COLOR_POSITIVE_TEXT]{1_Protectors}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_HELPER_AT_WAR">
+			<Text>[ICON_WAR] At war with: [COLOR_NEGATIVE_TEXT]{1_AtWarWith}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CS_UU_QUICK_INFO">
+			<Text>Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR].</Text>
+		</Row>
+
+
+
+		<!-- important notifications for player on start -->
+		<Row Tag="TXT_KEY_UCS_CONFLICT">
+			<Text>Unfortunately, we couldn't replace [COLOR_CYAN]{1_CS}[ENDCOLOR] with any other City-State due to coding limitations we couldn't pass. If you don't want to see two cities of the same name in your game (or conflicting leaders), then we can only recommend to start the game over. Good luck!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_CONFLICT_TITLE">
+			<Text>UNAVOIDABLE CONFLICT!!! RESTART REQUIRED...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_CONFLICT_RESOLVED">
+			<Text>We've managed to replace a conflicting City-State with another one. To achieve full functionality and to avoid unnecessary problems, please save your current game and reload it. Enjoy the game!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_CONFLICT_RESOLVED_TITLE">
+			<Text>CONFLICT RESOLVED! RELOAD REQUIRED...</Text>
+		</Row>
+		
+
+		<!-- notifications for friendly unit gifts -->
+		<Row Tag="TXT_KEY_UCS_PASSIVES_GIFTS">
+			<Text>You received new [COLOR_POSITIVE_TEXT]{1_UnitName}[ENDCOLOR] unit from [COLOR_CYAN]{2_CS}[ENDCOLOR] as a gratitude for great cooperation and friendly attitutde.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_PASSIVES_GIFTS_TITLE">
+			<Text>Civilians arrived from friendly City-State!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_PASSIVES_GREAT_WORK_GIFTS">
+			<Text>[COLOR_POSITIVE_TEXT]{1_CS}[ENDCOLOR] has created a great work for you. [COLOR_MAGENTA]{2_GWType}[ENDCOLOR] should fill your collection in [COLOR_POSITIVE_TEXT]{3_Building}[ENDCOLOR] and grant you an unusual cultural experience.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_PASSIVES_GREAT_WORK_GIFTS_TITLE">
+			<Text>New masterpiece arrived!</Text>
+		</Row>
+		
+
+		<!-- notifications for unit actions -->
+		<Row Tag="TXT_KEY_UCS_NIHANG_RIPOSTED">
+			<Text>Your unit wasn't aware of [COLOR:6:82:255:255]Nihang[ENDCOLOR]'s secret weapon, small golden trident called [COLOR:6:82:255:255]Trehsool Mukh[ENDCOLOR], hidden in his turban. Unfortunately this unexpected riposte was deadly for your unit. Be more careful next time!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_NIHANG_RIPOSTED_TITLE">
+			<Text>Nihang's revenge!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_NIHANG_XP">
+			<Text>With new technologies discovered and new [COLOR_POSITIVE_TEXT]{1_Building}[ENDCOLOR] built you can ensure, that your [COLOR:6:82:255:255]Nihang[ENDCOLOR] units will take part in additional training programs, that will keep them up with the changing situation on the war front. They can safely gain additional experience and be ready for upcoming combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_NIHANG_XP_TITLE">
+			<Text>Special training program for Nihangs!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_TEAAT">
+			<Text>Season started and [COLOR_POSITIVE_TEXT]Te'aats[ENDCOLOR] from [COLOR_CYAN]{1_Juyubit}[ENDCOLOR] sailed to spread culture around the world and to bring back some stuff to you. Their recent journey gave you additional {2_Food} [ICON_FOOD] Food and {3_Culture} [ICON_CULTURE] Culture in [COLOR_CYAN]{4_City}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_TEAAT_TITLE">
+			<Text>Great event on the sea!</Text>
+		</Row>
+		
+
+		<!-- notifications for CSs' lua custom events -->
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_LIBERATION">
+			<Text>Your liberation efforts do not go unrewarded and [COLOR_CYAN]{1_Bogota}[ENDCOLOR] awes you! It will not spare money on you and rewards you with {2_Culture} [ICON_CULTURE] Culture. What will you do with it?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_LIBERATION_TITLE">
+			<Text>United independence!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_CAPTURE">
+			<Text>You could have liberated that city, but at least you can make lives of these people easier under your rule. [COLOR_CYAN]{1_Bogota}[ENDCOLOR] wants you to continue your mission and gives you a small revenue of {2_Culture} [ICON_CULTURE] Culture to encourage you to help her unite the world in the future.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BOGOTA_CAPTURE_TITLE">
+			<Text>United independence?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_CAPE_TOWN">
+			<Text>Transit through a Cape of Good Hope is very lucrative business. Part of the revenues come back to you as an additional profit. [COLOR_CYAN]{1_CapeTown}[ENDCOLOR] rewards you with {2_Gold} [ICON_GOLD] Gold!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_CAPE_TOWN_TITLE">
+			<Text>Cape of Good Hope</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MANILA">
+			<Text>Travelling with the navigators from the [COLOR_CYAN]{1_Manila}[ENDCOLOR] allows you to find rare places where you can buy or sell exotic good. Your merchants send you an additional support of {2_FoodAndProduction} [ICON_FOOD] Food and [ICON_PRODUCTION] Production!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MANILA_TITLE">
+			<Text>Pearl of the Orient</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_COLOMBO">
+			<Text>[COLOR_CYAN]{1_CityOfTrade}[ENDCOLOR] finished a [ICON_INTERNATIONAL_TRADE] Trade Route. Desired goods from [COLOR_CYAN]{2_Colombo}[ENDCOLOR] brought you enough profits to restructure your army and increase the defense of the whole trade network.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_COLOMBO_TITLE">
+			<Text>Special care trade partners</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HANUABADA">
+			<Text>Sailors from [COLOR_CYAN]{1_Hanuabada}[ENDCOLOR] instruct you when and where to sail, to get back home as a hero! It's a death sentence for unexperienced man, but thanks to their advices, you can return safely with traded goods. Women start dancing seeing your silhouette on the horizon, granting you {2_GoldenAgePoints} [ICON_GOLDEN_AGE] Golden Age Points!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HANUABADA_TITLE">
+			<Text>Hiri Trade Cycle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH">
+			<Text>[COLOR_CYAN]{1_Zurich}[ENDCOLOR] bankers found few discrepencies in your spendings and saved you {2_Interests} [ICON_GOLD] Gold in last {3_Turns} turns!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_TITLE">
+			<Text>Money in the right hands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY">
+			<Text>You are no longer an Ally of [COLOR_CYAN]{1_Zurich}[ENDCOLOR]. Be sure to establish an Embassy to keep working on your interests. In last {2_Turns} they managed to save you {3_Interests} [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY_ZERO">
+			<Text>You are no longer an Ally of [COLOR_CYAN]{1_Zurich}[ENDCOLOR]. Be sure to establish an Embassy to keep working on your interests. Unfortunately we lost all our data about your latest savings, but we promise to keep better in the future!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_ZURICH_STOP_ALLY_TITLE">
+			<Text>Your treasury is endangered!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_RELIGION">
+			<Text>[COLOR_CYAN]{1_Jerusalem}[ENDCOLOR] adopted your main Religion. Now they spread your word over the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_RELIGION_TITLE">
+			<Text>Infidels converted!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_SPHERE">
+			<Text>In recognition and awe of your holiness, the leaders of [COLOR_CYAN]{1_Jerusalem}[ENDCOLOR] pledge their loyalty to you in the form of a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_JERUSALEM_SPHERE_TITLE">
+			<Text>Religious pretectorate!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SIDON">
+			<Text>In recognition and awe of your powers, the leaders of [COLOR_CYAN]{1_Sidon}[ENDCOLOR] pledge their loyalty to you in the form of a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SIDON_TITLE">
+			<Text>Friends in needs!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LHASA">
+			<Text>Citizens of [COLOR_CYAN]{1_Lhasa}[ENDCOLOR] awe you for your recent cunstruction efforts. They swear loyality and offer you services in return for the [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LHASA_TITLE">
+			<Text>You are our wonder!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_CONQUEST">
+			<Text>[COLOR_CYAN]{1_Levuka}[ENDCOLOR] grants you {2_Food} [ICON_FOOD] in each of your Cities for successful capture. They awe you.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_CONQUEST_TITLE">
+			<Text>Expansion needs a special care!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_BARBARIANS">
+			<Text>[COLOR_CYAN]{1_Levuka}[ENDCOLOR] grants you {2_Food} [ICON_FOOD] in each of your Cities for clearing a Barbarian Camp. They are very grateful for your help.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LEVUKA_BARBARIANS_TITLE">
+			<Text>Bloody barbarian camp cleared!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONG_KONG">
+			<Text>A citizen migrated from [COLOR_CYAN]{1_YourCity}[ENDCOLOR] to [COLOR_CYAN]{2_HongKongCity}[ENDCOLOR]. [COLOR_CYAN]{3_HongKong}[ENDCOLOR] is grateful and it will not leave you without nothing. You receive {4_Gold} [ICON_GOLD] Gold and feel a substantial warming of billateral contacts by {5_Influence} [ICON_INFLUENCE] Influence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONG_KONG_TITLE">
+			<Text>Another citizen left you city!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_FLORENCE">
+			<Text>[COLOR_CYAN]{1_Florence}[ENDCOLOR] is a home of artists and engineers, who create outstanding works each day, and night. One of them, {2_GreatPerson} decided to work for you!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_FLORENCE_TITLE">
+			<Text>A {1_GreatPerson} looks for a job!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KYZYL">
+			<Text>[COLOR_CYAN]{1_Kyzyl}[ENDCOLOR] supports your production efforts and sends few specialists to your cities: {2_CityList}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KYZYL_TITLE">
+			<Text>Scientists share their knowledge!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_TYRE">
+			<Text>You finished [COLOR_YIELD_FOOD]{1_WorldWonder}[ENDCOLOR] - another reason to come and visit your magnificient city. [COLOR_CYAN]{2_Tyre}[ENDCOLOR] is admired and sends first visitors to check the quality and spread the information increasing your tourism income by {3_Tourism} [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_TYRE_TITLE">
+			<Text>New World Wonder open for visitors!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_QUEBEC_CITY">
+			<Text>[COLOR_CYAN]{1_QuebecCity}[ENDCOLOR] is full of companies experienced in logging industry. Thanks to their contacts and experience you can get more from the goods you have just acquired. [COLOR_CYAN]{2_City}[ENDCOLOR] gains additional {3_Yields} [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from the cut {4_Feature}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_QUEBEC_CITY_TITLE">
+			<Text>Crucial support from logging companies!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_PRAGUE">
+			<Text>The clergy from [COLOR_CYAN]{1_Prague}[ENDCOLOR] value your loss of a {2_LostUnit}, who was trying to convert pagans and infidels to your religion. To compensate this tragic event and encourage you to continue such desired missions, they support you with {3_Faith} [ICON_PEACE] Faith and {4_Culture} [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_PRAGUE_TITLE">
+			<Text>Glorious death during a mission!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SINGAPORE">
+			<Text>Wise diplomats from [COLOR_CYAN]{1_Singapore}[ENDCOLOR] finished their negotiations with a great success giving increasing your influence in a [COLOR_CYAN]{2_CityState}[ENDCOLOR], but it's not everything! In addition they managed to get some fundings for your upcoming projects from local sponsors. Your treasury enriches by {3_Gold} [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SINGAPORE_TITLE">
+			<Text>Diplomatic success!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SYDNEY">
+			<Text>[COLOR_CYAN]{1_Sydney}[ENDCOLOR] is known from organizing huge and spectacular events. Many artists and creators arrive there to present their works to the wider audience. Because [COLOR_CYAN]{2_City}[ENDCOLOR] is about to glorify your rulings, part of these people come to your city instead, increasing the progress towards [ICON_GREAT_ARTIST] {3_GreatArtist}, [ICON_GREAT_WRITER] {4_GreatWriter} and [ICON_GREAT_MUSICIAN] {5_GreatMusician} by {6_PointsArtist}, {7_PointsWriter} and {8_PointsMusician} [ICON_GREAT_PEOPLE] Great People Points respectively.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SYDNEY_TITLE">
+			<Text>Creators boom!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_A">
+			<Text>You hired a [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR] from [COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]. Beside its obvious military value, it can also generate something more valuable each turn - an extraordinary religious experience.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_B">
+			<Text>You hired a [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR] from [COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]. Beside its obvious military value, it can also generate something more valuable each turn - an extraordinary religious and cultural experience. God bless the [COLOR_CYAN]Radio[ENDCOLOR]!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_C">
+			<Text>You hired a [COLOR_CYAN]{1_SwissGuard}[ENDCOLOR] from [COLOR_CYAN]{2_VaticanCity}[ENDCOLOR]. Beside its obvious military value, it can also generate something more valuable each turn - an extraordinary religious and cultural experience, as well as increased tourism output. God bless the [COLOR_CYAN]Radio[ENDCOLOR] and all kinds of [COLOR_CYAN]Telecommunications[ENDCOLOR]!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VATICAN_KATZBALGER_TITLE">
+			<Text>Guard the Pope!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_YANGCHENG">
+			<Text>Wise lords from [COLOR_CYAN]{1_Yangcheng}[ENDCOLOR] want to celebrate Chinese New Year together and share all its perks with you. Enrich your religious rituals with additional {2_Faith} [ICON_PEACE] Faith and be grateful to your new [COLOR_HIGHLIGHT_TEXT]{3_Animal}[ENDCOLOR] patron, which grants you {4_BonusYields} in your [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_YANGCHENG_TITLE">
+			<Text>Year of the {1_Animal}!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IFE">
+			<Text>Recently trained {1_DiploUnit} from [COLOR_CYAN]{2_Ife}[ENDCOLOR] knows how to perform wise diplomatic actions and also can perform some magical rituals that may help in negotiations giving you {3_Faith} [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IFE_TITLE">
+			<Text>Yoruba diplomacy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENEVA">
+			<Text>[COLOR_CYAN]{1_Geneva}[ENDCOLOR] is a city of chances for those brave men and women, who want to change their lives. Many educated personas arrive here to help improving the city and create an ideal society. One of them, {2_GreatPerson} came here today, enriching local religious community with {3_Faith} [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENEVA_TITLE">
+			<Text>Good place to live!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENOA">
+			<Text>Merchants from [COLOR_CYAN]{1_Genoa}[ENDCOLOR] look for every opportunity to become rich and to introduce their hometown into a golden age. Their last target, {2_GreatPerson} might help with that. Recent actions grant you additional {3_Gold} [ICON_GOLD] Gold and {4_GoldenAge} [ICON_GOLDEN_AGE] Golden Age Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_GENOA_TITLE">
+			<Text>Golden people!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONIARA_LAND">
+			<Text>Good time has come to you and [COLOR_CYAN]{1_Honiara}[ENDCOLOR] can see that. They are experienced fishermen, but also know what land can deliver to them, and they do not complain. They appreciate that Gods made this season rich, giving you additional {2_Food} [ICON_FOOD] Food in the [COLOR_CYAN]{3_City}[ENDCOLOR]. You should dance with these people and thank your Gods, too!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONIARA_SEA">
+			<Text>Good time has come to you and [COLOR_CYAN]{1_Honiara}[ENDCOLOR] can see that. They are experienced fishermen who appreciate that Gods made this season so abundant, giving you additional {2_Food} [ICON_FOOD] Food in the [COLOR_CYAN]{3_City}[ENDCOLOR]. You should dance with these people and thank your Gods, too!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_HONIARA_TITLE">
+			<Text>Let's dance!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KARASJOHKA_MAIN">
+			<Text>Experienced Siida people from [COLOR_CYAN]{1_Karasjohka}[ENDCOLOR] know how to find and lure [COLOR_POSITIVE_TEXT]Reindeers[ENDCOLOR] to your territory. They only need a piece of inhabitted tundra and some forest nearby to make these animals come to them without any special effort! Now you can join Siida and admire these beautiful creatures together.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KARASJOHKA_MAIN_TITLE">
+			<Text>Reindeers seen close to your territories!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KARASJOHKA_AUX">
+			<Text>You are so lucky! [COLOR_CYAN]{1_Karasjohka}[ENDCOLOR] managed to lure more than one herd of [COLOR_POSITIVE_TEXT]Reindeers[ENDCOLOR]!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_KARASJOHKA_AUX_TITLE">
+			<Text>Another herd of Reindeers nearby!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AYUTTHAYA_DECLARED">
+			<Text>Councellors from [COLOR_CYAN]{1_Ayutthaya}[ENDCOLOR] advised you to declare war. To achive all of your goals you must carefully adjust all production sectors, so they could fullfil huge demands of a war machine. Your recent planning gave you {2_Production} [ICON_PRODUCTION] Production in each City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AYUTTHAYA_DECLARED_TITLE">
+			<Text>Set the production to war tempo!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AYUTTHAYA_SUFFERED">
+			<Text>[COLOR_CYAN]{1_Ayutthaya}[ENDCOLOR] knows that feeling. Being attacked by nations hungry for new territories or precious resources. Their experience gave you enough more than enough knowledge to prepare a counterplan. Thanks to that you could start a training effort to gain a new leader, that will accompany your troops to the battlefield. Your court gains {2_GreatGeneralPoints} [ICON_GREAT_GENERAL] Great General Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AYUTTHAYA_SUFFERED_TITLE">
+			<Text>Full mobilization!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LONGYAN_POP">
+			<Text>[COLOR_CYAN]{1_Longyan}[ENDCOLOR] shared their design of a [COLOR_POSITIVE_TEXT]Tulou[ENDCOLOR] improvement. Its construction allowed you to increase the population capacity of [COLOR_CYAN]{2_City}[ENDCOLOR], and the effect can be seen immediately!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_LONGYAN_POP_TITLE">
+			<Text>Better place to live!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AL_TIRABIN">
+			<Text>New era, means you can diversify your assortment. And this is what nomadic tribes like [COLOR_CYAN]{1_AlTirabin}[ENDCOLOR] pursue the most! They are experts in trade, and they will surely support your efforts to widen the caravan network crossing their desert settlements, granting you an additional [ICON_INTERNATIONAL_TRADE] Trade Route.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_AL_TIRABIN_TITLE">
+			<Text>Nomadic Life</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MENDYARRUP_FIX">
+			<Text>Unique techniques of using the cold fire to clear the undergrowth without destorying upper part of the forest possessed by the [COLOR_CYAN]{1_Mendyarrup}[ENDCOLOR] can significantly speed up city's growth. [COLOR_CYAN]{2_City}[ENDCOLOR] gains additional boost of {3_Food} [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MENDYARRUP_FIX_TITLE">
+			<Text>Clear path!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MENDYARRUP_XP">
+			<Text>New life can mobilize your forces for even better effort. Thanks to a cooperation with [COLOR_CYAN]{1_Mendyarrup}[ENDCOLOR] you know how to direct this force into your own units. [COLOR_CYAN]{2_City}[ENDCOLOR] spreads the news to {3_NumUnits} units garissoned around granting them 2 XP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_MENDYARRUP_XP_TITLE">
+			<Text>Strength for the people!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SADDARVAZEH">
+			<Text>[COLOR_CYAN]{1_Saddarvazeh}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SADDARVAZEH_TITLE">
+			<Text>Zoroaster Speaks!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_ERA">
+			<Text>[COLOR_CYAN]{1_Irunea}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_ERA_TITLE">
+			<Text>Basques celebrate a new era!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_SETTLE">
+			<Text>[COLOR_CYAN]{1_Irunea}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_SETTLE_TITLE">
+			<Text>Basques supports a new colony!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,471 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_INDONESIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_INDONESIA</RequiredCiv>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LIGHTHOUSE</RequiredAnywhereBuildingClass>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<EventBuildingClassGlobal>BUILDINGCLASS_INDONESIA_UE_DUMMY</EventBuildingClassGlobal>
+			<AffectsCoastalCitiesOnly>true</AffectsCoastalCitiesOnly>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AMPHITHEATER</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventBuildingClassGlobal>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</EventBuildingClassGlobal>
+			<RequiredEra>ERA_MODERN</RequiredEra>
+			<LosingMoney>true</LosingMoney>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_INDONESIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<ImprovementAnywhereRequired>IMPROVEMENT_LUMBERMILL</ImprovementAnywhereRequired>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_INDONESIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_INDONESIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_INDONESIA_UE_DUMMY</DefaultBuilding>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_INDONESIA_UE_DUMMY_2</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_INDONESIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_INDONESIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IsDummy>true</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_INDONESIA_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_INDONESIA_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<TradeRouteTargetBonus>5</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>5</TradeRouteRecipientBonus>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_INDONESIA_UE_DUMMY</BuildingType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<Modifier>20</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+	<Building_YieldPerXTerrainTimes100>
+		<Row>
+			<BuildingType>BUILDING_INDONESIA_UE_DUMMY</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_YieldPerXTerrainTimes100>
+	<Building_WLTKDYieldMod>
+		<Row>
+			<BuildingType>BUILDING_INDONESIA_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>15</Yield>
+		</Row>
+	</Building_WLTKDYieldMod>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>6</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
+			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>200</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_INDONESIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Deputy Management</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} has endorsed a Great Person as his deputy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Sea Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} makes a speech promising to secure his people's place amongst the islands of the world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s Shadow Play</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} gives patronage to theatrical performers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Gamelan Style</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} donates vast amounts of metal to his Musicians' Guilds.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Spice Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} opens up Indonesia to foreign investment.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Environmental Preservation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_INDONESIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} takes action to combat the environmental effects of deforestation!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION">
+			<Text>Topeng Manis, Topeng Kras</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP">
+			<Text>Mahapatih, the King and his courtiers wish to know how you will deal with these matters arising. The court is particularly eager to hear you speak on this.[NEWLINE]Will you follow me to the Palace?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_2">
+			<Text>Emphasize the importance of coastal trade with {1_YieldCost}. Cities receive +1 [ICON_GOLD] Gold for every 2 Coastal Tiles within workable range, and generate +20% [ICON_GREAT_MERCHANT] Great Merchant Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_3">
+			<Text>Support Wayang with {1_YieldCost}. Writers generate +1 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture. Amphitheaters generate +1 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_4">
+			<Text>With new instruments [ICON_GREAT_MUSICIAN] Musicians generate +5 [ICON_CULTURE] Culture and +5 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_5">
+			<Text>Encourage foreign investment by allowing [ICON_INTERNATIONAL_TRADE] Trade Routes with you to generate +5 [ICON_GOLD] Gold. Cities celebrating [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] generate +15% [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_HELP_CHOICE_6">
+			<Text>Lumbermills in Jungle produce +2 [ICON_GOLD] Gold but lose -1 [ICON_FOOD] Food. Offset the environmental damage by investing {1_YieldCost} into conservation projects: Zoos generate +6 [ICON_RESEARCH] Science and +4 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>*The discussion surrounds who should be appointed your new deputy*[NEWLINE]The court will be happy to hear I have prepared a speech detailing my thoughts on the proposed list of candidates.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>*The issue concerns the economy, and whether or not we should continue to maintain such a large seafaring sector*[NEWLINE]The sea is as much a part of Indonesian culture as the islands we live on. If anything, I will see our relationship with her pushed to new heights!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>*The nobles are envious of other civilizations' dramatic heritage, why do we lack our own*[NEWLINE]With a little encouragement from the wealthy houses, I am sure that a unique and renowned style will develop surprisingly quickly.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>*The ministers are very fond of the Gamelan music style, they wish to know why it is not more widely practiced*[NEWLINE]In times gone by we have had pressing demands on our supplies of metal. Now we have more plentiful reserves, I can allow some of it to be put to the training of musicians.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>*The economy is spiraling out of control, the nobles demand you guarantee that their holdings are secure!*[NEWLINE]I can fix the economy or I can seize assets. Seeing as there is no point in having worthless investments, I will prioritize the economy. I apologize in advance if I fail.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INDONESIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>*The expanding palm oil industry has made the elite very wealthy, but now that the ecological consequences are becoming clear, they are blaming you*[NEWLINE]How wise are my lords. I have a rather large report for them to digest, outlining what can be done.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY">
+			<Text>Indonesian Sea Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_HELP">
+			<Text>+1 [ICON_GOLD] Gold for every 2 workable coastal tile. +20% [ICON_GREAT_MERCHANT] Great Merchant Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2">
+			<Text>Indonesian Foreign Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INDONESIA_UE_DUMMY_2_HELP">
+			<Text>+5 [ICON_GOLD] Gold from Foreign Trade Routes. +15% [ICON_GOLD] Gold during WLTKD.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

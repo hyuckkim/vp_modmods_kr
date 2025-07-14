@@ -1,0 +1,191 @@
+<GameData>
+	<!-- Mt Fuji -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_NW_FUJI</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_FUJI_HELP</Help>
+			<CityEventArt>naturalwonderpopup.dds</CityEventArt>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+			<EventCooldown>30</EventCooldown>
+			<NearbyFeature>FEATURE_FUJI</NearbyFeature>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_NW_FUJI_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_1</Help>
+			<IsOneShot>false</IsOneShot>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_FUJI_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_ARTISTS_GUILD</RequiredBuildingClass>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_FUJI_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_NW_FUJI_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<PrereqTech>TECH_RADIO</PrereqTech>
+			<EventBuildingClass>BUILDINGCLASS_BOMB_SHELTER</EventBuildingClass>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_FUJI</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_FUJI</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_FUJI</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_NW_FUJI</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_FreeUnits>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_3</CityEventChoiceType>
+			<UnitType>UNIT_JAPANESE_SAMURAI</UnitType>
+			<Quantity>2</Quantity>
+		</Row>
+	</CityEventChoice_FreeUnits>
+	<CityEventChoice_SpecialistYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_2</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_SpecialistYieldChange>
+	<CityEventChoice_GreatPersonPoints>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_2</CityEventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<Points>100</Points>
+		</Row>
+	</CityEventChoice_GreatPersonPoints>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_3</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_BOMB_SHELTER</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoice_FeatureYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_FUJI</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_1</CityEventChoiceType>
+			<FeatureType>FEATURE_FUJI</FeatureType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_FeatureYieldChange>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>600</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-600</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_NW_FUJI_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION">
+			<Text>The Lotus Peak</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_HELP">
+			<Text>The mountain is angry today, Your Eminence. It is no doubt related to the man in the atrium, who comes seeking your approval.[NEWLINE]What shall we do with him?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_1">
+			<Text>The Natural Wonder permenantly yields +1 [ICON_PEACE] Faith and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_2">
+			<Text>The man's reputation is restored, gain {4_GPChange}. His school of painting flourishes, [ICON_GREAT_ARTIST] Artists in the City generate +2 [ICON_CULTURE] Culture!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_3">
+			<Text>The City's Barracks yields +2 [ICON_PEACE] Faith, and two Samurai are recruited.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_HELP_CHOICE_4">
+			<Text>Fund the Outpost to the tune of {2_InstantYield}. A System is built in the City, and it generates +5 [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_1">
+			<Text>*The man begs to be allowed to scatter his wife's ashes on the mountain's slopes*[NEWLINE]This request has touched my heart. Make it so.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_2">
+			<Text>*The man is a painter who has produced a series of prints of the Mountain, however, the local Artist's Guild won't allow him to sell them and have driven him out of business*[NEWLINE]These are really good. Let's hang them in the Palace - that ought to sort his predicament out.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_3">
+			<Text>*A troop of warriors who revere the mountain wishes to settle in the City*[NEWLINE]If they fight for the Empire, I see no reason not to recruit these Ronin.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NW_FUJI_DESCRIPTION_CHOICE_4">
+			<Text>*The mountain is the highest point the City has access to, the man - a weather scientist - wishes to build a weather station on the summit to monitor the severe conditions that the City has been known to suffer*[NEWLINE]This could mean a massive reduction to a loss of life and property damage in the future! Give him the money.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

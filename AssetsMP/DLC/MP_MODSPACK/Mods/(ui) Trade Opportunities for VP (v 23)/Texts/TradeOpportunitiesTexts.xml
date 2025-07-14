@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS" >
+			<Text>Trade Opportunities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_RELATIONS_GRAPH" >
+			<Text>Relations Graph</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_OTHER_HEADER" >
+			<Text>{1_icon} {2_c_resource}{3_resource}[ENDCOLOR] {4_c_improvement}({5_improvement})[ENDCOLOR]{2_c_resource}:[ENDCOLOR] {6_help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_help}</Text>
+		</Row> 
+		<Row Tag="TXT_KEY_DO_TRADE_CIV_STATUS" >
+			<Text>{1_civ} ({2_points})[NEWLINE]{3_era}[NEWLINE]{4_gold}[ICON_GOLD] ({5_gold_change}[ICON_GOLD]/Turn){6_Religion}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_WAR" >
+			<Text>[COLOR:255:70:70:220]WAR[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_SANCTION" >
+			<Text>[COLOR:255:165:30:220]SANCTIONED[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_TT" >
+			<Text>[ICON_RESEARCH] Can form Research Agreement; [ICON_INFLUENCE] agreement is already in place</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_YES_TT" >
+			<Text>Can form Research Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_NO_TT" >
+			<Text>Research Agreement is already in place</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_TT" >
+			<Text>[ICON_CITY_STATE] Can form mutual Embassy Agreement; [ICON_INFLUENCE] agreement is already in place</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_YES_TT" >
+			<Text>Can form mutual Embassy Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_NO_TT" >
+			<Text>Mutual Embassy agreement is already in place</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_US_TT" >
+			<Text>We already have an Embassy in their Capital</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_THEM_TT" >
+			<Text>They already have an Embassy in our Capital</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_TT" >
+			<Text>[ICON_TRADE] Can form mutual Open Borders Agreement; [ICON_TRADE_WHITE] agreement is already in place</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_YES_TT" >
+			<Text>Can form mutual Open Borders Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_NO_TT" >
+			<Text>Mutual Open Borders is already in place</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_US_TT" >
+			<Text>We can already cross their borders</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_THEM_TT" >
+			<Text>They can already cross our borders</Text>
+		</Row>
+	
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE" >
+			<Text>{1_color}{2_value}{3_monopoly}[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_value}{5_demand} {6_c_monopol}({7_resource_own}/{8_resource_pos})[ENDCOLOR]{9_resource_GP}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_EXT" >
+			<Text>(not counted towards [ICON_VP_MONOPOLY] Global Monopolies)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1 copy was provided by a building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_buildings} copies were provided by buildings</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_GP" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP} copies were granted by the [ICON_GREAT_ADMIRAL] Great Admiral</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_CORP" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp} and {2_resource_num_franch} copies were granted by your [ICON_VP_MONOPOLY] Corporations and [ICON_VP_MONOPOLY] Franchises respectively</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1 copy was granted by your [ICON_CITY_STATE] City-State Alliances ([COLOR_MAGENTA]Foreign Service[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_ally} copies were granted by your [ICON_CITY_STATE] City-State Alliances ([COLOR_MAGENTA]Foreign Service[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1 copy was granted by additional modifiers ([COLOR_MAGENTA]Third Alternative[ENDCOLOR]: +{1_resource_ta_mod}%, [COLOR_WHITE]Zealotry[ENDCOLOR]: +{2_resource_z_mod}%, [COLOR_LIGHT_GREY]Siberian Riches[ENDCOLOR]: +{3_resource_sr_mod}%)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_mods} copies were granted by additional modifiers ([COLOR_MAGENTA]Third Alternative[ENDCOLOR]: +{2_resource_ta_mod}%, [COLOR_WHITE]Zealotry[ENDCOLOR]: +{3_resource_z_mod}%, [COLOR_LIGHT_GREY]Siberian Riches[ENDCOLOR]: +{4_resource_sr_mod}%)</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_NONE" >
+			<Text>{1_color}-[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NONE" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_c_none}unavailable[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_DEMAND" >
+			<Text>{1_space}(following cities demand this resource: {2_color}{3_cities}[ENDCOLOR])</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_CS_TOOLTIP" >
+			<Text>{1_amount}{2_icon} {3_cs} ({4_inf}, {5_ally}){6_other}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_1" >
+			<Text>Special</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_1_TT" >
+			<Text>Special luxury resources with additional abilities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_2" >
+			<Text>Sea</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_2_TT" >
+			<Text>Underwater luxury resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_3" >
+			<Text>Mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_3_TT" >
+			<Text>Luxury resources that require mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_4" >
+			<Text>Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_4_TT" >
+			<Text>Luxury resources that require quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_5" >
+			<Text>Plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_5_TT" >
+			<Text>Luxury resources that require plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_6" >
+			<Text>Camp</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_6_TT" >
+			<Text>Luxury resources that require camp</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_7" >
+			<Text>Unique</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_7_TT" >
+			<Text>Luxury resources available only for Brazil or Indonesia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_8" >
+			<Text>City-State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_8_TT" >
+			<Text>Luxury resources available only for City-States</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_9" >
+			<Text>Strategic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_9_TT" >
+			<Text>Strategic resources which allow building unique structures or units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_OTHER" >
+			<Text>...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_OTHER_TT" >
+			<Text>Other luxury resources</Text>
+		</Row>
+
+		<!-- Key -->
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_TITLE" >
+			<Text>[COLOR_LIGHT_GREY]Colour key:[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_1" >
+			<Text>[COLOR_LIGHT_GREY]Surplus = Local - Exported - Used          Total = Local + from City-States + Imported - Exported - Used          &apos; - strategic monopoly          &quot; - global monopoly[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_2" >
+			<Text>[COLOR_LIGHT_GREY]Active:[ENDCOLOR]          [COLOR:0:135:0:255]Surplus &gt; 3[ENDCOLOR]   [COLOR:125:255:0:255]Surplus &gt; 1[ENDCOLOR]   [COLOR:200:180:0:255]Surplus = 1[ENDCOLOR]   [COLOR:255:70:70:255]Surplus &lt; 0[ENDCOLOR]   [COLOR_YIELD_FOOD]Total = 0[ENDCOLOR]   [COLOR_CYAN]One[ENDCOLOR][COLOR_LIGHT_GREY] or [ENDCOLOR][COLOR_CITY_BLUE]more[ENDCOLOR][COLOR_LIGHT_GREY] cities demand it[ENDCOLOR]   [COLOR_CITY_GREY]Rest[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_3" >
+			<Text>[COLOR_LIGHT_GREY]Non-active:   Active doesn&apos;t have it and:[ENDCOLOR] [COLOR:0:135:0:255]Surplus &gt; 3[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:125:255:0:255]Surplus &gt; 1[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:255:255:100:255]Surplus = 1 (has more)[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:255:100:255:255]Surplus = 1 (only one)[ENDCOLOR]    [COLOR:255:70:70:255]Surplus &lt; 0[ENDCOLOR]   [COLOR_YIELD_FOOD]Total = 0 and Active has it[ENDCOLOR]   [COLOR:255:50:150:255]Embargo[ENDCOLOR]   [COLOR_CITY_GREY]Rest[ENDCOLOR]</Text>
+		</Row>
+	  
+	  
+	  
+	  
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>City-States</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>City-State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY" >
+			<Text>[ICON_FLOWER]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>Influence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNITS" >
+			<Text>[ICON_SILVER_FIST]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPY" >
+			<Text>[ICON_VP_SPY_POINTS]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>[ICON_RESISTANCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>Allied with</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_POSSIBLE_PROTECTION" >
+			<Text>[ICON_CAPITAL]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>Protected by</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_EMBASSY" >
+			<Text>[ICON_DIPLOMAT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPHERE" >
+			<Text>[ICON_INFLUENCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_DISTANCE" >
+			<Text>[ICON_MOVES]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>Quests</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_REFRESH" >
+			<Text>[ICON_SWAP]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_REFRESH_TT" >
+			<Text>Click to refresh icons in current window.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_SORT_TRAIT_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Trait[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_NAME_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]City-State[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_PERSONALITY_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Personality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_INFLUENCE_TT" >
+			<Text>Sort by:[NEWLINE]LMB: [COLOR_POSITIVE_TEXT]Influence[ENDCOLOR][NEWLINE]RMB: [COLOR_POSITIVE_TEXT]Influence Needed[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_UNITS_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Units Given[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_SPY_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Spy[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_WAR_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]War Status[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_ALLY_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Ally[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_POSSIBLE_PROTECTION_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Protection Status[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_PROTECTED_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Number of Protectors[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_EMBASSY_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] presence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_SPHERE_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] presence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_DISTANCE_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Distance[ENDCOLOR] between City-State and your closest City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_QUESTS_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Number of Quests[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_FRIEND_TT" >
+			<Text>Affable</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_NEUTRAL_TT" >
+			<Text>Pragmatic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_HOSTILE_TT" >
+			<Text>Reclusive</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_IRRATIONAL_TT" >
+			<Text>Enigmatic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE_TT" >
+			<Text>{1_ally} is currently Ally of {2_cs}. You need another {3_influence_need} [ICON_INFLUENCE] to surpass {1_ally} and become their new Ally.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE_NOBODY_TT" >
+			<Text>Nobody is currently Ally of {1_cs}. You need another {2_influence_need} [ICON_INFLUENCE] to become their new Ally.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_ALLY_DIS_TT" >
+			<Text>{1_cs} is your [COLOR_CYAN]Ally[ENDCOLOR] and you have unit spawn [COLOR_NEGATIVE_TEXT]Disabled[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_FRIEND_DIS_TT" >
+			<Text>{1_cs} is your [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] and you have unit spawn [COLOR_NEGATIVE_TEXT]Disabled[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_ALLY_EN_TT" >
+			<Text>{1_cs} is your [COLOR_CYAN]Ally[ENDCOLOR] and you have unit spawn [COLOR_POSITIVE_TEXT]Enabled[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_FRIEND_EN_TT" >
+			<Text>{1_cs} is your [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] and you have unit spawn [COLOR_POSITIVE_TEXT]Enabled[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_NOBODY_TT" >
+			<Text>{1_cs} is [COLOR_NEGATIVE_TEXT]not[ENDCOLOR] your [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_NOBODY_ANGRY_TT" >
+			<Text>{1_cs} is [COLOR_NEGATIVE_TEXT]not[ENDCOLOR] your [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] and your relations with them are very bad..</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_UNIT_TT" >
+			<Text>[NEWLINE][NEWLINE]Unique [COLOR_CYAN]{1_era}[ENDCOLOR] ([COLOR_CYAN]{2_tech}[ENDCOLOR]) Unit:[NEWLINE][COLOR_YIELD_FOOD]{3_unit}[ENDCOLOR] - {4_help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>You are at war with {1_cs}. Click on the icon to sign a [COLOR_POSITIVE_TEXT]Peace Treaty[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>You are at war with {1_cs} and you cannot sign a [COLOR_NEGATIVE_TEXT]Peace Treaty[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTION_PLEDGE_TT" >
+			<Text>Protection available. Click on icon to [COLOR_POSITIVE_TEXT]Pledge Protection[ENDCOLOR] over [COLOR_CYAN]{1_cs}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTION_REVOKE_TT" >
+			<Text>You already pledge protection over [COLOR_POSITIVE_TEXT]{1_cs}[ENDCOLOR]. Click on icon to [COLOR_NEGATIVE_TEXT]Revoke Protection[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1} is protected by:[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_EMBASSY_TT" >
+			<Text>[COLOR_CYAN]{1_MajorPlayer}[ENDCOLOR] has established an Embassy in this City-State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPHERE_TT" >
+			<Text>[COLOR_CYAN]{1_MajorPlayer}[ENDCOLOR] has a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] over this City-State.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_DISTANCE_TT" >
+			<Text>Your closest City is [COLOR_CYAN]{1_city}[ENDCOLOR].[NEWLINE][NEWLINE]Click on distance to center map on {2_cs}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1_QuestText}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1} currently has no requests.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNKNOWN" >
+			<Text>Unknown</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNKNOWN_PLAYER" >
+			<Text>Unknown Player</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MARRIAGE_TT" >
+			<Text>[NEWLINE][NEWLINE][COLOR_MAGENTA]Marriage:[ENDCOLOR] While at peace with the City-State, [ICON_RES_MARRIAGE] Marriages eliminate [ICON_INFLUENCE] Influence decay, grant an additional [ICON_DIPLOMAT] World Congress Delegate, and provide a +15% [ICON_GREAT_PEOPLE] Great Person Rate boost in the [ICON_CAPITAL] Capital.</Text>
+		</Row>		
+
+		<Row Tag="TXT_KEY_DO_CS_GET_APPROACH" >
+			<Text>{1_color}{2_text}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_INFLUENCE_VALUE" >
+			<Text>{1_inf}{2_need}{3_change}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_RED_FLAG" >
+			<Text>[ICON_TEAM_2]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_PINK_FLAG" >
+			<Text>[ICON_TEAM_6]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_ORANGE_FLAG" >
+			<Text>[ICON_TEAM_9]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_GREEN_FLAG" >
+			<Text>[ICON_TEAM_4]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_CYAN_FLAG" >
+			<Text>[ICON_TEAM_5]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_WHITE_FLAG" >
+			<Text>[ICON_TEAM_1]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_BLACK_FLAG" >
+			<Text>[ICON_TEAM_11]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_YOU" >
+			<Text>[COLOR_CYAN]You[ENDCOLOR]</Text>
+		</Row>
+
+		<Update>
+			<Where Tag="TXT_KEY_DO_NO_MINORS" />
+			<Set Text="You have not met any City-States." />
+		</Update>
+		
+		
+		
+		<!-- INFO ADDICT -->
+		<!-- RELATIONSHIP GRAPH -->
+		<!-- Borrowed from Global Relations from Info Addict -->
+		<Row Tag="TXT_KEY_DO_GR_IMMENSE">
+			<Text>[COLOR:210:0:0:255]IMMENSE</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POWERFUL">
+			<Text>[COLOR:245:80:40:255]POWERFUL</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_STRONG">
+			<Text>[COLOR:245:150:10:255]STRONG</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SIGNIFICANT">
+			<Text>[COLOR:205:215:60:255]SIGNIFICANT</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SIMILAR">
+			<Text>[COLOR_WHITE]SIMILAR</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_INFERIOR">
+			<Text>[COLOR:175:220:255:255]INFERIOR</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_WEAK">
+			<Text>[COLOR:125:180:220:255]WEAK</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POOR">
+			<Text>[COLOR:45:220:190:255]POOR</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_PATHETIC">
+			<Text>[COLOR:55:240:85:255]PATHETIC</Text>
+		</Row>
+
+		<!-- Relationship view titles -->
+		<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_ECONOMIC">
+			<Text>Economic View</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_POLITICAL">
+			<Text>Political View</Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_ATTITUDE">
+			<Text>Attitude</Text>
+		</Row>-->
+
+		<!-- Relationship view key (bottom right) -->
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_MUTUAL">
+			<Text>Mutual</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_ONE_SIDED">
+			<Text>One-Sided</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_WAR">
+			<Text>War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_OPEN_BORDERS">
+			<Text>Open Borders</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DECLARATION_OF_FRIENDSHIP">
+			<Text>Declaration of Friendship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DENOUNCEMENT">
+			<Text>Denouncement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DEFENSIVE_PACT">
+			<Text>Defensive Pact</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_RESEARCH_AGREEMENT">
+			<Text>Research Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_GPT">
+			<Text>Gold per Turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_RESOURCE">
+			<Text>Resource</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_TRADEROUTE">
+			<Text>Trade Route</Text>
+		</Row>
+		
+		<!-- Auxiliary -->
+		<Row Tag="TXT_KEY_DO_GR_STANCE">
+			<Text>[COLOR_LIGHT_GREY]Stance:</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_HOSTILE">
+			<Text>HOSTILE</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_GUARDED">
+			<Text>GUARDED</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_AFRAID">
+			<Text>AFRAID</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_FRIENDLY">
+			<Text>FRIENDLY</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_NEUTRAL_STANCE">
+			<Text>NEUTRAL</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_AT_WAR">
+			<Text>AT WAR</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_OUR_EMPIRE">
+			<Text>Our Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SCORE">
+			<Text>Score:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_ERA">
+			<Text>Epoch:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_INCOME">
+			<Text>Income:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_MILITARY">
+			<Text>Military Power:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TECHNOLOGY">
+			<Text>Technologies:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POLICY">
+			<Text>Social Policies</Text>
+		</Row>
+		
+
+		<!-- Tooltip text fragments for the relationship graphs -->
+		<Row Tag="TXT_KEY_DO_GR_TT_GPT_TO">
+			<Text>gold per turn to</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_GPT_FROM">
+			<Text>gold per turn from</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_RESEARCH_WITH">
+			<Text>Research agreement with</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_TO">
+			<Text>to</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_FROM">
+			<Text>from</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_TT_EXPORTS">
+			<Text>Exports</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_IMPORTS">
+			<Text>Imports</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_TRADEROUTES">
+			<Text>Trade Routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_RESEARCH_AGREEMENTS">
+			<Text>Research Agreements</Text>
+		</Row>
+
+		<!-- This is text for the reset selections button in the graph screens-->
+		<Row Tag="TXT_KEY_DO_GR_RESET_SELECTIONS">
+			<Text>Reset Selections</Text>
+		</Row>
+
+		<!-- "of the" used when building a leader title, as in "Bismark of the German Empire" -->
+		<Row Tag="TXT_KEY_DO_GR_OF_THE">
+			<Text>of the</Text>
+		</Row>
+
+		<!-- "Turn" as in "Turn 145 of the game" -->
+		<Row Tag="TXT_KEY_DO_GR_TURN">
+			<Text>Turn</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

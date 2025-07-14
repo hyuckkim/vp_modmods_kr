@@ -1,0 +1,519 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE</Type>
+			<EventClass>EVENT_CLASS_CIV_SPECIFIC</EventClass>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP</Help>
+			<NumChoices>6</NumChoices>
+			<EventArt>basedcivevent.dds</EventArt>
+			<EventAudio>AS2D_EVENT_ECIV</EventAudio>
+			<RandomChance>125</RandomChance>
+			<RandomChanceDelta>125</RandomChanceDelta>
+			<EventCooldown>0</EventCooldown>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<RequiredCiv>CIVILIZATION_AUSTRIA</RequiredCiv>
+			<MinimumNationalPopulation>30</MinimumNationalPopulation>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_1</Help>
+			<FreeGreatPeople>1</FreeGreatPeople>
+			<EventDuration>150</EventDuration>
+			<IsOneShot>false</IsOneShot>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+		</Row>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_2</Description>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_NATIONAL_EPIC</RequiredAnywhereBuildingClass>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<ObsoleteEra>ERA_INDUSTRIAL</ObsoleteEra>
+		</Row>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_3</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_OPERA_HOUSE</RequiredAnywhereBuildingClass>
+			<WLTKDTurns>20</WLTKDTurns>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+			<EventBuildingClassGlobal>BUILDINGCLASS_AUSTRIA_UE_DUMMY</EventBuildingClassGlobal>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_4</Type>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_4</Description>
+			<IsOneShot>true</IsOneShot>
+			<EventPromotion>PROMOTION_UE_VIENNA_RELIEF</EventPromotion>
+			<RequiresWar>true</RequiresWar>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<FreeUnitsTechAppropriate>2</FreeUnitsTechAppropriate>
+			<EventDuration>-1</EventDuration>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+		</Row>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_5</Type>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_5</Help>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_5</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiresIdeology>true</RequiresIdeology>
+			<IsUnhappy>true</IsUnhappy>
+			<ResistanceTurns>3</ResistanceTurns>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<WLTKDTurns>25</WLTKDTurns>
+			<EventBuildingClassGlobal>BUILDINGCLASS_AUSTRIA_UE_DUMMY_2</EventBuildingClassGlobal>
+			<EventDuration>-1</EventDuration>
+			<Expires>false</Expires>
+		</Row>
+		<Row>
+			<Type>EVENT_AUSTRIA_UE_CHOICE_6</Type>
+			<Help>TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_6</Help>
+			<Description>TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_6</Description>
+			<IsOneShot>true</IsOneShot>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_INTERPRETIVE_CENTER</RequiredAnywhereBuildingClass>
+			<EventBuildingClassGlobal>BUILDINGCLASS_AUSTRIA_UE_DUMMY_3</EventBuildingClassGlobal>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_4</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_5</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<EventType>EVENT_AUSTRIA_UE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_UE_VIENNA_RELIEF</Type>
+			<Description>TXT_KEY_PROMOTION_UE_VIENNA_RELIEF</Description>
+			<Help>TXT_KEY_PROMOTION_UE_VIENNA_RELIEF_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CapitalDefenseModifier>50</CapitalDefenseModifier>
+			<CapitalDefenseFalloff>-5</CapitalDefenseFalloff>
+			<PortraitIndex>40</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_UE_VIENNA_RELIEF</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_UE_VIENNA_RELIEF</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_VIENNA_RELIEF</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_VIENNA_RELIEF</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_UE_VIENNA_RELIEF</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_AUSTRIA_UE_DUMMY</Type>
+			<DefaultBuilding>BUILDING_AUSTRIA_UE_DUMMY</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_AUSTRIA_UE_DUMMY_2</Type>
+			<DefaultBuilding>BUILDING_AUSTRIA_UE_DUMMY_2</DefaultBuilding>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_AUSTRIA_UE_DUMMY_3</Type>
+			<DefaultBuilding>BUILDING_AUSTRIA_UE_DUMMY_3</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_AUSTRIA_UE_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_AUSTRIA_UE_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+			<NeverCapture>true</NeverCapture>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+		<Row>
+			<Type>BUILDING_AUSTRIA_UE_DUMMY_2</Type>
+			<BuildingClass>BUILDINGCLASS_AUSTRIA_UE_DUMMY_2</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_2</Description>
+			<Help>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_2_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+			<NeverCapture>true</NeverCapture>
+			<CapitalOnly>true</CapitalOnly>
+		</Row>
+		<Row>
+			<Type>BUILDING_AUSTRIA_UE_DUMMY_3</Type>
+			<BuildingClass>BUILDINGCLASS_AUSTRIA_UE_DUMMY_3</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_3</Description>
+			<Help>TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_3_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<IconAtlas>CE123_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>true</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_WLTKDYieldMod>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY_2</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</Building_WLTKDYieldMod>
+	<Building_YieldPerXTerrainTimes100>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY_3</BuildingType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>300</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUSTRIA_UE_DUMMY_3</BuildingType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</Building_YieldPerXTerrainTimes100>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_PAPER</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_FreeUnits>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<UnitType>UNIT_EMISSARY</UnitType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_FreeUnits>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE_LOCAL</YieldType>
+			<Yield>1500</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>250</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_4</EventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoice_MinimumStartYield>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_MinimumStartYield>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>150</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>350</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+
+<!--<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_4</EventChoiceType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>-2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_5</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</EventChoiceFlavors>-->
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_3</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_3</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_3_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_4</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_4</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_4_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_5</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_5</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_5_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AUSTRIA_UE_CHOICE_6</EventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_6</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_6_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_1_S">
+			<Text>{1_CivShortDescription}'s Royal Marriage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_1">
+			<Text>{3_PlayerName} offers a lucrative duchy as as a dowry to a Great Person.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_2_S">
+			<Text>{1_CivShortDescription}'s Hereditary Lands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_2">
+			<Text>{3_PlayerName} accumulates a considerable amount of land and wealth through the succession of her various children!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_3_S">
+			<Text>{1_CivShortDescription}'s High Society of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_3">
+			<Text>{3_PlayerName} invests in infrastructure to attract the rich and powerful to Vienna!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_4_S">
+			<Text>{1_CivShortDescription}'s Relief of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_4">
+			<Text>{3_PlayerName} makes promises to her underlings in exchange for immediate military assisstance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_5_S">
+			<Text>{1_CivShortDescription}'s Higher Society of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_5">
+			<Text>{3_PlayerName} takes internal action against upstart noveaux riches!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_6_S">
+			<Text>{1_CivShortDescription}'s Ski Resorts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_AUSTRIA_UE_CHOICE_6">
+			<Text>{3_PlayerName} has popularised alpine retreats with the elites, revitalising Austria's mountain economy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION">
+			<Text>The Blue Danube</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP">
+			<Text>Holy Roman Empress, your handmaidens would like to do a dry run of your dress for tomorrow's function. Perhaps I can arrange for some nibbles to be brought up?[NEWLINE]Could we quickly go through these wedding invitations?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_1">
+			<Text>Receive a Great Person of your choice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_2">
+			<Text>Leverage {1_YieldCost} to recruit two Emissary and marry into {2_InstantYield} in the [ICON_CAPITAL] Capital. Receive two copies of [ICON_RES_PAPER] Paper.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_3">
+			<Text>Utilise {1_YieldCost} to attract high society to Vienna. For 20 Turns, you experience [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR]. This and future [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] also increase [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism in the [ICON_CAPITAL] Capital by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_4">
+			<Text>Conscript {1_InstantYield} into the military in the [ICON_CAPITAL] Capital. Melee, Gun, Mounted, and Armored Units gain up to 50% extra [ICON_STRENGTH] near the [ICON_CAPITAL], falling off with distance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_5">
+			<Text>Enter a period of reformation. This triggers 25 Turns of [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR], but you spend the first 3 Turns of this time in [ICON_RESISTANCE] Anarchy. This and future [COLOR_POSITIVE_TEXT]WLTKD[ENDCOLOR] also increase [ICON_GOLD] Gold and [ICON_PRODUCTION] Production in the [ICON_CAPITAL] Capital by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_HELP_CHOICE_6">
+			<Text>Invest {1_YieldCost} in Ski Resorts. Every City gains +3 [ICON_TOURISM] Tourism and +3 [ICON_GOLD] Gold for every Mountain Tile within range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_1">
+			<Text>I think I will attend this one next month, they're a very interesting couple. Throw the rest out.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_2">
+			<Text>We get so many invitations and propositions, who knows which ones are the most prudent in the long run? There needs to be some kind of bureau set up to deal with this. Could you be a dear and sort that out for me.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_3">
+			<Text>My my, some of these factions are awfully popular right now. We should make sure that they stick around in Vienna after the weddings. The Spring can be so dreary.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_4">
+			<Text>Are they not aware that we are a little busy at the moment? Send replies promising we shall grace them with our presence, provided we see their bannermen in Vienna posthaste.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_5">
+			<Text>You know, one is so bored of these upstart peasants presuming to send letters to their Archduchess. We must see to it that they are pulled down a few pegs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AUSTRIA_UE_DESCRIPTION_CHOICE_6">
+			<Text>Having these Schloss weddings is all very well and good, but after several thousand years they get a bit stale. It would be good to have a change of scenery. Perhaps we can repopularise alpine receptions?</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_UE_VIENNA_RELIEF">
+			<Text>Relief of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UE_VIENNA_RELIEF_HELP">
+			<Text>Gain +50% [ICON_STRENGTH] Strength near the [ICON_CAPITAL] Capital. Falls off with distance.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY">
+			<Text>High Society of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_HELP">
+			<Text>+50% [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism during WLTKD.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_2">
+			<Text>Higher Society of Vienna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_2_HELP">
+			<Text>+50% [ICON_PRODUCTION] Production and [ICON_GOLD] Gold during WLTKD.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_3">
+			<Text>Ski Resorts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_UE_DUMMY_3_HELP">
+			<Text>+3 [ICON_GOLD] Gold and +3 [ICON_TOURISM] Tourism for each Mountain within workable proximity.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

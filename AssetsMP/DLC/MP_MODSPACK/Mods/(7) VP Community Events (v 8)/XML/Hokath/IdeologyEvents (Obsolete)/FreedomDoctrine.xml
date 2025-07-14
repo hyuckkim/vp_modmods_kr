@@ -1,0 +1,154 @@
+<GameData>
+	<!-- Freedom Doctrine -->
+	<Events>
+		<Row>
+			<Type>EVENT_FREEDOM_DOCTRINE</Type>
+			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<RandomChance>40</RandomChance>
+			<EventCooldown>75</EventCooldown>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_COVERT_ACTION</RequiredPolicy>
+			<RandomChanceDelta>3</RandomChanceDelta>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1</Help>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_AIRPORT</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_2</Type>
+			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2</Description>
+		</Row>
+		<Row>
+			<Type>EVENT_FREEDOM_DOCTRINE_CHOICE_3</Type>
+			<Help>TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3</Description>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_POLICE_STATION</RequiredAnywhereBuildingClass>
+			<GoldMedianModifierGlobal>-10</GoldMedianModifierGlobal>
+			<ScienceMedianModifierGlobal>-10</ScienceMedianModifierGlobal>
+		</Row>
+	</EventChoices>
+	<EventChoice_EventLinks>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
+			<EventChoiceLinker>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceLinker>
+			<CheckForActive>false</CheckForActive>
+			<CheckKnownPlayers>true</CheckKnownPlayers>
+		</Row>
+	</EventChoice_EventLinks>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_FREEDOM_DOCTRINE</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<ResourceType>RESOURCE_PAPER</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+	<EventChoice_Notification>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_1</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_FREEDOM_DOCTRINE_CHOICE_2</EventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</EventChoice_Notification>
+	
+	<!--  Text -->
+	<!-- Freedom Doctrine -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1_S">
+			<Text>{1_Playername} extends hand to foreign dissidents.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_1">
+			<Text>{1_Playername} gains additional cultural and diplomatic influence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2_S">
+			<Text>Rumours circulate that {1_Playername} is funding terrorist organisations!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EVENT_FREEDOM_DOCTRINE_CHOICE_2">
+			<Text>Autocracy and Order Empires are now vulnerable to partisan attacks on their Occupied Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION">
+			<Text>Alliance of the Free</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP">
+			<Text>Your recent backing of Covert Operations has led to several competing teams within CI:7. Each has a different idea of how the additional funding should be spent.[NEWLINE][NEWLINE]What is your verdict?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_1">
+			<Text>Gain +4 [ICON_RES_PAPER] Paper. Airports increase [ICON_CULTURE] Culture output in cities by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_2">
+			<Text>The [ICON_OCCUPIED] Occupied Cities of other Ideologies are vulnerable to partisan attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_HELP_CHOICE_3">
+			<Text>Reduce the [ICON_GOLD] Poverty and [ICON_RESEARCH] Illiteracy thresholds in all cities by 15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_1">
+			<Text>I like Operation Golden Door. We will defeat our enemies with the strength of our conviction and purity of our ideology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_2">
+			<Text>I like Operation Pincushion. We will give those who yearn for Freedom the weapons with which to do so.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_FREEDOM_DOCTRINE_DESCRIPTION_CHOICE_3">
+			<Text>I like Operation Illuminatus. Sometimes, to remain free, we must do things against our own moral code. The happy populus, not burdened as we who must lead, cannot be allowed to naively interfere.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

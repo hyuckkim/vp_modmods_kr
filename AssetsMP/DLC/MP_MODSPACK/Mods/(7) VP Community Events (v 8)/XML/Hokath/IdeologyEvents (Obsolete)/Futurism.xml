@@ -1,0 +1,181 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_IDEOLOGY_FUTURISM</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>45</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredPolicy>POLICY_FUTURISM</RequiredPolicy>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_IDEOLOGY_FUTURISM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_1</Help>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_FUTURISM_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_2</Help>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_MUSEUM</RequiredAnywhereBuildingClass>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+		</Row>
+		<Row>
+			<Type>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_3</Help>
+			<EraScaling>true</EraScaling>
+			<EventDuration>-1</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_IDEOLOGY_FUTURISM_DUMMY</EventBuildingClassGlobal>
+			<CapitalEffectOnly>true</CapitalEffectOnly>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HERMITAGE</RequiredAnywhereBuildingClass>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_FUTURISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_FUTURISM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_IDEOLOGY_FUTURISM</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_IDEOLOGY_FUTURISM_DUMMY</Type>
+			<DefaultBuilding>BUILDING_IDEOLOGY_FUTURISM_DUMMY</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_IDEOLOGY_FUTURISM_DUMMY</Type>
+			<BuildingClass>BUILDINGCLASS_IDEOLOGY_FUTURISM_DUMMY</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY</Description>
+			<Help>TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY_HELP</Help>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>NULL</PrereqTech>
+			<IconAtlas>CE123_ATLAS</IconAtlas>			
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+		</Row>
+	</Buildings>
+
+	<Building_GreatWorkYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_IDEOLOGY_FUTURISM_DUMMY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_GreatWorkYieldChanges>
+	
+	<EventChoice_BuildingClassYieldModifier>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Modifier>5</Modifier>
+		</Row>
+	</EventChoice_BuildingClassYieldModifier>
+
+	<EventChoice_SpecialistYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_1</EventChoiceType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</EventChoice_SpecialistYieldChange>
+
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_IDEOLOGY_FUTURISM_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION">
+			<Text>We Want None of the Past</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP">
+			<Text>Now that our Artists have made a break from the work which came before them, how can we best support our new cultural movement?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_1">
+			<Text>Change {1_YieldCost} worth of opinions to allow all [ICON_GREAT_ARTIST] Artists to generate +2 [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_2">
+			<Text>Inspire people using {1_YieldCost}, causing all Museums to boost [ICON_RESEARCH] Science by 5%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_HELP_CHOICE_3">
+			<Text>Set up exhibitions with {1_YieldCost}. [ICON_GREAT_WORK] Great Works inspire citizens, generating +2 [ICON_PRODUCTION] Production each.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_1">
+			<Text>Not all our Artists are on board with this new movement. Until we can convince all the established, influential masters to support this new wave, we will not have achieved our potential.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_2">
+			<Text>We have this inspiring work, but it is not being disseminated properly. I want these works in all our Museums, so that we might move forward into a brighter, braver era!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_IDEOLOGY_FUTURISM_DESCRIPTION_CHOICE_3">
+			<Text>It is all very well if these new ideas fill our Museums, but it is really the lower classes who are in need of inspiration. Take our state collection of this art, and set up exhibitions that might be attended by our workers.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY">
+			<Text>Art of Inspiration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IDEOLOGY_FUTURISM_DUMMY_HELP">
+			<Text>+2 [ICON_TOURISM] Production to Great Works.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
+
+

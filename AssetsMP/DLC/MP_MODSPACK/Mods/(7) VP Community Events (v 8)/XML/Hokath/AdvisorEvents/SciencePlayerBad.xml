@@ -1,0 +1,254 @@
+<GameData>
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>40</RandomChance>
+			<RandomChanceDelta>2</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<EventArt>advisorscience.dds</EventArt>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
+			<EventChoice>EVENT_AES_SCIENCE_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_LABORATORY</RequiredAnywhereBuildingClass>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION">
+			<Text>Day Of The Triffids</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_HELP_CHOICE_1">
+			<Text>Herbacide resistance plants have been spotted growing near the laboratory they were supposedly kept in. By now, all the Farms and Plantations in the Empire will have been contaminated, and so produce -2 [ICON_FOOD] Food. Perhaps some day in the future there can be a solution to our present problem...</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_DESCRIPTION_CHOICE_1">
+			<Text>Day Of The Triffids</Text>
+		</Row>
+	</Language_en_US>
+
+	<!-- Follow up 'cures', require later techs-->
+	<Events>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP</Help>
+			<IgnoresGlobalCooldown>true</IgnoresGlobalCooldown>
+			<NumChoices>3</NumChoices>
+			<RandomChance>50</RandomChance>
+			<RandomChanceDelta>25</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+		</Row>
+	</Events>
+	<Event_EventLinks>
+		<Row>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+			<EventLinker>EVENT_AES_SCIENCE_PLAYER_BAD</EventLinker>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</Event_EventLinks>
+	<EventChoices>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<EraScaling>true</EraScaling>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_HOSPITAL</RequiredAnywhereBuildingClass>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
+		</Row>
+		<Row>
+			<Type>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</Type>
+			<Description>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<EventDuration>-1</EventDuration>
+			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<EventType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE</EventType>
+		</Row>
+	</Event_ParentEvents>
+
+	<EventChoice_MinimumResourceRequired>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>2</Quantity>
+		</Row>
+	</EventChoice_MinimumResourceRequired>
+	<EventChoice_ResourceQuantity>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Quantity>-2</Quantity>
+		</Row>
+	</EventChoice_ResourceQuantity>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>400</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>300</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-3</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>-4</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>EVENT_AES_SCIENCE_PLAYER_BAD_CURE_CHOICE_3</EventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION">
+			<Text>First Degree Herbacide</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP">
+			<Text>The review into the 'triffid' weeds has been delivered. It reveals the full extent of the damage and heavily criticises both the scientists and government officials involved. The recommendation is for an immediate, high-cost solution to be authorised.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_1">
+			<Text>Pull {1_YieldCost} worth of biologists off their current projects. Farms and Plantations regain +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_2">
+			<Text>Hand over 2 copies of [ICON_RES_URANIUM] Uranium to your physicists. Farms and Plantations regain +2 [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_HELP_CHOICE_3">
+			<Text>Pull {1_YieldCost} worth of biologists off their current projects. Farms and Plantations regain +2 [ICON_FOOD] Food and then gain an additional +1 [ICON_FOOD] Food.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_1">
+			<Text>The biologists that gave life to these monstrosities can surely come up with a way to eradicate them. Clearly, it must become our top priority.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_2">
+			<Text>Clearly biologists shouldn't be allowed near serious science. Hand the matter over to our physicists, I am sure they will come up with an effective solution.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_AES_SCIENCE_PLAYER_BAD_CURE_DESCRIPTION_CHOICE_3">
+			<Text>Poeple have been saying GMOs are a failure, but I disagree. This whole debacle has shown that the science works! We need more research, more experiments! We will not just destroy these plants, we will build better plants!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

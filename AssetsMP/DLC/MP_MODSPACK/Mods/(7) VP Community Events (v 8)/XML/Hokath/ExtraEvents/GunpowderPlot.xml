@@ -1,0 +1,191 @@
+<GameData>
+	<!-- Gunpowder Plot -->
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_GUNPOWDER_PLOT</Type>
+			<Description>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP</Help>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<NumChoices>4</NumChoices>
+			<RandomChance>50</RandomChance>
+			<IsOneShot>true</IsOneShot>
+			<CityHasPlayerMajorityReligion>true</CityHasPlayerMajorityReligion>
+			<CapitalOnly>true</CapitalOnly>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsUnhappy>true</IsUnhappy>
+		</Row>
+	</CityEvents>
+	
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_1</Help>
+			<EventChance>500</EventChance>
+			<ResistanceTurns>2</ResistanceTurns>
+			<EventDuration>2</EventDuration>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_2</Type>
+			<Help>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_2</Help>
+			<Description>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_2</Description>
+			<RequiredPolicy>POLICY_THEOCRACY</RequiredPolicy>
+			<ConvertToPlayerMajorityReligionPercent>99</ConvertToPlayerMajorityReligionPercent>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_3</Type>
+			<Help>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_3</Help>
+			<Description>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_3</Description>
+			<RequiresGarrison>true</RequiresGarrison>
+			<EventDuration>15</EventDuration>
+			<CityHappiness>-2</CityHappiness>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</Type>
+			<Help>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_4</Help>
+			<Description>TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_4</Description>
+			<RequiresWLTKD>true</RequiresWLTKD>
+			<EraScaling>true</EraScaling>
+		</Row>
+	</CityEventChoices>
+	<CityEventChoice_MinimumStartYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+		</Row>
+	</CityEventChoice_MinimumStartYield>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_GUNPOWDER_PLOT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_GUNPOWDER_PLOT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_GUNPOWDER_PLOT</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_GUNPOWDER_PLOT</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_2</CityEventChoiceType>
+			<YieldType>YIELD_POPULATION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_BuildingClassYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</CityEventChoice_BuildingClassYieldChange>
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_4</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+	<CityEventChoice_Notification>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1</CityEventChoiceType>
+			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType>
+			<Description>TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1</Description>
+			<ShortDescription>TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1_S</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</CityEventChoice_Notification>
+	
+	<!-- Text -->
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1_S">
+			<Text>{1_Playername}'s Palace has been blown up by religious dissidents!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_EVENT_GUNPOWDER_PLOT_CHOICE_1">
+			<Text>Their capital has entered [ICON_RESISTANCE] Resistance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION">
+			<Text>Gunpowder Plot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP">
+			<Text>A man of a minority faith has come forward, confessing his involvement in a plot to blow up the Palace. He begs for repentence, but doesn't know enough to bring down the plotters.[NEWLINE][NEWLINE]What should we do, Your Excellence?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_1">
+			<Text>50% chance for {5_Turns} turns of [ICON_RESISTANCE] Resistance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_2">
+			<Text>Convert all [ICON_CITIZEN] Population to your [ICON_RELIGION] Religion, but lose -2 [ICON_CITIZEN] Population in the process.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_3">
+			<Text>2 [ICON_HAPPINESS_4] Unhappiness for 15 turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_HELP_CHOICE_4">
+			<Text>Spend {2_InstantYield} in return for +2 [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_CULTURE] Culture on the Palace.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_1">
+			<Text>If anything happens to that building, the only thing that will be different, the only thing that will change, the only difference that it will make, is that next turn instead of a notification, I will be reading your resignation!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_2">
+			<Text>Offer this man, and any others who want to come forward, a pardon. Then, burn every remaining member of that misbegotten faith at the stake.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_3">
+			<Text>Those ungrateful muts. Pull every reserve to search for these conspirators. Double the guard. Cancel Christmas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_GUNPOWDER_PLOT_DESCRIPTION_CHOICE_4">
+			<Text>Clean out the palace. When the explosion comes, tell everyone it was part of the WTLKD celebrations. Then, build a bigger, better Palace.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

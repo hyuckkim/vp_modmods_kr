@@ -1,0 +1,143 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE</Type>
+			<EventClass>EVENT_CLASS_TRADE</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP</Help>
+			<NumChoices>3</NumChoices>
+			<RandomChance>30</RandomChance>
+			<RandomChanceDelta>2</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_WALLS</RequiredBuildingClass>
+			<CityEventArt>advisorforeign.dds</CityEventArt>
+			<CityEventAudio>AS2D_EVENT_EFOREIGN</CityEventAudio>
+		</Row>
+	</CityEvents>
+	<CityEvent_EventLinks>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+			<EventChoice>EVENT_AES_FOREIGN_CHOICE_1</EventChoice>
+			<CheckForActive>true</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+		<Row>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+			<CityEventLinker>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventLinker>
+			<CheckForActive>false</CheckForActive>
+			<CheckKnownPlayers>false</CheckKnownPlayers>
+		</Row>
+	</CityEvent_EventLinks>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<ImprovementRequired>IMPROVEMENT_PLANTATION</ImprovementRequired>
+			<EventDuration>100</EventDuration>
+			<ScienceMedianModifier>10</ScienceMedianModifier>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_2</Help>
+			<IsOneShot>true</IsOneShot>
+			<CityHappiness>-2</CityHappiness>
+			<EventDuration>100</EventDuration>
+			<EventBuildingClass>BUILDINGCLASS_SYNAGOGUE</EventBuildingClass>
+			<CannotHaveBuildingClass>BUILDINGCLASS_SYNAGOGUE</CannotHaveBuildingClass>
+			<CityHasPlayerReligion>true</CityHasPlayerReligion>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_3</Help>
+			<IsOneShot>true</IsOneShot>
+			<RequiresGarrison>true</RequiresGarrison>
+			<RandomBarbarianSpawn>3</RandomBarbarianSpawn>
+			<EraScaling>true</EraScaling>
+			<EventDuration>100</EventDuration>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_2</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_AES_FOREIGN_CITY_TRADE</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>75</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_3</CityEventChoiceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoice_ImprovementYieldChange>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_AES_FOREIGN_CITY_TRADE_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</CityEventChoice_ImprovementYieldChange>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION">
+			<Text>Relocation, Relocation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP">
+			<Text>A displaced, refugee community arrive at the City gates seeking protection. They claim to have met your Foreign Advisor on the road, who promised them sanctuary.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_1">
+			<Text>Nearby Plantations yield +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith. However, the [ICON_RESEARCH] Illiteracy threshold increases by +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_1">
+			<Text>The Plantation owners are always looking for new labourers. It won't pay well, but its honest work.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_2">
+			<Text>The people erect a Synagogue around which to live. However, antisemitism in the City causes +2 [ICON_HAPPINESS_3] Unhappiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_2">
+			<Text>There is plenty of room for new citizens. However, we should warn them that their particular sect will make them many enemies among the faithful.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_HELP_CHOICE_3">
+			<Text>Gain {2_InstantYield} from the people's supplies. Up to 3 [ICON_WAR] Barbarians spawn around the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_AES_FOREIGN_CITY_TRADE_DESCRIPTION_CHOICE_3">
+			<Text>Sanctuary? We have barely enough as it is. Seize their supplies, kill those who resist.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

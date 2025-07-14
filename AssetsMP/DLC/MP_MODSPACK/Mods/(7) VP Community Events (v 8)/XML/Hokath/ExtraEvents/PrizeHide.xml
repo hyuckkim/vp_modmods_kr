@@ -1,0 +1,61 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_PRIZE_HIDE</Type>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_PRIZE_HIDE_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_PRIZE_HIDE_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>20</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_PRIZE_HIDE_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_PRIZE_HIDE_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_PRIZE_HIDE_HELP_CHOICE_1</Help>
+			<IsOneShot>true</IsOneShot>
+			<EraScaling>true</EraScaling>
+			<ImprovementRequired>IMPROVEMENT_CAMP</ImprovementRequired>
+			<RequiredEra>ERA_CLASSICAL</RequiredEra>
+			<ObsoleteEra>ERA_POSTMODERN</ObsoleteEra>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PRIZE_HIDE_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_PRIZE_HIDE</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PRIZE_HIDE_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_CULTURE_LOCAL</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PRIZE_HIDE_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>50</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_DESCRIPTION">
+			<Text>Quite The Rug</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_HELP_CHOICE_1">
+			<Text>An enormous beast, responsible for deaths of many men, has finally fallen. Hunters flock to see the proof of the deed, which hold pridge of place in the - now legendary - lodge.[NEWLINE][NEWLINE]Receive {2_InstantYield}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PRIZE_HIDE_DESCRIPTION_CHOICE_1">
+			<Text>Quite The Rug</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

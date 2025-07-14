@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_WONDERPLANNER_OVERVIEW">
+			<Text>Wonder Planner</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_PLANNER">
+			<Text>Available</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_BUILT">
+			<Text>Built</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_UNKNOWN">
+			<Text>Unknown</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_WONDERPLANNER_DESTROYED">
+			<Text>Destroyed</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDERPLANNER_ERA_LIMIT">
+			<Text>Limit to </Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_WONDER">
+			<Text>Wonder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NAME_TT">
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Wonder[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY">
+			<Text>City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY_TT">
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Civilization[ENDCOLOR] then by [COLOR_POSITIVE_TEXT]City[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH">
+			<Text>Technology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH_TT">
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Technology[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED">
+			<Text>#</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED_TT">
+			<Text>Sort by number of [COLOR_POSITIVE_TEXT]Technologies Needed[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR">
+			<Text>Year</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR_TT">
+			<Text>Sort by [COLOR_POSITIVE_TEXT]Year of Construction[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FOOD_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Food Generation[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Growth[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CONSTRUCTION_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Construction Speed[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GOLD_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Wealth[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GA_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Golden Ages[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TRADE_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Trading[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_SCIENCE_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Research Capabilities[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CULTURE_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Cultural Influence[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GREATPEOPLE_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Specialists[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Great People[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TOURISM_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Tourism[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FAITH_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Religion[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_HAPPY_TT">
+			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] or add [COLOR_POSITIVE_TEXT]Luxuries[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_OFFENSE_TT">
+			<Text>Group wonders that strengthen [COLOR_POSITIVE_TEXT]Offensive Capabilities[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FREEUNIT_TT">
+			<Text>Group wonders that grant a [COLOR_POSITIVE_TEXT]Free Unit[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Building[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_EXPANSION_TT">
+			<Text>Group wonders that help with [COLOR_POSITIVE_TEXT]Expansion[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_DEFENSE_TT">
+			<Text>Group wonders that strengthen [COLOR_POSITIVE_TEXT]Defensive Capabilities[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_ESPIONAGE_TT">
+			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Diplomacy[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Espionage[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_DESTROYED">
+			<Text>Destroyed!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_RELIGION">
+			<Text>Player did not found any {1_ColorHolyCity}Religion[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_IDEOLOGY">
+			<Text>Player has not unlocked {1_ColorIdeology}{2_IdeologyBranch}[ENDCOLOR] yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_POLICY">
+			<Text>Player has not finished {1_ColorPolicy}{2_PolicyBranch}[ENDCOLOR] yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_WORLD_PROJECT">
+			<Text>Player has not won the congress voting for {1_ColorCongress}{2_WorldProject}[ENDCOLOR] yet</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_1A">
+			<Text>+{1_spec_count} slots {2_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_1B">
+			<Text>+{1_gpp_rate} GPP/Turn {2_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3A">
+			<Text>+{1_gpp_rate_mod}% [ICON_GREAT_PEOPLE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3B">
+			<Text>+{1_gpp_rate_mod}% global [ICON_GREAT_PEOPLE]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK">
+			<Text>Wonder Status</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK_TT">
+			<Text>Tool for deciding which wonder(s) to aim for</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

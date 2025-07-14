@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e37c9bba-9a02-4472-b460-617a1132fa40" version="3">
+  <Properties>
+    <Name>Better Lakes for Vox Populi</Name>
+    <Teaser>Improves Lakes with new resources and buildings! Only for Vox Populi.</Teaser>
+    <Description>Improves Lakes with new resources and buildings! Only for Vox Populi.</Description>
+    <Authors>InkAxis, Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="6" maxversion="999" title="Unique City-States" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="5D19C4A1C35411A562DAD2C85ED451C8" import="0">art/atlas.sql</File>
+    <File md5="CD3CED2B47224400A9877C9BAAE50EE2" import="1">art/fonticon/LakeFishResIcon22.dds</File>
+    <File md5="227586255921F52B1BCBCF58BD328BE3" import="1">art/fonticon/LakeFishResIcon22.ggxml</File>
+    <File md5="4A0AFFACBEDD820AF0EE91F77A0600D7" import="1">art/fonticon/SaltResIcon22.dds</File>
+    <File md5="0B01287E72B7E19A2E397FC9356D33B2" import="1">art/fonticon/SaltResIcon22.ggxml</File>
+    <File md5="5EA13A2869E9ACC6C4A04EB8E58F2EB2" import="1">art/icon/LakeAtlas128.dds</File>
+    <File md5="54AEB11A560228D6B602D52C80674605" import="1">art/icon/LakeAtlas256.dds</File>
+    <File md5="F95DBBA75F596FA76906EEC6D95545B4" import="1">art/icon/LakeAtlas32.dds</File>
+    <File md5="F463B84609CEC6C9AAC7E3F5C23C52E1" import="1">art/icon/LakeAtlas45.dds</File>
+    <File md5="ABBB054EE60C795280FF84D877C31B7F" import="1">art/icon/LakeAtlas64.dds</File>
+    <File md5="10A36A7AC8BF8B80A7C49FC168E57E33" import="1">art/icon/LakeAtlas80.dds</File>
+    <File md5="DF44E717E61B876F7CC80BABF069CB39" import="1">art/SV_LakeFish.dds</File>
+    <File md5="724B1643D445DA6C9FB6916DCEA0E077" import="1">art/SV_SaltLake.dds</File>
+    <File md5="B2EFBCB4F738586282FD1E96930B07FA" import="0">core/buildings/buildingChecks.lua</File>
+    <File md5="D77DFC27C86172A239CBF0922F36B6A3" import="0">core/buildings/lakeExtractor.sql</File>
+    <File md5="C2ED1B375A8F05EAE9625AE33210917C" import="0">core/changes.sql</File>
+    <File md5="7CD12709AEA030CE4F16C17F7BB43619" import="0">core/resourcePlacement.lua</File>
+    <File md5="9BB272EB25021136BBD4160B41EF4E1D" import="0">core/resources/fishResource.sql</File>
+    <File md5="2B3126DC06D381CD5B6AB52E2841E53C" import="0">core/resources/saltResource.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>art/atlas.sql</UpdateDatabase>
+      <UpdateDatabase>core/buildings/saltGatherer.sql</UpdateDatabase>
+      <UpdateDatabase>core/resources/fishResource.sql</UpdateDatabase>
+      <UpdateDatabase>core/resources/saltResource.sql</UpdateDatabase>
+      <UpdateDatabase>core/changes.sql</UpdateDatabase>
+      <UpdateDatabase>core/buildings/lakeExtractor.sql</UpdateDatabase>
+      <UpdateDatabase>core/buildings/fishery.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="core/resourcePlacement.lua">
+      <Name>resourcePlacement</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="core/buildings/buildingChecks.lua">
+      <Name>buildingChecks</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

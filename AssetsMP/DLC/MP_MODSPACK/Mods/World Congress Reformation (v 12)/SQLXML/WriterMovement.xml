@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LeagueProjectRewards>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP</Help>
+			<FreeSocialPolicies>1</FreeSocialPolicies>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP</Help>
+			<FreeUnitClass>UNITCLASS_WRITER</FreeUnitClass>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_WRITER_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP</Help>
+			<Building>BUILDING_THEBOOK</Building>
+		</Row>
+	</LeagueProjectRewards>
+	<LeagueProjects>
+		<Row>
+			<Type>LEAGUE_PROJECT_WRITER</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_WRITER</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_WRITER_SPLASH</Help>
+			<ProjectSplashImage>WriterSplashy.dds</ProjectSplashImage>			
+			<Process>PROCESS_WRITER</Process>
+			<CostPerPlayer>1800</CostPerPlayer>			
+			<RewardTier1>LEAGUE_PROJECT_REWARD_WRITER_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_WRITER_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_WRITER_3</RewardTier3>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+		</Row>
+	</LeagueProjects>
+	<Resolutions>
+		<Row>
+			<Type>RESOLUTION_WRITER</Type>
+			<Description>TXT_KEY_RESOLUTION_WRITER</Description>
+			<Help>TXT_KEY_RESOLUTION_WRITER_HELP</Help>
+			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
+			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_WRITER</LeagueProjectEnabled>
+		</Row>
+	</Resolutions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WRITER">
+			<Text>The Cultural Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_WRITER_SPLASH">			
+			<Text>Times have changed. The new world stage is evolving. The people are conflicted. The people are yearning for new prospects at a better life.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1">
+			<Text>Social Theorist</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP">
+			<Text>Free Social Policy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2">
+			<Text>Revolutionary</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP">
+			<Text>Receive a free [ICON_GREAT_WRITER] Great Writer.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3">
+			<Text>Influential Figure</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP">
+			<Text>Political Treatise Wonder appears in [ICON_CAPITAL] Capital (Receive +3000 [ICON_CULTURE] Culture when completed, and the Empire enters a [ICON_GOLDEN_AGE] Golden Age. +25% [ICON_GREAT_WRITER] Great Writer generation rate in the City.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WRITER">
+			<Text>The Cultural Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_WRITER_HELP">
+			<Text>Begins the project to fund The Cultural Revolution. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_WRITER_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers {TXT_KEY_TECH_STEAM_POWER_TITLE}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_WRITER">
+			<Text>The Cultural Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WRITER_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards {TXT_KEY_LEAGUE_PROJECT_WRITER} project. Cost goes up based on the number of players in the game, and the current Era.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK">
+			<Text>Political Treatise</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"A man does not have himself killed for a half-pence a day or for a petty distinction. You must speak to the soul in order to electrify him"[NEWLINE]- Napoleon Bonaparte[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_THEBOOK_HELP">
+			<Text>May only be built collaboratively through the World Congress. Receive +3000 [ICON_CULTURE] Culture when completed, and the Empire enters a [ICON_GOLDEN_AGE] Golden Age. +25% [ICON_GREAT_WRITER] Great Writer generation rate in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_THEBOOK_TEXT">
+			<Text>We define what is good and evil inherent within these self-evident text.</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Row>
+			<Type>PROCESS_WRITER</Type>
+			<Description>TXT_KEY_PROCESS_WRITER</Description>
+			<Help>TXT_KEY_PROCESS_WRITER_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_WRITER_HELP</Strategy>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_WRITER</ProcessType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>70</Flavor>
+		</Row>
+	</Process_Flavors>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_THEBOOK</Type>
+			<DefaultBuilding>BUILDING_THEBOOK</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_THEBOOK</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_THEBOOK</Type>
+			<BuildingClass>BUILDINGCLASS_THEBOOK</BuildingClass>
+			<Cost>-1</Cost>
+			<UnlockedByLeague>true</UnlockedByLeague>
+			<NukeImmune>true</NukeImmune>
+			<ConquestProb>100</ConquestProb>
+			<Description>TXT_KEY_BUILDING_THEBOOK</Description>
+			<Quote>TXT_KEY_BUILDING_THEBOOK_QUOTE</Quote>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_THEBOOK_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_THEBOOK_HELP</Help>
+			<IconAtlas>ENGINSEER_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<!--<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>-->
+			<GoldenAge>true</GoldenAge>
+			<WonderSplashImage>ANewOrderBegins.dds</WonderSplashImage>
+			<WonderSplashAudio>AS2D_WONDER_THEBOOK</WonderSplashAudio>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+	<Building_InstantYield>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>3000</Yield>
+		</Row>
+	</Building_InstantYield>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_SpecificGreatPersonRateModifier>
+		<Row>
+			<BuildingType>BUILDING_THEBOOK</BuildingType>
+			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
+			<Modifier>25</Modifier>
+		</Row>
+	</Building_SpecificGreatPersonRateModifier>
+</GameData>

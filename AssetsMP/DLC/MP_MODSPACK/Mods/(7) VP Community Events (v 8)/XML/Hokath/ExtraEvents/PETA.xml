@@ -1,0 +1,62 @@
+<GameData>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_PETA</Type>
+			<EventClass>EVENT_CLASS_BAD</EventClass>
+			<Description>TXT_KEY_CITY_EVENT_PETA_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_PETA_HELP</Help>
+			<NumChoices>1</NumChoices>
+			<RandomChance>20</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<IsOneShot>false</IsOneShot>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_PETA_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_PETA_HELP_CHOICE_1</Help>
+			<EraScaling>true</EraScaling>
+			<ImprovementRequired>IMPROVEMENT_CAMP</ImprovementRequired>
+			<RequiredEra>ERA_INDUSTRIAL</RequiredEra>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
+			<CityEventType>CITY_EVENT_PETA</CityEventType>
+		</Row>
+	</CityEvent_ParentEvents>
+
+
+	<CityEventChoice_ImprovementDestructionRandom>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
+			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+			<Number>1</Number>
+		</Row>
+	</CityEventChoice_ImprovementDestructionRandom>
+	<CityEventChoice_EventCostYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_PETA_CHOICE_1</CityEventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>
+	</CityEventChoice_EventCostYield>
+
+	<!-- TEXT  -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION">
+			<Text>It's A Cruel World After All</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_HELP_CHOICE_1">
+			<Text>A animals rights group have burned down a Camp and released all of the captured animals back into the wild.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_PETA_DESCRIPTION_CHOICE_1">
+			<Text>It's A Cruel World After All</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

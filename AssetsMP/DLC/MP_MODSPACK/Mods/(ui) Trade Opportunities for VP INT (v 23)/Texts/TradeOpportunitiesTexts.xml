@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS" >
+			<Text>교역 기회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_RELATIONS_GRAPH" >
+			<Text>관계 그래프</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_OTHER_HEADER" >
+			<Text>{1_icon} {2_c_resource}{3_resource}[ENDCOLOR] {4_c_improvement}({5_improvement})[ENDCOLOR]{2_c_resource}:[ENDCOLOR] {6_help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_help}</Text>
+		</Row> 
+		<Row Tag="TXT_KEY_DO_TRADE_CIV_STATUS" >
+			<Text>{1_civ} ({2_points})[NEWLINE]{3_era}[NEWLINE]{4_gold}[ICON_GOLD] ({5_gold_change}[ICON_GOLD]/턴){6_Religion}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_WAR" >
+			<Text>[COLOR:255:70:70:220]전쟁[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_SANCTION" >
+			<Text>[COLOR:255:165:30:220]제재됨[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_TT" >
+			<Text>[ICON_RESEARCH] 연구 협정을 체결할 수 있습니다; [ICON_INFLUENCE] 이미 합의가 이루어졌습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_YES_TT" >
+			<Text>연구 협정을 체결할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_RA_NO_TT" >
+			<Text>연구 협정은 이미 체결되어 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_TT" >
+			<Text>[ICON_CITY_STATE] 상호 대사관 협정을 체결할 수 있습니다.; [ICON_INFLUENCE] 이미 합의가 이루어졌습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_YES_TT" >
+			<Text>상호 대사관 협정을 체결할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_NO_TT" >
+			<Text>상호 대사관 협정은 이미 체결되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_US_TT" >
+			<Text>우리는 이미 그들의 수도에 대사관을 두고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_EMBASSY_THEM_TT" >
+			<Text>그들은 이미 우리의 수도에 대사관을 두고 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_TT" >
+			<Text>[ICON_TRADE] 상호 국경 개방 협정을 체결할 수 있습니다; [ICON_TRADE_WHITE] 이미 합의가 이루어졌습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_YES_TT" >
+			<Text>상호 국경 개방 협정을 체결할 수 있습니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_NO_TT" >
+			<Text>상호 국경 개방 협졍은 이미 체결되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_US_TT" >
+			<Text>우리는 이미 그들의 국경을 넘을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_STATUS_BORDERS_THEM_TT" >
+			<Text>그들은 이미 우리의 국경을 넘을 수 있습니다.</Text>
+		</Row>
+	
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE" >
+			<Text>{1_color}{2_value}{3_monopoly}[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_value}{5_demand} {6_c_monopol}({7_resource_own}/{8_resource_pos})[ENDCOLOR]{9_resource_GP}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_EXT" >
+			<Text>([ICON_VP_MONOPOLY] 글로벌 독점에 포함되지 않음)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 건물에 의해 제공되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_buildings}개 사본이 건물들에 의해 제공되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_GP" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP}개 사본이 [ICON_GREAT_ADMIRAL] 위대한 제독에 의해 승인되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_CORP" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp}개 그리고 {2_resource_num_franch} 사본이 당신의 [ICON_VP_MONOPOLY] 기업과 [ICON_VP_MONOPOLY] 프랜차이즈에서 각각 부여되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_ally}개 사본이 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_ONE" >
+			<Text>[NEWLINE][ICON_BULLET]1개 사본이 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{1_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{2_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{3_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_MODS_MORE" >
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_mods}개 사본이 추가 수정자([COLOR_MAGENTA]제3의 수단[ENDCOLOR]: +{2_resource_ta_mod}%, [COLOR_WHITE]광신[ENDCOLOR]: +{3_resource_z_mod}%, [COLOR_LIGHT_GREY]시베리아의 풍요[ENDCOLOR]: +{4_resource_sr_mod}%)에 의해 부여되었습니다.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_NONE" >
+			<Text>{1_color}-[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NONE" >
+			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_c_none}이용 불가[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_DEMAND" >
+			<Text>{1_space}(다음 도시들은 이 자원을 요구합니다: {2_color}{3_cities}[ENDCOLOR])</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_CS_TOOLTIP" >
+			<Text>{1_amount}{2_icon} {3_cs} ({4_inf}, {5_ally}){6_other}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_1" >
+			<Text>특별</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_1_TT" >
+			<Text>추가 능력을 갖춘 특별한 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_2" >
+			<Text>바다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_2_TT" >
+			<Text>바닷 속 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_3" >
+			<Text>광산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_3_TT" >
+			<Text>광산이 필요한 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_4" >
+			<Text>채석장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_4_TT" >
+			<Text>채석장이 필요한 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_5" >
+			<Text>재배지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_5_TT" >
+			<Text>재배지가 필요한 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_6" >
+			<Text>야영지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_6_TT" >
+			<Text>야영지가 필요한 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_7" >
+			<Text>고유</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_7_TT" >
+			<Text>브라질이나 인도네시아에서만 사용할 수 있는 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_8" >
+			<Text>도시 국가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_8_TT" >
+			<Text>도시 국가에서만 사용할 수 있는 사치 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_9" >
+			<Text>전략</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_9_TT" >
+			<Text>고유한 구조물이나 유닛을 건설할 수 있는 전략적 자원.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_OTHER" >
+			<Text>...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_HEADER_GROUP_OTHER_TT" >
+			<Text>기타 사치 자원</Text>
+		</Row>
+
+		<!-- Key -->
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_TITLE" >
+			<Text>[COLOR_LIGHT_GREY]색상 키:[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_1" >
+			<Text>[COLOR_LIGHT_GREY]재고 = 내수 - 수출 - 중고          합계 = 내수 + 도시 국가발 + 수입 - 수출 - 중고          &apos; - 전략적 독점          &quot; - 글로벌 독점[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_2" >
+			<Text>[COLOR_LIGHT_GREY]활성:[ENDCOLOR]          [COLOR:0:135:0:255]재고 &gt; 3[ENDCOLOR]   [COLOR:125:255:0:255]재고 &gt; 1[ENDCOLOR]   [COLOR:200:180:0:255]재고 = 1[ENDCOLOR]   [COLOR:255:70:70:255]재고 &lt; 0[ENDCOLOR]   [COLOR_YIELD_FOOD]합계 = 0[ENDCOLOR]   [COLOR_CYAN]하나[ENDCOLOR][COLOR_LIGHT_GREY] 또는 [ENDCOLOR][COLOR_CITY_BLUE]그 이상[ENDCOLOR][COLOR_LIGHT_GREY]의 도시에서 요구됨.[ENDCOLOR]   [COLOR_CITY_GREY]나머지[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_TRADE_COLOR_KEY_3" >
+			<Text>[COLOR_LIGHT_GREY]비활성:   활성에는 없고:[ENDCOLOR] [COLOR:0:135:0:255]재고 &gt; 3[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:125:255:0:255]재고 &gt; 1[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:255:255:100:255]재고 = 1 (더 많음)[ENDCOLOR][COLOR_LIGHT_GREY]/[ENDCOLOR][COLOR:255:100:255:255]재고 = 1 (오직 하나만)[ENDCOLOR]    [COLOR:255:70:70:255]재고 &lt; 0[ENDCOLOR]   [COLOR_YIELD_FOOD]합계 = 0 그리고 활성에는 있음[ENDCOLOR]   [COLOR:255:50:150:255]경제 봉쇄[ENDCOLOR]   [COLOR_CITY_GREY]나머지[ENDCOLOR]</Text>
+		</Row>
+	  
+	  
+	  
+	  
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>도시 국가</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>도시 국가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY" >
+			<Text>[ICON_FLOWER]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>영향력</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNITS" >
+			<Text>[ICON_SILVER_FIST]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPY" >
+			<Text>[ICON_VP_SPY_POINTS]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>[ICON_RESISTANCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>동맹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_POSSIBLE_PROTECTION" >
+			<Text>[ICON_CAPITAL]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>보호됨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_EMBASSY" >
+			<Text>[ICON_DIPLOMAT]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPHERE" >
+			<Text>[ICON_INFLUENCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_DISTANCE" >
+			<Text>[ICON_MOVES]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>퀘스트</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_REFRESH" >
+			<Text>[ICON_SWAP]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_REFRESH_TT" >
+			<Text>현재 창을 새로고침하려면 아이콘을 클릭하세요.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_SORT_TRAIT_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]특성[ENDCOLOR]을 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_NAME_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]도시 국가[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_PERSONALITY_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]성격[ENDCOLOR]을 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_INFLUENCE_TT" >
+			<Text>기준으로 정렬:[NEWLINE]왼쪽 클릭: [COLOR_POSITIVE_TEXT]영향력[ENDCOLOR][NEWLINE]오른쪽 클릭: [COLOR_POSITIVE_TEXT]필요한 영향력[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_UNITS_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]유닛 제공[ENDCOLOR]을 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_SPY_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]스파이[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_WAR_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]전쟁 상태[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_ALLY_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]동맹[ENDCOLOR]을 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_POSSIBLE_PROTECTION_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]보호 상태[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_PROTECTED_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]보호국 개수[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_EMBASSY_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]대사관[ENDCOLOR] 주재를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_SPHERE_TT" >
+			<Text>Sort by [COLOR_POSITIVE_TEXT]영향력 범위[ENDCOLOR] 존재 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_DISTANCE_TT" >
+			<Text>도시 국가와 가장 가까운 도시 간의 [COLOR_POSITIVE_TEXT]거리[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_SORT_QUESTS_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]퀘스트 개수[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_FRIEND_TT" >
+			<Text>우호적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_NEUTRAL_TT" >
+			<Text>중립적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_HOSTILE_TT" >
+			<Text>적대적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PERSONALITY_IRRATIONAL_TT" >
+			<Text>비이성적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE_TT" >
+			<Text>{1_ally}, {2_cs} 사이는 동맹입니다. {1_ally} 보다 더 가까운 새로운 동맹이 되려면 {3_influence_need}의 [ICON_INFLUENCE] 영향력이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE_NOBODY_TT" >
+			<Text>현재 {1_cs}의 동맹이 없습니다. 새로운 동맹이 되려면 {2_influence_need}의 [ICON_INFLUENCE] 영향력이 더 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_ALLY_DIS_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_CYAN]동맹[ENDCOLOR]이며 유닛 생성이 [COLOR_NEGATIVE_TEXT]비활성화[ENDCOLOR]되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_FRIEND_DIS_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_POSITIVE_TEXT]친구[ENDCOLOR]이며 유닛 생성이 [COLOR_NEGATIVE_TEXT]비활성화[ENDCOLOR]되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_ALLY_EN_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_CYAN]동맹[ENDCOLOR]이며 유닛 생성이 [COLOR_POSITIVE_TEXT]활성화[ENDCOLOR]되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_FRIEND_EN_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_POSITIVE_TEXT]친구[ENDCOLOR]이며 유닛 생성이 [COLOR_POSITIVE_TEXT]활성화[ENDCOLOR]되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_NOBODY_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_POSITIVE_TEXT]친구[ENDCOLOR]가 [COLOR_NEGATIVE_TEXT]아닙니다.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_NOBODY_ANGRY_TT" >
+			<Text>{1_cs}에게 당신은 [COLOR_POSITIVE_TEXT]친구[ENDCOLOR]가[COLOR_NEGATIVE_TEXT]아니며[ENDCOLOR] 당신과 그 친구의 관계는 매우 나쁩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MILITARY_UNIT_TT" >
+			<Text>[NEWLINE][NEWLINE]Unique [COLOR_CYAN]{1_era}[ENDCOLOR] ([COLOR_CYAN]{2_tech}[ENDCOLOR]) Unit:[NEWLINE][COLOR_YIELD_FOOD]{3_unit}[ENDCOLOR] - {4_help}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>당신과 {1_cs} 사이에 전쟁 중입니다. [COLOR_POSITIVE_TEXT]평화 조약[ENDCOLOR]에 서명하려면 아이콘을 클릭하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>당신과 {1_cs} 사이에 전쟁 중이므로 [COLOR_NEGATIVE_TEXT]평화 조약[ENDCOLOR]에 서명할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTION_PLEDGE_TT" >
+			<Text>보호 서약 가능. [COLOR_CYAN]{1_cs}[ENDCOLOR]에 대한 [COLOR_POSITIVE_TEXT]보호 서약[ENDCOLOR]을 하려면 아이콘을 클릭하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTION_REVOKE_TT" >
+			<Text>[COLOR_POSITIVE_TEXT]{1_cs}[ENDCOLOR]에 대한 보호를 이미 약속하셨습니다. [COLOR_NEGATIVE_TEXT]보호를 철회[ENDCOLOR]하려면 아이콘을 클릭하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1}의 보호국:[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_EMBASSY_TT" >
+			<Text>[COLOR_CYAN]{1_MajorPlayer}[ENDCOLOR]의 대사관을 이 도시 국가에 설립했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_SPHERE_TT" >
+			<Text>[COLOR_CYAN]{1_MajorPlayer}[ENDCOLOR]의 영향력이 이 도시 국가에 [COLOR_POSITIVE_TEXT]영향력[ENDCOLOR]을 행사합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_DISTANCE_TT" >
+			<Text>가장 가까운 도시는 [COLOR_CYAN]{1_city}[ENDCOLOR]입니다.[NEWLINE][NEWLINE]거리를 클릭해 {2_cs}까지 지도 중심을 이동합니다 .</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1_QuestText}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1}에서 현재 요청이 없습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNKNOWN" >
+			<Text>알려지지 않음</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_UNKNOWN_PLAYER" >
+			<Text>알려지지 않은 플레이어</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_CS_STATUS_MARRIAGE_TT" >
+			<Text>[NEWLINE][NEWLINE][COLOR_MAGENTA]결혼:[ENDCOLOR] 도시 국가와 평화를 유지하는 동안, [ICON_RES_MARRIAGE] 결혼은 [ICON_INFLUENCE] 영향력 감소를 제거하고, 추가적인 [ICON_DIPLOMAT] 세계 의회 위임을 부여하며, [ICON_CAPITAL] 수도에서 [ICON_GREAT_PEOPLE] 위인 출현율이 +15% 증가합니다.</Text>
+		</Row>		
+
+		<Row Tag="TXT_KEY_DO_CS_GET_APPROACH" >
+			<Text>{1_color}{2_text}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_INFLUENCE_VALUE" >
+			<Text>{1_inf}{2_need}{3_change}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_RED_FLAG" >
+			<Text>[ICON_TEAM_2]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_PINK_FLAG" >
+			<Text>[ICON_TEAM_6]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_ORANGE_FLAG" >
+			<Text>[ICON_TEAM_9]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_GREEN_FLAG" >
+			<Text>[ICON_TEAM_4]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_CYAN_FLAG" >
+			<Text>[ICON_TEAM_5]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_WHITE_FLAG" >
+			<Text>[ICON_TEAM_1]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_BLACK_FLAG" >
+			<Text>[ICON_TEAM_11]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_YOU" >
+			<Text>[COLOR_CYAN]당신[ENDCOLOR]</Text>
+		</Row>
+
+		<Update>
+			<Where Tag="TXT_KEY_DO_NO_MINORS" />
+			<Set Text="아직 도시 국가를 만나지 못했습니다." />
+		</Update>
+		
+		
+		
+		<!-- INFO ADDICT -->
+		<!-- RELATIONSHIP GRAPH -->
+		<!-- Borrowed from Global Relations from Info Addict -->
+		<Row Tag="TXT_KEY_DO_GR_IMMENSE">
+			<Text>[COLOR:210:0:0:255]엄청나게 강함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POWERFUL">
+			<Text>[COLOR:245:80:40:255]매우 강함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_STRONG">
+			<Text>[COLOR:245:150:10:255]강함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SIGNIFICANT">
+			<Text>[COLOR:205:215:60:255]의미있게 강함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SIMILAR">
+			<Text>[COLOR_WHITE]비슷함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_INFERIOR">
+			<Text>[COLOR:175:220:255:255]보다 약함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_WEAK">
+			<Text>[COLOR:125:180:220:255]약함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POOR">
+			<Text>[COLOR:45:220:190:255]초라하게 약함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_PATHETIC">
+			<Text>[COLOR:55:240:85:255]한심하게 약함</Text>
+		</Row>
+
+		<!-- Relationship view titles -->
+		<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_ECONOMIC">
+			<Text>경제적 관점</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_POLITICAL">
+			<Text>정치적 관점</Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_DO_GR_RELATIONVIEW_ATTITUDE">
+			<Text>태도</Text>
+		</Row>-->
+
+		<!-- Relationship view key (bottom right) -->
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_MUTUAL">
+			<Text>상호</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_ONE_SIDED">
+			<Text>일방</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_WAR">
+			<Text>전쟁</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_OPEN_BORDERS">
+			<Text>국경 개방</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DECLARATION_OF_FRIENDSHIP">
+			<Text>우호 선언</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DENOUNCEMENT">
+			<Text>비난</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_DEFENSIVE_PACT">
+			<Text>방위 조약</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_RESEARCH_AGREEMENT">
+			<Text>연구 협정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_GPT">
+			<Text>턴 당 골드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_RESOURCE">
+			<Text>자원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_RELATIONKEY_TRADEROUTE">
+			<Text>교역로</Text>
+		</Row>
+		
+		<!-- Auxiliary -->
+		<Row Tag="TXT_KEY_DO_GR_STANCE">
+			<Text>[COLOR_LIGHT_GREY]성향:</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_HOSTILE">
+			<Text>적대적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_GUARDED">
+			<Text>방어적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_AFRAID">
+			<Text>두려워함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_FRIENDLY">
+			<Text>우호적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_NEUTRAL_STANCE">
+			<Text>중립적</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_AT_WAR">
+			<Text>전쟁 중</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_OUR_EMPIRE">
+			<Text>우리 제국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_SCORE">
+			<Text>점수:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_ERA">
+			<Text>시대:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_INCOME">
+			<Text>수입:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_MILITARY">
+			<Text>군사력:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TECHNOLOGY">
+			<Text>기술:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_POLICY">
+			<Text>사회 정책</Text>
+		</Row>
+		
+
+		<!-- Tooltip text fragments for the relationship graphs -->
+		<Row Tag="TXT_KEY_DO_GR_TT_GPT_TO">
+			<Text>턴 당 골드 →</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_GPT_FROM">
+			<Text>턴 당 골드 ←</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_RESEARCH_WITH">
+			<Text>연구 협정 ←→</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_TO">
+			<Text>→</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_FROM">
+			<Text>←</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DO_GR_TT_EXPORTS">
+			<Text>수출</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_IMPORTS">
+			<Text>수입</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_GR_TT_TRADEROUTES">
+			<Text>교역로</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_GR_TT_RESEARCH_AGREEMENTS">
+			<Text>연구 협정</Text>
+		</Row>
+
+		<!-- This is text for the reset selections button in the graph screens-->
+		<Row Tag="TXT_KEY_DO_GR_RESET_SELECTIONS">
+			<Text>선택 항목 재설정</Text>
+		</Row>
+
+		<!-- "of the" used when building a leader title, as in "Bismark of the German Empire" -->
+		<Row Tag="TXT_KEY_DO_GR_OF_THE">
+			<Text>: </Text>
+		</Row>
+
+		<!-- "Turn" as in "Turn 145 of the game" -->
+		<Row Tag="TXT_KEY_DO_GR_TURN">
+			<Text>턴</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>
