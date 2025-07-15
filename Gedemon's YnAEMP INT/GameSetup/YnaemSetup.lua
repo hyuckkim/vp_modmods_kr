@@ -116,7 +116,7 @@ function RefreshDropDownGameOptions()
 				end
 				PreGame.SetMapOption(option.ID, possibleValue.Value);
 				PerformPartialSync()
-				if possibleValue.Name == "Only TSL" or possibleValue.Name == "Random and TSL" or possibleValue.Name == "Totally random" then
+				if possibleValue.Name == "오직 TSL" or possibleValue.Name == "무작위 그리고 TSL" or possibleValue.Name == "완전히 무작위" then
 					PerformCivFullSync()
 				end
 			end);
