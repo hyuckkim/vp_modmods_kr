@@ -83,8 +83,7 @@ Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overh
 Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(text) Promotion Overhaul for VP\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
 Source: "..\(text) Promotion Overhaul for VP INT (AI)\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
-Source: "..\Civic And Reform (v 22)\*"; DestDir: "{app}\MODS\Civic And Reform (v 22)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
-Source: "..\Civic And Reform (v 22) INT\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
+Source: "..\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
 Source: "..\Counter-Reconnaissance (v 44)\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cr
 Source: "..\Counter-Reconnaissance (v 44) INT\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cr
 Source: "..\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
@@ -264,6 +263,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Better Lakes for Vox Populi INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Civic And Reform (v 22)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Civic And Reform (v 22) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Civic And Reform (v 22) KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP KR"
