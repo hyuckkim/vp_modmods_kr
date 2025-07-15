@@ -166,7 +166,7 @@
   <EntryPoints>
     <EntryPoint type="Custom" file="GameSetup/YnaemSetup.xml">
       <Name>TXT_KEY_YNAEMP_SCENARIO_TITLE</Name>
-      <Description>True Sarting Location Earth Maps with custom setup menu, realistic random resources placement and more options.</Description>
+      <Description>사용자 정의 설정 메뉴, 현실적인 무작위 자원 배치 및 더 많은 설정을 갖춘 실존하는 장소의 지구 지도입니다.</Description>
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="LUA/YnaemInGame.lua">
       <Name>YnAEMP</Name>
@@ -174,7 +174,7 @@
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="LUA/ShareData.lua">
       <Name>ShareData</Name>
-      <Description>ShareData</Description>
+      <Description>데이터 공유</Description>
     </EntryPoint>
   </EntryPoints>
 </Mod>
