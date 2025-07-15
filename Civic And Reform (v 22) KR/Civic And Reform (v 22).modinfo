@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="03525e58-d081-4385-91b0-353725d5daee" version="22">
+  <Properties>
+    <Name>Civic And Reform</Name>
+    <Teaser>Civic and Reform is designed to bring back the old experience of enacting civics in the previous predecessor of Civilization.</Teaser>
+    <Description>Civics have changed a nation's life and stability. What will you choose for the best of your citizens to fulfill their civic virtue and responsibility?</Description>
+    <Authors>Techpriest Enginseer</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="National Wonder Collection" />
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="VP's Bare Necessities" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="9B40E08446B56B6AE5B8CD3E0F8177FA" import="1">Art/c&amp;r_PI_016.dds</File>
+    <File md5="4E4A6D862915EFF1D4C69DD81D8A80A1" import="1">Art/c&amp;r_PI_032.dds</File>
+    <File md5="E44B954EDD1EE8A2F7C812732F129E62" import="1">Art/c&amp;r_PI_045.dds</File>
+    <File md5="DC53CDF748F012EC2E5E1C9EED86E6A7" import="1">Art/c&amp;r_PI_064.dds</File>
+    <File md5="8125421D4F6AF0507F89F7A52F36EB04" import="1">Art/c&amp;r_PI_256.dds</File>
+    <File md5="CCBF2A4AC2EF12846FF6CBB40ED9395D" import="1">Art/DC45_Civics.dds</File>
+    <File md5="3BC6D0DB6786E70E90F23787D2D2FFBD" import="1">Art/EconomyCivics.dds</File>
+    <File md5="5E50939577135D92EFED5324EF560234" import="1">Art/GovernmentCivics.dds</File>
+    <File md5="389981556D9CFBFD29331CD843ECA402" import="1">Art/LaborCivics.dds</File>
+    <File md5="14D254B699EEA7C706EE727239B74E48" import="1">Art/LegalCivics.dds</File>
+    <File md5="F35BBC39F72D82C1554671DC7B9E4A17" import="1">Art/MilitaryCivic.dds</File>
+    <File md5="1A2DFA1659CD857E7567E4311FF4A70B" import="1">Art/ReligionCivics.dds</File>
+    <File md5="56948166112C768AB04DB3284BAB8395" import="1">Art/SpecialistAtlas128.dds</File>
+    <File md5="3AA7D268D882FF163537ECBD4FB452F8" import="1">Art/SpecialistAtlas256.dds</File>
+    <File md5="488350CA770D492E4F9B62F909B82679" import="1">Art/SpecialistAtlas32.dds</File>
+    <File md5="F9D7F78B4252C256509439ACB19F5977" import="1">Art/SpecialistAtlas45.dds</File>
+    <File md5="8C080F40A7D6744B90406C05A9E27327" import="1">Art/SpecialistAtlas64.dds</File>
+    <File md5="1EC1BFF0AA624CE0ECD0E7DC51474B2A" import="1">Art/SpecialistAtlas80.dds</File>
+    <File md5="5330A3CA3B80FCC62427047AF95047C7" import="0">Audio/AudioDefines.sql</File>
+    <File md5="5FB18F80EA5E6E403ED198BE9AAFEAF5" import="1">Audio/EBankCashCash.mp3</File>
+    <File md5="29215DCC7303D6888D68522C405712BE" import="1">Audio/ECrowdCheer.mp3</File>
+    <File md5="E1AD93C61D2CA38AB911BE628A8D553D" import="1">Audio/ECultureExpands.mp3</File>
+    <File md5="BC26E88534B77C912B3E966EFDA00218" import="1">Audio/EDiscovery.mp3</File>
+    <File md5="B0E713C002D9476B456F966C51B139C1" import="1">Audio/EGoldenAge.mp3</File>
+    <File md5="A06242927B0DB0549C4015D56B8E0F63" import="1">Audio/EGreatPeople.mp3</File>
+    <File md5="1616AA367FED0424AE00C8514AD4555C" import="1">Audio/ERevolutionStart.mp3</File>
+    <File md5="E8C37751AFEE3614BD2AF615C3E93DF5" import="0">LUA/CheckerText.xml</File>
+    <File md5="0F4A5B39E622928AF071DCC8B2B2DF69" import="0">LUA/CivicChecker.lua</File>
+    <File md5="BEBC7898C538927C4ECD447583E61DD8" import="0">LUA/CivicChecker.xml</File>
+    <File md5="50393535541F9833DFED993779637BE4" import="0">LUA/TheLastGoodbye.lua</File>
+    <File md5="7997AA3C94EDEF03F12584512753F6BA" import="0">SQL/CivicNotifier.sql</File>
+    <File md5="D2B1D136788E2D30C8100A67E4848AD4" import="0">SQL/Civics.sql</File>
+    <File md5="7B2306F1CF8DF5FF07AE6FECF27D6DCB" import="0">SQL/CivilopediaText.xml</File>
+    <File md5="D17AA9B1D95A59B1B74F81352C292F1D" import="0">SQL/CompatibilityChecks.sql</File>
+    <File md5="5D5CF6E362E6E9801E3D3C5C4E313084" import="0">SQL/MoreGuilds.sql</File>
+    <File md5="0E2DD94A6BB73CFF0A0482485C456C24" import="0">SQL/Policies.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/CompatibilityChecks.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Policies.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Civics.sql</UpdateDatabase>
+      <UpdateDatabase>Audio/AudioDefines.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/MoreGuilds.sql</UpdateDatabase>
+      <UpdateDatabase>LUA/CheckerText.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/CivilopediaText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/TheLastGoodbye.lua">
+      <Name>Who</Name>
+      <Description>Cares</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/CivicChecker.xml">
+      <Name>Ayy</Name>
+      <Description>Lmao</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
