@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row Tag="TXT_KEY_WONDERPLANNER_OVERVIEW">
-			<Text>Wonder Planner</Text>
+			<Text>불가사의 계획표</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_WONDERPLANNER_PLANNER">
-			<Text>Available</Text>
+			<Text>가능</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_BUILT">
-			<Text>Built</Text>
+			<Text>건설됨</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_UNKNOWN">
-			<Text>Unknown</Text>
+			<Text>알려지지 않음</Text>
 		</Row>		
 		<Row Tag="TXT_KEY_WONDERPLANNER_DESTROYED">
-			<Text>Destroyed</Text>
+			<Text>파괴됨</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_WONDERPLANNER_ERA_LIMIT">
-			<Text>Limit to </Text>
+			<Text>시대 제한: </Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_WONDER">
-			<Text>Wonder</Text>
+			<Text>불가사의</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NAME_TT">
-			<Text>Sort by [COLOR_POSITIVE_TEXT]Wonder[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]불가사의[ENDCOLOR]를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY">
-			<Text>City</Text>
+			<Text>도시</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY_TT">
-			<Text>Sort by [COLOR_POSITIVE_TEXT]Civilization[ENDCOLOR] then by [COLOR_POSITIVE_TEXT]City[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]문명[ENDCOLOR]을 기준으로 정렬한 다음 [COLOR_POSITIVE_TEXT]도시[ENDCOLOR]를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH">
-			<Text>Technology</Text>
+			<Text>기술</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH_TT">
-			<Text>Sort by [COLOR_POSITIVE_TEXT]Technology[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]기술[ENDCOLOR]을 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED">
 			<Text>#</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED_TT">
-			<Text>Sort by number of [COLOR_POSITIVE_TEXT]Technologies Needed[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]필요한 기술[ENDCOLOR] 수를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR">
-			<Text>Year</Text>
+			<Text>연도</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR_TT">
-			<Text>Sort by [COLOR_POSITIVE_TEXT]Year of Construction[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]건설 연도[ENDCOLOR]를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FOOD_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Food Generation[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Growth[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]식량 생산[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]성장[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CONSTRUCTION_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Construction Speed[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]건설 속도[ENDCOLOR]가 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GOLD_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Wealth[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]재산[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GA_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Golden Ages[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]황금기[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TRADE_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Trading[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]거래[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_SCIENCE_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Research Capabilities[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]연구 역량[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CULTURE_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Cultural Influence[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]문화적 영향력[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GREATPEOPLE_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Specialists[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Great People[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]전문가[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]위인[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TOURISM_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Tourism[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]관광[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FAITH_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Religion[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]종교[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_HAPPY_TT">
-			<Text>Group wonders that increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] or add [COLOR_POSITIVE_TEXT]Luxuries[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]행복[ENDCOLOR] 또는 추가 [COLOR_POSITIVE_TEXT]사치 자원[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_OFFENSE_TT">
-			<Text>Group wonders that strengthen [COLOR_POSITIVE_TEXT]Offensive Capabilities[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]공격력[ENDCOLOR]을 강화하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FREEUNIT_TT">
-			<Text>Group wonders that grant a [COLOR_POSITIVE_TEXT]Free Unit[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Building[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]무료 유닛[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]건물[ENDCOLOR]을 제공하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_EXPANSION_TT">
-			<Text>Group wonders that help with [COLOR_POSITIVE_TEXT]Expansion[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]확장[ENDCOLOR]에 도움을 주는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_DEFENSE_TT">
-			<Text>Group wonders that strengthen [COLOR_POSITIVE_TEXT]Defensive Capabilities[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]방어력[ENDCOLOR]을 강화하는 불가사의 그룹</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_ESPIONAGE_TT">
-			<Text>Group wonders that affect [COLOR_POSITIVE_TEXT]Diplomacy[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Espionage[ENDCOLOR]</Text>
+			<Text>[COLOR_POSITIVE_TEXT]외교[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]간첩[ENDCOLOR] 활동에 영향을 미치는 불가사의 그룹</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_DESTROYED">
-			<Text>Destroyed!</Text>
+			<Text>파괴되었습니다!</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_RELIGION">
-			<Text>Player did not found any {1_ColorHolyCity}Religion[ENDCOLOR]</Text>
+			<Text>플레이어가 어떠한 {1_ColorHolyCity}종교[ENDCOLOR]도 찾지 못했습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_IDEOLOGY">
-			<Text>Player has not unlocked {1_ColorIdeology}{2_IdeologyBranch}[ENDCOLOR] yet</Text>
+			<Text>플레이어는 아직 {1_ColorIdeology}{2_IdeologyBranch}[ENDCOLOR] 이념을 해제하지 않았습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_POLICY">
-			<Text>Player has not finished {1_ColorPolicy}{2_PolicyBranch}[ENDCOLOR] yet</Text>
+			<Text>플레이어는 아직 {1_ColorPolicy}{2_PolicyBranch}[ENDCOLOR] 정책을 완료하지 않았습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_WORLD_PROJECT">
-			<Text>Player has not won the congress voting for {1_ColorCongress}{2_WorldProject}[ENDCOLOR] yet</Text>
+			<Text>플레이어는 아직 {1_ColorCongress}{2_WorldProject}[ENDCOLOR]에 대한 의회 투표에서 승리하지 못했습니다.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_1A">
-			<Text>+{1_spec_count} slots {2_icon}</Text>
+			<Text>+{1_spec_count} 슬롯 {2_icon}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_1B">
-			<Text>+{1_gpp_rate} GPP/Turn {2_icon}</Text>
+			<Text>+{1_gpp_rate} 턴 당 위인 출현율 {2_icon}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3A">
-			<Text>+{1_gpp_rate_mod}% [ICON_GREAT_PEOPLE]</Text>
+			<Text>+{1_gpp_rate_mod}% [ICON_GREAT_PEOPLE] 위인</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3B">
-			<Text>+{1_gpp_rate_mod}% global [ICON_GREAT_PEOPLE]</Text>
+			<Text>+{1_gpp_rate_mod}% 글로벌 [ICON_GREAT_PEOPLE] 위인</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK">
-			<Text>Wonder Status</Text>
+			<Text>불가사의 상태</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK_TT">
-			<Text>Tool for deciding which wonder(s) to aim for</Text>
+			<Text>어떤 불가사의를 목표로 할지 결정하기 위한 도구 for</Text>
 		</Row>
-	</Language_en_US>
+	</Language_ko_KR>
 </GameData>

@@ -301,7 +301,7 @@ function AddWonder(ePlayer, tPlayerTechs, eWonder, pWonder)
 		
 		if bMaxEra then
 			sort.tech = "AAAA"
-			sTrueTechName = "         OUTDATED!"
+			sTrueTechName = "         오래됨!"
 		elseif iTrueTechNeeded == 0 then
 			sort.tech = "AAAB"
 			sTrueTechName = ""
@@ -433,7 +433,7 @@ function GetWonders(tWonders)
 			
 			-- setting colors to names
 			if pWonder.HolyCity then
-				sNameWithColor = g_ColorHoly .. sNameWithoutColor .. ' (Holy)[ENDCOLOR]'
+				sNameWithColor = g_ColorHoly .. sNameWithoutColor .. ' (성지)[ENDCOLOR]'
 			elseif pWonder.PolicyBranchType then
 				local sIdeologyName = 'TXT_KEY_' .. pWonder.PolicyBranchType
 				sNameWithColor = g_ColorIdeology .. sNameWithoutColor .. ' (' .. L(sIdeologyName) .. ')[ENDCOLOR]'
@@ -457,7 +457,7 @@ function GetWonders(tWonders)
 				
 				sNameWithColor = g_ColorCongress .. sNameWithoutColor .. ' (' .. L(sProjectName) .. ')[ENDCOLOR]'
 			elseif pWonder.PrereqTech == nil and not pWonder.UnlockedByLeague then
-				sNameWithColor = g_ColorCorporation .. string.gsub(sNameWithoutColor, 'Headquarters', 'HQ') .. '[ENDCOLOR]'
+				sNameWithColor = g_ColorCorporation .. string.gsub(sNameWithoutColor, '본부', 'HQ') .. '[ENDCOLOR]'
 			else
 				sNameWithColor = sNameWithoutColor
 			end
