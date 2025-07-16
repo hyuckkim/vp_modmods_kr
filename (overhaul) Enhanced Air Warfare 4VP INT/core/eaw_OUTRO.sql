@@ -28,7 +28,7 @@ WHERE Tag = 'TXT_KEY_CIVILOPEDIA_UNITS_MODERN_JETFIGHTER_TEXT';
 
 ----- Finest Hour TXT Update
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]찬란한 순간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.'
+SET Text = '[COLOR_POSITIVE_TEXT]최상의 시간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP';
 
 ----- Policy Military TXT Update
