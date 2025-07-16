@@ -4,12 +4,31 @@ VPEE 호환 패치!
 1 = Infixo의 VPEE를 감지하면 활성화됩니다.
 2 = 감지될 때까지 비활성화됩니다! (기본값)
 */
+
+	-- 보선
+	UPDATE Language_ko_KR SET 
+	Text = '계몽 시대의 거대한 해상 원거리 유닛입니다. 오직 중국만 생산할 수 있습니다. [COLOR_POSITIVE_TEXT]선체 III[ENDCOLOR] 승급을 가지고 시작합니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 도시 국가의 국경에 주둔하면 매 턴마다 [ICON_INFLUENCE] 영향력을 생성합니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Language_ko_KR SET 
+	Text = '보선은 중국의 고유한 유닛입니다. 이는 대체되는 갤리온보다 훨씬 더 튼튼합니다. 보선을 사용하면 도시 국가를 수동적으로 지배할 수도 있고, 보선의 견고함을 활용해 해안 문명을 지배할 수도 있습니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	
+	-- 아르마다
 	UPDATE Language_ko_KR
-		SET Text = '계몽 시대의 원거리 유닛입니다. 오직 포르투갈만이 생산할 수 있습니다. 레벨이 오를 때마다 [COLOR_PLAYER_PURPLE]개척[ENDCOLOR] 또는 [COLOR_PLAYER_PURPLE]생존[ENDCOLOR] 계열에서 무작위로 승급을 얻습니다.'
-		WHERE Tag = 'TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	SET Text = '느리지만 엄청나게 위험한 배입니다. 오직 스페인만 생산할 수 있습니다.[NEWLINE][NEWLINE]대체하는 갤리온보다 더 비쌉니다. HP가 최대치일 때 추가 힘을 얻고, 적 유닛을 물리칠 때 [ICON_GREAT_ADMIRAL] 위대한 제독 점수를 생성합니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_SPAIN_ARMADA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
 	UPDATE Language_ko_KR
-		SET Text = '카사도르는 명사수를 대체하는 포르투갈의 유일한 유닛입니다. 레벨을 올려 정찰 승급을 얻으므로 적대적인 지형에서 뛰어난 성과를 낼 수 있습니다.'
-		WHERE Tag = 'TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	SET Text = '아르마다는 매우 강력한 배입니다. 적을 쫓는 것은 불가능하지만, 뛰어난 기동력으로 교전을 촉발할 수는 있습니다. 체력이 가득 차 있을 때는 훨씬 더 강력하므로 적이 원거리 공격을 하기 전에 적과 접촉해야 합니다. 그렇지 않으면 초반 전투에서 많은 힘을 잃게 됩니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Language_ko_KR
+	SET Text = '계몽 시대의 원거리 유닛입니다. 오직 포르투갈만이 생산할 수 있습니다. 레벨이 오를 때마다 [COLOR_PLAYER_PURPLE]개척[ENDCOLOR] 또는 [COLOR_PLAYER_PURPLE]생존[ENDCOLOR] 계열에서 무작위로 승급을 얻습니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	UPDATE Language_ko_KR
+	SET Text = '카사도르는 명사수를 대체하는 포르투갈의 유일한 유닛입니다. 레벨을 올려 정찰 승급을 얻으므로 적대적인 지형에서 뛰어난 성과를 낼 수 있습니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- 노란 눈썹
 	UPDATE Language_ko_KR
@@ -18,19 +37,19 @@ VPEE 호환 패치!
 
 	-- 유니콘
 	UPDATE Language_ko_KR
-		SET Text = '고유한 계몽 시대 공성 유닛입니다. 오직 러시아만 생산할 수 있습니다. 이 유닛은 적 영토에서 기동성이 뛰어나고, 공격 후 이동할 수 있으며, 탑승하지 않은 근접 유닛에 대해 더욱 효과적입니다.'
-		WHERE Tag = 'TXT_KEY_UNIT_RUSSIA_LICORNE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	SET Text = '고유한 계몽 시대 공성 유닛입니다. 오직 러시아만 생산할 수 있습니다. 이 유닛은 적 영토에서 기동성이 뛰어나고, 공격 후 이동할 수 있으며, 탑승하지 않은 근접 유닛에 대해 더욱 효과적입니다.'
+	WHERE Tag = 'TXT_KEY_UNIT_RUSSIA_LICORNE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	--------------------------------------------
 	-- 건물
 	--------------------------------------------
 	-- 사격장
 	UPDATE Language_ko_KR
-		SET Text = '화약 유닛 [ICON_PRODUCTION] 생산력이 +30% 증가하며, 다른 모든 지상 전투 유닛의 [ICON_PRODUCTION] 생산력이 +20% 증가하고, 이들 모두 추가로 경험치 15를 받습니다. [ICON_WAR] 군사 보급 제한이 +2 늘어납니다.[NEWLINE][NEWLINE]이 도시에서 유닛을 생산할 때, 유닛 [ICON_PRODUCTION] 생산력의 10%에 해당하는 [ICON_RESEARCH] 과학을 얻습니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 도시 국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1[NEWLINE][NEWLINE][ICON_RES_IRON] 철: [ICON_PRODUCTION] 생산력 +2[NEWLINE][ICON_RES_COAL] 석탄: [ICON_PRODUCTION] 생산력 +1, [ICON_RESEARCH] 과학 +1'
-		WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	SET Text = '화약 유닛 [ICON_PRODUCTION] 생산력이 +30% 증가하며, 다른 모든 지상 전투 유닛의 [ICON_PRODUCTION] 생산력이 +20% 증가하고, 이들 모두 추가로 경험치 +15를 받습니다. [ICON_WAR] 군사 보급 제한이 +2 늘어납니다.[NEWLINE][NEWLINE]이 도시에서 유닛을 생산할 때, 유닛 [ICON_PRODUCTION] 생산력의 10%에 해당하는 [ICON_RESEARCH] 과학을 얻습니다.[NEWLINE][NEWLINE][ICON_CITY_STATE] 도시 국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1[NEWLINE][NEWLINE][ICON_RES_IRON] 철: [ICON_PRODUCTION] 생산력 +2[NEWLINE][ICON_RES_COAL] 석탄: [ICON_PRODUCTION] 생산력 +1, [ICON_RESEARCH] 과학 +1'
+	WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Language_ko_KR
-		SET Text = '슈첸슈탄트는 {TXT_KEY_BUILDING_EE_GUNSMITH}를 대체하는 오스트리아의 고유한 건물입니다. {TXT_KEY_BUILDING_EE_GUNSMITH} 보다 저렴하고, 지상 전투 유닛의 더 빠르고 더 나은 훈련이 가능해집니다. 또한, 현재 동맹을 맺은 모든 도시 국가에 대해 [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1을 제공합니다.'
-		WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	SET Text = '슈첸슈탄트는 {TXT_KEY_BUILDING_EE_GUNSMITH}를 대체하는 오스트리아의 고유한 건물입니다. {TXT_KEY_BUILDING_EE_GUNSMITH} 보다 저렴하고, 지상 전투 유닛의 더 빠르고 더 나은 훈련이 가능해집니다. 또한, 현재 동맹을 맺은 모든 도시 국가에 대해 [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1을 제공합니다.'
+	WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- 스페인 투우장
 	UPDATE Language_ko_KR
