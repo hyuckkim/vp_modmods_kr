@@ -239,11 +239,11 @@ function UpdateDisplay()
 			local sCity = unit:GetPlot():GetWorkingCity():GetName()
 			
 			if unit:IsGarrisoned() then
-				sPlace = .. sCity .. "? ??"
+				sPlace = "Garrisoned in " .. sCity
 			elseif isInFort then
-				sPlace = .. sCity .. " ?? ??? ??"
+				sPlace = "Garrisoned in Fort near " .. sCity
 			else
-				sPlace = .. sCity .. " ?? ?? ??"
+				sPlace = "Garrisoned in Citadel near " .. sCity
 			end
 			
 			instance.Status:SetToolTipString(sPlace)
