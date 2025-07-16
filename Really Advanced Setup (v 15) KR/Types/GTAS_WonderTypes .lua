@@ -73,7 +73,7 @@ function GetWonderText(feature)
 
 		if resource ~= nil then
 			if resourceText == "" then
-				resourceText = Locale.ConvertTextKey("[NEWLINE]스프링클:   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description));
+				resourceText = Locale.ConvertTextKey("[NEWLINE]무작위 자원:   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description));
 			else
 				resourceText = resourceText .. "   " .. resource.IconString .. " " .. Locale.ConvertTextKey(resource.Description);
 			end

@@ -301,7 +301,7 @@ function AddWonder(ePlayer, tPlayerTechs, eWonder, pWonder)
 		
 		if bMaxEra then
 			sort.tech = "AAAA"
-			sTrueTechName = "         OUTDATED!"
+			sTrueTechName = "         오래됨!"
 		elseif iTrueTechNeeded == 0 then
 			sort.tech = "AAAB"
 			sTrueTechName = ""

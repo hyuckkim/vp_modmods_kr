@@ -184,7 +184,7 @@ function Player.SendWorldEvent(player, description)
 	local activePlayer = Players[Game.GetActivePlayer()]
 	local playerTeam = Teams[player:GetTeam()]
 	if (not playerTeam:IsHasMet(Game.GetActiveTeam())) then return end
-	activePlayer:AddNotification(notificationWorldEventID, description, "[COLOR_POSITIVE_TEXT]World Events[ENDCOLOR]", -1, -1)
+	activePlayer:AddNotification(notificationWorldEventID, description, "[COLOR_POSITIVE_TEXT]세계 이벤트[ENDCOLOR]", -1, -1)
 end 
 -------------------------------------------------------------------------------------------------------------------------
 --Player:SendNotification
