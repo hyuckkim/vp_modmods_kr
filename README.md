@@ -236,6 +236,9 @@ Recon Pay (Xtra2) Free ZoC (v 3) INT
 VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
 ※ 최신 VP와 호환되지 않는다는 보고가 있습니다.  
 
+[TreeSuccession (v 44)](https://forums.civfanatics.com/threads/treesuccession.626302/)  
+숲과 정글의 성장과 산불 등으로 나무를 보다 현실적으로 만들어주는 모드입니다.  
+
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [City States Leaders II (compatible) (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 [City States Leaders II (compatible) (v 7) INT  
