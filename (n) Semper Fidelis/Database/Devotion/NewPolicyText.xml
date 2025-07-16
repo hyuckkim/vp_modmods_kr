@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_DEVOTION">
+			<Text>Devotion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_DEVOTION_HELP">
+			<Text>Put your faith in the Lord.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEVOTION_TITLE">
+			<Text>{@1: gender feminine?Calipha; other?Caliph;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_DEVOTION_HEADING3_TITLE">
+			<Text>[COLOR_POSITIVE_TEXT]Devotion[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_DEVOTION_HEADING3_BODY">
+			<Text>The Devotion ideology will appeal to the world's leading religions, giving more ways of spending and generating Faith. [COLOR_YELLOW]This ideology unlocks upon entering the Atomic Era, or unlocking 18 Policies and having advanced at least to the Industrial Era, whichever comes first.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_DEVOTION_ADV_QUEST">
+			<Text>What is Devotion?</Text>
+		</Row>
+		<!--------------------------------------->
+
+		<Row Tag="TXT_KEY_POLICY_STATE_RELIGION">
+			<Text>Theocracy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_STATE_RELIGION_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Theocracy[ENDCOLOR]: +5 [ICON_PEACE] Faith, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points in every City following your [ICON_RELIGION] Majority Religion, and +1 of each yield from all Buildings that [COLOR_CYAN]must[ENDCOLOR] be purchased with [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_STATE_RELIGION_TEXT">
+			<Text>Theocracy stands as a form of governance where religious authority holds supreme sway over earthly affairs. Rooted in the divine mandate to rule, this policy echoes theocratic systems found in various religious traditions, including Islam, Christianity, and ancient civilizations. In Islamic history, the Caliphate exemplifies theocratic rule, where the political and religious leadership are intertwined under the guidance of Islamic law. Similarly, in medieval Europe, theocratic elements were present in the rule of the Papal States, where the Pope wielded both spiritual and temporal power. In fact although the Monarch holds little-to-no political power, in the modern United Kingdom the head of state and the head of the church are one and the same.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_BAILOUTS">
+			<Text>Gospel of Wealth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_BAILOUTS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Gospel of Wealth[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_MERCHANT] Great Merchant. +500 [ICON_INFLUENCE] Influence when you conduct a [ICON_GREAT_MERCHANT] Great Merchant trade mission with a [ICON_CITY_STATE] City-State. Reduces the cooldown when purchasing Civilian Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_BAILOUTS_TEXT">
+			<Text>The Gospel of Wealth is an article written by Andrew Carnegie in 1889 that describes the responsibility of philanthropy by the new upper class of self-made rich. Carnegie argued that surplus wealth is put to best use when it is administered carefully by the wealthy. Carnegie also argues against wasteful use of capital in the form of extravagance, irresponsible spending, or self-indulgence, instead promoting the administration of this capital over the course of one's lifetime toward the cause of reducing the stratification between the rich and poor. The concept has evolved into the modern charitable foundation, which invest in areas ranging from the education of students, conduct of scientific research, and even campaigning for political parties. In this way Carnegie brought a policy platform to the general Protestant notion of frugality and charitable duty often invoked as theodicy. However one should not confuse this theory of altruism with the prosperity gospel linking religiosity to later wealth, which has a similar historical route.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_MERCHANT">
+			<Text>Benefactor</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_MERCHANT_HELP">
+			<Text>+500 [ICON_INFLUENCE] Influence when conducting a Trade Mission.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_MARTYRDOM">
+			<Text>Glorious Dead</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MARTYRDOM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Glorious Dead[ENDCOLOR]: Can purchase [COLOR_CYAN]Cenotaphs[ENDCOLOR] with [ICON_PEACE] Faith. Melee and Gun Units gain the [COLOR_POSITIVE_TEXT]Improvised Explosives[ENDCOLOR] Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MARTYRDOM_TEXT">
+			<Text>Belief in an eternal, heavenly reward has motivated armed conflict throughout history. In Islamic tradition, fallen warriors are hailed as martyrs, their sacrifice immortalized in history. Christian Europe honors the faithful departed as saints, believed to intercede on behalf of the living; and even those not beatified are commemorated in war memorials that are commonplace in towns and villages. Looking back a thousand years, Norse mythology is strongly centered around the promise of Valhalla, where brave warriors revel in eternal glory and camaraderie among the honored dead.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CENOTAPH">
+			<Text>Cenotaph</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CENOTAPH_HELP">
+			<Text>Requires [COLOR_MAGENTA]Glorious Dead[ENDCOLOR]. Receive 4 [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points whenever an owned unit is killed, scaling with Era. +1 [ICON_SILVER_FIST] Military Supply. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CENOTAPH_TEXT">
+			<Text>A cenotaph is a monument erected in honor of a person or group whose remains are elsewhere, finds parallels in various cultural and religious traditions, where commemorative structures serve as symbols of remembrance and reverence for the departed. Across diverse cultural and religious contexts, the concept of a cenotaph—whether in the form of a Christian memorial, Islamic zarih, Hindu samadhi, or Buddhist stupa—serves as a testament to the enduring legacy of the departed and the universal human impulse to honor and remember those who have passed on.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CENOTAPH_STRATEGY">
+			<Text>Other strategies rely on conserving all your units, but with bonuses yields on death the Devotion tree rewards throwing waves of weaker troops at the enemy to wear them down.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_SUICIDE">
+			<Text>Improvised Explosives</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_SUICIDE_HELP">
+			<Text>Takes [COLOR_RED]3 Damage[ENDCOLOR] extra from all sources.[NEWLINE]Eliminate combat penalties for attacking or defending against Melee Attacks while [ICON_POSITIVE_TEXT]Wounded[ENDCOLOR].[NEWLINE]Deals [COLOR_POSITIVE_TEXT]5 Damage[ENDCOLOR] to Enemy Units ending their turn adjacent to this Unit.[NEWLINE]This Damage ignores damage reduction, but does not affect Units in [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR] and [COLOR_NEGATIVE_TEXT]Fortifications[ENDCOLOR].</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_HOLY_WAR">
+			<Text>Just War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HOLY_WAR_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Just War[ENDCOLOR]: Removes the cooldown when purchasing Military Units. -25% [ICON_WAR] War Weariness. All Units gain +33% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Full Health[ENDCOLOR] Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HOLY_WAR_TEXT">
+			<Text>Rooted in moral philosophy and theological doctrine, Just War Theory provides a framework for ethical engagement in times of conflict. Guided by the teachings of thinkers such as St. Augustine and Thomas Aquinas, this concepts has shaped how the West sees the importance of legitimate authority, just cause, and proportionality in the decision to wage war. In Islam, the Quran and Hadith provide guidance on the conduct of warfare, emphasizing the protection of non-combatants, respect for treaties, and the avoidance of excessive harm. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_JUST">
+			<Text>Justified</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_JUST_HELP">
+			<Text>+33% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Full Health Units[ENDCOLOR].</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_SETTLEMENTS">
+			<Text>Religious Settlements</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_SETTLEMENTS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Religious Settlements[ENDCOLOR]: +100% [ICON_CULTURE_LOCAL] Border Growth during [ICON_GOLDEN_AGE] Golden Ages. Receive 40 [ICON_FOOD] Food and [ICON_PEACE] Faith when your borders expand, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_SETTLEMENTS_TEXT">
+			<Text>Religious Settlements are the intersection of faith and colonization. Throughout history, religious settlements have played a pivotal role in the spread of faith and culture across continents. From the establishment of Christian missions in the New World to the migration of Jewish communities to the Holy Land, these endeavors have shaped the demographic and cultural landscape of regions far and wide. In the context of Hinduism, religious settlements have been instrumental in spreading the faith and establishing sacred sites such as pilgrimage centers and ashrams. These settlements serve as bastions of religious practice and spiritual retreat, drawing devotees from far and wide to partake in religious rituals and teachings.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_ETHICAL_FINANCE">
+			<Text>Ethical Finance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ETHICAL_FINANCE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Ethical Finance[ENDCOLOR]: Pastures, Oil Wells, Offshore Platforms, Holy Sites, City Tiles, and all Unique Improvements produce +3 [ICON_PEACE] Faith. Gain +25 [ICON_GOLD] from every [ICON_INTERNATIONAL_TRADE] Internal Trade Route.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ETHICAL_FINANCE_TEXT">
+			<Text>Ethical Finance refers to principles of conscious capitalism, where economic activities are guided by moral and social considerations alongside financial interests, and specifically those motivated on religious grounds. In Islamic finance, transactions must comply with Sharia law, which prohibits activities such as interest-based lending (riba) and investments in industries deemed harmful or unethical. In the medieval period, stark differences in financial practices between Christians and Jews (and the already existing antisemitism excluding Jews from many traditional professions) contributed to societal tensions and harmful stereotypes that persist to this day.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM">
+			<Text>Paternalism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Paternalism[ENDCOLOR]: -33% [ICON_PEACE] Faith costs for purchasing Buildings, Missionaries, and Inquisitors. +1 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture from Specialists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM_TEXT">
+			<Text>Paternalism is a both a social and economic concept that those who are privileged and wealthy have an obligation to support and govern the poorer parts of society. In Britain it is exemplified by Jewish author and Prime Minister Benjamin Disraeli who, in the 1840s, proposed a strand of conservative governance in which the social classes were left intact but with the working class receiving support from the well off. Ideologically it stands distinct from laissez-faire individualist liberal economics but also to socially-revolutionary redistributions of wealth. Similiar philosophical concepts arise in modern Christian Democractic parties, 1950s Japan, Peronist Argentina, and of course the Islamic Republics. It is often linked to strict gender and social norms, and a reluctance to grant greater freedoms to women and minority groups.</Text>
+		</Row>
+
+		<!-- we may want some text at a later date so save this here 
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM">
+			<Text>Caste System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Caste System[ENDCOLOR]: 75% of [ICON_HAPPINESS_1] Happiness produced in each City is added to the City's [ICON_CULTURE] Culture per Turn. +1 [ICON_PEACE] Faith from Specialists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATERNALISM_TEXT">
+			<Text>Most famously rooted in the ancient traditions of Hinduism, a Caste System defines social hierarchies and relationships. Society is stratified into distinct groups, each with its own rights, responsibilities, and privileges. From the highest Brahmins to the lowest Shudras, individuals are born into their designated castes, shaping their opportunities and interactions from birth. Rigid social structures similar to the Hindu Caste System have also existed in socieities like Japan, where it is termed Shinokosho, and the concept has similarities to the racial Apartheid policies that have at one time or another been enforced in South Africa, Israel, many Caribbean nations, and of course the American South.</Text>
+		</Row>
+		-->
+
+		<!-------------tier 2------------------------------>
+
+		<Row Tag="TXT_KEY_POLICY_TERRORISM">
+			<Text>Radicalization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TERRORISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Radicalization[ENDCOLOR]: Receive 100 [ICON_VP_SPY_POINTS] Spy Points. Receive 100 [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLDEN_AGE] Golden Age Points when you perform a [ICON_SPY] Spy Mission, scaling with Era. Spies stationed in a foreign City gain +10 Network Points per turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TERRORISM_TEXT">
+			<Text>In recent decades, Islamic terrorism has garnered global attention, driven by extremist interpretations of Islam and fueled by grievances ranging from political oppression to religious sectarianism. The tactics of indiscriminate violence and intimidation employed by groups like Al-Qaeda and ISIS have left a trail of devastation and fear. Similarly, the IRA's campaign of violence in Northern Ireland, rooted in nationalist aspirations and grievances against British rule, resulted in decades of bloodshed and conflict. The use of bombings, assassinations, and other terrorist tactics aimed to advance their political objectives and destabilize the status quo. In India, incidents of Hindu extremist violence, such as the bombings carried out by groups like the Rashtriya Swayamsevak Sangh (RSS), have targeted religious minorities and fueled communal tensions. These acts of terror often stem from ethnonationalist ideologies and seek to assert dominance or retaliate against perceived threats.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_OATH">
+			<Text>Oath of Duty</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_OATH_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Oath of Duty[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Military Base in every City. Receive 30 [ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith in the [ICON_CAPITAL] Capital when you conquer Cities, scaling with Era. Conquest bonus also scales based on City [ICON_CITIZEN] population.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_OATH_TEXT">
+			<Text>An Oath of Duty is a solemn promise or commitment individuals make to fulfill their responsibilities often even in the event of their death. The concept of ribat in Islamic tradition refers to the duty of defending the faith and repelling aggression, often manifesting in the fortification of strategic positions to withstand enemy incursions. This concept has been invoked by various groups throughout history to justify defensive actions against perceived threats to Islam. The concept was mirrored in the military orders of Knights Templar during the Crusades. Similiarly, in Sikhism the defense of dharam (righteousness) has been central to the martial tradition, with fortified garrisons such as the Saragarhi outpost symbolizing the valor and sacrifice of Sikh warriors in defense of their faith and community.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_JIHAD">
+			<Text>Insurgency</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_JIHAD_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Insurgency[ENDCOLOR]: Can build [COLOR_YELLOW]Mujahideen[ENDCOLOR] and purchase them with [ICON_PEACE] Faith. +100% [ICON_PRODUCTION] Production when building Missile Units. Guided and Rocket Missiles gain +33% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Foritified Units[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_JIHAD_TEXT">
+			<Text>Insurgency is characterized by a dynamic and decentralized armed resistance, featuring guerrilla tactics, asymmetric warfare against a stronger foe, and popular support. There have been an enormous number of historical instances of military engagement where insurgent forces challenge established authorities through unconventional means. Most recently the key conflicts in the popular imagination are the Afghan mujahideen's resistance against Soviet occupation and the Viet Cong's struggle against American forces. In both cases the insurgent force operated in small, mobile units and leveraging knowledge of the local terrain, precluding use of the enemy's strength of arms, and exploiting key vulnerabilities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MUJAHIDEEN">
+			<Text>Mujahideen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MUJAHIDEEN_HELP">
+			<Text>Gun Unit that is stronger and more versatile than the Anti-Aircraft Gun it replaces. May be purchased with [ICON_PEACE] Faith. Starts with the Air Defense I and Ambush I Promotions, and Ignores Terrain Costs.[NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Devotion[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Insurgency[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MUJAHIDEEN_TEXT">
+			<Text>Meaning 'a warrior struggling for Allah', the term Mujahideen was first used by the West to describe the mountainous sect of hillmen in Afghanistan who fought against British control. It began in 1829 when a religious man, Sayyid Ahmed Shah Brelwi, came back to the village of Sitana from a pilgrimage to Mecca and began preaching war against the infidels in the area defining the Northwest border of British India. Although he died in battle, the sect he had created survived and the Mujahideen gained more power and prominence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MUJAHIDEEN_STRATEGY">
+			<Text>Mujahideen reduce your need to assign Production to Military Units in three ways. Firstly they combine the Gun Unit line with Anti-Aircraft promotions, covering both roles. Secondly they start with Ambush I, reducing your need to invest in anti-armor Units. Thirdly, they may be purchased directly with Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL">
+			<Text>Chemical Warheads</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL_HELP">
+			<Text>+33% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].</Text>
+		</Row>
+
+		<!-- sadly cant give plagues to non melee attackers
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL">
+			<Text>Chemical Warheads</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Units are poisoned, receiving the [COLOR_NEGATIVE_TEXT]Nerve Toxin[ENDCOLOR] status which reduces Healing by [COLOR_NEGATIVE_TEXT]20[ENDCOLOR] for [COLOR_POSITIVE_TEXT]3[ENDCOLOR] turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL_PLAGUE">
+			<Text>Nerve Toxin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_CHEMICAL_PLAGUE_HELP">
+			<Text>-20 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR]. Both effects last [COLOR_POSITIVE_TEXT]3[ENDCOLOR] turns.</Text>
+		</Row>
+		-->
+
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_POLICE">
+			<Text>Morality Police</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_POLICE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Morality Police[ENDCOLOR]: +20% [ICON_PEACE] Faith from Cities with Courthouses. +30 [ICON_PEACE] Faith when a [ICON_CITIZEN] Citizen is born, scaling with Era. Receive 50 [ICON_CULTURE] Culture when you purchase an [ICON_INQUISITOR] Inquisitor, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_POLICE_TEXT">
+			<Text>Religious police are official vice squad police agencies, often in Muslim-majority countries, which enforce religious observance and public morality on behalf of national or regional authorities based on its interpretation of shariah. In Islam, the doctrine of Hisbah dictates a duty for the Muslims to promote moral virtue and intervene when another believer is not acting accordingly; modern Islamic religious police forces were first established in the late-1970s amidst the Iranian Revolution and the Islamic revival that the event brought to the Muslim world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_RELIGIOUS_POLICE">
+			<Text>Hisbah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_RELIGIOUS_POLICE_HELP">
+			<Text>Gain 50 [ICON_CULTURE] Culture when gained, scaling with Era.</Text>
+		</Row>
+
+		<!-- <Row Tag="TXT_KEY_POLICY_MEDIA_STRATEGY">
+			<Text>Televangelism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MEDIA_STRATEGY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Televangelism[ENDCOLOR]: +100% [ICON_PRODUCTION] Production when constructing Broadcast Towers. +30 [ICON_PEACE] Faith when a [ICON_CITIZEN] Citizen is born, scaling with Era. Cities following your [ICON_RELIGION] Majority Religion exert +50% Religious Pressure.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MEDIA_STRATEGY_TEXT">
+			<Text>Televangelism, occasionally radio evangelism or teleministry, denotes the utilization of media platforms, notably radio and television, for the marketing of religious messages. Televangelism began as a uniquely American phenomenon, resulting from a largely deregulated media where access to television networks and cable TV, combined with a large Christian population that is able to provide the necessary funding. In Islam, the related concept of dawah, which encourages Muslims to go and spread the religion to Non-Muslims similar to the Evangelical tradition of evangelizing, has also given rise to figures who are often described as "Islamic televangelists" who preach using Television and Internet videos. Importantly, televangelism in all forms draws a significant amount of criticism from both secular and religious bodies for the methods employed and the messages preached.</Text>
+		</Row> -->
+
+
+		<Row Tag="TXT_KEY_POLICY_DEVO_CORPORATIONS">
+			<Text>Not-For-Profits</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DEVO_CORPORATIONS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Not-For-Profits[ENDCOLOR]: +50% [ICON_RELIGION] Pressure to foreign Cities connected via [ICON_INTERNATIONAL_TRADE] Trade Routes. Every Holy Site counts as an additional [ICON_VP_FRANCHISE] Franchise. +5 [ICON_PEACE] Faith from all [ICON_VP_OFFICE] Corporate Offices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DEVO_CORPORATIONS_TEXT">
+			<Text>Not-for-profits are incorporated entities who provide a social, education, medical, or other non-commercially motivated service. Some are domestic, others operate overseas. While not all are religious, western international aid organizations can be seen to have their roots in Christian missionary work, which has historically involved the establishment of schools, hospitals, and orphanages, alongside efforts to spread religious teachings and values. Similarly, Islamic waqf institutions, which date back to the early days of Islam, have played a crucial role in providing charitable services such as education, healthcare, and social welfare. Indeed zakat (giving of alms) is one of the five pillars of Islam. From Buddhist monastic traditions to Hindu dharmashalas and Sikh langar kitchens, diverse communities have embraced the ethos of seva (selfless service) to uplift the marginalized and alleviate suffering.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_FUNDAMENTALISM">
+			<Text>Fundamentalism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FUNDAMENTALISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Fundamentalism[ENDCOLOR]: Unlocks the [COLOR_CYAN]Prayer[ENDCOLOR] Process. +6 [ICON_PEACE] Faith from [ICON_VP_ARTIFACT] Artifacts and +6 [ICON_RESEARCH] Science from [ICON_VP_GREATWRITING] Great Works of Writing. [ICON_INQUISITOR] Inquisitors gain the [COLOR_POSITIVE_TEXT]Church Militant[ENDCOLOR] Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FUNDAMENTALISM_TEXT">
+			<Text>Characterized by a commitment to the absolute truth and the authority of sacred scriptures, Fundamentalism shapes the fabric of highly religious societies. Inspired by the belief in the inerrancy of religious texts, adherents uphold traditional teachings and doctrines as immutable truths, guiding every aspect of individual and communal life. The ways in which fundamentalist regimes confront the challenges of modernity and societal change is often one of rejection, but new concepts can also be assimilated using a logic based in religious concepts: an example would be the Catholic Church accepting the existence of the Big Bang.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FAITH">
+			<Text>Prayer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FAITH_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Prayer[ENDCOLOR] converts 25% of the [ICON_PRODUCTION] Production of this City into [ICON_PEACE] Faith, and reduces [ICON_RELIGION] Religious Unrest by 25%.[NEWLINE][NEWLINE]Requires the [COLOR_MAGENTA]Fundamentalism[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FAITH_STRATEGY">
+			<Text>{TXT_KEY_PROCESS_FAITH_HELP}[NEWLINE][NEWLINE]Investing production in Prayer is a good way to boost your reserves of [ICON_PEACE] Faith, which will be necessary to buy the many things unlocked by the {TXT_KEY_POLICY_BRANCH_DEVOTION} Ideology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_INQUISITOR">
+			<Text>Church Militant</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_INQUISITOR_HELP">
+			<Text>+2 [ICON_MOVES] Movement.[NEWLINE]When Garrisoned in a City it gains +15% [ICON_PRODUCTION] Production towards Military Units.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_EMIRATES">
+			<Text>Non-Aligned Movement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_EMIRATES_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Non-Aligned Movement[ENDCOLOR]: Quantity of Resources gifted by [ICON_CITY_STATE] City-States increased by +100% and [ICON_HAPPINESS_1] Happiness from gifted Luxuries increased by +50%. Yields from [ICON_CITY_STATE] City-States increased by +33%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_EMIRATES_TEXT">
+			<Text>After the fall of the autocracies of the first half of the twentieth century, the free West looked to prevent the Soviet Union and its vassals from creating a new Socialist order. Many countries in the immediate aftermath either elected communist governments, or were prevented from doing so by western interference. However, as the two world powers went about dividing up the map, some regimes remained neutral. In a number of these `non-aligned' countries effectively played both sides, obtaining capital investment from one side before suddenly ousting their agents and bringing in the other side. For example in Egypt both western and eastern governments carried out large infrastructure projects, such as dams along the Nile river, in an attempt to outdo one another and secure the country for their team. After having seceeded from Britain, India was able to hold a similar position. In Africa, as some countries turned to the USSR to free themselves from colonial occupation, others walked the thin line between. The Arab League emerged in 19XX as a diplomatic institution to--among others things--coordinate the Islamic world's interactions with the superpowers of the day.</Text>
+		</Row>
+		<!-----------------tier 3----------------->
+		<Row Tag="TXT_KEY_POLICY_MESSIAH">
+			<Text>Millenarianism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MESSIAH_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Millenarianism[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_PROPHET] Great Prophet. +20% [ICON_PEACE] Faith during [ICON_GOLDEN_AGE] Golden Ages. All new and existing Missionaries and Prophets gain 2 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_MISSIONARY] Religous Spread actions, and Missionaries do not lose Religious Strength in rival territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MESSIAH_TEXT">
+			<Text>Millenarianism is the belief by a religious, social, or political group or movement in a coming fundamental transformation of society, after which "all things will be changed" and the righeous will reign for an age (often 1,000 years). The current society and its rulers are corrupt, unjust, or otherwise wrong, and they will soon be destroyed by a powerful force, usually God. The Catholic Church explicity rejects the prediction of events leading up to the final judgement, but other Christian denominations hold varying views, for example Jehovah's Witnesses believe that Christ will rule from heaven for 1,000 years as king over the earth, assisted by the 144,000 ascended humans. In Islam, the Prophet Muhammad has stated that a man from his Household will come and rid the world of all injustice and tyranny, and he will be known as the Mahdi. Millenarian ideologies or religious sects sometimes appear in oppressed peoples, with examples such as the 19th-century Ghost Dance movement among Native Americans, early Mormons, and the 19th and 20th-century cargo cults among isolated Pacific Islanders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_MISSIONARY">
+			<Text>Eschatology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEVOTION_MISSIONARY_HELP">
+			<Text>No longer lose [ICON_RELIGION] Religious Strength due to [COLOR_YELLOW]Unwelcome Evangelist[ENDCOLOR].</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_ARMAGEDDON">
+			<Text>Armageddon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ARMAGEDDON_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Armageddon[ENDCOLOR]: A [COLOR_YELLOW]Nuclear Missile[ENDCOLOR] appears in your [ICON_CAPITAL] Capital, and you may purchase them with [ICON_PEACE] Faith. Receive [ICON_PEACE] Faith when you kill a Unit equal to 225% of its [ICON_STRENGTH] Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ARMAGEDDON_TEXT">
+			<Text>Armageddon evokes images of catastrophic conflict and apocalyptic devastation, with many religions both extant and historical making eschatological predictions about a final, great battle. In the modern era, the concept of Armageddon has taken on new dimensions with the advent of nuclear weapons, symbolizing the ultimate threat to human civilization and life on Earth. The prospect of nuclear Armageddon looms large in the collective consciousness, fueled by geopolitical tensions, proliferation of nuclear arsenals, and the specter of rogue actors or state-sponsored terrorism. The destructive power of nuclear weapons transcends conventional warfare, capable of unleashing unimaginable devastation and rendering vast regions uninhabitable for generations to come. In many ways, it is only comparable to the mythological wrath of God.</Text>
+		</Row> 
+
+
+		<Row Tag="TXT_KEY_POLICY_MAGISTERIUM">
+			<Text>Magisterium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MAGISTERIUM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Magisterium[ENDCOLOR]: Every World Congress Session, gain 5 [ICON_GOLD] Gold, [ICON_PEACE] Faith, and [ICON_GOLDEN_AGE] Golden Age Points for each [ICON_DIPLOMAT] Delegate you control, scaling with Era. Can purchase [COLOR_CYAN]Episcopal Palaces[ENDCOLOR] with [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MAGISTERIUM_TEXT">
+			<Text>In Catholicism, the Magisterium refers to an authoritative body that plays a decisive role in interpreting sacred texts, preserving doctrinal integrity, and guiding religious practice. In Judaism, Rabbinic councils and seminaries serve as centers of learning and authority, shaping Jewish law (Halakha) and ethical teachings. Similarly, in Islam, the notion of "Ulema" embodies the collective body of religious scholars and jurists tasked with interpreting Islamic law (Sharia) and guiding the Muslim community. In Buddhism, learned monks sit on monastic councils (Sangha) play a crucial role in upholding doctrinal purity and resolving religious disputes.</Text>
+		</Row> 
+		<Row Tag="TXT_KEY_BUILDING_MAGISTERIUM">
+			<Text>Episcopal Palace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MAGISTERIUM_HELP">
+			<Text>Requires [COLOR_MAGENTA]Magisterium[ENDCOLOR]. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 12 [ICON_CITY_STATE] City-States originally in the World.[NEWLINE][NEWLINE]Maximum of 5 of these Buildings in your Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MAGISTERIUM_TEXT">
+			<Text>In Christianity, the Episcopal Palace serves as the official residence and administrative center for bishops, who oversee dioceses and guide the faithful in matters of faith and governance. These palaces, often grand in scale and architectural design, symbolize the authority and dignity of the bishopric, hosting ceremonies, meetings, and receptions. Similarly, in Islam, the concept of a "khanqah" or "tekke" encompasses the dwelling place of Sufi saints and spiritual leaders. In Hinduism, the tradition of constructing "mathas" or monastic residences dates back to ancient times, with these dwellings serving as centers of learning and religious discourse.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MAGISTERIUM_STRATEGY">
+			<Text>Buy with [ICON_PEACE] Faith. Vote yourself leader, not only of the church, but of the whole world!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

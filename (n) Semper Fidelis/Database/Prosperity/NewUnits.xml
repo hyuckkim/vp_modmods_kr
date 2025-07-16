@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_LOCUST</Type>
+			<Description>TXT_KEY_UNIT_LOCUST</Description>
+			<DefaultUnit>UNIT_LOCUST</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_PROSPERITY_ARTIST</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_ARTIST</Description>
+			<DefaultUnit>UNIT_PROSPERITY_ARTIST</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_PROSPERITY_WRITER</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_WRITER</Description>
+			<DefaultUnit>UNIT_PROSPERITY_WRITER</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_PROSPERITY_MUSICIAN</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_MUSICIAN</Description>
+			<DefaultUnit>UNIT_PROSPERITY_MUSICIAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_LOCUST</Class>
+			<Type>UNIT_LOCUST</Type>
+			<PrereqTech>TECH_BALLISTICS</PrereqTech>
+			<Combat>55</Combat>
+			<RangedCombat>50</RangedCombat>
+			<Range>1</Range>
+			<BaseSightRange>3</BaseSightRange>
+			<BaseLandAirDefense>5</BaseLandAirDefense>
+			<Cost>1200</Cost>
+			<FaithCost>900</FaithCost>
+			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<PurchaseCooldown>1</PurchaseCooldown>
+			<Moves>5</Moves>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_PARADROP</DefaultUnitAI>
+			<IsMounted>1</IsMounted>
+			<Description>TXT_KEY_UNIT_LOCUST</Description>
+			<Civilopedia>TXT_KEY_UNIT_LOCUST_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LOCUST_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_LOCUST_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<ObsoleteTech>TECH_MOBILE_TACTICS</ObsoleteTech>
+			<Pillage>true</Pillage>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_HELICOPTER_GUNSHIP</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>35</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<Conscription>6</Conscription>
+			<!-- cant manage to import tanks atm... -->
+			<UnitArtInfo>ART_DEF_UNIT_ARMORED_CAR</UnitArtInfo>
+			<UnitFlagAtlas>PROSPERITY_UNIT_ALPHA_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>PROSPERITY_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<PolicyType>POLICY_MILITARY_CONTRACTORS</PolicyType>
+		</Row>
+		<Row>
+			<Class>UNITCLASS_PROSPERITY_ARTIST</Class>
+			<Type>UNIT_PROSPERITY_ARTIST</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_ARTIST</Description>
+			<Civilopedia>TXT_KEY_UNIT_PROSPERITY_ARTIST_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_PROSPERITY_ARTIST_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_PROSPERITY_ARTIST_HELP</Help>
+			<Domain>DOMAIN_LAND</Domain>
+			<CombatClass>UNITCOMBAT_SETTLER</CombatClass>
+			<DefaultUnitAI>UNITAI_ARTIST</DefaultUnitAI>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<UnitArtInfo>ART_DEF_UNIT_PROSPERITY_ARTIST</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>6</UnitFlagIconOffset>
+			<IconAtlas>PROSPERITY_ATLAS</IconAtlas>
+			<PortraitIndex>9</PortraitIndex>
+			<Moves>2</Moves>
+			<Cost>8000</Cost>
+			<PurchaseOnly>1</PurchaseOnly>
+			<WorkRate>1</WorkRate>
+			<PolicyType>POLICY_MASS_MEDIA</PolicyType>
+			<ShowInPedia>0</ShowInPedia>
+			<PurchaseCooldown>5</PurchaseCooldown>
+		</Row>
+		<Row>
+			<Class>UNITCLASS_PROSPERITY_WRITER</Class>
+			<Type>UNIT_PROSPERITY_WRITER</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_WRITER</Description>
+			<Civilopedia>TXT_KEY_UNIT_PROSPERITY_WRITER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_PROSPERITY_WRITER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_PROSPERITY_WRITER_HELP</Help>
+			<Domain>DOMAIN_LAND</Domain>
+			<CombatClass>UNITCOMBAT_SETTLER</CombatClass>
+			<DefaultUnitAI>UNITAI_WRITER</DefaultUnitAI>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<UnitArtInfo>ART_DEF_UNIT_PROSPERITY_WRITER</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>8</UnitFlagIconOffset>
+			<IconAtlas>PROSPERITY_ATLAS</IconAtlas>
+			<PortraitIndex>11</PortraitIndex>
+			<Moves>2</Moves>
+			<Cost>8000</Cost>
+			<PurchaseOnly>1</PurchaseOnly>
+			<WorkRate>1</WorkRate>
+			<PolicyType>POLICY_MASS_MEDIA</PolicyType>
+			<ShowInPedia>0</ShowInPedia>
+			<PurchaseCooldown>5</PurchaseCooldown>
+		</Row>
+		<Row>
+			<Class>UNITCLASS_PROSPERITY_MUSICIAN</Class>
+			<Type>UNIT_PROSPERITY_MUSICIAN</Type>
+			<Description>TXT_KEY_UNIT_PROSPERITY_MUSICIAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_PROSPERITY_MUSICIAN_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_PROSPERITY_MUSICIAN_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_PROSPERITY_MUSICIAN_HELP</Help>
+			<Domain>DOMAIN_LAND</Domain>
+			<CombatClass>UNITCOMBAT_SETTLER</CombatClass>
+			<DefaultUnitAI>UNITAI_MUSICIAN</DefaultUnitAI>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<UnitArtInfo>ART_DEF_UNIT_PROSPERITY_MUSICIAN</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>7</UnitFlagIconOffset>
+			<IconAtlas>PROSPERITY_ATLAS</IconAtlas>
+			<PortraitIndex>10</PortraitIndex>
+			<Moves>2</Moves>
+			<Cost>8000</Cost>
+			<PurchaseOnly>1</PurchaseOnly>
+			<WorkRate>1</WorkRate>
+			<PolicyType>POLICY_MASS_MEDIA</PolicyType>
+			<ShowInPedia>0</ShowInPedia>
+			<PurchaseCooldown>5</PurchaseCooldown>
+		</Row>
+	</Units>
+	<ArtDefine_UnitInfos>
+		<Row>
+			<Type>ART_DEF_UNIT_PROSPERITY_WRITER</Type>
+			<DamageStates>1</DamageStates>
+		</Row>
+		<Row>
+			<Type>ART_DEF_UNIT_PROSPERITY_ARTIST</Type>
+			<DamageStates>1</DamageStates>
+		</Row>
+		<Row>
+			<Type>ART_DEF_UNIT_PROSPERITY_MUSICIAN</Type>
+			<DamageStates>1</DamageStates>
+		</Row>
+	</ArtDefine_UnitInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Row>
+			<UnitInfoType>ART_DEF_UNIT_PROSPERITY_WRITER</UnitInfoType>
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_WRITER_LATE</UnitMemberInfoType>
+			<NumMembers>1</NumMembers>
+		</Row>
+		<Row>
+			<UnitInfoType>ART_DEF_UNIT_PROSPERITY_ARTIST</UnitInfoType>
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_ARTIST_LATE</UnitMemberInfoType>
+			<NumMembers>1</NumMembers>
+		</Row>
+		<Row>
+			<UnitInfoType>ART_DEF_UNIT_PROSPERITY_MUSICIAN</UnitInfoType>
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_MUSICIAN_LATE</UnitMemberInfoType>
+			<NumMembers>1</NumMembers>
+		</Row>
+	</ArtDefine_UnitInfoMemberInfos>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<UnitClassType>UNITCLASS_HELICOPTER_GUNSHIP</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>9</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_PROSPERITY_ARTIST</UnitType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROSPERITY_WRITER</UnitType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROSPERITY_MUSICIAN</UnitType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_SKIRMISHER_MOBILITY</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_CITY_PENALTY</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_NAVAL_MISFIRE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<PromotionType>PROMOTION_SKIRMISHER_DOCTRINE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<UnitAIType>UNITAI_PARADROP</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_LOCUST">
+			<Text>M22 Locust</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_HELP">
+			<Text>Mobile Ranged Unit that can Paradrop. Is slightly weaker than the Light Tank, but does not replace it. Starts with the [COLOR_POSITIVE_TEXT]Parthian Tacitcs[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Prosperity[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Military Contractors[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_STRATEGY">
+			<Text>With the extreme mobility of Parthian Tactics and the ability to Paradrop, you can pillage everything behind enemy lines in a way Recon Units never could. Although weaker on the defense than a Light Tank, you can always send Paratroopers along to defend your airborne skirmishers, making use of the flanking bonus to launch a devastating flanking attack on your foes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_TEXT">
+			<Text>The M22 Locust, officially Light Tank (Airborne), M22, was an American-designed airborne light tank which was produced during World War II. The Locust began development in 1941 after the British War Office requested that the American government design a purpose-built airborne light tank which could be transported by glider into battle to support British airborne forces. The United States Army Ordnance Department selected Marmon-Herrington to design and build the tank. Eight were used during Operation Varsity in March 1945. The tanks did not perform well in action; several were damaged during the landing process and one was knocked out by a German self-propelled gun. Only two Locusts were able to reach their planned rendezvous point and go into action, occupying a piece of high ground along with an infantry company.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST">
+			<Text>Animator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Art.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_TEXT">
+			<Text>An animator is an artist who creates images, known as frames, which give an illusion of movement called animation when displayed in rapid sequence. Animators can work in a variety of fields including film, television, and video games. Animation is closely related to filmmaking and like filmmaking is extremely labor-intensive, which means that most significant works require the collaboration of several animators. As a result of the ongoing transition from traditional 2D to 3D computer animation, the animator's traditional task of redrawing and repainting the same character 24 times a second (for each second of finished animation) has now been superseded by the modern task of developing dozens (or hundreds) of movements of different parts of a character in a virtual scene.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER">
+			<Text>Scriptwriter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_TEXT">
+			<Text>A screenwriter (also called scriptwriter, scribe, or scenarist) is someone who practices the craft of writing for visual mass media, known as screenwriting. These can include short films, feature-length films, television programs, television commercials, video games, and the growing area of online web series. There are a legion of would-be screenwriters who attempt to enter the film industry, but it often takes years of trial and error, failure, and gritty persistence to achieve success. In Writing Screenplays that Sell, Michael Hague writes, "Screenplays have become, for the last half of [the twentieth] century, what the Great American Novel was for the first half. Closet writers who used to dream of the glory of getting into print now dream of seeing their story on the big or small screen."</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN">
+			<Text>Disc Jockey</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Music.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_TEXT">
+			<Text>A disc jockey, more commonly abbreviated as DJ, is a person who plays recorded music for an audience. Playing recorded music for dancing and parties rose with the mass marketing of home phonographs in the late 19th century. British radio disc jockey Jimmy Savile hosted his first live dance party in 1943 using a single turntable and a makeshift sound system. Four years later, Savile began using two turntables welded together to form a single DJ console. In 1947, the Whisky à Gogo opened in Paris as the first discotheque. In 1959, one of the first discos in Germany, the Scotch Club, opened in Aachen and visiting journalist Klaus Quirini (later DJ Heinrich) made comments, conducted audience games, and announced songs while playing records. The first song he played was the hit Ein Schiff wird kommen by Lale Andersen.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GREAT_WORK_PROSPERITY">
+			<Text>[COLOR_MAGENTA]Media Culture[ENDCOLOR] has created a [ICON_GREAT_WORK] Great Work. [COLOR_POSITIVE_TEXT]{2_GWType}[ENDCOLOR] has been added to your collection in the [COLOR_CYAN]{3_Building}[ENDCOLOR] of {1_City}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_WORK_PROSPERITY_TITLE">
+			<Text>New Great Work!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

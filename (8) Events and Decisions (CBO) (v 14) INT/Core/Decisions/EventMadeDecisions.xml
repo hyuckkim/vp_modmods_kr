@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1">
+			<Text>Found the Amsterdamsche Wisselbank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_GOLD] Gold for every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1">
+			<Text>Create the Thai Alphabet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1_HELP">
+			<Text>Decision Effect: 1 Free Technology.</Text>
+		</Row> 
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1">
+			<Text>Found the House of Wisdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1_HELP">
+			<Text>Decision Effect: +3 [ICON_RESEARCH] Science from Caravansaries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1">
+			<Text>Organise the Grande Armée</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1_HELP">
+			<Text>Decision Effect: All Gunpowder Units are 25% more likely to generate a Great General.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1">
+			<Text>The Law Code of Suleiman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_HAPPINESS_1] Happiness for every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1">
+			<Text>Reform the Ottoman State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_RESEARCH] Science from every Village and Town.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1">
+			<Text>Expand the Cothons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1_HELP">
+			<Text>Decision Effect: +3 [ICON_GOLD] Gold for every City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1">
+			<Text>Construct Pok-Ta-Pok Ballcourts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1_HELP">
+			<Text>Decision Effect: +2 [ICON_CULTURE] Culture from every Kuna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1">
+			<Text>Introduce Hangul</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_RESEARCH] Science from every Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1">
+			<Text>Improve the Method of the Tabya</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_RESEARCH] Science and +1 [ICON_CULTURE] Culture from every Tabya</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1">
+			<Text>Develop Ethanol Fuel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_RESEARCH] Science from every Plantantion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1">
+			<Text>Develop Ethanol Fuel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1_HELP">
+			<Text>Decision Effect: All Melee Units receive the Woodsman promotion and +1 [ICON_CULTURE] Culture from every Brazilwood Camp</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1">
+			<Text>Establish the Imperial Exams</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_PRODUCTION] Production from Paper Makers and +1 [ICON_CULTURE] Culture from Paper Makers and Universities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1">
+			<Text>Establish the Black Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1_HELP">
+			<Text>Decision Effect: Melee and Gun units receive +15% [ICON_STRENGTH] Combat Strength in friendly territory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1">
+			<Text>Incorporate Subdued Peoples</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1_HELP">
+			<Text>Decision Effect: +4 [ICON_GOLD] Gold from every Courthouse</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1">
+			<Text>Appoint the Shogun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1_HELP">
+			<Text>Decision Effect: +2 [ICON_CULTURE] Culture from every Castle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1">
+			<Text>Patronise the Theatres</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1_HELP">
+			<Text>Decision Effect: +1 [ICON_CULTURE] Culture from every Amphitheatres and Opera Houses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1">
+			<Text>Refine the Recurve Bow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1_HELP">
+			<Text>Decision Effect: +20% Ranged Strength for Archery Units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1">
+			<Text>Found the Arsenale</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1_HELP">
+			<Text>Decision Effect: +33% [ICON_PRODUCTION] Production when training Naval Units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1">
+			<Text>Establish the Chasqui System</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1_HELP">
+			<Text>Decision Effect: +2% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1">
+			<Text>Mint Aksumite Coinage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1_HELP">
+			<Text>Decision Effect: +2 [ICON_GOLD] Gold from all your Trade Routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1">
+			<Text>Ballista Fulminalis</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1_HELP">
+			<Text>Decision Effect: +25% [ICON_PRODUCTION] Production when training Siege units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1">
+			<Text>Adoption of the Welsh Bow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1_HELP">
+			<Text>Decision Effect: Newly trained Archery Units begin with additional XP</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1">
+			<Text>Fund the Development of Gunpowder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1_HELP">
+			<Text>Decision Effect: +15% [ICON_PRODUCTION] Production when training Gunpowder and Siege units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1">
+			<Text>Found the Hofkriegsrat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1_HELP">
+			<Text>Decision Effect: +15% [ICON_PRODUCTION] Production when training Archery and Mounted Units and +20% [ICON_PRODUCTION] Production when training Melee and Gunpowder Units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1">
+			<Text>Create the Savaran Cavalry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1_HELP">
+			<Text>Decision Effect: Newly trained Mounted Units begin with additional XP</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1">
+			<Text>Standardise the Devanagari Script</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1_HELP">
+			<Text>Decision Effect: Receive a lump sum [ICON_CULTURE] Culture and [ICON_RESEARCH] Science whenever a City grows</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_DUTCHWISSELBANK</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_THAIALPHABET</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_FRANCEARMEE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_OTTOMANKANUNI</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_CARTHAGECOTHONS</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MAYABALLGAME</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_KOREANHANGUL</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_SONGHAISANKORE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_BRAZILETHANOL</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_BRAZILBANDEIRANTES</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MOROCCOBLACKGUARD</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MONGOLIAEXECUTION</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_JAPANSHOGUNATE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_JAPANTHEATRE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_HUNSRECURVEBOW</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_VENETIANARSENALE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_INCANCHASQUIS</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ETHIOPIACOINAGE</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ROMEBALLISTA</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ENGLISHARMADA</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_KOREANGUNPOWDER</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_PERSIASAVARAN</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_INDIADEVANGARISCRIPT</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1_HELP</Help>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>0</RandomChance>
+			<RandomChanceDelta>0</RandomChanceDelta>
+			<NumChoices>1</NumChoices>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_THAIALPHABET_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_THAIALPHABET_CHOICE_1_HELP</Help>
+			<EventDuration>30</EventDuration>
+			<EventFreeTechs>1</EventFreeTechs>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventPromotion>PROMOTION_DECISIONS_FRANCEARMEE</EventPromotion>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<HappinessPerCity>1</HappinessPerCity>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventPromotion>PROMOTION_WOODSMAN</EventPromotion>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventPromotion>PROMOTION_DECISIONS_MOROCCOBLACKGUAR</EventPromotion>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventPromotion>PROMOTION_DECISIONS_HUNSRECURVEBOW</EventPromotion>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_VENETIANARSENALE</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_INCANCHASQUIS2</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_ETHIOPIACOINAGE2</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_ROMEBALLISTA</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_ENGLISHARMADA</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_KOREANGUNPOWDER</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_AUSTRIANHOFKRIEGSRAT</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_PERSIASAVARAN</EventBuildingClassGlobal>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1_HELP</Help>
+			<EventDuration>4500</EventDuration>
+			<EventBuildingClassGlobal>BUILDINGCLASS_DECISIONS_INDIADEVANGARISCRIPT</EventBuildingClassGlobal>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_DUTCHWISSELBANK</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_THAIALPHABET_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_THAIALPHABET</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_FRANCEARMEE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_FRANCEARMEE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_OTTOMANKANUNI_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_OTTOMANKANUNI</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_CARTHAGECOTHONS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_MAYABALLGAME</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_KOREANHANGUL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_SONGHAISANKORE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_BRAZILETHANOL</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_BRAZILBANDEIRANTES</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_MOROCCOBLACKGUARD_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_MOROCCOBLACKGUARD</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_MONGOLIAEXECUTION</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_JAPANSHOGUNATE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_JAPANTHEATRE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_HUNSRECURVEBOW_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_HUNSRECURVEBOW</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_VENETIANARSENALE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_VENETIANARSENALE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_INCANCHASQUIS_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_INCANCHASQUIS</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_ETHIOPIACOINAGE_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_ETHIOPIACOINAGE</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_ROMEBALLISTA_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_ROMEBALLISTA</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_ENGLISHARMADA_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_ENGLISHARMADA</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_KOREANGUNPOWDER_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_KOREANGUNPOWDER</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_AUSTRIANHOFKRIEGSRAT</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_PERSIASAVARAN_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_PERSIASAVARAN</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_INDIADEVANGARISCRIPT_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_DECISIONS_INDIADEVANGARISCRIPT</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_BuildingClassYieldChange>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_ARABIAHOUSEOFWISDOM_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STONE_WORKS</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_SONGHAISANKORE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_STONE_WORKS</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CHINAIMPERIALEXAM_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_MONGOLIAEXECUTION_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_JAPANSHOGUNATE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_JAPANTHEATRE_CHOICE_1</EventChoiceType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_BuildingClassYieldChange>
+	<EventChoice_CityYield>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_DUTCHWISSELBANK_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_CARTHAGECOTHONS_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</EventChoice_CityYield>
+	<EventChoice_ImprovementYieldChange>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_OTTOMANGUNPOWDER_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE_VENICE</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_KOREANHANGUL_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_MAYABALLGAME_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_KUNA</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_BRAZILETHANOL_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_DECISIONS_BRAZILBANDEIRANTES_CHOICE_1</EventChoiceType>
+			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</EventChoice_ImprovementYieldChange>
+</GameData>

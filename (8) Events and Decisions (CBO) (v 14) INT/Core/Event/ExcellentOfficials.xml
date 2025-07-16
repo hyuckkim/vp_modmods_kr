@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1">
+			<Text>Excellent Official</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1_HELP">
+			<Text>Our newly hired government officials have proven to be particularly skilled and efficient. Their administrative efforts can only serve to benefit the nation.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+2 [ICON_MAGISTRATES] Magistrates.[ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>PLAYER_EVENT_EXCELLENTOFFICIAL</Type>
+			<Description>TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1_HELP</Help>
+			<EventClass>EVENT_CLASS_GOOD</EventClass>
+			<EventArt>Event_Scroll.dds</EventArt>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>10</RandomChance>
+			<NumChoices>1</NumChoices>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>PLAYER_EVENT_EXCELLENTOFFICIAL_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_EXCELLENTOFFICIAL_CHOICE_1_HELP</Help>
+			<EventChoiceAudio>AS2D_EVENT_ECROWDCHEER</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_EXCELLENTOFFICIAL_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_EXCELLENTOFFICIAL</EventType>
+		</Row>
+	</Event_ParentEvents>
+</GameData>

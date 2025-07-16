@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/14/2014 10:13:15 PM -->
+<GameData>
+	<IconFontTextures>
+		<Row>
+			<IconFontTexture>ICON_FONT_TEXTURE_EVC</IconFontTexture>
+			<IconFontTextureFile>EVCFontIcons</IconFontTextureFile>
+		</Row>
+	</IconFontTextures>
+	<IconFontMapping>
+		<Row>
+			<IconName>ICON_VICTORY_RELIGIOUS</IconName>
+			<IconMapping>1</IconMapping>
+			<IconFontTexture>ICON_FONT_TEXTURE_EVC</IconFontTexture>
+		</Row>
+		<Row>
+			<IconName>ICON_VICTORY_ECONOMIC</IconName>
+			<IconMapping>2</IconMapping>
+			<IconFontTexture>ICON_FONT_TEXTURE_EVC</IconFontTexture>
+		</Row>
+	</IconFontMapping>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>SAGE_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>Monk256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SAGE_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>Monk128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SAGE_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>Monk080.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SAGE_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>Monk064.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SAGE_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>Monk045.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>SAGE_FLAG_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>SageFlagAlpha32.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

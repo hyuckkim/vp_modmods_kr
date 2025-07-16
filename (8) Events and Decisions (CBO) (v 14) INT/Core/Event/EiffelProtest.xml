@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_DESCRIPTION">
+			<Text>Eiffel Tower Protest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_HELP">
+			<Text>We, writers, painters, sculptors, architects and passionate devotees of the hitherto untouched beauty, protest with all our strength, with all our indignation in the name of slighted taste, against the erection of this useless and monstrous Eiffel Tower. To bring our arguments home, imagine for a moment a giddy, ridiculous tower dominating the landscape like a gigantic black smokestack, crushing under its barbaric bulk all of our humiliated monuments which will disappear in this ghastly dream.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_1">
+			<Text>Idiots. Ignore them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2">
+			<Text>We can't take it down! We're using it as a radio tower!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {2_InstantYield}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]A Broadcast Tower is built in the city.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2_DISABLED">
+			<Text>We don't have enough gold!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_3">
+			<Text>Fine, let's tear it down.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_3_HELP">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]The Eiffel Tower is dismantled[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Receive 3 free Great Artists[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_COMET_CHOICE_3_SUCCESSFUL">
+			<Text>In response to criticism, the Eiffel Tower has been torn down. Local artists celebrate its removal!</Text>
+		</Row>		
+	</Language_en_US>
+	<CityEvents>
+		<Row>
+			<Type>CITY_EVENT_EIFFELPROTEST</Type>
+			<Description>TXT_KEY_CITY_EVENT_EIFFELPROTEST_DESCRIPTION</Description>
+			<Help>TXT_KEY_CITY_EVENT_EIFFELPROTEST_HELP</Help>
+			<CityEventArt>Event_Eiffel.dds</CityEventArt>
+			<CityEventAudio>AS2D_INTERFACE_CITY_TILE</CityEventAudio>
+			<RandomChance>60</RandomChance>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<IsOneShot>true</IsOneShot>
+			<RequiredBuildingClass>BUILDINGCLASS_EIFFEL_TOWER</RequiredBuildingClass>
+			<NumChoices>3</NumChoices>
+		</Row>
+	</CityEvents>
+	<CityEventChoices>
+		<Row>
+			<Type>CITY_EVENT_EIFFELPROTEST_CHOICE_1</Type>
+			<Description>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_DO_NOTHING_HELP</Help>
+			<EventChoiceAudio>AS2D_EVENT_ECITYREVOLT</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_EIFFELPROTEST_CHOICE_2</Type>
+			<Description>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2</Description>
+			<Help>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2_HELP</Help>
+			<DisabledTooltip>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_2_DISABLED</DisabledTooltip>
+			<EventChoiceAudio>AS2D_EVENT_ECITYREVOLT</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EraScaling>true</EraScaling>
+			<EventBuildingClass>BUILDINGCLASS_BROADCAST_TOWER</EventBuildingClass>
+		</Row>
+		<Row>
+			<Type>CITY_EVENT_EIFFELPROTEST_CHOICE_3</Type>
+			<Description>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_3</Description>
+			<Help>TXT_KEY_CITY_EVENT_EIFFELPROTEST_CHOICE_3_HELP</Help>
+			<EventChoiceAudio>AS2D_EVENT_ECROWDCHEER</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EventBuildingClassDestruction>BUILDINGCLASS_EIFFEL_TOWER</EventBuildingClassDestruction>
+		</Row>
+	</CityEventChoices>
+	<CityEvent_ParentEvents>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_1</EventChoiceType>
+			<CityEventType>CITY_EVENT_EIFFELPROTEST</EventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_2</EventChoiceType>
+			<CityEventType>CITY_EVENT_EIFFELPROTEST</EventType>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_3</EventChoiceType>
+			<CityEventType>CITY_EVENT_EIFFELPROTEST</EventType>
+		</Row>
+	</CityEvent_ParentEvents>
+	<CityEventChoice_FreeUnitClasses>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_3</CityEventChoiceType>
+			<UnitClassType>UNITCLASS_ARTIST</UnitClassType>
+			<Quantity>3</Quantity>
+		</Row>
+	</CityEventChoice_FreeUnitClasses>
+	<CityEventChoice_InstantYield>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-100</Yield>
+		</Row>
+	</CityEventChoice_InstantYield>
+	<CityEventChoiceFlavors>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_1</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_2</CityEventChoiceType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>-10</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_3</CityEventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>-30</Flavor>
+		</Row>
+	</CityEventChoiceFlavors>
+	<CityEventChoice_Notification>
+		<Row>
+			<CityEventChoiceType>CITY_EVENT_EIFFELPROTEST_CHOICE_3</CityEventChoiceType>
+			<NotificationType>NOTIFICATION_GENERIC</NotificationType>
+			<Description>TXT_KEY_CITY_EVENT_COMET_CHOICE_3_SUCCESSFUL</Description>
+			<ShortDescription>TXT_KEY_CITY_EVENT_EIFFELPROTEST_DESCRIPTION</ShortDescription>
+			<IsWorldEvent>true</IsWorldEvent>
+		</Row>
+	</CityEventChoice_Notification>
+</GameData>

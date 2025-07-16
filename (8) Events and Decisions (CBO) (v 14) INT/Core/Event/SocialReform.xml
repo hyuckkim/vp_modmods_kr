@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_SOCIALREFORM_DESCRIPTION">
+			<Text>Social Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_SOCIALREFORM_HELP">
+			<Text>Your advisors have proposed a number of policies that would likely profit our nation greatly if taken into effect. They are extremely radical however and many of the public refuse to accept this. There is a slight chance of them rebelling.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_1">
+			<Text>Ignore the proposals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2">
+			<Text>Implement the proposals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {1_YieldCost}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]20% chance of [ICON_RESISTANCE] Anarchy![ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>PLAYER_EVENT_SOCIALREFORM</Type>
+			<Description>TXT_KEY_PLAYER_EVENT_SOCIALREFORM_DESCRIPTION</Description>
+			<Help>TXT_KEY_PLAYER_EVENT_SOCIALREFORM_HELP</Help>
+			<EventArt>Event_Parliament.dds</EventArt>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<MinimumNationalPopulation>10</MinimumNationalPopulation>
+			<RandomChance>15</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<NumChoices>2</NumChoices>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>PLAYER_EVENT_SOCIALREFORM_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_SOCIALREFORM_CHOICE_1</Description>
+			<Help>TXT_KEY_CITY_EVENT_DO_NOTHING_HELP</Help>
+			<EventChoiceAudio>AS2D_EVENT_ECITYCHEER</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EraScaling>true</EraScaling>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_SOCIALREFORM_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2_HELP</Help>
+			<EventChoiceAudio>AS2D_EVENT_EREVOLUTIONSTART</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EraScaling>true</EraScaling>
+			<EventChance>20</EventChance>
+			<ResistanceTurns>2</ResistanceTurns>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_SOCIALREFORM_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_SOCIALREFORM</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_SOCIALREFORM_CHOICE_2</EventChoiceType>
+			<EventType>PLAYER_EVENT_SOCIALREFORM</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_EventCostYield>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_SOCIALREFORM_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-200</Yield>
+		</Row>
+	</EventChoice_EventCostYield>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_SOCIALREFORM_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_SOCIALREFORM_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+</GameData>
