@@ -224,13 +224,13 @@ function UpdateDisplay()
 			instance.Status:SetHide(false)
 
 			if iActivityType == ActivityTypes.ACTIVITY_HEAL then
-				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_HEALING") .. " in " .. sStatus
+				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_HEALING") .. ": " .. sStatus
 			elseif iActivityType == ActivityTypes.ACTIVITY_SENTRY then
-				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_ALERT") .. " from " .. sStatus
+				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_ALERT") .. ": " .. sStatus
 			elseif unit:GetFortifyTurns() > 0 then
-				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_FORTIFIED") .. " in " .. sStatus
+				sStatus = Locale.ConvertTextKey("TXT_KEY_LI_UNIT_STATUS_FORTIFIED") .. ": " .. sStatus
 			else
-				sStatus = "In " .. sStatus
+				sStatus = "위치: " .. sStatus
 			end
 			
 			sortEntry.Status = sStatus
@@ -239,11 +239,11 @@ function UpdateDisplay()
 			local sCity = unit:GetPlot():GetWorkingCity():GetName()
 			
 			if unit:IsGarrisoned() then
-				sPlace = "Garrisoned in " .. sCity
+				sPlace = "주둔 도시: " .. sCity
 			elseif isInFort then
-				sPlace = "Garrisoned in Fort near " .. sCity
+				sPlace = "요새 주둔 도시: " .. sCity
 			else
-				sPlace = "Garrisoned in Citadel near " .. sCity
+				sPlace = "성 주둔 도시: " .. sCity
 			end
 			
 			instance.Status:SetToolTipString(sPlace)

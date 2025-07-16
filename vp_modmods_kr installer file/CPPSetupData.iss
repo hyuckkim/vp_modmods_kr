@@ -95,8 +95,7 @@ Source: "..\Really Advanced Setup (v 15) KR\*"; DestDir: "{app}\MODS\Really Adva
 Source: "..\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
 Source: "..\Hokaths Proposals INT\*"; DestDir: "{app}\MODS\Hokaths Proposals INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
 Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ige
-Source: "..\JFD's Sovereignty for VP (v 15a)\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
-Source: "..\JFD's Sovereignty for VP (v 15a) INT\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
+Source: "..\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
 Source: "..\Vox Populi's Bare Necessities (v 12)\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
 Source: "..\Vox Populi's Bare Necessities INT\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
 Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
@@ -272,6 +271,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Hokaths Proposals INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Sovereignty for VP (v 15a)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Sovereignty for VP (v 15a) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Sovereignty for VP (v 15a) KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Really Advanced Setup (v 15)"

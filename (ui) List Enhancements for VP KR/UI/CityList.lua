@@ -418,8 +418,8 @@ function UpdateDisplay()
 		end
 		
 		-- food tooltip
-		local sFoodTooltip = iFoodPerTurn100 / 100 .. "[ICON_FOOD] ÇÕ°è[NEWLINE][NEWLINE]"
-		sFoodTooltip = sFoodTooltip .. "[COLOR_POSITIVE_TEXT]" .. iPopulation + 1 .. "[ICON_CITIZEN] ÁøÇà »óÈ²[ENDCOLOR]"
+		local sFoodTooltip = iFoodPerTurn100 / 100 .. "[ICON_FOOD] í•©ê³„[NEWLINE][NEWLINE]"
+		sFoodTooltip = sFoodTooltip .. "[COLOR_POSITIVE_TEXT]" .. iPopulation + 1 .. "[ICON_CITIZEN] ì§„í–‰ ìƒí™©[ENDCOLOR]"
 		sFoodTooltip = sFoodTooltip .. "  " .. iFoodStored100 / 100 .. "[ICON_FOOD]/ " .. iFoodNeeded .. "[ICON_FOOD]"
 		
 		if iFoodPerTurn100 > 0 then
@@ -478,8 +478,8 @@ function UpdateDisplay()
 		end
 		
 		-- culture tooltip
-		local sCultureTooltip = iCulturePerTurn .. "[ICON_CULTURE] ÇÕ°è[NEWLINE][NEWLINE]"
-		sCultureTooltip = sCultureTooltip .. "[ICON_CULTURE_LOCAL]±¹°æ ¼ºÀå[ENDCOLOR] ÁøÇà »óÈ²"
+		local sCultureTooltip = iCulturePerTurn .. "[ICON_CULTURE] í•©ê³„[NEWLINE][NEWLINE]"
+		sCultureTooltip = sCultureTooltip .. "[ICON_CULTURE_LOCAL]êµ­ê²½ ì„±ì¥[ENDCOLOR] ì§„í–‰ ìƒí™©"
 		sCultureTooltip = sCultureTooltip .. "  " .. iCultureStored .. "[ICON_CULTURE]/ " .. iCultureNeeded .. "[ICON_CULTURE]"
 		
 		if iCulturePerTurn > 0 then
@@ -584,8 +584,8 @@ function ProductionDetails(city, instance, sortEntry)
 	local iProductionTurnsLeft = city:GetProductionTurnsLeft()
 	local iProductionNeeded = city:GetProductionNeeded()
 	
-	local sProductionTooltip = iProductionPerTurn100 / 100 .. "[ICON_PRODUCTION] ÇÕ°è[NEWLINE][NEWLINE]"
-	sProductionTooltip = sProductionTooltip .. " [COLOR_YIELD_FOOD]" .. Locale.ToUpper(sCityProductionName) .. "[ENDCOLOR] ÁøÇà »óÈ²"
+	local sProductionTooltip = iProductionPerTurn100 / 100 .. "[ICON_PRODUCTION] í•©ê³„[NEWLINE][NEWLINE]"
+	sProductionTooltip = sProductionTooltip .. " [COLOR_YIELD_FOOD]" .. Locale.ToUpper(sCityProductionName) .. "[ENDCOLOR] ì§„í–‰ ìƒí™©"
 	sProductionTooltip = sProductionTooltip .. "" .. iProductionStored100 / 100 .. "[ICON_PRODUCTION]/ " .. iProductionNeeded .. "[ICON_PRODUCTION]"
 	
 	if iProductionPerTurn100 > 0 then
