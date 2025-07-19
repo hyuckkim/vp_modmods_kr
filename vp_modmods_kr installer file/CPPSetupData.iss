@@ -84,7 +84,7 @@ Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overh
 Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(text) Promotion Overhaul for VP\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
 Source: "..\(text) Promotion Overhaul for VP INT (AI)\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: po
-Source: "..\(text) Promotion Overhaul for VP INT (AI)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: usf
+Source: "..\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: usf
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
