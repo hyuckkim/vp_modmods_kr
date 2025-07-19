@@ -6,7 +6,7 @@
 --WHERE Tag = 'TXT_KEY_PROMOTION_MONGOL_TERROR_HELP';
 
 UPDATE Language_ko_KR
-SET Text = '스커미셔 유닛이 한 번 더 [ICON_WAR] 공격할 기회를 가집니다. [ICON_RES_HORSE] 말, 마구간, Agribusinesses에서 [ICON_FOOD] 식량 +1, [ICON_CULTURE] 문화 +1, [ICON_CULTURE_LOCAL] 국경 성장 점수 +1, [ICON_GREAT_GENERAL] 위대한 장군 점수 +1 증가합니다.'
+SET Text = '스커미셔 유닛이 한 번 더 [ICON_WAR] 공격할 기회를 가집니다. [ICON_RES_HORSE] 말, 마구간, 기업형 농장에서 [ICON_FOOD] 식량 +1, [ICON_CULTURE] 문화 +1, [ICON_CULTURE_LOCAL] 국경 성장 점수 +1, [ICON_GREAT_GENERAL] 위대한 장군 점수 +1 증가합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_TERROR';
 
 UPDATE Language_ko_KR

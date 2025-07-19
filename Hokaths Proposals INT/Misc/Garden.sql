@@ -1,8 +1,8 @@
 -- Garden
 UPDATE Language_ko_KR
-SET Text = '+25% [ICON_GREAT_PEOPLE] Great People generation in this City.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby Lakes: +2 [ICON_TOURISM] Tourism.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CLOVES] Cloves: +1 [ICON_PEACE] Faith, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_PEPPER] Pepper: +1 [ICON_PEACE] Faith, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_NUTMEG] Nutmeg: +1 [ICON_CULTURE] Culture, +1 [ICON_PRODUCTION] Production.'
+SET Text = '이 도시에서 [ICON_GREAT_PEOPLE] 위인 생성량이 +25% 증가합니다.[NEWLINE][NEWLINE]이 도시의 전문가 1명이 더 이상 [ICON_URBANIZATION] 도시화로 인한 [ICON_HAPPINESS_3] 불행을 생성하지 않습니다.[NEWLINE][NEWLINE]오아시스: [ICON_GOLD] 골드 +2[NEWLINE]호수: [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_CITRUS] 감귤: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_COCOA] 코코아: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_CLOVES]정향: [ICON_PEACE] 신앙 +1, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_PEPPER] 후추: [ICON_PEACE] 신앙 +1, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_NUTMEG]육두구: [ICON_CULTURE] 문화 +1, [ICON_PRODUCTION] 생산력 +1'
 WHERE Tag = 'TXT_KEY_BUILDING_GARDEN_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'The Garden increases the speed at which [ICON_GREAT_PEOPLE] Great People are generated in the City by 25%, and buffs the Gold output of Oases and the Tourism output of Lakes. Gardens require an Aqueduct in the City in order to be built.'
+SET Text = '정원은 도시에서 [ICON_GREAT_PEOPLE] 위인이 생성되는 속도를 25% 증가시키고, 오아시스의 골드 생산량과 호수의 관광 생산량을 증가시킵니다. 정원을 건설하려면 도시에 송수로가 필요합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_GARDEN_STRATEGY';

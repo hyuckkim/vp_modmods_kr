@@ -1,25 +1,25 @@
--- Zoo
+-- 동물원
 UPDATE Language_ko_KR
-SET Text = '+500 [ICON_RESEARCH] Science when completed. +1 [ICON_CULTURE] Culture from Camps worked by this City. Nearby Jungle and Forest tiles gain +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.'
+SET Text = '완료 시 [ICON_RESEARCH] 과학 +500을 줍니다. 이 도시가 운영하는 야영지에서 [ICON_CULTURE] 문화 +1을 얻습니다. 근처 정글과 숲 타일은 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광이 +1 증가합니다.[NEWLINE][NEWLINE][ICON_CULTURE] 무료로 인한 [ICON_HAPPINESS_3] 불행이 -1 감소합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'Mass construction of Zoos in all your Cities will give you a sudden burst of Science to reach a more advanced Tech. Zoos also represent one of the first sources of Tourism on Tiles. They are much more important to unlock if your Empire is heavily forested, or if you have a large number of Camp Luxuries.'
+SET Text = '모든 도시에 동물원을 대량으로 건설하면 과학이 급격히 증가해 더 진보된 기술을 습득할 수 있습니다. 동물원은 또한 관광 타일의 초기 원천 중 하나입니다. 문명이 울창한 숲으로 뒤덮여 있거나 야영지 사치 자원이 많을 경우 이를 해제하는 것이 훨씬 더 중요합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_STRATEGY';
 
 UPDATE Language_ko_KR
-SET Text = '+500 [ICON_RESEARCH] Science when completed. Nearby Jungle, Forest, Camps, and Pastures gain +1 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Trigger a "[COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]" in this city whenever it completes a [COLOR_POSITIVE_TEXT]Public Works Project[ENDCOLOR]. Gain 100 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_GOLD] Gold whenever a "[COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.'
+SET Text = '완료 시 [ICON_RESEARCH] 과학 +500을 줍니다. 근처 정글, 숲, 야영지, 목장에서 [ICON_TOURISM] 관광과 [ICON_CULTURE] 문화가 +1 증가합니다.[NEWLINE][NEWLINE]이 도시에서 [COLOR_POSITIVE_TEXT]공공 사업 프로젝트[ENDCOLOR]가 완료될 때마다 "[COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]"을 시행합니다. "[COLOR_POSITIVE_TEXT]국왕 경축일[ENDCOLOR]"이 시작될 때마다 [ICON_CULTURE] 문화, [ICON_PEACE] 신앙, [ICON_GOLD] 골드를 100씩 얻습니다. (시대에 따라 보정)[NEWLINE][NEWLINE] [ICON_CULTURE] 무료로 인한 [ICON_HAPPINESS_3] 불행이 -1 감소합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_SPAIN_BULLRING_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'The Bullring is a Spanish Unique Building that is cheaper and is available earlier than the Zoo. In addition to the Zoo''s bonuses to Camps, the Bullring gives bonuses to Pastures. Try to focus on triggering many "We Love the King Days" by connecting Resources or building Public Works in order to get additional Yields.'
+SET Text = '투우장은 동물원보다 저렴하고 일찍 입장할 수 있는 스페인의 독특한 건물입니다. 동물원이 야영지에 주는 보너스 외에도, 투우장은 목장에 보너스를 줍니다. 추가 산출량을 얻으려면 자원을 연결하거나 공공 사업을 건설하여 "국왕 경축일"을 많이 만드는 데 집중하세요.'
 WHERE Tag = 'TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY';
 
--- Hotels
+-- 호텔
 UPDATE Language_ko_KR
-SET Text = 'City gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism on Snow and for every Mountain within the workable Tiles. +5 [ICON_TOURISM] Tourism from Oases worked by this City.[NEWLINE][NEWLINE]33% of the [ICON_CULTURE] Culture from [ICON_WONDER] World Wonders and Tiles is added to the [ICON_TOURISM] Tourism output of the City. [ICON_TOURISM] Tourism output from Great Works +25%.[NEWLINE][NEWLINE]Completing a [ICON_CARAVAN]/[ICON_CARGO_SHIP] Trade Route originating here and targeting another Civilization, triggers a (or strengthens an existing) [COLOR_POSITIVE_TEXT]Historic Event[ENDCOLOR].'
+SET Text = '도시는 눈이 내리고 작업 가능한 타일 내에 있는 모든 산에 대해 [ICON_GOLD] 골드와 [ICON_TOURISM] 관광이 +1 증가합니다. 이 도시에서 작업 중인 오아시스의 [ICON_TOURISM] 관광이 +5 증가합니다.[NEWLINE][NEWLINE][ICON_WONDER] 세계 불가사의와 타일에서 얻은 [ICON_CULTURE] 문화의 33%가 도시의 [ICON_TOURISM] 관광 산출량에 추가됩니다. 걸작으로 인한 [ICON_TOURISM] 관광 산출량이 25% 증가합니다.[NEWLINE][NEWLINE]여기에서 시작하여 다른 문명을 대상으로 하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP] 교역로를 완성하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생(하거나 기존 이벤트가 강화)됩니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_HOTEL_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'When completed, gains [ICON_GOLD] Gold and [ICON_CULTURE] Culture for every 8 Buildings and Wonders already constructed in this city. Gains +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture every Era. City gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism on Snow and for every Mountain within the workable Tiles. +5 [ICON_TOURISM] Tourism from Oases worked by this City.[NEWLINE][NEWLINE]When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 10% of the cost is converted into [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]50% of the [ICON_CULTURE] Culture from [ICON_WONDER] World Wonders and Tiles is added to the [ICON_TOURISM] Tourism output of the City. [ICON_TOURISM] Tourism output from Great Works +25%.[NEWLINE][NEWLINE]Completing a [ICON_CARAVAN]/[ICON_CARGO_SHIP] Trade Route originating here and targeting another Civilization, triggers a (or strengthens an existing) [COLOR_POSITIVE_TEXT]Historic Event[ENDCOLOR].'
+SET Text = '완성되면 이 도시에 이미 건설된 건물과 불가사의 8개마다 [ICON_GOLD] 골드와 [ICON_CULTURE] 문화를 얻습니다. 매 시대마다 [ICON_GOLD] 골드와 [ICON_CULTURE] 문화가 +1 증가합니다. 도시는 눈이 내리고 작업 가능한 타일 내에 있는 모든 산에 대해 [ICON_GOLD] 골드와 [ICON_TOURISM] 관광이 +1 증가합니다. 이 도시에서 생산되는 오아시스의 [ICON_TOURISM] 관광이 +5 증가합니다.[NEWLINE][NEWLINE]이 도시에서 [ICON_INVEST] 골드를 사용하여 유닛을 구매하거나 건물에 투자할 경우, 비용의 10%가 [ICON_TOURISM] 관광으로 전환됩니다.[NEWLINE][NEWLINE][ICON_WONDER] 세계 불가사의와 타일에서 얻은 [ICON_CULTURE] 문화의 50%가 도시의 [ICON_TOURISM] 관광 산출량에 추가됩니다. 걸작으로 인한 [ICON_TOURISM] 관광 산출량이 +25% 증가합니다.[NEWLINE][NEWLINE]여기에서 시작하여 다른 문명을 대상으로 하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP] 교역로를 완료하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생(하거나 기존 이벤트가 강화)됩니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_MOROCCO_RIAD_HELP';
