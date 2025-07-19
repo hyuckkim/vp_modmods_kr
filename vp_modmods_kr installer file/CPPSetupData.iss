@@ -172,7 +172,7 @@ Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Typ
 Name: "po"; Description: "VP 승급 오버홀 (Promotion Overhaul for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ras"; Description: "진짜 고급 설정 (Really Advanced Setup)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "rv"; Description: "종교 승리 (Religious Victory)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ras"; Description: "산림 천이 (TreeSuccession)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "ts"; Description: "산림 천이 (TreeSuccession)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formation for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "bn"; Description: "VP 아주 적은 필수품 (Vox Populi's Bare Necessities)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
