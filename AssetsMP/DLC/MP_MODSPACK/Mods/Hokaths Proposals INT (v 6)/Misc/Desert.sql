@@ -1,7 +1,7 @@
 UPDATE Language_ko_KR SET
-Text = 'Deserts are land devoid of moisture; although many have sand, it is not a requirement. It is less useful than plains or grassland, but becomes more palatable once buildings are constructed that boost its yields, and those of the resources that can only be found on this type of terrain. Desert tiles next to rivers become Flood Plains, and the powerful Oasis feature only spawns here, and Farms may only be built on Desert with access to Fresh Water.'
+Text = '사막은 습기가 없는 땅입니다. 모래가 있는 곳도 많지만 반드시 모래가 있어야 하는 것은 아닙니다.평원이나 초원만큼 유용하지는 않지만, 산출량을 늘려주는 건물을 건설하고 이런 지형에서만 찾을 수 있는 자원의 산출량을 늘리면 더욱 유용해집니다. 강 옆에 있는 사막 타일은 범람원이 되고, 강력한 오아시스 기능은 여기서만 생성되며, 농장은 담수에 접근할 수 있는 사막에만 건설할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_CIV5_TERRAIN_DESERT_TEXT';
 
 UPDATE Language_ko_KR SET
-Text = 'Tundra is the semi-frozen land found in the world''s colder climates. It is less useful than plains or grassland, but becomes more palatable once buildings are constructed that boost its yields, and those of the resources that can only be found on this type of terrain. It can sustain forests (but not jungle), and with enough investment they can become lucrative tiles. Farms may only be built on Tundra with access to Fresh Water.'
+Text = '툰드라는 세계에서 가장 추운 기후 지역에 위치한 반쯤 얼어붙은 땅입니다. 평원이나 초원만큼 유용하지는 않지만, 산출량을 늘려주는 건물을 건설하고 이런 지형에서만 찾을 수 있는 자원의 산출량을 늘리면 더욱 유용해집니다. 숲을 유지할 수 있지만 (정글 말고), 충분한 투자를 하면 수익성 있는 타일로 만들 수 있습니다. 농장은 담수를 이용할 수 있는 툰드라에만 건설할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_CIV5_TERRAIN_TUNDRA_TEXT';

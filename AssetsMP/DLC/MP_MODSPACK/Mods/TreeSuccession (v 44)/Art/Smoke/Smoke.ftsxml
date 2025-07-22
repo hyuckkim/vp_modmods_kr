@@ -1,0 +1,14 @@
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerEffect" id="1" time="0" duration="10" repeat="0" ec="1000" track="2" tier="0" event="ART_DEF_VEFFECT_DUST_TRAIL_MD" bone="FX_Fallout" />
+	<trigger type="FTimedTriggerEffect" id="2" time="0" duration="10" repeat="0" ec="1000" track="2" tier="0" event="ART_DEF_VEFFECT_SCIENTIST_DUST_TRAIL_SM" bone="FX_Fallout" />
+	<trigger type="FTimedTriggerEffect" id="3" time="0" duration="10" repeat="0" ec="1000" track="2" tier="0" event="ART_DEF_VEFFECT_ASKIA_ASH_01" bone="FX_Fallout" />
+  </triggers>
+</trigger_system>

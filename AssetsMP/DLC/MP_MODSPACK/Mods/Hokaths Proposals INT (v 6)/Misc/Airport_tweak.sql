@@ -1,3 +1,3 @@
 UPDATE Language_ko_KR
-SET Text = '+5% Yields from [ICON_CONNECTED]/[ICON_INDUSTRIAL_CONNECTED] City Connections in your Empire. +1 [ICON_TOURISM] Tourism for every 3 [ICON_CITIZEN] Citizens in the City. +3 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism from Atolls.[NEWLINE][NEWLINE]Allows [COLOR_POSITIVE_TEXT]Airlifts[ENDCOLOR] to or from this City. [COLOR_POSITIVE_TEXT]Increases Air Unit Capacity of the City from 2 to 6.[ENDCOLOR] +10 [ICON_STRENGTH] Damage to Air Units during Air Strikes on City.'
+SET Text = '문명 내 [ICON_CONNECTED]/[ICON_INDUSTRIAL_CONNECTED] 도시 연결에서 +5%의 수익률을 얻습니다. 도시에 거주하는 [ICON_CITIZEN] 시민 3명당 [ICON_TOURISM] 관광이 +1 증가합니다. 산호에서  [ICON_GOLD] 골드와 [ICON_TOURISM] 관광이 +3 증가합니다.[NEWLINE][NEWLINE]이 도시로 또는 이 도시에서 [COLOR_POSITIVE_TEXT]공수[ENDCOLOR]를 할 수 있습니다. [COLOR_POSITIVE_TEXT]도시의 항공 유닛 수용 제한이 2에서 6으로 증가합니다.[ENDCOLOR] 도시에 대한 공습 시 공중 유닛의 [ICON_STRENGTH] 피해가 +10 증가합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_AIRPORT_HELP';

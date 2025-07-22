@@ -16970,6 +16970,16 @@
 				It will increase [ICON_GOLD] Gold and [ICON_CULTURE] Culture, and spawns a [ICON_RES_BRAZILWOOD] {TXT_KEY_RESOURCE_BRAZILWOOD} Resource under this tile.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BURNT"> 
+			<Text>
+				Extinguish Wildfire
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BURNT_HELP"> 
+			<Text>
+				A Fire Scar will be left behind. Unit reduced to 1 HP. +1 [ICON_RESEARCH] Science temporarily.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_CAMP"> 
 			<Text>
 				Construct a [LINK=IMPROVEMENT_CAMP]Camp[\LINK]
@@ -38087,6 +38097,11 @@
 				In the late 1800s, Msiri, the son of an East African trader, established the town of Bunkeya and built a commercial empire. His Bayeke tribe dominated a vast part of the east Congo basin, trading ivory, copper and iron ore, salt and slaves to the Arabs on the coast for guns and ammunition to maintain their kingdom. Concerned when the British showed interest in the area, King Leopold III of Belgium dispatched three expeditions to bring about Msiri's submission. The third, launched from Zanzibar, forced Bayeke forces to retreat from Bunkeya in 1891 AD; Msiri himself was killed shortly thereafter.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_BURN_FOREST"> 
+			<Text>
+				[COLOR_WARNING_TEXT]Deforestation[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_BYBLOS_TEXT"> 
 			<Text>
 				Archeological excavations show that the site of Byblos on the Mediterranean coast was first inhabited in the Neolithic Age; by the fourth millennium BC a large settlement there supported itself through fishing and inland agriculture. Over the next thousand years an extensive export in cedar - its wood indispensable in the building of boats and docks, its oil used for the mummification of bodies - to Egypt evolved. The Amorites burned the city during their invasion c. 2150 BC; the site lay barren for almost two centuries before the Phoenicians rebuilt the harbor, naming the town Gebal. The town made its most important contribution to human civilization with the development of a 22-character phonetic alphabet, replacing the complex cuneiform previously used in the region.[NEWLINE][NEWLINE]A commercial center, Gebal grew ever richer under successive occupiers: Assyria, Babylon, Achaemenid and Persia. Following conquest by Alexander, Byblos prospered as a Hellenized city, its citizens adopting Greek dress, language and religion. Along with cedar, grain and fruit, the town became famous for the production and export of papyrus, from which it took its Greek name Byblos. During the Roman era the city lost its commercial preeminence, but its religious role increased as hordes passed through it on pilgrimages to various holy sites.[NEWLINE][NEWLINE]In 395 AD Byblos became part of the Byzantine Empire, albeit a backwater port in its realm, until Muslim invaders overran it in 637. Under Muslim rule the city, now known as Jbail, declined even further in wealth and influence, eventually abandoned completely. Byblos disappeared into obscurity until excavations by the French historian Ernest Renan in the 1860s. Although Byblos will never again be a maritime power, it is re-emerging as an upscale tourist hub, with vacationers drawn to its sandy beaches, mild climate, and extensive ruins from the Roman, Muslim and Crusader eras.
@@ -40247,6 +40262,11 @@
 				Field Guns have greater combat power than Cannons, albeit they lack the ability to see very far on their own. Use Field Guns to support your Industrial Era armies, but be careful about letting the enemy get near them!
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_FIRE_PILLAGE"> 
+			<Text>
+				[ICON_RAZING]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FLORENCE_TEXT"> 
 			<Text>
 				Florence (in Italian, "Firenze") is one of the most interesting and beautiful cities in Europe. It lies on the River Arno in northern Italy, in the heart of the beautiful Tuscany region. Florence was founded in 59 BC by Julius Caesar as a settlement for former Roman soldiers, at the strategic location where the Via Cassia (the main route north from Rome) crosses the Arno. It was laid out in a checkerboard pattern, in the style of a military encampment. Its position allowed Florence to prosper from the trade between Rome and the north, and by 300 AD the city was made the capital of the province of Tuscia (Tuscany). For the next several hundred years the city was under attack from both Ostrogoths and Byzantines, and ownership changed hands repeatedly until 774 AD, when Charlemagne took and held the city, fending off further foreign attack.[NEWLINE][NEWLINE]Florence regained its wealth and prominence during the subsequent centuries, growing to become one of the wealthiest and most powerful city-states anywhere in Europe. In 1252 the Republic of Florence introduced its own currency, the gold florin. Florins were accepted across much of the Mediterranean and into Europe, and Florentine merchants and bankers rapidly spread across the known world.[NEWLINE][NEWLINE]During the Renaissance Florence was controlled by several extremely wealthy and ruthless families, including the Medici. When not engaged in deadly power struggles with each other the Florentine nobility were great patrons of the arts, Lorenzo de Medici alone commissioning works by Michelangelo, Botticelli, and Leonardo da Vinci, to name just three of the brilliant men he supported. By the mid-fifteenth century the Medici were made the hereditary Grand Dukes of Tuscany, ruling the province and Florence for several centuries. In 1737 Florence became part of the territories of Austria, in 1859 it was transferred to the Kingdom of Sardinia-Piedmont, and in 1861 it became part of the newly-united Kingdom of Italy.[NEWLINE][NEWLINE]Modern Florence is a thriving tourist center of some 500,000 citizens, a city that relishes its Roman, Medieval and Renaissance histories. It remains one of the most beautiful and evocative places in Europe, and indeed in the entire world.
@@ -42182,6 +42202,16 @@
 				Coastal Improvements
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_BURNT_HELP"> 
+			<Text>
+				Visibly blackened land surface left after a wildfire has burned through vegetation.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_BURNT_TEXT"> 
+			<Text>
+				Extinguished wildfire leaves behind charred vegetation in forest and jungle tiles.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
 			<Text>
 				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
@@ -42192,9 +42222,49 @@
 				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_GROW_FOREST"> 
+			<Text>
+				[COLOR_CITY_GREEN]Steady-state Forest[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_GROW_JUNGLE"> 
+			<Text>
+				[COLOR_CITY_GREEN]Steady-state Jungle[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
 			<Text>
 				Whales are aquatic mammals that spawn in Coastal Water Tiles but can move on the deep oceans. Killing a Whale nets +2 [ICON_FOOD] Food in the nearest city.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_SMOKE_HELP"> 
+			<Text>
+				An out-of-control fire generates smoke.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_SMOKE_TEXT"> 
+			<Text>
+				Wildfire generates smoke spontaneously in forest and jungle tiles.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_TROPICAL_VEG_HELP"> 
+			<Text>
+				Early-successional tropical shrubland occurs in climates that are warm year-round, and is in general more biologically diverse than in other latitudes. Tropical vegetation that receives abundant rain the whole year round often becomes overgrown with trees and tangled vegetation. Ecologists recognize four phases of forest succession: (i) stand initiation, (ii) stem exclusion, (iii) understory reinitiation, and (iv) steady state. Tropical shrublands in warm, wet environments tend to experience intensified stand initiation and understory reinitiation phases.[NEWLINE][NEWLINE]Grants 10% defense bonus, grows into Jungle after 10 turns.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_WILDFIRE"> 
+			<Text>
+				[COLOR_WARNING_TEXT]Wildfire[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_WILDFIRE_HELP"> 
+			<Text>
+				An out-of-control fire consumes wide areas of vegetation.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_YOUNG_FOREST_HELP"> 
+			<Text>
+				An early-successional shrubland is a mix of native shrubs, sapling trees, and native herbaceous vegetation near intact forest and residual mature trees. The height and density of the shrubland vegetation is varied and patchy. Ecologists recognize four phases of forest succession: (i) stand initiation, (ii) stem exclusion, (iii) understory reinitiation, and (iv) steady state, or mature forest. Shrublands are young forests that have not yet reached later phases of forest development.[NEWLINE][NEWLINE]Grants 10% defense bonus, grows into Forest after 10 turns.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
@@ -47982,6 +48052,11 @@ Nebuchadnezzar II died in Babylon in 562 BC. He is remembered as a successful mi
 		<Replace Tag="TXT_KEY_CIV5_STOCKHOLM_TITLE"> 
 			<Text>
 				Stockholm
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_SUCCESSIONAL_VEGETATION"> 
+			<Text>
+				[COLOR_CITY_GREEN]Successional Vegetation[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_SUCEAVA_TEXT"> 
@@ -76004,6 +76079,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				neuter:no_article
 			</Gender>
 		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_SMOKE"> 
+			<Text>
+				Restricted Visibility
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_SOLOMONS_MINES"> 
 			<Text>
 				King Solomon's Mines
@@ -95537,6 +95617,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Brazilwood Camp
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_BURNT"> 
+			<Text>
+				Fire Scar
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_CAMP"> 
 			<Text>
 				Camp
@@ -96214,6 +96299,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				{TXT_KEY_IMPROVEMENT_SIHEYUAN_HELP}[NEWLINE][NEWLINE]The stately Siheyuan are a mainstay of Chinese architecture dating back to antiquity. The style is often referred to as a Chinese quadrangle, and is used from relatively dwellings and monasteries to the most grand palaces. The Forbidden City in Beijing is designed as an enormous Siheyuan. All siheyuan are positioned along a east-west axis, with the main entrance facing south. The universality of this plan allows sequential siheyuan to be arranged in long rows, creating sprawling suburbs in many of China's largest cities. The narrow alleyways between these rows of Siheyuan are known as hutongs in northern China, forming long market streets similar to middle-eastern bazaars. Recent changes in city planning and construction have resulted in many historic neighbourhoods being demolished, but there have been coordinated efforts to preserve some districts as a valuable piece of Chinese cultural identity.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_SMOKE"> 
+			<Text>
+				Smoke
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA"> 
 			<Text>
 				Hacienda
@@ -96279,6 +96369,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Village
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TROPICAL_VEG"> 
+			<Text>
+				Tropical Shrubland
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_TULOU"> 
 			<Text>
 				Tulou
@@ -96296,6 +96391,16 @@ The ship has weather'd every rack; the prize we sought is won."
 			<Gender>
 				neuter:an
 			</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_WILDFIRE"> 
+			<Text>
+				Wildfire
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_YOUNG_FOREST"> 
+			<Text>
+				Shrubland
+			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL"> 
 			<Text>
@@ -156132,6 +156237,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR:250:100:100:255]Armored Assault[ENDCOLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SMOKE"> 
+			<Text>
+				Smoke
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SMOKE_HELP"> 
+			<Text>
+				[COLOR_NEGATIVE_TEXT]Obstructed[ENDCOLOR] vision
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SNEAK_ATTACK"> 
 			<Text>
 				[COLOR:115:240:255:255]Sneak Attack[ENDCOLOR]
@@ -157605,6 +157720,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_WALKER_HELP"> 
 			<Text>
 				Unit [COLOR:255:230:85:255]ignores Terrain Cost on Snow[ENDCOLOR]. Barbarian promotion.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WILDFIRE"> 
+			<Text>
+				Wildfire
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WILDFIRE_HELP"> 
+			<Text>
+				[COLOR_NEGATIVE_TEXT]Obstructed[ENDCOLOR] vision, healing, defence, and flanking support
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE"> 
@@ -216460,7 +216585,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_STELE_HELP"> 
 			<Text>
-				[COLOR_CYAN]기술[ENDCOLOR]을 발견하면 [ICON_GOLDEN_AGE] 황금기 점수 10을 얻습니다. (시대에 따라 보정)
+				[COLOR_CYAN]기술[ENDCOLOR]을 발견하면 [ICON_GOLDEN_AGE] 황금기 점수 10을 얻습니다. [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_STELE_STRATEGY"> 
@@ -217863,6 +217988,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_REC"> 
 			<Text>
 				[ICON_GOLD] 골드와 [ICON_CULTURE] 문화가 증가합니다. [ICON_RES_BRAZILWOOD]{TXT_KEY_RESOURCE_BRAZILWOOD}이 생성됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BURNT"> 
+			<Text>
+				산불 진화
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BURNT_HELP"> 
+			<Text>
+				화재의 흉터가 남을 것입니다. 유닛의 체력이 1로 감소합니다. 일시적으로 [ICON_RESEARCH] 과학이 +1 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_CAMP"> 
@@ -241032,7 +241167,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_2HANDER_TEXT"> 
 			<Text>
-				Renaissance two-handed swords are monstrous weapons, longer and larger than even the medieval longsword, with a hilt of over a foot and a blade that measures nearly five feet in length, taller than some people. They are primarily in use during the early decades of the 16th century. These swords represent the final stage in the trend of increasing size that started in the 14th century. They can be used to fight against pike formations and cut off pike heads.
+				르네상스의 양손검은 중세의 장검보다 더 길고 큰 괴물 같은 무기로, 자루는 1피트가 넘고 칼날은 길이가 거의 5피트에 달해 사람 키보다 키가 큽니다. 이러한 기법은 주로 16세기 초반에 사용되었습니다. 이 검은 14세기부터 시작된 점점 더 커지는 추세의 마지막 단계를 보여줍니다. 파이크 대형에 맞서 싸우고 파이크병의 머리를 자르는 데 사용할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_ADEJE_TEXT"> 
@@ -243294,6 +243429,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				1800년대 후반에 동아프리카 무역상의 아들인 음시리는 분케야 마을을 세우고 상업 제국을 건설했다. 음시리의 바예케 부족은 콩고 분지 동쪽의 광대한 지역을 지배하면서 해안에 살던 아라비아 상인들에게 상아, 구리, 철광석, 소금, 노예를 주고 총과 탄약을 받아 왕국을 유지했다. 영국이 이 지역에 관심을 보이자 이를 우려한 벨기에 왕 레오폴드 3세는 원정대를 세 번 파견하여 음시리의 항복을 받아내려 했다. 잔지바르에서 출발한 세 번째 원정대는 1891년에 바예케 마을을 압박하여 분케야에서 철수하도록 했으며, 음시리 본인은 그 직후에 살해당했다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_BURN_FOREST"> 
+			<Text>
+				[COLOR_WARNING_TEXT]산림전용[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_BYBLOS_TEXT"> 
 			<Text>
 				고고학 발굴 결과 지중해 연안에 있는 비블로스 유적에 신석기 시대부터 사람이 살았다는 흔적을 찾았다. 기원전 4천 년 경, 이 거대한 주거지 사람들은 낚시와 내륙에서 짓는 농경으로 자급자족하였다. 이후 천 년간 엄청난 양의 삼나무를 이집트에 수출했는데, 삼나무는 배와 부두를 짓는 데 없어서는 안 될 목재였고, 삼나무 기름은 미라를 만드는 데 쓰였다. 기원전 2150년에 아모리인이 쳐들어와 도시를 불태웠고, 그 뒤로 2백 년쯤 버려져 있다가 페니키아인이 다시 항구를 세우고 게발이라 명명했다. 바로 이 마을에서 이전에 사용하던 복잡한 설형문자를 대신하여, 인류 문명에서 가장 중요한 업적인 22글자의 알파벳을 만들었다.[NEWLINE][NEWLINE]상업 중심지였던 주베일은 아시리아, 바빌론, 아케메네스, 페르시아 등 연이은 정복자 덕분에 더욱 부유해졌다. 페르시아 다음에 알렉산더 대왕에게 정복당하면서 비블로스는 그리스 문명에 감화된 도시로 번영했으며, 시민은 그리스 말과 종교, 의복을 받아들였다. 비블로스는 삼나무, 곡식과 과일을 포함하여 파피루스의 생산지로 유명해졌으며, 파피루스의 그리스어인 비블로스라는 이름이 나왔다. 로마 시대에는 상업적 위치를 잃어버렸지만, 종교적인 역할은 더 커져서 다양한 종교들의 성지로 가려는 순례자 무리가 통과했다.[NEWLINE][NEWLINE]395년에는 비잔틴 제국에 귀속되었지만, 제국 영토 끝자락의 항구에 불과했다. 그러다가 637년에 이슬람이 침략했다. 지금은 주베일로 알려진 비블로스를 이슬람이 지배하면서 부와 영향력이 점점 줄어들다 결국에는 완전히 버려지게 되었다. 프랑스 역사가 에르네스트 르낭이 1860년대에 발굴할 때까지 비블로스는 망각 속에 묻혀 있었다. 비블로스가 다시 해양 세력으로 떠오를 날은 다시 오지 않겠지만, 모래사장, 온화한 기후, 로마, 이슬람, 십자군 시대가 남긴 풍부한 유적이 관광객을 끌어모으는 유명한 휴양지로 떠오르고 있다.
@@ -245464,6 +245604,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				야전포는 대포보다 강한 공성 능력을 가지지만, 충분히 멀리 볼 수 있는 능력이 부족합니다. 야전포로 산업 시대의 군대를 지원하고, 적이 근처에 오지 못하도록 조심하십시오.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_FIRE_PILLAGE"> 
+			<Text>
+				[ICON_RAZING]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_FLORENCE_TEXT"> 
 			<Text>
 				피렌체(영어로 플로렌스)는 북부 이탈리아의 아르노 강에 위치해 있는 유럽에서 가장 재미있고 아름다운 도시 중 하나입니다. 기원전 59년, 율리우스 카이사르는 로마의 북부대로인 비아 카시아가 아르노 강을 건너는 지점에 전략적 필요성에 의해 퇴역 군인을 위한 정착지인 피렌체를 건설했습니다. 전략적 요충지로 건설되었기에 도시의 형태는 군부대와 비슷하게 격자형으로 계획되었으며, 그 위치 덕에 로마와 북부와의 무역을 중계하면서 크게 발전하여 300년 경 투스카니 지역의 중심지가 되었습니다. 그 후로 수백년간 동고트 왕국과 비잔틴 제국의 공격을 받으며 도시의 주인이 수차례 뒤바뀌다가 774년 프랑크 왕국의 카롤루스 대제의 손에 넘어간 이후 외세의 침입을 받지 않았습니다.[NEWLINE][NEWLINE]그 후 수세기 동안 피렌제는 다시금 본래의 부와 명성을 얻으며 유럽 최고의 부유한 도시 국가로 성장해, 1252년에는 자체 화폐인 피렌체 금화를 유통하기도 했습니다. 피렌체 금화는 유럽과 지중해 지역 전역에 유통되었고 피렌체의 상인과 은행가들은 순식간에 세계 곳곳으로 퍼져 나갔습니다.[NEWLINE][NEWLINE]르네상스 시대 동안 피렌체는 메디치 가와 같은 극히 부유하며 무자비한 가문의 지배를 받았습니다. 피렌체 귀족 간에는 치열한 권력 다툼 따위가 없었기에 이들은 예술가의 든든한 후원자가 되었습니다. 로렌조 메디치 혼자서만 미켈란젤로, 보티첼리, 레오나르도 다빈치 (유명한 3명의 이름만 댄다면) 등의 예술가를 후원했습니다. 15세기 중엽 메디치 가는 투스카니의 대공 작위를 계승해 피렌체와 투스카니 지역을 수세기 동안 다스렸습니다. 1737년 피렌체는 오스트리아의 영토로 편입했습니다가 1859년 샤르데냐-피에몬테 왕국이 오스트리아와 전쟁을 벌이며 피렌체를 병합했습니다. 샤르데냐 왕국은 1861년 이탈리아를 통일하고 이탈리아 왕국이 되었습니다.[NEWLINE][NEWLINE]현재 피렌체는 50만 주민이 살고 있는 관광 명소로 로마, 중세, 르네상스의 역사를 간직한 채 여전히 유럽에서, 아니 전세계에서 가장 아름답고 그리움을 자아내는 장소 중 하나로 남아 있습니다.
@@ -247395,6 +247540,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				해양 시설
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_BURNT_HELP"> 
+			<Text>
+				산불로 인해 초목이 타버린 후 눈에 띄게 검게 변한 땅 표면입니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_BURNT_TEXT"> 
+			<Text>
+				진화된 산불은 숲과 정글 타일에 타버린 초목을 남깁니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_FISHWHALING_HELP"> 
 			<Text>
 				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
@@ -247405,9 +247560,49 @@ The ship has weather'd every rack; the prize we sought is won."
 				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_GROW_FOREST"> 
+			<Text>
+				[COLOR_CITY_GREEN]정상 상태 숲[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_GROW_JUNGLE"> 
+			<Text>
+				[COLOR_CITY_GREEN]정상 상태 정글[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_MWHALE_HELP"> 
 			<Text>
 				고래는 해안 수역 타일에서 산란하지만 깊은 대양으로 이동할 수 있는 수생 포유류입니다. 고래를 죽이면 가장 가까운 도시의 식량이 +2 [ICON_FOOD] 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_SMOKE_HELP"> 
+			<Text>
+				통제 불능의 화재는 연기를 발생시킵니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_SMOKE_TEXT"> 
+			<Text>
+				산불은 숲과 정글 타일에서 자연스럽게 연기를 발생시킵니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_TROPICAL_VEG_HELP"> 
+			<Text>
+				초기-천이 열대 관목지는 일년 내내 따뜻한 기후에서 발생하며 일반적으로 다른 위도에 비해 생물학적으로 더 다양합니다. 일년 내내 풍부한 비가 내리는 곳의 열대 식물은 종종 나무가 무성하고 얽힌 식물이 자라는 경우가 많습니다. 생태학자들은 산림 천이 단계를 다음과 같이 4단계로 봅니다: (i) 입목 형성 시작, (ii) 줄기 배제, (iii) 하층 재형성, 그리고 (iv) 정상 상태입니다.따뜻하고 습한 환경의 열대 관목지에서는 수목 군락 시작과 하층 재형성 단계가 강화되는 경향이 있습니다.[NEWLINE][NEWLINE]방어력 보너스가 10% 증가하고, 10턴 후 정글로 성장합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_WILDFIRE"> 
+			<Text>
+				[COLOR_WARNING_TEXT]산불[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_WILDFIRE_HELP"> 
+			<Text>
+				통제 불능의 화재로 넓은 지역의 초목이 소실됩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENT_YOUNG_FOREST_HELP"> 
+			<Text>
+				초기 천이 관목지는 무손상 산림과 남아 있는 성숙한 나무 근처에 토종 관목, 묘목, 토종 초본 식물이 섞인 곳입니다. 관목지 식생의 높이와 밀도는 다양하고 불규칙합니다. 생태학자들은 산림 천이의 단계를 다음과 같이 4단계로 봅니다: (i) 입목 형성 시작, (ii) 줄기 배제, (iii) 하층 재형성, 그리고 (iv) 정상 상태, 혹은 성숙한 숲입니다. 관목지는 산림 발달의 후기 단계에 아직 도달하지 않은 어린 숲입니다.[NEWLINE][NEWLINE]방어력 보너스가 10% 증가하고, 10턴 후 숲으로 성장합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_FACTOID_HEADING"> 
@@ -252998,7 +253193,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_SPAIN_TERCIO_TEXT"> 
 			<Text>
-				창총진은 15세기 후반과 16세기 초반에 처음 등장한 전술적 대형을 말하며, 17세기 후반에 총검이 개발될 때까지 사용되었습니다. 이러한 유형의 부대는 파이크로 무장한 군인과 화승총 그리고/또는 머스킷총으로 무장한 군인을 결합했습니다. 칼, 도끼, 석궁과 같은 다른 무기도 가끔 사용되었습니다. 이 대형은 원래 신성 로마 제국 보병대(란츠크네히트)와 스페인 보병대(테르시오)에 의해 개발되었습니다.[NEWLINE][NEWLINE]이 전술은 종종 4m가 넘는 강화된 장창인 파이크를 이용한 통제에 달려 있습니다. 방어적으로는 뛰어나지만, 다루기 힘들어서 기동성이 떨어지기 쉬웠고, 오직 잘 훈련된 부대만이 효과적인 공격 방식으로 사용할 수 있었습니다. 이러한 약점을 극복하기 위해 파이크병은 매우 원시적인 (매치락) 화기인 화승총과 짝을 이루었습니다. 창총진은 매우 성공적이어서 당시의 많은 전투는 움직일 수 없는 많은 수의 병사들이 서로를 밀치고 치명적인 압도로 이어지는 "파이크 밀기(Push of Pike)"로 알려졌으며, 파이크병의 무장을 해제하기 위해 특별히 거대한 대검이 제작되었습니다.
+				창총진은 15세기 후반과 16세기 초반에 처음 등장한 전술적 대형을 말하며, 17세기 후반에 총검이 개발될 때까지 사용되었습니다. 이러한 유형의 부대는 파이크로 무장한 군인과 화승총 그리고/또는 머스킷총으로 무장한 군인을 결합했습니다. 칼, 도끼, 석궁과 같은 다른 무기도 가끔 사용되었습니다. 이 대형은 원래 신성 로마 제국 보병대(란츠크네히트)와 스페인 보병대(테르시오)에 의해 개발되었습니다.[NEWLINE][NEWLINE]이 전술은 종종 4m가 넘는 강화된 장창인 파이크를 이용한 통제에 달려 있습니다. 방어적으로는 뛰어나지만, 다루기 힘들어서 기동성이 떨어지기 쉬웠고, 오직 잘 훈련된 부대만이 효과적인 공격 방식으로 사용할 수 있었습니다. 이러한 약점을 극복하기 위해 장창병은 매우 원시적인 (매치락) 화기인 화승총과 짝을 이루었습니다. 창총진은 매우 성공적이어서 당시의 많은 전투는 움직일 수 없는 많은 수의 병사들이 서로를 밀치고 치명적인 압도로 이어지는 "파이크 밀기(Push of Pike)"로 알려졌으며, 장창병의 무장을 해제하기 위해 특별히 거대한 대검이 제작되었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_SPAIN_TEXT_1"> 
@@ -253184,6 +253379,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_STOCKHOLM_TITLE"> 
 			<Text>
 				스톡홀름
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_SUCCESSIONAL_VEGETATION"> 
+			<Text>
+				[COLOR_CITY_GREEN]연속적인 초목[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_SUCEAVA_TEXT"> 
@@ -257904,7 +258104,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_LANDSKNECHT_TEXT"> 
 			<Text>
-				Doppelsoeldner or "double-pay men" were part of the pike-and-shot era of warfare in Europe who volunteered to fight in the front line, in exchange for double payment. Roughly one-in-four men in a composition were front line soldiers who formed wings in front of the pikemen, who themselves defended to crossbowmen and/or arquebusiers. Although aimed with light ranged weapons, the main tool of the doppelsoeldner was the Zweihaender, a gigantic two-handed sword used to decapitate enemy pikes, and their wielders!
+				도펠죌트너 또는 "2배 급료 병사"는 유럽 전쟁의 창총진 시대에 등장해 자원하여 최전선에서 싸우고 두 배의 급여를 받는 사람들을 말합니다. 부대의 약 4분의 1은 파이크병 앞에서 날개를 형성한 최전선 군인이었고, 파이크병은 석궁병 및/또는 화승총병을 방어했습니다. 도펠죌트너의 주된 무기는 가벼운 원거리 무기였지만, 적의 창과 그 휘두르는 자의 머리를 자르는 데 사용된 것은 거대한 양손검인 츠바이헨더였습니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_LONGBOWMAN_HEADING"> 
@@ -282366,6 +282566,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				neuter:no_article
 			</Gender>
 		</Replace>
+		<Replace Tag="TXT_KEY_FEATURE_SMOKE"> 
+			<Text>
+				제한된 시야
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_FEATURE_SOLOMONS_MINES"> 
 			<Text>
 				솔로몬 왕의 광산
@@ -303067,6 +303272,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				브라질 소방목 벌목장
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_BURNT"> 
+			<Text>
+				화재 반흔
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_CAMP"> 
 			<Text>
 				야영지
@@ -303765,6 +303975,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				{TXT_KEY_IMPROVEMENT_SIHEYUAN_HELP}[NEWLINE][NEWLINE]위풍당당한 쓰허위안(사합원)은 고대로 거슬러 올라가는 중국 건축의 기둥입니다. 이 양식은 종종 중국의 사각형으로 불리며, 상대적으로 넓은 주거지와 수도원에서 부터 가장 웅장한 궁궐까지 사용됩니다. 베이징의 자금성은 거대한 쓰허위안으로 디자인되었습니다. 모든 스허위안은 동서축을 따라 위치해 있으며, 정문은 남쪽을 향하고 있습니다. 이 계획의 보편성은 순차적인 쓰허위안을 긴 줄로 배열할 수 있게 하여 중국의 많은 대도시에 광범위한 교외를 만듭니다. 쓰허위안 사이의 좁은 골목길은 중국 북부에서 후통으로 알려져 있으며, 중동 바자르처럼 긴 시장 거리를 형성합니다. 최근 도시 계획과 건설의 변화로 인해 많은 역사적인 지역들이 철거되었지만, 일부 지역을 중국 문화적 정체성의 귀중한 부분으로 보존하려는 협력적인 노력이 있었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_SMOKE"> 
+			<Text>
+				연기
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA"> 
 			<Text>
 				하시엔다
@@ -303833,6 +304048,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				2
 			</Plurality>
 		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TROPICAL_VEG"> 
+			<Text>
+				열대 관목지
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_TULOU"> 
 			<Text>
 				토루
@@ -303846,6 +304066,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_WELL"> 
 			<Text>
 				유정
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_WILDFIRE"> 
+			<Text>
+				산불
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_YOUNG_FOREST"> 
+			<Text>
+				관목지
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL"> 
@@ -348733,7 +348963,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_FOUND_NATURAL_WONDER"> 
 			<Text>
-				자연 불가사의를 발견함
+				자연경관을 발견함
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_FOUND_RELIGION"> 
@@ -357060,7 +357290,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]찬란한 순간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.
+				[COLOR_POSITIVE_TEXT]최상의 시간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_TEXT"> 
@@ -360895,7 +361125,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_2HANDER_HELP"> 
 			<Text>
-				창병, 파이크병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드로 인해 손실됨[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
+				창병, 장창병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드로 인해 손실됨[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]유닛 업그레이드 후 손실됩니다.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ACCURACY_1"> 
@@ -365072,7 +365302,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE"> 
 			<Text>
-				Javelin Volley
+				투창
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE_HELP"> 
@@ -366002,6 +366232,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_SMALL_CITY_PENALTY"> 
 			<Text>
 				[COLOR:250:100:100:255]장갑 돌격[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SMOKE"> 
+			<Text>
+				연기
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SMOKE_HELP"> 
+			<Text>
+				시야 [COLOR_NEGATIVE_TEXT]차단됨[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SNEAK_ATTACK"> 
@@ -367555,6 +367795,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_WHITE_WALKER_HELP"> 
 			<Text>
 				유닛이 [COLOR:255:230:85:255]설원에서 지형 비용을 무시합니다[ENDCOLOR]. 야만인 진급.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WILDFIRE"> 
+			<Text>
+				산불
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WILDFIRE_HELP"> 
+			<Text>
+				시야, 회복, 방어 및 측면 지원이 [COLOR_NEGATIVE_TEXT]차단됨[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE"> 
@@ -394035,7 +394285,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_TERROR"> 
 			<Text>
-				스커미셔 유닛이 한 번 더 [ICON_WAR] 공격할 기회를 가집니다. [ICON_RES_HORSE] 말, 마구간, Agribusinesses에서 [ICON_FOOD] 식량 +1, [ICON_CULTURE] 문화 +1, [ICON_CULTURE_LOCAL] 국경 성장 점수 +1, [ICON_GREAT_GENERAL] 위대한 장군 점수 +1 증가합니다.
+				스커미셔 유닛이 한 번 더 [ICON_WAR] 공격할 기회를 가집니다. [ICON_RES_HORSE] 말, 마구간, 기업형 농장에서 [ICON_FOOD] 식량 +1, [ICON_CULTURE] 문화 +1, [ICON_CULTURE_LOCAL] 국경 성장 점수 +1, [ICON_GREAT_GENERAL] 위대한 장군 점수 +1 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_TERROR_SHORT"> 
@@ -395618,12 +395868,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_2HANDER"> 
 			<Text>
-				Greatswordsman
+				양손 검병
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_2HANDER_STRATEGY"> 
 			<Text>
-				The Greatswordsman is much stronger than the Longswordsman, and gains a devastating combat bonus against Melee Units that start with Formation I.
+				양손 검병은 장검병보다 훨씬 강력하며, 대형 I 승급을 가지고 시작하는 근접 유닛에 대해 파괴적인 전투 보너스를 얻습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ADVANCED_MEC_INFANTRY"> 
@@ -395950,7 +396200,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_B52_STRATEGY"> 
 			<Text>
-				B-52 폭격기는 자유 이념의 고유한 유닛으로, 결코 쓸모없어지지 않을 것입니다. "찬란한 순간" 교리를 해제해야 합니다. 폭격기와 유사하지만, 적의 대공포와 전투기가 조준하기 더 어렵습니다. B-52는 적 도시를 공격할 때 보너스를 받습니다. 전략 폭격기와는 달리 사거리는 10입니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+				B-52 폭격기는 자유 이념의 고유한 유닛으로, 결코 쓸모없어지지 않을 것입니다. "최상의 시간" 교리를 해제해야 합니다. 폭격기와 유사하지만, 적의 대공포와 전투기가 조준하기 더 어렵습니다. B-52는 적 도시를 공격할 때 보너스를 받습니다. 전략 폭격기와는 달리 사거리는 10입니다. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BABYLON_BOWMAN"> 
@@ -396707,7 +396957,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EE_2HANDER_PEDIA"> 
 			<Text>
-				르네상스 시대에 이탈리아와 스페인에서 활동했던 양손 검병입니다. 테르시오 대형의 측면을 보호하는 임무를 맡은 보조 부대로서, 그들은 레콩키스타가 끝나고 이탈리아 전쟁이 시작될 때까지 매우 활발하게 활동했습니다.16세기 중반, 테르시오에서 머스킷병과 파이크 창병의 위치가 모호하여 전투가 머스킷병의 집중 공격과 파이크병의 견고한 방어로 완료되었기 때문에, 머스킷병과 파이크 창병에게 검술 교육을 하는 것이 더 낫다는 이유로 이들을 훈련시켰습니다. 이들은 도태되었습니다. 그러나 여전히 비정규전에서 사용되었으며, 유럽처럼 테르시오 방진을 짜고 엮는 것이 불가능했던 아메리카 정복 과정에서 핵심적인 역할을 했습니다.실제로 화약의 공급과 수요가 제한된 상황에서 총기는 심리적인 충격은 컸지만, 실제로는 그 효과가 크게 감소했습니다. 반면, 스페인 검찰관들의 톨레도 강철 검은 당시 아메리카 원주민의 기술로는 극복하기 어려웠습니다. 당시 원주민들은 칼을 빼앗아도 어떻게 다루어야 할지 몰라 창끝에 묶어 창처럼 사용했습니다.
+				르네상스 시대에 이탈리아와 스페인에서 활동했던 양손 검병입니다. 테르시오 대형의 측면을 보호하는 임무를 맡은 보조 부대로서, 그들은 레콩키스타가 끝나고 이탈리아 전쟁이 시작될 때까지 매우 활발하게 활동했습니다. 16세기 중반, 테르시오에서 머스킷병과 장창병의 위치가 모호하여 전투가 머스킷병의 집중 공격과 장창병의 견고한 방어로 완료되었기 때문에, 머스킷병과 장창병에게 검술 교육을 하는 것이 더 낫다는 이유로 이들을 훈련시켰습니다. 이들은 도태되었습니다. 그러나 여전히 비정규전에서 사용되었으며, 유럽처럼 테르시오 방진을 짜고 엮는 것이 불가능했던 아메리카 정복 과정에서 핵심적인 역할을 했습니다.실제로 화약의 공급과 수요가 제한된 상황에서 총기는 심리적인 충격은 컸지만, 실제로는 그 효과가 크게 감소했습니다. 반면, 스페인 검찰관들의 톨레도 강철 검은 당시 아메리카 원주민의 기술로는 극복하기 어려웠습니다. 당시 원주민들은 칼을 빼앗아도 어떻게 다루어야 할지 몰라 창끝에 묶어 창처럼 사용했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EE_2HANDER_STRATEGY"> 
@@ -397198,7 +397448,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY"> 
 			<Text>
-				The {TXT_KEY_UNIT_FRENCH_MUSKETEER} is a French Unique Unit, replacing the {TXT_KEY_UNIT_2HANDER}. It is more powerful, and has different promotions which allow it to move faster and ignore Zone of Control.
+				{TXT_KEY_UNIT_FRENCH_MUSKETEER}은 프랑스 유닛으로 {TXT_KEY_UNIT_2HANDER}을 대체 합니다. 더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FRIGATE"> 
@@ -398556,7 +398806,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_GERMAN_LANDSKNECHT"> 
 			<Text>
-				Doppelsoeldner
+				도펠죌트너
 			</Text>
 			<Plurality>
 				2
@@ -398564,7 +398814,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_GERMAN_LANDSKNECHT_STRATEGY"> 
 			<Text>
-				The {TXT_KEY_UNIT_GERMAN_LANDSKNECHT} is the German unique unit, replacing the {TXT_KEY_UNIT_2HANDER}. It has a combat bonus against full health units, and a increased bonus against mounted units. It is also slightly cheaper to train or purchase, and gain full XP and can move immediately when bought.[NEWLINE][NEWLINE]Use their fast deployment and their bonus against full health units to surprise your opponents in the first turns of your wars and break their lines quickly. Its cheap cost also makes it an excellent gift. Buy several units at once, walk them over to a nearby City-State, and reap the benefits of both short- and long-term influence.
+				{TXT_KEY_UNIT_GERMAN_LANDSKNECHT}는 {TXT_KEY_UNIT_2HANDER}을 대체하는 독일의 고유 유닛입니다. 체력이 가득 찬 유닛에 대한 전투 보너스가 있으며, 승선한 유닛에 대한 보너스가 더 큽니다. 훈련이나 구매 비용이 약간 저렴하고, 구매하면 전체 경험치를 얻고 즉시 이동할 수 있습니다.[NEWLINE][NEWLINE]빠른 배치와 체력이 충분한 유닛에 대한 보너스를 활용해 전쟁의 첫 턴에서 적을 놀라게 하고 적의 전선을 빠르게 무너뜨리세요. 가격이 저렴하기 때문에 선물로도 좋습니다. 한 번에 여러 유닛을 구매하고, 근처 도시 국가로 가져가서 단기 및 장기적으로 영향력의 이점을 얻으세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_GERMAN_PANZER"> 
@@ -398819,7 +399069,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_2HANDER"> 
 			<Text>
-				Early Renaissance Era Melee Unit. Additional +33% [ICON_STRENGTH] Strength [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] VS Spearmen, {TXT_KEY_UNIT_PIKEMAN}, Free Companies, and {TXT_KEY_UNIT_SPANISH_TERCIO}.
+				초기 르네상스 시대의 근접 유닛입니다. 창병, {TXT_KEY_UNIT_PIKEMAN}, 자유 용병대, {TXT_KEY_UNIT_SPANISH_TERCIO}에 [COLOR_POSITIVE_TEXT]공격할 때[ENDCOLOR] 추가로 [ICON_STRENGTH] 힘이 +33% 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_ADVANCED_MEC_INFANTRY"> 
@@ -398889,7 +399139,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_B52"> 
 			<Text>
-				적 유닛과 도시에 상공에서 죽음을 퍼붓는 항공 유닛입니다. 이 유닛은 요격을 회피할 확률이 있으며, 전략 폭격기보다 도시에 더 큰 피해를 입힙니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_MAGENTA]자유[ENDCOLOR] 이념을 따르는 문명에서만 사용 가능합니다. 해제하려면 [COLOR_MAGENTA]찬란한 순간[ENDCOLOR] 교리가 필요합니다.
+				적 유닛과 도시에 상공에서 죽음을 퍼붓는 항공 유닛입니다. 이 유닛은 요격을 회피할 확률이 있으며, 전략 폭격기보다 도시에 더 큰 피해를 입힙니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_MAGENTA]자유[ENDCOLOR] 이념을 따르는 문명에서만 사용 가능합니다. 해제하려면 [COLOR_MAGENTA]최상의 시간[ENDCOLOR] 교리가 필요합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BALLISTA"> 
@@ -399259,7 +399509,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LANDSKNECHT"> 
 			<Text>
-				Unique German {TXT_KEY_UNIT_2HANDER} that specializes as mercenaries, having no experience penalty or cooldown while being able to move immediately when purchased. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR] and [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR].
+				용병으로 특화된 독일 고유의 {TXT_KEY_UNIT_2HANDER}으로 구매 즉시 이동할 수 있으며 경험치 패널티나 재사용 대기시간이 없습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR] 승급을 가지고 시작합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LONGBOWMAN"> 
@@ -399344,7 +399594,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MUSKETEER"> 
 			<Text>
-				Unique French {TXT_KEY_UNIT_2HANDER} that excels at delivering a fast attack into the enemy. Instead of the [COLOR_POSITIVE_TEXT]Two Hander[ENDCOLOR] Promotion, it can move faster and ignore Zone of Control.
+				적에게 빠른 공격을 가하는 데 탁월한 프랑스 고유 {TXT_KEY_UNIT_2HANDER}입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_2HANDER}[ENDCOLOR] 승급 대신, 더 빠르게 움직이고 통제 구역(ZOC)를 무시할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MUSKETMAN"> 
@@ -399619,7 +399869,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_ZULU_IMPI"> 
 			<Text>
-				Unique Zulu {TXT_KEY_UNIT_SPANISH_TERCIO} that excels at defeating Gunpowder Units. Starts with the Javelin Volley Promotion. Also starts with Cover I.
+				화약 유닛을 물리치는 데 탁월한 줄루족의 고유한 {TXT_KEY_UNIT_SPANISH_TERCIO}입니다. 투창 승급을 가지고 시작합니다. 또한, 엄폐 I도 가지고 시작합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HITTITE_WARCHARIOT"> 
@@ -401836,7 +402086,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ZULU_IMPI_STRATEGY"> 
 			<Text>
-				The {TXT_KEY_UNIT_ZULU_IMPI} is a Zulu Unique Unit, replacing the {TXT_KEY_UNIT_SPANISH_TERCIO}. Besides being much stronger and more expensive to build than the {TXT_KEY_UNIT_PIKEMAN}, it takes notably less compared to other contemporary units. Its shield gives it Cover I, reducing damage from ranged attacks, and before engaging in an melee attack, it performs a spear throw attack that weakens the defender before melee combat ensues. It also has a [ICON_STRENGTH] Combat Strength bonus when fighting against Gunpowder Units, making it a deadly unit well into the Industrial Era.
+				{TXT_KEY_UNIT_ZULU_IMPI}는 {TXT_KEY_UNIT_SPANISH_TERCIO}를 대체하는 줄루족의 고유 유닛입니다. {TXT_KEY_UNIT_PIKEMAN}보다 훨씬 더 튼튼하고 제작 비용도 더 많이 들지만, 동시대의 다른 유닛과 비교하면 눈에 띄게 비용이 적게 듭니다. 방패에는 엄폐 I이 부여되어 원거리 공격의 피해를 줄여주고, 근접 공격을 하기 전에는 창 던지기 공격을 하여 근접 전투가 시작되기 전에 방어측을 약화시킵니다. 또한 화약 유닛과 싸울 때 [ICON_STRENGTH] 전투력 보너스도 있어 산업 시대에도 치명적인 유닛입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ZULU_INDABA"> 

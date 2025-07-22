@@ -54,7 +54,7 @@
 
                 <!-- Draw Priority Construction Plan Button -->
                 <Box Anchor="L,C" Color="255.255.255.0" Offset="0,15" Size="200,24">
-                    <GridButton Anchor="C,C" Style="SmallButton" Size="200,32" Offset="0,0" StateOffsetIncrement="0,0" ID="DRCPB" String="TXT_KEY_RP_DRAW_PRIORITY_CONSTRUCTION_PLAN" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ToolTip="TXT_KEY_RP_TT_DRAW_PRIORITY_CONSTRUCTION_PLAN">
+                    <GridButton Anchor="C,C" Style="SmallButton" Size="200,32" Offset="0,0" StateOffsetIncrement="0,0" ID="DRCPB" String="TXT_KEY_RP_DRAW_PRIORITY_CONSTRUCTION_PLAN" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ToolTip="TXT_KEY_RP_TT_DRAW_PRIORITY_CONSTRUCTION_PLAN">
                     </GridButton>
                 </Box>
 

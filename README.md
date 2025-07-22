@@ -81,6 +81,10 @@ More Wonder와는 별개의 모드로 함께 사용 가능한 불가사의 추�
 (6) Future Age for VP INT (AI)
 시대가 미래로 갈수록 문명 5에서도 VP에서도 다소 부실하다는 평이 많은데 이를 보완해주는 여러 다른 게임의 지적재산권이 활용된 미래 시대를 추가해주는 모드입니다. 이 또한 [CAYM님의 미래 시대 한국어 모드](https://cafe.naver.com/civilization4/289556) 를 기반으로 번역했으며 구글 Gemini Pro 2.5 AI를 학습시켜 번역을 했습니다. 단, 미래 모드는 CAYM님이 수정한 버전이 아닌 원본 모드를 그대로 사용했습니다.  
 
+[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
+종교 승리를 추가해주는 모드입니다.  
+※ 미래 시대 모드와 호환되지 않는다는 보고가 있습니다.  
+
 [(overhaul) Enhanced Air Warfare 4VP (v 1.9)](https://forums.civfanatics.com/threads/enhanced-air-warfare-4vp.656114/)  
 (overhaul) Enhanced Air Warfare 4VP INT  
 공군 유닛을 추가해주는 모드입니다. 두 가지 번역이 존재하는데 하나는 [어느 유동닉님이 그림판 그림으로 그린 파일로 제공](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275066) 했고, 다른 하나는 [CAYM님의 번역본](https://cafe.naver.com/civilization4/289556) 이 존재합니다. 하지만, 이번 번역은 CAYM님 번역본을 참조하되 사실상 대부분을 직접 새로 번역했습니다. 공군 모드 또한 CAYM님의 수정본이 아닌 원본을 사용했습니다.  
@@ -96,6 +100,9 @@ More Wonder와는 별개의 모드로 함께 사용 가능한 불가사의 추�
 [(overhaul) Unique City States for VP](https://forums.civfanatics.com/threads/unique-city-states-adan_eslavo-expansion.686269/)  
 (overhaul) Unique City States for VP INT (AI)  
 고유한 성격을 가진 도시 국가를 추가해주는 모드입니다. hyuckkim님의 깃허브에서 받은 한국어 모드 정보에 따르면 molang이라는 분이 번역을 해주셨는데 안타깝게도 일부 번역이 덜 된 부분이 있는 바람에 이 분 모드를 기반으로 구글 Gemini Pro 2.5 AI가 학습해 번역하였습니다.  
+
+[(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
+유닛의 비율과 배치를 현실적으로 바꿔주는 모드입니다.  
 
 [(text) Promotion Overhaul for VP](https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/)  
 (text) Promotion Overhaul for VP INT (AI)  
@@ -179,6 +186,9 @@ Recon Pay (Xtra5) Horse Thieves (v 1) INT
 [Recon Pay (xtra6) Exploration Specialization (v 1)](https://forums.civfanatics.com/threads/recon-pay-terrain-cost-all-you-can-move-buffet-edition.685224/)  
 정찰 유닛이 아닌 유닛이 새로운 지형을 발견하면 그 유닛의 차례가 끝납니다.  
 
+[TreeSuccession (v 44)](https://forums.civfanatics.com/threads/treesuccession.626302/)  
+숲과 정글의 성장과 산불 등으로 나무를 보다 현실적으로 만들어주는 모드입니다.  
+
 [Vox Populi's Bare Necessities (v 12)](https://forums.civfanatics.com/threads/bare-necessities.645157/)  
 Vox Populi's Bare Necessities (v 12) INT  
 잡다하게 많은 것들을 추가해주는 모드로 [ㅇㅇ(周年)님의 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=266786) 을 기반으로 최신 버전에 맞게 수정했습니다.  
@@ -192,12 +202,13 @@ World Congress Reformation (v 12) INT
 세계 의회 안건을 좀 더 늘려 개선해주는 모드로 [ㅇㅇ(周年)님의 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=266788) 을 기반으로 최신 버전에 맞게 수정했습니다.  
 
 ### 번역은 완료되었으나 포함되지 않은 모드-모드:  
+[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
+종교 승리를 추가해주는 모드입니다.  
+※ 모드팩에서 게임 진행이 불가능한 문제가 있어 모드팩에서 제외됩니다.  
+
 [(ui) List Enhancements for VP](https://forums.civfanatics.com/threads/list-enhancements-for-vp.638546/)  
 도시 화면의 유닛 목록을 개선시켜주는 모드입니다.  
 ※ 모드팩 한정으로 UI가 망가져 플레이에 불편을 주기에 모드팩에서 제외됩니다.  
-
-[(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
-유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다. 그러나 경우에 따라 유닛이 바다 위에 떠 있어 보이거나 가시성이 떨어지는 등의 문제가 발생합니다.  
 
 [Gedemon's YnAEMP](https://steamcommunity.com/sharedfiles/filedetails/?id=1623957266)  
 실제 세계의 시작 위치와 사용자 정의 옵션이 포함된 지구 지도 모드입니다.  
@@ -221,10 +232,6 @@ Recon Pay (Xtra2) Free ZoC (v 3) INT
 [(8) Events and Decisions (CBO) (v 14)](https://forums.civfanatics.com/threads/cbp-events-and-decisions-compatibility.562935/post-16644437)  
 도덕적 가치관에 따른 결정과 정착 이벤트를 추가해주는 모드입니다.  
 
-[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
-종교 승리를 추가해주는 모드입니다.  
-※ 미래 시대 모드와 호환되지 않는다는 보고가 있습니다.  
-
 [(n) Semper Fidelis](https://forums.civfanatics.com/threads/semper-fidelis-ideologies-expansion-pack.693449/)  
 새로운 3개의 이념을 추가해주는 모드입니다.  
 
@@ -236,15 +243,12 @@ Recon Pay (Xtra2) Free ZoC (v 3) INT
 VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
 ※ 최신 VP와 호환되지 않는다는 보고가 있습니다.  
 
-[TreeSuccession (v 44)](https://forums.civfanatics.com/threads/treesuccession.626302/)  
-숲과 정글의 성장과 산불 등으로 나무를 보다 현실적으로 만들어주는 모드입니다.  
-
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [City States Leaders II (compatible) (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II (compatible) (v 7) INT  
+[City States Leaders II (compatible) (v 7) INT]  
 [City States Leaders II (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 [City States Leaders II CS Mods art pack (v 1)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II INT  
+[City States Leaders II INT]  
 도시 국가에 지도자 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
 
 [Reworked Top Panel (v 5)](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  

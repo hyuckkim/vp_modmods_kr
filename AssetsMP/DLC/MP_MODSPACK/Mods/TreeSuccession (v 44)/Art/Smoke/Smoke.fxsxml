@@ -1,0 +1,8 @@
+<Asset>
+  <Mesh file="Smoke.gr2" source="Max" />
+  <BoneUsage>
+    <Bone name="FX_Fallout" />
+  </BoneUsage>
+  <TimedTrigger file="Smoke.ftsxml" source="Tool" model="Fallout" state="0,1,2,3" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+</Asset>
