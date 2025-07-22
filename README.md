@@ -242,10 +242,10 @@ VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.
 
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [City States Leaders II (compatible) (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II (compatible) (v 7) INT]  
+City States Leaders II (compatible) (v 7) INT  
 [City States Leaders II (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 [City States Leaders II CS Mods art pack (v 1)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II INT]  
+City States Leaders II INT  
 도시 국가에 지도자 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
 
 [More Right Click Shortcuts (v 1)](https://forums.civfanatics.com/resources/more-right-click-shortcuts.30060/)  
