@@ -300,7 +300,7 @@ end
 ---------------------------------------------------------------------------------------
 function GetUnitDescription(unit)
 	if unit == nil then
-		return "Unit Error";
+		return "유닛 오류";
 	end
 	
 	for unitType, text in pairs(ConvertedUnitNames) do

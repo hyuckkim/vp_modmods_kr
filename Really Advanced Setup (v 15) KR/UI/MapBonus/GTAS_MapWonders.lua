@@ -47,7 +47,7 @@ function BuildControls()
 	end
 
 	table.sort(wonders, function(a, b) return Locale.Compare(a.description, b.description) == -1; end);
-	table.insert(wonders, 1, { id = RANDOM_WONDER, description = "Random" });
+	table.insert(wonders, 1, { id = RANDOM_WONDER, description = "무작위" });
 
 	if WonderID == NO_WONDER then
 		WonderID = wonders[1].id;
@@ -91,9 +91,9 @@ function BuildControls()
 	if wonderInfo ~= nil then
 		Controls.WonderPulldown:GetButton():LocalizeAndSetText(wonderInfo.Description);
 	elseif WonderID == RANDOM_WONDER then
-		Controls.WonderPulldown:GetButton():SetText("Random");
+		Controls.WonderPulldown:GetButton():SetText("무작위");
 	else
-		Controls.WonderPulldown:GetButton():SetText("Wonder Error");
+		Controls.WonderPulldown:GetButton():SetText("불가사의 오류");
 	end
 
 	Controls.WonderPulldown:CalculateInternals();
@@ -116,9 +116,9 @@ function BuildControls()
 
 	-- Display Max Copies ----------------------------------------------------------------------
 	if MapData.maxWonderCopies < 0 then
-		Controls.MaxCopiesValue:SetText("Unlimited");
+		Controls.MaxCopiesValue:SetText("무제한");
 	elseif MapData.maxWonderCopies == 1 then
-		Controls.MaxCopiesValue:SetText("Single (Default)");
+		Controls.MaxCopiesValue:SetText("단독 (기본)");
 	else
 		Controls.MaxCopiesValue:SetText(tostring(MapData.maxWonderCopies));
 	end
@@ -161,7 +161,7 @@ function BuildControls()
 				instance.WonderName:LocalizeAndSetText(info.Description);
 			else
 				IconHookup(22, 64, "LEADER_ATLAS", instance.WonderPortrait);
-				instance.WonderName:LocalizeAndSetText("Random");
+				instance.WonderName:LocalizeAndSetText("무작위");
 			end
 
 			if wonder.placementType ~= FILL_PLACEMENT then
@@ -173,7 +173,7 @@ function BuildControls()
 			instance.WonderMinRad:SetText("*");
 			instance.WonderMaxRad:SetText("*");
 			instance.WonderPlacement:SetText(GetPlacementText(wonder.placementType));
-			instance.WonderSprinkle:SetText(wonder.addSprinkles and "Yes" or "No");
+			instance.WonderSprinkle:SetText(wonder.addSprinkles and "설정" or "해제");
 
 			function OnWonderButton()
 				if info ~= nil then

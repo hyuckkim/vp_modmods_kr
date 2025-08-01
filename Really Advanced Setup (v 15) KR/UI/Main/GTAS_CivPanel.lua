@@ -249,11 +249,11 @@ function BuildCivIcons()
 
 			IconHookup(22, 128, "LEADER_ATLAS", control.LeaderPortrait);
 			control.LeaderPortrait:EnableToolTip(false);
-			SetIconHelp(control.LeaderPortrait, "Random Leader");
+			SetIconHelp(control.LeaderPortrait, "무작위 지도자");
 			
 			local instance = slot.civManager:GetInstance();
 			SimpleCivIconHookup(-1, 64, instance.CivPortrait);
-			SetIconHelp(instance.CivPortrait, "Random Civilization");
+			SetIconHelp(instance.CivPortrait, "무작위 문명");
 		end
 	end
 
@@ -431,7 +431,7 @@ function CreateIndicatorsForType(playerID, manager, types, gameInfo, panel, maxC
 
 		if info == nil then
 			SimpleCivIconHookup(-1, 64, instance.IndicatorPortrait);
-			instance.IndicatorPortrait:SetToolTipString("Random");
+			instance.IndicatorPortrait:SetToolTipString("무작위");
 		else
 			IconHookup(info.PortraitIndex, 64, info.IconAtlas, instance.IndicatorPortrait);
 			instance.IndicatorPortrait:LocalizeAndSetToolTip(info.Description);

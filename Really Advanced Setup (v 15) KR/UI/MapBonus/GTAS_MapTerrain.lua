@@ -160,7 +160,7 @@ function BuildTerrain()
 				instance.TerrainName:LocalizeAndSetText(info.Description);
 			else
 				IconHookup(22, 64, "LEADER_ATLAS", instance.TerrainPortrait);
-				instance.TerrainName:LocalizeAndSetText("Random");
+				instance.TerrainName:LocalizeAndSetText("무작위");
 			end
 
 			if terrain.placementType ~= FILL_PLACEMENT then
@@ -173,7 +173,7 @@ function BuildTerrain()
 			instance.TerrainMaxRad:SetText("*");
 			instance.TerrainPlacement:SetText(GetPlacementText(terrain.placementType));
 			instance.TerrainElevation:SetText(GetElevationText(terrain.elevation));
-			instance.TerrainWaterLand:SetText(terrain.changeWaterLand and "Yes" or "No");
+			instance.TerrainWaterLand:SetText(terrain.changeWaterLand and "설정" or "해제");
 
 			function OnTerrainButton()
 				if info ~= nil then

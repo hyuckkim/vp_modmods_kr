@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a19351c5-c0b3-4b07-8695-4affaa199949" version="6">
+  <Properties>
+    <Name>JFD's and Pouakai's Mercenaries</Name>
+    <Teaser>Adds a system for the recruitment of [COLOR_POSITIVE_TEXT]Mercenaries[ENDCOLOR] to the game.</Teaser>
+    <Description>See CivFanatics or Steam Workshop for full details.</Description>
+    <Authors>JFD, Pouakai, Janboruta, Sukritact</Authors>
+    <SpecialThanks>Zwei833, Kesler, Hypereon, TranquilSilence, Sub6</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="163921fd-fbbd-49d1-83af-c119802d8245" minversion="0" maxversion="999" title="The Buccaneers" />
+    <Mod id="2db211be-8efa-4b5c-b041-013046f8333a" minversion="0" maxversion="999" title="[BNW] LS Civilization Set XII" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+    <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="1f941088-b185-4159-865c-472df81247b2" minversion="0" maxversion="999" title="Events and Decisions" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="B037FA5379E1C54A9FF4413A9A64539E" import="1">Art/DC45_Mercenaries.dds</File>
+    <File md5="0D26193EAE3D81B0A0D56747514E5DBF" import="1">Art/Graphics/Black Rider/confederate_cavalry_diff.dds</File>
+    <File md5="5153CC917DEC990CDB4F911F01B34859" import="1">Art/Graphics/Black Rider/confederate_cavalry_sref.dds</File>
+    <File md5="1D56F010221DF548FB1C48064665400A" import="1">Art/Graphics/Black Rider/cuirassier.fxsxml</File>
+    <File md5="6FF99A198ACFDAAE49E3F698FC19A2FD" import="1">Art/Graphics/Black Rider/cuirassier.gr2</File>
+    <File md5="A8009FEC37C92FB33C0C6B02503DB576" import="1">Art/Graphics/Black Rider/holyromancuirassier_128.dds</File>
+    <File md5="FD03DEC64E2F89C50CBEF2FAC46DDB1F" import="1">Art/Graphics/Black Rider/musketman_diff.dds</File>
+    <File md5="9A394373B38692C543E8C8D6353A9C52" import="1">Art/Graphics/Black Rider/musketman_sref.dds</File>
+    <File md5="38B3EE337A174D4AB9235BA48DC77927" import="1">Art/Graphics/Black Rider/newglossforimperialcuirassier.dds</File>
+    <File md5="1F2FA2FA377623CE141B7E7B00D42D86" import="1">Art/Graphics/Black Rider/sv_MercBlackRider.dds</File>
+    <File md5="51D4FAAB21AC4EEC4AAFDCC945A91733" import="1">Art/Graphics/Black Rider/u_french_musketeer_diff.dds</File>
+    <File md5="5F75B69AFD02477F0057234F5C649F7B" import="1">Art/Graphics/Black Rider/u_french_musketeer_sref.dds</File>
+    <File md5="12DAF543E5CAD0D5AA19BD8195B7AED3" import="1">Art/Graphics/Gaesatae/JFD_CelticMerc.fxsxml</File>
+    <File md5="957E06225D7D3DE0EC7A89EB48ABD140" import="1">Art/Graphics/Gaesatae/JFD_CelticMerc.gr2</File>
+    <File md5="277CEB148AD87029F2B751EDAA66A3DE" import="1">Art/Graphics/Gaesatae/JFD_CelticMerc.sql</File>
+    <File md5="5655CA51083DB2500444EDF3AA62C80E" import="1">Art/Graphics/Gaesatae/JFD_CelticMerc_diff.dds</File>
+    <File md5="EEB951EF88C9EFDFC94E40A6A66F298D" import="1">Art/Graphics/Gaesatae/JFD_CelticMerc_sref.dds</File>
+    <File md5="87AC6B4A0265D133B63B658EC1787D77" import="1">Art/Graphics/Gaesatae/sv_MercGaesatae.dds</File>
+    <File md5="099A7EDC72D3EDA0A2214F41A333173B" import="1">Art/Graphics/Hessian/Hessian.fxsxml</File>
+    <File md5="9046F6235BB3280AEDFBBD3CD637DC59" import="1">Art/Graphics/Hessian/Hessian.gr2</File>
+    <File md5="A84B5A41E92D9F7AB8087A26C1B6641A" import="1">Art/Graphics/Hessian/Hessian.dds</File>
+    <File md5="DE2451411F913D6C16F2F0B38AE43DDD" import="1">Art/Graphics/Hessian/Hessian_sref.dds</File>
+    <File md5="66F25EC2F253C657C49C7C478E46BAC9" import="0">Art/Graphics/Hessian/sv_MercHessianGren.dds</File>
+    <File md5="5AF8A68DD8408C36F8E5AE26DB1D563E" import="1">Art/Graphics/Varangian/sv_MercVarangian.dds</File>
+    <File md5="E61207FDA06A0CB09146D3BBCB41B19D" import="1">Art/Graphics/Varangian/VarangianGuard.fxsxml</File>
+    <File md5="294A944B2A62D56861DCB40A50C5ED22" import="1">Art/Graphics/Varangian/VarangianGuard.gr2</File>
+    <File md5="70B372B978E070EBFD258E2792DD3420" import="1">Art/Graphics/Varangian/VarangianGuard_diff.dds</File>
+    <File md5="A0BC6D3BE35B1E6A1C57D7C747CF20F6" import="1">Art/Graphics/Varangian/VarangianGuard_sref.dds</File>
+    <File md5="1D73E8331618E66367BC224136CB9F71" import="0">Art/IconAtlas/JFD_HessianUnitFlag_32.dds</File>
+    <File md5="D27BD87725F7BA6E47A36245A2C337F8" import="1">Art/IconAtlas/JFD_MercBlackRiderUnitFlag_32.dds</File>
+    <File md5="668FC93BD2C7D32C661F340DAD3589A3" import="1">Art/IconAtlas/JFD_MercVarangianGuardUnitFlag_32.dds</File>
+    <File md5="8C84EA4BE26E72B3D03968128FFA5981" import="1">Art/IconAtlas/JFD_MercGaesataeUnitFlag_32.dds</File>
+    <File md5="9BAE78AB5A6901BC1D53B2ED16B1A9DD" import="1">Art/IconAtlas/JFD_MercHessianGrenUnitFlag_32.dds</File>
+    <File md5="FD3D81F2C6488A7966986BD925ECAFAE" import="0">Art/IconAtlas/JFD_Pouakai_MercenaryMissionAtlas_45.dds</File>
+    <File md5="58B6D5FC12C84E62943E08E0C04C10EF" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryNotificationAtlas_80.dds</File>
+    <File md5="C69397B2016622C1A17860AB2BB95A50" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_128.dds</File>
+    <File md5="EA3614691458D18A5E2FE65F2F5D8048" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_214.dds</File>
+    <File md5="C8BE27839209AC75E38F9ED7C723744D" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_256.dds</File>
+    <File md5="7C7BC91700FA38D44FC3164CB4F12FBD" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_45.dds</File>
+    <File md5="7138021B307A3726D4F4647B51CCBD4E" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_64.dds</File>
+    <File md5="48AFADAE57DD228932F6367BB0383672" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryTechAtlas_80.dds</File>
+    <File md5="2E782D3626B339E23E3B393E97AD1B30" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_128.dds</File>
+    <File md5="F29BDD3E0B651D59400AFFE081A771B8" import="0">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_160.dds</File>
+    <File md5="FCDE4903945F2E30A8C290E38A2342AE" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_256.dds</File>
+    <File md5="CEA4FD23C33A0D2EC7353152309B47E0" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_45.dds</File>
+    <File md5="05BF4E45B53E22484C1F43CB49059ECD" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_64.dds</File>
+    <File md5="2156EA2ACA0C6E4D05542736F00B36BE" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryUnitAtlas_80.dds</File>
+    <File md5="3B8ADBD080A331840F17496914C57E33" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryWonderAtlas_128.dds</File>
+    <File md5="D07456A62E76C21AEEBB3104B3770623" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryWonderAtlas_256.dds</File>
+    <File md5="D0CCA49AAEE02380F57D7116C00C3602" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryWonderAtlas_45.dds</File>
+    <File md5="EAB54C6FB787E629A7755760FFAFCCAF" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryWonderAtlas_64.dds</File>
+    <File md5="F4BE32CD14F77176A2C0300154AB18E3" import="1">Art/IconAtlas/JFD_Pouakai_MercenaryWonderAtlas_80.dds</File>
+    <File md5="3BFDB175429DB3229A6594D5E77B5A5A" import="1">Art/SplashScreens/Wonder_Jiayuguan.dds</File>
+    <File md5="AE36BB3254C5DF0012BDCCDF681E4ED5" import="1">Audio/Wonder_Jiayuguan.mp3</File>
+    <File md5="A912605499807F7140EE5BD54A79B2A5" import="1">Audio/WonderGold.mp3</File>
+    <File md5="76DC441E627422F133F276139136B9D0" import="0">Core/Mercenaries_Contracts.sql</File>
+    <File md5="32A10E42BAD3FA51DA93C33FC6D87DFF" import="0">Core/Mercenaries_GameDefines.sql</File>
+    <File md5="1A4CFDD9408F755BEB91D02BBED9FBE0" import="0">Core/Mercenaries_GameText_Interface.xml</File>
+    <File md5="E9C0076E67876B26ECE2610885BCA0D9" import="0">Core/Mercenaries_Leaders.sql</File>
+    <File md5="8C1A5B42570E1AF186EFB4ACF26672EC" import="0">Core/Mercenaries_Master.sql</File>
+    <File md5="9D00CE8DEC615614A540A76E7AAFBC7E" import="0">Core/Mercenaries_ArtDefines.sql</File>
+    <File md5="5752EDFD014BE639B20B81D5DEB847D3" import="0">Core/Mercenaries_GameText.xml</File>
+    <File md5="BADD56A4E2F8FD019BA1CC4FB91ECCBB" import="0">Core/Mercenaries_ModSupport.sql</File>
+    <File md5="88D0E5D20681C4A14ABA6D7163E66D95" import="0">Core/Mercenaries_Promotions.sql</File>
+    <File md5="2D4C609203890764F57AE99399143B32" import="0">Core/Mercenaries_Techs.sql</File>
+    <File md5="E25DB57D15B9C177CE46071DFDD1871D" import="0">Core/Mercenaries_Units.sql</File>
+    <File md5="39B1398019E02ED3DBCCEF079A2BB7E8" import="0">JFD_Mercenaries_UserSettings.sql</File>
+    <File md5="F1477755284123345F924EE3027160C6" import="0">Lua/JFD_Mercenaries_Functions.lua</File>
+    <File md5="019CBA1E18304ED27BED081393E14991" import="0">Lua/JFD_Mercenaries_Functions.xml</File>
+    <File md5="034392BE16CF8907A25D5666AD93C0E1" import="1">Lua/UI/Overrides/JFD_EUITechButtonInclude.lua</File>
+    <File md5="D70ACEA2DB57725453EE94FDC5FDEB93" import="1">Lua/UI/Overrides/JFD_TechButtonInclude.lua</File>
+    <File md5="0EDFF07BE3114EDF1AD027A861EDC0BB" import="1">Lua/UI/Overrides/MilitaryOverview.lua</File>
+    <File md5="EF85FD647BCCB7AD1934C52CDC5AC1A5" import="1">Lua/UI/Overrides/MilitaryOverview.xml</File>
+    <File md5="559BD2FE5BCEF476553638E26BDFB372" import="1">Lua/UI/Overrides/TechButtonInclude.lua</File>
+    <File md5="DEDDFB9352909F68A08E02817010D4BD" import="1">Lua/UI/Overrides/UnitList.lua</File>
+    <File md5="4BE02F61AE21B6005F785B3322417C60" import="1">Lua/UI/Overrides/UnitList.xml</File>
+    <File md5="802E128480094ED5612A0EC7F2573CCA" import="0">Lua/Utilities/JFD's DTP/JFD_TopPanelUpdated.lua</File>
+    <File md5="817D44F4BE88A8C218F8BCCFE187E695" import="1">Lua/Utilities/JFD_MercenariesUtilities.lua</File>
+    <File md5="F9C310E5161BBD7C8EC255FF9AE78794" import="1">Lua/Utilities/Save Utils/JFD_Mercenaries_GlobalDefines.lua</File>
+    <File md5="849C0F860431E25B3878B3BEA78B2CAD" import="1">Lua/Utilities/Save Utils/JFD_Mercenaries_TSLSerializerV3.lua</File>
+    <File md5="CD3E8C278CE1FD36806AA4CF6BE3BF88" import="1">Lua/Utilities/Save Utils/TableSaverLoader016.lua</File>
+    <File md5="69FCADF0D2AE7C0C2CEC9D821AD41883" import="1">Lua/Utilities/Save Utils/TSLSerializerCoreV3.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/Mercenaries_Master.sql</UpdateDatabase>
+      <UpdateDatabase>JFD_Mercenaries_UserSettings.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_Contracts.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_GameText_Interface.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_Leaders.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_Units.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_Techs.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_Promotions.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Mercenaries_ModSupport.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/JFD_Mercenaries_Functions.lua">
+      <Name>JFD_MoW_Functions</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/UI/Overrides/TechButtonInclude.lua">
+      <Name>TechButtonInclude</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Utilities/JFD's DTP/JFD_TopPanelUpdated.lua">
+      <Name>JFD_TopPanelUpdated</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -149,7 +149,7 @@ function BuildResources()
 			instance.ResourceMinRad:SetText("*");
 			instance.ResourceMaxRad:SetText("*");
 			instance.ResourcePlacement:SetText(GetPlacementText(resource.placementType));
-			instance.ResourceRelaxedRules:SetText(resource.relaxedRules and "Yes" or "No");
+			instance.ResourceRelaxedRules:SetText(resource.relaxedRules and "설정" or "해제");
 
 			function OnResourceButton()
 				if info ~= nil then

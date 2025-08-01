@@ -37,6 +37,10 @@
 			<Text>하이브리드</Text>
 		</Row>
 		
+		<Row Tag="TXT_KEY_BONUS_LABEL">
+			<Text>보너스 레이블</Text>
+		</Row>
+		
 		<Row Tag="TXT_KEY_GTAS_UNKNOWN_PLAYERS_1">
 			<Text>알 수 없는 플레이어 수</Text>
 		</Row>
@@ -52,6 +56,164 @@
 		<Row Tag="TXT_KEY_GTAS_NAME_OTHER_CIV">
 			<Text>이 문명에 이름을 지어주세요.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_GTAS_PLAYER_BONUS">
+			<Text>플레이어 보너스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MOD_GAME">
+			<Text>게임</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_TITLE">
+			<Text>플롯 개수                  최소 거리                  최대 거리                         배치 유형                                대체 특징</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TITLE">
+			<Text>플롯 개수                  최소 거리                  최대 거리                    배치 유형                             완화된 규칙</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_TITLE">
+			<Text>플롯 개수                   최소 거리                   최대 거리             배치                             고도                            물/땅</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_CHANGE_WATER_LAND">
+			<Text>물/땅 바꾸기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_ELEVATION">
+			<Text>고도</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_NO_ELEVATION">
+			<Text>고도 없음</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_NO_CHANGE">
+			<Text>바뀌지 않음</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES">
+			<Text>자원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RELAXED_RULES">
+			<Text>완화된 규칙</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE">
+			<Text>자원 유형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_ALL">
+			<Text>모두</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_BONUS">
+			<Text>보너스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_LUXURY">
+			<Text>사치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_STRATEGIC">
+			<Text>전략</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_CLEAR_LIST">
+			<Text>목록 비우기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_LIST">
+			<Text>모든 플레이어에 목록 복사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURE_REPLACING">
+			<Text>이미 있는 특징 대체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PLACEMENT">
+			<Text>배치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_NEAR">
+			<Text>가까이</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FAR">
+			<Text>멀리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FILL">
+			<Text>채우기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COUNT">
+			<Text>개수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MIN_DISTANCE">
+			<Text>최소 거리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MAX_DISTANCE">
+			<Text>최대 거리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_TO_LIST">
+			<Text>목록에 추가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UPDATE">
+			<Text>업데이트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_START_BIAS">
+			<Text>시작 위치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_CIVS">
+			<Text>모든 문명에 복사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_TITLE">
+			<Text>유닛 개수                                                           유닛 경험치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_EXPERIENCE">
+			<Text>경험치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_NOT_AVAILABLE">
+			<Text>( 이 유닛에는 사용할 수 없음 )</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_FUTURE">
+			<Text>이후 시대의 유닛 보기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_UNIQUE">
+			<Text>다른 문명의 고유 유닛 보기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_TYPE">
+			<Text>유닛 유형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_COMBAT">
+			<Text>전투</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_NONCOMBAT">
+			<Text>비전투</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_BOTH">
+			<Text>둘 다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_ERROR">
+			<Text>불가사의 오류</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RANDOM_WONDER">
+			<Text>무작위 불가사의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS">
+			<Text>불가사의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_UNLIMITED">
+			<Text>무제한</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_SINGLE">
+			<Text>단독 (기본)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_DISABLED">
+			<Text>자연경관은 현재 비활성화되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_TO_CHANGE">
+			<Text>게임 패널에서 이 설정을 변경할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_TITLE">
+			<Text>플롯 개수                 최소 거리                  최대 거리                       배치 유형                      무작위 자원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_SPRINKLES">
+			<Text>무작위 자원 추가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_1">
+			<Text>최대 사본</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_2">
+			<Text>각 불가사의 마다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_ON_MAP">
+			<Text>지도에서 허용</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_LOCATED_1">
+			<Text>(이 설정은 </Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_LOCATED_2">
+			<Text>지도 패널에 있음)</Text>
+		</Row>
 	</Language_ko_KR>
 </GameData>
-

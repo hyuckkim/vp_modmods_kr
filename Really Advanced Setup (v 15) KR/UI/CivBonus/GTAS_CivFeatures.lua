@@ -75,7 +75,7 @@ function BuildFeatures()
 	if featureInfo ~= nil then
 		Controls.FeaturePulldown:GetButton():LocalizeAndSetText(featureInfo.Description);
 	else
-		Controls.FeaturePulldown:GetButton():SetText("Feature Error");
+		Controls.FeaturePulldown:GetButton():SetText("특징 오류");
 	end
 
 	Controls.FeaturePulldown:CalculateInternals();
@@ -201,7 +201,7 @@ function BuildFeatures()
 				instance.FeatureName:LocalizeAndSetText(info.Description);
 			else
 				IconHookup(22, 64, "LEADER_ATLAS", instance.FeaturePortrait);
-				instance.FeatureName:SetText("Random");
+				instance.FeatureName:SetText("무작위");
 			end
 
 			if feature.placementType ~= FILL_PLACEMENT then
@@ -213,7 +213,7 @@ function BuildFeatures()
 			instance.FeatureMinRad:SetText(tostring(feature.minDistance));
 			instance.FeatureMaxRad:SetText(tostring(feature.maxDistance));
 			instance.FeaturePlacement:SetText(GetPlacementText(feature.placementType));
-			instance.FeatureReplace:SetText(feature.replaceFeature and "Yes" or "No");
+			instance.FeatureReplace:SetText(feature.replaceFeature and "설정" or "해제");
 
 			function OnFeatureButton()
 				if info ~= nil then

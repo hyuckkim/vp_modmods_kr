@@ -12,16 +12,16 @@
 
 					<Container ID="ListTitle" Anchor="C,T" Offset="0,0" Size="941,35" >
 						
-						<Label Anchor="L,B" Offset="249,4" Font="TwCenMT14" String="Plot Count        Min Distance        Max Distance             Placement Style            Replace Feature" />
+						<Label Anchor="L,B" Offset="249,4" Font="TwCenMT14" String="TXT_KEY_GTAS_FEATURES_TITLE" />
 						
 						<GridButton ID="ClearList" Anchor="R,T" Offset="9,5" Size="85,28" Style="SmallButton" ToolTip="TXT_KEY_GTAS_CLEAR_COMMANDS_HELP" >
-							<Label Anchor="C,C"  Offset="-1,-1"  String="Clear List" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+							<Label Anchor="C,C"  Offset="-1,-1"  String="TXT_KEY_GTAS_CLEAR_LIST" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
 						</GridButton>
 
 					</Container>
 
 					<GridButton ID="CopyList" Anchor="L,T" Offset="9,5" Size="185,28" Style="SmallButton" ToolTip="TXT_KEY_GTAS_COPY_COMMANDS_HELP" >
-						<Label Anchor="C,C"  Offset="-1,-1"  String="Copy List To All Players" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+						<Label Anchor="C,C"  Offset="-1,-1"  String="TXT_KEY_GTAS_COPY_LIST" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
 					</GridButton>
 
 					<!--Feature Scroll Panel-->
@@ -63,12 +63,12 @@
 
 							<!--Feature PullDown-->
 							<Container Anchor="L,T" Offset="0,0" Size="225,32" >
-								<Label Anchor="L,T" Offset="2,4" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" String="Feature" />
+								<Label Anchor="L,T" Offset="2,4" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" String="TXT_KEY_PEDIA_TERRAIN_FEATURES_LABEL" />
 								<PullDown ID="FeaturePulldown" Anchor="R,T" Offset="0,0"  Size="140,28" Style="GenericPullDown" ScrollThreshold="218" AutoSizePopUp="1" SpaceForScroll="1" />
 							</Container>
 
 							<!--Overwrite Previous CheckBox-->
-							<CheckBox ID="ReplaceFeature" Anchor="L,C" Offset="244,-3" ButtonTexture="assets/UI/Art/Controls/CheckBox2TheBox.dds" Font="TwCenMT20" TextAnchorSide="Right" TextOffset="35,0" IsChecked="0" ConsumeMouse="1" String="Replace Existing Feature" ToolTip="TXT_KEY_GTAS_REPLACE_FEATURE_HELP" />
+							<CheckBox ID="ReplaceFeature" Anchor="L,C" Offset="244,-3" ButtonTexture="assets/UI/Art/Controls/CheckBox2TheBox.dds" Font="TwCenMT20" TextAnchorSide="Right" TextOffset="35,0" IsChecked="0" ConsumeMouse="1" String="TXT_KEY_GTAS_FEATURE_REPLACING" ToolTip="TXT_KEY_GTAS_REPLACE_FEATURE_HELP" />
 
 						</Container>
 
@@ -78,21 +78,21 @@
 
 								<Container Anchor="C,T" Offset="0,0" Size="460,37" >
 									
-									<Label Anchor="L,T" Offset="15,8" ColorSet="Beige_Black" Font="TwCenMT24" FontStyle="Shadow" String="Place" ToolTip="TXT_KEY_GTAS_FEATURE_PLACEMENT_HELP" />
+									<Label Anchor="L,T" Offset="15,8" ColorSet="Beige_Black" Font="TwCenMT24" FontStyle="Shadow" String="TXT_KEY_GTAS_PLACEMENT" ToolTip="TXT_KEY_GTAS_FEATURE_PLACEMENT_HELP" />
 									
-									<RadioButton ID="PlacementNear" Anchor="L,T" Offset="95,3" String="Near"
+									<RadioButton ID="PlacementNear" Anchor="L,T" Offset="95,3" String="TXT_KEY_GTAS_NEAR"
 												 ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16"
 												 FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C"
 												 TextAnchorSide="O,O" TextOffset="0,0" IsChecked="0" RadioGroup="PlacementGroup"/>
-									<RadioButton ID="PlacementFar" Anchor="L,T" Offset="184,3" String="Far" 
+									<RadioButton ID="PlacementFar" Anchor="L,T" Offset="184,3" String="TXT_KEY_GTAS_FAR" 
 												 ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16"
 												 FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C"
 												 TextAnchorSide="O,O" TextOffset="0,0" IsChecked="0" RadioGroup="PlacementGroup"/>
-									<RadioButton ID="PlacementRandom" Anchor="L,T" Offset="258,3" String="Random"
+									<RadioButton ID="PlacementRandom" Anchor="L,T" Offset="258,3" String="TXT_KEY_MAP_OPTION_RANDOM"
 												 ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" 
 												 FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C"
 												 TextAnchorSide="O,O" TextOffset="0,0" IsChecked="0" RadioGroup="PlacementGroup"/>
-									<RadioButton ID="PlacementFill" Anchor="L,T" Offset="361,3" String="Fill"
+									<RadioButton ID="PlacementFill" Anchor="L,T" Offset="361,3" String="TXT_KEY_GTAS_FILL"
 												 ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" 
 												 FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C"
 												 TextAnchorSide="O,O" TextOffset="0,0" IsChecked="0" RadioGroup="PlacementGroup"/>
@@ -102,7 +102,7 @@
 								<Image Anchor="C,C" Offset="0,0" Texture="bar400x2.dds" Size="400,1" />
 
 								<Container ID="CountControlsOn" Anchor="C,B" Offset="0,0" Size="460,37" >
-									<Label ID="CountLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="Count" ToolTip="TXT_KEY_GTAS_FEATURE_COUNT_HELP" />
+									<Label ID="CountLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="TXT_KEY_GTAS_COUNT" ToolTip="TXT_KEY_GTAS_FEATURE_COUNT_HELP" />
 									<Label ID="CountValue" Anchor="R,B" Offset="246,11" Color0="130,220,240,255" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="0" />
 									<Slider ID="CountSlider" Anchor="R,B" Offset="15,2" Length="220" Style="Slider" WheelSteps="1" />
 								</Container>
@@ -122,11 +122,11 @@
 								<Image Anchor="C,C" Offset="0,0" Texture="bar400x2.dds" Size="400,1" />
 
 								<Container ID="DistanceControlsOn" Anchor="C,C" Offset="0,0" Size="460,78" >
-									<Label ID="MinDistanceLabel" Anchor="L,T" Offset="15,9" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="Minimum Distance" ToolTip="TXT_KEY_GTAS_FEATURE_MIN_DISTANCE_HELP" />
+									<Label ID="MinDistanceLabel" Anchor="L,T" Offset="15,9" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="TXT_KEY_GTAS_MIN_DISTANCE" ToolTip="TXT_KEY_GTAS_FEATURE_MIN_DISTANCE_HELP" />
 									<Label ID="MinDistanceValue" Anchor="R,T" Offset="246,10" Color0="130,220,240,255" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="0" />
 									<Slider ID="MinDistanceSlider" Anchor="R,T" Offset="15,3" Length="220" Style="Slider" WheelSteps="4" />
 
-									<Label ID="MaxDistanceLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="Maximum Distance" ToolTip="TXT_KEY_GTAS_FEATURE_MAX_DISTANCE_HELP" />
+									<Label ID="MaxDistanceLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="TXT_KEY_GTAS_MAX_DISTANCE" ToolTip="TXT_KEY_GTAS_FEATURE_MAX_DISTANCE_HELP" />
 									<Label ID="MaxDistanceValue" Anchor="R,B" Offset="246,11" Color0="130,220,240,255" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="0" />
 									<Slider ID="MaxDistanceSlider" Anchor="R,B" Offset="15,2" Length="220" Style="Slider" WheelSteps="4" />
 								</Container>
@@ -139,7 +139,7 @@
 
 					<Container Anchor="L,B" Offset="258,7" Size="460,30" >
 						<GridButton ID="AddFeature" Anchor="C,C" Offset="0,0" Size="220,30" Style="SmallButton" ToolTip="TXT_KEY_GTAS_ADD_FEATURE_HELP" >
-							<Label Anchor="C,C"  Offset="0,-1"  String="Add To List" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+							<Label Anchor="C,C"  Offset="0,-1"  String="TXT_KEY_GTAS_ADD_TO_LIST" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
 						</GridButton>
 					</Container>
 
@@ -191,7 +191,7 @@
 				<Label ID="FeatureReplace" Anchor="C,C" Offset="0,0" TruncateWidth="50" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" />
 			</Container>
 
-			<TextButton ID="UpdateFeature" Anchor="R,C" Offset="10,0" ColorSet="Beige_Black" Font="TwCenMT14" FontStyle="Shadow" MouseOverStyle="SoftShadow" ConsumeMouse="1" String="update" />
+			<TextButton ID="UpdateFeature" Anchor="R,C" Offset="10,0" ColorSet="Beige_Black" Font="TwCenMT14" FontStyle="Shadow" MouseOverStyle="SoftShadow" ConsumeMouse="1" String="TXT_KEY_GTAS_UPDATE" />
 
 			<Image Anchor="L,B" Offset="15,1" Size="850,1" Texture="HorizontalTrim.dds" />
 

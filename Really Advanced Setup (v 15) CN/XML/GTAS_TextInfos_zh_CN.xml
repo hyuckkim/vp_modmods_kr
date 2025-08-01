@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hover Help Text for Really Advanced Setup Mod -->
+<GameData>
+	<Language_zh_CN>
+	<!-- GTAS_HelpText -->
+		<!-- Start Bonuses +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_START_BIAS_HELP">
+			<Text>这个选项允许你为该玩家设置起始地点。由于游戏生成的起始地点数量有限，实际的起始地点不能被保证。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_GOLD_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的金钱。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_GOLD_SLIDER_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的金钱。通过调节滚轮来改变这一数值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_GOLD_HELP">
+			<Text>将起始金钱数值应用到所有玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_CULTURE_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的文化。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_CULTURE_SLIDER_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的文化。通过调节滚轮来改变这一数值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_CULTURE_HELP">
+			<Text>将起始文化数值应用到所有玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FAITH_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的信仰。（需要众神与国王或美丽新世界拓展包。）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FAITH_SLIDER_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的信仰。（需要众神与国王或美丽新世界拓展包。）第一个大先知诞生时将消耗所有剩余的信仰。通过调节滚轮来改变这一数值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_FAITH_HELP">
+			<Text>将起始信仰数值应用到所有玩家。（需要众神与国王或美丽新世界拓展包。）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TECH_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的免费科技。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TECH_SLIDER_HELP">
+			<Text>玩家开始游戏时将拥有以下数量的免费科技。通过调节滚轮来改变这一数值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_TECH_HELP">
+			<Text>将起始免费科技数值应用到所有玩家。</Text>
+		</Row>
+
+
+		<!-- Terrain +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_COUNT_HELP">
+			<Text>增加这个数量的地形至选定区域（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_LAND_WATER_HELP">
+			<Text>允许水与地面地格相互转换。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_PLACEMENT_HELP">
+			<Text>定义选取合适的地格放置地形的方式。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_MIN_DISTANCE_HELP">
+			<Text>定义地形到玩家出生点的距离下限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_MAX_DISTANCE_HELP">
+			<Text>定义地形到玩家出生点的距离上限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_ELEVATION_HELP">
+			<Text>定义生成地形的海拔高度。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_NO_ELEVATION_HELP">
+			<Text>目前选择的地形中不包含海拔设定。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_TERRAIN_HELP">
+			<Text>将现有对地形的设置添加进列表。</Text>
+		</Row>
+
+
+		<!-- Features +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_FEATURE_COUNT_HELP">
+			<Text>增加这个数量的地貌至选定区域（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_REPLACE_FEATURE_HELP">
+			<Text>只允许存在的地貌互相转换。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURE_PLACEMENT_HELP">
+			<Text>定义选取合适的地格放置地貌的方式。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURE_MIN_DISTANCE_HELP">
+			<Text>定义地貌到玩家出生点的距离下限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURE_MAX_DISTANCE_HELP">
+			<Text>定义地貌到玩家出生点的距离上限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_FEATURE_HELP">
+			<Text>将现有对地貌的设置添加进列表。</Text>
+		</Row>
+
+
+		<!-- Resources +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_COUNT_HELP">
+			<Text>增加这个数量的资源至选定区域（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_RELAXED_HELP">
+			<Text>忽略地形，地貌与山脉对生成资源的限制。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_PLACEMENT_HELP">
+			<Text>定义选取合适的地格放置资源的方式。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_MIN_DISTANCE_HELP">
+			<Text>定义资源到玩家出生点的距离下限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_MAX_DISTANCE_HELP">
+			<Text>定义资源到玩家出生点的距离上限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_HELP">
+			<Text>定义生成资源的类型。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_RESOURCE_HELP">
+			<Text>将现有对资源的设置添加进列表。</Text>
+		</Row>
+
+
+		<!-- Wonders +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_WONDER_COUNT_HELP">
+			<Text>增加这个数量的自然奇观至选定区域（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_SPRINKLES_HELP">
+			<Text>在自然奇观附近添加随机数量的资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_PLACEMENT_HELP">
+			<Text>定义选取合适的地格放置自然奇观的方式。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MIN_DISTANCE_HELP">
+			<Text>定义自然奇观到玩家出生点的距离下限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_DISTANCE_HELP">
+			<Text>定义自然奇观到玩家出生点的距离上限。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MAX_COPIES_WONDER_HELP">
+			<Text>点击以进入地图设置面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_WONDER_HELP">
+			<Text>将现有对自然奇观的设置添加进列表。</Text>
+		</Row>
+
+
+		<!-- Units +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_UNIT_COUNT_HELP">
+			<Text>增加这个数量的单位至选定区域（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_EXPERIENCE_HELP">
+			<Text>定义单位的初始经验数量。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_FUTURE_HELP">
+			<Text>显示超越起始时代的单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_UNIQUE_HELP">
+			<Text>显示其他文明的独有单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_TYPES_HELP">
+			<Text>定义单位列表中显示的单位种类。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_NON_COMBAT_HELP">
+			<Text>只显示非战斗单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_BOTH_HELP">
+			<Text>显示战斗单位与非战斗单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_UNIT_HELP">
+			<Text>将现有对单位的设置添加进列表。</Text>
+		</Row>
+
+		<!-- Advanced Setup Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_PANELS_HELP">
+			<Text>将所有面板的设置还原为默认值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_GO_BACK_HELP">
+			<Text>返回上一个页面。</Text>
+		</Row>
+
+		<!-- Civ Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_AD_AI_HELP">
+			<Text>向游戏中添加一个文明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_CIV_PANEL_HELP">
+			<Text>将所有文明的设置还原为默认值。</Text>
+		</Row>
+
+
+		<!-- Civ Bonus Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_EDIT_CIV_NAME_HELP">
+			<Text>进入编辑玩家名称面板以编辑该文明及领导者的名称。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_CIV_NAME_HELP">
+			<Text>将所有玩家的名称还原为默认值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PREVIOUS_PLAYER_HELP">
+			<Text>选择列表中的上一个玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_NEXT_PLAYER_HELP">
+			<Text>选择列表中的下一个玩家。</Text>
+		</Row>
+
+
+		<!-- Map Bonus Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_RESET_MAP_BONUS_PANEL_HELP">
+			<Text>将所有地图奖励选项还原为默认值。</Text>
+		</Row>
+
+
+		<!-- Map Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_CITYSTATES_HELP">
+			<Text>定义地图上出现的城邦数量。当地图尺寸随机时该选项禁用。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY_HELP">
+			<Text>定义游戏开始时，玩家已经探索的地图大小。以玩家的起始地点为中心。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY_MAP_HELP">
+			<Text>将整张地图对所有玩家设为可见。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_ALL_NW_HELP">
+			<Text>禁止在地图上产生自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_OTHER_NW_HELP">
+			<Text>禁止在地图上自动产生自然奇观（该组模生成的除外）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_HELP">
+			<Text>定义每种自然奇观的最大生成数量。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ACTIVE_CIV_HELP">
+			<Text>只有选定的文明可能出现在游戏中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_MAP_PANEL_HELP">
+			<Text>将所有地图选项还原为默认值。</Text>
+		</Row>
+
+
+		<!-- Game Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_OPTIONAL_SETTLERS_HELP">
+			<Text>允许一个或多个文明开始游戏时不拥有殖民者。为实现这一点，在编辑玩家面板中编辑其起始单位，并忽略殖民者。如果该玩家在孤岛上开始游戏，将获得一名殖民者。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_NUKES_HELP">
+			<Text>禁止建造曼哈顿计划与核武器。使用玩家单位面板仍然可以将核武器给予玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_GAME_PANEL_HELP">
+			<Text>将所有游戏选项还原为默认值。</Text>
+		</Row>
+
+
+		<!-- Misc. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_MOD_TITLE_HELP">
+			<Text>RAS 高级设置组模（General Tso出品）[NEWLINE]版本：15</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_COMMANDS_HELP">
+			<Text>复制该列表给所有玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_CLEAR_COMMANDS_HELP">
+			<Text>去掉列表中的所有指令。</Text>
+		</Row>
+		
+	<!-- GTAS_ModText -->
+		<Row Tag="TXT_KEY_REGION_UNDEFINED">
+			<Text>无地形</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_TUNDRA">
+			<Text>冻土</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_JUNGLE">
+			<Text>丛林</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_FOREST">
+			<Text>森林</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_DESERT">
+			<Text>沙漠</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_HILLS">
+			<Text>山脉</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_PLAINS">
+			<Text>平原</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_GRASS">
+			<Text>草原</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_REGION_HYBRID">
+			<Text>混合型</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_UNKNOWN_PLAYERS_1">
+			<Text>无玩家</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_UNKNOWN_PLAYERS_2">
+			<Text>（进入地图设置面板以修改玩家数量）</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_NAME_YOUR_CIV">
+			<Text>为你的文明命名</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_NAME_OTHER_CIV">
+			<Text>为这个文明命名</Text>
+		</Row>
+		
+	<!-- GTAS_ScrollText -->
+		<!-- TerrainCivText -->
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TITLE">
+			<Text>玩家地形</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在玩家起始地点附近生成地形。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_1">
+			<Text>地形的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_3">
+			<Text>其次生成玩家地形列表（即本列表）中的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_4">
+			<Text>最后生成地图地形列表（在地图奖励面板）中的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_5">
+			<Text>当改变地形会导致严重错误时系统会发出警告。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_6">
+			<Text>例如……</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_7">
+			<Text>在一个起始地点周围生成一圈山脉将会永久隔离该玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_8">
+			<Text>在电脑玩家的起始地点附近生成一个小岛将会使它被陆地包围。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_2">
+			<Text>地形控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_9">
+			<Text>使用下面的地形控件以将指令添加到此列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_10">
+			<Text>所有指令都会试图在地图生成时改变1至多个地格的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_11">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_3">
+			<Text>地形菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_12">
+			<Text>这个菜单包含了一系列可以被添加到地图上的地形列表。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_13">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_14">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_4">
+			<Text>水陆转换</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_15">
+			<Text>通常情况下这个组模不会将水陆互相转换，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_16">
+			<Text>如果这一选项被选中则会允许水陆互相转换。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_5">
+			<Text>生成模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_17">
+			<Text>决定改变地形时将如何寻找合适的地格。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_18">
+			<Text>选择较近则会使地形从最短距离至最长距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_19">
+			<Text>选择较远则会使地形从最长距离至最短距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_20">
+			<Text>选择随机则会使地形在最短距离至最长距离之间随机生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_21">
+			<Text>选择填充则会使地形在最短距离至最长距离之间均匀生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_6">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_22">
+			<Text>这是地形改变将会生成的地格数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_7">
+			<Text>最短距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_23">
+			<Text>这是地形可能会被改变的距离玩家起始地点的最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_24">
+			<Text>最短距离不可以大于最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_25">
+			<Text>试图将最短距离的滚动条移动超过最长距离会使得最长距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_8">
+			<Text>最长距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_26">
+			<Text>这是地形可能会被改变的距离玩家起始地点的最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_27">
+			<Text>最长距离不可以小于最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_28">
+			<Text>试图将最长距离的滚动条移动超过最短距离会使得最短距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_9">
+			<Text>海拔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_29">
+			<Text>这允许你在改变地形时决定地格的海拔高度，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_30">
+			<Text>如果当前地形不存在海拔高度，这一选项将被禁用。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_10">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_31">
+			<Text>将当前对地形的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_11">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_32">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_33">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_34">
+			<Text>点击上方的按钮以将该指令的内容复制到地形控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_35">
+			<Text>点击更新按钮以将地形控制面板中的内容更新到指令中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_SUB_TITLE_12">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_36">
+			<Text>将该玩家地形列表中的所有指令应用到所有玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINCIVTEXT_TEXT_37">
+			<Text>在玩家地形列表中不存在指令时将会清空所有玩家地形列表中的指令。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SCROLL_SUB_TITLE">
+			<Text>清空列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SCROLL_TEXT_REMOVE">
+			<Text>清空列表中的所有指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SCROLL_TEXT_EMPTY">
+			<Text>当列表中不存在指令时这个选项不会显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SCROLL_TEXT_END">
+			<Text>这条帮助信息只会在列表中不存在指令时显示。</Text>
+		</Row>
+		
+		<!-- TerrainMapText -->
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TITLE">
+			<Text>地图地形</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在整张地图上随机生成地形。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_1">
+			<Text>地形的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_3">
+			<Text>其次生成玩家地形列表（在玩家奖励面板）中的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_4">
+			<Text>最后生成地图地形列表（即本列表）中的地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_5">
+			<Text>当改变地形会导致严重错误时系统会发出警告。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_6">
+			<Text>例如……</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_7">
+			<Text>在一个起始地点周围生成一圈山脉将会永久隔离该玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_8">
+			<Text>在电脑玩家的起始地点附近生成一个小岛将会使它被陆地包围。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_2">
+			<Text>地形控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_9">
+			<Text>使用下面的地形控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_10">
+			<Text>所有指令都会试图在地图生成时改变1至多个地格的地形。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_11">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_3">
+			<Text>地形菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_12">
+			<Text>这个菜单包含了一系列可以被添加到地图上的地形列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_13">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_14">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_4">
+			<Text>水陆转换</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_15">
+			<Text>通常情况下这个组模不会将水陆互相转换，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_16">
+			<Text>如果这一选项被选中则会允许水陆互相转换。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_5">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_17">
+			<Text>这是地形改变将会生成的地格数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_6">
+			<Text>海拔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_18">
+			<Text>这允许你在改变地形时决定地格的海拔高度，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_19">
+			<Text>如果当前地形不存在海拔高度，这一选项将被禁用。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_7">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_20">
+			<Text>将当前对地形的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_SUB_TITLE_8">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_21">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_22">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_23">
+			<Text>点击上方的按钮以将该指令的内容复制到地形控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAINMAPTEXT_TEXT_24">
+			<Text>点击更新按钮以将地形控制面板中的内容更新到指令中。</Text>
+		</Row>
+		
+		<!-- FeatureCivText -->
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TITLE">
+			<Text>玩家地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在玩家起始地点附近生成地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_1">
+			<Text>地貌的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_3">
+			<Text>其次生成玩家地貌列表（即本列表）中的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_4">
+			<Text>最后生成地图地貌列表（在地图奖励面板）中的地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_2">
+			<Text>地貌控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_5">
+			<Text>使用下面的地貌控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_6">
+			<Text>所有指令都会试图在地图生成时改变1至多个地格的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_7">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_3">
+			<Text>地貌菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_8">
+			<Text>这个菜单包含了一系列可以被添加到地图上的地貌列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_9">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_10">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_4">
+			<Text>替换已存在的地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_11">
+			<Text>通常情况下地貌不会在已经拥有地貌的地格上生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_12">
+			<Text>如果这一选项被选中则会允许一个地貌覆盖已经存在的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_13">
+			<Text>这一选项可能会覆盖之前的指令中生成的地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_5">
+			<Text>生成模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_14">
+			<Text>这决定了改变地貌时将会如何寻找合适的地格，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_15">
+			<Text>选择较近则会使地貌从最短距离至最长距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_16">
+			<Text>选择较远则会使地貌从最长距离至最短距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_17">
+			<Text>选择随机则会使地貌在最短距离至最长距离之间随机生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_18">
+			<Text>选择填充则会使地貌在最短距离至最长距离之间均匀生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_6">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_19">
+			<Text>这是地貌改变将会生成的地格数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_7">
+			<Text>最短距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_20">
+			<Text>这是地貌可能会被改变的距离玩家起始地点的最短距离。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_21">
+			<Text>最短距离不可以大于最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_22">
+			<Text>试图将最短距离的滚动条移动超过最长距离会使得最长距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_8">
+			<Text>最长距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_23">
+			<Text>这是地貌可能会被改变的距离玩家起始地点的最长距离。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_24">
+			<Text>最长距离不可以小于最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_25">
+			<Text>试图将最长距离的滚动条移动超过最短距离会使得最短距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_9">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_26">
+			<Text>将当前对地形的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_10">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_27">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_28">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_29">
+			<Text>点击上方的按钮以将该指令的内容复制到地貌控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_30">
+			<Text>点击更新按钮以将地貌控制面板中的内容更新到指令中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_SUB_TITLE_11">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_31">
+			<Text>将玩家地貌列表中的所有指令应用到所有玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURECIVTEXT_TEXT_32">
+			<Text>在玩家地貌列表中不存在指令时将会清空所有玩家地貌列表中的指令。</Text>
+		</Row>
+		
+		<!-- FeatureMapText -->
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TITLE">
+			<Text>地图地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在整张地图上随机生成地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_1">
+			<Text>地貌的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_3">
+			<Text>其次生成玩家地貌列表（在玩家奖励面板）中的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_4">
+			<Text>最后生成地图地貌列表（即本列表）中的地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_2">
+			<Text>地貌控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_5">
+			<Text>使用下面的地貌控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_6">
+			<Text>所有指令都会试图在地图生成时改变1至多个地格的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_7">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_3">
+			<Text>地貌菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_8">
+			<Text>这个菜单包含了一系列可以被添加到地图上的地貌列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_9">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_10">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_4">
+			<Text>替换已存在的地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_11">
+			<Text>通常情况下地貌不会在已经拥有地貌的地格上生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_12">
+			<Text>如果这一选项被选中则会允许一个地貌覆盖已经存在的地貌，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_13">
+			<Text>这一选项可能会覆盖之前的指令中生成的地貌。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_5">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_14">
+			<Text>这是地貌改变将会生成的地格数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_6">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_15">
+			<Text>将当前对地形的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_SUB_TITLE_7">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_16">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_17">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_18">
+			<Text>点击上方的按钮以将该指令的内容复制到地貌控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATUREMAPTEXT_TEXT_19">
+			<Text>点击更新按钮以将地貌控制面板中的内容更新到指令中。</Text>
+		</Row>
+		
+		<!-- ResourceCivText -->
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TITLE">
+			<Text>玩家资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在玩家起始地点附近生成资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_1">
+			<Text>资源的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_3">
+			<Text>其次生成玩家资源列表（即本列表）中的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_4">
+			<Text>最后生成地图资源列表（在地图奖励面板）中的资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_2">
+			<Text>资源控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_5">
+			<Text>使用下面的资源控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_6">
+			<Text>所有指令都会试图在地图生成时生成1至多个地格的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_7">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_3">
+			<Text>资源菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_8">
+			<Text>这个菜单包含了一系列可以被添加到地图上的资源列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_9">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_10">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_4">
+			<Text>放宽规则</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_11">
+			<Text>通常情况下资源的生成受到地形、丘陵以及地貌的限制，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_12">
+			<Text>如果这一选项被选中则会忽略其中的一些限制。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_5">
+			<Text>生成模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_13">
+			<Text>这决定了改变资源时将会如何寻找合适的地格：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_14">
+			<Text>选择较近则会使资源从最短距离至最长距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_15">
+			<Text>选择较远则会使资源从最长距离至最短距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_16">
+			<Text>选择随机则会使资源在最短距离至最长距离之间随机生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_17">
+			<Text>选择填充则会使资源在最短距离至最长距离之间均匀生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_6">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_18">
+			<Text>这是资源改变将会生成的资源数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_7">
+			<Text>最短距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_19">
+			<Text>这是资源可能会被改变的距离玩家起始地点的最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_20">
+			<Text>最短距离不可以大于最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_21">
+			<Text>试图将最短距离的滚动条移动超过最长距离会使得最长距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_8">
+			<Text>最长距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_22">
+			<Text>这是资源可能会被改变的距离玩家起始地点的最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_23">
+			<Text>最长距离不可以小于最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_24">
+			<Text>试图将最长距离的滚动条移动超过最短距离会使得最短距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_9">
+			<Text>资源类型</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_25">
+			<Text>这控制了资源菜单中显示的资源类型，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_26">
+			<Text>选择“全部”选项以显示当前游戏中允许的所有资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_27">
+			<Text>选择其他选项以显示特定种类的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_28">
+			<Text>每个种类的资源都有一个对应的随机选项。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_10">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_29">
+			<Text>将当前对资源的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_11">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_30">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_31">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_32">
+			<Text>点击上方的按钮以将该指令的内容复制到资源控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_33">
+			<Text>点击更新按钮以将资源控制面板中的内容更新到指令中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_SUB_TITLE_12">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_34">
+			<Text>将玩家资源列表中的所有指令应用到所有玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCECIVTEXT_TEXT_35">
+			<Text>在玩家资源列表中不存在指令时将会清空所有玩家资源列表中的指令。</Text>
+		</Row>
+		
+		<!-- ResourceMapText -->
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TITLE">
+			<Text>地图资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在整张地图上随机生成资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_1">
+			<Text>资源的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_3">
+			<Text>其次生成玩家资源列表（在玩家奖励面板）中的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_4">
+			<Text>最后生成地图资源列表（即本列表）中的资源。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_2">
+			<Text>资源控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_5">
+			<Text>使用下面的资源控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_6">
+			<Text>所有指令都会试图在地图生成时生成1至多个地格的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_7">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_3">
+			<Text>资源菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_8">
+			<Text>这个菜单包含了一系列可以被添加到地图上的资源列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_9">
+			<Text>使用此菜单来选择当前地形，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_10">
+			<Text>当前地形将会在左侧的图片中显示。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_4">
+			<Text>放宽规则</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_11">
+			<Text>通常情况下资源的生成受到地形，丘陵以及地貌的限制，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_12">
+			<Text>如果这一选项被选中则会忽略其中的一些限制。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_5">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_13">
+			<Text>这是资源改变将会生成的资源数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_6">
+			<Text>资源类型</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_14">
+			<Text>这控制了资源菜单中显示的资源类型：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_15">
+			<Text>选择“全部”选项以显示当前游戏中允许的所有资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_16">
+			<Text>选择其他选项以显示特定种类的资源，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_17">
+			<Text>每个种类的资源都有一个对应的随机选项。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_7">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_18">
+			<Text>将当前对资源的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_SUB_TITLE_8">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_19">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_20">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_21">
+			<Text>点击上方的按钮以将该指令的内容复制到资源控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCEMAPTEXT_TEXT_22">
+			<Text>点击更新按钮以将资源控制面板中的内容更新到指令中。</Text>
+		</Row>
+		
+		<!-- NaturalWonderCivText -->
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TITLE">
+			<Text>玩家奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在玩家起始地点附近生成自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_1">
+			<Text>自然奇观的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_3">
+			<Text>其次生成玩家奇观列表（即本列表）中的自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_4">
+			<Text>最后生成地图奇观列表（在地图奖励面板）中的自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_5">
+			<Text>地图面板中拥有其他选项以控制自然奇观的生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_6">
+			<Text>游戏开始时即存在于玩家单位视野中的奇观在被发现时不会给予额外快乐，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_7">
+			<Text>大堡礁与直布罗陀巨岩由于图形问题，本组模不支持生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_8">
+			<Text>它们依然可以以这个组模以外的方式正常生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_2">
+			<Text>奇观控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_9">
+			<Text>使用下面的奇观控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_10">
+			<Text>所有指令都会试图在地图生成时生成1至多个自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_11">
+			<Text>大多数自然奇观都对生成地形有着严格的要求，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_12">
+			<Text>由于地图本身环境影响，最终可能只有少量列表中的奇观生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_13">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_3">
+			<Text>奇观菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_14">
+			<Text>这个菜单包含了一系列可以被添加到地图上的奇观列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_15">
+			<Text>使用此菜单来选择当前奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_16">
+			<Text>当前奇观将会在左侧的图片中显示，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_17">
+			<Text>移动鼠标到图片上以查看更多关于此奇观的信息。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_4">
+			<Text>添加点缀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_18">
+			<Text>可以通过这一选项在自然奇观附近生成随机资源以“增加情趣”，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_19">
+			<Text>如果地图环境允许，生成的资源的种类将与自然奇观相协调。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_5">
+			<Text>生成模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_20">
+			<Text>这决定了改变奇观时将会如何寻找合适的地格：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_21">
+			<Text>选择较近则会使奇观从最短距离至最长距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_22">
+			<Text>选择较远则会使奇观从最长距离至最短距离开始生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_23">
+			<Text>选择随机则会使奇观在最短距离至最长距离之间随机生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_24">
+			<Text>选择填充则会使奇观在最短距离至最长距离之间均匀生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_6">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_25">
+			<Text>这是奇观改变将会生成的奇观数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_7">
+			<Text>最短距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_26">
+			<Text>这是奇观可能会被改变的距离玩家起始地点的最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_27">
+			<Text>最短距离不可以大于最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_28">
+			<Text>试图将最短距离的滚动条移动超过最长距离会使得最长距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_8">
+			<Text>最长距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_29">
+			<Text>这是奇观可能会被改变的距离玩家起始地点的最长距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_30">
+			<Text>最长距离不可以小于最短距离，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_31">
+			<Text>试图将最长距离的滚动条移动超过最短距离会使得最短距离也随之改变。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_9">
+			<Text>最大允许数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_32">
+			<Text>这决定了每种奇观在地图上所能生成的最大数量，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_33">
+			<Text>这个数值可以在地图面板中更改。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_10">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_34">
+			<Text>将当前对奇观的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_11">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_35">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_36">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_37">
+			<Text>点击上方的按钮以将该指令的内容复制到奇观控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_38">
+			<Text>点击更新按钮以将奇观控制面板中的内容更新到指令中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_SUB_TITLE_12">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_39">
+			<Text>将玩家奇观列表中的所有指令应用到所有玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERCIVTEXT_TEXT_40">
+			<Text>在玩家奇观列表中不存在指令时将会清空所有玩家奇观列表中的指令。</Text>
+		</Row>
+		
+		<!-- NaturalWonderMapText -->
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TITLE">
+			<Text>地图奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以在整张地图上随机生成自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_1">
+			<Text>自然奇观的生成方式有三种：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_2">
+			<Text>首先生成游戏本身生成地图时产生的自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_3">
+			<Text>其次生成玩家奇观列表（即本列表）中的自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_4">
+			<Text>最后生成地图奇观列表（在地图奖励面板）中的自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_5">
+			<Text>地图面板中拥有其他选项以控制自然奇观的生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_6">
+			<Text>游戏开始时即存在于玩家单位视野中的奇观在被发现时不会给予额外快乐，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_7">
+			<Text>大堡礁与直布罗陀巨岩由于图形问题，本组模不支持生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_8">
+			<Text>它们依然可以以这个组模以外的方式正常生成。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_2">
+			<Text>奇观控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_9">
+			<Text>使用下面的奇观控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_10">
+			<Text>所有指令都会试图在地图生成时生成1至多个自然奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_11">
+			<Text>大多数自然奇观都对生成地形有着严格的要求，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_12">
+			<Text>由于地图本身环境影响，最终可能只有少量列表中的奇观生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_13">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_3">
+			<Text>奇观菜单</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_14">
+			<Text>这个菜单包含了一系列可以被添加到地图上的奇观列表，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_15">
+			<Text>使用此菜单来选择当前奇观，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_16">
+			<Text>当前奇观将会在左侧的图片中显示，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_17">
+			<Text>移动鼠标到图片上以查看更多关于此奇观的信息。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_4">
+			<Text>添加点缀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_18">
+			<Text>可以通过这一选项在自然奇观附近生成随机资源以“增加情趣”，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_19">
+			<Text>如果地图环境允许，生成的资源的种类将与自然奇观相协调。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_5">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_20">
+			<Text>这是奇观改变将会生成的奇观数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_6">
+			<Text>最大允许数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_21">
+			<Text>这决定了每种奇观在地图上所能生成的最大数量，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_22">
+			<Text>这个数值可以在地图面板中更改。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_7">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_23">
+			<Text>将当前对奇观的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_SUB_TITLE_8">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_24">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_25">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_26">
+			<Text>点击上方的按钮以将该指令的内容复制到奇观控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERMAPTEXT_TEXT_27">
+			<Text>点击更新按钮以将奇观控制面板中的内容更新到指令中。</Text>
+		</Row>
+		
+		<!-- UnitCivText -->
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TITLE">
+			<Text>玩家单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_1">
+			<Text>使用这个列表以替换玩家的起始单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_1">
+			<Text>当列表中不存在指令时不会改变玩家起始时拥有的单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_2">
+			<Text>当列表中存在指令时，玩家起始时只会拥有列表中的单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_3">
+			<Text>单位只会生成在玩家起始地点附近可以生成单位的地格中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_4">
+			<Text>一旦玩家起始地点附近的地格全部被占用则不会有更多的单位生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_5">
+			<Text>单位按照此列表中的顺序依次生成在地图上，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_6">
+			<Text>飞行单位，商队和商船将在玩家的第一座城市建立时生成，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_7">
+			<Text>商船要求生成的第一座城市沿海。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_2">
+			<Text>单位控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_8">
+			<Text>使用下面的单位控件以将指令添加到此列表中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_9">
+			<Text>所有指令都会试图在地图生成时生成1至多个单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_10">
+			<Text>请记住所有指令都会增加创建地图的总时长。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_3">
+			<Text>单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_11">
+			<Text>这个菜单包含了一系列这个文明可以被添加的单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_12">
+			<Text>它可以包含游戏中所有的可用单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_13">
+			<Text>由于单位列表过长，可以使用下述的方法进行过滤。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_4">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_14">
+			<Text>这是资源改变将会生成的单位数量（如果环境允许）。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_5">
+			<Text>初始经验</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_15">
+			<Text>控制这条命令所生成的单位初始的经验等级。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_6">
+			<Text>显示超越起始时代的单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_16">
+			<Text>勾选此选项以在单位菜单中显示超越游戏起始时代的单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_7">
+			<Text>显示其他文明的独有单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_17">
+			<Text>勾选此选项以在单位菜单中显示其他文明独有的单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_8">
+			<Text>单位类型</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_18">
+			<Text>勾选战斗单位以在单位菜单中只显示战斗单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_19">
+			<Text>勾选非战斗单位以在单位菜单中只显示非战斗单位，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_20">
+			<Text>勾选全部以在单位菜单中显示战斗单位与非战斗单位。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_9">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_21">
+			<Text>将当前对单位的设定作为一条新的指令添加到列表中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_10">
+			<Text>列表控制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_22">
+			<Text>可以使用一些方法来控制列表中的指令：</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_23">
+			<Text>点击右侧的“x”键以删除该指令，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_24">
+			<Text>点击上方的按钮以将该指令的内容复制到单位控制面板中，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_25">
+			<Text>点击更新按钮以将单位控制面板中的内容更新到指令中。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_SUB_TITLE_11">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_26">
+			<Text>将玩家单位列表中的所有指令应用到所有玩家，</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITCIVTEXT_TEXT_27">
+			<Text>在玩家单位列表中不存在指令时将会清空所有玩家单位列表中的指令。</Text>
+		</Row>
+		
+	<!-- GTAS_StartBias -->
+		<Row Tag="TXT_KEY_GTAS_ALONG_OCEAN">
+			<Text>沿海</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ALONG_RIVER">
+			<Text>沿河</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ESTUARY">
+			<Text>入海口</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_REGION_PRIORITY">
+			<Text>优先区域</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_REGION_AVOID">
+			<Text>避免区域</Text>
+		</Row>
+		
+	<!-- GTAS_Utilities -->
+		<Row Tag="TXT_KEY_RED_INVALID_MAP_DESC">
+			<Text>[COLOR_RED]无效的地图文件[ENDCOLOR]</Text>
+		</Row>
+		
+	<!-- GTAS_Utilities -->
+		<Row Tag="TXT_KEY_GTAS_NEAR">
+			<Text>较近</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FAR">
+			<Text>较远</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FILL">
+			<Text>填充</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MAP">
+			<Text>全图</Text>
+		</Row>
+		
+	<!-- GTAS_ResourceTypes -->
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_GROUP_ALL">
+			<Text>随机（全部）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_GROUP_BONUS">
+			<Text>随机（奖励）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_GROUP_LUXURY">
+			<Text>随机（奢侈）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_GROUP_STRATEGIC">
+			<Text>随机（战略）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_GROUP_X">
+			<Text>资源类型？</Text>
+		</Row>
+		
+	<!-- GTAS_WonderTypes -->
+		<Row Tag="TXT_KEY_GTAS_NIL_FEATURE">
+			<Text>将会随机选择自然奇观。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PLOT_YIELD">
+			<Text>地格产出： </Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SPRINKLES">
+			<Text>[NEWLINE]资源点缀： </Text>
+		</Row>
+		
+	<!-- GTAS_CivBonus -->
+		<Row Tag="TXT_KEY_GTAS_FEATURE_ERROR">
+			<Text>地貌错误</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RANDOM_FEATURE">
+			<Text>随机地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_TITLE">
+			<Text>地格数量        最短距离        最长距离            生成模式            替换地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_CLEAR_LIST">
+			<Text>清空列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_LIST">
+			<Text>应用到所有玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURE_REPLACING">
+			<Text>替换已存在的地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PLACEMENT">
+			<Text>生成模式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COUNT">
+			<Text>数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MIN_DISTANCE">
+			<Text>最短距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MAX_DISTANCE">
+			<Text>最长距离</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADD_TO_LIST">
+			<Text>添加到列表</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UPDATE">
+			<Text>更新</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_ERROR">
+			<Text>资源错误</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TITLE">
+			<Text>地格数量       最短距离        最长距离          生成模式          放宽规则</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES">
+			<Text>资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RELAXED_RULES">
+			<Text>放宽规则</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE">
+			<Text>资源类型</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_ALL">
+			<Text>全部</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_BONUS">
+			<Text>奖励资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_LUXURY">
+			<Text>奢侈资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCE_TYPE_STRATEGIC">
+			<Text>战略资源</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_START_BIAS">
+			<Text>起始地点</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_COPY_CIVS">
+			<Text>应用到所有文明</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_ERROR">
+			<Text>地形错误</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RANDOM_TERRAIN">
+			<Text>随机地形</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_TITLE">
+			<Text>地格数量        最短距离        最长距离        生成模式          海拔       水面/地面</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_CHANGE_WATER_LAND">
+			<Text>水陆转换</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_ELEVATION">
+			<Text>海拔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_NO_ELEVATION">
+			<Text>无海拔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_NO_CHANGE">
+			<Text>不改变</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_UNIT_BARBARIAN_ARCHER">
+			<Text>蛮族弓箭手</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_BARBARIAN_SPEARMAN">
+			<Text>蛮族矛兵</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_BARBARIAN_SWORDSMAN">
+			<Text>蛮族剑士</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_ERROR">
+			<Text>单位错误</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_TITLE">
+			<Text>单位数量                           初始经验</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_EXPERIENCE">
+			<Text>经验</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_NOT_AVAILABLE">
+			<Text>（该单位不可用）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_FUTURE">
+			<Text>显示超越起始时代的单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SHOW_UNIQUE">
+			<Text>显示其他文明的独有单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_TYPE">
+			<Text>单位类型</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_COMBAT">
+			<Text>战斗单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_NONCOMBAT">
+			<Text>非战斗单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNIT_BOTH">
+			<Text>全部</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_GTAS_WONDER_ERROR">
+			<Text>奇观错误</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RANDOM_WONDER">
+			<Text>随机奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS">
+			<Text>自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_UNLIMITED">
+			<Text>无限制</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_SINGLE">
+			<Text>唯一的（默认）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_DISABLED">
+			<Text>自然奇观的效果已经被禁用。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_TO_CHANGE">
+			<Text>你可以在游戏面板中改变此选项。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_TITLE">
+			<Text>地格数量        最短距离        最长距离          生成模式        资源点缀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_SPRINKLES">
+			<Text>添加点缀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_1">
+			<Text>地图上生成的</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_2">
+			<Text>所有自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_ON_MAP">
+			<Text>最大允许数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_LOCATED_1">
+			<Text>（此选项位于</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_LOCATED_2">
+			<Text>地图面板中）</Text>
+		</Row>
+		
+	<!-- GTAS_CivBonusPanel -->
+		<Row Tag="TXT_KEY_GTAS_EDIT_NAME">
+			<Text>编辑名称</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_NAME">
+			<Text>重置所有名称</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PREVIOUS_PLAYER">
+			<Text>上一玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_NEXT_PLAYER">
+			<Text>下一玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_STARTING_BONUS">
+			<Text>初始奖励</Text>
+		</Row>
+		
+	<!-- GTAS_CivPanel -->
+		<Row Tag="TXT_KEY_RESET_PANEL">
+			<Text>重置此面板</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_PLAYER_HELP">
+			<Text>将这名玩家的所有设置还原为默认值。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_REMOVE_PLAYER_HELP">
+			<Text>从游戏中去掉这名玩家。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_BONUSES">
+			<Text>奖励</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_BONUSES_TT">
+			<Text>打开起始奖励面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES_LONG">
+			<Text>初始资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES_LONG_TT">
+			<Text>打开起始资源面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_LONG">
+			<Text>初始地形</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_LONG_TT">
+			<Text>打开起始地形面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_LONG">
+			<Text>初始地貌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_LONG_TT">
+			<Text>打开起始地貌面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITS_LONG">
+			<Text>初始单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITS_LONG_TT">
+			<Text>打开起始单位面板。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_LONG">
+			<Text>自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_LONG_TT">
+			<Text>打开起始自然奇观面板。</Text>
+		</Row>
+		
+	<!-- GTAS_GamePanel -->
+		<Row Tag="TXT_KEY_GTAS_STANDARD_OPTIONS">
+			<Text>标准游戏选项</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VICTORY_TYPES">
+			<Text>胜利方式</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADVANCED_OPTIONS">
+			<Text>RAS 高级选项</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_NUKES">
+			<Text>禁止核武器</Text>
+		</Row>
+		
+	<!-- GTAS_GamePanel -->
+		<Row Tag="TXT_KEY_GTAS_RANDOMLY_SELECTED">
+			<Text>随机选择</Text>
+		</Row>
+		
+	<!-- GTAS_MapPanel -->
+		<Row Tag="TXT_KEY_GTAS_OPTIONS_FOR">
+			<Text>{1_MapName}地图选项</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_ALL_NW">
+			<Text>禁用所有自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_OTHER_NW">
+			<Text>禁用其他自然奇观</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES">
+			<Text>所有奇观的最大允许数量</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_SET_VALUE">
+			<Text>设置数值</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY">
+			<Text>可见范围</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY_MAP">
+			<Text>整张地图</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ACTIVE_CIV">
+			<Text>可选文明</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SELECE_ALL_CIVS">
+			<Text>选择全部</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SELECE_ALL_CIVS_HELP">
+			<Text>选择列表中的所有文明。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DESELECT_ALL_CIVS">
+			<Text>取消全选</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DESELECT_ALL_CIVS_HELP">
+			<Text>取消选择列表中的所有文明。</Text>
+		</Row>
+		
+	<!-- AdvancedSetup -->
+		<Row Tag="TXT_KEY_GTAS_A_START_PLAYERS">
+			<Text>？名玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_B_START_PLAYERS">
+			<Text>{1_NumPlayers}名玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_1">
+			<Text>必须至少创建两支队伍！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_2">
+			<Text>必须至少有一个可用的文明！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_3">
+			<Text>只有一个文明可用，这会导致游戏中出现重复的文明！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_4">
+			<Text>可用文明数少于玩家数，这会导致游戏中出现重复的文明！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_5">
+			<Text>地图上不会自动产生自然奇观！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_6">
+			<Text>该局禁止生产和使用核武器！</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VALIDATESTART_HELP_7">
+			<Text>使用当前设置开始游戏。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MOD_TITLE">
+			<Text>RAS 游戏高级设定</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PLAYER_BONUS">
+			<Text>玩家奖励</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MAP_BONUS">
+			<Text>地图奖励</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_MOD_GAME">
+			<Text>游戏</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_PANEL">
+			<Text>重置所有面板</Text>
+		</Row>
+		
+	<!-- LoadScreen -->
+		<Row Tag="TXT_KEY_GTAS_BONUS_TITLE">
+			<Text>奖励标签</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>

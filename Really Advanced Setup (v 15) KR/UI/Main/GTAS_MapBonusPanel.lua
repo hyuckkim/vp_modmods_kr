@@ -45,7 +45,7 @@ function BuildTopPanel()
 
 			if info == nil then
 				SimpleCivIconHookup(-1, 64, instance.IndicatorPortrait);		
-				instance.IndicatorPortrait:SetToolTipString("Randomly Selected");
+				instance.IndicatorPortrait:SetToolTipString("무작위로 선택됨");
 			else
 				IconHookup(info.PortraitIndex, 64, info.IconAtlas, instance.IndicatorPortrait);
 				instance.IndicatorPortrait:LocalizeAndSetToolTip(info.Description);

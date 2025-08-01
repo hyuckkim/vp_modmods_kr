@@ -27,7 +27,7 @@
                     <Label Anchor="C,C" WrapWidth="460" ID="Quote" LeadingOffset="-4" Offset="0,0" ColorSet="Beige_Black_Alpha" Font="TwCenMT14" FontStyle="Shadow"/>
                     <Box Anchor="C.C" Offset="0,0" Size="400,6" Color="White.0"/>
                     <Image Anchor="C,C" Offset="0,0" Texture="bar340x2.dds" Size="340.1"/>
-                    <Label Anchor="C,C" Offset="0,0" ID="BonusTitle" String="BONUS LABEL" ColorSet="Beige_Black_Alpha" Font="TwCenMT24" FontStyle="Shadow"/>
+                    <Label Anchor="C,C" Offset="0,0" ID="BonusTitle" String="TXT_KEY_BONUS_LABEL" ColorSet="Beige_Black_Alpha" Font="TwCenMT24" FontStyle="Shadow"/>
                     <Label Anchor="C,C" WrapWidth="460" ID="BonusDescription" LeadingOffset="-4" Offset="0,0" ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Shadow"/>
                     <Image Anchor="C,C" Offset="0,0" Texture="bar340x2.dds" Size="340.1"/>
                     <Stack Anchor="C,C" Offset="0,0" StackGrowth="Right" Padding="0" ID="SubStack" >

@@ -4,6 +4,9 @@
 	<Language_ko_KR>
 		
 		<!-- Start Bonuses +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_STARTING_BONUS">
+			<Text>시작 보너스</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_START_BIAS_HELP">
 			<Text>이 설정을 사용하면 해당 플레이어의 시작 위치를 설정할 수 있습니다. 게임은 제한된 수의 시작 플롯만 생성하므로 실제 시작 위치는 보장되지 않습니다.</Text>
 		</Row>
@@ -168,6 +171,9 @@
 		</Row>
 
 		<!-- Advanced Setup Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_PANEL">
+			<Text>모든 패널 초기화</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_RESET_ALL_PANELS_HELP">
 			<Text>모든 패널의 모든 값을 기본값으로 설정합니다.</Text>
 		</Row>
@@ -182,9 +188,59 @@
 		<Row Tag="TXT_KEY_GTAS_RESET_CIV_PANEL_HELP">
 			<Text>모든 문명 설정을 기본값으로 설정합니다.</Text>
 		</Row>
-
-
+		<Row Tag="TXT_KEY_RESET_PANEL">
+			<Text>이 패널 초기화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_BONUSES">
+			<Text>보너스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_BONUSES_TT">
+			<Text>시작 보너스 패널을 엽니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES_LONG">
+			<Text>자원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESOURCES_LONG_TT">
+			<Text>플레이어 자원 패널을 엽니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_LONG">
+			<Text>지형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_TERRAIN_LONG_TT">
+			<Text>플레이어 지형 패널을 엽니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_LONG">
+			<Text>특징</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_FEATURES_LONG_TT">
+			<Text>플레이어 특징 패널을 엽니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITS_LONG">
+			<Text>유닛</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_UNITS_LONG_TT">
+			<Text>플레이어 유닛 패널을 엽니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_LONG">
+			<Text>불가사의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_LONG_TT">
+			<Text>플레이어 불가사의 패널을 엽니다.</Text>
+		</Row>
+		
 		<!-- Civ Bonus Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_EDIT_NAME">
+			<Text>이름 편집</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_RESET_ALL_NAME">
+			<Text>모든 이름 초기화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_PREVIOUS_PLAYER">
+			<Text>이전 플레이어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_NEXT_PLAYER">
+			<Text>다음 플레이어</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_EDIT_CIV_NAME_HELP">
 			<Text>이렇게 하면 플레이어 이름 편집 상자가 열리고, 여기서 플레이어의 지도자와 문명 이름을 변경할 수 있습니다.</Text>
 		</Row>
@@ -200,6 +256,9 @@
 
 
 		<!-- Map Bonus Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_MAP_BONUS">
+			<Text>지도 보너스</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_RESET_MAP_BONUS_PANEL_HELP">
 			<Text>모든 맵 보너스 설정을 기본값으로 설정합니다.</Text>
 		</Row>
@@ -215,8 +274,14 @@
 		<Row Tag="TXT_KEY_GTAS_VISIBILITY_MAP_HELP">
 			<Text>이렇게 하면 게임이 시작될 때 모든 플레이어가 전체 지도를 볼 수 있습니다.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_ALL_NW">
+			<Text>모든 자연경관 비활성화</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_DISABLE_ALL_NW_HELP">
 			<Text>이렇게 하면 게임 내 모든 자연경관이 비활성화됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_OTHER_NW">
+			<Text>나머지 자연경관 비활성화</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GTAS_DISABLE_OTHER_NW_HELP">
 			<Text>이 모드로 생성되지 않은 모든 자연경관이 비활성화됩니다.</Text>
@@ -224,14 +289,42 @@
 		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES_HELP">
 			<Text>이 설정을 사용하면 각 자연경관 유형에 허용되는 최대 사본 수를 설정할 수 있습니다.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_GTAS_ACTIVE_CIV">
+			<Text>유효한 문명</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_ACTIVE_CIV_HELP">
 			<Text>선택된 문명만 게임에 등장합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GTAS_RESET_MAP_PANEL_HELP">
 			<Text>모든 지도 옵션을 기본값으로 설정합니다.</Text>
 		</Row>
-
-
+		<Row Tag="TXT_KEY_GTAS_OPTIONS_FOR">
+			<Text>{1_MapName} 설정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDER_MAX_COPIES">
+			<Text>각 자연경관의 최대 사본 수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_WONDERS_SET_VALUE">
+			<Text>값 설정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY">
+			<Text>시야</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VISIBILITY_MAP">
+			<Text>지도 전체</Text>
+		</Row>
+				<Row Tag="TXT_KEY_GTAS_SELECE_ALL_CIVS">
+			<Text>모두 선택</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_SELECE_ALL_CIVS_HELP">
+			<Text>목록의 모든 문명을 선택합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DESELECT_ALL_CIVS">
+			<Text>모두 해제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DESELECT_ALL_CIVS_HELP">
+			<Text>목록의 모든 문명을 선택 해제합니다.</Text>
+		</Row>
 		<!-- Game Panel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 		<Row Tag="TXT_KEY_GTAS_OPTIONAL_SETTLERS_HELP">
 			<Text>이 설정을 선택하면 하나 이상의 문명이 개척자 없이 게임을 시작할 수 있습니다. 플레이어 편집 패널에서 플레이어의 시작 유닛을 수동으로 생성하고 개척자를 제외하면 됩니다. 시작 개척자가 없고 공격할 도시가 없는 고립된 위치에서 시작하는 플레이어는 개척자를 받게 됩니다.</Text>
@@ -242,9 +335,23 @@
 		<Row Tag="TXT_KEY_GTAS_RESET_GAME_PANEL_HELP">
 			<Text>모든 게임 설정을 기본값으로 설정합니다.</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_GTAS_STANDARD_OPTIONS">
+			<Text>표준 게임 설정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_VICTORY_TYPES">
+			<Text>승리 유형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_ADVANCED_OPTIONS">
+			<Text>진짜 고급 설정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GTAS_DISABLE_NUKES">
+			<Text>핵무기 비활성화</Text>
+		</Row>
 
 		<!-- Misc. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Row Tag="TXT_KEY_GTAS_MOD_TITLE">
+			<Text>진짜 고급 설정</Text>
+		</Row>
 		<Row Tag="TXT_KEY_GTAS_MOD_TITLE_HELP">
 			<Text>General Tso의 진짜 고급 설정 모드</Text>
 		</Row>
@@ -257,7 +364,3 @@
 
 	</Language_ko_KR>
 </GameData>
-
-
-
-

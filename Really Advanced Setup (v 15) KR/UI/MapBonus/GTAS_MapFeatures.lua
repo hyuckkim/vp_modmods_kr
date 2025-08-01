@@ -116,14 +116,14 @@ function BuildFeatures()
 				instance.FeatureName:LocalizeAndSetText(info.Description);
 			else
 				IconHookup(22, 64, "LEADER_ATLAS", instance.FeaturePortrait);
-				instance.FeatureName:LocalizeAndSetText("Random");
+				instance.FeatureName:LocalizeAndSetText("무작위");
 			end
 
 			instance.FeatureCount:SetText(tostring(feature.count));
 			instance.FeatureMinRad:SetText("*");
 			instance.FeatureMaxRad:SetText("*");
 			instance.FeaturePlacement:SetText(GetPlacementText(feature.placementType));
-			instance.FeatureReplace:SetText(feature.replaceFeature and "Yes" or "No");
+			instance.FeatureReplace:SetText(feature.replaceFeature and "설정" or "해제");
 
 			function OnFeatureButton()
 				if info ~= nil then

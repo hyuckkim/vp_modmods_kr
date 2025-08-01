@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/14/2015 -->
+<GameData>
+	<!--Events and Decisions Support-->
+	<DecisionsAddin_Support>
+		<Row>
+			<FileName>Plague_Decisions.lua</FileName>
+		</Row>
+	</DecisionsAddin_Support>
+	
+	<Language_en_US>
+		<Row Tag="TXT_KEY_DECISIONS_PLAGUECURE">
+			<Text>Fund a Plague Cure</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_PLAGUECURE_DESC">
+			<Text>
+				Advances in medicine and sanitation have made possible a cure for the current plague.[NEWLINE]
+				[NEWLINE]Requirement/Restrictions:
+				[NEWLINE][ICON_BULLET]One of our cities must be [ICON_PLAGUE] Plagued
+				[NEWLINE][ICON_BULLET]May only be enacted from the beginning of the Medieval Era
+				[NEWLINE][ICON_BULLET]May only be enacted once per era
+				[NEWLINE]Costs:
+				[NEWLINE][ICON_BULLET]{1_Gold} [ICON_GOLD] Gold
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]Ends the current Plague in our cities.
+				[NEWLINE][ICON_BULLET]Grants our cities immunity for the duration of the current Plague.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_PLAGUECURE_ENACTED_DESC">
+			<Text>
+				Advances in medicine and sanitation have made possible a cure for the current plague.[NEWLINE]
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]Ends the current plague in our cities.
+				[NEWLINE][ICON_BULLET]Grants our cities immunity for the duration of the current Plague.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

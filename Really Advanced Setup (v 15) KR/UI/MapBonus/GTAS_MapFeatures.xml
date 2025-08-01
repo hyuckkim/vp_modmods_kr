@@ -12,10 +12,10 @@
 
 					<Container ID="ListTitle" Anchor="C,T" Offset="0,0" Size="941,35" >
 
-						<Label Anchor="L,B" Offset="249,4" Font="TwCenMT14" String="Plot Count        Min Distance        Max Distance             Placement Style            Replace Feature" />
+						<Label Anchor="L,B" Offset="249,4" Font="TwCenMT14" String="TXT_KEY_GTAS_FEATURES_TITLE" />
 
 						<GridButton ID="ClearList" Anchor="R,B" Offset="8,2" Size="85,28" Style="SmallButton" ToolTip="TXT_KEY_GTAS_CLEAR_COMMANDS_HELP" >
-							<Label Anchor="C,C"  Offset="-1,-1"  String="Clear List" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+							<Label Anchor="C,C"  Offset="-1,-1"  String="TXT_KEY_GTAS_CLEAR_LIST" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
 						</GridButton>
 
 					</Container>
@@ -59,12 +59,12 @@
 
 							<!--Feature PullDown-->
 							<Container Anchor="L,T" Offset="0,0" Size="225,32" >
-								<Label Anchor="L,T" Offset="2,4" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" String="Feature" />
+								<Label Anchor="L,T" Offset="2,4" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" String="TXT_KEY_PEDIA_TERRAIN_FEATURES_LABEL" />
 								<PullDown ID="FeaturePulldown" Anchor="R,T" Offset="0,0"  Size="140,28" Style="GenericPullDown" ScrollThreshold="218" AutoSizePopUp="1" SpaceForScroll="1" />
 							</Container>
 
 							<!--Overwrite Previous CheckBox-->
-							<CheckBox ID="ReplaceFeature" Anchor="L,C" Offset="244,-3" ButtonTexture="assets/UI/Art/Controls/CheckBox2TheBox.dds" Font="TwCenMT20" TextAnchorSide="Right" TextOffset="35,0" IsChecked="0" ConsumeMouse="1" String="Replace Existing Feature" ToolTip="TXT_KEY_GTAS_REPLACE_FEATURE_HELP" />
+							<CheckBox ID="ReplaceFeature" Anchor="L,C" Offset="244,-3" ButtonTexture="assets/UI/Art/Controls/CheckBox2TheBox.dds" Font="TwCenMT20" TextAnchorSide="Right" TextOffset="35,0" IsChecked="0" ConsumeMouse="1" String="TXT_KEY_GTAS_FEATURE_REPLACING" ToolTip="TXT_KEY_GTAS_REPLACE_FEATURE_HELP" />
 
 						</Container>
 
@@ -79,7 +79,7 @@
 								<Image Anchor="C,C" Offset="0,0" Texture="bar400x2.dds" Size="400,1" />
 
 								<Container ID="CountControlsOn" Anchor="C,B" Offset="0,0" Size="460,37" >
-									<Label ID="CountLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="Count" ToolTip="TXT_KEY_GTAS_FEATURE_COUNT_HELP" />
+									<Label ID="CountLabel" Anchor="L,B" Offset="15,12" Color0="Beige" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="TXT_KEY_GTAS_COUNT" ToolTip="TXT_KEY_GTAS_FEATURE_COUNT_HELP" />
 									<Label ID="CountValue" Anchor="R,B" Offset="246,11" Color0="130,220,240,255" Font="TwCenMT22" FontStyle="Shadow" MouseOverStyle="SoftShadow" String="0" />
 									<Slider ID="CountSlider" Anchor="R,B" Offset="15,2" Length="220" Style="Slider" WheelSteps="1" />
 								</Container>
@@ -107,7 +107,7 @@
 
 					<Container Anchor="L,B" Offset="258,7" Size="460,30" >
 						<GridButton ID="AddFeature" Anchor="C,C" Offset="0,0" Size="220,30" Style="SmallButton" ToolTip="TXT_KEY_GTAS_ADD_FEATURE_HELP" >
-							<Label Anchor="C,C"  Offset="0,-1"  String="Add To List" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+							<Label Anchor="C,C"  Offset="0,-1"  String="TXT_KEY_GTAS_ADD_TO_LIST" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
 						</GridButton>
 					</Container>
 
@@ -159,7 +159,7 @@
 				<Label ID="FeatureReplace" Anchor="C,C" Offset="0,0" TruncateWidth="50" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" />
 			</Container>
 
-			<TextButton ID="UpdateFeature" Anchor="R,C" Offset="10,0" ColorSet="Beige_Black" Font="TwCenMT14" FontStyle="Shadow" MouseOverStyle="SoftShadow" ConsumeMouse="1" String="update" />
+			<TextButton ID="UpdateFeature" Anchor="R,C" Offset="10,0" ColorSet="Beige_Black" Font="TwCenMT14" FontStyle="Shadow" MouseOverStyle="SoftShadow" ConsumeMouse="1" String="TXT_KEY_GTAS_UPDATE" />
 
 			<Image Anchor="L,B" Offset="15,1" Size="850,1" Texture="HorizontalTrim.dds" />
 

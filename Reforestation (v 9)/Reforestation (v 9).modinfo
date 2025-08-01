@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5114ca56-5621-43cb-a024-e0884b6045da" version="9">
+  <Properties>
+    <Name>Reforestation</Name>
+    <Teaser>Allows Workers to plant Forests. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]For Vanilla, G&amp;K, BNW, any DLC[ENDCOLOR]</Teaser>
+    <Description>[ICON_BULLET]Upon discovering Fertilizer, Plant Forests on Plains, Grassland, Tundra and Snow tiles (replaces existing features or improvements). 
+[NEWLINE][NEWLINE][ICON_BULLET]Newly forested tiles have a small chance to gain a forest resource, like deer or silk. 
+[NEWLINE][NEWLINE][ICON_BULLET]Can be built on tiles outside a Civilization's borders.</Description>
+    <Authors>FramedArchitecture</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="25D0744DE8F298AAEDADE7DD87C9EBBB" import="1">Art/ForestAtlas256.dds</File>
+    <File md5="2590A909FE43EF3C4F3C4DF804B00B54" import="1">Art/ForestAtlas64.dds</File>
+    <File md5="68D2B673B41C95EAC7B427C14EF48188" import="1">Art/resource_timber.fxsxml</File>
+    <File md5="A81060C921CCB0BC1BCA1E5B17C1DE4C" import="1">Art/resource_timber.gr2</File>
+    <File md5="0F1BADC81E1418ED51E2655779599CFC" import="1">Art/SV_PlantForest.dds</File>
+    <File md5="6FB2895C866E8947E41C35768922CE8D" import="1">Art/timber_diff.dds</File>
+    <File md5="71470210CD9FCD7293988F10CA1456AE" import="1">Art/timber_sref.dds</File>
+    <File md5="4689427241EEF750A5029550C109F4CE" import="1">Art/UnitAction45_Forest.dds</File>
+    <File md5="CE7E214F179A6328C803EA80631C0DD5" import="1">Art/UnitAction64_Forest.dds</File>
+    <File md5="F43C631537E443C6E7CD8E9FDA672484" import="0">Database/Reforestation.sql</File>
+    <File md5="71C6D5F714681E6A63CF9A22D9238292" import="0">Localization/Reforest_de_DE.xml</File>
+    <File md5="F51A3D79EA84DF7CD59FE217B4F9C20E" import="0">Localization/Reforest_en_US.xml</File>
+    <File md5="5D937E1CE875B86CE6464D1C6C9FB417" import="0">Localization/Reforest_fr_FR.xml</File>
+    <File md5="47E77531701D216A347E8AB6540A14A9" import="0">Lua/Reforestation.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Database/Reforestation.sql</UpdateDatabase>
+      <UpdateDatabase>Localization/Reforest_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Localization/Reforest_de_DE.xml</UpdateDatabase>
+      <UpdateDatabase>Localization/Reforest_fr_FR.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Reforestation.lua">
+      <Name>Reforestation</Name>
+      <Description>Allows workers to plant forests</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

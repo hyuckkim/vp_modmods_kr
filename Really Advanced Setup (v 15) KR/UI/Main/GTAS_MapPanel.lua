@@ -604,7 +604,7 @@ function BuildCustomOptions()
 		Controls.CustomOptionsBar:SetHide(false);
 
 		for row in GameInfo.MapScripts{FileName = MapData.mapScript} do
-			Controls.CustomOptionsLabel:SetText(string.format("Options for ( %s )", Locale.ConvertTextKey(row.Name)));
+			Controls.CustomOptionsLabel:SetText(string.format("( %s ) 설정", Locale.ConvertTextKey(row.Name)));
 			break;
 		end
 	end

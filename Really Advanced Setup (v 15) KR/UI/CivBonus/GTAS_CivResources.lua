@@ -241,7 +241,7 @@ function BuildResources()
 			instance.ResourceMinRad:SetText(tostring(resource.minDistance));
 			instance.ResourceMaxRad:SetText(tostring(resource.maxDistance));
 			instance.ResourcePlacement:SetText(GetPlacementText(resource.placementType));
-			instance.ResourceRelaxedRules:SetText(resource.relaxedRules and "Yes" or "No");
+			instance.ResourceRelaxedRules:SetText(resource.relaxedRules and "설정" or "해제");
 
 			function OnResourceButton()
 				if info ~= nil then
@@ -300,7 +300,7 @@ function GetResourceText(resources, id)
 		end
 	end
 
-	return "Resource Error";
+	return "자원 오류";
 end
 
 ------------------------------------------------------------------
