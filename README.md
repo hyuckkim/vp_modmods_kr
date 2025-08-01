@@ -48,9 +48,6 @@ VP에 내장된 이벤트가 12개짜리 데모 버전 같은 맛보기 라면 (
 [InGame Editor+ (v 46)](https://forums.civfanatics.com/threads/ingame-editor-for-vp.679650/)  
 VP용 인게임 에디터입니다. 게임 내의 온갖 요소들을 추가, 수정, 삭제 할 수 있는 모드로 모더들이 테스트를 위해 많이 쓰지만 유저들도 이용합니다. 싱글용 핵취급을 받기도 합니다. 번역은 문메폴 패치에 통합되어 있습니다.  
 
-[More Right Click Shortcuts (v 1)](https://forums.civfanatics.com/resources/more-right-click-shortcuts.30060/)  
-마우스 오른쪽 클릭으로 할 수 있는 것들을 좀 더 추가해주는 모드입니다.  
-
 [Quick Turns (v 10)](https://steamcommunity.com/sharedfiles/filedetails/?id=220250184)  
 이미 다들 많이 쓰시는 퀵턴 모드입니다. AI의 턴 동안 빠른 이동/전투를 할 수 있게 해 특히 AI 차례를 지켜보는 시간을 줄여줍니다. 역시나 번역은 문메폴 패치에 통합되어 있습니다.  
 
@@ -245,11 +242,14 @@ VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.
 
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [City States Leaders II (compatible) (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II (compatible) (v 7) INT]  
+City States Leaders II (compatible) (v 7) INT  
 [City States Leaders II (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 [City States Leaders II CS Mods art pack (v 1)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-[City States Leaders II INT]  
+City States Leaders II INT  
 도시 국가에 지도자 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
+
+[More Right Click Shortcuts (v 1)](https://forums.civfanatics.com/resources/more-right-click-shortcuts.30060/)  
+마우스 오른쪽 클릭으로 할 수 있는 것들을 좀 더 추가해주는 모드입니다. 그러나 다른 모드들과 충돌로 인해 빠졌습니다.  
 
 [Reworked Top Panel (v 5)](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  
 Reworked Top Panel (v 5) INT  
