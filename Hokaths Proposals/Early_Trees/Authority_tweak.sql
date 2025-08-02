@@ -15,10 +15,7 @@ VALUES
 
 -- military caste
 
-INSERT INTO Policy_YieldFromXMilitaryUnits
-	(PolicyType, YieldType, Yield)
-VALUES
-	('POLICY_MILITARY_CASTE', 'YIELD_PRODUCTION', 10);
+DELETE FROM Policy_YieldFromXMilitaryUnits WHERE PolicyType = 'POLICY_MILITARY_CASTE';
 
 INSERT INTO Policy_ResourceYieldChanges
 	(PolicyType, ResourceType, YieldType, Yield)

@@ -66,6 +66,10 @@ VALUES
 	('BUILDING_GOLFCLUB', 'YIELD_GOLD', 2),
 	('BUILDING_GOLFCLUB', 'YIELD_CULTURE', 2);
 
+INSERT INTO Building_FeatureYieldChanges
+	(BuildingType, 	FeatureType, YieldType, Yield)
+VALUES
+	('BUILDING_GOLFCLUB', 'FEATURE_OASIS', 'YIELD_CULTURE', 5);
 
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
@@ -127,7 +131,7 @@ VALUES
 	('TXT_KEY_CIV5_MARINA_TEXT', 'A Marina is a dock or basin with moorings and supplies for yachts and small boats. Marinas may be located along the banks of rivers connecting to lakes or seas. Marinas are often components of a resort and include all facilities for yachtsmen but also for other tourists.'),	
 	('TXT_KEY_MARINA_STRATEGY', 'The Marina is the ultimate building for a Coastal City. It produces large amounts of Gold, Culture, and Tourism and further converts Tourism into more Gold! If you have time to build a Marina, you should! However the tourist industry of your City can only be so big! You will have to choose between the Marina, Country Club, and Ski Resorts Buildings based on which Terrain is favoured.'),
 
-	('TXT_KEY_GOLFCLUB_HELP', '+2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all Villages, Towns, and Lakes worked by the City. 5% of [ICON_GOLD] Gold created by the City counts as [ICON_CULTURE] Culture Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Ski Resort or Marina.'),
+	('TXT_KEY_GOLFCLUB_HELP', '+2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all Villages, Towns, and Lakes worked by the City. +5 [ICON_CULTURE] Culture from nearby Oasis. 5% of [ICON_GOLD] Gold created by the City counts as [ICON_CULTURE] Culture Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Ski Resort or Marina.'),
 	('TXT_KEY_GOLFCLUB', 'Country Club'),
 	('TXT_KEY_CIV5_GOLFCLUB_TEXT', 'A country club is a privately owned club, often with a membership quota and admittance by invitation or sponsorship, that generally offers both a variety of recreational sports and facilities for dining and entertaining. In large Cities like London, gentlemen''s clubs took over some parts of the role occupied by coffee houses in the 18th-century. Later, in America, the first modern country clubs founded by upper-class elites between 1880 and 1930. The number of country clubs increased greatly with industrialization, the rise in incomes, and suburbanization in the 1920s. Over time the restrictions on membership have been liberalized, but the upper-class income bracket of the clientele has remained. At the other end of the spectrum is the health club, or gym, which has a reduced offering based purely on recreation. Somewhere between these two extremes are clubs where golf is the principal or sole sporting activity. Indeed, especially outside of the United States and Canada, it is common for a country club to be referred to simply as a golf club.'),	
 	('TXT_KEY_GOLFCLUB_STRATEGY', 'Rather than turning your City into a major tourist destination with the Marina or Ski Resort, you can keep it exclusive to your own wealthy upper class with the Country Club. You can still receive Gold and Culture from Tiles, but not Tourism. Furthermore, instead of producing Gold from Tourism, you will produce a smaller amount of Culture from Gold.');

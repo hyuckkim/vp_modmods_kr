@@ -1,10 +1,5 @@
-------------------------------
--- Text
-------------------------------
 INSERT INTO Language_ko_KR (Tag, Text)
 VALUES	('TXT_KEY_BUILDING_PUBLIC_TRANSPORT',			'Mass Transit'),
 		('TXT_KEY_BUILDING_PUBLIC_TRANSPORT_TEXT',		'Examples of mass transit include city buses, trolleybuses, trams (or light rail) and passenger trains, rapid transit (metro/subway/underground, etc.) and ferries. Buses are known to have operated in Nantes in 1826, not long before the world''s first steam-powered underground railway opened in London in 1863. Today, commuter rail, subways, buses (and trams) are essential infrastructure for the world''s metropolitan hubs. Of the over one million people who commute to London each day, 80% use public transport. Because of the reduced emissions and other environmental impacts of using public transportation over private transportation, many experts have pointed to an increased investment in public transit as an important climate change mitigation tactic.'),
 		('TXT_KEY_BUILDING_PUBLIC_TRANSPORT_STRATEGY',	'While the Agribusiness requires Horses after they have become militarily obsolete, Mass Transit requires Iron when it is still important for producing Units. Therefore the construction of these late game buildings should be carefully rationed to only the Cities where their growth-based yields will be best utilised. The greedier you want to be, the more you can have!'),
 		('TXT_KEY_BUILDING_PUBLIC_TRANSPORT_HELP',		'Gain 20% of the output of [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] in the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +10 [ICON_FOOD] Food if the City has a [COLOR_POSITIVE_TEXT]Power Plant[ENDCOLOR].[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_IRON] Iron and an [ICON_INDUSTRIAL_CONNECTED] Industrial City Connection.');
-
-

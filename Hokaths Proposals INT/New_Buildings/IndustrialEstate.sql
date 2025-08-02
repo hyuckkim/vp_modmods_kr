@@ -1,11 +1,5 @@
-------------------------------
--- Text
-------------------------------
 INSERT INTO Language_ko_KR (Tag, Text)
-VALUES	('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE',			'Industrial Estate'),
-		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_TEXT',		'An Industrial Estate is an area zoned and planned for the purpose of industrial development, and they are usually located on the edges of, or outside, the main residential area of a city, and are normally provided with good transportation access, including road, rail, and (if possible) a port. Industrial parks are notable for being relatively simple to build; they often feature speedily erected single-space steel sheds, occasionally in bright colours. They serve to provide transportation and storage facilities vital to the complex supply chains that underpin the Information Age economy.'),
-		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_STRATEGY',	'The Industrial Estate is the final building that interacts with Gold and Production, converting the former into the latter and giving a major boost to your international trade. Not only do routes give more Gold, because those connected to you are worth more to the sender, it makes you a more attractive trading partner. What is more, in the uncertain world of the Civ V endgame, it also boosts the safer Internal Trade Routes.'),
-		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_HELP',		'When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_PRODUCTION] Production. Incoming [ICON_ARROW_LEFT] Trade Routes generate +6 [ICON_GOLD] Gold for the City and for the [ICON_ARROW_RIGHT] Trade Route owner. Both [ICON_CARAVAN] Land and [ICON_CARGO_SHIP] Sea Trade Routes gain +8 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +12 [ICON_FOOD] Food or [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Requires an [ICON_INDUSTRIAL_CONNECTED] Industrial City Connection before it can be constructed.');
-
-
-
+VALUES	('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE',			'산업단지'),
+		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_TEXT',		'산업단지는 산업 개발을 목적으로 구역 지정 및 계획된 지역으로, 일반적으로 도시의 주요 주거 지역 외곽이나 외곽에 위치하며 도로, 철도, (가능하면) 항구 등 교통 접근성이 좋습니다. 산업단지는 비교적 짓기 쉬운 것으로 유명합니다. 종종 신속하게 세워지는 단일 공간 강철 창고가 특징이며, 가끔은 밝은 색상으로 칠해져 있습니다. 그들은 정보화 시대 경제의 기반이 되는 복잡한 공급망에 필수적인 운송 및 보관 시설을 제공합니다.'),
+		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_STRATEGY',	'산업단지는 골드와 생산력과 상호 작용하는 마지막 건물로, 전자를 후자로 전환하여 국제 무역에 큰 활력을 불어넣습니다. 교역로가 더 많은 골드를 제공할 뿐만 아니라, 당신과 연결된 문명들이 보내는 쪽 문명에게 더 큰 가치를 지니게 되어 당신을 더 매력적인 무역 파트너로 만들어 줍니다. 게다가, 문명 5의 불확실한 엔드게임 세계에서는 더 안전한 내부 교역로를 더욱 강화해 줍니다.'),
+		('TXT_KEY_BUILDING_INDUSTRIAL_ESTATE_HELP',		'이 도시에서 [ICON_INVEST] 골드를 사용하여 유닛을 구매하거나 건물에 투자할 경우, 비용의 15%가 [ICON_PRODUCTION] 생산력으로 전환됩니다. 유입되는 [ICON_ARROW_LEFT] 교역로에서 도시와 [ICON_ARROW_RIGHT] 교역로 소유자는 [ICON_GOLD] 골드 +6을 획득합니다. [ICON_CARAVAN] 육지와 [ICON_CARGO_SHIP] 해상 교역로 모두 [ICON_GOLD] 골드가 +8만큼 증가합니다.[NEWLINE][NEWLINE]이 도시의 내부 [ICON_INTERNATIONAL_TRADE] 교역로를 따라가면 [ICON_FOOD] 식량이나 [ICON_PRODUCTION] 생산력이 +12만큼 증가합니다.[NEWLINE][NEWLINE]건설하려면 [ICON_INDUSTRIAL_CONNECTED] 산업도시와 연결되어야 합니다.');

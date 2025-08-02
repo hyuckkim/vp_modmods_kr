@@ -1,5 +1,5 @@
 UPDATE Language_ko_KR
-SET Text = '10% of [ICON_FOOD] Food is carried over, and 25% of the [ICON_PEACE] Faith output of the City is added as an instant boost whenever a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_PEACE] Faith and [ICON_RESEARCH] Science from Marshes worked by this City.[NEWLINE][NEWLINE]Nearby [ICON_RES_FIGS] Figs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_FOOD] Food.'
+SET Text = '이 도시에서 [ICON_CITIZEN] 시민이 태어날 때마다 [ICON_FOOD] 식량의 10%가 이월되고, 도시의 [ICON_PEACE] 신앙 생성량의 25%가 즉시 증가합니다. 이 도시가 작업 중인 습지에서 [ICON_PEACE] 신앙과 [ICON_RESEARCH] 과학이 +1만큼 증가합니다.[NEWLINE][NEWLINE][ICON_RES_FIGS] 무화과: [ICON_GOLD] 골드 +1, [ICON_PRODUCTION] 생산력 +1, [ICON_FOOD] 식량 +1'
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 
 UPDATE Language_ko_KR

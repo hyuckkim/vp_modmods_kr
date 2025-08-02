@@ -1,6 +1,3 @@
---------
--- text 
---------
 INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES

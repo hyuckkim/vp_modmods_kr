@@ -29,3 +29,9 @@ WHERE Type = 'IMPROVEMENT_POLDER_WATER';
 UPDATE Language_en_US
 SET Text = 'Can only be built on Marsh tiles or on featureless Lake/Coast tiles adjacent to at least 2 land tiles. Polders built on water can be traversed by land units without embarkation, as if they are land tiles.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
+
+UPDATE Improvement_Yields SET Yield = 1 WHERE ImprovementType IN ('IMPROVEMENT_POLDER', 'IMPROVEMENT_POLDER_WATER');
+
+UPDATE Improvement_TechYieldChanges SET Yield = 1 WHERE ImprovementType IN ('IMPROVEMENT_POLDER', 'IMPROVEMENT_POLDER_WATER');
+
+UPDATE ArtDefine_Landmarks SET Scale = 1.075 WHERE ImprovementType = 'ART_DEF_IMPROVEMENT_POLDER';
