@@ -57,7 +57,7 @@ VPEE 호환 패치!
 	WHERE Tag = 'TXT_KEY_BUILDING_SPAIN_BULLRING_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	UPDATE Language_ko_KR
-	SET Text = '투우장은 동물원보다 저렴하고 일찍 등장하는 스페인의 고유한 건물입니다. 동물원이 야영지에 주는 보너스 외에도, 투우장은 목초지에 보너스를 줍니다. 추가 산출량을 얻으려면 자원을 연결하거나 공공 사업을 건설하여 "국왕 경축일"을 많이 실행하는 것에 집중하세요.'
+	SET Text = '투우장은 동물 전시관보다 저렴하고 일찍 등장하는 스페인의 고유한 건물입니다. 동물 전시관이 야영지에 주는 보너스 외에도, 투우장은 목초지에 보너스를 줍니다. 추가 산출량을 얻으려면 자원을 연결하거나 공공 사업을 건설하여 "국왕 경축일"을 많이 실행하는 것에 집중하세요.'
 	WHERE Tag = 'TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- 모로코 리아드
