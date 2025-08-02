@@ -117,28 +117,8 @@ WHERE Tag = 'TXT_KEY_SOCIALPOLICY_IDEOLOGY_HEADING3_BODY';
 
 
 -- Changes to UnitTextChanges
-UPDATE Language_en_US
-SET Text = 'Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. This Unit has a bonus against other Fighters and does not require Oil. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Might[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Air Supremacy[ENDCOLOR] Tenet to be unlocked.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_ZERO';
 
-UPDATE Language_en_US
-SET Text = 'The Zero is unique to the Might Ideology. Requires the Air Supremacy Tenet to be unlocked. The Zero is a moderately-powerful air unit. It is like the standard fighter, except that it gets a significant combat bonus when battling other fighters and [COLOR_POSITIVE_TEXT]does not require the Oil resource[ENDCOLOR]. It can be based in any City you own or aboard an aircraft carrier. It can move from one City to another (or an aircraft carrier) and can perform "missions" within its range of 8 tiles. See the rules on Aircraft for more information.'
-WHERE Tag = 'TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY';
+UPDATE Language_en_US SET
+Text = Replace(Text, 'Autocracy', 'Might')
+WHERE Tag IN ('TXT_KEY_UNIT_HELP_ZERO', 'TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY', 'TXT_KEY_WONDER_PRORA_RESORT_HELP', 'TXT_KEY_BUILDING_EHRENHALLE_HELP', 'TXT_KEY_RESPONSE_DENOUNCE_HUMAN_BELIEVES_AUTOCRACY_2', 'TXT_KEY_GENERIC_SWITCHED_TO_AUTOCRACY_2');
 
--- Changes to BuildingTextChanges
-UPDATE Language_en_US
-SET Text = 'Requires [COLOR_MAGENTA]Might[ENDCOLOR] and can only be constructed in a Coastal City. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +1 [ICON_HAPPINESS_1] Happiness in [ICON_CAPITAL] Capital for every 2 Policies you have adopted. Receive 25 [ICON_CULTURE] Culture when any owned Unit pillages a tile, scaling with Era.'
-WHERE Tag = 'TXT_KEY_WONDER_PRORA_RESORT_HELP';
-
--- Changes to NewBuildingText
-UPDATE Language_en_US
-SET Text = 'Requires [COLOR_MAGENTA]Might[ENDCOLOR]. +15 [ICON_TOURISM] Tourism and +5% [ICON_PRODUCTION] Production in the City in which it is built. Receive 2 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegates in the World Congress for every [COLOR_POSITIVE_TEXT]Enemy[ENDCOLOR] [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] you control.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'
-WHERE Tag = 'TXT_KEY_BUILDING_EHRENHALLE_HELP';
-
-UPDATE Language_en_US
-SET Text = 'Other nations may hesitate in fear of you, but for the sake of this world, ours shall be the one to take a stand. Renounce your belief in Might before it is too late![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]They have publicly denounced us![ENDCOLOR])'
-WHERE Tag = 'TXT_KEY_RESPONSE_DENOUNCE_HUMAN_BELIEVES_AUTOCRACY_2';
-
-UPDATE Language_en_US
-SET Text = 'The new world order of Might is a force that cannot be denied. Your decision to join our cause was inevitable, and will lead to a great and triumphant future.'
-WHERE Tag = 'TXT_KEY_GENERIC_SWITCHED_TO_AUTOCRACY_2';

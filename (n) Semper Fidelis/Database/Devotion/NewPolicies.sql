@@ -1,4 +1,3 @@
--- use the IsReligious field to make as compatible as possible
 INSERT INTO Policy_BuildingClassYieldChanges
         (PolicyType, BuildingClassType, YieldType, YieldChange)
 SELECT  'POLICY_STATE_RELIGION', b.BuildingClass, a.Type, 1

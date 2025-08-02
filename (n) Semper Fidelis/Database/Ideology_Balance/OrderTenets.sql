@@ -1,3 +1,75 @@
+-- People's Army, change Public School for Factory
+ 
+UPDATE Policy_BuildingClassYieldChanges SET
+BuildingClassType = 'BUILDINGCLASS_FACTORY'
+WHERE PolicyType = 'POLICY_SOCIALIST_REALISM';
+
+UPDATE Policy_BuildingClassHappiness SET
+BuildingClassType = 'BUILDINGCLASS_FACTORY'
+WHERE PolicyType = 'POLICY_SOCIALIST_REALISM';
+
+UPDATE Language_en_US
+SET Text = '[COLOR_POSITIVE_TEXT]People''s Army[ENDCOLOR]: +100% [ICON_PRODUCTION] Production towards Military Academies, and receive 5 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Military Academies in your Empire. Factories produce +5 [ICON_CULTURE] Culture and +2 [ICON_HAPPINESS_1] Happiness.'
+WHERE Tag = 'TXT_KEY_POLICY_SOCIALIST_REALISM_HELP';
+
+-- Double Agents to Indigenization (new)
+
+UPDATE Policies
+SET
+	CatchSpiesModifier = 0,
+	FreeSpy = 0,
+	IlliteracyFlatReductionGlobal = 2
+WHERE Type = 'POLICY_DOUBLE_AGENTS';
+
+DELETE FROM Policy_YieldForSpyID WHERE PolicyType = 'POLICY_DOUBLE_AGENTS';
+
+INSERT INTO Policy_TerrainYieldChanges
+	(PolicyType, TerrainType, YieldType, Yield)
+VALUES
+	('POLICY_DOUBLE_AGENTS', 'TERRAIN_SNOW', 'YIELD_SCIENCE', 2),
+	('POLICY_DOUBLE_AGENTS', 'TERRAIN_TUNDRA', 'YIELD_SCIENCE', 2),
+	('POLICY_DOUBLE_AGENTS', 'TERRAIN_DESERT', 'YIELD_SCIENCE', 2);
+
+INSERT INTO Policy_BuildingClassYieldChanges
+	(PolicyType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('POLICY_DOUBLE_AGENTS', 'BUILDINGCLASS_COURTHOUSE', 'YIELD_GOLD', 5),
+	('POLICY_DOUBLE_AGENTS', 'BUILDINGCLASS_COURTHOUSE', 'YIELD_CULTURE', 5);
+
+INSERT INTO Policy_UnimprovedFeatureYieldChanges
+	(PolicyType, FeatureType, YieldType, Yield)
+SELECT
+	'POLICY_DOUBLE_AGENTS', Type, 'YIELD_SCIENCE', 2
+FROM Features;
+
+UPDATE Language_en_US
+SET Text = 'Indigenization'
+WHERE Tag = 'TXT_KEY_POLICY_DOUBLE_AGENTS';
+
+UPDATE Language_en_US
+SET Text = '[COLOR_POSITIVE_TEXT]Indigenization[ENDCOLOR]: -2 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy in all Cities. +2 [ICON_RESEARCH] Science from Unimproved Features and Snow, Tundra, and Desert tiles. +5 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from Courthouses.'
+WHERE Tag = 'TXT_KEY_POLICY_DOUBLE_AGENTS_HELP';
+
+UPDATE Language_en_US
+SET Text = 'Korenizatsiia, which translates as "indigenization" or "nativization", was an early policy of the Soviet Union for the integration of non-Russian nationalities into the governments of their specific Soviet republics. Politically and culturally, the nativization policy aimed to eliminate Russian domination and culture in Soviet republics where ethnic Russians did not constitute a majority. This policy was implemented even in areas with large Russian-speaking populations; for instance, all children in Ukraine were taught in the Ukrainian language in school. For several nationalities in Russia that had no literary language, alphabets were created so that the national languages could be taught in schools and literacy could be brought to the people in their native languages, allowing for social mobility within the greater Soviet Union.[NEWLINE][NEWLINE]The policies of korenizatsiia facilitated the Communist Party''s establishment of the local languages in government and education, in publishing, in culture, and in public life. By the end of the 1930s the policy of promoting local languages began to be balanced by greater Russianization. There was indication indigenization was encouraging inter-ethnic violence to the extent that the territorial integrity of the USSR would be in danger. In addition, ethnic Russians resented the institutionalized and artificial "reverse discrimination" that benefited non-Russians. In 1938, Russian became a mandatory subject of study in all non-Russian schools.'
+WHERE Tag = 'TXT_KEY_POLICY_DOUBLE_AGENTS_TEXT';
+
+-- swap patriotic war and five-year plan positions
+UPDATE Policies SET
+  Level = 2
+WHERE Type = 'POLICY_PATRIOTIC_WAR';
+
+-- also diversify five year plan to include gold, moved from communism
+UPDATE Policies SET
+  Level = 1,
+  BuildingPurchaseCostModifier = -20,
+  BuildingProductionModifier = 0
+WHERE Type = 'POLICY_FIVE_YEAR_PLAN';
+
+UPDATE Language_en_US
+SET Text = '[COLOR_POSITIVE_TEXT]Five-Year Plan[ENDCOLOR]: -20% [ICON_INVEST] Gold needed to Invest in Buildings. +3 [ICON_PRODUCTION] Production for every Mine, Quarry, Lumber Mill, Oil Well, and Unique Improvement.'
+WHERE Tag = 'TXT_KEY_POLICY_FIVE_YEAR_PLAN_HELP';
+
 -- hero of the people. slightly weak
 
 INSERT INTO Policy_YieldGPExpend
@@ -13,22 +85,36 @@ WHERE Tag = 'TXT_KEY_POLICY_HERO_OF_THE_PEOPLE_HELP';
 
 UPDATE Policies
 SET
-	BuildingPurchaseCostModifier = -25,
+	BuildingPurchaseCostModifier = 0,
 	WonderProductionModifier = 0
 WHERE Type = 'POLICY_SKYSCRAPERS';
 
-INSERT INTO Policy_YieldFromNonSpecialistCitizens
+INSERT INTO Policy_YieldFromXMilitaryUnits
 	(PolicyType, YieldType, Yield)
 VALUES
-	('POLICY_SKYSCRAPERS', 'YIELD_TOURISM', 25);
+	('POLICY_SKYSCRAPERS', 'YIELD_CULTURE', 15);
+
+INSERT INTO Policy_BuildingClassYieldChanges
+	(PolicyType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('POLICY_SKYSCRAPERS', 'BUILDINGCLASS_COURTHOUSE', 'YIELD_TOURISM', 10);
+
+INSERT INTO Policy_BuildingClassHappiness
+	(PolicyType, BuildingClassType, Happiness)
+VALUES
+	('POLICY_SKYSCRAPERS', 'BUILDINGCLASS_COURTHOUSE', 2);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Communism[ENDCOLOR]: -25% [ICON_INVEST] Gold needed to invest in Buildings. Courthouses provide +10 [ICON_TOURISM] Tourism. Cities produce +1 [ICON_TOURISM] Tourism for every 4 non-Specialist [ICON_CITIZEN] Citizens.'
+SET Text = '[COLOR_POSITIVE_TEXT]Dictatorship of the Proletariat[ENDCOLOR]: +1 [ICON_CULTURE] Culture in all Cities for every 15 Military Units in the Empire. +10 [ICON_TOURISM] Tourism and +2 [ICON_HAPPINESS_1] Happiness from Courthouses.'
 WHERE Tag = 'TXT_KEY_POLICY_SKYSCRAPERS_HELP';
 
--- this had wikipedia [3][4] references in lol
 UPDATE Language_en_US
-SET Text = 'Communism is a socioeconomic system structured upon common ownership of the means of production and characterized by the absence of social classes, money, and the state; as well as a social, political and economic ideology and movement that aims to establish this social order. The movement to develop communism, in its Marxist–Leninist interpretations, significantly influenced the history of the 20th century, which saw intense rivalry between the states which claimed to follow this ideology and their enemies.'
+SET Text = 'Dictatorship of the Proletariat'
+WHERE Tag = 'TXT_KEY_POLICY_SKYSCRAPERS';
+
+-- moved from PARTY_LEADERSHIP
+UPDATE Language_en_US
+SET Text = 'In Marxist socio-political theory, the Dictatorship of the Proletariat refers to a social state where the working class has direct control of political power; "dictatorship" in this case does not refer to the common definition but rather that an entire social class holds control of the nation. Whether or not capitalists or others were disenfranchised in such a political order would depend, according to Marx and Engels, on specific circumstances at the time. Bringing about such a political order might, or might not, entail violence; but whatever the means, in the end the poletariat would supplant the bourgeoisie. '
 WHERE Tag = 'TXT_KEY_POLICY_SKYSCRAPERS_TEXT';
 
 -- workers faculties. more tourism options please
@@ -54,16 +140,25 @@ SET
 	FreePopulation = 0
 WHERE Type = 'POLICY_RESETTLEMENT';
 
-INSERT INTO Policy_YieldChangeTradeRoute
+--INSERT INTO Policy_YieldChangeTradeRoute
+--	(PolicyType, YieldType, Yield)
+--VALUES
+--	('POLICY_RESETTLEMENT', 'YIELD_FOOD', 10);
+
+INSERT INTO Policy_YieldFromXMilitaryUnits
 	(PolicyType, YieldType, Yield)
 VALUES
-	('POLICY_RESETTLEMENT', 'YIELD_FOOD', 10);
+	('POLICY_RESETTLEMENT', 'YIELD_FOOD', 5);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Resettlement[ENDCOLOR]: New Cities have +6 [ICON_CITIZEN] Population. No Partisans from [ICON_RAZING] Razing enemy Cities. [ICON_CONNECTED] City connections generate +10 [ICON_FOOD] Food.'
+SET Text = '[COLOR_POSITIVE_TEXT]Resettlement[ENDCOLOR]: No Partisans from [ICON_RAZING] Razing enemy Cities. New Cities have +6 [ICON_CITIZEN] Population. +1 [ICON_FOOD] Food in all Cities for every 5 Military Units in the Empire.'
 WHERE Tag = 'TXT_KEY_POLICY_RESETTLEMENT_HELP';
 
 -- great leap forward. renamed atomic spies. move yield from non-specialist and replace with free atomic bomb
+
+UPDATE Policies SET
+FreeSpy = 1 
+WHERE Type = 'POLICY_YOUNG_PIONEERS';
 
 DELETE FROM Policy_YieldFromNonSpecialistCitizens WHERE PolicyType='POLICY_YOUNG_PIONEERS';
 
@@ -77,7 +172,7 @@ SET Text = 'Atomic Spies'
 WHERE Tag = 'TXT_KEY_POLICY_YOUNG_PIONEERS';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Atomic Spies[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Technology. Spies [COLOR_POSITIVE_TEXT]siphon[ENDCOLOR] +100% more [ICON_RESEARCH] Science. +100% [ICON_PRODUCTION] Production towards [COLOR_YELLOW]Atomic Bombs[ENDCOLOR]. '
+SET Text = '[COLOR_POSITIVE_TEXT]Atomic Spies[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Technology and 100 [ICON_VP_SPY_POINTS] Spy Points. Spies [COLOR_POSITIVE_TEXT]siphon[ENDCOLOR] +100% more [ICON_RESEARCH] Science. +100% [ICON_PRODUCTION] Production towards [COLOR_YELLOW]Atomic Bombs[ENDCOLOR]. '
 WHERE Tag = 'TXT_KEY_POLICY_YOUNG_PIONEERS_HELP';
 
 UPDATE Language_en_US
@@ -106,7 +201,7 @@ INSERT INTO Policy_YieldFromNonSpecialistCitizens
 	(PolicyType, YieldType, Yield)
 VALUES
 	('POLICY_DICTATORSHIP_PROLETARIAT', 'YIELD_CULTURE', 25),
-	('POLICY_DICTATORSHIP_PROLETARIAT', 'YIELD_SCIENCE', 25);
+	('POLICY_DICTATORSHIP_PROLETARIAT', 'YIELD_TOURISM', 25);
 
 -- bit of great leap forward flavor
 -- wide happiness already exists in public school tenet, go for a bit different
@@ -116,20 +211,26 @@ Happiness = 5
 WHERE PolicyType = 'POLICY_DICTATORSHIP_PROLETARIAT';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Cultural Revolution[ENDCOLOR]: +5 [ICON_HAPPINESS_1] Happiness from Refineries. Gain +25% [ICON_TOURISM] Tourism to other Civilizations following [COLOR_MAGENTA]Order[ENDCOLOR]. Cities produce +1 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture for every 4 non-Specialist [ICON_CITIZEN] Citizens.'
+SET Text = '[COLOR_POSITIVE_TEXT]Cultural Revolution[ENDCOLOR]: +5 [ICON_HAPPINESS_1] Happiness from Refineries. Gain +25% [ICON_TOURISM] Tourism to other Civilizations following [COLOR_MAGENTA]Order[ENDCOLOR]. Cities produce +1 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture for every 4 non-Specialist [ICON_CITIZEN] Citizens.'
 WHERE Tag = 'TXT_KEY_POLICY_DICTATORSHIP_PROLETARIAT_HELP';
 
--- academy of sciences. remove weird tiny bonus, replace with connection yields
+-- academy of sciences. remove weird tiny bonus, replace with yields
 
-INSERT INTO Policy_YieldChangeTradeRoute
-	(PolicyType, YieldType, Yield)
-VALUES
-	('POLICY_ACADEMY_SCIENCES', 'YIELD_SCIENCE', 6);
+UPDATE Policies SET
+	GreatEngineerRateModifier = 50,
+	IlliteracyFlatReductionGlobal = 0
+WHERE Type = 'POLICY_ACADEMY_SCIENCES';
 
 DELETE FROM Policy_BuildingClassYieldChanges WHERE PolicyType = 'POLICY_ACADEMY_SCIENCES';
 
+INSERT INTO Policy_ImprovementYieldChanges
+	(PolicyType, ImprovementType, YieldType, Yield)
+VALUES
+	('POLICY_ACADEMY_SCIENCES', 'IMPROVEMENT_ACADEMY', 'YIELD_SCIENCE', 5),
+	('POLICY_ACADEMY_SCIENCES', 'IMPROVEMENT_ACADEMY', 'YIELD_TOURISM', 5);
+
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Academy of Sciences[ENDCOLOR]: -2 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy in all Cities. +100% [ICON_PRODUCTION] Production towards Research Labs, and receive 5 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Research Labs in your Empire. [ICON_CONNECTED] City connections provide +6 [ICON_RESEARCH] Science.'
+SET Text = '[COLOR_POSITIVE_TEXT]Academy of Sciences[ENDCOLOR]: +100% [ICON_PRODUCTION] Production towards Research Labs, and receive 5 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Research Labs in your Empire. +5 [ICON_RESEARCH] Science and [ICON_TOURISM] Tourism from Academies. Earn [ICON_GREAT_ENGINEER] Great Engineers 50% faster.'
 WHERE Tag = 'TXT_KEY_POLICY_ACADEMY_SCIENCES_HELP';
 
 -- dictatorship of prollys. increase to +8 because its a bit weak for t2 and 8 is lucky number. add tourism
@@ -144,21 +245,30 @@ VALUES
 	('POLICY_PARTY_LEADERSHIP', 'YIELD_TOURISM', 8);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Dictatorship of the Proletariat[ENDCOLOR]: +8 [ICON_FOOD] Food, [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism per City.'
+SET Text = '[COLOR_POSITIVE_TEXT]Communism[ENDCOLOR]: +8 [ICON_FOOD] Food, [ICON_RESEARCH] Science, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism in every City.'
 WHERE Tag = 'TXT_KEY_POLICY_PARTY_LEADERSHIP_HELP';
+
+UPDATE Language_en_US
+SET Text = 'Communism'
+WHERE Tag = 'TXT_KEY_POLICY_PARTY_LEADERSHIP';
+
+-- moved text, +fix because this had wikipedia [3][4] references in lol
+UPDATE Language_en_US
+SET Text = 'Communism is a socioeconomic system structured upon common ownership of the means of production and characterized by the absence of social classes, money, and the state; as well as a social, political and economic ideology and movement that aims to establish this social order. The movement to develop communism, in its Marxist–Leninist interpretations, significantly influenced the history of the 20th century, which saw intense rivalry between the states which claimed to follow this ideology and their enemies.'
+WHERE Tag = 'TXT_KEY_POLICY_PARTY_LEADERSHIP_TEXT';
 
 -- iron curtain. change +5/+5 to +5 to all yields
 
 DELETE FROM Policy_YieldChangeTradeRoute WHERE PolicyType='POLICY_IRON_CURTAIN';
 
-INSERT INTO Policy_YieldChangeTradeRoute
+INSERT INTO Policy_YieldFromXMilitaryUnits
 	(PolicyType, YieldType, Yield)
-SELECT
-	'POLICY_IRON_CURTAIN', Type, 5
-FROM Yields WHERE ID < 6;
+VALUES
+	('POLICY_IRON_CURTAIN', 'YIELD_PRODUCTION', 10),
+	('POLICY_IRON_CURTAIN', 'YIELD_GOLD', 10);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Iron Curtain[ENDCOLOR]: [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Courthouse upon immediate City [ICON_OCCUPIED] Annexation. +200% [ICON_FOOD] Food or [ICON_PRODUCTION] Production from Internal Trade Routes. [ICON_CONNECTED] City connections provide +5 to [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR].'
+SET Text = '[COLOR_POSITIVE_TEXT]Iron Curtain[ENDCOLOR]: [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Courthouse upon immediate City [ICON_OCCUPIED] Annexation. +200% [ICON_FOOD] Food or [ICON_PRODUCTION] Production from Internal Trade Routes. +1 [ICON_GOLD] Gold and [ICON_PRODUCTION] Production in all Cities for every 10 Military Units in the Empire.'
 WHERE Tag = 'TXT_KEY_POLICY_IRON_CURTAIN_HELP';
 
 -- social realism. want to move the tourism bonus to freedom, nothing inherently wrong. will use new tourism scaler reduction for wide. very sexy.
@@ -203,11 +313,6 @@ WHERE Tag = 'TXT_KEY_POLICY_SPACEFLIGHT_PIONEERS_HELP';
 UPDATE Language_en_US
 SET Text = 'A megaproject is an extremely large-scale construction and investment project. In the 1950s Joseph Stalin initiated a series of so called Great Construction Projects to build hydroelectric dams and canals across the the Soviet Union. Beijing followed a more urbanism-focussed initiative later that decade with the Ten Great Buildings of the Great Leap Forward. Since then the term has usually be used to refer to larger power plants, bridges, or other infrastructure, but it has also found use when describing massive-scale scientific investment such as the sequencing of the human genome, or the construction of space rockets.'
 WHERE Tag = 'TXT_KEY_POLICY_SPACEFLIGHT_PIONEERS_TEXT';
-
--- just text changes
-UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Double Agents[ENDCOLOR]: Receive 200 [ICON_VP_SPY_POINTS] Spy Points. Gain 125 [ICON_RESEARCH] Science when you identify a foreign [ICON_SPY] Spy, scaling with Era.'
-WHERE Tag = 'TXT_KEY_POLICY_DOUBLE_AGENTS_HELP';
 
 UPDATE Language_en_US
 SET Text = '[COLOR_POSITIVE_TEXT]Peace, Land, Bread[ENDCOLOR]: -2 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. +20% [ICON_FOOD] Growth in all Cities. Building [ICON_GOLD] Gold Maintenance reduced by 20%.'
