@@ -37,7 +37,7 @@ VP에 내장된 이벤트가 12개짜리 데모 버전 같은 맛보기 라면 (
 
 [(ui) Trade Opportunities for VP (v 23)](https://forums.civfanatics.com/threads/trade-opportunities-for-vp.636230/)  
 (ui) Trade Opportunities for VP INT  
-이름 처럼 교역과 관련된 UI를 외교 버튼에 함께 추가해주는 모드입니다. 각종 자원들의 거래 현황을 한 눈에 볼 수 있게 해줍니다.
+이름 처럼 교역과 관련된 UI를 외교 버튼에 함께 추가해주는 모드입니다. 각종 자원들의 거래 현황을 한 눈에 볼 수 있게 해줍니다.  
 
 [(ui) Wonder Planner For VP (v 14)](https://forums.civfanatics.com/threads/wonder-planner-for-vp.636588/) KR  
 게임 우측 상단에 불가사의 계획서 버튼을 추가해주는 모드입니다. 불가사의가 어느 도시에 지어졌는지 볼 수 있습니다. 만나지 못 한 문명의 경우 물음표로 뜹니다.  
@@ -63,12 +63,16 @@ UI - Enhanced Rankings INT
 UI - Improved City View (Vox Populi EUI) INT  
 34UC 다음으로 VP 채용설이 나오고 있는 도시 화면을 개선해주는 모드로 걸작, 위인 미터, 건물 관리, 특히 전문가 때문에 많은 분들이 필수라고 여기는 모드입니다.  
 
-[Wake All and Upgrade All Units In Military Overview (v 1)](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/)
-Wake All and Upgrade All Units In Military Overview (v 1) (INT)
-모든 유닛을 업그레이드하는 버튼을 추가하는 Upgrade All Units Button In Military Overview의 상위 호환으로 옆에 모두 꺠우는 버튼도 추가해줍니다.  
+[UI_CustomModScreen](https://forums.civfanatics.com/resources/enhanced-modding-screen-enable-all-version.26441/)  
+
+[UI_SukMainMenu](https://forums.civfanatics.com/threads/main-menu-bg.623032/)  
 
 [Vibrant Textures](https://forums.civfanatics.com/resources/vibrant-terrain-textures.29607/)  
 지형의 질감을 개선해주는 패치로 특히 누렇게 내지는 약간 녹조처럼 보이던 물을 새파랗게 만들어줍니다.  
+
+[Wake All and Upgrade All Units In Military Overview (v 1)](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/)
+Wake All and Upgrade All Units In Military Overview (v 1) (INT)
+모든 유닛을 업그레이드하는 버튼을 추가하는 Upgrade All Units Button In Military Overview의 상위 호환으로 옆에 모두 꺠우는 버튼도 추가해줍니다.  
 
 ### VP용 컨텐츠 모드-모드:  
 [!Jarcast's Hidden Wonders (VP) KR (v 2)](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=418755)  
@@ -100,10 +104,6 @@ More Wonder와는 별개의 모드로 함께 사용 가능한 불가사의 추�
 
 [(visual) Unit Scaling and Formation for VP (v 12)](https://forums.civfanatics.com/resources/unit-scaling-and-formation-for-vp.30045/)  
 유닛의 비율과 배치를 현실적으로 바꿔주는 모드입니다.  
-
-[(text) Promotion Overhaul for VP](https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/)  
-(text) Promotion Overhaul for VP INT (AI)  
-유닛 승급 정보를 가시성 좋게 표시 해주는 모드지만, 사실 승급 정보를 새로 쓰는 수준이라고 보는게 맞습니다. 이 또한 나무위키 문명 5와 VP문서의 진급, 승급 정보를 토대로 구글 Gemini Pro 2.5 AI가 학습해 번역하였습니다.  
 
 [Better Lakes for Vox Populi (v 3)](https://forums.civfanatics.com/threads/better-lakes-for-vp.662230/post-16776196)  
 Better Lakes for Vox Populi INT  
@@ -183,6 +183,8 @@ Recon Pay (Xtra5) Horse Thieves (v 1) INT
 [Recon Pay (xtra6) Exploration Specialization (v 1)](https://forums.civfanatics.com/threads/recon-pay-terrain-cost-all-you-can-move-buffet-edition.685224/)  
 정찰 유닛이 아닌 유닛이 새로운 지형을 발견하면 그 유닛의 차례가 끝납니다.  
 
+[Reforestation (v 9)](https://steamcommunity.com/sharedfiles/filedetails/?id=198158029)  
+
 [TreeSuccession (v 44)](https://forums.civfanatics.com/threads/treesuccession.626302/)  
 숲과 정글의 성장과 산불 등으로 나무를 보다 현실적으로 만들어주는 모드입니다.  
 
@@ -240,7 +242,19 @@ Recon Pay (Xtra2) Free ZoC (v 3) INT
 VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
 ※ 최신 VP와 호환되지 않는다는 보고가 있습니다.  
 
+[Health & Plague for BNW (v 19)](https://forums.civfanatics.com/resources/health-plague-for-bnw-v-19.21416/)  
+
+[Jarcast's Bigger Huge Map for Communitu_79a (v 5)](https://forums.civfanatics.com/threads/bigger-huge-maps-for-communitu_79a.685239/)  
+
+[JFD's and Pouakai's Mercenaries (v 6)](https://forums.civfanatics.com/threads/mercenaries.552053/)  
+
+[NavalMod(v3)](https://forums.civfanatics.com/threads/naval-capital-units-for-vp.698803/)  
+
 ### 영구적으로 제외하기로 결정한 모드-모드:  
+[(text) Promotion Overhaul for VP](https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/)  
+(text) Promotion Overhaul for VP INT (AI)  
+유닛 승급 정보를 가시성 좋게 표시 해주는 모드로 구글 Gemini Pro 2.5 AI가 학습해 번역하였으나 최신 버전과 맞지 않는 내용으로 혼란을 줘 제외되었습니다.  
+
 [City States Leaders II (compatible) (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 City States Leaders II (compatible) (v 7) INT  
 [City States Leaders II (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
