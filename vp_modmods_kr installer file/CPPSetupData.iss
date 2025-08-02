@@ -122,6 +122,7 @@ Source: "..\Recon Pay (Xtra4) Change Port (v 2)\*"; DestDir: "{app}\MODS\Recon P
 Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
 Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
 Source: "..\Recon Pay (xtra6) Exploration Specialization (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (xtra6) Exploration Specialization (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx6
+Source: "..\Reforestation (v 9)\*"; DestDir: "{app}\MODS\Reforestation (v 9)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rf
 Source: "..\TreeSuccession (v 44)\*"; DestDir: "{app}\MODS\TreeSuccession (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
 Source: "..\TreeSuccession (v 44) INT\*"; DestDir: "{app}\MODS\TreeSuccession (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
 Source: "..\Vox Populi's Bare Necessities (v 12)\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
@@ -187,6 +188,7 @@ Name: "bn"; Description: "VP 아주 적은 필수품 (Vox Populi's Bare Necessit
 Name: "wb"; Description: "포경 (Whale Battles)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "wr"; Description: "불가사의 경쟁 (Wonder Race)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "rf"; Description: "재식림 (Reforestation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
 Name: "cr"; Description: "역정찰 (Counter-Reconnaissance)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "eh"; Description: "탐험 유산 (Exploration Heritage)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
