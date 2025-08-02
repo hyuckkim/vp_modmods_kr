@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="14">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="15">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -28,7 +28,9 @@
   <Dependencies>
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
-  <References />
+  <References>
+    <Mod id="9784d016-f5cc-80b3-b37e-a73cdc315fe9" minversion="0" maxversion="999" title="Torpedo Boat" />
+  </References>
   <Blocks>
     <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
     <Mod id="af398f38-90a0-45f0-9831-6c712c86061b" minversion="0" maxversion="999" title="(8) VP-EE Compatibility" />

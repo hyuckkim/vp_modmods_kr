@@ -13,7 +13,7 @@ INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex
 	FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_CARAVEL');
 
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-	SELECT	('ART_DEF_UNIT_MEMBER_EE_CARRACK'), ('0.12'), ZOffset, Domain, ('carrack.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
+	SELECT	('ART_DEF_UNIT_MEMBER_EE_CARRACK'), ('0.12'), 2, Domain, ('carrack.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_CARAVEL');
 
 INSERT INTO ArtDefine_StrategicView 

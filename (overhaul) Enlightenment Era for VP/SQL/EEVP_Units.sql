@@ -695,6 +695,9 @@ UPDATE Units
 SET PrereqTech = 'TECH_STEAM_POWER'
 WHERE Type = 'UNIT_TORPEDO' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
 
+DELETE FROM Unit_ResourceQuantityRequirements
+WHERE UnitType = 'UNIT_TORPEDO';
+
 UPDATE Units
 SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_TORPEDO')
 WHERE Type = 'UNIT_EE_GALLEON' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
@@ -829,6 +832,8 @@ VALUES
 ---------------------------
 UPDATE Units SET PrereqTech = 'TECH_ASTRONOMY' WHERE Type = 'UNIT_PIONEER';
 
+UPDATE Units SET ObsoleteTech = 'TECH_ASTRONOMY' WHERE Type = 'UNIT_SETTLER';
+
 ------------------------------
 -- Line Infantry 
 -----------------------------
@@ -854,7 +859,7 @@ WHERE Type = 'UNIT_EE_LINE_INFANTRY';
 INSERT INTO Unit_FreePromotions
 		(UnitType, PromotionType)
 SELECT 'UNIT_EE_LINE_INFANTRY', PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SPANISH_TERCIO';
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RIFLEMAN';
 
 -- Tercio -> Line Infantry
 UPDATE Unit_ClassUpgrades

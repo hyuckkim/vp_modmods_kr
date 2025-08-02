@@ -342,7 +342,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_TORRE_PEDIA', '토레 델 오로(스페인어로 황금의 탑)는 당시 스페인 남부를 점령하고 있던 베르베르인에 의해 13세기에 스페인 도시 세비야에 건설되었습니다. 원래는 군사용 감시탑으로 건설되었지만, 레콩키스타와 신대륙 발견 이후에는 일종의 금고로 사용되어 스페인의 보물선단을 통해 신대륙에서 운반된 귀금속을 저장했으며, 이로 인해 세비야는 의도치 않게 매우 부유한 도시이자 "신대륙으로의 관문"으로 변모했습니다.'),
 -- 베르사유
 ('TXT_KEY_BUILDING_EE_VERSAILLES', '베르사유 궁전'),
-('TXT_KEY_WONDER_EE_VERSAILLES_HELP', '해당 건축물이 지어진 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 화랑이 제공됩니다.[NEWLINE]문명 내 모든 도시에서 생산된 [ICON_GOLD] 골드의 10%가 턴 당 [ICON_CULTURE] 문화로 간주됩니다.[NEWLINE]소유한 모든 기념비, 원형 극장, 화랑, 오페라 극장이 [ICON_GOLD] 골드 +2를 얻습니다.'),
+('TXT_KEY_WONDER_EE_VERSAILLES_HELP', '해당 건축물이 지어진 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 화랑이 제공됩니다.[NEWLINE]문명 내 모든 도시에서 생산된 [ICON_GOLD] 골드의 15%가 턴 당 [ICON_CULTURE] 문화로 간주됩니다.[NEWLINE]소유한 모든 화랑, 동물 전시관, 오페라 극장이 [ICON_GOLD] 골드 +2를 얻습니다.'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_QUOTE', '[NEWLINE]"내가 약속을 만들 때마다 불만을 품은 사람 백 명과 배은망덕한 사람 한 명이 생긴다."[NEWLINE] - 루이 14세[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_PEDIA', '베르사유 궁전은 18세기 프랑스 미술의 가장 아름다운 업적 중 하나입니다. 이곳은 원래 루이 13세의 사냥터였으며, 그의 아들 루이 14세가 이곳을 변형하고 확장하여 1682년에 프랑스의 법정과 정부를 베르사유로 옮겼습니다. 프랑스 혁명까지 그곳에 살았던 세 명의 프랑스 왕은 각각 이곳을 더 아름답게 만들기 위해 개선 공사를 했습니다.[NEWLINE][NEWLINE]이 궁전은 1789년에 공식적인 권력의 중심지로서의 지위를 잃었지만, 1830년에 왕위에 오른 루이 필리프의 명령으로 설립된 프랑스 역사 박물관이라는 새로운 역할을 맡았습니다. 그때 궁전의 많은 방이 새로운 소장품을 보관하기 위해 인수되었고, 20세기 초까지 추가되어 프랑스 역사의 이정표를 추적했습니다.'),
 -- 왓 프라깨오
@@ -360,6 +360,7 @@ REPLACE INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_BUILDING_SUMMER_PALACE', '불향각'),
+	('TXT_KEY_BUILDING_SUMMER_PALACE_HELP', '[ICON_RES_PAPER] 종이 +1을 받습니다. 모든 도시에서 외교 유닛 [ICON_PRODUCTION] 생산이 +20% 증가합니다. 모든 외교 유닛은 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_NOBILITY}[ENDCOLOR] 승급을 받습니다. 모든 사무국은 [ICON_GOLD] 골드 +3, [ICON_CULTURE] 문화 +1을 얻습니다.[NEWLINE][NEWLINE]문명에 [COLOR_POSITIVE_TEXT]여름 궁전[ENDCOLOR]이 건설되어 있어야 합니다.'),
 	('TXT_KEY_CIV5_BUILDINGS_SUMMER_PALACE_TEXT', '여름 궁전의 만수산 정면 언덕 중앙에 위치한 이 탑은 원래 황학루와 비슷하게 지어진 9층 불교 탑이 될 예정이었습니다. 건륭제는 8층이 완공된 직후 공사를 중단하라고 명령했습니다. 매월 음력 1일과 15일, 서태후는 탑을 방문하여 분향하고 기도를 드렸습니다. [NEWLINE][NEWLINE]이화원은 1749년 청나라 건륭제의 명령으로 베이징에 건설된 정원, 호수, 건물로 이루어진 복합 단지입니다. 궁전과 주변 농경지에는 상수도와 관개 시설이 필요했기 때문에 이 프로젝트를 위해서는 해당 지역에 인공 호수를 조성해야 했습니다. 궁전의 디자인은 중국의 신화, 전설, 자연과 인간이 만든 경이로움의 다양한 측면을 바탕으로 만들어졌습니다. 이 궁전은 청나라와 함께 쇠퇴하였고, 제2차 아편전쟁 중에는 영국과 프랑스에 의해 피해를 입었습니다. 청나라가 멸망한 후, 이 궁궐은 이제 권력을 잃은 옛 황실의 소유가 되었습니다. 마지막 황제 푸이가 축출된 후 1924년에 대중에게 공개되었습니다. 1953년 이래 중화인민공화국 정부는 궁전을 개조했고, 현재는 세계문화유산으로 지정되었습니다.');
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
@@ -385,13 +386,13 @@ WHERE Tag = 'TXT_KEY_WONDER_SISTINE_CHAPEL_HELP';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 아카데미
 ('TXT_KEY_BUILDING_EE_ACADEMY', '폴리테크닉'),
-('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 기술을 잠금 해제하면 [ICON_RESEARCH] 과학 +20과 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR]가 있어서는 안 됩니다.'),
-('TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY', '폴리테크닉은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 계몽 시대의 건물입니다. 응접실이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 과학 중 하나를 전문으로 삼아야 합니다.'),
+('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 이 도시에서 [ICON_CITIZEN] 시민이 태어나면 [ICON_RESEARCH] 과학 +15와 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR]가 있어서는 안 됩니다.'),
+('TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY', '폴리테크닉은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 르네상스 시대의 건물입니다. 신학교가 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_ACADEMY_PEDIA', '폴리테크닉 또는 그랑에콜은 프랑스와 함께 모로코, 튀니지 등의 다른 나라에도 있는 최고 수준의 전문 교육 기관으로, 아이비 리그나 옥스브리지 같은 다른 엘리트 기관과 비교할 수 있습니다. 최초의 폴리테크닉은 1794년 프랑스 혁명 당시 공학자와 군 장교 부족 문제를 해결하기 위해 수학자 가스파르 몽주에 의해 설립되었고, 1804년 나폴레옹 1세에 의해 군사화되었습니다. 프랑스 국방부의 감독을 받고 있습니다. 대학과는 별개로 운영되기 때문에 대부분 프랑스의 학사(Licence) 학위를 제공하지 않고, 공학계 준박사 학위(écoles d’ingénieurs)와 같은 그랑제콜 석사 학위를 제공합니다.'),
 -- 신학교
 ('TXT_KEY_BUILDING_EE_SEMINARY', '신학교'),
-('TXT_KEY_BUILDING_EE_SEMINARY_HELP', '도시에 거주하는 [ICON_CITIZEN] 시민 6명당 [ICON_PEACE] 신앙이 +1 증가합니다. 이 도시에서 구매한 모든 [ICON_PEACE] 신앙 금액의 10%를 환불받습니다. 기술을 잠금 해제하면 [ICON_PEACE] 신앙 10개와 [ICON_GOLDEN_AGE] 황금기 점수 20점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]모든 [ICON_MISSIONARY] 선교사의 초기 종교적 힘이 5% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]폴리테크닉[ENDCOLOR]이 있어서는 안 됩니다.'),
-('TXT_KEY_BUILDING_EE_SEMINARY_STRATEGY', '예수님을 사랑하세요. 예수님을 사랑하세요.'),
+('TXT_KEY_BUILDING_EE_SEMINARY_HELP', '도시에 거주하는 [ICON_CITIZEN] 시민 6명당 [ICON_PEACE] 신앙이 +1 증가합니다. 이 도시에서 구매한 모든 [ICON_PEACE] 신앙 금액의 10%를 환불받습니다. 이 도시에서 [ICON_CITIZEN] 시민이 태어나면 [ICON_PEACE] 신앙 10과 [ICON_GOLDEN_AGE] 황금기 점수 20을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]모든 [ICON_MISSIONARY] 선교사의 초기 종교적 힘이 5% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]폴리테크닉[ENDCOLOR]이 있어서는 안 됩니다.'),
+('TXT_KEY_BUILDING_EE_SEMINARY_STRATEGY', '신학교는 게임에서 해제되는 마지막 종교 건물 중 하나입니다. 폴리테크닉이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_SEMINARY_PEDIA', '신학교(Seminary, School of theology), 신학대학(Seminary, Theological college), 또는 신학대학원(Divinity school)은 학생(때때로 신학생이라고 함)에게 성경과 신학을 교육하여 일반적으로 성직자, 학문 분야 또는 주로 기독교 사역을 위한 성직 안수를 준비시키는 교육 기관입니다. 근대에 신학교가 설립된 것은 트리엔트 공의회 이후 반종교개혁에 따른 로마 가톨릭 개혁의 결과입니다. 트리엔트 신학교는 영적 형성과 개인적 훈련에 큰 중점을 두었으며, 기초로서 철학을 공부하고, 궁극적으로 신학을 공부했습니다. 미국에서 가장 오래된 가톨릭 신학교는 1791년에 설립된 볼티모어의 세인트 메리 신학교 및 대학입니다. 유대교의 유사한 개념은 예시바와 미드라샤 시스템이며 이슬람에서는 종종 마드라사를 언급합니다. (이 용어는 훨씬 더 광범위합니다.)'),
 -- 방직소
 ('TXT_KEY_BUILDING_EE_CLOTH_MILL', '방직소'),
@@ -410,7 +411,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_GUNSMITH_PEDIA', '화기 제작자는 총기의 설계, 개조, 제조 및 수리에 전념하는 숙련된 장인입니다. 1790년대에 일라이 휘트니의 밀 리버 조병창이 생기기 전, 1800년대 중반에 새뮤얼 콜트가 하트퍼드(미국)와 런던(영국)에 있는 자신의 공장에서 권총을 대량 생산할 당시, 화기 제작소는 모든 "문명화된" 정착지에서 필수적인 시설이었습니다.'),
 -- 영주 저택
 ('TXT_KEY_BUILDING_EE_MANOR', '영주 저택'),
-('TXT_KEY_BUILDING_EE_MANOR_HELP', '국경이 확장되면 [ICON_GOLDEN_AGE] 황금기 점수가 20점 증가합니다. (시대에 따라 조정) 호수 타일에서 [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1이 증가합니다. 도시에서 일하는 마을에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1,  [ICON_CULTURE] 문화 +1.[NEWLINE][ICON_RES_JADE] 옥: [ICON_CULTURE] 문화 +1, [ICON_GOLDEN_AGE] 황금기 점수 +2[NEWLINE][ICON_RES_AMBER] 호박: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1[NEWLINE][ICON_RES_PEARLS] 진주: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1.[NEWLINE][ICON_RES_INCENSE] 향료: [ICON_PEACE] 신앙 +2'),
+('TXT_KEY_BUILDING_EE_MANOR_HELP', '국경이 확장되면 [ICON_FOOD] 식량이 +10 증가합니다. (시대에 따라 조정) 호수 타일에서 [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1이 증가합니다. 도시에서 일하는 마을에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1,  [ICON_CULTURE] 문화 +1.[NEWLINE][ICON_RES_JADE] 옥: [ICON_CULTURE] 문화 +1, [ICON_GOLDEN_AGE] 황금기 점수 +2[NEWLINE][ICON_RES_AMBER] 호박: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1[NEWLINE][ICON_RES_PEARLS] 진주: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1.[NEWLINE][ICON_RES_INCENSE] 향료: [ICON_PEACE] 신앙 +2'),
 ('TXT_KEY_BUILDING_EE_MANOR_STRATEGY', '영주 저택은 도시 반경 내에 존재하는 사치 자원을 기반으로 문화와 신앙과 같은 수익성 있는 산출물을 제공하므로, 나열된 사치 자원이 근처에 있다면 바람직합니다. 또한 게임 계획에 맞는 황금기 점수를 생성하는 여러 가지 방법을 제공하지만, 다른 건물을 위해 포기할 수도 있습니다.'),
 ('TXT_KEY_BUILDING_EE_MANOR_PEDIA', '중세 시대에 영주 저택은 영주(또는 주택 관리인)의 거주지였으며, 봉건 영지의 행정 중심지였습니다. 중세 저택은 일반적으로 해당 국가나 지역의 평화로운 정착 정도에 비례하여 요새화되었습니다. 이곳은 세속적인 마을 생활의 중심지 역할을 했으며, 그레이트 홀은 장원 재판소와 소작농 집회의 장소였습니다. 경제가 번영하고 더 넓은 주거 공간에 대한 수요가 증가하면서 16세기 영주 저택은 르네상스풍 시골 주택으로 변화했습니다. 영국에서는 더욱 정교한 건물이 건설되었으며, 이는 새로운 시대의 형식을 반영합니다. 주택은 대개 규칙적인 사각형 평면을 이루었고, 홀의 크기와 중요성은 상대적으로 작았습니다. 후년에 영국에서 영주 저택이라는 명칭은 영지적 기반이 없는 대규모 시골 저택을 지칭하게 되면서 특별한 의미를 잃었습니다.'),
 -- 카페 (구 살롱)

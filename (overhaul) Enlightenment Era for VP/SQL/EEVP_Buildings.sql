@@ -168,10 +168,10 @@ WHERE Type = 'BUILDING_EE_SEMINARY';
 INSERT INTO Building_YieldFromBirth
 	(BuildingType, YieldType, Yield, IsEraScaling)
 VALUES
-	('BUILDING_EE_SEMINARY', 'YIELD_GOLDEN_AGE_POINTS', 20, 1),
+	('BUILDING_EE_SEMINARY', 'YIELD_GOLDEN_AGE_POINTS', 20, 0),
 	('BUILDING_EE_SEMINARY', 'YIELD_FAITH', 10, 1),
-	('BUILDING_EE_ACADEMY', 'YIELD_SCIENCE', 20, 1),
-	('BUILDING_EE_ACADEMY', 'YIELD_GREAT_GENERAL_POINTS', 5, 1);
+	('BUILDING_EE_ACADEMY', 'YIELD_SCIENCE', 15, 1),
+	('BUILDING_EE_ACADEMY', 'YIELD_GREAT_GENERAL_POINTS', 10, 0);
 
 ----------------------------------------------
 -- Cafe (hokaths take on the Salon)
@@ -333,19 +333,13 @@ Happiness = 1
 WHERE Type = 'BUILDING_EE_MANOR';
 
 INSERT INTO Building_YieldFromBorderGrowth (BuildingType, YieldType, Yield)
-SELECT 'BUILDING_EE_MANOR', 'YIELD_GOLDEN_AGE_POINTS', 	10;
+SELECT 'BUILDING_EE_MANOR', 'YIELD_FOOD', 	10;
 
 INSERT INTO Building_LakePlotYieldChanges
 	(BuildingType, YieldType, Yield)
 VALUES
 	('BUILDING_EE_MANOR', 'YIELD_GOLD', 2),
 	('BUILDING_EE_MANOR', 'YIELD_TOURISM', 1);
-
-INSERT INTO Building_ImprovementYieldChanges
-	(BuildingType, ImprovementType, YieldType, Yield)
-VALUES
-	('BUILDING_EE_MANOR', 'IMPROVEMENT_TRADING_POST', 'YIELD_PRODUCTION', 1),
-	('BUILDING_EE_MANOR', 'IMPROVEMENT_TRADING_POST', 'YIELD_GOLDEN_AGE_POINTS', 1);	
 
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 

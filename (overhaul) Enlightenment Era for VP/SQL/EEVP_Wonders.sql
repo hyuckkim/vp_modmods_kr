@@ -108,7 +108,8 @@ PortraitIndex = 8,
 Cost = 1000, NumPoliciesNeeded = 14
 WHERE Type = 'BUILDING_SUMMER_PALACE';
 
-INSERT INTO Building_ClassesNeededInCity 
+-- note the ANYWHERE here
+INSERT INTO Building_ClassNeededAnywhere 
 	(BuildingType, BuildingClassType) 
 VALUES
 	('BUILDING_SUMMER_PALACE', 'BUILDINGCLASS_EE_SUMMER_PALACE');
@@ -228,20 +229,16 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
 ------------------------
 UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_GALLERY' WHERE Type = 'BUILDING_EE_VERSAILLES';
 
-INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
-('BUILDING_EE_VERSAILLES', 'YIELD_CULTURE', 4);
-
 INSERT INTO Building_YieldFromYieldPercent
         (BuildingType, YieldIn, YieldOut, Value)
 VALUES    ('BUILDING_EE_VERSAILLES', 'YIELD_GOLD', 'YIELD_CULTURE', 15);
 
 INSERT INTO Building_BuildingClassYieldChanges
         (BuildingType, BuildingClassType, YieldType, YieldChange)
-VALUES    
-	('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_MONUMENT',     'YIELD_GOLD', 2),
-        ('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_AMPHITHEATER', 'YIELD_GOLD', 2),
+VALUES
         ('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_GALLERY',     'YIELD_GOLD', 2),
-        ('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_OPERA_HOUSE', 'YIELD_GOLD', 2);
+        ('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_OPERA_HOUSE', 'YIELD_GOLD', 2),
+        ('BUILDING_EE_VERSAILLES', 'BUILDINGCLASS_EE_MENAGERIE', 'YIELD_GOLD', 2);
 
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
 ('BUILDING_EE_VERSAILLES', 'YIELD_CULTURE', 2),

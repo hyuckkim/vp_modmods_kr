@@ -409,11 +409,22 @@ Cost Sweeps
 ------------------
 Buildings
 --Menagerie moved later to Strongholds
+--Removed Village bonus from the Manor
+--Changed GAP to Food on Border Growth on Manor
+  Didn't work and the Food notification from Smokehouse is becoming worthless
+--Seminary and Polytechnic special yields no longer scale with Era (GG Points now at 10, Science at 15)
+--Seminary and Polytechnic now have Strategy text
+
+Wonders
+--Versailles changed Monuments and Amphitheatres to Menageries
 
 Units
 --Galleon moved earlier to Exploration (Renaissance)
---If Torpedo Boat is enabled it is brought earlier to Steam Power
+--If Torpedo Boat is enabled it is brought earlier to Steam Power and Aluminium requirement removed
+--Line Infantry now correctly receive Field Works Promotion
+--Carrack now have a zoffset (hover height) of 2, so they aren't underwater anymore!
 
 Cost Sweeps
- -Policy costs increased slightly
- -Gold Maintenance starts to increase a bit earlier (now 4 in whole Enlightenment, was 3)
+--Policy costs increased slightly
+--Wonder Policy requirements shifted 1 earlier in late Renaissance, Enlightenment, and Industrial
+--Gold Maintenance starts to increase a bit earlier (now 4 in whole Enlightenment, was 3)
