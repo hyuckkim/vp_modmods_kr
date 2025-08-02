@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5a5a2637-0e30-49a9-bc38-b5dbffd0abb7" version="17">
+  <Properties>
+    <Name>Great Spy (Brave New World)</Name>
+    <Teaser>Adds the Great Spy to the base game. Requires the Brave New World expansion.</Teaser>
+    <Description>Inspired by the unit in Civ IV and the more personal mission based espionage systems of Civs IV, Rev, BE and VI, this mod adds the Great Spy as a new great person type to the Brave New World base game. The unit is designed to function independent of (but also compliment) the existing espionage system. The mod also adds additional wonders, buildings, and beliefs and updates several existing buildings and policies to accommodate the new unit.</Description>
+    <Authors>Tomatekh</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/threads/tomatekhs-new-civilizations.472751/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>12</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References>
+    <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
+    <Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="0" maxversion="999" title="Cultural Diversity" />
+    <Mod id="01c131ef-2162-4a7b-b845-763a4e675940" minversion="0" maxversion="999" title="Cultural Influence" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="CP" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="CBP" />
+    <Mod id="a19351c5-c0b3-4b07-8695-4affaa199949" minversion="0" maxversion="999" title="Mercenaries" />
+    <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="EE" />
+    <Mod id="27744840-51d5-48b3-89d8-bc595ba27b7e" minversion="0" maxversion="999" title="PeC" />
+    <Mod id="10e9728f-d61c-4317-be4f-7d52d6bae6f4" minversion="0" maxversion="999" title="CiD" />
+    <Mod id="eea66053-7579-481a-bb8d-2f3959b59974" minversion="0" maxversion="999" title="RtP" />
+    <Mod id="d99bf7aa-51ac-4bef-bd88-d765b28e260e" minversion="0" maxversion="999" title="Sov" />
+    <Mod id="6676902b-b907-45f1-8db5-32dcb2135eee" minversion="0" maxversion="999" title="ExCE" />
+    <Mod id="0e92d75e-78fc-419d-94c7-90886dc4e87f" minversion="0" maxversion="999" title="Expanded" />
+    <Mod id="cc3e1671-2832-40dc-9bfd-8e053d3b76b1" minversion="0" maxversion="999" title="Timurids" />
+    <Mod id="b40b94fe-89db-4dd3-bb44-ef922e09f8dd" minversion="0" maxversion="999" title="Additional Ruins" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="4540CBC2B35AE3F79084445AEAAD6C99" import="1">Art/Action/SpyModBuild45.dds</File>
+    <File md5="F53B5D270A80DA6B4AFCA252547364A2" import="1">Art/Action/SpyModBuild64.dds</File>
+    <File md5="1E259047B080476BBF6EE4F742CB0EE2" import="1">Art/Action/SpyModBuildGold45.dds</File>
+    <File md5="6D610751914E7BDA4E711BAAFA370974" import="1">Art/Action/SpyModBuildGold64.dds</File>
+    <File md5="78DB1F67C6496E56BF369F2D2C9C510D" import="1">Art/Alpha/SpyModUnitAlphaAtlas.dds</File>
+    <File md5="292C73FD1B4E2FD1B2E7220DF6B3648D" import="1">Art/Alpha/sv_Great_Spy_Mod.dds</File>
+    <File md5="8C7E54E71196823BF14AFA7A3B3C1A6A" import="1">Art/Atlas/SpyModAtlas128.dds</File>
+    <File md5="8C9CC4DD798EF5076C5F8C671E61DF04" import="1">Art/Atlas/SpyModAtlas214.dds</File>
+    <File md5="CA35FED03395F689778212754F259A43" import="1">Art/Atlas/SpyModAtlas256.dds</File>
+    <File md5="4D7BBEED38FC6DE045EB4DC6EAB95ABE" import="1">Art/Atlas/SpyModAtlas32.dds</File>
+    <File md5="1CACF680CD7456BD4DAF97C98DBF7FE1" import="1">Art/Atlas/SpyModAtlas45.dds</File>
+    <File md5="F8E6EF4F8A6772A4A6D2DD6E519E76DA" import="1">Art/Atlas/SpyModAtlas64.dds</File>
+    <File md5="4E91980B4CCB628F4155D2D008AA3F20" import="1">Art/Atlas/SpyModAtlas80.dds</File>
+    <File md5="7E5FE2C2CA2CE32FB6E20011E2596B72" import="1">Art/Blank/GreatSpyBlank.dds</File>
+    <File md5="23303B2CF4FF7699114D5BA8BEAF2CAC" import="1">Art/Blank/SpyFont.dds</File>
+    <File md5="74104695D7A2C1D52EFBA7EEC099E664" import="1">Art/Blank/SpyFont.ggxml</File>
+    <File md5="90DF35C2BEB945DEDF067C692A325E25" import="1">Art/Blank/SpyFont2.dds</File>
+    <File md5="F3A6A1B723D685DD5E58F60FFB843868" import="1">Art/Blank/SpyFont2.ggxml</File>
+    <File md5="50A8E0AE89905A4F88F931F1AB309F38" import="1">Art/Blank/SpyFont3.dds</File>
+    <File md5="04E0B69057504826A68515F7A55CC1EF" import="1">Art/Blank/SpyFont3.ggxml</File>
+    <File md5="9B7E3299CE2267258C71493B44FC0CC0" import="1">Art/Blank/SpyFont4.dds</File>
+    <File md5="E36ABB8295D93E634BEAB95BF9CB0286" import="1">Art/Blank/SpyFont4.ggxml</File>
+    <File md5="DF740A3B2A61241652679E0B606E85CB" import="1">Art/Blank/SpyFont5.dds</File>
+    <File md5="D2102C1710D75BA6F8984F278B26CA88" import="1">Art/Blank/SpyFont5.ggxml</File>
+    <File md5="580D27857B2AC104E7779F4D1D3998C1" import="1">Art/Bonus/SpyMissionAtlas128.dds</File>
+    <File md5="BF80B552434E37E0BF1F62F780BB7091" import="1">Art/Bonus/SpyMissionAtlas214.dds</File>
+    <File md5="FB3B8642A1F399D58AD16E91C6026DEB" import="1">Art/Bonus/SpyMissionAtlas256.dds</File>
+    <File md5="C75B88170CBFB3E808615369806CBC2B" import="1">Art/Bonus/SpyMissionAtlas32.dds</File>
+    <File md5="C220B36C21162AFD820EE6C6CF75D812" import="1">Art/Bonus/SpyMissionAtlas45.dds</File>
+    <File md5="26185B75CC6BBAD379BF44852A116855" import="1">Art/Bonus/SpyMissionAtlas64.dds</File>
+    <File md5="886A20BBF21E1B870CBAAE1DD9C129A9" import="1">Art/Bonus/SpyMissionAtlas80.dds</File>
+    <File md5="6AF42B29031B9C97C6A2091A98594F86" import="1">Art/Promotion/SpyPromotion256.dds</File>
+    <File md5="EFAABB059544A3743D342CDA04BF925F" import="1">Art/Promotion/SpyPromotion32.dds</File>
+    <File md5="FB923A174153DE453DC1CA7A92967A1E" import="1">Art/Promotion/SpyPromotion45.dds</File>
+    <File md5="C2032EE4ECB5C87FB81CCEE45BF7ECFC" import="1">Art/Promotion/SpyPromotion64.dds</File>
+    <File md5="D1CCA85A23A68913E75C35AF533B1D62" import="1">Art/Specialist/Operative128.dds</File>
+    <File md5="24029644F400F74103FFD939DD59A586" import="1">Art/Specialist/Operative214.dds</File>
+    <File md5="B57230B497FCB7A1582AFA9E044B1AC9" import="1">Art/Specialist/Operative256.dds</File>
+    <File md5="B57230B497FCB7A1582AFA9E044B1AC9" import="1">Art/Specialist/Operative32.dds</File>
+    <File md5="CBAE7B7FCE0FA926C1BF2074D4CBBE4B" import="1">Art/Specialist/Operative45.dds</File>
+    <File md5="FA5E77A065CC4169D8064C818D54EB21" import="1">Art/Specialist/Operative64.dds</File>
+    <File md5="B204D06580CB81170B7D7A749898268B" import="1">Art/Specialist/Operative80.dds</File>
+    <File md5="4044D47E799E3E3387C3613C516368EE" import="1">Art/Specialist/OperativeWorker.dds</File>
+    <File md5="3EC86F71FDAF478F89DEF3963C635C27" import="1">Art/UI/SpyModUIAtlas128.dds</File>
+    <File md5="E9A03A32E82B1DD10B522B0F7886C7B9" import="1">Art/UI/SpyModUIAtlas214.dds</File>
+    <File md5="5534B2394BE94BF388C42B69FC127695" import="1">Art/UI/SpyModUIAtlas256.dds</File>
+    <File md5="7DEE601204741F4B67721DB59ADE72C6" import="1">Art/UI/SpyModUIAtlas32.dds</File>
+    <File md5="199A7B327E2B8F76ABC57F74B1571CF4" import="1">Art/UI/SpyModUIAtlas45.dds</File>
+    <File md5="51C9DCF3E357FFE4E4BE736DD1FBDA91" import="1">Art/UI/SpyModUIAtlas52.dds</File>
+    <File md5="54EAAE55881FE543F592338F0CA3FB95" import="1">Art/UI/SpyModUIAtlas64.dds</File>
+    <File md5="6F7BA74EFECBFE1486B28185D12B4052" import="1">Art/UI/SpyModUIAtlas80.dds</File>
+    <File md5="5E6FBB6B5EB843BD952F05F262F879A1" import="1">Art/Unit/Old/Ninja_Japan.blend</File>
+    <File md5="8348CC2A51EBA6DEBB1F3939C3592C9D" import="1">Art/Unit/Old/Ninja_Japan.dds</File>
+    <File md5="0B013F5135D37BA6E5C69EBDAA220966" import="1">Art/Unit/Old/Ninja_Japan.fxsxml</File>
+    <File md5="56E7E9A2C0C38D1C3441C1F54DDAA0F3" import="1">Art/Unit/Old/Ninja_Japan.gr2</File>
+    <File md5="837FA89D1E4B65A24C67A3FEE42E8E5B" import="1">Art/Unit/Old/Ninja_Japan_gloss.dds</File>
+    <File md5="947DC3B613989FB9912A59B9AE4D99A8" import="1">Art/Wonder/motherland_splash.dds</File>
+    <File md5="46F36ED1EC5B13E78556B8D99B914B62" import="1">Audio/MotherlandStatue.mp3</File>
+    <File md5="C2687569CACCC45551A4AD6D6B10A8F5" import="1">Audio/SpyTheme.wav</File>
+    <File md5="D9EC96A875CCFF6423DBB6F22F77C776" import="1">Audio/SpyThemeOld.mp3</File>
+    <File md5="CA3B36F7E7DEC9A571040985202581B4" import="1">Lua/Button/Great Spy Button 1.xml</File>
+    <File md5="3676C75DE7CBBD9AF7135E3904C858FD" import="0">Lua/Button/Great Spy Button 1.lua</File>
+    <File md5="E26C20425F4432F722CA23853CE956A5" import="0">Lua/Button/Great Spy Button 2.lua</File>
+    <File md5="4E9264ED6C385497C9014234173F2576" import="1">Lua/Button/Great Spy Button 2.xml</File>
+    <File md5="1E829E739134FE719074FF7807A2F540" import="0">Lua/Great Spy Scripts.lua</File>
+    <File md5="F8C02143040704DB27C76E028EDE294A" import="0">Lua/Popup/Great Spy Popup.lua</File>
+    <File md5="A011611CC8A499F19999D14B92CF24D3" import="1">Lua/Popup/Great Spy Popup.xml</File>
+    <File md5="5754B1BE6E37A2F9D04D9D4149E5CDDF" import="1">Lua/SaveUtils.lua</File>
+    <File md5="D14593A02977D144925F69792C67450C" import="0">Lua/UI/Great Spy UI.lua</File>
+    <File md5="158018C6CC77B609D29EE9F53FCFC9F2" import="1">Lua/UI/Great Spy UI.xml</File>
+    <File md5="26FC6F390D9514956FE12DDD28F27C63" import="0">SQL/Great Spy Art.sql</File>
+    <File md5="99549359FD1A73F8E7305914A7434E80" import="0">SQL/Great Spy Audio.sql</File>
+    <File md5="26FDBEB1467B1612B901D0D10A2F0BCD" import="0">SQL/Great Spy Building.sql</File>
+    <File md5="46E3C715CAB849EF941547739718CCF9" import="0">SQL/Great Spy Citizens.sql</File>
+    <File md5="C207E0888282DD92C8C8F96755984A0F" import="0">SQL/Great Spy Unit.sql</File>
+    <File md5="3ED9E07AC973AD014E5510E808EC2E58" import="0">XML/Text/Great Spy Text.xml</File>
+    <File md5="8A9F15A5D920538E3E090049F338EDA5" import="0">XML/Text/Non English XML Tags/Great Spy Text DE_DE.xml</File>
+    <File md5="29DA2B9ACB4ABBD09390E981E312B83F" import="0">XML/Text/Non English XML Tags/Great Spy Text ES_ES.xml</File>
+    <File md5="417FC7C8EA91757D027C885C63D00462" import="0">XML/Text/Non English XML Tags/Great Spy Text FR_FR.xml</File>
+    <File md5="ABEE22503D095B39B695B35B527305AE" import="0">XML/Text/Non English XML Tags/Great Spy Text IT_IT.xml</File>
+    <File md5="11ECB68BDFEDCCF600B5441CAF1CC675" import="0">XML/Text/Non English XML Tags/Great Spy Text JA_JP.xml</File>
+    <File md5="EA4E4B7F137DBC0BF2AD8264BB666C9A" import="0">XML/Text/Non English XML Tags/Great Spy Text KO_KR.xml</File>
+    <File md5="9DDDE80D859B2F5F37E1C21B15767D7E" import="0">XML/Text/Non English XML Tags/Great Spy Text PL_PL.xml</File>
+    <File md5="05460A2DE96BA7559C1CF2B2A7A05AC0" import="0">XML/Text/Non English XML Tags/Great Spy Text RU_RU.xml</File>
+    <File md5="B675179F87C2473B9BD23524E3F6EFE8" import="0">XML/Unit/Great Spy Unit Overlap.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/Great Spy Unit.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Unit/Great Spy Unit Overlap.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/Great Spy Building.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Great Spy Citizens.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Great Spy Art.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Great Spy Audio.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Great Spy Text.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text DE_DE.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text ES_ES.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text FR_FR.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text IT_IT.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text JA_JP.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text KO_KR.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text PL_PL.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text/Non English XML Tags/Great Spy Text RU_RU.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Button/Great Spy Button 1.lua">
+      <Name>Spy 1</Name>
+      <Description>Spy 1</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Popup/Great Spy Popup.lua">
+      <Name>Spy 3</Name>
+      <Description>Spy 3</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Button/Great Spy Button 2.lua">
+      <Name>Spy 2</Name>
+      <Description>Spy 2</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Great Spy Scripts.lua">
+      <Name>Spy 4</Name>
+      <Description>Spy 4</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/UI/Great Spy UI.lua">
+      <Name>Spy 5</Name>
+      <Description>Spy 5</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

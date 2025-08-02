@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh-->
+<GameData>
+	<Language_JA_JP>
+		<!-- -->
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY">
+			<Text>Great Spy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_STRATEGY">
+			<Text>The Great Spy can conduct espionage missions in foreign territory. This versatile ability allows you to sabotage rival civilizations, destroy resources, and even steal great works. Espionage missions vary in strength (with the strongest requiring an additional [ICON_SPY_GLASS] Intelligence cost). However, many also carry a small chance for the Great Spy to survive and be reused for a new mission. Great Spies also make excellent scouts with passive bonuses to movement, sight, and the ability to enter rival territory. Additionally, as long as the Great Spy is on a tile owned by another civilization, you will be able to see that civilization's current [ICON_CULTURE] Culture level and [ICON_RESEARCH] Research project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_TEXT">
+			<Text>From the ninjas of feudal Japan, to the quimitchin of the Aztec Triple Alliance, to the spymasters of the British Empire, "Great Spies" are those individuals who have slipped unseen into foreign lands to gather intelligence and return to whisper what they've learned into the ears of kings. They pull the strings of world leaders, rig elections, and tip the hands of revolutionaries when needed. They guide an undercurrent of history filled with deception, sabotage, and assassination.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_PROMOTION_TOMATEKH_SPY">
+			<Text>Covert Agent</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOMATEKH_SPY_HELP">
+			<Text>This Unit is Invisible when not adjacent to an enemy Unit and may move freely over Rough Terrain and in Rival Territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOMATEKH_SPY_NULL">
+			<Text>Active Agent</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOMATEKH_SPY_HELP_NULL">
+			<Text>This Unit is conducting an espionage mission.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_SPY">
+			<Text>Is Invisible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_SPY_HELP">
+			<Text>This Unit is Invisible when not adjacent to an enemy Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_SPY">
+			<Text>Can See Invisible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_SPY_HELP">
+			<Text>This Unit can see Submarines and Great Spies.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_1">
+			<Text>Pebekkamen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_2">
+			<Text>Ephialtes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_3">
+			<Text>Jing Ke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_4">
+			<Text>Qin Wuyang</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_5">
+			<Text>Calippus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_6">
+			<Text>Leone Alberti</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_7">
+			<Text>John Barlow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_8">
+			<Text>Francis Walsingham</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_9">
+			<Text>Hattori Hanzo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_10">
+			<Text>Balthasar Gerard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_11">
+			<Text>Anthony Babington</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_12">
+			<Text>Ishikawa Goemon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_13">
+			<Text>Gaspar Graziani</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_14">
+			<Text>Guy Fawkes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_15">
+			<Text>John Honeyman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_16">
+			<Text>Nathan Hale</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_17">
+			<Text>Charlotte Corday</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_18">
+			<Text>Giacomo Casanova</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_19">
+			<Text>Allan Pinkerton</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_20">
+			<Text>William Melville</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_21">
+			<Text>Belle Boyd</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_22">
+			<Text>Sidney Reilly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_23">
+			<Text>An Jung-Geun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_24">
+			<Text>Claude Dansey</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_25">
+			<Text>Mata Hari</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_26">
+			<Text>J. Edgar Hoover</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_27">
+			<Text>Moe Berg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_28">
+			<Text>Ethel Rosenberg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_29">
+			<Text>Fritz Joubert Duquesne</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_30">
+			<Text>Claus von Stauffenberg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_31">
+			<Text>Suzanne Spaak</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_32">
+			<Text>William Donovan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_33">
+			<Text>Mark Swiss</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_34">
+			<Text>Thomas Knowlton</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_35">
+			<Text>Karl Schulmeister</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_36">
+			<Text>William Wickham</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_POLICY_TOMATEKH_SPY_DUMMY">
+			<Text>Policy Dummy Spy 1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TOMATEKH_SPY_DUMMY_TEXT">
+			<Text>From the ninjas of feudal Japan, to the quimitchin of the Aztec Triple Alliance, to the spymasters of the British Empire, "Great Spies" are those individuals who have slipped unseen into foreign lands to gather intelligence and return to whisper what they've learned into the ears of kings. They pull the strings of world leaders, rig elections, and tip the hands of revolutionaries when needed. They guide an undercurrent of history filled with deception, sabotage, and assassination.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TOMATEKH_SPY_DUMMY_HELP">
+			<Text>This policy cannot be chosen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_DESC">
+			<Text>Spy Dummy 1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_2_DESC">
+			<Text>Spy Dummy 2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_4_DESC">
+			<Text>Spy Dummy 4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_STRATEGY">
+			<Text>This building cannot be constructed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_TEXT">
+			<Text>From the ninjas of feudal Japan, to the quimitchin of the Aztec Triple Alliance, to the spymasters of the British Empire, "Great Spies" are those individuals who have slipped unseen into foreign lands to gather intelligence and return to whisper what they've learned into the ears of kings. They pull the strings of world leaders, rig elections, and tip the hands of revolutionaries when needed. They guide an undercurrent of history filled with deception, sabotage, and assassination.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_1S_DESC">
+			<Text>Spy 1s</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_10S_DESC">
+			<Text>Spy 10s</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_100S_DESC">
+			<Text>Spy 100s</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_1000S_DESC">
+			<Text>Spy 1000s</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_10000S_DESC">
+			<Text>Spy 10000s</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_MAX_DESC">
+			<Text>Spy Max</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_DUMMY_1_MOD_DESC">
+			<Text>Spy 1 Mod</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_1_DESC">
+			<Text>Spy [ICON_GOLD] Gold</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_2_DESC">
+			<Text>Spy [ICON_RESEARCH] Science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_3_DESC">
+			<Text>Spy [ICON_PEACE] Faith</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_1A_DESC">
+			<Text>Spy 2 [ICON_GOLD] Gold </Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_2A_DESC">
+			<Text>Spy 2 [ICON_RESEARCH] Science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_CITIZEN_DISPLAY_3A_DESC">
+			<Text>Spy 2 [ICON_PEACE] Faith</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_TOMATEKH_SPY_BUTTON">
+			<Text>[COLOR_POSITIVE_TEXT]Conduct Espionage Mission[ENDCOLOR][NEWLINE][NEWLINE]Conduct an espionage mission against a rival Civilization.[NEWLINE][NEWLINE]The Great Spy must be in Foreign Territory adjacent to a City or stationed on a Strategic Resource or standard Great Person Tile Improvement.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: This action is disabled if the Unit is out of moves or has previously completed an active action.[ENDCOLOR]</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_TOMATEKH_SPY_BONUS_TITLE_0">
+			<Text>Choose Mission</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOMATEKH_SPY_BONUS_BODY_0">
+			<Text>Choose an espionage mission to conduct against the target Civilization.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_1">
+			<Text>Steal Gold</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_1">
+			<Text>
+				Steal {1_Gold} [ICON_GOLD] Gold from the target Civilization and add it to your [ICON_GOLD] Gold reserves.
+				[NEWLINE][NEWLINE]The Great Spy has a {2_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_2">
+			<Text>Spread Propaganda</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_2">
+			<Text>
+				Reduce the target Civilization's current [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age progress by 25%.
+				[NEWLINE][NEWLINE]The Great Spy has a {1_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_3">
+			<Text>Smuggle Great Work</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_3">
+			<Text>
+				Steal a random [ICON_GREAT_WORK] Great Work from the target City.
+				[NEWLINE][NEWLINE]The Great Spy has a {1_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{2_Cost} [ICON_SPY_GLASS] Intelligence
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City with an available [ICON_GREAT_WORK] Great Work
+				[NEWLINE][ICON_BULLET]Your Civilization must have an available [ICON_GREAT_WORK] Great Work Slot of the corresponding type
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_4">
+			<Text>Kidnap Great Person</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_4">
+			<Text>
+				Destroy the target standard Great Person Tile Improvement and return the corresponding Great Person type to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{1_Cost} [ICON_SPY_GLASS] Intelligence
+				[NEWLINE][ICON_BULLET]The Great Spy must be stationed on a standard Great Person Tile Improvement
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the nearest City will alter mission costs and rewards. The Unit will be consumed after completing the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_5">
+			<Text>Destroy Resource</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_5">
+			<Text>
+				Destroy up to {1_Copy} copies of the target Strategic Resource and any pillageable Improvement on the Tile.
+				[NEWLINE][NEWLINE]The Great Spy has a {2_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{3_Cost} [ICON_SPY_GLASS] Intelligence
+				[NEWLINE][ICON_BULLET]The Great Spy must be stationed on a Strategic Resource
+				[NEWLINE][ICON_BULLET]Your Civilization must have researched the Resource's prerequisite Technology
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the nearest City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_6">
+			<Text>Sabotage Production</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_6">
+			<Text>
+				Reduce the target Civilization's current [ICON_RESEARCH] Research and Wonder [ICON_PRODUCTION] Production progress by 33%.
+				[NEWLINE][NEWLINE]The Great Spy has a {1_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_7">
+			<Text>Poison Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_7">
+			<Text>
+				Reduce the [ICON_CITIZEN] Population of the target City by {1_Pop} to {2_Pup} with an additional chance to lower the [ICON_CITIZEN] Population of any foreign City connected to the target by Trade Route.
+				[NEWLINE][NEWLINE]The Great Spy has a {3_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_8">
+			<Text>Incite City Revolt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_8">
+			<Text>
+				Cause the target City to enter into {1_Turns} turns of [ICON_RESISTANCE] Resistance.
+				[NEWLINE][NEWLINE]The Great Spy has a {2_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_9">
+			<Text>Cause Anarchy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_9">
+			<Text>
+				Cause the target Civilization to enter into {1_Turns} turns of [ICON_RAZING] Anarchy.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign [ICON_CAPITAL] Capital
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed after completing the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_10">
+			<Text>Recruit Partisans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_10">
+			<Text>
+				Spawn Barbarian Units to attack the target City.
+				[NEWLINE][NEWLINE]The Great Spy has a {1_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{2_Cost} [ICON_SPY_GLASS] Intelligence
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_11">
+			<Text>Perform Counterespionage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_11">
+			<Text>
+				Prevent Great Spy missions from targeting your Civilization and significantly reduce the effectiveness of enemy Spies in your Cities for {1_Turns} turns.
+				[NEWLINE][NEWLINE]The Great Spy has a {2_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign [ICON_CAPITAL] Capital
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings in the City will alter mission costs and rewards. The Unit will be consumed if it does not survive the mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_12">
+			<Text>Sell Secrets</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_12">
+			<Text>
+				A repeatable mission that allows you to exchange excess [ICON_SPY_GLASS] Intelligence to increase your score.
+				[NEWLINE][NEWLINE]The Great Spy has a {1_Chance}% chance to survive the mission and return to your [ICON_CAPITAL] Capital.
+				[NEWLINE][NEWLINE][COLOR_CYAN]Requirements:[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]{2_Cost} [ICON_SPY_GLASS] Intelligence
+				[NEWLINE][ICON_BULLET]The Great Spy must be adjacent to a foreign City
+				[NEWLINE][ICON_BULLET]The target Civilization must not have recently undertaken the 'Perform Counterespionage' Great Spy mission
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Note: Espionage Buildings will not alter the costs or rewards of this mission. The Unit will always survive this mission.[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_MISSION_TITLE_13">
+			<Text>Abort Mission</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_BODY_TITLE_13">
+			<Text>Cancel the current action and return to the game map.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_1">
+			<Text>[COLOR_CYAN]Intelligence Center[ENDCOLOR][NEWLINE]----------------[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_CAP">
+			<Text>[ICON_CAPITAL]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_CENTER_CITY">
+			<Text>{1_IntCenter}: [ICON_SPY_GLASS] {2_Low}/{3_High} (+{4_Turn})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_TURNS">
+			<Text>[NEWLINE][COLOR_POSITIVE_TEXT]You have increased espionage defense for {1_AntiTurns} turns.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_2">
+			<Text>[NEWLINE][NEWLINE][COLOR_CYAN]Intelligence Report[ENDCOLOR][NEWLINE]----------------</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_EMPTY">
+			<Text>[NEWLINE][COLOR_NEGATIVE_TEXT]Station a Great Spy in Foreign Territory to see a Civilization's current [ICON_CULTURE] Culture level and [ICON_RESEARCH] Research project.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_BODY">
+			<Text>[NEWLINE]{1_Face} {2_Civ}: [ICON_CULTURE] {7_CulLow}/{8_CulHigh} (+{9_CulPace})[NEWLINE][COLOR_POSITIVE_TEXT]{3_Tech}[ENDCOLOR] [ICON_RESEARCH] {4_TechLow}/{5_TechHigh} (+{6_TechPace})[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_BODY_NULL">
+			<Text>[NEWLINE]{1_Face} {2_Civ}:[NEWLINE][COLOR_NEGATIVE_TEXT]{2_Civ} has increased espionage defense for {3_AntiTurns} turns.[ENDCOLOR][NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_BODY_COUNT_ONE">
+			<Text>[NEWLINE]You have {1_GSCount} Great Spy in Foreign Territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_SPY_UI_TITLE_BODY_COUNT">
+			<Text>[NEWLINE]You have {1_GSCount} Great Spies in Foreign Territory.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_SPECIALIST_OPERATIVE_MOD">
+			<Text>Operative|Operatives</Text>
+			<Plurality>1|2</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALIST_OPERATIVE_MOD_TITLE">
+			<Text>Great Spy Points:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALIST_OPERATIVE_MOD_STRATEGY">
+			<Text>Create Operatives to speed the creation of Great Spies.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_TAVERN_DESC">
+			<Text>Tavern</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_TAVERN_HELP">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_TAVERN_TEXT">
+			<Text>Establishments for the dispensation and consumption of alcoholic beverages have been a fixture of cities throughout human civilization. The Babylonian Code of Hammurabi suggests the death penalty for proprietors diluting beer, while the ancient Greek 'lesche' and 'phatnai' catered to the needs of foreign traders and envoys. The traditional English tavern has its roots in the Roman period and, although still considered a place of ill-repute, the taberna was understood as a higher class establishment than the similar caupona which served slaves and the lower classes.[NEWLINE][NEWLINE]Tabernae eventually evolved into alehouses run by women and finally the medieval English inn; sanctuaries for wayfaring strangers, thieves, and political malcontents. By the middle of the 16th century the dining-out habit was well established among townsmen of all classes, and the tavern originated the custom of providing a daily meal at a fixed time. As taverns gradually became more socially acceptable, some of the better houses became regular meeting halls and unofficial clubhouses providing companionship to the masses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOMATEKH_SPY_TAVERN_STRATEGY">
+			<Text>The Tavern is a Medieval-era building. It increases the [ICON_SPY_GLASS] Intelligence output of the city and improves the effectiveness of unemployed citizens. The latter bonus is useful for early game cities which have grown too quickly in population and also serves to compliment the Great Spy generation potential provided by the later Constabulary and Police Station.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_BASTION_HELP_SPY_OVERRIDE_EE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have a Castle.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_FASIL_GHEBBI_HELP_SPY_OVERRIDE_EE">
+			<Text>Friendly Units within two tiles of this City have +33% [ICON_STRENGTH] Combat Strength.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_EE_TAVERN_HELP_SPY_OVERRIDE">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_EE_TAVERN_STRATEGY_SPY_OVERRIDE">
+			<Text>The Tavern is a Medieval-era building. It increases a civilization's [ICON_HAPPINESS_1] Happiness and improves the effectiveness of unemployed citizens. The latter bonus is useful for early game cities which have grown too quickly in population and also serves to compliment the Great Spy generation potential provided by the later Constabulary and Police Station.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_WALLS_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CASTLE_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have Walls.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARSENAL_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have a Castle.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARSENAL_HELP_SPY_OVERRIDE_EE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have a Bastion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MILITARY_BASE_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have an Arsenal.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_CONSTABLE_HELP_SPY_OVERRIDE">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_SPY_GLASS] Intelligence.[NEWLINE][NEWLINE]Reduces enemy Spy Effectiveness by 25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CONSTABLE_STRATEGY_SPY_OVERRIDE">
+			<Text>Constabularies slow down the rate at which enemy spies can steal technologies from your city and may be used to help speed the creation of Great Spies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CONSTABLE_HELP_SPY_OVERRIDE_CID">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_SPY_GLASS] Intelligence.[NEWLINE][NEWLINE]Reduces enemy Spy Effectiveness by 25%.[NEWLINE][NEWLINE]City must have a Jail.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CONSTABLE_STRATEGY_SPY_OVERRIDE_CID">
+			<Text>Constabularies slow down the rate at which enemy spies can steal technologies from your city and may be used to help speed the creation of Great Spies. They also reduce [ICON_JFD_CRIME_BLACK] Crime throughout the city. The city must possess a Jail in order to construct the Constabulary.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_POLICE_STATION_HELP_SPY_OVERRIDE">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_SPY_GLASS] Intelligence.[NEWLINE][NEWLINE]Reduces enemy Spy Effectiveness by 25%.[NEWLINE][NEWLINE]City must have a Constabulary.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLICE_STATION_STRATEGY_SPY_OVERRIDE">
+			<Text>Police stations slow down the rate at which enemy spies can steal technologies from your city and may be used to help speed the creation of Great Spies. The city must possess an Constabulary in order to construct the Police Station.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_POLICE_STATION_STRATEGY_SPY_OVERRIDE_CID">
+			<Text>Police stations slow down the rate at which enemy spies can steal technologies from your city and may be used to help speed the creation of Great Spies. They also reduce [ICON_JFD_CRIME_BLACK] Crime throughout the city. The city must possess an Constabulary in order to construct the Police Station.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_WONDER_STATUE_LIBERTY_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_PRODUCTION] Production from Specialists in every City. 1 Free Social Policy.[NEWLINE][NEWLINE]Requires the Freedom Ideology Tree.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PRORA_RESORT_HELP_SPY_OVERRIDE">
+			<Text>+1 [ICON_HAPPINESS_1] Happiness for every 2 Policies you have adopted. 1 Free Social Policy.[NEWLINE][NEWLINE]Requires the Autocracy Ideology Tree.[NEWLINE][NEWLINE]City must be built on the coast.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_MOTHERLAND_STATUE_SPY_OVERRIDE">
+			<Text>Motherland Calls</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_MOTHERLAND_HELP_SPY_OVERRIDE">
+			<Text>+50% [ICON_PRODUCTION] Production when building Armor Units. 1 Free Social Policy.[NEWLINE][NEWLINE]Requires the Order Ideology Tree.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MOTHERLAND_SPY_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"One of the hallmarks of a great nation is its ability to rise to its feet after a fall."[NEWLINE][TAB][TAB] - Unknown[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_MOTHERLAND_STATUE_TEXT_SPY_OVERRIDE">
+			<Text>'The Motherland Calls' is an enormous statue located near the city of Volograd, Russia which commemorates the sacrifices of Soviet soldiers in the Battle of Stalingrad; 1942-1943. The monument was inspired by the ancient Greek sculpture the 'Winged Victory of Samothrace' and was designed by sculptor Yevgeny Vuchetich and structural engineer Nikolai Nikitin. Measuring 85 metres from the tip of its sword to the top of the plinth, it was declared the largest statue in the world in 1967. Today, it is the second tallest statue of a woman in the world.[NEWLINE][NEWLINE]The monument is highly complex from an engineering point of view, due to its characteristic posture with a sword raised high in the right hand and the left hand extended in a calling gesture. The technology behind the hollow statue is based on a combination of pre-stressed concrete with wire ropes structure. However, 'The Motherland Calls' is not fixed to its foundations and is held in place only by its weight, and there is concern that the statue will lean due to changes in groundwater level causing movement of its foundation.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_WONDER_KREMLIN_HELP_SPY_OVERRIDE">
+			<Text>A Great Spy appears near the City where the Wonder was built. Great Spies have +10% chance to survive Espionage Missions.[NEWLINE][NEWLINE]+20% [ICON_SPY_GLASS] Intelligence in all Cities.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_WONDER_TERRA_COTTA_ARMY_HELP_SPY_OVERRIDE">
+			<Text>Creates a copy of each type of military land Unit you control and places the Unit near the City where the Terracotta Army is constructed.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_HIMEJI_CASTLE_HELP_SPY_OVERRIDE">
+			<Text>+15% [ICON_STRENGTH] Combat Strength for Units fighting in Friendly Territory.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence. Provides a free Castle in the City in which it is built.</Text>
+		</Row>
+		<!--
+		<Row Tag="TXT_KEY_WONDER_GREAT_WALL_HELP_SPY_OVERRIDE">
+			<Text>Enemy land Units must spend +1 extra [ICON_MOVES] Movement per Tile inside your territory.[NEWLINE][NEWLINE]Provides +1 [ICON_SPY_GLASS] Intelligence and free Walls in the City in which it is built.[NEWLINE][NEWLINE]The Great Wall becomes obsolete after the owner discovers Dynamite.</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_WONDER_GREAT_WALL_HELP_SPY_OVERRIDE">
+			<Text>Enemy land Units must spend +1 extra [ICON_MOVES] Movement per Tile inside your territory. +1 [ICON_SPY_GLASS] Intelligence. Provides free Walls in the City in which it is built. The Great Wall becomes obsolete after the owner discovers Dynamite.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_GREAT_WALL_HELP_SPY_OVERRIDE_CID">
+			<Text>Enemy land Units must spend +1 extra [ICON_MOVES] Movement per Tile inside your territory. +1 [ICON_SPY_GLASS] Intelligence. Provides free Walls in all Cities. The Great Wall becomes obsolete after the owner discovers Dynamite.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_RED_FORT_HELP_SPY_OVERRIDE">
+			<Text>Defensive Buildings in all Cities are 25% more effective.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<!--
+		<Row Tag="TXT_KEY_WONDER_ALHAMBRA_HELP_SPY_OVERRIDE">
+			<Text>Newly-trained non-air Units in this City receive the [COLOR_POSITIVE_TEXT]Drill I[ENDCOLOR] Promotion (+15% [ICON_STRENGTH] Combat Strength in Rough Terrain).[NEWLINE][NEWLINE]+20% [ICON_CULTURE] Culture in this City.[NEWLINE][NEWLINE]Provides +1 [ICON_SPY_GLASS] Intelligence and a free Castle in the City in which it is built.</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_WONDER_ALHAMBRA_HELP_SPY_OVERRIDE">
+			<Text>Newly-trained non-air Units in this City receive the [COLOR_POSITIVE_TEXT]Drill I[ENDCOLOR] Promotion (+15% [ICON_STRENGTH] Combat Strength in Rough Terrain). +20% [ICON_CULTURE] Culture in this City. +1 [ICON_SPY_GLASS] Intelligence. Provides a free Castle in the City in which it is built.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_ALHAMBRA_HELP_SPY_OVERRIDE_CID">
+			<Text>Newly-trained non-air Units in this City receive the [COLOR_POSITIVE_TEXT]Drill I[ENDCOLOR] Promotion (+15% [ICON_STRENGTH] Combat Strength in Rough Terrain). +20% [ICON_CULTURE] Culture in this City. +1 [ICON_SPY_GLASS] Intelligence. Provides a free Castle in the City in which it is built.</Text>
+		</Row>
+		<!--
+		<Row Tag="TXT_KEY_WONDER_GREAT_FIREWALL_HELP_SPY_OVERRIDE">
+			<Text>99.9% reduction in Effectiveness of enemy Spies in the City in which it is built. All other Cities in your Civilization gain a 25% reduction in enemy Spy Effectiveness.[NEWLINE][NEWLINE]Negates the [ICON_TOURISM] Tourism bonus from the Internet technology against this Civilization.[NEWLINE][NEWLINE]Provides +3 [ICON_SPY_GLASS] Intelligence.</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_WONDER_GREAT_FIREWALL_HELP_SPY_OVERRIDE">
+			<Text>Reduces enemy Spy Effectiveness by 99.9% in the City in which it is built and by 25% in all other Cities. Negates the [ICON_TOURISM] Tourism bonus from the Internet technology against this Civilization. +3 [ICON_SPY_GLASS] Intelligence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PENTAGON_HELP_SPY_OVERRIDE">
+			<Text>Military Units require 33% less [ICON_GOLD] Gold to Upgrade.[NEWLINE][NEWLINE]+1 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PENTAGON_HELP_SPY_OVERRIDE_CID">
+			<Text>Military Units require 33% less [ICON_GOLD] Gold to Upgrade. Reduces [ICON_JFD_CRIME_BLACK] Crime from [ICON_JFD_CRIME_CYAN] Abduction and [ICON_JFD_CRIME_YELLOW] Corruption by 20% in all Cities.[NEWLINE][NEWLINE]+1 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_INT_AGENCY_HELP_SPY_OVERRIDE">
+			<Text>Provides an additional Spy and levels up all your existing Spies. Reduces enemy Spy Effectiveness by 10% in all Cities. +4 [ICON_SPY_GLASS] Intelligence.[NEWLINE][NEWLINE][ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Must have built a Police Station in all Cities. The cost goes up the more cities there are in the empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_INT_AGENCY_HELP_SPY_OVERRIDE_CID">
+			<Text>Provides an additional Spy and levels up all your existing Spies. Reduces enemy Spy Effectiveness by 10% in all Cities. +4 [ICON_SPY_GLASS] Intelligence.[NEWLINE][NEWLINE][ICON_SPY_UNEMPLOYED] Unemployed Citizens in this City provide +1 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Must have built a Police Station in all Cities. The cost goes up the more cities there are in the empire.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_JAIL_HELP_SPY_OVERRIDE_CID">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<!--
+		<Row Tag="TXT_KEY_WONDER_TOWER_LONDON_HELP_SPY_OVERRIDE_CID">
+			<Text>Eliminates [ICON_JFD_CRIME_BLACK] Crime from [ICON_JFD_CRIME_RED] Treason in all cities.[NEWLINE][NEWLINE]Provides +2 [ICON_SPY_GLASS] Intelligence and a free Castle in the City in which it is built.[NEWLINE][NEWLINE]+4 [ICON_TOURISM] Tourism after Electricity.</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_WONDER_TOWER_LONDON_HELP_SPY_OVERRIDE_CID">
+			<Text>Eliminates [ICON_JFD_CRIME_BLACK] Crime from [ICON_JFD_CRIME_RED] Treason in all cities.[NEWLINE][NEWLINE]+2 [ICON_SPY_GLASS] Intelligence. Provides a free Castle in the City in which it is built. +4 [ICON_TOURISM] Tourism after Electricity.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_TIMURID_MADRASAH_MOD_HELP_SPY_OVERRIDE">
+			<Text>Reduces enemy spy stealing rate by 20%. Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]+1 [ICON_SPY_GLASS] Intelligence[NEWLINE][NEWLINE]City must have a Library.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_POLICY_MILITARY_CASTE_HELP_SPY_OVERRIDE">
+			<Text>[COLOR_POSITIVE_TEXT]Military Caste[ENDCOLOR][NEWLINE]Each City with a Garrison provides +1 [ICON_HAPPINESS_1] Local Happiness, +1 [ICON_CULTURE] Culture, and +1 [ICON_SPY_GLASS] Intelligence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MILITARY_CASTE_HELP_SPY_OVERRIDE_CID">
+			<Text>[COLOR_POSITIVE_TEXT]Military Caste[ENDCOLOR][NEWLINE]Each City with a Garrison provides +1 [ICON_HAPPINESS_1] Local Happiness, +1 [ICON_CULTURE] Culture, +1 [ICON_SPY_GLASS] Intelligence, and +5% [ICON_JFD_BLUE_FIST] Loyalty per level.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MERC_ARMY_HELP_SPY_OVERRIDE">
+			<Text>[COLOR_POSITIVE_TEXT]Mercenary Army[ENDCOLOR][NEWLINE]Allows the purchasing of Landsknechts. +1 [ICON_SPY_GLASS] Intelligence from Taverns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MERC_ARMY_HELP_SPY_OVERRIDE_RTP">
+			<Text>[COLOR_POSITIVE_TEXT]Mercenary Army[ENDCOLOR][NEWLINE]Mercenary Contracts are 20% cheaper to take out. +1 [ICON_SPY_GLASS] Intelligence from Taverns.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BUILDING_BABYLON_HELP_SPY_OVERRIDE_CID">
+			<Text>+1 [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INDIA_FORT_HELP_SPY_OVERRIDE_CID">
+			<Text>
+				+1 [ICON_SPY_GLASS] Intelligence. Provides +2 [ICON_TOURISM] Tourism after Flight is researched.[NEWLINE][NEWLINE]City must have Walls.
+			</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_SPECIALIST_CITIZEN_STRATEGY_SPY_OVERRIDE">
+			<Text>Unemployed Citizens each provide a small amount of [ICON_PRODUCTION] Production. They should, when possible, be assigned to work tiles or made into specialists.[NEWLINE][NEWLINE]After you reach the Renaissance and construct a Constabulary or Police Station, Unemployed Citizens will also provide [ICON_SPY_GLASS] Intelligence which can be used to create Great Spies or fund Espionage Missions.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_BELIEF_SPY_MYSTERY_CULTS_SHORT">
+			<Text>Mystery Cults</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_SPY_MYSTERY_CULTS">
+			<Text>[ICON_SPY_UNEMPLOYED] Unemployed Citizens provide +1 [ICON_PEACE] Faith</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_SPY_NEGATIVE_THEOLOGY_SHORT">
+			<Text>Negative Theology</Text>
+		</Row>
+		<!--
+		<Row Tag="TXT_KEY_BELIEF_SPY_NEGATIVE_THEOLOGY">
+			<Text>20% of your [ICON_PEACE] Faith output is converted to [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>		
+		-->
+		<Row Tag="TXT_KEY_BELIEF_SPY_NEGATIVE_THEOLOGY">
+			<Text>10% of your [ICON_PEACE] Faith output is also added as [ICON_SPY_GLASS] Intelligence</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_TITLE">
+			<Text>Great Spy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ADV_QUEST">
+			<Text>What is a Great Spy?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_BODY">
+			<Text>The Great Spy is a versatile unit that specializes in sabotaging rival civilizations. Unlike other Great People, the Great Spy is generated by collecting [ICON_SPY_GLASS] Intelligence which is produced by buildings, wonders, and even unemployed citizens.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ABILITY_ADV_QUEST">
+			<Text>What are the Great Spy's abilities?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ABILITY_TITLE">
+			<Text>Special Ability: Espionage Mission</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ABILITY_BODY">
+			<Text>Great Spies can conduct espionage missions in foreign territory. This versatile ability can be used to sabotage rival civilizations, destroy resources, and even steal great works. Espionage missions vary in strength, with the strongest requiring an additional [ICON_SPY_GLASS] Intelligence cost. However, many also carry a small chance for the Great Spy to survive and be reused for a new mission.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ABILITY2_TITLE">
+			<Text>Special Ability: Surveillance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPECIALISTSANDGP_GREATSPY_ABILITY2_BODY">
+			<Text>Great Spies make excellent scouts, with passive bonuses to movement, sight, and the ability to enter rival territory. Additionally, as long as your Great Spy is on a tile owned by another civilization, you will be able to see that civilization's current [ICON_CULTURE] Culture level and [ICON_RESEARCH] Research project. This does not consume the Great Spy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_GREAT_SPY_TOPIC">
+			<Text>Great Spies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_GREAT_SPY_DESCRIPTION">
+			<Text>{TXT_KEY_CONCEPT_ESPIONAGE_GREAT_SPY_TOPIC}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_GREAT_SPY_SUMMARY">
+			<Text>The Great Spy is a versatile unit that specializes in sabotaging rival civilizations. Unlike other Great People, the Great Spy is generated by collecting [ICON_SPY_GLASS] Intelligence which is produced by buildings, wonders, and even unemployed citizens.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_YIELD_INTEL_TOPIC">
+			<Text>Intelligence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_YIELD_INTEL_DESCRIPTION">
+			<Text>{TXT_KEY_CONCEPT_ESPIONAGE_YIELD_INTEL_TOPIC}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CONCEPT_ESPIONAGE_YIELD_INTEL_SUMMARY">
+			<Text>[ICON_SPY_GLASS] Intelligence is a pseudo-yield used to produced Great Spies and fund Espionage Missions, their unique ability. It is produced by buildings, wonders, and even unemployed citizens (after your construct a Constabulary or Police Station).</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_HELP">
+			<Text>You need the prerequisite technology to improve this tile.</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_HORSE_MOD">
+			<Text>Horses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_IRON_MOD">
+			<Text>Iron</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_COAL_MOD">
+			<Text>Coal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_ALUM_MOD">
+			<Text>Aluminum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_OIL_MOD">
+			<Text>Oil</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAKE_URAN_MOD">
+			<Text>Uranium</Text>
+		</Row>
+		<!-- -->
+		<Row Tag="TXT_KEY_UNIT_SPY_DUMMY_DESC">
+			<Text>Operative</Text>
+		</Row>
+		<!-- -->
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_MY_SCORE_FUTURE_TECH"/>
+			<Set Text="{1_Num} from Repeatables"/>
+		</Update>
+		<!-- -->
+		<!-- -->
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_37">
+			<Text>Shi Pei Pu</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_38">
+			<Text>Virginia Hall</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_39">
+			<Text>James Armistead Lafayette</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_40">
+			<Text>John André</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_41">
+			<Text>Klaus Fuchs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_42">
+			<Text>Julius Rosenberg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_43">
+			<Text>Krystyna Skarbek</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_44">
+			<Text>Dusan Popov</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_45">
+			<Text>Henri Dericourt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_46">
+			<Text>Odette Hallowes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_47">
+			<Text>Richard Sorge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_48">
+			<Text>John Thurloe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_49">
+			<Text>Christiaan Snouck Hurgronje</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_50">
+			<Text>Ho Liang-Shung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_51">
+			<Text>Akashi Motojiro</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_52">
+			<Text>Maria de Victorica</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_53">
+			<Text>Elsbeth Schragmüller</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_54">
+			<Text>Jules C. Silber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_55">
+			<Text>Howard Burnham</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_56">
+			<Text>T.E. Lawrence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_57">
+			<Text>Hino Kumawaka</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_58">
+			<Text>Kato Danzo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_59">
+			<Text>Mochizuki Chiyome</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_60">
+			<Text>Fuma Kotaro</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_61">
+			<Text>Fujibayashi Nagato</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_62">
+			<Text>Momochi Sandayu</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_63">
+			<Text>Shi Jianqiao</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_64">
+			<Text>Lucrezia Borgia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_65">
+			<Text>Marcia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_66">
+			<Text>Fanny Kaplan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_67">
+			<Text>Violet Gibson</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_68">
+			<Text>Judith</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_69">
+			<Text>Khioniya Guseva</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_70">
+			<Text>Gavrilo Princip</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_TOMATEKH_SPY_NAME_71">
+			<Text>John Wilkes Booth</Text>
+		</Row>
+	</Language_JA_JP>
+</GameData>
