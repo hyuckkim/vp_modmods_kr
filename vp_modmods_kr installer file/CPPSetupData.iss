@@ -183,7 +183,9 @@ Name: "mc"; Description: "의미있는 색깔 (Meaningful Colours)"; Types: VP34
 Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "smm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "cms"; Description: "개선된 모딩 화면 (Enhanced Modding Screen)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "cs"; Description: "문명 선택 개선 (CivSelection)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "le"; Description: "VP 목록 개선 (List Enhancements for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+
 ; Name: "mrcs"; Description: "더 많은 오른쪽 클릭 단축키 (More Right Click Shortcuts)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
 Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
