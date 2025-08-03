@@ -36,6 +36,7 @@
     <File md5="71C6D5F714681E6A63CF9A22D9238292" import="0">Localization/Reforest_de_DE.xml</File>
     <File md5="F51A3D79EA84DF7CD59FE217B4F9C20E" import="0">Localization/Reforest_en_US.xml</File>
     <File md5="5D937E1CE875B86CE6464D1C6C9FB417" import="0">Localization/Reforest_fr_FR.xml</File>
+	<File md5="2D161D19E0C3D4D853E59B3A426DB03A" import="0">Localization/Reforest_ko_KR.xml</File>
     <File md5="47E77531701D216A347E8AB6540A14A9" import="0">Lua/Reforestation.lua</File>
   </Files>
   <Actions>
@@ -44,6 +45,7 @@
       <UpdateDatabase>Localization/Reforest_en_US.xml</UpdateDatabase>
       <UpdateDatabase>Localization/Reforest_de_DE.xml</UpdateDatabase>
       <UpdateDatabase>Localization/Reforest_fr_FR.xml</UpdateDatabase>
+	  <UpdateDatabase>Localization/Reforest_ko_KR.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

@@ -18,8 +18,8 @@ VP용 EUI 호환 파일의 한국어 모드입니다. VP용 EUI 호환 파일 �
 VP용 분대의 한국어 모드입니다. VP용 분대 모드는 스타크래프트 같은 RTS 게임 처럼 부대 지정을 가능하게 해주는 모드입니다.  
 
 ### VP에서 별도로 분리되거나 추가될 예정인 모드-모드:  
-[(over) More Unique Components for VP (v 88)](https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/post-16731954)  
-(overL) More Unique Components for VP (v 88) INT  
+[(over) More Unique Components for VP (v 89)](https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/post-16731954)  
+(overL) More Unique Components for VP (v 89) INT  
 VP용 3, 4번째 고유 요소 혹은 더 많은 고유 요소 모드입니다. VP 원본에 합쳐질 예정이라 업데이트가 멈췄고 최신 버전에서 실행만 되도록 한 패치된 버전을 썼습니다. 워낙 필수취급 받는 모드라 번역을 시도한 분이 한 둘이 아닌데 [ㅂㅈㅈㅈ님 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=195158) 이 있고, [ㅇㅇ(周年)님이 쓴 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=331075) 도 있고, [계몽 모드용으로 만든 CAYM님 번역본](https://cafe.naver.com/civilization4/289556) 도 있습니다. 여기에 포함된 한국어 번역은 [CAYM님의 4UCUA 한국어 모드](https://cafe.naver.com/civilization4/289556) 를 기반으로 수정을 한 버전입니다.  
 
 [(7) VP Community Events](https://forums.civfanatics.com/threads/community-patch-events-development.569321/)  
@@ -48,6 +48,10 @@ VP에 내장된 이벤트가 12개짜리 데모 버전 같은 맛보기 라면 (
 [InGame Editor+ (v 46)](https://forums.civfanatics.com/threads/ingame-editor-for-vp.679650/)  
 VP용 인게임 에디터입니다. 게임 내의 온갖 요소들을 추가, 수정, 삭제 할 수 있는 모드로 모더들이 테스트를 위해 많이 쓰지만 유저들도 이용합니다. 싱글용 핵취급을 받기도 합니다. 번역은 문메폴 패치에 통합되어 있습니다.  
 
+[Longer Eras - Historic (v 8)](https://steamcommunity.com/sharedfiles/filedetails/?id=220412890)  
+Longer Eras - Historic (v 8) INT  
+역사적 이라는 새로운 시대를 만듭니다. 일반 시대 속도를 기반으로 기술에 필요한 과학 요구를 300% 늘려 마라톤과 비슷한 수준으로 만들어줍니다.
+
 [Quick Turns (v 10)](https://steamcommunity.com/sharedfiles/filedetails/?id=220250184)  
 이미 다들 많이 쓰시는 퀵턴 모드입니다. AI의 턴 동안 빠른 이동/전투를 할 수 있게 해 특히 AI 차례를 지켜보는 시간을 줄여줍니다. 역시나 번역은 문메폴 패치에 통합되어 있습니다.  
 
@@ -64,11 +68,19 @@ UI - Improved City View (Vox Populi EUI) INT
 34UC 다음으로 VP 채용설이 나오고 있는 도시 화면을 개선해주는 모드로 걸작, 위인 미터, 건물 관리, 특히 전문가 때문에 많은 분들이 필수라고 여기는 모드입니다.  
 
 [UI_CustomModScreen](https://forums.civfanatics.com/resources/enhanced-modding-screen-enable-all-version.26441/)  
+모드 선택 화면을 개선해주는 모드입니다. 모든 모드를 선택하고 해제할 수 있고 필터를 만들 수도 있습니다.
 
 [UI_SukMainMenu](https://forums.civfanatics.com/threads/main-menu-bg.623032/)  
+메인 메뉴를 가로로 바꾸고 기존의 로딩 화면을 배경화면으로 만들어주는 모드입니다.
 
 [Vibrant Textures](https://forums.civfanatics.com/resources/vibrant-terrain-textures.29607/)  
 지형의 질감을 개선해주는 패치로 특히 누렇게 내지는 약간 녹조처럼 보이던 물을 새파랗게 만들어줍니다.  
+
+[VP Happiness notifications (v 1)](https://forums.civfanatics.com/threads/december-balance-beta-december-3rd-12-3.639187/post-15306167) KR  
+행복도 변화를 알림으로 보여주는 모드입니다.  
+
+[Wonder Race (v 7)](https://steamcommunity.com/sharedfiles/filedetails/?id=656292791) KR  
+불가사의 건설이 누가 앞서고 있는지 알려주는 모드입니다.  
 
 [Wake All and Upgrade All Units In Military Overview (v 1)](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/)
 Wake All and Upgrade All Units In Military Overview (v 1) (INT)
@@ -81,10 +93,6 @@ More Wonder와는 별개의 모드로 함께 사용 가능한 불가사의 추�
 [(6) Future Age for VP](https://forums.civfanatics.com/threads/future-age-for-vp.675470/)  
 (6) Future Age for VP INT (AI)
 시대가 미래로 갈수록 문명 5에서도 VP에서도 다소 부실하다는 평이 많은데 이를 보완해주는 여러 다른 게임의 지적재산권이 활용된 미래 시대를 추가해주는 모드입니다. 이 또한 [CAYM님의 미래 시대 한국어 모드](https://cafe.naver.com/civilization4/289556) 를 기반으로 번역했으며 구글 Gemini Pro 2.5 AI를 학습시켜 번역을 했습니다. 단, 미래 모드는 CAYM님이 수정한 버전이 아닌 원본 모드를 그대로 사용했습니다.  
-
-[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
-종교 승리를 추가해주는 모드입니다.  
-※ 미래 시대 모드와 호환되지 않는다는 보고가 있습니다.  
 
 [(overhaul) Enhanced Air Warfare 4VP (v 1.9)](https://forums.civfanatics.com/threads/enhanced-air-warfare-4vp.656114/)  
 (overhaul) Enhanced Air Warfare 4VP INT  
@@ -130,6 +138,9 @@ Exploration Heritage (v 46) INT
 [Hokaths Proposals](https://forums.civfanatics.com/threads/hokaths-changes.690601/)  
 Hokaths Proposals (아직 번역 미완성)  
 Hokath님이 제작한 모드들의 집합체로 일부 국가, 기업, 트리, 요새, 건물, 유닛 등 많은 구성요소의 밸런스를 조정합니다.  
+
+[Jarcast's Bigger Huge Map for Communitu_79a (v 5)](https://forums.civfanatics.com/threads/bigger-huge-maps-for-communitu_79a.685239/)  
+커뮤니투 지도의 거대한 버전을 만들어주는 모드입니다.  
 
 [JFD's Sovereignty for VP (v 15a)](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212) KR  
 정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
@@ -184,6 +195,7 @@ Recon Pay (Xtra5) Horse Thieves (v 1) INT
 정찰 유닛이 아닌 유닛이 새로운 지형을 발견하면 그 유닛의 차례가 끝납니다.  
 
 [Reforestation (v 9)](https://steamcommunity.com/sharedfiles/filedetails/?id=198158029)  
+재식림 모드입니다. 노동자가 숲을 만들 수 있게 해줍니다.
 
 [TreeSuccession (v 44)](https://forums.civfanatics.com/threads/treesuccession.626302/)  
 숲과 정글의 성장과 산불 등으로 나무를 보다 현실적으로 만들어주는 모드입니다.  
@@ -201,10 +213,6 @@ World Congress Reformation (v 12) INT
 세계 의회 안건을 좀 더 늘려 개선해주는 모드로 [ㅇㅇ(周年)님의 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=266788) 을 기반으로 최신 버전에 맞게 수정했습니다.  
 
 ### 번역은 완료되었으나 포함되지 않은 모드-모드:  
-[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
-종교 승리를 추가해주는 모드입니다.  
-※ 모드팩에서 게임 진행이 불가능한 문제가 있어 모드팩에서 제외됩니다.  
-
 [(ui) List Enhancements for VP](https://forums.civfanatics.com/threads/list-enhancements-for-vp.638546/)  
 도시 화면의 유닛 목록을 개선시켜주는 모드입니다.  
 ※ 모드팩 한정으로 UI가 망가져 플레이에 불편을 주기에 모드팩에서 제외됩니다.  
@@ -228,29 +236,30 @@ Recon Pay (Xtra2) Free ZoC (v 3) INT
 ※ Counter-Reconnaissance 모드와 같이 사용할 수 없어 모드팩에서 제외됩니다.  
 
 ### 번역이 안 되어 포함되지 않은 모드-모드:  
+[(7a) VP Events Overhaul (Expansion Pack system) (v 2.1)](https://forums.civfanatics.com/threads/7a-vp-events-overhaul-expansion-pack-system.688052/)  
+VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
+※ 최신 VP와 호환되지 않는다는 보고가 있습니다.  
+
 [(8) Events and Decisions (CBO) (v 14)](https://forums.civfanatics.com/threads/cbp-events-and-decisions-compatibility.562935/post-16644437)  
 도덕적 가치관에 따른 결정과 정착 이벤트를 추가해주는 모드입니다.  
-
-[(n) Semper Fidelis](https://forums.civfanatics.com/threads/semper-fidelis-ideologies-expansion-pack.693449/)  
-새로운 3개의 이념을 추가해주는 모드입니다.  
 
 [(ui) City-States Leaders for VP](https://forums.civfanatics.com/threads/city-states-leaders-for-vp.636763/)  
 도시 국가에 지도자 초상화를 추가해주는 모드입니다.  
 ※ 비영어판 문명 5 한정으로 오류가 발생하는 문제가 있습니다.  
 
-[(7a) VP Events Overhaul (Expansion Pack system) (v 2.1)](https://forums.civfanatics.com/threads/7a-vp-events-overhaul-expansion-pack-system.688052/)  
-VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.  
-※ 최신 VP와 호환되지 않는다는 보고가 있습니다.  
-
-[Health & Plague for BNW (v 19)](https://forums.civfanatics.com/resources/health-plague-for-bnw-v-19.21416/)  
-
-[Jarcast's Bigger Huge Map for Communitu_79a (v 5)](https://forums.civfanatics.com/threads/bigger-huge-maps-for-communitu_79a.685239/)  
-
-[JFD's and Pouakai's Mercenaries (v 6)](https://forums.civfanatics.com/threads/mercenaries.552053/)  
+[Historical Religions Complete (BNW or GK) (v 45)](https://forums.civfanatics.com/resources/historical-religions-complete-bnw-or-gk.23172/)
+종교를 추가해주는 모드입니다.
 
 [NavalMod(v3)](https://forums.civfanatics.com/threads/naval-capital-units-for-vp.698803/)  
+더 많은 해상 유닛을 추가해주는 모드입니다.
 
 ### 영구적으로 제외하기로 결정한 모드-모드:  
+[(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
+종교 승리를 추가해주는 모드입니다. 게임이 아예 진행 불가능한 문제가 있어 제외되었습니다.
+
+[(n) Semper Fidelis](https://forums.civfanatics.com/threads/semper-fidelis-ideologies-expansion-pack.693449/)  
+종교 승리 모드와 세트로 새로운 3개의 이념을 추가해주는 모드입니다. Vox Populi's Bare Necessities 모드와 충돌로 제외되었습니다.  
+
 [(text) Promotion Overhaul for VP](https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/)  
 (text) Promotion Overhaul for VP INT (AI)  
 유닛 승급 정보를 가시성 좋게 표시 해주는 모드로 구글 Gemini Pro 2.5 AI가 학습해 번역하였으나 최신 버전과 맞지 않는 내용으로 혼란을 줘 제외되었습니다.  
@@ -260,7 +269,7 @@ City States Leaders II (compatible) (v 7) INT
 [City States Leaders II (v 7)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 [City States Leaders II CS Mods art pack (v 1)](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
 City States Leaders II INT  
-도시 국가에 지도자 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 City-States Leaders for VP가 있어 대체합니다.  
+도시 국가에 지도자 초상화를 추가해주는 모드입니다. 가장 최신이자 현재도 개발 중인 [City-States Leaders for VP](https://forums.civfanatics.com/threads/city-states-leaders-for-vp.636763/) 가 있어 대체합니다.  
 
 [More Right Click Shortcuts (v 1)](https://forums.civfanatics.com/resources/more-right-click-shortcuts.30060/)  
 마우스 오른쪽 클릭으로 할 수 있는 것들을 좀 더 추가해주는 모드입니다. 그러나 다른 모드들과 충돌로 인해 빠졌습니다.  
@@ -271,4 +280,4 @@ Reworked Top Panel (v 5) INT
 
 [Upgrade All Units Button In Military Overview (v 2)](https://forums.civfanatics.com/threads/qol-upgrade-all-units-button-in-military-overview.682903/)  
 Upgrade All Units Button In Military Overview INT  
-이름 그대로 군사 화면에서 모든 유닛 업그레이드 버튼을 추가해주는 모드입니다. [상위호환 대체제](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/)로 교체되었습니다.  
+이름 그대로 군사 화면에서 모든 유닛 업그레이드 버튼을 추가해주는 모드입니다. [상위호환 대체제](https://forums.civfanatics.com/threads/wake-all-and-upgrade-all-units-in-military-overview-v-1.689500/) 로 교체되었습니다.  
