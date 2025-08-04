@@ -247,15 +247,15 @@ VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.
 도시 국가에 지도자 초상화를 추가해주는 모드입니다.  
 ※ 비영어판 문명 5 한정으로 오류가 발생하는 문제가 있습니다.  
 
-[Historical Religions Complete (BNW or GK) (v 45)](https://forums.civfanatics.com/resources/historical-religions-complete-bnw-or-gk.23172/)
-종교를 추가해주는 모드입니다.
+[Historical Religions Complete (BNW or GK) (v 45)](https://forums.civfanatics.com/resources/historical-religions-complete-bnw-or-gk.23172/)  
+종교를 추가해주는 모드입니다.  
 
 [NavalMod(v3)](https://forums.civfanatics.com/threads/naval-capital-units-for-vp.698803/)  
 더 많은 해상 유닛을 추가해주는 모드입니다.
 
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
-종교 승리를 추가해주는 모드입니다. 게임이 아예 진행 불가능한 문제가 있어 제외되었습니다.
+종교 승리를 추가해주는 모드입니다. 게임이 아예 진행 불가능한 문제가 있어 제외되었습니다.  
 
 [(n) Semper Fidelis](https://forums.civfanatics.com/threads/semper-fidelis-ideologies-expansion-pack.693449/)  
 종교 승리 모드와 세트로 새로운 3개의 이념을 추가해주는 모드입니다. Vox Populi's Bare Necessities 모드와 충돌로 제외되었습니다.  
