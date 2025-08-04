@@ -56,6 +56,7 @@ Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 �
 [Types]
 Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치";
+Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)";
 
 [InstallDelete]
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\cache"
