@@ -51,7 +51,7 @@ Source: "..\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: i
 [Components]
 Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP; Flags: exclusive disablenouninstallwarning
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: NVC; Flags: exclusive disablenouninstallwarning
-Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: CS; Flags: exclusive disablenouninstallwarning
+Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: CSBU; Flags: exclusive disablenouninstallwarning
 
 [Types]
 Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
