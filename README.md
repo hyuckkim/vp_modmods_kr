@@ -139,9 +139,6 @@ Exploration Heritage (v 46) INT
 Hokaths Proposals (아직 번역 미완성)  
 Hokath님이 제작한 모드들의 집합체로 일부 국가, 기업, 트리, 요새, 건물, 유닛 등 많은 구성요소의 밸런스를 조정합니다.  
 
-[Jarcast's Bigger Huge Map for Communitu_79a (v 5)](https://forums.civfanatics.com/threads/bigger-huge-maps-for-communitu_79a.685239/)  
-커뮤니투 지도의 거대한 버전을 만들어주는 모드입니다.  
-
 [JFD's Sovereignty for VP (v 15a)](https://forums.civfanatics.com/threads/jfds-sovereignty-for-vp.677932/post-16680212) KR  
 정부 형태를 고르고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. [모드 소개와 함께 번역을 해주신 분](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=275728) 이 계신데, hyuckkim님께서 이 글을 참조했는지는 모릅니다만, 여튼 이 모드를 번역해놓은 모드가 있어 이를 최신 버전에 이식했습니다. 아직 일부 정당명 등이 번역이 덜 되었습니다.  
 
@@ -247,6 +244,9 @@ VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.
 도시 국가에 지도자 초상화를 추가해주는 모드입니다.  
 ※ 비영어판 문명 5 한정으로 오류가 발생하는 문제가 있습니다.  
 
+[Jarcast's Bigger Huge Map for Communitu_79a (v 5)](https://forums.civfanatics.com/threads/bigger-huge-maps-for-communitu_79a.685239/)  
+커뮤니투 지도의 거대한 버전을 만들어주는 모드입니다.  
+
 [Historical Religions Complete (BNW or GK) (v 45)](https://forums.civfanatics.com/resources/historical-religions-complete-bnw-or-gk.23172/)  
 종교를 추가해주는 모드입니다.  
 
@@ -255,7 +255,7 @@ VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다.
 
 ### 영구적으로 제외하기로 결정한 모드-모드:  
 [(n) Religious Victory](https://forums.civfanatics.com/threads/religious-victory.689729/)  
-종교 승리를 추가해주는 모드입니다. 게임이 아예 진행 불가능한 문제가 있어 제외되었습니다.  
+종교 승리를 추가해주는 모드입니다. 번역까지 끝마쳤지만, 게임이 아예 진행 불가능한 문제가 있어 제외되었습니다.  
 
 [(n) Semper Fidelis](https://forums.civfanatics.com/threads/semper-fidelis-ideologies-expansion-pack.693449/)  
 종교 승리 모드와 세트로 새로운 3개의 이념을 추가해주는 모드입니다. Vox Populi's Bare Necessities 모드와 충돌로 제외되었습니다.  
