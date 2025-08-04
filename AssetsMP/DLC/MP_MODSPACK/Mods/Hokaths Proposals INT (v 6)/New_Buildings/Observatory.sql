@@ -9,5 +9,5 @@ SET Text = 'City gains +1 [ICON_RESEARCH] Science for every Mountain within the 
 WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'The Observatory increases [ICON_RESEARCH] Science output, especially for Cities near lots of Mountains or with access to Atolls. You might also consider it for your Coastal Cities, especially those running Sea Trade Routes. Finally if you are running a religious Empire, stargazing will reinforce your Faith.'
+SET Text = '천문대는 [ICON_RESEARCH] 과학 산출량을 늘려줍니다. 특히 산이 많거나 산호에 접근할 수 있는 도시의 경우 더욱 그렇습니다. 또한 해안 도시, 특히 해상 무역로를 운영하는 도시에도 고려해 볼 만합니다. 마지막으로, 당신이 종교 문명을 운영한다면, 별을 바라보는 것이 당신의 신앙을 강화시켜줄 것입니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_STRATEGY';

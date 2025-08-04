@@ -2,7 +2,7 @@
 <GameData>
 	<Language_ko_KR>
 		<Row Tag="TXT_KEY_CORPORATION_POPULI_MEDICINE">
-			<Text>Populi Medicine, Inc.</Text>
+			<Text>민중제약 주식회사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CORPORATION_POPULI_MEDICINE_HELP">
 			<Text>Supports the [ICON_VICTORY_DOMINATION] Domination and [ICON_VICTORY_DIPLOMACY] Diplomatic victories by providing [ICON_HAPPINESS_1] Happiness and [ICON_INFLUENCE] Influence. It also uniquely increases [ICON_PEACE] Faith generation.[NEWLINE][ICON_BULLET]+2 [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][ICON_BULLET]Incoming [ICON_ARROW_LEFT] Trade Routes generate +5 [ICON_GOLD] Gold for the City.[NEWLINE][ICON_BULLET]+3 [ICON_PEACE] Faith from Hospital in all Cities.[NEWLINE][ICON_BULLET]+3 [ICON_GOLD] Gold from [ICON_CSD_CIVIL_SERVANT] Civil Servants.[NEWLINE][ICON_BULLET]Every [ICON_VP_FRANCHISE] Franchise in a foreign Civilization's Cities increases [ICON_TOURISM] Tourism with them by 2%.</Text>
@@ -17,14 +17,14 @@
 			<Text>Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from a City with a Populi Medicine [ICON_VP_OFFICE] Office generate 40 [ICON_CULTURE] Culture when completed, scaling with Era.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes from Cities with a Populi Medicine [ICON_VP_OFFICE] Office to Cities with a Populi Medicine [ICON_VP_FRANCHISE] Franchise grant +3% [ICON_PEACE] Faith to the origin City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CORPORATION_POPULI_MEDICINE_OFFICE_BENEFIT_HELP">
-			<Text>Current Office Bonus: {1_String}</Text>
+			<Text>현재 오피스 보너스: {1_String}</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_HQ">
-			<Text>Populi Medicine Headquarters</Text>
+			<Text>민중제약 본사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_HQ_STRATEGY">
-			<Text>Construct this building in one of your cities to found the Populi Medicine Corporation. See the [COLOR_POSITIVE_TEXT]Corporations[ENDCOLOR] section of the Civilopedia for more information.[NEWLINE][NEWLINE]Remember that each Civilization may only found [COLOR_POSITIVE_TEXT]one[ENDCOLOR] Corporation, so make sure the benefits are applicable to your Victory Strategy!</Text>
+			<Text>당신의 도시 중 하나에 이 건물을 건설하여 민중제약 기업을 설립하세요. 자세한 내용은 문명백과의 [COLOR_POSITIVE_TEXT]기업[ENDCOLOR] 항목을 참조하세요.[NEWLINE][NEWLINE]Remember that each Civilization may only found [COLOR_POSITIVE_TEXT]one[ENDCOLOR] Corporation, so make sure the benefits are applicable to your Victory Strategy!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_HQ_HELP">
 			<Text>Founds the Populi Medicine, Inc. Corporation.[NEWLINE][NEWLINE]Receive a free Populi Medicine [ICON_VP_OFFICE] Office in this City, and unlocks construction of Populi Medicine [ICON_VP_OFFICE] Offices in owned Cities.</Text>
@@ -34,7 +34,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE">
-			<Text>Populi Medicine Office</Text>
+			<Text>민중제약 오피스</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_STRATEGY">
 			<Text>When a [ICON_INTERNATIONAL_TRADE] Trade Route between a foreign City and this City completes, a Populi Medicine [ICON_VP_FRANCHISE] Franchise is constructed in the foreign City.[NEWLINE][NEWLINE]Populi Medicine cannot be sold or destroyed by the player, and increases the [ICON_PEACE] Faith output of all Populi Medicine [ICON_VP_OFFICE] Offices by +1.[NEWLINE][NEWLINE]You cannot have more [ICON_VP_FRANCHISE] Franchises than your Franchise Limit (see the Corporation and Monopolies Overview for more on this).</Text>
@@ -44,7 +44,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_FRANCHISE">
-			<Text>Populi Medicine Franchise</Text>
+			<Text>민중제약 프랜차이즈</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POPULI_MEDICINE_FRANCHISE_STRATEGY">
 			<Text>This building can only be constructed in foreign Cities if you were the founder of Populi Medicine. To construct this building in a foreign City, send a Trade Route from an owned City with a Populi Medicine [ICON_VP_OFFICE] Office in it to a foreign City. When the Trade Route is complete, the building will automatically be constructed. There is also a 5% chance each turn that a franchise will appear on its own in a random foreign City.</Text>

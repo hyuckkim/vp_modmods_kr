@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/25/2014 3:11:24 AM -->
+<!-- Sneaky, sneaky! Trying to steal my secrets! We are watching you. -->
+<GameData>
+	<Gamespeeds>
+		<Row>
+			<Type>GAMESPEED_HISTORIC</Type>
+			<Description>TXT_KEY_GAMESPEED_HISTORIC</Description>
+			<Help>TXT_KEY_GAMESPEED_HISTORIC_HELP</Help>
+			<DealDuration>45</DealDuration>
+			<GrowthPercent>100</GrowthPercent>
+			<TrainPercent>100</TrainPercent>
+			<ConstructPercent>100</ConstructPercent>
+			<CreatePercent>100</CreatePercent>
+			<ResearchPercent>400</ResearchPercent>
+			<GoldPercent>100</GoldPercent>
+			<GoldGiftMod>100</GoldGiftMod>
+			<BuildPercent>100</BuildPercent>
+			<ImprovementPercent>100</ImprovementPercent>
+			<GreatPeoplePercent>100</GreatPeoplePercent>
+			<CulturePercent>100</CulturePercent>
+			<FaithPercent>300</FaithPercent>
+			<BarbPercent>100</BarbPercent>
+			<FeatureProductionPercent>100</FeatureProductionPercent>
+			<UnitDiscoverPercent>100</UnitDiscoverPercent>
+			<UnitHurryPercent>100</UnitHurryPercent>
+			<UnitTradePercent>100</UnitTradePercent>
+			<GoldenAgePercent>100</GoldenAgePercent>
+			<HurryPercent>100</HurryPercent>
+			<InflationPercent>20</InflationPercent>
+			<InflationOffset>-135</InflationOffset>
+			<ReligiousPressureAdjacentCity>40</ReligiousPressureAdjacentCity>
+			<VictoryDelayPercent>100</VictoryDelayPercent>
+			<MinorCivElectionFreqMod>100</MinorCivElectionFreqMod>
+			<OpinionDurationPercent>100</OpinionDurationPercent>
+			<SpyRatePercent>100</SpyRatePercent>
+			<PeaceDealDuration>15</PeaceDealDuration>
+			<RelationshipDuration>50</RelationshipDuration>
+			<LeaguePercent>100</LeaguePercent>
+			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+	</Gamespeeds>
+	<GameSpeed_Turns>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>180</MonthIncrement>
+			<TurnsPerIncrement>100</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>170</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>24</MonthIncrement>
+			<TurnsPerIncrement>201</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>12</MonthIncrement>
+			<TurnsPerIncrement>129</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>6</MonthIncrement>
+			<TurnsPerIncrement>180</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>3</MonthIncrement>
+			<TurnsPerIncrement>264</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_HISTORIC</GameSpeedType>
+			<MonthIncrement>1</MonthIncrement>
+			<TurnsPerIncrement>156</TurnsPerIncrement>
+		</Row>
+	</GameSpeed_Turns>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_GAMESPEED_HISTORIC">
+			<Text>Historic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_HISTORIC_HELP">
+			<Text>Normal Game Speed with Marathon Research Times</Text>
+		</Row>
+	</Language_en_US>
+	<Processes>
+		<Update>
+			<Set TechPrereq="TECH_MINING"/>
+			<Where Type="PROCESS_WEALTH"/>
+		</Update>
+	</Processes>
+	<Process_ProductionYields>
+		<Update>
+			<Set Yield="50"/>
+			<Where Type="PROCESS_WEALTH"/>
+		</Update>
+	</Process_ProductionYields>
+	<Process_ProductionYields>
+		<Update>
+			<Set Yield="50"/>
+			<Where Type="PROCESS_RESEARCH"/>
+		</Update>
+	</Process_ProductionYields>
+	<Buildings>
+		<Update>
+			<Set Happiness="3"/>
+			<Where Type="BUILDING_COLOSSEUM"/>
+		</Update>
+		<Update>
+			<Set Happiness="3"/>
+			<Where Type="BUILDING_SATRAPS_COURT"/>
+		</Update>
+		<Update>
+			<Set Happiness="3"/>
+			<Where Type="BUILDING_BURIAL_TOMB"/>
+		</Update>
+		<Update>
+			<Set Happiness="3"/>
+			<Where Type="BUILDING_CIRCUS"/>
+		</Update>
+		<Update>
+			<Set Happiness="4"/>
+			<Where Type="BUILDING_THEATRE"/>
+		</Update>
+		<Update>
+			<Set Happiness="5"/>
+			<Where Type="BUILDING_STADIUM"/>
+		</Update>
+		<Update>
+			<Set UnmoddedHappiness="6"/>
+			<Where Type="BUILDING_CIRCUS_MAXIMUS"/>
+		</Update>
+		<Update>
+			<Set UnmoddedHappiness="11"/>
+			<Where Type="BUILDING_NOTRE_DAME"/>
+		</Update>
+		<Update>
+			<Set Happiness="5"/>
+			<Where Type="BUILDING_TAJ_MAHAL"/>
+		</Update>
+		<Update>
+			<Set Happiness="2"/>
+			<Where Type="BUILDING_STONE_WORKS"/>
+		</Update>
+		<Update>
+			<Set UnmoddedHappiness="6"/>
+			<Where Type="BUILDING_EIFFEL_TOWER"/>
+		</Update>
+	</Buildings>
+	<Unit_Flavors>
+		<Update>
+			<Set Flavor="10"/>
+			<Where UnitType="UNIT_SETTLER"/>
+		</Update>
+	</Unit_Flavors>
+	<Defines>
+		<Update>
+			<Set Value="20"/>
+			<Where Name="RELIGION_MIN_FAITH_FIRST_PANTHEON"/>
+		</Update>
+		<Update>
+			<Set Value="300"/>
+			<Where Name="RELIGION_MIN_FAITH_FIRST_PROPHET"/>
+		</Update>
+		<Update>
+			<Set Value="1500"/>
+			<Where Name="RELIGION_MIN_FAITH_FIRST_GREAT_PERSON"/>
+		</Update>
+		<Update>
+			<Set Value="150"/>
+			<Where Name="RELIGION_FAITH_DELTA_NEXT_PROPHET"/>
+		</Update>
+		<Update>
+			<Set Value="750"/>
+			<Where Name="RELIGION_FAITH_DELTA_NEXT_GREAT_PERSON"/>
+		</Update>
+	</Defines>
+	<Units>
+		<Update>
+			<Set FaithCost="300"/>
+			<Where Type="UNIT_MISSIONARY"/>
+		</Update>
+	</Units>
+	
+</GameData>

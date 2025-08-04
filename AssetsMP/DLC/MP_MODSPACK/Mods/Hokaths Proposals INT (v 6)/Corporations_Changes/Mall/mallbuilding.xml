@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_ko_KR>
-		<!--New Coporation Building-->
+		<!--새로운 기업 건물-->
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL">
-			<Text>Shopping Mall</Text>
+			<Text>쇼핑몰</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL_HELP">
-			<Text>When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_TOURISM] Tourism. Incoming [ICON_ARROW_LEFT] Trade Routes to this City generate +2 [ICON_GOLD] Gold for the City, and +2 [ICON_GOLD] Gold for [ICON_ARROW_RIGHT] Trade Route owner.[NEWLINE][NEWLINE]All Corporate Franchises in this City generate +4 [ICON_GOLD] Gold and +2 [ICON_CULTURE] Culture.
+			<Text>이 도시에서 [ICON_INVEST] 골드를 사용하여 유닛을 구매하거나 건물에 투자할 경우, 비용의 15%가 [ICON_TOURISM] 관광으로 전환됩니다. 이 도시로 들어오는 [ICON_ARROW_LEFT] 교역로는 도시에 [ICON_GOLD] 골드 +2를 생성하고, [ICON_ARROW_RIGHT] 교역로 소유자에게도 [ICON_GOLD] 골드 +2를 생성합니다.[NEWLINE][NEWLINE]이 도시의 모든 기업 프랜차이즈는 [ICON_GOLD] 금 +4와 [ICON_CULTURE] 문화 +2를 생성합니다.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL_STRATEGY">
-			<Text>The Mall interacts with Corporations and the Trade Route subsystem on which they rely. In an appropriate City, it turns Franchises from a cost into a benefit.</Text>
+			<Text>쇼핑몰은 기업과 그들이 의존하는 교역로 하위 시스템과 상호 작용합니다. 적절한 도시에서는 프랜차이즈가 비용에서 혜택으로 전환됩니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL_TEXT">
 			<Text>
-				[SPACE]During the 20th century, the advent of the automobile has created an urban and suburban landscape in which people live in one area but can shop, play and work elsewhere - often miles away from their homes. Nowhere is this more true than in the United States of America, whose citizens are noted for an almost fanatical devotion to their cars. This has had important social, environmental and economic affects upon life in America, leading to (among other things) the creation of that most American of institution - the shopping mall.
+				[SPACE]20세기에 자동차가 등장하면서 사람들은 한 지역에 살면서도 다른 곳(종종 집에서 몇 마일 떨어진 곳)에서 쇼핑, 놀거리, 일을 할 수 있는 도시와 교외 풍경이 형성되었습니다. 이 점이 가장 잘 드러나는 곳은 바로 미국입니다. 미국 국민들은 자동차에 대한 거의 광신적인 헌신으로 유명합니다. 이는 미국의 삶에 사회적, 환경적, 경제적으로 큰 영향을 미쳤으며, (그 중에서도) 가장 미국적인 기관인 쇼핑몰이 생겨나는 계기가 되었습니다.
 				[NEWLINE][NEWLINE]
-				American shopping malls are surrounded by acres and acres of parking lots, and they may contain dozens (if not hundreds) of stores selling everything from clothing to jewelry to electronics to books to computers to videos. In some ways American shopping malls are akin in spirit to the old Arabian markets (although Americans don't particularly enjoy haggling and prices are generally fixed).
+				미국의 쇼핑몰은 넓은 주차장으로 둘러싸여 있으며, 의류부터 보석, 전자제품, 서적, 컴퓨터, 비디오까지 모든 것을 판매하는 수십 개(수백 개가 아닐 수도 있음)의 매장이 들어설 수 있습니다. 어떤 면에서 미국의 쇼핑몰은 옛 아라비아 시장과 정신적으로 유사합니다. (하지만 미국인들은 흥정을 별로 좋아하지 않고 가격은 일반적으로 고정되어 있습니다)
 				[NEWLINE][NEWLINE]
-				The earliest automobile-centered shopping center was the "Market Square," opened in Chicago, Illinois, in 1916. Constructed in Minnesota in 1992, the "Mall of America" is the largest mall in the world at time of writing. It contains over 500 shops, 80 restaurants, a theme park, hotel, and movie theatres. It is housed in a building large enough to hold over 30 Boeing 747 airplanes.
+				최초의 자동차 중심 쇼핑센터는 1916년 일리노이주 시카고에 문을 연 "마켓 스퀘어"였습니다. 1992년 미네소타에 건설된 "몰 오브 아메리카"는 이 글을 쓰는 시점에서 세계에서 가장 큰 쇼핑몰입니다. 이곳에는 500개가 넘는 상점, 80개가 넘는 레스토랑, 테마파크, 호텔, 영화관이 있습니다. 이 건물은 보잉 747 항공기 30대 이상을 수용할 수 있을 만큼 큽니다.
 			</Text>
 		</Row>
 	</Language_ko_KR>

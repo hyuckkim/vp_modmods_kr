@@ -18,7 +18,7 @@ VP용 EUI 호환 파일의 한국어 모드입니다. VP용 EUI 호환 파일 �
 VP용 분대의 한국어 모드입니다. VP용 분대 모드는 스타크래프트 같은 RTS 게임 처럼 부대 지정을 가능하게 해주는 모드입니다.  
 
 ### VP에서 별도로 분리되거나 추가될 예정인 모드-모드:  
-[(over) More Unique Components for VP (v 89)](https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/post-16731954)  
+[(over) More Unique Components for VP (v 89)](https://forums.civfanatics.com/resources/unofficial-hotfixed-3rd-and-4th-unique-component-for-vp.32457/)  
 (overL) More Unique Components for VP (v 89) INT  
 VP용 3, 4번째 고유 요소 혹은 더 많은 고유 요소 모드입니다. VP 원본에 합쳐질 예정이라 업데이트가 멈췄고 최신 버전에서 실행만 되도록 한 패치된 버전을 썼습니다. 워낙 필수취급 받는 모드라 번역을 시도한 분이 한 둘이 아닌데 [ㅂㅈㅈㅈ님 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=195158) 이 있고, [ㅇㅇ(周年)님이 쓴 번역본](https://gall.dcinside.com/mgallery/board/view/?id=civilization&no=331075) 도 있고, [계몽 모드용으로 만든 CAYM님 번역본](https://cafe.naver.com/civilization4/289556) 도 있습니다. 여기에 포함된 한국어 번역은 [CAYM님의 4UCUA 한국어 모드](https://cafe.naver.com/civilization4/289556) 를 기반으로 수정을 한 버전입니다.  
 
