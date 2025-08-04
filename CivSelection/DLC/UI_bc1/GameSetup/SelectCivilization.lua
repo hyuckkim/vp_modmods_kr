@@ -231,7 +231,7 @@ function AddRandomCivilizationEntry()
     controlTable.Button:SetVoid1(-1)
     controlTable.Button:RegisterCallback(Mouse.eLClick, CivSelectedRandom)
     
-    controlTable.CivDesc:LocalizeAndSetText("Random Civ")
+    controlTable.CivDesc:LocalizeAndSetText("무작위 문명")
     IconHookup(22, 64, "LEADER_ATLAS", controlTable.Portrait)
 end
  
@@ -300,7 +300,7 @@ function AddLeaderEntry(civID)
 		local leaderInstance = leaderManager:GetInstance()
 		leaderInstance.LeaderButton:SetVoid1(civID)
 		leaderInstance.LeaderButton:RegisterCallback(Mouse.eLClick, CultureSelectedRandom)
-		leaderInstance.LeaderBonusTitle:LocalizeAndSetText("Random Leader - {1_CivName}", culture.ShortDescription);
+		leaderInstance.LeaderBonusTitle:LocalizeAndSetText("무작위 지도자 - {1_CivName}", culture.ShortDescription);
 		leaderInstance.LeaderBonusDescription:LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_HELP")
 		leaderInstance.CivIcon:SetHide(true)
 		IconHookup(22, 128, "LEADER_ATLAS", leaderInstance.LeaderPortrait)
@@ -349,7 +349,7 @@ function AddLeaderEntry(civID)
 		local leaderInstance = leaderManager:GetInstance()
 		leaderInstance.LeaderButton:SetVoid1(tMasterCiv.ID)
 		leaderInstance.LeaderButton:RegisterCallback(Mouse.eLClick, LeaderSelectedRandom)
-		leaderInstance.LeaderBonusTitle:LocalizeAndSetText("Random Leader - {1_CivName}", sGroupName);
+		leaderInstance.LeaderBonusTitle:LocalizeAndSetText("무작위 지도자 - {1_CivName}", sGroupName);
 		leaderInstance.LeaderBonusDescription:LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_HELP")
 		leaderInstance.CivIcon:SetHide(true)
 		IconHookup(22, 128, "LEADER_ATLAS", leaderInstance.LeaderPortrait)
