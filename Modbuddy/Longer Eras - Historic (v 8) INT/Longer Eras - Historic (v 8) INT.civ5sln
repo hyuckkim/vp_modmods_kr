@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Longer Eras - Historic (v 8) INT", "Longer Eras - Historic (v 8) INT\Longer Eras - Historic (v 8) INT.civ5proj", "{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Default|x86.ActiveCfg = Default|x86
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Default|x86.Build.0 = Default|x86
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Package Only|x86.ActiveCfg = Package Only|x86
+		{449AA57A-4D04-46EE-B7DB-02BEB13E0FFB}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

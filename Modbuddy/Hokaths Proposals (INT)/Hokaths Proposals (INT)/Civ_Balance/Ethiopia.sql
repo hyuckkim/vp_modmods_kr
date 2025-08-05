@@ -7,5 +7,5 @@ SET Text = '{TXT_KEY_BUILDING_MONUMENT_DESC}를 대체하는 고유한 에티오
 WHERE Tag = 'TXT_KEY_BUILDING_STELE_STRATEGY';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_CYAN]기술[ENDCOLOR]을 발견하면 [ICON_GOLDEN_AGE] 황금기 점수 10을 얻습니다. (시대에 따라 보정)'
+SET Text = '[COLOR_CYAN]기술[ENDCOLOR]을 발견하면 [ICON_GOLDEN_AGE] 황금기 점수 10을 얻습니다. [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_BUILDING_STELE_HELP';

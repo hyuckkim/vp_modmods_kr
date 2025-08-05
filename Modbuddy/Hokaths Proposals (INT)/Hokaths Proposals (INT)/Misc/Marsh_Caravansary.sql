@@ -1,0 +1,11 @@
+UPDATE Language_ko_KR
+SET Text = '여기에서 시작하여 다른 문명을 대상으로 [ICON_CARAVAN] 육상 교역로를 완성하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생(하거나 기존 이벤트가 강화)됩니다.[NEWLINE][NEWLINE]도시에서 작업하는 사막 타일 2개 또는 툰드라 타일 2개, 습지 타일 1개마다 [ICON_FOOD] 식량과 [ICON_GOLD] 골드가 +1 증가합니다. [ICON_CARAVAN] 육상 교역로의 범위가 50% 증가하고 [ICON_GOLD] 골드도 3 증가합니다.[NEWLINE][NEWLINE][ICON_RES_TRUFFLES] 송로버섯: [ICON_GOLD] 골드 +2[NEWLINE][ICON_RES_COTTON] 목화: [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_FUR] 모피: [ICON_GOLD] 골드 +1, [ICON_PRODUCTION] 생산력 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_CARAVANSARY_HELP';
+
+UPDATE Language_ko_KR
+SET Text = '여기에서 시작하여 다른 문명을 대상으로 하는 [ICON_INTERNATIONAL_TRADE] 육상 교역로를 완성하면, 최근 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광 산출량에 따라 해당 문명의 [ICON_TOURISM] 관광이 증가합니다. 도시에서 작업하는 사막 또는 툰드라 타일 2개와 습지 타일 1개마다 [ICON_FOOD] 식량과 [ICON_GOLD] 골드가 +1 증가합니다.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] 육상 교역로의 범위가 +75% 증가하고 [ICON_GOLD] 골드도 +3 증가합니다. 유입되는 [ICON_INTERNATIONAL_TRADE] 교역로에서 도시와 교역로 소유자는 [ICON_GOLD] 골드 2를 얻습니다. [ICON_INTERNATIONAL_TRADE] 교역 유닛이 도시를 통과하면 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산력, [ICON_CULTURE] 문화가 +2 증가합니다.[NEWLINE][ICON_RES_TRUFFLES] 송로버섯: [ICON_GOLD] 골드 +2[NEWLINE][ICON_RES_COTTON] 목화: [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_FUR] 모피: [ICON_GOLD] 골드 +1, [ICON_PRODUCTION] 생산력 +1[NEWLINE]근처의 모든 사치 자원에 [ICON_GOLD] 골드 +1이 추가됩니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP';
+
+UPDATE Language_ko_KR
+SET Text = '건설 시 이집트 [ICON_VP_ARTIFACT] 유물을 무료로 받습니다.[NEWLINE][NEWLINE][ICON_CARAVAN] 육상 교역로의 범위가 50% 증가하고 [ICON_GOLD] 골드도 3 증가합니다. 여기에서 시작하여 다른 문명을 대상으로 [ICON_CARAVAN] 육상 교역로를 완성하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생(하거나 기존 이벤트가 강화)됩니다.[NEWLINE][NEWLINE]도시에서 작업하는 사막 타일 1.5개 또는 툰드라 타일 1.5개, 습지 타일 1개마다 [ICON_GOLD] 골드와 [ICON_FOOD] 식량이 +1 증가합니다.[NEWLINE][NEWLINE][ICON_GREAT_WORK] 걸작이나 유물을 위한 슬롯 1개가 포함되어 있습니다.[NEWLINE][NEWLINE][ICON_RES_TRUFFLES] 송로버섯: [ICON_GOLD] 골드 +2[NEWLINE][ICON_RES_COTTON] 목화: [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_FUR] 모피: [ICON_GOLD] 골드 +1, [ICON_PRODUCTION] 생산력 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_BURIAL_TOMB_HELP';
