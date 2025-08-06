@@ -20,6 +20,42 @@ if Game then
 		end
 	end
 end
+-------------------------------------------------------------------------------------------------------------------------
+function Game_IsUsingMod(modID)
+	for _, mod in pairs(Modding.GetActivatedMods()) do
+		if mod.ID == modID then
+			return true
+		end
+	end
+	return false
+end
+-------------------------------------------------------------------------------------------------------------------------
+tUniqueVillages = {}
+tUniqueVillages[GameInfoTypes.IMPROVEMENT_TRADING_POST] = true
+if Game_IsUsingMod("cc3e1671-2832-40dc-9bfd-8e053d3b76b2") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_CL_KALLE] = true
+end
+if Game_IsUsingMod("17304572-5735-44c1-a981-29be1ff401b6") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_GW_BRITTANY_KERIADENN] = true
+end
+if Game_IsUsingMod("3499cc3d-2073-42c9-9bf0-f39db982e741") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_HININ_AINU_KOTAN] = true
+end
+if Game_IsUsingMod("f79ace06-b989-45be-b310-1632ed1c79b9") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_JAR_BORGO] = true
+end
+if Game_IsUsingMod("8dac91b6-191b-4698-b762-0256963343ac") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_JAR_HOGAN] = true
+end
+if Game_IsUsingMod("6cc3abfc-baaf-4aff-9c62-0757e0ed9944") then
+	tUniqueVillages[GameInfoTypes.IMPROVEMENT_JAR_KILOMBO] = true
+end
+
+tUniqueForts = {}
+tUniqueForts[GameInfoTypes.IMPROVEMENT_FORT] = true
+if Game_IsUsingMod("6cc3abfc-baaf-4aff-9c62-0757e0ed9944") then
+	tUniqueForts[GameInfoTypes.IMPROVEMENT_JAR_KILOMBO] = true
+end
 --==========================================================================================================================
 -- FUNCTIONS
 --==========================================================================================================================
@@ -115,6 +151,8 @@ function Jar_BanaueWonderPlaceRice(iPlayer, iCity, iBuilding, bIncludeGold, bInc
 					pPlot:SetOwner(iPlayer, iCity, true, true)
 				end
 				pPlot:SetResourceType(GameInfoTypes.RESOURCE_RICE, 1)
+				pPlot:SetFeatureType(-1)
+				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_FARM)				
 				count = count +1 
 			end
 		end
@@ -227,14 +265,16 @@ function Jar_CanConstructSynagogueofPrague(ePlayer, eCity, eBuilding)
 	local pPlot = pCity:Plot()
 	
 	if eBuilding == GameInfoTypes.BUILDING_OLD_NEW_SYNAGOGUE then
-		local cityReligionID = pCity:GetReligiousMajority();
-		for religion in GameInfo.Religions() do
-			local religionID = religion.ID
-			local cityFollowers = pCity:GetNumFollowers(religionID)
-			if religionID > -1 and religionID ~= cityReligionID then
-				return cityFollowers >= 4
+		local cityReligionID = pCity:GetReligiousMajority();		
+		for ID = 0, GameDefines.MAX_MAJOR_CIVS - 1, 1 do
+			local otherReligiousPlayer = Players[ID]
+			local otherReligionID = otherReligiousPlayer:GetMajorityReligion()
+			local otherFollowers = pCity:GetNumFollowers(otherReligionID)
+			if cityReligionID ~= otherReligionID and otherFollowers >= 4 then
+				return true
 			end
 		end
+		return false
 	end
 	return true
 end
@@ -262,7 +302,7 @@ function Jar_CanConstructJetavanaramaya(ePlayer, eCity, eBuilding)
 		local count= 0
 		for cityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
 			local pPlot = pCity:GetCityIndexPlot(cityPlot)
-			if pPlot:GetOwner() == ePlayer and pPlot:GetWorkingCity():GetID() == eCity and pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_TRADING_POST then
+			if pPlot:GetOwner() == ePlayer and pPlot:GetWorkingCity():GetID() == eCity and tUniqueVillages[pPlot:GetImprovementType()] then
 				count = count +1
 			end
 		end
@@ -281,6 +321,18 @@ function Jar_JetavanaramayaWonderDummyPolicy(iPlayer, iCity, iBuilding, bInclude
 	end	
 end
 GameEvents.CityConstructed.Add(Jar_JetavanaramayaWonderDummyPolicy)
+--==========================================================================================================================
+-- Tlachihualtepetl
+--==========================================================================================================================
+function Jar_TlachihualtepetlWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold, bIncludeFaithOrCulture)
+	local pPlayer = Players[iPlayer]	
+	local pCity = pPlayer:GetCityByID(iCity)
+	if iBuilding ~= GameInfoTypes.BUILDING_TLACHIHUALTEPETL then return end
+	if not pPlayer:HasPolicy(GameInfoTypes.POLICY_TLACHIHUALTEPETL) then
+		pPlayer:GrantPolicy(GameInfoTypes.POLICY_TLACHIHUALTEPETL, true)
+	end	
+end
+GameEvents.CityConstructed.Add(Jar_TlachihualtepetlWonderDummyPolicy)
 --==========================================================================================================================
 -- Larabanga Mosque
 --==========================================================================================================================
@@ -332,7 +384,7 @@ function Jar_CanConstructKeshgarhQila(ePlayer, eCity, eBuilding)
 		local count= 0
 		for cityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
 			local pPlot = pCity:GetCityIndexPlot(cityPlot)
-			if pPlot:GetOwner() == ePlayer and pPlot:GetWorkingCity():GetID() == eCity and pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_FORT then
+			if pPlot:GetOwner() == ePlayer and pPlot:GetWorkingCity():GetID() == eCity and tUniqueForts[pPlot:GetImprovementType()] then
 				count = count +1
 			end
 		end
