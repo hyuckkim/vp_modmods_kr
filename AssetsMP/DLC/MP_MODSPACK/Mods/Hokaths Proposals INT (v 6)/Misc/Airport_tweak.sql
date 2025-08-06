@@ -1,3 +1,0 @@
-UPDATE Language_ko_KR
-SET Text = '문명 내 [ICON_CONNECTED]/[ICON_INDUSTRIAL_CONNECTED] 도시 연결에서 +5%의 수익률을 얻습니다. 도시에 거주하는 [ICON_CITIZEN] 시민 3명당 [ICON_TOURISM] 관광이 +1 증가합니다. 산호에서  [ICON_GOLD] 골드와 [ICON_TOURISM] 관광이 +3 증가합니다.[NEWLINE][NEWLINE]이 도시로 또는 이 도시에서 [COLOR_POSITIVE_TEXT]공수[ENDCOLOR]를 할 수 있습니다. [COLOR_POSITIVE_TEXT]도시의 항공 유닛 수용 제한이 2에서 6으로 증가합니다.[ENDCOLOR] 도시에 대한 공습 시 공중 유닛의 [ICON_STRENGTH] 피해가 +10 증가합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_AIRPORT_HELP';

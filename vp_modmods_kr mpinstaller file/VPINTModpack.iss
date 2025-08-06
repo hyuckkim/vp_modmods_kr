@@ -59,6 +59,7 @@ Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패�
 Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)";
 
 [InstallDelete]
+Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\MP_MODSPACK"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\cache"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\Text\VPUI_tips_ko_kr.xml"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\Assets\DLC\VT"

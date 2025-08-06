@@ -200,7 +200,7 @@ Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formatio
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "Mariw"; Description: "해양 날씨 (Maritime Weather+)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "rf"; Description: "재식림 (Reforestation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ts"; Description: "산림 천이 (TreeSuccession)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -235,6 +235,7 @@ Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi  (투표 문명색 제�
 Name: "Custom"; Description: "사용자 정의 설치"; Flags: iscustom
 
 [InstallDelete]
+Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\MP_MODSPACK"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\cache"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\Text\VPUI_tips_ko_kr.xml"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\Assets\DLC\VT"
