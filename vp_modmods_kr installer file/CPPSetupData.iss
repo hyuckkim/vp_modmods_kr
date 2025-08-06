@@ -393,7 +393,7 @@ var
 procedure CurPageChanged(CurPageID: Integer);
 begin
   if CurPageID = wpFinished then
-    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어 번역 모드 설치를 완료했습니다. 모드를 실행하려면 문명 5를 열고 모드 메뉴에서 설치된 모든 모드를 활성화한 후 ''다음''을 클릭합니다(''뒤로''를 클릭하지 마세요). 즐거운 시간 되세요!';
+    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어+ 모드 설치를 완료했습니다. 모드를 실행하려면 문명 5를 열고 모드 메뉴에서 설치된 모든 모드를 활성화한 후 ''다음''을 클릭합니다(''뒤로''를 클릭하지 마세요). 즐거운 시간 되세요!';
 end;
 
 procedure InitializeWizard;
@@ -433,7 +433,7 @@ begin
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion') and
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion2')); 
     if Result = False then
-      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어 모드도 설치할 수 없습니다.', mbInformation, MB_OK);
+      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어+ 모드도 설치할 수 없습니다.', mbInformation, MB_OK);
   end;
 end;
 

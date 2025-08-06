@@ -1,10 +1,10 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "VP INT Modpack+"
+#define MyAppName "VP INT+ Modpack"
 #define MyAppVersion "4.22"
 #define MyAppPublisher "HANDANI"
-#define MyAppURL "https://github.com/handani/vp_modmods_kr"
+#define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
 
 [Setup]
 ; 참고: AppId 값은 이 애플리케이션을 고유하게 식별합니다.
@@ -55,8 +55,6 @@ Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 �
 
 [Types]
 Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
-Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치";
-Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)";
 Name: "Custom"; Description: "사용자 정의 설치"; Flags: iscustom
 
 [InstallDelete]
@@ -218,7 +216,7 @@ var
 procedure CurPageChanged(CurPageID: Integer);
 begin
   if CurPageID = wpFinished then
-    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어 번역 모드팩 설치를 완료했습니다. 모드팩은 모드 메뉴를 쓰지 않고, 평상시 문명 5를 할 때 처럼 싱글과 멀티를 하시면 됩니다. 즐거운 시간 되세요!';
+    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어+ 모드팩 설치를 완료했습니다. 모드팩은 모드 메뉴를 쓰지 않고, 평상시 문명 5를 할 때 처럼 싱글과 멀티를 하시면 됩니다. 즐거운 시간 되세요!';
 end;
 
 procedure InitializeWizard;
@@ -227,7 +225,7 @@ begin
   // 설치 경로 페이지 만들기
 
   CIVDirPage := CreateInputDirPage(wpSelectComponents,
-    '문명 5 폴더를 선택하세요.', 'Vox Populi 한국어 모드팩을 어디에 설치해야 합니까?',
+    '문명 5 폴더를 선택하세요.', 'Vox Populi 한국어+ 모드팩을 어디에 설치해야 합니까?',
     '문명 5 설치 폴더를 선택한 후 "다음"을 클릭합니다. 설치 프로그램이 기본적으로 폴더를 선택하지 않으면 "찾아보기"를 클릭하고 올바른 폴더를 선택하세요. 찾으려면 스팀에서 Sid Meier''s Civilization V를 마우스 오른쪽 버튼으로 클릭하고 "관리 >" 에서 "로컬 파일 탐색"을 선택하세요.',
     False, '');
   CIVDirPage.Add('');
@@ -258,7 +256,7 @@ begin
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion') and
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion2')); 
     if Result = False then
-      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어 모드팩도 설치할 수 없습니다.', mbInformation, MB_OK);
+      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어+ 모드팩도 설치할 수 없습니다.', mbInformation, MB_OK);
   end;
 end;
 
