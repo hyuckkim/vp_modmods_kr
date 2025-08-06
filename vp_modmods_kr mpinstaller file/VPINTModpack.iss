@@ -49,14 +49,15 @@ Source: "..\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: i
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP; Flags: exclusive disablenouninstallwarning
-Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: NVC; Flags: exclusive disablenouninstallwarning
-Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: CSBU; Flags: exclusive disablenouninstallwarning
+Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP Custom; Flags: exclusive disablenouninstallwarning
+Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: NVC Custom; Flags: exclusive disablenouninstallwarning
+Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: CSBU Custom; Flags: exclusive disablenouninstallwarning
 
 [Types]
 Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
 Name: "NVC"; Description: "세계 의회 투표 문명 이름 색상 제거 패치";
 Name: "CSBU"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)";
+Name: "Custom"; Description: "사용자 정의 설치"; Flags: iscustom
 
 [InstallDelete]
 Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\MP_MODSPACK"

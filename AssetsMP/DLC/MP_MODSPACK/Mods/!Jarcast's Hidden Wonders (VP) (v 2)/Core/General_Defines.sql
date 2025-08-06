@@ -128,5 +128,7 @@ UPDATE Buildings SET PortraitIndex = 32 WHERE Type='BUILDING_KELDUR_HALL';
 UPDATE Buildings SET PortraitIndex = 33 WHERE Type='BUILDING_KASUBI_TOMBS';
 UPDATE Buildings SET PortraitIndex = 34 WHERE Type='BUILDING_BANAUE';
 UPDATE Buildings SET PortraitIndex = 35 WHERE Type='BUILDING_SHAOLIN';
+
+UPDATE Buildings SET PortraitIndex = 36, IconAtlas='ATLAS_JAR_WONDERS' WHERE Type='BUILDING_PALACE_GARDEN';
 --======================================================================================================================================--
 --======================================================================================================================================--

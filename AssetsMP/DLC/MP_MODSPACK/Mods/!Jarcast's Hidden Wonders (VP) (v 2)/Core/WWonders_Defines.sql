@@ -1064,7 +1064,7 @@ SELECT 	'POLICY_GOLDEN_GATE', 	'DOMAIN_SEA',		'YIELD_GOLDEN_AGE_POINTS', 	5 ;
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
 	Cost = 2100, PrereqTech = 'TECH_ROCKETRY', NumPoliciesNeeded = 22,
-	FreeBuildingThisCity = 'BUILDINGCLASS_AIRPORT', Capital = 1
+	FreeBuildingThisCity = 'BUILDINGCLASS_AIRPORT', CapitalOnly = 1
 WHERE Type = 'BUILDING_CHANGI_AIRPORT';
 
 INSERT INTO Building_YieldChanges
