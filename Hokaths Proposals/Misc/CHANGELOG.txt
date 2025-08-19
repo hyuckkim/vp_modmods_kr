@@ -1,10 +1,92 @@
-Pantheons
-  Custom Mod Option for permanent pantheons change to 1
-    If you are spread to, you keep your pantheon. Feels less bad especially for desert/tundra start.
+Religion
   Goddess of Renewal
   -- Changed +2 Science to +2 Faith on the Market
     This Pantheon might now actually stand a chance of Founding in reasonable time
     All* other Building-buffing Pantheons have +2 Faith on that Building
+   
+  WarReligions.sql looks to make the military appeal of Religion better
+  -- New Enhancer "Cremation" to contend with Zealotry
+   - 200% Combat Strength as Faith when your Units die
+   - 10 Culture on Birth
+   - 1 Happiness from City on River
+
+  -- Teocalli remake to sort out Faith engine runaway
+   - Faith on kill to 20 GAP only if the Unit is created in that City, scaling
+   - loses XP
+   - 20% Prod to Units in City
+   - Loses Supply, moved to Gurdwara
+   - Pressure increased to 50%
+   - +1 Happiness base
+
+  -- New Founder "Eternal Glory"
+   - +4 Production, Faith, Border Growth to Courthouses 
+   - +1 " for every City following the Religion
+   - Heavenly Stair NW: Faith/BGP on kills in all Cities and 5 GAdPoints to Holy Sites
+       old Teocalli but rebalanced and now locked behind Reformation
+
+  -- New Founder "Mastery"
+   - +1 Happines per 8 Followers in non-Enemy Foreign Cities
+       if you think about it, this will actually cause DoW on you
+   - +1 Science and Culture for every 2 Followers in City-States
+   - max 80 followers
+   - Martial Sanctum NW: 15 XP to newly created Units in City and 5 GGPoints to Holy Sites
+       old Teocalli but now locked behind Reformation
+   - Mastery follower renamed "Abstinence" and Asceticism renamed "Remedy"
+
+  -- Hero Worship changed to "Ritual Sacrifice"
+   - Loses conquest yields
+     non-scaling not appropriate for Founder imo
+   - +1 Food and Prod in Holy City for every 3 Followers of Foreign Religions
+   - 50 Faith and GAP for every converted Citizen when using Inquisitor
+   - Great Altar NW +% prod changed to 20 Food and Prod on kill during Golden Age
+
+  ReligionChanges.sql continues some of these lines of thought
+  -- Theocratic Rule renamed Pilgrimage
+   - +15% WTLKD Yields removed since they don't require spread
+   - +1 Gold, Faith, and Tourism in the Holy City for every 4 Followers of this Religion in Foreign Cities 
+   - max 400 Followers
+
+  -- Divine Inheritance loses +% Golden Age yields in Capital as it doesn't required spread
+   - +1 Food, Production, and Golden Age Points in the Holy City for every 5 Followers of this Religion in owned Cities 
+     spread but to yourself!
+   - max 300 Followers
+   
+  -- Sacred Calendar changed
+   - named "Annual Festivals" to separate a bit from Mayan UA
+   - "We Love the King Day" boosts the Faith, Culture, and Gold output of a City by 10%. 
+      moved from old Theocratic rule and nerfed slightly 
+   - +40% [ICON_CULTURE_LOCAL] Border Growth Rate in all owned Cities. 
+   - Missionaries of this Religion are 25% stronger.
+
+  -- Symbolism changed (following More Beliefs)
+   - Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 
+   - gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion 
+   - max 24 Cities
+   - +33% Great Person Rate in Holy City during Golden Ages.
+
+  -- Orthodoxy changed (following More Beliefs)
+   - renamed Ecumenism
+   - 20% (50% on Press) Spread Rate 
+   - 20% Spread Distance
+   - Holy City gains +15% All Yields during a Golden Age.
+      moved from old Divine Inheritance and nerfed slightly 
+
+  -- New Enhancer "Sacred Geometry" (for Wonder Whores)
+   - Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 Science and Faith for every City following this Religion 
+   - max 20 Cities
+   - +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all World Wonders
+   - +5 [ICON_GREAT_MUSICIAN] Great Musician points in the Holy City.
+   
+  -- New Reformation "Exodus" (for Terra maps and seafarers)
+   - Expending a Great Admiral grants 25 Faith and Golden Age Points for every City following this Religion 
+   - max 20 Cities
+   - Settler and Religious Units gain +2 Naval moves, +1 Naval Sight, 1 move Embark/Disembark.
+   - +2 Culture and Great Admiral Points if the City is Coastal.
+
+  -- New Follower "Sacred Bull"
+   - +1 All Yields from Cattle
+     fun that if you have some Cattle, you really want to get this religion to that City
+   - Holy Cow!
 
 Building Changes
   Stoneworks (feat. Arena, Forge, Workshop)

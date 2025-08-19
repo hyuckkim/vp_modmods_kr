@@ -417,16 +417,6 @@ VALUES
 	('BUILDING_EE_GUNSMITH', 'RESOURCE_COAL',		'YIELD_PRODUCTION', 1),
 	('BUILDING_EE_GUNSMITH', 'RESOURCE_COAL',		'YIELD_SCIENCE', 1);
 
-----------------------------------------------
--- Japan's UA
-----------------------------------------------
-
-INSERT INTO Trait_BuildingClassYieldChanges
-		(TraitType, BuildingClassType, YieldType, YieldChange)
-SELECT DISTINCT bcyc.TraitType, bc.Type, bcyc.YieldType, bcyc.YieldChange
-FROM BuildingClasses bc, Trait_BuildingClassYieldChanges bcyc
-WHERE bc.Type IN('BUILDINGCLASS_EE_GUNSMITH', 'BUILDINGCLASS_EE_DRYDOCK') AND bcyc.TraitType = 'TRAIT_FIGHT_WELL_DAMAGED';
-
 ------------------------
 -- Flavors
 ------------------------
@@ -487,7 +477,7 @@ Cost = 850,
 GoldMaintenance = 4
 WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
 
--- grocer (apothecary)
+-- grocer (pharmacy)
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
 SELECT

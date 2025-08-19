@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!-- VENICE -->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_CARRIER">
+			<Text>[COLOR_SELECTED_TEXT]Aquila-class[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Divisione Venezia[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_IRONCLAD">
+			<Text>[COLOR_SELECTED_TEXT]Umberto-class[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_WWI_TANK">
+			<Text>[COLOR_SELECTED_TEXT]Fiat 3000[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_GREAT_WAR_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Bersaglieri[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_VENICE_MODERN_ARMOR">
+			<Text>[COLOR_SELECTED_TEXT]Ariete[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

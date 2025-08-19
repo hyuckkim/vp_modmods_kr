@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "UI_SukMainMenu_KR", "UI_SukMainMenu\UI_SukMainMenu_KR.civ5proj", "{8081ECB2-1558-4B67-83A6-4568F729955C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Default|x86.ActiveCfg = Default|x86
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Default|x86.Build.0 = Default|x86
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Package Only|x86.ActiveCfg = Package Only|x86
+		{8081ECB2-1558-4B67-83A6-4568F729955C}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

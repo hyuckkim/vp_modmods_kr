@@ -417,6 +417,7 @@ Buildings
 
 Wonders
 --Versailles changed Monuments and Amphitheatres to Menageries
+--Tower of Buddhist Incense (old Summer Palace) now requires the (new) Summer Palace *anywhere*, rather than locally, for AI friendliness
 
 Units
 --Galleon moved earlier to Exploration (Renaissance)
@@ -428,3 +429,9 @@ Cost Sweeps
 --Policy costs increased slightly
 --Wonder Policy requirements shifted 1 earlier in late Renaissance, Enlightenment, and Industrial
 --Gold Maintenance starts to increase a bit earlier (now 4 in whole Enlightenment, was 3)
+
+----------------
+-- v16
+----------------
+Mod Compatibility
+-- Added reference to Navajo and altered Windmill_Workshop_Swap.sql to try to get correct functionality and text

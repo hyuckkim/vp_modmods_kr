@@ -1,38 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row Tag="TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1">
 			<Text>Swords and Shields</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1_HELP">
 			<Text>Every man who is able to wield a sword must be ready. Prepare for war.</Text>
 		</Row>
-	</Language_en_US>
-	<Events>
-		<Row>
-			<Type>PLAYER_EVENT_SWORDSANDSHIELDS</Type>
-			<Description>TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1_HELP</Help>
-			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
-			<RandomChance>-1</RandomChance>
-			<RandomChanceDelta>-1</RandomChanceDelta>
-			<NumChoices>1</NumChoices>
-		</Row>
-	</Events>
-	<EventChoices>
-		<Row>
-			<Type>PLAYER_EVENT_SWORDSANDSHIELDS_CHOICE_1</Type>
-			<Description>TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1</Description>
-			<Help>TXT_KEY_EVENT_SWORDSANDSHIELDS_CHOICE_1_HELP</Help>
-			<FreeUnitsTechAppropriate>1</FreeUnitsTechAppropriate>
-			<ResistanceTurns>1</ResistanceTurns>
-			<EventDuration>1</EventDuration>
-		</Row>
-	</EventChoices>
-	<Event_ParentEvents>
-		<Row>
-			<EventChoiceType>PLAYER_EVENT_SWORDSANDSHIELDS_CHOICE_1</EventChoiceType>
-			<EventType>PLAYER_EVENT_SWORDSANDSHIELDS</EventType>
-		</Row>
-	</Event_ParentEvents>
+	</Language_ko_KR>
 </GameData>

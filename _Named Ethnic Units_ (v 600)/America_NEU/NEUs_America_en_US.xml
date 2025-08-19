@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--AMERICA-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_TANK">
+			<Text>[COLOR_SELECTED_TEXT]M4A3E8 Sherman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_MODERN_ARMOR">
+			<Text>[COLOR_SELECTED_TEXT]M1A1 Abrams[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_FIGHTER">
+			<Text>[COLOR_SELECTED_TEXT]P-51D[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_JET_FIGHTER">
+			<Text>[COLOR_SELECTED_TEXT]F-15C[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_DESTROYER">
+			<Text>[COLOR_SELECTED_TEXT]Fletcher-class[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AMERICA_BATTLESHIP">
+			<Text>[COLOR_SELECTED_TEXT]Iowa-class[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

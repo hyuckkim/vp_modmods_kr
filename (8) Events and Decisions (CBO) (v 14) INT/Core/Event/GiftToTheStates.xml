@@ -1,46 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<Language_en_US>
+	<Language_ko_KR>
 		<Row Tag="TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1">
 			<Text>Gift to the State</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1_HELP">
 			<Text>Good governments would sometimes prompt the nobility and the businessmen of the realm to donate cash to the treasury, out of pure patriotism or in exchange for the sales or transfer of honorary titles and positions.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR]</Text>
 		</Row>
-	</Language_en_US>
-	<CityEvents>
-		<Row>
-			<Type>CITY_EVENT_MONEYMONEY</Type>
-			<Description>TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1_HELP</Help>
-			<EventClass>EVENT_CLASS_GOOD</EventClass>
-			<CityEventArt>Event_Gold.dds</CityEventArt>
-			<CityEventAudio>AS2D_EVENT_EBANK</CityEventAudio>
-			<RandomChance>25</RandomChance>
-			<RandomChanceDelta>1</RandomChanceDelta>
-			<NumChoices>1</NumChoices>
-		</Row>
-	</CityEvents>
-	<CityEventChoices>
-		<Row>
-			<Type>CITY_EVENT_MONEYMONEY_CHOICE_1</Type>
-			<Description>TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1</Description>
-			<Help>TXT_KEY_CITY_EVENT_MONEYMONEY_CHOICE_1_HELP</Help>
-			<EventDuration>30</EventDuration>
-			<EraScaling>true</EraScaling>
-		</Row>
-	</CityEventChoices>
-	<CityEventChoice_InstantYield>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MONEYMONEY_CHOICE_1</CityEventChoiceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>50</Yield>
-		</Row>
-	</CityEventChoice_InstantYield>
-	<CityEvent_ParentEvents>
-		<Row>
-			<CityEventChoiceType>CITY_EVENT_MONEYMONEY_CHOICE_1</CityEventChoiceType>
-			<CityEventType>CITY_EVENT_MONEYMONEY</CityEventType>
-		</Row>
-	</CityEvent_ParentEvents>
+	</Language_ko_KR>
 </GameData>

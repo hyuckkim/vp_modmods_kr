@@ -5,6 +5,11 @@ UPDATE UnitPromotions SET PromotionPrereqOr2 = NULL WHERE Type = 'PROMOTION_RANG
 DELETE FROM UnitPromotions_UnitCombats WHERE 
 PromotionType = 'PROMOTION_RANGE' AND UnitCombatType = 'UNICOMBAT_SIEGE';
 
+-- bazooka shouldnt outrange them
+UPDATE Units SET
+Range = 2
+WHERE Class = 'UNITCLASS_BAZOOKA';
+
 -- instead they get repair, which is currently deprecated
 -- could just do march but where is the fun in that?
 -- we might want to add other effects to it independently, like this:

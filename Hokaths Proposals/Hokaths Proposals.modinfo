@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" version="6">
+<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" version="7">
 	<Properties>
 		<Name>Hokath's Proposals</Name>
 		<Teaser>Mod to implement and test proposals for the congress</Teaser>
@@ -101,6 +101,7 @@
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Tree_descriptions.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Tradition_tweak.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Progress_tweak.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Authority_tweak.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Statecraft_tweak.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Early_Trees/Fealty_tweak.sql</File>
@@ -128,6 +129,8 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/HotelandZoo.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/Windmill_from_Agri.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/PublicSchool_and_BroadcastTower.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/WarReligions.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/ReligionChanges.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Supermarket.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Grocer_rebalance.sql</File>
@@ -152,6 +155,7 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Celts.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Sweden.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Ethiopia.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Egypt.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.xml</File>
@@ -194,6 +198,7 @@
 		<UpdateDatabase>Early_Trees/Art/HokathAtlas.xml</UpdateDatabase>
 		<UpdateDatabase>Early_Trees/Tree_descriptions.sql</UpdateDatabase>
 		<UpdateDatabase>Early_Trees/Tradition_tweak.sql</UpdateDatabase>
+		<UpdateDatabase>Early_Trees/Progress_tweak.sql</UpdateDatabase>
 		<UpdateDatabase>Early_Trees/Authority_tweak.sql</UpdateDatabase>
 		<UpdateDatabase>Early_Trees/Statecraft_tweak.sql</UpdateDatabase>
 		<UpdateDatabase>Early_Trees/Fealty_tweak.sql</UpdateDatabase>
@@ -222,6 +227,8 @@
 		<UpdateDatabase>Misc/SAM_Missiles.sql</UpdateDatabase>		
 		<UpdateDatabase>Misc/Defense.sql</UpdateDatabase>	
 		<UpdateDatabase>Misc/Minefield.sql</UpdateDatabase>
+		<UpdateDatabase>Misc/WarReligions.sql</UpdateDatabase>
+		<UpdateDatabase>Misc/ReligionChanges.sql</UpdateDatabase>
 
 		<UpdateDatabase>Ideology_Balance/AutocracyTenets.sql</UpdateDatabase>
 		<UpdateDatabase>Ideology_Balance/OrderTenets.sql</UpdateDatabase>
@@ -258,6 +265,7 @@
 		<UpdateDatabase>Civ_Balance/Celts.sql</UpdateDatabase>
 		<!--<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>-->
 		<UpdateDatabase>Civ_Balance/Ethiopia.sql</UpdateDatabase>
+		<UpdateDatabase>Civ_Balance/Egypt.sql</UpdateDatabase>
 
 		<!--<UpdateDatabase>Forts/Forts.sql</UpdateDatabase>
 		<UpdateDatabase>Forts/Forts.xml</UpdateDatabase>-->

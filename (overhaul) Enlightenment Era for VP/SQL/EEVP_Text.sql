@@ -464,11 +464,11 @@ SET Text = '10% of [ICON_FOOD] Food is carried over, and 25% of the [ICON_PEACE]
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 
 UPDATE Language_en_US
-SET Text = 'The Apothecary is a Renaissance-era building which can only be constructed if you have already built an Aqueduct in the City. Like the Aqueduct, the Grocer helps your City grow more quickly and combats Poverty. It also increases Faith output, and is the final Building (other than the Seminary which is exclusive with the Polytechnic) to do so.'
+SET Text = 'The Pharmacy is a Renaissance-era building which can only be constructed if you have already built an Aqueduct in the City. Like the Aqueduct, the Grocer helps your City grow more quickly and combats Poverty. It also increases Faith output, and is the final Building (other than the Seminary which is exclusive with the Polytechnic) to do so.'
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_STRATEGY';
 
 UPDATE Language_en_US
-SET Text = 'An Apothecary, or Pharmacy, is a type of shop that sells medicinal goods such as drugs, ointments, herbal remedies and dressings for wounds. Shops were maintained by specialists who could dispense advice for how to use the medicines they sold as well as other home remedies. Pharmacies in Medieval and Renaissance Europe were often family businesses, or operated out of local monasteries by nuns, which resulted in a large proportion of pharmacies being run by women.[NEWLINE][NEWLINE]The work of a pharmacist requires a great deal of knowledge and specialized education, which brought status and respectability to the job. The role of pharmacists and apothecaries formed the precursor to the modern disciplines of chemistry and pharmacology.'
+SET Text = 'A Pharmacy, is a type of shop that sells medicinal goods such as drugs, ointments, herbal remedies and dressings for wounds. Shops were maintained by specialists who could dispense advice for how to use the medicines they sold as well as other home remedies. Pharmacies in Medieval and Renaissance Europe were often family businesses, or operated out of local monasteries by nuns, which resulted in a large proportion of pharmacies being run by women.[NEWLINE][NEWLINE]The work of a pharmacist requires a great deal of knowledge and specialized education, which brought status and respectability to the job. The role of pharmacists formed the precursor to the modern disciplines of chemistry and pharmacology.'
 WHERE Tag = 'TXT_KEY_CIV5_BUILDINGS_GROCER_TEXT';
 
 ----------------------------------------------------

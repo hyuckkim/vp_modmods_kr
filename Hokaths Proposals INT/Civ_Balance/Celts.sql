@@ -104,6 +104,6 @@ VALUES
 INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
-	('TXT_KEY_BELIEF_OLWEN', '범람원이 [COLOR_NEGATIVE_TEXT]없는[ENDCOLOR] 사막 타일에서 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산이 +1 증가하고, 도시에서 작업하는 평원 타일 2개 또는 범람원 타일 2개마다 식량과 생산이 +1 증가합니다. 농장에서 [ICON_RESEARCH] 과학과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다. [ICON_GOLDEN_AGE] 황금기에는 [ICON_CULTURE] 문화가 +10% 증가합니다. 연회장에서 [ICON_GOLDEN_AGE] 황금기 점수가 +5 증가합니다.'),
+	('TXT_KEY_BELIEF_OLWEN', '범람원이 [COLOR_NEGATIVE_TEXT]없는[ENDCOLOR] 사막 타일에서 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산이 +1 증가하고, 도시에서 작업하는 평원 타일 2개 또는 범람원 타일 2개마다 식량과 생산이 +1 증가합니다. 농장에서 [ICON_RESEARCH] 과학과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다. [ICON_GOLDEN_AGE] 황금기에는 수도/성지의 [ICON_CULTURE] 문화가 +15% 증가합니다. 연회장에서 [ICON_GOLDEN_AGE] 황금기 점수가 +5 증가합니다.'),
 	('TXT_KEY_BELIEF_OLWEN_SHORT', '올웬, 황금 바퀴');
 

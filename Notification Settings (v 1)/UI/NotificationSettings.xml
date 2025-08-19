@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" ConsumeMouse="1" ConsumeMouseButton="1" ConsumeMouseOver="1">
+	<Instance Name="InstantYieldsInstance">
+		<Box ID="Base" Anchor="L,C" Offset="0,0" Size="480,28" Color="255,255,255,0">
+			<Stack Size="480,28" StackGrowth="Right">
+				<Box Size="400,25" Color="0,0,0,0">
+					<Label ID="InstantYieldName" Anchor="L,C" Offset="30,0" TruncateWidth="300" ColorSet="Beige_Black_Alpha" Font="TwCenMT18" FontStyle="Shadow"/>
+				</Box>
+				<CheckBox Anchor="L,T" Offset="0,0" TextOffset="0,0" IsChecked="0" ID="InstantYieldCheckbox"/>
+			</Stack>
+			<Image Anchor="L,B" Offset="0,0" Texture="BlueBar500x3.dds" Size="466,3"/>
+		</Box>
+	</Instance>
+
+	<Box Color="Black.200" Size="Full.Full" ID="NotificationSettingsPopup" ConsumeMouseOver="1">
+		<Grid Size="560,600" ID="NotificationSettingsFrame" Anchor="C,C" Offset="0,0" Padding="0,0" Hidden="0" Style="Grid9DetailFive140">
+			<Box Style="MenuLeftSideTreatment"/>
+			<Box Style="MenuRightSideTreatment"/>
+			<Label Style="MenuTitleCaption" String="TXT_KEY_NOTIFICATION_SETTINGS_TITLE" />
+			<Label Anchor="L,T" Offset="35,80" WrapWidth="450" LeadingOffset="-4" Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" ID="UnitListDescription"/>
+			<Stack Anchor="C,T" Offset="55,80" Padding="24" StackGrowth="Bottom" ID="NotificationSettingsContent">
+				<Box Size="504,20" Color="0,0,0,0">
+					<Stack Size="504,20" StackGrowth="Right">
+						<Box Size="400,18" Color="0,0,0,0">
+							<Label Font="TwCenMT18" FontStyle="Shadow" String="Instant Yield Type" />
+						</Box>
+						<Box Size="100,18" Color="0,0,0,0">
+							<Label Font="TwCenMT18" FontStyle="Shadow" String="Notification" />
+						</Box>
+					</Stack>
+				</Box>
+				<ScrollPanel Vertical="1" Size="476,302" Offset="10,0" AutoScrollBar="1" ID="AllInstantYieldsScrollPanel">
+					<!-- Scroll Controls -->
+					<ScrollBar Style="VertSlider" Length="266" Anchor="R,C" AnchorSide="O,I"/>
+					<UpButton Style="ScrollBarUp" Anchor="R,T" AnchorSide="O,I"/>
+					<DownButton Style="ScrollBarDown" Anchor="R,B" AnchorSide="O,I"/>
+					<Stack StackGrowth="Bottom" ID="AllInstantYieldsStack" Padding="0">
+						<Button ID="InstantYieldCityButton" Size="250,27" TextAnchor="L,C" String="">
+							<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurns"/>
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="L,C" Size="250,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+						</Button>
+						<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" ID="InstantYieldCityStack"/>
+						<Button ID="InstantYieldMilitaryButton" Size="250,27" TextAnchor="L,C" String="">
+							<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurns"/>
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="L,C" Size="250,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+						</Button>
+						<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" ID="InstantYieldMilitaryStack"/>
+						<Button ID="InstantYieldCivilianButton" Size="250,27" TextAnchor="L,C" String="">
+							<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurns"/>
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="L,C" Size="250,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+						</Button>
+						<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" ID="InstantYieldCivilianStack"/>		
+						<Button ID="InstantYieldSpiesButton" Size="250,27" TextAnchor="L,C" String="">
+							<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurns"/>
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="L,C" Size="250,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+						</Button>
+						<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" ID="InstantYieldSpiesStack"/>		
+						<Button ID="InstantYieldMiscButton" Size="250,27" TextAnchor="L,C" String="">
+							<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurns"/>
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="L,C" Size="250,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,27" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+						</Button>
+						<Stack Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" ID="InstantYieldMiscStack"/>		
+					
+					</Stack>
+				</ScrollPanel>
+				<Box Anchor="C,B" AnchorSide="I.I" Offset="-55,0" Size="560,80" Color="255,255,255,0">
+					<GridButton Anchor="L,T" Style="SmallButton" Size="120,32" Offset="30,60" StateOffsetIncrement="0,0" ID="CloseButton">
+						<Label Anchor="C,C" Offset="0,0" String="TXT_KEY_CLOSE" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"/>
+					</GridButton>
+					
+					<GridButton Anchor="R,T" Style="SmallButton" Size="120,32" Offset="30,15" StateOffsetIncrement="0,0" ID="TurnOffAllButton">
+						<Label Anchor="C,C" Offset="0,0" String="TXT_KEY_NOTIFICATION_SETTINGS_TURN_OFF_ALL_BUTTON" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"/>
+					</GridButton>
+					
+					<GridButton Anchor="R,T" Style="SmallButton" Size="120,32" Offset="30,60" StateOffsetIncrement="0,0" ID="TurnOnAllButton">
+						<Label Anchor="C,C" Offset="0,0" String="TXT_KEY_NOTIFICATION_SETTINGS_TURN_ON_ALL_BUTTON" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"/>
+					</GridButton>
+				</Box>
+			</Stack>
+		</Grid>
+	</Box>
+</Context>

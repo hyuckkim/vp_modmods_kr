@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ccf47da8-4d56-4c74-a416-ab07a98484a8" version="3">
+  <Properties>
+    <Name>(9.09) Worker Mountaineering</Name>
+    <Teaser>Workers and Settlers can cross mountains once Dynamite is researched.</Teaser>
+    <Description>Workers and Settlers can cross mountains (and build roads / rails / cities on them) once Dynamite is researched.</Description>
+    <Authors>HungryForFood</Authors>
+    <SpecialThanks>Asterix Rage</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="091E7C7070D9C39F3A8491A5356BF444" import="1">Art/IconAtlas/mountaineerPromoIcon_032.dds</File>
+    <File md5="67432B8AB182C9C9CC8D2AAACE753240" import="1">Art/IconAtlas/mountaineerPromoIcon_045.dds</File>
+    <File md5="15BDD0E517D8F43F1911E64DDAC4A037" import="1">Art/IconAtlas/mountaineerPromoIcon_064.dds</File>
+    <File md5="735AE6C05D4C1500AFB0F26AAA01A3C3" import="1">Art/IconAtlas/mountaineerPromoIcon_256.dds</File>
+    <File md5="6F693F4140258EA2BDAD54A627454DDA" import="0">Changes.txt</File>
+    <File md5="D777DB4B6AD4689DB918736A4FCE5E2A" import="0">WorkerMountaineering.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>WorkerMountaineering.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

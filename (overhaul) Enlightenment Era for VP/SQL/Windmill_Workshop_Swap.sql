@@ -30,10 +30,12 @@ BEGIN
 	Cost = 600,
 	GoldMaintenance = 3,
 	BuildingProductionModifier = 15,
-	SpecialistType = 'SPECIALIST_ENGINEER',
-	SpecialistCount = 0,
 	AllowsProductionTradeRoutes=0
 	WHERE Type = NEW.Type;
+
+	UPDATE Buildings SET
+	SpecialistCount = 0
+	WHERE Type = NEW.Type AND NEW.SpecialistType = 'SPECIALIST_ENGINEER';
 
 	INSERT INTO Building_GrowthExtraYield
 		(BuildingType, YieldType, Yield)
@@ -58,10 +60,13 @@ BEGIN
 	Cost = 350,
 	GoldMaintenance = 2,
 	BuildingProductionModifier = 0,
-	SpecialistType = 'SPECIALIST_ENGINEER',
-	SpecialistCount = 1,
 	AllowsProductionTradeRoutes=1
 	WHERE Type = NEW.Type;
+
+	UPDATE Buildings SET
+	SpecialistType = 'SPECIALIST_ENGINEER',
+	SpecialistCount = 1
+	WHERE Type = NEW.Type AND SpecialistType = NULL;
 
 	INSERT INTO Building_BuildingClassLocalYieldChanges
 		(BuildingType, BuildingClassType, YieldType, YieldChange)
@@ -102,11 +107,14 @@ PrereqTech = 'TECH_MACHINERY',
 Cost = 350,
 GoldMaintenance = 2,
 BuildingProductionModifier = 0,
-SpecialistType = 'SPECIALIST_ENGINEER',
-SpecialistCount = 1,
 Help = 'TXT_KEY_BUILDING_WORKSHOP_HELP',
 AllowsProductionTradeRoutes=1
 WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
+
+UPDATE Buildings SET
+SpecialistType = 'SPECIALIST_ENGINEER',
+SpecialistCount = 1
+WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL' AND SpecialistType = NULL;
 
 UPDATE Building_ClassesNeededInCity SET BuildingClassType = 'BUILDINGCLASS_FORGE' WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL');
 
@@ -123,11 +131,13 @@ PrereqTech = 'TECH_ARCHITECTURE',
 Cost = 600,
 GoldMaintenance = 3,
 BuildingProductionModifier = 15,
-SpecialistType = 'SPECIALIST_ENGINEER',
-SpecialistCount = 0,
 Help = 'TXT_KEY_BUILDING_WINDMILL_HELP',
 AllowsProductionTradeRoutes=0
 WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP';
+
+UPDATE Buildings SET
+SpecialistCount = 0
+WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP' AND SpecialistType = 'SPECIALIST_ENGINEER';
 
 UPDATE Building_ClassesNeededInCity SET BuildingClassType = 'BUILDINGCLASS_WINDMILL' WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
 
@@ -165,7 +175,7 @@ FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
 
 --swap the help texts for modded civ to grab
 UPDATE Language_en_US
-SET Text = '{TXT_KEY_BUILDING_STABLE}s and {TXT_KEY_BUILDING_GROCER} in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
+SET Text = '{TXT_KEY_BUILDING_STABLE}s and Pharmacies in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_HELP';
 
 UPDATE Language_en_US
@@ -218,7 +228,7 @@ AND b.Type IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_W
 
 -- swap the help text
 UPDATE Language_en_US SET
-Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production. Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.'
+Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.'
 WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
 
 UPDATE Language_en_US
@@ -226,6 +236,24 @@ SET Text = Replace(Text, '+1 [ICON_PRODUCTION] Production from Forests worked by
 WHERE Tag ='TXT_KEY_BUILDING_WINDMILL_HELP';
 
 UPDATE Language_en_US
-SET Text = 'The Workshop boosts Production in strong Cities, and improve your ability to move Production to weaker ones with Internal Trade Routes. It also improves the Aqueduct growth bonus, which is best when high Production can also be paired with rapid growth, whether that is a small City getting off the ground or a larger City with ample Food.'
+SET Text = 'The Workshop boosts Production in strong Cities, and improves your ability to move Production to weaker ones with Internal Trade Routes. It also improves the Aqueduct growth bonus, which is best when high Production can also be paired with rapid growth, whether that is a small City getting off the ground or a larger City with ample Food.'
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
+
+------------------------------------------------------------
+-- compatibility
+------------------------------------------------------------
+INSERT OR REPLACE INTO Language_en_US (Tag, Text)
+SELECT 'TXT_KEY_BUILDING_ATLOOH_HELP',
+'[ICON_VP_ARTIST] Artist Specialists in the City generate +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_PEACE] Faith. Provides 1 copy of the [ICON_RES_JAR_DIYOGI] Diyogi Luxury Resource. +1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]'||Text
+FROM Language_en_US WHERE Tag='TXT_KEY_BUILDING_WORKSHOP_HELP';
+
+UPDATE Buildings SET 
+Help = 'TXT_KEY_BUILDING_ATLOOH_HELP'
+WHERE Type = 'BUILDING_JAR_ATLOOH';
+
+UPDATE Language_en_US SET Text = REPLACE(Text, '+1 [ICON_PRODUCTION] Production from Forests worked by this City', '+1 [ICON_PRODUCTION] Production from Plains and Desert tiles worked by this City')
+WHERE Tag = 'TXT_KEY_BUILDING_ATLOOH_HELP';
+
+UPDATE Language_en_US SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_GOLD] Gold.'
+WHERE Tag = 'TXT_KEY_BUILDING_ATLOOH_HELP';
 

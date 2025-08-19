@@ -1,0 +1,12 @@
+--==========================================================================================================================
+-- ALOE VERA
+--==========================================================================================================================
+INSERT INTO Language_ko_KR (Tag, Text) VALUES
+('TXT_KEY_RESOURCE_ALOE_VERA', 'Aloe Vera'),
+('TXT_KEY_RESOURCE_ALOE_VERA_HELP', '+1 [ICON_FOOD] Food, +2 [ICON_RESEARCH] Science from Plantation.'),
+('TXT_KEY_CIV5_RESOURCE_ALOE_VERA_TEXT', 'Aloe vera, a succulent plant known for its medicinal properties, has a rich history dating back thousands of years. Believed to have originated in the Arabian Peninsula, aloe vera''s use can be traced to ancient civilizations, including the Egyptians, who referred to it as the "plant of immortality." Egyptians utilized aloe vera for various purposes, such as treating wounds, skin irritations, and burns. The plant''s popularity spread across different cultures, with mentions in ancient Greek, Roman, and Indian texts. [NEWLINE][NEWLINE]Throughout history, aloe vera continued to be valued for its healing properties. It gained prominence during the Middle Ages in Europe and the Renaissance, where it was cultivated in monasteries for its medicinal benefits. In the 20th century, aloe vera''s popularity surged as scientific research confirmed its therapeutic properties, leading to the development of various skincare and health products containing aloe vera extracts. Today, aloe vera is widely recognized and utilized globally for its soothing, moisturizing, and healing qualities in skincare, cosmetics, and alternative medicine.');
+
+UPDATE Language_ko_KR SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]Requires an Aqueduct in the City.', '[NEWLINE]Nearby [ICON_RES_ALOEVERA] Aloe Vera: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Requires an Aqueduct in the City.')
+WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDING_GROCER');
+--=======================================================================================================================
+--=======================================================================================================================

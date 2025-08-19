@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ModDLC Template, Made by Manbok -->
+<Civ5Package>
+	<Priority>500</Priority>
+	<GUID>{293C1EE3-1176-44f6-AC1F-59663826DE74}</GUID>
+	<SteamApp>16865</SteamApp>
+	<Version>1</Version>
+	<Key>4f0c6ba9a124eb137f912cc47d88439e</Key>
+	<PTags>
+		<Tag>Version</Tag>
+	</PTags>
+	<Name>
+		<Value language="ko_KR">sukritact의 메인 메뉴</Value>
+	</Name>
+	<Description>
+		<Value language="ko_KR">sukritact의 메인 메뉴</Value>
+	</Description>
+	<Gameplay>
+		<GameData>Core/FrontEnd.xml</GameData>
+		<GameData>Core/MainMenu.xml</GameData>
+		<GameData>Core/Text.xml</GameData>
+	</Gameplay>
+</Civ5Package>

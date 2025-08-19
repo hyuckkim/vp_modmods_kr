@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--CHINA-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_ARCHER">
+			<Text>[COLOR_SELECTED_TEXT]Gongjianshou[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_SPEARMAN">
+			<Text>[COLOR_SELECTED_TEXT]Jibing[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_SWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Fubing[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_KNIGHT">
+			<Text>[COLOR_SELECTED_TEXT]Jet Black Armor Cavalry[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Shenwei Army[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_PIKEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Forbidden Guard[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Wuwei Corps[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_GREAT_WAR_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Red Guard[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_PARATROOPER">
+			<Text>[COLOR_SELECTED_TEXT]People Liberation Army[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_IRONCLAD">
+			<Text>[COLOR_SELECTED_TEXT]Beiyang Fleet[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_MECHANIZED_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Eight Route Army[ENDCOLOR]</Text>
+		</Replace>
+		<!--<Replace Tag="TXT_KEY_ETHNIC_UNIT_CHINA_MISSILE_CRUISER">
+			<Text>[COLOR_SELECTED_TEXT]Type 055[ENDCOLOR]</Text>
+		</Replace>-->
+	</Language_en_US>
+</GameData>

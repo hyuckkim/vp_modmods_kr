@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!-- MONGOL -->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_ARCHER">
+			<Text>[COLOR_SELECTED_TEXT]Mongol Bow[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_SPEARMAN">
+			<Text>[COLOR_SELECTED_TEXT]Mao[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_COMPOSITE_BOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Hornbow[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Mingghan[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_HORSEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Xiongnu[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MONGOL_PIKEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Yuanbing[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

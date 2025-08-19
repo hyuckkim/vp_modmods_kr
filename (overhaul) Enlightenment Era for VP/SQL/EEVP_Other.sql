@@ -82,7 +82,7 @@ UPDATE Units SET PortraitIndex = '0', IconAtlas = 'UNIT_HOWITZER_ATLAS' WHERE Ty
 -- Grocer with Era-appropriate icon and name
 ---------------------------
 UPDATE Language_en_US
-SET Text = 'Apothecary'
+SET Text = 'Pharmacy'
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER';
 
 UPDATE Buildings SET 

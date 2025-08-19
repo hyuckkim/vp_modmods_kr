@@ -1,11 +1,11 @@
 -- Harbor
 UPDATE Language_ko_KR
-SET Text = Replace(Text, '[ICON_CARGO_SHIP] Sea Trade Routes gain +50% Range', '[ICON_CARGO_SHIP] Sea Trade Routes gain +25% Range')
+SET Text = Replace(Text, '[ICON_CARGO_SHIP] 해상 교역로 범위 +50% 증가', '[ICON_CARGO_SHIP] 해상 교역로 범위 +25% 증가')
 WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_HARBOR');
 
 -- strong compatibility
 UPDATE Language_ko_KR
-SET Text = 'City gains +1 [ICON_RESEARCH] Science for every Mountain within the workable tiles. Atolls worked by the City gain +2 [ICON_RESEARCH] Science. +1 [ICON_PEACE] Faith from every Building in the City that must be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE][ICON_CARGO_SHIP] Sea Trade Routes gain +25% Range. Harbors in the City gain +1 [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Point.'
+SET Text = '작업 가능한 타일 내에 있는 산 하나당 도시는 [ICON_RESEARCH] 과학 +1을 얻습니다. 도시가 작업하는 산호는 [ICON_RESEARCH] 과학 +2를 얻습니다. [ICON_PEACE] 신앙으로 구매해야 하는 도시 내 모든 건물에서 [ICON_PEACE] 신앙이 +1 증가합니다.[NEWLINE][NEWLINE][ICON_CARGO_SHIP] 해상 교역로의 범위가 25% 증가합니다. 도시 내 항구는 [ICON_RESEARCH] 과학과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';
 
 UPDATE Language_ko_KR

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--ENGLAND-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_BATTLESHIP">
+			<Text>[COLOR_SELECTED_TEXT]King George V-class[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_MARINE">
+			<Text>[COLOR_SELECTED_TEXT]Royal Marine Commando[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_LINEINFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Redcoat[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_MUSKETMAN">
+			<Text>[COLOR_SELECTED_TEXT]Redcoat[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Royal Rifle Corps[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_PARATROOPER">
+			<Text>[COLOR_SELECTED_TEXT]Special Air Service[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_KNIGHT">
+			<Text>[COLOR_SELECTED_TEXT]Man-at-arms[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ENGLAND_WWI_BOMBER">
+			<Text>[COLOR_SELECTED_TEXT]Short Bomber[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

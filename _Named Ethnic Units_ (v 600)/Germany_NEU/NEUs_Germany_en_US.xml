@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--GERMANY-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_KNIGHT">
+			<Text>[COLOR_SELECTED_TEXT]Ritter[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_LINEINFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Schützen[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Schützen[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_SKIRMISHER">
+			<Text>[COLOR_SELECTED_TEXT]Jäger[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_GREAT_WAR_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Sturmtruppen[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Wehrmacht[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_GERMANY_BATTLESHIP">
+			<Text>[COLOR_SELECTED_TEXT]Bismarck-class[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

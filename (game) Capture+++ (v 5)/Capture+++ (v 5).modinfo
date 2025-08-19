@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d7d2f630-cf19-4663-a5a3-4ed417b96af7" version="5">
+  <Properties>
+    <Name>(game) Capture+++</Name>
+    <Teaser>Able to Civilians, Great People and Spaceship Parts!</Teaser>
+    <Description>Able to Civilians, Great People and Spaceship Parts!</Description>
+    <Authors>Awesomejj101, adan_eslavo</Authors>
+    <SpecialThanks>Merill</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+  </Dependencies>
+  <References>
+   	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+	<Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightement Era for VP" />
+	<Mod id="35e27828-cf22-4aec-b087-08169fa4e431" minversion="0" maxversion="999" title="Israel" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="B80426328DAB9A7785C1115DA49BB2EC" import="0">SQL/CaptureCivilians.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/CaptureCivilians.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

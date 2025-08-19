@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8784c016-f5cc-80c4-b37e-a73deb204fe9" version="5">
+	<Properties>
+		<Name>Naval Mod</Name>
+		<Teaser>Naval Mod for VP</Teaser>
+		<Description>Naval changes for VP</Description>
+		<Authors>PadreXIX</Authors>
+		<HideSetupGame>0</HideSetupGame>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+		<SupportsSinglePlayer>1</SupportsSinglePlayer>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SupportsHotSeat>1</SupportsHotSeat>
+		<SupportsMac>0</SupportsMac>
+		<ReloadAudioSystem>1</ReloadAudioSystem>
+		<ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+		<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+		<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+	<Dependencies>
+		 <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="1" maxversion="999" title="Vox Populi" />
+	</Dependencies>
+  <References>
+    <Mod id="9784d016-f5cc-80b3-b37e-a73cdc315fe9" minversion="18" maxversion="999" title="TorpedoBoat" />
+  </References>
+  <Blocks/>
+<Files>
+
+    <File md5="00000000000000000000000000000000" import="1">Art/sv_ShipoftheLine.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_80.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_64.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_45.dds</File>  
+    <File md5="00000000000000000000000000000000" import="1">Art/Naval_UnitFlags_32.dds</File>   
+    <File md5="00000000000000000000000000000000" import="1">Art/NAVAL_promo_icons_016.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NAVAL_promo_icons_032.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NAVAL_promo_icons_045.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NAVAL_promo_icons_064.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NAVAL_promo_icons_256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/shipoftheline.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/shipoftheline.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/shipoftheline_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/shipoftheline_dmg_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/shipoftheline_sref.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/u_english_shipoftheline_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/u_english_shipoftheline_dmg_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/u_english_shipoftheline_sref.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/edited_fx_triggers_battleship.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Scharnhorst_Class.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Scharnhorst_Class.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Scharnhorst_Class.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Scharnhorst_Class_gloss.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Flag_HeavyCruiser.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SV_HeavyCruiser.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Steamfrigate_UnitFlag.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/MA_steamfrigate_Units_128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/MA_steamfrigate_Units_256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/MA_steamfrigate_Units_45.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/MA_steamfrigate_Units_64.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/MA_steamfrigate_Units_80.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/fx_trigger_SteamFrigate.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SteamFrigate.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SteamFrigate.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SteamFrigate.indiedefs</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SteamFrigate_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SteamFrigate_sref.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/sv_SteamFrigate.dds</File>
+    <File md5="00000000000000000000000000000000" import="0">NavalMod.sql</File>
+    <File md5="00000000000000000000000000000000" import="1">Scurvy/BuildingPIconAtlas128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Scurvy/BuildingPIconAtlas256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Scurvy/BuildingPIconAtlas45.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Scurvy/BuildingPIconAtlas64.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Scurvy/BuildingPIconAtlas80.dds</File>
+    <File md5="00000000000000000000000000000000" import="0">Scurvy/Scurvy.lua</File>
+    <File md5="00000000000000000000000000000000" import="0">Scurvy/Scurvy.sql</File> 
+    <File md5="00000000000000000000000000000000" import="1">PirateNaval/corsair.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">PirateNaval/corsair.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">PirateNaval/corsair_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">PirateNaval/Flag_Pirate.dds</File>
+    <File md5="00000000000000000000000000000000" import="0">PirateNaval/PirateNaval.sql</File>
+    <File md5="00000000000000000000000000000000" import="1">PirateNaval/sv_corsair.dds</File>  
+    <File md5="00000000000000000000000000000000" import="1">Timber/timber-fonticons.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/timber-fonticons.ggxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TimbermodIconAtlas128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TimbermodIconAtlas256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TimbermodIconAtlas45.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TimbermodIconAtlas64.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TimbermodIconAtlas80.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/India_Company_splash.dds</File>
+    <File md5="00000000000000000000000000000000" import="0">Timber/Timber_Resources.sql</File>    
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_lumbertrees.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_lumbertrees_hb.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_lumbertrees_pil.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_mid_lumbertrees.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_mid_lumbertrees_hb.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbermill_mid_lumbertrees_pil.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbertrees.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumbertrees.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumber_trees_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumber_trees_pil_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/lumber_trees_sref.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/SV_Timber.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/AssignStartingPlots.lua</File>
+    <File md5="00000000000000000000000000000000" import="1">Timber/TopPanel.lua</File>
+</Files>
+	<Actions>
+		<OnModActivated>
+                      <UpdateDatabase>NavalMod.sql</UpdateDatabase> 
+                      <UpdateDatabase>Scurvy/Scurvy.sql</UpdateDatabase> 
+                      <UpdateDatabase>Timber/Timber_Resources.sql</UpdateDatabase> 
+                       <UpdateDatabase>PirateNaval/PirateNaval.sql</UpdateDatabase> 
+                 </OnModActivated>
+	</Actions>
+<EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Scurvy/Scurvy.lua">
+      <Name>Scurvy_Minors</Name>
+      <Description>Scurvy_Minors</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

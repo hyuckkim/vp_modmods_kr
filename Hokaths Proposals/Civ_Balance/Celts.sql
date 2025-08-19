@@ -103,6 +103,7 @@ MinPopulation = 4
 WHERE Type = 'BELIEF_RHIANNON';
 
 DELETE FROM Belief_ImprovementYieldChanges WHERE BeliefType = 'BELIEF_RHIANNON';
+DELETE FROM Belief_YieldPerFollowingCity WHERE BeliefType = 'BELIEF_RHIANNON';
 
 INSERT INTO Belief_YieldChangeNaturalWonder
 	(BeliefType, YieldType, Yield)
@@ -393,11 +394,11 @@ VALUES
 INSERT INTO Belief_YieldBonusGoldenAge
 	(BeliefType, YieldType, Yield)
 VALUES
-	('BELIEF_OLWEN', 'YIELD_CULTURE', 10);
+	('BELIEF_OLWEN', 'YIELD_CULTURE', 15);
 
 INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
-	('TXT_KEY_BELIEF_OLWEN', '+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production from Desert tiles [COLOR_NEGATIVE_TEXT]without[ENDCOLOR] Flood Plains, and for every 2 Plains or 2 Flood Plains tiles worked by the City. +1 [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Point from Farms. +10% [ICON_CULTURE] Culture during [ICON_GOLDEN_AGE] Golden Ages. +5 [ICON_GOLDEN_AGE] Golden Age Points from Ceilidh Hall.'),
+	('TXT_KEY_BELIEF_OLWEN', '+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production from Desert tiles [COLOR_NEGATIVE_TEXT]without[ENDCOLOR] Flood Plains, and for every 2 Plains or 2 Flood Plains tiles worked by the City. +1 [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Point from Farms. +15% [ICON_CULTURE] Culture in the [ICON_CAPITAL] Capital/Holy City during [ICON_GOLDEN_AGE] Golden Ages. +5 [ICON_GOLDEN_AGE] Golden Age Points from Ceilidh Hall.'),
 	('TXT_KEY_BELIEF_OLWEN_SHORT', 'Olwen, the Golden Wheel');
 
