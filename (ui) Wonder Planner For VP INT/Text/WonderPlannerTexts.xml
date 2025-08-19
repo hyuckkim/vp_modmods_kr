@@ -21,7 +21,9 @@
 		<Row Tag="TXT_KEY_WONDERPLANNER_ERA_LIMIT">
 			<Text>시대 제한: </Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_WONDERPLANNER_NO_ERA_LIMIT">
+			<Text>시대 제한 비활성화</Text>
+		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_WONDER">
 			<Text>불가사의</Text>
 		</Row>
@@ -35,10 +37,10 @@
 			<Text>[COLOR_POSITIVE_TEXT]문명[ENDCOLOR]을 기준으로 정렬한 다음 [COLOR_POSITIVE_TEXT]도시[ENDCOLOR]를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH">
-			<Text>기술</Text>
+			<Text>기술/도시</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH_TT">
-			<Text>[COLOR_POSITIVE_TEXT]기술[ENDCOLOR]을 기준으로 정렬</Text>
+			<Text>[COLOR_POSITIVE_TEXT]기술/도시[ENDCOLOR]를 기준으로 정렬</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED">
 			<Text>#</Text>
@@ -130,7 +132,27 @@
 		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3B">
 			<Text>+{1_gpp_rate_mod}% 글로벌 [ICON_GREAT_PEOPLE] 위인</Text>
 		</Row>
-		
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY">
+			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES">
+			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_ONE">
+			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City ({1_Color}+1[ENDCOLOR] blocked).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_MORE">
+			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City ({1_Color}+{2_Hidden}[ENDCOLOR] blocked).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_ONE">
+			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities ({2_Color}+1[ENDCOLOR] blocked).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_MORE">
+			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities ({2_Color}+{3_Hidden}[ENDCOLOR] blocked).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_LIST">
+			<Text>Cities that can construct [COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR]:[NEWLINE][ICON_BULLET]</Text>
+		</Row>		
 		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK">
 			<Text>불가사의 상태</Text>
 		</Row>

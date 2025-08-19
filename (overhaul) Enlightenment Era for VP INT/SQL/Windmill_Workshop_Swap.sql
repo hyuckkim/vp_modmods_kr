@@ -25,15 +25,15 @@ SET Text = '작업장은 강력한 도시의 생산력을 높이고, 내부 교�
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
 
 ------------------------------------------------------------
--- compatibility
+-- 호환성
 ------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR (Tag, Text)
 SELECT 'TXT_KEY_BUILDING_ATLOOH_HELP',
-'[ICON_VP_ARTIST] Artist Specialists in the City generate +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_PEACE] Faith. Provides 1 copy of the [ICON_RES_JAR_DIYOGI] Diyogi Luxury Resource. +1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]'||Text
+'도시에 있는 [ICON_VP_ARTIST] 예술가 전문가는 [ICON_PRODUCTION] 생산력, [ICON_GOLD] 골드, [ICON_PEACE] 신앙을 +2 생성합니다. [ICON_RES_JAR_DIYOGI] 디요기 사치 자원의 사본 1개를 제공합니다. 도시에 거주하는 [ICON_CITIZEN] 시민 4명당 [ICON_CULTURE] 문화가 +1 증가합니다.[NEWLINE][NEWLINE]'||Text
 FROM Language_ko_KR WHERE Tag='TXT_KEY_BUILDING_WORKSHOP_HELP';
 
-UPDATE Language_ko_KR SET Text = REPLACE(Text, '+1 [ICON_PRODUCTION] Production from Forests worked by this City', '+1 [ICON_PRODUCTION] Production from Plains and Desert tiles worked by this City')
+UPDATE Language_ko_KR SET Text = REPLACE(Text, '이 도시에서 작업한 숲에서 [ICON_PRODUCTION] 생산 +1', '이 도시에서 작업한 평지 및 사막 타일에서 [ICON_PRODUCTION] 생산력 +1')
 WHERE Tag = 'TXT_KEY_BUILDING_ATLOOH_HELP';
 
-UPDATE Language_ko_KR SET Text = Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_GOLD] Gold.'
+UPDATE Language_ko_KR SET Text = Text || '[NEWLINE][NEWLINE][ICON_RES_SHEEP] 양: [ICON_GOLD] 골드 +2'
 WHERE Tag = 'TXT_KEY_BUILDING_ATLOOH_HELP';
