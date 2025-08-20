@@ -1,6 +1,6 @@
 --Rename Transcendent Thoughts
 UPDATE Language_ko_KR
-SET Text = 'Transcendence'
+SET Text = '초월'
 WHERE Tag = 'TXT_KEY_BELIEF_INITIATION_RITES_SHORT';
 
 UPDATE Language_ko_KR

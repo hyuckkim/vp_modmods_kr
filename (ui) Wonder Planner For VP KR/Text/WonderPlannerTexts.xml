@@ -133,31 +133,31 @@
 			<Text>+{1_gpp_rate_mod}% 글로벌 [ICON_GREAT_PEOPLE] 위인</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITY">
-			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES">
-			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_ONE">
-			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City ({1_Color}+1[ENDCOLOR] blocked).</Text>
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다. ({1_Color}+1[ENDCOLOR]개 숨겨짐)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_MORE">
-			<Text>Available in [COLOR_POSITIVE_TEXT]1[ENDCOLOR] City ({1_Color}+{2_Hidden}[ENDCOLOR] blocked).</Text>
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다. ({1_Color}+{2_Hidden}[ENDCOLOR]개 숨겨짐)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_ONE">
-			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities ({2_Color}+1[ENDCOLOR] blocked).</Text>
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다. ({2_Color}+1[ENDCOLOR]개 숨겨짐)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_MORE">
-			<Text>Available in [COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR] Cities ({2_Color}+{3_Hidden}[ENDCOLOR] blocked).</Text>
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다. ({2_Color}+{3_Hidden}[ENDCOLOR]개 숨겨짐)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_LIST">
-			<Text>Cities that can construct [COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR]:[NEWLINE][ICON_BULLET]</Text>
+			<Text>[COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR]를 건설할 수 있는 도시:[NEWLINE][ICON_BULLET]</Text>
 		</Row>		
 		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK">
 			<Text>불가사의 상태</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK_TT">
-			<Text>어떤 불가사의를 목표로 할지 결정하기 위한 도구 for</Text>
+			<Text>어떤 불가사의를 목표로 할지 결정하기 위한 도구</Text>
 		</Row>
 	</Language_ko_KR>
 </GameData>

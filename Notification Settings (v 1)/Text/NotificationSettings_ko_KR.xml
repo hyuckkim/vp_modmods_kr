@@ -3,193 +3,193 @@
 <GameData>
 	<Language_ko_KR>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_TITLE">
-			<Text>Notification Settings</Text>
+			<Text>알림 설정</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_CITY_BUTTON">
-			<Text>Cities</Text>
+			<Text>도시</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_MILITARY_BUTTON">
-			<Text>Military Units</Text>
+			<Text>군사 유닛</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_CIVILIAN_BUTTON">
-			<Text>Non-Combat Units</Text>
+			<Text>비전투 유닛</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_SPIES_BUTTON">
-			<Text>Spies</Text>
+			<Text>스파이</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_MISC_BUTTON">
-			<Text>Other</Text>
+			<Text>나머지</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_TURN_OFF_ALL_BUTTON">
-			<Text>Turn off all</Text>
+			<Text>전체 끄기</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SETTINGS_TURN_ON_ALL_BUTTON">
-			<Text>Turn on all</Text>
+			<Text>전체 켜기</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_UNKNOWN">
-			<Text>Unknown Instant Yield Type {1_Num}</Text>
+			<Text>알 수 없는 즉각적인 산출 유형 {1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BIRTH_SHORT">
-			<Text>Birth of a Citizen</Text>
+			<Text>시민의 탄생</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_DEATH_SHORT">
-			<Text>Death of a Military Unit</Text>
+			<Text>군사 유닛의 죽음</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PROPOSAL_SHORT">
-			<Text>Passing a Proposal</Text>
+			<Text>제안 통과</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_ERA_UNLOCK_SHORT">
-			<Text>Entering a new Era</Text>
+			<Text>새로운 시대 진입</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_POLICY_UNLOCK_SHORT">
-			<Text>Adopting a Policy</Text>
+			<Text>정책 채택</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_INSTANT_SHORT">
-			<Text>Other Instant Yield</Text>
+			<Text>나머지 즉각적인 산출</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TECH_SHORT">
-			<Text>Researching a Technology</Text>
+			<Text>기술 연구</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_CONSTRUCTION_SHORT">
-			<Text>Constructing a Building</Text>
+			<Text>건물 건설</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BORDERS_SHORT">
-			<Text>Expanding Borders</Text>
+			<Text>국경 확장/Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_GP_USE_SHORT">
-			<Text>Expending a Great Person</Text>
+			<Text>위인 소비</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_GP_BORN_SHORT">
-			<Text>Birth of a Great Person</Text>
+			<Text>위인 탄생</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_F_SPREAD_SHORT">
-			<Text>Spreading your Religion to a Foreign City</Text>
+			<Text>외국 도시에 종교 전파</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_F_CONQUEST_SHORT">
-			<Text>Conquering a City</Text>
+			<Text>도시 정복</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_VICTORY_SHORT">
-			<Text>Winning a Battle</Text>
+			<Text>전투 승리</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_U_PROD_SHORT">
-			<Text>Producing a Military Unit</Text>
+			<Text>군사 유닛 생산</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PURCHASE_SHORT">
-			<Text>Purchasing a Building or Unit</Text>
+			<Text>건물 또는 유닛 구매</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TILE_PURCHASE_SHORT">
-			<Text>Purchasing a Tile</Text>
+			<Text>타일 구매</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_FOUND_SHORT">
-			<Text>Founding a City</Text>
+			<Text>도시 건설</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TR_END_SHORT">
-			<Text>Completing a Trade Route</Text>
+			<Text>교역로 완성</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_CONVERSION_SHORT">
-			<Text>Converting a City to your Religion</Text>
+			<Text>도시를 당신의 종교로 개종</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPREAD_SHORT">
-			<Text>Spreading your Religion</Text>
+			<Text>당신의 종교 전파</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BULLY_SHORT">
-			<Text>Demanding Tribute from a City-State</Text>
+			<Text>도시 국가에 조공 요구</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TR_MOVEMENT_SHORT">
-			<Text>Active Trade Unit</Text>
+			<Text>교역 유닛 활성화</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SCOUTING_SHORT">
-			<Text>Exploration</Text>
+			<Text>탐사</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_LEVEL_UP_SHORT">
-			<Text>Promoting a Unit</Text>
+			<Text>유닛 승급</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PILLAGE_SHORT">
-			<Text>Pillaging a Tile</Text>
+			<Text>타일 약탈</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BIRTH_RETROACTIVE_SHORT">
-			<Text>Birth of a Citizen (Retroactive)</Text>
+			<Text>시민의 탄생 (소급 적용)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPY_ATTACK_SHORT">
-			<Text>Conducting a Spy Mission</Text>
+			<Text>스파이 임무 수행</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPY_DEFENSE_SHORT">
-			<Text>Catching a Foreign Spy</Text>
+			<Text>외국 스파이 체포</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_DELEGATES_SHORT">
-			<Text>Yield from World Congress Delegates</Text>
+			<Text>세계 의회 대표단의 산출</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_CONSTRUCTION_WONDER_SHORT">
-			<Text>Constructing a Wonder</Text>
+			<Text>불가사의 건설</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_MINOR_QUEST_REWARD_SHORT">
-			<Text>Completing a City-State Quest</Text>
+			<Text>도시 국가 퀘스트 완료</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_CULTURE_BOMB_SHORT">
-			<Text>Expanding Borders with Great Writer</Text>
+			<Text>위대한 작가와 함께 국경 확장</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_REMOVE_HERESY_SHORT">
-			<Text>Removing Heresy</Text>
+			<Text>이단 제거</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_FAITH_PURCHASE_SHORT">
-			<Text>Purchasing a Building or Unit with Faith</Text>
+			<Text>신앙으로 건물이나 유닛 구매</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_VICTORY_GLOBAL_SHORT">
-			<Text>Winning a Battle (Global Yield)</Text>
+			<Text>전투 승리 (세계적 산출)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PILLAGE_GLOBAL_SHORT">
-			<Text>Pillaging a Tile (Global Yield)</Text>
+			<Text>타일 약탈 (세계적 산출)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_CONVERSION_EXPO_SHORT">
-			<Text>Converting a City to your Religion (scaling)</Text>
+			<Text>도시를 당신의 종교로 개종 (조정)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PROMOTION_OBTAINED_SHORT">
-			<Text>Promoting a Unit</Text>
+			<Text>유닛 승급</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BARBARIAN_CAMP_CLEARED_SHORT">
-			<Text>Clearing a Barbarian Camp</Text>
+			<Text>야만인 주둔지 처리</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TR_PRODUCTION_SIPHON_SHORT">
-			<Text>Siphoning Production using Trade Route</Text>
+			<Text>교역로를 이용한 생산력 흡수</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TR_MOVEMENT_IN_FOREIGN_SHORT">
-			<Text>Active Trade Unit (Foreign Territory)</Text>
+			<Text>교역 유닛 활성화 (외국 영토)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_IMPROVEMENT_BUILD_SHORT">
-			<Text>Building an Improvement</Text>
+			<Text>시설 건설</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_LUA_SHORT">
-			<Text>Instant Yields from Modmods</Text>
+			<Text>모드모드로부터 즉각적인 산출</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_RESEARCH_AGREMEENT_SHORT">
-			<Text>Completing a Research Agreement</Text>
+			<Text>연구 협약 완료</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_REFUND_SHORT">
-			<Text>Free Building Refund (Production)</Text>
+			<Text>무료 건물 환불 (생산력)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_FAITH_REFUND_SHORT">
-			<Text>Free Building Refund (Faith)</Text>
+			<Text>무료 건물 환불 (신앙)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_BIRTH_HOLY_CITY_SHORT">
-			<Text>Birth of a Citizen (Holy City)</Text>
+			<Text>시민의 탄생 (성도)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_TECH_RETROACTIVE_SHORT">
-			<Text>Researching a Technology (Retroactive)</Text>
+			<Text>기술 연구 (소급 적용)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_PILLAGE_UNIT_SHORT">
-			<Text>Pillaging a Tile (Specific Unit)</Text>
+			<Text>타일 약탈 (특정 유닛)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_COMBAT_EXPERIENCE_SHORT">
-			<Text>Getting Experience in Combat</Text>
+			<Text>전투로 경험치 획득</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPY_IDENTIFY_SHORT">
-			<Text>Identifying a Foreign Spy</Text>
+			<Text>외국 스파이 식별</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPY_DEFENSE_OR_ID_SHORT">
-			<Text>Identifying or Catching a Foreign Spy</Text>
+			<Text>외국 스파이 식별 또는 체포</Text>
 		</Row>
 		<Row Tag="TXT_KEY_INSTANT_YIELD_TYPE_SPY_RIG_ELECTION_SHORT">
-			<Text>Rigging an Election</Text>
+			<Text>선거 조작</Text>
 		</Row>
 	</Language_ko_KR>
 </GameData>

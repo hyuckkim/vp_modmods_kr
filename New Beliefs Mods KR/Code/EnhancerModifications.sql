@@ -4,11 +4,11 @@ SET Text = '[ICON_RELIGION] Religion spreads 20% faster (50% with Printing Press
 WHERE Tag = 'TXT_KEY_BELIEF_HOLY_ORDER';
 
 UPDATE Language_ko_KR
-SET Text = 'Ecumenism'
+SET Text = '세계 교회주의'
 WHERE Tag = 'TXT_KEY_BELIEF_HOLY_ORDER_SHORT';
 --Remove Policy Reduction from Prophecy
 UPDATE Language_ko_KR
-SET Text = 'Sainthood'
+SET Text = '성자'
 WHERE Tag = 'TXT_KEY_BELIEF_MESSIAH_SHORT';
 
 UPDATE Language_ko_KR

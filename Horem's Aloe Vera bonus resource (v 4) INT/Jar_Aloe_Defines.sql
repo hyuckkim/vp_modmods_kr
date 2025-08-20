@@ -1,12 +1,10 @@
 --==========================================================================================================================
--- ALOE VERA
+-- 알로에 베라
 --==========================================================================================================================
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
-('TXT_KEY_RESOURCE_ALOE_VERA', 'Aloe Vera'),
-('TXT_KEY_RESOURCE_ALOE_VERA_HELP', '+1 [ICON_FOOD] Food, +2 [ICON_RESEARCH] Science from Plantation.'),
-('TXT_KEY_CIV5_RESOURCE_ALOE_VERA_TEXT', 'Aloe vera, a succulent plant known for its medicinal properties, has a rich history dating back thousands of years. Believed to have originated in the Arabian Peninsula, aloe vera''s use can be traced to ancient civilizations, including the Egyptians, who referred to it as the "plant of immortality." Egyptians utilized aloe vera for various purposes, such as treating wounds, skin irritations, and burns. The plant''s popularity spread across different cultures, with mentions in ancient Greek, Roman, and Indian texts. [NEWLINE][NEWLINE]Throughout history, aloe vera continued to be valued for its healing properties. It gained prominence during the Middle Ages in Europe and the Renaissance, where it was cultivated in monasteries for its medicinal benefits. In the 20th century, aloe vera''s popularity surged as scientific research confirmed its therapeutic properties, leading to the development of various skincare and health products containing aloe vera extracts. Today, aloe vera is widely recognized and utilized globally for its soothing, moisturizing, and healing qualities in skincare, cosmetics, and alternative medicine.');
+('TXT_KEY_RESOURCE_ALOE_VERA', '알로에 베라'),
+('TXT_KEY_RESOURCE_ALOE_VERA_HELP', '[ICON_FOOD] 식량 +1, 재배지로부터 [ICON_RESEARCH] 과학 +2'),
+('TXT_KEY_CIV5_RESOURCE_ALOE_VERA_TEXT', '약효가 뛰어난 다육식물인 알로에 베라는 수천 년의 풍부한 역사를 가지고 있습니다. 알로에 베라는 아라비아 반도가 원산지라고 믿어지며, 그 유래는 고대 문명에서 찾아볼 수 있는데, 이집트인들은 알로에 베라를 "불멸의 식물"이라고 불렀습니다. 이집트인들은 상처, 피부 자극, 화상 치료 등 다양한 용도로 알로에 베라를 활용했습니다. 알로에 베라는 고대 그리스, 로마, 인도의 문헌에 언급되면서 여러 문화권으로 퍼져 나갔습니다.[NEWLINE][NEWLINE]역사를 통틀어 알로에 베라는 그 치유력으로 인해 계속해서 가치를 인정받아 왔습니다. 유럽에서는 중세 시대와 르네상스 시대에 널리 알려졌으며, 수도원에서 약효를 위해 재배되었습니다. 20세기에 들어 과학적 연구를 통해 알로에 베라의 치료적 효과가 확인되면서 인기가 급증했고, 이로 인해 알로에 베라 추출물이 함유된 다양한 피부 관리 및 건강 제품이 개발되었습니다. 오늘날 알로에 베라는 진정, 보습, 치유 효과가 있어 전 세계적으로 피부 관리, 화장품, 대체 의학 분야에서 널리 인정받고 활용되고 있습니다.');
 
-UPDATE Language_ko_KR SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]Requires an Aqueduct in the City.', '[NEWLINE]Nearby [ICON_RES_ALOEVERA] Aloe Vera: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Requires an Aqueduct in the City.')
+UPDATE Language_ko_KR SET Text = REPLACE(Text, '[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.', '[NEWLINE][ICON_RES_ALOEVERA] 알로에 베라: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1[NEWLINE][NEWLINE]도시에 송수로가 필요합니다.')
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDING_GROCER');
---=======================================================================================================================
---=======================================================================================================================

@@ -67,7 +67,7 @@
 		<Image Anchor="C,B" Offset="0,-109" AnchorSide="O.O"  Texture="Assets/UI/Art/Controls/bottomframe.dds" Size="512,128" Hidden="1" />
 
 		<!-- Screen Title  -->
-		<Label Anchor="C,T" ID="TitleLabel"  Offset="0,19" Font="TwCenMT20" Color0="30.50.80.255" Color1="133.184.186.255" Color2="133.184.186.255" FontStyle="SoftShadow" String="Yet (not) Another Earth Maps Pack - Advanced Setup" />
+		<Label Anchor="C,T" ID="TitleLabel"  Offset="0,19" Font="TwCenMT20" Color0="30.50.80.255" Color1="133.184.186.255" Color2="133.184.186.255" FontStyle="SoftShadow" String="TXT_KEY_TITLE_LABEL" />
 
 		<!-- Top Panel  -->
 		<Box Anchor="C,T" Size="926,27" Offset="0,44" Color="0.0.0.128" >
