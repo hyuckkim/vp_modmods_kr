@@ -278,7 +278,7 @@ function AddWonder(ePlayer, tPlayerTechs, eWonder, pWonder)
 			bMaxEra = true
 		else
 			instance.WonderOutdated:SetHide(true)
-		
+
 			for city in pActivePlayer:Cities() do
 				if city:CanConstruct(eWonder, 0, 0, 0) then
 					instance.WonderAvailable:SetHide(false)
@@ -348,7 +348,7 @@ function AddWonder(ePlayer, tPlayerTechs, eWonder, pWonder)
 		elseif iTrueTechNeeded == 0 then
 			instance.TechsNeeded:SetText(nil)
 			instance.TechsNeeded:SetToolTipString(nil)
-		else
+		else	
 			instance.TechsNeeded:SetText(iTrueTechNeeded)
 			instance.TechsNeeded:SetToolTipString(nil)
 		end
@@ -382,7 +382,7 @@ function AddWonder(ePlayer, tPlayerTechs, eWonder, pWonder)
 			sort.tech = pWonder.sTechName
 			sTrueTechName = sort.tech
 		end
-			
+		
 		instance.Tech:SetText(sTrueTechName)
 		
 		if bAvailableCity or bAvailableCityHidden then
@@ -1330,6 +1330,25 @@ function UpdateEraList(ePlayer)
 	Controls.EraMenu:RegisterSelectionCallback(OnEraSelected)
 end
 
+function OnNoEraCheck()
+	local eActivePlayer = Game.GetActivePlayer()
+	
+	if Controls.NoEraLimitCheckbox:IsChecked() then
+		g_EraLimit = g_MaxEraLimit
+		Controls.EraMenu:GetButton():LocalizeAndSetText(GameInfo.Eras[g_EraLimit].Description)
+		Controls.EraMenu:SetDisabled(true)
+		UpdateEraList(eActivePlayer)
+		OnWondersUpdate()
+	else
+		g_EraLimit = math.min(#GameInfo.Eras - 1, Players[eActivePlayer]:GetCurrentEra() + 1)
+		Controls.EraMenu:GetButton():LocalizeAndSetText(GameInfo.Eras[g_EraLimit].Description)
+		Controls.EraMenu:SetDisabled(false)		
+		UpdateEraList(eActivePlayer)
+		OnWondersUpdate()
+	end
+end
+Controls.NoEraLimitCheckbox:RegisterCallback(Mouse.eLClick, OnNoEraCheck)
+
 function OnClose()
 	ContextPtr:SetHide(true)
 end
@@ -1350,7 +1369,7 @@ function OnWondersUpdate()
 		local ePlayer = Game.GetActivePlayer()
 
 		if (g_EraLimit == -1) then
-			g_EraLimit = math.min(#GameInfo.Eras-1, Players[ePlayer]:GetCurrentEra()+2)
+			g_EraLimit = math.min(#GameInfo.Eras - 1, Players[ePlayer]:GetCurrentEra() + 1)
 		end
 
 		UpdateEraList(ePlayer)
