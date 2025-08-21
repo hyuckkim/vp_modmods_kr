@@ -23,10 +23,12 @@
   <Files>
     <File md5="BB6BEE2589D8FF74B932FFF13545E91D" import="0">Maps/Continental_Drift.lua</File>
     <File md5="F7163DC2B8C15CCFBFBC4C1D6C66EBEA" import="0">Text/Continental_Drift_text_en_us.xml</File>
+    <File md5="3ea8c261e7b60f58b3696d3c367d7e8a" import="0">Text/Continental_Drift_text_ko_kr.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
       <UpdateDatabase>Text/Continental_Drift_text_en_us.xml</UpdateDatabase>
+      <UpdateDatabase>Text/Continental_Drift_text_ko_kr.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

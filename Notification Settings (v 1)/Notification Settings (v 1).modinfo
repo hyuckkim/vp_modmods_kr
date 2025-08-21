@@ -25,12 +25,14 @@
   <Files>
     <File md5="300A187FFC3991A4890543110A31C801" import="0">SQL/NotificationSettings.sql</File>
     <File md5="DA01A5D0E3E32AEB85B7FD7DE49804EC" import="0">Text/NotificationSettings_en_US.xml</File>
+    <File md5="8498b32fcd79a3aa7821ac4f052cd52e" import="0">Text/NotificationSettings_ko_KR.xml</File>
     <File md5="5FB6F1DC831596642E4DF270CC5CD8C0" import="0">UI/NotificationSettings.lua</File>
     <File md5="E7B9E82081393765927CE59AF5036351" import="0">UI/NotificationSettings.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
       <UpdateDatabase>Text/NotificationSettings_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Text/NotificationSettings_ko_KR.xml</UpdateDatabase>
       <UpdateDatabase>SQL/NotificationSettings.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>

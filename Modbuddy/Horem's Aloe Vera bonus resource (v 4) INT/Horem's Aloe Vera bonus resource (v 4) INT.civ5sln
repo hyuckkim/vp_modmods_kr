@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Horem's Aloe Vera bonus resource (v 4) INT", "Horem's Aloe Vera bonus resource (v 4) INT\Horem's Aloe Vera bonus resource (v 4) INT.civ5proj", "{28B50C95-547A-40A9-975C-478AF6B0862A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Default|x86.ActiveCfg = Default|x86
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Default|x86.Build.0 = Default|x86
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Package Only|x86.ActiveCfg = Package Only|x86
+		{28B50C95-547A-40A9-975C-478AF6B0862A}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c30b24d9-6484-4111-bab2-5bbb1406db12" version="1">
+  <Properties>
+    <Name>World of Lore - DragonFable</Name>
+    <Stability>Beta</Stability>
+    <Teaser>A detailed map of the world of Lore from DragonFable.</Teaser>
+    <Description>A detailed map of the world of Lore from DragonFable.</Description>
+    <Authors>SeamusThatsTheDog</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="63403975C6AFA55B11A8CEA62B610EB3" import="0">WorldOfLoreDragonFable.Civ5Map</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="Map" file="WorldOfLoreDragonFable.Civ5Map">
+      <Name>World of Lore - DragonFable</Name>
+      <Description>A detailed map of the world of Lore from DragonFable.</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{cc5d73f4-39c8-4c79-ac2f-f37843042e3a}</ProjectGuid>
+    <Name>Jarcast's Pikeman Tweak (v 2) INT</Name>
+    <Guid>72e2eeed-ced6-4613-965f-401e350202fc</Guid>
+    <ModVersion>2</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Jarcast's Pikeman Tweak</Teaser>
+    <Description>Translation of the Jarcast's Pikeman Tweak into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Jarcast의 장창병 트윅 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Jarcast's Pikeman Tweak (v 2) INT</AssemblyName>
+    <RootNamespace>Jarcast's Pikeman Tweak (v 2) INT</RootNamespace>
+    <ModReferences />
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Phoulkon_GameDefines.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Jarcast's Pikeman Tweak</Name>
+        <Id>ae7d9843-c4b7-4b09-b50f-4837eb2f8f27</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <Homepage>http://github.com/handanikr/</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Phoulkon_GameDefines.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
