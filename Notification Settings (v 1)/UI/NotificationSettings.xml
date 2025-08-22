@@ -22,10 +22,10 @@
 				<Box Size="504,20" Color="0,0,0,0">
 					<Stack Size="504,20" StackGrowth="Right">
 						<Box Size="400,18" Color="0,0,0,0">
-							<Label Font="TwCenMT18" FontStyle="Shadow" String="Instant Yield Type" />
+							<Label Font="TwCenMT18" FontStyle="Shadow" String="TXT_KEY_NOTIFICATION_SETTINGS_TITLE_LABEL_1" />
 						</Box>
 						<Box Size="100,18" Color="0,0,0,0">
-							<Label Font="TwCenMT18" FontStyle="Shadow" String="Notification" />
+							<Label Font="TwCenMT18" FontStyle="Shadow" String="TXT_KEY_NOTIFICATION_SETTINGS_TITLE_LABEL_2" />
 						</Box>
 					</Stack>
 				</Box>
