@@ -38,7 +38,7 @@ Overhaul 모드란 게임 전체를 전반적으로 수정하는 모드를 말�
 
 ### 공식 배포 [[바로가기]](https://github.com/handanikr/vp_modmods_kr/releases)
 
-### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/beta/Vox%20Populi%20INT+.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/beta/VP%20INT%20Modpack+.zip)
+### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/Vox%20Populi%20INT%2B.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20INT%20Modpack+.zip)
 
 <img width="499" height="392" alt="1754314277" src="https://github.com/user-attachments/assets/e068a045-198c-43dc-b710-c80aaeace1dd" />
 
