@@ -51,7 +51,7 @@ Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "vp"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: Custom; Flags: disablenouninstallwarning fixed
+Name: "vp"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP Custom; Flags: disablenouninstallwarning fixed
 Name: "lua"; Description: "더 빠른 턴 처리 (MoonJIT)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: Custom; Flags: disablenouninstallwarning
 Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
