@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="81cade76-5c9d-4cbd-b6c2-2da7af90ecf9" version="4">
+  <Properties>
+    <Name>UI - Auto Map Pins</Name>
+    <Teaser>Adds map pins for Wonders, City States and Unimproved Resources</Teaser>
+    <Description>Automatically adds map pins for
+
+* Natural Wonders as they are discovered
+* City States as they are met
+* Unimproved Resources as they are revealed
+
+Requires the "UI - Map Pins" mod to be installed and enabled</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=460944</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="B415F50537817EF7018850F4469074B2" import="0">UI/AutoMapPins.lua</File>
+    <File md5="7BF171DAEB00F5A4120471E9BFEA05DA" import="0">XML/UIAutoMapPins.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UIAutoMapPins.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/AutoMapPins.lua">
+      <Name>Auto Map Pins</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

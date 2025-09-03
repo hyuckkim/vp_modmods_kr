@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8634880a-749f-4d64-aa68-560378e0f007" version="3">
+  <Properties>
+    <Name>Jarcast &amp; Hokath's Additional Luxuries</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Adds Alpaca, Camel and Quartz luxury resources</Teaser>
+    <Description>New Luxury Resources:
+[NEWLINE][ICON_BULLET]Alpaca (pasture, hill)
+[NEWLINE][ICON_BULLET]Camel (pasture, desert)
+[NEWLINE][ICON_BULLET]Quartz (quarry, hill).</Description>
+    <Authors>Jarcast, Hokath</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="B1F28708B8717564DFE6CC951C437D60" import="1">Art/AddLuxResAtlas128.dds</File>
+    <File md5="E3FCDD5E730A20F26E1062D528AF1AF2" import="1">Art/AddLuxResAtlas256.dds</File>
+    <File md5="3F366A7FDF68BB7B6F25C13BA0CFD03A" import="1">Art/AddLuxResAtlas45.dds</File>
+    <File md5="D4EF75AF3DBAB592C9457ABB274B50B9" import="1">Art/AddLuxResAtlas64.dds</File>
+    <File md5="F5B649B5EAE8F9DE7FD7D3422F11CCEB" import="1">Art/AddLuxResAtlas80.dds</File>
+    <File md5="44758A5B80C527427BB7DC1FE50C1ACF" import="1">Art/FontIcons/AlpacaFontIcon_22.dds</File>
+    <File md5="1A79DEFF5BD44D221FE47115D13D4E7A" import="1">Art/FontIcons/AlpacaFontIcon_22.ggxml</File>
+    <File md5="E381FA07E8D7A04F363D01BD29C56E72" import="1">Art/FontIcons/CamelFontIcon_22.dds</File>
+    <File md5="46432168013B381FCCAEDE2688852146" import="1">Art/FontIcons/CamelFontIcon_22.ggxml</File>
+    <File md5="00F4FD53E5A3DA26612C4C7C715EC36A" import="1">Art/FontIcons/QuartzFontIcon_22.ggxml</File>
+    <File md5="18087295C3B0C7F2C9A7F2ACA98E1ABF" import="1">Art/FontIcons/QuartzFontIcon_22.dds</File>
+    <File md5="97F2676ED349FC5A5C61D7038BD065AA" import="1">Art/Resources/Alpaca/alpaca_v2.dds</File>
+    <File md5="B5AA3E26F9CE358DCB3B9FB626D2BD8D" import="1">Art/Resources/Alpaca/resource_alpaca_larger_v2.fxsxml</File>
+    <File md5="79CEBC16DF722FAF26FEC58FBCB68741" import="1">Art/Resources/Alpaca/resource_alpaca_larger_v2.gr2</File>
+    <File md5="BBB57016C6F3534C418810ACE352C15F" import="1">Art/Resources/Camel/camel_resource_diff.dds</File>
+    <File md5="A1F7B6FAFD3461ED710C917984DF8CC4" import="1">Art/Resources/Camel/resource_camel.fxsxml</File>
+    <File md5="233C7169F8468B7D77122801944C9D31" import="1">Art/Resources/Camel/resource_camel.gr2</File>
+    <File md5="14E63A4EA9312C8AC8663E7D283038C9" import="1">Art/Resources/Quartz/HB_QUARRY_IND_QUARTZ.fxsxml</File>
+    <File md5="6AA376CA190C925860FF66BC5D164A35" import="1">Art/Resources/Quartz/HB_QUARRY_IND_QUARTZ.gr2</File>
+    <File md5="B33F21DAA34E2B1EE4BAC4CFD6D20590" import="1">Art/Resources/Quartz/HB_QUARRY_MID_QUARTZ.fxsxml</File>
+    <File md5="47D7AD266547183F44252E51EBE2B998" import="1">Art/Resources/Quartz/HB_QUARRY_MID_QUARTZ.gr2</File>
+    <File md5="E9FB990E9E8A5812EB6FC06CB33F8974" import="1">Art/Resources/Quartz/PL_QUARRY_IND_QUARTZ.fxsxml</File>
+    <File md5="B23C71C61ACA916C9D0B1C1CA6DEEAFD" import="1">Art/Resources/Quartz/PL_QUARRY_IND_QUARTZ.gr2</File>
+    <File md5="4F1FE11ECDA7D9E45A0228920FC63D75" import="1">Art/Resources/Quartz/PL_QUARRY_MID_QUARTZ.fxsxml</File>
+    <File md5="6D81894684886D608B7BF29292F76BA6" import="1">Art/Resources/Quartz/PL_QUARRY_MID_QUARTZ.gr2</File>
+    <File md5="4C409E64FD3E404D9B7ED1C9E83E5CFA" import="1">Art/Resources/Quartz/QUARRY_IND_QUARTZ.fxsxml</File>
+    <File md5="7AB82E6E0356246A5F3A7339C69BEEBA" import="1">Art/Resources/Quartz/QUARRY_IND_QUARTZ.gr2</File>
+    <File md5="624DA161C4D76C9C45640F137D7C19AF" import="1">Art/Resources/Quartz/QUARRY_MID_QUARTZ.fxsxml</File>
+    <File md5="60E93A7FC791E317828AA1FDF21874A2" import="1">Art/Resources/Quartz/QUARRY_MID_QUARTZ.gr2</File>
+    <File md5="D7839F097F4026936F31077BB2CAD711" import="1">Art/Resources/Quartz/QUARTZ_decal_diff.dds</File>
+    <File md5="BF09951BCDE9F326F09519F6B640D229" import="1">Art/Resources/Quartz/QUARTZ_ore_diff.dds</File>
+    <File md5="D4932840DF8953C74CCA77BAD78E147B" import="1">Art/Resources/Quartz/QUARTZ_ore_sref.dds</File>
+    <File md5="9CBC612E4412237377555CE4DF069B38" import="1">Art/Resources/Quartz/Resource_QUARTZ.fxsxml</File>
+    <File md5="0A88ADCA1AF8A1A938FD14B42315F3A0" import="1">Art/Resources/Quartz/Resource_QUARTZ.gr2</File>
+    <File md5="B6366B0243D2B2611FDC473B8AB35D45" import="1">Art/sv_Alpaca.dds</File>
+    <File md5="AF4A790D75AA33821A60A261B0E6B703" import="1">Art/sv_Camel.dds</File>
+    <File md5="95E584F296A02819476C70ACE6440AC2" import="1">Art/sv_Quartz.dds</File>
+    <File md5="B309612BB1197E4ACC9F0764AE9207E2" import="0">Resources_ArtDefines.sql</File>
+    <File md5="9AE8599750A08B61BBE0354D26D454C4" import="0">Resources_GameDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Resources_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Resources_ArtDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

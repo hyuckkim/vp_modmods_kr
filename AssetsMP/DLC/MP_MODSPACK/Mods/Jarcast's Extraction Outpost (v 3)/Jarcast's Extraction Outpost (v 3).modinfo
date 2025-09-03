@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="1da69196-0131-4f34-860e-3882eed300c5" version="3">
+  <Properties>
+    <Name>Jarcast's Extraction Outpost</Name>
+    <Teaser>Adds the Extraction Outpost improvement to claim strategic resources in neutral lands.</Teaser>
+    <Description>Paratroopers, Marine, XCOM Squad can be expended to build an Extraction Outpost to improve strategic resources in neutral lands.</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1D064DF802632B6F65F28F7C709F892E" import="1">Art/Graphics/bar.dds</File>
+    <File md5="CD2753BDE6B026DDA85A9FE8AD6FEA59" import="1">Art/Graphics/bathhouse.dds</File>
+    <File md5="A32E9EBBB8295CBF554F04EB9CDD4864" import="1">Art/Graphics/billboard_currogated_metal.dds</File>
+    <File md5="B432790248BE03165390FA91E0FF71E5" import="1">Art/Graphics/billboard_propaganda.dds</File>
+    <File md5="3F66551E5F5E6E08FA006957FC8954F1" import="1">Art/Graphics/craneapoc.dds</File>
+    <File md5="F7164F451B31AC8057B42A8947AE6E66" import="1">Art/Graphics/debotrebuilt Kopie.dds</File>
+    <File md5="D6D808B49F13758D2879A157D0B27408" import="1">Art/Graphics/debotruined Kopie.dds</File>
+    <File md5="7F8DF96BC185D7688FF65F1E72C8040F" import="1">Art/Graphics/desertadobe.dds</File>
+    <File md5="5AA621C8DB2BB3114ACD58CF79F44706" import="1">Art/Graphics/DroneSet.dds</File>
+    <File md5="D60F943D8B6943B9F795F92BEE68F599" import="1">Art/Graphics/ground.dds</File>
+    <File md5="7AA57E516424E0512C3503BC05AC3389" import="1">Art/Graphics/house.dds</File>
+    <File md5="1963ACDD976DED66F74967D586823AC9" import="1">Art/Graphics/iguanabob.dds</File>
+    <File md5="C0C2110D80602347ED0ADE9182E59878" import="1">Art/Graphics/Ind14.dds</File>
+    <File md5="3B493B4F43E0150E625C8BAAC2A61784" import="1">Art/Graphics/Ind_10.dds</File>
+    <File md5="AC41C06BA721315512F26433220FEDF7" import="1">Art/Graphics/no_gloss.dds</File>
+    <File md5="BEBF168F07D9F0C927E5E7EA69D3CC14" import="1">Art/Graphics/Outpost3.fxsxml</File>
+    <File md5="75285E9D70941B226D9509A8405967E2" import="1">Art/Graphics/Outpost3.gr2</File>
+    <File md5="E1D2AE6D8B46EAC9129CC2B26B77DED9" import="1">Art/Graphics/Outpost3_HB.fxsxml</File>
+    <File md5="49E584FBE5BBAFEF8D27385E7AA409B8" import="1">Art/Graphics/Outpost3_HB.gr2</File>
+    <File md5="BAF7182F36DCA90F3CC68A4E4BEF8DE6" import="1">Art/Graphics/Outpost3_PL.fxsxml</File>
+    <File md5="0ECA5BA397BEAD7198F1B4497B1464F8" import="1">Art/Graphics/OutpostUA_45.dds</File>
+    <File md5="9390E759B3D829380E5E3D4EE395E443" import="1">Art/Graphics/OutpostUA_64.dds</File>
+    <File md5="5D1CB64044F5F4A0E74992EFEFD818EA" import="1">Art/Graphics/Outpost_064.dds</File>
+    <File md5="7061EA03F5ADB7744698DE181703D8A8" import="1">Art/Graphics/refinerytanks2.dds</File>
+    <File md5="E966E67EAE58168C0D92167E18337AAB" import="1">Art/Graphics/ruins.dds</File>
+    <File md5="00370E0C974D919950B32DB79610B354" import="1">Art/Graphics/tankfarm2.dds</File>
+    <File md5="DEFBC369CA819C90141D25A3CD7C0990" import="1">Art/Graphics/tradingpost.dds</File>
+    <File md5="17EAB11590F049E6C991AAB5A5609FEF" import="1">Art/Graphics/TruckR.dds</File>
+    <File md5="4E7D0291A7A67A07ED0D2A0183F79D88" import="1">Art/Graphics/wall_an.dds</File>
+    <File md5="63AF9BEFAE22B569370A60A5770F01AD" import="1">Art/Graphics/Water-tank.dds</File>
+    <File md5="216DE6057848BFD050C82DA06DCBF2CD" import="1">Art/Graphics/well.dds</File>
+    <File md5="1DA48E17C6F7CA8C9EE25254848CAE5B" import="1">Art/Jar_StratOutpost_128.dds</File>
+    <File md5="43AA55B7555D3A9F7F32A74087EDB2A6" import="1">Art/Jar_StratOutpost_16.dds</File>
+    <File md5="1A190559541D458927B63CDAD1038D40" import="1">Art/Jar_StratOutpost_256.dds</File>
+    <File md5="51DD52528F43452A3C8586E17961E489" import="1">Art/Jar_StratOutpost_32.dds</File>
+    <File md5="3492158D07FCD848800826B8B9F4C429" import="1">Art/Jar_StratOutpost_45.dds</File>
+    <File md5="D95E663EBA43F112791D45A910273B5F" import="1">Art/Jar_StratOutpost_64.dds</File>
+    <File md5="3A7E0B87B929DCA4A2E686D7C5249397" import="1">Art/Jar_StratOutpost_80.dds</File>
+    <File md5="A2E64D8045AF926CFD356AA0C5346805" import="1">Art/Low Graphics/debotrebuilt Kopie.dds</File>
+    <File md5="9E554465DD1B35A2B14F0FD1E82AA0B1" import="1">Art/Low Graphics/debotruined Kopie.dds</File>
+    <File md5="E4D50115006A39CC4EF94ABD0AE30802" import="1">Art/Low Graphics/Depot Postapocalyptic B.fxsxml</File>
+    <File md5="A31899E4A44CE16006EFC8128C23CAB7" import="1">Art/Low Graphics/Depot Postapocalyptic HB.fxsxml</File>
+    <File md5="A9F06B63C767D6919A1FEDF9DA956DAF" import="1">Art/Low Graphics/Depot Postapocalyptic HB.gr2</File>
+    <File md5="CEA4450A18CBFB2B5AAE8EA72876E193" import="1">Art/Low Graphics/Depot Postapocalyptic PL.fxsxml</File>
+    <File md5="F9FE71E247E94FF0636FFE722CE1DF67" import="1">Art/Low Graphics/Depot Postapocalyptic PL.gr2</File>
+    <File md5="AECD466185B22E422FA8678D9BB6C0D3" import="1">Art/Low Graphics/Depot Postapocalyptic.gr2</File>
+    <File md5="A15A7B616195C2BE32918A860CD2EA3B" import="1">Art/Low Graphics/Depot_rebuiltshadow Kopie.dds</File>
+    <File md5="C94A850D5AB0EF4E80377574821FA663" import="1">Art/Low Graphics/depot_ruined Kopie.dds</File>
+    <File md5="42A4E1DD417EEFB17FD50BD570F539F8" import="1">Art/sv_StratOutpost.dds</File>
+    <File md5="210A03B0C51F98958A8AD0FFB56EA1DE" import="0">ExtractionOutpost.sql</File>
+    <File md5="8E47FF89591D5CEA174C5CCD9049D4DE" import="0">Graphic_Settings.sql</File>
+    <File md5="65431657AD75D054257527C4A3FE1049" import="0">Jar_Outpost_Functions.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>ExtractionOutpost.sql</UpdateDatabase>
+      <UpdateDatabase>Graphic_Settings.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Jar_Outpost_Functions.lua">
+      <Name>Jar_Outpost_Functions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

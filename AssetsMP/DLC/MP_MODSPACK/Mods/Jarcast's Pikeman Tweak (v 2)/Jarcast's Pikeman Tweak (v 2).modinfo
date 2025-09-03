@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ae7d9843-c4b7-4b09-b50f-4837eb2f8f27" version="2">
+  <Properties>
+    <Name>Jarcast's Pikeman Tweak</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Buffs Pikeman ans adds the Phoulkon unit between Spearman and Pikeman.</Teaser>
+    <Description>[ICON_BULLET]Pikeman class gain +3 [ICON_STRENGTH] (capped at 22 [ICON_STRENGTH])
+[NEWLINE][ICON_BULLET]New unit Phoulkon (16 [ICON_STRENGTH]) between Spearman and Pikeman.</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/jarcasts-pikeman-tweak.690845/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" minversion="0" maxversion="999" title="Unit Scaling and Formation for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="3D0A21077814D4425952CD0B245A9FFA" import="1">Art/Graphics/Flag1-32.dds</File>
+    <File md5="CD607268507839DFE9103383E2D26EE8" import="1">Art/Graphics/Flag1-SV.dds</File>
+    <File md5="E9AF5A3CED8F5C18ABA8B9E508EE95C6" import="1">Art/Graphics/foederati.fxsxml</File>
+    <File md5="996509A55E972FBAF11BE48FB088A5A1" import="1">Art/Graphics/Peones.dds</File>
+    <File md5="D165C64B19F2D47660AA222947EB8205" import="1">Art/Graphics/Peones.gr2</File>
+    <File md5="5EE00EB956412181C9096FCD69DEF44F" import="1">Art/Graphics/Peones_gloss.dds</File>
+    <File md5="890ABA9028E589C19835359F7D29F7A8" import="1">Art/Phoulkon_IconAtlas_128.dds</File>
+    <File md5="DE2AA071A422A622C6B56A581F80BCB8" import="1">Art/Phoulkon_IconAtlas_256.dds</File>
+    <File md5="CF571ACB4F3318ACB78743C3321B8514" import="1">Art/Phoulkon_IconAtlas_45.dds</File>
+    <File md5="C2A56DC54CED4D2B9E91B88EE5243B14" import="1">Art/Phoulkon_IconAtlas_64.dds</File>
+    <File md5="0DCFD9A59324267CF8668C9FD1BEF0C9" import="1">Art/Phoulkon_IconAtlas_80.dds</File>
+    <File md5="96430D236D7D49E5C80925DCC6B78581" import="0">Phoulkon_GameDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Phoulkon_GameDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

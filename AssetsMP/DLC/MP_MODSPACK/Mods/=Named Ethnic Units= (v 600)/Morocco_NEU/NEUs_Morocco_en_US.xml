@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--MOROCCO-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_WARRIOR">
+			<Text>[COLOR_SELECTED_TEXT]Murrakush's Guards[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_SPEARMAN">
+			<Text>[COLOR_SELECTED_TEXT]Berber Spearman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_SWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Fellahin[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_PIKEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Berber Pikeman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_CROSSBOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Ceuta's Defender[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_MOROCCO_MUSKETMAN">
+			<Text>[COLOR_SELECTED_TEXT]Black Guard[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

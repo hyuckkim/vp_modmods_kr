@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="507ca7b4-31cf-4f36-8c02-edebd99744f7" version="1">
+  <Properties>
+    <Name>Notification Settings</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Manage notifications for instant yields</Teaser>
+    <Description>Manage notifications for instant yields</Description>
+    <Authors>Axatin</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="300A187FFC3991A4890543110A31C801" import="0">SQL/NotificationSettings.sql</File>
+    <File md5="DA01A5D0E3E32AEB85B7FD7DE49804EC" import="0">Text/NotificationSettings_en_US.xml</File>
+    <File md5="8498b32fcd79a3aa7821ac4f052cd52e" import="0">Text/NotificationSettings_ko_KR.xml</File>
+    <File md5="5FB6F1DC831596642E4DF270CC5CD8C0" import="0">UI/NotificationSettings.lua</File>
+    <File md5="E7B9E82081393765927CE59AF5036351" import="0">UI/NotificationSettings.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Text/NotificationSettings_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Text/NotificationSettings_ko_KR.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/NotificationSettings.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/NotificationSettings.xml">
+      <Name>Notification Settings</Name>
+      <Description>Notification Settings</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

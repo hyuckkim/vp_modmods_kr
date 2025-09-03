@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0848f282-cdb4-4184-9fdb-f15179b2f20b" version="600">
+  <Properties>
+    <Name>=Named Ethnic Units=</Name>
+    <Teaser>[COLOR_GREEN]Adds Named Ethnic Units for each Civilizations[ENDCOLOR]</Teaser>
+    <Description>[h2]Adds [b]Ethnic Units[/b] with [b]Unique Names[/b] for [b]EACH[/b] Civilization. Standalone![/h2]
+[quote]Named Ethnic Units enhances Civilization V with over 250 unique units, each specifically named to reflect the historical and cultural identity of its civilization. Spanning all 43 civilizations, this mod brings depth and authenticity to your armies, offering a distinct identity for every unit on the battlefield.
+
+Each unit has been carefully designed and rigorously tested to ensure stable, crash-free gameplay. The standard unit scale from the base game is preserved, ensuring compatibility and visual consistency with other mods.
+
+From the M4A3E8 Sherman for America to the Iqhawe for the Zulu, every unit carries a unique name, enriching the cultural immersion and adding a personal touch to your campaigns. For a full list of units, see the Named Ethnic Unit List in the pinned discussions.
+[/quote]
+
+[h3]Compatibility[/h3]
+For best results, disable other unit model mods to avoid conflicts.
+
+[h3]Known Issues[/h3]
+Reloading a game causes unique names to revert to default names, unless you are using the Core Mod, in which case names are preserved. Unique graphics remain intact either way.
+
+[h3]Feedback and Support[/h3]
+If you encounter any issues or have suggestions, please leave a comment. Your feedback is invaluable for improving the mod!
+
+[quote][h3]LANGUAGE SUPPORT[/h3]
+Fully localized in: [b]English[/b], [b]French[/b], [b]German[/b], [b]Spanish[/b], [b]Korean[/b], and [b]Russian[/b].
+[/quote]
+
+[img=https://imgur.com/rwYP22S.gif[/img]
+
+[quote][h3]CREDITS AND THANKS[/h3]
+This mod was created by Gaia, with a focus on historical authenticity and gameplay stability. A huge thanks for suggesting models, naming, and testing goes to: Castior, GYC, CommunistFashist, and RMD. Special thanks to danrell, bernie14, JTitan, Snafusmith, Wolfdog, hangman, and Patum333 for their incredible unit skins, which bring the mod to life.
+[/quote]</Description>
+    <Authors>_GAIA_</Authors>
+    <SpecialThanks>GYC, Castior, etc.</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="8cc52326-c6c1-4cb5-b24d-9bf489ce71d4" minversion="0" maxversion="999" title="__Sapiens__" />
+    <Mod id="ab0bea08-fb7a-4c23-9234-cbe5252552b6" minversion="0" maxversion="999" title="__Gaia's Core Mod__" />
+    <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="9309774C33232FFC6E47E09F56BDD3C5" import="1">Animations/edited_aim_attack_city_to_run.dge</File>
+    <File md5="FA9CE373BB700CFCD8F0FA3A955B1E69" import="1">Animations/edited_aim_attack_to_run_graph.dge</File>
+    <File md5="BA4F6AEB27527AB47CC284B27C8288A8" import="1">Animations/edited_aim_bombard_defend_loop_graph.dge</File>
+    <File md5="933E4A224EFE615D537517EFE06B34BC" import="1">Animations/edited_aim_civilian_activate_captured.dge</File>
+    <File md5="87476FD4384999BCCBF43AEEF9B3A652" import="1">Animations/edited_aim_civilian_death_final.dge</File>
+    <File md5="9AB143ED19D8B61A7794C90D5D65EE97" import="1">Animations/edited_aim_civilian_enter_bombard_defend.dge</File>
+    <File md5="7BCAF33AE57FA6E4F56F767E1799955E" import="1">Animations/edited_aim_civilian_state_01.fsmxml</File>
+    <File md5="CD02EC91E73F396297C2B3434A8BA034" import="1">Animations/edited_aim_combat_ready_graph.dge</File>
+    <File md5="6B4338103039DFBD431A44C89DA198D6" import="1">Animations/edited_aim_death_final_graph.dge</File>
+    <File md5="F9F109E1E43FD75DFC765D9B3A43CE48" import="1">Animations/edited_aim_death_graph.dge</File>
+    <File md5="014FBFBCB17012BEC0B32D9FFDBF721E" import="1">Animations/edited_aim_enter_bombard_defend_graph.dge</File>
+    <File md5="7A5A0ADFBBB05D6E4FB126383988B264" import="1">Animations/edited_aim_enter_combat_ready_graph.dge</File>
+    <File md5="34488A641F9D948D865BBECF8B3878DF" import="1">Animations/edited_aim_enter_fortify.dge</File>
+    <File md5="ADAECB630FF73EEFBBE3EE3661F1819C" import="1">Animations/edited_aim_enter_sleep_civilian.dge</File>
+    <File md5="F245B80AAC985C0011FEE5CBF3FB25DF" import="1">Animations/edited_aim_fidgets_graph.dge</File>
+    <File md5="65FED4E2E20D7512D6B5E92C1CD37EF7" import="1">Animations/edited_aim_fortify_fidget_graph.dge</File>
+    <File md5="F758D65157483D32C6763F817B216937" import="1">Animations/edited_aim_fortify_graph.dge</File>
+    <File md5="C2C8D0ADFA388980A03E814BF2B335F5" import="1">Animations/edited_aim_fortify_leave_graph.dge</File>
+    <File md5="AD4E2A013238410D8FCE2666AEB1DC08" import="1">Animations/edited_aim_fortify_to_idle_a.dge</File>
+    <File md5="EF6168FF0903555EDCBB9FD626CFB00F" import="1">Animations/edited_aim_idle_graph.dge</File>
+    <File md5="268797759660DA55A0F792A966EB586B" import="1">Animations/edited_aim_idle_offset_continue_true_graph.dge</File>
+    <File md5="C4D8B3EB164B5525B92514645521D0C3" import="1">Animations/edited_aim_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    <File md5="189E34C23C7A19F2C190E1ACB4212C91" import="1">Animations/edited_aim_leave_combat_ready.dge</File>
+    <File md5="225D164523FE1270306005CCD71B075A" import="1">Animations/edited_aim_melee_attacks.dge</File>
+    <File md5="71E511A38054110B5D9A23B311AC0104" import="1">Animations/edited_aim_modern_ship_attacks.dge</File>
+    <File md5="BA0D234DE017F5CEB6DEF37CE7DFE384" import="1">Animations/edited_aim_ms_attack_city_to_run.dge</File>
+    <File md5="75D8FBC3A2C4D56B1089F20A2E9D9DA1" import="1">Animations/edited_aim_ms_attack_to_run_graph.dge</File>
+    <File md5="82C3CE94F7827159DEA80CCF8AAF5D9E" import="1">Animations/edited_aim_ms_bombard_defend_loop_graph.dge</File>
+    <File md5="FF8A929D15C8ECE5089A806AFBC80C8E" import="1">Animations/edited_aim_ms_civilian_activate_captured.dge</File>
+    <File md5="1AE83D5303F9671277D4FEC7F327A2BB" import="1">Animations/edited_aim_ms_civilian_death_final.dge</File>
+    <File md5="0021307C276C3516A57BBADDAC07ACE7" import="1">Animations/edited_aim_ms_civilian_enter_bombard_defend.dge</File>
+    <File md5="C3686411D2E96A715267F9A5C72A5EB1" import="1">Animations/edited_aim_ms_combat_ready_graph.dge</File>
+    <File md5="FE5B902745DEE0860ECEE5BA421D141F" import="1">Animations/edited_aim_ms_death_final_graph.dge</File>
+    <File md5="21659FCED7A08D6FB464A693D0E82597" import="1">Animations/edited_aim_ms_death_graph.dge</File>
+    <File md5="B66FF4B10706BE666A916B917D14AC83" import="1">Animations/edited_aim_ms_enter_bombard_defend_graph.dge</File>
+    <File md5="9B18015ACB470CD66C3294FDA203C27E" import="1">Animations/edited_aim_ms_enter_combat_ready_graph.dge</File>
+    <File md5="FD1B5EABA624344B944CD37BD71DE110" import="1">Animations/edited_aim_ms_enter_fortify.dge</File>
+    <File md5="2470ABA98F462C27DD3C1AC013BD3AC6" import="1">Animations/edited_aim_ms_enter_sleep_civilian.dge</File>
+    <File md5="04680D47D3519A5FFB950F1147D7B1D4" import="1">Animations/edited_aim_ms_fidgets_graph.dge</File>
+    <File md5="327CB90C3BCF5BAC71F77DA677997631" import="1">Animations/edited_aim_ms_fortify_fidget_graph.dge</File>
+    <File md5="998F9D5F9FCAFE31E97022C5C50C67E8" import="1">Animations/edited_aim_ms_fortify_graph.dge</File>
+    <File md5="39370F05801D7D017D605CE224EE11E7" import="1">Animations/edited_aim_ms_fortify_leave_graph.dge</File>
+    <File md5="7BC464D9DF686D87145362DEE0F68A04" import="1">Animations/edited_aim_ms_fortify_to_idle_a.dge</File>
+    <File md5="EF3E7C919600B18CDC0D6F1BCDD45F64" import="1">Animations/edited_aim_ms_idle_graph.dge</File>
+    <File md5="2F7C2570D10BD4E5879F105F9BB3BC53" import="1">Animations/edited_aim_ms_idle_offset_continue_true_graph.dge</File>
+    <File md5="7AAA31587E2E15A0B887A31C861D4B45" import="1">Animations/edited_aim_ms_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    <File md5="4BB9881AAB8B9F3571AA787BB89B4FF1" import="1">Animations/edited_aim_ms_leave_combat_ready.dge</File>
+    <File md5="2937CE1A002CB18C85FA2E3E63221139" import="1">Animations/edited_aim_ms_melee_attacks.dge</File>
+    <File md5="E538938BAD81B88082C8DF076514653E" import="1">Animations/edited_aim_ms_modern_ship_attacks.dge</File>
+    <File md5="DBFC96AE4406957395EC439CEFF8584A" import="1">Animations/edited_aim_ms_running_loop.dge</File>
+    <File md5="BD96EBE9953A41BD78D450DC26561AFC" import="1">Animations/edited_aim_ms_run_no_charge_loop.dge</File>
+    <File md5="91A772D3D07C64329ED801632EB689C7" import="1">Animations/edited_aim_ms_run_start_civilian.dge</File>
+    <File md5="C017AA3F2D83AAB3B6B939B6418071A3" import="1">Animations/edited_aim_ms_start_running.dge</File>
+    <File md5="34D584D857E6CBA51D87EE2FD6950EC6" import="1">Animations/edited_aim_ms_stop_running.dge</File>
+    <File md5="8D3450B63AF23F48CF9DEDC3B586B022" import="1">Animations/edited_aim_ms_stop_running_civilian.dge</File>
+    <File md5="500F6DEDBDB767CAE8C964DBEE647459" import="1">Animations/edited_aim_ms_transitions_for_idles.dge</File>
+    <File md5="A64E86033B61613B4F39979D5603E65F" import="1">Animations/edited_aim_running_loop.dge</File>
+    <File md5="E38EAF3E95C835B93C7E7849A7F4F23B" import="1">Animations/edited_aim_run_no_charge_loop.dge</File>
+    <File md5="9432853873B222F5AEF1CE53C1CD98DA" import="1">Animations/edited_aim_run_start_civilian.dge</File>
+    <File md5="BCF1F945C0CBE7A1C9F62E5B46F84F99" import="1">Animations/edited_aim_start_running.dge</File>
+    <File md5="7B0232A8BE345EB899FF221FBD7BDCFB" import="1">Animations/edited_aim_stop_running.dge</File>
+    <File md5="38B813F99CCD01B77FB798D2AFE91571" import="1">Animations/edited_aim_stop_running_civilian.dge</File>
+    <File md5="2506D6C118D6A9FB915723F731C95FD4" import="1">Animations/edited_aim_transitions_for_idles.dge</File>
+    <File md5="E38F763EEDD8E5CA2320278CC1641F42" import="1">Animations/edited_fx_triggers_antiair_vehicle_1gun.ftsxml</File>
+    <File md5="1091C411BFCA66D5EE74CEFFD6EE64DC" import="1">Animations/edited_fx_triggers_antiair_vehicle_2gun.ftsxml</File>
+    <File md5="948F20768997973457FAD6CF0F58645E" import="1">Animations/edited_fx_triggers_antiair_vehicle_3gun.ftsxml</File>
+    <File md5="76CCDC691B5CBE0C4F3A85BF0E796AA5" import="1">Animations/edited_fx_triggers_antiair_vehicle_4gun.ftsxml</File>
+    <File md5="EDA5989385F1C83D85AD44E2B8028A1E" import="1">Animations/edited_fx_triggers_artillery.ftsxml</File>
+    <File md5="AB180DC6BFF8E18757D23D554F80784A" import="1">Animations/edited_fx_triggers_battleship.ftsxml</File>
+    <File md5="15D16F16B2DA12C59E1DB7565EBAC0ED" import="1">Animations/edited_fx_triggers_battleship_4turret.ftsxml</File>
+    <File md5="57B853C5D7F32E9A1000E2F1341916A0" import="1">Animations/edited_fx_triggers_Cruiser.ftsxml</File>
+    <File md5="6E0AFDF33543EE37A4770E8903EF3DCB" import="1">Animations/edited_fx_triggers_destroyer.ftsxml</File>
+    <File md5="206D2B57E712C46A9B2B06BC024BA5F4" import="1">Animations/edited_fx_triggers_EarlyJet.ftsxml</File>
+    <File md5="DE8146AC44DE6C704F0728782C1AE500" import="1">Animations/edited_fx_triggers_EarlyTank_1gun.ftsxml</File>
+    <File md5="609CE0B64FB4B5781695009F0D913A51" import="1">Animations/edited_fx_triggers_EarlyTank_2gun.ftsxml</File>
+    <File md5="6903919CC91F1C38BC07B661FDCF73AB" import="1">Animations/edited_fx_triggers_fighter_2Propellers.ftsxml</File>
+    <File md5="57E688AF2606E958CA088BD229D43F5B" import="1">Animations/edited_fx_triggers_infantry.ftsxml</File>
+    <File md5="5B811AF5596286D7B6DAD0FE8E8FA53B" import="1">Animations/edited_fx_triggers_jetfighter.ftsxml</File>
+    <File md5="731708D4FE4BDB447FC797683DAAD2A4" import="1">Animations/edited_fx_triggers_Katyusha.ftsxml</File>
+    <File md5="A08730646EFA18C9E3385EE7D59EA9DC" import="1">Animations/edited_fx_triggers_modernarmor.ftsxml</File>
+    <File md5="6E33E758B853E1114BB487111B8FA075" import="1">Animations/edited_fx_triggers_paratrooper.ftsxml</File>
+    <File md5="212745C0D1059F32FAC334A46B790713" import="1">Animations/edited_fx_triggers_paratrooper_mg.ftsxml</File>
+    <File md5="108FD3B4BAAB4A605BF70CCD44F20E8B" import="1">Animations/edited_fx_triggers_tank.ftsxml</File>
+    <File md5="2B8DD37B99816431055263F820529E18" import="1">Animations/edited_fx_triggers_tank_lightfire.ftsxml</File>
+    <File md5="2C9B80EF7FD70EFAA250F616A4316DC2" import="1">Animations/edited_fx_triggers_tank_mg_1gun.ftsxml</File>
+    <File md5="CCEE19B5A0E7AE186838E1A5A0EE0D33" import="1">Animations/edited_fx_triggers_tank_mg_2gun.ftsxml</File>
+    <File md5="B233D27FC1FA1DB1127E263DC20D30DB" import="1">Animations/edited_mechanized_aim_state_01.fsmxml</File>
+    <File md5="75C5BA4CEC139C9EAFA47AE912EAB3EC" import="1">Animations/edited_modern_ship_aim_state_01.fsmxml</File>
+    <File md5="5B8FBDD532486EB60ECB727286CA7706" import="1">Animations/fx_triggers_modernmarine.ftsxml</File>
+    <File md5="10FBE81A38F4D40FBB262AA7848681E8" import="1">Animations/ModernMarine_Attack.gr2</File>
+    <File md5="82C1973B3CED9ACEFFFE2C2003A603D4" import="1">Animations/ModernMarine_Bombard_Defense.gr2</File>
+    <File md5="4E5C1205401B54CBE76140F440D3200D" import="1">Animations/ModernMarine_DeathA.gr2</File>
+    <File md5="5D434BEDA164FA4674D624BBD5D5D2A1" import="1">Animations/ModernMarine_DeathA_Idle.gr2</File>
+    <File md5="90EEA8E512E8E0B848BD323FE8A99780" import="1">Animations/ModernMarine_DeathB.gr2</File>
+    <File md5="0208C41187615F90A266AB8AF44EFF0A" import="1">Animations/ModernMarine_DeathB_Idle.gr2</File>
+    <File md5="17FA15D5AF19204D2FBDDBDF0BCD6313" import="1">Animations/ModernMarine_Fidget.gr2</File>
+    <File md5="B63A001D59F2A07B413BB02898D2E656" import="1">Animations/ModernMarine_Fortify.gr2</File>
+    <File md5="4DB8C1D2B17255833878519BA8CF4568" import="1">Animations/ModernMarine_Fortify_Idle.gr2</File>
+    <File md5="A6DDF301AB9DFC99838E77EC71416A0C" import="1">Animations/ModernMarine_Idle.gr2</File>
+    <File md5="DCB52786F02DF0FE8C8C64A68733041A" import="1">Animations/ModernMarine_Run.gr2</File>
+    <File md5="F231D61B3CCFBBA3FEFD39DE92CC85A2" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag.dds</File>
+    <File md5="7643D9F467ECC250E3F87C71B24800C8" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag.fxsxml</File>
+    <File md5="6BE1A2B7E1F35D4A947D3D945AAFFA51" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag.gr2</File>
+    <File md5="8E9B28822F3C498F067312C957FD5707" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_045.dds</File>
+    <File md5="8E461984CB9E9B35E2A3BD5134854E03" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_064.dds</File>
+    <File md5="D9179B6EAD55F6B8DB055EC6FD2D6246" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_080.dds</File>
+    <File md5="6F4421CE5FA28DBD01AD7161ED3704BD" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_128.dds</File>
+    <File md5="2514F429655E5F9B677E55A2246E49DB" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_256.dds</File>
+    <File md5="72B8CC3D3A333A597CF4ED14D0D1A849" import="1">Netherlands_NEU/Pikeman/GAIA_Goedendag_gloss.dds</File>
+    <File md5="95D46478C8B167BB148F495419A9B3EE" import="1">Netherlands_NEU/Pikeman/UFlag_Netherlands_Pikeman.dds</File>
+    <File md5="47C16EC16669E082BA36AF9F95F804E4" import="0">ProcessNEUs/SetEthnicUnitName.lua</File>
+    <File md5="3FF244A270EC373C812A2C996C565966" import="0">ProcessNEUs/ProcessNEUs.sql</File>
+    <File md5="3CABF13754B7BC4BEDA1C31CE9E043F5" import="0">ProcessNEUs/SettlerArtStyles.sql</File>
+    <File md5="C0BE143B44B4A464336662959CE3AD84" import="1">America_NEU/Battleship/Iowa_Class.dds</File>
+    <File md5="2C18EB0AE9DD3738E0D19029CC2BF85E" import="1">America_NEU/Battleship/Iowa_Class.fxsxml</File>
+    <File md5="4192E263939B185324872CCF9A8C0CCF" import="1">America_NEU/Battleship/Iowa_Class.gr2</File>
+    <File md5="5D003D0EC2B9136AAD61EEF2E7EEE5A8" import="1">America_NEU/Battleship/Iowa_Class_gloss.dds</File>
+    <File md5="3F9606189C69DE01B165F1174AE77C60" import="1">America_NEU/Destroyer/Fletcher_Class.dds</File>
+    <File md5="DBD55B9B61F2FFCE84AABD01E675FC1B" import="1">America_NEU/Destroyer/Fletcher_Class.fxsxml</File>
+    <File md5="E85ABF26C268DBA9A04D3EFDD31BDCCD" import="1">America_NEU/Destroyer/Fletcher_Class.gr2</File>
+    <File md5="774BFA08E2E06B52E0B2862CA6EF5B3A" import="1">America_NEU/Destroyer/Fletcher_Class_gloss.dds</File>
+    <File md5="AA8450939780B7052BC04EACBE046AC2" import="1">America_NEU/Fighter/P-51_Mustang.dds</File>
+    <File md5="CACEEDE48E7C6800465A057FA4653330" import="1">America_NEU/Fighter/P-51_Mustang.fxsxml</File>
+    <File md5="EFF0901B7C60214F492F3B0F54B969F6" import="1">America_NEU/Fighter/P-51_Mustang.gr2</File>
+    <File md5="88F3B87D896D0CF0D060395AFD2304E5" import="1">America_NEU/JetFighter/F15.dds</File>
+    <File md5="609B31C87C6D58DAAD30F94220D12973" import="1">America_NEU/JetFighter/F15.fxsxml</File>
+    <File md5="E65DDC6D767776D3EA937CFAB46B8F34" import="1">America_NEU/JetFighter/F15.gr2</File>
+    <File md5="728028B617FEC8D2751E31037846EE46" import="1">America_NEU/JetFighter/F15SREF.dds</File>
+    <File md5="D5F9D43134F62CEA828B74D7632B4B62" import="1">America_NEU/ModernArmor/M1Abrams.dds</File>
+    <File md5="C0B09CC6AB307A7157535491AC3DAE9A" import="1">America_NEU/ModernArmor/M1Abrams.fxsxml</File>
+    <File md5="33F290C7F7A4EC6759BA3672C1F758A5" import="1">America_NEU/ModernArmor/M1Abrams.gr2</File>
+    <File md5="21F8A68DEEE769C69213B6876F6CD208" import="0">America_NEU/NEUs_America.sql</File>
+    <File md5="313186D22697BC6125006251F0283130" import="0">America_NEU/NEUs_America_en_US.xml</File>
+    <File md5="E709A1E87C8275319233230D4FA40AE3" import="1">America_NEU/Tank/M4A3E8_Sherman_Easy_Eight.dds</File>
+    <File md5="75C5367072534360B084E2B518897CAA" import="1">America_NEU/Tank/M4A3E8_Sherman_Easy_Eight.fxsxml</File>
+    <File md5="377CEBC189104D2DC47B9E3A7B3FC13B" import="1">America_NEU/Tank/M4A3E8_Sherman_Easy_Eight.gr2</File>
+    <File md5="0FEC5F1F2EC6898AF9716CC415C7BC29" import="1">Arabia_NEU/Composite/Composite_Bowman_Arabia.dds</File>
+    <File md5="1AA5DD6EC972EAA16AA46F998B8FD492" import="1">Arabia_NEU/Composite/Composite_Bowman_Arabia.fxsxml</File>
+    <File md5="EC99BC1466D726420A9258BA44E77462" import="1">Arabia_NEU/Composite/Composite_Bowman_Arabia.gr2</File>
+    <File md5="F60D427F1D9F4B94F07DE18C3A673447" import="1">Arabia_NEU/Composite/Composite_Bowman_Arabia_gloss.dds</File>
+    <File md5="CA47D9F553A7EE461E65D7DE3E757FCC" import="1">Arabia_NEU/Crossbow/Longbowman_Arabia.dds</File>
+    <File md5="A9788AA2EEDF80E52079D906236902CA" import="1">Arabia_NEU/Crossbow/Longbowman_Arabia.fxsxml</File>
+    <File md5="03712EFEFDCB7A9629F0A84150B1AD00" import="1">Arabia_NEU/Crossbow/Longbowman_Arabia.gr2</File>
+    <File md5="B509B3D7B53D460AE02B5EE33F00145A" import="1">Arabia_NEU/Crossbow/Longbowman_Arabia_gloss.dds</File>
+    <File md5="73817A2FB1BEC64E250F0F3138AA545A" import="1">Arabia_NEU/Knight/Knight_Arabia.dds</File>
+    <File md5="1F96A8D83311D7AF1111C65F250BF39D" import="1">Arabia_NEU/Knight/Knight_Arabia.fxsxml</File>
+    <File md5="AD38D0A482DE7D997EDD8F2ADA8AB475" import="1">Arabia_NEU/Knight/Knight_Arabia.gr2</File>
+    <File md5="F0E5ECAEF3407CC0D72EF3B6B4DE47E1" import="1">Arabia_NEU/Knight/Knight_Arabia_gloss.dds</File>
+    <File md5="8418C8A567E2944E8E4CFAEA33AE43CC" import="1">Arabia_NEU/Knight/Knight_Arabia_Horse.dds</File>
+    <File md5="9832532DAFA67E8A068DBF018522E7D2" import="1">Arabia_NEU/Knight/Knight_Arabia_Horse_gloss.dds</File>
+    <File md5="A47D1508BF454859ADAB5C9BBF87EF7D" import="1">Arabia_NEU/Longsword/Longswordsman_Arabia.dds</File>
+    <File md5="3865F24A83B587C4977F1C8E1AAB9283" import="1">Arabia_NEU/Longsword/Longswordsman_Arabia.fxsxml</File>
+    <File md5="AF1944E300FB758279F99EAE30D07383" import="1">Arabia_NEU/Longsword/Longswordsman_Arabia.gr2</File>
+    <File md5="A0B948605AF2B817B30C061D5530E799" import="1">Arabia_NEU/Longsword/Longswordsman_Arabia_gloss.dds</File>
+    <File md5="D1EDE83BA31C9674CA58BB1AC8F7E7B1" import="0">Arabia_NEU/NEUs_Arabia.sql</File>
+    <File md5="4A249722DEAA71CAF38317173A2197CA" import="0">Arabia_NEU/NEUs_Arabia_en_US.xml</File>
+    <File md5="6B057A1537D48E7FE27AAEB2678AE905" import="1">Arabia_NEU/Rifleman/ararm1.dds</File>
+    <File md5="224F0A6B9338A1343446A49E7370D0C6" import="1">Arabia_NEU/Rifleman/ararm1.fxsxml</File>
+    <File md5="084D8C3F0FD095D3C16CDEDA54A6E7A5" import="1">Arabia_NEU/Rifleman/ararm1.gr2</File>
+    <File md5="F5FC75850857B9EF802154EAD6D9087B" import="1">Arabia_NEU/Rifleman/ararm1_sref.dds</File>
+    <File md5="4C10B2CD8E7A407B3813DAE718DE02F5" import="1">Arabia_NEU/Spearman/Spearman_Arabia.dds</File>
+    <File md5="5633A7730D2B1A075D275FD9390049B9" import="1">Arabia_NEU/Spearman/Spearman_Arabia.fxsxml</File>
+    <File md5="3CF654ED51D081CD53CEA3E31402CCF5" import="1">Arabia_NEU/Spearman/Spearman_Arabia.gr2</File>
+    <File md5="BD5088741D8A9C45BF724EA5FD008324" import="1">Arabia_NEU/Spearman/Spearman_Arabia_gloss.dds</File>
+    <File md5="278635ED7CB69BA94E45A4102D065F09" import="1">Morocco_NEU/Crossbow/BerberAndalusianCrossbowmanFunnyHat_128.dds</File>
+    <File md5="CBAB7CC4D51BDD39E98E809BA7D86DD8" import="1">Morocco_NEU/Musketman/u_dervish_maara_weyn.fxsxml</File>
+    <File md5="00FA63B8A62802B0BE1B8A3F9B0803C7" import="1">Morocco_NEU/Musketman/u_dervish_maara_weyn.gr2</File>
+    <File md5="06789EFD688E1C6F3A13BBED09BCE138" import="1">Morocco_NEU/Musketman/u_dervish_maara_weyn_diff.dds</File>
+    <File md5="26095BEC4CF8FAAC5932CB1541A26CAC" import="1">Morocco_NEU/Musketman/u_dervish_maara_weyn_sref.dds</File>
+    <File md5="B2CA883A8F5F8B72A87860771D9B4D2C" import="0">Assyria_NEU/NEUs_Assyria.sql</File>
+    <File md5="F29819AEDB4CF0E7AB5884675AC5D00A" import="0">Assyria_NEU/NEUs_Assyria_en_US.xml</File>
+    <File md5="32F4FE0E091B1FE56C98785D4C24E332" import="1">Austria_NEU/GWI/ausgw1.dds</File>
+    <File md5="09494335C27B585180136F7F5AA91CE9" import="1">Austria_NEU/GWI/ausgw1.fxsxml</File>
+    <File md5="033BFACE31C66BE49DE1F84AF9FED36F" import="1">Austria_NEU/GWI/ausgw1.gr2</File>
+    <File md5="1E9D50238AD1136D3F8EDBA8DE26CC2C" import="1">Austria_NEU/Longsword/austria_longsw2.dds</File>
+    <File md5="3FABCE13616EE954B4272F12B996A85E" import="1">Austria_NEU/Longsword/austria_longsw2.fxsxml</File>
+    <File md5="1C3DB48B1C1FE3D8C6FE056C905330C6" import="1">Austria_NEU/Longsword/austria_longsw2.gr2</File>
+    <File md5="007F77FE6E7B56737058099D8A06D03D" import="0">Austria_NEU/NEUs_Austria.sql</File>
+    <File md5="71A9E7B8035A5070D0A53D0151880185" import="0">Austria_NEU/NEUs_Austria_en_US.xml</File>
+    <File md5="ABB391D106156D80632050196612DBA8" import="1">Austria_NEU/Paratrooper/Paratrooper_German_MG_v2.fxsxml</File>
+    <File md5="49B4B1493634199DE2CABF58BFFB13D5" import="1">Austria_NEU/Paratrooper/Paratrooper_German_MG_v2.gr2</File>
+    <File md5="30D27CAF4A6801488246231BF6D13AA8" import="1">Austria_NEU/Paratrooper/Paratrooper_German_v2.dds</File>
+    <File md5="6E7D4250995FA2E57FB2736E729FFBFB" import="1">Austria_NEU/Paratrooper/Paratrooper_German_v2.fxsxml</File>
+    <File md5="1B3D06B8BED86C35D7D303EBC1005A4F" import="1">Austria_NEU/Paratrooper/Paratrooper_German_v2.gr2</File>
+    <File md5="E254BFC524E04CE223252B882B938D28" import="1">Austria_NEU/Tank/Panzer_IV_Ausf_G.dds</File>
+    <File md5="EC67A2485DCA0884A4BEDBD62A941212" import="1">Austria_NEU/Tank/Panzer_IV_Ausf_G.fxsxml</File>
+    <File md5="8C895CF8A8B9829D6B902C28926696DB" import="1">Austria_NEU/Tank/Panzer_IV_Ausf_G.gr2</File>
+    <File md5="1396CFABD5ED14E7355916BDE47CA41B" import="1">Austria_NEU/Warrior/AustriaWarrior.dds</File>
+    <File md5="1F6764FE4924B84823EE1BB873795678" import="1">Austria_NEU/Warrior/AustriaWarrior.fxsxml</File>
+    <File md5="011CE3B5F9B71E189A9C5A153B0A398E" import="1">Austria_NEU/Warrior/AustriaWarrior.gr2</File>
+    <File md5="7F7A8849400E1C6D2606ADB7B4D0E7DC" import="1">Austria_NEU/Warrior/AustriaWarrior_sref.dds</File>
+    <File md5="73B603546EA11E5C97778FFCA42B53E5" import="1">Aztec_NEU/Archer/Archer_Aztec.dds</File>
+    <File md5="6E39D7C7E272556D3DD9F5136844CFDD" import="1">Aztec_NEU/Archer/Archer_Aztec.fxsxml</File>
+    <File md5="0BF7B552009B557ECD0B176FA2156998" import="1">Aztec_NEU/Archer/Archer_Aztec.gr2</File>
+    <File md5="D6E3D1F49BF21F46F84B52B63D4BDD4E" import="1">Aztec_NEU/Archer/Archer_Aztec_gloss.dds</File>
+    <File md5="B3D4166602BA306EFF7F8D34C6A5E5E3" import="1">Aztec_NEU/Crossbowman/Composite_Bowman_Aztec.dds</File>
+    <File md5="D4765212227A60B09500D6BC89237A1D" import="1">Aztec_NEU/Crossbowman/Composite_Bowman_Aztec.fxsxml</File>
+    <File md5="12BDFAB43167EB637F624A8FE6560736" import="1">Aztec_NEU/Crossbowman/Composite_Bowman_Aztec.gr2</File>
+    <File md5="757BBBD344A3B68EEB59477E8CD6F0B8" import="1">Aztec_NEU/Crossbowman/Composite_Bowman_Aztec_gloss.dds</File>
+    <File md5="CA90F833FE300B027E8313D672C63524" import="1">Aztec_NEU/Longsword/Longswordsman_Aztec.dds</File>
+    <File md5="6041700070A25F5E4756EE00D067C2A0" import="1">Aztec_NEU/Longsword/Longswordsman_Aztec.fxsxml</File>
+    <File md5="B8FCD1F3F94A8029DE1C1C77C28692A5" import="1">Aztec_NEU/Longsword/Longswordsman_Aztec.gr2</File>
+    <File md5="DFA13C3B95333452C02A208C61261006" import="1">Aztec_NEU/Longsword/Longswordsman_Aztec_gloss.dds</File>
+    <File md5="E381FE104E37335E5A0BF85537FE10AA" import="0">Aztec_NEU/NEUs_Aztec.sql</File>
+    <File md5="729A3A9A55CCD6C9156DB76F17D2658D" import="0">Aztec_NEU/NEUs_Aztec_en_US.xml</File>
+    <File md5="ED17D4C8C83343B3A28A5AB98C5238A1" import="1">Aztec_NEU/Spearman/Spearman_Aztec.dds</File>
+    <File md5="C9DA1D1BB09CF1CD61A73AFD01C0DD37" import="1">Aztec_NEU/Spearman/Spearman_Aztec.fxsxml</File>
+    <File md5="F4828A3D7816348168B350F53F3B62AB" import="1">Aztec_NEU/Spearman/Spearman_Aztec.gr2</File>
+    <File md5="195F4CF10C588F97E26C6D2426ED7DD8" import="1">Aztec_NEU/Spearman/Spearman_Aztec_gloss.dds</File>
+    <File md5="3EE647487CF8A0B2A76ACA7AE07E1958" import="1">Aztec_NEU/Pikeman/Pikeman_Aztec.dds</File>
+    <File md5="7856500391862A8372F79B871C6790F1" import="1">Aztec_NEU/Pikeman/Pikeman_Aztec.fxsxml</File>
+    <File md5="22C12B0DA33CB1566F9AD8ECE5041E68" import="1">Aztec_NEU/Pikeman/Pikeman_Aztec.gr2</File>
+    <File md5="264DB95B51EE95A4E2D6DEECCCF3FC4E" import="1">Aztec_NEU/Pikeman/Pikeman_Aztec_gloss.dds</File>
+    <File md5="5EBF7E5C394D11B480D4AF2B8AD9341B" import="1">Aztec_NEU/Swordsman/Swordsman_Aztec.dds</File>
+    <File md5="7E5B7441F95AF5784DD6548ADE3C54D5" import="1">Aztec_NEU/Swordsman/Swordsman_Aztec.fxsxml</File>
+    <File md5="6851667D21FD00899053AC6B0E8A9E98" import="1">Aztec_NEU/Swordsman/Swordsman_Aztec.gr2</File>
+    <File md5="718EE2FCD36A0728A9882C7126F6624C" import="1">Aztec_NEU/Swordsman/Swordsman_Aztec_gloss.dds</File>
+    <File md5="5BFDB86918194046C4AE33D8C28E3107" import="1">Babylon_NEU/Archer/Archer_Babylon.dds</File>
+    <File md5="5CB51532F07640135C6113F350345ED8" import="1">Babylon_NEU/Archer/Archer_Babylon.fxsxml</File>
+    <File md5="D9C5C0CA3D58FA93EBA7FA718CDDB819" import="1">Babylon_NEU/Archer/Archer_Babylon.gr2</File>
+    <File md5="3579CAA4785218C91CED4EC9BECED2EC" import="1">Babylon_NEU/Archer/Archer_Babylon_gloss.dds</File>
+    <File md5="C7FB3AD00EF8CE659FEEA76F1E86C5F2" import="1">Babylon_NEU/Crossbowman/Longbowman_Babylon.dds</File>
+    <File md5="0AAD5E256163E8BFC30C869C12AABA93" import="1">Babylon_NEU/Crossbowman/Longbowman_Babylon.fxsxml</File>
+    <File md5="42F52995160CF8FCE8CA2E2844CDB02D" import="1">Babylon_NEU/Crossbowman/Longbowman_Babylon.gr2</File>
+    <File md5="576791C345CDFB2C283F2E1155C96C73" import="1">Babylon_NEU/Crossbowman/Longbowman_Babylon_gloss.dds</File>
+    <File md5="19568A58733ADB4BA20B104A65A777AE" import="1">Babylon_NEU/Knight/Knight_Babylon.dds</File>
+    <File md5="180959F4925D3DE0510853EF7551ED32" import="1">Babylon_NEU/Knight/Knight_Babylon.fxsxml</File>
+    <File md5="38266697BFC26BDB91F4213650F7EF21" import="1">Babylon_NEU/Knight/Knight_Babylon.gr2</File>
+    <File md5="3EA7E7C37E8BA912D9B65725E46D1CCB" import="1">Babylon_NEU/Knight/Knight_Babylon_gloss.dds</File>
+    <File md5="795D90D836D4DE37447A97C274BEE108" import="1">Babylon_NEU/Knight/Knight_Babylon_Horse.dds</File>
+    <File md5="6B1DC8742B9E9A2302398B08D7A00E83" import="1">Babylon_NEU/Knight/Knight_Babylon_Horse_gloss.dds</File>
+    <File md5="0253BF5BED6350ED36567CBEBE3F952B" import="0">Babylon_NEU/NEUs_Babylon.sql</File>
+    <File md5="CA3246E2FC8280AF1EE81087CFCBA9E6" import="0">Babylon_NEU/NEUs_Babylon_en_US.xml</File>
+    <File md5="D005EF8D9DF44FD3008CA20026C7A037" import="1">Babylon_NEU/Pikeman/Pikeman_Babylon.dds</File>
+    <File md5="5385607B69A48BC7DFD85B0543F4691A" import="1">Babylon_NEU/Pikeman/Pikeman_Babylon.fxsxml</File>
+    <File md5="220F9E5652A1933908D246D70CBE6AB3" import="1">Babylon_NEU/Pikeman/Pikeman_Babylon.gr2</File>
+    <File md5="806FE862E433F5985FE662F04F49AF18" import="1">Babylon_NEU/Pikeman/Pikeman_Babylon_gloss.dds</File>
+    <File md5="CA5ED651AFA669A836BD40D2C0E4D287" import="1">Babylon_NEU/Swordsman/Swordsman_Babylon.dds</File>
+    <File md5="5BB18FFC0E2151E1D2BBAB8B5E9CCBC3" import="1">Babylon_NEU/Swordsman/Swordsman_Babylon.fxsxml</File>
+    <File md5="B2CBAE840DEAB933F69BBDFE4AB999D1" import="1">Babylon_NEU/Swordsman/Swordsman_Babylon.gr2</File>
+    <File md5="40DE877EB75F38E5098A44E9D84F55B8" import="1">Babylon_NEU/Swordsman/Swordsman_Babylon_gloss.dds</File>
+    <File md5="7B6F1053E63B2BDE42A9C045189036DF" import="1">Babylon_NEU/Warrior/Mesopotamic_warrior_tc.dds</File>
+    <File md5="F2D9906503CC72FDE6720B2F37573E1E" import="1">Babylon_NEU/Warrior/Mesopotamic_warrior_tc.fxsxml</File>
+    <File md5="E9A785CEAF4DAA19049707025E78B9D2" import="1">Babylon_NEU/Warrior/Mesopotamic_warrior_tc.gr2</File>
+    <File md5="B1FAB9650AFBA81F14DDA20D30513E4A" import="1">Brazil_NEU/Artillery/77cmFk.fxsxml</File>
+    <File md5="FC08265D20697EE5E5097DCEC81B5171" import="1">Brazil_NEU/Artillery/77cmFk.gr2</File>
+    <File md5="9BCB5617B7D9C9ACC4F63DFD81082AB2" import="1">Brazil_NEU/Artillery/77cmFkCrew_diff.dds</File>
+    <File md5="028282A0118999C2AABE75A935CCF3E0" import="1">Brazil_NEU/Artillery/77cmFkCrew_sref.dds</File>
+    <File md5="E0D9B66129512BB880B66CB8DE92E531" import="1">Brazil_NEU/Artillery/77mm_diff.dds</File>
+    <File md5="F5AADA356D905888AC941A3BCC690DEA" import="1">Brazil_NEU/Artillery/77mm_sref.dds</File>
+    <File md5="8A8E6696D2760530B8D93D764F8CEE18" import="1">Brazil_NEU/Fighter/P40Brazil.dds</File>
+    <File md5="B2F542C5F1F6E4BB0CD6F4BA8A33F3EA" import="1">Brazil_NEU/Fighter/P40Brazil.fxsxml</File>
+    <File md5="5C01B9F374CF499BA52055AA3EF5D7C8" import="1">Brazil_NEU/Fighter/P40Brazil.gr2</File>
+    <File md5="113FC3ABFA1F88B4DF8053B68F99EC09" import="0">Brazil_NEU/NEUs_Brazil.sql</File>
+    <File md5="CF1D3CA2ABE23E248F58F904D0F86BBA" import="0">Brazil_NEU/NEUs_Brazil_en_US.xml</File>
+    <File md5="F2184F2BBD78946C8825D705C4A9705C" import="1">Brazil_NEU/Rifleman/Brazilian_Rifleman.dds</File>
+    <File md5="1A27955D12EF4F920B49787BB70546C9" import="1">Brazil_NEU/Rifleman/Brazilian_Rifleman.fxsxml</File>
+    <File md5="FEF308778DE84BD3B93294369B691357" import="1">Brazil_NEU/Rifleman/Brazilian_Rifleman.gr2</File>
+    <File md5="60A079450965A6A8A4DF99F110BED771" import="1">Brazil_NEU/Warship/Canhoneira.fxsxml</File>
+    <File md5="5798A6D39EEA2BB6D3DC449EAED02DEE" import="1">Brazil_NEU/Warship/Canhoneira.gr2</File>
+    <File md5="15406772C6B94B6BDB6880406C78FD1E" import="1">Brazil_NEU/Warship/Canhoneira_diff.dds</File>
+    <File md5="F194EF0E05696E922BCF54C3D47F1C94" import="1">Brazil_NEU/Warship/Canhoneira_dmg_diff.dds</File>
+    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Brazil_NEU/Warship/Canhoneira_sref.dds</File>
+    <File md5="097B997AA70C8D1FC6CB7061B9150FFB" import="1">Brazil_NEU/Landship/RenaultFTBrazil.dds</File>
+    <File md5="91B1A22C1AB91DE66814DC5C04AED6CF" import="1">Brazil_NEU/Landship/RenaultFTBrazil.fxsxml</File>
+    <File md5="4494ADA929F9939B3840AF3DD90DD462" import="1">Brazil_NEU/Landship/RenaultFTBrazil.gr2</File>
+    <File md5="CCA143C9104941378CDB2514B0D00E36" import="1">Brazil_NEU/Musketman/BrazilPretosForros.dds</File>
+    <File md5="A1BF63142B9E88BE2FA721D5B5BF709F" import="1">Brazil_NEU/Musketman/BrazilPretosForros.fxsxml</File>
+    <File md5="4A9C60893E19A824144AA85670431650" import="1">Brazil_NEU/Musketman/BrazilPretosForros.gr2</File>
+    <File md5="241557D4BCDF295D53ABE531AF591000" import="1">Brazil_NEU/Musketman/BrazilPretosForros_sref.dds</File>
+    <File md5="12DA21BDF05DB1433A7CFCAC1804A3DF" import="1">Byzantium_NEU/Longsword/byzantium_longsw1.dds</File>
+    <File md5="25E8460ABF54D4A26DE20601A5E9BD03" import="1">Byzantium_NEU/Longsword/byzantium_longsw1.fxsxml</File>
+    <File md5="A649CCB7F7AD843C32F055EEA3A7A2F1" import="1">Byzantium_NEU/Longsword/byzantium_longsw1.gr2</File>
+    <File md5="A5E3E393FE3318012C5DCDAB49533B07" import="0">Byzantium_NEU/NEUs_Byzantium.sql</File>
+    <File md5="6A75A02D4386B4B81F90BB47BA375C2B" import="0">Byzantium_NEU/NEUs_Byzantium_en_US.xml</File>
+    <File md5="6FF6378E8829E43FFC2943054CA4C776" import="1">Byzantium_NEU/Warrior/ThraikanPezoi.dds</File>
+    <File md5="A0B8BE258010B306170895F4E0E19A3B" import="1">Byzantium_NEU/Warrior/ThraikanPezoi.fxsxml</File>
+    <File md5="38A8E30BD8E95648E4E649CCC4549576" import="1">Byzantium_NEU/Warrior/ThraikanPezoi.gr2</File>
+    <File md5="9379B7581475E20696098B8BF57343D9" import="1">Byzantium_NEU/Warrior/ThraikanPezoi_sref.dds</File>
+    <File md5="127FCD136DFD495D107003998D894D7C" import="1">Carthage_NEU/Knight/Carthage_Med_Horse.dds</File>
+    <File md5="2228A850D111C2F78107968C45D83D05" import="1">Carthage_NEU/Knight/Carthage_Med_Horseman.dds</File>
+    <File md5="53926644B780E022454414FCC6E21E3C" import="1">Carthage_NEU/Knight/Carthage_Med_Horseman.fxsxml</File>
+    <File md5="110F41AFF0EC81B13BA9E6784C06B55E" import="1">Carthage_NEU/Knight/Carthage_Med_Horseman.gr2</File>
+    <File md5="10D5B4FA5B7AF027499DC5B5AC04C8E8" import="0">Carthage_NEU/NEUs_Carthage.sql</File>
+    <File md5="860201423BCF2639B7E1BDB39CD20D69" import="0">Carthage_NEU/NEUs_Carthage_en_US.xml</File>
+    <File md5="50EEF1EA2E53396EE79ED1CC2D9AD083" import="1">Carthage_NEU/Pikeman/SacredBand.dds</File>
+    <File md5="2C2353B18AD04432C6432E4F9B83E18F" import="1">Carthage_NEU/Pikeman/SacredBand.fxsxml</File>
+    <File md5="A9583AB72DDDEBCBFC6F55066E480535" import="1">Carthage_NEU/Pikeman/SacredBand.gr2</File>
+    <File md5="3B41CB2164745CFA55C58100CD4C2C9F" import="1">Carthage_NEU/Pikeman/SacredBand_sref.dds</File>
+    <File md5="E9ED36363B1EB6893077B4FC01B62F57" import="1">Carthage_NEU/Scout/CarthageScout.dds</File>
+    <File md5="D474E4FC57A291F6F6DAB0E05CAFF22B" import="1">Carthage_NEU/Scout/CarthageScout.fxsxml</File>
+    <File md5="0F47A036436FC67A1B437B8FDE81AB8C" import="1">Carthage_NEU/Scout/CarthageScout.gr2</File>
+    <File md5="A5D571F0D5FEF8A4D67F137CB8479A04" import="1">Carthage_NEU/Scout/CarthageScout_sref.dds</File>
+    <File md5="9D902DB263C6EFEB41CCDDE256960FA2" import="1">Carthage_NEU/Spearman/CarthageSpearman.dds</File>
+    <File md5="488A65FA263EF18D6DE0B4C7F17906AD" import="1">Carthage_NEU/Spearman/CarthageSpearman.fxsxml</File>
+    <File md5="FB053BC0C448287F3A43AE1FFF0DDD96" import="1">Carthage_NEU/Spearman/CarthageSpearman.gr2</File>
+    <File md5="5363B15864B4BB06D3658630ABA18040" import="1">Carthage_NEU/Spearman/CarthageSpearman_sref.dds</File>
+    <File md5="928A061436A192955FA466668B1961F1" import="1">Carthage_NEU/Swordsman/CarthageSwordsman.dds</File>
+    <File md5="B81027E030C9A7498F50F6F093D1EE9F" import="1">Carthage_NEU/Swordsman/CarthageSwordsman.fxsxml</File>
+    <File md5="BC924471E09766F2607C3CDC47EB0226" import="1">Carthage_NEU/Swordsman/CarthageSwordsman.gr2</File>
+    <File md5="8B5EC378992354CC486AE627CAE57CDC" import="1">Carthage_NEU/Swordsman/CarthageSwordsman_sref.dds</File>
+    <File md5="552D747ADB08C8540D578F01142A46AC" import="1">Carthage_NEU/Warrior/CarthageWarrior.dds</File>
+    <File md5="6172BBAB64F08C6E0B5ADED302504F31" import="1">Carthage_NEU/Warrior/CarthageWarrior.fxsxml</File>
+    <File md5="74100D0A0329962A174734E5567A157C" import="1">Carthage_NEU/Warrior/CarthageWarrior.gr2</File>
+    <File md5="28CE5C8258DC240081597BB4AC5515FC" import="1">Carthage_NEU/Warrior/CarthageWarrior_sref.dds</File>
+    <File md5="CFC9567D70117733ACFFF1A5E866F383" import="1">Celts_NEU/Longsword/wales_longsw1.dds</File>
+    <File md5="1E178FAD2136DBE577213BF44E4CB884" import="1">Celts_NEU/Longsword/wales_longsw1.fxsxml</File>
+    <File md5="A74C5B26154CC33A835836EA11F2087B" import="1">Celts_NEU/Longsword/wales_longsw1.gr2</File>
+    <File md5="1DABA2A61CB93DCA3B92DD803FE79626" import="0">Celts_NEU/NEUs_Celts.sql</File>
+    <File md5="5F626BB792E90736DAEC68AD1C706652" import="0">Celts_NEU/NEUs_Celts_en_US.xml</File>
+    <File md5="7E2B12DDB1122C97CA3EC544F298F1E8" import="1">Celts_NEU/Rifleman/celrm1.dds</File>
+    <File md5="800F1CC08E530A32DFD1F1B26943561F" import="1">Celts_NEU/Rifleman/celrm1.fxsxml</File>
+    <File md5="E62C9E36790354191ED4DF06F3C81E8E" import="1">Celts_NEU/Rifleman/celrm1.gr2</File>
+    <File md5="7E9567401C9B8F7DFCB8CD074561BBC8" import="1">Celts_NEU/Rifleman/celrm1_sref.dds</File>
+    <File md5="CDBCDA08B80134978D3A4366BD89D1E2" import="1">Celts_NEU/Scout/EuroScout.fxsxml</File>
+    <File md5="850DCD833781B9C6E2484E73D97E7E0C" import="1">Celts_NEU/Scout/EuroScout.gr2</File>
+    <File md5="64420E2CA0D0E9FF01D035486D3D64B9" import="1">Celts_NEU/Scout/EuroScout_diff.dds</File>
+    <File md5="6FD2A6878AB221927B034FC8428BF2AE" import="1">Celts_NEU/Swordsman/GaulMerc.dds</File>
+    <File md5="8C50238ADA6434F7F78417731671386C" import="1">Celts_NEU/Swordsman/GaulMerc.fxsxml</File>
+    <File md5="D3FE56BAB975EA712AF498500A76AF7F" import="1">Celts_NEU/Swordsman/GaulMerc.gr2</File>
+    <File md5="84FDE521301A1399777F3063352675AE" import="1">Celts_NEU/Swordsman/GaulMerc_sref.dds</File>
+    <File md5="077437E76A886DD48B41FB4D42264A3B" import="1">Celts_NEU/Warrior/CelticWarrior.dds</File>
+    <File md5="5FCC9355A529DC788E60C6DD766BE5BF" import="1">Celts_NEU/Warrior/CelticWarrior.fxsxml</File>
+    <File md5="24AE692AEDBE6C063BB921EAF2EF08F1" import="1">Celts_NEU/Warrior/CelticWarrior.gr2</File>
+    <File md5="64A43757859EBD1C1C7BAA08270DBFF8" import="1">Celts_NEU/Warrior/Celtic_Warrior_sref.dds</File>
+    <File md5="13DDCB6F754AB8EC0477DCBFAE184CE7" import="1">China_NEU/Archer/Archer_China.dds</File>
+    <File md5="4692A12338BE58D8C4274ABF4EC703DA" import="1">China_NEU/Archer/Archer_China.fxsxml</File>
+    <File md5="4F9AA34B5A4DF56EFD1B4C50F074344B" import="1">China_NEU/Archer/Archer_China.gr2</File>
+    <File md5="173E74084501374898D550F60929FCCE" import="1">China_NEU/Archer/Archer_China_gloss.dds</File>
+    <File md5="7BADD3EA1788B82FD8C36F2A86C02E60" import="1">China_NEU/GWI/japgw1.dds</File>
+    <File md5="505EEBE5974202F642200C40322D040B" import="1">China_NEU/GWI/japgw1.fxsxml</File>
+    <File md5="E1475BD75405C36BC818E4C926DEB50D" import="1">China_NEU/GWI/japgw1.gr2</File>
+    <File md5="7075F2C7AFAE47CF65E985C3DF1E65E0" import="1">China_NEU/Ironclad/Connecticut_BB.fxsxml</File>
+    <File md5="9A90EEACD2FEFBB91E8A0FEBDA0CAAB3" import="1">China_NEU/Ironclad/Connecticut_BB.gr2</File>
+    <File md5="C0BE0913FD4177388CB99F4E013DEA66" import="1">China_NEU/Ironclad/Connecticut_BB_diff.dds</File>
+    <File md5="DAB50BC45482A54B0BE9E3F168AAC42E" import="1">China_NEU/Ironclad/Connecticut_BB_sref.dds</File>
+    <File md5="DCEAD473E26D32B903E73771AE1F8D56" import="1">China_NEU/Knight/Knight_China.dds</File>
+    <File md5="8F1623F7700F96F5F1F63445F860E3B8" import="1">China_NEU/Knight/Knight_China.fxsxml</File>
+    <File md5="76093248416349CC632C122F69D1AAC2" import="1">China_NEU/Knight/Knight_China.gr2</File>
+    <File md5="0FF92525112631CDA5AAB671E6761B02" import="1">China_NEU/Knight/Knight_China_gloss.dds</File>
+    <File md5="754881107C02349672A75A6BC2A21A70" import="1">China_NEU/Knight/Knight_China_Horse.dds</File>
+    <File md5="37E4F7526EDD9ED60400FB6BF5CF47C6" import="1">China_NEU/Knight/Knight_China_Horse_gloss.dds</File>
+    <File md5="152C88D72FC325AA31208211D920817C" import="1">China_NEU/Longsword/Longswordsman_China_v3.dds</File>
+    <File md5="BE0C276C4F2BA1682D13367DFD7EF272" import="1">China_NEU/Longsword/Longswordsman_China_v3.fxsxml</File>
+    <File md5="0B31FA5333C6C0599F7771F9D36D7CA0" import="1">China_NEU/Longsword/Longswordsman_China_v3.gr2</File>
+    <File md5="1E318DA13BA7886A2AB2DE5E6F894CDD" import="1">China_NEU/Longsword/Longswordsman_China_v3_gloss.dds</File>
+    <File md5="69CA44E0E0D28863E7596CEB36C52042" import="1">China_NEU/MechInfantry/BMP2GreenTeam.dds</File>
+    <File md5="56798E4FAD5F90C6623F9740BD53EEB0" import="1">China_NEU/MechInfantry/BMP2GreenTeam.fxsxml</File>
+    <File md5="8B69B2ECFDE333500E89CDB2257EA683" import="1">China_NEU/MechInfantry/BMP2GreenTeam.gr2</File>
+    <File md5="A165D8881DA7332662E535E51EECDBCF" import="0">China_NEU/NEUs_China.sql</File>
+    <File md5="B371AD43FBC7C81E9AD21D805F2BA180" import="0">China_NEU/NEUs_China_en_US.xml</File>
+    <File md5="9299277A199539FF78437226F7197DD0" import="1">China_NEU/Paratrooper/Paratrooper_China.dds</File>
+    <File md5="2502E67CA6588CEF7912C8228E3B10B3" import="1">China_NEU/Paratrooper/Paratrooper_China_MG.fxsxml</File>
+    <File md5="D7B84178D97CD77A91863CF9FA3C74A7" import="1">China_NEU/Paratrooper/Paratrooper_China_MG.gr2</File>
+    <File md5="08C5BFAB6FDD13ADDB4217A82E9C378A" import="1">China_NEU/Pikeman/Halberdier_China.dds</File>
+    <File md5="6443060FF8A69F3B276FC0F526BFDAED" import="1">China_NEU/Pikeman/Halberdier_China.fxsxml</File>
+    <File md5="F5471CA2021230DD2E82FA8BC35BA090" import="1">China_NEU/Pikeman/Halberdier_China.gr2</File>
+    <File md5="D59978C5256F2F565FB8E2A279F96D41" import="1">China_NEU/Pikeman/Halberdier_China_gloss.dds</File>
+    <File md5="3AB959562944F82C07A36A2C38BD4A50" import="1">China_NEU/Rifleman/chirm2.dds</File>
+    <File md5="60843AD11B4C78C2A222B362E8F369BF" import="1">China_NEU/Rifleman/chirm2_sref.dds</File>
+    <File md5="A4CBC9A27CFF4B8B257ECD9EF33C42BC" import="1">China_NEU/Rifleman/civ5_chirm2.fxsxml</File>
+    <File md5="909881C507063919E491E3B3D9D55354" import="1">China_NEU/Rifleman/civ5_chirm2.gr2</File>
+    <File md5="0FE64EFC7974F3F642E19DEEF3292A5E" import="1">China_NEU/Spearman/Spearman_China_v2.dds</File>
+    <File md5="2BA0C200E5D1C6D28F2E5C68D741C028" import="1">China_NEU/Spearman/Spearman_China_v2.fxsxml</File>
+    <File md5="D29CB667751A2E9254ED2280585CAEA3" import="1">China_NEU/Spearman/Spearman_China_v2.gr2</File>
+    <File md5="F383C339EF00230B193C61534DB41877" import="1">China_NEU/Spearman/Spearman_China_v2_gloss.dds</File>
+    <File md5="F928F67477ACBA95B95ADF4C267978BF" import="1">China_NEU/Swordsman/Swordsman_China_v2.dds</File>
+    <File md5="B240894811ECAF7729A05E79410DC8C6" import="1">China_NEU/Swordsman/Swordsman_China_v2.fxsxml</File>
+    <File md5="3645DDC99A9E885922914CD7882B94C9" import="1">China_NEU/Swordsman/Swordsman_China_v2.gr2</File>
+    <File md5="8D42665FD4D226D269845E499D304B0B" import="1">China_NEU/Swordsman/Swordsman_China_v2_gloss.dds</File>
+    <File md5="9F8168998CEC469FA396900F595AE579" import="1">Denmark_NEU/Archer/Archer_Viking.dds</File>
+    <File md5="CB1490D271C9E1C2DA540A177CED5A4A" import="1">Denmark_NEU/Archer/Archer_Viking.fxsxml</File>
+    <File md5="62A39369D9190D1F8AFAB11B45CE3211" import="1">Denmark_NEU/Archer/Archer_Viking.gr2</File>
+    <File md5="F60D427F1D9F4B94F07DE18C3A673447" import="1">Denmark_NEU/Archer/Archer_Viking_gloss.dds</File>
+    <File md5="047B16E8C5A9578A2F8D4445605C3C5E" import="1">Denmark_NEU/Crossbow/Crossbowman_Viking.dds</File>
+    <File md5="45A8CA20FE2138734B58A5B822490C13" import="1">Denmark_NEU/Crossbow/Crossbowman_Viking.fxsxml</File>
+    <File md5="06FAED458F4C1CB42F2114791CCCBD83" import="1">Denmark_NEU/Crossbow/Crossbowman_Viking.gr2</File>
+    <File md5="511200FA5A7A87A27B60F539BA8547E0" import="1">Denmark_NEU/Crossbow/Crossbowman_Viking_gloss.dds</File>
+    <File md5="990A382B29245701E10C7620D56C5BA4" import="0">Denmark_NEU/Horseman/Horseman_Viking.blend</File>
+    <File md5="70D78BAD860A586B1C455F8F491267AD" import="1">Denmark_NEU/Horseman/Horseman_Viking.dds</File>
+    <File md5="0832F1742DFC3D1E2C67A1075BC61B96" import="1">Denmark_NEU/Horseman/Horseman_Viking.fxsxml</File>
+    <File md5="D1CA12C0C2BB0CE0531BF9B3B8DC109A" import="1">Denmark_NEU/Horseman/Horseman_Viking.gr2</File>
+    <File md5="69EDA2BF743D30E2DA5EE8F2897C6102" import="1">Denmark_NEU/Horseman/Horseman_Viking_gloss.dds</File>
+    <File md5="C5FAC6C5674B70B1C0F97061AAB412FD" import="1">Denmark_NEU/Horseman/Horseman_Viking_Horse.dds</File>
+    <File md5="DB27EBF789B8500BBAF199E05A2B522B" import="1">Denmark_NEU/LineInfantry/civ5_danrm1.fxsxml</File>
+    <File md5="76AAFCFE085BAB7DD92F15EDF1F2C611" import="1">Denmark_NEU/LineInfantry/civ5_danrm1.gr2</File>
+    <File md5="DD95C74E821C792ECAE766B6A279486B" import="1">Denmark_NEU/LineInfantry/danrm1.dds</File>
+    <File md5="9EE9113A897B63F0344E2FF3DE2E5379" import="1">Denmark_NEU/LineInfantry/danrm1_sref.dds</File>
+    <File md5="77B52BF0BC227B4B2A7A03C60628DEDC" import="0">Denmark_NEU/NEUs_Denmark.sql</File>
+    <File md5="A83A37A45366D6CB42FEBA1C4B6A758C" import="0">Denmark_NEU/NEUs_Denmark_en_US.xml</File>
+    <File md5="197E838F4AEA8A088B2D7685F4D8C856" import="1">Denmark_NEU/Pikeman/Pikeman_Viking.dds</File>
+    <File md5="511F43A40B4E6FFA742859D8B011F68E" import="1">Denmark_NEU/Pikeman/Pikeman_Viking.fxsxml</File>
+    <File md5="F3F5928E8899066C75CFF60017CCA848" import="1">Denmark_NEU/Pikeman/Pikeman_Viking.gr2</File>
+    <File md5="AB95B09624384EC3F25FAFB04483B6AE" import="1">Denmark_NEU/Pikeman/Pikeman_Viking_gloss.dds</File>
+    <File md5="33B1E1E9783E527C0BB42BB3B5B092F7" import="1">Denmark_NEU/Warrior/DenmarkWarrior.dds</File>
+    <File md5="5BD44980F91E651A1A2AEFCB6FB168DC" import="1">Denmark_NEU/Warrior/DenmarkWarrior.fxsxml</File>
+    <File md5="75EDAFC56FD9FAF7591DEE0EDC7EAEAF" import="1">Denmark_NEU/Warrior/DenmarkWarrior.gr2</File>
+    <File md5="62D271EA6452240BDF8FD6A706A9C0BA" import="1">Denmark_NEU/Warrior/DenmarkWarrior_sref.dds</File>
+    <File md5="AEF34E1637B30B50C7F869A7B3369AAC" import="1">Egypt_NEU/Archer/Archer_Egypt.dds</File>
+    <File md5="0A5B127A8D4F4968D10AF1BA6EB6DFC4" import="1">Egypt_NEU/Archer/Archer_Egypt.fxsxml</File>
+    <File md5="7D4BE7C9C49A3AE961223F34DCF8229D" import="1">Egypt_NEU/Archer/Archer_Egypt.gr2</File>
+    <File md5="EC184EC65815B89F96282FDC2C519CD7" import="1">Egypt_NEU/Archer/Archer_Egypt_gloss.dds</File>
+    <File md5="2ABB5F31F0C9BBCB6EBC2D14B935A92C" import="1">Egypt_NEU/Composite/Composite_Bowman_Egypt.dds</File>
+    <File md5="5EA438CE7722BD091FC35D8B05DFAE54" import="1">Egypt_NEU/Composite/Composite_Bowman_Egypt.fxsxml</File>
+    <File md5="B32C7FF75376D7B5AF99AB6F3962E13C" import="1">Egypt_NEU/Composite/Composite_Bowman_Egypt.gr2</File>
+    <File md5="249E9639FCCB7D39E2CC826C4D074891" import="1">Egypt_NEU/Composite/Composite_Bowman_Egypt_gloss.dds</File>
+    <File md5="58FED6F251E930ADA857341616A75D92" import="1">Egypt_NEU/Longsword/Longswordsman_Egypt.dds</File>
+    <File md5="D1CFBF94BD2E5EFAE2C4F867B00DC374" import="1">Egypt_NEU/Longsword/Longswordsman_Egypt.fxsxml</File>
+    <File md5="DE516780718BBF8291E1BB79D3135ABA" import="1">Egypt_NEU/Longsword/Longswordsman_Egypt.gr2</File>
+    <File md5="8174FF7BD7C7A84E83603D828767FFE2" import="1">Egypt_NEU/Longsword/Longswordsman_Egypt_gloss.dds</File>
+    <File md5="27834C8EAC8325B643382C1383FDA48D" import="0">Egypt_NEU/NEUs_Egypt.sql</File>
+    <File md5="C0491EBB56D348538600567C5918A48F" import="0">Egypt_NEU/NEUs_Egypt_en_US.xml</File>
+    <File md5="E2315E5FADBEF497E4F4573F66500BB5" import="1">Egypt_NEU/Pikeman/Pikeman_Egypt.dds</File>
+    <File md5="AFA469C909DE395B7974D6CF66475C6A" import="1">Egypt_NEU/Pikeman/Pikeman_Egypt.fxsxml</File>
+    <File md5="149006074DA6B1DFF8F318A9F6892677" import="1">Egypt_NEU/Pikeman/Pikeman_Egypt.gr2</File>
+    <File md5="AC28B62FB7B4AFD4254E94963A269B40" import="1">Egypt_NEU/Pikeman/Pikeman_Egypt_gloss.dds</File>
+    <File md5="241A9574D6B1B8EF49721673D4CE5BDC" import="1">Egypt_NEU/Scout/egyption_scout.fxsxml</File>
+    <File md5="D18B093C40C10E4E457DAE5B9F772558" import="1">Egypt_NEU/Scout/egyption_scout.gr2</File>
+    <File md5="AFF1F86A271CCEC4849E718D159B7D68" import="1">Egypt_NEU/Scout/egyption_scout_128.dds</File>
+    <File md5="B051751CA8E0C2308FF6659E6E9C823C" import="1">Egypt_NEU/Spearman/Spearman_Egypt.dds</File>
+    <File md5="7BF4378D0C7BE8EE7B36A873915FEB02" import="1">Egypt_NEU/Spearman/Spearman_Egypt.fxsxml</File>
+    <File md5="67D7030D4D62FE8487B395E58546A5E7" import="1">Egypt_NEU/Spearman/Spearman_Egypt.gr2</File>
+    <File md5="881326E490135BC8139DC9A25334F07C" import="1">Egypt_NEU/Spearman/Spearman_Egypt_gloss.dds</File>
+    <File md5="C677F463C218E6BCF01B8FB874BB8DBC" import="1">Egypt_NEU/Swordsman/civ5_egysm1.gr2</File>
+    <File md5="2FDDB232B0E3C21EDD840C1012F2C2C8" import="1">Egypt_NEU/Swordsman/EgyptSwordsman.fxsxml</File>
+    <File md5="C95D10FCECDDAA1DE00E611CD007C21A" import="1">Egypt_NEU/Swordsman/egysm1.dds</File>
+    <File md5="AB30D7548B954F3C8BDBE164E5640278" import="1">Egypt_NEU/Swordsman/egysm1_sref.dds</File>
+    <File md5="24FD3A489E0331768C87CB698C1D1F9D" import="1">England_NEU/Battleship/King_George_V_Class.dds</File>
+    <File md5="9984EE2C93423566B1D40B5ABDA71DAA" import="1">England_NEU/Battleship/King_George_V_Class.fxsxml</File>
+    <File md5="D2E15983FB3BD8A05A41D8B18C1A57A0" import="1">England_NEU/Battleship/King_George_V_Class.gr2</File>
+    <File md5="425DE434C3D1E71BF8AD4D0D581A67AA" import="1">England_NEU/Battleship/King_George_V_Class_gloss.dds</File>
+    <File md5="90CF2BFB4D0ACB48D49785DF5F9A71C3" import="1">England_NEU/Knight/Knight_England.dds</File>
+    <File md5="93FEEF586E496DF60587AB353263BDF6" import="1">England_NEU/Knight/Knight_England.fxsxml</File>
+    <File md5="425FB31E832BF96A88E870D5AB7D8BA8" import="1">England_NEU/Knight/Knight_England.gr2</File>
+    <File md5="7F95B3AF4AED18568B91D331536791F2" import="1">England_NEU/Knight/Knight_England_gloss.dds</File>
+    <File md5="97871AF9D6CF39D21A67ACB861769B09" import="1">England_NEU/Knight/Knight_England_Horse.dds</File>
+    <File md5="C768537D1286ABAF2EA45557BCDFD700" import="1">England_NEU/Knight/Knight_England_Horse_gloss.dds</File>
+    <File md5="C26356343E4C23A6A195991ADE398F61" import="1">England_NEU/LineInfantry/redcoat.dds</File>
+    <File md5="566F1E5BC946324DD54E2B12CA2F1940" import="1">England_NEU/LineInfantry/redcoat.fxsxml</File>
+    <File md5="012DA73CD6E0B56CD252C8AAC16DE6C5" import="1">England_NEU/LineInfantry/redcoat.gr2</File>
+    <File md5="CF217E101010D4D34A06E80F11C3AF3F" import="1">England_NEU/LineInfantry/redcoat_sref.dds</File>
+    <File md5="53F6F6478215D8E1731D50C3B15D0643" import="0">England_NEU/NEUs_England.sql</File>
+    <File md5="9583E23EBA93B388D15BC4EF519B6493" import="0">England_NEU/NEUs_England_en_US.xml</File>
+    <File md5="DBE36EA26DF1E980876763F9C4EAF75E" import="1">England_NEU/Paratrooper/Paratrooper_UK.dds</File>
+    <File md5="9D3EB4F373DAB7A4EE99D585C7D088A8" import="1">England_NEU/Paratrooper/Paratrooper_UK.fxsxml</File>
+    <File md5="F7216EBB84C8A4ED6DFB1B208787D332" import="1">England_NEU/Paratrooper/Paratrooper_UK.gr2</File>
+    <File md5="2CDB17CD1CF5A355A98905BC56FA3F24" import="1">England_NEU/Rifleman/civ5_engrm1.fxsxml</File>
+    <File md5="47B4F4BA3F2180B816C855E5932D2D41" import="1">England_NEU/Rifleman/civ5_engrm1.gr2</File>
+    <File md5="09A2C00D49DF2FF2CBB8A4481366D86D" import="1">England_NEU/Rifleman/engrm1.dds</File>
+    <File md5="9F00ABEF2CF8282A3DAB8F4D788E40AE" import="1">England_NEU/Rifleman/engrm1_sref.dds</File>
+    <File md5="565DDC11978C969DB9229D2C1A1B50D6" import="1">England_NEU/SpecForces/RM_Cdo_diff.dds</File>
+    <File md5="DA0764D8380400021A633B87C6512075" import="1">England_NEU/SpecForces/RM_Commando.fxsxml</File>
+    <File md5="4C0FB4F4386696FBE8F4008C2A0B82AA" import="1">England_NEU/SpecForces/RM_Commando.gr2</File>
+    <File md5="B402005B770F70B1E996DB876565D234" import="1">England_NEU/WW1Bomber/ShortBomber.dds</File>
+    <File md5="ABC6DE54D63EBAAA2DB71D0D5CAAD687" import="1">England_NEU/WW1Bomber/ShortBomber.fxsxml</File>
+    <File md5="DD0548879042960A8DFB8B06FFD7E23F" import="1">England_NEU/WW1Bomber/ShortBomber.gr2</File>
+    <File md5="B0760D1E7558A09FF4CADBC85599232C" import="1">England_NEU/WW1Bomber/ShortBomberSREF.dds</File>
+    <File md5="6A9D3B99C6AE27DE2B7BF3B6B15B8FDE" import="1">Ethiopia_NEU/Archer/EthiopiaArcher.dds</File>
+    <File md5="B89A8544E72BB7956B1059231490553D" import="1">Ethiopia_NEU/Archer/EthiopiaArcher.fxsxml</File>
+    <File md5="B170409BB5B94A0A3BEAB51E313F216E" import="1">Ethiopia_NEU/Archer/EthiopiaArcher.gr2</File>
+    <File md5="85E6BF76CECCD85092BF868E6AE7C536" import="1">Ethiopia_NEU/Archer/EthiopiaArcher_sref.dds</File>
+    <File md5="039D6EDDF4179EA112E2219A1184177E" import="1">Ethiopia_NEU/Crossbow/EthiopiaCrossbow.dds</File>
+    <File md5="C974EBC70EE951E02458D486BC2C2E7E" import="1">Ethiopia_NEU/Crossbow/EthiopiaCrossbow.fxsxml</File>
+    <File md5="76DA783599C79CF07E6242CD63693D47" import="1">Ethiopia_NEU/Crossbow/EthiopiaCrossbow.gr2</File>
+    <File md5="E21D85B859880DFCD9D32899DD67AC88" import="1">Ethiopia_NEU/Crossbow/EthiopiaCrossbow_sref.dds</File>
+    <File md5="A2F26F5DFD0B4A7088C12DC05E28A131" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorse.dds</File>
+    <File md5="375F1FFC8D1BD22ABD76DA82C3F349CF" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorseman.dds</File>
+    <File md5="5699C4DF4620F7DF2210BCA1CB6D03A9" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorseman.fxsxml</File>
+    <File md5="FF0851567A81B8517D3AB14FFCFF3A6C" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorseman.gr2</File>
+    <File md5="4A68F142ED4D4C74A851E0A8AED791CA" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorseman_sref.dds</File>
+    <File md5="DBD44014B95321D08E4ECBF7B38C4D5C" import="1">Ethiopia_NEU/Horseman/EthiopiaMedHorse_sref.dds</File>
+    <File md5="7A24A317CB494005F902D10EDB6D39F2" import="1">Ethiopia_NEU/ModernArmor/T55Ethiopia.dds</File>
+    <File md5="34E91BCE971304A4F81F174756A4B3CB" import="1">Ethiopia_NEU/ModernArmor/T55Ethiopia.fxsxml</File>
+    <File md5="DBF93E77BEEA6D89ADEFF7415FFABD20" import="1">Ethiopia_NEU/ModernArmor/T55Ethiopia.gr2</File>
+    <File md5="D5DB444E57278EDB2837CE28D0E71885" import="0">Ethiopia_NEU/NEUs_Ethiopia.sql</File>
+    <File md5="C860A8207A97A661198B0F7FCE63E59E" import="0">Ethiopia_NEU/NEUs_Ethiopia_en_US.xml</File>
+    <File md5="E85664E484E7C4D44C436D4100B0E277" import="1">Ethiopia_NEU/Pikeman/EthiopianPikeman.dds</File>
+    <File md5="1C805C09F70B1D30C0D5986E6AC822EE" import="1">Ethiopia_NEU/Pikeman/EthiopianPikeman.fxsxml</File>
+    <File md5="2DFCCB96CEA0A7691A92B06AEEF74127" import="1">Ethiopia_NEU/Pikeman/EthiopianPikeman.gr2</File>
+    <File md5="4C706BA4B455A3789E013F284CFF5E4E" import="1">Ethiopia_NEU/Pikeman/EthiopianPikeman_sref.dds</File>
+    <File md5="0C562A6579874BA5F9CBD4B1CB8F4ADC" import="1">Ethiopia_NEU/Scout/EthiopianScout.dds</File>
+    <File md5="F1DEEF7B14C5DE30BBCF41473B8D2B3C" import="1">Ethiopia_NEU/Scout/EthiopianScout.fxsxml</File>
+    <File md5="CAA65432263E30178069602174390BED" import="1">Ethiopia_NEU/Scout/EthiopianScout.gr2</File>
+    <File md5="03934405836CDB9BC8A9CE89113481A4" import="1">Ethiopia_NEU/Scout/EthiopianScout_sref.dds</File>
+    <File md5="F89F644FE2803E000CA52F1497F5EAA4" import="1">Ethiopia_NEU/Triplane/Spowith_Camel.dds</File>
+    <File md5="964192070BC5D3998302F8E19C4D7F15" import="1">Ethiopia_NEU/Triplane/Spowith_Camel.fxsxml</File>
+    <File md5="655F55297930B6223FAF301F2473102A" import="1">Ethiopia_NEU/Triplane/Spowith_Camel.gr2</File>
+    <File md5="01F8366A0AA8CADB8954F63C7FDF2457" import="1">France_NEU/Cavalry/freca1.dds</File>
+    <File md5="E5BC65E0AD0B363C4A09BE2284C8A236" import="1">France_NEU/Cavalry/freca1.fxsxml</File>
+    <File md5="829FF0C918432A521E60706680FC77D5" import="1">France_NEU/Cavalry/freca1.gr2</File>
+    <File md5="E6B5B595BC32D691694E020BE81F3DD4" import="1">France_NEU/Cavalry/freca1_sref.dds</File>
+    <File md5="02581E4A7D06FC299FFBD3868E0C5709" import="1">France_NEU/Composite/Composite_Bowman_France.dds</File>
+    <File md5="41BD6F82405D77C94087C79A4E9CFB6C" import="1">France_NEU/Composite/Composite_Bowman_France.fxsxml</File>
+    <File md5="D0606676B6C8A8AC77631FF41B8D4B3E" import="1">France_NEU/Composite/Composite_Bowman_France.gr2</File>
+    <File md5="EBD6ED0A18A94122CF47A6A73189B7E7" import="1">France_NEU/Composite/Composite_Bowman_France_gloss.dds</File>
+    <File md5="6802AED9A72F22E5205C523AC11323CD" import="1">France_NEU/GWI/fregw1.dds</File>
+    <File md5="A3A2F7250C3C512EAEDB960732E39275" import="1">France_NEU/GWI/fregw1.fxsxml</File>
+    <File md5="5DB54301F4AFCC3DE5ABC3A116E84F83" import="1">France_NEU/GWI/fregw1.gr2</File>
+    <File md5="6D37E1B0F7964762958E0F1FD7BD4933" import="1">France_NEU/Knight/Knight_France.dds</File>
+    <File md5="0CD4ECE1692803952362549FFFD5FD96" import="1">France_NEU/Knight/Knight_France.fxsxml</File>
+    <File md5="F2CAD19795F56512EA9B2360FACB39C6" import="1">France_NEU/Knight/Knight_France.gr2</File>
+    <File md5="8E5229E9FFA447E67B646950901053BF" import="1">France_NEU/Knight/Knight_France_gloss.dds</File>
+    <File md5="A0878CB809867146E2E00E5C0E0CE770" import="1">France_NEU/Knight/Knight_France_Horse.dds</File>
+    <File md5="99479F2B3B77727195B31E3E6FFA49C8" import="1">France_NEU/Knight/Knight_France_Horse_gloss.dds</File>
+    <File md5="D4EDA70A246F47A3A9C271182C8CCF7B" import="1">France_NEU/ModernArmor/Leclerc.fxsxml</File>
+    <File md5="F02B92FBC1DB091BB3FDC6536141F2A2" import="1">France_NEU/ModernArmor/leclerc.gr2</File>
+    <File md5="DC8B81D40A514D00C02DAA5FE0753582" import="1">France_NEU/ModernArmor/leclerc_diff.dds</File>
+    <File md5="D3A5D6EF8F124E413E40B375BD2AB0AA" import="1">France_NEU/ModernArmor/leclerc_sref.dds</File>
+    <File md5="0F0BEE26FD1967A9B06470EAC5A6B6A3" import="0">France_NEU/NEUs_France.sql</File>
+    <File md5="705F9510C174104133508745A3C1E462" import="0">France_NEU/NEUs_France_en_US.xml</File>
+    <File md5="B8A03FA21E2C62EB856D71F436C4F125" import="1">France_NEU/Rifleman/civ5_frerm.fxsxml</File>
+    <File md5="333B64905A4164625A207B9D34306373" import="1">France_NEU/Rifleman/civ5_frerm.gr2</File>
+    <File md5="B5FC20221BBD4D23BD9D5F2C5548F59D" import="1">France_NEU/Rifleman/frerm_diff.dds</File>
+    <File md5="ED477EE6D2D0A6DD8AE38ECA00AD1A8E" import="1">France_NEU/Rifleman/frerm_sref.dds</File>
+    <File md5="04BA5C649715674F2D9C1045D337EC5F" import="1">France_NEU/Triplane/Nieuport_17.dds</File>
+    <File md5="2600D3E75D82832F9BFFD04AFEA827ED" import="1">France_NEU/Triplane/Nieuport_17.fxsxml</File>
+    <File md5="43A7A16391830DBCB7F5298B9837540D" import="1">France_NEU/Triplane/Nieuport_17.gr2</File>
+    <File md5="D07D6AA2E22F58AE53366E3EC9F34D0E" import="1">Germany_NEU/Battleship/Bismark_Class.dds</File>
+    <File md5="DF0577BDA619441DB4F9DA23216DF219" import="1">Germany_NEU/Battleship/Bismark_Class.fxsxml</File>
+    <File md5="99953431FB4BBE3C3509F4074E695247" import="1">Germany_NEU/Battleship/Bismark_Class.gr2</File>
+    <File md5="BE710F56549D66DD0F836300AEA249CE" import="1">Germany_NEU/Battleship/Bismark_Class_gloss.dds</File>
+    <File md5="9BCB5617B7D9C9ACC4F63DFD81082AB2" import="1">Germany_NEU/GWI/gergw1.dds</File>
+    <File md5="8BCCD98D36FB50516FF92ADB2474EC55" import="1">Germany_NEU/GWI/gergw1.fxsxml</File>
+    <File md5="7F0730D4A157E40CBF26384BCF16851E" import="1">Germany_NEU/GWI/gergw1.gr2</File>
+    <File md5="F7333DB35FA7D94E763E17E57AEB8288" import="1">Germany_NEU/Infantry/Infantry_German_v2.dds</File>
+    <File md5="0A54830D43B790D5D42465E39348D43F" import="1">Germany_NEU/Infantry/Infantry_German_v2.fxsxml</File>
+    <File md5="3A0500B2BFF28C2396231F0952471ECF" import="1">Germany_NEU/Infantry/Infantry_German_v2.gr2</File>
+    <File md5="52274AA7314382DE5589BC8C95377A67" import="1">Germany_NEU/Knight/Knight_German.dds</File>
+    <File md5="B0066B782F2BC8D415430826AB2CC935" import="1">Germany_NEU/Knight/Knight_German.fxsxml</File>
+    <File md5="D4D2CF0937B76AEBA3DFE75FE4DB7569" import="1">Germany_NEU/Knight/Knight_German.gr2</File>
+    <File md5="1E07E94A19807A32D808623E742D2DAD" import="1">Germany_NEU/Knight/Knight_German_gloss.dds</File>
+    <File md5="EDE495F88F7A4E37263D45EE0F7E7A33" import="1">Germany_NEU/Knight/Knight_German_Horse.dds</File>
+    <File md5="673A5CA6445289C2519547B20570F487" import="1">Germany_NEU/Knight/Knight_German_Horse_gloss.dds</File>
+    <File md5="CAE91739FF61F06562479630F7443808" import="1">Germany_NEU/LineInfantry/civ5_gerrm.fxsxml</File>
+    <File md5="ED2B1EF70B371A8A4A7DE255878194D8" import="1">Germany_NEU/LineInfantry/civ5_gerrm.gr2</File>
+    <File md5="5171F3A79FF313BCFA217E78CB21F133" import="1">Germany_NEU/LineInfantry/gerrm_diff.dds</File>
+    <File md5="482600047D1AE44EAF13E5FB06CA5EE7" import="1">Germany_NEU/LineInfantry/gerrm_sref.dds</File>
+    <File md5="94CE8787DD1F5EB8D9337A59105FC3C6" import="0">Germany_NEU/NEUs_Germany.sql</File>
+    <File md5="DAC13EB07918AC36ABB721931DF33D2C" import="0">Germany_NEU/NEUs_Germany_en_US.xml</File>
+    <File md5="DC4F37151DA851F4E9707273B6717BC9" import="1">Germany_NEU/Skirmisher/Germany_EE_Skirmisher_Flag.dds</File>
+    <File md5="A3F63AB768EC7604D162ACBE7664D51C" import="1">Germany_NEU/Skirmisher/jaeger.dds</File>
+    <File md5="95D05F683FAE65A660E516F0A3C02391" import="1">Germany_NEU/Skirmisher/jaeger.fxsxml</File>
+    <File md5="8A704AC88F7A99C3EBDDEBA545ECF3BC" import="1">Germany_NEU/Skirmisher/jaeger.gr2</File>
+    <File md5="D6CB61760E74395DACB4F569496F9004" import="1">Germany_NEU/Skirmisher/jaeger_sref.dds</File>
+    <File md5="B82F213CC470E0BA329E4767BFE75D07" import="1">Greece_NEU/Composite/Composite_Bowman_Greek.dds</File>
+    <File md5="F0FF74951A7B6F6E23C83A6EB97C61BD" import="1">Greece_NEU/Composite/Composite_Bowman_Greek.fxsxml</File>
+    <File md5="5EC1A61BA2F51EFC847D5D1F08A52BC8" import="1">Greece_NEU/Composite/Composite_Bowman_Greek.gr2</File>
+    <File md5="53710C4D153A4914B17C0AF91FAED4D0" import="1">Greece_NEU/Composite/Composite_Bowman_Greek_gloss.dds</File>
+    <File md5="EEAD0F5C707E163582F01C12164F7E6F" import="1">Greece_NEU/Archer/Archer_Greece.dds</File>
+    <File md5="13CE672F667531E49B93181F4BB9B28B" import="1">Greece_NEU/Archer/Archer_Greece.fxsxml</File>
+    <File md5="5FE8CE242AFDABD9BA1EB702B2C97B2C" import="1">Greece_NEU/Archer/Archer_Greece.gr2</File>
+    <File md5="BDDC6B404A5468935235AC284EE9CE7F" import="1">Greece_NEU/Archer/Archer_Greece_gloss.dds</File>
+    <File md5="4CF9E06CC8E028FD9FCC0F80C77A7ECC" import="1">Greece_NEU/Crossbow/Longbowman_Greece.dds</File>
+    <File md5="C66525B892C7DE5BCB7F546ACC4EE96F" import="1">Greece_NEU/Crossbow/Longbowman_Greece.fxsxml</File>
+    <File md5="B540586C0A5154F9FEE871FF24BE48C7" import="1">Greece_NEU/Crossbow/Longbowman_Greece.gr2</File>
+    <File md5="4092D13056E73F1CE04647A9557330FB" import="1">Greece_NEU/Crossbow/Longbowman_Greece_gloss.dds</File>
+    <File md5="A97F6601533363C2FE3FE14D12066FC5" import="1">Greece_NEU/Knight/Knight_Greece_Horse.dds</File>
+    <File md5="F12625F410AF7C4F816FA635E9B846AE" import="1">Greece_NEU/Knight/Knight_Greece_Horse_gloss.dds</File>
+    <File md5="6FB8FC92D1224916CA5731C8D79C4182" import="1">Greece_NEU/Knight/Knight_Greece_v2.dds</File>
+    <File md5="158C603C1585D8D5667DBCFE98306894" import="1">Greece_NEU/Knight/Knight_Greece_v2.fxsxml</File>
+    <File md5="96B557F441DA4F15E8D4244588253CAA" import="1">Greece_NEU/Knight/Knight_Greece_v2.gr2</File>
+    <File md5="72A682845FA5BC0B58F1B4DC62C82A42" import="1">Greece_NEU/Knight/Knight_Greece_v2_gloss.dds</File>
+    <File md5="D0B8EF21DC3FA0589C72E4FA26BA83D3" import="1">Greece_NEU/Longsword/Longswordsman_Greece.dds</File>
+    <File md5="3B34FFDDDB76AA6C2A4E4169C27A4C23" import="1">Greece_NEU/Longsword/Longswordsman_Greece.fxsxml</File>
+    <File md5="5D77340C986EDF7F5244B75DF482D34D" import="1">Greece_NEU/Longsword/Longswordsman_Greece.gr2</File>
+    <File md5="01A3D8DD9CBA03D646220C52906E7B0B" import="1">Greece_NEU/Longsword/Longswordsman_Greece_gloss.dds</File>
+    <File md5="1937E01E90E36B774B273583FC4D107A" import="0">Greece_NEU/NEUs_Greece.sql</File>
+    <File md5="9F5859E2D5E92F4FBCCE3243BBCA4FD1" import="0">Greece_NEU/NEUs_Greece_en_US.xml</File>
+    <File md5="18A1BE4FDAB51503B05C9D7A5BD5FF4B" import="1">Greece_NEU/Swordsman/Swordsman_Greece.dds</File>
+    <File md5="2F98F57AB32ABB819E60666FC5902950" import="1">Greece_NEU/Swordsman/Swordsman_Greece.fxsxml</File>
+    <File md5="7BC470B1C418A123DD7A21DB2E55D19A" import="1">Greece_NEU/Swordsman/Swordsman_Greece.gr2</File>
+    <File md5="796DE4FA91F28BADD130071204E58618" import="1">Greece_NEU/Swordsman/Swordsman_Greece_gloss.dds</File>
+    <File md5="4865638DDC755E835B99C0BCF60B3391" import="1">Huns_NEU/GWI/Persian_WW1.dds</File>
+    <File md5="E8756CC50BAF10DFDB750F2C39C4214A" import="1">Huns_NEU/GWI/Persian_WW1.fxsxml</File>
+    <File md5="562C3594A0C39A2C15F335966F65C5D5" import="1">Huns_NEU/GWI/Persian_WW1.gr2</File>
+    <File md5="FBF0D24225FCD3D8FB0FA8CB155503A9" import="1">Huns_NEU/Horseman/u_cuman_chabani.fxsxml</File>
+    <File md5="C04591FD86A377EC4B937BDE0C4C6C4C" import="1">Huns_NEU/Horseman/u_cuman_chabani.gr2</File>
+    <File md5="89091FF2916DC018B66FED27A4995D53" import="1">Huns_NEU/Horseman/u_cuman_chabani_diff.dds</File>
+    <File md5="64EA725A94F46BFB411556F96CC81811" import="1">Huns_NEU/Horseman/u_cuman_chabani_sref.dds</File>
+    <File md5="35192E6A2B9B62B0D45A1FAD31C691A7" import="1">Huns_NEU/Knight/u_cuman_mamluk.fxsxml</File>
+    <File md5="8D52B7F8BAC381A0A2655A710457C566" import="1">Huns_NEU/Knight/u_cuman_mamluk.gr2</File>
+    <File md5="C18E1724142399568E3244B68730DF46" import="1">Huns_NEU/Knight/u_cuman_mamluk_diff.dds</File>
+    <File md5="DA2A2E465FCD6303E4E7DA1DCC613CB9" import="1">Huns_NEU/Knight/u_cuman_mamluk_sref.dds</File>
+    <File md5="B8EC7DF8B277FD88CC42B920F883FCFB" import="1">Huns_NEU/Lancer/hunhu1.dds</File>
+    <File md5="5EC11039BD3B1B24242ADEED9DA3F2FA" import="1">Huns_NEU/Lancer/hunhu1.fxsxml</File>
+    <File md5="C9ED0521744BA62A8B5AA9542AE9A5EF" import="1">Huns_NEU/Lancer/hunhu1.gr2</File>
+    <File md5="62BF032C06A3750FB30D38FAE91BF230" import="1">Huns_NEU/Lancer/hunhu1_sref.dds</File>
+    <File md5="5097C563EB64D9A857FF14138F9F01FA" import="0">Huns_NEU/NEUs_Huns.sql</File>
+    <File md5="5A2B6F2B99A718FF49A33F692E66A4E0" import="0">Huns_NEU/NEUs_Huns_en_US.xml</File>
+    <File md5="97458081520D613B8FAFF28EFE85466F" import="1">Huns_NEU/Spearman/HunWarrior.dds</File>
+    <File md5="1EBD0AFBAC0E737740794EDCD03D94E0" import="1">Huns_NEU/Spearman/HunWarrior.fxsxml</File>
+    <File md5="F284800709BAA791378FAB07CD57A90C" import="1">Huns_NEU/Spearman/HunWarrior.gr2</File>
+    <File md5="DBDAC3BB27B3F5AD24C3F3731BFBD04B" import="1">Huns_NEU/Spearman/HunWarrior_sref.dds</File>
+    <File md5="9B990972075137B37C228A37EF696AD5" import="1">Huns_NEU/Swordsman/HunWarrior2.dds</File>
+    <File md5="ADB0B1E537A2BA0EBD083D789F769903" import="1">Huns_NEU/Swordsman/HunWarrior2.fxsxml</File>
+    <File md5="3F9EA527A3F4AF7C4AE1D005BDBE95AE" import="1">Huns_NEU/Swordsman/HunWarrior2.gr2</File>
+    <File md5="B1D1D1DD0E99E9526250D1E630A5F4F3" import="1">Huns_NEU/Swordsman/HunWarrior2_sref.dds</File>
+    <File md5="1658763A2C18D0B56EF32CDB3A2FE083" import="1">Inca_NEU/Composite/Composite_Bowman_Inca.dds</File>
+    <File md5="743BE1A01BFCCC707E2CAD0DF76CB0FF" import="1">Inca_NEU/Composite/Composite_Bowman_Inca.fxsxml</File>
+    <File md5="F21359ECA5CD77EE5C34096C44473870" import="1">Inca_NEU/Composite/Composite_Bowman_Inca.gr2</File>
+    <File md5="F60D427F1D9F4B94F07DE18C3A673447" import="1">Inca_NEU/Composite/Composite_Bowman_Inca_gloss.dds</File>
+    <File md5="182494271EC5CB3FFF4915C7C175FB7A" import="1">Inca_NEU/Crossbow/Longbowman_Inca.dds</File>
+    <File md5="69FD13D233B4FA7398CBDB69655B240A" import="1">Inca_NEU/Crossbow/Longbowman_Inca.fxsxml</File>
+    <File md5="8212698AACEE03BF3DF7379B04ADAD2C" import="1">Inca_NEU/Crossbow/Longbowman_Inca.gr2</File>
+    <File md5="B4BD256C98AF8DD5646A1F2032A933CD" import="1">Inca_NEU/Crossbow/Longbowman_Inca_gloss.dds</File>
+    <File md5="11C751D7AC83A9BE1675D1C1725342D8" import="1">Inca_NEU/ModernArmor/T55Peru.dds</File>
+    <File md5="A636814744E71032A4ACF72DDCC0EB3F" import="1">Inca_NEU/ModernArmor/T55Peru.fxsxml</File>
+    <File md5="01BB239DA36C80C5249A4F11E6902586" import="1">Inca_NEU/ModernArmor/T55Peru.gr2</File>
+    <File md5="76AEC5186C1DFE25E7C0E9A20F5B2DF0" import="0">Inca_NEU/NEUs_Inca.sql</File>
+    <File md5="7AF80668928E1C7C2A55B49BCE8EF7F7" import="0">Inca_NEU/NEUs_Inca_en_US.xml</File>
+    <File md5="BD65BF9E8920FF93C3D0B25C14390891" import="1">Inca_NEU/Pikeman/Pikeman_Inca.dds</File>
+    <File md5="721AC54E757E6FB84312C28B190776DD" import="1">Inca_NEU/Pikeman/Pikeman_Inca.fxsxml</File>
+    <File md5="E23AD8A4CF53E12707C738DA69CB6B6D" import="1">Inca_NEU/Pikeman/Pikeman_Inca.gr2</File>
+    <File md5="1B68D1D5BE616DBB7FBFE1DE334A4362" import="1">Inca_NEU/Pikeman/Pikeman_Inca_gloss.dds</File>
+    <File md5="999C43504B29CE608BC7961C61E7C9FD" import="1">Inca_NEU/Spearman/Spearman_Inca.dds</File>
+    <File md5="E5071A47105C703E83D42A4C6EE926ED" import="1">Inca_NEU/Spearman/Spearman_Inca.fxsxml</File>
+    <File md5="D5D298CFCE85773977DC66CD8BBB7075" import="1">Inca_NEU/Spearman/Spearman_Inca.gr2</File>
+    <File md5="86793FA3D516FD4D0B1B033C94276627" import="1">Inca_NEU/Spearman/Spearman_Inca_gloss.dds</File>
+    <File md5="AA753C270B35AC8CD211C94439168A75" import="1">Inca_NEU/Swordsman/Swordsman_Inca.dds</File>
+    <File md5="A6814F01248BAEEB04D5D49FF31D657A" import="1">Inca_NEU/Swordsman/Swordsman_Inca.fxsxml</File>
+    <File md5="37358D43CF37F0761F0AD79832D7A889" import="1">Inca_NEU/Swordsman/Swordsman_Inca.gr2</File>
+    <File md5="71F56B6AA741B51A6A5AD5B5155F073A" import="1">Inca_NEU/Swordsman/Swordsman_Inca_gloss.dds</File>
+    <File md5="BB67B3515CE973AEA49E22F1BDBA049B" import="1">India_NEU/Crossbow/Longbowman_India.dds</File>
+    <File md5="5BC9117978DE904140024458587983BB" import="1">India_NEU/Crossbow/Longbowman_India.fxsxml</File>
+    <File md5="89214ABCCBA9CA4407D43D050A9A302C" import="1">India_NEU/Crossbow/Longbowman_India.gr2</File>
+    <File md5="9015E89C524211E1C5C8622B291179EC" import="1">India_NEU/Crossbow/Longbowman_India_gloss.dds</File>
+    <File md5="ACE9F6AF66F7698E8B61C27F5EEA0480" import="1">India_NEU/Knight/Knight_India.dds</File>
+    <File md5="1BECA87BA2F2E95ED83829889C065703" import="1">India_NEU/Knight/Knight_India.fxsxml</File>
+    <File md5="C41CF00972583C51F248AF29A3B3A3CB" import="1">India_NEU/Knight/Knight_India.gr2</File>
+    <File md5="9F92D3C3D00D0B6B73D867CACF38CAA4" import="1">India_NEU/Knight/Knight_India_gloss.dds</File>
+    <File md5="3AECB7A0D27528E73B8432DC58F282FB" import="1">India_NEU/Knight/Knight_India_Horse.dds</File>
+    <File md5="BB1F3F57A3EB31AD0F314C63EF558389" import="1">India_NEU/Knight/Knight_India_Horse_gloss.dds</File>
+    <File md5="DFE33BBDAFDDB5D9FFD301E6397C1651" import="1">India_NEU/ModernArmor/T72 India.dds</File>
+    <File md5="D654377098EA23457B5604FADB6CC7B8" import="1">India_NEU/ModernArmor/T72_India.fxsxml</File>
+    <File md5="BD4B15CB928A4BD181FEC2812EA1C28E" import="1">India_NEU/ModernArmor/T72_India.gr2</File>
+    <File md5="C5546B65257B4078B4F2C7ADD2B5DACD" import="0">India_NEU/NEUs_India.sql</File>
+    <File md5="EF35169FADF98F2AD656CDB9BA653CDE" import="0">India_NEU/NEUs_India_en_US.xml</File>
+    <File md5="E9EF9CEA5FD69B69AD5A05B63B0E203F" import="1">India_NEU/Pikeman/Pikeman_India.dds</File>
+    <File md5="4A4BF54B05A3FCCA0DE9E14EAAACC9E1" import="1">India_NEU/Pikeman/Pikeman_India.fxsxml</File>
+    <File md5="E0BF736F67976DB58D3888E0DB88AF9B" import="1">India_NEU/Pikeman/Pikeman_India.gr2</File>
+    <File md5="1135E67D0A00688B725F45A5E2E54F40" import="1">India_NEU/Pikeman/Pikeman_India_gloss.dds</File>
+    <File md5="9C3688BFCA999CDCF6D81F8344533031" import="1">India_NEU/Rifleman/civ5_indrm1.fxsxml</File>
+    <File md5="5FC3BAA613A7E2995DFBAC1C99C05F2A" import="1">India_NEU/Rifleman/civ5_indrm1.gr2</File>
+    <File md5="5569FDB9DA97E353E034C14B818402A3" import="1">India_NEU/Rifleman/indrm1.dds</File>
+    <File md5="F881EA8AD27D22249EC9B9D57E370498" import="1">India_NEU/Rifleman/indrm1_sref.dds</File>
+    <File md5="7791BE72CB03B8AE89FF1E081AFE6880" import="1">India_NEU/Swordsman/Swordsman_India.dds</File>
+    <File md5="94A8C0702DB20FBBF3E85F93B8977F26" import="1">India_NEU/Swordsman/Swordsman_India.fxsxml</File>
+    <File md5="03793CB20691074E0A0490D2D6A873EA" import="1">India_NEU/Swordsman/Swordsman_India.gr2</File>
+    <File md5="00A60963786F92D258F75D0CEC79025B" import="1">India_NEU/Swordsman/Swordsman_India_2.dds</File>
+    <File md5="A233B12F1678FB5915588E147C0B3197" import="1">India_NEU/Swordsman/Swordsman_India_gloss.dds</File>
+    <File md5="B1F0FCF62BFBDAECA1480CC60BE74E3C" import="1">India_NEU/Swordsman/Swordsman_India_gloss_2.dds</File>
+    <File md5="5C0499CBA2B638C958894284F42BAB0D" import="1">Indonesia_NEU/AntiAircraft/Type98_Ko-Hi.blend</File>
+    <File md5="21A5675088756930BCD9709FAA009542" import="1">Indonesia_NEU/AntiAircraft/Type98_Ko-Hi.dds</File>
+    <File md5="459BDCD084E3396DB1859B4B3AD5DD6F" import="1">Indonesia_NEU/AntiAircraft/Type98_Ko-Hi.fxsxml</File>
+    <File md5="911C61E38359A35DF0145B4E0D5B64F3" import="1">Indonesia_NEU/AntiAircraft/Type98_Ko-Hi.gr2</File>
+    <File md5="271A9F52A18A3F3ABF0E19CEC75067A9" import="1">Indonesia_NEU/AntiTank/Type1_Ho-Ni_I.blend</File>
+    <File md5="EA189866886FA397965374D3685CD67D" import="1">Indonesia_NEU/AntiTank/Type1_Ho-Ni_I.dds</File>
+    <File md5="FC81A2D096D22CA2C20999212C2705B5" import="1">Indonesia_NEU/AntiTank/Type1_Ho-Ni_I.fxsxml</File>
+    <File md5="63705571A71E7FCB15EB28F9C435CD34" import="1">Indonesia_NEU/AntiTank/Type1_Ho-Ni_I.gr2</File>
+    <File md5="4D71BFAE6BDA0C7032C24585F826C55A" import="1">Indonesia_NEU/AntiTank/Type1_Ho-Ni_I_2.dds</File>
+    <File md5="4F81261E78054CF3E017561C94F3DA71" import="1">Indonesia_NEU/Knight/Armored_Cavalry.fxsxml</File>
+    <File md5="89BED2DFB71D264FC606229F80AE975F" import="1">Indonesia_NEU/Knight/Armored_Cavalry.gr2</File>
+    <File md5="F894011B287C881685F293913C254B88" import="1">Indonesia_NEU/Knight/MalayArmoredCavarlyman_128.dds</File>
+    <File md5="7B5EB95D12A91E735A3585067C85F0D8" import="1">Indonesia_NEU/Knight/MalayShieldLeatherBossOne2Gloss_128.dds</File>
+    <File md5="4F2E1611CA52A7A774C1B3F639D6FFFE" import="1">Indonesia_NEU/Knight/MalayShieldLeatherBossOne2_128.dds</File>
+    <File md5="92D630A763981D88A0EFC0B84F623347" import="0">Indonesia_NEU/NEUs_Indonesia.sql</File>
+    <File md5="63854A58C8AE615D067252E4736D9E5F" import="0">Indonesia_NEU/NEUs_Indonesia_en_US.xml</File>
+    <File md5="68F7841EB5FADBA860AD5F53E25EADBE" import="1">Indonesia_NEU/SpecialForces/AsianSF.fxsxml</File>
+    <File md5="E18FEC805C3DA9273658C2266F4728F4" import="1">Indonesia_NEU/SpecialForces/AsianSF.gr2</File>
+    <File md5="853917DAD3E1BD7BB03390D4CBFA4ED0" import="1">Indonesia_NEU/SpecialForces/AsianSF_diff.dds</File>
+    <File md5="7FD4B4261DBA263464E3581F5F59CE61" import="1">Indonesia_NEU/SpecialForces/L85A3_diff.dds</File>
+    <File md5="29C76A1A48414AA06833D30A7D7D8340" import="1">Indonesia_NEU/ModernArmor/Leopard2.dds</File>
+    <File md5="CBFDFFFFEC60872AAFDB4A64DB209236" import="1">Indonesia_NEU/ModernArmor/Leopard2.fxsxml</File>
+    <File md5="7A39868EE850AED49BFD5971F34BFDB6" import="1">Indonesia_NEU/ModernArmor/Leopard2.gr2</File>
+    <File md5="4F5C925B15F16D6FBC419F91A274A2D2" import="1">Indonesia_NEU/ModernArmor/Leopard2_Gloss.dds</File>
+    <File md5="36C9906C494CA81BF4E39DC405E8BB5B" import="1">Iroquois_NEU/Archer/civ5_iroco1.fxsxml</File>
+    <File md5="D3780871820D2A4C43B335F9583B9376" import="1">Iroquois_NEU/Archer/civ5_iroco1.gr2</File>
+    <File md5="20176AC8C2CB8DC44B9B645D67D8DDC8" import="1">Iroquois_NEU/Archer/iroco1.dds</File>
+    <File md5="40A7DCE226BEC534DFAB68474BAA0CC3" import="1">Iroquois_NEU/Archer/iroco1_sref.dds</File>
+    <File md5="3C1235A50C8E80A6ED586542EFEB0676" import="1">Iroquois_NEU/Horseman/civ5_irohm3.fxsxml</File>
+    <File md5="8F78166075EFC20A3CF28A328E2A8EED" import="1">Iroquois_NEU/Horseman/civ5_irohm3.gr2</File>
+    <File md5="BAB8A579F6CC53B4738BF5FCACACDABE" import="1">Iroquois_NEU/Horseman/irohm3.dds</File>
+    <File md5="2A9C477C62745D26D51C1BD3D0049BAF" import="1">Iroquois_NEU/Horseman/irohm3_sref.dds</File>
+    <File md5="C47F573DA735D5EDD6C71A04CCC994A5" import="1">Iroquois_NEU/Horseman/irohorse3.dds</File>
+    <File md5="03F330F6AC5B13CB395F3462C3B44C47" import="1">Iroquois_NEU/Horseman/irohorse3_sref.dds</File>
+    <File md5="74500485838318882A85271D2A543D63" import="0">Iroquois_NEU/NEUs_Iroquois.sql</File>
+    <File md5="B6E556AAA04780A8DE19C76C3B62DC41" import="0">Iroquois_NEU/NEUs_Iroquois_en_US.xml</File>
+    <File md5="E6947EFBD10E4749602835CD0AF6FDE7" import="1">Iroquois_NEU/Pikeman/civ5_iropi1.fxsxml</File>
+    <File md5="C2E1EAA2CAA422F6E2EAD2E098F85CDB" import="1">Iroquois_NEU/Pikeman/civ5_iropi1.gr2</File>
+    <File md5="37DF28ED674FBD202A53CD268F3B4895" import="1">Iroquois_NEU/Pikeman/iropi1.dds</File>
+    <File md5="5F839A0777F12BE28A33315E0D411D81" import="1">Iroquois_NEU/Pikeman/iropi1_sref.dds</File>
+    <File md5="CEE00A13841C6045E2C6FCA9BCC10239" import="1">Iroquois_NEU/Scout/civ5_irosc1.fxsxml</File>
+    <File md5="5190D99906E0DC20E29AFCFBE55AD293" import="1">Iroquois_NEU/Scout/civ5_irosc1.gr2</File>
+    <File md5="9BAA3E9E85A167BAAC2B5984EAC23354" import="1">Iroquois_NEU/Scout/irosc1.dds</File>
+    <File md5="F4F7272C6E2C028FA2127A2716F9435F" import="1">Iroquois_NEU/Scout/irosc1_sref.dds</File>
+    <File md5="25A182532E10ACA8B53EDE735BD0C9D6" import="1">Iroquois_NEU/Spearman/civ5_irosp2.fxsxml</File>
+    <File md5="335E0534B8C3D6C9AC6B5E1AAD593B10" import="1">Iroquois_NEU/Spearman/civ5_irosp2.gr2</File>
+    <File md5="F396101228B7BC8C7B313F66ADBFE0D4" import="1">Iroquois_NEU/Spearman/irosp2.dds</File>
+    <File md5="AE7C35EFC0EF92A5526CA45260A86A71" import="1">Iroquois_NEU/Spearman/irosp2_sref.dds</File>
+    <File md5="DC3585EA6BAC6C246E7F35144E7A9D80" import="1">Japan_NEU/Composite/Composite_Bowman_Japan.dds</File>
+    <File md5="EC8BA67DB30E190E3D1006EEDF0AC3F2" import="1">Japan_NEU/Composite/Composite_Bowman_Japan.fxsxml</File>
+    <File md5="A53B07F1731F255DCBE90ABBF31B800A" import="1">Japan_NEU/Composite/Composite_Bowman_Japan.gr2</File>
+    <File md5="0E0B4F4EE221DF7E94B2108835F7028F" import="1">Japan_NEU/Composite/Composite_Bowman_Japan2.dds</File>
+    <File md5="C2B72C31902CB21852D853B176055E54" import="1">Japan_NEU/Composite/Composite_Bowman_Japan3.dds</File>
+    <File md5="7AE3E19D98A3531FEA9362A548B23C71" import="1">Japan_NEU/Composite/Composite_Bowman_Japan_gloss.dds</File>
+    <File md5="C04ABFFA08DE7AB3A531BD5A7F94A156" import="1">Japan_NEU/Crossbow/Longbowman_Japan.dds</File>
+    <File md5="3088C1951AA683FB3F15B00C6E055A7D" import="1">Japan_NEU/Crossbow/Longbowman_Japan.fxsxml</File>
+    <File md5="F4CF527018D0BE113B2D9379FA8E369E" import="1">Japan_NEU/Crossbow/Longbowman_Japan.gr2</File>
+    <File md5="C5B0F74ACEEC88991F96C59490EEC1BE" import="1">Japan_NEU/Crossbow/Longbowman_Japan_gloss.dds</File>
+    <File md5="F55746B91C0D86656ECAACF56C77EE60" import="1">Japan_NEU/Horseman/Horseman_Japan.dds</File>
+    <File md5="D2B618E4C7DF02F80819A3BBE3DBD263" import="1">Japan_NEU/Horseman/Horseman_Japan.fxsxml</File>
+    <File md5="C01B4FDAAFBC7070DC5B3EA876A935C0" import="1">Japan_NEU/Horseman/Horseman_Japan.gr2</File>
+    <File md5="FFFF5883060AD88164D8335826C69B6E" import="1">Japan_NEU/Horseman/Horseman_Japan_gloss.dds</File>
+    <File md5="4A1D4DA69AD782175A0F998CCC234E8A" import="1">Japan_NEU/Horseman/Horseman_Japan_Horse.dds</File>
+    <File md5="B38708E9B7CF9FA62F4FC1BEBBA89AA3" import="1">Japan_NEU/Infantry/Infantry_Japan_v3.dds</File>
+    <File md5="2195D1B13C934E609546C42875361070" import="1">Japan_NEU/Infantry/Infantry_Japan_v3.fxsxml</File>
+    <File md5="EE546CB35A207FEAA79D6CAA95309303" import="1">Japan_NEU/Infantry/Infantry_Japan_v3.gr2</File>
+    <File md5="24A7AC58DB0A3569272858EB7233DF60" import="1">Japan_NEU/Infantry/Infantry_Japan_v3_temp.dds</File>
+    <File md5="E968D81B522100244E8EFC82C706E23B" import="1">Japan_NEU/Knight/Knight_Japan.dds</File>
+    <File md5="64B219ADCEF0F84E80A97DDB576B652B" import="1">Japan_NEU/Knight/Knight_Japan.fxsxml</File>
+    <File md5="1A6A05F408149126BEA2594A85917308" import="1">Japan_NEU/Knight/Knight_Japan.gr2</File>
+    <File md5="E8C1B0ED442BD450C5AEFC1798E7DF7C" import="1">Japan_NEU/Knight/Knight_Japan_gloss.dds</File>
+    <File md5="49617FFE65BF938EF89A747E9F551734" import="1">Japan_NEU/Knight/Knight_Japan_Horse.dds</File>
+    <File md5="4314E9DB4585D8C3685B215A14FB564E" import="1">Japan_NEU/Knight/Knight_Japan_Horse_gloss.dds</File>
+    <File md5="57CC7E8F3C7A955F67E7454BF9D6B489" import="0">Japan_NEU/NEUs_Japan.sql</File>
+    <File md5="F889945D0302F563D52D86FBD9E555A9" import="0">Japan_NEU/NEUs_Japan_en_US.xml</File>
+    <File md5="9A4FE83682478A055178EA53AB457143" import="1">Japan_NEU/Pikeman/Pikeman_Japan.dds</File>
+    <File md5="991FE1A073E8B42F4D68367E9BC9D3E9" import="1">Japan_NEU/Pikeman/Pikeman_Japan.fxsxml</File>
+    <File md5="7DAAD229BFEE85A8C42564F904C4A05B" import="1">Japan_NEU/Pikeman/Pikeman_Japan.gr2</File>
+    <File md5="CC0FB0BB7BB8C43FB0A5C854B0635A0D" import="1">Japan_NEU/Pikeman/Pikeman_Japan_gloss.dds</File>
+    <File md5="E07D101A32BF9D9B820DC9C9D5461BF6" import="1">Japan_NEU/Spearman/Spearman_Japan.dds</File>
+    <File md5="9F9E29928E10E7FB1A4AA4838CC01D2C" import="1">Japan_NEU/Spearman/Spearman_Japan.fxsxml</File>
+    <File md5="FB4E410A0614140971EC057E72E1E249" import="1">Japan_NEU/Spearman/Spearman_Japan.gr2</File>
+    <File md5="26C434A87F890F9E4B4577B5F19BCD68" import="1">Japan_NEU/Spearman/Spearman_Japan_gloss.dds</File>
+    <File md5="22BF0544E35E5CF043525D3EA2D742F0" import="1">Japan_NEU/Swordsman/Swordsman_Japan.dds</File>
+    <File md5="35B333E8458A96CF297619FF30FAC682" import="1">Japan_NEU/Swordsman/Swordsman_Japan.fxsxml</File>
+    <File md5="53414834541A701B1F5F040DD502DF2A" import="1">Japan_NEU/Swordsman/Swordsman_Japan.gr2</File>
+    <File md5="2DF5837A9916500722ACD32F4213C571" import="1">Japan_NEU/Swordsman/Swordsman_Japan2.dds</File>
+    <File md5="7C5680968DD91902191CC426922ECBE2" import="1">Japan_NEU/Swordsman/Swordsman_Japan_gloss.dds</File>
+    <File md5="087F1B024C9C45486913F1C74013E65E" import="1">Japan_NEU/Warrior/Scout_Japan.dds</File>
+    <File md5="8C2334D3753DFBD6926AEB4AE54823D4" import="1">Japan_NEU/Warrior/Scout_Japan.fxsxml</File>
+    <File md5="19DC88B990EA8A2937641DD256FE8423" import="1">Japan_NEU/Warrior/Scout_Japan.gr2</File>
+    <File md5="69456E327ECDC7DB22A5A2D06AFD62DC" import="1">Japan_NEU/Warrior/Scout_Japan_gloss.dds</File>
+    <File md5="B8E5BA3A35792B62AEB431EFCD80A697" import="1">Korea_NEU/Archer/Archer_Korea.dds</File>
+    <File md5="B0C04A7FC3CC6D2D0DC9E5C416F224AA" import="1">Korea_NEU/Archer/Archer_Korea.fxsxml</File>
+    <File md5="2A6EB110AEE75D4665138335D10CC3BA" import="1">Korea_NEU/Archer/Archer_Korea.gr2</File>
+    <File md5="73DBB84A525584F12D431EC8570E0C41" import="1">Korea_NEU/Archer/Archer_Korea_gloss.dds</File>
+    <File md5="2FA929B232E6334F8EFAFAEF40E5BC32" import="1">Korea_NEU/Cannon/bombardTurk.fxsxml</File>
+    <File md5="7B387150F62D712DB916A74B9044187D" import="1">Korea_NEU/Cannon/bombardTurk.gr2</File>
+    <File md5="7BC37AE7B8A8F969ED467490C2903ADD" import="1">Korea_NEU/Cannon/BombardTurk_diff.dds</File>
+    <File md5="B9B7C2441CB1B491466C47C4A4B5DEAF" import="1">Korea_NEU/Cannon/BombardTurk_sref.dds</File>
+    <File md5="FD03DEC64E2F89C50CBEF2FAC46DDB1F" import="1">Korea_NEU/Cannon/musketman_diff.dds</File>
+    <File md5="9A394373B38692C543E8C8D6353A9C52" import="1">Korea_NEU/Cannon/musketman_sref.dds</File>
+    <File md5="1EFAB8021221F41B9CAC7D1C19D158FA" import="1">Korea_NEU/Horseman/Horseman_Korea.dds</File>
+    <File md5="967916A72FBC41E399B4345DF8E29072" import="1">Korea_NEU/Horseman/Horseman_Korea.fxsxml</File>
+    <File md5="4AE66EC47745099FECBD046B20F25668" import="1">Korea_NEU/Horseman/Horseman_Korea.gr2</File>
+    <File md5="52EB74C1745C28E237B56E8784CB9C92" import="1">Korea_NEU/Horseman/Horseman_Korea_gloss.dds</File>
+    <File md5="4A1D4DA69AD782175A0F998CCC234E8A" import="1">Korea_NEU/Horseman/Horseman_Korea_Horse.dds</File>
+    <File md5="CC23DDCF2BEFD0E3E4E4D714A3B45220" import="1">Korea_NEU/JetFighter/F4DKorea.dds</File>
+    <File md5="651AFC3EBE0D9CF1522595F2A5898B2C" import="1">Korea_NEU/JetFighter/F4DKorea.fxsxml</File>
+    <File md5="102DEA5627C23E098A38AF8A7A39861E" import="1">Korea_NEU/JetFighter/F4DKorea.gr2</File>
+    <File md5="0003349E67ECBB5A62B8DF1D5518D188" import="0">Korea_NEU/NEUs_Korea.sql</File>
+    <File md5="A786372A12DB4BB11CE9EA1FAC265FCB" import="0">Korea_NEU/NEUs_Korea_en_US.xml</File>
+    <File md5="7012567F11141765CD1860B61A610C9B" import="1">Korea_NEU/Swordsman/Scout_Korea.dds</File>
+    <File md5="AF14AA90FE243948DA17E579905AB8E5" import="1">Korea_NEU/Swordsman/Scout_Korea.fxsxml</File>
+    <File md5="2310D14F5E047616A411F89AE134BAFE" import="1">Korea_NEU/Swordsman/Scout_Korea.gr2</File>
+    <File md5="837FA89D1E4B65A24C67A3FEE42E8E5B" import="1">Korea_NEU/Swordsman/Scout_Korea_gloss.dds</File>
+    <File md5="B75D0846CAC49D7E8DEAC4F4D174B4E3" import="1">Korea_NEU/Spearman/Spearman_Korea.dds</File>
+    <File md5="E0A068BE59B9AFDB9FCF9FB777CF7997" import="1">Korea_NEU/Spearman/Spearman_Korea.fxsxml</File>
+    <File md5="6920B6E3BEF16CA7F2840B77ED054994" import="1">Korea_NEU/Spearman/Spearman_Korea.gr2</File>
+    <File md5="A1BCAADB5C2E05EA5155136406E044F0" import="1">Maya_NEU/Composite/Composite_Bowman_Maya.dds</File>
+    <File md5="8F4F76007C0117878BE5EBFE0ECE1CCA" import="1">Maya_NEU/Composite/Composite_Bowman_Maya.fxsxml</File>
+    <File md5="A788F875A61E92FD61F6ECCBE9404E8C" import="1">Maya_NEU/Composite/Composite_Bowman_Maya.gr2</File>
+    <File md5="852E2A06E50B006D9448DE3AAFE7BA29" import="1">Maya_NEU/Composite/Composite_Bowman_Maya_gloss.dds</File>
+    <File md5="CA854E0B42DE584AE452C985D0442D8B" import="1">Maya_NEU/Crossbow/Longbowman_Maya.dds</File>
+    <File md5="EEBA07C1A079DA0202FE17C163511306" import="1">Maya_NEU/Crossbow/Longbowman_Maya.fxsxml</File>
+    <File md5="6AAC72EF25EF38EC9A3EF7ACB076B398" import="1">Maya_NEU/Crossbow/Longbowman_Maya.gr2</File>
+    <File md5="BB46CB4A84431A517A7277BB868D1FF6" import="1">Maya_NEU/Crossbow/Longbowman_Maya_gloss.dds</File>
+    <File md5="D8E3920E4E43BC5AAEAE90A39B794F84" import="1">Maya_NEU/Longsword/Longswordsman_Maya.dds</File>
+    <File md5="7226AB5A45EB4EA862D5D54D3423E1D7" import="1">Maya_NEU/Longsword/Longswordsman_Maya.fxsxml</File>
+    <File md5="D5E4038AF2A7993208348F42EC8665BC" import="1">Maya_NEU/Longsword/Longswordsman_Maya.gr2</File>
+    <File md5="A9D88650CB1B6152C18E0F565BB36609" import="1">Maya_NEU/Longsword/Longswordsman_Maya_gloss.dds</File>
+    <File md5="2BF217C899625EFFDF23070D3B714233" import="0">Maya_NEU/NEUs_Maya.sql</File>
+    <File md5="33B9183C9C969AC05B4974B4B0E17045" import="0">Maya_NEU/NEUs_Maya_en_US.xml</File>
+    <File md5="0E59E1A644466449A43FE70B7043FC7C" import="1">Maya_NEU/Pikeman/Pikeman_Maya.dds</File>
+    <File md5="9E99766EC51290A0E478E37E5985024A" import="1">Maya_NEU/Pikeman/Pikeman_Maya.fxsxml</File>
+    <File md5="EE30C35F432ACEC9639724E826F95465" import="1">Maya_NEU/Pikeman/Pikeman_Maya.gr2</File>
+    <File md5="254DC5474473E9AACD9B99128B78EC45" import="1">Maya_NEU/Pikeman/Pikeman_Maya_gloss.dds</File>
+    <File md5="5C5A4E7944B6FE02D258010CEF8B739C" import="1">Maya_NEU/Spearman/Spearman_Maya.dds</File>
+    <File md5="F64AA4C4F85587CF7749979C0E452F99" import="1">Maya_NEU/Spearman/Spearman_Maya.fxsxml</File>
+    <File md5="54CF5A217A08ACE2EF889ADC144C4322" import="1">Maya_NEU/Spearman/Spearman_Maya.gr2</File>
+    <File md5="A2461F13249FBA8444921A92F4610276" import="1">Maya_NEU/Spearman/Spearman_Maya_gloss.dds</File>
+    <File md5="208946EC450749F902A71A2DBAE6FA86" import="1">Maya_NEU/Swordsman/Swordsman_Maya.dds</File>
+    <File md5="551EFA6E53C28D851BD293A7CE70DD19" import="1">Maya_NEU/Swordsman/Swordsman_Maya.fxsxml</File>
+    <File md5="16AF194606A3091487332D7A3944D1F5" import="1">Maya_NEU/Swordsman/Swordsman_Maya.gr2</File>
+    <File md5="DF62BD1FE5F28F8F54856121B541690B" import="1">Maya_NEU/Swordsman/Swordsman_Maya_gloss.dds</File>
+    <File md5="F8A90759884CF53F335FF663419B0DD6" import="1">Mongol_NEU/Archer/Archer_Mongol.dds</File>
+    <File md5="A54D02FABADAA520CC9B6ECC72D25958" import="1">Mongol_NEU/Archer/Archer_Mongol.fxsxml</File>
+    <File md5="92BA2C4560DEA00ADF72D3C2DB50B189" import="1">Mongol_NEU/Archer/Archer_Mongol.gr2</File>
+    <File md5="BA71281459EC018C36405AA53E327661" import="1">Mongol_NEU/Archer/Archer_Mongol_gloss.dds</File>
+    <File md5="C9B91DB10120EA7C275840852B33033E" import="1">Mongol_NEU/Composite/Composite_Bowman_Mongol.dds</File>
+    <File md5="7C8F27493F6C27D1808242CDC2D9E874" import="1">Mongol_NEU/Composite/Composite_Bowman_Mongol.fxsxml</File>
+    <File md5="4A9FB69D857218E9E3E17015D83D51C0" import="1">Mongol_NEU/Composite/Composite_Bowman_Mongol.gr2</File>
+    <File md5="2E54EEFE75A302535CB15F2BF011BB11" import="1">Mongol_NEU/Composite/Composite_Bowman_Mongol_gloss.dds</File>
+    <File md5="E852AD5BC109377C27888893AE1D4BDE" import="1">Mongol_NEU/Horseman/Horseman_Mongol.dds</File>
+    <File md5="1E286628CE142B35DDF2AC505EB97E1F" import="1">Mongol_NEU/Horseman/Horseman_Mongol.fxsxml</File>
+    <File md5="53AA25D584C18D723F17C212EA1CEED9" import="1">Mongol_NEU/Horseman/Horseman_Mongol.gr2</File>
+    <File md5="D15C10FBE1007F03B3FF3652CD921F2B" import="1">Mongol_NEU/Horseman/Horseman_Mongol_gloss.dds</File>
+    <File md5="ED76F6C0472BACA1DE4B269178C0501C" import="1">Mongol_NEU/Horseman/Horseman_Mongol_Horse.dds</File>
+    <File md5="C627E588B87462B45FCA54E1911EB127" import="1">Mongol_NEU/Longsword/Longswordsman_Mongol.dds</File>
+    <File md5="3B1FF9E96456FCD688067BF6A74BEE81" import="1">Mongol_NEU/Longsword/Longswordsman_Mongol.fxsxml</File>
+    <File md5="E5ACD1A838D1699C58CF814F98196330" import="1">Mongol_NEU/Longsword/Longswordsman_Mongol.gr2</File>
+    <File md5="D7C54ED54606183390867D8B50CA69B9" import="1">Mongol_NEU/Longsword/Longswordsman_Mongol_gloss.dds</File>
+    <File md5="EFD55AE2F73E80D56E07FB070C1B0355" import="0">Mongol_NEU/NEUs_Mongol.sql</File>
+    <File md5="40D05411F9438DB9A85DB5514193EC0A" import="0">Mongol_NEU/NEUs_Mongol_en_US.xml</File>
+    <File md5="ABD447A572AF572B26E812A6513B0B69" import="1">Mongol_NEU/Pikeman/Pikeman_Mongol.dds</File>
+    <File md5="6E9DD3D10DD16EFD5E6BDC55BCFEDD75" import="1">Mongol_NEU/Pikeman/Pikeman_Mongol.fxsxml</File>
+    <File md5="3491939EA4BE2885FA32BB1CB751EBAA" import="1">Mongol_NEU/Pikeman/Pikeman_Mongol.gr2</File>
+    <File md5="2CE0BEAB7EB0AE796CB179E868857607" import="1">Mongol_NEU/Pikeman/Pikeman_Mongol_gloss.dds</File>
+    <File md5="A1807C48019653B0105E350DD800425E" import="1">Mongol_NEU/Spearman/Spearman_Mongol.dds</File>
+    <File md5="2290C24DC52F3B451A0ACB584C4CF32C" import="1">Mongol_NEU/Spearman/Spearman_Mongol.fxsxml</File>
+    <File md5="4EF2B94DCD17646061DCC4C3E735696C" import="1">Mongol_NEU/Spearman/Spearman_Mongol.gr2</File>
+    <File md5="508B8BB9018317BBF2D7F3F6A114D99D" import="1">Mongol_NEU/Spearman/Spearman_Mongol_gloss.dds</File>
+    <File md5="34EDC8C58D120BC2D311EAB3A8E25A68" import="1">Morocco_NEU/Crossbow/Berber_Crossbowman.fxsxml</File>
+    <File md5="D80720EE9BCC76750F43F28B9F7A0AD5" import="1">Morocco_NEU/Crossbow/Berber_Crossbowman.gr2</File>
+    <File md5="C03C4606D96BD12C527DDA74281E539C" import="1">Morocco_NEU/Crossbow/crossbowman_128.dds</File>
+    <File md5="22AAB1A7DC565A530A747283628CC985" import="1">Morocco_NEU/Crossbow/crossbowman_128_gloss.dds</File>
+    <File md5="CD20F8E9C156C252187D7F51F240FB58" import="1">Morocco_NEU/Musketman/Berber_Musketman.fxsxml</File>
+    <File md5="1F858E1CD0BADC7A2119AC4748EF689E" import="1">Morocco_NEU/Musketman/Berber_Musketman.gr2</File>
+    <File md5="A15193BA30D3F764A1473EAC5984ACC2" import="0">Morocco_NEU/NEUs_Morocco.sql</File>
+    <File md5="F6A556C9867DB091EA62ECC8A9818F98" import="0">Morocco_NEU/NEUs_Morocco_en_US.xml</File>
+    <File md5="3F6ED61A061549F4D32BA6217AB893EB" import="1">Morocco_NEU/Pikeman/Carthage_Pikeman.dds</File>
+    <File md5="545AF0394CA7B3344D72ABD04B3F2989" import="1">Morocco_NEU/Pikeman/Carthage_Pikeman.fxsxml</File>
+    <File md5="4C9F40E9FBC111DF1D86CEBB031DFCB8" import="1">Morocco_NEU/Pikeman/Carthage_Pikeman.gr2</File>
+    <File md5="2BAC24B17A6497229313221F44CE78A9" import="1">Morocco_NEU/Pikeman/Carthage_Pikeman_sref.dds</File>
+    <File md5="EE6FFEF156B9B590F86EE827BCC72BA8" import="1">Morocco_NEU/Spearman/SonghaiMedSpearman.dds</File>
+    <File md5="3BCFF69C075B75F89B212620CEF15DBD" import="1">Morocco_NEU/Spearman/SonghaiMedSpearman.fxsxml</File>
+    <File md5="9E46C9108F3359839ED5951CF21AD65D" import="1">Morocco_NEU/Spearman/SonghaiMedSpearman.gr2</File>
+    <File md5="8E969DF9C1CC83221B8CDE1E797A61A5" import="1">Morocco_NEU/Spearman/SonghaiMedSpearman_sref.dds</File>
+    <File md5="25B613BE382B3C66A7EBC80A90BD91CF" import="1">Morocco_NEU/Warrior/hebrew_warrior.fxsxml</File>
+    <File md5="84AA061DC3E2B5F10B69332480F1D957" import="1">Morocco_NEU/Warrior/hebrew_warrior.gr2</File>
+    <File md5="646D048EF2EA47E2316EB1BEFD1AEE72" import="1">Morocco_NEU/Warrior/hebrew_warrior_diff.dds</File>
+    <File md5="F44599C7A7CE330EC77D7001E2459BE8" import="1">Netherlands_NEU/Destroyer/Admiralen_Class.dds</File>
+    <File md5="E1387CA0B3CCABF9061759D3E6CA3F5E" import="1">Netherlands_NEU/Destroyer/Admiralen_Class.fxsxml</File>
+    <File md5="4EA239E0876576B29060FF867ADC48AD" import="1">Netherlands_NEU/Destroyer/Admiralen_Class.gr2</File>
+    <File md5="5B8E69748EDEEE373F152EA47CF9CF74" import="1">Netherlands_NEU/Destroyer/Admiralen_Class_gloss.dds</File>
+    <File md5="D6D28C4B19091E0FEDF8D09C5A010D41" import="1">Netherlands_NEU/ModernArmor/Leopard 1A3 Netherlands.dds</File>
+    <File md5="0C6F8741F7D47DAC62AAF28247A1791C" import="1">Netherlands_NEU/ModernArmor/Leopard1_Netherlands.fxsxml</File>
+    <File md5="48D2988E9A1915463B91D8D77815052A" import="1">Netherlands_NEU/ModernArmor/Leopard1_Netherlands.gr2</File>
+    <File md5="C375DE8DCD6CF296BFD7EF4CF4DD7E15" import="0">Netherlands_NEU/NEUs_Netherlands.sql</File>
+    <File md5="52BA0FC3D2992FBCD14F009E1079DE4B" import="0">Netherlands_NEU/NEUs_Netherlands_en_US.xml</File>
+    <File md5="5A1558520785D60443AFA245AD4DCAD7" import="1">Netherlands_NEU/Paratrooper/Paratrooper_Dutch.dds</File>
+    <File md5="0FB089336F72A3192F38504E8DA3A6C2" import="1">Netherlands_NEU/Paratrooper/Paratrooper_Dutch.fxsxml</File>
+    <File md5="FE5000CBB9B137F21E1FDC3282EF1B60" import="1">Netherlands_NEU/Paratrooper/Paratrooper_Dutch.gr2</File>
+    <File md5="8C80DD1D327619DD97820B6ED6288361" import="1">Netherlands_NEU/Paratrooper/Paratrooper_Dutch_MG.fxsxml</File>
+    <File md5="F5F688532EB770549C285BB5BB462EC1" import="1">Netherlands_NEU/Paratrooper/Paratrooper_Dutch_MG.gr2</File>
+    <File md5="35AD20F57B83061ED200E1BA05808393" import="1">Netherlands_NEU/Rifleman/civ5_dutrm1.fxsxml</File>
+    <File md5="CA4CB41302BD1F6A53019973EFAC918B" import="1">Netherlands_NEU/Rifleman/civ5_dutrm1.gr2</File>
+    <File md5="18E684D15CEBEDE512C24179A25FD59A" import="1">Netherlands_NEU/Rifleman/dutrm1.dds</File>
+    <File md5="5F605645538998ECD1A412FE6237A189" import="1">Netherlands_NEU/Rifleman/dutrm1_sref.dds</File>
+    <File md5="F81053309E317AADD108DD602247DDA3" import="1">Netherlands_NEU/Spearman/BatavianSpearman.dds</File>
+    <File md5="4566EBF3435BAA23A27682589F52FC20" import="1">Netherlands_NEU/Spearman/BatavianSpearman.fxsxml</File>
+    <File md5="FF8DCAFFCB848C0607B0DC062795FFC6" import="1">Netherlands_NEU/Spearman/BatavianSpearman.gr2</File>
+    <File md5="BDFC6D62949286058EF83C94580CC5D7" import="1">Netherlands_NEU/Spearman/BatavianSpearman_sref.dds</File>
+    <File md5="D7E051FA48C6045827115DB3F28C6C3C" import="1">Netherlands_NEU/Tank/MTSL-1GI4.dds</File>
+    <File md5="8FC40FE8D6E08DFD79B514236D76F913" import="1">Netherlands_NEU/Tank/MTSL-1GI4.fxsxml</File>
+    <File md5="3DF10AECA7023E4DF99992C16EC3A5DA" import="1">Netherlands_NEU/Tank/MTSL-1GI4.gr2</File>
+    <File md5="F5F878941E755790F21EB64BFBA7EC07" import="1">Iroquois_NEU/Musketman/civ5_iromu1.fxsxml</File>
+    <File md5="6B28AD9158C11028078B5D43A1D5D1C1" import="1">Iroquois_NEU/Musketman/civ5_iromu1.gr2</File>
+    <File md5="2AC1E94E4C7BDF54A411BEFA71A8DF05" import="1">Iroquois_NEU/Musketman/iromu1.dds</File>
+    <File md5="4EB1A39D6CE0082BC25F7C61688F9FD0" import="1">Iroquois_NEU/Musketman/iromu1_sref.dds</File>
+    <File md5="397D748A09ED751BD2346A4B6D8FD68C" import="1">Ottoman_NEU/Crossbow/Crossbowman_Turkey.dds</File>
+    <File md5="73DEA72EBEDA37BEEF22D551E2D72426" import="1">Ottoman_NEU/Crossbow/Crossbowman_Turkey.fxsxml</File>
+    <File md5="4ECECA68E951792E6D37905DFAC609C9" import="1">Ottoman_NEU/Crossbow/Crossbowman_Turkey.gr2</File>
+    <File md5="1B699EB44EBE0749A633120003B2AAD0" import="1">Ottoman_NEU/Crossbow/Crossbowman_Turkey_gloss.dds</File>
+    <File md5="EC40DAE6D2698D04BB03EB891E4B5293" import="1">Ottoman_NEU/GWI/ottgw1.dds</File>
+    <File md5="9CFDBB399C0C0C10ABED71CEFD0890CA" import="1">Ottoman_NEU/GWI/ottgw1.fxsxml</File>
+    <File md5="FB916DDBBA30491CF610033695032799" import="1">Ottoman_NEU/GWI/ottgw1.gr2</File>
+    <File md5="3498CC92A8BD3F34540BF5EB8E40A4BD" import="1">Ottoman_NEU/Horseman/Horseman_Turkey.dds</File>
+    <File md5="F38D19328D14A38612E5CCFE5554A480" import="1">Ottoman_NEU/Horseman/Horseman_Turkey.fxsxml</File>
+    <File md5="F5A9C1A3C0A23E8C0929E2D43805FEE7" import="1">Ottoman_NEU/Horseman/Horseman_Turkey.gr2</File>
+    <File md5="B520BF3F53768555638871DC646E4096" import="1">Ottoman_NEU/Horseman/Horseman_Turkey_gloss.dds</File>
+    <File md5="651AD041BBB81FA07E533C347AB2382D" import="1">Ottoman_NEU/Horseman/Horseman_Turkey_Horse.dds</File>
+    <File md5="66F2F3F3093C26E592BBAF1326BCF24C" import="1">Ottoman_NEU/Longsword/Longswordsman_Turkey_v2.dds</File>
+    <File md5="25C4558902A228F6790EBA195FE88427" import="1">Ottoman_NEU/Longsword/Longswordsman_Turkey_v2.fxsxml</File>
+    <File md5="C5D97685B3F5898A6CF15F40867DE7CF" import="1">Ottoman_NEU/Longsword/Longswordsman_Turkey_v2.gr2</File>
+    <File md5="C2591981A6895E273181CB680D2568CE" import="1">Ottoman_NEU/Longsword/Longswordsman_Turkey_v2_gloss.dds</File>
+    <File md5="D5AF8811B03C8C8316A85C3F5895D316" import="0">Ottoman_NEU/NEUs_Ottoman.sql</File>
+    <File md5="750C715A6795680DBC2D2303BB7A4F07" import="0">Ottoman_NEU/NEUs_Ottoman_en_US.xml</File>
+    <File md5="7FD57C6CDFE46E6115CB7EEEC2EC4E5C" import="1">Ottoman_NEU/Pikeman/Pikeman_Turkey.dds</File>
+    <File md5="2A982F8AD9C5CB054B45006A7433AAC7" import="1">Ottoman_NEU/Pikeman/Pikeman_Turkey.fxsxml</File>
+    <File md5="07DFAF9F4AEAB7465D9EED4686510783" import="1">Ottoman_NEU/Pikeman/Pikeman_Turkey.gr2</File>
+    <File md5="E2578E213A34D9E8A1B30F6C89355DC8" import="1">Ottoman_NEU/Pikeman/Pikeman_Turkey_gloss.dds</File>
+    <File md5="FF1B0E9B63C08A34D10F88F8021AE3ED" import="1">Ottoman_NEU/Rifleman/civ5_ottrm.fxsxml</File>
+    <File md5="427FC48CE0D91A51F2756213791FFE16" import="1">Ottoman_NEU/Rifleman/civ5_ottrm.gr2</File>
+    <File md5="62D4A2FBA25E779916D14E3114FF5B0A" import="1">Ottoman_NEU/Rifleman/ottrm_diff.dds</File>
+    <File md5="E4A60521B407070E1E28957DC3DC6B3E" import="1">Ottoman_NEU/Rifleman/ottrm_sref.dds</File>
+    <File md5="C06767F0B34B4BE6F3DEBF579F649286" import="1">Persia_NEU/Archer/Archer_Persia.dds</File>
+    <File md5="3C33ACEF76C91D3C21B6A6233309F5AE" import="1">Persia_NEU/Archer/Archer_Persia.fxsxml</File>
+    <File md5="7850701EF44029684612AE3B3BE128D8" import="1">Persia_NEU/Archer/Archer_Persia.gr2</File>
+    <File md5="173E74084501374898D550F60929FCCE" import="1">Persia_NEU/Archer/Archer_Persia_gloss.dds</File>
+    <File md5="78A6F2883C4C21D3323A8A81CE9DD530" import="1">Persia_NEU/Lancer/Qizilbash.fxsxml</File>
+    <File md5="BF7A0B5266C995DE0186619E36177D6D" import="1">Persia_NEU/Lancer/Qizilbash.gr2</File>
+    <File md5="D192F7FD909322517282A0921EC8E266" import="1">Persia_NEU/Lancer/Qizilbash_Horse_diff.dds</File>
+    <File md5="E625CA5926A4051425188E4BA8DC293D" import="1">Persia_NEU/Lancer/Qizilbash_Horse_sref.dds</File>
+    <File md5="A6006F4D12DA75430F2FFF4D3D413BAC" import="1">Persia_NEU/Lancer/Qizilbash_Rider_diff.dds</File>
+    <File md5="74417EFAEF1EF645B98C57E6C69C7DD2" import="1">Persia_NEU/Lancer/Qizilbash_Rider_sref.dds</File>
+    <File md5="6EB5DC19784BBEB824ACE0931180A1D7" import="1">Persia_NEU/ModernArmor/T72 Iran.dds</File>
+    <File md5="387C6F60FDEFC2A0F98BAA91A40FBAC2" import="1">Persia_NEU/ModernArmor/T72_Iran.fxsxml</File>
+    <File md5="9671A01684BEEB563FB4823CAA53080D" import="1">Persia_NEU/ModernArmor/T72_Iran.gr2</File>
+    <File md5="724E779C65D6E2F2566638B42DCEC6C9" import="0">Persia_NEU/NEUs_Persia.sql</File>
+    <File md5="42DE37F8333E42E842F4186C906F4086" import="0">Persia_NEU/NEUs_Persia_en_US.xml</File>
+    <File md5="1CCB3567DF72C75BA62AA8275D588306" import="1">Persia_NEU/Pikeman/Pikeman_Persia.dds</File>
+    <File md5="52B06F94A8ED3E5877080F5C00F42599" import="1">Persia_NEU/Pikeman/Pikeman_Persia.fxsxml</File>
+    <File md5="114F8DD2176B45AA1A1975A90731E042" import="1">Persia_NEU/Pikeman/Pikeman_Persia.gr2</File>
+    <File md5="76315388462AAB600B28D495AF7BF720" import="1">Persia_NEU/Pikeman/Pikeman_Persia_gloss.dds</File>
+    <File md5="6EB8CD2A28752915511744F557FE88E2" import="1">Persia_NEU/Rifleman/civ5_perrm.fxsxml</File>
+    <File md5="AA7432EDE551A82B13F2E875CC997CE0" import="1">Persia_NEU/Rifleman/civ5_perrm.gr2</File>
+    <File md5="D3A842AB3F644AE0C0A76970E84343F8" import="1">Persia_NEU/Rifleman/perrm_diff.dds</File>
+    <File md5="D4EC9E8B72A7AF8989889F2A665793B6" import="1">Persia_NEU/Rifleman/perrm_sref.dds</File>
+    <File md5="9C2E926B5E1FA6812ABBAA6B4ACC033F" import="1">Persia_NEU/Spearman/Spearman_Persia.dds</File>
+    <File md5="015B59E98CDD4C873557D99FB548E9E7" import="1">Persia_NEU/Spearman/Spearman_Persia.fxsxml</File>
+    <File md5="4C844DD5E55E99892A2914865D1412A6" import="1">Persia_NEU/Spearman/Spearman_Persia.gr2</File>
+    <File md5="7670C6EEFCCA7B91E79C949741DF46A0" import="1">Persia_NEU/Spearman/Spearman_Persia_gloss.dds</File>
+    <File md5="71940A02E6BDDA1D627A9BF449AF99E1" import="1">Poland_NEU/Crossbow/Crossbowman_Russia.dds</File>
+    <File md5="AE46B320E342A76BB6E97BF118C8BACD" import="1">Poland_NEU/Crossbow/Crossbowman_Russia.fxsxml</File>
+    <File md5="4266286F520F1DD58261098C7DA35839" import="1">Poland_NEU/Crossbow/Crossbowman_Russia.gr2</File>
+    <File md5="A67605ECEB608FA7F06E890B0633CC70" import="1">Poland_NEU/Crossbow/Crossbowman_Russia_gloss.dds</File>
+    <File md5="BB0485CA529E93BA2C40A94453652F85" import="1">Poland_NEU/Fighter/PZL_P.23_Karas.dds</File>
+    <File md5="D58F7F4B49C42F4533A8247600A3B415" import="1">Poland_NEU/Fighter/PZL_P.23_Karas.fxsxml</File>
+    <File md5="3365AA88BE89516C6EA8628EA00293D9" import="1">Poland_NEU/Fighter/PZL_P.23_Karas.gr2</File>
+    <File md5="C51D95D858C7892A61516E396FB59FCE" import="1">Poland_NEU/Fighter/PZL_P.23_Karas_2.dds</File>
+    <File md5="24CF5004E9FB0E1D93CF6BEE2A5771E6" import="1">Poland_NEU/Fighter/PZL_P.23_Karas_gloss.dds</File>
+    <File md5="3EBC6A0521CA5FDBC766DC4174234DDD" import="1">Poland_NEU/Knight/Pikeman_German.dds</File>
+    <File md5="4D87BF531E85B7F4B88C5CA1A511EE69" import="1">Poland_NEU/Knight/Pikeman_German_gloss.dds</File>
+    <File md5="6BC8C08D38F389A7C60A6AEEDE23FEF9" import="1">Poland_NEU/Knight/sv_Vitez.dds</File>
+    <File md5="7FAFE7DF652FAD40CC83221D9F572FDC" import="1">Poland_NEU/Knight/Vitez.dds</File>
+    <File md5="5AF3F6E55DCCF7380216BA1B1B21F5ED" import="1">Poland_NEU/Knight/Vitez.fxsxml</File>
+    <File md5="A2C565F0C2A508CE4B57F1AE0E80D2A9" import="1">Poland_NEU/Knight/Vitez.gr2</File>
+    <File md5="C975C7A67F092DCC73E0FFE781D22964" import="1">Poland_NEU/Knight/Vitez_gloss.dds</File>
+    <File md5="670FFA14CC5524D79F0A7BF0CCA71D61" import="1">Poland_NEU/Knight/Vitez_Horse.dds</File>
+    <File md5="57B63AE12597E381B7FBAE221F9BD14F" import="1">Poland_NEU/Knight/Vitez_Horse_gloss.dds</File>
+    <File md5="231D428C5D8842299D51A648FDCAF146" import="1">Poland_NEU/Longsword/Longswordsman_Russia.dds</File>
+    <File md5="434270EF623B1008157A3AC8B2ED60AF" import="1">Poland_NEU/Longsword/Longswordsman_Russia.fxsxml</File>
+    <File md5="054D72E4B128D5904381CBF95F44F934" import="1">Poland_NEU/Longsword/Longswordsman_Russia.gr2</File>
+    <File md5="715CEE9264ABF9DA6602698CF519BA1E" import="1">Poland_NEU/Longsword/Longswordsman_Russia_gloss.dds</File>
+    <File md5="D2289F53AD9443A5C09E914BB65602C9" import="0">Poland_NEU/NEUs_Poland.sql</File>
+    <File md5="7B35C7510E5A69F18A64555F92870FC1" import="0">Poland_NEU/NEUs_Poland_en_US.xml</File>
+    <File md5="1AE1002FE7C042E64FF1596514D28952" import="1">Poland_NEU/Swordsman/civ5_russm1.fxsxml</File>
+    <File md5="ACFE3A2A529094F0DEC47224596081AC" import="1">Poland_NEU/Swordsman/civ5_russm1.gr2</File>
+    <File md5="03DD60C0AD95CBF0B05A6C3D19C7C611" import="1">Poland_NEU/Swordsman/russm1.dds</File>
+    <File md5="C4478BE8E83297B54C277D9B5B2ACE3F" import="1">Poland_NEU/Swordsman/russm1_sref.dds</File>
+    <File md5="4B9CB736E42E199905390BF0DC5A4F2D" import="1">Poland_NEU/Tank/10TP.dds</File>
+    <File md5="CFF849C4CB8899CAF335DA12D7AAEC58" import="1">Poland_NEU/Tank/10TP.fxsxml</File>
+    <File md5="CB3290B32285BDC831C9D16743E76FAF" import="1">Poland_NEU/Tank/10TP.gr2</File>
+    <File md5="816473957AA79CDC635A337CC838D0BD" import="1">Polynesia_NEU/Archer/hawaii_ikaika.fxsxml</File>
+    <File md5="C2AD90F157A7850255AB6118F9771BC1" import="1">Polynesia_NEU/Archer/hawaii_ikaika.gr2</File>
+    <File md5="4B287F1BF3990715DD536722531E8595" import="1">Polynesia_NEU/Archer/hawaii_ikaika_diff.dds</File>
+    <File md5="F0C52B17A20219287233D3049BBF928F" import="1">Polynesia_NEU/Archer/hawaii_ikaika_sref.dds</File>
+    <File md5="DFC611F97679BBD2E5DB9614FA0622D2" import="1">Polynesia_NEU/Composite/matatoa.fxsxml</File>
+    <File md5="9ADFCAC1A0B6D209F6184086EEC5C71D" import="1">Polynesia_NEU/Composite/matatoa.gr2</File>
+    <File md5="A4C6978C94D028491B1B77C9872F19CB" import="1">Polynesia_NEU/Composite/matatoa_diff.dds</File>
+    <File md5="0FB8D6CC9A4E354ABCFDD1E7036CFC2F" import="0">Polynesia_NEU/NEUs_Polynesia.sql</File>
+    <File md5="4737DFA5A6E60225AFB4289DE2C78724" import="0">Polynesia_NEU/NEUs_Polynesia_en_US.xml</File>
+    <File md5="5226BA74351CAEC2505DEA66E0C41702" import="1">Polynesia_NEU/Privateer/Eia.fxsxml</File>
+    <File md5="7B5822545B4D80B5315E88B4615A8036" import="1">Polynesia_NEU/Privateer/Eia.gr2</File>
+    <File md5="1459036F5971A8F3A057E3979592A096" import="1">Polynesia_NEU/Privateer/Eia_DIFF.dds</File>
+    <File md5="7CACF10537175457822EAEF1A96C2289" import="1">Polynesia_NEU/Privateer/Eia_DMG_DIFF.dds</File>
+    <File md5="E2150712B3D2F3D02295E22ABC6944F5" import="1">Polynesia_NEU/Privateer/Eia_DMG_SREF.dds</File>
+    <File md5="F0AD3F38705A75DA1242B813AEB75192" import="1">Polynesia_NEU/Privateer/Eia_SREF.dds</File>
+    <File md5="6EFBB860211F883363FA82788C1AA84C" import="1">Polynesia_NEU/Swordsman/PolynesianFootman.fxsxml</File>
+    <File md5="8B68C00CB7A658046B9CB0DF24515DD8" import="1">Polynesia_NEU/Swordsman/PolynesianFootman.gr2</File>
+    <File md5="ED9A192326DB2244E55E7D45987C3619" import="1">Polynesia_NEU/Swordsman/PolySword.dds</File>
+    <File md5="BFD0CAB753CFD34C8026863211572F12" import="1">Polynesia_NEU/Swordsman/PolySword_sref.dds</File>
+    <File md5="AB1CC45D50BB74ADCAEA0C74C8046055" import="1">Polynesia_NEU/Warrior/Oceanic_warrior.fxsxml</File>
+    <File md5="BB0E490506E4563DFB7C3C6E02CA195D" import="1">Polynesia_NEU/Warrior/Oceanic_warrior.gr2</File>
+    <File md5="ECEAEFDC80E331D04B33C4ADDB23CAC5" import="1">Polynesia_NEU/Warrior/Oceanic_warrior_128.dds</File>
+    <File md5="BF2DC2C9261D3DFE431BE09F79479E94" import="1">Portugal_NEU/Galleon/portuguese_galleon.fxsxml</File>
+    <File md5="4ADF2418176959AD2D62E6DC75347AF2" import="1">Portugal_NEU/Galleon/portuguese_galleon.gr2</File>
+    <File md5="FF4496CF46951B43A47B77F29ED4686F" import="1">Portugal_NEU/Galleon/portuguese_galleon_diff.dds</File>
+    <File md5="8B36496957C8765AC981F7A79A855D59" import="1">Portugal_NEU/JetFighter/A-7Portugal.fxsxml</File>
+    <File md5="DEAB52282FE7E5592FBCCE76DE8E72E9" import="1">Portugal_NEU/JetFighter/A-7Portugal.gr2</File>
+    <File md5="9E5F0D20B1F6B0D5B6AA2FE2FFD87B04" import="1">Portugal_NEU/JetFighter/A-7Portugal_diff.dds</File>
+    <File md5="44A38E7237405AB893A3C236C5C89C66" import="1">Portugal_NEU/JetFighter/A-7_sref.dds</File>
+    <File md5="5CAB86C72F619E5F2665C54D5E2842C0" import="1">Portugal_NEU/Longswordsman/portugal_longsw8.dds</File>
+    <File md5="E5404A3468F89D1AAB72A442A199ECE0" import="1">Portugal_NEU/Longswordsman/portugal_longsw8.fxsxml</File>
+    <File md5="A7478E8631446AFE7BD6046077E6EED3" import="1">Portugal_NEU/Longswordsman/portugal_longsw8.gr2</File>
+    <File md5="130EA014F2B538C528839E9399390F4D" import="0">Portugal_NEU/NEUs_Portugal.sql</File>
+    <File md5="A7BC75DFB86E018B3427950DF0FE5D23" import="0">Portugal_NEU/NEUs_Portugal_en_US.xml</File>
+    <File md5="04F734EEDCC46D72EA68E017185B32E1" import="1">Portugal_NEU/Spearman/PortugalSpearman.dds</File>
+    <File md5="A365A8575E101EB09030BA225CBE95B4" import="1">Portugal_NEU/Spearman/PortugalSpearman.fxsxml</File>
+    <File md5="E35D9BFD5E6734552BBF9803626B92A0" import="1">Portugal_NEU/Spearman/PortugalSpearman.gr2</File>
+    <File md5="46B9A51F498B828CB0F5FC9442D69846" import="1">Portugal_NEU/Spearman/PortugalSpearman_sref.dds</File>
+    <File md5="241F5CE13177FB9EED41297BF88462B5" import="1">Portugal_NEU/Tank/A12_Matilda_II_5.dds</File>
+    <File md5="599806F137C9801689B3C773B89E5540" import="1">Portugal_NEU/Tank/A12_Matilda_II_5.fxsxml</File>
+    <File md5="1EA613E23A0518E225940605FBA5C18E" import="1">Portugal_NEU/Tank/A12_Matilda_II_5.gr2</File>
+    <File md5="5F9706AF86C6B05B039B5EA2782B19A0" import="1">Portugal_NEU/Warrior/Caetranann.dds</File>
+    <File md5="E0E06DE4CEBB489D9CD62148AE0A2507" import="1">Portugal_NEU/Warrior/Caetranann.fxsxml</File>
+    <File md5="B0970C5C66D5C851CDF7C78B613B1445" import="1">Portugal_NEU/Warrior/Caetranann.gr2</File>
+    <File md5="E47067275ACFD6922C09E56AA4C8A276" import="1">Portugal_NEU/Warrior/Caetranann_sref.dds</File>
+    <File md5="FECFD71AFBA14FD54FEDA93C9B2E418A" import="1">Rome_NEU/Composite/Composite_Bowman_Rome.dds</File>
+    <File md5="A3ABF89C778B2D07E5A0EA5667D0B193" import="1">Rome_NEU/Composite/Composite_Bowman_Rome.fxsxml</File>
+    <File md5="C9AD561D4E331DE6A4BCE0E6E36E4798" import="1">Rome_NEU/Composite/Composite_Bowman_Rome.gr2</File>
+    <File md5="F63104CF3DEF3CC7F01F5A1016F5DD96" import="1">Rome_NEU/Composite/Composite_Bowman_Rome_gloss.dds</File>
+    <File md5="60A657C8C333BF8E957672E00BA5CFE4" import="1">Rome_NEU/Crossbow/Crossbowman_Rome.dds</File>
+    <File md5="60B1A7367F306200B7FABCB80D2939C5" import="1">Rome_NEU/Crossbow/Crossbowman_Rome.fxsxml</File>
+    <File md5="EBB1E44ACB2E96CC1A96058E480EDE23" import="1">Rome_NEU/Crossbow/Crossbowman_Rome.gr2</File>
+    <File md5="259D81DBA51B65CAF360E5344681EC48" import="1">Rome_NEU/Crossbow/Crossbowman_Rome_gloss.dds</File>
+    <File md5="DF527F3E69F8B8083512A3CBE6D85809" import="1">Rome_NEU/Horseman/Horseman_Rome_Horse.dds</File>
+    <File md5="91686222A16DA7699F51F730325C407C" import="1">Rome_NEU/Horseman/Horseman_Rome_v2.dds</File>
+    <File md5="9B167908F3BDABA7CD47909F28075B86" import="1">Rome_NEU/Horseman/Horseman_Rome_v2.fxsxml</File>
+    <File md5="3A5E88EA25008501B44654B8E21E7C53" import="1">Rome_NEU/Horseman/Horseman_Rome_v2.gr2</File>
+    <File md5="A8D70A44AEDAD1C6F9B3915BBD940D49" import="1">Rome_NEU/Horseman/Horseman_Rome_v2_gloss.dds</File>
+    <File md5="5A6FA22FD370EA8CEB7B6ACB66770483" import="1">Rome_NEU/Knight/Knight_Rome.dds</File>
+    <File md5="40EB91CB31600ADEA883E81655F526D9" import="1">Rome_NEU/Knight/Knight_Rome.fxsxml</File>
+    <File md5="202B830477112B7548DB5499BA28568E" import="1">Rome_NEU/Knight/Knight_Rome.gr2</File>
+    <File md5="47997E30BBA4708E7F253CD117EFEFDE" import="1">Rome_NEU/Knight/Knight_Rome_gloss.dds</File>
+    <File md5="65EA6B34F82B1396FDD112B101D38513" import="1">Rome_NEU/Knight/Knight_Rome_Horse.dds</File>
+    <File md5="326C06A05AFDDC7FE8509659F7B1764D" import="1">Rome_NEU/Knight/Knight_Rome_Horse_gloss.dds</File>
+    <File md5="00846F995AFE1CE6F4024E6B860F9603" import="0">Rome_NEU/NEUs_Rome.sql</File>
+    <File md5="B60FE01FBD7091C4F29C4276CCB40AEA" import="0">Rome_NEU/NEUs_Rome_en_US.xml</File>
+    <File md5="1BABC3C612220AE7F64A462D9E3ED4B6" import="1">Rome_NEU/Pikeman/Pikeman_Rome.dds</File>
+    <File md5="A438414496F89BE8BD2D6F1CE794BC16" import="1">Rome_NEU/Pikeman/Pikeman_Rome.fxsxml</File>
+    <File md5="04DB3BDCC46C8815E0145C6DA775C19B" import="1">Rome_NEU/Pikeman/Pikeman_Rome.gr2</File>
+    <File md5="C9EF0371967420CC23227455CE8B6915" import="1">Rome_NEU/Pikeman/Pikeman_Rome_gloss.dds</File>
+    <File md5="0AB683A2D975282566B4BC84838F38E0" import="1">Rome_NEU/Spearman/Spearman_Rome.dds</File>
+    <File md5="2EE72415B26CB30CDB24FD9BF3E4D29C" import="1">Rome_NEU/Spearman/Spearman_Rome.fxsxml</File>
+    <File md5="23917AB6812203526501CDCC5F549B62" import="1">Rome_NEU/Spearman/Spearman_Rome.gr2</File>
+    <File md5="BA6F982FC057EF401F3DF1F2E54E1F32" import="1">Rome_NEU/Spearman/Spearman_Rome_gloss.dds</File>
+    <File md5="F1511FC68F0BBB1C347B3E937A9B4AB4" import="1">Russia_NEU/Bomber/EAW_Tu-95.fxsxml</File>
+    <File md5="3A7CF0C78221C97B915178D72BD1972E" import="1">Russia_NEU/Bomber/fx_triggers_EAW_Tu95.ftsxml</File>
+    <File md5="B42CCE2DAD4FC9CD7FD07614E4C6AECD" import="1">Russia_NEU/Bomber/Russia_Bomber_Flag.dds</File>
+    <File md5="BC73597BBE73D122520939F0CDAC1D6C" import="1">Russia_NEU/Bomber/Tu-95.gr2</File>
+    <File md5="230356034CFF1B81B38F46FB0C80EAC4" import="1">Russia_NEU/Bomber/Tu-95_diff.dds</File>
+    <File md5="E938E2E61BDCFC60F1C8E890DB620D70" import="1">Russia_NEU/Bomber/Tu-95_sref.dds</File>
+    <File md5="229F986B4A9863AF1B3B33C3C463038A" import="1">Russia_NEU/Helicopter/Mi8Russia.dds</File>
+    <File md5="CA55EFE72DAF32CB6D9D249A8A12B625" import="1">Russia_NEU/Helicopter/Mi8Russia.fxsxml</File>
+    <File md5="2C97E3353A78B5B67D0081E3EC106492" import="1">Russia_NEU/Helicopter/Mi8Russia.gr2</File>
+    <File md5="1B3E15D722572F49B6A2042A86E12727" import="1">Russia_NEU/Infantry/Infantry_Russia.dds</File>
+    <File md5="462A1D0CCACE955EF40B3A859FD8B6C2" import="1">Russia_NEU/Infantry/Infantry_Russia.fxsxml</File>
+    <File md5="953DAF86DB8C04C78BED65E553DC8A1C" import="1">Russia_NEU/Infantry/Infantry_Russia.gr2</File>
+    <File md5="AF0C8E8F8A6780D0E3E98F7E62906597" import="1">Russia_NEU/Marine/AN-94_diff.dds</File>
+    <File md5="0B21E2FE884261F66A2265B7D9A2654D" import="1">Russia_NEU/Marine/AN-94_sref.dds</File>
+    <File md5="33D41B5CD81094144F73E7CF4172E055" import="1">Russia_NEU/Marine/RussianSF.fxsxml</File>
+    <File md5="3C87FBB8DBA9E964C5A2D31B149A304D" import="1">Russia_NEU/Marine/RussianSF.gr2</File>
+    <File md5="E637EFDAB776734D089AE9126ADC96F8" import="1">Russia_NEU/Marine/RussianSF_diff.dds</File>
+    <File md5="CB36AB12AD6FE9D9B9AFD31103A7FCDA" import="1">Russia_NEU/Marine/RussianSF_sref.dds</File>
+    <File md5="7911125E76703C4254DA457591943F13" import="0">Russia_NEU/NEUs_Russia.sql</File>
+    <File md5="B5672E96242AFB46D72CC1AA1E22DCAE" import="0">Russia_NEU/NEUs_Russia_en_US.xml</File>
+    <File md5="8ACA9749D845DD750AF3FF075A6718BB" import="1">Russia_NEU/Rifleman/civ5_rusrm.fxsxml</File>
+    <File md5="46477A7442BC02A0E929F343F1331FB1" import="1">Russia_NEU/Rifleman/civ5_rusrm.gr2</File>
+    <File md5="22A5EF2ED3031BE4719A59C1721491C9" import="1">Russia_NEU/Rifleman/rusrm_diff.dds</File>
+    <File md5="BE296DB0988F1566C8C5AB5422E6DE85" import="1">Russia_NEU/Rifleman/rusrm_sref2.dds</File>
+    <File md5="8CB8D26DB082CC4A925B929D4849941A" import="1">Russia_NEU/Tank/T-34-85.dds</File>
+    <File md5="15B5C478F8D4F74923825DED26E1B058" import="1">Russia_NEU/Tank/T-34-85.fxsxml</File>
+    <File md5="B37EEF3C9301471DB48719A72DEB6A6B" import="1">Russia_NEU/Tank/T-34-85.gr2</File>
+    <File md5="17FE9F1C9A4AFF2C233918CB06DFE03C" import="1">Shoshone_NEU/Knight/Sioux_Horse_diff.dds</File>
+    <File md5="0794A830C9556E3F5399F732FF58D0E8" import="1">Shoshone_NEU/Knight/Sioux_Knight.fxsxml</File>
+    <File md5="1B79260B6E4A1B8BE970D29742B2818A" import="1">Shoshone_NEU/Knight/Sioux_Knight.gr2</File>
+    <File md5="A47CA0E8A0FF3AE2136B2AC4BF581C7B" import="1">Shoshone_NEU/Knight/Sioux_Knight_diff.dds</File>
+    <File md5="92E0A1198B91BAAB5657CF8E0F81C48F" import="0">Shoshone_NEU/NEUs_Shoshone.sql</File>
+    <File md5="2D87EC14100A470B2FF31453138BFB1F" import="0">Shoshone_NEU/NEUs_Shoshone_en_US.xml</File>
+    <File md5="A9E0CACC63479AAB05FB0158A22B4F16" import="1">Siam_NEU/Artillery/155mmDeBang.dds</File>
+    <File md5="C3C43DF845CB9E9C7215048A891CE49C" import="1">Siam_NEU/Artillery/155mmDeBang.fxsxml</File>
+    <File md5="9C3114EB6B9218C3AC35B2561174DE79" import="1">Siam_NEU/Artillery/155mmDeBangSREF.dds</File>
+    <File md5="7CAF7819C6902482B190F62AEF6F6541" import="1">Siam_NEU/Artillery/DeBang3.gr2</File>
+    <File md5="174F1EF3FF1296B96FC4F9BAA51429A7" import="1">Siam_NEU/Artillery/GenericRifleman.dds</File>
+    <File md5="70164AD48AAAB8B9B6ADA634E384BA84" import="1">Siam_NEU/JetFighter/A-7.fxsxml</File>
+    <File md5="D6312AC7B3CDE1BA3C65EC4719893147" import="1">Siam_NEU/JetFighter/A-7.gr2</File>
+    <File md5="496410EA5868982493EE7390B2878300" import="1">Siam_NEU/JetFighter/A-7_diff.dds</File>
+    <File md5="B82F1231E256A7AA13A9A4B4A4114B99" import="1">Siam_NEU/JetFighter/A-7_sref.dds</File>
+    <File md5="9BA5B5BEFC03803F7B00448509FE9AC2" import="0">Siam_NEU/NEUs_Siam.sql</File>
+    <File md5="1EE4D97011214A361691C3CFE090BDB1" import="0">Siam_NEU/NEUs_Siam_en_US.xml</File>
+    <File md5="EFC2F3CD55E673449FB96A3B6F20DDDC" import="1">Siam_NEU/Rifleman/civ5_siarm1.fxsxml</File>
+    <File md5="5157C4A4DC3488CBA3F81E99C4D7BAB5" import="1">Siam_NEU/Rifleman/civ5_siarm1.gr2</File>
+    <File md5="BABA9DCCEAAE9EE5B4E7F6FA1E7EEBFB" import="1">Siam_NEU/Rifleman/siarm1.dds</File>
+    <File md5="81B35815BDA93C7B9558232B5E550D84" import="1">Siam_NEU/Rifleman/siarm1_sref.dds</File>
+    <File md5="E1E67AE1EF0F92F7A49283929A3B5949" import="1">Siam_NEU/Dragoon/Siamese_Mounted_Arquebus.fxsxml</File>
+    <File md5="2AE1F9E4B6AE170448ACC500CDDD4B5C" import="1">Siam_NEU/Dragoon/Siamese_Mounted_Arquebus.gr2</File>
+    <File md5="FC9114008D36F4CCBF3C2FFD1DD0AFFF" import="1">Siam_NEU/Horseman/Horseman_Russia_v2.dds</File>
+    <File md5="CAD0C574A0561895066002FFCFEB8751" import="1">Siam_NEU/Horseman/Horseman_Russia_v2.fxsxml</File>
+    <File md5="47709F704495732565D158CA969551BC" import="1">Siam_NEU/Horseman/Horseman_Russia_v2.gr2</File>
+    <File md5="26BC461AA634CC807D2141EC83B1DC17" import="1">Siam_NEU/Horseman/Horseman_Russia_v2_gloss.dds</File>
+    <File md5="29B32B63556CF5F76BAAD52EC1C21CE4" import="1">Siam_NEU/Infantry/Siamese_WW2.dds</File>
+    <File md5="1BA0B8F583BFD92259DB306714CCE9D6" import="1">Siam_NEU/Infantry/Siamese_WW2.fxsxml</File>
+    <File md5="D2EFC26753529CEE6FB1A5ED4927712A" import="1">Siam_NEU/Infantry/Siamese_WW2.gr2</File>
+    <File md5="D547D425BD35A87B72B6A098C317435F" import="1">Siam_NEU/Musketman/Siamese_Musketman.dds</File>
+    <File md5="8C1E8297BC27B16D48A9F225D006E95D" import="1">Siam_NEU/Musketman/Siamese_Musketman.fxsxml</File>
+    <File md5="2CF03217A659472208C17F59EEE51A3E" import="1">Siam_NEU/Musketman/Siamese_Musketman.gr2</File>
+    <File md5="C42171709EFBFDFE93600FBFB2651DCB" import="1">Siam_NEU/Musketman/Siamese_Musketman_sref.dds</File>
+    <File md5="55818BF7D45218E5C9C5E2B078B6111B" import="1">Songhai_NEU/Longsword/SudanSwordsman.dds</File>
+    <File md5="BDF358490E7B8712FE2905A86F58651A" import="1">Songhai_NEU/Longsword/SudanSwordsman.fxsxml</File>
+    <File md5="E082378E1EB631E2B271D5317DDE4BEB" import="1">Songhai_NEU/Longsword/SudanSwordsman.gr2</File>
+    <File md5="9C0B2CB670F067379A00A5B88765744C" import="1">Songhai_NEU/Longsword/SudanSwordsman_sref.dds</File>
+    <File md5="6E04C9F72EE49967B0F77D4B4A2AD65F" import="1">Songhai_NEU/ModernArmor/T55Mali.dds</File>
+    <File md5="40AC40D3FA94B6925C3F37462E2BCD0F" import="1">Songhai_NEU/ModernArmor/T55Mali.fxsxml</File>
+    <File md5="F0815047FEFEC8C8808AEDAD2EEC7874" import="1">Songhai_NEU/ModernArmor/T55Mali.gr2</File>
+    <File md5="D54F9696E210BEC231F6C8D437DBE88E" import="0">Songhai_NEU/NEUs_Songhai.sql</File>
+    <File md5="9F2E26783AF57B8ED6B9F1E2B1C7CB27" import="0">Songhai_NEU/NEUs_Songhai_en_US.xml</File>
+    <File md5="E645D9B08B0ACE78B765A7795F5D0D89" import="1">Songhai_NEU/Pikeman/SonghaiPikeman.dds</File>
+    <File md5="0220AE41B9D5E3F9103ECDD73779D259" import="1">Songhai_NEU/Pikeman/SonghaiPikeman.fxsxml</File>
+    <File md5="85D52AD6C3AD069E41EF2E90078FED2E" import="1">Songhai_NEU/Pikeman/SonghaiPikeman.gr2</File>
+    <File md5="C7EF0BA724CFC6604161DECE09F39D2B" import="1">Songhai_NEU/Pikeman/SonghaiPikeman_sref.dds</File>
+    <File md5="BF0AC8DECFBAF2EB8092F81B569ED2AC" import="1">Songhai_NEU/Scout/SonghaiScout.dds</File>
+    <File md5="318FE752C0261026122150B3BED01C32" import="1">Songhai_NEU/Scout/SonghaiScout.fxsxml</File>
+    <File md5="7A21D15C3BFB60668B6C9401AED8E68C" import="1">Songhai_NEU/Scout/SonghaiScout.gr2</File>
+    <File md5="85CC97ED04CDA6A9C6472FE69B6BD678" import="1">Songhai_NEU/Scout/SonghaiScout_sref.dds</File>
+    <File md5="22B45D8E1324ED736413161C88F0961E" import="1">Songhai_NEU/Spearman/SonghaiSpearman.dds</File>
+    <File md5="D63D6AF72A4CDC0AB940F5919545AC20" import="1">Songhai_NEU/Spearman/SonghaiSpearman.fxsxml</File>
+    <File md5="7A7B4ADC0BC0ADCB2694DBCED150EC2A" import="1">Songhai_NEU/Spearman/SonghaiSpearman.gr2</File>
+    <File md5="B84551E5BC540F7E68F3D1112813BEF4" import="1">Songhai_NEU/Spearman/SonghaiSpearman_sref.dds</File>
+    <File md5="06A5C1C7AC83C7D61902146A22295FCF" import="1">Songhai_NEU/Swordsman/MakuriaSwordsman.fxsxml</File>
+    <File md5="EE950C4D84BDFC11B2D40C050AE1811D" import="1">Songhai_NEU/Swordsman/MakuriaSwordsman.gr2</File>
+    <File md5="16962ADD64B64D85A96BC375FE4BD79F" import="1">Songhai_NEU/Swordsman/Makuria_Final.dds</File>
+    <File md5="6393082763B47D6339884F8CD5DF0C9A" import="1">Songhai_NEU/Swordsman/Makuria_Final_sref.dds</File>
+    <File md5="AA659DB9B920B24982C27D0D2E694FCB" import="1">Spain_NEU/Infantry/Infantry_Spain.dds</File>
+    <File md5="6E65E4E69E221801CE1FA7AC35E615EA" import="1">Spain_NEU/Infantry/Infantry_Spain.fxsxml</File>
+    <File md5="D5BD1788CF0612425FC5ABF2E624AC59" import="1">Spain_NEU/Infantry/Infantry_Spain.gr2</File>
+    <File md5="A2FF75FEB66C411517E511126C68A0FE" import="1">Spain_NEU/Knight/Knight_Spain.dds</File>
+    <File md5="CF7F1AE08009D09E0350A87A24155DE2" import="1">Spain_NEU/Knight/Knight_Spain.fxsxml</File>
+    <File md5="71E47D3D0C201648F51F0C8D2095BE89" import="1">Spain_NEU/Knight/Knight_Spain.gr2</File>
+    <File md5="1378761DFDED17DFDEB47578D505A326" import="1">Spain_NEU/Knight/Knight_Spain_gloss.dds</File>
+    <File md5="26E1891B75673A9012E0913E8F720204" import="1">Spain_NEU/Knight/Knight_Spain_Horse.dds</File>
+    <File md5="B5C6E866850E6851CF2C3A4C5E49C664" import="1">Spain_NEU/Knight/Knight_Spain_Horse_gloss.dds</File>
+    <File md5="EEF1EA3010124499DE2289AF0AF749D6" import="0">Spain_NEU/NEUs_Spain.sql</File>
+    <File md5="1AA65345EDC23D62B7C2C77302733CA5" import="0">Spain_NEU/NEUs_Spain_en_US.xml</File>
+    <File md5="77B2C1D723EA63D8F5DD9EB5E0F1A712" import="1">Spain_NEU/Paratrooper/Paratrooper_Spain.dds</File>
+    <File md5="19A9139E1E268A35FAE487BAFC6B9EB8" import="1">Spain_NEU/Paratrooper/Paratrooper_Spain.fxsxml</File>
+    <File md5="B67CEFE2A9A2F0A2A9C9378C69B59972" import="1">Spain_NEU/Paratrooper/Paratrooper_Spain.gr2</File>
+    <File md5="12D7AF77C2B77EC040C2DD0FAC166119" import="1">Spain_NEU/Pikeman/Pikeman_Spain.dds</File>
+    <File md5="20718C280B2A3295A4001198BB2C66B8" import="1">Spain_NEU/Pikeman/Pikeman_Spain.fxsxml</File>
+    <File md5="8AFCA20311533E7D5144C3D6A4EFAC88" import="1">Spain_NEU/Pikeman/Pikeman_Spain.gr2</File>
+    <File md5="04B01816649C637EA77A1A899309D66C" import="1">Spain_NEU/Pikeman/Pikeman_Spain_gloss.dds</File>
+    <File md5="207E8B1B47D7DB0C4917DD17C6776B35" import="1">Spain_NEU/Rifleman/civ5_sparm1.fxsxml</File>
+    <File md5="C9D7151AA993DE8414A5633C137E4746" import="1">Spain_NEU/Rifleman/civ5_sparm1.gr2</File>
+    <File md5="09FD633882142A23FBE4DF4BA02FE064" import="1">Spain_NEU/Rifleman/sparm1.dds</File>
+    <File md5="2B4B5A8CB97874CCA3FD4D14FD9E8A66" import="1">Spain_NEU/Rifleman/sparm1_sref.dds</File>
+    <File md5="F5ABD7EA833CAE67DC0FF3FCD4CEBA32" import="1">Spain_NEU/Warrior/Caetrati.dds</File>
+    <File md5="4729CD4E1B49597119B27B4722C859F6" import="1">Spain_NEU/Warrior/Caetrati.fxsxml</File>
+    <File md5="CF7FC81B18C315938285F3DCE6D5F12C" import="1">Spain_NEU/Warrior/Caetrati.gr2</File>
+    <File md5="58B74629060CD04DBA98502F2660DDB1" import="1">Spain_NEU/Warrior/Caetrati_sref.dds</File>
+    <File md5="1C5CC896E45805CFB2B0F2264DD6F3CC" import="1">Sweden_NEU/AntiAir/Landsverk_L-62.dds</File>
+    <File md5="9CB423F2ED951E9C180F68CA78FF1713" import="1">Sweden_NEU/AntiAir/Landsverk_L-62.fxsxml</File>
+    <File md5="EC1DBC7E73703A6273DF7DE9714F8C58" import="1">Sweden_NEU/AntiAir/Landsverk_L-62.gr2</File>
+    <File md5="12A84231995847E35A73B1BB1602AF3A" import="1">Sweden_NEU/Bomber/SAAB_B18.dds</File>
+    <File md5="0FC3E39DF43C8846AACDCF36225325A5" import="1">Sweden_NEU/Bomber/SAAB_B18.fxsxml</File>
+    <File md5="9C253DD43AD7DF652DD9DAF9B06F00A4" import="1">Sweden_NEU/Bomber/SAAB_B18.gr2</File>
+    <File md5="4A6DF836676C2CAEADD590B69D3F1EB8" import="1">Sweden_NEU/Halftrack/PVKV_M43.dds</File>
+    <File md5="230460752A9AB2D92A19B6878ED69B81" import="1">Sweden_NEU/Halftrack/PVKV_M43.fxsxml</File>
+    <File md5="A6C78DC568F90C74E53E66642B840BF1" import="1">Sweden_NEU/Halftrack/PVKV_M43.gr2</File>
+    <File md5="F1ABD3E6D3B3B673A069E44AE3106BA9" import="1">Sweden_NEU/Destroyer/Goteborg_Class.dds</File>
+    <File md5="D3E6AF5FC837D203A3CFFF9749551B6A" import="1">Sweden_NEU/Destroyer/Goteborg_Class.fxsxml</File>
+    <File md5="DBF148B225CE6D79AE9724D355759348" import="1">Sweden_NEU/Destroyer/Goteborg_Class.gr2</File>
+    <File md5="4F4A0368DC9C2860AF7438C8BB755630" import="1">Sweden_NEU/Destroyer/Goteborg_Class_gloss.dds</File>
+    <File md5="E4D58D7DF457C8C064A64EC72813B33B" import="1">Sweden_NEU/Infantry/Infantry_Sweden.dds</File>
+    <File md5="53B11144676D2BA2AAF29292FBFA1BB5" import="1">Sweden_NEU/Infantry/Infantry_Sweden.fxsxml</File>
+    <File md5="B0C842C50295FFC58801F0951EAB7B64" import="1">Sweden_NEU/Infantry/Infantry_Sweden.gr2</File>
+    <File md5="D4651789641C58D03BCD940517C39C6D" import="1">Sweden_NEU/Knight/Knight_Viking.dds</File>
+    <File md5="5D5CCE821FE1333CA5D6CF9E1FC6282E" import="1">Sweden_NEU/Knight/Knight_Viking.fxsxml</File>
+    <File md5="15FA9E518D6FA4222AB4AB4EBB7B1A3B" import="1">Sweden_NEU/Knight/Knight_Viking.gr2</File>
+    <File md5="74B6F26D3019C8604881D6B0FDD5FFB9" import="1">Sweden_NEU/Knight/Knight_Viking_gloss.dds</File>
+    <File md5="9C3DAC2C82462CB2B3D2954567C43E89" import="1">Sweden_NEU/Knight/Knight_Viking_Horse.dds</File>
+    <File md5="0E7A882C3A69636C0B3A5454C9FEBB09" import="1">Sweden_NEU/Knight/Knight_Viking_Horse_gloss.dds</File>
+    <File md5="B64296A8644711CBA470CE1C5C21F403" import="1">Sweden_NEU/Landship/Strv_M21.dds</File>
+    <File md5="37F277956E512F84E52CC295113CAE7A" import="1">Sweden_NEU/Landship/Strv_M21.fxsxml</File>
+    <File md5="299D3922F84AFAAB7E8C2C63E4B9A5DD" import="1">Sweden_NEU/Landship/Strv_M21.gr2</File>
+    <File md5="DD517106B3B00F9562921F443F402F79" import="1">Sweden_NEU/Longsword/Longswordsman_Viking_gloss.dds</File>
+    <File md5="E4C6D46034092EBCB3F4BBD78EE186DC" import="1">Sweden_NEU/Longsword/Longswordsman_Viking_v3.dds</File>
+    <File md5="F985E0AE4EB5066F738AE855CD52E2DF" import="1">Sweden_NEU/Longsword/Longswordsman_Viking_v3.fxsxml</File>
+    <File md5="D235302FBC6A94F998CDC906BCDF19C6" import="1">Sweden_NEU/Longsword/Longswordsman_Viking_v3.gr2</File>
+    <File md5="C323B88A2523B48B32A994178E990EF2" import="0">Sweden_NEU/NEUs_Sweden.sql</File>
+    <File md5="26DD84936A69F5FAE485024E88C62F99" import="0">Sweden_NEU/NEUs_Sweden_en_US.xml</File>
+    <File md5="AA746C0400C80D8245B85D7294B8F8D2" import="1">Sweden_NEU/Paratrooper/Paratrooper_Sweden.dds</File>
+    <File md5="5B76C5F3F39581F897C9A2B35CFFAEFD" import="1">Sweden_NEU/Paratrooper/Paratrooper_Sweden.fxsxml</File>
+    <File md5="3542F49C37E5F88C301FFBF0889FB213" import="1">Sweden_NEU/Paratrooper/Paratrooper_Sweden.gr2</File>
+    <File md5="197E838F4AEA8A088B2D7685F4D8C856" import="1">Sweden_NEU/Pikeman/Pikeman_Viking.dds</File>
+    <File md5="511F43A40B4E6FFA742859D8B011F68E" import="1">Sweden_NEU/Pikeman/Pikeman_Viking.fxsxml</File>
+    <File md5="F3F5928E8899066C75CFF60017CCA848" import="1">Sweden_NEU/Pikeman/Pikeman_Viking.gr2</File>
+    <File md5="AB95B09624384EC3F25FAFB04483B6AE" import="1">Sweden_NEU/Pikeman/Pikeman_Viking_gloss.dds</File>
+    <File md5="C12E1992601585621BA69FB587C1E422" import="1">Sweden_NEU/Rifleman/civ5_swerm1.fxsxml</File>
+    <File md5="E2FAA3CEC206A58D5F5FBAA778DA1BAF" import="1">Sweden_NEU/Rifleman/civ5_swerm1.gr2</File>
+    <File md5="2F77C1BEBE112A5C61E034A0FE0A63A9" import="1">Sweden_NEU/Rifleman/swerm1.dds</File>
+    <File md5="505D25114B00306E1A284F8E145085AC" import="1">Sweden_NEU/Rifleman/swerm1_sref.dds</File>
+    <File md5="7B49456581D63875729927A9BBAC0768" import="1">Sweden_NEU/Tank/Strv_M41.dds</File>
+    <File md5="3AFB97972B3CDCD3CFD47257D9B24637" import="1">Sweden_NEU/Tank/Strv_M41.fxsxml</File>
+    <File md5="DA8DBB2488D04D23898AD1870B989065" import="1">Sweden_NEU/Tank/Strv_M41.gr2</File>
+    <File md5="975710B305E07ED9A446B73053C1D962" import="0">UnitList.txt</File>
+    <File md5="3310BB0D2C2CF9FBEE777863A9C06CF8" import="1">Venice_NEU/Carrier/Aquila_Class.dds</File>
+    <File md5="B2605AEB8C95C13031F8F176C8643057" import="1">Venice_NEU/Carrier/Aquila_Class.fxsxml</File>
+    <File md5="950EF510CC28B2C4E02D033BE438C3B7" import="1">Venice_NEU/Carrier/Aquila_Class.gr2</File>
+    <File md5="16DCEC9742B560D478A64C8C6CA544D6" import="1">Venice_NEU/Carrier/Aquila_Class_gloss.dds</File>
+    <File md5="039A01094D6B9307E251FF7947FA69D3" import="1">Venice_NEU/GWI/hunrm1.dds</File>
+    <File md5="E8CCDCAD51EED31A9A75805FD1C59575" import="1">Venice_NEU/GWI/hunrm1.fxsxml</File>
+    <File md5="730292F1F582B98E1F5C043C8221541D" import="1">Venice_NEU/GWI/hunrm1.gr2</File>
+    <File md5="B4873756147EAF9877A7B1BC2FEE4C8A" import="1">Venice_NEU/GWI/hunrm1_sref.dds</File>
+    <File md5="027464A7010A5B7DB03E9BF8DB886022" import="1">Venice_NEU/Infantry/Infantry_Italy.dds</File>
+    <File md5="B2964DFCD075347E8F221C36A9614E9B" import="1">Venice_NEU/Infantry/Infantry_Italy.fxsxml</File>
+    <File md5="0D38DEF2AA53C2C72477193CC94AF058" import="1">Venice_NEU/Infantry/Infantry_Italy.gr2</File>
+    <File md5="6F17403186B7F8AE2E0316FF6CCDA457" import="1">Venice_NEU/Infantry/Infantry_Italy_2.dds</File>
+    <File md5="422F0F37E33C1A09898AED62EF51D34B" import="1">Venice_NEU/Ironclad/re_umberto_bb.fxsxml</File>
+    <File md5="055786BFD9055294959C5D180EBB3094" import="1">Venice_NEU/Ironclad/re_umberto_bb.gr2</File>
+    <File md5="CC88EEB06F3FC2C92C2479CCC8A5DE91" import="1">Venice_NEU/Ironclad/re_umberto_bb_diff.dds</File>
+    <File md5="CC143FE36C2E08E2FF0759277AD0403C" import="1">Venice_NEU/Ironclad/re_umberto_bb_sref.dds</File>
+    <File md5="55B89AF467DACC1F03E6C46215BF69B3" import="1">Venice_NEU/Landship/Fiat_3000.dds</File>
+    <File md5="51FCE0AC20950B324F16236A0F94B0D3" import="1">Venice_NEU/Landship/Fiat_3000.fxsxml</File>
+    <File md5="B34B649FF9A088FC81388DDB51C214AC" import="1">Venice_NEU/Landship/Fiat_3000.gr2</File>
+    <File md5="FEA71AB49918E2FF2CF8E942E68BCE22" import="1">Venice_NEU/ModernArmor/Ariete.fxsxml</File>
+    <File md5="463CDE724514BF997AA0C1E1C3EBF2D4" import="1">Venice_NEU/ModernArmor/Ariete.gr2</File>
+    <File md5="169A460B0902FEFEB1B44E4DC3664975" import="1">Venice_NEU/ModernArmor/Ariete_diff.dds</File>
+    <File md5="B687E2AD9CA2A5D2B6142BF47A57DEF0" import="1">Venice_NEU/ModernArmor/Ariete_sref.dds</File>
+    <File md5="B8CDEC831D8D4E3942B7492C339F811B" import="0">Venice_NEU/NEUs_Venice.sql</File>
+    <File md5="35DAB8F7C648D024070122717B0C8D68" import="0">Venice_NEU/NEUs_Venice_en_US.xml</File>
+    <File md5="79C6061EADE77579814CD7B58AA1E0C2" import="1">Zulu_NEU/Infantry/AfricanInfantry.dds</File>
+    <File md5="15695715DE3C19104748BC2857F5DAF9" import="1">Zulu_NEU/Infantry/AfricanInfantry.fxsxml</File>
+    <File md5="2262CD9F149C6E19FD74202EA6981A53" import="1">Zulu_NEU/Infantry/AfricanInfantry.gr2</File>
+    <File md5="2BF32EF5C5664AB682CA0878979B2423" import="1">Zulu_NEU/Marine/AfricanSF_diff.dds</File>
+    <File md5="3F5B1931056EFB8FD48197ED5CBF3EE6" import="1">Zulu_NEU/Marine/Civ5_AfricanSF_v2.fxsxml</File>
+    <File md5="E1E42F5209E81A7F70B8CF3E349E96AE" import="1">Zulu_NEU/Marine/Civ5_AfricanSF_v2.gr2</File>
+    <File md5="91C2038A99D399C9640BA8B4A7F9FCE4" import="0">Zulu_NEU/NEUs_Zulu.sql</File>
+    <File md5="73815F467EEB439559ECEABF5C2F6747" import="0">Zulu_NEU/NEUs_Zulu_en_US.xml</File>
+    <File md5="DA0983A6B7017A8DA34289136B7DF5A4" import="1">Zulu_NEU/Scout/AfrScout.fxsxml</File>
+    <File md5="40296245A460721FC6E6F80DDA6BA771" import="1">Zulu_NEU/Scout/AfrScout.gr2</File>
+    <File md5="AF82609178C45D0671E78B0CD904BFEF" import="1">Zulu_NEU/Scout/AfrScout_diff.dds</File>
+    <File md5="4E9F4BAB4499246D1E7153F59395A096" import="1">Zulu_NEU/Spearman/BantuSpearman.dds</File>
+    <File md5="93999BBE7F64FBC2803DB6E7A28DDDE8" import="1">Zulu_NEU/Spearman/BantuSpearman.fxsxml</File>
+    <File md5="FF197C517C2B00C6D8912953C5C0407F" import="1">Zulu_NEU/Spearman/BantuSpearman.gr2</File>
+    <File md5="71BCF4F8B2A4C65FE9E65A27734B8D54" import="1">Zulu_NEU/Spearman/BantuSpearman_sref.dds</File>
+    <File md5="3050720D08F019094150B2069B8CECA1" import="1">Zulu_NEU/Swordsman/NubianSwordsman.dds</File>
+    <File md5="DD9F61EAF7DEC952CE57563D0F450EAF" import="1">Zulu_NEU/Swordsman/NubianSwordsman.fxsxml</File>
+    <File md5="6BCA68916E8FAF75ADE013ADE9A2351C" import="1">Zulu_NEU/Swordsman/NubianSwordsman.gr2</File>
+    <File md5="5AF08CB39E1A38985E416C6DBCFCF537" import="1">Zulu_NEU/Swordsman/NubianSwordsman_sref.dds</File>
+    <File md5="7E652D9630204949121F350DFFB02158" import="1">Zulu_NEU/Warrior/impi_1.dds</File>
+    <File md5="3D094C6B1A777A70077A29A48F9166BF" import="1">Zulu_NEU/Warrior/impi_1.fxsxml</File>
+    <File md5="AC3DF6DFEAB8C312423CFB2D05FD1901" import="1">Zulu_NEU/Warrior/impi_1.gr2</File>
+    <File md5="CF217E101010D4D34A06E80F11C3AF3F" import="1">Zulu_NEU/Warrior/impi_sref.dds</File>
+    <File md5="C5753C68F1C3B7C207AAD382F2B160F4" import="0">NamedEthnicUnits_ModInfo.txt</File>
+    <File md5="31A8E7E685F7066DD3C50E43D6053EDC" import="0">ModComparison.txt</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>ProcessNEUs/SettlerArtStyles.sql</UpdateDatabase>
+      <UpdateDatabase>America_NEU/NEUs_America.sql</UpdateDatabase>
+      <UpdateDatabase>America_NEU/NEUs_America_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Arabia_NEU/NEUs_Arabia.sql</UpdateDatabase>
+      <UpdateDatabase>Arabia_NEU/NEUs_Arabia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Assyria_NEU/NEUs_Assyria.sql</UpdateDatabase>
+      <UpdateDatabase>Assyria_NEU/NEUs_Assyria_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Austria_NEU/NEUs_Austria.sql</UpdateDatabase>
+      <UpdateDatabase>Austria_NEU/NEUs_Austria_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Aztec_NEU/NEUs_Aztec.sql</UpdateDatabase>
+      <UpdateDatabase>Aztec_NEU/NEUs_Aztec_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Babylon_NEU/NEUs_Babylon.sql</UpdateDatabase>
+      <UpdateDatabase>Babylon_NEU/NEUs_Babylon_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Brazil_NEU/NEUs_Brazil.sql</UpdateDatabase>
+      <UpdateDatabase>Brazil_NEU/NEUs_Brazil_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Byzantium_NEU/NEUs_Byzantium.sql</UpdateDatabase>
+      <UpdateDatabase>Byzantium_NEU/NEUs_Byzantium_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Carthage_NEU/NEUs_Carthage.sql</UpdateDatabase>
+      <UpdateDatabase>Carthage_NEU/NEUs_Carthage_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Celts_NEU/NEUs_Celts.sql</UpdateDatabase>
+      <UpdateDatabase>Celts_NEU/NEUs_Celts_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>China_NEU/NEUs_China.sql</UpdateDatabase>
+      <UpdateDatabase>China_NEU/NEUs_China_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Denmark_NEU/NEUs_Denmark.sql</UpdateDatabase>
+      <UpdateDatabase>Denmark_NEU/NEUs_Denmark_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Egypt_NEU/NEUs_Egypt.sql</UpdateDatabase>
+      <UpdateDatabase>Egypt_NEU/NEUs_Egypt_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>England_NEU/NEUs_England.sql</UpdateDatabase>
+      <UpdateDatabase>England_NEU/NEUs_England_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Ethiopia_NEU/NEUs_Ethiopia.sql</UpdateDatabase>
+      <UpdateDatabase>Ethiopia_NEU/NEUs_Ethiopia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>France_NEU/NEUs_France.sql</UpdateDatabase>
+      <UpdateDatabase>France_NEU/NEUs_France_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Germany_NEU/NEUs_Germany.sql</UpdateDatabase>
+      <UpdateDatabase>Germany_NEU/NEUs_Germany_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Greece_NEU/NEUs_Greece.sql</UpdateDatabase>
+      <UpdateDatabase>Greece_NEU/NEUs_Greece_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Huns_NEU/NEUs_Huns.sql</UpdateDatabase>
+      <UpdateDatabase>Huns_NEU/NEUs_Huns_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Inca_NEU/NEUs_Inca.sql</UpdateDatabase>
+      <UpdateDatabase>Inca_NEU/NEUs_Inca_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>India_NEU/NEUs_India.sql</UpdateDatabase>
+      <UpdateDatabase>India_NEU/NEUs_India_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Indonesia_NEU/NEUs_Indonesia.sql</UpdateDatabase>
+      <UpdateDatabase>Indonesia_NEU/NEUs_Indonesia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Iroquois_NEU/NEUs_Iroquois.sql</UpdateDatabase>
+      <UpdateDatabase>Iroquois_NEU/NEUs_Iroquois_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Japan_NEU/NEUs_Japan.sql</UpdateDatabase>
+      <UpdateDatabase>Japan_NEU/NEUs_Japan_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Korea_NEU/NEUs_Korea.sql</UpdateDatabase>
+      <UpdateDatabase>Korea_NEU/NEUs_Korea_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Maya_NEU/NEUs_Maya.sql</UpdateDatabase>
+      <UpdateDatabase>Maya_NEU/NEUs_Maya_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Mongol_NEU/NEUs_Mongol.sql</UpdateDatabase>
+      <UpdateDatabase>Mongol_NEU/NEUs_Mongol_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Morocco_NEU/NEUs_Morocco.sql</UpdateDatabase>
+      <UpdateDatabase>Morocco_NEU/NEUs_Morocco_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Netherlands_NEU/NEUs_Netherlands.sql</UpdateDatabase>
+      <UpdateDatabase>Netherlands_NEU/NEUs_Netherlands_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Ottoman_NEU/NEUs_Ottoman.sql</UpdateDatabase>
+      <UpdateDatabase>Ottoman_NEU/NEUs_Ottoman_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Persia_NEU/NEUs_Persia.sql</UpdateDatabase>
+      <UpdateDatabase>Persia_NEU/NEUs_Persia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Poland_NEU/NEUs_Poland.sql</UpdateDatabase>
+      <UpdateDatabase>Poland_NEU/NEUs_Poland_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Polynesia_NEU/NEUs_Polynesia.sql</UpdateDatabase>
+      <UpdateDatabase>Polynesia_NEU/NEUs_Polynesia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Portugal_NEU/NEUs_Portugal.sql</UpdateDatabase>
+      <UpdateDatabase>Portugal_NEU/NEUs_Portugal_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Rome_NEU/NEUs_Rome.sql</UpdateDatabase>
+      <UpdateDatabase>Rome_NEU/NEUs_Rome_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Russia_NEU/NEUs_Russia.sql</UpdateDatabase>
+      <UpdateDatabase>Russia_NEU/NEUs_Russia_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Shoshone_NEU/NEUs_Shoshone.sql</UpdateDatabase>
+      <UpdateDatabase>Shoshone_NEU/NEUs_Shoshone_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Siam_NEU/NEUs_Siam.sql</UpdateDatabase>
+      <UpdateDatabase>Siam_NEU/NEUs_Siam_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Songhai_NEU/NEUs_Songhai.sql</UpdateDatabase>
+      <UpdateDatabase>Songhai_NEU/NEUs_Songhai_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Spain_NEU/NEUs_Spain.sql</UpdateDatabase>
+      <UpdateDatabase>Spain_NEU/NEUs_Spain_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Sweden_NEU/NEUs_Sweden.sql</UpdateDatabase>
+      <UpdateDatabase>Sweden_NEU/NEUs_Sweden_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Venice_NEU/NEUs_Venice.sql</UpdateDatabase>
+      <UpdateDatabase>Venice_NEU/NEUs_Venice_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Zulu_NEU/NEUs_Zulu.sql</UpdateDatabase>
+      <UpdateDatabase>Zulu_NEU/NEUs_Zulu_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>ProcessNEUs/ProcessNEUs.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="ProcessNEUs/SetEthnicUnitName.lua">
+      <Name>SetEthnicUnitName</Name>
+      <Description>SetEthnicUnitName</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

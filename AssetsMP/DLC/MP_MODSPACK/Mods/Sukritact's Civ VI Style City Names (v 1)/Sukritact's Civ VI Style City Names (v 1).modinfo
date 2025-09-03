@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f880b356-abd7-4589-99d8-e28df6d9d38e" version="1">
+  <Properties>
+    <Name>Sukritact's Civ VI Style City Names</Name>
+    <Teaser>Randomises city names in the same fashion as Civ VI</Teaser>
+    <Description>Randomises city names in a semi-random fashion. The top 5 cities are thrown in a pool and weighted according to how high up they are in the list. The capital is not randomised.</Description>
+    <Authors>Sukritact</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="D5958BE65261EDC5009D0741134860F9" import="0">Lua/Core_Functions.lua</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Core_Functions.lua">
+      <Name>Lua/Core_Functions.lua</Name>
+      <Description>Lua/Core_Functions.lua</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

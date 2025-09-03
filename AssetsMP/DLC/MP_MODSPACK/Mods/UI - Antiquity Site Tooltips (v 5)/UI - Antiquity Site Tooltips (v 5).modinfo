@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="852bb590-9044-420d-8690-c6cd56c02cc5" version="5">
+  <Properties>
+    <Name>UI - Antiquity Site Tooltips</Name>
+    <Teaser>Hints as to what an antiquity dig site may reveal</Teaser>
+    <Description>Modifies the plot mouse over tooltip to hint at what an Archaeologist may find at the current dig site
+
+Updates the PlotMouseoverInclude.lua core game file so will be incompatible with any other mod that also changes this file</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="21" maxversion="999" title="DLL - Various Mod Components" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="E530B1D5537FEBE97A5CFBB585D73A40" import="0">LUA/UIAntiquitiesSiteTooltips.lua</File>
+    <File md5="B07DB1939B1A229B3320966DDA76D2CB" import="1">UI/InGame/PlotMouseoverInclude.lua</File>
+    <File md5="64424ABB719AE820BAFCBF8B483B9826" import="0">XML/UIAntiquitiesSiteTooltips.xml</File>
+    <File md5="420FCBE7F2FBD600CF4DE7D56DA298CB" import="0">XML/UIAntiquitiesSiteTooltipsDLL.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UIAntiquitiesSiteTooltips.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIAntiquitiesSiteTooltipsDLL.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/UIAntiquitiesSiteTooltips.lua">
+      <Name>UI Antiquities Sit Tooltips</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
