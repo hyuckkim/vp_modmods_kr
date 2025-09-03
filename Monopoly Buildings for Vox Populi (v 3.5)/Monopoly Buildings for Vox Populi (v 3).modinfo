@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="98c24719-d2a2-4dd0-a969-4e53cc86c763" version="3">
+  <Properties>
+    <Name>Monopoly Buildings for Vox Populi</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Getting a Monopoly unlocks unique buildings for that Monopoly. (v.3.5)</Teaser>
+    <Description>Getting a Monopoly unlocks unique buildings for that monopoly. Only for Vox Populi. (v.3.5)</Description>
+    <Authors>IA</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/monopoly-buildings.659844/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="8e54eb87-31e8-4fcd-aafe-ede055b463d0" minversion="0" maxversion="999" title="Even More Resources for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="FCC32BD072052401F3A00E8FB5C4174B" import="0">art/IconAtlas.sql</File>
+    <File md5="720E07C08A47E3B80B5A04B78BCD55CD" import="1">art/icons/MonopolyIconAtlas128.dds</File>
+    <File md5="089A7A9CB8F299C1358A7EC5D97470C2" import="1">art/icons/MonopolyIconAtlas256.dds</File>
+    <File md5="2AB2FE5BB1F6980E1CBF92C740FC9138" import="1">art/icons/MonopolyIconAtlas32.dds</File>
+    <File md5="02CD35F65E6D2A93F77B995E14CA3756" import="1">art/icons/MonopolyIconAtlas45.dds</File>
+    <File md5="A0120145CC05B43CB97922E8E8AB67F6" import="1">art/icons/MonopolyIconAtlas64.dds</File>
+    <File md5="2334AAAAD125F466A742247B87EBB5E9" import="1">art/icons/MonopolyIconAtlas80.dds</File>
+    <File md5="06188693F331E8DF62D5DCB1B808F008" import="0">core/apothecaryBuilding/apothecary.sql</File>
+    <File md5="23D3C53A3FB3D2996988AE39B6E536E2" import="0">core/confectioneryBuilding/confectionery.sql</File>
+    <File md5="61CF9C27E02DE3B8DE3C5B17BB863178" import="0">core/dummyBuildings.sql</File>
+    <File md5="C189D0AD49175D1091902509FCCC69B8" import="0">core/farmerMarketBuilding/FarmersMarket.sql</File>
+    <File md5="C858681047AFA594D8DCEDBD216C1CBC" import="0">core/farmerMarketBuilding/farmYields.lua</File>
+    <File md5="E2012B5D766CDD21A31A3C011DE9E9E0" import="0">core/jewelerBuilding/addJewelerDummy.lua</File>
+    <File md5="D1D09B7C86E820540F3208AD44BA552A" import="0">core/jewelerBuilding/jewelerBuilding.sql</File>
+    <File md5="3D9B2DA4A0C9B6626781E9AEB146826E" import="0">core/lodgeBuilding/huntersLodge.sql</File>
+    <File md5="703A0F784F11C0D58701215AD8485031" import="0">core/mintBuilding/coinageMint.sql</File>
+    <File md5="C5D7C56512E8CC3E657CC46EA2893F54" import="0">core/mintBuilding/coinMintTRGold.lua</File>
+    <File md5="22A1CF1999C7CE90ACDC277F3E56F3E8" import="0">core/ornamentBuilding/ornamentWorkshop.sql</File>
+    <File md5="20945A39C53458855FD3041A1E768AAC" import="0">core/perfumeBuilding/perfumeShop.sql</File>
+    <File md5="604CD187C0C60A44F77CDB80698BFC0D" import="0">core/restaurantBuilding/luxuryRestaurant.sql</File>
+    <File md5="F9ADEAD45BCF393B785AD1405111C930" import="0">core/settings.sql</File>
+    <File md5="8F76584AE4894C33FAACFF26F3DD895E" import="0">core/tailorBuilding/luxuryTailor.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>art/IconAtlas.sql</UpdateDatabase>
+      <UpdateDatabase>core/dummyBuildings.sql</UpdateDatabase>
+      <UpdateDatabase>core/farmerMarketBuilding/FarmersMarket.sql</UpdateDatabase>
+      <UpdateDatabase>core/jewelerBuilding/jewelerBuilding.sql</UpdateDatabase>
+      <UpdateDatabase>core/ornamentBuilding/ornamentWorkshop.sql</UpdateDatabase>
+      <UpdateDatabase>core/tailorBuilding/luxuryTailor.sql</UpdateDatabase>
+      <UpdateDatabase>core/mintBuilding/coinageMint.sql</UpdateDatabase>
+      <UpdateDatabase>core/restaurantBuilding/luxuryRestaurant.sql</UpdateDatabase>
+      <UpdateDatabase>core/confectioneryBuilding/confectionery.sql</UpdateDatabase>
+      <UpdateDatabase>core/lodgeBuilding/huntersLodge.sql</UpdateDatabase>
+      <UpdateDatabase>core/apothecaryBuilding/apothecary.sql</UpdateDatabase>
+      <UpdateDatabase>core/perfumeBuilding/perfumeShop.sql</UpdateDatabase>
+      <UpdateDatabase>core/settings.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="core/jewelerBuilding/addJewelerDummy.lua">
+      <Name>addDummyBuilding</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="core/farmerMarketBuilding/farmYields.lua">
+      <Name>farmYields</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="core/mintBuilding/coinMintTRGold.lua">
+      <Name>CoinMintTradeRouteGold</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

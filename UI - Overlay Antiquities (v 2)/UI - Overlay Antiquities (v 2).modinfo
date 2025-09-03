@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="868e845c-a185-4e00-b0f9-f0c971e0ec1c" version="2">
+  <Properties>
+    <Name>UI - Overlay Antiquities</Name>
+    <Teaser>Highlight ancient ruins and antiquity sites in strategic view</Teaser>
+    <Description>Adds an "Antiquities" option to the overlay drop-down menu in the strategic view that highlights known ancient ruins and antiquity (dig) sites
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Mordino for the German translation</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1308486DBB3AAB270D9500B7B4C8C26F" import="0">UI/OverlayAntiquities.lua</File>
+    <File md5="FB545F363364D00F576AD9DC98EF3D86" import="0">UI/OverlayAntiquities.xml</File>
+    <File md5="DFCE5C53AF9183F80447B755EE496B37" import="1">UI/OverlayAntiquities_MiniMapOverlayHook.lua</File>
+    <File md5="AB03E8A8098CF0C5F06E7F91A0294E43" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="DA35EF83659FB476210E43B1D85C992E" import="0">XML/UIAntiquities.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIAntiquities.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayAntiquities.xml">
+      <Name>Antiquities</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayAntiquities_MiniMapOverlayHook.lua">
+      <Name>Antiquities MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

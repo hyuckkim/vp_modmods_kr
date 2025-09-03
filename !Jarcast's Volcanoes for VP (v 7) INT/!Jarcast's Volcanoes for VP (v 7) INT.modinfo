@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="61c6a085-7cfa-4b88-b954-35a6015168d3" version="7">
+  <Properties>
+    <Name>Jarcast's Volcanoes for VP (v 7) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Jarcast's Volcanoes for VP</Teaser>
+    <Description>Translation of the Jarcast's Volcanoes for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Jarcast의 VP용 화산 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="2ec6979e-3b1a-4d6e-9e92-b3b6eea4fb9f" minversion="0" maxversion="999" title="!Jarcast's Volcanoes for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="323CAA29FC7346DC49D5C47C973555FD" import="0">Jar_Volcano_EventsDefine.sql</File>
+    <File md5="02002A2610EC320C96AF9D084F475EC5" import="0">Jar_Volcano_GameDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Jar_Volcano_EventsDefine.sql</UpdateDatabase>
+      <UpdateDatabase>Jar_Volcano_GameDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

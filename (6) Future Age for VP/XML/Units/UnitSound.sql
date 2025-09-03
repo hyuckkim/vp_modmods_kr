@@ -79,11 +79,7 @@ VALUES
  ('UNIT_FW_HELICARRIER', 'AS2D_SELECT_CARRIER', 'AS2D_SELECT_CARRIER'),
  ('UNIT_FW_NEXUS',  'AS2D_SELECT_CARRIER', 'AS2D_SELECT_CARRIER');
 
-INSERT INTO UnitGameplay2DScripts (UnitType, SelectionSound, FirstSelectionSound)
-	SELECT 'UNIT_FW_JAVELIN', SelectionSound, FirstSelectionSound
-	FROM UnitGameplay2DScripts WHERE (UnitType = 'UNIT_ARTILLERY');
-
-INSERT INTO UnitGameplay2DScripts (UnitType, SelectionSound, FirstSelectionSound)
+ INSERT INTO UnitGameplay2DScripts (UnitType, SelectionSound, FirstSelectionSound)
 	SELECT 'UNIT_FW_ATGM', SelectionSound, FirstSelectionSound
 	FROM UnitGameplay2DScripts WHERE (UnitType = 'UNIT_ARTILLERY');
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07-Nov-14 13:31:24 -->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_WIND_FARM</Type>
+			<DefaultBuilding>BUILDING_WIND_FARM</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_WIND_FARM</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_SOLAR_PLANT"/>
+			<Set NearbyTerrainRequired="NULL"/>
+		</Update>
+		<Row>
+			<Type>BUILDING_WIND_FARM</Type>
+			<BuildingClass>BUILDINGCLASS_WIND_FARM</BuildingClass>
+			<Cost>250</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<Description>TXT_KEY_BUILDING_WIND_FARM</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_WIND_FARM_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_WIND_FARM_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_WIND_FARM_HELP</Help>
+			<ArtDefineTag>ART_DEF_BUILDING_HYDRO_PLANT</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>TTOMOD_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_WIND_FARM</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SOLAR_PLANT</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_WIND_FARM</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WIND_FARM</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>70</Flavor>
+		</Row>
+	</Building_Flavors>
+
+	<Building_ResourceQuantityRequirements>
+		<Row>
+			<BuildingType>BUILDING_SOLAR_PLANT</BuildingType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+	</Building_ResourceQuantityRequirements>
+
+	<Building_YieldChanges>
+		<Update>
+			<Where BuildingType="BUILDING_SOLAR_PLANT"/>
+			<Set Yield="3"/>
+		</Update>
+		<Row>
+			<BuildingType>BUILDING_WIND_FARM</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+
+	<Building_YieldModifiers>
+		<Update>
+			<Where BuildingType="BUILDING_SOLAR_PLANT"/>
+			<Set Yield="9"/>
+		</Update>
+		<Row>
+			<BuildingType>BUILDING_WIND_FARM</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>6</Yield>
+		</Row>
+	</Building_YieldModifiers>
+</GameData>

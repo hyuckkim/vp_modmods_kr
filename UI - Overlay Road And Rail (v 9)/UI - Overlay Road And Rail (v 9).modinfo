@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b049c326-c6f3-4241-a4f6-048c86fae20d" version="9">
+  <Properties>
+    <Name>UI - Overlay Road And Rail</Name>
+    <Teaser>Adds a Roads and Rails entry to the Overlay menu</Teaser>
+    <Description>Adds a Roads and Rails entry to the Overlay menu in strategic view that highlights all owned tiles with a road or rail improvement
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="ED895C8BE2B60F4D352E0F8F73005DB2" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="CCFA99E817AABB7BECE8DD7FE18F989B" import="0">UI/OverlayRoadAndRail.lua</File>
+    <File md5="A4140FE0617F9E7EC5C4320D9927F9C0" import="0">UI/OverlayRoadAndRail.xml</File>
+    <File md5="420C8A0E7C31CD89D976914AC4BAE9D7" import="1">UI/OverlayRoadAndRail_MiniMapOverlayHook.lua</File>
+    <File md5="8420F6021AE7372F7690BC4978FB7174" import="0">XML/UIOverlayRoadAndRail.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UIOverlayRoadAndRail.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayRoadAndRail.xml">
+      <Name>Road And Rail Overlay</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayRoadAndRail_MiniMapOverlayHook.lua">
+      <Name>Road And Rail MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

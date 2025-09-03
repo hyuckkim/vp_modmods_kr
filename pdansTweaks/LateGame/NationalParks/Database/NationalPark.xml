@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by pineappledan on 20/04/2019 -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONAL_PARK">
+			<Text>National Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONAL_PARK_TEXT">
+			<Text>A National Park is a natural landscape conserved and protected by a sovereign government. National Parks are established to preserve relatively untouched wilderness for various reasons, including posterity, national pride, research, and tourism. The oldest National Park is Yellowstone National Park, USA, which was established in 1872. The world's first government bureaucracy with a specific mandate to administer a country's national park was Parks Canada, founded in 1911.[NEWLINE][NEWLINE]National parks are almost always open to visitors. Most national parks provide outdoor recreation and camping opportunities as well as classes designed to educate the public on the importance of conservation and the natural wonders of the land in which the national park is located.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONAL_PARK_HELP">
+			<Text>National Parks can be built on Forest, Jungle, and Marsh.[NEWLINE][NEWLINE]Each National Park yields [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism, and double their yields if adjacent to a Natural Wonder and/or 2 National Parks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NATIONAL_PARK">
+			<Text>Build a [LINK=IMPROVEMENT_NATIONAL_PARK]National Park[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NATIONAL_PARK_HELP">
+			<Text>Constructs a National Park, which increases [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NATIONAL_PARK_REC">
+			<Text>It will increase [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

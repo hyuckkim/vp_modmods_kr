@@ -71,55 +71,6 @@ VALUES
     ('UNIT_FW_MODERN_COLONIST', 'AS2D_SELECT_SETTLER', 'AS2D_BIRTH_SETTLER'),
 	('UNIT_FW_SPACE_COLONIST', 'AS2D_SELECT_SETTLER', 'AS2D_BIRTH_SETTLER');
 
--- INSERT INTO ArtDefine_StrategicView
--- 	(StrategicViewType, TileType, Asset)
--- VALUES
--- 	('ART_DEF_UNIT_FW_AUGMENTED_DIPLOMAT', 'Unit','CSDSVicon.dds');
-
-
- /*
- => sql bug fixed xml moved
--- ==========================================================================================================================	
--- UNITCLASSES
--- ==========================================================================================================================	
-INSERT INTO UnitClasses
-	(Type, 							     Description, 					        DefaultUnit, 				MaxPlayerInstances)
-VALUES	
-	('UNITCLASS_FW_AUGMENTED_DIPLOMAT',  'TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT', 	'UNIT_FW_AUGMENTED_DIPLOMAT', 	NULL),
-	('UNITCLASS_FW_MODERN_COLONIST', 	 'TXT_KEY_UNIT_FW_MODERN_COLONIST', 	'UNIT_FW_MODERN_COLONIST', 		NULL),
-	('UNITCLASS_FW_SPACE_COLONIST', 	 'TXT_KEY_UNIT_FW_SPACE_COLONIST', 		'UNIT_FW_SPACE_COLONIST', 		NULL);
- --------------------------------------------------------------------------------------------------------------------------------
-
----------------------------------	
----- Units (Non COMBAT)
-----------------------------------	
-
-INSERT INTO Units
-	(Class,                              Type,               Moves, Cost, Capture,            CivilianAttackPriority,                HurryCostModifier, Domain,   DefaultUnitAI,          Description,                       Civilopedia,                        Strategy,                                         Help,                             PrereqTech,                      ObsoleteTech,               Food, Found, FoundMid, FoundLate, CombatLimit, UnitArtInfo,                    UnitArtInfoCulturalVariation, PortraitIndex, IconAtlas)
-VALUES
-	('UNITCLASS_FW_MODERN_COLONIST', 'UNIT_FW_MODERN_COLONIST', 5, 2000, 'UNITCLASS_WORKER', 'CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY', -1, 'DOMAIN_LAND', 'UNITAI_SETTLE', 'TXT_KEY_UNIT_FW_MODERN_COLONIST', 'TXT_KEY_UNIT_FW_MODERN_COLONIST_PEDIA', 'TXT_KEY_UNIT_FW_MODERN_COLONIST_STRATEGY', 'TXT_KEY_UNIT_FW_MODERN_COLONIST_HELP', 'TECH_COMPUTERS',               'TECH_ARTIFICIAL_ENVIRONMENTS',  1,    1,       0,        1,          0,       'ART_DEF_UNIT_FW_MODERN_COLONIST',  1,                           18, 'CIV_COLOR_ATLAS_FW'),  -- CAYM EDITED
-	('UNITCLASS_FW_SPACE_COLONIST',  'UNIT_FW_SPACE_COLONIST',  3, 3600, 'UNITCLASS_WORKER', 'CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY', -1, 'DOMAIN_LAND', 'UNITAI_SETTLE', 'TXT_KEY_UNIT_FW_SPACE_COLONIST',  'TXT_KEY_UNIT_FW_SPACE_COLONIST_PEDIA',  'TXT_KEY_UNIT_FW_SPACE_COLONIST_STRATEGY',  'TXT_KEY_UNIT_FW_SPACE_COLONIST_HELP',  'TECH_ARTIFICIAL_ENVIRONMENTS',         NULL,                    1,    1,       0,        1,          0,       'ART_DEF_UNIT_FW_SPACE_COLONIST',   1,                           17, 'CIV_COLOR_ATLAS_FW');                       -- CAYM EDITED
-
-INSERT INTO Units
-	(Class, 							Type, 					  Moves, Cost, CivilianAttackPriority,	   	   CombatClass, 		   Domain, 	  	  DefaultUnitAI, 	  Description, 							Civilopedia, 								Strategy, 									   Help, 								      PrereqTech, CombatLimit, BaseGold, UnitArtInfo, PortraitIndex, IconAtlas, UnitFlagAtlas, UnitFlagIconOffset, PurchaseCooldown)
-VALUES
-	('UNITCLASS_FW_AUGMENTED_DIPLOMAT', 'UNIT_FW_AUGMENTED_DIPLOMAT', 5, 2000, 'CIVILIAN_ATTACK_PRIORITY_LOW', 'UNITCOMBAT_DIPLOMACY', 'DOMAIN_LAND', 'UNITAI_MESSENGER', 'TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT', 'TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_PEDIA', 'TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_STRATEGY', 'TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_HELP', 'TECH_IMPLANTS', 0, 0, 'ART_DEF_UNIT_FW_AUGMENTED_DIPLOMAT', 47, 'BM_ALIENS_CIV_COLOR_ATLAS', 'DIPLOMAT_FLAG_ATLAS', 0, 5);   -- CAYM EDITED
-	
-INSERT INTO Unit_AITypes
-	(UnitType, UnitAIType)
-VALUES
-	('UNIT_FW_AUGMENTED_DIPLOMAT', 'UNITAI_MESSENGER'),
-	('UNIT_FW_MODERN_COLONIST', 'UNITAI_SETTLE'),
-	('UNIT_FW_SPACE_COLONIST', 'UNITAI_SETTLE');
-
-INSERT INTO Unit_Flavors
-	(UnitType, FlavorType, Flavor)
-VALUES
-	('UNIT_FW_AUGMENTED_DIPLOMAT', 'FLAVOR_DIPLOMACY', 90),
-	('UNIT_FW_MODERN_COLONIST',    'FLAVOR_EXPANSION', 35),  -- CAYM EDITED
-	('UNIT_FW_SPACE_COLONIST',     'FLAVOR_EXPANSION', 45);   -- CAYM EDITED
-*/
-
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 VALUES
@@ -187,7 +138,6 @@ VALUES
 	('UNIT_FW_MODERN_COLONIST', 'BUILDINGCLASS_MUSEUM'),
 	('UNIT_FW_MODERN_COLONIST', 'BUILDINGCLASS_BROADCAST_TOWER'),
 	('UNIT_FW_MODERN_COLONIST', 'BUILDINGCLASS_STOCK_EXCHANGE'),
-	('UNIT_FW_MODERN_COLONIST', 'BUILDINGCLASS_AIRPORT'),
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_AMPHITHEATER'),
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_AQUEDUCT'),
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_COLOSSEUM'),
@@ -216,7 +166,6 @@ VALUES
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_STADIUM'),
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_BOMB_SHELTER'),
 	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_MILITARY_BASE'),
-	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_POLICE_STATION'),
-	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_FW_SERVER_HUB'),
-	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_FW_GENE_LAB'),
-	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_FW_AUTOPLANT');
+	('UNIT_FW_SPACE_COLONIST', 'BUILDINGCLASS_POLICE_STATION');
+
+

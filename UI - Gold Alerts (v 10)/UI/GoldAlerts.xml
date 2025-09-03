@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT16" FontStyle="Base">
+  <Grid ID="GoldAlertDialog" Size="600,230" Anchor="C,C" Style="Grid9DetailFive140" ConsumeMouse="1" Hidden="1">
+    <Label Anchor="C,T" Offset="0,17" Font="TwCenMT22" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="TXT_KEY_GOLD_ALERT_HEADING"/>
+
+    <Label Anchor="L,T" Offset="28,63" Font="TwCenMT20" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="TXT_KEY_GOLD_ALERT_MESSAGE" ToolTip="TXT_KEY_GOLD_ALERT_MESSAGE_TT"/>
+    <Box  Anchor="L,T" Offset="115,60" Size="460,24" Color="Beige,255">
+      <Box Anchor="C,C"  Size="458,22" Color="Black,255" >
+        <EditBox CallOnChar="1" EditMode="1" Size="454,22" Anchor="C,C" ID="GoldAlertMessage" Font="TwCenMT20" MaxLength="60" FocusStop="0"/>
+      </Box>
+    </Box>
+
+    <Label Anchor="L,T" Offset="25,103" Font="TwCenMT20" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="TXT_KEY_GOLD_ALERT_AMOUNT" ToolTip="TXT_KEY_GOLD_ALERT_AMOUNT_TT"/>
+    <Box  Anchor="L,T" Offset="115,100" Size="70,24" Color="Beige,255">
+      <Box Anchor="C,C"  Size="68,22" Color="Black,255" >
+        <EditBox CallOnChar="1" EditMode="1" NumberInput="1" MaxLength="5" Size="64,22" Anchor="C,C" ID="GoldAlertAmount" Font="TwCenMT20" FocusStop="1" />
+      </Box>
+    </Box>
+
+    <GridButton ID="OK" Size="140,36" Anchor="C,B" Offset="0,50" Style="BaseButton">
+      <Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_GOLD_ALERT_BUTTON_OK" Font="TwCenMT22" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+    </GridButton>
+  </Grid>
+</Context>

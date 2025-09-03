@@ -130,17 +130,18 @@ UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, Model = 'M109SKorea.fxsxml' W
 
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, Model = 'RolandFrance.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_MOBILESAM';
 
--- UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_SMAN_IEUP_PRIVATE_MIL_CONTRACTORS' WHERE Type = 'UNIT_MECHANIZED_INFANTRY';
--- UPDATE Units SET PortraitIndex = '6', IconAtlas = 'EXPANSION_TECH_ATLAS_1'  WHERE Type = 'UNIT_MECHANIZED_INFANTRY';
+UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_SMAN_IEUP_PRIVATE_MIL_CONTRACTORS' WHERE Type = 'UNIT_MECHANIZED_INFANTRY';
+
+UPDATE Units SET PortraitIndex = '6', IconAtlas = 'EXPANSION_TECH_ATLAS_1'  WHERE Type = 'UNIT_MECHANIZED_INFANTRY';
 
 UPDATE Technologies SET Portraitindex = '26' , IconAtlas = 'UNIT_ATLAS_2' WHERE Type = 'TECH_MOBILE_TACTICS';
 
--- UPDATE ArtDefine_StrategicView SET Asset = 'sv_SPAD.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_MOBILE_SAM';
+UPDATE ArtDefine_StrategicView SET Asset = 'sv_SPAD.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_MOBILE_SAM';
 
--- UPDATE ArtDefine_StrategicView SET Asset = 'sv_K9Korea.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_ROCKET_ARTILLERY';
+UPDATE ArtDefine_StrategicView SET Asset = 'sv_K9Korea.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_ROCKET_ARTILLERY';
 
 
 
--- UPDATE Units SET PortraitIndex = '38', IconAtlas = 'BM_ALIENS_CIV_COLOR_ATLAS', UnitFlagAtlas = 'UNIT_ROCKETARTI_FLAG_ATLAS', UnitFlagIconOffset = 0  WHERE Type = 'UNIT_ROCKET_ARTILLERY';
+UPDATE Units SET PortraitIndex = '38', IconAtlas = 'BM_ALIENS_CIV_COLOR_ATLAS', UnitFlagAtlas = 'UNIT_ROCKETARTI_FLAG_ATLAS', UnitFlagIconOffset = 0  WHERE Type = 'UNIT_ROCKET_ARTILLERY';
 
--- UPDATE Units SET PortraitIndex = '37', IconAtlas = 'BM_ALIENS_CIV_COLOR_ATLAS', UnitFlagAtlas = 'UNIT_SPAD_FLAG_ATLAS', UnitFlagIconOffset = 0  WHERE Type = 'UNIT_MOBILE_SAM';
+UPDATE Units SET PortraitIndex = '37', IconAtlas = 'BM_ALIENS_CIV_COLOR_ATLAS', UnitFlagAtlas = 'UNIT_SPAD_FLAG_ATLAS', UnitFlagIconOffset = 0  WHERE Type = 'UNIT_MOBILE_SAM';

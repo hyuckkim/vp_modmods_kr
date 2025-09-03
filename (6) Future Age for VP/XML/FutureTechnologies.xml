@@ -2,6 +2,20 @@
 <GameData>
 	<Technologies>
 		<Row>
+			<Type>TECH_QUANTUM_COMPUTERS</Type>
+			<Cost>27500</Cost>
+			<Description>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_HELP</Help>
+			<Era>ERA_FUTURE</Era>
+			<Trade>true</Trade>
+			<GridX>18</GridX>
+			<GridY>2</GridY>
+			<Quote>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_QUOTE</Quote>
+			<PortraitIndex>60</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+		</Row>
+		<Row>
 			<Type>TECH_GEN_MANIP</Type>
 			<Cost>30000</Cost>
 			<Description>TXT_KEY_TECH_FW_GEN_MANIP_TITLE</Description>
@@ -12,64 +26,36 @@
 			<GridX>19</GridX>
 			<GridY>2</GridY>
 			<Quote>TXT_KEY_TECH_FW_GEN_MANIP_QUOTE</Quote>
-			<PortraitIndex>18</PortraitIndex>
+			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_SUPERCOMPUTERS</Type>
+			<Type>TECH_ORBITAL_DEV</Type>
 			<Cost>30000</Cost>
-			<Description>TXT_KEY_TECH_FW_SUPERCOMPUTERS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_SUPERCOMPUTERS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_SUPERCOMPUTERS_HELP</Help>
-			<Era>ERA_FUTURE</Era>
-			<Trade>true</Trade>
-			<GridX>19</GridX>
-			<GridY>3</GridY>
-			<Quote>TXT_KEY_TECH_FW_SUPERCOMPUTERS_QUOTE</Quote>
-			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
-		</Row>
-		<Row>
-			<Type>TECH_NANOMATERIALS</Type>
-			<Cost>30000</Cost>
-			<Description>TXT_KEY_TECH_FW_NANOMATERIALS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_NANOMATERIALS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_NANOMATERIALS_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
-			<Trade>true</Trade>
-			<GridX>19</GridX>
-			<GridY>7</GridY>
-			<Quote>TXT_KEY_TECH_FW_NANOMATERIALS_QUOTE</Quote>
-			<PortraitIndex>13</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
-		</Row>
-		<Row>
-			<Type>TECH_FUTURE_BALLISTICS</Type>
-			<Cost>30000</Cost>
-			<Description>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_ORBITAL_DEV_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_ORBITAL_DEV_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_ORBITAL_DEV_HELP</Help>
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>19</GridX>
 			<GridY>8</GridY>
-			<Quote>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_QUOTE</Quote>
-			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+			<Quote>TXT_KEY_TECH_FW_ORBITAL_DEV_QUOTE</Quote>
+			<PortraitIndex>47</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_EUTHENICS</Type>
+			<Type>TECH_FW_ECOTHEORY</Type>
 			<Cost>35000</Cost>
-			<Description>TXT_KEY_TECH_FW_EUTHENICS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_EUTHENICS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_EUTHENICS_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
+			<Description>TXT_KEY_TECH_FW_ECOTHEORY_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_ECOTHEORY_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_ECOTHEORY_HELP</Help>
+			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>20</GridX>
 			<GridY>1</GridY>
-			<Quote>TXT_KEY_TECH_FW_EUTHENICS_QUOTE</Quote>
-			<PortraitIndex>46</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
+			<Quote>TXT_KEY_TECH_FW_ECOTHEORY_QUOTE</Quote>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_GRID_COMPUTING</Type>
@@ -77,13 +63,13 @@
 			<Description>TXT_KEY_TECH_FW_GRID_COMPUTING_TITLE</Description>
 			<Civilopedia>TXT_KEY_TECH_FW_GRID_COMPUTING_DESC</Civilopedia>
 			<Help>TXT_KEY_TECH_FW_GRID_COMPUTING_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
+			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>20</GridX>
 			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_FW_GRID_COMPUTING_QUOTE</Quote>
-			<PortraitIndex>11</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_MEMETICS</Type>
@@ -91,27 +77,41 @@
 			<Description>TXT_KEY_TECH_FW_MEMETICS_TITLE</Description>
 			<Civilopedia>TXT_KEY_TECH_FW_MEMETICS_DESC</Civilopedia>
 			<Help>TXT_KEY_TECH_FW_MEMETICS_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
+			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>20</GridX>
 			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_MEMETICS_QUOTE</Quote>
-			<PortraitIndex>12</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_POWER_SYSTEMS</Type>
+			<Type>TECH_SUPERCOMPUTERS</Type>
 			<Cost>35000</Cost>
-			<Description>TXT_KEY_TECH_FW_POWER_SYSTEMS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_POWER_SYSTEMS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_POWER_SYSTEMS_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
+			<Description>TXT_KEY_TECH_FW_SUPERCOMPUTERS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_SUPERCOMPUTERS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_SUPERCOMPUTERS_HELP</Help>
+			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>20</GridX>
 			<GridY>5</GridY>
-			<Quote>TXT_KEY_TECH_FW_POWER_SYSTEMS_QUOTE</Quote>
-			<PortraitIndex>9</PortraitIndex>
+			<Quote>TXT_KEY_TECH_FW_SUPERCOMPUTERS_QUOTE</Quote>
+			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>TECH_NANOMATERIALS</Type>
+			<Cost>35000</Cost>
+			<Description>TXT_KEY_TECH_FW_NANOMATERIALS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_NANOMATERIALS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_NANOMATERIALS_HELP</Help>
+			<Era>ERA_FUTURE</Era>
+			<Trade>true</Trade>
+			<GridX>20</GridX>
+			<GridY>6</GridY>
+			<Quote>TXT_KEY_TECH_FW_NANOMATERIALS_QUOTE</Quote>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_ARTIFICIAL_ENVIRONMENTS</Type>
@@ -119,12 +119,26 @@
 			<Description>TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_TITLE</Description>
 			<Civilopedia>TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_DESC</Civilopedia>
 			<Help>TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
+			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>20</GridX>
 			<GridY>9</GridY>
 			<Quote>TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_QUOTE</Quote>
-			<PortraitIndex>38</PortraitIndex>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>TECH_ORGANICS</Type>
+			<Cost>40000</Cost>
+			<Description>TXT_KEY_TECH_FW_ORGANICS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_ORGANICS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_ORGANICS_HELP</Help>
+			<Era>ERA_FW_FUTURE</Era>
+			<Trade>true</Trade>
+			<GridX>21</GridX>
+			<GridY>2</GridY>
+			<Quote>TXT_KEY_TECH_FW_ORGANICS_QUOTE</Quote>
+			<PortraitIndex>25</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
@@ -136,68 +150,52 @@
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>21</GridX>
-			<GridY>2</GridY>
+			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_FW_IMPLANTS_QUOTE</Quote>
-			<!-- <PortraitIndex>31</PortraitIndex> -->
-			<!-- <IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas> -->
 			<PortraitIndex>12</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
-		</Row>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+		</Row>		
 		<Row>
-			<Type>TECH_FW_ECOTHEORY</Type>
+			<Type>TECH_MECHATRONICS</Type>
 			<Cost>40000</Cost>
-			<Description>TXT_KEY_TECH_FW_ECOTHEORY_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_ECOTHEORY_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_ECOTHEORY_HELP</Help>
-			<Era>ERA_FW_FUTURE</Era>
-			<Trade>true</Trade>
-			<GridX>21</GridX>
-			<GridY>4</GridY>
-			<Quote>TXT_KEY_TECH_FW_ECOTHEORY_QUOTE</Quote>
-			<PortraitIndex>51</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
-		</Row>
-		<Row>
-			<Type>TECH_COGNITIVE_TECH</Type>
-			<Cost>40000</Cost>
-			<Description>TXT_KEY_TECH_FW_COGNITIVE_TECH_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_COGNITIVE_TECH_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_COGNITIVE_TECH_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_MECHATRONICS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_MECHATRONICS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_MECHATRONICS_HELP</Help>
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>21</GridX>
 			<GridY>5</GridY>
-			<Quote>TXT_KEY_TECH_FW_COGNITIVE_TECH_QUOTE</Quote>
-			<PortraitIndex>26</PortraitIndex>
+			<Quote>TXT_KEY_TECH_FW_MECHATRONICS_QUOTE</Quote>
+			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_QUANTUM_COMPUTERS</Type>
+			<Type>TECH_FUTURE_BALLISTICS</Type>
 			<Cost>40000</Cost>
-			<Description>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_HELP</Help>
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>21</GridX>
-			<GridY>6</GridY>
-			<Quote>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_QUOTE</Quote>
-			<PortraitIndex>29</PortraitIndex>
+			<GridY>7</GridY>
+			<Quote>TXT_KEY_TECH_FW_FUTURE_BALLISTICS_QUOTE</Quote>
+			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_ORBITAL_DEV</Type>
+			<Type>TECH_POWER_SYSTEMS</Type>
 			<Cost>40000</Cost>
-			<Description>TXT_KEY_TECH_FW_ORBITAL_DEV_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_ORBITAL_DEV_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_ORBITAL_DEV_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_POWER_SYSTEMS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_POWER_SYSTEMS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_POWER_SYSTEMS_HELP</Help>
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>21</GridX>
 			<GridY>8</GridY>
-			<Quote>TXT_KEY_TECH_FW_ORBITAL_DEV_QUOTE</Quote>
-			<PortraitIndex>54</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
+			<Quote>TXT_KEY_TECH_FW_POWER_SYSTEMS_QUOTE</Quote>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_CLONING</Type>
@@ -214,31 +212,31 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_ORGANICS</Type>
+			<Type>TECH_EUTHENICS</Type>
 			<Cost>47500</Cost>
-			<Description>TXT_KEY_TECH_FW_ORGANICS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_ORGANICS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_ORGANICS_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_EUTHENICS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_EUTHENICS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_EUTHENICS_HELP</Help>
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>22</GridX>
-			<GridY>4</GridY>
-			<Quote>TXT_KEY_TECH_FW_ORGANICS_QUOTE</Quote>
-			<PortraitIndex>10</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
+			<GridY>3</GridY>
+			<Quote>TXT_KEY_TECH_FW_EUTHENICS_QUOTE</Quote>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
-			<Type>TECH_MECHATRONICS</Type>
+			<Type>TECH_COGNITIVE_TECH</Type>
 			<Cost>47500</Cost>
-			<Description>TXT_KEY_TECH_FW_MECHATRONICS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_MECHATRONICS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_MECHATRONICS_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_COGNITIVE_TECH_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_COGNITIVE_TECH_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_COGNITIVE_TECH_HELP</Help>
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>22</GridX>
 			<GridY>5</GridY>
-			<Quote>TXT_KEY_TECH_FW_MECHATRONICS_QUOTE</Quote>
-			<PortraitIndex>8</PortraitIndex>
+			<Quote>TXT_KEY_TECH_FW_COGNITIVE_TECH_QUOTE</Quote>
+			<PortraitIndex>26</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
@@ -250,7 +248,7 @@
 			<Era>ERA_FW_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>22</GridX>
-			<GridY>6</GridY>
+			<GridY>7</GridY>
 			<Quote>TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_QUOTE</Quote>
 			<PortraitIndex>35</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -308,7 +306,7 @@
 			<GridX>23</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_QUOTE</Quote>
-			<PortraitIndex>33</PortraitIndex>
+			<PortraitIndex>39</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
@@ -364,7 +362,7 @@
 			<GridX>24</GridX>
 			<GridY>2</GridY>
 			<Quote>TXT_KEY_TECH_FW_BIOMODIFICATION_QUOTE</Quote>
-			<PortraitIndex>25</PortraitIndex>
+			<PortraitIndex>5</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
@@ -378,8 +376,8 @@
 			<GridX>24</GridX>
 			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_CYBERNETICS_QUOTE</Quote>
-			<PortraitIndex>9</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>14</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_AI</Type>
@@ -392,7 +390,7 @@
 			<GridX>24</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_FW_AI_QUOTE</Quote>
-			<PortraitIndex>39</PortraitIndex>
+			<PortraitIndex>9</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 		</Row>
 		<Row>
@@ -434,8 +432,8 @@
 			<GridX>25</GridX>
 			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_FW_TERRAFORMING_QUOTE</Quote>
-			<PortraitIndex>5</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_HUMAN_AUGMENTATION</Type>
@@ -448,10 +446,8 @@
 			<GridX>25</GridX>
 			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_QUOTE</Quote>
-			<!-- <PortraitIndex>12</PortraitIndex> -->
-			<!-- <IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas> -->
-			<PortraitIndex>23</PortraitIndex>
-			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>12</PortraitIndex> 
+			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_DIGITAL_SOCIETY</Type>
@@ -579,28 +575,28 @@
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_GLOBALIZATION"/>
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_ROBOTICS"/>
 		<Row>
-			<TechType>TECH_GLOBALIZATION</TechType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
 			<PrereqTech>TECH_ECOLOGY</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_GLOBALIZATION</TechType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
 			<PrereqTech>TECH_TELECOM</PrereqTech>
 		</Row>
 		<Row>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<PrereqTech>TECH_INTERNET</PrereqTech>
+		</Row>
+		<Row>
 			<TechType>TECH_GEN_MANIP</TechType>
 			<PrereqTech>TECH_INTERNET</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_GEN_MANIP</TechType>
-			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<PrereqTech>TECH_INTERNET</PrereqTech>
+			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ROBOTICS</TechType>
@@ -611,208 +607,196 @@
 			<PrereqTech>TECH_LASERS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<PrereqTech>TECH_LASERS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<TechType>TECH_ORBITAL_DEV</TechType>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<TechType>TECH_ORBITAL_DEV</TechType>
 			<PrereqTech>TECH_LASERS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
 			<PrereqTech>TECH_GEN_MANIP</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<PrereqTech>TECH_ROBOTICS</PrereqTech>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_GRID_COMPUTING</TechType>
 			<PrereqTech>TECH_GEN_MANIP</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-		</Row>
-		<Row>
 			<TechType>TECH_MEMETICS</TechType>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
+			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_MEMETICS</TechType>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<PrereqTech>TECH_INTERNET</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<PrereqTech>TECH_LASERS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_PARTICLE_PHYSICS</TechType>
-			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_PARTICLE_PHYSICS</TechType>
-			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_PARTICLE_PHYSICS</TechType>
-			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
-			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
-			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_IMPLANTS</TechType>
-			<PrereqTech>TECH_EUTHENICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_IMPLANTS</TechType>
-			<PrereqTech>TECH_GRID_COMPUTING</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<PrereqTech>TECH_GRID_COMPUTING</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<PrereqTech>TECH_MEMETICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<PrereqTech>TECH_MEMETICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<TechType>TECH_NANOMATERIALS</TechType>
 			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_PARTICLE_PHYSICS</TechType>
 			<PrereqTech>TECH_NANOTECHNOLOGY</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
+			<TechType>TECH_PARTICLE_PHYSICS</TechType>
+			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<PrereqTech>TECH_ARTIFICIAL_ENVIRONMENTS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
+			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ORGANICS</TechType>
 			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
 		</Row>
-		<Row> 
+		<Row>
 			<TechType>TECH_ORGANICS</TechType>
-			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+			<PrereqTech>TECH_GRID_COMPUTING</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_IMPLANTS</TechType>
+			<PrereqTech>TECH_GRID_COMPUTING</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_MECHATRONICS</TechType>
-			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+			<PrereqTech>TECH_ROBOTICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<PrereqTech>TECH_ARTIFICIAL_ENVIRONMENTS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<PrereqTech>TECH_ORGANICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<PrereqTech>TECH_MEMETICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
+			<PrereqTech>TECH_ORGANICS</PrereqTech>
+		</Row>
+		<Row> 
+			<TechType>TECH_EUTHENICS</TechType>
+			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
+			<PrereqTech>TECH_MEMETICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
+			<PrereqTech>TECH_ROBOTICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<PrereqTech>TECH_MEMETICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
-			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
-			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
+			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
+			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ASTRODYNAMICS</TechType>
-			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
+			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ASTRODYNAMICS</TechType>
-			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_ASTRODYNAMICS</TechType>
+			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_TRANSGENICS</TechType>
+			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_TRANSGENICS</TechType>
+			<PrereqTech>TECH_CLONING</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<PrereqTech>TECH_EUTHENICS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_TRANSGENICS</TechType>
-			<PrereqTech>TECH_CLONING</PrereqTech>
-		</Row>
-		<Row>
 			<TechType>TECH_NEURAL_INTERFACE</TechType>
 			<PrereqTech>TECH_CLONING</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_NEURAL_INTERFACE</TechType>
-			<PrereqTech>TECH_ORGANICS</PrereqTech>
+			<PrereqTech>TECH_EUTHENICS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
-			<PrereqTech>TECH_ORGANICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
+			<TechType>TECH_NEURAL_INTERFACE</TechType>
 			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
 		</Row>
 		<Row>
+			<TechType>TECH_NEURAL_INTERFACE</TechType>
+			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
+		</Row>
+		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
-			<PrereqTech>TECH_NUCLEAR_ENRICHMENT</PrereqTech>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_SUPERCONDUCTIVITY</TechType>
@@ -821,6 +805,14 @@
 		<Row>
 			<TechType>TECH_SUPERCONDUCTIVITY</TechType>
 			<PrereqTech>TECH_ASTRODYNAMICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCONDUCTIVITY</TechType>
+			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCONDUCTIVITY</TechType>
+			<PrereqTech>TECH_ARTIFICIAL_ENVIRONMENTS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ARCOLOGIES</TechType>
@@ -831,20 +823,24 @@
 			<PrereqTech>TECH_ASTRODYNAMICS</PrereqTech>
 		</Row>
 		<Row>
+			<TechType>TECH_ARCOLOGIES</TechType>
+			<PrereqTech>TECH_NUCLEAR_ENRICHMENT</PrereqTech>
+		</Row>
+		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<PrereqTech>TECH_TRANSGENICS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_GENGINEERING</TechType>
-			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
-		</Row>
-		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
 			<PrereqTech>TECH_TRANSGENICS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
 			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_BIOMODIFICATION</TechType>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
@@ -852,27 +848,23 @@
 		</Row>
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
-			<PrereqTech>TECH_AUTONOMOUS_SYSTEMS</PrereqTech>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_CYBERNETICS</TechType>
+			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_AI</TechType>
-			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_AI</TechType>
-			<PrereqTech>TECH_AUTONOMOUS_SYSTEMS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_AI</TechType>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<PrereqTech>TECH_AUTONOMOUS_SYSTEMS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NUCLEAR_FUSION</TechType>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
@@ -883,8 +875,8 @@
 			<PrereqTech>TECH_ARCOLOGIES</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_ADAMANTIUM</TechType>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ADAMANTIUM</TechType>
@@ -908,10 +900,6 @@
 		</Row>
 		<Row>
 			<TechType>TECH_DIGITAL_SOCIETY</TechType>
-			<PrereqTech>TECH_BIOMODIFICATION</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_DIGITAL_SOCIETY</TechType>
 			<PrereqTech>TECH_CYBERNETICS</PrereqTech>
 		</Row>
 		<Row>
@@ -927,10 +915,6 @@
 			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_SMART_MATERIALS</TechType>
-			<PrereqTech>TECH_PROMETHEUS_PROGRAM</PrereqTech>
-		</Row>
-		<Row>
 			<TechType>TECH_ENERGY_THEORY</TechType>
 			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
 		</Row>
@@ -940,11 +924,11 @@
 		</Row>
 		<Row>
 			<TechType>TECH_HYPERSTRUCTURES</TechType>
-			<PrereqTech>TECH_ADAMANTIUM</PrereqTech>
+			<PrereqTech>TECH_PROMETHEUS_PROGRAM</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_HYPERSTRUCTURES</TechType>
-			<PrereqTech>TECH_PROMETHEUS_PROGRAM</PrereqTech>
+			<PrereqTech>TECH_ADAMANTIUM</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_HOMO_SUPERIOR</TechType>
@@ -1127,53 +1111,36 @@
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-
-		<!-- <Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_AIR</FlavorType>
-			<Flavor>25</Flavor>
-		</Row>
-		<Row>
-			<TechType>TTECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
-			<Flavor>10</Flavor>
-		</Row> -->
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
 		<Row>
 			<TechType>TECH_NANOMATERIALS</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOMATERIALS</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOMATERIALS</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_FUTURE_BALLISTICS</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -1363,38 +1330,46 @@
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
+			<Flavor>10</Flavor>
+		</Row> 
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<FlavorType>FLAVOR_AIR</FlavorType>
+			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_PARTICLE_PHYSICS</TechType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -2437,7 +2412,7 @@
 			<FlavorType>FLAVOR_NUKE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
+		
 		<Row>
 			<TechType>TECH_ADAMANTIUM</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -2483,7 +2458,6 @@
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_TERRAFORMING</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b089f59c-3b94-4adb-93cf-0cf484661abc" version="17">
+  <Properties>
+    <Name>UI - City Happiness</Name>
+    <Teaser>Adds a popup to aid deciding which happiness building to buy in which city</Teaser>
+    <Description>Makes the Happiness indicator in the top panel clickable to display a popup with two panels - Buildings and Courthouses.
+
+The Buildings panel shows unhappiness per city and which buildings are availble in that city to buy to increase happiness.
+
+The Courthouse panel shows annexed cities without a Courthouse (or civilization specific building) and the effect of buying a Courthouse in that city
+
+Buildings can be bought directly from either panel by clicking the appropriate building icon.</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Translation: German - AndreP; EUI Icon: Lynnes</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=469375</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="0F25A350FEDA3D78C82BF09515825175" import="1">ART/EUI_DC45_CityHappiness.dds</File>
+    <File md5="69A9C2BBB20C4DFE8279132D07E086FF" import="0">UI/CityHappiness.lua</File>
+    <File md5="FC87DE6EEBCBB6B964FC020AAA3EC1CC" import="0">UI/CityHappiness.xml</File>
+    <File md5="6D7C291204446A9ECDF10C0E59E3631A" import="0">XML/UICityHappiness.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UICityHappiness.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/CityHappiness.xml">
+      <Name>City Happiness</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

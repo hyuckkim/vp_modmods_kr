@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="876d0d36-f363-4f0d-aba2-8227260f7e27" version="8">
+  <Properties>
+    <Name>UI - Overlay Continents</Name>
+    <Teaser>Highlights landmasses belonging to the same continent</Teaser>
+    <Description>Highlights landmasses belonging to the same continent.
+
+An example of how to use the Modular MiniMap Overlay</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?119168-MOD-UI-Continents</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="8EEDCCABF4020C9CF8EE12460A2AED34" import="1">UI/OverlayContinents_MiniMapOverlayHook.lua</File>
+    <File md5="442B5981A539AA648F4F5F5B14BBDCD1" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="8DC95B6D22B6603CB9E23E1856C6D36D" import="0">UI/OverlayContinents.lua</File>
+    <File md5="CE351008A15913E60C7CFAF94C027293" import="0">UI/OverlayContinents.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+    <File md5="A408291545AF2EC9D7060C233DFE4EFD" import="0">XML/UIContinents.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIContinents.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayContinents.xml">
+      <Name>Continents</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayContinents_MiniMapOverlayHook.lua">
+      <Name>Continents MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

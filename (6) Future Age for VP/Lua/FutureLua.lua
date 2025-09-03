@@ -4,7 +4,7 @@ print("Loading FutureLua.lua from VP-FW mod");
 --------------------------------------------
 local iBuildingAngelnet = GameInfoTypes["BUILDING_FW_ANGELNET"]
 local iPromotionAngelnet = GameInfoTypes["PROMOTION_FW_ANGELNET"]
-local iRangeAngelnet = 5
+local iRangeAngelnet = 4
 local bHasAngelnet = false
 local iPlayerAngelnet
 local iPlotXAngelnet -- City which built Angelnet Ghebbi
@@ -17,7 +17,35 @@ local iPlotXFloatingIslands -- City which built FloatingIslands
 local iPlotYFloatingIslands -- City which built FloatingIslands
 local iBuildingMnemosyne = GameInfoTypes["BUILDING_FW_MNEMOSYNE"]
 
-print("FloatingIslands is", iFloatingIslands, "FloatingIslands Dummy is", iFloatingIslandsDummyck);
+print("FloatingIslands is", iFloatingIslands, "FloatingIslands Dummy is", iFloatingIslandsDummy);
+
+--------------------------------------------
+-- Floating Islands: Human-only sync helpers
+--------------------------------------------
+local function HumanID() return Game.GetActivePlayer() end
+
+local function ApplyFloatingDummyToPlayer(iTargetPlayer)
+	local p = Players[iTargetPlayer]
+	if not p or not p:IsAlive() then return end
+	for city in p:Cities() do
+		city:SetNumRealBuilding(iFloatingIslandsDummy, 1)
+	end
+end
+
+local function ClearFloatingDummyFromPlayer(iTargetPlayer)
+	local p = Players[iTargetPlayer]
+	if not p or not p:IsAlive() then return end
+	for city in p:Cities() do
+		if city:GetNumRealBuilding(iFloatingIslandsDummy) > 0 then
+			city:SetNumRealBuilding(iFloatingIslandsDummy, 0)
+		end
+	end
+end
+
+local function HumanOwnsFloatingIslands()
+	return bHasFloatingIslands and iPlayerFloatingIslands == HumanID()
+end
+
 
 --------------------------------------------
 -- Angelnet
@@ -57,7 +85,14 @@ function OnLoadScreenCloseFW()
 						iPlotXAngelnet = pCity:GetX()
 						iPlotYAngelnet = pCity:GetY()
 						iPlayerAngelnet = i
-					end
+					
+	-- Human-only sync on load
+	if HumanOwnsFloatingIslands() then
+		ApplyFloatingDummyToPlayer(HumanID())
+	else
+		ClearFloatingDummyFromPlayer(HumanID())
+	end
+end
 					if pCity:IsHasBuilding(iFloatingIslands) then
 						bHasFloatingIslands = true
 						iPlotXFloatingIslands = pCity:GetX()
@@ -117,56 +152,65 @@ GameEvents.CityConstructed.Add(OnCityConstructedFW)
 --------------------------------------------
 function OnPlayerCityFoundedFW (iPlayer, iX, iY)
 	if bHasFloatingIslands then
-		if iPlayer == iPlayerFloatingIslands then
+		-- Human-only: only apply if city belongs to human and human currently owns the wonder
+		if iPlayer == HumanID() and HumanOwnsFloatingIslands() then
 			local pPlot = Map.GetPlot(iX, iY)
-			local pCity = pPlot:GetPlotCity()
-			if pCity:IsCoastal(10) then
-				pCity:SetNumRealBuilding (iFloatingIslandsDummy, 1)
+			if pPlot then
+				local pCity = pPlot:GetPlotCity()
+				if pCity then
+					pCity:SetNumRealBuilding (iFloatingIslandsDummy, 1)
+				end
 			end
+		end
+	end
+end
 		end
 	end
 end
 GameEvents.PlayerCityFounded.Add(OnPlayerCityFoundedFW)
 
--- Obsolet with 'ProhibitedCityTerrain'
--- local tValidIsNoCoastBuildings = {
--- 	[GameInfo.Buildings.BUILDING_FW_DEFENSE_FIELD.ID] = true,
--- 	[GameInfo.Buildings.BUILDING_FW_JURASSIC_PARK.ID] = true,
--- }
--- -- checks if city is NOT near COAST
--- function IsNoCoastFW(ePlayer, eCity, eBuilding)
--- 	if not tValidIsNoCoastBuildings[eBuilding] then return true end
--- 	local pPlayer = Players[ePlayer]
--- 	if not pPlayer:IsAlive() then return false end
--- 	local pCity = pPlayer:GetCityByID(eCity)
--- 	local iCityX = pCity:GetX()
--- 	local iCityY = pCity:GetY()
--- 	if pCity:IsCoastal(10) then
--- 		return false
--- 	end
--- 	return true
--- end
--- GameEvents.CityCanConstruct.Add(IsNoCoastFW)
 
--- checks if city has enough citizens
-local tValidIsHasCitizens = {
-	[GameInfo.Buildings.BUILDING_FW_BRAIN_UPLOADING.ID] = 75,
-	[GameInfo.Buildings.BUILDING_FW_DIGITAL_EMANCIPATION.ID] = 75,
-	[GameInfo.Buildings.BUILDING_FW_ANGELNET.ID] = 45
+local tValidIsNoCoastBuildings = {
+	[GameInfo.Buildings.BUILDING_FW_DEFENSE_FIELD.ID] = true,
+	[GameInfo.Buildings.BUILDING_FW_JURASSIC_PARK.ID] = true,
 }
-function IsHasCitizensFW(ePlayer, eCity, eBuilding)
-	if not tValidIsHasCitizens[eBuilding] then return true end
+-- checks if city is NOT near COAST
+function IsNoCoastFW(ePlayer, eCity, eBuilding)
+	if not tValidIsNoCoastBuildings[eBuilding] then return true end
 	local pPlayer = Players[ePlayer]
 	if not pPlayer:IsAlive() then return false end
-	local iCitizens = tValidIsHasCitizens[eBuilding]
 	local pCity = pPlayer:GetCityByID(eCity)
-	if pCity:GetPopulation() >= iCitizens then
-		return true
+	local iCityX = pCity:GetX()
+	local iCityY = pCity:GetY()
+	if pCity:IsCoastal(10) then
+		return false
 	end
-	return false
+	return true
 end
-GameEvents.CityCanConstruct.Add(IsHasCitizensFW)
+GameEvents.CityCanConstruct.Add(IsNoCoastFW)
 
+
+
+--------------------------------------------
+-- Floating Islands: capture sync (human-only)
+--------------------------------------------
+function OnCityCaptureCompleteFW (oldOwner, bIsCapital, iX, iY, newOwner, bConquest)
+	local pPlot = Map.GetPlot(iX, iY)
+	if not pPlot then return end
+	local pCity = pPlot:GetPlotCity()
+	if not pCity then return end
+	if pCity:IsHasBuilding(iFloatingIslands) then
+		-- Update current owner of the Wonder
+		iPlayerFloatingIslands = newOwner
+		-- Human-only re-sync
+		if newOwner == HumanID() then
+			ApplyFloatingDummyToPlayer(HumanID())
+		else
+			ClearFloatingDummyFromPlayer(HumanID())
+		end
+	end
+end
+GameEvents.CityCaptureComplete.Add(OnCityCaptureCompleteFW)
 --------------------------------------------
 -- Mnemosyne 
 --------------------------------------------
@@ -177,8 +221,8 @@ function MnemosyneBonusFW(iPlayer, iCity, iUnitID, bGold, bFaithOrCulture)
 	if pCity:IsHasBuilding(iBuildingMnemosyne) then
 		local iHighestUnitLevel = pPlayer:GetHighestUnitLevel()
 		local iNewXP = iHighestUnitLevel * 10
-		if iNewXP > 200 then
-			iNewXP = 200
+		if iNewXP > 100 then
+			iNewXP = 100
 		end
 		if pUnit:IsCombatUnit() then
 			pUnit:ChangeExperience(iNewXP)
@@ -191,82 +235,98 @@ GameEvents.CityTrained.Add(MnemosyneBonusFW)
 -----------------------------------
 -- Unit
 ----------------------------------
---------------------------------------------------------------------------------------------------------------------------
--- JFD_GetRandom
---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------
+-- Random util
+-----------------------------------
 function JFD_GetRandomFW(lower, upper)
     return Game.Rand((upper + 1) - lower, "") + lower
 end
 
---------------------------------------------
--- Crawler unit
---------------------------------------------
-local iChanceMissileProduction = 25
-local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
+-----------------------------------
+-- Config (조정 지점)
+-----------------------------------
+local UNIT_CRAWLER          = GameInfoTypes.UNIT_FW_CRAWLER
+local UNIT_ANGEL            = GameInfoTypes.UNIT_FW_ANGEL
+local UNIT_MISSILE_SPAWNED  = GameInfoTypes.UNIT_FW_HYPERMISSILE
+-- Crawler 타일에서 “이미 있는 미사일”을 셀 때 기준 유닛(원코드에 맞춤)
+local UNITTYPE_TO_COUNT_FOR_CRAWLER = GameInfoTypes.UNIT_GUIDED_MISSILE
+-- Angel 타일에서 “이미 있는 미사일” 셀 때 기준 유닛(원코드에 맞춤)
+local UNITTYPE_TO_COUNT_FOR_ANGEL   = GameInfoTypes.UNIT_FW_HYPERMISSILE
 
-function CrawlerEffectsFW(iPlayer)
-	local pPlayer = Players[iPlayer]
-	for pUnit in pPlayer:Units() do
-		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_CRAWLER"]) then
-			--print("Crawler found")
-			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
-			if (iCheckForMissileProduction < iChanceMissileProduction) then
-				local pPlot = pUnit:GetPlot()
-				if (pPlot ~= nil) then
-					local iNumMissiles = 0
-					for iVal = 0,(pPlot:GetNumUnits() - 1) do
-						local loopUnit = pPlot:GetUnit(iVal)
-						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_FW_HYPERMISSILE"]) then
-							--print("Missile found")
-							iNumMissiles = iNumMissiles + 1
-						end
-					end
-					--print("Total missiles: " .. iNumMissiles)
-					if (iNumMissiles < 3) then
-						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
-					end
-				end
-			end
-		end
-	end
+local CRAWLER_SPAWN_CHANCE = 25   -- %
+local CRAWLER_TILE_CAP     = 3    -- 타일에 허용할 미사일 수(해당 체크 유닛 기준)
+local ANGEL_SPAWN_CHANCE   = 25   -- %
+local ANGEL_TILE_CAP       = 1
+
+-- 바바리안/시민국가 제외하고 싶으면 true
+local EXCLUDE_BARBARIANS   = true
+local EXCLUDE_MINOR_CS     = false
+
+-----------------------------------
+-- 공용 스폰 함수
+-----------------------------------
+local function TrySpawnMissileOnPlot(pPlayer, pPlot, unitTypeToSpawn, tileCap, unitTypeToCount)
+    if not pPlot then return end
+    if not unitTypeToSpawn then return end
+    if not unitTypeToCount then unitTypeToCount = unitTypeToSpawn end
+
+    -- 현재 타일의 해당 타입 유닛 수 세기
+    local count = 0
+    local n = pPlot:GetNumUnits()
+    for i = 0, n - 1 do
+        local u = pPlot:GetUnit(i)
+        if u and u:GetUnitType() == unitTypeToCount then
+            count = count + 1
+            if count >= tileCap then
+                return -- 이미 cap
+            end
+        end
+    end
+
+    -- 기술/자원/생산 조건 무시 생성
+    local newUnit = pPlayer:InitUnit(unitTypeToSpawn, pPlot:GetX(), pPlot:GetY())
+    if newUnit then
+        -- 만약 타일이 유효하지 않다면 근처로 점프
+        newUnit:JumpToNearestValidPlot()
+    end
 end
-GameEvents.PlayerDoTurn.Add(CrawlerEffectsFW)
 
+-----------------------------------
+-- Angel/Crawler 공용 처리
+-----------------------------------
+local function HandleUnitMissileTick(pPlayer, pUnit, spawnChance, tileCap, unitTypeToCount)
+    if not pUnit or pUnit:IsDelayedDeath() then return end
+    if JFD_GetRandomFW(1, 100) > spawnChance then return end
 
---------------------------------------------
--- Angel unit
---------------------------------------------
-local iChanceMissileProduction = 25
-local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
-local iNanohivePromotion = GameInfoTypes.PROMOTION_FW_NANOHIVE_PROMOTION
+    local pPlot = pUnit:GetPlot()
+    if not pPlot then return end
 
-function AngelEffectsFW(iPlayer)
-	local pPlayer = Players[iPlayer]
-	for pUnit in pPlayer:Units() do
-		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_ANGEL"]) then
-			--print("Angel found")
-			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
-			if (iCheckForMissileProduction < iChanceMissileProduction) then
-				local pPlot = pUnit:GetPlot()
-				if (pPlot ~= nil) then
-					local iNumMissiles = 0
-					for iVal = 0,(pPlot:GetNumUnits() - 1) do
-						local loopUnit = pPlot:GetUnit(iVal)
-						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_FW_HYPERMISSILE"]) then
-							--print("Missile found")
-							iNumMissiles = iNumMissiles + 1
-						end
-					end
-					--print("Total missiles: " .. iNumMissiles)
-					if (iNumMissiles < 1) then
-						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
-					end
-				end
-			end
-		end
-	end
+    TrySpawnMissileOnPlot(pPlayer, pPlot, UNIT_MISSILE_SPAWNED, tileCap, unitTypeToCount)
 end
-GameEvents.PlayerDoTurn.Add(AngelEffectsFW)
+
+-----------------------------------
+-- 메인 턴 훅
+-----------------------------------
+local function OnPlayerDoTurn_FW(iPlayer)
+    local pPlayer = Players[iPlayer]
+    if not pPlayer or not pPlayer:IsAlive() then return end
+    if EXCLUDE_BARBARIANS and pPlayer:IsBarbarian() then return end
+    if EXCLUDE_MINOR_CS and pPlayer:IsMinorCiv() then return end
+
+    for pUnit in pPlayer:Units() do
+        local uType = pUnit:GetUnitType()
+        if uType == UNIT_CRAWLER then
+            -- Crawler: GUIDED_MISSILE 기준으로 타일 cap 체크(원래 코드 유지)
+            HandleUnitMissileTick(pPlayer, pUnit, CRAWLER_SPAWN_CHANCE, CRAWLER_TILE_CAP, UNITTYPE_TO_COUNT_FOR_CRAWLER)
+
+        elseif uType == UNIT_ANGEL then
+            -- Angel: HYPERMISSILE 기준으로 타일 cap 체크(원래 코드 유지)
+            HandleUnitMissileTick(pPlayer, pUnit, ANGEL_SPAWN_CHANCE, ANGEL_TILE_CAP, UNITTYPE_TO_COUNT_FOR_ANGEL)
+        end
+    end
+end
+GameEvents.PlayerDoTurn.Add(OnPlayerDoTurn_FW)
+
 
 --------------------------------------------
 -- PROMOTION
@@ -365,194 +425,78 @@ function FWUnitDestroyed2(iPlayer, iUnit, iUnitType, iX, iY, bDelay, iByPlayer)
 end
 GameEvents.UnitPrekill.Add(FWUnitDestroyed2)
 
---------------------------------------------
--- Implant Clinic - Spaceship Factory
---------------------------------------------
-function AddPromotionBuildingsFW(iPlayer, iCity, iUnit, bGold, bFaith)
-	local tEligibleCombats = {
-		GameInfoTypes.UNITCOMBAT_RECON,
-		GameInfoTypes.UNITCOMBAT_GUN,
-		GameInfoTypes.UNITCOMBAT_MOUNTED,
-		GameInfoTypes.UNITCOMBAT_MELEE
-	}
-	
-	local tEligibleUnits = {
-		GameInfoTypes.UNIT_FW_BIOSHIP,
-		GameInfoTypes.UNIT_FW_NEXUS,
-		GameInfoTypes.UNIT_FW_SPACE_FIGHTER,
-		GameInfoTypes.UNIT_FW_SPACE_BOMBER,
-		GameInfoTypes.UNIT_XCOM,
-		GameInfoTypes.UNIT_FW_SPACEMARINES,
-		GameInfoTypes.UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER
-	}
-	
-	local iImplantClinic = GameInfoTypes.BUILDING_FW_IMPLANT_CLINIC
-	local iPromotion1 = GameInfoTypes.PROMOTION_FW_IMPLANTS_I
-	local iPromotion2 = GameInfoTypes.PROMOTION_FW_IMPLANTS_II
-	local iPromotion3 = GameInfoTypes.PROMOTION_FW_IMPLANTS_III
-	
-	local iSpaceshipFactory = GameInfoTypes.BUILDING_SPACESHIP_FACTORY
-	local iSpaceshipPromotion = GameInfoTypes.PROMOTION_FW_SPACESHIP
 
-	local pPlayer = Players[iPlayer]
-    if pPlayer:GetCityByID(iCity):IsHasBuilding(iImplantClinic) then
-        if JFD_GetRandomFW(1, 5) >= 4 then
-            local pUnit = pPlayer:GetUnitByID(iUnit)
-            for i, iUnitCombatType in pairs(tEligibleCombats) do
-                if pUnit and pUnit:GetUnitCombatType() == iUnitCombatType then
-                    if JFD_GetRandomFW(1, 3) == 1 then
-                        pUnit:SetHasPromotion(iPromotion3,true)
-                    elseif JFD_GetRandomFW(1, 3) == 2 then
-                        pUnit:SetHasPromotion(iPromotion2,true)
-                    else
-                        pUnit:SetHasPromotion(iPromotion1,true)
-                    end
-                end
-            end
-        end
+--======================================================================================================================
+-- VAULT (Airbase + Missile Silo)
+-- - 항공기(전투기/폭격기 등 DOMAIN_AIR) + 미사일(SPECIALUNIT_MISSILE) 모두 재배치 허용
+-- - 수용 한도: 항공기/미사일 별도 + 총합
+-- - 내 팀(같은 팀)만 사용 가능, 파손 시 불가
+--======================================================================================================================
+local iImprovementVault     = GameInfoTypes.IMPROVEMENT_FW_VAULT
+local SPECIAL_MISSILE       = "SPECIALUNIT_MISSILE"
+
+-- 한도 (원하는 값으로 조정)
+local iMaxAircraftPerVault  = 2    -- 전투기/폭격기 등 항공기
+local iMaxMissilesPerVault  = 3    -- 유도/핵 미사일
+local iMaxTotalPerVault     = 3    -- 총합 상한 (원하면 -1로 끄기)
+
+local function isSameTeam(iPlayerA, iPlayerB)
+  if iPlayerA == -1 or iPlayerB == -1 then return false end
+  local tA = Players[iPlayerA]:GetTeam()
+  local tB = Players[iPlayerB]:GetTeam()
+  return tA == tB
+end
+
+function OnCanLoadAt_VaultAirbase(iPlayer, iUnit, iPlotX, iPlotY)
+  local pPlayer = Players[iPlayer]; if not pPlayer then return false end
+  local pUnit   = pPlayer:GetUnitByID(iUnit); if not pUnit then return false end
+  local pPlot   = Map.GetPlot(iPlotX, iPlotY); if not pPlot then return false end
+
+  -- 도시/운반유닛이 없는 타일만 이벤트가 온다. 금고 + 비파괴 체크
+  if pPlot:GetImprovementType() ~= iImprovementVault then return false end
+  if pPlot:IsImprovementPillaged() then return false end
+
+  -- 소유자 팀(같은 팀만 허용; 필요하면 동맹/개방경계까지 넓히세요)
+  local ownerID = pPlot:GetOwner()
+  if ownerID == -1 or not isSameTeam(iPlayer, ownerID) then return false end
+
+  -- 항공 유닛만 허용 (전투기/폭격기/핵폭탄/유도미사일 등)
+  if pUnit:GetDomainType() ~= DomainTypes.DOMAIN_AIR then
+    return false
+  end
+
+  -- 종류 판별(미사일 여부)
+  local unitInfo = GameInfo.Units[pUnit:GetUnitType()]
+  local isMissile = (unitInfo and unitInfo.Special == SPECIAL_MISSILE)
+
+  -- 현재 타일의 항공기/미사일 수 카운트
+  local aircraftCount, missileCount, totalCount = 0, 0, 0
+  local n = pPlot:GetNumUnits()
+  for i = 0, n - 1 do
+    local u = pPlot:GetUnit(i)
+    if u and u:GetDomainType() == DomainTypes.DOMAIN_AIR then
+      totalCount = totalCount + 1
+      local info = GameInfo.Units[u:GetUnitType()]
+      if info and info.Special == SPECIAL_MISSILE then
+        missileCount = missileCount + 1
+      else
+        aircraftCount = aircraftCount + 1
+      end
     end
-	if pPlayer:GetCityByID(iCity):IsHasBuilding(iSpaceshipFactory) then
-		local pUnit = pPlayer:GetUnitByID(iUnit)
-		local iUnitType = pUnit:GetUnitType()
-		for i, iUnitTypeCur in pairs(tEligibleUnits) do
-			if pUnit and iUnitType == iUnitTypeCur then
-				pUnit:SetHasPromotion(iSpaceshipPromotion,true)
-				break
-			end
-		end
-	end
-end
-GameEvents.CityTrained.Add(AddPromotionBuildingsFW)
-
-
---======================================================================================================================
--- Apex Centre - checks number of CS ALLIES (APEX CENTRE)
---======================================================================================================================
-local tValidIsHasCsAllies = {
-	[GameInfo.Buildings.BUILDING_FW_APEX_CENTRE.ID] = 4
-}
-function IsHasCsAlliesFW(ePlayer, eCity, eBuilding)
-	if not tValidIsHasCsAllies[eBuilding] then return true end
-	local pPlayer = Players[ePlayer]
-	if not pPlayer:IsAlive() then return false end
-	local iRequiredCsAllies = tValidIsHasCsAllies[eBuilding]
-	local iCurrentCsAllies = 0
-	for eCs = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_PLAYERS - 2, 1 do
-		local pCs = Players[eCs]
-		if not pCs:IsEverAlive() then break end
-		if pCs:IsAlive() and pCs:IsAllies(ePlayer) then
-			iCurrentCsAllies = iCurrentCsAllies + 1
-			if iCurrentCsAllies >= iRequiredCsAllies then
-				return true
-			end
-		end
-	end
-	return false
-end
-GameEvents.CityCanConstruct.Add(IsHasCsAlliesFW)
-
---======================================================================================================================
--- Gene Vault - checks if player is at PEACE (Utsade Gene Vault)
---======================================================================================================================
-local tValidIsAtPeaceFw = {
-	[GameInfo.Buildings.BUILDING_FW_GENE_VAULT.ID] = true
-}
-function IsAtPeaceFW(ePlayer, eCity, eBuilding)
-	if not tValidIsAtPeaceFw[eBuilding] then return true end
-	local pPlayer = Players[ePlayer]
-	if not pPlayer:IsAlive() then return false end
-	local pTeam = Teams[pPlayer:GetTeam()]
-	local iCountWars = pTeam:GetAtWarCount(false)
-	if iCountWars > 0 then
-		return false
-	end
-	return true
-end
-GameEvents.CityCanConstruct.Add(IsAtPeaceFW)
-
-
---======================================================================================================================
--- VAULT
---======================================================================================================================
-local iImprovementVault = GameInfoTypes.IMPROVEMENT_FW_VAULT
-local iMaxMissilesPerSilo = 3
-
--- CanLoadAt() is only called for plots that are neither a city nor have a cargo carrying unit in them
--- It should be used to ascertain if the plot can hold aircraft anyway (usually in an improvement)
-function OnCanLoadNukesAt(iPlayer, iUnit, iPlotX, iPlotY)
-  local pPlot = Map.GetPlot(iPlotX, iPlotY)
-  local pUnit = Players[iPlayer]:GetUnitByID(iUnit)
-  local unit = GameInfo.Units[pUnit:GetUnitType()]
-
-  if (pPlot:GetImprovementType() == iImprovementVault) then
-    print(string.format("Nuclear silo found at (%i, %i)", iPlotX, iPlotY))
-	return not pPlot:IsImprovementPillaged()
-  end
-  
-  return false
-end
-GameEvents.CanLoadAt.Add(OnCanLoadNukesAt)
-
--- CanRebaseTo() is only called for non-city plots without a unit that can take cargo
--- It should be used to ascertain if the plot can take our aircraft anyway
--- The city equivalent is CanRebaseInCity()
-function OnCanRebaseNukesTo(iPlayer, iUnit, iPlotX, iPlotY)
-	local pPlot = Map.GetPlot(iPlotX, iPlotY)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-
-	if (pPlot:GetImprovementType() == iImprovementVault and not pPlot:IsImprovementPillaged() and CanSiloAt(pPlot, pUnit)) then
-		 print(string.format("Found a viable missile silo at (%i, %i) - checking missile limit", iPlotX, iPlotY))
-		 return (CountMissiles(pPlot, pUnit) < iMaxMissilesPerSilo)
-	end
-
-	return false
-end
-GameEvents.CanRebaseTo.Add(OnCanRebaseNukesTo)
-
-
-function CanSiloAt(pPlot, pUnit)
-  local iPlayer = pUnit:GetOwner()
-
-  -- Check the units on the tile (if any) 
-  for i = 0, pPlot:GetNumUnits()-1, 1 do
-    local pPlotUnit = pPlot:GetUnit(i)
-	
-	if (pPlotUnit:GetOwner() == iPlayer) then
-	  return true -- Any of our own is good
-	else
-	  return false -- Any not ours is bad
-	end
-  end
-  
-  -- No units, so check ownership of the tile
-  local iOwner = pPlot:GetOwner()
-  if (iOwner == iPlayer or iOwner == -1 or Players[iPlayer]:GetTeam() == Players[iOwner]:GetTeam()) then
-    return (pUnit.NukeDamageLevel == 2) -- only nukes allowed
   end
 
-  local pOwner = Players[iOwner]
-  if (pOwner:IsMinor() and pOwner:GetAlly() == iPlayer) then
-    return (pUnit.NukeDamageLevel == 2) -- only nukes allowed
+  -- 한도 체크
+  if isMissile then
+    if iMaxMissilesPerVault >= 0 and missileCount >= iMaxMissilesPerVault then return false end
+  else
+    if iMaxAircraftPerVault >= 0 and aircraftCount >= iMaxAircraftPerVault then return false end
   end
+  if iMaxTotalPerVault >= 0 and totalCount >= iMaxTotalPerVault then return false end
 
-  return false
+  return true
 end
+GameEvents.CanLoadAt.Add(OnCanLoadAt_VaultAirbase)
 
-function CountMissiles(pPlot, pUnit)
-  local iMissiles = 0
-  local iPlayer = pUnit:GetOwner()
-  
-  for i = 0, pPlot:GetNumUnits()-1, 1 do
-    local pPlotUnit = pPlot:GetUnit(i)
-	
-	if (pPlotUnit:GetOwner() == iPlayer and pPlotUnit:GetSpecialUnitType() == 2) then
-	  iMissiles = iMissiles + 1
-	end
-  end
-  
-  return iMissiles
-end
 
 --======================================================================================================================
 

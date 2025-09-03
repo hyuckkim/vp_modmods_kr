@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" version="10">
+<Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" version="11">
   <Properties>
     <Name>(6) Future Age for VP</Name>
     <Stability>Beta</Stability>
     <Teaser>Extending Civ V with [COLOR_POSITIVE_TEXT]Future Age[ENDCOLOR] for VP.</Teaser>
-    <Description>Extends the Information Era with the new Future Era, new technologies, buildings, units and fun !</Description>
+    <Description>Extends the Information Era with the new Future Era, new technologies, buildings and units.</Description>
     <Authors>madmax + caym</Authors>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
@@ -13,7 +13,7 @@
     <SupportsMultiplayer>1</SupportsMultiplayer>
     <SupportsHotSeat>1</SupportsHotSeat>
     <SupportsMac>1</SupportsMac>
-    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadAudioSystem>1</ReloadAudioSystem>SV_TunnelS
     <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
     <ReloadUnitSystem>1</ReloadUnitSystem>
@@ -22,9 +22,12 @@
     <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
     <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
+    <!-- <Mod id="c7bf7064-d1b1-4708-9e93-7a1560868582" minversion="0" maxversion="999" title="(4a) Promotion Icons for VP" /> -->
+    <!-- <Mod id="be2d13ee-d18d-410e-8f04-7cd19cd99a98" minversion="0" maxversion="999" title="(4b) UI - Promotion Tree for VP" /> -->
   </Dependencies>
   <References>
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="9562c016-f5bb-79hg-b37e-a3b40d3yg13a" minversion="0" maxversion="999" title="CAYM Unit Change" />
   </References>
   <Blocks />
   <Files>
@@ -74,6 +77,7 @@
     <File md5="9F06D19B07F68705C9601986CBA7163A" import="0">Lua/FutureLua.lua</File>
     <File md5="D7B255F32E2BA218DAACE63CFE00F1DB" import="1">Lua/NewEraPopup.lua</File>
 
+    <File md5="9785F947A7B30138E87ED613B71674B5" import="1">Sounds/Basilosaurus-000.wav</File>
     <File md5="9785F947A7B30138E87ED613B71674B5" import="1">Sounds/trex-000.wav</File>
     <File md5="32CEBF003AA51E85ED27437DE5859B97" import="1">Sounds/trex-001.wav</File>
     <File md5="F81818E3F162CC15336E63D8194A900D" import="1">Sounds/trex-002.wav</File>
@@ -318,6 +322,7 @@
     <File md5="2773648BC86830978D5CCC823E6A3865" import="1">Art/Improvements/sv_Biowell.dds</File>
     <File md5="43DFF0BCB7DC74392075049F464D44A2" import="1">Art/Improvements/sv_CommArray.dds</File>
     <File md5="05744A93BBC3AE2BF416D41F2CBAAE37" import="1">Art/Improvements/sv_FungalGrowth.dds</File>
+    <File md5="2101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/SV_Tunnel.dds</File>
     <File md5="9101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/sv_Generator.dds</File>
     <File md5="D2C565210643E10498B5DCB17F1EEEE6" import="1">Art/Improvements/sv_Genocentre.dds</File>
     <File md5="8AA59F449B6979A3D8C33015BB9B4977" import="1">Art/Improvements/sv_HERC.dds</File>
@@ -1955,6 +1960,7 @@
     <File md5="9E406DE17438B5FBF36859377E4F7F36" import="0">XML/FutureImprovements.xml</File>
     <File md5="F8B733BF5C85F9718DCB5621C464FEZ1" import="0">XML/FutureTechnologies.xml</File>
     <File md5="288831CB920E4B1A30B84DD1DD98A7EE" import="0">XML/FutureText.xml</File>
+    <File md5="388831CB920E4B1A30B84DD1DD98A7EE" import="0">XML/FutureText_KR.xml</File>
     <File md5="0BCEE9FC89E26F5340EEE145861C8BD6" import="0">XML/IconAtlases.xml</File>
     <File md5="265831PB870E4B1A30G84ZZ1DE98P7EE" import="0">XML/Resolutions.xml</File>
     <File md5="2F8BFF6F4A099AB9B1BF1F4A2740016F" import="0">XML/ResourceIcons.xml</File>
@@ -1962,6 +1968,7 @@
     <File md5="98EF605A7A6B607A149C707EF7715C99" import="0">XML/TechTreeAdjustment.sql</File>
     <File md5="AA196416E09829DFF69FA657CF0G071E" import="0">XML/Wonders.sql</File>
     <File md5="CAYM6416E09829DFF69FA657CF0G071E" import="0">XML/FutureText.sql</File>
+    <File md5="CAYMK416E09829DFF69FA657CF0G071E" import="0">XML/FutureText_KR.sql</File>
 
     <File md5="MC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Mobileartillery/3DModel/M109SKorea.fxsxml</File>
     <File md5="MA9658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Mobileartillery/3DModel/M109SKorea.gr2</File>
@@ -1992,6 +1999,9 @@
     <File md5="F9268DAC7B388FBF37524C255242E9E6" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.fxsxml</File>
     <File md5="530E37C540848B82BADB13139912994A" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.gr2</File>
     <File md5="E19B2CA8FA2652337E897876E53D8BE3" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo_PL.fxsxml</File>
+
+    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ImprovementUnderseaTunnel.lua</File>
+    <File md5="319B2CA8FA2652337E897876E53D8BE3" import="1">CAYMplus/UnderseaTunnel.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -2012,6 +2022,7 @@
       <UpdateDatabase>XML/FutureTechnologies.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureTechnologies.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.xml</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText_KR.xml</UpdateDatabase>
       <UpdateDatabase>XML/IconAtlases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Resolutions.xml</UpdateDatabase>
       <UpdateDatabase>XML/TechTreeAdjustment.sql</UpdateDatabase>
@@ -2019,12 +2030,18 @@
       <UpdateDatabase>XML/Resources.sql</UpdateDatabase>
       <UpdateDatabase>XML/ResourceIcons.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText_KR.sql</UpdateDatabase>
+      <UpdateDatabase>CAYMplus/UnderseaTunnel.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>
     <EntryPoint type="InGameUIAddin" file="Lua/FutureLua.lua">
       <Name>Future Lua</Name>
       <Description>Future Lua</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="CAYMplus/ImprovementUnderseaTunnel.lua">
+      <Name>based</Name>
+      <Description>based</Description>
     </EntryPoint>
   </EntryPoints>
 </Mod>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e915c6ee-16bc-44cf-9a2f-15746f414c63" version="7">
+  <Properties>
+    <Name>UI - Overlay Wonders</Name>
+    <Teaser>Adds a Wonders entry in the Overlay menu in strategic view that highlights all Natural Wonders and cities with a World Wonder</Teaser>
+    <Description>Adds a Wonders entry in the Overlay menu in strategic view that highlights all Natural Wonders and cities with a World Wonder
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?119290-MOD-UI-Wonders</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="08573FE56E1723B3AC1C22CA5F7D4D6F" import="0">UI/OverlayWonders.lua</File>
+    <File md5="8E3E4D4D5B2606C1B93017E9C0B67E05" import="0">UI/OverlayWonders.xml</File>
+    <File md5="CDC5B54D03D979E6280286DFDBDE0C08" import="1">UI/OverlayWonders_MiniMapOverlayHook.lua</File>
+    <File md5="156AC16EB3BA8CBBF710C4EAD3A43B3D" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="3BB776C55061415250948C1BACD8B001" import="0">XML/UIWonders.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIWonders.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayWonders.xml">
+      <Name>Wonders</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayWonders_MiniMapOverlayHook.lua">
+      <Name>Wonders MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -31,7 +31,6 @@ INSERT INTO IconFontMapping
 	(IconName, 				        IconFontTexture,						IconMapping)
 VALUES	
     ('ICON_RES_NANOMAT', 		    'FUTURE_ICON_FONT_TEXTURE',				0),
-    ('ICON_RES_IMPLANT', 		    'FUTURE_ICON_FONT_TEXTURE',				2),
     ('ICON_RES_ADN_FUNGUS', 		'FUTURE_ICON_FONT_TEXTURE',				4);
 
 --==========================================================================================================================
@@ -72,17 +71,12 @@ VALUES 		('ART_DEF_RESOURCE_ADN_FUNGUS', 	'Resource', 	'sv_FungalGrowth.dds');
 -- Resources  - ! Must be before improvements !
 ------------------------------
 INSERT INTO Resources 
-			(Type,					TechReveal,		    	TechCityTrade, 				Description,				    Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				   Happiness,  IconString, 		       	PortraitIndex, 	IconAtlas,				 AITradeModifier,	ResourceUsage, 	PlacementOrder, AIObjective, 	ConstAppearance, 	MinAreaSize, 	MaxLatitude, 	RandApp1, 	RandApp2, 	Player, Hills, 	Flatlands, 	IsMonopoly, MonopolyXPBonus)
-VALUES		('RESOURCE_NANOMAT',	'TECH_NANOMATERIALS',	'TECH_NANOMATERIALS',		'TXT_KEY_RESOURCE_NANOMAT',	   'TXT_KEY_RESOURCE_NANOMAT_TEXT',	    'TXT_KEY_RESOURCE_NANOMAT_HELP',	   'RESOURCECLASS_MODERN',	'ART_DEF_RESOURCE_ALUMINUM',   0,		  '[ICON_RES_NANOMAT]',    	31,			 	'CIV_COLOR_ATLAS_FW_3',  10, 				1, 				1, 				1, 				100, 				3, 				90,		 		10, 		10, 		100,  	0,   	1, 			1, 			2);
+			(Type,					TechReveal,		    	TechCityTrade, 				Description,				    Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				  Happiness,  IconString, 		       PortraitIndex, IconAtlas           ,  AITradeModifier, ResourceUsage, PlacementOrder, AIObjective, ConstAppearance, MinAreaSize, MaxLatitude, RandApp1, RandApp2, Player, Hills, Flatlands, IsMonopoly, MonopolyXPBonus)
+VALUES		('RESOURCE_NANOMAT',	'TECH_NANOTECHNOLOGY',	'TECH_NANOTECHNOLOGY',		'TXT_KEY_RESOURCE_NANOMAT',	   'TXT_KEY_RESOURCE_NANOMAT_TEXT',	    'TXT_KEY_RESOURCE_NANOMAT_HELP',	   'RESOURCECLASS_MODERN',	'ART_DEF_RESOURCE_ALUMINUM',   0,		  '[ICON_RES_NANOMAT]',    31,			 'CIV_COLOR_ATLAS_FW_3',  10             , 1            , 1             , 1          , 100            , 3          , 90         , 10      , 10      , 100  ,  0    ,   1      , 1         , 2);
 
 INSERT INTO Resources 
-			(Type,					TechReveal,		        TechCityTrade, 		        Description,					Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				  	Happiness,  IconString, 		    PortraitIndex, 	IconAtlas,  			AITradeModifier, 	ResourceUsage, 	PlacementOrder, AIObjective, 	ConstAppearance, 	MinAreaSize, 	MaxLatitude, 	RandApp1, 	RandApp2, 	Player, Hills, 	Flatlands, 	IsMonopoly, MonopolyXPBonus)
-VALUES		('RESOURCE_ADN_FUNGUS',	'TECH_GEN_MANIP',		'TECH_GEN_MANIP',		   'TXT_KEY_RESOURCE_ADN_FUNGUS',	'TXT_KEY_RESOURCE_ADN_FUNGUS_TEXT',	 'TXT_KEY_RESOURCE_ADN_FUNGUS_HELP',	'RESOURCECLASS_RUSH',	'ART_DEF_RESOURCE_ADN_FUNGUS',  0,		  '[ICON_RES_ADN_FUNGUS]',  24,	          	'CIV_COLOR_ATLAS_FW',   10, 				1, 				1, 				1, 				100, 				3, 				90,		 		10, 		10, 		100,  	1, 		1, 			1, 			2);
-
-INSERT INTO Resources 
-			(Type,					TechReveal,		    	TechCityTrade, 				Description,					Civilopedia, 						 Help,	                            	ResourceClassType, 		ArtDefineTag, 				  	Happiness,	IconString, 		    PortraitIndex, 	IconAtlas, 				AITradeModifier, 	ResourceUsage, 	PlacementOrder, AIObjective, 	ConstAppearance, 	MinAreaSize, 	MaxLatitude, 	RandApp1, 	RandApp2, 	Player, Hills,	Flatlands,	IsMonopoly,	MonopolyXPBonus)
-VALUES		('RESOURCE_IMPLANT',	'TECH_IMPLANTS',		'TECH_IMPLANTS',			'TXT_KEY_RESOURCE_IMPLANT',		'TXT_KEY_RESOURCE_IMPLANT_TEXT',	 'TXT_KEY_RESOURCE_IMPLANT_HELP',		'RESOURCECLASS_MODERN',	'ART_DEF_RESOURCE_ALUMINUM',  	0,			'[ICON_RES_IMPLANT]', 	31,			 	'CIV_COLOR_ATLAS_FW', 	10, 				1, 				1, 				1, 				100, 				3, 				90,		 		10, 		10, 		100, 	0,		1,			1,			2);
-
+			(Type,					TechReveal,		        TechCityTrade, 		        Description,					Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				  Happiness,  IconString, 		       PortraitIndex, IconAtlas           ,  AITradeModifier, ResourceUsage, PlacementOrder, AIObjective, ConstAppearance, MinAreaSize, MaxLatitude, RandApp1, RandApp2, Player, Hills, Flatlands, IsMonopoly, MonopolyXPBonus)
+VALUES		('RESOURCE_ADN_FUNGUS',	'TECH_GEN_MANIP',		'TECH_GEN_MANIP',		   'TXT_KEY_RESOURCE_ADN_FUNGUS',	'TXT_KEY_RESOURCE_ADN_FUNGUS_TEXT',	 'TXT_KEY_RESOURCE_ADN_FUNGUS_HELP',	'RESOURCECLASS_RUSH',	'ART_DEF_RESOURCE_ADN_FUNGUS',  0,		  '[ICON_RES_ADN_FUNGUS]', 24,	          'CIV_COLOR_ATLAS_FW',   10             , 1            , 1             , 1          , 100            , 3          , 90         , 10      , 10      , 100   ,  1    , 1   	  , 1         , 2);
 ------------------------------
 -- Resource_YieldChanges
 ------------------------------
@@ -150,15 +144,12 @@ VALUES
 INSERT INTO Resource_Flavors 	
         (ResourceType, 			FlavorType, 			Flavor)
 VALUES		
-        ('RESOURCE_NANOMAT',	'FLAVOR_OFFENSE',		15),
-        ('RESOURCE_NANOMAT',	'FLAVOR_DEFENSE',		15),
+        ('RESOURCE_NANOMAT',	'FLAVOR_OFFENSE',		10),
+        ('RESOURCE_NANOMAT',	'FLAVOR_DEFENSE',		10),
         ('RESOURCE_ADN_FUNGUS',	'FLAVOR_SCIENCE',		10),
 		('RESOURCE_ADN_FUNGUS',	'FLAVOR_CULTURE',		10),
 		('RESOURCE_ADN_FUNGUS',	'FLAVOR_DEFENSE',		10),
-		('RESOURCE_ADN_FUNGUS',	'FLAVOR_OFFENSE',		10),
-		('RESOURCE_IMPLANT',	'FLAVOR_GOLD',			10),
-		('RESOURCE_IMPLANT',	'FLAVOR_OFFENSE',		10),
-        ('RESOURCE_IMPLANT',	'FLAVOR_DEFENSE',		10);
+		('RESOURCE_ADN_FUNGUS',	'FLAVOR_OFFENSE',		10);
 
 INSERT INTO Resource_QuantityTypes 
 	(ResourceType, 		        Quantity)
@@ -216,34 +207,31 @@ VALUES
 	('RESOURCE_NANOMAT', 	'YIELD_PRODUCTION',  1),
 	('RESOURCE_NANOMAT', 	'YIELD_SCIENCE', 	 1),
 	('RESOURCE_ADN_FUNGUS', 'YIELD_CULTURE',	 1),
-	('RESOURCE_ADN_FUNGUS', 'YIELD_SCIENCE', 	 1),
-	('RESOURCE_IMPLANT', 	'YIELD_GOLD',	 	 1),
-	('RESOURCE_IMPLANT', 	'YIELD_PRODUCTION',  1);
+	('RESOURCE_ADN_FUNGUS', 'YIELD_SCIENCE', 	 1);
 
 --=============================
--- RUSSIA Resource *2 (2023.09.22)
+-- RUSIA Resource *2 (2023.09.22)
 --=============================
 INSERT INTO Trait_ResourceQuantityModifiers
 	(TraitType, ResourceType, ResourceQuantityModifier)
 VALUES
-	('TRAIT_STRATEGIC_RICHES', 'RESOURCE_NANOMAT', 		100),
-	('TRAIT_STRATEGIC_RICHES', 'RESOURCE_ADN_FUNGUS', 	100),
-	('TRAIT_STRATEGIC_RICHES', 'RESOURCE_IMPLANT', 		100);
+	('TRAIT_STRATEGIC_RICHES', 'RESOURCE_NANOMAT', 100),
+	('TRAIT_STRATEGIC_RICHES', 'RESOURCE_ADN_FUNGUS', 100);
 
 --=================
 -- VP Panel
 --=================
 
--- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½ Helper ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+-- ±âÁ¸ Á¤ÀÇµÈ Helper Å×ÀÌºíÀÌ ÀÖÀ¸¸é »èÁ¦
 DROP TABLE IF EXISTS Helper;
 
--- ï¿½ï¿½ï¿½Î¿ï¿½ Helper ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½
+-- »õ·Î¿î Helper Å×ÀÌºí »ý¼º
 CREATE TEMP TABLE Helper (
     Priority INTEGER,
     ResourceType TEXT
 );
 
--- Helper ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+-- Helper Å×ÀÌºí¿¡ °ª »ðÀÔ
 INSERT INTO Helper
 VALUES
     (1, 'RESOURCE_HORSE'),
@@ -254,13 +242,12 @@ VALUES
     (6, 'RESOURCE_URANIUM'),
     (7, 'RESOURCE_PAPER'),
     (8, 'RESOURCE_ADN_FUNGUS'),
-    (9, 'RESOURCE_NANOMAT'),
-    (10,'RESOURCE_IMPLANT');
+    (9, 'RESOURCE_NANOMAT');
 
--- Resources ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+-- Resources Å×ÀÌºí ¾÷µ¥ÀÌÆ®
 UPDATE Resources
 SET StrategicPriority = (SELECT Priority FROM Helper WHERE ResourceType = Type)
 WHERE EXISTS (SELECT 1 FROM Helper WHERE ResourceType = Type);
 
--- ï¿½Ó½ï¿½ Helper ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½
+-- ÀÓ½Ã Helper Å×ÀÌºí »èÁ¦
 DROP TABLE Helper;

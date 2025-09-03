@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="10f6101f-0b22-4c8d-9454-97a94ff8150d" version="1">
+  <Properties>
+    <Name>UI - Overlay Harbours And Airports</Name>
+    <Teaser>Adds a Harbours and Airports entry in the Overlay menu in strategic view that highlights all cities with a harbour or airport</Teaser>
+    <Description>Adds a Harbours and Airports entry in the Overlay menu in strategic view that highlights all cities with a harbour or airport
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="82FF3A892C5FE4239B55F06921D646AE" import="0">UI/OverlayHarboursAndAirports.lua</File>
+    <File md5="840994A8F9848DB4236C746EC6B20B01" import="0">UI/OverlayHarboursAndAirports.xml</File>
+    <File md5="65400AA8577B97ACF7D94339D3C79277" import="1">UI/OverlayHarboursAndAirports_MiniMapOverlayHook.lua</File>
+    <File md5="90AD1A9B8FC20645CA6C9CAE752C7963" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="6FC5B0F569CB1370E21EC175A805C8F0" import="0">XML/UIHarboursAndAirports.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIHarboursAndAirports.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayHarboursAndAirports.xml">
+      <Name>Harbours And Airports</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayHarboursAndAirports_MiniMapOverlayHook.lua">
+      <Name>Harbours And Airports MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

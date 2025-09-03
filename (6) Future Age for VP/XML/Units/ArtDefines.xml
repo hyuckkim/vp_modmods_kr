@@ -261,7 +261,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_AEGIS</Type>
-			<Scale>0.07</Scale>
+			<Scale>0.040000001490116</Scale>
 			<Model>AEGIS.fxsxml</Model>
 			<MaterialTypeTag>METAL</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>METALSM</MaterialTypeSoundOverrideTag>
@@ -2083,13 +2083,13 @@
 		<Row>
 			<UnitInfoType>ART_DEF_UNIT_FW_CHIMERA</UnitInfoType>
 			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_FW_CHIMERA</UnitMemberInfoType>
-			<NumMembers>5</NumMembers>
+			<NumMembers>3</NumMembers>
 		</Row>
 	</ArtDefine_UnitInfoMemberInfos>
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_FW_CHIMERA</Type>
-			<Scale>2</Scale>
+			<Scale>2.4</Scale>
 			<Model>Chimera.fxsxml</Model>
 			<MaterialTypeTag>CLOTH</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
@@ -2183,13 +2183,13 @@
 		<Row>
 			<UnitInfoType>ART_DEF_UNIT_SCORPION_GREEN</UnitInfoType>
 			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_SCORPION_GREEN</UnitMemberInfoType>
-			<NumMembers>6</NumMembers>
+			<NumMembers>3</NumMembers>
 		</Row>
 	</ArtDefine_UnitInfoMemberInfos>
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_SCORPION_GREEN</Type>
-			<Scale>0.2</Scale>
+			<Scale>0.5</Scale>
 			<Model>Scorpion_GREEN.fxsxml</Model>
 			<MaterialTypeTag>CLOTH</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
@@ -4108,7 +4108,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_COLOSSUS</Type>
-			<Scale>0.19</Scale>
+			<Scale>0.11</Scale>
 			<Model>carvr.fxsxml</Model>
 			<MaterialTypeTag>CLOTH</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>

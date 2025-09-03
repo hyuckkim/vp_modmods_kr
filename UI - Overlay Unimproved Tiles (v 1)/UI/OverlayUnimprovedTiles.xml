@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context Name="UnimprovedTiles" Hidden="1">
+  <Box ID="UnimprovedOptions" Anchor="R,B" Size="200,110" Offset="0,0" Color="0,0,0,0">
+	<Container ID="SelectedLuxuries">
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,0"    TextOffset="30,0" IsChecked="1" ID="UnimprovedLuxuries" String="TXT_KEY_UNIMPROVED_TILES_LUXURIES" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,23"   TextOffset="30,0" IsChecked="1" ID="UnimprovedStrategics" String="TXT_KEY_UNIMPROVED_TILES_STRATEGICS" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,46"   TextOffset="30,0" IsChecked="1" ID="UnimprovedBonuses" String="TXT_KEY_UNIMPROVED_TILES_BONUSES" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,69"   TextOffset="30,0" IsChecked="0" ID="UnimprovedOther" String="TXT_KEY_UNIMPROVED_TILES_OTHER" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,92"   TextOffset="30,0" IsChecked="0" ID="UnimprovedRoads" String="TXT_KEY_UNIMPROVED_TILES_ROADS" />
+    </Container>
+  </Box>
+</Context>

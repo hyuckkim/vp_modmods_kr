@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_SV_OVERLAY_UNIMPROVED_TILES">
+			<Text>Unimproved Tiles</Text>
+		</Row>
+
+		<!-- If changing these colours, you'll also need to change the colours of the highlights in OverlayUnimprovedTiles.lua -->
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_LUXURIES">
+			<Text>[COLOR_YELLOW]Unimproved Luxuries[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_STRATEGICS">
+			<Text>[COLOR_BLUE]Unimproved Strategics[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_BONUSES">
+			<Text>[COLOR_GREEN]Improvable Bonuses[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_OTHER">
+			<Text>[COLOR_CYAN]Improvable Tiles[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_ROADS">
+			<Text>[COLOR_MAGENTA]Upgradable Roads[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PREVIOUS_UNIMPROVED_TILE_TT">
+			<Text>Centre map on previous tile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NEXT_UNIMPROVED_TILE_TT">
+			<Text>Centre map on next tile</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_SV_OVERLAY_UNIMPROVED_TILES">
+			<Text>시설 없는 타일</Text>
+		</Row>
+
+		<!-- 이러한 색상을 변경하는 경우 OverlayUnimprovedTiles.lua에서 하이라이트 색상도 변경해야 합니다. -->
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_LUXURIES">
+			<Text>[COLOR_YELLOW]시설 없는 사치 자원[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_STRATEGICS">
+			<Text>[COLOR_BLUE]시설 없는 전략 자원[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_BONUSES">
+			<Text>[COLOR_GREEN]시설 없는 보너스[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_OTHER">
+			<Text>[COLOR_CYAN]시설 건설 가능한 타일[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIMPROVED_TILES_ROADS">
+			<Text>[COLOR_MAGENTA]업그레이드 가능한 도로[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PREVIOUS_UNIMPROVED_TILE_TT">
+			<Text>이전 타일을 지도 중앙에 배치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NEXT_UNIMPROVED_TILE_TT">
+			<Text>다음 타일을 지도 중앙에 배치</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

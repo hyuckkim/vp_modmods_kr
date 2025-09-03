@@ -1,84 +1,108 @@
 ----------------------------------------------------
 -- Generic info
 ----------------------------------------------------
+INSERT INTO Buildings (Type, BuildingClass, PrereqTech, Cost, ArtDefineTag, PortraitIndex, IconAtlas, Help, Description, Civilopedia, Strategy) VALUES
+('BUILDING_FW_BIOFUEL_REFINERY',       'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  45,'CIV_COLOR_ATLAS_FW_3',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY',        'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
+('BUILDING_FW_BIOFUEL_REFINERY_RICE',  'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  45,'CIV_COLOR_ATLAS_FW_3',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_RICE',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
+('BUILDING_FW_BIOFUEL_REFINERY_BANANA','BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  45,'CIV_COLOR_ATLAS_FW_3',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
+('BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  45,'CIV_COLOR_ATLAS_FW_3',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_MAIZE',  'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
+('BUILDING_FW_CONVERTER',              'BUILDINGCLASS_FW_CONVERTER',         'TECH_NANOMATERIALS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  44,'CIV_COLOR_ATLAS_FW_3', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER',               'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY'),
+('BUILDING_FW_CONVERTER_OIL',          'BUILDINGCLASS_FW_CONVERTER',         'TECH_NANOMATERIALS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  44,'CIV_COLOR_ATLAS_FW_3', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER_OIL',           'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY'),
+('BUILDING_FW_CONVERTER_IRON',         'BUILDINGCLASS_FW_CONVERTER',         'TECH_NANOMATERIALS',  2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  44,'CIV_COLOR_ATLAS_FW_3', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER_IRON',          'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY'),
+('BUILDING_FW_NANOFORGE',       	   'BUILDINGCLASS_FW_NANOFORGE',  		 'TECH_NANOMATERIALS',  3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',   8,'TCS_MOD_ICON_ATLAS',   'TXT_KEY_BUILDING_FW_NANOFORGE_HELP', 		 'TXT_KEY_BUILDING_FW_NANOFORGE',        		'TXT_KEY_BUILDING_FW_NANOFORGE_PEDIA', 		  'TXT_KEY_BUILDING_FW_NANOFORGE_STRATEGY');
+
 INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, IconAtlas) VALUES
+('BUILDING_FW_AQUACULTURE_LAB', 		'TECH_QUANTUM_COMPUTERS', 			2500, 'ART_DEF_BUILDING_LABORATORY',         51,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF','TECH_QUANTUM_COMPUTERS',       	2500, 'ART_DEF_FEATURE_REEF',                 1,'NW_ATLAS'),
+('BUILDING_FW_UNDERSEA_MINING', 		'TECH_QUANTUM_COMPUTERS', 	        2500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     53,'CIV_COLOR_ATLAS_FW_2'),
+
 ('BUILDING_FW_SERVER_HUB', 				'TECH_INTERNET', 					2500, 'ART_DEF_BUILDING_LABORATORY',        32,'CIV_COLOR_ATLAS_FW_2'),
 
-('BUILDING_FW_ENTERTAINMENT_SERVER', 	'TECH_GEN_MANIP', 				    3250, 'ART_DEF_BUILDING_LABORATORY',        42,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_COMMERCE_SERVER', 		'TECH_SUPERCOMPUTERS', 				3250, 'ART_DEF_BUILDING_STOCK_EXCHANGE',    33,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_CLOUD_COMPUTING', 		'TECH_ROBOTICS', 				    3250, 'ART_DEF_BUILDING_LABORATORY',        44,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_RESEARCH_SERVER', 		'TECH_NANOMATERIALS', 			    3250, 'ART_DEF_BUILDING_LABORATORY',        34,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_FUNGAL_AGRIGENOMICS', 	'TECH_GEN_MANIP', 					3000, 'ART_DEF_BUILDING_LABORATORY',        51,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_GENE_LAB', 				'TECH_GEN_MANIP', 					3000, 'ART_DEF_BUILDING_LABORATORY',        43,'CIV_COLOR_ATLAS_FW_3'),
 
-('BUILDING_FW_GENE_LAB', 				'TECH_GEN_MANIP', 					3250, 'ART_DEF_BUILDING_LABORATORY',        20,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_CYBERPOLICE', 			'TECH_SUPERCOMPUTERS', 				3250, 'COLESSEUM',                          11,'EXPANSION_BW_ATLAS_1'),
-('BUILDING_FW_NANOMAT_PLANT', 			'TECH_NANOMATERIALS', 				3250, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     3,'CIV_COLOR_ATLAS_FW'),
+('BUILDING_FW_CYBERPOLICE', 			'TECH_GLOBALIZATION', 				3000, 'COLESSEUM',                          11,'EXPANSION_BW_ATLAS_1'),
+('BUILDING_FW_AUTOPLANT', 				'TECH_ROBOTICS', 		            3000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     7,'TCS_MOD_ICON_ATLAS'),
 
-('BUILDING_FW_AQUACULTURE_LAB', 		'TECH_EUTHENICS', 					3500, 'ART_DEF_BUILDING_LABORATORY',        51,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_FUNGAL_AGRIGENOMICS', 	'TECH_EUTHENICS', 					3500, 'ART_DEF_BUILDING_LABORATORY',        43,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_NANOMAT_PLANT', 			'TECH_NANOTECHNOLOGY', 				3000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     3,'CIV_COLOR_ATLAS_FW'),
+
+('BUILDING_FW_COMMERCE_SERVER', 		'TECH_SUPERCOMPUTERS', 				3500, 'ART_DEF_BUILDING_STOCK_EXCHANGE',    33,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_ENTERTAINMENT_SERVER', 	'TECH_SUPERCOMPUTERS', 				3500, 'ART_DEF_BUILDING_LABORATORY',        42,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_CLOUD_COMPUTING', 		'TECH_SUPERCOMPUTERS', 				3500, 'ART_DEF_BUILDING_LABORATORY',        44,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_RESEARCH_SERVER', 		'TECH_SUPERCOMPUTERS', 			    3500, 'ART_DEF_BUILDING_LABORATORY',        34,'CIV_COLOR_ATLAS_FW_2'),
+
+('BUILDING_FW_ECOSANCTUARY', 			'TECH_FW_ECOTHEORY', 	            3500, 'ART_DEF_BUILDING_FW_GARDEN',          31,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_CRYPTOBANK', 				'TECH_GRID_COMPUTING', 				3500, 'ART_DEF_BUILDING_STOCK_EXCHANGE',    15,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_UNDERSEA_MINING', 		'TECH_GRID_COMPUTING', 	        	3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     53,'CIV_COLOR_ATLAS_FW_2'),
-
-('BUILDING_FW_AUTOPLANT', 				'TECH_POWER_SYSTEMS', 		        3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',    12,'CIV_COLOR_ATLAS_FW_2'),
-
 ('BUILDING_FW_VR_TRAINING', 			'TECH_MEMETICS', 					3500, 'ART_DEF_BUILDING_LABORATORY',         0,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_VIRTUAL_MUSEUM', 			'TECH_MEMETICS', 					3500, 'MUSEUM',                             39,'CIV_COLOR_ATLAS_FW_2'),
-
--- ('BUILDING_FW_NANOFORGE', 				'TECH_NANOTECHNOLOGY', 				3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      8,'TCS_MOD_ICON_ATLAS'),
-('BUILDING_FW_PARTICLE_ACCELERATOR', 	'TECH_PARTICLE_PHYSICS', 			3500, 'ART_DEF_BUILDING_LABORATORY',          0,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_PARTICLE_ACCELERATOR', 	'TECH_PARTICLE_PHYSICS', 			3500, 'ART_DEF_BUILDING_LABORATORY',          59,'TCS_MOD_ICON_ATLAS'),
 ('BUILDING_FW_VERTICAL_FARM', 			'TECH_ARTIFICIAL_ENVIRONMENTS', 	3500, 'ART_DEF_BUILDING_LABORATORY',          7,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF','TECH_ARTIFICIAL_ENVIRONMENTS', 	3500, 'ART_DEF_FEATURE_REEF',                 1,'NW_ATLAS'),
-('BUILDING_FW_ECOSANCTUARY', 			'TECH_FW_ECOTHEORY', 	            4000, 'ART_DEF_BUILDING_FW_GARDEN',          31,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_BIOFACTORY', 				'TECH_FW_ECOTHEORY', 				4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      2,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_IMPLANT_CLINIC', 			'TECH_IMPLANTS', 					3750, 'ART_DEF_BUILDING_LABORATORY',          4,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_NETWORK_BACKBONE', 		'TECH_COGNITIVE_TECH', 				4000, 'ART_DEF_BUILDING_LABORATORY',          1,'CIV_COLOR_ATLAS_FW'),
 
-('BUILDING_FW_BOREHOLE', 				'TECH_QUANTUM_COMPUTERS',           4000, 'ART_DEF_BUILDING_LABORATORY',         36,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_GEOTHERMAL_FACTORY', 		'TECH_QUANTUM_COMPUTERS', 			4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     48,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_HYDROTHERMAL_FACTORY', 	'TECH_QUANTUM_COMPUTERS', 			4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  	 46,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_LAUNCH_FACILITY', 		'TECH_ORBITAL_DEV', 			    4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     56,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_BIOFLESH_INDUSTRY', 		'TECH_ORGANICS', 			     	4000, 'ART_DEF_BUILDING_LABORATORY',          20,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_BIOFACTORY', 				'TECH_ORGANICS', 				    4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      2,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_HYDROTHERMAL_FACTORY', 	'TECH_ORGANICS', 	     	    	4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',  	 57,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_GENEJACK_FACILITY', 		'TECH_ORGANICS', 		        	4000, 'ART_DEF_BUILDING_LABORATORY',         29,'CIV_COLOR_ATLAS_FW_3'),
+
+('BUILDING_FW_IMPLANT_CLINIC', 			'TECH_IMPLANTS', 					4000, 'ART_DEF_BUILDING_LABORATORY',          4,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_NETWORK_BACKBONE', 		'TECH_MECHATRONICS', 				4000, 'ART_DEF_BUILDING_LABORATORY',          1,'CIV_COLOR_ATLAS_FW'),
+('BUILDING_FW_LAUNCH_FACILITY', 		'TECH_FUTURE_BALLISTICS', 			4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     56,'CIV_COLOR_ATLAS_FW_2'),
+
+('BUILDING_FW_GEOTHERMAL_FACTORY', 		'TECH_POWER_SYSTEMS', 		    	4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     48,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_BOREHOLE', 				'TECH_POWER_SYSTEMS',               4000, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     36,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_ANTIMATTER_RESEARCH', 	'TECH_POWER_SYSTEMS', 		    	4000, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_2'),
 
 ('BUILDING_FW_CLONE_LAB', 				'TECH_CLONING', 					4250, 'ART_DEF_BUILDING_LABORATORY',          5, 'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_BIOFLESH_INDUSTRY', 		'TECH_CLONING', 					4250, 'ART_DEF_BUILDING_LABORATORY',          21,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_GENEJACK_FACILITY', 		'TECH_ORGANICS', 		        	4250, 'ART_DEF_BUILDING_LABORATORY',         29,'CIV_COLOR_ATLAS_FW_3'),
 
-('BUILDING_FW_METROPLEX_HUB', 			'TECH_ORGANICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_FEEDSITE_HUB', 			'TECH_ORGANICS', 		            4250, 'ART_DEF_BUILDING_LABORATORY',         40,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_FEEDSITE_HUB', 			'TECH_EUTHENICS', 		            4250, 'ART_DEF_BUILDING_LABORATORY',         40,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_SIMULATION_HUB', 			'TECH_EUTHENICS', 		            4250, 'ART_DEF_BUILDING_LABORATORY',          6,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_BIOCOMPUTER', 		    'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_BIOCONVERTER_ADNF', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_BIOCONVERTER_NANO', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_BIOCONVERTER_NANO2', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+
+('BUILDING_FW_TELEPRESENCE_HUB', 		'TECH_COGNITIVE_TECH',	 		    4250, 'ART_DEF_BUILDING_LABORATORY',         61,'CIV_COLOR_ATLAS_FW_2'),
+
 ('BUILDING_FW_DISTRIBUTION_HUB', 		'TECH_NUCLEAR_ENRICHMENT', 		    4250, 'ART_DEF_BUILDING_LABORATORY',         61,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_SIMULATION_HUB', 			'TECH_NUCLEAR_ENRICHMENT', 		    4250, 'ART_DEF_BUILDING_LABORATORY',          6,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_TELEPRESENCE_HUB', 		'TECH_MECHATRONICS',	 		    4250, 'ART_DEF_BUILDING_LABORATORY',         61,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_ENRICHMENT_FACILITY', 	'TECH_NUCLEAR_ENRICHMENT', 			4500, 'ART_DEF_BUILDING_LABORATORY',         40,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_SPACE_STATION', 			'TECH_ASTRODYNAMICS', 				4250, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     52,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_MYCOPROTEIN_VATS', 		'TECH_ASTRODYNAMICS', 		    	4250, 'ART_DEF_BUILDING_LABORATORY',         60,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_METROPLEX_HUB', 			'TECH_NUCLEAR_ENRICHMENT', 		    4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_ENRICHMENT_FACILITY', 	'TECH_NUCLEAR_ENRICHMENT', 			4250, 'ART_DEF_BUILDING_LABORATORY',         34,'TCS_MOD_ICON_ATLAS'),
 
-('BUILDING_FW_TIDAL_PORT', 				'TECH_NEURAL_INTERFACE', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_ARRAY',     57,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_MYCOPROTEIN_VATS', 		'TECH_ASTRODYNAMICS', 		    	4250, 'ART_DEF_BUILDING_LABORATORY',         60,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_SPACE_STATION', 			'TECH_ASTRODYNAMICS', 				4250, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     52,'CIV_COLOR_ATLAS_FW_2'),
+
+('BUILDING_FW_TRANSGENIC_NURSERY', 		'TECH_TRANSGENICS', 				4500, 'ART_DEF_BUILDING_LABORATORY',         59,'CIV_COLOR_ATLAS_FW_2'),
+
+('BUILDING_FW_DEFENSE_FIELD', 			'TECH_AUTONOMOUS_SYSTEMS', 			4500, 'ART_DEF_BUILDING_FW_MILITARY_BASE',   17,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_NANOMINES_FIELD', 		'TECH_AUTONOMOUS_SYSTEMS', 			4500, 'ART_DEF_BUILDING_GARDEN',             18,'COMMUNITY_ATLAS'),
+('BUILDING_FW_DRONE_HIVE', 				'TECH_AUTONOMOUS_SYSTEMS', 			4500, 'ART_DEF_BUILDING_LABORATORY',          9,'CIV_COLOR_ATLAS_FW_2'),
+
+('BUILDING_FW_AEROSPACE_COMPLEX', 		'TECH_ARCOLOGIES', 		        	4500, 'ART_DEF_BUILDING_AIRPORT',            30,'CIV_COLOR_ATLAS_FW_3'),
+
+('BUILDING_FW_TIDAL_PORT', 				'TECH_NEURAL_INTERFACE', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_ARRAY',     50,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_CYBERCLINIC', 			'TECH_NEURAL_INTERFACE', 			4500, 'ART_DEF_BUILDING_LABORATORY',          8,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_HIGHSPEED_RAIL', 			'TECH_SUPERCONDUCTIVITY', 			4500, 'ART_DEF_BUILDING_GARDEN',              2,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_RESEARCH_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     24,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_ENGINEERING_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     25,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_COMM_MODULE', 			'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     28,'CIV_COLOR_ATLAS_FW_2'),
 
-('BUILDING_FW_TRANSGENIC_NURSERY', 		'TECH_TRANSGENICS', 				4500, 'ART_DEF_BUILDING_LABORATORY',         59,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_DRONE_HIVE', 				'TECH_AUTONOMOUS_SYSTEMS', 			4500, 'ART_DEF_BUILDING_LABORATORY',          9,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_NANOMINES_FIELD', 		'TECH_ARCOLOGIES', 			        4500, 'ART_DEF_BUILDING_GARDEN',             18,'COMMUNITY_ATLAS'),
-('BUILDING_FW_DEFENSE_FIELD', 			'TECH_ARCOLOGIES', 			        4750, 'ART_DEF_BUILDING_FW_MILITARY_BASE',   33,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_AEROSPACE_COMPLEX', 		'TECH_ARCOLOGIES', 		        	4500, 'ART_DEF_BUILDING_AIRPORT',            30,'CIV_COLOR_ATLAS_FW_3'),
-
 ('BUILDING_FW_ECTOGENESIS_POD', 		'TECH_GENGINEERING', 				4750, 'ART_DEF_BUILDING_LABORATORY',         22,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_MASS_DIGESTER', 			'TECH_BIOMODIFICATION', 	    	4750, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      4,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_BIOMOD_TANK', 			'TECH_BIOMODIFICATION', 			4750, 'ART_DEF_BUILDING_LABORATORY',         30,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_DIGITAL_POLICE', 			'TECH_AI', 		                	4750, 'COLESSEUM',                           11,'EXPANSION_BW_ATLAS_1'),
-('BUILDING_FW_FUSION_PLANT', 			'TECH_NUCLEAR_FUSION', 				4750, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      6,'CIV_COLOR_ATLAS_FW'),
 ('BUILDING_FW_ORBITAL_HABITAT', 		'TECH_ADAMANTIUM', 	                5000, 'ART_DEF_BUILDING_HOSPITAL',           26,'CIV_COLOR_ATLAS_FW_3'),
 
+('BUILDING_FW_MASS_DIGESTER', 			'TECH_BIOMODIFICATION', 	    	4750, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      4,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_BIOMOD_TANK', 			'TECH_BIOMODIFICATION', 			4750, 'ART_DEF_BUILDING_LABORATORY',         30,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_FUSION_PLANT', 			'TECH_NUCLEAR_FUSION', 				4750, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',      6,'CIV_COLOR_ATLAS_FW'),
+
 ('BUILDING_FW_TERRAFORMING_STATION', 	'TECH_TERRAFORMING', 				5000, 'ART_DEF_BUILDING_LABORATORY',         36,'CIV_COLOR_ATLAS_FW'),
+('BUILDING_FW_AI_NETWORK', 				'TECH_DIGITAL_SOCIETY', 			5000, 'ART_DEF_BUILDING_LABORATORY',          8,'BM_ALIENS_CIV_COLOR_ATLAS'),
+('BUILDING_FW_CENTRAL_COMMAND', 		'TECH_HYPERSTRUCTURES', 			5000, 'ART_DEF_BUILDING_LABORATORY',         23,'CIV_COLOR_ATLAS_FW_2'),
+
 ('BUILDING_FW_PHOTOSYSTEMS', 			'TECH_TERRAFORMING', 				5000, 'ART_DEF_BUILDING_LABORATORY',         35,'CIV_COLOR_ATLAS_FW_2'),
+
 ('BUILDING_FW_BIRTHING_PODS', 			'TECH_HUMAN_AUGMENTATION', 			5000, 'ART_DEF_BUILDING_LABORATORY',         62,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_BRAIN_UPLOADING', 		'TECH_DIGITAL_SOCIETY', 			5000, 'ART_DEF_BUILDING_LABORATORY',          3,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_AI_NETWORK', 				'TECH_DIGITAL_SOCIETY', 			5000, 'ART_DEF_BUILDING_LABORATORY',          8,'BM_ALIENS_CIV_COLOR_ATLAS'),
 ('BUILDING_FW_ALLOY_FOUNDRY', 			'TECH_SMART_MATERIALS', 			5250, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     13,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_UTILITY_FOG', 			'TECH_SMART_MATERIALS', 			5250, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     11,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_MOON_BASE', 				'TECH_ENERGY_THEORY', 				5500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     58,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_CENTRAL_COMMAND', 		'TECH_HYPERSTRUCTURES', 			5000, 'ART_DEF_BUILDING_LABORATORY',         23,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_GENOME_PROJECT_1', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_GENOME_PROJECT_2', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3');
 
@@ -110,6 +134,7 @@ WHERE Type IN (
 'BUILDING_FW_ECOSANCTUARY',
 'BUILDING_FW_BIOFACTORY',
 'BUILDING_FW_GEOTHERMAL_FACTORY',
+'BUILDING_FW_ANTIMATTER_RESEARCH',
 'BUILDING_FW_HYDROTHERMAL_FACTORY',
 'BUILDING_FW_PARTICLE_ACCELERATOR',
 'BUILDING_FW_ECTOGENESIS_POD',
@@ -122,6 +147,10 @@ WHERE Type IN (
 'BUILDING_FW_IMPLANT_CLINIC',
 'BUILDING_FW_BIRTHING_PODS',
 'BUILDING_FW_CYBERCLINIC',
+'BUILDING_FW_BIOCOMPUTER',
+'BUILDING_FW_BIOCONVERTER_NANO',
+'BUILDING_FW_BIOCONVERTER_NANO2',
+'BUILDING_FW_BIOCONVERTER_ADNF',
 'BUILDING_FW_TELEPRESENCE_HUB',
 'BUILDING_FW_SIMULATION_HUB',
 'BUILDING_FW_AI_NETWORK',
@@ -156,27 +185,6 @@ WHERE Type IN (
 'BUILDING_FW_GENOME_PROJECT_1',
 'BUILDING_FW_GENOME_PROJECT_2');
 
-INSERT INTO BuildingClasses (Type, DefaultBuilding, Description, MaxPlayerInstances) VALUES
-('BUILDINGCLASS_FW_MOON_BASE', 			     'BUILDING_FW_MOON_BASE', 		    	'TXT_KEY_BUILDING_FW_MOON_BASE', 			1),
-('BUILDINGCLASS_FW_GENOME_PROJECT_1', 	     'BUILDING_FW_GENOME_PROJECT_1', 	    'TXT_KEY_BUILDING_FW_GENOME_PROJECT_1', 	1),
-('BUILDINGCLASS_FW_GENOME_PROJECT_2', 	     'BUILDING_FW_GENOME_PROJECT_2', 	    'TXT_KEY_BUILDING_FW_GENOME_PROJECT_2', 	1),
-('BUILDINGCLASS_FW_NANOFORGE', 	     		 'BUILDING_FW_NANOFORGE', 	    		'TXT_KEY_BUILDING_FW_NANOFORGE', 			5),
-('BUILDINGCLASS_FW_BIOFUEL_REFINERY', 	     'BUILDING_FW_BIOFUEL_REFINERY', 	    'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
-('BUILDINGCLASS_FW_BIOFUEL_REFINERY_RICE', 	 'BUILDING_FW_BIOFUEL_REFINERY_RICE', 	'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
-('BUILDINGCLASS_FW_BIOFUEL_REFINERY_BANANA', 'BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
-('BUILDINGCLASS_FW_BIOFUEL_REFINERY_MAIZE',  'BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 	'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
-('BUILDINGCLASS_FW_ENRICHMENT_FACILITY',     'BUILDING_FW_ENRICHMENT_FACILITY',     'TXT_KEY_BUILDING_FW_ENRICHMENT_FACILITY', 	3);
-
-INSERT INTO Buildings (Type, BuildingClass, PrereqTech, Cost, ArtDefineTag, PortraitIndex, IconAtlas, Help, Description, Civilopedia, Strategy) VALUES
-('BUILDING_FW_NANOFORGE',       	   'BUILDINGCLASS_FW_NANOFORGE',  		 'TECH_NANOTECHNOLOGY',3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 8,'TCS_MOD_ICON_ATLAS', 'TXT_KEY_BUILDING_FW_NANOFORGE_HELP', 		 'TXT_KEY_BUILDING_FW_NANOFORGE',        		'TXT_KEY_BUILDING_FW_NANOFORGE_PEDIA', 		  'TXT_KEY_BUILDING_FW_NANOFORGE_STRATEGY'),
-('BUILDING_FW_BIOFUEL_REFINERY',       'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 4,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY',        'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
-('BUILDING_FW_BIOFUEL_REFINERY_RICE',  'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 4,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_RICE',   'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
-('BUILDING_FW_BIOFUEL_REFINERY_BANANA','BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 4,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
-('BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 'BUILDINGCLASS_FW_BIOFUEL_REFINERY',  'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 4,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_HELP', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_MAIZE',  'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_PEDIA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY_STRATEGY'),
-('BUILDING_FW_CONVERTER',              'BUILDINGCLASS_FW_CONVERTER',         'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 2,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER',               'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY'),
-('BUILDING_FW_CONVERTER_OIL',          'BUILDINGCLASS_FW_CONVERTER',         'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 2,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER_OIL',           'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY'),
-('BUILDING_FW_CONVERTER_IRON',         'BUILDINGCLASS_FW_CONVERTER',         'TECH_POWER_SYSTEMS', 3500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT', 2,'CIV_COLOR_ATLAS_FW', 'TXT_KEY_BUILDING_FW_CONVERTER_HELP',        'TXT_KEY_BUILDING_FW_CONVERTER_IRON',          'TXT_KEY_BUILDING_FW_CONVERTER_PEDIA',        'TXT_KEY_BUILDING_FW_CONVERTER_STRATEGY');
-
 INSERT INTO BuildingClasses (Type, DefaultBuilding, Description)
 SELECT 'BUILDINGCLASS_'||SUBSTR(Type,10), Type, 'TXT_KEY_'||Type
 FROM Buildings
@@ -204,6 +212,7 @@ WHERE Type IN (
 'BUILDING_FW_ECOSANCTUARY',
 'BUILDING_FW_BIOFACTORY',
 'BUILDING_FW_GEOTHERMAL_FACTORY',
+'BUILDING_FW_ANTIMATTER_RESEARCH',
 'BUILDING_FW_HYDROTHERMAL_FACTORY',
 'BUILDING_FW_PARTICLE_ACCELERATOR',
 'BUILDING_FW_ECTOGENESIS_POD',
@@ -217,6 +226,10 @@ WHERE Type IN (
 'BUILDING_FW_BIRTHING_PODS',
 'BUILDING_FW_CYBERCLINIC',
 'BUILDING_FW_TELEPRESENCE_HUB',
+'BUILDING_FW_BIOCOMPUTER',
+'BUILDING_FW_BIOCONVERTER_NANO',
+'BUILDING_FW_BIOCONVERTER_NANO2',
+'BUILDING_FW_BIOCONVERTER_ADNF',
 'BUILDING_FW_SIMULATION_HUB',
 'BUILDING_FW_AI_NETWORK',
 'BUILDING_FW_BRAIN_UPLOADING',
@@ -244,20 +257,58 @@ WHERE Type IN (
 'BUILDING_FW_CENTRAL_COMMAND',
 'BUILDING_FW_TERRAFORMING_STATION');
 
+INSERT INTO BuildingClasses (Type, DefaultBuilding, Description, MaxPlayerInstances) VALUES
+('BUILDINGCLASS_FW_MOON_BASE', 			     'BUILDING_FW_MOON_BASE', 		    	'TXT_KEY_BUILDING_FW_MOON_BASE', 			1),
+('BUILDINGCLASS_FW_GENOME_PROJECT_1', 	     'BUILDING_FW_GENOME_PROJECT_1', 	    'TXT_KEY_BUILDING_FW_GENOME_PROJECT_1', 	1),
+('BUILDINGCLASS_FW_GENOME_PROJECT_2', 	     'BUILDING_FW_GENOME_PROJECT_2', 	    'TXT_KEY_BUILDING_FW_GENOME_PROJECT_2', 	1),
+('BUILDINGCLASS_FW_NANOFORGE', 	     		 'BUILDING_FW_NANOFORGE', 	    		'TXT_KEY_BUILDING_FW_NANOFORGE', 			5),
+('BUILDINGCLASS_FW_BIOFUEL_REFINERY', 	     'BUILDING_FW_BIOFUEL_REFINERY', 	    'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
+('BUILDINGCLASS_FW_BIOFUEL_REFINERY_RICE', 	 'BUILDING_FW_BIOFUEL_REFINERY_RICE', 	'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
+('BUILDINGCLASS_FW_BIOFUEL_REFINERY_BANANA', 'BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
+('BUILDINGCLASS_FW_BIOFUEL_REFINERY_MAIZE',  'BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 	'TXT_KEY_BUILDING_FW_BIOFUEL_REFINERY', 	3),
+('BUILDINGCLASS_FW_ENRICHMENT_FACILITY',     'BUILDING_FW_ENRICHMENT_FACILITY',     'TXT_KEY_BUILDING_FW_ENRICHMENT_FACILITY', 	3);
+
+
+--- ======================================================================================
+-- Tech 1
+------------------------------------------------------------------------------------------
 -- ----------------------------------------------
--- -- Spaceship Factory & HUBBLE
+-- -- Aquaculture Lab
 -- ----------------------------------------------
 UPDATE Buildings
-SET PrereqTech = 'TECH_ORBITAL_DEV', Cost = 3500, GoldMaintenance = 15
-WHERE Type = 'BUILDING_SPACESHIP_FACTORY';
-UPDATE Language_en_US SET Text = Text||'[NEWLINE][NEWLINE]Spaceships, Space Marines, ODST and XCOM units trained in this city have +15% [ICON_STRENGTH] Combat Strength.' WHERE Tag IN ('TXT_KEY_BUILDING_SPACESHIP_FACTORY_HELP');
+SET GoldMaintenance = 8, Water = 1,  MinAreaSize = 1, DistressFlatReduction = 1, MutuallyExclusiveGroup = 40961
+WHERE Type = 'BUILDING_FW_AQUACULTURE_LAB';
+-- ----------------------------------------------
+-- -- Undersea Mining Platform
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8, Water = 1, MinAreaSize = 10, TradeRouteRecipientBonus = 1, TradeRouteTargetBonus = 1, MutuallyExclusiveGroup = 40961
+WHERE Type = 'BUILDING_FW_UNDERSEA_MINING';
+-- ----------------------------------------------
+-- -- Artificial Reef
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8, Water = 1, MinAreaSize = 10, TechEnhancedTourism = 0, MutuallyExclusiveGroup = 40961
+WHERE Type = 'BUILDING_FW_SEAWATER_ARTIFICIAL_REEF';
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+--- ======================================================================================
+-- Tech 2
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Fungal Agrigenomics
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 10, NeverCapture = 1
+WHERE Type = 'BUILDING_FW_FUNGAL_AGRIGENOMICS';
 
 -- ----------------------------------------------
--- -- International Space Station
+-- -- Genomod Lab
 -- ----------------------------------------------
 UPDATE Buildings
-SET FreeBuildingThisCity = 'BUILDINGCLASS_FW_LAUNCH_FACILITY'
-WHERE Type = 'BUILDING_INTERNATIONAL_SPACE_STATION';
+SET FoodKept = 15, GoldMaintenance = 10, DistressFlatReduction = 1
+WHERE Type = 'BUILDING_FW_GENE_LAB';
 
 -- ----------------------------------------------
 -- -- CYBERPOLICE (vp 4.4 changed)
@@ -269,22 +320,156 @@ SET EspionageModifier = 0,
 	PovertyFlatReduction = 1,
 	IlliteracyFlatReduction = 1,
 	BoredomFlatReduction = 1,
-	GoldMaintenance = 12
+	GoldMaintenance = 20
 WHERE Type = 'BUILDING_FW_CYBERPOLICE';
-
 -- ----------------------------------------------
--- -- Digital Police (vp 4.4 changed)
+-- -- Autoplant
 -- ----------------------------------------------
 UPDATE Buildings
-SET EspionageModifier = 0,
-	SpySecurityModifier = 10,
-	DistressFlatReduction = 1,
-	PovertyFlatReduction = 1,
-	IlliteracyFlatReduction = 1,
-	BoredomFlatReduction = 1,
-	GoldMaintenance = 16
-WHERE Type = 'BUILDING_FW_DIGITAL_POLICE';
+SET GoldMaintenance = 10, NoUnhappfromXSpecialists = 1, SpecialistCount = 1, SpecialistType = 'SPECIALIST_ENGINEER'
+WHERE Type = 'BUILDING_FW_AUTOPLANT';
+-- ----------------------------------------------
+-- -- Nanomaterial Plant
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 10, NeverCapture = 1
+WHERE Type = 'BUILDING_FW_NANOMAT_PLANT';
+-- ----------------------------------------------
+-- -- Spaceship Factory & HUBBLE
+-- ----------------------------------------------
+UPDATE Buildings
+SET PrereqTech = 'TECH_ORBITAL_DEV', Cost = 3250, GoldMaintenance = 12
+WHERE Type = 'BUILDING_SPACESHIP_FACTORY';
 
+/* Twin make, Bio quauntum computer system
+-- Orginal Production delete
+DELETE FROM Building_YieldModifiers
+WHERE BuildingType = 'BUILDING_SPACESHIP_FACTORY'
+  AND YieldType    = 'YIELD_SCIENCE';
+
+DELETE FROM Building_YieldChanges
+WHERE BuildingType = 'BUILDING_SPACESHIP_FACTORY' AND YieldType = 'YIELD_PRODUCTION';
+
+-- Production->Science
+INSERT INTO Building_YieldChanges
+    (BuildingType, YieldType, Yield)
+VALUES
+    ('BUILDING_SPACESHIP_FACTORY', 'YIELD_SCIENCE', 3);
+*/
+
+
+--- ======================================================================================
+-- Tech 3
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Ecosanctuary
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, LandmarksTourismPercent = 15, NoUnhappfromXSpecialists = 1, BoredomFlatReduction = 1, ReligiousUnrestFlatReduction = 1, MutuallyExclusiveGroup = 23532
+WHERE Type = 'BUILDING_FW_ECOSANCTUARY';
+-- ----------------------------------------------
+-- -- Cryptobank
+-- ----------------------------------------------
+UPDATE Buildings
+SET SpecialistCount = 1, SpecialistType = 'SPECIALIST_MERCHANT', PovertyFlatReduction = 1
+WHERE Type = 'BUILDING_FW_CRYPTOBANK';
+-- ----------------------------------------------
+-- -- VR Training
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, DistressFlatReduction = 1, BoredomFlatReduction = 1, CitySupplyFlat = 1
+WHERE Type = 'BUILDING_FW_VR_TRAINING';
+-- ----------------------------------------------
+-- -- Virtual Museum
+-- ----------------------------------------------
+UPDATE Buildings
+SET GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 2, GoldMaintenance = 12, BoredomFlatReduction = 1
+WHERE Type = 'BUILDING_FW_VIRTUAL_MUSEUM';
+-------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Entertainment Server
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistCount = 1, SpecialistType = 'SPECIALIST_ARTIST', TechEnhancedTourism = 0, BoredomFlatReduction = 1, MutuallyExclusiveGroup = 99801
+WHERE Type = 'BUILDING_FW_ENTERTAINMENT_SERVER';
+-- ----------------------------------------------
+-- -- Cloud Computing
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistCount = 1, SpecialistType = 'SPECIALIST_ENGINEER', DistressFlatReduction = 1, MutuallyExclusiveGroup = 99801
+WHERE Type = 'BUILDING_FW_CLOUD_COMPUTING';
+-- ----------------------------------------------
+-- -- E-Commerce Server
+-- ----------------------------------------------
+UPDATE Buildings
+SET SpecialistCount = 1, SpecialistType = 'SPECIALIST_MERCHANT', TradeRouteRecipientBonus = 2, TradeRouteTargetBonus = 2, PovertyFlatReduction = 1, MutuallyExclusiveGroup = 99801
+WHERE Type = 'BUILDING_FW_COMMERCE_SERVER';
+-- ----------------------------------------------
+-- -- Research Server
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistCount = 1, SpecialistType = 'SPECIALIST_SCIENTIST', IlliteracyFlatReduction = 1, IlliteracyFlatReduction = 1, MutuallyExclusiveGroup = 99801
+WHERE Type = 'BUILDING_FW_RESEARCH_SERVER';
+-------------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Nanoforge
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, CitySupplyFlat = 1
+WHERE Type = 'BUILDING_FW_NANOFORGE';
+-- ----------------------------------------------
+-- -- Particle Accelerator
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, IlliteracyFlatReduction = 1
+WHERE Type = 'BUILDING_FW_PARTICLE_ACCELERATOR';
+-- ----------------------------------------------
+-- -- Vertical Farms
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 23532
+WHERE Type = 'BUILDING_FW_VERTICAL_FARM';
+
+--- ======================================================================================
+-- Tech 3
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Biofactory
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, ProhibitedCityTerrain = 'TERRAIN_SNOW', MutuallyExclusiveGroup = 23492
+WHERE Type = 'BUILDING_FW_BIOFACTORY';
+-- ----------------------------------------------
+-- -- (Marine Bio Industry Complex)
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12,  Water = 1, MutuallyExclusiveGroup = 23492
+WHERE Type = 'BUILDING_FW_HYDROTHERMAL_FACTORY';
+-- ----------------------------------------------
+-- -- Genejack Facility
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12
+WHERE Type = 'BUILDING_FW_GENEJACK_FACILITY';
+-- ----------------------------------------------
+-- -- Implant Clinic
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, CitySupplyFlat = 1, DistressFlatReduction = 1, TrainedFreePromotion = 'PROMOTION_FW_IMPLANTS', MutuallyExclusiveGroup = 69231
+WHERE Type = 'BUILDING_FW_IMPLANT_CLINIC';
+
+-- ----------------------------------------------
+-- -- Network Backbone
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 6, GreatWorksTourismModifier = 10
+WHERE Type = 'BUILDING_FW_NETWORK_BACKBONE';
+-- ----------------------------------------------
+-- -- Launch Facility
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1,  TrainedFreePromotion = 'PROMOTION_FW_SPACESHIP', MutuallyExclusiveGroup = 69231
+WHERE Type = 'BUILDING_FW_LAUNCH_FACILITY';
 -- ----------------------------------------------
 -- -- Biofuel Refinery
 -- ----------------------------------------------
@@ -303,29 +488,233 @@ WHERE Type = 'BUILDING_FW_BIOFUEL_REFINERY_BANANA';
 UPDATE Buildings
 SET NeverCapture = 1, GoldMaintenance = 8, MutuallyExclusiveGroup = 54221
 WHERE Type = 'BUILDING_FW_BIOFUEL_REFINERY_MAIZE';
+-- ----------------------------------------------
+-- -- Borehole
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, ProhibitedCityTerrain = 'TERRAIN_MOUNTAIN', MutuallyExclusiveGroup = 23492
+WHERE Type = 'BUILDING_FW_BOREHOLE';
+-- ----------------------------------------------
+-- -- Geothermal Factory
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1, NearbyMountainRequired = 1, MutuallyExclusiveGroup = 23492
+WHERE Type = 'BUILDING_FW_GEOTHERMAL_FACTORY';
+-- ----------------------------------------------
+-- -- Deep earth Reasearch
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, NeverCapture = 1
+WHERE Type = 'BUILDING_FW_ANTIMATTER_RESEARCH';
+--- ======================================================================================
+-- Tech 4
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Clone Lab
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, CitySupplyModifier = 10, PopulationChange = 2, GreatPeopleRateModifier = 10
+WHERE Type = 'BUILDING_FW_CLONE_LAB';
+-- ----------------------------------------------
+-- -- Bio-flesh Industry
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8
+WHERE Type = 'BUILDING_FW_BIOFLESH_INDUSTRY';
+-- ----------------------------------------------
+-- -- Feedsite Hub
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_MUSICIAN', SpecialistCount = 1, GreatPeopleRateChange = 2, TechEnhancedTourism = 0, Happiness = 3, BoredomFlatReduction = 1,  MutuallyExclusiveGroup = 39993
+WHERE Type = 'BUILDING_FW_FEEDSITE_HUB';
+-- ----------------------------------------------
+-- -- Metroplex hub
+-- ----------------------------------------------
+UPDATE Buildings
+SET NeverCapture = 1, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1,  MutuallyExclusiveGroup = 39993
+WHERE Type = 'BUILDING_FW_METROPLEX_HUB';
+-- ----------------------------------------------
+-- -- Biocomputer
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8
+WHERE Type = 'BUILDING_FW_BIOCOMPUTER';
+-- ----------------------------------------------
+-- ----------------------------------------------
+-- -- Bioconverter nanomaterial
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8
+WHERE Type = 'BUILDING_FW_BIOCONVERTER_NANO';
+-- ----------------------------------------------
+-- -- Bioconverter Genospore
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 8
+WHERE Type = 'BUILDING_FW_BIOCONVERTER_ADNF';
 
-
+-- ----------------------------------------------
+-- -- Telepresence Hub
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 6
+WHERE Type = 'BUILDING_FW_TELEPRESENCE_HUB';
+-- ----------------------------------------------
+-- -- Distribution Hub
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, BuildingProductionModifier = 15, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 39993
+WHERE Type = 'BUILDING_FW_DISTRIBUTION_HUB';
+-- ----------------------------------------------
+-- -- Simulation Hub
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, IlliteracyFlatReduction = 1,  MutuallyExclusiveGroup = 39993
+WHERE Type = 'BUILDING_FW_SIMULATION_HUB';
 -- ----------------------------------------------
 -- -- Enrichment Facility
 -- ----------------------------------------------
 UPDATE Buildings
 SET NeverCapture = 1, GoldMaintenance = 18, NationalPopRequired = 125
 WHERE Type = 'BUILDING_FW_ENRICHMENT_FACILITY';
-
 -- ----------------------------------------------
--- -- Genome Project 1
--- ----------------------------------------------
-UPDATE Buildings
-SET NukeImmune = 1, NeverCapture = 1
-WHERE Type = 'BUILDING_FW_GENOME_PROJECT_1';
-
--- ----------------------------------------------
--- -- Genome Project 2
+-- -- Mycoprotein Vats
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, NeverCapture = 1, GlobalPopulationChange = 1
-WHERE Type = 'BUILDING_FW_GENOME_PROJECT_1';
-
+SET GoldMaintenance = 12, FoodKept = 10, NoUnhappfromXSpecialists = 2
+WHERE Type = 'BUILDING_FW_MYCOPROTEIN_VATS';
+-- ----------------------------------------------
+-- -- Space Station
+-- ----------------------------------------------
+UPDATE Buildings
+SET NukeImmune = 1, GoldMaintenance = 12, NoUnhappfromXSpecialists = 1, WLTKDTurns = 15, CityAirStrikeDefense = 5, Defense = 500
+WHERE Type = 'BUILDING_FW_SPACE_STATION';
+--- ======================================================================================
+-- Tech 5
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Transgenic Nursery
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_AMPHIBIOUS', MutuallyExclusiveGroup = 99778
+WHERE Type = 'BUILDING_FW_TRANSGENIC_NURSERY';
+-- ----------------------------------------------
+-- -- Drone Hive
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, BuildingProductionModifier = 10, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 1,  TrainedFreePromotion = 'PROMOTION_FW_AUTO_REPAIR', MutuallyExclusiveGroup = 99778
+WHERE Type = 'BUILDING_FW_DRONE_HIVE';
+-- ----------------------------------------------
+-- -- Aerospace Complex
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, SpaceProductionModifier = 10, CityAirStrikeDefense = 10, AirModifier = 4,  TrainedFreePromotion = 'PROMOTION_PARADROP_2', MutuallyExclusiveGroup = 99778
+WHERE Type = 'BUILDING_FW_AEROSPACE_COMPLEX';
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Tidal Port
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, Water = 1, FinishSeaTRTourism = 10, TradeRouteSeaGoldBonus = 100, CitySupplyFlat = 2, TradeRouteRecipientBonus = 2, TradeRouteTargetBonus = 2, TradeRouteSeaDistanceModifier = 50
+WHERE Type = 'BUILDING_FW_TIDAL_PORT';
+-- ----------------------------------------------
+-- -- High Speed Rail Train
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, RequiresIndustrialCityConnection = 1, FinishLandTRTourism = 10, TradeRouteLandGoldBonus = 50, TradeRouteLandDistanceModifier = 25
+WHERE Type = 'BUILDING_FW_HIGHSPEED_RAIL';
+-- ----------------------------------------------
+-- -- Cyberclinic
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, Happiness = 4
+WHERE Type = 'BUILDING_FW_CYBERCLINIC';
+-- ----------------------------------------------
+-- -- Comm Module
+-- ----------------------------------------------
+UPDATE Buildings
+SET NukeImmune = 1, GoldMaintenance = 2, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 26801
+WHERE Type = 'BUILDING_FW_COMM_MODULE';
+-- ----------------------------------------------
+-- -- Engineering Module
+-- ----------------------------------------------
+UPDATE Buildings
+SET NukeImmune = 1, GoldMaintenance = 8, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 26801
+WHERE Type = 'BUILDING_FW_ENGINEERING_MODULE';
+-- ----------------------------------------------
+-- -- Research Module
+-- ----------------------------------------------
+UPDATE Buildings
+SET NukeImmune = 1, GoldMaintenance = 8, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 26801
+WHERE Type = 'BUILDING_FW_RESEARCH_MODULE';
+-- ----------------------------------------------
+-- -- Nanomines Field
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, ExtraCityHitPoints = 50, Defense = 1000, Water = 1, DeepWaterTileDamage = 5, BorderObstacleWater = 1, MinAreaSize = 10
+WHERE Type = 'BUILDING_FW_NANOMINES_FIELD';
+-----------------------------------------------
+-- -- Defense Field
+-- ----------------------------------------------
+UPDATE Buildings
+SET ProhibitedCityTerrain = 'TERRAIN_COAST', GoldMaintenance = 14, Defense = 2000, AllowsRangeStrike = 1, ExtraCityHitPoints = 125, NukeImmune = 1, NukeModifier = -20
+WHERE Type = 'BUILDING_FW_DEFENSE_FIELD';
+--- ======================================================================================
+-- Tech 5
+------------------------------------------------------------------------------------------
+-- ----------------------------------------------
+-- -- Biogenesis Pod
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, NeverCapture = 1, TrainedFreePromotion = 'PROMOTION_FW_GENGINEERED'
+WHERE Type = 'BUILDING_FW_ECTOGENESIS_POD';
+-- ----------------------------------------------
+-- -- Mass Digester
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 20, NoUnhappfromXSpecialists = 1
+WHERE Type = 'BUILDING_FW_MASS_DIGESTER';
+-- ----------------------------------------------
+-- -- Bioenhancement Centre
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, NeverCapture = 1, TrainedFreePromotion = 'PROMOTION_FW_BIOMODS'
+WHERE Type = 'BUILDING_FW_BIOMOD_TANK';
+-- ----------------------------------------------
+-- -- Digital Police (vp 4.4 changed)
+-- ----------------------------------------------
+UPDATE Buildings
+SET EspionageModifier = 0,
+	SpySecurityModifier = 20,
+	DistressFlatReduction = 1,
+	PovertyFlatReduction = 1,
+	IlliteracyFlatReduction = 1,
+	BoredomFlatReduction = 1,
+	GoldMaintenance = 16
+WHERE Type = 'BUILDING_FW_DIGITAL_POLICE';
+-- ----------------------------------------------
+-- -- Fusion Plant
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, GreatPeopleRateModifier = 25
+WHERE Type = 'BUILDING_FW_FUSION_PLANT';
+INSERT INTO Building_YieldFromProcessModifier
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_FW_FUSION_PLANT', 'YIELD_FOOD',    20),
+	('BUILDING_FW_FUSION_PLANT', 'YIELD_GOLD',    20),
+	('BUILDING_FW_FUSION_PLANT', 'YIELD_SCIENCE', 20),
+	('BUILDING_FW_FUSION_PLANT', 'YIELD_CULTURE', 20),
+	('BUILDING_FW_FUSION_PLANT', 'YIELD_FAITH',   20);
+-- ----------------------------------------------
+-- -- Orbital Habitat
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 14, NukeImmune = 1, NoUnhappfromXSpecialists = 2
+WHERE Type = 'BUILDING_FW_ORBITAL_HABITAT';
+--- ======================================================================================
+-- Tech 6
+------------------------------------------------------------------------------------------
 -- ----------------------------------------------
 -- -- Terraforming Station
 -- ----------------------------------------------
@@ -336,7 +725,7 @@ WHERE Type = 'BUILDING_FW_TERRAFORMING_STATION';
 -- -- AI Network
 -- ----------------------------------------------
 UPDATE Buildings
-SET NeverCapture = 1, GoldMaintenance = 16, Defense = 1500, ExtraCityHitPoints = 75, MutuallyExclusiveGroup = 23491
+SET NeverCapture = 1, GoldMaintenance = 18, GreatPeopleRateModifier = 15, NoUnhappfromXSpecialists = 2, Defense = 1500, ExtraCityHitPoints = 60, MutuallyExclusiveGroup = 23491
 WHERE Type = 'BUILDING_FW_AI_NETWORK';
 -- ----------------------------------------------
 -- -- Central Command
@@ -344,424 +733,68 @@ WHERE Type = 'BUILDING_FW_AI_NETWORK';
 UPDATE Buildings
 SET NeverCapture = 1, GoldMaintenance = 18, MutuallyExclusiveGroup = 23491
 WHERE Type = 'BUILDING_FW_CENTRAL_COMMAND';
-
+--------------------------------------------------------------------------------
 -- ----------------------------------------------
--- -- Moon Base
--- ----------------------------------------------
-UPDATE Buildings
-SET NeverCapture = 1, NukeImmune = 1, NationalPopRequired = 110, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 2, Happiness = 3, NoUnhappfromXSpecialists = 2
-WHERE Type = 'BUILDING_FW_MOON_BASE';
-
--- ----------------------------------------------
--- -- Orbital Habitat
+-- -- Photosystems
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, NukeImmune = 1, NoUnhappfromXSpecialists = 2
-WHERE Type = 'BUILDING_FW_ORBITAL_HABITAT';
-
+SET GoldMaintenance = 16
+WHERE Type = 'BUILDING_FW_PHOTOSYSTEMS';
 -- ----------------------------------------------
--- -- Comm Module
--- ----------------------------------------------
-UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 2, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 99801
-WHERE Type = 'BUILDING_FW_COMM_MODULE';
--- ----------------------------------------------
--- -- Engineering Module
+-- -- Birthing Pods
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 8, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 99801
-WHERE Type = 'BUILDING_FW_ENGINEERING_MODULE';
--- ----------------------------------------------
--- -- Research Module
--- ----------------------------------------------
-UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 8, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 99801
-WHERE Type = 'BUILDING_FW_RESEARCH_MODULE';
-
--- ----------------------------------------------
--- -- Space Station
--- ----------------------------------------------
-UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 12, NoUnhappfromXSpecialists = 1, WLTKDTurns = 15, CityAirStrikeDefense = 5, Defense = 500
-WHERE Type = 'BUILDING_FW_SPACE_STATION';
-
--- ----------------------------------------------
--- -- Mycoprotein Vats
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, FoodKept = 10, NoUnhappfromXSpecialists = 2
-WHERE Type = 'BUILDING_FW_MYCOPROTEIN_VATS';
-
--- ----------------------------------------------
--- -- Vertical Farms
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 15, NeverCapture = 1, NoUnhappfromXSpecialists = 1
-WHERE Type = 'BUILDING_FW_VERTICAL_FARM';
-
--- ----------------------------------------------
--- -- Metroplex hub
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 5, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2, MutuallyExclusiveGroup = 9993, MutuallyExclusiveGroup = 999, PovertyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_METROPLEX_HUB';
--- ----------------------------------------------
--- -- Distribution Hub
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 20, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, BuildingProductionModifier = 15, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 9993
-WHERE Type = 'BUILDING_FW_DISTRIBUTION_HUB';
--- ----------------------------------------------
--- -- Simulation Hub
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 20, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2,  MutuallyExclusiveGroup = 9993, IlliteracyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_SIMULATION_HUB';
--- ----------------------------------------------
--- -- Feedsite Hub
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 20, SpecialistType = 'SPECIALIST_MUSICIAN', SpecialistCount = 1, GreatPeopleRateChange = 2, TechEnhancedTourism = 0, Happiness = 3,  MutuallyExclusiveGroup = 9993, BoredomFlatReduction = 1
-WHERE Type = 'BUILDING_FW_FEEDSITE_HUB';
-
--- ----------------------------------------------
--- -- Alloy Foundry
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 16, NeverCapture = 1
-WHERE Type = 'BUILDING_FW_ALLOY_FOUNDRY';
-
--- ----------------------------------------------
--- -- Converter
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 6, NeverCapture = 1, MutuallyExclusiveGroup = 3612
-WHERE Type = 'BUILDING_FW_CONVERTER';
-UPDATE Buildings
-SET GoldMaintenance = 7, NeverCapture = 1, MutuallyExclusiveGroup = 3612
-WHERE Type = 'BUILDING_FW_CONVERTER_OIL';
-UPDATE Buildings
-SET GoldMaintenance = 8, NeverCapture = 1, MutuallyExclusiveGroup = 3612
-WHERE Type = 'BUILDING_FW_CONVERTER_IRON';
-
--- ----------------------------------------------
--- -- Nanomaterial Plant
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 10, NeverCapture = 1
-WHERE Type = 'BUILDING_FW_NANOMAT_PLANT';
-
--- ----------------------------------------------
--- -- Nanoforge
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 18, NeverCapture = 1, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, CitySupplyFlat = 1
-WHERE Type = 'BUILDING_FW_NANOFORGE';
-
--- ----------------------------------------------
--- -- Utility Fog
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 25, EmpireSizeModifierReduction = '-5', HealRateChange = 5, BuildingProductionModifier = 20, AllowsRangeStrike = 1, CityRangedStrikeRange = 1, Defense = 1200, ExtraCityHitPoints = 100
-WHERE Type = 'BUILDING_FW_UTILITY_FOG';
-
----------------------------------------------------------------------------------------------------------------------------------------------
--- ----------------------------------------------
--- -- Transgenic Nursery
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_FW_PARASITISM', MutuallyExclusiveGroup = 99778
-WHERE Type = 'BUILDING_FW_TRANSGENIC_NURSERY';
--- ----------------------------------------------
--- -- Drone Hive
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 16, Defense = 1500, ExtraCityHitPoints = 50, BuildingProductionModifier = 10, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 1,  TrainedFreePromotion = 'PROMOTION_FW_AUTO_REPAIR', MutuallyExclusiveGroup = 99778
-WHERE Type = 'BUILDING_FW_DRONE_HIVE';
--- ----------------------------------------------
--- -- Aerospace Complex
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 16, CityAirStrikeDefense = 12, AirModifier = 3,  TrainedFreePromotion = 'PROMOTION_PARADROP_2', MutuallyExclusiveGroup = 99778
-WHERE Type = 'BUILDING_FW_AEROSPACE_COMPLEX';
--- SpaceProductionModifier = 10,
-------------------------------------------------------------------------------------------------------------------------------------------
-
--- ----------------------------------------------
--- -- Defense Field
--- ----------------------------------------------
-UPDATE Buildings
-SET ProhibitedCityTerrain = 'TERRAIN_COAST', GoldMaintenance = 25, Defense = 1800, AllowsRangeStrike = 1, ExtraCityHitPoints = 125, NukeImmune = 1, NukeModifier = -20
-WHERE Type = 'BUILDING_FW_DEFENSE_FIELD';
-
--- ----------------------------------------------
--- -- Fusion Plant
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, GreatPeopleRateModifier = 25
-WHERE Type = 'BUILDING_FW_FUSION_PLANT';
-INSERT INTO Building_YieldFromProcessModifier
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_FW_FUSION_PLANT', 'YIELD_FOOD', 20),
-	('BUILDING_FW_FUSION_PLANT', 'YIELD_GOLD', 20),
-	('BUILDING_FW_FUSION_PLANT', 'YIELD_SCIENCE', 20),
-	('BUILDING_FW_FUSION_PLANT', 'YIELD_CULTURE', 20),
-	('BUILDING_FW_FUSION_PLANT', 'YIELD_FAITH', 20);
-
+SET PopulationChange = 5, FoodKept = 20, NoUnhappfromXSpecialists = 3
+WHERE Type = 'BUILDING_FW_BIRTHING_PODS';
 -- ----------------------------------------------
 -- -- Brain Uploading
 -- ----------------------------------------------
 UPDATE Buildings
 SET PopulationChange = -20, NukeImmune = 1, ConquestProb = 100, LocalPopRequired = 70
 WHERE Type = 'BUILDING_FW_BRAIN_UPLOADING';
+-- ----------------------------------------------
+-- -- Alloy Foundry
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, NeverCapture = 1
+WHERE Type = 'BUILDING_FW_ALLOY_FOUNDRY';
+-- ----------------------------------------------
+-- -- Utility Fog
+-- ----------------------------------------------
+UPDATE Buildings
+SET GoldMaintenance = 16, EmpireSizeModifierReduction = '-5', HealRateChange = 5, BuildingProductionModifier = 20, AllowsRangeStrike = 1, CityRangedStrikeRange = 1, Defense = 1200, ExtraCityHitPoints = 100
+WHERE Type = 'BUILDING_FW_UTILITY_FOG';
+-- ----------------------------------------------
+-- -- Moon Base
+-- ----------------------------------------------
+UPDATE Buildings
+SET NeverCapture = 1, NukeImmune = 1, NationalPopRequired = 110, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 2, Happiness = 3, NoUnhappfromXSpecialists = 2
+WHERE Type = 'BUILDING_FW_MOON_BASE';
+--- ===========================================================================
+-- ----------------------------------------------
+-- -- International Space Station
+-- ----------------------------------------------
+UPDATE Buildings
+SET FreeBuildingThisCity = 'BUILDINGCLASS_FW_LAUNCH_FACILITY'
+WHERE Type = 'BUILDING_INTERNATIONAL_SPACE_STATION';
 
 -- ----------------------------------------------
--- -- Telepresence Hub
+-- -- Genome Project 1
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 6
-WHERE Type = 'BUILDING_FW_TELEPRESENCE_HUB';
-
+SET NukeImmune = 1, NeverCapture = 1
+WHERE Type = 'BUILDING_FW_GENOME_PROJECT_1';
 -- ----------------------------------------------
--- -- Cyberclinic
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 16
-WHERE Type = 'BUILDING_FW_CYBERCLINIC';
-
--- ----------------------------------------------
--- -- Birthing Pods
+-- -- Genome Project 2
 -- ----------------------------------------------
 UPDATE Buildings
-SET Happiness = 1, PopulationChange = 5, FoodKept = 20, NoUnhappfromXSpecialists = 2
-WHERE Type = 'BUILDING_FW_BIRTHING_PODS';
-
--- ----------------------------------------------
--- -- Implant Clinic
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, NeverCapture = 1, DistressFlatReduction = 1
-WHERE Type = 'BUILDING_FW_IMPLANT_CLINIC';
-
--- ----------------------------------------------
--- -- Bioenhancement Centre
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, NeverCapture = 1, TrainedFreePromotion = 'PROMOTION_FW_BIOMODS'
-WHERE Type = 'BUILDING_FW_BIOMOD_TANK';
-
--- ----------------------------------------------
--- -- Genejack Facility
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12
-WHERE Type = 'BUILDING_FW_GENEJACK_FACILITY';
-
--- ----------------------------------------------
--- -- Tidal Port
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, Water = 1, FinishSeaTRTourism = 10, TradeRouteSeaGoldBonus = 100, CitySupplyFlat = 1, TradeRouteRecipientBonus = 2, TradeRouteTargetBonus = 2, TradeRouteSeaDistanceModifier = 50, MutuallyExclusiveGroup = 876871
-WHERE Type = 'BUILDING_FW_TIDAL_PORT';
-
--- ----------------------------------------------
--- -- High Speed Rail Train
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, RequiresIndustrialCityConnection = 1, FinishLandTRTourism = 10, TradeRouteLandGoldBonus = 50, TradeRouteLandDistanceModifier = 25, MutuallyExclusiveGroup = 876871
-WHERE Type = 'BUILDING_FW_HIGHSPEED_RAIL';
-
--- ----------------------------------------------
--- -- Photosystems
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 20, ConquestProb = 100
-WHERE Type = 'BUILDING_FW_PHOTOSYSTEMS';
-
--- ----------------------------------------------
--- -- Biogenesis Pod
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, NeverCapture = 1, TrainedFreePromotion = 'PROMOTION_FW_GENGINEERED'
-WHERE Type = 'BUILDING_FW_ECTOGENESIS_POD';
-
--- ----------------------------------------------
--- -- Nanomines Field
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 14, ExtraCityHitPoints = 50, Defense = 1000, Water = 1, DeepWaterTileDamage = 5, BorderObstacleWater = 1, MinAreaSize = 10
-WHERE Type = 'BUILDING_FW_NANOMINES_FIELD';
-
--- ----------------------------------------------
--- -- Launch Facility
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1
-WHERE Type = 'BUILDING_FW_LAUNCH_FACILITY';
-
--- ----------------------------------------------
--- -- Particle Accelerator
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, IlliteracyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_PARTICLE_ACCELERATOR';
-
--- ----------------------------------------------
--- -- VR Training
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, DistressFlatReduction = 1, BoredomFlatReduction = 1
-WHERE Type = 'BUILDING_FW_VR_TRAINING';
-
--- ----------------------------------------------
--- -- Virtual Museum
--- ----------------------------------------------
-UPDATE Buildings
-SET GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 2, GoldMaintenance = 12, BoredomFlatReduction = 1
-WHERE Type = 'BUILDING_FW_VIRTUAL_MUSEUM';
-
--- ----------------------------------------------
--- -- Cloud Computing
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 10, PolicyBranchType = 'POLICY_BRANCH_EXPLORATION', SpecialistCount = 1, SpecialistType = 'SPECIALIST_ENGINEER', DistressFlatReduction = 1
-WHERE Type = 'BUILDING_FW_CLOUD_COMPUTING';
--- ----------------------------------------------
--- -- Entertainment Server
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 10, PolicyBranchType = 'POLICY_BRANCH_AESTHETICS', SpecialistCount = 1, SpecialistType = 'SPECIALIST_ARTIST', TechEnhancedTourism = 0, BoredomFlatReduction = 1
-WHERE Type = 'BUILDING_FW_ENTERTAINMENT_SERVER';
--- ----------------------------------------------
--- -- E-Commerce Server
--- ----------------------------------------------
-UPDATE Buildings
-SET SpecialistCount = 1, PolicyBranchType = 'POLICY_BRANCH_COMMERCE', SpecialistType = 'SPECIALIST_MERCHANT', TradeRouteRecipientBonus = 2, TradeRouteTargetBonus = 2, PovertyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_COMMERCE_SERVER';
--- ----------------------------------------------
--- -- Research Server
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 10, PolicyBranchType = 'POLICY_BRANCH_RATIONALISM', SpecialistCount = 1, SpecialistType = 'SPECIALIST_SCIENTIST', IlliteracyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_RESEARCH_SERVER';
-
--- ----------------------------------------------
--- -- Autoplant
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 10, NoUnhappfromXSpecialists = 1, SpecialistCount = 1, SpecialistType = 'SPECIALIST_ENGINEER'
-WHERE Type = 'BUILDING_FW_AUTOPLANT';
-
--- ----------------------------------------------
--- -- Cryptobank
--- ----------------------------------------------
-UPDATE Buildings
-SET SpecialistCount = 1, SpecialistType = 'SPECIALIST_MERCHANT', PovertyFlatReduction = 1
-WHERE Type = 'BUILDING_FW_CRYPTOBANK';
-
--- ----------------------------------------------
--- -- Genomod Lab
--- ----------------------------------------------
-UPDATE Buildings
-SET FoodKept = 15, GoldMaintenance = 10, DistressFlatReduction = 1
-WHERE Type = 'BUILDING_FW_GENE_LAB';
-
--- ----------------------------------------------
--- -- Clone Lab
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, CitySupplyModifier = 10, PopulationChange = 2, GreatPeopleRateModifier = 10
-WHERE Type = 'BUILDING_FW_CLONE_LAB';
-
--- ----------------------------------------------
--- -- Bio-flesh Industry
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12
-WHERE Type = 'BUILDING_FW_BIOFLESH_INDUSTRY';
-
--- ----------------------------------------------
--- -- Fungal Agrigenomics
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, ConquestProb = 100
-WHERE Type = 'BUILDING_FW_FUNGAL_AGRIGENOMICS';
-
--- ----------------------------------------------
--- -- VR Training
--- ----------------------------------------------
-UPDATE Buildings
-SET CitySupplyFlat = 1, DistressFlatReduction = 1, BoredomFlatReduction = 1 
-WHERE Type = 'BUILDING_FW_VR_TRAINING';
-
--- ----------------------------------------------
--- -- Ecosanctuary
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, LandmarksTourismPercent = 15, MutuallyExclusiveGroup = 23492, NoUnhappfromXSpecialists = 1, BoredomFlatReduction = 1, ReligiousUnrestFlatReduction = 1
-WHERE Type = 'BUILDING_FW_ECOSANCTUARY';
--- ----------------------------------------------
--- -- Biofactory
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, ProhibitedCityTerrain = 'TERRAIN_SNOW', MutuallyExclusiveGroup = 23492
-WHERE Type = 'BUILDING_FW_BIOFACTORY';
--- ----------------------------------------------
--- -- Geothermal Factory
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, NearbyMountainRequired = 1, MutuallyExclusiveGroup = 23492
-WHERE Type = 'BUILDING_FW_GEOTHERMAL_FACTORY';
--- ----------------------------------------------
--- -- Hydrothermal Factory
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, Water = 1, MutuallyExclusiveGroup = 23492
-WHERE Type = 'BUILDING_FW_HYDROTHERMAL_FACTORY';
--- ----------------------------------------------
--- -- Borehole
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, ProhibitedCityTerrain = 'TERRAIN_MOUNTAIN', MutuallyExclusiveGroup = 23492
-WHERE Type = 'BUILDING_FW_BOREHOLE';
-
--- ----------------------------------------------
--- -- Network Backbone
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 6, GreatWorksTourismModifier = 10
-WHERE Type = 'BUILDING_FW_NETWORK_BACKBONE';
-
--- ----------------------------------------------
--- -- Mass Digester
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 20, NoUnhappfromXSpecialists = 2
-WHERE Type = 'BUILDING_FW_MASS_DIGESTER';
-
--- ----------------------------------------------
--- -- Undersea Mining Platform
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 8, MutuallyExclusiveGroup = 40961, Water = 1, MinAreaSize = 10, TradeRouteRecipientBonus = 1, TradeRouteTargetBonus = 1
-WHERE Type = 'BUILDING_FW_UNDERSEA_MINING';
--- ----------------------------------------------
--- -- Artificial Reef
--- ----------------------------------------------
-UPDATE Buildings
-SET GoldMaintenance = 8, MutuallyExclusiveGroup = 40961, Water = 1, MinAreaSize = 10, TechEnhancedTourism = 0
-WHERE Type = 'BUILDING_FW_SEAWATER_ARTIFICIAL_REEF';
--- ----------------------------------------------
--- -- Aquaculture Lab
--- ----------------------------------------------
-UPDATE Buildings
-SET FoodKept = 10, Water = 1, MutuallyExclusiveGroup = 40961, MinAreaSize = 1
-WHERE Type = 'BUILDING_FW_AQUACULTURE_LAB';
+SET NukeImmune = 1, NeverCapture = 1, GlobalPopulationChange = 1
+WHERE Type = 'BUILDING_FW_GENOME_PROJECT_2';
+-------------------------------------------------------------------------------
+--========================================================================================================================================================
 
 
------------------------------------------------
-
+--- ======================================================================================
 INSERT INTO Building_TerrainYieldChanges
 	(BuildingType, 							 TerrainType, 		YieldType, 			Yield)
 VALUES
@@ -794,72 +827,72 @@ VALUES
 -- Yield Changes
 ----------------------------------------------
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
-('BUILDING_FW_BIOFUEL_REFINERY_MAIZE',  'YIELD_FOOD', 	-4),
-('BUILDING_FW_BIOFUEL_REFINERY_RICE',  	'YIELD_FOOD', 	-4),
-('BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'YIELD_FOOD', 	-4),
-('BUILDING_FW_BIOFUEL_REFINERY',  	    'YIELD_FOOD', 	-4),
-('BUILDING_FW_BIOFLESH_INDUSTRY',  	    'YIELD_FOOD', 	-6),
-('BUILDING_FW_CLONE_LAB',  			'YIELD_PRODUCTION', 2),
-('BUILDING_FW_BIOFLESH_INDUSTRY',	'YIELD_SCIENCE', 	4),
-('BUILDING_FW_NANOFORGE',  			'YIELD_SCIENCE', 	1),
-('BUILDING_FW_NANOMAT_PLANT',  		'YIELD_PRODUCTION', 2),
+('BUILDING_FW_BIOFUEL_REFINERY_MAIZE',  'YIELD_FOOD', 	   -4),
+('BUILDING_FW_BIOFUEL_REFINERY_RICE',  	'YIELD_FOOD', 	   -4),
+('BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'YIELD_FOOD', 	   -4),
+('BUILDING_FW_BIOFUEL_REFINERY',  	    'YIELD_FOOD',      -4),
+('BUILDING_FW_BIOFLESH_INDUSTRY',  	    'YIELD_FOOD',      -6),
+('BUILDING_FW_AQUACULTURE_LAB',  	    'YIELD_CULTURE',    2),
+('BUILDING_FW_CLONE_LAB',  			    'YIELD_SCIENCE',    3),
+('BUILDING_FW_NANOFORGE',  			    'YIELD_SCIENCE',    1),
+('BUILDING_FW_BIOFLESH_INDUSTRY',       'YIELD_SCIENCE',    4),
+('BUILDING_FW_NANOMAT_PLANT',  		    'YIELD_SCIENCE',    4),
+('BUILDING_FW_NANOMAT_PLANT',  		    'YIELD_PRODUCTION', 4),
+('BUILDING_FW_TERRAFORMING_STATION',    'YIELD_SCIENCE',    2),
+('BUILDING_FW_TERRAFORMING_STATION',    'YIELD_PRODUCTION', 2),
+('BUILDING_FW_AI_NETWORK',  		    'YIELD_SCIENCE', 	5),
+('BUILDING_FW_CENTRAL_COMMAND',  	    'YIELD_GOLD', 		2),
+('BUILDING_FW_CENTRAL_COMMAND',  	    'YIELD_CULTURE', 	2),
 
-('BUILDING_FW_TERRAFORMING_STATION','YIELD_TOURISM', 				4),
-('BUILDING_FW_TERRAFORMING_STATION','YIELD_GOLDEN_AGE_POINTS', 		4),
-('BUILDING_FW_AI_NETWORK',  		'YIELD_GREAT_GENERAL_POINTS', 	2),
-('BUILDING_FW_AI_NETWORK',  		'YIELD_GREAT_ADMIRAL_POINTS', 	2),
-('BUILDING_FW_CENTRAL_COMMAND',  	'YIELD_SCIENCE', 				6),
-('BUILDING_FW_CENTRAL_COMMAND',  	'YIELD_FOOD', 					3),
+('BUILDING_FW_SERVER_HUB',  		    'YIELD_CULTURE', 	2),
+('BUILDING_FW_SERVER_HUB',  		    'YIELD_SCIENCE', 	2),
+('BUILDING_FW_SERVER_HUB',  		    'YIELD_GOLD', 		2),
+('BUILDING_FW_SERVER_HUB',  		    'YIELD_PRODUCTION', 2),
+('BUILDING_FW_SERVER_HUB',  		    'YIELD_FAITH', 		2),
 
-('BUILDING_FW_SERVER_HUB',  		'YIELD_CULTURE', 	2),
-('BUILDING_FW_SERVER_HUB',  		'YIELD_SCIENCE', 	2),
-('BUILDING_FW_SERVER_HUB',  		'YIELD_GOLD', 		2),
-('BUILDING_FW_SERVER_HUB',  		'YIELD_PRODUCTION', 2),
-('BUILDING_FW_SERVER_HUB',  		'YIELD_FAITH', 		2),
+('BUILDING_FW_ENTERTAINMENT_SERVER',    'YIELD_CULTURE', 	2),
+('BUILDING_FW_ENTERTAINMENT_SERVER',    'YIELD_TOURISM', 	2),
+('BUILDING_FW_RESEARCH_SERVER',  	    'YIELD_SCIENCE', 	4),
+('BUILDING_FW_COMMERCE_SERVER',  	    'YIELD_GOLD', 		2),
+('BUILDING_FW_CLOUD_COMPUTING',  	    'YIELD_PRODUCTION', 4),
 
-('BUILDING_FW_ENTERTAINMENT_SERVER','YIELD_CULTURE', 	2),
-('BUILDING_FW_ENTERTAINMENT_SERVER','YIELD_TOURISM', 	2),
-('BUILDING_FW_RESEARCH_SERVER',  	'YIELD_SCIENCE', 	3),
-('BUILDING_FW_COMMERCE_SERVER',  	'YIELD_GOLD', 		2),
-('BUILDING_FW_CLOUD_COMPUTING',  	'YIELD_PRODUCTION', 3),
+('BUILDING_FW_VR_TRAINING',  		    'YIELD_SCIENCE', 	1),
+('BUILDING_FW_GENE_LAB',  			    'YIELD_FOOD', 		3),
+('BUILDING_FW_AUTOPLANT',  			    'YIELD_PRODUCTION', 3),
+('BUILDING_FW_CRYPTOBANK',  		    'YIELD_GOLD', 		5),
+('BUILDING_FW_RESEARCH_MODULE',  	    'YIELD_SCIENCE', 	5),
+('BUILDING_FW_ENGINEERING_MODULE',      'YIELD_PRODUCTION',	4),
+('BUILDING_FW_VERTICAL_FARM',  		    'YIELD_FOOD', 		6),
+('BUILDING_FW_BOREHOLE',  			    'YIELD_PRODUCTION', 6),
+('BUILDING_FW_ECOSANCTUARY',  		    'YIELD_PRODUCTION', 3),
+('BUILDING_FW_NETWORK_BACKBONE',      	'YIELD_PRODUCTION', 2),
+('BUILDING_FW_NETWORK_BACKBONE',      	'YIELD_SCIENCE', 	2),
+('BUILDING_FW_NETWORK_BACKBONE',  	    'YIELD_CULTURE', 	2),
+('BUILDING_FW_MASS_DIGESTER',  		    'YIELD_FOOD', 		2),
+('BUILDING_FW_BIOFACTORY',  		    'YIELD_FOOD', 		5),
+('BUILDING_FW_GEOTHERMAL_FACTORY',      'YIELD_PRODUCTION', 3),
+('BUILDING_FW_HYDROTHERMAL_FACTORY',    'YIELD_FOOD', 		3),
+('BUILDING_FW_HYDROTHERMAL_FACTORY',    'YIELD_SCIENCE', 	2),
+('BUILDING_FW_PARTICLE_ACCELERATOR',    'YIELD_SCIENCE', 	3),
+('BUILDING_FW_SIMULATION_HUB',  	    'YIELD_SCIENCE', 	5),
 
-('BUILDING_FW_VR_TRAINING',  		'YIELD_SCIENCE', 	1),
-('BUILDING_FW_GENE_LAB',  			'YIELD_FOOD', 		3),
-('BUILDING_FW_AUTOPLANT',  			'YIELD_PRODUCTION', 3),
-('BUILDING_FW_CRYPTOBANK',  		'YIELD_GOLD', 		5),
-('BUILDING_FW_RESEARCH_MODULE',  	'YIELD_SCIENCE', 	5),
-('BUILDING_FW_ENGINEERING_MODULE',  'YIELD_PRODUCTION',	4),
-('BUILDING_FW_VERTICAL_FARM',  		'YIELD_FOOD', 		6),
-('BUILDING_FW_BOREHOLE',  			'YIELD_PRODUCTION', 6),
-('BUILDING_FW_ECOSANCTUARY',  		'YIELD_PRODUCTION', 3),
-('BUILDING_FW_NETWORK_BACKBONE',  	'YIELD_PRODUCTION', 2),
-('BUILDING_FW_NETWORK_BACKBONE',  	'YIELD_SCIENCE', 	2),
-('BUILDING_FW_NETWORK_BACKBONE',  	'YIELD_CULTURE', 	2),
-('BUILDING_FW_MASS_DIGESTER',  		'YIELD_FOOD', 		2),
-('BUILDING_FW_BIOFACTORY',  		'YIELD_FOOD', 		5),
-('BUILDING_FW_GEOTHERMAL_FACTORY',  'YIELD_PRODUCTION', 4),
-('BUILDING_FW_HYDROTHERMAL_FACTORY','YIELD_FOOD', 		3),
-('BUILDING_FW_HYDROTHERMAL_FACTORY','YIELD_SCIENCE', 	2),
-('BUILDING_FW_PARTICLE_ACCELERATOR','YIELD_SCIENCE', 	3),
-('BUILDING_FW_SIMULATION_HUB',  	'YIELD_SCIENCE', 	5),
-('BUILDING_FW_TELEPRESENCE_HUB',  	'YIELD_PRODUCTION', 2),
-('BUILDING_FW_TELEPRESENCE_HUB',  	'YIELD_SCIENCE', 	2),
-('BUILDING_FW_TELEPRESENCE_HUB',  	'YIELD_CULTURE', 	2),
-('BUILDING_FW_TRANSGENIC_NURSERY',  'YIELD_SCIENCE', 	5),
-('BUILDING_FW_DRONE_HIVE',  		'YIELD_PRODUCTION', 4),
-('BUILDING_FW_UTILITY_FOG',  		'YIELD_PRODUCTION', 6),
-('BUILDING_FW_FEEDSITE_HUB',  		'YIELD_CULTURE', 	6),
-('BUILDING_FW_FEEDSITE_HUB',  		'YIELD_TOURISM', 	6),
-('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'YIELD_TOURISM', 	6),
-('BUILDING_FW_AQUACULTURE_LAB',  	'YIELD_CULTURE', 	2),
-('BUILDING_FW_DISTRIBUTION_HUB',  	'YIELD_PRODUCTION', 5),
-('BUILDING_FW_METROPLEX_HUB',  		'YIELD_GOLD', 		6),
-('BUILDING_FW_CYBERCLINIC',  		'YIELD_SCIENCE', 	5),
-('BUILDING_FW_FUNGAL_AGRIGENOMICS', 'YIELD_SCIENCE', 	2),
-('BUILDING_FW_FUNGAL_AGRIGENOMICS', 'YIELD_CULTURE', 	2),
-('BUILDING_FW_FUSION_PLANT',  		'YIELD_PRODUCTION', 20),
-('BUILDING_FW_SPACE_STATION', 		'YIELD_PRODUCTION', 4),
-('BUILDING_FW_SPACE_STATION', 		'YIELD_SCIENCE', 	5);
+('BUILDING_FW_TELEPRESENCE_HUB',    	'YIELD_PRODUCTION', 2),
+('BUILDING_FW_TELEPRESENCE_HUB',  	    'YIELD_SCIENCE', 	2),
+('BUILDING_FW_TELEPRESENCE_HUB',  	    'YIELD_CULTURE', 	2),
+('BUILDING_FW_TRANSGENIC_NURSERY',      'YIELD_SCIENCE', 	8),
+('BUILDING_FW_DRONE_HIVE',  		    'YIELD_PRODUCTION', 4),
+('BUILDING_FW_UTILITY_FOG',  		    'YIELD_PRODUCTION', 6),
+('BUILDING_FW_FEEDSITE_HUB',  		    'YIELD_CULTURE', 	6),
+('BUILDING_FW_FEEDSITE_HUB',  		    'YIELD_TOURISM', 	6),
+('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF','YIELD_TOURISM', 	6),
+('BUILDING_FW_DISTRIBUTION_HUB',  	    'YIELD_PRODUCTION', 5),
+('BUILDING_FW_METROPLEX_HUB',  		    'YIELD_GOLD', 		6),
+('BUILDING_FW_CYBERCLINIC',  		    'YIELD_SCIENCE', 	5),
+('BUILDING_FW_FUNGAL_AGRIGENOMICS',     'YIELD_SCIENCE', 	4),
+('BUILDING_FW_FUNGAL_AGRIGENOMICS',     'YIELD_CULTURE', 	4),
+('BUILDING_FW_FUSION_PLANT',  		    'YIELD_PRODUCTION', 20),
+('BUILDING_FW_SPACE_STATION', 		    'YIELD_PRODUCTION', 4),
+('BUILDING_FW_SPACE_STATION', 		    'YIELD_SCIENCE', 	5);
 
 INSERT INTO Building_ClassesNeededInCity
 	(BuildingType, BuildingClassType)
@@ -868,9 +901,9 @@ VALUES
 	('BUILDING_FW_NANOFORGE',	            'BUILDINGCLASS_FW_NANOMAT_PLANT'),
 	('BUILDING_FW_NANOMAT_PLANT',	        'BUILDINGCLASS_LABORATORY'),
 	('BUILDING_FW_GENE_LAB', 	            'BUILDINGCLASS_LABORATORY'),
-	('BUILDING_FW_CLONE_LAB', 	            'BUILDINGCLASS_FW_GENE_LAB'),
+	('BUILDING_FW_FUNGAL_AGRIGENOMICS', 	'BUILDINGCLASS_LABORATORY'),
 	('BUILDING_FW_BIOFLESH_INDUSTRY', 	    'BUILDINGCLASS_FW_GENE_LAB'),
-	('BUILDING_FW_FUNGAL_AGRIGENOMICS', 	'BUILDINGCLASS_FW_GENE_LAB'),
+	('BUILDING_FW_CLONE_LAB', 	            'BUILDINGCLASS_FW_GENE_LAB'),
 	('BUILDING_FW_GENEJACK_FACILITY', 		'BUILDINGCLASS_FW_FUNGAL_AGRIGENOMICS'),
 	('BUILDING_FW_MASS_DIGESTER', 			'BUILDINGCLASS_FW_GENEJACK_FACILITY'),
 	('BUILDING_FW_PHOTOSYSTEMS', 			'BUILDINGCLASS_FW_GENEJACK_FACILITY'),
@@ -891,7 +924,8 @@ VALUES
 	('BUILDING_FW_CONVERTER_IRON', 			'BUILDINGCLASS_FW_NANOMAT_PLANT'),
 	('BUILDING_FW_VIRTUAL_MUSEUM', 			'BUILDINGCLASS_MUSEUM'),
 	('BUILDING_FW_VIRTUAL_MUSEUM',	 		'BUILDINGCLASS_FW_SERVER_HUB'),
-	('BUILDING_FW_CYBERPOLICE', 			'BUILDINGCLASS_POLICE_STATION'),	
+	('BUILDING_FW_CYBERPOLICE', 			'BUILDINGCLASS_POLICE_STATION'),
+	('BUILDING_FW_CYBERPOLICE',	 		    'BUILDINGCLASS_FW_SERVER_HUB'),
 	('BUILDING_FW_DIGITAL_POLICE', 			'BUILDINGCLASS_FW_CYBERPOLICE'),	
 	('BUILDING_FW_VR_TRAINING', 			'BUILDINGCLASS_MILITARY_ACADEMY'),
 	('BUILDING_FW_VR_TRAINING', 			'BUILDINGCLASS_FW_SERVER_HUB'),
@@ -904,10 +938,11 @@ VALUES
 	('BUILDING_FW_CLOUD_COMPUTING', 		'BUILDINGCLASS_FW_SERVER_HUB'),
 	('BUILDING_FW_CLOUD_COMPUTING', 		'BUILDINGCLASS_FACTORY'),
 	('BUILDING_FW_VERTICAL_FARM', 			'BUILDINGCLASS_GROCER'),
+	('BUILDING_FW_ECOSANCTUARY', 			'BUILDINGCLASS_GROCER'),
 	('BUILDING_FW_NETWORK_BACKBONE', 		'BUILDINGCLASS_FW_SERVER_HUB'),
 	('BUILDING_FW_UNDERSEA_MINING', 		'BUILDINGCLASS_HARBOR'),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'BUILDINGCLASS_HARBOR'),
 	('BUILDING_FW_AQUACULTURE_LAB', 		'BUILDINGCLASS_HARBOR'),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF','BUILDINGCLASS_HARBOR'),
 	('BUILDING_FW_BIOFACTORY', 				'BUILDINGCLASS_FACTORY'),
 	('BUILDING_FW_GEOTHERMAL_FACTORY', 		'BUILDINGCLASS_FACTORY'),
 	('BUILDING_FW_HYDROTHERMAL_FACTORY', 	'BUILDINGCLASS_FACTORY'),
@@ -925,6 +960,7 @@ VALUES
 	('BUILDING_FW_BIRTHING_PODS', 			'BUILDINGCLASS_FW_GENE_LAB'),
 	('BUILDING_FW_AUTOPLANT', 				'BUILDINGCLASS_FACTORY'),
 	('BUILDING_FW_CRYPTOBANK', 				'BUILDINGCLASS_STOCK_EXCHANGE'),
+	('BUILDING_FW_CRYPTOBANK', 				'BUILDINGCLASS_FW_SERVER_HUB'),
 	('BUILDING_FW_ALLOY_FOUNDRY', 			'BUILDINGCLASS_FW_FUSION_PLANT'),
 	('BUILDING_FW_TIDAL_PORT', 				'BUILDINGCLASS_SEAPORT'),
 	('BUILDING_FW_HIGHSPEED_RAIL', 			'BUILDINGCLASS_COALING_STATION'),	
@@ -987,13 +1023,13 @@ VALUES
 	('BUILDING_FW_FUSION_PLANT',	'SPECIALIST_CIVIL_SERVANT',	'YIELD_SCIENCE',	1),
 	('BUILDING_FW_FUSION_PLANT',	'SPECIALIST_CIVIL_SERVANT',	'YIELD_GOLD',		1),
 	('BUILDING_FW_FUSION_PLANT',	'SPECIALIST_CIVIL_SERVANT',	'YIELD_CULTURE',	1),
-	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_SCIENTIST', 	'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_ENGINEER', 		'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_MERCHANT', 		'YIELD_GOLD', 		2),
+	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_SCIENTIST', 	'YIELD_SCIENCE', 	1),
+	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_ENGINEER', 		'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_MERCHANT', 		'YIELD_GOLD', 		1),
 	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_MUSICIAN', 		'YIELD_CULTURE', 	1),
 	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_ARTIST', 		'YIELD_CULTURE', 	1),
 	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_WRITER', 		'YIELD_CULTURE', 	1),
-	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_CIVIL_SERVANT',	'YIELD_CULTURE',	2),
+	('BUILDING_FW_BIRTHING_PODS', 	'SPECIALIST_CIVIL_SERVANT',	'YIELD_CULTURE',	1),
 	('BUILDING_FW_BRAIN_UPLOADING',	'SPECIALIST_ENGINEER',		'YIELD_PRODUCTION',	1),
 	('BUILDING_FW_BRAIN_UPLOADING',	'SPECIALIST_ENGINEER',		'YIELD_SCIENCE',	1),
 	('BUILDING_FW_BRAIN_UPLOADING',	'SPECIALIST_ENGINEER',		'YIELD_GOLD',		1),
@@ -1024,31 +1060,24 @@ VALUES
 	('BUILDING_FW_BRAIN_UPLOADING',	'SPECIALIST_CIVIL_SERVANT',	'YIELD_CULTURE',	1);
 
 INSERT INTO Building_SpecificGreatPersonRateModifier (BuildingType, SpecialistType, Modifier) VALUES
-('BUILDING_FW_RESEARCH_SERVER', 	 'SPECIALIST_SCIENTIST', 10),
-('BUILDING_FW_COMMERCE_SERVER', 	 'SPECIALIST_MERCHANT',  10),
-('BUILDING_FW_CLOUD_COMPUTING', 	 'SPECIALIST_ENGINEER',  10),
-('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_ARTIST', 	 5),
-('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_WRITER', 	 5),
-('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_MUSICIAN',  5),
-('BUILDING_FW_VIRTUAL_MUSEUM', 		 'SPECIALIST_ARTIST', 	 15),
-('BUILDING_FW_CYBERCLINIC', 		 'SPECIALIST_SCIENTIST', 25);
+('BUILDING_FW_RESEARCH_SERVER',      'SPECIALIST_SCIENTIST',    15),
+('BUILDING_FW_COMMERCE_SERVER',      'SPECIALIST_MERCHANT',     15),
+('BUILDING_FW_CLOUD_COMPUTING',      'SPECIALIST_ENGINEER',     15),
+('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_ARTIST',       15),
+('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_WRITER',       15),
+('BUILDING_FW_ENTERTAINMENT_SERVER', 'SPECIALIST_MUSICIAN',     15),
+('BUILDING_FW_VIRTUAL_MUSEUM',       'SPECIALIST_ARTIST',       15),
+('BUILDING_FW_CYBERCLINIC',          'SPECIALIST_SCIENTIST',    25);
+
 
 INSERT INTO Corporation_BuildingClassYieldChanges (CorporationType, BuildingClassType, YieldType, YieldChange) VALUES
-('CORPORATION_CIVILIZED_JEWELERS', 'BUILDINGCLASS_FW_SEAWATER_ARTIFICIAL_REEF', 'YIELD_GOLDEN_AGE_POINTS', 	4),
+('CORPORATION_TRADER_SIDS',        'BUILDINGCLASS_FW_CRYPTOBANK', 			    'YIELD_GOLD', 			    3),
+('CORPORATION_LANDSEA_EXTRACTORS', 'BUILDINGCLASS_FW_UNDERSEA_MINING', 			'YIELD_PRODUCTION', 		2),
+('CORPORATION_HEXXON_REFINERY',    'BUILDINGCLASS_FW_NANOMAT_PLANT', 			'YIELD_PRODUCTION', 		3),
 ('CORPORATION_GIORGIO_ARMEIER',    'BUILDINGCLASS_FW_VIRTUAL_MUSEUM', 			'YIELD_CULTURE', 			2),
 ('CORPORATION_FIRAXITE_MATERIALS', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 	'YIELD_SCIENCE', 			3),
-('CORPORATION_LANDSEA_EXTRACTORS', 'BUILDINGCLASS_FW_UNDERSEA_MINING', 			'YIELD_PRODUCTION', 		2),
-('CORPORATION_TWOKAY_FOODS', 	   'BUILDINGCLASS_FW_AQUACULTURE_LAB', 			'YIELD_FOOD', 				3),
-('CORPORATION_TWOKAY_FOODS', 	   'BUILDINGCLASS_FW_MYCOPROTEIN_VATS', 		'YIELD_FOOD', 				3),
-('CORPORATION_HEXXON_REFINERY',    'BUILDINGCLASS_FW_FUSION_PLANT', 			'YIELD_PRODUCTION', 		3);
-
-
--- INSERT INTO Building_YieldFromBirthRetroactive
--- 	(BuildingType, YieldType, Yield)
--- SELECT
--- 	Type, 'YIELD_SCIENCE', 50
--- FROM Buildings
--- WHERE BuildingClass = 'BUILDINGCLASS_MEDICAL_LAB';
+('CORPORATION_TWOKAY_FOODS', 	   'BUILDINGCLASS_FW_AQUACULTURE_LAB', 		    'YIELD_FOOD', 				3),
+('CORPORATION_CIVILIZED_JEWELERS', 'BUILDINGCLASS_FW_SEAWATER_ARTIFICIAL_REEF', 'YIELD_GOLDEN_AGE_POINTS', 	4);
 
 --------------------------------
 -- Building_HurryModifiersLocal
@@ -1060,37 +1089,28 @@ VALUES
 	('BUILDING_FW_METROPLEX_HUB', 	'HURRY_GOLD', -15);
 
 
-INSERT INTO Building_YieldFromSpyDefense
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_FW_CYBERPOLICE', 			'YIELD_SCIENCE', 	25),
-	('BUILDING_FW_CYBERPOLICE', 			'YIELD_GOLD', 		25),
-	('BUILDING_FW_DIGITAL_POLICE', 			'YIELD_SCIENCE', 	25),
-	('BUILDING_FW_DIGITAL_POLICE', 			'YIELD_GOLD', 		25);
-	
 -- Building_YieldPerXTerrainTimes100
 INSERT INTO Building_YieldPerXTerrainTimes100
 	(BuildingType, TerrainType, YieldType, Yield)
 VALUES 
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 'TERRAIN_MOUNTAIN',	'YIELD_PRODUCTION', 200),
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 'TERRAIN_MOUNTAIN',	'YIELD_GOLD', 		200);		
+	('BUILDING_FW_GEOTHERMAL_FACTORY', 'TERRAIN_MOUNTAIN',	'YIELD_PRODUCTION', 100),
+	('BUILDING_FW_GEOTHERMAL_FACTORY', 'TERRAIN_MOUNTAIN',	'YIELD_GOLD', 		100);		
 
 INSERT INTO Building_YieldFromYieldPercent
 	(BuildingType, YieldIn, YieldOut, Value)
 VALUES
-	('BUILDING_FW_ECOSANCTUARY', 		 'YIELD_PRODUCTION', 'YIELD_CULTURE', 		10),
-	('BUILDING_FW_BIOFACTORY', 			 'YIELD_PRODUCTION', 'YIELD_FOOD', 	 		10),
-	('BUILDING_FW_BOREHOLE', 			 'YIELD_PRODUCTION', 'YIELD_GOLD',	 		10),
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 	 'YIELD_PRODUCTION', 'YIELD_GOLD',	 		5),
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 	 'YIELD_PRODUCTION', 'YIELD_PRODUCTION',	5),
-	('BUILDING_FW_HYDROTHERMAL_FACTORY', 'YIELD_PRODUCTION', 'YIELD_FOOD', 	 		5),
-	('BUILDING_FW_HYDROTHERMAL_FACTORY', 'YIELD_PRODUCTION', 'YIELD_SCIENCE', 		5),
-	('BUILDING_FW_VERTICAL_FARM', 		 'YIELD_FOOD', 		'YIELD_SCIENCE', 		5);
-
+	('BUILDING_FW_ECOSANCTUARY', 	    	'YIELD_PRODUCTION', 'YIELD_CULTURE', 	10),
+	('BUILDING_FW_BIOFACTORY', 			    'YIELD_PRODUCTION', 'YIELD_FOOD', 	 	10),
+	('BUILDING_FW_BOREHOLE', 			    'YIELD_PRODUCTION', 'YIELD_GOLD',	 	10),
+	('BUILDING_FW_GEOTHERMAL_FACTORY',   	'YIELD_PRODUCTION', 'YIELD_GOLD',	 	5),
+	('BUILDING_FW_GEOTHERMAL_FACTORY',  	'YIELD_PRODUCTION', 'YIELD_PRODUCTION',	5),
+	('BUILDING_FW_HYDROTHERMAL_FACTORY',    'YIELD_PRODUCTION', 'YIELD_FOOD', 	 	5),
+	('BUILDING_FW_HYDROTHERMAL_FACTORY',    'YIELD_PRODUCTION', 'YIELD_SCIENCE', 	5),
+	('BUILDING_FW_VERTICAL_FARM', 		    'YIELD_FOOD', 		'YIELD_SCIENCE', 	10);
 
 
 INSERT INTO Building_YieldChangesPerPop (BuildingType, YieldType, Yield) VALUES
-('BUILDING_FW_MOON_BASE', 				'YIELD_SCIENTIST', 	10),
+('BUILDING_FW_MOON_BASE', 				'YIELD_SCIENCE', 	10),
 ('BUILDING_FW_MOON_BASE', 				'YIELD_PRODUCTION', 10),
 ('BUILDING_FW_MOON_BASE', 				'YIELD_GOLD', 		10),
 ('BUILDING_FW_MYCOPROTEIN_VATS', 		'YIELD_FOOD', 		25),
@@ -1098,18 +1118,19 @@ INSERT INTO Building_YieldChangesPerPop (BuildingType, YieldType, Yield) VALUES
 ('BUILDING_FW_VIRTUAL_MUSEUM', 			'YIELD_TOURISM', 	25),
 ('BUILDING_FW_LAUNCH_FACILITY',  		'YIELD_PRODUCTION', 10),
 ('BUILDING_FW_LAUNCH_FACILITY',  		'YIELD_SCIENCE',	10),
-('BUILDING_FW_LAUNCH_FACILITY',  		'YIELD_GOLD', 		10),
+('BUILDING_FW_IMPLANT_CLINIC',  		'YIELD_CULTURE', 	10),
+('BUILDING_FW_IMPLANT_CLINIC',  		'YIELD_GOLD', 		10),
 ('BUILDING_FW_AUTOPLANT',  				'YIELD_PRODUCTION', 20), -- 1/5 pop
 ('BUILDING_FW_CRYPTOBANK',  			'YIELD_GOLD', 		20),
 ('BUILDING_FW_PARTICLE_ACCELERATOR',  	'YIELD_SCIENCE', 	20),
-('BUILDING_FW_RESEARCH_SERVER', 		'YIELD_SCIENCE',	20),
-('BUILDING_FW_ENTERTAINMENT_SERVER', 	'YIELD_CULTURE', 	20),
-('BUILDING_FW_COMMERCE_SERVER', 		'YIELD_GOLD', 		20),
-('BUILDING_FW_CLOUD_COMPUTING', 		'YIELD_PRODUCTION', 20),
+('BUILDING_FW_RESEARCH_SERVER', 		'YIELD_SCIENCE',	50),
+('BUILDING_FW_ENTERTAINMENT_SERVER', 	'YIELD_CULTURE', 	50),
+('BUILDING_FW_COMMERCE_SERVER', 		'YIELD_GOLD', 		50),
+('BUILDING_FW_CLOUD_COMPUTING', 		'YIELD_PRODUCTION', 50),
 ('BUILDING_FW_COMM_MODULE',  			'YIELD_GOLD', 		25),
 ('BUILDING_FW_RESEARCH_MODULE',  		'YIELD_SCIENCE', 	25),
 ('BUILDING_FW_ENGINEERING_MODULE',  	'YIELD_PRODUCTION', 25),
-('BUILDING_FW_MASS_DIGESTER', 			'YIELD_FOOD',		100),
+('BUILDING_FW_MASS_DIGESTER', 			'YIELD_FOOD',		50),
 ('BUILDING_FW_BRAIN_UPLOADING', 		'YIELD_GOLD', 		100),
 ('BUILDING_FW_BRAIN_UPLOADING', 		'YIELD_FAITH', 		100),
 ('BUILDING_FW_BRAIN_UPLOADING', 		'YIELD_SCIENCE', 	100),
@@ -1126,34 +1147,33 @@ VALUES
 INSERT INTO Building_FeatureYieldChanges
 	(BuildingType, FeatureType, YieldType, Yield)
 VALUES
-	('BUILDING_FW_AQUACULTURE_LAB',    	'FEATURE_OASIS', 	'YIELD_FOOD', 		1),
-	('BUILDING_FW_AQUACULTURE_LAB',    	'FEATURE_OASIS', 	'YIELD_GOLD', 		1),
-	('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_FOREST', 	'YIELD_FOOD', 		1),
-	('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_MARSH', 	'YIELD_FOOD', 		1),
-	('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_MARSH', 	'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_JUNGLE', 	'YIELD_PRODUCTION', 1);
+	('BUILDING_FW_PHOTOSYSTEMS', 		    'FEATURE_FOREST', 'YIELD_FOOD',       1),
+	('BUILDING_FW_PHOTOSYSTEMS', 		    'FEATURE_MARSH',  'YIELD_FOOD',       1),
+	('BUILDING_FW_PHOTOSYSTEMS', 		    'FEATURE_MARSH',  'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_PHOTOSYSTEMS', 		    'FEATURE_JUNGLE', 'YIELD_PRODUCTION', 1);
 
 INSERT INTO Building_ResourceQuantity
 	(BuildingType,						ResourceType,		Quantity) 
 VALUES
-	('BUILDING_FW_ENRICHMENT_FACILITY',	'RESOURCE_URANIUM',		2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_ADN_FUNGUS', 	5),
-	('BUILDING_FW_BIOFUEL_REFINERY',	    'RESOURCE_OIL',		3),
-	('BUILDING_FW_BIOFUEL_REFINERY_RICE',	'RESOURCE_OIL',		3),
-	('BUILDING_FW_BIOFUEL_REFINERY_BANANA',	'RESOURCE_OIL',		3),
-	('BUILDING_FW_BIOFUEL_REFINERY_MAIZE',	'RESOURCE_OIL',		3),
-	('BUILDING_FW_IMPLANT_CLINIC',		'RESOURCE_IMPLANT',		5),
-	('BUILDING_FW_CYBERCLINIC',			'RESOURCE_IMPLANT',		6),
-	('BUILDING_FW_NANOMAT_PLANT',		'RESOURCE_NANOMAT',		5),
-	('BUILDING_FW_CONVERTER',			'RESOURCE_NANOMAT',		4),
-	('BUILDING_FW_CONVERTER_OIL',		'RESOURCE_NANOMAT',		3),
-	('BUILDING_FW_CONVERTER_IRON',		'RESOURCE_NANOMAT',		3),
-	('BUILDING_FW_ALLOY_FOUNDRY',		'RESOURCE_NANOMAT',		8),
-	('BUILDING_FW_UTILITY_FOG',			'RESOURCE_NANOMAT',		3),
-	('BUILDING_FW_AI_NETWORK',			'RESOURCE_IMPLANT',		3),
-	('BUILDING_FW_CENTRAL_COMMAND',		'RESOURCE_NANOMAT',		3),
-	('BUILDING_FW_TERRAFORMING_STATION','RESOURCE_ADN_FUNGUS',	3),
-	('BUILDING_FW_MOON_BASE',			'RESOURCE_NANOMAT',		7);
+	('BUILDING_FW_CLONE_LAB',	            'RESOURCE_HORSE',		2),
+	('BUILDING_FW_ENRICHMENT_FACILITY',	    'RESOURCE_URANIUM',		2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY',   	'RESOURCE_ADN_FUNGUS', 	4),
+	('BUILDING_FW_BIOCONVERTER_ADNF',   	'RESOURCE_ADN_FUNGUS', 	5),
+	('BUILDING_FW_BIOCONVERTER_NANO',   	'RESOURCE_NANOMAT', 	4),
+	('BUILDING_FW_BIOCONVERTER_NANO2',   	'RESOURCE_NANOMAT', 	2),
+	('BUILDING_FW_ANTIMATTER_RESEARCH',   	'RESOURCE_NANOMAT', 	2),
+	('BUILDING_FW_BIOFUEL_REFINERY',	    'RESOURCE_OIL',		    4),
+	('BUILDING_FW_BIOFUEL_REFINERY_RICE',	'RESOURCE_OIL',	    	4),
+	('BUILDING_FW_BIOFUEL_REFINERY_BANANA',	'RESOURCE_OIL',	     	4),
+	('BUILDING_FW_BIOFUEL_REFINERY_MAIZE',	'RESOURCE_OIL',		    4),
+	('BUILDING_FW_NANOMAT_PLANT',		    'RESOURCE_NANOMAT',		5),
+	('BUILDING_FW_CONVERTER',			    'RESOURCE_NANOMAT',		4),
+	('BUILDING_FW_CONVERTER_OIL',		    'RESOURCE_NANOMAT',		4),
+	('BUILDING_FW_CONVERTER_IRON',		    'RESOURCE_NANOMAT',		4),
+	('BUILDING_FW_ALLOY_FOUNDRY',		    'RESOURCE_NANOMAT',		8),
+	('BUILDING_FW_UTILITY_FOG',			    'RESOURCE_NANOMAT',		3),
+	('BUILDING_FW_CENTRAL_COMMAND',		    'RESOURCE_NANOMAT',		2),
+	('BUILDING_FW_MOON_BASE',			    'RESOURCE_NANOMAT',		7);
 
 INSERT INTO Building_GrowthExtraYield
 	(BuildingType, YieldType, Yield)
@@ -1165,130 +1185,358 @@ INSERT INTO Building_FreeUnits
 VALUES	
 	('BUILDING_FW_CLONE_LAB', 			'UNIT_FW_CLONETROOPER',		1);
 
+
+
 INSERT INTO Building_ImprovementYieldChanges
 	(BuildingType, 						ImprovementType, 						YieldType, 		Yield)
 VALUES
-	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_ARCOLOGY',   			'YIELD_FOOD', 		2),
-	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_ARCOLOGY',   			'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	'YIELD_FOOD', 		2),
-	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_GENOCENTRE',   		'YIELD_CULTURE', 	2),
-	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_GENOCENTRE',   		'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_WATER_GENOCENTRE',   	'YIELD_CULTURE', 	2),
-	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_WATER_GENOCENTRE',   	'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_AUTOPLANT', 			 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',   'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_AUTOPLANT', 			 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',   'YIELD_GOLD', 		1),
-	('BUILDING_FW_CRYPTOBANK', 			 'IMPROVEMENT_CUSTOMS_HOUSE',   		'YIELD_GOLD', 		1),
-	('BUILDING_FW_CRYPTOBANK', 			 'IMPROVEMENT_TRADING_POST',   			'YIELD_GOLD', 		1),
-	('BUILDING_FW_PARTICLE_ACCELERATOR', 'IMPROVEMENT_FW_HERC', 				'YIELD_SCIENCE', 	1),
-	('BUILDING_FW_PARTICLE_ACCELERATOR', 'IMPROVEMENT_FW_HERC', 				'YIELD_GOLD', 		1),
-	('BUILDING_FW_BOREHOLE', 			 'IMPROVEMENT_MINE', 					'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_BOREHOLE', 			 'IMPROVEMENT_QUARRY', 					'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_BOREHOLE', 			 'IMPROVEMENT_WELL', 					'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_FARM', 					'YIELD_FOOD', 		1),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_FW_HYDROPONICS_DOME', 	'YIELD_FOOD', 		1),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_FW_WATER_HYDROPONICS_DOME', 'YIELD_FOOD', 	1),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_TERRACE_FARM', 			'YIELD_FOOD', 		1),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_PLANTATION', 				'YIELD_FOOD', 		1),
-	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_POLDER', 					'YIELD_FOOD', 		1),
-	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_FW_PRESERVE', 			'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_FW_BIOWELL', 				'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_BRAZILWOOD_CAMP', 		'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_LUMBERMILL', 				'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_CAMP', 					'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX', 	'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX', 	'YIELD_GOLD', 		1),
-	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_MANUFACTORY', 			'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_MANUFACTORY', 			'YIELD_GOLD', 		1),
-	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_FW_HERC', 				'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_FW_HERC', 				'YIELD_GOLD', 		1),
-	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_ACADEMY', 				'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_ACADEMY', 				'YIELD_GOLD', 		1),
-	('BUILDING_FW_METROPLEX_HUB', 		 'IMPROVEMENT_TRADING_POST', 			'YIELD_GOLD', 		3),
-	('BUILDING_FW_METROPLEX_HUB', 		 'IMPROVEMENT_CUSTOMS_HOUSE', 			'YIELD_GOLD', 		3),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_FUNGAL_GROWTH', 		'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_FUNGAL_GROWTH', 		'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_CORE', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_CORE', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_WATER_CORE', 			'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_WATER_CORE', 			'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_VAULT', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_VAULT', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FORT', 					'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FORT', 					'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FEITORIA', 				'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FEITORIA', 				'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_KASBAH', 					'YIELD_GOLD', 			2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_KASBAH', 					'YIELD_CULTURE_LOCAL', 	2),
-	('BUILDING_FW_TRANSGENIC_NURSERY', 	 'IMPROVEMENT_FW_BIOWELL', 				'YIELD_FOOD', 		1),
-	('BUILDING_FW_TRANSGENIC_NURSERY', 	 'IMPROVEMENT_FW_BIOWELL', 				'YIELD_SCIENCE', 	1),
-	('BUILDING_FW_AEROSPACE_COMPLEX', 	 'IMPROVEMENT_FW_HYDROPONICS_DOME', 		'YIELD_CULTURE', 1),
-	('BUILDING_FW_AEROSPACE_COMPLEX', 	 'IMPROVEMENT_FW_WATER_HYDROPONICS_DOME', 	'YIELD_CULTURE', 1),
+	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_ARCOLOGY',   			    'YIELD_GOLD', 		2),
+	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_ARCOLOGY',   			    'YIELD_CULTURE', 	2),
+	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	    'YIELD_GOLD', 		2),
+	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	    'YIELD_CULTURE', 	2),
+	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_GENOCENTRE',   		    'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_GENOCENTRE',   		    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_WATER_GENOCENTRE',      	'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_TERRAFORMING_STATION', 'IMPROVEMENT_FW_WATER_GENOCENTRE',   	    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AUTOPLANT', 			 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',       'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_AUTOPLANT', 			 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',       'YIELD_GOLD', 		1),
+	('BUILDING_FW_CRYPTOBANK', 			 'IMPROVEMENT_CUSTOMS_HOUSE',   		    'YIELD_GOLD', 		1),
+	('BUILDING_FW_CRYPTOBANK', 			 'IMPROVEMENT_TRADING_POST',   			    'YIELD_GOLD', 		1),
+	('BUILDING_FW_PARTICLE_ACCELERATOR', 'IMPROVEMENT_FW_HERC', 				    'YIELD_SCIENCE', 	1),
+	('BUILDING_FW_PARTICLE_ACCELERATOR', 'IMPROVEMENT_FW_HERC', 				    'YIELD_GOLD', 		1),
+	('BUILDING_FW_BOREHOLE', 			 'IMPROVEMENT_MINE', 					    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_BOREHOLE', 			 'IMPROVEMENT_QUARRY', 					    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_FARM', 					    'YIELD_FOOD', 		1),
+	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_FW_HYDROPONICS_DOME', 	    'YIELD_FOOD', 		1),
+	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_TERRACE_FARM', 			    'YIELD_FOOD', 		1),
+	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_PLANTATION', 				    'YIELD_FOOD', 		1),
+	('BUILDING_FW_VERTICAL_FARM', 		 'IMPROVEMENT_POLDER', 					    'YIELD_FOOD', 		1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_FW_PRESERVE', 			    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_FW_BIOWELL', 				    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_BRAZILWOOD_CAMP', 		    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_LUMBERMILL', 				    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_LUMBERMILL_JUNGLE', 		    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ECOSANCTUARY', 		 'IMPROVEMENT_CAMP', 					    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX', 	    'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX', 	    'YIELD_GOLD', 		1),
+	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_MANUFACTORY', 			    'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_DISTRIBUTION_HUB', 	 'IMPROVEMENT_MANUFACTORY', 			    'YIELD_GOLD', 		1),
+	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_FW_HERC', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_FW_HERC', 				    'YIELD_GOLD', 		1),
+	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_ACADEMY', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_SIMULATION_HUB', 	 	 'IMPROVEMENT_ACADEMY', 				    'YIELD_GOLD', 		1),
+	('BUILDING_FW_METROPLEX_HUB', 		 'IMPROVEMENT_TRADING_POST', 			    'YIELD_GOLD', 		3),
+	('BUILDING_FW_METROPLEX_HUB', 		 'IMPROVEMENT_CUSTOMS_HOUSE', 			    'YIELD_GOLD', 		3),
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_MOAI',                        'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_KUNA',                        'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_KASBAH',                      'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_ENCAMPMENT_SHOSHONE',         'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_FEITORIA',                    'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_SPAIN_HACIENDA',              'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_SIHEYUAN',                    'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_OTTOMAN_TERSANE',             'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',  'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_INDONESIA_KAMPONG',           'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_MONGOLIA_ORDO',               'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_ZULU_KRAAL',                  'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_TRADING_POST',                'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_GENERATOR',                   'YIELD_GOLD',       1), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_GENERATOR_WATER',             'YIELD_GOLD',       1), 
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_CORE', 				    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_CORE', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_WATER_CORE', 			    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FW_WATER_CORE', 			    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FORT', 					    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FORT', 					    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 			    	'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FEITORIA', 				    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FEITORIA', 				    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_KASBAH', 					    'YIELD_GOLD', 		2),
+	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_KASBAH', 					    'YIELD_SCIENCE', 	2),
+	('BUILDING_FW_TRANSGENIC_NURSERY', 	 'IMPROVEMENT_FW_BIOWELL', 				    'YIELD_FOOD', 		1),
+	('BUILDING_FW_TRANSGENIC_NURSERY', 	 'IMPROVEMENT_FW_BIOWELL', 				    'YIELD_SCIENCE', 	1),
+	('BUILDING_FW_AEROSPACE_COMPLEX', 	 'IMPROVEMENT_FW_HYDROPONICS_DOME', 		'YIELD_CULTURE',    1),
 	('BUILDING_FW_AEROSPACE_COMPLEX',    'IMPROVEMENT_FW_HYDROPONICS_DOME', 		'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_AEROSPACE_COMPLEX', 	 'IMPROVEMENT_FW_WATER_HYDROPONICS_DOME', 	'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR', 			'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR', 			'YIELD_GOLD', 		1);
+	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR_WATER',  	    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR_WATER',		    'YIELD_GOLD', 		1),
+	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR', 			    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_DRONE_HIVE', 		 	 'IMPROVEMENT_FW_GENERATOR', 			    'YIELD_GOLD', 		1);
+
 
 INSERT INTO Building_BuildingClassYieldChanges
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 VALUES
-	-- ('BUILDING_FW_VERTICAL_FARM', 'BUILDINGCLASS_FW_VERTICAL_FARM', 'YIELD_SCIENCE', 2),
-	('BUILDING_FW_BIOFACTORY', 'BUILDINGCLASS_FW_BIOFACTORY', 'YIELD_FOOD', 2),
-	('BUILDING_FW_AUTOPLANT', 'BUILDINGCLASS_FW_AUTOPLANT', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_PARTICLE_ACCELERATOR', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_ECOSANCTUARY', 'BUILDINGCLASS_FW_ECOSANCTUARY', 'YIELD_CULTURE', 2),
-	('BUILDING_FW_BOREHOLE', 	'BUILDINGCLASS_FW_BOREHOLE', 'YIELD_GOLD', 2),
-	('BUILDING_FW_CRYPTOBANK', 'BUILDINGCLASS_FW_CRYPTOBANK', 'YIELD_GOLD', 1),
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY', 'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_HYDROTHERMAL_FACTORY', 'BUILDINGCLASS_FW_HYDROTHERMAL_FACTORY', 'YIELD_SCIENCE', 2),
+	('BUILDING_FW_GENE_LAB',             'BUILDINGCLASS_FW_GENE_LAB',             'YIELD_FOOD',       1),
+	('BUILDING_FW_AUTOPLANT',            'BUILDINGCLASS_FW_AUTOPLANT',            'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_PARTICLE_ACCELERATOR', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 'YIELD_SCIENCE',    1),
+	('BUILDING_FW_CRYPTOBANK',           'BUILDINGCLASS_FW_CRYPTOBANK',           'YIELD_GOLD',       1),
+	('BUILDING_FW_VIRTUAL_MUSEUM',       'BUILDINGCLASS_VIRTUAL_MUSEUM',          'YIELD_CULTURE',    1),
 
-	('BUILDING_FW_NETWORK_BACKBONE', 'BUILDINGCLASS_FW_RESEARCH_SERVER', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_NETWORK_BACKBONE', 'BUILDINGCLASS_FW_ENTERTAINMENT_SERVER', 'YIELD_CULTURE', 1),
-	('BUILDING_FW_NETWORK_BACKBONE', 'BUILDINGCLASS_FW_COMMERCE_SERVER', 'YIELD_GOLD', 1),
-	('BUILDING_FW_NETWORK_BACKBONE', 'BUILDINGCLASS_FW_CLOUD_COMPUTING', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_CYBERCLINIC', 'BUILDINGCLASS_HOSPITAL', 'YIELD_SCIENCE', 3),
-	('BUILDING_FW_CYBERCLINIC', 'BUILDINGCLASS_FW_CLONE_LAB', 'YIELD_SCIENCE', 3),
-	('BUILDING_FW_ORBITAL_HABITAT', 'BUILDINGCLASS_FW_ENGINEERING_MODULE', 'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_ORBITAL_HABITAT', 'BUILDINGCLASS_FW_RESEARCH_MODULE', 'YIELD_SCIENCE', 2),
-	('BUILDING_FW_ORBITAL_HABITAT', 'BUILDINGCLASS_FW_COMM_MODULE', 'YIELD_GOLD', 2),
-	('BUILDING_FW_SPACE_STATION', 'BUILDINGCLASS_FW_ORBITAL_HABITAT', 'YIELD_FOOD', 2),
-	('BUILDING_FW_MOON_BASE', 'BUILDINGCLASS_FW_FUSION_PLANT', 'YIELD_PRODUCTION', 5),
-	('BUILDING_FW_MOON_BASE', 'BUILDINGCLASS_FW_SPACE_STATION', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_MOON_BASE', 'BUILDINGCLASS_FW_SPACE_STATION', 'YIELD_GOLD', 1),
-	('BUILDING_FW_MOON_BASE', 'BUILDINGCLASS_FW_SPACE_STATION', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_GENOME_PROJECT_1', 'BUILDINGCLASS_LABORATORY', 'YIELD_SCIENCE', 2),
-	('BUILDING_FW_GENOME_PROJECT_1', 'BUILDINGCLASS_MEDICAL_LAB', 'YIELD_FOOD', 2),
-	('BUILDING_FW_GENOME_PROJECT_2', 'BUILDINGCLASS_FW_GENE_LAB', 'YIELD_SCIENCE', 2),
-	('BUILDING_FW_ASTEROID_MINING', 'BUILDINGCLASS_FW_ENGINEERING_MODULE', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_ASTEROID_MINING', 'BUILDINGCLASS_FW_RESEARCH_MODULE', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_ASTEROID_MINING', 'BUILDINGCLASS_FW_COMM_MODULE', 'YIELD_GOLD', 1);
+	('BUILDING_FW_VERTICAL_FARM',        'BUILDINGCLASS_FW_VERTICAL_FARM',        'YIELD_SCIENCE',    2),
+	('BUILDING_FW_ECOSANCTUARY',         'BUILDINGCLASS_FW_ECOSANCTUARY',         'YIELD_CULTURE',    2),
+	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       2),
+	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_HYDROTHERMAL_FACTORY', 'YIELD_SCIENCE',    2),
+	('BUILDING_FW_HYDROTHERMAL_FACTORY', 'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       2),
+	('BUILDING_FW_HYDROTHERMAL_FACTORY', 'BUILDINGCLASS_FW_HYDROTHERMAL_FACTORY', 'YIELD_SCIENCE',    2),
+
+	('BUILDING_FW_BOREHOLE', 	         'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       2),
+	('BUILDING_FW_BOREHOLE',             'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_GEOTHERMAL_FACTORY', 	 'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       2),
+	('BUILDING_FW_GEOTHERMAL_FACTORY',   'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_RESEARCH_SERVER',      'YIELD_SCIENCE',    1),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_ENTERTAINMENT_SERVER', 'YIELD_CULTURE',    1),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_COMMERCE_SERVER',      'YIELD_GOLD',       1),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_CLOUD_COMPUTING',      'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_CYBERCLINIC',          'BUILDINGCLASS_HOSPITAL',                'YIELD_SCIENCE',    3),
+	('BUILDING_FW_CYBERCLINIC',          'BUILDINGCLASS_FW_CLONE_LAB',            'YIELD_SCIENCE',    3),
+	('BUILDING_FW_ORBITAL_HABITAT',      'BUILDINGCLASS_FW_ENGINEERING_MODULE',   'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_ORBITAL_HABITAT',      'BUILDINGCLASS_FW_RESEARCH_MODULE',      'YIELD_SCIENCE',    2),
+	('BUILDING_FW_ORBITAL_HABITAT',      'BUILDINGCLASS_FW_COMM_MODULE',          'YIELD_GOLD',       2),
+	('BUILDING_FW_SPACE_STATION',        'BUILDINGCLASS_FW_ORBITAL_HABITAT',      'YIELD_FOOD',       2),
+	('BUILDING_FW_MOON_BASE',            'BUILDINGCLASS_FW_FUSION_PLANT',         'YIELD_PRODUCTION', 5),
+	('BUILDING_FW_MOON_BASE',            'BUILDINGCLASS_FW_SPACE_STATION',        'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_MOON_BASE',            'BUILDINGCLASS_FW_SPACE_STATION',        'YIELD_GOLD',       1),
+	('BUILDING_FW_MOON_BASE',            'BUILDINGCLASS_FW_SPACE_STATION',        'YIELD_SCIENCE',    1),
+	('BUILDING_FW_GENOME_PROJECT_1',     'BUILDINGCLASS_LABORATORY',              'YIELD_SCIENCE',    2),
+	('BUILDING_FW_GENOME_PROJECT_1',     'BUILDINGCLASS_MEDICAL_LAB',             'YIELD_FOOD',       2),
+	('BUILDING_FW_GENOME_PROJECT_2',     'BUILDINGCLASS_FW_GENE_LAB',             'YIELD_SCIENCE',    2),
+	('BUILDING_FW_ASTEROID_MINING',      'BUILDINGCLASS_FW_ENGINEERING_MODULE',   'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_ASTEROID_MINING',      'BUILDINGCLASS_FW_RESEARCH_MODULE',      'YIELD_SCIENCE',    1),
+	('BUILDING_FW_ASTEROID_MINING',      'BUILDINGCLASS_FW_COMM_MODULE',          'YIELD_GOLD',       1);
 
 
 INSERT INTO Building_ThemingYieldBonus
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_FW_VIRTUAL_MUSEUM', 'YIELD_CULTURE', 5);
+	('BUILDING_FW_VIRTUAL_MUSEUM', 'YIELD_CULTURE', 6);
 
+INSERT INTO Building_YieldFromInternalTR
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_FW_HIGHSPEED_RAIL', 'YIELD_FOOD', 		8),
+	('BUILDING_FW_HIGHSPEED_RAIL', 'YIELD_PRODUCTION', 	4);
+
+
+INSERT INTO Unit_ProductionModifierBuildings (UnitType,	BuildingType,	ProductionModifier) VALUES
+('UNIT_FW_BIOINFANTRY', 		       'BUILDING_FW_IMPLANT_CLINIC', 	 15),
+('UNIT_FW_CLONETROOPER', 		       'BUILDING_FW_IMPLANT_CLINIC', 	 15),
+('UNIT_FW_BIOTROOPER', 			       'BUILDING_FW_IMPLANT_CLINIC', 	 15),
+('UNIT_FW_SUPERSOLDIERS', 		       'BUILDING_FW_IMPLANT_CLINIC', 	 15),
+('UNIT_FW_CLONETROOPER', 		       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_MUTANT', 				       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_BIOINFANTRY', 		       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_BIOTROOPER', 			       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_CHIMERA', 			       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_SUPERSOLDIERS', 		       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_HYDRA', 				       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_SWARM', 				       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_BIODRONE', 			       'BUILDING_FW_TRANSGENIC_NURSERY', 15),
+('UNIT_FW_CLONETROOPER', 		       'BUILDING_FW_BIOMOD_TANK', 		 15),
+('UNIT_FW_BIOINFANTRY', 		       'BUILDING_FW_BIOMOD_TANK', 		 15),
+('UNIT_FW_BIOTROOPER', 			       'BUILDING_FW_BIOMOD_TANK', 		 15),
+('UNIT_FW_SUPERSOLDIERS', 		       'BUILDING_FW_BIOMOD_TANK', 		 15),
+('UNIT_FW_MUTANT', 				       'BUILDING_FW_ECTOGENESIS_POD', 	 15),
+('UNIT_FW_CHIMERA', 			       'BUILDING_FW_ECTOGENESIS_POD', 	 15),
+('UNIT_FW_HYDRA', 				       'BUILDING_FW_ECTOGENESIS_POD', 	 15),
+('UNIT_FW_SWARM', 				       'BUILDING_FW_ECTOGENESIS_POD', 	 15),
+('UNIT_FW_BIODRONE', 			       'BUILDING_FW_ECTOGENESIS_POD', 	 15),
+
+('UNIT_FW_CYBERSUB', 			       'BUILDING_FW_CYBERCLINIC', 		 15),
+('UNIT_FW_CYBERSAM', 			       'BUILDING_FW_CYBERCLINIC', 		 15),
+('UNIT_FW_CRAWLER', 			       'BUILDING_FW_CYBERCLINIC', 		 15),
+('UNIT_FW_HOVERTANK', 			       'BUILDING_FW_CYBERCLINIC', 		 15),
+
+('UNIT_FW_AUTOMATON', 			       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_ROBOT_INFANTRY', 		       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_COLOSSUS', 		           'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_NANOHIVE', 			       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_MEGAHIVE', 			       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_HIMARS', 				       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_MECH_ARTILLERY', 	   	       'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_ANGEL', 		               'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_FW_ZEKE', 		               'BUILDING_FW_DRONE_HIVE', 		 15),
+('UNIT_MECH', 					       'BUILDING_FW_DRONE_HIVE', 		 15),
+
+('UNIT_FW_PLASMA_BOMBER', 		       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_PLASMA_FIGHTER', 		       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_SPACE_BOMBER', 		       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_SPACE_FIGHTER', 		       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER', 'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_XCOM_SQUAD', 		           'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_SPACEMARINES', 		       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_BATTLESUIT', 		           'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_GUNDAM', 	        	       'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_HELICARRIER', 	           'BUILDING_FW_AEROSPACE_COMPLEX',  15),
+('UNIT_FW_NEXUS', 		               'BUILDING_FW_AEROSPACE_COMPLEX',  15);
+
+
+----------------------------------------------
+-- Feature requirements
+----------------------------------------------
+INSERT INTO Building_LocalFeatureOrs (BuildingType, FeatureType) VALUES
+('BUILDING_FW_ECOSANCTUARY', 		'FEATURE_JUNGLE'),
+('BUILDING_FW_ECOSANCTUARY', 		'FEATURE_FOREST'),
+('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_JUNGLE'),
+('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_FOREST'),
+('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_MARSH');
+
+----------------------------------------------
+-- Resource  requirements
+----------------------------------------------
+INSERT INTO Building_ResourceQuantityRequirements (BuildingType, ResourceType, Cost) VALUES
+('BUILDING_FW_NANOMINES_FIELD', 	'RESOURCE_NANOMAT', 	1),
+('BUILDING_FW_DEFENSE_FIELD',    	'RESOURCE_NANOMAT', 	1),
+('BUILDING_FW_TRANSGENIC_NURSERY', 	'RESOURCE_ADN_FUNGUS', 	1),
+('BUILDING_FW_AEROSPACE_COMPLEX', 	'RESOURCE_NANOMAT', 	1),
+
+('BUILDING_FW_NANOFORGE', 			'RESOURCE_NANOMAT', 	1),
+('BUILDING_FW_AUTOPLANT', 		    'RESOURCE_OIL', 		1),
+('BUILDING_FW_GENE_LAB', 		    'RESOURCE_HORSE', 		1),
+('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_HORSE', 		4),
+('BUILDING_FW_BIOCOMPUTER', 	    'RESOURCE_ADN_FUNGUS', 	1),
+('BUILDING_FW_BIOCOMPUTER',     	'RESOURCE_ALUMINUM', 	1),
+('BUILDING_FW_BIOCONVERTER_ADNF',  	'RESOURCE_ALUMINUM', 	1),
+('BUILDING_FW_BIOCONVERTER_ADNF',   'RESOURCE_NANOMAT', 	5),
+('BUILDING_FW_BIOCONVERTER_NANO',   'RESOURCE_OIL', 	    1),
+('BUILDING_FW_BIOCONVERTER_NANO',   'RESOURCE_ADN_FUNGUS', 	5),
+('BUILDING_FW_BIOCONVERTER_NANO2',  'RESOURCE_COAL', 	    1),
+('BUILDING_FW_BIOCONVERTER_NANO2',  'RESOURCE_ADN_FUNGUS', 	4),
+
+('BUILDING_FW_CONVERTER', 			'RESOURCE_COAL', 		1),
+('BUILDING_FW_CONVERTER_OIL', 		'RESOURCE_OIL', 		1),
+('BUILDING_FW_CONVERTER_IRON',  	'RESOURCE_IRON', 		1),
+('BUILDING_FW_ALLOY_FOUNDRY', 		'RESOURCE_URANIUM', 	1),
+('BUILDING_FW_MASS_DIGESTER', 		'RESOURCE_ADN_FUNGUS', 	1),
+('BUILDING_FW_FUSION_PLANT', 		'RESOURCE_URANIUM',    	1),
+('BUILDING_FW_ECTOGENESIS_POD', 	'RESOURCE_ADN_FUNGUS', 	1),
+('BUILDING_FW_TIDAL_PORT', 			'RESOURCE_NANOMAT', 	1),
+('BUILDING_FW_HIGHSPEED_RAIL', 		'RESOURCE_NANOMAT', 	1),
+('BUILDING_FW_TRANSGENIC_NURSERY', 	'RESOURCE_ADN_FUNGUS', 	1),
+('BUILDING_FW_AEROSPACE_COMPLEX', 	'RESOURCE_NANOMAT', 	1);
+
+
+
+INSERT INTO Building_YieldModifiers
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_PRODUCTION',     15),
+	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_GOLD', 		    10),
+	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_CULTURE', 	     5),
+	('BUILDING_FW_TIDAL_PORT', 		'YIELD_PRODUCTION',     15),
+	('BUILDING_FW_TIDAL_PORT', 		'YIELD_CULTURE', 	     5);
+
+----------------------------------------------
+-- Improved Resources nearby
+----------------------------------------------
+INSERT INTO Building_LocalResourceOrs 
+	(BuildingType, ResourceType)
+VALUES
+	('BUILDING_FW_CONVERTER', 				'RESOURCE_COAL'),	
+	('BUILDING_FW_CONVERTER_OIL', 			'RESOURCE_OIL'),
+	('BUILDING_FW_CONVERTER_IRON', 			'RESOURCE_IRON'),
+	('BUILDING_FW_BIOFUEL_REFINERY', 	    'RESOURCE_WHEAT'),
+	('BUILDING_FW_BIOFUEL_REFINERY_RICE', 	'RESOURCE_RICE'),
+	('BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'RESOURCE_BANANA'),
+	('BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 	'RESOURCE_MAIZE');
+
+INSERT INTO Building_ResourceYieldChanges
+	(BuildingType, ResourceType, YieldType, Yield)
+VALUES
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CRAB',     'YIELD_SCIENCE',    1),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CRAB',     'YIELD_GOLD',       1),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_PEARLS',   'YIELD_GOLD',       1),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_PEARLS',   'YIELD_CULTURE',    1),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CORAL',    'YIELD_SCIENCE',    1),
+	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CORAL',    'YIELD_CULTURE',    1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_NANOMAT',  'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_NANOMAT',  'YIELD_GOLD',       1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_NANOMAT',  'YIELD_SCIENCE',    1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_OIL',      'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_OIL',      'YIELD_GOLD',       1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_OIL',      'YIELD_SCIENCE',    1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_WHALE',    'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_WHALE',    'YIELD_GOLD',       1),
+	('BUILDING_FW_UNDERSEA_MINING',          'RESOURCE_WHALE',    'YIELD_SCIENCE',    1),
+	('BUILDING_FW_GENE_LAB',                 'RESOURCE_COW',      'YIELD_FOOD',       2),
+	('BUILDING_FW_GENE_LAB',                 'RESOURCE_DEER',     'YIELD_FOOD',       2),
+	('BUILDING_FW_GENE_LAB',                 'RESOURCE_HORSE',    'YIELD_FOOD',       2),
+	('BUILDING_FW_GENE_LAB',                 'RESOURCE_SHEEP',    'YIELD_FOOD',       2),
+	('BUILDING_FW_GENE_LAB',                 'RESOURCE_BISON',    'YIELD_FOOD',       2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY', 	     'RESOURCE_COW', 	  'YIELD_GOLD',       2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY', 	     'RESOURCE_DEER', 	  'YIELD_GOLD',       2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY', 	     'RESOURCE_HORSE', 	  'YIELD_GOLD',       2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY',        'RESOURCE_SHEEP', 	  'YIELD_GOLD',       2),
+	('BUILDING_FW_BIOFLESH_INDUSTRY', 	     'RESOURCE_BISON', 	  'YIELD_GOLD',       2),
+	('BUILDING_FW_NANOMAT_PLANT',            'RESOURCE_COAL',     'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_NANOMAT_PLANT',            'RESOURCE_OIL',      'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_NANOMAT_PLANT',            'RESOURCE_IRON',     'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_NANOMAT_PLANT',            'RESOURCE_NANOMAT',  'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_CONVERTER',                'RESOURCE_COAL',     'YIELD_GOLD',       2),
+	('BUILDING_FW_CONVERTER_OIL',            'RESOURCE_OIL',      'YIELD_GOLD',       2),
+	('BUILDING_FW_CONVERTER_IRON',           'RESOURCE_IRON',     'YIELD_GOLD',       2),
+	('BUILDING_FW_ALLOY_FOUNDRY',            'RESOURCE_ALUMINUM', 'YIELD_PRODUCTION', 4),
+	('BUILDING_FW_ALLOY_FOUNDRY',            'RESOURCE_ALUMINUM', 'YIELD_GOLD',       2),
+	('BUILDING_FW_ALLOY_FOUNDRY',            'RESOURCE_URANIUM',  'YIELD_PRODUCTION', 4),
+	('BUILDING_FW_ALLOY_FOUNDRY',            'RESOURCE_URANIUM',  'YIELD_GOLD',       2);
+
+INSERT INTO 
+	Building_SeaResourceYieldChanges (BuildingType,	YieldType,	Yield) 
+VALUES
+	('BUILDING_FW_AQUACULTURE_LAB', 'YIELD_GOLD',       1),
+	('BUILDING_FW_AQUACULTURE_LAB', 'YIELD_FOOD',       1),
+	('BUILDING_FW_TIDAL_PORT',      'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_TIDAL_PORT',      'YIELD_GOLD',       2);
+
+------------------------------	
+-- Building_DomainFreeExperiences
+------------------------------
+INSERT INTO Building_DomainFreeExperiences
+	(BuildingType, DomainType, Experience)
+VALUES
+	('BUILDING_FW_VR_TRAINING', 'DOMAIN_LAND', 25),
+	('BUILDING_FW_VR_TRAINING', 'DOMAIN_SEA',  25),
+	('BUILDING_FW_VR_TRAINING', 'DOMAIN_AIR',  25);
+
+
+------------------------
+-- Building_ResourcePlotsToPlace
+------------------------
+INSERT INTO Building_ResourcePlotsToPlace
+		(BuildingType,						ResourceType,			NumPlots, ResourceQuantityToPlace) 
+VALUES	('BUILDING_FW_AQUACULTURE_LAB',		'RESOURCE_FISH',		1		, 1),
+		('BUILDING_FW_FUNGAL_AGRIGENOMICS',	'RESOURCE_ADN_FUNGUS',	1		, 5),
+		('BUILDING_FW_GENEJACK_FACILITY',	'RESOURCE_ADN_FUNGUS',	1		, 2),
+		('BUILDING_FW_TERRAFORMING_STATION','RESOURCE_ADN_FUNGUS',	1		, 3),
+		('BUILDING_FW_PHOTOSYSTEMS',		'RESOURCE_ADN_FUNGUS',	1		, 2);
+
+
+--------------------------------------------------------------
+-- Religion
+---------------------------------------------------------------
 -- add Utility Fog to Defender of Faith Belief
 INSERT INTO Belief_BuildingClassYieldChanges (BeliefType, BuildingClassType, YieldType, YieldChange)
 SELECT DISTINCT BeliefType, 'BUILDINGCLASS_FW_UTILITY_FOG', YieldType, YieldChange
 FROM Belief_BuildingClassYieldChanges WHERE BeliefType = 'BELIEF_DEFENDER_FAITH';
+
 INSERT INTO Belief_BuildingClassYieldChanges (BeliefType, BuildingClassType, YieldType, YieldChange)
 SELECT DISTINCT BeliefType, 'BUILDINGCLASS_FW_DEFENSE_FIELD', YieldType, YieldChange
 FROM Belief_BuildingClassYieldChanges WHERE BeliefType = 'BELIEF_DEFENDER_FAITH';
 
+
+--------------------------------------------------------------
+-- Policies
+---------------------------------------------------------------
 -- Ceremony (Tradition)
 INSERT INTO Policy_BuildingClassHappiness (PolicyType, BuildingClassType, Happiness)
 SELECT DISTINCT PolicyType, 'BUILDINGCLASS_FW_MOON_BASE', Happiness
@@ -1322,17 +1570,17 @@ FROM Policy_BuildingClassCultureChanges WHERE PolicyType = 'POLICY_NAVAL_TRADITI
 INSERT INTO Policy_BuildingClassYieldChanges
 	(PolicyType, BuildingClassType, YieldType, YieldChange)
 VALUES
-	('POLICY_CREATIVE_EXPRESSION', 	 'BUILDINGCLASS_FW_VIRTUAL_MUSEUM', 		'YIELD_CULTURE', 	        3),
-	('POLICY_CREATIVE_EXPRESSION', 	 'BUILDINGCLASS_FW_VIRTUAL_MUSEUM', 		'YIELD_GOLDEN_AGE_POINTS', 	3),
-	('POLICY_MOBILIZATION', 	 'BUILDINGCLASS_FW_NANOMINES_FIELD', 	'YIELD_SCIENCE', 	3),
-	('POLICY_MOBILIZATION', 	 'BUILDINGCLASS_FW_DEFENSE_FIELD', 		'YIELD_SCIENCE', 	3),
-	('POLICY_MOBILIZATION', 	 'BUILDINGCLASS_FW_UTILITY_FOG', 		'YIELD_SCIENCE', 	3),
-	('POLICY_SCHOLASTICISM', 	 'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_SCIENCE', 	3),
-	('POLICY_SCHOLASTICISM', 	 'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_SCIENCE', 	3),
-	('POLICY_FORTIFIED_BORDERS', 'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_PRODUCTION', 5),
-	('POLICY_FORTIFIED_BORDERS', 'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_CULTURE', 	3),
-	('POLICY_FORTIFIED_BORDERS', 'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_PRODUCTION', 5),
-	('POLICY_FORTIFIED_BORDERS', 'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_CULTURE', 	3);
+	('POLICY_CREATIVE_EXPRESSION', 	 'BUILDINGCLASS_FW_VIRTUAL_MUSEUM', 	'YIELD_CULTURE', 	        3),
+	('POLICY_CREATIVE_EXPRESSION', 	 'BUILDINGCLASS_FW_VIRTUAL_MUSEUM',     'YIELD_GOLDEN_AGE_POINTS', 	3),
+	('POLICY_MOBILIZATION', 	     'BUILDINGCLASS_FW_NANOMINES_FIELD', 	'YIELD_SCIENCE',        	3),
+	('POLICY_MOBILIZATION', 	     'BUILDINGCLASS_FW_DEFENSE_FIELD', 		'YIELD_SCIENCE',        	3),
+	('POLICY_MOBILIZATION', 	     'BUILDINGCLASS_FW_UTILITY_FOG', 		'YIELD_SCIENCE', 	        3),
+	('POLICY_SCHOLASTICISM', 	     'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_SCIENCE',        	3),
+	('POLICY_SCHOLASTICISM', 	     'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_SCIENCE', 	        3),
+	('POLICY_FORTIFIED_BORDERS',     'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_PRODUCTION',         5),
+	('POLICY_FORTIFIED_BORDERS',     'BUILDINGCLASS_FW_CYBERPOLICE', 		'YIELD_CULTURE', 	        3),
+	('POLICY_FORTIFIED_BORDERS',     'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_PRODUCTION',         5),
+	('POLICY_FORTIFIED_BORDERS',     'BUILDINGCLASS_FW_DIGITAL_POLICE', 	'YIELD_CULTURE', 	        3);
 
 INSERT INTO Policy_BuildingClassHappiness
 	(PolicyType, BuildingClassType, Happiness)
@@ -1344,6 +1592,7 @@ INSERT INTO Policy_BuildingClassProductionModifiers
 	(PolicyType, BuildingClassType, ProductionModifier)
 VALUES
 	('POLICY_TRADE_UNIONS', 		'BUILDINGCLASS_FW_HIGHSPEED_RAIL', 		100),
+	('POLICY_TRADE_UNIONS', 		'BUILDINGCLASS_FW_TIDAL_PORT', 			100),
 	('POLICY_FORTIFIED_BORDERS', 	'BUILDINGCLASS_FW_CYBERPOLICE', 		100),
 	('POLICY_FORTIFIED_BORDERS', 	'BUILDINGCLASS_FW_DIGITAL_POLICE', 		100);
 
@@ -1361,206 +1610,23 @@ VALUES
 	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_NANOFORGE', 		'YIELD_PRODUCTION', 3),
 	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_NANOFORGE', 		'YIELD_GOLD', 		3),
 	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_HIGHSPEED_RAIL', 	'YIELD_PRODUCTION', 3),
-	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_HIGHSPEED_RAIL', 	'YIELD_GOLD', 		3);
-
-
-
-INSERT INTO Building_YieldFromInternalTR
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_FW_HIGHSPEED_RAIL', 'YIELD_FOOD', 		8),
-	('BUILDING_FW_HIGHSPEED_RAIL', 'YIELD_PRODUCTION', 	4);
-
-
-INSERT INTO Unit_ProductionModifierBuildings (UnitType,	BuildingType,	ProductionModifier) VALUES
-('UNIT_FW_CLONETROOPER', 		'BUILDING_FW_IMPLANT_CLINIC', 	 10),
-('UNIT_FW_MUTANT', 				'BUILDING_FW_IMPLANT_CLINIC', 	 10),
-('UNIT_FW_BIOINFANTRY', 		'BUILDING_FW_IMPLANT_CLINIC', 	 10),
-('UNIT_FW_BIOTROOPER', 			'BUILDING_FW_IMPLANT_CLINIC', 	 10),
-('UNIT_FW_SUPERSOLDIERS', 		'BUILDING_FW_IMPLANT_CLINIC', 	 10),
-('UNIT_FW_CLONETROOPER', 		'BUILDING_FW_BIOMOD_TANK', 		 15),
-('UNIT_FW_MUTANT', 				'BUILDING_FW_BIOMOD_TANK', 		 15),
-('UNIT_FW_BIOINFANTRY', 		'BUILDING_FW_BIOMOD_TANK', 		 15),
-('UNIT_FW_BIOTROOPER', 			'BUILDING_FW_BIOMOD_TANK', 		 15),
-('UNIT_FW_SUPERSOLDIERS', 		'BUILDING_FW_BIOMOD_TANK', 		 15),
-('UNIT_FW_CHIMERA', 			'BUILDING_FW_ECTOGENESIS_POD', 	 15),
-('UNIT_FW_HYDRA', 				'BUILDING_FW_ECTOGENESIS_POD', 	 15),
-('UNIT_FW_SWARM', 				'BUILDING_FW_ECTOGENESIS_POD', 	 15),
-('UNIT_FW_BIODRONE', 			'BUILDING_FW_ECTOGENESIS_POD', 	 15),
-
-('UNIT_FW_CLONETROOPER', 		'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_MUTANT', 				'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_BIOINFANTRY', 		'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_BIOTROOPER', 			'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_CHIMERA', 			'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_SUPERSOLDIERS', 		'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_HYDRA', 				'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_SWARM', 				'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_BIODRONE', 			'BUILDING_FW_TRANSGENIC_NURSERY', 	10),
-('UNIT_FW_AUTOMATON', 			'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_ROBOT_INFANTRY', 		'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_COLOSSUS', 		    'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_NANOHIVE', 			'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_MEGAHIVE', 			'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_HIMARS', 				'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_MECH_ARTILLERY', 		'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_ANGEL', 		        'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_ZEKE', 		        'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_MECH', 					'BUILDING_FW_DRONE_HIVE', 		 10),
-('UNIT_FW_PLASMA_BOMBER', 		'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_PLASMA_FIGHTER', 		'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_SPACE_BOMBER', 		'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_SPACE_FIGHTER', 		'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER', 'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_XCOM_SQUAD', 		    'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_SPACEMARINES', 		'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_BATTLESUIT', 		    'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_GUNDAM', 	        	'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_HELICARRIER', 	    'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_NEXUS', 		        'BUILDING_FW_AEROSPACE_COMPLEX', 10),
-('UNIT_FW_CYBERSUB', 			'BUILDING_FW_CYBERCLINIC', 		 15),
-('UNIT_FW_CYBERSAM', 			'BUILDING_FW_CYBERCLINIC', 		 15),
-('UNIT_FW_CRAWLER', 			'BUILDING_FW_CYBERCLINIC', 		 15),
-('UNIT_FW_HOVERTANK', 			'BUILDING_FW_CYBERCLINIC', 		 15);
-
-----------------------------------------------
--- Feature requirements
-----------------------------------------------
-INSERT INTO Building_LocalFeatureOrs (BuildingType, FeatureType) VALUES
-('BUILDING_FW_ECOSANCTUARY', 		'FEATURE_JUNGLE'),
-('BUILDING_FW_ECOSANCTUARY', 		'FEATURE_FOREST'),
-('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_JUNGLE'),
-('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_FOREST'),
-('BUILDING_FW_PHOTOSYSTEMS', 		'FEATURE_MARSH');
-
-----------------------------------------------
--- Resource  requirements
-----------------------------------------------
-INSERT INTO Building_ResourceQuantityRequirements (BuildingType, ResourceType, Cost) VALUES
-('BUILDING_FW_NANOMINES_FIELD', 	'RESOURCE_NANOMAT', 	1),
-('BUILDING_FW_NANOFORGE', 			'RESOURCE_NANOMAT', 	1),
-('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_HORSE', 		3),
-('BUILDING_FW_CONVERTER', 			'RESOURCE_COAL', 		2),
-('BUILDING_FW_CONVERTER_OIL', 		'RESOURCE_OIL', 		1),
-('BUILDING_FW_CONVERTER_IRON',  	'RESOURCE_IRON', 		1),
-('BUILDING_FW_ALLOY_FOUNDRY', 		'RESOURCE_URANIUM', 	1),
-('BUILDING_FW_MASS_DIGESTER', 		'RESOURCE_ADN_FUNGUS', 	1),
-('BUILDING_FW_FUSION_PLANT', 		'RESOURCE_URANIUM',    	1),
-('BUILDING_FW_ECTOGENESIS_POD', 	'RESOURCE_ADN_FUNGUS', 	1),
-('BUILDING_FW_TIDAL_PORT', 			'RESOURCE_NANOMAT', 	1),
-('BUILDING_FW_HIGHSPEED_RAIL', 		'RESOURCE_NANOMAT', 	1),
-('BUILDING_FW_TRANSGENIC_NURSERY', 	'RESOURCE_ADN_FUNGUS', 	1),
-('BUILDING_FW_DRONE_HIVE', 			'RESOURCE_IMPLANT', 	1),
-('BUILDING_FW_AEROSPACE_COMPLEX', 	'RESOURCE_NANOMAT', 	1);
+	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_HIGHSPEED_RAIL', 	'YIELD_GOLD', 		3),
+	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_TIDAL_PORT', 		'YIELD_PRODUCTION', 3),
+	('POLICY_TRADE_UNIONS', 	'BUILDINGCLASS_FW_TIDAL_PORT', 		'YIELD_GOLD', 		3);
 
 INSERT INTO Building_DomainProductionModifiers
 	(BuildingType, DomainType, Modifier)
 VALUES
-	('BUILDING_FW_TIDAL_PORT', 		'DOMAIN_SEA', 	15),
-	('BUILDING_FW_NANOFORGE', 		'DOMAIN_SEA', 	15),
-	('BUILDING_FW_NANOFORGE', 		'DOMAIN_LAND', 	15),
-	('BUILDING_FW_NANOFORGE', 		'DOMAIN_AIR', 	15),
-	('BUILDING_FW_NANOFORGE', 		'DOMAIN_HOVER', 15),
-	('BUILDING_FW_LAUNCH_FACILITY', 'DOMAIN_AIR', 	15),
-	('BUILDING_FW_LAUNCH_FACILITY', 'DOMAIN_HOVER', 15);
+	('BUILDING_FW_TIDAL_PORT', 		'DOMAIN_SEA', 	        15),
+	('BUILDING_FW_LAUNCH_FACILITY', 'DOMAIN_AIR', 	      	15),
+	('BUILDING_FW_NANOFORGE', 		'DOMAIN_SEA', 	        15),
+	('BUILDING_FW_NANOFORGE', 		'DOMAIN_LAND',        	15),
+	('BUILDING_FW_NANOFORGE', 		'DOMAIN_AIR', 	      	15);	
 
-INSERT INTO Building_YieldModifiers
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_PRODUCTION', 15),
-	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_GOLD', 		10),
-	('BUILDING_FW_HIGHSPEED_RAIL', 	'YIELD_CULTURE', 	5),
-	('BUILDING_FW_TIDAL_PORT', 		'YIELD_PRODUCTION', 15),
-	('BUILDING_FW_TIDAL_PORT', 		'YIELD_CULTURE', 	5);
-
-----------------------------------------------
--- Improved Resources nearby
-----------------------------------------------
-INSERT INTO Building_LocalResourceOrs 
-	(BuildingType, ResourceType)
-VALUES
-	('BUILDING_FW_CONVERTER', 				'RESOURCE_COAL'),	
-	('BUILDING_FW_CONVERTER_OIL', 			'RESOURCE_OIL'),
-	('BUILDING_FW_CONVERTER_IRON', 			'RESOURCE_IRON'),
-	('BUILDING_FW_BIOFUEL_REFINERY', 	    'RESOURCE_WHEAT'),
-	('BUILDING_FW_BIOFUEL_REFINERY_RICE', 	'RESOURCE_RICE'),
-	('BUILDING_FW_BIOFUEL_REFINERY_BANANA', 'RESOURCE_BANANA'),
-	('BUILDING_FW_BIOFUEL_REFINERY_MAIZE', 	'RESOURCE_MAIZE');
-
-
-INSERT INTO Building_ResourceYieldChanges
-	(BuildingType, ResourceType, YieldType, Yield)
-VALUES
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CRAB', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CRAB', 'YIELD_GOLD', 1),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_PEARLS', 'YIELD_GOLD', 1),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_PEARLS', 'YIELD_CULTURE', 1),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CORAL', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', 'RESOURCE_CORAL', 'YIELD_CULTURE', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_NANOMAT', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_NANOMAT', 'YIELD_GOLD', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_NANOMAT', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_OIL', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_OIL', 'YIELD_GOLD', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_OIL', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_WHALE', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_WHALE', 'YIELD_GOLD', 1),
-	('BUILDING_FW_UNDERSEA_MINING', 'RESOURCE_WHALE', 'YIELD_SCIENCE', 1),
-	('BUILDING_FW_GENE_LAB', 'RESOURCE_COW', 'YIELD_FOOD', 2),
-	('BUILDING_FW_GENE_LAB', 'RESOURCE_DEER', 'YIELD_FOOD', 2),
-	('BUILDING_FW_GENE_LAB', 'RESOURCE_HORSE', 'YIELD_FOOD', 2),
-	('BUILDING_FW_GENE_LAB', 'RESOURCE_SHEEP', 'YIELD_FOOD', 2),
-	('BUILDING_FW_GENE_LAB', 'RESOURCE_BISON', 'YIELD_FOOD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_COW', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_DEER', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_HORSE', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_SHEEP', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_BISON', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_BIOFLESH_INDUSTRY', 	'RESOURCE_WHALE', 		'YIELD_GOLD', 2),
-	('BUILDING_FW_NANOMAT_PLANT', 		'RESOURCE_COAL', 		'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_NANOMAT_PLANT', 		'RESOURCE_OIL', 'YIELD_PRODUCTION', 2),
-	('BUILDING_FW_CONVERTER', 		'RESOURCE_COAL', 	'YIELD_GOLD', 		2),
-	('BUILDING_FW_CONVERTER_OIL', 	'RESOURCE_OIL', 	'YIELD_GOLD', 		2),
-	('BUILDING_FW_CONVERTER_IRON', 	'RESOURCE_IRON', 	'YIELD_GOLD', 		2),
-	('BUILDING_FW_ALLOY_FOUNDRY', 'RESOURCE_ALUMINUM', 	'YIELD_PRODUCTION', 4),
-	('BUILDING_FW_ALLOY_FOUNDRY', 'RESOURCE_ALUMINUM', 	'YIELD_GOLD', 		2),
-	('BUILDING_FW_ALLOY_FOUNDRY', 'RESOURCE_URANIUM', 	'YIELD_PRODUCTION', 4),
-	('BUILDING_FW_ALLOY_FOUNDRY', 'RESOURCE_URANIUM', 	'YIELD_GOLD', 		2);
-
-INSERT INTO 
-	Building_SeaResourceYieldChanges (BuildingType,	YieldType,	Yield) 
-VALUES
-	('BUILDING_FW_AQUACULTURE_LAB', 'YIELD_GOLD', 1),
-	('BUILDING_FW_AQUACULTURE_LAB', 'YIELD_FOOD', 1),
-	('BUILDING_FW_TIDAL_PORT', 'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_TIDAL_PORT', 'YIELD_GOLD', 2);
-
-------------------------------	
--- Building_DomainFreeExperiences
-------------------------------
-INSERT INTO Building_DomainFreeExperiences
-	(BuildingType, DomainType, Experience)
-VALUES
-	('BUILDING_FW_VR_TRAINING', 'DOMAIN_LAND', 25),
-	('BUILDING_FW_VR_TRAINING', 'DOMAIN_SEA', 25),
-	('BUILDING_FW_VR_TRAINING', 'DOMAIN_AIR', 25),
-	('BUILDING_FW_VR_TRAINING', 'DOMAIN_HOVER', 25);
-
-------------------------
--- Building_ResourcePlotsToPlace
-------------------------
-INSERT INTO Building_ResourcePlotsToPlace
-		(BuildingType,						ResourceType,			NumPlots, 	ResourceQuantityToPlace) 
-VALUES	('BUILDING_FW_AQUACULTURE_LAB',		'RESOURCE_FISH',		1, 			1),
-		('BUILDING_FW_FUNGAL_AGRIGENOMICS',	'RESOURCE_ADN_FUNGUS',	1, 			5),
-		('BUILDING_FW_PHOTOSYSTEMS',		'RESOURCE_ADN_FUNGUS',	1, 			3),
-		('BUILDING_FW_GENEJACK_FACILITY',	'RESOURCE_ADN_FUNGUS',	1, 			2);
-		
 ------------------------
 -- Flavors
 ------------------------
 INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
-('BUILDING_SPACESHIP_FACTORY', 		'FLAVOR_MILITARY_TRAINING', 15),
 ('BUILDING_FW_UTILITY_FOG', 		'FLAVOR_PRODUCTION', 35),
 ('BUILDING_FW_UTILITY_FOG', 		'FLAVOR_DEFENSE', 30),
 ('BUILDING_FW_UTILITY_FOG', 		'FLAVOR_CITY_DEFENSE', 35),
@@ -1832,3 +1898,4 @@ INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
 ('BUILDING_FW_BRAIN_UPLOADING', 	'FLAVOR_GOLD', 		20),
 ('BUILDING_FW_BRAIN_UPLOADING', 	'FLAVOR_SCIENCE', 	20),
 ('BUILDING_FW_BRAIN_UPLOADING', 	'FLAVOR_RELIGION', 	20);
+
