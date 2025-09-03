@@ -73,7 +73,6 @@ Source: "..\UI - Auto Map Pins (v 4)\*"; DestDir: "{app}\MODS\UI - Auto Map Pins
 Source: "..\UI - City Happiness (v 17)\*"; DestDir: "{app}\MODS\UI - City Happiness (v 17)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uich
 Source: "..\UI - City Production (v 15)\*"; DestDir: "{app}\MODS\UI - City Production (v 15)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uicp
 Source: "..\UI - City Religions (v 4)\*"; DestDir: "{app}\MODS\UI - City Religions (v 4)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uicr
-Source: "..\UI - Diary (v 21)\*"; DestDir: "{app}\MODS\UI - Diary (v 21)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uid
 Source: "..\UI - Diplomacy Log (v 3)\*"; DestDir: "{app}\MODS\UI - Diplomacy Log (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uidl
 Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
 Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
@@ -84,7 +83,6 @@ Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MOD
 Source: "..\UI - Map Pins (v 17)\*"; DestDir: "{app}\MODS\UI - Map Pins (v 17)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uimp
 Source: "..\UI - No Auto-Embark Workers (v 7)\*"; DestDir: "{app}\MODS\UI - No Auto-Embark Workers (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uinaew
 Source: "..\UI - Notify Exit Resistance (v 1)\*"; DestDir: "{app}\MODS\UI - Notify Exit Resistance (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiner
-Source: "..\UI - Overlay Antiquities (v 2)\*"; DestDir: "{app}\MODS\UI - Overlay Antiquities (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uioa
 Source: "..\UI - Overlay Barbarians (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Barbarians (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiob
 Source: "..\UI - Overlay City Limits (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay City Limits (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiocl
 Source: "..\UI - Overlay Continents (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Continents (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uioc
@@ -251,14 +249,12 @@ Name: "uiamp"; Description: "자동 지도 핀 (Auto Map Pins)"; Types: VP34UCEX
 Name: "uich"; Description: "도시 행복도 (City Happiness)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uicp"; Description: "도시 생산력 (City Production)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uicr"; Description: "도시 종교 (City Religions)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uid"; Description: "다이어리 (Diary)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uidl"; Description: "외교 기록 (Diplomacy Log)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiga"; Description: "골드 알림 (Gold Alerts)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uihlp"; Description: "VP용 수평화된 지도자 초상화 (Horizontal Leaders' Portraits for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uimp"; Description: "지도 핀 (Map Pins)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uinaew"; Description: "노동자 자동 승선 막기 (No Auto-Embark Workers)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiner"; Description: "저항 벗어남 알림 (Notify Exit Resistance)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uioa"; Description: "고대 유물 오버레이 (Overlay Antiquities)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiob"; Description: "야만인 오버레이 (Overlay Barbarians)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiocl"; Description: "도시 제한 오버레이 (Overlay City Limits)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uioc"; Description: "대륙 오버레이 (Overlay Continents)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -394,7 +390,6 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - City Happiness (v 17)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - City Production (v 15)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - City Religions (v 4)"
-Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Diary (v 21)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Diplomacy Log (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Enhanced Rankings (v 13)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Enhanced Rankings INT"
@@ -405,7 +400,6 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Map Pins (v 17)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - No Auto-Embark Workers (v 7)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Notify Exit Resistance (v 1)"
-Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Overlay Antiquities (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Overlay Barbarians (v 8)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Overlay City Limits (v 8)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Overlay Harbours And Airports (v 1)"

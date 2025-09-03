@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ5Package>
+	<GUID>{570f793e-fc33-417f-ae19-58BB489E509F}</GUID>
+	<Version>1</Version>
+	<Priority>250</Priority>
+	<PTags>
+		<Tag>Version</Tag>
+	</PTags>
+	<Name>
+		<Value language="ko_KR">사용자 정의 모드 화면</Value>
+	</Name>
+	<Description>
+		<Value language="ko_KR">사용자 정의 모드 화면</Value>
+	</Description>
+
+	<UISkin name="Expansion2Primary" set="Expansion2" platform="Common">
+		<Skin>
+			<Directory>Core</Directory>
+		</Skin>
+	</UISkin>
+
+</Civ5Package>
