@@ -216,7 +216,6 @@ Name: "lua"; Description: "더 빠른 턴 처리 (MoonJIT)"; Types: Custom; Flag
 Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formation for VP)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "lm"; Description: "VP 큰 미니맵 (Large Minimap for VP wth EUI only)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "map"; Description: "추가 지도"; Types: Custom; Flags: disablenouninstallwarning
 
 Name: "vpuc"; Description: "VP 더 많은 고유 요소 (More Unique Components for VP)"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -313,6 +312,7 @@ Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VP34UCMAX
 Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's Civ VI Style City Names)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "mine"; Description: "멋진 신세계용 지뢰 (Landmines for BNW)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "map"; Description: "추가 지도"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
 Name: "cr"; Description: "역정찰 (Counter-Reconnaissance)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "eh"; Description: "탐험 유산 (Exploration Heritage)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
