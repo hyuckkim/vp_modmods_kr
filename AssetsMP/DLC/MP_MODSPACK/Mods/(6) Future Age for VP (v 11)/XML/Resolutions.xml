@@ -19,6 +19,28 @@
 			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP</Help>
 			<Building>BUILDING_FW_GENOME_PROJECT</Building>
 		</Row>
+
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_FW_AI_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_1_HELP</Help>
+			<Building>BUILDING_FW_AI_1</Building>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_FW_AI_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_2_HELP</Help>
+			<Building>BUILDING_FW_AI_2</Building>
+		</Row>
+		<Row>
+			<Type>LEAGUE_PROJECT_REWARD_FW_AI_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_3_HELP</Help>
+			<Building>BUILDING_FW_AI_</Building>
+		</Row>
+
+
+
 		<Row>
 			<Type>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1</Type>
 			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1</Description>
@@ -53,6 +75,7 @@
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
 		</Row>
+
 		<Row>
 			<Type>LEAGUE_PROJECT_FW_ASTEROID_MINING</Type>
 			<Description>TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING</Description>
@@ -75,7 +98,7 @@
 			<Help>TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP</Help>
 			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
 			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
-			<TechPrereqAnyMember>TECH_GEN_MANIP</TechPrereqAnyMember>
+			<TechPrereqAnyMember>TECH_GENE_MANIP</TechPrereqAnyMember>
 			<LeagueProjectEnabled>LEAGUE_PROJECT_FW_GENOME_PROJECT</LeagueProjectEnabled>
 		</Row>
 		<Row>
@@ -84,7 +107,7 @@
 			<Help>TXT_KEY_RESOLUTION_FW_ASTEROID_MINING_HELP</Help>
 			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
 			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
-			<TechPrereqAnyMember>TECH_ORBITAL_DEV</TechPrereqAnyMember>
+			<TechPrereqAnyMember>TECH_ASTRODYNAMICS</TechPrereqAnyMember>
 			<LeagueProjectEnabled>LEAGUE_PROJECT_FW_ASTEROID_MINING</LeagueProjectEnabled>
 		</Row>
 	</Resolutions>

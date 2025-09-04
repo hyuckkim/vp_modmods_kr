@@ -2,36 +2,38 @@
 -- Generic info
 ----------------------------------------------------
 INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, IconAtlas, NukeImmune, NumPoliciesNeeded, WonderSplashImage, WonderSplashAnchor) VALUES
-('BUILDING_FW_SKYTREE',     	  	 	'TECH_GLOBALIZATION',      3500, 'ART_DEF_BUILDING_LABORATORY',  0,'BW_ATLAS_SKYTREE', 	  		1, 28, 		'SkyTree_splash.dds', 				'R,T'),
-('BUILDING_FW_GENE_VAULT', 				'TECH_FW_ECOTHEORY',       3750, 'ART_DEF_BUILDING_LABORATORY',  42,'CIV_COLOR_ATLAS_FW_3', 	1, 28, 		'GeneVault_Splash.dds',		 		'L,T'),
-('BUILDING_FW_GENE_VAULT2', 			'TECH_ARTIFICIAL_ENVIRONMENTS',       3750, 'ART_DEF_BUILDING_LABORATORY',  42,'CIV_COLOR_ATLAS_FW_3', 	1, 28, 		'GeneVault_Splash.dds',		 		'L,T'),
-('BUILDING_FW_SHANGHAI_WFC', 		    'TECH_GRID_COMPUTING', 	   3500, 'ART_DEF_BUILDING_LABORATORY',  1,'BW_ATLAS_CHINESE_NEW_YEAR', 1, 27, 		'SHANGHAI_WFC_splash.dds', 			'L,T'),
-('BUILDING_FW_VIRTUAL_IDOL', 			'TECH_MEMETICS',           3500, 'ART_DEF_BUILDING_LABORATORY',  17, 'CIV_COLOR_ATLAS_FW_3', 	1, 28, 		'VirtualIdol_Splash.dds',		 	'L,T'),
-('BUILDING_FW_NANO_INSTITUTE',    	 	'TECH_NANOMATERIALS',      3500, 'ART_DEF_BUILDING_LABORATORY',  17,'CIV_COLOR_ATLAS_FW_2', 	1, 27, 		'SkyTree_splash_a.dds', 			'L,T'),
-('BUILDING_FW_APEX_CENTRE',     	 	'TECH_IMPLANTS',           3750, 'ART_DEF_BUILDING_LABORATORY',  39,'CIV_COLOR_ATLAS_FW_3', 	1, 28, 		'ApexCentre_Splash.dds', 			'L,T'),
-('BUILDING_FW_DATA_HAVEN', 	  	  	 	'TECH_MECHATRONICS',       4500, 'ART_DEF_BUILDING_LABORATORY',  3,'CIV_COLOR_ATLAS_FW_2', 		1, 29, 		'DataHaven_Splash.dds', 			'R,B'),
-('BUILDING_FW_JURASSIC_PARK',     	 	'TECH_CLONING',            4000, 'ART_DEF_BUILDING_LABORATORY',  5,'CIV_COLOR_ATLAS_FW_3', 		1, 29, 		'JurassicPark_Splash.dds', 			'L,T'),
-('BUILDING_FW_ENRICHMENT_CENTRE', 		'TECH_NUCLEAR_ENRICHMENT', 4000, 'ART_DEF_BUILDING_LABORATORY',  7, 'CIV_COLOR_ATLAS_FW_3', 	1, 28, 		'EnrichmentCentre_Splash.dds',		'L,T'),
-('BUILDING_FW_HELIOS', 					'TECH_ASTRODYNAMICS',      4000, 'ART_DEF_BUILDING_LABORATORY',  19,'CIV_COLOR_ATLAS_FW_2', 	1, 29, 		'Helios_Splash.dds',		 		'L,T'),
-('BUILDING_FW_PHOLUS_MUTAGEN', 			'TECH_TRANSGENICS',        4500, 'ART_DEF_BUILDING_LABORATORY',  26, 'CIV_COLOR_ATLAS_FW_2', 	1, 29, 		'PholusMutagen_Splash.dds',		 	'L,T'),
-('BUILDING_FW_SHIMIZUMCP', 		  	 	'TECH_AUTONOMOUS_SYSTEMS', 4500, 'ART_DEF_BUILDING_LABORATORY',  16,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'FWShimizuMCP_Splash.dds', 			'L,T'),
-('BUILDING_FW_FLOATINGISLANDS',   	 	'TECH_ARCOLOGIES',         4500, 'ART_DEF_BUILDING_LABORATORY',  14,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'LivingCity_Splash.dds', 	        'L,T'),
-('BUILDING_FW_NEPHILIM_GENE_TEMPLATE', 	'TECH_GENGINEERING',       4750, 'ART_DEF_BUILDING_FW_GARDEN',   16,'CIV_COLOR_ATLAS_FW_3', 	1, 30, 		'NephilimGeneTemplate_Splash.dds', 	'L,T'),
-('BUILDING_FW_MNEMOSYNE', 				'TECH_CYBERNETICS',    	   4750, 'ART_DEF_BUILDING_LABORATORY',  45, 'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'Mnemosyne_Splash.dds',		 		'L,T'),
-('BUILDING_FW_SKYNET', 					'TECH_AI', 	  		 	   4750, 'ART_DEF_BUILDING_LABORATORY',  32,'CIV_COLOR_ATLAS_FW_3', 	1, 30, 		'Skynet_Splash.dds',		 		'L,T'),
-('BUILDING_FW_CITADEL_STATION', 		'TECH_NUCLEAR_FUSION',     4250, 'ART_DEF_BUILDING_LABORATORY',  6, 'CIV_COLOR_ATLAS_FW_3', 	1, 30, 		'CitadelStation_Splash.dds',		'R,T'),
-('BUILDING_FW_ORBITAL_REFINERY', 		'TECH_ADAMANTIUM',         4750, 'ART_DEF_BUILDING_LABORATORY',  57,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'OrbitalRefinery_Splash.dds', 		'L,T'),
-('BUILDING_FW_DIGITAL_EMANCIPATION', 	'TECH_DIGITAL_SOCIETY',    5250, 'ART_DEF_BUILDING_LABORATORY',  43, 'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'DigitalEmancipation_Splash.dds',	'L,T'),
-('BUILDING_FW_DIGITAL_EMANCIPATION2', 	'TECH_TERRAFORMING',       5250, 'ART_DEF_BUILDING_LABORATORY',  43, 'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'DigitalEmancipation_Splash.dds',	'L,T'),
-('BUILDING_FW_ANGELNET', 				'TECH_SMART_MATERIALS',    5250, 'ART_DEF_BUILDING_LABORATORY',  38,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'Angelnet_Splash.dds',		 		'L,T'),
-('BUILDING_FW_ULTIMATOWER', 	  	 	'TECH_HYPERSTRUCTURES',    5250, 'ART_DEF_BUILDING_LABORATORY',  49,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'FWUltimaTower_Splash.dds', 		'L,T'),
-('BUILDING_FW_BIONICTOWER', 	  	 	'TECH_HYPERSTRUCTURES',    5250, 'ART_DEF_BUILDING_LABORATORY',  29,'CIV_COLOR_ATLAS_FW_2',		1, 30, 		'FWBionicTower_Splash.dds', 		'C,T'),
-('BUILDING_FW_BUENOSAIRESFORUM',  	 	'TECH_HYPERSTRUCTURES',    5250, 'ART_DEF_BUILDING_LABORATORY',  47,'CIV_COLOR_ATLAS_FW_2', 	1, 30, 		'FWBuenosAiresForum_Splash.dds',	'L,T'),
-('BUILDING_FW_SKYCITY', 	  	  	 	'TECH_HYPERSTRUCTURES',    5250, 'ART_DEF_BUILDING_LABORATORY',  36,'CIV_COLOR_ATLAS_FW_3', 	1, 30, 		'KingdomTowerCT_Splash.dds', 		'R,T'),
-('BUILDING_FW_GENOME_PROJECT', 			NULL,    					-1,  'ART_DEF_BUILDING_LABORATORY',  21,'CIV_COLOR_ATLAS_FW_3', 	1, NULL, 	'GenomeProject_Splash.dds',		 	'L,T'),
-('BUILDING_FW_ASTEROID_MINING', 		NULL,    				   -1, 	 'ART_DEF_BUILDING_LABORATORY',  19, 'CIV_COLOR_ATLAS_FW_3', 	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T'),
-('BUILDING_FW_ASTEROID_MINING_1', 		NULL,    				   -1, 	 'ART_DEF_BUILDING_LABORATORY',  19, 'CIV_COLOR_ATLAS_FW_3', 	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T'),
-('BUILDING_FW_ASTEROID_MINING_2', 		NULL,    				   -1, 	 'ART_DEF_BUILDING_LABORATORY',  19, 'CIV_COLOR_ATLAS_FW_3', 	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T');
+('BUILDING_FW_SKYTREE',     	  	 	'TECH_GLOBALIZATION',                 3500, 'ART_DEF_BUILDING_LABORATORY',   0,'BW_ATLAS_SKYTREE', 	  		1, 28, 		'SkyTree_splash.dds', 				'R,T'),
+('BUILDING_FW_GENE_VAULT', 				'TECH_FW_ECOTHEORY',                  3750, 'ART_DEF_BUILDING_LABORATORY',  42,'CIV_COLOR_ATLAS_FW_3',  	1, 28, 		'GeneVault_Splash.dds',		 		'L,T'),
+('BUILDING_FW_GENE_VAULT2', 			'TECH_ARTIFICIAL_ENVIRONMENTS',       3750, 'ART_DEF_BUILDING_LABORATORY',  51,'TCS_MOD_ICON_ATLAS',    	1, 28, 		'MiapolisCT_Splash.dds',		 	'L,T'),
+('BUILDING_FW_SHANGHAI_WFC', 		    'TECH_GRID_COMPUTING', 	              3500, 'ART_DEF_BUILDING_LABORATORY',   1,'BW_ATLAS_CHINESE_NEW_YEAR', 1, 27, 		'SHANGHAI_WFC_splash.dds', 			'L,T'),
+('BUILDING_FW_VIRTUAL_IDOL', 			'TECH_MEMETICS',                      3500, 'ART_DEF_BUILDING_LABORATORY',  17,'CIV_COLOR_ATLAS_FW_3',   	1, 28, 		'VirtualIdol_Splash.dds',		 	'L,T'),
+('BUILDING_FW_NANO_INSTITUTE',    	 	'TECH_NANOMATERIALS',                 3500, 'ART_DEF_BUILDING_LABORATORY',  17,'CIV_COLOR_ATLAS_FW_2',  	1, 27, 		'SkyTree_splash_a.dds', 			'L,T'),
+('BUILDING_FW_APEX_CENTRE',     	 	'TECH_IMPLANTS',                      3750, 'ART_DEF_BUILDING_LABORATORY',  39,'CIV_COLOR_ATLAS_FW_3',  	1, 28, 		'ApexCentre_Splash.dds', 			'L,T'),
+('BUILDING_FW_DATA_HAVEN', 	  	  	 	'TECH_MECHATRONICS',                  4500, 'ART_DEF_BUILDING_LABORATORY',   3,'CIV_COLOR_ATLAS_FW_2',  	1, 29, 		'DataHaven_Splash.dds', 			'R,B'),
+('BUILDING_FW_JURASSIC_PARK',     	 	'TECH_CLONING',                       4000, 'ART_DEF_BUILDING_LABORATORY',   5,'CIV_COLOR_ATLAS_FW_3',  	1, 29, 		'JurassicPark_Splash.dds', 			'L,T'),
+('BUILDING_FW_ENRICHMENT_CENTRE', 		'TECH_NUCLEAR_ENRICHMENT',            4000, 'ART_DEF_BUILDING_LABORATORY',   7,'CIV_COLOR_ATLAS_FW_3',  	1, 28, 		'EnrichmentCentre_Splash.dds',		'L,T'),
+('BUILDING_FW_HELIOS', 					'TECH_ASTRODYNAMICS',                 4000, 'ART_DEF_BUILDING_LABORATORY',  23,'CIV_COLOR_ATLAS_FW_3',  	1, 29, 		'Helios_Splash.dds',		 		'L,T'),
+('BUILDING_FW_PHOLUS_MUTAGEN', 			'TECH_TRANSGENICS',                   4500, 'ART_DEF_BUILDING_LABORATORY',  26,'CIV_COLOR_ATLAS_FW_2',  	1, 29, 		'PholusMutagen_Splash.dds',		 	'L,T'),
+('BUILDING_FW_SHIMIZUMCP', 		  	 	'TECH_AUTONOMOUS_SYSTEMS',            4500, 'ART_DEF_BUILDING_LABORATORY',  16,'CIV_COLOR_ATLAS_FW_2',  	1, 30, 		'FWShimizuMCP_Splash.dds', 			'L,T'),
+('BUILDING_FW_FLOATINGISLANDS',   	 	'TECH_ARCOLOGIES',                    4500, 'ART_DEF_BUILDING_LABORATORY',  44,'TCS_MOD_ICON_ATLAS',     	1, 30, 		'FWFloatingIslands_Splash.dds', 	'L,T'),
+('BUILDING_FW_NEPHILIM_GENE_TEMPLATE2', 'TECH_GENGINEERING',                  4750, 'ART_DEF_BUILDING_LABORATORY',  41,'TCS_MOD_ICON_ATLAS', 	    1, 30, 		'LivingCity_Splash.dds', 	        'L,T'),
+
+('BUILDING_FW_MNEMOSYNE', 				'TECH_CYBERNETICS',    	              4750, 'ART_DEF_BUILDING_LABORATORY',  45,'CIV_COLOR_ATLAS_FW_2',  	1, 30, 		'Mnemosyne_Splash.dds',		 		'L,T'),
+('BUILDING_FW_MNEMOSYNE2', 				'TECH_NUCLEAR_FUSION',                4750, 'ART_DEF_BUILDING_LABORATORY',  47,'TCS_MOD_ICON_ATLAS',     	1, 30, 		'Nuclearfusion_Splash.dds',		 		'L,T'),
+('BUILDING_FW_SKYNET', 					'TECH_AI', 	  		 	              4750, 'ART_DEF_BUILDING_LABORATORY',  32,'CIV_COLOR_ATLAS_FW_3',  	1, 30, 		'Skynet_Splash.dds',		 		'L,T'),
+('BUILDING_FW_ORBITAL_REFINERY', 		'TECH_ADAMANTIUM',                    4750, 'ART_DEF_BUILDING_LABORATORY',  57,'CIV_COLOR_ATLAS_FW_2',  	1, 30, 		'OrbitalRefinery_Splash.dds', 		'L,T'),
+('BUILDING_FW_SKYCITY', 	  	  	 	'TECH_TERRAFORMING',                  5000, 'ART_DEF_BUILDING_LABORATORY',  38,'TCS_MOD_ICON_ATLAS', 	    1, 30, 		'KingdomTowerCT_Splash.dds', 		'R,T'),
+('BUILDING_FW_NEPHILIM_GENE_TEMPLATE', 	'TECH_HUMAN_AUGMENTATION',            5000, 'ART_DEF_BUILDING_FW_GARDEN',   16,'CIV_COLOR_ATLAS_FW_3',   	1, 30, 		'NephilimGeneTemplate_Splash.dds', 	'L,T'),
+('BUILDING_FW_DIGITAL_EMANCIPATION', 	'TECH_DIGITAL_SOCIETY',               5000, 'ART_DEF_BUILDING_LABORATORY',  43,'CIV_COLOR_ATLAS_FW_2', 	    1, 32, 		'DigitalEmancipation_Splash.dds',	'L,T'),
+('BUILDING_FW_ANGELNET', 				'TECH_SMART_MATERIALS',               5000, 'ART_DEF_BUILDING_LABORATORY',  38,'CIV_COLOR_ATLAS_FW_2', 	    1, 30, 		'Angelnet_Splash.dds',		 		'L,T'),
+('BUILDING_FW_CITADEL_STATION', 		'TECH_ENERGY_THEORY',                 5000, 'ART_DEF_BUILDING_LABORATORY',   6,'CIV_COLOR_ATLAS_FW_3', 	    1, 30, 		'CitadelStation_Splash.dds',		'R,T'),
+('BUILDING_FW_ULTIMATOWER', 	  	 	'TECH_HYPERSTRUCTURES',               5000, 'ART_DEF_BUILDING_LABORATORY',  49,'CIV_COLOR_ATLAS_FW_2', 	    1, 30, 		'FWUltimaTower_Splash.dds', 		'L,T'),
+('BUILDING_FW_BIONICTOWER', 	  	 	'TECH_HYPERSTRUCTURES',               5000, 'ART_DEF_BUILDING_LABORATORY',  29,'CIV_COLOR_ATLAS_FW_2',	    1, 30, 		'FWBionicTower_Splash.dds', 		'C,T'),
+('BUILDING_FW_BUENOSAIRESFORUM',  	 	'TECH_HYPERSTRUCTURES',               5000, 'ART_DEF_BUILDING_LABORATORY',  47,'CIV_COLOR_ATLAS_FW_2',   	1, 30, 		'FWBuenosAiresForum_Splash.dds',	'L,T'),
+('BUILDING_FW_GENOME_PROJECT', 			NULL,    			              		-1, 'ART_DEF_BUILDING_LABORATORY',  21,'CIV_COLOR_ATLAS_FW_3', 	    1, NULL, 	'GenomeProject_Splash.dds',		 	'L,T'),
+('BUILDING_FW_ASTEROID_MINING', 		NULL,    								-1, 'ART_DEF_BUILDING_LABORATORY',  19,'CIV_COLOR_ATLAS_FW_3',   	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T'),
+('BUILDING_FW_ASTEROID_MINING_1', 		NULL,    								-1, 'ART_DEF_BUILDING_LABORATORY',  19,'CIV_COLOR_ATLAS_FW_3',  	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T'),
+('BUILDING_FW_ASTEROID_MINING_2', 		NULL,    								-1, 'ART_DEF_BUILDING_LABORATORY',  19,'CIV_COLOR_ATLAS_FW_3', 	    1, NULL, 	'AsteroidMining_Splash.dds',		'L,T');
 
 
 UPDATE Buildings
@@ -51,6 +53,8 @@ WHERE Type IN (
 'BUILDING_FW_BIONICTOWER',
 'BUILDING_FW_FLOATINGISLANDS',
 'BUILDING_FW_NEPHILIM_GENE_TEMPLATE',
+'BUILDING_FW_NEPHILIM_GENE_TEMPLATE2',
+
 'BUILDING_FW_SHANGHAI_WFC',
 'BUILDING_FW_ORBITAL_REFINERY',
 'BUILDING_FW_SKYNET',
@@ -60,6 +64,7 @@ WHERE Type IN (
 'BUILDING_FW_GENE_VAULT2',
 'BUILDING_FW_HELIOS',
 'BUILDING_FW_MNEMOSYNE',
+'BUILDING_FW_MNEMOSYNE2',
 'BUILDING_FW_PHOLUS_MUTAGEN',
 'BUILDING_FW_CITADEL_STATION',
 'BUILDING_FW_VIRTUAL_IDOL',
@@ -86,6 +91,8 @@ WHERE Type IN (
 'BUILDING_FW_BIONICTOWER',
 'BUILDING_FW_FLOATINGISLANDS',
 'BUILDING_FW_NEPHILIM_GENE_TEMPLATE',
+'BUILDING_FW_NEPHILIM_GENE_TEMPLATE2',
+
 'BUILDING_FW_SHANGHAI_WFC',
 'BUILDING_FW_ORBITAL_REFINERY',
 'BUILDING_FW_SKYNET',
@@ -95,6 +102,7 @@ WHERE Type IN (
 'BUILDING_FW_GENE_VAULT2',
 'BUILDING_FW_HELIOS',
 'BUILDING_FW_MNEMOSYNE',
+'BUILDING_FW_MNEMOSYNE2',
 'BUILDING_FW_PHOLUS_MUTAGEN',
 'BUILDING_FW_CITADEL_STATION',
 'BUILDING_FW_VIRTUAL_IDOL',
@@ -105,6 +113,12 @@ WHERE Type IN (
 'BUILDING_FW_ASTEROID_MINING_1',
 'BUILDING_FW_ASTEROID_MINING_2');
 
+----------------------------------------------
+-- CERN Changed
+----------------------------------------------
+UPDATE Buildings
+SET MinorFriendshipChange = 30
+WHERE Type = 'BUILDINGCLASS_CERN';
 
 ----------------------------------------------
 -- Skytree
@@ -129,19 +143,18 @@ SET SpecialistType = 'SPECIALIST_WRITER', SpecialistCount = 1, GreatPeopleRateCh
 WHERE Type = 'BUILDING_FW_GENE_VAULT';
 
 ----------------------------------------------
--- Gene Vault2
-----------------------------------------------
-UPDATE Buildings
-SET SpecialistType = 'SPECIALIST_WRITER', SpecialistCount = 1, GreatPeopleRateChange = 2, TechEnhancedTourism = 5, Happiness = 2, LandmarksTourismPercent = 50, GreatWorkSlotType = 'GREAT_WORK_SLOT_LITERATURE', GreatWorkCount = 2, ThemingBonusHelp = 'TXT_KEY_GENE_VAULT_THEMING_BONUS_HELP', MutuallyExclusiveGroup = 84524
-WHERE Type = 'BUILDING_FW_GENE_VAULT2';
-
-
-----------------------------------------------
 -- Shanghai Tower
 ----------------------------------------------
 UPDATE Buildings
 SET SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 2, PovertyFlatReductionGlobal = 5, FinishLandTRTourism = 5, FinishSeaTRTourism = 5
 WHERE Type = 'BUILDING_FW_SHANGHAI_WFC';
+
+----------------------------------------------
+-- Eden Project
+----------------------------------------------
+UPDATE Buildings
+SET SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, TechEnhancedTourism = 5, Happiness = 2, LandmarksTourismPercent = 50, GreatWorkSlotType = 'GREAT_WORK_SLOT_ART', GreatWorkCount = 2, ThemingBonusHelp = 'TXT_KEY_GENE_VAULT2_THEMING_BONUS_HELP', MutuallyExclusiveGroup = 84524
+WHERE Type = 'BUILDING_FW_GENE_VAULT2';
 
 ----------------------------------------------
 -- Virtual Idol
@@ -227,10 +240,19 @@ INSERT INTO BuildingClasses (Type, DefaultBuilding, Description) VALUES
 UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 1000, CitySupplyFlat = 1 WHERE Type = 'BUILDING_FW_FLOATINGISLANDS_DUMMY';
 
 ----------------------------------------------
+-- Nephilim Gene Template2
+----------------------------------------------
+UPDATE Buildings
+SET Happiness = 2, FreeBuildingThisCity = 'BUILDINGCLASS_FW_DISTRIBUTION_HUB', FreePromotion = 'PROMOTION_FW_PREDATOR', MutuallyExclusiveGroup = 23497
+WHERE Type = 'BUILDING_FW_NEPHILIM_GENE_TEMPLATE2';
+
+
+
+----------------------------------------------
 -- Nephilim Gene Template
 ----------------------------------------------
 UPDATE Buildings
-SET Happiness = 2, FreeBuildingThisCity = 'BUILDINGCLASS_FW_BIRTHING_PODS', FreePromotion = 'PROMOTION_FW_NEPHILIM', MutuallyExclusiveGroup = 23497
+SET Happiness = 2, FreeBuildingThisCity = 'BUILDINGCLASS_FW_BIRTHING_PODS'
 WHERE Type = 'BUILDING_FW_NEPHILIM_GENE_TEMPLATE';
 
 ----------------------------------------------
@@ -239,6 +261,15 @@ WHERE Type = 'BUILDING_FW_NEPHILIM_GENE_TEMPLATE';
 UPDATE Buildings
 SET SpecialistType = 'SPECIALIST_SCIENTIST', GreatPeopleRateChange = 2, TrainedFreePromotion = 'PROMOTION_MNEMOSYNE_EXPERIENCE'
 WHERE Type = 'BUILDING_FW_MNEMOSYNE';
+
+
+----------------------------------------------
+-- Nuclear Fusion network
+----------------------------------------------
+UPDATE Buildings
+SET MinorFriendshipChange = 100
+WHERE Type = 'BUILDING_FW_MNEMOSYNE2';
+
 
 ----------------------------------------------
 -- Skynet
@@ -315,16 +346,19 @@ WHERE Type = 'BUILDING_FW_SKYCITY';
 INSERT INTO Building_ThemingYieldBonus 
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_FW_SKYCITY',    'YIELD_GOLDEN_AGE_POINTS',  5),
-	('BUILDING_FW_SKYCITY',    'YIELD_FAITH',			   5),
-	('BUILDING_FW_GENE_VAULT', 'YIELD_FAITH',			   4),
-	('BUILDING_FW_GENE_VAULT', 'YIELD_GOLDEN_AGE_POINTS',  4);
+	('BUILDING_FW_SKYCITY',     'YIELD_GOLDEN_AGE_POINTS',  5),
+	('BUILDING_FW_SKYCITY',     'YIELD_FAITH',			    5),
+	('BUILDING_FW_GENE_VAULT',  'YIELD_FAITH',			    4),
+	('BUILDING_FW_GENE_VAULT',  'YIELD_GOLDEN_AGE_POINTS',  4),
+	('BUILDING_FW_GENE_VAULT2', 'YIELD_SCIENCE',		    4),
+	('BUILDING_FW_GENE_VAULT2', 'YIELD_GOLDEN_AGE_POINTS',  4);
 
 INSERT INTO Building_ThemingBonuses
 	(BuildingType, Description, Bonus, RequiresOwner, AIPriority, SameEra, RequiresSamePlayer)
 VALUES 
 	('BUILDING_FW_SKYCITY', 	'TXT_KEY_THEMING_BONUS_SKYCITY', 		 8, 1, 5, 0, 0),
  	('BUILDING_FW_GENE_VAULT',  'TXT_KEY_THEMING_BONUS_GENE_VAULT', 	 8, 1, 5, 0, 0),
+	('BUILDING_FW_GENE_VAULT',  'TXT_KEY_THEMING_BONUS_GENE_VAULT', 	 8, 1, 5, 0, 0),
  	('BUILDING_FW_VIRTUAL_IDOL','TXT_KEY_THEMING_BONUS_FW_VIRTUAL_IDOL', 2, 0, 2, 1, 1);
 
 ----------------------------------------------
@@ -358,7 +392,7 @@ WHERE Type = 'BUILDING_FW_ASTEROID_MINING_2';
 -- Project Utopia - Citizen Earth Protocol - Cultural Victory
 ----------------------------------------------
 UPDATE Projects
-SET Cost = 35000, TechPrereq = 'TECH_HOMO_SUPERIOR'
+SET Cost = 60000, TechPrereq = 'TECH_COMPUTRONIUM'
 WHERE Type = 'PROJECT_UTOPIA_PROJECT';
 
 

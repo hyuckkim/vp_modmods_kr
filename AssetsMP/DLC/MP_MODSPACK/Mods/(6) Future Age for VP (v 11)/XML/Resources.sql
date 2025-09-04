@@ -1,20 +1,3 @@
-
---==========================================================================================================================
--- ICON ATLASES
---==========================================================================================================================
-------------------------------
--- IconTextureAtlases
-------------------------------
--- INSERT INTO IconTextureAtlases 
--- 			(Atlas, 						IconSize, 	Filename,				IconsPerRow, 	IconsPerColumn)
--- VALUES		('RESOURCE_EGYPT_ATLAS',		256, 		'FlaxIcon_256.dds',		1, 				1),
--- 			('RESOURCE_EGYPT_ATLAS',		128, 		'FlaxIcon_128.dds',		1, 				1),
--- 			('RESOURCE_EGYPT_ATLAS',		80, 		'FlaxIcon_080.dds',		1, 				1),
--- 			('RESOURCE_EGYPT_ATLAS',		64, 		'FlaxIcon_064.dds',		1, 				1),
--- 			('RESOURCE_EGYPT_ATLAS',		45, 		'FlaxIcon_045.dds',		1, 				1),
--- 			('RESOURCE_EGYPT_ATLAS',		32, 		'FlaxIcon_032.dds',		1, 				1);
---==========================================================================================================================
-
 --==========================================================================================================================
 -- FONT ICONS
 --==========================================================================================================================
@@ -72,7 +55,7 @@ VALUES 		('ART_DEF_RESOURCE_ADN_FUNGUS', 	'Resource', 	'sv_FungalGrowth.dds');
 ------------------------------
 INSERT INTO Resources 
 			(Type,					TechReveal,		    	TechCityTrade, 				Description,				    Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				  Happiness,  IconString, 		       PortraitIndex, IconAtlas           ,  AITradeModifier, ResourceUsage, PlacementOrder, AIObjective, ConstAppearance, MinAreaSize, MaxLatitude, RandApp1, RandApp2, Player, Hills, Flatlands, IsMonopoly, MonopolyXPBonus)
-VALUES		('RESOURCE_NANOMAT',	'TECH_NANOTECHNOLOGY',	'TECH_NANOTECHNOLOGY',		'TXT_KEY_RESOURCE_NANOMAT',	   'TXT_KEY_RESOURCE_NANOMAT_TEXT',	    'TXT_KEY_RESOURCE_NANOMAT_HELP',	   'RESOURCECLASS_MODERN',	'ART_DEF_RESOURCE_ALUMINUM',   0,		  '[ICON_RES_NANOMAT]',    31,			 'CIV_COLOR_ATLAS_FW_3',  10             , 1            , 1             , 1          , 100            , 3          , 90         , 10      , 10      , 100  ,  0    ,   1      , 1         , 2);
+VALUES		('RESOURCE_NANOMAT',	'TECH_NANOTECHNOLOGY',	'TECH_NANOTECHNOLOGY',		'TXT_KEY_RESOURCE_NANOMAT',	   'TXT_KEY_RESOURCE_NANOMAT_TEXT',	    'TXT_KEY_RESOURCE_NANOMAT_HELP',	   'RESOURCECLASS_MODERN',	'ART_DEF_RESOURCE_ALUMINUM',   0,		  '[ICON_RES_NANOMAT]',    31,			 'CIV_COLOR_ATLAS_FW_3',  10             , 1            , 1             , 1          , 100            , 3          , 90         , 10      , 10      , 100  ,  1    ,   1      , 1         , 2);
 
 INSERT INTO Resources 
 			(Type,					TechReveal,		        TechCityTrade, 		        Description,					Civilopedia, 						 Help,	                                ResourceClassType, 		ArtDefineTag, 				  Happiness,  IconString, 		       PortraitIndex, IconAtlas           ,  AITradeModifier, ResourceUsage, PlacementOrder, AIObjective, ConstAppearance, MinAreaSize, MaxLatitude, RandApp1, RandApp2, Player, Hills, Flatlands, IsMonopoly, MonopolyXPBonus)
@@ -84,7 +67,9 @@ INSERT INTO Resource_YieldChanges
 	(ResourceType, 				YieldType, 			Yield)
 VALUES	
     ('RESOURCE_ADN_FUNGUS',		'YIELD_CULTURE',		1),
-    ('RESOURCE_ADN_FUNGUS',		'YIELD_SCIENCE',		1);
+    ('RESOURCE_ADN_FUNGUS',		'YIELD_SCIENCE',		1),
+	('RESOURCE_NANOMAT',		'YIELD_PRODUCTION',		1),
+    ('RESOURCE_NANOMAT',		'YIELD_GOLD',	    	1);
 
 INSERT INTO Policy_ResourceYieldChanges
 	(PolicyType, ResourceType, YieldType, Yield)
@@ -93,13 +78,6 @@ VALUES
 	('POLICY_RATIONALISM', 'RESOURCE_ADN_FUNGUS', 'YIELD_PRODUCTION', 2),
 	('POLICY_RATIONALISM', 'RESOURCE_NANOMAT', 'YIELD_SCIENCE', 3),
 	('POLICY_RATIONALISM', 'RESOURCE_NANOMAT', 'YIELD_PRODUCTION', 2);
-
--- INSERT INTO Resource_TerrainBooleans (ResourceType,	TerrainType)
--- SELECT 'RESOURCE_ADN_FUNGUS',							'TERRAIN_DESERT' UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',							'TERRAIN_TUNDRA' UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',							'TERRAIN_SNOW' UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',							'TERRAIN_GRASS' UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',							'TERRAIN_PLAINS';
 
 INSERT INTO Resource_TerrainBooleans
 	(ResourceType, TerrainType)
@@ -116,27 +94,12 @@ VALUES
 	('RESOURCE_NANOMAT',    'TERRAIN_TUNDRA'),
 	('RESOURCE_NANOMAT',    'TERRAIN_SNOW');
 
--- INSERT INTO Resource_FeatureBooleans (ResourceType,	FeatureType)
--- SELECT 'RESOURCE_ADN_FUNGUS',						'FEATURE_MARSH'          UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'FEATURE_FOREST'         UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'FEATURE_JUNGLE'         UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'FEATURE_FLOOD_PLAINS';
-
 INSERT INTO Resource_FeatureBooleans
 	(ResourceType, FeatureType)
 VALUES
 	('RESOURCE_ADN_FUNGUS', 'FEATURE_MARSH'),
 	('RESOURCE_ADN_FUNGUS', 'FEATURE_FOREST'),
 	('RESOURCE_ADN_FUNGUS', 'FEATURE_JUNGLE');
-
--- INSERT INTO Resource_FeatureTerrainBooleans (ResourceType,	TerrainType)
--- SELECT 'RESOURCE_ADN_FUNGUS',						'TERRAIN_DESERT'         UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'TERRAIN_TUNDRA'         UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'TERRAIN_SNOW'           UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'TERRAIN_GRASS'          UNION ALL
--- SELECT 'RESOURCE_ADN_FUNGUS',						'TERRAIN_PLAINS';
-
-
 
 ------------------------------
 -- Resource_Flavors
@@ -146,8 +109,10 @@ INSERT INTO Resource_Flavors
 VALUES		
         ('RESOURCE_NANOMAT',	'FLAVOR_OFFENSE',		10),
         ('RESOURCE_NANOMAT',	'FLAVOR_DEFENSE',		10),
+	    ('RESOURCE_NANOMAT',	'FLAVOR_SCIENCE',		15),
+		('RESOURCE_NANOMAT',	'FLAVOR_PRODUCTION',    10),
         ('RESOURCE_ADN_FUNGUS',	'FLAVOR_SCIENCE',		10),
-		('RESOURCE_ADN_FUNGUS',	'FLAVOR_CULTURE',		10),
+		('RESOURCE_ADN_FUNGUS',	'FLAVOR_CULTURE',		15),
 		('RESOURCE_ADN_FUNGUS',	'FLAVOR_DEFENSE',		10),
 		('RESOURCE_ADN_FUNGUS',	'FLAVOR_OFFENSE',		10);
 
@@ -170,8 +135,8 @@ VALUES
 INSERT INTO Improvement_ResourceTypes
 			(ResourceType, 			ImprovementType)
 VALUES		('RESOURCE_ADN_FUNGUS',	'IMPROVEMENT_FW_FUNGAL_GROWTH'),
-	        ('RESOURCE_NANOMAT',	'IMPROVEMENT_WELL');
-
+	        ('RESOURCE_NANOMAT',	'IMPROVEMENT_WELL'),
+	        ('RESOURCE_NANOMAT',	'IMPROVEMENT_OFFSHORE_PLATFORM');
 ------------------------------
 -- Improvement_ResourceType_Yields
 ------------------------------
@@ -183,24 +148,6 @@ VALUES	('RESOURCE_ADN_FUNGUS',	'IMPROVEMENT_FW_FUNGAL_GROWTH',	'YIELD_CULTURE',	
 		('RESOURCE_NANOMAT',	'IMPROVEMENT_WELL',	            'YIELD_SCIENCE',	3);
 
 --==========================================================================================================================
-
---==========================================================================================================================
--- BUILDINGS
---==========================================================================================================================				
-------------------------------
--- Building_ResourceYieldChanges
-------------------------------		
--- INSERT INTO Building_ResourceYieldChanges
--- 			(BuildingType,					ResourceType,			YieldType,			Yield)
--- VALUES		('BUILDING_BURIAL_TOMB',		'RESOURCE_EGYPT_FLAX',	'YIELD_GOLD',		1),
--- 			('BUILDING_BURIAL_TOMB',		'RESOURCE_EGYPT_FLAX',	'YIELD_FAITH',	1),
--- 			('BUILDING_CARAVANSARY',		'RESOURCE_EGYPT_FLAX',	'YIELD_GOLD',		1),
--- 			('BUILDING_CARAVANSARY',		'RESOURCE_EGYPT_FLAX',	'YIELD_FAITH',	1);
---==========================================================================================================================
---==========================================================================================================================
-
---=======================================
-
 INSERT INTO Resource_YieldChangeFromMonopoly
 	(ResourceType, YieldType, Yield)
 VALUES

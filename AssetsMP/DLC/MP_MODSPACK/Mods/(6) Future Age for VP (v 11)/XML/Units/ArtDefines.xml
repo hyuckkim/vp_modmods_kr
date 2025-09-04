@@ -2083,7 +2083,7 @@
 		<Row>
 			<UnitInfoType>ART_DEF_UNIT_FW_CHIMERA</UnitInfoType>
 			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_FW_CHIMERA</UnitMemberInfoType>
-			<NumMembers>3</NumMembers>
+			<NumMembers>5</NumMembers>
 		</Row>
 	</ArtDefine_UnitInfoMemberInfos>
 	<ArtDefine_UnitMemberInfos>
@@ -2183,13 +2183,13 @@
 		<Row>
 			<UnitInfoType>ART_DEF_UNIT_SCORPION_GREEN</UnitInfoType>
 			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_SCORPION_GREEN</UnitMemberInfoType>
-			<NumMembers>3</NumMembers>
+			<NumMembers>8</NumMembers>
 		</Row>
 	</ArtDefine_UnitInfoMemberInfos>
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_SCORPION_GREEN</Type>
-			<Scale>0.5</Scale>
+			<Scale>0.3</Scale>
 			<Model>Scorpion_GREEN.fxsxml</Model>
 			<MaterialTypeTag>CLOTH</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>

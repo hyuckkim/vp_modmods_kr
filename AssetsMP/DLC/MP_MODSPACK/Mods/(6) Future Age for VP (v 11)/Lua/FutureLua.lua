@@ -17,35 +17,7 @@ local iPlotXFloatingIslands -- City which built FloatingIslands
 local iPlotYFloatingIslands -- City which built FloatingIslands
 local iBuildingMnemosyne = GameInfoTypes["BUILDING_FW_MNEMOSYNE"]
 
-print("FloatingIslands is", iFloatingIslands, "FloatingIslands Dummy is", iFloatingIslandsDummy);
-
---------------------------------------------
--- Floating Islands: Human-only sync helpers
---------------------------------------------
-local function HumanID() return Game.GetActivePlayer() end
-
-local function ApplyFloatingDummyToPlayer(iTargetPlayer)
-	local p = Players[iTargetPlayer]
-	if not p or not p:IsAlive() then return end
-	for city in p:Cities() do
-		city:SetNumRealBuilding(iFloatingIslandsDummy, 1)
-	end
-end
-
-local function ClearFloatingDummyFromPlayer(iTargetPlayer)
-	local p = Players[iTargetPlayer]
-	if not p or not p:IsAlive() then return end
-	for city in p:Cities() do
-		if city:GetNumRealBuilding(iFloatingIslandsDummy) > 0 then
-			city:SetNumRealBuilding(iFloatingIslandsDummy, 0)
-		end
-	end
-end
-
-local function HumanOwnsFloatingIslands()
-	return bHasFloatingIslands and iPlayerFloatingIslands == HumanID()
-end
-
+print("FloatingIslands is", iFloatingIslands, "FloatingIslands Dummy is", iFloatingIslandsDummyck);
 
 --------------------------------------------
 -- Angelnet
@@ -85,14 +57,7 @@ function OnLoadScreenCloseFW()
 						iPlotXAngelnet = pCity:GetX()
 						iPlotYAngelnet = pCity:GetY()
 						iPlayerAngelnet = i
-					
-	-- Human-only sync on load
-	if HumanOwnsFloatingIslands() then
-		ApplyFloatingDummyToPlayer(HumanID())
-	else
-		ClearFloatingDummyFromPlayer(HumanID())
-	end
-end
+					end
 					if pCity:IsHasBuilding(iFloatingIslands) then
 						bHasFloatingIslands = true
 						iPlotXFloatingIslands = pCity:GetX()
@@ -152,18 +117,12 @@ GameEvents.CityConstructed.Add(OnCityConstructedFW)
 --------------------------------------------
 function OnPlayerCityFoundedFW (iPlayer, iX, iY)
 	if bHasFloatingIslands then
-		-- Human-only: only apply if city belongs to human and human currently owns the wonder
-		if iPlayer == HumanID() and HumanOwnsFloatingIslands() then
+		if iPlayer == iPlayerFloatingIslands then
 			local pPlot = Map.GetPlot(iX, iY)
-			if pPlot then
-				local pCity = pPlot:GetPlotCity()
-				if pCity then
-					pCity:SetNumRealBuilding (iFloatingIslandsDummy, 1)
-				end
+			local pCity = pPlot:GetPlotCity()
+			if pCity:IsCoastal(10) then
+				pCity:SetNumRealBuilding (iFloatingIslandsDummy, 1)
 			end
-		end
-	end
-end
 		end
 	end
 end
@@ -189,28 +148,6 @@ function IsNoCoastFW(ePlayer, eCity, eBuilding)
 end
 GameEvents.CityCanConstruct.Add(IsNoCoastFW)
 
-
-
---------------------------------------------
--- Floating Islands: capture sync (human-only)
---------------------------------------------
-function OnCityCaptureCompleteFW (oldOwner, bIsCapital, iX, iY, newOwner, bConquest)
-	local pPlot = Map.GetPlot(iX, iY)
-	if not pPlot then return end
-	local pCity = pPlot:GetPlotCity()
-	if not pCity then return end
-	if pCity:IsHasBuilding(iFloatingIslands) then
-		-- Update current owner of the Wonder
-		iPlayerFloatingIslands = newOwner
-		-- Human-only re-sync
-		if newOwner == HumanID() then
-			ApplyFloatingDummyToPlayer(HumanID())
-		else
-			ClearFloatingDummyFromPlayer(HumanID())
-		end
-	end
-end
-GameEvents.CityCaptureComplete.Add(OnCityCaptureCompleteFW)
 --------------------------------------------
 -- Mnemosyne 
 --------------------------------------------
@@ -235,98 +172,82 @@ GameEvents.CityTrained.Add(MnemosyneBonusFW)
 -----------------------------------
 -- Unit
 ----------------------------------
------------------------------------
--- Random util
------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+-- JFD_GetRandom
+--------------------------------------------------------------------------------------------------------------------------
 function JFD_GetRandomFW(lower, upper)
     return Game.Rand((upper + 1) - lower, "") + lower
 end
 
------------------------------------
--- Config (Á¶Á¤ ÁöÁ¡)
------------------------------------
-local UNIT_CRAWLER          = GameInfoTypes.UNIT_FW_CRAWLER
-local UNIT_ANGEL            = GameInfoTypes.UNIT_FW_ANGEL
-local UNIT_MISSILE_SPAWNED  = GameInfoTypes.UNIT_FW_HYPERMISSILE
--- Crawler Å¸ÀÏ¿¡¼­ ¡°ÀÌ¹Ì ÀÖ´Â ¹Ì»çÀÏ¡±À» ¼¿ ¶§ ±âÁØ À¯´Ö(¿øÄÚµå¿¡ ¸ÂÃã)
-local UNITTYPE_TO_COUNT_FOR_CRAWLER = GameInfoTypes.UNIT_GUIDED_MISSILE
--- Angel Å¸ÀÏ¿¡¼­ ¡°ÀÌ¹Ì ÀÖ´Â ¹Ì»çÀÏ¡± ¼¿ ¶§ ±âÁØ À¯´Ö(¿øÄÚµå¿¡ ¸ÂÃã)
-local UNITTYPE_TO_COUNT_FOR_ANGEL   = GameInfoTypes.UNIT_FW_HYPERMISSILE
+--------------------------------------------
+-- Crawler unit
+--------------------------------------------
+local iChanceMissileProduction = 25
+local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
 
-local CRAWLER_SPAWN_CHANCE = 25   -- %
-local CRAWLER_TILE_CAP     = 3    -- Å¸ÀÏ¿¡ Çã¿ëÇÒ ¹Ì»çÀÏ ¼ö(ÇØ´ç Ã¼Å© À¯´Ö ±âÁØ)
-local ANGEL_SPAWN_CHANCE   = 25   -- %
-local ANGEL_TILE_CAP       = 1
-
--- ¹Ù¹Ù¸®¾È/½Ã¹Î±¹°¡ Á¦¿ÜÇÏ°í ½ÍÀ¸¸é true
-local EXCLUDE_BARBARIANS   = true
-local EXCLUDE_MINOR_CS     = false
-
------------------------------------
--- °ø¿ë ½ºÆù ÇÔ¼ö
------------------------------------
-local function TrySpawnMissileOnPlot(pPlayer, pPlot, unitTypeToSpawn, tileCap, unitTypeToCount)
-    if not pPlot then return end
-    if not unitTypeToSpawn then return end
-    if not unitTypeToCount then unitTypeToCount = unitTypeToSpawn end
-
-    -- ÇöÀç Å¸ÀÏÀÇ ÇØ´ç Å¸ÀÔ À¯´Ö ¼ö ¼¼±â
-    local count = 0
-    local n = pPlot:GetNumUnits()
-    for i = 0, n - 1 do
-        local u = pPlot:GetUnit(i)
-        if u and u:GetUnitType() == unitTypeToCount then
-            count = count + 1
-            if count >= tileCap then
-                return -- ÀÌ¹Ì cap
-            end
-        end
-    end
-
-    -- ±â¼ú/ÀÚ¿ø/»ı»ê Á¶°Ç ¹«½Ã »ı¼º
-    local newUnit = pPlayer:InitUnit(unitTypeToSpawn, pPlot:GetX(), pPlot:GetY())
-    if newUnit then
-        -- ¸¸¾à Å¸ÀÏÀÌ À¯È¿ÇÏÁö ¾Ê´Ù¸é ±ÙÃ³·Î Á¡ÇÁ
-        newUnit:JumpToNearestValidPlot()
-    end
+function CrawlerEffectsFW(iPlayer)
+	local pPlayer = Players[iPlayer]
+	for pUnit in pPlayer:Units() do
+		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_CRAWLER"]) then
+			--print("Crawler found")
+			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
+			if (iCheckForMissileProduction < iChanceMissileProduction) then
+				local pPlot = pUnit:GetPlot()
+				if (pPlot ~= nil) then
+					local iNumMissiles = 0
+					for iVal = 0,(pPlot:GetNumUnits() - 1) do
+						local loopUnit = pPlot:GetUnit(iVal)
+						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_FW_HYPERMISSILE"]) then
+							--print("Missile found")
+							iNumMissiles = iNumMissiles + 1
+						end
+					end
+					--print("Total missiles: " .. iNumMissiles)
+					if (iNumMissiles < 3) then
+						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
+					end
+				end
+			end
+		end
+	end
 end
+GameEvents.PlayerDoTurn.Add(CrawlerEffectsFW)
 
------------------------------------
--- Angel/Crawler °ø¿ë Ã³¸®
------------------------------------
-local function HandleUnitMissileTick(pPlayer, pUnit, spawnChance, tileCap, unitTypeToCount)
-    if not pUnit or pUnit:IsDelayedDeath() then return end
-    if JFD_GetRandomFW(1, 100) > spawnChance then return end
 
-    local pPlot = pUnit:GetPlot()
-    if not pPlot then return end
+--------------------------------------------
+-- Angel unit
+--------------------------------------------
+local iChanceMissileProduction = 25
+local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
+local iNanohivePromotion = GameInfoTypes.PROMOTION_FW_NANOHIVE_PROMOTION
 
-    TrySpawnMissileOnPlot(pPlayer, pPlot, UNIT_MISSILE_SPAWNED, tileCap, unitTypeToCount)
+function AngelEffectsFW(iPlayer)
+	local pPlayer = Players[iPlayer]
+	for pUnit in pPlayer:Units() do
+		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_ANGEL"]) then
+			--print("Angel found")
+			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
+			if (iCheckForMissileProduction < iChanceMissileProduction) then
+				local pPlot = pUnit:GetPlot()
+				if (pPlot ~= nil) then
+					local iNumMissiles = 0
+					for iVal = 0,(pPlot:GetNumUnits() - 1) do
+						local loopUnit = pPlot:GetUnit(iVal)
+						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_FW_HYPERMISSILE"]) then
+							--print("Missile found")
+							iNumMissiles = iNumMissiles + 1
+						end
+					end
+					--print("Total missiles: " .. iNumMissiles)
+					if (iNumMissiles < 1) then
+						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
+					end
+				end
+			end
+		end
+	end
 end
-
------------------------------------
--- ¸ŞÀÎ ÅÏ ÈÅ
------------------------------------
-local function OnPlayerDoTurn_FW(iPlayer)
-    local pPlayer = Players[iPlayer]
-    if not pPlayer or not pPlayer:IsAlive() then return end
-    if EXCLUDE_BARBARIANS and pPlayer:IsBarbarian() then return end
-    if EXCLUDE_MINOR_CS and pPlayer:IsMinorCiv() then return end
-
-    for pUnit in pPlayer:Units() do
-        local uType = pUnit:GetUnitType()
-        if uType == UNIT_CRAWLER then
-            -- Crawler: GUIDED_MISSILE ±âÁØÀ¸·Î Å¸ÀÏ cap Ã¼Å©(¿ø·¡ ÄÚµå À¯Áö)
-            HandleUnitMissileTick(pPlayer, pUnit, CRAWLER_SPAWN_CHANCE, CRAWLER_TILE_CAP, UNITTYPE_TO_COUNT_FOR_CRAWLER)
-
-        elseif uType == UNIT_ANGEL then
-            -- Angel: HYPERMISSILE ±âÁØÀ¸·Î Å¸ÀÏ cap Ã¼Å©(¿ø·¡ ÄÚµå À¯Áö)
-            HandleUnitMissileTick(pPlayer, pUnit, ANGEL_SPAWN_CHANCE, ANGEL_TILE_CAP, UNITTYPE_TO_COUNT_FOR_ANGEL)
-        end
-    end
-end
-GameEvents.PlayerDoTurn.Add(OnPlayerDoTurn_FW)
-
+GameEvents.PlayerDoTurn.Add(AngelEffectsFW)
 
 --------------------------------------------
 -- PROMOTION
@@ -427,82 +348,399 @@ GameEvents.UnitPrekill.Add(FWUnitDestroyed2)
 
 
 --======================================================================================================================
--- VAULT (Airbase + Missile Silo)
--- - Ç×°ø±â(ÀüÅõ±â/Æø°İ±â µî DOMAIN_AIR) + ¹Ì»çÀÏ(SPECIALUNIT_MISSILE) ¸ğµÎ Àç¹èÄ¡ Çã¿ë
--- - ¼ö¿ë ÇÑµµ: Ç×°ø±â/¹Ì»çÀÏ º°µµ + ÃÑÇÕ
--- - ³» ÆÀ(°°Àº ÆÀ)¸¸ »ç¿ë °¡´É, ÆÄ¼Õ ½Ã ºÒ°¡
+-- VAULT
 --======================================================================================================================
-local iImprovementVault     = GameInfoTypes.IMPROVEMENT_FW_VAULT
-local SPECIAL_MISSILE       = "SPECIALUNIT_MISSILE"
+local iImprovementVault = GameInfoTypes.IMPROVEMENT_FW_VAULT
+local iMaxMissilesPerSilo = 3
 
--- ÇÑµµ (¿øÇÏ´Â °ªÀ¸·Î Á¶Á¤)
-local iMaxAircraftPerVault  = 2    -- ÀüÅõ±â/Æø°İ±â µî Ç×°ø±â
-local iMaxMissilesPerVault  = 3    -- À¯µµ/ÇÙ ¹Ì»çÀÏ
-local iMaxTotalPerVault     = 3    -- ÃÑÇÕ »óÇÑ (¿øÇÏ¸é -1·Î ²ô±â)
+-- CanLoadAt() is only called for plots that are neither a city nor have a cargo carrying unit in them
+-- It should be used to ascertain if the plot can hold aircraft anyway (usually in an improvement)
+function OnCanLoadNukesAt(iPlayer, iUnit, iPlotX, iPlotY)
+  local pPlot = Map.GetPlot(iPlotX, iPlotY)
+  local pUnit = Players[iPlayer]:GetUnitByID(iUnit)
+  local unit = GameInfo.Units[pUnit:GetUnitType()]
 
-local function isSameTeam(iPlayerA, iPlayerB)
-  if iPlayerA == -1 or iPlayerB == -1 then return false end
-  local tA = Players[iPlayerA]:GetTeam()
-  local tB = Players[iPlayerB]:GetTeam()
-  return tA == tB
+  if (pPlot:GetImprovementType() == iImprovementVault) then
+    print(string.format("Nuclear silo found at (%i, %i)", iPlotX, iPlotY))
+	return not pPlot:IsImprovementPillaged()
+  end
+  
+  return false
 end
+GameEvents.CanLoadAt.Add(OnCanLoadNukesAt)
 
-function OnCanLoadAt_VaultAirbase(iPlayer, iUnit, iPlotX, iPlotY)
-  local pPlayer = Players[iPlayer]; if not pPlayer then return false end
-  local pUnit   = pPlayer:GetUnitByID(iUnit); if not pUnit then return false end
-  local pPlot   = Map.GetPlot(iPlotX, iPlotY); if not pPlot then return false end
+-- CanRebaseTo() is only called for non-city plots without a unit that can take cargo
+-- It should be used to ascertain if the plot can take our aircraft anyway
+-- The city equivalent is CanRebaseInCity()
+function OnCanRebaseNukesTo(iPlayer, iUnit, iPlotX, iPlotY)
+	local pPlot = Map.GetPlot(iPlotX, iPlotY)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-  -- µµ½Ã/¿î¹İÀ¯´ÖÀÌ ¾ø´Â Å¸ÀÏ¸¸ ÀÌº¥Æ®°¡ ¿Â´Ù. ±İ°í + ºñÆÄ±« Ã¼Å©
-  if pPlot:GetImprovementType() ~= iImprovementVault then return false end
-  if pPlot:IsImprovementPillaged() then return false end
+	if (pPlot:GetImprovementType() == iImprovementVault and not pPlot:IsImprovementPillaged() and CanSiloAt(pPlot, pUnit)) then
+		 print(string.format("Found a viable missile silo at (%i, %i) - checking missile limit", iPlotX, iPlotY))
+		 return (CountMissiles(pPlot, pUnit) < iMaxMissilesPerSilo)
+	end
 
-  -- ¼ÒÀ¯ÀÚ ÆÀ(°°Àº ÆÀ¸¸ Çã¿ë; ÇÊ¿äÇÏ¸é µ¿¸Í/°³¹æ°æ°è±îÁö ³ĞÈ÷¼¼¿ä)
-  local ownerID = pPlot:GetOwner()
-  if ownerID == -1 or not isSameTeam(iPlayer, ownerID) then return false end
+	return false
+end
+GameEvents.CanRebaseTo.Add(OnCanRebaseNukesTo)
 
-  -- Ç×°ø À¯´Ö¸¸ Çã¿ë (ÀüÅõ±â/Æø°İ±â/ÇÙÆøÅº/À¯µµ¹Ì»çÀÏ µî)
-  if pUnit:GetDomainType() ~= DomainTypes.DOMAIN_AIR then
-    return false
+
+function CanSiloAt(pPlot, pUnit)
+  local iPlayer = pUnit:GetOwner()
+
+  -- Check the units on the tile (if any) 
+  for i = 0, pPlot:GetNumUnits()-1, 1 do
+    local pPlotUnit = pPlot:GetUnit(i)
+	
+	if (pPlotUnit:GetOwner() == iPlayer) then
+	  return true -- Any of our own is good
+	else
+	  return false -- Any not ours is bad
+	end
+  end
+  
+  -- No units, so check ownership of the tile
+  local iOwner = pPlot:GetOwner()
+  if (iOwner == iPlayer or iOwner == -1 or Players[iPlayer]:GetTeam() == Players[iOwner]:GetTeam()) then
+    return (pUnit.NukeDamageLevel == 2) -- only nukes allowed
   end
 
-  -- Á¾·ù ÆÇº°(¹Ì»çÀÏ ¿©ºÎ)
-  local unitInfo = GameInfo.Units[pUnit:GetUnitType()]
-  local isMissile = (unitInfo and unitInfo.Special == SPECIAL_MISSILE)
+  local pOwner = Players[iOwner]
+  if (pOwner:IsMinor() and pOwner:GetAlly() == iPlayer) then
+    return (pUnit.NukeDamageLevel == 2) -- only nukes allowed
+  end
 
-  -- ÇöÀç Å¸ÀÏÀÇ Ç×°ø±â/¹Ì»çÀÏ ¼ö Ä«¿îÆ®
-  local aircraftCount, missileCount, totalCount = 0, 0, 0
-  local n = pPlot:GetNumUnits()
-  for i = 0, n - 1 do
-    local u = pPlot:GetUnit(i)
-    if u and u:GetDomainType() == DomainTypes.DOMAIN_AIR then
-      totalCount = totalCount + 1
-      local info = GameInfo.Units[u:GetUnitType()]
-      if info and info.Special == SPECIAL_MISSILE then
-        missileCount = missileCount + 1
-      else
-        aircraftCount = aircraftCount + 1
+  return false
+end
+
+function CountMissiles(pPlot, pUnit)
+  local iMissiles = 0
+  local iPlayer = pUnit:GetOwner()
+  
+  for i = 0, pPlot:GetNumUnits()-1, 1 do
+    local pPlotUnit = pPlot:GetUnit(i)
+	
+	if (pPlotUnit:GetOwner() == iPlayer and pPlotUnit:GetSpecialUnitType() == 2) then
+	  iMissiles = iMissiles + 1
+	end
+  end
+  
+  return iMissiles
+end
+
+
+--=====================================================================
+-- Splash missile  (Short range missile)
+--=====================================================================
+print("[FW] Short-range splash (L1~L3, r=3) loaded")
+
+-- ì™¸ë¶€ì—ì„œ ì´ë¯¸ ì •ì˜ëë‹¤ë©´ ì¬ì •ì˜ ê¸ˆì§€
+local iUnitVaultRack = GameInfoTypes["UNIT_FW_VAULT_RACK"]
+
+-- í”„ë¡œëª¨ì…˜(1~3ë§Œ ì‚¬ìš©)
+local PROMO_TYPES = {
+  [1] = "PROMOTION_FW_SPLASH_DAMAGE_1",
+  [2] = "PROMOTION_FW_SPLASH_DAMAGE_2",
+  [3] = "PROMOTION_FW_SPLASH_DAMAGE_3",
+}
+local PROMO_IDS = {}; for i=1,3 do PROMO_IDS[i] = GameInfoTypes[PROMO_TYPES[i]] end
+
+-- ìœ ë‹› íƒ€ì…ì— ë¬´ë£Œ í”„ë¡œëª¨ê°€ ë°•í˜€ ìˆë‹¤ë©´ ê·¸ê±¸ ìµœê³  ë ˆë²¨ë¡œ ì‚¬ìš©
+local UNIT_SPLASH_LEVEL = (function()
+  local best = {}
+  for lvl = 1, 3 do
+    local pType = PROMO_TYPES[lvl]
+    local pid   = pType and GameInfoTypes[pType]
+    if pid then
+      for row in GameInfo.Unit_FreePromotions() do
+        if row.PromotionType == pType then
+          local ut = GameInfoTypes[row.UnitType]
+          if ut then best[ut] = math.max(best[ut] or 0, lvl) end
+        end
+      end
+    end
+  end
+  return best
+end)()
+
+-- ë°˜ê²½/ë°ë¯¸ì§€(ì¤‘ì‹¬ 0, ë§1~3)
+local LEVELS = {
+  [1] = { radius = 3, center = 0, ring = { 20, 10, 5 } },
+  [2] = { radius = 3, center = 0, ring = { 30, 15, 8 } },
+  [3] = { radius = 3, center = 0, ring = { 40, 20, 10 } },
+}
+local FRIENDLY_FIRE = false
+
+-- ì „ìŸ/ìš°í˜¸ íŒì •
+local function IsValidTarget(attID, tgtID)
+  if tgtID == -1 then return false end
+  if attID == tgtID then return FRIENDLY_FIRE end
+  local A, T = Players[attID], Players[tgtID]
+  if not A or not T then return false end
+  return Teams[A:GetTeam()]:IsAtWar(T:GetTeam()) or FRIENDLY_FIRE
+end
+
+-- ë§ ìƒì„± (PlotIterators ì—†ì´)
+local dirs = {
+  DirectionTypes.DIRECTION_NORTHEAST, DirectionTypes.DIRECTION_EAST,
+  DirectionTypes.DIRECTION_SOUTHEAST, DirectionTypes.DIRECTION_SOUTHWEST,
+  DirectionTypes.DIRECTION_WEST,      DirectionTypes.DIRECTION_NORTHWEST
+}
+local function Rings(center, R)
+  local visited={[center]=true}; local rings={}; local frontier={center}
+  for r=1, R do
+    local nxt, ring = {}, {}
+    for _,p in ipairs(frontier) do
+      for _,d in ipairs(dirs) do
+        local q = Map.PlotDirection(p:GetX(), p:GetY(), d)
+        if q and not visited[q] then
+          visited[q] = true; nxt[#nxt+1] = q; ring[#ring+1] = q
+        end
+      end
+    end
+    rings[r]=ring; frontier=nxt
+  end
+  return rings
+end
+
+-- íƒ€ì¼ì— í”¼í•´ ì ìš©(ìœ ë‹›/ë„ì‹œ)
+local function DoSplashAtPlot(attID, plot, dmg)
+  if dmg<=0 then return end
+  for i=0, plot:GetNumUnits()-1 do
+    local u = plot:GetUnit(i)
+    if u and not (iUnitVaultRack and u:GetUnitType()==iUnitVaultRack) then
+      if IsValidTarget(attID, u:GetOwner()) then u:ChangeDamage(dmg) end
+    end
+  end
+  local city = plot:GetPlotCity()
+  if city and IsValidTarget(attID, city:GetOwner()) then city:ChangeDamage(dmg) end
+end
+
+-- ìœ ë‹› ì¸ìŠ¤í„´ìŠ¤ì—ì„œ ìµœê³  ë ˆë²¨(3â†’1) íƒìƒ‰
+local function GetLevelFromUnit(u)
+  for lvl=3,1,-1 do
+    local id = PROMO_IDS[lvl]
+    if id and u:IsHasPromotion(id) then return lvl end
+  end
+end
+
+-- ì¤‘ë³µ ë°©ì§€ í‚¤
+local _fired = {}
+local function OnUnitPrekill(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, iByPlayer)
+  local key = iPlayer..":"..iUnitID..":"..(iX or -1)..":"..(iY or -1)
+  if _fired[key] then return end
+
+  local pPlayer = Players[iPlayer]; if not pPlayer then return end
+  local u = pPlayer:GetUnitByID(iUnitID)  -- ë‹¨ê±°ë¦¬ëŠ” ë³´í†µ ì‚´ì•„ìˆìŒ
+
+  -- ë ˆë²¨: ì¸ìŠ¤í„´ìŠ¤ â†’ íƒ€ì… ë¬´ë£Œí”„ë¡œëª¨ â†’ ì—†ìŒ(ë¦¬í„´)
+  local lvl = (u and GetLevelFromUnit(u)) or UNIT_SPLASH_LEVEL[iUnitType]
+  if not lvl or lvl <= 0 then return end
+
+  local cfg = LEVELS[math.min(lvl,3)] or LEVELS[1]
+  local center = Map.GetPlot(iX, iY); if not center then return end
+
+  -- ì¤‘ì‹¬(0ì´ë¯€ë¡œ ë³´í†µ no-op)
+  DoSplashAtPlot(iPlayer, center, cfg.center or 0)
+
+  -- ëª¨ë“  ë§ ì ìš© (1..radius)
+  if (cfg.radius or 0) >= 1 then
+    local rings = Rings(center, cfg.radius)
+    for r=1, cfg.radius do
+      local dmg = (cfg.ring and cfg.ring[r]) or 0
+      if dmg > 0 and rings[r] then
+        for _,p in ipairs(rings[r]) do
+          DoSplashAtPlot(iPlayer, p, dmg)
+        end
       end
     end
   end
 
-  -- ÇÑµµ Ã¼Å©
-  if isMissile then
-    if iMaxMissilesPerVault >= 0 and missileCount >= iMaxMissilesPerVault then return false end
-  else
-    if iMaxAircraftPerVault >= 0 and aircraftCount >= iMaxAircraftPerVault then return false end
-  end
-  if iMaxTotalPerVault >= 0 and totalCount >= iMaxTotalPerVault then return false end
-
-  return true
+  _fired[key] = true
+  print(string.format("[FW] Short-range splash L%d @(%d,%d) r=%d ring=%s",
+    lvl, iX or -1, iY or -1, cfg.radius or 0, table.concat(cfg.ring or {}, ",")))
 end
-GameEvents.CanLoadAt.Add(OnCanLoadAt_VaultAirbase)
-
-
---======================================================================================================================
-
-
+GameEvents.UnitPrekill.Add(OnUnitPrekill)
 
 
 
 print("Finished loading FutureLua.lua from VP-FW mod");
 
+-- =====================================================================
+-- FW ICBM splash â€” target-plot capture via BattleJoined (for Vox Populi)
+--   Paste this AFTER your current splash modules.
+-- =====================================================================
+print("[FW][ICBM] target-capture route loaded")
+
+-- í™”ì´íŠ¸ë¦¬ìŠ¤íŠ¸: ICBMë¡œ ì²˜ë¦¬í•  ì¥ê±°ë¦¬ ìœ ë‹› (ì›í•˜ë©´ ì¶”ê°€)
+local FW_ICBM_TYPES = {
+  [GameInfoTypes.UNIT_FW_GOD_ROD]  = true,
+  [GameInfoTypes.UNIT_FW_GOD_ROD2] = true,
+}
+
+-- í”¼í•´/ì˜µì…˜
+local FW_ICBM_RING1_DMG      = 20      -- ì¸ì ‘ 6í—¥ìŠ¤ í”¼í•´(í”„ë¡œëª¨ 4/5 ìˆìœ¼ë©´ ì•„ë˜ì—ì„œ ì˜¤ë²„ë¼ì´ë“œ)
+local FW_PROMO_L4            = GameInfoTypes.PROMOTION_FW_SPLASH_DAMAGE_4
+local FW_PROMO_L5            = GameInfoTypes.PROMOTION_FW_SPLASH_DAMAGE_5
+local FW_DMGL4, FW_DMGL5     = 40, 50
+local FW_FRIENDLY_FIRE       = false   -- í…ŒìŠ¤íŠ¸ ë•Œë§Œ true ê¶Œì¥
+
+-- ë™ ì œì™¸
+local FW_UNIT_VAULT_RACK     = GameInfoTypes.UNIT_FW_VAULT_RACK
+
+-- ì „ìŸ/ìš°í˜¸
+local function FW_IsValidTarget(attID, tgtID)
+  if tgtID == -1 then return false end
+  if attID == tgtID then return FW_FRIENDLY_FIRE end
+  local A, T = Players[attID], Players[tgtID]
+  if not A or not T then return false end
+  return Teams[A:GetTeam()]:IsAtWar(T:GetTeam()) or FW_FRIENDLY_FIRE
+end
+
+-- ì¸ì ‘ 6í—¥ìŠ¤
+local __dirs = {
+  DirectionTypes.DIRECTION_NORTHEAST, DirectionTypes.DIRECTION_EAST,
+  DirectionTypes.DIRECTION_SOUTHEAST, DirectionTypes.DIRECTION_SOUTHWEST,
+  DirectionTypes.DIRECTION_WEST,      DirectionTypes.DIRECTION_NORTHWEST
+}
+local function FW_Ring1(center)
+  local t = {}
+  for _,d in ipairs(__dirs) do
+    local p = Map.PlotDirection(center:GetX(), center:GetY(), d)
+    if p then t[#t+1] = p end
+  end
+  return t
+end
+
+local function FW_DoPlot(attID, pPlot, dmg)
+  if dmg <= 0 then return 0,0 end
+  local uHits, cHits = 0, 0
+  for i=0, pPlot:GetNumUnits()-1 do
+    local u = pPlot:GetUnit(i)
+    if u and not (FW_UNIT_VAULT_RACK and u:GetUnitType()==FW_UNIT_VAULT_RACK) then
+      if FW_IsValidTarget(attID, u:GetOwner()) then
+        u:ChangeDamage(dmg); uHits = uHits + 1
+      end
+    end
+  end
+  local c = pPlot:GetPlotCity()
+  if c and FW_IsValidTarget(attID, c:GetOwner()) then
+    c:ChangeDamage(dmg); cHits = cHits + 1
+  end
+  return uHits, cHits
+end
+
+-- -----------------------------
+-- A) ì „íˆ¬ í›…ìœ¼ë¡œ "ëª©í‘œì¹¸" ìºì¹˜
+-- -----------------------------
+-- ê³µê²©ì ìœ ë‹›ID -> ë°©ì–´ì ì¤‘ì‹¬ Plot
+local pendingTargets = {}     -- [attackerUnitID] = Plot
+-- í”Œë ˆì´ì–´ë³„ â€œì´ë²ˆ ì „íˆ¬ì˜ ê³µê²©ì ìœ ë‹›IDâ€ (ì—­í• ìŒ ë§¤ì¹­ìš©)
+local currentAtkUnit = {}     -- [playerID] = unitID
+
+-- iRole ê°’ì€ DLLì—ì„œ ë„˜ê²¨ì£¼ëŠ” ê³µê²©/ë°©ì–´ ì—­í•  ì¸ë±ìŠ¤.
+-- í™˜ê²½ë§ˆë‹¤ ìˆ«ìê°’ì´ ë‹¤ë¥¼ ìˆ˜ ìˆì–´, ì•„ë˜ì²˜ëŸ¼ "ë‘ ë²ˆ í˜¸ì¶œ ì¡°í•©"ìœ¼ë¡œ ì•ˆì „í•˜ê²Œ ë§¤ì¹­í•œë‹¤.
+local function OnBattleJoined(iPlayer, iUnitOrCity, iRole, bIsCity)
+  local pPlayer = Players[iPlayer]; if not pPlayer then return end
+
+  if not bIsCity then
+    local u = pPlayer:GetUnitByID(iUnitOrCity)
+    if u then
+      local utype = u:GetUnitType()
+      -- 1) ìš°ë¦¬ ìª½ ê³µê²© ìœ ë‹›(ì‹ ì˜ì§€íŒ¡ì´/2) ë“±ì¥ â†’ "ì´ í”Œë ˆì´ì–´ì˜ ê³µê²©ì"ë¡œ ê¸°ì–µ
+      if FW_ICBM_TYPES[utype] then
+        currentAtkUnit[iPlayer] = iUnitOrCity
+        -- ë””ë²„ê·¸
+        print(string.format("[FW][ICBM] BattleJoined ATK? p=%d unit=%d type=%d", iPlayer, iUnitOrCity, utype))
+        return
+      end
+    end
+  end
+
+  -- 2) ìƒëŒ€ë°©(ë°©ì–´ì) ë“±ì¥ íƒ€ì´ë°ì—, ë°©ê¸ˆ ê¸°ë¡ëœ "ê³µê²©ì ìœ ë‹›ID"ê°€ ìˆë‹¤ë©´ ê·¸ ì¢Œí‘œë¥¼ íƒ€ê²Ÿìœ¼ë¡œ ê¸°ë¡
+  local atkUnitID = currentAtkUnit[iPlayer]           -- ê°™ì€ í”Œë ˆì´ì–´ ì†Œìœ  ê³µê²©ìì¼ ìˆ˜ë„ ìˆê³ 
+  if not atkUnitID then
+    -- í˜¹ì‹œ ë°”ë¡œ 'ìƒëŒ€ í”Œë ˆì´ì–´'ì— ê¸°ë¡ëì„ ìˆ˜ ìˆìœ¼ë‹ˆ ì „ì²´ íƒìƒ‰(ì†Œìˆ˜ í”Œë ˆì´ì–´ì´ë¯€ë¡œ ë¶€ë‹´ ê²½ë¯¸)
+    for pid=0, GameDefines.MAX_MAJOR_CIVS-1 do
+      if currentAtkUnit[pid] then atkUnitID = currentAtkUnit[pid]; break end
+    end
+  end
+  if not atkUnitID then return end
+
+  local center
+  if bIsCity then
+    -- ë„ì‹œ ë°©ì–´ì
+    local c = pPlayer:GetCityByID(iUnitOrCity)
+    if c then center = c:Plot() end
+  else
+    -- ìœ ë‹› ë°©ì–´ì
+    local def = pPlayer:GetUnitByID(iUnitOrCity)
+    if def then center = def:GetPlot() end
+  end
+
+  if center then
+    pendingTargets[atkUnitID] = center
+    -- í•œ ë²ˆ ë§¤ì¹­í–ˆìœ¼ë©´ ë¹„ì›Œì¤€ë‹¤(ë™ì¼ ì „íˆ¬ ì¤‘ ì¤‘ë³µ ë°©ì§€)
+    currentAtkUnit[iPlayer] = nil
+    print(string.format("[FW][ICBM] target lock by battle: atkUnit=%d at (%d,%d)",
+      atkUnitID, center:GetX(), center:GetY()))
+  end
+end
+
+if GameEvents.BattleJoined then
+  GameEvents.BattleJoined.Add(OnBattleJoined)
+  print("[FW][ICBM] BattleJoined hook active")
+else
+  print("[FW][ICBM] BattleJoined not available (CP DLL events off)")
+end
+
+-- ----------------------------------------
+-- B) Prekillì—ì„œ ìº¡ì³ëœ 'ëª©í‘œì¹¸'ìœ¼ë¡œ ìŠ¤í”Œë˜ì‹œ
+-- ----------------------------------------
+local fired = {}
+local function OnUnitPrekill_ICBM(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, iByPlayer)
+  if not FW_ICBM_TYPES[iUnitType] then return end
+  local key = iPlayer..":"..iUnitID..":"..(iX or -1)..":"..(iY or -1)
+  if fired[key] then return end
+
+  -- í”¼í•´ëŸ‰: L5 > L4 > ê¸°ë³¸
+  local dmg = FW_ICBM_RING1_DMG
+  local u = Players[iPlayer] and Players[iPlayer]:GetUnitByID(iUnitID)
+  if u then
+    if FW_PROMO_L5 and u:IsHasPromotion(FW_PROMO_L5) then dmg = FW_DMGL5
+    elseif FW_PROMO_L4 and u:IsHasPromotion(FW_PROMO_L4) then dmg = FW_DMGL4 end
+  end
+
+  -- 1ìˆœìœ„: BattleJoinedì—ì„œ ì ê°€ë‘” ëª©í‘œì¹¸
+  local center = pendingTargets[iUnitID]
+  -- 2ìˆœìœ„: ì „ë‹¬ëœ ì¢Œí‘œ(ëŒ€ê°œ ë°œì‚¬ì¹¸/ìš”ê²©ì¹¸) â†’ ì „ì„  ì¥ê±°ë¦¬ë©´ ë¹„ì–´ìˆì„ ìˆ˜ ìˆìŒ
+  if not center and type(iX)=="number" and iX>=0 and type(iY)=="number" and iY>=0 then
+    center = Map.GetPlot(iX, iY)
+    print("[FW][ICBM] fallback to prekill coords")
+  end
+  -- 3ìˆœìœ„: ìœ ë‹› ì¢Œí‘œ í´ë°±
+  if not center and u then
+    center = Map.GetPlot(u:GetX(), u:GetY())
+    print("[FW][ICBM] fallback to unit XY")
+  end
+  if not center then
+    print("[FW][ICBM] ERROR no center plot; abort")
+    return
+  end
+
+  -- ë°˜ê²½1 ì ìš©
+  local totalU, totalC = 0, 0
+  for _,p in ipairs(FW_Ring1(center)) do
+    local hu, hc = FW_DoPlot(iPlayer, p, dmg); totalU = totalU + hu; totalC = totalC + hc
+  end
+
+  -- í•œ ë²ˆ ì‚¬ìš© í›„ íƒ€ê²Ÿ ì œê±°
+  pendingTargets[iUnitID] = nil
+  fired[key] = true
+
+  print(string.format("[FW][ICBM] splash @(%d,%d) ring1=%d hits u=%d c=%d (bDelay=%s)",
+    center:GetX(), center:GetY(), dmg, totalU, totalC, tostring(bDelay)))
+end
+GameEvents.UnitPrekill.Add(OnUnitPrekill_ICBM)
