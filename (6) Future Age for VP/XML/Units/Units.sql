@@ -18,16 +18,14 @@ SELECT									'SPECIALUNIT_SPACESHIP',	'UNITAI_CARRIER_SEA'	;
 -------------------------------------
 -- ArtDefines 
 --------------------------------------
-INSERT INTO ArtDefine_UnitInfos
-	(Type, DamageStates, Formation)
+INSERT INTO ArtDefine_UnitInfos	(Type, DamageStates, Formation)
 VALUES
 	('ART_DEF_UNIT_FW_MODERN_COLONIST',		1,	'Vehicle'),
 	('ART_DEF_UNIT_FW_AUGMENTED_DIPLOMAT',	1,	'UnFormed'),
 	('ART_DEF_UNIT_FW_SIEGE03P',			1,	'ThreeBigGuns'),
 	('ART_DEF_UNIT_FW_GUNBOAT',				1,	NULL);  --ART_DEF_UNIT_NAVALFIGHTER01
 
-INSERT INTO ArtDefine_UnitInfoMemberInfos
-	(UnitInfoType, UnitMemberInfoType, NumMembers)
+INSERT INTO ArtDefine_UnitInfoMemberInfos	(UnitInfoType, UnitMemberInfoType, NumMembers)
 VALUES 
 	('ART_DEF_UNIT_FW_AUGMENTED_DIPLOMAT',	'ART_DEF_UNIT_MEMBER_SAS_SCRIBE', 		1),
 	('ART_DEF_UNIT_FW_MODERN_COLONIST',		'ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST2', 	1),     
@@ -36,14 +34,13 @@ VALUES
 	('ART_DEF_UNIT_FW_SIEGE03P',			'ART_DEF_UNIT_MEMBER_FW_SIEGE03P', 			3),
 	('ART_DEF_UNIT_FW_GUNBOAT',				'ART_DEF_UNIT_MEMBER_FW_GUNBOAT', 			1);
 
-INSERT INTO ArtDefine_UnitMemberInfos
-	(Type, Scale, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag, Domain)
+INSERT INTO ArtDefine_UnitMemberInfos	(Type, Scale, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag, Domain)
 VALUES 
-	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST2', 0.08, 'GreatArtist_Late.fxsxml', 'CLOTH', 'FLESH', NULL),  -- CAYM EDITED
-	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST3', 0.05, 'Caravan_Late.fxsxml', 'CLOTH', 'FLESH', NULL),      -- CAYM EDITED
-	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST4', 0.05, 'Caravan_Late.fxsxml', 'CLOTH', 'FLESH', NULL),      -- CAYM EDITED
-	('ART_DEF_UNIT_MEMBER_FW_SIEGE03P', 0.1, 'siege03p.fxsxml', 'METAL', 'METALSM', NULL),
-	('ART_DEF_UNIT_MEMBER_FW_GUNBOAT', 0.08, 'naval_fighter01.fxsxml', 'METAL', 'METALLRG', 'Sea');
+	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST2', 0.08, 'GreatArtist_Late.fxsxml', 'CLOTH', 'FLESH',   NULL),  -- CAYM EDITED
+	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST3', 0.05, 'Caravan_Late.fxsxml',     'CLOTH', 'FLESH',   NULL),      -- CAYM EDITED
+	('ART_DEF_UNIT_MEMBER_FW_MODERN_COLONIST4', 0.05, 'Caravan_Late.fxsxml',     'CLOTH', 'FLESH',   NULL),      -- CAYM EDITED
+	('ART_DEF_UNIT_MEMBER_FW_SIEGE03P',          0.1, 'siege03p.fxsxml',         'METAL', 'METALSM', NULL),
+	('ART_DEF_UNIT_MEMBER_FW_GUNBOAT',          0.08, 'naval_fighter01.fxsxml',  'METAL', 'METALLRG', 'Sea');
 
 INSERT INTO ArtDefine_UnitMemberCombats
 	(UnitMemberType, EnableActions, HasShortRangedAttack, HasLongRangedAttack, HasStationaryMelee, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing)
@@ -67,9 +64,9 @@ INSERT INTO UnitGameplay2DScripts
 			(UnitType, 					   SelectionSound, 		FirstSelectionSound)
 VALUES		
     ('UNIT_FW_MODERN_DRONE',	   'AS2D_SELECT_FIGHTER', 	'AS2D_BIRTH_FIGHTER'),
-	('UNIT_FW_AUGMENTED_DIPLOMAT', 'AS2D_BUILD_UNIT', 'AS2D_BUILD_UNIT'),
-    ('UNIT_FW_MODERN_COLONIST', 'AS2D_SELECT_SETTLER', 'AS2D_BIRTH_SETTLER'),
-	('UNIT_FW_SPACE_COLONIST', 'AS2D_SELECT_SETTLER', 'AS2D_BIRTH_SETTLER');
+	('UNIT_FW_AUGMENTED_DIPLOMAT', 'AS2D_BUILD_UNIT',       'AS2D_BUILD_UNIT'),
+    ('UNIT_FW_MODERN_COLONIST',    'AS2D_SELECT_SETTLER',   'AS2D_BIRTH_SETTLER'),
+	('UNIT_FW_SPACE_COLONIST',     'AS2D_SELECT_SETTLER',   'AS2D_BIRTH_SETTLER');
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)

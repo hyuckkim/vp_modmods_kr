@@ -1805,7 +1805,7 @@
     <File md5="AC63206D1B159F7A59C308AAD217D0D7" import="1">Art/Wonders/Angelnet_Splash.dds</File>
     <File md5="ZZC92D258F46A795BE112898781326PE" import="1">Art/Wonders/ApexCentre_Splash.dds</File>
     <File md5="CC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Wonders/AsteroidMining_Splash.dds</File>
-
+    <File md5="NC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Wonders/Nuclearfusion_Splash.dds</File>
     <File md5="13320A30151FAD82C6750C50116F1141" import="1">Art/Wonders/CitadelStation_Splash.dds</File>
     <File md5="7E16AA981B3620E7C2E2650DF0E19175" import="1">Art/Wonders/DataHaven_Splash.dds</File>
     <File md5="EBC8BFE1AD222CF4C1EFFA4D84D1D8D3" import="1">Art/Wonders/DigitalEmancipation_Splash.dds</File>
@@ -1995,13 +1995,70 @@
     <File md5="YC3A347364D01843737AD36B22B1D51A" import="1">VP_Imagechange/Mechanizedinfantry/MechanizedinfantryFlag.dds</File>
     <File md5="YC3A347364D01843737AD36B22B1D51A" import="1">VP_Imagechange/Mechanizedinfantry/SV_mechanizedinfantry</File>
 
+    <File md5="10FBE81A38F4D40FBB262AA7848681E8" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Attack.gr2</File>
+    <File md5="82C1973B3CED9ACEFFFE2C2003A603D4" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Bombard_Defense.gr2</File>
+    <File md5="4E5C1205401B54CBE76140F440D3200D" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathA.gr2</File>
+    <File md5="5D434BEDA164FA4674D624BBD5D5D2A1" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathA_Idle.gr2</File>
+    <File md5="90EEA8E512E8E0B848BD323FE8A99780" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathB.gr2</File>
+    <File md5="0208C41187615F90A266AB8AF44EFF0A" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathB_Idle.gr2</File>
+    <File md5="17FA15D5AF19204D2FBDDBDF0BCD6313" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fidget.gr2</File>
+    <File md5="B63A001D59F2A07B413BB02898D2E656" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fortify.gr2</File>
+    <File md5="4DB8C1D2B17255833878519BA8CF4568" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fortify_Idle.gr2</File>
+    <File md5="A6DDF301AB9DFC99838E77EC71416A0C" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Idle.gr2</File>
+    <File md5="DCB52786F02DF0FE8C8C64A68733041A" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Run.gr2</File>
+    <File md5="5B8FBDD532486EB60ECB727286CA7706" import="1">VP_Imagechange/PMC/3DModel/fx_triggers_modernmarine.ftsxml</File>
+    <File md5="0C2333EFA1EDD7298133E5D6EE6ADFD8" import="1">VP_Imagechange/PMC/3DModel/RM_Cdo_diff.dds</File>
+    <File md5="F0FED20AE11A4AD6A674FDF4D7DB1C0D" import="1">VP_Imagechange/PMC/3DModel/RM_Cdo_sref.dds</File>
+    <File md5="DA0764D8380400021A633B87C6512075" import="1">VP_Imagechange/PMC/3DModel/RM_Commando.fxsxml</File>
+    <File md5="246C7DC6211DF16B7BB154C6BE0EACC9" import="1">VP_Imagechange/PMC/3DModel/RM_Commando.gr2</File>
+    <File md5="246C7DC6211DF16B7BB154C6BE0EACC9" import="0">VP_Imagechange/PMC/3DModel/PMCArtDefines.sql</File>
+    <File md5="MA495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/PMC/PMC_256.dds</File>
+    <File md5="MC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/PMC/PMC_128.dds</File>
+    <File md5="M29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/PMC/PMC_080.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/PMC_064.dds</File>
+    <File md5="M3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/PMC/PMC_045.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/PMCFlag.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/SV_CAYM_PMC.dds</File>
+    <File md5="M3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/PMC/CAYM_PMC.dds</File>
+
+    <File md5="95998cea0e79ab27ae6ff8ce280d2a7c" import="1">VP_Imagechange/UAV/UAV_SV.dds</File>
+    <File md5="048b4aac266599b4f55eba4c7e15ce48" import="1">VP_Imagechange/UAV/UAV_UnitFlag32.dds</File>
+    <File md5="E6C382609B837B34C60039C0D808471A" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.fxsxml</File>
+    <File md5="5E9F35EEA82C3E0720D0276C6ADF1A52" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.gr2</File>
+    <File md5="210F0AAF9CCA036907E90DC209C525F7" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter_diff.dds</File>
+    <File md5="6B32B7D4FEE94C70CDE92DC6490D1187" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter_sref.dds</File>
+    <File md5="37064B6BB3B92D34BFEBE5D46896D1FC" import="0">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.xml</File>
+
     <File md5="3A9D5C3EE6A1E9EE060EA648545E4310" import="1">VP_Imagechange/NuclearVault/ART/missilesilo.dds</File>
     <File md5="F9268DAC7B388FBF37524C255242E9E6" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.fxsxml</File>
     <File md5="530E37C540848B82BADB13139912994A" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.gr2</File>
     <File md5="E19B2CA8FA2652337E897876E53D8BE3" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo_PL.fxsxml</File>
 
+    <File md5="43c670160d1337d0b227db0ec5b8561a" import="1">VP_Imagechange/Zeppelin/WWI_Zeppelin_Flag.dds</File>
+    <File md5="77d2c302534fec4cf857e8eb05603c50" import="1">VP_Imagechange/Zeppelin/WWI_Zeppelin_SV.dds</File>
+    <File md5="10a529a08ae349cb1f685ffb9e0261fc" import="1">VP_Imagechange/Zeppelin/ZeppelinSREF.dds</File>
+    <File md5="f999a806999abae1cfb66958dd7630c2" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.dds</File>
+    <File md5="fa6dda6aeddc032482582d9b51c5a82c" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.fxsxml</File>
+    <File md5="7443f0799bcaaa5ce260a0ae6c221778" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.gr2</File>
+
+    <File md5="P2345DB3761021105C1263AE7A7C99E2" import="0">VP_Imagechange/Paratrooper/3DModel/ParatrooperArtdefine.sql</File>
+    <File md5="PC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.fxsxml</File>
+    <File md5="P29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.gr2</File>
+    <File md5="P0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.dds</File>
+    <File md5="P3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/3DModel/no_gloss.dds</File>
+    <File md5="P6345DB3761021105C1263AE7A7C99E2" import="1">VP_Imagechange/Paratrooper/Paratrooper_256.dds</File>
+    <File md5="PC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Paratrooper/Paratrooper_128.dds</File>
+    <File md5="P29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Paratrooper/Paratrooper_080.dds</File>
+    <File md5="P0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/Paratrooper_064.dds</File>
+    <File md5="P3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/Paratrooper_045.dds</File>
+    <File md5="P2985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlag.dds</File>
+    <File md5="P4B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatrooper.dds</File>
+    <File md5="PA985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlaga.dds</File>
+    <File md5="PAB8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatroopera.dds</File>
+
     <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ImprovementUnderseaTunnel.lua</File>
     <File md5="319B2CA8FA2652337E897876E53D8BE3" import="1">CAYMplus/UnderseaTunnel.sql</File>
+    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ReconLine_Changes.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -2031,7 +2088,8 @@
       <UpdateDatabase>XML/ResourceIcons.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureText_KR.sql</UpdateDatabase>
-      <UpdateDatabase>CAYMplus/UnderseaTunnel.sql</UpdateDatabase>
+      <UpdateDatabase>CAYMplus/UnderseaTunnel.sql</UpdateDatabase> 
+      <UpdateDatabase>CAYMplus/ReconLine_Changes.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>
