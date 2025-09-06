@@ -252,6 +252,24 @@ BEGIN
 	WHERE Type = NEW.UnitType AND Class = NEW.UnitClassType;
 END;
 
+-------------------------------------------------------
+-- Russian Cossack
+-------------------------------------------------------
+
+UPDATE Civilization_UnitClassOverrides Set UnitClassType = 'UNITCLASS_EE_DRAGOON' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
+
+UPDATE Units
+SET Class = 'UNITCLASS_EE_DRAGOON', 
+        RangedCombat = (SELECT RangedCombat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 4,
+	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 3,
+	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_DRAGOON'),
+	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN'),
+	GoodyHutUpgradeUnitClass = 'UNITCLASS_CAVALRY',
+	DefaultUnitAI = 'UNITAI_FAST_ATTACK'
+WHERE Type = 'UNIT_RUSSIAN_COSSACK';
+
+UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
+
 ---------------------------------------------
 -- Austrian Hussar to Dragoon
 ---------------------------------------------
@@ -372,46 +390,6 @@ UPDATE Units SET
 ObsoleteTech = 'TECH_COMBUSTION',
 GoodyHutUpgradeUnitClass = 'UNITCLASS_EE_UHLAN' 
 WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
-
--------------------------------------------------------
--- Russian Cossack
--- The most popular weapons used by Cossack cavalrymen were usually sabres and long spears.
--- move Cossack into Enlightenment and make it melee
--------------------------------------------------------
-
-UPDATE Civilization_UnitClassOverrides Set UnitClassType = 'UNITCLASS_EE_UHLAN' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Units
-SET Class = 'UNITCLASS_EE_UHLAN', CombatClass = 'UNITCOMBAT_MOUNTED',
-	Range = 0, RangedCombat = 0,
-	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_UHLAN') + 4,
-	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_UHLAN'),
-	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_TANK'),
-	GoodyHutUpgradeUnitClass = 'UNITCLASS_WWI_TANK',
-	DefaultUnitAI = 'UNITAI_FAST_ATTACK'
-WHERE Type = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-
-DELETE From Unit_FreePromotions WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND PromotionType = 'PROMOTION_SKIRMISHER_DOCTRINE';
-DELETE From Unit_FreePromotions WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND PromotionType = 'PROMOTION_ESPRIT_DE_CORPS';
-DELETE From Unit_FreePromotions WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND PromotionType = 'PROMOTION_NAVAL_MISFIRE';
-DELETE From Unit_FreePromotions WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND PromotionType = 'PROMOTION_ONLY_DEFENSIVE';
-
--- Infixo: resambles original CBO Cossack
-INSERT INTO Unit_FreePromotions (UnitType, PromotionType) SELECT 'UNIT_RUSSIAN_COSSACK' , 'PROMOTION_ANTI_MOUNTED_I';
-INSERT INTO Unit_FreePromotions (UnitType, PromotionType) SELECT 'UNIT_RUSSIAN_COSSACK' , 'PROMOTION_HEAVY_CHARGE';
-
--- Infixo: AI same as Knight and Lancer
-DELETE FROM Unit_AITypes WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-INSERT INTO Unit_AITypes (UnitType, UnitAIType) VALUES
-('UNIT_RUSSIAN_COSSACK', 'UNITAI_FAST_ATTACK'),
-('UNIT_RUSSIAN_COSSACK', 'UNITAI_DEFENSE');
-
-UPDATE Unit_Flavors SET Flavor = '0' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND FlavorType = 'FLAVOR_RANGED';
-UPDATE Unit_Flavors SET Flavor = '20' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND FlavorType = 'FLAVOR_OFFENSE';
-UPDATE Unit_Flavors SET Flavor = '15' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND FlavorType = 'FLAVOR_DEFENSE';
-UPDATE Unit_Flavors SET Flavor = '10' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK' AND FlavorType = 'FLAVOR_MOBILE';
 
 -------------------------------------------------------
 -- Marksman
@@ -772,6 +750,7 @@ VALUES ('UNIT_EE_2HANDER', 'RESOURCE_IRON', 1);
 
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
 ('UNIT_EE_2HANDER','PROMOTION_FIELD_WORKS_0'),
+('UNIT_EE_2HANDER','PROMOTION_COVER_1'),
 ('UNIT_EE_2HANDER', 'PROMOTION_2HANDER');
 
 --------------------------

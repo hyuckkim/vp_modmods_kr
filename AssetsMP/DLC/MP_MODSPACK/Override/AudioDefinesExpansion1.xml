@@ -1152,13 +1152,6 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SKARABRAE</SoundID> 
-			<Filename>SkaraBrae</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_WONDER_NEWGRANGE</SoundID> 
 			<Filename>Newgrange</Filename> 
 			<LoadType>STREAMED</LoadType> 
@@ -1166,176 +1159,8 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_GGANTIJA</SoundID> 
-			<Filename>Ggantija</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_WONDER_BARNENEZ</SoundID> 
 			<Filename>Barnenez</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_JAR_POMPEII</SoundID> 
-			<Filename>Jar_Pompeii_audio</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_JAR_TONGARIRO</SoundID> 
-			<Filename>Jar_Tongariro_audio</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_UNIT_VELOCIRAPTOR_ATTACK</SoundID> 
-			<Filename>VelociraptorAttack</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_UNIT_TREX</SoundID> 
-			<Filename>trex</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_UNIT_TREX_STEP</SoundID> 
-			<Filename>trexstep</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EAIRCRAFT</SoundID> 
-			<Filename>EAircraft</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ECITYCAPTURE</SoundID> 
-			<Filename>ECityCapture</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ECITYREVOLT</SoundID> 
-			<Filename>ECityRevolt</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ECIV</SoundID> 
-			<Filename>ECiv</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EDECLAREWAR</SoundID> 
-			<Filename>EDeclareWar</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EECONOMIC</SoundID> 
-			<Filename>EEconomic</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EFEATUREGROWTH</SoundID> 
-			<Filename>EFeatureGrowth</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EFIRSTTOSOMETHING</SoundID> 
-			<Filename>EFirstToSomething</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EFOREIGN</SoundID> 
-			<Filename>EForeign</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EGHAST</SoundID> 
-			<Filename>EGhast</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EMILITARY</SoundID> 
-			<Filename>EMilitary</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EPLAGUE</SoundID> 
-			<Filename>EPlague</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ERELIC</SoundID> 
-			<Filename>ERelic</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_EREVOLUTIONEND</SoundID> 
-			<Filename>ERevolutionEnd</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ESCIENCE</SoundID> 
-			<Filename>EScience</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ESTRIKE</SoundID> 
-			<Filename>EStrike</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_EVENT_ETROOPS</SoundID> 
-			<Filename>ETroops</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WTC</SoundID> 
-			<Filename>WTC_Quote</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
@@ -1537,1051 +1362,162 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ALTAMIRA_MAN</SoundID> 
-			<Filename>wonder_ALTAMIRA_man</Filename> 
+			<SoundID>SND_WONDER_SPEECH_JAR_POMPEII</SoundID> 
+			<Filename>Jar_Pompeii_audio</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GGANTIJA_MAN</SoundID> 
-			<Filename>wonder_GGANTIJA_man</Filename> 
+			<SoundID>SND_WONDER_SPEECH_JAR_TONGARIRO</SoundID> 
+			<Filename>Jar_Tongariro_audio</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GOEBEKLI_TEPE_MAN</SoundID> 
-			<Filename>wonder_GOEBEKLI_TEPE_man</Filename> 
+			<SoundID>SND_UNIT_VELOCIRAPTOR_ATTACK</SoundID> 
+			<Filename>VelociraptorAttack</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KUK_MAN</SoundID> 
-			<Filename>wonder_KUK_man</Filename> 
+			<SoundID>SND_UNIT_TREX</SoundID> 
+			<Filename>trex</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MAJORVILLE_MAN</SoundID> 
-			<Filename>wonder_MAJORVILLE_man</Filename> 
+			<SoundID>SND_UNIT_TREX_STEP</SoundID> 
+			<Filename>trexstep</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MOHENJO_DARO_MAN</SoundID> 
-			<Filename>wonder_MOHENJO_DARO_man</Filename> 
+			<SoundID>SND_EVENT_EAIRCRAFT</SoundID> 
+			<Filename>EAircraft</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SKARA_BRAE_MAN</SoundID> 
-			<Filename>wonder_SKARA_BRAE_man</Filename> 
+			<SoundID>SND_EVENT_ECITYCAPTURE</SoundID> 
+			<Filename>ECityCapture</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KARNAK_MAN</SoundID> 
-			<Filename>wonder_KARNAK_man</Filename> 
+			<SoundID>SND_EVENT_ECITYREVOLT</SoundID> 
+			<Filename>ECityRevolt</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_NAZCA_MAN</SoundID> 
-			<Filename>wonder_NAZCA_man</Filename> 
+			<SoundID>SND_EVENT_ECIV</SoundID> 
+			<Filename>ECiv</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WIELICZKA_MAN</SoundID> 
-			<Filename>wonder_WIELICZKA_man</Filename> 
+			<SoundID>SND_EVENT_EDECLAREWAR</SoundID> 
+			<Filename>EDeclareWar</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MALWIYA_MAN</SoundID> 
-			<Filename>wonder_MALWIYA_man</Filename> 
+			<SoundID>SND_EVENT_EECONOMIC</SoundID> 
+			<Filename>EEconomic</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GATE_OF_SUN_MAN</SoundID> 
-			<Filename>wonder_GATE_OF_SUN_man</Filename> 
+			<SoundID>SND_EVENT_EFEATUREGROWTH</SoundID> 
+			<Filename>EFeatureGrowth</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BAMYAN_MAN</SoundID> 
-			<Filename>wonder_BAMYAN_man</Filename> 
+			<SoundID>SND_EVENT_EFIRSTTOSOMETHING</SoundID> 
+			<Filename>EFirstToSomething</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_EL_GHRIBA_MAN</SoundID> 
-			<Filename>wonder_EL_GHRIBA_man</Filename> 
+			<SoundID>SND_EVENT_EFOREIGN</SoundID> 
+			<Filename>EForeign</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ETCHMIADZIN_MAN</SoundID> 
-			<Filename>wonder_ETCHMIADZIN_man</Filename> 
+			<SoundID>SND_EVENT_EGHAST</SoundID> 
+			<Filename>EGhast</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CHAND_BAORI_MAN</SoundID> 
-			<Filename>wonder_CHAND_BAORI_man</Filename> 
+			<SoundID>SND_EVENT_EMILITARY</SoundID> 
+			<Filename>EMilitary</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_NABAWI_MAN</SoundID> 
-			<Filename>wonder_NABAWI_man</Filename> 
+			<SoundID>SND_EVENT_EPLAGUE</SoundID> 
+			<Filename>EPlague</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_LAVAUX_MAN</SoundID> 
-			<Filename>wonder_LAVAUX_man</Filename> 
+			<SoundID>SND_EVENT_ERELIC</SoundID> 
+			<Filename>ERelic</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WARTBURG_MAN</SoundID> 
-			<Filename>wonder_WARTBURG_man</Filename> 
+			<SoundID>SND_EVENT_EREVOLUTIONEND</SoundID> 
+			<Filename>ERevolutionEnd</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GREAT_ZIMBABWE_MAN</SoundID> 
-			<Filename>wonder_GREAT_ZIMBABWE_man</Filename> 
+			<SoundID>SND_EVENT_ESCIENCE</SoundID> 
+			<Filename>EScience</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_FALUN_MAN</SoundID> 
-			<Filename>wonder_FALUN_man</Filename> 
+			<SoundID>SND_EVENT_ESTRIKE</SoundID> 
+			<Filename>EStrike</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AHU_MAN</SoundID> 
-			<Filename>wonder_AHU_man</Filename> 
+			<SoundID>SND_EVENT_ETROOPS</SoundID> 
+			<Filename>ETroops</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_DAMASCUS_MAN</SoundID> 
-			<Filename>wonder_DAMASCUS_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SHWEDAGON_MAN</SoundID> 
-			<Filename>wonder_SHWEDAGON_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MICHEL_MAN</SoundID> 
-			<Filename>wonder_MICHEL_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ITSUKUSHIMA_MAN</SoundID> 
-			<Filename>wonder_ITSUKUSHIMA_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_QALHAT_MAN</SoundID> 
-			<Filename>wonder_QALHAT_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CHEVALIERS_MAN</SoundID> 
-			<Filename>wonder_CHEVALIERS_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BENHADDOU_MAN</SoundID> 
-			<Filename>wonder_BENHADDOU_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KILWA_KISIWANI_MAN</SoundID> 
-			<Filename>wonder_KILWA_KISIWANI_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ST_PETERS_MAN</SoundID> 
-			<Filename>wonder_ST_PETERS_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KINKAKU_JI_MAN</SoundID> 
-			<Filename>wonder_KINKAKU_JI_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MARAE_MAN</SoundID> 
-			<Filename>wonder_MARAE_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_OLD_BRIDGE_MAN</SoundID> 
-			<Filename>wonder_OLD_BRIDGE_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MEENAKSHI_MAN</SoundID> 
-			<Filename>wonder_MEENAKSHI_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_PETERHOF_MAN</SoundID> 
-			<Filename>wonder_PETERHOF_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BAKKEN_MAN</SoundID> 
-			<Filename>wonder_BAKKEN_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOUSE_OF_TRADE_MAN</SoundID> 
-			<Filename>wonder_HOUSE_OF_TRADE_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SOLOVIETSKY_MAN</SoundID> 
-			<Filename>wonder_SOLOVIETSKY_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MUSEUM_ISLAND_MAN</SoundID> 
-			<Filename>wonder_MUSEUM_ISLAND_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SIKU_QUANSHU_MAN</SoundID> 
-			<Filename>wonder_SIKU_QUANSHU_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BROOKLYN_MAN</SoundID> 
-			<Filename>wonder_BROOKLYN_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SIBERIAN_RAILWAY_MAN</SoundID> 
-			<Filename>wonder_SIBERIAN_RAILWAY_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_PANAMA_CANAL_MAN</SoundID> 
-			<Filename>wonder_PANAMA_CANAL_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ZOCALO_MAN</SoundID> 
-			<Filename>wonder_ZOCALO_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KEW_GARDENS_MAN</SoundID> 
-			<Filename>wonder_KEW_GARDENS_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MONTE_CARLO_MAN</SoundID> 
-			<Filename>wonder_MONTE_CARLO_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_RUHR_VALLEY_MAN</SoundID> 
-			<Filename>wonder_RUHR_VALLEY_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_DARJEELING_MAN</SoundID> 
-			<Filename>wonder_DARJEELING_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BANFF_MAN</SoundID> 
-			<Filename>wonder_BANFF_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ORSZAGHAZ_MAN</SoundID> 
-			<Filename>wonder_ORSZAGHAZ_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_POLAR_EXPEDITION_MAN</SoundID> 
-			<Filename>wonder_POLAR_EXPEDITION_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AKIHABARA_MAN</SoundID> 
-			<Filename>wonder_AKIHABARA_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ROCKEFELLER_MAN</SoundID> 
-			<Filename>wonder_ROCKEFELLER_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SANBO_MAN</SoundID> 
-			<Filename>wonder_SANBO_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_RUSHMORE_MAN</SoundID> 
-			<Filename>wonder_RUSHMORE_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WHITE_SANDS_MAN</SoundID> 
-			<Filename>wonder_WHITE_SANDS_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MILLAU_MAN</SoundID> 
-			<Filename>wonder_MILLAU_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ARECIBO_MAN</SoundID> 
-			<Filename>wonder_ARECIBO_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_JUMEIRAH_MAN</SoundID> 
-			<Filename>wonder_JUMEIRAH_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_TAIPEI_MAN</SoundID> 
-			<Filename>wonder_TAIPEI_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ALTAMIRA_WOMAN</SoundID> 
-			<Filename>wonder_ALTAMIRA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GGANTIJA_WOMAN</SoundID> 
-			<Filename>wonder_GGANTIJA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GOEBEKLI_TEPE_WOMAN</SoundID> 
-			<Filename>wonder_GOEBEKLI_TEPE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KUK_WOMAN</SoundID> 
-			<Filename>wonder_KUK_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MAJORVILLE_WOMAN</SoundID> 
-			<Filename>wonder_MAJORVILLE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MOHENJO_DARO_WOMAN</SoundID> 
-			<Filename>wonder_MOHENJO_DARO_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SKARA_BRAE_WOMAN</SoundID> 
-			<Filename>wonder_SKARA_BRAE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KARNAK_WOMAN</SoundID> 
-			<Filename>wonder_KARNAK_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_NAZCA_WOMAN</SoundID> 
-			<Filename>wonder_NAZCA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WIELICZKA_WOMAN</SoundID> 
-			<Filename>wonder_WIELICZKA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MALWIYA_WOMAN</SoundID> 
-			<Filename>wonder_MALWIYA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GATE_OF_SUN_WOMAN</SoundID> 
-			<Filename>wonder_GATE_OF_SUN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BAMYAN_WOMAN</SoundID> 
-			<Filename>wonder_BAMYAN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_EL_GHRIBA_WOMAN</SoundID> 
-			<Filename>wonder_EL_GHRIBA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ETCHMIADZIN_WOMAN</SoundID> 
-			<Filename>wonder_ETCHMIADZIN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CHAND_BAORI_WOMAN</SoundID> 
-			<Filename>wonder_CHAND_BAORI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_NABAWI_WOMAN</SoundID> 
-			<Filename>wonder_NABAWI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_LAVAUX_WOMAN</SoundID> 
-			<Filename>wonder_LAVAUX_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WARTBURG_WOMAN</SoundID> 
-			<Filename>wonder_WARTBURG_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GREAT_ZIMBABWE_WOMAN</SoundID> 
-			<Filename>wonder_GREAT_ZIMBABWE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_FALUN_WOMAN</SoundID> 
-			<Filename>wonder_FALUN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AHU_WOMAN</SoundID> 
-			<Filename>wonder_AHU_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_DAMASCUS_WOMAN</SoundID> 
-			<Filename>wonder_DAMASCUS_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SHWEDAGON_WOMAN</SoundID> 
-			<Filename>wonder_SHWEDAGON_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MICHEL_WOMAN</SoundID> 
-			<Filename>wonder_MICHEL_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ITSUKUSHIMA_WOMAN</SoundID> 
-			<Filename>wonder_ITSUKUSHIMA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_QALHAT_WOMAN</SoundID> 
-			<Filename>wonder_QALHAT_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CHEVALIERS_WOMAN</SoundID> 
-			<Filename>wonder_CHEVALIERS_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BENHADDOU_WOMAN</SoundID> 
-			<Filename>wonder_BENHADDOU_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KILWA_KISIWANI_WOMAN</SoundID> 
-			<Filename>wonder_KILWA_KISIWANI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ST_PETERS_WOMAN</SoundID> 
-			<Filename>wonder_ST_PETERS_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KINKAKU_JI_WOMAN</SoundID> 
-			<Filename>wonder_KINKAKU_JI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MARAE_WOMAN</SoundID> 
-			<Filename>wonder_MARAE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_OLD_BRIDGE_WOMAN</SoundID> 
-			<Filename>wonder_OLD_BRIDGE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MEENAKSHI_WOMAN</SoundID> 
-			<Filename>wonder_MEENAKSHI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_PETERHOF_WOMAN</SoundID> 
-			<Filename>wonder_PETERHOF_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BAKKEN_WOMAN</SoundID> 
-			<Filename>wonder_BAKKEN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOUSE_OF_TRADE_WOMAN</SoundID> 
-			<Filename>wonder_HOUSE_OF_TRADE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SOLOVIETSKY_WOMAN</SoundID> 
-			<Filename>wonder_SOLOVIETSKY_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MUSEUM_ISLAND_WOMAN</SoundID> 
-			<Filename>wonder_MUSEUM_ISLAND_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SIKU_QUANSHU_WOMAN</SoundID> 
-			<Filename>wonder_SIKU_QUANSHU_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BROOKLYN_WOMAN</SoundID> 
-			<Filename>wonder_BROOKLYN_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SIBERIAN_RAILWAY_WOMAN</SoundID> 
-			<Filename>wonder_SIBERIAN_RAILWAY_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_PANAMA_CANAL_WOMAN</SoundID> 
-			<Filename>wonder_PANAMA_CANAL_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ZOCALO_WOMAN</SoundID> 
-			<Filename>wonder_ZOCALO_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_KEW_GARDENS_WOMAN</SoundID> 
-			<Filename>wonder_KEW_GARDENS_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MONTE_CARLO_WOMAN</SoundID> 
-			<Filename>wonder_MONTE_CARLO_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_RUHR_VALLEY_WOMAN</SoundID> 
-			<Filename>wonder_RUHR_VALLEY_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_DARJEELING_WOMAN</SoundID> 
-			<Filename>wonder_DARJEELING_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BANFF_WOMAN</SoundID> 
-			<Filename>wonder_BANFF_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ORSZAGHAZ_WOMAN</SoundID> 
-			<Filename>wonder_ORSZAGHAZ_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_POLAR_EXPEDITION_WOMAN</SoundID> 
-			<Filename>wonder_POLAR_EXPEDITION_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AKIHABARA_WOMAN</SoundID> 
-			<Filename>wonder_AKIHABARA_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ROCKEFELLER_WOMAN</SoundID> 
-			<Filename>wonder_ROCKEFELLER_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SANBO_WOMAN</SoundID> 
-			<Filename>wonder_SANBO_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_RUSHMORE_WOMAN</SoundID> 
-			<Filename>wonder_RUSHMORE_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_WHITE_SANDS_WOMAN</SoundID> 
-			<Filename>wonder_WHITE_SANDS_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MILLAU_WOMAN</SoundID> 
-			<Filename>wonder_MILLAU_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ARECIBO_WOMAN</SoundID> 
-			<Filename>wonder_ARECIBO_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_JUMEIRAH_WOMAN</SoundID> 
-			<Filename>wonder_JUMEIRAH_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_TAIPEI_WOMAN</SoundID> 
-			<Filename>wonder_TAIPEI_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AMERICA_SLATTER_MILL_MAN</SoundID> 
-			<Filename>wonder_america_slatter_mill_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_AMERICA_SLATTER_MILL_WOMAN</SoundID> 
-			<Filename>wonder_america_slatter_mill_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BLETCHEY_MAN</SoundID> 
-			<Filename>wonder_bletchey_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_BLETCHEY_WOMAN</SoundID> 
-			<Filename>wonder_bletchey_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CERN_MAN</SoundID> 
-			<Filename>wonder_cern_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CERN_WOMAN</SoundID> 
-			<Filename>wonder_cern_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_EMPIRE_STATE_MAN</SoundID> 
-			<Filename>wonder_empire_state_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_EMPIRE_STATE_WOMAN</SoundID> 
-			<Filename>wonder_empire_state_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_FORUM_MAN</SoundID> 
-			<Filename>wonder_forum_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_FORUM_WOMAN</SoundID> 
-			<Filename>wonder_forum_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MOTHERLAND_MAN</SoundID> 
-			<Filename>wonder_motherland_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MOTHERLAND_WOMAN</SoundID> 
-			<Filename>wonder_motherland_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CRYSTAL_PALACE_MAN</SoundID> 
-			<Filename>wonder_crystal_palace_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_CRYSTAL_PALACE_WOMAN</SoundID> 
-			<Filename>wonder_crystal_palace_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GRAND_CANAL_MAN</SoundID> 
-			<Filename>wonder_grand_canal_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_GRAND_CANAL_WOMAN</SoundID> 
-			<Filename>wonder_grand_canal_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MENIN_GATE_MAN</SoundID> 
-			<Filename>wonder_menin_gate_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_MENIN_GATE_WOMAN</SoundID> 
-			<Filename>wonder_menin_gate_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_OLYMPIC_VILLAGE_MAN</SoundID> 
-			<Filename>wonder_olympic_village_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_OLYMPIC_VILLAGE_WOMAN</SoundID> 
-			<Filename>wonder_olympic_village_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SUMMER_PALACE_MAN</SoundID> 
-			<Filename>wonder_summer_palace_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_SUMMER_PALACE_WOMAN</SoundID> 
-			<Filename>wonder_summer_palace_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ARK_OF_THE_COVENANT_MAN</SoundID> 
-			<Filename>art_ark_of_the_covenant_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_ARK_OF_THE_COVENANT_WOMAN</SoundID> 
-			<Filename>art_ark_of_the_covenant_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOLY_LANCE_MAN</SoundID> 
-			<Filename>art_holy_lance_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOLY_LANCE_WOMAN</SoundID> 
-			<Filename>art_holy_lance_woman</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOLY_CROWN_MAN</SoundID> 
-			<Filename>art_holy_crown_man</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_SPEECH_HOLY_CROWN_WOMAN</SoundID> 
-			<Filename>art_holy_crown_woman</Filename> 
+			<SoundID>SND_WONDER_SPEECH_WTC</SoundID> 
+			<Filename>WTC_Quote</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 

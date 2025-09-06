@@ -27,14 +27,14 @@
   </References>
   <Blocks />
   <Files>
-    <File md5="A572D72833A5393963831FB1600E243B" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
-    <File md5="5CF4F58384C7ACD8BFF1C1D2B4F8C535" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
-    <File md5="51E090809380E081A1572F57CAAD550B" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
-    <File md5="0BA3E426DF9FD3D3F0162CAFE89BCFBB" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
-    <File md5="82AF5C7D789A260BC6DCD3289E3BC1DC" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
-    <File md5="4496971D4749B20B6A1A91DEFACA2800" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
-    <File md5="4C03D57C5E3ED4F5B9D66BB3A6512EFD" import="0">Buildings/BuildingsDefinitions.sql</File>
-    <File md5="8E180D25AD5A3E7BD3257AC97177C1BD" import="0">Resources/ResourcesDefinitions.sql</File>
+    <File md5="6427cd4ab176204b3afdcf762f53b3e9" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
+    <File md5="e8f0810e8de4da5a3a0d73b9738ffb5f" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
+    <File md5="3e8977d0380b080f7ea9a40dfef972f1" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
+    <File md5="884410917933433158ad1087f135b867" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
+    <File md5="5847bfaab353c32df7aa80dc33872da6" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
+    <File md5="5b53bc6b24332a56e0c9ccfc4a585e4e" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
+    <File md5="d7b5d10f0ad7af1655cf7471a75436ad" import="0">Buildings/BuildingsDefinitions.sql</File>
+    <File md5="d91f91f3e44d38e9d147abf8612a564a" import="0">Resources/ResourcesDefinitions.sql</File>
   </Files>
   <Actions>
     <OnModActivated>

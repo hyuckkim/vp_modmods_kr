@@ -53,9 +53,6 @@ end
 
 tUniqueForts = {}
 tUniqueForts[GameInfoTypes.IMPROVEMENT_FORT] = true
-if Game_IsUsingMod("6cc3abfc-baaf-4aff-9c62-0757e0ed9944") then
-	tUniqueForts[GameInfoTypes.IMPROVEMENT_JAR_KILOMBO] = true
-end
 --==========================================================================================================================
 -- FUNCTIONS
 --==========================================================================================================================
