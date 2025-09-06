@@ -58,6 +58,12 @@ SELECT
 FROM BuildingClasses
 WHERE MaxPlayerInstances = 1;
 
+-- sovereignty, now ceremony
+UPDATE Policies SET
+PlotCultureExponentModifier = 0,
+PlotGoldCostMod = -20
+WHERE Type = 'POLICY_OLIGARCHY';
+
 -- TEXT
 -- updated for azum supply integration
 UPDATE Language_en_US
@@ -69,7 +75,7 @@ SET Text = 'Ceremony'
 WHERE Tag = 'TXT_KEY_POLICY_OLIGARCHY';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Ceremony[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_CULTURE] Culture cost of tiles reduced by 20% (exponentially) in all Cities.[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]{TXT_KEY_BUILDING_PALACE_COURT_CHAPEL}[ENDCOLOR] built in [ICON_CAPITAL] Capital (+3 [ICON_PEACE] Faith, +2 [ICON_CULTURE_LOCAL] Border Growth Points to all Shrines and Stoneworks, 1 [ICON_GREAT_WORK] Great Work of Art or Artifact slot; 1 [ICON_VP_ARTIST] Artist Slot).'
+SET Text = '[COLOR_POSITIVE_TEXT]Ceremony[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_GOLD] Gold cost of tiles reduced by 20% in all Cities.[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]{TXT_KEY_BUILDING_PALACE_COURT_CHAPEL}[ENDCOLOR] built in [ICON_CAPITAL] Capital (+3 [ICON_PEACE] Faith, +2 [ICON_CULTURE_LOCAL] Border Growth Points to all Shrines and Stoneworks, 1 [ICON_GREAT_WORK] Great Work of Art or Artifact slot; 1 [ICON_VP_ARTIST] Artist Slot).'
 WHERE Tag = 'TXT_KEY_POLICY_OLIGARCHY_HELP';
 
 UPDATE Language_en_US

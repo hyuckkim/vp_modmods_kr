@@ -13,7 +13,7 @@ for row in GameInfo.Features() do
 	tFeatures[row.ID] = {}
 	bIsPseudoWonder = row.PseudoNaturalWonder
 	
-	-- row.ID == 30 is equivalent of Mt. Everest; every subsequent NW has its icon invisible
+	-- row.ID == 30 is equivalent of Causeway A (B is beyond the limit); every subsequent NW has its icon invisible
 	if row.ArtDefineTag and row.ArtDefineTag ~= "" and bIsPseudoWonder == true and row.ID > 30 then
 		for subRow in GameInfo.ArtDefine_StrategicView{StrategicViewType=row.ArtDefineTag} do
 			tFeatures[row.ID][-1] = subRow.Asset

@@ -74,26 +74,14 @@ function OnPopup(popupInfo)
     end
 
 	-- Game Info
-	local strGameInfo = thisBuilding.Help;
-
-	if (strGameInfo == nil) then
-		local bExcludeName = true;
-		local bExcludeHeader = true;
-		strGameInfo = GetHelpTextForBuilding(iBuildingID, bExcludeName, bExcludeHeader, false);
-	end
-
-	-- shorter help text for wonder splash screen (without reuirements)
-	local strGameInfoCut = strGameInfo .. "_CUT"
-
-	if Locale.ConvertTextKey(strGameInfoCut) ~= nil then
-		strGameInfo = strGameInfoCut
-	end
-		
-    if (strGameInfo ~= nil) then
-        Controls.Stats:SetText(Locale.ConvertTextKey(strGameInfo));
+	local strGameInfoCut = thisBuilding.Help .. "_CUT"
+	
+	if Locale.ConvertTextKey(strGameInfoCut) == strGameInfoCut then
+		Controls.Stats:SetText("TEXT_MISSING"); 
+		Controls.Stats:SetHide(false);
+	else
+        Controls.Stats:SetText(Locale.ConvertTextKey(strGameInfoCut));
     	Controls.Stats:SetHide(false);
-    else
-    	Controls.Stats:SetHide(true);
     end
     
 	UIManager:QueuePopup(ContextPtr, PopupPriority.WonderPopup);

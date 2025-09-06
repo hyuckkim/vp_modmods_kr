@@ -20,7 +20,13 @@ Tradition
     Balance this against other path with targeted yield change (not Gold or Production, etc.) 
     Currently if you open this you are starting Shrine, you are delaying Splendor where the Gold and Culture comes from
     Together this means your Cities are very slow to grow borders, noticably compared to Population
-    This also buffs the `Border Blobs' strategy heavily nerfed by Authority rework
+  Sovereignty loses Culture Plot Cost Modifier exponential scaling
+    The border blobs strat is (probably) too strong for those who benefit in e.g. their UA
+    The AI doesn't know about splitting trees to do this strat, so it should go 
+  Sovereignty gains -20% Gold Cost of Purchasing tiles
+    Allows more tiles whilst not getting instant yields
+    Opens up synergy for certain civs like America or Afghanistan (buying Mountains)
+    Alleviates some Gold pressure for Tradition
 -- Second tier policies tweaked for relative power
   Splendor +2 Culture is now on Monument/Aqueduct/Baths
     This smooths the gain of yields, since both Garden and Baths were later and on opposite sides
@@ -31,7 +37,7 @@ Tradition
     However Tourism will benefit Trade Routes via Influence. The early you pick, the sooner you get.
 -- Name and Art changes -- personal taste -- where appropriate Flavor text is also changed.
   Sovereignty renamed to Ceremony
-    Sovereignty is such a non-name. Other choices mean you aren't sovreign? Que??
+    Sovereignty is such a non-name. Other choices mean you aren't sovereign? Que?? It's also an EE tech
   Ceremony renamed Mysticism
     I'm such a Scorpio
   Royal Astrologer renamed to Astrologer's Sanctum
@@ -88,5 +94,5 @@ Artistry
 -- Moved the +2 Science on Artifacts to the finisher
   you can basically never activate this when it is unlocked anyway
 -- Increased to +3 Science in line with Landmarks
--- (re)Added +75 Gold from expending a Great Person, scaling with Era to National Treasure
+-- (re)Added +50 Gold from expending a Great Person, scaling with Era to National Treasure
   Artistry feeling a touch weak, and in Industrial trees I will steal its Hidden Sites

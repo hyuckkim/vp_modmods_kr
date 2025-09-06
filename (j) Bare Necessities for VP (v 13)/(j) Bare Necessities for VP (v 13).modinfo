@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" version="13">
+  <Properties>
+    <Name>(j) Bare Necessities for VP</Name>
+    <Teaser>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi. May download Referenced Mod for more options!</Teaser>
+    <Description>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi.[NEWLINE]By default, Unique Policy Buildings, More Beliefs, and More Processes are unlocked.[NEWLINE]You must activate framedarchitecture's National Wonders Collection to unlock National Wonders.</Description>
+    <Authors>Techpriest Enginseer</Authors>
+    <SpecialThanks>Artisanix, thecrazyscotsman, framedarchitecture</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era (Vox Populi)" />
+    <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="framedarchitecture's National Wonders Collection" />
+    <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mod" />
+    <Mod id="9db218ee-7efa-4b4c-c234-014666n8l33t" minversion="0" maxversion="999" title="(n) Semper Fidelis" />
+  </References>
+  <Blocks>
+    <Mod id="baec6cb7-36d9-425a-a72b-e8f7d7ad1b01" minversion="0" maxversion="999" title="Artisanix's Neolithic Wonders" />
+  </Blocks>
+  <Files>
+    <File md5="D21019434D2EFF6F318C78FF7012F647" import="1">ArtAudio/Barnenez.mp3</File>
+    <File md5="C52ABD6E9F729D945DAADEF7EABA1647" import="1">ArtAudio/FaithTourismAtlas128.dds</File>
+    <File md5="223084BE44B0B006C6D829A55CB17501" import="1">ArtAudio/FaithTourismAtlas256.dds</File>
+    <File md5="729F0C204CC58D5249D4F2FDDFA68D2D" import="1">ArtAudio/FaithTourismAtlas32.dds</File>
+    <File md5="9B7E8478C20AF9E2E4B6F4EF202A93E2" import="1">ArtAudio/FaithTourismAtlas45.dds</File>
+    <File md5="1EB2BF1B3642BB19764C8CC8F6CBEE54" import="1">ArtAudio/FaithTourismAtlas64.dds</File>
+    <File md5="D65582B1AF7EB1F0754E54B13DDEE4D7" import="1">ArtAudio/FaithTourismAtlas80.dds</File>
+    <File md5="6A08EA8F44784CA9E8C1B33EC0F2CFD2" import="1">ArtAudio/Newgrange.mp3</File>
+    <File md5="F6F355C3F5B4ECF18C7300702665481A" import="1">ArtAudio/Policy_IconAtlas128.dds</File>
+    <File md5="248E18212BF716863A1055AEACA86F63" import="1">ArtAudio/Policy_IconAtlas256.dds</File>
+    <File md5="5E25433B9F60BCF1D049F0075412788F" import="1">ArtAudio/Policy_IconAtlas45.dds</File>
+    <File md5="8DA3506FF8B8CB2B673AC7F504101F88" import="1">ArtAudio/Policy_IconAtlas64.dds</File>
+    <File md5="765AE331D37933D94B03BA8FCD94D004" import="1">ArtAudio/Policy_IconAtlas80.dds</File>
+    <File md5="6A374A22E62D1BEE61A0214EABAE9D7D" import="1">ArtAudio/Neolithic/Barnenez_splash.dds</File>
+    <File md5="931507FABA284D58875453C0EB463C23" import="1">ArtAudio/Neolithic/Ggantija_splash.dds</File>
+    <File md5="247C31293640ABE6DCAB4F3E6636AA91" import="1">ArtAudio/Neolithic/NW_Icons_128.dds</File>
+    <File md5="BE56A8D162F0CADE4725D735E7B013CB" import="1">ArtAudio/Neolithic/NW_Icons_045.dds</File>
+    <File md5="C5CCAA9A5F2833529FD426A110172279" import="1">ArtAudio/Neolithic/NW_Icons_064.dds</File>
+    <File md5="AB85A5DEB827F088BFF99111B486CA1B" import="1">ArtAudio/Neolithic/NW_Icons_080.dds</File>
+    <File md5="65CDE1A7BD6C222D806AB5A03E2886CD" import="0">ArtAudio/Neolithic/NW_Icons.xml</File>
+    <File md5="0A0640CF44F40E02D708D42743D0E500" import="1">ArtAudio/Neolithic/NW_Icons_256.dds</File>
+    <File md5="9529F28F85057B64B175E9302A20B1B2" import="1">ArtAudio/Neolithic/Newgrange_splash.dds</File>
+    <File md5="F7BE3D0E6BE3A545FC22A112C797D983" import="1">ArtAudio/Neolithic/SkaraBrae_splash.dds</File>
+    <File md5="35004BABC5D9B79EB747F943D4155515" import="1">ArtAudio/Neolithic/CATALHOYUK.dds</File>
+    <File md5="9E8E4723558CFB698B20B16FD120A152" import="1">ArtAudio/Neolithic/LIANGZHU.dds</File>
+    <File md5="F56E528FB2C2E30DFC5399B7BFFEE219" import="0">MoreText.sql</File>
+    <File md5="23F548BB5C1C5DADC67CF1D6FD742297" import="0">National.sql</File>
+    <File md5="3A910094F0A4F0B415FAC49BFAA71B7D" import="0">NeolithicSQL.sql</File>
+    <File md5="B410A0CD442A9BC4DF105515CC644C1E" import="0">Policy.sql</File>
+    <File md5="D7C59076F9DBF447C5437EF832415435" import="0">Processes.sql</File>
+    <File md5="AB00409983A7BADD41B8C236CD27C1CD" import="0">SeemsGood.sql</File>
+    <File md5="A942E250132AD8B700D669B42AF0C6A6" import="0">JAR_BareFunctions.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MoreText.sql</UpdateDatabase>
+      <UpdateDatabase>Processes.sql</UpdateDatabase>
+      <UpdateDatabase>Policy.sql</UpdateDatabase>
+      <UpdateDatabase>SeemsGood.sql</UpdateDatabase>
+      <UpdateDatabase>National.sql</UpdateDatabase>
+      <UpdateDatabase>ArtAudio/Neolithic/NW_Icons.xml</UpdateDatabase>
+      <UpdateDatabase>NeolithicSQL.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="JAR_BareFunctions.lua">
+      <Name>Added functions</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

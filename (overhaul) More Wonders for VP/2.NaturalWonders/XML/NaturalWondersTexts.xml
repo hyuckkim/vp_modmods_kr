@@ -100,6 +100,19 @@
 
 
 
+		<!-- Special common abilities -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_FEATURE_BERMUDA_A">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_FEATURE_BERMUDA_B">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_FEATURE_BERMUDA_C">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+		</Row>
+
+
+
 		<!-- Special abilities -->
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_A">
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/all Sea luxury resources</Text>
@@ -111,16 +124,16 @@
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD]/all Fishing Boats</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CRATER">
-			<Text>[NEWLINE][ICON_BULLET]10 [ICON_GOLDEN_AGE] every time you research a [ICON_RESEARCH] Technology[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+			<Text>[NEWLINE][ICON_BULLET]grants 10 [ICON_GOLDEN_AGE] every time you research a [ICON_RESEARCH] Technology, scaling with Era[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FUJI">
-			<Text>[NEWLINE][ICON_BULLET]+3 [ICON_GREAT_ARTIST] in Capital[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_WRITER] in Capital[NEWLINE][ICON_BULLET]+1 [ICON_GREAT_MUSICIAN] in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+3 [ICON_GREAT_ARTIST] in nearby City[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_WRITER] in nearby City[NEWLINE][ICON_BULLET]+1 [ICON_GREAT_MUSICIAN] in nearby City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MESA">
 			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] towards Mounted Military Units[NEWLINE][ICON_BULLET]+1 [ICON_SILVER_FIST][ICON_SILVER_FIST] Military Supply Cap</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_VOLCANO">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD], +1 [ICON_RESEARCH]/all Scientists[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_SCIENTIST] in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD], +1 [ICON_RESEARCH]/all Scientists[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_SCIENTIST] in nearby City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GIBRALTAR">
 			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_STRENGTH][ICON_STRENGTH][NEWLINE][ICON_BULLET]+1 [ICON_DIPLOMAT] World Congress Vote for every 8 [ICON_CITY_STATE] City-States at the start of the game</Text>
@@ -141,13 +154,13 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI">
-			<Text>[NEWLINE][ICON_BULLET]50 [ICON_PEACE] every time you gain possesion of this Natural Wonder[NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/all Holy Sites</Text>
+			<Text>[NEWLINE][ICON_BULLET]grants 50 [ICON_PEACE] every time you gain possession of this Natural Wonder, scaling with Era[NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/all Holy Sites</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_KAILASH">
 			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE]/all Monuments and Temples</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ULURU">
-			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards Diplomatic Units in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards Diplomatic Units</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LAKE_VICTORIA">
 			<Text>[NEWLINE][ICON_BULLET]allows establishing [ICON_FOOD] Trade Routes across the Empire[NEWLINE][ICON_BULLET]-10% [ICON_GOLD][ICON_GOLD] Hurry Cost Modifier</Text>
@@ -174,25 +187,25 @@
 			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_TOURISM][ICON_TOURISM]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_RETBA">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_FOOD][ICON_FOOD][NEWLINE][ICON_BULLET]+10% [ICON_FOOD][ICON_FOOD] during [ICON_HAPPINESS_1] WLTKD[NEWLINE][ICON_BULLET]15 [ICON_TOURISM] every time a [ICON_CITIZEN] Citizen is born</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_FOOD][ICON_FOOD][NEWLINE][ICON_BULLET]+10% [ICON_FOOD][ICON_FOOD] during [ICON_HAPPINESS_1] WLTKD[NEWLINE][ICON_BULLET]Grants 15 [ICON_TOURISM] every time a [ICON_CITIZEN] Citizen is born, scaling with Era</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_A">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_B">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_C">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LUMI_BAY">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_FISH][ICON_RES_FISH], [ICON_RES_TROPICAL_FISH][ICON_RES_TROPICAL_FISH][NEWLINE][ICON_BULLET]25 [ICON_TOURISM] every time a Civilian unit is created</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_FISH][ICON_RES_FISH], [ICON_RES_TROPICAL_FISH][ICON_RES_TROPICAL_FISH][NEWLINE][ICON_BULLET]Grants 25 [ICON_TOURISM] every time a Civilian unit is created</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DALLOL">
-			<Text>[NEWLINE][ICON_BULLET]+1 flat [ICON_RES_SYLVITE][NEWLINE][ICON_BULLET]-5% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Boredom</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RES_SYLVITE] (Sylvite)[NEWLINE][ICON_BULLET]-5% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Boredom</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_PAEKTU">
-			<Text>[NEWLINE][ICON_BULLET]first owner gets unique building in the City nearby: [COLOR_YIELD_FOOD]Altar of the Born under the Mountain[ENDCOLOR] with unique [ICON_GREAT_WORK] [COLOR_CULTURE_STORED]Kim Il-sung and Kim Jong-il standing at the peak of Mount Paektu[ENDCOLOR], and other bonuses</Text>
+			<Text>[NEWLINE][ICON_BULLET]first owner gets unique building in the City nearby: [COLOR_YIELD_FOOD]Altar of the Born under the Mountain[ENDCOLOR] with unique [ICON_GREAT_WORK] Great Work ([COLOR_CULTURE_STORED]Kim Il-sung and Kim Jong-il standing at the peak of Mount Paektu[ENDCOLOR]), and other bonuses</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_A">
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
@@ -204,7 +217,7 @@
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BLUE_HOLE">
-			<Text>[NEWLINE][ICON_BULLET]can be improved with [COLOR_POSITIVE_TEXT]Fishing Boat[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Offshore Platform[ENDCOLOR][NEWLINE][ICON_BULLET]allows construction of 3 late game coastal city buildings: [COLOR_YIELD_FOOD]Scuba Diving Resort[ENDCOLOR], [COLOR_YIELD_FOOD]Deep Ocean Research Facility[ENDCOLOR] and [COLOR_YIELD_FOOD]Bathyscaphe Docking Bay[ENDCOLOR]</Text>
+			<Text>[NEWLINE][ICON_BULLET]can be improved with [COLOR_POSITIVE_TEXT]Fishing Boat[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Offshore Platform[ENDCOLOR][NEWLINE][ICON_BULLET]allows construction of 3 late game, [COLOR_NEGATIVE_TEXT]mutually exclusive[ENDCOLOR], coastal city buildings: [COLOR_YIELD_FOOD]Scuba Diving Resort[ENDCOLOR], [COLOR_YIELD_FOOD]Deep Ocean Research Facility[ENDCOLOR] and [COLOR_YIELD_FOOD]Bathyscaphe Docking Bay[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_A">
 			<Text>[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] to all Writers' Guilds</Text>
@@ -216,10 +229,10 @@
 			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_B">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE][ICON_BULLET]+1 [ICON CULTURE] to all [ICON_GREAT_WORK] Artifacts</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] to all [ICON_VP_ARTIFACT] Artifacts</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ZHANGJIAJIE">
-			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]50 [ICON_TOURISM] every time a [ICON_GREAT_PEOPLE] Great Person is expended</Text>
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]Grants 50 [ICON_TOURISM] every time a [ICON_GREAT_PEOPLE] Great Person is expended</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_A">
 			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
@@ -230,8 +243,29 @@
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_C">
 			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
 		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ARCH">
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_GOLD]/[ICON_CONNECTED][ICON_CONNECTED], [ICON_INDUSTRIAL_CONNECTED][ICON_INDUSTRIAL_CONNECTED][NEWLINE][ICON_BULLET]Grants 40 [ICON_GOLD] and 15 [ICON_CULTURE] every time an Internal [ICON_INTERNATIONAL_TRADE] Trade Route ends, scaling with Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_A">
+			<Text>[NEWLINE][ICON_BULLET]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_B">
+			<Text>[NEWLINE][ICON_BULLET]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_JEJU_DO">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_ARTIST] in nearby City[NEWLINE][ICON_BULLET]When a [ICON_GREAT_ARTIST] Great Artist is born in nearby City, gain [ICON_GOLD] equal to 25% of his potential [ICON_GOLDEN_AGE] from [COLOR_POSITIVE_TEXT]Starting a Golden Age[ENDCOLOR] ability</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_A">
+			<Text>[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era[NEWLINE][ICON_BULLET]Grants 7 XP to each newly created Submarine Unit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_B">
+			<Text>[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era[NEWLINE][ICON_BULLET]Grants 7 XP to each newly created Submarine Unit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_C">
+			<Text>[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era[NEWLINE][ICON_BULLET]Grants 7 XP to each newly created Submarine Unit</Text>
+		</Row>
 
-
+		
 
 		<!-- Map abilities -->
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_A">
@@ -363,6 +397,27 @@
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_C">
 			<Text></Text>
 		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ARCH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_JEJU_DO">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_C">
+			<Text></Text>
+		</Row>
 
 
 
@@ -489,15 +544,33 @@
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_A">
 			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_B">
 			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!---->
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_C">
 			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ARCH">
+			<Text>"A weird, lovely, fantastic object out of nature like Delicate Arch has the curious ability to remind us... that out there is a different world, older and greater and deeper by far than ours..."[NEWLINE] - Edward Abbey[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_A">
+			<Text>"The purple hues of Danxia landscapes give people a sense of heavenliness, and are associated with authority, wealth, and good fortune in traditional Chinese culture."[NEWLINE] - UNESCO[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_B">
+			<Text>"The purple hues of Danxia landscapes give people a sense of heavenliness, and are associated with authority, wealth, and good fortune in traditional Chinese culture."[NEWLINE] - UNESCO[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_JEJU_DO">
+			<Text>"Because no one takes a silent volcano seriously!"[NEWLINE] - Mehmet Murat Ildan[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_A">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_B">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_C">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
 		</Row>
 		
 
@@ -726,6 +799,58 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_AURORA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_ARCH">
+			<Text>Delicate Arch</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_ARCH_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_A">
+			<Text>Zhangye Danxia (primary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_B">
+			<Text>Zhangye Danxia (secondary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_DANXIA_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_JEJU_DO">
+			<Text>Seongsan Ilchulbong</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_JEJU_DO_TEXT">
+			<Text>TODO</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_A">
+			<Text>Mariana Trench (main)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_B">
+			<Text>Mariana Trench (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_C">
+			<Text>Mariana Trench (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MARIANA_TEXT">
 			<Text>TODO</Text>
 		</Row>
 	</Language_en_US>

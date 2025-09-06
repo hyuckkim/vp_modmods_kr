@@ -66,6 +66,10 @@ SELECT
 FROM GreatPersons
 WHERE Specialist IS NOT NULL;
 
+UPDATE Buildings SET
+	PolicyType = NULL
+WHERE Type = 'BUILDING_OBSERVATORY';
+
 -- Humanism (now Mass Education)
 DELETE FROM Policy_BuildingClassHappiness WHERE PolicyType = 'POLICY_HUMANISM';
 

@@ -10,7 +10,7 @@ SELECT 	 Type,		'BUILD_FISHING_BOATS_NO_KILL' FROM Units WHERE Class='UNITCLASS_
 
 UPDATE Builds SET
 HotKeyPriority = 0,
-Time = 500,
+Time = 400,
 ShowInPedia = 1,
 ShowInTechTree = 1,
 Help = 'TXT_KEY_BUILD_FISHING_BOAT_HELP',
@@ -76,7 +76,7 @@ FROM Units WHERE Class='UNITCLASS_WORKER'
 AND EXISTS (SELECT * FROM Builds WHERE Type = 'BUILD_OFFSHORE_PLATFORM_GBH');
 
 UPDATE Builds SET
-Time = 800,
+Time = 700,
 CanBeEmbarked = 1,
 Kill = 0,
 Help = 'TXT_KEY_BUILD_OFFSHORE_PLATFORMS_HELP',
@@ -87,7 +87,7 @@ AND EXISTS (SELECT * FROM Builds WHERE Type = 'BUILD_OFFSHORE_PLATFORM_GBH');
 UPDATE Builds SET
 HotKeyPriority = 0,
 CanBeEmbarked = 1,
-Time = 600,
+Time = 500,
 Kill = 0,
 Help = 'TXT_KEY_BUILD_FISHING_BOAT_HELP',
 Recommendation = 'TXT_KEY_BUILD_FISHING_BOAT_REC'

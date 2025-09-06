@@ -2,77 +2,94 @@
 -- MANUAL SETTINGS
 --============================================--
 /*
-Two versions of new quote recordings for wonders!
-0 = Man (Default);
-1 = Woman;
-*/
-
-INSERT INTO COMMUNITY	
-		(Type,					Value)
-VALUES	('MW-SETTING-SPEECH', 	0);
---------------------------------------------------------------
-/*
-New HELP texts!
-0 = Normal World Wonder tooltip texts made with VP standard;
-1 = Improved World Wonder tooltip texts. (Default)
-*/
-
-INSERT INTO COMMUNITY	
-		(Type,					Value)
-VALUES	('MW-SETTING-HELP', 	1);
---------------------------------------------------------------
-/*
-Maximum Era restriction!
-0 = No restriction regarding Eras;
-1 = You cannot build World Wonders from 2 Eras behind and further (Default);
-*/
-
-INSERT INTO COMMUNITY	
-		(Type,						Value)
-VALUES	('MW-SETTING-MAX-ERA', 		1);
---------------------------------------------------------------
-/*
 World Wonder's restrictions!
 0 = No restrictions for building World Wonders (unused; do not set!);
 1 = Light restrictions added; sort of what you saw in base VP;
-2 = Hard restrictions added - maximum attention and no "aiming" for all WWs within the eyesight (Default);
+2 = Hard restrictions added - maximum attention and no "aiming" for all WWs within the eyesight (default);
 */
 
 INSERT INTO COMMUNITY	
 		(Type,							Value)
 VALUES	('MW-SETTING-REQUIREMENT', 		2);
---============================================--
--- AUTOMATED COMPATIBILITIES
---============================================--
+--------------------------------------------------------------
 /*
-EE compatibility patch!
-0 = Disabled disregarding if its detects EE by Infixo and Padre.
-1 = Enabled if it detects the EE by Infixo and Padre.
-2 = Disabled until it detects something! (Default)
+More World Wonders for each Policy tree!
+0 = 3 World Wonders per Policy tree;
+1 = 4 World Wonders per Policy tree (default);
 */
 
 INSERT INTO COMMUNITY	
-		(Type,			Value)
-VALUES	('MW-EE', 		0); -- disabled because of outdated EE
-
-UPDATE COMMUNITY
-SET Value = '1'
-WHERE Type = 'MW-EE' AND EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_2HANDER') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-EE' AND Value= 0);
-
+		(Type,							Value)
+VALUES	('MW-SETTING-POLICIES', 		1);
+--------------------------------------------------------------
 /*
-Civilizations compatibility patch!
-0 = Disabled disregarding if its detects any Civilization.
-1 = Enabled if it detects any Civilization.
-2 = Disabled until it detects something! (Default)
+Maximum Era restriction!
+0 = No restriction regarding Eras;
+1 = You cannot build World Wonders from 2 Eras behind and further (default);
 */
 
 INSERT INTO COMMUNITY	
-		(Type,			Value)
-VALUES	('MW-CIV-LOI', 		2);
+		(Type,							Value)
+VALUES	('MW-SETTING-MAX-ERA', 			1);
+--------------------------------------------------------------
+/*
+Two versions of new quote recordings for wonders!
+0 = Man (default);
+1 = Woman;
+*/
 
-UPDATE COMMUNITY
-SET Value = '1'
-WHERE Type = 'MW-CIV-LOI' AND EXISTS (SELECT * FROM Resources WHERE Type='RESOURCE_SHRIMP') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-CIV-LOI' AND Value= 0);
+INSERT INTO COMMUNITY	
+		(Type,							Value)
+VALUES	('MW-SETTING-SPEECH', 			0);
+--------------------------------------------------------------
+/*
+New HELP texts!
+0 = Normal World Wonder tooltip texts made with VP standard (default);
+1 = Improved World Wonder tooltip texts;
+*/
+
+INSERT INTO COMMUNITY	
+		(Type,							Value)
+VALUES	('MW-SETTING-HELP', 			0);
+--============================================--
+-- AUTOMATED COMPATIBILITIES SQL
+--============================================--
+/* Enlightenment Era */
+INSERT INTO BuildingClasses (Type)
+SELECT		'BUILDINGCLASS_DUMMY_EE'
+WHERE EXISTS (SELECT * FROM Buildings WHERE Type='BUILDING_EE_SUMMER_PALACE');
+
+CREATE TRIGGER IF NOT EXISTS MWCompatibilityEE
+AFTER INSERT ON Buildings
+WHEN NEW.Type = 'BUILDING_EE_SUMMER_PALACE'
+BEGIN
+    INSERT INTO BuildingClasses (Type)
+	VALUES		('BUILDINGCLASS_DUMMY_EE');
+END;
+
+/* Louisiana (Shrimp) */
+INSERT INTO BuildingClasses (Type)
+SELECT		'BUILDINGCLASS_DUMMY_LOUISIANA'
+WHERE EXISTS (SELECT * FROM Resources WHERE Type='RESOURCE_SHRIMP');
+
+CREATE TRIGGER IF NOT EXISTS MWCompatibilityLouisiana
+AFTER INSERT ON Resources
+WHEN NEW.Type = 'RESOURCE_SHRIMP'
+BEGIN
+    INSERT INTO BuildingClasses (Type)
+	VALUES		('BUILDINGCLASS_DUMMY_LOUISIANA');
+END;
+--============================================--
+-- AUTOMATED COMPATIBILITIES LUA
+--============================================--
+/* for GameInfoTypes.IMPROVEMENT_TRADING_POST
+GameInfoTypes.IMPROVEMENT_GW_BRITTANY_KERIADENN (Brittany)
+GameInfoTypes.IMPROVEMENT_HININ_AINU_KOTAN (Ainu)
+GameInfoTypes.IMPROVEMENT_JAR_BORGO (Italy from Jarcast)
+GameInfoTypes.IMPROVEMENT_JAR_HOGAN (Navajo from Jarcast) */
+
+/* for GameInfoTypes.IMPROVEMENT_CAMP
+GameInfoTypes.IMPROVEMENT_DMS_KAN (Tehuelche) */
 --============================================--
 -- CUSTOM_MOD_OPTIONS
 --============================================--

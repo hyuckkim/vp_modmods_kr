@@ -254,7 +254,7 @@ FreeBuildingThisCity = 'BUILDINGCLASS_STUPA'
 WHERE Type = 'BUILDING_EE_WAT_PHRA_KAEW';
 
 INSERT INTO Building_BuildingClassYieldChanges (BuildingType, BuildingClassType, YieldType, YieldChange) VALUES
-('BUILDING_EE_WAT_PHRA_KAEW', 'BUILDINGCLASS_EE_SEMINARY', 'YIELD_SCIENCE', 1),
+('BUILDING_EE_WAT_PHRA_KAEW', 'BUILDINGCLASS_EE_SEMINARY', 'YIELD_SCIENCE', 2),
 ('BUILDING_EE_WAT_PHRA_KAEW', 'BUILDINGCLASS_TEMPLE', 'YIELD_SCIENCE', 2);
 
 INSERT INTO Building_ImprovementYieldChangesGlobal
@@ -332,14 +332,13 @@ VALUES
 ------------------------
 
 UPDATE Buildings
-SET Water = 1, MinAreaSize = 10, TrainedFreePromotion = 'PROMOTION_EE_ADVENTURER'
+SET Water = 1, MinAreaSize = 10, TrainedFreePromotion = 'PROMOTION_EE_ADVENTURER', FreeBuildingThisCity = 'BUILDINGCLASS_EE_TAVERN'
 WHERE Type = 'BUILDING_EE_BELEM_TOWER';
 
 INSERT INTO Building_FreeUnits 
 	(BuildingType,						UnitType,				NumUnits)
 VALUES	
-	('BUILDING_EE_BELEM_TOWER', 	'UNIT_EE_ADVENTURER',		2),
-	('BUILDING_EE_BELEM_TOWER', 	'UNIT_GREAT_ADMIRAL',		1);
+	('BUILDING_EE_BELEM_TOWER', 	'UNIT_EE_ADVENTURER',		2);
 
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
 ('BUILDING_EE_BELEM_TOWER', 'YIELD_GOLD', 2);

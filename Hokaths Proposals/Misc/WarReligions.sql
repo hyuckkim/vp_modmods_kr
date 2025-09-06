@@ -12,6 +12,8 @@ VALUES
 	('BELIEF_ETERNAL_GLORY', 'TXT_KEY_BELIEF_ETERNAL_GLORY',      'TXT_KEY_BELIEF_ETERNAL_GLORY_SHORT',  'TXT_KEY_BELIEF_ETERNAL_GLORY',		
 	0, 	1, 	  0, 	 0, 	 0),
 	('BELIEF_CREMATION', 	'TXT_KEY_BELIEF_CREMATION',		'TXT_KEY_BELIEF_CREMATION_SHORT', 	'TXT_KEY_BELIEF_CREMATION',		
+	0, 	0, 	  0, 	 1, 	 0),
+	('BELIEF_DHARMA_WAR', 	'TXT_KEY_BELIEF_DHARMA_WAR',		'TXT_KEY_BELIEF_DHARMA_WAR_SHORT', 	'TXT_KEY_BELIEF_DHARMA_WAR',		
 	0, 	0, 	  0, 	 1, 	 0);
 
 INSERT INTO BuildingClasses
@@ -90,15 +92,19 @@ VALUES
 INSERT INTO Belief_YieldPerOtherReligionFollower
 	(BeliefType, YieldType, Yield)
 VALUES
-	('BELIEF_INTERFAITH_DIALOGUE', 'YIELD_FOOD', 3),
-	('BELIEF_INTERFAITH_DIALOGUE', 'YIELD_PRODUCTION', 3);
+	('BELIEF_INTERFAITH_DIALOGUE', 'YIELD_FOOD', 2),
+	('BELIEF_INTERFAITH_DIALOGUE', 'YIELD_PRODUCTION', 2);
+
+UPDATE Beliefs SET 
+FollowerScalerLimiter = 100
+WHERE Type = 'BELIEF_INTERFAITH_DIALOGUE';
 
 UPDATE Language_en_US
 SET Text = 'Ritual Sacrifice'
 WHERE Tag = 'TXT_KEY_BELIEF_INTERFAITH_DIALOGUE_SHORT';
 
 UPDATE Language_en_US
-SET Text = '+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production in Holy City for every 3 Followers of other [ICON_RELIGION] Religions in owned Cities. Receive 50 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points per converted [ICON_CITIZEN] Citizen when [ICON_INQUISITOR] Removing Heresy.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Great Altar National Wonder[ENDCOLOR] (+5 [ICON_PRODUCTION] Production and [ICON_PEACE] Faith; [ICON_FOOD]/[ICON_PRODUCTION] Yields on Kill when in [ICON_GOLDEN_AGE] Golden Age; +5 [ICON_PRODUCTION] Production from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
+SET Text = '+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production in the Holy City for every 2 Followers of other [ICON_RELIGION] Religions in owned Cities (max 100 Followers). Receive 50 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points per converted [ICON_CITIZEN] Citizen when [ICON_INQUISITOR] Removing Heresy.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Great Altar National Wonder[ENDCOLOR] (+5 [ICON_PRODUCTION] Production and [ICON_PEACE] Faith; [ICON_FOOD]/[ICON_PRODUCTION] Yields on Kill when in [ICON_GOLDEN_AGE] Golden Age; +5 [ICON_PRODUCTION] Production from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
 WHERE Tag = 'TXT_KEY_BELIEF_INTERFAITH_DIALOGUE';
 
 INSERT INTO Building_YieldFromVictoryGlobal
@@ -115,20 +121,25 @@ UPDATE Language_en_US
 SET Text = 'During a [ICON_GOLDEN_AGE] Golden Age, gain 20 [ICON_FOOD] Food and [ICON_PRODUCTION] Production in the City when an Enemy Unit is defeated in battle, scaling with Era.[NEWLINE][NEWLINE]+5 [ICON_PRODUCTION] Production from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.'
 WHERE Tag = 'TXT_KEY_BUILDING_GREAT_ALTAR_HELP';
 
--- ETERNAL_GLORY
---INSERT INTO Belief_YieldChangePerForeignCity
---	(BeliefType, YieldType, Yield)
---VALUES
---	('BELIEF_ETERNAL_GLORY', 'YIELD_PRODUCTION', 3),
---	('BELIEF_ETERNAL_GLORY', 'YIELD_FAITH', 3),
---	('BELIEF_ETERNAL_GLORY', 'YIELD_GREAT_ADMIRAL_POINTS', 3);
+-- eternal glory
+UPDATE Beliefs SET 
+CityScalerLimiter = 40
+WHERE Type = 'BELIEF_ETERNAL_GLORY';
 
-INSERT INTO Belief_YieldPerFollowingCity
+INSERT INTO Belief_YieldChangePerForeignCity
 	(BeliefType, YieldType, Yield)
 VALUES
-	('BELIEF_ETERNAL_GLORY', 'YIELD_PRODUCTION', 1),
-	('BELIEF_ETERNAL_GLORY', 'YIELD_FAITH', 1),
-	('BELIEF_ETERNAL_GLORY', 'YIELD_CULTURE_LOCAL', 1);
+	('BELIEF_ETERNAL_GLORY', 'YIELD_PRODUCTION', 2),
+	('BELIEF_ETERNAL_GLORY', 'YIELD_FAITH', 2),
+	('BELIEF_ETERNAL_GLORY', 'YIELD_CULTURE_LOCAL', 2);
+
+-- this adds to the city itself, not the holy city 
+--INSERT INTO Belief_YieldPerFollowingCity
+--	(BeliefType, YieldType, Yield)
+--VALUES
+--	('BELIEF_ETERNAL_GLORY', 'YIELD_PRODUCTION', 1),
+--	('BELIEF_ETERNAL_GLORY', 'YIELD_FAITH', 1),
+--	('BELIEF_ETERNAL_GLORY', 'YIELD_CULTURE_LOCAL', 1);
 
 INSERT INTO Belief_BuildingClassYieldChanges
 	(BeliefType, BuildingClassType, YieldType, YieldChange)
@@ -148,8 +159,9 @@ INSERT INTO Belief_YieldChangePerXCityStateFollowers
 VALUES
 	('BELIEF_GONGFU', 'YIELD_SCIENCE', 2),
 	('BELIEF_GONGFU', 'YIELD_CULTURE', 2);
-
+-----------------
 -- cremation
+----------------
 UPDATE Beliefs SET 
 FaithFromDyingUnits = 200,
 RiverHappiness = 1
@@ -159,6 +171,23 @@ INSERT INTO Belief_YieldPerBirth
 	(BeliefType, YieldType, Yield)
 VALUES
 	('BELIEF_CREMATION', 'YIELD_CULTURE', 10);
+
+-----------------
+-- Dharma war
+------------------
+
+INSERT INTO Belief_YieldFromConquest
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_DHARMA_WAR', 'YIELD_FAITH', 100),
+	('BELIEF_DHARMA_WAR', 'YIELD_GOLDEN_AGE_POINTS', 100),
+	('BELIEF_DHARMA_WAR', 'YIELD_GREAT_GENERAL_POINTS', 25),
+	('BELIEF_DHARMA_WAR', 'YIELD_GREAT_ADMIRAL_POINTS', 25);
+
+INSERT INTO Belief_YieldFromKills
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_DHARMA_WAR', 'YIELD_TOURISM', 200);
 
 -----------------------------------------------------------------------------------------------
 
@@ -215,14 +244,17 @@ VALUES
 	('TXT_KEY_BUILDING_MARTIAL_SANCTUM_STRATEGY', 'Build it, moron'),
 
 	('TXT_KEY_BELIEF_ETERNAL_GLORY_SHORT', 'Eternal Glory'),
-	('TXT_KEY_BELIEF_ETERNAL_GLORY', '+4 [ICON_PRODUCTION] Production, [ICON_PEACE] Faith, and [ICON_CULTURE_LOCAL] Border Growth Points from Courthouses, and +1 in the Holy City for every City following your [ICON_RELIGION] Religion.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Heavenly Stair National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +8 [ICON_CULTURE_LOCAL] Border Growth Points; [ICON_PEACE]/[ICON_CULTURE_LOCAL] Yields on Kill in all Cities; +5 [ICON_GREAT_ADMIRAL] Great Admiral Points from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'),
+	('TXT_KEY_BELIEF_ETERNAL_GLORY', '+4 [ICON_PRODUCTION] Production, [ICON_PEACE] Faith, and [ICON_CULTURE_LOCAL] Border Growth Points from Courthouses, and +2 in the Holy City for every Foreign City following your [ICON_RELIGION] Religion (max 40 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Heavenly Stair National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +8 [ICON_CULTURE_LOCAL] Border Growth Points; [ICON_PEACE]/[ICON_CULTURE_LOCAL] Yields on Kill in all Cities; +5 [ICON_GREAT_ADMIRAL] Great Admiral Points from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN', 'Heavenly Stair'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_PEDIA', 'Mount Olympus, Bifrost, Shrine of the Ascension'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_HELP', '+2 [ICON_PEACE] Faith and [ICON_CULTURE_LOCAL] Border Growth Points in all Cities when an Enemy Unit is defeated in battle.[NEWLINE][NEWLINE]+5 [ICON_GREAT_ADMIRAL] Great Admiral Points from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_STRATEGY', 'Build it, moron'),
 
 	('TXT_KEY_BELIEF_CREMATION_SHORT', 'Cremation'),
-	('TXT_KEY_BELIEF_CREMATION', 'Gain [ICON_PEACE] Faith when an owned Unit dies equal to 200% of its [ICON_STRENGTH] Strength. +1 [ICON_HAPPINESS_1] Happiness in Cities on Rivers. +10 [ICON_CULTURE] Culture when a [ICON_CITIZEN] Citizen is born, scaling with Era.');
+	('TXT_KEY_BELIEF_CREMATION', 'Gain [ICON_PEACE] Faith when an owned Unit dies equal to 200% of its [ICON_STRENGTH] Strength. +1 [ICON_HAPPINESS_1] Happiness in Cities on Rivers. +10 [ICON_CULTURE] Culture when a [ICON_CITIZEN] Citizen is born, scaling with Era.'),
+
+	('TXT_KEY_BELIEF_DHARMA_WAR_SHORT', 'Dharma-yuddha'),
+	('TXT_KEY_BELIEF_DHARMA_WAR', 'Receive 100 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points when you conquer a City, as well as 25 [ICON_GREAT_GENERAL] Great General Points (if City is landlocked) or [ICON_GREAT_ADMIRAL] Great Admiral Points (if Coastal). Bonus scales with City [ICON_CITIZEN] Population and Era. Gain [ICON_TOURISM] Tourism from killing enemy Units equal to 200% of their [ICON_STRENGTH] Strength.');
 
 UPDATE Language_en_US SET Text = 'Abstinence' WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_ART_SHORT';
 

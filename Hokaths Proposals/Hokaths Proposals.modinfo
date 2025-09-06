@@ -131,6 +131,7 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/PublicSchool_and_BroadcastTower.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/WarReligions.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/ReligionChanges.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/GreatPeopleBalance.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Supermarket.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Grocer_rebalance.sql</File>
@@ -229,6 +230,7 @@
 		<UpdateDatabase>Misc/Minefield.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/WarReligions.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/ReligionChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Misc/GreatPeopleBalance.sql</UpdateDatabase>
 
 		<UpdateDatabase>Ideology_Balance/AutocracyTenets.sql</UpdateDatabase>
 		<UpdateDatabase>Ideology_Balance/OrderTenets.sql</UpdateDatabase>

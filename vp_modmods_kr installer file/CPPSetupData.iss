@@ -185,8 +185,8 @@ Source: "..\Sukritact's Civ VI Style City Names (v 1)\*"; DestDir: "{app}\MODS\S
 ;Source: "..\TorpedoBoat (v19) INT\*"; DestDir: "{app}\MODS\TorpedoBoat (v19) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: tb
 Source: "..\TreeSuccession (v 44)\*"; DestDir: "{app}\MODS\TreeSuccession (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
 Source: "..\TreeSuccession (v 44) INT\*"; DestDir: "{app}\MODS\TreeSuccession (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
-Source: "..\Vox Populi's Bare Necessities (v 12)\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
-Source: "..\Vox Populi's Bare Necessities INT\*"; DestDir: "{app}\MODS\Vox Populi's Bare Necessities INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
+Source: "..\(j) Bare Necessities for VP (v 13)\*"; DestDir: "{app}\MODS\(j) Bare Necessities for VP (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
+Source: "..\(j) Bare Necessities for VP (v 13) INT\*"; DestDir: "{app}\MODS\(j) Bare Necessities for VP (v 13) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
 Source: "..\Whale Battles (v 1)\*"; DestDir: "{app}\MODS\Whale Battles (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
 Source: "..\Whale Battles (v 1) INT\*"; DestDir: "{app}\MODS\Whale Battles (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
 Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
@@ -194,6 +194,7 @@ Source: "..\World Congress Reformation INT\*"; DestDir: "{app}\MODS\World Congre
 Source: "..\Worker Mountaineering (v 3)\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wm
 Source: "..\Worker Mountaineering (v 3) INT\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wm
 Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: df
+Source: "..\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: lcv
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpnvc
@@ -270,7 +271,7 @@ Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Typ
 Name: "jhw"; Description: "VP Jarcast의 숨겨진 불가사의 (Jarcast's Hidden Wonders VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "emr"; Description: "VP + UCS 한층 더 많은 자원 (Even More Resources for Vox Populi UCS)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "bn"; Description: "VP 아주 적은 필수품 (Vox Populi's Bare Necessities)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -310,8 +311,9 @@ Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VP34UCMAX
 Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's Civ VI Style City Names)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "mine"; Description: "멋진 신세계용 지뢰 (Landmines for BNW)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "map"; Description: "추가 지도"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "lcv"; Description: "zai4z의 랜드마크 문화적 변화 (zai4z's Landmark Cultural Variation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 
+Name: "map"; Description: "추가 지도"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "cr"; Description: "역정찰 (Counter-Reconnaissance)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "eh"; Description: "탐험 유산 (Exploration Heritage)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "rpc0"; Description: "정찰 강화 지형 비용 (Recon Pay (Core0) Terrain Cost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
@@ -496,6 +498,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\TorpedoBoat (v19) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Vox Populi's Bare Necessities (v 12)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Vox Populi's Bare Necessities INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(j) Bare Necessities for VP (v 13)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(j) Bare Necessities for VP (v 13) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Whale Battles (v 1)"
@@ -508,6 +512,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Worker Mountaineering (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Worker Mountaineering (v 3) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World of Lore - DragonFable (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\zai4z's Landmark Cultural Variation (v 1)"
 
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Counter-Reconnaissance (v 44)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Counter-Reconnaissance (v 44) INT"

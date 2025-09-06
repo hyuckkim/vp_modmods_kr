@@ -1,3 +1,6 @@
+-------------------------------------------------------
+-- new beliefs and text defined
+-------------------------------------------------------
 INSERT INTO Beliefs
 	(Type, 	Description, 	ShortDescription, Tooltip, 
 	Pantheon,  Founder,  Follower, 	Enhancer,  Reformation)
@@ -6,9 +9,30 @@ VALUES
 	0, 	0, 	  1, 	 0, 	 0),
 	('BELIEF_EXODUS', 	'TXT_KEY_BELIEF_EXODUS',		'TXT_KEY_BELIEF_EXODUS_SHORT',          'TXT_KEY_BELIEF_EXODUS',		
 	0, 	0, 	  0, 	 0, 	 1),
+	('BELIEF_CARGO_CULT', 	'TXT_KEY_BELIEF_CARGO_CULT',		'TXT_KEY_BELIEF_CARGO_CULT_SHORT',          'TXT_KEY_BELIEF_CARGO_CULT',		
+	0, 	0, 	  0, 	 0, 	 1),
 	('BELIEF_SACRED_GEOMETRY',  'TXT_KEY_BELIEF_SACRED_GEOMETRY',   'TXT_KEY_BELIEF_SACRED_GEOMETRY_SHORT', 'TXT_KEY_BELIEF_SACRED_GEOMETRY',		
 	0, 	0, 	  0, 	 1, 	 0);
 
+INSERT INTO Language_en_US 
+	(Tag, Text)
+VALUES
+	--Theriolatry
+	('TXT_KEY_BELIEF_HOLY_COW_SHORT', 'Sacred Bull'),
+	('TXT_KEY_BELIEF_HOLY_COW', '+1 [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] from [ICON_RES_COW] Cattle.'),
+
+	('TXT_KEY_BELIEF_EXODUS_SHORT', 'Exodus'),
+	('TXT_KEY_BELIEF_EXODUS', 'Expending a [ICON_GREAT_ADMIRAL] Great Admiral grants 25 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points for every City following this [ICON_RELIGION] Religion (max 20 Cities). Settler and Religious Units gain the [COLOR_POSITIVE_TEXT]Diaspora[ENDCOLOR] Promotion. +2 [ICON_CULTURE] Culture and [ICON_GREAT_ADMIRAL] Great Admiral Points if the City is Coastal.'),
+
+	('TXT_KEY_BELIEF_CARGO_CULT_SHORT', 'Cargo Cult'),
+	('TXT_KEY_BELIEF_CARGO_CULT', 'May purchase Airports with [ICON_PEACE] Faith. Double yields from Natural Wonders. +5 [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every known [ICON_PANTHEON] Pantheon founded (caps at 8 Pantheons).'),
+
+	('TXT_KEY_BELIEF_SACRED_GEOMETRY_SHORT', 'Sacred Geometry'),
+	('TXT_KEY_BELIEF_SACRED_GEOMETRY', 'Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 [ICON_RESEARCH] Science and [ICON_PEACE] Faith for every City following this [ICON_RELIGION] Religion (max 20 Cities). +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all [ICON_WONDER] World Wonders. +5 [ICON_GREAT_MUSICIAN] Great Musician points in the Holy City.');
+
+-------------------------
+-- founders 
+--------------------------
 -- theocratic rule/world church/pilgrimage
 DELETE FROM Belief_YieldFromWLTKD WHERE BeliefType = 'BELIEF_WORLD_CHURCH';
 INSERT INTO Belief_YieldChangePerXForeignFollowers
@@ -29,14 +53,16 @@ INSERT INTO Belief_YieldPerXFollowers
 	(BeliefType, YieldType, PerXFollowers)
 VALUES
 	('BELIEF_PEACE_LOVING', 'YIELD_FOOD', 5),
-	('BELIEF_PEACE_LOVING', 'YIELD_PRODUCTION', 5),
+	('BELIEF_PEACE_LOVING', 'YIELD_CULTURE_LOCAL', 5),
 	('BELIEF_PEACE_LOVING', 'YIELD_GOLDEN_AGE_POINTS', 5);
 UPDATE Beliefs SET FollowerScalerLimiter = 300 WHERE Type = 'BELIEF_WORLD_CHURCH';
 UPDATE Language_en_US
-SET Text = Replace(Text, 'Holy City produces +20% of its Yields when your Empire is in a [ICON_GOLDEN_AGE] Golden Age.', '+1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every 5 Followers of this [ICON_RELIGION] Religion in owned Cities (max 300 Followers).')
+SET Text = Replace(Text, 'Holy City produces +20% of its Yields when your Empire is in a [ICON_GOLDEN_AGE] Golden Age.', '+1 [ICON_FOOD] Food, [ICON_CULTURE_LOCAL] Border Growth Points, and [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every 5 Followers of this [ICON_RELIGION] Religion in owned Cities (max 300 Followers).')
 WHERE Tag = 'TXT_KEY_BELIEF_PEACE_LOVING';
 
+------------------
 -- exodus
+-------------------
 UPDATE Beliefs SET CityScalerLimiter = 20 WHERE Type = 'BELIEF_EXODUS';
 
 INSERT INTO Belief_GreatPersonExpendedYield
@@ -78,7 +104,9 @@ VALUES
 	('TXT_KEY_PROMOTION_EXODUS', 'Diaspora'),
 	('TXT_KEY_PROMOTION_EXODUS_HELP', '+2 [ICON_MOVES] Naval Movement.[NEWLINE]+1 [ICON_VP_VISION] Vision while [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR].[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.');
 
+------------------
 -- sacred geometry
+-------------------
 INSERT INTO Belief_YieldChangeWorldWonder
 	(BeliefType, 	YieldType, 	Yield)
 VALUES	
@@ -97,7 +125,9 @@ INSERT INTO Belief_GreatPersonPoints
 VALUES
 	('BELIEF_SACRED_GEOMETRY', 'GREATPERSON_MUSICIAN', 5);
 
--- holy cows
+------------------
+-- sacred bull
+-------------------
 INSERT INTO Belief_ResourceYieldChanges
 	(BeliefType, ResourceType, YieldType, Yield)
 SELECT
@@ -107,6 +137,9 @@ FROM Resources a, Yields b WHERE
 a.Type = 'RESOURCE_COW' AND
 b.ID < 6;
 
+------------------
+-- golden age yields move
+-------------------
 -- orthodoxy yields during GA, following pdan beliefs
 UPDATE Beliefs SET 
 SpreadDistanceModifier = 20,
@@ -131,7 +164,9 @@ UPDATE Language_en_US
 SET Text = 'Holy City gains +15% [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] during a [ICON_GOLDEN_AGE] Golden Age. [ICON_RELIGION] Religion spreads 20% faster (50% with Printing Press), and to Cities 20% further away.'
 WHERE Tag = 'TXT_KEY_BELIEF_HOLY_ORDER';
 
--- sacred calender WLTKD yields 
+------------------
+-- WLTKD yields  move
+-------------------
 UPDATE Language_en_US
 SET Text = 'Annual Festivals'
 WHERE Tag = 'TXT_KEY_BELIEF_MISSIONARY_ZEAL_SHORT';
@@ -164,18 +199,20 @@ VALUES
 	('BELIEF_MISSIONARY_ZEAL', 'YIELD_FAITH', 10);
 
 UPDATE Beliefs SET
-BorderGrowthRateIncreaseGlobal = 40
+BorderGrowthRateIncreaseGlobal = 33
 WHERE Type = 'BELIEF_MISSIONARY_ZEAL';
 
 UPDATE Language_en_US
-SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%. +40% [ICON_CULTURE_LOCAL] Border Growth Rate in all owned Cities. [ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
+SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%. +33% [ICON_CULTURE_LOCAL] Border Growth Rate. [ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
 WHERE Tag = 'TXT_KEY_BELIEF_MISSIONARY_ZEAL';
 --+1 [ICON_HAPPINESS_1] Happiness from every Luxury Resource.
 
 DELETE FROM Belief_YieldChangePerForeignCity WHERE BeliefType = 'BELIEF_MISSIONARY_ZEAL';
 DELETE FROM Belief_GoldenAgeGreatPersonRateModifier WHERE BeliefType = 'BELIEF_MISSIONARY_ZEAL';
 
+--------------------------------------
 -- symbolism gain GP during GA from sacred calendar
+--------------------------------------
 UPDATE Beliefs SET HappinessPerFollowingCity = 0.25 WHERE Type = 'BELIEF_ITINERANT_PREACHERS';
 DELETE FROM Belief_HolyCityYieldChanges WHERE BeliefType = 'BELIEF_ITINERANT_PREACHERS';
 DELETE FROM Belief_GreatPersonPoints WHERE BeliefType = 'BELIEF_ITINERANT_PREACHERS';
@@ -194,16 +231,145 @@ UPDATE Language_en_US
 SET Text = 'Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 and gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion (max 24 Cities). +33% [ICON_GREAT_PEOPLE] Great Person Rate in Holy City during [ICON_GOLDEN_AGE] Golden Ages.'
 WHERE Tag = 'TXT_KEY_BELIEF_ITINERANT_PREACHERS';
 
--------------------------------------------------------
-INSERT INTO Language_en_US 
-	(Tag, Text)
+-------------------------
+-- cargo cult
+-------------------------
+INSERT INTO Belief_YieldModifierNaturalWonder
+	(BeliefType, YieldType, Yield)
+SELECT
+	'BELIEF_CARGO_CULT', Type, 100
+FROM Yields;
+
+INSERT INTO Belief_BuildingClassFaithPurchase
+	(BeliefType, BuildingClassType)
 VALUES
-	--Theriolatry
-	('TXT_KEY_BELIEF_HOLY_COW_SHORT', 'Sacred Bull'),
-	('TXT_KEY_BELIEF_HOLY_COW', '+1 [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] from [ICON_RES_COW] Cattle.'),
+	('BELIEF_CARGO_CULT', 'BUILDINGCLASS_AIRPORT');
 
-	('TXT_KEY_BELIEF_EXODUS_SHORT', 'Exodus'),
-	('TXT_KEY_BELIEF_EXODUS', 'Expending a [ICON_GREAT_ADMIRAL] Great Admiral grants 25 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points for every City following this [ICON_RELIGION] Religion (max 20 Cities). Settler and Religious Units gain the [COLOR_POSITIVE_TEXT]Diaspora[ENDCOLOR] Promotion. +2 [ICON_CULTURE] Culture and [ICON_GREAT_ADMIRAL] Great Admiral Points if the City is Coastal.'),
+UPDATE Buildings SET FaithCost = 1000, UnlockedByBelief = 1 WHERE BuildingClass = 'BUILDINGCLASS_AIRPORT';
 
-	('TXT_KEY_BELIEF_SACRED_GEOMETRY_SHORT', 'Sacred Geometry'),
-	('TXT_KEY_BELIEF_SACRED_GEOMETRY', 'Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 [ICON_RESEARCH] Science and [ICON_PEACE] Faith for every City following this [ICON_RELIGION] Religion (max 20 Cities). +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all [ICON_WONDER] World Wonders. +5 [ICON_GREAT_MUSICIAN] Great Musician points in the Holy City.');
+INSERT INTO Belief_YieldFromKnownPantheons
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_CARGO_CULT', 'YIELD_GOLDEN_AGE_POINTS', 500);
+
+------------------------------------------------------
+-- Follower Yield Beliefs
+------------------------------------------------------
+
+UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 50 WHERE BeliefType = 'BELIEF_ASCETISM';
+UPDATE Belief_MaxYieldPerFollower SET Max = 15 WHERE BeliefType = 'BELIEF_ASCETISM';
+INSERT INTO Belief_YieldChangeAnySpecialist
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_DIVINE_INSPIRATION', 'YIELD_FOOD', 4);
+
+UPDATE Language_en_US
+SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City (max +15 [ICON_FOOD] Food). +4 [ICON_FOOD] Food if the City has a Specialist.'
+WHERE Tag = 'TXT_KEY_BELIEF_ASCETISM';
+
+INSERT INTO Belief_YieldPerActiveTR
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_RELIGIOUS_COMMUNITY', 'YIELD_PRODUCTION', 2);
+UPDATE Language_en_US
+SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City (max +15 [ICON_PRODUCTION] Production). +2 [ICON_PRODUCTION] Production per active [ICON_INTERNATIONAL_TRADE] Trade Route to or from the City.'
+WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_COMMUNITY';
+
+UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 50 WHERE BeliefType = 'BELIEF_FEED_WORLD';
+UPDATE Belief_MaxYieldPerFollower SET Max = 15 WHERE BeliefType = 'BELIEF_FEED_WORLD';
+INSERT INTO Belief_SpecialistYieldChanges
+	(BeliefType, SpecialistType, YieldType, Yield)
+VALUES
+	('BELIEF_FEED_WORLD', 'SPECIALIST_CITIZEN', 'YIELD_GOLD', 1),
+	('BELIEF_FEED_WORLD', 'SPECIALIST_ENGINEER', 'YIELD_GOLD', 1),
+	('BELIEF_FEED_WORLD', 'SPECIALIST_MERCHANT', 'YIELD_GOLD', 1),
+	('BELIEF_FEED_WORLD', 'SPECIALIST_SCIENTIST', 'YIELD_GOLD', 1);
+UPDATE Language_en_US
+SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City (max +15 [ICON_GOLD] Gold). +1 [ICON_GOLD] Gold from [ICON_CITIZEN_RED] Labourers, [ICON_VP_ENGINEER] Engineers, [ICON_VP_MERCHANT] Merchants, and [ICON_VP_SCIENTIST] Scientists.'
+WHERE Tag = 'TXT_KEY_BELIEF_FEED_WORLD';
+
+UPDATE Belief_MaxYieldPerFollower SET Max = 10 WHERE BeliefType = 'BELIEF_DIVINE_INSPIRATION';
+DELETE FROM Belief_YieldChangeAnySpecialist WHERE BeliefType = 'BELIEF_DIVINE_INSPIRATION';
+INSERT INTO Belief_GreatWorkYieldChanges
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_DIVINE_INSPIRATION', 'YIELD_CULTURE', 1);
+UPDATE Language_en_US
+SET Text = '+1 [ICON_CULTURE] Culture for every 3 followers in the City (max +10 [ICON_CULTURE] Culture). +1 [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works.'
+WHERE Tag = 'TXT_KEY_BELIEF_DIVINE_INSPIRATION';
+
+UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 34 WHERE BeliefType = 'BELIEF_CHORAL_MUSIC';
+UPDATE Belief_MaxYieldPerFollower SET Max = 10 WHERE BeliefType = 'BELIEF_CHORAL_MUSIC';
+INSERT INTO Belief_BuildingClassYieldChanges
+	(BeliefType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BELIEF_CHORAL_MUSIC', 'BUILDINGCLASS_UNIVERSITY', 'YIELD_SCIENCE', 2);
+UPDATE Language_en_US
+SET Text = '+1 [ICON_RESEARCH] Science for every 3 followers in the City (max +10 [ICON_RESEARCH] Science). +2 [ICON_RESEARCH] Science from Universities.'
+WHERE Tag = 'TXT_KEY_BELIEF_CHORAL_MUSIC';
+
+------------------
+-- cooperation to match
+INSERT INTO Belief_YieldChangeAnySpecialist
+	(BeliefType, YieldType, Yield)
+VALUES
+	('BELIEF_COMMUNALISM', 'YIELD_FOOD', 2);
+UPDATE Language_en_US
+SET Text = '[ICON_FOOD] Food and [ICON_PRODUCTION] Production Internal Trade Routes generate +3 of their respective yields, scaling with Era. +2 [ICON_FOOD] Food and [ICON_PRODUCTION] Production if the City has a Specialist.'
+WHERE Tag = 'TXT_KEY_BELIEF_COMMUNALISM';
+
+-- mastery/abstinence include labourers for custom civ options
+
+INSERT INTO Belief_SpecialistYieldChanges
+	(BeliefType, SpecialistType, YieldType, Yield)
+VALUES
+	('BELIEF_RELIGIOUS_ART', 'SPECIALIST_CITIZEN', 'YIELD_PRODUCTION', 1),
+	('BELIEF_RELIGIOUS_ART', 'SPECIALIST_CITIZEN', 'YIELD_GOLDEN_AGE_POINTS', 1);
+
+UPDATE Language_en_US
+SET Text = 'Specialists generate +1 [ICON_GOLDEN_AGE] Golden Age Point and +1 of their primary Yield ([ICON_VP_SCIENTIST]:[ICON_RESEARCH], [ICON_VP_MERCHANT]/[ICON_CSD_CIVIL_SERVANT]:[ICON_GOLD], [ICON_VP_ENGINEER]/[ICON_CITIZEN_RED]:[ICON_PRODUCTION], [ICON_VP_WRITER]/[ICON_VP_ARTIST]/[ICON_VP_MUSICIAN]:[ICON_CULTURE]).'
+WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_ART';
+
+---------------------
+-- update reformations to have gallery and observatory
+---------------------
+-- gallery
+INSERT INTO Belief_BuildingClassYieldChanges
+	(BeliefType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BELIEF_UNDERGROUND_SECT', 'BUILDINGCLASS_GALLERY', 'YIELD_CULTURE', 2);
+
+INSERT INTO Belief_BuildingClassFaithPurchase
+	(BeliefType, BuildingClassType)
+VALUES
+	('BELIEF_UNDERGROUND_SECT', 'BUILDINGCLASS_GALLERY');
+
+UPDATE Buildings SET
+FaithCost = 450,
+UnlockedByBelief = 1
+WHERE BuildingClass = 'BUILDINGCLASS_GALLERY';
+
+UPDATE Language_en_US
+SET Text = Replace(Text, 'Amphitheaters,', 'Amphitheaters, Galleries,')
+WHERE Tag = 'TXT_KEY_BELIEF_UNDERGROUND_SECT';
+
+-- observatory
+INSERT INTO Belief_BuildingClassYieldChanges
+	(BeliefType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BELIEF_JESUIT_EDUCATION', 'BUILDINGCLASS_OBSERVATORY', 'YIELD_SCIENCE', 2);
+
+INSERT INTO Belief_BuildingClassFaithPurchase
+	(BeliefType, BuildingClassType)
+VALUES
+	('BELIEF_JESUIT_EDUCATION', 'BUILDINGCLASS_OBSERVATORY');
+
+UPDATE Buildings SET
+FaithCost = 450,
+UnlockedByBelief = 1
+WHERE BuildingClass = 'BUILDINGCLASS_OBSERVATORY';
+
+UPDATE Language_en_US
+SET Text = Replace(Text, 'Universities,', 'Universities, Observatories,')
+WHERE Tag = 'TXT_KEY_BELIEF_JESUIT_EDUCATION';
+
