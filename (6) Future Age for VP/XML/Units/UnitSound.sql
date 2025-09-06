@@ -134,7 +134,7 @@ FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_CARTHAGINIAN_FOREST_ELEPHANT';
 
 INSERT INTO UnitGameplay2DScripts 	
 			(UnitType, 				SelectionSound, FirstSelectionSound)
-SELECT		'UNIT__FW_CHIMERA',	SelectionSound, FirstSelectionSound
+SELECT		'UNIT_FW_CHIMERA',	SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_CARTHAGINIAN_FOREST_ELEPHANT';	
 
 INSERT INTO UnitGameplay2DScripts 	

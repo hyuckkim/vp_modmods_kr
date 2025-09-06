@@ -3,9 +3,10 @@
 	<Technologies>
 		<Row>
 			<Type>TECH_FW_DUMMY_HIDDEN</Type>
-			<Description>TXT_KEY_TECH_FW_DUMMY_HIDDEN</Description>
 			<Era>ERA_ANCIENT</Era>
-			<!-- UI에서 렌더 안 하도록 화면 그리드 밖으로 -->
+			<Description>TXT_KEY_TECH_FW_DUMMY_HIDDEN_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_DUMMY_HIDDEN_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_DUMMY_HIDDEN_HELP</Help>
 			<GridX>-1</GridX>
 			<GridY>-1</GridY>
 			<PortraitIndex>0</PortraitIndex>
@@ -978,367 +979,120 @@
 		</Row>
 	</Technology_PrereqTechs>
 	<Technology_Flavors>
-		<!-- <Row>
-			<TechType>TECH_GLOBALIZATION</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row> -->
-		<!-- <Row>
-			<TechType>TECH_GLOBALIZATION</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row> -->
-		<!-- <Row>
-			<TechType>TECH_GLOBALIZATION</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>10</Flavor>
-		</Row> -->
-
 		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_EXPANSION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GEN_MANIP</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_RECON</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_I_TRADE_DESTINATION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_I_TRADE_ORIGIN</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_SUPERCOMPUTERS</TechType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ROBOTICS</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOMATERIALS</TechType>
-			<FlavorType>FLAVOR_AIR</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_AIR</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FUTURE_BALLISTICS</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_EXPANSION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_EUTHENICS</TechType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
 			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_MEMETICS</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>25</Flavor>
+			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MEMETICS</TechType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_MEMETICS</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_MEMETICS</TechType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_MEMETICS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
+			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<TechType>TECH_GEN_MANIP</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
+			<TechType>TECH_GEN_MANIP</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GEN_MANIP</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
+			<TechType>TECH_GEN_MANIP</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_GRID_COMPUTING</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		
-		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<TechType>TECH_GEN_MANIP</TechType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<TechType>TECH_GEN_MANIP</TechType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<TechType>TECH_GEN_MANIP</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
-			<Flavor>5</Flavor>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row> 
+		<Row>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row> 
+		<Row>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
+		</Row> 
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_POWER_SYSTEMS</TechType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>5</Flavor>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
@@ -1353,7 +1107,7 @@
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>20</Flavor>
+			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
@@ -1367,17 +1121,197 @@
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NANOTECHNOLOGY</TechType>
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>		
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORBITAL_DEV</TechType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FW_ECOTHEORY</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_GRID_COMPUTING</TechType>
+			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MEMETICS</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MEMETICS</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MEMETICS</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MEMETICS</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MEMETICS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SUPERCOMPUTERS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOMATERIALS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
@@ -1410,7 +1344,6 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
@@ -1428,16 +1361,6 @@
 		</Row>
 		<Row>
 			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
-			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
@@ -1446,7 +1369,36 @@
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
+		<Row>
+			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORGANICS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORGANICS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORGANICS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORGANICS</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ORGANICS</TechType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
 		<Row>
 			<TechType>TECH_IMPLANTS</TechType>
 			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
@@ -1455,7 +1407,7 @@
 		<Row>
 			<TechType>TECH_IMPLANTS</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_IMPLANTS</TechType>
@@ -1477,284 +1429,211 @@
 			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>30</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_FW_ECOTHEORY</TechType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>30</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
-			<Flavor>30</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
-			<Flavor>40</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_AIR</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORBITAL_DEV</TechType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CLONING</TechType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_MOBILE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
-			<FlavorType>FLAVOR_RECON</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_ORGANICS</TechType>
+			<TechType>TECH_MECHATRONICS</TechType>
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>		
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_WOMDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>	
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>	
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_SCIEMCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>	
+		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>	
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>30</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FUTURE_BALLISTICS</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_POWER_SYSTEMS</TechType>
+			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CLONING</TechType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_EUTHENICS</TechType>
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>25</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>20</Flavor>
+			<TechType>TECH_EUTHENICS</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
+			<TechType>TECH_EUTHENICS</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_MECHATRONICS</TechType>
-			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
-			<Flavor>10</Flavor>
+			<TechType>TECH_COGNITIVE_TECH</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
 		</Row>
-		
 		<Row>
 			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
 			<FlavorType>FLAVOR_NUKE</FlavorType>
@@ -1772,11 +1651,6 @@
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
-			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
@@ -1788,9 +1662,8 @@
 		<Row>
 			<TechType>TECH_NUCLEAR_ENRICHMENT</TechType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_ASTRODYNAMICS</TechType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
@@ -1826,16 +1699,15 @@
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-		<!-- <Row>
+		<Row>
 			<TechType>TECH_ASTRODYNAMICS</TechType>
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
-			<Flavor>30</Flavor>
-		</Row> -->
-
+			<Flavor>20</Flavor>
+		</Row> 
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
@@ -1855,12 +1727,12 @@
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>30</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
@@ -1870,12 +1742,12 @@
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>30</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_TRANSGENICS</TechType>
@@ -1887,7 +1759,6 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_NEURAL_INTERFACE</TechType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -1911,7 +1782,7 @@
 		<Row>
 			<TechType>TECH_NEURAL_INTERFACE</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>5</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NEURAL_INTERFACE</TechType>
@@ -1953,11 +1824,10 @@
 			<FlavorType>FLAVOR_I_TRADE_DESTINATION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
@@ -1982,7 +1852,7 @@
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
@@ -1992,12 +1862,12 @@
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AUTONOMOUS_SYSTEMS</TechType>
@@ -2019,7 +1889,6 @@
 			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_SUPERCONDUCTIVITY</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -2095,11 +1964,10 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_ARCOLOGIES</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_ARCOLOGIES</TechType>
@@ -2128,7 +1996,7 @@
 		</Row>
 		<Row>
 			<TechType>TECH_ARCOLOGIES</TechType>
-			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
@@ -2161,11 +2029,10 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
@@ -2180,34 +2047,29 @@
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
-			<FlavorType>FLAVOR_RELIGION</FlavorType>
-			<Flavor>10</Flavor>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GENGINEERING</TechType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-		<Row>
-			<TechType>TECH_GENGINEERING</TechType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		
+	
 		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -2226,14 +2088,13 @@
 		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>30</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>30</Flavor>
+			<Flavor>50</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -2242,7 +2103,7 @@
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
@@ -2256,21 +2117,6 @@
 		</Row>
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
-			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CYBERNETICS</TechType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CYBERNETICS</TechType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_CYBERNETICS</TechType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
@@ -2279,11 +2125,10 @@
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_AI</TechType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AI</TechType>
@@ -2293,17 +2138,12 @@
 		<Row>
 			<TechType>TECH_AI</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<TechType>TECH_AI</TechType>
-			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>30</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AI</TechType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_AI</TechType>
@@ -2320,7 +2160,6 @@
 			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
@@ -2329,7 +2168,7 @@
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<FlavorType>FLAVOR_NUKE</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>25</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
@@ -2344,7 +2183,7 @@
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>5</Flavor>
+			<Flavor>15</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
@@ -2359,13 +2198,9 @@
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<FlavorType>FLAVOR_DIPOLOMACY</FlavorType>
-			<Flavor>15</Flavor>
+			<Flavor>20</Flavor>
 		</Row>
-		<Row>
-			<TechType>TECH_NUCLEAR_FUSION</TechType>
-			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
+
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -2386,7 +2221,6 @@
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
-
 		<Row>
 			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
@@ -2421,8 +2255,7 @@
 			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
 			<FlavorType>FLAVOR_NUKE</FlavorType>
 			<Flavor>5</Flavor>
-		</Row>
-		
+		</Row>	
 		<Row>
 			<TechType>TECH_ADAMANTIUM</TechType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -2686,7 +2519,11 @@
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
 			<Flavor>25</Flavor>
 		</Row>
-
+		<Row>
+			<TechType>TECH_ENERGY_THEORY</TechType>
+			<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
 		<Row>
 			<TechType>TECH_ENERGY_THEORY</TechType>
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
@@ -2782,7 +2619,7 @@
 		</Row>
 		<Row>
 			<TechType>TECH_HOMO_SUPERIOR</TechType>
-			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
@@ -2824,7 +2661,7 @@
 		<Row>
 			<TechType>TECH_COMPUTRONIUM</TechType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>30</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_COMPUTRONIUM</TechType>
@@ -2845,7 +2682,7 @@
 		<Row>
 			<TechType>TECH_SPACE_COLONIZATION</TechType>
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
-			<Flavor>30</Flavor>
+			<Flavor>50</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_SPACE_COLONIZATION</TechType>
