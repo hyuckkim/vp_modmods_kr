@@ -77,7 +77,6 @@ Source: "..\UI - Diplomacy Log (v 3)\*"; DestDir: "{app}\MODS\UI - Diplomacy Log
 Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
 Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
 Source: "..\UI - Gold Alerts (v 10)\*"; DestDir: "{app}\MODS\UI - Gold Alerts (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiga
-Source: "..\UI - Horizontal Leaders' Portraits for VP (v2.1)\*"; DestDir: "{app}\MODS\UI - Horizontal Leaders' Portraits for VP (v2.1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uihlp
 Source: "..\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
 Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
 Source: "..\UI - Map Pins (v 17)\*"; DestDir: "{app}\MODS\UI - Map Pins (v 17)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uimp
@@ -250,7 +249,6 @@ Name: "uicp"; Description: "도시 생산력 (City Production)"; Types: VP34UCEX
 Name: "uicr"; Description: "도시 종교 (City Religions)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uidl"; Description: "외교 기록 (Diplomacy Log)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiga"; Description: "골드 알림 (Gold Alerts)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uihlp"; Description: "VP용 수평화된 지도자 초상화 (Horizontal Leaders' Portraits for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uimp"; Description: "지도 핀 (Map Pins)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uinaew"; Description: "노동자 자동 승선 막기 (No Auto-Embark Workers)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "uiner"; Description: "저항 벗어남 알림 (Notify Exit Resistance)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
