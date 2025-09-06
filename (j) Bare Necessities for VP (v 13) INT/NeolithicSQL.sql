@@ -1,3 +1,36 @@
+--======================================================================================================================================--
+-- Buildings
+--======================================================================================================================================--
+-- BARNENEZ
+------------------------------------------------------------------------------------------------------------------------------------------
+INSERT OR REPLACE INTO Language_ko_KR 
+(Tag, 								Text) VALUES
+('TXT_KEY_BUILDING_BARNENEZ',		'Barnenez'),
+('TXT_KEY_WONDER_BARNENEZ_QUOTE',	'[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]'),
+('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.'),
+('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'+1 [ICON_GOLDEN_AGE] Golden Age Point. [NEWLINE]Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY} and 50 [ICON_RESEARCH] Science in the City in which it is built. [NEWLINE]All owned Granaries gain +1 [ICON_PEACE] Faith.');
+
+INSERT OR REPLACE INTO Language_ko_KR 
+		(Tag, 							 Text)
+SELECT	'TXT_KEY_WONDER_BARNENEZ_HELP', 'Wonder: [COLOR_NEGATIVE_TEXT]Newgrange[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
+FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_BARNENEZ_HELP_CUT';
+------------------------------------------------------------------------------------------------------------------------------------------
+-- NEWGRANGE
+------------------------------------------------------------------------------------------------------------------------------------------
+INSERT OR REPLACE INTO Language_ko_KR 
+(Tag, 								Text) VALUES
+('TXT_KEY_BUILDING_NEWGRANGE',		'Newgrange'),
+('TXT_KEY_WONDER_NEWGRANGE_QUOTE',	'[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]'),
+('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.'),
+('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_LODGE} in the City in which it is built. [NEWLINE]Gain 20 [ICON_GOLDEN_AGE] Golden Age Points when a new [ICON_CITIZEN] Citizen is born in the City, scaling with Era. [NEWLINE]All owned Smokehouses gain +1 [ICON_PEACE] Faith.');
+
+INSERT OR REPLACE INTO Language_ko_KR 
+		(Tag, 							 Text)
+SELECT	'TXT_KEY_WONDER_NEWGRANGE_HELP', 'Wonder: [COLOR_NEGATIVE_TEXT]Barnenez[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
+FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_NEWGRANGE_HELP_CUT';
+------------------------------------------------------------------------------------------------------------------------------------------
+-- CATALHOYUK
+------------------------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR 
 (Tag, 									Text) VALUES
 ('TXT_KEY_BUILDING_CATALHOYUK',		'차탈회위크'),
