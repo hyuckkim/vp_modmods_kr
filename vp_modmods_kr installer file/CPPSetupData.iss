@@ -117,7 +117,6 @@ Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(ov
 Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: usf
-Source: "..\_Named Ethnic Units_ (v 600)\*"; DestDir: "{app}\MODS\_Named Ethnic Units_ (v 600)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: neu
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
@@ -287,7 +286,6 @@ Name: "ras"; Description: "진짜 고급 설정 (Really Advanced Setup)"; Types:
 Name: "gc"; Description: "포획+++ (Capture+++)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 ;Name: "sf"; Description: "속임수 (Subterfuge)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 ;Name: "ed"; Description: "이벤트와 결정 (Events and Decisions)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "neu"; Description: "유명한 민족 유닛 (Named Ethnic Units)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 Name: "cd"; Description: "대륙 이동설 (Continental Drift)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 ;Name: "hc"; Description: "VP 육각 타일 정복 (Hex Conquer VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
 ;Name: "hrc"; Description: "역사적 종교 완전판 (Historical Religions Complete)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
