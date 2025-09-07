@@ -53,19 +53,19 @@ DROP TABLE JarBareConfig;
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings
 SET WonderSplashImage='Barnenez_splash.dds', Cost = (SELECT Cost FROM Buildings WHERE Type = 'BUILDING_STONEHENGE'),
-PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type = 'BUILDING_GRANARY'), WonderSplashAudio = 'AS2D_WONDER_BARNENEZ',
+PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type = 'BUILDING_LODGE'), WonderSplashAudio = 'AS2D_WONDER_BARNENEZ',
 NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_STONEHENGE'), MaxStartEra = 'ERA_CLASSICAL',
-SpecialistType='SPECIALIST_MERCHANT', GreatPeopleRateChange=1, FreeBuildingThisCity = 'BUILDINGCLASS_GRANARY'
+SpecialistType='SPECIALIST_SCIENTIST', GreatPeopleRateChange=1, FreeBuildingThisCity = 'BUILDINGCLASS_LODGE'
 WHERE Type = 'BUILDING_BARNENEZ';
 
 INSERT INTO Building_YieldChanges (BuildingType,YieldType, Yield)
 SELECT 'BUILDING_BARNENEZ', 'YIELD_CULTURE', 1  UNION ALL
-SELECT 'BUILDING_BARNENEZ', 'YIELD_GOLDEN_AGE_POINTS', 1  UNION ALL
+SELECT 'BUILDING_BARNENEZ', 'YIELD_GOLDEN_AGE_POINTS', 1 UNION ALL
 SELECT 'BUILDING_BARNENEZ', 'YIELD_PRODUCTION', 1;
 
 INSERT INTO Building_BuildingClassYieldChanges 
 		(BuildingType,			BuildingClassType,		YieldType,		YieldChange) 
-VALUES	('BUILDING_BARNENEZ',	'BUILDINGCLASS_GRANARY','YIELD_FAITH',	1);
+VALUES	('BUILDING_BARNENEZ',	'BUILDINGCLASS_LODGE','YIELD_FAITH',	1);
 
 INSERT INTO Building_InstantYield (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_BARNENEZ', 'YIELD_SCIENCE', 50;
@@ -79,8 +79,8 @@ INSERT OR REPLACE INTO Language_en_US
 (Tag, 								Text) VALUES
 ('TXT_KEY_BUILDING_BARNENEZ',		'Barnenez'),
 ('TXT_KEY_WONDER_BARNENEZ_QUOTE',	'[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]'),
-('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.'),
-('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'+1 [ICON_GOLDEN_AGE] Golden Age Point. [NEWLINE]Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY} and 50 [ICON_RESEARCH] Science in the City in which it is built. [NEWLINE]All owned Granaries gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'The Barnenez cairn, located in Brittany, France, is one of the oldest and largest megalithic monuments in Europe. Often called the "Parthenon of prehistory", it is a massive stone burial mound measuring about 70 meters long, 25 meters wide, and up to 9 meters high. Built primarily of granite and schist, the cairn contains eleven burial chambers, accessible through narrow passageways. The interior walls are decorated with carved symbols such as axes and serpentine motifs, reflecting the ritual and symbolic importance of the structure. Its sheer scale and complexity highlight the advanced organizational and architectural abilities of Neolithic communities. [NEWLINE][NEWLINE]The history of Barnenez dates back to around 4800–4200 BCE, during the early Neolithic period, making it older than Stonehenge and the Egyptian pyramids. It was constructed in two main phases: the first involved building smaller tombs, later unified into one vast cairn. Over millennia, the site was used for burials and ceremonial purposes, but it fell into obscurity until rediscovered in the 19th century. In the 1950s, quarrying activities threatened its survival, but archaeological excavations revealed its significance, leading to preservation efforts. Today, the Cairn of Barnenez stands as a remarkable testament to Europe''s prehistoric past and is recognized as one of the earliest examples of monumental stone architecture in human history.'),
+('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'+1 [ICON_GOLDEN_AGE] Golden Age Point. [NEWLINE]Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_LODGE} and 50 [ICON_RESEARCH] Science in the City in which it is built. [NEWLINE]All owned Smokehouses gain +1 [ICON_PEACE] Faith.');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
@@ -91,19 +91,19 @@ FROM Language_en_US WHERE Tag = 'TXT_KEY_WONDER_BARNENEZ_HELP_CUT';
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings
 SET WonderSplashImage='Newgrange_splash.dds', Cost = (SELECT Cost FROM Buildings WHERE Type = 'BUILDING_STONEHENGE'),
-PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type = 'BUILDING_LODGE'), WonderSplashAudio = 'AS2D_WONDER_NEWGRANGE',
+PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type = 'BUILDING_GRANARY'), WonderSplashAudio = 'AS2D_WONDER_NEWGRANGE',
 NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_STONEHENGE'), MaxStartEra = 'ERA_CLASSICAL',
-SpecialistType='SPECIALIST_SCIENTIST', GreatPeopleRateChange=1, FreeBuildingThisCity = 'BUILDINGCLASS_LODGE', PortraitIndex= 1
+SpecialistType='SPECIALIST_MERCHANT', GreatPeopleRateChange=1, FreeBuildingThisCity = 'BUILDINGCLASS_GRANARY', PortraitIndex= 1
 WHERE Type = 'BUILDING_NEWGRANGE';
 
 INSERT INTO Building_YieldChanges (BuildingType,YieldType, Yield)
 SELECT 'BUILDING_NEWGRANGE', 'YIELD_CULTURE', 1 UNION ALL
-SELECT 'BUILDING_NEWGRANGE', 'YIELD_SCIENCE', 1 UNION ALL
+SELECT 'BUILDING_NEWGRANGE', 'YIELD_FOOD', 1  UNION ALL
 SELECT 'BUILDING_NEWGRANGE', 'YIELD_PRODUCTION', 1;
 
 INSERT INTO Building_BuildingClassYieldChanges 
 		(BuildingType,			BuildingClassType,		YieldType,		YieldChange) 
-VALUES	('BUILDING_NEWGRANGE',	'BUILDINGCLASS_LODGE',	'YIELD_FAITH',	1);
+VALUES	('BUILDING_NEWGRANGE',	'BUILDINGCLASS_GRANARY',	'YIELD_FAITH',	1);
 
 INSERT INTO Building_YieldFromBirth (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_NEWGRANGE', 'YIELD_GOLDEN_AGE_POINTS', 20;
@@ -117,8 +117,8 @@ INSERT OR REPLACE INTO Language_en_US
 (Tag, 								Text) VALUES
 ('TXT_KEY_BUILDING_NEWGRANGE',		'Newgrange'),
 ('TXT_KEY_WONDER_NEWGRANGE_QUOTE',	'[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]'),
-('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.'),
-('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_LODGE} in the City in which it is built. [NEWLINE]Gain 20 [ICON_GOLDEN_AGE] Golden Age Points when a new [ICON_CITIZEN] Citizen is born in the City, scaling with Era. [NEWLINE]All owned Smokehouses gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'Newgrange, located in County Meath, Ireland, is a prehistoric passage tomb and one of the most iconic monuments of Neolithic Europe. Built around 3200 BCE, it predates Stonehenge and the Great Pyramids of Giza. The structure consists of a large circular mound over 85 meters in diameter and 13 meters high, covering a long passageway that leads to a central cruciform chamber. The mound is edged with 97 massive kerbstones, many of which are decorated with intricate megalithic art, including spirals, lozenges, and concentric circles. Newgrange is particularly famous for its alignment with the winter solstice sunrise: each year, on the shortest days, sunlight enters through a specially designed roof box and illuminates the inner chamber, demonstrating the builders'' advanced astronomical knowledge. [NEWLINE][NEWLINE]The history of Newgrange is tied to Ireland''s earliest farming communities, who constructed it as part of the Brú na Bóinne complex, alongside Knowth and Dowth. It is believed to have served both as a tomb and as a ceremonial site, with its alignment linking it to seasonal cycles and beliefs about life, death, and renewal. Over the centuries, Newgrange fell into disuse, becoming shrouded in myth and legend; in medieval times, it was associated with the Tuatha Dé Danann, the mythological deities of Ireland. Rediscovered and excavated in the late 17th and 20th centuries, it has since been restored and is now a UNESCO World Heritage Site. Today, Newgrange is celebrated as one of the most important archaeological and cultural treasures in Ireland, attracting thousands of visitors annually.'),
+('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY} in the City in which it is built. [NEWLINE]Gain 20 [ICON_GOLDEN_AGE] Golden Age Points when a new [ICON_CITIZEN] Citizen is born in the City, scaling with Era. [NEWLINE]All owned Granaries gain +1 [ICON_PEACE] Faith.');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)

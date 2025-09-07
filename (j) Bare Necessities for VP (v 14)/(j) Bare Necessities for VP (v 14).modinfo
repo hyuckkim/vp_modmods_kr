@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" version="13">
+<Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" version="14">
   <Properties>
     <Name>(j) Bare Necessities for VP</Name>
     <Teaser>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi. May download Referenced Mod for more options!</Teaser>
     <Description>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi.[NEWLINE]By default, Unique Policy Buildings, More Beliefs, and More Processes are unlocked.[NEWLINE]You must activate framedarchitecture's National Wonders Collection to unlock National Wonders.</Description>
-    <Authors>Techpriest Enginseer</Authors>
+    <Authors>Techpriest Enginseer, Jarcast</Authors>
     <SpecialThanks>Artisanix, thecrazyscotsman, framedarchitecture</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
@@ -56,6 +56,11 @@
     <File md5="F7BE3D0E6BE3A545FC22A112C797D983" import="1">ArtAudio/Neolithic/SkaraBrae_splash.dds</File>
     <File md5="35004BABC5D9B79EB747F943D4155515" import="1">ArtAudio/Neolithic/CATALHOYUK.dds</File>
     <File md5="9E8E4723558CFB698B20B16FD120A152" import="1">ArtAudio/Neolithic/LIANGZHU.dds</File>
+    <File md5="28F7848D5841D20BBB1D0E515957C7F2" import="1">ArtAudio/GompaAtlas_128.dds</File>
+    <File md5="78E05D9779EF326DC1DC2C97F392DB12" import="1">ArtAudio/GompaAtlas_256.dds</File>
+    <File md5="03E18EB082BF54160E4167307C69E4AA" import="1">ArtAudio/GompaAtlas_45.dds</File>
+    <File md5="54E7B45685BFC1E72D3FA10C6814503A" import="1">ArtAudio/GompaAtlas_64.dds</File>
+    <File md5="962CDE1512BC3F7A600362F082EF3A0D" import="1">ArtAudio/GompaAtlas_80.dds</File>
     <File md5="F56E528FB2C2E30DFC5399B7BFFEE219" import="0">MoreText.sql</File>
     <File md5="23F548BB5C1C5DADC67CF1D6FD742297" import="0">National.sql</File>
     <File md5="3A910094F0A4F0B415FAC49BFAA71B7D" import="0">NeolithicSQL.sql</File>

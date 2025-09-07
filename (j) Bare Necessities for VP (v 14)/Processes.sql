@@ -5,8 +5,14 @@ INSERT OR REPLACE INTO IconTextureAtlases
 ('TECHPRIEST_ATLAS', 80, 'FaithTourismAtlas80.dds', 8, 1),
 ('TECHPRIEST_ATLAS', 64, 'FaithTourismAtlas64.dds', 8, 1),
 ('TECHPRIEST_ATLAS', 45, 'FaithTourismAtlas45.dds', 8, 1),
-('TECHPRIEST_ATLAS', 32, 'FaithTourismAtlas32.dds', 8, 1),
-('REALLYBASED_ATLAS', 64, 'ReallyBased64.dds', 1, 3);
+('TECHPRIEST_ATLAS', 32, 'FaithTourismAtlas32.dds', 8, 1);
+
+INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPerColumn) VALUES
+('GOMPA_ATLAS', 256, 'GompaAtlas_256.dds', 1, 1),
+('GOMPA_ATLAS', 128, 'GompaAtlas_128.dds', 1, 1),
+('GOMPA_ATLAS', 80, 'GompaAtlas_80.dds', 1, 1),
+('GOMPA_ATLAS', 64, 'GompaAtlas_64.dds', 1, 1),
+('GOMPA_ATLAS', 45, 'GompaAtlas_45.dds', 1, 1);
 
 INSERT OR REPLACE INTO LocalizedText
 (Language, Tag, Text) VALUES
