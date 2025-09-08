@@ -82,3 +82,16 @@ VALUES		('TXT_KEY_BUILDING_SALAR_A_DUMMY',			'우유니 소금사막 A'),
 			('TXT_KEY_BUILDING_JEJU_DO_DUMMY',			'성산일출봉'),
 			('TXT_KEY_BUILDING_ARCH_DUMMY',				'델리키트 아치'),
 			('TXT_KEY_BUILDING_MARIANA_DUMMY',			'마리아나 해구');
+--============================================--
+-- POLICIES
+--============================================--
+INSERT INTO Language_ko_KR 
+			(Tag,									Text) 
+VALUES		('TXT_KEY_POLICY_RETBA_DUMMY',			'레트바 호수'),
+			('TXT_KEY_POLICY_LUMI_BAY_DUMMY',		'생물 발광만'),
+			('TXT_KEY_POLICY_MESA_DUMMY',			'그랜드 메사'),
+			('TXT_KEY_POLICY_HA_LONG_A_DUMMY',		'하롱베이 (주)'),
+			('TXT_KEY_POLICY_HA_LONG_B_DUMMY',		'하롱베이 (부)'),
+			('TXT_KEY_POLICY_ZHANGJIAJIE_DUMMY',	'장가계'),
+			('TXT_KEY_POLICY_ULURU_DUMMY',			'울루루'),
+			('TXT_KEY_POLICY_MARIANA_DUMMY',		'마리아나 해구');

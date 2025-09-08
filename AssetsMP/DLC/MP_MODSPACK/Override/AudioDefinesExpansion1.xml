@@ -1152,20 +1152,6 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
-			<SoundID>SND_WONDER_NEWGRANGE</SoundID> 
-			<Filename>Newgrange</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
-			<SoundID>SND_WONDER_BARNENEZ</SoundID> 
-			<Filename>Barnenez</Filename> 
-			<LoadType>STREAMED</LoadType> 
-			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
-			<bDontCache>0</bDontCache> 
-		</SoundData>
-		<SoundData> 
 			<SoundID>SND_UNIT_GOTHA_RUN</SoundID> 
 			<Filename>gotharun</Filename> 
 			<LoadType>STREAMED</LoadType> 
@@ -1518,6 +1504,20 @@
 		<SoundData> 
 			<SoundID>SND_WONDER_SPEECH_WTC</SoundID> 
 			<Filename>WTC_Quote</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_WONDER_NEWGRANGE</SoundID> 
+			<Filename>Newgrange</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
+			<SoundID>SND_WONDER_BARNENEZ</SoundID> 
+			<Filename>Barnenez</Filename> 
 			<LoadType>STREAMED</LoadType> 
 			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
 			<bDontCache>0</bDontCache> 

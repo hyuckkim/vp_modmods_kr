@@ -1480,24 +1480,6 @@
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
-			<ScriptID>AS2D_WONDER_NEWGRANGE</ScriptID> 
-			<SoundID>SND_WONDER_NEWGRANGE</SoundID> 
-			<SoundType>GAME_MUSIC_STINGS</SoundType> 
-			<iMaxVolume>120</iMaxVolume> 
-			<iMinVolume>120</iMinVolume> 
-			<bIsMusic>true</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
-			<ScriptID>AS2D_WONDER_BARNENEZ</ScriptID> 
-			<SoundID>SND_WONDER_BARNENEZ</SoundID> 
-			<SoundType>GAME_MUSIC_STINGS</SoundType> 
-			<iMaxVolume>120</iMaxVolume> 
-			<iMinVolume>120</iMinVolume> 
-			<bIsMusic>true</bIsMusic> 
-			<iPriority>1</iPriority> 
-		</Script2DSound>
-		<Script2DSound> 
 			<ScriptID>AS2D_SELECT_GOTHA</ScriptID> 
 			<SoundID>SND_SELECT_GOTHA</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 
@@ -1765,6 +1747,24 @@
 			<iMaxVolume>80</iMaxVolume> 
 			<iMinVolume>80</iMinVolume> 
 			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_WONDER_NEWGRANGE</ScriptID> 
+			<SoundID>SND_WONDER_NEWGRANGE</SoundID> 
+			<SoundType>GAME_MUSIC_STINGS</SoundType> 
+			<iMaxVolume>120</iMaxVolume> 
+			<iMinVolume>120</iMinVolume> 
+			<bIsMusic>true</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
+			<ScriptID>AS2D_WONDER_BARNENEZ</ScriptID> 
+			<SoundID>SND_WONDER_BARNENEZ</SoundID> 
+			<SoundType>GAME_MUSIC_STINGS</SoundType> 
+			<iMaxVolume>120</iMaxVolume> 
+			<iMinVolume>120</iMinVolume> 
+			<bIsMusic>true</bIsMusic> 
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
