@@ -18,17 +18,6 @@
 			<Description>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT</Description>
 			<DefaultUnit>UNIT_FW_AUGMENTED_DIPLOMAT</DefaultUnit>
 		</Row>
-	    <!-- Airshipcaravam 
-		<Row>
-			<Type>UNITCLASS_FW_MODERN_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_FW_MODERN_COLONIST</Description>
-			<DefaultUnit>UNIT_FW_MODERN_COLONIST</DefaultUnit>
-		</Row>
-		<Row>
-			<Type>UNITCLASS_FW_SPACE_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_FW_SPACE_COLONIST</Description>
-			<DefaultUnit>UNIT_FW_SPACE_COLONIST</DefaultUnit>
-		</Row>-->
 		<!-- MISSILE -->
 		<Row>
 			<Type>UNITCLASS_FW_CLUSTER_MISSILE</Type>
@@ -457,7 +446,7 @@
 			<FoundMid>0</FoundMid>
 			<FoundLate>1</FoundLate>
 			<CombatLimit>0</CombatLimit>
-			<UnitArtInfo>ART_DEF_UNIT_FW_ELITE_MERCENARIES</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_FW_SPACE_COLONIST</UnitArtInfo>
 			<UnitArtInfoCulturalVariation>1</UnitArtInfoCulturalVariation>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -880,7 +869,7 @@
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_MODERN_DRONE</Description>
@@ -912,7 +901,7 @@
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_HYBRID_DRONE</Description>
@@ -945,7 +934,7 @@
 			<Moves>7</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<BaseSightRange>3</BaseSightRange>
-			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_BIODRONE</Description>
@@ -1530,7 +1519,6 @@
 			<Class>UNITCLASS_CAYM_PMC</Class>
 			<Type>UNIT_CAYM_PMC</Type>
 			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
-			<ObsoleteTech>TECH_FW_ECOTHEORY</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_CAYM_PMC</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
@@ -2978,7 +2966,7 @@
 			<Pillage>false</Pillage>
 			<XPValueAttack>0</XPValueAttack>
 			<XPValueDefense>0</XPValueDefense>
-			<UnitArtInfo>ART_DEF_UNIT_EXPLORERBE</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_LEVDESTROYER</UnitArtInfo>
 			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_6</UnitFlagAtlas>
 			<UnitFlagIconOffset>0</UnitFlagIconOffset>
 			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
@@ -2986,16 +2974,6 @@
 		</Row>
 	</Units>
 	<Civilization_UnitClassOverrides>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_MODERN_COLONIST</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_SPACE_COLONIST</UnitClassType>
-			<UnitType/>
-		</Row>
 		<!-- <Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
 			<UnitClassType>UNITCLASS_FW_RAPTOR</UnitClassType>
@@ -4841,12 +4819,6 @@
 		</Row>
 	</Unit_Flavors>
 	<Unit_ResourceQuantityRequirements>
-		<!-- DIPLOMAT -->		
-		<Row>
-			<UnitType>UNIT_FW_AUGMENTED_DIPLOMAT</UnitType>
-			<ResourceType>RRESOURCE_PAPER</ResourceType>
-			<Cost>3</Cost>
-		</Row>
 		<!-- MISSILE -->		
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
@@ -5023,6 +4995,10 @@
 		</Row>	
 		<!-- SAPPER-->
 		<Row>
+			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 		</Row>
@@ -5033,6 +5009,7 @@
 		<Row>
 			<UnitType>UNIT_FW_SPACEMARINES</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<!-- GENE UNIT-->
 		<Row>
@@ -5220,10 +5197,6 @@
 	<Unit_ClassUpgrades>
 		<!-- COLONIST sql have this-->
 		<!-- DIPLOMAT sql have this-->
-		<Row>
-			<UnitType>UNIT_AMBASSADOR</UnitType>
-			<UnitClassType>UNITCLASS_FW_AUGMENTED_DIPLOMAT</UnitClassType>
-		</Row>
 		<!-- MISSILE  -->
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
@@ -5538,31 +5511,6 @@
 			<PediaEntry>TXT_KEY_PROMOTION_FW_AUTO_REPAIR</PediaEntry>
 		</Row>
 		<Row>
-			<Type>PROMOTION_FW_AEROPLEX_DROP</Type>
-			<Description>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP</Description>
-			<Help>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<DropRange>40</DropRange>
-			<PortraitIndex>8</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_FW_AEROPLEX_DROP</PediaEntry>
-		</Row>
-		<Row>
-			<Type>PROMOTION_FW_TRANSGENICS</Type>
-			<Description>TXT_KEY_PROMOTION_FW_TRANSGENICS</Description>
-			<Help>TXT_KEY_PROMOTION_FW_TRANSGENICS_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<Amphib>1</Amphib>         
-            <River>1</River>
-			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>47</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_FW_TRANSGENICS</PediaEntry>
-		</Row>
-		<Row>
 			<Type>PROMOTION_FW_HEALING_CORE</Type>
 			<Description>TXT_KEY_PROMOTION_FW_HEALING_CORE</Description>
 			<Help>TXT_KEY_PROMOTION_FW_HEALING_CORE_HELP</Help>
@@ -5614,7 +5562,7 @@
 			<Help>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>46</PortraitIndex>
+			<PortraitIndex>45</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4</PediaEntry>
@@ -5625,10 +5573,22 @@
 			<Help>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>46</PortraitIndex>
+			<PortraitIndex>45</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_PARADROP_2</Type>
+			<Description>TXT_KEY_PROMOTION_PARADROP_2</Description>
+			<Help>TXT_KEY_PROMOTION_PARADROP_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<DropRange>20</DropRange>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_PARADROP_2</PediaEntry>
 		</Row>
 		<Row>
 			<Type>PROMOTION_FW_SKYNET_LINK</Type>
@@ -6135,7 +6095,19 @@
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
 			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_FW_IMPACT_MOD</PromotionType>

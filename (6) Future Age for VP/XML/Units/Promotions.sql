@@ -27,9 +27,6 @@ WHERE Type IN (
 INSERT INTO UnitPromotions (Type, Description, PediaEntry, Help, PediaType, IconAtlas, PortraitIndex, AdjacentMod, Sound) VALUES
 	('PROMOTION_FW_MASTER_RACE', 'TXT_KEY_FW_PROMOTION_MASTER_RACE', 'TXT_KEY_FW_PROMOTION_MASTER_RACE', 'TXT_KEY_FW_PROMOTION_MASTER_RACE_HELP',	'PEDIA_SHARED',      'PROMOTION_ATLAS', 23, -15, 'AS2D_IF_LEVELUP');
 
-INSERT INTO UnitPromotions_UnitCombatMods (PromotionType, 						UnitCombatType, 						Modifier) 
-VALUES	('PROMOTION_FW_MASTER_RACE',		                                	'UNITCOMBAT_GUN',				    		30);
-
 ----------------------------------------------------
 -- Promotions' unique features
 ----------------------------------------------------
@@ -73,6 +70,20 @@ VALUES
 	('UNIT_WORKER', 				'PROMOTION_FW_IMPLANTS_WORKER'),
 	('UNIT_WORKBOAT', 				'PROMOTION_FW_IMPLANTS_WORKER');
 
+----------------------------------------------
+-- Summer Palace
+----------------------------------------------
+UPDATE UnitPromotions SET RivalTerritory = 0 WHERE Type = 'PROMOTION_NOBILITY';
+UPDATE UnitPromotions SET RivalTerritory = 0 WHERE Type = 'PROMOTION_IMMUNITY';
+UPDATE Language_en_US SET Text = 'Grants +15 [ICON_INFLUENCE] Influence when you conduct a Diplomatic Mission with a City-State.' WHERE Tag = 'TXT_KEY_PROMOTION_NOBILITY_HELP';
+UPDATE Language_en_US SET Text = 'Grants +10 [ICON_INFLUENCE] Influence when you conduct a Diplomatic Mission with a City-State.' WHERE Tag = 'TXT_KEY_PROMOTION_IMMUNITY_HELP';
+
+
+-- UPDATE UnitPromotions SET LostWithUpgrade = 1, HillsDoubleMove = 1 WHERE Type = 'PROMOTION_CBOEE_SKIRMISH';
+-- INSERT INTO UnitPromotions_Features(PromotionType, FeatureType, DoubleMove) VALUES
+-- ('PROMOTION_CBOEE_SKIRMISH', 'FEATURE_FOREST', 1),
+-- ('PROMOTION_CBOEE_SKIRMISH', 'FEATURE_JUNGLE', 1);
+
 INSERT INTO UnitPromotions 
 			(Type, 										Description, 										Help, 														Sound, 				PlagueChance, 	PlaguePromotion, 							BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
 VALUES		('PROMOTION_NEUROTIC_POISON',               'TXT_KEY_PROMOTION_FW_UNIT_SWARM_0',	            'TXT_KEY_PROMOTION_FW_UNIT_SWARM_0_HELP', 	                'AS2D_IF_LEVELUP',	100, 			'PROMOTION_NEUROTIC_POISON_1', 	            0,						0,				0,			0,			0,					0,			0,					1, 				12, 			'promoMUC_atlas_01', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_FW_UNIT_SWARM_0');
@@ -89,21 +100,12 @@ INSERT INTO UnitPromotions_UnitCombats (PromotionType, UnitCombatType) VALUES
 -- all except planes
 ('PROMOTION_FW_APEXPREDATOR',	   'UNITCOMBAT_MOUNTED'),
 ('PROMOTION_SPLASH',			   'UNITCOMBAT_GUN'),
-('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_MELEE'),
 ('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_MOUNTED'),
-('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_HELICOPTER'),
+('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_MELEE'),
+('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_HOVER'),
+('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_RECON'),
 ('PROMOTION_FW_IMPLANTS',          'UNITCOMBAT_GUN'),
-
-('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_GUN'),
-('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_ARCHER'),
-('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_ARMOR'),
-('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_SIEGE'),
-('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_RECON'),
-
-('PROMOTION_FW_TRANSGENICS', 'UNITCOMBAT_MELEE'),
-('PROMOTION_FW_TRANSGENICS', 'UNITCOMBAT_GUN'),
-('PROMOTION_FW_TRANSGENICS', 'UNITCOMBAT_MOUNTED'),
-('PROMOTION_FW_TRANSGENICS', 'UNITCOMBAT_HELICOPTER'),
+('PROMOTION_FW_BIOMODS',           'UNITCOMBAT_GUN'),
 
 ('PROMOTION_FW_MUTATION', 'UNITCOMBAT_MELEE'),
 ('PROMOTION_FW_MUTATION', 'UNITCOMBAT_GUN'),
@@ -148,6 +150,8 @@ INSERT INTO UnitPromotions_UnitCombats (PromotionType, UnitCombatType) VALUES
 ('PROMOTION_FW_ANGELNET',	       'UNITCOMBAT_HELICOPTER'),
 ('PROMOTION_FW_ANGELNET',   	   'UNITCOMBAT_SUBMARINE');
 
+INSERT INTO UnitPromotions_UnitCombatMods (PromotionType, 						UnitCombatType, 						Modifier) 
+VALUES	('PROMOTION_FW_MASTER_RACE',		                                	'UNITCOMBAT_GUN',				    		30);
 
 INSERT INTO UnitPromotions_UnitClasses
 	(PromotionType, UnitClassType, Attack, Defense)

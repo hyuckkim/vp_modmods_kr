@@ -64,9 +64,9 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 
 ('BUILDING_FW_FEEDSITE_HUB', 			'TECH_EUTHENICS', 		            4250, 'ART_DEF_BUILDING_LABORATORY',         40,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_SIMULATION_HUB', 			'TECH_EUTHENICS', 		            4250, 'ART_DEF_BUILDING_LABORATORY',          6,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_BIOCONVERTER_ADNF', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',          2,'CIV_COLOR_ATLAS_FW'),
-('BUILDING_FW_BIOCONVERTER_NANO', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',          2,'CIV_COLOR_ATLAS_FW'),
-('BUILDING_FW_BIOCONVERTER_NANO2', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',          2,'CIV_COLOR_ATLAS_FW'),
+('BUILDING_FW_BIOCONVERTER_ADNF', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_BIOCONVERTER_NANO', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
+('BUILDING_FW_BIOCONVERTER_NANO2', 		'TECH_EUTHENICS', 			        4250, 'ART_DEF_BUILDING_LABORATORY',         28,'CIV_COLOR_ATLAS_FW_3'),
 
 ('BUILDING_FW_TELEPRESENCE_HUB', 		'TECH_COGNITIVE_TECH',	 		    4250, 'ART_DEF_BUILDING_LABORATORY',         61,'CIV_COLOR_ATLAS_FW_2'),
 
@@ -90,12 +90,12 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 ('BUILDING_FW_TIDAL_PORT', 				'TECH_NEURAL_INTERFACE', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_ARRAY',     50,'CIV_COLOR_ATLAS_FW_2'),
 ('BUILDING_FW_HIGHSPEED_RAIL', 			'TECH_SUPERCONDUCTIVITY', 			4500, 'ART_DEF_BUILDING_GARDEN',              2,'CIV_COLOR_ATLAS_FW_3'),
 
-('BUILDING_FW_COMM_MODULE', 			'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     19,'TCS_MOD_ICON_ATLAS'),
-('BUILDING_FW_ENGINEERING_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     20,'TCS_MOD_ICON_ATLAS'),
-('BUILDING_FW_RESEARCH_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     21,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_RESEARCH_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     24,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_ENGINEERING_MODULE', 		'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     25,'CIV_COLOR_ATLAS_FW_2'),
+('BUILDING_FW_COMM_MODULE', 			'TECH_SUPERCONDUCTIVITY', 		    4500, 'ART_DEF_BUILDING_FW_HYDRO_PLANT',     28,'CIV_COLOR_ATLAS_FW_2'),
 
 ('BUILDING_FW_ECTOGENESIS_POD', 		'TECH_GENGINEERING', 				4750, 'ART_DEF_BUILDING_LABORATORY',         22,'CIV_COLOR_ATLAS_FW_2'),
-('BUILDING_FW_DIGITAL_POLICE', 			'TECH_AI', 		                	4750, 'ART_DEF_BUILDING_COLOSSEUM',          29,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_DIGITAL_POLICE', 			'TECH_AI', 		                	4750, 'ART_DEF_BUILDING_COLOSSEUM',          11,'EXPANSION_BW_ATLAS_1'),
 ('BUILDING_FW_ORBITAL_HABITAT', 		'TECH_ADAMANTIUM', 	                4750, 'ART_DEF_BUILDING_HOSPITAL',           27,'TCS_MOD_ICON_ATLAS'),
 
 ('BUILDING_FW_CYBERCLINIC', 			'TECH_CYBERNETICS', 		    	4750, 'ART_DEF_BUILDING_LABORATORY',          8,'CIV_COLOR_ATLAS_FW_2'),
@@ -117,24 +117,6 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 ('BUILDING_FW_GENOME_PROJECT_1', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_GENOME_PROJECT_2', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3');
 
-------------------------------------------------------------
--- 1) Cyber Police Dummy : 1개당 도시 보안 +1
-------------------------------------------------------------
-INSERT OR IGNORE INTO BuildingClasses
-        (Type,                                   Description,                                DefaultBuilding)
-VALUES  ('BUILDINGCLASS_CYBER_POLICE_DUMMY',     'TXT_KEY_BUILDING_CYBER_POLICE_DUMMY',      'BUILDING_CYBER_POLICE_DUMMY');
-
-INSERT OR IGNORE INTO Buildings
-        (Type,                           BuildingClass,                           Cost, FaithCost, PrereqTech,
-         NeverCapture, NukeImmune, ConquestProb,
-         Description,                              Help,                                     ArtDefineTag,
-         IconAtlas, PortraitIndex, NoOccupiedUnhappiness, SpySecurityModifier)
-VALUES  ('BUILDING_CYBER_POLICE_DUMMY','BUILDINGCLASS_CYBER_POLICE_DUMMY',      -1,   -1,        NULL,
-         1,            1,         0,
-         'TXT_KEY_BUILDING_CYBER_POLICE_DUMMY', 'TXT_KEY_BUILDING_CYBER_POLICE_DUMMY_HELP','NONE',
-         'TCS_MOD_ICON_ATLAS',    40,             1,                     1);
-
-
 ---------------------------
 -- NEW DUMMY BUILDING
 ----------------------------
@@ -146,7 +128,7 @@ INSERT INTO Buildings
   Description,                   Help,                                IconAtlas, PortraitIndex)
 VALUES
  ('BUILDING_DUMMY_MIL10_STACK', 'BUILDINGCLASS_DUMMY_MIL10_STACK',     -1,   NULL,       1,           1,          100,
- 'TXT_KEY_BUILDING_MIL10_STACK_DUMMY',      NULL,                                  'CIV_COLOR_ATLAS_FW_2', 22);
+ 'TXT_KEY_BUILDING_DUMMY',      NULL,                                  'BW_ATLAS_1', 0);
 
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 VALUES ('BUILDING_DUMMY_MIL10_STACK','YIELD_PRODUCTION',1);
@@ -160,7 +142,7 @@ INSERT INTO Buildings
   Description,                  Help,                             IconAtlas, PortraitIndex)
 VALUES
  ('BUILDING_DUMMY_BIOMOD_POP', 'BUILDINGCLASS_DUMMY_BIOMOD_POP',  -1,   NULL,        1,           1,          100,
-  'TXT_KEY_BUILDING_DUMMY_BIOMOD_POP_DUMMY',    NULL,                             'CIV_COLOR_ATLAS_FW_2', 30);
+  'TXT_KEY_BUILDING_DUMMY',    NULL,                             'BW_ATLAS_1', 0);
 
 -- 스택 1개당: 장군/제독점수 +1, 황금기 포인트 +2
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
@@ -168,13 +150,6 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
  ('BUILDING_DUMMY_BIOMOD_POP', 'YIELD_GREAT_ADMIRAL_POINTS', 1),
  ('BUILDING_DUMMY_BIOMOD_POP', 'YIELD_GOLDEN_AGE_POINTS',    2);
 
-
-
-
-
-
-
---=======================================================================================================================================================
 
 
 UPDATE Buildings
@@ -384,14 +359,13 @@ WHERE Type = 'BUILDING_FW_GENE_LAB';
 -- ----------------------------------------------
 UPDATE Buildings
 SET EspionageModifier = 0,
-	SpySecurityModifier = 20,
+	SpySecurityModifier = 10,
 	DistressFlatReduction = 1,
 	PovertyFlatReduction = 1,
 	IlliteracyFlatReduction = 1,
 	BoredomFlatReduction = 1,
 	GoldMaintenance = 12
 WHERE Type = 'BUILDING_FW_CYBERPOLICE';
-
 -- ----------------------------------------------
 -- -- Autoplant
 -- ----------------------------------------------
@@ -652,7 +626,7 @@ WHERE Type = 'BUILDING_FW_SPACE_STATION';
 -- -- Transgenic Nursery
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', FoodKept=10, GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_FW_TRANSGENICS', MutuallyExclusiveGroup = 99778
+SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', FoodKept=10, GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_AMPHIBIOUS', MutuallyExclusiveGroup = 99778
 WHERE Type = 'BUILDING_FW_TRANSGENIC_NURSERY';
 -- ----------------------------------------------
 -- -- Biocomputer
@@ -712,7 +686,7 @@ WHERE Type = 'BUILDING_FW_RESEARCH_MODULE';
 -- -- Aerospace Complex
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, SpaceProductionModifier = 15, SpecialistType = 'SPECIALIST_MERCHANT', GreatPeopleRateChange = 1,  CityAirStrikeDefense = 10, AirModifier = 4,  TrainedFreePromotion = 'PROMOTION_FW_AEROPLEX_DROP', MutuallyExclusiveGroup = 99778
+SET GoldMaintenance = 16, SpaceProductionModifier = 15, SpecialistType = 'SPECIALIST_MERCHANT', GreatPeopleRateChange = 1,  CityAirStrikeDefense = 10, AirModifier = 4,  TrainedFreePromotion = 'PROMOTION_EXTENDED_PARADROP', MutuallyExclusiveGroup = 99778
 WHERE Type = 'BUILDING_FW_AEROSPACE_COMPLEX';
 -----------------------------------------------------------------------------------------------------------------------------------------
 --- ======================================================================================
@@ -747,8 +721,7 @@ WHERE Type = 'BUILDING_FW_CYBERCLINIC';
 -- ----------------------------------------------
 UPDATE Buildings
 SET EspionageModifier = 0,
-	SpySecurityModifier = 10,
-	SpySecurityModifierPerXPop = 180, -- ESPIONAGE_SECURITY_PER_POPULATION_BUILDING_SCALER = 360,
+	SpySecurityModifier = 20,
 	DistressFlatReduction = 1,
 	PovertyFlatReduction = 1,
 	IlliteracyFlatReduction = 1,
@@ -897,7 +870,7 @@ VALUES
 	('BUILDING_FW_NETWORK_BACKBONE', 		'BUILDINGCLASS_FW_SERVER_HUB'),
 	('BUILDING_FW_LAUNCH_FACILITY', 		'BUILDINGCLASS_FACTORY'),
 	('BUILDING_FW_GEOTHERMAL_FACTORY', 		'BUILDINGCLASS_FACTORY'),
-	('BUILDING_FW_ANTIMATTER_RESEARCH', 	'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR'),
+	('BUILDING_FW_ANTIMATTER_RESEARCH', 	'BUILDINGCLASS_PARTICLE_ACCELERATOR'),
 	('BUILDING_FW_ANTIMATTER_RESEARCH', 	'BUILDINGCLASS_FW_NANOMAT_PLANT'),
 	('BUILDING_FW_CLONE_LAB', 	            'BUILDINGCLASS_FW_GENE_LAB'),
 	('BUILDING_FW_FEEDSITE_HUB', 			'BUILDINGCLASS_FW_SERVER_HUB'),
@@ -1122,19 +1095,12 @@ INSERT INTO Building_SpecificGreatPersonRateModifier (BuildingType, SpecialistTy
 
 INSERT INTO Corporation_BuildingClassYieldChanges (CorporationType, BuildingClassType, YieldType, YieldChange) VALUES
 ('CORPORATION_TRADER_SIDS',        'BUILDINGCLASS_FW_CRYPTOBANK', 			    'YIELD_GOLD', 			    3),
-('CORPORATION_TRADER_SIDS',        'BUILDINGCLASS_FW_METROPLEX_HUB', 			'YIELD_GOLD', 			    3),
 ('CORPORATION_LANDSEA_EXTRACTORS', 'BUILDINGCLASS_FW_UNDERSEA_MINING', 			'YIELD_PRODUCTION', 		2),
-('CORPORATION_LANDSEA_EXTRACTORS', 'BUILDINGCLASS_FW_TIDAL_PORT', 			    'YIELD_PRODUCTION', 		2),
 ('CORPORATION_HEXXON_REFINERY',    'BUILDINGCLASS_FW_NANOMAT_PLANT', 			'YIELD_PRODUCTION', 		3),
-('CORPORATION_HEXXON_REFINERY',    'BUILDINGCLASS_FW_FUSION_PLANT', 			'YIELD_PRODUCTION', 		3),
 ('CORPORATION_GIORGIO_ARMEIER',    'BUILDINGCLASS_FW_VIRTUAL_MUSEUM', 			'YIELD_CULTURE', 			2),
-('CORPORATION_GIORGIO_ARMEIER',    'BUILDINGCLASS_FW_FEEDSITE_HUB', 			'YIELD_CULTURE', 			2),
 ('CORPORATION_FIRAXITE_MATERIALS', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 	'YIELD_SCIENCE', 			3),
-('CORPORATION_FIRAXITE_MATERIALS', 'BUILDINGCLASS_FW_ANTIMATTER_RESEARCH',   	'YIELD_SCIENCE', 			3),
 ('CORPORATION_TWOKAY_FOODS', 	   'BUILDINGCLASS_FW_AQUACULTURE_LAB', 		    'YIELD_FOOD', 				3),
-('CORPORATION_TWOKAY_FOODS', 	   'BUILDINGCLASS_FW_MYCOPROTEIN_VATS', 	    'YIELD_FOOD', 				3),
-('CORPORATION_CIVILIZED_JEWELERS', 'BUILDINGCLASS_FW_SEAWATER_ARTIFICIAL_REEF', 'YIELD_GOLDEN_AGE_POINTS', 	4),
-('CORPORATION_CIVILIZED_JEWELERS', 'BUILDINGCLASS_FW_HIGHSPEED_RAIL',           'YIELD_GOLDEN_AGE_POINTS', 	4);
+('CORPORATION_CIVILIZED_JEWELERS', 'BUILDINGCLASS_FW_SEAWATER_ARTIFICIAL_REEF', 'YIELD_GOLDEN_AGE_POINTS', 	4);
 
 
 INSERT INTO Building_SpecialistYieldChangesLocal

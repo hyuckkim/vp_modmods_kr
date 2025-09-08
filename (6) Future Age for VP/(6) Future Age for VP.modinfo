@@ -605,9 +605,10 @@
     <File md5="9616D652918AB07C023BFA0531166913" import="1">Art/Units/Modern Helicopter/IconAtlas64.dds</File>
     <File md5="B76946708A25F8F9873F1D671F87483C" import="1">Art/Units/Modern Helicopter/IconAtlas80.dds</File>
     <File md5="56AE3669C7B094969253EB1CAC48E96A" import="1">Art/Units/Modern Helicopter/IconAtlasFlag.dds</File>
-    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.dds</File>
-    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.fxsxml</File>
-    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.gr2</File>
+    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Tiger_diff(german).dds</File>
+    <File md5="D827BDFE22B39970863A9E49B8D66776" import="1">Art/Units/Modern Helicopter/Model/tiger_germany.fxsxml</File>
+    <File md5="612EF5D9B4469E114594996666942E65" import="1">Art/Units/Modern Helicopter/Model/Tiger_Germany.gr2</File>
+    <File md5="33881021B7D2B83112222067A095F3EA" import="1">Art/Units/Modern Helicopter/Model/Tiger_sref.dds</File>
     <File md5="11F498D79F232464379C4337E5C823FD" import="1">Art/Units/Power Armor/PowerArmor.fxsxml</File>
     <File md5="A39C02BF9D0D3341B510C83AE1B9F64F" import="1">Art/Units/Power Armor/PowerArmor.gr2</File>
     <File md5="DABFA22C33DD94F21004A970A85BA490" import="1">Art/Units/Power Armor/powerarmor_body_diffuse-Alpha.dds</File>
@@ -2054,6 +2055,10 @@
     <File md5="P4B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatrooper.dds</File>
     <File md5="PA985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlaga.dds</File>
     <File md5="PAB8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatroopera.dds</File>
+
+    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ImprovementUnderseaTunnel.lua</File>
+    <File md5="319B2CA8FA2652337E897876E53D8BE3" import="1">CAYMplus/UnderseaTunnel.sql</File>
+    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ReconLine_Changes.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -2083,6 +2088,8 @@
       <UpdateDatabase>XML/ResourceIcons.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureText_KR.sql</UpdateDatabase>
+      <UpdateDatabase>CAYMplus/UnderseaTunnel.sql</UpdateDatabase> 
+      <UpdateDatabase>CAYMplus/ReconLine_Changes.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

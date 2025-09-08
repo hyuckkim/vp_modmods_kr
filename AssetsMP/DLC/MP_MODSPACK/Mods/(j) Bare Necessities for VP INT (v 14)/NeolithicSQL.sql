@@ -1,35 +1,35 @@
 --======================================================================================================================================--
--- Buildings
+-- 건물
 --======================================================================================================================================--
--- BARNENEZ
+-- 바르네네즈
 ------------------------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR 
 (Tag, 								Text) VALUES
-('TXT_KEY_BUILDING_BARNENEZ',		'Barnenez'),
-('TXT_KEY_WONDER_BARNENEZ_QUOTE',	'[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]'),
-('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.'),
-('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'+1 [ICON_GOLDEN_AGE] Golden Age Point. [NEWLINE]Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_LODGE} and 50 [ICON_RESEARCH] Science in the City in which it is built. [NEWLINE]All owned Smokehouses gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_BUILDING_BARNENEZ',		'바르네네즈'),
+('TXT_KEY_WONDER_BARNENEZ_QUOTE',	'[NEWLINE]"겉모습은 보이지 않는 것을 엿보는 것."[NEWLINE] - 아낙사고라스[NEWLINE]'),
+('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'바르네네즈 케른은 브르타뉴(프랑스)의 피니스테르 북부에 위치한 신석기 시대 기념물입니다. 이 유적은 기원전 4800년경의 초기 신석기 시대로 거슬러 올라가며, 유럽에서 가장 초기의 거석 기념물 중 하나로 여겨지고 있습니다. 또한 거석문화의 예술이 존재하는 것도 주목할 만한 점입니다. 여러 방과 통로에는 새겨진 상징이 있습니다. 그들은 활, 도끼, 파도의 상징이나 뱀, 그리고 반복되는 U자 모양의 기호를 묘사합니다.'),
+('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'[ICON_GOLDEN_AGE] 황금기 점수 +1을 얻습니다.[NEWLINE]건설된 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] {TXT_KEY_BUILDING_LODGE}와 50개의 [ICON_RESEARCH] 과학을 제공합니다.[NEWLINE]소유한 모든 훈제실은 [ICON_PEACE] 신앙이 +1 증가합니다.');
 
 INSERT OR REPLACE INTO Language_ko_KR 
 		(Tag, 							 Text)
-SELECT	'TXT_KEY_WONDER_BARNENEZ_HELP', 'Wonder: [COLOR_NEGATIVE_TEXT]Newgrange[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
+SELECT	'TXT_KEY_WONDER_BARNENEZ_HELP', '불가사의: [COLOR_NEGATIVE_TEXT]뉴그레인지[ENDCOLOR][NEWLINE][NEWLINE]'||Text
 FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_BARNENEZ_HELP_CUT';
 ------------------------------------------------------------------------------------------------------------------------------------------
--- NEWGRANGE
+-- 뉴그레인지
 ------------------------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR 
 (Tag, 								Text) VALUES
-('TXT_KEY_BUILDING_NEWGRANGE',		'Newgrange'),
-('TXT_KEY_WONDER_NEWGRANGE_QUOTE',	'[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]'),
-('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.'),
-('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY} in the City in which it is built. [NEWLINE]Gain 20 [ICON_GOLDEN_AGE] Golden Age Points when a new [ICON_CITIZEN] Citizen is born in the City, scaling with Era. [NEWLINE]All owned Granaries gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_BUILDING_NEWGRANGE',		'뉴그레인지'),
+('TXT_KEY_WONDER_NEWGRANGE_QUOTE',	'[NEWLINE]"꿈속에서의 환상을 통해 죽은 사람이 실제로 살아 있다는 말이 종종 나온다."[NEWLINE] - 콜로폰의 니칸데르[NEWLINE]'),
+('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'뉴그레인지는 아일랜드 미스주에 있는 선사 시대 기념물입니다. 이 건물은 신석기 시대인 기원전 3200년경에 지어졌습니다. 이 구조물은 돌로 된 통로와 내부에 방이 있는 큰 원형 둔치입니다. 이 무덤은 앞쪽에 옹벽이 있고, 주변에는 예술 작품이 새겨진 돌들이 있습니다.[NEWLINE][NEWLINE]원래 목적에 대해서는 다양한 논쟁이 있었습니다. 많은 고고학자들은 이 기념물이 어떤 형태로든 종교적 의미를 가지고 있다고 믿었습니다. 즉, "죽음의 숭배"를 위한 예배 장소이거나 천문학에 기반한 신앙을 위한 장소였을 것이라고 믿었습니다. 왜냐하면 이 기념물이 동지에 떠오르는 태양과 일치하여 빛이 방 안으로 쏟아지기 때문입니다.'),
+('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'건설된 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY}을 제공합니다.[NEWLINE]도시에 새로운 [ICON_CITIZEN] 시민이 태어나면 [ICON_GOLDEN_AGE] 황금기 점수 20을 얻습니다. (시대에 따라 보정)[NEWLINE]소유한 모든 곡창이 [ICON_PEACE] 신앙 +1을 얻습니다.');
 
 INSERT OR REPLACE INTO Language_ko_KR 
 		(Tag, 							 Text)
-SELECT	'TXT_KEY_WONDER_NEWGRANGE_HELP', 'Wonder: [COLOR_NEGATIVE_TEXT]Barnenez[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
+SELECT	'TXT_KEY_WONDER_NEWGRANGE_HELP', '불가사의: [COLOR_NEGATIVE_TEXT]바르네네즈[ENDCOLOR][NEWLINE][NEWLINE]'||Text
 FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_NEWGRANGE_HELP_CUT';
 ------------------------------------------------------------------------------------------------------------------------------------------
--- CATALHOYUK
+-- 차탈회위크
 ------------------------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR 
 (Tag, 									Text) VALUES
@@ -44,7 +44,7 @@ SELECT	'TXT_KEY_WONDER_CATALHOYUK_HELP', '지형: [COLOR_CYAN]평지[ENDCOLOR], 
 FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_CATALHOYUK_HELP_CUT';
 
 ------------------------------------------------------------------------------------------------------------------------------------------
--- LIANGZHU
+-- 양주
 ------------------------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR 
 (Tag, 									Text) VALUES
@@ -59,7 +59,7 @@ SELECT	'TXT_KEY_WONDER_LIANGZHU_HELP', '지형: [COLOR_NEGATIVE_TEXT]사막[ENDC
 FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_LIANGZHU_HELP_CUT';
 
 ------------------------------------------------------------------------------------------------------------------------------------------
--- GOEBEKLI TEPE
+-- 괴베클리 테페
 ------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text)
 SELECT	'TXT_KEY_WONDER_GOEBEKLI_TEPE_HELP2_CUT', '건설된 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] {TXT_KEY_BUILDING_SHRINE}을 제공합니다. [NEWLINE]모든 신전의 [ICON_RESEARCH] 과학이 +1 증가합니다.[NEWLINE][NEWLINE]All [ICON_RES_STONE] 돌: [ICON_RESEARCH] 과학 +1';

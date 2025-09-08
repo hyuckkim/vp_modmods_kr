@@ -30,7 +30,7 @@ OutputBaseFilename={#MyAppName} ({#MyAppVersion})
 DefaultDirName={userdocs}\My Games\Sid Meier's Civilization 5\
 SetupIconFile=installer.ico
 WizardImageStretch=false
-Compression=lzma
+Compression=lzma2
 SolidCompression=yes
 ShowComponentSizes=true
 AllowNoIcons=yes
@@ -195,6 +195,7 @@ Source: "..\Worker Mountaineering (v 3) INT\*"; DestDir: "{app}\MODS\Worker Moun
 Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: df
 Source: "..\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: lcv
 
+Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpnvc
 Source: "..\Maps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map

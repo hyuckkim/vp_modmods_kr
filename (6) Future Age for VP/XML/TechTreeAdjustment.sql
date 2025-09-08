@@ -2,7 +2,7 @@ UPDATE Technologies SET GridX = 19, GridY = 5, ExtraVotesPerDiplomat = 0, Intern
 
 UPDATE Technologies SET GridX = 19, GridY = 3, ExtraVotesPerDiplomat = 0, Cost = 30000, InternationalTradeRoutesChange = 1 WHERE Type= 'TECH_GLOBALIZATION'; -- CAYM Edited
 
-UPDATE Technologies SET Era = 'ERA_FUTURE', GridY = 7, GridX = 19, Cost = 30000 WHERE Type='TECH_NANOTECHNOLOGY'; -- CAYM Edited
+UPDATE Technologies SET Era = 'ERA_FW_FUTURE', GridY = 7, GridX = 19, Cost = 30000 WHERE Type='TECH_NANOTECHNOLOGY'; -- CAYM Edited
 
 UPDATE Technologies SET Era = 'ERA_FW_FUTURE', GridY = 7, GridX = 20, Cost = 35000 WHERE Type='TECH_PARTICLE_PHYSICS'; -- CAYM Edited
 

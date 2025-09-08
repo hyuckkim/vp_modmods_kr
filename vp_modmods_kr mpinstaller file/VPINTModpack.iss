@@ -29,7 +29,7 @@ InfoBeforeFile=Opener.rtf
 OutputBaseFilename={#MyAppName} ({#MyAppVersion})
 SetupIconFile=installer.ico
 WizardImageStretch=False
-Compression=lzma
+Compression=lzma2
 SolidCompression=yes
 ShowComponentSizes=False
 AllowNoIcons=yes
@@ -42,6 +42,7 @@ CreateAppDir=False
 Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Files]
+Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
 Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map
