@@ -185,7 +185,7 @@ Source: "..\Sukritact's Civ VI Style City Names (v 1)\*"; DestDir: "{app}\MODS\S
 Source: "..\TreeSuccession (v 44)\*"; DestDir: "{app}\MODS\TreeSuccession (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
 Source: "..\TreeSuccession (v 44) INT\*"; DestDir: "{app}\MODS\TreeSuccession (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
 Source: "..\(j) Bare Necessities (v 14)\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
-Source: "..\((j) Bare Necessities (v 14) INT\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
+Source: "..\(j) Bare Necessities (v 14) INT\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
 Source: "..\Whale Battles (v 1)\*"; DestDir: "{app}\MODS\Whale Battles (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
 Source: "..\Whale Battles (v 1) INT\*"; DestDir: "{app}\MODS\Whale Battles (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
 Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
