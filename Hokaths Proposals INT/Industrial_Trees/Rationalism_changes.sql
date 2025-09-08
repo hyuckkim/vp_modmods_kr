@@ -68,3 +68,7 @@ WHERE Tag = 'TXT_KEY_POLICY_SCIENTIFIC_REVOLUTION_HELP';
 UPDATE Language_ko_KR
 SET Text = 'The Code of Hammurabi (c. 1755-1750 BC) stipulated a 2 shekel prevailing wage for each 60 gur (300 bushel) vessel constructed in an employment contract between a shipbuilder and a ship-owner. Since then, protections to trade have been a central part of jurisprudence. Sadly, one of the appalling consequences of the industrial revolution was a reversal of this norm and an almost unregulated economic framework that led to much misery and death. In Britain, a great milestone in labour law was reached with the Factories Act 1833, which limited the employment of children under eighteen years of age, prohibited all night work, and, crucially, provided for inspectors to enforce the law.'
 WHERE Tag = 'TXT_KEY_POLICY_SCIENTIFICREVOLUTION_TEXT';
+
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '[NEWLINE][NEWLINE]Requires [COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] Policy.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';

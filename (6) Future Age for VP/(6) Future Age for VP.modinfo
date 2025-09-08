@@ -2054,10 +2054,6 @@
     <File md5="P4B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatrooper.dds</File>
     <File md5="PA985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlaga.dds</File>
     <File md5="PAB8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatroopera.dds</File>
-
-    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ImprovementUnderseaTunnel.lua</File>
-    <File md5="319B2CA8FA2652337E897876E53D8BE3" import="1">CAYMplus/UnderseaTunnel.sql</File>
-    <File md5="130E37C540848B82BADB13139912994A" import="1">CAYMplus/ReconLine_Changes.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -2087,8 +2083,6 @@
       <UpdateDatabase>XML/ResourceIcons.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureText_KR.sql</UpdateDatabase>
-      <UpdateDatabase>CAYMplus/UnderseaTunnel.sql</UpdateDatabase> 
-      <UpdateDatabase>CAYMplus/ReconLine_Changes.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

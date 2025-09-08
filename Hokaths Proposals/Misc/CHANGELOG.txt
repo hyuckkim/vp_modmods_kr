@@ -54,9 +54,9 @@ Religion
    - max 400 Followers
 
   -- Divine Inheritance loses +% Golden Age yields in Capital as it doesn't required spread
-   - +1 Food, Border Growth Points, and Golden Age Points in the Holy City for every 5 Followers of this Religion in owned Cities 
+   - +1 Food, Border Growth Points, and Golden Age Points in the Holy City for every 4 Followers of this Religion in owned Cities 
      spread but to yourself!
-   - max 300 Followers
+   - max 400 Followers
    
   -- Sacred Calendar changed
    - named "Annual Festivals" to separate a bit from Mayan UA
@@ -103,7 +103,7 @@ Religion
   -- Thrift
    - 1 gold per 2
    - max 15
-   - 1 gold from merchant/engineer/scientist/labourer
+   - 1 gold from specialists (incl. labourer)
 
   -- Asceticism/Remedy
    - 1 food per 2
@@ -297,7 +297,7 @@ Improvements
 
   Fishing Boats
     -- Can be built by Workers
-    -- 4 turns, 3 lower than other basic improvements because embark/disembark & pillage
+    -- 4 turns, 3 lower than other basic improvements because embark/disembark & pillage compensation
     -- Still destroyed if pillaged (animation too bad)
 
   Offshore Platforms

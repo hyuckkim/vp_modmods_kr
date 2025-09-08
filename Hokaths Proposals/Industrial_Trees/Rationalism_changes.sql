@@ -66,9 +66,16 @@ SELECT
 FROM GreatPersons
 WHERE Specialist IS NOT NULL;
 
+-- Observatory
+
 UPDATE Buildings SET
 	PolicyType = NULL
 WHERE Type = 'BUILDING_OBSERVATORY';
+
+UPDATE Language_en_US
+SET Text = Replace(Text, '[NEWLINE][NEWLINE]Requires [COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] Policy.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';
+
 
 -- Humanism (now Mass Education)
 DELETE FROM Policy_BuildingClassHappiness WHERE PolicyType = 'POLICY_HUMANISM';

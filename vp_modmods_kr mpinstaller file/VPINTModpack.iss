@@ -44,7 +44,7 @@ Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 [Files]
 Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
-Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion; Components: lua
+Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion; Components: vp
 Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: csbu
 
@@ -52,7 +52,6 @@ Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags
 
 [Components]
 Name: "vp"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP Custom; Flags: disablenouninstallwarning fixed
-Name: "lua"; Description: "더 빠른 턴 처리 (MoonJIT)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: Custom; Flags: disablenouninstallwarning
 Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "map"; Description: "추가 지도"; Types: Custom; Flags: disablenouninstallwarning

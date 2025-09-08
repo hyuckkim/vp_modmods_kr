@@ -9,7 +9,7 @@ VALUES
 	('TXT_KEY_BELIEF_EXODUS', 'Expending a [ICON_GREAT_ADMIRAL] Great Admiral grants 25 [ICON_PEACE] Faith and [ICON_GOLDEN_AGE] Golden Age Points for every City following this [ICON_RELIGION] Religion (max 20 Cities). Settler and Religious Units gain the [COLOR_POSITIVE_TEXT]Diaspora[ENDCOLOR] Promotion. +2 [ICON_CULTURE] Culture and [ICON_GREAT_ADMIRAL] Great Admiral Points if the City is Coastal.'),
 
 	('TXT_KEY_BELIEF_CARGO_CULT_SHORT', 'Cargo Cult'),
-	('TXT_KEY_BELIEF_CARGO_CULT', 'May purchase Airports with [ICON_PEACE] Faith. Double yields from Natural Wonders. +5 [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every known [ICON_PANTHEON] Pantheon founded (caps at 8 Pantheons).'),
+	('TXT_KEY_BELIEF_CARGO_CULT', 'May purchase Airports with [ICON_PEACE] Faith. Double yields from Natural Wonders. +5 [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every known [ICON_RELIGION_PANTHEON] Pantheon founded (caps at 8 Pantheons).'),
 
 	('TXT_KEY_BELIEF_SACRED_GEOMETRY_SHORT', 'Sacred Geometry'),
 	('TXT_KEY_BELIEF_SACRED_GEOMETRY', 'Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 [ICON_RESEARCH] Science and [ICON_PEACE] Faith for every City following this [ICON_RELIGION] Religion (max 20 Cities). +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all [ICON_WONDER] World Wonders. +5 [ICON_GREAT_MUSICIAN] Great Musician points in the Holy City.');
@@ -25,7 +25,7 @@ UPDATE Language_ko_KR SET Text = 'Pilgrimage' WHERE Tag = 'TXT_KEY_BELIEF_WORLD_
 
 -- divine inheritence/peace loving
 UPDATE Language_ko_KR
-SET Text = Replace(Text, 'Holy City produces +20% of its Yields when your Empire is in a [ICON_GOLDEN_AGE] Golden Age.', '+1 [ICON_FOOD] Food, [ICON_CULTURE_LOCAL] Border Growth Points, and [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every 5 Followers of this [ICON_RELIGION] Religion in owned Cities (max 300 Followers).')
+SET Text = Replace(Text, 'Holy City produces +20% of its Yields when your Empire is in a [ICON_GOLDEN_AGE] Golden Age.', '+1 [ICON_FOOD] Food, [ICON_CULTURE_LOCAL] Border Growth Points, and [ICON_GOLDEN_AGE] Golden Age Points in the Holy City for every 4 Followers of this [ICON_RELIGION] Religion in owned Cities (max 400 Followers).')
 WHERE Tag = 'TXT_KEY_BELIEF_PEACE_LOVING';
 
 ------------------
@@ -80,7 +80,7 @@ SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City (m
 WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_COMMUNITY';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City (max +15 [ICON_GOLD] Gold). +1 [ICON_GOLD] Gold from [ICON_CITIZEN_RED] Labourers, [ICON_VP_ENGINEER] Engineers, [ICON_VP_MERCHANT] Merchants, and [ICON_VP_SCIENTIST] Scientists.'
+SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City (max +15 [ICON_GOLD] Gold). +1 [ICON_GOLD] Gold from Specialists and [ICON_CITIZEN_RED] Labourers.'
 WHERE Tag = 'TXT_KEY_BELIEF_FEED_WORLD';
 
 UPDATE Language_ko_KR
@@ -98,7 +98,7 @@ WHERE Tag = 'TXT_KEY_BELIEF_COMMUNALISM';
 
 -- mastery/abstinence include labourers for custom civ options
 UPDATE Language_ko_KR
-SET Text = 'Specialists generate +1 [ICON_GOLDEN_AGE] Golden Age Point and +1 of their primary Yield ([ICON_VP_SCIENTIST]:[ICON_RESEARCH], [ICON_VP_MERCHANT]/[ICON_CSD_CIVIL_SERVANT]:[ICON_GOLD], [ICON_VP_ENGINEER]/[ICON_CITIZEN_RED]:[ICON_PRODUCTION], [ICON_VP_WRITER]/[ICON_VP_ARTIST]/[ICON_VP_MUSICIAN]:[ICON_CULTURE]).'
+SET Text = 'Specialists and [ICON_CITIZEN_RED] Labourers generate +1 [ICON_GOLDEN_AGE] Golden Age Point and +1 of their primary Yield ([ICON_VP_SCIENTIST]:[ICON_RESEARCH], [ICON_VP_MERCHANT]/[ICON_CSD_CIVIL_SERVANT]:[ICON_GOLD], [ICON_VP_ENGINEER]/[ICON_CITIZEN_RED]:[ICON_PRODUCTION], [ICON_VP_WRITER]/[ICON_VP_ARTIST]/[ICON_VP_MUSICIAN]:[ICON_CULTURE]).'
 WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_ART';
 
 ---------------------

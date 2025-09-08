@@ -81,6 +81,7 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 SELECT	'ART_DEF_UNIT_PRO_PMC', 'Unit', 'SV_CAYM_PMC.dds';
 
+
 -- =======================================================================================================
 --		Predator Drone Art Defines
 -- =======================================================================================================
@@ -165,3 +166,51 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 SELECT	'ART_DEF_UNIT_FW_ATGM', 'Unit', 'SSV_FW_Hypervelocity_Missile.dds';
+
+
+
+/*  -- i can not solve this air plane attack turning  => so I changed steam airship
+-- =========================================================
+-- Zeppelin ArtDefines (SQL)
+-- ========================================================= ArtDefine_UnitInfos
+INSERT INTO ArtDefine_UnitInfos (Type,                           DamageStates, Formation)
+VALUES
+  ('ART_DEF_UNIT_WWI_ZEPPELIN',    1,            'FighterWing');
+
+-- ArtDefine_UnitInfoMemberInfos
+INSERT INTO ArtDefine_UnitInfoMemberInfos
+  (UnitInfoType,                    UnitMemberInfoType,                    NumMembers)
+VALUES
+  ('ART_DEF_UNIT_WWI_ZEPPELIN',     'ART_DEF_UNIT_MEMBER_WWI_ZEPPELIN',    1);
+
+-- ArtDefine_UnitMemberInfos
+INSERT INTO ArtDefine_UnitMemberInfos
+  (Type,                                Scale,  ZOffset, Domain, Model,                                               MaterialTypeTag, MaterialTypeSoundOverrideTag)
+VALUES
+  ('ART_DEF_UNIT_MEMBER_WWI_ZEPPELIN',  0.09,   30.0,   'Air',  'UnitLines/ZeppelinLine/Zeppelin/ZeppelinTC.fxsxml', 'METAL',         'METALLRG');
+
+-- ArtDefine_UnitMemberCombats
+INSERT INTO ArtDefine_UnitMemberCombats
+  (UnitMemberType,                      EnableActions,                       AttackRadius, MoveRate, TurnRateMin, TurnRateMax, HasRefaceAfterCombat)
+VALUES
+  ('ART_DEF_UNIT_MEMBER_WWI_ZEPPELIN',  'Idle Attack Bombard Death Run',     135.0,       2.0,     0.25,        0.5,         0);
+
+-- ArtDefine_UnitMemberCombatWeapons (bomb drop)
+INSERT INTO ArtDefine_UnitMemberCombatWeapons
+  (UnitMemberType,                      "Index", SubIndex, ProjectileSpeed, HitRadius, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+VALUES
+  ('ART_DEF_UNIT_MEMBER_WWI_ZEPPELIN',  0,       0,        0.9,             10.0,      1,            1,         'EXPLOSIVE',  'EXPLOSION200POUND');
+
+-- ArtDefine_UnitMemberCombatWeapons (ground impact FX)
+INSERT INTO ArtDefine_UnitMemberCombatWeapons
+  (UnitMemberType,                      "Index", SubIndex, VisKillStrengthMin, VisKillStrengthMax, HitEffect,                                  WeaponTypeTag, WeaponTypeSoundOverrideTag)
+VALUES
+  ('ART_DEF_UNIT_MEMBER_WWI_ZEPPELIN',  1,       0,        25.0,              50.0,               'ART_DEF_VEFFECT_ARTILLERY_IMPACT_$(TERRAIN)', 'EXPLOSIVE',  'EXPLOSION20POUND');
+
+-- Strategic View icon
+INSERT INTO ArtDefine_StrategicView
+  (StrategicViewType,                   TileType, Asset)
+VALUES
+  ('ART_DEF_UNIT_WWI_ZEPPELIN',         'Unit',  'WWI_Zeppelin_SV.dds');
+*/
+

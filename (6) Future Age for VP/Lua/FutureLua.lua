@@ -136,7 +136,16 @@ do
   print("[Ecto] OK dummy=", iDummy, " trigger=", iTrigger, " per=", UNITS_PER, " cap=", STACK_CAP)
 
   local function IsMilitaryUnit(u)
-    return u and u:IsCombatUnit() and not u:IsCivilianUnit()
+    if not u then return false end
+    -- 전투 유닛이면 일단 군사 유닛으로 간주
+    if u.IsCombatUnit and u:IsCombatUnit() then
+       -- 어떤 DLL(특히 VP)엔 IsCivilianUnit이 없을 수 있음 → 있으면만 체크
+      if u.IsCivilianUnit then
+         return not u:IsCivilianUnit()
+      end
+      return true
+    end
+    return false
   end
 
   local function CountMilitaryUnits(p)
@@ -176,6 +185,39 @@ end
 -----------------------------------
 -- Unit
 ----------------------------------
+-- Space marine Effect
+--======================================
+-- FW_SpawnFX_Minimal.lua (UI 컨텍스트)
+print("FW_SpawnFX_Minimal.lua loaded")
+
+include("FLuaVector.lua") -- ToHexFromGrid(Vector2(x,y))
+
+local FX_UNITS = {
+  [GameInfoTypes.UNIT_FW_PLASMA_BOMBER] = true,
+  [GameInfoTypes.UNIT_FW_SPACEMARINES]  = true,
+}
+local FX_IDS = { "EFFECT_SMOKE_PLUME", "EFFECT_EXPLOSION_MEDIUM" }
+local SFX_ID = nil  -- 필요하면 "AS2D_SFX_EXPLOSION"
+
+local function PlayFX(x, y)
+  local hex = ToHexFromGrid(Vector2(x, y))
+  for _, fx in ipairs(FX_IDS) do
+    Events.GameplayFX(hex.x, hex.y, -1, fx)
+  end
+  if SFX_ID then Events.AudioPlay2DSound(SFX_ID) end
+end
+
+-- 유닛이 맵에 '생성/소환'될 때 확정적으로 들어옴 (플레이어/AI 공통)
+Events.SerialEventUnitCreated.Add(function(iPlayer, iUnit)
+  local p = Players[iPlayer]; if not p then return end
+  local u = p:GetUnitByID(iUnit); if not u then return end
+  if not FX_UNITS[u:GetUnitType()] then return end
+  local plot = u:GetPlot(); if not plot then return end
+  PlayFX(plot:GetX(), plot:GetY())
+end)
+
+
+
 --------------------------------------------------------------------------------------------------------------------------
 -- JFD_GetRandom
 --------------------------------------------------------------------------------------------------------------------------
@@ -1104,44 +1146,34 @@ GameEvents.PlayerDoTurn.Add(function(iPlayer)
 end)
 
 
-
+--=================================================================================================
 
 -- =========================================================
--- Laputa : owner-wide dummy + trade-blimp + anti-pillage
---  - 라퓨타 보유 문명의 모든 도시에 더미 1개
---  - 원더 상실/점령/해방/도시 신설 시 즉시 동기화
---  - 교역 유닛(에어십/바닐라) 물/심해 이동 허용(이동만)
---  - 라퓨타 영토에서 약탈 불가(가능하면 차단, 아니면 즉시복구)
---  - 빌딩/유닛 키 자동 감지 + 널가드 + 중복훅 방지
+-- Laputa_AntiPillageOnly.lua
+--  - 라퓨타(BUILDING_FW_FLOATINGISLANDS) 보유 문명 전 도시에 더미(옵션) 동기화
+--  - 라퓨타 영토에서 약탈 시도 자체 차단(가능 시)
+--  - 라퓨타 보유자의 턴 시작에 자국 영토 약탈 즉시 복구(개선 + 도로/철도)
+--  - 스킨/승선/교역유닛 스왑/IGE 훅 전부 없음 (안전/경량)
 -- =========================================================
-print("Laputa_AllInOne loaded")
+print("Laputa_AntiPillageOnly loaded")
 
--- ──[키 자동 감지]─────────────────────────────────────────
-local BUILDING_LAPUTA        = GameInfoTypes.BUILDING_FW_FLOATINGISLANDS
-local BUILDING_LAPUTA_DUMMY  = GameInfoTypes.BUILDING_FW_FLOATINGISLANDS_DUMMY
-
-
-local U_CARAVAN_BLIMP    = GameInfoTypes.UNIT_CARAVAN_BLIMP or GameInfoTypes.UNIT_CARAVAN
-local U_CARGO_SHIP_BLIMP = GameInfoTypes.UNIT_CARGO_SHIP_BLIMP or GameInfoTypes.UNIT_CARGO_SHIP
-
-local PROMO_EMBARK = GameInfoTypes.PROMOTION_EMBARKATION
-local PROMO_DEEP   = GameInfoTypes.PROMOTION_DEEP_WATER_EMBARKATION
+-- ──[키: 네 SQL/XML과 일치]─────────────────────────────────
+local BUILDING_LAPUTA       = GameInfoTypes.BUILDING_FW_FLOATINGISLANDS
+local BUILDING_LAPUTA_DUMMY = GameInfoTypes.BUILDING_FW_FLOATINGISLANDS_DUMMY  -- 없으면 nil이어도 됨
 
 if not BUILDING_LAPUTA then
-  print("[Laputa] ERROR: Laputa building type not found. Check XML/SQL.")
+  print("[Laputa] ERROR: BUILDING_FW_FLOATINGISLANDS not found in DB.")
   return
 end
 if not BUILDING_LAPUTA_DUMMY then
-  print("[Laputa] WARN: Dummy building not found; dummy distribution skipped.")
+  print("[Laputa] NOTE: Dummy building not found. Dummy sync will be skipped.")
 end
 
 -- ──[라퓨타 보유 캐시]──────────────────────────────────────
-local hasLaputa = {}  -- [iPlayer] = bool
+local hasLaputa = {}  -- [playerID] = bool
 
 local function PlayerHasLaputa(p)
-  if not p or not p.IsAlive or not p:IsAlive() then return false end
-  -- CountNumBuildings는 세계불가사의 1개면 충분
-  return p:CountNumBuildings(BUILDING_LAPUTA) > 0
+  return p and p.IsAlive and p:IsAlive() and (p:CountNumBuildings(BUILDING_LAPUTA) > 0)
 end
 
 local function RefreshHasLaputa(iPlayer)
@@ -1149,7 +1181,7 @@ local function RefreshHasLaputa(iPlayer)
   hasLaputa[iPlayer] = PlayerHasLaputa(p)
 end
 
--- ──[도시 더미 일괄 동기화]────────────────────────────────
+-- ──[도시 더미 동기화(옵션)]────────────────────────────────
 local function SyncLaputaDummyForPlayer(p)
   if not BUILDING_LAPUTA_DUMMY then return end
   if not p or not p.IsAlive or not p:IsAlive() then return end
@@ -1157,25 +1189,6 @@ local function SyncLaputaDummyForPlayer(p)
   for city in p:Cities() do
     if city:GetNumRealBuilding(BUILDING_LAPUTA_DUMMY) ~= want then
       city:SetNumRealBuilding(BUILDING_LAPUTA_DUMMY, want)
-    end
-  end
-end
-
--- ──[교역 유닛 물/심해 이동 허용(이동만)]───────────────────
-local function GrantWaterTrade(iPlayer)
-  if not hasLaputa[iPlayer] then return end
-  local p = Players[iPlayer]; if not p then return end
-  for u in p:Units() do
-    local ut = u:GetUnitType()
-    -- blimp 클론 or 바닐라 교역 유닛 식별
-    if ut == U_CARAVAN_BLIMP or ut == U_CARGO_SHIP_BLIMP or u:IsTrade() then
-      if PROMO_EMBARK and not u:IsHasPromotion(PROMO_EMBARK) then
-        u:SetHasPromotion(PROMO_EMBARK, true)
-      end
-      if PROMO_DEEP and not u:IsHasPromotion(PROMO_DEEP) then
-        u:SetHasPromotion(PROMO_DEEP, true)
-      end
-      -- 주의: 무역로 타입(육/해)은 그대로. 이건 '이동 편의'만 확장.
     end
   end
 end
@@ -1190,6 +1203,7 @@ if GameEvents.CanDoCommand then
     local plot = Map.GetPlot(u:GetX(), u:GetY()); if not plot then return end
     local owner = plot:GetOwner()
     if owner ~= -1 and hasLaputa[owner] then
+      -- 라퓨타 보유자의 영토에서는 약탈 불가
       return false
     end
   end)
@@ -1200,36 +1214,36 @@ local function AutoRepair(iPlayer)
   if not hasLaputa[iPlayer] then return end
   for idx = 0, Map.GetNumPlots() - 1 do
     local plot = Map.GetPlotByIndex(idx)
-    if plot and plot:GetOwner() == iPlayer and plot:IsImprovementPillaged() then
-      plot:SetImprovementPillaged(false)
+    if plot and plot:GetOwner() == iPlayer then
+      if plot:IsImprovementPillaged() then
+        plot:SetImprovementPillaged(false)
+      end
+      -- 도로/철도 약탈 복구
+      if plot:IsRoute() and plot:IsRoutePillaged() then
+        plot:SetRoutePillaged(false)
+      end
     end
   end
 end
 
 -- ──[이벤트 훅]─────────────────────────────────────────────
--- 초기화
 Events.SequenceGameInitComplete.Add(function()
   for i = 0, GameDefines.MAX_PLAYERS - 1 do
     RefreshHasLaputa(i)
     SyncLaputaDummyForPlayer(Players[i])
-    GrantWaterTrade(i)
   end
 end)
 
--- 원더 완공 시
 GameEvents.CityConstructed.Add(function(iPlayer, iCity, iBuilding)
   if iBuilding ~= BUILDING_LAPUTA then return end
   RefreshHasLaputa(iPlayer)
   SyncLaputaDummyForPlayer(Players[iPlayer])
-  GrantWaterTrade(iPlayer)
 end)
 
--- 새 도시 설립/해방/합병 등
 GameEvents.PlayerCityFounded.Add(function(iPlayer)
   SyncLaputaDummyForPlayer(Players[iPlayer])
 end)
 
--- 점령/이양: 양쪽 동기화
 GameEvents.CityCaptureComplete.Add(function(iOld, bIsCapital, iX, iY, iNew)
   if iOld ~= -1 then
     RefreshHasLaputa(iOld)
@@ -1238,20 +1252,20 @@ GameEvents.CityCaptureComplete.Add(function(iOld, bIsCapital, iX, iY, iNew)
   if iNew ~= -1 then
     RefreshHasLaputa(iNew)
     SyncLaputaDummyForPlayer(Players[iNew])
-    GrantWaterTrade(iNew)
   end
 end)
 
--- 매 턴: 더미/약탈복구/승선보정
+if GameEvents.CityAcquiredAndKept then
+  GameEvents.CityAcquiredAndKept.Add(function(iPlayer, iCityID)
+    SyncLaputaDummyForPlayer(Players[iPlayer])
+  end)
+end
+
 GameEvents.PlayerDoTurn.Add(function(iPlayer)
-  -- 라퓨타 보유 여부 변할 수 있으니 가볍게 갱신
   RefreshHasLaputa(iPlayer)
   SyncLaputaDummyForPlayer(Players[iPlayer])
   AutoRepair(iPlayer)
-  GrantWaterTrade(iPlayer)
 end)
 
 
-
---=================================================================================================
 print("Finished loading FutureLua.lua from VP-FW mod");

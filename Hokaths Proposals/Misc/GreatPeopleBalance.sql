@@ -151,6 +151,22 @@ UPDATE Language_en_US SET
 Text = Replace(Text, '10%', '4%')
 WHERE Tag = 'TXT_KEY_BUILD_CONSUMED_HELP_ACADEMY';
 
+UPDATE Language_en_US SET
+Text = Replace(Text, '10%', '4%')
+WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATSCIENTIST_HEADING3_BODY';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '3%', '1%')
+WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATWRITER_HEADING3_BODY';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '3%', '1%')
+WHERE Tag = 'TXT_KEY_MISSION_GIVE_POLICIES_HELP';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '20%', '10%')
+WHERE Tag = 'TXT_KEY_MISSION_START_GOLDENAGE_HELP';
+
 -- compatibility with new great people
 CREATE TRIGGER GP_Bulb_Scaling
 AFTER INSERT ON Units 

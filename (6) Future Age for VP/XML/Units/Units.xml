@@ -18,17 +18,6 @@
 			<Description>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT</Description>
 			<DefaultUnit>UNIT_FW_AUGMENTED_DIPLOMAT</DefaultUnit>
 		</Row>
-	    <!-- Airshipcaravam 
-		<Row>
-			<Type>UNITCLASS_FW_MODERN_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_FW_MODERN_COLONIST</Description>
-			<DefaultUnit>UNIT_FW_MODERN_COLONIST</DefaultUnit>
-		</Row>
-		<Row>
-			<Type>UNITCLASS_FW_SPACE_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_FW_SPACE_COLONIST</Description>
-			<DefaultUnit>UNIT_FW_SPACE_COLONIST</DefaultUnit>
-		</Row>-->
 		<!-- MISSILE -->
 		<Row>
 			<Type>UNITCLASS_FW_CLUSTER_MISSILE</Type>
@@ -402,6 +391,7 @@
 			<DefaultUnit>UNIT_FW_NEXUS</DefaultUnit>
 			<MaxPlayerInstances>2</MaxPlayerInstances>
 		</Row>
+		<!-- DUMMY MISSILE IMPROVEMENT -->
 		<Row>
 			<Type>UNITCLASS_FW_VAULT_RACK</Type>
 			<Description>TXT_KEY_UNIT_FW_VAULT_RACK</Description>
@@ -5033,6 +5023,7 @@
 		<Row>
 			<UnitType>UNIT_FW_SPACEMARINES</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<!-- GENE UNIT-->
 		<Row>
