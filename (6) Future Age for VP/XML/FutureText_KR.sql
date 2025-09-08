@@ -56,11 +56,21 @@ WHERE Tag = 'TXT_KEY_POLICY_MOBILIZATION_HELP';
 --=========================
 -- Tech
 --=========================
-
 UPDATE Language_ko_KR
-SET Text = '프로메테우스 우주 계획'
+SET Text = '프로메테우스 우주 계획' -- 영문은 교정하면 코드 에러남. 절대 교정 불가
 WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM';
 
+UPDATE Language_ko_KR
+SET Text = '[COLOR_YELLOW]프로메테우스 우주 계획[ENDCOLOR]은 지구의 고갈되는 자원에서 새로운 무대로 옮기는 시작을 알립니다. [NEWLINE][NEWLINE]당신의 문명이 처음으로 프로젝트를 완료했다면 [ICON_CAPITAL]수도 근처에 [ICON_GREAT_SCIENTIST][COLOR_YELLOW]위대한 과학자[ENDCOLOR]가 1명 출현하고, 문명이 즉시 [ICON_GOLDEN_AGE]황금기를 맞이합니다.'
+WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_HELP';
+
+UPDATE Language_ko_KR
+SET Text = '[COLOR_YELLOW]프로메테우스 우주 계획[ENDCOLOR]은 지구를 넘어서 우주 경쟁의 시작점입니다. 프로메테우스 우주 계획을 완성하면 우주선 부품을 건조할 수 있게 됩니다. 각 문명은 각자 이 프로젝트를 완성해야만 우주선 부품을 건조할 수 있습니다. 당신이 가장 먼저 아폴로 우주 계획을 완성한다면, 위대한 과학자를 얻고 곧바로 황금기가 시작됩니다.'
+WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_STRATEGY';
+
+UPDATE Language_ko_KR
+SET Text = '인류의 탐험욕구와 지적 호기심은 그들을 지구를 넘어 우주로 이끌었습니다. 프로메테우스 우주계획은 이러한 인류의 우주 탐험 본능을 대표하는 핵심적인 기관입니다. 이 계획은 우리의 태양계와 가장 가까운 별, 알파 센타우리로의 항성간 여행을 꿈꾸는 인류의 결실입니다. 프로메테우스 프로그램은 그러한 목표를 실현하기 위해 연구, 기술개발, 우주선 제작 등 다양한 분야에서 활동을 진행하며 인류의 우주 진출을 선도하고 있습니다.이 탄생 배경은 20세기 중반부터 시작된 우주 경쟁에서 시작되었습니다. 이 시기, 각 나라는 자신들의 국력을 과시하고 기술력을 확보하기 위해 우주 연구에 힘을 쏟았습니다. 그리고 이러한 연구의 결과로 우리는 달에 인간을 보내고, 화성을 탐사하며, 가장 가까운 별인 알파 센타우리로 우주선을 보내는 기술을 개발하게 되었습니다.그러나, 이런 기술 개발이 순전히 과학적인 목표를 위한 것만은 아니었습니다. 기후 변화, 자원 부족, 인구 과밀 등 지구상의 여러 문제들로 인해 우리의 생존 공간을 넓히는 것도 중요한 목표가 되었습니다. 프로메테우스 우주계획은 이러한 목표를 실현하기 위한 중요한 단계로, 인류의 우주 진출을 이끌고 있습니다.오늘날, 항성간 여행의 가능성을 연구하고, 인류의 우주 존재를 확장하는 데 필요한 기술을 개발하며, 알파 센타우리로의 첫 항성간 여행을 준비하는 등의 중요한 역할을 수행하고 있습니다. 이러한 노력은 우리의 지식을 넓히고, 새로운 가능성을 탐구하며, 결국은 인류의 우주 진출을 가능하게 할 것입니다.'
+WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_PEDIA';
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_FW_DUMMY_HIDDEN_TITLE','더미 기술'),
@@ -85,7 +95,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_ECOTHEORY_TITLE','생태유전학'),
 ('TXT_KEY_TECH_FW_ECOTHEORY_DESC','기존의 환경보호 운동은 인간 활동에 맞서 자연을 지키고자 하였으나, 종종 인간과 자연을 서로 분리된 존재로 인식하는 한계를 지니고 있었습니다. 그러나 유전학 연구가 발전하고 생태계에 대한 이해가 깊어지면서, 인간과 환경을 단일한 통합 시스템의 일부로 바라보려는 움직임이 점점 확산되고 있습니다.[NEWLINE]생태유전학은 생태계 속에서 유전적 다양성과 적응 과정을 연구하며, 특정 종의 유전 정보가 환경 변화와 어떻게 상호작용하는지를 과학적으로 분석합니다. 이를 통해 인간과 생태계 모두의 유전자 풀을 보존하고, 환경 변화에 대응하는 생물학적 메커니즘을 밝혀내는 데 중요한 기여를 하고 있습니다.[NEWLINE]더 나아가 일부 신우생학적 관점에서는 환경을 보존하는 것에서 한 걸음 더 나아가, 인간과 생태계 모두가 유전적 정보를 바탕으로 보다 조화롭게 공존할 수 있는 방향을 모색해야 한다고 주장합니다. 이러한 시도는 생태계 파괴를 최소화하고 유전적 다양성을 유지하며, 궁극적으로 인간과 자연이 상호 의존적인 균형 속에서 지속 가능한 진화를 이룰 수 있도록 돕는 데 목적을 두고 있습니다..'),
-('TXT_KEY_TECH_FW_ECOTHEORY_HELP','우생학에 따른 신체가 뛰어난 유전자 선별 용병과 숲과 정글, 초원과 평원의 생산 산출량을 증가시키는 생태친화시설과 친환경 마을을 건설 할 수 있습니다. 스발바르 국제 종자저장고를 건설할 수 있습니다.'),
+('TXT_KEY_TECH_FW_ECOTHEORY_HELP','우생학에 따른 신체가 뛰어난 유전자 선별 용병과 숲과 정글, 초원과 평원의 생산 산출량을 증가시키는 생태친화시설과 친환경 마을을 건설할 수 있습니다. 스발바르 국제 종자저장고를 건설할 수 있습니다.'),
 ('TXT_KEY_TECH_FW_ECOTHEORY_QUOTE','[NEWLINE][TAB][TAB]"모든 생명체는 밀접하게 연결되어 있으며, 이러한 친밀함으로부터 식별 능력이 태어나고, 그 자연스러운 결과로 비폭력이 실천됩니다."[NEWLINE][TAB][TAB]- 아르네 나스[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_GRID_COMPUTING_TITLE','분산 컴퓨터 공학'),
@@ -95,7 +105,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_MEMETICS_TITLE','가상 시뮬레이션'),
 ('TXT_KEY_TECH_FW_MEMETICS_DESC','가상 시뮬레이션 기술은 현실의 복잡한 현상을 안전하고 정밀하게 재현할 수 있는 환경을 제공합니다. 이를 통해 과학 연구, 군사 훈련, 산업 설계 등에서 실제 실험의 한계와 위험을 극복하며, 미래 시나리오를 미리 검증하고 최적화할 수 있는 길을 열어줍니다.'),
-('TXT_KEY_TECH_FW_MEMETICS_HELP','가상훈련장을 건설하여 군사 유닛의 경험치를 빠르게 향상시킬 수 있습니다. 또한 가상현실 연구소와 데이터 시뮬레이션 센터를 건설하여 과학 및 생산 효율을 높일 수 있습니다. 가상 아이돌을 건설 할 수 있습니다.'),
+('TXT_KEY_TECH_FW_MEMETICS_HELP','가상훈련장을 건설하여 군사 유닛의 경험치를 빠르게 향상시킬 수 있습니다. 또한 가상현실 연구소와 데이터 시뮬레이션 센터를 건설하여 과학 및 생산 효율을 높일 수 있습니다. 가상 아이돌을 건설할 수 있습니다.'),
 ('TXT_KEY_TECH_FW_MEMETICS_QUOTE','[NEWLINE][TAB][TAB]"우리는 시뮬레이션을 통해 불가능한 것을 가능하게 하고, 위험한 것을 안전하게 만들며, 미래를 미리 경험할 수 있습니다."[NEWLINE][TAB][TAB]- Ivan Sutherland[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_SUPERCOMPUTERS_TITLE','데이터 정보학'),
@@ -105,7 +115,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_NANOMATERIALS_TITLE','나노물질 공학'),
 ('TXT_KEY_TECH_FW_NANOMATERIALS_DESC','나노물질 공학은 미세 가공 연구에서 비롯된 재료 계측·합성 기술의 발전을 바탕으로, 기존의 석탄·석유·철광석과 같은 산업 자원에서도 희토류 채굴에 의존하지 않고 나노 단위의 희귀 물질을 추출할 수 있는 가능성을 열어주었습니다.[NEWLINE]이 기술을 통해 얻어진 초미세 구조의 재료들은 기존에 볼 수 없었던 독특한 광학적, 전자적, 기계적 성질을 제공하며, 미래의 에너지 시스템, 우주 탐사 장비, 생명공학 연구소와 같은 과학 시설들의 성능을 획기적으로 향상시킬 수 있습니다.[NEWLINE]궁극적으로 나노물질 공학은 지구 자원의 활용 방식 자체를 변화시켜, 고갈 위기에 직면한 산업 자원에 새로운 생명을 불어넣고, 인류가 직면한 에너지·환경 문제의 해결책을 제시하는 미래 기술의 핵심으로 자리 잡게 될 것입니다.'),
-('TXT_KEY_TECH_FW_NANOMATERIALS_HELP','나노물질을 생산하는 나노물질 제조소를 얻을 수 있습니다. 첨단 연구단지 시설을 건설 할 수 있습니다. 연구서버를 설치하여 도시의 과학을 비약적으로 증가시킬 수 있습니다.'),
+('TXT_KEY_TECH_FW_NANOMATERIALS_HELP','나노물질을 생산하는 나노물질 제조소를 얻을 수 있습니다. 첨단 연구단지 시설을 건설할 수 있습니다. 연구서버를 설치하여 도시의 과학을 비약적으로 증가시킬 수 있습니다.'),
 ('TXT_KEY_TECH_FW_NANOMATERIALS_QUOTE','[NEWLINE][TAB][TAB]"먼 행성의 탄소 원자가 DNA로 재배열되고, 미생물이 형성되고, 등뼈가 자라며, 바다 주위를 헤엄치고, 양서류로 변이되어 마른 땅으로 기어들어갔습니다. 그리고 마침내 택시가 우주의 입에 나타났습니다. 골목."[NEWLINE][TAB][TAB] - Mark Coggins, "불멸의 게임"[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_TITLE','인공 환경'),
@@ -155,7 +165,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_TITLE','고에너지 신소재공학'),
 ('TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_DESC','고에너지 신소재공학은 초정밀 레이저, 극저온 냉각, 고압 고온 환경 시뮬레이션을 결합하여 상온 초전도체의 실현에 박차를 가하는 기술 분야입니다. 상온 초전도체는 저항 없는 전력 전송, 극한 자기장 제어, 에너지 효율 극대화 등 미래형 에너지 시스템의 핵심 기반으로 여겨지며, 이를 통해 실리콘 한계를 뛰어넘는 초고속 컴퓨팅 및 자기부상 교통망 구축이 가능해집니다. 이 기술 개발에는 신소재와 원자단위의 조립 연구가 필수입니다. 초고농축 레이저를 통해 핵광자를 연구하여 새로운 차폐막, 냉각장치 등을 개발할 수 있습니다.'),
-('TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_HELP','정밀 소재 연구소를 건설하여 나노물질과 우라늄을 확보할 수 있습니다. 도시의 과학 산출과 에너지 효율이 향상되고, 애퍼처 사이언스센터를 건설 할 수 있습니다.'),
+('TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_HELP','정밀 소재 연구소를 건설하여 나노물질과 우라늄을 확보할 수 있습니다. 도시의 과학 산출과 에너지 효율이 향상되고, 애퍼처 사이언스센터를 건설할 수 있습니다.'),
 ('TXT_KEY_TECH_FW_NUCLEAR_ENRICHMENT_QUOTE','[NEWLINE][TAB][TAB]"상온에서 작동하는 초전도체를 개발하는 것은 진정한 꿈입니다... 이러한 물질은 전자 기반 산업 전부를 혁신할 것이며, 컴퓨팅과 의료, 에너지 생산, 수송까지 완전히 바꿔 놓을 것입니다."[NEWLINE][TAB][TAB]- Dean[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_ASTRODYNAMICS_TITLE','궤도역학'),
@@ -175,7 +185,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_TITLE','AI: 완전 자율 시스템'),
 ('TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_DESC','완전 자율 시스템은 이제 단순한 소프트웨어 자율주행을 넘어, 실제 인간형 휴머노이드 로봇으로 구현되는 단계에 도달했습니다. 고도화된 인공지능(AI), 기계학습, 실시간 센서 융합 기술이 결합되면서 이 로봇들은 스스로 판단하고 복잡한 환경에서 자율적으로 행동할 수 있게 되었습니다. 산업 현장, 우주 탐사, 재난 구조, 군사 작전 등에서 인간과 유사한 기동성과 결정을 수행하며, 일부는 인간의 감각과 근육 패턴을 모방해 고도의 정밀 작업과 전술적 행동까지 가능하게 합니다. 이러한 기술은 미래 사회에서 인간과 기계의 경계를 모호하게 만들며, 완전 자율 휴머노이드 시대의 서막을 열고 있습니다.'),
-('TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_HELP','자동화시설에 따른 무인관리기지를 도시에 건설하여 로봇유닛을 강화시킬 수 있습니다. 도시의 방어를 증가시키는 지원중계기를 건설 할 수 있습니다. 로봇유닛의 회복을 증가시키는 나노하이브를 생산할 수 있습니다.'),
+('TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_HELP','자동화시설에 따른 무인관리기지를 도시에 건설하여 로봇유닛을 강화시킬 수 있습니다. 도시의 방어를 증가시키는 지원중계기를 건설할 수 있습니다. 로봇유닛의 회복을 증가시키는 나노하이브를 생산할 수 있습니다.'),
 ('TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_QUOTE','[NEWLINE][TAB][TAB]"다른 사람이 당신을 위해 할 수 있는 일을 스스로 하지 마십시오."[NEWLINE][TAB][TAB] - Agatha Christie, The Labors of Hercules[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_TITLE','초전도-플라즈마 에너지 역학'),
@@ -294,7 +304,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_FW_MODERN_COLONIST_PEDIA', '현대(근대) 시대의 식민지 개척은 인류 문명과 사회가 재앙을 겪을 경우, 새로운 지역에서 생활할 수 있는 가능성을 열었습니다. 또한, 새로운 지역에서 발견된 추가 자원들은 사회의 확장과 발전을 가능하게 하였습니다. 그러나 이 과정에서도 강력한 기관들의 이익 증대, 막대한 기회비용, 경제적 불평등, 환경 파괴 등과 같은 문제들이 발생했습니다. 특히 도시 개발은 식민지 개척의 중요한 부분이었습니다. 도시는 사회, 경제, 문화 활동의 중심지로서 새로운 식민지에서의 생활을 가능하게 했습니다. 도시는 새로운 식민지의 인프라를 구축하고, 인간의 생활을 조직화하는 데 필요한 핵심적인 구조였습니다. 도시 개발은 또한 식민지의 경제 발전을 촉진시키고, 식민지의 주민들에게 새로운 기회를 제공했습니다. 하지만 도시 개발은 자연 환경을 파괴하고, 원주민 문화를 침략하는 결과를 초래하기도 했습니다. 이와 같이 근대 시대의 식민지 개척과 도시 개발은 이중적인 결과를 가져왔습니다.'),
 -- Space Colonist
 ('TXT_KEY_UNIT_FW_SPACE_COLONIST', '우주 개척자'),
-('TXT_KEY_UNIT_FW_SPACE_COLONIST_HELP', '개척자의 최종 업그레이드 유닛입니다. [COLOR_PLAYER_PURPLE]낙하 부대[ENDCOLOR] 승급을 가집니다.[NEWLINE]추가 인프라 및 시민을 갖춘 도시를 세울 수 있습니다.[NEWLINE][NEWLINE]유닛을 생산하는 동안 도시의 [ICON_FOOD]성장이 멈춥니다. 유닛 생산을 완료하면 도시의 [ICON_CITIZEN]시민이 [COLOR_NEGATIVE_TEXT]1명[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]국경 바로 근처에 인접했거나 제국이 [ICON_HAPPINESS_3]불행하면 도시를 세울 수 없습니다[ENDCOLOR].'),
+('TXT_KEY_UNIT_FW_SPACE_COLONIST_HELP', '개척자의 최종 업그레이드 유닛입니다. [COLOR_PLAYER_PURPLE]준궤도 강하[ENDCOLOR] 승급을 가집니다.[NEWLINE]추가 인프라 및 시민을 갖춘 도시를 세울 수 있습니다.[NEWLINE][NEWLINE]유닛을 생산하는 동안 도시의 [ICON_FOOD]성장이 멈춥니다. 유닛 생산을 완료하면 도시의 [ICON_CITIZEN]시민이 [COLOR_NEGATIVE_TEXT]1명[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]국경 바로 근처에 인접했거나 제국이 [ICON_HAPPINESS_3]불행하면 도시를 세울 수 없습니다[ENDCOLOR].'),
 ('TXT_KEY_UNIT_FW_SPACE_COLONIST_STRATEGY', '우주 식민지 개척자 궤도 낙하 기술을 사용하여 행성의 모든 배치에 거주하십시오.'),
 ('TXT_KEY_UNIT_FW_SPACE_COLONIST_PEDIA', '우주 개척(또는 우주 정착 또는 외계 행성 정착)은 지구 외의 천체에서의 영구적인 정착 및 자연 자원의 개발을 의미합니다. 이는 우주 비행과 우주 기지 운영을 넘어선 인간의 우주 존재 형태로 보입니다. 우주 개척에 찬성하거나 반대하는 많은 논의들이 있었습니다. 주로 찬성하는 두 가지 주장은 인간 문명과 생명체가 행성 규모의 재앙(자연적 또는 인간이 만든)에도 살아남을 수 있게 하며, 우주에서 추가적인 자원을 이용해 인간 사회의 확장을 가능케 할 수 있다는 것입니다.반면에 개척에 반대하는 가장 흔한 이유로는 우주의 상품화가 이미 강력한 기관들, 특히 주요 경제 및 군사 기관의 이익을 강화할 가능성이 있음과, 지구에서 같은 자원을 사용하는 것에 비해 막대한 기회비용이 발생하며, 전쟁, 경제 불평등, 환경 파괴 등 기존의 해로운 과정을 악화시킬 수 있다는 우려가 포함됩니다.'),
 --[[외교유닛]]
@@ -378,11 +388,10 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_FW_BIODRONE_STRATEGY','바이오드론은 미래시대의 궁극의 전천후 육상과 바다를 공격할 수 있는 하이브리드 유닛이며, 빠른 테러에 조기진압을 할 수 있습니다.'),
 ('TXT_KEY_UNIT_FW_BIODRONE_HELP','매우 강력한 비행선 유닛입니다. 매턴 스스로 체력을 회복하며, 빠르게 이동이 가능합니다. 잠수함과 기갑유닛과 싸우는데 특화되었습니다. 바다에서 공격할 수 있습니다.'),
 -- [[헬리콥터]]
--- 아파치 전투헬기
-('TXT_KEY_UNIT_FW_APACHE','아파치 전투헬기'),
-('TXT_KEY_UNIT_FW_APACHE_HELP','기갑 유닛 공격에 특화되어 있고 산 위를 마음대로 떠다니는 유닛입니다.'),
-('TXT_KEY_UNIT_FW_APACHE_STRATEGY','아파치 전투헬기는 도시를 점령할 수 없다는 점을 제외하면 대부분의 측면에서 지상 유닛과 같은 역할을 하는 치명적인 공중 유닛입니다. 7칸의 타일 이동은 매우 빠르고 산을 포함한 모든 지형 유형을 맑은 것처럼 이동할 수 있지만 물을 건너려면 착수해야 합니다. 현대식 헬리콥터는 탱크와 싸울 때 막대한 전투 보너스를 받습니다. '),
-('TXT_KEY_UNIT_FW_APACHE_TEXT','보잉 AH-64 아파치는 꼬리날개형 랜딩기어 배열과 2인 승무원을 위한 탠덤 조종석을 갖춘 4날 쌍발 엔진 공격 헬리콥터입니다. 표적 획득 및 야간 투시 시스템을 위한 노즈 마운트 센서 제품군이 특징입니다. 기체 전방 동체 아래 메인 랜딩 기어 사이에 장착된 30mm(1.18인치) M230 체인 건으로 무장합니다. 그것은 일반적으로 AGM-114 Hellfire 미사일과 Hydra 70 로켓 포드의 혼합을 운반하는 스터브 윙 파일론에 장착된 4개의 하드 포인트를 가지고 있습니다. AH-64는 전투 생존성을 향상시키기 위해 많은 양의 시스템 중복성을 가지고 있습니다.'),
+('TXT_KEY_UNIT_FW_APACHE','앨리게이터'),
+('TXT_KEY_UNIT_FW_APACHE_HELP','기갑 유닛 제압에 특화된 최신 공격헬기입니다. [ICON_MOVES] 7칸을 기동하며 산을 포함한 모든 지형을 자유롭게 비행할 수 있으나, [ICON_WATER] 수역을 건너려면 착수가 필요합니다.'),
+('TXT_KEY_UNIT_FW_APACHE_STRATEGY','앨리게이터는 도시를 점령할 수 없다는 점을 제외하면 지상 기동전에서 치명적인 역할을 수행하는 공중 유닛입니다. 고기동성·대전차 화력·지형 무시 이동으로 전차 및 중장갑을 신속히 격파합니다.'),
+('TXT_KEY_UNIT_FW_APACHE_TEXT',  'Ka-52 "앨리게이터"는 동축반전 로터와 탠덤 2인 승무체계를 갖춘 차세대 공격헬기입니다. 마스트 장착 레이더와 EO/IR 센서, 헬멧 연동 조준으로 악천후·야간에도 표적을 탐지·추적합니다. 기수 하부 30mm 기관포, 정밀 대전차 미사일과 유도 로켓을 운용하며, 복합소재 장갑과 능동 대응체계로 생존성을 높였습니다. 데이터 링크로 무인기·지상부대와 **협동 교전**을 지원해 전장 가시성을 극대화합니다.'),
 -- 버틀건쉽
 ('TXT_KEY_UNIT_FW_VERTOL','버톨 건쉽'),
 ('TXT_KEY_UNIT_FW_VERTOL_TEXT','수직 이착륙 항공기의 기술이 발전함에 따라 점점 더 다양한 디자인이 나타나기 시작하여 표준 헬리콥터 건십을 대체했습니다. 점점 더 많은 수의 수직이착륙 항공기가 제트 터빈을 사용했지만 엔진이 회전하거나 추진력을 조절할 수 있도록 설계되었습니다. 이 항공기는 버톨기능으로 인해 종종 속기로 버톨이라고 불립니다.'),
@@ -496,8 +505,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_HELP_FW_AIRBORNE_FORCES','우호 영토로부터 공중투하가 가능한 강력한 보병 유닛입니다. 강하 후에도 이동 및 약탈을 할 수 있지만 다음턴까지 전투를 할 수 없습니다.'),
 ('TXT_KEY_UNIT_FW_AIRBORNE_FORCES_STRATEGY','공정부대는 정보화시대 공병유닛입니다. 최대 40타일 떨어진 곳에서 낙하산으로 이동할 수 있습니다(아군 영토에서 시작할 때). 이를 통해 공수 부대는 말 그대로 적의 위치를 뛰어넘고 도로망을 파괴하고 중요한 자원을 약탈하는 등 그의 전선 뒤에서 대혼란을 일으킬 수 있습니다. 공정 부대는 그러한 임무를 수행할 때 큰 위험에 처하므로 목표가 그만한 가치가 있는지 확인하십시오!'),
 ('TXT_KEY_CIV5_FW_AIRBORNE_FORCES_TEXT','공정 부대는 일반적으로 특수 잠입부대로, 항공기로 이동하고 일반적으로 낙하산으로 전투에 "투하"하도록 설정된 군대입니다. 따라서 그들은 적진 뒤에 배치될 수 있으며 경고 없이 거의 모든 곳에 배치할 수 있습니다. 포메이션은 항공기의 수와 크기에 의해서만 제한되므로 충분한 용량이 주어지면 몇 분 안에 거대한 힘이 "갑자기" 나타날 수 있으며, 도시에 미리 잡입하거나 후방에서 도시의 공략을 지원합니다.'),
--- 궤도강하 쇼크트루퍼
-('TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER','궤도강하 쇼크트루퍼'),
+--준궤도강하 쇼크트루퍼
+('TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER','쇼크트루퍼'),
 ('TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_TEXT','궤도강하 쇼크트루퍼는 차세대 특수 작전 군대로, 지구 어디에서든 극히 짧은 시간 안에 투입될 수 있도록 설계되었습니다. 초기 발상은 궤도에서 유닛을 직접 강하시켜 전격적으로 적을 제압한다는 단순한 개념이었지만, 우주 발사 시설과 궤도 기술이 비약적으로 발전하면서 현실화되었습니다. 특수한 강하 캡슐과 충격 완화 장치, 고열 차폐 시스템 등이 적용되어 안전하게 대기권을 돌파할 수 있으며, 낙하 지점 근처에서 자동 제동과 방향 제어가 이루어져 정밀한 투입이 가능합니다. 이러한 신속 전개 능력은 국제 테러나 지역 분쟁을 조기에 차단하는 데 탁월한 효과를 보여주었고, 결국 전 세계 주요 강대국들은 궤도강하 쇼크트루퍼를 전략적 억제력과 동시에 즉응 전력으로 활용하게 되었습니다.'),
 ('TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_STRATEGY','궤도강하 쇼크트루퍼는 빠른 반응과 빠른 응답을 위해 설계되었으며, 시야 반경이 있는 한 순간 통지에 전 세계 어디에나 배치할 수 있습니다. 적의 전선이나 진지를 기습하거나, 전략적 타일을 공격하거나, 신속한 대응 지원군으로 배치하거나, 단순히 적에 맞서 전선을 유지하는 등 궤도강하 쇼크트루퍼가 할 수 없는 일은 거의 없습니다.'),
 ('TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_HELP','빠르고 강력한 미래 시대 보병 유닛입니다. 우호 영토에서 턴을 시작시 맵 전체 어디든지 공중 투하가 가능합니다.'),
@@ -589,8 +598,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- [[항모]]
 -- 이지스 항공모함
 ('TXT_KEY_UNIT_FW_SUPERCARRIER','이지스 항공모함'),
-('TXT_KEY_UNIT_FW_SUPERCARRIER_HELP','기본 10대의 항공기를 탑재할 수 있습니다. 문명당 4개로 제한 됩니다.'),
-('TXT_KEY_UNIT_FW_SUPERCARRIER_STRATEGY','이지스 항공모함은 전투기, 폭격기(스텔스 폭격기는 아님) 및 원자 폭탄을 운반하는 특수 선박입니다. 이지스 항공모함은 직접 공격할 수 없지만, 탑재하는 항공기는 해상에서 가장 강력한 공격 무기가 됩니다. 방어적으로는 근거리 지상 및 장거리 공중 공격 모두로부터 자신을 방어할 수 있지만 여전히 약하며 미사일 구축함과 핵 잠수함의 호위를 받아야 합니다. 문명당 4개로 제한 됩니다.'),
+('TXT_KEY_UNIT_FW_SUPERCARRIER_HELP','기본 10대의 항공기를 탑재할 수 있습니다. 문명당 2개로 제한 됩니다.'),
+('TXT_KEY_UNIT_FW_SUPERCARRIER_STRATEGY','이지스 항공모함은 전투기, 폭격기(스텔스 폭격기는 아님) 및 원자 폭탄을 운반하는 특수 선박입니다. 이지스 항공모함은 직접 공격할 수 없지만, 탑재하는 항공기는 해상에서 가장 강력한 공격 무기가 됩니다. 방어적으로는 근거리 지상 및 장거리 공중 공격 모두로부터 자신을 방어할 수 있지만 여전히 약하며 미사일 구축함과 핵 잠수함의 호위를 받아야 합니다. 문명당 2개로 제한 됩니다.'),
 ('TXT_KEY_UNIT_FW_SUPERCARRIER_TEXT','이지스 항공모함은 혁신적인 군사 장비로써, 원자력을 사용하며 최첨단 기술을 갖추고 있습니다. 이것은 단순한 항공모함이 아니라, 아름다운 형태와 놀라운 능력을 겸비한 첨단 전투 시스템의 상징입니다. 이 항공모함의 가장 큰 특징 중 하나는 원자력 추진 시스템입니다. 이 시스템은 항공모함이 거의 무제한으로 운용할 수 있도록 해줍니다. 공급선의 지원 없이도 장기간 거대한 힘을 유지할 수 있어, 이지스 항공모함은 어떤 임무든 수행할 수 있습니다. 더욱 흥미로운 것은 이 항공모함이 잠수함 탐지 기능을 갖추고 있다는 것입니다. 선박 하부에는 소나와 기타 탐지 장비가 설치되어 있어, 수면 아래에 숨겨진 위협을 발견할 수 있습니다. 이러한 기능은 이지스 항공모함이 대양을 안전하게 통제하고, 적 잠수함의 위협에서 우리의 해상 통행로를 보호하는 데 결정적입니다. 이지스 항공모함은 전투에서의 우리의 우위를 확보하고, 평화를 유지하며, 우리의 해상 이해관계를 보호하는 데 필수적인 장비입니다. 이런 능력은 우리를 잠재적 위협으로부터 보호하고, 전세계에서 우리의 존재감을 부각시킵니다. 이런 항공모함은 단지 군사 장비가 아니라, 우리의 의지와 힘의 상징인 것입니다.'),
 -- [[전투기]]
 --  스텔스무인전투기
@@ -649,12 +658,12 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_FW_HELICARRIER','헬리캐리어'),
 ('TXT_KEY_UNIT_FW_HELICARRIER_TEXT','헬리캐리어는 고도의 기술과 신기술의 결합으로 탄생한 공중 유닛입니다. 이는 항공모함의 기능을 대체하고, 이를 훨씬 넘어선 유연성과 기동성을 제공하는 혁신적인 전투 및 지원 플랫폼입니다. 첨단 우주선 엔진을 개발하는 도중에 지속적으로 공중에 부양한 기술을 얻게 되었고, 엄청 빠르지는 않지만 준수하게 움직일 수 있는 이 헬리캐리어는 기존의 어떤 항공 유닛의 단점을 보완하고 유연하게 작전을 수행할 수 있게 해줍니다. 이는 거의 모든 종류의 기상 조건과 환경에서 작동하도록 설계되었으며, 어떤 지역에서든 공중 지원을 제공할 수 있습니다. 헬리캐리어는 각종 전투 및 지원 임무를 수행하는 데 필요한 다양한 장비와 시스템을 갖추고 있습니다. 고속 전투기, 전투 헬리콥터, 무인 항공기 등 다양한 공중 유닛을 운용할 수 있으며, 고강도 레이저 및 미사일 시스템 등 강력한 무기를 통해 대기상의 위협에 대응할 수 있습니다. 또한, 헬리캐리어는 복잡한 센서와 통신 장비를 통해 전장에서의 정보 수집 및 분석, 그리고 신속한 명령 전달을 가능하게 합니다. 이를 통해 헬리캐리어는 공중에서의 감시, 통신, 지휘, 제어, 인텔리전스 기능을 모두 수행하며, 그 결과로 전술적인 우위를 취하는 데 결정적인 역할을 합니다. 전반적으로 헬리캐리어는 그 혁신적인 디자인과 기능을 통해 전투 지원의 새로운 기준을 제시하며, 그 경계를 끊임없이 확장하고 있습니다.'),
 ('TXT_KEY_UNIT_FW_HELICARRIER_STRATEGY','헬리캐리어는 지상으로 호버링이 가능한 미래형 지원 유닛입니다. 문명 내에 헬리캐리어를 4개 이상 소유할 수 없습니다.'),
-('TXT_KEY_UNIT_FW_HELICARRIER_HELP','미래 시대의 보조형 유닛으로 지상으로 호버링이 가능하며, 기본 6대의 항공기가 탑재가능합니다. 문명당 4개로 제한 됩니다.'),
+('TXT_KEY_UNIT_FW_HELICARRIER_HELP','미래 시대의 보조형 유닛으로 지상으로 호버링이 가능하며, 기본 6대의 항공기가 탑재가능합니다. 문명당 2개로 제한 됩니다.'),
 -- 넥서스
 ('TXT_KEY_UNIT_FW_NEXUS','넥서스'),
 ('TXT_KEY_UNIT_FW_NEXUS_TEXT','미래 시대 전쟁의 궁극적인 전환점은 넥서스의 등장으로 표현됩니다. 넥서스는 식민지화를 위해 디자인된 고급 항우주기지로서, 우주의 가혹한 조건에서도 인간 생활을 지원하도록 설계되었습니다. 첨단 스마트 재료와 소형 핵융합 발전소의 결합으로, 이 공중에 떠 있는 복합체는 사실상 우주에서의 자립 생활과 효과적인 방어를 가능하게 합니다. 넥서스의 중심에는 사람들의 생활 공간과 함께 고도로 집중된 명령 노드가 있습니다. 이 노드는 지속적인 전투 상황 분석을 제공하고, 넥서스 주변의 상황에 따라 필요한 업데이트를 실시간으로 제공합니다. 또한, 넥서스 내부에는 손상된 부품을 즉시 수리하거나 인간이 살아가는 데 필요한 물자를 만들어내는 나노 하이브가 설치되어 있어 자립성을 높였습니다. 넥서스는 우주 전투기와 폭격기를 보유하고 있어, 적에 대한 방어나 공격이 필요할 때 이들을 즉시 배치할 수 있습니다. 이러한 우주 전투체는 넥서스의 레일건과 미사일 배터리와 함께 연동되어 적에게 강력한 화력 지원을 제공합니다. [NEWLINE][NEWLINE]마지막으로, 넥서스는 자체적으로 매우 강력한 방어 시스템을 갖추고 있습니다. 이는 넥서스를 공격하려는 적을 효과적으로 저지하며, 동시에 넥서스 내부의 생명체와 시설을 보호하는 역할을 수행합니다. 이처럼 넥서스는 우주에서의 생활과 생존을 위한 강력한 기지이자, 인류의 우주 식민지화를 위한 중요한 발판으로서의 역할을 수행하게 됩니다.'),
 ('TXT_KEY_UNIT_FW_NEXUS_STRATEGY','넥서스는 아군 유닛을 치료하는 동시에 전투력을 감소시키고 매 턴 인접한 적 유닛에게 피해를 주는 미래형 지원 유닛입니다. 문명 내에 넥서스를 4개 이상 소유할 수 없습니다.'),
-('TXT_KEY_UNIT_FW_NEXUS_HELP','미래 시대의 보조형 유닛으로 우호 유닛의 체력을 매턴 회복시키는 반면, 인접한 적 유닛에 피해를 주고 전투력도 떨어뜨립니다. 기본 10대의 항공기가 탑재가능합니다. 문명당 4개로 제한 됩니다.'),
+('TXT_KEY_UNIT_FW_NEXUS_HELP','미래 시대의 보조형 유닛으로 우호 유닛의 체력을 매턴 회복시키는 반면, 인접한 적 유닛에 피해를 주고 전투력도 떨어뜨립니다. 기본 10대의 항공기가 탑재가능합니다. 문명당 2개로 제한 됩니다.'),
 -- 더미유닛
 ('TXT_KEY_UNIT_FW_VAULT_RACK','포탑 더미'),
 ('TXT_KEY_UNIT_FW_VAULT_RACK_TEXT','미사일 전용 타일의 버그로 고육지책으로 만든 유닛입니다.'),
@@ -665,13 +674,15 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- Promotion
 --===========================
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
--- 공정투하
-('TXT_KEY_PROMOTION_PARADROP_2','공정 투하'),
-('TXT_KEY_PROMOTION_PARADROP_2_HELP','20 타일 바깥까지 공중 투하 가능'),
-('TXT_KEY_PEDIA_PROMOTION_PARADROP_2','공정 투하'),
+-- 준궤도 강하
+('TXT_KEY_PROMOTION_FW_AEROPLEX_DROP','준궤도 강하'),
+('TXT_KEY_PROMOTION_FW_AEROPLEX_DROP_HELP','[COLOR_POSITIVE_TEXT]40 타일 바깥[ENDCOLOR]까지 공중 강하 가능'),
+-- 유전자강화
+('TXT_KEY_PROMOTION_FW_TRANSGENICS','유전자강화'),
+('TXT_KEY_PROMOTION_FW_TRANSGENICS_HELP','해양 또는 강 건너 공격 페널티 제거[NEWLINE]강 건너 이동 시 [ICON_MOVES] 이동력 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]만 소모, 습지에서 지형 패널티 무시'),
 -- 궤도강하
 ('TXT_KEY_PROMOTION_ORBITAL_DROP','궤도 강하'),
-('TXT_KEY_PROMOTION_ORBITAL_DROP_HELP','맵 어디에든지 유닛 배치가 가능'),
+('TXT_KEY_PROMOTION_ORBITAL_DROP_HELP','64 타일 바깥까지 공중 강하 가능'),
 -- 포식본능
 ('TXT_KEY_PROMOTION_FW_PREDATOR','포식 본능'),
 ('TXT_KEY_PROMOTION_FW_PREDATOR_HELP','[ICON_STRENGTH]전투력 +10%'),
@@ -681,11 +692,11 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_1_HELP','주변1타일 20,2타일 10,3타일 5의 피해(유닛 기준)'),
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_2','광역 폭발2'),
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_2_HELP','주변1타일 30,2타일 15,3타일 8의 피해(유닛 기준)'),
-('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_3','광역 폭탄3'),
+('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_3','광역 폭발3'),
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_3_HELP','주변1타일 40,2타일 20,3타일10의 피해(유닛 기준)'),
-('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4','광역 폭탄4'),
+('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4','지표면 붕괴1'),
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4_HELP','주변1타일 40의 추가피해'),
-('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5','광역 폭탄5'),
+('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5','지표면 붕괴2'),
 ('TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5_HELP','주변1타일 50의 추가피해'),
 -- 므네모시네 학습
 ('TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE','므네모시네 학습'),
@@ -843,12 +854,12 @@ WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
 INSERT OR REPLACE INTO LocalizedText
 	(Language, Tag, Text)
 VALUES
-	('ko_KR', 'TXT_KEY_PONTOON_BRIDGE', '해저터널'),
-	('ko_KR', 'TXT_KEY_PONTOON_BRIDGE_HELP', '지상 유닛이 이 해안 타일을 횡단할 수 있습니다. 2개 이상의 육지 타일이 인접한 해안 타일에만 건설할 수 있습니다. 2개 또는 3개의 인접한 대지 타일이 있는 타일의 경우 대지 타일이 인접하지 않을 수 있습니다. 노동자에 의해 건설됩니다.[NEWLINE][NEWLINE] 터널을 이용하여 육지로 도시를 연결할 수 있지만, [COLOR_NEGATIVE_TEXT]육상교역로는 연결이 되지 않습니다.[ENDCOLOR]'),
-	('ko_KR', 'TXT_KEY_PONTOON_BRIDGE_TEXT', '지상유닛이 해저터널을 이용하여 연안타일을 가로질러 빠르고 안전하게 다른 지역으로 이동이 가능합니다.'),
-	('ko_KR', 'TXT_KEY_BUILD_PONTOON_BRIDGE', '[LINK=IMPROVEMENT_PONTOON_BRIDGE]해저터널[/LINK] 건설'),
-	('ko_KR', 'TXT_KEY_BUILD_PONTOON_BRIDGE_REC', '지상 유닛이 약간의 전투 패널티로 이 타일을 횡단할 수 있게 합니다.'),
-	('ko_KR', 'TXT_KEY_BUILD_PONTOON_BRIDGE_HELP', '지상 유닛이 이 해안 타일을 횡단할 수 있습니다. 2개 이상의 육지 타일이 인접한 해안 타일에만 건설할 수 있습니다. 2개 또는 3개의 인접한 대지 타일이 있는 타일의 경우 대지 타일이 인접하지 않을 수 있습니다. 노동자에 의해 건설됩니다.[NEWLINE][NEWLINE] 터널을 이용하여 육지로 도시를 연결할 수 있지만, [COLOR_NEGATIVE_TEXT]육상교역로는 연결이 되지 않습니다.[ENDCOLOR]');
+	('ko_KR', 'TXT_KEY_UNDERSEA_TUNNEL', '해저터널'),
+	('ko_KR', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', '지상 유닛이 이 해안 타일을 횡단할 수 있습니다. 2개 이상의 육지 타일이 인접한 해안 타일에만 건설할 수 있습니다. 2개 또는 3개의 인접한 대지 타일이 있는 타일의 경우 대지 타일이 인접하지 않을 수 있습니다. 노동자에 의해 건설됩니다.[NEWLINE][NEWLINE] 터널을 이용하여 육지로 도시를 연결할 수 있지만, [COLOR_NEGATIVE_TEXT]육상교역로는 연결이 되지 않습니다.[ENDCOLOR]'),
+	('ko_KR', 'TXT_KEY_UNDERSEA_TUNNEL_TEXT', '지상유닛이 해저터널을 이용하여 연안타일을 가로질러 빠르고 안전하게 다른 지역으로 이동이 가능합니다.'),
+	('ko_KR', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL', '[LINK=IMPROVEMENT_UNDERSEA_TUNNEL]해저터널[/LINK] 건설'),
+	('ko_KR', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL_REC', '지상 유닛이 약간의 전투 패널티로 이 타일을 횡단할 수 있게 합니다.'),
+	('ko_KR', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL_HELP', '지상 유닛이 이 해안 타일을 횡단할 수 있습니다. 2개 이상의 육지 타일이 인접한 해안 타일에만 건설할 수 있습니다. 2개 또는 3개의 인접한 대지 타일이 있는 타일의 경우 대지 타일이 인접하지 않을 수 있습니다. 노동자에 의해 건설됩니다.[NEWLINE][NEWLINE] 터널을 이용하여 육지로 도시를 연결할 수 있지만, [COLOR_NEGATIVE_TEXT]육상교역로는 연결이 되지 않습니다.[ENDCOLOR]');
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 제노포자 배양지
@@ -895,14 +906,14 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILD_FW_BIOWELL_REC','타일의 식량, 문화, 골드 산출량이 증가합니다.'),
 -- 발전기
 ('TXT_KEY_IMPROVEMENT_FW_GENERATOR','발전기'),
-('TXT_KEY_IMPROVEMENT_FW_GENERATOR_TEXT','점점 더 많은 산업이 자동화됨에 따라, 그들은 이용 가능한 발전소와 발전기에 대한 전력 수요를 증가했습니다. 가장 고도로 산업화된 자동화된 지역은 산업에 전력을 공급하는 데 도움이 되는 수많은 보조 발전기를 개발하기 시작했습니다.[NEWLINE][NEWLINE]인접한 소도시, 산업단지, 첨단산업단지, 생명공학센터, 인공환경도시 시설의 [ICON_GOLD]골드가 +1 증가합니다.'),
+('TXT_KEY_IMPROVEMENT_FW_GENERATOR_TEXT','점점 더 많은 산업이 자동화됨에 따라, 그들은 이용 가능한 발전소와 발전기에 대한 전력 수요를 증가했습니다. 가장 고도로 산업화된 자동화된 지역은 산업에 전력을 공급하는 데 도움이 되는 수많은 보조 발전기를 개발하기 시작했습니다.[NEWLINE][NEWLINE]인접한 소도시, 산업단지, 연구단지, 생명공학센터, 인공환경도시 시설의 [ICON_GOLD]골드가 +1 증가합니다.'),
 ('TXT_KEY_IMPROVEMENT_FW_GENERATOR_HELP','해당 타일의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR], [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE] 인접한 소도시, 인공환경도시, 생명공학센터, 연구단지, 산업단지의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.'),
 ('TXT_KEY_BUILD_FW_GENERATOR','발전기 건설'),
 ('TXT_KEY_BUILD_FW_GENERATOR_HELP','인접한 모든 소도시, 연구단지, 산업단지, 생명공학센터, 인공환경도시의 [ICON_GOLD]골드가 +1 증가합니다.'),
 ('TXT_KEY_BUILD_FW_GENERATOR_REC','인접한 모든 소도시, 연구단지, 산업단지, 생명공학센터, 인공환경도시의[ICON_GOLD]골드가 +1 증가합니다.'),
 -- 해상발전기
 ('TXT_KEY_IMPROVEMENT_FW_GENERATOR_WATER','해상발전기'),
-('TXT_KEY_IMPROVEMENT_FW_GENERATOR_WATER_TEXT','점점 더 많은 산업이 자동화됨에 따라, 그들은 이용 가능한 발전소와 발전기에 대한 전력 수요를 증가했습니다. 가장 고도로 산업화된 자동화된 지역은 산업에 전력을 공급하는 데 도움이 되는 수많은 보조 발전기를 개발하기 시작했습니다.[NEWLINE][NEWLINE]인접한 소도시, 산업단지, 첨단산업단지, 생명공학센터, 인공환경도시 시설의 [ICON_GOLD]골드가 +1 증가합니다.'),
+('TXT_KEY_IMPROVEMENT_FW_GENERATOR_WATER_TEXT','점점 더 많은 산업이 자동화됨에 따라, 그들은 이용 가능한 발전소와 발전기에 대한 전력 수요를 증가했습니다. 가장 고도로 산업화된 자동화된 지역은 산업에 전력을 공급하는 데 도움이 되는 수많은 보조 발전기를 개발하기 시작했습니다.[NEWLINE][NEWLINE]인접한 소도시, 산업단지, 연구단지, 생명공학센터, 인공환경도시 시설의 [ICON_GOLD]골드가 +1 증가합니다.'),
 ('TXT_KEY_IMPROVEMENT_FW_GENERATOR_WATER_HELP','해당 타일의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR], [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE] 인접한 소도시, 인공환경도시, 생명공학센터, 연구단지, 산업단지의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.'),
 ('TXT_KEY_BUILD_FW_GENERATOR_WATER','발전기 건설'),
 ('TXT_KEY_BUILD_FW_GENERATOR_WATER_HELP','인접한 모든 소도시, 연구단지, 산업단지, 생명공학센터, 인공환경도시의 [ICON_GOLD]골드가 +1 증가합니다.'),
@@ -973,41 +984,27 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_RESOLUTION_FW_GENOME_PROJECT','인간 게놈 프로젝트'),
 ('TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP','[COLOR_POSITIVE_TEXT]인간 게놈 프로젝트[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 프로젝트에 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]유전자 공학[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.');
 
---===========================
--- Tech
---===========================
-UPDATE Language_ko_KR
-SET Text = '[COLOR_YELLOW]프로메테우스 우주 계획[ENDCOLOR]은 지구의 고갈되는 자원에서 새로운 무대로 옮기는 시작을 알립니다. 도시에서 우주선의 부품을 생산할 수 있습니다. 우주선이 완성되면 [ICON_VICTORY_SPACE][COLOR_POSITIVE_TEXT]과학 승리[ENDCOLOR]를 쟁취하게 됩니다![NEWLINE][NEWLINE]당신의 문명이 처음으로 프로젝트를 완료했다면 [ICON_CAPITAL]수도 근처에 [ICON_GREAT_SCIENTIST][COLOR_YELLOW]위대한 과학자[ENDCOLOR]가 1명 출현하고, 문명이 즉시 [ICON_GOLDEN_AGE]황금기를 맞이합니다.'
-WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_HELP';
 
-UPDATE Language_ko_KR
-SET Text = '[COLOR_YELLOW]프로메테우스 우주 계획[ENDCOLOR]은 지구를 넘어서 우주 경쟁의 시작점입니다. 프로메테우스 우주 계획을 완성하면 우주선 부품을 건조할 수 있게 됩니다. 각 문명은 각자 이 프로젝트를 완성해야만 우주선 부품을 건조할 수 있습니다. 당신이 가장 먼저 아폴로 우주 계획을 완성한다면, 위대한 과학자를 얻고 곧바로 황금기가 시작됩니다.'
-WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '인류의 탐험욕구와 지적 호기심은 그들을 지구를 넘어 우주로 이끌었습니다. 프로메테우스 우주계획은 이러한 인류의 우주 탐험 본능을 대표하는 핵심적인 기관입니다. 이 계획은 우리의 태양계와 가장 가까운 별, 알파 센타우리로의 항성간 여행을 꿈꾸는 인류의 결실입니다. 프로메테우스 프로그램은 그러한 목표를 실현하기 위해 연구, 기술개발, 우주선 제작 등 다양한 분야에서 활동을 진행하며 인류의 우주 진출을 선도하고 있습니다.이 탄생 배경은 20세기 중반부터 시작된 우주 경쟁에서 시작되었습니다. 이 시기, 각 나라는 자신들의 국력을 과시하고 기술력을 확보하기 위해 우주 연구에 힘을 쏟았습니다. 그리고 이러한 연구의 결과로 우리는 달에 인간을 보내고, 화성을 탐사하며, 가장 가까운 별인 알파 센타우리로 우주선을 보내는 기술을 개발하게 되었습니다.그러나, 이런 기술 개발이 순전히 과학적인 목표를 위한 것만은 아니었습니다. 기후 변화, 자원 부족, 인구 과밀 등 지구상의 여러 문제들로 인해 우리의 생존 공간을 넓히는 것도 중요한 목표가 되었습니다. 프로메테우스 우주계획은 이러한 목표를 실현하기 위한 중요한 단계로, 인류의 우주 진출을 이끌고 있습니다.오늘날, 항성간 여행의 가능성을 연구하고, 인류의 우주 존재를 확장하는 데 필요한 기술을 개발하며, 알파 센타우리로의 첫 항성간 여행을 준비하는 등의 중요한 역할을 수행하고 있습니다. 이러한 노력은 우리의 지식을 넓히고, 새로운 가능성을 탐구하며, 결국은 인류의 우주 진출을 가능하게 할 것입니다.'
-WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_PEDIA';
 
 --===========================
 -- Buidings
 --===========================
-
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- Aquaculture Lab
 ('TXT_KEY_BUILDING_FW_AQUACULTURE_LAB', '수산양식 연구소'),
-('TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_HELP', '도시 근처에  [ICON_RES_FISH] 물고기가 출현합니다. 도시의 해양타일의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], 해양자원의 [ICON_GOLD]골드 및 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설 할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]해저 채굴 플랫폼, 인공산호초[ENDCOLOR]가 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]투케이 푸드 기업을 설립하면[ENDCOLOR] [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.'),
+('TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_HELP', '도시 근처에  [ICON_RES_FISH] 물고기가 출현합니다. 도시의 해양타일의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], 해양자원의 [ICON_GOLD]골드 및 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]해저 채굴 플랫폼, 인공산호초[ENDCOLOR]가 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]투케이 푸드 기업을 설립하면[ENDCOLOR] [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.'),
 ('TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_STRATEGY', '수산양식 연구소를 건설하면 타일시설을 개발하고, 도시의 해양 타일과 오아시스의 골드 및 식량이 생산을 증가시킬 수 있습니다. '),
 ('TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_PEDIA', '농업과 축산업을 개량하기 위해 다양한 과학적 방법이 사용되었으므로 바다에 사는 동물의 가용성을 높이는 데에도 유사한 기술이 적용될 수밖에 없었습니다. ''양식''에 대한 다양한 실험은 바다의 다양한 동물로부터 얻을 수 있는 수확량을 극대화하는 다양한 방법으로 이어졌습니다.'),
 
 -- Seawater Artificial Reef
 ('TXT_KEY_BUILDING_FW_SEAWATER_ARTIFICIAL_REEF', '인공 산호초'),
-('TXT_KEY_BUILDING_FW_SEAWATER_ARTIFICIAL_REEF_HELP', '해양 타일의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_PEARLS]진주: +1[ICON_GOLD] +1[ICON_CULTURE][NEWLINE][ICON_RES_CRAB]게: +1[ICON_RESEARCH] +1[ICON_GOLD][NEWLINE][ICON_RES_CORAL]산호: +1[ICON_RESEARCH] +1[ICON_CULTURE][NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설 할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수산양식 연구소, 해저 채굴 플랫폼[ENDCOLOR]이 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]시빌 보석 기업을 설립하면[ENDCOLOR] [ICON_GOLDEN_AGE]황금기 점수가 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다.'),
+('TXT_KEY_BUILDING_FW_SEAWATER_ARTIFICIAL_REEF_HELP', '해양 타일의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_PEARLS]진주: +1[ICON_GOLD] +1[ICON_CULTURE][NEWLINE][ICON_RES_CRAB]게: +1[ICON_RESEARCH] +1[ICON_GOLD][NEWLINE][ICON_RES_CORAL]산호: +1[ICON_RESEARCH] +1[ICON_CULTURE][NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수산양식 연구소, 해저 채굴 플랫폼[ENDCOLOR]이 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]시빌 보석 기업을 설립하면[ENDCOLOR] [ICON_GOLDEN_AGE]황금기 점수가 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다.'),
 ('TXT_KEY_BUILDING_FW_SEAWATER_ARTIFICIAL_REEF_STRATEGY', '인공 산호초는 미래 시대 건물입니다. 도시의 과학과 문화를 향상시킵니다.'),
 ('TXT_KEY_BUILDING_FW_SEAWATER_ARTIFICIAL_REEF_PEDIA', '인공 산호초는 인간이 만든 수중 구조물로, 일반적으로 바닥이 없는 지역에서 해양 생물을 촉진하고, 침식을 통제하고, 선박 통행을 막고, 트롤망 사용을 막고, 서핑을 개선하기 위해 만들어졌습니다. 인공 암초 건설은 고대부터 시작되었습니다. 페르시아인들은 인공 암초를 건설하여 아라비아 해적을 저지하기 위해 티그리스 강 하구를 막았고, 제1차 포에니 전쟁 동안 로마인들은 시칠리아의 카르타고 항구 입구를 가로질러 암초를 건설하여 적함을 안에 가두고 카르타고인들을 섬. 오늘날 지구 온난화와 기후 변화로 인해 그레이트 배리어 리프에 있는 산호의 절반 이상이 파괴되었지만 문명이 이 사건을 바로잡고 바닷물의 연약한 생태계를 복원하는 데 도움을 줄 수 있습니다.'),
 
 -- Undersea Mining Platform
 ('TXT_KEY_BUILDING_FW_UNDERSEA_MINING', '해저 채굴 플랫폼'),
-('TXT_KEY_BUILDING_FW_UNDERSEA_MINING_HELP', '해양 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_OIL]석유: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][ICON_RES_WHALE]고래: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][ICON_RES_NANOMAT]나노물질: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][NEWLINE]이 도시로 향하는 [ICON_INTERNATIONAL_TRADE]교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설 할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수산양식 연구소, 인공 산호초[ENDCOLOR]가 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]센타우리 개발 기업을 설립하면[ENDCOLOR] [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.'),
+('TXT_KEY_BUILDING_FW_UNDERSEA_MINING_HELP', '해양 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_OIL]석유: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][ICON_RES_WHALE]고래: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][ICON_RES_NANOMAT]나노물질: [ICON_PRODUCTION]생산: +1[ICON_GOLD]골드 +1, [ICON_RESEARCH]과학 +1[NEWLINE][NEWLINE]이 도시로 향하는 [ICON_INTERNATIONAL_TRADE]교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수산양식 연구소, 인공 산호초[ENDCOLOR]가 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]센타우리 개발 기업을 설립하면[ENDCOLOR] [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.'),
 ('TXT_KEY_BUILDING_FW_UNDERSEA_MINING_STRATEGY', '해저 채굴 플랫폼은 미래 시대의 건물입니다. 도시의 생산과 골드 산출량을 향상시킵니다.'),
 ('TXT_KEY_BUILDING_FW_UNDERSEA_MINING_PEDIA', '점점 더 정교해지는 로봇 및 드론 기술은 이제 지구상에서 가장 위험한 환경에 접근할 수 있음을 의미했습니다. 해저는 항상 망간과 같은 잠재적인 자원 공급원이었지만 접근이 어려웠기 때문에 이러한 자원은 손대지 않았습니다. 이제 원격 제어 드론과 로봇을 통해 이러한 자원을 산업용으로 효율적으로 채굴할 수 있습니다. 그러나 이러한 산업 작업장의 존재와 폐기물 부산물은 종종 양식업 노력을 방해했습니다.'),
 
@@ -1031,10 +1028,11 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 -- Cyberpolice
 ('TXT_KEY_BUILDING_FW_CYBERPOLICE', '국제형사경찰기구'),
-('TXT_KEY_BUILDING_FW_CYBERPOLICE_HELP', '[ICON_SPY] 도시 보안이 +20 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'),
+('TXT_KEY_BUILDING_FW_CYBERPOLICE_HELP', '[ICON_SPY] 도시 보안이 +20 증가합니다. [NEWLINE][NEWLINE]도시국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: [ICON_SPY] 도시 보안 +1. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'),
 ('TXT_KEY_BUILDING_FW_CYBERPOLICE_STRATEGY', '경찰서는 적 스파이가 도시를 해칠 수 있는 속도를 늦춥니다. 디지털 경찰서를 건설하려면 도시에 경찰서가 있어야 합니다.'),
 ('TXT_KEY_BUILDING_FW_CYBERPOLICE_PEDIA', '사이버 경찰서는 디지털 세상에서 법과 질서를 유지합니다. 인터넷에 관련된 범죄, 특히 해킹, 사이버 금융 사기 등과 같은 고도로 기술적인 범죄를 감시하고, 수사하며, 예방하는 것입니다. 일반적으로 전문 컴퓨터 과학자, 해커, 범죄 수사 전문가 등으로 구성되어 있으며, 실시간 모니터링 시스템과 강력한 사이버 보안 도구를 사용하여 디지털 세계의 안전을 유지합니다. 이들은 범죄 행위를 탐지하고 분석하며, 그 행위를 수행한 범인들을 추적하고 적발하는 데 특화되어 있습니다.사이버 경찰서는 온라인 공간의 광범위한 영역을 감시하며, 이를 통해 네트워크 보안 위반, 개인 정보 침해, 사이버 사기 등 다양한 형태의 범죄로부터 사용자들을 보호합니다. 또한, 이들은 공공의 사이버 보안 인식을 높이는 교육 프로그램을 제공하고, 새로운 형태의 사이버 범죄를 대비하는 기술적 대응 방안을 개발하는 것을 중요한 임무로 여깁니다.'),
-
+('TXT_KEY_BUILDING_CYBER_POLICE_DUMMY', '구제형사경찰기구(더미)'),
+('TXT_KEY_BUILDING_CYBER_POLICE_DUMMY_HELP', '복사 수만큼 도시 보안이 +1씩 상승합니다. 스크립트로 개수를 제어합니다.'),
 -- Autoplant
 ('TXT_KEY_BUILDING_FW_AUTOPLANT', '자동생산시설'),
 ('TXT_KEY_BUILDING_FW_AUTOPLANT_HELP', '도시의 [ICON_CITIZEN]시민 5명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]자동생산시설[ENDCOLOR]의 [ICON_PRODUCTION]생산이 추가로 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]공장[ENDCOLOR]이 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_OIL]석유가 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR] 필요합니다.'),
@@ -1076,7 +1074,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_COMMERCE_SERVER_HELP', '도시의 [ICON_CITIZEN]시민 2명마다 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][ICON_GREAT_MERCHANT]위대한 상인의 출현율이 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE][ICON_GOLD]빈곤, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다. [NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]서버 허브[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]증권거래소[ENDCOLOR]가 있어야 하고 [COLOR_NEGATIVE_TEXT]연구 서버, 클라우드 서버, 엔터테인먼트 서버[ENDCOLOR]가 없어야 건설할 수 있습니다.'),
 ('TXT_KEY_BUILDING_FW_COMMERCE_SERVER_STRATEGY', '전자상거래 서버는 도시에서 골드와 위대한 상인의 출현율을 높입니다'),
 ('TXT_KEY_BUILDING_FW_COMMERCE_SERVER_PEDIA', '인터넷의 등장은 상품과 서비스가 전자적으로 교환되는 소위 디지털 경제의 급속한 성장을 가져왔습니다. 사람들은 더 이상 오프라인 매장을 방문할 필요가 없습니다. 전 세계 공급업체로부터 제품을 구매하여 집 앞까지 직접 배송받을 수 있게 되었습니다. 이러한 변화는 소비자의 라이프스타일을 변화시키는 동시에 기업들에게 광활한 신시장과 경쟁 구조를 창출했습니다. [NEWLINE] 전자상거래 서버는 제품 데이터베이스, 결제 시스템, 물류 추적 및 고객 서비스 네트워크를 통합하여 이러한 온라인 거래를 지원하는 핵심 인프라 역할을 합니다. 이 시스템은 안전한 결제, 효율적인 주문 처리 및 개인 맞춤형 제품 추천을 보장합니다. 초기 구현은 단순한 온라인 상점으로 기능했지만, 빅데이터 분석과 인공지능의 통합으로 이제는 포괄적인 글로벌 전자상거래 플랫폼으로 탈바꿈했습니다. 결과적으로 전자상거래 서버는 디지털 무역의 핵심 축이자 현대 경제의 지속적인 발전을 위한 기반 요소로 인정받고 있습니다.'),
--- [NEWLINE][NEWLINE]이 도시로 오는 [ICON_INTERNATIONAL_TRADE]교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가하고 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.
+
 -- Entertainment Server
 ('TXT_KEY_BUILDING_FW_ENTERTAINMENT_SERVER', '엔터테인먼트 서버'),
 ('TXT_KEY_BUILDING_FW_ENTERTAINMENT_SERVER_HELP', '도시의 [ICON_CITIZEN]시민 2명마다 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][ICON_GREAT_PEOPLE]위대한 문화 위인의 출현율이 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_CULTURE]무료,  [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]서버 허브[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]방송탑[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]연구 서버, 클라우드 서버, 전자상거래 서버[ENDCOLOR]가 없어야 건설할 수 있습니다.'),
@@ -1135,7 +1133,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 -- Hydrothermal Factory
 ('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY', '해양 바이오 산업단지'),
-('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_HELP', '연안 및 대양 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]바이오 공장[ENDCOLOR]의 [ICON_FOOD]식량[ENDCOLOR]이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]증가하고, 해양 바이오 산업단지[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 매턴 도시의 [ICON_PRODUCTION]생산의 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR]를 [ICON_FOOD]식량과 [ICON_RESEARCH]과학으로 각각 전환됩니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설 할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]심층시추공, 지열공장, 바이오공장[ENDCOLOR]이 없어야 건설할 수 있습니다.'),
+('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_HELP', '연안 및 대양 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]바이오 공장[ENDCOLOR]의 [ICON_FOOD]식량[ENDCOLOR]이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]증가하고, 해양 바이오 산업단지[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 매턴 도시의 [ICON_PRODUCTION]생산의 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR]를 [ICON_FOOD]식량과 [ICON_RESEARCH]과학으로 각각 전환됩니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]심층시추공, 지열공장, 바이오공장[ENDCOLOR]이 없어야 건설할 수 있습니다.'),
 ('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_STRATEGY', '공장 기반의 해양 공정 허브로, 연안 타일의 생산 효율을 끌어올리며 생산 일부를 식량·과학으로 전환해 장기 성장을 견인합니다. 해양 탐사선과 시험부두에서 축적한 데이터는 제노포자–금속 계면 연구로 이어지며, 후속 Xen–Al(제노–알루) 공정과 바이오-양자 주조소의 발판이 됩니다. 이 건물은 바이오 공장과 인프라·규정이 충돌하므로 서로 배타적입니다.'),
 ('TXT_KEY_BUILDING_FW_HYDROTHERMAL_FACTORY_PEDIA', '해양바이오산업단지는 연안·해양에서 확보한 미세조류, 해조류, 해양 미생물의 대사 산물을 산업 규모로 발굴·배양·정제하는 복합 거점입니다. 포토바이오리액터와 발효 라인, 막여과·크로마토그래피 기반의 다운스트림 공정, 화장품·식품용 GMP/HACCP 생산시설을 한곳에 통합하여 시제품부터 양산까지의 파이프라인을 구축합니다. 이곳에서 생산되는 핵심 품목은 기능성 화장품 원료(푸코이단·알긴산·카라기난, 항산화·항염 성분, 마이코스포린계 아미노산의 자외선 차단 모듈), 건강기능식품·영양소(EPA·DHA 등 오메가-3, 해양 폴리페놀), 의약·진단용 효소와 극한효소(저·고온 활성), 친환경 계면활성제와 항오염 생물막 제어소재 등이며, 파일럿 검증–표준화–품질관리 체계를 통해 글로벌 공급망에 연계합니다.[NEWLINE]동시에 단지는 신소재 개발의 전진기지로서 해양 유래 바이오폴리머(PHA/PHB 등 생분해성 플라스틱), 키틴/키토산과 해조류 셀룰로스, 알긴산 에어로젤, 홍합접착단백질 모사 바이오접착제, 저독성 방오 코팅을 비롯한 차세대 바이오매터리얼을 개발·상용화합니다. 영양염 회수·재순환, 이산화탄소 포집·이용, 무방류(Zero-Liquid-Discharge) 공정과 더불어 잘피·해조 ‘묘목장’ 조성 등 블루카본 복원 사업을 병행하여 지속가능성을 확보합니다. 학·연·산 협력과 표준·인증 체계를 통해 지역 경제와 수출 기반을 확장하며, 축적된 데이터와 공정 노하우는 차후의 고도 바이오공정과 첨단 소재 산업을 견인합니다.'),
 
@@ -1245,7 +1243,6 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_METROPLEX_HUB_STRATEGY', '복합도시 허브는 골드 생산량에 큰 도움이 되며 도시의 골드 구매 비용을 줄여줍니다.'),
 ('TXT_KEY_BUILDING_FW_METROPLEX_HUB_PEDIA', '복합도시 허브는 메가시티의 심장부에서 생성형 AI로 교통·상권·주거 패턴을 동시에 합성·조정합니다. 수요 예측과 실시간 피드가 결합되어 노선·신호·혼잡 완화 시나리오가 몇 초 만에 만들어지고, 팝업 상가·행사·야시장 같은 도시 이벤트도 자동 기획·배치됩니다. “프롬프트형 도시 계획” 덕분에 구역은 고정도가 아닌 제안 가능한 상태가 되고, 시민 피드백이 곧 다음 배치의 학습 자료가 됩니다.[NEWLINE][NEWLINE]허브는 규제와 공공성 규칙을 모델에 내장해 안전·소음·환경 한계를 넘지 않도록 스스로 제약을 준수합니다. 이렇게 생성된 도시 운영 시나리오는 교통 체증과 비효율을 줄이고, 문화·상업·여가가 시간대별로 최적 배치되는 “살아 있는 메트로플렉스”를 실현합니다.'),
 
-
 -- Enrichment Facility
 ('TXT_KEY_BUILDING_FW_ENRICHMENT_FACILITY', '고에너지 신소재연구소'),
 ('TXT_KEY_BUILDING_FW_ENRICHMENT_FACILITY_HELP', '[ICON_RES_URANIUM]우라늄 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]와 [ICON_RES_NANOMAT]나노물질 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE]문명의 [ICON_CITIZEN]시민이 최소 [COLOR_POSITIVE_TEXT]125[ENDCOLOR]명 이상이어야 합니다.[NEWLINE]이 건물은 문명당 [COLOR_YELLOW]최대 3[ENDCOLOR]개까지 건설할 수 있습니다.'),
@@ -1261,12 +1258,12 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- Setellite
 ('TXT_KEY_BUILDING_FW_SPACE_STATION', '우주반사판 전력위성'),
 ('TXT_KEY_BUILDING_FW_SPACE_STATION_HELP', '건설을 완성하면 [COLOR_POSITIVE_TEXT]15[ENDCOLOR]턴간 [ICON_HAPPINESS_1]국왕경축일을 맞이합니다. 도시를 공습하는 공중 유닛에게 주는 [ICON_STRENGTH]피해가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]전문가 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]이 더이상 [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행을 증가시키지 않습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다.[ENDCOLOR] 도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주선 발사센터[ENDCOLOR]가 있어야 건설할 수 있습니다.'),
-('TXT_KEY_BUILDING_FW_SPACE_STATION_STRATEGY', '우주 정거장은 랑그라주 상업지구, 공업단지, 연구단지와 함께 설치하여 과학, 생산 또는 골드를 높일 수 있습니다.'),
+('TXT_KEY_BUILDING_FW_SPACE_STATION_STRATEGY', '우주반사판 전력위성은 랑그라주 상업지구, 공업단지, 연구단지와 함께 설치하여 과학, 생산 또는 골드를 높일 수 있습니다.'),
 ('TXT_KEY_BUILDING_FW_SPACE_STATION_PEDIA', '우주반사판 전력위성은 대형 전개식 거울(반사막)과 집광·지향 제어 장치를 갖춘 궤도 플랫폼으로, 태양광을 지상 수광지대로 반사해 일사량을 보강하거나(겨울·야간·피크 시간대 보정), 궤도 내 발전 모듈에서 전력을 생산해 지상 레크테나로 무선 송전하는 하이브리드 체계를 말합니다. 위성은 태양동기·정지궤도 등에서 목표 지역을 따라 빔을 스케줄링하며, 반사밀도·고도·조사 시간대를 미세 조정해 농업·도시·산업 단지의 수요에 맞추어 에너지를 공급합니다. [NEWLINE][NEWLINE]전개형 반사막과 방열 패널, 위상 배열 지향기, 광학 안전 규약(항공/천문 블라인드 존, 생태 조사 한계치)이 표준으로 포함되며, 도시의 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주선 발사센터[ENDCOLOR]·네트워크와 연동되어 운영됩니다. 또한 모듈 확장에 따라 재료·열관리 연구(과학), 궤도 제조·정비(생산), 상업 송전·관광(골드) 등 다양한 역할을 수행해 지상의 전력망을 보조하고 에너지 안보와 회복력을 크게 높입니다.'),
 
 -- Transgenic Nursery
 ('TXT_KEY_BUILDING_FW_TRANSGENIC_NURSERY', '유전자개조 연구소'),
-('TXT_KEY_BUILDING_FW_TRANSGENIC_NURSERY_HELP', '[ICON_CITIZEN]시민이 증가할 때 사용한 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]를 다음 [ICON_CITIZEN]시민을 위해 사용할 수 있습니다.[COLOR:105:105:105:255](이 효과는 송수로와 중첩됩니다.)[ENDCOLOR]도시의 친환경 마을마다 [ICON_PEACE]신앙과 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 유전자개조 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]도시에서 생산하는 지상 유닛에 [COLOR_PLAYER_PURPLE]수륙양용[ENDCOLOR] 승급을 부여합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]제노포자 배양 연구소, 유전자공학 연구소[ENDCOLOR]가 있어야하고, [COLOR_NEGATIVE_TEXT]무인관리기지, 항공우주 복합시설[ENDCOLOR]이 없어야 건설할 수 있습니다.'),
+('TXT_KEY_BUILDING_FW_TRANSGENIC_NURSERY_HELP', '[ICON_CITIZEN]시민이 증가할 때 사용한 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]를 다음 [ICON_CITIZEN]시민을 위해 사용할 수 있습니다.[COLOR:105:105:105:255](이 효과는 송수로와 중첩됩니다.)[ENDCOLOR]도시의 친환경 마을마다 [ICON_PEACE]신앙과 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 유전자개조 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]도시에서 생산하는 지상 유닛에 [COLOR_PLAYER_PURPLE]유전자 강화[ENDCOLOR] 승급을 부여합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]제노포자 배양 연구소, 유전자공학 연구소[ENDCOLOR]가 있어야하고, [COLOR_NEGATIVE_TEXT]무인관리기지, 항공우주 복합시설[ENDCOLOR]이 없어야 건설할 수 있습니다.'),
 ('TXT_KEY_BUILDING_FW_TRANSGENIC_NURSERY_STRATEGY', '과학 및 유기체 유닛 생산 속도를 높입니다. 도시에서 생산한 모든 유닛은 약탈 시 행동력이 소모되지 않습니다.'),
 ('TXT_KEY_BUILDING_FW_TRANSGENIC_NURSERY_PEDIA', '기존 생태계에서 유전적으로 변형된 식물과 동물의 확산에 대한 연구는 유전자 변형 및 공학의 개선과 결합하여 개별 유기체를 돕는 것 이상으로 전체 생태계로 확장하려는 노력을 증가시킵니다. 자연적으로 발생하는 것보다 더 효과적으로 성장하고 더 생산적인 새로운 자급자족 생태계를 개발하기 위한 예비 테스트 환경으로 형질전환 종묘장을 사용했습니다. 일단 만족스러운 결과를 얻으면 이 새로운 생태계가 야생에 도입되어 기존 생태계를 빠르게 대체했습니다.'),
 
@@ -1309,19 +1306,19 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- Research Module
 ('TXT_KEY_BUILDING_FW_RESEARCH_MODULE', '라그랑주-연구단지'),
 ('TXT_KEY_BUILDING_FW_RESEARCH_MODULE_HELP', '[COLOR_YELLOW][ICON_GREAT_SCIENTIST]위대한 과학자[ENDCOLOR]가 1명 출현합니다. [NEWLINE] 도시의 [ICON_VP_SCIENTIST] 과학자의 [ICON_RESEARCH]과학이[COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RESEARCH]문맹, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다.[ENDCOLOR] 도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주반사판 전력위성[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]라그랑주-공학단지, 라그랑주-상업지구[ENDCOLOR]가 없어야건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다. '),
-('TXT_KEY_BUILDING_FW_RESEARCH_MODULE_STRATEGY', '도시의 과학을 향상시키기 위한 연구 모듈을 건설하십시오.'),
+('TXT_KEY_BUILDING_FW_RESEARCH_MODULE_STRATEGY', '도시의 과학을 향상시키기 위한 연구단지를 건설하십시오.'),
 ('TXT_KEY_BUILDING_FW_RESEARCH_MODULE_PEDIA', '우주여행과 준궤도 생활권이 상시 운영되자, 라그랑주-연구단지는 지상 규제·기후 리스크에서 벗어난 “궤도 연구 특구”로 자리 잡았습니다. 미세중력·초청정 진공·급격한 열환경을 실험 변수로 활용해 단백질 결정화, 초전도/양자 재료, 복합재 경계면, 방사선 생물학 등 지상에서 구현하기 어려운 시험을 수행합니다. 모듈은 검역·생물안전 구획과 자동화 합성 라인을 갖추고, 지상 연구단지와 실시간 데이터 동기화를 유지합니다.[NEWLINE][NEWLINE]이러한 궤도 연구 특구는 전염병·분쟁·환경오염·재난 정전의 영향을 최소화하며, 궤도 전력·열관리 설비 및 물류 도킹을 통해 24시간 연속 실험이 가능해집니다.'),
 
 -- Engineering Module
 ('TXT_KEY_BUILDING_FW_ENGINEERING_MODULE', '라그랑주-공학단지'),
 ('TXT_KEY_BUILDING_FW_ENGINEERING_MODULE_HELP', '[COLOR_YELLOW][ICON_GREAT_ENGINEER]위대한 기술자[ENDCOLOR]가 1명 출현합니다. [NEWLINE] 도시의 [ICON_VP_ENGINEER] 기술자의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다.[ENDCOLOR] 도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주반사판 전력위성[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]라그랑주-상업지구, 라그랑주-연구단지[ENDCOLOR]가 없어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다. '),
-('TXT_KEY_BUILDING_FW_ENGINEERING_MODULE_STRATEGY', '도시의 생산 산출량을 늘리기 위한 공학 모듈을 건설하십시오.'),
+('TXT_KEY_BUILDING_FW_ENGINEERING_MODULE_STRATEGY', '도시의 생산 산출량을 늘리기 위한 공학단지를 건설하십시오.'),
 ('TXT_KEY_BUILDING_FW_ENGINEERING_MODULE_PEDIA', '라그랑주-공한단지는 “궤도 공업 지구”로 설계된 준궤도 제조·정비 단지입니다. 진공·무중력 환경을 활용해 초고순도 광섬유(ZBLAN), 웨이퍼 에피택시, 합금 응고 제어, 금속 적층제조 및 초정밀 표면 가공을 수행하며, 위성 서비스·잔해(데브리) 제거·로봇 도킹 등 궤도 공정도 처리합니다. 모듈은 대형 전개식 작업실과 로봇 암, 재료·부품 저장고, 열·전력 버스에 연결된 도크를 갖추고, 지상 산업단지와 표준화된 부품·품질 규격을 공유합니다.[NEWLINE][NEWLINE]지진·폭우·폭염·정전 같은 지상 변수에서 자유로운 공업 지구는 일정과 품질 편차를 줄이고, 장주기의 하이엔드 제조를 안정적으로 뒷받침합니다.'),
 
 -- Comm Module
 ('TXT_KEY_BUILDING_FW_COMM_MODULE', '라그랑주-상업지구'),
 ('TXT_KEY_BUILDING_FW_COMM_MODULE_HELP', '[COLOR_YELLOW][ICON_GREAT_MERCHANT]위대한 상인[ENDCOLOR]이 1명 출현합니다. [NEWLINE] 도시의 [ICON_VP_MERCHANT] 상인의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_GOLD]빈곤, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다.[ENDCOLOR] 도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주반사판 전력위성[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]라그랑주-공학단지, 라그랑주-연구단지[ENDCOLOR]가 없어야건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다. '),
-('TXT_KEY_BUILDING_FW_COMM_MODULE_STRATEGY', '도시의 부를 늘리기 위한 통신 모듈을 건설하십시오.'),
+('TXT_KEY_BUILDING_FW_COMM_MODULE_STRATEGY', '도시의 부를 늘리기 위한 상업지구를 건설하십시오.'),
 ('TXT_KEY_BUILDING_FW_COMM_MODULE_PEDIA', '라그랑주-상업지구는 관광·금융·미디어가 결합된 “궤도 상업 지구”입니다. 관측 돔과 체류 캡슐, 초시야 통신/중계 장비, 면세·컨벤션 시설이 결합해 우주여행과 MICE(회의·전시)를 동시에 운영하며, 저지연 직시(LOS) 네트워크로 지상 도시권과 서비스를 연계합니다. 상업 지구는 탄소중립 전력과 폐기물 순환 시스템, 보안·검역·통관 프로토콜을 갖춰 글로벌 고객을 상시 수용합니다.[NEWLINE][NEWLINE]기후 재난·치안·규제 변동에 흔들리기 쉬운 지상 상권과 달리, 준궤도의 상업 지구는 안정적인 전력·환경·보안 하에 새로운 수요(궤도 관광, 실시간 콘텐츠 제작, 데이터 중계)를 창출해 도시 경제를 다변화합니다.'),
 
 -- Aerospace Complex
@@ -1335,6 +1332,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_ECTOGENESIS_POD_HELP', '문명의 총 군사 유닛 10개마다 도시의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]증가합니다. 바이오생명체유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR]제공합니다.[COLOR:105:105:105:255](상한 200 유닛)[ENDCOLOR] [NEWLINE][NEWLINE]도시에서 생산하는 근접, 기마 및 비행선유닛에 [COLOR_PLAYER_PURPLE]유전자개조 승급[ENDCOLOR]을 부여합니다.[NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]유전자개조 연구소[ENDCOLOR]가 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_ADN_FUNGUS]제노포자 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다. '),
 ('TXT_KEY_BUILDING_FW_ECTOGENESIS_POD_STRATEGY', '도시에서 생산하는 근접, 기마 및 비행선유닛에 유전자개조 승급을 부여합니다.'),
 ('TXT_KEY_BUILDING_FW_ECTOGENESIS_POD_PEDIA', '인공적으로 조작된 유전자 키메라의 생성과 대량 생산이 보편화됨에 따라 작업 전용 시설도 일반화되었습니다. 바이오생명체 생산시설의 배양 과정 중에도 키메라의 유전자개조를 허용하여 다양한 요구 사항을 충족하도록 동적으로 조정할 수 있기 때문에 이러한 시설에서 가장 중요한 구성 요소였습니다. 이러한 시설은 종종 생물학적 변형 센터로서 이중 임무를 수행했습니다. 포드는 나중에 더 정교한 출산 포드에 비해 더 기초적이고 대규모 수정만 수행할 수 있었지만 포드는 인간도 변형하는 데 사용될 수 있기 때문입니다.'),
+('TXT_KEY_BUILDING_MIL10_STACK_DUMMY', '밀리터리 x10(더미)'),
 
 -- Mass Digester
 ('TXT_KEY_BUILDING_FW_MASS_DIGESTER', '무기폐기물재활용소'),
@@ -1347,6 +1345,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_BIOMOD_TANK_HELP', '문명의 총 군사 유닛 10개마다 [ICON_GREAT_GENERAL]위대한 장군, [ICON_GREAT_ADMIRAL]위대한제독의 점수가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_GOLDEN_AGE]황금기 점수가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]씩 증가합니다.[COLOR:105:105:105:255](상한 200 유닛)[ENDCOLOR][NEWLINE]클론 트루퍼, 생체강화 보병, 슈퍼솔져, 바이오 트루퍼 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]도시에서 생산하는 화약 유닛에 [COLOR_PLAYER_PURPLE]바이오모드 승급[ENDCOLOR]을 부여합니다.[NEWLINE][NEWLINE][ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]임플란트 시술소[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]제노포자 배양 연구소[ENDCOLOR]가 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_ADN_FUNGUS]제노포자 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
 ('TXT_KEY_BUILDING_FW_BIOMOD_TANK_STRATEGY', '클론트루퍼, 생체강화 보병, 바이오트루퍼, 슈퍼솔져의 생산을 증가시킵니다. 근접, 기마, 화약, 정찰 유닛은 바이오모드 승급을 부여받습니다. 임플란트 시술소가 필요합니다.'),
 ('TXT_KEY_BUILDING_FW_BIOMOD_TANK_PEDIA', '임플란트 시술소는 어느 정도의 생체 변형을 허용했지만 더 광범위한 적응에는 더 정교한 장비가 필요했습니다. 바이오 강화 시설은 더 광범위한 인체 변형을 수행했으며, 일반적으로 대상을 서스펜션 탱크에 담그어 더 복잡한 임플란트 및 전신 변형을 수행할 수 있도록 했습니다. 일반적인 바이오 모드에는 단기 재생 기능을 제공하는 자극제와 전투 능력을 향상시키는 강화 모드가 포함됩니다.'),
+('TXT_KEY_BUILDING_DUMMY_BIOMOD_POP_DUMMY', '바이오모드 인구(더미)'),
+
 -- Cyberclinic
 ('TXT_KEY_BUILDING_FW_CYBERCLINIC', '신경양자치료시스템'),
 ('TXT_KEY_BUILDING_FW_CYBERCLINIC_HELP', '[ICON_GREAT_SCIENTIST]위대한 과학자의 출현율이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. [NEWLINE]모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]의학연구소[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]휴머노이드 허브[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. 전역 [ICON_HAPPINESS_1]행복이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR]증가합니다. [NEWLINE][NEWLINE]레비아탄,호버탱크, 크롤러 SAM 발사대를 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]의학연구소[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]휴머노이드 허브[ENDCOLOR]가 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
@@ -1354,10 +1354,10 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_CYBERCLINIC_PEDIA', '양자 치료기는 전통적 수술·의약을 넘어, 양자 응집 영상과 얽힘 단층 촬영으로 인체를 분자·세포 단위까지 비침습적으로 스캔한 뒤 즉시 치료 프로토콜을 합성하는 차세대 의료 설비입니다. 펨토초 펄스와 정밀 자장장을 이용해 종양·감염·미세 출혈을 표적 분해하고, 프로그램된 엑소좀·나노의료군이 손상 조직의 단백질 접힘을 복구하며 유전자 편집으로 선천성 결함과 돌연변이를 교정합니다. 장기 이식 없이도 조직을 흉터 없이 재생하고, 방사선·독소 피해를 빠르게 역전시킬 수 있습니다.[NEWLINE][NEWLINE]신경 양자치료기는를 중심으로 삼아, 신경 보철·감각 확장 같은 사이버네틱스 개선과 정밀 재생의학을 통합 제공합니다. 트리아지 AI가 우선순위를 배정하고, 진단–치료–회복이 한 실내에서 연속 수행되므로 대기 시간이 극적으로 줄어듭니다. 기록·감사·동의 절차를 통해 오남용을 방지하는 한편, 응급 재난 시에는 이동형 장치로 현장 배치가 가능하여 도시 보건의 회복력과 형평성을 크게 끌어올립니다.'),
 
 -- Digital Police
-('TXT_KEY_BUILDING_FW_DIGITAL_POLICE', '디지털 경찰서'),
+('TXT_KEY_BUILDING_FW_DIGITAL_POLICE', '빅브라더 관제소'),
 ('TXT_KEY_BUILDING_FW_DIGITAL_POLICE_HELP', '[ICON_SPY] 도시 보안이 +10 증가하고, [ICON_CITIZEN] 시민 둘마다 1씩 추가로 증가합니다.[NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'),
-('TXT_KEY_BUILDING_FW_DIGITAL_POLICE_STRATEGY', '디지털 경찰은 적 스파이가 도시를 해칠 수 있는 속도를 늦춥니다. 디지털 경찰을 구축하기 위해서는 도시에 자치 경찰이 있어야 합니다.'),
-('TXT_KEY_BUILDING_FW_DIGITAL_POLICE_PEDIA', '디지털 경찰서는 가상세계의 특수한 공간으로, 인공지능과 인간 사용자 모두의 데이터를 보호하는 역할을 하는 고도로 진화된 보안 시스템입니다. 이 건물은 일반적인 사이버 경찰서를 넘어서, 물리적 세계와 디지털 세계 양쪽 모두에서 범죄를 예방하고 처벌하는 기능을 수행합니다. 디지털 경찰서의 핵심 기능은 두 가지입니다. 첫째, 고급 인공지능 기술을 이용하여 가상 세계에서의 프로그램 해킹을 막습니다. 이를 통해 인공지능이나 프로그램의 부정적인 조작을 방지하고, 사용자가 가상 세계에서 안전하게 활동할 수 있도록 보장합니다. 둘째, 디지털 경찰서는 인간 사용자의 개인정보 보호에도 특화되어 있습니다. 가상 세계에 연결된 사용자의 정보가 노출되거나 불법적으로 사용되는 것을 방지하기 위해, 다양한 보안 방법을 사용하여 사용자의 데이터를 안전하게 보호합니다. 이러한 보안 방법에는 강력한 암호화, 실시간 모니터링, 그리고 사용자의 정보를 위협하는 활동을 자동으로 탐지하고 차단하는 고급 시스템이 포함됩니다. 디지털 경찰서는 그 자체로도 훌륭한 보안 시스템이지만, 더불어 사용자들이 자신의 데이터를 안전하게 관리하고 보호하는 데 필요한 교육도 제공합니다. 사용자가 자신의 정보를 어떻게 안전하게 유지할 수 있는지, 해킹 시도를 어떻게 인식하고 대응할 수 있는지에 대한 지식을 배울 수 있는 프로그램이 구비되어 있습니다.'),
+('TXT_KEY_BUILDING_FW_DIGITAL_POLICE_STRATEGY', '빅브라더 관제소(디지털 치안 시스템)는 적 스파이가 도시를 해칠 수 있는 속도를 늦춥니다. 빅브라더 관제소(디지털 치안 시스템)을 구축하기 위해서는 도시에 국제형사경찰기구가 있어야 합니다.'),
+('TXT_KEY_BUILDING_FW_DIGITAL_POLICE_PEDIA', '빅브라더 관제소(디지털 치안 시스템)는 가상세계의 특수한 공간으로, 인공지능과 인간 사용자 모두의 데이터를 보호하는 역할을 하는 고도로 진화된 보안 시스템입니다. 이 건물은 일반적인 경찰서를 넘어서, 물리적 세계와 디지털 세계 양쪽 모두에서 범죄를 예방하고 처벌하는 기능을 수행합니다. 빅브라더 관제소의 핵심 기능은 두 가지입니다. 첫째, 고급 인공지능 기술을 이용하여 가상 세계에서의 프로그램 해킹을 막습니다. 이를 통해 인공지능이나 프로그램의 부정적인 조작을 방지하고, 사용자가 가상 세계에서 안전하게 활동할 수 있도록 보장합니다. 둘째, 디지털 경찰서는 인간 사용자의 개인정보 보호에도 특화되어 있습니다. 가상 세계에 연결된 사용자의 정보가 노출되거나 불법적으로 사용되는 것을 방지하기 위해, 다양한 보안 방법을 사용하여 사용자의 데이터를 안전하게 보호합니다. 이러한 보안 방법에는 강력한 암호화, 실시간 모니터링, 그리고 사용자의 정보를 위협하는 활동을 자동으로 탐지하고 차단하는 고급 시스템이 포함됩니다. 빅브라더 감시국은 그 자체로도 훌륭한 보안 시스템이지만, 더불어 사용자들이 자신의 데이터를 안전하게 관리하고 보호하는 데 필요한 교육도 제공합니다. 사용자가 자신의 정보를 어떻게 안전하게 유지할 수 있는지, 해킹 시도를 어떻게 인식하고 대응할 수 있는지에 대한 지식을 배울 수 있는 프로그램이 구비되어 있습니다.'),
 
 -- Fusion Reactor
 ('TXT_KEY_BUILDING_FW_FUSION_PLANT', '핵융합 반응로'),
@@ -1373,9 +1373,9 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 -- Orbital Habitat
 ('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT', '우주궤도 식량재배시설'),
-('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT_HELP', '[ICON_VP_SCIENTIST] 과학자, [ICON_VP_ENGINEER] 기술자, [ICON_VP_MERCHANT] 상인 1명마다 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 증가합니다. 우주정거장의 연구모듈의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], 공학모듈의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], 상업모듈의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]씩 증가합니다. [NEWLINE][NEWLINE]도시에 건물을 건설할때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]전문가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]명이 더이상 [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행을 증가시키지 않습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항공우주 복합시설[ENDCOLOR]이 있어야 건설할 수 있습니다. [NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
+('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT_HELP', '[ICON_VP_SCIENTIST] 과학자, [ICON_VP_ENGINEER] 기술자, [ICON_VP_MERCHANT] 상인 1명마다 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 증가합니다. 라그랑주-연구단지의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], 공학단지의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], 상업지구의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]씩 증가합니다. [NEWLINE][NEWLINE]도시에 건물을 건설할때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]전문가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]명이 더이상 [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행을 증가시키지 않습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]핵무기로 파괴되지 않는 건물입니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항공우주 복합시설[ENDCOLOR]이 있어야 건설할 수 있습니다. [NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
 ('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT_STRATEGY', '생산하기 위해 매우 비용이 많이 들지만 우주궤도 식량재비시설을 통해 최대 인구 수를 크게 확장합니다.'),
-('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT_PEDIA', '인공 식량 재배의 궁극적인 방법인 우주궤도 식량재시설을 건설하여 우주에서 완전히 자립적인 농업 환경을 구축합니다. 대부분의 초기 우주 정거장은 엄청난 비용을 들여 행성 표면에서 운반되는 식량 공급에 의존했지만, 궤도 서식지는 우주 정거장이 거의 자급자족할 수 있도록 허용하여 그곳에서 일하는 사람들이 필요로 하는 식량의 대부분을 재배했습니다. 초기 서식지에서 생산된 식품은 마이코프로테인 보충제보다 조금 나았지만 시간이 지남에 따라 수경재배 및 수경재배 기술을 사용하여 승무원을 유지하는 데 도움이 되는 다양한 채소와 식물을 재배하면서 점점 더 발전되고 정교해졌습니다.'),
+('TXT_KEY_BUILDING_FW_ORBITAL_HABITAT_PEDIA', '인공 식량 재배의 궁극적인 방법인 우주궤도 식량재시설을 건설하여 우주에서 완전히 자립적인 농업 환경을 구축합니다. 대부분의 초기 라그랑주 시설은 엄청난 비용을 들여 행성 표면에서 운반되는 식량 공급에 의존했지만, 궤도 서식지는 라그랑주 거주시설에서 거의 자급자족할 수 있도록 허용하여 그곳에서 일하는 사람들이 필요로 하는 식량의 대부분을 재배했습니다. 초기 서식지에서 생산된 식품은 마이코프로테인 보충제보다 조금 나았지만 시간이 지남에 따라 수경재배 및 수경재배 기술을 사용하여 승무원을 유지하는 데 도움이 되는 다양한 채소와 식물을 재배하면서 점점 더 발전되고 정교해졌습니다.'),
 
 -- Terraforming Station
 ('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION', '유전자 가속 센터'),
@@ -1540,7 +1540,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_FLOATINGISLANDS_HELP', '문명의 모든 도시에서 공중 유닛과 공중부양 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다. 문명의 모든 [COLOR_POSITIVE_TEXT]인공환경도시[ENDCOLOR] 타일의 [ICON_RESEARCH]과학과 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]우주반사판 전력위성[ENDCOLOR]당 [ICON_CULTURE]문화, [ICON_GOLD]골드, [ICON_PRODUCTION]생산, [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]씩 증가합니다.[COLOR:105:105:105:255](상한 15개)[ENDCOLOR][NEWLINE][NEWLINE]모든 [COLOR_YELLOW] 도시[ENDCOLOR]의 체력이 [COLOR_POSITIVE_TEXT]50[ENDCOLOR], [ICON_STRENGTH]방어력이 [COLOR_POSITIVE_TEXT]10[ENDCOLOR], 군사 유닛 보급한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다. [NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]개가 필요합니다.'),
 ('TXT_KEY_BUILDING_FW_FLOATINGISLANDS_QUOTE', '[NEWLINE]비판할 수 없다면 그다지 놀라운 일이 아닐 것입니다. 비판이 없는 것에 전념하고 있습니까?[NEWLINE]'),
 ('TXT_KEY_BUILDING_FW_FLOATINGISLANDS_PEDIA', '라퓨타는 성층권 상에 부양·정착지화된 상온초전도 기반 플랫폼 군도입니다. 상온 초전도체가 등장했어도 전 지구를 잇는 초전도 전력망은 냉각·진동·지질·해저 구간 등 공학적 병목으로 실현 비용이 막대합니다. 또한 핵융합 상용화를 위해서는 장시간 플라즈마 연속 운전, 중성자에 의한 재료 열화, 열관리·삼중수소 연계 등 수많은 전단계가 필요합니다. 이에 핵심 도시 시설을 성층권의 저난류·저오염 ‘안전 구역’으로 올리고, 우주반사판 전력위성과 직접 결합하는 방식을 채택했습니다. 낮에는 위성에서 반사·집광된 에너지를 거의 무손실로 수광·저장하고, 밤과 피크 시간대에는 지상 레크테나·케이블로 가변 송전을 수행해 부하를 평준화합니다.[NEWLINE][NEWLINE]초전도 전력전자와 고밀도 ESS의 발전은 라퓨타의 에너지 버퍼를 기존 대비 대폭 소형화·경량화했고, 성층권의 저온·건조 환경과 복사 방열을 활용해 냉각 효율을 높였습니다. 고도 분리로 물리적·사이버 보안 위험이 낮아지고, 재난·홍수·폭염·정전의 영향을 거의 받지 않습니다. 라퓨타는 전력망 안정화(주파수 제어·피크 컷), 우주반사판 전력위성 운용, 핵융합 전단계 연구(플라즈마·재료·열관리)를 한데 묶는 ‘상공 에너지 수도’로 기능하며, 지상 도시의 탄소중립과 에너지 안보를 동시에 견인하는 혁신적 해법으로 자리매김했습니다.'),
-('TXT_KEY_BUILDING_FW_FLOATINGISLANDS_DUMMY', 'FW: 라퓨타 더미'),
+('TXT_KEY_BUILDING_FW_FLOATINGISLANDS_DUMMY', '라퓨타 도시'),
 -- Nephilim Gene Template → HIVE (bio-drone wonder)
 ('TXT_KEY_BUILDING_FW_NEPHILIM_GENE_TEMPLATE2', '하이브'),
 ('TXT_KEY_BUILDING_FW_NEPHILIM_GENE_TEMPLATE2_HELP', '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]유통 허브[ENDCOLOR]를 무료로 제공합니다. [COLOR_PLAYER_NETHERLANDS_BACKGROUND]제노포자 배양소[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]유전자개조 연구단지[ENDCOLOR]의 [ICON_FOOD]식량과 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]증가합니다. 전역 [ICON_HAPPINESS_1]행복이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]증가합니다. [NEWLINE][NEWLINE]도시에서 유전자 계열 유닛[COLOR:105:105:105:255](근접, 화약, 기마, 비행선유닛)[ENDCOLOR]을 생산할 때 [ICON_PRODUCTION]생산 보너스를 얻고, [COLOR_PLAYER_PURPLE]포식 본능[ENDCOLOR] 승급을 부여합니다.[NEWLINE][NEWLINE]도시에 [COLOR_NEGATIVE_TEXT]스카이넷[ENDCOLOR], [COLOR_NEGATIVE_TEXT]우주궤도 정제소[ENDCOLOR]가 없어야 건설할 수 있습니다. 이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.  [NEWLINE][NEWLINE][ICON_RES_ADN_FUNGUS]제노포자 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
@@ -1565,7 +1565,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_ORBITAL_REFINERY', '우주궤도 정제소'),
 ('TXT_KEY_BUILDING_FW_ORBITAL_REFINERY_HELP', '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]복합도시 허브[ENDCOLOR]를 무료로 제공합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항공우주 복합시설, 나노물질 제조소[ENDCOLOR]의 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE]우주 전문화 계열 유닛[COLOR:105:105:105:255](정찰, 화약, 전투기, 폭격기, 항공모함)[ENDCOLOR]을 [ICON_PRODUCTION]생산할 때 [ICON_PRODUCTION]생산보너스를 제공하고 [COLOR_PLAYER_PURPLE]우주전문가[ENDCOLOR] 승급을 부여합니다. [NEWLINE][NEWLINE][ICON_RES_NANOMAT]나노물질을 [COLOR_POSITIVE_TEXT]12개[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다. [NEWLINE][NEWLINE]도시에 [COLOR_NEGATIVE_TEXT]하이브, 스카이넷[ENDCOLOR]이 없어야 건설할 수 있습니다. 이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'),
 ('TXT_KEY_BUILDING_FW_ORBITAL_REFINERY_QUOTE', '[NEWLINE]우리는 다음 임무 세기 동안 대부분의 플래닛 산업이 네소스 프라임 및 기타 궤도 시설로 행성 외부로 이동될 것으로 추정합니다. 많은 산업이 우주에서 사용할 수 있는 저중력 환경, 특히 유전자 조작 미생물과 관련된 환경으로부터 큰 혜택을 받을 것입니다.[NEWLINE] - CEO Nwabudike Morgan, The Centauri Monopoly[NEWLINE]'),
-('TXT_KEY_BUILDING_FW_ORBITAL_REFINERY_PEDIA', '지구 기후변화와 자원 고갈이 심해졌습니다. 특히 석유 및 기타 유기 화합물과 같은 원료의 출처가 점점 부족해짐에 따라 이를 정제하는 데 도움이 되는 새로운 기술이 개발되었습니다. 변환기는 이러한 요구의 대부분을 채울 수 있었지만 가장 주목할만한 성과 중 하나는 Nessus Orbital Refinery의 건설이었습니다. L4 라그랑주 포인트에 위치하여 다양한 탄소 기반 나노 물질을 생산하기 위해 포획된 탄소질 소행성을 처리했습니다. 그것의 출력의 대부분은 궤도 개발에 사용되어 새로운 우주 정거장 건설을 돕고 태양계 탐사를 위한 발판을 마련했습니다. 그러나 소행성 벨트에 더 새롭고 더 효율적인 시설이 건설되어 소행성을 지구 궤도로 운반해야 하는 다소 위험한 과정을 피하면서 결국 태양계의 동일한 탐사 및 식민지화가 네소스 플랫폼을 무색하게 만들었습니다. Nessus Orbital Refinery는 2067년에 비활성화되었지만 여전히 우주 식민지 초기의 유물로 유지되고 있습니다.'),
+('TXT_KEY_BUILDING_FW_ORBITAL_REFINERY_PEDIA', '지구 기후변화와 자원 고갈이 심해졌습니다. 특히 석유 및 기타 유기 화합물과 같은 원료의 출처가 점점 부족해짐에 따라 이를 정제하는 데 도움이 되는 새로운 기술이 개발되었습니다. 변환기는 이러한 요구의 대부분을 채울 수 있었지만 가장 주목할만한 성과 중 하나는 Nessus Orbital Refinery의 건설이었습니다. L4 라그랑주 포인트에 위치하여 다양한 탄소 기반 나노 물질을 생산하기 위해 포획된 탄소질 소행성을 처리했습니다. 그것의 출력의 대부분은 궤도 개발에 사용되어 새로운 라그랑주 거주지 건설을 돕고 태양계 탐사를 위한 발판을 마련했습니다. 그러나 소행성 벨트에 더 새롭고 더 효율적인 시설이 건설되어 소행성을 지구 궤도로 운반해야 하는 다소 위험한 과정을 피하면서 결국 태양계의 동일한 탐사 및 식민지화가 네소스 플랫폼을 무색하게 만들었습니다. Nessus Orbital Refinery는 2067년에 비활성화되었지만 여전히 우주 식민지 초기의 유물로 유지되고 있습니다.'),
 -- Sky City → 창세 오라토리움 (오페라 원더 재창조)
 ('TXT_KEY_BUILDING_FW_SKYCITY', '창세 오라토리움'),
 ('TXT_KEY_BUILDING_FW_SKYCITY_HELP', '[COLOR_YELLOW][ICON_GREAT_WRITER]위대한 음악가[ENDCOLOR]1명이 출현합니다. [NEWLINE]도시의 [ICON_CITIZEN]시민 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]명마다 [ICON_CULTURE]문화와 [ICON_RELIGION]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 총 [ICON_CULTURE]문화의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]를 [ICON_GOLD]골드와 [ICON_TOURISM]관광으로 전환합니다.전역 [ICON_HAPPINESS_1]행복이 [COLOR_POSITIVE_TEXT]7[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]테마보너스: [ICON_PEACE]신앙 [COLOR_POSITIVE_TEXT]5[ENDCOLOR], [ICON_GOLDEN_AGE]황금기 점수 [COLOR_POSITIVE_TEXT]5[ENDCOLOR].[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다. [NEWLINE][NEWLINE][ICON_RES_ADN_FUNGUS]제노포자 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다.'),
@@ -1615,6 +1615,6 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_GENOME_PROJECT_PEDIA', '인간 게놈 프로젝트는 인간 DNA에 존재하는 게놈을 완전히 식별하고 분류하기 위한 노력입니다. 그것의 분석은 인간 유전학의 더 깊은 이해를 도울 수 있습니다.'),
 -- Ceres Station
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING', '세레스 우주정거장'),
-('TXT_KEY_BUILDING_FW_ASTEROID_MINING_HELP', '라그랑주-연구단지의 [ICON_RESEARCH]과학, 산업단지의 [ICON_PRODUCTION]생산, 상업지구의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR]씩 증가합니다.[NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'),
+('TXT_KEY_BUILDING_FW_ASTEROID_MINING_HELP', '라그랑주-연구단지의 [ICON_RESEARCH]과학, 공학단지의 [ICON_PRODUCTION]생산, 상업지구의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR]씩 증가합니다.[NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'),
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING_QUOTE', '[NEWLINE][TAB][TAB]''별들은 우리 없이 더 잘 살 수 있습니다.''[NEWLINE][TAB][TAB] — James S.A. Corey[NEWLINE][TAB]'),
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING_PEDIA', '세레스 스테이션은 국제 소행성 채굴 회의 이후에 설립된 가장 중요한 소행성 채굴 스테이션입니다.');
