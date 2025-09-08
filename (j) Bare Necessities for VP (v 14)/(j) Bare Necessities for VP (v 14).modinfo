@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" version="14">
+<Mod id="6eab2123-f4cb-401a-a165-55833306c1af" version="14">
   <Properties>
     <Name>(j) Bare Necessities for VP</Name>
     <Teaser>Vox Populi's Bare Necessities offer the bare necessites of Vox Populi. May download Referenced Mod for more options!</Teaser>
@@ -22,10 +22,11 @@
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
   <References>
+    <Mod id="9db218ee-7efa-4b4c-c234-014666n8l33t" minversion="0" maxversion="999" title="(n) Semper Fidelis" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders for VP" />
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era (Vox Populi)" />
     <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="framedarchitecture's National Wonders Collection" />
     <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mod" />
-    <Mod id="9db218ee-7efa-4b4c-c234-014666n8l33t" minversion="0" maxversion="999" title="(n) Semper Fidelis" />
   </References>
   <Blocks>
     <Mod id="baec6cb7-36d9-425a-a72b-e8f7d7ad1b01" minversion="0" maxversion="999" title="Artisanix's Neolithic Wonders" />
