@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/3/2014 6:40:50 PM -->
+<GameData>
+	<Resources>
+		<Row>
+			<Type>RESOURCE_CLSEALS</Type>
+			<CivilizationType>CIVILIZATION_CLINUIT</CivilizationType>
+			<Happiness>2</Happiness>
+			<Description>TXT_KEY_RESOURCE_CLSEALS</Description>
+			<Civilopedia>TXT_KEY_CIV5_RESOURCE_CLSEALS_TEXT</Civilopedia>
+			<ResourceClassType>RESOURCECLASS_LUXURY</ResourceClassType>
+			<ArtDefineTag>ART_DEF_RESOURCE_SEALS</ArtDefineTag>
+			<Help>TXT_KEY_RESOURCE_CLSEALS_HELP</Help>
+			<IconString>[ICON_RES_CLSEALS]</IconString>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>CLSEAL_ICON</IconAtlas>
+			<IsMonopoly>1</IsMonopoly>
+		</Row>
+	</Resources>
+	<Resource_TerrainBooleans>
+		<Row>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+		</Row>
+	</Resource_FeatureTerrainBooleans>
+	<Resource_YieldChanges>
+		<Row>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Resource_YieldChanges>
+	<Resource_Flavors>
+		<Row>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Resource_Flavors>
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+		</Row>
+	</Improvement_ResourceTypes>
+	<Improvement_ResourceType_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_ResourceType_Yields>
+	<Corporation_ResourceMonopolyOrs>
+		<Row>
+			<CorporationType>CORPORATION_GIORGIO_ARMEIER</CorporationType>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+		</Row>
+	</Corporation_ResourceMonopolyOrs>
+	<Corporation_ResourceYieldChanges>
+		<Row>
+			<CorporationType>CORPORATION_GIORGIO_ARMEIER</CorporationType>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Corporation_ResourceYieldChanges>
+	<Resource_YieldChangeFromMonopoly>
+		<Row>
+			<ResourceType>RESOURCE_CLSEALS</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Resource_YieldChangeFromMonopoly>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_RESOURCE_CLSEALS">
+			<Text>물개</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_CLSEALS_HELP">
+			<Text>이누이트 고유의 사치 자원입니다. 툰드라나 설원 인접한 물고기 자원을 개선해야만 획득할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 자원 타일에서 +2 [ICON_CULTURE] 문화.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_RESOURCE_CLSEALS_TEXT">
+			<Text>물개는 핀니펫류로 알려진 다양한 반수생 북극 생물들의 일반적인 명칭입니다. 이누이트는 4,000년 이상 물개를 사냥하여 그들의 가죽, 지방, 그리고 고기를 이용해 왔습니다. 물개 사냥은 여전히 캐나다와 그린란드와 같은 나라들에서 이루어지고 있습니다.[NEWLINE][NEWLINE]현대의 물개 사냥은 동물 권리 단체와 반모피 단체들에 의해 논란의 대상이 되고 있으며, 이들은 물개 가죽 산업에 대한 항의와 보이콧을 조직하고 있습니다. 물개 제품을 패션과 소비에서 피하려는 대중 운동으로 인해 물개 사냥의 경제적 타당성에 의문이 제기되었습니다. 물개 제품에 대한 수요 감소는 이누이트 사람들에게 강한 부정적인 영향을 미쳤으며, 이들이 글로벌 시장에 기여할 수 있는 능력을 제한하고 있습니다.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

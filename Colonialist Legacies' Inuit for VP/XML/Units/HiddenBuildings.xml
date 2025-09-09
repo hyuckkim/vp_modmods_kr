@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/3/2014 6:03:35 PM -->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ACBWIDGETBIG</Type>
+			<DefaultBuilding>BUILDING_ACBWIDGETBIG</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_ACBWIDGETBIG</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_ACBWIDGETSMALL</Type>
+			<DefaultBuilding>BUILDING_ACBWIDGETSMALL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_ACBWIDGETSMALL</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ACBWIDGETBIG</Type>
+			<BuildingClass>BUILDINGCLASS_ACBWIDGETBIG</BuildingClass>
+			<Cost>-1</Cost>
+			<PrereqTech></PrereqTech>
+			<Help>TXT_KEY_BUILDING_ACBWIDGETBIG_HELP</Help>
+			<Description>TXT_KEY_BUILDING_ACBWIDGETBIG_DESC</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ACBWIDGETBIG_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_ACBWIDGETBIG_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_CASTLE</ArtDefineTag>
+			<GreatWorkCount>-1</GreatWorkCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>CLSEAL_ICON</IconAtlas>
+			<!-- this will change.-->
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>1</IsDummy>
+		</Row>
+		<Row>
+			<Type>BUILDING_ACBWIDGETSMALL</Type>
+			<BuildingClass>BUILDINGCLASS_ACBWIDGETSMALL</BuildingClass>
+			<Cost>-1</Cost>
+			<PrereqTech></PrereqTech>
+			<Help>TXT_KEY_BUILDING_ACBWIDGETSMALL_HELP</Help>
+			<Description>TXT_KEY_BUILDING_ACBWIDGETSMALL_DESC</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ACBWIDGETSMALL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_ACBWIDGETSMALL_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_CASTLE</ArtDefineTag>
+			<GreatWorkCount>-1</GreatWorkCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<!-- this will change.-->
+			<PortraitIndex>0</PortraitIndex>
+			<IsDummy>1</IsDummy>
+		</Row>
+	</Buildings>
+	<Building_UnitCombatFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_ACBWIDGETBIG</BuildingType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ACBWIDGETSMALL</BuildingType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<Experience>5</Experience>
+		</Row>
+	</Building_UnitCombatFreeExperiences>
+	<Language_en_US>
+			<Row Tag="TXT_KEY_BUILDING_ACBWIDGETBIG_HELP">
+			<Text>you shouldn't be able to see this</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETBIG_DESC">
+			<Text>xp widget big</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETBIG_PEDIA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETBIG_STRATEGY">
+			<Text></Text>
+		</Row>
+			<Row Tag="TXT_KEY_BUILDING_ACBWIDGETSMALL_HELP">
+			<Text>you shouldn't be able to see this either</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETSMALL_DESC">
+			<Text>xp widget small</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETSMALL_PEDIA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ACBWIDGETSMALL_STRATEGY">
+			<Text></Text>
+		</Row>
+	</Language_en_US>
+</GameData>

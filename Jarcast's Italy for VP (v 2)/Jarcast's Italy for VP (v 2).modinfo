@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f79ace06-b989-45be-b310-1632ed1c79b9" version="2">
+  <Properties>
+    <Name>Jarcast's Italy for VP</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Adds [COLOR_POSITIVE_TEXT]Italy[ENDCOLOR] under king Umberto I.</Teaser>
+    <Description>[ICON_BULLET]UA - Il Bel Paese
+[NEWLINE][ICON_BULLET]UI - Comune (Village)
+[NEWLINE][ICON_BULLET]UU - Compagnia di Ventura (Knight)
+[NEWLINE][ICON_BULLET]UB - Pastificio (Windmill)
+[NEWLINE][ICON_BULLET]UU2 - Bersaglieri (Fusilier)</Description>
+    <Authors>Jarcast</Authors>
+    <SpecialThanks>Hokath</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="0" maxversion="999" title="JFD's Cultural Diversity (Core)" />
+    <Mod id="e576894a-ed2b-4033-be14-ed1c8ceb81d3" minversion="0" maxversion="999" title="Hazel's Map Labels" />
+    <Mod id="36e88483-48fe-4545-b85f-bafc50dde315" minversion="0" maxversion="999" title="JFD's Gedemo's Yet (not) Another Earth Map Pack v.25" />
+    <Mod id="6010e6f6-918e-48b8-9332-d60783bd8fb5" minversion="0" maxversion="999" title="Tomatekh's Historical Religions Complete" />
+    <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mods" />
+    <Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" minversion="0" maxversion="999" title="Unit Scaling and Formation for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="6F2C1950699F1EA9CC1263EDCCB6AA42" import="1">Art/Bersaglieri/itagw1.dds</File>
+    <File md5="220B1D27702406C652664021F3497638" import="1">Art/Bersaglieri/itagw1.fxsxml</File>
+    <File md5="80F5EAED20953254A4B215756CE5A43A" import="1">Art/Bersaglieri/itagw1.gr2</File>
+    <File md5="71148D91181AC3DD3A15285FA91A5375" import="1">Art/Bersaglieri/flag_Bersaglieri.dds</File>
+    <File md5="0C759F1CED95795CCFBE40C6BD9A963C" import="1">Art/Bersaglieri/no_gloss.dds</File>
+    <File md5="0A5874916AF32B57BBC5A02B6590869D" import="1">Art/Bersaglieri/sv_Bersaglieri.dds</File>
+    <File md5="3B96D55B09317FB712065A4113C76BE3" import="1">Art/BirdsAmbience.mp3</File>
+    <File md5="B0B855DFA280138C6F4C0CC802C0DABC" import="1">Art/Comune/DJSH_No_Heightmap.dds</File>
+    <File md5="66083792AB626BD0575EBC85BB87A25D" import="1">Art/Comune/spancol.dds</File>
+    <File md5="2566612B26746EB54B48E0065E5D2FCC" import="1">Art/Comune/Spanish Colonial Village HB.gr2</File>
+    <File md5="026D1B10B007CA8AEE20C4B4A748AE82" import="1">Art/Comune/Spanish Colonial Village PL.gr2</File>
+    <File md5="4F5ACC5B2F6F62472544ED22E59EBD27" import="1">Art/Comune/Spanish Colonial Village.gr2</File>
+    <File md5="11481E7E2E5BC762772F8FC65FA7C4C7" import="1">Art/Comune/Spanish Village Ground HB PL.dds</File>
+    <File md5="9EF0C7BCB0C3FD5106B02502289C20C1" import="1">Art/Comune/Spanish Village Ground.dds</File>
+    <File md5="4294CFAE4744C456353EA340092DF376" import="1">Art/Comune/sv_borgo.dds</File>
+    <File md5="EC95CAB9C46A9E3ED3D52F099FDDAF86" import="1">Art/Comune/Comune_B.fxsxml</File>
+    <File md5="909390A316EF7DCA778826854A60AD31" import="1">Art/Comune/Comune_HB.fxsxml</File>
+    <File md5="CDE0EFB13D14EFA32A32C827020E2633" import="1">Art/Comune/Comune_PL.fxsxml</File>
+    <File md5="7E66654DB3B64A8EEB87782D228620A3" import="1">Art/Condotta/condottiere.fxsxml</File>
+    <File md5="2BF9DA3CF8B82C472D7F59FC7CF3DE82" import="1">Art/Condotta/Condottiere.gr2</File>
+    <File md5="2F262269AEBFDDF47365FF9A758C99B6" import="1">Art/Condotta/flag_Condottiere.dds</File>
+    <File md5="32A429099E1090F65DC8CB81EC6431ED" import="1">Art/Condotta/condottiere_diff.dds</File>
+    <File md5="A2FC7D39829D0C2C95A989245E51BEF5" import="1">Art/Condotta/condottiere_sref.dds</File>
+    <File md5="FA3EC147B5FB7FDECF6B4CA03E731031" import="1">Art/Condotta/sv_Condottiere.dds</File>
+    <File md5="82A419D488C73684E39BE365536EA322" import="1">Art/Diplo/JFD_DOM_ItalyUmbertoI.dds</File>
+    <File md5="28D4362C9DD5A3F7737F1AB3AA744659" import="1">Art/Diplo/JFD_ItalyUmbertoI_Diplo.dds</File>
+    <File md5="2E9046D4130F6D6615A4F707E5B7D02B" import="1">Art/Diplo/JFD_ItalyUmbertoI_Scene.xml</File>
+    <File md5="7EB7A15539FFA568E0A2287D91B67E27" import="1">Art/Diplo/JFD_MapItalyUmbertoI512.dds</File>
+    <File md5="FF7A97125CA48EAC1F6CB27227A1EFAB" import="1">Art/GWArchitecture/GWA_atlas128.dds</File>
+    <File md5="B0914D45DBE54FC3411D8D414509D409" import="1">Art/GWArchitecture/GWA_atlas24.dds</File>
+    <File md5="AAE1EE4FD5CF5922F49C450C77DBA9B8" import="1">Art/GWArchitecture/GWA_atlas256.dds</File>
+    <File md5="76E6FEA5982D9103F7B735691588346F" import="1">Art/GWArchitecture/GWA_atlas32.dds</File>
+    <File md5="5A4CCD5BD0F28B27B5E08867A98A7D34" import="1">Art/GWArchitecture/GWA_atlas45.dds</File>
+    <File md5="4477841FFCDC8626014205E700C3AB04" import="1">Art/GWArchitecture/GWA_atlas64.dds</File>
+    <File md5="66BA26842A40F7B8097200D7829ED046" import="1">Art/GWArchitecture/GWA_atlas80.dds</File>
+    <File md5="ED973693BFCFC520F42BDB217BAD509C" import="1">Art/GWArchitecture/Splash/01- Ancient/GWA_Splash_001.dds</File>
+    <File md5="64A50A772447408751D7921E592D0383" import="1">Art/GWArchitecture/Splash/01- Ancient/GWA_Splash_002.dds</File>
+    <File md5="030D9B940735C99BA4E8B716F75C73C1" import="1">Art/GWArchitecture/Splash/01- Ancient/GWA_Splash_003.dds</File>
+    <File md5="68BDB742B87C279BEE26902F79FC32C4" import="1">Art/GWArchitecture/Splash/01- Ancient/GWA_Splash_004.dds</File>
+    <File md5="1EE07CA44DA11A403453600544104686" import="1">Art/GWArchitecture/Splash/01- Ancient/GWA_Splash_005.dds</File>
+    <File md5="30D0AE8F558EF812D01CBF0F4A4DE084" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_006.dds</File>
+    <File md5="BD23857BE542F0E4E860C178E1B35902" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_007.dds</File>
+    <File md5="AA2E356EA5A907897C2350DA9CC52D86" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_008.dds</File>
+    <File md5="1AF02D58505ACB24C5ACE7D6450DF4E0" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_009.dds</File>
+    <File md5="EB14FB41B3905323DBEA9D7156A2F3DC" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_010.dds</File>
+    <File md5="B9C9531EAD0189EE0998791984A5D8C1" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_011.dds</File>
+    <File md5="51B7F2A221D3FC0E6BBD0C0268375C19" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_012.dds</File>
+    <File md5="6F45C593DE2D21CCAD5A4D90EB8C35F4" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_013.dds</File>
+    <File md5="1C80D368761B55E30B6BB73C844134EE" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_014.dds</File>
+    <File md5="FFAEADCC9240BB000FF04182B8DC1234" import="1">Art/GWArchitecture/Splash/02- Classical/GWA_Splash_015.dds</File>
+    <File md5="DC869BEC79E4D08BEA0AC3C42DE27616" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_016.dds</File>
+    <File md5="2CB729A4D838FE0B15278A8752410C42" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_017.dds</File>
+    <File md5="FDD731820C968DCE70A81EC70CC5B2A0" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_018.dds</File>
+    <File md5="3A2027E686668579EC3A19B43FA573B4" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_019.dds</File>
+    <File md5="5AE17944D8ED31762CC8D0CA73712E99" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_020.dds</File>
+    <File md5="B860A8D47DDAF715BF4C6CDC4974EF82" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_021.dds</File>
+    <File md5="E020272FDFD7830B675171D23B28B79C" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_022.dds</File>
+    <File md5="5D1F508EFBE33D40F68E29761E931DA8" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_023.dds</File>
+    <File md5="B49F222563C6CD1079FBE38241BBDE1E" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_024.dds</File>
+    <File md5="4A6AC88E1AE19D39C2DC205F3201958C" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_025.dds</File>
+    <File md5="63CA9DA908ADDCB04D9DEEFE8C07B784" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_026.dds</File>
+    <File md5="6ED087E733F526B8B6F349927CE1FF0A" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_027.dds</File>
+    <File md5="872562F7631DE8756C61731930E50FA7" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_028.dds</File>
+    <File md5="568D81387136150AC6E9290894D0E799" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_029.dds</File>
+    <File md5="228F6D6B52AC4408E541ECB266D99D14" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_030.dds</File>
+    <File md5="306779BD5DCDE83478A4E524A5D921FF" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_031.dds</File>
+    <File md5="2DDE9747713B625AD90A432265C796EE" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_032.dds</File>
+    <File md5="FF1ED668B9E6CB54A10017CD6F35D3AC" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_033.dds</File>
+    <File md5="26489038D2D33917C5602985DC0B4F1F" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_034.dds</File>
+    <File md5="B10EFC098B334665937B4368D7AF130C" import="1">Art/GWArchitecture/Splash/03- Medieval/GWA_Splash_035.dds</File>
+    <File md5="62A5751E3F482FC805E8FAE710209BE4" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_036.dds</File>
+    <File md5="14651FE7BB17B534EBD178813022668A" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_037.dds</File>
+    <File md5="105A3E6C821CF0E993E0E4D717831091" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_038.dds</File>
+    <File md5="0760F19E1F959B2D3C20F92819D131E0" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_039.dds</File>
+    <File md5="00077113727E2B4866BFA73588DC2F76" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_040.dds</File>
+    <File md5="A268CEC03399C44147EA35BD831F83FD" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_041.dds</File>
+    <File md5="3715819CDA798E2A800E2145941F2E10" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_042.dds</File>
+    <File md5="EB95661AE95129BE6C95DB535DABDDAD" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_043.dds</File>
+    <File md5="9000557BC02CB1F75A74DB23EA6EB04E" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_044.dds</File>
+    <File md5="25B81AB3F181856EDFE9C84DDFB1974A" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_045.dds</File>
+    <File md5="9CAB4DEB2F72A55AD869631F48A70C41" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_046.dds</File>
+    <File md5="D1FF992B5BDCEFFCCF32B94BCB874EA7" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_047.dds</File>
+    <File md5="4C76ABDBF9EEF5618DE69E7B723000F3" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_048.dds</File>
+    <File md5="BBD1795A649218537C517838B393AA3F" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_049.dds</File>
+    <File md5="90B862CF544413686A8CB8C07A799A68" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_050.dds</File>
+    <File md5="3EDB395985F81BEDB37A2C82FA3360EC" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_051.dds</File>
+    <File md5="54AB32B80663254E808DA8319B7F45FF" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_052.dds</File>
+    <File md5="6E59904664A530DB168C1600F1A352B5" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_053.dds</File>
+    <File md5="E7FED3135FFFA08AC0EF3D079A513560" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_054.dds</File>
+    <File md5="B7A9338EFBFBC49F75CCA1B81798A53A" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_055.dds</File>
+    <File md5="DE4334498CF45912CC29FD11DB609CB0" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_056.dds</File>
+    <File md5="9780E328DEA358F12BCB59C142C57ADA" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_057.dds</File>
+    <File md5="6A0FEEB4138A39379C72C2E0258A5631" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_058.dds</File>
+    <File md5="F2501DD21FA1A03901CCA14B64F33296" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_059.dds</File>
+    <File md5="5CF018A0434F7C16117AD17F60D211E0" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_060.dds</File>
+    <File md5="94D5E45412CAFC7BDE9BC9874ABADE1F" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_061.dds</File>
+    <File md5="F8BB792D1BF697CE4E2C02AAC57661D3" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_062.dds</File>
+    <File md5="2E2754F89F90501D65A1E759459A17EE" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_063.dds</File>
+    <File md5="88840F2ADAC0B3778210701D450CD9A5" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_064.dds</File>
+    <File md5="8D8C6916D037354485B77BAE34730A3C" import="1">Art/GWArchitecture/Splash/04- Reinassance/GWA_Splash_065.dds</File>
+    <File md5="DCF4498CB41E54BDB376F27A08B093AB" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_066.dds</File>
+    <File md5="D590536C39E7A916FC668F7336B61DD5" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_067.dds</File>
+    <File md5="B4225A48D727907A041230355D5439D4" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_068.dds</File>
+    <File md5="29B693CD8CCD5E146C1D011F3ACBD1BD" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_069.dds</File>
+    <File md5="D7E1D6FEB66BD407D70142C08477D29B" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_070.dds</File>
+    <File md5="DD9BB81F2F429F6D220D16448F97C418" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_071.dds</File>
+    <File md5="94D4F87E5FD6842EA305D87729E14E73" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_072.dds</File>
+    <File md5="49DCE9FD995F782223430473EECCD486" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_073.dds</File>
+    <File md5="A58C809D54C271922AD5545FBE6107DD" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_074.dds</File>
+    <File md5="3A1130D6C9A697D0F948B5160C3FA7BE" import="1">Art/GWArchitecture/Splash/05- Industrial/GWA_Splash_075.dds</File>
+    <File md5="B2A82B403A03A4109540A03A837AA81A" import="1">Art/GWArchitecture/Splash/06- Modern/GWA_Splash_076.dds</File>
+    <File md5="D4BAEE7072652DFB970E276FBF079E96" import="1">Art/GWArchitecture/Splash/06- Modern/GWA_Splash_077.dds</File>
+    <File md5="70134DF2D31D348A1DE1EBA92494AF7F" import="1">Art/GWArchitecture/Splash/06- Modern/GWA_Splash_078.dds</File>
+    <File md5="3EE78D1F31A1E262CDEC6137D54C8ADF" import="1">Art/GWArchitecture/Splash/06- Modern/GWA_Splash_079.dds</File>
+    <File md5="E27EAAB40E594D7FB2EBB426E98952F2" import="1">Art/GWArchitecture/Splash/06- Modern/GWA_Splash_080.dds</File>
+    <File md5="E6493C0ADA935BD27E57FC0031FB34C8" import="1">Art/GWArchitecture/Splash/07- Atomic/GWA_Splash_081.dds</File>
+    <File md5="71CD4FE34979B36C227294FDFC68173C" import="1">Art/GWArchitecture/Splash/07- Atomic/GWA_Splash_082.dds</File>
+    <File md5="A52160766A20013E68D59A72A245DE22" import="1">Art/GWArchitecture/Splash/07- Atomic/GWA_Splash_083.dds</File>
+    <File md5="89674D8B246937C051180CA9776EDC32" import="1">Art/GWArchitecture/Splash/07- Atomic/GWA_Splash_084.dds</File>
+    <File md5="3C35B1DC58796927341EC0437206B95F" import="1">Art/GWArchitecture/Splash/07- Atomic/GWA_Splash_085.dds</File>
+    <File md5="65684168CA2E843FCA05FDBACFFB6F5F" import="1">Art/GWArchitecture/Splash/08- Information/GWA_Splash_086.dds</File>
+    <File md5="5FBB9C64CAD1ABC5026FE33FE98B58F2" import="1">Art/GWArchitecture/Splash/08- Information/GWA_Splash_087.dds</File>
+    <File md5="00D3BDB31D6054EF9EFAE5B164FBBD5C" import="1">Art/GWArchitecture/Splash/08- Information/GWA_Splash_088.dds</File>
+    <File md5="FD46FB5A660F94D1F0AC338CC629DF7D" import="1">Art/GWArchitecture/Splash/08- Information/GWA_Splash_089.dds</File>
+    <File md5="5D6CBE6C7C114D54A656ECE8EB8F4BC6" import="1">Art/GWArchitecture/Splash/08- Information/GWA_Splash_090.dds</File>
+    <File md5="E70DCDC147CD9A524425359B1C121446" import="1">Art/IconAtlas/atlas_italy_128.dds</File>
+    <File md5="38423C657AEAED97087609EA2DFE532C" import="1">Art/IconAtlas/atlas_italy_16.dds</File>
+    <File md5="61B9255C72B7D02098837E717C407DB3" import="1">Art/IconAtlas/atlas_italy_24.dds</File>
+    <File md5="54809A90F5B7A9C22213074226604C66" import="1">Art/IconAtlas/atlas_italy_256.dds</File>
+    <File md5="8703B6C4ABEAD0ABB6199EC2B44E3E27" import="1">Art/IconAtlas/atlas_italy_32.dds</File>
+    <File md5="3D8382D75D4A2BA662918744BB97106B" import="1">Art/IconAtlas/atlas_italy_45.dds</File>
+    <File md5="9E1C7136A91DE8460F56183B4D1E6BFE" import="1">Art/IconAtlas/atlas_italy_48.dds</File>
+    <File md5="7D498C5EF8421B9CCF4800496EB9AA9F" import="1">Art/IconAtlas/atlas_italy_64.dds</File>
+    <File md5="7651CD96B6918B95B1C573EB3EE701E5" import="1">Art/IconAtlas/atlas_italy_80.dds</File>
+    <File md5="62F1CB7A07BA72ADF02EE82F6FD83B36" import="1">Art/JarItalyPeace.mp3</File>
+    <File md5="FA2561CA6AE7A045BE1E7F396D347F6D" import="1">Art/JarItalyWar.mp3</File>
+    <File md5="872D55484533F0EFE24E102FDA248D9C" import="1">Art/Promo/Jar_Italy_PI_016.dds</File>
+    <File md5="0FB435B7EC2449E4674886CBA4888E62" import="1">Art/Promo/Jar_Italy_PI_032.dds</File>
+    <File md5="7EDAB33CBA7070E4B8702A62581D588C" import="1">Art/Promo/Jar_Italy_PI_045.dds</File>
+    <File md5="BBF69634685131370AEBB65AC2F4D434" import="1">Art/Promo/Jar_Italy_PI_064.dds</File>
+    <File md5="EFBB936FC996FDA8C769E0E3FEC7BA45" import="1">Art/Promo/Jar_Italy_PI_256.dds</File>
+    <File md5="4298B2100B38A033DAC0F0B8F2234BC7" import="0">Core/Jar_Italy_ArtDefines.sql</File>
+    <File md5="E6CAD106815BEE930562B9367425F420" import="0">Core/Jar_Italy_GameDefines.sql</File>
+    <File md5="22AFD64AAC4DE721FC19CAD807765862" import="0">Core/Jar_Italy_GameText.xml</File>
+    <File md5="A1CB7A292F362B6F1D01839B73DA4309" import="0">Core/Jar_Italy_GWArchitecture.sql</File>
+    <File md5="C1C4BCDB592705D7B5E2EF1498CAF5E1" import="0">Core/Jar_Italy_ModSupport.sql</File>
+    <File md5="291775FE8DD8207ABF851C0CCF9F0D18" import="0">Lua/Jar_Italy_Functions.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/Jar_Italy_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Jar_Italy_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Jar_Italy_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Jar_Italy_ModSupport.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Jar_Italy_GWArchitecture.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Jar_Italy_Functions.lua">
+      <Name>Italy_Functions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

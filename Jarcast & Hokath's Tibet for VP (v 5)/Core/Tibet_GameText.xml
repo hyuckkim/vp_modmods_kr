@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_en_US>
+		<!----------------------------------------------------------------
+						Chos Rgyal
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_TRAIT_JAR_TIBET_SHORT">
+			<Text>성왕(聖王)의 축복</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_JAR_TIBET">
+			<Text>민간 유닛과 정찰 유닛은 산맥을 통과할 수 있습니다. 도시는 인접한 산맥을 자동으로 소유하며, 채택한 신앙 교리마다 [ICON_PEACE] 신앙 +1을 획득합니다. [ICON_GOLDEN_AGE] 황금기 동안 매 턴마다 [ICON_PEACE] 신앙의 20%는 [ICON_CULTURE] 문화로, 10%는 [ICON_GREAT_GENERAL] 위대한 장군 포인트로 전환됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_SHERPA">
+			<Text>셰르파 안내인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_SHERPA_HELP">
+			<Text>산맥을 통과할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_DUMMY_TIBETUA">
+			<Text>신앙의 울림</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_DUMMY_TIBETUA_HELP">
+			<Text>도시에서 발생한 [ICON_PEACE] 신앙의 15%가 매 턴 전역에서 [ICON_CULTURE] 문화와 [ICON_GREAT_GENERAL] 위대한 장군 포인트로 전환됩니다.</Text>
+		</Row>
+		<!----------------------------------------------------------------
+					UI- Yak Pasture
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_YAKPASTURE">
+			<Text>야크 목장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_YAKPASTURE_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_YAKPASTURE_TEXT">
+			<Text>히말라야의 추운 고산지대에서 유래한 야크는 티베트 고원의 혹독한 환경에 잘 적응한 가축입니다. 역사적으로 야크는 고기, 우유, 털, 운송 등 다방면에서 유용하게 쓰여 티베트 유목민과 마을 주민들에게 귀중한 자원이 되어 왔습니다.[NEWLINE][NEWLINE]티베트 문화에서 야크는 부, 힘, 끈기를 상징하는 영적 존재로 여겨지며, 극한 환경에서도 살아남는 생존력은 티베트 민족의 불굴의 정신을 상징합니다. 야크는 티베트의 예술, 문학, 종교 의식에서 자주 등장하며, 탕카 그림이나 조각상에 자주 묘사됩니다. 특히 야크 버터는 종교 의식에서 중요한 재료로 쓰이며, 축제나 공양용 버터 조각을 만드는 데 사용됩니다.[NEWLINE][NEWLINE]야크는 티베트 경제에서도 핵심적인 역할을 합니다. 많은 티베트인에게는 주요 생계 수단이며, 야크 방목은 전통적인 경제 구조의 근간을 이룹니다. 야크 버터, 치즈, 양모 등은 티베트 내외에서 귀하게 여겨지며, 고원의 험한 지형에서 물자를 나르는 운송 수단으로도 활약하고 있습니다. 현대화에도 불구하고, 야크는 여전히 티베트인의 문화 정체성과 생계 유지에 있어 중심적인 위치를 차지하고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_JAR_YAKPASTURE">
+			<Text>[LINK=IMPROVEMENT_JAR_YAKPASTURE]야크 목장[\LINK]을 건설합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_JAR_YAKPASTURE_HELP">
+			<Text>석공술 기술 발견 시 해금됩니다. 자국 영토 내의 산악 지형에 건설할 수 있으며, 다른 야크 목장과 인접할 수 없습니다.[NEWLINE]건설 시 [ICON_RES_JAR_YAK] 야크 사치 자원을 생성하며, 해당 타일에 [ICON_FOOD] 식량 +1, [ICON_PRODUCTION] 생산력 +1, [ICON_GOLD] 골드 +1을 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_JAR_YAKPASTURE_REC">
+			<Text>[ICON_RES_JAR_YAK] 야크 사치 자원을 생성하며, 해당 타일의 [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산력, [ICON_GOLD] 골드 수치를 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_JAR_YAK">
+			<Text>야크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_JAR_YAK_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 모든 소유 도시에서 [ICON_FOOD] 식량 +5%, [ICON_CULTURE] 문화 +5%를 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_JAR_YAK_TEXT">
+			<Text>야크(Bos grunniens)는 중앙아시아와 티베트 고원의 역사에서 중요한 위치를 차지하며, 3,000년 넘게 현지 공동체의 생계에 필수적인 자원이 되어 왔습니다. 기원전 1,000년경에 가축화된 야크는 척박한 산악 지형에서 우유, 고기, 털, 운송 수단을 제공하며 살아왔습니다. 높은 고도와 극심한 추위에 대한 뛰어난 적응력으로 잘 알려진 야크는 고대 실크로드 무역 발전에도 핵심적인 역할을 했고, 문화 교류와 경제 성장을 촉진했습니다. 티베트와 몽골 문화권에서는 야크가 영적인 존재로도 여겨졌으며, 예술과 민속 전승에서 자주 등장했습니다. 현대화와 기후 변화라는 도전에도 불구하고, 야크는 여전히 강인함과 적응력, 그리고 그 지역의 문화적 정체성을 상징하는 존재로 남아 있습니다.</Text>
+		</Row>
+		<!----------------------------------------------------------------
+					UU1- Dob-Dob
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_UNIT_JAR_DOBDOB">
+			<Text>도브도브</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_DOBDOB_TEXT">
+			<Text>도브도브(Dob-dob 또는 ldob ldob)는 티베트의 겔룩파 사원에서 수행보다는 외모, 스포츠, 싸움 등 세속적인 활동에 더 관심을 가진 승려입니다. 신체적으로 건강하고 활발하지만 스승을 찾지 못했거나 학문적 소질이 부족한 젊은 승려들은 도브도브가 조직한 집단에 들어가 격렬한 운동과 무술을 익힙니다.[NEWLINE][NEWLINE]도브도브는 독특한 복장으로 구별되었습니다. 일반 승려보다 긴 치마를 허벅지까지 끌어올려 두툼한 하체를 드러내고, 왼쪽 귀를 감싸 내려오는 큰 곱슬머리를 하고 있었으며, 눈 주위를 검게 칠해 강한 인상을 주었습니다. 오른팔 윗부분엔 항상 붉은 비단띠를 두르고 있었고, 허리띠엔 커다란 열쇠를 매달았는데 이는 무기처럼 사용되기도 했습니다.[NEWLINE][NEWLINE]도브도브는 악기 연주나 사찰 경비 등의 역할도 수행하며, 고위 승려의 호위 임무를 맡아 여행에 동행하거나 평민 관료의 호위병으로 고용되기도 했습니다. 일부는 차를 끓여 집회에서 제공하거나, 장사 수완이나 농업 지식이 있는 경우 사찰이나 캄첸(승려 거주구)의 재정 담당자로 일하기도 했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JAR_DOBDOB_HELP">
+			<Text>도브도브는 소유 도시로 접근하려는 외교 종교의 [ICON_MISSIONARY] 선교사를 제거할 수 있는 고유 능력을 지니며, 도시 주둔 시 외교 [ICON_MISSIONARY] 선교사와 [ICON_PROPHET] 예언자의 확산력을 50% 감소시킵니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_JAR_MONASTICPOLICE}[ENDCOLOR] 승급과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_JAR_AIDEWORDLYMATTERS}[ENDCOLOR] 승급을 기본으로 보유합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JAR_DOBDOB_STRATEGY">
+			<Text>도브도브는 티베트의 고유 근접 전투 유닛으로, 향상된 다수 종교를 보유한 모든 소유 도시에 [ICON_PEACE] 신앙으로 구매할 수 있습니다. 시대가 지나도 도태되지 않으며, [ICON_STRENGTH] 전투력이 시대에 따라 상승하고, 소유 도시, 성채 또는 성지 인접 시 전투 보너스를 받습니다. 기존 이단심문관보다 향상된 능력을 지녔으며, 주둔 시 외교 종교 확산을 억제할 뿐만 아니라 도시의 [ICON_PEACE] 신앙 중 15%를 [ICON_PRODUCTION] 생산으로 전환합니다. 이단 제거 외에도, 도브도브는 고유 행동으로 적 선교사를 제거할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_TIBETANTHEOCRACY">
+			<Text>티베트 신정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_TIBETANTHEOCRACY_HELP">
+			<Text>소유한 영토 내에서 인접한 타일에 있는 외교 종교의 [ICON_MISSIONARY] 선교사를 제거할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_MONASTICPOLICE">
+			<Text>사원 경비대</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_MONASTICPOLICE_HELP">
+			<Text>소유한 [COLOR_POSITIVE_TEXT]도시[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]위인 타일[ENDCOLOR] 인접 시 [ICON_STRENGTH] 전투력 +25%를 획득합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_AIDEWORDLYMATTERS">
+			<Text>속세의 일 처리자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_AIDEWORDLYMATTERS_HELP">
+			<Text>도시에 주둔 시, 도시의 [ICON_PEACE] 신앙 중 15%를 [ICON_PRODUCTION] 생산으로 전환하도록 돕습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_JAR_KILL_MISSIONARY">
+			<Text>[COLOR_POSITIVE_TEXT]외교 종교 선교사 제거[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_JAR_KILL_MISSIONARY_HELP">
+			<Text>소유한 영토 내에서, 이 유닛이 외교 종교의 선교사와 같은 타일 또는 인접한 위치에 있을 경우, 해당 선교사를 안전하게 제거하고 5 경험치와 일정량의 [ICON_PEACE] 신앙을 획득할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_JAR_KILL_MISSIONARY_DISABLED">
+			<Text>외교 종교 선교사와 같은 타일이거나 인접한 위치에 있어야 하며, 소유한 영토 내에 있어야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_DUMMY_DOBDOB">
+			<Text>도브도브 주둔지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_DUMMY_DOBDOB_HELP">
+			<Text>도시의 [ICON_PEACE] 신앙 중 15%가 [ICON_PRODUCTION] 생산으로 전환됩니다.</Text>
+		</Row>
+		<!----------------------------------------------------------------
+					UU2- Rtakhrab Pai'dpung
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_UNIT_JAR_RTAKHRAB">
+			<Text>르탁랍 파이뿡</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_RTAKHRAB_TEXT">
+			<Text>르탁랍 파이뿡(직역하면 '무장 기병')은 티베트 귀족 계층인 스게르파(sger pa)에서 모집된 전사들을 가리킵니다. 이 귀족들은 강철 투구(rmog)와 전신 갑옷(go chan gyon pa)을 갖출 여유가 있었으며, 자신들의 전투마에게도 최고의 말 갑옷(rta khrab)을 입힐 수 있었습니다. 얄룽 왕조 시절, 제국군의 대부분은 이와 같은 전사들로 구성되어 있었으며, 이들은 군 지도자나 곰파(Gompa) 행정관(겔룬, gelun)의 호위병으로도 활동했습니다.[NEWLINE]이들은 긴 창(mdung)과 철심이 박힌 독특한 방패(sba phub)를 들고, 판금 갑옷과 강철 흉갑을 착용한 중무장 전사들이었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JAR_RTAKHRAB_HELP">
+			<Text>르탁랍 파이뿡은 대체하는 기사보다 이동 속도가 느립니다. 그러나 레벨당 [ICON_STRENGTH] 전투력이 1씩 증가합니다. 시작 시 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_JAR_RTAKHRAB1}[ENDCOLOR] 승급을 보유하며, 이는 근접 및 궁병 유닛에 대해 [ICON_STRENGTH] 전투력 +33%를 부여합니다.[NEWLINE][NEWLINE][ICON_PEACE] 신앙으로 구매할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JAR_RTAKHRAB_STRATEGY">
+			<Text>르탁랍 파이뿡은 기병보다 빠르지는 않지만, 특히 전선을 유지하는 주력 근접 유닛에 대해 훨씬 강해질 수 있습니다. 이 유닛은 경험치가 중요하기 때문에, 막 생산된 유닛을 적에게 과감히 투입하는 것이 좋습니다. 일부는 전장에서 빠져나오지 못하겠지만, 살아남은 유닛은 더욱 강력하게 돌아올 것입니다! 신앙으로 구매하면 건물로부터의 경험치를 그대로 얻을 수 있으므로, 생산보다는 강력한 종교 기반을 활용해 신병을 양성하는 것이 유리합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_RTAKHRAB1">
+			<Text>르탁랍</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_RTAKHRAB1_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]궁병 및 근접 유닛[ENDCOLOR]에게 [ICON_STRENGTH] 전투력 +33% 보너스를 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_RTAKHRAB2">
+			<Text>세월의 지혜</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JAR_RTAKHRAB2_HELP">
+			<Text>레벨업 시마다 [ICON_STRENGTH] 전투력이 +1 증가합니다.</Text>
+		</Row>
+		<!----------------------------------------------------------------
+					UB- Kumbum
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_BUILDING_JAR_KUMBUM">
+			<Text>쿰붐</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_KUMBUM_TEXT">
+			<Text>쿰붐은 불교의 예배 공간 중 하나로, 여러 층으로 이루어진 독특한 구조를 지닌 건축물입니다. 티베트 기얀체(Gyantse)의 쿰붐 또는 고망(다문) 초르텐은 3차원 만다라로서, 불교 우주관을 형상화한 것입니다. 쿰붐은 사각형 안의 원으로 표현되는 만다라처럼 수행자가 불교적 우주관을 체험하고, 그 속을 이동하며 자신의 잠재력을 발견하게 합니다. 만다라는 깨달음의 길을 걷는 이들을 돕기 위해 만들어진 수행 도구입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_JAR_KUMBUM_STRATEGY">
+			<Text>티베트의 고유 사원 건물로, [ICON_PEACE] 신앙으로도 구매할 수 있습니다.</Text>
+		</Row>
+		<!----------------------------------------------------------------
+						Tibet
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_CIV_JAR_TIBET_ADJECTIVE">
+			<Text>티베트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_JAR_TIBET_DESC">
+			<Text>티베트 제국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_JAR_TIBET_SHORT_DESC">
+			<Text>티베트</Text>
+			<Plurality>1</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_1">
+			<Text>역사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_1">
+			<Text>정치적 안정이라는 격랑을 겪은 수많은 문명 중, 티베트는 그 자체로 격동의 역사를 지닌 지역입니다. 지금으로부터 약 1300년 전, 티베트는 하나의 제국으로 통일되었으나 곧 외세의 영향권에 놓인 여러 영토로 분열되었습니다. 그중 대부분은 중국의 영향 아래 있었으며, 청 왕조가 붕괴한 후 티베트는 중국군을 무장 해제시키고 국외로 추방하며 독립을 선언했습니다. 그러나 이후 군사적 충돌로 인해 티베트는 중화인민공화국에 병합되었고, 결국 기존 티베트 정부는 해산되었습니다. 이는 작은 국가가 자립을 꾀하는 과정에서 초강대국의 지배력에 맞서 싸운 역사를 요약한 것이라 할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_2">
+			<Text>지리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_2">
+			<Text>티베트는 평균 해발 4,800미터로 세계에서 가장 고도가 높은 지역입니다. 히말라야 산맥과 접하고 있는 티베트 고원에 위치하며, '세계의 지붕'이라 불릴 만큼 험준한 지형을 자랑합니다. 이곳에는 에베레스트 산을 포함한 세계 최고봉들이 분포하고 있으며, 수많은 강이 산맥을 가로지르며 흐르고 있습니다. 특히 얄룽창포 대협곡은 세계에서 가장 깊은 협곡 중 하나로 꼽힙니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_3">
+			<Text>선사시대와 신화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_3">
+			<Text>티베트 지역에 인간이 처음 거주한 시점은 약 2만 1천 년 전으로, 정신적 중심지인 인도와 군사적 강국인 중국 사이에 위치해 있었습니다. 이 두 나라는 훗날 티베트 역사에 큰 영향을 미치게 됩니다. 기원전 3000년경, 중국 북부에서 온 신석기 인구가 이들을 대체하였으나, 일부 티베트인은 여전히 자신들의 혈통을 초기 거주민에게서 이어진다고 믿고 있습니다. 티베트 신화에 따르면 기원전 1세기 이전, 장중(장슝) 문화가 티베트 서부의 구게 지역으로 이주했으며, 이들은 지역의 본(Bön) 종교의 창시자로 여겨집니다. 야룽 계곡의 인접 왕국은 이들의 영향을 몰아내기 위해 본 사제들을 추방했지만, 야룽의 왕 드리굼 체셈포가 암살당하면서 장중이 지역을 계속 지배하게 됩니다.[NEWLINE][NEWLINE]냐트리 체셈포는 기록상 티베트 지역의 첫 국왕으로 알려져 있으나, 그의 통치 시점은 명확하지 않습니다. 그는 푸워라는 고향에서 끔찍한 외모로 인해 두려움의 대상이 되어 본교도들에 의해 추방되었고, 이후 타지에서 왕으로 즉위합니다. 고대 왕들은 죽는 것이 아니라 ‘듀무 끈’이라는 천상과 연결된 줄을 통해 하늘로 승천한다고 여겨졌습니다. 하지만 드리굼 체셈포가 족장이나 시종 롱감과 결투를 벌이던 중 그 줄이 끊기고 사망하게 되면서, 이후 왕들은 땅에 머무르게 되었고 본교도들은 장례를 집행하게 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_4">
+			<Text>제국의 흥망성쇠</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_4">
+			<Text>7세기 초, 중국은 처음으로 티베트 왕국과 접촉하면서 이를 '투보(吐蕃)'라 불렀습니다. 당시의 왕은 남리 론첸이었습니다. 이 국가는 장중 제국의 봉신이던 구드리 징포제를 상대로 타그부 냐직이 반란을 일으켜 성공하면서 세워졌습니다. 이후 론첸은 자신의 씨족을 이끌고 인근 지역을 정복하였으며, 630년경 라싸를 차지하고 암살당했습니다. 이후 11세기까지 제국 황제들이 티베트를 통일 왕국으로 통치했으며, 그 중 가장 유명한 황제는 송첸 감포, 트리송 데첸, 랄파첸입니다. 이 셋은 각각 관세음보살, 문수보살, 금강수로 여겨져 티베트의 '삼보호자'로 숭배됩니다.[NEWLINE][NEWLINE]전성기에는 티베트 제국의 영토가 남쪽 벵골에서 북쪽 몽골에 이르렀습니다. 그러나 광대한 영토는 문제를 초래했습니다. 험난한 지형은 교통에 장애를 주었고, 새로 편입된 지역의 다양한 사상은 갈등을 유발했으며, 이는 황제 권위에 도전하는 세력의 분열로 이어졌습니다. 이로 인해 9~11세기 사이 '분열 시대'가 시작되었고, 정치적 중앙 집권이 붕괴되며 지역 호족의 반란이 이어졌습니다. 마지막 통일 왕 랑다르마가 사망한 뒤, 두 아들 융텐과 외숭 사이의 계승 분쟁이 벌어졌습니다. 내전으로 인해 제국은 분열되었고, 외숭과 그 지지자들은 라싸를, 융텐은 야룽을 장악했습니다. 외숭의 아들 펠코르첸은 두 아들 트리시 첸첸과 트리키이딩과 함께 중앙 티베트를 지배했습니다. 트리키이딩은 서쪽의 우상가리로 이주하여 귀족 여성과 결혼, 자신의 왕조를 수립했고, 제국 해체 이후인 842년에는 티베트 왕실의 후손인 니마곤이 첫 라다크 왕조를 창건했습니다. 트리키이딩의 장남은 마르율 라다크 지역을, 다른 아들들은 서티베트를 지배하며 구게와 푸랑 왕국을 세웠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_5">
+			<Text>영향과 침략</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_5">
+			<Text>구게 왕국의 장남 코레는 불교 승려가 되었고, 학자들을 카슈미르로 보내 수행시켰으며 1040년에는 아티샤를 티베트로 초청했습니다. 이로 인해 티베트 불교는 '치다르'라는 새로운 국면을 맞이하게 됩니다. 코레 이전에도 티베트에서 불교는 널리 퍼져 있었으며, 랑다르마 치세 동안 세 명의 승려가 격동의 시기 라싸를 탈출해 암도의 단틱산으로 도망쳤습니다. 그들의 제자인 무주 셀바르는 북부 티베트에 불교 부흥을 이끌었고, 학자 '공파랍살'로 불리며 닝마파 불교의 시조가 되었습니다. 외숭의 후손 중 한 명은 공파랍살에게 배울 사람 열 명을 보내 이들을 승려로 서품한 뒤 중앙 티베트로 돌아오게 했고, 이들은 1042년에 아티샤와 만나 불교 확산을 촉진했습니다. 이로 인해 1073년부터 200년 동안 사캬파 사원이 티베트 사회와 문화에서 큰 위상을 차지하게 됩니다.[NEWLINE][NEWLINE]1221년, 창파 둥쿠르와 여섯 명의 제자는 몽골에서 칭기즈 칸을 처음으로 만났고, 이들은 도교가 부흥하던 시기에 포로로 잡혔습니다. 이 사건은 몽골의 침공이 예정된 수순이었음을 보여줍니다. 1240년, 몽골은 티베트를 정복하기 위한 원정을 시작했으나 왕위 계승을 준비하기 위해 왕자들이 귀환하면서 1년 만에 철수합니다. 1244년, 몽골은 다시 돌아와 사캬 판디타를 왕자 코텐의 개인 사제로 삼으라며 최후통첩을 보냈고, 더 큰 침공을 예고했습니다. 판디타는 거의 3년이 지난 뒤에 순응해 1246년 코코노르에 도착했고, 이듬해 랑저우에서 코텐을 만났습니다. 판디타는 중국 농민의 학살 중지를 요청했고 이를 관철시켰습니다. 그 대가로 몽골은 동쪽 암도와 캄을 병합했고, 판디타를 중앙 티베트의 총독으로 임명하면서 실질적으로 티베트를 지배하게 됩니다.[NEWLINE][NEWLINE]티베트는 종교 및 내부 정치에 대한 권한은 유지했지만, 행정은 몽골이 장악했습니다. 몽골 제국에서 티베트는 ‘선정원(宣政院)’이라는 독립기구를 통해 통치되었고, 이는 중국의 다른 성과는 별도로 운영되었습니다. 이후 몽골이 중국 전역을 차지하면서, 중국의 영향력이 티베트에 본격적으로 확대됩니다. 사캬파에서 대행정관(dpon-chen)과 '팍스파'의 친척 간 갈등이 발생하자, 중국군이 대행정관을 처형하기 위해 파견됩니다. 티베트 총독들이 영향력을 행사하려 했지만, 불안정과 부패가 만연했고, 이후 1354년부터 1434년까지 약 80년간 파그모두르 미리아르키의 부상이 시작되며 비교적 긴 독립과 안정을 맞이하게 됩니다. 그러나 몽골은 만주로서 300년 후 다시 돌아왔고, 중국을 다시 정복해 새로운 왕조를 세운 후 1724년에 티베트의 일부 지역을 다시 장악하기 시작했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_6">
+			<Text>두 번째 부흥과 몰락</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_6">
+			<Text>1912년 이전, 청나라는 동부 캄 지역을 지배하고 티베트 문제에도 2세기 동안 깊이 관여하고 있었습니다. 봉충이라는 관리는 이 지역에 대한 지배를 재확립했고, 자오얼펑은 사원을 파괴하며 지역의 한족화를 시작했으며, 중화군은 복권된 달라이 라마를 감시하기 위해 라싸에 주둔했습니다. 이 상태는 1911년 10월 청 왕조가 무너질 때까지 지속되었고, 자오의 병사들이 반란을 일으켜 그를 처형하면서 끝이 났습니다. 이에 달라이 라마는 인도에서 은신처를 벗어나 1912년 7월 티베트로 돌아왔고, 중국군을 전면 추방했습니다. 이듬해 달라이 라마는 중국 황제와 티베트의 관계가 “후원자와 사제의 관계였을 뿐, 지배와 복종의 관계는 아니었다”고 선언하며 티베트를 “작지만 종교적이며 독립된 국가”라고 천명했고, 이로 인해 티베트는 사실상 독립을 이루게 되었습니다.[NEWLINE][NEWLINE]독립 상태였던 티베트는 이후 중국이 내전과 세계대전, 일본의 팽창 위협에 직면한 틈을 타 자율적인 길을 걸었습니다. 중국 측 기록에 따르면 이 시기에도 티베트는 여전히 중국의 지배하에 있었지만, 일부는 1913년 티베트-몽골 조약 체결 이후 법적 독립 상태였다고 주장합니다. 하지만 전 세계적으로 티베트는 고립되어 있었고, 특히 라싸는 외부인에게 폐쇄적인 도시였습니다. 1914년 티베트 정부는 영국과 심라 협정을 체결하여 남티베트 지역을 영국령 인도에 할양했고, 중국은 이를 불법이라 비난했습니다. 1932년 일본이 만주를 점령하자 중국은 마부팡과 류원후이가 이끄는 국민혁명군을 파견해 티베트군을 격파했고, 당시 달라이 라마는 칭하이와 시캉 영토를 확보하려 했습니다. 중국은 이를 “티베트 문제 해결”이라며 부추겼고, 티베트가 진사강을 다시 넘지 말라는 경고와 함께 전쟁을 끝내기 위한 휴전이 체결됐습니다. 이후 달라이 라마는 영국령 인도에 도움을 청해 군을 보강했으며, 항복한 장군들을 해임했습니다.[NEWLINE][NEWLINE]1949년 중국에 공산주의가 등장하자 티베트의 행정기구인 카샤그는 중국 정부와 관련된 인사들을 전면 추방했습니다. 이에 대응해 마오쩌둥은 곧바로 티베트에 대한 지배를 재개했고, 1950년 10월 인민해방군은 창두에 진입해 티베트군을 격파했습니다. 이듬해 베이징에서 티베트 대표단은 중국 측과 협상해 ‘17개 조항 협정’을 체결했고, 중국의 티베트 주권을 공식화하며 티베트의 마지막 독립 시대를 마무리 지었습니다. 뜻밖에도 공산 정부는 티베트 정책을 즉시 개혁하지 않았으며, 이후 8년 동안은 노예제와 농노제를 폐지한 것을 제외하고는 티베트의 정부와 정책은 거의 유지되었습니다. 그러나 점차 그 대가는 드러났고, 동부 캄은 쓰촨성으로 편입되었으며 서부 캄은 창두 군사위원회에 예속되었습니다. 이 지역 전역에 걸쳐 ‘토지개혁’이 실시되었고, 이는 공산주의 선동가들이 ‘지주’를 골라내 공개 망신, 고문, 불구화, 때로는 처형에 이르게 하는 방식으로 이루어졌습니다. 1956년 캄과 암도에서 이러한 개혁은 본격적으로 시행되었고, 이후 3년간 커지는 사회 불안은 “라싸 봉기”라는 전면적인 저항으로 폭발했습니다. 이 봉기는 인민해방군과 공산정권에 맞선 전면적 저항으로 확대되었고, 결국 달라이 라마와 티베트 정부는 인도로 망명하게 되어, 티베트는 망명정부 체제로 전환되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_HEADING_7">
+			<Text>오늘날의 티베트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_TEXT_7">
+			<Text>많은 상실을 겪어온 역사 속에서, 오늘날 티베트는 세계 대부분이 인식하는 모습과는 다른 관점으로 스스로를 바라봅니다. 현 달라이 라마 텐진 갸초는 지난 세기의 달라이 라마와는 다른 메시지를 전하며, “티베트는 독립이 아니라 자치를 원한다”고 말합니다. 망명정부의 영적·종교적 지도자인 그는 미국과 캐나다 정부로부터 찬사를 받았으며, 티베트에 대한 중국의 점령에 대해 지속적으로 평화적인 방식으로 항의해온 공로로 노벨 평화상을 수상했습니다. 이러한 활동과 국제적 교류로 인해 중국은 그를 불신하고 위협적인 인물로 간주하며, 독립을 포기하지 않았다고 판단하고 있습니다. 따라서 중국 정부는 그와 접촉하는 인물이나 국가에 항의하는 경향이 있습니다.[NEWLINE][NEWLINE]1951년 라싸 봉기 이후, 티베트 정부는 많은 난민들과 함께 인도로 망명하였고, 인도 정부는 이들을 받아들여 다람살라 지역에 정착지를 마련해주었습니다. 현재 망명정부는 여전히 그곳에서 운영되고 있습니다. 중화인민공화국은 티베트에 대한 통치를 ‘순수한 개선’이라고 묘사하고 있지만, 일부 국가들과 국제기구는 여전히 중국의 점령에 항의하고 있습니다. 그럼에도 대부분의 국가는 중국의 티베트 영유권을 인정하고 있으며, 인도에 기반한 티베트 망명정부를 정식 정부로 인정하는 국가는 존재하지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_FACTOID_HEADING">
+			<Text>티베트 잡학사전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JAR_TIBET_FACTOID_TEXT">
+			<Text>티베트는 다양한 이름으로 불립니다. 현지 티베트어 표기는 'Bod', 발음은 '보'이며, 이는 티베트 또는 '티베트 고원'을 의미합니다. 현대 중국어로는 'Zàngqu(장취)'로, '서쪽'이라는 뜻이며, 중세 중국어에서는 '투판(Tufan)' 혹은 '투포(Tufo)'라고 불리기도 했습니다. 영어 이름인 'Tibet'은 18세기부터 사용되었으며, 언어학자들은 이 명칭이 아랍어에서 유래했고 궁극적으로 튀르크어 'Töbäd'에서 비롯되었으며 '높은 곳들'이라는 뜻이라고 보고 있습니다.</Text>
+		</Row>
+		<!-- City Names -->
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_01">	
+			<Text>라싸</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_02">	
+			<Text>시가체</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_03">	
+			<Text>갼체</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_04">	
+			<Text>참도</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_05">	
+			<Text>생게장보</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_06">	
+			<Text>낙추카</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_07">	
+			<Text>밤다</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_08">	
+			<Text>루톡</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_09">	
+			<Text>닝치</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_10">	
+			<Text>네동</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_11">	
+			<Text>초첸</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_12">	
+			<Text>바캄</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_13">	
+			<Text>삭야</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_14">	
+			<Text>가르체</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_15">	
+			<Text>펠바르</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_16">	
+			<Text>랏체</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_17">	
+			<Text>팅리</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_18">	
+			<Text>다르체도</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_19">	
+			<Text>걔구</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_20">	
+			<Text>마첸</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_21">	
+			<Text>골무드</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_22">	
+			<Text>타왕</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_23">	
+			<Text>레</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_24">	
+			<Text>장무</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_25">	
+			<Text>라다크</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_26">	
+			<Text>바탕</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_27">	
+			<Text>로카</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_28">	
+			<Text>리워체</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_29">	
+			<Text>덩첸</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CITY_NAME_JAR_TIBET_30">	
+			<Text>셰가르</Text>
+		</Row>	
+		<!-- Spy Names -->
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_9">
+			<Text>수니타</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_8">
+			<Text>트리데</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_7">
+			<Text>무네</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_6">
+			<Text>트리스투</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_5">
+			<Text>아그반</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_4">
+			<Text>니샬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_3">
+			<Text>샨코</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_2">
+			<Text>쿤자</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_1">
+			<Text>아쉬미</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_0">
+			<Text>아미타</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_10">
+			<Text>닝게레</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_11">
+			<Text>페말라</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_12">
+			<Text>밍마</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_13">
+			<Text>케유리</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_14">
+			<Text>걀초</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_JAR_TIBET_15">
+			<Text>람무</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<!----------------------------------------------------------------
+						Songtsen Gampo
+		------------------------------------------------------------------>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO">
+			<Text>송첸 감포</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_1">
+			<Text>역사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_1">
+			<Text>송첸 감포(Wylie 표기: Srong-btsan sGam-po)가 티베트 역사에 남긴 영향은 그를 ‘관세음보살의 화신’이자 수호자로 부르기에 충분합니다. 전통적으로 그는 야를룽 왕조의 33대 군주로 알려져 있으나, 티베트 제국을 세우고 문화와 기술을 발전시키며 불교를 전역에 전파하고 제국을 통일·확장시킨 업적으로도 평가받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_2">
+			<Text>초기 생애와 문화 발전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_2">
+			<Text>송첸 감포는 현재의 라싸 북동쪽 지역인 갸마에서 태어났다고 전해지며, 그의 아버지는 전 왕인 남리 송첸이었습니다. 전승에 따르면 그의 어머니는 체퐁 씨족 출신의 드링마 토고였다고 합니다. 감포는 약 13세의 나이에 왕위에 올랐으며, 티베트 전통에서는 이 나이에 왕위에 오르고 말을 탈 수 있어야 통치할 자격이 있다고 여겨집니다. 젊은 시절 그는 몽 씨족 출신의 트리모니옌 동스텐과 혼인했으며, 어머니와 부인의 씨족은 훗날 티베트 통일에 있어 중요한 연합 기반이 됩니다.[NEWLINE][NEWLINE]재위 기간 동안 감포는 외교관으로서의 역량을 발휘해 티베트의 문화적 지평을 넓혔습니다. 인도에 사절을 보내 문자를 개발하게 하고, 이를 통해 문학이 태동했으며, 중국으로부터는 점성술 체계와 보물, 부를 수입하고 위구르로부터는 법전을 받아들였습니다. 이러한 동맹들은 티베트 제국의 문화 발전에 기반을 마련해주었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_3">
+			<Text>관세음보살의 화신</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_3">
+			<Text>송첸 감포는 티베트 민중에게 불교를 처음으로 도입하고 전파한 왕입니다. 그는 불교에 헌정된 수많은 사원을 건립했으며, 그중 가장 유명한 것은 라싸의 조캉 사원과 네동의 창축 사원입니다. 그의 통치 시기에는 산스크리트어로 된 불경이 새로 만든 티베트 문자로 번역되었습니다. 이후 전통 사료에서는 송첸 감포를 티베트에 불교를 정착시킨 세 명의 ‘법왕(초걀)’ 중 첫 번째 인물로 언급하며, 그를 관세음보살의 화신으로 보기도 합니다. 『백련의 수호자』라는 책에서는 송첸 감포를 관세음보살의 현신으로 묘사하고 있으며, 달라이 라마 또한 같은 화신으로 여겨지고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_4">
+			<Text>장중으로 가는 길</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_4">
+			<Text>송첸 감포는 뛰어난 외교가일 뿐만 아니라 전장에서 장군으로서의 재능도 보여주었습니다. 초기에 감포는 대신 먀앙 망포르제의 지휘 아래 장중 병력의 지원을 받아 동북부의 숨파 부족을 약 627년에 격파했습니다. 이후 6년 뒤 망포르제가 반역 혐의로 처형되었고, 대신으로 엠가르-송-르찬이 그 뒤를 이었습니다. 634년, 당 왕조 시기 티베트 사절단이 처음으로 중국에 도착했고, 중국은 이를 조공 사절로 기록했지만 실제로는 혼인 동맹을 요구하는 최후통첩의 서막이었습니다. 이 요청이 거절되자 티베트는 637년부터 638년까지 당의 동맹국들을 공격했고, 대부분 성공적인 전쟁을 치렀습니다.[NEWLINE][NEWLINE]장중 정복이 솽첸 감포의 재위 기간 중인지, 아니면 트리송 데첸(755–797 재위)의 시기인지에 대해 논란이 있지만, '당서'는 이 전쟁이 감포의 치세 중 634년 사절단 파견과 동시기에 일어난 것으로 기록하고 있습니다. 당과의 전쟁 중 여러 치앙 부족이 감포에게 항복했고, 감포는 양통과 연합하여 아자 또는 투위훈, 그리고 두 개의 치앙 부족을 격파한 뒤 송저우를 위협했습니다. 당시 중국은 티베트군이 20만 명이 넘는다고 추산했으며, 감포는 황제에게 공물로 금과 비단을 보내며 황실 공주와의 혼인을 요청했습니다. 황제가 이를 거절하자 감포는 군대를 이끌고 송저우를 공격했으나 동맹국들과의 전투에서 승리한 이후 물러나 사과했고, 결국 황제는 원래의 혼인 요청을 수락했습니다. 한편 티베트 측 역사서는 이 전쟁이 티베트의 완전한 승리로 끝났으며 당 황제가 스스로 공주를 보냈다고 기록하고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_5">
+			<Text>혼인 외교</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_5">
+			<Text>트리모니옌 동스텐은 송첸 감포의 첫 번째 아내였을 뿐이며, 이후 송첸 감포는 혼인을 외교 수단으로 활용하게 됩니다. 그는 최소 다섯 명의 아내가 있었고, 일부 전승에서는 여섯 명이라고도 전해집니다. 624년 이전, 감포는 네팔 공주 브리쿠티 데비와 혼인했으며, 이 결혼은 전설에 바탕을 두었지만 실제로 있었던 일로 여겨집니다. 636년 송저우 원정 이후, 중국 황제는 감포와 혼인할 공주를 보내기로 동의했습니다. 감포가 혼인을 외교 수단으로 활용한 대표적인 사례는 장중 왕국과의 관계에서 나타납니다. 그는 장중 왕의 여동생 릭믹야와 결혼했고, 릭믹야는 감포의 여동생 삿마르카르와 결혼했습니다. 하지만 릭믹야의 오빠 리그미리아가 결혼을 이행하지 않자, 삿마르카르는 오빠인 감포에게 이를 알리고 남편에 대한 포위를 계획하는 데 도움을 주었습니다. 이 결과 장중은 티베트 제국에 편입되었습니다. 서하와의 전투가 끝난 후 감포는 그 왕의 딸을 아내로 맞이하게 되었고, 640년 중국을 떠나 감포와 결혼하러 온 문성공주로 인해 티베트와 중국 사이에 평화가 다시 찾아오게 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_HEADING_6">
+			<Text>역사의 평가</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TEXT_6">
+			<Text>『티베트 연대기』에 따르면, 송첸 감포는 649년경 사망했고, 이듬해 당나라 황제가 조문과 위로의 편지를 담은 사절단을 보냈습니다. 그의 삶의 많은 부분이 전설로 남아 있지만, 티베트에 남긴 감포의 족적은 매우 찬란하고 지속적입니다. 그는 티베트 불교의 아버지이며, 문화 발전의 선구자이자 외교의 달인, 그리고 제국을 넓힌 정복자였습니다. 즉, 송첸 감포는 단순한 보호자가 아닌, 티베트 문화와 영성을 뿌리내린 존재로서 관세음보살의 화신이라 불릴 만한 인물입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_LIVED">
+			<Text>617년경 ~ 649년</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_NAME">
+			<Text>송첸 감포</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_SUBTITLE">
+			<Text>티베트의 지도자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TITLES_1">
+			<Text>왕</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_JAR_SONGTSEN_GAMPO_TITLES_2">
+			<Text>촉걀</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_DOM_JAR_SONGTSEN_GAMPO_TEXT">
+			<Text>축복이 있기를, 위대한 왕 송첸 감포여. 당신은 자랑스러운 티베트 제국을 세우고, 그 통치를 주변 지역 대부분까지 확장하셨습니다. 당신의 통치 아래에서 티베트는 고대의 여러 왕국—중국과 인도 등—의 지배를 위협하는 존재가 되었지요. 당신은 또한 불교를 제국에 도입한 인물로도 널리 알려져 있으며, 그 유산은 제국의 몰락 이후에도 오랫동안 이어졌습니다. 뛰어난 외교력으로 주변 왕국들을 충성스러운 신하와 봉신으로 삼아 티베트의 입지를 더욱 공고히 하셨습니다. 당신 이후 티베트는 수 세기 동안 번영을 누리며, 동쪽의 중국에서 서쪽의 파키스탄, 남쪽의 인도양까지 뻗어가는 제국을 다스렸습니다. 그러나 결국 제국은 인간의 탐욕 앞에 무너졌고, 중앙집권 체제가 붕괴되며 내전에 빠져들었으며, 이는 곧 제국의 종말이자 티베트의 몰락을 의미했습니다. 그 후로 티베트는 자신이 한때 지배했던 이들로부터 침략을 당했고, 오늘날까지도 중국의 영토 안에 머무르고 있습니다.[NEWLINE][NEWLINE]오, 위대한 송첸 감포여, 당신은 외세를 몰아내고 티베트를 다시 세계의 지붕으로 되돌릴 수 있겠습니까? 사라진 꿈의 잿더미 속에서 다시 제국을 세우고 티베트를 새로운 황금시대로 이끌 수 있겠습니까? 당신은 시간을 견뎌낼 문명을 세울 수 있겠습니까?</Text>
+		</Row>
+		<!----------------------------------------------------------------
+						Diplomacy
+		------------------------------------------------------------------>
+		<!--First Greeting messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_FIRSTGREETING_1">
+			<Text>세상의 지붕, 티베트에 온 걸 환영하오, 친구여. 협상에서 공정하게 대한다면 우리 사이에 문제는 없을 것이오.</Text>
+		</Row>
+    	<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_FIRSTGREETING_2">
+			<Text>환영하오, 환영하오, 용감한 모험가여! 송첸 감포가 그대에게 티베트의 낙원을 소개하오. 그런데, 혹시 적령기의 혼기가 찬 딸이 있소? 요즘 좋은 인연을 모으는 중이오.</Text>
+		</Row>
+		<!--Defeated messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DEFEATED_1">
+			<Text>흥... 나는 오래 머물지 않을 것이오... 곧 다시 환생할 것이니... 전쟁은... 계속되리라...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DEFEATED_2">
+			<Text>그대는 티베트의 땅을 정복했을지 모르나, 우리 민족은 정복하지 못했소. 우리는 다시 일어설 것이오, 온 세상이 우리 편이 될 것이오.</Text>
+		</Row>
+		<!-- Human repeats an action too much, gets the following responses -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_REPEAT_TOO_MUCH_1">
+			<Text>이렇게 계속 귀찮게 하면 내가 어떻게 마음의 평화를 찾을 수 있겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_REPEAT_TRADE_TOO_MUCH_1">
+			<Text>... 한숨 ...</Text>
+		</Row>
+		<!-- Greetings -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_HOSTILE_HELLO_1">
+			<Text>왜 내 명상을 방해하는 것이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_POLITE_HELLO_1">
+			<Text>티베트에 다시 오신 것을 환영하오, 친구여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_1">
+			<Text>그대가 더 많은 것을 움켜쥘수록, 잃을 때의 고통도 더 커지리. 아니… 내가 빼앗을 때 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_AGGRESSIVE_EXPANSION_1">
+			<Text>소유를 늘리는 것으론 평화를 얻을 수 없소. 기다리는 건 오직 고통뿐이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DENOUNCE_1">
+			<Text>그대의 영혼은 아직 지도자라 부르기엔 미숙하오. 다음 생에서 다시 오시오.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 비난했습니다! 참고: 현재 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DENOUNCE_2">
+			<Text>이것이 바로 업보요.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 비난했습니다! 참고: 현재 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_RESPONSE_TO_BEING_DENOUNCED_1">
+			<Text>분노를 붙드는 것은 누군가에게 던지려 손에 쥐는 뜨거운 숯과 같소. 데이는 건 결국 자기 자신이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_RESPONSE_TO_BEING_DENOUNCED_2">
+			<Text>우릴 구원할 자는 없소. 그 누구도, 그 무엇도. 우리는 스스로 길을 걸어야 하오. 나를 탓하는 그대, 정작 자신을 마주할 용기가 없을 뿐이오.</Text>
+		</Row>
+		<!-- General Diplo Text -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_COOP_WAR_REQUEST_1">
+			<Text>변화는 내면에서 시작되지만, 정권 교체는 외부에서 일어나지요. {1_PlayerName:textkey}는 끌어내려야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_COOP_WAR_REQUEST_2">
+			<Text>{1_PlayerName:textkey}는 민족을 이끌 자격이 없습니다. 그들의 백성은 우리 깃발 아래에서 더 큰 깨달음을 얻을 수 있지 않겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_COOP_WAR_TIME_1">
+			<Text>수레바퀴는 돌고, 이번에는 {1_PlayerName:textkey}를 향해 움직이는군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DEC_FRIENDSHIP_1">
+			<Text>수천 개의 촛불도 단 하나의 촛불로부터 불을 얻을 수 있습니다. 그 촛불의 수명은 줄지 않으며, 행복은 나눌수록 커지지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DEC_FRIENDSHIP_2">
+			<Text>평소 같으면 공주를 달라 하겠지만, 오늘 우리의 우정엔 그 어떤 장식도 필요 없다고 생각합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_AGGRESSIVE_MILITARY_WARNING_1">
+			<Text>내 국경 근처에 그대의 병력이 지나치게 많다는 소문이 들리더군요. 평화를 원한다면, 물러나는 게 좋을 겁니다. 우리 사이에 감정의 골이 깊어지는 건 바라지 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_RETURNED_CIVILIAN_1">
+			<Text>오늘만큼은 이 사람들에게 구원이 외부에서 찾아왔군요. 당신의 행동은 오래도록 기억될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_RETURNED_CIVILIAN_2">
+			<Text>당신의 행위는 당신을 위대한 영혼이자 더 큰 지도자로 각인시킵니다.</Text>
+		</Row>
+		<!--Insults-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_GENERIC_1">
+			<Text>죽지 않을 것처럼 살지만, 결국 살아보지도 못하고 죽는 법이지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_GENERIC_2">
+			<Text>우리 관계는 아마도 회복 불가능할 겁니다. 당신네 공주를 백 명, 천 명 데려온다 한들 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_GENERIC_3">
+			<Text>당신이 특별하다는 걸 기억하십시오. 모든 이가 그렇듯이요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_GENERIC_4">
+			<Text>그나저나… 따님 나이가 어떻게 되셨더라?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_MILITARY_1">
+			<Text>수십만이 황제를 지키기 위해 한순간에 몰려들지요. 자, 그대에게도 언젠가 그런 날이 올 거라 기대하고 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_UNHAPPINESS_1">
+			<Text>진정으로 행복해지려면 놓아야 합니다. 땅을 넘기며 당신의 불쌍한 백성들에게도 이 진리를 가르쳐 주시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_CITIES_1">
+			<Text>당신 도시의 건물들을 전부 쌓아 올려도, 겨우 쿰붐 하나 정도나 될까요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_INSULT_CULTURE_1">
+			<Text>우리 친구가 되어볼까요? 당신 문화가 저리도 미약하니, 어차피 같은 이념으로 끝날 테니까요!</Text>
+		</Row>
+		<!--Public Declarations-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DECLARATION_PROTECT_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey}는 이제부터 {1_MinorCivName:textkey}를 보호한다고 세계에 선언합니다. 이 도시 국가를 공격하면 관계가 크게 악화되며 전쟁으로 이어질 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DECLARATION_ABANDON_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey}는 {1_MinorCivName:textkey}에 대한 보호 약속을 철회했습니다.</Text>
+		</Row>
+		<!-- Human is asking the AI for something -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DONT_SETTLE_NO_1">
+			<Text>사실 이 땅은 우리 백성이 전생에 살았던 곳이오. 그러니 오히려 내가 그대를 꾸짖어야 하지 않겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DONT_SETTLE_YES_1">
+			<Text>이 길이 평화를 향한 길이라면, 따르겠습니다.</Text>
+		</Row>
+		<!--Deal Offers and related-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_LUXURY_TRADE_1">
+			<Text>샹그릴라도 이런 즐거움은 없소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_RESPONSE_REQUEST_1">
+			<Text>지금 도와주면, 카르마가 그대를 보상할 것이오.</Text>
+		</Row>
+		<!--AI Attacked by Human - Strong and Weak also include the default response sets-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_ATTACKED_HOSTILE_1">
+			<Text>환생을 서두르셨군요. 뭐, 이해합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_ATTACKED_EXCITED_1">
+			<Text>당신에게는 이것이 시작이자 끝입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_ATTACKED_SAD_1">
+			<Text>내 마음의 평화를 흔들었군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_ATTACKED_BETRAYED_1">
+			<Text>거짓되고 악한 친구는 야수보다도 더 두려운 존재이지요. 야수는 몸을 해칠지언정, 악한 친구는 마음을 병들게 하니까요. 이 얼마나 사실인가요.</Text>
+		</Row>
+		<!--AI Declaring War on Human - Strong and Weak also include the default response sets-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_GENERIC_1">
+			<Text>수레바퀴가 돌고 있습니다. 이번엔 당신 차례군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_LAND_1">
+			<Text>당신은 이제… 땅을 놓아야 할 때입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_WORLD_CONQUEST_1">
+			<Text>나의 통치 아래, 세계는 윤회의 고리를 벗어나고 모든 영혼은 깨달음을 얻을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_WORLD_CONQUEST_2">
+			<Text>나는 이 세상을 다스릴 운명이라는 걸 깨달았소. 나는 더 높은 길을 걷고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_OPPORTUNITY_1">
+			<Text>이것이 곧 카르마입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_DESPERATE_1">
+			<Text>전쟁의 불길 속에서 나는 이 필멸의 세상을 초월하겠고, 당신의 위대한 제국은 열반의 영광 아래 무너질 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_BETRAYAL_1">
+			<Text>이번 생은 풍뎅이로 환생하겠지만, 어쩌겠소. 참을 수가 없었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_DOW_BETRAYAL_2">
+			<Text>기회가 있었을 때 내게 당신의 딸을 시집보냈어야 했소.</Text>
+		</Row>
+		<!-- The human is at war -->
+		<!-- AI dislikes you -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_HOSTILE_HUMAN_AT_WAR_1">
+			<Text>그대의 불경한 학살 속에서 속죄라도 찾으러 온 것이오?</Text>
+		</Row>
+		<!-- AI has no negative feelings -->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GREETING_HUMAN_AT_WAR_1">
+			<Text>전쟁의 시대에 그대는 영적 인도를 구하고 있는 것이오?</Text>
+		</Row>
+		<!-- The human has an aggressive military posture -->
+		<!-- AI dislikes you -->
+		<Row Tag="TXT_KEY_LEADER_JFD_INNOCENT_GREETING_HOSTILE_AGGRESSIVE_MILITARY_1">
+			<Text>이 신성한 땅에서 군대를 물리시길 간청하오.</Text>
+		</Row>
+		<!--AI Responses to a human peace offer-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_TOO_SOON_NO_PEACE_1">
+			<Text>명상을 방해하지 마시오.</Text>
+		</Row>
+		<!--AI Responses to a discussion mode topics-->
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_BAD_1">
+			<Text>어쩌면 당신의 후계자가 더 낫겠군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JAR_SONGTSEN_GAMPO_GOOD_1">
+			<Text>지혜를 찾았다니 기쁩니다.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

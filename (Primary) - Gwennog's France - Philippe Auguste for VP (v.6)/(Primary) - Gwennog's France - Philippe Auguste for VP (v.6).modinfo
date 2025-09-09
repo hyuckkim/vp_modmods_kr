@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="77cd9015-a4a5-490c-9d95-6499ed2d8554" version="6">
+  <Properties>
+    <Name>(Primary) - Gwennog's France - Philippe Auguste for VP</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>[ICON_BULLET]Adds [COLOR_CYAN]France[ENDCOLOR], led by Philippe II Auguste, as a playable Civilization.
+			[NEWLINE][ICON_BULLET]Requires at least the [COLOR_POSITIVE_TEXT]4.2[ENDCOLOR] version of Vox Populi for full compatibility.</Teaser>
+    <Description>Adds France into the game, under the August King Philippe II</Description>
+    <Authors>Gwennog with help of Hinin</Authors>
+    <SpecialThanks>look at the forum page</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="(over) More Unique Components for VP" />
+  </References>
+  <Blocks />
+  <Files>
+	<File md5="c42324c743a1e604f77919b430a95111" import="0">4UC/4UC_GW_France_GameDefines.sql</File>
+	<File md5="da3956ac6811d378e033a4b8b9d21509" import="0">4UC/4UC_GW_France_GameText.xml</File>
+	<File md5="88ef1e9d6411cfd34e151f7417021508" import="1">Art/3DModels/Canon_Gribeauval/cannon_24pound_diff.dds</File>
+	<File md5="52e6dd19be046bd8a1555c56caab1a45" import="1">Art/3DModels/Canon_Gribeauval/cannon_24pound_sref.dds</File>
+	<File md5="b26d1a052dd67ade7d6d3c83535ee611" import="1">Art/3DModels/Canon_Gribeauval/GunCrew_diff.dds</File>
+	<File md5="4a77ab0fd8f32786f3756f9471012c73" import="1">Art/3DModels/Canon_Gribeauval/GunCrew_sref.dds</File>
+	<File md5="e512cfb0d832cf1eafa157a1828623b9" import="1">Art/3DModels/Canon_Gribeauval/NapoleonCannon.fxsxml</File>
+	<File md5="6dd3501f60795a8ce82b0e29b3eef5b8" import="1">Art/3DModels/Canon_Gribeauval/NapoleonCannon.gr2</File>
+	<File md5="4334664067fd1e7bbc240718d93cf2a4" import="1">Art/3DModels/Chevalier/Knight_France_Horse_v2.dds</File>
+	<File md5="7695f37e3d33e31398ab077ad6fe79d5" import="1">Art/3DModels/Chevalier/Knight_France_Horse_v2_gloss.dds</File>
+	<File md5="5d70df0e8f6b306a1c146f9b1bab1373" import="1">Art/3DModels/Chevalier/Knight_France_v2.dds</File>
+	<File md5="2c471715c377165ae2bd93bfd848c25e" import="1">Art/3DModels/Chevalier/Knight_France_v2.fxsxml</File>
+	<File md5="b1d1bb40fe214143fa4935918e9f6912" import="1">Art/3DModels/Chevalier/Knight_France_v2.gr2</File>
+	<File md5="2a33187f36b9688800a1fd681a3cb538" import="1">Art/3DModels/Chevalier/Knight_France_v2_gloss.dds</File>
+	<File md5="92178d0168cdb5a543d6671a68fa7f5a" import="1">Art/Icons/Flag_GW_France_032.dds</File>
+	<File md5="1d37a00c32a6ff7ed1bb3698a3ca12d4" import="1">Art/Icons/GW_France_Alpha_024.dds</File>
+	<File md5="0e265689ca778b77eef2342b3280eb52" import="1">Art/Icons/GW_France_Alpha_032.dds</File>
+	<File md5="d62fd6cdd567adfd69152ff39515a563" import="1">Art/Icons/GW_France_Alpha_048.dds</File>
+	<File md5="c50da974ba8cb9ec4e8c72cffd8e5a5f" import="1">Art/Icons/GW_France_Alpha_064.dds</File>
+	<File md5="fe81ea1fa13e4b472764cc20fdc04e4b" import="1">Art/Icons/GW_France_Atlas_032.dds</File>
+	<File md5="2664043af2bdc92aa9f328b7f381767a" import="1">Art/Icons/GW_France_Atlas_045.dds</File>
+	<File md5="10f42b44e62a21f670a375bf479fb402" import="1">Art/Icons/GW_France_Atlas_064.dds</File>
+	<File md5="735c084068395034b0bc417e8760b698" import="1">Art/Icons/GW_France_Atlas_080.dds</File>
+	<File md5="fc8b0632e7657295ffacb97ca6eb044b" import="1">Art/Icons/GW_France_Atlas_128.dds</File>
+	<File md5="88437df266c963827167c1140849a48d" import="1">Art/Icons/GW_France_Atlas_256.dds</File>
+	<File md5="2ea125a295e31afc12cae0f2c747dd9b" import="1">Art/Icons/SV_GW_France_Canon_Gribeauval.dds</File>
+	<File md5="f2aa0765a19719be4f087dfaf0497bb0" import="1">Art/Icons/SV_GW_France_Chevalier.dds</File>
+	<File md5="46b70de814241f3053e861e2b667ffe6" import="1">Art/Leaderscene/GW_France_Philippe_Leaderscene.dds</File>
+	<File md5="077e53dd44b8db902d3973aaf7bf72dd" import="1">Art/Leaderscene/GW_France_Philippe_Leaderscene.xml</File>
+	<File md5="c88eace8b2beca0a2e4d225725108c9f" import="1">Art/Maps/GW_France_Philippe_DOM.dds</File>
+	<File md5="e0e6b8bf0dacfee7ef22375aeae88f41" import="1">Art/Maps/GW_France_Philippe_Map.dds</File>
+	<File md5="b75889a907981153157a619ba962c2a7" import="1">Art/PI/GW_France_PI_016.dds</File>
+	<File md5="52a227a28e1c5177375dfaa256629ad0" import="1">Art/PI/GW_France_PI_032.dds</File>
+	<File md5="d365cc9c9ecbdbaecfb23c4a75d4b68c" import="1">Art/PI/GW_France_PI_045.dds</File>
+	<File md5="300f1458bc629674f84591404128f707" import="1">Art/PI/GW_France_PI_064.dds</File>
+	<File md5="1cbd741fe24298a259f475ca814f82dd" import="1">Art/PI/GW_France_PI_256.dds</File>
+	<File md5="4fa3840b8183174edc4ca89f57ca2d50" import="1">Audio/GW_France_Peace.mp3</File>
+	<File md5="f6b4f385e209682dc972605e374228b1" import="1">Audio/GW_France_War.mp3</File>
+	<File md5="5b9ffa36b955770296824c6943f2519a" import="0">Core/GW_France_ArtDefines.sql</File>
+	<File md5="ba6713ad5ecdf758da3cea9d717d5745" import="0">Core/GW_France_GameDefines.sql</File>
+	<File md5="b826e7edbd17860127171f4ced21f3de" import="0">Core/GW_France_GameText.xml</File>
+	<File md5="910a159978bd9e1b2c191f4893e19ae0" import="0">Lua/GW_France_Functions.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/GW_France_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/GW_France_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/GW_France_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>4UC/4UC_GW_France_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>4UC/4UC_GW_France_GameText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/GW_France_Functions.lua">
+      <Name>France_Functions</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
