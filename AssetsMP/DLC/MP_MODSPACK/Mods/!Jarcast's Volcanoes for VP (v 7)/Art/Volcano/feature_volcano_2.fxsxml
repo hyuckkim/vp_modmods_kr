@@ -1,8 +1,0 @@
-<Asset>
-  <Mesh file="volcano_2.gr2" source="Max" />
-  <BoneUsage>
-    <Bone name="FX_Volcano" />
-  </BoneUsage>
-  <TimedTrigger file="FX_Triggers_Feature_Volcano.ftsxml" source="Tool" model="Volcano" state="0,1,2,3" />
-  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
-</Asset>

@@ -1,9 +1,0 @@
-UPDATE Units
-SET CanChangePort = 1
-WHERE CombatClass = 'UNITCOMBAT_RECON' AND Combat < (SELECT Combat FROM Units WHERE Type='UNIT_PARATROOPER') AND NOT Class='UNITCLASS_PARATROOPER';
-
-UPDATE Units
-SET CanRepairFleet = 1, CanChangePort = 1
-WHERE Class = 'UNITCLASS_GREAT_ADMIRAL';
-
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'GLOBAL_SEPARATE_GREAT_ADMIRAL';
