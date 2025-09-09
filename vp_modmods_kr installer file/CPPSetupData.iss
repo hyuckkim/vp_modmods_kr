@@ -124,7 +124,7 @@ Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overh
 Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
 Source: "..\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)\*"; DestDir: "{app}\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gfpa
 Source: "..\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: usf
-Source: "..\3 Units per Tile (v 1)\*"; DestDir: "{app}\MODS\3 Units per Tile (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: 3u
+Source: "..\3 Units per Tile (v 1)\*"; DestDir: "{app}\MODS\3 Units per Tile (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: upt
 Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
 Source: "..\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
@@ -315,7 +315,7 @@ Name: "ts"; Description: "산림 천이 (TreeSuccession)"; Types: VPMAX Custom; 
 Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vb"; Description: "Horem의 알로에 베라 보너스 자원 (Horem's Aloe Vera bonus resource)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
-Name: "3u"; Description: "타일당 유닛 3개 (3 Units per Tile)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "upt"; Description: "타일당 유닛 3개 (3 Units per Tile)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gc"; Description: "포획+++ (Capture+++)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "hc"; Description: "VP 육각 타일 정복 (Hex Conquer VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jpt"; Description: "Jarcast의 장창병 수정 (Jarcast's Pikeman Tweak)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
