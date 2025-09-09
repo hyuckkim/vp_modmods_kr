@@ -225,7 +225,7 @@ Name: "rp"; Description: "VP 경로 계획서 (Route Planner for VP)"; Types: VP
 Name: "hn"; Description: "VP 행복도 알림 (VP Happiness notifications)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 Name: "qt"; Description: "빠른 턴 (Quick Turns)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
-Name: "ige"; Description: "인게임 편집기 (InGame Editor+)"; Types: VPUI VPEXCustom; Flags: disablenouninstallwarning
+Name: "ige"; Description: "인게임 편집기 (InGame Editor+)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 Name: "leh"; Description: "늘어난 시대 - 역사적 (Longer Eras - Historic)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 Name: "wr"; Description: "불가사의 경쟁 (Wonder Race)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 Name: "ele"; Description: "서커스 건설 후 코끼리 소리 (Elephant Sound When Circus Built)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
