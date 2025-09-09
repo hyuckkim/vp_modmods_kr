@@ -209,129 +209,126 @@ Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignore
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC Custom; Flags: disablenouninstallwarning fixed
-Name: "vpnvc"; Description: "Vox Populi 한국어 번역 (투표 문명 색상 제거)"; Types: VP34UCNVC VP34UCEXNVC VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP VPUI VPEX Custom; Flags: disablenouninstallwarning fixed
+Name: "vpnvc"; Description: "Vox Populi 한국어 번역 (투표 문명 색상 제거)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formation for VP)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "lm"; Description: "VP 큰 미니맵 (Large Minimap for VP wth EUI only)"; Types: Custom; Flags: disablenouninstallwarning
 
-Name: "vpuc"; Description: "VP 더 많은 고유 요소 (More Unique Components for VP)"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vppt"; Description: "VP 승급 트리 (Promotion Tree for VP)"; Types: VP34UC VP34UCNVC VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vpto"; Description: "VP 무역 기회 (Trade Opportunities for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vpwp"; Description: "VP 불가사의 계획서 (Wonder Planner For VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rp"; Description: "VP 경로 계획서 (Route Planner for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "hn"; Description: "VP 행복도 알림 (VP Happiness notifications)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "qt"; Description: "빠른 턴 (Quick Turns)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ige"; Description: "인게임 편집기 (InGame Editor+)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "leh"; Description: "늘어난 시대 - 역사적 (Longer Eras - Historic)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "wr"; Description: "불가사의 경쟁 (Wonder Race)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ele"; Description: "서커스 건설 후 코끼리 소리 (Elephant Sound When Circus Built)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "waua"; Description: "전체 기상 & 전체 승급 (Wake All and Upgrade All Units In Military Overview)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "mc"; Description: "의미있는 색깔 (Meaningful Colours)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "smm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "cms"; Description: "개선된 모딩 화면 (Enhanced Modding Screen)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "cs"; Description: "문명 선택 개선 (CivSelection)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "le"; Description: "VP 목록 개선 (List Enhancements for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "asb"; Description: "자동 건물 팔기 (Auto-Sell Buildings)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "csl"; Description: "VP 도시 국가 지도자 (City-States Leaders for VP)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ns"; Description: "알림 설정 (Notification Settings)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "qa"; Description: "빠른 애니메이션 (Quick Animations)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "vpuc"; Description: "VP 더 많은 고유 요소 (More Unique Components for VP)"; Types: VP VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "vppt"; Description: "VP 승급 트리 (Promotion Tree for VP)"; Types: VP VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "vpto"; Description: "VP 무역 기회 (Trade Opportunities for VP)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "vpwp"; Description: "VP 불가사의 계획서 (Wonder Planner For VP)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "rp"; Description: "VP 경로 계획서 (Route Planner for VP)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "hn"; Description: "VP 행복도 알림 (VP Happiness notifications)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "qt"; Description: "빠른 턴 (Quick Turns)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "ige"; Description: "인게임 편집기 (InGame Editor+)"; Types: VPUI VPEXCustom; Flags: disablenouninstallwarning
+Name: "leh"; Description: "늘어난 시대 - 역사적 (Longer Eras - Historic)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "wr"; Description: "불가사의 경쟁 (Wonder Race)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "ele"; Description: "서커스 건설 후 코끼리 소리 (Elephant Sound When Circus Built)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "waua"; Description: "전체 기상 & 전체 승급 (Wake All and Upgrade All Units In Military Overview)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "mc"; Description: "의미있는 색깔 (Meaningful Colours)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "smm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "cms"; Description: "개선된 모딩 화면 (Enhanced Modding Screen)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "cs"; Description: "문명 선택 개선 (CivSelection)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "le"; Description: "VP 목록 개선 (List Enhancements for VP)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "asb"; Description: "자동 건물 팔기 (Auto-Sell Buildings)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+;Name: "csl"; Description: "VP 도시 국가 지도자 (City-States Leaders for VP)"; Types: VPUI Custom; Flags: disablenouninstallwarning
+Name: "ns"; Description: "알림 설정 (Notification Settings)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "qa"; Description: "빠른 애니메이션 (Quick Animations)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 
-Name: "uiast"; Description: "유적 도움말 (Antiquity Site Tooltips)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiamp"; Description: "자동 지도 핀 (Auto Map Pins)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uich"; Description: "도시 행복도 (City Happiness)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uicp"; Description: "도시 생산력 (City Production)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uicr"; Description: "도시 종교 (City Religions)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uidl"; Description: "외교 기록 (Diplomacy Log)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiga"; Description: "골드 알림 (Gold Alerts)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uimp"; Description: "지도 핀 (Map Pins)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uinaew"; Description: "노동자 자동 승선 막기 (No Auto-Embark Workers)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiner"; Description: "저항 벗어남 알림 (Notify Exit Resistance)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiob"; Description: "야만인 오버레이 (Overlay Barbarians)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiocl"; Description: "도시 제한 오버레이 (Overlay City Limits)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uioc"; Description: "대륙 오버레이 (Overlay Continents)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiohaa"; Description: "항구와 공항 오버레이 (Overlay Harbours And Airports)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiol"; Description: "사치 자원 오버레이 (Overlay Luxuries)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uior"; Description: "자원 오버레이 (Overlay Resources)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiorar"; Description: "도로와 철도 오버레이 (Overlay Road And Rail)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiout"; Description: "시설 없는 타일 오버레이 (Overlay Unimproved Tiles)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uiow"; Description: "불가사의 오버레이 (Overlay Wonders)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "uisc"; Description: "시계 요약 (Summary Clock)"; Types: VP34UCEX VP34UCEXNVC VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "uiast"; Description: "유적 도움말 (Antiquity Site Tooltips)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiamp"; Description: "자동 지도 핀 (Auto Map Pins)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uich"; Description: "도시 행복도 (City Happiness)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uicp"; Description: "도시 생산력 (City Production)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uicr"; Description: "도시 종교 (City Religions)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uidl"; Description: "외교 기록 (Diplomacy Log)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiga"; Description: "골드 알림 (Gold Alerts)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uimp"; Description: "지도 핀 (Map Pins)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uinaew"; Description: "노동자 자동 승선 막기 (No Auto-Embark Workers)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiner"; Description: "저항 벗어남 알림 (Notify Exit Resistance)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiob"; Description: "야만인 오버레이 (Overlay Barbarians)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiocl"; Description: "도시 제한 오버레이 (Overlay City Limits)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uioc"; Description: "대륙 오버레이 (Overlay Continents)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiohaa"; Description: "항구와 공항 오버레이 (Overlay Harbours And Airports)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiol"; Description: "사치 자원 오버레이 (Overlay Luxuries)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uior"; Description: "자원 오버레이 (Overlay Resources)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiorar"; Description: "도로와 철도 오버레이 (Overlay Road And Rail)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiout"; Description: "시설 없는 타일 오버레이 (Overlay Unimproved Tiles)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uiow"; Description: "불가사의 오버레이 (Overlay Wonders)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "uisc"; Description: "시계 요약 (Summary Clock)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's Civ VI Style City Names)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "gy"; Description: "Gedemon의 YnAEMP (Gedemon's YnAEMP)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "ras"; Description: "진짜 고급 설정 (Really Advanced Setup)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "fnv"; Description: "모하비 황무지 (Mojave Wasteland)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "df"; Description: "전설의 세계 (World of Lore)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
+Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VPUI VPEX Custom; Flags: disablenouninstallwarning
 
-Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ee"; Description: "VP 계몽 시대 (Enlightenment Era for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "fa"; Description: "VP 미래 시대 (Future Age for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jhw"; Description: "VP Jarcast의 숨겨진 불가사의 (Jarcast's Hidden Wonders VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "emr"; Description: "VP + UCS 한층 더 많은 자원 (Even More Resources for Vox Populi UCS)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "Mariw"; Description: "해양 날씨 (Maritime Weather+)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rf"; Description: "재식림 (Reforestation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ts"; Description: "산림 천이 (TreeSuccession)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "wb"; Description: "포경 (Whale Battles)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jfds"; Description: "VP  JFD의 주권 (JFD's Sovereignty for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "gy"; Description: "Gedemon의 YnAEMP (Gedemon's YnAEMP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "ras"; Description: "진짜 고급 설정 (Really Advanced Setup)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "jcm"; Description: "VP Jarcast의 대리석 도시 (Jarcast's Cities of Marble for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "gc"; Description: "포획+++ (Capture+++)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "sf"; Description: "속임수 (Subterfuge)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "ed"; Description: "이벤트와 결정 (Events and Decisions)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "cd"; Description: "대륙 이동설 (Continental Drift)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "hc"; Description: "VP 육각 타일 정복 (Hex Conquer VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "hrc"; Description: "역사적 종교 완전판 (Historical Religions Complete)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "vb"; Description: "Horem의 알로에 베라 보너스 자원 (Horem's Aloe Vera bonus resource)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jhal"; Description: "Jarcast와 Hokath의 추가 사치 자원 (Jarcast & Hokath's Additional Luxuries)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jpt"; Description: "Jarcast의 장창병 수정 (Jarcast's Pikeman Tweak)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "fnv"; Description: "모하비 황무지 (Mojave Wasteland)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "nm"; Description: "해군 모드 (NavalMod)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "nbm"; Description: "새로운 신앙 모드 (New Beliefs Mods)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "pb"; Description: "VP 부교 (Pontoon Bridges for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpp"; Description: "영구 판테온 (Permanent Pantheons)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-;Name: "tb"; Description: "어뢰정 (TorpedoBoat)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "wm"; Description: "노동자 등산 (Worker Mountaineering)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "df"; Description: "전설의 세계 (World of Lore)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jv"; Description: "Jarcast의 VP용 화산 (Jarcast's Volcanoes for VP)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "gw"; Description: "지구 온난화 (Global Warming)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "miwsr"; Description: "군인이 포함된 기계화 보병 (Mechanized Infantry with Soldiers, Resized)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's Civ VI Style City Names)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "mine"; Description: "멋진 신세계용 지뢰 (Landmines for BNW)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "lcv"; Description: "zai4z의 랜드마크 문화적 변화 (zai4z's Landmark Cultural Variation)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VPEX Custom; Flags: disablenouninstallwarning
+Name: "ee"; Description: "VP 계몽 시대 (Enlightenment Era for VP)"; Types: VPEX Custom; Flags: disablenouninstallwarning
+Name: "fa"; Description: "VP 미래 시대 (Future Age for VP)"; Types: VPEX Custom; Flags: disablenouninstallwarning
+Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jhw"; Description: "VP Jarcast의 숨겨진 불가사의 (Jarcast's Hidden Wonders VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "ucs"; Description: "VP 고유 도시 국가 (Unique City States for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "emr"; Description: "VP + UCS 한층 더 많은 자원 (Even More Resources for Vox Populi UCS)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "wcr"; Description: "세계 의회 개선 (World Congress Reformation)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "Mariw"; Description: "해양 날씨 (Maritime Weather+)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rf"; Description: "재식림 (Reforestation)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "ts"; Description: "산림 천이 (TreeSuccession)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "wb"; Description: "포경 (Whale Battles)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jfds"; Description: "VP JFD의 주권 (JFD's Sovereignty for VP)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "jcm"; Description: "VP Jarcast의 대리석 도시 (Jarcast's Cities of Marble for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "gc"; Description: "포획+++ (Capture+++)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "sf"; Description: "속임수 (Subterfuge)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "ed"; Description: "이벤트와 결정 (Events and Decisions)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "cd"; Description: "대륙 이동설 (Continental Drift)"; Types: VPUI Custom; Flags: disablenouninstallwarning
+;Name: "hc"; Description: "VP 육각 타일 정복 (Hex Conquer VP)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "hrc"; Description: "역사적 종교 완전판 (Historical Religions Complete)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "vb"; Description: "Horem의 알로에 베라 보너스 자원 (Horem's Aloe Vera bonus resource)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jhal"; Description: "Jarcast와 Hokath의 추가 사치 자원 (Jarcast & Hokath's Additional Luxuries)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jpt"; Description: "Jarcast의 장창병 수정 (Jarcast's Pikeman Tweak)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "nm"; Description: "해군 모드 (NavalMod)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "nbm"; Description: "새로운 신앙 모드 (New Beliefs Mods)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "pb"; Description: "VP 부교 (Pontoon Bridges for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpp"; Description: "영구 판테온 (Permanent Pantheons)"; Types: Custom; Flags: disablenouninstallwarning
+;Name: "tb"; Description: "어뢰정 (TorpedoBoat)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "wm"; Description: "노동자 등산 (Worker Mountaineering)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jv"; Description: "Jarcast의 VP용 화산 (Jarcast's Volcanoes for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "gw"; Description: "지구 온난화 (Global Warming)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "miwsr"; Description: "군인이 포함된 기계화 보병 (Mechanized Infantry with Soldiers, Resized)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "mine"; Description: "멋진 신세계용 지뢰 (Landmines for BNW)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "lcv"; Description: "zai4z의 랜드마크 문화적 변화 (zai4z's Landmark Cultural Variation)"; Types: Custom; Flags: disablenouninstallwarning
 
-Name: "map"; Description: "추가 지도"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "cr"; Description: "역정찰 (Counter-Reconnaissance)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "eh"; Description: "탐험 유산 (Exploration Heritage)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpc0"; Description: "정찰 강화 지형 비용 (Recon Pay (Core0) Terrain Cost)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpc1"; Description: "정찰 강화 탐사 밸런스 (Recon Pay (Core1) Exploration Balancer)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpr1"; Description: "정찰 강화 빠른 연안 (Recon Pay (Recommended1) Fast Coast)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpr2"; Description: "정찰 강화 빠른 강 (Recon Pay (Recommended2) Fast Rivers)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpr3"; Description: "정찰 강화 빠른 연안의 (Recon Pay (Recommended3) Fast Coastal)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx1"; Description: "정찰 강화 극지인 (Recon Pay (Xtra1) Arctician)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx2"; Description: "정찰 강화 통제 구역 무시 (Recon Pay (Xtra2) Free ZoC)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx3"; Description: "정찰 강화 산림 이동 방해 (Recon Pay (Xtra3) Trees Obstruct Mounted Armor)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx4"; Description: "정찰 강화 항구 변경 (Recon Pay (Xtra4) Change Port)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx5"; Description: "정찰 강화 말 도둑 (Recon Pay (Xtra5) Horse Thieves)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
-Name: "rpx6"; Description: "정찰 강화 탐사 전문화 (Recon Pay (xtra6) Exploration Specialization)"; Types: VP34UCMAX VP34UCMAXNVC; Flags: disablenouninstallwarning
+Name: "map"; Description: "추가 지도"; Types: VPEX Custom; Flags: disablenouninstallwarning
+Name: "cr"; Description: "역정찰 (Counter-Reconnaissance)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "eh"; Description: "탐험 유산 (Exploration Heritage)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpc0"; Description: "정찰 강화 지형 비용 (Recon Pay (Core0) Terrain Cost)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpc1"; Description: "정찰 강화 탐사 밸런스 (Recon Pay (Core1) Exploration Balancer)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpr1"; Description: "정찰 강화 빠른 연안 (Recon Pay (Recommended1) Fast Coast)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpr2"; Description: "정찰 강화 빠른 강 (Recon Pay (Recommended2) Fast Rivers)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpr3"; Description: "정찰 강화 빠른 연안의 (Recon Pay (Recommended3) Fast Coastal)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx1"; Description: "정찰 강화 극지인 (Recon Pay (Xtra1) Arctician)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx2"; Description: "정찰 강화 통제 구역 무시 (Recon Pay (Xtra2) Free ZoC)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx3"; Description: "정찰 강화 산림 이동 방해 (Recon Pay (Xtra3) Trees Obstruct Mounted Armor)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx4"; Description: "정찰 강화 항구 변경 (Recon Pay (Xtra4) Change Port)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx5"; Description: "정찰 강화 말 도둑 (Recon Pay (Xtra5) Horse Thieves)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "rpx6"; Description: "정찰 강화 탐사 전문화 (Recon Pay (xtra6) Exploration Specialization)"; Types: Custom; Flags: disablenouninstallwarning
 
 [Types]
-Name: "VP34UC"; Description: "[기본] Vox Populi + 34UC";
-Name: "VP34UCNVC"; Description: "[기본] Vox Populi (투표 문명색 제거) + 34UC ";
-Name: "VP34UCEX"; Description: "[편의] Vox Populi + 34UC + 편의성 추가";
-Name: "VP34UCEXNVC"; Description: "[편의] Vox Populi (투표 문명색 제거) + 34UC + 편의성 추가 ";
-Name: "VP34UCMAX"; Description: "[전체] Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
-Name: "VP34UCMAXNVC"; Description: "[전체] Vox Populi  (투표 문명색 제거) + 34UC + 편의성 추가 + 컨텐츠 추가";
+Name: "VP"; Description: "Vox Populi 한국어";
+Name: "VPUI"; Description: "VP + UI + 지도";
+Name: "VPEX"; Description: "VP + UI + 계몽 + 미래 + 지도";
 Name: "Custom"; Description: "사용자 정의 설치"; Flags: iscustom
 
 [InstallDelete]

@@ -31,7 +31,7 @@ SetupIconFile=installer.ico
 WizardImageStretch=False
 Compression=lzma2
 SolidCompression=yes
-ShowComponentSizes=False
+ShowComponentSizes=true
 AllowNoIcons=yes
 Uninstallable=no
 PrivilegesRequired=admin
@@ -45,19 +45,18 @@ Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
-Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map
+Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: csbu
 
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "vp"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가"; Types: VP Custom; Flags: disablenouninstallwarning fixed
+Name: "vp"; Description: "VP + UI + 계몽 + 미래 + 지도"; Types: VP Custom; Flags: disablenouninstallwarning fixed
 Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: Custom; Flags: disablenouninstallwarning
 Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "map"; Description: "추가 지도"; Types: Custom; Flags: disablenouninstallwarning
 
 [Types]
-Name: "VP"; Description: "Vox Populi + 34UC + 편의성 추가 + 컨텐츠 추가";
+Name: "VP"; Description: "Vox Populi 한국어 번역";
 Name: "Custom"; Description: "사용자 정의 설치"; Flags: iscustom
 
 [InstallDelete]
