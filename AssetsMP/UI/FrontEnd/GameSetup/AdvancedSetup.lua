@@ -308,7 +308,7 @@ function RefreshPlayerList()
 					local leaderDescription = leader.Description;
 
 					--controlTable.LeaderName:SetText( Locale.ConvertTextKey( leaderDescription ) );
-					controlTable.CivPulldown:GetButton():LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_CIV", Locale.ConvertTextKey(civ.ShortDescription), Locale.ConvertTextKey(leaderDescription));
+					controlTable.CivPulldown:GetButton():LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_CIV", Locale.ConvertTextKey(leaderDescription), Locale.ConvertTextKey(civ.ShortDescription));
 
 					IconHookup( leader.PortraitIndex, 64, leader.IconAtlas, controlTable.Portrait );
 					IconHookup( civ.PortraitIndex, 64, civ.IconAtlas, controlTable.Icon );
@@ -356,7 +356,7 @@ function RefreshHumanPlayer()
 			Controls.CivName:SetHide(true);
 			Controls.RemoveButton:SetHide(true);
 			Controls.CivPulldown:SetHide(false);
-			Controls.CivPulldown:GetButton():SetText( Locale.ConvertTextKey( "TXT_KEY_RANDOM_LEADER_CIV", Locale.ConvertTextKey( civ.ShortDescription ), Locale.ConvertTextKey( leaderDescription ) ) );
+			Controls.CivPulldown:GetButton():SetText( Locale.ConvertTextKey( "TXT_KEY_RANDOM_LEADER_CIV", Locale.ConvertTextKey( leaderDescription ), Locale.ConvertTextKey( civ.ShortDescription ) ) );
 		end
 		
 		IconHookup( leader.PortraitIndex, 64, leader.IconAtlas, Controls.Portrait );
@@ -413,7 +413,7 @@ ScreenOptions = {
 				});
 			end
 			
-			table.sort(civs, function(a,b) return Locale.Compare(a.ShortDescription, b.ShortDescription) == -1; end);
+			table.sort(civs, function(a,b) return Locale.Compare(a.LeaderDescription, b.LeaderDescription) == -1; end);
 			
 			return civs;
 		end
@@ -433,7 +433,7 @@ ScreenOptions = {
 				pullDown:BuildEntry( "InstanceOne", controlTable );
 
 				controlTable.Button:SetVoids( playerID, id );
-				controlTable.Button:LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_CIV", civ.ShortDescription, civ.LeaderDescription);
+				controlTable.Button:LocalizeAndSetText("TXT_KEY_RANDOM_LEADER_CIV", civ.LeaderDescription, civ.ShortDescription);
 				controlTable.Button:LocalizeAndSetToolTip(civ.Description);
 			end    
 		    

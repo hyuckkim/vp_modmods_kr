@@ -1,7 +1,7 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "VP INT+ Modpack"
+#define MyAppName "vp_kr+Modpack"
 #define MyAppVersion "4.22"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
@@ -46,15 +46,24 @@ Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion 
 Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
 Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: maps
+Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: sukmm
+Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
+Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: csbu
+Source: "..\Textures\Artful Textures*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: at
+Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vt
 
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
-Name: "vp"; Description: "VP + UI + 계몽 + 미래 + 지도"; Types: VP Custom; Flags: disablenouninstallwarning fixed
+Name: "vp"; Description: "VP + UI + 계몽 + 미래"; Types: VP Custom; Flags: disablenouninstallwarning fixed
 Name: "maps"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: Custom; Flags: disablenouninstallwarning
-Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거 패치"; Types: Custom; Flags: disablenouninstallwarning
-Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
+Name: "sukmm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "cs"; Description: "진정한 대체 지도자 (True Alternative Leaders)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "csbu"; Description: "진정한 대체 지도자 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "at"; Description: "예술적인 텍스처 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "vt"; Description: "생생한 텍스처 (Vibrant Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
 [Types]
 Name: "VP"; Description: "Vox Populi 한국어 번역";

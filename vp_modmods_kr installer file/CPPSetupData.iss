@@ -1,7 +1,7 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "Vox Populi INT+"
+#define MyAppName "vp_kr+"
 #define MyAppVersion "4.22"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
@@ -208,6 +208,7 @@ Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpnvc
 Source: "..\Maps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map
+Source: "..\Textures\Artful Textures\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: at
 Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vt
 Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
 Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
@@ -221,8 +222,11 @@ Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignore
 Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning fixed
 
 Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: Custom; Flags: disablenouninstallwarning
-Name: "vpnvc"; Description: "Vox Populi 한국어 번역 (투표 문명 색상 제거)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "csbu"; Description: "문명 선택 개선 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "vpnvc"; Description: "세계 의회 투표 문명 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
+Name: "at"; Description: "예술적인 질감 (Artful Textures)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "cs"; Description: "진정한 대체 지도자 (True Alternative Leaders)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "csbu"; Description: "진정한 대체 지도자 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formation for VP)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "lm"; Description: "VP 큰 미니맵 (Large Minimap for VP wth EUI only)"; Types: Custom; Flags: disablenouninstallwarning
 
@@ -232,7 +236,6 @@ Name: "vppt"; Description: "VP 승급 트리 (Promotion Tree for VP)"; Types: VP
 Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "cms"; Description: "개선된 모딩 화면 (Enhanced Modding Screen)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "cs"; Description: "문명 선택 개선 (CivSelection)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "le"; Description: "VP 목록 개선 (List Enhancements for VP)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "mc"; Description: "의미있는 색깔 (Meaningful Colours)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -278,7 +281,6 @@ Name: "waua"; Description: "전체 기상 & 전체 승급 (Wake All and Upgrade 
 Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's Civ VI Style City Names)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ele"; Description: "서커스 건설 후 코끼리 소리 (Elephant Sound When Circus Built)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "gy"; Description: "Gedemon의 YnAEMP (Gedemon's YnAEMP)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "fnv"; Description: "모하비 황무지 (Mojave Wasteland)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
