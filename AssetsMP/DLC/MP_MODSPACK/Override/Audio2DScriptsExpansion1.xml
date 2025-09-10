@@ -1480,6 +1480,15 @@
 			<iPriority>1</iPriority> 
 		</Script2DSound>
 		<Script2DSound> 
+			<ScriptID>AS2D_SELECT_CLONETROOPER</ScriptID> 
+			<SoundID>SND_SELECT_CLONETROOPER</SoundID> 
+			<SoundType>GAME_SFX</SoundType> 
+			<iMaxVolume>45</iMaxVolume> 
+			<iMinVolume>35</iMinVolume> 
+			<bIsMusic>0</bIsMusic> 
+			<iPriority>1</iPriority> 
+		</Script2DSound>
+		<Script2DSound> 
 			<ScriptID>AS2D_EVENT_EAIRCRAFT</ScriptID> 
 			<SoundID>SND_EVENT_EAIRCRAFT</SoundID> 
 			<SoundType>GAME_SFX</SoundType> 

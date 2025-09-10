@@ -1173,6 +1173,13 @@
 			<bDontCache>0</bDontCache> 
 		</SoundData>
 		<SoundData> 
+			<SoundID>SND_SELECT_CLONETROOPER</SoundID> 
+			<Filename>Clonetrooper_Select</Filename> 
+			<LoadType>STREAMED</LoadType> 
+			<bOnlyLoadOneVariationEachTime>0</bOnlyLoadOneVariationEachTime> 
+			<bDontCache>0</bDontCache> 
+		</SoundData>
+		<SoundData> 
 			<SoundID>SND_EVENT_EAIRCRAFT</SoundID> 
 			<Filename>EAircraft</Filename> 
 			<LoadType>STREAMED</LoadType> 

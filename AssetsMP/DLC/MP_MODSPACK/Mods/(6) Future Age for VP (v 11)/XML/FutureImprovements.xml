@@ -1083,9 +1083,9 @@
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-    <ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
-    <FlavorType>FLAVOR_DEFENSE</FlavorType>
-    <Flavor>6</Flavor>
+			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+		    <Flavor>6</Flavor>
 		</Row>
   </Improvement_Flavors>
 
@@ -1101,9 +1101,9 @@
 			<FriendlyName>FW_COMM_ARRAY</FriendlyName>
 		</Row>
 		<Row>
-			<Type>ART_DEF_IMPROVEMENT_FW_NETWORKNODE</Type>
+			<Type>ART_DEF_IMPROVEMENT_FW_NETWORK_NODE</Type>
 			<LandmarkType>Improvement</LandmarkType>
-			<FriendlyName>FW_NETWORKNODE</FriendlyName>
+			<FriendlyName>FW_NETWORK_NODE</FriendlyName>
 		</Row>
 		<Row>
 			<Type>ART_DEF_IMPROVEMENT_FW_HYDROPONICS_DOME</Type>
@@ -1132,11 +1132,6 @@
 		</Row>
 		<Row>
 			<Type>ART_DEF_IMPROVEMENT_FW_CORE</Type>
-			<LandmarkType>Improvement</LandmarkType>
-			<FriendlyName>FW_CORE</FriendlyName>
-		</Row>
-		<Row>
-			<Type>IMPROVEMENT_FW_WATER_CORE</Type>
 			<LandmarkType>Improvement</LandmarkType>
 			<FriendlyName>FW_CORE</FriendlyName>
 		</Row>
@@ -1495,63 +1490,64 @@
 		<Row>
 			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_VAULT</StrategicViewType>
 			<TileType>Improvement</TileType>
-			<Asset>sv_Vault.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_PRESERVE</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_NaturePreserve.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_BIOWELL</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_Biowell.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_GENOCENTRE</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_Genocentre.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_COMM_ARRAY</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_CommArray.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_CORE</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_SupportCore.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_GENERATOR</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_Generator.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_IndustrialSite.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_ARCOLOGY</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_Arcology.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_HYDROPONICS_DOME</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_HydroponicsDome.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_HERC</StrategicViewType>
-			<TileType>Improvement</TileType>
-			<Asset>sv_HERC.dds</Asset>
+			<Asset>SV_Vault.dds</Asset>
 		</Row>
 		<Row>
 			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_FUNGAL_GROWTH</StrategicViewType>
 			<TileType>Improvement</TileType>
-			<Asset>sv_FungalGrowth.dds</Asset>
+			<Asset>SV_FungalGrowth.dds</Asset>
 		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_PRESERVE</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_NaturePreserve.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_COMM_ARRAY</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_CommArray.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_IndustrialSite.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_HERC</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_HERC.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_BIOWELL</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_Biowell.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_GENERATOR</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_Generator.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_HYDROPONICS_DOME</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_HydroponicsDome.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_GENOCENTRE</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_Genocentre.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_CORE</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_SupportCore.dds</Asset>
+		</Row>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_FW_ARCOLOGY</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>SV_Arcology.dds</Asset>
+		</Row>
+
 	</ArtDefine_StrategicView>
 
 	<Builds>

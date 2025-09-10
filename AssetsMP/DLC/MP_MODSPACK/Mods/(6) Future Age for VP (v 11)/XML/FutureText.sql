@@ -1,11 +1,3 @@
-INSERT INTO COMMUNITY	
-		(Type,			Value)
-VALUES	('MUCfVP-CAYM', 2);
-
-UPDATE COMMUNITY
-SET Value = '1'
-WHERE Type = 'MUCfVP-CAYM' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDING_EE_DRYDOCK') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-CAYM' AND Value= 0);
-
 ----------------------------------------------------
 -- Text (en_US) 
 ----------------------------------------------------
@@ -58,7 +50,7 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 -- TXT changed
 ---------------
 UPDATE Language_en_US
-SET Text = "[COLOR_YELLOW] The Prometheus Space Project [ENDCOLOR] marks the beginning of Earth's transition from depleting resources to a new stage. You can produce parts for your spaceship in your city. When the spaceship is completed, [ICON_VICTORY_SPACE][COLOR_POSITIVE_TEXT]Science victory[ENDCOLOR] will be won![NEWLINE][NEWLINE]If your civilization completed the project for the first time [ICON_CAPITAL]A [ICON_GREAT_SCIENTIST][COLOR_YELLOW]great scientist [ENDCOLOR] appears near the capital, and the civilization immediately [ICON_GOLDEN _AGE] Welcome to the golden age."
+SET Text = "[COLOR_YELLOW] The Prometheus Space Project [ENDCOLOR] marks the beginning of Earth's transition from depleting resources to a new stage. You can produce parts for your spaceship in your city. When the spaceship is completed, [ICON_VICTORY_SPACE][COLOR_POSITIVE_TEXT]Science victory[ENDCOLOR] will be won![NEWLINE][NEWLINE]If your civilization completed the project for the first time [ICON_CAPITAL]A [ICON_GREAT_SCIENTIST][COLOR_YELLOW]great scientist [ENDCOLOR] appears near the capital, and the civilization immediately [ICON_GOLDEN_AGE] Welcome to the golden age."
 WHERE Tag = 'TXT_KEY_PROJECT_APOLLO_PROGRAM_HELP';
 
 UPDATE Language_en_US
@@ -174,11 +166,11 @@ INSERT INTO Language_en_US (Tag, Text) VALUES  -- caym plus
 INSERT OR REPLACE INTO LocalizedText
 	(Language, Tag, Text)
 VALUES
-	('en_US', 'TXT_KEY_PONTOON_BRIDGE', 'Undersea Turnnel'),
-	('en_US', 'TXT_KEY_PONTOON_BRIDGE_TEXT', 'Allows land units to traverse this Coast tile. May only be constructed in a Coast tile with 2 or more land tiles adjacent to it. For tiles with 2 or 3 adjacent land tiles, the land tiles may not be contiguous. Constructed by an embarked Worker.[NEWLINE][NEWLINE] Tunnels can be used to connect cities to the mainland, but [COLO_NEGATIVE_TEXT]overland trade routes do not connect.[/ENDCOLOR]'),
-	('en_US', 'TXT_KEY_PONTOON_BRIDGE_HELP', 'Undersea tunnels allow rapid and secure transportation routes beneath the Coast tile.'),
-	('en_US', 'TXT_KEY_BUILD_PONTOON_BRIDGE', 'Construct a [LINK=IMPROVEMENT_PONTOON_BRIDGE]Undersea Turnnel[\LINK]'),
-	('en_US', 'TXT_KEY_BUILD_PONTOON_BRIDGE_REC', 'It will allow land units to traverse this hex at a minor combat penalty.');
+	('en_US', 'TXT_KEY_UNDERSEA_TUNNEL', 'Undersea Turnnel'),
+	('en_US', 'TXT_KEY_UNDERSEA_TUNNEL_TEXT', 'Allows land units to traverse this Coast tile. May only be constructed in a Coast tile with 2 or more land tiles adjacent to it. For tiles with 2 or 3 adjacent land tiles, the land tiles may not be contiguous. Constructed by an embarked Worker.[NEWLINE][NEWLINE] Tunnels can be used to connect cities to the mainland, but [COLOR_NEGATIVE_TEXT]overland trade routes do not connect.[/ENDCOLOR]'),
+	('en_US', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', 'Undersea tunnels allow rapid and secure transportation routes beneath the Coast tile.'),
+	('en_US', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL', 'Construct a [LINK=IMPROVEMENT_PONTOON_BRIDGE]Undersea Turnnel[/LINK]'),
+	('en_US', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL_REC', 'It will allow land units to traverse this hex at a minor combat penalty.');
 
 --===========================
 -- Policies
@@ -188,12 +180,11 @@ VALUES
 ----------------------------------------------
 UPDATE Language_en_US
 SET Text = '+1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Pastures, Eco-Communes and Hydroponic Domes worked by the City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_HORSE] Horses.'
-WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-CAYM' AND Value= 1);
+WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
 UPDATE Language_en_US
 SET Text = '+2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Pastures, Eco-Communes and Hydroponic Domes worked by the City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_HORSE] Horses.'
-WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-CAYM' AND Value= 2);
-
+WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 UPDATE Language_en_US
 SET Text = '+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn. The [COLOR_POSITIVE_TEXT]Farming[ENDCOLOR] Process is 15% more effective at converting [ICON_PRODUCTION] Production and reducing [ICON_HAPPINESS_3] Distress.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +2 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold to Nearby Farms, Pastures, Eco-Communes and Hydroponic Domes.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.'
 WHERE Tag = 'TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP';
@@ -205,11 +196,11 @@ WHERE Tag = 'TXT_KEY_POLICY_ENTREPRENEURSHIP_HELP';
 -- Naval Tradition (now Colonialism)
 UPDATE Language_en_US
 SET Text = '[COLOR_POSITIVE_TEXT]Colonialism[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science and +1 [ICON_CULTURE] Culture from Barracks, Armories, Gunsmiths, Military Academies, Forts, Citadels and Defense improvement.[NEWLINE][ICON_BULLET]Each unique Global Monopoly modifier is increased by an additional 10% if it''s percentage-based, or +3 otherwise.'
-WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP'AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-CAYM' AND Value= 1);
+WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
 UPDATE Language_en_US
 SET Text = '[COLOR_POSITIVE_TEXT]Colonialism[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science and +1 [ICON_CULTURE] Culture from Barracks, Armories, Military Academies, Forts, Citadels and Defense improvement.[NEWLINE][ICON_BULLET]Each unique Global Monopoly modifier is increased by an additional 10% if it''s percentage-based, or +3 otherwise.'
-WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP'AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-CAYM' AND Value= 2);
+WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
 -- Merchant Navy -- Now called Exploitation
 UPDATE Language_en_US
@@ -377,7 +368,7 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_IMPLANT_CLINIC', 'Implant Clinic'),
 ('TXT_KEY_BUILDING_FW_IMPLANT_CLINIC_HELP', "Increases the Military Unit Supply Cap by 1 and production speed by 10% of Clone, Mutant, Organic Infantry and Biotrooper Units, Super soldiers.[NEWLINE]Chance to get one of these Promotions:[NEWLINE][COLOR_POSITIVE_TEXT]Implants[ENDCOLOR] [NEWLINE]Unhappiness from [ICON_FOOD]/[ICON_PRODUCTION] Distress.[NEWLINE][NEWLINE]Requires an [COLOR_POSITIVE_TEXT]Hospital[ENDCOLOR]."),
 ('TXT_KEY_BUILDING_FW_IMPLANT_CLINIC_STRATEGY', "Grants newly produced organic units (Clone Troopers, Mutants, Bio-Augmented Infantry, Super Soldiers, and Bio Troopers) an implant upgrade that increases their production speed and the combat power of melee, cavalry, gunpowder, and recon units. This cannot be built if the city has a Nanomaterial Warfare Factory."),
-('TXT_KEY_BUILDING_FW_IMPLANT_CLINIC_PEDIA', "As implant technology advanced rapidly, Implant Clinics emerged in growing numbers, offering specialized services to meet the demands of a rapidly expanding market. These facilities go far beyond traditional dental or joint implants, now providing the transplantation of artificial organs such as hearts, lungs, kidneys, and livers, as well as precision bio-prosthetics. With the integration of neural interfaces and nanoscale materials, implants are no longer limited to restoring lost functions but can actively enhance human capabilities. Through these advancements, people gained the ability to replace aging or damaged body parts, achieving healthier and longer lives. In some cases, specialized implants were developed for military or professional applications, granting individuals extraordinary physical or cognitive abilities. The Implant Clinic thus stands not merely as a medical facility, but as a cornerstone of future society’s pursuit of longevity, body enhancement, and biomedical innovation.")
+('TXT_KEY_BUILDING_FW_IMPLANT_CLINIC_PEDIA', "As implant technology advanced rapidly, Implant Clinics emerged in growing numbers, offering specialized services to meet the demands of a rapidly expanding market. These facilities go far beyond traditional dental or joint implants, now providing the transplantation of artificial organs such as hearts, lungs, kidneys, and livers, as well as precision bio-prosthetics. With the integration of neural interfaces and nanoscale materials, implants are no longer limited to restoring lost functions but can actively enhance human capabilities. Through these advancements, people gained the ability to replace aging or damaged body parts, achieving healthier and longer lives. In some cases, specialized implants were developed for military or professional applications, granting individuals extraordinary physical or cognitive abilities. The Implant Clinic thus stands not merely as a medical facility, but as a cornerstone of future society’s pursuit of longevity, body enhancement, and biomedical innovation."),
 
 
 --  =========== completed
@@ -432,7 +423,7 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY', 'Genejack Facility'),
 ('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY_HELP', "Adds [ICON_GOLD] Gold to Grasslands and Plain tiles, and adds 1 [ICON_PRODUCTION] Production to Tundra, Snow, and Desert tiles. Provides 2 [ICON_RES_ADN_FUNGUS] ADN Fungus in the city's area."),
 ('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY_STRATEGY', "Provides boost and gold depending of your climat zone."),
-('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY_PEDIA', "As biofactories began to employ an increasing variety of organic components and biotechnological processes in the production of advanced materials and equipment, they eventually encountered limitations due to the restrictive environmental controls required for maximum efficiency. With the advancement of transgenics, however, it became possible to genetically enhance organisms crucial to soil ecosystems, such as worms and microbes, tailoring them for use in various biomanufacturing processes. This innovation accelerated nutrient cycling and biochemical mutations within the soil, enabling processes to operate with far greater efficiency and under increasingly harsher conditions. This process of "genetic modification" soon became a cornerstone of soil-based research, with some claiming it has dramatically accelerated the study of genetic mutations in the soil itself. Rumors persist that such methods might even have been applied beyond soil organisms, though no conclusive evidence has ever been found."),
+('TXT_KEY_BUILDING_FW_GENEJACK_FACILITY_PEDIA', "As biofactories began to employ an increasing variety of organic components and biotechnological processes in the production of advanced materials and equipment, they eventually encountered limitations due to the restrictive environmental controls required for maximum efficiency. With the advancement of transgenics, however, it became possible to genetically enhance organisms crucial to soil ecosystems, such as worms and microbes, tailoring them for use in various biomanufacturing processes. This innovation accelerated nutrient cycling and biochemical mutations within the soil, enabling processes to operate with far greater efficiency and under increasingly harsher conditions. This process of genetic modification soon became a cornerstone of soil-based research, with some claiming it has dramatically accelerated the study of genetic mutations in the soil itself. Rumors persist that such methods might even have been applied beyond soil organisms, though no conclusive evidence has ever been found."),
 -- Information Hub
 ('TXT_KEY_BUILDING_FW_FEEDSITE_HUB', 'Information Hub'),
 ('TXT_KEY_BUILDING_FW_FEEDSITE_HUB_HELP', "Provides +1 [ICON_CULTURE] for each Great Work in the City, and +4 [ICON_HAPPINESS_1] and [ICON_TOURISM] Tourism. Writer [ICON_GREAT_WRITER], Musician [ICON_GREAT_MUSICIAN] and Artist [ICON_GREAT_ARTIST] Specialists in the City produce +1 of their base Yield and increases Musician rate by 2.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Cannot be built if the City contains a [COLOR_NEGATIVE_TEXT]Distribution Hub[ENDCOLOR], [COLOR_NEGATIVE_TEXT]Metroplex Hub[ENDCOLOR] or [COLOR_NEGATIVE_TEXT]Simulation Hub[ENDCOLOR]. Requires a [COLOR_NEGATIVE_TEXT]Server Hub[ENDCOLOR]."),
@@ -584,12 +575,11 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_HELP', "Gain 6 [ICON_RES_NANOMAT] Nanomaterials."),
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_QUOTE', "Gain 6 [ICON_RES_NANOMAT] Nanomaterials."),
 ('TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_PEDIA', "S-type asteroids, or silicaceous asteroids, are of a stony composition, hence the name. Approximately 17% of asteroids are of this type, making it the second most common after the C-type."),
-
 -- Terraforming Station
-('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION', 'Gene Acceleration Center'),
+('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION', "Gene Acceleration Center"),
 ('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION_HELP', "+4 [ICON_TOURISM] Tourism and +4 [ICON_GOLDEN_AGE] Golden Age Point each turn.[NEWLINE][NEWLINE]Receive 2 [ICON_RESEARCH] Science and 2 [ICON_CULTURE] Culture to each [COLOR_POSITIVE_TEXT]Genocentre[ENDCOLOR] working by the City.[NEWLINE][NEWLINE]Provides 3 [ICON_RES_ADN_FUNGUS] ADN Fungus."),
 ('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION_STRATEGY', "Increases the output of the Genocentre. ADN fungus spawns on tiles around cities."),
-('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION_PEDIA', "The Genetic Acceleration Center is a space that focuses on genetic research and uses the results to accelerate various biotechnology and genetics projects. This building provides all the resources needed to aid genetic research in the game, including state-of-the-art research facilities and brilliant scientists. One of the core functions of the Gene Acceleration Center is gene sequencing and analysis. Here, scientists decipher the genomes of various organisms, thereby uncovering new genes or helping to better understand the function of known genes. This kind of information is very important for the development of new biotechnology and for finding causes and treatments for diseases. In addition, gene modification technology is also researched at the Gene Acceleration Center. This technology allows scientists to edit a living organism's genes to enhance certain traits or remove unwanted traits. These gene modifications can be used to improve plants or animals, or to treat disease.[NEWLINE][NEWLINE]Gene Acceleration Centers play a pivotal role in helping to advance genetic research. It promotes the progress of genetic research by providing the necessary machinery and equipment to conduct research, as well as professional personnel specialized in genetic research, and allows the results to be used for other activities in the game. The Genetic Acceleration Center conducts the most advanced research in genetics, thereby advancing the understanding of life and science within games."),
+('TXT_KEY_BUILDING_FW_TERRAFORMING_STATION_PEDIA', "The Genetic Acceleration Center is a space that focuses on genetic research and uses the results to accelerate various biotechnology and genetics projects. This building provides all the resources needed to aid genetic research in the game, including state-of-the-art research facilities and brilliant scientists. One of the core functions of the Gene Acceleration Center is gene sequencing and analysis. Here, scientists decipher the genomes of various organisms, thereby uncovering new genes or helping to better understand the function of known genes. This kind of information is very important for the development of new biotechnology and for finding causes and treatments for diseases. In addition, gene modification technology is also researched at the Gene Acceleration Center. This technology allows scientists to edit a living organism''s genes to enhance certain traits or remove unwanted traits. These gene modifications can be used to improve plants or animals, or to treat disease.[NEWLINE][NEWLINE]Gene Acceleration Centers play a pivotal role in helping to advance genetic research. It promotes the progress of genetic research by providing the necessary machinery and equipment to conduct research, as well as professional personnel specialized in genetic research, and allows the results to be used for other activities in the game. The Genetic Acceleration Center conducts the most advanced research in genetics, thereby advancing the understanding of life and science within games."),
 -- AI Network
 ('TXT_KEY_BUILDING_FW_AI_NETWORK', 'AI Network'),
 ('TXT_KEY_BUILDING_FW_AI_NETWORK_HELP', "+2 [ICON_GREAT_ADMIRAL] Admiral Point and +2 [ICON_GREAT_GENERAL] General Point each turn.[NEWLINE][NEWLINE]Receive 2 [ICON_CULTURE_LOCAL] Border Growth Point and 2 [ICON_GOLD] Gold to all nearby [COLOR_POSITIVE_TEXT]Defensive Improvements[ENDCOLOR].[NEWLINE][NEWLINE]Provides 3 [ICON_RES_IMPLANT] Implants."),
