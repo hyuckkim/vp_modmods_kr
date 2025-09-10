@@ -36,12 +36,12 @@ Overhaul 모드란 게임 전체를 전반적으로 수정하는 모드를 말�
 
 ## 설치법
 
-### 공식 배포 [[바로가기]](https://github.com/handanikr/vp_modmods_kr/releases)
+### 공식 배포 [[바로가기]](https://github.com/handanikr/vp_modmods_kr/releases)  
 
-### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/Vox%20Populi%20INT%2B.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20INT%20Modpack+.zip)
+### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/VP%20%ED%95%9C%EA%B5%AD%EC%96%B4.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%EB%AA%A8%EB%93%9C%ED%8C%A9.zip)  
 
-<img width="499" height="392" alt="image" src="https://github.com/user-attachments/assets/6765ef89-47be-4d4c-b2c6-d8fe40ae2a53" />
+<img width="499" height="392" alt="image" src="https://github.com/user-attachments/assets/6765ef89-47be-4d4c-b2c6-d8fe40ae2a53" />  
 
-모드 설치 프로그램에서는 사용자 정의 설치로 원하는 모드를 선택하거나 제외하고 설치하실 수 있습니다.
+모드 설치 프로그램에서는 사용자 정의 설치로 원하는 모드를 선택하거나 제외하고 설치하실 수 있습니다.  
 
-VP 원본과 마찬가지로 [Inno Setup](https://jrsoftware.org)으로 만들어진 설치 프로그램으로 모드를 자동으로 설치할 수 있습니다.
+VP 원본과 마찬가지로 [Inno Setup](https://jrsoftware.org)으로 만들어진 설치 프로그램으로 모드를 자동으로 설치할 수 있습니다.  
