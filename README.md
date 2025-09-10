@@ -40,24 +40,8 @@ Overhaul 모드란 게임 전체를 전반적으로 수정하는 모드를 말�
 
 ### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/Vox%20Populi%20INT%2B.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20INT%20Modpack+.zip)
 
-<img width="499" height="392" alt="1754314277" src="https://github.com/user-attachments/assets/e068a045-198c-43dc-b710-c80aaeace1dd" />
+<img width="499" height="392" alt="image" src="https://github.com/user-attachments/assets/6765ef89-47be-4d4c-b2c6-d8fe40ae2a53" />
 
 모드 설치 프로그램에서는 사용자 정의 설치로 원하는 모드를 선택하거나 제외하고 설치하실 수 있습니다.
 
-VP 원본과 VP 한국어와 마찬가지로 [Inno Script Studio](https://www.kymoto.org/products/inno-script-studio) 로 만들어진 설치 프로그램으로 모드를 자동으로 설치할 수 있습니다. 다만, 설치 프로그램을 꺼리시는 분이나 수동으로 모드를 사용하기를 원하시는 분은 직접 압축파일로 받으실 수 있습니다.
-
-**모드팩(압축 파일) 설치 방법**
-
-![image](https://github.com/user-attachments/assets/8b039c13-5f11-442c-b831-4ab7c92e373a)
-
-다운 받은 VP4UCK±날짜.zip 압축 파일을 **문명이 설치된 경로의 Assets 폴더가 자리 잡고 있는 문명 5 폴더**에다 넣어서 압축을 풀면 됩니다. 쉬운 방법으로는 스팀에서 위의 사진처럼 들어가면 됩니다. 그게 아니면 기본 경로로 직접 찾아가도 되는데 따로 다른 곳에 설치하지 않았다면 기본 경로는 아래와 같습니다.
-
-C:\Program Files (x86)\Steam\steamapps\common\Sid Meier's Civilization V
-
-만일 **투표할 때 문명 색상이 나오는 것을 원치 않는 경우**, VP4UCK±날짜.zip 압축을 푼 폴더에서 **Assets_vote에 있는 파일들을 Assets 폴더에** 넣어주세요. 그런 다음 위의 설명대로 Assets 폴더를 문명 5 폴더에 넣어주면 됩니다. 이게 필요 없으신 분은 그냥 Assets_vote를 삭제해주시면 됩니다.
-
-<img width="614" height="577" alt="1754314284" src="https://github.com/user-attachments/assets/be14d61e-0625-4cad-a541-d75be7cd434d" />
-
-DLC 폴더에 **MP_MODSPACK**, **UI_bc1**, **VPUI** 폴더가 VP의 핵심 폴더들이며, **UI_CustomModScreen**, **UI_SukMainMenu**, **VT** 폴더는 추가 모드로 설치됩니다. 
-
-이제 문명 5를 실행해서 싱글이나 멀티를 즐기면 됩니다. 게임에서 모드 메뉴를 누를 필요 없이 그냥 문명 하듯이 싱글과 멀티를 하시면 됩니다. 반대로 삭제를 하실 때도 저 6개의 폴더를 삭제하시면 깔끔하게 지울 수 있습니다.
+VP 원본과 마찬가지로 [Inno Setup](https://jrsoftware.org)으로 만들어진 설치 프로그램으로 모드를 자동으로 설치할 수 있습니다.
