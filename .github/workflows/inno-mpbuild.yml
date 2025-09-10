@@ -1,4 +1,4 @@
-name: VP 한국어 모드팩
+name: VPKR+ModPack
 on: push
 jobs:
   build:
@@ -10,5 +10,5 @@ jobs:
         run: iscc "vp_modmods_kr mpinstaller file/VPKRMP.iss" /O"out_githubaction" /F"VPKR+ModPack"
       - uses: actions/upload-artifact@v4
         with:
-          name: "VP 한국어 모드팩"
+          name: "VPKR+ModPack"
           path: "out_githubaction/VPKR+ModPack.exe"

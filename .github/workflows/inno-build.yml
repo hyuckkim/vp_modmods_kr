@@ -1,4 +1,4 @@
-name: VP 한국어
+name: VPKR
 on: push
 jobs:
   build:
@@ -10,5 +10,5 @@ jobs:
         run: iscc "vp_modmods_kr installer file/VPKR.iss" /O"out_githubaction" /F"VPKR"
       - uses: actions/upload-artifact@v4
         with:
-          name: "VP 한국어"
+          name: "VPKR"
           path: "out_githubaction/VPKR.exe"
