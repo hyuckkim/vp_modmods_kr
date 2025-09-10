@@ -84,8 +84,8 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 ('BUILDING_FW_GENOME_PROJECT_2', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_AI_DATANETWORK_1', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3'),
 ('BUILDING_FW_AI_DATANETWORK_2', 		     NULL,                            -1, 'ART_DEF_BUILDING_LABORATORY',         21,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_ASTEROID_MINING_1', 		     NULL,    					      -1, 'ART_DEF_BUILDING_LABORATORY',         19,'CIV_COLOR_ATLAS_FW_3'),
-('BUILDING_FW_ASTEROID_MINING_2', 		     NULL,    						  -1, 'ART_DEF_BUILDING_LABORATORY',         19,'CIV_COLOR_ATLAS_FW_3');
+('BUILDING_FW_ASTEROID_MINING_1', 		     NULL,    					      -1, 'ART_DEF_BUILDING_LABORATORY',          9,'TCS_MOD_ICON_ATLAS'),
+('BUILDING_FW_ASTEROID_MINING_2', 		     NULL,    						  -1, 'ART_DEF_BUILDING_LABORATORY',          9,'TCS_MOD_ICON_ATLAS');
 
 ------------------------------------------------------------
 -- 1) Cyber Police Dummy : 1개당 도시 보안 +1

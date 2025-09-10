@@ -200225,7 +200225,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_2"> 
 			<Text>
-				희귀 자원 채굴
+				희귀 합금소재
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_HELP"> 
@@ -269518,9 +269518,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				전체화면일 때만 활성화
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_FW_AEROPLEX_DROP_HELP"> 
+		<Replace Tag="TXT_KEY_FW_AEROPLEX_DROP"> 
 			<Text>
-				준궤도 강하
+				공중 강하
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_FW_PROMOTION_ADVANCED_TACTICS"> 
@@ -311863,12 +311863,12 @@ The ship has weather'd every rack; the prize we sought is won."
 				국제 데이터네트워크 는 전 세계 데이터 인프라를 상호 연결하여 연산·저장·전송 자원을 효율적으로 분배하기 위한 국제 협력 프로젝트입니다. 각 도시는 서버 허브와 네트워크 중심지를 통해 참여하며, 축적된 기여도에 따라 보상을 받습니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_FW_DEEP_RESOURCE"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING"> 
 			<Text>
 				국제 심층 자원 회의
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_FW_DEEP_RESOURCE_SPLASH"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING_SPLASH"> 
 			<Text>
 				국제 심층 자원 회의는 지구 심층부와 해저에 존재하는 희귀 금속과 나노 소재를 어떻게 탐사·분배할지 논의하는 국제 협력 프로젝트입니다. 최첨단 나노 드릴과 자원 관리 체계를 통해 자원의 불균형을 줄이고, 미래 산업에 필요한 핵심 소재를 확보합니다.
 			</Text>
@@ -311880,7 +311880,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT_SPLASH"> 
 			<Text>
-				유전자지도 네트워크는 모든 생명, 유기물 유전자의 이해도를 높이기 위한 게놈(유전체)의 맵을 만드려는 노력의 일환입니다.
+				생명 유전자지도 네트워크는 모든 생명, 유기물 유전자의 이해도를 높이기 위한 게놈(유전체)의 맵을 만드려는 노력의 일환입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_INTERNATIONAL_SPACE_STATION"> 
@@ -311915,7 +311915,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_1"> 
 			<Text>
-				글로벌광통신망
+				글로벌 광 통신망
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_1_HELP"> 
@@ -311925,7 +311925,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_2"> 
 			<Text>
-				글로벌데이터센터
+				글로벌 데이터센터
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_2_HELP"> 
@@ -311935,42 +311935,42 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3"> 
 			<Text>
-				글로벌 AI 센터
+				글로벌 데이터센터 허브
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3_HELP"> 
 			<Text>
-				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]AI 데이터 허브[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_AI_SINGULARITY_HELP})
+				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]글로벌 데이터센터 허브[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_AI_SINGULARITY_HELP})
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1"> 
 			<Text>
 				심층 금속 매장지
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1_HELP"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP"> 
 			<Text>
 				[ICON_RES_IRON]철 [COLOR_POSITIVE_TEXT]6개[ENDCOLOR]와 [ICON_RES_COAL]석탄 [COLOR_POSITIVE_TEXT]3개[ENDCOLOR]를 제공합니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2"> 
 			<Text>
-				희귀 합금
+				희귀 합금소재
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2_HELP"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP"> 
 			<Text>
 				[ICON_RES_ALUMINUM]알루미늄 [COLOR_POSITIVE_TEXT]4개[ENDCOLOR]와 [ICON_RES_NANOMAT]나노물질 [COLOR_POSITIVE_TEXT]3개[ENDCOLOR], [ICON_RES_URANIUM]우라늄 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 제공합니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3"> 
 			<Text>
 				지구 심층 채굴 허브
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3_HELP"> 
+		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP"> 
 			<Text>
-				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]심층 채굴 허브[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_DEEP_RESOURCE_HELP})
+				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]심층 채굴 허브[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_ASTEROID_MINING_HELP})
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1"> 
@@ -312000,7 +312000,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP"> 
 			<Text>
-				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]인간 게놈 프로젝트[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP})
+				[ICON_CAPITAL]수도에 [COLOR_POSITIVE_TEXT]국제 유전체 컨소시엄[ENDCOLOR] 불가사의가 출현합니다. ({TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP})
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_ISS_1"> 
@@ -344088,24 +344088,24 @@ The ship has weather'd every rack; the prize we sought is won."
 				이 도시의 [ICON_PRODUCTION]생산을 데이터센터 네트워크 프로젝트 공헌에 사용합니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_PROCESS_FW_DEEP_RESOURCE"> 
+		<Replace Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING"> 
 			<Text>
 				심층 자원 탐사 프로젝트
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_PROCESS_FW_DEEP_RESOURCE_HELP"> 
+		<Replace Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING_HELP"> 
 			<Text>
 				이 도시의 [ICON_PRODUCTION]생산을 심층 자원 탐사 프로젝트 공헌에 사용합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT"> 
 			<Text>
-				유전자 지도 네트워크
+				생명 유전자 지도 네트워크
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT_HELP"> 
 			<Text>
-				이 도시의 [ICON_PRODUCTION]생산을 유전자 지도 네트워크 공헌에 사용합니다.
+				이 도시의 [ICON_PRODUCTION]생산을 생명유전자 지도 네트워크 공헌에 사용합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROCESS_INTERNATIONAL_SPACE_STATION"> 
@@ -352073,22 +352073,22 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOLUTION_FW_AI_DATANETWORK_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]AI 데이터센터 네트워크[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]AI:생성형[ENDCOLOR]를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.
+				[COLOR_POSITIVE_TEXT]국제 데이터센터 네트워크[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 기여한 [ICON_PRODUCTION]생산에 따라 보너스를 받게 됩니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]AI:생성형[ENDCOLOR]를 연구한 문명이 있어야 안건으로 채택할 수 있습니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_RESOLUTION_FW_DEEP_RESOURCE"> 
+		<Replace Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING"> 
 			<Text>
 				국제 심층 자원 회의
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_RESOLUTION_FW_DEEP_RESOURCE_HELP"> 
+		<Replace Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]국제 심층 자원 회의[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보상을 받습니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]지구에너지 공학[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.
+				[COLOR_POSITIVE_TEXT]국제 심층 자원 회의[ENDCOLOR]를 시작합니다. 프로젝트가 시작되면 도시의 생산 목록에서 해당 프로젝트를 선택해 프로젝트에 기여할 수 있습니다. 프로젝트가 완료되면, 참여한 문명은 기여한 [ICON_PRODUCTION]생산에 따라 보상을 받습니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP}[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]지구에너지 공학[ENDCOLOR]을 연구한 문명이 있어야 안건으로 채택할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT"> 
 			<Text>
-				유전자 지도 네트워크
+				생명 유전자 지도 네트워크
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP"> 
@@ -377004,11 +377004,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				공중정찰유닛
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_UNITCOMBAT_HELICOPTER_GUNSHIPS"> 
-			<Text>
-				전투헬기
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_INQUISITOR"> 
 			<Text>
 				이단심문관 유닛
@@ -386688,17 +386683,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_FW_AI_SINGULARITY_HELP"> 
 			<Text>
-				문명 전체의 [ICON_RESEARCH]과학, [ICON_CULTURE]문화, [ICON_GOLD]골드, [ICON_PRODUCTION]생산이 각각 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. 원하는 [ICON_GREAT_PEOPLE][COLOR_YELLOW] 위인[ENDCOLOR] 1명이 출현합니다.
+				모든 도시의 [COLOR_POSITIVE_TEXT]전자상거래 서버, 엔터테인먼트, 클라우드 서버, 연구서버[ENDCOLOR]의 관련 산출량이 [COLOR_POSITIVE_TEXT]6[ENDCOLOR] 증가합니다. 즉시 원하는 [ICON_GREAT_PEOPLE][COLOR_YELLOW]위인[ENDCOLOR] 1명이 출현합니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_WONDER_FW_DEEP_RESOURCE_HELP"> 
+		<Replace Tag="TXT_KEY_WONDER_FW_ASTEROID_MINING_HELP"> 
 			<Text>
-				[ICON_GREAT_ENGINEER][COLOR_YELLOW]위대한 기술자[ENDCOLOR]가 1명 출현합니다. 모든 [COLOR_POSITIVE_TEXT]나노물질 제조소[ENDCOLOR]의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]6[ENDCOLOR] 증가합니다.
+				[ICON_GREAT_ENGINEER][COLOR_YELLOW]위대한 기술자[ENDCOLOR]가 1명 출현합니다. 모든 [COLOR_POSITIVE_TEXT]나노물질 군수공장[ENDCOLOR]의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]6[ENDCOLOR] 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP"> 
 			<Text>
-				도시의 모든 전문가들의 산출량이 +1 증가하고 모든 [ICON_GREAT_PEOPLE]위인 점수가 +3 증가합니다.
+				도시의 모든 전문가들의 산출량이 +1 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_GLOBE_THEATER_HELP"> 
