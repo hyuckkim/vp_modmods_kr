@@ -2,27 +2,16 @@
 <GameData>
 	<Technologies>
 		<Row>
-			<Type>TECH_FW_DUMMY_HIDDEN</Type>
-			<Era>ERA_ANCIENT</Era>
-			<Description>TXT_KEY_TECH_FW_DUMMY_HIDDEN_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_DUMMY_HIDDEN_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_DUMMY_HIDDEN_HELP</Help>
-			<GridX>-1</GridX>
-			<GridY>-1</GridY>
-			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-		</Row>
-		<Row>
-			<Type>TECH_QUANTUM_COMPUTERS</Type>
+			<Type>TECH_SEA_EXPLORE</Type>
 			<Cost>27500</Cost>
-			<Description>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_TITLE</Description>
-			<Civilopedia>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_DESC</Civilopedia>
-			<Help>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_HELP</Help>
+			<Description>TXT_KEY_TECH_FW_SEA_EXPLORE_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_FW_SEA_EXPLORE_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_FW_SEA_EXPLORE_HELP</Help>
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>18</GridX>
 			<GridY>2</GridY>
-			<Quote>TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_FW_SEA_EXPLORE_QUOTE</Quote>
 			<PortraitIndex>60</PortraitIndex>
 			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
@@ -177,8 +166,8 @@
 			<GridX>21</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_FW_MECHATRONICS_QUOTE</Quote>
-			<PortraitIndex>11</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>42</PortraitIndex>
+			<IconAtlas>TCS_MOD_ICON_ATLAS</IconAtlas>
 		</Row>
 		<Row>
 			<Type>TECH_FUTURE_BALLISTICS</Type>
@@ -586,16 +575,16 @@
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_GLOBALIZATION"/>
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_ROBOTICS"/>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<PrereqTech>TECH_ECOLOGY</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<PrereqTech>TECH_TELECOM</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_GLOBALIZATION</TechType>
-			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<PrereqTech>TECH_SEA_EXPLORE</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_GLOBALIZATION</TechType>
@@ -607,7 +596,7 @@
 		</Row>
 		<Row>
 			<TechType>TECH_GEN_MANIP</TechType>
-			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<PrereqTech>TECH_SEA_EXPLORE</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ROBOTICS</TechType>
@@ -980,32 +969,32 @@
 	</Technology_PrereqTechs>
 	<Technology_Flavors>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
 			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
 			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<TechType>TECH_QUANTUM_COMPUTERS</TechType>
+			<TechType>TECH_SEA_EXPLORE</TechType>
 			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>

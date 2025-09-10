@@ -1,3 +1,52 @@
+
+--===================================================================================================
+--  Undersea tunnel
+--===================================================================================================
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_PLOT';
+
+INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset)
+SELECT 'ART_DEF_IMPROVEMENT_UNDERSEA_TUNNEL', 'Improvement', 'SV_Underseatunnel.dds';
+	
+INSERT INTO Improvements (Type,              Description,             Civilopedia,                    Help,                Water, AllowsWalkWater, OutsideBorders, RequiresXAdjacentLand, DestroyedWhenPillaged, DisplacePillager, ArtDefineTag, PortraitIndex, IconAtlas, UnitFreePromotion, OwnerOnly, NoTwoAdjacent)
+SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', 'TXT_KEY_UNDERSEA_TUNNEL_TEXT', 1,       1,              0,                 2,                       0,                   1,          'ART_DEF_IMPROVEMENT_FW_NETWORK_NODE', 30, 'FW_IMPROVEMENTS_ATLAS', 'PROMOTION_UNDERSEA_TUNNEL', 0, 1;
+
+INSERT INTO Builds (Type,                PrereqTech,                   ImprovementType,          RouteType,           Description,                Help,                             Recommendation, Water, CanBeEmbarked, Time, EntityEvent, HotKey, OrderPriority, IconIndex, IconAtlas)
+SELECT 'BUILD_UNDERSEA_TUNNEL', 'TECH_SEA_EXPLORE',    'IMPROVEMENT_UNDERSEA_TUNNEL',    'ROUTE_RAILROAD' , 'TXT_KEY_BUILD_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL_REC', 1, 1, 300, 'ENTITY_EVENT_CHOP', 'KB_Z', 98, 31, 'FW_IMPROVEMENTS_ATLAS';
+
+INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
+SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 'TERRAIN_COAST';
+
+INSERT INTO Improvement_Yields (ImprovementType, YieldType, Yield)
+SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 'YIELD_GOLD', 5;
+
+INSERT INTO Improvement_Yields (ImprovementType, YieldType, Yield)
+SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 'YIELD_PRODUCTION', 3;
+
+------------------------------	
+-- Improvement_Flavors
+------------------------------		
+INSERT INTO Improvement_Flavors	
+			(ImprovementType, 					FlavorType,				Flavor)
+VALUES		('IMPROVEMENT_UNDERSEA_TUNNEL',	'FLAVOR_PRODUCTION',		 10),
+			('IMPROVEMENT_UNDERSEA_TUNNEL',	'FLAVOR_GOLD',          	  5),
+			('IMPROVEMENT_UNDERSEA_TUNNEL', 'FLAVOR_TILE_IMPROVEMENT',   10);
+
+INSERT INTO Unit_Builds (UnitType, BuildType)
+SELECT 'UNIT_WORKER',       'BUILD_UNDERSEA_TUNNEL';
+
+UPDATE Builds 
+SET 
+	Water = 1,
+	CanBeEmbarked = 1
+WHERE Type = 'BUILD_UNDERSEA_TUNNEL';
+
+UPDATE Improvements
+SET DefenseModifier = -25
+WHERE Type = 'IMPROVEMENT_UNDERSEA_TUNNEL';
+
+--===================================================================================================
+
+
 -- VP 최신: Improvement_YieldPerXAdjacentImprovement (GAIN semantics)
 -- NumRequired=1 → 1칸 인접할 때마다 +n
 
@@ -57,7 +106,7 @@ VALUES
   ('IMPROVEMENT_FEITORIA',                    'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
   ('IMPROVEMENT_SPAIN_HACIENDA',              'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
   ('IMPROVEMENT_SIHEYUAN',                    'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
-  ('IMPROVEMENT_OTTOMAN_TERSANE',             'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1), -- ← 오타 고쳤음
+  ('IMPROVEMENT_OTTOMAN_TERSANE',             'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1), 
   ('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',  'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
   ('IMPROVEMENT_INDONESIA_KAMPONG',           'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
   ('IMPROVEMENT_MONGOLIA_ORDO',               'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_TOURISM', 1, 1),
@@ -131,89 +180,47 @@ INSERT INTO Improvement_TechYieldChanges
 	(ImprovementType, TechType, YieldType, Yield)
 VALUES
 	('IMPROVEMENT_FW_PRESERVE', 				'TECH_FW_ECOTHEORY', 			'YIELD_CULTURE', 	1),
-
 	('IMPROVEMENT_TRADING_POST', 				'TECH_GRID_COMPUTING',		    'YIELD_GOLD',       1),
-
 	('IMPROVEMENT_FW_COMM_ARRAY', 				'TECH_MEMETICS', 		        'YIELD_CULTURE', 	1),
 	('IMPROVEMENT_FW_INDUSTRIAL_COMPLEX', 		'TECH_NANOMATERIALS', 		    'YIELD_PRODUCTION', 1),
 	('IMPROVEMENT_FW_HERC', 				    'TECH_PARTICLE_PHYSICS',		'YIELD_SCIENCE', 	1),
-/*
-	('IMPROVEMENT_LUMBERMILL', 					'TECH_ORGANICS', 		    	'YIELD_PRODUCTION', 1),
-	('IMPROVEMENT_LUMBERMILL', 		        	'TECH_ORGANICS', 		    	'YIELD_GOLD', 		1),
-	('IMPROVEMENT_POLDER', 						'TECH_ORGANICS', 		    	'YIELD_PRODUCTION', 1),
-	('IMPROVEMENT_POLDER', 						'TECH_ORGANICS', 		    	'YIELD_GOLD', 	    1),
-	('IMPROVEMENT_BRAZILWOOD_CAMP', 			'TECH_ORGANICS', 		    	'YIELD_PRODUCTION', 1),
-	('IMPROVEMENT_BRAZILWOOD_CAMP', 			'TECH_ORGANICS', 		    	'YIELD_GOLD',    	1),
-*/
----	('IMPROVEMENT_TRADING_POST', 			    'TECH_COGNITIVE_TECH',            'YIELD_SCIENCE',    1),
-	('IMPROVEMENT_MANUFACTORY', 			    'TECH_COGNITIVE_TECH',            'YIELD_SCIENCE',    3),
-
+	('IMPROVEMENT_MANUFACTORY', 			    'TECH_COGNITIVE_TECH',          'YIELD_SCIENCE',    3),
 	('IMPROVEMENT_PLANTATION', 					'TECH_TRANSGENICS', 	    	'YIELD_GOLD', 		1),
 	('IMPROVEMENT_PASTURE', 					'TECH_TRANSGENICS', 	    	'YIELD_GOLD', 		1),
 	('IMPROVEMENT_FISHING_BOATS', 				'TECH_TRANSGENICS', 	        'YIELD_GOLD', 		1),
 	('IMPROVEMENT_CAMP', 						'TECH_TRANSGENICS',             'YIELD_GOLD', 		1),
-
 	('IMPROVEMENT_FARM', 						'TECH_AUTONOMOUS_SYSTEMS', 		'YIELD_FOOD', 		1),
 	('IMPROVEMENT_TERRACE_FARM', 				'TECH_AUTONOMOUS_SYSTEMS', 	    'YIELD_FOOD', 		1),
 	('IMPROVEMENT_POLDER', 						'TECH_AUTONOMOUS_SYSTEMS', 		'YIELD_FOOD',   	1),
 	('IMPROVEMENT_ROME_LATIFUNDIUM', 			'TECH_AUTONOMOUS_SYSTEMS', 		'YIELD_FOOD',   	1),
 	('IMPROVEMENT_PLANTATION', 					'TECH_AUTONOMOUS_SYSTEMS', 		'YIELD_FOOD', 		2),
 	('IMPROVEMENT_PASTURE', 					'TECH_AUTONOMOUS_SYSTEMS',   	'YIELD_FOOD',   	2),
-
 	('IMPROVEMENT_QUARRY', 						'TECH_ARCOLOGIES', 		        'YIELD_PRODUCTION', 2),
 	('IMPROVEMENT_MINE', 						'TECH_ARCOLOGIES', 		        'YIELD_PRODUCTION', 1),
 	('IMPROVEMENT_WELL', 			            'TECH_ARCOLOGIES',	    	    'YIELD_PRODUCTION', 2),
 	('IMPROVEMENT_WELL', 			            'TECH_ARCOLOGIES',	    	    'YIELD_GOLD', 		2),
 	('IMPROVEMENT_OFFSHORE_PLATFORM', 			'TECH_ARCOLOGIES',	    	    'YIELD_PRODUCTION', 2),
 	('IMPROVEMENT_OFFSHORE_PLATFORM', 			'TECH_ARCOLOGIES',	    	    'YIELD_GOLD', 		2),
-
-
 	('IMPROVEMENT_FW_BIOWELL', 					'TECH_GENGINEERING', 	    	'YIELD_CULTURE', 	1),
 	('IMPROVEMENT_FW_FUNGAL_GROWTH', 			'TECH_GENGINEERING', 	        'YIELD_GOLD', 	    3),
-
 	('IMPROVEMENT_FW_GENERATOR', 				'TECH_AI', 		                'YIELD_GOLD', 	    1),
 	('IMPROVEMENT_CUSTOMS_HOUSE', 			    'TECH_AI',                      'YIELD_PRODUCTION', 3),
-
 	('IMPROVEMENT_FW_HYDROPONICS_DOME', 		'TECH_ADAMANTIUM', 	        	'YIELD_SCIENCE', 	1),
-	('IMPROVEMENT_ACADEMY', 			        'TECH_ADAMANTIUM', 			    'YIELD_FOOD',   	3),
-	
-	('IMPROVEMENT_PONTOON_BRIDGE', 				'TECH_SUPERCONDUCTIVITY',   	'YIELD_GOLD',   	5),
-
-	--('IMPROVEMENT_EMBASSY', 			        'TECH_NUCLEAR_FUSION', 		    'YIELD_CULTURE',   	3),
-
+	('IMPROVEMENT_ACADEMY', 			        'TECH_ADAMANTIUM', 			    'YIELD_FOOD',   	3),	
+	('IMPROVEMENT_UNDERSEA_TUNNEL', 			'TECH_SUPERCONDUCTIVITY',   	'YIELD_GOLD',   	5),
 	('IMPROVEMENT_FW_WATER_CORE', 				'TECH_DIGITAL_SOCIETY', 		'YIELD_CULTURE', 	1),
 	('IMPROVEMENT_FW_CORE', 			    	'TECH_DIGITAL_SOCIETY', 		'YIELD_CULTURE', 	1),
-
 	('IMPROVEMENT_FW_GENOCENTRE', 				'TECH_TERRAFORMING', 			'YIELD_CULTURE', 	1),
 	('IMPROVEMENT_FW_WATER_GENOCENTRE', 		'TECH_TERRAFORMING', 			'YIELD_CULTURE', 	1),
-
 	('IMPROVEMENT_FW_ARCOLOGY', 				'TECH_HYPERSTRUCTURES', 		'YIELD_CULTURE', 	1),
 	('IMPROVEMENT_FW_WATER_ARCOLOGY', 			'TECH_HYPERSTRUCTURES', 		'YIELD_CULTURE', 	1);
-
-
-INSERT INTO Building_ImprovementYieldChanges
-	(BuildingType, ImprovementType, YieldType, Yield)
-VALUES
-	('BUILDING_STOCKYARD', 'IMPROVEMENT_FW_BIOWELL', 				'YIELD_PRODUCTION', 2),
-	('BUILDING_STOCKYARD', 'IMPROVEMENT_FW_BIOWELL', 				'YIELD_GOLD', 		2),
-	('BUILDING_STOCKYARD', 'IMPROVEMENT_FW_HYDROPONICS_DOME', 		'YIELD_PRODUCTION', 2),
-	('BUILDING_STOCKYARD', 'IMPROVEMENT_FW_HYDROPONICS_DOME', 		'YIELD_GOLD', 		2);
-
--- Fix: merge Denmark Andelsbevægelse block into one INSERT (stray semicolon caused a SQL error)
-INSERT INTO Building_ImprovementYieldChanges (BuildingType, ImprovementType, YieldType, Yield)
-VALUES
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_BIOWELL',               'YIELD_PRODUCTION', 2),
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_BIOWELL',               'YIELD_FOOD',       2),
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_BIOWELL',               'YIELD_GOLD',       2),
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_HYDROPONICS_DOME',      'YIELD_PRODUCTION', 2),
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_HYDROPONICS_DOME',      'YIELD_FOOD',       2),
- ('BUILDING_DENMARK_ANDELSBEVAEGELSE', 'IMPROVEMENT_FW_HYDROPONICS_DOME',      'YIELD_GOLD',       2);
-
 
 INSERT INTO Route_TechMovementChanges
 	(RouteType, TechType, MovementChange)
 VALUES
 	('ROUTE_RAILROAD', 'TECH_SUPERCONDUCTIVITY', -10);
+
+
 
 /*
 UPDATE Improvements

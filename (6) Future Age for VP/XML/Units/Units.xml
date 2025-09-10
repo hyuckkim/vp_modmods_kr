@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<UnitClasses>
-	    <!-- COLONIST -->
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_MODERN_COLONIST</Type>
 			<Description>TXT_KEY_UNIT_FW_MODERN_COLONIST</Description>
@@ -12,13 +14,17 @@
 			<Description>TXT_KEY_UNIT_FW_SPACE_COLONIST</Description>
 			<DefaultUnit>UNIT_FW_SPACE_COLONIST</DefaultUnit>
 		</Row>
-		<!-- DIPLOMAT -->
+    <!-- =======================================================================================================
+       Diplomat
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_AUGMENTED_DIPLOMAT</Type>
 			<Description>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT</Description>
 			<DefaultUnit>UNIT_FW_AUGMENTED_DIPLOMAT</DefaultUnit>
 		</Row>
-		<!-- MISSILE -->
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_CLUSTER_MISSILE</Type>
 			<Description>TXT_KEY_UNIT_FW_CLUSTER_MISSILE</Description>
@@ -64,7 +70,9 @@
 			<Description>TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB</Description>
 			<DefaultUnit>UNIT_FW_THERMONUCLEAR_BOMB</DefaultUnit>
 		</Row>
-		<!-- TANK -->
+    <!-- =======================================================================================================
+       Armor
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_RAILGUN_TANK</Type>
 			<Description>TXT_KEY_UNIT_FW_RAILGUN_TANK</Description>
@@ -75,7 +83,9 @@
 			<Description>TXT_KEY_UNIT_FW_ZEKE</Description>
 			<DefaultUnit>UNIT_FW_ZEKE</DefaultUnit>
 		</Row>
-        <!-- DRONE -->
+    <!-- =======================================================================================================
+       Airrecon
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_MODERN_DRONE</Type>
 			<Description>TXT_KEY_UNIT_FW_MODERN_DRONE</Description>
@@ -91,7 +101,9 @@
 			<Description>TXT_KEY_UNIT_FW_BIODRONE</Description>
 			<DefaultUnit>UNIT_FW_BIODRONE</DefaultUnit>
 		</Row>
-		<!-- HELICOPTER -->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_APACHE</Type>
 			<Description>TXT_KEY_UNIT_FW_APACHE</Description>
@@ -107,7 +119,9 @@
 			<Description>TXT_KEY_UNIT_FW_HOVERTANK</Description>
 			<DefaultUnit>UNIT_FW_HOVERTANK</DefaultUnit>
 		</Row>
-		<!-- SAM -->
+    <!-- =======================================================================================================
+       Sam
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_MODERN_MOBILE_SAM</Type>
 			<Description>TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM</Description>
@@ -124,7 +138,9 @@
 			<DefaultUnit>UNIT_FW_CRAWLER</DefaultUnit>
 			<MaxPlayerInstances>4</MaxPlayerInstances>
 		</Row>
-		<!-- ARTILLERY -->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_HIMARS</Type>
 			<Description>TXT_KEY_UNIT_FW_HIMARS</Description>
@@ -141,7 +157,9 @@
 			<DefaultUnit>UNIT_FW_ANGEL</DefaultUnit>
 			<MaxPlayerInstances>4</MaxPlayerInstances>
 		</Row>
-		<!-- ARMOR SOLDIER -->
+    <!-- =======================================================================================================
+       Armor soldiers
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_POWER_ARMOR_INFANTRY</Type>
 			<Description>TXT_KEY_UNIT_FW_POWER_ARMOR_INFANTRY</Description>
@@ -157,7 +175,9 @@
 			<Description>TXT_KEY_UNIT_FW_GUNDAM</Description>
 			<DefaultUnit>UNIT_FW_GUNDAM</DefaultUnit>
 		</Row>
-		<!-- BIO SOLDIER -->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_BIOINFANTRY</Type>
 			<Description>TXT_KEY_UNIT_FW_BIOINFANTRY</Description>
@@ -178,7 +198,9 @@
 			<Description>TXT_KEY_UNIT_FW_SUPERSOLDIERS</Description>
 			<DefaultUnit>UNIT_FW_SUPERSOLDIERS</DefaultUnit>
 		</Row>
-		<!-- PMC -->
+    <!-- =======================================================================================================
+       PMC
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_CAYM_PMC</Type>
 			<Description>TXT_KEY_UNIT_CAYM_PMC</Description>
@@ -199,7 +221,9 @@
 			<Description>TXT_KEY_UNIT_FW_BIO_MERCENARIES</Description>
 			<DefaultUnit>UNIT_FW_BIO_MERCENARIES</DefaultUnit>
 		</Row>
-		<!-- SAPPER -->
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_AIRBORNE_FORCES</Type>
 			<Description>TXT_KEY_UNIT_FW_AIRBORNE_FORCES</Description>
@@ -215,7 +239,9 @@
 			<Description>TXT_KEY_UNIT_FW_SPACEMARINES</Description>
 			<DefaultUnit>UNIT_FW_SPACEMARINES</DefaultUnit>
 		</Row>
-		<!-- ARCHER-->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_ATGM</Type>
 			<Description>TXT_KEY_UNIT_FW_ATGM</Description>
@@ -236,7 +262,9 @@
 			<Description>TXT_KEY_UNIT_FW_COLOSSUS</Description>
 			<DefaultUnit>UNIT_FW_COLOSSUS</DefaultUnit>
 		</Row>
-		<!-- GENE UNITS -->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_SWARM</Type>
 			<Description>TXT_KEY_UNIT_FW_SWARM</Description>
@@ -247,7 +275,9 @@
 			<Description>TXT_KEY_UNIT_FW_CHIMERA</Description>
 			<DefaultUnit>UNIT_FW_CHIMERA</DefaultUnit>
 		</Row>
-		<!-- DINO -->
+    <!-- =======================================================================================================
+       Dino
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_TREX</Type>
 			<Description>TXT_KEY_UNIT_FW_TREX</Description>
@@ -263,7 +293,9 @@
 			<Description>TXT_KEY_UNIT_FW_RAPTOR</Description>
 			<DefaultUnit>UNIT_FW_RAPTOR</DefaultUnit>
 		</Row>
-		<!-- GUNBOAT -->
+    <!-- =======================================================================================================
+       Gunboat
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_GUNBOAT</Type>
 			<Description>TXT_KEY_UNIT_FW_GUNBOAT</Description>
@@ -276,7 +308,9 @@
 			<DefaultUnit>UNIT_FW_ADV_GUNBOAT</DefaultUnit>
 			<MaxPlayerInstances>4</MaxPlayerInstances>
 		</Row>
-		<!-- DESTROYER -->
+    <!-- =======================================================================================================
+       DESTROYER
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_NEODESTROYER</Type>
 			<Description>TXT_KEY_UNIT_FW_NEODESTROYER</Description>
@@ -292,7 +326,9 @@
 			<Description>TXT_KEY_UNIT_FW_BIO_DESTROYER</Description>
 			<DefaultUnit>UNIT_FW_BIO_DESTROYER</DefaultUnit>
 		</Row>
-		<!-- CRUISER -->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_ARSENAL_SHIP</Type>
 			<Description>TXT_KEY_UNIT_FW_ARSENAL_SHIP</Description>
@@ -308,7 +344,9 @@
 			<Description>TXT_KEY_UNIT_FW_BIO_CRUISER</Description>
 			<DefaultUnit>UNIT_FW_BIO_CRUISER</DefaultUnit>
 		</Row>
-		<!-- SUBMARINE -->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_MECHASUB</Type>
 			<Description>TXT_KEY_UNIT_FW_MECHASUB</Description>
@@ -319,14 +357,18 @@
 			<Description>TXT_KEY_UNIT_FW_CYBERSUB</Description>
 			<DefaultUnit>UNIT_FW_CYBERSUB</DefaultUnit>
 		</Row>
-		<!-- CARRIER-->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_SUPERCARRIER</Type>
 			<Description>TXT_KEY_UNIT_FW_SUPERCARRIER</Description>
 			<DefaultUnit>UNIT_FW_SUPERCARRIER</DefaultUnit>
 			<MaxPlayerInstances>2</MaxPlayerInstances>
 		</Row>
-		<!-- AIRFIGHTER -->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_DRONE_FIGHTER_2</Type>
 			<Description>TXT_KEY_UNIT_FW_DRONE_FIGHTER_2</Description>
@@ -342,7 +384,9 @@
 			<Description>TXT_KEY_UNIT_FW_SPACE_FIGHTER</Description>
 			<DefaultUnit>UNIT_FW_SPACE_FIGHTER</DefaultUnit>
 		</Row>
-		<!-- BOMBER -->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_SUBORBITAL_BOMBER</Type>
 			<Description>TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER</Description>
@@ -358,7 +402,9 @@
 			<Description>TXT_KEY_UNIT_FW_SPACE_BOMBER</Description>
 			<DefaultUnit>UNIT_FW_SPACE_BOMBER</DefaultUnit>
 		</Row>
-		<!-- UNIQUE UNIT -->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_MUTANT</Type>
 			<Description>TXT_KEY_UNIT_FW_MUTANT</Description>
@@ -391,6 +437,9 @@
 			<DefaultUnit>UNIT_FW_NEXUS</DefaultUnit>
 			<MaxPlayerInstances>2</MaxPlayerInstances>
 		</Row>
+    <!-- =======================================================================================================
+       Dummy rack
+       ======================================================================================================= -->
 		<Row>
 			<Type>UNITCLASS_FW_VAULT_RACK</Type>
 			<Description>TXT_KEY_UNIT_FW_VAULT_RACK</Description>
@@ -398,7 +447,9 @@
 		</Row>
 	</UnitClasses>
 	<Units>
-		<!-- COLONIST-->
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_MODERN_COLONIST</Class>
 			<Type>UNIT_FW_MODERN_COLONIST</Type>
@@ -453,7 +504,9 @@
 			<PurchaseCooldown>5</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_SETTLER</CombatClass>
 		</Row>
-		<!-- DIPLOMAT -->
+    <!-- =======================================================================================================
+       Diplomat
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_AUGMENTED_DIPLOMAT</Class>
 			<Type>UNIT_FW_AUGMENTED_DIPLOMAT</Type>
@@ -477,7 +530,9 @@
 			<UnitFlagIconOffset>0</UnitFlagIconOffset>
 			<PurchaseCooldown>5</PurchaseCooldown>
 		</Row>
-		<!-- MISSILE -->
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_CLUSTER_MISSILE</Class>
 			<Type>UNIT_FW_CLUSTER_MISSILE</Type>
@@ -557,7 +612,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
 			<NoMaintenance>true</NoMaintenance>
-			<Range>4</Range>
+			<Range>5</Range>
 			<Special>SPECIALUNIT_MISSILE</Special>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_MISSILE_AIR</DefaultUnitAI>
@@ -579,7 +634,7 @@
 			<UnitFlagAtlas>FLAG_ATLAS_FUTURE</UnitFlagAtlas>
 			<UnitFlagIconOffset>3</UnitFlagIconOffset>
 			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
-			<PortraitIndex>33</PortraitIndex>
+			<PortraitIndex>8</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 		</Row>
 		<Row>
@@ -789,7 +844,9 @@
 			<PortraitIndex>35</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 		</Row>
-		<!-- TANK -->
+    <!-- =======================================================================================================
+       Armor
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_RAILGUN_TANK</Class>
 			<Type>UNIT_FW_RAILGUN_TANK</Type>
@@ -857,7 +914,9 @@
 			<PortraitIndex>15</PortraitIndex>
 			<MoveRate>ROBOT</MoveRate>
 		</Row>
-		<!-- DRONE -->
+    <!-- =======================================================================================================
+       Airrecon
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_MODERN_DRONE</Class>
 			<Type>UNIT_FW_MODERN_DRONE</Type>
@@ -867,9 +926,9 @@
 			<Cost>2100</Cost>
 			<FaithCost>1800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Moves>5</Moves>
+			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_MODERN_DRONE</Description>
@@ -899,9 +958,9 @@
 			<Cost>2700</Cost>
 			<FaithCost>2000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Moves>6</Moves>
+			<Moves>7</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_HYBRID_DRONE</Description>
@@ -931,10 +990,10 @@
 			<Cost>3450</Cost>
 			<FaithCost>2250</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Moves>7</Moves>
+			<Moves>8</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<BaseSightRange>3</BaseSightRange>
-			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_BIODRONE</Description>
@@ -954,7 +1013,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>7</PortraitIndex>
 		</Row>
-		<!-- HELICOPTER -->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_APACHE</Class>
 			<Type>UNIT_FW_APACHE</Type>
@@ -1066,7 +1127,9 @@
 			<PortraitIndex>42</PortraitIndex>
 			<MoveRate>WHEELED</MoveRate>
 		</Row>
-		<!-- ARTILLERY -->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_HIMARS</Class>
 			<Type>UNIT_FW_HIMARS</Type>
@@ -1172,7 +1235,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 		</Row>
-		<!-- SAM -->
+    <!-- =======================================================================================================
+       Sam
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_MODERN_MOBILE_SAM</Class>
 			<Type>UNIT_FW_MODERN_MOBILE_SAM</Type>
@@ -1279,7 +1344,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
 			<PortraitIndex>23</PortraitIndex>
 		</Row>
-		<!-- ARMOR SOLDIER -->
+    <!-- =======================================================================================================
+       Aromored soldiers
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_POWER_ARMOR_INFANTRY</Class>
 			<Type>UNIT_FW_POWER_ARMOR_INFANTRY</Type>	
@@ -1378,7 +1445,9 @@
 			<PortraitIndex>0</PortraitIndex>
 			<MoveRate>ROBOT</MoveRate>
 		</Row>
-		<!-- BIOSOLDIER -->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_BIOINFANTRY</Class>
 			<Type>UNIT_FW_BIOINFANTRY</Type>
@@ -1451,7 +1520,7 @@
 			<Class>UNITCLASS_FW_BIOTROOPER</Class>
 			<Type>UNIT_FW_BIOTROOPER</Type>
 			<PrereqTech>TECH_BIOMODIFICATION</PrereqTech>
-			<Combat>125</Combat>
+			<Combat>135</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>2950</Cost>
 			<FaithCost>2250</FaithCost>
@@ -1514,11 +1583,14 @@
 			<IconAtlas>BM_ALIENS_CIV_COLOR_ATLAS</IconAtlas>
 			<PortraitIndex>40</PortraitIndex>
 		</Row>
-		<!-- PMC -->
+    <!-- =======================================================================================================
+       PMC
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_CAYM_PMC</Class>
 			<Type>UNIT_CAYM_PMC</Type>
 			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+			<ObsoleteTech>TECH_FW_ECOTHEORY</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_CAYM_PMC</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
@@ -1670,7 +1742,9 @@
 			<UnitFlagAtlas>MERC_FLAG_ATLAS</UnitFlagAtlas>
 			<UnitFlagIconOffset>0</UnitFlagIconOffset>
 		</Row>
-		<!-- ARCHER -->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_ATGM</Class>
 			<Type>UNIT_FW_ATGM</Type>
@@ -1745,7 +1819,7 @@
 			<Type>UNIT_FW_ROBOT_INFANTRY</Type>
 			<PrereqTech>TECH_AI</PrereqTech>
 			<Combat>105</Combat>
-			<RangedCombat>125</RangedCombat>
+			<RangedCombat>130</RangedCombat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>2950</Cost>
 			<FaithCost>2250</FaithCost>
@@ -1808,7 +1882,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
 			<PortraitIndex>21</PortraitIndex>
 		</Row> 
-		<!-- SAPPER -->
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_AIRBORNE_FORCES</Class>
 			<Type>UNIT_FW_AIRBORNE_FORCES</Type>
@@ -1908,7 +1984,9 @@
 			<IconAtlas>BM_ALIENS_CIV_COLOR_ATLAS</IconAtlas>
 			<PortraitIndex>54</PortraitIndex>
 		</Row>
-		<!-- GENE UNIT -->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_SWARM</Class>
 			<Type>UNIT_FW_SWARM</Type>
@@ -1968,8 +2046,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>46</PortraitIndex>
 		</Row>
-
-		<!-- DINO -->
+    <!-- =======================================================================================================
+       Dino
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_TREX</Class>
 			<Type>UNIT_FW_TREX</Type>
@@ -2054,7 +2133,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>62</PortraitIndex>
 		</Row>	
-		<!-- GUNBOAT -->
+    <!-- =======================================================================================================
+       Gunboat
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_GUNBOAT</Class>
 			<Type>UNIT_FW_GUNBOAT</Type>
@@ -2133,7 +2214,9 @@
 			<PortraitIndex>16</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
 		</Row>
-		<!-- DESTROYER -->
+    <!-- =======================================================================================================
+       Destroyer
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_NEODESTROYER</Class>
 			<Type>UNIT_FW_NEODESTROYER</Type>
@@ -2245,13 +2328,15 @@
 			<PortraitIndex>18</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
 		</Row>
-		<!-- CRUISER -->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_ARSENAL_SHIP</Class>
 			<Type>UNIT_FW_ARSENAL_SHIP</Type>
 			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
-			<Combat>85</Combat>
-			<RangedCombat>95</RangedCombat>
+			<Combat>90</Combat>
+			<RangedCombat>105</RangedCombat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>3400</Cost>
 			<FaithCost>1800</FaithCost>
@@ -2289,7 +2374,7 @@
 			<Class>UNITCLASS_FW_RAILGUN_CRUISER</Class>
 			<Type>UNIT_FW_RAILGUN_CRUISER</Type>
 			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
-			<Combat>95</Combat>
+			<Combat>105</Combat>
 			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
 			<Cost>4200</Cost>
@@ -2363,7 +2448,9 @@
 			<PortraitIndex>19</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
 		</Row>
-		<!-- SUBMARINE -->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_MECHASUB</Class>			
 			<Type>UNIT_FW_MECHASUB</Type>			
@@ -2446,7 +2533,9 @@
 			<PortraitIndex>22</PortraitIndex>
 			<MoveRate>SUB</MoveRate>
 		</Row>
-		<!-- CARRIER-->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_SUPERCARRIER</Class>
 			<Type>UNIT_FW_SUPERCARRIER</Type>
@@ -2486,8 +2575,9 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>47</PortraitIndex>
 		</Row>
-		
-		<!-- AIRFIGHTER  -->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_DRONE_FIGHTER_2</Class>
 			<Type>UNIT_FW_DRONE_FIGHTER_2</Type>
@@ -2603,7 +2693,9 @@
 			<PortraitIndex>12</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 		</Row>
-		<!-- BOMBER  -->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_SUBORBITAL_BOMBER</Class>
 			<Type>UNIT_FW_SUBORBITAL_BOMBER</Type>
@@ -2716,7 +2808,9 @@
 			<PortraitIndex>13</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 		</Row>
-		<!-- UNIQUE UNIT -->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_MUTANT</Class>
 			<Type>UNIT_FW_MUTANT</Type>
@@ -2934,11 +3028,12 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>56</PortraitIndex>
 		</Row>
-		<!-- Vault dummy -->
+    <!-- =======================================================================================================
+       Dummy rack
+       ======================================================================================================= -->
 		<Row>
 			<Class>UNITCLASS_FW_VAULT_RACK</Class>
 			<Type>UNIT_FW_VAULT_RACK</Type>
-			<PrereqTech>TECH_FW_DUMMY_HIDDEN</PrereqTech>
 			<Combat>0</Combat>
 			<BaseLandAirDefense>0</BaseLandAirDefense>
 			<Cost>-1</Cost>
@@ -2947,8 +3042,8 @@
 			<RequiresFaithPurchaseEnabled>false</RequiresFaithPurchaseEnabled>
 			<Moves>0</Moves>
 			<PurchaseCooldown>0</PurchaseCooldown>
-			<ShowInPedia>false</ShowInPedia>
-			<Domain>DOMAIN_LAND</Domain>
+			<ShowInPedia>0</ShowInPedia>
+			<Domain>DOMAIN_IMMOBILE</Domain>
 			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_VAULT_RACK</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_VAULT_RACK_TEXT</Civilopedia>
@@ -2966,101 +3061,17 @@
 			<Pillage>false</Pillage>
 			<XPValueAttack>0</XPValueAttack>
 			<XPValueDefense>0</XPValueDefense>
-			<UnitArtInfo>ART_DEF_UNIT_LEVDESTROYER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_EXPLORERBE</UnitArtInfo>
 			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_6</UnitFlagAtlas>
 			<UnitFlagIconOffset>0</UnitFlagIconOffset>
-			<IconAtlas>CIV_COLOR_ATLAS_IMPERIAL</IconAtlas>
-			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
+			<PortraitIndex>35</PortraitIndex>
 		</Row>
 	</Units>
-	<Civilization_UnitClassOverrides>
-		<!-- <Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_RAPTOR</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_TRICERATOPS</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_TREX</UnitClassType>
-			<UnitType/>
-		</Row> -->
-		<!-- DINO -->
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_RAPTOR</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_TRICERATOPS</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_TREX</UnitClassType>
-			<UnitType/>
-		</Row>
-		<!-- CARRIER -->
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_SUPERCARRIER</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_SUPERCARRIER</UnitClassType>
-			<UnitType/>
-		</Row>
-		<!-- NUKES -->
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_HYDROGEN_BOMB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_HYDROGEN_BOMB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_THERMONUCLEAR_BOMB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_THERMONUCLEAR_BOMB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<!-- SUBMARINE -->
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_MECHASUB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_MECHASUB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_CYBERSUB</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_FW_CYBERSUB</UnitClassType>
-			<UnitType/>
-		</Row>
-	</Civilization_UnitClassOverrides>
 	<Unit_AITypes>
-	    <!-- COLONIST -->
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_COLONIST</UnitType>
 			<UnitAIType>UNITAI_SETTLE</UnitAIType>
@@ -3069,12 +3080,16 @@
 			<UnitType>UNIT_FW_SPACE_COLONIST</UnitType>
 			<UnitAIType>UNITAI_SETTLE</UnitAIType>
 		</Row>
-		<!-- DIPLOMAT -->
+    <!-- =======================================================================================================
+       Diplomat
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_AUGMENTED_DIPLOMAT</UnitType>
 			<UnitAIType>UNITAI_MESSENGER</UnitAIType>
 		</Row>
-		<!-- MISSILE -->
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
 			<UnitAIType>UNITAI_MISSILE_AIR</UnitAIType>
@@ -3095,7 +3110,9 @@
 			<UnitType>UNIT_FW_RAILGUN_MISSILE</UnitType>
 			<UnitAIType>UNITAI_MISSILE_AIR</UnitAIType>
 		</Row>
-		<!-- TANK -->
+    <!-- =======================================================================================================
+       Armor
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
@@ -3120,7 +3137,9 @@
 			<UnitType>UNIT_FW_ZEKE</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
 		</Row>
-		<!-- DRONE -->
+    <!-- =======================================================================================================
+       Airrecon
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_DRONE</UnitType>
 			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
@@ -3137,7 +3156,9 @@
 			<UnitType>UNIT_FW_BIODRONE</UnitType>
 			<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 		</Row>
-		<!-- HELICOPTER -->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_APACHE</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
@@ -3162,7 +3183,9 @@
 			<UnitType>UNIT_FW_HOVERTANK</UnitType>
 			<UnitAIType>UNITAI_COUNTER</UnitAIType>
 		</Row>
-		<!-- SAM -->
+    <!-- =======================================================================================================
+       Sam
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_MOBILE_SAM</UnitType>
 			<UnitAIType>UNITAI_COUNTER</UnitAIType>
@@ -3175,7 +3198,9 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<UnitAIType>UNITAI_COUNTER</UnitAIType>
 		</Row>
-		<!-- ARTILLERY-->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_HIMARS</UnitType>
 			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
@@ -3204,7 +3229,9 @@
 			<UnitType>UNIT_FW_ANGEL</UnitType>
 			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
 		</Row>
-		<!-- ARMOR SOLDIER -->
+    <!-- =======================================================================================================
+       Armor soldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_POWER_ARMOR_INFANTRY</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3241,7 +3268,9 @@
 			<UnitType>UNIT_FW_GUNDAM</UnitType>
 			<UnitAIType>UNITAI_PARADROP</UnitAIType>
 		</Row>
-		<!-- BIO SOLDIER -->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_BIOINFANTRY</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3286,7 +3315,9 @@
 			<UnitType>UNIT_FW_BIOTROOPER</UnitType>
 			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
 		</Row>
-		<!-- PMC -->
+    <!-- =======================================================================================================
+       PMC
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_CAYM_PMC</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3319,7 +3350,9 @@
 			<UnitType>UNIT_FW_BIO_MERCENARIES</UnitType>
 			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
 		</Row>
-		<!-- ARCHER -->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ATGM</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
@@ -3336,7 +3369,9 @@
 			<UnitType>UNIT_FW_COLOSSUS</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>
-		<!-- SAPPER -->
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
 			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
@@ -3361,7 +3396,9 @@
 			<UnitType>UNIT_FW_SPACEMARINES</UnitType>
 			<UnitAIType>UNITAI_PARADROP</UnitAIType>
 		</Row>
-		<!-- GENE UNIT -->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CHIMERA</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3378,7 +3415,9 @@
 			<UnitType>UNIT_FW_SWARM</UnitType>
 			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
 		</Row>
-		<!-- DINO -->
+    <!-- =======================================================================================================
+       Dino
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_TREX</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3403,7 +3442,9 @@
 			<UnitType>UNIT_FW_RAPTOR</UnitType>
 			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
 		</Row>
-		<!-- GUNBOAT -->
+    <!-- =======================================================================================================
+       Gunboat
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_GUNBOAT</UnitType>
 			<UnitAIType>UNITAI_PARADROP</UnitAIType>
@@ -3452,7 +3493,9 @@
 			<UnitType>UNIT_FW_ADV_GUNBOAT</UnitType>
 			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
 		</Row>
-		<!-- DESTROYER-->
+    <!-- =======================================================================================================
+       Destroyer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_NEODESTROYER</UnitType>
 			<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
@@ -3501,7 +3544,9 @@
 			<UnitType>UNIT_FW_BIO_DESTROYER</UnitType>
 			<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 		</Row>
-		<!-- CRUISER -->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
@@ -3550,7 +3595,9 @@
 			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
 			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
 		</Row>
-		<!-- SUBMARINE -->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MECHASUB</UnitType>
 			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
@@ -3575,12 +3622,16 @@
 			<UnitType>UNIT_FW_CYBERSUB</UnitType>
 			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
 		</Row>
-		<!-- CARRIER -->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUPERCARRIER</UnitType>
 			<UnitAIType>UNITAI_CARRIER_SEA</UnitAIType>
 		</Row>
-		<!-- AIRFIGHTER -->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<UnitAIType>UNITAI_DEFENSE_AIR</UnitAIType>
@@ -3605,7 +3656,9 @@
 			<UnitType>UNIT_FW_SPACE_FIGHTER</UnitType>
 			<UnitAIType>UNITAI_CARRIER_AIR</UnitAIType>
 		</Row>
-		<!-- BOMBER -->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 			<UnitAIType>UNITAI_ATTACK_AIR</UnitAIType>
@@ -3630,7 +3683,9 @@
 			<UnitType>UNIT_FW_SPACE_BOMBER</UnitType>
 			<UnitAIType>UNITAI_CARRIER_AIR</UnitAIType>
 		</Row>
-		<!-- UNIQUE UNIT-->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MUTANT</UnitType>
 			<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3729,7 +3784,9 @@
 		</Row>
 	</Unit_AITypes>
 	<Unit_Flavors>
-		<!-- COLONIST -->
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_COLONIST</UnitType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
@@ -3740,13 +3797,17 @@
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>45</Flavor>
 		</Row>
-	    <!-- DIPLOMAT -->
+    <!-- =======================================================================================================
+       Diplomat
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>FW_AUGMENTED_DIPLOMAT</UnitType>
 			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
 			<Flavor>90</Flavor>
 		</Row>
-		<!-- MISSILE -->
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
@@ -3882,7 +3943,9 @@
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>12</Flavor>
 		</Row>
-		<!-- TANK -->
+    <!-- =======================================================================================================
+       Armor
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -3908,7 +3971,9 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>25</Flavor>
 		</Row>
-		<!-- DRONE -->
+    <!-- =======================================================================================================
+       Airrecon
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_DRONE</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -3969,7 +4034,9 @@
 			<FlavorType>FLAVOR_RECON</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
-		<!-- HELICOPTER -->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_APACHE</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4030,7 +4097,9 @@
 			<FlavorType>FLAVOR_RANGED</FlavorType>
 			<Flavor>22</Flavor>
 		</Row>
-		<!-- ARTILLERY -->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_HIMARS</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4091,7 +4160,9 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- SAM -->
+    <!-- =======================================================================================================
+       Sam
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_MOBILE_SAM</UnitType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
@@ -4137,7 +4208,9 @@
 			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>  
-		<!-- ARMOR SOLDIER -->
+    <!-- =======================================================================================================
+       Armored soldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_POWER_ARMOR_INFANTRY</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4183,7 +4256,9 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>6</Flavor>
 		</Row>
-		<!-- BIOSOLDIER-->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_BIOINFANTRY</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4244,7 +4319,9 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>25</Flavor>
 		</Row>
-		<!-- PMC -->
+    <!-- =======================================================================================================
+       PMC
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_CAYM_PMC</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4305,7 +4382,9 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>8</Flavor>
 		</Row>
-		<!-- ARCHER -->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ATGM</UnitType>
 			<FlavorType>FLAVOR_RANGED</FlavorType>
@@ -4371,7 +4450,9 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>35</Flavor>
 		</Row>
-		<!-- SAPPER -->
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
 			<FlavorType>FLAVOR_RECON</FlavorType>
@@ -4417,7 +4498,9 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>24</Flavor>
 		</Row>
-		<!-- GENE UNIT -->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SWARM</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4448,7 +4531,9 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
-		<!-- DINO -->
+    <!-- =======================================================================================================
+       Dino
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_TREX</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4464,7 +4549,9 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- GUNBOAT -->
+    <!-- =======================================================================================================
+       Gunboat
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_GUNBOAT</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
@@ -4485,7 +4572,9 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>60</Flavor>
 		</Row>
-		<!-- DESTROYER -->
+    <!-- =======================================================================================================
+       Destroyer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_NEODESTROYER</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
@@ -4516,7 +4605,9 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>60</Flavor>
 		</Row>
-		<!-- CRUISER -->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
@@ -4547,7 +4638,9 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>35</Flavor>
 		</Row>
-		<!-- SUMBARINE -->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MECHASUB</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
@@ -4578,7 +4671,9 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>45</Flavor>
 		</Row>
-		<!-- CARRIER -->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUPERCARRIER</UnitType>
 			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
@@ -4589,7 +4684,9 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>40</Flavor>
 		</Row>
-		<!-- AIRFIGHTER -->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4650,7 +4747,9 @@
 			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
-		<!-- BOMBER -->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4696,7 +4795,9 @@
 			<FlavorType>FLAVOR_AIR</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
-		<!-- UNIQUE UNIT-->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MUTANT</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -4819,7 +4920,17 @@
 		</Row>
 	</Unit_Flavors>
 	<Unit_ResourceQuantityRequirements>
-		<!-- MISSILE -->		
+    <!-- =======================================================================================================
+       Diplomat
+       ======================================================================================================= -->
+		<Row>
+			<UnitType>UNIT_FW_AUGMENTED_DIPLOMAT</UnitType>
+			<ResourceType>RRESOURCE_PAPER</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -4863,7 +4974,9 @@
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Cost>2</Cost>
 		</Row>
-		<!-- TANK -->
+    <!-- =======================================================================================================
+       Tank
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -4878,7 +4991,9 @@
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 		</Row>
 
-		 <!-- DRONE -->
+    <!-- =======================================================================================================
+       Drone
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MODERN_DRONE</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -4895,7 +5010,9 @@
 			<UnitType>UNIT_FW_BIODRONE</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
 		</Row>
-		<!-- HELICOPTER -->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_APACHE</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -4912,7 +5029,9 @@
 			<UnitType>UNIT_FW_HOVERTANK</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
 		</Row>
-	    <!-- SAM -->
+    <!-- =======================================================================================================
+       Sam
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CYBERSAM</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -4925,8 +5044,9 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 		</Row>
-
-	    <!--ARTILLERY-->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_HIMARS</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -4947,7 +5067,9 @@
 			<UnitType>UNIT_FW_ANGEL</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 		</Row>
-        <!-- ARMOR SOLDIER-->
+    <!-- =======================================================================================================
+       Armored soldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_BATTLESUIT</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -4962,7 +5084,9 @@
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 			<Cost>1</Cost>
 		</Row>
-		<!-- BIO SOLDIER -->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLONETROOPER</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
@@ -4979,11 +5103,9 @@
 			<UnitType>UNIT_FW_BIOTROOPER</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_BIOTROOPER</UnitType>
-			<ResourceType>RESOURCE_NANOMAT</ResourceType>
-		</Row>
-		<!--ARCHER-->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ROBOT_INFANTRY</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -4993,11 +5115,9 @@
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 			<Cost>2</Cost>
 		</Row>	
-		<!-- SAPPER-->
-		<Row>
-			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-		</Row>
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -5011,14 +5131,17 @@
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 			<Cost>2</Cost>
 		</Row>
-		<!-- GENE UNIT-->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CHIMERA</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
 			<Cost>1</Cost>
 		</Row>
-
-		<!-- DESTROYER -->
+    <!-- =======================================================================================================
+       Destroyer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_DESTROYER</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -5031,7 +5154,9 @@
 			<UnitType>UNIT_FW_BIO_DESTROYER</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
 		</Row>
-		<!-- CRUISER-->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -5056,7 +5181,9 @@
 			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
 		</Row>
-		<!-- SUBMARINE-->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MECHASUB</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
@@ -5069,7 +5196,9 @@
 			<UnitType>UNIT_FW_CYBERSUB</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 		</Row>
-		<!-- CARRIER -->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUPERCARRIER</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
@@ -5078,7 +5207,9 @@
 			<UnitType>UNIT_FW_SUPERCARRIER</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 		</Row>
-		<!-- AIRFIGHTER -->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -5099,7 +5230,9 @@
 			<UnitType>UNIT_FW_SPACE_FIGHTER</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 		</Row>
-		<!-- BOMBER-->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -5120,7 +5253,9 @@
 			<UnitType>UNIT_FW_SPACE_BOMBER</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
 		</Row>
-		<!-- UNIQUE UNIT -->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MUTANT</UnitType>
 			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
@@ -5176,7 +5311,9 @@
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Cost>1</Cost>
 		</Row>
-		<!-- SPACE SHIP -->
+    <!-- =======================================================================================================
+       Spaceships
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_SS_ENGINE</UnitType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -5195,9 +5332,27 @@
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
-		<!-- COLONIST sql have this-->
-		<!-- DIPLOMAT sql have this-->
-		<!-- MISSILE  -->
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
+	    <Row>
+			<UnitType>UNIT_COLONIST</UnitType>
+			<UnitClassType>UNITCLASS_FW_MODERN_COLONIST</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_MODERN_COLONIST</UnitType>
+			<UnitClassType>UNITCLASS_FW_SPACE_COLONIST</UnitClassType>
+		</Row>
+    <!-- =======================================================================================================
+       Colonist
+       ======================================================================================================= -->
+		<Row>
+			<UnitType>UNIT_AMBASSADOR</UnitType>
+			<UnitClassType>UNITCLASS_FW_AUGMENTED_DIPLOMAT</UnitClassType>
+		</Row>
+    <!-- =======================================================================================================
+       Missile
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLUSTER_MISSILE</UnitType>
 			<UnitClassType>UNITCLASS_FW_HYPERMISSILE</UnitClassType>
@@ -5222,7 +5377,9 @@
 			<UnitType>UNIT_FW_GOD_ROD</UnitType>
 			<UnitClassType>UNITCLASS_FW_GOD_ROD2</UnitClassType>
 		</Row>
-		<!-- DRONE -->
+    <!-- =======================================================================================================
+       Airrecon
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_PREDATOR_DRONE</UnitType>
 			<UnitClassType>UNITCLASS_FW_MODERN_DRONE</UnitClassType>
@@ -5235,7 +5392,9 @@
 			<UnitType>UNIT_FW_HYBRID_DRONE</UnitType>
 			<UnitClassType>UNITCLASS_FW_BIODRONE</UnitClassType>
 		</Row>
-		<!-- HELICOPTER-->
+    <!-- =======================================================================================================
+       Helicopter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>
 			<UnitClassType>UNITCLASS_FW_APACHE</UnitClassType>
@@ -5252,7 +5411,9 @@
 			<UnitType>UNIT_FW_VERTOL</UnitType>
 			<UnitClassType>UNITCLASS_FW_HOVERTANK</UnitClassType>
 		</Row>
-		<!-- TANK-->
+    <!-- =======================================================================================================
+       Aromor
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<UnitClassType>UNITCLASS_FW_ZEKE</UnitClassType>
@@ -5261,7 +5422,9 @@
 			<UnitType>UNIT_FW_ZEKE</UnitType>
 			<UnitClassType>UNITCLASS_MECH</UnitClassType>
 		</Row>
-		<!-- SAM-->
+    <!-- =======================================================================================================
+       SAM
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_MOBILE_SAM</UnitType>
 			<UnitClassType>UNITCLASS_FW_MODERN_MOBILE_SAM</UnitClassType>
@@ -5274,7 +5437,9 @@
 			<UnitType>UNIT_FW_CYBERSAM</UnitType>
 			<UnitClassType>UNITCLASS_FW_CRAWLER</UnitClassType>
 		</Row>
-		<!-- ARTILLERY -->
+    <!-- =======================================================================================================
+       Siege
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_ROCKET_ARTILLERY</UnitType>
 			<UnitClassType>UNITCLASS_FW_HIMARS</UnitClassType>
@@ -5287,7 +5452,9 @@
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<UnitClassType>UNITCLASS_FW_ANGEL</UnitClassType>
 		</Row>
-		<!-- ARMOR SOLDIER -->
+    <!-- =======================================================================================================
+       Armored soldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
 			<UnitClassType>UNITCLASS_FW_POWER_ARMOR_INFANTRY</UnitClassType>
@@ -5300,7 +5467,9 @@
 			<UnitType>UNIT_FW_BATTLESUIT</UnitType>
 			<UnitClassType>UNITCLASS_FW_GUNDAM</UnitClassType>
 		</Row>
-		<!-- BIOSOLDIER -->
+    <!-- =======================================================================================================
+       Biosoldiers
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_BIOINFANTRY</UnitType>
 			<UnitClassType>UNITCLASS_FW_BIOTROOPER</UnitClassType>
@@ -5313,7 +5482,9 @@
 			<UnitType>UNIT_FW_BIOTROOPER</UnitType>
 			<UnitClassType>UNITCLASS_FW_SUPERSOLDIERS</UnitClassType>
 		</Row>
-		<!-- PMC -->
+    <!-- =======================================================================================================
+       PMC
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_CAYM_PMC</UnitType>
 			<UnitClassType>UNITCLASS_FW_ELITE_MERCENARIES</UnitClassType>
@@ -5326,7 +5497,9 @@
 			<UnitType>UNIT_FW_ENHANCED_MERCENARIES</UnitType>
 			<UnitClassType>UNITCLASS_FW_BIO_MERCENARIES</UnitClassType>
 		</Row>
-		<!-- ARCHER-->
+    <!-- =======================================================================================================
+       Archer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_BAZOOKA</UnitType>
 			<UnitClassType>UNITCLASS_FW_ATGM</UnitClassType>
@@ -5343,7 +5516,9 @@
 			<UnitType>UNIT_FW_ROBOT_INFANTRY</UnitType>
 			<UnitClassType>UNITCLASS_FW_COLOSSUS</UnitClassType>
 		</Row>
-		<!-- SAPPER-->
+    <!-- =======================================================================================================
+       Sapper
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
 			<UnitClassType>UNITCLASS_FW_ORBITAL_DROP_SHOCK_TROOPER</UnitClassType>
@@ -5356,12 +5531,16 @@
 			<UnitType>UNIT_XCOM_SQUAD</UnitType>
 			<UnitClassType>UNITCLASS_FW_SPACEMARINES</UnitClassType>
 		</Row>
-		<!--GENE UNIT-->
+    <!-- =======================================================================================================
+       Gene units
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_SWARM</UnitType>
 			<UnitClassType>UNITCLASS_FW_CHIMERA</UnitClassType>
 		</Row>
-		<!-- DINO -->
+    <!-- =======================================================================================================
+       Dino
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_TREX</UnitType>
 			<UnitClassType>UNITCLASS_FW_CHIMERA</UnitClassType>
@@ -5374,12 +5553,16 @@
 			<UnitType>UNIT_FW_RAPTOR</UnitType>
 			<UnitClassType>UNITCLASS_FW_CHIMERA</UnitClassType>
 		</Row>
-		<!-- GUN BOAT -->
+    <!-- =======================================================================================================
+       Gunboat
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_GUNBOAT</UnitType>
 			<UnitClassType>UNITCLASS_FW_ADV_GUNBOAT</UnitClassType>
 		</Row>
-		<!--DESTROYER-->
+    <!-- =======================================================================================================
+       Destroyer
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_MISSILE_DESTROYER</UnitType>
 			<UnitClassType>UNITCLASS_FW_NEODESTROYER</UnitClassType>
@@ -5392,7 +5575,9 @@
 			<UnitType>UNIT_FW_RAILGUN_DESTROYER</UnitType>
 			<UnitClassType>UNITCLASS_FW_BIO_DESTROYER</UnitClassType>
 		</Row>
-		<!--CRUISER -->
+    <!-- =======================================================================================================
+       Cruiser
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_MISSILE_CRUISER</UnitType>
 			<UnitClassType>UNITCLASS_FW_ARSENAL_SHIP</UnitClassType>
@@ -5405,7 +5590,9 @@
 			<UnitType>UNIT_FW_RAILGUN_CRUISER</UnitType>
 			<UnitClassType>UNITCLASS_FW_BIO_CRUISER</UnitClassType>
 		</Row>
-		<!-- SUBMARINE -->
+    <!-- =======================================================================================================
+       Submarine
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_NUCLEAR_SUBMARINE</UnitType>
 			<UnitClassType>UNITCLASS_FW_MECHASUB</UnitClassType>
@@ -5414,12 +5601,16 @@
 			<UnitType>UNIT_FW_MECHASUB</UnitType>
 			<UnitClassType>UNITCLASS_FW_CYBERSUB</UnitClassType>
 		</Row>
-		<!-- CARRIER -->
+    <!-- =======================================================================================================
+       Carrier
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_SUPERCARRIER</UnitType>
 			<UnitClassType>UNITCLASS_FW_SUPERCARRIER</UnitClassType>
 		</Row>
-		<!-- AIRFIGHTER-->
+    <!-- =======================================================================================================
+       Airfighter
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_ADVJET</UnitType>
 			<UnitClassType>UNITCLASS_FW_DRONE_FIGHTER_2</UnitClassType>
@@ -5432,7 +5623,9 @@
 			<UnitType>UNIT_FW_PLASMA_FIGHTER</UnitType>
 			<UnitClassType>UNITCLASS_FW_SPACE_FIGHTER</UnitClassType>
 		</Row>		
-		<!-- BOMBER-->
+    <!-- =======================================================================================================
+       Bomber
+       ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_STEALTH_BOMBER</UnitType>
 			<UnitClassType>UNITCLASS_FW_SUBORBITAL_BOMBER</UnitClassType>
@@ -5445,7 +5638,9 @@
 			<UnitType>UNIT_FW_PLASMA_BOMBER</UnitType>
 			<UnitClassType>UNITCLASS_FW_SPACE_BOMBER</UnitClassType>
 		</Row>
-		<!-- UNIQUE UNIT -->
+    <!-- =======================================================================================================
+       Unique units
+       ======================================================================================================= -->		
 		<Row>
 			<UnitType>UNIT_FW_MUTANT</UnitType>
 			<UnitClassType>UNITCLASS_FW_HYDRA</UnitClassType>
@@ -5459,70 +5654,24 @@
 			<UnitClassType>UNITCLASS_FW_NEXUS</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
-	<UnitGameplay2DScripts>
-		<Row>
-			<UnitType>UNIT_FW_SUPERCARRIER</UnitType>
-			<SelectionSound>AS2D_SELECT_CARRIER</SelectionSound>
-			<FirstSelectionSound>AS2D_BIRTH_CARRIER</FirstSelectionSound>
-		</Row>
-		<!-- <Row>
-			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
-			<SelectionSound>AS2D_SELECT_ROCKET_ARTILLERY</SelectionSound>
-			<FirstSelectionSound>AS2D_BIRTH_ROCKET_ARTILLERY</FirstSelectionSound>
-		</Row> -->
-	</UnitGameplay2DScripts>
 	<UnitPromotions>
 		<Row>
-			<Type>PROMOTION_FW_MOVE_ALL_TERRAIN</Type>
-			<Description>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</Description>
-			<Help>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN_HELP</Help>
+			<Type>PROMOTION_AUGMENTED</Type>
+			<Description>TXT_KEY_PROMOTION_AUGMENTED</Description>
+			<Help>TXT_KEY_PROMOTION_AUGMENTED_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PortraitIndex>19</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaEntry>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</PediaEntry>
-			<CanMoveImpassable>true</CanMoveImpassable>
-			<CanMoveAllTerrain>true</CanMoveAllTerrain>
-			<LostWithUpgrade>1</LostWithUpgrade>
-		</Row>
-		<Row>
-			<Type>PROMOTION_FW_NETWORKED</Type>
-			<Description>TXT_KEY_PROMOTION_FW_NETWORKED</Description>
-			<Help>TXT_KEY_PROMOTION_FW_NETWORKED_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<DiploMissionInfluence>105</DiploMissionInfluence>
 			<CannotBeChosen>true</CannotBeChosen>
-			<AdjacentMod>15</AdjacentMod>
-			<PortraitIndex>15</PortraitIndex>
+			<PortraitIndex>41</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_NETWORKED</PediaEntry>
+			<PediaType>PEDIA_DIPLO</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AUGMENTED</PediaEntry>
 		</Row>
-		<Row>
-			<Type>PROMOTION_FW_AUTO_REPAIR</Type>
-			<Description>TXT_KEY_PROMOTION_FW_AUTO_REPAIR</Description>
-			<Help>TXT_KEY_PROMOTION_FW_AUTO_REPAIR_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<FriendlyHealChange>10</FriendlyHealChange>
-			<FriendlyLandsModifier>5</FriendlyLandsModifier>
-			<PortraitIndex>39</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_AUTO_REPAIR</PediaEntry>
-		</Row>
-		<Row>
-			<Type>PROMOTION_FW_HEALING_CORE</Type>
-			<Description>TXT_KEY_PROMOTION_FW_HEALING_CORE</Description>
-			<Help>TXT_KEY_PROMOTION_FW_HEALING_CORE_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<IsLostOnMove>true</IsLostOnMove>
-			<FriendlyHealChange>10</FriendlyHealChange>
-			<PortraitIndex>44</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_HEALING_CORE</PediaEntry>
-		</Row> 
+    <!-- =======================================================================================================
+       Bomb promotion
+       ======================================================================================================= -->
 		<Row>
 			<Type>PROMOTION_FW_SPLASH_DAMAGE_1</Type>
 			<Description>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_1</Description>
@@ -5562,7 +5711,7 @@
 			<Help>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>45</PortraitIndex>
+			<PortraitIndex>46</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4</PediaEntry>
@@ -5573,67 +5722,75 @@
 			<Help>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>45</PortraitIndex>
+			<PortraitIndex>46</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5</PediaEntry>
 		</Row>
-		<Row>
-			<Type>PROMOTION_PARADROP_2</Type>
-			<Description>TXT_KEY_PROMOTION_PARADROP_2</Description>
-			<Help>TXT_KEY_PROMOTION_PARADROP_2_HELP</Help>
+	<!-- =======================================================================================================
+       Special promotion
+       ======================================================================================================= -->
+	   <Row>
+			<Type>PROMOTION_FW_MOVE_ALL_TERRAIN</Type>
+			<Description>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</Description>
+			<Help>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<DropRange>20</DropRange>
-			<PortraitIndex>8</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_PARADROP_2</PediaEntry>
+			<PortraitIndex>19</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaEntry>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</PediaEntry>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<CanMoveAllTerrain>true</CanMoveAllTerrain>
+			<LostWithUpgrade>1</LostWithUpgrade>
 		</Row>
 		<Row>
-			<Type>PROMOTION_FW_SKYNET_LINK</Type>
-			<Description>TXT_KEY_PROMOTION_FW_SKYNET_LINK</Description>
-			<Help>TXT_KEY_PROMOTION_FW_SKYNET_LINK_HELP</Help>
+			<Type>PROMOTION_FW_NETWORKED</Type>
+			<Description>TXT_KEY_PROMOTION_FW_NETWORKED</Description>
+			<Help>TXT_KEY_PROMOTION_FW_NETWORKED_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<OpenAttack>10</OpenAttack>
-			<OpenDefense>10</OpenDefense>
-			<RoughAttack>10</RoughAttack>
-			<RoughDefense>10</RoughDefense>
-			<PortraitIndex>22</PortraitIndex>
+			<AdjacentMod>15</AdjacentMod>
+			<PortraitIndex>15</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_SKYNET_LINK</PediaEntry>
-		</Row> 
+			<PediaEntry>TXT_KEY_PROMOTION_FW_NETWORKED</PediaEntry>
+		</Row>
 		<Row>
-			<Type>PROMOTION_FW_PREDATOR</Type>
-			<Description>TXT_KEY_PROMOTION_FW_PREDATOR</Description>
-			<Help>TXT_KEY_PROMOTION_FW_PREDATOR_HELP</Help>
+			<Type>PROMOTION_FW_NUCLEAR_SMR</Type>
+			<Description>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR</Description>
+			<Help>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<OpenAttack>10</OpenAttack>
-			<OpenDefense>10</OpenDefense>
-			<RoughAttack>10</RoughAttack>
-			<RoughDefense>10</RoughDefense>
-			<PortraitIndex>20</PortraitIndex>
+			<PortraitIndex>43</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_PREDATOR</PediaEntry>
-		</Row> 
+			<PediaEntry>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR</PediaEntry>
+		</Row>
 		<Row>
-			<Type>PROMOTION_FW_SPACESPECIALIST</Type>
-			<Description>TXT_KEY_PROMOTION_FW_SPACESPECIALIST</Description>
-			<Help>TXT_KEY_PROMOTION_FW_SPACESPECIALIST_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
+			<Type>PROMOTION_ORBITAL_DROP</Type>
+			<Description>TXT_KEY_PROMOTION_ORBITAL_DROP</Description>
+			<Help>TXT_KEY_PROMOTION_ORBITAL_DROP_HELP</Help>
+			<Sound>AS2D_IF_LEVEL_UP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<OpenAttack>10</OpenAttack>
-			<OpenDefense>10</OpenDefense>
-			<RoughAttack>10</RoughAttack>
-			<RoughDefense>10</RoughDefense>
-			<PortraitIndex>21</PortraitIndex>
+			<DropRange>64</DropRange>
+			<PortraitIndex>40</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_SPACESPECIALIST</PediaEntry>
+			<PediaEntry>TXT_KEY_PROMOTION_ORBITAL_DROP</PediaEntry>
+		</Row>
+    <!-- =======================================================================================================
+       Unique unit promotion
+       ======================================================================================================= -->
+		<Row>
+			<Type>PROMOTION_FW_MUTATION</Type>
+			<Description>TXT_KEY_PROMOTION_FW_MUTATION</Description>
+			<Help>TXT_KEY_PROMOTION_FW_MUTATION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<AttackWoundedMod>10</AttackWoundedMod>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>18</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_MUTATION</PediaEntry>
 		</Row>
 		<Row>
 			<Type>PROMOTION_FW_NANOHIVE_PROMOTION</Type>
@@ -5666,33 +5823,111 @@
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_NEXUS</PediaEntry>
 		</Row>
+    <!-- =======================================================================================================
+       Wonder promotion
+       ======================================================================================================= -->
 		<Row>
-			<Type>PROMOTION_FW_MUTATION</Type>
-			<Description>TXT_KEY_PROMOTION_FW_MUTATION</Description>
-			<Help>TXT_KEY_PROMOTION_FW_MUTATION_HELP</Help>
+			<Type>PROMOTION_MNEMOSYNE_EXPERIENCE</Type>
+			<Description>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE</Description>
+			<Help>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<AttackWoundedMod>10</AttackWoundedMod>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>18</PortraitIndex>
+			<ExperiencePercent>25</ExperiencePercent>
+			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_MUTATION</PediaEntry>
-		</Row>
-		<Row>
-			<Type>PROMOTION_AUGMENTED</Type>
-			<Description>TXT_KEY_PROMOTION_AUGMENTED</Description>
-			<Help>TXT_KEY_PROMOTION_AUGMENTED_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE</PediaEntry>
+		</Row>  
+	   <Row>
+			<Type>PROMOTION_FW_PREDATOR</Type>
+			<Description>TXT_KEY_PROMOTION_FW_PREDATOR</Description>
+			<Help>TXT_KEY_PROMOTION_FW_PREDATOR_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>3</OrderPriority>
-			<LostWithUpgrade>true</LostWithUpgrade>
-			<DiploMissionInfluence>105</DiploMissionInfluence>
 			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>41</PortraitIndex>
+			<OpenAttack>10</OpenAttack>
+			<OpenDefense>10</OpenDefense>
+			<RoughAttack>10</RoughAttack>
+			<RoughDefense>10</RoughDefense>
+			<PortraitIndex>20</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_DIPLO</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_AUGMENTED</PediaEntry>
-		</Row>
-		<Row>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_PREDATOR</PediaEntry>
+	   </Row> 
+	   <Row>
+			<Type>PROMOTION_FW_SKYNET_LINK</Type>
+			<Description>TXT_KEY_PROMOTION_FW_SKYNET_LINK</Description>
+			<Help>TXT_KEY_PROMOTION_FW_SKYNET_LINK_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OpenAttack>10</OpenAttack>
+			<OpenDefense>10</OpenDefense>
+			<RoughAttack>10</RoughAttack>
+			<RoughDefense>10</RoughDefense>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_SKYNET_LINK</PediaEntry>
+	   </Row> 
+	   <Row>
+			<Type>PROMOTION_FW_SPACESPECIALIST</Type>
+			<Description>TXT_KEY_PROMOTION_FW_SPACESPECIALIST</Description>
+			<Help>TXT_KEY_PROMOTION_FW_SPACESPECIALIST_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OpenAttack>10</OpenAttack>
+			<OpenDefense>10</OpenDefense>
+			<RoughAttack>10</RoughAttack>
+			<RoughDefense>10</RoughDefense>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_SPACESPECIALIST</PediaEntry>
+	   </Row>
+    <!-- =======================================================================================================
+       Building promotion
+       ======================================================================================================= -->
+	   <Row>
+			<Type>PROMOTION_FW_TRANSGENICS</Type>
+			<Description>TXT_KEY_PROMOTION_FW_TRANSGENICS</Description>
+			<Help>TXT_KEY_PROMOTION_FW_TRANSGENICS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<Amphib>1</Amphib>         
+            <River>1</River>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>47</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_FW_TRANSGENICS</PediaEntry>
+	   </Row>
+	   <Row>
+			<Type>PROMOTION_FW_AUTO_REPAIR</Type>
+			<Description>TXT_KEY_PROMOTION_FW_AUTO_REPAIR</Description>
+			<Help>TXT_KEY_PROMOTION_FW_AUTO_REPAIR_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<FriendlyHealChange>10</FriendlyHealChange>
+			<FriendlyLandsModifier>5</FriendlyLandsModifier>
+			<PortraitIndex>39</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_AUTO_REPAIR</PediaEntry>
+	   </Row>
+	   <Row>
+			<Type>PROMOTION_FW_AEROPLEX_DROP</Type>
+			<Description>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP</Description>
+			<Help>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<DropRange>40</DropRange>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_FW_AEROPLEX_DROP</PediaEntry>
+	   </Row>
+    <!-- =======================================================================================================
+       Gengineered
+       ======================================================================================================= -->
+	   <Row>
 			<Type>PROMOTION_FW_GENGINEERED</Type>
 			<Description>TXT_KEY_PROMOTION_FW_GENGINEERED</Description>
 			<Help>TXT_KEY_PROMOTION_FW_GENGINEERED_HELP</Help>
@@ -5702,8 +5937,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_GENGINEERED</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_ADRENAL_GLANDS</Type>
 			<Description>TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS</Description>
 			<Help>TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS_HELP</Help>
@@ -5716,8 +5951,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_ENHANCED_REFLEXES</Type>
 			<Description>TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES</Description>
 			<Help>TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES_HELP</Help>
@@ -5729,8 +5964,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_ENHANCED_VISION</Type>
 			<Description>TXT_KEY_PROMOTION_FW_ENHANCED_VISION</Description>
 			<Help>TXT_KEY_PROMOTION_FW_ENHANCED_VISION_HELP</Help>
@@ -5742,8 +5977,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_VISION</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_PREDATOR_INSTINCT</Type>
 			<Description>TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT</Description>
 			<Help>TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT_HELP</Help>
@@ -5754,8 +5989,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_ENHANCED_MUSCLES</Type>
 			<Description>TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES</Description>
 			<Help>TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES_HELP</Help>
@@ -5767,8 +6002,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_URBAN_WARFARE</Type>
 			<Description>TXT_KEY_PROMOTION_FW_URBAN_WARFARE</Description>
 			<Help>TXT_KEY_PROMOTION_FW_URBAN_WARFARE_HELP</Help>
@@ -5781,8 +6016,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_URBAN_WARFARE</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_CHAMELEON</Type>
 			<Description>TXT_KEY_PROMOTION_FW_CHAMELEON</Description>
 			<Help>TXT_KEY_PROMOTION_FW_CHAMELEON_HELP</Help>
@@ -5795,8 +6030,11 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_CHAMELEON</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+    <!-- =======================================================================================================
+       Biomodes
+       ======================================================================================================= -->
+	   <Row>
 			<Type>PROMOTION_FW_BIOMODS</Type>
 			<Description>TXT_KEY_PROMOTION_FW_BIOMODS</Description>
 			<Help>TXT_KEY_PROMOTION_FW_BIOMODS_HELP</Help>
@@ -5806,8 +6044,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BIOMODS</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_IMPACT_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_IMPACT_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_IMPACT_MOD_HELP</Help>
@@ -5818,8 +6056,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_IMPACT_MOD</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_BOOST_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_BOOST_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_BOOST_MOD_HELP</Help>
@@ -5833,8 +6071,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_BIOREGENERATION_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD_HELP</Help>
@@ -5846,8 +6084,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_SYNTHETIC_LUNGS_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD_HELP</Help>
@@ -5859,8 +6097,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_VISION_ENHANCEMENT_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD_HELP</Help>
@@ -5871,8 +6109,8 @@
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD</PediaEntry>
-		</Row>
-		<Row>
+	   </Row>
+	   <Row>
 			<Type>PROMOTION_FW_REFLEX_MOD</Type>
 			<Description>TXT_KEY_PROMOTION_FW_REFLEX_MOD</Description>
 			<Help>TXT_KEY_PROMOTION_FW_REFLEX_MOD_HELP</Help>
@@ -5908,16 +6146,9 @@
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD</PediaEntry>
 		</Row>
-		<Row>
-			<Type>PROMOTION_FW_NUCLEAR_SMR</Type>
-			<Description>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR</Description>
-			<Help>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PortraitIndex>43</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_FW_NUCLEAR_SMR</PediaEntry>
-		</Row>
+    <!-- =======================================================================================================
+       Airships
+       ======================================================================================================= -->
 		<Row>
 			<Type>PROMOTION_SUBORBITAL_EVASION</Type>
 			<Description>TXT_KEY_PROMOTION_SUBORBITAL_EVASION</Description>
@@ -5925,7 +6156,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LostWithUpgrade>true</LostWithUpgrade>
 			<CannotBeChosen>true</CannotBeChosen>
-			<EvasionChange>40</EvasionChange>
+			<EvasionChange>25</EvasionChange>
 			<PortraitIndex>10</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -5938,7 +6169,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LostWithUpgrade>true</LostWithUpgrade>
 			<CannotBeChosen>true</CannotBeChosen>
-			<EvasionChange>50</EvasionChange>
+			<EvasionChange>35</EvasionChange>
 			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -5951,392 +6182,27 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LostWithUpgrade>true</LostWithUpgrade>
 			<CannotBeChosen>true</CannotBeChosen>
-			<EvasionChange>60</EvasionChange>
+			<EvasionChange>45</EvasionChange>
 			<PortraitIndex>12</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SPACE_EVASION</PediaEntry>
 		</Row>
+    <!-- =======================================================================================================
+       Before data - vp changed
+       ======================================================================================================= -->
 		<Row>
-			<Type>PROMOTION_ORBITAL_DROP</Type>
-			<Description>TXT_KEY_PROMOTION_ORBITAL_DROP</Description>
-			<Help>TXT_KEY_PROMOTION_ORBITAL_DROP_HELP</Help>
-			<Sound>AS2D_IF_LEVEL_UP</Sound>
-			<CannotBeChosen>true</CannotBeChosen>
-			<DropRange>64</DropRange>
-			<PortraitIndex>40</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_ORBITAL_DROP</PediaEntry>
-		</Row>
-		<Row>
-			<Type>PROMOTION_MNEMOSYNE_EXPERIENCE</Type>
-			<Description>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE</Description>
-			<Help>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE_HELP</Help>
+			<Type>PROMOTION_FW_HEALING_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_FW_HEALING_CORE</Description>
+			<Help>TXT_KEY_PROMOTION_FW_HEALING_CORE_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<ExperiencePercent>25</ExperiencePercent>
-			<PortraitIndex>23</PortraitIndex>
+			<IsLostOnMove>true</IsLostOnMove>
+			<FriendlyHealChange>10</FriendlyHealChange>
+			<PortraitIndex>44</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE</PediaEntry>
-		</Row>  
+			<PediaEntry>TXT_KEY_PROMOTION_FW_HEALING_CORE</PediaEntry>
+		</Row> 
 	</UnitPromotions>
-	<UnitPromotions_Features>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<Defense>25</Defense>
-			<Attack>25</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<Defense>25</Defense>
-			<Attack>25</Attack>
-		</Row>
-	</UnitPromotions_Features>
-	<UnitPromotions_UnitCombats>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_MUSCLES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_MUSCLES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_MUSCLES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_MUSCLES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_VISION</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_VISION</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_VISION</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_VISION</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_REFLEXES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_REFLEXES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_REFLEXES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ENHANCED_REFLEXES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ADRENAL_GLANDS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ADRENAL_GLANDS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ADRENAL_GLANDS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_ADRENAL_GLANDS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_CHAMELEON</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_CHAMELEON</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_CHAMELEON</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_CHAMELEON</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOMODS</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_IMPACT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_IMPACT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_IMPACT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_IMPACT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BOOST_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BOOST_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BOOST_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BOOST_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOREGENERATION_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOREGENERATION_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOREGENERATION_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_BIOREGENERATION_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SYNTHETIC_LUNGS_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SYNTHETIC_LUNGS_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SYNTHETIC_LUNGS_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SYNTHETIC_LUNGS_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_URBAN_WARFARE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_URBAN_WARFARE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_URBAN_WARFARE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_URBAN_WARFARE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_VISION_ENHANCEMENT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_VISION_ENHANCEMENT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_VISION_ENHANCEMENT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_VISION_ENHANCEMENT_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_REFLEX_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_REFLEX_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_REFLEX_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_REFLEX_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_TOXIN_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_TOXIN_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_TOXIN_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_TOXIN_MOD</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_AUGMENTED</PromotionType>
-			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_AUTO_REPAIR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_AUTO_REPAIR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_AUTO_REPAIR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_AUTO_REPAIR</PromotionType>
-			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FW_HEALING_CORE</PromotionType>
-			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
-		</Row>
-	</UnitPromotions_UnitCombats>
 </GameData>

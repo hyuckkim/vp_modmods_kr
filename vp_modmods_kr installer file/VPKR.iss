@@ -30,10 +30,10 @@ InfoBeforeFile=Opener.rtf
 OutputBaseFilename={#MyAppName} ({#MyAppVersion})
 DefaultDirName={userdocs}\My Games\Sid Meier's Civilization 5\
 SetupIconFile=installer.ico
-WizardImageStretch=false
+WizardImageStretch=no
 Compression=lzma2
 SolidCompression=yes
-ShowComponentSizes=true
+ShowComponentSizes=yes
 AllowNoIcons=yes
 Uninstallable=no
 PrivilegesRequired=admin
@@ -44,180 +44,180 @@ UsedUserAreasWarning=no
 Name: "ko"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Files]
-Source: "{#SourcePath}\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
-Source: "{#SourcePath}\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vp
-Source: "{#SourcePath}\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components:  vp
-Source: "{#SourcePath}\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vp
-Source: "{#SourcePath}\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vppt
-Source: "{#SourcePath}\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vpc
-Source: "{#SourcePath}\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vpc
-Source: "{#SourcePath}\(over) More Unique Components for VP (v 89)\*"; DestDir: "{app}\MODS\(over) More Unique Components for VP (v 89)"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpuc
-Source: "{#SourcePath}\(overL) More Unique Components for VP (v 89) INT\*"; DestDir: "{app}\MODS\(overL) More Unique Components for VP (v 89) INT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpuc
+Source: "..\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion recursesubdirs; Components: vp
+Source: "..\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion recursesubdirs;	Components: vp
+Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion recursesubdirs; Components:  vp
+Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vp
+Source: "..\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
+Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion recursesubdirs;	Components: vpc
+Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion recursesubdirs;	Components: vpc
+Source: "..\(over) More Unique Components for VP (v 89)\*"; DestDir: "{app}\MODS\(over) More Unique Components for VP (v 89)"; Flags: ignoreversion recursesubdirs; Components: vpuc
+Source: "..\(overL) More Unique Components for VP (v 89) INT\*"; DestDir: "{app}\MODS\(overL) More Unique Components for VP (v 89) INT"; Flags: ignoreversion recursesubdirs; Components: vpuc
 
-;Source: "{#SourcePath}\(ui) City-States Leaders for VP KR\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: csl
-Source: "{#SourcePath}\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: le
-Source: "{#SourcePath}\(ui) Meaningful Colours (v 16)\*"; DestDir: "{app}\MODS\(ui) Meaningful Colours (v 16)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mc
-Source: "{#SourcePath}\(ui) Trade Opportunities for VP (v 23)\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vpto
-Source: "{#SourcePath}\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vpto
-Source: "{#SourcePath}\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vpwp
-Source: "{#SourcePath}\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: asb
-Source: "{#SourcePath}\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ele
-Source: "{#SourcePath}\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ige
-Source: "{#SourcePath}\Large Minimap for VP wth EUI only (v 1)\*"; DestDir: "{app}\MODS\Large Minimap for VP wth EUI only (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: lm
-Source: "{#SourcePath}\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: leh
-Source: "{#SourcePath}\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: leh
-Source: "{#SourcePath}\Music Changer (v 2)\*"; DestDir: "{app}\MODS\Music Changer (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: music
-Source: "{#SourcePath}\Notification Settings (v 1)\*"; DestDir: "{app}\MODS\Notification Settings (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ns
-Source: "{#SourcePath}\Quick Animations (v 1)\*"; DestDir: "{app}\MODS\Quick Animations (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: qa
-Source: "{#SourcePath}\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: qt
-Source: "{#SourcePath}\Route Planner for VP (v 1)\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rp
-Source: "{#SourcePath}\Route Planner for VP (v 1) INT\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rp
-Source: "{#SourcePath}\Sukritact's Civ VI Style City Names (v 1)\*"; DestDir: "{app}\MODS\Sukritact's Civ VI Style City Names (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: civ6
-Source: "{#SourcePath}\UI - Antiquity Site Tooltips (v 5)\*"; DestDir: "{app}\MODS\UI - Antiquity Site Tooltips (v 5)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiast
-Source: "{#SourcePath}\UI - Auto Map Pins (v 4)\*"; DestDir: "{app}\MODS\UI - Auto Map Pins (v 4)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiamp
-Source: "{#SourcePath}\UI - City Happiness (v 17)\*"; DestDir: "{app}\MODS\UI - City Happiness (v 17)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uich
-Source: "{#SourcePath}\UI - City Production (v 15)\*"; DestDir: "{app}\MODS\UI - City Production (v 15)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uicp
-Source: "{#SourcePath}\UI - City Religions (v 4)\*"; DestDir: "{app}\MODS\UI - City Religions (v 4)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uicr
-Source: "{#SourcePath}\UI - Diplomacy Log (v 3)\*"; DestDir: "{app}\MODS\UI - Diplomacy Log (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uidl
-Source: "{#SourcePath}\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
-Source: "{#SourcePath}\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: er
-Source: "{#SourcePath}\UI - Gold Alerts (v 10)\*"; DestDir: "{app}\MODS\UI - Gold Alerts (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiga
-Source: "{#SourcePath}\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
-Source: "{#SourcePath}\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: icv
-Source: "{#SourcePath}\UI - Map Pins (v 17)\*"; DestDir: "{app}\MODS\UI - Map Pins (v 17)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uimp
-Source: "{#SourcePath}\UI - No Auto-Embark Workers (v 7)\*"; DestDir: "{app}\MODS\UI - No Auto-Embark Workers (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uinaew
-Source: "{#SourcePath}\UI - Notify Exit Resistance (v 1)\*"; DestDir: "{app}\MODS\UI - Notify Exit Resistance (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiner
-Source: "{#SourcePath}\UI - Overlay Barbarians (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Barbarians (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiob
-Source: "{#SourcePath}\UI - Overlay City Limits (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay City Limits (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiocl
-Source: "{#SourcePath}\UI - Overlay Continents (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Continents (v 8)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uioc
-Source: "{#SourcePath}\UI - Overlay Harbours And Airports (v 1)\*"; DestDir: "{app}\MODS\UI - Overlay Harbours And Airports (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiohaa
-Source: "{#SourcePath}\UI - Overlay Luxuries (v 3)\*"; DestDir: "{app}\MODS\UI - Overlay Luxuries (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiol
-Source: "{#SourcePath}\UI - Overlay Resources (v 11)\*"; DestDir: "{app}\MODS\UI - Overlay Resources (v 11)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uior
-Source: "{#SourcePath}\UI - Overlay Road And Rail (v 9)\*"; DestDir: "{app}\MODS\UI - Overlay Road And Rail (v 9)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiorar
-Source: "{#SourcePath}\UI - Overlay Unimproved Tiles (v 1)\*"; DestDir: "{app}\MODS\UI - Overlay Unimproved Tiles (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiout
-Source: "{#SourcePath}\UI - Overlay Wonders (v 7)\*"; DestDir: "{app}\MODS\UI - Overlay Wonders (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uiow
-Source: "{#SourcePath}\UI - Summary Clock (v 11)\*"; DestDir: "{app}\MODS\UI - Summary Clock (v 11)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: uisc
-Source: "{#SourcePath}\VP Happiness notifications (v 1) KR\*"; DestDir: "{app}\MODS\VP Happiness notifications (v 1) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hn
-Source: "{#SourcePath}\Wake All and Upgrade All Units In Military Overview (v 1)\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: waua
-Source: "{#SourcePath}\Wake All and Upgrade All Units In Military Overview (v 1) INT\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: waua
-Source: "{#SourcePath}\Wonder Race (v 7) KR\*"; DestDir: "{app}\MODS\Wonder Race (v 7) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wr
+;Source: "..\(ui) City-States Leaders for VP KR\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP KR"; Flags: ignoreversion recursesubdirs;	Components: csl
+Source: "..\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion recursesubdirs;	Components: le
+Source: "..\(ui) Meaningful Colours (v 16)\*"; DestDir: "{app}\MODS\(ui) Meaningful Colours (v 16)"; Flags: ignoreversion recursesubdirs;	Components: mc
+Source: "..\(ui) Trade Opportunities for VP (v 23)\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion recursesubdirs;	Components: vpto
+Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vpto
+Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion recursesubdirs;	Components: vpwp
+Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
+Source: "..\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ele
+Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion recursesubdirs;	Components: ige
+Source: "..\Large Minimap for VP wth EUI only (v 1)\*"; DestDir: "{app}\MODS\Large Minimap for VP wth EUI only (v 1)"; Flags: ignoreversion recursesubdirs;	Components: lm
+Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion recursesubdirs;	Components: leh
+Source: "..\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: leh
+Source: "..\Music Changer (v 2)\*"; DestDir: "{app}\MODS\Music Changer (v 2)"; Flags: ignoreversion recursesubdirs;	Components: music
+Source: "..\Notification Settings (v 1)\*"; DestDir: "{app}\MODS\Notification Settings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ns
+Source: "..\Quick Animations (v 1)\*"; DestDir: "{app}\MODS\Quick Animations (v 1)"; Flags: ignoreversion recursesubdirs;	Components: qa
+Source: "..\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion recursesubdirs;	Components: qt
+Source: "..\Route Planner for VP (v 1)\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1)"; Flags: ignoreversion recursesubdirs;	Components: rp
+Source: "..\Route Planner for VP (v 1) INT\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: rp
+Source: "..\Sukritact's Civ VI Style City Names (v 1)\*"; DestDir: "{app}\MODS\Sukritact's Civ VI Style City Names (v 1)"; Flags: ignoreversion recursesubdirs;	Components: civ6
+Source: "..\UI - Antiquity Site Tooltips (v 5)\*"; DestDir: "{app}\MODS\UI - Antiquity Site Tooltips (v 5)"; Flags: ignoreversion recursesubdirs;	Components: uiast
+Source: "..\UI - Auto Map Pins (v 4)\*"; DestDir: "{app}\MODS\UI - Auto Map Pins (v 4)"; Flags: ignoreversion recursesubdirs;	Components: uiamp
+Source: "..\UI - City Happiness (v 17)\*"; DestDir: "{app}\MODS\UI - City Happiness (v 17)"; Flags: ignoreversion recursesubdirs;	Components: uich
+Source: "..\UI - City Production (v 15)\*"; DestDir: "{app}\MODS\UI - City Production (v 15)"; Flags: ignoreversion recursesubdirs;	Components: uicp
+Source: "..\UI - City Religions (v 4)\*"; DestDir: "{app}\MODS\UI - City Religions (v 4)"; Flags: ignoreversion recursesubdirs;	Components: uicr
+Source: "..\UI - Diplomacy Log (v 3)\*"; DestDir: "{app}\MODS\UI - Diplomacy Log (v 3)"; Flags: ignoreversion recursesubdirs;	Components: uidl
+Source: "..\UI - Enhanced Rankings (v 13)\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings (v 13)"; Flags: ignoreversion recursesubdirs;	Components: er
+Source: "..\UI - Enhanced Rankings INT\*"; DestDir: "{app}\MODS\UI - Enhanced Rankings INT"; Flags: ignoreversion recursesubdirs;	Components: er
+Source: "..\UI - Gold Alerts (v 10)\*"; DestDir: "{app}\MODS\UI - Gold Alerts (v 10)"; Flags: ignoreversion recursesubdirs;	Components: uiga
+Source: "..\UI - Improved City View (Vox Populi EUI) (v 20)\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) (v 20)"; Flags: ignoreversion recursesubdirs;	Components: icv
+Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MODS\UI - Improved City View (Vox Populi EUI) INT"; Flags: ignoreversion recursesubdirs;	Components: icv
+Source: "..\UI - Map Pins (v 17)\*"; DestDir: "{app}\MODS\UI - Map Pins (v 17)"; Flags: ignoreversion recursesubdirs;	Components: uimp
+Source: "..\UI - No Auto-Embark Workers (v 7)\*"; DestDir: "{app}\MODS\UI - No Auto-Embark Workers (v 7)"; Flags: ignoreversion recursesubdirs;	Components: uinaew
+Source: "..\UI - Notify Exit Resistance (v 1)\*"; DestDir: "{app}\MODS\UI - Notify Exit Resistance (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uiner
+Source: "..\UI - Overlay Barbarians (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Barbarians (v 8)"; Flags: ignoreversion recursesubdirs;	Components: uiob
+Source: "..\UI - Overlay City Limits (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay City Limits (v 8)"; Flags: ignoreversion recursesubdirs;	Components: uiocl
+Source: "..\UI - Overlay Continents (v 8)\*"; DestDir: "{app}\MODS\UI - Overlay Continents (v 8)"; Flags: ignoreversion recursesubdirs;	Components: uioc
+Source: "..\UI - Overlay Harbours And Airports (v 1)\*"; DestDir: "{app}\MODS\UI - Overlay Harbours And Airports (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uiohaa
+Source: "..\UI - Overlay Luxuries (v 3)\*"; DestDir: "{app}\MODS\UI - Overlay Luxuries (v 3)"; Flags: ignoreversion recursesubdirs;	Components: uiol
+Source: "..\UI - Overlay Resources (v 11)\*"; DestDir: "{app}\MODS\UI - Overlay Resources (v 11)"; Flags: ignoreversion recursesubdirs;	Components: uior
+Source: "..\UI - Overlay Road And Rail (v 9)\*"; DestDir: "{app}\MODS\UI - Overlay Road And Rail (v 9)"; Flags: ignoreversion recursesubdirs;	Components: uiorar
+Source: "..\UI - Overlay Unimproved Tiles (v 1)\*"; DestDir: "{app}\MODS\UI - Overlay Unimproved Tiles (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uiout
+Source: "..\UI - Overlay Wonders (v 7)\*"; DestDir: "{app}\MODS\UI - Overlay Wonders (v 7)"; Flags: ignoreversion recursesubdirs;	Components: uiow
+Source: "..\UI - Summary Clock (v 11)\*"; DestDir: "{app}\MODS\UI - Summary Clock (v 11)"; Flags: ignoreversion recursesubdirs;	Components: uisc
+Source: "..\VP Happiness notifications (v 1) KR\*"; DestDir: "{app}\MODS\VP Happiness notifications (v 1) KR"; Flags: ignoreversion recursesubdirs;	Components: hn
+Source: "..\Wake All and Upgrade All Units In Military Overview (v 1)\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"; Flags: ignoreversion recursesubdirs;	Components: waua
+Source: "..\Wake All and Upgrade All Units In Military Overview (v 1) INT\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: waua
+Source: "..\Wonder Race (v 7) KR\*"; DestDir: "{app}\MODS\Wonder Race (v 7) KR"; Flags: ignoreversion recursesubdirs;	Components: wr
 
-;Source: "{#SourcePath}\!Jarcast's Cities of Marble for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jcm
-;Source: "{#SourcePath}\!Jarcast's Cities of Marble for VP (v 3) INT\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jcm
-Source: "{#SourcePath}\!Jarcast's Hidden Wonders (VP) (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhw
-Source: "{#SourcePath}\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhw
-Source: "{#SourcePath}\!Jarcast's Ndongo-Matamba for VP (v 1)\*"; DestDir: "{app}\MODS\!Jarcast's Ndongo-Matamba for VP (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jnm
-Source: "{#SourcePath}\!Jarcast's The Navajo for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's The Navajo for VP (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jtn
-Source: "{#SourcePath}\!Jarcast's Volcanoes for VP (v 7)\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jv
-Source: "{#SourcePath}\!Jarcast's Volcanoes for VP (v 7) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jv
-;Source: "{#SourcePath}\(n) Subterfuge KR\*"; DestDir: "{app}\MODS\(n) Subterfuge KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: sf
-Source: "{#SourcePath}\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: fa
-;Source: "{#SourcePath}\(8) Events and Decisions (CBO) (v 14)\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ed
-;Source: "{#SourcePath}\(8) Events and Decisions (CBO) (v 14) INT\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ed
-Source: "{#SourcePath}\(game) Capture+++ (v 5)\*"; DestDir: "{app}\MODS\(game) Capture+++ (v 5)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gc
-Source: "{#SourcePath}\(overhaul) Enhanced Air Warfare 4VP (v 1.9)\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eaw
-Source: "{#SourcePath}\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eaw
-Source: "{#SourcePath}\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
-Source: "{#SourcePath}\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ee
-Source: "{#SourcePath}\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
-Source: "{#SourcePath}\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mw
-Source: "{#SourcePath}\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
-Source: "{#SourcePath}\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ucs
-Source: "{#SourcePath}\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)\*"; DestDir: "{app}\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gfpa
-Source: "{#SourcePath}\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gl
-Source: "{#SourcePath}\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: usf
-Source: "{#SourcePath}\3 Units per Tile (v 1)\*"; DestDir: "{app}\MODS\3 Units per Tile (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: upt
-Source: "{#SourcePath}\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
-Source: "{#SourcePath}\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bl
-Source: "{#SourcePath}\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: car
-Source: "{#SourcePath}\Colonialist Legacies' Inuit for VP\*"; DestDir: "{app}\MODS\Colonialist Legacies' Inuit for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cli
-Source: "{#SourcePath}\Continental Drift (v 3)\*"; DestDir: "{app}\MODS\Continental Drift (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cd
-Source: "{#SourcePath}\Counter-Reconnaissance (v 44)\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cr
-Source: "{#SourcePath}\Counter-Reconnaissance (v 44) INT\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: cr
-Source: "{#SourcePath}\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
-Source: "{#SourcePath}\Even More Resources for Vox Populi UCS INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: emr
-Source: "{#SourcePath}\Exploration Heritage (v 46)\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eh
-Source: "{#SourcePath}\Exploration Heritage (v 46) INT\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: eh
-Source: "{#SourcePath}\Gedemon's YnAEMP KR\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gy
-Source: "{#SourcePath}\Global Warming (v 7)\*"; DestDir: "{app}\MODS\Global Warming (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: gw
-;Source: "{#SourcePath}\Hex Conquer VP (v 7) KR\*"; DestDir: "{app}\MODS\Hex Conquer VP (v 7) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hc
-;Source: "{#SourcePath}\Historical Religions Complete (BNW or GK) (v 45)\*"; DestDir: "{app}\MODS\Historical Religions Complete (BNW or GK) (v 45)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hrc
-Source: "{#SourcePath}\Horem's Aloe Vera bonus resource (v 4)\*"; DestDir: "{app}\MODS\Horem's Aloe Vera bonus resource (v 4)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vb
-Source: "{#SourcePath}\Horem's Aloe Vera bonus resource (v 4) INT\*"; DestDir: "{app}\MODS\Horem's Aloe Vera bonus resource (v 4) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: vb
-;Source: "{#SourcePath}\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
-;Source: "{#SourcePath}\Hokaths Proposals INT\*"; DestDir: "{app}\MODS\Hokaths Proposals INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: hp
-Source: "{#SourcePath}\Jarcast & Hokath's Additional Luxuries (v 3)\*"; DestDir: "{app}\MODS\Jarcast & Hokath's Additional Luxuries (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhal
-Source: "{#SourcePath}\Jarcast and Hokath's Additional Luxuries INT\*"; DestDir: "{app}\MODS\Jarcast and Hokath's Additional Luxuries INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhal
-Source: "{#SourcePath}\Jarcast & Hokath's Tibet for VP (v 5)\*"; DestDir: "{app}\MODS\Jarcast & Hokath's Tibet for VP (v 5)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jhkt
-;Source: "{#SourcePath}\Jarcast's Bigger Huge Map for Communitu_79a (v 5)\*"; DestDir: "{app}\MODS\Jarcast's Bigger Huge Map for Communitu_79a (v 5)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jbhmc
-Source: "{#SourcePath}\Jarcast's Extraction Outpost (v 3)\*"; DestDir: "{app}\MODS\Jarcast's Extraction Outpost (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jeo
-Source: "{#SourcePath}\Jarcast's Italy for VP (v 2)\*"; DestDir: "{app}\MODS\Jarcast's Italy for VP (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ji
-Source: "{#SourcePath}\Jarcast's Pikeman Tweak (v 2)\*"; DestDir: "{app}\MODS\Jarcast's Pikeman Tweak (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jpt
-Source: "{#SourcePath}\Jarcast's Pikeman Tweak (v 2) INT\*"; DestDir: "{app}\MODS\Jarcast's Pikeman Tweak (v 2) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jpt
-Source: "{#SourcePath}\JFD's Papal States for VP (v 10)\*"; DestDir: "{app}\MODS\JFD's Papal States for VP (v 10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jps
-Source: "{#SourcePath}\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: jfds
-Source: "{#SourcePath}\Landmines for BNW (v 3)\*"; DestDir: "{app}\MODS\Landmines for BNW (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mine
-Source: "{#SourcePath}\Leugi's Israel for VP\*"; DestDir: "{app}\MODS\Leugi's Israel for VP"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: li
-Source: "{#SourcePath}\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: Mariw
-Source: "{#SourcePath}\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: Mariw
-Source: "{#SourcePath}\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: miwsr
-Source: "{#SourcePath}\Misc Tweaks for VP (v 4.10)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mt
-Source: "{#SourcePath}\Misc Tweaks for VP (v 4.10) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: mt
-Source: "{#SourcePath}\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: fnv
-;Source: "{#SourcePath}\NavalMod(v5)\*"; DestDir: "{app}\MODS\NavalMod(v5)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: nm
-;Source: "{#SourcePath}\NavalMod(v5) INT\*"; DestDir: "{app}\MODS\NavalMod(v5) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: nm
-;Source: "{#SourcePath}\New Beliefs Mods KR\*"; DestDir: "{app}\MODS\New Beliefs Mods KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: nbm
-Source: "{#SourcePath}\Pontoon Bridges for VP (v 2)\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: pb
-Source: "{#SourcePath}\Pontoon Bridges for VP (v 2) INT\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: pb
-Source: "{#SourcePath}\Really Advanced Setup (v 15) KR\*"; DestDir: "{app}\MODS\Really Advanced Setup (v 15) KR"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ras
-Source: "{#SourcePath}\Recon Pay (Core0) Terrain Cost (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Core0) Terrain Cost (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc0
-Source: "{#SourcePath}\Recon Pay (Core1) Exploration Balancer (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc1
-Source: "{#SourcePath}\Recon Pay (Core1) Exploration Balancer (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpc1
-Source: "{#SourcePath}\Recon Pay (Recommended1) Fast Coast (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr1
-Source: "{#SourcePath}\Recon Pay (Recommended1) Fast Coast (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr1
-Source: "{#SourcePath}\Recon Pay (Recommended2) Fast Rivers (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr2
-Source: "{#SourcePath}\Recon Pay (Recommended2) Fast Rivers (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr2
-Source: "{#SourcePath}\Recon Pay (Recommended3) Fast Coastal (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr3
-Source: "{#SourcePath}\Recon Pay (Recommended3) Fast Coastal (v 7) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpr3
-Source: "{#SourcePath}\Recon Pay (Xtra1) Arctician (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx1
-Source: "{#SourcePath}\Recon Pay (Xtra1) Arctician (v 2) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx1
-Source: "{#SourcePath}\Recon Pay (Xtra2) Free ZoC (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx2
-Source: "{#SourcePath}\Recon Pay (Xtra2) Free ZoC (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx2
-Source: "{#SourcePath}\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx3
-Source: "{#SourcePath}\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx3
-Source: "{#SourcePath}\Recon Pay (Xtra4) Change Port (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra4) Change Port (v 2)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx4
-Source: "{#SourcePath}\Recon Pay (Xtra5) Horse Thieves (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
-Source: "{#SourcePath}\Recon Pay (Xtra5) Horse Thieves (v 1) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx5
-Source: "{#SourcePath}\Recon Pay (xtra6) Exploration Specialization (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (xtra6) Exploration Specialization (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpx6
-Source: "{#SourcePath}\Reforestation (v 9)\*"; DestDir: "{app}\MODS\Reforestation (v 9)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rf
-Source: "{#SourcePath}\Religion - Permanent Pantheons (v 1)\*"; DestDir: "{app}\MODS\Religion - Permanent Pantheons (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: rpp
-;Source: "{#SourcePath}\TorpedoBoat (v19)\*"; DestDir: "{app}\MODS\TorpedoBoat (v19)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: tb
-;Source: "{#SourcePath}\TorpedoBoat (v19) INT\*"; DestDir: "{app}\MODS\TorpedoBoat (v19) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: tb
-Source: "{#SourcePath}\TreeSuccession (v 44)\*"; DestDir: "{app}\MODS\TreeSuccession (v 44)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
-Source: "{#SourcePath}\TreeSuccession (v 44) INT\*"; DestDir: "{app}\MODS\TreeSuccession (v 44) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: ts
-Source: "{#SourcePath}\(j) Bare Necessities (v 14)\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn
-Source: "{#SourcePath}\(j) Bare Necessities (v 14) INT\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: bn 
-Source: "{#SourcePath}\Whale Battles (v 1)\*"; DestDir: "{app}\MODS\Whale Battles (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
-Source: "{#SourcePath}\Whale Battles (v 1) INT\*"; DestDir: "{app}\MODS\Whale Battles (v 1) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wb
-Source: "{#SourcePath}\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr
-Source: "{#SourcePath}\World Congress Reformation INT\*"; DestDir: "{app}\MODS\World Congress Reformation INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wcr 
-Source: "{#SourcePath}\Worker Mountaineering (v 3)\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wm
-Source: "{#SourcePath}\Worker Mountaineering (v 3) INT\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3) INT"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: wm
-Source: "{#SourcePath}\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: df
-Source: "{#SourcePath}\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion createallsubdirs recursesubdirs;	Components: lcv
+;Source: "..\!Jarcast's Cities of Marble for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jcm
+;Source: "..\!Jarcast's Cities of Marble for VP (v 3) INT\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: jcm
+Source: "..\!Jarcast's Hidden Wonders (VP) (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jhw
+Source: "..\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion recursesubdirs;	Components: jhw
+Source: "..\!Jarcast's Ndongo-Matamba for VP (v 1)\*"; DestDir: "{app}\MODS\!Jarcast's Ndongo-Matamba for VP (v 1)"; Flags: ignoreversion recursesubdirs;	Components: jnm
+Source: "..\!Jarcast's The Navajo for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's The Navajo for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jtn
+Source: "..\!Jarcast's Volcanoes for VP (v 7)\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7)"; Flags: ignoreversion recursesubdirs;	Components: jv
+Source: "..\!Jarcast's Volcanoes for VP (v 7) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7) INT"; Flags: ignoreversion recursesubdirs;	Components: jv
+;Source: "..\(n) Subterfuge KR\*"; DestDir: "{app}\MODS\(n) Subterfuge KR"; Flags: ignoreversion recursesubdirs;	Components: sf
+Source: "..\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion recursesubdirs;	Components: fa
+;Source: "..\(8) Events and Decisions (CBO) (v 14)\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14)"; Flags: ignoreversion recursesubdirs;	Components: ed
+;Source: "..\(8) Events and Decisions (CBO) (v 14) INT\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14) INT"; Flags: ignoreversion recursesubdirs;	Components: ed
+Source: "..\(game) Capture+++ (v 5)\*"; DestDir: "{app}\MODS\(game) Capture+++ (v 5)"; Flags: ignoreversion recursesubdirs;	Components: gc
+Source: "..\(overhaul) Enhanced Air Warfare 4VP (v 1.9)\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"; Flags: ignoreversion recursesubdirs;	Components: eaw
+Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP INT"; Flags: ignoreversion recursesubdirs;	Components: eaw
+Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
+Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
+Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
+Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: mw
+Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
+Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: ucs
+Source: "..\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)\*"; DestDir: "{app}\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)"; Flags: ignoreversion recursesubdirs;	Components: gfpa
+Source: "..\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)"; Flags: ignoreversion recursesubdirs;	Components: gl
+Source: "..\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion recursesubdirs;	Components: usf
+Source: "..\3 Units per Tile (v 1)\*"; DestDir: "{app}\MODS\3 Units per Tile (v 1)"; Flags: ignoreversion recursesubdirs;	Components: upt
+Source: "..\Better Lakes for Vox Populi (v 3)\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi (v 3)"; Flags: ignoreversion recursesubdirs;	Components: bl
+Source: "..\Better Lakes for Vox Populi INT\*"; DestDir: "{app}\MODS\Better Lakes for Vox Populi INT"; Flags: ignoreversion recursesubdirs;	Components: bl
+Source: "..\Civic And Reform (v 22) KR\*"; DestDir: "{app}\MODS\Civic And Reform (v 22) KR"; Flags: ignoreversion recursesubdirs;	Components: car
+Source: "..\Colonialist Legacies' Inuit for VP\*"; DestDir: "{app}\MODS\Colonialist Legacies' Inuit for VP"; Flags: ignoreversion recursesubdirs;	Components: cli
+Source: "..\Continental Drift (v 3)\*"; DestDir: "{app}\MODS\Continental Drift (v 3)"; Flags: ignoreversion recursesubdirs;	Components: cd
+Source: "..\Counter-Reconnaissance (v 44)\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44)"; Flags: ignoreversion recursesubdirs;	Components: cr
+Source: "..\Counter-Reconnaissance (v 44) INT\*"; DestDir: "{app}\MODS\Counter-Reconnaissance (v 44) INT"; Flags: ignoreversion recursesubdirs;	Components: cr
+Source: "..\Even More Resources for Vox Populi UCS (v 14)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 14)"; Flags: ignoreversion recursesubdirs;	Components: emr
+Source: "..\Even More Resources for Vox Populi UCS INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS INT"; Flags: ignoreversion recursesubdirs;	Components: emr
+Source: "..\Exploration Heritage (v 46)\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46)"; Flags: ignoreversion recursesubdirs;	Components: eh
+Source: "..\Exploration Heritage (v 46) INT\*"; DestDir: "{app}\MODS\Exploration Heritage (v 46) INT"; Flags: ignoreversion recursesubdirs;	Components: eh
+Source: "..\Gedemon's YnAEMP KR\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP KR"; Flags: ignoreversion recursesubdirs;	Components: gy
+Source: "..\Global Warming (v 7)\*"; DestDir: "{app}\MODS\Global Warming (v 7)"; Flags: ignoreversion recursesubdirs;	Components: gw
+;Source: "..\Hex Conquer VP (v 7) KR\*"; DestDir: "{app}\MODS\Hex Conquer VP (v 7) KR"; Flags: ignoreversion recursesubdirs;	Components: hc
+;Source: "..\Historical Religions Complete (BNW or GK) (v 45)\*"; DestDir: "{app}\MODS\Historical Religions Complete (BNW or GK) (v 45)"; Flags: ignoreversion recursesubdirs;	Components: hrc
+Source: "..\Horem's Aloe Vera bonus resource (v 4)\*"; DestDir: "{app}\MODS\Horem's Aloe Vera bonus resource (v 4)"; Flags: ignoreversion recursesubdirs;	Components: vb
+Source: "..\Horem's Aloe Vera bonus resource (v 4) INT\*"; DestDir: "{app}\MODS\Horem's Aloe Vera bonus resource (v 4) INT"; Flags: ignoreversion recursesubdirs;	Components: vb
+;Source: "..\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion recursesubdirs;	Components: hp
+;Source: "..\Hokaths Proposals INT\*"; DestDir: "{app}\MODS\Hokaths Proposals INT"; Flags: ignoreversion recursesubdirs;	Components: hp
+Source: "..\Jarcast & Hokath's Additional Luxuries (v 3)\*"; DestDir: "{app}\MODS\Jarcast & Hokath's Additional Luxuries (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jhal
+Source: "..\Jarcast and Hokath's Additional Luxuries INT\*"; DestDir: "{app}\MODS\Jarcast and Hokath's Additional Luxuries INT"; Flags: ignoreversion recursesubdirs;	Components: jhal
+Source: "..\Jarcast & Hokath's Tibet for VP (v 5)\*"; DestDir: "{app}\MODS\Jarcast & Hokath's Tibet for VP (v 5)"; Flags: ignoreversion recursesubdirs;	Components: jhkt
+;Source: "..\Jarcast's Bigger Huge Map for Communitu_79a (v 5)\*"; DestDir: "{app}\MODS\Jarcast's Bigger Huge Map for Communitu_79a (v 5)"; Flags: ignoreversion recursesubdirs;	Components: jbhmc
+Source: "..\Jarcast's Extraction Outpost (v 3)\*"; DestDir: "{app}\MODS\Jarcast's Extraction Outpost (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jeo
+Source: "..\Jarcast's Italy for VP (v 2)\*"; DestDir: "{app}\MODS\Jarcast's Italy for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: ji
+Source: "..\Jarcast's Pikeman Tweak (v 2)\*"; DestDir: "{app}\MODS\Jarcast's Pikeman Tweak (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jpt
+Source: "..\Jarcast's Pikeman Tweak (v 2) INT\*"; DestDir: "{app}\MODS\Jarcast's Pikeman Tweak (v 2) INT"; Flags: ignoreversion recursesubdirs;	Components: jpt
+Source: "..\JFD's Papal States for VP (v 10)\*"; DestDir: "{app}\MODS\JFD's Papal States for VP (v 10)"; Flags: ignoreversion recursesubdirs;	Components: jps
+Source: "..\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) KR"; Flags: ignoreversion recursesubdirs;	Components: jfds
+Source: "..\Landmines for BNW (v 3)\*"; DestDir: "{app}\MODS\Landmines for BNW (v 3)"; Flags: ignoreversion recursesubdirs;	Components: mine
+Source: "..\Leugi's Israel for VP\*"; DestDir: "{app}\MODS\Leugi's Israel for VP"; Flags: ignoreversion recursesubdirs;	Components: li
+Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
+Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
+Source: "..\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion recursesubdirs;	Components: miwsr
+Source: "..\Misc Tweaks for VP (v 4.10)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10)"; Flags: ignoreversion recursesubdirs;	Components: mt
+Source: "..\Misc Tweaks for VP (v 4.10) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10) INT"; Flags: ignoreversion recursesubdirs;	Components: mt
+Source: "..\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"; Flags: ignoreversion recursesubdirs;	Components: fnv
+;Source: "..\NavalMod(v5)\*"; DestDir: "{app}\MODS\NavalMod(v5)"; Flags: ignoreversion recursesubdirs;	Components: nm
+;Source: "..\NavalMod(v5) INT\*"; DestDir: "{app}\MODS\NavalMod(v5) INT"; Flags: ignoreversion recursesubdirs;	Components: nm
+;Source: "..\New Beliefs Mods KR\*"; DestDir: "{app}\MODS\New Beliefs Mods KR"; Flags: ignoreversion recursesubdirs;	Components: nbm
+Source: "..\Pontoon Bridges for VP (v 2)\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: pb
+Source: "..\Pontoon Bridges for VP (v 2) INT\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2) INT"; Flags: ignoreversion recursesubdirs;	Components: pb
+Source: "..\Really Advanced Setup (v 15) KR\*"; DestDir: "{app}\MODS\Really Advanced Setup (v 15) KR"; Flags: ignoreversion recursesubdirs;	Components: ras
+Source: "..\Recon Pay (Core0) Terrain Cost (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Core0) Terrain Cost (v 7)"; Flags: ignoreversion recursesubdirs;	Components: rpc0
+Source: "..\Recon Pay (Core1) Exploration Balancer (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3)"; Flags: ignoreversion recursesubdirs;	Components: rpc1
+Source: "..\Recon Pay (Core1) Exploration Balancer (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: rpc1
+Source: "..\Recon Pay (Recommended1) Fast Coast (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3)"; Flags: ignoreversion recursesubdirs;	Components: rpr1
+Source: "..\Recon Pay (Recommended1) Fast Coast (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended1) Fast Coast (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: rpr1
+Source: "..\Recon Pay (Recommended2) Fast Rivers (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6)"; Flags: ignoreversion recursesubdirs;	Components: rpr2
+Source: "..\Recon Pay (Recommended2) Fast Rivers (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended2) Fast Rivers (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: rpr2
+Source: "..\Recon Pay (Recommended3) Fast Coastal (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7)"; Flags: ignoreversion recursesubdirs;	Components: rpr3
+Source: "..\Recon Pay (Recommended3) Fast Coastal (v 7) INT\*"; DestDir: "{app}\MODS\Recon Pay (Recommended3) Fast Coastal (v 7) INT"; Flags: ignoreversion recursesubdirs;	Components: rpr3
+Source: "..\Recon Pay (Xtra1) Arctician (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2)"; Flags: ignoreversion recursesubdirs;	Components: rpx1
+Source: "..\Recon Pay (Xtra1) Arctician (v 2) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra1) Arctician (v 2) INT"; Flags: ignoreversion recursesubdirs;	Components: rpx1
+Source: "..\Recon Pay (Xtra2) Free ZoC (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3)"; Flags: ignoreversion recursesubdirs;	Components: rpx2
+Source: "..\Recon Pay (Xtra2) Free ZoC (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra2) Free ZoC (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: rpx2
+Source: "..\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6)"; Flags: ignoreversion recursesubdirs;	Components: rpx3
+Source: "..\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra3) Trees Obstruct Mounted Armor (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: rpx3
+Source: "..\Recon Pay (Xtra4) Change Port (v 2)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra4) Change Port (v 2)"; Flags: ignoreversion recursesubdirs;	Components: rpx4
+Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1)"; Flags: ignoreversion recursesubdirs;	Components: rpx5
+Source: "..\Recon Pay (Xtra5) Horse Thieves (v 1) INT\*"; DestDir: "{app}\MODS\Recon Pay (Xtra5) Horse Thieves (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: rpx5
+Source: "..\Recon Pay (xtra6) Exploration Specialization (v 1)\*"; DestDir: "{app}\MODS\Recon Pay (xtra6) Exploration Specialization (v 1)"; Flags: ignoreversion recursesubdirs;	Components: rpx6
+Source: "..\Reforestation (v 9)\*"; DestDir: "{app}\MODS\Reforestation (v 9)"; Flags: ignoreversion recursesubdirs;	Components: rf
+Source: "..\Religion - Permanent Pantheons (v 1)\*"; DestDir: "{app}\MODS\Religion - Permanent Pantheons (v 1)"; Flags: ignoreversion recursesubdirs;	Components: rpp
+;Source: "..\TorpedoBoat (v19)\*"; DestDir: "{app}\MODS\TorpedoBoat (v19)"; Flags: ignoreversion recursesubdirs;	Components: tb
+;Source: "..\TorpedoBoat (v19) INT\*"; DestDir: "{app}\MODS\TorpedoBoat (v19) INT"; Flags: ignoreversion recursesubdirs;	Components: tb
+Source: "..\TreeSuccession (v 44)\*"; DestDir: "{app}\MODS\TreeSuccession (v 44)"; Flags: ignoreversion recursesubdirs;	Components: ts
+Source: "..\TreeSuccession (v 44) INT\*"; DestDir: "{app}\MODS\TreeSuccession (v 44) INT"; Flags: ignoreversion recursesubdirs;	Components: ts
+Source: "..\(j) Bare Necessities (v 14)\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14)"; Flags: ignoreversion recursesubdirs;	Components: bn
+Source: "..\(j) Bare Necessities (v 14) INT\*"; DestDir: "{app}\MODS\(j) Bare Necessities (v 14) INT"; Flags: ignoreversion recursesubdirs;	Components: bn 
+Source: "..\Whale Battles (v 1)\*"; DestDir: "{app}\MODS\Whale Battles (v 1)"; Flags: ignoreversion recursesubdirs;	Components: wb
+Source: "..\Whale Battles (v 1) INT\*"; DestDir: "{app}\MODS\Whale Battles (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: wb
+Source: "..\World Congress Reformation (v 12)\*"; DestDir: "{app}\MODS\World Congress Reformation (v 12)"; Flags: ignoreversion recursesubdirs;	Components: wcr
+Source: "..\World Congress Reformation INT\*"; DestDir: "{app}\MODS\World Congress Reformation INT"; Flags: ignoreversion recursesubdirs;	Components: wcr 
+Source: "..\Worker Mountaineering (v 3)\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3)"; Flags: ignoreversion recursesubdirs;	Components: wm
+Source: "..\Worker Mountaineering (v 3) INT\*"; DestDir: "{app}\MODS\Worker Mountaineering (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: wm
+Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion recursesubdirs;	Components: df
+Source: "..\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion recursesubdirs;	Components: lcv
 
-;Source: "{#SourcePath}\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
-Source: "{#SourcePath}\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
-Source: "{#SourcePath}\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vpnvc
-Source: "{#SourcePath}\Maps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: map
-Source: "{#SourcePath}\Textures\Artful Textures\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: textures\at
-Source: "{#SourcePath}\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: textures\vt
-Source: "{#SourcePath}\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\cs
-Source: "{#SourcePath}\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\cs
-Source: "{#SourcePath}\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\csbu
-Source: "{#SourcePath}\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: smm
-Source: "{#SourcePath}\UI\UI_CustomModScreen\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cms
-Source: "{#SourcePath}\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: vp
+;Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion recursesubdirs; Components: vp
+Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vp
+Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vpnvc
+Source: "..\Maps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion recursesubdirs; Components: map
+Source: "..\Textures\Artful Textures\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion recursesubdirs; Components: textures\at
+Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion recursesubdirs; Components: textures\vt
+Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
+Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
+Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect\csbu
+Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"; Flags: ignoreversion recursesubdirs; Components: smm
+Source: "..\UI\UI_CustomModScreen\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen"; Flags: ignoreversion recursesubdirs; Components: cms
+Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: vp
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]

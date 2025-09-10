@@ -1,19 +1,17 @@
 <Asset>
 	<Mesh file="ZeppelinTC.gr2"/>
-	<Animation file="JetFighter_Run.gr2" ec="1400"/>
-	<Animation file="JetFighter_Idle.gr2" ec="1000"/>
-	<Animation file="JetFighter_Attack_Air.gr2" ec="1100"/>
-	<Animation file="JetFighter_Bombardment.gr2" ec="1180"/>
-	<Animation file="JetFighter_DeathA.gr2" ec="1200"/>
-	<Animation file="JetFighter_DeathA_Idle.gr2" ec="1220"/>
-	<Animation file="JetFighter_DeathB.gr2" ec="2200"/>
-	<Animation file="JetFighter_DeathB_Idle.gr2" ec="2220"/>
+	<Animation file="Airship_Idle.gr2" ec="1000"/>
+	<Animation file="Airship_Run.gr2" ec="1400"/>
+	<Animation file="Airship_Attack.gr2" ec="1100"/>
+	<Animation file="Airship_Bombard.gr2" ec="1180"/>
+	<Animation file="Airship_Death.gr2" ec="1200"/>
+	<Animation file="Airship_Death_Idle.gr2" ec="1220"/>
 	<Texture file="Zeppelin.dds"/>
 	<Texture file="ZeppelinSREF.dds"/>
 	<Texture file="Unit_Environment_Dull.dds"/>
 	<Texture file="Unit_Environment_Sharp.dds"/>
 	<Texture file="Unit_Irradiance.dds"/>
-	<TimedTrigger file="FX_Triggers_JetFighter.ftsxml"/>
+	<TimedTrigger file="fx_triggers_zeppelin.ftsxml"/>
 	<StateMachine file="AIRPLANE_STATE_01.fsmxml"/>
 	<AnimGraph file="IDLE_A_GRAPH.dge"/>
 	<AnimGraph file="PLANES_DEATH.dge"/>
