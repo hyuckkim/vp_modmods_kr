@@ -31,7 +31,7 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 ('BUILDING_FW_BUENOSAIRESFORUM',  	 	'TECH_HYPERSTRUCTURES',               5000, 'ART_DEF_BUILDING_LABORATORY',  47,'CIV_COLOR_ATLAS_FW_2',   	1, 32, 		'FWBuenosAiresForum_Splash.dds',	'L,T'),
 ('BUILDING_FW_GENOME_PROJECT', 			NULL,    			              		-1, 'ART_DEF_BUILDING_LABORATORY',  21,'CIV_COLOR_ATLAS_FW_3', 	    1, NULL, 	'GenomeProject_Splash.dds',		 	'L,T'),
 ('BUILDING_FW_AI_SINGULARITY', 			NULL,    			              		-1, 'ART_DEF_BUILDING_LABORATORY',  32,'TCS_MOD_ICON_ATLAS', 	    1, NULL, 	'AInetworkProject_Splash.dds',		'L,T'),
-('BUILDING_FW_ASTEROID_MINING', 		NULL,    								-1, 'ART_DEF_BUILDING_LABORATORY',  19,'CIV_COLOR_ATLAS_FW_3',   	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T');
+('BUILDING_FW_ASTEROID_MINING', 		NULL,    								-1, 'ART_DEF_BUILDING_LABORATORY',   9,'TCS_MOD_ICON_ATLAS',     	1, NULL, 	'AsteroidMining_Splash.dds',		'L,T');
 
 
 UPDATE Buildings
@@ -343,16 +343,15 @@ WHERE Type = 'BUILDING_FW_GENOME_PROJECT';
 -- AI Singularity
 ----------------------------------------------
 UPDATE Buildings
-SET UnlockedByLeague = 1,  FreeGreatPeople = 1
+SET UnlockedByLeague = 1,  FreeGreatPeople = 1, SpecialistType = 'SPECIALIST_MERCHANT', GreatPeopleRateChange = 3
 WHERE Type = 'BUILDING_FW_AI_SINGULARITY';
 
 ----------------------------------------------
 -- Ceres Station
 ----------------------------------------------
 UPDATE Buildings
-SET SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 2
+SET UnlockedByLeague = 1, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 3
 WHERE Type = 'BUILDING_FW_ASTEROID_MINING';
-
 
 ----------------------------------------------
 -- Project Utopia - Citizen Earth Protocol - Cultural Victory

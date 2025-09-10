@@ -1525,7 +1525,7 @@
 			<Cost>2950</Cost>
 			<FaithCost>2250</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Moves>4</Moves>
+			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -6205,4 +6205,18 @@
 			<PediaEntry>TXT_KEY_PROMOTION_FW_HEALING_CORE</PediaEntry>
 		</Row> 
 	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Defense>25</Defense>
+			<Attack>25</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FW_PREDATOR_INSTINCT</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Defense>25</Defense>
+			<Attack>25</Attack>
+		</Row>
+	</UnitPromotions_Features>
 </GameData>
