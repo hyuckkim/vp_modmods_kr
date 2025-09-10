@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- DIPLOMACY: VANILLA Vanilla -->
+		<!--First Greeting messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_FIRSTGREETING_1">
+			<Text>봉주르. 나는 조제프 브루사르, 혹은 보소레이라 불리는 자요. 모든 것을 앗아간 자들의 언어를 쓰는 건 내키지 않으니, 적어도 그만한 가치는 되어주시길.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_FIRSTGREETING_2">
+			<Text>환영하오. 우리 소박한 공동체에 온 것을 기쁘게 생각하오. 설마 영어밖에 못하진 않겠지? 미크맥어는 어떤가?</Text>
+		</Row>
+		<!--Defeated messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DEFEATED_1">
+			<Text>왜인가… 어째서 나는 소중한 것을 잃는 고통을 반복해 보아야 하는가… 그리고 자네는, 마지막이라며 내 앞에 나서? 허나 자네는 증오할 가치조차 없다네… 그저 질투와 허영의 꼭두각시, 자네가 짓밟은 세계의 아름다움조차 보지 못하는 자일 뿐… 자네가 불쌍하군. J'ai pitié de toi.</Text>
+		</Row>
+		<!--First Greeting from leaders that don't have their own file yet-->
+		<!-- Human repeats an action too much, gets the following responses -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REPEAT_TOO_MUCH_1">
+			<Text>(딴 데를 보며 말함)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REPEAT_TRADE_1">
+			<Text>그 말투, 내 사촌 미셸을 떠올리게 하는군. 끝도 없지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REPEAT_TRADE_2">
+			<Text>이건 인내심 시험이라도 되는 건가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REPEAT_TRADE_3">
+			<Text>영어가 너무 많아, 내 머리는 하나도 안 들어오오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_REPEAT_1">
+			<Text>안녕하시오! 이렇게 빨리 다시 온 이유가 뭔가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_REPEAT_2">
+			<Text>벌써 다시 왔다고? 데자뷔인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_REPEAT_1">
+			<Text>아, 또 왔군, 수다쟁이가…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_REPEAT_2">
+			<Text>쓸데없는 말이 많군, 마제뜨… 뭐라고 했지?</Text>
+		</Row>
+		<!-- Greetings -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_POLITE_HELLO_1">
+			<Text>안녕하시오! 먼 여정에 지쳤을 텐데, 오늘 밤 우리와 식사하지 않겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_POLITE_HELLO_2">
+			<Text>당신의 안전한 통과를 내가 직접 협상했소. 무사히 도착했겠지?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_POLITE_HELLO_3">
+			<Text>친구여, 다시 만나 반갑소. 무엇을 도와드릴까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_POLITE_HELLO_4">
+			<Text>진정한 보물은 먼저 듣는 이에게 찾아온다 하지. 자, 들어보겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_1">
+			<Text>봉주르.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_2">
+			<Text>환영하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_3">
+			<Text>환영하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_4">
+			<Text>또 찾아왔군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_5">
+			<Text>안녕하세요. 좋은 소식을 들고 오셨기를.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_NEUTRAL_HELLO_6">
+			<Text>테 르부알라. 모든 것이 무탈한가요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HELLO_1">
+			<Text>…조심하시오, 친구여… 요즘 우리 숲은 위험하오…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HELLO_2">
+			<Text>영어로 침 뱉을 시간도 아깝소. 말해보시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HELLO_3">
+			<Text>오, 불한당이 몸소 나타났군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HELLO_4">
+			<Text>위? 할 말이라도 있소… 저런 작자야?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HELLO_5">
+			<Text>(비웃으며) 당신의 존재 자체가 불쾌하오. 그럴 만한 가치라도 있어야 할 텐데.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_DESTRUCTION_LOOMS_1">
+			<Text>…우리를 조롱하러 온 건가? 지금 우리에겐 더 이상의 골칫거리가 필요 없소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_DESTRUCTION_LOOMS_2">
+			<Text>미제리코르드! 요즘은 걱정거리가 끝이 없구려…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_WANTS_PEACE_1">
+			<Text>이 전쟁이 우리 백성들의 삶을 갉아먹고 있소. 이제 평화를 줄 때요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_WANTS_PEACE_2">
+			<Text>시외르, 이제 협상할 때라 생각하지 않소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_WANTS_PEACE_3">
+			<Text>이미 너무 많은 피가 흘렀소. 이제 대화를 나눌 때요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_HOSTILE_1">
+			<Text>피가 부족했나 보군! 당장 꺼지시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_HOSTILE_2">
+			<Text>내 착각이오? 아니면 자네 꽤나 지쳐 보이는군. 유감이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AT_WAR_HOSTILE_3">
+			<Text>봉주르. 좋은 소식은 없기를 바라는군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_BROKEN_MILITARY_PROMISE_1">
+			<Text>그래, 트레이트르(배신자)인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_WORKING_WITH_1">
+			<Text>자네와의 협력 덕에 이 땅에 부유함이 넘치고 있소. 다시 만나 기쁘오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_COOP_WAR_1">
+			<Text>{1_ThirdPlayerName:textkey}와의 전쟁을 위한 작전을 준비 중이오. 이 만남을 최대한 유익하게 활용합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_COOP_WAR_2">
+			<Text>{1_ThirdPlayerName:textkey}와의 갈등이 우리 두 백성을 더욱 굳건히 묶어 주었소. 이번 기회에 신뢰를 굳히길 바랍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_COOP_WAR_3">
+			<Text>{1_ThirdPlayerName:textkey}의 몰락을 예언하는 자들이 있소. 그들의 말이 옳았음을 증명합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HUMAN_AT_WAR_1">
+			<Text>그... 당신의 적 말이오. 이름이 무엇이던가? 혹시 모르니 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HUMAN_AT_WAR_1">
+			<Text>전쟁은 언제나 가장 약한 이들을 고통스럽게 하지요. 하루빨리 평화를 되찾기를 빕니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_AGGRESSIVE_MILITARY_1">
+			<Text>눈이 멀진 않았소. 당신의 군세는 취객처럼 눈에 띕니다, 어리석군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AGGRESSIVE_MILITARY_1">
+			<Text>당신 병사들은 풍경 감상이라도 하러 온 겁니까, 아니면 하늘을 보게 만들어줘야 할까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_1">
+			<Text>영국인 못지않은 탐욕이로군. 그만 좀 넓히시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AGGRESSIVE_EXPANSION_1">
+			<Text>당신의 끝없는 확장이 걱정스럽습니다. 당신 백성에게는 지금도 넓은 땅이 충분치 않소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_1">
+			<Text>모든 땅에는 그 나름의 역사가 있는 법. 이를 무시한 강제 병합은 결국 모두에게 고통을 안길 뿐이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_AGGRESSIVE_PLOT_BUYING_1">
+			<Text>조심하시오. 한 사람의 탐욕이 모든 이에게 재앙을 불러오니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_FRIENDLY_STRONG_MILITARY_1">
+			<Text>대단하군요, 당신의 군세. 부디 선을 위해 쓰시길.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_FRIENDLY_STRONG_ECONOMY_1">
+			<Text>강한 동맹은 밝은 미래를 여는 법. 당신의 손은 진정 황금의 손이오, 친구여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HUMAN_FEW_CITIES">
+			<Text>당신의 초라한 영지를 보니 나쁜 기억이 떠오르는군요. 안타까워하지는 않겠소. 기회는 있었으니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HUMAN_SMALL_ARMY">
+			<Text>당신의 병영은 텅 비어 있고, 성벽엔 수비수조차 없군요. 유사시에 누가 당신 가족을 지키겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_HOSTILE_HUMAN_IS_WARMONGER">
+			<Text>폭군의 냄새가 나는군요. 피 냄새가 진동하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_TOO_SOON_FOR_DOF_1">
+			<Text>미크마크인들 말에 따르면, 진정한 친구는 우정을 구걸하지 않는다 하오. 그저 존재할 뿐이지. 인내하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_TOO_SOON_FOR_DOF_2">
+			<Text>너무 이르오, 너무나도. 내 타고난 매력 때문이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOF_AI_DENOUNCE_REQUEST_1">
+			<Text>{1_CivName}의 행태는 이제 더는 눈감아 줄 수 없군요. 나와 함께 공개적으로 비난하지 않겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOF_NOT_HONORED_1">
+			<Text>또 한 명의 배신자군! 더는 할 말도 없소![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOF_NOT_HONORED_2">
+			<Text>그래, 역시나! 당신의 말은 아무 의미도 없소. 이제 그 대가를 치르시지.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DENOUNCING_FRIEND_1">
+			<Text>내가 너무 순진했거나, 눈이 멀었나 보군. 그러나 이제 당신의 행위를 더는 외면하지 않겠소, 배신자여![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DENOUNCING_FRIEND_2">
+			<Text>당신의 폭정은 이 땅을 파괴하고 있소. 더는 묵과할 수 없소. 우리의 동맹은 이제 무효요![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_TO_BEING_DENOUNCED_1">
+			<Text>드디어 진짜 얼굴을 드러냈군. 내가 당신을 두려워할 거라고 생각하나, 꼬마야?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_TO_BEING_DENOUNCED_2">
+			<Text>가면은 벗겨졌군. 이 일에서 좋은 결과는 없을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_TO_BEING_DENOUNCED_3">
+			<Text>그게 다요? 고작 그게 당신이 꺼낸 전부입니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DOFED_FRIEND_1">
+			<Text>{1_CivName}과의 우정은 우리 사이의 유대가 얼마나 깊은지를 보여주는 증거요. 훗날 귀감이 되기를 바랍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DOFED_ENEMY_1">
+			<Text>{1_CivName}과의 동맹을 우리가 모를 줄 아시오? 이는 결국 우리 안의 어두운 면만을 자극할 뿐이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DENOUNCED_FRIEND_1">
+			<Text>당신의 평가는 중요하지 않소. {1_CivName}은 루이지애나의 친구였고, 앞으로도 그럴 것이오. 당신이 뭐라 하든.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DENOUNCED_ENEMY_1">
+			<Text>{1_CivName}과의 협상은 진정 시간 낭비로군요. 언젠가 함께 대처할 방안을 찾지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DOF_SO_AI_DOF_1">
+			<Text>때마침 언급하고 싶었소. 나 역시 {1_CivName}과 믿을 수 있는 우정을 쌓았소. Merveilleux, n'est-ce pas?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DENOUNCE_SO_AI_DENOUNCE_1">
+			<Text>마침내! 누군가는 {1_CivName}에게 우리가 모두 생각하는 말을 꺼냈군요. 나도 그 뜻에 함께하겠소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DOF_SO_AI_DENOUNCE_1">
+			<Text>{1_CivName}과 손을 잡아 우릴 우회하려는 수작이군요. 하지만 우린 눈이 많소. 더는 참지 않겠소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DENOUNCE_SO_AI_DOF_1">
+			<Text>{1_CivName}을 비난함으로써 그들을 더 신뢰할 수 있는 동맹으로 만들어주었군요. Merci pour la clarification.</Text>
+		</Row>
+		<!-- LEADER_GH_LOUISIANA_BEAUSOLEIL Diplo Text -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_AGGRESSIVE_MILITARY_WARNING_1">
+			<Text>당신 병사들의 눈빛이 어둠 속에서 반짝이는 게 보이오. 내가 아무 조치도 없이 가만히 있을 것 같소? Quel naïf!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_AGGRESSIVE_MILITARY_WARNING_1">
+			<Text>당신 병사 일부가 우리 땅을 침범하고 있다는 소식이 들려왔소. 실수였기를 바라오, 그렇지 않다면 경계하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_KILLED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}은 우리 루이지애나의 보호를 받고 있었소. 당신의 어리석음이 얼마나 심각한지 아시오, brute immonde?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}에 대한 당신의 공격은 이미 모두에게 알려졌소. 그에 따른 결과를 치르게 될 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_SERIOUS_WARNING_1">
+			<Text>탐욕스러운 손은 오래가지 못하지. 팽창은 그만두는 게 좋을 거다. 아니면…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_WARNING_1">
+			<Text>당신이 차지한 그 땅들이 진정 그만한 관심을 받을 가치가 있다고 생각하시오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_WARNING_2">
+			<Text>좋은 자리를 독점해 우리 백성을 굶기려는 게 목적이라면, 반드시 대가를 치르게 될 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_WARNING_3">
+			<Text>계속된 팽창에 우리의 동맹과 가족들이 불안해하고 있소. 제발, 이번이 마지막이라 약속해주시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_WARNING_4">
+			<Text>우리가 탐험하고 경의를 표한 그 땅들이 당신 손에 넘어간 걸 보는 건 도저히 용납할 수 없소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EXPANSION_BROKEN_PROMISE_1">
+			<Text>Paroles en l'air! 당신의 행동만으로도 그 거짓말의 실체가 충분히 드러났소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PLOT_BUYING_SERIOUS_WARNING_1">
+			<Text>이런 뻔뻔한 영토 매입 행위, 더는 좌시하지 않겠소. crois-moi.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PLOT_BUYING_WARNING_1">
+			<Text>우리 근처에서 당신이 매입한 땅들이 불안을 일으키고 있소. 이제는 멈춰야 하지 않겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PLOT_BUYING_BROKEN_PROMISE_1">
+			<Text>우리 근처에서 더는 땅을 사지 않겠다던 말, 거짓이었군. Pour qui nous prends-tu?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PLOT_BUYING_BROKEN_PROMISE_2">
+			<Text>영국놈들도 입에 발린 거짓말은 잘 하더군. 나는 그보다 적은 이유로도 총을 들었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_1">
+			<Text>당신과의 협력은 많은 도움이 되었소. Santé!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_2">
+			<Text>우정은 신뢰 위에 세워진 집과도 같소. 부디 견고하길 바랍니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_3">
+			<Text>우리의 선택이 옳았음을 아는 덕에 땅은 평온을 되찾았소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_4">
+			<Text>이 세계는 우리 백성에게 잔혹했소. 하지만 당신과의 협력은 가치 있었음을 알립니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DEC_FRIENDSHIP_1">
+			<Text>여러 사람들과 이야기를 나눈 끝에, 당신이 우리 백성에게 얼마나 사랑받는지 알게 되었소. 공식적인 우정을 제안해도 괜찮겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DEC_FRIENDSHIP_2">
+			<Text>우정이란 가볍게 다뤄서는 안 되지요. 우리의 우정을 받아주시겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DEC_FRIENDSHIP_3">
+			<Text>긴 고난의 역사 속에서, 권세 있는 이들과 친구가 된 적은 드물었소. 당신이 그중 하나가 되어줄 수 있겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DENOUNCE_1">
+			<Text>그 뒤틀린 정신이 만천하에 드러나길 바라오![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DENOUNCE_2">
+			<Text>당신은 믿을 수 없는 자요! 이 말을 모두가 들을 수 있도록 하겠소![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들은 우리를 공개적으로 비난했습니다! 참고: 아직 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_REQUEST_1">
+			<Text>{1_PlayerName:textkey}는 이 땅에 재앙이 되었소. 저 나무를 베어내듯 함께 제거합시다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_REQUEST_2">
+			<Text>Parbleu, 전장에서 {1_PlayerName:textkey}와 맞서야 할 시간이오! 우리에게 힘을 보태주겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_REQUEST_3">
+			<Text>{1_PlayerName:textkey}는 반드시 단죄받아야 하오! 이 싸움에 도움을 청하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_TIME_1">
+			<Text>Par tous les saints, {1_PlayerName:textkey}를 무너뜨려야 하오! 함께해주시겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_NOW_UNFORGIVABLE_1">
+			<Text>당신의 행위는 우리 모두의 적임을 증명했소. Hors de ma vue! 내 눈 앞에서 꺼지시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_NOW_ENEMY_1">
+			<Text>Chacal, 인간 중에서도 최악의 존재로군! 조만간 끝을 보게 될 거요!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COMPLIMENT_1">
+			<Text>당신의 업적을 자랑스럽게 여기시오, l'ami. 나 역시 진심으로 감탄하고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_BOOT_KISSING_1">
+			<Text>당신의 제국은 정말 인상적이오. 진심으로 감탄을 표하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_BOOT_KISSING_2">
+			<Text>훗날 우리의 노래에 당신의 위대한 통치와 정의로운 심판이 함께 노래되길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WARMONGER_1">
+			<Text>당신이 흘린 피는 대지를 적시고 있소. 더는 가만히 있지 않을 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WARMONGER_2">
+			<Text>당신은 유럽에서 떠나온 폭군들과 다를 바 없소! 그 길에서 물러나지 않으면, 나를 적으로 보게 될 거요!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WARMONGER_3">
+			<Text>강가의 친구들이 당신이 악마가 되었다고 속삭이고 있소. Par Saint-Michel, 우리가 그 용을 쓰러뜨릴 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WARMONGER_4">
+			<Text>당신의 통치는 분노와 파괴만을 가져올 뿐이오. 영원하리라 생각 마시오, vipère!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_MINOR_CIV_COMPETITION_1">
+			<Text>{1_MinorCivName:textkey}는 우리 가족과도 같은 존재요. 당신이 그들을 떼어내려 한다면 가만히 있지 않을 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_MINOR_CIV_COMPETITION_2">
+			<Text>당신의 헛된 약속으로 {1_MinorCivName:textkey}를 유혹하고 있군. 경고하오. 더는 나아가지 마시오.</Text>
+		</Row>
+		<!--Insults-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_LEADER_GH_LOUISIANA_BEAUSOLEIL_1">
+			<Text>당신 얼굴만 봐도 속이 메스꺼워지오. Ordure!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_LEADER_GH_LOUISIANA_BEAUSOLEIL_2">
+			<Text>우리는 유럽의 피비린내 나는 실수를 반복하지 않겠다고 맹세했소. 하지만 당신을 보면… 다시 생각하게 되는군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_LEADER_GH_LOUISIANA_BEAUSOLEIL_3">
+			<Text>Putride, infâme, vaurien... 그건 지금의 당신에겐 칭찬에 불과하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_LEADER_GH_LOUISIANA_BEAUSOLEIL_4">
+			<Text>당신을 모욕하는 건, 과거 모욕받았던 이들에게 모욕이 되겠소. Lie de l'humanité!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_MILITARY_1">
+			<Text>이리 병력이 적다니. 겁쟁이인가? 아니면 친구 사귀는 데에도 소질이 없는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_NUKE_1">
+			<Text>맙소사, 이게 대체 뭐지? 이… 끔찍한 무기, 핵이라니. 대체 누가 이런 걸 고안한 거지? 혹시 자네인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_BULLY_1">
+			<Text>약자에게 강한 척하더니, 강자 앞에선 그 본모습이 드러나겠군. 겁쟁이 깡패 같으니라구.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_UNHAPPINESS_1">
+			<Text>네 백성의 울부짖음이 숲을 가득 메우고 있군! 설마 지도자 흉내만 내고 있었던 건가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_UNHAPPINESS_2">
+			<Text>지도자를 선택하는 일은 어려운 법이지. 혹시 백성들에게 다른 사람을 찾아보라고 전해줄까? 자네는 아닌 것 같아서 말이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_CITIES_1">
+			<Text>땅이 저리도 좁다니… 자네 백성은 굶주리고 있거나 곧 굶주리게 될 걸세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_POPULATION_1">
+			<Text>우리도 한때는 너무 적어 쉽게 지배당할 수 있었지. 우리는 배웠다네. 하지만 자네는 아직 모르는군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_CULTURE_1">
+			<Text>우리는 노래 속에서 기쁨과 경이, 그리고 존중을 느낍니다. 자네의 노래는… 공허하군. 참 안됐네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INSULT_CULTURE_2">
+			<Text>나는 농부의 자손이지만, 자네가 얼마나 무지하고 천박한지는 단번에 알겠더군. 슬플 지경일세.</Text>
+		</Row>
+		<!--Public Declarations-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DECLARATION_PROTECT_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey} 문명은 이제 {1_MinorCivName:textkey} 도시 국가를 보호하겠다고 세계에 선언했습니다. 도시 국가를 공격하면 관계가 크게 악화되며 전쟁이 발생할 수도 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DECLARATION_ABANDON_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey} 문명은 {1_MinorCivName:textkey}에 대한 보호를 철회했습니다.</Text>
+		</Row>
+		<!--Human is asking the AI for something-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REPEAT_NO_1">
+			<Text>아니. 지금도, 앞으로도 마찬가지일세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DONT_SETTLE_YES_1">
+			<Text>...좋아. 그 땅엔 정착하지 않겠네. 하지만 이 일, 나는 잊지 않을 걸세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DONT_SETTLE_YES_2">
+			<Text>그대 말, 설득력 있군. 그 땅이 자네 백성에게 평화를 안겨주길 바라지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DONT_SETTLE_NO_1">
+			<Text>허허, 지도자라면서 말 한마디 변변찮군. 이런 이에게 그 땅을 맡길 수는 없지 않겠나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DONT_SETTLE_NO_2">
+			<Text>농담인가? 우리는 먼 길을 넘어 이 땅에 왔다네. 자네보단 우리가 더 잘 돌볼 걸세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_YES_1">
+			<Text>자네를 우리 친구라 부를 수 있어 자랑스럽군!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_YES_2">
+			<Text>훌륭하군! 정말 기쁜 순간이야. 이걸 위해 한잔하지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WORK_WITH_US_YES_3">
+			<Text>오늘, 우리 위대한 가문은 더 강해졌네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DECLINE_1">
+			<Text>무슨 소리인가? 당연히 거절일세!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DECLINE_2">
+			<Text>이거 농담인가? 참으로 어처구니없군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DECLINE_3">
+			<Text>그 제안을 받아들이는 건 우리 백성을 모욕하는 일이네. 다시 생각하게나.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_YES_1">
+			<Text>전쟁은 언제나 슬픈 일이지만, 자네와 함께라면 다른 결과를 기대할 수 있겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_COOP_WAR_SOON_1">
+			<Text>솔직히 말해, 준비만 되었더라면 나도 찬성했을 걸세. 열 턴이면 충분하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_YES_1">
+			<Text>지금은 평화가 우선일세. 대가는 나중에 받도록 하지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_YES_2">
+			<Text>아이들은 살아남아야 하네. 자네의 요구를 받아들이겠지만, 훗날 후손들이 그 값을 치르게 될 걸세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_YES_3">
+			<Text>칼끝이 우리 목을 겨누고 있군. 어쩔 수 없이 받아들이겠네… 비참하도다…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_WEAK_1">
+			<Text>자랑은 않겠지만, 자네 같은 자가 협박을 한다니 우스울 따름이네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_WEAK_2">
+			<Text>그딴 어리석은 요구를 내가 받아줄 거라 생각했나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_WEAK_3">
+			<Text>욕심만 가득하군. 자네는 그걸 이뤄낼 실력도, 품격도 없어.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_WEAK_4">
+			<Text>우리 공동체는 자네 같은 광포한 폭군 따위에게 절대 굴복하지 않네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_HOSTILE_1">
+			<Text>무언가를 원했다면 먼저 호감을 샀어야지, 이 못난이여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_HOSTILE_2">
+			<Text>웃기시네! 해볼 테면 해보시지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_HOSTILE_3">
+			<Text>그딴 요구 때문에 자네는 몇 명이나 잃을 각오가 되어 있나? 묻는 거일세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_HOSTILE_4">
+			<Text>나는 평범한 농사꾼이지만, 자네 같은 얼간이 하나쯤은 짓밟을 힘은 있지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_HOSTILE_5">
+			<Text>입만 산 자가 토마호크 거리 안에 있다니, 꽤나 배짱이 두둑하군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_MUCH_1">
+			<Text>탐욕덩어리 같으니! 눈만 크고, 마음도 머리도 텅 비었군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_MUCH_2">
+			<Text>처음에는 손님 대접이라 여겼지만, 이제 도를 넘었군. 썩 물러가시게.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_MUCH_3">
+			<Text>언제 멈춰야 할지를 아는 자가 진정한 지도자라네. 그걸 좀 배워보게.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_SOON_1">
+			<Text>이렇게 금세 다시 와서 또 요구를? 자네는 채권자라도 된다는 건가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_SOON_2">
+			<Text>탐욕인가, 어리석음인가. 이렇게 빨리 또 요구를 하다니, 제정신인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_DEMAND_REFUSE_TOO_SOON_3">
+			<Text>소위 ‘위대한’ 자들의 탐욕은 늘 백성들의 고통을 외면하게 만들지. 당장 꺼지게나!</Text>
+		</Row>
+		<!--Deal Offers and related-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_LETS_HEAR_IT_1">
+			<Text>듣고 있네. 말해보게.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_LETS_HEAR_IT_2">
+			<Text>자네의 제안은 무엇인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_OFFER_1">
+			<Text>우리 백성 모두가 평화를 원하고 있네. 그 뜻을 이루어 줍시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_OFFER_2">
+			<Text>이 이상은 무의미하네. 이제 그만 끝맺도록 하지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_OFFER_3">
+			<Text>전쟁은 우리 아이들의 삶을 갉아먹고 있네. 그들에게 평화를 물려줘야 하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DEMAND_1">
+			<Text>내 조건이네. 협상은 없네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REQUEST_ITEM_1">
+			<Text>이번 겨울은 특히 혹독했네. 자네의 도움은 큰 힘이 될 걸세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REQUEST_ITEM_2">
+			<Text>벗에게 이런 부탁은 꺼려지지만, 어려운 시기엔 과감한 결정이 필요하지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_REQUEST_ITEM_3">
+			<Text>자네의 힘과 관대함은 이미 세상에 널리 알려져 있지. 이 어려운 시기에 그 힘을 빌리고 싶네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_OPEN_BORDERS_EXCHANGE_1">
+			<Text>우리가 목적지에 닿으려면 자네의 영토를 지나야 하네. 서로 국경을 개방하는 것에 동의하겠는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_OPEN_BORDERS_OFFER_1">
+			<Text>우리 백성을 위해 길을 내어주시길 청하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PLAN_RESEARCH_AGREEMENT_1">
+			<Text>자네의 위대한 국가와 연구 협정을 맺고자 하네. 이를 위해 양국은 각각 150 [ICON_GOLD]를 지불해야 하네. 어떻겠는가?[NEWLINE][NEWLINE](동의하더라도 아직 연구 협정이 체결되지는 않습니다)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESEARCH_AGREEMENT_OFFER_1">
+			<Text>세상을 아는 지혜는 언제나 중요하지. 믿을 수 있는 동맹에게서 배운다면 더욱 그렇지. 연구 협정을 맺는 것에 동의하겠는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RENEW_DEAL_1">
+			<Text>이 협정 덕분에 양국이 모두 번영했지. 계속 이어가세!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WANT_MORE_RENEW_DEAL_1">
+			<Text>세상이 달라졌네. 이 협정도 다시 조율해야 하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_LUXURY_TRADE_1">
+			<Text>우리 공동체의 누군가가 자네의 물산을 찾고 있다네. 서로 무역을 해보는 것이 어떤가?</Text>
+		</Row>
+		<!-- AI Attacked by another player -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_HOSTILE_1">
+			<Text>이 땅은 또다시 증오에 찢기겠군. 피로 물든 비극일세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_HOSTILE_2">
+			<Text>강자의 손에 또 다시 내 백성을 맡길 순 없지. 각오하게나!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_HOSTILE_3">
+			<Text>자네의 뒤틀린 망상으로 얼마나 많은 생명이 희생되겠나! 제발 오래 살아서 그 대가를 두 눈으로 보시게.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_WEAK_HOSTILE_1">
+			<Text>병력은 많을지 모르나, 자네의 미망인 울음소리가 내 백성의 울음보다 클지는 의문이군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_WEAK_HOSTILE_2">
+			<Text>우리 수는 적지만, 자네 따위에게는 이 정도로도 충분하네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_STRONG_HOSTILE_1">
+			<Text>자네는 망상에 빠진 건가? 아니면 선한 이들을 그토록 증오하나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_STRONG_HOSTILE_2">
+			<Text>나는 농부지만, 자네 같은 썩은 뿌리는 뽑아낼 줄 알지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_STRONG_HOSTILE_3">
+			<Text>그토록 외로운가? 남들까지 끌어들여 함께 괴로워해야겠나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_STRONG_HOSTILE_4">
+			<Text>강자를 공격하는 게 용기의 증표가 될 수도 있지. 하지만 자네는 자기 백성조차 아끼지 않는 자일 뿐이야!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_EXCITED_1">
+			<Text>드디어군! 자네의 고통을 끝내주지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_EXCITED_2">
+			<Text>좋아! 어쩌면 내가 직접 자네를 무너뜨리는 영광을 누릴 수도 있겠군!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_EXCITED_3">
+			<Text>오늘의 일은 노래가 되어 전해지겠지. 자네의 어리석음과 함께 말이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_EXCITED_4">
+			<Text>곧 자네의 비명소리를 들을 수 있겠군!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_WEAK_EXCITED_1">
+			<Text>우리 상황이 아무리 약해도, 자네 같은 자를 상대할 수 있다면 기꺼이 나서겠네. 덤벼보시게, 악마여!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_STRONG_EXCITED_1">
+			<Text>자네의 제국이라는 썩은 나무를 도끼로 베어주겠네. 그 백성들이 나를 고마워할 것이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_SAD_1">
+			<Text>이 모든 일은 언젠가 참으로 비통한 이야기로 남게 되겠지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_SAD_2">
+			<Text>왜 이러는가? 영광처럼 덧없는 것 때문에 어찌 이리 많은 생명을 낭비하나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_SAD_3">
+			<Text>맙소사... 싸우긴 하겠지만, 내 마음은 이미 그대에게서 떠났네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_BETRAYED_1">
+			<Text>배신자! 잡것 같으니! 그 꼬인 뱀 같은 자네를 썰어버리겠네!</Text>
+		</Row>
+		<!-- AI Declaring War-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LEADER_GH_LOUISIANA_BEAUSOLEIL_1">
+			<Text>더는 가만히 있지 않겠네. 무기를 들게나!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LEADER_GH_LOUISIANA_BEAUSOLEIL_2">
+			<Text>숲엔 우리의 눈, 마을엔 우리의 귀가 있다네. 항복하지 않은 자들이 곧 얼마나 어리석었는지 알게 될 것이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LEADER_GH_LOUISIANA_BEAUSOLEIL_3">
+			<Text>이제 개미집을 걷어찰 시간이군! 덤벼보게나!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LEADER_GH_LOUISIANA_BEAUSOLEIL_4">
+			<Text>이 가면극은 끝났네. 전쟁이라면, 전쟁답게 굴어야지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LEADER_GH_LOUISIANA_BEAUSOLEIL_5">
+			<Text>자네를 위한 송가를 하나 지어주지. 준비하라구, 친구.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_ATTACKED_MILITARY_PROMISE_BROKEN_1">
+			<Text>뱀 같은 혀를 지닌 자여, 배신자의 통치를 끝내러 왔다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LAND_1">
+			<Text>경종이 울리는구나. 자네의 지배는 오늘 여기서 끝날 것이야!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LAND_2">
+			<Text>너무 가까이 다가왔군. 자네의 숨결이 우리 목덜미에 닿는 것 같아. 준비하시게, 폭군이여!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_LAND_3">
+			<Text>우리는 약속을 지키기 위해 더 많은 땅이 필요하네. 자네의 의견은 중요하지 않다네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_WORLD_CONQUEST_1">
+			<Text>이 끝없는 분쟁을 끝내라는 사명이 우리에게 내려졌네. 독이든 칼이든, 복종하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_WORLD_CONQUEST_2">
+			<Text>바위처럼 구르는 우리를 막을 자 누구인가? 우릴 막으려는 자는 다 깔아뭉개주지! 사라지거라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_WORLD_CONQUEST_3">
+			<Text>운명의 장난이군. 이젠 내 손이 약자의 목을 조르고 있으니. 재밌는 일이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_1">
+			<Text>진정한 지도자는 행동할 때를 아는 법. 동지들이여, 준비하게나!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_2">
+			<Text>자네의 허점을 내가 그냥 지나칠 것 같았나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_3">
+			<Text>적은 흐트러졌다! 지금이다, 공격하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_4">
+			<Text>기습이 성공하려면 상대가 방심해야 한다네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_5">
+			<Text>자네의 몰락을 동맹들이 속삭이고 있다네. 내가 그걸 그냥 흘려들을 리가 없지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_6">
+			<Text>세계의 균형이 빠르게 요동치고 있군. 이제 내 차례일세.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_7">
+			<Text>덫이 서서히 자네를 조여오고 있네. 내가 직접 처리해주지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_OPPORTUNITY_8">
+			<Text>약점을 노릴 줄 아는 것, 그것 자체가 힘이지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_1">
+			<Text>칼엔 녹이 슬고, 눈엔 먼지가 끼었어도... [COLOR_NEGATIVE_TEXT]난 절대 포기하지 않네![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_2">
+			<Text>늑대의 심장을 꿰뚫으려면, 가장 위험한 순간을 알아봐야 한다네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_3">
+			<Text>내 온몸이 그대를 쓰러뜨리라 외치고 있네. 반드시 이 광란을 끝내고 말겠네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_4">
+			<Text>오, [COLOR_NEGATIVE_TEXT]악마 같은 자여[ENDCOLOR], 널 이 세상에서 지워버리라는 사명을 받고 왔노라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_5">
+			<Text>우리가 이긴다면, 대단한 노래가 될 터이니! 이리 오너라, [COLOR_NEGATIVE_TEXT]악마야[ENDCOLOR]! 내가 끝장을 내주지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_6">
+			<Text>그대의 힘이 아무리 막강해도, 눈을 향한 돌멩이 하나면 거인도 쓰러진다네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_7">
+			<Text>이 순간, 지금까지의 여정을 되짚어보네. 좀 더 일찍 그대를 멸할 수 있었다면… 이제는 기회는 단 하나뿐이네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_DESPERATE_8">
+			<Text>죽음이 다가오고 있음을 느낀다네. 부디 그 죽음이 자네를 데려가길 바랄 뿐이지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_BETRAYAL_1">
+			<Text>나는 세상을 배반하더라도, 세상이 나를 또다시 배신하게 두진 않겠네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_BETRAYAL_2">
+			<Text>[COLOR_NEGATIVE_TEXT]정말 순진하군, 친구여[ENDCOLOR]... 자네 같은 무능한 자에게 충성을 지킬 줄 알았나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_BETRAYAL_3">
+			<Text>어떤 의미에선, 이 꼬인 관계를 바로잡는 것일 뿐이네. 방어할 준비나 하게나!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_BETRAYAL_4">
+			<Text>좋은 덫은 많은 생명을 구하듯, [COLOR_POSITIVE_TEXT]좋은 배신도 그러하네![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DOW_WEAK_BETRAYAL_1">
+			<Text>강자를 뒤에서 찌르다니, 내가 어쩌다 이 지경까지 왔단 말인가... 하지만 내 백성들이 원한다네!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WAR_DEMAND_REFUSED_1">
+			<Text>여기서 자네 의견이 중요하다고 생각했나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WAR_DEMAND_REFUSED_2">
+			<Text>이야, 받기만 하다가 거절하는 건 이런 기분이군!</Text>
+		</Row>
+		<!--AI Responses to a human peace offer-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_WHAT_WILL_HUMAN_OFFER_1">
+			<Text>우린 얻을 건 얻었네. 자네는 이 전쟁을 끝내기 위해 무엇을 줄 수 있겠나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_WHAT_WILL_HUMAN_OFFER_2">
+			<Text>겨울은 전쟁 피해자가 누구 편이었는지 따지지 않지. 자네의 제안을 들어보지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_PEACE_WHAT_WILL_HUMAN_OFFER_3">
+			<Text>이 전쟁은 이미 너무 많은 생명을 앗아갔네. 원하는 게 무엇인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_NO_PEACE_1">
+			<Text>이 전쟁은 아직 끝나지 않았네. 자네의 행동에 따르는 대가를 치르게 될 걸세!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_NO_PEACE_2">
+			<Text>진심인가? 지금도, 여기서도, 그리고 자네 따위에게는 더더욱 아니지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_NO_PEACE_3">
+			<Text>자네가 우리 백성에게 저지른 죄, 아직 갚아지지 않았네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_TOO_SOON_NO_PEACE_1">
+			<Text>웃기고 있군. 내가 그런 허약한 바보로 보였나?</Text>
+		</Row>
+		<!--AI Responses to a discussion mode topics-->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_PLEASED_1">
+			<Text>좋은 소식이로군, 친구여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_PLEASED_2">
+			<Text>훌륭하군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_PLEASED_3">
+			<Text>매우 좋도다. 훌륭히 말씀하셨군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_PLEASED_4">
+			<Text>감사하네. 실로 만족스럽도다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_THANKFUL_1">
+			<Text>감사하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_THANKFUL_2">
+			<Text>운명이 우리를 이끌었지. 참 고마운 일이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_THANKFUL_3">
+			<Text>자네의 지혜, 우리의 노래에 담겠네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_DISAPPOINTED_1">
+			<Text>실망스럽군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_DISAPPOINTED_2">
+			<Text>다음엔 서로 접점을 찾길 바라지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_DISAPPOINTED_3">
+			<Text>안타깝군. 협약이 있었으면 서로 좋았을 텐데.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SO_BE_IT_1">
+			<Text>무슨 일이 일어나든, 그 책임은 자네에게 있네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SO_BE_IT_2">
+			<Text>끝났다고 내가 말하기 전까진, 끝난 게 아니지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SO_BE_IT_3">
+			<Text>그 어리석음을 곧 깨닫게 되길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RETURNED_CIVILIAN_1">
+			<Text>모든 생명은 소중하오. 진심으로 감사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RETURNED_CIVILIAN_2">
+			<Text>자넨 다음 축제의 귀빈이 될 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RETURNED_CIVILIAN_3">
+			<Text>그 자비는 길이 기억될 것이오. 맹세하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CULTURE_BOMBED_1">
+			<Text>이 간악한 자여! 땅을 훔쳐간 자에겐 그에 걸맞은 대가가 따를 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CULTURE_BOMBED_2">
+			<Text>그 탐욕은 끝이 없구려. 곧 그 뿌린 대가를 치르게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_1">
+			<Text>수많은 자네 병력들이 배회하고 있다 들었소. 솔직히 말해보시오. 진실인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_1">
+			<Text>전령들은 자네 병력이 국경에 집결 중이라 전했소. 하지만 난 믿었소. 과연 그 믿음이 옳았던 걸까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_AGGRESSIVE_MILITARY_WARNING_BAD_1">
+			<Text>자네가 정직하다면, 어리석은 폭군일 뿐이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_AGGRESSIVE_MILITARY_WARNING_GOOD_1">
+			<Text>혹시를 대비해 경계를 늦추지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_ATTACKED_MINOR_BAD_1">
+			<Text>이놈, 오래 살아남을 생각은 마시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_ATTACKED_MINOR_GOOD_1">
+			<Text>그러기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_ATTACKED_MINOR_BAD_1">
+			<Text>유감이로군...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_BAD_1">
+			<Text>진실이 자네 귓속을 스쳐 지나가는 바람 같구려.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_BAD_2">
+			<Text>우리는 평화를 사랑하지만 만만치 않소. 무례한 언행엔 반드시 대가가 따르오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_BAD_3">
+			<Text>이런 자를 어찌 지도자로 받아들일 수 있겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_RESPONSE_BAD_4">
+			<Text>자넬 몰아내는 날, 오히려 자네 백성은 안도할지도 모르오.</Text>
+		</Row>
+		<!-- DIPLOMACY: BWN Vanilla -->
+		<!-- Statements to player -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_ATTACKED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}에 자네가 앉힌 폭군을 몰아내는 중이라는 걸 알리는 게 좋을 것 같아서 말이오. 주민들은 우리에게 감사하게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_ATTACKED_YOUR_MINOR_2">
+			<Text>{@1_MinorCivName}은 자네의 독살스러운 말에 휘둘렸지만, 결국 우리 손으로 다시 이끌어야 할 존재였소. 어쩔 텐가, 폭군이여?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_ATTACKED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}이 자네의 보호 아래 있음에도 불구하고 공격했단 보고를 받았소. 의도한 바는 아니었지만, 꼭 필요한 조치였다는 점을 이해해 주길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_ATTACKED_YOUR_MINOR_2">
+			<Text>우리 제국이 {@1_MinorCivName}에 대한 공격을 개시했다는 보고를 받았소. 고의는 아니었으며, 이 일이 우리 사이를 멀어지게 하진 않길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EMBASSY_EXCHANGE_1">
+			<Text>우리 양국이 대사관을 교환하여, 더욱 발전된 외교를 도모하는 건 어떻겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_EMBASSY_OFFER_1">
+			<Text>자네 땅에서 길을 잃은 이들이 많다 들었소. 그들을 돌려보내기 위한 대사관을 세우는 건 좋은 생각 아닐까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_BULLIED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}을 협박하는 행위는 결코 용납할 수 없소. 내 보호하에 있는 도시국가에게서 조공을 짜내는 짓은 당장 중단하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_BULLIED_PROTECTED_CITY_STATE_2">
+			<Text>{@1_MinorCivName}에게 무슨 짓을 했는지 들었소. 그들이 내 보호하에 있다는 걸 몰랐던 건가? 날 더는 자극하지 마시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_BULLIED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}에게 조공을 요구했더니 순순히 응했소. 자네는 그들을 지키겠다고 했지만, 현실은 알고 있겠지?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_BULLIED_YOUR_MINOR_2">
+			<Text>자네 귀염둥이 {@1_MinorCivName}은 참 밀기 쉬운 상대로군. 우릴 거절도 못 하더이다. 자네가 뭐 어쩔 수나 있겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_BULLIED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}을 괴롭혔단 보고를 받았소. 그들이 자네 보호 아래라 하더라도, 자네가 그들을 나보다 우선시하진 않길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_BULLIED_YOUR_MINOR_2">
+			<Text>{@1_MinorCivName}에서 우리 군이 조공을 받았단 이야기를 들었소. 고의는 아니었소. 이 일로 우리 사이가 틀어지지 않길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SAME_POLICIES_FREEDOM_1">
+			<Text>지혜로운 지도자여, 반갑소! 자네 또한 자유의 길을 택했다니 기쁘구려. 자유 세계는 더욱 굳건해질 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SAME_POLICIES_ORDER_1">
+			<Text>동지여, 반갑소! 자네 역시 질서의 길을 따르다니, 우리의 오개년 계획에 상호 도움이 될 기회가 있을지도 모르겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SAME_POLICIES_AUTOCRACY_1">
+			<Text>위대한 황제여, 환영하오! 자네도 전제의 길을 택했군. 가장 강한 자만이 진정한 위대함을 이룰 수 있소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CAUGHT_YOUR_SPY_HOSTILE_1">
+			<Text>자네 첩자 하나가 우리 기술을 훔쳤더이다. 아마 이 말이 평화롭게 나누는 마지막 대화가 될지도 모르오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CAUGHT_YOUR_SPY_FRIENDLY_1">
+			<Text>이번 기술 절도는 눈감아 주겠소. 다시는 반복되지 않길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_CAUGHT_YOUR_SPY_GOOD_1">
+			<Text>이 하찮은 도둑질을 멈추기로 해줘서 다행이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_CAUGHT_YOUR_SPY_BAD_1">
+			<Text>자네의 그 뻔뻔함, 전혀 놀랍지도 않구려.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_STOP_SPYING_YES_1">
+			<Text>자네 뜻대로, 우리의 첩자들은 자네 땅에서 작전을 중단하겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_STOP_SPYING_NO_1">
+			<Text>우리 첩자들은 우리 문명을 지키기 위한 존재요, 자네를 포함한 모든 위협으로부터 말이오. 그들이 움직이는 것은 자네의 뜻이 아니라, 우리의 필요에 따른 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_WARNED_ABOUT_INTRIGUE_1">
+			<Text>{@1_CivAdjective}의 음모를 알려줘서 고맙소. 덕분에 어떤 계략이든 맞설 준비를 할 수 있겠군. 자네의 너그러운 도움은 기억될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_SHARE_INTRIGUE_DECEPTION_1">
+			<Text>우리 첩자들이 {1_PlayerName}이 자네를 상대로 음모를 꾸미고 있음을 밝혀냈소. 자네도 알게 된 음모가 있다면 우리와 공유해 주기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_SHARE_INTRIGUE_ARMY_SNEAK_ATTACK_KNOWN_CITY_1">
+			<Text>{1_PlayerName}이 자네의 도시 {2_CityName}을 향해 군을 이끌고 몰래 진격 중이라는 것을 우리 첩자들이 밝혀냈소. 자네도 첩자들이 알아낸 정보를 우리와 공유해 주길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_SHARE_INTRIGUE_ARMY_SNEAK_ATTACK_UNKNOWN_CITY_1">
+			<Text>{1_PlayerName}이 자네를 상대로 기습 공격을 준비하며 군을 움직이고 있다는 것을 알아냈소. 자네도 알아낸 음모가 있다면 우리와 공유해 주기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_SHARE_INTRIGUE_AMPHIBIOUS_SNEAK_ATTACK_KNOWN_CITY_1">
+			<Text>{1_PlayerName}이 해군의 호위를 받으며 자네의 도시 {2_CityName}을 기습하기 위한 병력을 실어 보냈소. 자네도 알아낸 음모가 있다면 우리와 공유해 주길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_SHARE_INTRIGUE_AMPHIBIOUS_SNEAK_ATTACK_UNKNOWN_CITY_1">
+			<Text>{1_PlayerName}이 자네 제국을 향해 해군과 함께 병력을 실어 보냈소. 자네도 알아낸 음모가 있다면 우리와 공유해 주길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_KILLED_YOUR_SPY_1">
+			<Text>우리 기술을 훔치려다 자네 첩자 하나를 처치했소. 경험상 말하자면, 책을 읽고 스스로 배우는 편이 훨씬 덜 위험하더이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_KILLED_MY_SPY_1">
+			<Text>자네 땅에 대한 소문이 내 귀에 너무도 자주 들려왔기에, 스스로 확인할 수밖에 없었소!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CONFRONT_YOU_KILLED_MY_SPY_1">
+			<Text>내 보호하에 있는 자들 중엔 출신이 좋지 못한 이들도 있소. 그들이 자네 땅에서 저지른 행위에 대해 사과드리려 직접 찾아왔소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SUSPECT_YOU_OF_SPYING_1">
+			<Text>최근 내 도시 하나가 도둑맞고 기술 비밀이 유출되었소. 자네가 관련 없다는 확신을 가질 수 있을까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SUSPECT_YOU_OF_SPYING_2">
+			<Text>자네가 우리 위대한 문명을 염탐해 왔다는 확신이 들었소. 누군가 다치기 전에 그만두시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_STOP_CONVERSIONS_1">
+			<Text>자네가 우리 제국 내에서 종교 개종을 벌이는 것을 알아차렸소. 즉시 중단하길 요구하오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_KILLED_MY_SPY_UNFORGIVEN_1">
+			<Text>이 일로 앞으로의 관계가 틀어질 수도 있다는 점, 명심하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_KILLED_MY_SPY_FORGIVEN_1">
+			<Text>이런 상황을 이해해 줘서 기쁘오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_STOP_CONVERSIONS_GOOD_1">
+			<Text>전도를 중단해줘서 고맙소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_STOP_CONVERSIONS_BAD_1">
+			<Text>자네의 종교적 광신은 불쾌하기 짝이 없군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_STOP_CONVERSIONS_AGREE_1">
+			<Text>자네 뜻대로, 이제 자네 도시의 백성들에게 진리를 전하지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_STOP_CONVERSIONS_DISAGREE_1">
+			<Text>자네가 반대하더라도, 우리의 선교사들은 자네 백성들을 계몽시킬 것이오. 자네가 그들을 무지 속에 머무르게 하려 한다 한들 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_WILL_ACCEPT_SURRENDER_1">
+			<Text>자네의 무조건 항복을 간절히 기다리고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_WILL_ACCEPT_SURRENDER_2">
+			<Text>전면적인 항복, 그만하면 이치에 맞는 제안이지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_GREETING_WILL_ACCEPT_SURRENDER_3">
+			<Text>자네의 완전한 멸망을 막기 위한 합의를 지금 맺을 수 있겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_LIKE_HUMAN_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대한 자네의 최근 제안, 아주 기쁘게 들었소. 우리의 뜻이 맞는 것 같구려.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_LIKE_HUMAN_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 자네의 제안은 우리의 이익에 딱 들어맞는군. 진심으로 감사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_DISLIKE_HUMAN_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대한 자네의 제안은 우리의 이익을 정면으로 침해하는군. 부디 이것이 분쟁으로 번지지 않기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_DISLIKE_HUMAN_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 자네의 제안이 몹시 우려스럽소. 정쟁이 아닌 다른 방식으로 문제를 풀 수 있지 않겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_SUPPORTED_OUR_PROPOSAL_1">
+			<Text>자네 대표단의 도움 덕에 {1_LeagueName}에 대한 우리의 제안이 성공했소. 앞으로도 자네의 지지를 기대하며, 은혜는 반드시 갚겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_SUPPORTED_OUR_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 우리의 제안은 자네의 대표단 덕에 성사되었소. 함께라면 위대한 일을 해낼 수 있을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_FOILED_OUR_PROPOSAL_1">
+			<Text>자네 대표단이 {1_LeagueName}에 대한 우리의 제안을 좌절시키는 데 일조했소. 나는 이런 행위를 가볍게 여기지 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_FOILED_OUR_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 우리의 제안이 자네 대표단에 의해 좌절되었소. 앞으로 우리의 지지를 기대하지 마시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_SUPPORTED_OUR_HOSTING_1">
+			<Text>세계 의회를 우리에게 맡겨준 자네의 신뢰에 감사하오. {1_LeagueName}에서 위대한 성과를 보여주겠소.</Text>
+		</Row>
+		<!-- Responses to player -->
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_BULLIED_MINOR_BAD_1">
+			<Text>그래, 짖고 싶으면 짖으시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HOSTILE_WE_BULLIED_MINOR_GOOD_1">
+			<Text>자네 같은 자에게 보호받는 어리석은 자들이 있다면, 세상을 위해서라도 도태되어야 하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_WE_BULLIED_MINOR_BAD_1">
+			<Text>우리는 필요한 일을 했을 뿐이오. 그건 분명하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_HUMAN_BULLIED_MINOR_GOOD_1">
+			<Text>자네를 지켜보겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_TRADE_CANT_MATCH_OFFER_1">
+			<Text>공정한 거래로 만들긴 어려울 것 같소. 유감이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_TRADE_CANT_MATCH_OFFER_2">
+			<Text>자네의 제안을 맞출 수 있다는 말은, 허공에 흩날리는 연기일 뿐이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_STOP_DIGGINGX_1">
+			<Text>우리 조상들의 자취 하나하나는 소중하오. 더는 우리를 자극하지 마시오. 원하지 않는 것을 마주하게 될 테니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_STOP_DIGGING_DISAGREE_1">
+			<Text>자기 땅조차 귀하게 여기지 않으면서 어찌 내게 존중을 요구한단 말이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_STOP_DIGGING_AGREE_1">
+			<Text>좋소. 자네가 원한다면, 그 보잘것없는 유물을 그대로 묻어두겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_STOP_DIGGING_BAD_1">
+			<Text>그 탐욕 때문에 정말 피를 봐야겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_RESPONSE_HUMAN_STOP_DIGGING_GOOD_1">
+			<Text>조상들의 안식을 지킬 수 있게 되어 감사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DIPLO_DISCUSS_DONT_STOP_DIGGING">
+			<Text>나는 자네의 공허한 말이 아니라 내 백성의 이익에 따라 행동하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_DIPLO_DISCUSS_STOP_DIGGING">
+			<Text>자네를 자극하려던 건 아니었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_AI_BY_FREEDOM_1">
+			<Text>개인주의와 탐욕이 이 땅을 썩히고 있소. 신의 자비가 필요하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_AI_BY_ORDER_1">
+			<Text>백성들의 머릿속엔 혁명과 신질서라는 헛된 망상이 가득하오. 오직 단결된 힘만이 우릴 지켜줄 수 있음을 곧 깨닫게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_AI_BY_AUTOCRACY_1">
+			<Text>오직 무력만이 미래를 이끈다 믿는 자들이 있소. 그러나 피 묻은 야수는 홀로 살고 홀로 죽는 법이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_HUMAN_BY_FREEDOM_1">
+			<Text>우린 오랫동안 폭군의 족쇄에 묶여 있었소. 함께 합류하시오. 자유가 더 나은 세상의 열쇠임을 증명합시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_HUMAN_BY_ORDER_1">
+			<Text>압제자들은 불안에 떨고 있소. 우리의 신질서가 그들을 꿰뚫을 것이기 때문이지. 함께하시오, 그렇지 않으면 그들과 같은 최후를 맞게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_CIVIL_RESISTANCE_ON_HUMAN_BY_AUTOCRACY_1">
+			<Text>오직 강한 자만이 세상의 잘못을 바로잡을 수 있소. 강함의 길에 동참하시오. 그렇지 않으면 도태될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SWITCHED_TO_FREEDOM_1">
+			<Text>마침내 이성이 자네 백성 위에 빛나기 시작했군. 그 빛이 우릴 평화와 이해로 이끌기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SWITCHED_TO_ORDER_1">
+			<Text>위대한 계획이 자네를 환영하오. 자네는 이 세상의 부조리를 끝낼 신질서의 일원이 될 자격이 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_SWITCHED_TO_AUTOCRACY_1">
+			<Text>강자들이 기뻐하고 있소. 사슴이 곰이 되어, 이제 우리와 함께 빛을 향해 사냥을 나설 테니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_GH_LOUISIANA_BEAUSOLEIL_INFLUENTIAL_ON_HUMAN_1">
+			<Text>우리의 노래와 이야기, 심장과 영혼이 자네 백성에게 닿았고, 그들은 진정한 친구가 되어 주었소.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

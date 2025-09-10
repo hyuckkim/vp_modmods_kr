@@ -1,10 +1,11 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "vp_kr+Modpack"
+#define MyAppName "VP 한국어 모드팩"
 #define MyAppVersion "4.22"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
+#define SourcePath ".."
 
 [Setup]
 ; 참고: AppId 값은 이 애플리케이션을 고유하게 식별합니다.
@@ -42,16 +43,16 @@ CreateAppDir=False
 Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Files]
-Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
-Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
-Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
-Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: maps
-Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: sukmm
-Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
-Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: cs
-Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: csbu
-Source: "..\Textures\Artful Textures*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: at
-Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vt
+Source: "{#SourcePath}\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
+Source: "{#SourcePath}\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: vp
+Source: "{#SourcePath}\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: nvc
+Source: "{#SourcePath}\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: maps
+Source: "{#SourcePath}\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: sukmm
+Source: "{#SourcePath}\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\cs
+Source: "{#SourcePath}\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\cs
+Source: "{#SourcePath}\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: civselect\csbu
+Source: "{#SourcePath}\Textures\Artful Textures\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: texture\at
+Source: "{#SourcePath}\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion createallsubdirs recursesubdirs; Components: texture\vt
 
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
@@ -60,10 +61,12 @@ Name: "vp"; Description: "VP + UI + 계몽 + 미래"; Types: VP Custom; Flags: d
 Name: "maps"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: Custom; Flags: disablenouninstallwarning
 Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
 Name: "sukmm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "cs"; Description: "진정한 대체 지도자 (True Alternative Leaders)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "csbu"; Description: "진정한 대체 지도자 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "at"; Description: "예술적인 텍스처 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
-Name: "vt"; Description: "생생한 텍스처 (Vibrant Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "civselect"; Description: "지도자 선택 화면"; Types: Custom; Flags: disablenouninstallwarning
+Name: "civselect\cs"; Description: "진정한 대체 지도자 (True Alternative Leaders)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "civselect\csbu"; Description: "문명 선택 기본 화면"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "texture"; Description: "지도 텍스처"; Types: Custom; Flags: disablenouninstallwarning
+Name: "texture\at"; Description: "예술적인 텍스처 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "texture\vt"; Description: "생생한 텍스처 (Vibrant Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
 [Types]
 Name: "VP"; Description: "Vox Populi 한국어 번역";
@@ -296,7 +299,7 @@ var
 procedure CurPageChanged(CurPageID: Integer);
 begin
   if CurPageID = wpFinished then
-    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어+ 모드팩 설치를 완료했습니다. 모드팩은 모드 메뉴를 쓰지 않고, 평상시 문명 5를 할 때 처럼 싱글과 멀티를 하시면 됩니다. 즐거운 시간 되세요!';
+    WizardForm.FinishedLabel.Caption := '설치 프로그램이 컴퓨터에 Vox Populi 한국어 모드팩 설치를 완료했습니다. 모드팩은 모드 메뉴를 쓰지 않고, 평상시 문명 5를 할 때 처럼 싱글과 멀티를 하시면 됩니다. 즐거운 시간 되세요!';
 end;
 
 procedure InitializeWizard;
@@ -305,7 +308,7 @@ begin
   // 설치 경로 페이지 만들기
 
   CIVDirPage := CreateInputDirPage(wpSelectComponents,
-    '문명 5 폴더를 선택하세요.', 'Vox Populi 한국어+ 모드팩을 어디에 설치해야 합니까?',
+    '문명 5 폴더를 선택하세요.', 'Vox Populi 한국어 모드팩을 어디에 설치해야 합니까?',
     '문명 5 설치 폴더를 선택한 후 "다음"을 클릭합니다. 설치 프로그램이 기본적으로 폴더를 선택하지 않으면 "찾아보기"를 클릭하고 올바른 폴더를 선택하세요. 찾으려면 스팀에서 Sid Meier''s Civilization V를 마우스 오른쪽 버튼으로 클릭하고 "관리 >" 에서 "로컬 파일 탐색"을 선택하세요.',
     False, '');
   CIVDirPage.Add('');
@@ -336,7 +339,7 @@ begin
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion') and
               DirExists(CIVDirPage.Values[0] + '\Assets\DLC\Expansion2')); 
     if Result = False then
-      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어+ 모드팩도 설치할 수 없습니다.', mbInformation, MB_OK);
+      MsgBox('필요한 모든 DLC가 설치되어 있지 않습니다. DLC가 없으면 Vox Populi를 설치할 수 없으므로 Vox Populi 한국어 모드팩도 설치할 수 없습니다.', mbInformation, MB_OK);
   end;
 end;
 

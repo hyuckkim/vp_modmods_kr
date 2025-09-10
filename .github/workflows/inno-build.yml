@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: iscc "vp_modmods_kr installer file/vp_kr+.iss" /O"out_githubaction" /F"vp_kr+"
+        run: iscc "vp_modmods_kr installer file/VPKR.iss" /O"out_githubaction" /F"VP 한국어"
       - uses: actions/upload-artifact@v4
         with:
-          name: "vp_kr+"
-          path: "out_githubaction/vp_kr+.exe"
+          name: "VP 한국어"
+          path: "out_githubaction/VP 한국어.exe"
