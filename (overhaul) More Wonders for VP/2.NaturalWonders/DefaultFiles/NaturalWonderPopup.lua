@@ -75,11 +75,7 @@ function OnPopup( popupInfo )
 
 	
 
-	local sFeatureExtendedTextTag = "TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_" .. pFeature.Type
-	local sExtendedCommonWonderInfo = L(sFeatureExtendedTextTag)
-	
-	if pFeature.PassableTechFeature or iFinderGold > 0 or pFeature.Defense > 0 or pFeature.TurnDamage > 0 
-		or pFeature.AdjacentUnitFreePromotion or pFeature.LocationUnitFreePromotion or sExtendedCommonWonderInfo ~= sFeatureExtendedTextTag then
+	if pFeature.PassableTechFeature or iFinderGold > 0 or pFeature.Defense > 0 or pFeature.TurnDamage > 0 then
 		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_ABILITIES_HEADER")
 	end	
 	
@@ -106,26 +102,12 @@ function OnPopup( popupInfo )
 	if pFeature.TurnDamage > 0 then
 		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_DAMAGE", pFeature.TurnDamage)
 	end
-	
-	if pFeature.AdjacentUnitFreePromotion then
-		local pPromotion = GameInfo.UnitPromotions[pFeature.AdjacentUnitFreePromotion]
-		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_NEAR_PROMOTION", "TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_" .. pPromotion.Type, L(pPromotion.Description), L(pPromotion.Help))
-	end
 
-	if pFeature.LocationUnitFreePromotion then
-		local pPromotion = GameInfo.UnitPromotions[pFeature.LocationUnitFreePromotion]
-		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_LOCATION_PROMOTION", "TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_" .. pPromotion.Type, L(pPromotion.Description), L(pPromotion.Help))
-	end
-	
-	if sExtendedCommonWonderInfo ~= sFeatureExtendedTextTag then
-		sYield = sYield .. sExtendedCommonWonderInfo
-	end
 
-	
-	
+
 	local sExtendedWonderInfo = L("TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_" .. pFeature.Type)
 
-	if pFeature.AddsFreshWater or pFeature.FreePromotionIfOwned or sExtendedWonderInfo ~= "" then
+	if pFeature.AddsFreshWater or pFeature.AdjacentUnitFreePromotion or pFeature.FreePromotionIfOwned or sExtendedWonderInfo ~= "" then
 		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_OTHER_ABILITIES_HEADER")
 	end
 	
@@ -138,6 +120,16 @@ function OnPopup( popupInfo )
 		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_FREE_PROMOTION", "TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_" .. pPromotion.Type, L(pPromotion.Description), L(pPromotion.Help))
 	end
 	
+	if pFeature.AdjacentUnitFreePromotion then
+		local pPromotion = GameInfo.UnitPromotions[pFeature.AdjacentUnitFreePromotion]
+		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_NEAR_PROMOTION", "TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_" .. pPromotion.Type, L(pPromotion.Description), L(pPromotion.Help))
+	end
+
+	if pFeature.LocationUnitFreePromotion then
+		local pPromotion = GameInfo.UnitPromotions[pFeature.LocationUnitFreePromotion]
+		sYield = sYield .. L("TXT_KEY_MORE_NATURAL_WONDERS_LOCATION_PROMOTION", "TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_" .. pPromotion.Type, L(pPromotion.Description), L(pPromotion.Help))
+	end
+
 	if sExtendedWonderInfo ~= "" then
 		sYield = sYield .. sExtendedWonderInfo
 	end
