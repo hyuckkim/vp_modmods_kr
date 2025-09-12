@@ -286,6 +286,7 @@ Name: "civ6"; Description: "Sukritact의 문명 6 방식 도시명 (Sukritact's 
 Name: "ele"; Description: "서커스 건설 후 코끼리 소리 (Elephant Sound When Circus Built)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "music"; Description: "음악 바꾸기 (Music Changer)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
+Name: "cd"; Description: "대륙 이동설 (Continental Drift)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gy"; Description: "Gedemon의 YnAEMP (Gedemon's YnAEMP)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "fnv"; Description: "모하비 황무지 (Mojave Wasteland)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "df"; Description: "전설의 세계 (World of Lore)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -309,7 +310,6 @@ Name: "mw"; Description: "VP 더 많은 불가사의 (More Wonders for VP)"; Typ
 Name: "pb"; Description: "VP 부교 (Pontoon Bridges for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "bl"; Description: "VP 더 나은 호수 (Better Lakes for Vox Populi)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "cd"; Description: "대륙 이동설 (Continental Drift)"; Types: VPUI VPMAX Custom; Flags: disablenouninstallwarning
 Name: "emr"; Description: "VP + UCS 한층 더 많은 자원 (Even More Resources for Vox Populi UCS)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gw"; Description: "지구 온난화 (Global Warming)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jhal"; Description: "Jarcast와 Hokath의 추가 사치 자원 (Jarcast & Hokath's Additional Luxuries)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
