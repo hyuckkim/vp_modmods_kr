@@ -9,7 +9,7 @@
       <Text>모두 보기</Text>
     </Row>
     <Row Tag="TXT_KEY_ALLIED_WITH">
-      <Text>[COLOR_POSITIVE_TEXT]{1_ally} 문명과 동맹[ENDCOLOR]</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_ally} 문명과 동맹[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_ALLOWS_BRIDGES">
       <Text>강을 건너는 도로에 다리가 세워집니다.</Text>
@@ -24,7 +24,7 @@
       <Text>지상 유닛이 승선하여 해양 타일을 지날 수 있습니다. 이 능력을 얻기 위해서는 유닛이 우호 지역에 있어야 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_ALLOWS_OPEN_BORDERS">
-      <Text>국경 개방 조약을 맺을 수 있습니다.</Text>
+      <Text>국경개방 조약을 맺을 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_ALLOWS_RESEARCH_AGREEMENTS">
       <Text>연구 협정을 맺을 수 있습니다.</Text>
@@ -36,7 +36,7 @@
       <Text>활성화</Text>
     </Row>
     <Row Tag="TXT_KEY_AT_WAR_WITH">
-      <Text>[COLOR_NEGATIVE_TEXT]{1_enemy} 문명과 전쟁[ENDCOLOR]</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]{1_enemy} 문명과 전쟁[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_AUDIO_OPTIONS">
       <Text>오디오 설정</Text>
@@ -162,7 +162,7 @@
       <Text>이 문명은 당신의 외교 제안에 응답하지 않았습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_STATUS_TT">
-      <Text>{1_cityName} 도시 국가는 현재 {2_statusType}임 : [COLOR_POSITIVE_TEXT]{3_curNumber}[ENDCOLOR] / [COLOR_POSITIVE_TEXT]{4_maxNumber}[ENDCOLOR] [ICON_INFLUENCE]영향력</Text>
+      <Text>{1_cityName} 도시 국가는 현재 {2_statusType}임 : [COLOR_POSITIVE_TEXT]{3_curNumber}[COLOR_XX] / [COLOR_POSITIVE_TEXT]{4_maxNumber}[COLOR_XX] [ICON_INFLUENCE]영향력</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_AT_WAR">
       <Text>전쟁</Text>
@@ -177,16 +177,16 @@
       <Text>진행 중인 협정</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_DEAL_BEGAN">
-      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[ENDCOLOR]에 협정이 체결됨</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[COLOR_XX]에 협정이 체결됨</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_DEAL_DURATION">
-      <Text>협정 기간 : [COLOR_POSITIVE_TEXT]{1_turn} 턴[ENDCOLOR]</Text>
+      <Text>협정 기간 : [COLOR_POSITIVE_TEXT]{1_turn} 턴[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_DEAL_HISTORY">
       <Text>협정 기록</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_DEAL_LASTED">
-      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[ENDCOLOR]동안 협정이 유효함</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[COLOR_XX]동안 협정이 유효함</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_DIPLO_LOG">
       <Text>외교 기록</Text>
@@ -216,10 +216,10 @@
       <Text>당신은 아직 다른 도시 국가를 만나지 못했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_ON_TURN">
-      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[ENDCOLOR]에 협정</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_turn} 턴[COLOR_XX]에 협정</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_OPEN_BORDERS">
-      <Text>국경 개방 조약</Text>
+      <Text>국경개방 조약</Text>
     </Row>
     <Row Tag="TXT_KEY_DO_PACT">
       <Text>방위 조약</Text>
@@ -249,7 +249,7 @@
       <Text>당신의 관계</Text>
     </Row>
     <Row Tag="TXT_KEY_ENABLE_PRODUCITON_CONVERSION">
-      <Text>도시의 생산을 [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[ENDCOLOR]{1: plural 1?으로; 2?로;} 전환할 수 있습니다.</Text>
+      <Text>도시의 생산을 [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[COLOR_XX]로 전환할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_BUILDINGS">
       <Text>[ICON_PLUS] 건물</Text>
@@ -279,7 +279,7 @@
       <Text>외교</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_DIPLOMACY_AND_UN_VOTE">
-      <Text>외교[NEWLINE][NEWLINE]국제연합 투표까지 [COLOR_POSITIVE_TEXT]{1_Num} 턴[ENDCOLOR] 남음</Text>
+      <Text>외교[NEWLINE][NEWLINE]국제연합 투표까지 [COLOR_POSITIVE_TEXT]{1_Num} 턴[COLOR_XX] 남음</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_EX_BASE_BUILDINGS">
       <Text>높은 난이도 게임에서 책정되는 비용입니다.</Text>
@@ -291,13 +291,13 @@
       <Text>당신이 맺은 외교 협정에서의 지출입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_EX_IMPROVEMENTS">
-      <Text>당신이 건설했거나 소유하고 있는 도로와 철도의 유지비입니다. 도로는 턴당 [COLOR_NEGATIVE_TEXT]1[ENDCOLOR] [ICON_GOLD]골드, 철도는 턴당 [COLOR_NEGATIVE_TEXT]2[ENDCOLOR] [ICON_GOLD]골드가 소모됩니다.</Text>
+      <Text>당신이 건설했거나 소유하고 있는 도로와 철도의 유지비입니다. 도로는 턴 당 [COLOR_NEGATIVE_TEXT]1[COLOR_XX] [ICON_GOLD]골드, 철도는 턴 당 [COLOR_NEGATIVE_TEXT]2[COLOR_XX] [ICON_GOLD]골드가 소모됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_EX_UNITS">
-      <Text>당신이 보유한 군사 및 민간 유닛의 유지비입니다. 각 유닛의 유지비는 현재 [COLOR_NEGATIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_GOLD]골드이며, 유닛의 수가 늘거나 새로운 시대에 진입할 때 유지비가 증가합니다. 당신은 현재 [COLOR_POSITIVE_TEXT]{2_Num}개[ENDCOLOR]의 유지비가 필요한 유닛을 보유하고 있습니다.</Text>
+      <Text>당신이 보유한 군사 및 민간 유닛의 유지비입니다. 각 유닛의 유지비는 현재 [COLOR_NEGATIVE_TEXT]{1_Num}[COLOR_XX] [ICON_GOLD]골드이며, 유닛의 수가 늘거나 새로운 시대에 진입할 때 유지비가 증가합니다. 당신은 현재 [COLOR_POSITIVE_TEXT]{2_Num}개[COLOR_XX]의 유지비가 필요한 유닛을 보유하고 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_EX_UNITS_NO_MAINT">
-      <Text>당신은 현재 [COLOR_POSITIVE_TEXT]{2_Num}개[ENDCOLOR]의 유지비가 필요하지 않은 유닛을 보유하고 있습니다.</Text>
+      <Text>당신은 현재 [COLOR_POSITIVE_TEXT]{2_Num}개[COLOR_XX]의 유지비가 필요하지 않은 유닛을 보유하고 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_EXPENSES">
       <Text>지출</Text>
@@ -309,7 +309,7 @@
       <Text>[ICON_MINUS] 주둔 중인 유닛</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_GPT">
-      <Text>턴당 [ICON_GOLD]골드 내역</Text>
+      <Text>턴 당 [ICON_GOLD]골드 내역</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_GROSS">
       <Text>[ICON_GOLD]골드 총 수입</Text>
@@ -423,7 +423,7 @@
       <Text>도시당 무료 [ICON_HAPPINESS_1]행복</Text>
     </Row>
     <Row Tag="TXT_KEY_FRESH_WATER">
-      <Text>{1_ImprovementName:textkey}{1: plural 1?이; 2?가;} 담수 지역에 있다면, {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] 증가합니다.</Text>
+      <Text>{1_ImprovementName:textkey}{1: plural 1?이; 2?가;} 담수 지역에 있다면, {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[COLOR_XX] 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_FULLSCREEN_ONLY">
       <Text>전체화면일 때만 활성화</Text>
@@ -501,7 +501,7 @@
       <Text>당신은 아직 완료한 게임이 없습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_HANDICAP_MAINTENANCE_MOD">
-      <Text>현재 게임의 난이도 수준 때문에, 기본 유지비의 [COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR]만 소모됩니다.</Text>
+      <Text>현재 게임의 난이도 수준 때문에, 기본 유지비의 [COLOR_POSITIVE_TEXT]{1_Num}%[COLOR_XX]만 소모됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_HANDICAP_SUPPLY">
       <Text>기본 보급량</Text>
@@ -576,13 +576,13 @@
       <Text>군사적 도시 국가</Text>
     </Row>
     <Row Tag="TXT_KEY_MO_GENERAL_TT">
-      <Text>[COLOR_POSITIVE_TEXT]{1_current}[ENDCOLOR]/[COLOR_POSITIVE_TEXT]{2_needed}[ENDCOLOR][NEWLINE]다음 위대한 장군의 출현은 전투에서 유닛이 얻은 경험치를 바탕으로 나타납니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_current}[COLOR_XX]/[COLOR_POSITIVE_TEXT]{2_needed}[COLOR_XX][NEWLINE]다음 위대한 장군의 출현은 전투에서 유닛이 얻은 경험치를 바탕으로 나타납니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_MO_SORT_MAX_MOVES">
-      <Text>최대 이동력순으로 정렬</Text>
+      <Text>최대 행동력순으로 정렬</Text>
     </Row>
     <Row Tag="TXT_KEY_MO_SORT_MOVEMENT">
-      <Text>남은 이동력순으로 정렬</Text>
+      <Text>남은 행동력순으로 정렬</Text>
     </Row>
     <Row Tag="TXT_KEY_MO_SORT_NAME">
       <Text>이름순으로 정렬</Text>
@@ -618,7 +618,7 @@
       <Text>외교 활동 없음</Text>
     </Row>
     <Row Tag="TXT_KEY_NO_FRESH_WATER">
-      <Text>{1_ImprovementName:textkey}{1: plural 1?이; 2?가;} 담수 지역에 없어도, {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] 증가합니다.</Text>
+      <Text>{1_ImprovementName:textkey}{1: plural 1?이; 2?가;} 담수 지역에 없어도, {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[COLOR_XX] 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NORMALLY">
       <Text>(평상시)</Text>
@@ -631,22 +631,22 @@
       <Text>현재 게임의 난이도 때문에, 평상시보다 {1_Num}% 더 적게 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NUMBER_OF_CITIES_TT">
-      <Text>일반적인 도시는 항상 [COLOR_NEGATIVE_TEXT]3[ENDCOLOR] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
+      <Text>일반적인 도시는 항상 [COLOR_NEGATIVE_TEXT]3[COLOR_XX] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NUMBER_OF_CITIES_TT_NORMALLY">
-      <Text>보통 일반적인 도시는 [COLOR_NEGATIVE_TEXT]3[ENDCOLOR] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
+      <Text>보통 일반적인 도시는 [COLOR_NEGATIVE_TEXT]3[COLOR_XX] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_NUMBER_OF_OCCUPIED_CITIES">
       <Text>점령된 도시 {1_Num}개</Text>
     </Row>
     <Row Tag="TXT_KEY_NUMBER_OF_OCCUPIED_CITIES_TT">
-      <Text>점령된 도시는 [COLOR_NEGATIVE_TEXT]5[ENDCOLOR] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
+      <Text>점령된 도시는 [COLOR_NEGATIVE_TEXT]5[COLOR_XX] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_OCCUPIED_POP_UNHAPPINESS">
       <Text>점령된 도시의 시민 {1_Num}명</Text>
     </Row>
     <Row Tag="TXT_KEY_OCCUPIED_POP_UNHAPPINESS_TT">
-      <Text>점령된 도시의 시민은 항상 [COLOR_NEGATIVE_TEXT]1.34[ENDCOLOR] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
+      <Text>점령된 도시의 시민은 항상 [COLOR_NEGATIVE_TEXT]1.34[COLOR_XX] [ICON_HAPPINESS_4]불행을 생성합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_ADVISOR_COUNSEL">
       <Text>보좌관의 조언 알림</Text>
@@ -793,10 +793,10 @@
       <Text>안티 에일리어싱</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_MSAA_2X">
-      <Text>두 배 MSAA</Text>
+      <Text>2배 MSAA</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_MSAA_4X">
-      <Text>네 배 MSAA</Text>
+      <Text>4배 MSAA</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_MSAA_8X">
       <Text>8배 MSAA</Text>
@@ -952,7 +952,7 @@
       <Text>싱글 플레이 자동 턴 종료</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_SPLAYER_AUTO_END_TURN_TT">
-      <Text>멀티 플레이 게임을 할 때, 자동으로 턴이 전환되도록 활성화 됩니다.</Text>
+      <Text>싱글 플레이 게임을 할 때, 자동으로 턴이 전환되도록 활성화 됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_COMBAT">
       <Text>싱글 플레이 빠른 전투</Text>
@@ -964,7 +964,7 @@
       <Text>싱글 플레이 빠른 이동</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT">
-      <Text>멀티 플레이 게임에서 이동 애니매이션을 보지 않습니다.</Text>
+      <Text>싱글 플레이 게임에서 이동 애니매이션을 보지 않습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_TERRAIN_DETAIL_LEVEL">
       <Text>지형 디테일 수준</Text>
@@ -1111,7 +1111,7 @@
       <Text>상호협력 협정</Text>
     </Row>
     <Row Tag="TXT_KEY_PACT_OF_SECRECY">
-      <Text>{2_enemy}에 대항하여 {1_ally}{2: plural 1?과; 2?와;} 비밀 협정</Text>
+      <Text>{2_enemy}에 대항하여 {1_ally}와(과) 비밀 협정</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_ABILITIES_LABEL">
       <Text>특별한 능력</Text>
@@ -1234,7 +1234,7 @@
       <Text>건설 가능 지형</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_FREEPROMOTIONS_LABEL">
-      <Text>기본 능력:</Text>
+      <Text>기본 능력</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_GAME_CONCEPT_HELP_TEXT">
       <Text>문명 V는 먼 옛날부터 훗날 멀지 않은 미래까지 모든 인간 역사를 다룹니다. 문명 백과사전의 "게임 개념" 부분은 게임에서 가장 중요한 부분 중에서 도시를 건설하고 관리하는 방법, 전쟁에서 싸우는 방법, 기술을 연구하는 방법, 그 외 기타 등등을 설명합니다. 왼쪽 탐색바는 주요 개념을 표시하며, 개념의 세세한 부분을 보기 위해서는 항목을 클릭하십시오.[NEWLINE][NEWLINE]게임 개념 전체를 처음부터 하나하나 볼 수도 있겠지만, 이 게임의 개발 책임자가 아닌 이상, 웬만하면 게임을 시작한 후 필요할 때마다 확인하는 것을 추천합니다. 당신이 게임 개념을 다 읽었더라도, 게임 초반에 진행하는 방법을 이해하기 위해서는 게임 속 튜토리얼이 필요하게 될 것입니다.</Text>
@@ -1285,13 +1285,13 @@
       <Text>시설 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_IMPROVEMENTS_LABEL">
-      <Text>개발 가능한 시설</Text>
+      <Text>개발가능한 시설</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_IMPROVEMENTS_PAGE_LABEL">
       <Text>시설 홈페이지</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_IMPROVES_RESRC_LABEL">
-      <Text>다음 자원 개발</Text>
+      <Text>다음 자원을 개발함</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_LEADER_NAME">
       <Text>지도자 이름</Text>
@@ -1300,7 +1300,7 @@
       <Text>지도자</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_LEADS_TO_TECH_LABEL">
-      <Text>다음 기술 연구에 필요</Text>
+      <Text>다음 기술 연구에 요구됨</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_LIVED_LABEL">
       <Text>생애</Text>
@@ -1309,19 +1309,19 @@
       <Text>주요 자원 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_LOCAL_RESRC_LABEL">
-      <Text>필요한 지역 자원</Text>
+      <Text>요구되는 현지 자원</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_MAINT_LABEL">
       <Text>유지비</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_MOUNTAINADJYIELD_LABEL">
-      <Text>산 인접 보너스</Text>
+      <Text>산이 근처에 있을 시 보너스</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_MOVECOST_LABEL">
-      <Text>소모하는 이동력</Text>
+      <Text>소모되는 행동력</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_MOVEMENT_LABEL">
-      <Text>이동력</Text>
+      <Text>행동력</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_NO_YIELD">
       <Text>산출량 없음</Text>
@@ -1342,13 +1342,13 @@
       <Text>정책 계열</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PREREQ_ERA_LABEL">
-      <Text>필요한 시대</Text>
+      <Text>요구되는 시대</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PREREQ_POLICY_LABEL">
-      <Text>필요한 정책</Text>
+      <Text>요구되는 정책</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PREREQ_TECH_LABEL">
-      <Text>필요한 기술</Text>
+      <Text>요구되는 기술</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PRODUCTION_LABEL">
       <Text>생산</Text>
@@ -1360,7 +1360,7 @@
       <Text>승급 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PROMOTIONS_HELP_TEXT">
-      <Text>당신의 유닛은 전투를 통해 승급할 수 있으며, 병영이나 다른 군사 건물이 있는 도시에서 만들어질 때도 승급합니다. 승급은 유닛의 전투력을 급격히 올릴 수 있으며 이동력이나 회복력도 올릴 수 있습니다. 승급이 많이 된 유닛은 매우 가치 있습니다. 이런 유닛을 전투에 지혜롭게 사용하고 업그레이드 가능한 시점에서 항상 업그레이드를 진행하십시오.</Text>
+      <Text>당신의 유닛은 전투를 통해 승급할 수 있으며, 병영이나 다른 군사 건물이 있는 도시에서 만들어질 때도 승급합니다. 승급은 유닛의 전투력을 급격히 올릴 수 있으며 행동력이나 회복력도 올릴 수 있습니다. 승급이 많이 된 유닛은 매우 가치 있습니다. 이런 유닛을 전투에 지혜롭게 사용하고 업그레이드 가능한 시점에서 항상 업그레이드를 진행하십시오.</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_PROMOTIONS_PAGE_LABEL">
       <Text>승급 홈페이지</Text>
@@ -1423,19 +1423,19 @@
       <Text>대체 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_REPLACES_LABEL">
-      <Text>다음을 대체</Text>
+      <Text>대체함</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_REQ_BLDG_LABEL">
-      <Text>필요한 건물</Text>
+      <Text>요구되는 건물</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_REQ_PROMOTIONS_LABEL">
-      <Text>필요한 승급</Text>
+      <Text>요구되는 승급</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_REQ_RESRC_LABEL">
-      <Text>필요한 자원</Text>
+      <Text>요구되는 자원</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_REQUIRED_BUILDING_NAME">
-      <Text>필요한 건물</Text>
+      <Text>필요 건물 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_RESEARCH_LABEL">
       <Text>연구</Text>
@@ -1489,19 +1489,19 @@
       <Text>기술 부문</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TECHNOLOGIES_HELP_TEXT">
-      <Text>기술은 문명의 성패에 매우 중요합니다. 게임 내에는 70가지가 넘는 기술이 존재하며 각 기술은 게임상의 중요한 편의를 부여합니다. 멋지고 새로운 건물과 불가사의를 건설할 수 있게 해주는 기술도 있고, 농장과 광산의 산출량을 높여주는 기술도 있으며, 철도를 놓거나 발전된 무기를 제작할 수 있게 해주는 기술도 있습니다.[NEWLINE][NEWLINE]기술 경쟁에서 경쟁우위를 유지하는 것은 극히 중요합니다. 기술 발전이 뒤쳐지면 흑요석 검과 새총으로 스페인의 머스킷과 대포에 맞서야 했던 아즈텍 문명과 똑같은 운명을 맞게 될 것입니다. 기술이 앞선 쪽이 승리한다는 것은 역사적으로 봐도 분명한 사실입니다.</Text>
+      <Text>기술은 문명의 성패에 매우 중요합니다. 게임 내에는 70가지가 넘는 기술이 존재하며 각 기술은 게임상의 중요한 편의를 부여합니다. 멋지고 새로운 건물과 불가사의를 건설할 수 있게 해주는 기술도 있고, 농장과 광산의 생산량을 높여주는 기술도 있으며, 철도를 놓거나 발전된 무기를 제작할 수 있게 해주는 기술도 있습니다.[NEWLINE][NEWLINE]기술 경쟁에서 경쟁우위를 유지하는 것은 극히 중요합니다. 기술 발전이 뒤쳐지면 흑요석 검과 새총으로 스페인의 머스킷과 대포에 맞서야 했던 아즈텍 문명과 똑같은 운명을 맞게 될 것입니다. 기술이 앞선 쪽이 승리한다는 것은 역사적으로 봐도 분명한 사실입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TECHNOLOGY_NAME">
       <Text>기술 이름</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TERRAIN_FEATURES_HELP_TEXT">
-      <Text>지형 특징은 한 타일에서 나타나는 땅과 초목의 특징을 말해주며, 타일 지형 특성 중 가장 윗부분에 자리 잡고 있습니다. (예를 들어, 초원 타일은 숲이나 습지를 그 위에 올려놓은 상태일 수 있습니다.) 지형 특징은 타일의 산출량을 결정하며  해당 타일에 진입할 때 소비하는 "이동력"(MP)을 다르게 바꿀 수 있습니다. 지형 특징은 해당 타일을 점령하는 유닛에 전투 보너스나 페널티를 줄 수 있습니다.</Text>
+      <Text>지형 특징은 한 타일에서 나타나는 땅과 초목의 특징을 말해주며, 타일 지형 특성 중 가장 윗부분에 자리 잡고 있습니다. (예를 들어, 초원 타일은 숲이나 습지를 그 위에 올려놓은 상태일 수 있습니다.) 지형 특징은 타일의 산출량을 결정하며 또한 해당 타일에 진입할 때 소비하는 "행동력"(MP)을 다르게 바꿀 수 있습니다. 지형 특징은 해당 타일을 점령하는 유닛에 전투 보너스나 페널티를 줄 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TERRAIN_FEATURES_LABEL">
       <Text>특징</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TERRAIN_HELP_TEXT">
-      <Text>문명 5의 세계는 6각형 모양의 "타일"로 이루어져 있으며 이는 "칸"이라고도 부릅니다. 이 타일들은 사막, 평원, 초원, 언덕 등 다양한 "지형 유형"으로 이루어져 있으며, 숲이나 정글과 같은 "지형 특징"도 가질 수 있습니다. 이러한 요소에 따라 주변 도시에 대한 해당 타일의 유용성과 이동의 편의성이 결정됩니다.  타일의 지형 및 특성은 타일에서 벌어지는 전투에 큰 영향을 미칠 수 있습니다.</Text>
+      <Text>문명 5의 세계는 6각형 모양의 "타일"로 이루어져 있으며 이는 "칸"이라고도 부릅니다. 이 타일들은 사막, 평원, 초원, 언덕 등 다양한 "지형 유형"으로 이루어져 있으며, 숲이나 정글과 같은 "지형 특징"도 가질 수 있습니다. 이러한 요소에 따라 주변 도시에 대한 해당 타일의 유용성과 이동의 편의성이 결정됩니다. 또한, 타일의 지형 및 특성은 타일에서 벌어지는 전투에 큰 영향을 미칠 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_TERRAIN_LABEL">
       <Text>지형</Text>
@@ -1546,7 +1546,7 @@
       <Text>생산 가능한 유닛</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_UNITS_HELP_TEXT">
-      <Text>유닛은 문명의 더욱 세세한 단면을 나타냅니다. 밭을 경작하는 노동자, 새로운 도시를 짓는 개척자, 천재성과 창의성으로 한 나라의 운명을 스스로 바꿀 수 있는 위인을 볼 수 있습니다. 물론 유닛으로 한 문명의 군사력도 가늠할 수 있습니다.[NEWLINE][NEWLINE]대부분의 유닛은 도시 안에서 만들어집니다. 유닛을 지혜롭게 사용하십시오. 항상 충분한 전투 유닛을 보유하여 군사작전을 완수하고 도시를 방어하게 하십시오. 그러나 너무 과하게 생산하지 말아야 하며, 유지비 때문에 구걸을 해야 하는 문명이 될지도 모릅니다. 유닛 업그레이드가 가능한 시점에 업그레이드 시키고, 유지비에 많은 부담이 온다면 유닛 삭제를 과감히 하십시오. 마찬가지로 노동자 역시 작업에 충분한 수를 유지하게 시키되 유지비가 비싸니 턴당 유지비에 신경 쓰십시오.[NEWLINE][NEWLINE]어쨌든 간에, 게임 초반에는 세계를 탐험시킬 유닛을 내 보내십시오! 주변 세계가 어떻게 돌아가는지 모른다면, 탐욕적인 이웃의 추악하고 파멸적인 기습과 맞닥뜨리게 될지도 모릅니다!</Text>
+      <Text>유닛은 문명의 더욱 세세한 단면을 나타냅니다. 밭을 경작하는 노동자, 새로운 도시를 짓는 개척자, 천재성과 창의성으로 한 나라의 운명을 스스로 바꿀 수 있는 위인을 볼 수 있습니다. 물론 유닛으로 한 문명의 군사력도 가늠할 수 있습니다.[NEWLINE][NEWLINE]대부분의 유닛은 도시 안에서 만들어집니다. 유닛을 지혜롭게 사용하십시오. 항상 충분한 전투 유닛을 보유하여 군사작전을 완수하고 도시를 방어하게 하십시오. 그러나 너무 과하게 생산하지 말아야 하며, 유지비 때문에 구걸을 해야 하는 문명이 될지도 모릅니다. 유닛 업그레이드가 가능한 시점에 업그레이드 시키고, 유지비에 많은 부담이 온다면 유닛 삭제를 과감히 하십시오. 마찬가지로 노동자 역시 작업에 충분한 수를 유지하게 시키되 유지비가 비싸니 턴 당 유지비에 신경 쓰십시오.[NEWLINE][NEWLINE]어쨌든 간에, 게임 초반에는 세계를 탐험시킬 유닛을 내 보내십시오! 주변 세계가 어떻게 돌아가는지 모른다면, 탐욕적인 이웃의 추악하고 파멸적인 기습과 맞닥뜨리게 될지도 모릅니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_UNITS_PAGE_LABEL">
       <Text>유닛 홈페이지</Text>
@@ -1588,7 +1588,7 @@
       <Text>일반적인 도시의 시민 {1_Num}명</Text>
     </Row>
     <Row Tag="TXT_KEY_POP_UNHAPPINESS_TT">
-      <Text>일반적인 도시의 시민은 항상 [COLOR_NEGATIVE_TEXT]1[ENDCOLOR] [ICON_HAPPINESS_4]불행을 만들어 냅니다.</Text>
+      <Text>일반적인 도시의 시민은 항상 [COLOR_NEGATIVE_TEXT]1[COLOR_XX] [ICON_HAPPINESS_4]불행을 만들어 냅니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_POPULATION_SUPPLY">
       <Text>인구</Text>
@@ -1609,7 +1609,7 @@
       <Text>해군 승급</Text>
     </Row>
     <Row Tag="TXT_KEY_PROMOTIONS_SECTION_4">
-      <Text>회복 승급</Text>
+      <Text>회복 습급</Text>
     </Row>
     <Row Tag="TXT_KEY_PROMOTIONS_SECTION_5">
       <Text>정찰 승급</Text>
@@ -1636,25 +1636,25 @@
       <Text>도시 수</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_CULTUREPERTURN">
-      <Text>턴당 [ICON_CULTURE]문화</Text>
+      <Text>턴 당 [ICON_CULTURE]문화</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_EXCESSHAPPINESS">
       <Text>초과 [ICON_HAPPINESS_1]행복</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_FOODPERTURN">
-      <Text>턴당 [ICON_FOOD]식량</Text>
+      <Text>턴 당 [ICON_FOOD]식량</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_GOLDAGETURNS">
       <Text>[ICON_GOLDEN_AGE]황금기 턴</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_GOLDPERTURN">
-      <Text>턴당 [ICON_GOLD]골드</Text>
+      <Text>턴 당 [ICON_GOLD]골드</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_GPTCITYCONNECTIONS">
-      <Text>턴당 [ICON_GOLD]골드 - 도시 연결</Text>
+      <Text>턴 당 [ICON_GOLD]골드 - 도시 연결</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_GPTDEALS">
-      <Text>턴당 [ICON_GOLD]골드 - 거래</Text>
+      <Text>턴 당 [ICON_GOLD]골드 - 거래</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_HAPPINESS">
       <Text>[ICON_HAPPINESS_1]행복</Text>
@@ -1675,10 +1675,10 @@
       <Text>노동자 수</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_PRODUCTIONPERTURN">
-      <Text>턴당 [ICON_PRODUCTION]생산</Text>
+      <Text>턴 당 [ICON_PRODUCTION]생산</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_SCIENCEPERTURN">
-      <Text>턴당 [ICON_RESEARCH]과학</Text>
+      <Text>턴 당 [ICON_RESEARCH]과학</Text>
     </Row>
     <Row Tag="TXT_KEY_REPLAY_DATA_TECHSKNOWN">
       <Text>연구 완료한 기술</Text>
@@ -1762,7 +1762,7 @@
       <Text>전체 지도를 나타나게 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_REVEALS_RESOURCE_ON_MAP">
-      <Text>지도 상에 [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[ENDCOLOR] 자원이 발견됩니다.</Text>
+      <Text>지도 상에 [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[COLOR_XX] 자원이 발견됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_SEARCH">
       <Text>검색</Text>
@@ -1804,7 +1804,7 @@
       <Text>보급량 부족</Text>
     </Row>
     <Row Tag="TXT_KEY_SUPPLY_DEFICIT_PENALTY">
-      <Text>생산 페널티</Text>
+      <Text>생산 패널티</Text>
     </Row>
     <Row Tag="TXT_KEY_SUPPLY_DEFICIT_PENALTY_TT">
       <Text>보급량 부족으로 인한 페널티</Text>
@@ -1846,7 +1846,7 @@
       <Text>특징</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_GOLD">
-      <Text>[ICON_GOLD][COLOR:255:235:0:255]{1_TotalGold: number "##"} {2_GoldPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[ENDCOLOR]</Text>
+      <Text>[ICON_GOLD][COLOR:255:235:0:255]{1_TotalGold: number "##"} {2_GoldPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_GOLDEN_AGES_OFF">
       <Text>황금기 : 꺼짐</Text>
@@ -1906,7 +1906,7 @@
       <Text>당신의 문명이 획득한 보너스로 인해 평상시 불행에서 {1_Num}% 가 됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNHAPPINESS_MOD_SPECIALIST">
-      <Text>당신의 문명이 획득한 보너스로 인해 전문가 시민은 평상시 105:105:105:255의 [ICON_HAPPINESS_4]불행만 만들어 냅니다.</Text>
+      <Text>당신의 문명이 획득한 보너스로 인해 전문가 시민은 평상시 절반의 [ICON_HAPPINESS_4]불행만 만들어 냅니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNHAPPINESS_MOD_TRAIT">
       <Text>문명의 특성으로 인해 평상시 불행에서 {1_Num}% 가 됩니다.</Text>
@@ -1970,7 +1970,7 @@
       <Text>문화 승리가 비활성화되었습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_CAPITALS_REMAINING">
-      <Text>[COLOR_POSITIVE_TEXT]{1_NumPlayers}[ENDCOLOR] 문명은 여전히 [ICON_CAPITAL]수도를 가지고 있습니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_NumPlayers}[COLOR_XX] 문명은 여전히 [ICON_CAPITAL]수도를 가지고 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_CIV_RANK">
       <Text>문명 순위</Text>
@@ -1994,13 +1994,13 @@
       <Text>{1_player} 문명이 국제연합(UN)을 완성했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_PROJECT_PLAYERS_COMPLETE">
-      <Text>[COLOR_POSITIVE_TEXT]{1_NumPlayers}[ENDCOLOR]개의 문명이 {2_apolloProgram}을 완성했습니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_NumPlayers}[COLOR_XX] 문명이 {2_apolloProgram}을 완성했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_SELF_VOTES_TITLE">
       <Text>자신의 투표권</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_SOCIAL_POLICIES">
-      <Text>{1_player} 문명이 사회 정책 제도를 [COLOR_POSITIVE_TEXT]{2_completedNum}[ENDCOLOR] / [COLOR_POSITIVE_TEXT]{3_totalNum}[ENDCOLOR] 완성했습니다.</Text>
+      <Text>{1_player} 문명이 사회 정책 제도를 [COLOR_POSITIVE_TEXT]{2_completedNum}[COLOR_XX] / [COLOR_POSITIVE_TEXT]{3_totalNum}[COLOR_XX] 완성했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_VICTORY_DISABLED">
       <Text>외교 승리가 비활성화되었습니다.</Text>
@@ -2081,7 +2081,7 @@
       <Text>건설된 불가사의</Text>
     </Row>
     <Row Tag="TXT_KEY_YIELD_IMPROVED">
-      <Text>{1_ImprovementName:textkey}의 {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] 증가합니다.</Text>
+      <Text>{1_ImprovementName:textkey}의 {2_YieldType:textkey}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{3_Num}[COLOR_XX] 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_YOUR_SCORE">
       <Text>당신의 점수</Text>

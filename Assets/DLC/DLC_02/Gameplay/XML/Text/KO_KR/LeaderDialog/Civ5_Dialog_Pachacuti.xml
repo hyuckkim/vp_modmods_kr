@@ -1,227 +1,280 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Generated with LocalizationBuddy.-->
-<!--Copyright Firaxis Games 2010-->
-<!--All Rights Reserved-->
+<?xml version="1.0" encoding="utf-8"?>
+<!--Sid Meier's Civilization V -->
+<!--Copyright Firaxis Games 2010 -->
+
 <GameData>
-  <Language_KO_KR>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_1">
-      <Text>알겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_2">
-      <Text>좋습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_3">
-      <Text>물론입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_4">
-      <Text>오, 잘 알겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_1">
-      <Text>당신이 어찌 나올지 예상은 하고 있었지. 우린 이미 이 침략에 대해 준비가 되어있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_2">
-      <Text>감히 내게 전쟁을 선포하다니?!? 사실 내가 먼저 전쟁을 선포하였으므로 이 전쟁은 내가 시작한 것입니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_3">
-      <Text>이런 꿈도 희망도 없는 버러지 같으니. 어찌 감히 위대한 잉카 제국을 협박한단 말인가!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_1">
-      <Text>당신은 뒤처지고 미개한 종족입니다. 당신 나라의 정권이 완벽히 바뀌어야 할 때가 왔군요. 전쟁을 준비하시길!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_2">
-      <Text>내 그대의 미개한 종족에 자비를 베풀어 위대한 잉카 제국의 일원으로 받아들여 주겠습니다. 전쟁을 준비하시오!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_3">
-      <Text>쓸데없이 저항해 봤자 강대한 잉카 제국에 맞설 수는 없습니다. 당장 항복하든가, 그렇지 않으면 전쟁을 준비하시오!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_1">
-      <Text>믿을 수 없다! 이건 가당치 않아! 꿈을 꾸고 있는 게 틀림없을 게야! 조만간 내가 잠에서 깰 것이고 그러면 이 악몽은 끝날 것이다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_2">
-      <Text>내가 졌다고? 이게 어찌 가능하단 말이냐? 내가 배신을 당한 게 틀림없구나!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_3">
-      <Text>이럴 수가. 나의 위대함과 나의 탁월함이 모두 파멸했다. 당신 때문에? 누군가 나에게 설명을 해줘야 한다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_ANGRY">
-      <Text>우리가 원하는 걸 바친다면 아마도 당신의 미개한 문명이 약간의 지혜라도 배울 수 있도록 살아남을 수 있을 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_HAPPY">
-      <Text>친구여, 이런 말을 듣는 것이 놀랍겠지만 잉카인들은 그대의 도움이 절실합니다. 거절하지는 않으시겠지요?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_NEUTRAL">
-      <Text>잉카의 우정과 보호에 보답할 기회를 드리지요. 부디 실망시키지 않길 바랍니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_1">
-      <Text>물론 안 될 말입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_2">
-      <Text>안 될 말입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_3">
-      <Text>거절하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_4">
-      <Text>당연히 아니 됩니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_5">
-      <Text>다시 한번 말해 보시오!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_6">
-      <Text>받아들일 수 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_7">
-      <Text>감히 어느 안전이라고!</Text>
-    </Row>
+	<Language_KO_KR>
+
+    <!--General phrases -->
+    <!--Greeting (first time meeting) -->
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_FIRSTGREETING_1">
-      <Text>반갑습니다. 난 세상에서 가장 고귀하고 강하며 아름다운 잉카의 통치자 파차쿠티라고 합니다. 약소한 문명을 만나는 것은 언제나 즐거운 일이로군요.</Text>
+      <Text>반갑군. 나는 잉카의 통치자 파차쿠티라고 한다. 고귀하고 강력하며, 세상에서 가장 아름다운 사람이지. 나는 항상 열등한 문명과의 만남을 즐기는 편이지!</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_FIRSTGREETING_2">
-      <Text>반갑습니다, 이방인이여! 나는 잉카의 파차쿠티라고 합니다. 우릴 만나게 되다니 당신에겐 이 얼마나 영광스러운 일입니까.</Text>
+      <Text>이방인이여, 반갑군! 내가 바로 잉카의 파차쿠티라고 한다. 우리를 만난 걸 영광으로 생각하게나.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_FIRSTGREETING_3">
-      <Text>어서 오십시오. 이방인! 난 위대한 잉카의 통치자 파차쿠티라고 합니다. 우리가 그대의 그 하찮은 문명을 도와줄 방법이 있다면 주저하지 말고 얘기하십시오.</Text>
+      <Text>이방인이여, 반갑군. 나는 비할 데 없는 잉카의 통치자 파차쿠티라고 한다. 우린 당신처럼 열등한 문명을 도와줄 방법이 있을테니 주저하지 말고 말해 보게.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_1">
-      <Text>가시오.</Text>
+    <!--Reacts to his bluff being called -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_1">
+      <Text>아주 좋군. 우린 당신에게 동정심을 표하지. 앞으로도 계속 말이지.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_2">
-      <Text>잘 가시오.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_2">
+      <Text>아주 좋군. 다음에는 나의 친절을 기대하지 마라!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_3">
-      <Text>다시 만날 날을 위해.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_3">
+      <Text>정말인가? 나는 당신이 미래를 내다볼 수 없는 것을 후회할 거라 믿소.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_4">
-      <Text>잘 가시오.</Text>
+    <!--Gloats after winning a war -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WINWAR_1">
+      <Text>당신은 정말로 이 강력한 잉카 제국을 무너뜨릴 수 있다고 생각했나? 참 불쌍하고 망상에 빠진 바보로군. 난 당신이 참 안타깝게 생각해.</Text>
+    </Row> 
+    <!--Submissive after losing a war -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_LOSEWAR_1">
+      <Text>당신은 내가 놀랄 만큼 잘했군. 분명히 나를 열심히 조사했었나 보군.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_5">
-      <Text>이제 됐습니다.</Text>
+    <!--Defeated and removed from game -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_1">
+      <Text>믿을 수가 없군! 도저히 일어날 수 없는 상황이군! 이건 꿈이어야만 해! 머지않아 나는 꿈에서 깰 것이고 이 악몽은 끝나 있을 것이야.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_6">
-      <Text>이곳에서의 볼일은 이제 없습니다.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_2">
+      <Text>내가 패배한 건가? 이 상황이 어떻게 일어난 거지? 분명히 난 배반을 당한 거야!</Text>
     </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEFEATED_3">
+      <Text>있을 수 없는 일이야. 나의 위대함, 나의 광채, 모든 것이 폐허가 된 건 당신이 한 짓인가? 누구라도 내게 설명해보란 말이야!</Text>
+    </Row>
+    
+    <!--Neutral -->
+    <!--Greetings (subsequent meetings) -->
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_1">
-      <Text>환영합니다.</Text>
+      <Text>환영하네.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_2">
-      <Text>반갑습니다.</Text>
+      <Text>안녕한가.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_3">
-      <Text>어서 오십시오.</Text>
+    <!--Goodbye -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_1">
+      <Text>이별이군.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_4">
-      <Text>좋은 날입니다.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_2">
+      <Text>잘 가게.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_5">
-      <Text>오, 당신이군요.</Text>
+    <!--Trade offer from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_NEUTRAL">
+      <Text>알겠소. 우린 항상 힘이 약한 문명과의 거래를 즐기는 편이지.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_6">
-      <Text>원하는 게 무엇입니까?</Text>
+    <!--Trade offer from player - sweeten the deal -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_1">
+      <Text>지금 우리에게 속임수를 쓰려고 하는 건 아닌가? 그렇다면 그건 매우 큰 실수라고 할 수 있지. 당신의 제안을 다시 향상해보도록 하게.</Text>
     </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_2">
+      <Text>좀 더 나은 조건을 제안할 수 있을 텐데?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_3">
+      <Text>그다지 충분하지 못하군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_4">
+      <Text>조금 더...</Text>
+    </Row>
+    <!--Trade offer from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_NEUTRAL">
+      <Text>당신 문명이 정말 우리에게 무언가를 줄 수 있다고 생각하나?</Text>
+    </Row>
+    <!--Demand for tribute from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_NEUTRAL">
+      <Text>우리는 항상 힘이 약한 문명을 도와주는 걸 즐기는 편이지!</Text>
+    </Row> 
+    <!--Demand for tribute from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_NEUTRAL">
+      <Text>당신의 끝없는 욕망은 당신의 오만함으로 도가 지나치는군. 우린 이런 터무니 없는 요구를 거절한다.</Text>
+    </Row>
+    <!--Requests a trade -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_NEUTRAL">
+      <Text>우리 잉카인은 이 탁월하고 공정한 거래를 당신에게 제공하지.</Text>
+    </Row>
+    <!--Demands tribute -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_NEUTRAL">
+      <Text>우리 잉카의 우정과 보호해주는 것에 대해 보답할 시간이군. 우리를 실망하게 하지 말았으면 좋겠소.</Text>
+    </Row>  
+    <!--Agrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_1">
+      <Text>알겠소.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_2">
+      <Text>아주 좋군.</Text>
+    </Row>
+    <!--Disagrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_1">
+      <Text>무조건 안 되오.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_2">
+      <Text>안 되오.</Text>
+    </Row>
+    <!--Let's hear it -->
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_LETSHEARIT_1">
-      <Text>잘 들리니 얘기하십시오.</Text>
+      <Text>듣고 있소.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_LETSHEARIT_2">
-      <Text>흠?</Text>
+      <Text>음?</Text>
     </Row>
+    
+    <!--Happy -->
+    <!--Greetings (subsequent meetings) -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_3">
+      <Text>반갑군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_4">
+      <Text>좋은 날이군.</Text>
+    </Row>
+    <!--Goodbye -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_3">
+      <Text>우리가 다시 만날 때까지 잘 있게나.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_4">
+      <Text>잘 가게.</Text>
+    </Row>
+    <!--Trade offer from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_HAPPY">
+      <Text>정말 훌륭한 생각이군! 당신은 지도자로서 위대한 가망성이 보이는군.</Text>
+    </Row>
+    <!--Trade offer from player - sweeten the deal -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_1">
+      <Text>나의 친구여, 나는 고등 수학이 어려울 수 있다는 건 잘 알고 있지만, 이 거래는 공정하지 못한 것 같군. 더 나은 제안을 할 필요가 있소.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_2">
+      <Text>이것이 당신이 할 수 있는 최선인가?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_3">
+      <Text>조금만 더 있으면 되네...</Text>
+    </Row>
+    <!--Trade offer from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_HAPPY">
+      <Text>나의 친구여, 나는 당신의 제안을 받아들일 수 없기에 우려가 되는군.</Text>
+    </Row>
+    <!--Demand for tribute from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_HAPPY">
+      <Text>나의 친구여, 알겠네! 당신이 우리 원조 없이 살아남지 못할 게 분명할 테니 말이지.</Text>
+    </Row>
+    <!--Demand for tribute from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_HAPPY">
+      <Text>아아! 우린 당신의 요청에 동의할 수 없어 유감스럽군. 이번에는 우리 도움 없이 스스로 노력해보게.</Text>
+    </Row>
+    <!--Demands tribute -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_HAPPY">
+      <Text>나의 친구여, 믿을 수 없겠지만, 잉카인은 당신의 도움이 필요하네. 거절하지 않을 거라 믿어도 되겠는가?</Text>
+    </Row>
+    <!--Requests a trade -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_HAPPY">
+      <Text>나의 친구여, 나는 이번 거래가 우리 모두에게 유익할 거로 생각하네.</Text>
+    </Row> 
+    <!--Agrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_3">
+      <Text>알겠네.</Text>
+    </Row> 
+    <!--Disagrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_3">
+      <Text>거절이요.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_4">
+      <Text>물론 안 되지.</Text>
+    </Row> 
+    <!--Let's hear it -->
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_LETSHEARIT_3">
-      <Text>얘기해 보시오.</Text>
+      <Text>진행하게.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_LETSHEARIT_4">
-      <Text>무슨 얘기를 하고 있었습니까?</Text>
+      <Text>말하고 있었는가?</Text>
     </Row>
+    
+    <!--Angry -->
+    <!--Greetings (subsequent meetings) -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_5">
+      <Text>오, 당신이군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GREETING_6">
+      <Text>뭘 원하는가?</Text>
+    </Row>
+    <!--Goodbye -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_5">
+      <Text>이제 끝났군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_GOODBYE_6">
+      <Text>우리 용무는 여기서 끝이군.</Text>
+    </Row>
+    <!--Trade offer from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_ANGRY">
+      <Text>합리적으로 보이는군. 난 당신이 그것을 생각해낸 거에 대해 놀랍군.</Text>
+    </Row> 
+    <!--Trade offer from player - sweeten the deal -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_1">
+      <Text>당신은 "공정한 거래"라는 개념을 정말 이해하고 있는 건가? 제안이 너무 가볍군. 더 나은 제안을 하게.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_2">
+      <Text>충분하지 못하군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_3">
+      <Text>더 나은 조건을 내야만 할 것 같군.</Text>
+    </Row>
+   
+    <!--Trade offer from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_ANGRY">
+      <Text>꼭 당신처럼 제안도 무례하군.</Text>
+    </Row>  
+    <!--Demand for tribute from player - yes -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_ANGRY">
+      <Text>아주 좋군. 난 당신이 이것에 질식했으면 하는군!</Text>
+    </Row>
+    <!--Demand for tribute from player - no -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_ANGRY">
+      <Text>미쳤는가?</Text>
+    </Row>
+    <!--Demands tribute -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DEMANDTRIBUTE_ANGRY">
+      <Text>우리가 원하는 걸 내놓게. 어쩌면 자그마한 지혜를 배워 당신처럼 미개한 문명도 살아남을 수 있을 거라 생각해.</Text>
+    </Row>
+    <!--Requests a trade -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_ANGRY">
+      <Text>우리 잉카인이 퇴보하는 당신 국민에게 이 거래를 자비롭게 제안한다.</Text>
+    </Row>
+    <!--Agrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_AGREE_SHORT_4">
+      <Text>오, 아주 좋군.</Text>
+    </Row>
+    <!--Disagrees -->
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_5">
+      <Text>다시 말해주겠나?</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_6">
+      <Text>받아들일 수 없군.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DISAGREE_SHORT_7">
+      <Text>진지하지 못하군!</Text>
+    </Row>
+    <!--Let's hear it -->
     <Row Tag="TXT_KEY_LEADER_PACHACUTI_LETSHEARIT_5">
       <Text>그리고?</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_LOSEWAR_1">
-      <Text>예상외로 잘 싸웠습니다. 가까이서 날 연구한 게 틀림없군요.</Text>
+    
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_1">
+      <Text>당신 국민은 여전히 퇴보하고 미개하군. 확실히 정권 교체가 이루어지도록 해주지. 전쟁을 준비하게!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_1">
-      <Text>공정거래라는 개념을 이해는 한 것입니까? 그대의 제안은 가당치도 않습니다.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_2">
+      <Text>나는 당신들의 미개한 국민을 잉카 제국으로 받아줄 수 있소. 전쟁을 준비하게!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_2">
-      <Text>충분하지 않다고 말하지 않았습니까.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_DECLAREWAR_3">
+      <Text>반항은 헛된 것이지! 강력한 잉카 제국에 맞설 수 있다는 희망은 없네. 지금 당장 항복하지 않을 거라면, 전쟁에 대비하도록!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_ANGRY_3">
-      <Text>똑바로 하시오.</Text>
+
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_1">
+      <Text>난 어차피 당신한테 기대도 안 했지. 어차피 준비도 안 된 우리를 찾지도 못할 것이야.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_1">
-      <Text>이 보게 친구. 고등 수학이 어려울 수 있다는 것은 내 잘 알고 있네만, 이 거래는 공평하지 않습니다. 더 나은 제안을 해주시길.</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_2">
+      <Text>내게 선전포고를 한 건가? 내가 처음 전쟁을 선포해야 하므로 당신은 할 수 없네!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_2">
-      <Text>이것이 그대의 최선입니까?</Text>
+    <Row Tag="TXT_KEY_LEADER_PACHACUTI_ATTACKED_3">
+      <Text>가망 없는 한심스러운 인간이로군. 감히 무적의 잉카 제국에 위협을 가하다니!</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_HAPPY_3">
-      <Text>거의 근접했네만…</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_1">
-      <Text>우릴 속이려 드는 건 아니겠지요? 만약 그렇다면 정말 큰 실수를 저지르게 되는 것입니다. 더 괜찮은 제안을 하시길 바랍니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_2">
-      <Text>조금 더 쓰지 않겠습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_3">
-      <Text>충분치 않다고 하지 않았습니까.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NEEDMORE_NEUTRAL_4">
-      <Text>거의…</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_ANGRY">
-      <Text>생긴 대로 당신의 제안도 역겹군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_HAPPY">
-      <Text>안됐지만 그건 받아들일 수 없습니다. 친구.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_NO_NEUTRAL">
-      <Text>정녕 그대의 문명이 우리에게 필요한 걸 가지고 있다고 생각하는 것입니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_ANGRY">
-      <Text>타당하게 보이는군요. 당신이 그런 생각을 했다니 참으로 놀랐습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_HAPPY">
-      <Text>정말 좋은 생각입니다! 위대한 지도자로서의 자질이 보이는군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADE_YES_NEUTRAL">
-      <Text>물론입니다. 하등 문명과의 거래는 늘 유쾌한 법이지요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_ANGRY">
-      <Text>위대한 잉카인들이 덜떨어진 당신에게 자비를 베풀고자 이 거래를 제안합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_HAPPY">
-      <Text>이 보시게, 친구. 이 거래가 양 국민 모두에게 유익할 것으로 생각하네만.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRADEREQUEST_NEUTRAL">
-      <Text>잉카인들의 이름으로 그대에게 공정한 거래를 제안하는 바입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_ANGRY">
-      <Text>제정신인 겁니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_HAPPY">
-      <Text>아아! 안됐지만 그대의 요구에 응할 수 없겠습니다. 이번엔 우리의 도움 없이 자력으로 극복하시길.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_NO_NEUTRAL">
-      <Text>당신의 오만함만이 탐욕을 넘어섰습니다. 말도 안 되는 당신 요구를 철저하게 거절하겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_ANGRY">
-      <Text>좋습니다. 먹고 떨어지십시오.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_HAPPY">
-      <Text>물론입니다. 나의 친구여! 우리의 도움이 없다면 살아남지 못할 것이 확실하군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_TRIBUTE_YES_NEUTRAL">
-      <Text>우린 항상 즐거운 마음으로 하등문명을 돕습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_1">
-      <Text>좋습니다. 일단 목숨은 살려주지요. </Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_2">
-      <Text>좋습니다. 다음번에는 이렇게 예의 바르게 상대해주지 않겠습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WARBLUFF_3">
-      <Text>정녕? 난 당신이 자신의 우매함을 후회할 날 조차도 오지 않도록 만들어 주겠습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_PACHACUTI_WINWAR_1">
-      <Text>정녕 그대가 강대한 우리 잉카 제국을 이길 수 있을 것이라고 생각했단 말입니까? 하하하! 환상에 빠진 불쌍한 바보 같으니라고. 유감스러운 마음이 생길 지경이군요.</Text>
-    </Row>
+
   </Language_KO_KR>
 </GameData>

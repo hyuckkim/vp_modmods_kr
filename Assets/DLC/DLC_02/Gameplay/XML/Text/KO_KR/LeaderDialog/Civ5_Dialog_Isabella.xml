@@ -1,10 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Generated with LocalizationBuddy.-->
-<!--Copyright Firaxis Games 2010-->
-<!--All Rights Reserved-->
+<?xml version="1.0" encoding="utf-8"?>
 <GameData>
-  <Language_KO_KR>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_AGREE_SHORT_1">
+	<Language_KO_KR>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_AGREE_SHORT_1">
 			<Text>아주 좋습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ISABELLA_AGREE_SHORT_2">
@@ -107,125 +104,144 @@
     <Row Tag="TXT_KEY_LEADER_ISABELLA_GOODBYE_6">
       <Text>이별입니다.</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_1">
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_1">
 			<Text>신의 가호를 빕니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_2">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_2">
 			<Text>당신에게 은총이 있기를.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_3">
-      <Text>반갑습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_4">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_3">
+			<Text>반갑습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_4">
 			<Text>오, 당신이군요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_5">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_5">
 			<Text>좋습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_6">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_GREETING_6">
 			<Text>뭘 원합니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_1">
-      <Text>계속하세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_2">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_1">
+			<Text>계속하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_2">
 			<Text>계속해보세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_3">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_3">
 			<Text>진행하세요.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_4">
-      <Text>듣고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_5">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_4">
+			<Text>듣고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LETSHEARIT_5">
 			<Text>네?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_LOSEWAR_1">
+		</Row>
+		
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_LOSEWAR_1">
 			<Text>신은 패배한 적에 대한 당신의 자비로움에 대해 반드시 은총을 내려줄 것입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_ANGRY_1">
+		</Row>
+		
+		
+	
+		
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_ANGRY_1">
 			<Text>탐욕은 죄악이며, 영원한 파멸을 유발합니다. 나는 당신이 제안을 다시 개선할 것을 기도합니다.</Text>
-    </Row>
+		</Row>
     <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_ANGRY_2">
       <Text>당신은 더 나은 제안을 해야 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_ANGRY_3">
       <Text>충분하지 않습니다.</Text>
     </Row>
+
     <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_HAPPY_1">
 			<Text>탐욕은 죄악입니다. 좀 더 나은 제안은 없습니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_HAPPY_2">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_HAPPY_2">
 			<Text>이것이 당신이 할 수 있는 최선입니까?</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_HAPPY_3">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_HAPPY_3">
 			<Text>조금만 거의...</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_NEUTRAL_1">
+		</Row>
+		
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_NEUTRAL_1">
 			<Text>관용은 영혼에 좋습니다. 좀 더 나은 제안은 없습니까?</Text>
-    </Row>
+		</Row>
     <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_NEUTRAL_2">
       <Text>생각했던 것보다 충분하지 못합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NEEDMORE_NEUTRAL_3">
       <Text>조금 더...</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_ANGRY">
+		
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_ANGRY">
 			<Text>나는 당신 같은 교활한 사람의 입놀림은 듣지 않을 것입니다. 당신의 제안은 거절되었습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_HAPPY">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_HAPPY">
 			<Text>당신의 영혼 깊숙한 곳에서 찾아보면, 당신의 제안이 불공평하다는 것을 알 것입니다. 나는 이 제안을 거절해야만 합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_NEUTRAL">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_NO_NEUTRAL">
 			<Text>나는 국민의 재산을 관리하는 신의 대리자로 임명되어 있습니다. 당신의 제안은 불공평하며, 동의할 수 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_ANGRY">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_ANGRY">
 			<Text>동의합니다. 당신은 가도 좋습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_HAPPY">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_HAPPY">
 			<Text>당신은 참으로 공정하고 정당한 교섭자입니다. 동의합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_NEUTRAL">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADE_YES_NEUTRAL">
 			<Text>당신의 조건은 정당합니다. 동의합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_ANGRY">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_ANGRY">
 			<Text>스페인의 통치자로서, 때론 내가 불쾌하다는 것을 아는 사람과 논의해야 하는 것은 나의 의무입니다. 바로 지금이 그런 때입니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_HAPPY">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_HAPPY">
 			<Text>나의 소중한 친구여, 나는 이 거래가 우리 둘 모두에게 도움이 되리라고 생각하며, 우리의 적에 혼란을 가져오게 될 겁니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_NEUTRAL">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRADEREQUEST_NEUTRAL">
 			<Text>나는 이 거래가 당신의 은총을 받길 희망합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_ANGRY">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_ANGRY">
 			<Text>감히 당신이 말입니까? 나는 당신의 뻔뻔스러움에 번개가 치지 않은 것에 대해 깜짝 놀랐습니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_HAPPY">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_HAPPY">
 			<Text>나는 당신이 지금 원하는 것을 줄 수 없습니다. 하지만, 나는 당신이 구제되기를 기도하겠다고 약속합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_NEUTRAL">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_NO_NEUTRAL">
 			<Text>당신은 내가 관용할 만큼 가치가 없습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_ANGRY">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_ANGRY">
 			<Text>나는 당신의 죄악스러운 마음이 우리의 이타적인 너그러움에 의해 부끄럽게 생각되기를 기도합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_HAPPY">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_HAPPY">
 			<Text>물론입니다. 고결한 사람은 이교도에 맞서 함께 단결해야 합니다!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_NEUTRAL">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_TRIBUTE_YES_NEUTRAL">
 			<Text>알겠습니다. 신은 우리에게 빈곤자에 대해 관대하게 대하라고 지시했습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_1">
+		</Row>
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_1">
 			<Text>신은 당신에게 매우 실망합니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_2">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_2">
 			<Text>당신은 위험한 놀이를 하고 있습니다.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_3">
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_WARBLUFF_3">
 			<Text>아주 좋습니다. 다음부터는 나의 친절을 바라지 마세요!</Text>
-    </Row>
-    <Row Tag="TXT_KEY_LEADER_ISABELLA_WINWAR_1">
+		</Row>
+		
+		
+    
+		<Row Tag="TXT_KEY_LEADER_ISABELLA_WINWAR_1">
 			<Text>당신은 내가 당신을 파멸시키는 것에 대해 자비를 베풀 것을 신이 얘기해주는 행운아입니다.</Text>
-    </Row>
-  </Language_KO_KR>
+		</Row>
+		
+	</Language_KO_KR>
 </GameData>

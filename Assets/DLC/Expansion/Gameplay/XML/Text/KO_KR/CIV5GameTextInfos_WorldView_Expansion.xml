@@ -25,17 +25,8 @@
     <Row Tag="TXT_KEY_CITYVIEW_RETURN_TO_ESPIONAGE">
       <Text>첩보 화면으로 돌아가기</Text>
     </Row>
-    <Row Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING1">
-      <Text>[COLOR_YELLOW]전투기 혹은[ENDCOLOR]</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING2">
-      <Text>[COLOR_YELLOW]지대공 유닛에 의한 요격 피해가 늘어납니다[ENDCOLOR]</Text>
-    </Row>
     <Row Tag="TXT_KEY_EUPANEL_CAPITAL_DEFENSE_BONUS">
       <Text>수도 방위 보너스</Text>
-    </Row>
-    <Row Tag="TXT_KEY_EUPANEL_CAPTURE_CHANCE">
-      <Text>[COLOR_CYAN]전투에서 이길 경우 나포할 확률: {1_Percent}%[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS">
       <Text>정의로운 전쟁</Text>
@@ -49,9 +40,6 @@
     <Row Tag="TXT_KEY_EUPANEL_GG_STACKED">
       <Text>위대한 장군과 겹침</Text>
     </Row>
-    <Row Tag="TXT_KEY_EUPANEL_IGG">
-      <Text>위대한 장군 무시</Text>
-    </Row>
     <Row Tag="TXT_KEY_EUPANEL_REVERSE_GG_NEAR">
       <Text>무시무시한 상대 옆 </Text>
     </Row>
@@ -61,29 +49,26 @@
     <Row Tag="TXT_KEY_EUPANEL_TRAIT_SMALL_SIZE_BONUS">
       <Text>더 큰 문명에 대한 보너스</Text>
     </Row>
-    <Row Tag="TXT_KEY_EUPANEL_VISIBLE_AA_UNITS">
-      <Text>[COLOR_WARNING_TEXT]{1_Number}기의 적 지대공 유닛 포착[ENDCOLOR]</Text>
-    </Row>
     <Row Tag="TXT_KEY_SV_OVERLAY_RELIGION">
       <Text>종교 지도</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_CULTURE_FROM_GOLDEN_AGE">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  황금기에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  황금기로부터 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_CULTURE_FROM_RELIGION">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  종교에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  종교로부터 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_FAITH_ACCUMULATED">
       <Text>문명 전체에서 [ICON_PEACE]신앙을 {1_Num}만큼 모았습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_FAITH_FROM_CITIES">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_FAITH_FROM_MINORS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시 국가에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시 국가에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_FAITH_FROM_RELIGION">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  창시자 교리에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  창시자 교리에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_FAITH_NEXT_GREAT_PERSON">
       <Text>[ICON_PEACE]신앙으로 다음 위인을 구입할 수 있습니다.</Text>
@@ -101,25 +86,22 @@
       <Text>창시할 수 있는 종교 개수: {1_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLD_FROM_RELIGION">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  종교에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  종교에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLDEN_AGE_EFFECT">
       <Text>[ICON_GOLDEN_AGE]황금기에는 제국의 적어도 1[ICON_GOLD]골드라도 생산하는 모든 타일에서 추가적으로 [ICON_GOLD]골드를 1만큼 더 생산합니다. 도시의 [ICON_PRODUCTION]생산은 20%만큼 증가하며 제국 전체에서 [ICON_CULTURE]문화가 20% 증가합니다.</Text>
     </Row>
-    <Row Tag="TXT_KEY_TP_GOLDEN_AGE_EFFECT_NO_CULTURE">
-      <Text>[ICON_GOLDEN_AGE] 황금기가 도래하면 해당 문명이 소유한 모든 타일에서 [ICON_GOLD] 금 1을 추가로 생산할 수 있으며 해당 문명의 모든 도시에서 [ICON_PRODUCTION]생산 속도가 20%만큼 증가합니다.</Text>
-    </Row>
     <Row Tag="TXT_KEY_TP_HAPPINESS_BUILDINGS">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  전역 건물 행복에서 획득 </Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  전역 건물 행복에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_TP_HAPPINESS_CITIES">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  지역 도시 행복에서 획득 </Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  지역 도시 행복에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_TP_HAPPINESS_CITY_STATE_FRIENDSHIP">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시 국가에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시 국가에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_HAPPINESS_POLICIES">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  전역 사회 정책에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  전역 사회 정책에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_PANTHEON_DESCRIPTION">
       <Text> 다음 교리를 가진 종교관 숭배:</Text>

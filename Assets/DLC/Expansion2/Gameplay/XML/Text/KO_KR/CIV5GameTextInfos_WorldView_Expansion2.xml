@@ -17,13 +17,14 @@
       <Text>[ICON_CAPITAL]수도와 [ICON_CONNECTED]연결된 도시입니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING1">
-      <Text>[COLOR_YELLOW]전투기에 의한 요격 혹은[ENDCOLOR]</Text>
+      <Text>[COLOR_YELLOW]전투기에 의한 요격 혹은[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING2">
-      <Text>[COLOR_YELLOW]지대공 유닛에 의한 요격은 피해를 늘립니다[ENDCOLOR]</Text>
+      <Text>[COLOR_YELLOW]지대공 유닛에 의한 요격은 피해를 늘립니다[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_CITY_SAPPED">
       <Text>공성탑 지원</Text>
+	  <Plurality>2</Plurality>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_EMPIRE_UNHAPPY_PENALTY">
       <Text>문명 [ICON_HAPPINESS_3]불행</Text>
@@ -32,7 +33,7 @@
       <Text>문명 [ICON_HAPPINESS_4]매우 불행</Text>
     </Row>
     <Row Tag="TXT_KEY_EUPANEL_VISIBLE_AA_UNITS">
-      <Text>[COLOR_WARNING_TEXT]인식한 적 지대공 유닛 : {1_Number}[ENDCOLOR]</Text>
+      <Text>[COLOR_WARNING_TEXT]인식한 적 지대공 유닛 : {1_Number}[COLOR_XX]</Text>
     </Row>
     <Row Tag="TXT_KEY_GREAT_WORK_SLOT_ART_ARTIFACT_EMPTY_TOOLTIP">
       <Text>빈 걸작 예술품 또는 유물 슬롯</Text>
@@ -50,7 +51,7 @@
       <Text>도시 연결</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_ANARCHY">
-      <Text>[COLOR_NEGATIVE_TEXT]이념 변경 때문에 앞으로 {1_Turns}턴간 제국이 무정부주의 상태입니다. 무정부주의 상태에서는 [ICON_RESEARCH]과학, [ICON_GOLD]골드, [ICON_CULTURE]문화, [ICON_PEACE 신앙을 얻을 수 없으며, 도시에서 아무것도 [ICON_PRODUCTION]생산하지 못합니다[ENDCOLOR].</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]이념 변경 때문에 앞으로 {1_Turns}턴간 제국이 무정부주의 상태입니다. 무정부주의 상태에서는 [ICON_RESEARCH]과학, [ICON_GOLD]골드, [ICON_CULTURE]문화, [ICON_PEACE 신앙을 얻을 수 없으며, 도시에서 아무것도 [ICON_PRODUCTION]생산하지 못합니다[COLOR_XX].</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_CARNIVAL_EFFECT">
       <Text>고유 카니발 보너스 덕분에 모든 문명에게 관광으로 얻을 수 있는 이득이 100% 증가하며, 위대한 작가, 예술가, 음악가 출현율이 50% 증가합니다.</Text>
@@ -59,7 +60,7 @@
       <Text>문명의 도시가 1개 많아질수록 사회 정책 비용이 {1_Num}% 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_CULTURE_FROM_BONUS_TURNS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  최근 세계 의회 프로젝트에서 획득 (남은 턴 : {2_TurnsLeft})</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  최근 세계 대회 프로젝트에서 획득 (남은 턴 : {2_TurnsLeft})</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_EMPIRE_SUPER_UNHAPPY">
       <Text>[ICON_HAPPINESS_4]불행이 20에 도달하여 반란이 일어났습니다!몇몇 도시가 당신의 제국을 배신하고 문화 영향력이 제일 강한 문명으로 돌아설 수 있습니다.</Text>
@@ -73,28 +74,28 @@
 </Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLD_FROM_CITY_CONNECTIONS">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시와 [ICON_CAPITAL]수도의 [ICON_CONNECTED]도시 연결에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시와 [ICON_CAPITAL]수도의 [ICON_CONNECTED]도시 연결에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLD_FROM_ITR">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시와 다른 문명 도시의 [ICON_TURNS_REMAINING]교역로에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시와 다른 문명 도시의 [ICON_TURNS_REMAINING]교역로에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLD_FROM_TR">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  도시와 [ICON_CAPITAL]수도의 [ICON_CONNECTED]도시 연결에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  도시와 [ICON_CAPITAL]수도의 [ICON_CONNECTED]도시 연결에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_GOLD_FROM_TRAITS">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  특성에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  특성에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_HAPPINESS_LEAGUES">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Happiness}[ENDCOLOR]  세계 의회에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Happiness}[COLOR_XX]  세계 대회에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_SCIENCE_FROM_ITR">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]  다른 문명의 도시와의 교역로에서 획득</Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]  다른 문명의 도시와의 교역로에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_TECH_CITY_COST">
       <Text>당신이 소유한 도시 또는 [ICON_PUPPET]괴뢰 도시 하나마다 연구 비용이 {1_Num}% 상승합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_TP_UNHAPPINESS_PUBLIC_OPINION">
-      <Text>[COLOR_NEGATIVE_TEXT]-{1_Num}[ENDCOLOR]  새로운 이념을 원하는 여론에서 획득</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]-{1_Num}[COLOR_XX]  새로운 이념을 원하는 여론에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIQUE_GOLDEN_AGE_ANNOUNCE">
       <Text>카니발</Text>

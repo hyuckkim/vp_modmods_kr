@@ -275,7 +275,7 @@
 			<Text>함께 일하게 되는 건 항상 기쁘군요. 친구여, 내 집에는 무슨 일이오?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_1">
-			<Text>악당 {1_ThirdPlayerName:textkey}{1: plural 1?은; 2?는;} 정말 골칫거리지. 그렇지 생각하지 않나?</Text>
+			<Text>악당 {1_ThirdPlayerName:textkey}{@1: plural 1?은; 2?는;} 정말 골칫거리지. 그렇지 생각하지 않나?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_2">
 			<Text>안녕하신가. 난 {1_ThirdPlayerName:textkey}에게 종말을 선사해주기까지 얼마 걸리지도 않을 거로 생각하네.</Text>
@@ -284,13 +284,13 @@
 			<Text>{1_ThirdPlayerName:textkey}{1: plural 1?을; 2?를;} 다루는데 새로운 계획이라도 있는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_1">
-			<Text>곧 {1_ThirdPlayerName:textkey}{1: plural 1?과; 2?와;} 끝장을 볼 날이 올 것이네. 그런 느낌이 오는구려.</Text>
+			<Text>곧 {1_ThirdPlayerName:textkey}{@1: plural 1?과; 2?와;} 끝장을 볼 날이 올 것이네. 그런 느낌이 오는구려.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_2">
 			<Text>자네가 나만큼이나 {1_ThirdPlayerName:textkey}의 멸망을 바랄 거라 믿고 있지.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_3">
-			<Text>곧 {1_ThirdPlayerName:textkey}{1: plural 1?과; 2?와;} 끝장을 볼 날이 틀림없이 올 것이오.</Text>
+			<Text>곧 {1_ThirdPlayerName:textkey}{@1: plural 1?과; 2?와;} 끝장을 볼 날이 틀림없이 올 것이오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_1">
 			<Text>보잘 것 없는 전쟁은 잘 되어가고 있소? 나는 잘되지 않길 바라오만... 무엇을 원하시오?</Text>
@@ -368,16 +368,16 @@
 			<Text>친구여, 지금 나는 아주 심각한 상황에 처해있소. 이제 {1_CivName}{@1: plural 1?과; 2?와;} 전쟁을 선포할 때가 온 것 같소. 그대의 도움이 필요하다네. 함께 싸우지 않겠는가? 어떻게 생각하는가? (전쟁을 즉시 선포합니다)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DOF_NOT_HONORED_1">
-			<Text>애처롭구먼. 이제야 본색을 드러내는군. 세상은 당신의 불명예를 기억할 것이오.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>애처롭구먼. 이제야 본색을 드러내는군. 세상은 당신의 불명예를 기억할 것이오.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DOF_NOT_HONORED_2">
-			<Text>이것이 당신이 동맹한 목적이오? 전 세계의 다른 지도자가 당신의 배신에 대해 알게 될 것이오.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>이것이 당신이 동맹한 목적이오? 전 세계의 다른 지도자가 당신의 배신에 대해 알게 될 것이오.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCING_FRIEND_1">
-			<Text>당신에 대해선 이제 충분히 알겠소. 전 세계의 다른 지도자에게 당신과 동맹하는 것은 실수라는 걸 일러줬소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>당신에 대해선 이제 충분히 알겠소. 전 세계의 다른 지도자에게 당신과 동맹하는 것은 실수라는 걸 일러줬소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCING_FRIEND_2">
-			<Text>좋아, 이제 안 되겠군. 모두에게 당신의 악행을 알릴 시간이 너무 지나버린 것 같군.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>좋아, 이제 안 되겠군. 모두에게 당신의 악행을 알릴 시간이 너무 지나버린 것 같군.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_1">
 			<Text>고작 하고자 하는 게 이 방법이오? 아주 좋군. 이번 일은 잊지 않겠소.</Text>
@@ -591,25 +591,25 @@
 			<Text>험난한 세상을 헤쳐나가는데 상호협력은 필수요. 그대는 어떻게 생각하는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_1">
-			<Text>풍진 세상에 값진 친구를 찾는다는 건 어려운 일이지. 난 우리의 유대 관계를 널리 알리는 친선 관계를 공동선언하고 싶네. 어떻게 생각하는가?</Text>
+			<Text>풍진 세상에 값진 친구를 찾는다는 건 어려운 일이지. 난 우리의 유대 관계를 널리 알리는 친선관계를 공동선언하고 싶네. 어떻게 생각하는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_2">
 			<Text>위대한 지도자여, 우리의 우정을 세상에 널리 알리지 않겠는가? 나는 그대와 오래도록 변치 않는 유대 관계를 맺고 싶네.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_3">
-			<Text>세상을 향해 친선 관계를 표명하면 우리는 희망찬 미래의 씨앗을 심을 수 있지. 어떻게 생각하는가?</Text>
+			<Text>세상을 향해 친선관계를 표명하면 우리는 희망찬 미래의 씨앗을 심을 수 있지. 어떻게 생각하는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_4">
-			<Text>세상은 잔혹한 법이지. 다른 이와의 협력을 통해 우린 극복해 나갈 수 있을 것이네. 우리 함께 세상을 향해 친선 관계를 공동선언 하는 게 어떻겠는가?</Text>
+			<Text>세상은 잔혹한 법이지. 다른 이와의 협력을 통해 우린 극복해 나갈 수 있을 것이네. 우리 함께 세상을 향해 친선관계를 공동선언 하는 게 어떻겠는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_1">
-			<Text>이제 세상에 당신의 악행을 말할 때가 온 것 같소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>이제 세상에 당신의 악행을 말할 때가 온 것 같소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_2">
-			<Text>다른 지도자에게 당신에 대해 이야기했소. 그들도 당신을 신뢰해서는 안 된다는 걸 알아야 했소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>다른 지도자에게 당신에 대해 이야기했소. 그들도 당신을 신뢰해서는 안 된다는 걸 알아야 했소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_3">
-			<Text>당신도 아는지 모르겠지만, 다른 지도자도 당신에 대한 잔혹한 진실을 알기 시작했소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[ENDCOLOR])</Text>
+			<Text>당신도 아는지 모르겠지만, 다른 지도자도 당신에 대한 잔혹한 진실을 알기 시작했소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다! 참고: 전쟁선포가 아닙니다.[COLOR_XX])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_END_WORK_WITH_US_WARMONGER_1">
 			<Text>이렇게 끝내고 싶진 않았지만, 그대와 같은 전쟁광과 함께 일할 수는 없소. 상호협력 협정은 끝이오.</Text>
@@ -633,7 +633,7 @@
 			<Text>미안하지만 상호협력 협정을 파기할 때가 온 것 같소.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WORK_AGAINST_SOMEONE_1">
-			<Text>우리와 {1_PlayerName:textkey}{1: plural 1?과; 2?와;}의 관계가 악화일변도로 흐르고 있소. 이 악당을 고립시키기 위해 동료를 찾는 중이지. 서로 비밀유지 협정을 맺는 것이 어떻겠는가?[NEWLINE][NEWLINE](전쟁을 선포하는 것이 아닙니다)</Text>
+			<Text>우리와 {1_PlayerName:textkey}{@1: plural 1?과; 2?와;}의 관계가 악화일변도로 흐르고 있소. 이 악당을 고립시키기 위해 동료를 찾는 중이지. 서로 비밀유지 협정을 맺는 것이 어떻겠는가?[NEWLINE][NEWLINE](전쟁을 선포하는 것이 아닙니다)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WORK_AGAINST_SOMEONE_2">
 			<Text>골칫덩이 {1_PlayerName:textkey}에 대항하기 위해 마음 맞는 동료를 찾고 있소. 서로 비밀유지 협정을 맺는 것이 어떻겠는가?[NEWLINE][NEWLINE](전쟁을 선포하는 것이 아닙니다)</Text>
@@ -642,7 +642,7 @@
 			<Text>{1_PlayerName:textkey}에 대항한 비밀유지 협정을 끝내야 할 때가 온 것 같소. 그동안 그대의 협력에 감사하오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_COOP_WAR_REQUEST_1">
-			<Text>{1_PlayerName:textkey}{1: plural 1?과; 2?와;}의 불화를 이제는 참을 수가 없어 전쟁을 선포하려 하오. 우리의 우방인 그대의 협력을 기대해도 되겠는가?</Text>
+			<Text>{1_PlayerName:textkey}{@1: plural 1?과; 2?와;}의 불화를 이제는 참을 수가 없어 전쟁을 선포하려 하오. 우리의 우방인 그대의 협력을 기대해도 되겠는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_COOP_WAR_REQUEST_2">
 			<Text>{1_PlayerName:textkey}에 대해서 진절머리가 날 지경이라오. 전쟁을 선포하기 위해 동맹을 찾고 있지. 우리와 함께 하겠는가?</Text>
@@ -660,7 +660,7 @@
 			<Text>현 상황부로 적인 그대에게 맞서 나의 모든 이권을 보호하기 위해 온 힘을 다할 것이오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_COMPLIMENT_1">
-			<Text>나는 우리의 우정을 높게 사고 있으며 그대와 계속해서 친선 관계를 이어나가길 바란다는 것을 알아주었으면 하네.</Text>
+			<Text>나는 우리의 우정을 높게 사고 있으며 그대와 계속해서 우호관계를 이어나가길 바란다는 것을 알아주었으면 하네.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_BOOT_KISSING_1">
 			<Text>현명하고 위대한 지도자여. 우리나라와 같은 약소국에 자비를 베풀어 주시게나.</Text>
@@ -681,10 +681,10 @@
 			<Text>요즘 그대의 행위가 내 주의를 끌고 있소. 이는 좋은 일이 아니란 것을 말씀드리오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_1">
-			<Text>요즘 도시국가 {1_MinorCivName:textkey}{1: plural 1?과; 2?와;} 가깝게 지낸다고 들었소. 그들은 나의 영향력 내에 있고, 경고하는데 이제는 친하게 지내지 마시오.</Text>
+			<Text>요즘 도시국가 {1_MinorCivName:textkey}{@1: plural 1?과; 2?와;} 가깝게 지낸다고 들었소. 그들은 나의 영향력 내에 있고, 경고하는데 이제는 친하게 지내지 마시오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_2">
-			<Text>{1_MinorCivName:textkey}{1: plural 1?과; 2?와;}의 친선 관계에 대해서 들었소. 이는 분명히 나쁜 일은 아니지만 그들의 보호자는 나란 것을 명심하길 바라오. 서로의 앞길에 방해되는 행위는 자제하는 편이 좋지 않겠소?</Text>
+			<Text>{1_MinorCivName:textkey}{@1: plural 1?과; 2?와;}의 친선관계에 대해서 들었소. 이는 분명히 나쁜 일은 아니지만 그들의 보호자는 나란 것을 명심하길 바라오. 서로의 앞길에 방해되는 행위는 자제하는 편이 좋지 않겠소?</Text>
 		</Row>
 		<!--Insults-->
 		<Row Tag="TXT_KEY_GENERIC_INSULT_GENERIC_1">
@@ -734,7 +734,7 @@
 			<Text>{2_MajorCivName:textkey}{2: plural 1?은; 2?는;} 지금부터 {1_MinorCivName:textkey}{1: plural 1?을; 2?를;} 보호하겠다고 선언하였습니다. 이 도시국가를 공격하면 심각한 외교 관계의 악화를 가져올 것이며 전쟁이 발발할 수도 있습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DECLARATION_ABANDON_CITY_STATE_1">
-			<Text>{1_MinorCivName:textkey}{1: plural 1?은; 2?는;} 이제 {2_MajorCivName:textkey}의 보호국이 아닙니다.</Text>
+			<Text>{1_MinorCivName:textkey}{@1: plural 1?은; 2?는;} 이제 {2_MajorCivName:textkey}의 보호국이 아닙니다.</Text>
 		</Row>
 		<!--Human is asking the AI for something-->
 		<Row Tag="TXT_KEY_GENERIC_REPEAT_NO_1">
@@ -988,25 +988,25 @@
 			<Text>신은 우리에게 서로 배우고 존중하라고 가르친다오. 거래를 통해, 서로 더 잘 이해할 수 있을 것 같다는 느낌이 드는군.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_1">
-			<Text>서로 간 국경 개방 조약을 맺는 것은 위대한 양국 모두에게 이득이 되리라 생각하네.</Text>
+			<Text>서로 간 국경개방 조약을 맺는 것은 위대한 양국 모두에게 이득이 되리라 생각하네.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_2">
-			<Text>국경 개방 조약을 통해 더욱 확고한 우정을 쌓을 수 있지.</Text>
+			<Text>국경개방 조약을 통해 더욱 확고한 우정을 쌓을 수 있지.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ALEXANDER_OPEN_BORDERS_EXCHANGE_1">
 			<Text>서로에게 국경을 개방하는 건 제국을 방어하는 데 확실히 큰 도움이 될 것이오. 그렇게 생각하지 않소?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WASHINGTON_OPEN_BORDERS_EXCHANGE_1">
-			<Text>미국은 양국 간의 국경 개방 조약이 우리의 우정을 더욱 돈독하게 하는데 도움을 줄 거로 생각합니다.</Text>
+			<Text>미국은 양국 간의 국경개방 조약이 우리의 우정을 더욱 돈독하게 하는데 도움을 줄 거로 생각합니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HARUN_OPEN_BORDERS_EXCHANGE_1">
-			<Text>국경 개방 조약은 양국이 진보한 문명이라는 것을 신에게 확실하게 보여줄 것입니다.</Text>
+			<Text>국경개방 조약은 양국이 진보한 문명이라는 것을 신에게 확실하게 보여줄 것입니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_MONTEZUMA_OPEN_BORDERS_EXCHANGE_1">
-			<Text>국경 개방 조약은 나의 제단에 제물을 가져다 놓는 것을 더욱 손쉽게 할 것이다. 그게 당신에게도 도움이 될 거로 확신한다!</Text>
+			<Text>국경개방 조약은 나의 제단에 제물을 가져다 놓는 것을 더욱 손쉽게 할 것이다. 그게 당신에게도 도움이 될 거로 확신한다!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WUZETIAN_OPEN_BORDERS_EXCHANGE_1">
-			<Text>국경 개방 조약이 두 나라의 문화와 예술이 번창하는 데에 크게 이바지하리라고 확신하오.</Text>
+			<Text>국경개방 조약이 두 나라의 문화와 예술이 번창하는 데에 크게 이바지하리라고 확신하오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMESSES_OPEN_BORDERS_EXCHANGE_1">
 			<Text>자네가 같은 걸 원한다면, 이집트는 신성한 땅을 기꺼이 개방하겠노라.</Text>
@@ -1015,7 +1015,7 @@
 			<Text>서로의 국경을 개방하는 것은 상업적 기회를 무한히 확대해줄 것이랍니다. 이점에 동의하지 않는가요?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_NAPOLEON_OPEN_BORDERS_EXCHANGE_1">
-			<Text>국경 개방 조약으로 군대의 움직임이 훨씬 자유로워질 것이오. 이는 분명히 필수적인 일이라지. 자네는 어떻게 생각하는가?</Text>
+			<Text>국경개방 조약으로 군대의 움직임이 훨씬 자유로워질 것이오. 이는 분명히 필수적인 일이라지. 자네는 어떻게 생각하는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_BISMARCK_OPEN_BORDERS_EXCHANGE_1">
 			<Text>독일은 강하고 적절한 동맹을 찾고 있소. 서로 간 국경을 개방하는 것이 양국의 국방을 튼튼하게 하는데 도움을 줄 것이오.</Text>
@@ -1033,13 +1033,13 @@
 			<Text>존재에 대해 더 잘 아는 유일한 방법은 더 많은 것을 보는 것 뿐이라오. 서로 간의 국경을 개방하고 한계를 넓힘으로써, 세상에 대해 더 배울 수 있을 것이오.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_DARIUS_OPEN_BORDERS_EXCHANGE_1">
-			<Text>페르시아는 지식과 기회를 대지의 모든 곳곳에서 추구한다오. 이와 같은 목표를 위해 서로 간 국경 개방 조약을 맺지 않겠소?</Text>
+			<Text>페르시아는 지식과 기회를 대지의 모든 곳곳에서 추구한다오. 이와 같은 목표를 위해 서로 간 국경개방 조약을 맺지 않겠소?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_AUGUSTUS_OPEN_BORDERS_EXCHANGE_1">
-			<Text>지금 국경 개방 조약을 맺는 것은 아주 좋아 보이는군. 동의하는가?</Text>
+			<Text>지금 국경개방 조약을 맺는 것은 아주 좋아 보이는군. 동의하는가?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_CATHERINE_OPEN_BORDERS_EXCHANGE_1">
-			<Text>서로에 대해 더 많이 알아가는 유일한 방법은 서로 간의 경계를 허무는 것뿐이에요. 우리 국경 개방 조약을 맺지 않겠어요?</Text>
+			<Text>서로에 대해 더 많이 알아가는 유일한 방법은 서로 간의 경계를 허무는 것뿐이에요. 우리 국경개방 조약을 맺지 않겠어요?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMKHAMHAENG_OPEN_BORDERS_EXCHANGE_1">
 			<Text>진실한 지도자는 문명의 진보가 공동의 협력을 통해서만 이루어진다는 사실을 알고 있습니다. 우리 함께 국경을 개방하여, 양국 간에 자유로운 통행을 허용하는 게 어떻습니까?</Text>

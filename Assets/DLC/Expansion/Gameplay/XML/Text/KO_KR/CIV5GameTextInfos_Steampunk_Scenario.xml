@@ -11,13 +11,13 @@
       <Text>비행선 격납고를 대체하는 비행장은 로데렘만 건설할 수 있으며 비행기, 비행선 및 공중요새를 만들 때 [ICON_PRODUCTION]생산 보너스를 제공합니다. 비행선 격납고와 마찬가지로 생산한 공중 유닛에게 경험치 보너를 줍니다. 비행장을 건설하면 단시간에 베테랑 공중 함대를 생산할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_AETHERIUM_FABRICATOR_HELP">
-      <Text>[COLOR_POSITIVE_TEXT][ICON_RES_ALUMINUM] 에더리움 2개[ENDCOLOR]를 제공합니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT][ICON_RES_ALUMINUM] 에더리움 2개[COLOR_XX]를 제공합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_AETHERIUM_FABRICATOR_STRATEGY">
       <Text>해당 자원이 있는 타일이 없어도 [ICON_RES_ALUMINUM] 에더리움을 제공합니다. 에더리움은 비행선 유닛을 만드는 데 필요합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_AETHERIUM_FACTORY_HELP">
-      <Text>커틀러만 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT][ICON_RES_ALUMINUM] 에더리움 2개[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE]이 도시에서 생산하는 [ICON_RES_ALUMINUM] 에더리움 하나당 [ICON_GOLD]골드가 1 증가합니다.</Text>
+      <Text>커틀러만 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT][ICON_RES_ALUMINUM] 에더리움 2개[COLOR_XX]를 제공합니다.[NEWLINE][NEWLINE]이 도시에서 생산하는 [ICON_RES_ALUMINUM] 에더리움 하나당 [ICON_GOLD]골드가 1 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_AETHERIUM_FACTORY_STRATEGY">
       <Text>에더리움 조작기를 대체하는 에더리움 공장은 커틀러만 건설할 수 있으며 이를 건설한 도시에서 생산하는 [ICON_RES_ALUMINUM] 에더리움 자원 하나당 [ICON_GOLD]골드 보너스를 제공합니다. 이 보너스는 커틀러의 특성으로 받는 보너스와 동시에 적용됩니다.</Text>
@@ -56,7 +56,7 @@
       <Text>모든 도시에 차분기관이 있으면 분석 엔진을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_DIFFERENCE_ENGINE_STRATEGY">
-      <Text>차분기관을 건설하면 도시의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학이 증가합니다. 모든 도시에 차분기관이 있으면 국가 불가사의인 분석 엔진을 건설할 수 있습니다.</Text>
+      <Text>차분기관을 건설하면 도시의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH] 과학이 증가합니다. 모든 도시에 차분기관이 있으면 국가 불가사의인 분석 엔진을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_GRAND_MANSION_HELP">
       <Text>모든 도시에 대저택이 있으면 빌트모어하우스를 건설할 수 있습니다.</Text>
@@ -74,16 +74,16 @@
       <Text>모든 도시에 특허국이 있어야 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_INVENTORS_HALL_STRATEGY">
-      <Text>모든 도시에 특허국이 있어야 건설할 수 있는 발명가의 홀은 문명당 한 개만 건설할 수 있습니다. 발명가의 홀을 건설하면 도시의 [ICON_GOLD]골드와 [ICON_RESEARCH]과학이 증가합니다.</Text>
+      <Text>모든 도시에 특허국이 있어야 건설할 수 있는 발명가의 홀은 문명당 한 개만 건설할 수 있습니다. 발명가의 홀을 건설하면 도시의 [ICON_GOLD]골드와 [ICON_RESEARCH] 과학이 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUBORIC_FACTORY_HELP">
-      <Text>커르노우만 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT][ICON_RES_URANIUM] 루보릭 2개[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE]이 도시에서 생산하는 [ICON_RES_URANIUM] 루보릭 하나당 [ICON_PRODUCTION]생산이 1 증가합니다.</Text>
+      <Text>커르노우만 건설할 수 있습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT][ICON_RES_URANIUM] 루보릭 2개[COLOR_XX]를 제공합니다.[NEWLINE][NEWLINE]이 도시에서 생산하는 [ICON_RES_URANIUM] 루보릭 하나당 [ICON_PRODUCTION]생산이 1 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUBORIC_FACTORY_STRATEGY">
       <Text>루보릭 정제기를 대체하는 루보릭 공장은 커르노우만 건설할 수 있으며 건설한 도시에서 생산하는 [ICON_RES_URANIUM] 루보릭 하나당 [ICON_PRODUCTION]생산이 증가합니다. 이 보너스는 커르노우의 특성으로 받는 보너스와 동시에 적용됩니다. </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUBORIC_REFINERY_HELP">
-      <Text>[COLOR_POSITIVE_TEXT][ICON_RES_URANIUM] 루보릭 2개[ENDCOLOR]를 제공합니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT][ICON_RES_URANIUM] 루보릭 2개[COLOR_XX]를 제공합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUBORIC_REFINERY_STRATEGY">
       <Text>해당 자원이 있는 타일이 없어도 [ICON_RES_URANIUM] 루보릭을 제공합니다. 루보릭은 지상함 유닛을 만드는 데 필요합니다.</Text>
@@ -116,25 +116,25 @@
       <Text>모든 도시에 지하 전초기지가 있으면 지하 식민지를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_SUBTERRANEAN_OUTPOST_STRATEGY">
-      <Text>지하 전초기지를 건설하면 도시의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학이 증가합니다. 모든 도시에 지하 전초기지가 있으면 국가 불가사의인 지하 식민지를 건설할 수 있습니다.</Text>
+      <Text>지하 전초기지를 건설하면 도시의 [ICON_PRODUCTION]생산과 [ICON_RESEARCH] 과학이 증가합니다. 모든 도시에 지하 전초기지가 있으면 국가 불가사의인 지하 식민지를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TESLA_COIL_HELP">
-      <Text>테슬라코일을 건설하면 도시의 [ICON_RESEARCH]과학과 [ICON_GOLD]골드가 증가합니다.</Text>
+      <Text>테슬라코일을 건설하면 도시의 [ICON_RESEARCH] 과학과 [ICON_GOLD]골드가 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TESLA_COIL_STRATEGY">
-      <Text>테슬라코일을 건설하면 도시의 [ICON_RESEARCH]과학이 크게 증가하며 [ICON_GOLD]골드도 증가합니다.</Text>
+      <Text>테슬라코일을 건설하면 도시의 [ICON_RESEARCH] 과학이 크게 증가하며 [ICON_GOLD]골드도 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TORUS_DYNAMO_HELP">
       <Text>그리그스만 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TORUS_DYNAMO_STRATEGY">
-      <Text>토루스 발전기는 그리그스만 건설할 수 있습니다. 테슬라코일을 대체하는 토루스 발전기는 테슬라코일보다 [ICON_RESEARCH]과학이 많습니다. 이 보너스는 연구하지 않고 지나친 이전 기술을 연구하거나 미래 시대 기술을 연구할 때 유용합니다.</Text>
+      <Text>토루스 발전기는 그리그스만 건설할 수 있습니다. 테슬라코일을 대체하는 토루스 발전기는 테슬라코일보다 [ICON_RESEARCH] 과학이 많습니다. 이 보너스는 연구하지 않고 지나친 이전 기술을 연구하거나 미래 시대 기술을 연구할 때 유용합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TRADE_COLLEGE_HELP">
-      <Text>전문대학을 건설하면 도시의 [ICON_RESEARCH]과학과 [ICON_CULTURE]문화가 증가합니다.</Text>
+      <Text>전문대학을 건설하면 도시의 [ICON_RESEARCH] 과학과 [ICON_CULTURE]문화가 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TRADE_COLLEGE_STRATEGY">
-      <Text>전문대학을 건설하면 도시의 [ICON_RESEARCH]과학이 크게 증가하며 [ICON_CULTURE]문화도 증가합니다.</Text>
+      <Text>전문대학을 건설하면 도시의 [ICON_RESEARCH] 과학이 크게 증가하며 [ICON_CULTURE]문화도 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CIV5_BUILDINGS_AERODROME_TEXT">
       <Text>저 유명한 에루치의 비행장은 비행선을 조립하고 비행사를 훈련시키는 역할을 합니다. 비행선 제조 공정에 직접 참여하는 조종사들은 훈련과 기량을 모두 쌓을 수 있습니다.</Text>
@@ -152,7 +152,7 @@
       <Text>단순한 차분기관을 훨씬 능가하는 분석 엔진은 문명 병참 운용의 꽃이다. 전문가만이 다룰 수 있는 분석 엔진은 최대 효과를 내도록 계획적으로 사용된다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CIV5_BUILDINGS_AUTOMATED_FACTORY_TEXT">
-      <Text>공장 노동자는 열악한 환경에서 장시간 근무한다. 하지만 자동화 공장 기술을 도입하면 이러한 공장 노동자의 작업 환경을 개선할 수 있을 뿐만 아니라 생산  증가한다. 기계는 잠을 잘 필요가 없으니까.</Text>
+      <Text>공장 노동자는 열악한 환경에서 장시간 근무한다. 하지만 자동화 공장 기술을 도입하면 이러한 공장 노동자의 작업 환경을 개선할 수 있을 뿐만 아니라 생산 또한 증가한다. 기계는 잠을 잘 필요가 없으니까.</Text>
     </Row>
     <Row Tag="TXT_KEY_CIV5_BUILDINGS_BILTMORE_HOUSE_TEXT">
       <Text>빌트모어하우스는 세련미와 상업의 중심지이다. 방 하나하나가 예술가의 손으로 꾸며진 빌트모어하우스는 손님을 접대하고 사업 거래를 원만하게 끝낼 수 있도록 편안한 분위기를 조성한다.</Text>
@@ -221,7 +221,7 @@
       <Text>역사</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_CIV_ENGLAND_TEXT_1">
-      <Text>풀리아스의 정확한 기원은 아직도 베일에 싸여있다. 이 도시는 마치 어딘가에서 갑자기 튀어나온 것 같은 느낌이나, 이들이 누렸던 부와 힘은 도시가 갑자기 생겨났다고는 믿을 수 없을 정도이다. 사료 대부분에 의하면 이곳에 새로운 과학, 상업, 그리고 무엇보다도 정치적인 기회를 포착한 지도자가 있었으리라 추측되며, 그가 숨겨진 곳에서 은밀하게 대부분의 일을 처리했을 것이라 예상된다. 이 지도자는 경쟁자들이 탐내는 정보를 높은 가격에 팔았으리라 추측되며, 이를 통해 확보한 금액으로 풀리아스의 더 큰 목표를 추구했을 것이다. 고대 나라 간의 경쟁은 주로 단기간의 목표에만 치중되어 다양한 기회가 무시되곤 했는데, 풀리아스는 이런 기회를 놓치지 않고 많은 탐험가에게 정찰 임무를 맡겨 교역로를 확보하고 시민을 부유하게 하는 데 치중했다.  곳곳에 심어진 풀리아스의 스파이들은 전 세계에서 주요 보직을 맡으며 언제든 필요한 정보를 제공할 수 있는 역할을 담당했다.</Text>
+      <Text>풀리아스의 정확한 기원은 아직도 베일에 싸여있다. 이 도시는 마치 어딘가에서 갑자기 튀어나온 것 같은 느낌이나, 이들이 누렸던 부와 힘은 도시가 갑자기 생겨났다고는 믿을 수 없을 정도이다. 사료 대부분에 의하면 이곳에 새로운 과학, 상업, 그리고 무엇보다도 정치적인 기회를 포착한 지도자가 있었으리라 추측되며, 그가 숨겨진 곳에서 은밀하게 대부분의 일을 처리했을 것이라 예상된다. 이 지도자는 경쟁자들이 탐내는 정보를 높은 가격에 팔았으리라 추측되며, 이를 통해 확보한 금액으로 풀리아스의 더 큰 목표를 추구했을 것이다. 고대 나라 간의 경쟁은 주로 단기간의 목표에만 치중되어 다양한 기회가 무시되곤 했는데, 풀리아스는 이런 기회를 놓치지 않고 많은 탐험가에게 정찰 임무를 맡겨 교역로를 확보하고 시민을 부유하게 하는 데 치중했다. 또한, 곳곳에 심어진 풀리아스의 스파이들은 전 세계에서 주요 보직을 맡으며 언제든 필요한 정보를 제공할 수 있는 역할을 담당했다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_CIV_FRANCE_HEADING_1">
       <Text>역사</Text>
@@ -239,7 +239,7 @@
       <Text>역사</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_CIV_RUSSIA_TEXT_1">
-      <Text>과학의 지속적 발전은 물건의 생산, 운송, 판매에도 큰 변화를 가져왔다. 이런 변화에 적응하지 못한 사업가들은 점차 도태되었고, 더욱 적합한 인물들로 대체되었다. 처음 시작했을 때 오를린에는 아무런 정치적 기반이 없었고, 제국을 만들겠다는 의지는 더더욱 없었다. 오를린은 단순히 상호 간의 이익을 위한 야망 있는 산업가들의 모임일 뿐이었다. 그들은 함께 시장을 개척했고, 그들이 살던 곳의 산업을 함께 지배했다. 하지만 그들이 살던 지역이 쇠퇴하기 시작하면, 오를린의 거물들은 서로의 가게를 공격하고 음해 공작을 펼치거나 심지어는 암살을 하는 등 권력을 차지하기 위한 싸움을 벌였다.  그들은 모든 형태의 생산을 통제하기 위한 과두제를 사용했다. 그들은 그들만의 산업적 역량과 이로 축적한 부를 통해 제국을 건설해 마침내 세계 무대로 진출하였다.</Text>
+      <Text>과학의 지속적 발전은 물건의 생산, 운송, 판매에도 큰 변화를 가져왔다. 이런 변화에 적응하지 못한 사업가들은 점차 도태되었고, 더욱 적합한 인물들로 대체되었다. 처음 시작했을 때 오를린에는 아무런 정치적 기반이 없었고, 제국을 만들겠다는 의지는 더더욱 없었다. 오를린은 단순히 상호 간의 이익을 위한 야망 있는 산업가들의 모임일 뿐이었다. 그들은 함께 시장을 개척했고, 그들이 살던 곳의 산업을 함께 지배했다. 하지만 그들이 살던 지역이 쇠퇴하기 시작하면, 오를린의 거물들은 서로의 가게를 공격하고 음해 공작을 펼치거나 심지어는 암살을 하는 등 권력을 차지하기 위한 싸움을 벌였다. 또한, 그들은 모든 형태의 생산을 통제하기 위한 과두제를 사용했다. 그들은 그들만의 산업적 역량과 이로 축적한 부를 통해 제국을 건설해 마침내 세계 무대로 진출하였다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_CIV_SWEDEN_HEADING_1">
       <Text>역사</Text>
@@ -689,7 +689,7 @@
       <Text>달마스의 지도자</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_LEADER_NAPOLEON_TEXT_1">
-      <Text>“무엇보다도, 장관님께서 꼭 기억해 주십사 하는 내용은, 증기 시대가 비록 우리의 생활에 큰 발전을 가져다주긴 했지만, 이를 위해 일반인들도 많은 대가를 치러야 했다는 것입니다. 과거 수십 년간의 발전은 강력한 몇 명의 상류층에 의한 대다수의 지배라는, 인류 역사에 결점으로 남아있던 부분을 더욱 부각했습니다. 지금까지 우리는 이 일을 대수롭지 않게 생각하고 우리의 권력 유지를 위해 필수불가결한 사항이라고 정당화해왔지만, 현실은 우리가 더 많은 권한을 얻는 동안 대다수 사람들은 더욱 어려움을 겪고 있다는 것입니다. 확인해 보진 않았습니다만, 이러한 격차는 일반인들에게 결국 아무것도 남지 않을 때까지 계속 벌어질 것으로 보입니다. 지금까지 수차례에 걸쳐 이러한 서신을 드리지만, 만약 저의 이런 주장이 장관님과 연합의 도덕적 관념에 호소할 수 없다면, 우리가 사는 세상은 점점 더 불안정해질 수밖에 없다는 경고의 말씀을 꼭 드리고 싶습니다. 일반 대중들은 기득권층인 우리보다 교육을 덜 받고 덜 세련되었을지도 모르지만, 그들  눈과 귀가 있고, 마음이 있어 이웃들과 무슨 일을 벌이게 될지 모릅니다. 이들이 모이게 되면 더욱 커지고 사회에 불안정을 가져오게 될 것이고, 이 세기가 지나기 전 걷잡을 수 없는 폭동이 일어나게 될지도 모릅니다. 그리고 이러한 폭동은 어떠한 무기나 비행선을 동원한 폭격으로도 멈추기 어려울 것입니다. 왜냐하면, 이러한 무기와 비행선을 만드는 주체는 결국 우리에게 반기를 든 그들이기 때문입니다. ."[NEWLINE][NEWLINE] - 클린턴 엘더다이스, 제국 연맹의 장관에게 보내는 서신 중</Text>
+      <Text>“무엇보다도, 장관님께서 꼭 기억해 주십사 하는 내용은, 증기 시대가 비록 우리의 생활에 큰 발전을 가져다주긴 했지만, 이를 위해 일반인들도 많은 대가를 치러야 했다는 것입니다. 과거 수십 년간의 발전은 강력한 몇 명의 상류층에 의한 대다수의 지배라는, 인류 역사에 결점으로 남아있던 부분을 더욱 부각했습니다. 지금까지 우리는 이 일을 대수롭지 않게 생각하고 우리의 권력 유지를 위해 필수불가결한 사항이라고 정당화해왔지만, 현실은 우리가 더 많은 권한을 얻는 동안 대다수 사람들은 더욱 어려움을 겪고 있다는 것입니다. 확인해 보진 않았습니다만, 이러한 격차는 일반인들에게 결국 아무것도 남지 않을 때까지 계속 벌어질 것으로 보입니다. 지금까지 수차례에 걸쳐 이러한 서신을 드리지만, 만약 저의 이런 주장이 장관님과 연합의 도덕적 관념에 호소할 수 없다면, 우리가 사는 세상은 점점 더 불안정해질 수밖에 없다는 경고의 말씀을 꼭 드리고 싶습니다. 일반 대중들은 기득권층인 우리보다 교육을 덜 받고 덜 세련되었을지도 모르지만, 그들 또한 눈과 귀가 있고, 마음이 있어 이웃들과 무슨 일을 벌이게 될지 모릅니다. 이들이 모이게 되면 더욱 커지고 사회에 불안정을 가져오게 될 것이고, 이 세기가 지나기 전 걷잡을 수 없는 폭동이 일어나게 될지도 모릅니다. 그리고 이러한 폭동은 어떠한 무기나 비행선을 동원한 폭격으로도 멈추기 어려울 것입니다. 왜냐하면, 이러한 무기와 비행선을 만드는 주체는 결국 우리에게 반기를 든 그들이기 때문입니다. ."[NEWLINE][NEWLINE] - 클린턴 엘더다이스, 제국 연맹의 장관에게 보내는 서신 중</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_LEADER_NAPOLEON_TRADE_NEEDMORE_ANGRY_1">
       <Text>{TXT_KEY_LEADER_NAPOLEON_TRADE_NEEDMORE_ANGRY_2}</Text>
@@ -740,7 +740,7 @@
       <Text>통합 전선</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_POLICY_UNITED_FRONT_HELP">
-      <Text>[COLOR_POSITIVE_TEXT]통합 전선[ENDCOLOR][NEWLINE]불가사의를 건설할 때 [ICON_PRODUCTION]생산이 10%만큼 증가하고 새 도시를 세울 때 [ICON_CITIZEN] 인구가 한 명 추가됩니다.</Text>
+      <Text>[COLOR_POSITIVE_TEXT]통합 전선[COLOR_XX][NEWLINE]불가사의를 건설할 때 [ICON_PRODUCTION]생산이 10%만큼 증가하고 새 도시를 세울 때 [ICON_CITIZEN] 인구가 한 명 추가됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_PROMOTION_ANTI_AIR">
       <Text>전투기 및 비행선 유닛 대항 보너스(150)</Text>
@@ -776,121 +776,121 @@
       <Text>같은 칭호를 얻으려고 다른 문명과 경쟁하고 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_AIRSHIPS_HELP">
-      <Text>비행선을 연구하면 육지와 바다 위를 떠다니는 [COLOR_POSITIVE_TEXT]비행선[ENDCOLOR]을 만들 수 있으며 국가 불가사의인 [COLOR_POSITIVE_TEXT]발명가의 홀[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>비행선을 연구하면 육지와 바다 위를 떠다니는 [COLOR_POSITIVE_TEXT]비행선[COLOR_XX]을 만들 수 있으며 국가 불가사의인 [COLOR_POSITIVE_TEXT]발명가의 홀[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ANALOG_COMPUTATION_HELP">
-      <Text>아날로그 컴퓨터를 연구하면 [COLOR_POSITIVE_TEXT]차분기관[ENDCOLOR]과 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학을 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]분석 엔진[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>아날로그 컴퓨터를 연구하면 [COLOR_POSITIVE_TEXT]차분기관[COLOR_XX]과 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학을 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]분석 엔진[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ANALOG_COMPUTATION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"수십억 인구가 하는 복잡한 일을 자세하게 분석하려면 계산할 거리가 끝없이 생길 것이다."[NEWLINE] - 배너바 부시[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ANALYTICAL_ENGINE_HELP">
-      <Text>분석 엔진을 연구하면 [ICON_PRODUCTION]생산을 크게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]분석 엔진[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>분석 엔진을 연구하면 [ICON_PRODUCTION]생산을 크게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]분석 엔진[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ANALYTICAL_ENGINE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"메카니즘이 수학 전체를 삼키기 직전이다."[NEWLINE] - 찰스 배비지[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_AUTOMATA_HELP">
-      <Text>자동 인형을 연구하면 [ICON_RES_ALUMINUM] 에더리움 자원을 제공하는 [COLOR_POSITIVE_TEXT]에더리움 조작기[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>자동 인형을 연구하면 [ICON_RES_ALUMINUM] 에더리움 자원을 제공하는 [COLOR_POSITIVE_TEXT]에더리움 조작기[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_AUTOMATA_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"문명은 사람들이 아무런 생각 없이 수행할 수 있는 중요한 작업을 늘림으로써 진화한다."[NEWLINE] - 알프레드 화이트헤드[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_CIVIL_DEFENSE_HELP">
-      <Text>민방위 체제를 연구하면 강력한 대공 유닛인 [COLOR_POSITIVE_TEXT]대공포[ENDCOLOR]를 만들 수 있으며 도시의 방어력을 높여주는 [COLOR_POSITIVE_TEXT]군사 기지[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>민방위 체제를 연구하면 강력한 대공 유닛인 [COLOR_POSITIVE_TEXT]대공포[COLOR_XX]를 만들 수 있으며 도시의 방어력을 높여주는 [COLOR_POSITIVE_TEXT]군사 기지[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_CIVIL_DEFENSE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"부유함보다 국방이 중요하다."[NEWLINE] - 아담 스미스[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ECONOMIC_IMPERIALISM_HELP">
-      <Text>경제 제국주의를 연구하면 [ICON_GOLD]골드와 [ICON_CULTURE]문화를 생산하는 [COLOR_POSITIVE_TEXT]대저택[ENDCOLOR]과 국가 불가사의인 [COLOR_POSITIVE_TEXT]빌트모어하우스[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>경제 제국주의를 연구하면 [ICON_GOLD]골드와 [ICON_CULTURE]문화를 생산하는 [COLOR_POSITIVE_TEXT]대저택[COLOR_XX]과 국가 불가사의인 [COLOR_POSITIVE_TEXT]빌트모어하우스[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ECONOMIC_IMPERIALISM_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"산업을 움직이는 것은 탐욕이다."[NEWLINE] - 데이비드 흄[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ERUPTIVES_HELP">
-      <Text>분출 시스템을 연구하면 지도에서 [ICON_RES_URANIUM] 루보릭을 찾을 수 있으며 [COLOR_POSITIVE_TEXT]전함[ENDCOLOR]을 만들 수 있습니다.</Text>
+      <Text>분출 시스템을 연구하면 지도에서 [ICON_RES_URANIUM] 루보릭을 찾을 수 있으며 [COLOR_POSITIVE_TEXT]전함[COLOR_XX]을 만들 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ERUPTIVES_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"인간은 자연을 길들여야 한다."[NEWLINE] - 프란시스 베이컨[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_EXPEDITIONARY_SCIENCE_HELP">
-      <Text>원정 과학을 연구하면 지도에서 [ICON_RES_ALUMINUM] 에더리움을 찾을 수 있으며 [COLOR_POSITIVE_TEXT]잠수함[ENDCOLOR]을 만들 수 있습니다.  [ICON_RESEARCH]과학과 [ICON_CULTURE]문화를 높여주는 [COLOR_POSITIVE_TEXT]전문대학[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>원정 과학을 연구하면 지도에서 [ICON_RES_ALUMINUM] 에더리움을 찾을 수 있으며 [COLOR_POSITIVE_TEXT]잠수함[COLOR_XX]을 만들 수 있습니다. 또한 [ICON_RESEARCH] 과학과 [ICON_CULTURE]문화를 높여주는 [COLOR_POSITIVE_TEXT]전문대학[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_EXPEDITIONARY_SCIENCE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"대자연에서 생명의 기적을 보자 과학 발전이 대수롭지 않다고 느꼈다."[NEWLINE] - 찰스 린드버그[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_GALVANOMAGNETISM_HELP">
-      <Text>직류자기학을 연구하면 도시의 [ICON_RESEARCH]과학을 크게 높여주고 [ICON_GOLD]골드 수입을 약간 높여주는 [COLOR_POSITIVE_TEXT]테슬라코일[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>직류자기학을 연구하면 도시의 [ICON_RESEARCH] 과학을 크게 높여주고 [ICON_GOLD]골드 수입을 약간 높여주는 [COLOR_POSITIVE_TEXT]테슬라코일[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_GOSPEL_OF_WEALTH_HELP">
-      <Text>부의 찬가를 연구하면 도시의 [ICON_CULTURE]문화와 [ICON_HAPPINESS_1]행복을 높여주는 [COLOR_POSITIVE_TEXT]자선박람회[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>부의 찬가를 연구하면 도시의 [ICON_CULTURE]문화와 [ICON_HAPPINESS_1]행복을 높여주는 [COLOR_POSITIVE_TEXT]자선박람회[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_GOSPEL_OF_WEALTH_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"나는 모으기를 그만두고 현명하게 분배하기로 결심했는데, 현명한 분배란 상상할 수 없을 중요하고 어려운 일이다."[NEWLINE] - 앤드류 카네기[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_INFERNAL_COMBUSTION_HELP">
-      <Text>지옥의 내연기관을 연구하면 [ICON_RES_URANIUM] 루보릭 자원을 제공하는 [COLOR_POSITIVE_TEXT]루보릭 정제소[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>지옥의 내연기관을 연구하면 [ICON_RES_URANIUM] 루보릭 자원을 제공하는 [COLOR_POSITIVE_TEXT]루보릭 정제소[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_INFERNAL_COMBUSTION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"보이고 만질 수 있는 것 중 가장 신비로운 것은 불이다."[NEWLINE] - 제임스 헌트[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_LAND_LEVIATHAN_HELP">
-      <Text>지상 거함을 연구하면 가장 강력한 지상함 유닛인 [COLOR_POSITIVE_TEXT]지상 거함[ENDCOLOR]을 만들 수 있습니다.</Text>
+      <Text>지상 거함을 연구하면 가장 강력한 지상함 유닛인 [COLOR_POSITIVE_TEXT]지상 거함[COLOR_XX]을 만들 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_LAND_LEVIATHAN_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"살아남으려면 큰 막대기를 가지고 다니면서 부드럽게 말하라."[NEWLINE] - 테오도어 루즈벨트[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_LANDSHIPS_HELP">
-      <Text>지상함을 연구하면 강력한 지상 유닛인 [COLOR_POSITIVE_TEXT]지상함[ENDCOLOR]을 만들 수 있으며 도시의 [ICON_PRODUCTION]생산을 높이고 [ICON_GOLD골드 수입을 늘려주는 [COLOR_POSITIVE_TEXT]특허국[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>지상함을 연구하면 강력한 지상 유닛인 [COLOR_POSITIVE_TEXT]지상함[COLOR_XX]을 만들 수 있으며 도시의 [ICON_PRODUCTION]생산을 높이고 [ICON_GOLD골드 수입을 늘려주는 [COLOR_POSITIVE_TEXT]특허국[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_LANDSHIPS_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"이 지상 철갑함의 뱃머리가 참호를 뚫고 나오자 방어자들이 좌우로 밀려났다."[NEWLINE] - H.G. 웰즈[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_NOBLESSE_OBLIGE_HELP">
-      <Text>노블레스 오블리주를 연구하면 제국의 [ICON_HAPPINESS_1]행복을 높여주는 [COLOR_POSITIVE_TEXT]경기장[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>노블레스 오블리주를 연구하면 제국의 [ICON_HAPPINESS_1]행복을 높여주는 [COLOR_POSITIVE_TEXT]경기장[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_NOBLESSE_OBLIGE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"미덕이야말로 가장 진실한 고귀함이다."[NEWLINE] - 미겔 데 세르반테스[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_PERPETUAL_MOTION_HELP">
-      <Text>영구운동을 연구하면 [ICON_PRODUCTION]생산을 엄청나게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]영구운동 엔진[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>영구운동을 연구하면 [ICON_PRODUCTION]생산을 엄청나게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]영구운동 엔진[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_PERPETUAL_MOTION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"내게 발 디딜 곳과 충분히 긴 지레를 주면 지구를 움직여 보이겠다."[NEWLINE] - 아르키메데스[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_PROPULSION_HELP">
-      <Text>추진장치를 연구하면 [COLOR_POSITIVE_TEXT]구축함[ENDCOLOR]과 첫 공중 유닛인 [COLOR_POSITIVE_TEXT]비행기[ENDCOLOR]를 만들 수 있습니다.</Text>
+      <Text>추진장치를 연구하면 [COLOR_POSITIVE_TEXT]구축함[COLOR_XX]과 첫 공중 유닛인 [COLOR_POSITIVE_TEXT]비행기[COLOR_XX]를 만들 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_PROPULSION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"비행기를 발명하기는 쉽다. 비행기를 만들기는 꽤 어렵다. 하지만 비행은... 완전히 다른 생물이다."[NEWLINE] - 페르디난드 퍼버[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_RADIO_HELP">
-      <Text>라디오를 연구하면 도시의 [ICON_CULTURE]문화를 크게 높여주는 [COLOR_POSITIVE_TEXT]방송탑[ENDCOLOR]과 역시 [ICON_CULTURE]문화를 크게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]카네기홀[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>라디오를 연구하면 도시의 [ICON_CULTURE]문화를 크게 높여주는 [COLOR_POSITIVE_TEXT]방송탑[COLOR_XX]과 역시 [ICON_CULTURE]문화를 크게 높여주는 국가 불가사의인 [COLOR_POSITIVE_TEXT]카네기홀[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_RAILROAD_HELP">
-      <Text>철도를 연구하면 최초의 지상함 유닛인 [COLOR_POSITIVE_TEXT]지상 철갑함[ENDCOLOR]을 만들 수 있으며 노동자가 타일에 [COLOR_POSITIVE_TEXT]철도[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>철도를 연구하면 최초의 지상함 유닛인 [COLOR_POSITIVE_TEXT]지상 철갑함[COLOR_XX]을 만들 수 있으며 노동자가 타일에 [COLOR_POSITIVE_TEXT]철도[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_REPLACEABLE_PARTS_HELP">
-      <Text>교체부품을 연구하면 세상에서 가장 진보된 보병인 [COLOR_POSITIVE_TEXT]1차 세계대전 보병[ENDCOLOR]을 만들 수 있습니다.</Text>
+      <Text>교체부품을 연구하면 세상에서 가장 진보된 보병인 [COLOR_POSITIVE_TEXT]1차 세계대전 보병[COLOR_XX]을 만들 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_ROBOTICS_HELP">
-      <Text>로봇공학을 연구하면 도시의 [ICON_PRODUCTION]생산을 크게 높여주는 [COLOR_POSITIVE_TEXT]자동화 공장[ENDCOLOR]을 건설할 수 있습니다.</Text>
+      <Text>로봇공학을 연구하면 도시의 [ICON_PRODUCTION]생산을 크게 높여주는 [COLOR_POSITIVE_TEXT]자동화 공장[COLOR_XX]을 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_SKY_FORTRESS_HELP">
-      <Text>공중요새를 연구하면 가장 강력한 비행선 유닛인 [COLOR_POSITIVE_TEXT]공중요새[ENDCOLOR]를 만들 수 있습니다.</Text>
+      <Text>공중요새를 연구하면 가장 강력한 비행선 유닛인 [COLOR_POSITIVE_TEXT]공중요새[COLOR_XX]를 만들 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_SKY_FORTRESS_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"과학이 충분히 발전하면 마술과 구분할 수 없게 된다."[NEWLINE] - 아서 C. 클라크[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_SUBTERRANEAN_EXPLORATION_HELP">
-      <Text>지하 탐험을 연구하면 도시의 [ICON_PRODUCTION]생산을 크게 높여주는 [COLOR_POSITIVE_TEXT]지하 전초기지[ENDCOLOR] 및 이와 연관된 국가 불가사의인 [COLOR_POSITIVE_TEXT]지하 식민지[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>지하 탐험을 연구하면 도시의 [ICON_PRODUCTION]생산을 크게 높여주는 [COLOR_POSITIVE_TEXT]지하 전초기지[COLOR_XX] 및 이와 연관된 국가 불가사의인 [COLOR_POSITIVE_TEXT]지하 식민지[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_SUBTERRANEAN_EXPLORATION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"지식의 밑바닥에서 나온 공평한 원칙 하나가 군대보다 강하다."[NEWLINE] - 호세 마르티[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_TECHNOCRACY_HELP">
-      <Text>과학자 관료제를 연구하면 모든 도시에 방송탑을 제공하는 게임 후기 불가사의인 [COLOR_POSITIVE_TEXT]CN 타워[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>과학자 관료제를 연구하면 모든 도시에 방송탑을 제공하는 게임 후기 불가사의인 [COLOR_POSITIVE_TEXT]CN 타워[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_TECHNOCRACY_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"무력을 사용하는 정부보다 이성을 사용하는 정부가 낫다."[NEWLINE] - 토머스 제퍼슨[NEWLINE][TAB]</Text>
@@ -902,13 +902,13 @@
       <Text>[NEWLINE][TAB][TAB]"인간은 놀라운 것을 좋아한다. 이것이 바로 과학의 싹이다."[NEWLINE] - 랄프 왈도 에머슨[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_URANOGRAPHY_HELP">
-      <Text>천체학을 연구하면 [COLOR_POSITIVE_TEXT]비행선 격납고[ENDCOLOR]를 건설할 수 있습니다. 비행선 격납고에서 만든 유닛은 경험치 보너스를 받습니다.</Text>
+      <Text>천체학을 연구하면 [COLOR_POSITIVE_TEXT]비행선 격납고[COLOR_XX]를 건설할 수 있습니다. 비행선 격납고에서 만든 유닛은 경험치 보너스를 받습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_URANOGRAPHY_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"나는 일상의 괴로움에서 벗어나려고 하늘을 난다."[NEWLINE] - 생텍쥐페리[NEWLINE][TAB]</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_VERTICAL_INTEGRATION_HELP">
-      <Text>수직 통합을 연구하면 도시의 [ICON_RESEARCH]골드 수입을 높여주는 [COLOR_POSITIVE_TEXT]증권 거래소[ENDCOLOR]를 건설할 수 있습니다.</Text>
+      <Text>수직 통합을 연구하면 도시의 [ICON_RESEARCH]골드 수입을 높여주는 [COLOR_POSITIVE_TEXT]증권 거래소[COLOR_XX]를 건설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_TECH_VERTICAL_INTEGRATION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"경쟁은 죄악이다."[NEWLINE] - 존 D. 로커펠러[NEWLINE][TAB]</Text>
@@ -1013,7 +1013,7 @@
       <Text>{@1_CivName}{@1: plural 1?이; 2?가;} {@2_TitleName}{@2: plural 1?이; 2?가;} 되었습니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_VICTORY_CATEGORY_NOTIF_TT">
-      <Text>{@1_CivName}{@1: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{@2_TitleName}[ENDCOLOR]의 칭호를 받는 명예를 얻었습니다. 이제 이들은 제국 연합에서 더 큰 영향력을 발휘하며 그만큼 승리에 가까워 졌습니다.</Text>
+      <Text>{@1_CivName}{@1: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{@2_TitleName}[COLOR_XX]의 칭호를 받는 명예를 얻었습니다. 이제 이들은 제국 연합에서 더 큰 영향력을 발휘하며 그만큼 승리에 가까워 졌습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_VICTORY_CATEGORY_TECH_UNLOCK">
       <Text>어떤 플레이어가 {1_Technology:textkey}{1: plural 1?을; 2?를;} 연구하면 가능합니다.</Text>
@@ -1022,7 +1022,7 @@
       <Text>{1_UnlockTurn}턴이 되면 가능합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_VICTORY_CATEGORY_UNLOCK_TT">
-      <Text>이제 누구든 [COLOR_POSITIVE_TEXT]{@1_TitleName}[ENDCOLOR]의 호칭을 차지할 수 있습니다.</Text>
+      <Text>이제 누구든 [COLOR_POSITIVE_TEXT]{@1_TitleName}[COLOR_XX]의 호칭을 차지할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_STEAMPUNK_SCENARIO_VICTORY_CATEGORY_VALUE_UNLOCK">
       <Text>어떤 플레이어가 이 필드에서 {1_UnlockValue}{1: plural 1?을; 2?를;} 얻으면 가능합니다.</Text>
@@ -1082,7 +1082,7 @@
       <Text>채굴기 최적화</Text>
     </Row>
     <Row Tag="TXT_KEY_TRAIT_TIRELESS_WATCH">
-      <Text>비행선 유닛의 [ICON_MOVES] 이동력이 2 증가합니다.</Text>
+      <Text>비행선 유닛의 [ICON_MOVES] 행동력이 2 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_TRAIT_TIRELESS_WATCH_SHORT">
       <Text>삼엄한 경계</Text>
@@ -1097,7 +1097,7 @@
       <Text>에터리움이 발견되지 전까지, 하늘을 날 수 있는 것은 빛이나 비행기와 같은 물체뿐이라고 여겨졌습니다. 비행선은 이와는 조금 다른 개념으로 만들어진 탈것입니다. 새로운 자원의 개발 덕분에 기존 비행선의 기술자와 발명가들은 이전에 그들의 발목을 잡고 있던 과학의 여러 법칙을 무시하고 거의 아무 물체나 공중에 띄울 수 있게 되었습니다. 신기하게도 이 비행선의 발명은 과거 역사 속에서 항해용 선박이 발명되었던 것과 비슷한 느낌을 떠올리게 합니다. 비행선은 항해용 선박과 같이 갑판이 있으며 무기가 배의 양쪽에 모두 달려 있고 돛이 있어야 할 부분에 풍선이 있기 때문입니다. 초기의 비행선 탑승자들은 해군에서 통용되던 계급 체계를 도입했으나, 얼마 지나지 않아 비행선만의 색깔을 갖춰나가게 되었습니다. 그리고 비행선의 디자인도 점점 실험적으로 변해가기 시작했습니다. 비행선 조종사와 탑승자들은 점점 그들만의 문화를 개발하였으며, 그러한 문화는 고상하기도 하고, 엉뚱하며 기발하기도 한 방향으로 변해가기 시작했습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_FLYER_HELP">
-      <Text>항공기에 강하나 지상 유닛에는 아주 효과적이진 않습니다.  사정거리가 길지 않으며 도시 또는 공중요새에 반드시 정박해야만 합니다.</Text>
+      <Text>항공기에 강하나 지상 유닛에는 아주 효과적이진 않습니다. 또한, 사정거리가 길지 않으며 도시 또는 공중요새에 반드시 정박해야만 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_FLYER_STRATEGY">
       <Text>전투기는 공격 범위는 짧지만 괜찮은 공격력을 갖고 있습니다. 치고 빠지는 전략에 뛰어나고, 특히 무게가 무거워 공격을 쉽게 피할 수 없는 공중 유닛 및 공중요새를 상대할 때 강력합니다. 공격 사정거리가 짧아 초반에는 거의 방어용으로 사용되나, 나중에는 공중요새를 이용해 주둔시키거나 바로 전쟁터로 옮길 수도 있습니다.</Text>

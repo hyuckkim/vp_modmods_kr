@@ -14,13 +14,13 @@
       <Text>{1_SpyRank} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에 있습니다. {4_SpyRank} {5_SpyName}{5: plural 1?은; 2?는;} 해당 도시에서 스파이 색출 활동을 통해 기술을 훔치려는 적 스파이를 검거하거나 죽입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_CITY_CIV_CITY_STATE_TT">
-      <Text>{1_CityName}{1: plural 1?은; 2?는;} [COLOR_POSITIVE_TEXT]{2_CityStateTraitAdj}[ENDCOLOR] 도시 국가입니다.</Text>
+      <Text>{1_CityName}{1: plural 1?은; 2?는;} [COLOR_POSITIVE_TEXT]{2_CityStateTraitAdj}[COLOR_XX] 도시 국가입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_CITY_CIV_TT">
       <Text>{1_CityName}{1: plural 1?은; 2?는;} {@2_CivShortDesc}의 지배를 받습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_CITY_NAME_CITY_STATE_TT">
-      <Text>{1_CityName}{1: plural 1?은; 2?는;} [COLOR_POSITIVE_TEXT]{2_CityStateTraitAdj}[ENDCOLOR] 도시 국가입니다.</Text>
+      <Text>{1_CityName}{1: plural 1?은; 2?는;} [COLOR_POSITIVE_TEXT]{2_CityStateTraitAdj}[COLOR_XX] 도시 국가입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_CITY_NAME_TT">
       <Text>{1_CityName}{1: plural 1?은; 2?는;} {@2_CivShortDesc}의 지배를 받습니다.</Text>
@@ -155,7 +155,7 @@
       <Text>{1_SpyRank} {2_SpyName}{2: plural 1?을; 2?를;} 새로운 곳으로 이동하려면 클릭하십시오.[NEWLINE][NEWLINE]스파이에게 다른 도시로 이동할 것을 명령하면 이를 수행하는 데 몇 턴이 걸립니다.[NEWLINE][NEWLINE]스파이가 소유주의 도시에 도착하면 자동으로 스파이 색출 임무를 수행합니다.[NEWLINE][NEWLINE]스파이가 다른 문명의 도시에 도착하면 자동으로 기술을 훔치려 시도할 것입니다. 하지만 플레이어의 문명이 이미 연구한 기술은 훔칠 수 없습니다. 도시에 대항 스파이가 있다면 플레이어의 스파이가 기술을 훔치다 발각되거나 죽을 확률이 높아집니다. 기술을 훔치다 발각되면 외교 관계가 심하게 냉각됩니다.[NEWLINE][NEWLINE]도시 국가로 이동한 스파이는 플레이어의 문명이 더 큰 영향력을 행사하도록 자동으로 선거 결과를 조작합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_SPY_NAMEPLATE_TT">
-      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?은; 2?는;} 플레이어의 스파이입니다.[NEWLINE][NEWLINE]스파이는 도시에 잠입하기 전에는 할 수 있는 일이 없습니다.[NEWLINE][NEWLINE]플레이어의 도시에 있는 플레이어의 스파이는 기술을 훔치려는 적 스파이를 색출합니다.[NEWLINE][NEWLINE]플레이어의 스파이가 다른 문명의 도시에 있다면 기술을 훔치려 시도합니다. 스파이는  다른 문명이 플레이어나 또 다른 문명을 기습 공격하려는 정보 등의 음모를 찾아 이를 보고합니다.[NEWLINE][NEWLINE]도시 국가로 이동한 스파이는 플레이어의 문명이 더 큰 영향력을 행사하도록 자동으로 선거 결과를 조작합니다.</Text>
+      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?은; 2?는;} 플레이어의 스파이입니다.[NEWLINE][NEWLINE]스파이는 도시에 잠입하기 전에는 할 수 있는 일이 없습니다.[NEWLINE][NEWLINE]플레이어의 도시에 있는 플레이어의 스파이는 기술을 훔치려는 적 스파이를 색출합니다.[NEWLINE][NEWLINE]플레이어의 스파이가 다른 문명의 도시에 있다면 기술을 훔치려 시도합니다. 스파이는 또한 다른 문명이 플레이어나 또 다른 문명을 기습 공격하려는 정보 등의 음모를 찾아 이를 보고합니다.[NEWLINE][NEWLINE]도시 국가로 이동한 스파이는 플레이어의 문명이 더 큰 영향력을 행사하도록 자동으로 선거 결과를 조작합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_SPY_NEEDS_ASSIGNMENT_TT">
       <Text>스파이를 도시로 보내 악랄한 행위를 하십시오.</Text>
@@ -167,7 +167,7 @@
       <Text>{1_RankName} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 선거 결과를 조작해 영향력이 증가했습니다.[NEWLINE][NEWLINE]한 문명만이 선거 결과를 조작할 수 있습니다. 한 도시 국가에 스파이가 여러 명 있다면 가장 계급이 높은 스파이 중 가장 그곳에 오래 머문 스파이가 선거 결과를 조작할 확률이 가장 높습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_SPY_SURVEILLANCE_TT">
-      <Text>{1_RankName} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 첩보망을 구축하고 있습니다.[NEWLINE][NEWLINE]첩보망을 구축하고 나면 더 복잡한 다른 작전을 수행할 수 있습니다. 첩보망을 구축하면 다른 문명(도시 국가 제외)의 도시 화면을 볼 수 있습니다.[NEWLINE][NEWLINE]첩보망을 구축하면  한 문명이 다른 문명을 기습 공격하려는 등의 음모를 파헤칠 수 있습니다. 이런 정보는 매우 중요할 수 있습니다!</Text>
+      <Text>{1_RankName} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 첩보망을 구축하고 있습니다.[NEWLINE][NEWLINE]첩보망을 구축하고 나면 더 복잡한 다른 작전을 수행할 수 있습니다. 첩보망을 구축하면 다른 문명(도시 국가 제외)의 도시 화면을 볼 수 있습니다.[NEWLINE][NEWLINE]첩보망을 구축하면 또한 한 문명이 다른 문명을 기습 공격하려는 등의 음모를 파헤칠 수 있습니다. 이런 정보는 매우 중요할 수 있습니다!</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_SPY_TRAVELLING_TT">
       <Text>{1_RankName} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}{3: plural 1?로; 2?으로;} 이동 중입니다.</Text>
