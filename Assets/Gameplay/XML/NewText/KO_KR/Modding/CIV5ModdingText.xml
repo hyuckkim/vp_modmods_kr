@@ -8,7 +8,7 @@
       <Text>잘못된 지도 파일</Text>
     </Row>
     <Row Tag="TXT_KEY_INVALID_MAP_TITLE">
-      <Text>[COLOR_RED]{1_MapName}[COLOR_XX]</Text>
+      <Text>[COLOR_RED]{1_MapName}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ADD_COMMENT">
       <Text>추가 코멘트 :</Text>
@@ -101,7 +101,7 @@
       <Text>르네상스 시대 유닛</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_CATEGORY_27">
-      <Text>산업시대 유닛</Text>
+      <Text>산업 시대 유닛</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_CATEGORY_28">
       <Text>현대 유닛</Text>
@@ -329,16 +329,16 @@
       <Text>요청이 취소되었습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ERROR_SAVE_DLC_NOT_PURCHASED">
-      <Text>[COLOR_RED]필수 DLC를 구입하지 않았습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]필수 DLC를 구입하지 않았습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ERROR_SAVE_INCOMPATIBLE_MODS">
-      <Text>[COLOR_RED]저장된 게임과 현재 활성화된 모드가 호환되지 않습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]저장된 게임과 현재 활성화된 모드가 호환되지 않습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ERROR_SAVE_MISSING_DLC">
-      <Text>[COLOR_RED]필수 DLC가 없습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]필수 DLC가 없습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ERROR_SAVE_MISSING_MODS">
-      <Text>[COLOR_RED]일부 필수 모드가 설치되지 않았습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]일부 필수 모드가 설치되지 않았습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_ERROR_SERVICE_DISABLED">
       <Text>서비스가 비활성화되었습니다.</Text>
@@ -347,7 +347,7 @@
       <Text>확인</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_EULA_BODY">
-      <Text>문명 V 모드 데이터베이스에 들어갑니다. 모드는 색다른 게임을 경험할 수 있도록 플레이어가 제작한 소프트웨어 패키지입니다. [COLOR_WARNING_TEXT]모드 사용에 대한 모든 책임은 사용자에게 있습니다[COLOR_XX]. 제작사는 사용자 제작 콘텐츠를 검토, 지원, 관리 및 보장하지 않습니다. 모드를 사용할 때에는 인터넷을 통해 악성 코드가 유입되지 않도록 주의해야 합니다. 실행하기 전에 www.take2games.com/EULA에서 게임 매뉴얼 및 문서를 확인하십시오.</Text>
+      <Text>문명 V 모드 데이터베이스에 들어갑니다. 모드는 색다른 게임을 경험할 수 있도록 플레이어가 제작한 소프트웨어 패키지입니다. [COLOR_WARNING_TEXT]모드 사용에 대한 모든 책임은 사용자에게 있습니다[ENDCOLOR]. 제작사는 사용자 제작 콘텐츠를 검토, 지원, 관리 및 보장하지 않습니다. 모드를 사용할 때에는 인터넷을 통해 악성 코드가 유입되지 않도록 주의해야 합니다. 실행하기 전에 www.take2games.com/EULA에서 게임 매뉴얼 및 문서를 확인하십시오.</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_EULA_DECLINE">
       <Text>거절</Text>
@@ -461,7 +461,7 @@
       <Text>다운로드 :</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_LABELNO">
-      <Text>[COLOR_RED]아니오[COLOR_XX]</Text>
+      <Text>[COLOR_RED]아니오[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_LABELRATING">
       <Text>평가 :</Text>
@@ -494,7 +494,7 @@
       <Text>버전 :</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_LABELYES">
-      <Text>[COLOR_GREEN]예[COLOR_XX]</Text>
+      <Text>[COLOR_GREEN]예[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_LASTPAGE">
       <Text>마지막 페이지</Text>
@@ -521,25 +521,25 @@
       <Text>뒤로</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_BAD_GAMEVERSION">
-      <Text>[COLOR_RED]게임 버전과 호환되지 않는 버전의 모드입니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]게임 버전과 호환되지 않는 버전의 모드입니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_BLOCKED_BY_OTHER_MOD">
-      <Text>[COLOR_RED]모드가 다른 모드에 의해 차단되었습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]모드가 다른 모드에 의해 차단되었습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_EXCLUSIVE">
       <Text>이 모드는 전용 모드입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_HAS_EXCLUSIVITY_CONFLICTS">
-      <Text>[COLOR_RED]해당 모드는 전용이므로 차단되었습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]해당 모드는 전용이므로 차단되었습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_MISSING_DEPENDENCIES">
-      <Text>[COLOR_RED]모드에 필요한 종속 항목이 없습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]모드에 필요한 종속 항목이 없습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_PARTIALLY_EXCLUSIVE">
       <Text>이 모드의 일부분만이 전용 모드입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MOD_VERSION_ALREADY_ENABLED">
-      <Text>[COLOR_RED]다른 버전의 모드가 이미 활성화되었습니다.[COLOR_XX]</Text>
+      <Text>[COLOR_RED]다른 버전의 모드가 이미 활성화되었습니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MODDING_MODSTATUS">
       <Text>알파|베타|시험판|데모</Text>

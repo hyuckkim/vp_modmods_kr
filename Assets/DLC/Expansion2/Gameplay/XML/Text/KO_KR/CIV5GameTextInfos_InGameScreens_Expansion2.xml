@@ -11,7 +11,7 @@
       <Text>교역로 최대 개수 증가</Text>
     </Row>
     <Row Tag="TXT_KEY_ALLOWS_WORLD_CONGRESS">
-      <Text>모든 문명을 만났다면 세계 대회를 창설할 수 있습니다.</Text>
+      <Text>모든 문명을 만났다면 세계 의회를 창설할 수 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_ANTIQUITY_SITES_TO_EXCAVATE">
       <Text>미발굴 사적지 {1_Num}곳</Text>
@@ -77,7 +77,7 @@
       <Text>근접 무기 유물</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_ARTIFACT_TYPE3">
-      <Text>야만인 야영지 잔해</Text>
+      <Text>야만인 주둔지 잔해</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_ARTIFACT_TYPE4">
       <Text>약탈당한 고대 유적</Text>
@@ -107,10 +107,10 @@
       <Text>랜드마크 시설 건설</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_LANDMARK_MAJOR_CIV">
-      <Text>[NEWLINE][COLOR_POSITIVE_TEXT]다른 문명의 영토에 랜드마크를 건설하면 해당 국가와의 영향력이 영구히 증가합니다.[COLOR_XX]</Text>
+      <Text>[NEWLINE][COLOR_POSITIVE_TEXT]다른 문명의 영토에 랜드마크를 건설하면 해당 국가와의 영향력이 영구히 증가합니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_LANDMARK_MINOR_CIV">
-      <Text>[NEWLINE][COLOR_POSITIVE_TEXT]도시 국가의 영토에 랜드마크를 건설하면 해당 도시 국가에 대한 영향력이 일회성으로 대폭 증가합니다.[COLOR_XX]</Text>
+      <Text>[NEWLINE][COLOR_POSITIVE_TEXT]도시 국가의 영토에 랜드마크를 건설하면 해당 도시 국가에 대한 영향력이 일회성으로 대폭 증가합니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_LANDMARK_RESULT">
       <Text>랜드마크의 [ICON_CULTURE]문화는 시대에 따라 다릅니다. 시대가 바뀔 때마다 [ICON_CULTURE]문화가 1 증가합니다. 고고학자를 소모합니다.</Text>
@@ -119,7 +119,7 @@
       <Text>고고학자가 다음을 발견...</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_NO_SLOTS">
-      <Text>[COLOR_RED]걸작 예술품을 추가할 슬롯이 없습니다![COLOR_XX]</Text>
+      <Text>[COLOR_RED]걸작 예술품을 추가할 슬롯이 없습니다![ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_OPTIONS">
       <Text>다음 중 하나를 선택하십시오.</Text>
@@ -131,13 +131,13 @@
       <Text>문화 르네상스 시작</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_RENAISSANCE_RESULT">
-      <Text>저서 유물을 소비하면 문명의 [ICON_CULTURE]문화가 일회성으로 대폭 증가합니다.</Text>
+      <Text>저서 유물을 소모하면 문명의 [ICON_CULTURE]문화가 일회성으로 대폭 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_WRITING_HEADER">
       <Text>{1_String} 작품 생성</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCH_WRITTEN_ARTIFACT_RESULT">
-      <Text>고대의 문학 작품이 가장 가까운 걸작 저서 슬롯에 배치됩니다. [ICON_CULTURE]문화와 [ICON_TOURISM]관광이 2 증가합니다. 고고학자가 소비됩니다.</Text>
+      <Text>고대의 문학 작품이 가장 가까운 걸작 문학 슬롯에 배치됩니다. [ICON_CULTURE]문화와 [ICON_TOURISM]관광이 2 증가합니다. 고고학자가 소모됩니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_ARCHAEOLOGY_TITLE">
       <Text>고고학적 발견</Text>
@@ -152,13 +152,13 @@
       <Text>채택자 :</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_IDEOLOGY_ADOPTED_BY_NOBODY">
-      <Text>[COLOR_POSITIVE_TEXT]없음[COLOR_XX]</Text>
+      <Text>[COLOR_POSITIVE_TEXT]없음[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_IDEOLOGY_BEST_VICTORY_TYPES">
       <Text>최적 승리 조건</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_IDEOLOGY_CONFIRM">
-      <Text>[COLOR_POSITIVE_TEXT]{@1_PolicyName}[COLOR_XX]{@1: plural 1?을; 2?를;} 채택하시겠습니까?</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{@1_PolicyName}[ENDCOLOR]{@1: plural 1?을; 2?를;} 채택하시겠습니까?</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_IDEOLOGY_NUM_FREE_POLICIES">
       <Text>보너스 주의 : {1_NumFreePolicies}</Text>
@@ -200,34 +200,34 @@
       <Text>턴당 [ICON_RESEARCH]과학 {1_Num: number \"'+'##;'[COLOR_RED]-'##\"}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_BASE">
-      <Text>기본 골드 : {1_Num}</Text>
+      <Text>기본 골드 {1_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_BUILDING">
-      <Text>{1_CityName}의 건물에서 얻는 골드 보너스 : {2_Num}</Text>
+      <Text>{1_CityName}의 건물에서 얻는 골드 보너스 {2_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_EXCLUSIVE_CONNECTION">
-      <Text>독점 교역로 보너스 : {1_Num}</Text>
+      <Text>독점 교역로 보너스 {1_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_GPT_THEIRS">
-      <Text>{1_CityName}의 턴당 골드 생산량 : {2_Num}</Text>
+      <Text>{1_CityName}의 턴당 골드 산출량 {2_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_GPT_YOURS">
-      <Text>{1_CityName}의 턴당 골드 생산량 : {2_Num}</Text>
+      <Text>{1_CityName}의 턴당 골드 산출량 {2_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_OTHER_TRAIT">
-      <Text>{1_CivAdj} 특성 보너스 : {2_Num}</Text>
+      <Text>{1_CivAdj} 특성 보너스 {2_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_POLICIES">
-      <Text>사회 정책 보너스 : {1_Num}</Text>
+      <Text>사회 정책 보너스 {1_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_RESOURCE_DIFFERENT">
-      <Text>{1_ResourceIcon} {2_ResourceName:textkey} : {3_Num}</Text>
+      <Text>{1_ResourceIcon} {2_ResourceName:textkey} {3_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_RESOURCE_HEADER">
       <Text>다양한 자원</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_RIVER_MODIFIER">
-      <Text>강가 보너스 : +{1_Num}%</Text>
+      <Text>강 인접 보너스 +{1_Num}%</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_REVENUE">
       <Text>상대의 수입</Text>
@@ -242,10 +242,10 @@
       <Text>{1_CivName}의 총 [ICON_RESEARCH]과학 : {2_Num}</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_TOTAL">
-      <Text>총 수입 : [ICON_GOLD]골드 {1_Num} </Text>
+      <Text>총 수입 [ICON_GOLD]골드 {1_Num} </Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_TRADEE_TOTAL">
-      <Text>{1_CivName}의 총 수입 : [ICON_GOLD]골드 {2_Num} </Text>
+      <Text>{1_CivName}의 총 수입 [ICON_GOLD]골드 {2_Num} </Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_REVENUE">
       <Text>당신의 수입</Text>
@@ -257,13 +257,13 @@
       <Text>당신 문명의 과학 보너스</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_TOTAL">
-      <Text>총 [ICON_RESEARCH]과학 : {1_Num} </Text>
+      <Text>총 [ICON_RESEARCH]과학 {1_Num} </Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_PREV_ROUTE">
       <Text>이전 교역로</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_RANGE">
-      <Text>거리 : {1_Num}칸</Text>
+      <Text>거리 {1_Num}타일</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_SORT_CITYNAME">
       <Text>도시 이름</Text>
@@ -317,7 +317,7 @@
       <Text>[ICON_PLUS] 당신의 도시</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_DIPLOMAT_OTHER_CIV_TT">
-      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 외교관으로 활동하고 있습니다. {4_SpyRank} {5_SpyName}{5: plural 1?이; 2?가;} 해당 도시에 있는 동안 첩보망을 구축한 다음 해당 문명의 세계 대회 투표를 알려줍니다. {6_SpyRank} {7_SpyName}도 방문하는 동안 발견한 음모를 알려줄 것입니다.</Text>
+      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 외교관으로 활동하고 있습니다. {4_SpyRank} {5_SpyName}{5: plural 1?이; 2?가;} 해당 도시에 있는 동안 첩보망을 구축한 다음 해당 문명의 세계 의회 투표를 알려줍니다. {6_SpyRank} {7_SpyName}도 방문하는 동안 발견한 음모를 알려줄 것입니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITYVIEW_TOURISM_TEXT">
       <Text>관광</Text>
@@ -329,55 +329,55 @@
       <Text>교환을 위해 내놓은 걸작을 취소합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_BUILDING_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  {2_BuildingName}에서 얻는 보너스</Text>
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  {2_BuildingName}에서 얻는 보너스</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_CARNIVAL_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  카니발이 개최되어 얻는 보너스</Text>
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  카니발이 개최되어 얻는 보너스</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_COMMON_FOE_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  공동의 적과 전쟁을 벌여 받는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  공동의 적과 전쟁을 벌여 받는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_DIFFERENT_IDEOLOGY_PENALTY">
-      <Text>[COLOR_XX][ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_Num}%[COLOR_XX] [ICON_TOURISM]  이념이 달라 받는 페널티 : </Text>
+      <Text>[ENDCOLOR][ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR] [ICON_TOURISM]  이념이 달라 받는 페널티 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_FAITH_BUILDINGS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_TOURISM]  [ICON_PEACE]신앙으로 구입한 건물에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  [ICON_PEACE]신앙으로 구입한 건물에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_GREAT_WORKS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{2_Num}[COLOR_XX] [ICON_TOURISM]  [ICON_GREAT_WORK]걸작 {2_Num}개에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{2_Num}[ENDCOLOR] [ICON_TOURISM]  [ICON_GREAT_WORK]걸작 [COLOR_POSITIVE_TEXT]{2_Num}개[ENDCOLOR]에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_LEAGUES_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  세계 종교의 성도로 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  세계 종교의 성도로 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_LESS_HAPPY_BONUS">
-      <Text>[COLOR_XX][ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  [ICON_HAPPINESS_1]행복이 낮은 문명을 상대로 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  [ICON_HAPPINESS_1]행복이 낮은 문명을 상대로 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_OPEN_BORDERS_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  국경을 개방해서 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  국경을 개방해서 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_RELIGION_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  종교가 같아서 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  종교가 같아서 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_RELIGIOUS_ART">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_TOURISM]  종교 예술 교리에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  종교 예술 교리에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_SHARED_IDEOLOGY_BONUS">
-      <Text>[COLOR_XX][ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  이념이 같아서 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  이념이 같아서 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_TECH_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  기술에서 얻는 보너스 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  기술에서 얻는 보너스 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_TECH_ENHANCED">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_TOURISM]  건물에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  건물에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_THEMING_BONUSES">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_TOURISM]  불가사의와 박물관의 관광 보너스에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  불가사의와 박물관의 관광 보너스에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_TILES">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_TOURISM]  세계 불가사의, 자연경관 및 시설로부터 얻는 [ICON_CULTURE]문화의 {2_Num}%에서 획득 </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_TOURISM]  세계 불가사의, 자연경관 및 시설로부터 얻는 [ICON_CULTURE]문화의 {2_Num}%에서 획득 </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CITY_TOURISM_TRADE_ROUTE_BONUS">
-      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX] [ICON_TOURISM]  교역로에서 얻는 보너스 : </Text>
+      <Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR] [ICON_TOURISM]  교역로에서 얻는 보너스 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CIVILIZATION_HEADER">
       <Text>문명</Text>
@@ -395,19 +395,19 @@
       <Text>걸작을 자세히 보려면 마우스 왼쪽 버튼을 클릭하십시오.</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_CULTURE_HEADER_TT">
-      <Text>[ICON_CULTURE] 이 도시에서 생산하는 문화</Text>
+      <Text>[ICON_CULTURE]이 도시에서 생산하는 문화</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_DOMINANT">
-      <Text>[COLOR_MAGENTA]가장 유명함[COLOR_XX]</Text>
+      <Text>[COLOR_MAGENTA]가장 유명함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_EXOTIC">
-      <Text>[COLOR_WHITE]신비함[COLOR_XX]</Text>
+      <Text>[COLOR_WHITE]신비함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_FALLING">
-      <Text>[COLOR_RED]감소 추세[COLOR_XX]</Text>
+      <Text>[COLOR_RED]감소 추세[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_FAMILIAR">
-      <Text>[COLOR_WHITE]익숙함[COLOR_XX]</Text>
+      <Text>[COLOR_WHITE]익숙함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_GREAT_WORK_HEADER">
       <Text>[ICON_GREAT_WORK]</Text>
@@ -446,13 +446,13 @@
       <Text>해당 문명의 총 [ICON_CULTURE]문화에 대한 총 [ICON_TOURISM]관광(백분율)</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_INFLUENCE_TOURISM_HEADER_TT">
-      <Text>조정된 [ICON_TOURISM]관광 생성량</Text>
+      <Text>조정된 [ICON_TOURISM]관광 산출량</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_INFLUENCE_TREND_HEADER_TT">
       <Text>증가 또는 감소 추세[NEWLINE](증가 추세일 경우 툴팁이 매우 유명해질 때까지 남은 턴 수를 표시)</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_INFLUENTIAL">
-      <Text>[COLOR_MAGENTA]매우 유명함[COLOR_XX]</Text>
+      <Text>[COLOR_MAGENTA]매우 유명함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_INFLUENTIAL_HEADER">
       <Text>매우 유명함</Text>
@@ -461,7 +461,7 @@
       <Text>문화 승리를 위해 필요한 총 문화 중 '매우 유명함'을 달성한 문명의 수</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_INFLUENTIAL_TURNS_TT">
-      <Text>{1_Num}턴 이후 매우 유명해짐(관광 생산량에 변화가 없을 경우)</Text>
+      <Text>{1_Num}턴 이후 매우 유명해짐(관광 산출량에 변화가 없을 경우)</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_LEVEL_HEADER">
       <Text>레벨</Text>
@@ -473,28 +473,28 @@
       <Text>테마 보너스 없음.</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_FOR_AUTOCRACY">
-      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]독재[COLOR_XX] :[NEWLINE]{1_String}</Text>
+      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]독재[ENDCOLOR] :[NEWLINE]{1_String}</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_FOR_FREEDOM">
-      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]평등[COLOR_XX] : [NEWLINE]{1_String}</Text>
+      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]평등[ENDCOLOR] : [NEWLINE]{1_String}</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_FOR_ORDER">
-      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]질서[COLOR_XX] : [NEWLINE]{1_String}</Text>
+      <Text>[NEWLINE]- [COLOR_POSITIVE_TEXT]질서[ENDCOLOR] : [NEWLINE]{1_String}</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_INFLUENCED_BY">
       <Text>이념으로 영향을 주는 문명 :</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_INFLUENCED_WORLD_IDEOLOGY">
-      <Text>세계대회에 선택을 받음으로써 세계 이념에 받은 영향 :</Text>
+      <Text>세계 의회에 선택을 받음으로써 세계 이념에 받은 영향 :</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_NOT_INFLUENCED">
       <Text>다른 문명의 이념으로부터 영향을 받지 않음</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_OVERVIEW">
-      <Text>각 문명의 여론은 해당 문명이 이념을 채택하면 계산되기 시작하며 다른 문명에 주는 영향력과 사상을 채택한 다른 문명으로부터 받는 영향력을 비교해 계산합니다.[NEWLINE][NEWLINE]다른 문명의 사상으로부터 받는 압력이 해당 문명의 이념으로 발생하는 영향력보다 높으면 해당 문명의 여론이 [COLOR_POSITIVE_TEXT]만족함[COLOR_XX] 상태에서 멀어지며 [ICON_HAPPINESS_4]불행이 증가합니다. 아래는 한 사상이 문명에 주는 영향력의 각 수준입니다.[NEWLINE][NEWLINE]</Text>
+      <Text>각 문명의 여론은 해당 문명이 이념을 채택하면 계산되기 시작하며 다른 문명에 주는 영향력과 사상을 채택한 다른 문명으로부터 받는 영향력을 비교해 계산합니다.[NEWLINE][NEWLINE]다른 문명의 사상으로부터 받는 압력이 해당 문명의 이념으로 발생하는 영향력보다 높으면 해당 문명의 여론이 [COLOR_POSITIVE_TEXT]만족함[ENDCOLOR] 상태에서 멀어지며 [ICON_HAPPINESS_4]불행이 증가합니다. 아래는 한 사상이 문명에 주는 영향력의 각 수준입니다.[NEWLINE][NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_PREFERRED_IDEOLOGY">
-      <Text>[NEWLINE][NEWLINE]선호하는 이념 : [COLOR_POSITIVE_TEXT]{1_String}[COLOR_XX]</Text>
+      <Text>[NEWLINE][NEWLINE]선호하는 이념 : [COLOR_POSITIVE_TEXT]{1_String}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_OPINION_TT_UNHAPPINESS_LINE1">
       <Text>여론으로부터 [ICON_HAPPINESS_4]행복을 {1_Num}만큼 생성</Text>
@@ -542,34 +542,34 @@
       <Text>교역로로 얻는 보너스 +{1_Num}%[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_POPULAR">
-      <Text>[COLOR_WHITE]유명함[COLOR_XX]</Text>
+      <Text>[COLOR_WHITE]유명함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_CIVIL_RESISTANCE">
-      <Text>[COLOR_YELLOW]시민 저항[COLOR_XX]</Text>
+      <Text>[COLOR_YELLOW]시민 저항[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_CONTENT">
-      <Text>[COLOR_POSITIVE_TEXT]만족함[COLOR_XX]</Text>
+      <Text>[COLOR_POSITIVE_TEXT]만족함[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_DISSIDENTS">
       <Text>반체제 운동</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_HAPPINESS">
-      <Text>[COLOR_POSITIVE_TEXT]{1_Num}[COLOR_XX]</Text>
+      <Text>[COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_REVOLUTIONARY_WAVE">
-      <Text>[COLOR_NEGATIVE_TEXT]혁명의 물결[COLOR_XX]</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]혁명의 물결[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_PUBLIC_OPINION_UNHAPPINESS">
-      <Text>[COLOR_NEGATIVE_TEXT]{1_Num}[COLOR_XX]</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_RISING">
-      <Text>[COLOR_GREEN]민중 봉기[COLOR_XX]</Text>
+      <Text>[COLOR_GREEN]민중 봉기[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_RISING_SLOWLY">
       <Text>[COLOR_PLAYER_LIGHT_GREEN_TEXT] 불만 증가[COLOR_PLAYER_LIGHT_GREEN_TEXT]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_STATIC">
-      <Text>[COLOR_WHITE]변화 없음[COLOR_XX]</Text>
+      <Text>[COLOR_WHITE]변화 없음[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_TAB_CULTURE_VICTORY">
       <Text>문화 승리</Text>
@@ -596,7 +596,7 @@
       <Text>[ICON_TOURISM] 이 도시가 생산하는 관광</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_TOURISM_OUTPUT">
-      <Text>현재 [ICON_TOURISM] 관광 : </Text>
+      <Text>현재 [ICON_TOURISM]관광 : </Text>
     </Row>
     <Row Tag="TXT_KEY_CO_TOURISM_PERCENT_TT">
       <Text>{1_String}[NEWLINE]영향력이 {3_Num}% 이상이 되면 {2_String}을 달성합니다.</Text>
@@ -605,7 +605,7 @@
       <Text>경향</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_UNKNOWN">
-      <Text>[COLOR_GREY]알려지지 않음[COLOR_XX]</Text>
+      <Text>[COLOR_GREY]알려지지 않음[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_VICTORY_EXCESS_HAPPINESS_HEADER">
       <Text>전반적 [ICON_HAPPINESS_1]</Text>
@@ -626,7 +626,7 @@
       <Text>여론</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_VICTORY_PUBLIC_OPINION_HEADER_TT">
-      <Text>현재 선택한 이념에 대한 시민의 만족도입니다.[NEWLINE][NEWLINE]등급은 다음과 같습니다.[NEWLINE][COLOR_POSITIVE_TEXT]- 만족함[COLOR_XX][NEWLINE]- 반체제 운동[NEWLINE][COLOR_YELLOW]- 시민 저항[COLOR_XX][NEWLINE][COLOR_NEGATIVE_TEXT]- 혁명의 물결[COLOR_XX][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]만족함[COLOR_XX] 이외의 상태일 경우 [ICON_HAPPINESS_4]불행이 일정량 증가합니다.</Text>
+      <Text>현재 선택한 이념에 대한 시민의 만족도입니다.[NEWLINE][NEWLINE]등급은 다음과 같습니다.[NEWLINE][COLOR_POSITIVE_TEXT]- 만족함[ENDCOLOR][NEWLINE]- 반체제 운동[NEWLINE][COLOR_YELLOW]- 시민 저항[ENDCOLOR][NEWLINE][COLOR_NEGATIVE_TEXT]- 혁명의 물결[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]만족함[ENDCOLOR] 이외의 상태일 경우 [ICON_HAPPINESS_4]불행이 일정량 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_CO_VICTORY_PUBLIC_OPINION_UNHAPPINESS_HEADER">
       <Text>[ICON_HAPPINESS_4]</Text>
@@ -698,13 +698,13 @@
       <Text>예</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_MY_SCORE_GREAT_WORKS">
-      <Text>걸작에서 [COLOR_POSITIVE_TEXT]{1_Num}[COLOR_XX]</Text>
+      <Text>걸작에서 [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_MY_SCORE_POLICIES">
-      <Text>정책에서 [COLOR_POSITIVE_TEXT]{1_Num}[COLOR_XX]</Text>
+      <Text>정책에서 [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_MY_SCORE_RELIGION">
-      <Text>종교에서 [COLOR_POSITIVE_TEXT]{1_Num}[COLOR_XX] </Text>
+      <Text>종교에서 [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] </Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLOMAT_PICKER_DIPLOMAT">
       <Text>외교관</Text>
@@ -716,13 +716,13 @@
       <Text>[ICON_TOURISM]관광이 두 배로 늘어납니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_DIPLOMACY_AND_LEAGUE_SESSION">
-      <Text>외교[NEWLINE][NEWLINE]다음 세계 대회까지 남은 턴 : {1_Num}[NEWLINE][NEWLINE]세계 문명이 발전할수록 세계 대회가 더 자주 열립니다.</Text>
+      <Text>외교[NEWLINE][NEWLINE]다음 세계 의회까지 남은 턴 : {1_Num}[NEWLINE][NEWLINE]세계 문명이 발전할수록 세계 의회가 더 자주 열립니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_DIPLOMACY_AND_VICTORY_SESSION">
-      <Text>외교[NEWLINE][NEWLINE]다음 국제 연합 소집까지 남은 턴 : {1_TurnsUntilSession}[NEWLINE][NEWLINE]다음 [COLOR_POSITIVE_TEXT]세계 지도자[COLOR_XX] 결의안까지 남은 턴 : {2_TurnsUntilVictorySession}[NEWLINE][NEWLINE]이제 [COLOR_POSITIVE_TEXT]외교 승리[COLOR_XX]가 가능합니다. 외교 승리를 위해서는 [COLOR_POSITIVE_TEXT]세계 지도자[COLOR_XX] 결의안에서 충분한 수의 대표단 지지를 받아야 합니다.</Text>
+      <Text>외교[NEWLINE][NEWLINE]다음 국제 연합 소집까지 남은 턴 : {1_TurnsUntilSession}[NEWLINE][NEWLINE]다음 [COLOR_POSITIVE_TEXT]세계 지도자[ENDCOLOR] 결의안까지 남은 턴 : {2_TurnsUntilVictorySession}[NEWLINE][NEWLINE]이제 [COLOR_POSITIVE_TEXT]외교 승리[ENDCOLOR]가 가능합니다. 외교 승리를 위해서는 [COLOR_POSITIVE_TEXT]세계 지도자[ENDCOLOR] 결의안에서 충분한 수의 대표단 지지를 받아야 합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_INCOME_TRADE">
-      <Text>도시와 연결로 얻는 수입</Text>
+      <Text>도시 연결로 얻는 수입</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_INCOME_TRADE_DETAILS">
       <Text>[ICON_PLUS] 도시 연결</Text>
@@ -746,16 +746,16 @@
       <Text>해상 교역 거리가 증가합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_EXTRA_VOTES_FROM_DIPLOMATS">
-      <Text>다른 문명의 [ICON_CAPITAL]수도에 [ICON_DIPLOMAT]외교관으로 활동하고 있는 스파이 한 명당 세계 대회에서 추가로 대표단 {1_DelegatesPerDiplomat}명을 획득합니다.</Text>
+      <Text>다른 문명의 [ICON_CAPITAL]수도에 [ICON_DIPLOMAT]외교관으로 활동하고 있는 스파이 1명당 추가 [COLOR_POSITIVE_TEXT]대표단[ENDCOLOR] {1_DelegatesPerDiplomat}명을 확보합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_GAME_CONCEPT_SECTION_24">
       <Text>교역</Text>
     </Row>
     <Row Tag="TXT_KEY_GAME_CONCEPT_SECTION_25">
-      <Text>세계 대회</Text>
+      <Text>세계 의회</Text>
     </Row>
     <Row Tag="TXT_KEY_GOLDENAGE_GP_MOD">
-      <Text>[ICON_BULLET]카니발 보너스 : +{1_num}%</Text>
+      <Text>[ICON_BULLET]카니발 보너스 +{1_num}%</Text>
     </Row>
     <Row Tag="TXT_KEY_GREAT_WORK_POPUP_WRITTEN_ARTIFACT">
       <Text>저서 유물</Text>
@@ -770,7 +770,7 @@
       <Text>[ICON_GREAT_WORK]걸작 음악 슬롯 : {1_NumSlots}</Text>
     </Row>
     <Row Tag="TXT_KEY_HAPPINESS_FROM_LEAGUES">
-      <Text>세계 대회</Text>
+      <Text>세계 의회</Text>
     </Row>
     <Row Tag="TXT_KEY_HIDDEN_SITES_TO_EXCAVATE">
       <Text>아직 발굴되지 않고 숨겨진 지역의 수 : {1_Num}</Text>
@@ -791,7 +791,7 @@
       <Text>비우기</Text>
     </Row>
     <Row Tag="TXT_KEY_NO_SWAPPING_TT">
-      <Text>당신의 턴에 아이템을 교환하지 않도록 해당 슬롯을 비웁니다. 또한, 다른 문명도 슬롯이 비어있으면 자신의 턴에 이와 같은 종류의 아이템을 교환할 수 없습니다.</Text>
+      <Text>당신의 턴에 아이템을 교환하지 않도록 해당 슬롯을 비웁니다.  다른 문명도 슬롯이 비어있으면 자신의 턴에 이와 같은 종류의 아이템을 교환할 수 없습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_OPSCREEN_TUTORIAL_NEW_TO_XP">
       <Text>신과 왕 초보자</Text>
@@ -803,7 +803,7 @@
       <Text>시간과 역사 속에는 항상 세계에 변화를 가져오는 남성과 여성들이 있었습니다. 이들은 예술가, 과학자, 장군, 상인 등 누구보다도 뛰어난 사람으로 역사 속에 등장했습니다. 이 게임에서 이들은 "위인"으로 등장합니다.[NEWLINE][NEWLINE]게임에는 위대한 상인, 위대한 예술가, 위대한 음악가, 위대한 작가, 위대한 과학자, 위대한 기술자, 위대한 장군, 위대한 제독, 위대한 선지자 이렇게 총 9종류의 위인이 등장합니다. 각각의 위인에게는 특수 능력이 있습니다.[NEWLINE][NEWLINE]당신의 문명은 특정 건물과 불가사의를 짓고 이들 건물에 "전문가"를 배치함으로써 위인들을 얻을 수 있습니다. "전문가"는 일반적인 타일이나 광산에서 일하지 않는 사람들을 뜻합니다. 전문가는 도시 주변 타일에서 일하지는 않지만, 위인들이 탄생하는 데 큰 도움을 줍니다. 도시를 운영할 때 음식과 생산, 위인 출현을 위한 전문가를 적절히 배치하는 것은 매우 중요합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_POLICY_GP_MOD">
-      <Text>[ICON_BULLET]정책 보너스 : +{1_num}%</Text>
+      <Text>[ICON_BULLET]정책 보너스 +{1_num}%</Text>
     </Row>
     <Row Tag="TXT_KEY_PROGRESS_SCREEN_CITY_TOURISM">
       <Text>누구나 가보고 싶어하는 도시</Text>
@@ -821,10 +821,10 @@
       <Text>개혁</Text>
     </Row>
     <Row Tag="TXT_KEY_SPY_BONUS_CITY_STATE">
-      <Text>[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]이 도시 국가는 강력한 문화적 영향을 받고 있는 문명과 동맹 관계이기 때문에, 스파이의 등급이 {1_SpyBonus} {1_SpyBonus: plural 1?Rank; other?Ranks;} 상승합니다.[COLOR_XX]</Text>
+      <Text>[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]이 도시 국가는 강력한 문화적 영향을 받고 있는 문명과 동맹 관계이기 때문에, 스파이의 등급이 {1_SpyBonus}단계 상승합니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_SPY_BONUS_MAJOR_CIV">
-      <Text>[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]이 문명은 강력한 문화적 영향을 받고 있기 때문에, 스파이의 등급이 {1_SpyBonus} {1_SpyBonus: plural 1?Rank; other?Ranks;} 상승합니다.[COLOR_XX]</Text>
+      <Text>[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]이 문명은 강력한 문화적 영향을 받고 있기 때문에, 스파이의 등급이 {1_SpyBonus}단계 상승합니다.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_SWAP_ART_HEADER">
       <Text>예술</Text>
@@ -875,10 +875,10 @@
       <Text>[ICON_INTERNATIONAL_TRADE]{1_TradeRoutesUsedNum}/{2_TradeRoutesAvailable}</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES_TT">
-      <Text>교역 유닛이 [COLOR_POSITIVE_TEXT]{1_TradeRoutesUsedNum}개[COLOR_XX] 있습니다.[NEWLINE]사용할 수 있는 교역로가 [COLOR_POSITIVE_TEXT]{2_TradeRoutesAvailableNum}개[COLOR_XX] 있습니다.</Text>
+      <Text>교역 유닛이 [COLOR_POSITIVE_TEXT]{1_TradeRoutesUsedNum}개[ENDCOLOR] 있습니다.[NEWLINE]사용할 수 있는 교역로가 [COLOR_POSITIVE_TEXT]{2_TradeRoutesAvailableNum}개[ENDCOLOR] 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES_TT_UNASSIGNED">
-      <Text>배정하지 않은 {2_UnitName}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{1_Num}개[COLOR_XX] 있습니다.[NEWLINE]</Text>
+      <Text>배정하지 않은 {2_UnitName}{2: plural 1?이; 2?가;} [COLOR_POSITIVE_TEXT]{1_Num}개[ENDCOLOR] 있습니다.[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_CITY_STATE_TT">
       <Text>도시 국가</Text>
@@ -917,31 +917,31 @@
       <Text>{1_Num} [ICON_RESEARCH]과학</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_TO_YOU_ROUTE_BOTH_TT">
-      <Text>[COLOR:255:255:255:255]{1_CivName}[COLOR_XX] {2_CityName} ({3_ResourcesStr}) [ICON_TURNS_REMAINING] {4_CityName} ({5_ResourcesStr})</Text>
+      <Text>({1_CivName}) {2_CityName} ({3_ResourcesStr}) [ICON_TURNS_REMAINING] {4_CityName} ({5_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_TO_YOU_ROUTE_ONLY_DEST_TT">
-      <Text>[COLOR:255:255:255:255]{1_CivName}[COLOR_XX] {2_CityName} [ICON_TURNS_REMAINING] {3_CityName} ({4_ResourcesStr})</Text>
+      <Text>({1_CivName}) {2_CityName} [ICON_TURNS_REMAINING] {3_CityName} ({4_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_TO_YOU_ROUTE_ONLY_ORIGIN_TT">
-      <Text>[COLOR:255:255:255:255]{1_CivName}[COLOR_XX] {2_CityName} ({3_ResourcesStr}) [ICON_TURNS_REMAINING] {4_CityName}</Text>
+      <Text>({1_CivName}) {2_CityName} ({3_ResourcesStr}) [ICON_TURNS_REMAINING] {4_CityName}</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_YOUR_ROUTE_BOTH_TT">
-      <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] [COLOR:255:255:255:255]{3_CivName}[COLOR_XX] {4_CityName} ({5_ResourcesStr})</Text>
+      <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] ({3_CivName}) {4_CityName} ({5_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_YOUR_ROUTE_ONLY_DEST_TT">
-      <Text>{1_CityName} [ICON_TURNS_REMAINING] [COLOR:255:255:255:255]{2_CivName}[COLOR_XX] {3_CityName} ({4_ResourcesStr})</Text>
+      <Text>{1_CityName} [ICON_TURNS_REMAINING] ({2_CivName}) {3_CityName} ({4_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_YOUR_ROUTE_ONLY_ORIGIN_TT">
-      <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] [COLOR:255:255:255:255]{3_CivName}[COLOR_XX] {4_CityName}</Text>
+      <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] ({3_CivName}) {4_CityName}</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_1">
-      <Text>[ICON_GREAT_WORK]걸작 슬롯 [COLOR_POSITIVE_TEXT]{1_Num}개[COLOR_XX] 채워짐</Text>
+      <Text>[ICON_GREAT_WORK]걸작 슬롯 [COLOR_POSITIVE_TEXT]{1_Num}개[ENDCOLOR] 채워짐</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_2">
-      <Text>[ICON_GREAT_WORK]걸작 슬롯 [COLOR_POSITIVE_TEXT]{1_Num}개[COLOR_XX] 사용 가능</Text>
+      <Text>[ICON_GREAT_WORK]걸작 슬롯 [COLOR_POSITIVE_TEXT]{1_Num}개[ENDCOLOR] 사용 가능</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_3">
-      <Text>앞으로 [COLOR_POSITIVE_TEXT]{1_XofYString}개[COLOR_XX]의 문명에 영향력을 행사하면 문화 승리</Text>
+      <Text>앞으로 [COLOR_POSITIVE_TEXT]{1_XofYString}개[ENDCOLOR]의 문명에 영향력을 행사하면 문화 승리</Text>
     </Row>
     <Row Tag="TXT_KEY_TRADE_ROUTE_OVERVIEW">
       <Text>교역로 개요</Text>
@@ -953,7 +953,7 @@
       <Text>{1_CivAdj} 화물선</Text>
     </Row>
     <Row Tag="TXT_KEY_TRADE_ROUTE_TT_PLOT_HEADING">
-      <Text>교역로 :[NEWLINE]</Text>
+      <Text>교역로 [NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_TRADE_ROUTE_TT_PLOT_MAJOR_MAJOR">
       <Text>{1_CityName} ({2_CivName}) [ICON_TURNS_REMAINING] {3_CityName}({4_CivName})</Text>
@@ -1115,12 +1115,10 @@
       <Text>이용할 수 있는 총 대표단 :</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_DELEGATES_NEEDED">
-      <Text>세계 지도자 제의를 받는데 필요한 대표단 :</Text>
+      <Text>세계 지도자 제의를 받기 위해 필요한 대표단 :</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_NEW_CAPITALS_REMAINING">
-      <Text>
-        모든 문명이 각자의 원래 [ICON_CAPITAL]수도를 통치합니다.
-      </Text>
+      <Text>모든 문명이 각자 원래의 [ICON_CAPITAL]수도를 통치합니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_SOMEONE_WON">
       <Text>{1_CivName}{1: plural 1?이; 2?가;} 세계 지도자로 선출되었습니다.</Text>
@@ -1210,10 +1208,10 @@
       <Text>시나리오 승점 4</Text>
     </Row>
     <Row Tag="TXT_KEY_WORLD_CONGRESS_NEGATIVE_GP_MOD">
-      <Text>[ICON_BULLET]세계 대회 페널티 : {1_num}%</Text>
+      <Text>[ICON_BULLET]세계 의회 페널티 : {1_num}%</Text>
     </Row>
     <Row Tag="TXT_KEY_WORLD_CONGRESS_POSITIVE_GP_MOD">
-      <Text>[ICON_BULLET]세계 대회 보너스 : {1_num}%</Text>
+      <Text>[ICON_BULLET]세계 의회 보너스 : {1_num}%</Text>
     </Row>
     <Row Tag="TXT_KEY_WRITING_OTHERS_SLOT">
       <Text>{1_CivShortDesc}{1: plural 1?이; 2?가;} 이 걸작 문학을 다른 걸작 문학과 교환하고 싶어합니다.</Text>
@@ -1225,7 +1223,7 @@
       <Text>비었음(저서)</Text>
     </Row>
     <Row Tag="TXT_KEY_WRITING_SLOT_TT">
-      <Text>클릭하면 교환할 걸작 문학을 바꿀 수 있습니다. 다른 걸작 문학으로만 교환할 수 있습니다. 다른 문명에서 받은 아이템은 교환한 아이템이 있던 건물이나 불가사의 슬롯에 배치됩니다. 새로 얻은 아이템은 이번 턴에 거래할 수 없습니다.[NEWLINE][NEWLINE]당신의 턴에 걸작 예술품 슬롯을 선택했지만 교환하지 않으면 다른 문명이 자신의 턴에 당신의 동의를 구하지 않고 해당 미술품을 교환할 수도 있습니다! 따라서 교환하려는 아이템만 표시해 놓도록 주의하십시오! </Text>
+      <Text>클릭하면 교환할 걸작 문학을 바꿀 수 있습니다. 다른 걸작 문학으로만 교환할 수 있습니다. 다른 문명에서 받은 아이템은 교환한 아이템이 있던 건물이나 불가사의 슬롯에 배치됩니다. 새로 얻은 아이템은 이번 턴에 거래할 수 없습니다.[NEWLINE][NEWLINE]당신의 턴에 걸작 예술품 슬롯을 선택했지만 교환하지 않으면 다른 문명이 자신의 턴에 당신의 동의를 구하지 않고 해당 예술품을 교환할 수도 있습니다! 따라서 교환하려는 아이템만 표시해 놓도록 주의하십시오! </Text>
     </Row>
   </Language_KO_KR>
 </GameData>

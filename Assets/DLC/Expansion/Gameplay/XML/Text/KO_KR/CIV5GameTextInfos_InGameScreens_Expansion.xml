@@ -50,7 +50,7 @@
       <Text>창시자 교리</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_RELIGION_NAME_LABEL">
-      <Text>{1_ReligionName}[COLOR_GREEN](이름을 변경하려면 클릭)[COLOR_XX]</Text>
+      <Text>{1_ReligionName}[COLOR_GREEN](이름을 변경하려면 클릭)[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_RELIGION_OK_BUTTON">
       <Text>종교 창시</Text>
@@ -90,6 +90,9 @@
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_RELIGION_TITLE_ENHANCE">
       <Text>종교 강화</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CHOOSE_RELIGION_UNMET_PLAYER">
+      <Text>아직 만나지 못한 플레이어</Text>
     </Row>
     <Row Tag="TXT_KEY_CITY_GP_MOD">
       <Text>[ICON_BULLET]도시 보너스 +{1_num}%</Text>
@@ -167,10 +170,10 @@
       <Text>재배치</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_STAGE_COUP_QUESTION">
-      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 쿠데타를 일으켜 {4_CivShotDesc} 지지자들을 몰아내게 할 수 있습니다.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]이 임무의 성공률은 {5_PERCENT}%입니다.[COLOR_XX]임무에 성공하면 {6_CityName}의 동맹이 되며 {7_CivShortDesc}의 영향력이 떨어집니다. 실패하면 스파이는 죽고 {8_CityName}와의 영향력이 감소합니다.[NEWLINE][NEWLINE]{9_SpyRank} {10_SpyName}에게 {11_CityName}에서 쿠데타를 일으키라고 지시하시겠습니까?</Text>
+      <Text>{1_SpyRank} {2_SpyName}{2: plural 1?이; 2?가;} {3_CityName}에서 쿠데타를 일으켜 {4_CivShotDesc} 지지자들을 몰아내게 할 수 있습니다.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]이 임무의 성공률은 {5_PERCENT}%입니다.[ENDCOLOR]임무에 성공하면 {6_CityName}의 동맹이 되며 {7_CivShortDesc}의 영향력이 떨어집니다. 실패하면 스파이는 죽고 {8_CityName}와의 영향력이 감소합니다.[NEWLINE][NEWLINE]{9_SpyRank} {10_SpyName}에게 {11_CityName}에서 쿠데타를 일으키라고 지시하시겠습니까?</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_THEIR_CITIES">
-      <Text>그들의 도시</Text>
+      <Text>상대의 도시</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_TITLE">
       <Text>첩보 개요</Text>
@@ -183,6 +186,9 @@
     </Row>
     <Row Tag="TXT_KEY_EO_YOUR_CITIES">
       <Text>내 도시</Text>
+    </Row>
+    <Row Tag="TXT_KEY_FREE_PROMOTION_FROM_TECH">
+      <Text>해당 유닛에게 [COLOR_POSITIVE_TEXT]{@1_PromotionName}[ENDCOLOR] 승급을 부여합니다.[NEWLINE][NEWLINE]({@2_PromotionHelp})</Text>
     </Row>
     <Row Tag="TXT_KEY_GAME_CONCEPT_SECTION_22">
       <Text>첩보</Text>
@@ -209,7 +215,7 @@
       <Text>새 확장팩 콘텐츠</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_FAITH_LABEL">
-      <Text>신앙:</Text>
+      <Text>신앙</Text>
     </Row>
     <Row Tag="TXT_KEY_PEDIA_SPEC_HELP_TEXT">
       <Text>시간과 역사 속에는 항상 세계에 변화를 가져오는 남성과 여성들이 있었습니다. 이들은 예술가, 과학자, 장군, 상인 등 누구보다도 뛰어난 형태의 사람으로 역사 속에 등장했습니다. 이 게임에서 이들은 "위인"으로 등장합니다.[NEWLINE][NEWLINE]게임에는 위대한 상인, 위대한 예술가, 위대한 과학자, 위대한 기술자, 위대한 장군, 위대한 제독, 위대한 선지자 이렇게 총 7종류의 위인들이 등장합니다. 각각의 위인에게는 특수 능력이 있습니다.[NEWLINE][NEWLINE]당신의 문명은 특정 건물과 불가사의를 짓고 이들 건물에 "전문가"를 배치함으로써 위인들을 얻을 수 있습니다. "전문가"는 일반적인 필드나 광산에서 일하지 않는 사람들을 뜻합니다. 전문가들은 도시 주변 타일에서 일하지는 않지만, 위인들이 탄생하는 데 큰 도움을 줍니다. 도시를 운영하는 데 있어 음식과 생산, 위인의 탄생을 위한 전문가들을 적절히 배치하는 것은 매우 중요합니다.</Text>
@@ -358,6 +364,12 @@
     <Row Tag="TXT_KEY_TOP_PANEL_RELIGION_OFF_TOOLTIP">
       <Text>이 게임에서 종교 시스템은 사용하지 않습니다. 신앙을 얻을 수 없으며 종교관을 세우거나 종교를 창시할 수 없습니다.</Text>
     </Row>
+    <Row Tag="TXT_KEY_UNIT_BASE_HEAL_MOD">
+      <Text>기본 유닛의 치유량이  [COLOR_POSITIVE_TEXT]{1_UnitHealingPercent}%[ENDCOLOR] 증가</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FORTIFICATION_MOD">
+      <Text>요새가 주는 전투 보너스가 [COLOR_POSITIVE_TEXT]{1_UnitFortificationPercent}%[ENDCOLOR] 증가</Text>
+    </Row>
     <Row Tag="TXT_KEY_VP_DIPLO_CS_VOTES_COL_TT_ALT">
       <Text>현재 동맹을 맺은 도시 국가의 수</Text>
     </Row>
@@ -412,9 +424,6 @@
     <Row Tag="TXT_KEY_VP_DIPLO_SUBTITLE_ALT">
       <Text>다음 국제 연합 투표 예상 결과:</Text>
     </Row>
-    <Row Tag="TXT_KEY_CHOOSE_RELIGION_UNMET_PLAYER">
-      <Text>아직 만나지 못한 플레이어</Text>
-      <Plurality>2</Plurality>
-    </Row>
+   
   </Language_KO_KR>
 </GameData>

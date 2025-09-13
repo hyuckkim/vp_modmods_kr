@@ -11,10 +11,10 @@
       <Text>승선한 유닛의 방어력이 두 배 증가</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILD_CULTURE_STRING">
-      <Text>[COLOR_XX] [ICON_CULTURE]문화 {1_Num}</Text>
+      <Text>{1_Num} [ENDCOLOR][ICON_CULTURE]문화</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILD_FAITH_STRING">
-      <Text>[COLOR_XX] [ICON_PEACE]신앙 {1_Num}</Text>
+      <Text>{1_Num} [ENDCOLOR][ICON_PEACE]신앙</Text>
     </Row>
     <Row Tag="TXT_KEY_CANNOT_PURCHASE_NO_FAITH">
       <Text>[NEWLINE][ICON_PEACE]신앙이 부족해 구매할 수 없습니다.</Text>
@@ -50,16 +50,10 @@
       <Text>(이제 주변 도시로 퍼짐)</Text>
     </Row>
     <Row Tag="TXT_KEY_CULTURE_FROM_RELIGION">
-      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX] [ICON_CULTURE]  종교에서 획득</Text>
+      <Text>[COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_CULTURE]  종교에서 획득</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_CULTURE_BOMB">
-      <Text>[COLOR_NEGATIVE_TEXT]위대한 장군으로 그들의 영토를 빼앗았습니다l![COLOR_XX]</Text>
-    </Row>
-    <Row Tag="TXT_KEY_DIPLO_VOTE">
-      <Text>국제 연합 투표</Text>
-    </Row>
-    <Row Tag="TXT_KEY_DIPLO_VOTE_TT">
-      <Text>국제 연합에서 투표를 해야 합니다!</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]위대한 장군으로 그들의 영토를 빼앗았습니다l![ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_FAITH_FROM_BUILDINGS">
       <Text>건물로부터 {1_Num} [ICON_PEACE]</Text>
@@ -77,7 +71,7 @@
       <Text>특성으로부터 {1_Num} [ICON_PEACE]</Text>
     </Row>
     <Row Tag="TXT_KEY_FAITH_HELP_INFO">
-      <Text>[ICON_PEACE]신앙을 사용하여 제국 수준에서 [COLOR_POSITIVE_TEXT]종교[COLOR_XX]를 창시하고 강화할 수 있습니다. 신앙을 사용하여 선교사나 이단심문관, 종교 건물을 구매할 수도 있습니다.</Text>
+      <Text>[ICON_PEACE]신앙을 사용하여 제국 수준에서 [COLOR_POSITIVE_TEXT]종교[ENDCOLOR]를 창시하고 강화할 수 있습니다. 신앙을 사용하여 선교사나 이단심문관, 종교 건물을 구매할 수도 있습니다.</Text>
     </Row>
     <Row Tag="TXT_KEY_GAME_OPTION_NO_ESPIONAGE">
       <Text>첩보 없음</Text>
@@ -143,16 +137,16 @@
       <Text>[ICON_GOLD]골드 {1_NumGold} - 자원 개발</Text>
     </Row>
     <Row Tag="TXT_KEY_PRODMOD_PUPPET">
-      <Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_Num}%[COLOR_XX]  괴뢰정부여서 받는 페널티</Text>
+      <Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR]  괴뢰정부여서 받는 페널티</Text>
     </Row>
     <Row Tag="TXT_KEY_PRODMOD_YIELD_BELIEF">
-      <Text>[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[COLOR_XX]  종교 보정치</Text>
+      <Text>[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}%[ENDCOLOR]  종교 보정치</Text>
     </Row>
     <Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH">
-      <Text>[ICON_PEACE]신앙 : [COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]</Text>
+      <Text>[ICON_PEACE]신앙 : [COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_PRODUCTION_BUILDING_HITPOINTS">
-      <Text>[ICON_STRENGTH]체력 : [COLOR_POSITIVE_TEXT]+{1_Num}[COLOR_XX]</Text>
+      <Text>[ICON_STRENGTH]체력 : [COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_SELECTED_EARLIER_BAKTUN">
       <Text>{1_Num}박툰을 축하하는 보너스로 이미 선택했습니다. </Text>
