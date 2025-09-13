@@ -3399,53 +3399,7 @@
     <!-- =======================================================================================================
        Unique units
        ======================================================================================================= -->
-	<ArtDefine_UnitInfos>
-		<Row>
-      <Type>ART_DEF_UNIT_FW_MUTANT</Type>
-      <DamageStates>1</DamageStates>
-      <Formation>Barbarian</Formation>
-		</Row>
-	</ArtDefine_UnitInfos>
-	<ArtDefine_UnitInfoMemberInfos>
-		<Row>
-			<UnitInfoType>ART_DEF_UNIT_FW_MUTANT</UnitInfoType>
-			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_FW_MUTANT</UnitMemberInfoType>
-			<NumMembers>1</NumMembers>
-		</Row>
-	</ArtDefine_UnitInfoMemberInfos>
-	<ArtDefine_UnitMemberInfos>
-		<Row>
-			<Type>ART_DEF_UNIT_MEMBER_FW_MUTANT</Type>
-			<Scale>0.2</Scale>
-			<ZOffset>0</ZOffset>
-			<Domain>Land</Domain>
-			<Model>zombie.fxsxml</Model>
-			<MaterialTypeTag>FLESH</MaterialTypeTag>
-			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
-		</Row>
-	</ArtDefine_UnitMemberInfos>
-	<ArtDefine_UnitMemberCombats>
-		<Row>
-			<UnitMemberType>ART_DEF_UNIT_MEMBER_FW_MUTANT</UnitMemberType>
-			<EnableActions>Idle Attack RunCharge Death Run Fortify CombatReady</EnableActions>
- 			<DisableActions/>
-			<HasShortRangedAttack>0</HasShortRangedAttack>
-			<HasLongRangedAttack>0</HasLongRangedAttack>
-			<HasLeftRightAttack>1</HasLeftRightAttack>
-			<HasStationaryMelee>1</HasStationaryMelee>
-			<HasStationaryRangedAttack>0</HasStationaryRangedAttack>
-			<HasRefaceAfterCombat>1</HasRefaceAfterCombat>
-			<HasIndependentWeaponFacing>0</HasIndependentWeaponFacing>
-			<RushAttackFormation/>
-		</Row>
-	</ArtDefine_UnitMemberCombats>
-	<!-- <ArtDefine_StrategicView>
-		<Row>
-			<StrategicViewType>ART_DEF_UNIT_FW_HYDRA</StrategicViewType>
-			<TileType>Unit</TileType>
-			<Asset>SV_FW_Hydra.dds</Asset>
-		</Row>
-	</ArtDefine_StrategicView> -->
+	<!-- Mutant in SQL -->
 	<ArtDefine_UnitInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_FW_HYDRA</Type>

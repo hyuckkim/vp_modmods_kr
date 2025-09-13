@@ -8,8 +8,8 @@ INSERT INTO UnitPromotions (Type, PediaType, IconAtlas, PortraitIndex, Sound) VA
 ('PROMOTION_FW_APEXPREDATOR',   'PEDIA_MOUNTED',  'PROMOTION_ATLAS',               13, 'AS2D_IF_LEVELUP');
 
 INSERT INTO UnitPromotions (Type, PediaType, IconAtlas, PortraitIndex, Sound, LostWithUpgrade, OrderPriority, CombatPercent) VALUES
-('PROMOTION_FW_IMPLANTS',       'PEDIA_SHARED',     'CIV_COLOR_ATLAS_FW_PROMOTIONS', 17, 'AS2D_IF_LEVELUP', 0, 1, 10);
-
+('PROMOTION_FW_IMPLANTS',       'PEDIA_SHARED',     'CIV_COLOR_ATLAS_FW_PROMOTIONS', 17, 'AS2D_IF_LEVELUP', 0, 1, 10),
+('PROMOTION_FW_GPSASSIST',      'PEDIA_SHARED',     'CIV_COLOR_ATLAS_FW_PROMOTIONS', 50, 'AS2D_IF_LEVELUP', 0, 1, 10);
 
 INSERT INTO UnitPromotions 
 (Type, 								Description,								Help,												PediaType,			 	PediaEntry,									IconAtlas, 				PortraitIndex, 	Sound, 				LostWithUpgrade,	CannotBeChosen, 	MovesChange,	IgnoreZOC,	VisibilityChange) VALUES
@@ -22,6 +22,7 @@ WHERE Type IN (
 'PROMOTION_FW_SPACESHIP',
 'PROMOTION_FW_ANGELNET',
 'PROMOTION_FW_APEXPREDATOR',
+'PROMOTION_FW_GPSASSIST',
 'PROMOTION_FW_IMPLANTS');
 
 INSERT INTO UnitPromotions (Type, Description, PediaEntry, Help, PediaType, IconAtlas, PortraitIndex, AdjacentMod, Sound) VALUES
@@ -99,6 +100,7 @@ INSERT INTO UnitPromotions_UnitCombats (PromotionType, UnitCombatType) VALUES
 ('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_MOUNTED'),
 ('PROMOTION_FW_GENGINEERED',	   'UNITCOMBAT_HELICOPTER'),
 ('PROMOTION_FW_IMPLANTS',          'UNITCOMBAT_GUN'),
+('PROMOTION_FW_GPSASSIST',         'UNITCOMBAT_RECON'),
 
 ('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_GUN'),
 ('PROMOTION_FW_AEROPLEX_DROP', 'UNITCOMBAT_ARCHER'),

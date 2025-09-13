@@ -429,13 +429,13 @@
 			<Type>UNITCLASS_FW_HELICARRIER</Type>
 			<Description>TXT_KEY_UNIT_FW_HELICARRIER</Description>
 			<DefaultUnit>UNIT_FW_HELICARRIER</DefaultUnit>
-			<MaxPlayerInstances>2</MaxPlayerInstances>
+			<MaxPlayerInstances>4</MaxPlayerInstances>
 		</Row>
 		<Row>
 			<Type>UNITCLASS_FW_NEXUS</Type>
 			<Description>TXT_KEY_UNIT_FW_NEXUS</Description>
 			<DefaultUnit>UNIT_FW_NEXUS</DefaultUnit>
-			<MaxPlayerInstances>2</MaxPlayerInstances>
+			<MaxPlayerInstances>4</MaxPlayerInstances>
 		</Row>
     <!-- =======================================================================================================
        Dummy rack
@@ -572,7 +572,7 @@
 			<Type>UNIT_FW_HYPERMISSILE</Type>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
 			<RangedCombat>125</RangedCombat>
-			<Cost>1850</Cost>
+			<Cost>2000</Cost>
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
@@ -607,7 +607,7 @@
 			<Type>UNIT_FW_THERMOMISSILE</Type>
 			<PrereqTech>TECH_SMART_MATERIALS</PrereqTech>
 			<RangedCombat>145</RangedCombat>
-			<Cost>2450</Cost>
+			<Cost>2800</Cost>
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
@@ -642,7 +642,7 @@
 			<Type>UNIT_FW_ADVANCED_MISSILE_GUIDED</Type>
 			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
 			<RangedCombat>200</RangedCombat>
-			<Cost>1800</Cost>
+			<Cost>2000</Cost>
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
@@ -676,7 +676,7 @@
 			<Type>UNIT_FW_RAILGUN_MISSILE</Type>
 			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
 			<RangedCombat>240</RangedCombat>
-			<Cost>1800</Cost>
+			<Cost>2800</Cost>
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
@@ -711,14 +711,14 @@
 			<Type>UNIT_FW_GOD_ROD</Type>
 			<PrereqTech>TECH_ADAMANTIUM</PrereqTech>
 			<RangedCombat>300</RangedCombat>
-			<Cost>4000</Cost>
+			<Cost>3600</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
 			<Range>42</Range>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Special>SPECIALUNIT_MISSILE</Special>
 			<Domain>DOMAIN_AIR</Domain>
-			<DefaultUnitAI>UNITAI_ICBM</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_MISSILE_AIR</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_GOD_ROD</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_GOD_ROD_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_GOD_ROD_STRATEGY</Strategy>
@@ -745,14 +745,14 @@
 			<Type>UNIT_FW_GOD_ROD2</Type>
 			<PrereqTech>TECH_HYPERSTRUCTURES</PrereqTech>
 			<RangedCombat>360</RangedCombat>
-			<Cost>4000</Cost>
+			<Cost>4400</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
 			<Range>64</Range>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Special>SPECIALUNIT_MISSILE</Special>
 			<Domain>DOMAIN_AIR</Domain>
-			<DefaultUnitAI>UNITAI_ICBM</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_MISSILE_AIR</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_GOD_ROD2</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_GOD_ROD2_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_GOD_ROD2_STRATEGY</Strategy>
@@ -953,7 +953,7 @@
 			<Class>UNITCLASS_FW_HYBRID_DRONE</Class>
 			<Type>UNIT_FW_HYBRID_DRONE</Type>
 			<PrereqTech>TECH_EUTHENICS</PrereqTech>
-			<Combat>120</Combat>
+			<Combat>115</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
 			<Cost>2700</Cost>
 			<FaithCost>2000</FaithCost>
@@ -1170,8 +1170,8 @@
 			<Class>UNITCLASS_FW_MECH_ARTILLERY</Class>
 			<Type>UNIT_FW_MECH_ARTILLERY</Type>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
-			<Combat>100</Combat>
-			<RangedCombat>120</RangedCombat>
+			<Combat>105</Combat>
+			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
 			<Cost>3300</Cost>
 			<FaithCost>2000</FaithCost>
@@ -1520,12 +1520,12 @@
 			<Class>UNITCLASS_FW_BIOTROOPER</Class>
 			<Type>UNIT_FW_BIOTROOPER</Type>
 			<PrereqTech>TECH_BIOMODIFICATION</PrereqTech>
-			<Combat>135</Combat>
+			<Combat>130</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>2950</Cost>
 			<FaithCost>2250</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Moves>3</Moves>
+			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -1589,7 +1589,7 @@
 		<Row>
 			<Class>UNITCLASS_CAYM_PMC</Class>
 			<Type>UNIT_CAYM_PMC</Type>
-			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+			<PrereqTech>TECH_ECOLOGY</PrereqTech>
 			<ObsoleteTech>TECH_FW_ECOTHEORY</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_CAYM_PMC</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
@@ -1635,7 +1635,7 @@
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_HELP_GUERILLA</Help>
-			<Combat>98</Combat>
+			<Combat>100</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2250</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
@@ -1678,7 +1678,7 @@
 			<BaseLandAirDefense>25</BaseLandAirDefense>
 			<Cost>2700</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
-			<Moves>4</Moves>
+			<Moves>3</Moves>
 			<PurchaseCooldown>0</PurchaseCooldown>
 			<Immobile>0</Immobile>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
@@ -1712,7 +1712,7 @@
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_HELP_GUERILLA</Help>
-			<Combat>140</Combat>
+			<Combat>135</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>3450</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
@@ -1750,7 +1750,7 @@
 			<Type>UNIT_FW_ATGM</Type>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
 			<ObsoleteTech>TECH_COGNITIVE_TECH</ObsoleteTech>
-			<Combat>75</Combat>
+			<Combat>80</Combat>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2100</Cost>
@@ -1784,7 +1784,7 @@
 			<Class>UNITCLASS_FW_AUTOMATON</Class>
 			<Type>UNIT_FW_AUTOMATON</Type>
 			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
-			<Combat>90</Combat>
+			<Combat>95</Combat>
 			<RangedCombat>115</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
 			<Cost>2500</Cost>
@@ -1889,7 +1889,7 @@
 			<Class>UNITCLASS_FW_AIRBORNE_FORCES</Class>
 			<Type>UNIT_FW_AIRBORNE_FORCES</Type>
 			<PrereqTech>TECH_LASERS</PrereqTech>
-			<Combat>80</Combat>
+			<Combat>75</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2000</Cost>
 			<FaithCost>1600</FaithCost>
@@ -1956,7 +1956,8 @@
 			<Class>UNITCLASS_FW_SPACEMARINES</Class>
 			<Type>UNIT_FW_SPACEMARINES</Type>
 			<PrereqTech>TECH_ENERGY_THEORY</PrereqTech>
-			<Combat>145</Combat>
+			<Combat>135</Combat>
+			<BaseSightRange>3</BaseSightRange>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>3450</Cost>
 			<FaithCost>2250</FaithCost>
@@ -2024,7 +2025,7 @@
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2950</Cost>
 			<FaithCost>2250</FaithCost>
-			<Moves>5</Moves>
+			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
@@ -2589,8 +2590,8 @@
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
-			<Range>12</Range>
-			<AirInterceptRange>12</AirInterceptRange>
+			<Range>13</Range>
+			<AirInterceptRange>13</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -2627,10 +2628,10 @@
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<Special>SPECIALUNIT_SPACESHIP</Special>
+			<Special>SPECIALUNIT_SPACEAIRSHIP</Special>
 			<Immobile>true</Immobile>
-			<Range>13</Range>
-			<AirInterceptRange>13</AirInterceptRange>
+			<Range>14</Range>
+			<AirInterceptRange>14</AirInterceptRange>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_DEFENSE_AIR</DefaultUnitAI>
@@ -2665,10 +2666,10 @@
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
-			<Special>SPECIALUNIT_SPACESHIP</Special>
+			<Special>SPECIALUNIT_SPACEAIRSHIP</Special>
 			<Immobile>true</Immobile>
-			<Range>14</Range>
-			<AirInterceptRange>14</AirInterceptRange>
+			<Range>16</Range>
+			<AirInterceptRange>16</AirInterceptRange>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_DEFENSE_AIR</DefaultUnitAI>
@@ -2708,7 +2709,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<Immobile>true</Immobile>
-			<Range>12</Range>
+			<Range>13</Range>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
@@ -2745,7 +2746,7 @@
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
-			<Range>13</Range>
+			<Range>14</Range>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
@@ -2753,7 +2754,7 @@
 			<Civilopedia>TXT_KEY_UNIT_FW_PLASMA_BOMBER_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_PLASMA_BOMBER_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_PLASMA_BOMBER_HELP</Help>
-			<Special>SPECIALUNIT_SPACESHIP</Special>
+			<Special>SPECIALUNIT_SPACEAIRSHIP</Special>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
@@ -2782,7 +2783,7 @@
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<Immobile>true</Immobile>
-			<Range>14</Range>
+			<Range>16</Range>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
@@ -2790,7 +2791,7 @@
 			<Civilopedia>TXT_KEY_UNIT_FW_SPACE_BOMBER_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_SPACE_BOMBER_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_SPACE_BOMBER_HELP</Help>
-			<Special>SPECIALUNIT_SPACESHIP</Special>
+			<Special>SPECIALUNIT_SPACEAIRSHIP</Special>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
@@ -2960,12 +2961,12 @@
 			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
-			<Range>2</Range>
-			<DefaultUnitAI>UNITAI_CARRIER_SEA</DefaultUnitAI>
+			<Range>3</Range>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<AirInterceptRange>5</AirInterceptRange>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_CARRIER</CombatClass>
-			<Domain>DOMAIN_SEA</Domain>
+			<Domain>DOMAIN_LAND</Domain>
 			<Description>TXT_KEY_UNIT_FW_HELICARRIER</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_HELICARRIER_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_HELICARRIER_STRATEGY</Strategy>
@@ -2979,7 +2980,7 @@
 			<MinAreaSize>10</MinAreaSize>
 			<XPValueAttack>3</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
-			<SpecialCargo>SPECIALUNIT_SPACESHIP</SpecialCargo>
+			<SpecialCargo></SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>		
 			<UnitArtInfo>ART_DEF_UNIT_NAVALCARRIER03S</UnitArtInfo>
 			<UnitFlagAtlas>CIV_FUTURE_FLAG_1</UnitFlagAtlas>
@@ -2998,15 +2999,15 @@
 			<Cost>5000</Cost>
 			<FaithCost>2500</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-			<Range>2</Range>
+			<Range>3</Range>
 			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<BaseSightRange>3</BaseSightRange>
 			<AirInterceptRange>5</AirInterceptRange>
 			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
 			<CombatClass>UNITCOMBAT_CARRIER</CombatClass>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_CARRIER_SEA</DefaultUnitAI>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_NEXUS</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_NEXUS_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_NEXUS_STRATEGY</Strategy>
@@ -3020,7 +3021,7 @@
 			<XPValueAttack>3</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
 			<Conscription>7</Conscription>
-			<SpecialCargo>SPECIALUNIT_SPACESHIP</SpecialCargo>
+			<SpecialCargo></SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
 			<UnitArtInfo>ART_DEF_UNIT_FW_NEXUS</UnitArtInfo>
 			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_5</UnitFlagAtlas>
@@ -3210,6 +3211,10 @@
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_HIMARS</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
 		</Row>
@@ -3218,6 +3223,10 @@
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_ANGEL</UnitType>
 			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
 		</Row>
@@ -3227,7 +3236,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_ANGEL</UnitType>
-			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
 		</Row>
     <!-- =======================================================================================================
        Armor soldiers
@@ -3716,6 +3725,14 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_NANOHIVE</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_NANOHIVE</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_NANOHIVE</UnitType>
 			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
 		</Row>
 		<Row>
@@ -3728,15 +3745,23 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
 			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
 			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
-			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_NANOHIVE</UnitType>
@@ -3749,6 +3774,14 @@
 		<Row>
 			<UnitType>UNIT_FW_HELICARRIER</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_HELICARRIER</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_HELICARRIER</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_HELICARRIER</UnitType>
@@ -3769,6 +3802,14 @@
 		<Row>
 			<UnitType>UNIT_FW_NEXUS</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_NEXUS</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_NEXUS</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_NEXUS</UnitType>
@@ -4121,6 +4162,11 @@
 			<Flavor>5</Flavor>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_HIMARS</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>12</Flavor>
+        </Row>
+		<Row>
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>25</Flavor>
@@ -4141,6 +4187,11 @@
 			<Flavor>6</Flavor>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>14</Flavor>
+        </Row>
+		<Row>
 			<UnitType>UNIT_FW_ANGEL</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>45</Flavor>
@@ -4160,6 +4211,11 @@
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
+		<Row>
+			<UnitType>UNIT_FW_ANGEL</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>16</Flavor>
+        </Row>
     <!-- =======================================================================================================
        Sam
        ======================================================================================================= -->
@@ -4179,6 +4235,11 @@
 			<Flavor>31</Flavor>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_MODERN_MOBILE_SAM</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>12</Flavor>
+        </Row>
+		<Row>
 			<UnitType>UNIT_FW_CYBERSAM</UnitType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>16</Flavor>
@@ -4193,7 +4254,12 @@
 			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
 			<Flavor>35</Flavor>
 		</Row> 
-				<Row>
+		<Row>
+			<UnitType>UNIT_FW_CYBERSAM</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>12</Flavor>
+        </Row>
+		<Row>
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>16</Flavor>
@@ -4208,6 +4274,11 @@
 			<FlavorType>FLAVOR_ANTIAIR</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>  
+		<Row>
+			<UnitType>UNIT_FW_CRAWLER</UnitType>
+		    <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+			<Flavor>12</Flavor>
+        </Row>
     <!-- =======================================================================================================
        Armored soldiers
        ======================================================================================================= -->
@@ -4572,6 +4643,11 @@
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>60</Flavor>
 		</Row>
+		<Row>
+			<UnitType>UNIT_FW_ADV_GUNBOAT</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
     <!-- =======================================================================================================
        Destroyer
        ======================================================================================================= -->
@@ -4592,6 +4668,11 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_DESTROYER</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_RAILGUN_DESTROYER</UnitType>
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>55</Flavor>
 		</Row>
@@ -4604,6 +4685,11 @@
 			<UnitType>UNIT_FW_BIO_DESTROYER</UnitType>
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>60</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_BIO_DESTROYER</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>12</Flavor>
 		</Row>
     <!-- =======================================================================================================
        Cruiser
@@ -4619,6 +4705,11 @@
 			<Flavor>26</Flavor>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>16</Flavor>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_RAILGUN_CRUISER</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>55</Flavor>
@@ -4629,6 +4720,11 @@
 			<Flavor>25</Flavor>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_RAILGUN_CRUISER</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>16</Flavor>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
 			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>60</Flavor>
@@ -4637,6 +4733,11 @@
 			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
 			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
 			<Flavor>35</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>16</Flavor>
 		</Row>
     <!-- =======================================================================================================
        Submarine
@@ -4880,6 +4981,11 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_HELICARRIER</UnitType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>28</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_HELICARRIER</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>28</Flavor>
 		</Row>
@@ -4897,6 +5003,11 @@
 			<UnitType>UNIT_FW_HELICARRIER</UnitType>
 			<FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
 			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_NEXUS</UnitType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>28</Flavor>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_NEXUS</UnitType>
@@ -4956,13 +5067,21 @@
 			<ResourceType>RESOURCE_IRON</ResourceType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_GOD_ROD</UnitType>
+			<ResourceType>RESOURCE_NANOMAT</ResourceType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_GOD_ROD2</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_GOD_ROD2</UnitType>
+			<ResourceType>RESOURCE_NANOMAT</ResourceType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_FW_HYDROGEN_BOMB</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Cost>2</Cost>
+			<Cost>1</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_THERMONUCLEAR_BOMB</UnitType>
@@ -4972,7 +5091,7 @@
 		<Row>
 			<UnitType>UNIT_FW_THERMONUCLEAR_BOMB</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Cost>2</Cost>
+			<Cost>1</Cost>
 		</Row>
     <!-- =======================================================================================================
        Tank

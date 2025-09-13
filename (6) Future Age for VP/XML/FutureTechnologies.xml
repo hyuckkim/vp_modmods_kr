@@ -687,6 +687,10 @@
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
 		</Row>
 		<Row>
+			<TechType>TECH_MECHATRONICS</TechType>
+			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
+		</Row>
+		<Row>
 			<TechType>TECH_FUTURE_BALLISTICS</TechType>
 			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
 		</Row>
@@ -725,10 +729,6 @@
 		<Row>
 			<TechType>TECH_EUTHENICS</TechType>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_COGNITIVE_TECH</TechType>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_COGNITIVE_TECH</TechType>
@@ -832,10 +832,6 @@
 		</Row>
 		<Row>
 			<TechType>TECH_BIOMODIFICATION</TechType>
-			<PrereqTech>TECH_TRANSGENICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_BIOMODIFICATION</TechType>
 			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
 		</Row>
 		<Row>
@@ -849,10 +845,6 @@
 		<Row>
 			<TechType>TECH_CYBERNETICS</TechType>
 			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_CYBERNETICS</TechType>
-			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_AI</TechType>
@@ -869,10 +861,6 @@
 		<Row>
 			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>
-			<PrereqTech>TECH_ARCOLOGIES</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_PROMETHEUS_PROGRAM</TechType>

@@ -226,10 +226,31 @@ function JFD_GetRandomFW(lower, upper)
 end
 
 --------------------------------------------
--- Crawler unit
+-- Helpers
+--------------------------------------------
+local function CanHostAirUnits(pPlot)
+    if not pPlot then return false end
+    if pPlot:IsCity() then return true end
+    -- TODO: 항모/미사일 수용 유닛 체크를 원하면 여기에 추가
+    return false
+end
+
+local function SpawnAirSafely(pPlayer, iUnitType, pPlot)
+    if CanHostAirUnits(pPlot) then
+        return pPlayer:InitUnit(iUnitType, pPlot:GetX(), pPlot:GetY())
+    end
+    local cap = pPlayer:GetCapitalCity()
+    if cap then
+        return pPlayer:InitUnit(iUnitType, cap:GetX(), cap:GetY())
+    end
+    return pPlayer:InitUnit(iUnitType, pPlot:GetX(), pPlot:GetY())
+end
+
+--------------------------------------------
+-- Crawler unit (최소 수정)
 --------------------------------------------
 local iChanceMissileProduction = 25
-local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
+local iGuidemissile = GameInfoTypes.UNIT_GUIDED_MISSILE
 
 function CrawlerEffectsFW(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -237,20 +258,22 @@ function CrawlerEffectsFW(iPlayer)
 		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_CRAWLER"]) then
 			--print("Crawler found")
 			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
-			if (iCheckForMissileProduction < iChanceMissileProduction) then
+			-- CHANGED: < -> <= (정확히 25%)
+			if (iCheckForMissileProduction <= iChanceMissileProduction) then
 				local pPlot = pUnit:GetPlot()
 				if (pPlot ~= nil) then
 					local iNumMissiles = 0
 					for iVal = 0,(pPlot:GetNumUnits() - 1) do
 						local loopUnit = pPlot:GetUnit(iVal)
-						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_GUIDED_MISSILE"]) then
+						-- CHANGED: 상수 재사용 (오타/불일치 방지)
+						if (loopUnit:GetUnitType() == iGuidemissile) then
 							--print("Missile found")
 							iNumMissiles = iNumMissiles + 1
 						end
 					end
 					--print("Total missiles: " .. iNumMissiles)
 					if (iNumMissiles < 3) then
-						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
+						local pNewUnit = pPlayer:InitUnit(iGuidemissile, pPlot:GetX(), pPlot:GetY())
 					end
 				end
 			end
@@ -261,10 +284,10 @@ GameEvents.PlayerDoTurn.Add(CrawlerEffectsFW)
 
 
 --------------------------------------------
--- Angel unit
+-- Angel unit (최소 수정)
 --------------------------------------------
 local iChanceMissileProduction = 25
-local iHypermissile = GameInfoTypes.UNIT_FW_HYPERMISSILE
+local iThermomissile = GameInfoTypes.UNIT_FW_THERMOMISSILE
 local iNanohivePromotion = GameInfoTypes.PROMOTION_FW_NANOHIVE_PROMOTION
 
 function AngelEffectsFW(iPlayer)
@@ -273,20 +296,22 @@ function AngelEffectsFW(iPlayer)
 		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_ANGEL"]) then
 			--print("Angel found")
 			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
-			if (iCheckForMissileProduction < iChanceMissileProduction) then
+			-- CHANGED: < -> <=
+			if (iCheckForMissileProduction <= iChanceMissileProduction) then
 				local pPlot = pUnit:GetPlot()
 				if (pPlot ~= nil) then
 					local iNumMissiles = 0
 					for iVal = 0,(pPlot:GetNumUnits() - 1) do
 						local loopUnit = pPlot:GetUnit(iVal)
-						if (loopUnit:GetUnitType() == GameInfoTypes["UNIT_FW_HYPERMISSILE"]) then
+						-- CHANGED: 상수 재사용
+						if (loopUnit:GetUnitType() == iThermomissile) then
 							--print("Missile found")
 							iNumMissiles = iNumMissiles + 1
 						end
 					end
 					--print("Total missiles: " .. iNumMissiles)
 					if (iNumMissiles < 1) then
-						local pNewUnit = pPlayer:InitUnit(iHypermissile, pPlot:GetX(), pPlot:GetY())
+						local pNewUnit = pPlayer:InitUnit(iThermomissile, pPlot:GetX(), pPlot:GetY())
 					end
 				end
 			end
@@ -294,6 +319,7 @@ function AngelEffectsFW(iPlayer)
 	end
 end
 GameEvents.PlayerDoTurn.Add(AngelEffectsFW)
+
 
 --------------------------------------------
 -- PROMOTION
@@ -808,7 +834,7 @@ GameEvents.UnitPrekill.Add(OnUnitPrekill_ICBM)
 --======================================================================================================================
 -- Improvement
 --======================================================================================================================
-print("[Undersea Tunnel] script loaded")
+print("[FW] Undersea Tunnel script loaded")
 -- ==========================================================
 -- Undersea Tunnel: 설치 즉시 Railroad 생성 (바다+육지≤6칸 조건)
 --  - 두 이벤트 모두 훅: TileImprovementChanged + BuildFinished
