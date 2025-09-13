@@ -25,6 +25,7 @@ INSERT INTO	Unit_BuildingClassPurchaseRequireds
 			(UnitType, 				BuildingClassType)
 VALUES		('UNIT_ZEPPELIN',		'BUILDINGCLASS_ARMORY'),
 			('UNIT_WWI_ZEPPELIN',	'BUILDINGCLASS_ARMORY'),
+			('UNIT_PREDATOR_DRONE',	'BUILDINGCLASS_AIRPORT'),
 			('UNIT_PREDATOR_DRONE',	'BUILDINGCLASS_MILITARY_BASE');
 
 --------------------------------	
@@ -87,6 +88,17 @@ VALUES
     ('UNIT_PREDATOR_DRONE',     'PROMOTION_ANTI_TANK'),
     ('UNIT_PREDATOR_DRONE',     'PROMOTION_HOVERING_UNIT'),
     ('UNIT_PREDATOR_DRONE',     'PROMOTION_NO_DEFENSIVE_BONUSES');
+
+--------------------------------------
+-- Promotion route
+--------------------------------------
+INSERT OR IGNORE INTO UnitPromotions_UnitCombats
+    (PromotionType, UnitCombatType)
+SELECT PromotionType, 'UNITCOMBAT_HELICOPTER'
+FROM UnitPromotions_UnitCombats
+WHERE UnitCombatType = 'UNITCOMBAT_RECON';
+
+
 
 --------------------------------	
 -- Unit_Flavors

@@ -232,41 +232,24 @@ INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
 VALUES ('ART_DEF_UNIT_ZEPPELIN_AIRSHIP', 'Unit', 'WWI_Zeppelin_SV.dds'); 
 
 
-/*
 
--- ① UnitInfos
-INSERT INTO ArtDefine_UnitInfos (Type, DamageStates, Formation)
-VALUES ('ART_DEF_UNIT_ZEPPELIN_AIRSHIP', 1, 'FighterWing');
+-- =======================================================================================================
+--		Mutant
+-- =======================================================================================================
+INSERT INTO "ArtDefine_UnitInfos" ('Type','DamageStates','Formation')
+	SELECT	("ART_DEF_UNIT_FW_MUTANT"), "DamageStates", ("Barbarian")
+	FROM "ArtDefine_UnitInfos" WHERE (Type = "ART_DEF_UNIT_U_AZTEC_JAGUAR");
+INSERT INTO "ArtDefine_UnitInfoMemberInfos" ('UnitInfoType','UnitMemberInfoType','NumMembers')
+	VALUES	("ART_DEF_UNIT_FW_MUTANT", "ART_DEF_UNIT_MEMBER_FW_MUTANT", "1");
 
--- ② UnitMemberInfos
-INSERT INTO ArtDefine_UnitMemberInfos
-       (Type,                                Scale, Domain, Model,                 MaterialTypeTag, MaterialTypeSoundOverrideTag)
-VALUES ('ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP', 0.16, 'Air',  'ZeppelinTC.fxsxml', 'METAL',         'METALLRG');
-
--- ③ 연결
-INSERT INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType,                    UnitMemberInfoType,                   NumMembers)
-VALUES ('ART_DEF_UNIT_ZEPPELIN_AIRSHIP',  'ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP', 1);
-
--- ④ Combats (원문 유지할 거면 그대로, 권장값은 숫자 플래그)
-INSERT OR REPLACE INTO ArtDefine_UnitMemberCombats
-       (UnitMemberType,                            EnableActions,              AttackRadius, MoveRate, TurnRateMin, TurnRateMax, HasRefaceAfterCombat, HasShortRangedAttack, HasIndependentWeaponFacing)
-VALUES ('ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP', 'Idle Attack Bombard Death Run', 135.0,      2.0,     0.25,       0.5,        0,                   1,                    1);
-
--- ⑤ 무기
-DELETE FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP';
-
-INSERT INTO ArtDefine_UnitMemberCombatWeapons
-       (UnitMemberType,                           "Index", SubIndex, ProjectileSpeed, HitEffect,                                                  HitRadius, WeaponTypeTag, WeaponTypeSoundOverrideTag)
-VALUES ('ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP',   0,       0,        3.0,            'ART_DEF_VEFFECT_FIGHTER_MACHINE_GUN_HIT_$(TERRAIN)',        15.0,     'BULLETHC',   'BULLETHC');
-
-INSERT INTO ArtDefine_UnitMemberCombatWeapons
-       (UnitMemberType,                           "Index", SubIndex, ProjectileArtInfo,          ProjectileSpeed, HitEffect,                           HitRadius, WeaponTypeTag, WeaponTypeSoundOverrideTag)
-VALUES ('ART_DEF_UNIT_MEMBER_ZEPPELIN_AIRSHIP',   1,       0,        'ART_DEF_PROJECTILE_BOMB',  2.5,            'ART_DEF_VEFFECT_BOMB_IMPACT_MD',    25.0,     'BOMB',      'BOMB');
-
--- ⑥ 전략뷰 (유닛 키로!)
-INSERT INTO ArtDefine_StrategicView (StrategicViewType,           TileType, Asset)
-VALUES                              ('ART_DEF_UNIT_ZEPPELIN_AIRSHIP', 'Unit',  'WWI_Zeppelin_SV.dds');
-
-
-/*
-
+INSERT INTO "ArtDefine_UnitMemberCombats" ('UnitMemberType', 'EnableActions', 'DisableActions', 'MoveRadius', 'ShortMoveRadius', 'ChargeRadius', 'AttackRadius', 'RangedAttackRadius', 'MoveRate', 'ShortMoveRate', 'TurnRateMin', 'TurnRateMax', 'TurnFacingRateMin', 'TurnFacingRateMax', 'RollRateMin', 'RollRateMax', 'PitchRateMin', 'PitchRateMax', 'LOSRadiusScale', 'TargetRadius', 'TargetHeight', 'HasShortRangedAttack', 'HasLongRangedAttack', 'HasLeftRightAttack', 'HasStationaryMelee', 'HasStationaryRangedAttack', 'HasRefaceAfterCombat', 'ReformBeforeCombat', 'HasIndependentWeaponFacing', 'HasOpponentTracking', 'HasCollisionAttack', 'AttackAltitude', 'AltitudeDecelerationDistance', 'OnlyTurnInMovementActions', 'RushAttackFormation')
+	SELECT	("ART_DEF_UNIT_MEMBER_FW_MUTANT"), "EnableActions", "DisableActions", "MoveRadius", "ShortMoveRadius", "ChargeRadius", "AttackRadius", "RangedAttackRadius", 
+			"MoveRate", "ShortMoveRate", "TurnRateMin", "TurnRateMax", "TurnFacingRateMin", "TurnFacingRateMax", "RollRateMin", "RollRateMax", "PitchRateMin", "PitchRateMax", "LOSRadiusScale", "TargetRadius", "TargetHeight", "HasShortRangedAttack", "HasLongRangedAttack", "HasLeftRightAttack", "HasStationaryMelee", "HasStationaryRangedAttack", "HasRefaceAfterCombat", "ReformBeforeCombat", "HasIndependentWeaponFacing", "HasOpponentTracking", "HasCollisionAttack", "AttackAltitude", "AltitudeDecelerationDistance", "OnlyTurnInMovementActions", "RushAttackFormation"
+	FROM "ArtDefine_UnitMemberCombats" WHERE (UnitMemberType = "ART_DEF_UNIT_MEMBER_U_AZTEC_JAGUAR");
+INSERT INTO "ArtDefine_UnitMemberCombatWeapons" ('UnitMemberType', 'Index', 'SubIndex', 'ID', 'VisKillStrengthMin', 'VisKillStrengthMax', 'ProjectileSpeed', 'ProjectileTurnRateMin', 'ProjectileTurnRateMax', 'HitEffect', 'HitEffectScale', 'HitRadius', 'ProjectileChildEffectScale', 'AreaDamageDelay', 'ContinuousFire', 'WaitForEffectCompletion', 'TargetGround', 'IsDropped', 'WeaponTypeTag', 'WeaponTypeSoundOverrideTag')
+	SELECT ("ART_DEF_UNIT_MEMBER_FW_MUTANT"), "Index", "SubIndex", "ID", "VisKillStrengthMin", "VisKillStrengthMax", "ProjectileSpeed", "ProjectileTurnRateMin", "ProjectileTurnRateMax", "HitEffect", "HitEffectScale", "HitRadius", "ProjectileChildEffectScale", "AreaDamageDelay", "ContinuousFire", "WaitForEffectCompletion", "TargetGround", "IsDropped", "WeaponTypeTag", "WeaponTypeSoundOverrideTag"
+	FROM "ArtDefine_UnitMemberCombatWeapons" WHERE (UnitMemberType = "ART_DEF_UNIT_MEMBER_U_AZTEC_JAGUAR");
+INSERT INTO "ArtDefine_UnitMemberInfos" ("Type", "Scale", "ZOffset", "Domain", "Model", "MaterialTypeTag", "MaterialTypeSoundOverrideTag")
+	SELECT	("ART_DEF_UNIT_MEMBER_FW_MUTANT"), "0.28", "ZOffset", "Domain", 
+			("zombie.fxsxml"), "MaterialTypeTag", "MaterialTypeSoundOverrideTag"
+	FROM "ArtDefine_UnitMemberInfos" WHERE (Type = "ART_DEF_UNIT_MEMBER_U_AZTEC_JAGUAR");
