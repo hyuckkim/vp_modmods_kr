@@ -334,7 +334,7 @@ Name: "wm"; Description: "노동자 등산 (Worker Mountaineering)"; Types: VPMA
 
 Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+;Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
