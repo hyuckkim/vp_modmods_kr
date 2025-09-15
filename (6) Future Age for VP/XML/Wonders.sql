@@ -3,7 +3,7 @@
 ----------------------------------------------------
 INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, IconAtlas, NukeImmune, NumPoliciesNeeded, WonderSplashImage, WonderSplashAnchor) VALUES
 ('BUILDING_FW_SKYTREE',     	  	 	'TECH_GLOBALIZATION',                 3250, 'ART_DEF_BUILDING_LABORATORY',   0,'BW_ATLAS_SKYTREE', 	  		1, 28, 		'SkyTree_splash.dds', 				'R,T'),
-('BUILDING_FW_GENE_VAULT', 				'TECH_ECOGENETICS',                   3500, 'ART_DEF_BUILDING_LABORATORY',  42,'CIV_COLOR_ATLAS_FW_3',  	1, 28, 		'GeneVault_Splash.dds',		 		'L,T'),
+('BUILDING_FW_GENE_VAULT', 				'TECH_ECOGENETICS',                   3500, 'ART_DEF_BUILDING_LABORATORY',  11,'TCS_MOD_ICON_ATLAS',     	1, 28, 		'GeneVault_Splash.dds',		 		'L,T'),
 ('BUILDING_FW_SHANGHAI_WFC', 		    'TECH_GRID_COMPUTING', 	              3500, 'ART_DEF_BUILDING_LABORATORY',   1,'BW_ATLAS_CHINESE_NEW_YEAR', 1, 28, 		'SHANGHAI_WFC_splash.dds', 			'L,T'),
 ('BUILDING_FW_VIRTUAL_IDOL', 			'TECH_METAVERSE',                     3500, 'ART_DEF_BUILDING_LABORATORY',  17,'CIV_COLOR_ATLAS_FW_3',   	1, 28, 		'VirtualIdol_Splash.dds',		 	'L,T'),
 ('BUILDING_FW_NANO_INSTITUTE',    	 	'TECH_NANOMATERIALS',                 3500, 'ART_DEF_BUILDING_LABORATORY',  17,'CIV_COLOR_ATLAS_FW_2',  	1, 28, 		'SkyTree_splash_a.dds', 			'L,T'),
@@ -37,7 +37,7 @@ INSERT INTO Buildings (Type, PrereqTech, Cost, ArtDefineTag, PortraitIndex, Icon
 UPDATE Buildings
 SET BuildingClass = 'BUILDINGCLASS_'||SUBSTR(Type,10), Description = 'TXT_KEY_'||Type,
 	Civilopedia = 'TXT_KEY_'||Type||'_PEDIA', Quote = 'TXT_KEY_'||Type||'_QUOTE', Help = 'TXT_KEY_'||Type||'_HELP',
-	MinAreaSize = -1, HurryCostModifier = -20, ConquestProb = 100
+	MinAreaSize = -1, HurryCostModifier = -5, ConquestProb = 100
 WHERE Type IN (
 'BUILDING_FW_NANO_INSTITUTE',
 'BUILDING_FW_APEX_CENTRE',

@@ -92,7 +92,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_FW_ECOGENETICS_TITLE','생태유전학'),
 ('TXT_KEY_TECH_FW_ECOGENETICS_DESC','기존의 환경보호 운동은 인간 활동에 맞서 자연을 지키고자 하였으나, 종종 인간과 자연을 서로 분리된 존재로 인식하는 한계를 지니고 있었습니다. 그러나 유전학 연구가 발전하고 생태계에 대한 이해가 깊어지면서, 인간과 환경을 단일한 통합 시스템의 일부로 바라보려는 움직임이 점점 확산되고 있습니다.[NEWLINE]생태유전학은 생태계 속에서 유전적 다양성과 적응 과정을 연구하며, 특정 종의 유전 정보가 환경 변화와 어떻게 상호작용하는지를 과학적으로 분석합니다. 이를 통해 인간과 생태계 모두의 유전자 풀을 보존하고, 환경 변화에 대응하는 생물학적 메커니즘을 밝혀내는 데 중요한 기여를 하고 있습니다.[NEWLINE]또한 일부 신우생학적 관점에서는 환경을 보존하는 것에서 한 걸음 더 나아가, 인간과 생태계 모두가 유전적 정보를 바탕으로 보다 조화롭게 공존할 수 있는 방향을 모색해야 한다고 주장합니다. 이러한 시도는 생태계 파괴를 최소화하고 유전적 다양성을 유지하며, 궁극적으로 인간과 자연이 상호 의존적인 균형 속에서 지속 가능한 진화를 이룰 수 있도록 돕는 데 목적을 두고 있습니다.'),
-('TXT_KEY_TECH_FW_ECOGENETICS_HELP','우생학에 따른 신체가 뛰어난 유전자 선별 용병과 숲과 정글, 초원과 평원의 생산 산출량을 증가시키는 생태친화시설과 친환경 마을을 건설할 수 있습니다. 스발바르 국제 종자저장고를 건설할 수 있습니다.'),
+('TXT_KEY_TECH_FW_ECOGENETICS_HELP','우생학에 따른 신체가 뛰어난 유전자 선별 용병과 숲과 정글, 초원과 평원의 생산 산출량을 증가시키는 생태친화시설과 친환경 마을을 건설할 수 있습니다. 백두대간 글로벌 시드볼트를 건설할 수 있습니다.'),
 ('TXT_KEY_TECH_FW_ECOGENETICS_QUOTE','[NEWLINE][TAB][TAB]"모든 생명체는 밀접하게 연결되어 있으며, 이러한 친밀함으로부터 식별 능력이 태어나고, 그 자연스러운 결과로 비폭력이 실천됩니다."[NEWLINE][TAB][TAB]- 아르네 나스[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_FW_GRID_COMPUTING_TITLE','분산 컴퓨터 공학'),
@@ -940,10 +940,10 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_SKYTREE_QUOTE', '[NEWLINE]''하늘에는 동서남북의 방향구분이 없다. 사람들은 자신의 마음으로 구별을 만들고 그것이 사실이라고 믿습니다.''[NEWLINE] - Buddha[NEWLINE]'),
 ('TXT_KEY_BUILDING_FW_SKYTREE_PEDIA', '도쿄 중심부의 스미다가와 강 근처에 지어진 도쿄 스카이트리는 도시 대부분에서 볼 수 있는 대형 방송 및 전망대입니다. 공사는 2008년 7월 14일에 시작되어 2012년 2월 29일까지 계속되었습니다. 총 높이 634미터(스카이트리가 위치한 지역의 이전 이름인 무사시를 대표하는 높이)의 도쿄 스카이트리는 일본에서 가장 높은 타워입니다. 세계에서 가장 높은 인공 건축물로 두바이의 부르즈 할리파에 이어 두 번째입니다. 이러한 높이는 방송탑으로서의 기능이 가능하기 위해 꼭 필요한 높이였다. 이전 버전인 도쿄 타워는 높이와 주변 고층 빌딩의 높이로 인해 간헐적으로 커버리지가 발생하는 문제에 직면했습니다. 탑의 디자인은 일본의 과거와 미래를 모두 상징하며, 일본 전역에서 국가 성취의 상징으로 잘 알려져 있습니다.'),
 -- Utsäde Gene Vault
-('TXT_KEY_BUILDING_FW_GENE_VAULT', '스발바르 국제종자저장고'),
+('TXT_KEY_BUILDING_FW_GENE_VAULT', '백두대간 글로벌 시드볼트'),
 ('TXT_KEY_BUILDING_FW_GENE_VAULT_HELP', '문명의 모든 [COLOR_POSITIVE_TEXT]자연보호구역[ENDCOLOR]의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], [COLOR_POSITIVE_TEXT]친환경마을[ENDCOLOR]의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 문명의 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]생태친화시설, 바이오 공장, 해양바이오산업단지[ENDCOLOR]의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 전역 [ICON_HAPPINESS_1]행복이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]도시의 [ICON_GREAT_WRITER]위대한 작가 출현율이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 해당 불가사의가 있는 도시의 국가 불가사의, 세계 불가사의 및 타일 시설이 제공하는 [ICON_CULTURE]문화의 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR]가 도시의 [ICON_TOURISM]관광에 추가됩니다. [ICON_GREAT_WORK]걸작 문학 슬롯 2개를 포함합니다.[NEWLINE][NEWLINE]테마보너스: [ICON_PEACE]신앙: +4, [ICON_GOLDEN_AGE]황금기 점수: +4 [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'),
 ('TXT_KEY_BUILDING_FW_GENE_VAULT_QUOTE', '[NEWLINE]''프로그램에 의해 결정되는 씨앗 안에 포함된 세계''[NEWLINE] - Dejan Stojanovic, ''Circling: 1978-1987''[NEWLINE]'),
-('TXT_KEY_BUILDING_FW_GENE_VAULT_PEDIA', '21세기 말에 접어들면서 멸종 수준의 증가와 기후 변화의 가능성에 대한 우려로 인해 다양한 유전자 샘플을 보관하는 유전자 은행의 수가 증가하고 있습니다. 이 중 가장 주목할 만한 것은 Utsäde Gene Vault로 2023년에 완공되었습니다. 완전히 자급자족할 수 있도록 첨단 ''녹색'' 기술을 활용하여 유전자 샘플의 중앙 저장소이자 네트워크로 연결된 연구 시설의 역할을 했습니다. , 전 세계 유전학 연구소와 정보를 공유합니다.'),
+('TXT_KEY_BUILDING_FW_GENE_VAULT_PEDIA', '21세기 말에 접어들면서 멸종 수준의 증가와 기후 변화의 가능성에 대한 우려로 인해 다양한 유전자 샘플을 보관하는 유전자 은행의 수가 증가하고 있습니다. 이 중 가장 주목할 만한 것은 백두대간 글로벌 시드볼트 **Utsäde Gene Vault**로 2023년에 완공되었습니다. 완전히 자급자족할 수 있도록 첨단 ''녹색'' 기술을 활용하여 유전자 샘플의 중앙 저장소이자 네트워크로 연결된 연구 시설의 역할을 했습니다. , 전 세계 유전학 연구소와 정보를 공유합니다.'),
 ('TXT_KEY_THEMING_BONUS_GENE_VAULT', '기후 변화 예술 작품'),
 ('TXT_KEY_GENE_VAULT_THEMING_BONUS_HELP', '보너스를 극대화하려면 모든 걸작 슬롯을 같은 시대에 [COLOR_POSITIVE_TEXT]같은 시대[ENDCOLOR] [COLOR_POSITIVE_TEXT]같은 문명[ENDCOLOR]이 만든 [COLOR_YELLOW]걸작 문학[ENDCOLOR]으로 채우십시오.'),
 -- Shanghai World Financial Center

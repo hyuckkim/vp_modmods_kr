@@ -688,13 +688,13 @@ WHERE Type = 'BUILDING_FW_DRONE_HIVE';
 -- --  sky rail hub
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, RequiresIndustrialCityConnection = 1, FinishLandTRTourism = 10, TradeRouteLandGoldBonus = 50, TradeRouteLandDistanceModifier = 25
+SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, RequiresIndustrialCityConnection = 1, FinishLandTRTourism = 10, TradeRouteLandGoldBonus = 50, BuildingProductionModifier = 15, TradeRouteLandDistanceModifier = 25
 WHERE Type = 'BUILDING_FW_SKYRAIL_HUB';
 -- ----------------------------------------------
 -- -- Comm Module
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 6, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1, NoUnhappfromXSpecialists = 1, BuildingProductionModifier = 15, MutuallyExclusiveGroup = 26801
+SET NukeImmune = 1, GoldMaintenance = 6, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
 WHERE Type = 'BUILDING_FW_LAGRANGE_COMMERCIAL';
 -- ----------------------------------------------
 -- -- Engineering Module
@@ -1481,16 +1481,11 @@ VALUES
 	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_MOAI',                        'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_KUNA',                        'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_KASBAH',                      'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_ENCAMPMENT_SHOSHONE',         'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_FEITORIA',                    'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE', 	 'IMPROVEMENT_SPAIN_HACIENDA',              'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_SIHEYUAN',                    'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_OTTOMAN_TERSANE',             'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',  'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',  'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_INDONESIA_KAMPONG',           'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_MONGOLIA_ORDO',               'YIELD_GOLD',       2), 
-	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_ZULU_KRAAL',                  'YIELD_GOLD',       2), 
+	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_CHATEAU',                     'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_TRADING_POST',                'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_FW_GENERATOR',                'YIELD_GOLD',       2), 
 	('BUILDING_FW_NETWORK_BACKBONE',     'IMPROVEMENT_FW_GENERATOR_WATER',          'YIELD_GOLD',       2), 
@@ -1539,14 +1534,8 @@ VALUES
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FORT', 					    'YIELD_SCIENCE', 	2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				    'YIELD_GOLD', 		2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CITADEL', 				    'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				    'YIELD_GOLD', 		2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_ZULU_KRAAL', 				    'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			    'YIELD_GOLD', 		2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CELTS_OPPIDUM', 			    'YIELD_SCIENCE', 	2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			    'YIELD_GOLD', 		2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_MONGOLIA_ORDO', 			    'YIELD_SCIENCE', 	2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		    'YIELD_GOLD', 		2),
-	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_OTTOMAN_TERSANE', 		    'YIELD_SCIENCE', 	2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 			    	'YIELD_GOLD', 		2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_CHATEAU', 				    'YIELD_SCIENCE', 	2),
 	('BUILDING_FW_AI_NETWORK', 		 	 'IMPROVEMENT_FEITORIA', 				    'YIELD_GOLD', 		2),
@@ -1557,6 +1546,69 @@ VALUES
 	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_ARCOLOGY',   			    'YIELD_CULTURE', 	2),
 	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	    'YIELD_GOLD', 		2),
 	('BUILDING_FW_CENTRAL_COMMAND', 	 'IMPROVEMENT_FW_WATER_ARCOLOGY',   	    'YIELD_CULTURE', 	2);
+
+-- Network Backbone 관련
+INSERT INTO Building_ImprovementYieldChanges
+    (BuildingType, ImprovementType, YieldType, Yield)
+SELECT 'BUILDING_FW_NETWORK_BACKBONE', 'IMPROVEMENT_OTTOMAN_TERSANE', 'YIELD_GOLD', 2
+WHERE EXISTS (SELECT 1 FROM Buildings WHERE Type='BUILDING_FW_NETWORK_BACKBONE')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_OTTOMAN_TERSANE')
+  AND NOT EXISTS (
+    SELECT 1 FROM Building_ImprovementYieldChanges
+    WHERE BuildingType='BUILDING_FW_NETWORK_BACKBONE'
+      AND ImprovementType='IMPROVEMENT_OTTOMAN_TERSANE'
+      AND YieldType='YIELD_GOLD'
+  );
+
+INSERT INTO Building_ImprovementYieldChanges
+    (BuildingType, ImprovementType, YieldType, Yield)
+SELECT 'BUILDING_FW_NETWORK_BACKBONE', 'IMPROVEMENT_ENCAMPMENT_SHOSHONE', 'YIELD_GOLD', 2
+WHERE EXISTS (SELECT 1 FROM Buildings WHERE Type='BUILDING_FW_NETWORK_BACKBONE')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ENCAMPMENT_SHOSHONE')
+  AND NOT EXISTS (
+    SELECT 1 FROM Building_ImprovementYieldChanges
+    WHERE BuildingType='BUILDING_FW_NETWORK_BACKBONE'
+      AND ImprovementType='IMPROVEMENT_ENCAMPMENT_SHOSHONE'
+      AND YieldType='YIELD_GOLD'
+  );
+
+-- AI Network 관련
+INSERT INTO Building_ImprovementYieldChanges
+    (BuildingType, ImprovementType, YieldType, Yield)
+SELECT 'BUILDING_FW_AI_NETWORK', 'IMPROVEMENT_OTTOMAN_TERSANE', 'YIELD_GOLD', 2
+WHERE EXISTS (SELECT 1 FROM Buildings WHERE Type='BUILDING_FW_AI_NETWORK')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_OTTOMAN_TERSANE')
+  AND NOT EXISTS (
+    SELECT 1 FROM Building_ImprovementYieldChanges
+    WHERE BuildingType='BUILDING_FW_AI_NETWORK'
+      AND ImprovementType='IMPROVEMENT_OTTOMAN_TERSANE'
+      AND YieldType='YIELD_GOLD'
+  );
+
+INSERT INTO Building_ImprovementYieldChanges
+    (BuildingType, ImprovementType, YieldType, Yield)
+SELECT 'BUILDING_FW_AI_NETWORK', 'IMPROVEMENT_OTTOMAN_TERSANE', 'YIELD_SCIENCE', 2
+WHERE EXISTS (SELECT 1 FROM Buildings WHERE Type='BUILDING_FW_AI_NETWORK')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_OTTOMAN_TERSANE')
+  AND NOT EXISTS (
+    SELECT 1 FROM Building_ImprovementYieldChanges
+    WHERE BuildingType='BUILDING_FW_AI_NETWORK'
+      AND ImprovementType='IMPROVEMENT_OTTOMAN_TERSANE'
+      AND YieldType='YIELD_SCIENCE'
+  );
+
+INSERT INTO Building_ImprovementYieldChanges
+    (BuildingType, ImprovementType, YieldType, Yield)
+SELECT 'BUILDING_FW_AI_NETWORK', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_SCIENCE', 2
+WHERE EXISTS (SELECT 1 FROM Buildings WHERE Type='BUILDING_FW_AI_NETWORK')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_CELTS_OPPIDUM')
+  AND NOT EXISTS (
+    SELECT 1 FROM Building_ImprovementYieldChanges
+    WHERE BuildingType='BUILDING_FW_AI_NETWORK'
+      AND ImprovementType='IMPROVEMENT_CELTS_OPPIDUM'
+      AND YieldType='YIELD_SCIENCE'
+  );
+
 
 -----------------------------------------------------------------
 -- Building Plus theme

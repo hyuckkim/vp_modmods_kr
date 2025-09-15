@@ -95,35 +95,126 @@ VALUES
   ('IMPROVEMENT_MOAI',                        'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_KUNA',                        'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_KASBAH',                      'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
-  ('IMPROVEMENT_ENCAMPMENT_SHOSHONE',         'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_FEITORIA',                    'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_SPAIN_HACIENDA',              'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_SIHEYUAN',                    'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
-  ('IMPROVEMENT_OTTOMAN_TERSANE',             'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1), 
-  ('IMPROVEMENT_INDONESIA_KAMPONG',           'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_MONGOLIA_ORDO',               'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
-  ('IMPROVEMENT_ZULU_KRAAL',                  'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
+  ('IMPROVEMENT_CHATEAU',                     'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_FISHING_BOATS',               'IMPROVEMENT_FW_WATER_GENOCENTRE',    'YIELD_FOOD',       2, 1),
   ('IMPROVEMENT_CAMP',                        'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1),
   ('IMPROVEMENT_PASTURE',                     'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_PRODUCTION', 2, 1),
-  ('IMPROVEMENT_PLANTATION',                  'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1),
-  ('IMPROVEMENT_ROME_LATIFUNDIUM',            'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1);
+  ('IMPROVEMENT_PLANTATION',                  'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1);
 
+ -- For 4UCUA error fixed
+
+-- Ottoman Tersane
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+  (ImprovementType,                 OtherImprovementType,        YieldType,       Yield, NumRequired)
+SELECT
+  'IMPROVEMENT_OTTOMAN_TERSANE',    'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_OTTOMAN_TERSANE')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_OTTOMAN_TERSANE'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
+
+-- Shoshone Encampment
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+  (ImprovementType,                       OtherImprovementType,        YieldType,       Yield, NumRequired)
+SELECT
+  'IMPROVEMENT_ENCAMPMENT_SHOSHONE',      'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
+
+-- Indonesia Kampong
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+  (ImprovementType,                    OtherImprovementType,        YieldType,       Yield, NumRequired)
+SELECT
+  'IMPROVEMENT_INDONESIA_KAMPONG',     'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_INDONESIA_KAMPONG')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_INDONESIA_KAMPONG'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
+
+-- Zulu Kraal
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+  (ImprovementType,             OtherImprovementType,        YieldType,       Yield, NumRequired)
+SELECT
+  'IMPROVEMENT_ZULU_KRAAL',     'IMPROVEMENT_FW_COMM_ARRAY', 'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_ZULU_KRAAL')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type = 'IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ZULU_KRAAL'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
+
+
+-- Ethiopia Monolithic Church Hill
 INSERT INTO Improvement_YieldPerXAdjacentImprovement
 (ImprovementType,                                   OtherImprovementType,          YieldType,       Yield, NumRequired)
 SELECT 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL','IMPROVEMENT_FW_COMM_ARRAY',   'YIELD_CULTURE', 1,     1
-WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL');
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
 
+-- Ethiopia Monolithic Church Stone
 INSERT INTO Improvement_YieldPerXAdjacentImprovement
 (ImprovementType,                                    OtherImprovementType,         YieldType,       Yield,  NumRequired)
 SELECT 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE','IMPROVEMENT_FW_COMM_ARRAY',  'YIELD_CULTURE', 1,     1
-WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE');
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_FW_COMM_ARRAY')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_COMM_ARRAY'
+      AND YieldType = 'YIELD_CULTURE'
+  );
 
+-- Rome Latifundium
 INSERT INTO Improvement_YieldPerXAdjacentImprovement
 (ImprovementType,                                    OtherImprovementType,         YieldType,       Yield,  NumRequired)
 SELECT 'IMPROVEMENT_ROME_LATIFUNDIUM','IMPROVEMENT_FW_HYDROPONICS_DOME',  'YIELD_FOOD', 1,     1
-WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ROME_LATIFUNDIUM');
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ROME_LATIFUNDIUM')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_FW_HYDROPONICS_DOME')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ROME_LATIFUNDIUM'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_HYDROPONICS_DOME'
+      AND YieldType = 'YIELD_FOOD'
+  );
 
+-- Rome Latifundium ¡ê Genocentre
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+(ImprovementType, OtherImprovementType, YieldType, Yield, NumRequired)
+SELECT 'IMPROVEMENT_ROME_LATIFUNDIUM','IMPROVEMENT_FW_GENOCENTRE','YIELD_GOLD',2,1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ROME_LATIFUNDIUM')
+  AND EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_FW_GENOCENTRE')
+  AND NOT EXISTS (
+    SELECT 1 FROM Improvement_YieldPerXAdjacentImprovement
+    WHERE ImprovementType = 'IMPROVEMENT_ROME_LATIFUNDIUM'
+      AND OtherImprovementType = 'IMPROVEMENT_FW_GENOCENTRE'
+      AND YieldType = 'YIELD_GOLD'
+  );
 
 
 
@@ -219,9 +310,9 @@ VALUES
 	('IMPROVEMENT_FW_BIOWELL', 					'TECH_GENGINEERING', 	    	'YIELD_CULTURE', 	        1),
 	('IMPROVEMENT_MANUFACTORY', 			    'TECH_GENGINEERING',            'YIELD_GOLD',               3),
 	('IMPROVEMENT_FW_GENERATOR', 				'TECH_AGI', 		            'YIELD_GOLD', 	            1),
-	('IMPROVEMENT_CUSTOMS_HOUSE', 			    'TECH_AGI',                     'YIELD_SCIENCE',            3),
+	('IMPROVEMENT_ACADEMY', 			        'TECH_AGI',                     'YIELD_SCIENCE',            3),
 	('IMPROVEMENT_FW_HYDROPONICS_DOME', 		'TECH_SPACE_HABITATS', 	        'YIELD_SCIENCE', 	        1),
-	('IMPROVEMENT_ACADEMY', 			        'TECH_SPACE_HABITATS', 		    'YIELD_PRODUCTION',         3),	
+	('IMPROVEMENT_CUSTOMS_HOUSE', 			    'TECH_SPACE_HABITATS', 		    'YIELD_PRODUCTION',         3),	
 	('IMPROVEMENT_UNDERSEA_TUNNEL', 			'TECH_PLASMA_ENERGY',   	    'YIELD_GOLD',   	        5),
 	('IMPROVEMENT_FW_WATER_CORE', 				'TECH_DIGITAL_SOCIETY', 		'YIELD_CULTURE', 	        1),
 	('IMPROVEMENT_FW_CORE', 			    	'TECH_DIGITAL_SOCIETY', 		'YIELD_CULTURE',        	1),

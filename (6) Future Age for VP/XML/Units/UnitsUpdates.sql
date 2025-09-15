@@ -32,15 +32,28 @@ UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FW_RAILGUN_TANK' WHERE 
 -- Future
 --------------------------------------
 DELETE FROM Unit_ClassUpgrades
-WHERE UnitType = 'UNIT_ADVJET';
+WHERE UnitType IN ('UNIT_JET_FIGHTER','UNIT_ADVJET');
+
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
+SELECT 'UNIT_JET_FIGHTER', u.Class
+FROM Units u
+WHERE u.Type = 'UNIT_ADVJET'
+  AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_JET_FIGHTER')
+  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER');
 
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
 SELECT 'UNIT_ADVJET', 'UNITCLASS_FW_DRONE_FIGHTER_2'
-WHERE EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2');
+WHERE EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET')
+  AND EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2')
+  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_ADVJET');
 
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-SELECT 'UNIT_ADVJET', 'UNITCLASS_JET_FIGHTER'
-WHERE NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_ADVJET');
+SELECT 'UNIT_JET_FIGHTER', 'UNITCLASS_FW_DRONE_FIGHTER_2'
+WHERE NOT EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET')
+  AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_JET_FIGHTER')
+  AND EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2')
+  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER');
+
 
 
 --==========================================================================================================================	
