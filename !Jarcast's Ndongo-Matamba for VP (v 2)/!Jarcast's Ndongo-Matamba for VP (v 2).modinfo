@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="6cc3abfc-baaf-4aff-9c62-0757e0ed9944" version="1">
+<Mod id="6cc3abfc-baaf-4aff-9c62-0757e0ed9944" version="2">
   <Properties>
     <Name>!Jarcast's Ndongo-Matamba for VP</Name>
     <Stability>Beta</Stability>
@@ -48,6 +48,7 @@
     <File md5="43CBA3C4B4CFE243A9BE070C7FF81696" import="1">Art/IconAtlas/NdongoIconAtlas128.dds</File>
     <File md5="5EE96E5FC9ED2B5F48D95FD900B8A6B2" import="1">Art/IconAtlas/NdongoIconAtlas256.dds</File>
     <File md5="77A36A9561C4F75FB659ADE1C829ACF5" import="1">Art/IconAtlas/SV_Kilombo.dds</File>
+    <File md5="D377450C2C75DDBD86BADD5B5044717D" import="1">Art/IconAtlas/sv_MakunzeUTI.dds</File>
     <File md5="44A6632F7F9C568E8A790DA26C25DEEB" import="1">Art/Nzinga_Ambience.mp3</File>
     <File md5="7DDC5E80FC3217E2A11014DBC1000AFC" import="1">Art/Diplo/Ndongo.dds</File>
     <File md5="B30933C2B80BCFF501F3ECF570677D3B" import="1">Art/Promo/Jar_Ndongo_PI_016.dds</File>
@@ -107,10 +108,10 @@
     <File md5="92F5AF203ECC8991F4DA616AC180C89B" import="1">Art/UU2- Imbare/sv_Imbare.dds</File>
     <File md5="01A761333162B65776581CF6C01D58F4" import="1">Art/UU2- Imbare/flag_ImbareOG.dds</File>
     <File md5="E5D3EC07A5187AB0B3D63CDC52F38A24" import="0">Core/Jar_Ndongo_ModSupport.sql</File>
-    <File md5="C24581F99394043A67144E89E3B99A21" import="0">Core/Jar_Ndongo_ArtDefines.sql</File>
-    <File md5="10C288CE99A3C6879C9FC2F238552DD8" import="0">Core/Jar_Ndongo_GameDefines.sql</File>
-    <File md5="FCD232B2178ED80171ACB2BAD0FFC6F1" import="0">Core/Jar_Ndongo_GameText.xml</File>
-    <File md5="306FF5E07D261DCDA660AD8FB714285E" import="0">Lua/Jar_Ndongo_Functions.lua</File>
+    <File md5="01A6CB8FF3AF44B42BA8A4E25885CA6F" import="0">Core/Jar_Ndongo_ArtDefines.sql</File>
+    <File md5="A19AA371957610CE08698176F7CB0AB7" import="0">Core/Jar_Ndongo_GameDefines.sql</File>
+    <File md5="CCF3DC98D9FB71BD2614ED5280481B1E" import="0">Core/Jar_Ndongo_GameText.xml</File>
+    <File md5="614C993E3DA1F748E501827C57E8A036" import="0">Lua/Jar_Ndongo_Functions.lua</File>
   </Files>
   <Actions>
     <OnModActivated>

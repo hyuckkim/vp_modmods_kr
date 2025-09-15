@@ -38,7 +38,7 @@ local isUsingCBP  = Game_IsUsingMod(CBPmodID)
 local isUsingCBO  = Game_IsUsingMod(CBOmodID)
 local isUsingJPE  = Game_IsUsingMod(JPEPmodID)
 ----------------------------------------------------------------------------------------------------------------------------
---HasTrait
+-- HasTrait
 function HasTrait(pPlayer, traitID)
 	if Game_IsUsingMod(CBPmodID) then 
 		return pPlayer:HasTrait(traitID)
@@ -57,7 +57,7 @@ function GetRandom(lower, upper)
     return Game.Rand((upper + 1) - lower, "") + lower
 end
 -------------------------------------------------------------------------------------------------------------------------
---IsTraitActive
+-- IsTraitActive
 local slotComputerID = SlotStatus["SS_COMPUTER"]
 local slotTakenID = SlotStatus["SS_TAKEN"]
 function IsTraitActive(traitID)
@@ -73,7 +73,7 @@ function IsTraitActive(traitID)
 	return false
 end
 ------------------------------------------------------------------------------------------------------------------------
---GetStrongestMilitaryUnit (Sukritact)
+-- GetStrongestMilitaryUnit (Sukritact)
 function GetStrongestMilitaryUnit(pPlayer, bIgnoreResources, ...)
 	local tUnit = {["ID"] = GameInfoTypes.UNIT_WARRIOR, ["Combat"] = 0}
 	for iKey, sCombatType in pairs(arg) do
@@ -123,27 +123,39 @@ function Jar_GetTraitPlayerFromTeam(teamID, traitID)
 	end
 	return nil
 end
+-------------------------------------------------------------------------------------------------------------------------
+function Jar_GetRequiredResourceIDfromUnitID( unitID)
+	for row in DB.Query("SELECT a.ID UnitID, a.Type UnitType, c.ID ResID, c.Type ResType, b.Cost from Units a, Unit_ResourceQuantityRequirements b, Resources c WHERE a.Type= b.UnitType AND b.ResourceType= c.Type AND a.ID = '" .. unitID .. "'") do
+		if row.ResID == nil then
+			return -1
+		else
+			return row.ResID
+		end
+	end
+end
 --==========================================================================================================================
 -- UNIQUE FUNCTIONS
 --==========================================================================================================================
 -- GLOBALS
 --------------------------------------------------------------------------------------------------------------------------
-local iMod = ((GameInfo.GameSpeeds[Game.GetGameSpeedType()].BuildPercent)/100)
+local iMod = ((GameInfo.GameSpeeds[Game.GetGameSpeedType()].TrainPercent)/100)
 local iCiv = GameInfoTypes.CIVILIZATION_JAR_NDONGO
 local traitNdongoID = GameInfoTypes.TRAIT_JAR_NZINGA
 local g_IsTraitActive = IsTraitActive(traitNdongoID)
 local iCivilServant = GameInfoTypes.SPECIALIST_CIVIL_SERVANT
+local iTimerDummy = GameInfoTypes.BUILDING_JAR_NDUMMY
 ------------------------------------------------------------------------------------------------------------------------
 -- QUICK MOD BALANCING PANEL
 ------------------------------------------------------------------------------------------------------------------------
 -- Here are the changeable values that determine the strength of the effects described in the design.
 -- UA
 local GPbonus = 20
-local UALimit = 10
+local UALimit = 15
+local UADoWturns = math.floor(10 *iMod)
 
 -- UU
-local MakunzeScienceTurns = 2
-local MakunzeSciencePercent = 15
+local MakunzeScienceTurns = 5
+local MakunzeSciencePercent = 20
 --========================================================================================================================
 -- FUNCTIONS
 --========================================================================================================================
@@ -192,11 +204,23 @@ function Jar_UABonusFromAllyCSOrMakunze(playerID)
 end
 if g_IsTraitActive then	GameEvents.PlayerDoTurn.Add(Jar_UABonusFromAllyCSOrMakunze) end
 
+function Jar_TicTokChickenClock(iPlayer)
+	local pPlayer = Players[iPlayer]
+	if HasTrait(pPlayer, traitNdongoID) and pPlayer:IsAlive() and pPlayer:CountNumBuildings(iTimerDummy) >0 then
+		local pCapital = pPlayer:GetCapitalCity();
+		local num = pCapital:GetNumBuilding(iTimerDummy)
+		if num >0 then
+			pCapital:SetNumRealBuilding(iTimerDummy,  num -1 )
+		end
+	end
+end
+if g_IsTraitActive then GameEvents.PlayerDoTurn.Add(Jar_TicTokChickenClock) end;
+
 function Jar_CSgivesUnitsUponDoW(fromTeamID, toTeamID) -- attacking, defending
 	local fromPlayerHasTrait = Jar_GetTraitPlayerFromTeam(fromTeamID, traitNdongoID)
 	local toPlayerHasTrait = Jar_GetTraitPlayerFromTeam(toTeamID, traitNdongoID)
-	if fromPlayerHasTrait then
-		print("Defending Civ: " .. Locale.ConvertTextKey( GameInfo.Civilizations[fromPlayerHasTrait:GetCivilizationType()].ShortDescription))
+	if fromPlayerHasTrait and fromPlayerHasTrait:CountNumBuildings(iTimerDummy) <1 and not Players[Teams[toTeamID]:GetLeaderID()]:IsMinorCiv() then
+		print("Attacking Civ: " .. Locale.ConvertTextKey( GameInfo.Civilizations[fromPlayerHasTrait:GetCivilizationType()].ShortDescription))
         local count = 0
         for i = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_PLAYERS - 2 do
 			local CSPlayer = Players[i]
@@ -209,20 +233,21 @@ function Jar_CSgivesUnitsUponDoW(fromTeamID, toTeamID) -- attacking, defending
 			end
 		end
 		local pCapital = fromPlayerHasTrait:GetCapitalCity();
-		local unitID = GetStrongestMilitaryUnit(fromPlayerHasTrait, false, "UNITCOMBAT_MELEE", "UNITCOMBAT_GUN", "UNITCOMBAT_ARCHER", "UNITCOMBAT_MOUNTED", "UNITCOMBAT_ARMOR")
+		pCapital:SetNumRealBuilding(iTimerDummy,  UADoWturns)
 		for i = 1, count, 1 do 
 			local iUnitsTotal = fromPlayerHasTrait:GetNumUnitsSupplied();
 			local iUnitsSupply = fromPlayerHasTrait:GetNumUnitsToSupply();
 			if iUnitsSupply < iUnitsTotal then
 				print("[" .. i .. "] Military Supply: " .. iUnitsSupply .. "/" .. iUnitsTotal)
-				local pNew = fromPlayerHasTrait:InitUnit(unitID, 	pCapital:GetX(), pCapital:GetY());
+				local pNew = fromPlayerHasTrait:InitUnit(GetStrongestMilitaryUnit(fromPlayerHasTrait, false, "UNITCOMBAT_MELEE", "UNITCOMBAT_GUN", "UNITCOMBAT_ARCHER", "UNITCOMBAT_MOUNTED", "UNITCOMBAT_ARMOR"), 	pCapital:GetX(), pCapital:GetY());
+				--local pNew = fromPlayerHasTrait:InitUnit(fromPlayerHasTrait:GetCompetitiveSpawnUnitType(true, false, false, true, false, true, true, {UNITCOMBAT_MELEE, UNITCOMBAT_GUN, UNITCOMBAT_ARCHER, UNITCOMBAT_MOUNTED, UNITCOMBAT_ARMOR}), 	pCapital:GetX(), pCapital:GetY());
 				pNew:JumpToNearestValidPlot()
 				pNew:SetExperience(pCapital:GetDomainFreeExperience(pNew:GetDomainType()))
 			end
 		end
 		
-	elseif toPlayerHasTrait then
-		print("Attacking Civ: " .. Locale.ConvertTextKey( GameInfo.Civilizations[toPlayerHasTrait:GetCivilizationType()].ShortDescription))
+	elseif toPlayerHasTrait and toPlayerHasTrait:CountNumBuildings(iTimerDummy) <1 and not Players[Teams[fromTeamID]:GetLeaderID()]:IsMinorCiv() then
+		print("Defending Civ: " .. Locale.ConvertTextKey( GameInfo.Civilizations[toPlayerHasTrait:GetCivilizationType()].ShortDescription))
         local count = 0
         for i = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_PLAYERS - 2 do
 			local CSPlayer = Players[i]
@@ -235,13 +260,14 @@ function Jar_CSgivesUnitsUponDoW(fromTeamID, toTeamID) -- attacking, defending
 			end
 		end
 		local pCapital = toPlayerHasTrait:GetCapitalCity();
-		local unitID = GetStrongestMilitaryUnit(toPlayerHasTrait, false, "UNITCOMBAT_MELEE", "UNITCOMBAT_GUN", "UNITCOMBAT_ARCHER", "UNITCOMBAT_MOUNTED", "UNITCOMBAT_ARMOR")
+		pCapital:SetNumRealBuilding(iTimerDummy,  UADoWturns)
 		for i = 1, count, 1 do 
 			local iUnitsTotal = toPlayerHasTrait:GetNumUnitsSupplied();
 			local iUnitsSupply = toPlayerHasTrait:GetNumUnitsToSupply();
 			if iUnitsSupply < iUnitsTotal then
 				print("[" .. i .. "] Military Supply: " .. iUnitsSupply .. "/" .. iUnitsTotal)
-				local pNew = toPlayerHasTrait:InitUnit(unitID, 	pCapital:GetX(), pCapital:GetY());
+				local pNew = toPlayerHasTrait:InitUnit(GetStrongestMilitaryUnit(toPlayerHasTrait, false, "UNITCOMBAT_MELEE", "UNITCOMBAT_GUN", "UNITCOMBAT_ARCHER", "UNITCOMBAT_MOUNTED", "UNITCOMBAT_ARMOR"), 	pCapital:GetX(), pCapital:GetY());
+				--local pNew = toPlayerHasTrait:InitUnit(toPlayerHasTrait:GetCompetitiveSpawnUnitType(true, false, false, true, false, true, true, {UNITCOMBAT_MELEE, UNITCOMBAT_GUN, UNITCOMBAT_ARCHER, UNITCOMBAT_MOUNTED, UNITCOMBAT_ARMOR}), 	pCapital:GetX(), pCapital:GetY());
 				pNew:JumpToNearestValidPlot()
 				pNew:SetExperience(pCapital:GetDomainFreeExperience(pNew:GetDomainType()))
 			end
@@ -259,7 +285,8 @@ function Jar_CSgivesUnitsAtWar(csID, playerID, bGained, oldValue, newValue)
 			print("Military Supply: " .. iUnitsSupply .. "/" .. iUnitsTotal)
 			local pCapital = pPlayer:GetCapitalCity();
 			local unitID = GetStrongestMilitaryUnit(pPlayer, false, "UNITCOMBAT_MELEE", "UNITCOMBAT_GUN", "UNITCOMBAT_ARCHER", "UNITCOMBAT_MOUNTED", "UNITCOMBAT_ARMOR")
-			local pNew = pPlayer:InitUnit(unitID, 	pCapital:GetX(), pCapital:GetY());
+			local pNew = pPlayer:InitUnit( unitID, 	pCapital:GetX(), pCapital:GetY());
+			--local pNew = pPlayer:InitUnit(pPlayer:GetCompetitiveSpawnUnitType(true, false, false, true, false, true, true, {UNITCOMBAT_MELEE, UNITCOMBAT_GUN, UNITCOMBAT_ARCHER, UNITCOMBAT_MOUNTED, UNITCOMBAT_ARMOR}), 	pCapital:GetX(), pCapital:GetY());
 			pNew:JumpToNearestValidPlot()
 			pNew:SetExperience(pCapital:GetDomainFreeExperience(pNew:GetDomainType()))
 		end
@@ -281,7 +308,7 @@ function Jar_MakunzeExpended(iPlayer, iUnit, iUnitType, iPlotX, iPlotY)
 		pTeamTechs:ChangeResearchProgress(iTech, iScience, iPlayer)
 		if pPlayer:IsHuman() then
 			local snum = MakunzeSciencePercent / 100
-			local bonus = (snum* pTeamTechs:GetResearchCost(iTech)) + iScience
+			local bonus = math.floor( (snum* pTeamTechs:GetResearchCost(iTech)) + iScience )
 			Events.AddPopupTextEvent(HexToWorld(ToHexFromGrid(Vector2(iPlotX, iPlotY))), "[COLOR_RESEARCH_STORED]+" .. bonus .. " [ENDCOLOR][ICON_RESEARCH]", 2)
 		end
 	end

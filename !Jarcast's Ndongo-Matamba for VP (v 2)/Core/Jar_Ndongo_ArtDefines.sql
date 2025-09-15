@@ -124,14 +124,16 @@ FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_SPEARMAN');
 -- ArtDefine_StrategicView
 ------------------------------
 INSERT INTO ArtDefine_StrategicView
-		(StrategicViewType,					TileType,		Asset)
-VALUES	('ART_DEF_IMPROVEMENT_JAR_KILOMBO',	'Improvement',	'SV_Kilombo.dds');
+		(StrategicViewType,					TileType,		Asset) 
+VALUES	('ART_DEF_IMPROVEMENT_JAR_KILOMBO',	'Improvement',	'SV_Kilombo.dds'),
+		('ART_DEF_IMPROVEMENT_JAR_MAKUNZE',	'Improvement',	'sv_MakunzeUTI.dds');
 --------------------------------------------------------------------------------------------------------------------------
 -- ArtDefine_LandmarkTypes
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ArtDefine_LandmarkTypes 
 		(Type,								LandmarkType,	FriendlyName)
-VALUES	('ART_DEF_IMPROVEMENT_JAR_KILOMBO',	'Improvement',	'Jar_Kilombo');
+VALUES	('ART_DEF_IMPROVEMENT_JAR_KILOMBO',	'Improvement',	'Jar_Kilombo'),
+		('ART_DEF_IMPROVEMENT_JAR_MAKUNZE',	'Improvement',	'Jar_Makunze');
 --------------------------------------------------------------------------------------------------------------------------
 -- ArtDefine_Landmarks
 --------------------------------------------------------------------------------------------------------------------------
@@ -150,8 +152,8 @@ VALUES 	('Any', 'UnderConstruction', 0.8,	'ART_DEF_IMPROVEMENT_JAR_KILOMBO',	'SN
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Audio_Sounds 
 		(SoundID, 								Filename, 		LoadType)
-VALUES	('SND_LEADER_MUSIC_JAR_NDONGO_PEACE',	'Nzinga_Peace',	'DynamicResident'),
-		('SND_LEADER_MUSIC_JAR_NDONGO_WAR',		'Nzinga_War', 	'DynamicResident'),		
+VALUES	('SND_LEADER_MUSIC_JAR_NZINGA_PEACE',	'Nzinga_Peace',	'DynamicResident'),
+		('SND_LEADER_MUSIC_JAR_NZINGA_WAR',		'Nzinga_War', 	'DynamicResident'),		
 		('SND_AMBIENCE_NDONGO',					'Nzinga_Ambience', 'DynamicResident');		--24.15 - 26.04
 --------------------------------------------------------------------------------------------------------------------------
 -- Audio_2DSounds
@@ -159,8 +161,8 @@ VALUES	('SND_LEADER_MUSIC_JAR_NDONGO_PEACE',	'Nzinga_Peace',	'DynamicResident'),
 INSERT INTO Audio_2DSounds 
 		(ScriptID, 								SoundID, 							SoundType, 		TaperSoundtrackVolume,	MinVolume, 	MaxVolume,  IsMusic, Looping)
 VALUES	('AS2D_AMBIENCE_LEADER_JAR_NZINGA_AMBIENCE',	'SND_AMBIENCE_NDONGO',		'GAME_SFX', 	0.0,					99, 		99, 		0, 		 1),
-		('AS2D_LEADER_MUSIC_JAR_NDONGO_PEACE',	'SND_LEADER_MUSIC_JAR_NDONGO_PEACE','GAME_MUSIC', 	-1.0,					45, 		45, 		1, 		 0),
-		('AS2D_LEADER_MUSIC_JAR_NDONGO_WAR', 	'SND_LEADER_MUSIC_JAR_NDONGO_WAR', 	'GAME_MUSIC', 	-1.0,					45, 		45, 		1,		 0);
+		('AS2D_LEADER_MUSIC_JAR_NZINGA_PEACE',	'SND_LEADER_MUSIC_JAR_NZINGA_PEACE','GAME_MUSIC', 	-1.0,					45, 		45, 		1, 		 0),
+		('AS2D_LEADER_MUSIC_JAR_NZINGA_WAR', 	'SND_LEADER_MUSIC_JAR_NZINGA_WAR', 	'GAME_MUSIC', 	-1.0,					45, 		45, 		1,		 0);
 --==========================================================================================================================
 -- COLOURS
 --==========================================================================================================================

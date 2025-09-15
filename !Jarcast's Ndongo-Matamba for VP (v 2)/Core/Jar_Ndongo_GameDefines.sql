@@ -12,7 +12,8 @@ INSERT OR REPLACE INTO CustomModOptions(Name, Value) VALUES ('EVENTS_GREAT_PEOPL
 ------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO BuildingClasses
 		(Type, 						DefaultBuilding, 		Description,					NoLimit)
-VALUES	('BUILDINGCLASS_JAR_NDONGO','BUILDING_JAR_NDONGO',	'TXT_KEY_BUILDING_JAR_NDONGO',	1);
+VALUES	('BUILDINGCLASS_JAR_NDONGO','BUILDING_JAR_NDONGO',	'TXT_KEY_BUILDING_JAR_NDONGO',	1),
+		('BUILDINGCLASS_JAR_NDUMMY','BUILDING_JAR_NDUMMY',	'TXT_KEY_BUILDING_JAR_NDUMMY',	1);
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================
@@ -20,14 +21,15 @@ VALUES	('BUILDINGCLASS_JAR_NDONGO','BUILDING_JAR_NDONGO',	'TXT_KEY_BUILDING_JAR_
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT OR REPLACE INTO Buildings
 (Type, 						 	BuildingClass, 				IsDummy,	Cost,	FaithCost,	GreatWorkCount,	PrereqTech,	MinAreaSize,	Description) VALUES	
-('BUILDING_JAR_NDONGO', 		'BUILDINGCLASS_JAR_NDONGO',		1,		-1,		-1,			-1,				null,		-1,				'TXT_KEY_BUILDING_JAR_NDONGO');
-UPDATE Buildings SET Defense = 300 WHERE TYPE = 'BUILDING_JAR_NDONGO';
+('BUILDING_JAR_NDONGO', 		'BUILDINGCLASS_JAR_NDONGO',		1,		-1,		-1,			-1,				null,		-1,				'TXT_KEY_BUILDING_JAR_NDONGO'),
+('BUILDING_JAR_NDUMMY', 		'BUILDINGCLASS_JAR_NDUMMY',		1,		-1,		-1,			-1,				null,		-1,				'TXT_KEY_BUILDING_JAR_NDUMMY');
+UPDATE Buildings SET Defense = 200 WHERE TYPE = 'BUILDING_JAR_NDONGO';
 ------------------------------
 -- Building_YieldChanges
 ------------------------------
 INSERT INTO Building_YieldChanges 	
 		(BuildingType, 			YieldType,	Yield)
-SELECT	'BUILDING_JAR_NDONGO',	Type,		3 FROM Yields WHERE Type IN ('YIELD_CULTURE', 'YIELD_PRODUCTION');
+SELECT	'BUILDING_JAR_NDONGO',	Type,		2 FROM Yields WHERE Type IN ('YIELD_CULTURE', 'YIELD_PRODUCTION');
 --==========================================================================================================================
 -- Builds
 --==========================================================================================================================
@@ -85,8 +87,8 @@ FROM Improvement_ValidTerrains WHERE ImprovementType = 'IMPROVEMENT_EMBASSY';
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Improvement_Yields
 		(ImprovementType, 			YieldType, Yield)
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	YieldType, Yield FROM Improvement_Yields WHERE ImprovementType IN ('IMPROVEMENT_FORT', 'IMPROVEMENT_TRADING_POST') UNION ALL
-SELECT	'IMPROVEMENT_JAR_MAKUNZE',	YieldType, Yield FROM Improvement_Yields WHERE ImprovementType='IMPROVEMENT_EMBASSY';
+SELECT	'IMPROVEMENT_JAR_KILOMBO',	YieldType, Yield FROM Improvement_Yields WHERE ImprovementType = 'IMPROVEMENT_TRADING_POST' UNION ALL
+SELECT	'IMPROVEMENT_JAR_MAKUNZE',	YieldType, Yield FROM Improvement_Yields WHERE ImprovementType = 'IMPROVEMENT_EMBASSY';
 
 INSERT INTO Improvement_Yields 	
 		(ImprovementType, 			YieldType,					Yield)
@@ -99,11 +101,10 @@ INSERT INTO Improvement_TechYieldChanges
 		(ImprovementType,			TechType,	YieldType,	Yield)
 SELECT	'IMPROVEMENT_JAR_MAKUNZE',	TechType,	YieldType,	Yield FROM Improvement_TechYieldChanges WHERE ImprovementType='IMPROVEMENT_EMBASSY' UNION ALL
 SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_FERTILIZER',			'YIELD_FOOD',		1 UNION ALL
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_CHEMISTRY',			'YIELD_SCIENCE',	2 UNION ALL
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_INDUSTRIALIZATION',	'YIELD_PRODUCTION',	2 UNION ALL
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_MILITARY_SCIENCE',	'YIELD_GREAT_GENERAL_POINTS', 1 UNION ALL
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_MILITARY_SCIENCE',	'YIELD_CULTURE_LOCAL', 2 UNION ALL
-SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_RADIO',				'YIELD_CULTURE',	2;
+SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_CHEMISTRY',			'YIELD_CULTURE_LOCAL', 2 UNION ALL
+SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_INDUSTRIALIZATION',	'YIELD_PRODUCTION',	1 UNION ALL
+SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_MILITARY_SCIENCE',	'YIELD_SCIENCE',	1 UNION ALL
+SELECT	'IMPROVEMENT_JAR_KILOMBO',	'TECH_RADIO',				'YIELD_CULTURE',	1;
 --------------------------------------------------------------------------------------------------------------------------
 -- Improvement_YieldPerXAdjacentImprovement
 --------------------------------------------------------------------------------------------------------------------------
@@ -189,7 +190,7 @@ INSERT INTO UnitPromotions
 ('PROMOTION_JAR_POMBO',		'TXT_KEY_PROMOTION_JAR_POMBO',		'TXT_KEY_PROMOTION_JAR_POMBO_HELP',		'AS2D_IF_LEVELUP',	0,				 0, 			1,				1, 			'JAR_NDONGO_PROMO_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_JAR_POMBO'),
 ('PROMOTION_JAR_IMBARE',	'TXT_KEY_PROMOTION_JAR_IMBARE',		'TXT_KEY_PROMOTION_JAR_IMBARE_HELP',	'AS2D_IF_LEVELUP',	0,				 0, 			1,				2, 			'JAR_NDONGO_PROMO_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_JAR_IMBARE');
 
-UPDATE UnitPromotions SET AlwaysHeal= 1, FightWellDamaged= 1 WHERE Type = 'PROMOTION_JAR_KILOMBO';
+UPDATE UnitPromotions SET AlwaysHeal= 1, FightWellDamaged= 1, IsLostOnMove=1 WHERE Type = 'PROMOTION_JAR_KILOMBO';
 UPDATE UnitPromotions SET AttackWoundedMod = 33 WHERE Type = 'PROMOTION_JAR_POMBO';
 UPDATE UnitPromotions SET RangedDefenseMod = 15, ExtraWithdrawal= 100 WHERE Type = 'PROMOTION_JAR_IMBARE';
 
@@ -197,6 +198,18 @@ INSERT INTO UnitPromotions
 		(Type, 					Description, 					 Help, 									Sound, 			LostWithUpgrade, OrderPriority, CannotBeChosen,	PortraitIndex, 	IconAtlas,				PediaType, 			PediaEntry)
 VALUES	('PROMOTION_UA_NDONGO',	'TXT_KEY_PROMOTION_UA_NDONGO',	 'TXT_KEY_PROMOTION_UA_NDONGO_HELP',	'AS2D_IF_LEVELUP',	0,				 0, 					1,				17, 'promoVP_atlas_02', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_UA_NDONGO');
 UPDATE UnitPromotions SET FriendlyLandsModifier = 20, NearbyCityCombatMod = 10, NearbyRange = 1 WHERE Type='PROMOTION_UA_NDONGO';
+------------------------------	
+-- UnitPromotions_UnitCombats
+------------------------------		
+INSERT INTO UnitPromotions_UnitCombats  	
+(PromotionType, 			UnitCombatType) VALUES
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_MELEE'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_GUN'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_RECON'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_MOUNTED'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_ARMOR'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_ARCHER'),
+('PROMOTION_JAR_KILOMBO',	'UNITCOMBAT_SIEGE');
 --==========================================================================================================================
 -- UNITS
 --==========================================================================================================================
@@ -478,8 +491,7 @@ VALUES	('TRAIT_JAR_NZINGA', 	'TXT_KEY_TRAIT_JAR_NZINGA',	 'TXT_KEY_TRAIT_JAR_NZI
 ------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Trait_NoBuilds	
 		(TraitType, 			BuildType)
-VALUES	('TRAIT_JAR_NZINGA',	'BUILD_TRADING_POST'),
-		('TRAIT_JAR_NZINGA',	'BUILD_FORT');
+VALUES	('TRAIT_JAR_NZINGA',	'BUILD_TRADING_POST');
 --------------------------------------------------------------------------------------------------------------------------	
 -- Trait_FreePromotionUnitCombats
 --------------------------------------------------------------------------------------------------------------------------	
