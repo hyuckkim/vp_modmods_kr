@@ -934,8 +934,7 @@
 			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 	</Improvement_ResourceTypes>
-	 <Improvement_Flavors>
-		<!-- VAULT: 항공/미사일 거점 (지상 항모+사일로) -->
+	<Improvement_Flavors>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_VAULT</ImprovementType>
 			<FlavorType>FLAVOR_AIR</FlavorType>
@@ -952,7 +951,6 @@
 			<Flavor>14</Flavor>
 		</Row>
 
-		<!-- COMM ARRAY: 통신/정찰/우주망 연계(시야·과학 성격) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
 			<FlavorType>FLAVOR_RECON</FlavorType>
@@ -969,7 +967,6 @@
 			<Flavor>8</Flavor>
 		</Row>
 
-		<!-- HYDROPONICS DOME: 식량+과학 기반 농업 단지 -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -986,7 +983,6 @@
 			<Flavor>6</Flavor>
 		</Row>
 
-		<!-- CORE: 문명 핵심 노드(과학/문화/금융 허브) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_CORE</ImprovementType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -1003,7 +999,6 @@
 			<Flavor>12</Flavor>
 		</Row>
 
-		<!-- WATER CORE: 해상/수변 코어(무역/금융/생산 보조) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_WATER_CORE</ImprovementType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -1011,7 +1006,7 @@
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_WATER_CORE</ImprovementType>
-			<FlavorType>FLAVOR_NAVAL_TILE</FlavorType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>14</Flavor>
 		</Row>
 		<Row>
@@ -1020,7 +1015,6 @@
 			<Flavor>8</Flavor>
 		</Row>
 
-		<!-- GENERATOR: 육상 발전 단지(SBSP 수전/전력 생산) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_GENERATOR</ImprovementType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -1037,10 +1031,9 @@
 			<Flavor>6</Flavor>
 		</Row>
 
-		<!-- GENERATOR_WATER: 해상 발전/레크테나 해상단지(무역/생산 보조) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_GENERATOR_WATER</ImprovementType>
-			<FlavorType>FLAVOR_NAVAL_TILE</FlavorType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
 			<Flavor>16</Flavor>
 		</Row>
 		<Row>
@@ -1054,7 +1047,6 @@
 			<Flavor>10</Flavor>
 		</Row>
 
-		<!-- BIOWELL: 바이오 에너지/위생(식량·행복·과학 보조) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_BIOWELL</ImprovementType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -1070,8 +1062,6 @@
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>8</Flavor>
 		</Row>
-
-		<!-- GENOCENTRE: 유전 연구/개량 거점(과학/의료/방어 보조) -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -1089,7 +1079,7 @@
 		</Row>
   </Improvement_Flavors>
 
-	<ArtDefine_LandmarkTypes>
+  <ArtDefine_LandmarkTypes>
 		<Row>
 			<Type>ART_DEF_IMPROVEMENT_FW_VAULT</Type>
 			<LandmarkType>Improvement</LandmarkType>
@@ -1135,6 +1125,31 @@
 			<LandmarkType>Improvement</LandmarkType>
 			<FriendlyName>FW_CORE</FriendlyName>
 		</Row>
+		<Row>
+			<Type>ART_DEF_IMPROVEMENT_FW_GENOCENTRE</Type>
+		    <LandmarkType>Improvement</LandmarkType>
+			<FriendlyName>FW_GENOCENTRE</FriendlyName>
+		</Row>
+		<Row>
+			 <Type>ART_DEF_IMPROVEMENT_FW_PRESERVE</Type>
+		     <LandmarkType>Improvement</LandmarkType>
+			 <FriendlyName>FW_PRESERVE</FriendlyName>
+		</Row>
+		<Row>
+			 <Type>ART_DEF_IMPROVEMENT_FW_ARCOLOGY</Type>
+			 <LandmarkType>Improvement</LandmarkType>
+			<FriendlyName>FW_ARCOLOGY</FriendlyName>
+		</Row>
+		<Row>
+			 <Type>ART_DEF_IMPROVEMENT_FW_FUNGAL_GROWTH</Type>
+			 <LandmarkType>Improvement</LandmarkType>
+			 <FriendlyName>FW_FUNGAL_GROWTH</FriendlyName>
+		</Row>
+        <!-- <Row>
+			 <Type>ART_DEF_IMPROVEMENT_FW_GREY_GOO</Type>
+			 <LandmarkType>Improvement</LandmarkType>
+			 <FriendlyName>FW_GREY_GOO</FriendlyName>
+		</Row> -->
 	</ArtDefine_LandmarkTypes>
 	
 	<ArtDefine_Landmarks>
@@ -1475,16 +1490,15 @@
 			<ResourceType>ART_DEF_RESOURCE_ALL</ResourceType>
 			<Model>FungalGrowth.fxsxml</Model>
 		</Row>
-
-		<Row>
+		<!-- <Row>
 			<Era>Any</Era>
 			<State>Any</State>
 			<Scale>1.4</Scale>
-			<ImprovementType>ART_DEF_IMPROVEMENT_FW_NONE</ImprovementType>
+			<ImprovementType>ART_DEF_IMPROVEMENT_FW_GREY_GOO</ImprovementType>
 			<LayoutHandler>SNAPSHOT</LayoutHandler>
 			<ResourceType>ART_DEF_RESOURCE_GREY_GOO</ResourceType>
 			<Model>GreyGoo.fxsxml</Model>
-		</Row>
+		</Row> -->
 	</ArtDefine_Landmarks>
 	<ArtDefine_StrategicView>
 		<Row>

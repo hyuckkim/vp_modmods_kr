@@ -7,8 +7,19 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_PLOT';
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset)
 SELECT 'ART_DEF_IMPROVEMENT_UNDERSEA_TUNNEL', 'Improvement', 'SV_Underseatunnel.dds';
 	
-INSERT INTO Improvements (Type,              Description,             Civilopedia,                    Help,                Water, AllowsWalkWater, OutsideBorders, RequiresXAdjacentLand, DestroyedWhenPillaged, DisplacePillager, ArtDefineTag, PortraitIndex, IconAtlas, UnitFreePromotion, OwnerOnly, NoTwoAdjacent)
-SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', 'TXT_KEY_UNDERSEA_TUNNEL_TEXT', 1,       1,              0,                 2,                       0,                   1,          'ART_DEF_IMPROVEMENT_FW_NETWORK_NODE', 30, 'FW_IMPROVEMENTS_ATLAS', 'PROMOTION_UNDERSEA_TUNNEL', 0, 1;
+INSERT INTO Improvements 
+(Type,              Description,             Civilopedia,                    Help,                Water, AllowsWalkWater, OutsideBorders, RequiresXAdjacentLand, DestroyedWhenPillaged, DisplacePillager, ArtDefineTag, PortraitIndex, IconAtlas, UnitFreePromotion, OwnerOnly, NoTwoAdjacent)
+SELECT 'IMPROVEMENT_UNDERSEA_TUNNEL', 
+       'TXT_KEY_UNDERSEA_TUNNEL', 
+       'TXT_KEY_UNDERSEA_TUNNEL_HELP', 
+       'TXT_KEY_UNDERSEA_TUNNEL_TEXT', 
+       1,       1,              0,                 2,                       0,                   1,          
+       'ART_DEF_IMPROVEMENT_FW_NETWORK_NODE', 
+       30, 
+       'FW_IMPROVEMENTS_ATLAS', 
+       NULL,    
+       0, 
+       1;
 
 INSERT INTO Builds (Type,                PrereqTech,                   ImprovementType,          RouteType,           Description,                Help,                             Recommendation, Water, CanBeEmbarked, Time, EntityEvent, HotKey, OrderPriority, IconIndex, IconAtlas)
 SELECT 'BUILD_UNDERSEA_TUNNEL', 'TECH_SEA_EXPLORE',    'IMPROVEMENT_UNDERSEA_TUNNEL',    'ROUTE_RAILROAD' , 'TXT_KEY_BUILD_UNDERSEA_TUNNEL', 'TXT_KEY_UNDERSEA_TUNNEL_HELP', 'TXT_KEY_BUILD_UNDERSEA_TUNNEL_REC', 1, 1, 300, 'ENTITY_EVENT_CHOP', 'KB_Z', 98, 31, 'FW_IMPROVEMENTS_ATLAS';
@@ -46,17 +57,11 @@ WHERE Type = 'IMPROVEMENT_UNDERSEA_TUNNEL';
 
 --===================================================================================================
 
-
--- VP 최신: Improvement_YieldPerXAdjacentImprovement (GAIN semantics)
--- NumRequired=1 → 1칸 인접할 때마다 +n
-
 INSERT INTO Improvement_YieldPerXAdjacentImprovement
   (ImprovementType, OtherImprovementType, YieldType, Yield, NumRequired)
 VALUES
-  -- 생산/과학
   ('IMPROVEMENT_MANUFACTORY',                 'IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',  'YIELD_PRODUCTION', 3, 1),
   ('IMPROVEMENT_ACADEMY',                     'IMPROVEMENT_FW_HERC',                'YIELD_SCIENCE',    3, 1),
-    -- 골드(Generator 인접)
   ('IMPROVEMENT_CUSTOMS_HOUSE',               'IMPROVEMENT_FW_GENERATOR',           'YIELD_GOLD',       1, 1),
   ('IMPROVEMENT_FW_INDUSTRIAL_COMPLEX',       'IMPROVEMENT_FW_GENERATOR',           'YIELD_GOLD',       1, 1),
   ('IMPROVEMENT_FW_HERC',                     'IMPROVEMENT_FW_GENERATOR',           'YIELD_GOLD',       1, 1),
@@ -75,12 +80,10 @@ VALUES
   ('IMPROVEMENT_FW_CORE',                     'IMPROVEMENT_FW_GENERATOR_WATER',     'YIELD_GOLD',       1, 1),
   ('IMPROVEMENT_FW_WATER_ARCOLOGY',           'IMPROVEMENT_FW_GENERATOR_WATER',     'YIELD_GOLD',       1, 1),
   ('IMPROVEMENT_FW_ARCOLOGY',                 'IMPROVEMENT_FW_GENERATOR_WATER',     'YIELD_GOLD',       1, 1),
-  -- 식량/과학 (Bio/Hydroponics 인접)
   ('IMPROVEMENT_FARM',                        'IMPROVEMENT_FW_BIOWELL',             'YIELD_FOOD',       1, 1),
   ('IMPROVEMENT_TERRACE_FARM',                'IMPROVEMENT_FW_BIOWELL',             'YIELD_FOOD',       1, 1),
   ('IMPROVEMENT_FARM',                        'IMPROVEMENT_FW_HYDROPONICS_DOME',    'YIELD_SCIENCE',    1, 1),
   ('IMPROVEMENT_TERRACE_FARM',                'IMPROVEMENT_FW_HYDROPONICS_DOME',    'YIELD_SCIENCE',    1, 1),
-  -- 문화 (Preserve 인접)
   ('IMPROVEMENT_FW_BIOWELL',                  'IMPROVEMENT_FW_PRESERVE',            'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_CAMP',                        'IMPROVEMENT_FW_PRESERVE',            'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_POLDER',                      'IMPROVEMENT_FW_PRESERVE',            'YIELD_CULTURE',    1, 1),
@@ -97,16 +100,32 @@ VALUES
   ('IMPROVEMENT_SPAIN_HACIENDA',              'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_SIHEYUAN',                    'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_OTTOMAN_TERSANE',             'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1), 
-  ('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',  'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_INDONESIA_KAMPONG',           'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_MONGOLIA_ORDO',               'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
   ('IMPROVEMENT_ZULU_KRAAL',                  'IMPROVEMENT_FW_COMM_ARRAY',          'YIELD_CULTURE',    1, 1),
-  -- 제노센트르/워터 제노센트르 인접
   ('IMPROVEMENT_FISHING_BOATS',               'IMPROVEMENT_FW_WATER_GENOCENTRE',    'YIELD_FOOD',       2, 1),
   ('IMPROVEMENT_CAMP',                        'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1),
   ('IMPROVEMENT_PASTURE',                     'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_PRODUCTION', 2, 1),
   ('IMPROVEMENT_PLANTATION',                  'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1),
   ('IMPROVEMENT_ROME_LATIFUNDIUM',            'IMPROVEMENT_FW_GENOCENTRE',          'YIELD_GOLD',       2, 1);
+
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+(ImprovementType,                                   OtherImprovementType,          YieldType,       Yield, NumRequired)
+SELECT 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL','IMPROVEMENT_FW_COMM_ARRAY',   'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL');
+
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+(ImprovementType,                                    OtherImprovementType,         YieldType,       Yield,  NumRequired)
+SELECT 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE','IMPROVEMENT_FW_COMM_ARRAY',  'YIELD_CULTURE', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE');
+
+INSERT INTO Improvement_YieldPerXAdjacentImprovement
+(ImprovementType,                                    OtherImprovementType,         YieldType,       Yield,  NumRequired)
+SELECT 'IMPROVEMENT_ROME_LATIFUNDIUM','IMPROVEMENT_FW_HYDROPONICS_DOME',  'YIELD_FOOD', 1,     1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ROME_LATIFUNDIUM');
+
+
+
 
 -- Policies
 ----------------------------------------------------------------------------------------------
@@ -210,6 +229,14 @@ VALUES
 	('IMPROVEMENT_FW_WATER_GENOCENTRE', 		'TECH_GENETIC_ACCELERATION', 	'YIELD_CULTURE',        	1),
 	('IMPROVEMENT_FW_ARCOLOGY', 				'TECH_HYPERSTRUCTURES', 		'YIELD_CULTURE',        	1),
 	('IMPROVEMENT_FW_WATER_ARCOLOGY', 			'TECH_HYPERSTRUCTURES', 		'YIELD_CULTURE',        	1);
+
+INSERT INTO Improvement_TechYieldChanges
+    (ImprovementType, TechType, YieldType, Yield)
+SELECT 'IMPROVEMENT_ROME_LATIFUNDIUM', 'TECH_AUTONOMOUS_SYSTEMS', 'YIELD_FOOD', 1
+WHERE EXISTS (SELECT 1 FROM Improvements WHERE Type='IMPROVEMENT_ROME_LATIFUNDIUM');
+
+
+
 
 INSERT INTO Route_TechMovementChanges
 	(RouteType, TechType, MovementChange)

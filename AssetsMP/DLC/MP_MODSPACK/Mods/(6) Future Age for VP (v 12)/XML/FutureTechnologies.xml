@@ -983,8 +983,8 @@
 		</Row>
 		<Row>
 			<TechType>TECH_SEA_EXPLORE</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
-			<Flavor>15</Flavor>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
 		</Row>
 		<Row>
 			<TechType>TECH_GEN_MANIP</TechType>
@@ -1418,12 +1418,12 @@
 		</Row>
 		<Row>
 			<TechType>TECH_GENERATIVE_AI</TechType>
-			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>		
 		<Row>
 			<TechType>TECH_GENERATIVE_AI</TechType>
-			<FlavorType>FLAVOR_WOMDER</FlavorType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>	
 		<Row>
@@ -1433,7 +1433,7 @@
 		</Row>	
 		<Row>
 			<TechType>TECH_GENERATIVE_AI</TechType>
-			<FlavorType>FLAVOR_SCIEMCE</FlavorType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>	
 		<Row>
@@ -2174,7 +2174,7 @@
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_FUSION</TechType>
-			<FlavorType>FLAVOR_DIPOLOMACY</FlavorType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 

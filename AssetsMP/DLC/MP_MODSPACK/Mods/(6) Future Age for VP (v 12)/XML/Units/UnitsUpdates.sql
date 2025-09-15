@@ -31,6 +31,18 @@ UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FW_RAILGUN_TANK' WHERE 
 --------------------------------------
 -- Future
 --------------------------------------
+DELETE FROM Unit_ClassUpgrades
+WHERE UnitType = 'UNIT_ADVJET';
+
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
+SELECT 'UNIT_ADVJET', 'UNITCLASS_FW_DRONE_FIGHTER_2'
+WHERE EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2');
+
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
+SELECT 'UNIT_ADVJET', 'UNITCLASS_JET_FIGHTER'
+WHERE NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_ADVJET');
+
+
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================	
@@ -419,7 +431,6 @@ VALUES
     ('UNIT_FW_MECHASUB', 'PROMOTION_ONLY_DEFENSIVE'),
     ('UNIT_FW_MECHASUB', 'PROMOTION_SILENT_HUNTER'),
     ('UNIT_FW_MECHASUB', 'PROMOTION_EXTRA_SIGHT_I'),
-    ('UNIT_FW_MECHASUB', 'PROMOTION_DIVE_II'),
     ('UNIT_FW_MECHASUB', 'PROMOTION_FW_NUCLEAR_SMR'),           
     ('UNIT_FW_CYBERSUB', 'PROMOTION_INVISIBLE_SUBMARINE'),
     ('UNIT_FW_CYBERSUB', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING'),
@@ -429,7 +440,6 @@ VALUES
     ('UNIT_FW_CYBERSUB', 'PROMOTION_ONLY_DEFENSIVE'),
     ('UNIT_FW_CYBERSUB', 'PROMOTION_SILENT_HUNTER'),
     ('UNIT_FW_CYBERSUB', 'PROMOTION_EXTRA_SIGHT_I'),
-    ('UNIT_FW_CYBERSUB', 'PROMOTION_DIVE_II'),
     ('UNIT_FW_CYBERSUB', 'PROMOTION_FW_NUCLEAR_SMR'),   
     ('UNIT_FW_CYBERSUB', 'PROMOTION_RIVAL_TERRITORY'),
     -- Unique units
@@ -515,10 +525,10 @@ VALUES
     ('UNIT_FW_ADVANCED_MISSILE_GUIDED',     'BUILDINGCLASS_AIRPORT'),
     ('UNIT_FW_RAILGUN_MISSILE',	            'BUILDINGCLASS_MILITARY_BASE'),
     ('UNIT_FW_RAILGUN_MISSILE',             'BUILDINGCLASS_AIRPORT'),
-    ('UNIT_FW_GOD_ROD',                     'BUILDING_FW_AEROSPACE_COMPLEX'),
-    ('UNIT_FW_GOD_ROD',                     'BUILDING_FW_ORBITAL_HABITAT'),
-    ('UNIT_FW_GOD_ROD2',                    'BUILDING_FW_AEROSPACE_COMPLEX'),
-    ('UNIT_FW_GOD_ROD2',                    'BUILDING_FW_ORBITAL_HABITAT'),
+    ('UNIT_FW_GOD_ROD',                     'BUILDINGCLASS_FW_AEROSPACE_COMPLEX'),
+    ('UNIT_FW_GOD_ROD',                     'BUILDINGCLASS_FW_ORBITAL_HABITAT'),
+    ('UNIT_FW_GOD_ROD2',                    'BUILDINGCLASS_FW_AEROSPACE_COMPLEX'),
+    ('UNIT_FW_GOD_ROD2',                    'BUILDINGCLASS_FW_ORBITAL_HABITAT'),
     -- Tank
     ('UNIT_FW_RAILGUN_TANK',                'BUILDINGCLASS_MILITARY_BASE'),
     ('UNIT_FW_RAILGUN_TANK',                'BUILDINGCLASS_FW_NANOFORGE'),

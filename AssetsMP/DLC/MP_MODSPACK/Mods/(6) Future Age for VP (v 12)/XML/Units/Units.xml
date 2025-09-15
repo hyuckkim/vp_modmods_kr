@@ -861,7 +861,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_RAILGUN_TANK</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_RAILGUN_TANK_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_RAILGUN_TANK_STRATEGY</Strategy>
@@ -894,7 +894,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_ZEKE</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_ZEKE_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_ZEKE_STRATEGY</Strategy>
@@ -1425,7 +1425,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_GUNDAM</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_GUNDAM_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_GUNDAM_STRATEGY</Strategy>
@@ -1461,7 +1461,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_BIOINFANTRY</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_BIOINFANTRY_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_BIOINFANTRY_STRATEGY</Strategy>
@@ -1498,7 +1498,7 @@
 			<Immobile>0</Immobile>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<MilitarySupport>1</MilitarySupport>
 			<MilitaryProduction>1</MilitaryProduction>
 			<Pillage>1</Pillage>
@@ -1529,7 +1529,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<ObsoleteTech>TECH_HUMAN_AUGMENTATION</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_FW_BIOTROOPER</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_BIOTROOPER_TEXT</Civilopedia>
@@ -2825,7 +2825,7 @@
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_MUTANT</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_MUTANT_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_MUTANT_STRATEGY</Strategy>
@@ -3842,7 +3842,7 @@
        Diplomat
        ======================================================================================================= -->
 		<Row>
-			<UnitType>FW_AUGMENTED_DIPLOMAT</UnitType>
+			<UnitType>UNIT_FW_AUGMENTED_DIPLOMAT</UnitType>
 			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
 			<Flavor>90</Flavor>
 		</Row>
@@ -3926,7 +3926,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_GOD_ROD</UnitType>
-			<FlavorType>FLAVOR_DEFFENSE</FlavorType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
@@ -4473,7 +4473,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_ATGM</UnitType>
-			<FlavorType>FLAVOR_RANGE</FlavorType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
 			<Flavor>18</Flavor>
 		</Row>
 		<Row>
@@ -5036,7 +5036,7 @@
        ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_AUGMENTED_DIPLOMAT</UnitType>
-			<ResourceType>RRESOURCE_PAPER</ResourceType>
+			<ResourceType>RESOURCE_PAPER</ResourceType>
 			<Cost>3</Cost>
 		</Row>
     <!-- =======================================================================================================
@@ -5289,7 +5289,7 @@
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 		</Row>
 		<Row>
-			<UnitType>UNIT_FW_BIO_CRUISERR</UnitType>
+			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 		</Row>
 		<Row>
@@ -5730,10 +5730,6 @@
     <!-- =======================================================================================================
        Airfighter
        ======================================================================================================= -->
-		<Row>
-			<UnitType>UNIT_ADVJET</UnitType>
-			<UnitClassType>UNITCLASS_FW_DRONE_FIGHTER_2</UnitClassType>
-		</Row>
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<UnitClassType>UNITCLASS_FW_PLASMA_FIGHTER</UnitClassType>

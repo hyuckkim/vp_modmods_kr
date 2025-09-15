@@ -7346,6 +7346,11 @@
 				Unique Polish replacement for the {TXT_KEY_BUILDING_STABLE}. In addition to the {TXT_KEY_BUILDING_STABLE}'s bonuses, the {TXT_KEY_BUILDING_DUCAL_STABLE_DESC} provides a better [ICON_PRODUCTION] Production bonus and bonus XP for mounted melee units, and a greater boost on pasture resources. It also grants a free [ICON_RES_HORSE] Horse instead of requiring a nearby improved pasture resource to be built.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_DUMMY_BIOMOD_POP_DUMMY"> 
+			<Text>
+				Bioenhance x10(Dummy)
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_D_FOR_ALTICUR"> 
 			<Text>
 				DF Alti Cur
@@ -10332,6 +10337,16 @@
 				International Security Bureau
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY"> 
+			<Text>
+				INTERPOL National Central Bureau (Dummy)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY_HELP"> 
+			<Text>
+				Each copy grants +1 City Security. Count is controlled by script.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_HELP"> 
 			<Text>
 				+20 [ICON_SPY] City Security.[NEWLINE][NEWLINE][ICON_CITY_STATE] City-State [COLOR_CYAN]Ally[ENDCOLOR] bonus: +1 [ICON_SPY] City Security.[NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD]/[ICON_PRODUCTION] Distress, [ICON_GOLD] Poverty, [ICON_RESEARCH] Illiteracy, and [ICON_CULTURE] Boredom by [COLOR_POSITIVE_TEXT]1[ENDCOLOR].
@@ -11868,6 +11883,11 @@
 		<Replace Tag="TXT_KEY_BUILDING_MENIN_GATE_TEXT"> 
 			<Text>
 				The Menin Gate Memorial to the Missing is a war memorial in Ypres, Belgium, dedicated to the British and Commonwealth soldiers who were killed in the Ypres Salient of World War I. The high, barrel-vaulted passageway is inscribed with the names of 54,395 Commonwealth soldiers who died in the Salient, but whose bodies were never recovered. The memorial stands at the eastern exit of the town, marking the starting point towards the front line, where more than 450,000 men on both sides of the conflict were killed.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_MIL10_STACK_DUMMY"> 
+			<Text>
+				Military x10(Dummy)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MILITARY_ACADEMY"> 
@@ -14398,16 +14418,6 @@
 		<Replace Tag="TXT_KEY_BUILDING_WORKSHOP_STRATEGY"> 
 			<Text>
 				The Workshop boosts Production in strong Cities, and improves your ability to move Production to weaker ones with Internal Trade Routes. It also improves the Aqueduct growth bonus, which is best when high Production can also be paired with rapid growth, whether that is a small City getting off the ground or a larger City with ample Food.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY"> 
-			<Text>
-				INTERPOL National Central Bureau (Dummy)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY_HELP"> 
-			<Text>
-				Each copy grants +1 City Security. Count is controlled by script.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WRITERS_GUILD"> 
@@ -202528,6 +202538,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				국제치안국
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY"> 
+			<Text>
+				국제형사경찰기구 중앙사무국(더미)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY_HELP"> 
+			<Text>
+				복사 수만큼 도시 보안이 +1씩 상승합니다. 스크립트로 개수를 제어합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_WORLD_SECURITY_HELP"> 
 			<Text>
 				[ICON_SPY] 도시 보안이 +20 증가합니다. [NEWLINE][NEWLINE]도시국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: [ICON_SPY] 도시 보안 +1. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.
@@ -206660,16 +206680,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_BUILDING_WORKSHOP_STRATEGY"> 
 			<Text>
 				작업장은 강력한 도시의 생산력을 높이고, 내부 교역로를 통해 약한 도시로 생산력을 이전하는 능력을 향상시킵니다. 또한 송수로 성장 보너스도 향상되는데, 이는 높은 생산력과 빠른 성장이 결합될 때 가장 효과적이며, 작은 도시가 시작되는 경우든, 풍부한 식량을 보유한 대규모 도시가 시작되는 경우든 마찬가지입니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY"> 
-			<Text>
-				국제형사경찰기구 중앙사무국(더미)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY_HELP"> 
-			<Text>
-				복사 수만큼 도시 보안이 +1씩 상승합니다. 스크립트로 개수를 제어합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WRITERS_GUILD"> 

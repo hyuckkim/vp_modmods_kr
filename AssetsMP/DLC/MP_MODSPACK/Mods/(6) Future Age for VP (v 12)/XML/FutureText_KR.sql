@@ -1,4 +1,4 @@
-INSERT INTO COMMUNITY	
+ INSERT INTO COMMUNITY	
 		(Type,			Value)
 VALUES	('MUCfVP-CAYM', 2);
 
@@ -437,8 +437,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_FW_WORLD_SECURITY_HELP', '[ICON_SPY] 도시 보안이 +20 증가합니다. [NEWLINE][NEWLINE]도시국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: [ICON_SPY] 도시 보안 +1. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_GOLD] 빈곤, [ICON_RESEARCH] 문맹, [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'),
 ('TXT_KEY_BUILDING_FW_WORLD_SECURITY_STRATEGY', '경찰서는 적 스파이가 도시를 해칠 수 있는 속도를 늦춥니다. 디지털 경찰서를 건설하려면 도시에 경찰서가 있어야 합니다.'),
 ('TXT_KEY_BUILDING_FW_WORLD_SECURITY_PEDIA','인터폴(국제형사경찰기구)은 국경을 넘어 범죄에 대응하기 위해 설립된 국제 조직입니다. 각국에는 중앙사무국 지부(일명 국제치안국)가 설치되어, 회원국 간 협력을 조율합니다. 사이버 범죄, 테러, 금융 사기, 마약 밀매 등 다양한 범죄에 대해 국제 공조 수사를 가능하게 하며, 경찰 기관 간의 실시간 정보 공유 체계를 운영합니다. 사이버 시대에 들어서는 첨단 네트워크 보안 기술과 데이터 분석 기법을 활용해 해킹, 사이버 금융 사기, 개인정보 침해 같은 새로운 위협에도 대응합니다. 또한 전문 수사관, 과학 수사 전문가, 디지털 보안 인력이 함께하며, 국제 규약 마련과 교육·훈련 프로그램을 통해 범죄 예방과 법질서 유지를 목표로 합니다.'),
-('TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY', '국제형사경찰기구 중앙사무국(더미)'),
-('TXT_KEY_BUILDING_WORLD_SECURITY_DUMMY_HELP', '복사 수만큼 도시 보안이 +1씩 상승합니다. 스크립트로 개수를 제어합니다.'),
+('TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY', '국제형사경찰기구 중앙사무국(더미)'),
+('TXT_KEY_BUILDING_FW_WORLD_SECURITY_DUMMY_HELP', '복사 수만큼 도시 보안이 +1씩 상승합니다. 스크립트로 개수를 제어합니다.'),
 -- Autoplant
 ('TXT_KEY_BUILDING_FW_AUTOPLANT', '자동생산시설'),
 ('TXT_KEY_BUILDING_FW_AUTOPLANT_HELP', '도시의 [ICON_CITIZEN]시민 5명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]자동생산시설[ENDCOLOR]의 [ICON_PRODUCTION]생산이 추가로 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]공장[ENDCOLOR]이 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_RES_OIL]석유가 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR] 필요합니다.'),
