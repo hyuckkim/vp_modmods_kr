@@ -464,7 +464,7 @@
 			<Strategy>TXT_KEY_UNIT_FW_MODERN_COLONIST_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_MODERN_COLONIST_HELP</Help>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
-			<ObsoleteTech>TECH_ORBITAL_DEV</ObsoleteTech>
+			<ObsoleteTech>TECH_SPACE_EXPLORE</ObsoleteTech>
 			<Food>1</Food>
 			<Found>1</Found>
 			<FoundMid>0</FoundMid>
@@ -490,7 +490,7 @@
 			<Civilopedia>TXT_KEY_UNIT_FW_SPACE_COLONIST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_SPACE_COLONIST_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_SPACE_COLONIST_HELP</Help>
-			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
+			<PrereqTech>TECH_SPACE_EXPLORE</PrereqTech>
 			<ObsoleteTech></ObsoleteTech>
 			<Food>1</Food>
 			<Found>1</Found>
@@ -520,7 +520,7 @@
 			<Civilopedia>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_AUGMENTED_DIPLOMAT_HELP</Help>
-			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+			<PrereqTech>TECH_BIOMEDICAL</PrereqTech>
 			<CombatLimit>0</CombatLimit>
 			<BaseGold>0</BaseGold>
 			<UnitArtInfo>ART_DEF_UNIT_FW_AUGMENTED_DIPLOMAT</UnitArtInfo>
@@ -536,7 +536,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_CLUSTER_MISSILE</Class>
 			<Type>UNIT_FW_CLUSTER_MISSILE</Type>
-			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
+			<PrereqTech>TECH_SPACE_EXPLORE</PrereqTech>
 			<RangedCombat>95</RangedCombat>
 			<Cost>1200</Cost>
 			<Moves>2</Moves>
@@ -570,7 +570,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_HYPERMISSILE</Class>
 			<Type>UNIT_FW_HYPERMISSILE</Type>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<RangedCombat>125</RangedCombat>
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
@@ -640,7 +640,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_ADVANCED_MISSILE_GUIDED</Class>
 			<Type>UNIT_FW_ADVANCED_MISSILE_GUIDED</Type>
-			<PrereqTech>TECH_ORBITAL_DEV</PrereqTech>
+			<PrereqTech>TECH_SPACE_EXPLORE</PrereqTech>
 			<RangedCombat>200</RangedCombat>
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
@@ -709,7 +709,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_GOD_ROD</Class>
 			<Type>UNIT_FW_GOD_ROD</Type>
-			<PrereqTech>TECH_ADAMANTIUM</PrereqTech>
+			<PrereqTech>TECH_SPACE_HABITATS</PrereqTech>
 			<RangedCombat>300</RangedCombat>
 			<Cost>3600</Cost>
 			<Moves>2</Moves>
@@ -777,7 +777,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_HYDROGEN_BOMB</Class>
 			<Type>UNIT_FW_HYDROGEN_BOMB</Type>
-			<PrereqTech>TECH_NUCLEAR_ENRICHMENT</PrereqTech>
+			<PrereqTech>TECH_ADVANCED_MATERIALS</PrereqTech>
 			<Cost>8000</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
@@ -851,7 +851,7 @@
 			<Class>UNITCLASS_FW_RAILGUN_TANK</Class>
 			<Type>UNIT_FW_RAILGUN_TANK</Type>
 			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
-			<ObsoleteTech>TECH_COGNITIVE_TECH</ObsoleteTech>
+			<ObsoleteTech>TECH_INTEGRATED_AI</ObsoleteTech>
 			<Combat>135</Combat>
 			<Cost>3150</Cost>
 			<FaithCost>1800</FaithCost>
@@ -884,7 +884,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_ZEKE</Class>
 			<Type>UNIT_FW_ZEKE</Type>
-			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+			<PrereqTech>TECH_INTEGRATED_AI</PrereqTech>
 			<Combat>138</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>3800</Cost>
@@ -952,7 +952,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_HYBRID_DRONE</Class>
 			<Type>UNIT_FW_HYBRID_DRONE</Type>
-			<PrereqTech>TECH_EUTHENICS</PrereqTech>
+			<PrereqTech>TECH_BIO_HYBRID</PrereqTech>
 			<Combat>115</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
 			<Cost>2700</Cost>
@@ -984,7 +984,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_BIODRONE</Class>
 			<Type>UNIT_FW_BIODRONE</Type>
-			<PrereqTech>TECH_TERRAFORMING</PrereqTech>
+			<PrereqTech>TECH_GENETIC_ACCELERATION</PrereqTech>
 			<Combat>145</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
 			<Cost>3450</Cost>
@@ -1057,7 +1057,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_VERTOL</Class>
 			<Type>UNIT_FW_VERTOL</Type>
-			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+			<PrereqTech>TECH_INTEGRATED_AI</PrereqTech>
 			<Combat>105</Combat>
 			<RangedCombat>105</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
@@ -1078,7 +1078,7 @@
 			<Help>TXT_KEY_UNIT_FW_VERTOL_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_CYBERNETICS</ObsoleteTech>
+			<ObsoleteTech>TECH_QUANTUM_SYNC</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>false</IgnoreBuildingDefense>
 			<AdvancedStartCost>60</AdvancedStartCost>
@@ -1094,7 +1094,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_HOVERTANK</Class>
 			<Type>UNIT_FW_HOVERTANK</Type>
-			<PrereqTech>TECH_CYBERNETICS</PrereqTech>
+			<PrereqTech>TECH_QUANTUM_SYNC</PrereqTech>
 			<Combat>135</Combat>
 			<RangedCombat>135</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
@@ -1169,7 +1169,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_MECH_ARTILLERY</Class>
 			<Type>UNIT_FW_MECH_ARTILLERY</Type>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<Combat>105</Combat>
 			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
@@ -1365,7 +1365,7 @@
 			<Civilopedia>TXT_KEY_CIVIL_UNIT_FW_POWER_ARMOR_INFANTRY</Civilopedia>
 			<Strategy>TXT_KEY_STRATEGY_UNIT_FW_POWER_ARMOR_INFANTRY</Strategy>
 			<Help>TXT_KEY_HELP_UNIT_FW_POWER_ARMOR_INFANTRY</Help>
-			<ObsoleteTech>TECH_IMPLANTS</ObsoleteTech>
+			<ObsoleteTech>TECH_BIOMEDICAL</ObsoleteTech>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
 			<Pillage>true</Pillage>
@@ -1415,7 +1415,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_GUNDAM</Class>
 			<Type>UNIT_FW_GUNDAM</Type>
-			<PrereqTech>TECH_PROMETHEUS_PROGRAM</PrereqTech>
+			<PrereqTech>TECH_PLANETARY_MIGRATION</PrereqTech>
 			<Combat>155</Combat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>3800</Cost>
@@ -1451,7 +1451,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_BIOINFANTRY</Class>
 			<Type>UNIT_FW_BIOINFANTRY</Type>
-			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+			<PrereqTech>TECH_BIOMEDICAL</PrereqTech>
 			<Combat>105</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2500</Cost>
@@ -1483,7 +1483,7 @@
 		<Row>
 			<Type>UNIT_FW_CLONETROOPER</Type>
 			<Class>UNITCLASS_FW_CLONETROOPER</Class>
-			<PrereqTech>TECH_CLONING</PrereqTech>
+			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Description>TXT_KEY_UNIT_FW_CLONETROOPER</Description>
 			<Civilopedia>TXT_KEY_UNIT_FW_CLONETROOPER_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FW_CLONETROOPER_STRATEGY</Strategy>
@@ -1590,7 +1590,7 @@
 			<Class>UNITCLASS_CAYM_PMC</Class>
 			<Type>UNIT_CAYM_PMC</Type>
 			<PrereqTech>TECH_ECOLOGY</PrereqTech>
-			<ObsoleteTech>TECH_FW_ECOTHEORY</ObsoleteTech>
+			<ObsoleteTech>TECH_ECOGENETICS</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_CAYM_PMC</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
@@ -1629,8 +1629,8 @@
 		<Row>
 			<Type>UNIT_FW_ELITE_MERCENARIES</Type>
 			<Class>UNITCLASS_FW_ELITE_MERCENARIES</Class>
-			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
-			<ObsoleteTech>TECH_EUTHENICS</ObsoleteTech>
+			<PrereqTech>TECH_ECOGENETICS</PrereqTech>
+			<ObsoleteTech>TECH_BIO_HYBRID</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_FW_ELITE_MERCENARIES</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUERILLA_STRATEGY</Strategy>
@@ -1668,7 +1668,7 @@
 		<Row>
 			<Type>UNIT_FW_ENHANCED_MERCENARIES</Type>
 			<Class>UNITCLASS_FW_ENHANCED_MERCENARIES</Class>
-			<PrereqTech>TECH_EUTHENICS</PrereqTech>
+			<PrereqTech>TECH_BIO_HYBRID</PrereqTech>
 			<ObsoleteTech>TECH_HUMAN_AUGMENTATION</ObsoleteTech>
 			<Description>TXT_KEY_UNIT_FW_ENHANCED_MERCENARIES</Description>
 			<Civilopedia>TXT_KEY_CIV5_GUERILLA_TEXT</Civilopedia>
@@ -1749,7 +1749,7 @@
 			<Class>UNITCLASS_FW_ATGM</Class>
 			<Type>UNIT_FW_ATGM</Type>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-			<ObsoleteTech>TECH_COGNITIVE_TECH</ObsoleteTech>
+			<ObsoleteTech>TECH_INTEGRATED_AI</ObsoleteTech>
 			<Combat>80</Combat>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
@@ -1783,7 +1783,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_AUTOMATON</Class>
 			<Type>UNIT_FW_AUTOMATON</Type>
-			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+			<PrereqTech>TECH_INTEGRATED_AI</PrereqTech>
 			<Combat>95</Combat>
 			<RangedCombat>115</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
@@ -1817,7 +1817,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_ROBOT_INFANTRY</Class>
 			<Type>UNIT_FW_ROBOT_INFANTRY</Type>
-			<PrereqTech>TECH_AI</PrereqTech>
+			<PrereqTech>TECH_AGI</PrereqTech>
 			<Combat>105</Combat>
 			<RangedCombat>130</RangedCombat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
@@ -2020,7 +2020,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_CHIMERA</Class>
 			<Type>UNIT_FW_CHIMERA</Type>
-			<PrereqTech>TECH_TERRAFORMING</PrereqTech>
+			<PrereqTech>TECH_GENETIC_ACCELERATION</PrereqTech>
 			<Combat>135</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>2950</Cost>
@@ -2053,7 +2053,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_TREX</Class>
 			<Type>UNIT_FW_TREX</Type>
-			<PrereqTech>TECH_CLONING</PrereqTech>
+			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>110</Combat>
 			<Cost>1900</Cost>
 			<Moves>3</Moves>
@@ -2081,7 +2081,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_TRICERATOPS</Class>
 			<Type>UNIT_FW_TRICERATOPS</Type>
-			<PrereqTech>TECH_CLONING</PrereqTech>
+			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>90</Combat>
 			<Cost>1800</Cost>
 			<Moves>3</Moves>
@@ -2109,7 +2109,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_RAPTOR</Class>
 			<Type>UNIT_FW_RAPTOR</Type>
-			<PrereqTech>TECH_CLONING</PrereqTech>
+			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>90</Combat>
 			<Cost>1825</Cost>
 			<Moves>4</Moves>
@@ -2221,7 +2221,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_NEODESTROYER</Class>
 			<Type>UNIT_FW_NEODESTROYER</Type>
-			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
+			<PrereqTech>TECH_GENERATIVE_AI</PrereqTech>
 			<Combat>105</Combat>
 			<Cost>3400</Cost>
 			<BaseLandAirDefense>45</BaseLandAirDefense>
@@ -2335,7 +2335,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_ARSENAL_SHIP</Class>
 			<Type>UNIT_FW_ARSENAL_SHIP</Type>
-			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
+			<PrereqTech>TECH_GENERATIVE_AI</PrereqTech>
 			<Combat>90</Combat>
 			<RangedCombat>105</RangedCombat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
@@ -2455,8 +2455,8 @@
 		<Row>
 			<Class>UNITCLASS_FW_MECHASUB</Class>			
 			<Type>UNIT_FW_MECHASUB</Type>			
-			<PrereqTech>TECH_ORGANICS</PrereqTech>
-			<ObsoleteTech>TECH_CYBERNETICS</ObsoleteTech>
+			<PrereqTech>TECH_BIOTECHNOLOGY</PrereqTech>
+			<ObsoleteTech>TECH_QUANTUM_SYNC</ObsoleteTech>
 			<Combat>75</Combat>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
@@ -2497,7 +2497,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_CYBERSUB</Class>
 			<Type>UNIT_FW_CYBERSUB</Type>
-			<PrereqTech>TECH_CYBERNETICS</PrereqTech>
+			<PrereqTech>TECH_QUANTUM_SYNC</PrereqTech>
 			<Combat>105</Combat>
 			<RangedCombat>135</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
@@ -2540,7 +2540,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_SUPERCARRIER</Class>
 			<Type>UNIT_FW_SUPERCARRIER</Type>
-			<PrereqTech>TECH_POWER_SYSTEMS</PrereqTech>
+			<PrereqTech>TECH_GEO_ENERGY</PrereqTech>
 			<Combat>100</Combat>
 			<RangedCombat>85</RangedCombat>
 			<BaseLandAirDefense>65</BaseLandAirDefense>
@@ -2620,7 +2620,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_PLASMA_FIGHTER</Class>
 			<Type>UNIT_FW_PLASMA_FIGHTER</Type>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
 			<RangedCombat>125</RangedCombat>
 			<Cost>3600</Cost>
@@ -2737,7 +2737,7 @@
 		<Row>
 			<Class>UNITCLASS_FW_PLASMA_BOMBER</Class>
 			<Type>UNIT_FW_PLASMA_BOMBER</Type>
-			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
 			<RangedCombat>135</RangedCombat>
 			<Cost>3700</Cost>
@@ -5119,7 +5119,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_HYBRID_DRONE</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_BIODRONE</UnitType>
@@ -5127,7 +5127,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_BIODRONE</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
     <!-- =======================================================================================================
        Helicopter
@@ -5208,11 +5208,11 @@
        ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CLONETROOPER</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_SUPERSOLDIERS</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_SUPERSOLDIERS</UnitType>
@@ -5220,7 +5220,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_BIOTROOPER</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
     <!-- =======================================================================================================
        Archer
@@ -5255,7 +5255,7 @@
        ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_CHIMERA</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 			<Cost>1</Cost>
 		</Row>
     <!-- =======================================================================================================
@@ -5271,7 +5271,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_BIO_DESTROYER</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
     <!-- =======================================================================================================
        Cruiser
@@ -5298,7 +5298,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_BIO_CRUISER</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
     <!-- =======================================================================================================
        Submarine
@@ -5377,12 +5377,12 @@
        ======================================================================================================= -->
 		<Row>
 			<UnitType>UNIT_FW_MUTANT</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_HYDRA</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 			<Cost>2</Cost>
 		</Row>
 		<Row>
@@ -5405,7 +5405,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_MEGAHIVE</UnitType>
@@ -5773,6 +5773,9 @@
 			<UnitClassType>UNITCLASS_FW_NEXUS</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
+	 <!-- =======================================================================================================
+       Promotion
+       ======================================================================================================= -->
 	<UnitPromotions>
 		<Row>
 			<Type>PROMOTION_AUGMENTED</Type>
@@ -5799,7 +5802,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>45</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_1</PediaEntry>
 		</Row>
 		<Row>
@@ -5810,7 +5813,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>45</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_2</PediaEntry>
 		</Row>
 		<Row>
@@ -5821,7 +5824,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>45</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_3</PediaEntry>
 		</Row>
 		<Row>
@@ -5832,7 +5835,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>46</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_4</PediaEntry>
 		</Row>
 		<Row>
@@ -5843,7 +5846,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>46</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_SPLASH_DAMAGE_5</PediaEntry>
 		</Row>
 	<!-- =======================================================================================================
@@ -5851,13 +5854,13 @@
        ======================================================================================================= -->
 	   <Row>
 			<Type>PROMOTION_FW_MOVE_ALL_TERRAIN</Type>
-			<Description>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</Description>
-			<Help>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN_HELP</Help>
+			<Description>TXT_KEY_PROMOTION_FW_MOVE_ALL_TERRAIN</Description>
+			<Help>TXT_KEY_PROMOTION_FW_MOVE_ALL_TERRAIN_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PortraitIndex>19</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaEntry>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</PediaEntry>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_MOVE_ALL_TERRAIN</PediaEntry>
 			<CanMoveImpassable>true</CanMoveImpassable>
 			<CanMoveAllTerrain>true</CanMoveAllTerrain>
 			<LostWithUpgrade>1</LostWithUpgrade>
@@ -5868,7 +5871,7 @@
 			<Help>TXT_KEY_PROMOTION_FW_NETWORKED_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<AdjacentMod>15</AdjacentMod>
+			<AdjacentMod>25</AdjacentMod>
 			<PortraitIndex>15</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -6016,7 +6019,7 @@
 			<PortraitIndex>47</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_FW_TRANSGENICS</PediaEntry>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_TRANSGENICS</PediaEntry>
 	   </Row>
 	   <Row>
 			<Type>PROMOTION_FW_AUTO_REPAIR</Type>
@@ -6037,11 +6040,11 @@
 			<Help>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<DropRange>40</DropRange>
+			<DropRange>42</DropRange>
 			<PortraitIndex>8</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_FW_AEROPLEX_DROP</PediaEntry>
+			<PediaEntry>TXT_KEY_PROMOTION_FW_AEROPLEX_DROP</PediaEntry>
 	   </Row>
     <!-- =======================================================================================================
        Gengineered
@@ -6278,7 +6281,7 @@
 			<EvasionChange>25</EvasionChange>
 			<PortraitIndex>10</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SUBORBITAL_EVASION</PediaEntry>
 		</Row>
 		<Row>
@@ -6291,7 +6294,7 @@
 			<EvasionChange>35</EvasionChange>
 			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_PLASMA_EVASION</PediaEntry>
 		</Row>
 		<Row>
@@ -6304,7 +6307,7 @@
 			<EvasionChange>45</EvasionChange>
 			<PortraitIndex>12</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SPACE_EVASION</PediaEntry>
 		</Row>
     <!-- =======================================================================================================

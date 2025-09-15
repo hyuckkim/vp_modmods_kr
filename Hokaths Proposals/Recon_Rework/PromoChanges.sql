@@ -116,7 +116,8 @@ PromotionPrereqOr2 = 'PROMOTION_WOODLAND_TRAILBLAZER_2',
 PediaType = 'PEDIA_SCOUTING',
 RankList = 'ALPINE',
 RankNumber = 1,
-CannotBeChosen = 0
+CannotBeChosen = 0,
+VisibilityChange = 0  -- for some reason this is 1?
 WHERE Type = 'PROMOTION_ALTITUDE_TRAINING';
 
 UPDATE Language_en_US SET

@@ -9,3 +9,22 @@ WHERE Tag = 'TXT_KEY_BUILDING_STELE_STRATEGY';
 UPDATE Language_ko_KR
 SET Text = '[COLOR_CYAN]기술[ENDCOLOR]을 발견하면 [ICON_GOLDEN_AGE] 황금기 점수 5를 얻습니다. [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_BUILDING_STELE_HELP';
+
+----------------------
+-- 4UC change
+----------------------
+UPDATE Language_ko_KR SET
+Text = Replace(Text, '+1 [ICON_CULTURE] for every Ancient Policy Branch', '+2 [ICON_CULTURE] for every Ancient Policy Branch')
+WHERE Tag IN ('TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT', 'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP');
+
+UPDATE Language_ko_KR SET
+Text = Replace(Text, '+1 [ICON_PEACE] for every Medieval Policy Branch', '+2 [ICON_RESEARCH] for every Medieval Policy Branch')
+WHERE Tag IN ('TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT', 'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP');
+
+UPDATE Language_ko_KR SET
+Text = Replace(Text, '+1 [ICON_RESEARCH] for every Industrial Policy Branch', '+2 [ICON_PEACE] for every Industrial Policy Branch')
+WHERE Tag IN ('TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT', 'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP');
+
+UPDATE Language_ko_KR SET
+Text = Replace(Text, '+1 [ICON_CULTURE] and [ICON_PRODUCTION] for founding a Religion', '+1 [ICON_PRODUCTION] for founding a Religion')
+WHERE Tag IN ('TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT', 'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP');

@@ -36,27 +36,27 @@
 		    <Type>LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3</Type>
 		    <Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3</Description>
 		    <Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3_HELP</Help>
-            <Building>BUILDING_FW_AI_SINGULARITY</Building>
+            <Building>BUILDING_FW_AI_DATANETWORK</Building>
          </Row>
 
 
 		<Row>
-			<Type>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1</Type>
-			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1</Description>
-			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP</Help>
-			<Building>BUILDING_FW_ASTEROID_MINING_1</Building>
+			<Type>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1_HELP</Help>
+			<Building>BUILDING_FW_DEEP_RESOURCE_1</Building>
 		</Row>
 		<Row>
-			<Type>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2</Type>
-			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2</Description>
-			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP</Help>
-			<Building>BUILDING_FW_ASTEROID_MINING_2</Building>
+			<Type>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2_HELP</Help>
+			<Building>BUILDING_FW_DEEP_RESOURCE_2</Building>
 		</Row>
 		<Row>
-			<Type>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3</Type>
-			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3</Description>
-			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP</Help>
-			<Building>BUILDING_FW_ASTEROID_MINING</Building>
+			<Type>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3_HELP</Help>
+			<Building>BUILDING_FW_DEEP_RESOURCE</Building>
 		</Row>
 	</LeagueProjectRewards>
 
@@ -67,7 +67,7 @@
 			<Help>TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT_SPLASH</Help>
 			<ProjectSplashImage>GenomeProject_Splash.dds</ProjectSplashImage>
 			<Process>PROCESS_FW_GENOME_PROJECT</Process>
-			<CostPerPlayer>8000</CostPerPlayer>
+			<CostPerPlayer>14500</CostPerPlayer>
 			<RewardTier1>LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1</RewardTier1>
 			<RewardTier2>LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2</RewardTier2>
 			<RewardTier3>LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3</RewardTier3>
@@ -81,7 +81,7 @@
             <Help>TXT_KEY_LEAGUE_PROJECT_FW_AI_DATANETWORK_SPLASH</Help>
             <ProjectSplashImage>AINetwork_Splash.dds</ProjectSplashImage>
             <Process>PROCESS_FW_AI_DATANETWORK</Process>
-            <CostPerPlayer>8000</CostPerPlayer>
+            <CostPerPlayer>14500</CostPerPlayer>
             <RewardTier1>LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_1</RewardTier1>
             <RewardTier2>LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_2</RewardTier2>
             <RewardTier3>LEAGUE_PROJECT_REWARD_FW_AI_DATANETWORK_3</RewardTier3>
@@ -90,15 +90,15 @@
 		</Row>
 
 		<Row>
-			<Type>LEAGUE_PROJECT_FW_ASTEROID_MINING</Type>
-			<Description>TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING</Description>
-			<Help>TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING_SPLASH</Help>
-			<ProjectSplashImage>AsteroidMining_Splash.dds</ProjectSplashImage>
-			<Process>PROCESS_FW_ASTEROID_MINING</Process>
-			<CostPerPlayer>8000</CostPerPlayer>
-			<RewardTier1>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1</RewardTier1>
-			<RewardTier2>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2</RewardTier2>
-			<RewardTier3>LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3</RewardTier3>
+			<Type>LEAGUE_PROJECT_FW_DEEP_RESOURCE</Type>
+			<Description>TXT_KEY_LEAGUE_PROJECT_FW_DEEP_RESOURCE</Description>
+			<Help>TXT_KEY_LEAGUE_PROJECT_FW_DEEP_RESOURCE_SPLASH</Help>
+			<ProjectSplashImage>DeepResource_Splash.dds</ProjectSplashImage>
+			<Process>PROCESS_FW_DEEP_RESOURCE</Process>
+			<CostPerPlayer>14500</CostPerPlayer>
+			<RewardTier1>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_1</RewardTier1>
+			<RewardTier2>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_2</RewardTier2>
+			<RewardTier3>LEAGUE_PROJECT_REWARD_FW_DEEP_RESOURCE_3</RewardTier3>
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
 		</Row>
@@ -111,7 +111,7 @@
 			<Help>TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP</Help>
 			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
 			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
-			<TechPrereqAnyMember>TECH_ORGANICS</TechPrereqAnyMember>
+			<TechPrereqAnyMember>TECH_BIOTECHNOLOGY</TechPrereqAnyMember>
 			<LeagueProjectEnabled>LEAGUE_PROJECT_FW_GENOME_PROJECT</LeagueProjectEnabled>
 		</Row>
 
@@ -121,18 +121,18 @@
             <Help>TXT_KEY_RESOLUTION_FW_AI_DATANETWORK_HELP</Help>
             <VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
             <ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
-            <TechPrereqAnyMember>TECH_MECHATRONICS</TechPrereqAnyMember>
+            <TechPrereqAnyMember>TECH_GENERATIVE_AI</TechPrereqAnyMember>
             <LeagueProjectEnabled>LEAGUE_PROJECT_FW_AI_DATANETWORK</LeagueProjectEnabled>
         </Row>
 
 		<Row>
-			<Type>RESOLUTION_FW_ASTEROID_MINING</Type>
-			<Description>TXT_KEY_RESOLUTION_FW_ASTEROID_MINING</Description>
-			<Help>TXT_KEY_RESOLUTION_FW_ASTEROID_MINING_HELP</Help>
+			<Type>RESOLUTION_FW_DEEP_RESOURCE</Type>
+			<Description>TXT_KEY_RESOLUTION_FW_DEEP_RESOURCE</Description>
+			<Help>TXT_KEY_RESOLUTION_FW_DEEP_RESOURCE_HELP</Help>
 			<VoterDecision>RESOLUTION_DECISION_YES_OR_NO</VoterDecision>
 			<ProposerDecision>RESOLUTION_DECISION_NONE</ProposerDecision>
-			<TechPrereqAnyMember>TECH_POWER_SYSTEMS</TechPrereqAnyMember>
-			<LeagueProjectEnabled>LEAGUE_PROJECT_FW_ASTEROID_MINING</LeagueProjectEnabled>
+			<TechPrereqAnyMember>TECH_GEO_ENERGY</TechPrereqAnyMember>
+			<LeagueProjectEnabled>LEAGUE_PROJECT_FW_DEEP_RESOURCE</LeagueProjectEnabled>
 		</Row>
 	</Resolutions>
 	
@@ -156,10 +156,10 @@
 		</Row>
 
 		<Row>
-			<Type>PROCESS_FW_ASTEROID_MINING</Type>
-			<Description>TXT_KEY_PROCESS_FW_ASTEROID_MINING</Description>
-			<Help>TXT_KEY_PROCESS_FW_ASTEROID_MINING_HELP</Help>
-			<Strategy>TXT_KEY_PROCESS_FW_ASTEROID_MINING_HELP</Strategy>
+			<Type>PROCESS_FW_DEEP_RESOURCE</Type>
+			<Description>TXT_KEY_PROCESS_FW_DEEP_RESOURCE</Description>
+			<Help>TXT_KEY_PROCESS_FW_DEEP_RESOURCE_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_FW_DEEP_RESOURCE_HELP</Strategy>
 			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
 		</Row>
@@ -216,22 +216,22 @@
 			<Flavor>25</Flavor>
 		</Row>
 		<Row>
-			<ProcessType>PROCESS_FW_ASTEROID_MINING</ProcessType>
+			<ProcessType>PROCESS_FW_DEEP_RESOURCE</ProcessType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>60</Flavor>
 		</Row>
 		<Row>
-			<ProcessType>PROCESS_FW_ASTEROID_MINING</ProcessType>
+			<ProcessType>PROCESS_FW_DEEP_RESOURCE</ProcessType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>40</Flavor>
 		</Row>
 		<Row>
-			<ProcessType>PROCESS_FW_ASTEROID_MINING</ProcessType>
+			<ProcessType>PROCESS_FW_DEEP_RESOURCE</ProcessType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
-			<ProcessType>PROCESS_FW_ASTEROID_MINING</ProcessType>
+			<ProcessType>PROCESS_FW_DEEP_RESOURCE</ProcessType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>

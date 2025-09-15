@@ -1,8 +1,8 @@
 print("Loading FutureLua.lua from VP-FW mod");
 
 -- FW_DummyGuards.lua
--- Civ5 VP/CP for Civ5 VP/CP mods: check existence of SQL/Lua types + safety guards + ID cache
--- From other Lua, include("FW_DummyGuards.lua") FW.ids / FW.has / FW.vp use.
+-- Civ5 VP/CP 모드용: SQL↔Lua 타입 존재 여부 점검 + 안전 가드 + ID 캐시
+-- 다른 Lua에서 include("FW_DummyGuards.lua") 후 FW.ids / FW.has / FW.vp 를 사용하세요.
 
 local function GI(k) return GameInfoTypes[k] end
 local function present(id) return (id ~= nil and id > 0) end
@@ -10,18 +10,18 @@ local function warn(tag, key)
   print(string.format("[FW] MISSING %-12s : %s", tag, key))
 end
 
--- Detect VP/CP features
+-- VP/CP 기능 감지
 local vp = {
   hasBattleJoined = (GameEvents and GameEvents.BattleJoined ~= nil),
 }
 
--- /dummy//// ID cache
+-- 자주 쓰는 빌딩/더미/프로모/유닛/개선/빌드 ID 캐시
 local ids = {
-  -- World Security / Cyber Police line (new/old compatibility guard)
+  -- World Security / Cyber Police 계열 (신/구 혼용 가드)
   BUILDING_FW_WORLD_SECURITY        = GI("BUILDING_FW_WORLD_SECURITY") or GI("BUILDING_FW_CYBERPOLICE"),
   BUILDING_FW_WORLD_SECURITY_DUMMY  = GI("BUILDING_FW_WORLD_SECURITY_DUMMY") or GI("BUILDING_WORLD_SECURITY_DUMMY"),
 
-  -- Biomod / Ectogenesis stack dummy
+  -- Biomod / Ectogenesis 스택 더미
   BUILDING_DUMMY_BIOMOD_POP         = GI("BUILDING_DUMMY_BIOMOD_POP"),
   BUILDING_FW_BIOMOD_TANK           = GI("BUILDING_FW_BIOMOD_TANK"),
   BUILDING_DUMMY_MIL10_STACK        = GI("BUILDING_DUMMY_MIL10_STACK"),
@@ -38,34 +38,34 @@ local ids = {
   BUILDING_FW_LAPUTA                = GI("BUILDING_FW_LAPUTA"),
   BUILDING_FW_LAPUTA_DUMMY          = GI("BUILDING_FW_LAPUTA_DUMMY"),
 
-  -- Splash line promotion(/)
+  -- Splash 계열 프로모션(근/원거리)
   PROMOTION_FW_SPLASH_DAMAGE_1      = GI("PROMOTION_FW_SPLASH_DAMAGE_1"),
   PROMOTION_FW_SPLASH_DAMAGE_2      = GI("PROMOTION_FW_SPLASH_DAMAGE_2"),
   PROMOTION_FW_SPLASH_DAMAGE_3      = GI("PROMOTION_FW_SPLASH_DAMAGE_3"),
   PROMOTION_FW_SPLASH_DAMAGE_4      = GI("PROMOTION_FW_SPLASH_DAMAGE_4"),
   PROMOTION_FW_SPLASH_DAMAGE_5      = GI("PROMOTION_FW_SPLASH_DAMAGE_5"),
 
-  -- God Rod / missile line
+  -- God Rod / 미사일 계열
   UNIT_FW_GOD_ROD                   = GI("UNIT_FW_GOD_ROD"),
   UNIT_FW_GOD_ROD2                  = GI("UNIT_FW_GOD_ROD2"),
 
-  -- FX (harmless if missing)
+  -- FX 테스트용 유닛 (없는 경우도 무해)
   UNIT_FW_PLASMA_BOMBER             = GI("UNIT_FW_PLASMA_BOMBER"),
   UNIT_FW_SPACEMARINES              = GI("UNIT_FW_SPACEMARINES"),
 
-  -- Undersea Tunnel(improvement/build) / Keys
+  -- Undersea Tunnel(개선/작업) 신/구 키 가드
   IMPROVEMENT_FW_UNDERSEA_TUNNEL    = GI("IMPROVEMENT_FW_UNDERSEA_TUNNEL") or GI("IMPROVEMENT_UNDERSEA_TUNNEL"),
   BUILD_FW_UNDERSEA_TUNNEL          = GI("BUILD_FW_UNDERSEA_TUNNEL")       or GI("BUILD_UNDERSEA_TUNNEL"),
 
-  -- other recently corrected items(e.g., )
+  -- 기타 최근 정정된 것들(예: 업로딩)
   BUILDING_FW_BRAIN_UPLOADING       = GI("BUILDING_FW_BRAIN_UPLOADING"),
 }
 
--- existence flags(for safe branching in other scripts)
+-- 존재 여부 플래그(다른 스크립트에서 안전 분기용)
 local has = {}
 for k, v in pairs(ids) do has[k] = present(v) end
 
--- one-time self diagnostic log (once at turn 0)
+-- 1회성 자기진단 로그 (턴 0에 한 번)
 local function SelfCheck()
   print("[FW] ===== Dummy Guards / ID Self-Check =====")
   local groups = {
@@ -112,7 +112,7 @@ local function SelfCheck()
   print("[FW] ========================================")
 end
 
--- once at turn 0 action
+-- 턴 0에 한 번만 실행
 local function OnTurn(pID)
   local p = Players[pID]
   if p and p:IsHuman() and p:GetID() == 0 and Game.GetGameTurn() == 0 then
@@ -122,7 +122,7 @@ local function OnTurn(pID)
 end
 GameEvents.PlayerDoTurn.Add(OnTurn)
 
--- external exposure ( Lua FW.ids / FW.has / FW.vp use)
+-- 외부 노출 (다른 Lua에서 FW.ids / FW.has / FW.vp 사용)
 FW = FW or {}
 FW.ids = ids
 FW.has = has
@@ -141,7 +141,7 @@ print("[FW] Future building Dummy loader: World Security")
 
 local DEBUG = false
 
--- dummy/gate building IDs: prefer new tags, old tags(CYBERPOLICE) fallback allowed
+-- 더미/게이트 빌딩 ID: 새 태그 우선, 구 태그(CYBERPOLICE) 백업 허용
 local iBldgDummy =
     GameInfoTypes.BUILDING_FW_WORLD_SECURITY_DUMMY or
     GameInfoTypes.BUILDING_WORLD_SECURITY_DUMMY or
@@ -154,7 +154,7 @@ local iGateBldgType =
 if not iBldgDummy or not iGateBldgType then
   print("[World Security][ERROR] Missing IDs. Dummy:", iBldgDummy, "GateType:", iGateBldgType)
 else
-  -- player's number of allies(ally) count
+  -- 플레이어의 동맹(ally) 수 계산
   local function GetAllyCount(iPlayer)
     local cnt = 0
     for iMinor = 0, GameDefines.MAX_MINOR_CIVS - 1 do
@@ -168,7 +168,7 @@ else
     return cnt
   end
 
-  -- ally 1 dummy 1, 0
+  -- 동맹 1개 이상이면 더미 스택 1, 아니면 0
   local function RefreshWorldSecurity(iPlayer)
     local pPlayer = Players[iPlayer]
     if not pPlayer or not pPlayer:IsAlive() or pPlayer:IsBarbarian() or pPlayer:IsMinorCiv() then return end
@@ -191,17 +191,17 @@ else
     end
   end
 
-  -- (comment translated to English)
+  -- 매턴 갱신
   GameEvents.PlayerDoTurn.Add(RefreshWorldSecurity)
 
-  -- / ( )
+  -- 도시/건물 건설 시에도 갱신 (게이트 빌딩 막 지었을 때 반영)
   if GameEvents.CityConstructed then
     GameEvents.CityConstructed.Add(function(iPlayer, ...)
       RefreshWorldSecurity(iPlayer)
     end)
   end
 
-  -- city-state ally change apply immediately
+  -- 도시국가 동맹 변동 시 즉시 반영
   if GameEvents.MinorAlliesChanged then
     GameEvents.MinorAlliesChanged.Add(function(iMinor, iOldAlly, iNewAlly)
       if iOldAlly and iOldAlly >= 0 then RefreshWorldSecurity(iOldAlly) end
@@ -209,7 +209,7 @@ else
     end)
   end
 
-  -- initialization
+  -- 초기화
   Events.SequenceGameInitComplete.Add(function()
     for iPlayer = 0, GameDefines.MAX_PLAYERS - 1 do
       RefreshWorldSecurity(iPlayer)
@@ -220,10 +220,10 @@ end
 ------------------------------------------------------------
 -- Biomod: per-10-pop -> dummy stacks (cap 20)
 -- * Dummy   : BUILDING_DUMMY_BIOMOD_POP
--- * Trigger : BUILDING_FW_BIOMOD_TANK (apply only to cities with the building)
+-- * Trigger : BUILDING_FW_BIOMOD_TANK (해당 건물 보유 도시만 적용)
 ------------------------------------------------------------
 do
-  local DEBUG           = true    -- after verification false
+  local DEBUG           = true    -- 확인 끝나면 false
   local POP_PER_STACK   = 10
   local STACK_CAP       = 20
 
@@ -252,7 +252,7 @@ do
     end
   end
 
-  -- (comment translated to English)
+  -- 매턴 갱신
   GameEvents.PlayerDoTurn.Add(function(iPlayer)
     UpdateBiomodPopStacks(Players[iPlayer])
   end)
@@ -261,10 +261,10 @@ end
 ------------------------------------------------------------
 -- Ectogenesis Pod: military-per-10 -> dummy stacks (cap 20)
 -- * Dummy   : BUILDING_DUMMY_MIL10_STACK
--- * Trigger : BUILDING_FW_ECTOGENESIS_POD (apply only to cities with the building)
+-- * Trigger : BUILDING_FW_ECTOGENESIS_POD (해당 건물 보유 도시만 적용)
 ------------------------------------------------------------
 do
-  local DEBUG     = true   -- after verification false
+  local DEBUG     = true   -- 확인 끝나면 false
   local UNITS_PER = 10
   local STACK_CAP = 20
 
@@ -274,20 +274,20 @@ do
   if not iDummy   then print("[FW][ERROR] Dummy BUILDING_DUMMY_MIL10_STACK not found") end
   if not iTrigger then print("[FW][ERROR] Trigger BUILDING_FW_ECTOGENESIS_POD not found") end
 
-  -- military unit detection: VP/ compatible
+  -- 군사 유닛 판정: VP/바닐라 혼용 안전
   local function IsMilitaryUnit(u)
     if not u then return false end
-    -- 1) prefer API if available
+    -- 1) API가 있으면 우선 활용
     if u.IsCombatUnit and u:IsCombatUnit() then
-      -- some DLLs IsCivilianUnit check only if present
+      -- 일부 DLL에 IsCivilianUnit이 없을 수 있으니 존재 시에만 체크
       if u.IsCivilianUnit then
         return not u:IsCivilianUnit()
       end
       return true
     end
-    -- 2) fallback: combat strength based(civilian/ often 0)
+    -- 2) 폴백: 전투력 기반(민간/대도시요원 등은 0인 경우가 많음)
     if u.GetCombatStrength and u:GetCombatStrength() > 0 then return true end
-    -- 3) last resort: domain/unit-combat type could filter by risk of overfitting conservatively false
+    -- 3) 최후의 수단: 도메인/유닛전투형으로 거를 수도 있지만 과적합 위험 → 보수적으로 false
     return false
   end
 
@@ -306,7 +306,7 @@ do
   local function UpdateStacks(p)
     if not p or not p:IsAlive() then return end
 
-    -- player's total military units common stack count
+    -- 플레이어 전체 군사 유닛 수 → 공통 스택 수
     local total  = CountMilitaryUnits(p)
     local stacks = math.floor(total / UNITS_PER)
     if STACK_CAP then stacks = math.min(stacks, STACK_CAP) end
@@ -314,7 +314,7 @@ do
       print(string.format("[Ecto] Player %d mil=%d -> stacks=%d", p:GetID(), total, stacks))
     end
 
-    -- apply stacks only to cities with the trigger building
+    -- 트리거 건물이 있는 도시에만 스택 반영
     if iDummy then
       for city in p:Cities() do
         local want = CityHasTrigger(city) and stacks or 0
@@ -329,7 +329,7 @@ do
     end
   end
 
-  -- (comment translated to English)
+  -- 매턴 갱신
   GameEvents.PlayerDoTurn.Add(function(iPlayer)
     UpdateStacks(Players[iPlayer])
   end)
@@ -337,7 +337,7 @@ end
 
 
 --======================================
--- FW_SpawnFX_Minimal.lua (UI context)
+-- FW_SpawnFX_Minimal.lua (UI 컨텍스트)
 --======================================
 print("[FW]SpawnFX_Minimal.lua loaded (Space Marines only)")
 
@@ -354,7 +354,7 @@ else
     else
       __FW_SpawnFX_Minimal_registered = true
 
-      -- target unit: Space Marines
+      -- 대상 유닛: Space Marines
       local TARGET_UNIT = GameInfoTypes.UNIT_FW_SPACEMARINES
 
       -- FX / SFX
@@ -402,7 +402,7 @@ end
 local function CanHostAirUnits(pPlot)
     if not pPlot then return false end
     if pPlot:IsCity() then return true end
-    -- TODO: /missile
+    -- TODO: 항모/미사일 수용 유닛 체크를 원하면 여기에 추가
     return false
 end
 
@@ -418,7 +418,7 @@ local function SpawnAirSafely(pPlayer, iUnitType, pPlot)
 end
 
 --------------------------------------------
--- Crawler unit (minimal changes)
+-- Crawler unit (최소 수정)
 --------------------------------------------
 local iChanceMissileProduction = 25
 local iGuidemissile = GameInfoTypes.UNIT_GUIDED_MISSILE
@@ -429,14 +429,14 @@ function CrawlerEffectsFW(iPlayer)
 		if (pUnit:GetUnitType() == GameInfoTypes["UNIT_FW_CRAWLER"]) then
 			--print("Crawler found")
 			local iCheckForMissileProduction = JFD_GetRandomFW(1, 100)
-			-- CHANGED: < -> <= ( 25%)
+			-- CHANGED: < -> <= (정확히 25%)
 			if (iCheckForMissileProduction <= iChanceMissileProduction) then
 				local pPlot = pUnit:GetPlot()
 				if (pPlot ~= nil) then
 					local iNumMissiles = 0
 					for iVal = 0,(pPlot:GetNumUnits() - 1) do
 						local loopUnit = pPlot:GetUnit(iVal)
-						-- CHANGED: constants use (/ )
+						-- CHANGED: 상수 재사용 (오타/불일치 방지)
 						if (loopUnit:GetUnitType() == iGuidemissile) then
 							--print("Missile found")
 							iNumMissiles = iNumMissiles + 1
@@ -455,7 +455,7 @@ GameEvents.PlayerDoTurn.Add(CrawlerEffectsFW)
 
 
 --------------------------------------------
--- Angel unit (minimal changes)
+-- Angel unit (최소 수정)
 --------------------------------------------
 local iChanceMissileProduction = 25
 local iThermomissile = GameInfoTypes.UNIT_FW_THERMOMISSILE
@@ -474,7 +474,7 @@ function AngelEffectsFW(iPlayer)
 					local iNumMissiles = 0
 					for iVal = 0,(pPlot:GetNumUnits() - 1) do
 						local loopUnit = pPlot:GetUnit(iVal)
-						-- CHANGED: constants use
+						-- CHANGED: 상수 재사용
 						if (loopUnit:GetUnitType() == iThermomissile) then
 							--print("Missile found")
 							iNumMissiles = iNumMissiles + 1
@@ -502,10 +502,10 @@ local iToxinModPromotion = GameInfoTypes.PROMOTION_FW_TOXIN_MOD
 local function FWUnitDestroyed(iPlayer, iUnit, iUnitType, iX, iY, bDelay, iByPlayer)
   if iPlayer == iByPlayer or iByPlayer == -1 then return end
   local pPlayer = Players[iPlayer]; if not pPlayer then return end
-  local pUnit = pPlayer:GetUnitByID(iUnit); if not pUnit then return end   -- nil
-  local bToxin = pUnit:IsHasPromotion(iToxinModPromotion)                  -- local
+  local pUnit = pPlayer:GetUnitByID(iUnit); if not pUnit then return end   -- ★ nil 가드
+  local bToxin = pUnit:IsHasPromotion(iToxinModPromotion)                  -- ★ local
   if not bToxin then return end
-  local pPlot = pUnit:GetPlot(); if not pPlot then return end              -- nil
+  local pPlot = pUnit:GetPlot(); if not pPlot then return end              -- ★ nil 가드
   for pAdj in PlotAreaSweepIterator(pPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE, DIRECTION_OUTWARDS, CENTRE_EXCLUDE) do
     for i=0, pAdj:GetNumUnits()-1 do
       local u = pAdj:GetUnit(i)
@@ -523,10 +523,10 @@ local iNuclearModPromotion = GameInfoTypes.PROMOTION_FW_NUCLEAR_SMR
 local function FWUnitDestroyed2(iPlayer, iUnit, iUnitType, iX, iY, bDelay, iByPlayer)
   if iPlayer == iByPlayer or iByPlayer == -1 then return end
   local pPlayer = Players[iPlayer]; if not pPlayer then return end
-  local pUnit = pPlayer:GetUnitByID(iUnit); if not pUnit then return end   -- nil
-  local bNuclear = pUnit:IsHasPromotion(iNuclearModPromotion)              -- local
+  local pUnit = pPlayer:GetUnitByID(iUnit); if not pUnit then return end   -- ★ nil 가드
+  local bNuclear = pUnit:IsHasPromotion(iNuclearModPromotion)              -- ★ local
   if not bNuclear then return end
-  local pPlot = pUnit:GetPlot(); if not pPlot then return end              -- nil
+  local pPlot = pUnit:GetPlot(); if not pPlot then return end              -- ★ nil 가드
   for pAdj in PlotAreaSweepIterator(pPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE, DIRECTION_OUTWARDS, CENTRE_EXCLUDE) do
     for i=0, pAdj:GetNumUnits()-1 do
       local u = pAdj:GetUnit(i)
@@ -541,11 +541,11 @@ end
 
 print("[FW]Bio/Gene bonus promotion handler (priority by UnitCombat) loaded")
 
--- ===== settings: promotion( ON/OFF ) =====
+-- ===== 설정: 마커 프로모션(모드 ON/OFF 구분용) =====
 local PROMO_BIO_MODE_ID  = GameInfoTypes["PROMOTION_FW_BIOMODS"]
 local PROMO_GENE_MODE_ID = GameInfoTypes["PROMOTION_FW_GENGINEERED"]
 
--- ===== settings: / =====
+-- ===== 설정: 바이오/유전자 보너스 승급 목록 =====
 local function GI(n) return GameInfoTypes[n] end
 local function addIf(out, name)
   local id = GI(name)
@@ -571,7 +571,7 @@ addIf(GeneListIDs, "PROMOTION_FW_ENHANCED_MUSCLES")
 addIf(GeneListIDs, "PROMOTION_FW_URBAN_WARFARE")
 addIf(GeneListIDs, "PROMOTION_FW_CHAMELEON")
 
--- ===== settings: manually chosen promotions (automatic/building-granted ignore) =====
+-- ===== 설정: “수동 선택 승급”만 트리거로 인정 (자동/건물 부여 무시) =====
 local IsChoosablePromo = {}
 for row in GameInfo.UnitPromotions() do
   if row and (row.CannotBeChosen == false or row.CannotBeChosen == 0 or row.CannotBeChosen == nil) then
@@ -579,7 +579,7 @@ for row in GameInfo.UnitPromotions() do
   end
 end
 local function ban(p) local id = GI(p); if id then IsChoosablePromo[id] = nil end end
--- +
+-- 모드 마커 + 보너스들 전부 트리거 제외
 ban("PROMOTION_FW_BIOMODS")
 ban("PROMOTION_FW_GENGINEERED")
 ban("PROMOTION_FW_IMPACT_MOD")
@@ -598,16 +598,16 @@ ban("PROMOTION_FW_ENHANCED_MUSCLES")
 ban("PROMOTION_FW_URBAN_WARFARE")
 ban("PROMOTION_FW_CHAMELEON")
 
--- ===== priority per unit-combat =====
--- * gun infantry(gunners) = Bio
--- * mounted, melee, (airship/hover ) Gene
+-- ===== 유닛컴뱃별 우선순위 =====
+--  * 보병(총병) = Bio 먼저
+--  * 기마, 근접, (비행선/호버가 있다면) Gene 먼저
 local PreferBioFirst  = {}
 local PreferGeneFirst = {}
 
 local UC_GUN      = GI("UNITCOMBAT_GUN")
 local UC_MOUNTED  = GI("UNITCOMBAT_MOUNTED")
 local UC_MELEE    = GI("UNITCOMBAT_MELEE")
-local UC_HOVER    = GI("UNITCOMBAT_HOVER")  -- use
+local UC_HOVER    = GI("UNITCOMBAT_HOVER")  -- 있으면 사용
 
 if UC_GUN     then PreferBioFirst[UC_GUN] = true end
 if UC_MOUNTED then PreferGeneFirst[UC_MOUNTED] = true end
@@ -618,10 +618,10 @@ local function WhichFirstForUnit(unit)
   local uc = unit:GetUnitCombatType()
   if PreferBioFirst[uc]  then return "bio" end
   if PreferGeneFirst[uc] then return "gene" end
-  return "bio"  -- if no mapping default to Bio first
+  return "bio"  -- 매핑없으면 기본 바이오 우선
 end
 
--- ===== helpers =====
+-- ===== 도우미 =====
 local lastProcessedLevel = {}  -- playerID_unitID -> level
 local function keyPU(pID, uID) return tostring(pID).."_"..tostring(uID) end
 
@@ -629,7 +629,7 @@ local function GrantFirstMissingFromList(unit, idList)
   if not idList or #idList == 0 then return false end
   for _, promoID in ipairs(idList) do
     if not unit:IsHasPromotion(promoID) then
-      unit:SetHasPromotion(promoID, true) -- XP
+      unit:SetHasPromotion(promoID, true) -- XP 변화 없이 즉시 부여
       return true, promoID
     end
   end
@@ -658,20 +658,20 @@ local function GrantByPriority(unit, hasBio, hasGene)
   return ok, givenID
 end
 
--- ===== main event =====
+-- ===== 본 이벤트 =====
 GameEvents.UnitPromoted.Add(function(iPlayer, iUnit, iPromotion)
   local player = Players[iPlayer]
   if not player or not player:IsAlive() then return end
   local unit = player:GetUnitByID(iUnit)
   if not unit or unit:IsDelayedDeath() then return end
 
-  -- trigger only on manually chosen promotions
+  -- 플레이어가 직접 선택한 승급만 트리거
   if not IsChoosablePromo[iPromotion] then return end
 
-  -- (uncomment below to apply only to human)
+  -- (사람만 적용하려면 아래 주석 해제)
   -- if not player:IsHuman() then return end
 
-  -- prevent duplicates on the same level
+  -- 같은 레벨에서 중복 지급 방지
   local lvl = unit:GetLevel()
   local k   = keyPU(iPlayer, iUnit)
   if (lastProcessedLevel[k] or 0) == lvl then return end
@@ -686,7 +686,7 @@ GameEvents.UnitPromoted.Add(function(iPlayer, iUnit, iPromotion)
   if ok and givenID then
     local row  = GameInfo.UnitPromotions[givenID]
     local name = row and Locale.ConvertTextKey(row.Description) or "Bonus Promotion"
-    Events.GameplayAlertMessage("[COLOR_POSITIVE_TEXT]" .. name .. "[ENDCOLOR] was granted an additional promotion.")
+    Events.GameplayAlertMessage("[COLOR_POSITIVE_TEXT]" .. name .. "[ENDCOLOR] 승급을 추가로 획득했습니다.")
   end
 end)
 
@@ -696,10 +696,10 @@ end)
 --=====================================================================
 print("[FW]Short-range splash (L1~L3, r=3) loaded")
 
--- do not redefine if already defined
+-- 외부에서 이미 정의됐다면 재정의 금지
 local iUnitVaultRack = GameInfoTypes["UNIT_FW_VAULT_RACK"]
 
--- promotion(1~3 use)
+-- 프로모션(1~3만 사용)
 local PROMO_TYPES = {
   [1] = "PROMOTION_FW_SPLASH_DAMAGE_1",
   [2] = "PROMOTION_FW_SPLASH_DAMAGE_2",
@@ -707,7 +707,7 @@ local PROMO_TYPES = {
 }
 local PROMO_IDS = {}; for i=1,3 do PROMO_IDS[i] = GameInfoTypes[PROMO_TYPES[i]] end
 
--- use
+-- 유닛 타입에 무료 프로모가 박혀 있다면 그걸 최고 레벨로 사용
 local UNIT_SPLASH_LEVEL = (function()
   local best = {}
   for lvl = 1, 3 do
@@ -725,7 +725,7 @@ local UNIT_SPLASH_LEVEL = (function()
   return best
 end)()
 
--- radius/damage(center 0, 1~3)
+-- 반경/데미지(중심 0, 링1~3)
 local LEVELS = {
   [1] = { radius = 3, center = 0, ring = { 20, 10, 5 } },
   [2] = { radius = 3, center = 0, ring = { 30, 15, 8 } },
@@ -733,7 +733,7 @@ local LEVELS = {
 }
 local FRIENDLY_FIRE = false
 
--- war/friendly check
+-- 전쟁/우호 판정
 local function IsValidTarget(attID, tgtID)
   if tgtID == -1 then return false end
   if attID == tgtID then return FRIENDLY_FIRE end
@@ -742,7 +742,7 @@ local function IsValidTarget(attID, tgtID)
   return Teams[A:GetTeam()]:IsAtWar(T:GetTeam()) or FRIENDLY_FIRE
 end
 
--- ring generation (PlotIterators )
+-- 링 생성 (PlotIterators 없이)
 local dirs = {
   DirectionTypes.DIRECTION_NORTHEAST, DirectionTypes.DIRECTION_EAST,
   DirectionTypes.DIRECTION_SOUTHEAST, DirectionTypes.DIRECTION_SOUTHWEST,
@@ -765,7 +765,7 @@ local function Rings(center, R)
   return rings
 end
 
--- apply damage to plot(/)
+-- 타일에 피해 적용(유닛/도시)
 local function DoSplashAtPlot(attID, plot, dmg)
   if dmg<=0 then return end
   for i=0, plot:GetNumUnits()-1 do
@@ -778,7 +778,7 @@ local function DoSplashAtPlot(attID, plot, dmg)
   if city and IsValidTarget(attID, city:GetOwner()) then city:ChangeDamage(dmg) end
 end
 
--- (31)
+-- 유닛 인스턴스에서 최고 레벨(3→1) 탐색
 local function GetLevelFromUnit(u)
   for lvl=3,1,-1 do
     local id = PROMO_IDS[lvl]
@@ -786,26 +786,26 @@ local function GetLevelFromUnit(u)
   end
 end
 
--- dedup key
+-- 중복 방지 키
 local _fired = {}
 local function OnUnitPrekill(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, iByPlayer)
   local key = iPlayer..":"..iUnitID..":"..(iX or -1)..":"..(iY or -1)
   if _fired[key] then return end
 
   local pPlayer = Players[iPlayer]; if not pPlayer then return end
-  local u = pPlayer:GetUnitByID(iUnitID)  -- short-range usually still alive
+  local u = pPlayer:GetUnitByID(iUnitID)  -- 단거리는 보통 살아있음
 
-  -- : ()
+  -- 레벨: 인스턴스 → 타입 무료프로모 → 없음(리턴)
   local lvl = (u and GetLevelFromUnit(u)) or UNIT_SPLASH_LEVEL[iUnitType]
   if not lvl or lvl <= 0 then return end
 
   local cfg = LEVELS[math.min(lvl,3)] or LEVELS[1]
   local center = Map.GetPlot(iX, iY); if not center then return end
 
-  -- center(0 no-op)
+  -- 중심(0이므로 보통 no-op)
   DoSplashAtPlot(iPlayer, center, cfg.center or 0)
 
-  -- (1..radius)
+  -- 모든 링 적용 (1..radius)
   if (cfg.radius or 0) >= 1 then
     local rings = Rings(center, cfg.radius)
     for r=1, cfg.radius do
@@ -827,28 +827,28 @@ GameEvents.UnitPrekill.Add(OnUnitPrekill)
 
 
 -- =====================================================================
--- FW ICBM splash target-plot capture via BattleJoined (for Vox Populi)
+-- FW ICBM splash — target-plot capture via BattleJoined (for Vox Populi)
 --   Paste this AFTER your current splash modules.
 -- =====================================================================
 print("[FW]ICBM target-capture route loaded")
 
--- : ICBM ( )
+-- 화이트리스트: ICBM로 처리할 장거리 유닛 (원하면 추가)
 local FW_ICBM_TYPES = {
   [GameInfoTypes.UNIT_FW_GOD_ROD]  = true,
   [GameInfoTypes.UNIT_FW_GOD_ROD2] = true,
 }
 
--- /option
-local FW_ICBM_RING1_DMG      = 20      -- 6 ( 4/5 )
+-- 피해/옵션
+local FW_ICBM_RING1_DMG      = 20      -- 인접 6헥스 피해(프로모 4/5 있으면 아래에서 오버라이드)
 local FW_PROMO_L4            = GameInfoTypes.PROMOTION_FW_SPLASH_DAMAGE_4
 local FW_PROMO_L5            = GameInfoTypes.PROMOTION_FW_SPLASH_DAMAGE_5
 local FW_DMGL4, FW_DMGL5     = 40, 50
-local FW_FRIENDLY_FIRE       = false   -- true
+local FW_FRIENDLY_FIRE       = false   -- 테스트 때만 true 권장
 
--- (comment translated to English)
+-- 랙 제외
 local FW_UNIT_VAULT_RACK     = GameInfoTypes.UNIT_FW_VAULT_RACK
 
--- war/friendly
+-- 전쟁/우호
 local function FW_IsValidTarget(attID, tgtID)
   if tgtID == -1 then return false end
   if attID == tgtID then return FW_FRIENDLY_FIRE end
@@ -857,7 +857,7 @@ local function FW_IsValidTarget(attID, tgtID)
   return Teams[A:GetTeam()]:IsAtWar(T:GetTeam()) or FW_FRIENDLY_FIRE
 end
 
--- 6
+-- 인접 6헥스
 local __dirs = {
   DirectionTypes.DIRECTION_NORTHEAST, DirectionTypes.DIRECTION_EAST,
   DirectionTypes.DIRECTION_SOUTHEAST, DirectionTypes.DIRECTION_SOUTHWEST,
@@ -891,15 +891,15 @@ local function FW_DoPlot(attID, pPlot, dmg)
 end
 
 -- -----------------------------
--- A) "target plot"
+-- A) 전투 훅으로 "목표칸" 캐치
 -- -----------------------------
--- ID -> center Plot
+-- 공격자 유닛ID -> 방어자 중심 Plot
 local pendingTargets = {}     -- [attackerUnitID] = Plot
--- ID ( )
+-- 플레이어별 “이번 전투의 공격자 유닛ID” (역할쌍 매칭용)
 local currentAtkUnit = {}     -- [playerID] = unitID
 
--- iRole DLL / .
--- environment , "two-call combination" .
+-- iRole 값은 DLL에서 넘겨주는 공격/방어 역할 인덱스.
+-- 환경마다 숫자값이 다를 수 있어, 아래처럼 "두 번 호출 조합"으로 안전하게 매칭한다.
 local function OnBattleJoined(iPlayer, iUnitOrCity, iRole, bIsCity)
   local pPlayer = Players[iPlayer]; if not pPlayer then return end
 
@@ -907,20 +907,20 @@ local function OnBattleJoined(iPlayer, iUnitOrCity, iRole, bIsCity)
     local u = pPlayer:GetUnitByID(iUnitOrCity)
     if u then
       local utype = u:GetUnitType()
-      -- 1) (/2) "this player's attacker"
+      -- 1) 우리 쪽 공격 유닛(신의지팡이/2) 등장 → "이 플레이어의 공격자"로 기억
       if FW_ICBM_TYPES[utype] then
         currentAtkUnit[iPlayer] = iUnitOrCity
-        -- (comment translated to English)
+        -- 디버그
         print(string.format("[FW][ICBM] BattleJoined ATK? p=%d unit=%d type=%d", iPlayer, iUnitOrCity, utype))
         return
       end
     end
   end
 
-  -- 2) () , "attacker unit ID"
-  local atkUnitID = currentAtkUnit[iPlayer]           -- (comment translated to English)
+  -- 2) 상대방(방어자) 등장 타이밍에, 방금 기록된 "공격자 유닛ID"가 있다면 그 좌표를 타겟으로 기록
+  local atkUnitID = currentAtkUnit[iPlayer]           -- 같은 플레이어 소유 공격자일 수도 있고
   if not atkUnitID then
-    -- 'opposing player' ( )
+    -- 혹시 바로 '상대 플레이어'에 기록됐을 수 있으니 전체 탐색(소수 플레이어이므로 부담 경미)
     for pid=0, GameDefines.MAX_MAJOR_CIVS-1 do
       if currentAtkUnit[pid] then atkUnitID = currentAtkUnit[pid]; break end
     end
@@ -929,18 +929,18 @@ local function OnBattleJoined(iPlayer, iUnitOrCity, iRole, bIsCity)
 
   local center
   if bIsCity then
-    -- (comment translated to English)
+    -- 도시 방어자
     local c = pPlayer:GetCityByID(iUnitOrCity)
     if c then center = c:Plot() end
   else
-    -- (comment translated to English)
+    -- 유닛 방어자
     local def = pPlayer:GetUnitByID(iUnitOrCity)
     if def then center = def:GetPlot() end
   end
 
   if center then
     pendingTargets[atkUnitID] = center
-    -- ( )
+    -- 한 번 매칭했으면 비워준다(동일 전투 중 중복 방지)
     currentAtkUnit[iPlayer] = nil
     print(string.format("[FW][ICBM] target lock by battle: atkUnit=%d at (%d,%d)",
       atkUnitID, center:GetX(), center:GetY()))
@@ -955,7 +955,7 @@ else
 end
 
 -- ----------------------------------------
--- B) Prekill 'target plot'
+-- B) Prekill에서 캡쳐된 '목표칸'으로 스플래시
 -- ----------------------------------------
 local fired = {}
 local function OnUnitPrekill_ICBM(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, iByPlayer)
@@ -963,7 +963,7 @@ local function OnUnitPrekill_ICBM(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, i
   local key = iPlayer..":"..iUnitID..":"..(iX or -1)..":"..(iY or -1)
   if fired[key] then return end
 
-  -- : L5 > L4 >
+  -- 피해량: L5 > L4 > 기본
   local dmg = FW_ICBM_RING1_DMG
   local u = Players[iPlayer] and Players[iPlayer]:GetUnitByID(iUnitID)
   if u then
@@ -971,14 +971,14 @@ local function OnUnitPrekill_ICBM(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, i
     elseif FW_PROMO_L4 and u:IsHasPromotion(FW_PROMO_L4) then dmg = FW_DMGL4 end
   end
 
-  -- 1: BattleJoined
+  -- 1순위: BattleJoined에서 잠가둔 목표칸
   local center = pendingTargets[iUnitID]
-  -- 2: ( /)
+  -- 2순위: 전달된 좌표(대개 발사칸/요격칸) → 전선 장거리면 비어있을 수 있음
   if not center and type(iX)=="number" and iX>=0 and type(iY)=="number" and iY>=0 then
     center = Map.GetPlot(iX, iY)
     print("[FW][ICBM] fallback to prekill coords")
   end
-  -- 3: fallback
+  -- 3순위: 유닛 좌표 폴백
   if not center and u then
     center = Map.GetPlot(u:GetX(), u:GetY())
     print("[FW][ICBM] fallback to unit XY")
@@ -988,13 +988,13 @@ local function OnUnitPrekill_ICBM(iPlayer, iUnitID, iUnitType, iX, iY, bDelay, i
     return
   end
 
-  -- radius1
+  -- 반경1 적용
   local totalU, totalC = 0, 0
   for _,p in ipairs(FW_Ring1(center)) do
     local hu, hc = FW_DoPlot(iPlayer, p, dmg); totalU = totalU + hu; totalC = totalC + hc
   end
 
-  -- use
+  -- 한 번 사용 후 타겟 제거
   pendingTargets[iUnitID] = nil
   fired[key] = true
 
@@ -1010,15 +1010,15 @@ GameEvents.UnitPrekill.Add(OnUnitPrekill_ICBM)
 print("[FW] Undersea Tunnel script loaded")
 
 -- ==========================================================
--- Undersea Tunnel: on placement Railroad create (water+land6 condition)
--- - events: TileImprovementChanged + BuildFinished(backup) + PlayerDoTurn(correction)
--- - constants/ID : GameInfoTypes nil , safe skip if key missing
--- - return use
+-- Undersea Tunnel: 설치 즉시 Railroad 생성 (바다+육지≤6칸 조건)
+--  - 이벤트: TileImprovementChanged + BuildFinished(백업) + PlayerDoTurn(보정)
+--  - 상수/ID 가드: GameInfoTypes nil 체크, 키 부재 시 안전 스킵
+--  - 메인 청크에 return 사용 없음
 -- ==========================================================
 
 local TUNNEL_IMP_KEYS = {
   "IMPROVEMENT_UNDERSEA_TUNNEL",
-  "IMPROVEMENT_FW_UNDERSEA_TUNNEL", -- alternative naming
+  "IMPROVEMENT_FW_UNDERSEA_TUNNEL", -- 다른 네이밍 대비
 }
 local TUNNEL_BUILD_KEYS = {
   "BUILD_UNDERSEA_TUNNEL",
@@ -1031,7 +1031,7 @@ local iRouteRailroad = GameInfoTypes[RAIL_KEY]
 if not iRouteRailroad then
   print("[FW][UnderseaTunnel] ERROR: ROUTE_RAILROAD not found. Skipping tunnel automation.")
 else
-  -- actually existing Improvement/Build collect
+  -- 실제 존재하는 터널 Improvement/Build만 수집
   local TunnelImprovementIDs = {}
   for _, k in ipairs(TUNNEL_IMP_KEYS) do
     local id = GameInfoTypes[k]
@@ -1048,7 +1048,7 @@ else
   if not hasAnyTunnelKey then
     print("[FW][UnderseaTunnel] ERROR: No Undersea Tunnel Improvement/Build IDs found. Skipping.")
   else
-    -- option: land melee
+    -- 옵션: 육지 근접 범위
     local NEAR_LAND_RANGE = 6
 
     local function IsWithinRangeOfLand(plot, range)
@@ -1070,15 +1070,15 @@ else
 
     local function TryLayRailOnPlot(plot)
       if not plot then return end
-      -- condition 1: water( )
+      -- 조건 1: 바다(호수 제외)
       if (not plot:IsWater()) or plot:IsLake() then return end
-      -- condition 2: surrounding land NEAR_LAND_RANGE
+      -- 조건 2: 주변 육지 ≤ NEAR_LAND_RANGE
       if not IsWithinRangeOfLand(plot, NEAR_LAND_RANGE) then return end
-      -- action: set railroad
+      -- 실행: 철도 지정
       plot:SetRouteType(iRouteRailroad, true)
     end
 
-    -- correction ( environment events correction)
+    -- 누락 보정용 큐 (일부 환경에서 이벤트 타이밍 보정)
     local pendingPlots = {} -- [plotIndex] = true
     local function EnqueuePlot(x, y)
       local p = Map.GetPlot(x, y)
@@ -1087,18 +1087,18 @@ else
       end
     end
 
-    -- A) improvement change hook(most straightforward)
+    -- A) 개선 변경 훅(가장 직관적)
     local function OnTileImprovementChanged(x, y, oldImp, newImp)
       if newImp and TunnelImprovementIDs[newImp] then
         local plot = Map.GetPlot(x, y)
         TryLayRailOnPlot(plot)
-        -- correction
+        -- 혹시 엔진 타이밍 문제로 반영 안 되면 보정 큐에 넣음
         EnqueuePlot(x, y)
       end
     end
     GameEvents.TileImprovementChanged.Add(OnTileImprovementChanged)
 
-    -- B) build finished hook(environment/depending on mod A when not called fallback for backup)
+    -- B) 빌드 완료 훅(환경/모드에 따라 A가 안 올 때를 대비한 백업)
     if GameEvents.BuildFinished then
       local function OnBuildFinished(iPlayer, x, y, iBuildType, bGold, bFaith)
         if iBuildType and TunnelBuildIDs[iBuildType] then
@@ -1110,7 +1110,7 @@ else
       GameEvents.BuildFinished.Add(OnBuildFinished)
     end
 
-    -- C) 1 correction: retry then clear
+    -- C) 1턴 내 보정: 큐에 담긴 플롯 재시도 후 비움
     local function OnPlayerDoTurn(iPlayer)
       if next(pendingPlots) == nil then return end
       for plotIndex, _ in pairs(pendingPlots) do
@@ -1143,7 +1143,7 @@ local function CanSiloAt(pPlot, pUnit)
   if not (pPlot and pUnit) then return false end
   local iPlayer = pUnit:GetOwner()
 
-  -- if units present, allow ours only
+  -- 유닛이 있다면 우리 것만 허용
   for i = 0, pPlot:GetNumUnits()-1 do
     local u = pPlot:GetUnit(i)
     if u then
@@ -1155,10 +1155,10 @@ local function CanSiloAt(pPlot, pUnit)
     end
   end
 
-  -- if no unit, check tile ownership
+  -- 유닛이 없으면 타일 소유권 체크
   local iOwner = pPlot:GetOwner()
   if (iOwner == iPlayer) or (iOwner == -1) or (Teams[Players[iPlayer]:GetTeam()]:IsAtWar(Players[iOwner]:GetTeam()) == false and Players[iPlayer]:GetTeam() == Players[iOwner]:GetTeam()) then
-    -- "nukes only" check: special unit check (magic number 2 use )
+    -- "핵만 허용" 판정: 스페셜유닛 타입으로 판정 (매직넘버 2 사용 지양)
     return (pUnit:GetSpecialUnitType() == iSpecial_Missile)
   end
 
@@ -1221,7 +1221,7 @@ local function OnCanRebaseNukesTo(iPlayer, iUnit, iPlotX, iPlotY)
 end
 
 --======================================================================================================================
--- Safe registration (DLL events )
+-- Safe registration (DLL 이벤트 없으면 조용히 패스)
 --======================================================================================================================
 if GameEvents and GameEvents.CanLoadAt and GameEvents.CanRebaseTo then
   GameEvents.CanLoadAt.Add(OnCanLoadNukesAt)
@@ -1237,7 +1237,7 @@ end
 ---==========================================================
 
 --------------------------------------------
--- Mnemosyne : XP based on highest level
+-- Mnemosyne : 최고 레벨 기반 XP 지급
 --------------------------------------------
 
 local iBuildingMnemosyne = GameInfoTypes.BUILDING_FW_MNEMOSYNE
@@ -1256,21 +1256,21 @@ GameEvents.CityTrained.Add(function(iPlayer, iCity, iUnitID)
 end)
 
 --==========================================================
--- Angelnet : promotion /
--- - owner only
--- - 'the city' center radius iRange
--- - city capture/transfer/persist across loading
+-- Angelnet : 오라 프로모션 부여/해제
+--   - 앤젤넷 보유자만 대상
+--   - 앤젤넷이 있는 '그 도시' 중심 반경 iRange 칸
+--   - 도시 점령/이양/로딩에도 상태 유지
 --==========================================================
 
-local iBuildingAngelnet  = GameInfoTypes.BUILDING_FW_ANGELNET         -- (comment translated to English)
-local iPromotionAngelnet = GameInfoTypes.PROMOTION_FW_ANGELNET        -- promotion
-local iRangeAngelnet     = 4                                          -- radius
+local iBuildingAngelnet  = GameInfoTypes.BUILDING_FW_ANGELNET         -- 앤젤넷 원더
+local iPromotionAngelnet = GameInfoTypes.PROMOTION_FW_ANGELNET        -- 부여할 프로모션
+local iRangeAngelnet     = 4                                          -- 오라 반경
 
 local g_AngelOwner   = nil
 local g_AngelCityX   = nil
 local g_AngelCityY   = nil
 
--- re-scan owner/coordinates
+-- 앤젤넷 보유자/좌표 재탐색
 local function RefindAngelnet()
   g_AngelOwner, g_AngelCityX, g_AngelCityY = nil, nil, nil
   for i = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
@@ -1288,7 +1288,7 @@ local function RefindAngelnet()
   end
 end
 
--- promotion
+-- 유닛 하나 프로모션 갱신
 local function RefreshUnitAngel(u)
   if not g_AngelOwner or not g_AngelCityX then return end
   if not u or not u:IsCombatUnit() then return end
@@ -1311,14 +1311,14 @@ local function RefreshUnitAngel(u)
   end
 end
 
--- refresh all owner's units(for start-of-turn stabilization)
+-- 소유자의 모든 유닛 일괄 갱신(턴 시작 안정화용)
 local function RefreshAllAngel()
   if not g_AngelOwner then return end
   local p = Players[g_AngelOwner]; if not p or not p:IsAlive() then return end
   for u in p:Units() do RefreshUnitAngel(u) end
 end
 
--- events
+-- 이벤트 훅
 Events.LoadScreenClose.Add(function() RefindAngelnet(); RefreshAllAngel() end)
 
 GameEvents.CityConstructed.Add(function(iPlayer, iCity, iBuilding)
@@ -1328,13 +1328,13 @@ GameEvents.CityConstructed.Add(function(iPlayer, iCity, iBuilding)
 end)
 
 GameEvents.CityCaptureComplete.Add(function(iOld, bCap, x, y, iNew)
-  -- re-scan in case capture changed owner/coords
+  -- 점령으로 소유자/좌표가 바뀔 수 있으니 재탐색
   RefindAngelnet()
-  -- natural cleanup for both sides: keep only owner cleaned per turn
+  -- 양쪽 유닛 모두 자연정리: 오너만 턴마다 정리되도록 유지
 end)
 
 GameEvents.UnitSetXY.Add(function(iPlayer, iUnit)
-  -- refresh moved unit immediately
+  -- 움직인 유닛만 즉시 갱신
   local p = Players[iPlayer]; if not p or not p:IsAlive() then return end
   RefreshUnitAngel(p:GetUnitByID(iUnit))
 end)
@@ -1348,14 +1348,14 @@ end)
 
 -- =========================================================
 -- Laputa_AntiPillageOnly.lua
--- - Laputa(BUILDING_FW_LAPUTA) in all cities of the owning civ dummy(option) sync
--- - Laputa block pillage attempts(if possible)
+--  - 라퓨타(BUILDING_FW_LAPUTA) 보유 문명 전 도시에 더미(옵션) 동기화
+--  - 라퓨타 영토에서 약탈 시도 자체 차단(가능 시)
 
 print("[FW]Laputa_DummySyncOnly loaded")
 
--- [Keys: match your SQL/XML]
+-- ──[키: 네 SQL/XML과 일치]─────────────────────────────────
 local BUILDING_LAPUTA       = GameInfoTypes.BUILDING_FW_LAPUTA
-local BUILDING_LAPUTA_DUMMY = GameInfoTypes.BUILDING_FW_LAPUTA_DUMMY  -- nil is fine if missing
+local BUILDING_LAPUTA_DUMMY = GameInfoTypes.BUILDING_FW_LAPUTA_DUMMY  -- 없으면 nil이어도 됨
 
 if not BUILDING_LAPUTA then
   print("[Laputa] ERROR: BUILDING_FW_LAPUTA not found in DB.")
@@ -1364,7 +1364,7 @@ if not BUILDING_LAPUTA then
      print("[Laputa] NOTE: Dummy building not found. Dummy sync will be skipped.")
   end
 end
--- [Laputa ownership cache]
+-- ──[라퓨타 보유 캐시]──────────────────────────────────────
 local hasLaputa = {}  -- [playerID] = bool
 
 local function PlayerHasLaputa(p)
@@ -1376,7 +1376,7 @@ local function RefreshHasLaputa(iPlayer)
   hasLaputa[iPlayer] = PlayerHasLaputa(p)
 end
 
--- [ dummy sync(option)]
+-- ──[도시 더미 동기화(옵션)]────────────────────────────────
 local function SyncLaputaDummyForPlayer(p)
   if not BUILDING_LAPUTA_DUMMY then return end
   if not p or not p.IsAlive or not p:IsAlive() then return end
@@ -1388,7 +1388,7 @@ local function SyncLaputaDummyForPlayer(p)
   end
 end
 
--- [events ]
+-- ──[이벤트 훅]─────────────────────────────────────────────
 Events.SequenceGameInitComplete.Add(function()
   for i = 0, GameDefines.MAX_PLAYERS - 1 do
     RefreshHasLaputa(i)

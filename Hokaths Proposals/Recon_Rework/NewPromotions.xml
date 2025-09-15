@@ -246,12 +246,12 @@
 		<Row>
 			<PromotionType>PROMOTION_ROUGH_WALKER</PromotionType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
-			<IgnoreTerrainCostIn>1</IgnoreTerrainCostIn>
+			<IgnoreTerrainCostFrom>1</IgnoreTerrainCostFrom>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_ROUGH_WALKER</PromotionType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<IgnoreTerrainCostIn>1</IgnoreTerrainCostIn>
+			<IgnoreTerrainCostFrom>1</IgnoreTerrainCostFrom>
 		</Row>
 	</UnitPromotions_Features>
 	<UnitPromotions_Terrains>
@@ -272,12 +272,12 @@
 		<Row>
 			<PromotionType>PROMOTION_ROUGH_WALKER</PromotionType>
 			<TerrainType>TERRAIN_HILL</TerrainType>
-			<IgnoreTerrainCostIn>1</IgnoreTerrainCostIn>
+			<IgnoreTerrainCostFrom>1</IgnoreTerrainCostFrom>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_ROUGH_WALKER</PromotionType>
 			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<IgnoreTerrainCostIn>1</IgnoreTerrainCostIn>
+			<IgnoreTerrainCostFrom>1</IgnoreTerrainCostFrom>
 		</Row>
 	</UnitPromotions_Terrains>
 
@@ -286,7 +286,7 @@
 			<Text>Adventurer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ROUGH_WALKER_HELP">
-			<Text>Ignore Terrain Cost in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR], [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR], [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR].</Text>
+			<Text>Ignore Terrain Cost from [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR], [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR], [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ALPINE">
 			<Text>Ski Infantry</Text>

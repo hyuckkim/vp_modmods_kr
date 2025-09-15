@@ -883,55 +883,55 @@
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_FUNGAL_GROWTH</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_EMBASSY</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
  			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FEITORIA</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_KASBAH</ImprovementType>
 			<ResourceMakesValid>true</ResourceMakesValid>
 			<ResourceTrade>true</ResourceTrade>
-			<ResourceType>RESOURCE_ADN_FUNGUS</ResourceType>
+			<ResourceType>RESOURCE_XENO_FUNGUS</ResourceType>
 		</Row>
 	</Improvement_ResourceTypes>
 	 <Improvement_Flavors>
@@ -1639,7 +1639,7 @@
 		<Row>
 			<Type>BUILD_FW_BIOWELL</Type>
 			<Time>700</Time>
-			<PrereqTech>TECH_FW_ECOTHEORY</PrereqTech>
+			<PrereqTech>TECH_ECOGENETICS</PrereqTech>
 			<ImprovementType>IMPROVEMENT_FW_BIOWELL</ImprovementType>
 			<Description>TXT_KEY_BUILD_FW_BIOWELL</Description>
 			<Help>TXT_KEY_BUILD_FW_BIOWELL_HELP</Help>
@@ -1653,7 +1653,7 @@
 		<Row>
 			<Type>BUILD_FW_GENERATOR</Type>
 			<Time>700</Time>
-			<PrereqTech>TECH_SUPERCOMPUTERS</PrereqTech>
+			<PrereqTech>TECH_DATA_SCIENCE</PrereqTech>
 			<ImprovementType>IMPROVEMENT_FW_GENERATOR</ImprovementType>
 			<Description>TXT_KEY_BUILD_FW_GENERATOR</Description>
 			<Help>TXT_KEY_BUILD_FW_GENERATOR_HELP</Help>
@@ -1667,7 +1667,7 @@
 		<Row>
 			<Type>BUILD_FW_GENERATOR_WATER</Type>
 			<Time>700</Time>
-			<PrereqTech>TECH_MECHATRONICS</PrereqTech>
+			<PrereqTech>TECH_GENERATIVE_AI</PrereqTech>
 			<ImprovementType>IMPROVEMENT_FW_GENERATOR_WATER</ImprovementType>
 			<Description>TXT_KEY_BUILD_FW_GENERATOR_WATER</Description>
 			<Help>TXT_KEY_BUILD_FW_GENERATOR_WATER_HELP</Help>

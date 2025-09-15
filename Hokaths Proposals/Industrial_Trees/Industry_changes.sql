@@ -217,3 +217,30 @@ WHERE Tag = 'TXT_KEY_POLICY_PROTECTIONISM_HELP';
 UPDATE Language_en_US
 SET Text = 'Throughout history, precious metals have formed the basis of (commodity) money. As large sums became traded more commonly, representative money in the form of notes and certificates became the main medium of exchange. In this context, a gold standard is a monetary system in which representative money is exchangable for a fixed quantity of gold bullion. This was done to maintain stable exchange rates and limit inflation, although these effects are not guaranteed and the choice comes with significant monetary policy implications. The gold standard was the basis for the international monetary system from the 1870s to the early 1920s, and intermittently until 1971 when the world''s reserve currency, the US dollar, terminated its convertibility policy.'
 WHERE Tag = 'TXT_KEY_POLICY_PROTECTIONISM_TEXT';
+
+---------------
+-- if EE is active
+--------------
+UPDATE Policy_BuildingClassProductionModifiers SET
+ProductionModifier = 50 
+WHERE PolicyType = 'POLICY_COMMERCE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT');
+
+INSERT INTO Policy_BuildingClassProductionModifiers
+	(PolicyType, BuildingClassType, ProductionModifier)
+SELECT
+	'POLICY_COMMERCE', Type, 50
+FROM BuildingClasses WHERE Type IN ('BUILDINGCLASS_EE_WEIGH_HOUSE', 'BUILDINGCLASS_EE_CLOTH_MILL') 
+AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT');
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '+100%', '+50%')
+WHERE Tag = 'TXT_KEY_POLICY_BRANCH_COMMERCE_HELP'
+AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT');
+
+UPDATE Language_en_US SET
+Text = Replace(Text, 'Production towards ', 'Production towards Weigh Houses, Cloth Mills, and ')
+WHERE Tag = 'TXT_KEY_POLICY_BRANCH_COMMERCE_HELP'
+AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT');
+-------------------
+------------------
+

@@ -68,27 +68,39 @@ UPDATE Language_ko_KR
 SET Text = 'Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 and gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion (max 24 Cities). +33% [ICON_GREAT_PEOPLE] Great Person Rate in Holy City during [ICON_GOLDEN_AGE] Golden Ages.'
 WHERE Tag = 'TXT_KEY_BELIEF_ITINERANT_PREACHERS';
 
+-- and make sure the reduction is removed from prophecy (which is v strong anyway)
+UPDATE Language_ko_KR
+SET Text = Replace(Text, 'Reduces minimum Policy requirement for Wonders by 1. ', '')
+WHERE Tag = 'TXT_KEY_BELIEF_MESSIAH';
+
+----------------------------
+-- buff universalism
+----------------------------
+UPDATE Language_ko_KR
+SET Text = '+1 [ICON_RESEARCH] Science and [ICON_PRODUCTION] Production in the Holy City for every 4 followers of other Religions in owned Cities. +1 [ICON_GOLD] Gold and [ICON_PEACE] Faith in Holy City for every 5 followers of this [ICON_RELIGION] Religion in Foreign Cities.'
+WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_UNITY';
+
 ------------------------------------------------------
 -- Follower Yield Beliefs
 ------------------------------------------------------
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City (max +15 [ICON_FOOD] Food). +4 [ICON_FOOD] Food if the City has a Specialist.'
+SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City. +4 [ICON_FOOD] Food if the City has a Specialist.'
 WHERE Tag = 'TXT_KEY_BELIEF_ASCETISM';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City (max +15 [ICON_PRODUCTION] Production). +2 [ICON_PRODUCTION] Production per active [ICON_INTERNATIONAL_TRADE] Trade Route to or from the City.'
+SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City. +2 [ICON_PRODUCTION] Production per active [ICON_INTERNATIONAL_TRADE] Trade Route to or from the City.'
 WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_COMMUNITY';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City (max +15 [ICON_GOLD] Gold). +1 [ICON_GOLD] Gold from Specialists and [ICON_CITIZEN_RED] Labourers.'
+SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City. +1 [ICON_GOLD] Gold from [COLOR_POSITIVE_TEXT]Bonus Resources[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_BELIEF_FEED_WORLD';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_CULTURE] Culture for every 3 followers in the City (max +10 [ICON_CULTURE] Culture). +1 [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works.'
+SET Text = '+1 [ICON_CULTURE] Culture for every 3 followers in the City. +1 [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works.'
 WHERE Tag = 'TXT_KEY_BELIEF_DIVINE_INSPIRATION';
 
 UPDATE Language_ko_KR
-SET Text = '+1 [ICON_RESEARCH] Science for every 3 followers in the City (max +10 [ICON_RESEARCH] Science). +2 [ICON_RESEARCH] Science from Universities.'
+SET Text = '+1 [ICON_RESEARCH] Science for every 3 followers in the City. +2 [ICON_RESEARCH] Science from Universities.'
 WHERE Tag = 'TXT_KEY_BELIEF_CHORAL_MUSIC';
 ------------------
 -- cooperation to match

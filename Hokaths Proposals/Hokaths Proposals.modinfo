@@ -32,6 +32,7 @@
 			<Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" minversion="0" maxversion="999" title="Louisiana" />
 			<Mod id="8634880a-749f-4d64-aa68-560378e0f007" minversion="0" maxversion="999" title="Feathers  Alpacas Camels Quartz" />
 			<Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders" />
+			<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
 		</References>
 		<Files>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Corp2Atlas256.dds</File>
@@ -149,6 +150,7 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Cinema.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Observatory.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Aerodrome.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Archive.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Netherlands.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Brazil.sql</File>
@@ -250,6 +252,7 @@
 		<UpdateDatabase>New_Buildings/IndustrialEstate.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Cinema.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Aerodrome.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Archive.sql</UpdateDatabase>
 		
 		<!-- EE changes -->
 		<!--

@@ -1,8 +1,12 @@
 Religion
+  Pantheons.sql
   Goddess of Renewal
   -- Changed +2 Science to +2 Faith on the Market
     This Pantheon might now actually stand a chance of Founding in reasonable time
     All* other Building-buffing Pantheons have +2 Faith on that Building
+
+  -- Removed 1 Faith / 5 from God-King
+    It effectively dominates Ancestor Worship atm
    
   WarReligions.sql looks to make the military appeal of Religion better
   -- New Enhancer "Cremation" to contend with Zealotry
@@ -67,6 +71,7 @@ Religion
 
   -- Symbolism changed (following More Beliefs)
    - Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 
+     this is moved from Prophecy, which is already v strong
    - gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion 
    - max 24 Cities
    - +33% Great Person Rate in Holy City during Golden Ages.
@@ -77,6 +82,12 @@ Religion
    - 20% Spread Distance
    - Holy City gains +15% All Yields during a Golden Age.
       moved from old Divine Inheritance and nerfed slightly 
+
+  -- Universalism buffed
+   -Science/Prod to per 4 from per 5 foreign followers
+   -Faith/Gold to per 5 from per 10 of your religion in foreign cities
+      This belief was just so weak compared to everything else. if you fully convert a foreign city you get 1 or 2 gold? big whoop.
+      meanwhile, Prophecy and Zealotry are out there
 
   -- New Enhancer "Sacred Geometry" (for Wonder Whores)
    - Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 Science and Faith for every City following this Religion 
@@ -101,32 +112,32 @@ Religion
    - Holy Cow!
 
   -- Thrift
-   - 1 gold per 2
-   - max 15
-   - 1 gold from specialists (incl. labourer)
+   - 1 Gold per 2
+   - no cap
+   - +1 Gold from Bonus Resources
 
   -- Asceticism/Remedy
-   - 1 food per 2
-   - max 15
-   - 4 food if you have a specialist
+   - 1 Food per 2
+   - no cap
+   - 4 Food if you have a Specialist
 
   -- Diligence
-   - 1 prod per 2
-   - max 15
-   - 2 prod for each trade route to/from
+   - 1 Prod per 2
+   - no cap
+   - 2 Prod for each trade route to/from
 
   -- Creativity
-   - 1 culture per 3
-   - max 10
-   - 1 culture from great works
- 
+   - 1 Culture per 3
+   - no cap
+   - 1 Culture from Great Works
+
   -- Scholarship
-   - 1 science per 3
-   - max 10
-   - 2 science from Universities
+   - 1 Science per 3
+   - no cap
+   - 2 Science from Universities
 
   -- Communalism
-   - 2 food added to production
+   - +2 Food added to the existing Production
 
   -- Mastery/Abstinence
    - Labourers included
@@ -142,8 +153,7 @@ Great People Bulbing
   To The Glory of God
   --Ability to buy all GP with faith removed -- too strong, flexible, AI unfriendly
   --Medieval Set
-  --Yields increased to 10 (from 3) and cap to 25 (from 20)
-
+  --Yields increased to 5 (from 3) and cap to 30​ (from 20)
   Radical Sects 
   -- Ancient Set
   -- 15 Food/Faith/Culture on Border Growth, scaling
@@ -278,7 +288,7 @@ Terrain
   Atolls
     For some reason their Feature map effects were removed
     They are the only real thing on Coast Tiles (outside Natural Wonders), so they should do something to make the map more tactical for naval combat
-  -- Requires 3 Moves (up from 1)
+  -- Requires 4 Moves (up from 1)
   -- Has SeeThrough = 1, blocks sight like a Forest
   -- Has +25% Defense bonus, same as Forest
 

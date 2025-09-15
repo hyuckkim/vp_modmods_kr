@@ -21,15 +21,15 @@ VALUES
 --------------------------
 UPDATE Beliefs SET 
 FaithPurchaseAllGreatPeople = 0,
-CityScalerLimiter = 25 
+CityScalerLimiter = 30 
 WHERE Type = 'BELIEF_TO_GLORY_OF_GOD';
 
 UPDATE Belief_GreatPersonExpendedYield SET
-Yield = 10 
+Yield = 5 
 WHERE BeliefType = 'BELIEF_TO_GLORY_OF_GOD';
 
 UPDATE Language_en_US
-SET Text = '+1 [ICON_PEACE] Faith and [ICON_TOURISM] Tourism from [ICON_VP_ARTIST] Artists, [ICON_CSD_CIVIL_SERVANT] Civil Servants, and [ICON_VP_MUSICIAN] Musicians. When you expend a [ICON_GREAT_PEOPLE] Great Person, gain 10 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture per City following your Religion (max 25 Cities).'
+SET Text = '+1 [ICON_PEACE] Faith and [ICON_TOURISM] Tourism from [ICON_VP_ARTIST] Artists, [ICON_CSD_CIVIL_SERVANT] Civil Servants, and [ICON_VP_MUSICIAN] Musicians. When you expend a [ICON_GREAT_PEOPLE] Great Person, gain 5 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture per City following your Religion (max 30 Cities).'
 WHERE Tag = 'TXT_KEY_BELIEF_TO_GLORY_OF_GOD';
 
 -- ancient
@@ -154,6 +154,10 @@ WHERE Tag = 'TXT_KEY_BUILD_CONSUMED_HELP_ACADEMY';
 UPDATE Language_en_US SET
 Text = Replace(Text, '10%', '4%')
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATSCIENTIST_HEADING3_BODY';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '10%', '4%')
+WHERE Tag = 'TXT_KEY_MISSION_DISCOVER_TECH_HELP';
 
 UPDATE Language_en_US SET
 Text = Replace(Text, '3%', '1%')

@@ -16,7 +16,7 @@ INSERT INTO Units
 		(Class, 						Type, 					Combat, Cost, 	FaithCost, 	RequiresFaithPurchaseEnabled, 	Moves, 	BaseSightRange, BaseLandAirDefense, 	PrereqTech, 		          ObsoleteTech, 	                   CombatClass, 			Domain, 	NoBadGoodies, 	DefaultUnitAI, 		Description, 					Civilopedia, 							Strategy, 									Help, 								Pillage, 	MilitarySupport, 	MilitaryProduction, Mechanized, AdvancedStartCost, 	XPValueAttack, 	XPValueDefense, UnitArtInfo, 									UnitFlagAtlas, 						UnitFlagIconOffset, PortraitIndex, 	IconAtlas, 						MoveRate, 	PurchaseCooldown)
 VALUES	('UNITCLASS_ZEPPELIN', 			'UNIT_ZEPPELIN', 		40, 	700, 	600, 		1, 								3, 		4, 				5, 						'TECH_STEAM_POWER',           'TECH_RADIO', 	                'UNITCOMBAT_HELICOPTER', 	'DOMAIN_LAND', 	1, 				'UNITAI_EXPLORE', 	'TXT_KEY_UNIT_ZEPPELIN_CBP', 	'TXT_KEY_CIV5_ZEPPELIN_TEXT_CBP', 		'TXT_KEY_UNIT_ZEPPELIN_STRATEGY_CBP', 		'TXT_KEY_UNIT_HELP_ZEPPELIN_CBP', 	1, 			1, 					1, 					1, 			30, 				3, 				3, 				'ART_DEF_UNIT_SMOKEY_STEAM_AIRSHIP', 	        'EXPANSION_SCEN_UNIT_FLAG_ATLAS', 	8, 					8, 				'EXPANSION_SCEN_UNIT_ATLAS', 	'WHEELED', 	1),
 		('UNITCLASS_WWI_ZEPPELIN', 		'UNIT_WWI_ZEPPELIN', 	60, 	1200, 	900, 		1, 								4, 		4, 				10, 					'TECH_RADIO',                 'TECH_SATELLITES',                'UNITCOMBAT_HELICOPTER', 	'DOMAIN_LAND', 	1, 				'UNITAI_EXPLORE', 	'TXT_KEY_UNIT_WWI_ZEPPELIN', 	'TXT_KEY_UNIT_WWI_ZEPPELIN_TEXT', 		'TXT_KEY_UNIT_WWI_ZEPPELIN_STRATEGY', 		'TXT_KEY_UNIT_WWI_ZEPPELIN_HELP', 	1, 			1, 					1, 					1, 			30, 				3, 				3, 				'ART_DEF_UNIT_ZEPPELIN_AIRSHIP', 		        'UNIT_ZEPPELIN_FLAG_ATLAS', 	    0, 					62, 		    	'TCS_MOD_ICON_ATLAS', 	    'WHEELED', 	1),
-        ('UNITCLASS_PREDATOR_DRONE', 	'UNIT_PREDATOR_DRONE', 	80, 	2000, 	1600, 		1, 								5, 		4, 				25, 					'TECH_SATELLITES',            'TECH_SUPERCOMPUTERS', 			'UNITCOMBAT_HELICOPTER', 	'DOMAIN_LAND',  1, 				'UNITAI_EXPLORE', 	'TXT_KEY_UNIT_PREDATOR_DRONE', 	'TXT_KEY_UNIT_PREDATOR_DRONE_TEXT', 	'TXT_KEY_UNIT_PREDATOR_DRONE_STRATEGY', 	'TXT_KEY_UNIT_PREDATOR_DRONE_HELP', 1, 			1, 					1, 					1, 			30, 				3, 				3, 				'ART_DEF_UNIT_PREDATOR_DRONE', 				    'UNIT_UAV_FLAG_ATLAS', 		       	0, 					63, 				'TCS_MOD_ICON_ATLAS', 		'WHEELED', 	1);
+        ('UNITCLASS_PREDATOR_DRONE', 	'UNIT_PREDATOR_DRONE', 	80, 	2000, 	1600, 		1, 								5, 		4, 				25, 					'TECH_SATELLITES',            'TECH_ROBOTICS', 		        	'UNITCOMBAT_HELICOPTER', 	'DOMAIN_LAND',  1, 				'UNITAI_EXPLORE', 	'TXT_KEY_UNIT_PREDATOR_DRONE', 	'TXT_KEY_UNIT_PREDATOR_DRONE_TEXT', 	'TXT_KEY_UNIT_PREDATOR_DRONE_STRATEGY', 	'TXT_KEY_UNIT_PREDATOR_DRONE_HELP', 1, 			1, 					1, 					1, 			30, 				3, 				3, 				'ART_DEF_UNIT_PREDATOR_DRONE', 				    'UNIT_UAV_FLAG_ATLAS', 		       	0, 					63, 				'TCS_MOD_ICON_ATLAS', 		'WHEELED', 	1);
 
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
@@ -172,8 +172,8 @@ INSERT INTO Defines (Name, Value) SELECT 'FW_SPACE_COLONIST_POPULATION_CHANGE', 
 INSERT INTO Defines (Name, Value) SELECT 'FW_SPACE_COLONIST_EXTRA_PLOTS', '5';
 INSERT INTO Defines (Name, Value) SELECT 'FW_SPACE_COLONIST_FOOD_PERCENT', '50';
  -- ================================================================================================================================================================
-UPDATE Units SET ObsoleteTech = 'TECH_IMPLANTS' WHERE Class = 'UNITCLASS_AMBASSADOR'; 
-UPDATE Units SET ObsoleteTech = 'TECH_COMPUTERS' WHERE Class = 'UNITCLASS_COLONIST';
+UPDATE Units SET ObsoleteTech = 'TECH_BIOMEDICAL' WHERE Class = 'UNITCLASS_AMBASSADOR'; 
+UPDATE Units SET ObsoleteTech = 'TECH_COMPUTERS'  WHERE Class = 'UNITCLASS_COLONIST';
 
 INSERT INTO Trait_NoTrain
 	(TraitType, UnitClassType)

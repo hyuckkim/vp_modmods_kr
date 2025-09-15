@@ -231,6 +231,25 @@ UPDATE Language_en_US
 SET Text = 'Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 and gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion (max 24 Cities). +33% [ICON_GREAT_PEOPLE] Great Person Rate in Holy City during [ICON_GOLDEN_AGE] Golden Ages.'
 WHERE Tag = 'TXT_KEY_BELIEF_ITINERANT_PREACHERS';
 
+-- and make sure the reduction is removed from prophecy (which is v strong anyway)
+UPDATE Beliefs SET
+PolicyReductionWonderXFollowerCities = 0
+WHERE Type = 'BELIEF_MESSIAH';
+
+UPDATE Language_en_US
+SET Text = Replace(Text, 'Reduces minimum Policy requirement for Wonders by 1. ', '')
+WHERE Tag = 'TXT_KEY_BELIEF_MESSIAH';
+
+----------------------------
+-- buff universalism
+----------------------------
+UPDATE Belief_YieldChangePerXForeignFollowers SET ForeignFollowers = 5 WHERE BeliefType = 'BELIEF_RELIGIOUS_UNITY';
+UPDATE Belief_YieldPerOtherReligionFollower SET Yield = 4 WHERE BeliefType = 'BELIEF_RELIGIOUS_UNITY';
+
+UPDATE Language_en_US
+SET Text = '+1 [ICON_RESEARCH] Science and [ICON_PRODUCTION] Production in the Holy City for every 4 followers of other Religions in owned Cities. +1 [ICON_GOLD] Gold and [ICON_PEACE] Faith in Holy City for every 5 followers of this [ICON_RELIGION] Religion in Foreign Cities.'
+WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_UNITY';
+
 -------------------------
 -- cargo cult
 -------------------------
@@ -257,54 +276,64 @@ VALUES
 ------------------------------------------------------
 
 UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 50 WHERE BeliefType = 'BELIEF_ASCETISM';
-UPDATE Belief_MaxYieldPerFollower SET Max = 15 WHERE BeliefType = 'BELIEF_ASCETISM';
+
+UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_ASCETISM';  -- if you set 0 then you get no yields.
+
 INSERT INTO Belief_YieldChangeAnySpecialist
 	(BeliefType, YieldType, Yield)
 VALUES
 	('BELIEF_DIVINE_INSPIRATION', 'YIELD_FOOD', 4);
 
 UPDATE Language_en_US
-SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City (max +15 [ICON_FOOD] Food). +4 [ICON_FOOD] Food if the City has a Specialist.'
+SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City. +4 [ICON_FOOD] Food if the City has a Specialist.'
 WHERE Tag = 'TXT_KEY_BELIEF_ASCETISM';
+
+UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_RELIGIOUS_COMMUNITY';
 
 INSERT INTO Belief_YieldPerActiveTR
 	(BeliefType, YieldType, Yield)
 VALUES
 	('BELIEF_RELIGIOUS_COMMUNITY', 'YIELD_PRODUCTION', 2);
 UPDATE Language_en_US
-SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City (max +15 [ICON_PRODUCTION] Production). +2 [ICON_PRODUCTION] Production per active [ICON_INTERNATIONAL_TRADE] Trade Route to or from the City.'
+SET Text = '+1 [ICON_PRODUCTION] Production for every 2 followers in the City. +2 [ICON_PRODUCTION] Production per active [ICON_INTERNATIONAL_TRADE] Trade Route to or from the City.'
 WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_COMMUNITY';
 
 UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 50 WHERE BeliefType = 'BELIEF_FEED_WORLD';
-UPDATE Belief_MaxYieldPerFollower SET Max = 15 WHERE BeliefType = 'BELIEF_FEED_WORLD';
-INSERT INTO Belief_SpecialistYieldChanges
-	(BeliefType, SpecialistType, YieldType, Yield)
+
+UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_FEED_WORLD';
+
+INSERT INTO Belief_ResourceYieldChanges
+	(BeliefType, ResourceType, YieldType, Yield)
 SELECT
 	'BELIEF_FEED_WORLD', Type, 'YIELD_GOLD', 1
-FROM Specialists
+FROM Resources 
+WHERE IsMonopoly = 0 AND Type NOT IN ('RESOURCE_ARTIFACTS', 'RESOURCE_HIDDEN_ARTIFACTS');
 
 UPDATE Language_en_US
-SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City (max +15 [ICON_GOLD] Gold). +1 [ICON_GOLD] Gold from Specialists and [ICON_CITIZEN_RED] Labourers.'
+SET Text = '+1 [ICON_GOLD] Gold for every 2 followers in the City. +1 [ICON_GOLD] Gold from [COLOR_POSITIVE_TEXT]Bonus Resources[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_BELIEF_FEED_WORLD';
 
-UPDATE Belief_MaxYieldPerFollower SET Max = 10 WHERE BeliefType = 'BELIEF_DIVINE_INSPIRATION';
+UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_DIVINE_INSPIRATION';
+
 DELETE FROM Belief_YieldChangeAnySpecialist WHERE BeliefType = 'BELIEF_DIVINE_INSPIRATION';
 INSERT INTO Belief_GreatWorkYieldChanges
 	(BeliefType, YieldType, Yield)
 VALUES
 	('BELIEF_DIVINE_INSPIRATION', 'YIELD_CULTURE', 1);
 UPDATE Language_en_US
-SET Text = '+1 [ICON_CULTURE] Culture for every 3 followers in the City (max +10 [ICON_CULTURE] Culture). +1 [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works.'
+SET Text = '+1 [ICON_CULTURE] Culture for every 3 followers in the City. +1 [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works.'
 WHERE Tag = 'TXT_KEY_BELIEF_DIVINE_INSPIRATION';
 
 UPDATE Belief_MaxYieldPerFollowerPercent SET Max = 34 WHERE BeliefType = 'BELIEF_CHORAL_MUSIC';
-UPDATE Belief_MaxYieldPerFollower SET Max = 10 WHERE BeliefType = 'BELIEF_CHORAL_MUSIC';
+
+UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_CHORAL_MUSIC';
+
 INSERT INTO Belief_BuildingClassYieldChanges
 	(BeliefType, BuildingClassType, YieldType, YieldChange)
 VALUES
 	('BELIEF_CHORAL_MUSIC', 'BUILDINGCLASS_UNIVERSITY', 'YIELD_SCIENCE', 2);
 UPDATE Language_en_US
-SET Text = '+1 [ICON_RESEARCH] Science for every 3 followers in the City (max +10 [ICON_RESEARCH] Science). +2 [ICON_RESEARCH] Science from Universities.'
+SET Text = '+1 [ICON_RESEARCH] Science for every 3 followers in the City. +2 [ICON_RESEARCH] Science from Universities.'
 WHERE Tag = 'TXT_KEY_BELIEF_CHORAL_MUSIC';
 
 ------------------
