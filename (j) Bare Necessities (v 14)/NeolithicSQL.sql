@@ -214,7 +214,7 @@ INSERT OR REPLACE INTO Language_en_US
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
-SELECT	'TXT_KEY_WONDER_LIANGZHU_HELP', 'Terrain: [COLOR_NEGATIVE_TEXT]Desert[ENDCOLOR]; [COLOR_YIELD_GOLD]Capital[ENDCOLOR]; Feature: [COLOR_CYAN]River[ENDCOLOR]; City [COLOR_CYAN]place for Jade[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
+SELECT	'TXT_KEY_WONDER_LIANGZHU_HELP', 'Map: [COLOR_CYAN]Jade is present[ENDCOLOR]; Terrain: [COLOR_NEGATIVE_TEXT]Desert[ENDCOLOR]; [COLOR_YIELD_GOLD]Capital[ENDCOLOR]; Feature: [COLOR_CYAN]River[ENDCOLOR]. [NEWLINE][NEWLINE]'||Text
 FROM Language_en_US WHERE Tag = 'TXT_KEY_WONDER_LIANGZHU_HELP_CUT';
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- GOEBEKLI TEPE

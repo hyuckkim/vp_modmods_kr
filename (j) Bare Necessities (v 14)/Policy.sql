@@ -80,9 +80,9 @@ VALUES
 	('en_US', 'TXT_KEY_BUILDING_TCS_DEPOT', 'Depot'),
 	('en_US', 'TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS', 'Botanical Garden'),
 	('en_US', 'TXT_KEY_BUILDING_TCS_PATENT_OFFICE', 'Patent Office'),
-	('en_US', 'TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP', '+1 [ICON_FOOD] Food from {TXT_KEY_BUILDING_WELL} and {TXT_KEY_BUILDING_BATH} worked by the City. [NEWLINE]Starts 10 turns of "We Love the King Day" in the City. [NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_TRADITION}[ENDCOLOR]'),
-	('en_US', 'TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP', '+2% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections. City Hall generate additional yields as [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_LIBERTY}[ENDCOLOR] policies are unlocked.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_LIBERTY}[ENDCOLOR]'),
-	('en_US', 'TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP', '+75 [ICON_CULTURE_LOCAL] Border Growth when completed. +1 [ICON_PRODUCTION] Production to Forts and Citadels. [NEWLINE]+1 [ICON_RESEARCH] Science once [COLOR_CYAN]{TXT_KEY_TECH_ENGINEERING}[ENDCOLOR] is discovered.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_HONOR}[ENDCOLOR].'),
+	('en_US', 'TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP', '10% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. [NEWLINE]Starts 10 turns of "We Love the King Day" in the City. [NEWLINE]+1 [ICON_FOOD] Food from {TXT_KEY_BUILDING_WELL} and {TXT_KEY_BUILDING_BATH} worked by the City. [NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_TRADITION}[ENDCOLOR]'),
+	('en_US', 'TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP', '+3% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections and [ICON_PRODUCTION] Production from [ICON_INDUSTRIAL_CONNECTED] Industrial City Connections. [NEWLINE]City Hall generate additional yields as [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_LIBERTY}[ENDCOLOR] policies are unlocked.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_LIBERTY}[ENDCOLOR]'),
+	('en_US', 'TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP', '+3 [ICON_CULTURE_LOCAL] Border Growth. +75 [ICON_CULTURE_LOCAL] Border Growth when completed. [NEWLINE]+1 [ICON_PRODUCTION] Production to Forts and Citadels. [NEWLINE]+1 [ICON_RESEARCH] Science once [COLOR_CYAN]{TXT_KEY_TECH_ENGINEERING}[ENDCOLOR] is discovered.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_HONOR}[ENDCOLOR].'),
 	('en_US', 'TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL_HELP', '+100 [ICON_FOOD] Food when completed. Gain 15% of the Cost of any [ICON_PEACE] Faith purchase as [ICON_FOOD] Food and [ICON_CULTURE] Culture in this City. +15% [ICON_PEACE] Faith during "We Love the King Day". [NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in this City.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_PIETY}[ENDCOLOR].'),
 	('en_US', 'TXT_KEY_BUILDING_TCS_CHANCERY_HELP', '+1 [ICON_RES_PAPER] Paper. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress. Civil Servants in all Cities produce +1 [ICON_GOLD] Gold. [NEWLINE]+1 [ICON_GOLD] Gold for every City-State Friend, and additionally +1 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture for every Ally.[NEWLINE][NEWLINE]Can only be constructed in the [ICON_CAPITAL] Capital and if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_PATRONAGE}[ENDCOLOR].'),
 	('en_US', 'TXT_KEY_BUILDING_TCS_MEMORIAL_HELP', '+1 [ICON_GREAT_PEOPLE] Point toward Great [ICON_GREAT_WRITER] Writer, [ICON_GREAT_ARTIST] Artist, [ICON_GREAT_MUSICIAN] Musician in City. [NEWLINE]+5 [ICON_RESEARCH] Science, [ICON_GOLDEN_AGE] Golden Age Points when you expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.[NEWLINE][NEWLINE]Can only be constructed if you adopt [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_AESTHETICS}[ENDCOLOR].'),
@@ -139,6 +139,7 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 	SELECT 'BUILDING_TCS_PUBLIC_BATHS', 'YIELD_GOLDEN_AGE_POINTS', 1 UNION ALL
 	SELECT 'BUILDING_TCS_TOWN_COUNCIL', 'YIELD_CULTURE', 1 UNION ALL
 	SELECT 'BUILDING_TCS_STRONGHOLD', 'YIELD_CULTURE_LOCAL', 3 UNION ALL
+	SELECT 'BUILDING_TCS_STRONGHOLD', 'YIELD_GOLD', 1 UNION ALL
 	SELECT 'BUILDING_TCS_PAROCHIAL_SCHOOL', 'YIELD_FAITH', 2 UNION ALL
 	SELECT 'BUILDING_TCS_PAROCHIAL_SCHOOL', 'YIELD_FOOD', 3 UNION ALL
 	SELECT 'BUILDING_TCS_CHANCERY', 'YIELD_CULTURE', 2 UNION ALL
@@ -273,11 +274,11 @@ INSERT INTO Policy_BuildingClassProductionModifiers (PolicyType, BuildingClassTy
 	SELECT 'POLICY_MANDATE_OF_HEAVEN', 'BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL', 100;
 
 UPDATE Buildings
-SET WLTKDTurns = 10
+SET WLTKDTurns = 10, FoodKept = 10
 WHERE Type = 'BUILDING_TCS_PUBLIC_BATHS';
 
 UPDATE	Buildings
-SET CityConnectionTradeRouteModifier = 2
+SET CityConnectionTradeRouteModifier = 3
 WHERE Type = 'BUILDING_TCS_TOWN_COUNCIL';
 	
 UPDATE Buildings

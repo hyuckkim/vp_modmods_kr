@@ -55,7 +55,7 @@ INSERT OR REPLACE INTO Language_ko_KR
 
 INSERT OR REPLACE INTO Language_ko_KR 
 		(Tag, 							 Text)
-SELECT	'TXT_KEY_WONDER_LIANGZHU_HELP', '지형: [COLOR_NEGATIVE_TEXT]사막[ENDCOLOR], [COLOR_YIELD_GOLD]수도[ENDCOLOR]; 특징: [COLOR_CYAN]강[ENDCOLOR], [COLOR_CYAN]옥에 위치한[ENDCOLOR] 도시[NEWLINE][NEWLINE]'||Text
+SELECT	'TXT_KEY_WONDER_LIANGZHU_HELP', '지도: [COLOR_CYAN]옥이 존재[ENDCOLOR], 지형: [COLOR_NEGATIVE_TEXT]사막[ENDCOLOR], [COLOR_YIELD_GOLD]수도[ENDCOLOR], 특징: [COLOR_CYAN]강[ENDCOLOR] [NEWLINE][NEWLINE]'||Text
 FROM Language_ko_KR WHERE Tag = 'TXT_KEY_WONDER_LIANGZHU_HELP_CUT';
 
 ------------------------------------------------------------------------------------------------------------------------------------------
