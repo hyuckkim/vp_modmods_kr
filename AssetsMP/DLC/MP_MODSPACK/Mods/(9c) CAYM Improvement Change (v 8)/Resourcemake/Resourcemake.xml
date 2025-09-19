@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_ENGINEER</UnitType>
+			<BuildType>BUILD_PROSPECT_IRON</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ENGINEER</UnitType>
+			<BuildType>BUILD_PROSPECT_COAL</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ENGINEER</UnitType>
+			<BuildType>BUILD_PROSPECT_OIL</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GREAT_GENERAL</UnitType>
+			<BuildType>BUILD_PROSPECT_HORSE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GREAT_ADMIRAL</UnitType>
+			<BuildType>BUILD_PROSPECT_OIL_SEA</BuildType>
+	     </Row>
+	</Unit_Builds>
+	<Builds>
+		<Row>
+			<Type>BUILD_PROSPECT_HORSE</Type>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+			<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+			<Description>TXT_KEY_BUILD_PROSPECT_HORSE</Description>
+			<Help>TXT_KEY_BUILD_PROSPECT_HORSE_HELP</Help>
+			<Kill>1</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_H</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>29</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>BUILD_PROSPECT_IRON</Type>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+			<Description>TXT_KEY_BUILD_PROSPECT_IRON</Description>
+			<Help>TXT_KEY_BUILD_PROSPECT_IRON_HELP</Help>
+			<Kill>1</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_I</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>22</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>BUILD_PROSPECT_COAL</Type>
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+			<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+			<Description>TXT_KEY_BUILD_PROSPECT_COAL</Description>
+			<Help>TXT_KEY_BUILD_PROSPECT_COAL_HELP</Help>
+			<Kill>1</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_C</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>2</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS_EXP2</IconAtlas>
+		</Row>
+		<Row>
+			<Type>BUILD_PROSPECT_OIL</Type>
+			<PrereqTech>TECH_FLIGHT</PrereqTech>
+			<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+			<Description>TXT_KEY_BUILD_PROSPECT_OIL</Description>
+			<Help>TXT_KEY_BUILD_PROSPECT_OIL_HELP</Help>
+			<Kill>1</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_O</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>33</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>BUILD_PROSPECT_OIL_SEA</Type>
+			<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+			<PrereqTech>TECH_ELECTRONICS</PrereqTech> 
+			<Description>TXT_KEY_BUILD_PROSPECT_OIL_SEA</Description>
+			<Help>TXT_KEY_BUILD_PROSPECT_OIL_SEA_HELP</Help>
+			<Kill>1</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>33</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_PROSPECT_HORSE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_HORSE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_IRON</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_IRON</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_COAL</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_COAL</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_PROSPECT_OIL</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_PROSPECT_HORSE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PROSPECT_HORSE</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_HORSE_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
+			<RequiresFlatlands>true</RequiresFlatlands>
+			<PillageGold>20</PillageGold>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>IMPROVEMENT_PROSPECT_IRON</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PROSPECT_IRON</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_IRON_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
+			<HillsMakesValid>true</HillsMakesValid>
+			<PillageGold>20</PillageGold>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>IMPROVEMENT_PROSPECT_COAL</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PROSPECT_COAL</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_COAL_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
+			<HillsMakesValid>true</HillsMakesValid>
+			<PillageGold>20</PillageGold>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>IMPROVEMENT_PROSPECT_OIL</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PROSPECT_OIL</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_OIL_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
+			<RequiresFlatlands>true</RequiresFlatlands>
+			<PillageGold>20</PillageGold>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>IMPROVEMENT_PROSPECT_OIL_SEA</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PROSPECT_OIL_SEA</Description>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_OFFSHORE_PLATFORM</ArtDefineTag>
+			<RequiresFlatlands>false</RequiresFlatlands>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<Water>true</Water>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+	    </Row>
+	</Improvements>
+<Improvement_Flavors>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+		<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+		<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+		<FlavorType>FLAVOR_MOBILE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+		<FlavorType>FLAVOR_OFFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+		<FlavorType>FLAVOR_GROWTH</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_OFFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_DEFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_NAVAL</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+		<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+		<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+		<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+		<FlavorType>FLAVOR_RECON</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FlavorType>FLAVOR_OFFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FlavorType>FLAVOR_AIR</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FlavorType>FLAVOR_NAVAL</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+		<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+		<FlavorType>FLAVOR_OFFENSE</FlavorType>
+		<Flavor>10</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+		<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+		<FlavorType>FLAVOR_AIR</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+		<FlavorType>FLAVOR_NAVAL</FlavorType>
+		<Flavor>5</Flavor>
+	</Row>
+</Improvement_Flavors>
+<Improvement_ValidFeatures>
+	<Row>
+		<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+		<FeatureType>FEATURE_MARSH</FeatureType>
+	</Row>
+</Improvement_ValidFeatures>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_HORSE</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_IRON</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_COAL</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_OIL</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PROSPECT_OIL_SEA</ImprovementType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_HORSE">
+			<Text>PROSPECT_HORSE</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_HORSE_TEXT">
+			<Text>People who are naturally good at capturing horses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_HORSE">
+			<Text>Prospect Horse resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_HORSE_HELP">
+			<Text>Immediately generates an improved 4 [ICON_RES_HORSE] Horse resource. Consumes this unit.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_HORSE">
+			<Text>야생마 포획</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_HORSE_TEXT">
+			<Text>말을 포획하는데 천부적으로 뛰어난 사람들이 있습니다.[NEWLINE]위대한 장군을 이용하여 [ICON_RES_HORSE] 말 자원 4개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_HORSE">
+			<Text>야생마 포획</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_HORSE_HELP">
+			<Text>이곳에 즉시 4개의 [ICON_RES_HORSE] 말 자원을 개발하고 유닛을 소모합니다.[NEWLIN][NEWLINE]평지에서만 건설이 가능합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_IRON">
+			<Text>PROSPECT_IRON</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_IRON_TEXT">
+			<Text>Some people dedicate whole life to resources for home country.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_IRON">
+			<Text>Prospect iron resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_IRON_HELP">
+			<Text>Immediately generates an improved 4 [ICON_RES_IRON] Iron resource. Consumes this unit.[NEWLIN][NEWLINE]Can only be built on hills.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_IRON">
+			<Text>철자원탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_IRON_TEXT">
+			<Text>어떤 이들은 국가에 필요한 자원을 탐사하기 위해 일생을 바치기도 한다.[NEWLINE]위대한 기술자를 이용하여 [ICON_RES_IRON] 철 자원 4개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_IRON">
+			<Text>철 자원 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_IRON_HELP">
+			<Text>이곳에 즉시 4개의 [ICON_RES_IRON] 철 자원을 개발하고 유닛을 소모합니다.[NEWLIN][NEWLINE]언덕에서만 건설이 가능합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_COAL">
+			<Text>PROSPECT_COAL</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_COAL_TEXT">
+			<Text>Some people dedicate whole life to resources for home country.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_COAL">
+			<Text>Prospect coal resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_COAL_HELP">
+			<Text>Immediately generates an improved 4 [ICON_RES_COAL] Coal resource. Consumes this unit.[NEWLIN][NEWLINE]Can only be built on hills.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_COAL">
+			<Text>석탄자원탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_COAL_TEXT">
+			<Text>어떤 이들은 국가에 필요한 자원을 탐사하기 위해 일생을 바치기도 한다.[NEWLINE]위대한 기술자를 이용하여 [ICON_RES_COAL] 석탄 자원 4개를 얻습니다.[NEWLIN][NEWLINE]언덕에서만 건설이 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_COAL">
+			<Text>석탄 자원 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_COAL_HELP">
+			<Text>이곳에 즉시 4개의 [ICON_RES_COAL] 석탄 자원을 개발하고 유닛을 소모합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_OIL">
+			<Text>PROSPECT_OIL</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_OIL_TEXT">
+			<Text>Some people dedicate whole life to resources for home country.[NEWLINE]Immediately generates 4 [ICON_RES_OIL] Oil resource. Consume Great Engineer.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL">
+			<Text>Prospect oil resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_HELP">
+			<Text>Immediately generates an improved 4 [ICON_RES_OIL] Oil resource. Consume this unit.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_OIL">
+			<Text>석유자원탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_OIL_TEXT">
+			<Text>어떤 이들은 국가에 필요한 자원을 탐사하기 위해 일생을 바치기도 한다.[NEWLINE]위대한 기술자를 이용하여 [ICON_RES_OIL]석유 자원 4개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL">
+			<Text>석유 자원 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_HELP">
+			<Text>이곳에 즉시 4개의 [ICON_RES_OIL] 석유 자원을 개발하고 유닛을 소모합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_OIL_SEA">
+			<Text>PROSPECT_OIL_SEA</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_OIL_SEA_TEXT">
+			<Text>Some pioneers venture into the open seas in search of black gold for their nation.[NEWLINE]Immediately generates 4 [ICON_RES_OIL] Offshore Oil resource. Consumes a Great Engineer.</Text>
+		</Row>
+			<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_SEA">
+		<Text>Prospect Offshore Oil</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_SEA_HELP">
+			<Text>Immediately generates 4 improved [ICON_RES_OIL] Offshore Oil resources. Consumes this unit.</Text>
+		</Row>
+    </Language_en_US>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PROSPECT_OIL_SEA">
+			<Text>해상 석유자원 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_PROSPECT_OIL_SEA_TEXT">
+			<Text>일부 개척자들은 국가를 위해 바다를 넘어 석유를 찾는 탐험에 나섭니다.[NEWLINE]위대한 기술자를 이용하여 [ICON_RES_OIL] 해상 석유 자원 4개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_SEA">
+			<Text>해상 석유 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PROSPECT_OIL_SEA_HELP">
+			<Text>이 타일에 즉시 4개의 [ICON_RES_OIL] 해상 석유 자원을 개발하고 유닛을 소모합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>
