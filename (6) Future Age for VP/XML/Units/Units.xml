@@ -511,7 +511,7 @@
 			<Class>UNITCLASS_FW_AUGMENTED_DIPLOMAT</Class>
 			<Type>UNIT_FW_AUGMENTED_DIPLOMAT</Type>
 			<Moves>5</Moves>
-			<Cost>2500</Cost>
+			<Cost>3000</Cost>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<CombatClass>UNITCOMBAT_DIPLOMACY</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -853,8 +853,8 @@
 			<PrereqTech>TECH_NANOMATERIALS</PrereqTech>
 			<ObsoleteTech>TECH_INTEGRATED_AI</ObsoleteTech>
 			<Combat>135</Combat>
-			<Cost>3150</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>3200</Cost>
+			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Moves>6</Moves>
@@ -887,8 +887,8 @@
 			<PrereqTech>TECH_INTEGRATED_AI</PrereqTech>
 			<Combat>138</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>3800</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>2600</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -923,8 +923,8 @@
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
 			<Combat>95</Combat>
 			<BaseLandAirDefense>15</BaseLandAirDefense>
-			<Cost>2100</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2600</Cost>
+			<FaithCost>2000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -955,8 +955,8 @@
 			<PrereqTech>TECH_BIO_HYBRID</PrereqTech>
 			<Combat>115</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2700</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3000</Cost>
+			<FaithCost>2600</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>7</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -987,8 +987,8 @@
 			<PrereqTech>TECH_GENETIC_ACCELERATION</PrereqTech>
 			<Combat>145</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>3450</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4400</Cost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>8</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1024,7 +1024,7 @@
 			<RangedCombat>85</RangedCombat>
 			<BaseLandAirDefense>15</BaseLandAirDefense>
 			<Cost>2900</Cost>
-			<FaithCost>1800</FaithCost>
+			<FaithCost>2000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>7</Moves>
 			<Range>1</Range>
@@ -1061,8 +1061,8 @@
 			<Combat>105</Combat>
 			<RangedCombat>105</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>3300</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3600</Cost>
+			<FaithCost>2600</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>7</Moves>
 			<Range>1</Range>
@@ -1098,7 +1098,7 @@
 			<Combat>135</Combat>
 			<RangedCombat>135</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>3850</Cost>
+			<Cost>4400</Cost>
 			<FaithCost>2250</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>8</Moves>
@@ -1138,7 +1138,7 @@
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>3000</Cost>
-			<FaithCost>1800</FaithCost>
+			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<Range>3</Range>
@@ -1173,8 +1173,8 @@
 			<Combat>105</Combat>
 			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
-			<Cost>3300</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<Range>3</Range>
@@ -1208,7 +1208,7 @@
 			<Combat>145</Combat>
 			<RangedCombat>145</RangedCombat>
 			<BaseLandAirDefense>60</BaseLandAirDefense>
-			<Cost>4500</Cost>
+			<Cost>5500</Cost>
 			<FaithCost>2250</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
@@ -1245,7 +1245,7 @@
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<Cost>2600</Cost>
-			<FaithCost>1800</FaithCost>
+			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Combat>75</Combat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
@@ -1279,8 +1279,8 @@
 			<Description>TXT_KEY_UNIT_FW_CYBERSAM</Description>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<Cost>3200</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3300</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Combat>95</Combat>
 			<BaseLandAirDefense>60</BaseLandAirDefense>
@@ -1315,7 +1315,7 @@
 			<Combat>125</Combat>
 			<BaseLandAirDefense>75</BaseLandAirDefense>
 			<Cost>4400</Cost>
-			<FaithCost>2250</FaithCost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1353,8 +1353,8 @@
 			<PrereqTech>TECH_ARTIFICIAL_ENVIRONMENTS</PrereqTech>
 			<Combat>95</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2250</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2600</Cost>
+			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1386,8 +1386,8 @@
 			<PrereqTech>TECH_ASTRODYNAMICS</PrereqTech>
 			<Combat>125</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>2700</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3300</Cost>
+			<FaithCost>2600</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1418,8 +1418,8 @@
 			<PrereqTech>TECH_PLANETARY_MIGRATION</PrereqTech>
 			<Combat>155</Combat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
-			<Cost>3800</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>3000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1454,8 +1454,8 @@
 			<PrereqTech>TECH_BIOMEDICAL</PrereqTech>
 			<Combat>105</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2500</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2800</Cost>
+			<FaithCost>2400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1490,8 +1490,8 @@
 			<Help>TXT_KEY_UNIT_FW_CLONETROOPER_HELP</Help>
 			<Combat>115</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2600</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>3200</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1522,8 +1522,8 @@
 			<PrereqTech>TECH_BIOMODIFICATION</PrereqTech>
 			<Combat>130</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>2950</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>3000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1559,8 +1559,8 @@
 			<Help>TXT_KEY_UNIT_FW_SUPERSOLDIERS_HELP</Help>
 			<Combat>145</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>3450</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4400</Cost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>1</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1637,7 +1637,7 @@
 			<Help>TXT_KEY_UNIT_HELP_GUERILLA</Help>
 			<Combat>100</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2250</Cost>
+			<Cost>2600</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>0</PurchaseCooldown>
@@ -1676,7 +1676,7 @@
 			<Help>TXT_KEY_UNIT_HELP_GUERILLA</Help>
 			<Combat>120</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2700</Cost>
+			<Cost>3200</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>0</PurchaseCooldown>
@@ -1714,7 +1714,7 @@
 			<Help>TXT_KEY_UNIT_HELP_GUERILLA</Help>
 			<Combat>135</Combat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>3450</Cost>
+			<Cost>4000</Cost>
 			<RequiresFaithPurchaseEnabled>0</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>0</PurchaseCooldown>
@@ -1753,8 +1753,8 @@
 			<Combat>80</Combat>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2100</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2600</Cost>
+			<FaithCost>2000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>2</Moves>
 			<Range>3</Range>
@@ -1787,8 +1787,8 @@
 			<Combat>95</Combat>
 			<RangedCombat>115</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2500</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>3000</Cost>
+			<FaithCost>2600</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Range>3</Range>
 			<Moves>3</Moves>
@@ -1821,8 +1821,8 @@
 			<Combat>105</Combat>
 			<RangedCombat>130</RangedCombat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>2950</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>3300</Cost>
+			<FaithCost>3000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Range>3</Range>
 			<Moves>4</Moves>
@@ -1855,8 +1855,8 @@
 			<Combat>125</Combat>
 			<RangedCombat>145</RangedCombat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
-			<Cost>3600</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Range>3</Range>
 			<Moves>4</Moves>
@@ -1891,8 +1891,8 @@
 			<PrereqTech>TECH_LASERS</PrereqTech>
 			<Combat>75</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2000</Cost>
-			<FaithCost>1600</FaithCost>
+			<Cost>2250</Cost>
+			<FaithCost>1800</FaithCost>
 			<BaseSightRange>3</BaseSightRange>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
@@ -1925,8 +1925,8 @@
 			<PrereqTech>TECH_ASTRODYNAMICS</PrereqTech>
 			<Combat>95</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2500</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3000</Cost>
+			<FaithCost>2600</FaithCost>	
 			<BaseSightRange>3</BaseSightRange>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
@@ -1959,8 +1959,8 @@
 			<Combat>135</Combat>
 			<BaseSightRange>3</BaseSightRange>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
-			<Cost>3450</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4000</Cost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -1993,8 +1993,8 @@
 			<Type>UNIT_FW_SWARM</Type>
 			<PrereqTech>TECH_GENGINEERING</PrereqTech>
 			<Combat>115</Combat>
-			<Cost>2950</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>2800</Cost>
+			<FaithCost>3000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2023,8 +2023,8 @@
 			<PrereqTech>TECH_GENETIC_ACCELERATION</PrereqTech>
 			<Combat>135</Combat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>2950</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>3600</Cost>
+			<FaithCost>3200</FaithCost>
 			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2055,7 +2055,7 @@
 			<Type>UNIT_FW_TREX</Type>
 			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>110</Combat>
-			<Cost>1900</Cost>
+			<Cost>2600</Cost>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<NoMaintenance>true</NoMaintenance>
@@ -2083,7 +2083,7 @@
 			<Type>UNIT_FW_TRICERATOPS</Type>
 			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>90</Combat>
-			<Cost>1800</Cost>
+			<Cost>2000</Cost>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<NoMaintenance>true</NoMaintenance>
@@ -2111,7 +2111,7 @@
 			<Type>UNIT_FW_RAPTOR</Type>
 			<PrereqTech>TECH_SYNTHETIC_BIOLOGY</PrereqTech>
 			<Combat>90</Combat>
-			<Cost>1825</Cost>
+			<Cost>1950</Cost>
 			<Moves>4</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
 			<NoMaintenance>true</NoMaintenance>
@@ -2146,8 +2146,8 @@
 			<RangedCombat>70</RangedCombat>
 			<BaseLandAirDefense>15</BaseLandAirDefense>
 			<BaseSightRange>3</BaseSightRange>
-			<Cost>2000</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2600</Cost>
+			<FaithCost>2200</FaithCost>
 			<Moves>12</Moves>
 			<Range>1</Range>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2184,8 +2184,8 @@
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
 			<BaseSightRange>3</BaseSightRange>
-			<Cost>3000</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3400</Cost>
+			<FaithCost>2800</FaithCost>
 			<Moves>14</Moves>
 			<Range>1</Range>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2225,7 +2225,7 @@
 			<Combat>105</Combat>
 			<Cost>3400</Cost>
 			<BaseLandAirDefense>45</BaseLandAirDefense>
-			<FaithCost>1800</FaithCost>
+			<FaithCost>2400</FaithCost>
 			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
 			<Moves>6</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2262,7 +2262,7 @@
 			<Combat>125</Combat>
 			<BaseLandAirDefense>55</BaseLandAirDefense>
 			<Cost>4200</Cost>
-			<FaithCost>2000</FaithCost>
+			<FaithCost>2800</FaithCost>
 			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
 			<Moves>7</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2298,8 +2298,8 @@
 			<PrereqTech>TECH_HUMAN_AUGMENTATION</PrereqTech>
 			<Combat>145</Combat>
 			<BaseLandAirDefense>65</BaseLandAirDefense>
-			<Cost>4800</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>5000</Cost>
+			<FaithCost>3200</FaithCost>
 			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
 			<Moves>8</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2340,7 +2340,7 @@
 			<RangedCombat>105</RangedCombat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>3400</Cost>
-			<FaithCost>1800</FaithCost>
+			<FaithCost>2400</FaithCost>
 			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
 			<Moves>7</Moves>
 			<Range>3</Range>
@@ -2379,7 +2379,7 @@
 			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>50</BaseLandAirDefense>
 			<Cost>4200</Cost>
-			<FaithCost>2000</FaithCost>
+			<FaithCost>2800</FaithCost>
 			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
 			<Moves>7</Moves>
 			<Range>3</Range>
@@ -2417,8 +2417,8 @@
 			<Combat>125</Combat>
 			<RangedCombat>145</RangedCombat>
 			<BaseLandAirDefense>60</BaseLandAirDefense>
-			<Cost>4800</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>5000</Cost>
+			<FaithCost>3200</FaithCost>
 			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
 			<Moves>8</Moves>
 			<Range>3</Range>
@@ -2460,8 +2460,8 @@
 			<Combat>75</Combat>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
-			<Cost>3500</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3400</Cost>
+			<FaithCost>2400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>6</Moves>
 			<Range>1</Range>			
@@ -2501,8 +2501,8 @@
 			<Combat>105</Combat>
 			<RangedCombat>135</RangedCombat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>4000</Cost>
-			<FaithCost>2250</FaithCost>
+			<Cost>4400</Cost>
+			<FaithCost>3000</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>7</Moves>
 			<Range>1</Range>
@@ -2544,8 +2544,8 @@
 			<Combat>100</Combat>
 			<RangedCombat>85</RangedCombat>
 			<BaseLandAirDefense>65</BaseLandAirDefense>
-			<Cost>4200</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>5000</Cost>
+			<FaithCost>2400</FaithCost>
 			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>6</Moves>
@@ -2584,8 +2584,8 @@
 			<Type>UNIT_FW_DRONE_FIGHTER_2</Type>
 			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
 			<RangedCombat>105</RangedCombat>
-			<Cost>3200</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2800</Cost>
+			<FaithCost>2400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>2</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2623,8 +2623,8 @@
 			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
 			<RangedCombat>125</RangedCombat>
-			<Cost>3600</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3400</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2662,7 +2662,7 @@
 			<PrereqTech>TECH_ENERGY_THEORY</PrereqTech>
 			<RangedCombat>145</RangedCombat>
 			<Cost>4000</Cost>
-			<FaithCost>2250</FaithCost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2702,8 +2702,8 @@
 			<Type>UNIT_FW_SUBORBITAL_BOMBER</Type>
 			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
 			<RangedCombat>115</RangedCombat>
-			<Cost>3300</Cost>
-			<FaithCost>1800</FaithCost>
+			<Cost>2900</Cost>
+			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2740,8 +2740,8 @@
 			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
 			<RangedCombat>135</RangedCombat>
-			<Cost>3700</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3500</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2778,7 +2778,7 @@
 			<PrereqTech>TECH_ENERGY_THEORY</PrereqTech>
 			<RangedCombat>155</RangedCombat>
 			<Cost>4100</Cost>
-			<FaithCost>2250</FaithCost>
+			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2818,8 +2818,8 @@
 			<PrereqTech>TECH_TRANSGENICS</PrereqTech>
 			<Combat>125</Combat>
 			<BaseLandAirDefense>25</BaseLandAirDefense>
-			<Cost>2700</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>3000</Cost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<PurchaseCooldown>1</PurchaseCooldown>
@@ -2850,7 +2850,7 @@
 			<Combat>165</Combat>
 			<BaseLandAirDefense>40</BaseLandAirDefense>
 			<Cost>5000</Cost>
-			<FaithCost>2500</FaithCost>
+			<FaithCost>3400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<BaseSightRange>3</BaseSightRange>
 			<Moves>5</Moves>
@@ -2882,7 +2882,7 @@
 			<RangedCombat>125</RangedCombat>
 			<BaseLandAirDefense>20</BaseLandAirDefense>
 			<Cost>3400</Cost>
-			<FaithCost>2000</FaithCost>
+			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Range>2</Range>
 			<Moves>5</Moves>
@@ -2918,8 +2918,8 @@
 			<Combat>135</Combat>
 			<RangedCombat>165</RangedCombat>
 			<BaseLandAirDefense>30</BaseLandAirDefense>
-			<Cost>4750</Cost>
-			<FaithCost>2500</FaithCost>
+			<Cost>5500</Cost>
+			<FaithCost>3400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>6</Moves>
 			<Range>2</Range>
@@ -2956,8 +2956,8 @@
 			<BaseSightRange>2</BaseSightRange>
 			<RangedCombat>95</RangedCombat>
 			<BaseLandAirDefense>65</BaseLandAirDefense>
-			<Cost>4500</Cost>
-			<FaithCost>2000</FaithCost>
+			<Cost>6000</Cost>
+			<FaithCost>2800</FaithCost>
 			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
@@ -2996,8 +2996,8 @@
 			<Combat>165</Combat>
 			<RangedCombat>135</RangedCombat>
 			<BaseLandAirDefense>75</BaseLandAirDefense>
-			<Cost>5000</Cost>
-			<FaithCost>2500</FaithCost>
+			<Cost>8000</Cost>
+			<FaithCost>3400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Range>3</Range>
 			<Moves>6</Moves>

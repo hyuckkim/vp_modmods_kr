@@ -359,7 +359,7 @@ WHERE Type = 'BUILDING_FW_FUNGAL_AGRIGENOMICS';
 -- -- Genomod Lab
 -- ----------------------------------------------
 UPDATE Buildings
-SET FoodKept = 15, GoldMaintenance = 12, DistressFlatReduction = 2
+SET FoodKept = 15, GoldMaintenance = 12, DistressFlatReduction = 2, SpecialistCount = 2, SpecialistType = 'SPECIALIST_SCIENTIST'
 WHERE Type = 'BUILDING_FW_GENE_LAB';
 -- ----------------------------------------------
 -- -- CYBERPOLICE (vp 4.4 changed)
@@ -378,7 +378,7 @@ WHERE Type = 'BUILDING_FW_WORLD_SECURITY';
 -- -- Autoplant
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 12, NoUnhappfromXSpecialists = 1, DistressFlatReduction = 1, SpecialistCount = 1, SpecialistType = 'SPECIALIST_ENGINEER'
+SET GoldMaintenance = 12, NoUnhappfromXSpecialists = 1, DistressFlatReduction = 1, SpecialistCount = 2, SpecialistType = 'SPECIALIST_ENGINEER'
 WHERE Type = 'BUILDING_FW_AUTOPLANT';
 -- ----------------------------------------------
 -- -- Nanomaterial Plant
@@ -421,7 +421,7 @@ WHERE Type = 'BUILDING_FW_ECOSANCTUARY';
 -- -- Cryptobank
 -- ----------------------------------------------
 UPDATE Buildings
-SET SpecialistCount = 1, SpecialistType = 'SPECIALIST_MERCHANT', PovertyFlatReduction = 2
+SET SpecialistCount = 2, SpecialistType = 'SPECIALIST_MERCHANT', PovertyFlatReduction = 2
 WHERE Type = 'BUILDING_FW_CRYPTOBANK';
 -- ----------------------------------------------
 -- -- VR Training
@@ -458,20 +458,20 @@ WHERE Type = 'BUILDING_FW_COMMERCE_SERVER';
 -- -- Research Server
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 12, SpecialistCount = 1, SpecialistType = 'SPECIALIST_SCIENTIST',  IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 99801
+SET GoldMaintenance = 12, SpecialistCount = 2, SpecialistType = 'SPECIALIST_SCIENTIST',  IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 99801
 WHERE Type = 'BUILDING_FW_RESEARCH_SERVER';
 -------------------------------------------------------------------------------------------------
 -- ----------------------------------------------
 -- -- Nanoforge
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 12, NeverCapture = 1, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, CitySupplyFlat = 1
+SET GoldMaintenance = 12, NeverCapture = 1, CitySupplyFlat = 1
 WHERE Type = 'BUILDING_FW_NANOFORGE';
 -- ----------------------------------------------
 -- -- Particle Accelerator
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, IlliteracyFlatReduction = 1
+SET GoldMaintenance = 12, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 2, IlliteracyFlatReduction = 1
 WHERE Type = 'BUILDING_FW_PARTICLE_ACCELERATOR';
 -- ----------------------------------------------
 -- -- Vertical Farms
@@ -505,7 +505,7 @@ WHERE Type = 'BUILDING_FW_OCEAN_BIOHUB';
 -- -- Genejack Facility
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, MutuallyExclusiveGroup = 83452
+SET GoldMaintenance = 14, MutuallyExclusiveGroup = 83452, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_BIOTECH_CENTER';
 -- ----------------------------------------------
 -- -- Implant Clinic
@@ -517,7 +517,7 @@ WHERE Type = 'BUILDING_FW_BIO_AUG_CLINIC';
 -- -- Network Backbone
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, GreatWorksTourismModifier = 10, PovertyFlatReduction = 1, DistressFlatReduction = 1
+SET GoldMaintenance = 14, GreatWorksTourismModifier = 10, PovertyFlatReduction = 1, DistressFlatReduction = 1, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_NETWORK_BACKBONE';
 -- ----------------------------------------------
 -- -- Launch Facility
@@ -559,7 +559,7 @@ WHERE Type = 'BUILDING_FW_BOREHOLE';
 -- -- Deep earth Reasearch
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, NeverCapture = 1, MutuallyExclusiveGroup = 83452
+SET GoldMaintenance = 14, NeverCapture = 1, MutuallyExclusiveGroup = 83452, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_ANTIMATTER_RESEARCH';
 --- ======================================================================================
 -- Tech 4
@@ -574,13 +574,13 @@ WHERE Type = 'BUILDING_FW_CLONE_LAB';
 -- -- Feedsite Hub
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_MUSICIAN', SpecialistCount = 1, GreatPeopleRateChange = 2, BoredomFlatReduction = 1,  NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 39993
+SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_MUSICIAN', SpecialistCount = 2, GreatPeopleRateChange = 2, BoredomFlatReduction = 1,  NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 39993
 WHERE Type = 'BUILDING_FW_FEEDSITE_HUB';
 -- ----------------------------------------------
 -- -- Simulation Hub
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 39993
+SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 2, GreatPeopleRateChange = 2, IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 39993
 WHERE Type = 'BUILDING_FW_SIMULATION_HUB';
 -- ----------------------------------------------
 -- ----------------------------------------------
@@ -619,13 +619,13 @@ WHERE Type = 'BUILDING_FW_HUMONOID_FORGE';
 -- -- Distribution Hub
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, BuildingProductionModifier = 15, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 39993
+SET GoldMaintenance = 14, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 2, GreatPeopleRateChange = 2, BuildingProductionModifier = 15, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1,  MutuallyExclusiveGroup = 39993
 WHERE Type = 'BUILDING_FW_DISTRIBUTION_HUB';
 -- ----------------------------------------------
 -- -- Metroplex hub
 -- ----------------------------------------------
 UPDATE Buildings
-SET NeverCapture = 1, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1,  NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 39993
+SET NeverCapture = 1, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 2, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1,  NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 39993
 WHERE Type = 'BUILDING_FW_METROPLEX_HUB';
 -- ----------------------------------------------
 -- -- Enrichment Facility
@@ -652,7 +652,7 @@ WHERE Type = 'BUILDING_FW_SOLAR_REFLECTOR';
 -- -- Transgenic Nursery
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', FoodKept=10, GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_FW_TRANSGENICS', MutuallyExclusiveGroup = 99778
+SET GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', FoodKept=10, GreatPeopleRateChange = 1, TrainedFreePromotion = 'PROMOTION_FW_TRANSGENICS', MutuallyExclusiveGroup = 99778, SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_TRANSGENIC_NURSERY';
 -- ----------------------------------------------
 -- -- Biocomputer
@@ -682,7 +682,7 @@ WHERE Type = 'BUILDING_FW_NANOMINES_FIELD';
 -- -- Drone Hive
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, BuildingProductionModifier = 15, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 1,  TrainedFreePromotion = 'PROMOTION_FW_AUTO_REPAIR', MutuallyExclusiveGroup = 99778
+SET GoldMaintenance = 16, BuildingProductionModifier = 15, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 1,  TrainedFreePromotion = 'PROMOTION_FW_AUTO_REPAIR', MutuallyExclusiveGroup = 99778, SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_DRONE_HIVE';
 -- ----------------------------------------------
 -- --  sky rail hub
@@ -694,25 +694,25 @@ WHERE Type = 'BUILDING_FW_SKYRAIL_HUB';
 -- -- Comm Module
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 6, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 1, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
+SET NukeImmune = 1, GoldMaintenance = 6, SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount = 2, GreatPeopleRateChange = 2,  PovertyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
 WHERE Type = 'BUILDING_FW_LAGRANGE_COMMERCIAL';
 -- ----------------------------------------------
 -- -- Engineering Module
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 16, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 1, GreatPeopleRateChange = 2, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
+SET NukeImmune = 1, GoldMaintenance = 16, SpecialistType = 'SPECIALIST_ENGINEER', SpecialistCount = 2, GreatPeopleRateChange = 2, DistressFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
 WHERE Type = 'BUILDING_FW_LAGRANGE_INDUSTRIAL';
 -- ----------------------------------------------
 -- -- Research Module
 -- ----------------------------------------------
 UPDATE Buildings
-SET NukeImmune = 1, GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 1, GreatPeopleRateChange = 2, IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
+SET NukeImmune = 1, GoldMaintenance = 16, SpecialistType = 'SPECIALIST_SCIENTIST', SpecialistCount = 2, GreatPeopleRateChange = 2, IlliteracyFlatReduction = 1, NoUnhappfromXSpecialists = 1, MutuallyExclusiveGroup = 26801
 WHERE Type = 'BUILDING_FW_LAGRANGE_RESEARCH';
 -- ----------------------------------------------
 -- -- Aerospace Complex
 -- ----------------------------------------------
 UPDATE Buildings
-SET GoldMaintenance = 16, SpaceProductionModifier = 15, SpecialistType = 'SPECIALIST_MERCHANT', GreatPeopleRateChange = 1,  CityAirStrikeDefense = 10, AirModifier = 4,  TrainedFreePromotion = 'PROMOTION_FW_AEROPLEX_DROP', MutuallyExclusiveGroup = 99778
+SET GoldMaintenance = 16, SpaceProductionModifier = 15, SpecialistType = 'SPECIALIST_MERCHANT', GreatPeopleRateChange = 1,  CityAirStrikeDefense = 10, AirModifier = 4,  TrainedFreePromotion = 'PROMOTION_FW_AEROPLEX_DROP', MutuallyExclusiveGroup = 99778, SpecialistCount = 1
 WHERE Type = 'BUILDING_FW_AEROSPACE_COMPLEX';
 -----------------------------------------------------------------------------------------------------------------------------------------
 --- ======================================================================================
@@ -1092,28 +1092,28 @@ INSERT INTO Building_YieldChangesPerPop (BuildingType, YieldType, Yield) VALUES
 INSERT INTO Building_BuildingClassYieldChanges
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 VALUES
-	('BUILDING_FW_GENE_LAB',             'BUILDINGCLASS_FW_GENE_LAB',             'YIELD_FOOD',       1),
-	('BUILDING_FW_AUTOPLANT',            'BUILDINGCLASS_FW_AUTOPLANT',            'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_PARTICLE_ACCELERATOR', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 'YIELD_SCIENCE',    1),
-	('BUILDING_FW_CRYPTOBANK',           'BUILDINGCLASS_FW_CRYPTOBANK',           'YIELD_GOLD',       1),
-	('BUILDING_FW_VIRTUAL_MUSEUM',       'BUILDINGCLASS_FW_VIRTUAL_MUSEUM',       'YIELD_CULTURE',    1),
-	('BUILDING_FW_VERTICAL_FARM',        'BUILDINGCLASS_FW_VERTICAL_FARM',        'YIELD_SCIENCE',    1),
-	('BUILDING_FW_ECOSANCTUARY',         'BUILDINGCLASS_FW_ECOSANCTUARY',         'YIELD_CULTURE',    1),
-	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       1),
-	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_OCEAN_BIOHUB',         'YIELD_SCIENCE',    1),
-	('BUILDING_FW_OCEAN_BIOHUB',         'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       1),
-	('BUILDING_FW_OCEAN_BIOHUB',         'BUILDINGCLASS_FW_OCEAN_BIOHUB',         'YIELD_SCIENCE',    1),
-	('BUILDING_FW_BOREHOLE', 	         'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       1),
-	('BUILDING_FW_BOREHOLE',             'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_GEOTHERMAL_FACTORY', 	 'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       1),
-	('BUILDING_FW_GEOTHERMAL_FACTORY',   'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_BIO_AUG_CLINIC',       'BUILDINGCLASS_FW_VR_TRAINING',          'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_LAUNCH_FACILITY',      'BUILDINGCLASS_SPACESHIP_FACTORY',       'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_RESEARCH_SERVER',      'YIELD_SCIENCE',    1),
-	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_ENTERTAINMENT_SERVER', 'YIELD_CULTURE',    1),
-	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_COMMERCE_SERVER',      'YIELD_GOLD',       1),
-	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_CLOUD_COMPUTING',      'YIELD_PRODUCTION', 1),
-	('BUILDING_FW_HUMONOID_FORGE',       'BUILDINGCLASS_FW_NANOFORGE',            'YIELD_PRODUCTION', 1),
+	('BUILDING_FW_GENE_LAB',             'BUILDINGCLASS_FW_GENE_LAB',             'YIELD_FOOD',       2),
+	('BUILDING_FW_AUTOPLANT',            'BUILDINGCLASS_FW_AUTOPLANT',            'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_PARTICLE_ACCELERATOR', 'BUILDINGCLASS_FW_PARTICLE_ACCELERATOR', 'YIELD_SCIENCE',    2),
+	('BUILDING_FW_CRYPTOBANK',           'BUILDINGCLASS_FW_CRYPTOBANK',           'YIELD_GOLD',       2),
+	('BUILDING_FW_VIRTUAL_MUSEUM',       'BUILDINGCLASS_FW_VIRTUAL_MUSEUM',       'YIELD_CULTURE',    2),
+	('BUILDING_FW_VERTICAL_FARM',        'BUILDINGCLASS_FW_VERTICAL_FARM',        'YIELD_SCIENCE',    2),
+	('BUILDING_FW_ECOSANCTUARY',         'BUILDINGCLASS_FW_ECOSANCTUARY',         'YIELD_CULTURE',    2),
+	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       2),
+	('BUILDING_FW_BIOFACTORY',           'BUILDINGCLASS_FW_OCEAN_BIOHUB',         'YIELD_SCIENCE',    2),
+	('BUILDING_FW_OCEAN_BIOHUB',         'BUILDINGCLASS_FW_BIOFACTORY',           'YIELD_FOOD',       2),
+	('BUILDING_FW_OCEAN_BIOHUB',         'BUILDINGCLASS_FW_OCEAN_BIOHUB',         'YIELD_SCIENCE',    2),
+	('BUILDING_FW_BOREHOLE', 	         'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       2),
+	('BUILDING_FW_BOREHOLE',             'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_GEOTHERMAL_FACTORY', 	 'BUILDINGCLASS_FW_BOREHOLE',             'YIELD_GOLD',       2),
+	('BUILDING_FW_GEOTHERMAL_FACTORY',   'BUILDINGCLASS_FW_GEOTHERMAL_FACTORY',   'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_BIO_AUG_CLINIC',       'BUILDINGCLASS_FW_VR_TRAINING',          'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_LAUNCH_FACILITY',      'BUILDINGCLASS_SPACESHIP_FACTORY',       'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_RESEARCH_SERVER',      'YIELD_SCIENCE',    2),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_ENTERTAINMENT_SERVER', 'YIELD_CULTURE',    2),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_COMMERCE_SERVER',      'YIELD_GOLD',       2),
+	('BUILDING_FW_NETWORK_BACKBONE',     'BUILDINGCLASS_FW_CLOUD_COMPUTING',      'YIELD_PRODUCTION', 2),
+	('BUILDING_FW_HUMONOID_FORGE',       'BUILDINGCLASS_FW_NANOFORGE',            'YIELD_PRODUCTION', 2),
 	('BUILDING_FW_FEEDSITE_HUB',         'BUILDINGCLASS_FW_TELEPRESENCE_HUB',     'YIELD_CULTURE',    1),
 	('BUILDING_FW_SIMULATION_HUB',       'BUILDINGCLASS_FW_TELEPRESENCE_HUB',     'YIELD_SCIENCE',    1),
 	('BUILDING_FW_DISTRIBUTION_HUB',     'BUILDINGCLASS_FW_TELEPRESENCE_HUB',     'YIELD_PRODUCTION', 1),

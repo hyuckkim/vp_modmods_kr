@@ -19,11 +19,11 @@ UPDATE Units SET PrereqTech = 'TECH_SPACE_COLONIZATION', Cost = 22500 WHERE Type
 UPDATE Units SET PrereqTech = 'TECH_NANOTECHNOLOGY' WHERE Type = 'UNIT_STEALTH_BOMBER';
 UPDATE Units SET PrereqTech = 'TECH_NANOTECHNOLOGY' WHERE Type = 'UNIT_ADVJET';
 UPDATE Units SET PrereqTech = 'TECH_INTERNET' WHERE Type = 'UNIT_SUPERCARRIER';
-UPDATE Units SET PrereqTech = 'TECH_NUCLEAR_FUSION', Combat = 145, BaseLandAirDefense = 25, Cost = 4250, FaithCost = 2250 WHERE Type = 'UNIT_MECH';
+UPDATE Units SET PrereqTech = 'TECH_NUCLEAR_FUSION', Combat = 145, BaseLandAirDefense = 25, Cost = 4800, FaithCost = 3000 WHERE Type = 'UNIT_MECH';
 UPDATE Units SET PrereqTech = 'TECH_SEA_EXPLORE' WHERE Type = 'UNIT_NUCLEAR_SUBMARINE';
 
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_XCOM_SQUAD' AND PromotionType = 'PROMOTION_EXTENDED_PARADROP';
-UPDATE Units SET PrereqTech = 'TECH_PLANETARY_MIGRATION', Cost = 2950, FaithCost = 2250, Combat = 115, Moves = 4 WHERE Type = 'UNIT_XCOM_SQUAD';
+UPDATE Units SET PrereqTech = 'TECH_PLANETARY_MIGRATION', Cost = 3450, FaithCost = 3000, Combat = 115, Moves = 4 WHERE Type = 'UNIT_XCOM_SQUAD';
 
 UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_CAYM_PMC' WHERE UnitType = 'UNIT_GUERILLA';
 UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FW_AIRBORNE_FORCES' WHERE UnitType = 'UNIT_MARINE';
@@ -31,30 +31,12 @@ UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FW_RAILGUN_TANK' WHERE 
 --------------------------------------
 -- Future
 --------------------------------------
-DELETE FROM Unit_ClassUpgrades
-WHERE UnitType IN ('UNIT_JET_FIGHTER','UNIT_ADVJET');
+DELETE FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER';
 
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-SELECT 'UNIT_JET_FIGHTER', u.Class
-FROM Units u
-WHERE u.Type = 'UNIT_ADVJET'
-  AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_JET_FIGHTER')
-  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER');
+VALUES ('UNIT_JET_FIGHTER', 'UNITCLASS_FW_DRONE_FIGHTER_2');
 
-INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-SELECT 'UNIT_ADVJET', 'UNITCLASS_FW_DRONE_FIGHTER_2'
-WHERE EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET')
-  AND EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2')
-  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_ADVJET');
-
-INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-SELECT 'UNIT_JET_FIGHTER', 'UNITCLASS_FW_DRONE_FIGHTER_2'
-WHERE NOT EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET')
-  AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_JET_FIGHTER')
-  AND EXISTS (SELECT 1 FROM UnitClasses WHERE Type = 'UNITCLASS_FW_DRONE_FIGHTER_2')
-  AND NOT EXISTS (SELECT 1 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER');
-
-
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNIT_ADVJET' WHERE UnitType = 'UNIT_JET_FIGHTER' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET');
 
 --==========================================================================================================================	
 -- UNITS

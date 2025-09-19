@@ -62,6 +62,7 @@ Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Tr
 Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion recursesubdirs;	Components: vpwp
 Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
 Source: "..\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ele
+Source: "..\Faster Non-Aircraft Animations (v 1)\*"; DestDir: "{app}\MODS\Faster Non-Aircraft Animations (v 1)"; Flags: ignoreversion recursesubdirs;	Components: fnaa
 Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion recursesubdirs;	Components: ige
 Source: "..\Large Minimap for VP wth EUI only (v 1)\*"; DestDir: "{app}\MODS\Large Minimap for VP wth EUI only (v 1)"; Flags: ignoreversion recursesubdirs;	Components: lm
 Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion recursesubdirs;	Components: leh
@@ -112,11 +113,13 @@ Source: "..\!Jarcast's Volcanoes for VP (v 7)\*"; DestDir: "{app}\MODS\!Jarcast'
 Source: "..\!Jarcast's Volcanoes for VP (v 7) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7) INT"; Flags: ignoreversion recursesubdirs;	Components: jv
 ;Source: "..\(n) Subterfuge KR\*"; DestDir: "{app}\MODS\(n) Subterfuge KR"; Flags: ignoreversion recursesubdirs;	Components: sf
 Source: "..\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion recursesubdirs;	Components: fa
+Source: "..\(8) Enhanced Air Warfare 4VP (v 2)\*"; DestDir: "{app}\MODS\(8) Enhanced Air Warfare 4VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: eaw
 ;Source: "..\(8) Events and Decisions (CBO) (v 14)\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14)"; Flags: ignoreversion recursesubdirs;	Components: ed
 ;Source: "..\(8) Events and Decisions (CBO) (v 14) INT\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14) INT"; Flags: ignoreversion recursesubdirs;	Components: ed
+Source: "..\(9a) CAYM Balance Change\*"; DestDir: "{app}\MODS\(9a) CAYM Balance Change"; Flags: ignoreversion recursesubdirs;	Components: cayma
+Source: "..\(9b) CAYM Unit Change\*"; DestDir: "{app}\MODS\(9b) CAYM Unit Change"; Flags: ignoreversion recursesubdirs;	Components: caymb
+Source: "..\(9c) CAYM Improvement Change\*"; DestDir: "{app}\MODS\(9c) CAYM Improvement Change"; Flags: ignoreversion recursesubdirs;	Components: caymc
 Source: "..\(game) Capture+++ (v 5)\*"; DestDir: "{app}\MODS\(game) Capture+++ (v 5)"; Flags: ignoreversion recursesubdirs;	Components: gc
-Source: "..\(overhaul) Enhanced Air Warfare 4VP (v 1.9)\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"; Flags: ignoreversion recursesubdirs;	Components: eaw
-Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enhanced Air Warfare 4VP INT"; Flags: ignoreversion recursesubdirs;	Components: eaw
 Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
@@ -241,6 +244,7 @@ Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vo
 
 Name: "cms"; Description: "개선된 모딩 화면 (Enhanced Modding Screen)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "er"; Description: "개선된 순위 UI (Enhanced Rankings)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "fnaa"; Description: "항공기 제외 더 빠른 애니메이션 (Faster Non-Aircraft Animations)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "le"; Description: "VP 목록 개선 (List Enhancements for VP)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "mc"; Description: "의미있는 색깔 (Meaningful Colours)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ns"; Description: "알림 설정 (Notification Settings)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -333,6 +337,9 @@ Name: "wb"; Description: "포경 (Whale Battles)"; Types: VPMAX Custom; Flags: d
 Name: "wm"; Description: "노동자 등산 (Worker Mountaineering)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "cayma"; Description: "CAYM의 밸런스 변경 (CAYM Balance Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "caymb"; Description: "CAYM의 유닛 변경 (CAYM Unit Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "caymc"; Description: "CAYM의 시설 변경 (CAYM Improvement Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -411,6 +418,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Wonder Planner For VP KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Auto-Sell Buildings (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Elephant Sound When Circus Built (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Faster Non-Aircraft Animations (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\InGame Editor+ (v 46)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Large Minimap for VP wth EUI only (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\More Right Click Shortcuts (v 1)"
@@ -460,8 +468,12 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Volcanoes for VP (v 7) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP INT (AI)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Enhanced Air Warfare 4VP (v 2)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Events and Decisions (CBO) (v 14)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Events and Decisions (CBO) (v 14) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(9a) CAYM Balance Change"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(9b) CAYM Unit Change"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(9c) CAYM Improvement Change"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(game) Capture+++ (v 5)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(n) Religious Victory KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(n) Subterfuge KR"
