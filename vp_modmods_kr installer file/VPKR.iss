@@ -298,6 +298,10 @@ Name: "df"; Description: "전설의 세계 (World of Lore)"; Types: VPUI VPEX VP
 Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ee"; Description: "VP 계몽 시대 (Enlightenment Era for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "fa"; Description: "VP 미래 시대 (Future Age for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "cayma"; Description: "CAYM의 밸런스 변경 (CAYM Balance Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "caymb"; Description: "CAYM의 유닛 변경 (CAYM Unit Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "caymc"; Description: "CAYM의 시설 변경 (CAYM Improvement Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "ed"; Description: "이벤트와 결정 (Events and Decisions)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -337,13 +341,10 @@ Name: "wb"; Description: "포경 (Whale Battles)"; Types: VPMAX Custom; Flags: d
 Name: "wm"; Description: "노동자 등산 (Worker Mountaineering)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "cayma"; Description: "CAYM의 밸런스 변경 (CAYM Balance Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "caymb"; Description: "CAYM의 유닛 변경 (CAYM Unit Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "caymc"; Description: "CAYM의 시설 변경 (CAYM Improvement Change)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "hp"; Description: "Hokath의 제안 (Hokaths Proposals)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+
 
 Name: "cli"; Description: "식민지 유산 VP 이누이트 (Colonialist Legacies' Inuit for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gfpa"; Description: "Gwennog의 VP 프랑스 - 필리프 오귀스트 (Gwennog's France - Philippe Auguste for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
