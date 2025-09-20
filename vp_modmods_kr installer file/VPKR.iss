@@ -113,7 +113,7 @@ Source: "..\!Jarcast's Volcanoes for VP (v 7)\*"; DestDir: "{app}\MODS\!Jarcast'
 Source: "..\!Jarcast's Volcanoes for VP (v 7) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7) INT"; Flags: ignoreversion recursesubdirs;	Components: jv
 ;Source: "..\(n) Subterfuge KR\*"; DestDir: "{app}\MODS\(n) Subterfuge KR"; Flags: ignoreversion recursesubdirs;	Components: sf
 Source: "..\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion recursesubdirs;	Components: fa
-Source: "..\(8)  Air Archive for VP\*"; DestDir: "{app}\MODS\(8)  Air Archive for VP"; Flags: ignoreversion recursesubdirs;	Components: eaw
+Source: "..\(8) Air Archive for VP\*"; DestDir: "{app}\MODS\(8) Air Archive for VP"; Flags: ignoreversion recursesubdirs;	Components: eaw
 ;Source: "..\(8) Events and Decisions (CBO) (v 14)\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14)"; Flags: ignoreversion recursesubdirs;	Components: ed
 ;Source: "..\(8) Events and Decisions (CBO) (v 14) INT\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14) INT"; Flags: ignoreversion recursesubdirs;	Components: ed
 Source: "..\(9a) CAYM Balance Change\*"; DestDir: "{app}\MODS\(9a) CAYM Balance Change"; Flags: ignoreversion recursesubdirs;	Components: cayma
@@ -238,7 +238,7 @@ Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formatio
 Name: "lm"; Description: "VP 큰 미니맵 (Large Minimap for VP wth EUI only)"; Types: Custom; Flags: disablenouninstallwarning
 
 Name: "vpuc"; Description: "VP 더 많은 고유 요소 (More Unique Components for VP)"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP VPUI VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vppt"; Description: "VP 승급 트리 (Promotion Tree for VP)"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
@@ -295,7 +295,7 @@ Name: "gy"; Description: "Gedemon의 YnAEMP (Gedemon's YnAEMP)"; Types: VPUI VPE
 Name: "fnv"; Description: "모하비 황무지 (Mojave Wasteland)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "df"; Description: "전설의 세계 (World of Lore)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
-Name: "eaw"; Description: "VP 개선된 항공 전쟁 (Enhanced Air Warfare 4VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "eaw"; Description: "VP 항공 아카이브 (Air Archive for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ee"; Description: "VP 계몽 시대 (Enlightenment Era for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "fa"; Description: "VP 미래 시대 (Future Age for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "cayma"; Description: "CAYM의 밸런스 변경 (CAYM Balance Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -469,6 +469,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Volcanoes for VP (v 7) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP INT (AI)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Air Archive for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8)  Air Archive for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Enhanced Air Warfare 4VP (v 2)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Events and Decisions (CBO) (v 14)"
