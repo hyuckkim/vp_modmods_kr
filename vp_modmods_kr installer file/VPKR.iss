@@ -113,7 +113,7 @@ Source: "..\!Jarcast's Volcanoes for VP (v 7)\*"; DestDir: "{app}\MODS\!Jarcast'
 Source: "..\!Jarcast's Volcanoes for VP (v 7) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 7) INT"; Flags: ignoreversion recursesubdirs;	Components: jv
 ;Source: "..\(n) Subterfuge KR\*"; DestDir: "{app}\MODS\(n) Subterfuge KR"; Flags: ignoreversion recursesubdirs;	Components: sf
 Source: "..\(6) Future Age for VP\*"; DestDir: "{app}\MODS\(6) Future Age for VP"; Flags: ignoreversion recursesubdirs;	Components: fa
-Source: "..\(8) Enhanced Air Warfare 4VP (v 2)\*"; DestDir: "{app}\MODS\(8) Enhanced Air Warfare 4VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: eaw
+Source: "..\(8)  Air Archive for VP\*"; DestDir: "{app}\MODS\(8)  Air Archive for VP"; Flags: ignoreversion recursesubdirs;	Components: eaw
 ;Source: "..\(8) Events and Decisions (CBO) (v 14)\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14)"; Flags: ignoreversion recursesubdirs;	Components: ed
 ;Source: "..\(8) Events and Decisions (CBO) (v 14) INT\*"; DestDir: "{app}\MODS\(8) Events and Decisions (CBO) (v 14) INT"; Flags: ignoreversion recursesubdirs;	Components: ed
 Source: "..\(9a) CAYM Balance Change\*"; DestDir: "{app}\MODS\(9a) CAYM Balance Change"; Flags: ignoreversion recursesubdirs;	Components: cayma
@@ -469,6 +469,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Volcanoes for VP (v 7) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6) Future Age for VP INT (AI)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8)  Air Archive for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Enhanced Air Warfare 4VP (v 2)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Events and Decisions (CBO) (v 14)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(8) Events and Decisions (CBO) (v 14) INT"
