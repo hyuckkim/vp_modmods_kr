@@ -2583,7 +2583,7 @@
 			<Class>UNITCLASS_FW_DRONE_FIGHTER_2</Class>
 			<Type>UNIT_FW_DRONE_FIGHTER_2</Type>
 			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
-			<RangedCombat>105</RangedCombat>
+			<RangedCombat>95</RangedCombat>
 			<Cost>2800</Cost>
 			<FaithCost>2400</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2622,7 +2622,7 @@
 			<Type>UNIT_FW_PLASMA_FIGHTER</Type>
 			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
-			<RangedCombat>125</RangedCombat>
+			<RangedCombat>115</RangedCombat>
 			<Cost>3400</Cost>
 			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2660,7 +2660,7 @@
 			<Class>UNITCLASS_FW_SPACE_FIGHTER</Class>
 			<Type>UNIT_FW_SPACE_FIGHTER</Type>
 			<PrereqTech>TECH_ENERGY_THEORY</PrereqTech>
-			<RangedCombat>145</RangedCombat>
+			<RangedCombat>135</RangedCombat>
 			<Cost>4000</Cost>
 			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2701,7 +2701,7 @@
 			<Class>UNITCLASS_FW_SUBORBITAL_BOMBER</Class>
 			<Type>UNIT_FW_SUBORBITAL_BOMBER</Type>
 			<PrereqTech>TECH_FUTURE_BALLISTICS</PrereqTech>
-			<RangedCombat>115</RangedCombat>
+			<RangedCombat>105</RangedCombat>
 			<Cost>2900</Cost>
 			<FaithCost>2200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2739,7 +2739,7 @@
 			<Type>UNIT_FW_PLASMA_BOMBER</Type>
 			<PrereqTech>TECH_PLASMA_ENERGY</PrereqTech>
 			<ObsoleteTech>TECH_ENERGY_THEORY</ObsoleteTech>
-			<RangedCombat>135</RangedCombat>
+			<RangedCombat>125</RangedCombat>
 			<Cost>3500</Cost>
 			<FaithCost>2800</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
@@ -2776,7 +2776,7 @@
 			<Class>UNITCLASS_FW_SPACE_BOMBER</Class>
 			<Type>UNIT_FW_SPACE_BOMBER</Type>
 			<PrereqTech>TECH_ENERGY_THEORY</PrereqTech>
-			<RangedCombat>155</RangedCombat>
+			<RangedCombat>145</RangedCombat>
 			<Cost>4100</Cost>
 			<FaithCost>3200</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>

@@ -2628,6 +2628,11 @@
 				Zone of Control
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_ADVJET_TEXT"> 
+			<Text>
+				The idea of “hiding” combat aircraft dates back to the dawn of aviation, but the F-22 Raptor at the end of the Cold War proved the performance of true stealth. However, the Raptor was optimized for Air Force air superiority and lacked carrier suitability; combined with high acquisition/sustainment costs and export restrictions, it remained limited in numbers.[NEWLINE][NEWLINE]After the Cold War, the US sought a “multirole stealth fighter” to replace aging F-16s, F/A-18s, and AV-8Bs with a common family across Air Force, Navy, and Marine Corps to reduce costs. The Marines required STOVL, the Navy needed CATOBAR carrier operations, and the Air Force emphasized long-range strike and sensor fusion. To reconcile these divergent needs under one platform family, the Joint Strike Fighter (JSF) program began in the 1990s; in 2001 the X-35 was selected, leading to the F-35 Lightning II.[NEWLINE][NEWLINE]The F-35 combines low-observable shaping and internal bays with AESA radar, EO/DAS, IRST, EW systems, and link-based data fusion to “see first—shoot first—leave first.” It can switch between a low-observable internal-weapons configuration and an external-store “Beast Mode,” and its sustainment/software architecture emphasizes high sortie rates. [NEWLINE][NEWLINE]In short, the F-35 was designed not to replace the Raptor’s absolute air-superiority niche, but to unify land/sea/expeditionary forces with a multirole stealth platform. Its three variants—A (Air Force), B (STOVL), and C (Carrier)—deliver mission-tailored capabilities, reflecting the adage: “The Raptor opens the door; the Lightning goes through it to strike.”
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_AD_CHOOSE_SPEED"> 
 			<Text>
 				Select Game Pace
@@ -4096,6 +4101,11 @@
 		<Replace Tag="TXT_KEY_B3030D39C0D84BC791B17AD1CAF585AB_NAME"> 
 			<Text>
 				Denmark
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_B52_TEXT"> 
+			<Text>
+				Also known as the Stratofortress, the B-52 is a US long-range heavy bomber designed by Boeing in 1948, first flown in 1952, and delivered to the military in 1955. It proved adaptable to many roles throughout the Cold War, and dozens remained in service into the 21st century. With eight jet engines beneath its wings, it can reach about Mach 0.9 at 55,000 feet and Mach 0.5 at a few hundred feet AGL. Its massive airframe—nicknamed the “Big Ugly Fat Fellow” (BUFF)—accommodates sophisticated navigation, weapons control, and electronic countermeasures. For years, it also served as the “mothership” for air-launched experimental aircraft like the X-15 and X-43.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_B685D5DE7CCA4E7581B42F60754E6330_DESCRIPTION"> 
@@ -45572,7 +45582,7 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_JETFIGHTER_TEXT"> 
 			<Text>
-				The jet fighter is extremely similar in role to its ancestor, the World War II propeller-driven fighter, but there are huge differences in the planes' power, armament, weaponry, and computer and communications equipment. The best World War II aircraft could fly at best 400 miles per hour, while a modern jet fighter can fly three times that fast. A World War II aircraft could carry one or two machine guns and possibly one or two bombs. A modern fighter can carry a 20mm Gatling gun, 10 or so air-to-air missiles, and dozens of different rockets. The vehicle is equipped with sophisticated computers, radar, and communications equipment far exceeding anything available anywhere before in history. Like other aircraft, jet fighters are vulnerable to surface-to-air missiles, but their largest threat comes from enemy fighters. Whichever side achieves air superiority will gain a nearly unbeatable advantage in combat.
+				The F-22 Raptor is a stealth air-superiority fighter from the late-Cold-War ATF program, fielded after the YF-22 prototype competition. Entering USAF service in the mid-2000s, it combined low-observable shaping/coatings and internal bays with high-agility thrust-vectoring, the APG-77 AESA radar, and tightly integrated avionics/data fusion to realize the classic “see first—shoot first—leave first” air-superiority paradigm. Supercruise enabled energy-dominant tactics, while EW/passive-sensor integration and link-enabled situational awareness unlocked formation-level target sharing and multi-axis approaches.[NEWLINE][NEWLINE]Historically, the F-22 was optimized as an Air Force standalone air-superiority platform; carrierization proposals fell to technical and economic hurdles. Carrier suitability would have required arresting hook and heavy landing gear, structural reinforcement for trap loads, corrosion protection and sealing/venting for salt environments, folding wings, and more—driving weight growth, avionics/weapons compromises, and exploding costs. Divergent AF/USN operational concepts (sortie cycles vs. deck cycles) compounded the issue. As a result, the F-22 remains a land-based air-dominance asset.[NEWLINE][NEWLINE]In gameplay, stealth fighters excel at bomber escort and IADS penetration via interception evasion and BVR advantages, offsetting enemy numerical superiority with superior tactics. However, they are less suited to blue-water power projection; pairing with carrier fighters (F/A-18, MiG-29K, F-35, etc.) is ideal for maritime operations.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_MECHANIZEDINFANTRY_HEADING"> 
@@ -59740,6 +59750,16 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		<Replace Tag="TXT_KEY_EA67AED558594875BF3A360FE9E55D1B_NAME"> 
 			<Text>
 				Conquest Deluxe
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EARLYJET_TEXT"> 
+			<Text>
+				The P-80 Shooting Star was the first jet fighter operated by the US Army Air Forces (USAAF). Designed and built by Lockheed in 1943, the production model flew a mere 143 days after the program began; two pre-production aircraft saw very limited service in Italy just before WWII ended. With straight wings, the type later served extensively in Korea with the USAF as the F-80.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EARLYMONOPLAN_TEXT"> 
+			<Text>
+				The interwar period (1919–1938) saw rapid progress in aviation. Aircraft design improved dramatically, evolving from 80-mph biplanes to streamlined racing aircraft exceeding 200 mph. Through the 1920s, advances allowed aircraft to fly farther, carry heavier loads, and become far more reliable. Most designs kept two synchronized machine guns ahead of the pilot, but armament gradually moved into the wings, outside the propeller arc. Rotary engines—so popular in WWI—quickly vanished as their rotational forces limited power; they were replaced mainly by fixed radials, while major advances in inline engines produced several excellent powerplants.[NEWLINE]With tight defense budgets, air forces were conservative about procurement and pilots still favored biplanes for their agility, keeping them in service well past their competitive prime. Designs such as the Gloster Gladiator, Fiat CR.42, and Polikarpov I-15 were common even in the late 1930s, and many served into 1942.[NEWLINE]Among the most groundbreaking fighters of this era was the PZL P.11, developed by engineer Zygmunt Puławski for Warsaw-based manufacturer PZL. First flown in 1934, its all-metal structure, metal skin, and high-mounted gull wing embodied features that briefly made it widely regarded as the most advanced fighter in the world.[NEWLINE]A total of 325 of these early monoplane fighters were built, achieving considerable export success.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_EARTHS_BOUNTY_SHORT"> 
@@ -85433,6 +85453,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR:255:235:0:255]{1_TotalGold: number "##"}[/COLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_JET27_TEXT"> 
+			<Text>
+				The carrier-borne jet fighter concept at the end of the Cold War stemmed from the US Navy’s push for a single platform to handle both fleet air defense and strike missions. The F/A-18, a navalized evolution of the YF-17, replaced the A-7 and parts of the F-14’s role, executing the combined “F(ighter)/A(ttack)” task set repeatedly from the deck. It later evolved into the enlarged, re-engined, and re-avionics’d Super Hornet, becoming the backbone of carrier air wings.[NEWLINE][NEWLINE]The great advantage of a carrier fighter—projecting national power from a “mobile air base”—comes with harsh engineering and operational constraints. Traps require snagging the arresting wire and stopping within a few hundred meters (pilots maintain full throttle through touchdown as a standard “bolter-catch” procedure against cable failure), imposing severe cumulative fatigue on gear and airframe. Salt-laden maritime environments accelerate corrosion in electronics, wiring, and structure, demanding extensive anti-corrosion coatings, materials, and drainage/venting design. Tight deck/hangar space forces folding wings and low overall height, while payload, fuel, and serviceability must constantly be traded.[NEWLINE][NEWLINE]Operationally, carrier air wings cycle fleet air defense, strike, CAS, anti-ship/SEAD/DEAD in tightly scheduled “launch-recover” windows, with rearm/refuel/de-icing/corrosion checks and wiring inspections meshed across org- and intermediate-level maintenance. When deployed, wind over deck, deck clearance states, and the launch/recovery windows govern mission timing, while “bring-back weight limits” (fuel/ordnance allowed at trap) directly constrain planning. Carrier-capable jets must meet CATOBAR or STOBAR requirements in thrust, structural stiffness, and landing gear durability, narrowing MTOW, range, and load choices compared to land-based peers. Even so, multirole carrier fighters remain the “flexible blade” of the carrier air wing—combining air superiority and littoral/sea strike in one squadron, enabling distant deterrence and rapid response.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_JOINING_GAME_IN_PROGRESS"> 
 			<Text>
 				Joining game in progress
@@ -106415,6 +106440,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Consul {1_PlayerName:textkey} of {2_CivName:textkey}
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_LIGHTBOMBER_TEXT"> 
+			<Text>
+				From the end of WWI (1918) to the outbreak of WWII (1939), bombers evolved rapidly from slow wooden biplanes to sleek all-metal monoplanes. Metal construction, variable-pitch propellers, and improved aerodynamics gave rise to the concept of the “survive by speed” light bomber. Britain’s Bristol Blenheim and Fairey Battle, America’s Douglas A-20 Havoc/Boston, and Japan’s Ki-51, among others, were designed to strike quickly across the front with modest bombloads and high cruise speeds.[NEWLINE][NEWLINE]But once war began in earnest, light bombers’ thin armor, limited defensive guns, and small bombloads proved fatal weaknesses. In 1940 France, low-level daylight penetration by the Fairey Battle suffered heavy losses to fighters and flak, prompting a rapid shift to medium/high-altitude bombing and stronger escort doctrines. Many light bombers transitioned to specialized roles—night attack, reconnaissance, CAS, torpedo/anti-ship—thereafter.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_LIST_LOBBIES_INTERNET"> 
 			<Text>
 				Lobbies: Internet
@@ -109741,6 +109771,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MIDEASTERN"> 
 			<Text>
 				Choose middle eastern music.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MIG29_TEXT"> 
+			<Text>
+				The MiG-29K is the carrier variant of the Soviet MiG-29 air-superiority fighter. Initiated in the late 1980s as the Soviet Naval Aviation sought new carriers (Kiev/Kuznetsov classes), mass deployment was derailed by the USSR’s collapse. The program revived in the 2000s with India’s carrier recapitalization (INS Vikramaditya and Vikrant), and Russia adopted it in limited numbers. The MiG-29K integrates RD-33MK engines, maritime-hardened avionics, anti-ship/strike weapons, folding wings, reinforced arresting gear, and corrosion protection—comprehensive adaptations for deck operations.[NEWLINE][NEWLINE]Carrier ops are demanding in design, maintenance, and tactics. Under **STOBAR** (ski-jump launch, arrested recovery), lack of catapults limits fuel/weapons on takeoff to meet thrust-to-weight and end-of-ramp speed requirements, reducing range and load options. Trapping on a short deck imposes high load impacts, requiring heavy reinforcement of gear and airframe—adding empty weight and maintenance burden. Salt environment raises corrosion and malfunction risks in electronics, wiring, and hydraulics; hangar/deck space constraints limit concurrent maintenance and sortie generation. The wing’s “cyclic operations” make wind and deck state the first constraint on mission plans.[NEWLINE][NEWLINE]To mitigate this, the MiG-29K adds large flaps and leading-edge devices, refined FBW laws for approach stability at various AoA/azimuth, radar modes favoring sea/ground mapping and GMTI, and integration of anti-ship missiles. Even so, fatigue accumulation, salt corrosion, and tight spares/maintenance cycles govern availability. Ultimately, performance is bounded by the carrier’s launch/recovery system (STOBAR/CATOBAR), deck maintenance infrastructure, and integration with the fleet’s navigation/AEW/tanker network.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MILITARYAISTRATEGY_ALONE"> 
@@ -126876,6 +126911,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Combat Bonus in Forest/Jungle (33)
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_JET_DOM"> 
+			<Text>
+				Shooting Star
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_MOHAWK"> 
 			<Text>
 				Combat Bonus in Forest/Jungle (33)
@@ -130293,7 +130333,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_MILITARISM_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Air Supremacy[ENDCOLOR]: Receive a free Airport in every City. +25% [ICON_PRODUCTION] Production when building Aircraft. Can build [COLOR_YELLOW]Zeroes[ENDCOLOR].
+				[COLOR_POSITIVE_TEXT]Air Supremacy[ENDCOLOR]: Receive a free Airport in every City. +25% [ICON_PRODUCTION] Production when building Aircraft. Can build [COLOR_YELLOW]Zeroes[ENDCOLOR] and [COLOR_YELLOW]MiG-29K[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_MILITARISM_TEXT"> 
@@ -130973,7 +131013,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Their Finest Hour[ENDCOLOR]: All cities get +2 Air Unit Slots. Each Air Unit stationed in a city increases the City's [ICON_STRENGTH] Defense by 3. Can build [COLOR_YELLOW]B17 Bombers[ENDCOLOR].
+				[COLOR_POSITIVE_TEXT]Their Finest Hour[ENDCOLOR]: All cities get +2 Air Unit Slots. Each Air Unit stationed in a city increases the City's [ICON_STRENGTH] Defense by 3. Can build [COLOR_YELLOW]B17 Bombers[ENDCOLOR] and [COLOR_YELLOW]B-52 Bomber[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_TEXT"> 
@@ -134705,6 +134745,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				+33% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIRBASE_OPS"> 
+			<Text>
+				Airbase Garrison
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIRBASE_OPS_HELP"> 
+			<Text>
+				vs. Fighter units: [ICON_STRENGTH] Combat Bonus [COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][NEWLINE]Damage taken from Interception [COLOR_POSITIVE_TEXT]-5%[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_AMBUSH_1"> 
 			<Text>
 				Air Ambush I
@@ -135478,6 +135528,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CARGO_I_HELP"> 
 			<Text>
 				+1 Cargo Slot.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER_OPS"> 
+			<Text>
+				Carrier Operations
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER_OPS_HELP"> 
+			<Text>
+				vs. Naval and Land units: [ICON_STRENGTH] Combat Bonus [COLOR_POSITIVE_TEXT]+5%[ENDCOLOR][NEWLINE]vs. Cities: [ICON_STRENGTH] Combat [COLOR_POSITIVE_TEXT]+5%[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CHARGE"> 
@@ -137223,6 +137283,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_JAGUAR_HELP"> 
 			<Text>
 				+33% [ICON_STRENGTH] Combat Strength when defending in or attacking a Unit in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_DOM"> 
+			<Text>
+				Shooting Star
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_DOM_HELP"> 
+			<Text>
+				[ICON_RANGE_STRENGTH] Ranged Combat [COLOR_POSITIVE_TEXT]+10%[ENDCOLOR][NEWLINE]vs. Fighter units: [ICON_STRENGTH] Combat Bonus [COLOR_POSITIVE_TEXT]+10%[ENDCOLOR][NEWLINE]Damage taken from Interception [COLOR_POSITIVE_TEXT]-10%[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_JUGGERNAUT"> 
@@ -146754,6 +146824,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				{1_SpecialistName:textkey}s: +{3_Num} {4_IconString} {2_YieldType:textkey}
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_SPECIALUNIT_AIRBASE"> 
+			<Text>
+				Airbase-based
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_SPECIALUNIT_FIGHTER"> 
 			<Text>
 				Fighters
@@ -155583,6 +155658,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Active Overlay:
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_STRBOMB_TEXT"> 
+			<Text>
+				Strategic bombers are medium- to long-range penetration aircraft designed to drop large quantities of air-to-ground weapons on distant targets to degrade the enemy’s capacity to wage war. Unlike tactical bombers, interdiction aircraft, fighter-bombers, and attack aircraft—which strike enemy combatants and equipment during air interdiction—strategic bombers fly deep into enemy territory to hit strategic targets (infrastructure, logistics, military installations, factories, and cities). They can also be used tactically.[NEWLINE]The first strategic efforts appeared in WWI, when Russia employed the Sikorsky Ilya Muromets—the first heavy four-engine aircraft—and Germany used Zeppelins and long-range multi-engine Gotha bombers.[NEWLINE][NEWLINE]By the late 1930s, many believed strategic “terror” bombing of cities would quickly inflict enormous losses, breaking a war within days or weeks. In practice, those theories outpaced what most air forces could actually field.[NEWLINE]The RAF only began developing four-engine long-range bombers in the late 1930s. The US Army Air Corps (becoming the USAAF in 1941) struggled under tight budgets but secured the B-17, which proved essential; the equally important B-24 first flew in 1939. These aircraft formed the bulk of the US bomber force enabling daylight raids over Nazi Germany from 1943–45.[NEWLINE][NEWLINE]During the Cold War, the US/UK on one side and the USSR on the other maintained alert strategic bomber fleets as part of MAD deterrence. Most strategic bombers were designed to carry nuclear weapons; for a time, some B-52 squadrons remained aloft 24/7 orbiting near fail-safe points close to Soviet airspace.[NEWLINE][NEWLINE]Nomenclature by “light/medium/heavy” has varied with technology and doctrine. The B-29 set a late-WWII benchmark for size/range/payload; with aerial refueling (which also extended the reach of medium bombers, fighter-bombers, and attack jets), intercontinental-range strategic bombing became feasible. In the 1950s, SAC revived the term “light bomber” to differentiate the Boeing B-47 Stratojet within wings otherwise hosting the larger B-52 Stratofortress; older B-29/B-50s were even redesignated “light” at times. Semantics aside, B-47s and B-52s dwarfed WWII mediums in size and performance. Other aircraft—US FB-111, Douglas A-3 Skywarrior, France’s Dassault Mirage IV—carried under 20,000 lb (9,100 kg) of ordnance and, relative to strategic bombers, fit “medium” categories. France later replaced the Mirage IV with the much smaller single-engine Mirage 2000N for nuclear strike—another example of evolving technology and doctrine.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_STR_TURNS"> 
 			<Text>
 				{1_Num} {1_Num: plural 1?Turn; other?Turns;}
@@ -162901,6 +162981,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				To maximize your bonus, make sure the Great Work Slots are all filled with Art from the same Era and Civilization.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_ULTJETBOMB_TEXT"> 
+			<Text>
+				Since the end of the Cold War, long-range bombing has shifted from low-altitude penetration to stand-off strike. With the spread of integrated air defenses (IADS) and precision-guided munitions, jet bombers have evolved into platforms mass-employing long-range weapons—cruise missiles, glide bombs, and hypersonic systems—often under cover of stealth and electronic warfare. The USAF is life-extending the B-52 with re-engining and avionics modernization as a long-range cruise-missile “truck,” while the B-1B focuses on conventional strike. Russia has upgraded the Tu-160M and Tu-22M3M for range and avionics.[NEWLINE][NEWLINE]China has likewise modernized its H-6K/H-6N series at scale, carrying long-range land-attack and anti-ship weapons to enhance A2/AD reach—engaging littoral and maritime targets from beyond [ICON_RANGE_STRENGTH] enemy air-defense range. With a next-generation stealth strategic bomber announced (details undisclosed), future roles likely center on low-observable design, long-range armament, and network-centric “sense-decide-strike” kill chains.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNAVAILABLE_LEADER"> 
 			<Text>
 				Unavailable Leader
@@ -163314,6 +163399,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Unit Combat
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ADVJET"> 
+			<Text>
+				Advanced Stealth Jet (Carrier)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ADVJET_STRATEGY"> 
+			<Text>
+				Advanced stealth jets are extremely capable air units. They can be based in your cities or on carriers, rebase between them, and perform “missions” within range. Use them to attack enemy aircraft and ground units, scout, and defend against air threats. They are especially effective versus helicopters and have “Aerial Recon,” revealing everything within 6 tiles of their base at turn start. See the Air Unit rules for details.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AIRSHIP"> 
 			<Text>
 				Airship
@@ -163362,7 +163457,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AMERICAN_B17_STRATEGY"> 
 			<Text>
-				The B17 Bomber is unique to the Freedom Ideology. Requires the Their Finest Hour Tenet to be unlocked. It is similar to the bomber, but it is more difficult for enemy anti-aircraft and fighters to target. The B17 also receives a bonus when attacking enemy cities. Unlike the bomber, its range is 10. See the rules on Aircraft for more details.
+				The B-17 is the unique unit for the Freedom ideology. You must adopt the [COLOR_MAGENTA]Their Finest Hour[ENDCOLOR] tenet. Similar to a standard heavy bomber, but harder for enemy AA and fighters to target. Also gains additional bonuses when attacking cities. Unlike the base bomber, its range is 13 (+1). See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AMERICAN_MINUTEMAN"> 
@@ -163605,6 +163700,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Otomi are an ancient people from the Altiplano region, predate the Mexica's arrival there by thousands of years. The name Otomi is Nahuatl, meaning "One who walks with Arrows" in recognition of their strength and bravery in combat. Within the Triple-Alliance, Otomi became a name for a military society, perhaps because of the fearsome reputation of the Otomi people or because they were originally comprised of Otomi allies and mercenaries. Whatever the case, the use of Otomi both as the name of an ethnicity within the Aztec Empire and as a military faction makes it hard to discern which is which in the historical record.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_B52"> 
+			<Text>
+				B-52 (Airbase)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_B52_STRATEGY"> 
+			<Text>
+				The B-52 can be produced only under the Freedom ideology with Their Finest Hour unlocked. Similar to a bomber but harder for enemy AA and fighters to target. It also gains a bonus against cities. Unlike a Strategic Bomber, its range is 14 (+1). See the Air Unit rules for details.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BABYLON_BOWMAN"> 
 			<Text>
 				Bowman
@@ -163693,12 +163798,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BOMBER"> 
 			<Text>
-				Heavy Bomber
+				Heavy Bomber (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BOMBER_STRATEGY"> 
 			<Text>
-				The Heavy Bomber is an air unit. It is effective against ground targets, less so against naval targets, and it is quite vulnerable to enemy aircraft. The Heavy Bomber can be based on a player-owned city or aboard a carrier. It can move from base to base and perform missions within its range. Use Bombers to attack enemy units and cities. When possible, send in fighters first to "use up" enemy anti-aircraft defenses for that turn. See the rules on Aircraft for more information.
+				The heavy bomber is an air unit. It is effective versus land targets, ineffective at sea, and fairly vulnerable to enemy aircraft. Heavy bombers are stationed in your cities and cannot be based on carriers. They can rebase between cities and perform missions within range. Use them to attack enemy units and cities. If possible, send fighters first to “consume” enemy AA fire. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BRANDENBURG_CLASS"> 
@@ -164261,6 +164366,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				Dreadnoughts are capable of firing from a distance, but requires Iron to be built.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYJET"> 
+			<Text>
+				P-80 Shooting Star (Airbase)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYJET_STRATEGY"> 
+			<Text>
+				A civilization that builds the Pentagon world wonder receives two free P-80 Shooting Stars. They cannot be obtained otherwise. Though they begin with no XP, they come with strong baseline promotions. P-80s are stationed only in your cities and cannot embark on carriers. They rebase city-to-city and perform “missions” within range. Use them to attack enemy aircraft and ground units, scout, and defend against air strikes. See the Air Unit rules for details.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYMONOPLAN"> 
+			<Text>
+				Monoplane (Carrier)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYMONOPLAN_STRATEGY"> 
+			<Text>
+				Monoplanes can be stationed in any city you own or based on an aircraft carrier. They can rebase from city to city (or carrier) and perform “missions” within range. Use fighters to engage enemy aircraft and ground units, scout enemy positions, and defend against enemy air attacks. See the Air Unit rules for details.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EARLY_DESTROYER"> 
 			<Text>
 				Destroyer
@@ -164644,12 +164769,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FIGHTER"> 
 			<Text>
-				Fighter
+				Piston Fighter (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FIGHTER_STRATEGY"> 
 			<Text>
-				The Fighter is a moderately-powerful air unit. It can be based in any city you own or aboard an aircraft carrier. It can move from city to city (or carrier) and can perform "missions" within its range. Use fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Fighters are especially effective against enemy helicopters. See the rules on Aircraft for more information.
+				The piston fighter is a moderately powerful air unit. It is stationed in cities you own and cannot be based on carriers. It can rebase between cities and perform “operations” within range. Use fighters to attack enemy aircraft and ground forces, scout enemy positions, and defend against enemy air raids. Fighters are especially effective against enemy helicopters. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FLYER"> 
@@ -165191,7 +165316,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2"> 
 			<Text>
-				Stealth UCAV Squadron
+				Stealth UCAV Squadron (Multirole)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_HELP"> 
@@ -165921,7 +166046,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER"> 
 			<Text>
-				Suborbital Bomber
+				Sub-orbital Bomber (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_HELP"> 
@@ -166414,6 +166539,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Helicopter Gunship is a deadly air unit that in most respects acts like any ground unit, except that it cannot capture cities. Its movement of 6 makes it extremely quick, and it can move over all terrain types including mountains as if they were clear, but it must embark to cross water. Gunships receive a hefty combat bonus when fighting tanks.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ADVJET"> 
+			<Text>
+				A very powerful air unit designed to intercept incoming enemy aircraft and seize air superiority. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Can be based on aircraft carriers.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_AMBASSADOR"> 
 			<Text>
 				Receives [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_AMBASSADOR}[ENDCOLOR] Promotion for free, which grants 70 [ICON_INFLUENCE] Influence from Diplomatic Missions.[ICON_MOVES] Move this unit to a City-State you are not at war with and conduct a Diplomatic Mission to receive [ICON_INFLUENCE] Influence. Production cost scales with Era.
@@ -166467,6 +166597,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_B17"> 
 			<Text>
 				Air Unit that rains death from above onto Enemy Units and Cities. This Unit has a chance of evading interception, and does additional damage to Cities compared to the Bomber. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Freedom[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Their Finest Hour[ENDCOLOR] Tenet to be unlocked.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_B52"> 
+			<Text>
+				A long-range air unit that rains death on enemy units and cities. Has a chance to evade interception and deals extra damage to cities compared to Strategic Bombers. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Only civilizations following [ICON_IDEOLOGY_FREEDOM][COLOR_MAGENTA]Freedom[ENDCOLOR] may produce it, and the [COLOR_MAGENTA]Their Finest Hour[ENDCOLOR] tenet must be adopted.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BALLISTA"> 
@@ -166632,6 +166767,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_DIPLOMAT"> 
 			<Text>
 				Receives [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_DIPLOMAT}[ENDCOLOR] Promotion for free, which grants 60 [ICON_INFLUENCE] Influence from Diplomatic Missions.[ICON_MOVES] Move this unit to a City-State you are not at war with and conduct a Diplomatic Mission to receive [ICON_INFLUENCE] Influence. Production cost scales with Era.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_EARLYJET"> 
+			<Text>
+				An air unit designed to intercept incoming enemy aircraft and seize air superiority. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Comes with 2 units when you complete the world wonder: The Pentagon.[ENDCOLOR][COLOR_NEGATIVE_TEXT] Cannot be produced by other means.[ENDCOLOR] [COLOR_POSITIVE_TEXT]Also starts with 4 bonus promotions:[ENDCOLOR][NEWLINE][COLOR_YELLOW][NEWLINE][ICON_BULLET] Air Supremacy II[NEWLINE][ICON_BULLET] Air Repair[NEWLINE][ICON_BULLET] Range[NEWLINE][ICON_BULLET] Shooting Star[ENDCOLOR][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_EARLYMONOPLAN"> 
+			<Text>
+				An air unit designed to intercept incoming enemy aircraft and seize air superiority. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_EGYPTIAN_WAR_CHARIOT"> 
@@ -166804,9 +166949,14 @@ The ship has weather'd every rack; the prize we sought is won."
 				Unique Ottoman {TXT_KEY_UNIT_MUSKETMAN} that gains a [ICON_STRENGTH] Combat Strength bonus when attacking. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_MARCH}[ENDCOLOR].
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_JET27"> 
+			<Text>
+				An air unit designed to intercept incoming enemy aircraft and seize air superiority. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_JET_FIGHTER"> 
 			<Text>
-				Air Unit designed to wrest control of the skies and intercept incoming Enemy Aircraft. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]
+				A stealth air-superiority fighter designed to dominate the skies and intercept incoming enemy aircraft. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_KNIGHT"> 
@@ -166822,6 +166972,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_LANDSKNECHT"> 
 			<Text>
 				Unique German {TXT_KEY_UNIT_EE_2HANDER} that specializes as mercenaries, having no experience penalty or cooldown while being able to move immediately when purchased. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR] and [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_LIGHTBOMBER"> 
+			<Text>
+				An air unit that can bomb enemy units and cities. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Can be based on aircraft carriers.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LONGBOWMAN"> 
@@ -166862,6 +167017,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_MEHAL_SEFARI"> 
 			<Text>
 				Unique Ethiopian {TXT_KEY_UNIT_RIFLEMAN} that specializes in fighting in Friendly Territory especially when near the [ICON_CAPITAL] Capital. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_COVER_1}[ENDCOLOR].
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_MIG29"> 
+			<Text>
+				An air unit designed to intercept incoming enemy aircraft and seize air superiority. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR][NEWLINE][NEWLINE]Like the Zero, gains combat bonuses versus enemy fighters and does not require Oil. [NEWLINE][NEWLINE]Only civilizations following the [ICON_IDEOLOGY_AUTOCRACY][COLOR_MAGENTA]Autocracy[ENDCOLOR] ideology may produce it, and the [COLOR_MAGENTA]Air Supremacy[ENDCOLOR] tenet must be adopted.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MINUTEMAN"> 
@@ -167054,6 +167214,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				A long-range Air Unit that rains death from above onto Enemy Units and Cities without detection. [COLOR_POSITIVE_TEXT]Does not use Military Supply.[ENDCOLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_STRBOMB"> 
+			<Text>
+				A long-range air unit capable of delivering powerful strikes on enemy units and cities. [COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_SUBMARINE"> 
 			<Text>
 				Invisible to all Units except Destroyers, Missile Cruisers and other Submarines, or until it attacks or is adjacent to another unit. Can cause major damage to other ships if they get into range without being seen.
@@ -167092,6 +167257,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_TRIREME"> 
 			<Text>
 				Classical Era Naval Unit used to wrest control of the seas.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ULTJETBOMB"> 
+			<Text>
+				A long-range air unit that delivers heavier strikes on enemy units and cities.[NEWLINE][COLOR_POSITIVE_TEXT]Does not consume Military Supply.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_VANDAL_AXEMAN"> 
@@ -167575,12 +167745,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPANESE_ZERO"> 
 			<Text>
-				Zero
+				A6M Zero (Multirole)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY"> 
 			<Text>
-				The Zero is unique to the Autocracy Ideology. Requires the Air Supremacy Tenet to be unlocked. The Zero is a moderately-powerful air unit. It is like the standard fighter, except that it gets a significant combat bonus when battling other fighters and [COLOR_POSITIVE_TEXT]does not require the Oil resource[ENDCOLOR]. It can be based in any City you own or aboard an aircraft carrier. It can move from one City to another (or an aircraft carrier) and can perform "missions" within its range of 8 tiles. See the rules on Aircraft for more information.
+				The Zero is the unique unit of the Autocracy ideology. You must adopt the [COLOR_MAGENTA]Air Supremacy[ENDCOLOR] tenet. It is a mid-power air unit similar to standard fighters, but receives large combat bonuses versus other fighters and [COLOR_POSITIVE_TEXT]does not require Oil[ENDCOLOR]. It can be based in any city you own and also operate from carriers. It can rebase between city and carrier and perform missions within 8 tiles. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPAN_YAMATO"> 
@@ -167604,9 +167774,19 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Yamato-class battleships were the crown jewel of the Imperial Japanese Navy during World War II. Displacing 73,000 tonnes at full load, they were the heaviest and most powerfully armed battleships ever constructed. Each Yamato carried nine 18.1 inch guns, the largest naval artillery ever fitted to a warship, each capable of firing 3,000 lb. shells over 26 miles. Two battleships of the class, Yamato and Musashi, were completed while a third, Shinano, was converted to an aircraft carrier during construction. All were sunk by American forces during WWII.[NEWLINE][NEWLINE]Due to their size, speed, and power, The Yamato-class visibly embodied Japan's determination and readiness to defend its interests against the western powers, especially the United States. One of the reasons that the warship may have such significance in Japanese culture is that the word "Yamato" was often used as a poetic name for Japan itself. Thus, the construction and destruction of the Yamato battleships became symbolic for the rise and fall of Japanese imperial aspirations.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_JET27"> 
+			<Text>
+				Jet Fighter (Carrier)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_JET27_STRATEGY"> 
+			<Text>
+				Jet Fighters are powerful air units. They can be based in your cities or on aircraft carriers. They rebase between bases and perform “missions” within range. Use them to attack enemy aircraft and ground units, scout enemy locations, and defend against air attacks. Jets are especially effective against enemy helicopters. They also have “Aerial Recon,” revealing everything within 6 tiles of their base at the start of your turn. See the Air Unit rules for details.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JET_FIGHTER"> 
 			<Text>
-				Jet Fighter
+				Stealth Fighter (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JET_FIGHTER_STRATEGY"> 
@@ -167714,6 +167894,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Attacks with lethal barrages of arrows, making it the first naval unit with a ranged attack. It cannot end its turn in Ocean Tiles.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LIGHTBOMBER"> 
+			<Text>
+				Light Bomber (Carrier)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LIGHTBOMBER_STRATEGY"> 
+			<Text>
+				Light bombers are effective versus cities and ground targets, less so versus naval targets, and very vulnerable to enemy aircraft. They can be based in your cities or on carriers, rebase between bases, and perform missions within range. Use them to attack enemy units and cities. If possible, send monoplanes or fighters first to “consume” enemy interception for the turn. See the Air Unit rules for details.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_LONGSWORDSMAN"> 
 			<Text>
 				Longswordsman
@@ -167814,6 +168004,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_MEHAL_SEFARI_STRATEGY"> 
 			<Text>
 				The {TXT_KEY_UNIT_MEHAL_SEFARI} is the Ethiopian unique unit, replacing the {TXT_KEY_UNIT_RIFLEMAN}. It possesses significant combat bonuses when fighting in friendly land, especially when near your [ICON_CAPITAL] Capital. It is also slightly cheaper to train.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_MIG29"> 
+			<Text>
+				MiG-29K (Multirole)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_MIG29_STRATEGY"> 
+			<Text>
+				The MiG-29 is producible only under the Autocracy ideology with the Air Supremacy tenet unlocked. It remains a potent air unit that never truly goes obsolete. Aside from notable combat bonuses versus other fighters and not requiring [COLOR_POSITIVE_TEXT]Oil[ENDCOLOR], it functions like a standard jet. It can be based in your cities or on carriers, can rebase between city and carrier, and perform missions within 9 tiles. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_MISSILE_CRUISER"> 
@@ -168728,12 +168928,22 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_STEALTH_BOMBER"> 
 			<Text>
-				Stealth Bomber
+				Stealth Bomber (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_STEALTH_BOMBER_STRATEGY"> 
 			<Text>
 				The Stealth Bomber is an upgraded bomber, possessing increased range, a greater Ranged Combat Strength, and an increased ability to avoid enemy anti-aircraft and fighters. The Stealth Bomber has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_STRBOMB"> 
+			<Text>
+				Strategic Bomber (Airbase)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_STRBOMB_STRATEGY"> 
+			<Text>
+				Strategic bombers are effective against cities and land targets, less so against naval targets, and very vulnerable to enemy aircraft. They are based in your cities and cannot embark on carriers. They rebase between cities and perform missions within range. Use them to attack enemy units and cities. If possible, send fighters or jets first to “consume” enemy interception for the turn. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SUBMARINE"> 
@@ -168853,7 +169063,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TRIPLANE"> 
 			<Text>
-				Triplane
+				Triplane (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TRIPLANE_STRATEGY"> 
@@ -168869,6 +169079,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_TRIREME_STRATEGY"> 
 			<Text>
 				The Trireme is the upgrade to the Galley. It is a melee attack unit, engaging naval units and coastal cities. The Trireme is good at clearing barbarian ships from your waters and for limited exploration (it cannot end its turn on Deep Ocean hexes outside of city borders unless you are Polynesia).
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ULTJETBOMB"> 
+			<Text>
+				Jet Bomber (Airbase)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ULTJETBOMB_STRATEGY"> 
+			<Text>
+				Jet bombers are effective against cities and ground targets, less so at sea, and very vulnerable to enemy aircraft. They are based in your cities and cannot embark on carriers. They rebase between bases and perform missions within range. Use them to attack enemy units and cities. If possible, send jet or stealth fighters first to “consume” enemy interception for the turn. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_VANDAL_AXEMAN"> 
@@ -168996,12 +169216,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_BOMBER"> 
 			<Text>
-				Bomber
+				Biplane Bomber (Airbase)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_BOMBER_STRATEGY"> 
 			<Text>
-				The Bomber is an early air unit. It is effective against ground targets, less so against naval targets, and it is quite vulnerable to enemy aircraft. The Bomber can be based on a player-owned city or aboard a carrier. It can move from base to base and perform missions within its range. Use it to attack enemy units and cities. When possible, send in triplanes or fighters first to "use up" enemy anti-aircraft defenses for that turn. See the rules on Aircraft for more information.
+				The biplane bomber is an early air unit. It is effective versus land targets, less so at sea, and very vulnerable to enemy aircraft. It is stationed in your cities and cannot be based on carriers. It rebases between cities and performs missions within range. Use it to attack enemy units and cities. If possible, in the same turn first “consume” enemy interception with triplanes or monoplanes. See the Air Unit rules for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_TANK"> 
@@ -172467,7 +172687,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_HELP"> 
 			<Text>
-				Requires completion of [COLOR_MAGENTA]Imperialism[ENDCOLOR] Branch. Increases [ICON_SILVER_FIST] Military Unit Supply Cap by 1, and the Air Unit Cap by 2 in every City. Receive 2 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Jet Fighters in the City when completed. +50% [ICON_PRODUCTION] Production of Air Units in the City, and Air Units created in the City gain +20 XP.
+				Spawns 2 free [COLOR_YELLOW]P-80 Shooting Stars[ENDCOLOR]. +[COLOR_POSITIVE_TEXT]50%[ENDCOLOR] [ICON_PRODUCTION] when producing air units. Air units trained in this city gain [COLOR_POSITIVE_TEXT]20[ENDCOLOR] XP. [ICON_WAR] Global Military Supply +[COLOR_POSITIVE_TEXT]1[ENDCOLOR]; city Air Unit capacity +[COLOR_POSITIVE_TEXT]2[ENDCOLOR]. [NEWLINE][NEWLINE]Requires completion of the [COLOR_MAGENTA]Imperialism[ENDCOLOR] policy tree. This is a [COLOR_POSITIVE_TEXT]World Wonder[ENDCOLOR] (one globally).
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_QUOTE"> 
@@ -183510,6 +183730,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				통제 구역(Z.O.C)
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_ADVJET_TEXT"> 
+			<Text>
+				스텔스 전투기의 구상은 항공 초창기부터 이어졌지만, 냉전 말 등장한 F-22 랩터가 그 성능을 현실로 증명했습니다. 다만 랩터는 공군 제공전 전용으로 최적화되어 함재 운용 능력이 없었고, 높은 획득·유지 비용과 수출 제한까지 겹치며 소수만 배치되는 한계를 드러냈습니다. [NEWLINE][NEWLINE]냉전 종식 이후 미국은 F-16·F/A-18·AV-8B 등 노후 기종을 하나로 대체하고, 공군·해군·해병대가 공통으로 쓰며 비용을 낮출 “다목적 스텔스 전투기”를 필요로 했습니다. 특히 해병대는 단거리 이함/수직착륙(STOVL), 해군은 항모 운용(CATOBAR), 공군은 장거리 타격·센서 융합을 요구했습니다. 이 서로 다른 요구를 단일 플랫폼 계열로 풀기 위해 1990년대 “공동타격전투기(JSF)” 사업이 출범했고, 2001년 X-35가 채택되면서 F-35 라이트닝 II가 탄생했습니다. [NEWLINE][NEWLINE]F-35는 저피탐 형상과 내부 무장창을 바탕으로, AESA 레이더·EO/DAS·IRST·전자전 장비와 링크 기반 데이터 융합을 통합해 “먼저 보고–먼저 쏘고–먼저 이탈”을 구현합니다. 임무에 따라 내부 무장 중심의 저피탐 구성과 외부 하드포인트를 활용한 일명 “비스트 모드”를 오가며, 유지보수와 소티 생성률을 고려한 체계적 정비/소프트웨어 업그레이드 구조를 채택했습니다. [NEWLINE][NEWLINE]결과적으로 F-35는 F-22의 절대 제공 능력을 대체하기보다, 육·해·공 전력을 하나로 묶는 다목적 스텔스 플랫폼으로 설계되었습니다. 공군형(A), STOVL형(B), 함재형(C)의 세 파생형은 각 군의 운용 환경—공항, 강습함, 항공모함—에 맞춘 파생 능력을 제공하며, “랩터가 하늘을 열고(F-22), 라이트닝이 그 문을 통해 들어가 타격한다(F-35)”는 역할 분담을 완성했습니다
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_AD_CHOOSE_SPEED"> 
 			<Text>
 				게임 속도 선택
@@ -185008,6 +185233,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_B3030D39C0D84BC791B17AD1CAF585AB_NAME"> 
 			<Text>
 				덴마크
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_B52_TEXT"> 
+			<Text>
+				Stratofortress라고도 불리는 B-52는 1948년 보잉사에서 설계한 미국의 장거리 중폭격기로, 1952년에 처음 비행했으며 1955년에 군에 처음 인도되었습니다. 소련에 도착한 후 여러 임무에 적응할 수 있음이 입증되었으며 수십 대의 B-52가 21세기 초에 운용되었습니다. 날개 아래에 8개의 제트 엔진이 장착된 이 비행기의 최대 속도는 55,000피트에서 마하 0.9, 지상 수백 피트에서 마하 0.5입니다. B-52의 거대한 기체는 "Big Ugly Fat Fellow"(BUFF)라는 별명을 얻었지만 비행기에 고도로 정교한 항법, 무기 제어 및 전자 대응 시스템을 장착할 수 있게 했습니다. 수년 동안 폭격기는 X-15 및 X-43과 같은 공중 발사 실험용 항공기의 "모함" 역할을 자주 수행했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_B685D5DE7CCA4E7581B42F60754E6330_DESCRIPTION"> 
@@ -189933,7 +190163,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ECOSANCTUARY_HELP"> 
 			<Text>
-				야영지, 브라질 소방목 벌목장, 제재소, 자연보호구역 및 친환경마을의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]생태친화시설[ENDCOLOR]의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 매턴 도시의 [ICON_PRODUCTION]생산의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]만큼의 [ICON_CULTURE]문화로 전환합니다. 도시의 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_CULTURE]무료, [ICON_RELIGION]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]약국[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수직형 농장[ENDCOLOR]이 없어야 건설할 수 있습니다.
+				모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]생태친화시설[ENDCOLOR]의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 야영지, 브라질 소방목 벌목장, 제재소, 자연보호구역 및 친환경마을의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.  매턴 도시의 [ICON_PRODUCTION]생산의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]만큼의 [ICON_CULTURE]문화로 전환합니다. 도시의 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_CULTURE]무료, [ICON_RELIGION]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]씩 감소합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]약국[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]수직형 농장[ENDCOLOR]이 없어야 건설할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ECOSANCTUARY_PEDIA"> 
@@ -191138,7 +191368,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_VERTICAL_FARM_HELP"> 
 			<Text>
-				농장, 재배지, 계단식 농장, 간척지 및 수경재배지구의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]수직형 농장[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 매턴 도시의 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]만큼의 [ICON_RESEARCH]과학을 제공합니다.[NEWLINE][NEWLINE][ICON_RESEARCH]문맹, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]약국[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]제노포자 배양 연구소[ENDCOLOR]가 없어야 건설할 수 있습니다.
+				모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]수직형 농장[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 농장, 재배지, 계단식 농장, 간척지 및 수경재배지구의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 매턴 도시의 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]만큼의 [ICON_RESEARCH]과학을 제공합니다.[NEWLINE][NEWLINE][ICON_RESEARCH]문맹, [ICON_URBANIZATION]도시화에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]약국[ENDCOLOR]이 있어야 하고 [COLOR_NEGATIVE_TEXT]제노포자 배양 연구소[ENDCOLOR]가 없어야 건설할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_VERTICAL_FARM_PEDIA"> 
@@ -231002,7 +231232,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_JETFIGHTER_TEXT"> 
 			<Text>
-				제트기의 역할은 제2차 세계대전 시절 프로펠러 전투기의 역할과 극히 유사하지만, 두 전투기는 출력, 장비, 무장, 컴퓨터 및 통신 장비에 있어서 하늘과 땅의 차이가 있습니다. 제2차 세계대전 시절 가장 빨랐던 비행기는 최고 시속 400마일로 날 수 있었지만, 현대의 제트기는 그 세 배에 달하는 속도로 날 수 있습니다. 제2차 세계대전 시절의 비행기는 한 두 정의 기관총을 장착하고, 때에 따라서 한 두 발의 폭탄을 실을 수 있었습니다. 반면에 현대의 전투기는 20mm 개틀링 기관포 한 문을 장착하고, 10발 정도의 공대공 미사일과 수십 발의 다양한 로켓을 실을 수 있습니다. 이 항공기는 그 이전 시대의 어느 무엇 보다도 훨씬 뛰어난 정밀 컴퓨터와 레이더, 통신 장비를 탑재하고 있습니다. 다른 항공기와 마찬가지로 제트기 역시 이동식 SAM 발사대에 취약하지만, 가장 큰 위협이 되는 것은 다름아닌 적의 전투기들입니다. 어느 편이든 제공권을 장악하는 쪽이 전투에서 거의 절대적인 우위를 점하게 됩니다.
+				F-22 랩터는 냉전 말 ATF(Advanced Tactical Fighter) 사업에서 등장한 스텔스 제공 전투기로, YF-22 시제기 경쟁을 거쳐 실전 배치되었다. 2000년대 중반 미 공군에 실전 배치된 이후, 랩터는 저피탐 형상·코팅과 내부 무장창, 강력한 추력편향(Thrust Vectoring) 기동성, AESA 레이더(APG-77)와 고도 통합 항전/데이터 융합을 결합해 “먼저 보고–먼저 쏘고–먼저 이탈”이라는 제공전투의 정석을 구현했다. 슈퍼크루즈(애프터버너 없이 초음속 순항) 능력은 에너지 우위를 바탕으로 한 공대공 전술을 가능케 했고, 전자전/수동센서 연동과 링크 기반 전장 가시화는 편대 단위의 표적 분담과 다축 접근을 현실화했다.[NEWLINE][NEWLINE]역사적으로 F-22는 공군 제독립 제공 플랫폼으로 최적화되었으며, 함재화(해군형) 논의는 여러 기술적·경제적 제약으로 무산되었다. 항공모함 운용을 위해선 어레스터 훅과 대형 랜딩기어, 착함 충격을 견딜 기골 보강, 염분 환경에 대응하는 방청·방수·환기 설계, 날개 접이 구조 등 광범위한 구조 변경이 필요하다. 또한 CATOBAR/ STOBAR 체계에 맞춘 저속 고받음각 비행 특성, 갑판 운용을 위한 시정·시계·동력 여유, 함상 정비 접근성까지 모두 재설계해야 한다. 이 과정은 기체 중량 증가와 항전·무장 탑재 여유 감소, 개발비 폭증으로 이어지기 쉬우며, 실제 전력 구조상 공군의 제공임무와 해군의 함재 사이클 운용 요구가 상이하다는 점도 복합적으로 작용했다. 결과적으로 F-22는 공항 기반의 제공 전투에서 독보적 성능을 발휘하도록 유지되었다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_MECHANIZEDINFANTRY_HEADING"> 
@@ -245331,6 +245561,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_EA67AED558594875BF3A360FE9E55D1B_NAME"> 
 			<Text>
 				정복 디럭스
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EARLYJET_TEXT"> 
+			<Text>
+				P-80 슈팅 스타는 미국 육군 공군(USAAF)이 운용한 최초의 제트 전투기였습니다. 1943년 록히드에서 설계 및 제작되어 설계 프로세스 시작 후 불과 143일 만에 인도된 생산 모델은 비행 중이었고 두 개의 사전 생산 모델은 제2차 세계 대전이 끝나기 직전 이탈리아에서 매우 제한적인 서비스를 받았습니다. 직선 날개로 설계된 이 유형은 F-80으로 미국 공군(USAF)과 함께 한국에서 광범위한 전투를 보았습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EARLYMONOPLAN_TEXT"> 
+			<Text>
+				전쟁(1919-1938) 사이에 항공 분야에서 많은 발전이 있었습니다. 비행기 디자인은 시속 80마일의 복엽기에서 시속 200마일 이상으로 하늘을 날 수 있는 경주용 비행기로 바뀌면서 크게 개선되었습니다. 1920년대에는 비행기의 발전으로 더 먼 거리를 비행하고 더 무거운 짐을 실을 수 있게 되면서 훨씬 더 신뢰할 수 있게 되었습니다. 대부분의 디자인은 조종사 바로 앞에 두 개의 동기화 된 기관총을 유지했지만 결국 전투기 무장은 날개 내부, 프로펠러 아크 외부에 장착되기 시작했습니다. 제1차 세계 대전 중에 인기를 끌었던 로터리 엔진은 회전력으로 인해 더 많은 연료와 공기가 실린더로 전달되지 않아 마력이 제한되는 지점에 도달하면서 빠르게 사라졌습니다. 그들은 주로 고정형 방사형 엔진으로 대체되었지만 주요 발전으로 인라인 엔진이 생겨 몇 가지 뛰어난 엔진으로 입지를 굳혔습니다.[NEWLINE]제한된 국방 예산을 감안할 때 공군은 항공기 구매에 보수적인 경향이 있었고 복엽기는 조종사들에게 여전히 인기가 있었습니다. 민첩성 때문에 경쟁이 멈춘 후에도 오랫동안 서비스를 유지했습니다. 글로스터 글래디에이터, 피아트 CR.42, 폴리카르포프 I-15와 같은 디자인은 1930년대 후반에도 흔했으며, 많은 것이 1942년 후반까지 여전히 사용되었습니다.[NEWLINE]이 시기에 등장한 가장 획기적인 전투기 중 하나입니다. 바르샤바에 본사를 둔 항공기 제조업체 PZL을 위해 항공 엔지니어 Zygmunt Pulawski가 개발한 PZL P.11이었습니다. 1934년 첫 비행. 순금속 구조, 금속 덮개, 높이 장착된 갈매기 날개를 갖춘 이 유형은 잠시 동안 세계에서 가장 진보된 전투기로 널리 간주되는 특징을 가졌습니다.[NEWLINE]이 최초의 단엽기 전투기는 총 325대가 제작되어 상당한 수출 성공을 거두었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_EARTHS_BOUNTY_SHORT"> 
@@ -273256,6 +273496,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR:255:235:0:255]{1_TotalGold: number "##"}[/COLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_JET27_TEXT"> 
+			<Text>
+				제트기(함재기)는 냉전 말기 미 해군이 “하나의 기체로 함대 방공과 공대지 타격을 모두 소화하라”는 다목적 요구에서 출발했습니다. YF-17을 해군형으로 개량한 F/A-18은 A-7 공격기와 일부 F-14 역할을 대체하며, “F(제공)/A(공격)” 복합 임무를 함상에서 반복적으로 수행하도록 설계되었습니다. 이후 동체·엔진·항전 장비를 대폭 키운 슈퍼 호넷 파생형으로 진화해 항모 항공단의 주력으로 자리 잡았습니다.[NEWLINE][NEWLINE]역사적으로 함재 전투기의 가장 큰 장점은 “움직이는 공군 기지”인 항공모함에서 국가 힘을 투사하는 능력이지만, 그만큼 공학적·운용적 제약도 혹독했습니다. 착함은 어레스터 후크를 걸고 수백 m 이내로 정지해야 하며(어레스터 케이블 파손에 대비해 스로틀을 끝까지 유지하는 “볼드 캐럿” 절차가 표준), 이 과정에서 랜딩기어·기체 프레임에 누적 피로가 급격히 쌓입니다. 염분과 습기가 높은 해상 환경은 전자장비·배선·기골 부식 속도를 가속시키고, 이를 상쇄하기 위해 방청 코팅과 부식 방지 재질, 배수·환기 설계를 강화해야 합니다. 함정의 제한된 갑판·격납고 공간은 날개 접이 구조와 낮은 기체 높이를 요구하고, 무장·연료 탑재량과 유지보수 접근성 사이에서 끊임없는 절충이 발생합니다.[NEWLINE]운용 측면에서도 함대 방공, 스트라이크, 근접항공지원(CAS), 대함/대레이더(SEAD/DEAD) 임무를 “사이클” 단위로 연속 수행해야 하므로, 무장 재장전·연료 충전·결빙/부식 점검·배선 검수 등 중정비와 경정비가 촘촘히 맞물립니다. 함대가 전개 중이면 바람 방향과 속도, 갑판 정리(Clear Deck), 발함/착함 윈도우가 임무 시각을 좌우하고, “브링백 무게 제한(착함 시 잔여 연료·무장 무게 상한)”은 임무 계획에 직접적 제약을 겁니다. 항모에서 이착함 가능한 전투기는 지상기와 달리 **CATOBAR**(사출/어레스팅) 혹은 **STOBAR**(스키점프/어레스팅) 체계에 맞춘 추력·기체 강성·랜딩기어 내구도를 갖춰야 하며, 이는 곧 최대 이륙중량과 항속·무장 선택지를 좁힙니다. 그럼에도 불구하고 함재 다목적 전투기는 항모 항공단의 “유연한 칼”로서, 제공권 장악과 해상/연안 타격을 하나의 비행대에서 통합 수행하며, 원해 억제와 신속 대응에서 독보적 실효성을 보여 왔습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_JOINING_GAME_IN_PROGRESS"> 
 			<Text>
 				게임에 참가하는 중
@@ -294340,6 +294585,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				{2_CivName:textkey}의 집정관 [COLOR_POSITIVE_TEXT]{1_PlayerName:textkey}[ENDCOLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_LIGHTBOMBER_TEXT"> 
+			<Text>
+				제1차 세계대전 종전(1918)부터 제2차 세계대전 발발(1939)까지의 사이 기간, 폭격기는 느린 목재 복엽기에서 빠르고 유선형의 금속 단엽기로 급격히 진화했습니다. 전금속 구조, 가변 피치 프로펠러, 공기역학 개선은 “속도로 생존하는” 경폭격기 개념을 낳았습니다. 영국의 브리스톨 블레넘(Bristol Blenheim)과 페어리 배틀(Fairey Battle), 미국의 더글러스 A-20 해복/보스턴(Douglas A-20 Havoc/Boston), 일본의 키-51 등은 비교적 가벼운 폭장과 높은 순항 속도를 앞세워 전장 전면에 신속히 타격을 가하도록 설계되었습니다.[NEWLINE][NEWLINE]그러나 전쟁이 본격화되자, 경폭격기는 빈약한 방어화기와 얇은 장갑, 제한된 폭장 때문에 치명적인 한계를 드러냈습니다. 특히 1940년 프랑스 전역에서 저고도 주간 침투에 투입된 페어리 배틀은 독일 전투기와 대공포 앞에 큰 손실을 입었고, 영국 공군은 빠르게 전술을 수정해 중·고고도 폭격기 운용과 호위 전투기 체계를 강화하게 됩니다. 
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_LIST_LOBBIES_INTERNET"> 
 			<Text>
 				로비 : 인터넷
@@ -297734,6 +297984,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MIDEASTERN"> 
 			<Text>
 				중동 음악을 선택합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MIG29_TEXT"> 
+			<Text>
+				MiG-29K는 소련의 제공권 전투기 MiG-29를 바탕으로 한 함재 파생형이다. 1980년대 후반, 소련 해군 항공대가 신형 항모(킵급/쿠즈네초프급) 전력을 모색하면서 개발되었으나, 소련 붕괴로 대량 배치는 무산되었다. 이후 2000년대 들어 인도 해군의 항모 전력 재구축과 함께 프로그램이 부활하여, INS 비크라마디티야·비크란트 등에서 운용되며 러시아 해군도 제한적으로 채택했다. MiG-29K는 RD-33MK 엔진, 해상 환경 대응 항전장비, 대함·공대지 무장 통합, 접이식 날개와 강화된 착함장치, 부식 방지 처리 등 함상 운용을 위한 전면 개량이 이뤄진 다목적 함재 전투기다.[NEWLINE][NEWLINE]함재 운용은 설계·정비·전술 모든 면에서 난도가 높다. **STOBAR**(스키점프 이함·어레스팅 착함) 체계에선 사출기가 없으므로, 추력대중량비와 이함 속도를 맞추기 위해 연료·무장 탑재량에 제약이 걸리고, 이는 항속·무장 옵션에 직결된다. 착함은 짧은 갑판에서의 고하중 충격을 견딜 수 있도록 랜딩기어와 프레임이 크게 보강되며, 그 대가로 공허중량 증가와 유지보수 부담이 따라온다. 해상 염분 환경은 전자장비·배선·유압계통의 부식과 오작동 위험을 높이며, 격납고·갑판 공간 제약은 동시 정비 능력과 출격 회전율(소티 제너레이션)을 제한한다. 또한 항모 항공단의 “사이클 운용” 특성상 바람·갑판 상황에 맞춘 발함/착함 윈도우가 임무 계획의 제1 제약이 된다.[NEWLINE][NEWLINE]MiG-29K는 이런 한계를 보완하기 위해 대형 플랩/리드-엣지 장치, 개선된 비행제어법칙(FBW), 방위각·고각에서의 착함 안정성 향상, 해상 표적 탐지에 유리한 레이더 모드(예: 지상/해상 매핑·이동표적탐지)와 대함 미사일 운용 능력 등을 통합했다. 그럼에도 함상에서의 높은 피로 누적과 염분 부식, 예비품·정비 사이클의 촘촘한 관리가 전투가용률(Availability)을 좌우한다는 점은 변함없다. 결과적으로 MiG-29K는 항모 기반의 제공·대함·공대지 임무를 하나로 묶어 해군의 “원해 타격 팔”을 담당하지만, 그 성능은 함 자체의 발함 체계(STOBAR/CATOBAR), 함재 정비 인프라, 함대의 항법·조기경보·급유 네트워크와의 결합 수준에 의해 결정적으로 뒷받침된다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MILITARYAISTRATEGY_ALONE"> 
@@ -313976,7 +314231,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_MULTIPLAYER_QUICK_COMBAT_TT"> 
 			<Text>
-				멀티 플레이 게임에서 전투 애니매이션을 보지 않습니다.
+				멀티 플레이 게임에서 전투 애니메이션을 보지 않습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_MULTIPLAYER_QUICK_MOVEMENT"> 
@@ -313986,7 +314241,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_MULTIPLAYER_QUICK_MOVEMENT_TT"> 
 			<Text>
-				멀티 플레이 게임에서 이동 애니매이션을 보지 않습니다.
+				멀티 플레이 게임에서 이동 애니메이션을 보지 않습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_MUSIC_SLIDER"> 
@@ -314226,7 +314481,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT"> 
 			<Text>
-				멀티 플레이 게임에서 이동 애니매이션을 보지 않습니다.
+				싱글 플레이 게임에서 이동 애니메이션을 보지 않습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_OPSCREEN_TERRAIN_DETAIL_LEVEL"> 
@@ -315560,6 +315815,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_JAGUAR"> 
 			<Text>
 				숲/정글 지형 보너스 (33)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_JET_DOM"> 
+			<Text>
+				슈팅스타
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_MOHAWK"> 
@@ -319108,7 +319368,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_MILITARISM_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]제공권[ENDCOLOR]: 모든 도시에 [COLOR_YELLOW]공항[ENDCOLOR]을 무료로 제공합니다. 공중 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다. [COLOR_YELLOW]제로센[ENDCOLOR] 유닛을 생산할 수 있습니다.
+				[COLOR_POSITIVE_TEXT]제공권[ENDCOLOR]: 모든 도시에 [COLOR_YELLOW]공항[ENDCOLOR]을 무료로 제공합니다. 비행 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다. [COLOR_YELLOW]제로센[ENDCOLOR]과  [COLOR_YELLOW]MiG-29K[ENDCOLOR] 유닛을 생산할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_MILITARISM_TEXT"> 
@@ -319806,7 +320066,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]최고의 순간[ENDCOLOR]: 도시가 2개의 항공 슬롯을 얻고 배치된 공중 유닛 하나 당 도시의 [ICON_STRENGTH] 전투력이 +3 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR] 유닛을 생산할 수 있습니다.
+				[COLOR_POSITIVE_TEXT]최고의 순간[ENDCOLOR]: 도시가 2개의 항공 슬롯을 얻고 배치된 비행 유닛 하나 당 도시의 [ICON_STRENGTH] 전투력이 +3 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]유닛을 생산할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_THEIR_FINEST_HOUR_TEXT"> 
@@ -323622,6 +323882,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_POSITIVE_TEXT]헤싱 유닛[ENDCOLOR] 대항 시 [ICON_STRENGTH] 전투력 +33%.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIRBASE_OPS"> 
+			<Text>
+				공항 주둔
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIRBASE_OPS_HELP"> 
+			<Text>
+				전투기 유닛 대항 시 [ICON_STRENGTH]전투력보너스 [COLOR_POSITIVE_TEXT] +5%[ENDCOLOR][NEWLINE]요격에 의한 피해 [COLOR_POSITIVE_TEXT]-5%[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_AMBUSH_1"> 
 			<Text>
 				공중 매복 I
@@ -324471,6 +324741,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CARGO_I_HELP"> 
 			<Text>
 				화물 슬롯 +1
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER_OPS"> 
+			<Text>
+				함재기 운용
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER_OPS_HELP"> 
+			<Text>
+				해상 및 지상 유닛 공격 시 [ICON_STRENGTH]전투력보너스 [COLOR_POSITIVE_TEXT] +5%[ENDCOLOR][NEWLINE]도시 공격 시 [ICON_STRENGTH]전투력 [COLOR_POSITIVE_TEXT]+5%[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CHARGE"> 
@@ -326333,6 +326613,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_JAGUAR_HELP"> 
 			<Text>
 				숲 및 정글에서 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+33%[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_DOM"> 
+			<Text>
+				슈팅스타
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_DOM_HELP"> 
+			<Text>
+				[ICON_RANGE_STRENGTH] 원거리 전투력 [COLOR_POSITIVE_TEXT] +10%[ENDCOLOR][NEWLINE]전투기 유닛 대항 시 [ICON_STRENGTH]전투력보너스 [COLOR_POSITIVE_TEXT] +10%[ENDCOLOR][NEWLINE]요격에 의한 피해 [COLOR_POSITIVE_TEXT]-10%[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_JUGGERNAUT"> 
@@ -336634,6 +336924,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_SPECIALIST_YIELD_CHANGE"> 
 			<Text>
 				{1_SpecialistName:textkey}: +{3_Num} {4_IconString}{2_YieldType:textkey}
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SPECIALUNIT_AIRBASE"> 
+			<Text>
+				공항주둔기
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SPECIALUNIT_FIGHTER"> 
@@ -347553,6 +347848,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				강조 활성화 :
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_STRBOMB_TEXT"> 
+			<Text>
+				전략 폭격기는 적의 전쟁 수행 능력을 약화시킬 목적으로 멀리 떨어진 목표물에 다량의 공대지 무기를 투하하도록 설계된 중장거리 관통 폭격기입니다. 전술 폭격기, 관통기, 전폭기, 공격기는 적의 전투원과 군사 장비를 공격하기 위해 공중 차단 작전에 사용되는 것과 달리 적의 영토로 날아가 전략적 목표(예: 인프라, 물류, 군사 설치, 공장 및 도시). 전략 폭격 외에도 전략 폭격기는 전술 임무에 사용될 수 있습니다.[NEWLINE]최초의 전략 폭격 노력은 제1차 세계 대전 중에 러시아인이 Sikorsky Ilya Muromets 폭격기(최초의 무거운 4개 엔진 항공기)를 사용하여 이루어졌습니다. Zeppelins 또는 장거리 다중 엔진 Gotha 항공기를 사용하는 독일군에 의해.[NEWLINE][NEWLINE]1930년대 후반에는 모든 전쟁에서 도시에 대한 전략적 "테러" 폭격이 빠르게 막대한 손실을 초래할 것이라고 널리 믿었습니다. 며칠 또는 몇 주 안에 충돌이 발생합니다. 그러나 이론상으로는 대부분의 공군이 실제로 공중에 투입할 수 있는 것보다 훨씬 뛰어났습니다.[NEWLINE]영국 왕립 공군은 1930년대 후반에야 4발 엔진 장거리 폭격기를 개발하기 시작했습니다. 미 육군 항공대(1941년 중반 현재 육군 공군)는 1930년대 후반에 적은 예산으로 인해 심각하게 제한을 받았고 곧 필수가 될 B-17 폭격기를 간신히 구했습니다. 똑같이 중요한 B-24는 1939년에 처음 비행했습니다. 두 항공기 모두 1943~45년에 연합군이 나치 독일에 대한 주간 폭격을 가능하게 만든 미국 폭격기 부대의 대부분을 구성했습니다.[NEWLINE][NEWLINE]냉전 기간 동안 미국은 한편으로는 미국과 영국, 다른 한편으로는 소련은 상호확증파괴(MAD) 억지 전략의 일환으로 갑작스럽게 이륙할 수 있는 전략 폭격기를 유지했습니다. 두 초강대국의 대부분의 전략 폭격기는 핵무기를 운반하도록 설계되었습니다. 한동안 Boeing B-52 Stratofortress 폭격기의 일부 편대는 소련 국경 근처의 안전 장치 지점에서 약간 떨어진 궤도를 돌면서 24시간 공중에 유지되었습니다.[NEWLINE][NEWLINE]항공기 유형의 크기 분류에 대한 명명법 전략 폭격에 사용되는 무기는 특히 제2차 세계 대전 이후 순차적인 기술 발전과 공중전 전략 및 전술의 변화로 인해 다양합니다. 예를 들어 B-29는 크기, 범위 및 적재 능력으로 인해 제2차 세계 대전 말 중 폭격기 유형의 벤치마크 항공기였습니다. 냉전이 시작되면서 공중급유(다른 중장거리 폭격기, 전폭기, 공격기의 사거리도 크게 확장됨)와 같은 새로운 기술의 개발로 대륙간 사정거리 전략 폭격기가 되었습니다. 1950년대에 미국 전략 공군 사령부(U.S. Strategic Air Command)는 또한 보잉 B-47 스트라토제트를 포격 날개에 있는 다소 큰 동시대의 보잉 B-52 스트라토포트리스 "중 폭격기"와 구별하기 위해 구식 용어인 "경폭격기"를 다시 사용했습니다. 구형 B-29 및 B-50 중 폭격기도 이 기간 동안 "경형"으로 재지정되었습니다. 폭격기 명명법은 순전히 의미론적이고 관료적이었지만, B-47과 B-52 전략 폭격기는 제2차 세계 대전 시대의 중폭격기 또는 중형 폭격기보다 훨씬 더 크고 성능과 적재 능력이 훨씬 뛰어났습니다. 쌍발 제트기 US FB-111, Douglas A-3 Skywarrior, 프랑스의 Dassault Mirage IV와 같은 다른 항공기는 공칭 무장량이 20,000lb(9,100kg) 미만이었고 전략 폭격기에 비해 크기와 총 중량이 훨씬 작았습니다. 중형 폭격기로 분류될 수 있습니다. 핵 공격 역할에서 프랑스는 1980년대 후반부터 Mirage IV를 훨씬 더 작은 단일 엔진 Mirage 2000N 전폭기로 교체했으며, 이는 군사 항공 및 항공기 설계에서 첨단 기술과 변화하는 전술의 또 다른 예입니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_STR_TURNS"> 
 			<Text>
 				[COLOR_POSITIVE_TEXT]{1_Num} 턴[ENDCOLOR]
@@ -355027,6 +355327,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				보너스를 극대화 하려면 모든 걸작 슬롯을 [COLOR_POSITIVE_TEXT]같은 시대[ENDCOLOR]에 [COLOR_POSITIVE_TEXT]같은 문명[ENDCOLOR]이 만든 [COLOR_YELLOW]예술품[ENDCOLOR]으로 채우십시오.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_ULTJETBOMB_TEXT"> 
+			<Text>
+				냉전 종식 이후 장거리 폭격 개념은 저공 침투에서 원외(Stand-off) 타격중심으로 재편되었습니다. 광역 통합방공망(IADS)과 정밀유도무기의 확산으로, 제트폭격기는 스텔스·전자전 지원, 크루즈 미사일/활공탄/극초음속 무기 같은 “원거리 투발 수단”을 대량 운용하는 플랫폼으로 진화했습니다. 미 공군은 B-52를 재엔진/항전 현대화로 장수시켜 장거리 순항미사일 트럭으로 운용하고, B-1B는 재래식 타격에 특화되었습니다. 러시아는 Tu-160M, Tu-22M3M 개량을 통해 항속·전자장비를 갱신했습니다.[NEWLINE][NEWLINE]중국 역시 H-6K/H-6N 등 제트폭격기 계열을 대규모로 현대화해 장거리 공대지/대함 미사일을 탑재, [ICON_RANGE_STRENGTH] 사거리 밖에서 연안·해상 표적에 대한 접근거부/지역거부(A2/AD) 능력을 강화했습니다. 또한 차세대 스텔스 전략폭격기 개발이 공표되면서(세부 제원은 비공개), 향후에는 저피탐 설계와 장거리 무장, 네트워크 중심전이 결합된 “감지-결심-타격” 체계의 핵심 노드 역할이 예상됩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNAVAILABLE_LEADER"> 
 			<Text>
 				지도자 없음
@@ -355407,6 +355712,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				유닛 전투
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ADVJET"> 
+			<Text>
+				다목적 스텔스제트기 (함재기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ADVJET_STRATEGY"> 
+			<Text>
+				다목적 스텔스제트기는 매우 강력한 비행 유닛입니다. 당신이 소유한 도시나 항공모함을 기반으로 할 수 있습니다. 기지 사이를 이동할 수 있으며 범위 내에서 "임무"를 수행할 수 있습니다. 어드밴스드 파이터를 사용하여 적 항공기와 지상 유닛을 공격하고, 적 위치를 정찰하고, 적의 공중 공격을 방어하십시오. 어드밴스드 파이터는 적 헬리콥터에 대해 특히 효과적이며 "공중 정찰" 능력이 있습니다. 즉, 턴 시작 시 시작 위치에서 6타일 내의 모든 것을 볼 수 있습니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AIRSHIP"> 
 			<Text>
 				비행선
@@ -355458,7 +355773,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AMERICAN_B17_STRATEGY"> 
 			<Text>
-				B-17 폭격기는 평등 이념의 고유 유닛입니다. 최상의 시간 이념 주의를 채택해야 합니다. 폭격기와 매우 비슷하지만, 적의 대공 능력과 전투기로 제압하기 어렵습니다. B-17은 또한 적 도시를 공격할 때 보너스를 받습니다. 폭격기와는 다르게 범위가 10입니다. 자세한 내용은 공중전 규칙을 참조하세요.
+				B17 폭격기는 평등 이념(Freedom) 고유 유닛입니다. [COLOR_MAGENTA]최고의 순간[ENDCOLOR] 이념주의를 채택해야 합니다. 기본 중폭격기와 유사하지만, 적의 대공 화기와 전투기에 의해 조준당하기 더 어렵습니다. 또한 적 도시에 대한 공격 시 추가 보너스를 받습니다. 기본 폭격기와 달리 사거리는 13(+1)입니다. 자세한 내용은 항공기 규칙을 참고하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_AMERICAN_MINUTEMAN"> 
@@ -355704,6 +356019,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				오토미는 알티플라노 지역에서 온 고대 민족으로, 메시카가 그곳에 도착하기 수천 년 전부터 존재했습니다. 오토미라는 이름은 나우아틀어로 "화살을 가진 자"라는 뜻으로, 그들의 전투에서의 강함과 용기를 인정받아 붙여졌습니다. 삼중동맹 내에서 오토미는 군사 사회의 이름이 되었는데, 이는 아마도 오토미 민족의 무시무시한 명성 때문이거나 원래 오토미 동맹국과 용병들로 구성되었기 때문일 것입니다. 어쨌든, 아즈텍 제국 내에서 민족의 이름으로서의 오토미와 군사 집단으로서의 오토미가 혼용되어 역사 기록에서 어느 쪽인지 구분하기 어렵게 만들었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_B52"> 
+			<Text>
+				B-52 (공항주둔기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_B52_STRATEGY"> 
+			<Text>
+				B-52 폭격기는 자유 이념에서만 생산 할 수 있습니다. 최상의 시간이 잠금 해제되어야 합니다. 폭격기와 비슷하지만 적의 대공 및 전투기가 조준하기가 더 어렵습니다. B-52는 또한 적 도시를 공격할 때 보너스를 받습니다. 잔략폭격기와 달리 범위는 14 (+1)입니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BABYLON_BOWMAN"> 
 			<Text>
 				바빌론 궁병
@@ -355801,7 +356126,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BOMBER"> 
 			<Text>
-				중폭격기
+				중폭격기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -355809,7 +356134,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BOMBER_STRATEGY"> 
 			<Text>
-				중폭격기는 비행 유닛입니다. 지상 목표물에는 효과적이며, 해군 목표물에는 효과적이지 않으며, 적 항공기에 상당히 취약합니다. 중폭격기는 플레이어가 소유한 도시에 주둔하거나 항공모함에 탑승할 수 있습니다. 그것은 기지 사이를 이동할 수 있고 범위 내에서 임무를 수행할 수 있습니다. 중폭격기를 사용하여 적의 부대와 도시를 공격하십시오. 가능하면 전투기를 먼저 투입하여 적의 대공 방어선을 "소모"하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
+				중폭격기는 비행 유닛입니다. 지상 목표물에는 효과적이며, 해군 목표물에는 효과적이지 않으며, 적 항공기에 상당히 취약합니다. 중폭겨기는 플레이어가 수용한 도시에 주둔하고, 항공모함에는 탑승할 수 없습니다. 그것은 기지 사이를 이동할 수 있고 범위 내에서 임무를 수행할 수 있습니다. 중폭격기를 사용하여 적의 부대와 도시를 공격하십시오. 가능하면 전투기를 먼저 투입하여 적의 대공 방어선을 "소모"하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BRANDENBURG_CLASS"> 
@@ -356411,6 +356736,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				노급전함은 2타일 사거리에서 발사할 수 있지만 시야가 필요합니다. 공격에 매우 강하고 수비에 약합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYJET"> 
+			<Text>
+				P-80 슈팅스타 (공항주둔기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYJET_STRATEGY"> 
+			<Text>
+				펜타곤 세계 불가사의를 건설한 문명에 두 개의 P-80 슈팅 스타가 무료로 제공됩니다. 다른 방법으로는 얻을 수 없습니다. 경험치는 없지만 기본적으로 높은 승격률을 자랑하는 P-80 슈팅 스타는 소유한 모든 도시에 주둔하고, 항공모함에 탑승할 수 없습니다. 도시에서 도시로만 이동할 수 있으며 범위 내에서 "임무"를 수행할 수 있습니다. 전투기를 사용하여 적 항공기와 지상 유닛을 공격하고, 적 위치를 정찰하고, 적의 공중 공격을 방어하세요. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYMONOPLAN"> 
+			<Text>
+				단엽기 (함재기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_EARLYMONOPLAN_STRATEGY"> 
+			<Text>
+				단엽기는 당신이 소유한 모든 도시에 주둔하거나 항공모함에 탑승할 수 있습니다. 도시에서 도시(또는 항공모함)로 이동할 수 있으며 범위 내에서 "임무"를 수행할 수 있습니다. 전투기를 사용하여 적 항공기와 지상 유닛을 공격하고, 적 위치를 정찰하고, 적의 공중 공격을 방어하세요. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EARLY_DESTROYER"> 
 			<Text>
 				호위함
@@ -356812,7 +357157,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FIGHTER"> 
 			<Text>
-				전투기
+				피스톤 전투기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -356820,7 +357165,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FIGHTER_STRATEGY"> 
 			<Text>
-				전투기는 적당한 힘을 가진 비행 유닛입니다. 그것은 당신이 소유하거나 항공모함에 탑승하는 모든 도시에 주둔할 수 있습니다. 도시에서 도시로 이동할 수 있으며 범위 내에서 "작전"을 수행할 수 있습니다. 전투기를 사용하여 적의 항공기와 지상 부대를 공격하고, 적의 위치를 정찰하며, 적의 공습으로부터 방어하십시오. 전투기는 특히 적의 헬리콥터에 대해 효과적입니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+				피스톤 전투기는 적당한 힘을 가진 비행 유닛입니다. 그것은 당신이 소유한 도시에 주둔하고, 항공모함에는 탑승할 수 없습니다. 도시에서 도시로 이동할 수 있으며 범위 내에서 "작전"을 수행할 수 있습니다. 전투기를 사용하여 적의 항공기와 지상 부대를 공격하고, 적의 위치를 정찰하며, 적의 공습으로부터 방어하십시오. 전투기는 특히 적의 헬리콥터에 대해 효과적입니다. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FLYER"> 
@@ -357374,7 +357719,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2"> 
 			<Text>
-				스텔스무인전투기 편대
+				스텔스무인전투기 편대 (다목적기)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_HELP"> 
@@ -358099,7 +358444,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER"> 
 			<Text>
-				준궤도 폭격기
+				준궤도 폭격기 (공항주둔기)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_HELP"> 
@@ -358628,6 +358973,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				전투헬기는 도시를 점령할 수 없다는 점만 빼면 지상 유닛과 다를 바 없는 강력한 공중 유닛입니다. 이동 거리가 6타일이고 지형에 구애받지 않고 이동하므로 이동 속도가 대단하지만 물을 건너려면 지상 유닛처럼 승선해야 합니다. 전투헬기는 전차를 상대로 싸울 때 보너스를 많이 받습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ADVJET"> 
+			<Text>
+				다가오는 적 비행 유닛을 요격하고 제공권 장악을 목적으로 설계된 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]항공모함에 함재가 가능합니다.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_AMBASSADOR"> 
 			<Text>
 				[COLOR_PLAYER_PURPLE]전권 대사[ENDCOLOR] 승급이 부여된 채 시작합니다. 이 유닛을 전쟁 중이 아닌 도시 국가로 [ICON_MOVES]이동시켜 외교 임무를 수행해 [ICON_INFLUENCE]영향력을 증가시킬 수 있습니다.[NEWLINE][NEWLINE]시대에 따라 생산 비용이 증가합니다.
@@ -358681,6 +359031,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_B17"> 
 			<Text>
 				적의 유닛과 도시 위로 죽음의 비를 내리는 비행 유닛입니다. 폭격기에 비해 요격을 어느정도 막아낼 수 있으며 도시에 더 큰 피해를 줍니다. 군사 보급을 차지하지 않습니다.[NEWLINE][NEWLINE][ICON_IDEOLOGY_FREEDOM][COLOR_MAGENTA]평등[ENDCOLOR] 이념을 따르는 문명만 생산할 수 있고 [COLOR_MAGENTA]최고의 순간[ENDCOLOR] 이념 주의를 채택해야 합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_B52"> 
+			<Text>
+				적의 유닛과 도시 위로 죽음의 비를 내리는 장거리 비행 유닛입니다. 요격을 어느 정도 막아낼 수 있으며 전략폭격기보다 도시에 더 큰 피해와 범위가 증가합니다.[COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][ICON_IDEOLOGY_FREEDOM][COLOR_MAGENTA]평등[ENDCOLOR] 이념을 따르는 문명만 생산할 수 있고, [COLOR_MAGENTA]최고의 순간[ENDCOLOR] 이념 주의를 채택해야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BALLISTA"> 
@@ -358846,6 +359201,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_DIPLOMAT"> 
 			<Text>
 				[COLOR_PLAYER_PURPLE]프로페셔널[ENDCOLOR] 승급이 부여된 채 시작합니다. 이 유닛을 전쟁 중이 아닌 도시 국가로 [ICON_MOVES]이동시켜 외교 임무를 수행해 [ICON_INFLUENCE]영향력을 증가시킬 수 있습니다.[NEWLINE][NEWLINE]시대에 따라 생산 비용이 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_EARLYJET"> 
+			<Text>
+				다가오는 적 비행 유닛을 요격하고 제공권 장악을 목적으로 설계된 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]세계 불가사의인 펜타곤과 함께 2개가 제공됩니다.[ENDCOLOR][COLOR_NEGATIVE_TEXT] 다른 방법으론 생산이 불가합니다. [ENDCOLOR] [COLOR_POSITIVE_TEXT]그리고 4가지 추가 프로모션이 있습니다:[ENDCOLOR][NEWLINE][COLOR_YELLOW][NEWLINE][ICON_BULLET] 제공권 II[NEWLINE][ICON_BULLET] 공중 수리[NEWLINE][ICON_BULLET] 범위[NEWLINE][ICON_BULLET] 슈팅스타[ENDCOLOR][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_EARLYMONOPLAN"> 
+			<Text>
+				다가오는 적 비행 유닛을 요격하고 제공권 장악을 목적으로 설계된 비행 유닛입니다.  [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_EGYPTIAN_WAR_CHARIOT"> 
@@ -359018,9 +359383,14 @@ The ship has weather'd every rack; the prize we sought is won."
 				{TXT_KEY_UNIT_MUSKETMAN}을 대체하는 오스만의 고유 유닛입니다. 공격 시  [ICON_STRENGTH] 전투력 보너스를 얻습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_MARCH}[ENDCOLOR] 승급을 보유합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_JET27"> 
+			<Text>
+				다가오는 적 비행 유닛을 요격하고 제공권 장악을 목적으로 설계된 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_JET_FIGHTER"> 
 			<Text>
-				다가오는 적 공중 유닛을 요격하고 제공권을 장악할 목적으로 설계된 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
+				하늘의 제압과 접근 중인 적 항공기의 요격을 위해 설계된 스텔스 제공 전투기입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_KNIGHT"> 
@@ -359036,6 +359406,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_LANDSKNECHT"> 
 			<Text>
 				용병으로 특화된 독일 고유의 {TXT_KEY_UNIT_EE_2HANDER}으로, 구매 즉시 이동할 수 있으며 경험치 패널티나 재사용 대기시간이 없습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR] 승급을 가지고 시작합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_LIGHTBOMBER"> 
+			<Text>
+				적 유닛과 도시를 폭격할 수 있는 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]항공모함에 함재가 가능합니다.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LONGBOWMAN"> 
@@ -359076,6 +359451,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_MEHAL_SEFARI"> 
 			<Text>
 				{TXT_KEY_UNIT_RIFLEMAN}을 대체하는 에티오피아의 고유 유닛입니다. 우호 영토 내 전투 및 에티오피아의 [ICON_CAPITAL]수도 방어에 특화된 최전방 지상 유닛입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_COVER_1}[ENDCOLOR] 승급을 보유합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_MIG29"> 
+			<Text>
+				다가오는 적 비행 유닛을 요격하고 제공권 장악을 목적으로 설계된 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR][NEWLINE][NEWLINE]제로센과 마찬가지로, 적 전투기 대항시 전투력보너스가 증가하며 석유를 요구하지 않습니다. [NEWLINE][NEWLINE][ICON_IDEOLOGY_AUTOCRACY][COLOR_MAGENTA]독재[ENDCOLOR] 이념을 따르는 문명만 생산할 수 있고 [COLOR_MAGENTA]제공권[ENDCOLOR] 이념주의를 채택해야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MINUTEMAN"> 
@@ -359268,6 +359648,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				적의 유닛과 도시 위로 죽음의 비를 내리는 원거리 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_STRBOMB"> 
+			<Text>
+				적 유닛과 도시를 강력하게 폭격할 수 있는 장거리 비행 유닛입니다. [COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_SUBMARINE"> 
 			<Text>
 				구축함이나 미사일 순양함 또는 다른 잠수함에게 탐지당하며 공격하거나 다른 유닛 바로 옆에 인접하면 탐지당합니다. 몰래 다른 배에 접근해 큰 피해를 줄 수 있습니다.
@@ -359306,6 +359691,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HELP_TRIREME"> 
 			<Text>
 				고전 시대 제해권을 장악한 해상 유닛입니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ULTJETBOMB"> 
+			<Text>
+				적의 유닛과 도시 위로 죽음의 비를 내리는 더 큰 타격을 주는 장거리 비행 유닛입니다.[NEWLINE][COLOR_POSITIVE_TEXT]군사 보급 한도를 차지하지 않습니다.[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_VANDAL_AXEMAN"> 
@@ -359795,7 +360185,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPANESE_ZERO"> 
 			<Text>
-				제로센
+				제로센 (다목적기)
 			</Text>
 			<Plurality>
 				2
@@ -359803,7 +360193,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY"> 
 			<Text>
-				제로센은 독재 이념의 고유 유닛입니다. 제공권 이념 주의를 채택해야 합니다. 제로센은 적당히 강안 공중 유닛입니다. 일반적인 전투기와 비슷하게, 다른 전투기와 전투 시 전투력 보너스를 얻고, [COLOR_POSITIVE_TEXT]석유를 소모하지 않습니다[ENDCOLOR]. 도시에서 도시로 (혹은 항공모함으로) 이동할 수 있으며 8 타일 안에서 "작전"을 수행할 수 있습니다.  자세한 내용은 공중전 규칙을 참조하세요.
+				제로센은 독재 이념(Autocracy) 고유 유닛입니다. [COLOR_MAGENTA]제공권[ENDCOLOR] 이념주의를 채택해야 합니다. 제로기는 중간 이상의 전투력을 갖춘 비행 유닛으로, 표준 전투기와 유사하지만 다른 전투기와의 교전에서 큰 전투 보너스를 받으며 [COLOR_POSITIVE_TEXT]석유 자원을 요구하지 않습니다[ENDCOLOR]. 소유한 어느 도시에도 배치할 수 있고 항공모함에서도 운용할 수 있습니다. 도시(또는 항공모함) 간 이동이 가능하며, 8타일 사거리 내에서 “임무”를 수행합니다. 자세한 내용은 항공기 규칙을 참고하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JAPAN_YAMATO"> 
@@ -359826,9 +360216,19 @@ The ship has weather'd every rack; the prize we sought is won."
 				야마토급 전함은 제2차 세계 대전 당시 일본 제국 해군의 정수입니다. 최대 적재량인 73,000톤을 적재한 이 함정은 지금까지 건조된 전투함 중 가장 무겁고 강력한 전함이었습니다. 각 야마토는 9발의 460밀리미터 포를 가지고 있었는데, 이는 군함에 장착되었던 것 중 가장 큰 것으로, 각각의 함포는 1360킬로그램의 포탄을 42킬로미터까지 발사할 수 있었습니다. 야마토함와 무사시함의 2척의 전함이 완성되었고, 3척의 시나노함는 건조 중에 항공모함으로 개조되었습니다. 모든 전함이 제 2차 세계대전 동안 미군에 의해 침몰되었습니다.[NEWLINE][NEWLINE]그들의 크기, 속도, 그리고 힘 때문에, 야마토급 전함은 서구 강대국, 특히 미국으로부터 자국의 이익을 방어하려는 일본의 결단과 태세를 뚜렷하게 구현했습니다. 이 군함이 일본 문화에서 이처럼 큰 의미를 가질 수 있는 이유 중 하나는 '야마토'라는 단어가 일본에서 자체적인 시적 명칭으로 자주 사용되었기 때문입니다. 그래서 야마토급 전함의 건조와 파괴는 일본 황실의 염원이 흥망성쇠하는 상징이 되었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_JET27"> 
+			<Text>
+				제트기 (함재기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_JET27_STRATEGY"> 
+			<Text>
+				제트기는 강력한 비행 유닛입니다. 당신이 소유한 도시나 항공모함을 기반으로 할 수 있습니다. 기지 사이를 이동할 수 있으며 범위 내에서 "임무"를 수행할 수 있습니다. 제트기를 사용하여 적 항공기와 지상 유닛을 공격하고, 적 위치를 정찰하고, 적의 공중 공격을 방어하십시오. 제트기는 특히 적 헬리콥터에 효과적입니다. 제트기는 턴 시작 시 시작 위치에서 6타일 이내의 모든 것을 볼 수 있는 "공중 정찰" 능력이 있습니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JET_FIGHTER"> 
 			<Text>
-				제트기
+				스텔스 전투기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -359836,7 +360236,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_JET_FIGHTER_STRATEGY"> 
 			<Text>
-				제트기는 강력한 비행 유닛입니다. 그것은 당신이 소유하거나 항공모함에 탑승하는 모든 도시에 주둔할 수 있습니다. 그것은 도시에서 도시로 이동할 수 있고 범위 내에서 "작전"을 수행할 수 있습니다. 제트 전투기를 사용하여 적의 항공기와 지상 부대를 공격하고, 적의 위치를 정찰하며, 적의 공습으로부터 방어하십시오. 제트 전투기는 특히 적의 헬리콥터에 대해 효과적입니다. 제트 전투기는 "공중 정찰" 기능을 가지고 있는데, 이것은 회전의 시작 부분에서 6개의 타일 안에 있는 모든 것을 볼 수 있다는 것을 의미합니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+				스텔스 전투기(F-22)는 최상위 제공권 획득을 목적으로 설계된 공군 기체입니다. 보유한 도시에 주둔하여 운용하며 기지 간 재배치 후, 작전 사거리 내에서 요격·에어 스윕·정찰 임무를 수행합니다. 교전 시에는 먼저 에어 스윕으로 적의 요격을 소진시킨 뒤, 아군 폭격기의 타격을 지원하십시오. BVR(시계 밖) 교전에 특히 유리하며, 헬리콥터 및 폭격기 요격에 높은 효율을 보입니다. 시작 시 일정 반경을 가시화하는 '공중 정찰' 능력을 통해 전장의 정보우위를 확보할 수 있습니다. [NEWLINE][COLOR_NEGATIVE_TEXT]항공모함 운용은 불가합니다.[ENDCOLOR] 자세한 내용은 항공기 규칙을 참고하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_KNIGHT"> 
@@ -359945,6 +360345,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				치명적인 화살로, 원거리 공격이 가능한 최초의 해양 유닛입니다. 도시 범위 밖의 대양 타일에서 턴을 끝낼 수 없습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LIGHTBOMBER"> 
+			<Text>
+				경폭격기 (함재기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LIGHTBOMBER_STRATEGY"> 
+			<Text>
+				경폭격기는 도시, 지상 목표물에 효과적이며 해상 목표물에는 덜 효과적이며 적 항공기에 매우 취약합니다. 경폭격기는 플레이어 소유의 도시를 기반으로 하거나 항공모함에 탑승할 수 있습니다. 기지 사이를 이동하며 범위 내에서 임무를 수행할 수 있습니다. 적 유닛과 도시를 공격하는 데 사용하십시오. 가능하면 단엽기나 전투기를 먼저 보내 해당 턴 동안 적의 대공 방어를 "사용"하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_LONGSWORDSMAN"> 
 			<Text>
 				장검병
@@ -360045,6 +360455,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_MEHAL_SEFARI_STRATEGY"> 
 			<Text>
 				{TXT_KEY_UNIT_MEHAL_SEFARI}는 에티오피아의 고유 유닛으로 {TXT_KEY_UNIT_RIFLEMAN}을 대체합니다. 아군 영토에서 전투 시 눈에 띄는 전투력 보너스를 얻으며, [ICON_CAPITAL] 수도 근처에서 추가 보너스를 얻습니다. 또한 약간 더 저렴합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_MIG29"> 
+			<Text>
+				MiG-29K (다목적기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_MIG29_STRATEGY"> 
+			<Text>
+				MiG-29는 독재 이념만 생산이 가능합니다. 제공권이념이 잠금 해제되어야 합니다. MiG-29는 결코 구식이 되지 않을 상당히 강력한 비행 유닛입니다. 다른 전투기와 싸울 때 상당한 전투 보너스를 받고 [COLOR_POSITIVE_TEXT]석유 자원[ENDCOLOR]이 필요하지 않다는 점을 제외하면 표준 제트기와 같습니다. 당신이 소유한 도시나 항공모함을 기반으로 할 수 있습니다. 도시에서 도시(또는 항공모함)로 이동할 수 있으며 9타일 범위 내에서 "임무"를 수행할 수 있습니다. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_MISSILE_CRUISER"> 
@@ -361031,7 +361451,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_STEALTH_BOMBER"> 
 			<Text>
-				스텔스 폭격기
+				스텔스 폭격기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -361040,6 +361460,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_STEALTH_BOMBER_STRATEGY"> 
 			<Text>
 				 스텔스 폭격기는 향상된 폭격기로, 사거리, 전투력, 적의 대공과 전투기를 피할 수 있는 능력을 갖추고 있습니다. 스텔스 폭격기는 "공중 정찰" 기능을 가지고 있는데, 이것은 턴 시작 부분에서 6개의 타일 안에 있는 모든 것을 볼 수 있다는 것을 의미합니다. 자세한 내용은 항공기 규칙을 참조하십시오.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_STRBOMB"> 
+			<Text>
+				전략폭격기 (공항주둔기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_STRBOMB_STRATEGY"> 
+			<Text>
+				전략 폭격기는 도시, 지상 목표물에 대해 효과적이며 해상 목표물에 대해서는 덜 효과적이며 적 항공기에 매우 취약합니다. 플레이어 소유의 도시를 기반으로 하고, 항공모함에 탑승할 수 없습니다. 기지 사이를 이동하며 범위 내에서 임무를 수행할 수 있습니다. 적 유닛과 도시를 공격하는 데 사용하십시오. 가능하면 파이터나 제트기를 먼저 보내 해당 턴 동안 적의 대공 방어를 "사용"하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SUBMARINE"> 
@@ -361168,7 +361598,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TRIPLANE"> 
 			<Text>
-				삼엽기
+				삼엽기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -361187,6 +361617,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_TRIREME_STRATEGY"> 
 			<Text>
 				삼단노선은 갤리에서 업그레이드 할 수 있는 해상 유닛입니다. 근접 공격 유닛으로 해군 유닛 및 해안 도시와 싸울 수 있습니다. 삼단노선은 아군 영해에서 야만인 배를 몰아내고 약간의 정찰을 하는데 유용합니다. (폴리네시아의 삼단노선을 제외한 다른 삼단노선은 도시 범위 밖의 심해 타일에서 턴을 마칠 수 없습니다.)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ULTJETBOMB"> 
+			<Text>
+				제트폭격기 (공항주둔기)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ULTJETBOMB_STRATEGY"> 
+			<Text>
+				제트 폭격기는 도시, 지상 목표물에 효과적이며 해상 목표물에는 덜 효과적이며 적 항공기에 매우 취약합니다. 플레이어 소유의 도시를 기반으로 하고, 항공모함에 탑승할 수 없습니다. 기지 사이를 이동하며 범위 내에서 임무를 수행할 수 있습니다. 적 유닛과 도시를 공격하는 데 사용하십시오. 가능하면 제트 전투기나 스텔스 전투기를 먼저 보내 해당 턴 동안 적의 대공 방어를 "사용"하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_VANDAL_AXEMAN"> 
@@ -361320,7 +361760,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_BOMBER"> 
 			<Text>
-				폭격기
+				양익 폭격기 (공항주둔기)
 			</Text>
 			<Plurality>
 				2
@@ -361328,7 +361768,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_BOMBER_STRATEGY"> 
 			<Text>
-				폭격기는 초기 비행 유닛입니다. 지상 목표물에는 효과적이며, 해군 목표물에는 효과적이지 않으며, 적 항공기에 상당히 취약합니다. 폭격기는 플레이어가 소유한 도시에 주둔하거나 항공모함에 탑승할 수 있습니다. 그것은 기지 사이를 이동할 수 있고 범위 내에서 임무를 수행할 수 있습니다. 적의 부대와 도시를 공격할 때 사용합니다. 가능하면 먼저 삼엽기나 전투기를 보내 적의 대공 방어선을 "소모"하도록 하십시오. 자세한 내용은 항공기 규칙을 참조하십시오.
+				양익 폭격기는 초기 비행 유닛입니다. 지상 목표물에 효과적이며 해상 목표물에는 덜 효과적이고, 적 항공기에 매우 취약합니다. 양익 폭격기는 그것은 당신이 소유한 도시에 주둔하고, 항공모함에는 탑승할 수 없습니다. 기지 간 재배치를 통해 이동하며 사거리 내에서 임무를 수행합니다. 적 유닛과 도시를 공격하는 데 사용하세요. 가능하다면, 같은 턴에 적의 대공 방어를 먼저 “소모”시키기 위해 삼엽기나 단엽기를 먼저 보내는 것이 좋습니다. 자세한 내용은 항공기 규칙을 참고하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_WWI_TANK"> 
@@ -365061,7 +365501,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_HELP"> 
 			<Text>
-				모든 도시의 [ICON_SILVER_FIST] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 공중 유닛 정원이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 무료 [COLOR_YELLOW]제트기[ENDCOLOR]가 2개 출현합니다. 공중 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공합니다. 이 불가사의가 지어진 도시에서 생산하는 공중 유닛의 경험치가 [COLOR_POSITIVE_TEXT]20[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE][COLOR_MAGENTA]제국주의[ENDCOLOR] 정책을 완성해야 건설할 수 있습니다.  [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.
+				무료 [COLOR_YELLOW]P-80 슈팅스타[ENDCOLOR]가 2개 출현합니다. 비행 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공합니다. 도시에서 생산하는 비행 유닛의 경험치가 [COLOR_POSITIVE_TEXT]20[ENDCOLOR] 증가합니다. [ICON_WAR] 전역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], 도시의 비행 유닛 정원이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE][COLOR_MAGENTA]제국주의[ENDCOLOR] 정책을 완성해야 건설할 수 있습니다. 이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_WONDER_PENTAGON_QUOTE"> 

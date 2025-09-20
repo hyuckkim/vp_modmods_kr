@@ -116,10 +116,3 @@ UPDATE Units SET PortraitIndex = '21', IconAtlas = 'UNIT_CAYM_ATLAS'  WHERE Type
 UPDATE Units SET PortraitIndex = '22', IconAtlas = 'UNIT_CAYM_ATLAS'  WHERE Type = 'UNIT_IROQUOIS_TADODAHO';
 
 UPDATE Units SET PortraitIndex = '27', IconAtlas = 'UNIT_CAYM_ATLAS'  WHERE Type = 'UNIT_INDONESIA_DJONG';
-
-UPDATE Units SET PortraitIndex = '39', IconAtlas = 'UNIT_CAYM_ATLAS'  WHERE Type = 'UNIT_EARLY_DESTROYER';
-
-
-
-
- 

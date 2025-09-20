@@ -36,8 +36,6 @@ DELETE FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER';
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
 VALUES ('UNIT_JET_FIGHTER', 'UNITCLASS_FW_DRONE_FIGHTER_2');
 
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNIT_ADVJET' WHERE UnitType = 'UNIT_JET_FIGHTER' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_ADVJET');
-
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================	

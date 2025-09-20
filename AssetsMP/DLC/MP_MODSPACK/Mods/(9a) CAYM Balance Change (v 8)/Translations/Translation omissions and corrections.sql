@@ -1,7 +1,7 @@
 -----------------------
  -- 번역표현 변경
 ------------------------	
-
+ 
 -- TERICIO ->PIKEMAN
 UPDATE Language_ko_KR
 SET Text = '창총보병'
@@ -673,8 +673,8 @@ WHERE Tag = 'TXT_KEY_BUILDING_STADIUM_HELP';
 
 -- 펜타곤
 UPDATE Language_ko_KR
-SET Text = '모든 도시의 [ICON_SILVER_FIST] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 공중 유닛 정원이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 무료 [COLOR_YELLOW]제트기[ENDCOLOR]가 2개 출현합니다. 공중 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공합니다. 이 불가사의가 지어진 도시에서 생산하는 공중 유닛의 경험치가 [COLOR_POSITIVE_TEXT]20[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE][COLOR_MAGENTA]제국주의[ENDCOLOR] 정책을 완성해야 건설할 수 있습니다.  [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_PENTAGON_HELP' AND NOT EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_ADVJET');
+SET Text = '무료 [COLOR_YELLOW]제트기[ENDCOLOR]가 2개 출현합니다. 공중 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공합니다. 이 불가사의가 지어진 도시에서 생산하는 공중 유닛의 경험치가 [COLOR_POSITIVE_TEXT]20[ENDCOLOR] 증가합니다. [ICON_SILVER_FIST] 전역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], 공중 유닛 정원이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE][COLOR_MAGENTA]제국주의[ENDCOLOR] 정책을 완성해야 건설할 수 있습니다.  [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
+WHERE Tag = 'TXT_KEY_WONDER_PENTAGON_HELP' AND NOT EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EARLYJET');
 
 -- 어머니 조국상
 UPDATE Language_ko_KR

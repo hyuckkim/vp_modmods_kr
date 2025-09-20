@@ -1,0 +1,160 @@
+
+<!-- EAW edit Rev 0 -->
+
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1160">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1200">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1400">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+    </event_track>
+    <event_track ec="2200">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1100">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+    </event_track>
+    <event_track ec="1180">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1220">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2220">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+  </event_tracks>
+  <triggers>
+
+<!-- 1100 - AttackA -->
+    <trigger type="FTimedTriggerEffect" id="17" time="0" duration="1" repeat="0" ec="1100" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_R" />
+    <trigger type="FTimedTriggerEffect" id="16" time="0" duration="1" repeat="0" ec="1100" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_L" />
+    <trigger type="FTimedTriggerEffect" id="47" time="0" duration="0.7" repeat="0" ec="1100" track="5" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="bone_MG_L" />
+    <trigger type="FTimedTriggerEffect" id="46" time="0" duration="0.7" repeat="0" ec="1100" track="5" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="bone_MG_R" />
+    <trigger type="FTimedTriggerAction" id="3" time="0.131481484" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="1" time="0.0685183" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="4" time="0.301851" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="45" time="0.742593" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="31" time="0.522222" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerSound" id="67" time="0" duration="0" repeat="0" ec="1100" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />
+    <trigger type="FTimedTriggerSound" id="68" time="0.5" duration="0" repeat="0" ec="1100" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />
+    <trigger type="FTimedTriggerSound" id="75" time="0" duration="0" repeat="0" ec="1100" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MACHINEGUN" bone="" />
+    <trigger type="FTimedTriggerSound" id="76" time="0.5018517" duration="0" repeat="0" ec="1100" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MACHINEGUN" bone="" />
+
+<!-- 1160 - AttackCityA --> 
+    <trigger type="FTimedTriggerEffect" id="7" time="0.0203705" duration="0.29" repeat="0" ec="1160" track="6" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="fx_PROJECTILE_01" />
+    <trigger type="FTimedTriggerEffect" id="10" time="0.0222222" duration="0.29" repeat="0" ec="1160" track="6" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="fx_PROJECTILE_02" />
+    <trigger type="FTimedTriggerSound" id="77" time="0" duration="0" repeat="0" ec="1160" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MACHINEGUN" bone="" />
+    <trigger type="FTimedTriggerEffect" id="20" time="0" duration="0.5" repeat="0" ec="1160" track="5" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_R" />
+    <trigger type="FTimedTriggerEffect" id="5" time="0" duration="0.5" repeat="0" ec="1160" track="5" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_L" />
+    <trigger type="FTimedTriggerEffect" id="6" time="0.08" duration="0.13" repeat="0" ec="1160" track="2" tier="0" event="ART_DEF_VEFFECT_BAZOOKA_ROCKET_PROJECTILE" bone="fx_PROJECTILE_03" />
+    <trigger type="FTimedTriggerEffect" id="89" time="0.082" duration="0.1" repeat="0" ec="1160" track="5" tier="0" event="ART_DEF_VEFFECT_HWACHA_LAUNCH_SMOKE" bone="fx_PROJECTILE_03" />
+    <trigger type="FTimedTriggerAction" id="53" time="0.275926" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="51" time="0.0796297" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="54" time="0.324074" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="52" time="0.233333" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="64" time="0.188889" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="50" time="0.05" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="63" time="0.109259" duration="0" repeat="0" ec="1160" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerSound" id="69" time="0" duration="0" repeat="0" ec="1160" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_TURN" bone="" />
+    <trigger type="FTimedTriggerSound" id="79" time="0.08" duration="0" repeat="0" ec="1160" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MISSILE_LAUNCH" bone="" />
+    <trigger type="FTimedTriggerTransfer" id="11" time="0.1" duration="0" repeat="0" ec="1160" track="3" tier="0" refid="6" speed="12.0823" tangent.x="0" tangent.y="-1" tangent.z="7.47210754E-06" />
+
+<!-- 1180 - AttackCityB --> 
+    <trigger type="FTimedTriggerEffect" id="58" time="0" duration="0.18" repeat="0" ec="1180" track="6" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="fx_PROJECTILE_01" />
+    <trigger type="FTimedTriggerEffect" id="59" time="0" duration="0.18" repeat="0" ec="1180" track="6" tier="0" event="ART_DEF_VEFFECT_GUNSHIP_MACHINE_GUN_MUZZLE" bone="fx_PROJECTILE_02" />
+    <trigger type="FTimedTriggerSound" id="78" time="0" duration="0" repeat="0" ec="1180" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MACHINEGUN" bone="" />
+    <trigger type="FTimedTriggerEffect" id="43" time="0" duration="0.5" repeat="0" ec="1180" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_R" />
+    <trigger type="FTimedTriggerEffect" id="42" time="0" duration="0.5" repeat="0" ec="1180" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_L" />
+    <trigger type="FTimedTriggerEffect" id="12" time="0.02" duration="0.1" repeat="0" ec="1180" track="2" tier="0" event="ART_DEF_VEFFECT_BAZOOKA_ROCKET_PROJECTILE" bone="fx_PROJECTILE_03" />
+    <trigger type="FTimedTriggerEffect" id="87" time="0.022" duration="0.1" repeat="0" ec="1180" track="5" tier="0" event="ART_DEF_VEFFECT_HWACHA_LAUNCH_SMOKE" bone="fx_PROJECTILE_03" />
+    <trigger type="FTimedTriggerAction" id="61" time="0.0796296" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="56" time="0.277778" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="62" time="0.194444" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="57" time="0.238889" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="60" time="0.0407407" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerAction" id="55" time="0.124074" duration="0" repeat="0" ec="1180" track="4" tier="0" action="1" />
+    <trigger type="FTimedTriggerSound" id="70" time="0" duration="0" repeat="0" ec="1180" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_TURN" bone="" />
+    <trigger type="FTimedTriggerSound" id="81" time="0.02" duration="0" repeat="0" ec="1180" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_MISSILE_LAUNCH" bone="" />
+    <trigger type="FTimedTriggerTransfer" id="13" time="0.102" duration="0" repeat="0" ec="1180" track="3" tier="0" refid="12" speed="13.4805" tangent.x="0" tangent.y="-1" tangent.z="7.661008E-06" />
+
+<!-- 1200 - DeathA --> 
+    <trigger type="FTimedTriggerEffect" id="25" time="0" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_02" bone="bone_WING_R02" />
+    <trigger type="FTimedTriggerEffect" id="35" time="0" duration="1.9" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_FIRE_QTIP" bone="bone_MG_R" />
+    <trigger type="FTimedTriggerEffect" id="32" time="0.55" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_EXPLOSION_DEATH" bone="bone_WING_R" />
+    <trigger type="FTimedTriggerEffect" id="36" time="0.7" duration="1.2" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_TRAIL_PLANE_DEATH_01" bone="bone_WING_R" />
+    <trigger type="FTimedTriggerEffect" id="33" time="1.44" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_01" bone="bone_BODY" />
+    <trigger type="FTimedTriggerEffect" id="34" time="1.6" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_02" bone="bone_WING_L01" />
+    <trigger type="FTimedTriggerSound" id="71" time="0" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />
+    <trigger type="FTimedTriggerSound" id="65" time="0" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_IMPACT_$(WEAPON)" bone="" />
+    <trigger type="FTimedTriggerSound" id="83" time="0.55" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_PLANE_DIE" bone="" />
+    <trigger type="FTimedTriggerSound" id="19" time="1.44" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_IMPACT_$(WEAPON)" bone="" />    
+    <trigger type="FTimedTriggerSound" id="86" time="1.6" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_PLANE_CRASH" bone="" />
+    
+<!-- 2200 - DeathB --> 
+    <trigger type="FTimedTriggerEffect" id="93" time="0" duration="0" repeat="0" ec="2200" track="5" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_02" bone="bone_WING_R03" />
+    <trigger type="FTimedTriggerEffect" id="94" time="0" duration="0.3" repeat="0" ec="2200" track="5" tier="0" event="ART_DEF_VEFFECT_GUIDED_MISSILE_TRAIL" bone="bone_TAIL" />
+    <trigger type="FTimedTriggerEffect" id="37" time="0.3" duration="0" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_02" bone="bone_WING_R03" />
+    <trigger type="FTimedTriggerEffect" id="38" time="0.3" duration="2" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_TRAIL_PLANE_DEATH_02" bone="bone_WING_R03" />
+    <trigger type="FTimedTriggerEffect" id="28" time="0.6" duration="0" repeat="0" ec="2200" track="5" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_02" bone="bone_WING_R03" />
+    <trigger type="FTimedTriggerEffect" id="95" time="0.6" duration="0.4" repeat="0" ec="2200" track="5" tier="0" event="ART_DEF_VEFFECT_GUIDED_MISSILE_TRAIL" bone="bone_TAIL" />
+    <trigger type="FTimedTriggerEffect" id="40" time="1.1" duration="0" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_AIR_DEATH_01" bone="bone_WING_R03" />
+    <trigger type="FTimedTriggerEffect" id="39" time="1.1" duration="2" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_TRAIL_PLANE_DEATH_01" bone="bone_WING_R02" />
+    <trigger type="FTimedTriggerSound" id="74" time="0" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />    
+    <trigger type="FTimedTriggerSound" id="66" time="0" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_IMPACT_$(WEAPON)" bone="" />
+    <trigger type="FTimedTriggerSound" id="84" time="0.3" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_PLANE_DIE" bone="" />
+    <trigger type="FTimedTriggerSound" id="29" time="0.6" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_PLANE_CRASH" bone="" />
+    <trigger type="FTimedTriggerSound" id="26" time="1.1" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_PLANE_CRASH" bone="" />
+
+<!-- 1400 - Run --> 
+    <trigger type="FTimedTriggerEffect" id="49" time="0" duration="1" repeat="0" ec="1400" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_R" />
+    <trigger type="FTimedTriggerEffect" id="48" time="0" duration="1" repeat="0" ec="1400" track="2" tier="0" event="ART_DEF_VEFFECT_JET_WINGTIP_TRAIL_01" bone="fx_WingTrail_L" />
+    <trigger type="FTimedTriggerSound" id="72" time="0" duration="0" repeat="0" ec="1400" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />
+    <trigger type="FTimedTriggerSound" id="73" time="0.51" duration="0" repeat="0" ec="1400" track="1" tier="-1" event="AS3D_UNIT_JET_FIGHTER_JET_FIGHTER_RUN" bone="" />
+
+  </triggers>
+</trigger_system>
