@@ -79,7 +79,7 @@ INSERT INTO BuildFeatures (BuildType, FeatureType, PrereqTech, Time, Production,
 ('BUILD_ATTACK_TRENCH','FEATURE_MARSH','TECH_MASONRY',300,NULL,NULL);
 
 UPDATE Improvements
-SET DefenseModifier = 15
+SET DefenseModifier = 25
 WHERE Type = 'IMPROVEMENT_ATTACK_TRENCH';
 
 INSERT INTO Improvement_Flavors (ImprovementType, FlavorType, Flavor)
