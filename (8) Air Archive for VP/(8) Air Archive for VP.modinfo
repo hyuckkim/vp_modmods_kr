@@ -2,8 +2,9 @@
 <Mod id="871da714-b2c6-49e9-8882-57489f501dbc" version="1">
 
   <Properties>
-    <Name>(8)  Air Archive VP</Name>
-    <Teaser>Wingline adds historical aircraft from the early biplane era up to the F-35. It expands Fighters and Bombers with a simple, AI-friendly concept that makes air warfare deeper without becoming micro-heavy.[NEWLINE]
+    <Name>(8)  Air Archive for VP</Name>
+    <Teaser>Air Archive for VP (add Airunits )</Teaser>
+    <Description>Wingline adds historical aircraft from the early biplane era up to the F-35. It expands Fighters and Bombers with a simple, AI-friendly concept that makes air warfare deeper without becoming micro-heavy.[NEWLINE]
 New Air Units are woven into the existing tech tree as a dedicated line, upgrading at the same pace as vanilla to keep balance and compatibility.[NEWLINE]
 [NEWLINE][COLOR_NEGATIVE_TEXT]To adjust aircraft animation speed (x1 by default), open[ENDCOLOR] Faster Aircraft Animations.sql [COLOR_NEGATIVE_TEXT]and follow the instructions.[ENDCOLOR][NEWLINE]
 [NEWLINE]
@@ -185,8 +186,7 @@ New Air Units are woven into the existing tech tree as a dedicated line, upgradi
     <File md5="AR4A7442A552B17040E7D6FC06DE5075" import="0">Units/Artdefines.sql</File>
     <File md5="UN4A7442A552B17040E7D6FC06DE5075" import="0">Units/Units.sql</File>
     <File md5="PR4A7442A552B17040E7D6FC06DE5075" import="0">Units/Promotions.sql</File>
-    <File md5="PR4A7442A552B17040E7D6FC06DE5075" import="0">Units/AirArchive.sql</File>
-
+    <File md5="US4A7442A552B17040E7D6FC06DE5075" import="0">Units/Unitsound.sql</File>
     <File md5="PR4A7442A552B17040E7D6FC06DE5075" import="0">Units/AirArchiveTEXT.sql</File>
     <File md5="PR4A7442A552B17040E7D6FC06DE5075" import="0">Units/AirArchiveTEXT_KR.sql</File>
   </Files>

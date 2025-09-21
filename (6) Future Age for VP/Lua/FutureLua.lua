@@ -217,77 +217,94 @@ else
   end)
 end
 
-------------------------------------------------------------
--- Biomod: per-10-pop -> dummy stacks (cap 20)
--- * Dummy   : BUILDING_DUMMY_BIOMOD_POP
--- * Trigger : BUILDING_FW_BIOMOD_TANK (apply only to cities with the building)
-------------------------------------------------------------
+-- ============================================================
+-- Biomod & Ectogenesis (player-owns-trigger only)
+-- - 동작 조건: 해당 문명이 트리거 건물을 1개 이상 보유할 때만
+-- - 바바/도시국가 제외, 옵션으로 인간만
+-- - 상한 유지
+-- ============================================================
 do
-  local DEBUG           = true    -- after verification false
-  local POP_PER_STACK   = 10
-  local STACK_CAP       = 20
+  -- ===== 공통 설정 =====
+  local ONLY_HUMAN = false     -- true면 인간(플레이어)만 적용
+  local DEBUG      = true      -- 검증 끝나면 false
 
-  local iDummyBiomod    = GameInfoTypes.BUILDING_DUMMY_BIOMOD_POP
-  local iTriggerBiomod  = GameInfoTypes.BUILDING_FW_BIOMOD_TANK
+  local function IsValidPlayer(p)
+    if not p or not p.IsAlive or not p:IsAlive() then return false end
+    if p.IsBarbarian and p:IsBarbarian() then return false end
+    if p.IsMinorCiv and p:IsMinorCiv() then return false end
+    if ONLY_HUMAN and p.IsHuman and not p:IsHuman() then return false end
+    return true
+  end
 
-  if not iDummyBiomod then print("[FW][ERROR] Dummy BUILDING_DUMMY_BIOMOD_POP not found") end
-  if not iTriggerBiomod then print("[FW][ERROR] Trigger BUILDING_FW_BIOMOD_TANK not found") end
+  -- ===== 캐시: 문명이 트리거 건물을 보유했는지 =====
+  MapModData = MapModData or {}
+  MapModData.ECTO_HAS_TRIGGER   = MapModData.ECTO_HAS_TRIGGER   or {} -- playerId -> bool
+  MapModData.BIOMOD_HAS_TRIGGER = MapModData.BIOMOD_HAS_TRIGGER or {} -- playerId -> bool
 
-  local function UpdateBiomodPopStacks(p)
-    if not p or not p:IsAlive() then return end
+  local function RecalcHasTriggerFor(p, triggerBuildingID, cacheTable, tag)
+    local has = false
+    if p and p.Cities then
+      for city in p:Cities() do
+        if city:IsHasBuilding(triggerBuildingID) then has = true break end
+      end
+    end
+    cacheTable[p:GetID()] = has
+    if DEBUG then
+      print(string.format("[%s] Player %d trigger=%s", tag, p:GetID(), tostring(has)))
+    end
+    return has
+  end
+
+  -- ====== BIOMOD (인구 10당 스택, 도시별 적용) ======
+  local POP_PER_STACK  = 10
+  local BIOMOD_CAP     = 20
+  local iDummyBiomod   = GameInfoTypes.BUILDING_DUMMY_BIOMOD_POP
+  local iTriggerBiomod = GameInfoTypes.BUILDING_FW_BIOMOD_TANK
+  if not iDummyBiomod   then print("[Biomod][ERROR] Dummy BUILDING_DUMMY_BIOMOD_POP not found") end
+  if not iTriggerBiomod then print("[Biomod][ERROR] Trigger BUILDING_FW_BIOMOD_TANK not found") end
+
+  local function UpdateBiomodForPlayer(p)
+    if not IsValidPlayer(p) then return end
+    local has = MapModData.BIOMOD_HAS_TRIGGER[p:GetID()]
+    if has == nil then
+      has = RecalcHasTriggerFor(p, iTriggerBiomod, MapModData.BIOMOD_HAS_TRIGGER, "Biomod")
+    end
+    if not has then return end  -- ★ 트리거 없으면 계산/적용 스킵
+
     for city in p:Cities() do
       local want = 0
-      if iTriggerBiomod and city:IsHasBuilding(iTriggerBiomod) then
-        want = math.floor(city:GetPopulation() / POP_PER_STACK)
-        if STACK_CAP then want = math.min(want, STACK_CAP) end
+      if city:IsHasBuilding(iTriggerBiomod) then
+        want = math.floor((city:GetPopulation() or 0) / POP_PER_STACK)
+        if BIOMOD_CAP then want = math.min(want, BIOMOD_CAP) end
       end
       if iDummyBiomod then
         local cur = city:GetNumRealBuilding(iDummyBiomod)
         if cur ~= want then
           city:SetNumRealBuilding(iDummyBiomod, want)
-          if DEBUG then print(string.format("[Biomod] %s pop=%d -> stacks %d (was %d)",
-            city:GetName(), city:GetPopulation(), want, cur)) end
+          if DEBUG then
+            print(string.format("[Biomod] %s pop=%d -> stacks %d (was %d)",
+              city:GetName(), city:GetPopulation(), want, cur))
+          end
         end
       end
     end
   end
 
-  -- (comment translated to English)
-  GameEvents.PlayerDoTurn.Add(function(iPlayer)
-    UpdateBiomodPopStacks(Players[iPlayer])
-  end)
-end
+  -- ====== ECTO (군사 10당 스택, 트리거 도시들에 적용) ======
+  local UNITS_PER   = 10
+  local ECTO_CAP    = 20
+  local iDummyEcto  = GameInfoTypes.BUILDING_DUMMY_MIL10_STACK
+  local iTriggerEcto= GameInfoTypes.BUILDING_FW_ECTOGENESIS_POD
+  if not iDummyEcto   then print("[Ecto][ERROR] Dummy BUILDING_DUMMY_MIL10_STACK not found") end
+  if not iTriggerEcto then print("[Ecto][ERROR] Trigger BUILDING_FW_ECTOGENESIS_POD not found") end
 
-------------------------------------------------------------
--- Ectogenesis Pod: military-per-10 -> dummy stacks (cap 20)
--- * Dummy   : BUILDING_DUMMY_MIL10_STACK
--- * Trigger : BUILDING_FW_ECTOGENESIS_POD (apply only to cities with the building)
-------------------------------------------------------------
-do
-  local DEBUG     = true   -- after verification false
-  local UNITS_PER = 10
-  local STACK_CAP = 20
-
-  local iDummy   = GameInfoTypes.BUILDING_DUMMY_MIL10_STACK
-  local iTrigger = GameInfoTypes.BUILDING_FW_ECTOGENESIS_POD
-
-  if not iDummy   then print("[FW][ERROR] Dummy BUILDING_DUMMY_MIL10_STACK not found") end
-  if not iTrigger then print("[FW][ERROR] Trigger BUILDING_FW_ECTOGENESIS_POD not found") end
-
-  -- military unit detection: VP/ compatible
   local function IsMilitaryUnit(u)
     if not u then return false end
-    -- 1) prefer API if available
     if u.IsCombatUnit and u:IsCombatUnit() then
-      -- some DLLs IsCivilianUnit check only if present
-      if u.IsCivilianUnit then
-        return not u:IsCivilianUnit()
-      end
+      if u.IsCivilianUnit and u:IsCivilianUnit() then return false end
       return true
     end
-    -- 2) fallback: combat strength based(civilian/ often 0)
     if u.GetCombatStrength and u:GetCombatStrength() > 0 then return true end
-    -- 3) last resort: domain/unit-combat type could filter by risk of overfitting conservatively false
     return false
   end
 
@@ -299,28 +316,28 @@ do
     return n
   end
 
-  local function CityHasTrigger(city)
-    return iTrigger and city:IsHasBuilding(iTrigger)
-  end
+  local function UpdateEctoForPlayer(p)
+    if not IsValidPlayer(p) then return end
+    local has = MapModData.ECTO_HAS_TRIGGER[p:GetID()]
+    if has == nil then
+      has = RecalcHasTriggerFor(p, iTriggerEcto, MapModData.ECTO_HAS_TRIGGER, "Ecto")
+    end
+    if not has then return end  -- ★ 트리거 없으면 스킵
 
-  local function UpdateStacks(p)
-    if not p or not p:IsAlive() then return end
-
-    -- player's total military units common stack count
     local total  = CountMilitaryUnits(p)
     local stacks = math.floor(total / UNITS_PER)
-    if STACK_CAP then stacks = math.min(stacks, STACK_CAP) end
+    if ECTO_CAP then stacks = math.min(stacks, ECTO_CAP) end
+
     if DEBUG then
       print(string.format("[Ecto] Player %d mil=%d -> stacks=%d", p:GetID(), total, stacks))
     end
 
-    -- apply stacks only to cities with the trigger building
-    if iDummy then
+    if iDummyEcto then
       for city in p:Cities() do
-        local want = CityHasTrigger(city) and stacks or 0
-        local cur  = city:GetNumRealBuilding(iDummy)
+        local want = city:IsHasBuilding(iTriggerEcto) and stacks or 0
+        local cur  = city:GetNumRealBuilding(iDummyEcto)
         if cur ~= want then
-          city:SetNumRealBuilding(iDummy, want)
+          city:SetNumRealBuilding(iDummyEcto, want)
           if DEBUG then
             print(string.format("[Ecto]  %s set %d (was %d)", city:GetName(), want, cur))
           end
@@ -329,65 +346,84 @@ do
     end
   end
 
-  -- (comment translated to English)
+  -- ====== 이벤트 훅 ======
+
+  -- 턴 시작: 두 시스템 모두, "트리거 가진 플레이어만" 업데이트
   GameEvents.PlayerDoTurn.Add(function(iPlayer)
-    UpdateStacks(Players[iPlayer])
+    local p = Players and Players[iPlayer] or nil
+    if not IsValidPlayer(p) then return end
+    if MapModData.BIOMOD_HAS_TRIGGER[iPlayer] then UpdateBiomodForPlayer(p) end
+    if MapModData.ECTO_HAS_TRIGGER[iPlayer]  then UpdateEctoForPlayer(p)   end
   end)
-end
 
-
---======================================
--- FW_SpawnFX_Minimal.lua (UI context)
---======================================
-print("[FW]SpawnFX_Minimal.lua loaded (Space Marines only)")
-
-local HAS_UI_API = (Events and Events.GameplayFX and Events.SerialEventUnitCreated)
-if not HAS_UI_API then
-  print("[FW]SpawnFX_Minimal: UI API missing. Skipping.")
-else
-  include("FLuaVector.lua")
-  if not ToHexFromGrid then
-    print("[FW]SpawnFX_Minimal: FLuaVector missing. Skipping.")
-  else
-    if __FW_SpawnFX_Minimal_registered then
-      print("[FW]SpawnFX_Minimal: already registered, skipping duplicate.")
-    else
-      __FW_SpawnFX_Minimal_registered = true
-
-      -- target unit: Space Marines
-      local TARGET_UNIT = GameInfoTypes.UNIT_FW_SPACEMARINES
-
-      -- FX / SFX
-      local FX_IDS = { "EFFECT_EXPLOSION_MEDIUM", "EFFECT_SMOKE_PLUME" }
-      local SFX_IDS = { "AS2D_SFX_EXPLOSION", "AS2D_UNIT_BOMBARD" }
-
-      local function PlayFX(x, y)
-        local hex = ToHexFromGrid(Vector2(x, y))
-        for _, fx in ipairs(FX_IDS) do
-          Events.GameplayFX(hex.x, hex.y, -1, fx)
-        end
-        if Events.AudioPlay2DSound then
-          for _, sfx in ipairs(SFX_IDS) do
-            Events.AudioPlay2DSound(sfx)
-          end
+  -- 게임 시작 시 1회 트리거 보유 스캔
+  if Events and Events.SequenceGameInitComplete then
+    Events.SequenceGameInitComplete.Add(function()
+      for iPlayer = 0, GameDefines.MAX_CIV_PLAYERS - 1 do
+        local p = Players and Players[iPlayer] or nil
+        if IsValidPlayer(p) then
+          RecalcHasTriggerFor(p, iTriggerBiomod, MapModData.BIOMOD_HAS_TRIGGER, "Biomod")
+          RecalcHasTriggerFor(p, iTriggerEcto,  MapModData.ECTO_HAS_TRIGGER,  "Ecto")
         end
       end
+    end)
+  end
 
-      Events.SerialEventUnitCreated.Add(function(iPlayer, iUnit)
-        local p = Players[iPlayer]; if not p then return end
-        local u = p:GetUnitByID(iUnit); if not u then return end
-        if u:GetUnitType() ~= TARGET_UNIT then return end
-        local plot = u:GetPlot(); if not plot then return end
-        PlayFX(plot:GetX(), plot:GetY())
-      end)
+  -- 건물 지어짐/판매: 해당 캐시 갱신 후 즉시 재적용
+  if GameEvents and GameEvents.CityConstructed then
+    GameEvents.CityConstructed.Add(function(iPlayer, iCity, iBuildingType, bGold, bFaith)
+      local p = Players and Players[iPlayer] or nil
+      if not IsValidPlayer(p) then return end
+      if iBuildingType == iTriggerBiomod then
+        MapModData.BIOMOD_HAS_TRIGGER[iPlayer] = true
+        UpdateBiomodForPlayer(p)
+      elseif iBuildingType == iTriggerEcto then
+        MapModData.ECTO_HAS_TRIGGER[iPlayer] = true
+        UpdateEctoForPlayer(p)
+      end
+    end)
+  end
 
-      print("[FW]SpawnFX_Minimal: registered (Space Marines only).")
-    end
+  if GameEvents and GameEvents.CitySoldBuilding then
+    GameEvents.CitySoldBuilding.Add(function(iPlayer, iCity, iBuildingType)
+      local p = Players and Players[iPlayer] or nil
+      if not IsValidPlayer(p) then return end
+
+      if iBuildingType == iTriggerBiomod then
+        local still = RecalcHasTriggerFor(p, iTriggerBiomod, MapModData.BIOMOD_HAS_TRIGGER, "Biomod")
+        if not still and iDummyBiomod then
+          -- 잔여 더미 정리
+          for city in p:Cities() do
+            local cur = city:GetNumRealBuilding(iDummyBiomod)
+            if cur ~= 0 then
+              city:SetNumRealBuilding(iDummyBiomod, 0)
+              if DEBUG then
+                print(string.format("[Biomod]  %s cleared dummy (was %d)", city:GetName(), cur))
+              end
+            end
+          end
+        else
+          UpdateBiomodForPlayer(p)
+        end
+      elseif iBuildingType == iTriggerEcto then
+        local still = RecalcHasTriggerFor(p, iTriggerEcto, MapModData.ECTO_HAS_TRIGGER, "Ecto")
+        if not still and iDummyEcto then
+          for city in p:Cities() do
+            local cur = city:GetNumRealBuilding(iDummyEcto)
+            if cur ~= 0 then
+              city:SetNumRealBuilding(iDummyEcto, 0)
+              if DEBUG then
+                print(string.format("[Ecto]  %s cleared dummy (was %d)", city:GetName(), cur))
+              end
+            end
+          end
+        else
+          UpdateEctoForPlayer(p)
+        end
+      end
+    end)
   end
 end
-
-
-
 
 --------------------------------------------------------------------------------------------------------------------------
 -- JFD_GetRandom

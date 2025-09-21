@@ -107,10 +107,12 @@
     <File md5="6032315024f0cbe141ea21a6eda9f715" import="0">Terrains/TerrainChanges.sql</File>
     <File md5="44C8297D50C8C1FC24D64C8014B5AC7E" import="0">Translations/Translation omissions and corrections.sql</File>
     <File md5="R032315024f0cbe141ea21a6eda9f715" import="0">Religions/ReligionChanges.sql</File>
+
+    <File md5="CT32315024f0cbe141ea21a6eda9f715" import="0">Lua/Errorfix.lua</File>
+
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>Buildings/GMOLaboratory/GMO_building.sql</UpdateDatabase>
       <UpdateDatabase>Buildings/Polarstation/PS_building.sql</UpdateDatabase>
       <UpdateDatabase>Buildings/RecruitmentOffice/RO_building.sql</UpdateDatabase>
       <UpdateDatabase>Buildings/BreedingCenter/BRC_building.sql</UpdateDatabase>
@@ -132,12 +134,16 @@
   </Actions>
   <EntryPoints>
     <EntryPoint type="InGameUIAddin" file="Buildings/Cemetery/Cemetery_building.lua">
-      <Name>Cemetery fonctions</Name>
+      <Name>Cemetery functions</Name>
       <Description>Functions for Cemetery</Description>
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="Buildings/Firestation/Firestation_building.lua">
 		<Name>Supermarket Function</Name>
 		<Description>Functions for Firestation</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Errorfix.lua">
+      <Name>Ecto Safety</Name>
+      <Description>Safety caps & filters for ECTO</Description>
     </EntryPoint>
   </EntryPoints>
 

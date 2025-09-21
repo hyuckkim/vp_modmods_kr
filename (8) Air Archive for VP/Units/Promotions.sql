@@ -55,19 +55,7 @@ WHERE Type = 'PROMOTION_CARRIER_OPS';
 INSERT OR IGNORE INTO UnitPromotions_YieldFromKills (PromotionType, YieldType, Yield) -- 없애고 싶으면 생략
 SELECT 'PROMOTION_CARRIER_OPS', 'YIELD_FAITH', 0 WHERE 0; -- 더미(예시: 아무것도 안 넣음)
 
-INSERT OR IGNORE INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
-('UNIT_EARLYMONOPLAN','PROMOTION_CARRIER_OPS'),
-('UNIT_JET27','PROMOTION_CARRIER_OPS'),
-('UNIT_LIGHTBOMBER','PROMOTION_CARRIER_OPS');
 
-INSERT OR IGNORE INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
-('UNIT_WWI_BOMBER','PROMOTION_AIRBASE_OPS'),
-('UNIT_TRIPLANE','PROMOTION_AIRBASE_OPS'),
-('UNIT_FIGHTER','PROMOTION_AIRBASE_OPS'),
-('UNIT_JET_FIGHTER','PROMOTION_AIRBASE_OPS'),
-('UNIT_BOMBER','PROMOTION_AIRBASE_OPS'),
-('UNIT_AMERICAN_B17','PROMOTION_AIRBASE_OPS'),
-('UNIT_STEALTH_BOMBER','PROMOTION_AIRBASE_OPS');
 
 --=======================================================
 -- Air fighters
@@ -80,7 +68,6 @@ INSERT INTO Unit_FreePromotions
 SELECT		'UNIT_EARLYMONOPLAN', PromotionType
 FROM Unit_FreePromotions WHERE (UnitType = 'UNIT_TRIPLANE');
 
-DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_EARLYMONOPLAN' AND PromotionType = 'PROMOTION_AIRBASE_OPS';
 
 --------------------------------
 -- Early Jet
@@ -103,6 +90,7 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, PromotionType)
 SELECT		('UNIT_JET27'), PromotionType
 FROM Unit_FreePromotions WHERE (UnitType = 'UNIT_FIGHTER');
+
 --------------------------------
 -- MIG 29
 --------------------------------
@@ -125,7 +113,6 @@ INSERT INTO Unit_FreePromotions
 SELECT		('UNIT_ADVJET'), PromotionType
 FROM Unit_FreePromotions WHERE (UnitType = 'UNIT_JET_FIGHTER');
 
-DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ADVJET' AND PromotionType = 'PROMOTION_AIRBASE_OPS';
 
 --=======================================================
 -- Bombers
@@ -138,7 +125,6 @@ INSERT INTO Unit_FreePromotions
 SELECT		'UNIT_LIGHTBOMBER', PromotionType
 FROM Unit_FreePromotions WHERE (UnitType = 'UNIT_WWI_BOMBER');
 
-DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_LIGHTBOMBER' AND PromotionType = 'PROMOTION_AIRBASE_OPS';
 
 --------------------------------
 -- Strategic bomber
