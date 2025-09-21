@@ -105,7 +105,7 @@ Source: "..\Wonder Race (v 7) KR\*"; DestDir: "{app}\MODS\Wonder Race (v 7) KR";
 
 ;Source: "..\!Jarcast's Cities of Marble for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jcm
 ;Source: "..\!Jarcast's Cities of Marble for VP (v 3) INT\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: jcm
-Source: "..\!Jarcast's Hidden Wonders (VP) (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jhw
+Source: "..\!Jarcast's Hidden Wonders (VP) (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jhw
 Source: "..\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion recursesubdirs;	Components: jhw
 Source: "..\!Jarcast's Ndongo-Matamba for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Ndongo-Matamba for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jnm
 Source: "..\!Jarcast's The Navajo for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's The Navajo for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jtn
@@ -460,7 +460,9 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 3)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) KR (v 2)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) KR (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) (v 2)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Ndongo-Matamba for VP (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Ndongo-Matamba for VP (v 2)"
