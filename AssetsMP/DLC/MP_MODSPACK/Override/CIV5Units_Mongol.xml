@@ -7884,7 +7884,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FIRESTATION_STRATEGY"> 
 			<Text>
-				Building a fire station reduces the city's requirements.
+				Building a fire brigade increases the city's tile construction speed, accelerating the Golden Age of your civilization.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FIRESTATION_TEXT"> 
@@ -8927,7 +8927,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ECOSANCTUARY_HELP"> 
 			<Text>
-				+[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_PRODUCTION] Production on worked Camps, Brazilwood Camps, Lumber Mills, Nature Reserves, and Eco-Villages. All [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Eco-Sanctuaries[ENDCOLOR] yield +[COLOR_POSITIVE_TEXT]1[ENDCOLOR] [ICON_CULTURE] Culture. Converts [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] of city [ICON_PRODUCTION] Production each turn into [ICON_CULTURE] Culture. +[COLOR_POSITIVE_TEXT]15%[ENDCOLOR] [ICON_TOURISM] Tourism in the city.[NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom and [ICON_RELIGION] Religious Unrest by [COLOR_POSITIVE_TEXT]1[ENDCOLOR].[NEWLINE][NEWLINE]Requires a [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Pharmacy[ENDCOLOR] and cannot be built if the city has a [COLOR_NEGATIVE_TEXT]Vertical Farm[ENDCOLOR].
+				+[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_PRODUCTION] Production on worked Camps, Brazilwood Camps, Lumber Mills, Nature Reserves, and Eco-Villages. All [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Eco-Sanctuaries[ENDCOLOR] yield +[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_CULTURE] Culture. Converts [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] of city [ICON_PRODUCTION] Production each turn into [ICON_CULTURE] Culture. +[COLOR_POSITIVE_TEXT]15%[ENDCOLOR] [ICON_TOURISM] Tourism in the city.[NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom and [ICON_RELIGION] Religious Unrest by [COLOR_POSITIVE_TEXT]1[ENDCOLOR].[NEWLINE][NEWLINE]Requires a [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Pharmacy[ENDCOLOR] and cannot be built if the city has a [COLOR_NEGATIVE_TEXT]Vertical Farm[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_ECOSANCTUARY_PEDIA"> 
@@ -10132,7 +10132,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_VERTICAL_FARM_HELP"> 
 			<Text>
-				Worked Farms, Plantations, Terrace Farms, Land Reclamations, and Hydroponic Districts in the city yield +[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_FOOD]Food. All [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Vertical Farms[ENDCOLOR] provide +[COLOR_POSITIVE_TEXT]1[ENDCOLOR] [ICON_RESEARCH]Science. Each turn provides [ICON_RESEARCH]Science equal to [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] of the city’s [ICON_FOOD]Food. [NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3]Unhappiness from [ICON_RESEARCH]Illiteracy and [ICON_URBANIZATION]Urbanization by [COLOR_POSITIVE_TEXT]1[ENDCOLOR] each. [NEWLINE][NEWLINE]Requires a [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Pharmacy[ENDCOLOR] in the city and cannot be built if there is a [COLOR_NEGATIVE_TEXT]Xenofungus Agriculture Lab[ENDCOLOR].
+				Worked Farms, Plantations, Terrace Farms, Land Reclamations, and Hydroponic Districts in the city yield +[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_FOOD]Food. All [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Vertical Farms[ENDCOLOR] provide +[COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_RESEARCH]Science. Each turn provides [ICON_RESEARCH]Science equal to [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] of the city’s [ICON_FOOD]Food. [NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3]Unhappiness from [ICON_RESEARCH]Illiteracy and [ICON_URBANIZATION]Urbanization by [COLOR_POSITIVE_TEXT]1[ENDCOLOR] each. [NEWLINE][NEWLINE]Requires a [COLOR_PLAYER_NETHERLANDS_BACKGROUND]Pharmacy[ENDCOLOR] in the city and cannot be built if there is a [COLOR_NEGATIVE_TEXT]Xenofungus Agriculture Lab[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FW_VERTICAL_FARM_PEDIA"> 
@@ -189123,7 +189123,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FIRESTATION_STRATEGY"> 
 			<Text>
-				소방대를 건설하면 도시의 전역 요구가 감소합니다.
+				소방대를 건설하면 도시의 타일 건설 속도가 빨라집니다. 문명의 황금기를 더 빠르게 오게 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_FIRESTATION_TEXT"> 
