@@ -817,6 +817,9 @@ VALUES	('BUILDING_LAFERRIERE',	'IMPROVEMENT_FORT',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_CULTURE',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_PRODUCTION',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_FOOD',		2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_CULTURE',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_CULTURE',	2),
@@ -826,6 +829,9 @@ VALUES	('BUILDING_LAFERRIERE',	'IMPROVEMENT_FORT',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_CULTURE',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_PRODUCTION',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_FOOD',		2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_CULTURE',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_CULTURE',	2);
@@ -927,6 +933,11 @@ INSERT INTO Units
 		(Type,					Class, 							ShowInPedia, Moves,		Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, MoveAfterPurchase, BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, PrereqTech, HurryCostModifier, WorkRate, UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, PurchaseCooldown)
 SELECT	'UNIT_ARCHAEOLOGIST_CM','UNITCLASS_ARCHAEOLOGIST_CM',	0,			 Moves+1,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, 1,				 	BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, PrereqTech, 0,					WorkRate*2, UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_ARCHAEOLOGIST';
+
+INSERT INTO Belief_SpecificFaithUnitPurchase
+		(BeliefType, UnitType)
+SELECT	'BELIEF_UNITY_OF_PROPHETS', Type
+FROM Units WHERE Class = 'UNITCLASS_ARCHAEOLOGIST_CM';
 
 INSERT INTO UnitGameplay2DScripts 	
 		(UnitType, 				SelectionSound, FirstSelectionSound)
@@ -1032,7 +1043,7 @@ UPDATE Buildings SET
 	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_BROADWAY'),
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_BROADWAY'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_BROADWAY'), Water = 1, MinAreaSize = 10,
-	NumTradeRouteBonus = 1, SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 4
+	/*NumTradeRouteBonus = 1,*/ SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 4
 WHERE Type = 'BUILDING_GOLDEN_GATE';
 
 INSERT INTO Building_FreeUnits 
@@ -1057,13 +1068,52 @@ INSERT INTO Policy_TradeRouteYieldChange
 		(PolicyType, 			DomainType,			YieldType, 			Yield)
 SELECT 	'POLICY_GOLDEN_GATE', 	'DOMAIN_LAND',		'YIELD_GOLDEN_AGE_POINTS', 	5 UNION ALL
 SELECT 	'POLICY_GOLDEN_GATE', 	'DOMAIN_SEA',		'YIELD_GOLDEN_AGE_POINTS', 	5 ;
+------------------------------------------------------------------------------------------------------------------------------------------
+-- JOHNS HOPKINS HOSPITAL
+------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE Buildings SET
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_EMPIRE_STATE_BUILDING'),
+	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_EMPIRE_STATE_BUILDING'),
+	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_HOSPITAL'),
+	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_EMPIRE_STATE_BUILDING'),
+	FreeBuilding = 'BUILDINGCLASS_DUMMY_JOHNS_HOPKINS', FreeBuildingThisCity = 'BUILDINGCLASS_HOSPITAL', Flat= 1
+WHERE Type = 'BUILDING_JOHNS_HOPKINS';
+
+INSERT INTO Building_YieldChanges
+(BuildingType,				YieldType,	Yield) VALUES
+('BUILDING_JOHNS_HOPKINS',	'YIELD_FOOD',	10),
+('BUILDING_JOHNS_HOPKINS',	'YIELD_SCIENCE', 4);
+
+INSERT INTO Building_ImprovementYieldChangesGlobal
+(BuildingType,				ImprovementType,		YieldType,		Yield)	VALUES
+('BUILDING_JOHNS_HOPKINS',	'IMPROVEMENT_ACADEMY',	'YIELD_FOOD',	3);
+		
+INSERT INTO Building_SpecialistYieldChanges
+		(BuildingType,				SpecialistType,			YieldType,		Yield) 
+VALUES	('BUILDING_JOHNS_HOPKINS',	'SPECIALIST_SCIENTIST',	'YIELD_FOOD',		3);
+
+INSERT INTO Building_BuildingClassYieldChanges
+		(BuildingType, 				BuildingClassType,		YieldType, YieldChange)
+SELECT 	'BUILDING_JOHNS_HOPKINS', 'BUILDINGCLASS_HOSPITAL', 'YIELD_SCIENCE', 2;
+
+INSERT OR REPLACE INTO BuildingClasses
+(DefaultBuilding, 					Type,										Description) VALUES	
+('BUILDING_DUMMY_JOHNS_HOPKINS',	'BUILDINGCLASS_DUMMY_JOHNS_HOPKINS',		'TXT_KEY_BUILDING_JETAVANARAMAYA');
+
+INSERT OR REPLACE INTO Buildings
+(Type, 						 		BuildingClass, 							IsDummy,	Cost,	FaithCost,	GreatWorkCount,	PrereqTech,	MinAreaSize,	Description) VALUES	
+('BUILDING_DUMMY_JOHNS_HOPKINS', 	'BUILDINGCLASS_DUMMY_JOHNS_HOPKINS',	1,			-1,		-1,			-1,				null,		-1,				'TXT_KEY_BUILDING_JOHNS_HOPKINS');
+
+INSERT	INTO Building_YieldFromTech (BuildingType, YieldType, Yield)
+SELECT 'BUILDING_DUMMY_JOHNS_HOPKINS', 'YIELD_FOOD', 75;
 --======================================================================================================================================--
 -- ATOMIC ERA
 --======================================================================================================================================--
 -- CHANGI AIRPORT
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = 2100, PrereqTech = 'TECH_ROCKETRY', NumPoliciesNeeded = 22,
+	Cost = 2100, NumPoliciesNeeded = 22,
+	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_AIRPORT'),	
 	FreeBuildingThisCity = 'BUILDINGCLASS_AIRPORT', CapitalOnly = 1
 WHERE Type = 'BUILDING_CHANGI_AIRPORT';
 

@@ -50,15 +50,21 @@ INSERT INTO JHWfVPConfig
 	('CAPITOLINE'),			-- Capitoline Museums
 	('VICTORIA_TERMINUS'),	-- Victoria Terminus
 	('LAFERRIERE'),			-- Citadelle Laferrière 
+--	('HUMBERSTONE_STLAURA'),-- Humberstone-Santa Laura
 --	('OMBILIN_MINE'),		-- Ombilin Coal Mine
 	('TE_TII_MARAE'),		-- Te Tii Marae
 	('KASUBI_TOMBS'),		-- Muzibu Azaala Mpanga
 	--------------MODERN---------------------------------------------------------------
 	('GOLDEN_GATE'),		-- Golden Gate Bridge
+	('JOHNS_HOPKINS'),		-- Johns Hopkins Hospital
+--	('MAX_PLANCK_SOC'),		-- Max Planck Society 
 	--------------ATOMIC---------------------------------------------------------------	
 --	('NEFT_DASHLARI'),		-- Neft Dashlari
 	('CHANGI_AIRPORT'),		-- Singapore Airport
 	('WATSON_RC');			-- IBM Watson Research Center
+--	('KARAKORAM_HIGHWAY'),	-- Karakoram Highway
+	--------------INFORMATION----------------------------------------------------------	
+--	('BURJ_KHALIFA');		-- Burj Khalifa
 --======================================================================================================================================--
 -- WONDERS INITIAL CONFIGURATION
 --======================================================================================================================================--
@@ -119,15 +125,22 @@ UPDATE Buildings SET PortraitIndex = 18 WHERE Type='BUILDING_KESHGARH_QILA';
 UPDATE Buildings SET PortraitIndex = 19 WHERE Type='BUILDING_VICTORIA_TERMINUS';
 UPDATE Buildings SET PortraitIndex = 20 WHERE Type='BUILDING_LAFERRIERE';
 UPDATE Buildings SET PortraitIndex = 21 WHERE Type='BUILDING_TAKTSANG';
+--UPDATE Buildings SET PortraitIndex = 22 WHERE Type='BUILDING_HUMBERSTONE_STLAURA';
+--UPDATE Buildings SET PortraitIndex = 23 WHERE Type='BUILDING_OMBILIN_MINE';
 UPDATE Buildings SET PortraitIndex = 24 WHERE Type='BUILDING_HORYUJI';
 UPDATE Buildings SET PortraitIndex = 25 WHERE Type='BUILDING_TE_TII_MARAE';
+UPDATE Buildings SET PortraitIndex = 26 WHERE Type='BUILDING_JOHNS_HOPKINS';
+--UPDATE Buildings SET PortraitIndex = 27 WHERE Type='BUILDING_MAX_PLANCK_SOC';
 UPDATE Buildings SET PortraitIndex = 28 WHERE Type='BUILDING_GOLDEN_GATE';
+--UPDATE Buildings SET PortraitIndex = 29 WHERE Type='BUILDING_NEFT_DASHLARI';
 UPDATE Buildings SET PortraitIndex = 30 WHERE Type='BUILDING_CHANGI_AIRPORT';
 UPDATE Buildings SET PortraitIndex = 31 WHERE Type='BUILDING_WATSON_RC';
 UPDATE Buildings SET PortraitIndex = 32 WHERE Type='BUILDING_KELDUR_HALL';
 UPDATE Buildings SET PortraitIndex = 33 WHERE Type='BUILDING_KASUBI_TOMBS';
 UPDATE Buildings SET PortraitIndex = 34 WHERE Type='BUILDING_BANAUE';
 UPDATE Buildings SET PortraitIndex = 35 WHERE Type='BUILDING_SHAOLIN';
+--UPDATE Buildings SET PortraitIndex = 37 WHERE Type='BUILDING_BURJ_KHALIFA';
+--UPDATE Buildings SET PortraitIndex = 38 WHERE Type='BUILDING_KARAKORAM_HIGHWAY';
 
 UPDATE Buildings SET PortraitIndex = 36, IconAtlas='ATLAS_JAR_WONDERS' WHERE Type='BUILDING_PALACE_GARDEN';
 --======================================================================================================================================--

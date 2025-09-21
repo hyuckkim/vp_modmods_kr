@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="0b6a31c9-fdda-442b-898c-185a49f12d16" version="2">
+<Mod id="0b6a31c9-fdda-442b-898c-185a49f12d16" version="3">
   <Properties>
     <Name>!Jarcast's Hidden Wonders (VP)</Name>
     <Stability>Beta</Stability>
-    <Teaser>Adds 31 more World Wonders to the game.</Teaser>
-    <Description>31 new World Wonders.</Description>
+    <Teaser>Adds 32 more World Wonders to the game.</Teaser>
+    <Description>32 new World Wonders.</Description>
     <Authors>Jarcast</Authors>
     <HideSetupGame>0</HideSetupGame>
     <Homepage>https://forums.civfanatics.com/threads/jarcasts-hidden-wonders-for-vp.698137/</Homepage>
@@ -41,10 +41,14 @@
     <File md5="9C5E670F72E7A070C5752F9E28DF4470" import="1">Art/03- Renaissance/PADUA_GARDEN_splash.dds</File>
     <File md5="E4A673D0EB69469B5952B0CF52B8E8AF" import="1">Art/03- Renaissance/TAKTSANG_splash.dds</File>
     <File md5="703F1AD060F658B71FB2D3CEB2D7A94F" import="1">Art/04- Industrial/CAPITOLINE_splash.dds</File>
+    <File md5="35092849FE1B5FEE93B65479EA6C7910" import="1">Art/04- Industrial/HUMBERSTONE_STLAURA_splash.dds</File>
     <File md5="F57DFC90CA0E473D780BF0A016A2FA08" import="1">Art/04- Industrial/KASUBI_TOMBS_splash.dds</File>
     <File md5="CACEF5AB43E7913DBB29FE4CC633F87B" import="1">Art/04- Industrial/LAFERRIERE_splash.dds</File>
+    <File md5="B16621EA6FA67F76E2C110DB2676D762" import="1">Art/04- Industrial/OMBILIN_MINE_splash.dds</File>
     <File md5="02ADE045E391FEEBD88EF485577FBA1C" import="1">Art/04- Industrial/TE_TII_MARAE_splash.dds</File>
     <File md5="F8C529633EA6701B13D8ED44EEB0DF5D" import="1">Art/04- Industrial/VICTORIA_TERMINUS_splash.dds</File>
+    <File md5="FFCDC83A6BD8605B98CCE2B8ECD23197" import="1">Art/05- Modern/JOHNS_HOPKINS_splash.dds</File>
+    <File md5="D796F7075700F26E199F4E25B2CC555B" import="1">Art/05- Modern/MAX_PLANCK_SOC_splash.dds</File>
     <File md5="CFE130BE97BF1C0F91FA0AE7340C67DE" import="1">Art/06- Atomic Era/CHANGI_AIRPORT_splash.dds</File>
     <File md5="7EA65A7C3378B5C7E064B9D24836E4C8" import="1">Art/05- Modern/GOLDEN_GATE_splash.dds</File>
     <File md5="1148A4658A2436AD097D2D8547E27CDB" import="1">Art/01- Pre-Medieval/AKRAGATOS_splash.dds</File>
@@ -57,12 +61,15 @@
     <File md5="FF0756E60CDDF940C90F5ECFBEC69F88" import="1">Art/02- Medieval/ST_CATHERINE_splash.dds</File>
     <File md5="7E61EEF671A160B2D7276DC0B7C2A5B7" import="1">Art/03- Renaissance/CHANGDEOKGUNG_splash.dds</File>
     <File md5="18E29168D822054BB3EE7D8AF7A54F7C" import="1">Art/03- Renaissance/DAMNOEN_SADUAK_splash.dds</File>
+    <File md5="8C01071D7B02481831C595AA076BB872" import="1">Art/06- Atomic Era/KARAKORAM_HIGHWAY_splash.dds</File>
+    <File md5="0D95CE588AB48041319FFA5344893E30" import="1">Art/06- Atomic Era/NEFT_DASHLARI_splash.dds</File>
     <File md5="1EEEFFA46B35E190FF4F5A19B6EA19F0" import="1">Art/06- Atomic Era/WATSON_RC_splash.dds</File>
-    <File md5="E9C71EB3A9A4FD7FF32F98457205406B" import="1">Art/Jar_Wonders_128.dds</File>
-    <File md5="8231FEE0BC752E715993D9472CCDF22B" import="1">Art/Jar_Wonders_256.dds</File>
-    <File md5="1D114D0973A1E1C8C13B45CFAE8A7BFE" import="1">Art/Jar_Wonders_45.dds</File>
-    <File md5="05E4E4C91F98DDD982564F10543226A8" import="1">Art/Jar_Wonders_64.dds</File>
-    <File md5="CF09F8FAB03DB559C77D67952AB997C1" import="1">Art/Jar_Wonders_80.dds</File>
+    <File md5="3B1DCBC31264F71B331AE60915083878" import="1">Art/07- Information Era/BURJ_KHALIFA_splash.dds</File>
+    <File md5="A0D0FB167C61EB5D653825ABA5E8F4BB" import="1">Art/Jar_Wonders_128.dds</File>
+    <File md5="C4F9A5D649F11C1E54754CF8F36A3B3F" import="1">Art/Jar_Wonders_256.dds</File>
+    <File md5="A7524070A92C715541DC9EC81079AAC4" import="1">Art/Jar_Wonders_45.dds</File>
+    <File md5="954DE99488F0F290B1291316127C1E60" import="1">Art/Jar_Wonders_64.dds</File>
+    <File md5="10E4D741FD6D281B3116E427FFA896F7" import="1">Art/Jar_Wonders_80.dds</File>
     <File md5="E782D4ED779594CF66480A76B2CAE846" import="1">Art/Units/atlas_Heshang045.dds</File>
     <File md5="9AB043B255AC0FC75EDD24559F9AB2E2" import="1">Art/Units/atlas_Heshang064.dds</File>
     <File md5="E563DF221E1A750172554AACA318858D" import="1">Art/Units/atlas_Heshang080.dds</File>
@@ -70,13 +77,13 @@
     <File md5="C00893975D05A9E7584CB9F92825DDEB" import="1">Art/Units/atlas_Heshang256.dds</File>
     <File md5="A180E9286B15E098A854532BD1E3B247" import="1">Art/Units/flag_Heshang.dds</File>
     <File md5="A159BF87CBF1708740A84EBF2284A9DA" import="1">Art/Units/sv_Heshang.dds</File>
-    <File md5="297BFF1A036AB8263B7E51BDBEC2B89D" import="0">Core/General_Defines.sql</File>
-    <File md5="FE9843F0656091E758EF709F1BA789C1" import="0">Core/Wonders_GameText.sql</File>
-    <File md5="1785875FF09FD255584D85C47F9F645B" import="0">Core/WWonders_Defines.sql</File>
+    <File md5="F10307CF6F03B06784217BEF09606511" import="0">Core/General_Defines.sql</File>
+    <File md5="1E539EA3AE8CD95CD2D1BBC63272B950" import="0">Core/Wonders_GameText.sql</File>
+    <File md5="A5DFA3C5D28EEC680DA896FC9559E02F" import="0">Core/WWonders_Defines.sql</File>
     <File md5="6C1749894C40074E5150EDC3CA5086FD" import="0">Lua/highlight.lua</File>
-    <File md5="D9146E54DE0AD450EE8CAA8C61C66E46" import="1">Lua/Utilities/Cunt15_IteratorPack_v3.lua</File>
-    <File md5="5690A1B2ACA2729FD9D55156E232AB1A" import="1">Lua/Utilities/PlotIterators.lua</File>
-    <File md5="8368C6A41D53D3E675BCCB00FF55AB35" import="0">Lua/WWonders_Functions.lua</File>
+    <File md5="B9AB4AA88A731DD7C3DBF155828B65E8" import="0">Lua/WWonders_Functions.lua</File>
+    <File md5="7E9FECFF1AA658D2C0ACBC536AC806CF" import="1">Popup/WonderPopup.lua</File>
+    <File md5="C5FF77C0C8C2D752C3AB0247156710E3" import="1">Popup/WonderPopup.xml</File>
   </Files>
   <Actions>
     <OnModActivated>

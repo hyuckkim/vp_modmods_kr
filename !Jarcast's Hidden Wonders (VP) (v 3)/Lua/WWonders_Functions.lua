@@ -30,6 +30,30 @@ function Game_IsUsingMod(modID)
 	return false
 end
 -------------------------------------------------------------------------------------------------------------------------
+-- Get the median of a table.
+function stats.median( t )
+  local temp={}
+
+  -- deep copy table so that when we sort it, the original is unchanged
+  -- also weed out any non numbers
+  for k,v in pairs(t) do
+    if type(v) == 'number' then
+      table.insert( temp, v )
+    end
+  end
+
+  table.sort( temp )
+
+  -- If we have an even number of table elements or odd.
+  if math.fmod(#temp,2) == 0 then
+    -- return mean value of middle two elements
+    return ( temp[#temp/2] + temp[(#temp/2)+1] ) / 2
+  else
+    -- return middle element
+    return temp[math.ceil(#temp/2)]
+  end
+end
+-------------------------------------------------------------------------------------------------------------------------
 tUniqueVillages = {}
 tUniqueVillages[GameInfoTypes.IMPROVEMENT_TRADING_POST] = true
 if Game_IsUsingMod("cc3e1671-2832-40dc-9bfd-8e053d3b76b2") then
@@ -462,6 +486,29 @@ function Jar_GoldenGateWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold
 	end	
 end
 GameEvents.CityConstructed.Add(Jar_GoldenGateWonderDummyPolicy)
+--==========================================================================================================================
+-- Johns Hopkins Hospital
+--==========================================================================================================================
+function Jar_CanConstructJohnsHopkinsHospital(ePlayer, eCity, eBuilding)
+	local pPlayer = Players[ePlayer]
+	if not pPlayer:IsAlive() then return false end
+	local pCity = pPlayer:GetCityByID(eCity)
+	local pPlot = pCity:Plot()
+	
+	if eBuilding == GameInfoTypes.BUILDING_JOHNS_HOPKINS then
+		local tPlayersSciencePerTurn = {}
+		for iOPlayer = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
+			local oPlayer = Players[iOPlayer]
+			table.insert(tPlayersSciencePerTurn, oPlayer:GetScienceTimes100() /100)
+		end
+		local median = stats.median( tPlayersSciencePerTurn )
+		local playerScience = pPlayer:GetScienceTimes100() /100
+		print("John Hopkins, science per turn: " .. median .. " vs. " .. playerScience .. " (" .. Locale.ConvertTextKey( GameInfo.Civilizations[pPlayer:GetCivilizationType()].ShortDescription ) .. ")." )
+		return playerScience >= median
+	end
+	return true
+end
+GameEvents.CityCanConstruct.Add(Jar_CanConstructJohnsHopkinsHospital)
 --==========================================================================================================================
 -- Changi Airport
 --==========================================================================================================================
