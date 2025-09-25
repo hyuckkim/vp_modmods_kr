@@ -114,8 +114,12 @@ function SetActivePlayer(iPlayer, iPrevPlayer)
 
   if (gGoldAlerts[gActivePlayer] == nil) then
     local sText = gModDB.GetValue(string.format("GoldAlerts_%i_Text", gActivePlayer)) or Locale.ConvertTextKey("TXT_KEY_GOLD_ALERT_DEFAULT_MESSAGE")
-    local iAmount = tonumber(gModDB.GetValue(string.format("GoldAlerts_%i_Amount", gActivePlayer)) or -1)
-
+    local tmpAmount = gModDB.GetValue(string.format("GoldAlerts_%i_Amount", gActivePlayer))
+	local iAmount = tonumber(tmpAmount)
+	if not iAmount then
+		iAmount = 90
+	end
+	
     gGoldAlerts[gActivePlayer] = {Amount=iAmount, Text=sText}
   end
 

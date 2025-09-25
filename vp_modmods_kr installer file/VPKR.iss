@@ -48,11 +48,11 @@ Source: "..\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Pat
 Source: "..\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion recursesubdirs;	Components: vp
 Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion recursesubdirs; Components:  vp
 Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vp
-Source: "..\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
+Source: "..\(4b) Promotion Tree for VP\*"; DestDir: "{app}\MODS\(4b) Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
 Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion recursesubdirs;	Components: vpc
 Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion recursesubdirs;	Components: vpc
-Source: "..\(over) More Unique Components for VP (v 89)\*"; DestDir: "{app}\MODS\(over) More Unique Components for VP (v 89)"; Flags: ignoreversion recursesubdirs; Components: vpuc
-Source: "..\(overL) More Unique Components for VP (v 89) INT\*"; DestDir: "{app}\MODS\(overL) More Unique Components for VP (v 89) INT"; Flags: ignoreversion recursesubdirs; Components: vpuc
+Source: "..\(7) More Unique Components for VP (v 89)\*"; DestDir: "{app}\MODS\(7) More Unique Components for VP (v 89)"; Flags: ignoreversion recursesubdirs; Components: vpuc
+Source: "..\(7L) More Unique Components for VP (v 89) INT\*"; DestDir: "{app}\MODS\(7L) More Unique Components for VP (v 89) INT"; Flags: ignoreversion recursesubdirs; Components: vpuc
 
 ;Source: "..\(ui) City-States Leaders for VP KR\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP KR"; Flags: ignoreversion recursesubdirs;	Components: csl
 Source: "..\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion recursesubdirs;	Components: le
@@ -63,14 +63,14 @@ Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder P
 Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
 Source: "..\Elephant Sound When Circus Built (v 1)\*"; DestDir: "{app}\MODS\Elephant Sound When Circus Built (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ele
 Source: "..\Faster Non-Aircraft Animations (v 1)\*"; DestDir: "{app}\MODS\Faster Non-Aircraft Animations (v 1)"; Flags: ignoreversion recursesubdirs;	Components: fnaa
-Source: "..\InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 46)"; Flags: ignoreversion recursesubdirs;	Components: ige
+Source: "..\(-) InGame Editor+ (v 46)\*"; DestDir: "{app}\MODS\(-) InGame Editor+ (v 46)"; Flags: ignoreversion recursesubdirs;	Components: ige
 Source: "..\Large Minimap for VP wth EUI only (v 1)\*"; DestDir: "{app}\MODS\Large Minimap for VP wth EUI only (v 1)"; Flags: ignoreversion recursesubdirs;	Components: lm
 Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion recursesubdirs;	Components: leh
 Source: "..\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: leh
-Source: "..\Music Changer (v 2)\*"; DestDir: "{app}\MODS\Music Changer (v 2)"; Flags: ignoreversion recursesubdirs;	Components: music
+Source: "..\(-) Music Changer (v 2)\*"; DestDir: "{app}\MODS\(-) Music Changer (v 2)"; Flags: ignoreversion recursesubdirs;	Components: music
 Source: "..\Notification Settings (v 1)\*"; DestDir: "{app}\MODS\Notification Settings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ns
 Source: "..\Quick Animations (v 1)\*"; DestDir: "{app}\MODS\Quick Animations (v 1)"; Flags: ignoreversion recursesubdirs;	Components: qa
-Source: "..\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion recursesubdirs;	Components: qt
+Source: "..\(-) Quick Turns (v 10)\*"; DestDir: "{app}\MODS\(-) Quick Turns (v 10)"; Flags: ignoreversion recursesubdirs;	Components: qt
 Source: "..\Route Planner for VP (v 1)\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1)"; Flags: ignoreversion recursesubdirs;	Components: rp
 Source: "..\Route Planner for VP (v 1) INT\*"; DestDir: "{app}\MODS\Route Planner for VP (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: rp
 Source: "..\Sukritact's Civ VI Style City Names (v 1)\*"; DestDir: "{app}\MODS\Sukritact's Civ VI Style City Names (v 1)"; Flags: ignoreversion recursesubdirs;	Components: civ6
@@ -120,8 +120,8 @@ Source: "..\(9a) CAYM Balance Change\*"; DestDir: "{app}\MODS\(9a) CAYM Balance 
 Source: "..\(9b) CAYM Unit Change\*"; DestDir: "{app}\MODS\(9b) CAYM Unit Change"; Flags: ignoreversion recursesubdirs;	Components: caymb
 Source: "..\(9c) CAYM Improvement Change\*"; DestDir: "{app}\MODS\(9c) CAYM Improvement Change"; Flags: ignoreversion recursesubdirs;	Components: caymc
 Source: "..\(game) Capture+++ (v 5)\*"; DestDir: "{app}\MODS\(game) Capture+++ (v 5)"; Flags: ignoreversion recursesubdirs;	Components: gc
-Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
-Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
+Source: "..\(5) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(5) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
+Source: "..\(5L) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(5L) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
 Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: mw
 Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
@@ -161,6 +161,7 @@ Source: "..\JFD's Papal States for VP (v 10)\*"; DestDir: "{app}\MODS\JFD's Papa
 Source: "..\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) KR"; Flags: ignoreversion recursesubdirs;	Components: jfds
 Source: "..\Landmines for BNW (v 3)\*"; DestDir: "{app}\MODS\Landmines for BNW (v 3)"; Flags: ignoreversion recursesubdirs;	Components: mine
 Source: "..\Leugi's Israel for VP\*"; DestDir: "{app}\MODS\Leugi's Israel for VP"; Flags: ignoreversion recursesubdirs;	Components: li
+Source: "..\Lower Supply Cap for Vox Populi BETA (v 3)\*"; DestDir: "{app}\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"; Flags: ignoreversion recursesubdirs;	Components: lsc
 Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion recursesubdirs;	Components: miwsr
@@ -172,7 +173,7 @@ Source: "..\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MOD
 ;Source: "..\New Beliefs Mods KR\*"; DestDir: "{app}\MODS\New Beliefs Mods KR"; Flags: ignoreversion recursesubdirs;	Components: nbm
 Source: "..\Pontoon Bridges for VP (v 2)\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: pb
 Source: "..\Pontoon Bridges for VP (v 2) INT\*"; DestDir: "{app}\MODS\Pontoon Bridges for VP (v 2) INT"; Flags: ignoreversion recursesubdirs;	Components: pb
-Source: "..\Really Advanced Setup (v 15) KR\*"; DestDir: "{app}\MODS\Really Advanced Setup (v 15) KR"; Flags: ignoreversion recursesubdirs;	Components: ras
+Source: "..\(-) Really Advanced Setup (v 15) KR\*"; DestDir: "{app}\MODS\(-) Really Advanced Setup (v 15) KR"; Flags: ignoreversion recursesubdirs;	Components: ras
 Source: "..\Recon Pay (Core0) Terrain Cost (v 7)\*"; DestDir: "{app}\MODS\Recon Pay (Core0) Terrain Cost (v 7)"; Flags: ignoreversion recursesubdirs;	Components: rpc0
 Source: "..\Recon Pay (Core1) Exploration Balancer (v 3)\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3)"; Flags: ignoreversion recursesubdirs;	Components: rpc1
 Source: "..\Recon Pay (Core1) Exploration Balancer (v 3) INT\*"; DestDir: "{app}\MODS\Recon Pay (Core1) Exploration Balancer (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: rpc1
@@ -218,7 +219,7 @@ Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ig
 Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect\csbu
-Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"; Flags: ignoreversion recursesubdirs; Components: smm
+Source: "..\UI\UI_SukMainMenu_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu_KR"; Flags: ignoreversion recursesubdirs; Components: smm
 Source: "..\UI\UI_CustomModScreen\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen"; Flags: ignoreversion recursesubdirs; Components: cms
 Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: vp
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
@@ -228,6 +229,8 @@ Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP VPUI VPEX VPMA
 
 Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: Custom; Flags: disablenouninstallwarning
 Name: "vpnvc"; Description: "세계 의회 투표 문명 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
+Name: "lowcap\lsc"; Description: "보급 한도 감소 (Lower Supply Cap for Vox Populi BETA)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "lowcap\mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "textures"; Description: "지도 텍스처 선택"; Types: Custom; Flags: disablenouninstallwarning
 Name: "textures\at"; Description: "예술적인 질감 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "textures\vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
@@ -301,7 +304,6 @@ Name: "fa"; Description: "VP 미래 시대 (Future Age for VP)"; Types: VPEX VPM
 Name: "cayma"; Description: "CAYM의 밸런스 변경 (CAYM Balance Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "caymb"; Description: "CAYM의 유닛 변경 (CAYM Unit Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "caymc"; Description: "CAYM의 시설 변경 (CAYM Improvement Change)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "car"; Description: "정책과 개혁 (Civic And Reform)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 ;Name: "ed"; Description: "이벤트와 결정 (Events and Decisions)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -345,7 +347,6 @@ Name: "bn"; Description: "VP 아주 적은 필수품 (Bare Necessities for VP)";
 ;Name: "jbhmc"; Description: "Jarcast의 더 큰 Communitu_79a (Jarcast's Bigger Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "jeo"; Description: "Jarcast의 자원 추출기지 (Jarcast's Extraction Outpost)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
-
 Name: "cli"; Description: "식민지 유산 VP 이누이트 (Colonialist Legacies' Inuit for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gfpa"; Description: "Gwennog의 VP 프랑스 - 필리프 오귀스트 (Gwennog's France - Philippe Auguste for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "gl"; Description: "Gwennog & Hinin의 루이지애나 (GH's Louisiana - Joseph Beausoleil Broussard for VP)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -382,6 +383,7 @@ Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\MP_MODSPACK"
 Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\Artful Textures"
 Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\VT"
 Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"
+Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu_KR"
 Type: filesandordirs; Name: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\cache"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\Text\VPUI_tips_ko_kr.xml"
@@ -395,6 +397,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(4a) Civ IV Diplomatic Features INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(4aL) UI - Promotion Tree for VP Localized (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(4bL) UI - Promotion Tree for VP Localized (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(4b) Promotion Tree for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(5a) More Luxuries INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(6b) Community Balance Overhaul - CF (EUI) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(7bL) UI - Promotion Tree for VP Localized (v 1)"
@@ -421,11 +424,14 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Elephant Sound When Circus Built (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Faster Non-Aircraft Animations (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\InGame Editor+ (v 46)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(-) InGame Editor+ (v 46)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Large Minimap for VP wth EUI only (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\More Right Click Shortcuts (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Music Changer (v 2)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(-) Music Changer (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Quick Animations (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Quick Turns (v 10)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(-) Quick Turns (v 10)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Route Planner for VP (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Route Planner for VP (v 1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\UI - Antiquity Site Tooltips (v 5)"
@@ -539,6 +545,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Leugi's Israel for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Longer Eras - Historic (v 8)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Longer Eras - Historic (v 8) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"
@@ -555,6 +562,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Really Advanced Setup (v 15) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Really Advanced Setup INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Really Advanced Setup (v 15) KR"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(-) Really Advanced Setup (v 15) KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Reforestation (v 9)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Religion - Permanent Pantheons (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Sukritact's Civ VI Style City Names (v 1)"

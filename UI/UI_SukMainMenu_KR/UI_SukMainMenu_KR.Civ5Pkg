@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ5Package>
+  <GUID>{aa4f4a79-5e98-4b99-9451-3223afa00e05}</GUID>
+	<SteamApp>235580</SteamApp>
+  <Version>1</Version>
+  <Priority>251</Priority>
+  <Key>bf6d34a0074b7ad4b1d1716475f7f7fe</Key>
+  <PTags>
+	<Tag>Version</Tag>
+  </PTags>
+  <Name>
+	<Value language="en_US">UI_SukMainMenu_KR</Value>
+  </Name>
+  <Description>
+	<Value language="en_US">Main Menu Korean</Value>
+  </Description>
+  <UISkin name="Expansion2Primary" set="Expansion2" platform="Common">
+	<GameplaySkin>
+		<Directory>UI</Directory>
+		<Directory>Mods</Directory>
+	</GameplaySkin>
+  </UISkin>	
+</Civ5Package>
