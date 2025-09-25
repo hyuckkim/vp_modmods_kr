@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/21/2015 1:55:57 PM -->
+<!-- -- WORK IN PROGRESS ---->
+
+<Context>
+	<Box Style="BGBlock_ClearTopBar"/>
+	<Grid Size="300,500" Anchor="C,C" Style="Grid9DetailFive140" ConsumeMouse="1">
+		
+		<Image Anchor="C,T" AnchorSide="I,O" Offset="0,-27" Size="256,64" Texture="DecTop256x64.dds">
+			<Image Anchor="C,C" Offset="0,-6" Size="80,80" Texture="NotificationFrameBase.dds">
+				<Image ID="DialogTopIcon" Anchor="C,C" Offset="0,0" Size="80,80" Texture="NotificationGeneric.dds" />
+			</Image>
+		</Image>
+		
+		<Label ID="Select" Anchor="C,T" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" Offset="0,60" String="TXT_KEY_HEADER"/>
+		
+		<Image Anchor="L,C" AnchorSide="O,I" Offset="-17,0" Size="32,64" Texture="Dec32x64Left.dds" />
+		<Image Anchor="R,C" AnchorSide="O,I" Offset="-17,0" Size="32,64" Texture="Dec32x64Right.dds" />
+
+		<AlphaAnim ID="BgImage" Anchor="L,T" Offset="17,43" Size="266,414" TextureOffset="200,55" Texture="ERA_Classical.dds" Cycle="Once" Stopped="1" AlphaStart="0.3" AlphaEnd="0.3" Speed="1"/>
+
+		<GridButton ID="CANCEL" Size="180,36" Anchor="C,B" Offset="0,50" Style="BaseButton" ToolTip="Exit">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="Cancel" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+		</GridButton>
+		
+		<GridButton ID="EUROPE" Size="180,36" Anchor="C,B" Offset="0,130" Style="BaseButton" ToolTip="TXT_KEY_EUROPE">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="Europe" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+		</GridButton>
+		
+		<GridButton ID="ASIA" Size="180,36" Anchor="C,B" Offset="0,180" Style="BaseButton" ToolTip="TXT_KEY_ASIA">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="Asia" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+		
+		</GridButton>
+		<GridButton ID="AFRICA" Size="180,36" Anchor="C,B" Offset="0,230" Style="BaseButton" ToolTip="TXT_KEY_AFRICA">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="Africa" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+		
+		</GridButton>
+		<GridButton ID="AMERICA" Size="180,36" Anchor="C,B" Offset="0,280" Style="BaseButton" ToolTip="TXT_KEY_AMERICA">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="America" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+	
+		</GridButton>
+		<GridButton ID="MIDEASTERN" Size="180,36" Anchor="C,B" Offset="0,330" Style="BaseButton" ToolTip="TXT_KEY_MIDEASTERN">
+			<ShowOnMouseOver>
+				<AlphaAnim Anchor="L,C" AnchorSide="O,O" Size="16,32" TextureOffset="0,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="L,C" AnchorSide="O,O" Size="8,16"  TextureOffset="0,0" Texture="buttonsides.dds" />
+
+				<AlphaAnim Anchor="R,C" AnchorSide="O,O" Size="16,32" TextureOffset="16,0" Texture="buttonsidesglow.dds" Cycle="Bounce" Speed="1" AlphaStart=".99" AlphaEnd=".25"/>
+				<Image     Anchor="R,C" AnchorSide="O,O" Size="8,16"  TextureOffset="8,0"  Texture="buttonsides.dds" />
+			</ShowOnMouseOver>
+			<Label Anchor="C,C" Offset="0,-2" String="Middle Eastern" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+		</GridButton>
+		
+	</Grid>
+</Context>

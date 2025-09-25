@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="ad45eb98-3576-4b98-908b-ef807b7f84f4" version="8">
+<Mod id="ad45eb98-3576-4b98-908b-ef807b7f84f4" version="9">
   <Properties>
     <Name>(9a) CAYM Balance Change</Name>
     <Teaser>[COLOR_POSITIVE_TEXT]Translation, Correct[ENDCOLOR] of CAYM VP Tweaks [COLOR_CYAN]Edited by CAYM(2025.9.15)[ENDCOLOR]</Teaser>
@@ -28,6 +28,7 @@
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="9" maxversion="999" title="Enlightement Era for VP" />
     <Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" minversion="7" maxversion="999" title="Future Age edited by CAYM " />
     <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797d" minversion="87" maxversion="999" title="More Unique Components for VP INT" />
+    <Mod id="871da714-b2c6-49e9-8882-57489f501dbc" minversion="1" maxversion="999" title="(8)  Air Archive for VP" />
   </References>
   <Blocks>
     <Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" minversion="0" maxversion="999" title="VP Community Events" />
@@ -129,7 +130,7 @@
       <UpdateDatabase>Wonders/WonderChanges.sql</UpdateDatabase>
       <UpdateDatabase>Terrains/TerrainChanges.sql</UpdateDatabase>
       <UpdateDatabase>Religions/ReligionChanges.sql</UpdateDatabase>
-      <UpdateDatabase>Translations/Translation omissions and corrections.sql</UpdateDatabase>
+      <UpdateDatabase>Translations/Translation omissions and corrections.sql<LoadOrder>99999</LoadOrder></UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="9562c016-f5bb-79hg-b37e-a3b40d3yg13a" version="8">
+<Mod id="9562c016-f5bb-79hg-b37e-a3b40d3yg13a" version="9">
 	<Properties>
 	<Name>(9b) CAYM Unit Change</Name>
 	<Teaser>Alters unit [COLOR_POSITIVE_TEXT] Image Change[ENDCOLOR][ENDCOLOR]</Teaser>
@@ -19,15 +19,15 @@
 	</Properties>
 	<Dependencies>
             <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
-	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+            <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
 	</Dependencies>
 	<References>
 	<Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
-    <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
-    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
-    <Dlc id="BBB0D085-A0B1-4475-B007-3E549CF3ADC3" minversion="0" maxversion="999" />
-    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="C. Patch" />
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="C. Balance Patch" />
+            <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
+            <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+            <Dlc id="BBB0D085-A0B1-4475-B007-3E549CF3ADC3" minversion="0" maxversion="999" />
+            <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="C. Patch" />
+            <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="C. Balance Patch" />
 	</References>
   <Blocks>
     <Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" minversion="0" maxversion="999" title="(7) VP Community Events" />
@@ -329,7 +329,7 @@
          <UpdateDatabase>VP_Imagechange/Beggars/DutchSeaBeggar_realflag.xml</UpdateDatabase>
          <UpdateDatabase>SQL-XML/VP_Imagechange.sql</UpdateDatabase>
          <UpdateDatabase>SQL-XML/SkirmisherLine_Changes.sql</UpdateDatabase>
-         <UpdateDatabase>SQL-XML/SeigeLine_Changes.sql</UpdateDatabase>
+         <UpdateDatabase>SQL-XML/SeigeLine_Changes.sql<LoadOrder>1000</LoadOrder></UpdateDatabase>
          <UpdateDatabase>SQL-XML/Promotion_Changes.sql</UpdateDatabase>
 	</OnModActivated>
 <ArtDefineEntries>

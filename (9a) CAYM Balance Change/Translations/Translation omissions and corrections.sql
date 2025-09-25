@@ -59,15 +59,15 @@ DELETE FROM Language_ko_KR WHERE Tag ='TXT_KEY_UNIT_BARBARIAN_AXMAN_HELP';
 UPDATE Language_ko_KR
 SET Text = '투석병을 대체하는 [COLOR_NEGATIVE_TEXT]야만인[ENDCOLOR] 유닛입니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_AXMAN';	
-
+ 
 -- ZULU_IMPI
 UPDATE Language_ko_KR
-SET Text = '창총보병을 대체하는 줄루의 고유 유닛입니다. 원거리 기병 유닛과 화약 유닛을 공격하는데 특화되어있으며 동시대의 대부분 유닛들보다 전반적으로 더 강력합니다. 전투 시작 전에 원거리 일격을 가합니다.'
+SET Text = '창총보병을 대체하는 줄루의 고유 유닛입니다. 기마 유닛과 화약 유닛을 공격하는데 특화되어있으며 동시대의 대부분 유닛들보다 전반적으로 더 강력합니다. 전투 시작 전에 원거리 일격을 가합니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_ZULU_IMPI';	
 
 -- EGYPT WAR CHARIOT
 UPDATE Language_ko_KR
-SET Text = '전차궁수를 대체하는 이집트의 고유유닛입니다. 원거리 유닛으로 일반 전차궁수와 달리 [ICON_RES_HORSE]말을 요구하지 않고 보다 강력하며 [COLOR_PLAYER_PURPLE]파라오의 선물[ENDCOLOR] 승급을 보유합니다.'
+SET Text = '전차궁수를 대체하는 이집트의 고유유닛입니다. 원거리 유닛으로 일반 전차궁수보다 강력하며 [COLOR_PLAYER_PURPLE]파라오의 선물[ENDCOLOR] 승급을 보유합니다. [NEWLINE][NEWLINE][ICON_RES_HORSE]말을 요구하지 않습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_EGYPTIAN_WAR_CHARIOT';	
 
 DELETE FROM Language_ko_KR WHERE Tag ='TXT_KEY_UNIT_EGYPTIAN_WARCHARIOT_STRATEGY';
@@ -101,7 +101,7 @@ WHERE Tag ='TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP';
 
 -- HUN
 UPDATE Language_ko_KR
-SET Text = '기마궁수를 대체하는 훈의 고유 유닛입니다. 빠른 원거리 유닛으로 평지에서 치명적입니다. [ICON_RES_HORSE]말을 요구하지 않습니다.'
+SET Text = '기마궁수를 대체하는 훈의 고유 유닛입니다. 빠른 원거리 유닛으로 평지에서 치명적입니다. [NEWLINE][NEWLINE][ICON_RES_HORSE]말이 필요하지 않습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';	
 
 -- GERMAN LANDSKMECHT
@@ -206,7 +206,7 @@ WHERE Tag = 'TXT_KEY_WONDER_GREAT_LIGHTHOUSE_HELP';
 
 -- 법무소
 UPDATE Language_ko_KR
-SET Text = '무료 [COLOR_YELLOW]특사[ENDCOLOR]가 1명 출현합니다. 외교 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE][ICON_RES_PAPER]종이를 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]도시국가 [COLOR_POSITIVE_TEXT]우호 단계[ENDCOLOR] 보너스: 각각 +1 [ICON_FOOD] 식량[NEWLINE][ICON_CITY_STATE] 도시국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: 각각 +1 [ICON_FOOD] 식량, +1 [ICON_PEACE] 신앙'
+SET Text = '무료 [COLOR_YELLOW]특사[ENDCOLOR]가 1명 출현합니다. 외교 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE][ICON_RES_PAPER]종이를 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]도시국가 [COLOR_POSITIVE_TEXT]우호 단계[ENDCOLOR] 보너스: 각각 +1 [ICON_FOOD] 식량[NEWLINE][ICON_CITY_STATE] 도시국가 [COLOR_CYAN]동맹[ENDCOLOR] 보너스: 각각 +1 [ICON_FOOD] 식량, +1 [ICON_PEACE] 신앙[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한[ICON_PRODUCTION] 생산과 [ICON_CITIZEN] 시민이 증가합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_COURT_SCRIBE_HELP';
 
 -- 도서관
@@ -263,13 +263,6 @@ WHERE Tag = 'TXT_KEY_BUILDING_NATIONAL_EPIC_HELP';
 UPDATE Language_ko_KR
 SET Text = '[ICON_VP_GREATWRITING]걸작 문학 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함합니다.[NEWLINE][NEWLINE][ICON_GREAT_WRITER]위대한 작가 출현율이 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_DYE] 염료: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_SILK] 비단: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE] 문화 +2[NEWLINE][ICON_RES_BRAZILWOOD] 브라질 소방목: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_CULTURE]문화 +2'
 WHERE Tag = 'TXT_KEY_BUILDING_AMPHITHEATER_HELP';
-
-/*
--- 파르테온
-UPDATE Language_ko_KR
-SET Text = '[ICON_SILVER_FIST] 인구수에 따른 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. [ICON_VP_GREATART]걸작 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함하며, 그중 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]는 [ICON_GREAT_WORK]걸작 예술품으로 미리 채워져 있습니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]원형극장[ENDCOLOR]의 [ICON_CULTURE]문화와 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_CULTURE]문화 +3'
-WHERE Tag = 'TXT_KEY_WONDER_PARTHENON_HELP';
-*/
 
 -- 날란다
 UPDATE Language_ko_KR
@@ -343,7 +336,7 @@ WHERE Tag = 'TXT_KEY_WONDER_HAGIA_SOPHIA_HELP';
 
 -- 대사원
 UPDATE Language_ko_KR
-SET Text = '모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]사원[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 도시의 [ICON_PEACE]종교 분쟁에서 오는 요구 [ICON_HAPPINESS_3]불행 수치가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE][ICON_PEACE]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다. '
+SET Text = '모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]사원[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 도시의 [ICON_PEACE]종교 분쟁에서 오는 요구 [ICON_HAPPINESS_3]불행 수치가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 감소합니다. [ICON_GREAT_WORK]걸작 음악 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][ICON_PEACE]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다. '
 WHERE Tag = 'TXT_KEY_BUILDING_GRAND_TEMPLE_HELP';
 
 -- 보로부두르 사원
@@ -380,6 +373,11 @@ WHERE Tag = 'TXT_KEY_WONDER_MACHU_PICHU_HELP';
 UPDATE Language_ko_KR
 SET Text = '도시에서 생산하는 모든 유닛의 경험치가 [COLOR_POSITIVE_TEXT]20[ENDCOLOR] 증가합니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_ARMORY_HELP';
+
+-- 작업장
+UPDATE Language_ko_KR
+SET Text = '도시 주변 숲 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민 4명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 이 도시에서 출발하는 국내 [ICON_TURNS_REMAINING]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]국내 교역로를 통해 당신 문명의 다른 도시로 [ICON_PRODUCTION]생산 보너스를 [ICON_TURNS_REMAINING]제공할 수 있습니다.'	
+WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_HELP' AND NOT EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
 -- 세관
 UPDATE Language_ko_KR
@@ -518,8 +516,8 @@ WHERE Tag = 'TXT_KEY_WONDER_RED_FORT_HELP';
 
 -- 이화원
 UPDATE Language_ko_KR
-SET Text = '모든 도시에서 외교 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 제공합니다. 모든 외교 유닛에 [COLOR_PLAYER_PURPLE]귀족[ENDCOLOR] 승급을 부여합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]외교 청사[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_PAPER]종이를 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 제공합니다. '
-WHERE Tag = 'TXT_KEY_BUILDING_SUMMER_PALACE_HELP';
+SET Text = '모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]외교 청사[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 모든 도시에서 외교 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 제공합니다. 모든 외교 유닛에 [COLOR_PLAYER_PURPLE]귀족[ENDCOLOR] 승급을 부여합니다. [NEWLINE][NEWLINE][ICON_RES_PAPER]종이를 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다. '
+WHERE Tag = 'TXT_KEY_BUILDING_SUMMER_PALACE_HELP' AND NOT EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
 -- 동물원
 UPDATE Language_ko_KR
@@ -741,370 +739,233 @@ UPDATE Language_ko_KR
 SET Text = '모든 도시가 [ICON_PRODUCTION]생산을 다른 산출량으로 전환할 때의 효율성이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]모든 해상 타일의 [ICON_PRODUCTION]생산, [ICON_RESEARCH]과학, [ICON_FOOD]식량, [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT] 2 [ENDCOLOR]씩 증가합니다. [NEWLINE][NEWLINE][ICON_RES_ALUMINUM]알루미늄 [COLOR_NEGATIVE_TEXT]1개[ENDCOLOR]가 필요합니다. 해안에만 건설할 수 있습니다. 도시에 다른 [COLOR_NEGATIVE_TEXT]발전소[ENDCOLOR]가 없어야 건설할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_TIDAL_PLANT_HELP';
 
+--=================================
+-- 4uc ua fixed
+--=================================
+--[[인도네시아]]
+-- 찬디
+UPDATE Language_ko_KR
+SET Text = '"국왕 경축일"이 열리는 동안 도시의 [ICON_PEACE]신앙 및 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 증가합니다. 건물이 완성되면 도시 근처에 [ICON_RES_CLOVES]정향 [ICON_RES_PEPPER]후추 [ICON_RES_NUTMEG]육두구 자원이 출현합니다. [NEWLINE][NEWLINE][ICON_GREAT_PEOPLE]위인 출현율이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]전문가 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]이 더이상 [ICON_URBANIZATION] 도시화에서 오는 [ICON_HAPPINESS_3]불행을 증가시키지 않습니다. [NEWLINE][NEWLINE]오아시스: [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_CITRUS] 감귤: [ICON_FOOD]식량 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_COCOA] 코코아: [ICON_FOOD]식량 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_CLOVES] 정향: [ICON_PEACE] 신앙 +1 [ICON_CULTURE]문화 +1.[NEWLINE][ICON_RES_PEPPER] 후추: [ICON_PEACE]신앙 +1 [ICON_GOLD]골드 +1.[NEWLINE][ICON_RES_NUTMEG] 육두구: [ICON_CULTURE] 문화 +1 [ICON_PRODUCTION] 생산 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_CANDI_HELP';
 
+--[[ 인도 ]]
+-- 나가-말라
+UPDATE Language_ko_KR
+SET Text = '{TXT_KEY_DESC_CUIRASSIER}을 대체하는 인도의 고유 유닛입니다. [ICON_MOVES] 이동력 2와 [COLOR_NEGATIVE_TEXT]{TXT_KEY_PROMOTION_SKIRMISHER_DOCTRINE}[ENDCOLOR] 승급을 잃는 대신 [ICON_STRENGTH] 전투력과 [ICON_RANGE_STRENGTH] 원거리 전투력이 강하며, 주변 적 유닛의 [ICON_STRENGTH] 전투력을 감소시킵니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_ACCURACY_1}[ENDCOLOR] 승급을 보유합니다. [NEWLINE][NEWLINE][ICON_RES_HORSE] {TXT_KEY_RESOURCE_HORSES}을 요구하지 않습니다. '
+WHERE Tag = 'TXT_KEY_UNIT_HELP_INDIAN_WAR_ELEPHANT';
+-- 하라파 저수지
+UPDATE Language_ko_KR
+SET Text = '도시의 [ICON_RELIGION] 대중 종교를 믿는 신도 1명마다 [ICON_FOOD] 식량이 +1% 증가합니다. 농장의 [ICON_FOOD]식량과 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_CITIZEN]도시 주변 오아시스 및 호수 타일의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민이 증가할 때 사용한 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR]가 저장됩니다. 시민이 증가할 때 현재 [ICON_PRODUCTION]생산 산출량의 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR]를 즉시 제공합니다. [NEWLINE][NEWLINE][ICON_GOLD]빈곤에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_INDUS_CANAL_HELP';
+
+
+-- [[스웨덴]]
+-- 스콜라
+UPDATE Language_ko_KR
+SET Text = '[ICON_CITIZEN]시민 2명마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RESEARCH]문맹에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_SKOLA_HELP';
+
+-- [[프랑스]]
+-- 샤토
+UPDATE Language_ko_KR
+SET Text = '해당 타일의 [ICON_CULTURE]문화, [ICON_GOLD]골드, [ICON_FOOD]식량이 증가합니다. 주둔 시 [ICON_STRENGTH]방어력 보너스가 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 증가합니다. [COLOR_POSITIVE_TEXT]요새[ENDCOLOR] 역할을 제공해, 공격 후에도 그 타일에 계속 주둔할 수 있습니다. [NEWLINE][NEWLINE]사치 자원과 인접한 타일에만 건설할 수 있습니다. 다른 {TXT_KEY_IMPROVEMENT_CHATEAU}와 서로 인접하여 건설할 수 없습니다.'
+WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_HELP';
+
+-- [[바빌론]]
+-- 바빌론 성벽
+UPDATE Language_ko_KR
+SET Text = '[ICON_GREAT_SCIENTIST]위대한 과학자를 기술 연구에 소모할 때 [ICON_RESEARCH] 과학이 추가로 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]도시의 [ICON_RANGE_STRENGTH]원거리 공격 범위가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.  [ICON_SILVER_FIST] 인구수에 따른 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]도시의 [ICON_CITY_STATE] 도시 규모 요구치가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 감소합니다. '
+WHERE Tag = 'TXT_KEY_CIV5_BABYLON_WALLS_INFO';
+
+-- [[페르시아]]
+-- [[카르타고]]
+-- 위대한 코튼
+UPDATE Language_ko_KR
+SET Text = '모든 해안도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]{TXT_KEY_BUILDING_HARBOR}[ENDCOLOR]을 무료로 제공합니다. 추가 [ICON_INTERNATIONAL_TRADE][COLOR_YELLOW]교역로[ENDCOLOR]를 2개 제공합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]의 [ICON_PRODUCTION] 생산이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가하고, 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]등대[ENDCOLOR]의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]이 도시의 모든 사치 자원을 추가로 한 개씩 [COLOR_POSITIVE_TEXT]복제[ENDCOLOR]합니다. 이 도시로 향하는 [ICON_ARROW_LEFT] 교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가하고 [ICON_ARROW_RIGHT] 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. [ICON_INTERNATIONAL_TRADE]교역로의 자원 다양성 수치가 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_GOLD] 빈곤으로 인한 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 감소하고, 다른 모든 도시에서 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION] 생산과 [ICON_CITIZEN] 시민이 증가합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_GREAT_COTHON_HELP' AND NOT EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
+-- [[이집트]]
+-- 왕가의 무덤
+UPDATE Language_ko_KR
+SET Text = '[ICON_GREAT_WORK] 위대한 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다. 건물이 완성되면 도시에 이집트 고유의 [ICON_VP_ARTIFACT] 유물을 제공합니다.[NEWLINE][NEWLINE]이 도시에서 다른 문명으로 출발하는 육상 [ICON_CARAVAN]교역로가 완료되면 [COLOR_POSITIVE_TEXT]역사적 사건[ENDCOLOR]을 발동시킵니다.[NEWLINE][NEWLINE]도시 주변 사막 또는 툰드라 타일 1.5개마다 [ICON_FOOD]식량 및 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CARAVAN] 도시의 육상 교역로 범위가 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 증가하고 교역로의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_TRUFFLES] 송로버섯: [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_COTTON] 면: [ICON_PRODUCTION]생산 +1 [ICON_CULTURE]문화 +1[NEWLINE][ICON_RES_FUR] 모피: [ICON_GOLD]골드 +1 [ICON_PRODUCTION]생산 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_BURIAL_TOMB_HELP';
+
+-- [[시암]]
+-- 나레수안 코끼리
+UPDATE Language_ko_KR
+SET Text = '{TXT_KEY_UNIT_KNIGHT}를 대체하는 시암의 고유 유닛입니다. 기마 유닛 상대로 강하며 {TXT_KEY_UNIT_GREAT_GENERAL}과 겹쳐 있을 때 [ICON_STRENGTH] 전투력 보너스를 얻습니다. [ICON_MOVES] [COLOR_NEGATIVE_TEXT]이동력[ENDCOLOR] 1이 낮은 대신 근처 적의 [ICON_STRENGTH] 전투력을 감소시킵니다. [NEWLINE][NEWLINE][ICON_RES_HORSE] {TXT_KEY_RESOURCE_HORSES}을 요구하지 않습니다. '
+WHERE Tag = 'TXT_KEY_UNIT_HELP_SIAMESE_WARELEPHANT';
+-- 와트
+UPDATE Language_ko_KR
+SET Text = '도시의 성소 및 사원의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가하고 이 도시에서 생산된 외교 유닛이 [ICON_INFLUENCE] +10 영향력을 얻습니다. [NEWLINE][NEWLINE]도시 보안이 25 증가하고, [ICON_CITIZEN] 시민 2명마다 1씩 추가로 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
+-- [[포르투갈]]
+
+-- [[오스트리아]]
+
+-- [[아즈텍]]
+
+-- [[켈트]]
+UPDATE Language_ko_KR
+SET Text = '기마궁수를 대체하는 켈트의 고유 유닛입니다. 근접 유닛과 궁병 유닛에 더 강력합니다. 이동 후 새로 인접한 적 유닛에 피해를 줍니다. 산병보다 이동력이 더 적고 험지에서 이동력 페널티를 받습니다.'
+WHERE Tag = 'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP';
+
+UPDATE Language_ko_KR
+SET Text = '[ICON_VP_GREATMUSIC] 걸작 음악 슬롯을 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 포함합니다. [NEWLINE][NEWLINE]건설을 완료하면 도시에 [ICON_CULTURE]문화를 [COLOR_POSITIVE_TEXT]150[ENDCOLOR] 제공하고 [COLOR_POSITIVE_TEXT]15턴[ENDCOLOR] 동안 "국왕 경축일"을 맞이합니다. [NEWLINE][NEWLINE][ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_IVORY] 상아: [ICON_CULTURE]문화 +3'
+WHERE Tag = 'TXT_KEY_BUILDING_CEILIDH_HALL_HELP';
+
+-- [[독일]]
+
+-- [[네덜란드]]
+
+-- [[줄루]]
+-- 이칸다
+UPDATE Language_ko_KR
+SET Text = '근접 및 화약 유닛에게 [COLOR_PLAYER_PURPLE]버팔로[ENDCOLOR] 승급 트리를 부여합니다. [NEWLINE][NEWLINE]도시에서 생산하는 모든 유닛의 경험치가 [COLOR_POSITIVE_TEXT]15[ENDCOLOR] 증가합니다. [ICON_WAR] 지역 군사 유닛 보급 한도가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_IKANDA_HELP';
+-- [[한국]]
+-- 서원
+UPDATE Language_ko_KR
+SET Text = '[ICON_GREAT_WORK] 걸작과 근처 위인 타일에서 오는 [ICON_PRODUCTION] 생산 및 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]도시 주변 정글 타일과 설원 타일의 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN] 시민이 증가할 때 현재 [ICON_RESEARCH] 과학 산출량의 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR]를 즉시 제공합니다. [NEWLINE][NEWLINE][ICON_RESEARCH] 문맹에서 오는 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_SEOWON_HELP';
+-- [[오스만제국]]
+-- 공성 주조 공장
+UPDATE Language_ko_KR
+SET Text = '공성 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공하고, 도시에서 생산하는 모든 공성 유닛에 [COLOR_PLAYER_PURPLE]{TXT_KEY_PROMOTION_VOLLEY}[ENDCOLOR] 승급을 부여합니다. 도시에서 유닛을 생산할 때 유닛 [ICON_PRODUCTION]생산 비용의 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR]를 [ICON_RESEARCH]과학으로 전환합니다.[NEWLINE][NEWLINE]광산의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_IRON] 철: [ICON_PRODUCTION]생산 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_COPPER] 구리: [ICON_GOLD]골드 +2'
+WHERE Tag = 'TXT_KEY_BUILDING_SIEGE_WORKSHOP_HELP';
+
+-- [[아시리아]]
+-- 왕립도서관
+UPDATE Language_ko_KR
+SET Text = '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]{TXT_KEY_BUILDING_LIBRARY}[ENDCOLOR]을 무료로 제공합니다. [ICON_VP_GREATWRITING][COLOR_YELLOW]걸작 문학[ENDCOLOR] 1개를 무료로 제공합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]도서관[ENDCOLOR]의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민 2명마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 당신의 문명이 통제하고 있는 모든 [ICON_VP_GREATWRITING]걸작 문학마다 모든 도시에서 생산하는 유닛의 경험치가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] [COLOR:105:105:105:255](한도: 45)[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_GOLDEN_AGE]황금기 동안 도시의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 증가합니다. [ICON_VP_GREATWRITING]걸작 문학 슬롯 [COLOR_POSITIVE_TEXT]3개[ENDCOLOR]를 포함합니다.[NEWLINE][NEWLINE]모든 도시의 [ICON_RESEARCH] 문맹에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다. 전문가 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]이 더이상 [ICON_URBANIZATION] 도시화에서 오는 [ICON_HAPPINESS_3]불행을 증가시키지 않습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_PRODUCTION]생산 +3, [ICON_RESEARCH]과학 +3[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다. '
+WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_HELP';
+
+UPDATE Language_ko_KR
+SET Text = '{TXT_KEY_BUILDING_NATIONAL_COLLEGE}을 대체하는 아시리아의 고유 건물입니다. 대체하는{TXT_KEY_BUILDING_NATIONAL_COLLEGE} 의 과학 산출 외에도, {TXT_KEY_BUILDING_ROYAL_LIBRARY_DESC}은 추가[ICON_RESEARCH] 과학과 [ICON_CULTURE] 문화를 생성하며 모든 도서관을 강화합니다. 세 개의 [ICON_VP_GREATWRITING] 작가 슬롯을 가지고, 걸작 문학 한 개와 도서관을 도시에 제공하며 더 이른 시기에 건설할 수 있습니다. 모든 도서관에 보너스를 제공하고, 모든 도시의 유닛이 걸작 문학의 개수에 비례해 경험치 보너스를 받습니다. (최대 45) {TXT_KEY_BUILDING_NATIONAL_COLLEGE}와 달리, {TXT_KEY_BUILDING_ROYAL_LIBRARY_DESC}는 [COLOR_CYAN]{TXT_KEY_TECH_WRITING_TITLE}[ENDCOLOR] 연구 시 생산할 수 있고, {TXT_KEY_BUILDING_LIBRARY}를 요구하는 대신 무료로 제공합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_STRATEGY';
+
+-- [[송가이]]
+
+-- [[로마]]
+
+-- [[훈]]
+
+-- [[모로코]]
+-- 카스바
+UPDATE Language_ko_KR
+SET Text = '인접한 어선의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가하고 인접한 해안 타일의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_STRENGTH]방어력 보너스를 [COLOR_POSITIVE_TEXT]30%[ENDCOLOR] 제공하고 인접한 적 유닛에 피해를 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 입힙니다. (중첩되지 않음) 사치 또는 전략 자원 위에 건설하면 해당 자원을 교역망과 연결할 수 있습니다. [NEWLINE][NEWLINE]도시에 인접해야만 건설할 수 있습니다.'
+WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_HELP';
+-- [[그리스]]
+-- 김나지움 / 아크로폴리스
+UPDATE Language_ko_KR
+SET Text = '적 유닛을 처치할 때 이 도시에 [ICON_CULTURE_LOCAL]국경 확장 점수를 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 유닛이 이 도시에서 생산 되었다면 추가로 [ICON_CULTURE]문화를 [COLOR_POSITIVE_TEXT]25[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE][ICON_GREAT_WORK]걸작 문학 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][ICON_GREAT_WRITER]위대한 작가 출현율이 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_DYE] 염료: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_SILK] 비단: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE]문화 +2[NEWLINE][ICON_RES_BRAZILWOOD] 브라질 소방목: [ICON_CULTURE]문화 +1, [ICON_GOLD]골드 +1[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스: [ICON_CULTURE]문화 +2'
+WHERE Tag = 'TXT_KEY_BUILDING_ODEON_HELP';
+-- [[베네치아]]
+-- 피아자 산 마르코
+UPDATE Language_ko_KR
+SET Text = '도시의 민간 유닛 구매 대기시간이 3턴으로 감소하고, 군사 유닛 구매 대기시간은 사라집니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [ICON_SPY] 도시 보안이 10 증가합니다.[NEWLINE][NEWLINE][COLOR_RESEARCH_STORED]{TXT_KEY_TECH_GUILDS_TITLE}[ENDCOLOR]를 연구하면 [COLOR_POSITIVE_TEXT]{TXT_KEY_BUILDING_MURANO_GLASSWORKS}[ENDCOLOR], [COLOR_POSITIVE_TEXT]{TXT_KEY_BUILDING_VENETIAN_ARSENALE}[ENDCOLOR], [COLOR_POSITIVE_TEXT]{TXT_KEY_BUILDING_RIALTO_DISTRICT}[ENDCOLOR] 중 하나를 건설할 수 있습니다.[NEWLINE][NEWLINE][ICON_CITIZEN] 시민이 증가할 때 [ICON_CULTURE] 문화를 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공하고, 정책을 채택할 때 [ICON_GOLDEN_AGE] 황금기 점수를 [COLOR_POSITIVE_TEXT]50[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. [ICON_GREAT_WORK]걸작 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][ICON_GREAT_PEOPLE]위인 출현율이 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다. [NEWLINE][NEWLINE][ICON_CAPITAL] 수도[ENDCOLOR]에만 건설할 수 있습니다. '
+WHERE Tag = 'TXT_KEY_BUILDING_PIAZZA_SAN_MARCO_HELP';
+
+-- [[영국]]
+-- 화이트 타워
+UPDATE Language_ko_KR
+SET Text = '모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]경찰대, 성, 무기고[ENDCOLOR]의 [ICON_CULTURE] 문화가 1 증가합니다. [ICON_VP_GREATART]걸작 예술품이 들어 있는 [ICON_GREAT_WORK]걸작 예술품 또는[ICON_VP_ARTIFACT]유물 슬롯을 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 포함합니다. [NEWLINE][NEWLINE]스파이를 체포하거나, 발견하거나 스파이 작전이 성공하면 [ICON_RESEARCH]과학 및 [ICON_GOLD]골드를 [COLOR_POSITIVE_TEXT]40[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 도시 국가에서 선거 조작에 성공하면 [ICON_RESEARCH]과학 및 [ICON_GOLD]골드를 [COLOR_POSITIVE_TEXT]25[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]건설을 완료하면 [ICON_RESEARCH]과학 [COLOR_POSITIVE_TEXT]25[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE][ICON_RES_IRON]철 2개를 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR]로 제공합니다. [NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION] 생산과 [ICON_CITIZEN]시민이 증가합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_WHITE_TOWER_HELP';
+
+-- [[러시아]]
+-- 오스트로그
+UPDATE Language_ko_KR
+SET Text = '야영지, 광산, 제재소, 전략 자원 타일의 [ICON_PRODUCTION]생산 및 [ICON_GOLD] 골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 적 지상 유닛이 이 도시의 지상 타일에 진입할 때 [ICON_MOVES]이동력을 모두 소모합니다. [NEWLINE][NEWLINE]도시가 받는 모든 피해를 [COLOR_POSITIVE_TEXT] 2 [ENDCOLOR]감소시킵니다. 도시가 시야에 상관 없이 [ICON_RANGE_STRENGTH] 범위 공격을 할 수 있습니다. 주둔한 유닛이 체력을 추가로 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 회복합니다. [ICON_SILVER_FIST] 인구수에 따른 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_CITY_STATE] 도시 규모 요구치가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_KREPOST_HELP';
+-- [[일본]]
+-- 도조
+UPDATE Language_ko_KR
+SET Text = '도시에서 생산하는 모든 기마, 근접, 화약, 기갑 유닛에 [COLOR_PLAYER_PURPLE]무사도[ENDCOLOR] 진급을 부여합니다. 유닛이 얻은 경험치의 140% 만큼 [ICON_CULTURE]문화 및 [ICON_RESEARCH]과학을 제공합니다. [NEWLINE][NEWLINE] 도시에서 생산하는 모든 유닛의 경험치가 [COLOR_POSITIVE_TEXT]25[ENDCOLOR] 증가합니다. [ICON_WAR] 군사 유닛 보급 한도가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_FOOD]/[ICON_PRODUCTION]낙후에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_DOJO_HELP';
+
+
+-- [[미국]]
+-- 독립기념관
+UPDATE Language_ko_KR
+SET Text = '[ICON_CULTURE] 정책 채택에 필요한 문화가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE][ICON_CITIZEN]시민 4명마다 [ICON_CULTURE] 문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. 걸작 예술품 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE]모든 도시의 [ICON_CULTURE]무료로 인한 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스: [ICON_CULTURE]문화 +3, [ICON_GOLD]골드 +3[NEWLINE][NEWLINE] 문명에 도시가 많을수록 [ICON_PRODUCTION] 건설 비용과 [ICON_CITIZEN]시민이 증가합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]슬레이터 밀[ENDCOLOR], [COLOR_POSITIVE_TEXT]미국 육군사관학교[ENDCOLOR], [COLOR_POSITIVE_TEXT]스미스소니언 협회[ENDCOLOR]를 [COLOR_CYAN]현대 시대[ENDCOLOR]에 지을 수 있습니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_AMERICA_INDEPENDENCEHALL_HELP';
+-- 스미스소니언 협회
+UPDATE Language_ko_KR
+SET Text = '셋 중 [COLOR_NEGATIVE_TEXT]하나만[ENDCOLOR] 건설할 수 있는 미국의 고유 국가 불가사의입니다. 도시에 [COLOR_YELLOW]{TXT_KEY_BUILDING_AMERICA_INDEPENDENCEHALL}[ENDCOLOR]이 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE]모든 도시에서 타일 [ICON_GOLD]구매 비용이 25% 감소합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]박물관과 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]연구소[ENDCOLOR]에서 +5 [ICON_CULTURE]문화와 [ICON_RESEARCH]과학을 얻고, 모든 [ICON_WONDER] 세계 불가사의에서 +2 [ICON_CULTURE] 문화와 [ICON_RESEARCH]과학을 제공합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 박물관을 제공합니다.[NEWLINE][NEWLINE]모든 도시의 [ICON_GOLD]골드의 10%만큼 [ICON_CULTURE]문화가 증가합니다.[NEWLINE][NEWLINE]모든 랜드마크의 [ICON_RESEARCH] 과학이 +5 증가하고 모든 [ICON_GREAT_WORK] 걸작의 [ICON_RESEARCH] 과학이 +1 증가합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_AMERICA_SMITHSONIAN_HELP';
+-- 웨스트 포인트
+UPDATE Language_ko_KR
+SET Text = '셋 중 [COLOR_NEGATIVE_TEXT]하나만[ENDCOLOR] 건설할 수 있는 미국의 고유 국가 불가사의입니다. 도시에 [COLOR_YELLOW]{TXT_KEY_BUILDING_AMERICA_INDEPENDENCEHALL}[ENDCOLOR]이 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE]모든 도시에서 타일 [ICON_GOLD]구매 비용이 25% 감소합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]사관 학교[ENDCOLOR]와 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]성형 요새[ENDCOLOR]에서 +5 [ICON_PRODUCTION]생산과 [ICON_RESEARCH]과학을 제공하고, 모든 [ICON_WONDER] 세계 불가사의에서 +2 [ICON_PRODUCTION] 생산과 [ICON_RESEARCH]과학을 제공합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 사관 학교를 제공합니다. 모든 도시의 [ICON_GOLD]골드의 10%만큼 [ICON_CULTURE]과학이 증가합니다.[NEWLINE][NEWLINE]모든 공성 유닛과 원거리 해군 유닛이 [COLOR_POSITIVE_TEXT]광역 피해[ENDCOLOR] 진급을 얻습니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_AMERICA_WESTPOINT_HELP';
+-- 슬레이터 밀
+UPDATE Language_ko_KR
+SET Text = '셋 중 [COLOR_NEGATIVE_TEXT]하나만[ENDCOLOR] 건설할 수 있는 미국의 고유 국가 불가사의입니다. 도시에 [COLOR_YELLOW]{TXT_KEY_BUILDING_AMERICA_INDEPENDENCEHALL}[ENDCOLOR]이 있어야 건설할 수 있습니다. 오직 강 옆에 있는 도시에서만 건설할 수 있습니다.[NEWLINE][NEWLINE]모든 도시에서 타일 [ICON_GOLD]구매 비용이 25% 감소합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]공장[ENDCOLOR]과 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]증권거래소[ENDCOLOR]에서 +5 [ICON_GOLD]골드와 [ICON_PRODUCTION]생산을 제공하고, 모든 [ICON_WONDER] 세계 불가사의에서 +2 [ICON_GOLD]골드와 [ICON_PRODUCTION]생산을 제공합니다.[NEWLINE][NEWLINE]이 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 공장을 제공합니다.[NEWLINE][NEWLINE]모든 도시의 [ICON_GOLD]골드의 10%만큼 [ICON_PRODUCTION] 생산이 증가합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]추가[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] 교역로를 제공하고, [ICON_INTERNATIONAL_TRADE] 교역이 25% 빨리 완료됩니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_AMERICA_SLATERMILL_HELP';
+-- [[스페인]]
+
+-- [[중국]]
+UPDATE Language_ko_KR
+SET Text = '타일의 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학이 증가합니다. 도시가 "황후 경축일""을 맞이하는 동안 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산, [ICON_RESEARCH] 과학이 추가로 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]도시 또는 다른 두 쓰허위안에 인접한 평지에 지을 수 있습니다. '
+WHERE Tag = 'TXT_KEY_IMPROVEMENT_SIHEYUAN_HELP';
+-- [[몽골]]
+-- 게르
+UPDATE Language_ko_KR
+SET Text = '야영지와 목장의 [ICON_PRODUCTION] 생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시의 [ICON_CULTURE_LOCAL] 국경 확장 속도가 [COLOR_POSITIVE_TEXT]40%[ENDCOLOR] 증가하고 새 타일을 구매하기 위해 필요한 [ICON_GOLD] 골드가 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE]타일을 획득할 때 [ICON_FOOD] 식량과 [ICON_PRODUCTION] 생산을 [COLOR_POSITIVE_TEXT] 5[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]얻습니다.  [NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1[NEWLINE][ICON_RES_BISON] 들소: [ICON_FOOD] 식량 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_YURT_HELP';
+
+-- [[폴리네시아]]
+UPDATE Language_ko_KR
+SET Text = '만약 다른 모아이 또는 도시 옆에 건설하면 추가로 [ICON_CULTURE]문화를 1 제공합니다. 자원 위에 건설할 수 있지만 자원을 교역망에 연결하지는 않습니다.[NEWLINE][NEWLINE]해안에만 건설할 수 있습니다. '
+WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP';
+-- [[폴란드]]
+UPDATE Language_ko_KR
+SET Text = ' 도시에서 생산하는 기마 유닛의 경험치가 [COLOR_POSITIVE_TEXT]15[ENDCOLOR] 증가합니다. [ICON_RES_HORSE]말 [COLOR_POSITIVE_TEXT]1마리[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE]기마 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 제공합니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_TURNS_REMAINING]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_HORSE] 말: [ICON_PRODUCTION]생산 +3 [ICON_GOLD]골드 +3[NEWLINE][ICON_RES_SHEEP] 양: [ICON_PRODUCTION]생산 +3 [ICON_GOLD]골드 +3[NEWLINE][ICON_RES_COW] 소: [ICON_PRODUCTION]생산 +3 [ICON_GOLD]골드 +3'
+WHERE Tag = 'TXT_KEY_BUILDING_DUCAL_STABLE_HELP';
+
+-- [[비잔틴제국]]
+UPDATE Language_ko_KR
+SET Text = '[ICON_CITIZEN]시민 3명마다 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 교역로가 제공하는 종교 압력이 [COLOR_POSITIVE_TEXT]100%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]도시의 종교 압력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. [ICON_VP_GREATMUSIC]걸작 음악 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다.[NEWLINE][NEWLINE][ICON_RELIGION] 종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_INCENSE] 향: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_WINE] 와인: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1[NEWLINE][ICON_RES_AMBER] 호박석: [ICON_CULTURE]문화 +1 [ICON_GOLD]골드 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_BASILICA_HELP';
+	
+-- [[잉카]]
+UPDATE Language_ko_KR
+SET Text = '인접한 산 또는 {TXT_KEY_IMPROVEMENT_TERRACE_FARM}마다 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 인접한 모든 농장의 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]언덕 위에만 건설할 수 있습니다.'
+WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP';
+
+-- [[마야]]
+
+-- [[브라질]]
+-- 브라질 소방목
+UPDATE Language_ko_KR
+SET Text = '[ICON_RES_BRAZILWOOD]{TXT_KEY_RESOURCE_BRAZILWOOD}이 생성됩니다. [NEWLINE]담수가 아닌 숲 또는 정글에만 건설할 수 있습니다. 다른 {TXT_KEY_IMPROVEMENT_BRAZILWOOD_CAMP}에 인접하여 건설할 수 없습니다.'
+WHERE Tag = 'TXT_KEY_BUILD_BRAZILWOOD_CAMP_HELP';
+-- [[쇼숀]]
+UPDATE Language_ko_KR
+SET Text = '시설 위에 주둔한 유닛에 [ICON_STRENGTH]방어력 보너스를 15% 제공하고 인접한 적 유닛에 피해를 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 입힙니다. (피해는 중첩되지 않습니다) [NEWLINE][NEWLINE]2타일 범위의 모든 쇼쇼니 유닛이 [ICON_STRENGTH]전투력 보너스를 +20% 받습니다.[NEWLINE][NEWLINE] 평지 타일에만 건설할 수 있습니다. 다른 티피와 서로 인접하여 건설할 수 없습니다.'
+WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_ENCAMPMENT_SHOSHONE_HELP';
+
+-- [[덴마크]]
+-- 룬스톤
+UPDATE Language_ko_KR
+SET Text = '이 도시에서 생산한 유닛이 타일을 약탈 시 [ICON_CULTURE]문화를 [COLOR_POSITIVE_TEXT]30[ENDCOLOR] [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 근접, 화약 및 해상 근접 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE]도시 주변 해양 타일의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 이 도시에서 출발하는 국내 [ICON_TURNS_REMAINING]교역로의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]6[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_CONNECTED]육상으로 연결되지 않은 도시와 [ICON_CAPITAL]수도를 [ICON_CONNECTED]해안 도시로 연결합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_JELLING_STONES_HELP';
+
+-- [[아라비아]]
+UPDATE Language_ko_KR
+SET Text = '이 도시에서 다른 문명으로 출발하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP]교역로가 완료되면 [COLOR_POSITIVE_TEXT]역사적 사건[ENDCOLOR]을 발동시킵니다. 도시의 [ICON_CARAVAN] 육상 교역로 범위가 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR]증가합니다. [NEWLINE][NEWLINE]이 도시로 향하는 [ICON_INTERNATIONAL_TRADE]교역로마다 도시의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_SPICES] 향신료: [ICON_FOOD]식량 +1 [ICON_PRODUCTION]생산 +1[NEWLINE][ICON_RES_SUGAR] 설탕: [ICON_FOOD]식량 +1 [ICON_GOLD]골드 +1'
+WHERE Tag = 'TXT_KEY_BUILDING_BAZAAR_HELP';
+
+-- [[에티오피아]]
+UPDATE Language_ko_KR
+SET Text = '[ICON_GOLDEN_AGE]황금기 동안 도시의 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_STELE_HELP';
+
+-- [[이로쿼이]]
+UPDATE Language_ko_KR
+SET Text = '도시 주변 정글, 숲, 습지 타일의 [ICON_FOOD]식량 및 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 재배지의 [ICON_FOOD]식량 및 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_LONGHOUSE_HELP';
+
+/*
 -------------------------
  -- 계몽시대 번역 교정
 -------------------------	
-UPDATE Language_ko_KR
-SET Text = '수발총병은 창총보병 다음의 화약 유닛입니다. 창총보병보다 눈에 띄게 강해 이 유닛으로 발전하지 못한 문명을 상대로 큰 이득을 얻습니다. 또한, 이 유닛은 첫 화약 유닛으로 싸움의 최전선을 밀고 나아가기 위한 새 승급 트리가 있습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_RIFLEMAN_STRATEGY'AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
 
-UPDATE Language_ko_KR
-SET Text = '화기'
-WHERE Tag = 'TXT_KEY_TECH_EE_FLINTLOCK';
-
-UPDATE Language_ko_KR
-SET Text = '화기는 머스킷이나 소총의 화약에 불을 붙이기 위해 부싯돌을 사용하는 특정한 잠금 방식으로 설명할 수도 있고, 17세기, 18세기, 19세기의 무기 전체를 지칭할 수도 있습니다. 프랑스에서 처음 개발된 이 무기는 부싯돌 조각으로 만들어졌는데, 이 부싯돌을 강철(프리젠이라고 함)로 치면 불꽃이 생기고, 이 불꽃이 화약이 담긴 팬에 떨어지면서 불이 붙어 무기가 발사되는 방식이었습니다.[NEWLINE][NEWLINE]플린트락 소총은 이전의 매치락 소총보다 개량되었기 때문에 빠르게 인기를 얻었으며, 1630년대에는 영국 내전에서 복무하는 용기병이 선호하는 무기로 명성을 얻었고, 1700년대에는 대부분 유럽 보병의 제식 무기로 자리 잡았습니다. 19세기 중반까지 이러한 지위를 유지했지만, 이후 점차 폐지되고 퍼커션 캡으로 대체되었고, 나중에는 탄환 기반 시스템으로 대체되었습니다.'
-WHERE Tag = 'TXT_KEY_TECH_EE_FLINTLOCK_DESC';
-
-UPDATE Language_ko_KR
-SET Text = '강력하고 효과적인 공성 유닛인[COLOR_POSITIVE_TEXT]야포[ENDCOLOR]를 생산할 수 있습니다. 또한 [COLOR_POSITIVE_TEXT]성형 요새[ENDCOLOR]를 건설하여 도시의 [ICON_STRENGTH] 방어력을 더욱 강화할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_TECH_EE_FORTIFICATION_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]기술대학[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]신학대학[ENDCOLOR] 모두 건설할 수 있습니다. 이 두 건물은 상호 배타적이며, 각각 도시의 과학 또는 신앙의 산출량을 높여줍니다.'
-WHERE Tag = 'TXT_KEY_TECH_EE_HUMANISM_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '큰까마귀 수호대'
-WHERE Tag = 'TXT_KEY_PROMOTION_EE_ADVENTURER';
-
-UPDATE Language_ko_KR
-SET Text = '정비 양호'
-WHERE Tag = 'TXT_KEY_PROMOTION_EE_DRYDOCK';
-
-UPDATE Language_ko_KR
-SET Text = '장창기병'
-WHERE Tag = 'TXT_KEY_UNIT_EE_UHLAN';
-
-UPDATE Language_ko_KR
-SET Text = '기갑 유닛 생산하기 전의 마지막 기마 유닛입니다.'
-WHERE Tag = 'TXT_KEY_UNIT_EE_UHLAN_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '중장 장창기병은 흉갑·투구(때로는 말갑옷)로 방호하고 3~4m 이상의 장창을 겨드랑이에 견착해 밀집 대형으로 돌격하는 충격 기병이다. 개활지에서의 정면·측면 돌격과 추격, 역습에서 결정적 타격을 담당했으며, 근접전에서는 세이버와 권총/카빈으로 전투를 이어갔다. 울퉁불퉁한 지형이나 보병 방진·총열 앞 정면 돌격에는 취약했지만, 지휘·기동·사기에서 우위를 점하면 적 전열을 단숨에 파쇄할 수 있었다. 17~19세기 각국 군대에서 근위·중기병 전력의 핵심으로 운용된 보편적이고 강력한 장창 부대의 전형이다'
-WHERE Tag = 'TXT_KEY_UNIT_EE_UHLAN_PEDIA';
-
-UPDATE Language_ko_KR
-SET Text = '산업 시대의 근접 기병 유닛인 중장 장차기병은 창기병에서 업그레이드되었으며 르네상스 시대의 전신과 거의 동일한 역할을 수행합니다. 이를 이용해 위치에서 벗어난 적의 후방으로 돌격하세요.'
-WHERE Tag = 'TXT_KEY_UNIT_EE_UHLAN_STRATEGY'; 
-
-UPDATE Language_ko_KR
-SET Text = '중장 장창기병은 흉갑·투구(때로는 말갑옷)로 방호하고 3~4m 이상의 장창을 겨드랑이에 견착해 밀집 대형으로 돌격하는 충격 기병이다. 개활지에서의 정면·측면 돌격과 추격, 역습에서 결정적 타격을 담당했으며, 근접전에서는 세이버와 권총/카빈으로 전투를 이어갔다. 울퉁불퉁한 지형이나 보병 방진·총열 앞 정면 돌격에는 취약했지만, 지휘·기동·사기에서 우위를 점하면 적 전열을 단숨에 파쇄할 수 있었다. 17~19세기 각국 군대에서 근위·중기병 전력의 핵심으로 운용된 보편적이고 강력한 장창 부대의 전형이다'
-WHERE Tag = 'TXT_KEY_UNIT_EE_UHLAN_PEDIA'; 
-
-/*
--- 스웨덴 카롤리너
-UPDATE Language_ko_KR
-SET Text = '카롤리너는 계몽 시대 스웨덴 군대의 중추였습니다. 그들은 행동을 수행하더라도 매 턴마다 치유를 할 수 있는 행군 승급을 가지고 시작합니다. 카롤리너는 위대한 장군과 함께 배치될 경우 전투력이 15% 증가하고, 유닛을 처치한 후 전진하면 인접한 모든 유닛에 피해를 입힙니다.'
-WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
-
--- 미국 미니트맨
-UPDATE Language_ko_KR
-SET Text = '미니트맨은 명사수를 대체하는 미국 고유 유닛입니다. 미니트맨은 험난한 지형에서도 아무런 페널티 없이 이동할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_AMERICAN_MINUTEMAN_STRATEGY';
-UPDATE Language_ko_KR
-SET Text = '오직 미국만이 제작할 수 있습니다. 이 유닛은 대체되는 명사수와는 달리, 거친 지형을 마치 평지처럼 이동할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MINUTEMAN';
-*/
-------------------------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------
--- 러시안 코사크
--------------------------------------------------------
-UPDATE Civilization_UnitClassOverrides Set UnitClassType = 'UNITCLASS_EE_DRAGOON' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Units
-SET Class = 'UNITCLASS_EE_DRAGOON', 
-        RangedCombat = (SELECT RangedCombat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 4,
-	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 3,
-	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_DRAGOON'),
-	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN'),
-	GoodyHutUpgradeUnitClass = 'UNITCLASS_CAVALRY',
-	DefaultUnitAI = 'UNITAI_FAST_ATTACK' 
-WHERE Type = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
---------------------------------------------------------------------------------------------------------------------------------------------------------
-UPDATE Language_ko_KR
-SET Text = '러시아만 생산할 수 있습니다. 이 유닛은 이미 피해를 입은 적과 전투 시 전투 보너스를 받으며, 대체되는 용기병보다 강력합니다.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_COSSACK' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '코사크는 용기병을 대체하는 러시아의 고유 유닛입니다. 그들은 용기병보다 강하고, 공격 후 이동할 수도 있습니다. 그들은 피해를 입은 유닛과 전투를 벌일 때 전투 보너스를 얻습니다. 이러한 특성으로 인해 코사크는 반격에 매우 강해졌고, 적이 최전선의 도시를 약탈하고 코사크 치고빠지기 공격으로 약해진 적을 섬멸합니다!'
-WHERE Tag = 'TXT_KEY_UNIT_RUSSIAN_COSSACK_STRATEGY' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 불향각
-UPDATE Language_ko_KR
-SET Text = '불향각'
-WHERE Tag = 'TXT_KEY_BUILDING_SUMMER_PALACE' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]외교 청사[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR], [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 모든 도시에서 외교 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 제공합니다. 모든 외교 유닛에 [COLOR_PLAYER_PURPLE]귀족[ENDCOLOR] 승급을 부여합니다. [NEWLINE][NEWLINE][ICON_RES_PAPER]종이를 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]여름 궁전[ENDCOLOR]이 있어야 건설할 수 있습니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_SUMMER_PALACE_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 파실게비
-UPDATE Language_ko_KR
-SET Text = '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]파실 게비[ENDCOLOR] 주변 3타일 이내에 있는 아군 군사 유닛의 [ICON_STRENGTH]전투력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 도시의 체력이 [COLOR_POSITIVE_TEXT]100[ENDCOLOR]증가하고.  [ICON_STRENGTH]방어력이 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_FASIL_GHEBBI_HELP';
-
--- 크론보로성
-UPDATE Language_ko_KR
-SET Text = '무료 [COLOR_YELLOW][ICON_GREAT_ADMIRAL] 위대한 제독[COLOR_POSITIVE_TEXT][ENDCOLOR]이 1명 출현합니다. 모든 해안 도시의 체력이 [COLOR_POSITIVE_TEXT]50[ENDCOLOR] 증가하고, [ICON_STRENGTH]방어력이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. 해상 유닛을 생산할 때 [ICON_PRODUCTION] 생산 보너스를 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_KRONBORG_HELP';
-
--- 런던 왕립학회
-UPDATE Language_ko_KR
-SET Text = '런던 왕립학회'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ROYALSOC';
-
-UPDATE Language_ko_KR
-SET Text = '무료 [COLOR_YELLOW][ICON_GREAT_SCIENTIST]위대한 과학자[ENDCOLOR] 1명이 출현합니다. 문명의 모든 [COLOR_POSITIVE_TEXT]아카데미[ENDCOLOR]에서 [ICON_RESEARCH] 과학과 [ICON_GOLDEN_AGE] 황금기 점수 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]대학, 기술대학, 연구소[ENDCOLOR]에 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]모든 도시의 [ICON_RESEARCH]문맹으로 인한 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_ROYALSOC_HELP';
-
--- 톱카프 궁전
-UPDATE Language_ko_KR
-SET Text = '문명의 방어 건물에서 [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_GREAT_WORK] 걸작 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함하며, 그 중 1개는 [ICON_VP_ARTIFACT] [COLOR_YELLOW]무료[ENDCOLOR] 유물로 채워집니다.  [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_PRODUCTION]생산 +3 [ICON_RESEARCH]과학 +3 [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_TOPKAPI_HELP';
-
--- 황금의탑
-UPDATE Language_ko_KR
-SET Text = '황금의 탑'
-WHERE Tag = 'TXT_KEY_WONDER_EE_TORRE';
-
-UPDATE Language_ko_KR
-SET Text = '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]조선소[ENDCOLOR]를 무료로 제공하고, 추가 [ICON_INTERNATIONAL_TRADE][COLOR_YELLOW]교역로[ENDCOLOR] 1개를 제공합니다. 해상 [ICON_CARGO_SHIP] 교역로의 길이가 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 증가하고, 교역로의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_TORRE_HELP';
-
--- 베르사유
-UPDATE Language_ko_KR
-SET Text =  '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]갤러리[ENDCOLOR]를 무료로 제공합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]갤러리, 이국 박람회, 오페라 극장[ENDCOLOR]의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE]매 턴 [ICON_GOLD]골드의 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR]가 [ICON_CULTURE]문화로 전환됩니다. [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_VERSAILLES_HELP';
-
--- 왓 프라깨오
-UPDATE Language_ko_KR
-SET Text =  '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]사리탑[ENDCOLOR]를 무료로 제공합니다. 문명의 모든 [COLOR_POSITIVE_TEXT]성지[ENDCOLOR]의 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]사원[ENDCOLOR]과 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]신학대학[ENDCOLOR]의 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT] 2 [ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]강과 인접한 도시[ENDCOLOR]에만 건설할 수 있습니다. [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_WAT_PHRA_KAEW_HELP';
-
--- 시스타나 성당
-UPDATE Language_ko_KR
-SET Text = '모든 도시의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다.  모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]신학대학[ENDCOLOR]의 [ICON_PEACE] 신앙과 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [ICON_GREAT_WORK]걸작 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_PEACE]신앙 +3 [ICON_CULTURE]문화 +3 [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_SISTINE_CHAPEL_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 여름 궁전
-UPDATE Language_ko_KR
-SET Text = '[ICON_CAPITAL] 수도 근처에 무료 [COLOR_YELLOW][ICON_GREAT_PEOPLE]원하는 위인[ENDCOLOR] 1명이 출현합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]이국 박람회[ENDCOLOR]의 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_SUMMER_PALACE_HELP';
-
--- 더웬트 방직소
-UPDATE Language_ko_KR
-SET Text = '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]방직소[ENDCOLOR]를 무료로 제공합니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]방직소, 항구, 제련소[ENDCOLOR]의 [ICON_GOLD] 골드와 [ICON_GOLDEN_AGE]황금기 점수가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다'
-WHERE Tag = 'TXT_KEY_WONDER_EE_DERWENT_MILLS_HELP';
-
---벨렝 탑
-UPDATE Language_ko_KR
-SET Text = '[COLOR_PLAYER_NETHERLANDS_BACKGROUND]선술집[ENDCOLOR]을 무료로 제공합니다. 무료 [COLOR_YELLOW]모험가[ENDCOLOR] 2명이 출현합니다. 이 도시에서 생성된 지상 유닛에게 [COLOR_PLAYER_PURPLE]큰까마귀 수호대[ENDCOLOR]승급을 부여합니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안도시[ENDCOLOR]에만 건설할 수 있습니다.[NEWLINE][NEWLINE]이 불가사의는 전 세계에서 하나만 건설할 수 있는 [COLOR_POSITIVE_TEXT]세계 불가사의[ENDCOLOR]입니다.'
-WHERE Tag = 'TXT_KEY_WONDER_EE_BELEM_TOWER_HELP';
-
--- 기술대학
-UPDATE Language_ko_KR
-SET Text = '기술대학'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY';
-
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 6명마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민이 증가할때 [ICON_RESEARCH] 과학 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR], [ICON_GREAT_GENERAL] 위대한 장군 점수 [COLOR_POSITIVE_TEXT]10[ENDCOLOR]점을 제공합니다.[NEWLINE][NEWLINE][ICON_GOLD]골드로 유닛을 구매하거나 건물 건설에 투자하는 비용이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 감소합니다. [NEWLINE][NEWLINE][ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 출현율이 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]도시에 [COLOR_NEGATIVE_TEXT]신학대학[ENDCOLOR]이 없어야 건설할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '기술대학은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 르네상스 시대의 건물입니다. 신학교가 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '기술대학 또는 그랑제콜은 프랑스와 함께 모로코, 튀니지 등의 다른 나라에도 있는 최고 수준의 전문 교육 기관으로, 아이비 리그나 옥스브리지 같은 다른 엘리트 기관과 비교할 수 있습니다. 최초의 기술대학은 1794년 프랑스 혁명 당시 공학자와 군 장교 부족 문제를 해결하기 위해 수학자 가스파르 몽주에 의해 설립되었고, 1804년 나폴레옹 1세에 의해 군사화되었습니다. 프랑스 국방부의 감독을 받고 있습니다. 대학과는 별개로 운영되기 때문에 대부분 프랑스의 학사(Licence) 학위를 제공하지 않고, 공학계 준박사 학위(écoles d’ingénieurs)와 같은 그랑제콜 석사 학위를 제공합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY_PEDIA';
-
--- 신학대학
-UPDATE Language_ko_KR
-SET Text = '신학대학'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_SEMINARY';
-
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 6명마다 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민이 증가할때 [ICON_PEACE] 신앙 [COLOR_POSITIVE_TEXT]10[COLOR:105:105:105:255](시대별 보정)[ENDCOLOR][ENDCOLOR]과 [ICON_GOLDEN_AGE] 황금기 점수 [COLOR_POSITIVE_TEXT]20[ENDCOLOR]을 제공합니다.[ICON_MISSIONARY]선교사의 전도력이 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR]씩 증가합니다.[NEWLINE][NEWLINE][ICON_PEACE]신앙으로 구매한 비용의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]를 돌려받습니다. [NEWLINE][NEWLINE]도시에 [COLOR_NEGATIVE_TEXT]기술대학[ENDCOLOR]이 없어야 건설할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_SEMINARY_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '신학대학은 게임에서 해제되는 마지막 종교 건물 중 하나입니다. 기술대학이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '신학대학(Seminary, School of theology), 신학대학(Seminary, Theological college), 또는 신학대학원(Divinity school)은 학생(때때로 신학생이라고 함)에게 성경과 신학을 교육하여 일반적으로 성직자, 학문 분야 또는 주로 기독교 사역을 위한 성직 안수를 준비시키는 교육 기관입니다. 근대에 신학대학이 설립된 것은 트리엔트 공의회 이후 반종교개혁에 따른 로마 가톨릭 개혁의 결과입니다. 트리엔트 신학교는 영적 형성과 개인적 훈련에 큰 중점을 두었으며, 기초로서 철학을 공부하고, 궁극적으로 신학을 공부했습니다. 미국에서 가장 오래된 가톨릭 신학교는 1791년에 설립된 볼티모어의 세인트 메리 신학교 및 대학입니다. 유대교의 유사한 개념은 예시바와 미드라샤 시스템이며 이슬람에서는 종종 마드라사를 언급합니다. (이 용어는 훨씬 더 광범위합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_ACADEMY_PEDIA';
-
--- 방직소
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 6명마다 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]강: [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_SHEEP] 양: [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_FUR] 모피: [ICON_GOLD] 골드 +1, [ICON_TOURISM] 관광 +2[NEWLINE] [ICON_RES_DYE] 염료: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_SILK]비단: [ICON_GOLD] 골드 +2, [ICON_TOURISM]관광 +1[NEWLINE][ICON_RES_COTTON]면: [ICON_GOLD] 골드 +3'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_CLOTH_MILL_HELP';
-
--- 조선소
-UPDATE Language_ko_KR
-SET Text = '조선소'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_DRYDOCK';
-
-UPDATE Language_ko_KR
-SET Text = ' 해상 유닛을 생산할 때 [ICON_PRODUCTION] 생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다. 도시에서 생성하는 해상 유닛에 [COLOR_PLAYER_PURPLE]정비 양호[ENDCOLOR] 승급을 부여합니다.[ICON_SILVER_FIST] 인구로부터 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]이 있어야 건설할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_DRYDOCK_HELP';
-
--- 화기제작소
-UPDATE Language_ko_KR
-SET Text = '지상 유닛을 생산할 때 [ICON_PRODUCTION] 생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]도시에서 생산하는 유닛 [ICON_PRODUCTION] 생산 비용의 10%만큼 [ICON_RESEARCH] 과학을 제공합니다.[NEWLINE][NEWLINE][ICON_RES_IRON] 철: [ICON_PRODUCTION] 생산 +2[NEWLINE][ICON_RES_COAL] 석탄: [ICON_PRODUCTION] 생산 +1, [ICON_RESEARCH] 과학 +1'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_GUNSMITH_HELP';
-
--- 장원
-UPDATE Language_ko_KR
-SET Text = '장원'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MANOR';
-
-UPDATE Language_ko_KR
-SET Text = '도시 주변 호수 타일의 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR], [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 타일을 획득할 때 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]10[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1,  [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_PEARLS] 진주: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_INCENSE] 향: [ICON_PEACE] 신앙 +2[NEWLINE][ICON_RES_AMBER] 호박: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1[NEWLINE][ICON_RES_JADE] 옥: [ICON_CULTURE] 문화 +1, [ICON_GOLDEN_AGE] 황금기 점수 +2[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_PRODUCTION] 생산 +2, [ICON_GOLDEN_AGE] 황금기 점수 +2'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MANOR_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '중세 시대에 장원은 영주(또는 주택 관리인)의 거주지였으며, 봉건 영지의 행정 중심지였습니다. 장원은 일반적으로 해당 국가나 지역의 평화로운 정착 정도에 비례하여 요새화되었습니다. 이곳은 세속적인 마을 생활의 중심지 역할을 했으며, 그레이트 홀은 장원 재판소와 소작농 집회의 장소였습니다. 경제가 번영하고 더 넓은 주거 공간에 대한 수요가 증가하면서 16세기 영주 저택은 르네상스풍 시골 주택으로 변화했습니다. 영국에서는 더욱 정교한 건물이 건설되었으며, 이는 새로운 시대의 형식을 반영합니다. 주택은 대개 규칙적인 사각형 평면을 이루었고, 홀의 크기와 중요성은 상대적으로 작았습니다. 후년에 영국에서 장원이라는 명칭은 영지적 기반이 없는 대규모 시골 저택을 지칭하게 되면서 특별한 의미를 잃었습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MANOR_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '장원은 도시 반경 내에 존재하는 사치 자원을 기반으로 문화와 신앙과 같은 수익성 있는 산출물을 제공하므로, 나열된 사치 자원이 근처에 있다면 바람직합니다. 또한 게임 계획에 맞는 황금기 점수를 생성하는 여러 가지 방법을 제공하지만, 다른 건물을 위해 포기할 수도 있습니다.원'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MANOR_PEDIA';
-
--- 카페
-UPDATE Language_ko_KR
-SET Text =  '[ICON_CITIZEN]시민 6명마다 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_GREAT_WRITER] 위대한 작가, [ICON_GREAT_ARTIST] 위대한 예술가, [ICON_GREAT_MUSICIAN] 위대한 음악가의 출현율이 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]전문가 [COLOR_POSITIVE_TEXT]1명[ENDCOLOR]이 더 이상 [ICON_URBANIZATION] 도시화에서 오는 [ICON_HAPPINESS_3] 불행을 증가시키지 않습니다. [NEWLINE][NEWLINE][ICON_RES_SPICES] 향신료: [ICON_GOLD] 골드 +1, [ICON_FOOD] 식량 +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_SUGAR] 설탕: [ICON_FOOD] 식량 +2, [ICON_GOLD] 골드 +2[NEWLINE][ICON_RES_CITRUS] 감귤: [ICON_FOOD] 식량 +2, [ICON_RESEARCH] 과학 +1[NEWLINE] [ICON_RES_COCOA] 코코아: [ICON_GOLD] 골드 +2,  [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_COFFEE] 커피: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_TEA] 차: [ICON_FOOD] 식량 +2, [ICON_CULTURE] 문화 +1'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_SALON_HELP';
-
--- 선술집
-UPDATE Language_ko_KR
-SET Text =  '선술집 '
-WHERE Tag = 'TXT_KEY_BUILDING_EE_TAVERN'; 
-
-UPDATE Language_ko_KR
-SET Text =  '타일 [ICON_RAZING]약탈 시 [ICON_GOLD]골드와 [ICON_TOURISM]관광 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]를 제공합니다. 정찰유닛을 생산할 때 [ICON_PRODUCTION] 생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다. 도시에서 생산하는 정찰유닛의 경험치가 [COLOR_POSITIVE_TEXT]30[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_FISH] 물고기: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_COW] 소: [ICON_GOLD] 골드  +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_WHEAT] 밀, [ICON_RES_MAIZE] 옥수수, [ICON_RES_RICE] 쌀: [ICON_GOLD] 골드 +2 '
-WHERE Tag = 'TXT_KEY_BUILDING_EE_TAVERN_HELP'; 
-
--- 화물 계량소
-UPDATE Language_ko_KR
-SET Text =  '[ICON_CITIZEN]시민 6명마다 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 이 도시로 향하는 [ICON_ARROW_LEFT] 교역로마다 [ICON_GOLD]골드 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고, [ICON_ARROW_RIGHT] 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE] [ICON_RES_GOLD] 금: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_SILVER] 은: [ICON_GOLD] 골드 +2 , [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_GEMS] 보석: [ICON_GOLD] 골드 +3[NEWLINE][ICON_RES_COPPER] 구리: [ICON_GOLD] 골드 +2, [ICON_PRODUCTION] 생산력 +2[NEWLINE][ICON_RES_SALT] 소금: [ICON_GOLD] 골드 +1, [ICON_FOOD] 식량 +1, [ICON_RESEARCH] 과학 +1 '
-WHERE Tag = 'TXT_KEY_BUILDING_EE_WEIGH_HOUSE_HELP'; 
-
--- 이국 박람회
-UPDATE Language_ko_KR
-SET Text =  '이국 박람회'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MENAGERIE';
-
-UPDATE Language_ko_KR
-SET Text =  '[ICON_CITIZEN]시민 6명마다 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 건설을 완료하면 [ICON_TOURISM]관광 [COLOR_POSITIVE_TEXT]250[ENDCOLOR] 제공합니다.[NEWLINE][NEWLINE][ICON_CULTURE]무료로 인한 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_HORSE] 말: [ICON_PRODUCTION] 생산력 +1 [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_BANANA] 바나나: [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_WHALE] 고래:[ICON_RESEARCH] 과학 +2 [NEWLINE][ICON_RES_IVORY] 상아: [ICON_PRODUCTION] 생산+2, [ICON_TOURISM] 관광+2[NEWLINE][ICON_RES_CORAL] 산호: [ICON_RESEARCH] 과학+1, [ICON_CULTURE] 문화 +1'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MENAGERIE_HELP';
-
-UPDATE Language_ko_KR
-SET Text =  '이국 박람회는 근처 자원에 따라 과학, 문화, 관광 등의 수확을 높여줍니다. 자원이 풍부한지에 따라 이 건물을 건설하는 것이 얼마나 시급한지가 결정됩니다. 모든 관광에 보너스가 있으며, 원자재 생산물과 교역로 완성으로 얻는 산출량도 보너스입니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MENAGERIE_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text =  '이국 박람회는 전시를 위해 키우는 이국적인 동물을 모아 놓은 곳이거나, 이런 동물을 모아 두는 장소로, 현대 동물원이나 동물학 정원의 전신입니다. 이 용어는 17세기 프랑스에서 처음 사용되었으며, 가정이나 가축의 관리를 지칭하는 용어였습니다. 이국적인 동물들이 아프리카와 동양으로 항해할 때 포획되어 유럽으로 돌아와 상류 계층을 자극하는 신분 상징으로 판매되었습니다. 사자, 원숭이, 앵무새, 코끼리, 호랑이, 곰은 모두 얻기 어렵고 살아 있는 상태로 키우는 데 비용이 많이 들었으며, 종종 이해되지 않거나 쉽게 구할 수 없는 매우 특별한 식단이 필요했습니다. 중세 시대에도 유럽 전역의 여러 군주들은 왕실 내에 동물 전시관을 운영했습니다. 중세 영국에서 가장 유명한 동물 컬렉션은 1204년 초에 시작된 런던의 타워 동물원이었습니다. 이곳은 1199년부터 1216년까지 영국을 통치했던 왕 존에 의해 세워졌으며, 사자와 곰을 키웠던 것으로 알려져 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_EE_MENAGERIE_PEDIA';
-
--- 오페라 극장 (계몽)
-UPDATE Language_ko_KR
-SET Text = '오페라 극장은 도시의 [ICON_CULTURE] 문화를 증진시키는 계몽 시대의 건물입니다. 또한 도시의 위대한 음악가 출현율과 음악가 길드의 가치도 높여줍니다. 걸작 음악을 위한 슬롯 1개가 포함합니다. 건설하려면 도시에 원형 극장이 필요합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_OPERA_HOUSE_STRATEGY' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 6명마다 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시의 [ICON_GREAT_WORK]걸작 음악에서 오는 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[ICON_GREAT_WORK]걸작 음악 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN]위대한 음악가 출현율이 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_MARBLE] 대리석: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_CRAB] 게: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_WINE] 와인: [ICON_FOOD] 식량, [ICON_GOLD] 골드, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_TRUFFLES] 송로버섯: [ICON_GOLD] 골드 +1,  [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_OLIVE] 올리브: [ICON_FOOD] 식량 +1, [ICON_CULTURE] 문화 +1'
-WHERE Tag = 'TXT_KEY_BUILDING_OPERA_HOUSE_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 갤러리 (계몽)
-UPDATE Language_ko_KR
-SET Text = '도시의 [ICON_GREAT_WORK] 걸작에서 오는 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.  도시의 장원, 이국 박람회, 카페의 [ICON_CULTURE] 문화와 [ICON_GOLDEN_AGE] 황금기 점수가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[ICON_GREAT_WORK] 걸작 예술품 또는 [ICON_VP_ARTIFACT]유물 슬롯 [COLOR_POSITIVE_TEXT]1개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][ICON_GREAT_ARTIST] 위대한 예술가의 출현율이 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR]증가합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_GALLERY_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 공립학교 (계몽)
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 4명마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민이 증가할 때 현재 [ICON_RESEARCH]과학 산출량의 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR]를 즉시 제공합니다. [NEWLINE][NEWLINE][ICON_RESEARCH]문맹에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_PUBLIC_SCHOOL_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 방송탑 (계몽)
-UPDATE Language_ko_KR
-SET Text = '[ICON_CITIZEN]시민 4명마다 [ICON_CULTURE]문화와 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_GREAT_WORK]걸작에서 오는 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. [ICON_GREAT_WORK]걸작 음악 슬롯 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 포함합니다. [NEWLINE][NEWLINE][ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]테마[ENDCOLOR]보너스:  [ICON_GOLD]골드 +10'
-WHERE Tag = 'TXT_KEY_BUILDING_BROADCAST_TOWER_HELP'  AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 식표품상점 -> 약국 (계몽)
-UPDATE Language_ko_KR
-SET Text = '약국'
-WHERE Tag = 'TXT_KEY_BUILDING_GROCER' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '도시 주변 습지의 [ICON_PEACE] 신앙과 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [ICON_CITIZEN]시민이 증가할 때 사용한 [ICON_FOOD] 식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]가 저장됩니다. [ICON_CITIZEN]시민이 증가할 때 현재 [ICON_PEACE]신앙 산출량의 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR]를 즉시 제공합니다.[NEWLINE][NEWLINE][ICON_GOLD]빈곤으로 인한 [ICON_HAPPINESS_3] 불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_FIGS] 무화과: [ICON_PRODUCTION]생산 +1, [ICON_GOLD]골드 +1,   [ICON_FOOD]식량 +1'
-WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '약국은 르네상스 시대 건물로, 도시에 수로를 건설한 경우에만 건설할 수 있습니다. 송수로와 마찬가지로 약국은 도시가 더 빨리 성장하고 빈곤에 맞서는 데 도움이 됩니다. 또한 이 건물은 신앙의 산출량을 증가시키며, (폴리테크닉에만 있는) 신학교를 제외하면 신앙의 산출량을 증가시키는 마지막 건물입니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_GROCER_STRATEGY' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR
-SET Text = '약국은 약, 연고, 약초 치료제, 상처 드레싱 등 의약품을 판매하는 일종의 상점입니다. 상점에는 약품의 사용법에 대한 조언은 물론, 가정요법에 대한 조언도 제공할 수 있는 전문가들이 있었습니다. 중세와 르네상스 시대 유럽의 약국은 종종 가족 사업이었거나 수녀들이 지역 수도원에서 운영했기 때문에 약국의 상당 부분을 여성이 운영했습니다.[NEWLINE][NEWLINE]약사의 일에는 많은 지식과 전문적인 교육이 필요하며, 이는 이 직업에 지위와 존경을 가져다주었습니다. 약사와 약제사의 역할은 현대 화학과 약리학의 선구자 역할을 했습니다.'
-WHERE Tag = 'TXT_KEY_CIV5_BUILDINGS_GROCER_TEXT' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
---===================================
--- ADD mode. terrible change.
---=================================
--- 항만 (계몽)
-UPDATE Language_ko_KR
-SET Text = '이 도시에서 다른 문명으로 출발하는 해상 [ICON_CARGO_SHIP]교역로가 완료되면 [COLOR_POSITIVE_TEXT]역사적 사건[ENDCOLOR]을 발동시킵니다.[NEWLINE][NEWLINE]도시 주변 해양 타일의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고 해양 자원의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]도시의 [ICON_CARGO_SHIP] 해상 교역로 범위가 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. 해상 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다. [ICON_WAR] 지역 군사 보급 한도가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][COLOR_YELLOW]해안 도시[ENDCOLOR]에만 건설할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_HARBOR_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 동물원 (계몽)
-UPDATE Language_ko_KR
-SET Text = '건설을 완료하면 [ICON_RESEARCH] 과학을 [COLOR_POSITIVE_TEXT]500[ENDCOLOR] 제공합니다. 도시 주변 정글 및 숲 타일의 [ICON_CULTURE]문화와 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 야영지의 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE]이 도시에서 다른 문명으로 출발하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP]교역로가 완료되면 [COLOR_POSITIVE_TEXT]역사적 사건[ENDCOLOR]을 발동시킵니다. [NEWLINE][NEWLINE][ICON_CULTURE]무료에서 오는 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 호텔 (계몽)
-UPDATE Language_ko_KR
-SET Text = '도시 주변 설원과 3타일 이내의 신 1개마다 [ICON_GOLD] 골드와 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 도시 주변의 오아시스 타일의 [ICON_TOURISM] 관광이 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_WONDER] 세계 불가사의 및 타일이 제공하는 [ICON_CULTURE]문화의 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR]가 도시의 [ICON_TOURISM]관광에 추가됩니다. [ICON_GREAT_WORK]걸작에서 오는 [ICON_TOURISM]관광이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE]여기에서 시작하여 다른 문명을 대상으로 하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP] 교역로를 완료하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생하거나 기존 이벤트가 강화됩니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_HOTEL_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 천문대 (계몽)
-UPDATE Language_ko_KR
-SET Text = '3타일 이내의 산 1개마다 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 산호섬 타일의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 도시의 항만의 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], [ICON_GOLDEN_AGE] 황금기 점수가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[ICON_PEACE] 신앙으로 구매하는 건물마다 [ICON_PEACE] 신앙이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_CARGO_SHIP] 해상 교역로의 범위가 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][COLOR_CYAN]{TXT_KEY_TECH_EE_REFRACTION}[ENDCOLOR]을 연구하면 [ICON_RESEARCH] 과학이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 작업장 => 풍차 (계몽)
-UPDATE Language_ko_KR
-SET Text = '도시 주변 숲 타일의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR], 습지 및 호수 타일의 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 농장의 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고, 도시의 {TXT_KEY_BUILDING_STABLE}과 약국에서 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.  [NEWLINE][NEWLINE]국내 교역로를 통해 당신 문명의 다른 도시로 [ICON_PRODUCTION]생산을 [ICON_TURNS_REMAINING]제공할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
--- 풍차 (계몽)
-UPDATE Language_ko_KR
-SET Text = '풍차는 중세 시대의 건물로, 숲, 농장, 약국, 마구간, 습지, 호수 타일의 [ICON_PRODUCTION] 생산과 [ICON_GOLD] 골드 산출량을 늘려줍니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY'AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER'); 
-
-UPDATE Language_ko_KR 
-SET Text = '도시에 건물을 건설할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다.[ICON_CITIZEN]시민이 증가할 때 현재 [ICON_PRODUCTION]생산 산출량의 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR]를 즉시 제공합니다. [NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_INTERNATIONAL_TRADE] 교역로의 [ICON_PRODUCTION] 생산이 [COLOR_POSITIVE_TEXT]4[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][ICON_RES_STONE] 석재: [ICON_GOLDEN_AGE]황금기 점수 +1, [ICON_PRODUCTION]생산 +1'
-WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER'); 
-
--- 기업형 농장 (계몽)
-UPDATE Language_ko_KR
-SET Text = '농장 및 목장의 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 매턴 [ICON_FOOD]식량의 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR]를 [ICON_GOLD]골드로 전환합니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말이 [COLOR_NEGATIVE_TEXT]2마리[ENDCOLOR] 필요합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
-
--- 정책 변경 (계몽)
-UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]과학혁명[ENDCOLOR][NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 동안 [ICON_GREAT_PEOPLE] 위인 출현율 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가합니다.[NEWLINE][ICON_BULLET]모든 정글과 설원 타일의 [ICON_RESEARCH]과학이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.'
-WHERE Tag = 'TXT_KEY_POLICY_SECULARISM_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-----------------------------------
--- and carthage UNW goes to ironworks
-----------------------------------
-UPDATE Language_ko_KR SET
-Text = '모든 해안 도시에 [COLOR_PLAYER_NETHERLANDS_BACKGROUND][ENDCOLOR] {TXT_KEY_BUILDING_HARBOR}[ENDCOLOR]을 무료로 제공합니다. 이 도시로 향하는 [ICON_ARROW_LEFT] 교역로마다 도시의 [ICON_GOLD] 골드가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가하고, [ICON_ARROW_RIGHT] 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]1[ENDCOLOR]을 얻습니다. [ICON_INTERNATIONAL_TRADE] 교역로 2개를 [COLOR_POSITIVE_TEXT]추가[ENDCOLOR]로 얻습니다. 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]항만[ENDCOLOR]의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]3[ENDCOLOR] 증가하고, 모든 [COLOR_PLAYER_NETHERLANDS_BACKGROUND]등대[ENDCOLOR]는 [ICON_CULTURE]문화가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 건설을 완료하면 [ICON_RESEARCH]과학 [COLOR_POSITIVE_TEXT]25[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]를 제공합니다. (시대에 따라 조정됨)[NEWLINE][NEWLINE][ICON_GOLD] 빈곤으로 인한 [ICON_HAPPINESS_3]불행이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 감소합니다.[NEWLINE][NEWLINE][ICON_RES_IRON] 철 [COLOR_POSITIVE_TEXT]2개[ENDCOLOR]를 제공합니다.[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_GREAT_COTHON_HELP' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');
-
-UPDATE Language_ko_KR SET
-Text = '{TXT_KEY_BUILDING_IRONWORKS}를 대체하는 카르타고의 고유 건물입니다. {TXT_KEY_BUILDING_IRONWORKS}의 보너스에 더해, {TXT_KEY_BUILDING_GREAT_COTHON}은 모든 해안 도시에 {TXT_KEY_BUILDING_HARBOR}을 제공하고, 추가 [ICON_INTERNATIONAL_TRADE] 교역로 2개를 제공하며, [ICON_GOLD] 교역로에서 보내고 받는 양쪽이 모두 골드를 획득하고, 건설된 도시의 빈곤 감소 효과를 일정량만큼 획득하며, 문명 내 모든 등대와 항구의 생산력을 향상시킵니다. {TXT_KEY_BUILDING_IRONWORKS}와 달리, {TXT_KEY_BUILDING_GREAT_COTHON}은 [COLOR_CYAN]고전 시대[ENDCOLOR]에 [COLOR_CYAN]{TXT_KEY_TECH_CURRENCY_TITLE}[ENDCOLOR] 발견과 함께 만들 수 있습니다. {TXT_KEY_BUILDING_GREAT_COTHON}은 건설에 필요한 어떠한 조건도 없지만, 해안 도시에서만 건설할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_GREAT_COTHON_STRATEGY' AND EXISTS (SELECT * FROM Units WHERE TYPE = 'UNIT_EE_SKIRMISHER');

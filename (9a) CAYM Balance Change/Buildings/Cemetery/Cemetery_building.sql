@@ -63,6 +63,10 @@ SET PrereqTech = 'TECH_GUILDS',
     Cost       = 350
 WHERE Type = 'BUILDING_GARDEN';
 
+UPDATE Buildings
+SET PrereqTech = 'TECH_GUILDS',
+    Cost       = 350
+WHERE Type = 'BUILDING_CANDI';
 
 -- BuildingClasses
 INSERT INTO BuildingClasses 	
