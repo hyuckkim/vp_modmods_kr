@@ -161,12 +161,12 @@ Source: "..\JFD's Papal States for VP (v 10)\*"; DestDir: "{app}\MODS\JFD's Papa
 Source: "..\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's Sovereignty for VP (v 15a) KR"; Flags: ignoreversion recursesubdirs;	Components: jfds
 Source: "..\Landmines for BNW (v 3)\*"; DestDir: "{app}\MODS\Landmines for BNW (v 3)"; Flags: ignoreversion recursesubdirs;	Components: mine
 Source: "..\Leugi's Israel for VP\*"; DestDir: "{app}\MODS\Leugi's Israel for VP"; Flags: ignoreversion recursesubdirs;	Components: li
-Source: "..\Lower Supply Cap for Vox Populi BETA (v 3)\*"; DestDir: "{app}\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"; Flags: ignoreversion recursesubdirs;	Components: lsc
+Source: "..\Lower Supply Cap for Vox Populi BETA (v 3)\*"; DestDir: "{app}\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\lsc
 Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion recursesubdirs;	Components: miwsr
-Source: "..\Misc Tweaks for VP (v 4.10)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10)"; Flags: ignoreversion recursesubdirs;	Components: mt
-Source: "..\Misc Tweaks for VP (v 4.10) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10) INT"; Flags: ignoreversion recursesubdirs;	Components: mt
+Source: "..\Misc Tweaks for VP (v 4.10)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
+Source: "..\Misc Tweaks for VP (v 4.10) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10) INT"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
 Source: "..\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"; Flags: ignoreversion recursesubdirs;	Components: fnv
 ;Source: "..\NavalMod(v5)\*"; DestDir: "{app}\MODS\NavalMod(v5)"; Flags: ignoreversion recursesubdirs;	Components: nm
 ;Source: "..\NavalMod(v5) INT\*"; DestDir: "{app}\MODS\NavalMod(v5) INT"; Flags: ignoreversion recursesubdirs;	Components: nm
@@ -210,7 +210,6 @@ Source: "..\Worker Mountaineering (v 3) INT\*"; DestDir: "{app}\MODS\Worker Moun
 Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion recursesubdirs;	Components: df
 Source: "..\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion recursesubdirs;	Components: lcv
 
-Source: "..\lua51_Win32.dll"; DestDir: "{code:GetCIVDir}"; Flags: ignoreversion recursesubdirs; Components: vp
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vp
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vpnvc
 Source: "..\Maps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion recursesubdirs; Components: map
@@ -219,9 +218,9 @@ Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ig
 Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect\csbu
-Source: "..\UI\UI_SukMainMenu_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu_KR"; Flags: ignoreversion recursesubdirs; Components: smm
+Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"; Flags: ignoreversion recursesubdirs; Components: smm
 Source: "..\UI\UI_CustomModScreen\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen"; Flags: ignoreversion recursesubdirs; Components: cms
-Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion; Components: vp
+Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion recursesubdirs; Components: vp
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
 [Components]
@@ -229,8 +228,9 @@ Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP VPUI VPEX VPMA
 
 Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: Custom; Flags: disablenouninstallwarning
 Name: "vpnvc"; Description: "세계 의회 투표 문명 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
-Name: "lowcap\lsc"; Description: "보급 한도 감소 (Lower Supply Cap for Vox Populi BETA)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "lowcap\mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: Custom; Flags: disablenouninstallwarning
+Name: "lowcap"; Description: "보급 한도 감소 모드 선택"; Types: Custom; Flags: disablenouninstallwarning
+Name: "lowcap\lsc"; Description: "보급 한도 감소 (Lower Supply Cap for Vox Populi BETA)"; Types: VPEX VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "lowcap\mt"; Description: "VP 기타 수정 (Misc Tweaks for VP)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "textures"; Description: "지도 텍스처 선택"; Types: Custom; Flags: disablenouninstallwarning
 Name: "textures\at"; Description: "예술적인 질감 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "textures\vt"; Description: "선명한 질감 (Vibrant Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
@@ -490,6 +490,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(n) Subterfuge KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP (v 1.9)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(5) Enlightenment Era for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(5) Enlightenment Era for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi UCS (v 14)"
