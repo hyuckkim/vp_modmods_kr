@@ -1,24 +1,32 @@
 print("[CAYM] 'Improvement - Attack Trench' mod script.")
+
 -- =====================================================================
 -- Config / IDs
 -- =====================================================================
 local iBuildAttackTrench       = GameInfoTypes.BUILD_ATTACK_TRENCH
 local iImprovementAttackTrench = GameInfoTypes.IMPROVEMENT_ATTACK_TRENCH
 local iWorker                  = GameInfoTypes.UNIT_WORKER
-local iLegion                  = GameInfoTypes.UNIT_ROMAN_LEGION or -1  -- 로마 군단병(있으면 체크)
-local FRONT_RADIUS             = 7  -- AI 전선 판정 반경 (6~8 권장)
+local iLegion                  = GameInfoTypes.UNIT_ROMAN_LEGION or -1
+local FRONT_RADIUS             = 7
 
--- 턴별/타일별 캐시: g_CanBuildFrontline[turn][iPlayer][plotIndex] = bool
+-- Cache for per-turn, per-player, per-plot frontline checks
 local g_CanBuildFrontline = {}
 
 -- =====================================================================
--- Frontline check for AI (거리 기반, 캐시 적용)
+-- Frontline check for AI
+-- Returns true if the plot is within FRONT_RADIUS tiles of any enemy city.
+-- Minor civs are blocked here as well.
 -- =====================================================================
 local function CanBuildTrench_AI_Frontline(iPlayer, iPlotX, iPlotY)
   local pPlayer = Players[iPlayer]
-  local pTeam   = Teams[pPlayer:GetTeam()]
+  if not pPlayer then return false end
 
-  -- 평시엔 바로 불가
+  -- Block minor civs entirely
+  if pPlayer:IsMinorCiv() then
+    return false
+  end
+
+  local pTeam = Teams[pPlayer:GetTeam()]
   if pTeam:GetAtWarCount(false) == 0 then
     return false
   end
@@ -28,7 +36,7 @@ local function CanBuildTrench_AI_Frontline(iPlayer, iPlotX, iPlotY)
     return false
   end
 
-  -- 캐시 키 계산
+  -- Memoize result for this turn/player/plot to avoid recomputation
   local turn = Game.GetGameTurn()
   local gridX = Map.GetGridSizeX()
   local plotIndex = iPlotY * gridX + iPlotX
@@ -41,13 +49,12 @@ local function CanBuildTrench_AI_Frontline(iPlayer, iPlotX, iPlotY)
     return tTurn[iPlayer][plotIndex]
   end
 
-  -- 적 도시가 FRONT_RADIUS 이내에 있으면 전선으로 간주
   local allow = false
   for iLoopPlayer = 0, GameDefines.MAX_CIV_PLAYERS - 1 do
     local pEnemy = Players[iLoopPlayer]
     if pEnemy and pEnemy:IsAlive() and pTeam:IsAtWar(pEnemy:GetTeam()) then
-      -- 도시국가 제외하고 싶다면 아래 조건문 사용:
-      -- if pEnemy:IsMinorCiv() then goto continueEnemy end
+      -- If you want to ignore minor-civ cities as frontlines, wrap the city loop with:
+      -- if not pEnemy:IsMinorCiv() then ... end
 
       for pCity in pEnemy:Cities() do
         if Map.PlotDistance(iPlotX, iPlotY, pCity:GetX(), pCity:GetY()) <= FRONT_RADIUS then
@@ -58,17 +65,37 @@ local function CanBuildTrench_AI_Frontline(iPlayer, iPlotX, iPlotY)
 
       if allow then break end
     end
-    -- ::continueEnemy:: -- GOTO 제거됨
   end
 
-  -- 캐시 저장
   tTurn[iPlayer][plotIndex] = allow
   return allow
 end
 
 -- =====================================================================
--- 기타 기능 연결하고 싶다면 여기에 추가
+-- Final build permission hook (human/AI). Blocks minor civs entirely.
+-- Also enforces the frontline condition for majors.
 -- =====================================================================
--- 예: 유닛이 자동으로 도랑을 파는 행동, AI 사용 조건 등등
+GameEvents.PlayerCanBuild.Add(function(playerID, plotX, plotY, buildType)
+  -- Only handle the trench build; allow others
+  if buildType ~= iBuildAttackTrench then
+    return true
+  end
 
--- print("Trench.lua loaded successfully.") -- 로그 확인용
+  local p = Players[playerID]
+  if not p then
+    return false
+  end
+
+  -- Hard block: minor civs cannot build the trench
+  if p:IsMinorCiv() then
+    return false
+  end
+
+  -- Apply frontline condition for majors
+  return CanBuildTrench_AI_Frontline(playerID, plotX, plotY)
+
+  -- If you prefer to ignore the frontline condition and let majors always build:
+  -- return true
+end)
+
+print("Trench.lua loaded successfully with minor-civ block.")

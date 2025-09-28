@@ -71,6 +71,12 @@ VALUES
 	('BUILDING_VENICE_BANCOGIRO', 'BUILDINGCLASS_MURANO_GLASSWORKS', 'YIELD_TOURISM', 2),
 	('BUILDING_VENICE_BANCOGIRO', 'BUILDINGCLASS_MURANO_GLASSWORKS', 'YIELD_CULTURE', 2);
 --==========================================================================================================================	
+	INSERT INTO Building_ResourceYieldChanges 
+		(BuildingType, ResourceType, YieldType, Yield) 
+	SELECT
+		'BUILDING_VENICE_BANCOGIRO', ResourceType, YieldType, Yield
+	FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_BANK' ;
+
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	
@@ -83,6 +89,3 @@ VALUES		('BUILDING_VENICE_ATLAS', 	256, 		'BancoPicture_256.dds',	1, 				1),
 			('BUILDING_VENICE_ATLAS', 	128, 		'BancoPicture_128.dds',	1, 				1),
 			('BUILDING_VENICE_ATLAS', 	64, 		'BancoPicture_064.dds',	1, 				1),
 			('BUILDING_VENICE_ATLAS', 	45, 		'BancoPicture_045.dds',	1, 				1);
-
-
-
