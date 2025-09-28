@@ -134,7 +134,7 @@ function DoTurn(playerID)
 
 	if MapModData.WonderRace.Options.Logging and player:IsHuman() then print('************HUMAN TURN STARTED (Turn ' .. Game.GetGameTurn() .. ')************') end
 	
-	local activePlayer = '플레이어 ' .. player:GetID()
+	local activePlayer = '문명 ' .. player:GetID()
 	if player:IsHuman() or Teams[Players[humanID]:GetTeam()]:IsHasMet(player:GetTeam()) then
 		activePlayer = player:GetName()
 	end
@@ -171,7 +171,7 @@ function DoTurn(playerID)
 					builder = player:GetName()
 					buildingSite = city:GetName()
 				else
-					builder = '플레이어 ' .. player:GetID()
+					builder = '문명 ' .. player:GetID()
 					buildingSite = '그들의 도시 중 하나'
 				end
 				print(builder .. '의 ' .. Locale.ConvertTextKey(buildingInfo.Description) .. ' 건설 중: ' .. buildingSite .. ' (' .. city:GetProductionTurnsLeft() .. ' 턴 남음.)')
@@ -183,17 +183,17 @@ function DoTurn(playerID)
 						local competitor = nil
 						local competitorSite = nil
 						if not MapModData.WonderRace.Options.CompID then
-							competitor = '또 다른 플레이어'
+							competitor = '다른 문명'
 							competitorSite = '멀리 떨어진 도시'
 						elseif Teams[Players[humanID]:GetTeam()]:IsHasMet(player:GetTeam()) then
 							competitor = player:GetName()
 							competitorSite = city:GetName()
 						else
-							competitor = '플레이어 ' .. player:GetID()
+							competitor = '문명 ' .. player:GetID()
 							competitorSite = '그들의 도시 중 하나'
 						end
-						local msg = '불가사의 건설 시작됨'
-						local tip = '[COLOR_RED]' .. competitor .. '[ENDCOLOR] 의 ' .. wondername .. ' 건설이 시작됨: ' .. competitorSite
+						local msg = '불가사의 건설 시작함'
+						local tip = '[COLOR_RED]' .. competitor .. '[ENDCOLOR] 지도자가 [COLOR_GREEN]' .. wondername .. '[ENDCOLOR] 건설을 [COLOR:0:240:240:255]' .. competitorSite .. '[ENDCOLOR]에서 시작했습니다.'
 						Players[humanID]:AddNotification(NotificationTypes.NOTIFICATION_WONDER_BEATEN, tip, msg, Players[humanID], building, building) 
 						print('Notification fired: ' .. tip)
 					else
@@ -251,16 +251,16 @@ function DoTurn(playerID)
 						if turndiff > 0  then	-- Winning
 							local loser = Players[tonumber(gWonderLosingPlayer[wonder])]
 							if not MapModData.WonderRace.Options.CompID then
-								otherPlayer = '또 다른 플레이어'
+								otherPlayer = '다른 문명'
 							elseif Teams[player:GetTeam()]:IsHasMet(loser:GetTeam()) then
 								otherPlayer = loser:GetName()
 							else
-								otherPlayer = '플레이어 ' .. loser:GetID()
+								otherPlayer = '문명' .. loser:GetID()
 							end
 							if MapModData.WonderRace.Options.Debug then print('otherPlayer = ' .. otherPlayer) end
 							local msg = Locale.ConvertTextKey("TXT_KEY_WR_WINNING")
 							local tip = Locale.ConvertTextKey("TXT_KEY_WR_WINNING_TOOLTIP", otherPlayer, '[COLOR_GREEN]' .. wondername .. '[ENDCOLOR]')
-							if MapModData.WonderRace.Options.TurnDiff then tip = tip .. " by " .. turndiff .. " 턴" end
+							if MapModData.WonderRace.Options.TurnDiff then tip = tip .. " (" .. turndiff .. "턴 차이)" end
 							if (OptionsManager.GetSinglePlayerAutoEndTurnEnabled_Cached()) then	-- If auto-end-turn is enabled
 								Controls.WRDialogCaptionLabel:SetText(msg)
 								Controls.WRDialogWonderLabel:SetText(tip) 
@@ -275,17 +275,17 @@ function DoTurn(playerID)
 						else	-- Losing
 							local winner = Players[tonumber(gWonderWinningPlayer[wonder])]
 							if not MapModData.WonderRace.Options.CompID then
-								otherPlayer = '또 다른 플레이어'
+								otherPlayer = '다른 문명'
 							elseif Teams[player:GetTeam()]:IsHasMet(winner:GetTeam()) then
 								otherPlayer = winner:GetName()
 							else
-								otherPlayer = '플레이어 ' .. winner:GetID()
+								otherPlayer = '문명' .. winner:GetID()
 							end
 							if MapModData.WonderRace.Options.Debug then print('otherPlayer = ' .. otherPlayer) end
 							local losingturns  = (0-turndiff)
 							local msg = Locale.ConvertTextKey("TXT_KEY_WR_LOSING")
 							local tip = Locale.ConvertTextKey("TXT_KEY_WR_LOSING_TOOLTIP", otherPlayer, '[COLOR_RED]' .. wondername .. '[ENDCOLOR]')
-							if MapModData.WonderRace.Options.TurnDiff then tip = tip .. " by " .. losingturns .. " 턴" end
+							if MapModData.WonderRace.Options.TurnDiff then tip = tip .. " (" .. losingturns .. "턴 차이)" end
 							if (OptionsManager.GetSinglePlayerAutoEndTurnEnabled_Cached()) then
 								Controls.WRDialogCaptionLabel:SetText(msg)
 								Controls.WRDialogWonderLabel:SetText(tip)
