@@ -1,3 +1,8 @@
+-- Observatory
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '[NEWLINE][NEWLINE]Requires [COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] Policy.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';
+
 --------------------
 -- Rationalism
 --------------------
@@ -28,10 +33,10 @@ SET Text = 'Emancipation'
 WHERE Tag = 'TXT_KEY_POLICY_SOVEREIGNTY';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]Emancipation[ENDCOLOR][NEWLINE][ICON_BULLET]Receive an [COLOR_POSITIVE_TEXT]Instant Boost[ENDCOLOR] of 5 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points for every [ICON_CITIZEN] Citizen in the Empire, scaling with Era.[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food during [ICON_GOLDEN_AGE] Golden Ages.[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness from every Zoo, Hotel, and Museum.'
+SET Text = '[COLOR_POSITIVE_TEXT]Emancipation[ENDCOLOR][NEWLINE][ICON_BULLET]Receive an [COLOR_POSITIVE_TEXT]Instant Boost[ENDCOLOR] of 5 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points for every [ICON_CITIZEN] Citizen in the Empire, scaling with Era.[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food during [ICON_GOLDEN_AGE] Golden Ages.[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every 8 [ICON_CITIZEN] Citizens in a City.'
 WHERE Tag = 'TXT_KEY_POLICY_SOVEREIGNTY_HELP';
 
--- +1 [ICON_HAPPINESS_1] Happiness for every 6 [ICON_CITIZEN] Citizens in a City.
+-- +1 [ICON_HAPPINESS_1] Happiness from every Zoo, Hotel, and Museum.
 
 UPDATE Language_ko_KR
 SET Text = 'Although by the 1850s slavery in the British Empire had been banned for almost half a century, the vaunted bastion of liberal rationalism in America still only extended fundamental rights to white men of property. This was a contentious state of affairs and in 1861 a civil war erupted. It was in this context that President Abraham Lincoln issued an executive order, ''...That on the first day of January, in the year of our Lord, one thousand eight hundred and sixty-three, all persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free...'''
@@ -68,7 +73,3 @@ WHERE Tag = 'TXT_KEY_POLICY_SCIENTIFIC_REVOLUTION_HELP';
 UPDATE Language_ko_KR
 SET Text = 'The Code of Hammurabi (c. 1755-1750 BC) stipulated a 2 shekel prevailing wage for each 60 gur (300 bushel) vessel constructed in an employment contract between a shipbuilder and a ship-owner. Since then, protections to trade have been a central part of jurisprudence. Sadly, one of the appalling consequences of the industrial revolution was a reversal of this norm and an almost unregulated economic framework that led to much misery and death. In Britain, a great milestone in labour law was reached with the Factories Act 1833, which limited the employment of children under eighteen years of age, prohibited all night work, and, crucially, provided for inspectors to enforce the law.'
 WHERE Tag = 'TXT_KEY_POLICY_SCIENTIFICREVOLUTION_TEXT';
-
-UPDATE Language_ko_KR
-SET Text = Replace(Text, '[NEWLINE][NEWLINE]Requires [COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] Policy.', '')
-WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';

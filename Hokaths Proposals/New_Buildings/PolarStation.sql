@@ -31,6 +31,11 @@ VALUES
 INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor)
 SELECT 'BUILDING_POLAR_STATION', 'FLAVOR_SCIENCE', 90;
 
+--INSERT INTO Building_FeatureYieldChanges
+--	(BuildingType, FeatureType, YieldType, Yield)
+--VALUES
+--	('BUILDING_POLAR_STATION', 'FEATURE_ICE', 'YIELD_SCIENCE', 3);
+
 --------
 -- text 
 --------

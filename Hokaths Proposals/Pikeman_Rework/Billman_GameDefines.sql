@@ -15,20 +15,29 @@ INSERT INTO IconTextureAtlases
 VALUES	('BILLMAN_Flag', 32,  'BillmanFlag_32.dds',	1, 		1);
 
 UPDATE Units SET
-IconAtlas = 'CORP2_ATLAS',
-PortraitIndex = 11
---UnitFlagAtlas = 'BILLMAN_Flag',	
---UnitFlagIconOffset = 0
+	IconAtlas = 'CORP2_ATLAS',
+	PortraitIndex = 11
 WHERE Type = 'UNIT_PIKEMAN';
 
 UPDATE Units SET
 	PrereqTech = 'TECH_ENGINEERING', 
-	Cost = 110, 
-	FaithCost = 250,
-	Combat = 17
-WHERE Type IN (SELECT a.Type FROM Units a WHERE a.Class = 'UNITCLASS_PIKEMAN');
+	Cost = Cost - 25, 
+	FaithCost = FaithCost - 50,
+	Combat = Combat  -- they're already weak!
+WHERE Class = 'UNITCLASS_PIKEMAN' AND PrereqTech = 'TECH_STEEL';
+
+CREATE TRIGGER IF NOT EXISTS Billman_CustomCivs AFTER INSERT ON Units
+WHEN NEW.Class = 'UNITCLASS_PIKEMAN'
+BEGIN
+	UPDATE Units SET
+		Cost = Cost - 25,
+		FaithCost = FaithCost - 50,
+		PrereqTech = 'TECH_ENGINEERING'
+	WHERE Type = NEW.Type AND PrereqTech = 'TECH_STEEL';
+END;
 
 UPDATE Units SET
+	PrereqTech = 'TECH_ENGINEERING', 
 	Cost = 90,	
 	FaithCost = 200,
 	Combat = 18

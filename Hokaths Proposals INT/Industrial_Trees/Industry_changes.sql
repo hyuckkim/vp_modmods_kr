@@ -18,7 +18,7 @@ SET Text = 'Subsidies'
 WHERE Tag = 'TXT_KEY_POLICY_CARAVANS';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]Subsidies[ENDCOLOR][NEWLINE][ICON_BULLET]-50% [ICON_GOLD] Route Maintenance.[NEWLINE][ICON_BULLET]Cities earn +15 [ICON_RESEARCH] Science when they construct Buildings, scaling with Era.[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness from Windmills.'
+SET Text = '[COLOR_POSITIVE_TEXT]Subsidies[ENDCOLOR][NEWLINE][ICON_BULLET]-50% [ICON_GOLD] Route Maintenance.[NEWLINE][ICON_BULLET]Cities earn +15 [ICON_RESEARCH] Science when they construct Buildings, scaling with Era.[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness from {TXT_KEY_BUILDING_WINDMILL}.'
 WHERE Tag = 'TXT_KEY_POLICY_CARAVANS_HELP';
 
 UPDATE Language_ko_KR
@@ -30,7 +30,7 @@ SET Text = '[COLOR_POSITIVE_TEXT]Mercantilism[ENDCOLOR][NEWLINE][ICON_BULLET]+1 
 WHERE Tag = 'TXT_KEY_POLICY_MERCANTILISM_HELP';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]Entrepreneurship[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from every Mine, Farm, and Lumber Mill.[NEWLINE][ICON_BULLET]+3 [ICON_FOOD] Food and +2 [ICON_CULTURE] Culture from every Village and Town.'
+SET Text = '[COLOR_POSITIVE_TEXT]Entrepreneurship[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from every Mine, Farm, and Lumber Mill.[NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture from every Village.[NEWLINE][ICON_BULLET]+3 [ICON_FOOD] Food and [ICON_CULTURE] Culture from every Town.'
 WHERE Tag = 'TXT_KEY_POLICY_ENTREPRENEURSHIP_HELP';
 
 UPDATE Language_ko_KR
@@ -57,3 +57,5 @@ UPDATE Language_ko_KR SET
 Text = Replace(Text, 'Production towards ', 'Production towards Weigh Houses, Cloth Mills, and ')
 WHERE Tag = 'TXT_KEY_POLICY_BRANCH_COMMERCE_HELP'
 AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT');
+-------------------
+------------------

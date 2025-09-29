@@ -198,12 +198,13 @@ VALUES
 	('BELIEF_MISSIONARY_ZEAL', 'YIELD_CULTURE', 10),
 	('BELIEF_MISSIONARY_ZEAL', 'YIELD_FAITH', 10);
 
-UPDATE Beliefs SET
-BorderGrowthRateIncreaseGlobal = 33
-WHERE Type = 'BELIEF_MISSIONARY_ZEAL';
+--UPDATE Beliefs SET
+--BorderGrowthRateIncreaseGlobal = 33
+--WHERE Type = 'BELIEF_MISSIONARY_ZEAL';
+-- +33% [ICON_CULTURE_LOCAL] Border Growth Rate. 
 
 UPDATE Language_en_US
-SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%. +33% [ICON_CULTURE_LOCAL] Border Growth Rate. [ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
+SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%.[ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
 WHERE Tag = 'TXT_KEY_BELIEF_MISSIONARY_ZEAL';
 --+1 [ICON_HAPPINESS_1] Happiness from every Luxury Resource.
 
@@ -282,7 +283,7 @@ UPDATE Belief_MaxYieldPerFollower SET Max = 999 WHERE BeliefType = 'BELIEF_ASCET
 INSERT INTO Belief_YieldChangeAnySpecialist
 	(BeliefType, YieldType, Yield)
 VALUES
-	('BELIEF_DIVINE_INSPIRATION', 'YIELD_FOOD', 4);
+	('BELIEF_ASCETISM', 'YIELD_FOOD', 4);
 
 UPDATE Language_en_US
 SET Text = '+1 [ICON_FOOD] Food for every 2 followers in the City. +4 [ICON_FOOD] Food if the City has a Specialist.'
