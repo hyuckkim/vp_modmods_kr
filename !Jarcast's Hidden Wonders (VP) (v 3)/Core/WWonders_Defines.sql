@@ -674,6 +674,14 @@ INSERT INTO Building_Flavors
 VALUES	('BUILDING_HARMANDIR_SAHIB',	'FLAVOR_RELIGION', 	30),
 		('BUILDING_HARMANDIR_SAHIB',	'FLAVOR_GROWTH', 	20),
 		('BUILDING_HARMANDIR_SAHIB',	'FLAVOR_HAPPINESS', 10);
+		
+CREATE TRIGGER IF NOT EXISTS JarHarmandirSahib AFTER INSERT ON Belief_BuildingClassFaithPurchase WHEN NEW.BuildingClassType IS NOT NULL
+AND NEW.BeliefType IN (SELECT Type FROM Beliefs WHERE Follower= 1)
+BEGIN
+	INSERT INTO Building_BuildingClassYieldChanges
+			(BuildingType, 				BuildingClassType,		YieldType, YieldChange)
+	SELECT 	'BUILDING_HARMANDIR_SAHIB', NEW.BuildingClassType, 	'YIELD_FOOD', 2;
+END;
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- LARABANGA MOSQUE
 ------------------------------------------------------------------------------------------------------------------------------------------

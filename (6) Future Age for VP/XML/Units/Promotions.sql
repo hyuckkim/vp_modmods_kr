@@ -99,7 +99,6 @@ INSERT INTO UnitPromotions
 			(Type, 										Description, 										Help, 													Sound, 				MaxHitPointsChange, EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange, PromotionDuration, 	PlagueID, 	PlaguePriority, BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
 VALUES		('PROMOTION_NEUROTIC_POISON_1',             'TXT_KEY_PROMOTION_FW_UNIT_SWARM_1',	            'TXT_KEY_PROMOTION_FW_UNIT_SWARM_1_HELP',               'AS2D_IF_LEVELUP',	-20, 				-15, 				-15, 				-15, 				3, 					1, 			0, 				0,						-1,				0,			0,			0,					0,			0,					1, 				49, 			'CIV_COLOR_ATLAS_FW_PROMOTIONS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_FW_UNIT_SWARM_0');
 
--- 두 번째 프로모션의 PediaEntry를 _1로
 UPDATE UnitPromotions
 SET PediaEntry = 'TXT_KEY_PROMOTION_FW_UNIT_SWARM_1'
 WHERE Type = 'PROMOTION_NEUROTIC_POISON_1';
@@ -288,11 +287,9 @@ VALUES
 ----------------
 -- PROMOTION CHANGE
 ----------------
--- 기존 매핑 전부 삭제
 DELETE FROM UnitPromotions_UnitClasses
 WHERE PromotionType = 'PROMOTION_ANTI_HELICOPTER';
 
--- 새 매핑 삽입
 INSERT INTO UnitPromotions_UnitClasses
     (PromotionType, UnitClassType, Modifier)
 VALUES
@@ -314,7 +311,6 @@ VALUES
 	
 
 
--- 유전자 계열: 기본 선택창에 나오면 안 되니까 CannotBeChosen = 1
 UPDATE UnitPromotions SET CannotBeChosen = 1
 WHERE Type IN (
   'PROMOTION_FW_ADRENAL_GLANDS',
@@ -326,7 +322,6 @@ WHERE Type IN (
   'PROMOTION_FW_CHAMELEON'
 );
 
--- 바이오 계열
 UPDATE UnitPromotions SET CannotBeChosen = 1
 WHERE Type IN (
   'PROMOTION_FW_IMPACT_MOD',           

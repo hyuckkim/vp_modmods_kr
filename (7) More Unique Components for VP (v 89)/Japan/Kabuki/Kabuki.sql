@@ -71,7 +71,7 @@ FROM Building_YieldModifiers WHERE	BuildingType = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 INSERT INTO Building_YieldFromInternalTREnd
 		(BuildingType, 				YieldType, 			Yield)
-VALUES	('BUILDING_JAPAN_KABUKI', 	'YIELD_CULTURE', 	50);
+VALUES	('BUILDING_JAPAN_KABUKI', 	'YIELD_CULTURE', 	150);
 --------------------------------
 -- IconTextureAtlases
 --------------------------------

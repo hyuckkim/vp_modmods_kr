@@ -58,12 +58,17 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	SELECT 'UNIT_SHOSHONE_YELLOW_BROW', 'PROMOTION_FORMATION_2' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- turtle ship
+	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	UPDATE Units SET 
-	ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_EE_CARRACK')
+	ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
+	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
+	Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
+	FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
+	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_PRIVATEER'),  -- strong as the next boat up
+	Class = (SELECT Class FROM Units WHERE Type = 'UNIT_EE_CARRACK')
 	WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-
 	
 	-- Armada
 	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GALLEON' WHERE UnitType = 'UNIT_SPAIN_ARMADA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
@@ -371,13 +376,6 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	WHERE Tag = 'TXT_KEY_BUILDING_JAPAN_KABUKI_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- Beer Hall
-	DELETE FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_GERMANY_BEER_HALL';
-
-	INSERT INTO Building_ClassesNeededInCity
-			(BuildingType,					BuildingClassType)
-    SELECT		'BUILDING_GERMANY_BEER_HALL', 	BuildingClassType
-    FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_EE_TAVERN';
-
 	UPDATE Civilization_BuildingClassOverrides SET BuildingClassType = 'BUILDINGCLASS_EE_TAVERN' 
 	WHERE BuildingType = 'BUILDING_GERMANY_BEER_HALL' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	

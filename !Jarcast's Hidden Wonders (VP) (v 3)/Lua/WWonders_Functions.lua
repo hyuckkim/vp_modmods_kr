@@ -31,7 +31,7 @@ function Game_IsUsingMod(modID)
 end
 -------------------------------------------------------------------------------------------------------------------------
 -- Get the median of a table.
-function stats.median( t )
+function stats_median( t )
   local temp={}
 
   -- deep copy table so that when we sort it, the original is unchanged
@@ -501,7 +501,7 @@ function Jar_CanConstructJohnsHopkinsHospital(ePlayer, eCity, eBuilding)
 			local oPlayer = Players[iOPlayer]
 			table.insert(tPlayersSciencePerTurn, oPlayer:GetScienceTimes100() /100)
 		end
-		local median = stats.median( tPlayersSciencePerTurn )
+		local median = stats_median( tPlayersSciencePerTurn )
 		local playerScience = pPlayer:GetScienceTimes100() /100
 		print("John Hopkins, science per turn: " .. median .. " vs. " .. playerScience .. " (" .. Locale.ConvertTextKey( GameInfo.Civilizations[pPlayer:GetCivilizationType()].ShortDescription ) .. ")." )
 		return playerScience >= median

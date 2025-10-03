@@ -49,7 +49,7 @@ WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_EXPLORATION', '탐험'),
 --TXT_KEY_TECH_EE_EXPLORATION_DESC - 바닐라 게임의 TXT_KEY_TECH_EXPLORATION_DESC 를 사용
-('TXT_KEY_TECH_EE_EXPLORATION_HELP', '르네상스 후기의 강력한 근접 해상 유닛인 [COLOR_POSITIVE_TEXT]갤리온[ENDCOLOR]과 게임 중반 정찰 유닛인 [COLOR_POSITIVE_TEXT]탐험가[ENDCOLOR]를 생산할 수 있습니다.'),
+('TXT_KEY_TECH_EE_EXPLORATION_HELP', '르네상스 후기의 강력한 근접 해상 유닛인 [COLOR_POSITIVE_TEXT]갤리온[ENDCOLOR]과 게임 중반 정찰 유닛인 [COLOR_POSITIVE_TEXT]모험가[ENDCOLOR]를 생산할 수 있습니다.'),
 ('TXT_KEY_TECH_EE_EXPLORATION_QUOTE', '[NEWLINE][TAB][TAB]"우리는 탐험을 멈추지 않을 것이다. 그리고 우리의 모든 탐험이 끝나는 그날 비로소 우리는 최초의 시작점에 도착하여 그곳이 어디였는지 처음으로 알게 될 것이다."[NEWLINE][TAB][TAB] - T. S. 엘리엇[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_FLINTLOCK', '화기'),
@@ -111,7 +111,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_PROMOTION_EE_FIRST_RATE_HELP', '이 승급을 가진 유닛 [COLOR_POSITIVE_TEXT]근처[ENDCOLOR]에서 턴을 시작하는 해군 유닛의 [ICON_STRENGTH] 방어력 +20%'),
 -- 모험가
 ('TXT_KEY_PROMOTION_EE_ADVENTURER', '큰까마귀 수호대'),
-('TXT_KEY_PROMOTION_EE_ADVENTURER_HELP', '유닛이 승선 중일 때 [ICON_MOVES] 이동력 +1, [ICON_VP_VISION] 시야 +2'),
+('TXT_KEY_PROMOTION_EE_ADVENTURER_HELP', '유닛이 승선 중일 때 [ICON_MOVES] 이동력 +2, [ICON_VP_VISION] 시야 +2'),
 -- 건선거
 ('TXT_KEY_PROMOTION_EE_DRYDOCK', '정비 양호'),
 ('TXT_KEY_PROMOTION_EE_DRYDOCK_HELP', '해상 유닛 [ICON_STRENGTH] 전투력 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR]');
@@ -129,7 +129,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 카락
 ('TXT_KEY_UNIT_EE_CARRACK', '카락'),
 ('TXT_KEY_UNIT_EE_CARRACK_HELP', '초기 르네상스 시대의 근접 해군 유닛으로, 해상에서 조기에 우위를 점하는 데 사용되었습니다.'),
-('TXT_KEY_UNIT_EE_CARRACK_PEDIA', '제노바 공화국에서 상업적 목적으로 개발한 카락은 3개 또는 4개의 돛대가 있는 범선입니다. 스페인과 포르투갈이 해양 여행과 탐험에 활용한 카락은 역사상 가장 영향력 있는 선박 디자인 중 하나였습니다. 광활한 거리를 가로질러 화물을 운반하기에 크고 공간이 넉넉했기 때문에 대서양과 인도양을 건너 새롭게 발견한 부와 자원을 유럽의 대도시로 운반하는 데 많이 사용되었습니다. 역사 속 가장 유명한 배 중 하나인 산타 마리아호는 콜럼버스와 그의 선원들이 신대륙을 발견하기 위해 타고 간 범선이었습니다. 이 디자인의 또 다른 유명한 배는 아프리카를 일주하여 인도의 향신료를 찾을 수 있는 새로운 항로를 발견한 포르투갈의 탐험가 바스쿠 다 가마의 배입니다. 카락의 종말은 갤리온선의 손으로 이루어졌습니다. 카락에서 발전한 최초의 갤리온선은 16세기 중반에 등장했지만, 카락은 그 후에도 수십 년 동안 사용되었습니다.'),
+('TXT_KEY_UNIT_EE_CARRACK_PEDIA', '제노바 공화국에서 상업적 목적으로 개발한 카락은 3개 또는 4개의 돛대가 있는 범선입니다. 스페인과 포르투갈이 해양 여행과 탐험에 활용한 카락은 역사상 가장 영향력 있는 선박 디자인 중 하나였습니다. 광활한 거리를 가로질러 화물을 운반하기에 크고 공간이 넉넉했기 때문에 대서양과 인도양을 건너 새롭게 발견한 부와 자원을 유럽의 대도시로 운반하는 데 많이 사용되었습니다. 역사 속 가장 유명한 배 중 하나인 산타 마리아호는 콜럼버스와 그의 선원들이 신대륙을 발견하기 위해 타고 간 범선이었습니다. 이 디자인의 또 다른 유명한 배는 아프리카를 일주하여 인도의 향신료를 찾을 수 있는 새로운 항로를 발견한 포르투갈의 모험가 바스쿠 다 가마의 배입니다. 카락의 종말은 갤리온선의 손으로 이루어졌습니다. 카락에서 발전한 최초의 갤리온선은 16세기 중반에 등장했지만, 카락은 그 후에도 수십 년 동안 사용되었습니다.'),
 ('TXT_KEY_UNIT_EE_CARRACK_STRATEGY', '카락은 캐러벨에서 업그레이드됩니다. 이를 통해 바다를 항해하는 야만인이나 적 문명의 반격으로부터 해안 도시를 보호하는 데 도움이 됩니다. 초반에 전투력이 강화되었기 때문에 지원을 받아 방어력이 낮은 작은 도시를 점령하는 데 사용할 수 있습니다.'),
 -- 용기병
 ('TXT_KEY_UNIT_EE_DRAGOON', '용기병'),
@@ -246,21 +246,21 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_FIELD_GUN_PEDIA', '곡사포는 비교적 짧은 포신과 비교적 작은 추진제를 사용하여 비교적 높은 궤적과 가파른 하강 각도로 투사체를 추진하는 것이 특징인 포병의 한 유형입니다. 18세기 중반에 유럽 군대에 도입된 이 야전 곡사포는 폭발성 포탄을 발사할 수도 있었습니다. 1860년대에 포병 장교들은 (야전 곡사포보다 훨씬 큰) 강선식 공성 곡사포가 활강 공성포나 공성 박격포보다 성벽을 파괴하는 데 더 효율적인 수단이라는 것을 발견했습니다. 이들 무기 중 가장 가벼운 것(나중에 "경형 공성 곡사포"로 알려짐)은 구경이 약 150mm였고, 무게가 40~50kg인 포탄을 발사했습니다. 가장 무거운 곡사포(나중에 "중형 공성 곡사포"라고 불림)는 구경이 200mm에서 220mm 사이였고, 무게가 약 100kg(220파운드)인 포탄을 발사했습니다.'),
 ('TXT_KEY_UNIT_FIELD_GUN_STRATEGY', '야전포보다 더 강력한 산업 시대 포병 유닛입니다. 적의 영토에서는 절반 속도로 이동합니다.');
 
--- 방데이랑치스
+-- 반데이란테스
 UPDATE Language_ko_KR 
-SET Text = '방데이랑치스'
+SET Text = '반데이란테스'
 WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES';
 
 UPDATE Language_ko_KR 
-SET Text = '방데이랑치스(깃발을 드는 자)는 17세기 브라질에 정착한 포르투갈 사람들이자 재산을 노리고 결혼하려는 사람들이었습니다. 그들은 1494년 토르데시야스 경계선의 훨씬 남쪽과 서쪽, 브라질 내륙으로 침투한 반데이라(bandeiras, "깃발")라는 원정대를 이끌었습니다. 이 경계선은 남아메리카에서 카스티야 또는 후에 스페인(서쪽)의 영토와 포르투갈(동쪽)의 영토를 공식적으로 나누었습니다. 원래는 원주민을 잡아 노예로 삼는 것이 목표였지만, 방데이랑치스는 나중에 금, 은, 다이아몬드 광산을 찾는 데 원정을 집중하기 시작했습니다. 그들은 이익과 모험을 찾아 미지의 지역으로 모험을 떠나며 브라질 식민지의 실질적인 국경을 확장했습니다.'
+SET Text = '반데이란테스(국기를 들고 다니는 사람들)는 17세기 브라질에 정착한 포르투갈인 정착민이자 행운의 사냥꾼이었습니다. 그들은 공식적으로 카스티야 또는 후에 스페인 (서쪽) 영토를 남아메리카의 포르투갈 (동쪽) 영토로부터 분할한 1494년 토르데시야스 선의 남쪽과 서쪽 멀리 브라질 내륙을 관통하는 반데이라스 ("깃발")라고 불리는 탐험대를 이끌었습니다. 비록 그들이 원래 아메리카 원주민들을 사로잡고 노예로 강제하는 것을 목표로 했지만, 밴더란테들은 나중에 금, 은, 그리고 다이아몬드 광산을 찾는 데 그들의 탐험에 초점을 맞추기 시작했습니다. 그들이 이윤과 모험을 찾아 지도에 없는 지역으로 모험을 떠나면서, 그들은 브라질 식민지의 효과적인 국경을 확장했습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES_TEXT';
 
 UPDATE Language_ko_KR 
-SET Text = '모험가를 대체하는 브라질만의 르네상스 시대 유닛입니다. 모험가보다 빠르고 강력하며, 더 일찍 이용 가능합니다. 공개되지 않은 타일을 탐험하면 골드, 문화, 과학을 생성합니다. 이러한 산출량은 가장 가까운 소유 도시에 합산됩니다. 또한 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 개선할 수 있는 능력을 가지고 있으며, 야만인에 대해 더 강력합니다. 이 유닛을 사용해 탐험하고, 남아 있는 야만인 주둔지를 소탕하고, 국경 도시에 귀중한 산출을 창출하세요.'
+SET Text = '모험가를 대체하는 브라질의 르네상스 시대 고유 유닛입니다. 모험가보다 빠르고 강력하며, 더 일찍 이용 가능합니다.  미학인된 타일 탐험 시 [ICON_GOLD] 골드, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화를 생성합니다. 해당 산출량은 가장 가까운 도시에 더해집니다. 또한 자신의 영토 내에 요새, 채석장, 광산, 브라질 소방목 벌목장을 건설할 수 있으며, 야만인에 대해 더 강력합니다. 이 유닛을 사용해 탐험하고, 남아 있는 야만인 주둔지를 소탕하고, 국경 도시에 귀중한 산출을 창출하세요.'
 WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES_STRATEGY';
 
 UPDATE Language_ko_KR 
-SET Text = '모험가를 대체하는 브라질 고유 유닛입니다. 이 유닛으로 타일을 공개할 때마다 [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_RESEARCH] 과학을 생성합니다. 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 건설할 수 있습니다.'
+SET Text = '모험가를 대체하는 브라질의 고유 유닛입니다. 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 건설할 수 있습니다. 이 유닛으로 타일을 공개할 때마다 [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_RESEARCH] 과학을 얻습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_SURVIVALISM_3}[ENDCOLOR] 진급을 보유합니다.'
 WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES_HELP';
 
 -- 양손검병
@@ -469,7 +469,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_TAVERN', '선술집'),
 ('TXT_KEY_BUILDING_EE_TAVERN_HELP', '타일 [ICON_RAZING]약탈 시 [ICON_GOLD]골드와 [ICON_TOURISM]관광 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]를 제공합니다. 정찰유닛을 생산할 때 [ICON_PRODUCTION] 생산 보너스를 [COLOR_POSITIVE_TEXT]15%[ENDCOLOR] 제공합니다. 도시에서 생산하는 정찰유닛의 경험치가 [COLOR_POSITIVE_TEXT]30[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_FISH] 물고기: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1[NEWLINE][ICON_RES_COW] 소: [ICON_GOLD] 골드  +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_CRAB] 게: [ICON_FOOD] 식량, [ICON_GOLD] 골드, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_WHEAT] 밀, [ICON_RES_MAIZE] 옥수수, [ICON_RES_RICE] 쌀: [ICON_GOLD] 골드 +2 '),
 ('TXT_KEY_BUILDING_EE_TAVERN_STRATEGY', '선술집은 새로운 땅을 발견하여 얻는 경험치 부족을 보완하여 정찰 라인에 활력을 불어넣습니다. 또한 약탈도 보상하는데, 이는 해당 유닛이 가장 잘 수행하는 경우가 많습니다. 태번의 또 다른 역할은 대부분의 식량 제공 보너스 자원의 가치를 높여 해안 도시에 투자한 것에 대한 보상을 제공하는 것입니다.'),
-('TXT_KEY_BUILDING_EE_TAVERN_PEDIA', '알코올성 음료를 제공하고 소비하는 시설은 인류 문명 전반의 도시에 항상 존재해 왔습니다. 대항해 시대가 도래하면서 이러한 시설은 항구 도시와 해안 정착지에서 점점 더 중요한 역할을 하게 되었습니다. 그들은 알려지지 않은 땅으로 길고 위험한 항해를 떠나는 선원, 상인, 탐험가들에게 필수적인 모임 장소가 되었습니다. 이러한 태번은 종종 선원이 필요한 선박을 위한 비공식적인 취업 안내소 역할을 했으며, 해양 정보와 항해 전문 지식을 교환하는 중심지 역할을 했습니다. 이러한 시설은 여행자와 도둑뿐만 아니라 정치적 불만을 품은 사람과 모험가들의 안식처 역할을 했습니다.[NEWLINE][NEWLINE]16세기 중반에는 모든 계층의 시민들 사이에서 외식 습관이 확고하게 자리 잡았습니다. 태번은 조수와 바람에 따라 생활하던 일시적인 고객의 요구를 충족시키기 위해 매일 정해진 시간에 식사를 제공하는 관습을 처음 만들었습니다. 태번이 사회적으로 점점 더 받아들여지면서, 좋은 시설은 정기적인 회관과 비공식적인 클럽하우스 역할도 했으며, 선원과 탐험가 사이의 친목을 도모하고 대항해 시대에 매우 중요했던 정보 교환을 용이하게 했습니다.'),
+('TXT_KEY_BUILDING_EE_TAVERN_PEDIA', '알코올성 음료를 제공하고 소비하는 시설은 인류 문명 전반의 도시에 항상 존재해 왔습니다. 대항해 시대가 도래하면서 이러한 시설은 항구 도시와 해안 정착지에서 점점 더 중요한 역할을 하게 되었습니다. 그들은 알려지지 않은 땅으로 길고 위험한 항해를 떠나는 선원, 상인, 모험가들에게 필수적인 모임 장소가 되었습니다. 이러한 태번은 종종 선원이 필요한 선박을 위한 비공식적인 취업 안내소 역할을 했으며, 해양 정보와 항해 전문 지식을 교환하는 중심지 역할을 했습니다. 이러한 시설은 여행자와 도둑뿐만 아니라 정치적 불만을 품은 사람과 모험가들의 안식처 역할을 했습니다.[NEWLINE][NEWLINE]16세기 중반에는 모든 계층의 시민들 사이에서 외식 습관이 확고하게 자리 잡았습니다. 태번은 조수와 바람에 따라 생활하던 일시적인 고객의 요구를 충족시키기 위해 매일 정해진 시간에 식사를 제공하는 관습을 처음 만들었습니다. 태번이 사회적으로 점점 더 받아들여지면서, 좋은 시설은 정기적인 회관과 비공식적인 클럽하우스 역할도 했으며, 선원과 모험가 사이의 친목을 도모하고 대항해 시대에 매우 중요했던 정보 교환을 용이하게 했습니다.'),
 -- 화물 계량소
 ('TXT_KEY_BUILDING_EE_WEIGH_HOUSE', '화물 계량소'),
 ('TXT_KEY_BUILDING_EE_WEIGH_HOUSE_HELP', '[ICON_CITIZEN]시민 6명마다 [ICON_GOLD]골드가 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 이 도시로 향하는 [ICON_ARROW_LEFT] 교역로마다 [ICON_GOLD]골드 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가하고, [ICON_ARROW_RIGHT] 교역로를 개설한 상대 문명의 [ICON_GOLD]골드도 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE] [ICON_RES_GOLD] 금: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_SILVER] 은: [ICON_GOLD] 골드 +2 , [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_GEMS] 보석: [ICON_GOLD] 골드 +3[NEWLINE][ICON_RES_COPPER] 구리: [ICON_GOLD] 골드 +2, [ICON_PRODUCTION] 생산 +2[NEWLINE][ICON_RES_SALT] 소금: [ICON_GOLD] 골드 +1, [ICON_FOOD] 식량 +1, [ICON_RESEARCH] 과학 +1 '),
