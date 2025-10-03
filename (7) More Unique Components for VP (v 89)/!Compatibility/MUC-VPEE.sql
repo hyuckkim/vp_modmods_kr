@@ -52,22 +52,21 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	UPDATE Language_en_US SET 
 	Text = 'The Baochuan is a Chinese unique unit. It is much sturdier than the Galleon it replaces. You can use your Baochuan to passively bring City-States under your sway, or take advantage of its sturdiness to dominate coastal empires.'
 	WHERE Tag = 'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	
+	-- chewa
+	UPDATE Units SET
+	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY')
+	WHERE Type = 'UNIT_ETHIOPIA_SHOTELAI' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- yellow brow
 	INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
 	SELECT 'UNIT_SHOSHONE_YELLOW_BROW', 'PROMOTION_FORMATION_2' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- turtle ship
-	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	UPDATE Units SET 
-	ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
-	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
-	Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
-	FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_CARRACK'),
-	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_PRIVATEER'),  -- strong as the next boat up
-	Class = (SELECT Class FROM Units WHERE Type = 'UNIT_EE_CARRACK')
+	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_CARRACK')
 	WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	
 	-- Armada
@@ -391,6 +390,13 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	GreatWorkYieldType = (SELECT GreatWorkYieldType FROM Buildings WHERE Type = 'BUILDING_EE_TAVERN'),
 	BuildingProductionModifier = (SELECT BuildingProductionModifier FROM Buildings WHERE Type = 'BUILDING_EE_TAVERN')
 	WHERE Type = 'BUILDING_GERMANY_BEER_HALL' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	
+	DELETE FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_GERMANY_BEER_HALL';
+
+	--INSERT INTO Building_ClassesNeededInCity 
+	--	(BuildingType, BuildingClassType)
+	--VALUES
+	--	('BUILDING_GERMANY_BEER_HALL', 'BUILDINGCLASS_HARBOR');
 
 	DELETE FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_GERMANY_BEER_HALL' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
@@ -474,7 +480,35 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTE
 	Text = 'Damage from all sources against this City is reduced by 2. +1 [ICON_WAR] Military Supply, and +5% [ICON_SILVER_FIST] Military Supply from Population. Allows City to [ICON_RANGE_STRENGTH] Strike over obstacles.[NEWLINE][NEWLINE]Garrisoned Units receive an additional 5 Health when healing in this City.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Strength for every 2 National or [ICON_WONDER] World Wonders built in this City. 20% of [ICON_STRENGTH] City Defense is converted to [ICON_CULTURE] Culture very turn. When you complete a building gain 2% progress towards a [ICON_GREAT_ARTIST] Great Artist.[NEWLINE][NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in this City.'
 	WHERE Tag = 'TXT_KEY_BUILDING_INDIA_QILA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
+UPDATE Buildings SET
+BuildingProductionModifier = 15
+WHERE Type = 'BUILDING_SIAM_BAAN_CHANG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
+INSERT INTO Building_ResourceYieldChanges (BuildingType, ResourceType, YieldType, Yield)
+SELECT
+'BUILDING_SIAM_BAAN_CHANG',
+src.ResourceType, src.YieldType, src.Yield
+FROM Building_ResourceYieldChanges AS src
+WHERE src.BuildingType = 'BUILDING_WORKSHOP'
+AND src.ResourceType = 'RESOURCE_STONE'
+AND src.YieldType IN ('YIELD_GOLDEN_AGE_POINTS','YIELD_PRODUCTION')
+AND EXISTS (SELECT 1 FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value=1);
+
+INSERT INTO Building_GrowthExtraYield (BuildingType, YieldType, Yield)
+SELECT
+'BUILDING_SIAM_BAAN_CHANG' AS BuildingType,
+g.YieldType,
+g.Yield
+FROM Building_GrowthExtraYield AS g
+WHERE g.BuildingType = 'BUILDING_WORKSHOP'
+AND g.YieldType = 'YIELD_PRODUCTION'
+AND EXISTS (SELECT 1 FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value=1);
+
+
+	-- elephant camp
+	UPDATE Language_en_US SET
+	Text = '+1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills near this City. {TXT_KEY_BUILDING_STABLE}s and Pharmacies in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.'
+	WHERE Tag = 'TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 
 

@@ -21,7 +21,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		if pPlot:IsCity() then	
 			local pCity = pPlot:GetPlotCity()
 			if pCity:IsHasBuilding(eBuildingKabuki) then
-				local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.05)
+				local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.35)
 				pPlayer:ChangeGold(iWriterBonus)
 		
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -42,7 +42,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		if pPlot:IsCity() then	
 			local pCity = pPlot:GetPlotCity()
 			if pCity:IsHasBuilding(eBuildingKabuki) then
-				local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.02)
+				local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.14)
 				pPlayer:ChangeOverflowResearch(iArtistBonus)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -63,7 +63,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 			local pCity = pPlot:GetPlotCity()
 			if pCity:IsHasBuilding(eBuildingKabuki) then
 		
-				local iMusicianBonus = math.floor(0.015 * pPlayer:GetTourism())
+				local iMusicianBonus = math.floor(0.03 * pPlayer:GetTourism())
 				pPlayer:ChangeFaith(iMusicianBonus)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then

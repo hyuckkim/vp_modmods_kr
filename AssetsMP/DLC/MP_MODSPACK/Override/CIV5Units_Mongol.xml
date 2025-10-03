@@ -12934,7 +12934,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP"> 
 			<Text>
-				+1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills near this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in this City. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.
+				+1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills near this City. {TXT_KEY_BUILDING_STABLE}s and Pharmacies in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY"> 
@@ -187125,7 +187125,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP"> 
 			<Text>
-				도시에서 [COLOR_YELLOW]선구자[ENDCOLOR]를 생산할 수 있습니다. 노동자나 개척자 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다. [ICON_CITIZEN]시민이 증가할 때 [ICON_PRODUCTION]생산을 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]제공합니다. [NEWLINE][NEWLINE]도시 근처에 [ICON_RES_HORSE]말, [ICON_RES_SHEEP]양, [ICON_RES_COW]소, [ICON_RES_BISON]들소 자원이 출현합니다. 각 타일마다 [ICON_PRODUCTION]생산을 [COLOR_POSITIVE_TEXT]20[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]얻습니다. [NEWLINE][NEWLINE]기마 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_TURNS_REMAINING]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_SHEEP]양: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_COW]소: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_BISON]들소: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2
+				도시에서 [COLOR_YELLOW]선구자[ENDCOLOR]를 생산할 수 있습니다. 노동자나 개척자 유닛을 생산할 때 [ICON_PRODUCTION]생산보너스를 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 제공합니다. [ICON_CITIZEN]시민이 증가할 때 [ICON_PRODUCTION]생산을 [COLOR_POSITIVE_TEXT]15[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]제공합니다. [NEWLINE][NEWLINE]도시 근처에 [ICON_RES_HORSE]말, [ICON_RES_SHEEP]양, [ICON_RES_COW]소, [ICON_RES_BISON]들소 자원이 3타일 이내에 있을 경우 타일을 추가로 획득합니다. 획득한 각 타일마다 [ICON_PRODUCTION]생산을 [COLOR_POSITIVE_TEXT]20[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]기마 유닛을 생산할 때 [ICON_PRODUCTION]생산 보너스를 [COLOR_POSITIVE_TEXT]33%[ENDCOLOR] 제공합니다. [NEWLINE][NEWLINE]이 도시에서 출발하는 국내 [ICON_TURNS_REMAINING]교역로의 [ICON_PRODUCTION]생산이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_SHEEP]양: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_COW]소: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2[NEWLINE][ICON_RES_BISON]들소: [ICON_FOOD]식량 +2, [ICON_PRODUCTION]생산 +2, [ICON_GOLD]골드 +2
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY"> 
@@ -188789,7 +188789,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_EE_TAVERN_PEDIA"> 
 			<Text>
-				알코올성 음료를 제공하고 소비하는 시설은 인류 문명 전반의 도시에 항상 존재해 왔습니다. 대항해 시대가 도래하면서 이러한 시설은 항구 도시와 해안 정착지에서 점점 더 중요한 역할을 하게 되었습니다. 그들은 알려지지 않은 땅으로 길고 위험한 항해를 떠나는 선원, 상인, 탐험가들에게 필수적인 모임 장소가 되었습니다. 이러한 태번은 종종 선원이 필요한 선박을 위한 비공식적인 취업 안내소 역할을 했으며, 해양 정보와 항해 전문 지식을 교환하는 중심지 역할을 했습니다. 이러한 시설은 여행자와 도둑뿐만 아니라 정치적 불만을 품은 사람과 모험가들의 안식처 역할을 했습니다.[NEWLINE][NEWLINE]16세기 중반에는 모든 계층의 시민들 사이에서 외식 습관이 확고하게 자리 잡았습니다. 태번은 조수와 바람에 따라 생활하던 일시적인 고객의 요구를 충족시키기 위해 매일 정해진 시간에 식사를 제공하는 관습을 처음 만들었습니다. 태번이 사회적으로 점점 더 받아들여지면서, 좋은 시설은 정기적인 회관과 비공식적인 클럽하우스 역할도 했으며, 선원과 탐험가 사이의 친목을 도모하고 대항해 시대에 매우 중요했던 정보 교환을 용이하게 했습니다.
+				알코올성 음료를 제공하고 소비하는 시설은 인류 문명 전반의 도시에 항상 존재해 왔습니다. 대항해 시대가 도래하면서 이러한 시설은 항구 도시와 해안 정착지에서 점점 더 중요한 역할을 하게 되었습니다. 그들은 알려지지 않은 땅으로 길고 위험한 항해를 떠나는 선원, 상인, 모험가들에게 필수적인 모임 장소가 되었습니다. 이러한 태번은 종종 선원이 필요한 선박을 위한 비공식적인 취업 안내소 역할을 했으며, 해양 정보와 항해 전문 지식을 교환하는 중심지 역할을 했습니다. 이러한 시설은 여행자와 도둑뿐만 아니라 정치적 불만을 품은 사람과 모험가들의 안식처 역할을 했습니다.[NEWLINE][NEWLINE]16세기 중반에는 모든 계층의 시민들 사이에서 외식 습관이 확고하게 자리 잡았습니다. 태번은 조수와 바람에 따라 생활하던 일시적인 고객의 요구를 충족시키기 위해 매일 정해진 시간에 식사를 제공하는 관습을 처음 만들었습니다. 태번이 사회적으로 점점 더 받아들여지면서, 좋은 시설은 정기적인 회관과 비공식적인 클럽하우스 역할도 했으며, 선원과 모험가 사이의 친목을 도모하고 대항해 시대에 매우 중요했던 정보 교환을 용이하게 했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_EE_TAVERN_STRATEGY"> 
@@ -192913,7 +192913,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP"> 
 			<Text>
-				건설 완료 시 모든 소유 도시에서 [COLOR_POSITIVE_TEXT]야사[ENDCOLOR]가 제공됩니다.[NEWLINE][NEWLINE]궁수, 공성, 기마 및 기갑 유닛을 생산할 때 [ICON_PRODUCTION] 생산보너스를 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 제공합니다. 도시를 정복할 때마다 제국의 모든 도시에 [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화, [ICON_GOLD] 골드가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]을 제공합니다. [NEWLINE][NEWLINE]모든 도시에서 모든 [ICON_HAPPINESS_3] 필요 요구치가 약간 감소합니다.
+				건설 완료 시 모든 소유 도시에서 [COLOR_POSITIVE_TEXT]야사[ENDCOLOR]가 제공됩니다.[NEWLINE][NEWLINE]궁수, 공성, 기마 및 기갑 유닛을 생산할 때 [ICON_PRODUCTION] 생산보너스를 [COLOR_POSITIVE_TEXT]20%[ENDCOLOR] 제공합니다. 도시를 정복할 때마다 제국의 모든 도시에 [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화, [ICON_GOLD] 골드가 [COLOR_POSITIVE_TEXT]10[ENDCOLOR][COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]을 제공합니다. [NEWLINE][NEWLINE]모든 도시에서 모든 [ICON_HAPPINESS_3] 필요 요구치가 약간 감소합니다.[NEWLINE][NEWLINE]문명에 도시가 많을수록 건설에 필요한 [ICON_PRODUCTION]생산과 [ICON_CITIZEN]시민이 증가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY"> 
@@ -325103,7 +325103,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EE_ADVENTURER_HELP"> 
 			<Text>
-				유닛이 승선 중일 때 [ICON_MOVES] 이동력 +1, [ICON_VP_VISION] 시야 +2
+				유닛이 승선 중일 때 [ICON_MOVES] 이동력 +2, [ICON_VP_VISION] 시야 +2
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_EE_DRYDOCK"> 
@@ -325765,7 +325765,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_GPSASSIST"> 
 			<Text>
-				궤도강하
+				궤도정찰
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FW_GPSASSIST_HELP"> 
@@ -348877,7 +348877,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TECH_EE_EXPLORATION_HELP"> 
 			<Text>
-				르네상스 후기의 강력한 근접 해상 유닛인 [COLOR_POSITIVE_TEXT]갤리온[ENDCOLOR]과 게임 중반 정찰 유닛인 [COLOR_POSITIVE_TEXT]탐험가[ENDCOLOR]를 생산할 수 있습니다.
+				르네상스 후기의 강력한 근접 해상 유닛인 [COLOR_POSITIVE_TEXT]갤리온[ENDCOLOR]과 게임 중반 정찰 유닛인 [COLOR_POSITIVE_TEXT]모험가[ENDCOLOR]를 생산할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TECH_EE_EXPLORATION_QUOTE"> 
@@ -355685,7 +355685,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP"> 
 			<Text>
-				기관포장갑차를 대체하는 아라비아의 고유 유닛입니다. 기관포장갑차보다 빨리 쓸 수 있으며 [ICON_RES_COAL][COLOR_YELLOW] 석탄[ENDCOLOR]을 필요로 하지 않습니다. 사막에서 더 빠르고 강해집니다. 타일을 약탈할 때 [ICON_ARROW_RIGHT]이동력을 소비하지 않고, 인접한 적 유닛에게 추가 피해를 입힙니다.
+				경전차를 대체하는 아라비아의 고유 유닛입니다. 경전차보다 빨리 쓸 수 있으며 [ICON_RES_ALUMINUM]알루미늄을 필요로 하지 않습니다. 사막에서 더 빠르고 강해집니다. 타일을 약탈할때 [ICON_MOVES]이동력을 소비하지 않고, 인접한 적 유닛에게 추가 피해를 입힙니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY"> 
@@ -355923,7 +355923,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BANDEIRANTES"> 
 			<Text>
-				방데이랑치스
+				반데이란테스
 			</Text>
 			<Plurality>
 				2
@@ -355931,17 +355931,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BANDEIRANTES_HELP"> 
 			<Text>
-				모험가를 대체하는 브라질 고유 유닛입니다. 이 유닛으로 타일을 공개할 때마다 [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_RESEARCH] 과학을 생성합니다. 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 건설할 수 있습니다.
+				모험가를 대체하는 브라질의 고유 유닛입니다. 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 건설할 수 있습니다. 이 유닛으로 타일을 공개할 때마다 [ICON_GOLD] 골드, [ICON_CULTURE] 문화, [ICON_RESEARCH] 과학을 얻습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_SURVIVALISM_3}[ENDCOLOR] 진급을 보유합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BANDEIRANTES_STRATEGY"> 
 			<Text>
-				모험가를 대체하는 브라질만의 르네상스 시대 유닛입니다. 모험가보다 빠르고 강력하며, 더 일찍 이용 가능합니다. 공개되지 않은 타일을 탐험하면 골드, 문화, 과학을 생성합니다. 이러한 산출량은 가장 가까운 소유 도시에 합산됩니다. 또한 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 개선할 수 있는 능력을 가지고 있으며, 야만인에 대해 더 강력합니다. 이 유닛을 사용해 탐험하고, 남아 있는 야만인 주둔지를 소탕하고, 국경 도시에 귀중한 산출을 창출하세요.
+				모험가를 대체하는 브라질의 르네상스 시대 고유 유닛입니다. 모험가보다 빠르고 강력하며, 더 일찍 이용 가능합니다.  미학인된 타일 탐험 시 [ICON_GOLD] 골드, [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화를 생성합니다. 해당 산출량은 가장 가까운 도시에 더해집니다. 또한 자신의 영토 내에 요새, 채석장, 광산, 브라질 소방목 벌목장을 건설할 수 있으며, 야만인에 대해 더 강력합니다. 이 유닛을 사용해 탐험하고, 남아 있는 야만인 주둔지를 소탕하고, 국경 도시에 귀중한 산출을 창출하세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BANDEIRANTES_TEXT"> 
 			<Text>
-				방데이랑치스(깃발을 드는 자)는 17세기 브라질에 정착한 포르투갈 사람들이자 재산을 노리고 결혼하려는 사람들이었습니다. 그들은 1494년 토르데시야스 경계선의 훨씬 남쪽과 서쪽, 브라질 내륙으로 침투한 반데이라(bandeiras, "깃발")라는 원정대를 이끌었습니다. 이 경계선은 남아메리카에서 카스티야 또는 후에 스페인(서쪽)의 영토와 포르투갈(동쪽)의 영토를 공식적으로 나누었습니다. 원래는 원주민을 잡아 노예로 삼는 것이 목표였지만, 방데이랑치스는 나중에 금, 은, 다이아몬드 광산을 찾는 데 원정을 집중하기 시작했습니다. 그들은 이익과 모험을 찾아 미지의 지역으로 모험을 떠나며 브라질 식민지의 실질적인 국경을 확장했습니다.
+				반데이란테스(국기를 들고 다니는 사람들)는 17세기 브라질에 정착한 포르투갈인 정착민이자 행운의 사냥꾼이었습니다. 그들은 공식적으로 카스티야 또는 후에 스페인 (서쪽) 영토를 남아메리카의 포르투갈 (동쪽) 영토로부터 분할한 1494년 토르데시야스 선의 남쪽과 서쪽 멀리 브라질 내륙을 관통하는 반데이라스 ("깃발")라고 불리는 탐험대를 이끌었습니다. 비록 그들이 원래 아메리카 원주민들을 사로잡고 노예로 강제하는 것을 목표로 했지만, 밴더란테들은 나중에 금, 은, 그리고 다이아몬드 광산을 찾는 데 그들의 탐험에 초점을 맞추기 시작했습니다. 그들이 이윤과 모험을 찾아 지도에 없는 지역으로 모험을 떠나면서, 그들은 브라질 식민지의 효과적인 국경을 확장했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BARBARIANS_STRATEGY"> 
@@ -356366,7 +356366,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP"> 
 			<Text>
-				기마궁수를 대체하는 켈트의 고유 유닛입니다. 근접 유닛과 궁병 유닛에 더 강력합니다. 이동 후 새로 인접한 적 유닛에 피해를 줍니다. 산병보다 이동력이 더 적고 험지에서 이동력 페널티를 받습니다.
+				산병을 대체하는 켈트의 고유 유닛입니다. 근접 유닛과 궁병 유닛에 더 강력합니다. 이동 후 새로 인접한 적 유닛에 피해를 줍니다. 산병보다 이동력이 더 적고 험지에서 이동력 페널티를 받습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY"> 
@@ -356694,7 +356694,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EE_CARRACK_PEDIA"> 
 			<Text>
-				제노바 공화국에서 상업적 목적으로 개발한 카락은 3개 또는 4개의 돛대가 있는 범선입니다. 스페인과 포르투갈이 해양 여행과 탐험에 활용한 카락은 역사상 가장 영향력 있는 선박 디자인 중 하나였습니다. 광활한 거리를 가로질러 화물을 운반하기에 크고 공간이 넉넉했기 때문에 대서양과 인도양을 건너 새롭게 발견한 부와 자원을 유럽의 대도시로 운반하는 데 많이 사용되었습니다. 역사 속 가장 유명한 배 중 하나인 산타 마리아호는 콜럼버스와 그의 선원들이 신대륙을 발견하기 위해 타고 간 범선이었습니다. 이 디자인의 또 다른 유명한 배는 아프리카를 일주하여 인도의 향신료를 찾을 수 있는 새로운 항로를 발견한 포르투갈의 탐험가 바스쿠 다 가마의 배입니다. 카락의 종말은 갤리온선의 손으로 이루어졌습니다. 카락에서 발전한 최초의 갤리온선은 16세기 중반에 등장했지만, 카락은 그 후에도 수십 년 동안 사용되었습니다.
+				제노바 공화국에서 상업적 목적으로 개발한 카락은 3개 또는 4개의 돛대가 있는 범선입니다. 스페인과 포르투갈이 해양 여행과 탐험에 활용한 카락은 역사상 가장 영향력 있는 선박 디자인 중 하나였습니다. 광활한 거리를 가로질러 화물을 운반하기에 크고 공간이 넉넉했기 때문에 대서양과 인도양을 건너 새롭게 발견한 부와 자원을 유럽의 대도시로 운반하는 데 많이 사용되었습니다. 역사 속 가장 유명한 배 중 하나인 산타 마리아호는 콜럼버스와 그의 선원들이 신대륙을 발견하기 위해 타고 간 범선이었습니다. 이 디자인의 또 다른 유명한 배는 아프리카를 일주하여 인도의 향신료를 찾을 수 있는 새로운 항로를 발견한 포르투갈의 모험가 바스쿠 다 가마의 배입니다. 카락의 종말은 갤리온선의 손으로 이루어졌습니다. 카락에서 발전한 최초의 갤리온선은 16세기 중반에 등장했지만, 카락은 그 후에도 수십 년 동안 사용되었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_EE_CARRACK_STRATEGY"> 
@@ -360810,12 +360810,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_HELP"> 
 			<Text>
-				경궁기병을 대체하는 폴란드의 고유 유닛입니다. 경궁기병보다 공격과 방어에 더 강하고, 원거리 공격에는 추가로 방어보너스를 받습니다. 적 유닛을 처치할때마다 [ICON_PEACE]신앙을 획득하며 야만인을 처치하면 2배로 받습니다.
+				중산병을 대체하는 폴란드의 고유 유닛입니다. 중산병보다 공격과 방어에 더 강하고, 원거리 공격에는 추가로 방어 보너스를 받습니다. 적 유닛을 처치할때마다 [ICON_PEACE]신앙을 획득하며 야만인을 처치하면 2배로 받습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY"> 
 			<Text>
-				판체르니는 경궁기병의 폴란드 대체유닛입니다. 경궁기병보다 공격력과 방어력이 강하고 원거리 공격으로부터 받는 피해가 적습니다. 판체르니는 또한 적을 처치할 때마다 신앙을 얻습니다. 기마 유닛인 판체르니는 장창병에게 취약합니다.
+				판체르니는 중산병의 폴란드 대체유닛입니다. 중산병보다 공격력과 방어력이 강하고 원거리 공격으로부터 받는 피해가 적습니다. 판체르니는 또한 적을 처치할 때마다 신앙을 얻습니다. 기마 유닛인 판체르니는 장창병에게 취약합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_TEXT"> 
@@ -361143,7 +361143,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP"> 
 			<Text>
-				창총보병을 대체하는 쇼쇼니의 고유 유닛입니다. [COLOR_POSITIVE_TEXT]진형 I[ENDCOLOR] 승급을 가지고 시작하며, 피해를 입을수록 [ICON_STRENGTH]전투력이 상승하고, 요새화하면 [ICON_STRENGTH]전투 보너스가 2배가 됩니다.
+				테르시오를 대체하는 쇼쇼니의 고유 유닛입니다. [COLOR_PLAYER_PURPLE]진형 I[ENDCOLOR] 승급을 가지고 시작하며, 피해를 입을수록 [ICON_STRENGTH]전투력이 상승하고, 요새화하면 [ICON_STRENGTH]전투 보너스가 2배가 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY"> 
