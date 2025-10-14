@@ -2,7 +2,7 @@
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
 #define MyAppName "VP 한국어"
-#define MyAppVersion "4.22"
+#define MyAppVersion "5.0a1"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
 #define SourcePath ".."
@@ -51,8 +51,6 @@ Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP
 Source: "..\(4b) Promotion Tree for VP\*"; DestDir: "{app}\MODS\(4b) Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
 Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion recursesubdirs;	Components: vpc
 Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion recursesubdirs;	Components: vpc
-Source: "..\(7) More Unique Components for VP (v 89)\*"; DestDir: "{app}\MODS\(7) More Unique Components for VP (v 89)"; Flags: ignoreversion recursesubdirs; Components: vpuc
-Source: "..\(7L) More Unique Components for VP (v 89) INT\*"; DestDir: "{app}\MODS\(7L) More Unique Components for VP (v 89) INT"; Flags: ignoreversion recursesubdirs; Components: vpuc
 
 ;Source: "..\(ui) City-States Leaders for VP KR\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP KR"; Flags: ignoreversion recursesubdirs;	Components: csl
 Source: "..\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion recursesubdirs;	Components: le
@@ -240,7 +238,6 @@ Name: "civselect\csbu"; Description: "진정한 대체 지도자 제거 (문명 
 Name: "usf"; Description: "VP 유닛 크기와 대형 (Unit Scaling and Formation for VP)"; Types: Custom; Flags: disablenouninstallwarning
 Name: "lm"; Description: "VP 큰 미니맵 (Large Minimap for VP wth EUI only)"; Types: Custom; Flags: disablenouninstallwarning
 
-Name: "vpuc"; Description: "VP 더 많은 고유 요소 (More Unique Components for VP)"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vpc"; Description: "VP 커뮤니티 이벤트 (VP Community Events)"; Types: VP VPUI VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vppt"; Description: "VP 승급 트리 (Promotion Tree for VP)"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "icv"; Description: "VP 개선된 도시 화면 UI (Improved City View (Vox Populi EUI))"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
