@@ -9,10 +9,12 @@ SET
 WHERE Class = 'UNITCLASS_PIKEMAN';
 
 UPDATE Units SET Combat = 20 WHERE Type = 'UNIT_FCOMPANY';
+UPDATE Units SET Combat = 19 WHERE Type = 'UNIT_POLYNESIAN_MAORI_WARRIOR';
+UPDATE Units SET Combat = 18 WHERE Type = 'UNIT_GOEDENDAG';
 
-UPDATE Language_en_US
-SET Text = 'The {TXT_KEY_UNIT_DANISH_BERSERKER} is the Danish unique unit, replacing the {TXT_KEY_UNIT_PIKEMAN}. It can cross rivers and attack while embarked with no penalty, and has a [ICON_STRENGTH] Combat Strength bonus against wounded units. It is also faster, allowing it to catch up to wounded units to deal the final strike.'
-WHERE Tag = 'TXT_KEY_CIV5_DENMARK_BERSERKER_STRATEGY';
+-- UPDATE Language_en_US
+-- SET Text = 'The {TXT_KEY_UNIT_DANISH_BERSERKER} is the Danish unique unit, replacing the {TXT_KEY_UNIT_PIKEMAN}. It can cross rivers and attack while embarked with no penalty, and has a [ICON_STRENGTH] Combat Strength bonus against wounded units. It is also faster, allowing it to catch up to wounded units to deal the final strike.'
+-- WHERE Tag = 'TXT_KEY_CIV5_DENMARK_BERSERKER_STRATEGY';
 
 ----------------------------------------------------
 -- Alternate Composite Bowman unlock
@@ -25,7 +27,7 @@ UPDATE Units SET PrereqTech = 'TECH_ENGINEERING' WHERE Class = 'UNITCLASS_COMPOS
 UPDATE UnitPromotions SET HillsDoubleMove = 0 WHERE Type = 'PROMOTION_ALTITUDE_TRAINING';
 
 UPDATE Language_en_US
-SET Text = '+10% [ICON_STRENGTH] Combat Strength when defending in or attacking a Unit in [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR].'
+SET Text = '+10% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_PROMOTION_ALTITUDE_TRAINING_HELP';
 
 ----------------------------------------------------
@@ -51,7 +53,7 @@ SET
 	VisibilityChange = 0,
 	EmbarkExtraVisibility = 0,
 	OutsideFriendlyLandsModifier = 10
-WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_1';
+WHERE Type = 'PROMOTION_TRAILBLAZER_1';
 
 UPDATE UnitPromotions
 SET
@@ -60,13 +62,13 @@ SET
 	River = 0,
 	OutsideFriendlyLandsModifier = 10,
 	IgnoreZOC = 1
-WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_2';
+WHERE Type = 'PROMOTION_TRAILBLAZER_2';
 
 UPDATE UnitPromotions
 SET
 	OutsideFriendlyLandsModifier = 10,
 	IgnoreZOC = 0
-WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_3';
+WHERE Type = 'PROMOTION_TRAILBLAZER_3';
 
 UPDATE UnitPromotions
 SET
@@ -96,32 +98,33 @@ SET
 	RankNumber = 3,
 	PortraitIndex = 33,
 	OrderPriority = 301,
+	FlagPromoOrder = 301,
 	CannotBeChosen = 0
 WHERE Type = 'PROMOTION_SCOUTING_3';
 
 INSERT INTO UnitPromotions_Features
 	(PromotionType, FeatureType, DoubleMove)
 VALUES
-	('PROMOTION_WOODLAND_TRAILBLAZER_1', 'FEATURE_JUNGLE', 1),
-	('PROMOTION_WOODLAND_TRAILBLAZER_1', 'FEATURE_FOREST', 1);
+	('PROMOTION_TRAILBLAZER_1', 'FEATURE_JUNGLE', 1),
+	('PROMOTION_TRAILBLAZER_1', 'FEATURE_FOREST', 1);
 
 INSERT INTO UnitPromotions_Terrains
 	(PromotionType, TerrainType, DoubleMove)
 VALUES
-	('PROMOTION_WOODLAND_TRAILBLAZER_2', 'TERRAIN_DESERT', 1),
-	('PROMOTION_WOODLAND_TRAILBLAZER_2', 'TERRAIN_SNOW', 1);
+	('PROMOTION_TRAILBLAZER_2', 'TERRAIN_DESERT', 1),
+	('PROMOTION_TRAILBLAZER_2', 'TERRAIN_SNOW', 1);
 
 UPDATE Language_en_US
 SET Text = '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]Double [ICON_MOVES] Movement in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR].'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_1_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_1_HELP';
 
 UPDATE Language_en_US
 SET Text = '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]Double [ICON_MOVES] Movement in [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Snow[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR].'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_2_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_2_HELP';
 
 UPDATE Language_en_US
 SET Text = '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]Can Embark, cross Mountains, and use Enemy Roads/Railroads.'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_3_HELP';
 
 UPDATE Language_en_US
 SET Text = 'Eliminate combat penalties for attacking from the sea or over a river.[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.'

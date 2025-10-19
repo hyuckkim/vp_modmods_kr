@@ -35,15 +35,3 @@ WHERE Tag = 'TXT_KEY_BUILD_ENCAMPMENT_SHOSHONE_HELP';
 UPDATE Language_ko_KR
 SET Text = '[ICON_FOOD] 식량, [ICON_PRODUCTION] 생산력, [ICON_CULTURE] 문화가 증가합니다. 타일의 모든 특징을 제거합니다.[NEWLINE]타일에 있는 자신의 유닛에 방어 보너스를 제공하고, 인접한 적 유닛에게 약간의 피해를 줍니다.'
 WHERE Tag = 'TXT_KEY_BUILD_ENCAMPMENT_SHOSHONE_REC';
-
-UPDATE Language_ko_KR
-SET Text = '인접한 적군 유닛을 약화시키고, 빠르게 승선 및 하선할 수 있으며, [ICON_RES_IRON] {TXT_KEY_RESOURCE_IRON}을 필요로 하지 않는 독특한 폴리네시아 {TXT_KEY_UNIT_LONGSWORDSMAN}입니다.'
-WHERE Tag = 'TXT_KEY_CIV5_POLYNESIAN_MAORI_WARRIOR_HELP';
-
-UPDATE Language_ko_KR
-SET Text = '{TXT_KEY_UNIT_POLYNESIAN_MAORI_WARRIOR}는 폴리네시아 고유 유닛으로, {TXT_KEY_UNIT_LONGSWORDSMAN}을 대체합니다. 인접한 적의 [ICON_STRENGTH] 전투력을 감소시키는 고유한 약화 오라를 가지고 있습니다. 또한, 하나의 [ICON_MOVES] 이동력으로 탑승 및 하선이 가능합니다. 훨씬 저렴하고, 훈련에 [ICON_RES_IRON] {TXT_KEY_RESOURCE_IRON}이 필요하지 않습니다.'
-WHERE Tag = 'TXT_KEY_CIV5_POLYNESIAN_MAORI_WARRIOR_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]인접한 적군 유닛[ENDCOLOR]의 [ICON_STRENGTH] 전투력이 -20% 감소합니다.[NEWLINE]승선과 하선에 [ICON_MOVES] 이동력을 1 소모합니다.'
-WHERE Tag = 'TXT_KEY_PROMOTION_HAKA_WAR_DANCE_HELP';
