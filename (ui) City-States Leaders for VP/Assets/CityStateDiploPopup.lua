@@ -940,6 +940,38 @@ end
 ----------------------------------------------------------------
 ----------------------------------------------------------------
 -- adan_eslavo -->
+function GetCityStateTraitKey(minorPlayerID)
+    local minorPlayer = Players[minorPlayerID]
+
+    if minorPlayer then
+        local minorCivTraitID = minorPlayer:GetMinorCivTrait()
+        
+        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MARITIME then
+            return "MARITIME"
+        end
+		if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MERCANTILE then
+            return "MERCANTILE"
+        end
+        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC then
+            return "MILITARISTIC"
+        end
+        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_CULTURED then
+			return "CULTURED"
+        end
+        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_RELIGIOUS then
+            return "RELIGIOUS"
+        end
+		
+		print("Lua error - invalid minor civ trait ID: " .. tostring(minorCivTraitID))
+
+		return "CULTURED" -- default to CULTURED if trait ID is invalid
+    else
+        print("Lua error - invalid player index")
+    end
+
+    return ""
+end
+
 -- from CityStateStatusHelper.lua
 function GetContenderInfo(majorPlayerID, minorPlayerID)
 	local pMinor = Players[minorPlayerID]
@@ -993,34 +1025,6 @@ function GetContenderInfo(majorPlayerID, minorPlayerID)
 	end
 
 	return L("TXT_KEY_CSL_POPUP_CONTENDER_INFLUENCE", tostring(iContInfluence), iMissingInfluenceForContender)
-end
-function GetCityStateTraitKey(minorPlayerID)
-    local minorPlayer = Players[minorPlayerID]
-
-    if minorPlayer then
-        local minorCivTraitID = minorPlayer:GetMinorCivTrait()
-        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_CULTURED then
-            return "CULTURED"
-        end
-        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC then
-            return "MILITARISTIC"
-        end
-        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MARITIME then
-            return "MARITIME"
-        end
-        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MERCANTILE then
-            return "MERCANTILE"
-        end
-        if minorCivTraitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_RELIGIOUS then
-            return "RELIGIOUS"
-        end
-		print("Lua error - invalid minor civ trait ID: " .. tostring(minorCivTraitID))
-		return "CULTURED" -- default to CULTURED if trait ID is invalid
-    else
-        print("Lua error - invalid player index")
-    end
-
-    return ""
 end
 -- adan_eslavo <--
 ----------------------------------------------------------------

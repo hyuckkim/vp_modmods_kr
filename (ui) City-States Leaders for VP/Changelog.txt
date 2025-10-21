@@ -1,4 +1,28 @@
 Changelog:
+v23:
+- added X new leaders: 
+	- Bani Ardalan (Sanandaj),
+	- Haci I Giray (Baghcasaray),
+	- Idris Alauma (Ngazargamu),
+	- Johann II (Vaduz),
+	- Lawtiliwadlin (Kagyrgyn), 
+	- Njenjema (Matonjeni),
+	- Somerled (Balley y Chashtal).
+- changes to leader icons:
+	- icons that were refreshed:
+		- Samarkand;
+	- new icons for the same leaders (added as alterante variants):
+		- Bratislava, Mbanza-Kongo, Singapore;
+	- completely new alternate leaders:
+		- La Venta (now female), Yerevan;
+- added 3 new leader stories;
+- added fix to CityStateDiploPopup.lua supporting non-english languages (by @hyuckkim);
+- cleaned folder tree;
+- all credits and links moved to UCS spreadsheet;
+
+v22.0.1 and v22.0.2:
+- fixed lua bug;
+
 v22:
 - added compatibility with UCS v16;
 	- modified CitystateDiploPopup.lua to show new CS Attitide; deleted double function;
