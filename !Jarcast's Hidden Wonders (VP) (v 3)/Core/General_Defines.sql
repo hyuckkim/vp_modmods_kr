@@ -7,7 +7,12 @@ UPDATE Defines SET Value = 20 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_SECOND_PRE
 UPDATE Defines SET Value = 10 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_EARLIER_ERA_COST_MODIFIER'; --original: 5
 
 UPDATE Language_en_US
-SET Text = 'Additional [ICON_PRODUCTION] Production Cost due to owned World Wonders: [COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR].[NEWLINE][ICON_PRODUCTION] Production Cost increase factors:[NEWLINE][ICON_BULLET] Wonders from the same Era: [COLOR_NEGATIVE_TEXT]40%.[ENDCOLOR][NEWLINE][ICON_BULLET] Wonders from the previous Era: [COLOR_NEGATIVE_TEXT]35%[ENDCOLOR].[NEWLINE][ICON_BULLET] Wonders from two Eras earlier: [COLOR_NEGATIVE_TEXT]30%.[ENDCOLOR][NEWLINE][ICON_BULLET] Wonders from three Eras earlier or more do not add any penalties.'
+SET Text = 'Additional [ICON_PRODUCTION] Production Cost due to owned World Wonders: [COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR].
+[NEWLINE][ICON_PRODUCTION] Production Cost increase factors:
+[NEWLINE][ICON_BULLET] Wonders from the same Era: [COLOR_NEGATIVE_TEXT]50%[ENDCOLOR].
+[NEWLINE][ICON_BULLET] Wonders from the previous Era: [COLOR_NEGATIVE_TEXT]30%[ENDCOLOR].
+[NEWLINE][ICON_BULLET] Wonders from two Eras earlier: [COLOR_NEGATIVE_TEXT]20%[ENDCOLOR].
+[NEWLINE][ICON_BULLET] Wonders from three Eras earlier or more: [COLOR_NEGATIVE_TEXT]10%[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_WONDER_COST_INCREASE_METRIC';
 --======================================================================================================================================--
 -- Table with new Wonder Types

@@ -183,10 +183,10 @@ GameEvents.CityConstructed.Add(Jar_BanaueWonderPlaceRice)
 --==========================================================================================================================
 -- Horyu-ji
 --==========================================================================================================================
-function Jar_HoryujiCultureReligiousUnits(iPlayer, iUnit, iUnitType, iX, iY)
-	--Abort if the new unit is not a Carthaginian Great Admiral
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit);
+function Jar_HoryujiCultureReligiousUnits(playerID, cityID, unitID, isGold, isFaith)
+	local pPlayer = Players[playerID]
+	local pCity = player:GetCityByID(cityID)
+	local pUnit = player:GetUnitByID(unitID)
 	if pPlayer:CountNumBuildings(GameInfoTypes.BUILDING_HORYUJI) <1 then return end
 	if pUnit:GetUnitClassType() == GameInfoTypes.UNITCLASS_MISSIONARY or pUnit:GetUnitClassType() == GameInfoTypes.UNITCLASS_INQUISITOR then
 		local bonus = 20*math.max(1, pPlayer:GetCurrentEra())
@@ -201,7 +201,7 @@ function Jar_HoryujiCultureReligiousUnits(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 	end
 end
-GameEvents.UnitCreated.Add(Jar_HoryujiCultureReligiousUnits)
+GameEvents.CityTrained.Add(Jar_HoryujiCultureReligiousUnits)
 --==========================================================================================================================
 -- Great Kyz Kala
 --==========================================================================================================================

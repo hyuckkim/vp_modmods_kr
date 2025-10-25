@@ -160,8 +160,7 @@ INSERT INTO Building_ResourceYieldChangesGlobal
 -- KELDUR HALL
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_GUILDS',
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_GUILDS', NumPoliciesNeeded = 8,
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	NearbyTerrainRequired = 'TERRAIN_TUNDRA', ProhibitedCityTerrain ='TERRAIN_PLAINS'
 WHERE Type = 'BUILDING_KELDUR_HALL';
@@ -330,8 +329,7 @@ VALUES	('BUILDING_HORYUJI',	'SPECIALIST_WRITER',	'YIELD_FAITH',	2);
 -- GREAT KYZ KALA
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_ALHAMBRA'), NumPoliciesNeeded = 7,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
 	SpecialistType = 'SPECIALIST_CIVIL_SERVANT', SpecialistCount=1, FreeBuildingThisCity = 'BUILDINGCLASS_CASTLE', Defense = 500
@@ -369,11 +367,10 @@ VALUES	('BUILDING_KYZ_KALA',	'FLAVOR_CITY_DEFENSE', 	45),
 -- SHAOLIN TEMPLE
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_ALHAMBRA'), NumPoliciesNeeded = 7,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_ALHAMBRA'), NearbyMountainRequired = 1,
-	FreeBuilding = 'BUILDINGCLASS_DUMMY_SHAOLIN', FreeBuildingThisCity = 'BUILDINGCLASS_ORDER'
+	FreeBuildingThisCity = 'BUILDINGCLASS_ORDER'
 WHERE Type = 'BUILDING_SHAOLIN';
 
 INSERT INTO Building_YieldChanges 
@@ -383,25 +380,17 @@ VALUES	('BUILDING_SHAOLIN',	'YIELD_FAITH',	3);
 INSERT INTO Building_YieldFromYieldPercentGlobal
 		(BuildingType,			YieldIn,		YieldOut,						Value) 
 VALUES	('BUILDING_SHAOLIN',	'YIELD_FAITH',	'YIELD_GREAT_GENERAL_POINTS',	10);
-		
-INSERT OR REPLACE INTO BuildingClasses
-(DefaultBuilding, 			Type,							Description) VALUES	
-('BUILDING_DUMMY_SHAOLIN',	'BUILDINGCLASS_DUMMY_SHAOLIN',	'TXT_KEY_BUILDING_SHAOLIN');
 
-INSERT OR REPLACE INTO Buildings
-(Type, 						BuildingClass, 					IsDummy,	Cost,	FaithCost,	GreatWorkCount,	PrereqTech,	MinAreaSize,	Description) VALUES	
-('BUILDING_DUMMY_SHAOLIN', 	'BUILDINGCLASS_DUMMY_SHAOLIN',	1,			-1,		-1,			-1,				null,		-1,				'TXT_KEY_BUILDING_SHAOLIN');
-INSERT INTO Building_DomainFreeExperiences
+INSERT INTO Building_DomainFreeExperiencesGlobal
 		(BuildingType, 			DomainType, Experience)
-VALUES	('BUILDING_DUMMY_SHAOLIN', 'DOMAIN_LAND', 20),
-		('BUILDING_DUMMY_SHAOLIN', 'DOMAIN_SEA', 20),
-		('BUILDING_DUMMY_SHAOLIN', 'DOMAIN_AIR', 20);
+VALUES	('BUILDING_SHAOLIN', 'DOMAIN_LAND', 20),
+		('BUILDING_SHAOLIN', 'DOMAIN_SEA', 20),
+		('BUILDING_SHAOLIN', 'DOMAIN_AIR', 20);
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- BASILICA OF SAINT FRANCIS OF ASSISI
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'), NumPoliciesNeeded = 8,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	FreeBuildingThisCity = 'BUILDINGCLASS_CATHEDRAL', Hill = 1, IsNoCoast= 1,
@@ -427,12 +416,19 @@ INSERT INTO Building_Flavors
 VALUES	('BUILDING_ASSISI',	'FLAVOR_RELIGION', 	30),
 		('BUILDING_ASSISI',	'FLAVOR_CULTURE', 	25),
 		('BUILDING_ASSISI',	'FLAVOR_GOLD', 		20);
+		
+CREATE TRIGGER IF NOT EXISTS JarBasilicaAssisi AFTER INSERT ON Belief_BuildingClassFaithPurchase WHEN NEW.BuildingClassType IS NOT NULL
+AND NEW.BeliefType IN (SELECT Type FROM Beliefs WHERE Follower= 1)
+BEGIN
+	INSERT INTO Building_BuildingClassYieldChanges
+			(BuildingType, 		BuildingClassType,		YieldType, YieldChange)
+	SELECT 	'BUILDING_ASSISI', NEW.BuildingClassType, 	'YIELD_GOLD', 1;
+END;
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- CHURCH OF THE NATIVITY
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS',
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS', NumPoliciesNeeded = 8,
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'), 
 	Hill=1, FreeBuildingThisCity = 'BUILDINGCLASS_CHURCH' 
 WHERE Type = 'BUILDING_CHURCH_NATIVITY';
@@ -460,8 +456,7 @@ VALUES	('BUILDING_CHURCH_NATIVITY',	'FLAVOR_RELIGION', 	30),
 -- HOSPITAL OF ST. JOHN
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'), NumPoliciesNeeded = 8,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	FreeBuildingThisCity = 'BUILDINGCLASS_ORDER', AlwaysHeal=10, ExtraCityHitPoints=100, HolyCity = 1
@@ -480,8 +475,7 @@ VALUES	('BUILDING_HOSPITAL_STJOHN',	'YIELD_FAITH',	2),
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
 	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
-	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'), NumPoliciesNeeded = 8,
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	HolyCity = 1, FreeBuildingThisCity = 'BUILDINGCLASS_TEOCALLI', SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 2
 WHERE Type = 'BUILDING_TLACHIHUALTEPETL';
@@ -506,8 +500,7 @@ INSERT INTO Policy_YieldFromConstruction
 -- OLD NEW SYNAGOGUE
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS',
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS', NumPoliciesNeeded = 8,
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	FreeBuildingThisCity = 'BUILDINGCLASS_SYNAGOGUE', River=1,
 	SpecialistType = 'SPECIALIST_MERCHANT', SpecialistCount=1, WLTKDTurns= 15 -- requirement: minority with >=4 followers
@@ -531,8 +524,7 @@ INSERT INTO Policy_WLTKDYieldMod
 -- JETAVANARAMAYA
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS',
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),	PrereqTech = 'TECH_COMPASS', NumPoliciesNeeded = 8,
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_FORBIDDEN_PALACE'),
 	SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 2, FoodKept= 10, 
 	FreeBuilding = 'BUILDINGCLASS_DUMMY_JETAVANARAMAYA', FreeBuildingThisCity = 'BUILDINGCLASS_STUPA' -- requirement Village   
@@ -898,8 +890,7 @@ INSERT INTO Building_ClassNeededNowhere
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- Archaeologists can be purchased with [ICON_GOLD] Gold, gain +1 [ICON_MOVES] Movement and double Work rate. 
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_LOUVRE'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_LOUVRE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_LOUVRE'), NumPoliciesNeeded = 16,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_LOUVRE'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_LOUVRE'), Hill = 1,
 	FreeBuildingThisCity = 'BUILDINGCLASS_MUSEUM', GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',	GreatWorkCount = 4,
@@ -938,9 +929,13 @@ SELECT	'UNITCLASS_ARCHAEOLOGIST_CM','UNIT_ARCHAEOLOGIST_CM', Description, MaxPla
 FROM UnitClasses WHERE Type='UNITCLASS_ARCHAEOLOGIST';
 
 INSERT INTO Units
-		(Type,					Class, 							ShowInPedia, Moves,		Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, MoveAfterPurchase, BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, PrereqTech, HurryCostModifier, WorkRate, UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, PurchaseCooldown)
-SELECT	'UNIT_ARCHAEOLOGIST_CM','UNITCLASS_ARCHAEOLOGIST_CM',	0,			 Moves+1,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, 1,				 	BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, PrereqTech, 0,					WorkRate*2, UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, PurchaseCooldown
+		(Type,					Class, 							ShowInPedia, Moves,		Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, MoveAfterPurchase, BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, HurryCostModifier, WorkRate, 	UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, PurchaseCooldown)
+SELECT	'UNIT_ARCHAEOLOGIST_CM','UNITCLASS_ARCHAEOLOGIST_CM',	0,			 Moves+1,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Description, Civilopedia, Strategy, Help, 1,				 	BaseSightRange, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, 0,					WorkRate*2, UnitArtInfo, UnitArtInfoEraVariation, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas, MaxHitPoints, 5
 FROM Units WHERE Type = 'UNIT_ARCHAEOLOGIST';
+
+INSERT INTO Unit_TechTypes 	
+		(UnitType, 					TechType)
+SELECT	'UNIT_ARCHAEOLOGIST_CM', 	PrereqTech FROM Units WHERE Type = 'UNIT_ARCHAEOLOGIST';
 
 INSERT INTO Belief_SpecificFaithUnitPurchase
 		(BeliefType, UnitType)
@@ -975,8 +970,7 @@ FROM Unit_Builds WHERE UnitType = 'UNIT_ARCHAEOLOGIST';
 -- MUZIBU AZAALA MPANGA
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_LOUVRE'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_LOUVRE'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_LOUVRE'), NumPoliciesNeeded = 16,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_LOUVRE'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_LOUVRE')
 WHERE Type = 'BUILDING_KASUBI_TOMBS';
@@ -1047,8 +1041,7 @@ VALUES	('BUILDING_TE_TII_MARAE',	'FLAVOR_HAPPINESS', 		45),
 -- GOLDEN GATE BRIDGE
 ------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE Buildings SET
-	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_BROADWAY'),
-	NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_BROADWAY'),
+	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_BROADWAY'), NumPoliciesNeeded = 19,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_BROADWAY'),
 	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_BROADWAY'), Water = 1, MinAreaSize = 10,
 	/*NumTradeRouteBonus = 1,*/ SpecialistType = 'SPECIALIST_ENGINEER', GreatPeopleRateChange = 4

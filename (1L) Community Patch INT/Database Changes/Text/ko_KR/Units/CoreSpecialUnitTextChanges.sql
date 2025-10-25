@@ -1,3 +1,3 @@
 UPDATE Language_ko_KR
-SET Text = '厚青扁客 盔磊气藕'
+SET Text = '頃车旮办檧 鞗愳瀽 韽儎'
 WHERE Tag = 'TXT_KEY_SPECIALUNIT_FIGHTER';
