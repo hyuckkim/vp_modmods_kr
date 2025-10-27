@@ -37,7 +37,7 @@ WHERE Type = 'BUILD_FISHING_BOATS';
 UPDATE Units SET
 PrereqTech = NULL,
 Cost = -1
-WHERE Class = 'UNITCLASS_WORKBOAT';
+WHERE Type = 'UNIT_WORKBOAT';
 
 INSERT INTO Unit_Builds	
 		(UnitType, 	BuildType)

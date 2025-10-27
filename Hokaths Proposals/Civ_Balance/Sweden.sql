@@ -68,13 +68,15 @@ VALUES
 
 INSERT INTO Units 
 	(Class, Special, Type, PrereqTech, Combat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, 
-	Description, Civilopedia, Strategy, Help,
+	Description, Civilopedia, Strategy, Help, 
 	MilitarySupport, MilitaryProduction, Pillage, ObsoleteTech, GoodyHutUpgradeUnitClass, AdvancedStartCost, PurchaseCooldown, WorkRate, UnitEraUpgrade,
+	GlobalFaithPurchaseCooldown,
 	UnitArtInfo, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex, UnitArtInfoEraVariation)
 VALUES
 	('UNITCLASS_GREAT_GENERAL', 'SPECIALUNIT_PEOPLE', 'UNIT_SWEDISH_JARL', NULL, 16, -1, 0, 1, 2, 'UNITCOMBAT_JARL', 'DOMAIN_LAND', 'UNITAI_ATTACK',
 	'TXT_KEY_UNIT_SWEDISH_JARL',	'TXT_KEY_UNIT_SWEDISH_JARL_TEXT', 'TXT_KEY_UNIT_SWEDISH_JARL_STRATEGY', 'TXT_KEY_UNIT_SWEDISH_JARL_HELP',
 	1, 1, 1, NULL, NULL, 25, 1, 1, 1,
+	5,
 	'ART_DEF_UNIT_JFD_HUSKARL', 'HUSKARL_FLAG_ATLAS', 0, 'CORP2_ATLAS', 13, 1);
 
 INSERT INTO UnitGameplay2DScripts 	
@@ -108,7 +110,7 @@ INSERT INTO Unit_EraCombatStrength
 		(UnitType, 			EraType,			CombatStrength)
 SELECT	'UNIT_SWEDISH_JARL',	'ERA_MEDIEVAL',		Combat FROM Units WHERE Type='UNIT_LONGSWORDSMAN' UNION ALL
 SELECT	'UNIT_SWEDISH_JARL',	'ERA_RENAISSANCE',	Combat+3 FROM Units WHERE Type='UNIT_SPANISH_TERCIO' UNION ALL
-SELECT	'UNIT_SWEDISH_JARL',	'ERA_ENLIGHTENMENT',Combat+3 FROM Units WHERE Type='UNIT_LANCER' AND EXISTS (SELECT * FROM Eras WHERE Type = 'ERA_ENLIGHTENMENT') UNION ALL
+SELECT	'UNIT_SWEDISH_JARL',	'ERA_ENLIGHTENMENT',	Combat+3 FROM Units WHERE Type='UNIT_LANCER' AND EXISTS (SELECT * FROM Eras WHERE Type = 'ERA_ENLIGHTENMENT') UNION ALL
 SELECT	'UNIT_SWEDISH_JARL',	'ERA_INDUSTRIAL',	Combat FROM Units WHERE Type='UNIT_RIFLEMAN' UNION ALL
 SELECT	'UNIT_SWEDISH_JARL',	'ERA_MODERN',		Combat FROM Units WHERE Type='UNIT_GREAT_WAR_INFANTRY' UNION ALL
 SELECT	'UNIT_SWEDISH_JARL',	'ERA_POSTMODERN',		Combat FROM Units WHERE Type='UNIT_INFANTRY' UNION ALL

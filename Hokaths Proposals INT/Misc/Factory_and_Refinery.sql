@@ -13,5 +13,5 @@ SET Text = '제련소는 총 5개 도시에서만 건설할 수 있는 현대 �
 WHERE Tag = 'TXT_KEY_BUILDING_COAL_PLANT_STRATEGY';
 
 UPDATE Language_ko_KR
-SET Text = '문명 내의 소유한 모든 공장의 [ICON_PRODUCTION] 생산력이 +2 증가합니다. [ICON_RES_IRON] 철, [ICON_RES_COAL] 석탄, [ICON_RES_OIL] 석유 1개를 생산합니다.[NEWLINE][NEWLINE]최대 5개 도시에 건설할 수 있습니다.'
+SET Text = '문명 내의 소유한 모든 공장의 [ICON_PRODUCTION] 생산력이 +3 증가합니다. [ICON_RES_IRON] 철, [ICON_RES_COAL] 석탄, [ICON_RES_OIL] 석유 1개를 생산합니다.[NEWLINE][NEWLINE]최대 5개 도시에 건설할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_COAL_PLANT_HELP';

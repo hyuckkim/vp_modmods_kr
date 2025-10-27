@@ -128,15 +128,20 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Cinema.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Aerodrome.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Archive.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/News_Switch_Geo.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Orphanage.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Park.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Netherlands.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Brazil.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Mongolia.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Celts.sql</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Sweden.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Ethiopia.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Egypt.sql</File>
-
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Shoshone.sql</File>
+			<!-- needs leadership fixed and 5.0 tables
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Sweden.sql</File>
+			-->
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.xml</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Forts/DJS_Depot/debotrebuilt Kopie.dds</File>
@@ -171,10 +176,34 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/FordFTBDesert.fxsxml</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/FordFTBDesert.gr2</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/FordFTBDesert.dds</File>
-			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/FordFTBSREF.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/FordTFBSREF.dds</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/fx_triggers_FordFTB.ftsxml</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/sv_armoredford.dds</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/FordFTBDesert/unitflag_armoredford.dds</File>
+
+			<File md5="9309774C33232FFC6E47E09F56BDD3C5" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_attack_city_to_run.dge</File>
+    			<File md5="FA9CE373BB700CFCD8F0FA3A955B1E69" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_attack_to_run_graph.dge</File>
+   			<File md5="BA4F6AEB27527AB47CC284B27C8288A8" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_bombard_defend_loop_graph.dge</File>
+    			<File md5="CD02EC91E73F396297C2B3434A8BA034" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_combat_ready_graph.dge</File>
+    			<File md5="6B4338103039DFBD431A44C89DA198D6" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_death_final_graph.dge</File>
+    			<File md5="F9F109E1E43FD75DFC765D9B3A43CE48" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_death_graph.dge</File>
+    			<File md5="7A5A0ADFBBB05D6E4FB126383988B264" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_enter_combat_ready_graph.dge</File>
+    			<File md5="34488A641F9D948D865BBECF8B3878DF" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_enter_fortify.dge</File>
+    			<File md5="F245B80AAC985C0011FEE5CBF3FB25DF" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_fidgets_graph.dge</File>
+    			<File md5="65FED4E2E20D7512D6B5E92C1CD37EF7" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_fortify_fidget_graph.dge</File>
+    			<File md5="F758D65157483D32C6763F817B216937" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_fortify_graph.dge</File>
+    			<File md5="C2C8D0ADFA388980A03E814BF2B335F5" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_fortify_leave_graph.dge</File>
+    			<File md5="EF6168FF0903555EDCBB9FD626CFB00F" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_idle_graph.dge</File>
+    			<File md5="268797759660DA55A0F792A966EB586B" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_idle_offset_continue_true_graph.dge</File>
+    			<File md5="C4D8B3EB164B5525B92514645521D0C3" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    			<File md5="189E34C23C7A19F2C190E1ACB4212C91" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_leave_combat_ready.dge</File>
+    			<File md5="225D164523FE1270306005CCD71B075A" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_melee_attacks.dge</File>
+    			<File md5="A64E86033B61613B4F39979D5603E65F" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_running_loop.dge</File>
+    			<File md5="BCF1F945C0CBE7A1C9F62E5B46F84F99" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_start_running.dge</File>
+    			<File md5="7B0232A8BE345EB899FF221FBD7BDCFB" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_stop_running.dge</File>
+    			<File md5="2506D6C118D6A9FB915723F731C95FD4" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_aim_transitions_for_idles.dge</File>
+    			<File md5="108FD3B4BAAB4A605BF70CCD44F20E8B" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_fx_triggers_tank.ftsxml</File>
+    			<File md5="B233D27FC1FA1DB1127E263DC20D30DB" import="1">Late_Skirmishers/FordFTBDesert/Animations/edited_mechanized_aim_state_01.fsmxml</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/Late_Skirmishers_256.dds</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/Late_Skirmishers_128.dds</File>
@@ -254,14 +283,18 @@
 		<UpdateDatabase>New_Buildings/Cinema.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Aerodrome.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Archive.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/News_Switch_Geo.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Orphanage.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Park.sql</UpdateDatabase>
 		
 		<UpdateDatabase>Civ_Balance/Netherlands.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Brazil.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Mongolia.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Celts.sql</UpdateDatabase>
-		<!--<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>-->
+		<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Ethiopia.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Egypt.sql</UpdateDatabase>
+		<UpdateDatabase>Civ_Balance/Shoshone.sql</UpdateDatabase>
 
 		<!--<UpdateDatabase>Forts/Forts.sql</UpdateDatabase>
 		<UpdateDatabase>Forts/Forts.xml</UpdateDatabase>-->

@@ -3,9 +3,13 @@ INSERT INTO BuildingClasses
 VALUES		('BUILDINGCLASS_MOVIE_THEATRE',	'BUILDING_MOVIE_THEATRE',	'TXT_KEY_BUILDING_MOVIE_THEATRE');
 
 INSERT INTO	 Buildings
-	(Type,						Description,						Civilopedia,							Strategy,					Help,									GoldMaintenance, 	Cost, HurryCostModifier, 	MinAreaSize, 	ConquestProb, 	BuildingClass, 				ArtDefineTag, 				PrereqTech, 			PortraitIndex, 	IconAtlas, Happiness, EnhancedYieldTech)
+	(Type,	Description,	Civilopedia,		Strategy,	Help,		
+	GoldMaintenance, 	Cost, HurryCostModifier, 	MinAreaSize, 	ConquestProb, 	
+	BuildingClass, 	ArtDefineTag, 		PrereqTech, 	PortraitIndex, 	IconAtlas, Happiness, EnhancedYieldTech)
 VALUES	
-	('BUILDING_MOVIE_THEATRE',	'TXT_KEY_BUILDING_MOVIE_THEATRE', 	'TXT_KEY_BUILDING_MOVIE_THEATRE_TEXT',	'TXT_KEY_BUILDING_MOVIE_THEATRE_STRATEGY',	'TXT_KEY_BUILDING_MOVIE_THEATRE_HELP',	7, 				1800, -20, 					-1, 			80, 			'BUILDINGCLASS_MOVIE_THEATRE', 	'ART_DEF_BUILDING_MARKET', 	'TECH_ELECTRICITY', 	20,				'CORP2_ATLAS', 1, 'TECH_COMPUTERS');
+	('BUILDING_MOVIE_THEATRE',	'TXT_KEY_BUILDING_MOVIE_THEATRE', 	'TXT_KEY_BUILDING_MOVIE_THEATRE_TEXT',	'TXT_KEY_BUILDING_MOVIE_THEATRE_STRATEGY',	'TXT_KEY_BUILDING_MOVIE_THEATRE_HELP',	
+	8, 				2000, -20, 					-1, 			80, 			
+	'BUILDINGCLASS_MOVIE_THEATRE', 	'ART_DEF_BUILDING_MARKET', 	'TECH_PLASTIC', 	20,				'CORP2_ATLAS', 1, 'TECH_COMPUTERS');
 
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)

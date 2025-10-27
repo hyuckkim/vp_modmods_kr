@@ -125,6 +125,12 @@ SET Class = 'UNITCLASS_'||SUBSTR(Type,6), Description = 'TXT_KEY_'||Type,
 WHERE Type IN (
 'UNIT_UTILITY_HELICOPTER');
 
+INSERT INTO UnitGameplay2DScripts
+	(UnitType, SelectionSound, FirstSelectionSound)
+SELECT
+	'UNIT_UTILITY_HELICOPTER', SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_HELICOPTER_GUNSHIP';
+
 UPDATE Units SET
 RangedCombat = 60,
 Range = 1,

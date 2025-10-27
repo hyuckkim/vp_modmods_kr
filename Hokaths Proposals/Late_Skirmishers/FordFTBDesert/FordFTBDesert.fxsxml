@@ -31,7 +31,10 @@
 	<Animation file="Tank_DeathA_Idle.gr2" ec="1220"/>
 	<Animation file="Tank_DeathB.gr2" ec="2200"/>
 	<Animation file="Tank_DeathB_Idle.gr2" ec="2220"/>
-	<Texture file="FordTFB.dds"/>
+	<Texture file="FordFTBDesert.dds"/>
+	<Texture file="Unit_Environment_Dull.dds"/>
+	<Texture file="Unit_Environment_Sharp.dds"/>
+	<Texture file="Unit_Irradiance.dds"/>
 	<Texture file="FordTFBSREF.dds"/>
 	<AnimGraph file="EDITED_AIM_FORTIFY_GRAPH.dge"/>
 	<AnimGraph file="EDITED_AIM_IDLE_GRAPH.dge"/>

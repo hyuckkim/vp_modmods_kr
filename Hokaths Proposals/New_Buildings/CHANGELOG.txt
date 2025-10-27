@@ -36,7 +36,6 @@ New Buildings
   -- +1 Science
   -- 50% Food output as instant yield on Citizen Birth
   -- 10% Food carried over on Citizen Birth
-  -- +1 Food and +1 Science on Lake
   -- +2 Science on Marsh
     even with Windmill these tiles were bad for Industrial+
   -- +1 Production from River tiles
@@ -44,6 +43,22 @@ New Buildings
   -- 1 Poverty reduction
   -- 1 Poverty reduction removed from Grocer (renamed Apothecary and icon changed)
 
+  Orphanage (Industrialization)
+    requires Public School
+  -- 5 Food and 1 GAP
+  -- 15% GP Rate
+  -- Production to Factory, Agribusiness, and Seaport
+  -- %Faith from Birth
+  -- Gold from Buildings that must be purchased with Faith
+
+  Park (Fertilizer)
+    requires Garden
+  -- 1 GAP, 1 Tourism, 1 Culture, 5% Food
+  -- 1 Urbanization reduction
+  -- 1 Tourism and GAP from Zoo, Hotel, Museum
+  -- 100 GAP from WLTKD start
+  -- 2 Culture per Golden Age
+  
   Restaurant (Biology)
     sits between Zoo and Stadium in the instant yield line
   -- +2 Food and +1 Culture
@@ -54,7 +69,36 @@ New Buildings
     none of these are essential/guaranteed 
   -- 1 Urbanization reduction
 
-  Cinema (Electricity)
+  ------ Three mutually exclusive buildings -----
+  Geological Survey (Electricity)
+  -- Requires a Museum 
+  -- Science to Mines and Quarries and Wells
+  -- 4 BGP, 2 Sci
+  -- Claims all Oil in range
+  -- Food for every 5 tiles
+  -- +33% Scientist Rate and 3 Points
+  -- Global Science to Refinery
+
+  Switchyard (Electricity)
+  -- Requires a Factory
+  -- 3 Gold/Production
+  -- 5 Gold/Production for passing TR
+  -- -1% GlobalBuildingGoldMaintenanceMod
+  -- 25 Production to next build on construction of Building
+  -- +33% Engineer Rate and 3 Points
+  -- Global Gold to Factory, Coaling Plant, and Refinery
+
+  Newsroom (Electricity)
+  -- Requires a Public School and an Industrial City Connection
+  -- 2 Tourism, 1 Culture, 1 Gold per 4 Citizens
+  -- 50/100/20 Culture from Spy Identify, (and also) Spy Kill, and Election Rig
+  -- 10 Culture on Kills (global) and Deaths
+  -- 1 Paper
+  -- +33% Merchant Rate and 3 Points
+  -- Global Culture to Wire Service, Cinema, and Broadcast Tower
+  --------------------------------------
+
+  Cinema (Plastics)
     requires a Gallery
   -- +2 Culture
   -- +1 Happiness
@@ -103,6 +147,7 @@ New Buildings
   Supermarket (Refrigeration)
   -- Requires Hospital and Industrial Connection
   -- +4 Food
+  -- 10% Food Kept
   -- Converts 25% Gold Purchases to Food
   -- +50% City Connection Yields
     Lowered from 200% because we have Airports now (and it affects Production!)

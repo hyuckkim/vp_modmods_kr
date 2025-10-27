@@ -204,7 +204,7 @@ VALUES
 -- +33% [ICON_CULTURE_LOCAL] Border Growth Rate. 
 
 UPDATE Language_en_US
-SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%.[ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
+SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 10%. [ICON_MISSIONARY] Missionaries of this Religion are 25% stronger.'
 WHERE Tag = 'TXT_KEY_BELIEF_MISSIONARY_ZEAL';
 --+1 [ICON_HAPPINESS_1] Happiness from every Luxury Resource.
 

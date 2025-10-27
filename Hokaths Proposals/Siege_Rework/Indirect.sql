@@ -8,6 +8,8 @@ DELETE FROM Unit_FreePromotions WHERE
 UnitType IN (SELECT Type FROM Units WHERE Class IN ('UNITCLASS_FIELD_GUN', 'UNITCLASS_ARTILLERY', 'UNITCLASS_ROCKET_ARTILLERY')) AND 
 PromotionType = 'PROMOTION_INDIRECT_FIRE';
 
+UPDATE Units SET Cost = Cost - 100 WHERE Class = 'UNITCLASS_FIELD_GUN' AND NOT EXISTS (SELECT * FROM Eras WHERE Type='ERA_ENLIGHTENMENT'); 
+
 -- give to hwacha without siege engine, up RCS to compensate
 INSERT INTO UnitPromotions
 	(Type, Description, Help, PediaType, PediaEntry, 
