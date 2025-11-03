@@ -9,5 +9,5 @@ Text = Replace(Text, '도시의 공중 유닛 수용 인원이 2에서 6으로 �
 WHERE Tag = 'TXT_KEY_BUILDING_AIRPORT_HELP';
 
 UPDATE Language_ko_KR SET
-Text = Replace(Text, '도시에 대한 공습.', '[COLOR_POSITIVE_TEXT]도시의 공중 유닛 수용량이 1만큼 증가합니다[ENDCOLOR].')
+Text = Replace(Text, '도시에 대한 공습.', '도시에 공습을 합니다. [COLOR_POSITIVE_TEXT]도시의 공중 유닛 수용량이 1만큼 증가합니다[ENDCOLOR].')
 WHERE Tag = 'TXT_KEY_BUILDING_MILITARY_BASE_HELP';

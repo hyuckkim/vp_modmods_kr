@@ -17,6 +17,12 @@ VALUES
 	8, 				2250, -20, 					-1, 			66, 			'BUILDINGCLASS_SUPERMARKET', 	10,
 	'ART_DEF_BUILDING_MARKET', 	'TECH_REFRIGERATION', 	41,				'BW_ATLAS_1', 1);
 
+-- change grocer icon
+UPDATE Buildings SET
+    IconAtlas = 'CORP2_ATLAS',
+    PortraitIndex = 6
+WHERE Type = 'BUILDING_GROCER';
+
 UPDATE Buildings SET 
 	NoUnhappfromXSpecialists = 1,
 	CityConnectionGoldModifier = 50

@@ -1,1 +1,0 @@
-UPDATE CustomModOptions SET Value = 1 WHERE Name = 'NOTIFICATION_SETTINGS';

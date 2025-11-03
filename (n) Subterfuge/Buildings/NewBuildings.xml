@@ -57,7 +57,7 @@
 			<Strategy>TXT_KEY_BUILDING_PRISON_STRATEGY</Strategy>
 			<IconAtlas>SpyRework_Atlas</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
-			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+			<PrereqTech>TECH_DYNAMITE</PrereqTech>
 			<Cost>1250</Cost>
 			<GoldMaintenance>6</GoldMaintenance>
 			<HurryCostModifier>-20</HurryCostModifier>
@@ -92,7 +92,7 @@
 			<Strategy>TXT_KEY_BUILDING_CASINO_STRATEGY</Strategy>
 			<IconAtlas>SpyRework_Atlas</IconAtlas>
 			<PortraitIndex>4</PortraitIndex>
-			<PrereqTech>TECH_CORPORATIONS</PrereqTech>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			<Cost>1800</Cost>
 			<GoldMaintenance>8</GoldMaintenance>
 			<HurryCostModifier>-20</HurryCostModifier>

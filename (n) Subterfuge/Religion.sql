@@ -112,14 +112,14 @@ WHERE Tag = 'TXT_KEY_BELIEF_PEACE_LOVING';
 INSERT INTO Building_YieldChangesPerPop
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_APOSTOLIC_PALACE', 'YIELD_GOLDEN_AGE_POINTS', 20);
+	('BUILDING_APOSTOLIC_PALACE', 'YIELD_TOURISM', 34);
 
 UPDATE Language_en_US SET
-Text = '+1 [ICON_GOLDEN_AGE] Golden Age Point for every 5 [ICON_CITIZEN] Citizens in the City. ' || Text
+Text = '+1 [ICON_TOURISM] Tourism for every 3 [ICON_CITIZEN] Citizens in the City. ' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_APOSTOLIC_PALACE_HELP';
 
 UPDATE Language_en_US
-SET Text = 'When you spread your [ICON_RELIGION] Religion to foreign Cities, gain +15 [ICON_FOOD] Food in Holy City, scaling with the number of new Followers of your [ICON_RELIGION] Religion, and 15 [ICON_TOURISM] Tourism, scaling with the number of Followers of other [ICON_RELIGION] Religions in the City.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Apostolic Palace National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +4 [ICON_GOLDEN_AGE] Golden Age Points and +1 for every 5 [ICON_CITIZEN] Citizens; +5 [ICON_TOURISM] Tourism from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
+SET Text = 'When you spread your [ICON_RELIGION] Religion to foreign Cities, gain +15 [ICON_FOOD] Food in Holy City, scaling with the number of new Followers of your [ICON_RELIGION] Religion, and 15 [ICON_TOURISM] Tourism, scaling with the number of Followers of other [ICON_RELIGION] Religions in the City.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Apostolic Palace National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +4 [ICON_GOLDEN_AGE] Golden Age Points and +1 [ICON_TOURISM] Tourism for every 3 [ICON_CITIZEN] Citizens; +5 [ICON_TOURISM] Tourism from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
 WHERE Tag = 'TXT_KEY_BELIEF_PILGRIMAGE';
 
 -- sacred garden
@@ -140,19 +140,20 @@ WHERE Tag = 'TXT_KEY_BELIEF_INITIATION_RITES';
 
 -- ossurary
 
--- doesnt work yet
-INSERT INTO Building_YieldFromWLTKD
+INSERT INTO Building_YieldChangesFromPassingTR
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_GRAND_OSSUARY', 'YIELD_CULTURE', 50);
+	('BUILDING_GRAND_OSSUARY', 'YIELD_CULTURE', 5),
+	('BUILDING_GRAND_OSSUARY', 'YIELD_TOURISM', 5),
+	('BUILDING_GRAND_OSSUARY', 'YIELD_GOLD', 5);
 
---UPDATE Language_en_US SET
---Text = '+50 [ICON_CULTURE] Culture when entering [COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR], scaling with Era.[NEWLINE][NEWLINE]' || Text
---WHERE Tag = 'TXT_KEY_BUILDING_GRAND_OSSUARY_HELP';
+UPDATE Language_en_US SET
+Text = '+5 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism is a [ICON_INTERNATIONAL_TRADE] Trade Route passes through the City.[NEWLINE][NEWLINE]' || Text
+WHERE Tag = 'TXT_KEY_BUILDING_GRAND_OSSUARY_HELP';
 
---UPDATE Language_en_US
---SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 15%.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Grand Ossuary National Wonder[ENDCOLOR] (+10 [ICON_PEACE] Faith, [ICON_CULTURE] Culture when entering [COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]; +5 [ICON_GOLD] Gold from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
---WHERE Tag = 'TXT_KEY_BELIEF_WORLD_CHURCH';
+UPDATE Language_en_US
+SET Text = Replace(Text, '+10 [ICON_PEACE] Faith', '+10 [ICON_PEACE] Faith; [ICON_GOLD]/[ICON_CULTURE]/[ICON_TOURISM] Yields if a [ICON_INTERNATIONAL_TRADE] Trade Route passes the City')
+WHERE Tag = 'TXT_KEY_BELIEF_WORLD_CHURCH';
 
 
 

@@ -58,24 +58,20 @@ VALUES
 	('BUILDING_ARCHIVE', 'FEATURE_OASIS', 'YIELD_GOLD', 2);
 
 -- move garden resources to circus to maintain balance
-UPDATE Building_ResourceYieldChanges SET
-BuildingType = 'BUILDING_CIRCUS' 
-WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_CIRCUS');
+DELETE FROM Building_ResourceYieldChanges
+WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GARDEN')
+AND ResourceType IN ('RESOURCE_CITRUS', 'RESOURCE_COCOA');
 
 UPDATE Language_en_US SET 
 Text = Replace(Text, '[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.', '')
 WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GARDEN');
-
-DELETE FROM Building_ResourceYieldChanges
-WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GARDEN')
-AND ResourceType IN ('RESOURCE_CITRUS', 'RESOURCE_COCOA');
 
 INSERT INTO Building_ResourceYieldChanges
 	(BuildingType, ResourceType, YieldType, Yield)
 SELECT
 	a.Type, b.Type, c.Type, 1
 FROM Buildings a, Resources b, Yields c
-WHERE a.Type IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_CIRCUS' AND Type != 'BUILDING_CIRCUS')
+WHERE a.Type IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_CIRCUS')
 AND b.Type IN ('RESOURCE_CITRUS', 'RESOURCE_COCOA')
 AND c.Type IN ('YIELD_FOOD', 'YIELD_GOLD');
 

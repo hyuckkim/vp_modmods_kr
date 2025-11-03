@@ -112,6 +112,7 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/ReligionChanges.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/GreatPeopleBalance.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/EasterEggUnits.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/NW_specialize.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Supermarket.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Pipeline.sql</File>
@@ -131,9 +132,16 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/News_Switch_Geo.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Orphanage.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Park.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Doppler.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/NetCafe.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Amusement_Park.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/RadClinic.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Noise_Barriers.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Synchrotron.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Datacenter.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Electrolyser.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Tokamak.sql</File>
 
-			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Netherlands.sql</File>
-			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Brazil.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Mongolia.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Celts.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Ethiopia.sql</File>
@@ -263,6 +271,7 @@
 		<UpdateDatabase>Misc/ReligionChanges.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/GreatPeopleBalance.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/EasterEggUnits.sql</UpdateDatabase>
+		<UpdateDatabase>Misc/NW_specialize.sql</UpdateDatabase>
 
 		<UpdateDatabase>Ideology_Balance/AutocracyTenets.sql</UpdateDatabase>
 		<UpdateDatabase>Ideology_Balance/OrderTenets.sql</UpdateDatabase>
@@ -286,9 +295,16 @@
 		<UpdateDatabase>New_Buildings/News_Switch_Geo.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Orphanage.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Park.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Doppler.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/NetCafe.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Amusement_Park.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/RadClinic.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Noise_Barriers.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Synchrotron.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Datacenter.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Electrolyser.sql</UpdateDatabase>
+		<UpdateDatabase>New_Buildings/Tokamak.sql</UpdateDatabase>
 		
-		<UpdateDatabase>Civ_Balance/Netherlands.sql</UpdateDatabase>
-		<UpdateDatabase>Civ_Balance/Brazil.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Mongolia.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Celts.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>

@@ -48,7 +48,9 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NewWonders.xml</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/Casino.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/PostOffice.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NetCafe.sql</File>
 
+			<!-- this is where FreeSpies is times by 10 etc -->
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Defines.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">DiploToPoints.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Religion.sql</File>
@@ -89,6 +91,8 @@
 		<UpdateDatabase>Events/NewMissionText.xml</UpdateDatabase>
 		<UpdateDatabase>Events/China.xml</UpdateDatabase>
 		<UpdateDatabase>Events/China.sql</UpdateDatabase>
+
+		<UpdateDatabase>Buildings/NetCafe.sql</UpdateDatabase>
 	</OnModActivated>
 	</Actions>
 	<EntryPoints>

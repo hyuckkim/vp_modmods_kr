@@ -10,6 +10,10 @@ UPDATE Buildings SET
 	PrereqTech = 'TECH_RADAR' 
 WHERE BuildingClass = 'BUILDINGCLASS_POLICE_STATION';
 
+UPDATE Buildings SET 
+	PrereqTech = 'TECH_MOBILE_TACTICS' 
+WHERE Type = 'BUILDING_INTELLIGENCE_AGENCY';
+
 UPDATE Buildings SET
 	RequiresIndustrialCityConnection = 1,
 	PovertyFlatReduction = 1

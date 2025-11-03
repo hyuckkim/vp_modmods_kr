@@ -57,6 +57,3 @@ UPDATE Language_en_US
 SET Text = 'Receive 50 [ICON_TOURISM] Tourism when you perform a Spy Mission, scaling with Era. ' || Text
 WHERE Tag IN (SELECT Help FROM Buildings WHERE Type = 'BUILDING_NIGHTCLUB');
 
-
-
-

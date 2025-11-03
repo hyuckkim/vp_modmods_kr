@@ -97,7 +97,7 @@ Text = Replace(Text, 'Increases Air Unit Capacity of the City from 2 to 6.', 'In
 WHERE Tag = 'TXT_KEY_BUILDING_AIRPORT_HELP';
 
 UPDATE Language_en_US SET
-Text = Replace(Text, 'Air Strikes on City.', '[COLOR_POSITIVE_TEXT]Increases Air Unit Capacity of the City by 1[ENDCOLOR].')
+Text = Replace(Text, 'Air Strikes on City.', 'Air Strikes on City. [COLOR_POSITIVE_TEXT]Increases Air Unit Capacity of the City by 1[ENDCOLOR].')
 WHERE Tag = 'TXT_KEY_BUILDING_MILITARY_BASE_HELP';
 
 

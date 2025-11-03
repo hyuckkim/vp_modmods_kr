@@ -15,8 +15,8 @@ VALUES
 ------------------------------
 -- Add espionage interactions to some founders
 ------------------------------
-UPDATE Language_ko_KR SET
-Text = '+1 [ICON_SPY] City Security for every 3 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]' || Text
+UPDATE Language_ko_KR
+SET Text = '+1 [ICON_SPY] City Security for every 3 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_RELIGIOUS_LIBRARY_HELP';
 
 UPDATE Language_ko_KR
@@ -24,8 +24,8 @@ SET Text = 'When you research a Technology, gain +2 [ICON_GOLDEN_AGE] Golden Age
 WHERE Tag = 'TXT_KEY_BELIEF_TITHE';
 
 -- council, control the church
-UPDATE Language_ko_KR SET
-Text = '+50 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][NEWLINE]' || Text
+UPDATE Language_ko_KR
+SET Text = '+50 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][NEWLINE]' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_HOLY_COUNCIL_HELP';
 
 UPDATE Language_ko_KR
@@ -33,8 +33,8 @@ SET Text = 'When a City adopts your [ICON_RELIGION] Religion for the first time,
 WHERE Tag = 'TXT_KEY_BELIEF_PAPAL_PRIMACY';
 
 -- court, establish security
-UPDATE Language_ko_KR SET
-Text = '+8 [ICON_SPY] City Security in all Cities.[NEWLINE][NEWLINE]' || Text
+UPDATE Language_ko_KR
+SET Text = '+8 [ICON_SPY] City Security in all Cities.[NEWLINE][NEWLINE]' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_DIVINE_COURT_HELP';
 
 UPDATE Language_ko_KR
@@ -42,8 +42,8 @@ SET Text = 'When you unlock a Policy, gain 5 [ICON_PEACE] Faith, [ICON_RESEARCH]
 WHERE Tag = 'TXT_KEY_BELIEF_CHURCH_PROPERTY';
 
 -- throne, aquire eunuchs. 80 has china in mind
-UPDATE Language_ko_KR SET
-Text = '+80 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][NEWLINE]' || Text
+UPDATE Language_ko_KR
+SET Text = '+80 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][NEWLINE]' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_HEAVENLY_THRONE_HELP';
 
 UPDATE Language_ko_KR
@@ -53,17 +53,17 @@ WHERE Tag = 'TXT_KEY_BELIEF_PEACE_LOVING';
 -- mausoleum has an effect
 
 -- palace 
-UPDATE Language_ko_KR SET
-Text = '+1 [ICON_GOLDEN_AGE] Golden Age Point for every 5 [ICON_CITIZEN] Citizens in the City. ' || Text
+UPDATE Language_ko_KR
+SET Text = '+1 [ICON_TOURISM] Tourism for every 3 [ICON_CITIZEN] Citizens in the City. ' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_APOSTOLIC_PALACE_HELP';
 
 UPDATE Language_ko_KR
-SET Text = 'When you spread your [ICON_RELIGION] Religion to foreign Cities, gain +15 [ICON_FOOD] Food in Holy City, scaling with the number of new Followers of your [ICON_RELIGION] Religion, and 15 [ICON_TOURISM] Tourism, scaling with the number of Followers of other [ICON_RELIGION] Religions in the City.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Apostolic Palace National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +4 [ICON_GOLDEN_AGE] Golden Age Points and +1 for every 5 [ICON_CITIZEN] Citizens; +5 [ICON_TOURISM] Tourism from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
+SET Text = 'When you spread your [ICON_RELIGION] Religion to foreign Cities, gain +15 [ICON_FOOD] Food in Holy City, scaling with the number of new Followers of your [ICON_RELIGION] Religion, and 15 [ICON_TOURISM] Tourism, scaling with the number of Followers of other [ICON_RELIGION] Religions in the City.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Apostolic Palace National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +4 [ICON_GOLDEN_AGE] Golden Age Points and +1 [ICON_TOURISM] Tourism for every 3 [ICON_CITIZEN] Citizens; +5 [ICON_TOURISM] Tourism from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
 WHERE Tag = 'TXT_KEY_BELIEF_PILGRIMAGE';
 
 -- sacred garden
-UPDATE Language_ko_KR SET
-Text = 'All Gardens provide +10% [ICON_FOOD] Growth in the City in which they are built.[NEWLINE][NEWLINE]' || Text
+UPDATE Language_ko_KR
+SET Text = 'All Gardens provide +10% [ICON_FOOD] Growth in the City in which they are built.[NEWLINE][NEWLINE]' || Text
 WHERE Tag = 'TXT_KEY_BUILDING_SACRED_GARDEN_HELP';
 
 UPDATE Language_ko_KR
@@ -73,15 +73,10 @@ WHERE Tag = 'TXT_KEY_BELIEF_INITIATION_RITES';
 -- great altar has an effect
 
 -- ossurary
+UPDATE Language_ko_KR
+SET Text = '+5 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism is a [ICON_INTERNATIONAL_TRADE] Trade Route passes through the City.[NEWLINE][NEWLINE]' || Text
+WHERE Tag = 'TXT_KEY_BUILDING_GRAND_OSSUARY_HELP';
 
--- doesnt work yet
---UPDATE Language_ko_KR SET
---Text = '+50 [ICON_CULTURE] Culture when entering [COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR], scaling with Era.[NEWLINE][NEWLINE]' || Text
---WHERE Tag = 'TXT_KEY_BUILDING_GRAND_OSSUARY_HELP';
-
---UPDATE Language_ko_KR
---SET Text = '"We Love the King Day" boosts the [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLD] Gold output of a City by 15%.[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Grand Ossuary National Wonder[ENDCOLOR] (+10 [ICON_PEACE] Faith, [ICON_CULTURE] Culture when entering [COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]; +5 [ICON_GOLD] Gold from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'
---WHERE Tag = 'TXT_KEY_BELIEF_WORLD_CHURCH';
-
-
-
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '+10 [ICON_PEACE] Faith', '+10 [ICON_PEACE] Faith; [ICON_GOLD]/[ICON_CULTURE]/[ICON_TOURISM] Yields if a [ICON_INTERNATIONAL_TRADE] Trade Route passes the City')
+WHERE Tag = 'TXT_KEY_BELIEF_WORLD_CHURCH';

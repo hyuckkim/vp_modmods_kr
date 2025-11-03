@@ -45,16 +45,17 @@ New Buildings
 
   Orphanage (Industrialization)
     requires Public School
-  -- 5 Food and 1 GAP
-  -- 15% GP Rate
-  -- Production to Factory, Agribusiness, and Seaport
-  -- %Faith from Birth
-  -- Gold from Buildings that must be purchased with Faith
+  -- 1 GAP
+  -- 25% Faith from Birth
+  -- 3 Production to Factory, Agribusiness, and Seaport and Manufactory
+  -- 4 Food to Towns
+  -- 2 Gold from Buildings that must be purchased with Faith and Academies
 
   Park (Fertilizer)
     requires Garden
   -- 1 GAP, 1 Tourism, 1 Culture, 5% Food
   -- 1 Urbanization reduction
+  -- +1 Food and Tourism on Lakes
   -- 1 Tourism and GAP from Zoo, Hotel, Museum
   -- 100 GAP from WLTKD start
   -- 2 Culture per Golden Age
@@ -70,6 +71,8 @@ New Buildings
   -- 1 Urbanization reduction
 
   ------ Three mutually exclusive buildings -----
+  Stock Exchange is moved to Corporations
+
   Geological Survey (Electricity)
   -- Requires a Museum 
   -- Science to Mines and Quarries and Wells
@@ -77,7 +80,7 @@ New Buildings
   -- Claims all Oil in range
   -- Food for every 5 tiles
   -- +33% Scientist Rate and 3 Points
-  -- Global Science to Refinery
+  -- 1 Global Science to Refinery
 
   Switchyard (Electricity)
   -- Requires a Factory
@@ -86,7 +89,7 @@ New Buildings
   -- -1% GlobalBuildingGoldMaintenanceMod
   -- 25 Production to next build on construction of Building
   -- +33% Engineer Rate and 3 Points
-  -- Global Gold to Factory, Coaling Plant, and Refinery
+  -- 2 Global Gold to Coaling Plants
 
   Newsroom (Electricity)
   -- Requires a Public School and an Industrial City Connection
@@ -95,7 +98,7 @@ New Buildings
   -- 10 Culture on Kills (global) and Deaths
   -- 1 Paper
   -- +33% Merchant Rate and 3 Points
-  -- Global Culture to Wire Service, Cinema, and Broadcast Tower
+  -- 1 Global Tourism to Wire Services
   --------------------------------------
 
   Cinema (Plastics)
@@ -168,6 +171,16 @@ New Buildings
     This is an Interpretive Centre-style bonus for Oil that will hopefully make even "colony cities" worth it
     Though you have a bit of work to get it online!
 
+  Doppler Station (Radar)
+  -- Requires Research Lab
+  -- 3 Food, 3 Production, 2 Science
+  -- 2 XP to Air Units global
+  -- Air Units created in this City +20% CS in Friendly and +2 Vision
+  -- 15 Damage to Air
+   removed from Military Base
+  -- +1 Science from Sea tiles
+  -- +3 Food and Production from every 2 Mountains worked
+
   Ice Station (Nuclear Fission)
   -- Requires adjacent Snow tile
   -- +5 Food and Science
@@ -180,8 +193,6 @@ New Buildings
   -- +2 Gold, Science, and Culture, with another +8 at The Internet
   -- 35 Science on new Citizen Birth, scaling with Era
   -- 100 Culture on Tech unlock, scaling with Era
-  -- *No* Unhappiness from Boredom
-    intended to be a building that lets Science civs delay Cultural Dominance over themselves
 
   Mass Transit (Electronics)
   -- +3 Production and Tourism
@@ -192,6 +203,7 @@ New Buildings
     Intended to be a greedy building for the late game. Risky if you might need the Iron.
 
   Police Station moved to Radar
+  NIA moved to Mobile Tactics 
 
   Nightclub (Telecom)
   -- +3 Gold and Culture
@@ -218,4 +230,70 @@ New Buildings
   -- +8 to Land and Sea Trade Routes
   -- +8/+8 to City and Owner for incoming Trade Routes
   -- +12/+12 Internal Route yields
-  -- Requires Industrial Connection
+  -- Requires Industrial Connection and Supermarket
+
+  Net Café (The Internet)
+  -- Requires Arcade 
+  -- Science from Spy Attack
+  [-- Spy points in Subterfuge]
+  -- +1 All Yields per Franchise
+  -- No Unhappiness from Boredom
+    intended to be a building that lets Science civs delay Cultural Dominance over themselves
+
+  Amusement Park (Robotics)
+  -- Requires Mass Transit (which costs 2 Iron)
+  -- 1 Culture, 10 Tourism
+  -- Completing Public Works triggers 10 turns of Building_WLTKDFromProject
+  -- 10% Tourism during WLTKD
+  -- 1 Gold per 4 pop
+
+  Radiation Clinic (Lasers)
+  -- Requires Medical Lab and 1 Uranium
+  -- FoodKept
+  -- 3 Civil Servant points and +67% rate
+  -- When a Great Person is born receive Food based on Empire Science
+  -- Gold and Tourism CS yields 
+  -- No Unhappiness from Urbanization
+
+  Noise Barriers (Stealth)
+  -- Requires Police Station and Industrial Connection
+  -- Civil Servant Slot
+  -- -50 TRTurnModLocal
+  -- Building_YieldChangesPerLocalTheme
+  -- Building_YieldChangeWorldWonder
+  -- +20% Culture Processes
+
+  Synchrotron (Particle Physics)
+  -- Requires Research Lab and 1 Aluminium
+  -- 5 Science
+  -- Scientist slot
+  -- 3 Scientist points and +67% rate
+  -- 1 Science and Prod to all Scientists
+  -- +20% Research Process
+
+  Data Center (Globalization)
+  -- Requires Industrial Estate and 2 Aluminium
+  -- 5 Gold
+  -- Merchant slot
+  -- 3 Merchant points and +67% rate
+  -- +20% Gold Processes
+  -- +1 GlobalCityAutomatonWorkersChange
+    This gives a free citizen that doesn't count toward total population
+
+  Electrolyser (Nanotechnology)
+  -- Requires Recycling Center (so capped at 5)
+  -- 5 Production
+  -- Engineer slot
+  -- 3 Engineer points and +67% rate
+  -- AddsFreshWater
+  -- 4% Gold from Aqueducts in Empire
+  -- 5 Production from Watermills in Empire
+  -- 5 Food from Wells in Empire
+  -- +20% Food Process
+
+  Tokamak (Nuclear Fusion)
+  -- National Wonder
+  -- Requires Electrolyser
+  -- 25% Production, Gold, and Science in the City
+  -- Free Electrolyser in all Cities
+    Overcoming the cap and sending your yields to the ~~moon~~ sun.
