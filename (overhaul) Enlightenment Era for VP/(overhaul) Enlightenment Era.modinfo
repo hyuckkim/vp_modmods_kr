@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="16">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="17">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -55,16 +55,6 @@
     <File md5="BA8B12F6AEDF04DCF2A829DA8B2F5176" import="1">Art/Atlases/Units/Enlightenment_Units_45.dds</File>
     <File md5="EAA3F0E0AAC8A626B2F1769969DCD3DE" import="1">Art/Atlases/Units/Enlightenment_Units_64.dds</File>
     <File md5="A9CA566F3516B1F86C6C15118B64A568" import="1">Art/Atlases/Units/Enlightenment_Units_80.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Howitzer_128.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Howitzer_256.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Howitzer_045.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Howitzer_064.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Howitzer_080.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Bombard_128.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Bombard_256.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Bombard_045.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Bombard_064.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Bombard_080.dds</File>
     <File md5="D5DA07B383A2C386A993109B8E9B2B25" import="1">Art/Atlases/Units/Promo Icon/VPEE_promo_icons_016.dds</File>
     <File md5="EE611B09F1BCAD9B8DDA268386392397" import="1">Art/Atlases/Units/Promo Icon/VPEE_promo_icons_032.dds</File>
     <File md5="F3B77EB3829D2F878E33C087FB092B5A" import="1">Art/Atlases/Units/Promo Icon/VPEE_promo_icons_045.dds</File>
@@ -92,6 +82,7 @@
     <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/BombardFlag.dds</File>
     <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/sv_Cuirassier.dds</File>
     <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/flag_Cuirassier.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/sv_Grenadier.dds</File>
 
     <File md5="B20DE2D0E51368D396CA3F26A21617C5" import="1">Art/Atlases/Wonders/Enlightenment_Wonders_128.dds</File>
     <File md5="8A74C56D776D108A5959339CC9E2D22F" import="1">Art/Atlases/Wonders/Enlightenment_Wonders_256.dds</File>
@@ -212,6 +203,11 @@
     <File md5="55D2A7C187E45D58FB688D5FFDBCFD1F" import="1">Art/Unit Models/Harquebusier/confederate_cavalry_sref.dds</File>
     <File md5="630FF05F9A7D08517EC29BE411F41410" import="1">Art/Unit Models/Harquebusier/confederate_cavalry_diff.dds</File>
 
+    <File md5="3262446C952B043739B202CFE7AF4296" import="1">Art/Unit Models/Grenadier/Grenadier.fxsxml</File>
+    <File md5="CEC592408E19F0A849FB0D5FEC0353B4" import="1">Art/Unit Models/Grenadier/civ5_ausmm2.gr2</File>
+    <File md5="74BC99243EC3342CE443E5E5A2C1DC6E" import="1">Art/Unit Models/Grenadier/ausmm2_sref.dds</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Grenadier/ausmm2.dds</File>
+
 	<!-- not used atm
     <File md5="F2F9FB35212A5944D17EEABCCC997FE2" import="1">Art/Unit Models/Ship of the Line/shipoftheline.fxsxml</File>
     <File md5="70CBBFB6EE6A7321C7C1EF75A9404F91" import="1">Art/Unit Models/Ship of the Line/shipoftheline.gr2</File>
@@ -266,6 +262,7 @@
     <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EE2HanderDefine.sql</File>
     <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EECuirassierDefine.sql</File>
     <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EEHarquebusierDefine.sql</File>
+    <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EEGrenadierDefine.sql</File>
 
     <File md5="A708F87F60F9088B3CAA6719F2D3F073" import="0">SQL/EEVP_Buildings.sql</File>
     <File md5="06458F101B05F1854FE78E80E15C0B3C" import="0">SQL/EEVP_Eras.sql</File>
@@ -295,6 +292,7 @@
       <UpdateDatabase>SQL/ArtDef/EE2HanderDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EECuirassierDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EEHarquebusierDefine.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ArtDef/EEGrenadierDefine.sql</UpdateDatabase>
 
       <UpdateDatabase>SQL/EEVP_Eras.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Techs.sql</UpdateDatabase>

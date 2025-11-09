@@ -10,17 +10,13 @@ BEGIN
 	Cost = 600,
 	GoldMaintenance = 3,
 	BuildingProductionModifier = 15,
-	AllowsProductionTradeRoutes=0
+	AllowsProductionTradeRoutes = 0
 	WHERE Type = NEW.Type;
 
 	INSERT INTO Building_ClassesNeededInCity 
 		(BuildingType, BuildingClassType)
 	SELECT
 		NEW.Type, 'BUILDINGCLASS_WORKSHOP';
-
-	UPDATE Buildings SET
-	SpecialistCount = 0
-	WHERE Type = NEW.Type AND NEW.SpecialistType = 'SPECIALIST_ENGINEER';
 
 	INSERT INTO Building_GrowthExtraYield
 		(BuildingType, YieldType, Yield)
@@ -33,6 +29,13 @@ BEGIN
 		NEW.Type, 'RESOURCE_STONE',	y.Type, 1
 	FROM Yields y
 	WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION');
+
+	INSERT INTO Building_ResourceYieldChanges 
+		(BuildingType, ResourceType, YieldType, Yield) 
+	SELECT
+		NEW.Type, 'RESOURCE_MARBLE',	y.Type, 1
+	FROM Yields y
+	WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_CULTURE');
 END;
 
 CREATE TRIGGER IF NOT EXISTS JarEECivCompatibility03 AFTER INSERT ON Buildings
@@ -70,43 +73,25 @@ BEGIN
 END;
 
 ---------------------------------------------------
--- change the names and the icons
+-- we will just change the names and the icons
 ---------------------------------------------------
+----------------------
+-- Windmill
+----------------------
 -- windmills came quite early, 9-12 centuries
 UPDATE Buildings SET 
 Civilopedia = 'TXT_KEY_CIV5_BUILDINGS_WINDMILL_TEXT',
 PortraitIndex = 1,
 SpecialistType = 'SPECIALIST_ENGINEER',
-SpecialistCount = 1
+SpecialistCount = 1,
+PrereqTech = 'TECH_MACHINERY'
 WHERE Type = 'BUILDING_WORKSHOP';
 
 UPDATE Language_en_US SET Text = 'Workshop' WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL';
 
--- whilst workshops refer to the renaissance in their pedia text
-UPDATE Buildings SET 
-Civilopedia = 'TXT_KEY_CIV5_BUILDINGS_WORKSHOP_TEXT',
-PortraitIndex = 28,
-PrereqTech = 'TECH_ARCHITECTURE',
-Cost = 600,
-GoldMaintenance = 3,
-SpecialistCount = 0
-WHERE Type = 'BUILDING_WINDMILL';
-
-UPDATE Language_en_US SET Text = 'Windmill' WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP';
-
--- windmills dont currently have prereqs
-INSERT INTO Building_ClassesNeededInCity 
-	(BuildingType, BuildingClassType)
-SELECT
-	Type, 'BUILDINGCLASS_WORKSHOP'
-FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
-
--- now update their effects
-----------------------
--- Windmill
-----------------------
-UPDATE Building_BuildingClassLocalYieldChanges SET YieldChange = 2 WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
-UPDATE Building_BuildingClassLocalYieldChanges SET BuildingClassType = 'BUILDINGCLASS_STABLE' WHERE BuildingClassType = 'BUILDINGCLASS_GRANARY' AND BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
+UPDATE Building_BuildingClassLocalYieldChanges SET YieldChange = 2 WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL');
+UPDATE Building_BuildingClassLocalYieldChanges SET BuildingClassType = 'BUILDINGCLASS_STABLE' WHERE BuildingClassType = 'BUILDINGCLASS_GRANARY' AND BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL');
+UPDATE Building_BuildingClassLocalYieldChanges SET BuildingType = 'BUILDING_WORKSHOP' WHERE BuildingType = 'BUILDING_WINDMILL';
 
 INSERT INTO Building_ImprovementYieldChanges
 	(BuildingType, ImprovementType, YieldType, Yield)
@@ -117,14 +102,17 @@ AND b.Type IN ('YIELD_PRODUCTION', 'YIELD_GOLD');
 
 UPDATE Building_ImprovementYieldChanges SET Yield = 1 WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_STOCKYARD');
 
+-- move the marsh and lake changes to the new windmil/old workshop
 UPDATE Building_FeatureYieldChanges SET Yield = 1 WHERE BuildingType = 'BUILDING_WINDMILL';
-
 UPDATE Building_LakePlotYieldChanges SET Yield = 1 WHERE BuildingType = 'BUILDING_WINDMILL';
+
+UPDATE Building_FeatureYieldChanges SET BuildingType = 'BUILDING_WORKSHOP' WHERE BuildingType = 'BUILDING_WINDMILL';
+UPDATE Building_LakePlotYieldChanges SET BuildingType = 'BUILDING_WORKSHOP' WHERE BuildingType = 'BUILDING_WINDMILL';
 
 INSERT INTO Building_FeatureYieldChanges
 	(BuildingType, FeatureType, YieldType, Yield)
 SELECT
-	'BUILDING_WINDMILL', 'FEATURE_FOREST', 'YIELD_PRODUCTION', 1;
+	'BUILDING_WORKSHOP', 'FEATURE_FOREST', 'YIELD_PRODUCTION', 1;
 
 UPDATE Language_en_US
 SET Text = '{TXT_KEY_BUILDING_STABLE}s and Pharmacies in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
@@ -137,18 +125,37 @@ WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
 UPDATE Language_en_US
 SET Text = '+1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms and +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Pastures worked by the City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_HORSE] Horses.'
 WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
+
 ----------------------
 -- Workshop
 ----------------------
-UPDATE Building_YieldChanges SET Yield = Yield + 1 WHERE BuildingType = 'BUILDING_WORKSHOP';
-DELETE FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_WORKSHOP';
-DELETE FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_WORKSHOP';
+-- whilst workshops refer to the renaissance in their pedia text
+UPDATE Buildings SET 
+Civilopedia = 'TXT_KEY_CIV5_BUILDINGS_WORKSHOP_TEXT',
+PortraitIndex = 28,
+PrereqTech = 'TECH_ARCHITECTURE',
+Cost = 600,
+GoldMaintenance = 3
+WHERE Type = 'BUILDING_WINDMILL';
+
+UPDATE Language_en_US SET Text = 'Windmill' WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP';
+
+-- windmills dont currently have prereqs
+INSERT INTO Building_ClassesNeededInCity 
+	(BuildingType, BuildingClassType)
+SELECT
+	Type, 'BUILDINGCLASS_WORKSHOP'
+FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WINDMILL';
+
+UPDATE Building_YieldChanges SET Yield = Yield + 1 WHERE BuildingType = 'BUILDING_WINDMILL';
+DELETE FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_WINDMILL';
+DELETE FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_WINDMILL';
 
 INSERT INTO Building_GrowthExtraYield
 	(BuildingType, YieldType, Yield)
 SELECT
 	Type, 'YIELD_PRODUCTION', 25
-FROM Buildings WHERE Type = 'BUILDING_WORKSHOP';
+FROM Buildings WHERE Type = 'BUILDING_WINDMILL';
 
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 
@@ -156,11 +163,19 @@ SELECT
 	b.Type, 'RESOURCE_STONE',	y.Type, 1
 FROM Buildings b, Yields y
 WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_PRODUCTION')
-AND b.Type IN (SELECT Type FROM Buildings WHERE Type = 'BUILDING_WORKSHOP');
+AND b.Type IN (SELECT Type FROM Buildings WHERE Type = 'BUILDING_WINDMILL');
+
+INSERT INTO Building_ResourceYieldChanges 
+	(BuildingType, ResourceType, YieldType, Yield) 
+SELECT
+	b.Type, 'RESOURCE_MARBLE',	y.Type, 1
+FROM Buildings b, Yields y
+WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_CULTURE')
+AND b.Type IN (SELECT Type FROM Buildings WHERE Type = 'BUILDING_WINDMILL');
 
 -- update the help text
 UPDATE Language_en_US SET
-Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.'
+Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.[NEWLINE]Nearby [ICON_RES_MARBLE] Marble: +1 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Point.'
 WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
 
 UPDATE Language_en_US

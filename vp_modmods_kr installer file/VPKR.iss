@@ -2,7 +2,7 @@
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
 #define MyAppName "VP 한국어"
-#define MyAppVersion "5.0a1"
+#define MyAppVersion "5.0"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
 #define SourcePath ".."
@@ -163,8 +163,8 @@ Source: "..\Lower Supply Cap for Vox Populi BETA (v 3)\*"; DestDir: "{app}\MODS\
 Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion recursesubdirs;	Components: miwsr
-Source: "..\Misc Tweaks for VP (v 4.10)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
-Source: "..\Misc Tweaks for VP (v 4.10) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 4.10) INT"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
+Source: "..\Misc Tweaks for VP (v 5.0)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.0)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
+Source: "..\Misc Tweaks for VP (v 5.0) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.0) INT"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
 Source: "..\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"; Flags: ignoreversion recursesubdirs;	Components: fnv
 ;Source: "..\NavalMod(v5)\*"; DestDir: "{app}\MODS\NavalMod(v5)"; Flags: ignoreversion recursesubdirs;	Components: nm
 ;Source: "..\NavalMod(v5) INT\*"; DestDir: "{app}\MODS\NavalMod(v5) INT"; Flags: ignoreversion recursesubdirs;	Components: nm
@@ -550,6 +550,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 4.10)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 4.10) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 5.0)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 5.0) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\NavalMod(v5)"
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\NavalMod(v5) INT"

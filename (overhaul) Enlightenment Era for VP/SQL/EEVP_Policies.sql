@@ -41,3 +41,23 @@ FROM Policy_BuildingClassCultureChanges WHERE PolicyType = 'POLICY_NAVAL_TRADITI
 INSERT INTO Policy_BuildingClassHappiness (PolicyType, BuildingClassType, Happiness)
 SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_SUMMER_PALACE', Happiness
 FROM Policy_BuildingClassHappiness WHERE PolicyType = 'POLICY_LEGALISM';
+
+-------------------------------------
+-- rename Humanism + text due to new tech
+--------------------------------------
+
+UPDATE Language_en_US
+SET Text = 'Patronage'
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS';
+
+UPDATE Language_en_US
+SET Text = Replace(Text, 'Humanism', 'Patronage')
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS_HELP';
+
+--- from old statecraft description
+UPDATE Language_en_US
+SET Text = 'Patronage is the policy where the wealthy and powerful - often the nobility - support the talented artisans in a society. In many ancient societies, a society''s wealth was concentrated in a few individuals: the Royal Family, say, or the merchant princes. Painters, sculptors, musicians, and other gifted artists worked for the elite, as they were the only ones who could afford to pay them. While perhaps unfair to commoners, this system has produced brilliant works by the likes of Leonardo da Vinci, Ben Jonson, and Mozart. The system is enjoying something of a revival today, with the role of patron being taken by mega-corporations rather than individuals.'
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS_TEXT';
+
+-- old
+--Humanism is a philosophical and ethical stance that emphasizes the value and agency of human beings, individually and collectively, and generally prefers critical thinking and evidence (rationalism, empiricism) over established doctrine or faith (fideism). The meaning of the term humanism has fluctuated, according to the successive intellectual movements which have identified with it. Generally, however, humanism refers to a perspective that affirms some notion of a "human nature" (sometimes contrasted with antihumanism).

@@ -31,16 +31,6 @@ UPDATE LeagueSpecialSessions SET TurnsBetweenSessions = 15 WHERE EraTrigger = 'E
 ----------------------------------------------------
 -- Other RER tweaks
 ----------------------------------------------------
--- Landsknecht
-
---UPDATE ArtDefine_StrategicView
---SET Asset = 'sv_Landsknecht.dds'
---WHERE StrategicViewType = 'ART_DEF_UNIT_U_GERMAN_LANDSKNECHT';
-
---UPDATE Units
---SET UnitFlagIconOffset = 0, UnitFlagAtlas = 'UNIT_FLAG_LANDSKNECHT_ATLAS'
---WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
-
 -- Tercio
 UPDATE ArtDefine_UnitMemberInfos
 SET Model = 'TER_PIKE_piquero.fxsxml'
@@ -51,6 +41,11 @@ UPDATE ArtDefine_UnitMemberInfos
 SET Model = 'RER_PIKE.fxsxml'
 WHERE Type = 'ART_DEF_UNIT_MEMBER_PIKEMAN';
 
+-- Earlier looking Longsword
+UPDATE Units
+SET PortraitIndex = 0, IconAtlas = 'RER_UNITS_ATLAS'
+WHERE Type = 'UNIT_LONGSWORDSMAN';
+
 -- New icon for Harquebusier
 UPDATE Units
 SET PortraitIndex = 1, IconAtlas = 'RER_UNITS_ATLAS'
@@ -59,23 +54,15 @@ WHERE Type = 'UNIT_CUIRASSIER';
 ----------------------------------------------------
 -- ArtDef
 ----------------------------------------------------
-UPDATE Units SET PortraitIndex = '0', IconAtlas = 'RER_BOMBARD_ATLAS', UnitFlagAtlas = 'RER_BOMBARD_FLAG_ATLAS', UnitFlagIconOffset = 0 WHERE Type = 'UNIT_CANNON';
+UPDATE Units SET PortraitIndex = '12', IconAtlas = 'ENLIGHTENMENT_UNIT_ATLAS', UnitFlagAtlas = 'RER_BOMBARD_FLAG_ATLAS', UnitFlagIconOffset = 0 WHERE Type = 'UNIT_CANNON';
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, Model = 'RER_bombard.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_CANNON';
 UPDATE ArtDefine_StrategicView SET Asset = 'sv_Bombard.dds' WHERE StrategicViewType = 'ART_DEF_UNIT_CANNON';
 
 -----------------------------
 -- HOWITZER PORTRAIT CHANGED
 ------------------------------
-INSERT INTO IconTextureAtlases 
-	    (Atlas, 	               		IconSize, 	           Filename, 			IconsPerRow, 	IconsPerColumn)
-VALUES		
-            ('UNIT_HOWITZER_ATLAS', 			256, 		'Howitzer_256.dds',		1, 				1),
-	    ('UNIT_HOWITZER_ATLAS', 			128, 		'Howitzer_128.dds',		1, 				1),
-	    ('UNIT_HOWITZER_ATLAS', 			80, 		'Howitzer_080.dds',		1, 				1),
-	    ('UNIT_HOWITZER_ATLAS', 			64, 		'Howitzer_064.dds',		1, 				1),
-	    ('UNIT_HOWITZER_ATLAS', 			45, 		'Howitzer_045.dds',		1, 				1);
 
-UPDATE Units SET PortraitIndex = '0', IconAtlas = 'UNIT_HOWITZER_ATLAS' WHERE Type = 'UNIT_FIELD_GUN';
+UPDATE Units SET PortraitIndex = '13', IconAtlas = 'ENLIGHTENMENT_UNIT_ATLAS' WHERE Type = 'UNIT_FIELD_GUN';
 
 ---------------------------
 -- Grocer with Era-appropriate icon and name
@@ -116,11 +103,11 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 ('ENLIGHTENMENT_BUILDING_ATLAS',80,'Enlightenment_Buildings_80.dds',4,3),
 ('ENLIGHTENMENT_BUILDING_ATLAS',64,'Enlightenment_Buildings_64.dds',4,3),
 ('ENLIGHTENMENT_BUILDING_ATLAS',45,'Enlightenment_Buildings_45.dds',4,3),
-('ENLIGHTENMENT_UNIT_ATLAS',256,'Enlightenment_Units_256.dds',4,3),
-('ENLIGHTENMENT_UNIT_ATLAS',128,'Enlightenment_Units_128.dds',4,3),
-('ENLIGHTENMENT_UNIT_ATLAS',80,'Enlightenment_Units_80.dds',4,3),
-('ENLIGHTENMENT_UNIT_ATLAS',64,'Enlightenment_Units_64.dds',4,3),
-('ENLIGHTENMENT_UNIT_ATLAS',45,'Enlightenment_Units_45.dds',4,3),
+('ENLIGHTENMENT_UNIT_ATLAS',256,'Enlightenment_Units_256.dds',4,4),
+('ENLIGHTENMENT_UNIT_ATLAS',128,'Enlightenment_Units_128.dds',4,4),
+('ENLIGHTENMENT_UNIT_ATLAS',80,'Enlightenment_Units_80.dds',4,4),
+('ENLIGHTENMENT_UNIT_ATLAS',64,'Enlightenment_Units_64.dds',4,4),
+('ENLIGHTENMENT_UNIT_ATLAS',45,'Enlightenment_Units_45.dds',4,4),
 ('CIVIL_WAR_RESOURCE_ATLAS_EXP2',214,'EE_Flintlock_214.dds',1,1), -- these are missing in vanilla game
 ('CIVIL_WAR_RESOURCE_ATLAS_EXP2',128,'EE_Flintlock_128.dds',1,1), -- these are missing in vanilla game
 ('EECBO_ICON_ATLAS',256,'Mausoleum256.dds',1,1),
@@ -143,11 +130,6 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 ('vpee_promoAtlas', 32, 'VPEE_promo_icons_032.dds', '8', '1'),
 ('vpee_promoAtlas', 16, 'VPEE_promo_icons_016.dds', '8', '1'),
 ('UNIT_FLAG_LANDSKNECHT_ATLAS', 32, 'LandsknechtFlag.dds', 1, 1),
-('RER_BOMBARD_ATLAS', 256, 'Bombard_256.dds', 1, 1),
-('RER_BOMBARD_ATLAS', 128, 'Bombard_128.dds', 1, 1),
-('RER_BOMBARD_ATLAS', 80, 'Bombard_080.dds',  1, 1),
-('RER_BOMBARD_ATLAS', 64, 'Bombard_064.dds',  1, 1),
-('RER_BOMBARD_ATLAS', 45, 'Bombard_045.dds',  1, 1),
 ('RER_BOMBARD_FLAG_ATLAS', 32, 'BombardFlag.dds',  1, 1);
 
 ----------------------------------------------------

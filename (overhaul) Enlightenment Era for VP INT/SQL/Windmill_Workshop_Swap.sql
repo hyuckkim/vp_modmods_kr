@@ -13,7 +13,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
 
 -- swap the help text
 UPDATE Language_ko_KR SET
-Text = '이 도시에서 경작하는 숲에서 [ICON_PRODUCTION] 생산력이 +1 증가하고, 도시에 거주하는 [ICON_CITIZEN] 시민 4명 당 [ICON_PRODUCTION] 생산력이 +1 증가합니다. 이 도시의 내부 [ICON_INTERNATIONAL_TRADE] 교역로는 [ICON_PRODUCTION] 생산력 +4를 생성합니다.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.'
+Text = '이 도시에서 경작하는 숲에서 [ICON_PRODUCTION] 생산력이 +1 증가하고, 도시에 거주하는 [ICON_CITIZEN] 시민 4명 당 [ICON_PRODUCTION] 생산력이 +1 증가합니다. 이 도시의 내부 [ICON_INTERNATIONAL_TRADE] 교역로는 [ICON_PRODUCTION] 생산력 +4를 생성합니다.[NEWLINE][NEWLINE][ICON_RES_STONE] 석재: +1 [ICON_PRODUCTION] 생산, [ICON_GOLDEN_AGE] 황금기 점수 +1[NEWLINE][ICON_RES_MARBLE] 대리석: [ICON_CULTURE] 문화, [ICON_GOLDEN_AGE] 황금기 점수 +1'
 WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
 
 UPDATE Language_ko_KR

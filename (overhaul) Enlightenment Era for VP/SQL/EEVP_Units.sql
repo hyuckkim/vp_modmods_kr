@@ -11,15 +11,16 @@
 ----------------------------------------------------
 -- 'UNIT_EE_UHLAN', 3 index, is not currently used
 INSERT INTO Units (Type, Class, PrereqTech, Combat, Moves, RequiresFaithPurchaseEnabled, CombatClass, Domain, DefaultUnitAI, AdvancedStartCost, UnitFlagIconOffset, PortraitIndex, GoodyHutUpgradeUnitClass) VALUES
-('UNIT_EE_ADVENTURER',  'UNITCLASS_EE_ADVENTURER',  'TECH_EE_EXPLORATION',  24, 3, 1,  'UNITCOMBAT_RECON',       'DOMAIN_LAND', 'UNITAI_EXPLORE',     10, 6, 6, 'UNITCLASS_COMMANDO'), -- UNIT_EE_EXPLORER in original EE
-('UNIT_EE_FIELD_GUN',   'UNITCLASS_EE_FIELD_GUN',   'TECH_EE_FORTIFICATION',14, 2, 1,  'UNITCOMBAT_SIEGE',       'DOMAIN_LAND', 'UNITAI_CITY_BOMBARD',30, 4, 4, 'UNITCLASS_FIELD_GUN'),
-('UNIT_EE_SKIRMISHER',  'UNITCLASS_EE_SKIRMISHER',  'TECH_EE_MANUFACTURING',28, 2, 1,  'UNITCOMBAT_ARCHER',      'DOMAIN_LAND', 'UNITAI_RANGED',      30, 2, 2, 'UNITCLASS_GATLINGGUN'),
-('UNIT_EE_DRAGOON',	'UNITCLASS_EE_DRAGOON',     'TECH_EE_MANUFACTURING',34, 5, 1,  'UNITCOMBAT_ARCHER',      'DOMAIN_LAND', 'UNITAI_RANGED',      30, 10,9, 'UNITCLASS_CAVALRY'),
-('UNIT_EE_CUIRASSIER',  'UNITCLASS_EE_CUIRASSIER',  'TECH_RIFLING',         48, 4, 1,  'UNITCOMBAT_MOUNTED',     'DOMAIN_LAND', 'UNITAI_FAST_ATTACK', 30, 0, 0, 'UNITCLASS_WWI_TANK'),
-('UNIT_EE_CARRACK',     'UNITCLASS_EE_CARRACK',     'TECH_EE_REFRACTION',   32, 4, 0,  'UNITCOMBAT_NAVALMELEE',  'DOMAIN_SEA',  'UNITAI_ATTACK_SEA',  50, 9, 19,'UNITCLASS_PRIVATEER'),
-('UNIT_EE_GALLEON',     'UNITCLASS_EE_GALLEON',     'TECH_EE_EXPLORATION',  20, 4, 0,  'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA',  'UNITAI_ASSAULT_SEA', 50, 5, 5, 'UNITCLASS_CRUISER'),
-('UNIT_EE_2HANDER',     'UNITCLASS_EE_2HANDER',     'TECH_CHEMISTRY',       28,  2, 1, 'UNITCOMBAT_MELEE',       'DOMAIN_LAND', 'UNITAI_ATTACK',      25, 33,11,'UNITCLASS_EE_LINE_INFANTRY'),
-('UNIT_EE_LINE_INFANTRY', 'UNITCLASS_EE_LINE_INFANTRY', 'TECH_EE_FLINTLOCK',31, 2, 1,  'UNITCOMBAT_GUN',         'DOMAIN_LAND', 'UNITAI_DEFENSE',     30, 1, 1, 'UNITCLASS_RIFLEMAN');
+('UNIT_EE_ADVENTURER',    'UNITCLASS_EE_ADVENTURER',    'TECH_EE_EXPLORATION',  24, 3, 1,  'UNITCOMBAT_RECON',       'DOMAIN_LAND', 'UNITAI_EXPLORE',     10,  6,  6, 'UNITCLASS_COMMANDO'), -- UNIT_EE_EXPLORER in original EE
+('UNIT_EE_FIELD_GUN',     'UNITCLASS_EE_FIELD_GUN',     'TECH_EE_FORTIFICATION',14, 2, 1,  'UNITCOMBAT_SIEGE',       'DOMAIN_LAND', 'UNITAI_CITY_BOMBARD',30,  4,  4, 'UNITCLASS_FIELD_GUN'),
+('UNIT_EE_SKIRMISHER',    'UNITCLASS_EE_SKIRMISHER',    'TECH_EE_MANUFACTURING',28, 2, 1,  'UNITCOMBAT_ARCHER',      'DOMAIN_LAND', 'UNITAI_RANGED',      30,  2,  2, 'UNITCLASS_GATLINGGUN'),
+('UNIT_EE_DRAGOON',	  'UNITCLASS_EE_DRAGOON',       'TECH_EE_MANUFACTURING',34, 5, 1,  'UNITCOMBAT_ARCHER',      'DOMAIN_LAND', 'UNITAI_RANGED',      30, 10,  9, 'UNITCLASS_CAVALRY'),
+('UNIT_EE_CUIRASSIER',    'UNITCLASS_EE_CUIRASSIER',    'TECH_RIFLING',         48, 4, 1,  'UNITCOMBAT_MOUNTED',     'DOMAIN_LAND', 'UNITAI_FAST_ATTACK', 30,  0,  0, 'UNITCLASS_WWI_TANK'),
+('UNIT_EE_CARRACK',       'UNITCLASS_EE_CARRACK',       'TECH_EE_REFRACTION',   32, 4, 0,  'UNITCOMBAT_NAVALMELEE',  'DOMAIN_SEA',  'UNITAI_ATTACK_SEA',  50,  9, 19, 'UNITCLASS_PRIVATEER'),
+('UNIT_EE_GALLEON',       'UNITCLASS_EE_GALLEON',       'TECH_EE_EXPLORATION',  20, 4, 0,  'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA',  'UNITAI_ASSAULT_SEA', 50,  5,  5, 'UNITCLASS_CRUISER'),
+('UNIT_EE_2HANDER',       'UNITCLASS_EE_2HANDER',       'TECH_CHEMISTRY',       28, 2, 1,  'UNITCOMBAT_MELEE',       'DOMAIN_LAND', 'UNITAI_ATTACK',      25, 33, 11, 'UNITCLASS_EE_GRENADIER'),
+('UNIT_EE_LINE_INFANTRY', 'UNITCLASS_EE_LINE_INFANTRY', 'TECH_EE_FLINTLOCK',    31, 2, 1,  'UNITCOMBAT_GUN',         'DOMAIN_LAND', 'UNITAI_DEFENSE',     30,  1,  1, 'UNITCLASS_RIFLEMAN'),
+('UNIT_EE_GRENADIER',     'UNITCLASS_EE_GRENADIER',     'TECH_EE_WARSHIPS',     35, 2, 1,  'UNITCOMBAT_GUN',         'DOMAIN_LAND', 'UNITAI_ATTACK',      30, 11, 14, 'UNITCLASS_GREAT_WAR_INFANTRY');
 
 UPDATE Units
 SET Class = 'UNITCLASS_'||SUBSTR(Type,6), Description = 'TXT_KEY_'||Type,
@@ -35,7 +36,8 @@ WHERE Type IN (
 'UNIT_EE_CARRACK',
 'UNIT_EE_GALLEON',
 'UNIT_EE_2HANDER',
-'UNIT_EE_LINE_INFANTRY');
+'UNIT_EE_LINE_INFANTRY',
+'UNIT_EE_GRENADIER');
 
 -- Exceptions
 UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_EE_EXPLORER' WHERE Type = 'UNIT_EE_ADVENTURER'; -- model has still an old name
@@ -68,7 +70,8 @@ WHERE Type IN (
 'UNIT_EE_CARRACK',
 'UNIT_EE_GALLEON',
 'UNIT_EE_2HANDER',
-'UNIT_EE_LINE_INFANTRY');
+'UNIT_EE_LINE_INFANTRY',
+'UNIT_EE_GRENADIER');
 
 ----------------------------------------------------
 -- Unit Lines - auto based on GoodyHutUpgradeUnitClass
@@ -86,7 +89,8 @@ WHERE Type IN (
 'UNIT_EE_CARRACK',
 'UNIT_EE_GALLEON',
 'UNIT_EE_2HANDER',
-'UNIT_EE_LINE_INFANTRY');
+'UNIT_EE_LINE_INFANTRY',
+'UNIT_EE_GRENADIER');
 
 ----------------------------------------------------
 -- Unit AI
@@ -111,7 +115,9 @@ INSERT INTO Unit_AITypes (UnitType, UnitAIType) VALUES
 ('UNIT_EE_2HANDER', 'UNITAI_ATTACK'),
 ('UNIT_EE_2HANDER', 'UNITAI_DEFENSE'),
 ('UNIT_EE_LINE_INFANTRY', 'UNITAI_ATTACK'),
-('UNIT_EE_LINE_INFANTRY', 'UNITAI_DEFENSE');
+('UNIT_EE_LINE_INFANTRY', 'UNITAI_DEFENSE'),
+('UNIT_EE_GRENADIER', 'UNITAI_ATTACK'),
+('UNIT_EE_GRENADIER', 'UNITAI_DEFENSE');
 
 -------------------------------------------------------
 -- Adventurer
@@ -251,24 +257,6 @@ BEGIN
 	WHERE Type = NEW.UnitType AND Class = NEW.UnitClassType;
 END;
 
--------------------------------------------------------
--- Russian Cossack
--------------------------------------------------------
-
-UPDATE Civilization_UnitClassOverrides Set UnitClassType = 'UNITCLASS_EE_DRAGOON' WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Units
-SET Class = 'UNITCLASS_EE_DRAGOON', 
-        RangedCombat = (SELECT RangedCombat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 4,
-	Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 3,
-	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_DRAGOON'),
-	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN'),
-	GoodyHutUpgradeUnitClass = 'UNITCLASS_CAVALRY',
-	DefaultUnitAI = 'UNITAI_FAST_ATTACK'
-WHERE Type = 'UNIT_RUSSIAN_COSSACK';
-
-UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
-
 ---------------------------------------------
 -- Austrian Hussar to Dragoon
 ---------------------------------------------
@@ -294,12 +282,12 @@ SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = Uni
 WHERE UnitType IN ('UNIT_AUSTRIAN_HUSSAR');
 
 UPDATE Units SET 
-Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 1,
-RangedCombat = (SELECT RangedCombat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 1
+Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 2,
+RangedCombat = (SELECT RangedCombat FROM Units WHERE Type = 'UNIT_EE_DRAGOON') + 2
 WHERE Type = 'UNIT_AUSTRIAN_HUSSAR';
 
 -------------------------------------------------------
--- CUIRASSIER
+-- (new) Cuirassier (ex Uhlan)
 -------------------------------------------------------
 
 UPDATE Units
@@ -734,7 +722,7 @@ END;
 -- 2Hander
 ---------------------------------------------------
 UPDATE Units SET 
-ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY')
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GRENADIER')
 WHERE Type = 'UNIT_EE_2HANDER';
 
 UPDATE Unit_ClassUpgrades
@@ -744,6 +732,11 @@ WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_LONGSWORDSMAN
 UPDATE Units
 SET ObsoleteTech = 'TECH_CHEMISTRY', GoodyHutUpgradeUnitClass = 'UNITCLASS_EE_2HANDER'
 WHERE Type = 'UNIT_LONGSWORDSMAN';
+
+-- all sword UUs too
+UPDATE Units
+SET ObsoleteTech = 'TECH_CHEMISTRY'
+WHERE Type IN (SELECT UnitType FROM Civilization_UnitClassOverrides WHERE UnitClassType = 'UNITCLASS_SWORDSMAN');
 
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 VALUES ('UNIT_EE_2HANDER', 'RESOURCE_IRON', 1);
@@ -767,15 +760,21 @@ UPDATE Civilization_UnitClassOverrides
 SET UnitClassType = 'UNITCLASS_EE_2HANDER'
 WHERE UnitType IN ('UNIT_FRENCH_MUSKETEER', 'UNIT_GERMAN_LANDSKNECHT');
 
+UPDATE Unit_ClassUpgrades
+SET UnitClassType = 'UNITCLASS_EE_GRENADIER'
+WHERE UnitType IN ('UNIT_FRENCH_MUSKETEER', 'UNIT_GERMAN_LANDSKNECHT');
+
 UPDATE Units SET
 Class = 'UNITCLASS_EE_2HANDER',
 Combat = 30,
-PrereqTech = 'TECH_CHEMISTRY'
+PrereqTech = 'TECH_CHEMISTRY',
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_GREAT_WAR_INFANTRY')
 WHERE Type = 'UNIT_FRENCH_MUSKETEER';
 
 UPDATE Units SET
 Class = 'UNITCLASS_EE_2HANDER', 
 PrereqTech = 'TECH_CHEMISTRY',
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_GREAT_WAR_INFANTRY'),
 Combat = 28,
 Cost = 300,
 IconAtlas = 'ENLIGHTENMENT_UNIT_ATLAS',
@@ -794,7 +793,6 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
 --------------------------------
 -- Tercio
 ------------------------------
-
 DELETE FROM Unit_FreePromotions WHERE PromotionType = 'PROMOTION_FIELD_WORKS_0' AND UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_TERCIO');
 
 -- impi
@@ -816,7 +814,6 @@ UPDATE Units SET ObsoleteTech = 'TECH_ASTRONOMY' WHERE Type = 'UNIT_SETTLER';
 ------------------------------
 -- Line Infantry 
 -----------------------------
-
 UPDATE Units
 SET GoodyHutUpgradeUnitClass = 'UNITCLASS_EE_LINE_INFANTRY'
 WHERE Type = 'UNIT_2HANDER';
@@ -832,13 +829,12 @@ UPDATE Units Set ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT
 
 UPDATE Units
 SET Conscription = 5,
-	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_RIFLEMAN')
+    ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_RIFLEMAN')
 WHERE Type = 'UNIT_EE_LINE_INFANTRY';
 
-INSERT INTO Unit_FreePromotions
-		(UnitType, PromotionType)
-SELECT 'UNIT_EE_LINE_INFANTRY', PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RIFLEMAN';
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
+('UNIT_EE_LINE_INFANTRY', 'PROMOTION_FIELD_WORKS_0'),
+('UNIT_EE_LINE_INFANTRY','PROMOTION_FORMATION_1');
 
 -- Tercio -> Line Infantry
 UPDATE Unit_ClassUpgrades
@@ -855,9 +851,9 @@ UPDATE Units
 SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY')
 WHERE Class IN ('UNITCLASS_PIKEMAN', 'UNITCLASS_LONGSWORDSMAN') AND Type NOT IN ('UNIT_PIKEMAN', 'UNIT_LONGSWORDSMAN');
 
-CREATE TRIGGER EE_LINE_INFANTRY_PikemanLongswordsmanCompatibility
+CREATE TRIGGER EE_LINE_INFANTRY_PikemanCompatibility
 AFTER INSERT ON Civilization_UnitClassOverrides
-WHEN NEW.UnitClassType IN ('UNITCLASS_PIKEMAN', 'UNITCLASS_LONGSWORDSMAN')
+WHEN NEW.UnitClassType IN ('UNITCLASS_PIKEMAN')
 AND NEW.UnitType NOT NULL
 BEGIN
 	UPDATE Units
@@ -882,23 +878,58 @@ BEGIN
 	WHERE Type = NEW.UnitType AND Class = NEW.UnitClassType;
 END;
 
+---------------------------------------------------------
+-- Grenadier 
+---------------------------------------------------------
+
+UPDATE Unit_ClassUpgrades
+SET UnitClassType = 'UNITCLASS_EE_GRENADIER'
+WHERE UnitType = 'UNIT_2HANDER';
+
+UPDATE Units
+SET ObsoleteTech = 'TECH_EE_WARSHIPS'
+WHERE Type IN (SELECT UnitType FROM Civilization_UnitClassOverrides WHERE UnitClassType = 'UNITCLASS_LONGSWORDSMAN');
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
+('UNIT_EE_GRENADIER', 'PROMOTION_FIELD_WORKS_1'),
+('UNIT_EE_GRENADIER', 'PROMOTION_COVER_1'),
+('UNIT_EE_GRENADIER', 'PROMOTION_AOE_STRIKE_ON_KILL'),
+('UNIT_EE_GRENADIER', 'PROMOTION_RANGED_SUPPORT_FIRE');
+
+INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
+VALUES ('UNIT_EE_GRENADIER', 'RESOURCE_IRON', 1);
+
+CREATE TRIGGER EE_GRENADIER_LongswordsmanCompatibility
+AFTER INSERT ON Civilization_UnitClassOverrides
+WHEN NEW.UnitClassType IN ('UNITCLASS_LONGSWORDSMAN')
+AND NEW.UnitType NOT NULL
+BEGIN
+	UPDATE Units
+	SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GRENADIER')
+	WHERE Type = NEW.UnitType AND Class = NEW.UnitClassType;
+END;
+
 -------------------------------------------------------
 -- Swedish Carolean, used in period 1680-1720
 -- Most of the infantry were equipped with modern flintlock muskets, although older versions still were in use. They were also equipped with rapiers and a bag for ammunition.
--- Switch to Line Infantry, available early EE
+-- Switch to Grenadier, name of their promotion already
 -------------------------------------------------------
 
-UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_LINE_INFANTRY' WHERE  UnitType = 'UNIT_SWEDISH_CAROLEAN';
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GRENADIER' WHERE  UnitType = 'UNIT_SWEDISH_CAROLEAN';
 
 UPDATE Units
-SET Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY') + 3,
-	Class = 'UNITCLASS_EE_LINE_INFANTRY',
-	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY'),
-	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_GREAT_WAR_INFANTRY'),
-	GoodyHutUpgradeUnitClass = 'UNITCLASS_RIFLEMAN'
+SET Combat = (SELECT Combat FROM Units WHERE Type = 'UNIT_EE_GRENADIER') + 1,
+	Class = 'UNITCLASS_EE_GRENADIER',
+	PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY'),  -- early unlock
+	ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_INFANTRY'),
+	GoodyHutUpgradeUnitClass = 'UNITCLASS_GREAT_WAR_INFANTRY'
 WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
 
 UPDATE Unit_ClassUpgrades SET UnitClassType = (SELECT GoodyHutUpgradeUnitClass FROM Units WHERE Type = UnitType) WHERE UnitType = 'UNIT_SWEDISH_CAROLEAN';
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
+('UNIT_SWEDISH_CAROLEAN', 'PROMOTION_COVER_1'),
+('UNIT_SWEDISH_CAROLEAN', 'PROMOTION_RANGED_SUPPORT_FIRE');
 
 UPDATE Unit_Flavors SET Flavor = '20' WHERE UnitType = 'UNIT_SWEDISH_CAROLEAN' AND FlavorType = 'FLAVOR_OFFENSE';
 UPDATE Unit_Flavors SET Flavor = '20' WHERE UnitType = 'UNIT_SWEDISH_CAROLEAN' AND FlavorType = 'FLAVOR_DEFENSE';
@@ -907,6 +938,9 @@ UPDATE Unit_BuildingClassPurchaseRequireds SET
 BuildingClassType = 'BUILDINGCLASS_EE_GUNSMITH' 
 WHERE BuildingClassType = 'BUILDINGCLASS_ARMORY' AND
 UnitType IN ('UNIT_SWEDISH_CAROLEAN');
+
+INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
+VALUES ('UNIT_SWEDISH_CAROLEAN', 'RESOURCE_IRON', 1);
 
 -------------------------------------------------------
 -- Align flavors
@@ -933,8 +967,10 @@ INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor) VALUES
 ('UNIT_EE_GALLEON',	'FLAVOR_NAVAL_RECON', 10),
 ('UNIT_EE_2HANDER', 'FLAVOR_OFFENSE', 13),
 ('UNIT_EE_2HANDER', 'FLAVOR_DEFENSE', 12),
-('UNIT_EE_LINE_INFANTRY','FLAVOR_OFFENSE', 14),
-('UNIT_EE_LINE_INFANTRY','FLAVOR_DEFENSE', 14);
+('UNIT_EE_LINE_INFANTRY','FLAVOR_OFFENSE', 13),
+('UNIT_EE_LINE_INFANTRY','FLAVOR_DEFENSE', 14),
+('UNIT_EE_GRENADIER','FLAVOR_OFFENSE', 16),
+('UNIT_EE_GRENADIER','FLAVOR_DEFENSE', 14);
 
 INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) VALUES
 ('UNIT_EE_2HANDER',		'BUILDINGCLASS_ARMORY'),
@@ -943,12 +979,14 @@ INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) VA
 ('UNIT_EE_FIELD_GUN', 		'BUILDINGCLASS_ARMORY'),
 ('UNIT_EE_FIELD_GUN', 		'BUILDINGCLASS_WORKSHOP'),
 ('UNIT_EE_ADVENTURER',		'BUILDINGCLASS_ARMORY'),
+('UNIT_EE_ADVENTURER',		'BUILDINGCLASS_EE_TAVERN'),
 ('UNIT_EE_SKIRMISHER',		'BUILDINGCLASS_EE_GUNSMITH'),
 ('UNIT_EE_DRAGOON',		'BUILDINGCLASS_STABLE'),
 ('UNIT_EE_DRAGOON',     	'BUILDINGCLASS_EE_GUNSMITH'),
 ('UNIT_EE_CUIRASSIER',		'BUILDINGCLASS_STABLE'),
 ('UNIT_EE_CUIRASSIER',		'BUILDINGCLASS_EE_GUNSMITH'),
-('UNIT_EE_LINE_INFANTRY',       'BUILDINGCLASS_EE_GUNSMITH');
+('UNIT_EE_LINE_INFANTRY',       'BUILDINGCLASS_EE_GUNSMITH'),
+('UNIT_EE_GRENADIER',           'BUILDINGCLASS_EE_GUNSMITH');
 
 ---------------------------------------------------------------------------------------------------------
 -- Add new EE buildings as required for purchases
@@ -998,12 +1036,14 @@ END;
 -------------------------------------------------------
 
 INSERT INTO UnitGameplay2DScripts (UnitType, SelectionSound, FirstSelectionSound) VALUES
-('UNIT_EE_ADVENTURER',   'AS2D_SELECT_SCOUT',     'AS2D_BIRTH_SCOUT'),
-('UNIT_EE_FIELD_GUN',    'AS2D_SELECT_CANNON',    'AS2D_BIRTH_CANNON'),
-('UNIT_EE_SKIRMISHER',   'AS2D_SELECT_CROSSBOWMAN','AS2D_BIRTH_CROSSBOWMAN'),
-('UNIT_EE_DRAGOON',      'AS2D_SELECT_CAVALRY',   'AS2D_BIRTH_CAVALRY'),
-('UNIT_EE_CUIRASSIER',        'AS2D_SELECT_CAVALRY',   'AS2D_BIRTH_CAVALRY'),
-('UNIT_EE_CARRACK',      'AS2D_SELECT_CARAVEL',   'AS2D_BIRTH_CARAVEL'),
-('UNIT_EE_GALLEON',      'AS2D_SELECT_FRIGATE',   'AS2D_BIRTH_FRIGATE'),
-('UNIT_EE_2HANDER',      'AS2D_SELECT_LONGSWORDSMAN',   'AS2D_BIRTH_LONGSWORDSMAN'),
-('UNIT_EE_LINE_INFANTRY','AS2D_SELECT_MUSKETMAN', 'AS2D_BIRTH_MUSKETMAN');
+('UNIT_EE_ADVENTURER',   'AS2D_SELECT_SCOUT',         'AS2D_BIRTH_SCOUT'),
+('UNIT_EE_FIELD_GUN',    'AS2D_SELECT_CANNON',        'AS2D_BIRTH_CANNON'),
+('UNIT_EE_SKIRMISHER',   'AS2D_SELECT_CROSSBOWMAN',   'AS2D_BIRTH_CROSSBOWMAN'),
+('UNIT_EE_DRAGOON',      'AS2D_SELECT_CAVALRY',       'AS2D_BIRTH_CAVALRY'),
+('UNIT_EE_CUIRASSIER',   'AS2D_SELECT_CAVALRY',       'AS2D_BIRTH_CAVALRY'),
+('UNIT_EE_CARRACK',      'AS2D_SELECT_CARAVEL',       'AS2D_BIRTH_CARAVEL'),
+('UNIT_EE_GALLEON',      'AS2D_SELECT_FRIGATE',       'AS2D_BIRTH_FRIGATE'),
+('UNIT_EE_2HANDER',      'AS2D_SELECT_LONGSWORDSMAN', 'AS2D_BIRTH_LONGSWORDSMAN'),
+('UNIT_EE_LINE_INFANTRY','AS2D_SELECT_MUSKETMAN',     'AS2D_BIRTH_MUSKETMAN'),
+('UNIT_EE_GRENADIER',    'AS2D_SELECT_MUSKETMAN',     'AS2D_BIRTH_MUSKETMAN');
+

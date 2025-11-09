@@ -84,6 +84,67 @@ INSERT INTO Building_ClassesNeededInCity (BuildingType, BuildingClassType) VALUE
 ('BUILDING_EE_SALON', 'BUILDINGCLASS_MINT'),
 ('BUILDING_EE_MANOR', 'BUILDINGCLASS_GARDEN');
 
+------------------------
+-- Flavors
+------------------------
+
+INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
+('BUILDING_EE_ACADEMY', 'FLAVOR_SCIENCE', 20),
+('BUILDING_EE_ACADEMY', 'FLAVOR_DEFENSE', 10),
+('BUILDING_EE_SEMINARY', 'FLAVOR_RELIGION', 20),
+('BUILDING_EE_SEMINARY', 'FLAVOR_CULTURE', 10),
+('BUILDING_EE_CLOTH_MILL', 'FLAVOR_PRODUCTION', 20),
+('BUILDING_EE_CLOTH_MILL', 'FLAVOR_GOLD', 20),
+('BUILDING_EE_DRYDOCK', 'FLAVOR_NAVAL', 20),
+('BUILDING_EE_DRYDOCK', 'FLAVOR_MILITARY_TRAINING', 25),
+('BUILDING_EE_GUNSMITH', 'FLAVOR_SCIENCE', 15),
+('BUILDING_EE_GUNSMITH', 'FLAVOR_MILITARY_TRAINING', 30),
+('BUILDING_EE_MANOR', 'FLAVOR_EXPANSION', 15),
+('BUILDING_EE_SALON', 'FLAVOR_CULTURE', 35),
+('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_GOLD', 25),
+('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_SEA_TRADE_ROUTE', 20),
+('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_DESTINATION', 20),
+('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_ORIGIN', 25),
+('BUILDING_EE_MENAGERIE', 'FLAVOR_HAPPINESS', 10),
+('BUILDING_EE_MENAGERIE', 'FLAVOR_CULTURE', 20),
+('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_ORIGIN', 10),
+('BUILDING_EE_TAVERN', 'FLAVOR_RECON', 25),
+('BUILDING_EE_TAVERN', 'FLAVOR_OFFENSE', 5),
+('BUILDING_EE_TAVERN', 'FLAVOR_GROWTH', 15);
+
+----------------------------------------------
+-- Tavern
+-- Hokath: answer to the Recon-being-bad after Reconnaissance problem
+----------------------------------------------
+INSERT INTO Building_YieldFromPillage
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_EE_TAVERN', 'YIELD_GOLD', 15),
+	('BUILDING_EE_TAVERN', 'YIELD_TOURISM', 15);
+
+INSERT INTO Building_UnitCombatFreeExperiences
+	(BuildingType, UnitCombatType, Experience)
+VALUES
+	('BUILDING_EE_TAVERN', 'UNITCOMBAT_RECON', 30);
+
+INSERT INTO Building_UnitCombatProductionModifiers
+	(BuildingType, UnitCombatType, Modifier)
+VALUES
+	('BUILDING_EE_TAVERN', 'UNITCOMBAT_RECON', 15);
+
+INSERT INTO Building_ResourceYieldChanges 
+	(BuildingType, ResourceType, YieldType, Yield) 
+VALUES
+	('BUILDING_EE_TAVERN', 'RESOURCE_WHALE', 'YIELD_SCIENCE', 1),
+	('BUILDING_EE_TAVERN', 'RESOURCE_WHALE', 'YIELD_GOLD', 2),
+
+	('BUILDING_EE_TAVERN', 'RESOURCE_FISH',  'YIELD_FOOD', 1),
+	('BUILDING_EE_TAVERN', 'RESOURCE_FISH',  'YIELD_GOLD', 1),
+
+	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_FOOD', 1),
+	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_GOLD', 1),
+	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_TOURISM', 1);
+
 ----------------------------------------------
 -- Menagerie
 -- Hokath: better than the park, have also improved icon
@@ -112,8 +173,6 @@ VALUES
 
 	('BUILDING_EE_MENAGERIE', 'RESOURCE_HORSE',    'YIELD_PRODUCTION', 1),
 	('BUILDING_EE_MENAGERIE', 'RESOURCE_HORSE',    'YIELD_CULTURE', 1),
-
-	('BUILDING_EE_MENAGERIE', 'RESOURCE_WHALE',	'YIELD_SCIENCE', 2),
 
 	('BUILDING_EE_MENAGERIE', 'RESOURCE_BANANA', 'YIELD_GOLD', 2),
 	('BUILDING_EE_MENAGERIE', 'RESOURCE_BANANA', 'YIELD_TOURISM', 1),
@@ -151,9 +210,7 @@ INSERT INTO Building_SpecificGreatPersonRateModifier
 	(BuildingType, SpecialistType, Modifier) 
 VALUES
 	('BUILDING_EE_ACADEMY', 'SPECIALIST_SCIENTIST', 20),
-	('BUILDING_EE_ACADEMY', 'SPECIALIST_ENGINEER', 20),
-	('BUILDING_EE_ACADEMY', 'SPECIALIST_MERCHANT', 20),
-	('BUILDING_EE_ACADEMY', 'SPECIALIST_CIVIL_SERVANT', 20);
+	('BUILDING_EE_ACADEMY', 'SPECIALIST_ENGINEER', 20);
 
 INSERT INTO Building_YieldChangesPerPop 
 	(BuildingType, YieldType, Yield) 
@@ -197,9 +254,6 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 
 VALUES
-	('BUILDING_EE_SALON', 'RESOURCE_CITRUS', 	'YIELD_FOOD', 2),
-	('BUILDING_EE_SALON', 'RESOURCE_CITRUS', 	'YIELD_SCIENCE', 1),
-
 	('BUILDING_EE_SALON', 'RESOURCE_COCOA',   	'YIELD_GOLD', 2),
 	('BUILDING_EE_SALON', 'RESOURCE_COCOA',   	'YIELD_TOURISM', 1),
 
@@ -290,42 +344,6 @@ UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType = 'BUILDING
 
 ---------------------------------------------
 UPDATE Buildings SET PrereqTech = 'TECH_EE_FORTIFICATION' WHERE BuildingClass = 'BUILDINGCLASS_FORTRESS'; -- Includes Ostrog (BUILDING_KREPOST)
-----------------------------------------------
--- Tavern
--- Hokath: answer to the Recon-being-bad after Reconnaissance problem
-----------------------------------------------
-INSERT INTO Building_YieldFromPillage
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_EE_TAVERN', 'YIELD_GOLD', 15),
-	('BUILDING_EE_TAVERN', 'YIELD_TOURISM', 15);
-
-INSERT INTO Building_UnitCombatFreeExperiences
-	(BuildingType, UnitCombatType, Experience)
-VALUES
-	('BUILDING_EE_TAVERN', 'UNITCOMBAT_RECON', 30);
-
-INSERT INTO Building_UnitCombatProductionModifiers
-	(BuildingType, UnitCombatType, Modifier)
-VALUES
-	('BUILDING_EE_TAVERN', 'UNITCOMBAT_RECON', 15);
-
-INSERT INTO Building_ResourceYieldChanges 
-	(BuildingType, ResourceType, YieldType, Yield) 
-VALUES
-	('BUILDING_EE_TAVERN', 'RESOURCE_COW',  'YIELD_GOLD', 1),
-	('BUILDING_EE_TAVERN', 'RESOURCE_COW',  'YIELD_TOURISM', 1),
-
-	('BUILDING_EE_TAVERN', 'RESOURCE_FISH',  'YIELD_FOOD', 1),
-	('BUILDING_EE_TAVERN', 'RESOURCE_FISH',  'YIELD_GOLD', 1),
-
-	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_FOOD', 1),
-	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_GOLD', 1),
-	('BUILDING_EE_TAVERN', 'RESOURCE_CRAB',       'YIELD_TOURISM', 1),
-
-	('BUILDING_EE_TAVERN', 'RESOURCE_WHEAT',  'YIELD_GOLD', 2),
-	('BUILDING_EE_TAVERN', 'RESOURCE_RICE',   'YIELD_GOLD', 2),
-	('BUILDING_EE_TAVERN', 'RESOURCE_MAIZE',  'YIELD_GOLD', 2);
 
 ----------------------------------------------
 -- Manor
@@ -345,14 +363,17 @@ VALUES
 	('BUILDING_EE_MANOR', 'YIELD_GOLD', 2),
 	('BUILDING_EE_MANOR', 'YIELD_TOURISM', 1);
 
+INSERT INTO Building_SpecificGreatPersonRateModifier 
+	(BuildingType, SpecialistType, Modifier) 
+VALUES
+	('BUILDING_EE_MANOR', 'SPECIALIST_MERCHANT', 20),
+	('BUILDING_EE_MANOR', 'SPECIALIST_CIVIL_SERVANT', 20);
+
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 
 VALUES
 	('BUILDING_EE_MANOR', 'RESOURCE_JADE',		'YIELD_CULTURE', 1),
 	('BUILDING_EE_MANOR', 'RESOURCE_JADE',		'YIELD_PRODUCTION', 2),
-
-	('BUILDING_EE_MANOR', 'RESOURCE_AMBER',		'YIELD_CULTURE', 1),
-	('BUILDING_EE_MANOR', 'RESOURCE_AMBER',		'YIELD_FAITH', 1),
 
 	('BUILDING_EE_MANOR', 'RESOURCE_PERFUME',	'YIELD_CULTURE', 1),
 	('BUILDING_EE_MANOR', 'RESOURCE_PERFUME',	'YIELD_GOLDEN_AGE_POINTS', 2),
@@ -422,34 +443,6 @@ VALUES
 	('BUILDING_EE_GUNSMITH', 'RESOURCE_COAL',		'YIELD_PRODUCTION', 1),
 	('BUILDING_EE_GUNSMITH', 'RESOURCE_COAL',		'YIELD_SCIENCE', 1);
 
-------------------------
--- Flavors
-------------------------
-
-INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
-('BUILDING_EE_ACADEMY', 'FLAVOR_SCIENCE', 20),
-('BUILDING_EE_ACADEMY', 'FLAVOR_DEFENSE', 10),
-('BUILDING_EE_SEMINARY', 'FLAVOR_RELIGION', 20),
-('BUILDING_EE_SEMINARY', 'FLAVOR_CULTURE', 10),
-('BUILDING_EE_CLOTH_MILL', 'FLAVOR_PRODUCTION', 20),
-('BUILDING_EE_CLOTH_MILL', 'FLAVOR_GOLD', 20),
-('BUILDING_EE_DRYDOCK', 'FLAVOR_NAVAL', 20),
-('BUILDING_EE_DRYDOCK', 'FLAVOR_MILITARY_TRAINING', 25),
-('BUILDING_EE_GUNSMITH', 'FLAVOR_SCIENCE', 15),
-('BUILDING_EE_GUNSMITH', 'FLAVOR_MILITARY_TRAINING', 30),
-('BUILDING_EE_MANOR', 'FLAVOR_EXPANSION', 15),
-('BUILDING_EE_SALON', 'FLAVOR_CULTURE', 35),
-('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_GOLD', 25),
-('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_SEA_TRADE_ROUTE', 20),
-('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_DESTINATION', 20),
-('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_ORIGIN', 25),
-('BUILDING_EE_MENAGERIE', 'FLAVOR_HAPPINESS', 10),
-('BUILDING_EE_MENAGERIE', 'FLAVOR_CULTURE', 20),
-('BUILDING_EE_WEIGH_HOUSE', 'FLAVOR_I_TRADE_ORIGIN', 10),
-('BUILDING_EE_TAVERN', 'FLAVOR_RECON', 25),
-('BUILDING_EE_TAVERN', 'FLAVOR_OFFENSE', 5),
-('BUILDING_EE_TAVERN', 'FLAVOR_GROWTH', 15);
-
 -----------------------------
 -- adjusting existing buildings
 -----------------------------
@@ -475,13 +468,6 @@ Cost = 1000,
 GoldMaintenance = 5
 WHERE BuildingClass = 'BUILDINGCLASS_THEATRE';
 -- see hotel_zoo_swap.sql for more
-
--- public school
-UPDATE Buildings SET
-Cost = 850,
-GoldMaintenance = 4,
-SpecialistCount = 0
-WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
 
 -- grocer (pharmacy)
 INSERT INTO Building_YieldChanges
@@ -520,6 +506,41 @@ INSERT INTO	 Building_Flavors
 SELECT	Type,	'FLAVOR_RELIGION',	5
 FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GROCER';
 
+----------------------------------
+-- Public School
+----------------------------------
+
+INSERT INTO Building_GrowthExtraYield
+	(BuildingType, YieldType, Yield)
+SELECT
+	Type, 'YIELD_SCIENCE', 25
+FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
+
+UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType = 'BUILDING_PUBLIC_SCHOOL';
+UPDATE Buildings SET
+Cost = 850,
+GoldMaintenance = 4,
+SpecialistCount = 0
+WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
+
+INSERT INTO Building_ResourceYieldChanges 
+	(BuildingType, ResourceType, YieldType, Yield) 
+VALUES
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_AMBER',	'YIELD_SCIENCE', 2),
+
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_CITRUS', 	'YIELD_FOOD', 2),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_CITRUS', 	'YIELD_SCIENCE', 1),
+
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_COW',  'YIELD_PRODUCTION', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_COW',  'YIELD_SCIENCE', 1),
+
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_WHEAT',  'YIELD_FOOD', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_WHEAT',  'YIELD_SCIENCE', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_RICE',   'YIELD_FOOD', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_RICE',   'YIELD_SCIENCE', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_MAIZE',  'YIELD_FOOD', 1),
+	('BUILDING_PUBLIC_SCHOOL', 'RESOURCE_MAIZE',  'YIELD_SCIENCE', 1);
+
 ----------------------------------------------
 -- Opera House and Gallery (rebalance)
 ----------------------------------------------
@@ -548,9 +569,6 @@ UPDATE Building_YieldChanges SET Yield = 2 WHERE BuildingType = 'BUILDING_OPERA_
 INSERT INTO Building_ResourceYieldChanges 
 	(BuildingType, ResourceType, YieldType, Yield) 
 VALUES
-	('BUILDING_OPERA_HOUSE', 'RESOURCE_MARBLE',	'YIELD_CULTURE', 1),
-	('BUILDING_OPERA_HOUSE', 'RESOURCE_MARBLE',	'YIELD_TOURISM', 1),
-
 	('BUILDING_OPERA_HOUSE', 'RESOURCE_TOBACCO',	'YIELD_CULTURE', 1),
 	('BUILDING_OPERA_HOUSE', 'RESOURCE_TOBACCO',	'YIELD_GOLD', 2),
 
@@ -568,18 +586,6 @@ VALUES
 	('BUILDING_OPERA_HOUSE', 'RESOURCE_WINE',		'YIELD_CULTURE', 1);
 
 UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType IN ('BUILDING_BROADCAST_TOWER');
-
-----------------------------------
--- Public School
-----------------------------------
-
-INSERT INTO Building_GrowthExtraYield
-	(BuildingType, YieldType, Yield)
-SELECT
-	Type, 'YIELD_SCIENCE', 25
-FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_PUBLIC_SCHOOL';
-
-UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType = 'BUILDING_PUBLIC_SCHOOL';
 
 
 

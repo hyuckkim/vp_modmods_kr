@@ -475,3 +475,39 @@ Cost Sweeps
   this should reduce game duration in techs, and make EE feel less sluggish. 
   Total science required to research all techs is still higher than VP, but 12% rather than 30%
 
+----------------
+-- v17
+----------------
+Compatibility
+-- Renamed Humanism policy to Patronage (using vanilla Branch description) to avoid conflict with the new tech
+-- Fixed problems in the Workshop/Windmill rewrite
+-- Sword UU now properly obsolete at Chemistry (not Gunpowder)
+
+Art Management
+--Combined Howitzer and Bombard into enlarged EE atlas
+--In EEVP_Other.sql the RER Longsword icon swap is readded (see lines 44-47)
+
+Buildings
+-- Moved the Merchant and Diplomat +20% rate from Polytechnic to Manor
+   reduced power of Polytechnic relative to Seminary a little, increased power of Manor
+-- Included the Public School in the Buildings which get Resource bonuses
+  allows more sensible number of bonuses on some overpopulated buildings
+  - Has Maize/Rice/Wheat and Cow, representing agricultural education
+  - Has Citrus: was given to children sometimes... it's really fascinating to read about attitudes to fruit around this time, strongly recommend
+  - Has Amber: role in natural history education
+  - Of note: Marble was moved to Workshop (early) as it cannot be a monopoly Lux
+
+Units
+-- New strategic resource unit of Grenadier added at Warships (renamed Magazines with text update)
+  has 42 strength (4 more than Fusilier similar to Tercio vs Greatsword)
+ - Has ranged support fire instead of 2hander promo (the Zulu Impi promo, which is lost on upgrade)
+  Current name "Projectile Engagement"
+ - Upgrades from Greatsword, and upgrades into WWI Infantry ("Rifleman" in game), 3 column delay both times
+  This delays the merging of the anti-mounted line to the era they disappear.
+ - Musketeer and Doppelsoldner upgrades updated (were incorrect before, also)
+-- Reverted Cossack to Cavalry (as in base VP, not earlier EE) to unstack with the Hussar
+-- Hussar text updated to reflect the fact it is a Dragoon 
+-- Adventurer need a Tavern to purchase 
+  like how Explorer need a Harbor
+
+
