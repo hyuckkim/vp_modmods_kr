@@ -44,10 +44,10 @@ UsedUserAreasWarning=no
 Name: "ko"; MessagesFile: "compiler:Languages\Korean.isl"
 
 [Files]
-Source: "..\(1L) Community Patch INT\*"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion recursesubdirs; Components: vp
-Source: "..\(2L) Vox Populi INT\*"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion recursesubdirs;	Components: vp
-Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion recursesubdirs; Components:  vp
-Source: "..\(4aL) Squads for VP INT\*"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vp
+Source: "..\(1L) Community Patch INT\*"; Excludes: "\*.civ5proj,*.civ5sln,*.civ5suo"; DestDir: "{app}\MODS\(1L) Community Patch INT"; Flags: ignoreversion recursesubdirs; Components: vp
+Source: "..\(2L) Vox Populi INT\*"; Excludes: "\*.civ5proj,*.civ5sln,*.civ5suo"; DestDir: "{app}\MODS\(2L) Vox Populi INT"; Flags: ignoreversion recursesubdirs;	Components: vp
+Source: "..\(3aL) VP - EUI Compatibility Files INT\*"; Excludes: "\*.civ5proj,*.civ5sln,*.civ5suo"; DestDir: "{app}\MODS\(3aL) VP - EUI Compatibility Files INT"; Flags: ignoreversion recursesubdirs; Components:  vp
+Source: "..\(4aL) Squads for VP INT\*"; Excludes: "\*.civ5proj,*.civ5sln,*.civ5suo"; DestDir: "{app}\MODS\(4aL) Squads for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vp
 Source: "..\(4b) Promotion Tree for VP\*"; DestDir: "{app}\MODS\(4b) Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
 Source: "..\(7) VP Community Events\*"; DestDir: "{app}\MODS\(7) VP Community Events"; Flags: ignoreversion recursesubdirs;	Components: vpc
 Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Community Events INT"; Flags: ignoreversion recursesubdirs;	Components: vpc
