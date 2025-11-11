@@ -50628,6 +50628,16 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 8 [ICON_CITY_STATE] City-States originally in the World.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CONTINENTAL_DRIFT"> 
+			<Text>
+				Continental Drift
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CONTINENTAL_DRIFT_HELP"> 
+			<Text>
+				A varied world based on plate tectonics.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_COOLDOWN_X_TURNS_REMAINING"> 
 			<Text>
 				[NEWLINE]You recently made a [ICON_GOLD] Gold purchase in this city, and must wait for {1_Num} more {1_Num: plural 1?turn; other?turns;} to do so again.
@@ -107445,14 +107455,39 @@ The ship has weather'd every rack; the prize we sought is won."
 				Amount of Tiny Islands
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ANY_CONTINENTS"> 
+			<Text>
+				Any Continents
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ARCHIPELAGO"> 
 			<Text>
 				Archipelago
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ARCTIC_OCEAN_WIDTH"> 
+			<Text>
+				Polar Ocean Size
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ARCTIC_OCEAN_WIDTH_HELP"> 
+			<Text>
+				Adjusts the size of the polar oceans at the northernmost and southernmost edge of the map.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ARID"> 
 			<Text>
 				Arid
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_AVERAGE"> 
+			<Text>
+				Average
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_BALANCED"> 
+			<Text>
+				Balanced
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_BALANCED_RESOURCES"> 
@@ -107485,6 +107520,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Center Region
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERED"> 
+			<Text>
+				Clustered
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERS"> 
 			<Text>
 				Clusters
@@ -107493,6 +107533,31 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERS_HELP"> 
 			<Text>
 				Fractal-style mountain ranges: large, fat clusters, but fewer of them.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_COASTAL_START"> 
+			<Text>
+				Force Coastal Start
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_COASTAL_START_HELP"> 
+			<Text>
+				Force every civilization to start on coast, if possible.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTIGUOUS"> 
+			<Text>
+				Contiguous
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS"> 
+			<Text>
+				Land Cohesion
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS_HELP"> 
+			<Text>
+				Affects how much land plates cluster. A high level of land cohesion will result in a map with few, large continents. A low level of land cohesion will lead to a map with a higher amount of smaller landmasses.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS_SIZE"> 
@@ -107555,6 +107620,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				Extras
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_EXTREME"> 
+			<Text>
+				Extreme
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FAST"> 
+			<Text>
+				Fast
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FEW"> 
+			<Text>
+				Few
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_FEW_TINY_ISLANDS"> 
 			<Text>
 				Few Tiny Islands
@@ -107598,6 +107678,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_FOUR_PER_CONTINENT_HELP"> 
 			<Text>
 				A map template will be chosen that includes exactly four major continents.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FRAGMENTED"> 
+			<Text>
+				Fragmented
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_GLOBAL_CLIMATE"> 
@@ -107645,6 +107730,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Islands
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ISLANDS_HELP"> 
+			<Text>
+				Affects how many small islands are generated.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ISLANDS_MIXED_IN"> 
 			<Text>
 				Islands Mixed In
@@ -107675,14 +107765,29 @@ The ship has weather'd every rack; the prize we sought is won."
 				Jungle
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LAND"> 
+			<Text>
+				Land Amount
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LANDMASS_TYPE"> 
 			<Text>
 				Landmass Type
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LAND_HELP"> 
+			<Text>
+				Changes the total amount of land on the map.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LAND_SHAPE"> 
 			<Text>
 				Land Shape
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LARGEST_LANDMASS"> 
+			<Text>
+				Largest Landmass
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LARGE_CONTINENTS"> 
@@ -107715,6 +107820,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Legendary Start
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LESS"> 
+			<Text>
+				Less
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LOGICAL"> 
 			<Text>
 				Logical
@@ -107733,6 +107843,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_MANY_TINY_ISLANDS"> 
 			<Text>
 				Many Tiny Islands
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MAP_RATIO"> 
+			<Text>
+				Map Ratio
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_MAZE_WIDTH"> 
@@ -107760,6 +107875,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Moderate
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MORE"> 
+			<Text>
+				More
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_MOUNTAINS"> 
 			<Text>
 				Mountains
@@ -107773,6 +107893,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_MOUNTAIN_PATTERN"> 
 			<Text>
 				Mountain Pattern
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MUCH_MORE"> 
+			<Text>
+				Much More
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_NARROW"> 
+			<Text>
+				Narrow
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_NARROW_CONTINENTS"> 
@@ -107798,6 +107928,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_NO"> 
 			<Text>
 				No
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_NONE"> 
+			<Text>
+				None
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_NORMAL"> 
@@ -107835,6 +107970,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Ocean
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_OCEAN_RIFTS"> 
+			<Text>
+				Ocean Rifts
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_OCEAN_RIFTS_HELP"> 
+			<Text>
+				If this option is enabled, the map will be divided into two parts separated by meridional ocean rifts.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ONE_PER_CONTINENT"> 
 			<Text>
 				One per Continent
@@ -107858,6 +108003,26 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_PANGAEA"> 
 			<Text>
 				Pangaea
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATES"> 
+			<Text>
+				Number of Plates
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATES_HELP"> 
+			<Text>
+				Affects the number of tectonic plates that will be used in map generation. More plates will result in more intricate structures.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATE_MOTION"> 
+			<Text>
+				Plate Motion
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATE_MOTION_HELP"> 
+			<Text>
+				Affects the speed at which plates move. Faster speed will result in higher and more frequent mountain ranges and in deeper ocean rifts.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_PLOTS_WIDE_FIVE"> 
@@ -107915,6 +108080,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Rainfall
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RAMMING_SPEED"> 
+			<Text>
+				Ramming Speed!
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_RANDOM"> 
 			<Text>
 				Random
@@ -107928,6 +108098,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_RANGES_HELP"> 
 			<Text>
 				Fractal-style mountain ranges: medium, snaky and highly random.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RECTANGULAR"> 
+			<Text>
+				Rectangular (Standard)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RECTILINEAR"> 
+			<Text>
+				Rectilinear
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_REFLECTION"> 
@@ -108020,6 +108200,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				Severity of Desert Region
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SHALLOW"> 
+			<Text>
+				Shallow
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_SIX_PER_CONTINENT"> 
 			<Text>
 				6
@@ -108028,6 +108213,66 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_SIX_PER_CONTINENT_HELP"> 
 			<Text>
 				A map template will be chosen that includes exactly six major continents.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_100"> 
+			<Text>
+				Normal - 100%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_105"> 
+			<Text>
+				Plus - 105%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_110"> 
+			<Text>
+				Extra - 110%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_115"> 
+			<Text>
+				Super - 115%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_120"> 
+			<Text>
+				Gigantic - 120%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_80"> 
+			<Text>
+				Compressed - 80%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_85"> 
+			<Text>
+				Squeezed - 85%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_90"> 
+			<Text>
+				Reduced - 90%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_95"> 
+			<Text>
+				Smaller - 95%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_MODIFIER"> 
+			<Text>
+				Size Modifier
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_MODIFIER_HELP"> 
+			<Text>
+				Alters the map size. This also affects the total amount of land.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SLOW"> 
+			<Text>
+				Slow
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_SMALL_CONTINENTS"> 
@@ -108070,6 +108315,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Spoke Width
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SQUARED"> 
+			<Text>
+				Squared
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SQUARISH"> 
+			<Text>
+				Squarish
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_STANDARD"> 
 			<Text>
 				Standard
@@ -108078,6 +108333,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_START_ANYWHERE"> 
 			<Text>
 				Start Anywhere
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_START_PLACEMENT"> 
+			<Text>
+				Start Placement
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_START_PLACEMENT_HELP"> 
+			<Text>
+				Choose the regional division method that affects the start placement for major civilizations.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_START_SEPERATED"> 
@@ -108135,6 +108400,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				A map template will be chosen that includes exactly three major continents.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_TIGHT"> 
+			<Text>
+				Tight
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_TINY_ISLANDS"> 
 			<Text>
 				Tiny Islands
@@ -108180,9 +108450,19 @@ The ship has weather'd every rack; the prize we sought is won."
 				Wet
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE"> 
+			<Text>
+				Wide
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE_CONTINENTS"> 
 			<Text>
 				Wide Continents
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE_RECTANGULAR"> 
+			<Text>
+				Wide Rectangular
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_WITHOUT_OCEANS"> 
@@ -108198,6 +108478,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_WORLD_WRAP"> 
 			<Text>
 				World Wrap
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_YES"> 
+			<Text>
+				Yes
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_YES_10_CIVS_MAX"> 
@@ -192676,7 +192961,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MAUSOLEUM_HELP"> 
 			<Text>
-				적 유닛을 처치할 때 [ICON_PEACE]신앙을 [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 모든 성지의 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [ICON_PEACE]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 감소하고, [COLOR_POSITIVE_TEXT개혁 교리[ENDCOLOR]를 선택할 수 있습니다. 도시의 [ICON_RELIGION]종교 압력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가하고 개종에 대한 도시의 저항이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]성도[ENDCOLOR]에만 건설할 수 있습니다. 전 세계에 당신 문명의 종교를 따르는 신도 수가 적어도 15% 이상 있어야 합니다.
+				적 유닛을 처치할 때 [ICON_PEACE]신앙을 [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR] 제공합니다. 모든 성지의 [ICON_PEACE]신앙이 [COLOR_POSITIVE_TEXT]5[ENDCOLOR] 증가합니다. [ICON_PEACE]종교 분쟁에서 오는 [ICON_HAPPINESS_3]불행이 감소하고, [COLOR_POSITIVE_TEXT]개혁 교리[ENDCOLOR]를 선택할 수 있습니다. 도시의 [ICON_RELIGION]종교 압력이 [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] 증가하고 개종에 대한 도시의 저항이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다. [NEWLINE][NEWLINE][COLOR_YELLOW]성도[ENDCOLOR]에만 건설할 수 있습니다. 전 세계에 당신 문명의 종교를 따르는 신도 수가 적어도 15% 이상 있어야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MAUSOLEUM_STRATEGY"> 
@@ -236417,6 +236702,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CONSULATE_HELP"> 
 			<Text>
 				세계의 원래 도시 국가 8개마다 세계 의회 추가 [ICON_DIPLOMAT] 대표단을 1명 확보합니다.[NEWLINE][NEWLINE][COLOR_YELLOW]세계 의회 결의안[ENDCOLOR]으로 비준되어야만 건설할 수 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CONTINENTAL_DRIFT"> 
+			<Text>
+				대륙 이동설
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CONTINENTAL_DRIFT_HELP"> 
+			<Text>
+				판구조론에 따른 다양한 세계.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_COOLDOWN_X_TURNS_REMAINING"> 
@@ -295429,14 +295724,39 @@ The ship has weather'd every rack; the prize we sought is won."
 				초소형 섬의 수
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ANY_CONTINENTS"> 
+			<Text>
+				모든 대륙
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ARCHIPELAGO"> 
 			<Text>
 				군도
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ARCTIC_OCEAN_WIDTH"> 
+			<Text>
+				극지방 해양 크기
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ARCTIC_OCEAN_WIDTH_HELP"> 
+			<Text>
+				지도의 가장 북쪽과 가장 남쪽 가장자리에 있는 극지방 해양의 크기를 조정합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ARID"> 
 			<Text>
 				적음
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_AVERAGE"> 
+			<Text>
+				평균
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_BALANCED"> 
+			<Text>
+				균형잡힘
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_BALANCED_RESOURCES"> 
@@ -295469,6 +295789,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				중앙 지역
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERED"> 
+			<Text>
+				떼를 지음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERS"> 
 			<Text>
 				밀집도
@@ -295477,6 +295802,31 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_CLUSTERS_HELP"> 
 			<Text>
 				프랙탈형 산맥입니다. 크고 빽빽하지만 그 수가 적습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_COASTAL_START"> 
+			<Text>
+				강제 해안 시작
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_COASTAL_START_HELP"> 
+			<Text>
+				가능하다면 모든 문명이 해안에서 시작하도록 합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTIGUOUS"> 
+			<Text>
+				연속적임
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS"> 
+			<Text>
+				토지 응집력
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS_HELP"> 
+			<Text>
+				육지판이 얼마나 밀집되는지에 영향을 미칩니다. 높은 수준의 토지 응집력은 소수의 큰 대륙으로 구성된 지도를 만들어냅니다. 토지 응집력이 낮으면 지도에 작은 육지가 더 많이 나타나게 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_CONTINENTS_SIZE"> 
@@ -295539,6 +295889,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				기타
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_EXTREME"> 
+			<Text>
+				극심
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FAST"> 
+			<Text>
+				빠름
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FEW"> 
+			<Text>
+				약간
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_FEW_TINY_ISLANDS"> 
 			<Text>
 				아주 약간의 초소형 섬
@@ -295582,6 +295947,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_FOUR_PER_CONTINENT_HELP"> 
 			<Text>
 				정확하게 4개의 주요 대륙이 있는 지도를 선택합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_FRAGMENTED"> 
+			<Text>
+				조각남
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_GLOBAL_CLIMATE"> 
@@ -295629,6 +295999,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				섬
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_ISLANDS_HELP"> 
+			<Text>
+				생성되는 작은 섬의 수에 영향을 미칩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ISLANDS_MIXED_IN"> 
 			<Text>
 				섞인 섬
@@ -295659,14 +296034,29 @@ The ship has weather'd every rack; the prize we sought is won."
 				정글
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LAND"> 
+			<Text>
+				토지 면적
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LANDMASS_TYPE"> 
 			<Text>
 				땅의 종류
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LAND_HELP"> 
+			<Text>
+				지도에 표시된 토지의 총 면적을 변경합니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LAND_SHAPE"> 
 			<Text>
 				땅의 형태
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LARGEST_LANDMASS"> 
+			<Text>
+				가장 큰 육지
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LARGE_CONTINENTS"> 
@@ -295699,6 +296089,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				전설적인 시작
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_LESS"> 
+			<Text>
+				적음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_LOGICAL"> 
 			<Text>
 				논리적
@@ -295717,6 +296112,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_MANY_TINY_ISLANDS"> 
 			<Text>
 				많은 초소형 섬
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MAP_RATIO"> 
+			<Text>
+				지도 비율
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_MAZE_WIDTH"> 
@@ -295744,6 +296144,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				적당
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MORE"> 
+			<Text>
+				많음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_MOUNTAINS"> 
 			<Text>
 				산맥
@@ -295757,6 +296162,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_MOUNTAIN_PATTERN"> 
 			<Text>
 				산맥의 패턴
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_MUCH_MORE"> 
+			<Text>
+				훨씬 많음
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_NARROW"> 
+			<Text>
+				좁음
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_NARROW_CONTINENTS"> 
@@ -295780,6 +296195,11 @@ The ship has weather'd every rack; the prize we sought is won."
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_NO"> 
+			<Text>
+				없음
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_NONE"> 
 			<Text>
 				없음
 			</Text>
@@ -295819,6 +296239,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				바다
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_OCEAN_RIFTS"> 
+			<Text>
+				해양 균열
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_OCEAN_RIFTS_HELP"> 
+			<Text>
+				이 설정을 활성화하면 지도가 경도 해양 균열에 의해 두 부분으로 나뉩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_ONE_PER_CONTINENT"> 
 			<Text>
 				대륙당 하나
@@ -295842,6 +296272,26 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_PANGAEA"> 
 			<Text>
 				판게아
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATES"> 
+			<Text>
+				판의 수
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATES_HELP"> 
+			<Text>
+				지도 생성에 사용될 지각판의 수에 영향을 미칩니다. 판이 많아질수록 구조는 더욱 복잡해집니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATE_MOTION"> 
+			<Text>
+				판 운동
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_PLATE_MOTION_HELP"> 
+			<Text>
+				판의 이동 속도에 영향을 미칩니다. 이동 속도가 빨라질수록 산맥의 높이와 빈도가 높아지고, 해저 균열도 더 깊어집니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_PLOTS_WIDE_FIVE"> 
@@ -295899,6 +296349,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				강수량
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RAMMING_SPEED"> 
+			<Text>
+				충돌 속도!
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_RANDOM"> 
 			<Text>
 				무작위
@@ -295912,6 +296367,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_RANGES_HELP"> 
 			<Text>
 				프랙탈형 산맥입니다. 중간 크기에 뱀 같은 모양을 하고 있으며 무작위성이 강합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RECTANGULAR"> 
+			<Text>
+				직사각형 (표준)
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_RECTILINEAR"> 
+			<Text>
+				직선
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_REFLECTION"> 
@@ -296004,6 +296469,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				사막 지역의 정도
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SHALLOW"> 
+			<Text>
+				얕음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_SIX_PER_CONTINENT"> 
 			<Text>
 				6
@@ -296012,6 +296482,66 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_SIX_PER_CONTINENT_HELP"> 
 			<Text>
 				정확하게 6개의 주요 대륙이 있는 지도를 선택합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_100"> 
+			<Text>
+				보통 - 100%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_105"> 
+			<Text>
+				더함 - 105%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_110"> 
+			<Text>
+				추가 - 110%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_115"> 
+			<Text>
+				대단 - 115%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_120"> 
+			<Text>
+				거대 - 120%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_80"> 
+			<Text>
+				압축 - 80%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_85"> 
+			<Text>
+				압착 - 85%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_90"> 
+			<Text>
+				줄임 - 90%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_95"> 
+			<Text>
+				작은 - 95%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_MODIFIER"> 
+			<Text>
+				크기 수정자
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SIZE_MODIFIER_HELP"> 
+			<Text>
+				지도 크기를 변경합니다. 이는 또한 토지의 총 면적에 영향을 미칩니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SLOW"> 
+			<Text>
+				느림
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_SMALL_CONTINENTS"> 
@@ -296054,6 +296584,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				살 너비
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SQUARED"> 
+			<Text>
+				정사각형
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_SQUARISH"> 
+			<Text>
+				거의 정사각형
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_STANDARD"> 
 			<Text>
 				보통
@@ -296062,6 +296602,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_START_ANYWHERE"> 
 			<Text>
 				아무 곳에서나 시작
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_START_PLACEMENT"> 
+			<Text>
+				시작 배치
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_START_PLACEMENT_HELP"> 
+			<Text>
+				주요 문명의 시작 위치에 영향을 미치는 지역 구분 방법을 선택합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_START_SEPERATED"> 
@@ -296119,6 +296669,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				정확하게 3개의 주요 대륙이 있는 지도를 선택합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_TIGHT"> 
+			<Text>
+				딱 붙음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_TINY_ISLANDS"> 
 			<Text>
 				초소형 군도
@@ -296164,9 +296719,19 @@ The ship has weather'd every rack; the prize we sought is won."
 				많음
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE"> 
+			<Text>
+				넓음
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE_CONTINENTS"> 
 			<Text>
 				넓은 대륙
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_WIDE_RECTANGULAR"> 
+			<Text>
+				넓은 직사각형
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_WITHOUT_OCEANS"> 
@@ -296182,6 +296747,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MAP_OPTION_WORLD_WRAP"> 
 			<Text>
 				세계의 외피
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MAP_OPTION_YES"> 
+			<Text>
+				예
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MAP_OPTION_YES_10_CIVS_MAX"> 
@@ -355685,7 +356255,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP"> 
 			<Text>
-				경전차를 대체하는 아라비아의 고유 유닛입니다. 경전차보다 빨리 쓸 수 있으며 [ICON_RES_ALUMINUM]알루미늄을 필요로 하지 않습니다. 사막에서 더 빠르고 강해집니다. 타일을 약탈할때 [ICON_MOVES]이동력을 소비하지 않고, 인접한 적 유닛에게 추가 피해를 입힙니다.
+				기관포장갑차를 대체하는 아라비아의 고유 유닛입니다. 기관포장갑차보다 빨리 쓸 수 있으며 [ICON_RES_COAL][COLOR_YELLOW] 석탄[ENDCOLOR]을 필요로 하지 않습니다. 사막에서 더 빠르고 강해집니다. 타일을 약탈할 때 [ICON_ARROW_RIGHT]이동력을 소비하지 않고, 인접한 적 유닛에게 추가 피해를 입힙니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY"> 
@@ -356366,7 +356936,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP"> 
 			<Text>
-				산병을 대체하는 켈트의 고유 유닛입니다. 근접 유닛과 궁병 유닛에 더 강력합니다. 이동 후 새로 인접한 적 유닛에 피해를 줍니다. 산병보다 이동력이 더 적고 험지에서 이동력 페널티를 받습니다.
+				기마궁수를 대체하는 켈트의 고유 유닛입니다. 근접 유닛과 궁병 유닛에 더 강력합니다. 이동 후 새로 인접한 적 유닛에 피해를 줍니다. 산병보다 이동력이 더 적고 험지에서 이동력 페널티를 받습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY"> 
@@ -360810,12 +361380,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_HELP"> 
 			<Text>
-				중산병을 대체하는 폴란드의 고유 유닛입니다. 중산병보다 공격과 방어에 더 강하고, 원거리 공격에는 추가로 방어 보너스를 받습니다. 적 유닛을 처치할때마다 [ICON_PEACE]신앙을 획득하며 야만인을 처치하면 2배로 받습니다.
+				경궁기병을 대체하는 폴란드의 고유 유닛입니다. 경궁기병보다 공격과 방어에 더 강하고, 원거리 공격에는 추가로 방어보너스를 받습니다. 적 유닛을 처치할때마다 [ICON_PEACE]신앙을 획득하며 야만인을 처치하면 2배로 받습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY"> 
 			<Text>
-				판체르니는 중산병의 폴란드 대체유닛입니다. 중산병보다 공격력과 방어력이 강하고 원거리 공격으로부터 받는 피해가 적습니다. 판체르니는 또한 적을 처치할 때마다 신앙을 얻습니다. 기마 유닛인 판체르니는 장창병에게 취약합니다.
+				판체르니는 경궁기병의 폴란드 대체유닛입니다. 경궁기병보다 공격력과 방어력이 강하고 원거리 공격으로부터 받는 피해가 적습니다. 판체르니는 또한 적을 처치할 때마다 신앙을 얻습니다. 기마 유닛인 판체르니는 장창병에게 취약합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_POLAND_PANCERNY_TEXT"> 
@@ -361143,7 +361713,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP"> 
 			<Text>
-				테르시오를 대체하는 쇼쇼니의 고유 유닛입니다. [COLOR_PLAYER_PURPLE]진형 I[ENDCOLOR] 승급을 가지고 시작하며, 피해를 입을수록 [ICON_STRENGTH]전투력이 상승하고, 요새화하면 [ICON_STRENGTH]전투 보너스가 2배가 됩니다.
+				창총보병을 대체하는 쇼쇼니의 고유 유닛입니다. [COLOR_POSITIVE_TEXT]진형 I[ENDCOLOR] 승급을 가지고 시작하며, 피해를 입을수록 [ICON_STRENGTH]전투력이 상승하고, 요새화하면 [ICON_STRENGTH]전투 보너스가 2배가 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY"> 
