@@ -1,4 +1,3 @@
-print("Loading DummyBuildingsForWonders.lua from MWfVP")
 --------------------------------------------------------------
 -- Orginal script for Kronborg was created by LeeS 
 -- Dec 13, 2017: Retrofitted for Vox Populi, Infixo
@@ -6,8 +5,18 @@ print("Loading DummyBuildingsForWonders.lua from MWfVP")
 --------------------------------------------------------------
 local eUnitClassCaravan = GameInfoTypes.UNITCLASS_CARAVAN
 local eUnitClassCargo = GameInfoTypes.UNITCLASS_CARGO_SHIP
-local eClassWalls = "BUILDINGCLASS_WALLS"
 
+local eBuildingClassWalls = GameInfoTypes.BUILDINGCLASS_WALLS
+local eBuildingClassTemple = GameInfoTypes.BUILDINGCLASS_TEMPLE
+
+local eDomainSea = GameInfoTypes.DOMAIN_SEA
+
+local ePromotionSanboAir = GameInfoTypes.PROMOTION_SANBO_AIR
+local ePromotionSanboAirEffect = GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT
+--------------------------------------------------------------
+local iCoastMinArea = 10
+local iSanboLifeThreshold = 20
+--------------------------------------------------------------
 local g_tWorldWonder = {
 	GameInfoTypes["BUILDING_CHEVALIERS"],
 	GameInfoTypes["BUILDING_ITSUKUSHIMA"],
@@ -15,7 +24,7 @@ local g_tWorldWonder = {
 	GameInfoTypes["BUILDING_GATE_OF_SUN"],
 	GameInfoTypes["BUILDING_GREAT_ZIMBABWE"],
 	GameInfoTypes["BUILDING_KILWA_KISIWANI"],
-	GameInfoTypes["BUILDING_MARAE"],
+	GameInfoTypes["BUILDING_MARAE_ARAHURAHU"],
 	GameInfoTypes["BUILDING_KUK"],
 	GameInfoTypes["BUILDING_ST_PETERS"],
 	GameInfoTypes["BUILDING_PANAMA_CANAL"],
@@ -29,7 +38,11 @@ local g_tWorldWonder = {
 	GameInfoTypes["BUILDING_MUSEUM_ISLAND"],
 	GameInfoTypes["BUILDING_CURIOSITY"],
 	GameInfoTypes["BUILDING_SEED_VAULT"],
-	GameInfoTypes["BUILDING_TEMBLEQUE"]
+	GameInfoTypes["BUILDING_TEMBLEQUE"],
+	GameInfoTypes["BUILDING_ANGKOR_WAT"],
+	GameInfoTypes["BUILDING_TLACHIHUALTEPETL"],
+	GameInfoTypes["BUILDING_HOSPITALLER"],
+	GameInfoTypes["BUILDING_SONGYUE"]
 }
 
 local g_tWorldWonderDummy = {
@@ -39,7 +52,7 @@ local g_tWorldWonderDummy = {
 	GameInfoTypes["BUILDING_GATE_OF_SUN_DUMMY"],
 	GameInfoTypes["BUILDING_GREAT_ZIMBABWE_DUMMY"],
 	GameInfoTypes["BUILDING_KILWA_KISIWANI_DUMMY"],
-	GameInfoTypes["BUILDING_MARAE_DUMMY"],
+	GameInfoTypes["BUILDING_MARAE_ARAHURAHU_DUMMY"],
 	GameInfoTypes["BUILDING_KUK_DUMMY"],
 	GameInfoTypes["BUILDING_ST_PETERS_DUMMY"],
 	GameInfoTypes["BUILDING_PANAMA_CANAL_DUMMY"],
@@ -53,7 +66,11 @@ local g_tWorldWonderDummy = {
 	GameInfoTypes["BUILDING_MUSEUM_ISLAND_DUMMY"],
 	GameInfoTypes["BUILDING_CURIOSITY_DUMMY"],
 	GameInfoTypes["BUILDING_SEED_VAULT_DUMMY"],
-	GameInfoTypes["BUILDING_TEMBLEQUE_DUMMY"]
+	GameInfoTypes["BUILDING_TEMBLEQUE_DUMMY"],
+	GameInfoTypes["POLICY_ANGKOR_WAT_DUMMY"],		-- POLICY!!!
+	GameInfoTypes["POLICY_TLACHIHUALTEPETL_DUMMY"], -- POLICY!!!
+	GameInfoTypes["BUILDING_HOSPITALLER_DUMMY"],
+	GameInfoTypes["BUILDING_SONGYUE_DUMMY"]
 }
 
 local g_iWonderWithDummies = #g_tWorldWonderDummy
@@ -70,29 +87,69 @@ local g_tWorldWonderExists = {}
 	end
 
 local g_tWorldWonderOwner = {}
-
--- Chevaliers (1)
--- Itsukushima (2)
--- Qalhat (3)
--- Gate of the Sun (4)
--- Great Zimbabwe (5)
--- Kilwa Kisiwani (6)
--- Marae Arahurahu (7)
--- Kuk Swamp (8)
--- St. Peter's Basilica (9)
--- Panama Canal (10)
--- Palm Jumeirah (11)
--- Arecibo Observatory (12)
--- Rockefeller Center (13)
--- Darjeeling Himalayan Railway (14)
--- Sanbo Honbu (15)
--- Autobahn (16)
--- Interstate (17)
--- Museum Island (18)
--- Curiosity Rover (19)
--- Svalbard Global Seed Vault (20)
--- Aqueduct of Padre Tembleque (21)
-
+--------------------------------------------------------------
+--------------------------------------------------------------
+-- Kuk Swamp 						(8)		NEOLITHIC
+-- Angkor Wat 						(22)		CLASSICAL
+-- Gate of the Sun 					(4)			CLASSICAL
+-- Songyue Pagoda 					(25)		CLASSICAL
+-- Great Zimbabwe 					(5)				MEDIEVAL
+-- Itsukushima Shrine 				(2)				MEDIEVAL
+-- Knight's Hospitaller 			(24)			MEDIEVAL
+-- Krak des Chevaliers 				(1)				MEDIEVAL
+-- Qalhat 							(3)				MEDIEVAL
+-- Tlachihualtepetl 				(23)			MEDIEVAL
+-- Aqueduct of Padre Tembleque 		(21)				RENAISSANCE
+-- Kilwa Kisiwani 					(6)					RENAISSANCE
+-- Marae Arahurahu 					(7)					RENAISSANCE
+-- St. Peter's Basilica 			(9)					RENAISSANCE
+-- Darjeeling Himalayan Railway 	(14)					INDUSTRIAL
+-- Museum Island 					(18)					INDUSTRIAL
+-- Panama Canal 					(10)					INDUSTRIAL
+-- Autobahn 						(16)						MODERN
+-- Interstate Highway System 		(17)						MODERN
+-- Rockefeller Center 				(13)						MODERN
+-- Sanbo Honbu 						(15)						MODERN
+-- Arecibo Observatory 				(12)							ATOMIC
+-- Curiosity Rover 					(19)								INFORMATION
+-- Palm Jumeirah 					(11)								INFORMATION
+-- Svalbard Global Seed Vault 		(20)								INFORMATION
+--------------------------------------------------------------
+-- CODED WITH POLICY:
+	-- Angkor Wat 						(22)	faith_purchase_of_diplomatic_units
+	-- Tlachihualtepetl 				(23)	global_yields_from_constructions
+-- REQUIRES OTHER BASIC BUILDING:
+	-- Gate of the Sun 					(4)		global_modifiers_to_cities_with_walls
+	-- Knight's Hospitaller 			(24)	global_unit_healing_from_cities_with_temple
+-- REQUIRES COASTAL/NON-COASTAL CITY:
+	-- Krak des Chevaliers 				(1)		different_bonuses_in_non_coastal_cities	
+	-- Itsukushima Shrine 				(2)		border_growth_boost_in_coastal_cities/yields_to_atolls_in_coastal_cities
+	-- Panama Canal 					(10)	global_bonuses_to_sea_tr_in_coastal_cities/global_yields_to_tr_owners_in_coastal_cities
+-- COUNTS TRADE ROUTES:	
+	-- Qalhat 							(3)		global_bonus_to_sea_tr_from_majors
+	-- Great Zimbabwe 					(5)		global_yields_per_tr/global_production_modifiers_per_tr
+-- COUNTS RESEARCH AGREEMENTS:	
+	-- Curiosity Rover 					(19)	global_yields_from_research_agreements
+-- ADDS ADDITIONAL PROMOTIONS:
+	-- Marae Arahurahu 					(7)		second_free_promotion
+	-- Sanbo Honbu 						(15)	second_and_third_free_promotion
+-- MUST BE BUILT IN EVERY PLAYER CITY:
+	-- Kuk Swamp 						(8)		global_yields_from_tech/global_yields_to_marsh
+	-- Palm Jumeirah 					(11)	global_yields_to_atolls
+	-- Arecibo Observatory 				(12)	global_yields_from_mountains
+	-- Rockefeller Center 				(13)	global_yields/global_yields_from_gold_purchases
+	-- Darjeeling Himalayan Railway 	(14)	global_yields_from_mountains
+	-- Autobahn 						(16)	global_defense
+	-- Interstate Highway System 		(17)	global_population_increase
+	-- Museum Island 					(18)	global_great_person_modifiers
+	-- Svalbard Global Seed Vault 		(20)	global_yields_from_growth
+	-- Aqueduct of Padre Tembleque 		(21)	global_yields_from_faith_purchases
+	-- Songyue Pagoda 					(25)	global_yields_from_faith_purchases
+-- CAN BE BUILT LOCALLY:
+	-- Kilwa Kisiwani 					(6)		global_yields_to_strategic_and_luxury_resources
+	-- St. Peter's Basilica 			(9)		happiness_to_all_religious_buildings
+--------------------------------------------------------------
+--------------------------------------------------------------
 -- load game and check if they are built
 function WasWonderAlreadyBuilt()
 	for i = 0, GameDefines.MAX_MAJOR_CIVS - 1, 1 do
@@ -114,6 +171,7 @@ Events.LoadScreenClose.Add(WasWonderAlreadyBuilt)
 
 -- check if wonder was built
 function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith) 
+	-- Krak des Chevaliers (1)
 	if not g_tWorldWonderExists[1] then	
 		if eBuilding == g_tWorldWonder[1] then
 			g_tWorldWonderExists[1] = true
@@ -122,13 +180,14 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 			local pPlayer = Players[ePlayer]
 		
 			for city in pPlayer:Cities() do
-				if not city:IsCoastal(10) and not city:IsHasBuilding(g_tWorldWonder[1]) then
+				if not city:IsCoastal(iCoastMinArea) and not city:IsHasBuilding(g_tWorldWonder[1]) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[1], 1)
 				end
 			end
 		end
 	end
 
+	-- Itsukushima Shrine (2)
 	if not g_tWorldWonderExists[2] then	
 		if eBuilding == g_tWorldWonder[2] then
 			g_tWorldWonderExists[2] = true
@@ -137,13 +196,14 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 			local pPlayer = Players[ePlayer]
 		
 			for city in pPlayer:Cities() do
-				if city:IsCoastal(10) then
+				if city:IsCoastal(iCoastMinArea) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[2], 1)
 				end
 			end
 		end
 	end
 
+	-- Qalhat (3)
 	if not g_tWorldWonderExists[3] then
 		if eBuilding == g_tWorldWonder[3] then
 			g_tWorldWonderExists[3] = true
@@ -159,7 +219,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 						if ((tradeRoute.FromID == ePlayer and not Players[tradeRoute.ToID]:IsMinorCiv()) 
 						or (tradeRoute.ToID == ePlayer and not Players[tradeRoute.FromID]:IsMinorCiv())) 
 						and tradeRoute.FromID ~= tradeRoute.ToID 
-						and tradeRoute.Domain == GameInfoTypes.DOMAIN_SEA then
+						and tradeRoute.Domain == eDomainSea then
 							iSeaTradeRoutesWithMajors = iSeaTradeRoutesWithMajors + 1
 						end
 					end
@@ -195,6 +255,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Gate of the Sun (4)
 	if eBuilding == g_tWorldWonder[4] then
 		g_tWorldWonderExists[4] = true
 		g_tWorldWonderOwner[4] = ePlayer
@@ -202,8 +263,8 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		local pPlayer = Players[ePlayer]
 		
 		for city in pPlayer:Cities() do
-			for building in GameInfo.Buildings{BuildingClass=eClassWalls} do	
-				if city:IsHasBuilding(building.Type) then
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassWalls} do	
+				if city:IsHasBuilding(building.ID) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[4], 1)
 					break
 				end
@@ -211,7 +272,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	else
 		if g_tWorldWonderExists[4] and g_tWorldWonderOwner[4] == ePlayer then
-			for building in GameInfo.Buildings{BuildingClass=eClassWalls} do
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassWalls} do
 				if eBuilding == building.ID then
 					local pPlayer = Players[ePlayer]
 					local pCity = pPlayer:GetCityByID(eCity)
@@ -223,6 +284,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Great Zimbabwe (5)
 	if not g_tWorldWonderExists[5] then
 		if eBuilding == g_tWorldWonder[5] then
 			g_tWorldWonderExists[5] = true
@@ -246,6 +308,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Kilwa Kisiwani (6)
 	if not g_tWorldWonderExists[6] then	
 		if eBuilding == g_tWorldWonder[6] then
 			g_tWorldWonderExists[6] = true
@@ -258,6 +321,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Marae Arahurahu (7)
 	if not g_tWorldWonderExists[7] then	
 		if eBuilding == g_tWorldWonder[7] then
 			g_tWorldWonderExists[7] = true
@@ -270,6 +334,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Kuk Swamp (8)
 	if not g_tWorldWonderExists[8] then	
 		if eBuilding == g_tWorldWonder[8] then
 			g_tWorldWonderExists[8] = true
@@ -283,6 +348,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- St. Peter's Basilica (9)
 	if not g_tWorldWonderExists[9] then	
 		if eBuilding == g_tWorldWonder[9] then
 			g_tWorldWonderExists[9] = true
@@ -295,6 +361,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Panama Canal (10)
 	if not g_tWorldWonderExists[10] then	
 		if eBuilding == g_tWorldWonder[10] then
 			g_tWorldWonderExists[10] = true
@@ -303,13 +370,14 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 			local pPlayer = Players[ePlayer]
 		
 			for city in pPlayer:Cities() do
-				if city:IsCoastal(10) then
+				if city:IsCoastal(iCoastMinArea) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[10], 1)
 				end
 			end
 		end
 	end
 
+	-- Palm Jumeirah (11)
 	if not g_tWorldWonderExists[11] then	
 		if eBuilding == g_tWorldWonder[11] then
 			g_tWorldWonderExists[11] = true
@@ -323,6 +391,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Arecibo Observatory (12)
 	if not g_tWorldWonderExists[12] then	
 		if eBuilding == g_tWorldWonder[12] then
 			g_tWorldWonderExists[12] = true
@@ -336,6 +405,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 	
+	-- Rockefeller Center (13)
 	if not g_tWorldWonderExists[13] then	
 		if eBuilding == g_tWorldWonder[13] then
 			g_tWorldWonderExists[13] = true
@@ -349,6 +419,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 	
+	-- Darjeeling Himalayan Railway (14)
 	if not g_tWorldWonderExists[14] then	
 		if eBuilding == g_tWorldWonder[14] then
 			g_tWorldWonderExists[14] = true
@@ -362,6 +433,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Sanbo Honbu (15)
 	if not g_tWorldWonderExists[15] then	
 		if eBuilding == g_tWorldWonder[15] then
 			g_tWorldWonderExists[15] = true
@@ -371,13 +443,11 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 			local pCity = pPlayer:GetCityByID(eCity)
 
 			pCity:SetNumRealBuilding(g_tWorldWonderDummy[15], 1)
-
-			if g_tWorldWonderDummy2[15] then
-				pCity:SetNumRealBuilding(g_tWorldWonderDummy2[15], 1)
-			end
+			pCity:SetNumRealBuilding(g_tWorldWonderDummy2[15], 1)
 		end
 	end
 	
+	-- Autobahn (16)
 	if not g_tWorldWonderExists[16] then	
 		if eBuilding == g_tWorldWonder[16] then
 			g_tWorldWonderExists[16] = true
@@ -391,6 +461,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 	
+	-- Interstate Highway System (17)
 	if not g_tWorldWonderExists[17] then	
 		if eBuilding == g_tWorldWonder[17] then
 			g_tWorldWonderExists[17] = true
@@ -404,6 +475,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Museum Island (18)
 	if not g_tWorldWonderExists[18] then	
 		if eBuilding == g_tWorldWonder[18] then
 			g_tWorldWonderExists[18] = true
@@ -417,6 +489,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Curiosity Rover (19)
 	if not g_tWorldWonderExists[19] then	
 		if eBuilding == g_tWorldWonder[19] then
 			g_tWorldWonderExists[19] = true
@@ -445,6 +518,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Svalbard Global Seed Vault (20)
 	if not g_tWorldWonderExists[20] then	
 		if eBuilding == g_tWorldWonder[20] then
 			g_tWorldWonderExists[20] = true
@@ -458,6 +532,7 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 		end
 	end
 
+	-- Aqueduct of Padre Tembleque (21)
 	if not g_tWorldWonderExists[21] then	
 		if eBuilding == g_tWorldWonder[21] then
 			g_tWorldWonderExists[21] = true
@@ -470,11 +545,79 @@ function IsWonderConstructed(ePlayer, eCity, eBuilding, bGold, bFaith)
 			end
 		end
 	end
+	
+	-- Angkor Wat (22)
+	if not g_tWorldWonderExists[22] then	
+		if eBuilding == g_tWorldWonder[22] then
+			g_tWorldWonderExists[22] = true
+			g_tWorldWonderOwner[22] = ePlayer
+			
+			local pPlayer = Players[ePlayer]
+		
+			pPlayer:SetHasPolicy(g_tWorldWonderDummy[22], 1) -- POLICY!!!
+		end
+	end
+
+	-- Tlachihualtepetl (23)
+	if not g_tWorldWonderExists[23] then	
+		if eBuilding == g_tWorldWonder[23] then
+			g_tWorldWonderExists[23] = true
+			g_tWorldWonderOwner[23] = ePlayer
+			
+			local pPlayer = Players[ePlayer]
+		
+			pPlayer:SetHasPolicy(g_tWorldWonderDummy[23], 1) -- POLICY!!!
+		end
+	end
+	
+	-- Hospital of St. John (24)
+	if eBuilding == g_tWorldWonder[24] then
+		g_tWorldWonderExists[24] = true
+		g_tWorldWonderOwner[24] = ePlayer
+			
+		local pPlayer = Players[ePlayer]
+		
+		for city in pPlayer:Cities() do
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassTemple} do	
+				if city:IsHasBuilding(building.ID) then
+					city:SetNumRealBuilding(g_tWorldWonderDummy[24], 1)
+					break
+				end
+			end
+		end
+	else
+		if g_tWorldWonderExists[24] and g_tWorldWonderOwner[24] == ePlayer then
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassTemple} do
+				if eBuilding == building.ID then
+					local pPlayer = Players[ePlayer]
+					local pCity = pPlayer:GetCityByID(eCity)
+					
+					pCity:SetNumRealBuilding(g_tWorldWonderDummy[24], 1)
+					break
+				end
+			end
+		end
+	end
+
+	-- Songyue Pagoda (25)
+	if not g_tWorldWonderExists[25] then	
+		if eBuilding == g_tWorldWonder[25] then
+			g_tWorldWonderExists[25] = true
+			g_tWorldWonderOwner[25] = ePlayer
+			
+			local pPlayer = Players[ePlayer]
+		
+			for city in pPlayer:Cities() do
+				city:SetNumRealBuilding(g_tWorldWonderDummy[25], 1)
+			end
+		end
+	end
 end
 GameEvents.CityConstructed.Add(IsWonderConstructed)
 
--- check if wonder conquered by another player
+-- check if wonder was conquered by another player
 function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iPop, bConquest)
+	-- Krak des Chevaliers (1)
 	if g_tWorldWonderExists[1] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -490,12 +633,12 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 			g_tWorldWonderOwner[1] = eNewOwner
 			
 			for city in pNewOwner:Cities() do
-				if not city:IsCoastal(10) and not city:IsHasBuilding(g_tWorldWonder[1]) then
+				if not city:IsCoastal(iCoastMinArea) and not city:IsHasBuilding(g_tWorldWonder[1]) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[1], 1)
 				end
 			end		
 		else
-			if eNewOwner == g_tWorldWonderOwner[1] and not pConqCity:IsCoastal(10) then
+			if eNewOwner == g_tWorldWonderOwner[1] and not pConqCity:IsCoastal(iCoastMinArea) then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[1], 1)
 			elseif eNewOwner ~= g_tWorldWonderOwner[1] then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[1], 0)
@@ -503,6 +646,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 	
+	-- Itsukushima Shrine (2)
 	if g_tWorldWonderExists[2] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -518,12 +662,12 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 			g_tWorldWonderOwner[2] = eNewOwner
 			
 			for city in pNewOwner:Cities() do
-				if city:IsCoastal(10) then
+				if city:IsCoastal(iCoastMinArea) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[2], 1)
 				end
 			end		
 		else
-			if eNewOwner == g_tWorldWonderOwner[2] and pConqCity:IsCoastal(10) then
+			if eNewOwner == g_tWorldWonderOwner[2] and pConqCity:IsCoastal(iCoastMinArea) then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[2], 1)
 			elseif eNewOwner ~= g_tWorldWonderOwner[2] then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[2], 0)
@@ -531,6 +675,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Qalhat (3)
 	if g_tWorldWonderExists[3] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -545,7 +690,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 						if ((tradeRoute.FromID == eNewOwner and not Players[tradeRoute.ToID]:IsMinorCiv()) 
 						or (tradeRoute.ToID == eNewOwner and not Players[tradeRoute.FromID]:IsMinorCiv())) 
 						and tradeRoute.FromID ~= tradeRoute.ToID 
-						and tradeRoute.Domain == GameInfoTypes.DOMAIN_SEA then
+						and tradeRoute.Domain == eDomainSea then
 							iSeaTradeRoutesWithMajors = iSeaTradeRoutesWithMajors + 1
 						end
 					end
@@ -556,6 +701,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Gate of the Sun (4)
 	if g_tWorldWonderExists[4] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -571,16 +717,16 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 			g_tWorldWonderOwner[4] = eNewOwner
 			
 			for city in pNewOwner:Cities() do
-				for building in GameInfo.Buildings{BuildingClass=eClassWalls} do	
-					if city:IsHasBuilding(building.Type) then
+				for building in GameInfo.Buildings{BuildingClass=eBuildingClassWalls} do	
+					if city:IsHasBuilding(building.ID) then
 						city:SetNumRealBuilding(g_tWorldWonderDummy[4], 1)
 						break
 					end
 				end
 			end		
 		else
-			for building in GameInfo.Buildings{BuildingClass=eClassWalls} do	
-				if eNewOwner == g_tWorldWonderOwner[4] and pConqCity:IsHasBuilding(building.Type) then
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassWalls} do	
+				if eNewOwner == g_tWorldWonderOwner[4] and pConqCity:IsHasBuilding(building.ID) then
 					pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[4], 1)
 					break
 				elseif eNewOwner ~= g_tWorldWonderOwner[4] then
@@ -591,6 +737,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Great Zimbabwe (5)
 	if g_tWorldWonderExists[5] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -613,6 +760,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Kilwa Kisiwani (6)
 	if g_tWorldWonderExists[6] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -624,6 +772,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Marae Arahurahu (7)
 	if g_tWorldWonderExists[7] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -635,6 +784,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Kuk Swamp (8)
 	if g_tWorldWonderExists[8] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -661,6 +811,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- St. Peter's Basilica (9)
 	if g_tWorldWonderExists[9] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -672,6 +823,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Panama Canal (10)
 	if g_tWorldWonderExists[10] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -687,12 +839,12 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 			g_tWorldWonderOwner[10] = eNewOwner
 			
 			for city in pNewOwner:Cities() do
-				if city:IsCoastal(10) then
+				if city:IsCoastal(iCoastMinArea) then
 					city:SetNumRealBuilding(g_tWorldWonderDummy[10], 1)
 				end
 			end		
 		else
-			if eNewOwner == g_tWorldWonderOwner[10] and pConqCity:IsCoastal(10) then
+			if eNewOwner == g_tWorldWonderOwner[10] and pConqCity:IsCoastal(iCoastMinArea) then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[10], 1)
 			elseif eNewOwner ~= g_tWorldWonderOwner[10] then
 				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[10], 0)
@@ -700,6 +852,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Palm Jumeirah (11)
 	if g_tWorldWonderExists[11] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -726,6 +879,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Arecibo Observatory (12)
 	if g_tWorldWonderExists[12] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -752,6 +906,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Rockefeller Center (13)
 	if g_tWorldWonderExists[13] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -778,6 +933,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Darjeeling Himalayan Railway (14)
 	if g_tWorldWonderExists[14] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -804,6 +960,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Sanbo Honbu (15)
 	if g_tWorldWonderExists[15] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -815,6 +972,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Autobahn (16)
 	if g_tWorldWonderExists[16] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -841,6 +999,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Museum Island (18)
 	if g_tWorldWonderExists[18] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -867,6 +1026,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Curiosity Rover (19)
 	if g_tWorldWonderExists[19] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -894,6 +1054,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Svalbard Global Seed Vault (20)
 	if g_tWorldWonderExists[20] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -920,6 +1081,7 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 		end
 	end
 
+	-- Aqueduct of Padre Tembleque (21)
 	if g_tWorldWonderExists[21] then	
 		local pPlot = Map.GetPlot(iX, iY)
 		local pConqCity = pPlot:GetWorkingCity()
@@ -945,40 +1107,138 @@ function CheckForWonderAfterCapture(eOldOwner, bIsCapital, iX, iY, eNewOwner, iP
 			end
 		end
 	end
+
+	-- Angkor Wat (22)
+	if g_tWorldWonderExists[22] then	
+		local pPlot = Map.GetPlot(iX, iY)
+		local pConqCity = pPlot:GetWorkingCity()
+		
+		if pConqCity:IsHasBuilding(g_tWorldWonder[22]) then
+			local pOldOwner = Players[eOldOwner]
+			local pNewOwner = Players[eNewOwner]
+			
+			g_tWorldWonderOwner[22] = eNewOwner
+			
+			pOldOwner:SetHasPolicy(g_tWorldWonderDummy[22], 0) -- POLICY!!!
+			pNewOwner:SetHasPolicy(g_tWorldWonderDummy[22], 1) -- POLICY!!!
+		end
+	end
+
+	-- Tlachihualtepetl (23)
+	if g_tWorldWonderExists[23] then	
+		local pPlot = Map.GetPlot(iX, iY)
+		local pConqCity = pPlot:GetWorkingCity()
+		
+		if pConqCity:IsHasBuilding(g_tWorldWonder[23]) then
+			local pOldOwner = Players[eOldOwner]
+			local pNewOwner = Players[eNewOwner]
+			
+			g_tWorldWonderOwner[23] = eNewOwner
+			
+			pOldOwner:SetHasPolicy(g_tWorldWonderDummy[23], 0) -- POLICY!!!
+			pNewOwner:SetHasPolicy(g_tWorldWonderDummy[23], 1) -- POLICY!!!
+		end
+	end
+
+	-- Hospital of St. John (24)
+	if g_tWorldWonderExists[24] then	
+		local pPlot = Map.GetPlot(iX, iY)
+		local pConqCity = pPlot:GetWorkingCity()
+		
+		if pConqCity:IsHasBuilding(g_tWorldWonder[24]) then
+			local pOldOwner = Players[eOldOwner]
+			
+			for city in pOldOwner:Cities() do
+				city:SetNumRealBuilding(g_tWorldWonderDummy[24], 0)
+			end
+			
+			local pNewOwner = Players[eNewOwner]
+			g_tWorldWonderOwner[24] = eNewOwner
+			
+			for city in pNewOwner:Cities() do
+				for building in GameInfo.Buildings{BuildingClass=eBuildingClassTemple} do	
+					if city:IsHasBuilding(building.ID) then
+						city:SetNumRealBuilding(g_tWorldWonderDummy[24], 1)
+						break
+					end
+				end
+			end		
+		else
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassTemple} do	
+				if eNewOwner == g_tWorldWonderOwner[24] and pConqCity:IsHasBuilding(building.ID) then
+					pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[24], 1)
+					break
+				elseif eNewOwner ~= g_tWorldWonderOwner[24] then
+					pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[24], 0)
+					break
+				end
+			end
+		end
+	end
+
+	-- Songyue Pagoda (25)
+	if g_tWorldWonderExists[25] then	
+		local pPlot = Map.GetPlot(iX, iY)
+		local pConqCity = pPlot:GetWorkingCity()
+		
+		if pConqCity:IsHasBuilding(g_tWorldWonder[25]) then
+			local pOldOwner = Players[eOldOwner]
+			
+			for city in pOldOwner:Cities() do
+				city:SetNumRealBuilding(g_tWorldWonderDummy[25], 0)
+			end
+			
+			local pNewOwner = Players[eNewOwner]
+			g_tWorldWonderOwner[25] = eNewOwner
+			
+			for city in pNewOwner:Cities() do
+				city:SetNumRealBuilding(g_tWorldWonderDummy[25], 1)
+			end		
+		else
+			if eNewOwner == g_tWorldWonderOwner[25] then
+				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[25], 1)
+			else
+				pConqCity:SetNumRealBuilding(g_tWorldWonderDummy[25], 0)
+			end
+		end
+	end
 end
 GameEvents.CityCaptureComplete.Add(CheckForWonderAfterCapture)
 
--- check if new city has effects
+-- check if new city gains effects
 function BuildDummyInNewCity(ePlayer, iX, iY)
+	-- Krak des Chevaliers (1)
 	if g_tWorldWonderExists[1] then
 		if ePlayer == g_tWorldWonderOwner[1] then
 			local pPlot = Map.GetPlot(iX, iY)
 			local pCity = pPlot:GetWorkingCity()
 			
-			if not pCity:IsCoastal(10) then
+			if not pCity:IsCoastal(iCoastMinArea) then
 				pCity:SetNumRealBuilding(g_tWorldWonderDummy[1], 1)
 			end
 		end
 	end
 
+	-- Itsukushima Shrine (2)
 	if g_tWorldWonderExists[2] then
 		if ePlayer == g_tWorldWonderOwner[2] then
 			local pPlot = Map.GetPlot(iX, iY)
 			local pCity = pPlot:GetWorkingCity()
 			
-			if pCity:IsCoastal(10) then
+			if pCity:IsCoastal(iCoastMinArea) then
 				pCity:SetNumRealBuilding(g_tWorldWonderDummy[2], 1)
 			end
 		end
 	end
 
+	-- Gate of the Sun (4)
 	if g_tWorldWonderExists[4] then
 		if ePlayer == g_tWorldWonderOwner[4] then
 			local pPlot = Map.GetPlot(iX, iY)
 			local pCity = pPlot:GetWorkingCity()
 			
-			for building in GameInfo.Buildings{BuildingClass=eClassWalls} do	
-				if pCity:IsHasBuilding(building.Type) then
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassWalls} do	
+				if pCity:IsHasBuilding(building.ID) then
 					pCity:SetNumRealBuilding(g_tWorldWonderDummy[4], 1)
 					break
 				end
@@ -986,6 +1246,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Kuk Swamp (8)
 	if g_tWorldWonderExists[8] then
 		if ePlayer == g_tWorldWonderOwner[8] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -995,17 +1256,19 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Panama Canal (10)
 	if g_tWorldWonderExists[10] then
 		if ePlayer == g_tWorldWonderOwner[10] then
 			local pPlot = Map.GetPlot(iX, iY)
 			local pCity = pPlot:GetWorkingCity()
 			
-			if pCity:IsCoastal(10) then
+			if pCity:IsCoastal(iCoastMinArea) then
 				pCity:SetNumRealBuilding(g_tWorldWonderDummy[10], 1)
 			end
 		end
 	end
 
+	-- Palm Jumeirah (11)
 	if g_tWorldWonderExists[11] then
 		if ePlayer == g_tWorldWonderOwner[11] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1015,6 +1278,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Arecibo Observatory (12)
 	if g_tWorldWonderExists[12] then
 		if ePlayer == g_tWorldWonderOwner[12] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1024,6 +1288,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Rockefeller Center (13)
 	if g_tWorldWonderExists[13] then
 		if ePlayer == g_tWorldWonderOwner[13] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1033,6 +1298,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Darjeeling Himalayan Railway (14)
 	if g_tWorldWonderExists[14] then
 		if ePlayer == g_tWorldWonderOwner[14] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1042,6 +1308,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Autobahn (16)
 	if g_tWorldWonderExists[16] then
 		if ePlayer == g_tWorldWonderOwner[16] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1051,6 +1318,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Museum Island (18)
 	if g_tWorldWonderExists[18] then
 		if ePlayer == g_tWorldWonderOwner[18] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1060,6 +1328,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Svalbard Global Seed Vault (20)
 	if g_tWorldWonderExists[20] then
 		if ePlayer == g_tWorldWonderOwner[20] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1069,6 +1338,7 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 		end
 	end
 
+	-- Aqueduct of Padre Tembleque (21)
 	if g_tWorldWonderExists[21] then
 		if ePlayer == g_tWorldWonderOwner[21] then
 			local pPlot = Map.GetPlot(iX, iY)
@@ -1077,11 +1347,37 @@ function BuildDummyInNewCity(ePlayer, iX, iY)
 			pCity:SetNumRealBuilding(g_tWorldWonderDummy[21], 1)
 		end
 	end
+
+	-- Hospital of St. John (24)
+	if g_tWorldWonderExists[24] then
+		if ePlayer == g_tWorldWonderOwner[24] then
+			local pPlot = Map.GetPlot(iX, iY)
+			local pCity = pPlot:GetWorkingCity()
+			
+			for building in GameInfo.Buildings{BuildingClass=eBuildingClassTemple} do	
+				if pCity:IsHasBuilding(building.ID) then
+					pCity:SetNumRealBuilding(g_tWorldWonderDummy[24], 1)
+					break
+				end
+			end
+		end
+	end
+
+	-- Songyue Pagoda (25)
+	if g_tWorldWonderExists[25] then
+		if ePlayer == g_tWorldWonderOwner[25] then
+			local pPlot = Map.GetPlot(iX, iY)
+			local pCity = pPlot:GetWorkingCity()
+			
+			pCity:SetNumRealBuilding(g_tWorldWonderDummy[25], 1)
+		end
+	end
 end
 GameEvents.PlayerCityFounded.Add(BuildDummyInNewCity)
 
--- check if unit action changed
+-- checks for trade routes (QALHAT, GREAT ZIMBABWE)
 function SetDummiesOnUnitActionChange(ePlayer, iUnit)
+	-- Qalhat (3)
 	if g_tWorldWonderExists[3] then
 		if ePlayer == g_tWorldWonderOwner[3] then
 			local pPlayer = Players[ePlayer]
@@ -1106,7 +1402,7 @@ function SetDummiesOnUnitActionChange(ePlayer, iUnit)
 									if ((tradeRoute.FromID == player:GetID() and not Players[tradeRoute.ToID]:IsMinorCiv()) 
 									or (tradeRoute.ToID == player:GetID() and not Players[tradeRoute.FromID]:IsMinorCiv())) 
 									and tradeRoute.FromID ~= tradeRoute.ToID 
-									and tradeRoute.Domain == GameInfoTypes.DOMAIN_SEA then
+									and tradeRoute.Domain == eDomainSea then
 										iSeaTradeRoutesWithMajors = iSeaTradeRoutesWithMajors + 1
 									end
 								end
@@ -1121,6 +1417,7 @@ function SetDummiesOnUnitActionChange(ePlayer, iUnit)
 		end
 	end
 
+	-- Great Zimbabwe (5)
 	if g_tWorldWonderExists[5] then
 		if ePlayer == g_tWorldWonderOwner[5] then
 			local pPlayer = Players[ePlayer]
@@ -1158,8 +1455,9 @@ function SetDummiesOnUnitActionChange(ePlayer, iUnit)
 end
 Events.UnitActionChanged.Add(SetDummiesOnUnitActionChange)
 
--- checks for promotion (SANBO)
+-- checks for promotions (SANBO)
 function SetPromotionsOnCombatEnd(eAttackingPlayer, eAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, eDefendingPlayer, eDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, eInterceptingPlayer, eInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
+	-- Sanbo Honbu (15)
 	if g_tWorldWonderExists[15] then
 		if eAttackingPlayer == g_tWorldWonderOwner[15] then
 			local pAttackingPlayer = Players[eAttackingPlayer]
@@ -1167,17 +1465,17 @@ function SetPromotionsOnCombatEnd(eAttackingPlayer, eAttackingUnit, iAttackerDam
 			if pAttackingPlayer ~= nil then				
 				local pAttackingUnit = pAttackingPlayer:GetUnitByID(eAttackingUnit)
 
-				if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR) or pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT) then
+				if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(ePromotionSanboAir) or pAttackingUnit:IsHasPromotion(ePromotionSanboAirEffect) then
 					local iUnitHP = pAttackingUnit:GetCurrHitPoints()
 					local iUnitMaxHP = pAttackingUnit:GetMaxHitPoints()
 					local fHPPercentage = 100 * iUnitHP / iUnitMaxHP
 					
-					if fHPPercentage <= 20 then
-						pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, true)
-						pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, false)
+					if fHPPercentage <= iSanboLifeThreshold then
+						pAttackingUnit:SetHasPromotion(ePromotionSanboAirEffect, true)
+						pAttackingUnit:SetHasPromotion(ePromotionSanboAir, false)
 					else
-						pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, true)
-						pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, false)
+						pAttackingUnit:SetHasPromotion(ePromotionSanboAir, true)
+						pAttackingUnit:SetHasPromotion(ePromotionSanboAirEffect, false)
 					end
 				end
 			end
@@ -1187,17 +1485,17 @@ function SetPromotionsOnCombatEnd(eAttackingPlayer, eAttackingUnit, iAttackerDam
 			if pDefendingPlayer ~= nil then
 				local pDefendingUnit = pDefendingPlayer:GetUnitByID(eDefendingUnit)
 
-				if pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR) or pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT) then
+				if pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(ePromotionSanboAir) or pDefendingUnit:IsHasPromotion(ePromotionSanboAirEffect) then
 					local iUnitHP = pDefendingUnit:GetCurrHitPoints()
 					local iUnitMaxHP = pDefendingUnit:GetMaxHitPoints()
 					local fHPPercentage = 100 * iUnitHP / iUnitMaxHP
 					
-					if fHPPercentage <= 20 then
-						pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, true)
-						pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, false)
+					if fHPPercentage <= iSanboLifeThreshold then
+						pDefendingUnit:SetHasPromotion(ePromotionSanboAirEffect, true)
+						pDefendingUnit:SetHasPromotion(ePromotionSanboAir, false)
 					else
-						pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, true)
-						pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, false)
+						pDefendingUnit:SetHasPromotion(ePromotionSanboAir, true)
+						pDefendingUnit:SetHasPromotion(ePromotionSanboAirEffect, false)
 					end
 				end
 			end
@@ -1207,22 +1505,23 @@ end
 GameEvents.CombatEnded.Add(SetPromotionsOnCombatEnd)
 
 function SetPromotionOnTurn(ePlayer)
+	-- Sanbo Honbu (15)
 	if g_tWorldWonderExists[15] then
 		if ePlayer == g_tWorldWonderOwner[15] then
 			local pPlayer = Players[ePlayer]
 			
 			for unit in pPlayer:Units() do
-				if unit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR) or unit:IsHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT) then
+				if unit:IsHasPromotion(ePromotionSanboAir) or unit:IsHasPromotion(ePromotionSanboAirEffect) then
 					local iUnitHP = unit:GetCurrHitPoints()
 					local iUnitMaxHP = unit:GetMaxHitPoints()
 					local fHPPercentage = 100 * iUnitHP / iUnitMaxHP
 					
-					if fHPPercentage <= 20 then
-						unit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, true)
-						unit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, false)
+					if fHPPercentage <= iSanboLifeThreshold then
+						unit:SetHasPromotion(ePromotionSanboAirEffect, true)
+						unit:SetHasPromotion(ePromotionSanboAir, false)
 					else
-						unit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR, true)
-						unit:SetHasPromotion(GameInfoTypes.PROMOTION_SANBO_AIR_EFFECT, false)
+						unit:SetHasPromotion(ePromotionSanboAir, true)
+						unit:SetHasPromotion(ePromotionSanboAirEffect, false)
 					end
 				end
 			end
@@ -1231,8 +1530,9 @@ function SetPromotionOnTurn(ePlayer)
 end
 GameEvents.PlayerDoTurn.Add(SetPromotionOnTurn)
 
--- Curiosity Rover Research Agreements check
+-- checks for Research Agreements (CURIOSITY ROVER)
 function SetRAOnTurn(ePlayer)
+	-- Curiosity Rover (19)
 	if g_tWorldWonderExists[19] then
 		if g_tWorldWonderOwner[19] == ePlayer then		
 			local pPlayer = Players[ePlayer]
@@ -1259,8 +1559,3 @@ function SetRAOnTurn(ePlayer)
 	end
 end
 GameEvents.PlayerDoTurn.Add(SetRAOnTurn)
---------------------------------------------------------------
---------------------------------------------------------------
-print("Loaded DummyBuildingsForWonders.lua from MWfVP")
---------------------------------------------------------------
---------------------------------------------------------------

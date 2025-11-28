@@ -1,5 +1,93 @@
+-- seed vault
+-- first move freedom NW. why is this on biology anyway?
+UPDATE Buildings SET PrereqTech = 'TECH_ELECTRICITY' WHERE Type = 'BUILDING_FINANCE_CENTER';
+
+INSERT INTO Building_YieldModifiers
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_FOOD', 5),
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_SCIENCE', 5);
+
+INSERT INTO Building_ResourceYieldChangesGlobal
+	(BuildingType, ResourceType, YieldType, Yield)
+SELECT
+	'BUILDING_HARMONY_SEED_VAULT', Type, 'YIELD_FOOD', 1
+FROM Resources WHERE PlantResource = 1 UNION ALL
+SELECT
+	'BUILDING_HARMONY_SEED_VAULT', Type, 'YIELD_SCIENCE', 1
+FROM Resources WHERE PlantResource = 1;
+
+UPDATE Buildings SET
+FreePolicies = 1,
+ExtraLeagueVotes=12
+WHERE Type = 'BUILDING_HARMONY_SEED_VAULT';
+
+-- Rue Voltaire
+UPDATE Buildings SET
+FreePolicies = 1
+WHERE Type = 'BUILDING_RUE_VOLTAIRE';
+
+INSERT INTO Building_WLTKDYieldMod
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_FOOD', 10),
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 10);
+
+INSERT INTO Building_YieldFromPolicyUnlock
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 50);
+
+-- galathea
+UPDATE Buildings SET
+FreePolicies = 1,
+GreatWorkCount = 1, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT'
+WHERE Type = 'BUILDING_GALATHEA';
+
+INSERT INTO Building_InstantYield
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_GALATHEA', 'YIELD_SCIENCE', 2000);
+
+INSERT INTO Building_BuildingClassYieldChanges
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_GALATHEA', 'BUILDINGCLASS_MUSEUM', 'YIELD_SCIENCE', 5);
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_GALATHEA', 'BUILDINGCLASS_SEAPORT');
+
 -- woodstock
-INSERT INTO Language_ko_KR
+UPDATE Buildings SET
+FreePolicies = 1,
+Happiness = 2,
+GreatWorkCount = 3, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_MUSIC',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_WOODSTOCK_HELP'
+WHERE Type = 'BUILDING_WOODSTOCK';
+
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_WOODSTOCK', 'IMPROVEMENT_FARM', 'YIELD_FAITH', 2),
+	('BUILDING_WOODSTOCK', 'IMPROVEMENT_FARM', 'YIELD_CULTURE', 2);
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WOODSTOCK', 'YIELD_GOLDEN_AGE_POINTS', 20);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WOODSTOCK', 'TXT_KEY_THEMING_BONUS_WOODSTOCK', 20, 1, 0, NULL, NULL, NULL, 
+								  1, 0, 0, 0, 2);
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_THEMING_BONUS_WOODSTOCK', 'Age of Aquarius'),
@@ -10,59 +98,338 @@ INSERT INTO Building_ClassesNeededInCity
 VALUES
 	('BUILDING_WOODSTOCK', 'BUILDINGCLASS_STOCKYARD');
 
+-- World Heritage wonders
 -- dinosaur
-INSERT INTO Language_ko_KR
+UPDATE Buildings SET
+FreeArtifacts = 2,
+GreatWorkCount = 2, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_DINOSAUR_HELP',
+River = 1,
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_DINOSAUR';
+
+INSERT INTO Building_LocalResourceOrs
+	(BuildingType, ResourceType)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'RESOURCE_STONE'),
+	('BUILDING_WH_DINOSAUR', 'RESOURCE_IRON');
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'YIELD_SCIENCE', 8);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'TXT_KEY_THEMING_BONUS_DINOSAUR', 8, 1, 0, 0, 1, 0, 
+												1, 0, 0, 0, 3);
+
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_THEMING_BONUS_DINOSAUR', 'Spectacular Logjam'),
 	('TXT_KEY_THEMING_BONUS_DINOSAUR_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Artifacts from the same Era and created by you.');
 
 -- abu simbel
-INSERT INTO Language_ko_KR
+UPDATE Buildings SET
+NearbyTerrainRequired = 'TERRAIN_DESERT',
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+GreatWorkCount = 4, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_ABU_SIMBEL_HELP',
+FreeArtifacts = 4
+WHERE Type = 'BUILDING_WH_ABU_SIMBEL';
+
+INSERT INTO Building_InstantYield
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_SCIENCE', 4000);
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES	
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_GOLD', 15);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_ABU_SIMBEL', 'TXT_KEY_THEMING_BONUS_ABU_SIMBEL', 15, 1, 0, 0, 1, 0, 
+									1, 0, 0, 0, 8);
+
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_THEMING_BONUS_ABU_SIMBEL', 'Beloved by Amun'),
 	('TXT_KEY_THEMING_BONUS_ABU_SIMBEL_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 4 Artifacts from the same Era and created by you.');
 
 -- cologne cathedral
-INSERT INTO Language_ko_KR
+UPDATE Buildings SET
+Happiness = 1,
+ConversionModifier = -20,
+ReligiousPressureModifier = 25,
+GreatWorkCount = 4, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL_HELP',
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_COLOGNE_CATHEDRAL';
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_GOLD', 10),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 10);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL', 20, 0, 1, 0, 0, 1, 
+												1, 0, 0, 0, 4);
+
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL', 'Shrine of the Three Kings'),
 	('TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Great Works of Art and 2 Artifacts with all 4 being from different Eras and all created by you.');
 
+INSERT INTO Building_YieldChangesPerPopInEmpire
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_GOLD', 10),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 10);
+
 -- butrint
-INSERT INTO Language_ko_KR
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+GreatWorkCount = 2, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_BUTRINT_HELP'
+WHERE Type = 'BUILDING_WH_BUTRINT';
+
+INSERT INTO Building_LocalFeatureAnds
+	(BuildingType, FeatureType)
+VALUES
+	('BUILDING_WH_BUTRINT', 'FEATURE_MARSH');
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_BUTRINT', 'YIELD_GOLD', 6),
+	('BUILDING_WH_BUTRINT', 'YIELD_CULTURE', 6);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority, ConsecutiveEras)
+VALUES
+	('BUILDING_WH_BUTRINT', 'TXT_KEY_THEMING_BONUS_BUTRINT', 12, 1, 0, 0, 1, 0, 
+								1, 0, 0, 0, 5, 1);
+
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_THEMING_BONUS_BUTRINT', 'Albanian National Park'),
 	('TXT_KEY_THEMING_BONUS_BUTRINT_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Artifacts from consecutive Eras and created by you.');
 
+-- sangay
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+NearbyMountainRequired = 1
+WHERE Type = 'BUILDING_WH_SANGAY';
+
+INSERT INTO Building_LocalFeatureAnds
+	(BuildingType, FeatureType)
+VALUES
+	('BUILDING_WH_SANGAY', 'FEATURE_JUNGLE');
+
+INSERT INTO Building_BuildingClassLocalYieldChanges
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_STOCKYARD', 'YIELD_FOOD', -5),
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_STOCKYARD', 'YIELD_SCIENCE', 10),
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_STOCKYARD', 'YIELD_CULTURE', 10);
+
+INSERT INTO Building_ImprovementYieldChangesGlobal
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_GOLD', -1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_PRODUCTION', -1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_FAITH', 1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_SCIENCE', 1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_FOOD', 1);
+
+-- timbuktu
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_TIMBUKTU';
+
+INSERT INTO Building_BuildingClassYieldChanges
+        (BuildingType, BuildingClassType, YieldType, YieldChange)
+SELECT  'BUILDING_WH_TIMBUKTU', b.BuildingClass, a.Type, 2
+FROM Buildings b, Yields a WHERE b.Cost = -1 AND b.FaithCost > 0 AND a.Type IN ('YIELD_CULTURE', 'YIELD_GOLD');
+
+INSERT INTO Building_YieldChangeWorldWonder        
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_TIMBUKTU', 'YIELD_GOLD', 2),
+	('BUILDING_WH_TIMBUKTU', 'YIELD_FOOD', 2),
+	('BUILDING_WH_TIMBUKTU', 'YIELD_SCIENCE', 2);
+
+-- sirvansahlar
+UPDATE Buildings SET
+Water = 1,
+MinAreaSize = 10,
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+Happiness = 1,
+BuildingDefenseModifier = 10,
+GreatWorkCount = 1, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+WLTKDTurns = 20
+WHERE Type = 'BUILDING_WH_SIRVANSAHLAR';
+
+INSERT INTO Building_YieldPerFriend
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_GOLD', 3);
+
+INSERT INTO Building_YieldPerAlly
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_GOLD', 3);
+
+
+------------------
+-- do these all together because it is convenient 
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_CULTURE', 4),
+
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WOODSTOCK', 'YIELD_CULTURE', 1),
+
+	('BUILDING_GALATHEA', 'YIELD_SCIENCE', 4),
+	('BUILDING_GALATHEA', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_DINOSAUR', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 4),	
+
+	('BUILDING_WH_SANGAY', 'YIELD_CULTURE', 2),
+	('BUILDING_WH_SANGAY', 'YIELD_SCIENCE', 4),	
+	('BUILDING_WH_SANGAY', 'YIELD_FAITH', 4),
+
+	('BUILDING_WH_BUTRINT', 'YIELD_CULTURE', 2),
+	('BUILDING_WH_BUTRINT', 'YIELD_GOLD', 3),	
+
+	('BUILDING_WH_TIMBUKTU', 'YIELD_CULTURE', 1),	
+	('BUILDING_WH_TIMBUKTU', 'YIELD_SCIENCE', 1),	
+	('BUILDING_WH_TIMBUKTU', 'YIELD_FAITH', 1),	
+
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 2);
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'BUILDINGCLASS_LABORATORY'),
+	('BUILDING_WH_TIMBUKTU', 'BUILDINGCLASS_MOSQUE'),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'BUILDINGCLASS_CATHEDRAL'),	
+	('BUILDING_WH_ABU_SIMBEL', 'BUILDINGCLASS_HYDRO_PLANT');
+
+INSERT INTO Building_Flavors
+	(BuildingType, FlavorType, Flavor)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_WONDER', 10),
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_GROWTH', 40),
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_SCIENCE', 40),
+
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_WONDER', 40),
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_GROWTH', 30),
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_CULTURE', 60),
+
+	('BUILDING_WOODSTOCK', 'FLAVOR_WONDER', 40),
+	('BUILDING_WOODSTOCK', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WOODSTOCK', 'FLAVOR_CULTURE', 30),
+	('BUILDING_WOODSTOCK', 'FLAVOR_HAPPINESS', 30),
+
+	('BUILDING_GALATHEA', 'FLAVOR_WONDER', 40),
+	('BUILDING_GALATHEA', 'FLAVOR_ARCHAEOLOGY', 30),
+	('BUILDING_GALATHEA', 'FLAVOR_SCIENCE', 60),
+
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_ARCHAEOLOGY', 40),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_SCIENCE', 25),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_CULTURE', 30),	
+
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_WONDER', 60),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_ARCHAEOLOGY', 60),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_SCIENCE', 40),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_CULTURE', 60),
+
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_WONDER', 50),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_RELIGION', 40),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_GOLD', 40),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_CULTURE', 40),
+
+	('BUILDING_WH_SANGAY', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_SANGAY', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_GROWTH', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_SCIENCE', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_CULTURE', 10),
+
+	('BUILDING_WH_BUTRINT', 'FLAVOR_WONDER', 50),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_ARCHAEOLOGY', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_GOLD', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_SCIENCE', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_CULTURE', 40),
+
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_WONDER', 90),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_GOLD', 20),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_CULTURE', 20),
+
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_ARCHAEOLOGY', 15),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_GROWTH', 30),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_DIPLOMACY', 30),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_CITY_DEFENSE', 40);
+
 -----------------------------------------------------------------
 -- Text
 -----------------------------------------------------------------
-INSERT INTO Language_ko_KR
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
       -- national wonder
 	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT', 'Seed Bank'),
-	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_HELP', 'Requires [COLOR_MAGENTA]Harmony[ENDCOLOR]. +5% [ICON_FOOD] Food and +5% [ICON_RESEARCH] Science in the City in which it is built. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]12[ENDCOLOR] [ICON_CITY_STATE] City-States originally in the World. All [COLOR_POSITIVE_TEXT]Plant[ENDCOLOR] Resources in the Empire gain +1 [ICON_FOOD] Food and [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'),
+	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR]. +5% [ICON_FOOD] Food and +5% [ICON_RESEARCH] Science in the City in which it is built. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]12[ENDCOLOR] [ICON_CITY_STATE] City-States originally in the World. All [COLOR_POSITIVE_TEXT]Plant[ENDCOLOR] Resources in the Empire gain +1 [ICON_FOOD] Food and [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'),
 	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_STRATEGY', 'Unlike the National Wonders of other Ideologies, the Harmony Seed Bank has no requirement on its World Congress Votes, but in return there is no way to increase them. Instead, the Seed Bank increases your yields by boost the output of around half the Resources in the game, in all your Cities.'),
 	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_TEXT', 'A seed bank stores seeds to preserve genetic diversity. It also functions as a library for the genes that plant breeders need to increase yield, disease resistance, drought tolerance, nutritional quality, taste, etc. of crops. Collections of seeds stored at constant low temperature and low moisture are guarded against loss of genetic resources that are otherwise maintained in situ or in field collections. Seeds may be viable for hundreds and even thousands of years. The oldest carbon-14-dated seed that has grown into a viable plant was a Judean date palm seed about 2,000 years old, recovered from excavations at the palace of Herod the Great in Israel. Naturally, seed banks are expected to play a greater role as climate change progresses.'),
 
 	-- world wonders
 	('TXT_KEY_WONDER_RUE_VOLTAIRE', 'Rue Voltaire'),
-	('TXT_KEY_WONDER_RUE_VOLTAIRE_HELP', 'Requires [COLOR_MAGENTA]Harmony[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Receive 50 [ICON_CULTURE] Culture when you adopt a Policy, scaling with Era. +10% [ICON_FOOD] Food and [ICON_CULTURE] Culture in the City during "We Love the King Day".'),
+	('TXT_KEY_WONDER_RUE_VOLTAIRE_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Receive 50 [ICON_CULTURE] Culture when you adopt a Policy, scaling with Era. +10% [ICON_FOOD] Food and [ICON_CULTURE] Culture in the City during "We Love the King Day".'),
 	('TXT_KEY_WONDER_RUE_VOLTAIRE_QUOTE', '[NEWLINE]"It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets."[NEWLINE] - Voltaire[NEWLINE]'),
 	('TXT_KEY_WONDER_RUE_VOLTAIRE_TEXT', 'The Boulevard Voltaire is a well-known boulevard in the 11th arrondissement of Paris. It was created by Baron Georges-Eug ne Haussmann during the reign of French emperor Napoleon III. The boulevard is a great axis joining two historical squares associated with the French Revolution, the Place de la R publique and the Place de la Nation, and the boulevard is a main hub for left-wing demonstrations with the Republic and Nation squares as the focal points. The boulevard also has the Bataclan Theatre, built in 1864 by the architect Charles Duval. The boulevard, particularly between its cross-sections with the Boulevard Richard-Lenoir and the Place L on-Blum is host to great textile firms.'),
 
 	('TXT_KEY_WONDER_GALATHEA', 'Galathea Deep Sea Expedition'),
-	('TXT_KEY_WONDER_GALATHEA_HELP', 'Requires [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have a Seaport. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +2000 [ICON_RESEARCH] Science when completed. Every Museum in the Empire yields +5 [ICON_RESEARCH] Science. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_VP_ARTIFACT] Artifact. Contains 1 slot for [ICON_GREAT_WORK] Great Works of Art or Artifacts.'),
+	('TXT_KEY_WONDER_GALATHEA_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have a Seaport. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +2000 [ICON_RESEARCH] Science when completed. Every Museum in the Empire yields +5 [ICON_RESEARCH] Science. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_VP_ARTIFACT] Artifact. Contains 1 slot for [ICON_GREAT_WORK] Great Works of Art or Artifacts.'),
 	('TXT_KEY_WONDER_GALATHEA_QUOTE', '[NEWLINE]"True wisdom is like an ocean; the deeper you go the greater the treasures you''ll find."[NEWLINE] - Matshona Dhliwayo[NEWLINE]'),
 	('TXT_KEY_WONDER_GALATHEA_TEXT', 'The second Galathea Expedition was conceived in 1941 in discussions between journalist and author Hakon Mielche and oceanographer and ichthyologist Anton Frederik Bruun. The expedition eventually started in 1950, with its main purpose deep sea oceanography. For the use of the expedition a British sloop, HMS Leith, was acquired and renamed HDMS Galathea, which left Copenhagen in October 1950 carrying a crew of about 100 seamen and scientists. From 1950 to 1952 the expedition carried out a program of scientific exploration; the highlight occurred in July 1951 when, while investigating the Philippine Trench, scientists secured biological material from a record depth of 10,190 m (33,430 ft). This was sensational as it had been assumed that life could not exist at this sea depth; when they returned to Copenhagen in June 1952 the ship was welcomed by a crowd of 20,000 people.'),
 
 	('TXT_KEY_WONDER_WOODSTOCK', 'Woodstock'),
-	('TXT_KEY_WONDER_WOODSTOCK_HELP', 'Requires [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have an Agribusiness. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Contains 3 slots for [ICON_VP_GREATMUSIC] Great Works of Music. [NEWLINE][NEWLINE]Nearby Farms: +2 [ICON_CULTURE] Culture and [ICON_PEACE] Faith.[NEWLINE]+20 [ICON_GOLDEN_AGE] Golden Age Points if Themed.'),
+	('TXT_KEY_WONDER_WOODSTOCK_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have an Agribusiness. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Contains 3 slots for [ICON_VP_GREATMUSIC] Great Works of Musics. [NEWLINE][NEWLINE]Nearby Farms: +2 [ICON_CULTURE] Culture and [ICON_PEACE] Faith.[NEWLINE]+20 [ICON_GOLDEN_AGE] Golden Age Points if Themed.'),
 	('TXT_KEY_WONDER_WOODSTOCK_QUOTE', '[NEWLINE]"When the power of love overcomes the love of power, the world will know peace."[NEWLINE] - Jimi Hendrix[NEWLINE]'),
 	('TXT_KEY_WONDER_WOODSTOCK_TEXT', 'The Woodstock Music and Art Fair, commonly referred to as Woodstock, was a music festival held from August 15 to 18, 1969, on Max Yasgur''s dairy farm in Bethel, New York, 40 miles (65 km) southwest of the town of Woodstock. Billed as "an Aquarian Exposition: 3 Days of Peace & Music" and alternatively referred to as the Woodstock Rock Festival, it attracted an audience of more than 460,000. Thirty-two acts performed outdoors despite overcast and sporadic rain. It was one of the largest music festivals in history and became synonymous with the counterculture of the 1960s.'),
 
@@ -101,3 +468,4 @@ VALUES
 	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy and the City must be built on the Coast. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City and 1 [ICON_VP_ARTIFACT] Artifact. Start [COLOR_POSITIVE_TEXT]20[ENDCOLOR] Turns of "We Love the King Day". +10% [ICON_STRENGTH] Defense in the City. Contains 1 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE][ICON_CITY_STATE]City-State [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] Bonus: +3 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture each.[NEWLINE][ICON_CITY_STATE]City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +3 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture each.'),
 	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_QUOTE', '[NEWLINE]"Baku is like an old forgotten book that you discover in your grandmother''s attic. Once you''ve wiped off the dust and delved into its pages, you stand amazed at its treasures."[NEWLINE] - Reza Deghati[NEWLINE]'),
 	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_TEXT', 'The Palace of the Shirvanshahs is a 15th-century palace built by the Shirvanshahs and described by UNESCO as "one of the pearls of Azerbaijan''s architecture". It is located in the Inner City of Baku and, together with the Maiden Tower, forms an ensemble of historic monuments inscribed under the UNESCO World Heritage List of Historical Monuments. Since its construction the quality of the site deteriorated, and there were even attempts to demolish it. During the existence of the Azerbaijan Democratic Republic (1918 1920), a number of measures were taken to study and fix architectural monuments. In 1920, the cleaning of the palace from the age-old layers of garbage and partial repairs began, accompanied by archaeological reconnaissance. Restoration continued until, in 1992, work on the palace complex began under Niyazi Rzayev, it was due to this final stage that the historical part of Baku earned its World Heritage status. SInce then the city has became a venue for major international events, such as the 57th Eurovision Song Contest in 2012, the European Grand Prix in 2016, and the final of the 2018-19 UEFA Europa League.');
+

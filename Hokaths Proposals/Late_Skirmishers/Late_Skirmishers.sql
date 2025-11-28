@@ -146,10 +146,6 @@ VALUES
 	('UNIT_UTILITY_HELICOPTER', 'BUILDINGCLASS_AIRFIELD'),
 	('UNIT_UTILITY_HELICOPTER', 'BUILDINGCLASS_MILITARY_ACADEMY');
 
-----------------------------------------------------
--- Unit Lines - auto based on GoodyHutUpgradeUnitClass
-----------------------------------------------------
-
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
 SELECT Type, GoodyHutUpgradeUnitClass
 FROM Units
@@ -163,6 +159,10 @@ WHERE Type = 'UNIT_ANTI_TANK_GUN';
 UPDATE Units SET
 GoodyHutUpgradeUnitClass = 'UNITCLASS_UTILITY_HELICOPTER'
 WHERE Class = 'UNITCLASS_ANTI_TANK_GUN';
+
+UPDATE Unit_ClassUpgrades SET
+UnitClassType = 'UNITCLASS_UTILITY_HELICOPTER'
+WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_ANTI_TANK_GUN');
 
 -- TODO unique light tanks obsolete tech
 

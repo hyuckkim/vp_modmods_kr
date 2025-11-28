@@ -37,8 +37,8 @@
   <Blocks>
     <Mod id="5db211be-2efa-4b3c-b021-014046f8233a" minversion="0" maxversion="999" title="Devotion Ideology"/>   
     <Mod id="6db212bt-7efa-4b3c-b123-014046n8233f" minversion="0" maxversion="999" title="Harmony Ideology"/>
-    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="4" title="Hokaths  Tweaks"/>
-    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Bare Necessities (processes)"/>
+    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="4" title="Hokaths Tweaks"/>
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="12" title="Bare Necessities (processes)"/>
     <Mod id="04760492-5523-4cee-85b3-9146f5edc34f" minversion="0" maxversion="20" title="LS Durrani"/>
   </Blocks>
   <Files>
@@ -90,6 +90,13 @@
     <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_32.dds</File>
     <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_16.dds</File>
 
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_45.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_64.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_80.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_256.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_FontIcons.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_FontIcons.ggxml</File>
+
     <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_256.dds</File>
     <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_128.dds</File>
     <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_80.dds</File>
@@ -107,6 +114,7 @@
     <File md5="aef1627d0ed4c2325ee65df60d92e289" import="1">Assets/Harmony_45.dds</File>
     <File md5="dab965332957c2d120b32bf4e35ee507" import="1">Assets/Harmony_32.dds</File>
     <File md5="aef1627d0ed4c2325ee65df60d92e289" import="1">Assets/Harmony_16.dds</File>
+
     <File md5="4ff617bddaa3662b2485119f8536fcd5" import="0">Assets/IconTextureAtlases.xml</File>
 
     <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_CadetChapel_splash.dds</File>

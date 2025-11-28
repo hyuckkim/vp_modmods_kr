@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<IconTextureAtlases>
+		<!-- policies -->
+		<Row>
+			<Atlas>SF_POLICY_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>SF_PolicyAtlas_256.dds</Filename>
+			<IconsPerRow>3</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SF_POLICY_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>SF_PolicyAtlas_80.dds</Filename>
+			<IconsPerRow>3</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SF_POLICY_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>SF_PolicyAtlas_64.dds</Filename>
+			<IconsPerRow>3</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SF_POLICY_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>SF_PolicyAtlas_45.dds</Filename>
+			<IconsPerRow>3</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
+		<!-- components -->
 		<Row>
 			<Atlas>PROSPERITY_ATLAS</Atlas>
 			<IconSize>256</IconSize>
@@ -166,5 +197,44 @@
 			<IconsPerRow>1</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
-	</IconTextureAtlases>	
+	</IconTextureAtlases>
+
+	<IconFontTextures>
+		<Row>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconFontTextureFile>SF_FontIcons</IconFontTextureFile>
+		</Row>
+	</IconFontTextures>
+	<IconFontMapping>
+		<Row>
+			<IconName>ICON_IDEOLOGY_HARMONY</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>1</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_IDEOLOGY_PROSPERITY</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>2</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_IDEOLOGY_DEVOTION</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>3</IconMapping>
+		</Row>
+		<Replace>
+			<IconName>ICON_IDEOLOGY_ORDER</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>4</IconMapping>
+		</Replace>
+		<Replace>
+			<IconName>ICON_IDEOLOGY_AUTOCRACY</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>5</IconMapping>
+		</Replace>
+		<Replace>
+			<IconName>ICON_IDEOLOGY_FREEDOM</IconName>
+			<IconFontTexture>ICON_FONT_SEMPER_FI</IconFontTexture>
+			<IconMapping>6</IconMapping>
+		</Replace>
+	</IconFontMapping>
 </GameData>

@@ -406,7 +406,7 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_PLAYER_TURN';
 INSERT INTO Building_BuildingClassLocalYieldChanges
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 SELECT
-	a.Type, b.Type, c.Type, 1
+	a.Type, b.Type, c.Type, 2
 FROM Buildings a, BuildingClasses b, Yields c
 WHERE 
 a.BuildingClass = 'BUILDINGCLASS_EE_DRYDOCK' AND

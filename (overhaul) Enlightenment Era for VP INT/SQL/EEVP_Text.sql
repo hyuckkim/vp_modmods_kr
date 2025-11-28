@@ -428,7 +428,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_CLOTH_MILL_PEDIA', '방직소는 산업 혁명 당시 공장 발전의 토대를 마련한 실과 직물을 생산하는 초기의 기계화된 작업장입니다. 원래 방직소는 물레방아를 돌리기 위해 빠르게 흐르는 개울과 강에 의존했지만, 시간이 지나면서 증기를 이용해 기계를 돌리게 되었습니다.최초의 방직소는 1740년대에 영국 북부에서 개발되었지만, 곧 미국 식민지와 그 너머로 퍼져나갔습니다.'),
 -- 건선거
 ('TXT_KEY_BUILDING_EE_DRYDOCK', '건선거'),
-('TXT_KEY_BUILDING_EE_DRYDOCK_HELP', '해군 유닛 생산에 대한 [ICON_PRODUCTION] 생산력이 +15% 증가하고, 이 도시에서 생성된 해군 전투 유닛은 [ICON_STRENGTH] 전투력이 +15% 증가합니다. 인구로부터 [ICON_SILVER_FIST] 군사 유닛 보급 한도가 +5% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_CYAN]항구[ENDCOLOR]가 있어야 합니다.'),
+('TXT_KEY_BUILDING_EE_DRYDOCK_HELP', '해군 유닛 생산에 대한 [ICON_PRODUCTION] 생산력이 +15% 증가하고, 이 도시에서 생성된 해군 전투 유닛은 [ICON_STRENGTH] 전투력이 +15% 증가합니다. 인구로부터 [ICON_SILVER_FIST] 군사 유닛 보급 한도가 +5% 증가합니다.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold to Taverns, Weigh Houses, and Seaports in the City.[NEWLINE][NEWLINE]도시에는 [COLOR_CYAN]항구[ENDCOLOR]가 있어야 합니다.'),
 ('TXT_KEY_BUILDING_EE_DRYDOCK_STRATEGY', '건선거는 도시에서 훈련받는 해군 부대의 전투력을 강화하는 계몽 시대 후기의 건물입니다. 도시 내 인구에 따른 군사 유닛 공급 한도가 증가합니다. 건선거를 건설하려면 먼저 도시에 항구가 있어야 합니다.'),
 ('TXT_KEY_BUILDING_EE_DRYDOCK_PEDIA', '건선거는 선박 및 기타 수상 운송 수단의 건조와 유지 관리를 용이하게 하기 위해 침수와 배수가 가능한 직사각형 분지입니다. 건선거에서 물이 빠지는 동안 선박을 건조하거나 수리합니다. 배가 출항할 준비가 되면 선거에 물을 채웁니다. 대부분의 건선거는 해안을 따라 건설된 고정식 선거이지만, 수리를 위해 작은 선박을 실어 나를 수 있는 이동식 부선거도 있습니다.'),
 -- 화기 제작소

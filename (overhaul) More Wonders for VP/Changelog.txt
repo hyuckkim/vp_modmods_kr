@@ -1,4 +1,221 @@
 MW Changelog:
+v24:
+- adapted to VP 5.0;
+- World Wonders:
+	- new/changed:
+		- regular World Wonders:
+			- Nalanda replaced Parthenon (adapted it to VP's MUC integration);
+			- Three Gorges Dam (Information Era);
+		- Ideologies:
+			- added 2 missing World Wonders in Atomic Era:
+				- Great Hall of People (focus: Diplomatic) (Order);
+				- Nuclear Research Center (focus: Scientific) (Autocracy);
+			- revised and simplified all requirements of Ideology World Wonders;
+		- Policies:
+			- added new setting enabling additional 4th World Wonder per Policy tree (uses tag "MW-SETTING-POLICIES"):
+				- Tradition: 	Sigiriya (losing IsNoCoast requirement if a Policy WW);
+				- Progress: 	Moray Terraces;
+				- Authority: 	Krak des Chevaliers;
+				- Fealty: 		Sistine Chapel;
+				- Statecraft: 	Summer Palace (losing Forest requirement if a Policy WW);
+				- Artistry: 	Marae Arahurahu;
+				- Industry: 	Brooklyn Bridge;
+				- Imperialism: 	Panama Canal;
+				- Rationalism: 	Polar Expedition;
+			- revised some requirements of Policy World Wonders;
+			- adjusted Policy Cost for some early World Wonders;
+		- Religion:
+			- added 4 new World Wonders for those Faith-purchase buildings that have no one (by and in cooperation with @Jarcast2):
+				- Songyue Pagoda: 		gives Pagoda;
+				- Knights Hospitaller:	gives Order;
+				- Tlachihualtepetl: 	gives Teocalli;
+				- Harmandir Sahib: 		gives Gurdwara;
+			- revised all "regular" World Wonders giving any kind of Religious Building (replaced that building with other abilities):
+				- VP:
+					- Angkor Wat:
+						- removed free Mandir;
+						- reverted culture deletion;
+						- replaced +1 Great Engineer Point with +2 Great Diplomat Points;
+						- now +2 Culture and +2 Faith (was 1 and 1);
+						- added +3 Faith to local Civil Servants;
+						- added 20 Faith on Border Growth, scaling with Era;
+						- player can buy Diplomatic Units with Faith;
+					- Chichen Itza:
+						- removed free Teocalli;
+						- now +1 Faith and +3 Golden Age Points (was +1 Culture);
+						- now +60% Golden Age Length (was 50%);
+						- added 45 Faith from Victory during Golden Age in Empire;
+					- Notre Dame:
+						- removed free Cathedral;
+						- now +5 Faith and +4 Culture (was 4 and 1);
+						- now +6 Faith and +6 Golden Age Points (was 3 and 3);
+						- added +5% Culture from Faith Purchase;
+					- Rila Monastery: 
+						- replaced free Order with free Monastery;
+					- Sankore Madrasah:
+						- replaced free Mosque with free University;
+				- MW:
+					- Golden Pavilion:
+						- removed free Pagoda;
+						- now Lake bonus global (were local);
+					- Mont-Saint-Michel (removed free building and also reworked):
+						- removed free Monastery;
+						- now +4 Faith per 5 Citizens (was 2 per 5);
+						- now +1 Food, +1 Gold and +1 Golden Age Point (was 2 Gold and 2 Golden Age Points);
+						- now +1 Production, +3 Gold and +5 Tourism as enhanced yields (was 3 Gold and 3 Tourism);
+						- now enhanced yields at Computers (was Electricity);
+						- added +1 Food and +1 Gold to all Sheep;
+						- now can be constructed on:
+							- 1-tile island in 2-tile range from a mainland;
+							- on an end of a peninsula surrounded by 5 tiles of water connected to mainland;
+		- balance changes of existing World Wonders:
+			- VP:
+				- Forbidden City (buff):
+					- reverted culture and gold changes;
+				- Globe Theater (change):
+					- now requires any Guild (was Bath);
+				- Petra (change):
+					- deleted Great Engineer Points;
+					- now +3 Culture and +1 Gold (was +2 Culture);
+				- Stonehenge (change): 
+					- now +1 Great Scientist Point (was Great Engineer Point);
+				- Temple of Artemis (change):
+					- deleted Great Engineer Points;
+					- now +12% global Food (was +10%) and +30% Production towards Archery units (was +25%);
+			- MW:
+				- Ahu Tongariki (rework):
+					- deleted Forest and Jungle bonuses;
+					- deleted Forest and Jungle requirements;
+					- now +2 Faith on Coast (was +1);
+					- now +1 Production to local Quarries (was Culture to all);
+					- added +1 Culture to all Stones;
+				- Altamira Cave (buff):
+					- now Resource bonuses are global (were local);
+				- Brooklyn Bridge (rework);
+					- deleted free Great Diplomat;
+					- now 20 Influence on construction (was 100);
+					- added +1 Science;
+					- added 50 Prodution and 50 Science on Great Person expending (300 in Atomic Era after scaling);
+				- El Ghriba Synagogue (nerf):
+					- now 10% Gold from Faith Purchase (was 15%);
+				- Goebekli Tepe (change):
+					- brought back Mountain Requirement in light version (was Desert);
+					- moved science bonus to all Shrines (was from local Mountain);
+				- Majorville Medicine Wheel (nerf):
+					- deleted basic Faith bonus;
+				- Malwiya Minaret (change):
+					- now requires 1 Quarry instead of Stone Works (on Hard);
+				- Meenakshi Temple (nerf):
+					- now gives +1 Faith per 6 Citizens (was 1 per 4);
+					- now converts 5% Faith Purchase into Food (was 20%);
+				- Mohenjo Daro (buff): 
+					- removed Desert requirement (Hard);
+					- added no Coast requirement (Light);
+					- now +2 Food (was +1);
+					- now +1 Production per 2 Citizens (was 1 per 4);
+				- Skara Brae (nerf):
+					- removed basic Food bonus;
+					- removed Flat requirement;
+				- Sigiriya:
+					- reduced defense bonus to 4 (was 10);
+				- Solovietsky Monastery (buff):
+					- removed City Supply bonus;
+					- replaced Production and GAP with increased +2 Faith and +2 Great Admiral Points;
+					- now +25% Production to Naval Units (was 15%);
+					- added 15% Production conversion to Food;
+				- Tembleque Aqueduct (change):
+					- now grants Food from Faith Purchases (was Production);
+				- Wartburg:
+					- reduced defense bonus to 7 (was 10);
+		- Flavoured Help Texts:
+			- removed hated [ICON_MUSHROOM], [ICON_FLOWER] and [ICON_WORKER] (in some cases) and replaced it with more intuitive texts;
+			- all original help texts are cleared, and only lua abilities are added there instead (rest can be seen in improved VP tooltip);
+			- all Flavoured Help Texts are now used ONLY for World Wonder popup screen;
+			- all Flavoured Help Texts are now massively revised, spellchecked and all bonuses are added inside in a smart way;
+		- added compatibility check for few mods:
+			- @gwennog's: Brittany and Ainu (Village replacements) and Tehuelche (Camp replacement);
+			- @jarcast's: Italy and Navajo (Village replacements);
+			- @pineppledan's: Timurids (Village replacement);
+			- @Hinin's: Benin (Citadel replacement);
+		- added AI generated civilopedia texts for all World Wonders added in this mod (by @jarcast2 aka dephi);
+		- slightly reworked the formatting of few quote texts;
+		- some wonders were renamed to better fit the realism;
+		- few more improvement replacements from custom civs added to the requirement lists (by @gwennog);
+	- fixed:
+		- World Wonders:
+			- Falun Mine:
+				- now GPP granted starting from Medieval Era (was Classical);
+			- Ggantija:
+				- added missing parenthesis;
+			- Itsukushima Shrine:
+				- now boosts only Ocean tiles (was Coast and Ocean);
+				- deleted doubled requirements;
+			- Kilwa Kisiwani:
+				- now bonus yields to resources are global (were local);
+			- Panama Canal:
+				- added Coast requirement (it was possible to build it on Lake);
+				- now 10-tile Landmass (was 11-tile Area);
+				- now grants +3 Gold to TR owner and +3 Gold to Sea TR (was +3 for Sea TR and +3 to your city);
+			- Tembleque Aqueduct:
+				- now grants global Distress reduction (was local);
+			- White Sands Missile Range:
+				- now have correctly nullyfied value of Policy Required like all other Policy Wonders;
+		- missing help text in Wonder Popup screen (credits to @jarcast and @hokath);
+		- lake requirements (found by @gwennog);
+		- lua dummies requiring other buildings (when settling f.e. with a Colonist);
+		- fixed and reworked numerous texts;
+		- overall clean up of the files;
+- Natural Wonders:
+	- new:
+		- added 4 new Natural Wonders:
+			- Delicate Arch,
+			- Mariana Trench,
+			- Seongsan Ilchulbong,
+			- Zhangyie Danxia.
+		- new prettier icons for some Natural Wonders (by @Putmalk);
+		- added AI generated civilopedia texts for all Natural Wonders including original ones (by @jarcast2 aka dephi);
+	- changed:
+		- Aurora Borealis: 
+			- now does not spawn on Coast (model is invisible when spawned there);
+			- renamed to Aurora (it can be Borealis or Australis);
+			- reworked its quotes, because they were too long;
+		- Bermuda Triangle: now spawns only in seas of 50 tiles or more;
+		- Ha Long Bay: added Artifact icon;
+		- Giant's Causeway: now gives +20% Work Rate to Archaeologists (was +10%);
+		- Great Blue Hole: special buldings are now mutually exclusive;
+		- Krakatoa: now ability is in nearby City (was in Capital);
+		- Mt. Fuji: now ability is in nearby City (was in Capital);
+		- Bathyscaphe Docking Bay: now +50% Production towards Submarines (was +35%);
+		- Sylvite and Tern Egg: added names, so new players would know what they are;
+		- Louisiana (shrimp): compatibility check is now reworked and also uses trigger;
+		- expanded Natural Wonder's Help texts a bit (look at Civilopedia or Natural Wonder Overview);
+		- Natural Wonder Overview shows short Help text on a "?" hover instead of normal Civilopedia text;
+		- Natural Wonder Popup:
+			- contains more colored texts for better visibility;
+			- reworked all texts (went back to the good old method a bit because there's a plenty of space for it);
+	- fixed:
+		- Deep Ocean Research Facility: now correctly boosts all sea resources (was only Tropical Fish);
+		- Uluru: bonus production towards Diplomatic Units is global (was in Capital);
+		- Mt. Sinai: now grants correct 50 Faith and ownership change (was 100);
+		- replaced Plot:Area():GetNumTiles() function with Map.GetNumTilesOfLandmass(Plot:GetLandmass()) function;
+		- moved adjacent and on tile promotions to the "Abilities" section of the Natural Wonder Popup screen;
+		- added few missing civilopedia entries for new Natural Wonders;
+		- multiple text corrections and updates;
+	- cleaned:
+		- deleted 43-civ files (new solution implemented in previous version should work here too);
+		- deleted old AssignStartingPlots.lua file;
+		- revised and simplified UniqueNaturalWonderAbilities.lua file;
+		- revised NaturalWondersCustomMethods.lua file;
+		- deleted old print statements in lua files;
+		- deleted unnecessary New Reef tags;
+- Buildings:
+	- Fletcher:
+		- added back eligible combat types for Yerba de la Fleche (Archery and also Melee and Mounted for longer life of the promotion);
+	
+v23.7:
+- finally added new file that substitutes only changed function of asp.lua, so no more problems with incompatibility after an update (thanks to @azum4roll);
+- fixed invisible Natural Wonder icons on strategic map;
+
 v23.6:
 - fixed lua error in Natural Wonder Overview;
 - updated AssignStartingPlots.lua file to latest (VP 4.18.4);
@@ -198,5 +415,758 @@ v19:
 - disabled EE compatibility until it will be redone/updated/fixed;
 - multiple minor text fixes;
 
-v0.18 and earlier changelogs:
-- they can be found on the forum; game begins from v19 and it was a long journey!
+v0.18 (RETURN TO SEAS):
+- added:
+    - added brand new models for Giant's Causeway (with new colour), Mt. Everest, Lake Retba (now 3D), Dallol (now sort of 3D) and Bermuda Triangle;
+    - added 5 new Natural Wonders: Eye of the Sahara, Great Blue Hole, Galapagos, Ha Long Bay and Zhangjiajie;
+    - added new resource: Giant Tortoise exclusive for Galapagos;
+- changed:
+    - Grand Mesa now provides global Production bonus instead of local in capital;
+    - updated AssignStartingPlots.lua file for VP 3.7;
+- fixed:
+    - fixed Giant's Causeway's Tourism values;
+    - fixed multiple broken requirements related to Forest/Jungle ownership;
+    - fixed text issue with White Sands Missile Range;
+    - adaptation to latest VP versions;
+    - minor correction in the files;
+	
+v0.17.2:
+- fixed Mt. Fuji placement on Snow (now only 1 snow nearby allowed);
+- updated VP 3.0 AssignStartingPlots.lua file with my changes (so now I'm sure it's up to date);
+- lowered number of NWs per map to 2 times map size (so 2/4/6/8/10/12; was 3 times map size, so 3/6/9/12/15/18);
+- increased base distance between two NWs to 11 tiles (same as VP; was 9);
+
+v0.17.1:
+- fixed Mount Rushmore requirements (now correctly Mountain+Forest on Hard, or only Mountain on Light);
+- fixed Rockefeller's bonus culture that is now global (was local);
+- fixed Rockefeller's texts.
+
+v0.17 (FOUNTAIN OF GOODS):
+- important:
+    - updated for VP 3.0!   
+    - added BALANCE_CORE_WORLD_WONDER_SECOND_PREVIOUS_ERA_COST_MODIFIER, so now there are four stages of modifiers (40%-35%-30%-20%);
+- new:
+    - new models for existing Natural Wonders (still in progress; by @ghost toast):
+        - Giant's Causeway;
+        - Dallol;
+    - reworked Bioluminescent Bay animation is now visible also in FoW (download new effects v5 or later by @ghost toast!);
+    - 2 new World Wonders:
+        - Aqueduct of Padre Tembleque (Renaissance Era - tier 2);
+        - Svalbard Global Seed Vault (Information Era - tier 1; art by @gwennog);
+    - 2 new standalone buildings strongly related to Tropical Fish resource (ideas in cooperation with @gwennog; art by @gwennog):
+        - Fletcher: gives new promotion Yerba de la Fleche which grants Archery units (new lua code) small chance to instakill an enemy with poison! (art by @gwennog); both players receive notifications when the unit is killed/dead;
+        - Seafood Station: has compatibility with Loisiana civ's Shrimp resource! (by @Hinin and @gwennog);
+    - new Natural Wonder Overview features:
+        - left clicking on Natural Wonder button now runs Natural Wonder popup window (finally!);
+        - hovering over question mark icon in Pedia column shows Pedia entry in form of a tooltip;
+        - additional info about NW abilities deleted from civilopedia (because popup finally works);
+- balance:
+    - Skara Brae now requires (as additional ORs) and boosts Rice and Maize;
+    - Tropical Fish is now revealed at Fishing (was Pottery);
+- fixes:
+    - Tropical Fish fixes:
+        - added missing industrial model for Tropical Fish;
+        - added missing boost to Tropical Fish from Bioluminescent Bay;
+    - added TechCityTrade value to all new resources (MINING for Sylvite, SAILING for Tropical Fish and PHYSICS for Tern Egg);
+    - deleted UCS reference;
+    - Mt. Fuji now might have maximum 1 snow adjacent (was unlimited);
+    - Mt. Fuji now might have maximum 2 mountains adjacent (was unlimited);
+    - Dallol now always on flat tile (was flat or hill);
+    - Salar has protection from Mountain attack (there was a situation when it was closed by mountains around);
+    - Revolutionary Museum now has updated splash image (upsy!);
+    - numerous text fixes (most important ones are mentioned):
+        - now Grand Mesa uses SILVER_FIST icon instead of WAR icon for supply boost;
+        - all supply modifiers now have their text revised to emphasize they are based on the population (local or global);
+        - now Natural Wonder popup says that all units get the promotion instead of new ones;
+        - Curiosity Rover now correctly mentions about global GAP boost (was local);
+        - moved Potala Palace text changes from MW to UCS;
+- miscellanous:
+    - another tweak to Natural Wonders Overview icon (by @gwennog);
+    - old Great Barrier Reef is now called "(unused)..." with changed color to grey;
+    - all new resources have additional info about their source (World Wonder, Natural Wonder) in help texts;
+    - moved all resource definitions out to the separate file;
+    - created new folders (Buildings) and cleaned up existing ones;
+    - prepared some new art for upcoming new Natural Wonders (Great Blue Hole) (by @gwennog);
+    - added some new code (currently unused) for upcoming new Natural Wonders (Great Blue Hole);
+	
+v0.16.1:
+- brand new icon for Bermuda Triangle, so I could get rid of my "temporary" one that existed for two years or even more (by @gwennog);
+- revised Natural Wonder Overview icon with new sinking animation (by @gwennog);
+- now in GlobalSetting.sql file there's correct mentioning, that hard requirements are default;
+- fixed crucial error in lua file, so light requirements for Kremlin, Mont Saint-Michel, Panama Canal and few others didn't load correctly.
+
+v0.16 (GREATER NATURAL BALANCE):
+- new:
+    - added new model for Bioluminescent Bay (by @ghost toast);
+    - added 3 new promotion icons, but only 2 are used for new promotions; 1 of them is reserved for different NW not added yet (by @gwennog)
+    - added new panel in Diplo Corner (you can open it like the Wonder Planner) called Natural Wonders Overview (has unique icon):
+        - now you can see all discovered Natural Wonders in one panel;
+        - all Natural Wonders have additional info gathered in one table (icon and name, civilopedia link, current owner (without spoilers), distance with city that is closest to it);
+        - you can sort Natural Wonders by each of those columns to get the most info from it;
+        - at the bottom you can see additional information about the overall number of Natural Wonders discovered and how many left to find;
+        - right clicking on Natural Wonder button centers map on its tile, so it's now easy to locate;
+        - left clicking on Natural Wonder button... does nothing until I add something;
+        - left clicking civilopedia button... does nothing until I add something;
+- balance:
+    - reworked number of base yields and yields per Era to be equalized between multi-tile NWs (now total of 27 at the end of the game for all sizes):
+    (this will lower the initial yield inflation, especially for multi-tile NWs and even out the chances for players being near any-tile NW)
+    (exceptions for now are:)
+    (- Bermuda Triangle, because this is the wonder literally filled with bad effects (unlike the others), so this had to be at least slightly compensated)
+    (- Salar de Uyuni, because tiles have different sizes, so yields are split in 2:1 ratio)
+        - 1-tile NWs now have 6 yields and 3 yields per Era;
+        - 2-tile NWs now have 3 yields per tile and 2 (or 1) yields per tile per Era;
+        - 3-tile NWs now have 2 yields per tile and 1 yields per tile per Era;
+    - now all multi-tile Natural Wonders have their abilities split between their tiles, so to access their full power, you must own all tiles;
+        - Great Barrier Reef and Giant's Causeway code is now reworked to have its abilities split;
+    - rebalanced NWs abilities:
+    (to compensate yield nerfs, and also to balance strongest and weakest Natural Wonders, this was needed)
+        - Barringer Crater (added something universal, because current ability was very, very late game only and focused on only one victory condition):
+            - added new ability (10 GAP per Tech);
+        - El Dorado (added some spice):
+            - increased gold reward to 250 (was 100);
+            - added new ability (+2 Gold to all Golds);
+        - Grand Mesa (allowed better use of additional Supply Cap):
+            - added new ability (+20% Production towards Mounted Units in Capital);
+        - Krakatoa/Old Faithful (these two NWs below swapped their abilities; I really wanted to rework Krakatoa, and because Old Faithful also was bad then...):
+            - (Krakatoa) deleted both abilities (I didn't like them at all);
+            - (Krakatoa) added new ability (+2 Scientist points; from Old Faithful);
+            - (Krakatoa) added new ability (+1 Food and Science to all Scientists);
+            - (Old Faithful) deleted scientific bonus (moved to Krakatoa);
+            - (Old Faithful) added new ability (-10% global Unhappiness modifier; moved from Krakatoa);
+            - (Old Faithful) added new ability (+1 Science to all Engineers);
+        - Lake Victoria (added something bigger than only Fresh Water and Internal TRs):
+            - added new ability (-10% global Hurry Cost Modifier);
+        - Mt. Kailash (supported very narrow Missionary promotion):
+            - added new ability (+2 Faith to all Monumets and Temples);
+        - Mt. Kilimanjaro (compensated great nerf made to promotion in previous update):
+            - added new ability (+1 Culture to Ivory);
+        - Mt. Sinai (added something simulating meeting with God on the mountain):
+            - added new ability (50 Faith on gaining possesion on this NW);
+        - Rock of Gibraltar (created defensive flavour):
+            - deleted adjacent yields bonus;
+            - added bonus defense on tile (20%);
+            - added new bonus (+10% global city defense);
+        - Uluru (expanded diplo flavour):
+            - added new ability (+20% towards Diplomatic Units in Capital);
+        - Salar de Uyuni (increased production flavour in place of food):
+            - deleted total food bonus;
+            - added new ability (+3 Production to all Factories and (any) Power Plants including Tidal PP from VP 2.7) split between both tiles in 2:1 ratio;
+            - added new ability (+10% Production towards Spaceship Parts) split in 7:3 ratio;
+        - Great Barrier Reef (because it is now proper multi-tile NW, abilities could be split):
+            - two existing special abilities split between tiles: "Core" (+1 Science to Sea luxuries) and "Side" (+1 Food to all Fishing Boats);
+            - swapped Jungle tile and Atoll chances (now Jugle will be more common), to decrease the situation when you cannot reach GBR tile;
+        - Giant's Causeway (new promotion is to support second older ability):
+            - added new promotion (Curiosity) used by Archaeologists;
+            - decreased bonus Tourism from Landmarks to 20% (was 25%) and split it by half;
+        - Mt. Everest (increased Tourism impact):
+            - adjacent Tourism for Mountains increased to 2 (was 1);
+            - added new promotion (Roof of the World) used by Recon units;
+            - decreased global Tourism bonus to 5% (was 10%);
+        - Lake Retba (made it more interesting):
+            - added new ability (+10% Food during WLTKD);
+            - added new ability (15 Tourism on Birth);
+        - Bioluminescent Bay (spiced up a bit):
+            - added Tropical Fish aside the Fish bonus;
+            - added new bonus (25 Tourism for each Civilian unit creation; unique table use!);
+    - Old Faithful is now placed on Hill (new method), but from the testing, it's not changing anything to the model;
+    - now all Natural Wonders have 0 (yes, Z E R O) additional Happiness if their tile is claimed by the civ (was 2);
+    - Buddhas of Bamyan now give also +2 Faith for each CS Ally (was only +3 GAP);
+- fixes:
+    - fixes in AssignStartingPlots.lua:
+        - excluded top and botom row and east and west column of the map from NWs targetting if map is not wrapping;
+        - totally disabled fertility check (now Oceanic, Mountanious and fully Desert NWs are possible);
+            - because of that all NWs had to have their requirements revised (yup, again), but this time I did it more carefully and with more patience;
+            - now all NWs have much more possible spawning plots than ever in this mod;
+            - some of NWs have their additional lua methods revised or expanded; the most important parts changed are:
+                - Salar de Uyuni now has small chance to spawn an Oasis around;
+                - Mt. Sinai has new method creating Mountains and deleting features around;
+                - GBR now shows only in equatorial area;
+                - Bermuda is not seen near poles;
+                - Mt. Paektu changes adjacent Snow to Tundra and places some forests around;
+                - Retba has much wider range of possible plots;
+                - Mt. Everest is much more accessible and profitable (less Snow, more Tundra around);
+                - and many, many more which I don't enumerate, because it's too much;
+    - fixed and expanded lua file placing Dummies for NWs:
+        - regular building's booleans in lua are now checked on game load;
+        - added a possibility to use dummy policies for Natural Wonders;
+        - added a possibility not to use any dummy building at all (only dummy policy for example);
+        - fixed "pCity=nil" bug of Mt. Paektu; reworked the code placing regular buildings for NWs;
+        - small fixes in the code;
+    - fixed NaturalWonderCustomMethods.lua file:
+        - returned the code for harder spot conditions for Salar de Uyuni, while fixing potential "no resource on map" bug that old code could cause;
+        - fixed crucial error for Mt. Paektu placing rivers outside of the map;
+        - fixed crucial error for Lake Victoria (no possible mountains around);
+        - fixed crucial error for Krakatoa (no possible spots for islands);
+    - added temporary (I hope) fix for resolution buffing NWs (deleted it until new table is added to VP);
+    - fixed the code for Rock of Gibraltar and Krakatoa yields per Era;
+    - moved Sacred Steps (Sri Pada) promotion to different table and added missing Civilian unit types to its list;
+    - small code fix in lua placing sv_icons for NWs;
+    - World Wonder's part fixes:
+        - fixed Thule "Operational Range" promotion icon and the promotion album size;
+        - fixed CN Tower description after VP 2.7 release;
+        - included missing Menin Gate's woman sound file;
+    - fixed another bunch of text errors;
+- miscellanous:
+    - Mt. Paektu model is slightly scaled down (from 1 to 0.85);
+    - simplified sql code for new Natural Wonder's promotions - now it's easier to add new ones;
+    - simplified sql code for new Natural Wonder's regular buildings - now it's easier to add new ones;
+    - reworked Natural Wonder popup screen:
+        - moved Happiness info to the title to save some place and get rid of irrelevant stuff;
+        - recoloured Natural Wonder name in Natural Wonder popup screen to gold (was cyan);
+        - moved all abilities up, so now there's more place for more valueable text additions;
+        - reworked/optimized the code for "map abilities"; now semi-automated;
+        - reworked quotes:
+            - few simple fixes and tweaks;
+            - few quotes changed to something more related to the wonder (Grand Mesa, Sri Pada, Uluru, Bermuda Triangle, Dallol, Mt. Everest):
+                - Mt. Everest got two new quotes (as second NW), to respect both men who climbed it's peak for the first time;
+    - reworked civilopedia:
+        - deleted old out of date Help texts (called Game Info);
+        - added new "one liners" as Help texts for all NWs; these are sort of TL&DR version of wider civilopedia descriptions (yet not present for the new Natural Wonders);
+        - deleted yields per Era and adjacent yields from the list (created github feature request for that);
+        - fixed Technology color;
+    - reworked mod main page:
+        - updated and fixed crucial errors in the modmod main page;
+        - added early version of "one liners" to each Natural Wonder;
+        - fixed colouring and font of most important parts;
+        - fixed spacing and added more important information;
+        - added multiple icons to enrich the mod page;
+        - split the op (Natural Wonders part) using new posts added by admins;
+    - split Natural Wonders album onto two separate albums (Natural Wonders and Buildings related to them);
+    - deleted unnecessary "Copy.txt" file;
+    - deleted "the" article from Barringer Crater, Great Barrier Reef, Grand Mesa and Giant's Causeway;
+    - added numerous print statements and comments for easier code reading and debuging;
+    - updated NaturalWonders.ods file with new stuff (also planned), redesigning and recent tests;
+	
+v0.15 (NATURAL BALANCE):
+- new:
+    - added new Natural Wonders:
+        - Mt. Paektu (by @ghost toast)! 1-tile; located at Tundra, creates 3 new rivers on the map that starts their flow from its caldera;
+    - brand new and high quality strategic view icons for all new Natural Wonders! (by @gwennog)
+    - added Matterhorn sv_icon to the library for later times, currently in use by Mt. Everest (by @gwennog);
+    - added new model for Great Barrier Reef, substituting glitchy and ugly original one (by @ghost toast);
+    - added new Bonus Resource: Tropical Fish exclusive to some sea-based Natural Wonders (currently to one) (model by @ghost toast and new icon by @gwennog);
+    - created new method for Natural Wonders placement in AssignStartinPlots.lua file (will be included with latest VP as well) (with @azum4roll);
+- balance:
+    - Mt. Everest gives +1 Tourism to adjacent Mountains;
+    - simplified (nerfed) Dallol by deleting +2 Production from Sylvite;
+    - reworked the concept of Altitude Training (Kilimanjaro) promotion:
+        - now given to only Recon units (was all Land units);
+        - now gives +1 Sight to compensate the nerf;
+    - reworked feature spawning process for Great Barrier Reef:
+        - now chance to spawn: land tile with Jungle (10%), Atoll (20%), Coral (30%) and Tropical Fish (40%);
+        - more features and/or resources spawn (up to 6, was 2);
+        - they spawn around whole GBR (previously only around middle tile);
+    - Krakatoa now creates up to 3 island tiles (hill, grassland) around the ring of water that surrounds it;
+    - totally revised spawning frequencies for Natural Wonders:
+        - reduced requirements for most of them to make them easier to spawn;
+        - added some new NWCustomPlacement methods (Uluru, Barringer Crater) and adjusted few other;
+        - optimized "OccurrenceFrequency" values from scratch (with new algorithm all NWs have equal chances to spawn):
+            - on Tiny Continents map frequencies vary from 18-48% (tested on 50 games);
+            - on Small Continents map frequencies vary from 20-55% (only one NW has 65%) (tested on 60 games);;
+            - on Standard Tectonic map (by @N.Core) frequencies vary from 27-80% (tested on 15 games);
+    - decreased slightly the minimum distance between Natural Wonders (factor changed from 11 to 9 - latest VP change: now it doesn't rely on map height) (by @azum4roll);
+    - optimized movement cost and sight blockaded for numerous wonders; info in updated op;
+    - Goddess of Nature now splits yields propotionally between tiles of multi-tile Natural Wonders (by @pineappledan);
+    - changed Torre del Oro requirements to allow building Drydock (added Coast, deleted Fort);
+- fixes:
+    - finally fixed the issue with invisible sv icons for new Natural Wonders! (with @N.Core); they currently overlap other UI elements, but work!
+    - fixed Dallol placement (missing terrain requirements);
+    - fixed Salar de Uyuni placement (rare conditions where B part couldn't be placed);
+    - fixed Great Barrier Reef placement (only 2 of 3 posible directions were used);
+    - fixed Great Barrier Reef's Atolls placement (now small chance for placing land with Jungle instead of Atoll; was impossible);
+    - fixed Mt. Fuji yields per era (missing +1 Faith);
+    - fixed, revised and optimized all Civilopedia entries for Natural Wonders;
+    - fixed multiple text errors (mostly in Natural Wonders' part);
+    - fixed alignment of sv Resource icons;
+    - fixed definition of sv_icons for new Resources;
+    - fixed Natural Wonders' icons (placement, size, broken shadows);
+    - fixed Goddess of Nature not working for new Natural Wonders (PseudoNaturalWonders) by using other db table (by @pineappledan);
+    - fixed Millau Viaduct requirements (missing IsNoCoast entry);
+    - added missing texts for EE World Wonders (light requirements);
+    - updated spreadsheets for Natural Wonders and World Wonders;
+- miscellanous:
+    - renamed "Holy Mountain" promotion to "Mahaprasthanika Parva" (by @pineappledan)
+    - renamed "Kumsusan Palace of the Sun" to "Revolutionary Museum" (by @Kim Dong Un):
+        - same icon and abilities;
+        - changed name and splash image;
+    - changed setting names to be easily recognized in Community table (f.e. MW-MAX-ERA --> MW-SETTING-MAX-ERA); I hope all stuff was found and changed correctly; report any issues;
+    - optimizations to the folder and files tree:
+        - all settings, automatic mod detections, custom options and overall definitions moved to new GlobalSettings.sql file;
+        - all atlases' definitions moved to corresponding folders to new files (promotions, resources);
+        - some files moved to new folders;
+        - all of this allows deleting either part 1 (World Wonders) or part 2 (Natural Wonders) if someone is not happy with it and wants to play with only one of them;
+    - moved "Per Era yields" to same line as "Yields" for NW popup window to make more place for other effects;
+    - added icons for Global Seed Vault (by @gwennog);
+    - added base code for Eye of the Sahara (only model is missing);
+    - cleaning lua files for NWs;
+    - deleted or commented most of lua print check statements (to make the lua.log file smaller and easier to debug);
+    - deleted unnecessary lua file named "unused";
+    - updated credits file.
+	
+v0.14.13:
+- slightly improved model placement of Mount Everest (now it doesn't hover over the surface and what's more important, doesn't get the Mountain bonuses like other Natural Wonders);
+- fixed wrong quote sounds links for Empire State Building and Bletchley Park;
+- now "A. Lincoln" instead of "Abraham Lincoln" in Mt. Rushmore quote text (same like other presidents);
+
+v0.14.12:
+Changelog:
+- increased Sigiriya and Golden Dagon Pagoda theming bonuses slightly to be better than Museum;
+- corrected Cristo Redentor and Prora requirements;
+- added New Beliefs Mod reference in main mod file;
+- updated AssignStartingPlots.lua file to latest VP 2.6 (mostly for new Maize and Rice);
+
+v0.14.11:
+- fixed missing +5% RCS in Thule promotion;
+- reworked Plain of Jars to work properly:
+         ==> food bonus moved to Internal TRs
+         ==> base faith boosted by +1;
+		 
+v0.14.10:
+- buiding tooltips now show correct values for WW Production Cost penalties;
+- penalties now marked red instead of green (because they are penalties, hello!)
+- slightly improved that text.
+
+v0.14.9:
+- Removing Culture with Substitution:
+	- Terracota Army ==> +1 Production (for better theming; massive army need production; and it already has culture-based bonus)
+	- Forbidden Palace ==> +1 Gold (whole wonder uses gold, so why don't add flat one?)
+	- Stonehenge ==> +1 Science (science fits better and themes with the free Council)
+	- Pyramid ==> +1 Golden Age Point (it already has a GAP bonus, so matches better)
+	- Chichen Itza ==> +1 Golden Age Point (it already has a GAP bonus, so matches better)
+	- Statue of Zeus ==> +1 Great General Point (better theming for warmongers)
+	- Kremlin ==> +2 Great General Points (this wonder was just weak from what I saw; that's why it got +2)
+	- Great Lighthouse ==> +1 Great Admiral Point (early or even earliest (?) wonders with that yield; not many having that)
+- Just removing Culture:
+	- Machu Picchu
+	- Temple of Artemis
+	- Great Library
+	- Colossus
+	- Great Wall
+	- Himeji Castle
+	- Summer Palace
+	- Notre Dame
+	- Porcelain Tower
+	- Red Fort
+	- Slater Mill
+	- Brandenburg Gate
+	- Palace of Westminster
+	- Pentagon
+	- CN Tower
+	- Bletchley Park
+	- CERN
+	- Great Firewall
+	- Hubble
+	- ISS
+	- Grand Canal
+	- Crystal Palace
+	- UN
+	- Motherland Calls
+	- Prora Resort
+	- all HQs
+- MW Wonders that lost their Culture:
+	- Great Zimbabwe
+	- Darjeeling Himalayan Railway
+
+v0.14.1-v0.14.8:
+- small updates on github;
+
+v0.14:
+- New World Wonders:
+    - Ancient Era:             	Plain of Jars;
+    - Classical Era:        	Sigiriya;
+    - Atomic Era:            	Habitat-67; Vostok Station; Milestii Mici Winery; Thule Air Base; Kumsusan Palace of the Sun;
+    - Information Era:         	Curiosity Rover; Global Positioning System;
+- Rework:
+    - due to VP 1.2.1 changes to St. Basil's Cathedral and Motherland Calls:
+        - Karlstejn is now Rila Monastery with exactly the same abilities, but artwork, quote, civilopedia change (before VP update it was St. Basil's Cathedral); Karlstejn art is unused);
+        - Kremlin fixed and updated;
+        - Motherland Calls fixed and updated; moved from Electronics to Nuclear Fission;
+- Features:
+    - fresh updated AssignStartingPlots.lua files for standard and 43-civ versions;
+- Balance:
+    - changed production percentage cots modifiers for WW from 50/35/25 to 40/35/30;
+    - World Wonders:
+        - El Ghriba (nerf):
+            - reduced bonus from Faith purchase to 15% Gold (was 25%);
+        - Golden Pavilion (boost):
+            - local Forest and Jungles lost their Food bonus (was +1);
+            - local Rivers got new +1 Food bonus;
+            - flat yields increased to +3 Faith (was +2);
+        - Marae Arahurahu (huge nerf):
+            - reduced GMusP to +1 (was +2);
+            - reduced Arahurahu bonus to 120% (was 150%);
+            - reduced bonus from theming to +8 Food (was +10);
+        - Meenakshi Temple (huge nerf):
+            - reduced bonus from Faith purchase to 20% Food (was 33%);
+            - reduced base yield to +1 Food (was +4);
+        - Orszaghaz (rework):
+            - removed flat yields;
+            - increased global bonus to +15% Golden Age Points (was +10%);
+            - added new flat bonus +1 League Vote;
+        - Hollywood (rework):
+            - removed +5% to GArtP, GWriP and GMusP;
+            - reduced flat yields to +1 Tourism (was +5);
+            - added new bonus +2 Tourism to all Guilds;
+            - added new bonus 75 Tourism on Policy unlock;
+        - Concorde (rework):
+            - removed +10% global Tourism bonus;
+            - increased base yield to +3 Tourism (was +2);
+            - increased bonus from WLTKD to +25% Tourism (was +15%);
+            - increased bonus from Oil and Aluminum to +3 Tourism (was +2);
+        - Sputnik (nerf): now flat +1 Science (was +5);
+        - Anitkabir (nerf): now flat +2 Culture (was +5) and +3 Tourism (was +4);
+        - Arecibo (nerf): now flat +4 Science (was +6);
+        - Palm Jumeirah (boost/nerf):
+            - deleted flat yields;
+            - now +7 Tourism from Atolls (was +6)
+            - now +4 Gold from Oils (was +6);
+        - Taipei 101 (huge nerf): deleted bonus CS points on construction;
+- Fixes:
+    - Kuk renamed to Kuk Swamp;
+    - moved MW-HELP setting to MainRulesForWonders.sql file like any other option;
+    - many promotions (White Sands, Sanbo's, Hidden Artifacts, Damascus Steel) are now not lost on upgrade, which should be set since the beginning;
+    - fixed Marae Arahurahu base yields: now +1 GAdmP (was +2);
+    - fixed Hollywood yields from Guilds: now +2 Culture (was +3) and +2 Gold was (was +3);
+    - fixed Cristo Redentor (now does not require Flat);
+    - fixed Gate of the Sun (now correctly places dummy buildings);
+    - fixed Fasil Ghebbi and Versailles requirements (missing IsNoCoast);
+    - added light version of EE requirements (missing);
+    - fixed some EE building cost;
+    - added many missing ideology requirement info in World Wonder tooltips;
+    - minor but numerous text fixes;
+	
+v0.13.5:
+- increased the cost modifiers for WWs already built to 50/35/25% (was 35/20/15%);
+- changed requirements in hard mode:
+    - Majorville Medicine Wheel: added Hill; removed NoCoast;
+    - Nazca Lines: added NoWater; removed Camp;
+    - Parthenon: added Coast;
+    - Terracota Army: increased the number of Mines/Quarries to 2 (was 1);
+    - Autobahn: added Factory and Arsenal;
+- fixed Great Zimbabwe 3 Mines/Camps requirement (was 2);
+- fixed Autobahn requirement description (had Manufactory);
+- fixes and clarified descriptions in configuration part (MainRulesForWonders.sql file);
+
+v0.13.4:
+- fixed Anitkabir/Temple of Artemis requirement;
+- deleted unnecesary print statements;
+- corrected Anitkabir quote text;
+
+v0.13.3:
+- fixes:
+	- corrected Meenakshi help text;
+	- decreased faith gain on death to 10/Death (was 15 before previous change, because I though I did it only for military units);
+	- moved faith on death info from promotion to wonder
+
+v0.13.2:
+- Fixes:
+	- corrected help texts for: Hidden Artifacts (wrong value), El Ghriba and Meenakshi (faith conversion style) and Marae Arahurahu (promotion error);
+	- incresed Arahurahu's bonus to 150% of CS converted to Culture on Kill or Faith on Death (I thought it is a flat value);
+
+v0.13.1:
+- Changes:
+	- moved all stuff from TechEnhancedTourism to Building_TechEnhancedYieldChanges;
+- Balances:
+	- Kuk (differentiating it from Aqueduct, giving more flavour):
+    - deleted +5% Production bonus after citizen is born;
+    - added bonus when discovering Steam Power: +5 Production in this City and +2 Production in all other Cities;
+- Fixes:
+	- corrected Altamira and Kuk non-flavoured help texts;
+	- added many missing yield info about Enhanced Yields in non-flavoured texts;
+	- fixed Enhanced Tourism yields for Nazca lines (was 4);
+	- deleted Enhanced Tourism from Karnak (shouldn't be there);
+
+v0.13:
+- New stuff:
+    - 6 new World Wonders:
+        - added 3 new Transportation World Wonders: Interstate Highway System, Autobahn and Concorde; all mutually exclusive with themselves as well as other Transportation WWs;
+        - added 3 new Ideology World Wonders: Hollywood (Freedom), Sputnik (Order) and Anitkabir (Autocracy);
+    - added 20 new quote sounds from @pineappledan; 1 quote reworked (Zócalo);
+    - added brief info about NWs bonuses and parameters in Civilopedia; now you can check them any time (so far it was possible only during first encounter);
+    - UCS compatibility:
+        - new help text for Potala Palace;
+    - EE compatibility:
+        - new help texts for EE World Wonders;
+        - modified splash screen starting points for EE WWs;
+        - cleaned up policy cost for all VP, EE and MW World Wonders after reshuffling the tech tree;
+        - cleaned up production cost for all VP, EE and MW World Wonders after reshuffling the tech tree;
+        - added requirements to EE World Wonders;
+        - reshuffled WWs end techs:
+            - Summer Palace moved to EE-Sovereignty;
+            - EE-Versailles moved to Acoustics (split 2 EE WWs from the same tech);
+            - Solovietsky Monastery to EE-Exploration (EE was too late for this WW; filling empty tech);
+            - Bakken to EE-Exploration (EE was too late for this WW);
+            - House of Trade to Economics (filling empty tech after moving Bakken and Peterhof from);
+            - Peterhof to EE-Flintlock (filling empty tech);
+            - Siku Quanshu to EE-Manufacturing (filling empty tech);
+    - new Promotion Icons including Thule Air Base for future plans;
+    - added "Light" version of requirements;
+- Updates:
+    - updated descriptions of few WWs changed recently by VP;
+    - added more detailed info for Sylvite in civilopedia;
+    - updated standard AssignStartingPlots.lua file to latest VP 7-1-3 version;
+        - brought back old Fertility code in AssignStartingPlots.lua file;
+    - updated AssignStartingPlots.lua file for 43-civ to latest VP 7-1-3 version (finally);
+    - updated WorldWonders.odt file;
+    - now Natural Wonder popup window informs about unit type that gets the promotion;
+    - requirement info now mentions that resource must be improved;
+    - MaxEraRestriction is now enabled by default and much easier to configure (parameter MW-MAX-ERA);
+- Balances:
+    - Fleet of the Sun promotion now gives your fleet bonus vs Air units and another bonus if adjacent unit is friendly; flanking bonus deleted;
+    - Polar Expedition now requires a City near north or south pole instead of lack of Water;
+    - buffed:
+        - Qalhat: deleted +100% TR Range and increased bonus culture from TRs to +3 culture instead (was +2);
+        - Autobahn:
+            - WorkerRate increased to 30% (was 10%; quite noticeable);
+            - Defense bonus nerfed to 7 CS per City (was 10);
+        - Trans-Siberian Railway: promotion gives 25% WorkerRate buff (was 20%);
+    - nerfed some latest buildings:
+        - White Sands Missile Range: now +33% production to Missiles and +10% production to Spaceship Parts (was +35% for both);
+        - Millau Viaduct: now +5 global Tourism (was +10%) and converts 5% of production to Tourism (was 10%); to make it less powerful in that matter than Palm Jumeirah;
+        - Arecibo Observatory: now +1 science to all Scientists (was +2) and +2 science to all Observatories (was +3);
+        - Palm Jumeirah: now +3 Tourism (was +5), converts 15% of production to Tourism (was 25%) and 10% of production to Gold (was 15%);
+        - Taipei 101: now +2 Gold (was +4) and +2 gold to all Trade Posts and Towns (was +3);
+    - fixed and balanced NWs frequencies (didn't change that since adding 3 new NWs; some NWs don't appear at all!);
+        - new method for Krakatoa: more universal, still looks for big island and avoids continents;
+        - new method for Bioluminescent Bay: now coded via lua which allowed changing and requiring tiles on land; requires some grassland and jungle around;
+        - Fountain of Youth: now looks for some smaller land (not island!);
+        - Lake Retba: now looks for small to medium Island;
+        - Great Barrier Reef: spawns 2 Atolls around in random spots; slightly changed method of placing;
+        - numerous changes in spawning methods for mentioned and other NWs (Rock of Gibraltar, Giant's Causeway, Mt. Kailash, Cerro de Potosi, El Dorado, Lake Victoria etc.);
+        - deleted polar region restriction beside Great Barrier Reef (it can be much close to polar now);
+    - Krakatoa now reduces food by 2 (was -1) and gives 2 science around instead;
+    - World Wonder's requirements:
+        - Temple of Artemis now requires Forest or Jungle instead of Fresh Water;
+        - Rockefeller Center now requires Coast and River instead of Oil;
+        - White Sands Missile Range now requires Desert instead of Uranium;
+        - White Sands Missile Range now Imperialism WW instead of planned Thule Air Base;
+    - changed based World Wonder cost modifiers to balance increased number of World Wonders:
+        - same era modifier now 35% (was 25%); now you should think twice before building a Wonder, because next will me about one third more expensive;
+        - previous era modifier now 20% (was 15%);
+        - earlier era modifier now 15% (was 10%);
+- Fixes:
+    - totally reverted lua code for IsNoCoast requirement; database confirmed as not working properly;
+    - reverted deletion of RoughRangedAttackModifier parameter of Imperial Army promotion;
+    - corrected and unified NWs popup descriptions;
+    - fixed Museum Island global GArtP bonus (was local);
+    - fixed Trans-Siberian Railway promotion: now gives Double Movement on Tundra/Snow (was not working -1 Movement Point);
+    - fixed/upgraded Kamikaze:
+        - added missing requirement to PerTurn function;
+        - added new function checking unit state after combat (useful during double attack; now updates every time, not only on turn beginning);
+    - added missing bonus to production of Spaceship Parts in White Sands Missile Range;
+    - fixed policy cost for Behaddou, Neushwanstein, Slater Mill, Sistine Chapel, Summer Palace and Motherland Calls;
+    - fixed production cost for all VP and MW wonders (neglected by VP makers);
+    - added info in Bermuda popup screen, that it stops unit entering its tiles;
+    - again fixed Forum Romanum requirement text about policies needed;
+    - fixed Gate of the Sun lua code (it spawned dummy building for every player that build the Walls);
+    - fixed Orszaghaz description; now it says you get 1 Vote per 1 Defensive Pact (was per 2);
+    - fixed World Wonder blocking by changing WActive parameter (now uses lua);
+    - deleted WFake unused feature from the mod (added in predecessor mod);
+    - added IsDummy value for blocked World Wonders (now they cannot be used by City-States quests);
+    - added missing grassland requirement for Stonehenge;
+    - fixed colouring of "place for..." phrase in requirement part;
+    - fixed lots of typos and text errors;
+	
+v0.12:
+- 15% bonus from Fleet of the Sun was my mistake, as I didn't change the value, but changed the description. Should be 10% as you mentioned;
+- Indeed, flanking of Fleet of the Sun is not working on ranged naval units, so I will cut it from Carriers, Subs and Naval Ranged. Maybe I should chnge the bonus to more universal? Any ideas?
+- Imperial Army gives the Rough terrain bonus, when enemy unit is on Rough terrain for both types. How did you noticed, that Ranged unit bonus is applied otherwise?
+- Imperial Army gives 3 bonuses: RoughAttack, RoughDefense and RoughRangedAttackMod. It seems that last one is useless, because 1st one works for both unit types. I will cut it, because now they got 20% bonus total from this promo.
+- Kamikaze activates after turn change. That's how it is programmed now; You don't need to do reloading.
+- Kamikaze is not applied to civilians in my games, but I did small change/code reverse, because I missed helicopters. Maybe it helped.
+- I will reverse my old code for IsNoCoast then. Database contains some errors.
+
+v0.11:
+- updated AssignStartingPlots.lua file to the latest verision of VP;
+- Decreased Marae XP to 15 per GW and Wartburg to 5 per GW.
+- Added info in description that it requires GW inside the wonder.
+- Added info that Forum needs 1 policy less;
+- Decreased Forge of Damascus bonus to 10% from 20% to be less overpowered and more comparable to Jinete.
+
+v0.10:
+- everything mentioned in beta builds from github: rev. 1+2, rev. 3, rev. 4, rev. 5, rev. 6 and rev. 7;
+- new promotion icons from @Asterix Rage; now all new promotions have their corresponding icons; thank you @Asterix Rage;
+
+v0.10 rev 7:
+
+    VP fixed bug regarding placing new resources (Wine, Salt, Coal...);
+    VP fixed or is going to fix case with building requirements (Japanese guilds, Polish Barbican), so use latest MUCfVP mod and latest VP build to make sure this bug is not present. I temporarily (and I hope once for all) reverted the lua code, so got back to sql part; @pineappledan. what's the current state?
+    VP added new feature IsNoCoast in sql table, so I used it instead of lua code; it doesn't change anything, beside performance in the gameplay, unless it's broken, but be careful and let me know if WWs having such requirement can be built on coast;
+    VP added new table value to AdjacentFeatureYields, so I updated that too;
+    added 2 missing descriptions for Mount Rushmore and Sanbo Honbu;
+
+v0.10 rev 6:
+
+    updated AssignStartingPlots.lua for latest VP (both standard and 43-civ);
+    added Adjacent yields for Natural Wonders (thanks @HungryForFood);
+    added Adjacent yield info in wonder popup panel;
+    fixed yield for Bioluminescent Bay;
+    added Mount Rushmore and Sanbo Honbu (without texts for now);
+    balance:
+        added Plantation requirement to Temple of Artemis;
+        fixed Kuk requirement;
+        lowered Wartburg XP;
+        changed Damascus yields;
+        added unique promo for Golden Dagon Pagoda instead of free Archaeologist;
+        reworked slightly Krak des Chevaliers;
+		
+v0.10 rev 5:
+
+    Orszaghaz now gives 1 free Policy instead of 1 Congress Vote; updated plan for rest ideology wonders in the op;
+    Mountain yields now given directly to the city of the wonder (Gate of the Sun, Goebekli Tepe, Banff Springs Hotel) or correspoding city on the map (Arecibo, Darjeeling);
+    added dummy to Darjeeling; Darjeeling now global bonus to Mountains (should be from the beginning);
+    fixed descriptions for Mountains and Karnak's Flood Plains (also X100 function);
+    fixed description for Arecibo (wrong yields);
+    fixed many op errors;
+
+v0.10 rev 4:
+
+    added missing bonus for Bioluminescent Bay with value +1:c5science:/Fish;
+    added new Promo Icon from Dallol promotion from @Asterix Rage;
+    added 2 new corrected promo icons from @Asterix Rage;
+
+v0.10 rev 3:
+
+    new modern era World Wonders: Polar Expedition, Akihabara Electric Town and Rockefeller Center; all without restrictions;
+    Hubble S. T. now requires Research Agreement instead of Observatory;
+    Statue of Liberty now requires 10 specialists instead of 5;
+    fixed texts about :c5faith: and :c5gold: purchases saying its global (it's of course local);
+    changed WW popup screen alignment for some wonders added recently;
+
+v0.10 rev 1-2:
+
+    5 new wonders: Millau Viaduct, Arecibo Observatory and White Sands Missile Range in Atomic Era and Palm Jumeirah and Taipei 101 in Information Era; all currently without restrictions;
+    reworked (simplified) lua code placing dummies for WWs, so it would be nice to verify them all; I checked only few;
+    moved field for choosing voicebanks type to the beginning of the file;
+    corrected and updated help texts in files;
+    cleaned up some files;
+    updated .odt table;
+    moved Hubble S. T. and Sydney Opera House in tech tree (in the same tier);
+    added 2 new Pedia texts (Ait Benhaddou and Darjeeling H. R.) + all for new wonders added in this update;
+    updated art names and prepared them to future updates;
+
+v0.9:
+
+    added model (simple) for Dallol;
+    added quotes for numerous WWs recorded by @pineappledan and his wife;
+    changed quote for Ruhr Valley;
+
+v0.9 rev 7b:
+
+    fixed for Altamira description (different ability and description);
+    fixed last SQL error I missed;
+
+v0.9 rev 7:
+
+    fixed bug when Mountains doesn't receive yields from WWs;
+    added missing ability for Dallol;
+    fixed missing Gibraltar league vote;
+	
+v0.9 rev 6:
+
+    fixed dummies showing on CS tasks;
+    fixed Summer Palace requirement (lake);
+    fixed Toy Train promotion (now can move via Mountains);
+    fixed description for Great Zimbabwe (after rework);
+    all WWs spawning resources now require at least one tile where this spawn is possible (Wieliczka, Lavaux (instead of Grass), Ruhr Valley (instead of Mountain)); still not spawning when it should be - VP bug?
+    Statue of Liberty now requires at least 5 Specialists in the city instead of 4 CS Allies;
+    added lua code for multi-tile NWs using same dummies for each tile (Giant's Causeway, preparation for future Eye of the Sahara); please check;
+    brought back parameters for Lost in Time and Space promotion (only for latest VP fix);
+    Lost in Time and Space now lasts 3 turns; minimum movement for unit with promotion is 1;
+    Giant's Causeway now 2-tile wonder;
+    Lake Retba has changed yields;
+    Bermuda Triangle now inflicts 25 DMG on tile;
+    added Dallol (currently using Bioluminescent Bay's model; didn't have time for that);
+    cleaned and updated multiple files;
+    text fixes;
+
+v0.9 rev 5:
+
+    added Even More Resources for VP as reference (because lua conflict and additonal sea resources);
+    temporarily fixed an issue with unique buildings not taken into account as requirements (lua); I don't like it, but because VP ignored me I had to do smth;
+    temporarily fixed an issue with some units not taken into account by new promotions (Trans-Siberian Railway and Lost in Time and Space) (sql); added missing unitcombats;
+    temporarily fixed CTD when Worker embarked on Bermuda tile; lowered malus from Lost in Time and Space to -2; @Gazebo is on the case;
+    Great Barrier Reef now gives +1 :c5food: to Fishing Boats and +1 :c5science: to Sea luxuries (was to Fishing Boats);
+    fixed Giant's Causeway description;
+    temporarily fixed sv_icon for Mt. Everest hiding under mountain sv_icon; now considered as flat terrain;
+    added Bermuda Triangle collisions to AssignStartingPlots.lua; fixed no resource on the map issue;
+
+v0.9 rev 4:
+
+    fixed passability for Lake Victoria;
+    Lake Victoria now passable on Sailing instead of Fishing;
+    added fully functional Bermuda Triangle with some abilities changed:
+        it is now passable after researching Compass instead of Navigation;
+        it grants promotion if you enter its tile (not adjacent);
+        promotion Bermuda Triangle gives -3:c5moves: for 2 turns (not -2:c5moves: for 3 turns); this means that you will be moving once in 2 turns by 1 tile with civilian units;
+        when you enter its tile, movement is stopped;
+        it has teture split between all 3 tiles (still bland, because of water);
+        it is spawned between 3-4 tiles of land on its corners;
+        much higher yields to compensate the negatives;
+        BE CAREFUL: don't embark worker directly on its tile; CTD; VP informed;
+    added info in Wonder Popup about:
+        new type of promotion gain (OnLocation);
+        finishing movement on entering the tile;
+    added new icon for Bermuda Triangle promotion from @Asterix Rage;
+
+v0.9 rev 3:
+
+    updated Great Zimbabwe's ability (no bug now);
+    changed bias for Lake Retba;
+    added potential art for few new NWs;
+    added Bioluminescent Bay, but still working on its model;
+    changed scaling for smaller part of Salar de Uyuni;
+    Giant's Causeway has changed yields;
+    few wonders have fixed movement penalty;
+    updated descriptions for WWs according to VP 8-16;
+	
+v0.9 rev 1-2:
+
+    promotion icon update for Trans-Siberian Railway from @Asterix Rage;
+    Kuk will require Jungle instead of Flat;
+    many text corrections;
+    Natural Wonders
+        fixed Old Faithful giving 1 GSciP instead of 2;
+        balanced yields and yields per era for most of NWs; now they are more worthy and powerful;
+        changed abilities:
+            Salar de Uyuni: because VP is not going to fix resources, it is now giving +5% global :c5food: per tile (stacking);
+            Grand Mesa: because VP is not going to fix XP bug, it will give +5 :c5war: Military Supply Cap instead of global +15XP;
+            Krakatoa: gives additionally +5% global :c5science:;
+            Cerro de Potosi: now only 1 :trade: TR;
+        new abilities:
+            Rock of Gibraltar: +1 :c5influence: League Vote;
+            Great Barrier Reef: +1 :c5food: and +1 :c5science: to all Fishing Boats;
+            Giant's Causeway: +25% :tourism: to all Landmarks;
+            Lake Victoria: allows global Food Trade Routes;
+        models for all 3 added NWs work now properly:
+            Salar de Uyuni has two different models for each tile; models are bigger;
+            Giant's Causeway has recoloured model from the original;
+            Mt. Everest has scaled down model from the original;
+        added few things towards new NW: Lake Retba:
+            upload_2020-8-13_18-22-27.png
+            upload_2020-8-13_18-24-33.png
+            @hokath, can you improve it?
+            upload_2020-8-13_18-24-40.png
+        made additional table with all info needed to compare NWs: upload_2020-8-13_18-25-54.png
+    prepared stuff for new Modern World Wonders;
+    added new art from @hokath to the mod folder; cleaned up folders;
+    SOON more!
+
+v0.8.3:
+
+    Banff Springs Hotel and Orszaghaz available;
+    fixed Kew Gardens.
+
+v0.8.2:
+
+    4 new World Wonders (Kew Gardens, Trans-Siberian Railway, Zócalo and Ruhr Valley);
+    modified theming bonuses (base :tourism:/:c5culture:) for all wonders in the mod; all of them were bumped to make them more competitive comparing to base buildings and other base wonders;
+    some small text tweaks;
+    fixed flavours for Darjeeling;
+    added splash art for new wonders and icons from @hokath;
+
+v0.8.1:
+
+	fix for Panama Canal and new promotion icons from @Asterix Rage
+	
+v0.8 and earlier on the forum.

@@ -44,7 +44,7 @@ UPDATE Language_en_US
 SET Text = 'World Capital Germania was the projected renewal of the German capital Berlin during the Nazi period, as part of Adolf Hitler''s vision for the future of Nazi Germany after the planned victory in World War II. It was to be the capital of his planned "Greater Germanic Reich". Albert Speer, the "first architect of the Third Reich", produced many of the plans for the rebuilt city in his capacity as overseer of the project, only a small portion of which was realised between the years 1938 and 1943. Focal points included massive monuments such as a triumphal arch based on the Arc de Triomphe in Paris, but almost one hundred metres (330 ft) high.[NEWLINE][NEWLINE]Some of the projects were completed, such as the creation of a great East–West city axis and placing the Berlin Victory Column in the centre, far away from the Reichstag, where it originally stood. Other projects, however, such as the creation of the "People''s Hall" (Volkshalle), had to be shelved due to the beginning of war, although a great number of the old buildings in many of the planned construction areas were already demolished before the war.'
 WHERE Tag = 'TXT_KEY_POLICY_GUNBOAT_DIPLOMACY_TEXT';
 
--- now that new NW, Volkeshalle
+-- now that new NW, Volkshalle
 -- free nuclear plant in xml
 -- wltkd in xml
 INSERT INTO Building_ClassesNeededInCity
@@ -73,10 +73,10 @@ FROM Yields WHERE ID<6;
 INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
-	('TXT_KEY_BUILDING_VOLKESHALLE', 'Volkeshalle'),
+	('TXT_KEY_BUILDING_VOLKESHALLE', 'Volkshalle'),
 	('TXT_KEY_BUILDING_VOLKESHALLE_HELP', 'Requires [COLOR_MAGENTA]World Capital[ENDCOLOR]. +10% [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] during a [ICON_GOLDEN_AGE] Golden Age. +1 [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] for every [COLOR_POSITIVE_TEXT]10[ENDCOLOR] [ICON_CITIZEN] Citizens in the Empire. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Nuclear Plant in the City. This City enters "We Love the King Day" for the [ICON_TURNS_REMAINING] rest of the Game.[NEWLINE][NEWLINE]Must be built in the [ICON_CAPITAL] Capital.'),
 	('TXT_KEY_BUILDING_VOLKESHALLE_QUOTE', '[NEWLINE]"Speer is generally recognized as the most able of Hitler''s subordinates and the most interesting, in that he retained throughout his membership a clear-sighted understanding of its essentially Byzantine character."[NEWLINE] - John Keegan[NEWLINE]'),
-	--('TXT_KEY_BUILDING_VOLKESHALLE_STRATEGY', 'The ultimate Wonder, Volkeshalle achieves the dream of an unparalleled City that can rule the world alone. In addition to its direct bonuses, it also provides a Nuclear Plant, which is the premier late-game Building for a large City, which an Autocrat may have neglected to research technologies toward as a result of having to vigilantly defend the Fatherland from the enemies of National Socialism.'),
+	--('TXT_KEY_BUILDING_VOLKESHALLE_STRATEGY', 'The ultimate Wonder, Volkshalle achieves the dream of an unparalleled City that can rule the world alone. In addition to its direct bonuses, it also provides a Nuclear Plant, which is the premier late-game Building for a large City, which an Autocrat may have neglected to research technologies toward as a result of having to vigilantly defend the Fatherland from the enemies of National Socialism.'),
 	('TXT_KEY_BUILDING_VOLKESHALLE_TEXT', 'The Volkshalle ("People''s Hall") was a proposal for a monumental, domed building to be built in a reconstituted Berlin (renamed as Germania) in Nazi Germany. The project was conceived by Adolf Hitler and designed by his architect Albert Speer. Doubts persisted at the time as to whether the marshy Berlin ground could have taken the load of the proposed projects (before ground penatrating radar, extremely heavy block of concrete were used to test how much weight the ground was able to carry), and no part of the building was ever constructed.[NEWLINE][NEWLINE]Visually it was to have been the architectural centrepiece of Berlin as the world capital (Welthauptstadt). Its dimensions were so large that it would have dwarfed every other structure in Berlin, including those on the north-south axis itself. The oculus of the building''s dome, 46 metres (151 ft) in diameter, would have accommodated the entire rotunda of Hadrian''s Pantheon and the dome of St. Peter''s Basilica (two buildings Hitler was particularly impressed with, both architecturally and spiritually). The temple-like nature of the domed building was noted by Speer, who surmised that the building was ultimately intended for public worship of Hitler, his successors and the German Reich, that is, it was to be a dynastic temple/palace complex of the kind Augustus built on the Palatine, where his modest house was connected to the temple of Apollo.');
 
 -- iron fist. this is actually a good time victory option, just pivot away from CS. wonders are time-friendly!
@@ -121,4 +121,11 @@ WHERE Tag = 'TXT_KEY_SOCIALPOLICY_IDEOLOGY_HEADING3_BODY';
 UPDATE Language_en_US SET
 Text = Replace(Text, 'Autocracy', 'Might')
 WHERE Tag IN ('TXT_KEY_UNIT_HELP_ZERO', 'TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY', 'TXT_KEY_WONDER_PRORA_RESORT_HELP', 'TXT_KEY_BUILDING_EHRENHALLE_HELP', 'TXT_KEY_RESPONSE_DENOUNCE_HUMAN_BELIEVES_AUTOCRACY_2', 'TXT_KEY_GENERIC_SWITCHED_TO_AUTOCRACY_2');
+
+UPDATE IconFontMapping SET
+IconName = 'ICON_IDEOLOGY_MIGHT'
+WHERE IconName = 'ICON_IDEOLOGY_AUTOCRACY';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, 'ICON_IDEOLOGY_AUTOCRACY', 'ICON_IDEOLOGY_MIGHT');
 

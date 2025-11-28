@@ -1,0 +1,31 @@
+<GameData>
+	<Features>
+		<Row>
+			<Type>FEATURE_RESTRICTED_VISIBILITY</Type>
+			<Description>TXT_KEY_FEATURE_STORM</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_STORM_HELP</Civilopedia>
+			<ArtDefineTag>NULL</ArtDefineTag>
+			<Movement>4</Movement>
+			<SeeThrough>3</SeeThrough>
+			<PortraitIndex>0</PortraitIndex>
+			<NoImprovement>1</NoImprovement>
+			<IconAtlas>IMPROVEMENTS_STORM_ICON_ATLAS</IconAtlas>
+		</Row>
+	</Features>
+	<Feature_TerrainBooleans>
+		<Row>
+			<FeatureType>FEATURE_RESTRICTED_VISIBILITY</FeatureType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+		</Row>
+		<Row>
+			<FeatureType>FEATURE_RESTRICTED_VISIBILITY</FeatureType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+		</Row>
+	</Feature_TerrainBooleans>
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_STORM</ImprovementType>
+			<FeatureType>FEATURE_RESTRICTED_VISIBILITY</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+</GameData>

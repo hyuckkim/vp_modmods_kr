@@ -238,6 +238,11 @@ WHERE BuildingClass IN (
 	'BUILDINGCLASS_EE_TAVERN'
 );
 
+-- Herbalist
+UPDATE Buildings
+SET Cost = 65
+WHERE BuildingClass = 'BUILDINGCLASS_HERBALIST';
+
 -- Non-unique Courthouse, Garden and Chancery
 UPDATE Buildings
 SET GoldMaintenance = 3

@@ -34,14 +34,15 @@ function TimerReduction(TurnReduction, pPlayer, sReason)
 	sText = sText .. "[NEWLINE][NEWLINE]There will now be just [COLOR_POSITIVE_TEXT]" .. iMaxTurns .. "[ENDCOLOR] turns total!"
 	for iAllPlayer = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do 
 		local pAllPlayer = Players[iAllPlayer]
+		local sText2 = ""
 		-- different text for the triggerer versus everyone else
 		if pPlayer ~= pAllPlayer then
-			sText = pPlayer:GetName() .. sText
+			local sText2 = pPlayer:GetName() .. sText
 		else
-			sText = "You" .. sText
+			local sText2 = "You" .. sText
 		end
 		if pAllPlayer:IsHuman() then 	
-			pAllPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, sText, "Game timer reduced!")
+			pAllPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, sText2, "Game timer reduced!")
 		end
 	end
 end

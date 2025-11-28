@@ -159,7 +159,7 @@ INSERT INTO Building_ImprovementYieldChanges
 SELECT
 	a.Type, 'IMPROVEMENT_ACADEMY', b.Type, 1
 FROM Buildings a, Yields b WHERE
-a.BuildingClass = 'BUILDINGCLASS_OXFORD_UNIVERISTY' AND
+a.BuildingClass = 'BUILDINGCLASS_OXFORD_UNIVERSITY' AND
 b.Type IN ('YIELD_TOURISM', 'YIELD_FAITH');
 
 UPDATE Language_en_US SET

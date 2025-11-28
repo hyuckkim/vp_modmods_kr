@@ -1,12 +1,143 @@
+-- wall street
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_PROSPERITY_WALL_STREET', 'BUILDINGCLASS_STOCK_EXCHANGE');
+
+INSERT INTO Building_YieldModifiers
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_WALL_STREET', 'YIELD_GOLD', 5),
+	('BUILDING_PROSPERITY_WALL_STREET', 'YIELD_PRODUCTION', 5);
+
+-- lds
+
+UPDATE Buildings SET 
+MutuallyExclusiveGroup = 665
+WHERE Type = 'BUILDING_PROSPERITY_LDS';
+
+UPDATE Buildings SET
+MutuallyExclusiveGroup = 665
+WHERE BuildingClass = 'BUILDINGCLASS_PALACE';
+-- that's not a great way to do that but i don't see another...
+
+
+INSERT INTO Building_YieldFromFaithPurchase
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_LDS', 'YIELD_FOOD', 25);
+
+INSERT INTO Building_YieldFromPurchase
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_LDS', 'YIELD_FOOD', 25);
+
+INSERT INTO Building_YieldFromBirth
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_LDS', 'YIELD_FAITH', 25);
+
+INSERT INTO Building_LakePlotYieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_LDS', 'YIELD_FOOD', 2),
+	('BUILDING_PROSPERITY_LDS', 'YIELD_CULTURE', 2),
+	('BUILDING_PROSPERITY_LDS', 'YIELD_CULTURE_LOCAL', 2);
+
+INSERT INTO Building_YieldPerXTerrainTimes100
+	(BuildingType, TerrainType, YieldType, Yield)
+VALUES 
+	('BUILDING_PROSPERITY_LDS', 'TERRAIN_MOUNTAIN',	'YIELD_CULTURE_LOCAL', 200),
+	('BUILDING_PROSPERITY_LDS', 'TERRAIN_MOUNTAIN',	'YIELD_GOLD', 200),
+	('BUILDING_PROSPERITY_LDS', 'TERRAIN_MOUNTAIN',	'YIELD_CULTURE', 200);	
+
+-- epcot
+
+INSERT INTO Building_YieldFromTech
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_EPCOT', 'YIELD_CULTURE', 75);
+
+INSERT INTO Building_GreatWorkYieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_EPCOT', 'YIELD_SCIENCE', 1);
+
+-- cadet
+
+INSERT INTO Building_DomainFreeExperiencesGlobal
+	(BuildingType, DomainType, Experience)
+VALUES
+	('BUILDING_CADET', 'DOMAIN_AIR', 30);
+
+INSERT INTO Building_YieldFromCombatExperienceTimes100
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CADET', 'YIELD_FAITH', 500);
+
+INSERT INTO Building_YieldChangesPerReligion
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CADET', 'YIELD_PRODUCTION', 300);
+
+-- rio
+
+INSERT INTO Building_GreatPersonProgressFromConstruction
+		(BuildingType, 	GreatPersonType, EraType, Value)
+VALUES 	('BUILDING_RIO_CATHEDRAL', 'GREATPERSON_ARTIST', 'ERA_MODERN', 	25);
+
+-- megachurches baby
+
+INSERT INTO Building_YieldFromFaithPurchase
+	(BuildingType, YieldType, Yield)
+SELECT
+	Type, 'YIELD_GOLD', 15
+FROM Buildings WHERE MutuallyExclusiveGroup = 666;
+
+INSERT INTO Building_YieldFromSpyRigElection
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_DREAM_CITY', 'YIELD_CULTURE', 50),
+	('BUILDING_DREAM_CITY', 'YIELD_FAITH', 50);
+
+INSERT INTO Building_BuildingClassYieldChanges
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_GRAHA_NGINDEN', 'BUILDINGCLASS_WIRE_SERVICE', 'YIELD_FOOD', 5),
+	('BUILDING_GRAHA_NGINDEN', 'BUILDINGCLASS_WIRE_SERVICE', 'YIELD_FAITH', 5),
+	('BUILDING_CRYSTAL_CATHEDRAL', 'BUILDINGCLASS_BROADCAST_TOWER', 'YIELD_GOLD', 5),
+	('BUILDING_CRYSTAL_CATHEDRAL', 'BUILDINGCLASS_BROADCAST_TOWER', 'YIELD_FAITH', 5);
+
+-- yields
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_PROSPERITY_WALL_STREET', 'YIELD_CULTURE', 4),
+	('BUILDING_PROSPERITY_LDS', 'YIELD_FAITH', 6),
+	('BUILDING_EPCOT', 'YIELD_CULTURE', 1),
+	('BUILDING_CADET', 'YIELD_CULTURE', 1),
+	('BUILDING_CADET', 'YIELD_FAITH', 3),
+	('BUILDING_RIO_CATHEDRAL', 'YIELD_CULTURE', 1),
+	('BUILDING_RIO_CATHEDRAL', 'YIELD_FAITH', 4),
+	('BUILDING_CRYSTAL_CATHEDRAL', 'YIELD_FAITH', 5),
+	('BUILDING_CRYSTAL_CATHEDRAL', 'YIELD_CULTURE', 1),
+	('BUILDING_DREAM_CITY', 'YIELD_FAITH', 5),
+	('BUILDING_DREAM_CITY', 'YIELD_CULTURE', 1),
+	('BUILDING_YOIDO_GOSPEL', 'YIELD_FAITH', 5),
+	('BUILDING_YOIDO_GOSPEL', 'YIELD_CULTURE', 1),
+	('BUILDING_GRAHA_NGINDEN', 'YIELD_FAITH', 5),
+	('BUILDING_GRAHA_NGINDEN', 'YIELD_CULTURE', 1);
+
 -- --------------------------------
 -- ----------text------------------
 -- --------------------------------
-INSERT INTO Language_ko_KR
+INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
         -- national wonders
 	('TXT_KEY_BUILDING_PROSPERITY_WALL_STREET', 'Financial District'),
-	('TXT_KEY_BUILDING_PROSPERITY_WALL_STREET_HELP', 'Requires [COLOR_MAGENTA]Prosperity[ENDCOLOR]. +5% [ICON_GOLD] Gold and +5% [ICON_PEACE] Faith in the City in which it is built. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 2000 [ICON_GOLD] Gold per turn produced (caps at 25% of all [ICON_CITY_STATE] City-States ever alive). [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'),
+	('TXT_KEY_BUILDING_PROSPERITY_WALL_STREET_HELP', 'Requires [ICON_IDEOLOGY_PROSPERITY] [COLOR_MAGENTA]Prosperity[ENDCOLOR]. +5% [ICON_GOLD] Gold and +5% [ICON_PEACE] Faith in the City in which it is built. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 2000 [ICON_GOLD] Gold per turn produced (caps at 25% of all [ICON_CITY_STATE] City-States ever alive). [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'),
 	('TXT_KEY_BUILDING_PROSPERITY_WALL_STREET_STRATEGY', 'Prosperity is nothing without a healthy income. Keep it up and you will be rewarded with free votes at the World Congress. Well... "free".'),
 	('TXT_KEY_BUILDING_PROSPERITY_WALL_STREET_TEXT', 'A Financial District is home to a large number of internationally significant banks, businesses, and stock exchanges. An International Financial Center, sometimes abbreviated to IFC, is a non-specific term usually used to describe an important participant in international financial market trading, usually having at least one major stock market. During much of the 20th century, the United States and its financial capital, New York City, were the leaders. But since the 1990s, with the rise of a multipolar world with new regional powers and global capitalism, numerous financial centres have challenged the predominance of Wall Street, particularly from Asia, which some analysts believe will be the focus of new worldwide growth.'),
 
@@ -17,17 +148,17 @@ VALUES
 
 	-- world wonders
 	('TXT_KEY_WONDER_EPCOT', 'Epcot'),
-	('TXT_KEY_WONDER_EPCOT_HELP', 'Requires [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Receive 75 [ICON_CULTURE] Culture when you discover a Technology, scaling with Era. +1 [ICON_RESEARCH] Science from [ICON_GREAT_WORK] Great Works in all Cities.'),
+	('TXT_KEY_WONDER_EPCOT_HELP', 'Requires [ICON_IDEOLOGY_PROSPERITY] [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Receive 75 [ICON_CULTURE] Culture when you discover a Technology, scaling with Era. +1 [ICON_RESEARCH] Science from [ICON_GREAT_WORK] Great Works in all Cities.'),
 	('TXT_KEY_WONDER_EPCOT_QUOTE', '[NEWLINE]"The best way to get started? Quit talking and start doing!"[NEWLINE] - Walt Disney[NEWLINE]'),
 	('TXT_KEY_WONDER_EPCOT_TEXT', 'The Experimental Prototype Community of Tomorrow, shortened to EPCOT, was an unfinished concept for a planned community, intended to sit on a swath of undeveloped land near Orlando, Florida. It was created by Walt Disney in collaboration with the designers at Walt Disney Imagineering in the 1960s. Based on ideas stemming from modernism and futurism, and inspired by architectural literature about city planning, Disney intended EPCOT to be a utopian autocratic company town.[NEWLINE][NEWLINE]After Disney''s death in 1966, the company felt his grand vision was impractical. However, it laid the groundwork for EPCOT Center, a theme park that retained the core spirit of Disney''s vision. The park was divided into two distinct areas: Future World reprises the idea of showcasing modern innovation through educational entertainment attractions within avant-garde pavilions, while World Showcase highlights the diversity of human cultures from various nations. The enormous geodesic sphere houses a 15-minute ride that takes guests on a time machine-themed experience, demonstrating how advancements in human communication have helped to create the future one step at a time.'),
 
 	('TXT_KEY_WONDER_RIO_CATHEDRAL', 'Cathedral of St. Sebastian'),
-	('TXT_KEY_WONDER_RIO_CATHEDRAL_HELP', 'Requires [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. When you complete a building from the Modern Era or later, gain 25% progress towards a [ICON_GREAT_ARTIST] Great Artist. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Cathedral in the City. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 33%.[NEWLINE][NEWLINE]Requires a Teocalli anywhere in the Empire.'),
+	('TXT_KEY_WONDER_RIO_CATHEDRAL_HELP', 'Requires [ICON_IDEOLOGY_PROSPERITY] [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. When you complete a building from the Modern Era or later, gain 25% progress towards a [ICON_GREAT_ARTIST] Great Artist. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Cathedral in the City. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 33%.[NEWLINE][NEWLINE]Requires a Teocalli anywhere in the Empire.'),
 	('TXT_KEY_WONDER_RIO_CATHEDRAL_QUOTE', '[NEWLINE]"Every time I drive into Rio from the airport, I see the city for the first time and think how strange it is."[NEWLINE] - Chico Buarque[NEWLINE]'),
 	('TXT_KEY_WONDER_RIO_CATHEDRAL_TEXT', 'The Metropolitan Cathedral of Saint Sebastian is home to the cathedra of the Archbishops of the city of Rio de Janeiro, Brazil. The church is dedicated to Saint Sebastian, the patron saint of Rio de Janeiro. The cathedral was designed by Edgar de Oliveira da Fonseca in a modern style based on Mayan architectural style of pyramids. The current cathedral was built between 1964 and 1979 and replaced as seat of the Archdiocese. The New Cathedral, as it is sometimes called, is located in the center of the city. Conical in form and with a 96 metres (315 ft) internal diameter - 106 metres of external diameter - and an overall height of 75 metres (246 ft). Inside, the area measures 8,000 square meters and sufficient 5,000 seats (it has a standing-room capacity of 20,000 people). The cathedral''s four rectilinear stained glass windows soar 64 metres (210 ft) from floor to ceiling.'),
 
 	('TXT_KEY_WONDER_CADET', 'Cadet Chapel'),
-	('TXT_KEY_WONDER_CADET_HELP', 'Requires [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +30 XP for all Air Units constructed in the Empire. +3 [ICON_WAR] Military Supply. Gain +3 [ICON_PRODUCTION] Production for every World Religion that has [COLOR_POSITIVE_TEXT]at least one[ENDCOLOR] follower in this City.[NEWLINE][NEWLINE]When Units created by this City gain Experience through combat, receive [ICON_PEACE] Faith equal to 5x the gained Experience.'),
+	('TXT_KEY_WONDER_CADET_HELP', 'Requires [ICON_IDEOLOGY_PROSPERITY] [COLOR_MAGENTA]Prosperity[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +30 XP for all Air Units constructed in the Empire. +3 [ICON_WAR] Military Supply. Gain +3 [ICON_PRODUCTION] Production for every World Religion that has [COLOR_POSITIVE_TEXT]at least one[ENDCOLOR] follower in this City.[NEWLINE][NEWLINE]When Units created by this City gain Experience through combat, receive [ICON_PEACE] Faith equal to 5x the gained Experience.'),
 	('TXT_KEY_WONDER_CADET_QUOTE', '[NEWLINE]"We better be prepared to dominate the skies above the surface of the earth or be prepared to be buried beneath it."[NEWLINE] - USAF Rotorheads[NEWLINE]'),
 	('TXT_KEY_WONDER_CADET_TEXT', 'The United States Air Force Academy Cadet Chapel, completed in 1962, is the distinguishing feature of the Cadet Area at the United States Air Force Academy north of Colorado Springs. Originally controversial in its design, the Cadet Chapel has become a classic and highly regarded example of modernist architecture, and was named a U.S. National Historic Landmark in 2004.[NELWINE][NEWLINE]The most striking aspect of the chapel is its row of seventeen spires. The structure is a tubular steel frame of 100 identical tetrahedrons, each 75 feet (23 m) long, weighing five tons, and enclosed with aluminum panels. The tetrahedrons are spaced a foot apart, creating gaps in the framework that are filled with 1-inch-thick (25 mm) colored glass. The Cadet Chapel itself is 150 feet (46 m) high, 280 feet (85 m) long, and 84 feet (26 m) wide. The front façade, on the south, has a wide granite stairway with steel railings capped by aluminum handrails leading up one story to a landing. At the landing is a band of gold anodized aluminum doors, flanked by gold anodized aluminum panels, designed and detailed to match the doors.[NEWLINE][NEWLINE]Inspired by chapels at Sainte-Chapelle in France and the Basilica of San Francesco d''Assisi in Italy, architect Walter Netsch stacked the spaces on two main levels. The Protestant nave is located on the upper level, while the Catholic and Jewish chapels and a Buddhist room are located beneath it. Beneath this level is a larger room used for Islamic services and two meeting rooms. Each chapel has its own entrance, and services may be held simultaneously without interfering with one another.'),
 
@@ -51,3 +182,6 @@ VALUES
 	('TXT_KEY_WONDER_GRAHA_NGINDEN_HELP', 'Requires the [COLOR_MAGENTA]Charmismata[ENDCOLOR] Policy. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Cathedral in the City. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 100%. 15% of the cost of [ICON_PEACE] Faith Purchases are converted into [ICON_GOLD] Gold. +5 [ICON_FOOD] Food and [ICON_PEACE] Faith from all Wire Services in the Empire.'),
 	('TXT_KEY_WONDER_GRAHA_NGINDEN_QUOTE', '[NEWLINE]"God provides all our needs, even the licenses."[NEWLINE] - Abraham Alex Tanuseputra[NEWLINE]'),
 	('TXT_KEY_WONDER_GRAHA_NGINDEN_TEXT', 'Nginden Bethany Church is an evangelical megachurch in Surabaya, Indonesia. The senior pastor of this community is Pdt. David Aswin Tanuseputra since 2012, replacing his father Pdt. Abraham Alex Tanuseputra who founded the church after a child he hit with his car was "resurrected". In 2020, the attendance is 140,000 people. Graha Bethany Nginden founded Bethany Care, a health center open to everyone that assists the needy and works frequently with the Red Cross.[NEWLINE][NEWLINE]American missionaries brought Pentecostal doctrines to Indonesia in 1921. The Union of Pentecostal Churches was founded in 1924, later renamed to Pentecostal Church of Indonesia. In 1946, a group split from Pentecostal Church of Indonesia, founding Bethel Full Gospel Church. In 1998, the church numbered 725,000 believers in 1320 churches. By 2010, the number of believers increased to 2.5 million. Half of the members are Chinese people living in Indonesia.');
+
+
+

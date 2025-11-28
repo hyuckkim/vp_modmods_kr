@@ -1,5 +1,3 @@
-print("This is the modded CityStateStatusHelper from EUI - CBP- CSD")
-------------------------------------------------------
 -- CityStateStatusHelper.lua
 -- Author: Anton Strenger
 --
@@ -38,7 +36,11 @@ local civ5_mode = type(MouseOverStrategicViewResource) == "function"
 
 local newLine = "[NEWLINE]"
 
-local iEmbassy = GameInfoTypes.IMPROVEMENT_EMBASSY
+--local iEmbassy = GameInfoTypes.IMPROVEMENT_EMBASSY
+local tIsEmbassyImprovement = {}
+for row in DB.Query("SELECT ID FROM Improvements WHERE IsEmbassy=1") do
+    tIsEmbassyImprovement[row.ID] = true
+end
 
 local eMinorTraitCultured = MinorCivTraitTypes.MINOR_CIV_TRAIT_CULTURED
 local eMinorTraitMilitaristic = MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC
@@ -476,7 +478,16 @@ function GetCityStateStatusToolTip(majorPlayerID, minorPlayerID, isFullInfo)
 		
 		-- Possible actions:	
 			-- Embassies
-			if minorPlayer:GetImprovementCount(iEmbassy) > 0 then
+			local bIsEmbassyCheck = false
+			
+			for k, v in pairs(tIsEmbassyImprovement) do
+				if minorPlayer:GetImprovementCount(k) > 0 then
+					bIsEmbassyCheck = true
+					break
+				end
+			end
+
+			if bIsEmbassyCheck --[[minorPlayer:GetImprovementCount(iEmbassy) > 0--]] then
 				table_insert(tips, L("TXT_KEY_CSTATE_CANNOT_EMBASSY"))
 			else
 				table_insert(tips, L("TXT_KEY_CSTATE_CAN_EMBASSY"))
@@ -489,7 +500,7 @@ function GetCityStateStatusToolTip(majorPlayerID, minorPlayerID, isFullInfo)
 		
 			-- Marriage (only Austria UA)
 			if minorPlayer:CanMajorMarry(majorPlayerID) then
-				table_insert(tips, "[ICON_RES_MARRIAGE]" .. L("TXT_KEY_UCS_HELPER_ACTION_MARRIAGE"))
+				table_insert(tips, "[ICON_MARRIAGE]" .. L("TXT_KEY_UCS_HELPER_ACTION_MARRIAGE"))
 			end
 		
 		-- Influence
@@ -789,12 +800,12 @@ function GetActiveQuestText(majorPlayerID, minorPlayerID)
 		-- CBP
 		-- Denied Quest Influence
 		if minorPlayer:IsQuestInfluenceDisabled(majorPlayerID) then
-			sIconTextOther = sIconTextOther .. "[ICON_VP_NOINFLUENCE]"
+			sIconTextOther = sIconTextOther .. "[ICON_NOINFLUENCE]"
 		end
 			
 		-- Married
 		if bnw_mode and minorPlayer:IsMarried(majorPlayerID) then
-			sIconTextOther = sIconTextOther .. "[ICON_RES_MARRIAGE]"
+			sIconTextOther = sIconTextOther .. "[ICON_MARRIAGE]"
 		end
 			
 		-- Coup
@@ -1017,12 +1028,12 @@ function GetActiveQuestToolTip(majorPlayerID, minorPlayerID)
 		-- CBP
 		-- Denied Quest Influence
 		if minorPlayer:IsQuestInfluenceDisabled(majorPlayerID) then
-			table_insert(tTooltipOther,"[ICON_VP_NOINFLUENCE] " .. L("TXT_KEY_CITY_STATE_DISABLED_QUEST_INFLUENCE_YES_TT", minorPlayer:GetName()))
+			table_insert(tTooltipOther,"[ICON_NOINFLUENCE] " .. L("TXT_KEY_CITY_STATE_DISABLED_QUEST_INFLUENCE_YES_TT", minorPlayer:GetName()))
 		end
 
 		-- Married
 		if minorPlayer:IsMarried(majorPlayerID) then
-			table_insert(tTooltipOther,"[ICON_RES_MARRIAGE] " .. L("TXT_KEY_DIPLO_MAJOR_CIV_DIPLO_STATE_MARRIED_TT"))
+			table_insert(tTooltipOther,"[ICON_MARRIAGE] " .. L("TXT_KEY_DIPLO_MAJOR_CIV_DIPLO_STATE_MARRIED_TT"))
 		end
 
 		-- Coup

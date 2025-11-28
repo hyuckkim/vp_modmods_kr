@@ -80,3 +80,11 @@ INSERT  INTO ArtDefine_USnF
 
 INSERT INTO ArtDefine_USnFModCompatibility (USnF_ModMod)
 SELECT 'SemperFidelis';
+
+---------------------------
+-- add icons to things
+---------------------------
+UPDATE Language_en_US SET Text = Replace(Text, '[COLOR_MAGENTA]Autocracy[ENDCOLOR]', '[ICON_IDEOLOGY_AUTOCRACY] [COLOR_MAGENTA]Autocracy[ENDCOLOR]');
+UPDATE Language_en_US SET Text = Replace(Text, '[COLOR_MAGENTA]Order[ENDCOLOR]', '[ICON_IDEOLOGY_ORDER] [COLOR_MAGENTA]Order[ENDCOLOR]');
+UPDATE Language_en_US SET Text = Replace(Text, '[COLOR_MAGENTA]Freedom[ENDCOLOR]', '[ICON_IDEOLOGY_FREEDOM] [COLOR_MAGENTA]Freedom[ENDCOLOR]');
+

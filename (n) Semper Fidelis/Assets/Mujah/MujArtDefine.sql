@@ -18,5 +18,5 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 	SELECT	('ART_DEF_UNIT_MEMBER_LS_DUR_MUJAHIDEEN'), Scale, ZOffset, Domain, ('ararm1.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_WW2_INFANTRY');
 
-		INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
+INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
   VALUES ('ART_DEF_UNIT_LS_DUR_MUJAHIDEEN', 'Unit', 'SV_MujahUnit.dds');

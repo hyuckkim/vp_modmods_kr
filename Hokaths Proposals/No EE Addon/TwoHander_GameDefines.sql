@@ -92,6 +92,11 @@ WHERE Type = 'UNIT_LONGSWORDSMAN';
 
 ---UNIQUE UNITS----
 
+-- all sword UU need to obsolete at 2Hander instead
+UPDATE Units
+SET ObsoleteTech = 'TECH_CHEMISTRY'
+WHERE Type IN (SELECT UnitType FROM Civilization_UnitClassOverrides WHERE UnitClassType = 'UNITCLASS_SWORDSMAN');
+
 UPDATE Civilization_UnitClassOverrides 
 SET UnitClassType = 'UNITCLASS_2HANDER'
 WHERE UnitType IN ('UNIT_FRENCH_MUSKETEER', 'UNIT_GERMAN_LANDSKNECHT');
@@ -228,7 +233,7 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ----------------------------------------------------
 
 INSERT INTO UnitPromotions (Type, PediaType, IconAtlas, PortraitIndex, Sound) VALUES
-('PROMOTION_2HANDER',        'PEDIA_MELEE',      'vpee_promoAtlas', 00,'AS2D_IF_LEVELUP');
+('PROMOTION_2HANDER',    'PEDIA_MELEE',      'vpee_promoAtlas', 00,'AS2D_IF_LEVELUP');
 
 UPDATE UnitPromotions
 SET Description = 'TXT_KEY_'||Type, Help = 'TXT_KEY_'||Type||'_HELP', PediaEntry = 'TXT_KEY_'||Type, CannotBeChosen = 1

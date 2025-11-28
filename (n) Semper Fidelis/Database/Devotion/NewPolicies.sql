@@ -3,11 +3,6 @@ INSERT INTO Policy_BuildingClassYieldChanges
 SELECT  'POLICY_STATE_RELIGION', b.BuildingClass, a.Type, 1
 FROM Buildings b, Yields a WHERE b.Cost = -1 AND b.FaithCost > 0 AND a.Type IN ('YIELD_FAITH', 'YIELD_GOLD', 'YIELD_CULTURE', 'YIELD_GOLDEN_AGE_POINTS');
 
-UPDATE Language_en_US
-SET Text = 'Annual Festivals'
-WHERE Tag = 'TXT_KEY_BELIEF_WORLD_CHURCH_SHORT';
-
-
 INSERT INTO UnitPromotions_CivilianUnitType
 	(PromotionType, UnitType)
 SELECT
@@ -80,9 +75,9 @@ VALUES
 INSERT INTO Policy_ConquerorYield
 	(PolicyType, YieldType, Yield)
 VALUES	
-	('POLICY_OATH', 'YIELD_FOOD', 30),
-	('POLICY_OATH', 'YIELD_CULTURE', 30),
-	('POLICY_OATH', 'YIELD_FAITH', 30);
+	('POLICY_OATH', 'YIELD_FOOD', 50),
+	('POLICY_OATH', 'YIELD_CULTURE', 50),
+	('POLICY_OATH', 'YIELD_FAITH', 50);
 
 -- morality police
 
@@ -164,7 +159,16 @@ INSERT INTO Policy_GoldenAgeYieldMod
 VALUES
 	('POLICY_MESSIAH', 'YIELD_FAITH', 20);
 
+-----------------------------------
 -- armageddon hacks
+-----------------------------------
+
+INSERT INTO Policy_YieldFromKills
+	(PolicyType, YieldType, Yield)
+VALUES
+	('POLICY_ARMAGEDDON', 'YIELD_FAITH', 225);
+
+-- nuclear missile dummy
 INSERT INTO UnitClasses
 		(Type, 					DefaultUnit)
 SELECT	'UNITCLASS_DEVOTION_NUCLEAR_MISSILE','UNIT_DEVOTION_NUCLEAR_MISSILE';
@@ -174,8 +178,14 @@ INSERT INTO Units
 ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, PolicyType, PrereqTech)
 
 SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',	'UNITCLASS_DEVOTION_NUCLEAR_MISSILE',	Combat, BaseSightRange, Cost,		7500,		0,								0, 							 PurchaseCooldown,	Moves, 	Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted,	Description, 				Civilopedia, 					Strategy, 							Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, UnitFlagAtlas,			PortraitIndex, 	IconAtlas,			MoveRate,
-0, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_ARMAGEDDON', PrereqTech
+0, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_ARMAGEDDON', NULL
 FROM Units WHERE Type = 'UNIT_NUCLEAR_MISSILE';
+
+-- graphical hack for tech tree
+INSERT INTO Unit_TechTypes
+	(UnitType, TechType)
+VALUES
+	('UNIT_DEVOTION_NUCLEAR_MISSILE', 'TECH_LASERS');
 
 INSERT INTO Policy_UnitClassReplacements
 	(PolicyType, ReplacedUnitClassType, ReplacementUnitClassType)
@@ -186,9 +196,7 @@ INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 SELECT
 	'UNIT_DEVOTION_NUCLEAR_MISSILE', PromotionType FROM Unit_FreePromotions WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
---------------------------------	
--- Unit_AITypes
---------------------------------		
+
 INSERT INTO Unit_AITypes 	
 		(UnitType, 				UnitAIType)
 SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',	UnitAIType
@@ -197,26 +205,64 @@ FROM Unit_AITypes WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
 INSERT INTO Unit_AITypes 	
 		(UnitType, 			UnitAIType)
 SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',	UnitAIType FROM Unit_AITypes WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
---------------------------------	
--- Unit_Flavors
---------------------------------	
+
 INSERT INTO Unit_Flavors
        (UnitType,          FlavorType, Flavor)
 SELECT 'UNIT_DEVOTION_NUCLEAR_MISSILE',FlavorType, Flavor
 FROM Unit_Flavors WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
---------------------------------	
--- Unit_ResourceQuantityRequirements
---------------------------------		
+
 INSERT INTO Unit_ResourceQuantityRequirements 	
 		(UnitType, 				ResourceType)
 SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',	ResourceType
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
 
+-- nuclear bomb dummy
+INSERT INTO UnitClasses
+		(Type, 					DefaultUnit)
+SELECT	'UNITCLASS_DEVOTION_ATOMIC_BOMB','UNIT_DEVOTION_ATOMIC_BOMB';
 
-INSERT INTO Policy_YieldFromKills
-	(PolicyType, YieldType, Yield)
+INSERT INTO Units 	
+		(Type,				Class, 			Combat, BaseSightRange, Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	GlobalFaithPurchaseCooldown, PurchaseCooldown,	Moves, 	Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted,	Description, 				Civilopedia, 					Strategy, 							Help, 							Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, UnitFlagAtlas,			PortraitIndex, 	IconAtlas,			MoveRate,
+ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, PolicyType, PrereqTech)
+
+SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',	'UNITCLASS_DEVOTION_ATOMIC_BOMB',	Combat, BaseSightRange, Cost,		7500,		0,								0, 							 PurchaseCooldown,	Moves, 	Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted,	Description, 				Civilopedia, 					Strategy, 							Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, UnitFlagAtlas,			PortraitIndex, 	IconAtlas,			MoveRate,
+0, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_ARMAGEDDON', NULL
+FROM Units WHERE Type = 'UNIT_ATOMIC_BOMB';
+
+-- graphical hack for tech tree
+INSERT INTO Unit_TechTypes
+	(UnitType, TechType)
 VALUES
-	('POLICY_ARMAGEDDON', 'YIELD_FAITH', 225);
+	('UNIT_DEVOTION_ATOMIC_BOMB', 'TECH_NUCLEAR_FISSION');
+
+INSERT INTO Policy_UnitClassReplacements
+	(PolicyType, ReplacedUnitClassType, ReplacementUnitClassType)
+VALUES
+	('POLICY_ARMAGEDDON', 'UNITCLASS_ATOMIC_BOMB', 'UNITCLASS_DEVOTION_ATOMIC_BOMB');
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+SELECT
+	'UNIT_DEVOTION_ATOMIC_BOMB', PromotionType FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ATOMIC_BOMB';
+
+INSERT INTO Unit_AITypes 	
+		(UnitType, 				UnitAIType)
+SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',	UnitAIType
+FROM Unit_AITypes WHERE UnitType = 'UNIT_ATOMIC_BOMB';
+	
+INSERT INTO Unit_AITypes 	
+		(UnitType, 			UnitAIType)
+SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',	UnitAIType FROM Unit_AITypes WHERE UnitType = 'UNIT_ATOMIC_BOMB';
+
+INSERT INTO Unit_Flavors
+       (UnitType,          FlavorType, Flavor)
+SELECT 'UNIT_DEVOTION_ATOMIC_BOMB',FlavorType, Flavor
+FROM Unit_Flavors WHERE UnitType = 'UNIT_ATOMIC_BOMB';
+
+INSERT INTO Unit_ResourceQuantityRequirements 	
+		(UnitType, 				ResourceType)
+SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',	ResourceType
+FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ATOMIC_BOMB';
 
 
 
