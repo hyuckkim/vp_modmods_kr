@@ -55,7 +55,7 @@ Source: "..\(7) VP Community Events INT\*"; DestDir: "{app}\MODS\(7) VP Communit
 ;Source: "..\(ui) City-States Leaders for VP KR\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP KR"; Flags: ignoreversion recursesubdirs;	Components: csl
 Source: "..\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion recursesubdirs;	Components: le
 Source: "..\(ui) Meaningful Colours (v 16)\*"; DestDir: "{app}\MODS\(ui) Meaningful Colours (v 16)"; Flags: ignoreversion recursesubdirs;	Components: mc
-Source: "..\(ui) Trade Opportunities for VP (v 23)\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion recursesubdirs;	Components: vpto
+Source: "..\(ui) Trade Opportunities for VP\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP (v 23)"; Flags: ignoreversion recursesubdirs;	Components: vpto
 Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion recursesubdirs;	Components: vpto
 Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion recursesubdirs;	Components: vpwp
 Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
@@ -103,7 +103,7 @@ Source: "..\Wonder Race (v 7) KR\*"; DestDir: "{app}\MODS\Wonder Race (v 7) KR";
 
 ;Source: "..\!Jarcast's Cities of Marble for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jcm
 ;Source: "..\!Jarcast's Cities of Marble for VP (v 3) INT\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"; Flags: ignoreversion recursesubdirs;	Components: jcm
-Source: "..\!Jarcast's Hidden Wonders (VP) (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jhw
+Source: "..\!Jarcast's Hidden Wonders (VP)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) (v 3)"; Flags: ignoreversion recursesubdirs;	Components: jhw
 Source: "..\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion recursesubdirs;	Components: jhw
 Source: "..\!Jarcast's Ndongo-Matamba for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's Ndongo-Matamba for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jnm
 Source: "..\!Jarcast's The Navajo for VP (v 2)\*"; DestDir: "{app}\MODS\!Jarcast's The Navajo for VP (v 2)"; Flags: ignoreversion recursesubdirs;	Components: jtn
@@ -120,10 +120,10 @@ Source: "..\(9c) CAYM Improvement Change\*"; DestDir: "{app}\MODS\(9c) CAYM Impr
 Source: "..\(game) Capture+++ (v 5)\*"; DestDir: "{app}\MODS\(game) Capture+++ (v 5)"; Flags: ignoreversion recursesubdirs;	Components: gc
 Source: "..\(5) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(5) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(5L) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(5L) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
-Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
-Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: mw
-Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
-Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: ucs
+;Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
+;Source: "..\(overhaul) More Wonders for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: mw
+;Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
+;Source: "..\(overhaul) Unique City States for VP INT (AI)\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT (AI)"; Flags: ignoreversion recursesubdirs;	Components: ucs
 Source: "..\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)\*"; DestDir: "{app}\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.6)"; Flags: ignoreversion recursesubdirs;	Components: gfpa
 Source: "..\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.12)"; Flags: ignoreversion recursesubdirs;	Components: gl
 Source: "..\(visual) Unit Scaling and Formation for VP (v 12)\*"; DestDir: "{app}\MODS\(visual) Unit Scaling and Formation for VP (v 12)"; Flags: ignoreversion recursesubdirs;	Components: usf
@@ -160,8 +160,8 @@ Source: "..\JFD's Sovereignty for VP (v 15a) KR\*"; DestDir: "{app}\MODS\JFD's S
 Source: "..\Landmines for BNW (v 3)\*"; DestDir: "{app}\MODS\Landmines for BNW (v 3)"; Flags: ignoreversion recursesubdirs;	Components: mine
 Source: "..\Leugi's Israel for VP\*"; DestDir: "{app}\MODS\Leugi's Israel for VP"; Flags: ignoreversion recursesubdirs;	Components: li
 Source: "..\Lower Supply Cap for Vox Populi BETA (v 3)\*"; DestDir: "{app}\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\lsc
-Source: "..\Maritime Weather+ (v 6)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
-Source: "..\Maritime Weather+ (v 6) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
+Source: "..\Maritime Weather+ (v 42)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6)"; Flags: ignoreversion recursesubdirs;	Components: Mariw
+Source: "..\Maritime Weather+ (v 42) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 6) INT"; Flags: ignoreversion recursesubdirs;	Components: Mariw
 Source: "..\Mechanized Infantry with Soldiers, Resized (v 2)\*"; DestDir: "{app}\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"; Flags: ignoreversion recursesubdirs;	Components: miwsr
 Source: "..\Misc Tweaks for VP (v 5.0)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.0)"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
 Source: "..\Misc Tweaks for VP (v 5.0) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.0) INT"; Flags: ignoreversion recursesubdirs;	Components: lowcap\mt
@@ -411,6 +411,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) List Enhancements for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) List Enhancements for VP KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Meaningful Colours (v 16)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Trade Opportunities for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Trade Opportunities for VP (v 23)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Trade Opportunities for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Wonder Planner For VP (v 14)"
@@ -464,6 +465,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 ;Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 3) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) KR (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) KR (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) INT"
@@ -547,6 +549,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Lower Supply Cap for Vox Populi BETA (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 6) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 42)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 42) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Mechanized Infantry with Soldiers, Resized (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 4.10)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 4.10) INT"
