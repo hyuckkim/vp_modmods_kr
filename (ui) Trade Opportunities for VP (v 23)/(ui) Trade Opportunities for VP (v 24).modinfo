@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="9e735b12-3815-4ce3-9845-5396afb189da" version="23">
+<Mod id="9e735b12-3815-4ce3-9845-5396afb189da" version="24">
   <Properties>
     <Name>(ui) Trade Opportunities for VP</Name>
     <Teaser>Visualise trading opportunities and city-state affairs</Teaser>
@@ -27,9 +27,9 @@
     <Mod id="55b74e57-9a4b-4bb1-a514-a00f0646c359" minversion="0" maxversion="999" title="Global Relations" />
   </Blocks>
   <Files>
-    <File md5="967D7FC3EDCC98F5B4198ADF80A95450" import="0">Changelog.txt</File>
+    <File md5="D333CD610C8A72623347FB3695B29FA0" import="0">Changelog.txt</File>
     <File md5="385592B8ECE89D5BB6C8FF79B132C562" import="0">Credits.txt</File>
-    <File md5="5B62D86BCDDCAE14524EA914957E8F08" import="0">Texts/TradeOpportunitiesTexts.xml</File>
+    <File md5="D0207635A72C321D2F2CB8A4B7543AB5" import="0">Texts/TradeOpportunitiesTexts.xml</File>
     <File md5="825289AA063250149EDB215C26E399B7" import="1">UI/DiploOverview.lua</File>
     <File md5="A0F1BA11985A1C55ED5194E56FBE6E77" import="1">UI/DiploOverview.xml</File>
     <File md5="32C0C7FD80E5E71CB87B5363F84E27F9" import="1">UI/Graph/RelationsGraph.lua</File>
@@ -37,7 +37,7 @@
     <File md5="A347AFE9AF603E165E4351303C3428A9" import="1">UI/Graph/RelationsGraphLib.lua</File>
     <File md5="FC052496F94F010E0534190DEA99D19E" import="1">UI/New/DiploCityStatesStatus.lua</File>
     <File md5="265DA0E91D62047426081D3B33200BC6" import="1">UI/New/DiploCityStatesStatus.xml</File>
-    <File md5="AD853C94E76B627123046615AADC44AD" import="1">UI/New/DiploTradesStatus.lua</File>
+    <File md5="6BB2E638E80A89986106B0B204B5BAC0" import="1">UI/New/DiploTradesStatus.lua</File>
     <File md5="AB95457CACE720FCAB7F51647B2AD3C3" import="1">UI/New/DiploTradesStatus.xml</File>
     <File md5="9A547A85B398A7A762CB057ADA7C3CE1" import="1">UI/Original/DiploCurrentDeals.xml</File>
     <File md5="048B0F13260D749DB91DD0AE3225DCAB" import="1">UI/Original/DiploGlobalRelationships.xml</File>

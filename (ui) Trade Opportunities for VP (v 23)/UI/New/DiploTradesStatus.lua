@@ -30,7 +30,7 @@ local g_tValidImprovements = {
 	"IMPROVEMENT_PASTURE"
 }
 
-local g_sColorBrown = "[COLOR_CITY_GREY]"
+local g_sColorDarkBrown = "[COLOR_CITY_GREY]"
 local g_sColorDarkGreen = "[COLOR:0:135:0:255]"
 local g_sColorLightGreen = "[COLOR:125:255:0:255]"
 local g_sColorYellowGreen = "[COLOR:200:180:0:255]"
@@ -41,6 +41,10 @@ local g_sColorPurple = "[COLOR:255:50:150:255]"
 local g_sColorBlue = "[COLOR_CITY_BLUE]"
 local g_sColorCyan = "[COLOR_CYAN]"	
 local g_sColorOrange = "[COLOR_YIELD_FOOD]"
+
+local g_sColorWhite = "[COLOR_WHITE]"
+local g_sColorBrown = "[COLOR_CITY_BROWN]"
+local g_sColorCityGreen = "[COLOR_CITY_GREEN]"
 
 local g_sColorResourceLuxury = "[COLOR:255:235:30:255]"
 local g_sColorResourceStrategic = "[COLOR:210:210:210:255]"
@@ -189,7 +193,7 @@ function GetCivControl(im, ePlayer, bCanTrade)
 	local sToolTip = ""
 	local sDeals = ""
 	local sVerifiedDeals = ""
-	local sColorDots = g_sColorBrown
+	local sColorDots = g_sColorDarkBrown
 	
 	local controlOther = imControlTable["RESOURCE_OTHER_LUXURIES"]
 	controlOther:SetText(sText)		
@@ -208,35 +212,38 @@ function GetCivControl(im, ePlayer, bCanTrade)
 			if resource.ResourceUsage == 1 then
 				g_sColorResourceName = g_sColorResourceStrategic
 			end
-			local sColorResourceImprovement = g_sColorCyan
+			local sColorOfSource = g_sColorWhite
 			
 			if controlHeader == nil then
-				local sImprovement = ""
+				local sSource = ""
 				local pImprovement = GameInfo.Improvement_ResourceTypes{ResourceType=resource.Type}()
 				local bIsUniqueLuxuryNotFromMercantile = pImprovement and pImprovement.ImprovementType == 'IMPROVEMENT_CITY'
 				
 				if resource.OnlyMinorCivs or bIsUniqueLuxuryNotFromMercantile then
-					sImprovement = "City-State"
+					sSource = "City-State"
 				else
 					for _, validImprovement in ipairs(g_tValidImprovements) do
 						for improvement in GameInfo.Improvement_ResourceTypes() do
 							if improvement.ResourceType == resource.Type and improvement.ImprovementType == validImprovement then
-								sImprovement = L("TXT_KEY_" .. improvement.ImprovementType)
+								sSource = L("TXT_KEY_" .. improvement.ImprovementType)
+								sColorOfSource = g_sColorBrown
 							end
 						end
 					end
 
-					if sImprovement == "" then
+					if sSource == "" then
 						for quantity in GameInfo.Building_ResourceQuantity{ResourceType=resource.Type} do
 							for building in GameInfo.Buildings{Type=quantity.BuildingType} do
-								sImprovement = L(building.Description)
+								sSource = L(building.Description)
+								sColorOfSource = g_sColorOrange
 								break
 							end
 						end
 
 						for plot in GameInfo.Building_ResourcePlotsToPlace{ResourceType=resource.Type} do
 							for building in GameInfo.Buildings{Type=plot.BuildingType} do
-								sImprovement = L(building.Description)
+								sSource = L(building.Description)
+								sColorOfSource = g_sColorOrange
 								break
 							end
 						end
@@ -244,9 +251,10 @@ function GetCivControl(im, ePlayer, bCanTrade)
 				end
 				
 				local sHelp = L(resource.Help)
-				sHelp = string.gsub(sHelp, "(.-)(Monopoly Bonus:)(.-)", "[COLOR_POSITIVE_TEXT]M.B.:[ENDCOLOR]%3")
+				sHelp = string.gsub(sHelp, "(.-)(Monopoly Bonus:)(.-)", "[NEWLINE][ICON_BULLET][ICON_MONOPOLY]%3")
+				sHelp = string.gsub(sHelp, ";", ",[NEWLINE][ICON_BULLET][ICON_MONOPOLY]")
 
-				local sOtherHeader = L("TXT_KEY_DO_TRADE_OTHER_HEADER", L(resource.IconString), g_sColorResourceName, L(resource.Description), sColorResourceImprovement, sImprovement, sHelp)
+				local sOtherHeader = L("TXT_KEY_DO_TRADE_OTHER_HEADER", L(resource.IconString), g_sColorResourceName, L(resource.Description), sColorOfSource, sSource, sHelp)
 
 				if sGatheredOtherHeaders == "" then
 					sGatheredOtherHeaders = sOtherHeader
@@ -278,7 +286,7 @@ function GetCivControl(im, ePlayer, bCanTrade)
 
 				local iPosStart, iPosEnd = string.find(sToolTip, "unavailable")
 				
-				if iPosStart == nil and sColorValue ~= g_sColorBrown then
+				if iPosStart == nil and sColorValue ~= g_sColorDarkBrown then
 					if sColorDots ~= g_sColorCyan and sColorDots ~= g_sColorBlue then
 						sColorDots = sColorValue
 					end
@@ -428,7 +436,7 @@ function GetUsefulResourceText(pPlayer, pResource, bIsActivePlayer, pActivePlaye
 	local sDeals = ""
 	local sCityList = ""
 	local iTotal = 0
-	local sColorValue = g_sColorBrown
+	local sColorValue = g_sColorDarkBrown
 	
 	if IsAvailableLuxury(eResource) and IsVisibleUsefulResource(eResource, pActivePlayer) then		
 		local bIsLuxury = (pResource.ResourceUsage == 2)
@@ -711,8 +719,8 @@ function GetUsefulResourceText(pPlayer, pResource, bIsActivePlayer, pActivePlaye
 		sText = L("TXT_KEY_DO_TRADE_VALUE", sColorValue, iTotal, sMonopoly)
 		sToolTip = L("TXT_KEY_DO_TRADE_VALUE_TOOLTIP", pResource.IconString, g_sColorResourceName, L(pResource.Description), sText, sCityList, sColorValue, iResourceOwnAll, iResourceOnMap, sResourcesExtra)
 	else
-		sText = L("TXT_KEY_DO_TRADE_VALUE_NONE", g_sColorBrown)
-		sToolTip = L("TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NONE", pResource.IconString, g_sColorResourceName, L(pResource.Description), g_sColorBrown)
+		sText = L("TXT_KEY_DO_TRADE_VALUE_NONE", g_sColorDarkBrown)
+		sToolTip = L("TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NONE", pResource.IconString, g_sColorResourceName, L(pResource.Description), g_sColorDarkBrown)
 	end
 
 	return sText, sToolTip, sDeals, sColorValue

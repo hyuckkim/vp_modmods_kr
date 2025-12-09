@@ -74,11 +74,11 @@ Currently compatible with VP 4.4.X.</Description>
     <File md5="2C038B8B0888720FB5307C17D73914D7" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Tehran_Facility_80.dds</File>
     <File md5="100D598EF37213F24F2342C5DA133EF9" import="1">1.WorldWonders/Art/7.Atomic/Wonder_Tehran_Facility_splash.dds</File>
     <File md5="649742386EC25D7E3525D2271694F98A" import="1">1.WorldWonders/Art/8.Information/Wonder_Seed_Vault_splash.dds</File>
-    <File md5="3022DFB75FA3CFA2B6A9DAA54D192CC3" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
-    <File md5="D12A9EE4548FFDA3B5FC38E1BE02F90F" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
-    <File md5="E068E10BAF7A9DBAC6A1FE021B19261C" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
-    <File md5="66FC27F66CFA7C87FA786A3940EBEA62" import="0">1.WorldWonders/Lua/UniqueWorldWondersRequirements.lua</File>
-    <File md5="815BCBC6CCA28E97C188435E7DBCE1EF" import="0">1.WorldWonders/Lua/DummyBuildingsForWonders.lua</File>
+    <File md5="1ED57AE1A89D7ED056C01296B7E52CEE" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
+    <File md5="E27F08656432B10CF035A45F729BE5D1" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
+    <File md5="B41780E2658533E5A63238D61711C44E" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
+    <File md5="3CD609967BE97D6A10FF679E7C6FAAB6" import="0">1.WorldWonders/Lua/UniqueWorldWondersRequirements.lua</File>
+    <File md5="7E63ED85E038D7E1F5E4865F05AFC422" import="0">1.WorldWonders/Lua/DummyBuildingsForWonders.lua</File>
     <File md5="EBCE6093AA86EB9AB80B57BA9D099966" import="1">1.WorldWonders/DefaultFiles/WonderPopup.lua</File>
     <File md5="C5FF77C0C8C2D752C3AB0247156710E3" import="1">1.WorldWonders/DefaultFiles/WonderPopup.xml</File>
     <File md5="47B66A27464EE3919811178A561E840A" import="1">1.WorldWonders/Art/0.Neolithic/Wonder_Altamira_128.dds</File>
@@ -903,8 +903,8 @@ Currently compatible with VP 4.4.X.</Description>
     <File md5="B242DB949E4029B597CECA3DA73A12DB" import="1">2.NaturalWonders/DefaultFiles/NaturalWonderPopup.lua</File>
     <File md5="E77F69CF0801EAA4B126363257B2EB24" import="1">2.NaturalWonders/DefaultFiles/NaturalWonderPopup.xml</File>
     <File md5="47BFDD5CFE7CB11E554920A312FA4A90" import="1">2.NaturalWonders/DefaultFiles/NaturalWondersCustomMethods.lua</File>
-    <File md5="8F8B065963437CB9293A37490FE01DE6" import="0">2.NaturalWonders/Lua/UniqueNaturalWondersAbilities.lua</File>
-    <File md5="E4CE15326D50BCE01AC0010781A5FCBB" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
+    <File md5="13847C9F2BFA8B6A5A3036822DC3415B" import="0">2.NaturalWonders/Lua/UniqueNaturalWondersAbilities.lua</File>
+    <File md5="669CF2D3667D3234944DB365F5D67230" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
     <File md5="A13EA2088565BA2951B247DE6E278687" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
     <File md5="B3A63916892113699F50BEC18DEF87CD" import="0">2.NaturalWonders/XML/NaturalWondersLocations.xml</File>
     <File md5="0214272666740D40A930B2ED462E0B6E" import="0">2.NaturalWonders/XML/NaturalWondersParameters.xml</File>
@@ -916,7 +916,7 @@ Currently compatible with VP 4.4.X.</Description>
     <File md5="D026C6DC81E9A1C57970CAEC4A681618" import="1">Buildings/Atlases/More_Wonders_Buildings_64.dds</File>
     <File md5="DE6455BB97536A9AF661507F297326D0" import="1">Buildings/Atlases/More_Wonders_Buildings_80.dds</File>
     <File md5="A75A75B878FFC4563E196663E2B339AF" import="0">Buildings/BuildingsDefinitions.sql</File>
-    <File md5="26D7D8D1DC0A35496F1E0C60614097C5" import="0">Changelog.txt</File>
+    <File md5="D0D21A490E774C45D3A48DF389D1490E" import="0">Changelog.txt</File>
     <File md5="7F16621FD94CBA59A74EAA966000FCF4" import="1">Promotions/Atlases/More_Wonders_Promotions_16.dds</File>
     <File md5="863EC94BBAC7040AF006595E9307DF80" import="1">Promotions/Atlases/More_Wonders_Promotions_256.dds</File>
     <File md5="19446C3951C77454341280E024490BCE" import="1">Promotions/Atlases/More_Wonders_Promotions_32.dds</File>
@@ -956,7 +956,7 @@ Currently compatible with VP 4.4.X.</Description>
     <File md5="5EB5625203265E392EB05F49F458430F" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_red_2.dds</File>
     <File md5="AE5241BE919BFC28000A363CF7636ED0" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_yellow_1.dds</File>
     <File md5="DBB67A35E329DB1E745D0EB4D5C123AE" import="1">Resources/Models/TropicalFish/NEW_fish_resource_diff_yellow_2.dds</File>
-    <File md5="B33F9A9CE3EE47F86825468F44AAF258" import="0">Resources/ResourcesDefinitions.sql</File>
+    <File md5="1A8830749929D35F4BD24CCF61E728AA" import="0">Resources/ResourcesDefinitions.sql</File>
     <File md5="EA45542B34B5902ECA8EDC20B3A3915B" import="1">Resources/sv_icons/sv_Sylvite.dds</File>
     <File md5="B6B251DEEAD5A4D309698A4D3C51BC2E" import="1">Resources/sv_icons/sv_Tern_Egg.dds</File>
     <File md5="41A936F4E81B11CBC8D3D2B17717BE41" import="1">Resources/sv_icons/sv_Tortoise.dds</File>

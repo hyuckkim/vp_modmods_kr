@@ -18,23 +18,18 @@ INSERT INTO Language_en_US
 			(Tag,											Text) 
 VALUES		('TXT_KEY_RESOURCE_TERN',						'Tern Egg'),
 			('TXT_KEY_RESOURCE_TERN_TEXT',					'TODO'),
-			('TXT_KEY_RESOURCE_TERN_MONOPOLY',				'Granted by [ICON_WONDER] Ahu Tongariki. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +5% [ICON_PEACE] on Empire.'),
-			--('TXT_KEY_RESOURCE_TERN_MONOPOLY_FULL',		'1 copy is granted by Ahu Tongariki [ICON_WONDER] World Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +5% [ICON_PEACE] Faith in all owned Cities.'),
+			('TXT_KEY_RESOURCE_TERN_MONOPOLY',				'1 copy is granted by [ICON_WONDER] Ahu Tongariki. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +5% [ICON_PEACE] in all owned Cities.'),
 			('TXT_KEY_RESOURCE_SYLVITE',					'Sylvite'),
 			('TXT_KEY_RESOURCE_SYLVITE_TEXT',				'TODO'),
-			('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY',			'Granted by Dallol. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] [COLOR_WATER_TEXT]Explosive Mixture[ENDCOLOR]/[COLOR_YIELD_GOLD]Siege[ENDCOLOR].'),
-			--('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY_FULL',	'1 copy is granted by Dallol Natural Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] Promotion [COLOR_POSITIVE_TEXT]Explosive Mixture[ENDCOLOR] for owned [COLOR:255:230:85:255]Siege[ENDCOLOR] units (tied to dummy building).'),
+			('TXT_KEY_RESOURCE_SYLVITE_MONOPOLY',			'1 copy is granted by Dallol Natural Wonder. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] [COLOR_WATER_TEXT]Explosive Mixture[ENDCOLOR] promotion for all owned [COLOR_YIELD_GOLD]Siege Units[ENDCOLOR].'),
 			('TXT_KEY_RESOURCE_TROPICAL_FISH',				'Tropical Fish'),
 			('TXT_KEY_RESOURCE_TROPICAL_FISH_TEXT',			'TODO'),
-			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'Can be spawned by Great Barrier Reef and Galapagos Natural Wonders.'),
+			('TXT_KEY_RESOURCE_TROPICAL_FISH_MONOPOLY',		'Can be spawned by Great Barrier Reef or Galapagos Natural Wonders.'),
 			('TXT_KEY_RESOURCE_TORTOISE',					'Giant Tortoise'),
 			('TXT_KEY_RESOURCE_TORTOISE_TEXT',				'TODO'),
-			('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY',			'Spawned by Galapagos. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] Length.');
-			--('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY_FULL',	'Can be spawned by Galapagos Natural Wonder.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] Golden Age Length.');
-
-UPDATE Language_en_US SET Text = Text||'[NEWLINE][NEWLINE]Nearby [ICON_RES_TORTOISE]: +2 [ICON_RESEARCH] Science.' WHERE Tag = 'TXT_KEY_BUILDING_LABORATORY_HELP';
+			('TXT_KEY_RESOURCE_TORTOISE_MONOPOLY',			'Can be spawned by Galapagos Natural Wonder. [COLOR_POSITIVE_TEXT]Monopoly Bonus:[ENDCOLOR] +10% [ICON_GOLDEN_AGE] Golden Age Length.');
 --=====================================================--
--- RESURCES
+-- RESOURCES
 ---------------------------------------------------------
 -- Tern Egg - added by Ahu Tongariki WW
 -- Sylvite - added by Dallol NW

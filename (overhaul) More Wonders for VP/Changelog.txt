@@ -1,4 +1,44 @@
 MW Changelog:
+v24.3:
+- reworked all dummy buildings' and policies' tags and names;
+
+v24.2:
+- reworked Defense bonuses for various World Wonders (reported as being op):
+	- Cave of Altamira: 5 --> 1;
+	- Sigiriya: 10 --> 4 (in previous update) --> 3;
+	- Wartburg: 10 --> 7 (in previous update) --> 4;
+	- Great Zimbabwe: 10 --> 5;
+	- Mont-Saint-Michel: 10 --> 6;
+	- Krak des Chevaliers: 20 --> 8 for main city, and 5 --> 2 for other non-coastal cities;
+	- Solovietsky Monastery: 10 --> 5;
+	- Autobahn: 7 --> 3 (global)
+- reworked some difficult requirements based on Peace/War (Buddhas of Bamiyan, Old Bridge in Mostar) or Approach (Statue of Zeus, Great Wall):
+	- now you have to fulfill the requirement up to 33% production progress; after that limit they are disabled;
+	- Approaches are disabled during multiplayer games;
+- fixed St. Peter's Basilica ability and trigger;
+- tweaked Mont-Saint-Michel requirement description;
+
+
+v24.1:
+- changed:
+	- Harmandir Sahib: now grants +3 Food (was 2), but only to non-religious basic buildings giving Faith;
+- reworked resource monopoly texts (now more detailed and coloured);
+- reworked style of World Wonder help texts:
+	- now requirements are separated with bullet points;
+	- lua abilities are preceded with header;
+	- each part of help text is separated with dash lines;
+	- minor stuff like: added some icons, more detailed texts, reworked order;
+- reworked Wonder Splash (Flavoured) texts:
+	- changed GP icons to specialist icons if WW adds new specialist slots;
+	- changed GP icons to specialist icons if WW boosts specialists' yields;
+- fixed:
+	- Siku Quanshu: +1 Science to Writers (was 2);
+	- Great Hall of People: now correctly shows it belongs to Order (was Autocracy);
+	- St. Peter's Basilica: now grants bonus only to true Religious Buildings (unlocked by a Belief);
+	- added 3 missing VP Improvement replacements (Aplekton, Ordo, Isibaya) to WW lua requirements;
+	- added triggers for some abilities that was related to other buildings that could be added in other mods;
+- deleted unnecessary commented stuff (relic of pre 5.0 version);
+
 v24:
 - adapted to VP 5.0;
 - World Wonders:
@@ -116,7 +156,7 @@ v24:
 				- Skara Brae (nerf):
 					- removed basic Food bonus;
 					- removed Flat requirement;
-				- Sigiriya:
+				- Sigiriya (nerf):
 					- reduced defense bonus to 4 (was 10);
 				- Solovietsky Monastery (buff):
 					- removed City Supply bonus;
@@ -125,13 +165,13 @@ v24:
 					- added 15% Production conversion to Food;
 				- Tembleque Aqueduct (change):
 					- now grants Food from Faith Purchases (was Production);
-				- Wartburg:
+				- Wartburg (nerf):
 					- reduced defense bonus to 7 (was 10);
 		- Flavoured Help Texts:
 			- removed hated [ICON_MUSHROOM], [ICON_FLOWER] and [ICON_WORKER] (in some cases) and replaced it with more intuitive texts;
 			- all original help texts are cleared, and only lua abilities are added there instead (rest can be seen in improved VP tooltip);
-			- all Flavoured Help Texts are now used ONLY for World Wonder popup screen;
-			- all Flavoured Help Texts are now massively revised, spellchecked and all bonuses are added inside in a smart way;
+			- almost all (up to Industrial Era) Flavoured Help Texts are now used ONLY for World Wonder popup screen;
+			- almost all (up to Industrial Era) Flavoured Help Texts are now massively revised, spellchecked and all bonuses are added inside in a smart way;
 		- added compatibility check for few mods:
 			- @gwennog's: Brittany and Ainu (Village replacements) and Tehuelche (Camp replacement);
 			- @jarcast's: Italy and Navajo (Village replacements);

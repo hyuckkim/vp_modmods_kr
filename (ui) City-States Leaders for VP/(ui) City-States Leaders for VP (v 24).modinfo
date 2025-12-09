@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="5594cb50-a30e-4abf-a249-69704fc95da9" version="23">
+<Mod id="5594cb50-a30e-4abf-a249-69704fc95da9" version="24">
   <Properties>
     <Name>(ui) City-States Leaders for VP</Name>
     <Teaser>Adds leader icons to city state screens, making it easier to remember who is who</Teaser>
@@ -312,12 +312,12 @@
     <File md5="B45CE1EDC4DCD9DC1CEAC66B3194A6C2" import="1">Art/2.UCS/Variants/tbilisi_leadericon2.dds</File>
     <File md5="A6CC9E3B3CD1975BA1804714418D7645" import="1">Art/2.UCS/wootei_niicie_leadericon.dds</File>
     <File md5="03EE99D83E6AC8592AA9129AD6CD58C8" import="1">Art/2.UCS/yangcheng_leadericon.dds</File>
-    <File md5="B5838E28EA4B5E9B13A6CCA82C9B909E" import="1">Assets/CityStateDiploPopup.lua</File>
+    <File md5="4CA5CB231A5F5EECA12BC5C9711B290C" import="1">Assets/CityStateDiploPopup.lua</File>
     <File md5="73FF1611B5A5CB7792A11D0F74788A98" import="1">Assets/CityStateDiploPopup.xml</File>
-    <File md5="88D4914E8400EC3DF97FAE4B555C58AB" import="0">Changelog.txt</File>
-    <File md5="56D039F25C192A1EA705C4A3108C684A" import="0">Compatibility/CSL-UCS.sql</File>
+    <File md5="E888214DC7225AB290038475C5A3348E" import="0">Changelog.txt</File>
+    <File md5="3FC1A112B551101A87A95D2B45607D07" import="0">Compatibility/CSL-UCS.sql</File>
     <File md5="8EA244443E525B8121094C718B93A766" import="0">Credits.txt</File>
-    <File md5="B5D87E5113E3613B80BDCBA409AE4772" import="0">Texts/MinorCivNewTexts.xml</File>
+    <File md5="637A5167EBD577614EF3DE769472A141" import="0">Texts/MinorCivNewTexts.xml</File>
     <File md5="37589FF17C723D5F88EB2D52593BB919" import="0">Texts/MinorCivLeaders.sql</File>
   </Files>
   <Actions>

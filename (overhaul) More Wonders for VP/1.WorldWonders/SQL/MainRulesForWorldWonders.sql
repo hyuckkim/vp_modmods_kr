@@ -445,32 +445,32 @@ VALUES		('AS2D_WONDER_SPEECH_ARK_OF_THE_COVENANT_MAN', 		'SND_WONDER_SPEECH_ARK_
 --============================================--
 INSERT INTO MWfVPConfig 
 			(WType,							WDummy,									WActive,	WHasSound)
-VALUES		('KUK_DUMMY',					'Kuk',									2,			0),
-			('GATE_OF_SUN_DUMMY',			'Gate of the Sun',						2,			0),
-			('GREAT_ZIMBABWE_DUMMY',		'Great Zimbabwe',						2,			0),
-			('ITSUKUSHIMA_DUMMY',			'Itsukushima Shrine',					2,			0),
-			('QALHAT_DUMMY',				'Qalhat',								2,			0),
-			('CHEVALIERS_DUMMY',			'Krak des Chevaliers',					2,			0),
-			('KILWA_KISIWANI_DUMMY',		'Kilwa Kisiwani',						2,			0),
-			('MARAE_ARAHURAHU_DUMMY',		'Marae Arahurahu',						2,			0),
-			('ST_PETERS_DUMMY',				'St. Peter''s Basilica',				2,			0),
-			('PANAMA_CANAL_DUMMY',			'Panama Canal',							2,			0),
-			('ROCKEFELLER_DUMMY',			'Rockefeller Center',					2,			0),
-			('ARECIBO_DUMMY',				'Arecibo Observatory',					2,			0),
-			('JUMEIRAH_DUMMY',				'Palm Jumeirah',						2,			0),
-			('DARJEELING_DUMMY',			'Darjeeling Himalayan Railway',			2,			0),
-			('SANBO_DUMMY',					'Sanbo Honbu',							2,			0),
-			('SANBO_2_DUMMY',				'Sanbo Honbu',							2,			0),
-			('AUTOBAHN_DUMMY',				'Autobahn',								2,			0),
-			('INTERSTATE_DUMMY',			'Interstate Highway System',			2,			0),
-			('MUSEUM_ISLAND_DUMMY',			'Museum Island',						2,			0),
-			('CURIOSITY_DUMMY',				'Curiosity Rover',						2,			0),
-			('SEED_VAULT_DUMMY',			'Svalbard Global Seed Vault',			2,			0),
-			('TEMBLEQUE_DUMMY',				'Tembleque Aqueduct',					2,			0),
-			--('ANGKOR_WAT_DUMMY',			'Angkor Wat',							2,			0), -- POLICY!!!
-			--('TLACHIHUALTEPETL_DUMMY',	'Tlachihualtepetl',						2,			0), -- POLICY!!!
-			('HOSPITALLER_DUMMY',			'Knights Hospitaller',					2,			0),
-			('SONGYUE_DUMMY',				'Songyue Pagoda',						2,			0);
+VALUES		('DUMMY_KUK',					'MW-WW Kuk',							2,			0),
+			('DUMMY_GATE_OF_SUN',			'MW-WW Gate of the Sun',				2,			0),
+			('DUMMY_GREAT_ZIMBABWE',		'MW-WW Great Zimbabwe',					2,			0),
+			('DUMMY_ITSUKUSHIMA',			'MW-WW Itsukushima Shrine',				2,			0),
+			('DUMMY_QALHAT',				'MW-WW Qalhat',							2,			0),
+			('DUMMY_CHEVALIERS',			'MW-WW Krak des Chevaliers',			2,			0),
+			('DUMMY_KILWA_KISIWANI',		'MW-WW Kilwa Kisiwani',					2,			0),
+			('DUMMY_MARAE_ARAHURAHU',		'MW-WW Marae Arahurahu',				2,			0),
+			('DUMMY_ST_PETERS',				'MW-WW St. Peter''s Basilica',			2,			0),
+			('DUMMY_PANAMA_CANAL',			'MW-WW Panama Canal',					2,			0),
+			('DUMMY_ROCKEFELLER',			'MW-WW Rockefeller Center',				2,			0),
+			('DUMMY_ARECIBO',				'MW-WW Arecibo Observatory',			2,			0),
+			('DUMMY_JUMEIRAH',				'MW-WW Palm Jumeirah',					2,			0),
+			('DUMMY_DARJEELING',			'MW-WW Darjeeling Himalayan Railway',	2,			0),
+			('DUMMY_SANBO',					'MW-WW Sanbo Honbu',					2,			0),
+			('DUMMY_SANBO_2',				'MW-WW Sanbo Honbu',					2,			0),
+			('DUMMY_AUTOBAHN',				'MW-WW Autobahn',						2,			0),
+			('DUMMY_INTERSTATE',			'MW-WW Interstate Highway System',		2,			0),
+			('DUMMY_MUSEUM_ISLAND',			'MW-WW Museum Island',					2,			0),
+			('DUMMY_CURIOSITY',				'MW-WW Curiosity Rover',				2,			0),
+			('DUMMY_SEED_VAULT',			'MW-WW Svalbard Global Seed Vault',		2,			0),
+			('DUMMY_TEMBLEQUE',				'MW-WW Tembleque Aqueduct',				2,			0),
+			--('DUMMY_ANGKOR_WAT',			'Angkor Wat',							2,			0), -- POLICY!!!
+			--('DUMMY_TLACHIHUALTEPETL',	'Tlachihualtepetl',						2,			0), -- POLICY!!!
+			('DUMMY_HOSPITALLER',			'MW-WW Knights Hospitaller',			2,			0),
+			('DUMMY_SONGYUE',				'MW-WW Songyue Pagoda',					2,			0);
 
 INSERT INTO BuildingClasses 
 			(Type,						Description,				DefaultBuilding)
@@ -492,8 +492,8 @@ FROM MWfVPConfig WHERE WActive = 2;
 --============================================--
 INSERT INTO	Policies
 			(Type, 								Description, 								IsDummy)
-VALUES		('POLICY_TLACHIHUALTEPETL_DUMMY',	'TXT_KEY_POLICY_TLACHIHUALTEPETL_DUMMY',	1),		
-			('POLICY_ANGKOR_WAT_DUMMY',			'TXT_KEY_POLICY_ANGKOR_WAT_DUMMY',			1);	
+VALUES		('POLICY_DUMMY_TLACHIHUALTEPETL',	'TXT_KEY_POLICY_DUMMY_TLACHIHUALTEPETL',	1),		
+			('POLICY_DUMMY_ANGKOR_WAT',			'TXT_KEY_POLICY_DUMMY_ANGKOR_WAT',			1);	
 --============================================--
 -- Icons Atlas
 --============================================--

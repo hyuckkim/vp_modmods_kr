@@ -126,40 +126,44 @@ local tEventChoice = {
 }
 
 local tBuildingsActiveAbilities = {
-	GameInfoTypes.BUILDING_LHASA, -- 1
-	GameInfoTypes.BUILDING_OC_EO_2,
-	GameInfoTypes.BUILDING_OC_EO_3,
-	GameInfoTypes.BUILDING_THIMPHU,
-	GameInfoTypes.BUILDING_THIMPHU_2,
-	GameInfoTypes.BUILDING_ANDORRA_2, -- 6
-	GameInfoTypes.BUILDING_CANOSSA,
-	GameInfoTypes.BUILDING_WOOTEI_NIICIE_2, -- inserted instead temple
-	GameInfoTypes.BUILDING_LEVUKA,
-	GameInfoTypes.BUILDING_JERUSALEM,
-	GameInfoTypes.BUILDING_RISHIKESH_2, -- 11
-	GameInfoTypes.BUILDING_WELLINGTON_HORSE,
-	GameInfoTypes.BUILDING_WELLINGTON_IRON,
-	GameInfoTypes.BUILDING_WELLINGTON_COAL,
-	GameInfoTypes.BUILDING_WELLINGTON_OIL,
-	GameInfoTypes.BUILDING_WELLINGTON_ALUMINUM, -- 16
-	GameInfoTypes.BUILDING_WELLINGTON_URANIUM,
-	GameInfoTypes.BUILDING_WELLINGTON_PAPER,
-	GameInfoTypes.BUILDING_RAGUSA_2,
-	GameInfoTypes.BUILDING_KARYES,
-	GameInfoTypes.BUILDING_OUIDAH, -- 21
-	GameInfoTypes.BUILDING_SANAA,
-	GameInfoTypes.BUILDING_PELYM,
-	GameInfoTypes.BUILDING_KATENDE,
-	GameInfoTypes.BUILDING_KATENDE_2,
-	GameInfoTypes.BUILDING_SARNATH_2, -- 26
-	GameInfoTypes.BUILDING_LONGYAN,
-	GameInfoTypes.BUILDING_PALMYRA_2,	
-	GameInfoTypes.BUILDING_KARYES_2,
-	GameInfoTypes.BUILDING_AL_TIRABIN,
-	GameInfoTypes.BUILDING_JETARKTE, -- 31
-	GameInfoTypes.BUILDING_SADDARVAZEH,
-	GameInfoTypes.BUILDING_IRUNEA,
-	GameInfoTypes.BUILDING_SANANDAJ
+	GameInfoTypes.BUILDING_POTALA, -- 1
+	GameInfoTypes.BUILDING_DUMMY_OC_EO_2,
+	GameInfoTypes.BUILDING_DUMMY_OC_EO_3,
+	GameInfoTypes.BUILDING_DUMMY_THIMPHU,
+	GameInfoTypes.BUILDING_DUMMY_THIMPHU_2,
+	GameInfoTypes.BUILDING_DUMMY_ANDORRA_2, -- 6
+	GameInfoTypes.BUILDING_DUMMY_CANOSSA,
+	GameInfoTypes.BUILDING_DUMMY_WOOTEI_NIICIE_2, -- inserted instead temple
+	GameInfoTypes.BUILDING_DUMMY_LEVUKA,
+	GameInfoTypes.BUILDING_HOLY_CITY,
+	GameInfoTypes.BUILDING_DUMMY_RISHIKESH, -- 11
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_HORSE,
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_IRON,
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_COAL,
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_OIL,
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_ALUMINUM, -- 16
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_URANIUM,
+	GameInfoTypes.BUILDING_DUMMY_WELLINGTON_PAPER,
+	GameInfoTypes.BUILDING_DUMMY_RAGUSA_2,
+	GameInfoTypes.BUILDING_DUMMY_KARYES,
+	GameInfoTypes.BUILDING_DUMMY_OUIDAH, -- 21
+	GameInfoTypes.BUILDING_DUMMY_SANAA,
+	GameInfoTypes.BUILDING_DUMMY_PELYM,
+	GameInfoTypes.BUILDING_DUMMY_KATENDE,
+	GameInfoTypes.BUILDING_DUMMY_KATENDE_2,
+	GameInfoTypes.BUILDING_DUMMY_SARNATH_2, -- 26
+	GameInfoTypes.BUILDING_DUMMY_LONGYAN,
+	GameInfoTypes.BUILDING_DUMMY_PALMYRA_2,	
+	GameInfoTypes.BUILDING_DUMMY_KARYES_2,
+	GameInfoTypes.BUILDING_DUMMY_AL_TIRABIN,
+	GameInfoTypes.BUILDING_DUMMY_JETARKTE, -- 31
+	GameInfoTypes.BUILDING_DUMMY_SADDARVAZEH,
+	GameInfoTypes.BUILDING_DUMMY_IRUNEA,
+	GameInfoTypes.BUILDING_DUMMY_SANANDAJ,
+	GameInfoTypes.BUILDING_BYLINA,
+	GameInfoTypes.BUILDING_VISCONTI, -- 36
+	GameInfoTypes.BUILDING_GRAND_HARBOR,
+	GameInfoTypes.BUILDING_GATE_OF_DAWN
 }
 
 local tBuildingClasses = {
@@ -203,21 +207,21 @@ local tPromotionsActiveAbilities = {
 }
 
 local tBuildingsPassiveAbilities = {
-	GameInfoTypes.BUILDING_CS_STRENGTH_FRIENDLY, -- 1
-	GameInfoTypes.BUILDING_CS_STRENGTH_NEUTRAL,
-	GameInfoTypes.BUILDING_CS_STRENGTH_HOSTILE,
-	GameInfoTypes.BUILDING_CS_RELIGION_FRIENDLY,
-	GameInfoTypes.BUILDING_CS_RELIGION_NEUTRAL,
-	GameInfoTypes.BUILDING_CS_RELIGION_HOSTILE, -- 6
-	GameInfoTypes.BUILDING_CS_RELIGION_IRRATIONAL
+	GameInfoTypes.BUILDING_DUMMY_CS_STR_FRIENDLY, -- 1
+	GameInfoTypes.BUILDING_DUMMY_CS_STR_NEUTRAL,
+	GameInfoTypes.BUILDING_DUMMY_CS_STR_HOSTILE,
+	GameInfoTypes.BUILDING_DUMMY_CS_REL_FRIENDLY,
+	GameInfoTypes.BUILDING_DUMMY_CS_REL_NEUTRAL,
+	GameInfoTypes.BUILDING_DUMMY_CS_REL_HOSTILE, -- 6
+	GameInfoTypes.BUILDING_DUMMY_CS_REL_IRRATIONAL
 }
 
 local tPoliciesPassiveAbilities = {
-	GameInfoTypes.POLICY_CS_MARITIME,
-	GameInfoTypes.POLICY_CS_MERCANTILE,
-	GameInfoTypes.POLICY_CS_MILITARISTIC,
-	GameInfoTypes.POLICY_CS_CULTURED,
-	GameInfoTypes.POLICY_CS_RELIGIOUS
+	GameInfoTypes.POLICY_DUMMY_CS_MARITIME,
+	GameInfoTypes.POLICY_DUMMY_CS_MERCANTILE,
+	GameInfoTypes.POLICY_DUMMY_CS_MILITARISTIC,
+	GameInfoTypes.POLICY_DUMMY_CS_CULTURED,
+	GameInfoTypes.POLICY_DUMMY_CS_RELIGIOUS
 }
 
 local tImprovementsRegular = {
@@ -2315,25 +2319,25 @@ function UniqueMonopolyBonuses(ePlayer)
 	}
 	
 	local tPoliciesForUniqueMonopolies = {
-		GameInfoTypes.POLICY_MONOPOLY_CHEESE,
-		GameInfoTypes.POLICY_MONOPOLY_HONEY,
-		GameInfoTypes.POLICY_MONOPOLY_MANUSCRIPTS,
-		GameInfoTypes.POLICY_MONOPOLY_MOSAICS,
+		GameInfoTypes.POLICY_DUMMY_RES_CHEESE,
+		GameInfoTypes.POLICY_DUMMY_RES_HONEY,
+		GameInfoTypes.POLICY_DUMMY_RES_MANUSCRIPTS,
+		GameInfoTypes.POLICY_DUMMY_RES_MOSAICS,
 		nil,
-		GameInfoTypes.POLICY_MONOPOLY_ROPES,
-		GameInfoTypes.POLICY_MONOPOLY_GUNPOWDER,
-		GameInfoTypes.POLICY_MONOPOLY_PORCELAIN,
-		GameInfoTypes.POLICY_MONOPOLY_GLASS,
-		GameInfoTypes.POLICY_MONOPOLY_CHAMPAGNE,
-		GameInfoTypes.POLICY_MONOPOLY_TAPESTRIES
+		GameInfoTypes.POLICY_DUMMY_RES_ROPES,
+		GameInfoTypes.POLICY_DUMMY_RES_GUNPOWDER,
+		GameInfoTypes.POLICY_DUMMY_RES_PORCELAIN,
+		GameInfoTypes.POLICY_DUMMY_RES_GLASS,
+		GameInfoTypes.POLICY_DUMMY_RES_CHAMPAGNE,
+		GameInfoTypes.POLICY_DUMMY_RES_TAPESTRIES
 	}
 	
 	local tBuildingsForUniqueMonopolies = {
 		nil,
 		nil,
-		GameInfoTypes.BUILDING_MONOPOLY_MANUSCRIPTS,
+		GameInfoTypes.BUILDING_DUMMY_RES_MANUSCRIPTS,
 		nil,
-		GameInfoTypes.BUILDING_MONOPOLY_COINS,
+		GameInfoTypes.BUILDING_DUMMY_RES_COINS,
 		nil,
 		nil,
 		nil,
@@ -3370,15 +3374,15 @@ function SettledCityStateWithBuilding(ePlayer, iPlotX, iPlotY)
 		local pSettledCity = Map.GetPlot(iPlotX, iPlotY):GetPlotCity()
 		
 		if GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_KIEV" then
-			pSettledCity:SetNumRealBuilding(GameInfoTypes.BUILDING_KIEV, 1)
+			pSettledCity:SetNumRealBuilding(tBuildingsActiveAbilities[35], 1)
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_MILAN" then
-			pSettledCity:SetNumRealBuilding(GameInfoTypes.BUILDING_MILAN, 1)
+			pSettledCity:SetNumRealBuilding(tBuildingsActiveAbilities[36], 1)
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_VALLETTA" then
 			if pSettledCity:IsCoastal(10) then
-				pSettledCity:SetNumRealBuilding(GameInfoTypes.BUILDING_VALLETTA, 1)
+				pSettledCity:SetNumRealBuilding(tBuildingsActiveAbilities[37], 1)
 			end
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_VILNIUS" then
-			pSettledCity:SetNumRealBuilding(GameInfoTypes.BUILDING_VILNIUS, 1)
+			pSettledCity:SetNumRealBuilding(tBuildingsActiveAbilities[38], 1)
 		end
 	end
 end
@@ -3390,15 +3394,15 @@ function LiberatedCityStateWithBuilding(ePlayer, eOtherPlayer, eCity)
 		local pLiberatedCity = pPlayer:GetCapitalCity()
 		
 		if GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_KIEV" then
-			pLiberatedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_KIEV, 1)
+			pLiberatedCity:SetNumRealBuilding(tBuildingsActiveAbilities[35], 1)
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_MILAN" then
-			pLiberatedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_MILAN, 1)
+			pLiberatedCity:SetNumRealBuilding(tBuildingsActiveAbilities[36], 1)
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_VALLETTA" then
 			if pLiberatedCity:IsCoastal(10) then
-				pLiberatedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_VALLETTA, 1)
+				pLiberatedCity:SetNumRealBuilding(tBuildingsActiveAbilities[37], 1)
 			end
 		elseif GameInfo.MinorCivilizations[pPlayer:GetMinorCivType()].Type == "MINOR_CIV_VILNIUS" then
-			pLiberatedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_VILNIUS, 1)
+			pLiberatedCity:SetNumRealBuilding(tBuildingsActiveAbilities[38], 1)
 		end
 	end
 end
@@ -4793,7 +4797,7 @@ function YesirCaptives(eAttackingPlayer, eAttackingUnit, iAttackerDamage, iAttac
 	if pUnit and pUnit:IsHasPromotion(tPromotionsActiveAbilities[29]) then
 		local iCaptureChance = RandomNumberBetween(1, 100)
 		
-		if iCaptureChance <= 5 then return end
+		if iCaptureChance >= 5 then return end
 		
 		local iDistance = 0
 		local pClosestCity = nil
@@ -6151,7 +6155,7 @@ function PillageForMendyarrup(iX, iY, ePlotOwner, eOldImprovement, eNewImproveme
 					local iMovementAdded = 1
 						
 					pUnit:ChangeExperience(3)
-					pUnit:ChangeMoves(GameDefines["MOVE_DENOMINATOR"] * iMovementAdded)
+					--pUnit:ChangeMoves(GameDefines["MOVE_DENOMINATOR"] * iMovementAdded) -- deleted as being too op
 					break
 				end
 			end

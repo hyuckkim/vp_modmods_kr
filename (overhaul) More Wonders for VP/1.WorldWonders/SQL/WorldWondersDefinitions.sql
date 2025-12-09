@@ -36,7 +36,7 @@
 	SELECT		'BUILDING_ALTAMIRA',	'RESOURCE_DEER'		WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND (Value=1 OR Value=2)) UNION ALL
 	SELECT		'BUILDING_ALTAMIRA',	'RESOURCE_HORSE'	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND (Value=1 OR Value=2));
 	---------------------------------------------------------	
-	UPDATE Buildings SET Defense = 500, GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 1, EnhancedYieldTech = 'TECH_ARCHAEOLOGY' WHERE Type = 'BUILDING_ALTAMIRA';
+	UPDATE Buildings SET Defense = 100, GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 1, EnhancedYieldTech = 'TECH_ARCHAEOLOGY' WHERE Type = 'BUILDING_ALTAMIRA';
 	
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,			YieldType,			Yield) 
@@ -150,12 +150,12 @@
 	---------------------------------------------------------
 	INSERT INTO Building_TechEnhancedYieldChanges
 				(BuildingType,			YieldType,			Yield) 
-	VALUES		('BUILDING_KUK_DUMMY',	'YIELD_PRODUCTION',	2);
+	VALUES		('BUILDING_DUMMY_KUK',	'YIELD_PRODUCTION',	2);
 	
 	INSERT INTO Building_FeatureYieldChanges 
 				(BuildingType,			FeatureType,			YieldType,				Yield) 
-	VALUES		('BUILDING_KUK_DUMMY',	'FEATURE_MARSH',		'YIELD_PRODUCTION',		1),
-				('BUILDING_KUK_DUMMY',	'FEATURE_MARSH',		'YIELD_SCIENCE',		1);
+	VALUES		('BUILDING_DUMMY_KUK',	'FEATURE_MARSH',		'YIELD_PRODUCTION',		1),
+				('BUILDING_DUMMY_KUK',	'FEATURE_MARSH',		'YIELD_SCIENCE',		1);
 	
 	-- global_yields_from_tech (lua_ability)
 	-- global_yields_to_marsh (lua_ability)
@@ -611,7 +611,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldModifiers
 				(BuildingType,					YieldType,			Yield) 
-	VALUES		('BUILDING_GATE_OF_SUN_DUMMY',	'YIELD_SCIENCE',	5);
+	VALUES		('BUILDING_DUMMY_GATE_OF_SUN',	'YIELD_SCIENCE',	5);
 
 	-- global_modifiers_to_cities_with_walls (lua_ability)
 	---------------------------------------------------------
@@ -734,7 +734,7 @@
 	SELECT		'BUILDING_SIGIRIYA',	'FEATURE_FOREST' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND (Value=1 OR Value=2)) UNION ALL
 	SELECT		'BUILDING_SIGIRIYA',	'FEATURE_JUNGLE' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND (Value=1 OR Value=2));
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 400, GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 2, ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_SIGIRIYA_HELP' WHERE Type = 'BUILDING_SIGIRIYA';
+	UPDATE Buildings SET Defense = 300, GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT', GreatWorkCount = 2, ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_SIGIRIYA_HELP' WHERE Type = 'BUILDING_SIGIRIYA';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,			YieldType,			Yield) 
@@ -822,7 +822,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldFromFaithPurchase
 				(BuildingType,				YieldType,			Yield)
-	VALUES		('BUILDING_SONGYUE_DUMMY',	'YIELD_PRODUCTION',	2);
+	VALUES		('BUILDING_DUMMY_SONGYUE',	'YIELD_PRODUCTION',	2);
 	
 	-- global_yields_from_faith_purchases (lua_ability)
 	---------------------------------------------------------
@@ -999,7 +999,7 @@
 				(BuildingType,			BuildingClassType) 
 	SELECT		'BUILDING_WARTBURG',	'BUILDINGCLASS_WRITERS_GUILD' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND (Value=1 OR Value=2));
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 700, SpecialistType = 'SPECIALIST_WRITER', GreatPeopleRateChange = 2, GreatWorkSlotType = 'GREAT_WORK_SLOT_LITERATURE', GreatWorkCount = 3, ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_WARTBURG_HELP' WHERE Type = 'BUILDING_WARTBURG';
+	UPDATE Buildings SET Defense = 400, SpecialistType = 'SPECIALIST_WRITER', GreatPeopleRateChange = 2, GreatWorkSlotType = 'GREAT_WORK_SLOT_LITERATURE', GreatWorkCount = 3, ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_WARTBURG_HELP' WHERE Type = 'BUILDING_WARTBURG';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,			YieldType,					Yield) 
@@ -1053,7 +1053,7 @@
 	
 	-- Mine/Camp(2) (lua_requirement) (HARD)
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 1000, GlobalPlotBuyCostModifier = -30, NumTradeRouteBonus = 1 WHERE Type = 'BUILDING_GREAT_ZIMBABWE';
+	UPDATE Buildings SET Defense = 500, GlobalPlotBuyCostModifier = -30, NumTradeRouteBonus = 1 WHERE Type = 'BUILDING_GREAT_ZIMBABWE';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,						YieldType,					Yield)
@@ -1062,17 +1062,17 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,						YieldType,					Yield)
-	VALUES		('BUILDING_GREAT_ZIMBABWE_DUMMY',	'YIELD_GOLDEN_AGE_POINTS',	2);
+	VALUES		('BUILDING_DUMMY_GREAT_ZIMBABWE',	'YIELD_GOLDEN_AGE_POINTS',	2);
 	
 	INSERT INTO Building_UnitCombatProductionModifiers 	
 				(BuildingType,						UnitCombatType,			Modifier) 
-	VALUES		('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_MOUNTED',	5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_SIEGE',		5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_ARCHER',	5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_MELEE',		5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_GUN',		5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_ARMOR',		5),
-				('BUILDING_GREAT_ZIMBABWE_DUMMY',	'UNITCOMBAT_RECON',		5);
+	VALUES		('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_MOUNTED',	5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_SIEGE',		5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_ARCHER',	5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_MELEE',		5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_GUN',		5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_ARMOR',		5),
+				('BUILDING_DUMMY_GREAT_ZIMBABWE',	'UNITCOMBAT_RECON',		5);
 				
 	-- global_yields_per_tr (lua_ability)
 	-- global_production_modifiers_per_tr (lua_ability)
@@ -1240,7 +1240,7 @@
 				(BuildingType,				YieldIn,		YieldOut,		Value)
 	VALUES		('BUILDING_HOSPITALLER',	'YIELD_FAITH',	'YIELD_GOLD',	5);
 	---------------------------------------------------------
-	UPDATE Buildings SET AlwaysHeal = 3 WHERE Type = 'BUILDING_HOSPITALLER_DUMMY';
+	UPDATE Buildings SET AlwaysHeal = 3 WHERE Type = 'BUILDING_DUMMY_HOSPITALLER';
 	
 	-- global_unit_healing_from_cities_with_temple (lua_ability)
 	---------------------------------------------------------
@@ -1325,7 +1325,7 @@
 	-- OneTileCity (lua_requirement) (ALL)
 	-- EndOfPeninsula (lua_requirement) (ALL)
 	---------------------------------------------------------
-	UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 1000, EnhancedYieldTech = 'TECH_COMPUTERS' WHERE Type = 'BUILDING_MICHEL';
+	UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 600, EnhancedYieldTech = 'TECH_COMPUTERS' WHERE Type = 'BUILDING_MICHEL';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,		YieldType,					Yield) 
@@ -1429,13 +1429,13 @@
 	FROM Resources
 	WHERE ResourceClassType = 'RESOURCECLASS_LUXURY' AND SeaResource = 1;
 	---------------------------------------------------------
-	UPDATE Buildings SET PlotCultureCostModifier = -50 WHERE Type = 'BUILDING_ITSUKUSHIMA_DUMMY';
+	UPDATE Buildings SET PlotCultureCostModifier = -50 WHERE Type = 'BUILDING_DUMMY_ITSUKUSHIMA';
 
 	INSERT INTO Building_FeatureYieldChanges
 				(BuildingType,					FeatureType,		YieldType,			Yield) 
-	VALUES		('BUILDING_ITSUKUSHIMA_DUMMY',	'FEATURE_ATOLL',	'YIELD_FOOD',		1),
-				('BUILDING_ITSUKUSHIMA_DUMMY',	'FEATURE_ATOLL',	'YIELD_CULTURE',	1),
-				('BUILDING_ITSUKUSHIMA_DUMMY',	'FEATURE_ATOLL',	'YIELD_FAITH',		1);
+	VALUES		('BUILDING_DUMMY_ITSUKUSHIMA',	'FEATURE_ATOLL',	'YIELD_FOOD',		1),
+				('BUILDING_DUMMY_ITSUKUSHIMA',	'FEATURE_ATOLL',	'YIELD_CULTURE',	1),
+				('BUILDING_DUMMY_ITSUKUSHIMA',	'FEATURE_ATOLL',	'YIELD_FAITH',		1);
 
 	-- border_growth_boost_in_coastal_cities (lua_ability)
 	-- yields_to_atolls_in_coastal_cities (lua_ability)
@@ -1475,7 +1475,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,				YieldType,			Yield)
-	VALUES		('BUILDING_QALHAT_DUMMY',	'YIELD_CULTURE',	3);
+	VALUES		('BUILDING_DUMMY_QALHAT',	'YIELD_CULTURE',	3);
 
 	-- global_bonus_to_sea_tr_from_majors (lua_ability)
 	---------------------------------------------------------
@@ -1503,7 +1503,7 @@
 	UPDATE Buildings SET /*IsNoCoast = 1, */Hill = 1, IsNoWater = 1 WHERE Type = 'BUILDING_CHEVALIERS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=2);
 	UPDATE Buildings SET /*IsNoCoast = 1, */Hill = 1 WHERE Type = 'BUILDING_CHEVALIERS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 2000, CitySupplyFlat = 1 WHERE Type = 'BUILDING_CHEVALIERS';
+	UPDATE Buildings SET Defense = 800, CitySupplyFlat = 1 WHERE Type = 'BUILDING_CHEVALIERS';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,					YieldType,						Yield)
@@ -1520,11 +1520,11 @@
 				(BuildingType,			UnitType,				NumUnits)
 	VALUES		('BUILDING_CHEVALIERS', 'UNIT_GREAT_GENERAL',	1);
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 500, CitySupplyFlat = 1 WHERE Type = 'BUILDING_CHEVALIERS_DUMMY';
+	UPDATE Buildings SET Defense = 200, CitySupplyFlat = 1 WHERE Type = 'BUILDING_DUMMY_CHEVALIERS';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,					YieldType,			Yield)
-	VALUES		('BUILDING_CHEVALIERS_DUMMY',	'YIELD_FAITH',		1);
+	VALUES		('BUILDING_DUMMY_CHEVALIERS',	'YIELD_FAITH',		1);
 
 	-- different_bonuses_in_non_coastal_cities (lua_ability)
 	---------------------------------------------------------
@@ -1555,7 +1555,7 @@
 	---------------------------------------------------------
 	INSERT INTO Policy_YieldFromConstruction
 				(PolicyType, 						YieldType,					Yield)
-	VALUES		('POLICY_TLACHIHUALTEPETL_DUMMY',	'YIELD_GOLDEN_AGE_POINTS',	5);
+	VALUES		('POLICY_DUMMY_TLACHIHUALTEPETL',	'YIELD_GOLDEN_AGE_POINTS',	5);
 	
 	-- global_yields_from_constructions (lua_ability)
 	---------------------------------------------------------
@@ -1624,12 +1624,12 @@
 				('BUILDING_KILWA_KISIWANI',	'RESOURCE_JEWELRY',		1);
 	---------------------------------------------------------
 	INSERT INTO Building_ResourceYieldChangesGlobal	(BuildingType,						ResourceType,		YieldType,				Yield) 
-	SELECT DISTINCT									'BUILDING_KILWA_KISIWANI_DUMMY',	Type,				'YIELD_GOLD',			1
+	SELECT DISTINCT									'BUILDING_DUMMY_KILWA_KISIWANI',	Type,				'YIELD_GOLD',			1
 	FROM Resources
 	WHERE ResourceUsage = 2;
 
 	INSERT INTO Building_ResourceYieldChangesGlobal	(BuildingType,						ResourceType,		YieldType,				Yield) 
-	SELECT DISTINCT									'BUILDING_KILWA_KISIWANI_DUMMY',	Type,				'YIELD_PRODUCTION',		1
+	SELECT DISTINCT									'BUILDING_DUMMY_KILWA_KISIWANI',	Type,				'YIELD_PRODUCTION',		1
 	FROM Resources
 	WHERE ResourceUsage = 1;
 	
@@ -1672,9 +1672,19 @@
 	VALUES		('BUILDING_ST_PETERS', 'UNIT_INQUISITOR',		3);
 	---------------------------------------------------------
 	INSERT INTO Building_BuildingClassHappiness (BuildingType,				BuildingClassType,	Happiness)
-	SELECT DISTINCT								'BUILDING_ST_PETERS_DUMMY',	BuildingClass,		1
+	SELECT DISTINCT								'BUILDING_DUMMY_ST_PETERS',	BuildingClass,		1
 	FROM Buildings
-	WHERE Cost = -1 and FaithCost > 0 AND WonderSplashImage IS NULL;
+	WHERE Cost = -1 AND FaithCost > 0 AND WonderSplashImage IS NULL AND BuildingClass IN (SELECT BuildingClassType FROM Belief_BuildingClassFaithPurchase);
+
+		CREATE TRIGGER IF NOT EXISTS MWStPetersHappinessBonus
+		AFTER INSERT ON Buildings
+		WHEN NEW.Cost = -1 AND NEW.FaithCost > 0 AND NEW.WonderSplashImage IS NULL
+			AND NEW.BuildingClass IN (SELECT BuildingClassType FROM Belief_BuildingClassFaithPurchase)
+		BEGIN
+			INSERT INTO Building_BuildingClassHappiness
+						(BuildingType,					BuildingClassType,		Happiness)
+			VALUES		('BUILDING_DUMMY_ST_PETERS',	NEW.BuildingClass,		1);
+		END;
 	
 	-- happiness_to_all_religious_buildings (lua_ability)
 	---------------------------------------------------------
@@ -1797,7 +1807,7 @@
 				(PromotionType,			YieldType,			Yield)
 	VALUES		('PROMOTION_ARAHURAHU',	'YIELD_CULTURE',	120);
 	---------------------------------------------------------
-	UPDATE Buildings SET FreePromotion = 'PROMOTION_ARAHURAHU' WHERE Type = 'BUILDING_MARAE_ARAHURAHU_DUMMY';
+	UPDATE Buildings SET FreePromotion = 'PROMOTION_ARAHURAHU' WHERE Type = 'BUILDING_DUMMY_MARAE_ARAHURAHU';
 	
 	-- second_free_promotion (lua_ability)
 	---------------------------------------------------------
@@ -1831,11 +1841,26 @@
 	VALUES		('BUILDING_HARMANDIR',	'YIELD_FAITH',	2);
 
 	INSERT INTO Building_BuildingClassYieldChanges (BuildingType,			BuildingClassType,	YieldType,		YieldChange)
-	SELECT DISTINCT									'BUILDING_HARMANDIR',	a.BuildingClass,	'YIELD_FOOD',	2
+	SELECT DISTINCT									'BUILDING_HARMANDIR',	a.BuildingClass,	'YIELD_FOOD',	3
 	FROM Buildings a, BuildingClasses b, Building_YieldChanges c
 	WHERE a.BuildingClass = b.Type AND a.Type = c.BuildingType
-	  AND b.MaxGlobalInstances = -1 AND b.MaxPlayerInstances = -1 AND a.IsDummy = 0 
-	  AND c.YieldType = 'YIELD_FAITH';
+		AND a.IsDummy = 0 AND a.Cost != -1
+		AND b.MaxGlobalInstances = -1 AND b.MaxPlayerInstances = -1
+		AND c.YieldType = 'YIELD_FAITH'
+		/*AND NOT a.BuildingClass IN (SELECT BuildingClassType FROM Belief_BuildingClassFaithPurchase)*/;
+
+		CREATE TRIGGER IF NOT EXISTS MWHarmandirFoodBonus
+		AFTER INSERT ON Building_YieldChanges
+		WHEN NEW.YieldType = 'YIELD_FAITH'
+			AND NEW.BuildingType IN (SELECT Type FROM Buildings WHERE IsDummy = 0 AND Cost != -1)
+			AND NEW.BuildingType IN (SELECT DefaultBuilding FROM BuildingClasses WHERE MaxGlobalInstances = -1 AND MaxPlayerInstances = -1)
+		BEGIN
+			INSERT INTO Building_BuildingClassYieldChanges
+						(BuildingType,			BuildingClassType,		YieldType,		YieldChange)
+			SELECT		'BUILDING_HARMANDIR',	Type,					'YIELD_FOOD',	3
+			FROM BuildingClasses
+			WHERE DefaultBuilding = NEW.BuildingType;
+		END;
 	---------------------------------------------------------
 	INSERT INTO Building_Flavors 	
 				(BuildingType, 			FlavorType,			Flavor)
@@ -2078,7 +2103,7 @@
 	UPDATE Buildings SET Water = 1, MinAreaSize = 10, NearbyTerrainRequired = 'TERRAIN_TUNDRA' WHERE Type = 'BUILDING_SOLOVIETSKY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=2);
 	UPDATE Buildings SET NearbyTerrainRequired = 'TERRAIN_TUNDRA' WHERE Type = 'BUILDING_SOLOVIETSKY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
 	---------------------------------------------------------
-	UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 1000 WHERE Type = 'BUILDING_SOLOVIETSKY';
+	UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 500 WHERE Type = 'BUILDING_SOLOVIETSKY';
 
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,				YieldType,						Yield)
@@ -2145,7 +2170,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldFromFaithPurchase
 				(BuildingType,					YieldType,		Yield)
-	VALUES		('BUILDING_TEMBLEQUE_DUMMY',	'YIELD_FOOD',	5);
+	VALUES		('BUILDING_DUMMY_TEMBLEQUE',	'YIELD_FOOD',	5);
 	
 	-- global_yields_from_faith_purchases (lua_ability)
 	---------------------------------------------------------
@@ -2192,7 +2217,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_SpecificGreatPersonRateModifier 
 				(BuildingType,						SpecialistType,			Modifier)
-	VALUES		('BUILDING_MUSEUM_ISLAND_DUMMY',	'SPECIALIST_ARTIST',	50);
+	VALUES		('BUILDING_DUMMY_MUSEUM_ISLAND',	'SPECIALIST_ARTIST',	50);
 				
 	-- global_great_person_modifiers (lua_ability)
 	---------------------------------------------------------
@@ -2217,7 +2242,7 @@
 
 	INSERT INTO Building_SpecialistYieldChanges
 				(BuildingType,				SpecialistType,			YieldType,			Yield) 
-	VALUES		('BUILDING_SIKU_QUANSHU',	'SPECIALIST_WRITER',	'YIELD_SCIENCE',	2);
+	VALUES		('BUILDING_SIKU_QUANSHU',	'SPECIALIST_WRITER',	'YIELD_SCIENCE',	1);
 
 	INSERT INTO Building_GreatWorkYieldChanges
 				(BuildingType,				YieldType,			Yield) 
@@ -2382,7 +2407,7 @@
 				('PROMOTION_PANAMA_CANAL',	'UNITCOMBAT_CARGO'),
 				('PROMOTION_PANAMA_CANAL',	'UNITCOMBAT_SUBMARINE');
 	---------------------------------------------------------			
-	UPDATE Buildings SET TradeRouteSeaDistanceModifier = 100, TradeRouteSeaGoldBonus = 300, /*TradeRouteRecipientBonus = 1,*/ TradeRouteTargetBonus = 3 WHERE Type = 'BUILDING_PANAMA_CANAL_DUMMY';
+	UPDATE Buildings SET TradeRouteSeaDistanceModifier = 100, TradeRouteSeaGoldBonus = 300, /*TradeRouteRecipientBonus = 1,*/ TradeRouteTargetBonus = 3 WHERE Type = 'BUILDING_DUMMY_PANAMA_CANAL';
 	
 	-- global_bonuses_to_sea_tr_in_coastal_cities (lua_ability)
 	-- global_yields_to_tr_owners_in_coastal_cities (lua_ability)
@@ -2593,10 +2618,10 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldPerXTerrainTimes100
 				(BuildingType,					TerrainType,			YieldType,			Yield) 
-	VALUES		('BUILDING_DARJEELING_DUMMY',	'TERRAIN_MOUNTAIN',		'YIELD_FOOD',		100),
-				('BUILDING_DARJEELING_DUMMY',	'TERRAIN_MOUNTAIN',		'YIELD_PRODUCTION',	100),
-				('BUILDING_DARJEELING_DUMMY',	'TERRAIN_MOUNTAIN',		'YIELD_CULTURE',	100),
-				('BUILDING_DARJEELING_DUMMY',	'TERRAIN_MOUNTAIN',		'YIELD_TOURISM',	100);
+	VALUES		('BUILDING_DUMMY_DARJEELING',	'TERRAIN_MOUNTAIN',		'YIELD_FOOD',		100),
+				('BUILDING_DUMMY_DARJEELING',	'TERRAIN_MOUNTAIN',		'YIELD_PRODUCTION',	100),
+				('BUILDING_DUMMY_DARJEELING',	'TERRAIN_MOUNTAIN',		'YIELD_CULTURE',	100),
+				('BUILDING_DUMMY_DARJEELING',	'TERRAIN_MOUNTAIN',		'YIELD_TOURISM',	100);
 				
 	-- global_yields_from_mountains (lua_ability)
 	---------------------------------------------------------
@@ -2803,11 +2828,11 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,					YieldType,			Yield)
-	VALUES		('BUILDING_ROCKEFELLER_DUMMY',	'YIELD_GOLD',		3);
+	VALUES		('BUILDING_DUMMY_ROCKEFELLER',	'YIELD_GOLD',		3);
 
 	INSERT INTO Building_YieldFromPurchase
 				(BuildingType,					YieldType,			Yield) 
-	VALUES		('BUILDING_ROCKEFELLER_DUMMY',	'YIELD_CULTURE',	5);
+	VALUES		('BUILDING_DUMMY_ROCKEFELLER',	'YIELD_CULTURE',	5);
 	
 	-- global_yields (lua_ability)
 	-- global_yields_from_gold_purchases (lua_ability)
@@ -2851,7 +2876,7 @@
 				(BuildingType,			YieldType,					Yield) 
 	VALUES		('BUILDING_AUTOBAHN',	'YIELD_GOLDEN_AGE_POINTS',	10);
 	---------------------------------------------------------
-	UPDATE Buildings SET Defense = 700 WHERE Type = 'BUILDING_AUTOBAHN_DUMMY';
+	UPDATE Buildings SET Defense = 300 WHERE Type = 'BUILDING_DUMMY_AUTOBAHN';
 	
 	-- global_defense (lua_ability)
 	---------------------------------------------------------
@@ -2878,7 +2903,7 @@
 				(BuildingType,			YieldType,			Yield) 
 	VALUES		('BUILDING_INTERSTATE',	'YIELD_PRODUCTION',	10);
 	---------------------------------------------------------
-	UPDATE Buildings SET PopulationChange = 1 WHERE Type = 'BUILDING_INTERSTATE_DUMMY';
+	UPDATE Buildings SET PopulationChange = 1 WHERE Type = 'BUILDING_DUMMY_INTERSTATE';
 	
 	-- global_population_increase (lua_ability)
 	---------------------------------------------------------
@@ -3052,8 +3077,8 @@
 				('PROMOTION_SANBO_AIR_EFFECT',	'UNITCOMBAT_FIGHTER'),
 				('PROMOTION_SANBO_AIR_EFFECT',	'UNITCOMBAT_BOMBER');
 	---------------------------------------------------------
-	UPDATE Buildings SET FreePromotion = 'PROMOTION_SANBO_SEA' WHERE Type = 'BUILDING_SANBO_DUMMY';
-	UPDATE Buildings SET FreePromotion = 'PROMOTION_SANBO_AIR' WHERE Type = 'BUILDING_SANBO_2_DUMMY';
+	UPDATE Buildings SET FreePromotion = 'PROMOTION_SANBO_SEA' WHERE Type = 'BUILDING_DUMMY_SANBO';
+	UPDATE Buildings SET FreePromotion = 'PROMOTION_SANBO_AIR' WHERE Type = 'BUILDING_DUMMY_SANBO_2';
 				
 	-- second_and_third_free_promotion (lua_ability)
 	---------------------------------------------------------
@@ -3555,7 +3580,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldPerXTerrainTimes100
 				(BuildingType,				TerrainType,			YieldType,			Yield) 
-	VALUES		('BUILDING_ARECIBO_DUMMY',	'TERRAIN_MOUNTAIN',		'YIELD_SCIENCE',	100);
+	VALUES		('BUILDING_DUMMY_ARECIBO',	'TERRAIN_MOUNTAIN',		'YIELD_SCIENCE',	100);
 	
 	-- global_yields_from_mountains (lua_ability)
 	---------------------------------------------------------
@@ -3591,7 +3616,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_GrowthExtraYield
 				(BuildingType,					YieldType,			Yield) 
-	VALUES		('BUILDING_SEED_VAULT_DUMMY',	'YIELD_PRODUCTION',	50);
+	VALUES		('BUILDING_DUMMY_SEED_VAULT',	'YIELD_PRODUCTION',	50);
 	
 	-- global_yields_from_growth (lua_ability)
 	---------------------------------------------------------
@@ -3679,7 +3704,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_FeatureYieldChanges
 				(BuildingType,				FeatureType,		YieldType,				Yield) 
-	VALUES		('BUILDING_JUMEIRAH_DUMMY',	'FEATURE_ATOLL',	'YIELD_TOURISM',		7);
+	VALUES		('BUILDING_DUMMY_JUMEIRAH',	'FEATURE_ATOLL',	'YIELD_TOURISM',		7);
 	
 	-- global_yields_to_atolls (lua_ability)
 	---------------------------------------------------------
@@ -3753,7 +3778,7 @@
 	---------------------------------------------------------
 	INSERT INTO Building_YieldChanges 
 				(BuildingType,					YieldType,					Yield)
-	VALUES		('BUILDING_CURIOSITY_DUMMY',	'YIELD_GOLDEN_AGE_POINTS',	10);
+	VALUES		('BUILDING_DUMMY_CURIOSITY',	'YIELD_GOLDEN_AGE_POINTS',	10);
 				
 	-- global_yields_from_research_agreements (lua_ability)
 	---------------------------------------------------------
@@ -4333,7 +4358,7 @@ WHERE Type IN (SELECT 'BUILDING_'||WType FROM MWfVPConfig WHERE WActive = 0);
 		INSERT INTO Building_SpecialistYieldChangesLocal (BuildingType, SpecialistType, YieldType, Yield) VALUES ('BUILDING_ANGKOR_WAT', 'SPECIALIST_CIVIL_SERVANT', 'YIELD_FAITH', 3);
 		
 		INSERT INTO Policy_UnitClassReplacements (PolicyType,				ReplacedUnitClassType, ReplacementUnitClassType) 
-		SELECT									 'POLICY_ANGKOR_WAT_DUMMY', Class,				   Class||'_FAITH'
+		SELECT									 'POLICY_DUMMY_ANGKOR_WAT', Class,				   Class||'_FAITH'
 		FROM Units
 		WHERE Type IN ('UNIT_EMISSARY', 'UNIT_ENVOY', 'UNIT_DIPLOMAT', 'UNIT_AMBASSADOR');
 		
@@ -4358,7 +4383,7 @@ WHERE Type IN (SELECT 'BUILDING_'||WType FROM MWfVPConfig WHERE WActive = 0);
 		WHERE a.Type IN ('UNIT_EMISSARY', 'UNIT_ENVOY', 'UNIT_DIPLOMAT', 'UNIT_AMBASSADOR') AND a.Type = b.UnitType;
 	
 		INSERT INTO Units (Type, 		   Class, 			Combat, BaseSightRange, Cost, FaithCost, RequiresFaithPurchaseEnabled,  GlobalFaithPurchaseCooldown, PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas, MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, PolicyType, 				  PrereqTech, ObsoleteTech, CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra)
-		SELECT			   Type||'_FAITH', Class||'_FAITH',	Combat, BaseSightRange, Cost, 0,		 0,								0, 							 PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas, MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_ANGKOR_WAT_DUMMY', PrereqTech, NULL,			CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra
+		SELECT			   Type||'_FAITH', Class||'_FAITH',	Combat, BaseSightRange, Cost, 0,		 0,								0, 							 PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas, MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_DUMMY_ANGKOR_WAT', PrereqTech, NULL,			CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra
 		FROM Units
 		WHERE Type IN ('UNIT_EMISSARY', 'UNIT_ENVOY', 'UNIT_DIPLOMAT', 'UNIT_AMBASSADOR');
 

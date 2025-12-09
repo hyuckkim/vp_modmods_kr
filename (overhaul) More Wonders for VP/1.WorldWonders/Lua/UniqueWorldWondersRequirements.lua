@@ -417,11 +417,18 @@ function IsAtPeace(ePlayer, eCity, eBuilding)
 	
 	if not pPlayer:IsAlive() then return false end
 	
-	local pTeam = Teams[pPlayer:GetTeam()]
-	local iCountWars = pTeam:GetAtWarCount(false)
+	local pCity = pPlayer:GetCityByID(eCity)
+	local iCurrentWonderProductionProgress = pCity:GetBuildingProduction(eBuilding)
+	local iTotalWonderProductionCost = pCity:GetBuildingProductionNeeded(eBuilding)
+	local fWonderProductionRatio = iCurrentWonderProductionProgress / iTotalWonderProductionCost
 	
-	if iCountWars > 0 then
-		return false
+	if fWonderProductionRatio < 33 then
+		local pTeam = Teams[pPlayer:GetTeam()]
+		local iCountWars = pTeam:GetAtWarCount(false)
+	
+		if iCountWars > 0 then
+			return false
+		end
 	end
 	
 	return true
@@ -433,34 +440,47 @@ function IsMajorApproach(ePlayer, eCity, eBuilding)
 	if not tValidIsMajorApproach[eBuilding] then return true end
 	if bReachedMaxEra then return false end
 
+	local bMultiplayerGame = Game.IsGameMultiPlayer()
+
+	if bMultiplayerGame then return true end
+
 	local pPlayer = Players[ePlayer]
 	
 	if not pPlayer:IsAlive() then return false end
 	
-	for id, building in pairs(tValidIsMajorApproach) do
-		if id == eBuilding then
-			local eRequiredApproach1 = building.eRequiredApproach1
-			local eRequiredApproach2 = building.eRequiredApproach2
-			local eRequiredApproach3 = building.eRequiredApproach3
-			local eRequiredApproach4 = building.eRequiredApproach4
+	local pCity = pPlayer:GetCityByID(eCity)
+	local iCurrentWonderProductionProgress = pCity:GetBuildingProduction(eBuilding)
+	local iTotalWonderProductionCost = pCity:GetBuildingProductionNeeded(eBuilding)
+	local fWonderProductionRatio = iCurrentWonderProductionProgress / iTotalWonderProductionCost
+	
+	if fWonderProductionRatio < 33 then
+		for id, building in pairs(tValidIsMajorApproach) do
+			if id == eBuilding then
+				local eRequiredApproach1 = building.eRequiredApproach1
+				local eRequiredApproach2 = building.eRequiredApproach2
+				local eRequiredApproach3 = building.eRequiredApproach3
+				local eRequiredApproach4 = building.eRequiredApproach4
 			
-			for i = 0, GameDefines.MAX_MAJOR_CIVS - 1, 1 do
-				local pTargetPlayer = Players[i]
+				for i = 0, GameDefines.MAX_MAJOR_CIVS - 1, 1 do
+					local pTargetPlayer = Players[i]
 				
-				if not pTargetPlayer:IsEverAlive() then break end
+					if not pTargetPlayer:IsEverAlive() then break end
 
-				local eApproachTrue = pPlayer:GetMajorCivApproach(i)
-				local eApproachGuess = pPlayer:GetApproachTowardsUsGuess(i)
+					local eApproachTrue = pPlayer:GetMajorCivApproach(i)
+					local eApproachGuess = pPlayer:GetApproachTowardsUsGuess(i)
 				
-				if eApproachTrue == eRequiredApproach1 or eApproachTrue == eRequiredApproach2 or eApproachTrue == eRequiredApproach3 or eApproachTrue == eRequiredApproach4 or
-				   eApproachGuess == eRequiredApproach1 or eApproachGuess == eRequiredApproach2 or eApproachGuess == eRequiredApproach3 or eApproachGuess == eRequiredApproach4 then
-					return true
+					if eApproachTrue == eRequiredApproach1 or eApproachTrue == eRequiredApproach2 or eApproachTrue == eRequiredApproach3 or eApproachTrue == eRequiredApproach4 or
+					   eApproachGuess == eRequiredApproach1 or eApproachGuess == eRequiredApproach2 or eApproachGuess == eRequiredApproach3 or eApproachGuess == eRequiredApproach4 then
+						return true
+					end
 				end
-			end
 			
-			return false
+				return false
+			end
 		end
 	end
+
+	return true
 end
 GameEvents.CityCanConstruct.Add(IsMajorApproach)
 
@@ -989,6 +1009,9 @@ function Initialize()
 				eRequiredImprovement1 = GameInfoTypes.IMPROVEMENT_CITADEL,
 				eRequiredImprovement2 = GameInfoTypes.IMPROVEMENT_FORT,
 				eRequiredImprovement3 = GameInfo.Improvements.IMPROVEMENT_TOMATEKH_BENIN_IYA		and GameInfo.Improvements.IMPROVEMENT_TOMATEKH_BENIN_IYA.ID			or -2,
+				eRequiredImprovement4 = GameInfo.Improvements.IMPROVEMENT_APLEKTON					and GameInfo.Improvements.IMPROVEMENT_APLEKTON.ID					or -2,
+				eRequiredImprovement5 = GameInfo.Improvements.IMPROVEMENT_ISIBAYA					and GameInfo.Improvements.IMPROVEMENT_ISIBAYA.ID					or -2,
+				eRequiredImprovement6 = GameInfo.Improvements.IMPROVEMENT_ORDO						and GameInfo.Improvements.IMPROVEMENT_ORDO.ID						or -2,
 				iRequiredImprovements = 1
 			}
 			tValidIsHasImprovementsOrs[GameInfo.Buildings.BUILDING_LOUVRE.ID] = {
@@ -999,6 +1022,9 @@ function Initialize()
 				eRequiredImprovement1 = GameInfoTypes.IMPROVEMENT_CITADEL,
 				eRequiredImprovement2 = GameInfoTypes.IMPROVEMENT_FORT,
 				eRequiredImprovement3 = GameInfo.Improvements.IMPROVEMENT_TOMATEKH_BENIN_IYA		and GameInfo.Improvements.IMPROVEMENT_TOMATEKH_BENIN_IYA.ID			or -2,
+				eRequiredImprovement4 = GameInfo.Improvements.IMPROVEMENT_APLEKTON					and GameInfo.Improvements.IMPROVEMENT_APLEKTON.ID					or -2,
+				eRequiredImprovement5 = GameInfo.Improvements.IMPROVEMENT_ISIBAYA					and GameInfo.Improvements.IMPROVEMENT_ISIBAYA.ID					or -2,
+				eRequiredImprovement6 = GameInfo.Improvements.IMPROVEMENT_ORDO						and GameInfo.Improvements.IMPROVEMENT_ORDO.ID						or -2,
 				iRequiredImprovements = 1
 			}
 			tValidIsHasImprovementsOrs[GameInfo.Buildings.BUILDING_AKIHABARA.ID] = {

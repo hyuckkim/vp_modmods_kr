@@ -1,4 +1,29 @@
 ﻿Changelog:
+v18.2:
+- reworked all dummy buildings' and policies' tags and names;
+- fixed:
+	- Baghcasaray: corrected promotion description and pedia type;
+	- Lhasa: corrected Potala Palace trigger;
+	- Thimphu: corrected description;
+	- Tunis: replaced improvement icon (previous was reused by VP 5.0; current one is borrowed from Umayyads mod @DJSHenninger);
+
+v18.1:
+- changes:
+	- moved FaithCost and WonderSplashScreen columns from UPDATE to INSERT INTO statement for compatibility with triggers;
+	- changed order of new resources (visible in Trade Opportunities);
+	- added lua tags for some buildings (Bylina, Visconti Emissary, Grand Harbor, Gate of Dawn);
+	- commented out Llao Llao entries (it is still in planning phase, but without a model I cannot push it further, so it shouldn't be visible);
+	- reworked slightly the trick by @Jarcast2;
+- text rework:
+	- reworked monopoly text for all resources;
+	- reworked new units' help texts;
+	- added additional info in building help texts about yields and modifiers from events (not listed by VP tooltips);
+	- now City-States (requirements, abilities) are marked light grey;
+- fixed:
+	- Tapestries: now monopoly bonus is granted only to true Religious Buildings (unlocked by a Belief);
+	- Baghcasaray: ability is now 5% (was almost 95%);
+	- added required buildings for new units' investments;
+
 v18:
 - adapted to VP 5.0;
 - deleted Cargo Ships from Master of Cold Waters (Sgang Gwaay) promotion (useless);

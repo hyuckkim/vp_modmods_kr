@@ -51,49 +51,49 @@ local g_tNaturalWonder = {
 }
 
 local g_tNaturalWonderDummy = {
-	GameInfoTypes["BUILDING_SALAR_A_DUMMY"],			-- 1
-	GameInfoTypes["BUILDING_SALAR_B_DUMMY"],
-	GameInfoTypes["BUILDING_EL_DORADO_DUMMY"],
-	GameInfoTypes["BUILDING_POTOSI_DUMMY"],
-	GameInfoTypes["BUILDING_CRATER_DUMMY"],				-- 5
-	GameInfoTypes["BUILDING_MESA_DUMMY"],
-	GameInfoTypes["BUILDING_SOLOMONS_MINES_DUMMY"],
-	GameInfoTypes["BUILDING_VOLCANO_DUMMY"],					-- placed in wonder spot
-	GameInfoTypes["BUILDING_FUJI_1_DUMMY"],						-- placed in wonder spot
-	GameInfoTypes["BUILDING_MT_SINAI_DUMMY"],			-- 10
-	GameInfoTypes["BUILDING_GEYSER_DUMMY"],
-	GameInfoTypes["BUILDING_MT_EVEREST_DUMMY"],
-	GameInfoTypes["BUILDING_NEW_REEF_A_DUMMY"],
-	GameInfoTypes["BUILDING_NEW_REEF_B_DUMMY"],
-	GameInfoTypes["BUILDING_NEW_REEF_C_DUMMY"],			-- 15
-	GameInfoTypes["BUILDING_GIBRALTAR_DUMMY"],
-	GameInfoTypes["BUILDING_LAKE_VICTORIA_DUMMY"],
-	GameInfoTypes["BUILDING_CAUSEWAY_A_DUMMY"],
-	GameInfoTypes["BUILDING_CAUSEWAY_B_DUMMY"],
-	GameInfoTypes["BUILDING_RETBA_DUMMY"],				-- 20
-	GameInfoTypes["BUILDING_LUMI_BAY_DUMMY"],
-	GameInfoTypes["BUILDING_DALLOL_DUMMY"],
-	GameInfoTypes["BUILDING_EYE_OF_SAHARA_A_DUMMY"],
-	GameInfoTypes["BUILDING_EYE_OF_SAHARA_B_DUMMY"],
-	GameInfoTypes["BUILDING_EYE_OF_SAHARA_C_DUMMY"],	-- 25
+	GameInfoTypes["BUILDING_DUMMY_SALAR_A"],			-- 1
+	GameInfoTypes["BUILDING_DUMMY_SALAR_B"],
+	GameInfoTypes["BUILDING_DUMMY_EL_DORADO"],
+	GameInfoTypes["BUILDING_DUMMY_POTOSI"],
+	GameInfoTypes["BUILDING_DUMMY_CRATER"],				-- 5
+	GameInfoTypes["BUILDING_DUMMY_MESA"],
+	GameInfoTypes["BUILDING_DUMMY_SOLOMONS_MINES"],
+	GameInfoTypes["BUILDING_DUMMY_VOLCANO"],					-- placed in wonder spot
+	GameInfoTypes["BUILDING_DUMMY_FUJI_1"],						-- placed in wonder spot
+	GameInfoTypes["BUILDING_DUMMY_MT_SINAI"],			-- 10
+	GameInfoTypes["BUILDING_DUMMY_GEYSER"],
+	GameInfoTypes["BUILDING_DUMMY_MT_EVEREST"],
+	GameInfoTypes["BUILDING_DUMMY_NEW_REEF_A"],
+	GameInfoTypes["BUILDING_DUMMY_NEW_REEF_B"],
+	GameInfoTypes["BUILDING_DUMMY_NEW_REEF_C"],			-- 15
+	GameInfoTypes["BUILDING_DUMMY_GIBRALTAR"],
+	GameInfoTypes["BUILDING_DUMMY_LAKE_VICTORIA"],
+	GameInfoTypes["BUILDING_DUMMY_CAUSEWAY_A"],
+	GameInfoTypes["BUILDING_DUMMY_CAUSEWAY_B"],
+	GameInfoTypes["BUILDING_DUMMY_RETBA"],				-- 20
+	GameInfoTypes["BUILDING_DUMMY_LUMI_BAY"],
+	GameInfoTypes["BUILDING_DUMMY_DALLOL"],
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_A"],
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_B"],
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_C"],	-- 25
 	GameInfoTypes["BUILDING_MT_PAEKTU"],						-- regular building not dummy, placed in wonder spot
-	GameInfoTypes["BUILDING_MT_KAILASH_DUMMY"],
-	GameInfoTypes["BUILDING_KILIMANJARO_DUMMY"],
+	GameInfoTypes["BUILDING_DUMMY_MT_KAILASH"],
+	GameInfoTypes["BUILDING_DUMMY_KILIMANJARO"],
 	nil,
-	GameInfoTypes["BUILDING_BLUE_HOLE_DUMMY"],			-- 30
-	GameInfoTypes["BUILDING_GALAPAGOS_A_DUMMY"], 
-	GameInfoTypes["BUILDING_GALAPAGOS_B_DUMMY"],
-	GameInfoTypes["BUILDING_HA_LONG_A_DUMMY"],
-	GameInfoTypes["BUILDING_HA_LONG_B_DUMMY"],
+	GameInfoTypes["BUILDING_DUMMY_BLUE_HOLE"],			-- 30
+	GameInfoTypes["BUILDING_DUMMY_GALAPAGOS_A"], 
+	GameInfoTypes["BUILDING_DUMMY_GALAPAGOS_B"],
+	GameInfoTypes["BUILDING_DUMMY_HA_LONG_A"],
+	GameInfoTypes["BUILDING_DUMMY_HA_LONG_B"],
 	nil,												-- 35
-	GameInfoTypes["BUILDING_AURORA_A_DUMMY"], 
-	GameInfoTypes["BUILDING_AURORA_B_DUMMY"],
-	GameInfoTypes["BUILDING_AURORA_C_DUMMY"],
-	GameInfoTypes["BUILDING_JEJU_DO_DUMMY"],					-- placed in wonder spot
-	GameInfoTypes["BUILDING_ARCH_DUMMY"],				-- 40	-- placed in wonder spot
-	GameInfoTypes["BUILDING_MARIANA_A_DUMMY"],
-	GameInfoTypes["BUILDING_MARIANA_B_DUMMY"],
-	GameInfoTypes["BUILDING_MARIANA_C_DUMMY"],
+	GameInfoTypes["BUILDING_DUMMY_AURORA_A"], 
+	GameInfoTypes["BUILDING_DUMMY_AURORA_B"],
+	GameInfoTypes["BUILDING_DUMMY_AURORA_C"],
+	GameInfoTypes["BUILDING_DUMMY_JEJU_DO"],					-- placed in wonder spot
+	GameInfoTypes["BUILDING_DUMMY_ARCH"],				-- 40	-- placed in wonder spot
+	GameInfoTypes["BUILDING_DUMMY_MARIANA_A"],
+	GameInfoTypes["BUILDING_DUMMY_MARIANA_B"],
+	GameInfoTypes["BUILDING_DUMMY_MARIANA_C"],
 	nil,
 	nil													-- 45
 }
@@ -135,13 +135,13 @@ local g_tNaturalWonderDummy2 = {}
 	for i = 1, g_iWonderWithDummies do
 		g_tNaturalWonderDummy2[i] = false
 	end
-	g_tNaturalWonderDummy2[9] = GameInfoTypes["BUILDING_FUJI_2_DUMMY"]
+	g_tNaturalWonderDummy2[9] = GameInfoTypes["BUILDING_DUMMY_FUJI_2"]
 
 local g_tNaturalWonderDummy3 = {}
 	for i = 1, g_iWonderWithDummies do
 		g_tNaturalWonderDummy3[i] = false
 	end
-	g_tNaturalWonderDummy3[9] = GameInfoTypes["BUILDING_FUJI_3_DUMMY"]
+	g_tNaturalWonderDummy3[9] = GameInfoTypes["BUILDING_DUMMY_FUJI_3"]
 
 
 -- table for adding policies
@@ -149,18 +149,18 @@ local g_tNaturalWonderDummyPolicy = {}
 	for i = 1, g_iWonderWithDummies do
 		g_tNaturalWonderDummyPolicy[i] = false
 	end
-	g_tNaturalWonderDummyPolicy[6] = GameInfoTypes["POLICY_MESA_DUMMY"]
-	g_tNaturalWonderDummyPolicy[20] = GameInfoTypes["POLICY_RETBA_DUMMY"]
-	g_tNaturalWonderDummyPolicy[21] = GameInfoTypes["POLICY_LUMI_BAY_DUMMY"]
-	g_tNaturalWonderDummyPolicy[29] = GameInfoTypes["POLICY_ULURU_DUMMY"]
-	g_tNaturalWonderDummyPolicy[33] = GameInfoTypes["POLICY_HA_LONG_A_DUMMY"]
-	g_tNaturalWonderDummyPolicy[34] = GameInfoTypes["POLICY_HA_LONG_B_DUMMY"]
-	g_tNaturalWonderDummyPolicy[35] = GameInfoTypes["POLICY_ZHANGJIAJIE_DUMMY"]
-	g_tNaturalWonderDummyPolicy[41] = GameInfoTypes["POLICY_MARIANA_A_DUMMY"]
-	g_tNaturalWonderDummyPolicy[42] = GameInfoTypes["POLICY_MARIANA_B_DUMMY"]
-	g_tNaturalWonderDummyPolicy[43] = GameInfoTypes["POLICY_MARIANA_C_DUMMY"]
-	g_tNaturalWonderDummyPolicy[44] = GameInfoTypes["POLICY_DANXIA_A_DUMMY"]
-	g_tNaturalWonderDummyPolicy[45] = GameInfoTypes["POLICY_DANXIA_B_DUMMY"]
+	g_tNaturalWonderDummyPolicy[6] = GameInfoTypes["POLICY_DUMMY_MESA"]
+	g_tNaturalWonderDummyPolicy[20] = GameInfoTypes["POLICY_DUMMY_RETBA"]
+	g_tNaturalWonderDummyPolicy[21] = GameInfoTypes["POLICY_DUMMY_LUMI_BAY"]
+	g_tNaturalWonderDummyPolicy[29] = GameInfoTypes["POLICY_DUMMY_ULURU"]
+	g_tNaturalWonderDummyPolicy[33] = GameInfoTypes["POLICY_DUMMY_HA_LONG_A"]
+	g_tNaturalWonderDummyPolicy[34] = GameInfoTypes["POLICY_DUMMY_HA_LONG_B"]
+	g_tNaturalWonderDummyPolicy[35] = GameInfoTypes["POLICY_DUMMY_ZHANGJIAJIE"]
+	g_tNaturalWonderDummyPolicy[41] = GameInfoTypes["POLICY_DUMMY_MARIANA_A"]
+	g_tNaturalWonderDummyPolicy[42] = GameInfoTypes["POLICY_DUMMY_MARIANA_B"]
+	g_tNaturalWonderDummyPolicy[43] = GameInfoTypes["POLICY_DUMMY_MARIANA_C"]
+	g_tNaturalWonderDummyPolicy[44] = GameInfoTypes["POLICY_DUMMY_DANXIA_A"]
+	g_tNaturalWonderDummyPolicy[45] = GameInfoTypes["POLICY_DUMMY_DANXIA_B"]
 
 
 

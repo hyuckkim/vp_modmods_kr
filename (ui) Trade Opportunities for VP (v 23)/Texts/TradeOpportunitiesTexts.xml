@@ -75,19 +75,19 @@
 			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_value}{5_demand} {6_c_monopol}({7_resource_own}/{8_resource_pos})[ENDCOLOR]{9_resource_GP}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_EXT" >
-			<Text>(not counted towards [ICON_VP_MONOPOLY] Global Monopolies)</Text>
+			<Text>(not counted towards [ICON_MONOPOLY] Global Monopolies)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_MONOPOLY] Global Monopoly counter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_MONOPOLY] Global Monopoly counter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+			<Text>[NEWLINE][ICON_BULLET]1 copy was imported, thus added to your [ICON_MONOPOLY] Global Monopoly counter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_VP_MONOPOLY] Global Monopoly counter</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported} copies were imported, thus added to your [ICON_MONOPOLY] Global Monopoly counter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_ONE" >
 			<Text>[NEWLINE][ICON_BULLET]1 copy was provided by a building</Text>
@@ -99,7 +99,7 @@
 			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP} copies were granted by the [ICON_GREAT_ADMIRAL] Great Admiral</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_CORP" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp} and {2_resource_num_franch} copies were granted by your [ICON_VP_MONOPOLY] Corporations and [ICON_VP_MONOPOLY] Franchises respectively</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp} and {2_resource_num_franch} copies were granted by your [ICON_MONOPOLY] Corporations and [ICON_MONOPOLY] Franchises respectively</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_ONE" >
 			<Text>[NEWLINE][ICON_BULLET]1 copy was granted by your [ICON_CITY_STATE] City-State Alliances ([COLOR_MAGENTA]Foreign Service[ENDCOLOR])</Text>
@@ -223,7 +223,7 @@
 			<Text>[ICON_SILVER_FIST]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_CS_STATUS_SPY" >
-			<Text>[ICON_VP_SPY_POINTS]</Text>
+			<Text>[ICON_SPY_POINT]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
 			<Text>[ICON_RESISTANCE]</Text>

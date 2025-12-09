@@ -46,31 +46,31 @@ local g_tWorldWonder = {
 }
 
 local g_tWorldWonderDummy = {
-	GameInfoTypes["BUILDING_CHEVALIERS_DUMMY"],
-	GameInfoTypes["BUILDING_ITSUKUSHIMA_DUMMY"],
-	GameInfoTypes["BUILDING_QALHAT_DUMMY"],
-	GameInfoTypes["BUILDING_GATE_OF_SUN_DUMMY"],
-	GameInfoTypes["BUILDING_GREAT_ZIMBABWE_DUMMY"],
-	GameInfoTypes["BUILDING_KILWA_KISIWANI_DUMMY"],
-	GameInfoTypes["BUILDING_MARAE_ARAHURAHU_DUMMY"],
-	GameInfoTypes["BUILDING_KUK_DUMMY"],
-	GameInfoTypes["BUILDING_ST_PETERS_DUMMY"],
-	GameInfoTypes["BUILDING_PANAMA_CANAL_DUMMY"],
-	GameInfoTypes["BUILDING_JUMEIRAH_DUMMY"],
-	GameInfoTypes["BUILDING_ARECIBO_DUMMY"],
-	GameInfoTypes["BUILDING_ROCKEFELLER_DUMMY"],
-	GameInfoTypes["BUILDING_DARJEELING_DUMMY"],
-	GameInfoTypes["BUILDING_SANBO_DUMMY"],
-	GameInfoTypes["BUILDING_AUTOBAHN_DUMMY"],
-	GameInfoTypes["BUILDING_INTERSTATE_DUMMY"],
-	GameInfoTypes["BUILDING_MUSEUM_ISLAND_DUMMY"],
-	GameInfoTypes["BUILDING_CURIOSITY_DUMMY"],
-	GameInfoTypes["BUILDING_SEED_VAULT_DUMMY"],
-	GameInfoTypes["BUILDING_TEMBLEQUE_DUMMY"],
-	GameInfoTypes["POLICY_ANGKOR_WAT_DUMMY"],		-- POLICY!!!
-	GameInfoTypes["POLICY_TLACHIHUALTEPETL_DUMMY"], -- POLICY!!!
-	GameInfoTypes["BUILDING_HOSPITALLER_DUMMY"],
-	GameInfoTypes["BUILDING_SONGYUE_DUMMY"]
+	GameInfoTypes["BUILDING_DUMMY_CHEVALIERS"],
+	GameInfoTypes["BUILDING_DUMMY_ITSUKUSHIMA"],
+	GameInfoTypes["BUILDING_DUMMY_QALHAT"],
+	GameInfoTypes["BUILDING_DUMMY_GATE_OF_SUN"],
+	GameInfoTypes["BUILDING_DUMMY_GREAT_ZIMBABWE"],
+	GameInfoTypes["BUILDING_DUMMY_KILWA_KISIWANI"],
+	GameInfoTypes["BUILDING_DUMMY_MARAE_ARAHURAHU"],
+	GameInfoTypes["BUILDING_DUMMY_KUK"],
+	GameInfoTypes["BUILDING_DUMMY_ST_PETERS"],
+	GameInfoTypes["BUILDING_DUMMY_PANAMA_CANAL"],
+	GameInfoTypes["BUILDING_DUMMY_JUMEIRAH"],
+	GameInfoTypes["BUILDING_DUMMY_ARECIBO"],
+	GameInfoTypes["BUILDING_DUMMY_ROCKEFELLER"],
+	GameInfoTypes["BUILDING_DUMMY_DARJEELING"],
+	GameInfoTypes["BUILDING_DUMMY_SANBO"],
+	GameInfoTypes["BUILDING_DUMMY_AUTOBAHN"],
+	GameInfoTypes["BUILDING_DUMMY_INTERSTATE"],
+	GameInfoTypes["BUILDING_DUMMY_MUSEUM_ISLAND"],
+	GameInfoTypes["BUILDING_DUMMY_CURIOSITY"],
+	GameInfoTypes["BUILDING_DUMMY_SEED_VAULT"],
+	GameInfoTypes["BUILDING_DUMMY_TEMBLEQUE"],
+	GameInfoTypes["POLICY_DUMMY_ANGKOR_WAT"],		-- POLICY!!!
+	GameInfoTypes["POLICY_DUMMY_TLACHIHUALTEPETL"], -- POLICY!!!
+	GameInfoTypes["BUILDING_DUMMY_HOSPITALLER"],
+	GameInfoTypes["BUILDING_DUMMY_SONGYUE"]
 }
 
 local g_iWonderWithDummies = #g_tWorldWonderDummy
@@ -79,7 +79,7 @@ local g_tWorldWonderDummy2 = {}
 	for i = 1, g_iWonderWithDummies do
 		g_tWorldWonderDummy2[i] = false
 	end
-	g_tWorldWonderDummy2[15] = GameInfoTypes["BUILDING_SANBO_2_DUMMY"]
+	g_tWorldWonderDummy2[15] = GameInfoTypes["BUILDING_DUMMY_SANBO_2"]
 
 local g_tWorldWonderExists = {}
 	for i = 1, g_iWonderWithDummies do

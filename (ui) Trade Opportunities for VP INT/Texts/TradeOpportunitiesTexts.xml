@@ -75,19 +75,19 @@
 			<Text>{1_icon} {2_c_resource}{3_resource}:[ENDCOLOR] {4_value}{5_demand} {6_c_monopol}({7_resource_own}/{8_resource_pos})[ENDCOLOR]{9_resource_GP}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_EXT" >
-			<Text>([ICON_VP_MONOPOLY] 글로벌 독점에 포함되지 않음)</Text>
+			<Text>([ICON_MONOPOLY] 글로벌 독점에 포함되지 않음)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_NETHERLANDS_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_ONE" >
-			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]1개 사본을 가져왔으며, [ICON_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_STATECRAFT_MORE" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_VP_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_imported}개 사본을 가져왔으며, [ICON_MONOPOLY] 글로벌 독점 카운터에 추가되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_BUILDINGS_ONE" >
 			<Text>[NEWLINE][ICON_BULLET]1개 사본이 건물에 의해 제공되었습니다.</Text>
@@ -99,7 +99,7 @@
 			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_GP}개 사본이 [ICON_GREAT_ADMIRAL] 위대한 제독에 의해 승인되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_CORP" >
-			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp}개 그리고 {2_resource_num_franch} 사본이 당신의 [ICON_VP_MONOPOLY] 기업과 [ICON_VP_MONOPOLY] 프랜차이즈에서 각각 부여되었습니다.</Text>
+			<Text>[NEWLINE][ICON_BULLET]{1_resource_num_corp}개 그리고 {2_resource_num_franch} 사본이 당신의 [ICON_MONOPOLY] 기업과 [ICON_MONOPOLY] 프랜차이즈에서 각각 부여되었습니다.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_TRADE_VALUE_TOOLTIP_ALLY_ONE" >
 			<Text>[NEWLINE][ICON_BULLET]1개 사본이 당신의 [ICON_CITY_STATE] 도시 국가 동맹([COLOR_MAGENTA]외교 서비스[ENDCOLOR])에서 부여되었습니다.</Text>
@@ -223,7 +223,7 @@
 			<Text>[ICON_SILVER_FIST]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_CS_STATUS_SPY" >
-			<Text>[ICON_VP_SPY_POINTS]</Text>
+			<Text>[ICON_SPY_POINT]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
 			<Text>[ICON_RESISTANCE]</Text>
