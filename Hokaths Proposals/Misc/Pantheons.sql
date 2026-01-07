@@ -19,4 +19,4 @@ SET Text = Replace(Text, '[ICON_PEACE] Faith, ', '')
 WHERE Tag = 'TXT_KEY_BELIEF_GOD_KING';
 
 -- keep your pantheon after being spread to
--- UPDATE CustomModOptions SET Value = 1 WHERE Name = 'RELIGION_PERMANENT_PANTHEON';
+-- UPDATE CustomModOptions SET Value = 1 WHERE Name = 'BALANCE_PERMANENT_PANTHEONS';

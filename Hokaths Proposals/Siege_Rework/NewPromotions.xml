@@ -8,10 +8,10 @@
 			<PediaType>PEDIA_SIEGE</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_IMPROVISATION</PediaEntry>
 			<PortraitIndex>45</PortraitIndex>
-			<IconAtlas>promoVP_atlas_01</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_01</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_SIEGE_1</PromotionPrereqOr1>
-			<GainsXPFromPillaging>1</GainsXPFromPillaging>
+			<XPFromPillaging>5</XPFromPillaging>
 			<PartialHealOnPillage>15</PartialHealOnPillage>
 		</Row>
 		<Row>
@@ -21,7 +21,7 @@
 			<PediaType>PEDIA_SIEGE</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SPOTTERS</PediaEntry>
 			<PortraitIndex>56</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_FIELD_2</PromotionPrereqOr1>
 			<VisibilityChange>2</VisibilityChange>

@@ -24,9 +24,6 @@ UPDATE Language_en_US SET
 Text = Replace(Text, '[NEWLINE][NEWLINE]Available once you have researched [COLOR_CYAN]{TXT_KEY_TECH_COMBUSTION_TITLE}[ENDCOLOR].', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_MINELAYER_HELP';
 
-UPDATE Language_en_US SET
-Text = '+15 XP for Sea Units. All Naval Melee Units created by this City (past or future) receive the [COLOR_POSITIVE_TEXT]Minelayer[ENDCOLOR] Promotion, slowing adjacent enemy Units.[NEWLINE][NEWLINE]' || Text
-WHERE Tag = 'TXT_KEY_BUILDING_MINEFIELD_HELP';
 
 UPDATE UnitPromotions SET
 	RangedDefenseMod = 0,

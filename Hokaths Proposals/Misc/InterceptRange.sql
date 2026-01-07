@@ -23,9 +23,4 @@ UPDATE Language_en_US
 SET Text = 'The Carrier is a specialized vessel which carries fighter airplanes, bombers, and atomic bombs. The Carrier itself is unable to attack, but the aircraft it carries make it the most powerful offensive weapon afloat. Defensively, however, the Carrier is weak and should be escorted by destroyers and submarines. Carriers are, however, armed with anti-air weaporny, and will automatically attack any air unit bombing a target within 2 tiles. (They can only intercept one unit per turn.)'
 WHERE Tag = 'TXT_KEY_UNIT_CARRIER_STRATEGY';
 
--- Supercarrier
-UPDATE Language_en_US
-SET Text = 'Carries 5 aircrafts (up to 8 with promotions), has a high Air Interception range of 3 and can detect Submarines.[NEWLINE][NEWLINE]May only have [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Supercarriers active at one time.'
-WHERE Tag = 'TXT_KEY_UNIT_SUPERCARRIER_HELP';
-
 -- other texts dont seem to mention specifics about the range

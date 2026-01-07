@@ -2,14 +2,14 @@ New Buildings
   It's been noted that later in the game there are slightly too few buildings, let's start to address that
 
   Archive (Theology)
-  -- 1 Science and Culture
+  -- 1 Science 
   -- +2 Gold from Oases (from Garden)
    - Garden moved back to Civil Service and its Citrus and Cocoa bonuses moved to Circus
   -- 2 Slots for Writing, +2 Culture and +1 Science if Themed
    - Amphitheater reduced to 1 Slot
    - Artistry Cultural Exchange buffs Archive instead of Amphitheater
-  -- When a GP is born here, gain 50% of your Empire's Tourism output as Science and Culture
-    New "tall" effect to be built in Cities specialized in generating GPs
+  -- 10 GPP when a Citizen is Born, scaling with Era
+    This, from the Examination Hall, is a "tall" effect generally wasted in satellites
   -- The Chartarium Religious NW gives +3 Faith to all Archives
   -- Reformations rebalanced as follows
    - Faith of the Masses now Amphi, Opera, and Broadcast; +2 Faith; +2 Food/Prod/Culture per Luxury
@@ -48,8 +48,10 @@ New Buildings
   -- 1 GAP
   -- 25% Faith from Birth
   -- 3 Production to Factory, Agribusiness, and Seaport and Manufactory
+  -- 1 Happiness to Factory
   -- 4 Food to Towns
-  -- 2 Gold from Buildings that must be purchased with Faith and Academies
+  -- 3 Gold from Buildings that must be purchased with Faith and Holy Sites
+  -- 3 Faith to Academies
 
   Park (Fertilizer)
     requires Garden
@@ -57,7 +59,7 @@ New Buildings
   -- 1 Urbanization reduction
   -- +1 Food and Tourism on Lakes
   -- 1 Tourism and GAP from Zoo, Hotel, Museum
-  -- 100 GAP from WLTKD start
+  -- 25% GAP produced
   -- 2 Culture per Golden Age
   
   Restaurant (Biology)
@@ -202,7 +204,7 @@ New Buildings
   -- Required 2 Iron and an Industrial Connection
     Intended to be a greedy building for the late game. Risky if you might need the Iron.
 
-  Police Station moved to Radar
+  Police Station moved to Combined Arms (earlier)
   NIA moved to Mobile Tactics 
 
   Nightclub (Telecom)
@@ -286,7 +288,7 @@ New Buildings
   -- Engineer slot
   -- 3 Engineer points and +67% rate
   -- AddsFreshWater
-  -- 4% Gold from Aqueducts in Empire
+  -- 4% Gold from Recycling Center in Empire
   -- 5 Production from Watermills in Empire
   -- 5 Food from Wells in Empire
   -- +20% Food Process

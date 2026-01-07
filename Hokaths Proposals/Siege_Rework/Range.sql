@@ -37,7 +37,7 @@ VALUES
 -- inherent range increases
 --UPDATE Units SET
 --Range = 3
---WHERE CombatClass = 'UNITCOMBAT_SIEGE' AND Class != 'UNITCLASS_ASSYRIAN_SIEGE_TOWER';
+--WHERE CombatClass = 'UNITCOMBAT_SIEGE' AND Class != 'UNITCLASS_SIEGE_TOWER';
 
 --UPDATE Units SET
 --Range = 4

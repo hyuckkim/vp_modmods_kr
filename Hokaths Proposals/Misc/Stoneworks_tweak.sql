@@ -23,15 +23,6 @@ UPDATE Language_en_US
 SET Text = Replace(Text, '[NEWLINE][NEWLINE]City must have at least one of these resources improved.', '')
 WHERE Tag IN (SELECT Help FROM Buildings WHERE Type = 'BUILDING_STONE_WORKS');
 
--- remove this newline in tabya. since base stoneworks starts with this line
-UPDATE Language_en_US
-SET Text = Replace(Text, '[NEWLINE][NEWLINE]Allows', ' Allows')
-WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_STONE_WORKS');
-
-UPDATE Language_en_US
-SET Text = Replace(Text, 'Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.', 'Gain 10 [ICON_PRODUCTION] Production in the City when its borders expand, scaling with Era.')
-WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_STONE_WORKS');
-
 UPDATE Language_en_US
 SET Text = 'Stone Works increases [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture, increases the output of most Quarry Resources. As with all effects that generate yields from border expansion, the Stone Works effectively increases the value of Culture to your City.'
 WHERE Tag = 'TXT_KEY_BUILDING_STONE_WORKS_STRATEGY';
@@ -52,14 +43,6 @@ AllowsProductionTradeRoutes = 1
 WHERE BuildingClass = 'BUILDINGCLASS_FORGE';
 
 UPDATE Language_en_US
-SET Text = 'Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.[NEWLINE][NEWLINE]' || Text
-WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_FORGE');
-
-UPDATE Language_en_US
-SET Text = Replace(Text, 'Workshop', 'Forge')
-WHERE Tag IN (SELECT Help FROM Units WHERE Type IN ('UNIT_CARAVAN', 'UNIT_CARGO_SHIP'));
-
-UPDATE Language_en_US
 SET Text = Replace(Text, 'Workshop', 'Forge')
 WHERE Tag IN (SELECT Strategy FROM Units WHERE Type IN ('UNIT_CARAVAN', 'UNIT_CARGO_SHIP'));
 
@@ -71,8 +54,4 @@ WHERE Tag = 'TXT_KEY_BUILDING_FORGE_STRATEGY';
 UPDATE Buildings SET
 AllowsProductionTradeRoutes = 0
 WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP';
-
-UPDATE Language_en_US
-SET Text = Replace(Text, '[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.', '')
-WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_WORKSHOP');
 

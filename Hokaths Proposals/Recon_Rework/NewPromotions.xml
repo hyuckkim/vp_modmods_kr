@@ -8,7 +8,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_ROUGH_WALKER</PediaEntry>
 			<PortraitIndex>29</PortraitIndex>
-			<IconAtlas>promoVP_atlas_01</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_01</IconAtlas>
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
@@ -19,7 +19,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_ALPINE</PediaEntry>
 			<PortraitIndex>14</PortraitIndex>
-			<IconAtlas>promoVP_atlas_03</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_03</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_ALTITUDE_TRAINING</PromotionPrereqOr1>
 			<RankList>ALPINE</RankList>
@@ -32,11 +32,9 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SWAMP_TEACHING</PediaEntry>
 			<PortraitIndex>13</PortraitIndex>
-			<IconAtlas>promoVP_atlas_03</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_03</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_AMPHIBIOUS</PromotionPrereqOr1>
-			<PlagueChance>100</PlagueChance>
-			<PlaguePromotion>PROMOTION_SWAMP_TEACHING_PLAGUE</PlaguePromotion>
 		</Row>
 		<Replace>
 			<Type>PROMOTION_SWAMP_TEACHING_PLAGUE</Type>
@@ -45,7 +43,7 @@
 			<PediaType>PEDIA_HEAL</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE</PediaEntry>
 			<PortraitIndex>50</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<PromotionDuration>5</PromotionDuration>
@@ -61,11 +59,11 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SABATEUR_1</PediaEntry>
 			<PortraitIndex>11</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
-			<PromotionPrereqOr1>PROMOTION_WOODLAND_TRAILBLAZER_1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_TRAILBLAZER_1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_SURVIVALISM_1</PromotionPrereqOr2>
-			<PromotionPrereqOr3>PROMOTION_SCOUT_XP_PILLAGE</PromotionPrereqOr3>
+			<PromotionPrereqOr3>PROMOTION_SCAVENGER</PromotionPrereqOr3>
 			<TechPrereq>TECH_CONSTRUCTION</TechPrereq>
 			<RankList>SABATEUR</RankList>
 			<RankNumber>1</RankNumber>
@@ -77,7 +75,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SABATEUR_2</PediaEntry>
 			<PortraitIndex>14</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_SABATEUR_1</PromotionPrereqOr1>
 			<RankList>SABATEUR</RankList>
@@ -90,7 +88,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SABATEUR_3</PediaEntry>
 			<PortraitIndex>15</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<TechPrereq>TECH_DYNAMITE</TechPrereq>
 			<PromotionPrereqOr1>PROMOTION_SABATEUR_2</PromotionPrereqOr1>
@@ -106,7 +104,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_ASSASSIN_1</PediaEntry>
 			<PortraitIndex>47</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_SABATEUR_1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_AMPHIBIOUS</PromotionPrereqOr2>
@@ -123,7 +121,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_ASSASSIN_2</PediaEntry>
 			<PortraitIndex>48</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PromotionPrereqOr1>PROMOTION_ASSASSIN_1</PromotionPrereqOr1>
 			<EnemyDamage>-10</EnemyDamage>
@@ -139,7 +137,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_ASSASSIN_3</PediaEntry>
 			<PortraitIndex>49</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<TechPrereq>TECH_DYNAMITE</TechPrereq>
 			<PromotionPrereqOr1>PROMOTION_ASSASSIN_2</PromotionPrereqOr1>
@@ -149,6 +147,16 @@
 			<RankNumber>3</RankNumber>
 		</Row>
 	</UnitPromotions>
+	<UnitPromotions_Plagues>
+		<Row>
+			<PromotionType>PROMOTION_SWAMP_TEACHING</PromotionType>
+			<PlaguePromotionType>PROMOTION_SWAMP_TEACHING_PLAGUE</PlaguePromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<ApplyOnAttack>1</ApplyOnAttack>
+			<ApplyOnDefense>1</ApplyOnDefense>
+			<ApplyChance>100</ApplyChance>
+		</Row>
+	</UnitPromotions_Plagues>
 	<UnitPromotions_UnitCombats>
 		<Row>
 			<PromotionType>PROMOTION_SWAMP_TEACHING</PromotionType>
@@ -180,7 +188,7 @@
 		</Row>
 
 		<Row>
-			<PromotionType>PROMOTION_SKIRMISHER_POWER</PromotionType>
+			<PromotionType>PROMOTION_COUP_DE_GRACE</PromotionType>
 			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 		</Row>
 		<Row>

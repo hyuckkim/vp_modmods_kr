@@ -1,15 +1,7 @@
 ---UNIQUE UNITS----
 UPDATE Language_ko_KR
-SET Text = '적에게 빠른 공격을 가하는 데 탁월한 프랑스 고유 {TXT_KEY_UNIT_2HANDER}입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_2HANDER}[ENDCOLOR] 승급 대신, 더 빠르게 움직이고 통제 구역(ZOC)를 무시할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
-
-UPDATE Language_ko_KR
 SET Text = '{TXT_KEY_UNIT_FRENCH_MUSKETEER}은 프랑스 유닛으로 {TXT_KEY_UNIT_2HANDER}을 대체 합니다. 더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = '적에게 빠른 공격을 가하는 데 탁월한 프랑스 고유 {TXT_KEY_UNIT_2HANDER}입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_2HANDER}[ENDCOLOR] 승급 대신, 더 빠르게 움직이고 통제 구역(ZOC)를 무시할 수 있습니다.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
 
 UPDATE Language_ko_KR
 SET Text = '{TXT_KEY_UNIT_FRENCH_MUSKETEER}은 프랑스 유닛으로 {TXT_KEY_UNIT_2HANDER}을 대체 합니다. 더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
@@ -18,10 +10,6 @@ WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
 UPDATE Language_ko_KR
 SET Text = '도펠죌트너'
 WHERE Tag = 'TXT_KEY_UNIT_GERMAN_LANDSKNECHT';
-
-UPDATE Language_ko_KR
-SET Text = '용병으로 특화된 독일 고유의 {TXT_KEY_UNIT_2HANDER}으로 구매 즉시 이동할 수 있으며 경험치 패널티나 재사용 대기시간이 없습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR] 승급을 가지고 시작합니다.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_LANDSKNECHT';
 
 UPDATE Language_ko_KR
 SET Text = '{TXT_KEY_UNIT_GERMAN_LANDSKNECHT}는 {TXT_KEY_UNIT_2HANDER}을 대체하는 독일의 고유 유닛입니다. 체력이 가득 찬 유닛에 대한 전투 보너스가 있으며, 승선한 유닛에 대한 보너스가 더 큽니다. 훈련이나 구매 비용이 약간 저렴하고, 구매하면 전체 경험치를 얻고 즉시 이동할 수 있습니다.[NEWLINE][NEWLINE]빠른 배치와 체력이 충분한 유닛에 대한 보너스를 활용해 전쟁의 첫 턴에서 적을 놀라게 하고 적의 전선을 빠르게 무너뜨리세요. 가격이 저렴하기 때문에 선물로도 좋습니다. 한 번에 여러 유닛을 구매하고, 근처 도시 국가로 가져가서 단기 및 장기적으로 영향력의 이점을 얻으세요.'
@@ -72,10 +60,6 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 UPDATE Language_ko_KR
 SET Text = '창총진'
 WHERE Tag = 'TXT_KEY_UNIT_SPANISH_TERCIO';
-
-UPDATE Language_ko_KR
-SET Text = '창총진은 르네상스 시대의 기본 근접 공격 유닛으로, 중세 시대의 무시무시한 기사단에 쉽게 맞설 수 있습니다.'
-WHERE Tag = 'TXT_KEY_CIV5_SPAIN_TERCIO_HELP';
 
 UPDATE Language_ko_KR
 SET Text = '철을 필요로 하지 않았던 이전 방어 유닛들처럼, 창총진은 최전선에서 든든한 기반을 제공합니다. 또한 [COLOR_POSITIVE_TEXT]파이크 전술[ENDCOLOR]을 사용할 수 있어 적에게 공격을 개시할 때 공격적으로 활용할 수 있습니다. 그러나 르네상스 시대에 강력한 양손 검병이 등장하면서 처음으로 직접적인 대항마가 탄생했습니다. 따라서 기마 유닛이 덜 위협적이기는 하지만, 단 하나의 실패 지점도 없는 효과적인 군대 구성을 설계하는 데 여전히 주의를 기울여야 합니다.'

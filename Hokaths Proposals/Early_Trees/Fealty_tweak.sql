@@ -21,9 +21,9 @@ UPDATE Policies
 SET
 	PortraitIndex = 45,
 	--ExtraHappinessPerCity = 1,
-	ExtraHappiness = 5,
+	ExtraHappiness = 4,
 	HappyPerMilitaryUnit = 0,
-	IlliteracyFlatReductionGlobal = 1
+	IlliteracyFlatReduction = 1
 WHERE Type = 'POLICY_REFORMATION';
 
 UPDATE Language_en_US
@@ -31,7 +31,7 @@ SET Text = 'Divine Right'
 WHERE Tag = 'TXT_KEY_POLICY_REFORMATION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Divine Right[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_HAPPINESS_1] Happiness in the [ICON_CAPITAL] Capital.[NEWLINE][ICON_BULLET]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy in all Cities.[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production and +100% [ICON_CULTURE_LOCAL] Border Growth during "[COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]."'
+SET Text = '[COLOR_POSITIVE_TEXT]Divine Right[ENDCOLOR][NEWLINE][ICON_BULLET]+4 [ICON_HAPPINESS_1] Happiness in the [ICON_CAPITAL] Capital.[NEWLINE][ICON_BULLET]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy in all Cities.[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production and +100% [ICON_CULTURE_LOCAL] Border Growth during "[COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]."'
 WHERE Tag = 'TXT_KEY_POLICY_REFORMATION_HELP';
 
 UPDATE Language_en_US

@@ -102,7 +102,7 @@ INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_EXODUS', 'Diaspora'),
-	('TXT_KEY_PROMOTION_EXODUS_HELP', '+2 [ICON_MOVES] Naval Movement.[NEWLINE]+1 [ICON_VP_VISION] Vision while [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR].[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.');
+	('TXT_KEY_PROMOTION_EXODUS_HELP', '+2 [ICON_MOVES] Naval Movement.[NEWLINE]+1 [ICON_VISION] Vision while [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR].[NEWLINE]Embarking and Disembarking cost only 1 [ICON_MOVES] Movement.');
 
 ------------------
 -- sacred geometry
@@ -356,7 +356,7 @@ VALUES
 	('BELIEF_RELIGIOUS_ART', 'SPECIALIST_CITIZEN', 'YIELD_GOLDEN_AGE_POINTS', 1);
 
 UPDATE Language_en_US
-SET Text = 'Specialists and [ICON_CITIZEN_RED] Labourers generate +1 [ICON_GOLDEN_AGE] Golden Age Point and +1 of their primary Yield ([ICON_VP_SCIENTIST]:[ICON_RESEARCH], [ICON_VP_MERCHANT]/[ICON_CSD_CIVIL_SERVANT]:[ICON_GOLD], [ICON_VP_ENGINEER]/[ICON_CITIZEN_RED]:[ICON_PRODUCTION], [ICON_VP_WRITER]/[ICON_VP_ARTIST]/[ICON_VP_MUSICIAN]:[ICON_CULTURE]).'
+SET Text = 'Specialists and [ICON_CITIZEN_RED] Labourers generate +1 [ICON_GOLDEN_AGE] Golden Age Point and +1 of their primary Yield ([ICON_SCIENTIST]:[ICON_RESEARCH], [ICON_MERCHANT]/[ICON_CIVIL_SERVANT]:[ICON_GOLD], [ICON_ENGINEER]/[ICON_CITIZEN_RED]:[ICON_PRODUCTION], [ICON_WRITER]/[ICON_ARTIST]/[ICON_MUSICIAN]:[ICON_CULTURE]).'
 WHERE Tag = 'TXT_KEY_BELIEF_RELIGIOUS_ART';
 
 ---------------------

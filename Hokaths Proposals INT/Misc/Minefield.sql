@@ -9,7 +9,3 @@ WHERE Tag = 'TXT_KEY_PROMOTION_MINELAYER_HELP';
 UPDATE Language_ko_KR SET
 Text = Replace(Text, '[NEWLINE][NEWLINE][COLOR_CYAN]{TXT_KEY_TECH_COMBUSTION_TITLE}[ENDCOLOR]를 연구한 후 사용 가능합니다.', '')
 WHERE Tag = 'TXT_KEY_PROMOTION_MINELAYER_HELP';
-
-UPDATE Language_ko_KR SET
-Text = '해상 유닛의 경험치가 +15 증가합니다. 이 도시에서 생성된 모든 해상 근접 유닛(과거 또는 미래에)은 [COLOR_POSITIVE_TEXT]Minelayer[ENDCOLOR] 승급을 받으며, 인접한 적 유닛의 속도를 늦춥니다.[NEWLINE][NEWLINE]' || Text
-WHERE Tag = 'TXT_KEY_BUILDING_MINEFIELD_HELP';

@@ -143,9 +143,23 @@ Religion
    - Labourers included
 
 Great People Bulbing
+  First addressing the raw numbers on the bulbs themselves, and how they scale
+  Celtic UGPTI adjust to remain half a real improvement
+  
+  Scientist 
+    Counts 75% more turns (5)
+    Scales 60% less with Academies (4% each)
+
+  Writer
+    Counts 50% more turns (7)
+    Scales 66% less with Great Works (1%)
+  
+  Artist
+    Scales 50% less with themes (10%)
+
   The idea is to split To The Glory of God into 3 beliefs.
   Sets of 3 great people corresponding to the 3 of each era (of policy branches)
-  So one is Engineer/Writer/General, one Artist/Diplomat/Musician, one Scientist/Admiral/Merchant#
+  So one is Engineer/Writer/General, one Artist/Diplomat/Musician, one Scientist/Admiral/Merchant
   With normal play you get 2 that you didn't have before.
   This isn't yet possible with the DLL.
   In the meantime we will use a placeholder effect of +yields on those Specialists
@@ -154,6 +168,7 @@ Great People Bulbing
   --Ability to buy all GP with faith removed -- too strong, flexible, AI unfriendly
   --Medieval Set
   --Yields increased to 5 (from 3) and cap to 30​ (from 20)
+
   Radical Sects 
   -- Ancient Set
   -- 15 Food/Faith/Culture on Border Growth, scaling
@@ -272,6 +287,7 @@ National Wonders
 
   Circus Maximus
   -- 1 Merchant Point and +25% Merchant Rate
+  -- 1 Merchant Slot
   -- No Longer boosts Culture during WLTKD
 
   Grand Temple
@@ -288,7 +304,8 @@ National Wonders
   [/ON HOLD]
 
   School of Philosophy 
-  -- 1 Scientist Point and +25% Scientist Rate
+  -- 1 Scientist Point and +25% Scientist Rate  
+  -- 1 Scientist Slot
   
   Scrivener's Office 
   -- 25% Civil Servant Rate 
@@ -298,7 +315,8 @@ National Wonders
   -- Requires Lighthouse and Coastal City
     encourage having at least one Coastal City
   -- 2 Prod, 2 Science, 1 Culture
-  -- 1 Engineer Point and +25% to Engineers
+  -- 1 Engineer Point and +25% to Engineers  
+  -- 1 Engineer Slot
   -- +15% Prod to Naval Units in City
   -- Nearby Fishing Boats +1 Prod 
 

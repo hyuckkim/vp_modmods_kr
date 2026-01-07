@@ -5,27 +5,37 @@ INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_SWEDISH_LION', '스웨덴 사자'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 스웨덴 사자'),
 	('TXT_KEY_PROMOTION_SWEDISH_LION_HELP', '[COLOR_POSITIVE_TEXT]소유 중인 인접한 영토의 유닛[ENDCOLOR]당 [ICON_STRENGTH] 전투력이 +10% 증가합니다.[NEWLINE]고유한 [COLOR_POSITIVE_TEXT]승급[ENDCOLOR]들을 해제합니다.'),
 
+	('TXT_KEY_PROMOTION_SWEDISH_LION_0', 'Einherjar'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_0_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] Einherjar'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_0_HELP', 'Recover an additional [COLOR_POSITIVE_TEXT]5[ENDCOLOR] HP when Healing.[NEWLINE]+1% [ICON_STRENGTH] Combat Strength for every 3 HP below maximum health instead of a penalty.'),
+
 	('TXT_KEY_PROMOTION_SWEDISH_LION_1', '장자 상속권'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_1_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 장자 상속권'),
 	('TXT_KEY_PROMOTION_SWEDISH_LION_1_HELP', '선택하면 야를의 출신 도시에서 [ICON_FOOD] 식량, [ICON_CULTURE] 문화, [ICON_GREAT_GENERAL] 위대한 장군 점수 40을 받습니다. (시대에 따라 보정)[NEWLINE]전투에서 얻는 [ICON_GREAT_GENERAL] 위대한 장군 점수가 +200% 증가합니다.'),
 
 	('TXT_KEY_PROMOTION_SWEDISH_LION_2', '사가'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_2_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 사가'),
 	('TXT_KEY_PROMOTION_SWEDISH_LION_2_HELP', '지형 비용을 무시합니다.[NEWLINE][COLOR_POSITIVE_TEXT]산[ENDCOLOR], [COLOR_POSITIVE_TEXT]빙하[ENDCOLOR], [COLOR_POSITIVE_TEXT]대양[ENDCOLOR]을 건널 수 있습니다.[NEWLINE]대양에서 공격할 경우 전투 페널티를 제거합니다.[NEWLINE][NEWLINE][COLOR_CYAN]드라마와 시[ENDCOLOR]를 연구한 후에 이용 가능합니다.'),
 
 	('TXT_KEY_PROMOTION_SWEDISH_LION_3', '전쟁 선언문'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_3_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 전쟁 선언문'),
 	('TXT_KEY_PROMOTION_SWEDISH_LION_3_HELP', '야를의 지도자 오라 반경이 +1 증가합니다.[NEWLINE]유닛은 행동을 수행하더라도 [COLOR_POSITIVE_TEXT]매 턴마다 회복[ENDCOLOR]합니다.[NEWLINE][NEWLINE][COLOR_CYAN]야금학[ENDCOLOR]을 연구하면 이용할 수 있습니다.'),
 
 --  or a Fortification
 	('TXT_KEY_PROMOTION_SWEDISH_LION_4', '수석 재상'),
-	('TXT_KEY_PROMOTION_SWEDISH_LION_4_HELP', '도시나 요새에 주둔할 경우 [ICON_STRENGTH] 전투력 8마다 [ICON_GOLD] 골드, [ICON_TOURISM] 관광, [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE]전투에서 얻은 경험치 1당 가장 가까운 [ICON_CITY_STATE] 도시 국가와의 [ICON_INFLUENCE] 영향력이 [COLOR_GREY]+2[ENDCOLOR] 증가합니다.[NEWLINE][NEWLINE][COLOR_CYAN]길드[ENDCOLOR]를 연구한 후 이용 가능합니다.'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_4_HELP', '도시나 요새에 주둔할 경우 [ICON_STRENGTH] 전투력 8마다 [ICON_GOLD] 골드, [ICON_TOURISM] 관광, [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE]전투에서 얻은 메 경험치 당 가장 가까운 [ICON_CITY_STATE] 도시 국가와의 [ICON_INFLUENCE] 영향력이 +2 증가합니다.[NEWLINE][NEWLINE][COLOR_CYAN]길드[ENDCOLOR]를 연구한 후 이용 가능합니다.'),
 
--- [ICON_PEACE] Faith for every XP earned in combat.
+-- 100% of the [ICON_STRENGTH] Combat Strength of defeated Enemy Units as [ICON_PEACE] Faith.
 	('TXT_KEY_PROMOTION_SWEDISH_LION_5', '하느님께서 우리와 함께 계시다.'),
-	('TXT_KEY_PROMOTION_SWEDISH_LION_5_HELP', '패배한 적군 유닛 [ICON_STRENGTH] 전투력의 100%를 [ICON_PEACE] 신앙으로 얻습니다.[NEWLINE]최대 체력이 3 낮아질 때마다 페널티 대신 [ICON_STRENGTH] 전투력이 +1% 증가합니다.[NEWLINE][NEWLINE]인쇄기를 연구한 후에 이용 가능합니다.'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_5_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 하느님께서 우리와 함께 계시다.'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_5_HELP', 'Gain 3 [ICON_PEACE] Faith for every XP earned in combat.[NEWLINE]+2% [ICON_STRENGTH] Combat Strength per tile away from the [ICON_CAPITAL] Capital (max +50%).[NEWLINE][NEWLINE]Available once you have researched [COLOR_CYAN]Printing Press[ENDCOLOR].'),
 
 	('TXT_KEY_PROMOTION_SWEDISH_LION_6', '섭정'),
-	('TXT_KEY_PROMOTION_SWEDISH_LION_6_HELP', '[COLOR_POSITIVE_TEXT]우호 영토[ENDCOLOR]에서 [ICON_STRENGTH] 전투력이 +20% 증가합니다.[NEWLINE][ICON_HAPPINESS_3] 불행한 문명에 대한 [ICON_STRENGTH] 전투력이 +20% 증가합니다.[NEWLINE][ICON_VP_VISION] 시야와 승선 시야가 +2 증가합니다.[NEWLINE][NEWLINE][COLOR_CYAN]기사도[ENDCOLOR]의 연구를 마치면 이용 가능합니다.'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_6_PEDIA', '[COLOR_POSITIVE_TEXT](스웨덴)[ENDCOLOR] 섭정'),
+	('TXT_KEY_PROMOTION_SWEDISH_LION_6_HELP', '[COLOR_POSITIVE_TEXT]우호 영토[ENDCOLOR]에서 [ICON_STRENGTH] 전투력이 +20% 증가합니다.[NEWLINE][ICON_HAPPINESS_3] 불행한 문명에 대한 [ICON_STRENGTH] 전투력이 +20% 증가합니다.[NEWLINE][ICON_VISION] 시야와 승선 시야가 +2 증가합니다.[NEWLINE][NEWLINE][COLOR_CYAN]기사도[ENDCOLOR]의 연구를 마치면 이용 가능합니다.'),
 
 	('TXT_KEY_UNIT_SWEDISH_JARL', '야를'),
 	('TXT_KEY_UNIT_SWEDISH_JARL_TEXT', '야를은 바이킹 시대와 초기 중세 시대 스칸디나비아의 귀족 계급이었습니다. 이 관습은 시간이 흐르면서 발전했고 지역마다 달랐습니다. 고대 노르드어에서는 "족장"을 의미하는데, 구체적으로는 왕을 대신하여 영토를 다스리도록 임명된 사람을 뜻합니다. 또한 주권을 가진 왕자를 의미할 수도 있습니다. 예를 들어, 바이킹 시대에 노르웨이의 여러 소왕국의 통치자들은 야를이라는 칭호를 가지고 있었으며, 종종 이웃 왕들과 못지않은 권력을 행사했습니다. 중세 후기 스웨덴과 노르웨이에서는 대게 왕국 내에 왕에 이어 두 번째 권위자인 한 명의 야를만 두었습니다. 이 칭호는 중세 시대에 폐기되었고 공작(hertig) 계급으로 대체되었는데, 이 계급 역시 1618년 구스타프 2세 아돌프가 국가에 대한 지배력을 강화하면서 폐지되었습니다.[NEWLINE][NEWLINE]1772년, 구스타프 3세는 형제들에게 세습되지 않았던 공작 작위를 복권시켜 예의상의 칭호로 삼았고, 이를 통해 국제적 명성과 국내적 영향력을 키웠습니다. 그 이후로 모든 스웨덴 왕자는 태어나자마자 지방의 공작으로 작위를 받았으며, 핀란드의 대군 또는 대공(유아기에 사망)도 작위를 받았습니다. 많은 유럽 군주국과 마찬가지로 왕실은 군대와 긴밀한 관계를 맺고 있으며, 많은 공작이 스웨덴군에서 훈련을 받고 복무했습니다. 이러한 전통에는 2024년에 군사 훈련을 시작한 현 왕세자비도 포함됩니다.'),

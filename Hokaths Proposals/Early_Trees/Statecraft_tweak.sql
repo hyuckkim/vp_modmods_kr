@@ -30,7 +30,7 @@ WHERE ResourceUsage = 1;
 ----text-----
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Foreign Service[ENDCOLOR][NEWLINE][ICON_BULLET]Receive 100 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][ICON_BULLET]Earn [ICON_DIPLOMAT] Great Diplomats 50% faster.[NEWLINE][ICON_BULLET]+50% Rewards from [ICON_CITY_STATE] City-State Quests.'
+SET Text = '[COLOR_POSITIVE_TEXT]Foreign Service[ENDCOLOR][NEWLINE][ICON_BULLET]Receive 100 [ICON_SPY_POINT] Spy Points.[NEWLINE][ICON_BULLET]Earn [ICON_DIPLOMAT] Great Diplomats 50% faster.[NEWLINE][ICON_BULLET]+50% Rewards from [ICON_CITY_STATE] City-State Quests.'
 WHERE Tag = 'TXT_KEY_POLICY_PHILANTHROPY_HELP';
 
 UPDATE Language_en_US
@@ -38,9 +38,9 @@ SET Text = Replace(Text, '[NEWLINE][ICON_BULLET]Receive 25% of [ICON_RESEARCH] S
 WHERE Tag = 'TXT_KEY_POLICY_SCHOLASTICISM_HELP';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Exchange Markets[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route.[NEWLINE][ICON_BULLET]+15% [ICON_TOURISM] Tourism modifier for [COLOR_POSITIVE_TEXT]Trade Routes[ENDCOLOR].[NEWLINE][ICON_BULLET]+1 of every Strategic Resource for every three [ICON_CITY_STATE] City-State [COLOR_CYAN]Alliances[ENDCOLOR] you maintain.[NEWLINE][ICON_BULLET]Resources from City-States count towards [ICON_VP_MONOPOLY] Global Monopolies.'
+SET Text = '[COLOR_POSITIVE_TEXT]Exchange Markets[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route.[NEWLINE][ICON_BULLET]+15% [ICON_TOURISM] Tourism modifier for [COLOR_POSITIVE_TEXT]Trade Routes[ENDCOLOR].[NEWLINE][ICON_BULLET]+1 of every Strategic Resource for every three [ICON_CITY_STATE] City-State [COLOR_CYAN]Alliances[ENDCOLOR] you maintain.[NEWLINE][ICON_BULLET]Resources from City-States count towards [ICON_MONOPOLY] Global Monopolies.'
 WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_DIPLOMACY_HELP';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Trade Confederacy[ENDCOLOR][NEWLINE][ICON_BULLET]+25% Yields for International [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][ICON_BULLET][ICON_INTERNATIONAL_TRADE] Trade Routes to City-States generate +1 [ICON_INFLUENCE] Influence per turn (with the target City-State) per each owned City-State Trade Route (up to +5).[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every active [ICON_INTERNATIONAL_TRADE] Trade Route'
+SET Text = '[COLOR_POSITIVE_TEXT]Trade Confederacy[ENDCOLOR][NEWLINE][ICON_BULLET]+25% Yields for International [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][ICON_BULLET][ICON_INTERNATIONAL_TRADE] Trade Routes to City-States generate +1 [ICON_INFLUENCE] Influence per turn (with the target City-State) per each owned City-State Trade Route (up to +5).[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every active [ICON_INTERNATIONAL_TRADE] Trade Route.'
 WHERE Tag = 'TXT_KEY_POLICY_MERCHANT_CONFEDERACY_HELP';

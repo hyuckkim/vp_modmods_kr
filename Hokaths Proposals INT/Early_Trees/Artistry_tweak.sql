@@ -3,5 +3,5 @@ SET Text = '[COLOR_POSITIVE_TEXT]National Treasure[ENDCOLOR][NEWLINE][ICON_BULLE
 WHERE Tag = 'TXT_KEY_POLICY_ARTISTIC_GENIUS_HELP';
 
 UPDATE Language_ko_KR
-SET Text = Replace(Text, '+3 [ICON_RESEARCH] Science from [ICON_RES_ARTIFACTS] Landmarks.', '+3 [ICON_RESEARCH] Science from [ICON_RES_ARTIFACTS] Landmarks and [ICON_VP_ARTIFACT] Artifacts.')
+SET Text = Replace(Text, '+3 [ICON_RESEARCH] Science from [ICON_RES_ARTIFACTS] Landmarks.', '+3 [ICON_RESEARCH] Science from [ICON_RES_ARTIFACTS] Landmarks and [ICON_ARTIFACT] Artifacts.')
 WHERE Tag = 'TXT_KEY_POLICY_BRANCH_AESTHETICS_HELP';

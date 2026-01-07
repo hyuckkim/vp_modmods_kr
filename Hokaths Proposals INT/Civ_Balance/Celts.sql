@@ -9,7 +9,7 @@ WHERE Tag = 'TXT_KEY_BELIEF_MANANNAN';
 -- 오그마, 키 보너스는 브랜에 비하면 좀 엉터리야
 ---------------------------------------
 UPDATE Language_ko_KR SET
-Text = '도서관과 궁전에서 [ICON_RESEARCH]과학 +2, [ICON_CULTURE] 문화가 +2 증가합니다. [ICON_GREAT_WORK] 걸작, [ICON_VP_SCIENTIST] 과학자, [ICON_VP_WRITER] 작가로부터 [ICON_FOOD] 음식 +1, [ICON_RESEARCH] 과학 +1, [ICON_CULTURE] 문화가 +1 증가합니다. 수도/성지에 [ICON_GREAT_SCIENTIST] 위대한 과학자 점수 +3, [ICON_GREAT_WRITER] 위대한 작가 점수가 +3 추가됩니다. 연회장에서 [ICON_RESEARCH] 과학이 +3 증가합니다.'
+Text = '도서관과 궁전에서 [ICON_RESEARCH]과학 +2, [ICON_CULTURE] 문화가 +2 증가합니다. [ICON_GREAT_WORK] 걸작, [ICON_SCIENTIST] 과학자, [ICON_WRITER] 작가로부터 [ICON_FOOD] 음식 +1, [ICON_RESEARCH] 과학 +1, [ICON_CULTURE] 문화가 +1 증가합니다. 수도/성지에 [ICON_GREAT_SCIENTIST] 위대한 과학자 점수 +3, [ICON_GREAT_WRITER] 위대한 작가 점수가 +3 추가됩니다. 연회장에서 [ICON_RESEARCH] 과학이 +3 증가합니다.'
 WHERE Tag = 'TXT_KEY_BELIEF_OGMA';
 
 ---------------------------------------

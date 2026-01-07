@@ -3,6 +3,7 @@
 	<BuildingClasses>
 		<Row>
 			<Type>BUILDINGCLASS_VP_MALL</Type>
+			<Description>TXT_KEY_BUILDING_VP_MALL</Description>
 			<DefaultBuilding>BUILDING_VP_MALL</DefaultBuilding>
 		</Row>
 	</BuildingClasses>
@@ -73,7 +74,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_VP_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_CENTAURUS_EXTRACTORS_FRANCHISE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<YieldChange>4</YieldChange>
 		</Row>
@@ -122,7 +123,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_VP_MALL</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_LANDSEA_EXTRACTORS_FRANCHISE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_CENTAURUS_EXTRACTORS_FRANCHISE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>2</YieldChange>
 		</Row>
@@ -164,8 +165,8 @@
 			<Text>Shopping Mall</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL_HELP">
-			<Text>When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_TOURISM] Tourism. Incoming [ICON_ARROW_LEFT] Trade Routes to this City generate +2 [ICON_GOLD] Gold for the City, and +2 [ICON_GOLD] Gold for [ICON_ARROW_RIGHT] Trade Route owner.[NEWLINE][NEWLINE]All Corporate Franchises in this City generate +4 [ICON_GOLD] Gold and +2 [ICON_CULTURE] Culture.
-			</Text>
+			<Text></Text>
+ <!-- When you spend [ICON_INVEST] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_TOURISM] Tourism. Incoming [ICON_ARROW_LEFT] Trade Routes to this City generate +2 [ICON_GOLD] Gold for the City, and +2 [ICON_GOLD] Gold for [ICON_ARROW_RIGHT] Trade Route owner.[NEWLINE][NEWLINE]All Corporate Franchises in this City generate +4 [ICON_GOLD] Gold and +2 [ICON_CULTURE] Culture. -->
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_MALL_STRATEGY">
 			<Text>The Mall interacts with Corporations and the Trade Route subsystem on which they rely. In an appropriate City, it turns Franchises from a cost into a benefit.</Text>

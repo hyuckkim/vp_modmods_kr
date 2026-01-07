@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" version="7">
+<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" version="8">
 	<Properties>
 		<Name>Hokath's Proposals</Name>
 		<Teaser>Mod to implement and test proposals for the congress</Teaser>
@@ -48,6 +48,12 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Huskarl/Huskarl.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Huskarl/Huskarl_gloss.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Huskarl/JFD_Swedes_UnitFlagAtlas_32.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Zeppelin/fx_triggers_zeppelin.ftsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Zeppelin/ZeppelinSREF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Zeppelin/ZeppelinTC.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Zeppelin/ZeppelinTC.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Zeppelin/ZeppelinTC.gr2</File>
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Pikeman_Rework/Icons/Billman256.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Pikeman_Rework/Icons/Billman128.dds</File>
@@ -113,6 +119,8 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/GreatPeopleBalance.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/EasterEggUnits.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/NW_specialize.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/Zeppelin.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Misc/Planes_Offset.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Supermarket.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">New_Buildings/Pipeline.sql</File>
@@ -145,11 +153,10 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Mongolia.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Celts.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Ethiopia.sql</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Egypt.sql</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Shoshone.sql</File>
-			<!-- needs leadership fixed and 5.0 tables
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Portugal.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Sweden.sql</File>
-			-->
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Persia.sql</File>
+
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.xml</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Forts/DJS_Depot/debotrebuilt Kopie.dds</File>
@@ -219,6 +226,14 @@
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/Late_Skirmishers_64.dds</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Late_Skirmishers/Late_Skirmishers_45.dds</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Late_Skirmishers/Late_Skirmishers.sql</File>
+
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Barbarians/Names.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Barbarians/Barbarians_256.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Barbarians/Barbarians_128.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Barbarians/Barbarians_80.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Barbarians/Barbarians_64.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Barbarians/Barbarians_45.dds</File>
+
 		</Files>
 	<Actions>
 	<OnModActivated>
@@ -272,6 +287,9 @@
 		<UpdateDatabase>Misc/GreatPeopleBalance.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/EasterEggUnits.sql</UpdateDatabase>
 		<UpdateDatabase>Misc/NW_specialize.sql</UpdateDatabase>
+		<!-- planes offset must go before zeppelin -->
+		<UpdateDatabase>Misc/Planes_Offset.sql</UpdateDatabase>
+		<UpdateDatabase>Misc/Zeppelin.sql</UpdateDatabase>
 
 		<UpdateDatabase>Ideology_Balance/AutocracyTenets.sql</UpdateDatabase>
 		<UpdateDatabase>Ideology_Balance/OrderTenets.sql</UpdateDatabase>
@@ -291,7 +309,7 @@
 		<UpdateDatabase>New_Buildings/IndustrialEstate.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Cinema.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Aerodrome.sql</UpdateDatabase>
-<!--		<UpdateDatabase>New_Buildings/Archive.sql</UpdateDatabase>  -->
+	 	<UpdateDatabase>New_Buildings/Archive.sql</UpdateDatabase>  
 		<UpdateDatabase>New_Buildings/News_Switch_Geo.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Orphanage.sql</UpdateDatabase>
 		<UpdateDatabase>New_Buildings/Park.sql</UpdateDatabase>
@@ -309,9 +327,11 @@
 		<UpdateDatabase>Civ_Balance/Celts.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Ethiopia.sql</UpdateDatabase>
-		<UpdateDatabase>Civ_Balance/Egypt.sql</UpdateDatabase>
-		<UpdateDatabase>Civ_Balance/Shoshone.sql</UpdateDatabase>
-
+		<UpdateDatabase>Civ_Balance/Persia.sql</UpdateDatabase>
+		<!--    -- need DLL change --
+		<UpdateDatabase>Civ_Balance/Portugal.sql</UpdateDatabase>
+		-->
+		
 		<!--<UpdateDatabase>Forts/Forts.sql</UpdateDatabase>
 		<UpdateDatabase>Forts/Forts.xml</UpdateDatabase>-->
 
@@ -326,6 +346,8 @@
 		<UpdateDatabase>Siege_Rework/Field.sql</UpdateDatabase>
 
 		<UpdateDatabase>Late_Skirmishers/Late_Skirmishers.sql</UpdateDatabase>
+
+		<UpdateDatabase>Barbarians/Names.sql</UpdateDatabase>
 	</OnModActivated>
 	</Actions>
 </Mod>

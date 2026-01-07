@@ -1,7 +1,7 @@
 -- text correction
 UPDATE Language_en_US SET
 Text = 'Gain 5 XP when [ICON_RAZING] Pillaging.'
-WHERE Tag = 'TXT_KEY_PROMOTION_SCOUT_XP_PILLAGE_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_SCAVENGER_HELP';
 
 -- organize the civilopedia better: mainline scout promos should be together 
 UPDATE UnitPromotions SET
@@ -15,19 +15,19 @@ WHERE Type = 'PROMOTION_IGNORE_TERRAIN_COSTS';
 -- trailblazer line combat oriented
 UPDATE Language_en_US SET
 Text = '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]+25% [ICON_STRENGTH] Attack in Forest and Jungle.'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_1_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_1_HELP';
 
-UPDATE UnitPromotions SET VisibilityChange = 0, EmbarkExtraVisibility = 0, OutsideFriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_1';
+UPDATE UnitPromotions SET VisibilityChange = 0, EmbarkExtraVisibility = 0, OutsideFriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_TRAILBLAZER_1';
 
 UPDATE Language_en_US SET
 Text = '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].[NEWLINE]+20% [ICON_STRENGTH] Defense in Desert and Tundra.'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_2_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_2_HELP';
 
-UPDATE UnitPromotions SET MovesChange = 0, ExtraNavalMovement = 0, River = 0, OutsideFriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_2';
+UPDATE UnitPromotions SET MovesChange = 0, ExtraNavalMovement = 0, River = 0, OutsideFriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_TRAILBLAZER_2';
 
 UPDATE Language_en_US SET
 Text = '+1 [ICON_MOVES] Movement.[NEWLINE]Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR].'
-WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_3_HELP';
+WHERE Tag = 'TXT_KEY_PROMOTION_TRAILBLAZER_3_HELP';
 
 UPDATE UnitPromotions
 SET
@@ -38,23 +38,23 @@ SET
 	CanMoveAfterAttacking = 1,
 	MovesChange = 1
 	--, IgnoreZOC = 1
-WHERE Type = 'PROMOTION_WOODLAND_TRAILBLAZER_3';
+WHERE Type = 'PROMOTION_TRAILBLAZER_3';
 
-DELETE FROM UnitPromotions_Features WHERE PromotionType IN ('PROMOTION_WOODLAND_TRAILBLAZER_1', 'PROMOTION_WOODLAND_TRAILBLAZER_2');
+DELETE FROM UnitPromotions_Features WHERE PromotionType IN ('PROMOTION_TRAILBLAZER_1', 'PROMOTION_TRAILBLAZER_2');
 
 INSERT INTO UnitPromotions_Features
 	(PromotionType, FeatureType, Attack)
 VALUES
-	('PROMOTION_WOODLAND_TRAILBLAZER_1', 'FEATURE_JUNGLE', 25),
-	('PROMOTION_WOODLAND_TRAILBLAZER_1', 'FEATURE_FOREST', 25);
+	('PROMOTION_TRAILBLAZER_1', 'FEATURE_JUNGLE', 25),
+	('PROMOTION_TRAILBLAZER_1', 'FEATURE_FOREST', 25);
 
-DELETE FROM UnitPromotions_Terrains WHERE PromotionType IN ('PROMOTION_WOODLAND_TRAILBLAZER_1', 'PROMOTION_WOODLAND_TRAILBLAZER_2');
+DELETE FROM UnitPromotions_Terrains WHERE PromotionType IN ('PROMOTION_TRAILBLAZER_1', 'PROMOTION_TRAILBLAZER_2');
 
 INSERT INTO UnitPromotions_Terrains
 	(PromotionType, TerrainType, Defense)
 VALUES
-	('PROMOTION_WOODLAND_TRAILBLAZER_2', 'TERRAIN_DESERT', 20),
-	('PROMOTION_WOODLAND_TRAILBLAZER_2', 'TERRAIN_TUNDRA', 20);
+	('PROMOTION_TRAILBLAZER_2', 'TERRAIN_DESERT', 20),
+	('PROMOTION_TRAILBLAZER_2', 'TERRAIN_TUNDRA', 20);
 
 -- now niche promos
 -- messes with civilopedia if promo has same name as unit!
@@ -68,7 +68,7 @@ LostWithUpgrade = 0,
 TechPrereq = 'TECH_RAILROAD',
 PediaType = 'PEDIA_SCOUTING',
 PromotionPrereqOr1 = 'PROMOTION_SURVIVALISM_3', 
-PromotionPrereqOr2 = 'PROMOTION_WOODLAND_TRAILBLAZER_3'
+PromotionPrereqOr2 = 'PROMOTION_TRAILBLAZER_3'
 WHERE Type = 'PROMOTION_COMMANDO';
 
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_COMMANDO' AND PromotionType = 'PROMOTION_COMMANDO';
@@ -91,11 +91,11 @@ VALUES
 	('PROMOTION_AMBUSH_2', 'UNITCOMBAT_RECON');
 
 UPDATE UnitPromotions SET 
-PromotionPrereqOr3 = 'PROMOTION_SURVIVALISM_2', PromotionPrereqOr4 = 'PROMOTION_WOODLAND_TRAILBLAZER_1',
+PromotionPrereqOr3 = 'PROMOTION_SURVIVALISM_2', PromotionPrereqOr4 = 'PROMOTION_TRAILBLAZER_1',
 PediaType = 'PEDIA_SHARED', TechPrereq = 'TECH_OPTICS'
 WHERE Type = 'PROMOTION_AMPHIBIOUS';
 
-UPDATE UnitPromotions SET PromotionPrereqOr4 = 'PROMOTION_SURVIVALISM_2', PromotionPrereqOr5 = 'PROMOTION_WOODLAND_TRAILBLAZER_2',
+UPDATE UnitPromotions SET PromotionPrereqOr4 = 'PROMOTION_SURVIVALISM_2', PromotionPrereqOr5 = 'PROMOTION_TRAILBLAZER_2',
 PediaType = 'PEDIA_SHARED'
 WHERE Type = 'PROMOTION_AMBUSH_1';
 
@@ -112,7 +112,7 @@ HillsDoubleMove = 0,
 HillsAttack = 20,
 CanCrossMountains = 1,
 PromotionPrereqOr1 = 'PROMOTION_SURVIVALISM_1', 
-PromotionPrereqOr2 = 'PROMOTION_WOODLAND_TRAILBLAZER_2',
+PromotionPrereqOr2 = 'PROMOTION_TRAILBLAZER_2',
 PediaType = 'PEDIA_SCOUTING',
 RankList = 'ALPINE',
 RankNumber = 1,
@@ -146,10 +146,10 @@ WHERE Tag = 'TXT_KEY_PROMOTION_FROGMAN_HELP';
 -- make coup de grace available
 UPDATE UnitPromotions SET
 PromotionPrereqOr2 = 'PROMOTION_ASSASSIN_2'
-WHERE Type = 'PROMOTION_SKIRMISHER_POWER';
+WHERE Type = 'PROMOTION_COUP_DE_GRACE';
 
 -- make infiltrators available
 UPDATE UnitPromotions SET
 PromotionPrereqOr4 = 'PROMOTION_ASSASSIN_2'
-WHERE Type = 'PROMOTION_ACCURACY_4';
+WHERE Type = 'PROMOTION_INFILTRATORS';
 

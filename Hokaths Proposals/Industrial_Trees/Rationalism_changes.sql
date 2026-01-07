@@ -73,8 +73,8 @@ UPDATE Buildings SET
 WHERE Type = 'BUILDING_OBSERVATORY';
 
 UPDATE Language_en_US
-SET Text = Replace(Text, '[NEWLINE][NEWLINE]Requires [COLOR_MAGENTA]{TXT_KEY_POLICY_SECULARISM}[ENDCOLOR] Policy.', '')
-WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_HELP';
+SET Text = 'The Observatory increases [ICON_RESEARCH] Science output, espseically for Cities near Mountains.'
+WHERE Tag = 'TXT_KEY_BUILDING_OBSERVATORY_STRATEGY';
 
 
 -- Humanism (now Mass Education)
@@ -100,11 +100,11 @@ VALUES
 -- Sovereignty (now Emancipation)
 UPDATE Policies
 SET
-	DistressFlatReductionGlobal = 0,
-	PovertyFlatReductionGlobal = 0,
-	IlliteracyFlatReductionGlobal = 0,
-	BoredomFlatReductionGlobal = 0,
-	ReligiousUnrestFlatReductionGlobal = 0,
+	DistressFlatReduction = 0,
+	PovertyFlatReduction = 0,
+	IlliteracyFlatReduction = 0,
+	BoredomFlatReduction = 0,
+	ReligiousUnrestFlatReduction = 0,
  	HappinessPerXPopulationGlobal = 8  -- bugged atm with progress, have to change that too!
 WHERE Type = 'POLICY_SOVEREIGNTY';
 
@@ -189,11 +189,11 @@ DELETE FROM Policy_YieldModifierFromGreatWorks WHERE PolicyType = 'POLICY_SCIENT
 UPDATE Policies
 SET
 	GreatScientistBeakerModifier = 25,
-	DistressFlatReductionGlobal = 0,
-	PovertyFlatReductionGlobal = 0,
-	IlliteracyFlatReductionGlobal = 0,
-	BoredomFlatReductionGlobal = 0,
-	ReligiousUnrestFlatReductionGlobal = 0,
+	DistressFlatReduction = 0,
+	PovertyFlatReduction = 0,
+	IlliteracyFlatReduction = 0,
+	BoredomFlatReduction = 0,
+	ReligiousUnrestFlatReduction = 0,
 	SpySecurityModifier = 12
 WHERE Type = 'POLICY_RATIONALISM_FINISHER';
 
@@ -212,7 +212,7 @@ SET Text = 'Chancellor {1_PlayerName:textkey} of {2_CivName:textkey}'
 WHERE Tag = 'TXT_KEY_RATIONALISM_TITLE';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Rationalism[ENDCOLOR] unleashes a wave of new [ICON_CITIZEN] Citizens by providing large [ICON_HAPPINESS_1] Happiness and [ICON_FOOD] Food bonuses. Simultaneously boosts the output of the resulting [ICON_GOLDEN_AGE] Golden Ages and Specialists, especially [ICON_VP_SCIENTIST] Scientists.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting Rationalism grants:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture from [ICON_VP_SCIENTIST] Scientists.[NEWLINE][ICON_BULLET]Earn [ICON_GREAT_SCIENTIST] Great Scientists 33% faster.[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Growth in all Cities.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Each Rationalism policy unlocked grants:[ENDCOLOR][NEWLINE][ICON_BULLET]+5% [ICON_FOOD] Growth in all Cities.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting all Policies in Rationalism grants:[ENDCOLOR][NEWLINE][ICON_BULLET]Unlocks building [COLOR_POSITIVE_TEXT]Bletchley Park[ENDCOLOR].[NEWLINE][ICON_BULLET]+25% Instant Yields from [ICON_GREAT_SCIENTIST] Great Scientists.[NEWLINE][ICON_BULLET]+12 [ICON_SPY] City Security in every City.[NEWLINE][ICON_BULLET]Allows for the purchase of [ICON_GREAT_SCIENTIST] Great Scientists with [ICON_PEACE] Faith starting in the Industrial Era.'
+SET Text = '[COLOR_POSITIVE_TEXT]Rationalism[ENDCOLOR] unleashes a wave of new [ICON_CITIZEN] Citizens by providing large [ICON_HAPPINESS_1] Happiness and [ICON_FOOD] Food bonuses. Simultaneously boosts the output of the resulting [ICON_GOLDEN_AGE] Golden Ages and Specialists, especially [ICON_SCIENTIST] Scientists.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting Rationalism grants:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture from [ICON_SCIENTIST] Scientists.[NEWLINE][ICON_BULLET]Earn [ICON_GREAT_SCIENTIST] Great Scientists 33% faster.[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Growth in all Cities.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Each Rationalism policy unlocked grants:[ENDCOLOR][NEWLINE][ICON_BULLET]+5% [ICON_FOOD] Growth in all Cities.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting all Policies in Rationalism grants:[ENDCOLOR][NEWLINE][ICON_BULLET]Unlocks building [COLOR_POSITIVE_TEXT]Bletchley Park[ENDCOLOR].[NEWLINE][ICON_BULLET]+25% Instant Yields from [ICON_GREAT_SCIENTIST] Great Scientists.[NEWLINE][ICON_BULLET]+12 [ICON_SPY] City Security in every City.[NEWLINE][ICON_BULLET]Allows for the purchase of [ICON_GREAT_SCIENTIST] Great Scientists with [ICON_PEACE] Faith starting in the Industrial Era.'
 WHERE Tag = 'TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP';
 
 UPDATE Language_en_US

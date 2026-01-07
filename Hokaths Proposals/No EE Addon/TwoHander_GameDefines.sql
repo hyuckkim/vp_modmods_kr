@@ -108,10 +108,6 @@ PrereqTech = 'TECH_CHEMISTRY'
 WHERE Type = 'UNIT_FRENCH_MUSKETEER';
 
 UPDATE Language_en_US
-SET Text = 'Unique French {TXT_KEY_UNIT_2HANDER} that excels at delivering a fast attack into the enemy. Instead of the [COLOR_POSITIVE_TEXT]Two Hander[ENDCOLOR] Promotion, it can move faster and ignore Zone of Control.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
-
-UPDATE Language_en_US
 SET Text = 'The {TXT_KEY_UNIT_FRENCH_MUSKETEER} is a French Unique Unit, replacing the {TXT_KEY_UNIT_2HANDER}. It is more powerful, and has different promotions which allow it to move faster and ignore Zone of Control.'
 WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
 
@@ -125,20 +121,12 @@ PortraitIndex = 12
 WHERE Type = 'UNIT_GERMAN_LANDSKNECHT';
 
 UPDATE Language_en_US
-SET Text = 'Unique French {TXT_KEY_UNIT_2HANDER} that excels at delivering a fast attack into the enemy. Instead of the [COLOR_POSITIVE_TEXT]Two Hander[ENDCOLOR] Promotion, it can move faster and ignore Zone of Control.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
-
-UPDATE Language_en_US
 SET Text = 'The {TXT_KEY_UNIT_FRENCH_MUSKETEER} is a French Unique Unit, replacing the {TXT_KEY_UNIT_2HANDER}. It is more powerful, and has different promotions which allow it to move faster and ignore Zone of Control.'
 WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
 
 UPDATE Language_en_US
 SET Text = 'Doppelsoeldner'
 WHERE Tag = 'TXT_KEY_UNIT_GERMAN_LANDSKNECHT';
-
-UPDATE Language_en_US
-SET Text = 'Unique German {TXT_KEY_UNIT_2HANDER} that specializes as mercenaries, having no experience penalty or cooldown while being able to move immediately when purchased. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR] and [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR].'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_LANDSKNECHT';
 
 UPDATE Language_en_US
 SET Text = 'The {TXT_KEY_UNIT_GERMAN_LANDSKNECHT} is the German unique unit, replacing the {TXT_KEY_UNIT_2HANDER}. It has a combat bonus against full health units, and a increased bonus against mounted units. It is also slightly cheaper to train or purchase, and gain full XP and can move immediately when bought.[NEWLINE][NEWLINE]Use their fast deployment and their bonus against full health units to surprise your opponents in the first turns of your wars and break their lines quickly. Its cheap cost also makes it an excellent gift. Buy several units at once, walk them over to a nearby City-State, and reap the benefits of both short- and long-term influence.'
@@ -181,20 +169,20 @@ WHERE Tag = 'TXT_KEY_UNIT_ZULU_IMPI_STRATEGY';
 INSERT OR REPLACE INTO UnitPromotions_UnitCombatMods
 	(PromotionType, UnitCombatType, Modifier)
 VALUES
-	('PROMOTION_KNOCKOUT', 'UNITCOMBAT_GUN', 33);
+	('PROMOTION_FASIMBA', 'UNITCOMBAT_GUN', 33);
 
 INSERT OR REPLACE INTO Language_en_US (Tag, Text) VALUES
-('TXT_KEY_PROMOTION_KNOCKOUT_HELP', '+33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR].');
+('TXT_KEY_PROMOTION_FASIMBA_HELP', '+33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR].');
 
 -- yellow brow
 
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
 VALUES 
-('UNIT_SHOSHONE_YELLOW_BROW', 'PROMOTION_FORMATION_2');
+('UNIT_YELLOW_BROW', 'PROMOTION_FORMATION_2');
 
 UPDATE Language_en_US
 SET Text = Replace(Text, 'Formation I', 'Formation I and Formation II')
-WHERE Tag = 'TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP';
+WHERE Tag = 'TXT_KEY_UNIT_YELLOW_BROW_HELP';
 
 ----------------------------------------------------
 -- Other features
@@ -248,7 +236,7 @@ INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) VA
 ('PROMOTION_2HANDER', 'UNITCLASS_PIKEMAN', 33),
 ('PROMOTION_2HANDER', 'UNITCLASS_SPEARMAN', 33),
 ('PROMOTION_2HANDER', 'UNITCLASS_TERCIO', 33),
-('PROMOTION_2HANDER', 'UNITCLASS_FCOMPANY', 33);
+('PROMOTION_2HANDER', 'UNITCLASS_FREE_COMPANY', 33);
 
 ----------------------------------------------------
 -- Text (en_US)
@@ -263,10 +251,6 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 UPDATE Language_en_US
 SET Text = 'Pike-and-Shot'
 WHERE Tag = 'TXT_KEY_UNIT_SPANISH_TERCIO';
-
-UPDATE Language_en_US
-SET Text = 'The Pike-and-Shot is the basic Melee Unit of the Renaissance Era, able to easily stand up to the terrifying Knights of the Medieval Era.'
-WHERE Tag = 'TXT_KEY_CIV5_SPAIN_TERCIO_HELP';
 
 UPDATE Language_en_US
 SET Text = 'Like previous defensive Units that also did not require Iron, the Pike-and-Shot is the bread-and-butter frontline troop. It also has access to [COLOR_POSITIVE_TEXT]Pike Tactics[ENDCOLOR], which can enable it to be used offensively when initiating against the foe. However, in the Renaissance period the powerful Greatswordsman also becomes available, which for the first time represents a direct counter. Therefore although Mounted Units are less intimidating, care must still be taken to design an effective army composition without a single point of failure.'

@@ -7,7 +7,7 @@ Values
 
 UPDATE Language_en_US SET
 Text = Replace(Text, 'Pikeman', '{TXT_KEY_UNIT_PIKEMAN}')
-WHERE Tag IN ('TXT_KEY_UNIT_HELP_FCOMPANY', 'TXT_KEY_UNIT_FCOMPANY_STRATEGY');
+WHERE Tag IN ('TXT_KEY_UNIT_HELP_FCOMPANY', 'TXT_KEY_UNIT_FREE_COMPANY_STRATEGY');
 
 -- make it look earlier in history. right now is wearing a cuirass
 INSERT INTO IconTextureAtlases 

@@ -74,6 +74,12 @@ VALUES
 	
 	('BUILDING_GREAT_ALTAR', 'YIELD_PRODUCTION', 5);
 
+INSERT INTO Building_Flavors
+	(BuildingType, FlavorType, Flavor)
+SELECT
+	Type, 'FLAVOR_RELIGION', 200
+FROM Buildings WHERE Type IN ('BUILDING_MARTIAL_SANCTUM', 'BUILDING_STAIRWAY_TO_HEAVEN');
+
 -- this is odd-one-out for yields, buff it
 UPDATE Language_en_US
 SET Text = Replace(Text, '+5 [ICON_PEACE] Faith', '+3 [ICON_CULTURE] Culture, +5 [ICON_PEACE] Faith')
@@ -117,9 +123,11 @@ UPDATE Buildings SET
 MilitaryProductionModifier = 0
 WHERE Type = 'BUILDING_GREAT_ALTAR';
 
+/*
 UPDATE Language_en_US
 SET Text = 'During a [ICON_GOLDEN_AGE] Golden Age, gain 20 [ICON_FOOD] Food and [ICON_PRODUCTION] Production in the City when an Enemy Unit is defeated in battle, scaling with Era.[NEWLINE][NEWLINE]+5 [ICON_PRODUCTION] Production from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.'
 WHERE Tag = 'TXT_KEY_BUILDING_GREAT_ALTAR_HELP';
+*/
 
 -- eternal glory
 UPDATE Beliefs SET 
@@ -214,15 +222,17 @@ VALUES
 	('BUILDING_TEOCALLI', 'YIELD_GOLDEN_AGE_POINTS', 20);
 
 UPDATE Language_en_US SET
-Text = '+20 [ICON_GOLDEN_AGE] Golden Age Points when a Unit created in this City defeats an Enemy Unit in battle, scaling with Era. +20% [ICON_PRODUCTION] Production towards Land Units. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 50%.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
-WHERE Tag = 'TXT_KEY_BUILDING_TEOCALLI_HELP';
+Text = '+2 [ICON_PEACE] Faith[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness[NEWLINE][NEWLINE]+20 [ICON_GOLDEN_AGE] Golden Age Points when a Unit from this City defeats a Military Unit.[NEWLINE][NEWLINE]+20% [ICON_PRODUCTION] Production towards Military Units.[NEWLINE][NEWLINE]+50% Religious Pressure towards other Cities if this Religion is the Majority Religion of the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
+WHERE Tag = 'TXT_KEY_BUILDING_TEOCALLI_TOOLTIP';
 
 -- Buff Order Faith to 25%
 UPDATE Building_YieldFromUnitProduction SET Yield = 25 WHERE BuildingType = 'BUILDING_ORDER';
 
 UPDATE Language_en_US SET 
 Text = Replace(Text, 'Faith equal to 10%', 'Faith equal to 25%') 
-WHERE Tag = 'TXT_KEY_BUILDING_ORDER_HELP';
+WHERE Tag = 'TXT_KEY_BUILDING_ORDER_TOOLTIP';
+
+-- +2 [ICON_PEACE] Faith[NEWLINE]+3 [ICON_GOLD] Gold[NEWLINE][NEWLINE]Gain [ICON_PEACE] Faith equal to 10% of [ICON_PRODUCTION] Production cost when completing production of a Military Unit.[NEWLINE][NEWLINE]+10% [ICON_RANGE_STRENGTH] City Strike Strength.[NEWLINE][NEWLINE]All existing and future eligible Units trained in this City gain the [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_MORALE}[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+25% Religious Pressure towards other Cities if this Religion is the Majority Religion of the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.
 
 -- move military supply to gurdwara
 UPDATE Buildings SET 
@@ -230,8 +240,11 @@ CitySupplyFlat = 1
 WHERE Type = 'BUILDING_GURDWARA';
 
 UPDATE Language_en_US SET 
-Text = Replace(Text, 'City by 25%.', 'City by 25%. Increases [ICON_SILVER_FIST] Military Unit Supply Cap by 1.') 
-WHERE Tag = 'TXT_KEY_BUILDING_GURDWARA_HELP';
+Text = Replace(Text, '[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] City Strength from Buildings.', '[NEWLINE][NEWLINE]Increases [ICON_SILVER_FIST] Military Unit Supply Cap by 1.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] City Strength from Buildings.') 
+WHERE Tag = 'TXT_KEY_BUILDING_GURDWARA_TOOLTIP';
+
+-- +2 [ICON_PEACE] Faith[NEWLINE]+3 [ICON_FOOD] Food[NEWLINE]+10% [ICON_FOOD] Food[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] City Strength from Buildings.[NEWLINE][NEWLINE]+25% Religious Pressure towards other Cities if this Religion is the Majority Religion of the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.
+
 -----------------------------------------------------------------------------------------------
 INSERT INTO Language_en_US 
 	(Tag, Text)
@@ -240,14 +253,16 @@ VALUES
 	('TXT_KEY_BELIEF_GONGFU', '+1 [ICON_HAPPINESS_1] for every 8 Followers of your [ICON_RELIGION] Religion in [COLOR_NEGATIVE_TEXT]non-Enemy[ENDCOLOR] Foreign Cities, and +1 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture for every 2 Followers in [ICON_CITY_STATE] City-States (max 80 Followers).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Martial Sanctum National Wonder[ENDCOLOR] (+3 [ICON_PRODUCTION] Production, [ICON_PEACE] Faith, and [ICON_GREAT_GENERAL] Great General Points; +15 XP to Units created in the City; +5 [ICON_GREAT_GENERAL] Great General Points from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'),
 	('TXT_KEY_BUILDING_MARTIAL_SANCTUM', 'Martial Sanctum'),
 	('TXT_KEY_BUILDING_MARTIAL_SANCTUM_PEDIA', 'Many religions have blended religious and military doctrine to create castes or societies dedicate to martial prowess. In the west, the idea existed in the crusading templar orders. In Hinduism, Akhara was a place of lodging and training in the context of Indian martial artists who also practice a lifestyle of purity or renunciation. But perhaps the most famous stronghold of warrior-monks is the Shaolin Temple, the birthplace of Chan Buddhism and the cradle of Shaolin kung fu, which is located at the foot of Wuru Peak of the Songshan mountain range in Henan province, China.'),
-	('TXT_KEY_BUILDING_MARTIAL_SANCTUM_HELP', '+15 XP to all Units created in this City.[NEWLINE][NEWLINE]+5 [ICON_GREAT_GENERAL] Great General Points from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.'),
+	('TXT_KEY_BUILDING_MARTIAL_SANCTUM_HELP', ''),
+-- +15 XP to all Units created in this City.[NEWLINE][NEWLINE]+5 [ICON_GREAT_GENERAL] Great General Points from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.
 	('TXT_KEY_BUILDING_MARTIAL_SANCTUM_STRATEGY', 'Unlike other Religious bonuses, which focus on gaining yields for being successful in war, the Martial Sanctum actually improves your capabilities, by allowing you to train a more highly promoted cadre of soldiers. Since it is limited to your Holy City, make sure to build other important military infrastructure there, or invest in bonuses like the Order to bring them to you.'),
 
 	('TXT_KEY_BELIEF_ETERNAL_GLORY_SHORT', 'Eternal Glory'),
 	('TXT_KEY_BELIEF_ETERNAL_GLORY', '+4 [ICON_PRODUCTION] Production, [ICON_PEACE] Faith, and [ICON_CULTURE_LOCAL] Border Growth Points from Courthouses, and +2 in the Holy City for every Foreign City following your [ICON_RELIGION] Religion (max 40 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Heavenly Stair National Wonder[ENDCOLOR] (+4 [ICON_PEACE] Faith, +8 [ICON_CULTURE_LOCAL] Border Growth Points; [ICON_PEACE]/[ICON_CULTURE_LOCAL] Yields on Kill in all Cities; +5 [ICON_GREAT_ADMIRAL] Great Admiral Points from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN', 'Heavenly Stair'),
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_PEDIA', 'The idea that heaven, or the realm of Gods, can be reached by climbing up into the skies is a commonly held belief amongst world religions. In Greek myth, Gods dwell atop Mount Olympus, Mesopotamian Ziggurats were built to mimic mountains and so keep their Gods comfortable when they resided there, Norse belief speaks of the Bifrost, a bridge made of the rainbow, and in Christianity Jesus ascended into heaven. In all these cases, mere mortals cannot just find the path to heaven, but it must be revealed. Therefore shrines and temples have been constructed to mark or venerate where the route to heaven (or other worlds) might have once been sighted. The Chapel of the Ascension located on the Mount of Olives in Jerusalem is located on the site believed to be the earthly spot where Jesus ascended into Heaven after his Resurrection, and houses a slab of stone believed to contain one of his footprints.'),
-	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_HELP', '+2 [ICON_PEACE] Faith and [ICON_CULTURE_LOCAL] Border Growth Points in all Cities when an Enemy Unit is defeated in battle.[NEWLINE][NEWLINE]+5 [ICON_GREAT_ADMIRAL] Great Admiral Points from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.'),
+	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_HELP', ''),
+-- +2 [ICON_PEACE] Faith and [ICON_CULTURE_LOCAL] Border Growth Points in all Cities when an Enemy Unit is defeated in battle.[NEWLINE][NEWLINE]+5 [ICON_GREAT_ADMIRAL] Great Admiral Points from all [ICON_RELIGION] Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your [ICON_RELIGION] Religion (scaling with map size). -1 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest, and allows you to select a [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR].[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%.[NEWLINE][NEWLINE]Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.
 	('TXT_KEY_BUILDING_STAIRWAY_TO_HEAVEN_STRATEGY', 'Eternal Glory is a Founder Belief geared to war. Only by conquering can you construct Courthouses, and converting Foreign Cities will likely lead to conflict. In this, the Heavenly Stair directs you in bringing Faith and expanding the Borders of your Empire as you cut through both believer and non-believer alike in your search for Valhalla, or whatever afterlife awaits your religion. The widest, most warlike Empires will reap the greatest reward in the annals of history, and the eyes of (the) God(s)!'),
 
 	('TXT_KEY_BELIEF_CREMATION_SHORT', 'Cremation'),

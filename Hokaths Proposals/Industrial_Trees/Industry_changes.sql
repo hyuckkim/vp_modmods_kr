@@ -56,7 +56,7 @@ SET
 	GreatMerchantRateModifier = 0,
 	LandTradeRouteGoldChange = 0,
 	SeaTradeRouteGoldChange = 0,
-	PovertyFlatReductionGlobal = 0,
+	PovertyFlatReduction = 0,
 	RouteGoldMaintenanceMod = -50
 WHERE Type = 'POLICY_CARAVANS';
 

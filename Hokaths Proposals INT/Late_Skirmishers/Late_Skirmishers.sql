@@ -22,7 +22,18 @@ INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER', 'Utility Helicopter'),
-	('TXT_KEY_UNIT_UTILITY_HELICOPTER_HELP', 'Highly mobile Skirmisher Unit. Is capable of hovering over Mountains and Coast.'),
+	('TXT_KEY_UNIT_UTILITY_HELICOPTER_HELP', ''),  -- Highly mobile Skirmisher Unit. Is capable of hovering over Mountains and Coast.
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER_STRATEGY', 'As the first hovering Unit, you can use the Helicopter to attack across new terrain that was previously impassable. This includes coastal regions and therefore even allows you to leverage your force of Skirmisher units to aid your Navy, or defend against those of the enemy.'),
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER_PEDIA', 'The first turbine-powered helicopter in service with the United States military was the Bell UH-1 Iroquois (nickname Huey). Development of the Iroquois started in the early 1950s, a major impetus being a requirement issued by the United States Army for a new medical evacuation and utility helicopter. In military terms, a utility helicopter is an aircraft designed to transport troops, but is versatile in performing various combat roles. These tasks include command and control, logistics, casualty evacuation, and fire support. Their lightweight frames make them capable of quick maneuvers, but the cost of construction is also considerable.');
 
+UPDATE Language_ko_KR SET
+Text = 'Hovering Units'
+WHERE Tag = 'TXT_KEY_AIRPOWER_HELIGUNSHIPS_HEADING2_TITLE';
+
+UPDATE Language_ko_KR SET
+Text = 'Hovering Units, such as the Utility Helicopter and Helicopter Gunship, move over both Land and Coastal tiles at the cost of 1[ICON_MOVES] Movement. This includes normally Impassable Terrain. As a result, Hovering Units can attack enemies from novel and possible undefended locations and retreat behind natural barriers and bodies of water to avoid counterattack. However they cannot attack while over Ocean tiles.'
+WHERE Tag = 'TXT_KEY_AIRPOWER_HELIGUNSHIPS_HEADING2_BODY';
+
+UPDATE Language_ko_KR SET
+Text = Replace(Text, ' gunships', 's')  -- so it says helicopters
+WHERE Tag = 'TXT_KEY_AIRPOWER_AIRUNITS_HEADING2_BODY';

@@ -57,7 +57,7 @@ VALUES
 	('BELIEF_OGMA', 'SPECIALIST_WRITER', 'YIELD_CULTURE', 1);
 
 UPDATE Language_en_US SET
-Text = '+2 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture from Libraries and the Palace. +1 [ICON_FOOD] Food, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works, [ICON_VP_SCIENTIST] Scientists, and [ICON_VP_WRITER] Writers. +3 [ICON_GREAT_SCIENTIST] Great Scientist Points and [ICON_GREAT_WRITER] Great Writer Points in your [ICON_CAPITAL] Capital/Holy City. +3 [ICON_RESEARCH] Science from Ceilidh Hall.'
+Text = '+2 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture from Libraries and the Palace. +1 [ICON_FOOD] Food, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture from [ICON_GREAT_WORK] Great Works, [ICON_SCIENTIST] Scientists, and [ICON_WRITER] Writers. +3 [ICON_GREAT_SCIENTIST] Great Scientist Points and [ICON_GREAT_WRITER] Great Writer Points in your [ICON_CAPITAL] Capital/Holy City. +3 [ICON_RESEARCH] Science from Ceilidh Hall.'
 WHERE Tag = 'TXT_KEY_BELIEF_OGMA';
 
 ---------------------------------------
@@ -131,7 +131,7 @@ INSERT INTO UnitPromotions
 	EnemyRoute, MovesChange, ExtraNavalMovement, IgnoreZOC, IgnoreTerrainCost, RivalTerritory)
 VALUES
 	('PROMOTION_RHIANNON', 'TXT_KEY_PROMOTION_RHIANNON', 'TXT_KEY_PROMOTION_RHIANNON_HELP', 
-	'PEDIA_CIVILIAN', 'TXT_KEY_PROMOTION_RHIANNON', 22, 'extraPromo_Atlas', 1, 1,
+	'PEDIA_CIVILIAN', 'TXT_KEY_PROMOTION_RHIANNON', 22, 'PROMOTION_ATLAS_VP_06', 1, 1,
 	1, 2, 2, 1, 1, 1);
 
 INSERT INTO UnitPromotions_UnitCombats

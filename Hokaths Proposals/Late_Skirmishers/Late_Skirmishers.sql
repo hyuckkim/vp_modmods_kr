@@ -4,25 +4,25 @@
 ------------------------
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_ARMORED_FORD'), DamageStates, 'Vehicle'
-	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_ANTI_TANK_GUN');
+	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_WW1_TANK');
 
 INSERT INTO ArtDefine_UnitInfoMemberInfos 
 	(UnitInfoType, UnitMemberInfoType, NumMembers)
 SELECT
 	'ART_DEF_UNIT_ARMORED_FORD', 'ART_DEF_UNIT_MEMBER_ARMORED_FORD', NumMembers
-FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_ANTI_TANK_GUN';
+FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_WW1_TANK';
 
 INSERT INTO ArtDefine_UnitMemberCombats (UnitMemberType, EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
 	SELECT	('ART_DEF_UNIT_MEMBER_ARMORED_FORD'), EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
-	FROM ArtDefine_UnitMemberCombats WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_ANTITANKGUN');
+	FROM ArtDefine_UnitMemberCombats WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_TANK');
 
 INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
 	SELECT ('ART_DEF_UNIT_MEMBER_ARMORED_FORD'), "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
-	FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_ANTITANKGUN');
+	FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_MACHINEGUN');
 
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-	SELECT	('ART_DEF_UNIT_MEMBER_ARMORED_FORD'), 0.21, ZOffset, Domain, ('FordFTBDesert.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
-	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_ANTITANKGUN');
+	SELECT	('ART_DEF_UNIT_MEMBER_ARMORED_FORD'), Scale*1.3, ZOffset, Domain, ('FordFTBDesert.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
+	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_WW1_TANK');
 ----------------------------------
 -- Helicopter
 ----------------------------------=
@@ -109,7 +109,7 @@ WHERE Type = 'UNIT_HELICOPTER_GUNSHIP';
 -- Insert New Hover Unit
 ------------------------------------------------------------------------------------
 INSERT INTO Units (Type, Class, PrereqTech, Combat, Moves, RequiresFaithPurchaseEnabled, CombatClass, Domain, DefaultUnitAI, AdvancedStartCost, UnitFlagIconOffset, PortraitIndex, GoodyHutUpgradeUnitClass) VALUES
-('UNIT_UTILITY_HELICOPTER',  'UNITCLASS_UTILITY_HELICOPTER',  'TECH_COMPUTERS',  64, 5, 1,  'UNITCOMBAT_ARCHER', 'DOMAIN_LAND', 'UNITAI_RANGED',     10, 0, 0, 'UNITCLASS_HELICOPTER_GUNSHIP');
+('UNIT_UTILITY_HELICOPTER',  'UNITCLASS_UTILITY_HELICOPTER',  'TECH_NUCLEAR_FISSION',  64, 5, 1,  'UNITCOMBAT_ARCHER', 'DOMAIN_LAND', 'UNITAI_RANGED',     10, 0, 0, 'UNITCLASS_HELICOPTER_GUNSHIP');
 
 INSERT INTO UnitClasses (Type, DefaultUnit, Description)
 SELECT 'UNITCLASS_'||SUBSTR(Type,6), Type, 'TXT_KEY_'||Type
@@ -178,7 +178,7 @@ VALUES
 	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_HOVERING_UNIT'),
 	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING'),
 	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_CITY_PENALTY'),
-	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_NAVAL_MISFIRE'),
+	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_NAVAL_TARGET_PENALTY'),
 	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_NO_DEFENSIVE_BONUSES'),
 	('UNIT_UTILITY_HELICOPTER', 'PROMOTION_ONLY_DEFENSIVE');
 
@@ -211,7 +211,23 @@ INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER', 'Utility Helicopter'),
-	('TXT_KEY_UNIT_UTILITY_HELICOPTER_HELP', 'Highly mobile Skirmisher Unit. Is capable of hovering over Mountains and Coast.'),
+	('TXT_KEY_UNIT_UTILITY_HELICOPTER_HELP', ''),  -- Highly mobile Skirmisher Unit. Is capable of hovering over Mountains and Coast.
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER_STRATEGY', 'As the first hovering Unit, you can use the Helicopter to attack across new terrain that was previously impassable. This includes coastal regions and therefore even allows you to leverage your force of Skirmisher units to aid your Navy, or defend against those of the enemy.'),
 	('TXT_KEY_UNIT_UTILITY_HELICOPTER_PEDIA', 'The first turbine-powered helicopter in service with the United States military was the Bell UH-1 Iroquois (nickname Huey). Development of the Iroquois started in the early 1950s, a major impetus being a requirement issued by the United States Army for a new medical evacuation and utility helicopter. In military terms, a utility helicopter is an aircraft designed to transport troops, but is versatile in performing various combat roles. These tasks include command and control, logistics, casualty evacuation, and fire support. Their lightweight frames make them capable of quick maneuvers, but the cost of construction is also considerable.');
 
+DELETE FROM Concepts WHERE Type = 'CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_ANTI_TANK'; -- outdated even in VP since Bazooka exists for starters
+DELETE FROM Concepts WHERE Type = 'CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_MOVEMENT'; -- redundent with other entry, also incorrect
+DELETE FROM Concepts_RelatedConcept WHERE ConceptType IN ('CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_ANTI_TANK', 'CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_MOVEMENT');
+DELETE FROM Concepts_RelatedConcept WHERE RelatedConcept IN ('CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_ANTI_TANK', 'CONCEPT_AIR_POWER_HELICOPTER_GUNSHIPS_MOVEMENT');
+
+UPDATE Language_en_US SET
+Text = 'Hovering Units'
+WHERE Tag = 'TXT_KEY_AIRPOWER_HELIGUNSHIPS_HEADING2_TITLE';
+
+UPDATE Language_en_US SET
+Text = 'Hovering Units, such as the Utility Helicopter and Helicopter Gunship, move over both Land and Coastal tiles at the cost of 1[ICON_MOVES] Movement. This includes normally Impassable Terrain. As a result, Hovering Units can attack enemies from novel and possible undefended locations and retreat behind natural barriers and bodies of water to avoid counterattack. However they cannot attack while over Ocean tiles.'
+WHERE Tag = 'TXT_KEY_AIRPOWER_HELIGUNSHIPS_HEADING2_BODY';
+
+UPDATE Language_en_US SET
+Text = Replace(Text, ' gunships', 's')  -- so it says helicopters
+WHERE Tag = 'TXT_KEY_AIRPOWER_AIRUNITS_HEADING2_BODY';
