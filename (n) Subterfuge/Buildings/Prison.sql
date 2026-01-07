@@ -1,17 +1,19 @@
 UPDATE Buildings
 SET
 	SpySecurityModifierPerXPop = 90, -- ESPIONAGE_SECURITY_PER_POPULATION_BUILDING_SCALER = 360, so 90/360 gives 1 per 4 population in city
-	SpySecurityModifier = 10
+	SpySecurityModifier = 15
 WHERE BuildingClass = 'BUILDINGCLASS_CONSTABLE';
 
 -- this must load first before the appending occurs
+/*
 UPDATE Language_en_US
-SET Text = 'Gain 10 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
+SET Text = 'Gain 15 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
 WHERE Tag = 'TXT_KEY_BUILDING_CONSTABLE_HELP';
 
 UPDATE Language_en_US
-SET Text = 'Gain 10 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City. When you capture or identify a foreign Spy in this City, gain 50 [ICON_CULTURE] Culture, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_RESEARCH] Science in this City for every Global Monopoly on Empire.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art or Artifact. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
+SET Text = 'Gain 15 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City. When you capture or identify a foreign Spy in this City, gain 50 [ICON_CULTURE] Culture, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_RESEARCH] Science in this City for every Global Monopoly on Empire.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art or Artifact. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
 WHERE Tag = 'TXT_KEY_BUILDING_NETHERLANDS_SCHUTTERIJ_HELP';
+*/
 
 UPDATE Building_ClassesNeededInCity SET
 BuildingClassType = 'BUILDINGCLASS_PRISON'

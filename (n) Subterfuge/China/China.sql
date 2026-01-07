@@ -98,14 +98,14 @@ DELETE FROM BuildFeatures WHERE BuildType = 'BUILD_SIHEYUAN';
 --------------------------------------
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 			BuildingClassType, 				BuildingType)
-VALUES	('CIVILIZATION_CHINA',	'BUILDINGCLASS_COURT_SCRIBE',	'BUILDING_CHINA_TAICHANGSI');
+VALUES	('CIVILIZATION_CHINA',	'BUILDINGCLASS_SCRIVENERS_OFFICE',	'BUILDING_CHINA_TAICHANGSI');
 
 -- Scrivener's Office copies
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', YieldType, Yield
-FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
@@ -117,37 +117,37 @@ INSERT INTO Building_FreeUnits
 	(BuildingType, UnitType, NumUnits)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', UnitType, NumUnits
-FROM Building_FreeUnits  WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_FreeUnits  WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_ResourceQuantity
 	(BuildingType, ResourceType, Quantity)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', ResourceType, Quantity
-FROM Building_ResourceQuantity WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_ResourceQuantity WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_UnitCombatProductionModifiers
 	(BuildingType, UnitCombatType, Modifier)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', UnitCombatType, Modifier
-FROM Building_UnitCombatProductionModifiers WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_UnitCombatProductionModifiers WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_YieldPerFriend
 	(BuildingType, YieldType, Yield)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', YieldType, Yield
-FROM Building_YieldPerFriend WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_YieldPerFriend WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_YieldPerAlly
 	(BuildingType, YieldType, Yield)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', YieldType, Yield
-FROM Building_YieldPerAlly WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_YieldPerAlly WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_Flavors
 	(BuildingType, FlavorType, Flavor)
 SELECT
 	'BUILDING_CHINA_TAICHANGSI', FlavorType, Flavor
-FROM Building_Flavors WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
+FROM Building_Flavors WHERE BuildingType = 'BUILDING_SCRIVENERS_OFFICE';
 
 INSERT INTO Building_Flavors
 	(BuildingType, FlavorType, Flavor)
@@ -179,33 +179,35 @@ VALUES
 ----------------------------
 DELETE FROM Building_GreatWorkYieldChangesLocal WHERE BuildingType = 'BUILDING_CHINA_EXAMINATION_HALL';
 
---INSERT INTO Building_YieldFromWLTKD
---			(BuildingType,	YieldType, Yield)
---VALUES		
---	('BUILDING_CHINA_EXAMINATION_HALL',	'YIELD_PRODUCTION', 	50),
---	('BUILDING_CHINA_EXAMINATION_HALL',	'YIELD_CULTURE_LOCAL', 	50);
+INSERT INTO Building_InstantYieldFromWLTKDStart
+			(BuildingType,	YieldType, Yield)
+VALUES		
+	('BUILDING_EXAMINATION_HALL',	'YIELD_PRODUCTION', 	50),
+	('BUILDING_EXAMINATION_HALL',	'YIELD_CULTURE_LOCAL', 	50);
 
-INSERT INTO Building_WLTKDYieldMod
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_CHINA_EXAMINATION_HALL', 'YIELD_PRODUCTION', 10),
-	('BUILDING_CHINA_EXAMINATION_HALL', 'YIELD_CULTURE_LOCAL', 50);
+--INSERT INTO Building_WLTKDYieldMod
+--	(BuildingType, YieldType, Yield)
+--VALUES
+--	('BUILDING_EXAMINATION_HALL', 'YIELD_PRODUCTION', 10),
+--	('BUILDING_EXAMINATION_HALL', 'YIELD_CULTURE_LOCAL', 50);
 
 UPDATE Buildings SET
-ExtraSpies = 2
-WHERE Type = 'BUILDING_CHINA_EXAMINATION_HALL';
+ExtraSpies = 2,
+GPPOnCitizenBirth = 0
+WHERE Type = 'BUILDING_EXAMINATION_HALL';
 
 INSERT INTO Building_Flavors
 	(BuildingType, FlavorType, Flavor)
 VALUES
-	('BUILDING_CHINA_EXAMINATION_HALL', 'FLAVOR_ESPIONAGE', 15);
+	('BUILDING_EXAMINATION_HALL', 'FLAVOR_ESPIONAGE', 15);
 
+/*
 -- Gain 50 [ICON_PRODUCTION] Production and [ICON_CULTURE_LOCAL] Border Growth Points when entering "[COLOR_POSITIVE_TEXT]We Love the Empress Day[ENDCOLOR]", scaling with Era.
-
 UPDATE Language_en_US SET
-Text = '+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City. Receive 20 [ICON_VP_SPY_POINTS] Spy Points. +10% [ICON_PRODUCTION] Production and +50% [ICON_CULTURE_LOCAL] Border Growth Points during "[COLOR_POSITIVE_TEXT]We Love the Empress Day[ENDCOLOR]" in the City.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward the [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.[NEWLINE][NEWLINE][ICON_CITY_STATE] City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +2 [ICON_PRODUCTION] Production each.'
-WHERE Tag = 'TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP';
+Text = '+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City. Receive 20 [ICON_SPY_POINT] Spy Points. +10% [ICON_PRODUCTION] Production and +50% [ICON_CULTURE_LOCAL] Border Growth Points during "[COLOR_POSITIVE_TEXT]We Love the Empress Day[ENDCOLOR]" in the City.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward the [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.[NEWLINE][NEWLINE][ICON_CITY_STATE] City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +2 [ICON_PRODUCTION] Production each.'
+WHERE Tag = 'TXT_KEY_BUILDING_EXAMINATION_HALL_HELP';
+*/
 
 UPDATE Language_en_US SET
 Text = 'The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, it provides Spy Points, allowing China the unique ability to gain Spies by Founding more Cities. In addition, moving Great Works to your new Cities becomes even more effective in growing developing them. Finally, you can channel growth into additional Great People Points; with the ability to decide which Specialist will receive them you can spread all different types across your booming Empire. Taken together, China''s bonuses mean you are flexible in chasing whichever Victory suits you desire.'
-WHERE Tag = 'TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_STRATEGY';
+WHERE Tag = 'TXT_KEY_BUILDING_EXAMINATION_HALL_STRATEGY';

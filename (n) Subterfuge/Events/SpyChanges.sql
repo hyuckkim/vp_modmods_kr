@@ -123,6 +123,7 @@ VALUES
 		0, 1, 0),
 	('ESPIONAGE_EVENT_CHOICE_LEAFLETS', NULL, NULL, NULL, 'ESPIONAGE_EVENT_CHOICE_COUNTERSPY_RELIGION', 
 		0, 1, 0);
+
 -- dont need this anymore and china ua mission shouldnt be blockable
 UPDATE CityEventChoices SET
 CounterspyBlockSapCity = 0
@@ -153,6 +154,10 @@ SELECT
 	'ESPIONAGE_EVENT_CHOICE_COUNTERSPY_DEFENSE', Type, 'YIELD_CULTURE_LOCAL', 2
 FROM Improvements WHERE NoFollowUp = 1;
 
+-- counterspy options need to last a long time or they stop working
+UPDATE CityEventChoices SET
+EventDuration = 999  -- setting -1 didnt work
+WHERE IsCounterSpyMission = 1;
 
 
 

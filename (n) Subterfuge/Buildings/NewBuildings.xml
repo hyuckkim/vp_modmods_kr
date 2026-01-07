@@ -36,8 +36,8 @@
 			<Help>TXT_KEY_BUILDING_PRINTING_HOUSE_HELP</Help>
 			<Civilopedia>TXT_KEY_BUILDING_PRINTING_HOUSE_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PRINTING_HOUSE_STRATEGY</Strategy>
-			<IconAtlas>CSDBUILDINGS_ATLAS</IconAtlas>
-			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>BUILDING_ATLAS_VP_2</IconAtlas>
+			<PortraitIndex>52</PortraitIndex>
 			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
 			<Cost>500</Cost>
 			<GoldMaintenance>4</GoldMaintenance>
@@ -46,7 +46,7 @@
 			<SpecialistCount>1</SpecialistCount>
 			<ConquestProb>80</ConquestProb>
 			<TrainedFreePromotion>PROMOTION_LITERACY</TrainedFreePromotion>			
-			<SpySecurityModifier>20</SpySecurityModifier>
+			<SpySecurityModifier>15</SpySecurityModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_PRISON</Type>
@@ -63,8 +63,8 @@
 			<HurryCostModifier>-20</HurryCostModifier>
 			<ConquestProb>80</ConquestProb>
 			<TrainedFreePromotion>PROMOTION_CHAIN_GANG</TrainedFreePromotion>
-			<SpySecurityModifier>10</SpySecurityModifier>
-			<SpySecurityModifierPerXPop>90</SpySecurityModifierPerXPop>
+			<SpySecurityModifier>15</SpySecurityModifier>
+			<!--<SpySecurityModifierPerXPop>90</SpySecurityModifierPerXPop>-->
 			<EmpireSizeModifierReduction>-5</EmpireSizeModifierReduction>
 		</Row>
 		<Row>
@@ -104,7 +104,7 @@
 			<Type>BUILDING_D_FOR_SPYPOINTS</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_SPYPOINTS</BuildingClass>
 			<Description>TXT_KEY_BUILDING_D_FOR_SPYPOINTS</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -205,7 +205,7 @@
 			<PediaType>PEDIA_CIVILIAN</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CHAIN_GANG</PediaEntry>
 			<WorkRateMod>20</WorkRateMod>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<PortraitIndex>36</PortraitIndex>
 		</Row>
 	</UnitPromotions>
@@ -221,7 +221,8 @@
 			<Text>Printing House</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PRINTING_HOUSE_HELP">
-			<Text>Provides 20 [ICON_SPY] City Security. Grants the [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR] Promotion for Diplomatic Units in the City in which it is built.[NEWLINE][NEWLINE][ICON_CITY_STATE]City-State [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] Bonus: +1 [ICON_GOLD] Gold each.[NEWLINE][ICON_CITY_STATE]City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +1 [ICON_RESEARCH] Science each.</Text>
+			<Text></Text>
+	<!-- Provides 15 [ICON_SPY] City Security. Grants the [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR] Promotion for Diplomatic Units in the City in which it is built.[NEWLINE][NEWLINE][ICON_CITY_STATE]City-State [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] Bonus: +1 [ICON_GOLD] Gold each.[NEWLINE][ICON_CITY_STATE]City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +1 [ICON_RESEARCH] Science each. -->
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PRINTING_HOUSE_STRATEGY">
 			<Text>Printing Houses only provide yields if you have many City-State Friends and Allies, or if you are conducting offensive Spy Missions, otherwise they are a drain on your Gold and a diversion of Production. But, if you intend to work Civil Servant slots they are a key Building, and give increased movement and influence for all your Diplomatic Units and the ability to allow your Diplomatic Units to ignore terrain penalties.</Text>
@@ -233,8 +234,10 @@
 		<Row Tag="TXT_KEY_BUILDING_PRISON">
 			<Text>Penitentiary</Text>
 		</Row>
+	<!-- , plus 1 for every four [ICON_CITIZEN] Citizens in the City. -->
 		<Row Tag="TXT_KEY_BUILDING_PRISON_HELP">
-			<Text>Receive 50 [ICON_FOOD] Food and [ICON_CULTURE_LOCAL] Border Growth Points when you perform a Spy Mission, scaling with Era. Provides 10 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City. +1 [ICON_GOLD] Gold and [ICON_CULTURE_LOCAL] Border Growth Point from Tundra tiles worked by the City.[NEWLINE][NEWLINE]Workers built in this City gain +20% [ICON_WORKER] Tile improvement rate.[NEWLINE][NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in this City.</Text>
+			<Text></Text>
+	<!-- Receive 50 [ICON_FOOD] Food and [ICON_CULTURE_LOCAL] Border Growth Points when you perform a Spy Mission, scaling with Era. Provides 15 [ICON_SPY] City Security. +1 [ICON_GOLD] Gold and [ICON_CULTURE_LOCAL] Border Growth Point from Tundra tiles worked by the City.[NEWLINE][NEWLINE]Workers built in this City gain +20% [ICON_WORKER] Tile improvement rate.[NEWLINE][NEWLINE][ICON_CITY_STATE] Empire Size Modifier is reduced by 5% in this City. -->
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PRISON_STRATEGY">
 			<Text>Penitentiaries support the development of new Cities by allowing you use Spy Missions to generate global Food bonuses, and by making new Workers produce improvements faster. They also benefit large, established Cities my making them less susceptible to Spies and allowing them to generate more Military Supply. Both high-population Empires and those with many Cities will appreciate the Empire Size Modifier reduction.</Text>
@@ -254,8 +257,9 @@
 			<Text>Jail</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAIL_HELP">
-			<Text>Provides 20 [ICON_SPY] City Security. Receive 25 [ICON_CULTURE_LOCAL] Border Growth Points when you perform a Spy Mission, scaling with Era. Gain 5 [ICON_GOLD] Gold in the City when its borders expand, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and [ICON_CULTURE_LOCAL] Border Growth Point from Quarries worked by this City.</Text>
+			<Text></Text>
 		</Row>
+<!-- Provides 20 [ICON_SPY] City Security. Receive 25 [ICON_CULTURE_LOCAL] Border Growth Points when you perform a Spy Mission, scaling with Era. Gain 5 [ICON_GOLD] Gold in the City when its borders expand, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and [ICON_CULTURE_LOCAL] Border Growth Point from Quarries worked by this City. -->
 		<Row Tag="TXT_KEY_BUILDING_JAIL_STRATEGY">
 			<Text>Jails are the earliest Building that interacts with Spies. Both offensively and defensively the Jail improves your edge in the espionage game. In terms of investment, Jails cover their own maintenance cost and adding a small amount of production that eventually pays off the construction costs. However, if you have nearby Quarries you will want to construct jails to set your prisoners to work!</Text>
 		</Row>
@@ -274,7 +278,8 @@
 			<Text>Although the Casino generates Gold, its Maintenance Cost is higher, making it a poor investment. However, if you operate an offensive Spy network, then the Gold and Culture flowing from your Agents' daring Missions will make the Casino worth your while. The building further benefits from the Penitentiary gaining Border Growth Points from Spy Missions by also giving yields upon border expansion. At Computers the Maintenance Cost is effectively removed, making the Casino a net positive to any City with the Production to spare.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CASINO_HELP">
-			<Text>Receive 30 [ICON_GOLD] Gold and [ICON_CULTURE] Culture when you perform a Spy Mission, scaling with Era. Gain 10 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism in the City when its borders expand, scaling with Era. +6 [ICON_GOLD] Gold once [COLOR_CYAN]Computers[ENDCOLOR] is discovered.[NEWLINE][NEWLINE]Nearby Oasis: +5 [ICON_CULTURE] Culture.</Text>
+			<Text></Text>
+<!-- Receive 30 [ICON_GOLD] Gold and [ICON_CULTURE] Culture when you perform a Spy Mission, scaling with Era. Gain 10 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism in the City when its borders expand, scaling with Era. +6 [ICON_GOLD] Gold once [COLOR_CYAN]Computers[ENDCOLOR] is discovered.[NEWLINE][NEWLINE]Nearby Oasis: +5 [ICON_CULTURE] Culture. -->
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_SPYPOINTS">

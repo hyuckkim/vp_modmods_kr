@@ -161,10 +161,10 @@
 
 		<!-- Counterspy -->
 		<Replace Tag="TXT_KEY_ESPIONAGE_EVENT_CHOICE_COUNTERSPY_NETWORK_HELP">
-			<Text>Foreign [ICON_SPY] Spies generate [COLOR_POSITIVE_TEXT]-20[ENDCOLOR] Network Points per turn. [ICON_VP_SCIENTIST] Scientists, [ICON_VP_MERCHANT] Merchants, and [ICON_VP_ENGINEER] Engineers produce +1 of their base Yield.[NEWLINE][NEWLINE]Foreign Spies are unable to perform the "Kidnap Specialists", "Radicalize the Rural Citizenry", and "Burgle the National Treasury" Missions.[NEWLINE][NEWLINE]Gain 50 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture when you identify a foreign [ICON_SPY] Spy, and 150 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture when you kill a foreign spy, scaling with Era.</Text>
+			<Text>Foreign [ICON_SPY] Spies generate [COLOR_POSITIVE_TEXT]-20[ENDCOLOR] Network Points per turn. [ICON_SCIENTIST] Scientists, [ICON_MERCHANT] Merchants, and [ICON_ENGINEER] Engineers produce +1 of their base Yield.[NEWLINE][NEWLINE]Foreign Spies are unable to perform the "Kidnap Specialists", "Radicalize the Rural Citizenry", and "Burgle the National Treasury" Missions.[NEWLINE][NEWLINE]Gain 50 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture when you identify a foreign [ICON_SPY] Spy, and 150 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture when you kill a foreign spy, scaling with Era.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ESPIONAGE_EVENT_CHOICE_COUNTERSPY_NETWORK_EFFECT">
-			<Text>Foreign [ICON_SPY] Spies generate [ICON_POSITIVE_TEXT]-20 Network Points[ENDCOLOR] per turn. [ICON_VP_SCIENTIST] Scientists, [ICON_VP_MERCHANT] Merchants, and [ICON_VP_ENGINEER] Engineers produce +1 of their base Yield. Foreign Spies are unable to perform the "Kidnap Specialists", "Radicalize the Rural Citizenry", and "Burgle the National Treasury" Missions.</Text>
+			<Text>Foreign [ICON_SPY] Spies generate [ICON_POSITIVE_TEXT]-20 Network Points[ENDCOLOR] per turn. [ICON_SCIENTIST] Scientists, [ICON_MERCHANT] Merchants, and [ICON_ENGINEER] Engineers produce +1 of their base Yield. Foreign Spies are unable to perform the "Kidnap Specialists", "Radicalize the Rural Citizenry", and "Burgle the National Treasury" Missions.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_ESPIONAGE_EVENT_CHOICE_COUNTERSPY_DEFENSE_HELP">

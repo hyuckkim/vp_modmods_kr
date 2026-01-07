@@ -318,6 +318,7 @@
 			<ReligiousPressureModifier>25</ReligiousPressureModifier>
 			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
 			<GrowthMod>-15</GrowthMod>
+			<EventDuration>999</EventDuration>
 		</Row>
 		<!-- Set up check points -->
 		<Row>
@@ -332,6 +333,7 @@
 			<CultureMedianModifier>-25</CultureMedianModifier>
 			<ReligiousUnrestModifier>-25</ReligiousUnrestModifier>
 			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+			<EventDuration>999</EventDuration>
 		</Row>
 	</CityEventChoices>
 </GameData>

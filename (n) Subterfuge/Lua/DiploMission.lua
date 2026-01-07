@@ -39,7 +39,7 @@ function PointsOrNot(iPlayer)
 		end
 		local iX, iY = pCapital:GetX(), pCapital:GetY()
 		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD, 
-				'After your [ICON_DIPLOMAT] Great Diplomat Mission completed, your agents were exfiltrated from their diplomatic cover. Your newly cultivated assets permanently increase your operational capabilities, +50 [ICON_VP_SPY_POINTS] Spy Points.',
+				'After your [ICON_DIPLOMAT] Great Diplomat Mission completed, your agents were exfiltrated from their diplomatic cover. Your newly cultivated assets permanently increase your operational capabilities, +50 [ICON_SPY_POINT] Spy Points.',
 				'Spy Point Increase', 
 				iX, iY, pCapital:GetID())
 
