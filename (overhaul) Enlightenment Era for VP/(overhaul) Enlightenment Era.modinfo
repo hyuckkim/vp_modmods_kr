@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="17">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="18">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -104,6 +104,11 @@
     <File md5="797CE26755A75FE9775B2F90102C0241" import="1">Art/Scenes/EE_Wat_Phra_Kaew_Splash.dds</File>
     <File md5="LO7CE26755A75FE9775B2F90102C0241" import="1">Art/Scenes/EE_Derwent_Mills_Splash.dds</File>
     <File md5="47688778122DF769ADC628C71111C6DF" import="1">Art/Scenes/ERA_Enlightenment.dds</File>
+
+    <File md5="DDFF5127358A69F9C3D6E1F79A531547" import="1">Art/Unit Models/Longswordsman_Jerusalem/Longswordsman_Jerusalem.dds</File>
+    <File md5="DDFF5127358A69F9C3D6E1F79A531547" import="1">Art/Unit Models/Longswordsman_Jerusalem/Longswordsman_Jerusalem.fxsxml</File>
+    <File md5="DDFF5127358A69F9C3D6E1F79A531547" import="1">Art/Unit Models/Longswordsman_Jerusalem/Longswordsman_Jerusalem.gr2</File>
+    <File md5="DDFF5127358A69F9C3D6E1F79A531547" import="1">Art/Unit Models/Longswordsman_Jerusalem/Longswordsman_Jerusalem_gloss.dds</File>
 
     <File md5="DDFF5127358A69F9C3D6E1F79A531547" import="1">Art/Unit Models/2hswordsman/2hgs_black_diff.dds</File>
     <File md5="D8BE541295FE2C8C101088DFFEED08A2" import="1">Art/Unit Models/2hswordsman/2hgs_black_sref.dds</File>

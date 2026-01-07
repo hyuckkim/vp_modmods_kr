@@ -100,7 +100,7 @@ SELECT
 FROM Buildings a, Yields b WHERE a.BuildingClass = 'BUILDINGCLASS_WORKSHOP' 
 AND b.Type IN ('YIELD_PRODUCTION', 'YIELD_GOLD');
 
-UPDATE Building_ImprovementYieldChanges SET Yield = 1 WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_STOCKYARD');
+UPDATE Building_ImprovementYieldChanges SET Yield = 1 WHERE BuildingType IN (SELECT Type FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_AGRIBUSINESS');
 
 -- move the marsh and lake changes to the new windmil/old workshop
 UPDATE Building_FeatureYieldChanges SET Yield = 1 WHERE BuildingType = 'BUILDING_WINDMILL';
@@ -124,7 +124,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
 
 UPDATE Language_en_US
 SET Text = '+1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms and +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Pastures worked by the City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_HORSE] Horses.'
-WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
+WHERE Tag = 'TXT_KEY_BUILDING_AGRIBUSINESS_HELP';
 
 ----------------------
 -- Workshop
@@ -191,7 +191,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY';
 ------------------------------------------------------------
 INSERT OR REPLACE INTO Language_en_US (Tag, Text)
 SELECT 'TXT_KEY_BUILDING_ATLOOH_HELP_EE',
-'+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City. [ICON_VP_ARTIST] Artist Specialists in the City generate +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_PEACE] Faith. Provides 1 copy of the [ICON_RES_JAR_DIYOGI] Diyogi Luxury Resource. +1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]' || Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_GOLD] Gold.'
+'+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City. [ICON_ARTIST] Artist Specialists in the City generate +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_PEACE] Faith. Provides 1 copy of the [ICON_RES_JAR_DIYOGI] Diyogi Luxury Resource. +1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]' || Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_GOLD] Gold.'
 FROM Language_en_US WHERE Tag='TXT_KEY_BUILDING_WORKSHOP_HELP';
 
 UPDATE Language_en_US SET Text = REPLACE(Text, '+1 [ICON_PRODUCTION] Production from Forests worked by this City', '+1 [ICON_PRODUCTION] Production from Plains and Desert tiles worked by this City')

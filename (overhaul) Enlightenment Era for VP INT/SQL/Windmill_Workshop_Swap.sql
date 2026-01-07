@@ -9,7 +9,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY';
 
 UPDATE Language_ko_KR
 SET Text = '도시에서 경작하는 농장에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +1, 초원에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +2를 얻습니다. 도시에서 생산하는 [ICON_FOOD] 식량의 10%가 턴 당 [ICON_GOLD] 골드로 계산됩니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말 2마리가 필요합니다.'
-WHERE Tag = 'TXT_KEY_BUILDING_STOCKYARD_HELP';
+WHERE Tag = 'TXT_KEY_BUILDING_AGRIBUSINESS_HELP';
 
 -- swap the help text
 UPDATE Language_ko_KR SET
@@ -29,7 +29,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
 ------------------------------------------------------------
 INSERT OR REPLACE INTO Language_ko_KR (Tag, Text)
 SELECT 'TXT_KEY_BUILDING_ATLOOH_HELP',
-'도시에 있는 [ICON_VP_ARTIST] 예술가 전문가는 [ICON_PRODUCTION] 생산력, [ICON_GOLD] 골드, [ICON_PEACE] 신앙을 +2 생성합니다. [ICON_RES_JAR_DIYOGI] 디요기 사치 자원의 사본 1개를 제공합니다. 도시에 거주하는 [ICON_CITIZEN] 시민 4명당 [ICON_CULTURE] 문화가 +1 증가합니다.[NEWLINE][NEWLINE]'||Text
+'도시에 있는 [ICON_ARTIST] 예술가 전문가는 [ICON_PRODUCTION] 생산력, [ICON_GOLD] 골드, [ICON_PEACE] 신앙을 +2 생성합니다. [ICON_RES_JAR_DIYOGI] 디요기 사치 자원의 사본 1개를 제공합니다. 도시에 거주하는 [ICON_CITIZEN] 시민 4명당 [ICON_CULTURE] 문화가 +1 증가합니다.[NEWLINE][NEWLINE]'||Text
 FROM Language_ko_KR WHERE Tag='TXT_KEY_BUILDING_WORKSHOP_HELP';
 
 UPDATE Language_ko_KR SET Text = REPLACE(Text, '이 도시에서 작업한 숲에서 [ICON_PRODUCTION] 생산 +1', '이 도시에서 작업한 평지 및 사막 타일에서 [ICON_PRODUCTION] 생산력 +1')

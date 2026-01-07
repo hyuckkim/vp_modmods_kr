@@ -483,6 +483,7 @@ Compatibility
 -- Fixed problems in the Workshop/Windmill rewrite
 -- Sword UU now properly obsolete at Chemistry (not Gunpowder)
 -- Fixed Herbalist costing more than in VP
+-- Reverted Torpedo Boat PrereqTech and Resource changes if enabled
 
 Art Management
 --Combined Howitzer and Bombard into enlarged EE atlas
@@ -512,4 +513,13 @@ Units
 -- Adventurer need a Tavern to purchase 
   like how Explorer need a Harbor
 
+----------------
+-- v18
+----------------
+Compatibility
+-- Updated keys for VP 5.0
+-- Merged 4UC compatibility files into the mod proper
+
+Art
+-- Longswordsman now uses a reskinned Jerusalem Longsword model to match the icon
 

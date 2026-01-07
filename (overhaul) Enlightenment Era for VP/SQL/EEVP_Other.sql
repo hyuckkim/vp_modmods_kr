@@ -8,7 +8,7 @@
 ----------------------------------------------------
 -- CUSTOM MOD OPTIONS
 ----------------------------------------------------
-UPDATE CustomModOptions SET Value = 1 WHERE Name = 'CORE_AREA_EFFECT_PROMOTIONS';
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'API_AREA_EFFECT_PROMOTIONS';
 
 ----------------------------------------------------
 -- WORLD CONGRESS
@@ -43,8 +43,14 @@ WHERE Type = 'ART_DEF_UNIT_MEMBER_PIKEMAN';
 
 -- Earlier looking Longsword
 UPDATE Units
-SET PortraitIndex = 0, IconAtlas = 'RER_UNITS_ATLAS'
+SET 
+	PortraitIndex = 0, 
+	IconAtlas = 'RER_UNITS_ATLAS'
 WHERE Type = 'UNIT_LONGSWORDSMAN';
+
+UPDATE ArtDefine_UnitMemberInfos
+SET Model = 'Longswordsman_Jerusalem.fxsxml'
+WHERE Type = 'ART_DEF_UNIT_MEMBER_LONGSWORDSMAN';
 
 -- New icon for Harquebusier
 UPDATE Units

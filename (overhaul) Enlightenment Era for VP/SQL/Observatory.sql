@@ -36,7 +36,7 @@ FROM GreatPersons
 WHERE Specialist IS NOT NULL;
 
 UPDATE Language_en_US
-SET Text = Replace(Text, 'Can construct [COLOR_POSITIVE_TEXT]Observatories[ENDCOLOR] (+6 [ICON_RESEARCH] Science, +1 [ICON_RESEARCH] Science from nearby Mountains, 2 [ICON_VP_SCIENTIST] Scientist Slot).', '+25% [ICON_GREAT_PEOPLE] Great Person Rate during [ICON_GOLDEN_AGE] Golden Ages.')
+SET Text = Replace(Text, 'Can construct [COLOR_POSITIVE_TEXT]Observatories[ENDCOLOR] (+6 [ICON_RESEARCH] Science, +1 [ICON_RESEARCH] Science from nearby Mountains, 2 [ICON_SCIENTIST] Scientist Slot).', '+25% [ICON_GREAT_PEOPLE] Great Person Rate during [ICON_GOLDEN_AGE] Golden Ages.')
 WHERE Tag = 'TXT_KEY_POLICY_SECULARISM_HELP';
 
 -- Harbor

@@ -3,7 +3,7 @@
 --UPDATE Building_YieldPerXTerrainTimes100 SET Yield = 100 WHERE BuildingType = 'BUILDING_OBSERVATORY';
 
 UPDATE Language_ko_KR
-SET Text = Replace(Text, '[COLOR_POSITIVE_TEXT]천문대[ENDCOLOR]를 건설할 수 있습니다. ([ICON_RESEARCH] 과학 +6, 근처 산에서 [ICON_RESEARCH] 과학 +1, [ICON_VP_SCIENTIST] 과학자 슬롯 2개)', '[ICON_GOLDEN_AGE] 황금기 동안 [ICON_GREAT_PEOPLE] 위인 비율 +25%')
+SET Text = Replace(Text, '[COLOR_POSITIVE_TEXT]천문대[ENDCOLOR]를 건설할 수 있습니다. ([ICON_RESEARCH] 과학 +6, 근처 산에서 [ICON_RESEARCH] 과학 +1, [ICON_SCIENTIST] 과학자 슬롯 2개)', '[ICON_GOLDEN_AGE] 황금기 동안 [ICON_GREAT_PEOPLE] 위인 비율 +25%')
 WHERE Tag = 'TXT_KEY_POLICY_SECULARISM_HELP';
 
 -- Harbor

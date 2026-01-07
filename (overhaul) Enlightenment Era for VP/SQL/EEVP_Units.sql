@@ -183,12 +183,12 @@ END;
 -- Bandeirantes
 -------------------------------------------------------
 -- BANDEIRANTES
-UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_ADVENTURER' WHERE UnitType = 'UNIT_BANDEIRANTES';
-UPDATE Units SET Class = 'UNITCLASS_EE_ADVENTURER' WHERE Type = 'UNIT_BANDEIRANTES';
-UPDATE Units SET PrereqTech = 'TECH_GUNPOWDER' WHERE Type = 'UNIT_BANDEIRANTES';
-UPDATE Units SET Combat = '28' WHERE Type = 'UNIT_BANDEIRANTES';
-UPDATE Units SET Cost = '300' WHERE Type = 'UNIT_BANDEIRANTES';
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_COMMANDO' WHERE UnitType = 'UNIT_BANDEIRANTES';
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_ADVENTURER' WHERE UnitType = 'UNIT_BANDEIRANTE';
+UPDATE Units SET Class = 'UNITCLASS_EE_ADVENTURER' WHERE Type = 'UNIT_BANDEIRANTE';
+UPDATE Units SET PrereqTech = 'TECH_GUNPOWDER' WHERE Type = 'UNIT_BANDEIRANTE';
+UPDATE Units SET Combat = '28' WHERE Type = 'UNIT_BANDEIRANTE';
+UPDATE Units SET Cost = '300' WHERE Type = 'UNIT_BANDEIRANTE';
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_COMMANDO' WHERE UnitType = 'UNIT_BANDEIRANTE';
 
 -------------------------------------------------------
 -- Dragoon
@@ -228,11 +228,11 @@ WHERE Type = 'UNIT_CUIRASSIER';
 -- Heavy Skirmisher UUs now obsolete on Dragoon
 UPDATE Units
 SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_DRAGOON')
-WHERE Class = 'UNITCLASS_MOUNTED_BOWMAN' AND Type != 'UNIT_MOUNTED_BOWMAN';
+WHERE Class = 'UNITCLASS_HEAVY_SKIRMISHER' AND Type != 'UNIT_HEAVY_SKIRMISHER';
 
 CREATE TRIGGER EE_DRAGOON_HeavySkirmisherCompatibility
 AFTER INSERT ON Civilization_UnitClassOverrides
-WHEN NEW.UnitClassType = 'UNITCLASS_MOUNTED_BOWMAN'
+WHEN NEW.UnitClassType = 'UNITCLASS_HEAVY_SKIRMISHER'
 AND NEW.UnitType NOT NULL
 BEGIN
 	UPDATE Units
@@ -656,6 +656,7 @@ ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_CRUISER')
 WHERE Type = 'UNIT_EE_GALLEON';
 
 -- compatibility with torpedo boat
+/* 
 UPDATE Units SET 
 PrereqTech = 'TECH_STEAM_POWER',
 Cost = 750
@@ -663,6 +664,7 @@ WHERE Type = 'UNIT_TORPEDO' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_T
 
 DELETE FROM Unit_ResourceQuantityRequirements
 WHERE UnitType = 'UNIT_TORPEDO';
+*/
 
 UPDATE Units
 SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_TORPEDO')
@@ -676,7 +678,7 @@ INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 SELECT 'UNIT_EE_GALLEON', PromotionType FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GALLEASS';
 -- but galleon can move over ocean fine
-DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_EE_GALLEON' AND PromotionType = 'PROMOTION_OCEAN_HALF_MOVES';
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_EE_GALLEON' AND PromotionType = 'PROMOTION_SHALLOW_DRAFT';
 
 -- Galleass -> Galleon; RCS decreased to 23 from 24
 UPDATE Units
@@ -802,7 +804,7 @@ VALUES ('UNIT_ZULU_IMPI', 'PROMOTION_COVER_1');
 INSERT OR REPLACE INTO UnitPromotions_UnitCombatMods
 	(PromotionType, UnitCombatType, Modifier)
 VALUES
-	('PROMOTION_KNOCKOUT', 'UNITCOMBAT_GUN', 33);
+	('PROMOTION_FASIMBA', 'UNITCOMBAT_GUN', 33);
 
 ----------------------------
 -- pioneers
@@ -893,7 +895,7 @@ WHERE Type IN (SELECT UnitType FROM Civilization_UnitClassOverrides WHERE UnitCl
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES
 ('UNIT_EE_GRENADIER', 'PROMOTION_FIELD_WORKS_1'),
 ('UNIT_EE_GRENADIER', 'PROMOTION_COVER_1'),
-('UNIT_EE_GRENADIER', 'PROMOTION_AOE_STRIKE_ON_KILL'),
+('UNIT_EE_GRENADIER', 'PROMOTION_GRENADIER'),
 ('UNIT_EE_GRENADIER', 'PROMOTION_RANGED_SUPPORT_FIRE');
 
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
@@ -941,6 +943,125 @@ UnitType IN ('UNIT_SWEDISH_CAROLEAN');
 
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 VALUES ('UNIT_SWEDISH_CAROLEAN', 'RESOURCE_IRON', 1);
+
+-------------------------------------------
+-- 4UC 
+------------------------------------------
+-- TODO: Sort these into the correct places above.
+
+-- baochuan
+UPDATE Units SET
+Class = 'UNITCLASS_EE_GALLEON',
+Combat = 23,
+RangedCombat = 31,
+Range = 1,
+Class = 'UNITCLASS_EE_GALLEON',
+Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_CRUISER')
+WHERE Type = 'UNIT_TREASURE_SHIP';
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT 'UNIT_TREASURE_SHIP', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING';
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT 'UNIT_TREASURE_SHIP', 'PROMOTION_NAVAL_INACCURACY';
+
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GALLEON' WHERE UnitType = 'UNIT_TREASURE_SHIP';
+
+UPDATE Unit_ClassUpgrades SET 
+UnitClassType = 'UNITCLASS_TORPEDO' WHERE UnitType = 'UNIT_TREASURE_SHIP'
+AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1)
+AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
+
+UPDATE Language_en_US SET 
+Text = 'The Treasure Ship is a Chinese unique unit. It is much sturdier than the Galleon it replaces. You can use your Treasure Ship to passively bring City-States under your sway, or take advantage of its sturdiness to dominate coastal empires.'
+WHERE Tag = 'TXT_KEY_UNIT_TREASURE_SHIP_STRATEGY';
+
+--------------------------------
+-- chewa
+UPDATE Units SET
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_LINE_INFANTRY')
+WHERE Type = 'UNIT_CHEWA';
+
+--------------------------------
+-- yellow brow
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT 'UNIT_YELLOW_BROW', 'PROMOTION_FORMATION_2';
+
+--------------------------------
+-- turtle ship
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP';
+
+UPDATE Units SET 
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_CARRACK')
+WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
+
+--------------------------------
+-- Armada
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GALLEON' WHERE UnitType = 'UNIT_SPAIN_ARMADA';
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_CRUISER' WHERE UnitType = 'UNIT_SPAIN_ARMADA';
+
+UPDATE Units SET 
+Class = 'UNITCLASS_EE_GALLEON',
+ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_CRUISER'),
+PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_GALLEON') + 50,
+FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_GALLEON') + 50,
+Combat = 25,
+RangedCombat = 32,
+Range = 1,
+CombatClass = 'UNITCOMBAT_NAVALRANGED',
+DefaultUnitAI = 'UNITAI_ASSAULT_SEA'
+WHERE Type = 'UNIT_ARMADA';
+
+DELETE FROM Unit_FreePromotions WHERE PromotionType = 'PROMOTION_BOARDING_PARTY_1' AND UnitType = 'UNIT_ARMADA';
+
+UPDATE Language_en_US
+SET Text = 'The Armada is a very powerful ship. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Much more imposing when at full health, make sure to make contact with the enemy before they can place ranged attacks, or you will lose a great deal of power in your initial combat.'
+WHERE Tag = 'TXT_KEY_UNIT_ARMADA_STRATEGY';
+
+--------------------------------
+-- Cacadores
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_SKIRMISHER' WHERE UnitType = 'UNIT_CACADOR';
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_GATLINGGUN' WHERE UnitType = 'UNIT_CACADOR';
+	
+UPDATE Units SET 
+Class = 'UNITCLASS_EE_SKIRMISHER',
+ObsoleteTech = 'TECH_BALLISTICS',
+PrereqTech = 'TECH_EE_FORTIFICATION',
+Combat = '25', RangedCombat = '38', Cost = '475'
+WHERE Type = 'UNIT_CACADOR';
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CACADOR' AND PromotionType = 'PROMOTION_COVERING_FIRE_1';
+INSERT INTO Unit_FreePromotions SELECT 'UNIT_CACADOR', PromotionType FROM Unit_FreePromotions WHERE UnitType = 'UNIT_EE_SKIRMISHER';
+
+UPDATE Language_en_US
+SET Text = 'The Cacador is the unique Portuguese replacement for the Marksman. It gains recon promotions by leveling up, allowing it to excel in hostile terrain.'
+WHERE Tag = 'TXT_KEY_UNIT_CACADOR_STRATEGY';
+
+--------------------------------
+-- Great Bombard
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_EE_FIELD_GUN' WHERE UnitType = 'UNIT_GREAT_BOMBARD';
+UPDATE Units SET ObsoleteTech = 'TECH_RIFLING' WHERE Type = 'UNIT_GREAT_BOMBARD';
+
+--------------------------------
+-- yellow brow
+UPDATE Units SET ObsoleteTech = 'TECH_RIFLING' WHERE Type = 'UNIT_YELLOW_BROW';
+
+--------------------------------
+-- Licorne
+UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_FIELD_GUN' WHERE UnitType = 'UNIT_LICORNE';
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FIELD_GUN' WHERE UnitType = 'UNIT_LICORNE';
+UPDATE Units SET Class = 'UNITCLASS_EE_FIELD_GUN' WHERE Type = 'UNIT_LICORNE';
+UPDATE Units SET ObsoleteTech = 'TECH_BALLISTICS' WHERE Type = 'UNIT_LICORNE';
+UPDATE Units SET PrereqTech = 'TECH_EE_FORTIFICATION' WHERE Type = 'UNIT_LICORNE';
+UPDATE Units SET Combat = '15' WHERE Type = 'UNIT_LICORNE';
+UPDATE Units SET RangedCombat = '36' WHERE Type = 'UNIT_LICORNE';
+UPDATE Units SET Cost = '500' WHERE Type = 'UNIT_LICORNE';
+	
+-- goedendag obsolete, not sure why the trigger doesnt do it
+UPDATE Units SET ObsoleteTech = 'TECH_EE_FLINTLOCK' WHERE Type = 'UNIT_GOEDENDAG';
 
 -------------------------------------------------------
 -- Align flavors

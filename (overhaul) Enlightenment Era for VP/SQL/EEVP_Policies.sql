@@ -15,8 +15,14 @@ SET EraPrereq = 'ERA_ENLIGHTENMENT'
 WHERE Type IN ('POLICY_BRANCH_RATIONALISM', 'POLICY_BRANCH_EXPLORATION', 'POLICY_BRANCH_COMMERCE');
 
 --------------------------------------------------------------------------------------------------------------------------
--- Policies
+-- Buildings
 --------------------------------------------------------------------------------------------------------------------------
+
+-- Ceremony (Tradition)	
+INSERT INTO Policy_BuildingClassHappiness (PolicyType, BuildingClassType, Happiness)
+SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_SUMMER_PALACE', Happiness
+FROM Policy_BuildingClassHappiness WHERE PolicyType = 'POLICY_LEGALISM';
+
 -- Colonialism (Imperialism)
 INSERT INTO Policy_BuildingClassYieldChanges (PolicyType, BuildingClassType, YieldType, YieldChange)
 SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_GUNSMITH', YieldType, YieldChange
@@ -25,6 +31,11 @@ FROM Policy_BuildingClassYieldChanges WHERE PolicyType = 'POLICY_NAVAL_TRADITION
 INSERT INTO Policy_BuildingClassCultureChanges (PolicyType, BuildingClassType, CultureChange)
 SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_GUNSMITH', CultureChange
 FROM Policy_BuildingClassCultureChanges WHERE PolicyType = 'POLICY_NAVAL_TRADITION';
+
+-- Colonialism (Naval Tradition)
+UPDATE Language_en_US
+SET Text = REPLACE(Text, 'Barracks, Armories, Military Academies, ', 'Barracks, Armories, Gunsmiths, Military Academies, ')
+WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
 
 -- right now, 3% extra i think is too much for the tree (its too much already anyway)
 -- Mercantilism (Industry)
@@ -37,10 +48,15 @@ FROM Policy_BuildingClassCultureChanges WHERE PolicyType = 'POLICY_NAVAL_TRADITI
 --SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_CLOTH_MILL', YieldType, YieldMod
 --FROM Policy_BuildingClassYieldModifiers WHERE PolicyType = 'POLICY_TRADE_UNIONS';
 
--- Ceremony (Tradition)	
-INSERT INTO Policy_BuildingClassHappiness (PolicyType, BuildingClassType, Happiness)
-SELECT DISTINCT PolicyType, 'BUILDINGCLASS_EE_SUMMER_PALACE', Happiness
-FROM Policy_BuildingClassHappiness WHERE PolicyType = 'POLICY_LEGALISM';
+-- Division of Labor
+--UPDATE Language_en_US
+--SET Text = REPLACE(Text, 'Workshops, Factories,', 'Workshops, Cloth Mills, Factories,')
+--WHERE Tag = 'TXT_KEY_POLICY_TRADE_UNIONS_HELP';
+
+-- Mercantilism (Industry)
+--UPDATE Language_en_US
+--SET Text = REPLACE(Text, 'Banks, and Stock Exchanges', 'Banks, Weigh Houses, and Stock Exchanges')
+--WHERE Tag = 'TXT_KEY_POLICY_MERCANTILISM_HELP';
 
 -------------------------------------
 -- rename Humanism + text due to new tech

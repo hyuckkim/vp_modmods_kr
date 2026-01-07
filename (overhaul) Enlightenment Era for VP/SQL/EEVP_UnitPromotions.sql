@@ -35,13 +35,13 @@ INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) VA
 ('PROMOTION_2HANDER', 'UNITCLASS_PIKEMAN', 33),
 ('PROMOTION_2HANDER', 'UNITCLASS_SPEARMAN', 33),
 ('PROMOTION_2HANDER', 'UNITCLASS_TERCIO', 33),
-('PROMOTION_2HANDER', 'UNITCLASS_FCOMPANY', 33);
+('PROMOTION_2HANDER', 'UNITCLASS_FREE_COMPANY', 33);
 
 UPDATE UnitPromotions SET CombatPercent = 15 WHERE Type = 'PROMOTION_EE_DRYDOCK';
 UPDATE UnitPromotions SET ExtraNavalMovement = 2, EmbarkExtraVisibility = 2 WHERE Type = 'PROMOTION_EE_ADVENTURER';
 UPDATE UnitPromotions SET CombatPercent = 25 WHERE Type = 'PROMOTION_EE_FASIL_GHEBBI';
 
-UPDATE UnitPromotions SET IsNearbyPromotion = 1, NearbyRange = 1, GiveDomain = 'DOMAIN_SEA', GiveDefenseMod = 20 WHERE Type = 'PROMOTION_EE_FIRST_RATE'; -- note that the nearby promotion logic requires CORE_AREA_EFFECT_PROMOTIONS in CustomModOptions
+UPDATE UnitPromotions SET IsNearbyPromotion = 1, NearbyRange = 1, GiveDomain = 'DOMAIN_SEA', GiveDefenseMod = 20 WHERE Type = 'PROMOTION_EE_FIRST_RATE'; -- note that the nearby promotion logic requires API_AREA_EFFECT_PROMOTIONS in CustomModOptions
 
 ----------------------------------------------------
 -- Eligible combats

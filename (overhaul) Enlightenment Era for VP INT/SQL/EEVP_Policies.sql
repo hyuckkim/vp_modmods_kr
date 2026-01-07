@@ -1,3 +1,18 @@
+-- 식민주의 (해군 전통)
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '병영, 무기고, 사관 학교, ', '병영, 무기고, 화기제작소, 사관 학교, ')
+WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
+
+-- 노동 분업
+--UPDATE Language_ko_KR
+--SET Text = REPLACE(Text, '작업장, 공장,', '작업장, 방직소, 공장,')
+--WHERE Tag = 'TXT_KEY_POLICY_TRADE_UNIONS_HELP';
+
+-- 중상주의 (산업)
+--UPDATE Language_ko_KR
+--SET Text = REPLACE(Text, '은행, 증권 거래소', '은행, 화물 계량소, 증권 거래소')
+--WHERE Tag = 'TXT_KEY_POLICY_MERCANTILISM_HELP';
+
 -------------------------------------
 -- 새로운 기술로 인해 인본주의 + 텍스트 이름을 변경합니다.
 --------------------------------------
