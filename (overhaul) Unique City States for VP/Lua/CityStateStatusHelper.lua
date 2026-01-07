@@ -473,7 +473,7 @@ function GetCityStateStatusToolTip(majorPlayerID, minorPlayerID, isFullInfo)
 			local sUniqueUnitTech = unitSQL.PrereqTech
 			local sUniqueUnitTechName = L(GameInfo.Technologies{Type=sUniqueUnitTech}().Description)
 			
-			table_insert(tips, L("TXT_KEY_CS_UU_QUICK_INFO", sUniqueUnitName, sUniqueUnitTechName) .. newLine)
+			table_insert(tips, L("TXT_KEY_UCS_UU_QUICK_INFO", sUniqueUnitName, sUniqueUnitTechName) .. newLine)
 		end
 		
 		-- Possible actions:	
@@ -711,19 +711,15 @@ function GetContenderInfoTT(majorPlayerID, minorPlayerID)
 	
 	if not pMinor then return "error" end
 
-	local sAnchorInfluence = ""
-	local iHighestInfluence = 0
+	local pMajorPlayer = Players[majorPlayerID]
+	local sAnchorList = ""
 	local influencetips = {}
-
+	
 	for ePlayer = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
 		if Players[ePlayer]:IsEverAlive() then
-			local iInfluence = pMinor:GetMinorCivFriendshipAnchorWithMajor(ePlayer)
+			local iAnchor = pMinor:GetMinorCivFriendshipAnchorWithMajor(ePlayer)
 			
-			if iInfluence ~= 0 then
-				influencetips["PlayerID" .. ePlayer] = iInfluence
-			end
-		else
-			influencetips["PlayerID" .. ePlayer] = 0
+			influencetips["PlayerID" .. ePlayer] = iAnchor
 		end
 	end
 
@@ -732,18 +728,24 @@ function GetContenderInfoTT(majorPlayerID, minorPlayerID)
 	table.sort(sortedinfluencetips, function(a, b) return a[2] < b[2] end)
 
 	for _, v in ipairs(sortedinfluencetips) do
-		if Teams[Players[majorPlayerID]:GetTeam()]:IsHasMet(Players[tonumber(v[1].sub(v[1], 9))]:GetTeam()) then
-			if Players[tonumber(v[1].sub(v[1], 9))]:IsAlive() then
-				sAnchorInfluence = "[NEWLINE][ICON_BULLET]" .. Players[tonumber(v[1].sub(v[1], 9))]:GetCivilizationShortDescription() .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE") .. sAnchorInfluence
+		local pOtherMajorPlayer = Players[tonumber(string.sub(v[1], 9))]
+		local sOtherMajorPlayerCivDesc = pOtherMajorPlayer:GetCivilizationShortDescription()
+		local sCurrentRow = sOtherMajorPlayerCivDesc .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE")
+		
+		if Teams[pMajorPlayer:GetTeam()]:IsHasMet(pOtherMajorPlayer:GetTeam()) then
+			if pOtherMajorPlayer:IsAlive() then
+				if pMajorPlayer == pOtherMajorPlayer then
+					sAnchorList = "[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]" .. sCurrentRow .. "[ENDCOLOR]" .. sAnchorList
+				else
+					sAnchorList = "[NEWLINE][ICON_BULLET]" .. sCurrentRow .. sAnchorList
+				end
 			else
-				sAnchorInfluence = "[NEWLINE][ICON_BULLET][COLOR_GREY]" .. Players[tonumber(v[1].sub(v[1], 9))]:GetCivilizationShortDescription() .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE") .. sAnchorInfluence
+				sAnchorList =  sAnchorList .. "[NEWLINE][ICON_BULLET][COLOR_GREY]" .. sCurrentRow .. "[ENDCOLOR]"
 			end
 		end
 	end
 
-	if sAnchorInfluence == "" then return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER2", pMinor:GetName()) end
-
-	return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER", pMinor:GetName()) .. sAnchorInfluence
+	return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER", pMinor:GetName()) .. sAnchorList
 end
 
 local isMinorCivQuestForPlayer

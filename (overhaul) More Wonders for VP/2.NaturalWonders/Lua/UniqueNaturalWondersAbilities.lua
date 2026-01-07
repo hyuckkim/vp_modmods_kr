@@ -73,9 +73,9 @@ local g_tNaturalWonderDummy = {
 	GameInfoTypes["BUILDING_DUMMY_RETBA"],				-- 20
 	GameInfoTypes["BUILDING_DUMMY_LUMI_BAY"],
 	GameInfoTypes["BUILDING_DUMMY_DALLOL"],
-	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_A"],
-	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_B"],
-	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_C"],	-- 25
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_A_1"],
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_B_1"],
+	GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_C_1"],	-- 25
 	GameInfoTypes["BUILDING_MT_PAEKTU"],						-- regular building not dummy, placed in wonder spot
 	GameInfoTypes["BUILDING_DUMMY_MT_KAILASH"],
 	GameInfoTypes["BUILDING_DUMMY_KILIMANJARO"],
@@ -136,12 +136,18 @@ local g_tNaturalWonderDummy2 = {}
 		g_tNaturalWonderDummy2[i] = false
 	end
 	g_tNaturalWonderDummy2[9] = GameInfoTypes["BUILDING_DUMMY_FUJI_2"]
+	g_tNaturalWonderDummy2[23] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_A_2"]
+	g_tNaturalWonderDummy2[24] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_B_2"]
+	g_tNaturalWonderDummy2[25] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_C_2"]
 
 local g_tNaturalWonderDummy3 = {}
 	for i = 1, g_iWonderWithDummies do
 		g_tNaturalWonderDummy3[i] = false
 	end
 	g_tNaturalWonderDummy3[9] = GameInfoTypes["BUILDING_DUMMY_FUJI_3"]
+	g_tNaturalWonderDummy2[23] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_A_3"]
+	g_tNaturalWonderDummy2[24] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_B_3"]
+	g_tNaturalWonderDummy2[25] = GameInfoTypes["BUILDING_DUMMY_EYE_OF_SAHARA_C_3"]
 
 
 -- table for adding policies

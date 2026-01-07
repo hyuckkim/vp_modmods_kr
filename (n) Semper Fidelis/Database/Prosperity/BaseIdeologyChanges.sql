@@ -45,7 +45,7 @@ WHERE Tag = 'TXT_KEY_POLICY_SPACE_PROCUREMENTS_HELP';
 
 UPDATE Language_en_US
 SET Text = 'Monetary Fund'
-WHERE Tag = 'TXT_KEY_BUILDING_FINANCE_CENTER';
+WHERE Tag = 'TXT_KEY_BUILDING_INTERNATIONAL_FINANCE_CENTER';
 
 UPDATE Language_en_US
 SET Text = 'The International Monetary Fund (IMF) is a major financial agency of the United Nations, and an international financial institution funded by 190 member countries, with headquarters in Washington, D.C. It is regarded as the global lender of last resort to national governments, and a leading supporter of exchange-rate stability. Closely related is the concept of a multilateral development bank, which often have a geographic concentration area for their development objectives. With this geographic and thematic focus, funding for a variety of ventures – often resource-intense infrastructure projects – is provided. Since MDBs have a shareholding structure and are backed by member countries, they tend to profit from favorable loan conditions compared to other banks and can therefore take more risks in their investment strategy.'

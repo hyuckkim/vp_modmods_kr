@@ -45,7 +45,7 @@
 			<Text>Industrial Espionage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CORPORATE_ESPIONAGE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Industrial Espionage[ENDCOLOR]: Receive 200 [ICON_VP_SPY_POINTS] Spy Points. The [ICON_CAPITAL] Capital gains +3% [ICON_RESEARCH] Science for every 100 [ICON_VP_SPY_POINTS] Spy Points ever accumulated (up to 30%).</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Industrial Espionage[ENDCOLOR]: Receive 200 [ICON_SPY_POINT] Spy Points. The [ICON_CAPITAL] Capital gains +3% [ICON_RESEARCH] Science for every 100 [ICON_SPY_POINT] Spy Points ever accumulated (up to 30%).</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CORPORATE_ESPIONAGE_TEXT">
 			<Text>Father Francois Xavier d'Entrecolles, who visited Jingdezhen, China in 1712 and later used this visit to reveal the manufacturing methods of Chinese porcelain to Europe, is sometimes considered to have conducted an early case of industrial espionage. Generally, it is any case where methods like theft or bribery are used to aquire intellectual property, such as information on industrial manufacture, or operational information, such sales data, prospective bids, or marketing strategies. As well as orchestrating espionage on commercial organizations, governments can also be targets – for example, to determine the terms of a tender for a government contract. Former CIA Director James Woolsey acknowledged in 2000 that the United States steals economic secrets from foreign firms and their governments "with espionage, with communications, with reconnaissance satellites".</Text>
@@ -75,7 +75,7 @@
 			<Text>Company Towns</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_COMPANY_TOWNS_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Company Towns[ENDCOLOR]: Villages, Towns, Manufactories, Unique Improvements, and City Tiles generate +4 [ICON_GOLD] Gold. +2 [ICON_PRODUCTION] Production and [ICON_PEACE] Faith from [ICON_VP_MERCHANT] Merchants. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Customs House in all Cities.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Company Towns[ENDCOLOR]: Villages, Towns, Manufactories, Unique Improvements, and City Tiles generate +4 [ICON_GOLD] Gold. +2 [ICON_PRODUCTION] Production and [ICON_PEACE] Faith from [ICON_MERCHANT] Merchants. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Customs House in all Cities.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_COMPANY_TOWNS_TEXT">
 			<Text>A company town is a place where all or most of the stores and housing in the town are owned by the same company that is also the main employer. Traditional settings for company towns were where extractive industries – coal, metal mines, lumber – had established a monopoly franchise. Dam sites and war-industry camps founded other company towns. One of the most significant and most substantial early company towns in the United States was Pullman, developed in the 1880s just outside the Chicago city limits. The entirely company-owned town provided housing, markets, a library, churches, and entertainment for the 6,000 company employees and an equal number of dependents.[NEWLINE][NEWLINE]The extreme control over both the economic and political landscape presented to workers appealed to powerful conservatives who desired - either for religious or political reasons - the gentrification of the working class. However workers were not so keen, and by the 1920s widespread ownership of automobiles meant workers no longer needed to live near their workplaces and now had access to more employment opportunities. The Roosevelt administration dealt the final blow to end American company towns by raising minimum wages, encouraging industrial self-governance, and pushing for the owners of company towns to "consider the question of plans for eventual employee ownership of homes".</Text>
@@ -96,7 +96,7 @@
 			<Text>Venture Capital</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_VENTURE_CAPITAL_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Venture Capital[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Bank in every City, and increase the [ICON_RESEARCH] Science received from [ICON_INVEST] Investments and Purchases by +15%. +4 [ICON_GOLD] Gold from [ICON_VP_ENGINEER] Engineers.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Venture Capital[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Bank in every City, and increase the [ICON_RESEARCH] Science received from [ICON_INVEST] Investments and Purchases by +15%. +4 [ICON_GOLD] Gold from [ICON_ENGINEER] Engineers.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_VENTURE_CAPITAL_TEXT">
 			<Text>Venture capital is a form of private equity financing provided to startup, early-stage, and emerging companies, that have been deemed to have high growth potential. Start-ups are usually based on an innovative technology or business model and often come from high technology industries such as information technology or biotechnology. Venture capitalists take on the risk of financing start-ups in the hopes that some of the companies they support will become successful. In return they may ask for as much as an 80% stake, and often a controlling stake.  Because startups face high uncertainty, investments have high rates of failure. In the United States, venture capital investing reached $209.4 billion in 2022, the second-highest investment year in history.</Text>
@@ -106,7 +106,7 @@
 			<Text>Pharmaceutical Marketing</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PHARMA_MARKETING_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Pharmaceutical Marketing[ENDCOLOR]: Gain 25 [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born, scaling with Era. +4 [ICON_FOOD] Food from [ICON_VP_SCIENTIST] Scientists. +5% [ICON_GOLD] Gold and [ICON_RESEARCH] Science from Hospitals, Research Labs, and Medical Labs.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Pharmaceutical Marketing[ENDCOLOR]: Gain 25 [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born, scaling with Era. +4 [ICON_FOOD] Food from [ICON_SCIENTIST] Scientists. +5% [ICON_GOLD] Gold and [ICON_RESEARCH] Science from Hospitals, Research Labs, and Medical Labs.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PHARMA_MARKETING_TEXT">
 			<Text>Only two countries as of 2008 allow direct to consumer advertising of medicine: the United States and New Zealand. In these cases, copywriters either create a disease out of a non-pathologic physical condition or promote a particular medication. As a result patients will inquire about, or even demand a medication they have seen advertised on television. At the same time, pharmaceutical drugs are the only major health care service in which the producer is able to set prices with little constraint. Between 2000 and 2018, 35 of the largest drug companies in the United States received a combined revenue of $11.5 trillion with a gross profit of $8.6 trillion.</Text>
@@ -116,7 +116,7 @@
 			<Text>Foreign Direct Investment</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FOREIGN_INVESTMENT_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Foreign Direct Investment[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] copy of every [ICON_VP_FRANCHISE] Corporate Franchise in all Cities, and in all [COLOR_POSITIVE_TEXT]Liberated[ENDCOLOR] Cities. +1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE_LOCAL] Border Growth Point from all [ICON_VP_FRANCHISE] Corporate Franchises. +8 [ICON_GOLD] Gold from all [ICON_VP_OFFICE] Corporate Offices.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Foreign Direct Investment[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] copy of every [ICON_FRANCHISE] Corporate Franchise in all Cities, and in all [COLOR_POSITIVE_TEXT]Liberated[ENDCOLOR] Cities. +1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE_LOCAL] Border Growth Point from all [ICON_FRANCHISE] Corporate Franchises. +8 [ICON_GOLD] Gold from all [ICON_OFFICE] Corporate Offices.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FOREIGN_INVESTMENT_TEXT">
 			<Text>A foreign direct investment (FDI) refers to purchase of an asset in another country, such that it gives direct control to the purchaser over the asset (e.g. purchase of land and building). It includes mergers and acquisitions, building new facilities, reinvesting profits earned from overseas operations, and intra company loans. Many countries prohibit foreign entities from obtaining direct control (a controlling stake) in national assets. From 1992 until at least 2023, the United States and China have been the top two destinations for FDI.</Text>
@@ -156,7 +156,7 @@
 			<Text>Military Contractors</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_MILITARY_CONTRACTORS_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Military Contractors[ENDCOLOR]: Military Units purchased with [ICON_GOLD] Gold receive [COLOR_POSITIVE_TEXT]full XP[ENDCOLOR]. +1 [ICON_GREAT_GENERAL] Great General Point from [ICON_VP_ENGINEER] Engineers and [ICON_VP_SCIENTIST] Scientists. Can build [COLOR_YELLOW]M22 Locusts[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Military Contractors[ENDCOLOR]: Military Units purchased with [ICON_GOLD] Gold receive [COLOR_POSITIVE_TEXT]full XP[ENDCOLOR]. +1 [ICON_GREAT_GENERAL] Great General Point from [ICON_ENGINEER] Engineers and [ICON_SCIENTIST] Scientists. Can build [COLOR_YELLOW]M22 Locusts[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_MILITARY_CONTRACTORS_TEXT">
 			<Text>Referring to both munitions manufacturing as well as actual private security companies, governments have often purchased additional firepower in exchange for currency. However today contractors that use armed force in a war zone may be considered unlawful combatants in reference to a concept that is outlined in the Geneva Conventions and explicitly stated by the 2006 American Military Commissions Act. Still, according to a 2008 study by the Office of the Director of National Intelligence, private contractors make up 29% of the workforce in the United States Intelligence Community and cost the equivalent of 49% of their personnel budgets.[NEWLINE][NEWLINE]Modern PMCs trace their origins back to a group of ex-SAS veterans in 1965 who, under the leadership of the founder of the SAS, David Stirling and John Woodhouse, founded WatchGuard International (formerly with offices in Sloane Street before moving to South Audley Street in Mayfair) as a private company that could be contracted out for security and military purposes. Dramatic growth in the number and size of such companies occurred at the end of the Cold War. The exodus of over 6 million military personnel from Western militaries in the 1990s expanded the recruiting pool. Since then private military has been deployed on everything from the response to Hurricane Katrina to anti-piracy measures in Somalia.</Text>

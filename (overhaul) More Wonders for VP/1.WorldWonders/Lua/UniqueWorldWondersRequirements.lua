@@ -107,8 +107,8 @@ if bIsRestrictionEra then
 							local iCultureReturn = math.ceil(0.33 * iReturnProduction)
 
 							pPlayer:AddNotification(NotificationTypes.NOTIFICATION_WONDER_BEATEN, 
-								'It is too late for building [COLOR_CYAN]' .. sWonderName .. '[ENDCOLOR] Wonder in [COLOR_CYAN]' .. sCityName .. '[ENDCOLOR], because Player has just entered [COLOR_CYAN]' .. sEraName .. '[ENDCOLOR]. Player will receive ' .. iCultureReturn .. '[ICON_CULTURE] Culture in return.', -- use TXT_KEY_ here
-								'[COLOR_CYAN]' .. sWonderName .. '[ENDCOLOR] cannot be built anymore',
+								Locale.ConvertTextKey('TXT_KEY_NOTIFICATION_CULTURE_RETURN_MAX_ERA', sWonderName, sCityName, sEraName, iCultureReturn),
+								Locale.ConvertTextKey('TXT_KEY_NOTIFICATION_CULTURE_RETURN_MAX_ERA_TITLE', sWonderName),
 								pCity:GetX(), pCity:GetY(), building.ID)
 						
 							pPlayer:ChangeJONSCulture(iCultureReturn)
@@ -341,17 +341,17 @@ function IsHasBuildingsOrs(ePlayer, eCity, eBuilding)
 	local iCityX = pCity:GetX()
 	local iCityY = pCity:GetY()
 	
-	for id, building in pairs(tValidIsHasImprovementsOrs) do
+	for id, building in pairs(tValidIsHasBuildingsOrs) do
 		if id == eBuilding then
 			local eRequiredBuildingClass1 = building.eRequiredBuildingClass1
 			local eRequiredBuildingClass2 = building.eRequiredBuildingClass2
 			local eRequiredBuildingClass3 = building.eRequiredBuildingClass3
-
-			for building in GameInfo.Buildings() do	
-				if building.BuildingClass == eRequiredBuildingClass1 
-				or building.BuildingClass == eRequiredBuildingClass2 
-				or building.BuildingClass == eRequiredBuildingClass3 then
-					if pCity:IsHasBuilding(building.ID) then
+			
+			for buildingforclass in GameInfo.Buildings() do	
+				if buildingforclass.BuildingClass == eRequiredBuildingClass1 
+				or buildingforclass.BuildingClass == eRequiredBuildingClass2 
+				or buildingforclass.BuildingClass == eRequiredBuildingClass3 then
+					if pCity:IsHasBuilding(buildingforclass.ID) then
 						return true
 					end
 				end
@@ -866,9 +866,9 @@ function Initialize()
 
 		-- IsHasBuildingsOrs
 			tValidIsHasBuildingsOrs[GameInfo.Buildings.BUILDING_GLOBE_THEATER.ID] = {
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_ARTISTS_GUILD,
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_WRITERS_GUILD,
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_MUSICIANS_GUILD
+				eRequiredBuildingClass1 = 'BUILDINGCLASS_ARTISTS_GUILD',
+				eRequiredBuildingClass2 = 'BUILDINGCLASS_WRITERS_GUILD',
+				eRequiredBuildingClass3 = 'BUILDINGCLASS_MUSICIANS_GUILD'
 			}
 	end
 	---------------------------------------------------------
@@ -1063,9 +1063,9 @@ function Initialize()
 
 		-- IsHasBuildingsOrs
 			tValidIsHasBuildingsOrs[GameInfo.Buildings.BUILDING_GLOBE_THEATER.ID] = {
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_ARTISTS_GUILD,
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_WRITERS_GUILD,
-				eRequiredBuildingClass1 = GameInfoTypes.BUILDINGCLASS_MUSICIANS_GUILD
+				eRequiredBuildingClass1 = 'BUILDINGCLASS_ARTISTS_GUILD',
+				eRequiredBuildingClass2 = 'BUILDINGCLASS_WRITERS_GUILD',
+				eRequiredBuildingClass3 = 'BUILDINGCLASS_MUSICIANS_GUILD'
 			}
 	
 		-- IsMajorApproach

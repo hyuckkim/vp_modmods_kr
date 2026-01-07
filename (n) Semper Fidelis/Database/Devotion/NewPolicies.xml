@@ -440,7 +440,7 @@
 			<PediaType>PEDIA_CIVILIAN</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_RELIGIOUS_POLICE</PediaEntry>
 			<PortraitIndex>35</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
 		<Row>
@@ -450,7 +450,7 @@
 			<PediaType>PEDIA_DIPLO</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_MERCHANT</PediaEntry>
 			<PortraitIndex>7</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<DiploMissionInfluence>500</DiploMissionInfluence>
 		</Row>
@@ -464,7 +464,7 @@
 			<PortraitIndex>28</PortraitIndex>
 			<IconAtlas>promoVP_atlas_00</IconAtlas> -->
 			<PortraitIndex>55</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<ChangeDamageValue>3</ChangeDamageValue>
 			<FightWellDamaged>1</FightWellDamaged>
 			<NearbyEnemyDamage>5</NearbyEnemyDamage>
@@ -477,7 +477,7 @@
 			<PediaType>PEDIA_SHARED</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_JUST</PediaEntry>
 			<PortraitIndex>39</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<AttackFullyHealedMod>33</AttackFullyHealedMod>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
@@ -488,12 +488,12 @@
 			<PediaType>PEDIA_AIR</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_CHEMICAL</PediaEntry>
 			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>promoVP_atlas_02</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_02</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<AttackFortifiedMod>33</AttackFortifiedMod>
 			<CityAttack>33</CityAttack>
 		</Row>
-		<!-- cant actually do this sadly
+	<!-- cant actually do this sadly
 			<PlagueChance>100</PlagueChance>
 			<PlaguePromotion>PROMOTION_DEVOTION_CHEMICAL_PLAGUE</PlaguePromotion>
 		<Row>
@@ -511,7 +511,7 @@
 			<PlaguePriority>2</PlaguePriority>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
-		-->
+	-->
 		<Row>
 			<Type>PROMOTION_DEVOTION_MISSIONARY</Type>
 			<Description>TXT_KEY_PROMOTION_DEVOTION_MISSIONARY</Description>
@@ -519,7 +519,7 @@
 			<PediaType>PEDIA_CIVILIAN</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_MISSIONARY</PediaEntry>
 			<PortraitIndex>37</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<RivalTerritory>1</RivalTerritory>
 			<ReligiousStrengthLossRivalTerritory>-25</ReligiousStrengthLossRivalTerritory>
@@ -531,7 +531,7 @@
 			<PediaType>PEDIA_CIVILIAN</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_DEVOTION_INQUISITOR</PediaEntry>
 			<PortraitIndex>37</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<MilitaryProductionModifier>15</MilitaryProductionModifier>
 			<MovesChange>2</MovesChange>
@@ -672,7 +672,7 @@
 			<Type>BUILDING_D_FOR_BAILOUTS</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_BAILOUTS</BuildingClass>
 			<Description>TXT_KEY_POLICY_BAILOUTS_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -703,7 +703,7 @@
 			<Type>BUILDING_D_FOR_WAR</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_WAR</BuildingClass>
 			<Description>TXT_KEY_POLICY_HOLY_WAR_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -718,7 +718,7 @@
 			<Type>BUILDING_D_FOR_TERRORISM</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_TERRORISM</BuildingClass>
 			<Description>TXT_KEY_POLICY_TERRORISM_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -807,8 +807,8 @@
 			<Help>TXT_KEY_PROCESS_FAITH_HELP</Help>
 			<Strategy>TXT_KEY_PROCESS_FAITH_STRATEGY</Strategy>
 			<RequiredPolicy>POLICY_FUNDAMENTALISM</RequiredPolicy>
-			<IconAtlas>VP_PROCESS_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PROCESS_PROJECT_ATLAS_VP</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
 		</Row>
 	</Processes>
 	<Process_Flavors>

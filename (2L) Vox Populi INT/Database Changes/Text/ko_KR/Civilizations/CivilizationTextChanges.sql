@@ -40,6 +40,11 @@ SET Text = '{TXT_KEY_BUILDING_NATIONAL_COLLEGE}을 대체하는 아라비아의 
 WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_STRATEGY';
 
 UPDATE Language_ko_KR
+SET Text = '가능한 테마 보너스:
+  [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]외국[ENDCOLOR] [ICON_GW_WRITING] 걸작 문학 3개에서 [ICON_CULTURE] 문화 +6, [ICON_TOURISM] 관광 +6을 얻습니다.'
+WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_HELP';
+
+UPDATE Language_ko_KR
 SET Text = '{TXT_KEY_UNIT_ASSYRIAN_SIEGE_TOWER}의 고유 지원 유닛입니다. [NEWLINE][NEWLINE]{TXT_KEY_UNIT_ASSYRIAN_SIEGE_TOWER}이 도시에 인접한다면, 모든 유닛이 도시를 공격할 때 강력한 전투력 보너스를 얻습니다. 도시에서 두 타일 떨어져 있다면 이 효과는 절반이 됩니다. 또한 이 유닛은 더욱 멀리 볼 수 있고, 주변 유닛의 회복을 빠르게 합니다. [COLOR_NEGATIVE_TEXT]하지만 스스로를 보호할 수 없습니다.[ENDCOLOR] 온 힘을 다해 공성탑을 보호하십시오! {TXT_KEY_UNIT_ASSYRIAN_SIEGE_TOWER}을 근거리 또는 원거리 유닛으로 보호하며 목표물에 도달하십시오. 도시가 더욱 빨리 함락될 것입니다.[NEWLINE][NEWLINE]이 유닛은 퇴보되지 않습니다. 한 번에 둘을 넘는 공성탑을 가질 수 없습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_ASSYRIAN_SIEGE_TOWER_STRATEGY';
 
@@ -51,7 +56,7 @@ SET Text = '합스부르크 외교술'
 WHERE Tag = 'TXT_KEY_TRAIT_ANNEX_CITY_STATE_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '[ICON_CITY_STATE] 도시 국가 퀘스트 보상이 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 증가합니다. 5턴 동안 동맹을 맺은 후 [ICON_GOLD] 골드로 [ICON_CITY_STATE] 도시 국가와의 [ICON_RES_MARRIAGE] 결혼을 주선할 수 있습니다. 평화 상태일 때 [ICON_RES_MARRIAGE] 결혼한 도시 국가로부터 200의 휴식 [ICON_INFLUENCE] 영향력을 얻습니다.'
+SET Text = '[ICON_CITY_STATE] 도시 국가 퀘스트 보상이 [COLOR_POSITIVE_TEXT]50%[ENDCOLOR] 증가합니다. 10턴 동안 동맹을 맺은 후 [ICON_GOLD] 골드로 [ICON_CITY_STATE] 도시 국가와의 [ICON_RES_MARRIAGE] 결혼을 주선할 수 있습니다. 평화 상태일 때 [ICON_RES_MARRIAGE] 결혼한 도시 국가로부터 200의 휴식 [ICON_INFLUENCE] 영향력을 얻습니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_ANNEX_CITY_STATE';
 
 UPDATE Language_ko_KR
@@ -115,7 +120,7 @@ SET Text = '무조건 [ICON_RELIGION] 종교를 창시할 수 있습니다. 종�
 WHERE Tag = 'TXT_KEY_TRAIT_EXTRA_BELIEF';
 
 UPDATE Language_ko_KR
-SET Text = '카타프락토이는 이미 매우 강력한 기사보다 훨씬 강력하게 향상되었습니다. 공격과 방어 모두 매우 강력합니다. 창기병이 전장에 등장하기 전까지는 1대1 전투에서 대부분 승리할 것이므로, 공격을 계획하든 저지와 방어만 하든 관계없이 가능한 한 많은 말 자원을 소유하고 가능한 한 많은 카타프락토이를 생산해야 합니다. 규모가 작고 유지비가 저렴한 카타프락토이 군대도 근접 및 원거리 유닛으로 구성된 대규모 군대만큼 강력할 수 있습니다. 개방된 지형에서의 전투력 +30% 보너스는 카타프락토이만이 얻을 수 있는 험난한 지형에서의 방어 보너스보다 강력하므로, 특히 공격 후 기동성이 좋아지므로 개방된 지형에서 이 보너스를 더 많이 활용하세요. High Combat Strength는 가능한 한 많은 전투력 % 보너스를 추가하는 것을 장려하므로, 이미 강력한 충격 승급 트리가 장려됩니다. 적군 유닛을 공격하기 전에 측면 공격을 하여 측면 전투력 보너스를 최대한 활용하세요. 기사보다 카타프락토이의 기본 이동력이 낮기 때문에 다른 기동성 승급을 선택하는 것이 좋습니다. 방어 측면에서, 강화 능력은 애플렉톤 고유 시설과 잘 조화를 이루어, 카타프락토이가 뒤에 있는 원거리 유닛을 보호하는 데 매우 효과적입니다.'
+SET Text = '카타프락토이는 이미 매우 강력한 기사보다 훨씬 강력하게 향상되었습니다. 공격과 방어 모두 매우 강력합니다. 창기병이 전장에 등장하기 전까지는 1대1 전투에서 대부분 승리할 것이므로, 공격을 계획하든 저지와 방어만 하든 관계없이 가능한 한 많은 말 자원을 소유하고 가능한 한 많은 카타프락토이를 생산해야 합니다. 규모가 작고 유지비가 저렴한 카타프락토이 군대도 근접 및 원거리 유닛으로 구성된 대규모 군대만큼 강력할 수 있습니다. 개방된 지형에서의 전투력 +30% 보너스는 카타프락토이만이 얻을 수 있는 험난한 지형에서의 방어 보너스보다 강력하므로, 특히 공격 후 기동성이 좋아지므로 개방된 지형에서 이 보너스를 더 많이 활용하세요. 높은 전투력은 가능한 한 많은 전투력 % 보너스를 추가하는 것을 장려하므로, 이미 강력한 충격 승급 트리가 장려됩니다. 적군 유닛을 공격하기 전에 측면 공격을 하여 측면 전투력 보너스를 최대한 활용하세요. 기사보다 카타프락토이의 기본 이동력이 낮기 때문에 다른 기동성 승급을 선택하는 것이 좋습니다. 방어 측면에서, 강화 능력은 애플렉톤 고유 시설과 잘 조화를 이루어, 카타프락토이가 뒤에 있는 원거리 유닛을 보호하는 데 매우 효과적입니다.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTINE_CATAPHRACT_STRATEGY';
 
 UPDATE Language_ko_KR
@@ -130,7 +135,7 @@ SET Text = '당신이 국제 무역망에 연결한 사치 자원의 수가 증�
 WHERE Tag = 'TXT_KEY_TRAIT_PHOENICIAN_HERITAGE';
 
 UPDATE Language_ko_KR
-SET Text = '오단노선은 고전 또는 중세 시대의 함선이 얻을 수 있는 가장 강력한 승급을 가지고 있다고 할 수 있는데, 바로 펜치입니다. 강화된 측면 공격 보너스를 활용하려면 적 함선을 최대한 포위하세요. 통제구역(ZOC)을 무시하면 쉬울 겁니다. 더 높은 전투력과 공격 시 전투력 +25% 보너스를 합치면 적 함선의 도전은 성립되지 않을 것입니다. 마찬가지로, 특히 성을 짓기 전에 도시를 공격하는 경우 공격 시 전투력 +50% 보너스 덕분에 동기 부여가 됩니다. 전격전 승급을 달성하려면 선박 침투조 승급 트리를 목표로 하는 것이 좋습니다. 공격 후 이동할 수 있고, 따라서 한 턴에 많은 함선으로 도시를 공격할 수 있습니다. 혹은 선봉 승급으로 이어지는 Hull 승급을 선택하는 것도 좋은 선택입니다.'
+SET Text = '오단노선은 고전 또는 중세 시대의 함선이 얻을 수 있는 가장 강력한 승급을 가지고 있다고 할 수 있는데, 바로 펜치입니다. 강화된 측면 공격 보너스를 활용하려면 적 함선을 최대한 포위하세요. 통제구역(ZOC)을 무시하면 쉬울 겁니다. 더 높은 전투력과 공격 시 전투력 +25% 보너스를 합치면 적 함선의 도전은 성립되지 않을 것입니다. 마찬가지로, 특히 성을 짓기 전에 도시를 공격하는 경우 공격 시 전투력 +50% 보너스 덕분에 동기 부여가 됩니다. 전격전 승급을 달성하려면 선박 침투조 승급 트리를 목표로 하는 것이 좋습니다. 공격 후 이동할 수 있고, 따라서 한 턴에 많은 함선으로 도시를 공격할 수 있습니다. 혹은 선봉 승급으로 이어지는 선체 승급을 선택하는 것도 좋은 선택입니다.'
 WHERE Tag = 'TXT_KEY_UNIT_CARTHAGINIAN_QUINQUEREME_STRATEGY';
 
 UPDATE Language_ko_KR
@@ -168,7 +173,7 @@ SET Text = '천명'
 WHERE Tag = 'TXT_KEY_TRAIT_ART_OF_WAR_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '[ICON_GREAT_WORK]걸작을 제작하거나 도시를 획득하면 5턴의 [COLOR_POSITIVE_TEXT]황후 경축일[ENDCOLOR]을 맞이하고 모든 도시의 [ICON_FOOD]식량이 영구히 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 해당 보너스는 시대가 바뀔 때마다 [COLOR_NEGATIVE_TEXT]50%[ENDCOLOR]씩 감소합니다. "황후 경축일"이 열리는 동안 도시의 [ICON_FOOD]식량이 [COLOR_POSITIVE_TEXT]10%[ENDCOLOR] 증가합니다.'
+SET Text = '[ICON_GREAT_WORK]걸작을 제작하거나 도시를 획득하면 5턴의 [COLOR_POSITIVE_TEXT]황후 경축일[ENDCOLOR]을 맞이하고 모든 도시의 [ICON_FOOD]식량이 영구히 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다. 해당 보너스는 시대가 바뀔 때마다 [COLOR_NEGATIVE_TEXT]50%[ENDCOLOR]씩 감소합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_ART_OF_WAR';
 
 UPDATE Language_ko_KR
@@ -198,7 +203,7 @@ SET Text = '위대한 조상'
 WHERE Tag = 'TXT_KEY_TRAIT_WONDER_BUILDER_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '[ICON_WONDER] 불가사의 [ICON_PRODUCTION] 생산력이 +20%, ICON_GOLDEN_AGE] 황금기에는 2배 증가 합니다. 도시를 건설하거나 (누구든지 [COLOR_CYAN]고고학[ENDCOLOR]을 연구하기 전에) [ICON_WONDER] 세계 불가사의를 완성할 때 근처의 [ICON_RES_ARTIFACTS] 고대 유적지를 드러내세요. [ICON_RES_ARTIFACTS] 고대 유적지는 [ICON_GOLDEN_AGE] 황금기가 시작될 때마다 [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙이 +1 증가합니다. (최대 +5)'
+SET Text = '[ICON_WONDER] 불가사의 [ICON_PRODUCTION] 생산력이 +20%, [ICON_GOLDEN_AGE] 황금기에는 2배 증가 합니다. 도시를 건설하거나 (누구든지 [COLOR_CYAN]고고학[ENDCOLOR]에 도달하기 전에) [ICON_WONDER] 세계 불가사의를 완성할 때 근처의 [ICON_RES_ARTIFACTS] 고대 유적지를 드러내세요. [ICON_RES_ARTIFACTS] 고대 유적지는 [ICON_GOLDEN_AGE] 황금기가 시작될 때마다 [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙이 +1 증가합니다. (최대 +5)'
 WHERE Tag = 'TXT_KEY_TRAIT_WONDER_BUILDER';
 
 UPDATE Language_ko_KR
@@ -243,7 +248,7 @@ SET Text = '단결심'
 WHERE Tag = 'TXT_KEY_TRAIT_ENHANCED_CULTURE_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '근접 및 화약 유닛에 패배한 적 유닛이 아군에 [COLOR_POSITIVE_TEXT]합류[ENDCOLOR]할 수 있고, 합류한 유닛은 보급을 필요로 하지 않습니다. 군사 유닛 10명마다 [ICON_CULTURE] 문화 및 [ICON_TOURISM]관광 +1을 얻습니다. [ICON_CITIZEN] 시민에 의한 [ICON_SILVER_FIST] 군사 유닛 보급 한도가 25% 증가합니다.'
+SET Text = '근접 및 화약 유닛에 패배한 적 유닛이 아군에 [COLOR_POSITIVE_TEXT]합류[ENDCOLOR]할 수 있고, 합류한 유닛은 군사 보급을 필요로 하지 않습니다. 군사 유닛 10개마다 [ICON_CULTURE] 문화 및 [ICON_TOURISM] 관광 +1을 얻습니다. [ICON_CITIZEN] 시민에 의한 [ICON_SILVER_FIST] 군사 유닛 보급 한도가 +15% 증가합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_ENHANCED_CULTURE';
 
 UPDATE Language_ko_KR
@@ -379,7 +384,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 -- Inca
 --------------------
 UPDATE Language_ko_KR
-SET Text = '언덕이 포함된 모든 지형의 유닛 이동 페널티를 무시하고 산 타일로 이동할 수 있습니다. 산 타일에 도시/도로/철도를 건설할 수 있고 산 타일의 [ICON_PRODUCTION] 생산력, [ICON_GOLD]골드, [ICON_RESEARCH]과학이 증가합니다. [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]'
+SET Text = '언덕이 포함된 모든 지형의 유닛 이동 페널티를 무시하고 산 타일로 이동할 수 있습니다. 산 타일에 도시/도로/철도를 건설할 수 있고 산 타일의 [ICON_PRODUCTION] 생산력, [ICON_GOLD] 골드, [ICON_RESEARCH] 과학이 증가합니다. [COLOR:105:105:105:255](시대별 보정)[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD';
 
 UPDATE Language_ko_KR
@@ -387,7 +392,7 @@ SET Text = '파타파타'
 WHERE Tag = 'TXT_KEY_IMPROVEMENT_TERRACE_FARM';
 
 UPDATE Language_ko_KR
-SET Text = '언덕 위에만 건설할 수 있으며 인접한 산 또는 {TXT_KEY_IMPROVEMENT_TERRACE_FARM}마다 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 인접한 모든 농장의 [ICON_FOOD] 식량이 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다.'
+SET Text = '언덕 위에만 건설할 수 있습니다. 산, 농장, 파타파타 또는 제조소가 있는 인접한 두 타일마다 [ICON_FOOD] 식량 +1이 추가됩니다. 농장은 인접한 농장 2개 또는 파타파타 1개당 [ICON_FOOD] 식량 +1을 추가로 얻습니다.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP';
 
 UPDATE Language_ko_KR
@@ -406,7 +411,7 @@ SET Text = '마하트마'
 WHERE Tag = 'TXT_KEY_TRAIT_POPULATION_GROWTH_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT][ICON_RELIGION_PANTHEON] 종교관[ENDCOLOR]을 보유하고 시작합니다. 위대한 선지자의 첫 번째 종교 전파 행동을 사용해 [ICON_RELIGION] 종교를 창시하거나 강화하거나, 성지를 건설할 수 있으며 이 경우 선지자가 소모되지 않습니다. [COLOR_NEGATIVE_TEXT]선교사를 생산할 수 없습니다.[ENDCOLOR]'
+SET Text = '[COLOR_POSITIVE_TEXT][ICON_RELIGION_PANTHEON] 종교관[ENDCOLOR]을 보유하고 시작합니다. [ICON_PROPHET] 위대한 선지자는 [ICON_PEACE] 신앙을 35% 적게 필요로 합니다. 위대한 선지자의 첫 번째 종교 전파 행동을 사용해 [ICON_RELIGION] 종교를 창시하거나 강화하거나, 성지를 건설할 수 있으며 이 경우 선지자가 소모되지 않습니다. [COLOR_NEGATIVE_TEXT]선교사를 생산할 수 없습니다.[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_TRAIT_POPULATION_GROWTH';
 
 UPDATE Language_ko_KR
@@ -429,7 +434,7 @@ SET Text = '팔라파 맹세'
 WHERE Tag = 'TXT_KEY_TRAIT_SPICE_SHORT';
 
 UPDATE Language_ko_KR
-SET Text = '도시를 얻을 때 도시 주변에 3개의 고유 [COLOR_POSITIVE_TEXT]사치 자원[ENDCOLOR] ([ICON_RES_CLOVES]/[ICON_RES_PEPPER]/[ICON_RES_NUTMEG]) 중 하나가 출현합니다. [ICON_MONOPOLY] 글로벌 독점 기업의 고유한 [ICON_GOLDEN_AGE] 산출량과 [ICON_GOLDEN_AGE] 황금기 지속 시간 수정치가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. [ICON_MONOPOLY] 글로벌 독점으로 인한 산출량과 [ICON_HAPPINESS_1] 행복도가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.'
+SET Text = '도시를 획득하면 도시 주변에 3개의 고유 [COLOR_POSITIVE_TEXT]사치 자원[ENDCOLOR] ([ICON_RES_CLOVES]/[ICON_RES_PEPPER]/[ICON_RES_NUTMEG]) 중 하나가 근처에 나타납니다. [ICON_MONOPOLY] 글로벌 독점으로 인한 고유한 [ICON_GOLDEN_AGE] 산출량과 [ICON_GOLDEN_AGE] 황금기 지속 시간 수정치가 [COLOR_POSITIVE_TEXT]5%[ENDCOLOR] 증가합니다. [ICON_MONOPOLY] 글로벌 독점으로 인한 산출량과 [ICON_HAPPINESS_1] 행복도가 [COLOR_POSITIVE_TEXT]2[ENDCOLOR] 증가합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_SPICE';
 
 UPDATE Language_ko_KR
@@ -444,7 +449,7 @@ WHERE Tag = 'TXT_KEY_UNIT_INDONESIAN_KRIS_SWORDSMAN_STRATEGY';
 -- Iroquois
 --------------------
 UPDATE Language_ko_KR
-SET Text = '유닛이 숲 및 [정글 타일에서 도로가 설치된 것처럼 이동하고 숲 및 정글 타일을 [ICON_CONNECTED][COLOR_POSITIVE_TEXT]도시 연결[ENDCOLOR]에 사용할 수 있습니다. 지상 군사 유닛에 [COLOR_PLAYER_PURPLE]{TXT_KEY_PROMOTION_WOODSMAN}[ENDCOLOR] 승급을 부여합니다. 사회 정책을 채택하면 [ICON_CAPITAL] 수도의 다음 [ICON_DIPLOMAT] {TXT_KEY_UNIT_TADODAHO}에 대한 진행률이 15% 증가합니다.'
+SET Text = '유닛이 숲 및 정글 타일에서 도로가 설치된 것처럼 이동하고 숲 및 정글 타일을 [ICON_CONNECTED][COLOR_POSITIVE_TEXT]도시 연결[ENDCOLOR]에 사용할 수 있습니다. 지상 군사 유닛에 [COLOR_PLAYER_PURPLE]{TXT_KEY_PROMOTION_WOODSMAN}[ENDCOLOR] 승급을 부여합니다. 사회 정책을 채택하면 [ICON_CAPITAL] 수도의 다음 [ICON_DIPLOMAT] {TXT_KEY_UNIT_TADODAHO}에 대한 진행률이 15% 증가합니다.'
 WHERE Tag = 'TXT_KEY_TRAIT_IGNORE_TERRAIN_IN_FOREST';
 
 UPDATE Language_ko_KR
@@ -493,7 +498,7 @@ SET Text = '[COLOR_RESEARCH_STORED]수학[ENDCOLOR]을 연구하면 마야 장�
 WHERE Tag = 'TXT_KEY_TRAIT_LONG_COUNT';
 
 UPDATE Language_ko_KR
-SET Text = '{TXT_KEY_UNIT_MAYAN_ATLATLIST}은 {TXT_KEY_UNIT_COMPOSITE_BOWMAN}을 대체하는 마야의 고유 유닛입니다. 초기 시대에 지형을 넘어 공격할 수 있는 유일한 원거리 유닛입니다. 또한 더 저렴하며 [COLOR_CYAN]{TXT_KEY_TECH_MATHEMATICS_TITLE}[ENDCOLOR] 연구 시 생산이 가능해, {TXT_KEY_UNIT_COMPOSITE_BOWMAN}보다 이른 시기에 등장합니다. [NEWLINE][NEWLINE]{TXT_KEY_UNIT_MAYAN_ATLATLIST}은 거친 지형에서 느려진 유닛들을 상대로 방어선을 구축할 수 있게 합니다.'
+SET Text = '{TXT_KEY_UNIT_MAYAN_ATLATLIST}은 {TXT_KEY_UNIT_COMPOSITE_BOWMAN}을 대체하는 마야의 고유 유닛입니다. 초기 시대에 지형을 넘어 공격할 수 있는 유일한 원거리 유닛입니다. 또한 {TXT_KEY_UNIT_COMPOSITE_BOWMAN} 보다 더 저렴합니다.'
 WHERE Tag = 'TXT_KEY_UNIT_MAYAN_ATLATLIST_STRATEGY';
 
 --------------------
@@ -736,7 +741,7 @@ SET Text = '신앙으로만 구매할 수 있는 독특한 시암 종교 건물�
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_STRATEGY';
 
 UPDATE Language_ko_KR
-SET Text = '나레수안 코끼리는 근접 유닛과 싸울 때 매우 강력하므로 주로 이 용도로 사용하세요. 다른 아군 유닛이 공격할 적 유닛의 근처로 이동해, Feared Elephant 승급으로 다른 아군이 목표로 하는 적 유닛을 약화시키도록 하세요. 전투력 보너스를 활용하려면 위대한 장군과 나레수안 코끼리를 꼭 함께 사용하세요.[NEWLINE][NEWLINE]나레수안 코끼리는 말 자원이 필요하지 않기 때문에 대부분 상황에서 약한 근접 유닛을 모두 대체할 수 있습니다. 나레수안 코끼리의 이동력(3)은 기마 유닛의 표준적인 이동력(4)보다 낮지만, 여전히 뛰어난 유연성과 집중 공격이 가능하며, 특히 공격 후 이동할 수 있는 능력이 있습니다. 사용하지 않은 말을 사용해 산병을 생산하고 적 부대를 측면 공격한 다음, 나레수안 코끼리로 공격하여 측면 공격 보너스를 엄청나게 높일 수 있습니다. 따라서 나레수안 코끼리에게 충격 승급 트리가 강력히 권장됩니다. 게다가 나레수안의 코끼리는 이동 속도가 느리기 때문에 기동성 승급의 가치가 더욱 커집니다.'
+SET Text = '나레수안 코끼리는 근접 유닛과 싸울 때 매우 강력하므로 주로 이 용도로 사용하세요. 다른 아군 유닛이 공격할 적 유닛의 근처로 이동해, 코끼리 겁주기 승급으로 다른 아군이 목표로 하는 적 유닛을 약화시키도록 하세요. 전투력 보너스를 활용하려면 위대한 장군과 나레수안 코끼리를 꼭 함께 사용하세요.[NEWLINE][NEWLINE]나레수안 코끼리는 말 자원이 필요하지 않기 때문에 대부분 상황에서 약한 근접 유닛을 모두 대체할 수 있습니다. 나레수안 코끼리의 이동력(3)은 기마 유닛의 표준적인 이동력(4)보다 낮지만, 여전히 뛰어난 유연성과 집중 공격이 가능하며, 특히 공격 후 이동할 수 있는 능력이 있습니다. 사용하지 않은 말을 사용해 산병을 생산하고 적 부대를 측면 공격한 다음, 나레수안 코끼리로 공격하여 측면 공격 보너스를 엄청나게 높일 수 있습니다. 따라서 나레수안 코끼리에게 충격 승급 트리가 강력히 권장됩니다. 게다가 나레수안의 코끼리는 이동 속도가 느리기 때문에 기동성 승급의 가치가 더욱 커집니다.'
 WHERE Tag = 'TXT_KEY_UNIT_SIAMESE_WARELEPHANT_STRATEGY';
 
 --------------------

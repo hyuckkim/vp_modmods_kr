@@ -1,0 +1,105 @@
+
+		<Row>
+			<Type>BUILDING_CD_ALMEN</Type>
+			<BuildingClass>BUILDINGCLASS_LODGE</BuildingClass>
+			<Description>TXT_KEY_BUILDING_CD_ALMEN</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CD_ALMEN_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_CD_ALMEN_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_CD_ALMEN_STRATEGY</Strategy>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_CD_ALMEN">
+			<Text>Almen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_ALMEN_TEXT">
+			<Text>During summer, all over the alpine regions cattle herds feed on alpine pastures (Almen in Austria or Germany, Alpen in Switzerland) high up in the mountains, a practice known as transhumance. There is usually one concerted cattle drive in the autumn to bring the cattle to their barns down in the valley. If there were no accidents on the Alm during the summer, in many areas the cattle are decorated elaborately, and the cattle drive is celebrated with music, feasts and dance events in the towns and villages. Upon arrival in the valley, joint herds from multiple farmers are sorted in the Viehscheid, and each animal is returned to its owner. Similar events, but with sheep instead of cattle, are redyk in Poland and trailing of the sheep in Idaho.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_ALMEN_HELP">
+			<Text>*this is updated in another file*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_ALMEN_STRATEGY">
+			<Text>The Almen boosts the value of Pastures and Mountains to your Civilization, encouraging you to look to settle those Resources and Terrains more aggressively. It can be tough to develop your Cities nestled in Mountain ranges early on, but with the Almen you can more easily overcome this, and even send Internal Trade Routes to Cities that would otherwise be too far away! In the long run the additional Food will help you grow larger cities, and the bonus Tourism will help you reach higher Cultural Influence levels, one of the benefits of which is Trade Routes gain a Growth bonus.</Text>
+		</Row>
+
+
+-- =======================
+-- Almen (Smokehouse)
+-- =======================
+REPLACE INTO Language_en_US 
+	(Tag, Text)
+SELECT
+	'TXT_KEY_BUILDING_CD_ALMEN_HELP', 'Requires the [ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_SHORT_DESC}[ENDCOLOR] Cultural Group. ' || Text
+FROM Language_en_US WHERE Tag = 'TXT_KEY_BUILDING_LODGE_HELP';
+
+UPDATE Buildings SET
+TrainedFreePromotion = 'PROMOTION_CD_ALMABTRIEB'
+WHERE Type = 'BUILDING_CD_ALMEN';
+
+DELETE FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_CD_ALMEN'; -- remove bgp
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_ALMEN', 'YIELD_CULTURE', 2);  -- upgrade to culture
+
+INSERT INTO Building_YieldPerXTerrainTimes100
+	(BuildingType, TerrainType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_ALMEN', 'TERRAIN_MOUNTAIN', 'YIELD_FOOD', 50),
+	('BUILDING_CD_ALMEN', 'TERRAIN_MOUNTAIN', 'YIELD_TOURISM', 50);
+
+UPDATE Language_en_US SET
+Text = Replace(Text, 'Cultural Group. ', 'Cultural Group. Workers created by this City (past or future) receive the [COLOR_POSITIVE_TEXT]Almabtrieb[ENDCOLOR] Promotion, allowing them to cross Mountains. +1 [ICON_FOOD] Food and [ICON_TOURISM] Tourism for every 2 Mountains within the workable tiles.[NEWLINE][NEWLINE]')
+WHERE Tag = 'TXT_KEY_BUILDING_CD_ALMEN_HELP';
+
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_ALMEN', 'IMPROVEMENT_PASTURE', 'YIELD_PRODUCTION', 1);
+
+UPDATE Language_en_US SET
+Text = Replace(Text, 'Camps', 'Camps and Pastures')
+WHERE Tag = 'TXT_KEY_BUILDING_CD_ALMEN_HELP';
+
+DELETE FROM Building_YieldFromBorderGrowth WHERE BuildingType = 'BUILDING_CD_ALMEN';
+
+INSERT INTO Building_YieldFromBorderGrowth
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_ALMEN', 'YIELD_FOOD', 10),
+	('BUILDING_CD_ALMEN', 'YIELD_TOURISM', 10);
+
+UPDATE Language_en_US SET
+Text = Replace(Text, '5 [ICON_FOOD] Food', '10 [ICON_FOOD] Food and [ICON_TOURISM] Tourism')
+WHERE Tag = 'TXT_KEY_BUILDING_CD_ALMEN_HELP';
+
+
+		<Row>
+			<Type>PROMOTION_CD_ALMABTRIEB</Type>
+			<Description>TXT_KEY_PROMOTION_CD_ALMABTRIEB</Description>
+			<Help>TXT_KEY_PROMOTION_CD_ALMABTRIEB_HELP</Help>
+			<PediaType>PEDIA_CIVILIAN</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_ALMABTRIEB</PediaEntry>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<CannotBeChosen>1</CannotBeChosen>
+			<CanCrossMountains>1</CanCrossMountains>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CD_ALMABTRIEB</PromotionType>
+			<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+		</Row>
+		<!-- doesnt work. hardcoded in pathfinder? -->
+		<!--<Row>
+			<PromotionType>PROMOTION_CD_ALMABTRIEB</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARAVAN</UnitCombatType>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_CD_ALMABTRIEB">
+			<Text>Almabtrieb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_ALMABTRIEB_HELP">
+			<Text>Can cross Mountains.</Text>
+		</Row>
+

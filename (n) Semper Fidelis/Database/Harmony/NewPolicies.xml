@@ -41,7 +41,7 @@
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>SF_POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-			<ReligiousUnrestFlatReductionGlobal>99</ReligiousUnrestFlatReductionGlobal>
+			<ReligiousUnrestFlatReduction>99</ReligiousUnrestFlatReduction>
 			<SecondReligionPantheon>1</SecondReligionPantheon>
 			<AllCityFreeBuilding>BUILDINGCLASS_D_FOR_SYNCRETISM</AllCityFreeBuilding>
 		</Row>
@@ -530,7 +530,7 @@
 			<Type>BUILDING_D_FOR_SYNCRETISM</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_SYNCRETISM</BuildingClass>
 			<Description>TXT_KEY_POLICY_SYNCRETISM_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -543,7 +543,7 @@
 			<Type>BUILDING_D_FOR_FREE_THOUGHT</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_FREE_THOUGHT</BuildingClass>
 			<Description>TXT_KEY_POLICY_FREE_THOUGHT_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -556,7 +556,7 @@
 			<Type>BUILDING_D_FOR_LIVING_HISTORY</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_LIVING_HISTORY</BuildingClass>
 			<Description>TXT_KEY_POLICY_LIVING_HISTORY_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -569,7 +569,7 @@
 			<Type>BUILDING_D_FOR_DEEP_ECOLOGY</Type>
 			<BuildingClass>BUILDINGCLASS_D_FOR_DEEP_ECOLOGY</BuildingClass>
 			<Description>TXT_KEY_POLICY_DEEP_ECOLOGY_HELP</Description>
-			<IconAtlas>COMMUNITY_ATLAS</IconAtlas>
+			<IconAtlas>BUILDING_ATLAS_VP_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
 			<IsDummy>1</IsDummy>
 			<ShowInPedia>0</ShowInPedia>
@@ -663,7 +663,7 @@
 			<PediaType>PEDIA_DIPLO</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_HARMONY_INTL_ED</PediaEntry>
 			<PortraitIndex>34</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
 		<Row>
@@ -684,7 +684,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_HARMONY_WORLD_POLICE</PediaEntry>
 			<PortraitIndex>29</PortraitIndex>
-			<IconAtlas>extraPromo_Atlas</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<DefenseMod>50</DefenseMod>
 			<RivalTerritory>1</RivalTerritory>

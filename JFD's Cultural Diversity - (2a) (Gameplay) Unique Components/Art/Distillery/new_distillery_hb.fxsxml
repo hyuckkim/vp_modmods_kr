@@ -1,0 +1,8 @@
+<Asset>
+	<Mesh file="new_rum_distillery_hb.gr2" source="Max" />
+	<DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+	<BoneUsage>
+		<Bone name="FX_PillagedSmoke" />
+		<Bone name="Point01" />
+	</BoneUsage>
+</Asset>

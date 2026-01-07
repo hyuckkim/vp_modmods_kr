@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
+		<!-- former VP tags -->
+		<Row Tag="TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER">
+			<Text>[ICON_INFLUENCE] Resting Points of all Major Civilizations:</Text>
+		</Row>
+
 		<!-- text for gaining bonuses with CSs -->
 		<Row Tag="TXT_KEY_UCS_BONUS_ALLY">
 			<Text>You became an Ally of [COLOR_CYAN]{1_CS}[ENDCOLOR] and you are first in queue to benefit from the knowledge, technologies, experience and informations of its citizens. Watch for the new bonuses from this City-State.</Text>
@@ -56,8 +61,8 @@
 		<Row Tag="TXT_KEY_UCS_HELPER_AT_WAR">
 			<Text>[ICON_WAR] At war with: [COLOR_NEGATIVE_TEXT]{1_AtWarWith}[ENDCOLOR]</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CS_UU_QUICK_INFO">
-			<Text>Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_UCS_UU_QUICK_INFO">
+			<Text>Unique Unit: [COLOR_YIELD_GOLD]{1_Unique_Unit}[ENDCOLOR] available at [ICON_RESEARCH] [COLOR_CYAN]{2_Tech}[ENDCOLOR].</Text>
 		</Row>
 
 

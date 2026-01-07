@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!----------- economic units ------------->
+		<Row Tag="TXT_KEY_UNIT_CD_XON">
+			<Text>Xon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_XON_TEXT">
+			<Text>Several Patagonian peoples had persons filling shaman-like roles. The Selk'nam believed their xon to have supernatural capabilities, e.g. to control weather and to heal. The Yahgan yekamush corresponds to the Selk'nam xon.[NEWLINE][NEWLINE]There are myths in both Yahgan and Selk'nam nations about a shaman using his power manifested as a whale. In both examples, the shaman was "dreaming" while achieving this. For example, the body of the Selk'nam xon lay undisturbed while it was believed that he travelled and achieved wonderful deeds (e.g. taking revenge on a whole group of peoples). The Yahgan yekamush made similar achievements while dreaming: he killed a whale and led the dead body to arbitrary places, and transformed himself into a whale as well.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_XON_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_XON_STRATEGY">
+			<Text>Every Xon you expend increases the power of your Empire with a combination of yield and military bonuses. In particular each new Xon increases the yields of Holy Sites, meaning the Improvement has a much higher value to the Patagonian Culture than your average Civilization.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_DJELI">
+			<Text>Djéli</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DJELI_TEXT">
+			<Text>A griot, or Djeli, is a West African historian, storyteller, praise singer, poet, and/or musician. Historically, Griots form an endogamous professionally specialised group or caste, meaning that most of them only marry fellow griots, and pass on the storytelling tradition down the family line. In the past, a family of griots would accompany a family of kings or emperors, who were superior in status to the griots. A village griot would relate stories of topics including births, deaths, marriages, battles, hunts, affairs, and other life events a form of oral history.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DJELI_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DJELI_STRATEGY">
+			<Text>Acquiring this Great Person gives a boost that scales with your development, particularly with respect to Culture. What is more, you passively make progress towards your next Birth from Kills, allowing an route to aquire both to temporary boost as well as Great Works or Concert Tours earlier and more frequently than other Cultural Groups.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_JUMBE">
+			<Text>Jumbe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_JUMBE_TEXT">
+			<Text>A Swahili word with a meaning similar to "chief". Since at least the 1st Century there is evidence that East African tribes exported goods like ivory, gold, rhino horn, and slaves to Arabia and other parts of the Middle East across the Indian Ocean. In a process of cultural exchange, Arab traders began settling along the East African coast, eventually leading to the emergence of a people and culture known as the Swahili.[NEWLINE][NEWLINE]We know during the 1800s from German colonial rule of Tanganyika that Jumbes, or headmen, were responsible for collecting tax, and that this was a system inherited from the previous Omani regime. Separately in Malawi, Chewa chiefs refer to a dynasty of Swahili Arab traders based in Nkhotakota as Jumbe. This faction remained a dominant force in the region until at least 1894, when Henry Hamilton Johnston, under the authority of the British Central Africa Protectorate, took steps to end the slave trade in the region.[NEWLINE][NEWLINE]Today, East African countries like Tanzania and Kenya have a thriving trade of luxury goods like coffee and gemstones, with discoveries of diamonds, rubies, sapphires, and other gems dating back to the 1960s. Here, local officials and traders play a crucial role in connecting African source markets to international markets, often facilitating the trade of gemstones to Asia.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_JUMBE_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_JUMBE_STRATEGY">
+			<Text>The Jumbe has a much stronger Trade Mission than the Great Merchant it replaces, giving both additional Gold and Influence. Its Diplomatic Promotions also confer on it faster movement and the ability to ignore barriers like terrain costs and foreign borders. In addition, all Jumbe gained permanently increase the value of your Merchants, as well as City Tiles and Strategic Resources. As a result East African Civilizations are strongly incentivized to work Merchant slots compared to other Cultural Groups.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER">
+			<Text>Wangara Trader</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER_TEXT">
+			<Text>The Wangara are a diaspora community of ethnic Fulani origin who served as specialized long-distance merchants throughout West Africa, particularly in trans-Saharan trade. Originating from the Ghana Empire, over time the Wangara became integrated into numerous other communities and ethnic groups, particularly in Timbuktu, Agadez, Kano, Gao, Salaga, Kong, Bissa, Kankan, Fouta Jallon, Djenné as well as Bambouk, Bure, Lobi, and (to a lesser degree) Bono goldfields and Borgu. The first mention of the Wangara in the historical record lists them as a tribe under the Ghana Empire who traded in gold dust. Al-Bakri called them "specialist gold traders in the region of the Senegal and Niger rivers." [NEWLINE][NEWLINE]The first Wangara commercial expansion came between the 9th-11th centuries into Takrur and the Futa Jallon. Between the 12th and 14th centuries, the Wangara extended their trade networks eastwards towards the Gao Empire & the Lake Chad basin and south to the Guinea Highlands and Volta River. Their strategic movements were a response to increased commercial traffic along the trade routes - a consequence of Almoravid and Almohad political and social hegemonies and commercial activity in the Maghreb and Andalusia (9th–15th century) and, in part, an effort to consolidate Ghana's political interests in the southern Sahara. After many years of assimilating with local populations many Wangara communities identified more as a social class of their own than just ethnically Soninke.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER_STRATEGY">
+			<Text>Unlike the Envoy, the Wangara Trader generates yields directly, both when created and when expended on their Trade Mission. Their increased movement speed through Desert serves to set up preferred corridors through which to funnel large numbers of Traders, setting up a virtuous cycle where each pays some of the cost of the next. This explosive commercial expansion allows you sudden entry into the diplomacy game just as the World Congress is about to unlock.</Text>
+		</Row>
+		<!--------- military units ------------->
+		<Row Tag="TXT_KEY_UNIT_CD_CURARE_DART">
+			<Text>Curare Hunter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CURARE_DART_TEXT">
+			<Text>Curare is the common name for various alkaloid arrow poisons originating from plant extracts. Used as a paralyzing agent by indigenous peoples in Central and South America for hunting and for therapeutic purposes, curare only becomes active when it contaminates a wound or is introduced directly to the bloodstream; it is not active when ingested orally. Prey was shot by arrows or blowgun darts dipped in curare, leading to asphyxiation owing to the inability of the victim's respiratory muscles to contract. Generally too expensive to ever be used as a widespread weapon of war,  curare became a symbol of wealth among the indigenous populations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CURARE_DART_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CURARE_DART_STRATEGY">
+			<Text>Curare Hunters are even better at hit-and-run tactics than the Chariot Archer they replace, but only in Jungle terrain. If they are caught, they still benefit from defensive bonuses, and even have higher strength in Jungle. If other Civilizations have stumbled into your rainforests, they'll wish they hadn't!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_TUPAMARISTA">
+			<Text>Tupamarista</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUPAMARISTA_TEXT">
+			<Text>The Rebellion of Túpac Amaru II was an Inca revival movement that sought to improve the rights of indigenous Peruvians suffering under the Spanish Bourbon Reforms in the latter half of the 18th century. In the main, the soldiers of the Tupamarista armies were poor Indian peasants, artisans and women, who saw the rebellion not so much as a question of reforms or power sharing but as an opportunity to "turn the world upside down". The restoration of the Inca Empire meant for them the possibility of an egalitarian society, based economically on the Inca communal agricultural system, the ayllu, and one without castas (racial divisions), rich and poor, or forced labour in haciendas, mines and factories, particularly the dreaded textile mills".[NEWLINE][NEWLINE]On 18 November 1780, Cusco dispatched over 1,300 Spanish and Native loyalist troops. The two opposing forces clashed in the town of Sangarará. It was an absolute victory for Amaru II and his Native rebels; all 578 Spanish soldiers were killed and the rebels took possession of their weapons and supplies. The victory however also came with a price. The battle revealed that Amaru II was unable to fully control his rebel followers, as they viciously slaughtered without direct orders. Reports of such violence and the rebels' insistence on the death of Spaniards eliminated any chances for support by the Criollo class. The victory achieved at Sangarará would be followed by a string of defeats.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUPAMARISTA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUPAMARISTA_STRATEGY">
+			<Text>The Tupamarista earns Culture, as well as additional military benefit, from Pillaging. Furthermore it is cheaper, easier to purchase, and moves immediately. Together these propose a strategy of swarming your enemies with a stream of fast and cheap Units that ravage their infrastructure and put you on the front foot economically.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER">
+			<Text>Bolas Rider</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER_TEXT">
+			<Text>Bolas were most famously used by the gauchos of colonial South America, but have been found in excavations of Pre-Columbian settlements, especially in Patagonia, where indigenous peoples (particularly the Tehuelche) used them to catch 200-pound guanacos and rheas. The Mapuche and the Inca army used them in battle. Mapuche warriors used bolas in their confrontations with the Chilean Army during the Occupation of Araucanía (1861–1883).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER_STRATEGY">
+			<Text>Bolas Riders are stronger than the Cuirassier they replace, both offensively and defensively. Furthermore they inflict a slowing effect on their opponents, allowing them to kite even quite fast opponents, especially in Open Terrain. The Patagonian Cultural group can therefore look to the Bolas Rider as a large power spike that they should direct to large, open battlefields where they can dominate the enemy.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_KOLOLO">
+			<Text>Kololo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KOLOLO_TEXT">
+			<Text>The Kololo or Makololo are a subgroup of the Sotho-Tswana people native to Southern Africa. In the early 19th century, they were displaced by the Zulu during a chain of events known as the Mfecane, migrating north to Barotseland, Zambia. They conquered the territory of the Luyana people and imposed their own language. The combination of Luyana and Kololo languages gave rise to the current Lozi language spoken by the Lozi people, descendants of the Luyana and nearby tribes. In 1864, the Kololo kingdom was overthrown and some chiefs moved to Chikwawa District, Malawi, with David Livingstone.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KOLOLO_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KOLOLO_STRATEGY">
+			<Text>Unlike the Colonist, the Kololo has reasonable strength for a ranged Unit when it unlocks. Together with its strong combat Promotions and ability to earn yields from Pillaging, you can use these Units as part of an offensive army. Then, after clearing the land of enemies (perhaps razing Cities in the process) you can immediately resettle the area with advanced infrastructure, including the (unique) Constabulary.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_SEPOY">
+			<Text>Sepoy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SEPOY_TEXT">
+			<Text>Sepoy is a term denoting professional Indian infantrymen, traditionally armed with a musket, in the armies of the Mughal Empire and the Maratha. In the 18th century, the French East India Company and its other European counterparts employed locally recruited soldiers within India, mainly consisting of infantry designated as "sepoys". The largest sepoy force, trained along European lines, served the British East India Company.[NEWLINE][NEWLINE]The East India Company initially recruited sepoys from the local communities in the Madras and Bombay Presidencies. The emphasis here favored tall and soldierly recruits, broadly defined as being "of a proper caste and of sufficient size". Recruitment was undertaken locally by battalions or regiments often from the same community, village and even family. The commanding officer of a battalion was the mai-baap or the "father and mother" of the sepoys making up the paltan (from "platoon"). The izzat ("honour") of the unit was represented by the regimental colours; the new sepoy having to swear an oath in front of them on enlistment.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SEPOY_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SEPOY_STRATEGY">
+			<Text>The Sepoy is an unusual Unit, as each instance randomly gains 1 of 4 "castes". The more Sepoy of a given caste, the stronger they become militarily. Only the economic bonus is standalone, but to obtain the bonuses you want in sufficient number, you will need to create and fight with a large number of Sepoys. As your Sepoy are assigned their Promotion you will have to carefully manage their placement, both during and after the war.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_SLAGANZ">
+			<Text>Slaganz</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SLAGANZ_TEXT">
+			<Text>Historical descriptions of the warfare of the Germanic peoples depend entirely on Greco-Roman sources. Archaeological records indicate that the arrival of the Corded Ware culture in Northern Europe was accompanied by large-scale migration and warfare. By the time of Rome, the Germani settled the entire coastal strip from Holland to the mouth of the Vistula. Their military organization is reported as remaining very primitive, with small warbands following a chief, fighting mostly on foot and in tight formations in close combat.[NEWLINE][NEWLINE]Warfare between Germanic tribes was a constant. On occasions when the Germanic tribes worked together, the results were impressive. Three Roman legions were ambushed and destroyed by an alliance of Germanic tribes headed by Arminius at the Battle of the Teutoburg Forest in 9 CE. As a result, the Roman Empire made no further concerted attempts at conquering Germania beyond the Rhine.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SLAGANZ_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_SLAGANZ_STRATEGY">
+			<Text>The Slaganz can move through Rival Territory to find and defeat Barbarians wherever they may be. Or, if they come for your Cities, you can defend them with greater potency. As a cheap Unit, it can be easily produced to lend your strength to City-States that may also need defending. Their attack bonus against Fortified Units let's them take the fight to both the encampments of other tribes, and the Forts of your 'developed' neighbours.</Text>
+		</Row>
+		<!-- If there are no Barbarians available, their special ability allows you to convert low health enemies into Barbarians, which you can then either kill for yields, or allow to go free and pillage the lands of their former owners without putting your own Units at risk. -->
+		<!-- backup -->
+
+		<Row Tag="TXT_KEY_UNIT_CD_GOLEYO">
+			<Text>Goleyo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_GOLEYO_TEXT">
+			<Text>The goleyo is a hybrid between a machete and an axe thought to originate with the Mangbetu ethnic group of the Congo, where it was used as a throwing weapon. They were typically thrown at the enemy from 9 m (30 ft) away, with a warrior carrying three or four. The knife varies in form across Africa, from the Upper Nile through Central Africa and over to Gabon in West Africa. For the Zande, the "Kpinga" were distributed only to professional warriors, and considered status symbols. It was also part of the dowry that a man must pay to the bride's family.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_GOLEYO_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_GOLEYO_STRATEGY">
+			<Text>The Goleyo replaces the Chariot Archer, but fulfils the hit-and-run archetype in Forest and Jungle tiles instead of in Open Terrain. Furthermore they are much hardier, receiving defensive bonuses and having a significantly higher base combat strength. Although they lack the melee attack necessary to take a City, they can make up the majority of your early army and simplfy overpower your rivals. Be careful that their upgrade requires Horses, which may leave you at a technological deficit.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_ARCU">
+			<Text>Arbalist</Text>
+		<!-- Arcuballistarius -->
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_ARCU_TEXT">
+			<Text>The first hand-held crossbow was used by the Ancient Greeks. It was described in the 1st century by the Greek author Heron of Alexandria in his work Belopoeica, which draws on an earlier account of the famous Greek engineer Ctesibius (fl. 285-222 BC). The weapon was powered by a composite bow. It was cocked by resting the belly in a concavity at the rear of the stock and pressing it down. In this way considerably more energy can be stored than by using only one arm, as in the hand-bow. Heron identifies this 'gastraphetes' as the forerunner of the later catapult, which places its invention some unknown time before c. 420 BC. It is recorded as being used in the Greco-Punic wars, such as the Siege of Motya in 397 BC, and the Carthaginians copied both Greek catapult and crossbow designs on Sicily. Around 340 BC, Greek fortifications began to feature high towers with shuttered windows in the top, presumably to house anti-personnel arrow shooters.[NEWLINE][NEWLINE]The Roman author Vegetius (fl. 4th century AD) notes repeatedly the use of arrow firing weapons such as arcuballista and manuballista. While most scholars agree that one or even both of these terms refers to a handheld mechanical weapon, there is disagreement about whether these were flexion bows or torsion powered. Unlike Medieval crossbows which tend to have a wholly rectilinear stock or 'tiller', the arcuballista is depicted in stone reliefs as having a unique carved handgrip at the rear. Being so distinctive, it has been conjectured that pulling back on this handgrip, if connected to a straight trigger bar, might have been means to release the revolving nut.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_ARCU_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_ARCU_STRATEGY">
+			<Text>The early invention of the Crossbow is excellent news for both aggressive and defensive players alike. The vision bonus helps you see both enemy troop movements, and also the arrival of pesky Barbarians. Meanwhile the large power boost near Forts and Friendly Cities makes it easy to man your Empire's borders with fewer troops than anyone else, allowing more of your supply to get to the front lines! The Fort bonus can even be used offensively, when fighting near border tiles you have improved!</Text>
+		</Row>
+
+		<!-- this one is unused atm, Prachina -->
+		<Row Tag="TXT_KEY_UNIT_CD_RANGER">
+			<Text>Airborne Ranger</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_RANGER_TEXT">
+			<Text>The Civilopedia text goes here</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_RANGER_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_RANGER_STRATEGY">
+			<Text>Our design rationale goes here</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_VOI">
+			<Text>Voi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOI_TEXT">
+			<Text>The Voi (plural Voyi) was an ancient Slavic militia that was based mainly in the Kievan Rus’, as the draft recruitment of the local populace. However, the term, or a variation on it, is used across the Slavic world to describe an army of sorts, mostly irregulars. The more widely-known term 'Voivode' is the equivalent for general - the term 'voi' here is loosely translated as 'army', and with the word 'vode' being the verb 'to lead'. Militaries such as these had a fearsome reputation, given the term was used well before the Slavs calmed their military action at the end of the pagan kingdoms. The term was applied during the many wars they had with the Christian kingdoms, especially to the Wends. The standing army was the druzina. Together, these two forces composed most of its military, making the presumably larger Voi a vital part of Slavic military history.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOI_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOI_STRATEGY">
+			<Text>Voi are an irregular force: a Spearman-style defensive Unit with the Recon-line feel of moving freely through Forests and Marsh. This makes them much more mobile than most Units of the Ancient Era, which allows you to overextend your armies and Cities in a way that a Civilization of a different Cultural Group would not be able to reinforce. While not strictly offensive in nature, if your opponent settles particularly rugged terrain, you may be able to use that to your advantage by swarming them with Voi before they can connect up roads, chop down forests, and drain Marshes. To this end, Voi can move immediately after purchase, allowing you to squeeze out every last drop of tempo from the early game.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE">
+			<Text>Voivode</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE_TEXT">
+			<Text>The title voevodas originally occurs in the work of the 10th-century Byzantine emperor Constantine VII in his De Administrando Imperio, in reference to Hungarian military leaders. It broadened into a title denoting a military leader or warlord in Central, Southeastern and Eastern Europe in use since the Early Middle Ages. In the Polish-Lithuanian Commonwealth, voivode was interchangeably used with palsgrave, which was the chief commander of the army next in rank to the King. This was more an office than a court rank, similar to the Grand Duke of Bosnia. In the Tsardom of Russia, a voivode was a military governor. Among the Danube principalities, voivode was considered a princely title.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE_STRATEGY">
+			<Text>Voivode have additional defensive merit compared to the Great General it replaces, and they work best stationed in Cities where they boost unit production, as well as city defense. West Slavic Civilizations will do best fighting a defensive war that they then turn into an offensive or diplomatic win. Along these lines, you can get away with a less robust military and then quickly spin up a defensive force when the invited attack arrives.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_AGIRU">
+			<Text>Agiru</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AGIRU_TEXT">
+			<Text>The Maasai inhabit the African Great Lakes region and arrived via South Sudan. Most Nilotic speakers in the area, including the Maasai, the Turkana and the Kalenjin, are pastoralists and have a reputation as fearsome warriors and cattle rustlers. Although not particularly numerous, the Maasai were able to dominate a considerable region because the Bantu-speaking inhabitants offered little effective resistance to their raids. The Maasai and other groups in East Africa have adopted customs and practices from neighbouring Cushitic-speaking groups. Agiru means warrior or hero in the Afar language, a Cushitic language spoken by the Afar people in Ethiopia, Eritrea, and Djibouti.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AGIRU_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AGIRU_STRATEGY">
+			<Text>Agiru are a flexible Unit that can cover both the duties of a Worker and a Pathfinder. But the true strength is in upgrading them, where they maintain their Mobility Promotion, creating a cohort of unusually fast Spearmen and beyond.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_PENJAJAP">
+			<Text>Penjajap</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_PENJAJAP_TEXT">
+			<Text>Penjajap were native galley-like warships used by several Austronesian ethnic groups in maritime Southeast Asia. They were typically very long and narrow, and were very fast. They are mentioned as being used by native fleets in Indonesia, the southern Philippines, Malaysia, and Brunei alongside the similar lancaran and larger junk.[NEWLINE][NEWLINE]Penjajap were chiefly used as inter-insular warships and as pirate ships, being armed with only a single cannon to raid coastal villages and attack lightly armed merchant ships. In such raids, penjajap were usually accompanied by smaller boats called kakap, which are used as scouts and escape craft that can land easily on the beach or river bank. If a merchant ship encountered a kakap, they knew a penjajap could be hiding in the nearby waters.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_PENJAJAP_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_PENJAJAP_STRATEGY">
+			<Text>Unlike the Caravel that it replaces, the Penjajap does not go out the explore the seas but rather stays in the shallow waters around your Empire. It is much faster than other ships and can move after attacking, allowing it to conduct hit-and-run. This combines with its Invisibility - something not usually unlocked until the Submarine - which pairs with its ability to Heal outside of friendly territory to create a true menace. Once you unlock this ship you should use it to seize control of your coastal waters and make a fortune pillaging Trade Routes.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_TUNTIAN">
+			<Text>Tuntian Troop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUNTIAN_TEXT">
+			<Text>Tuntian was a form of frontier "military-agricultural colonies" originating in Han China. Troops were sent to takeover strategic under- or uncultivated land and convert them into self-sustained, agrarian colony. In other words, the soldiers doubled as farmers. The system was also adopted by other regimes throughout the Chinese cultural sphere, for example in the Japanese Meiji Restoration troops were sent to Hokkaido under the name tondenhei. In the modern era, the Qing dynasty used tuntian to fight the Dungan Revolt, and the successor PRC continued the policy after the Korean War and later in Yi-Ta (bordering the Soviet Union).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUNTIAN_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TUNTIAN_STRATEGY">
+			<Text>Tuntian Troops take on many of the roles of Workers, notably Repair. Of course you will likely not need additional Workers generally, but after a War, the faster return to normality of ravaged lands gives you important tempo. What is more, Tuntian Troops are even better at settling Cities than Colonists, allowing for a raze-and-resettle strategy using your bread-and-butter Gun Units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT">
+			<Text>Watcher</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT_TEXT">
+			<Text>European colonists recruited Indian allies during such instances as the Pequot War from 1634–1638, the Revolutionary War, as well as in War of 1812. Native Americans also fought on both sides during the American Civil War, as well as military missions abroad including the most notable, the Codetalkers who served in World War II. The Scouts were active in the American West in the late 19th and early 20th centuries. Including those who accompanied General John J. Pershing in 1916 on his expedition to Mexico in pursuit of Pancho Villa. Indian Scouts were officially deactivated in 1947 when their last member retired from the Army at Fort Huachuca, Arizona.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT_STRATEGY">
+			<Text>Watchers are faster and stronger than Commandos. In fact, to some extent they can replace Fusiliers in your army composition, especially when defending friendly territory. Eventually they will upgrade to Paratroopers, which are a highly-offensive Unit Class, so that should feature in your long-term planning when employing Watchers in large numbers.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_DAPON">
+			<Text>Dapon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DAPON_TEXT">
+			<Text>During the Bhutanese period of theocratic rule (1616–1907), there was no regular standing army. The bow and arrow were among the principal means of arming the population during frequent upheavals and invasions. During times of crisis, the government raised militias from among local lords' retinues, all commanded by one dapon, or "arrow chief".[NEWLINE][NEWLINE]Today, archery in Bhutan is a way of socialization, communication, and development of relations between people. Every village has a field for archery. Competing archers engage in verbal battle, giving players a chance to display intellectual and literary skills. Players and teammates praise their own arrows, lend advice and encouragement to each other, and demean opponents in florid literary expressions known as kha shed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DAPON_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_DAPON_STRATEGY">
+			<Text>Composite Bowman can be used to great effect in early miltary strategies, and the Dapon plays into this by rewarding you for massing the Unit. Furthermore the possibility of purchasing with Faith allows you to amass even more supply of Dapon. Together you can pull off aggressive plays and even if they don't end up defeating the enemy on the spot, you will be rewarded with Tourism - as well of course with the immensely valuable upgraded Archery Unit.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_BOITA">
+			<Text>Boita</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOITA_TEXT">
+			<Text>In ancient times Sadhabas (mariner merchants) sailed in large, decorated ships called Boitas between Kalinga in eastern India, Sri Lanka, and South-East Asia (including both mainland and insular regions) for trade, commerce and cultural exchange. The prows of the ships were adorned with a great variety of fanciful shapes and forms like the heads of lions, tigers, and birds. After painting the ship with the respective colour with regards to the mast, the body of the ship is then painted with pictures of celestial bodies such as sun, moon, etc. Other decorations used on the ships include thin sheets of metal on all sides (such ships are called kamala) and a type of avajnasika cloth hung from the ships.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOITA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BOITA_STRATEGY">
+			<Text>Boita are like the Portugese Nau but constrained to the coast. Therefore their main use is to sail to the furthest accessible destination and off-load their Exotic Cargo, which you can then use to purchase additional Boita. This virtuous cycle builds you a navy but, in the event that you have no military use for it, the disbanding of these ships rewards Culture which early in the game can be lucrative.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_CRUZOB">
+			<Text>Cruzob</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CRUZOB_TEXT">
+			<Text>Chan Santa Cruz was a late 19th-century indigenous Maya state in modern-day Quintana Roo which followed a Maya religion in a partly syncretic form called "The Cult of The Talking Cross". After the Spanish conquered the western half of the Itzá state during the 18th century. Later, when the Criollo class declared Yucatecan independence in the mid-19th century, the Maya leadership also saw an opportunity to gain independence and instigated a violent uprising. The capital, Noh Kah Balam Nah Chan Santa Cruz, was founded in about 1850 near a sacred cenote, a natural well providing a year-round source of holy water.[NEWLINE][NEWLINE]The Maya state had extensive trade relations with the British colony of British Honduras, and its military was substantially larger than the garrison and militia in the British colony. All this changed after the Maya laid siege to and conquered Bacalar, originally the Mayan holy city of Bak Halal. They killed many British citizens, along with the entire Yucatec Creole garrison. It is unclear why the commanding general ordered a wholesale slaughter of the garrison. Regardless of his motives, in 1893 the British Government signed the Spenser Mariscal Treaty, which ceded all of the independent Mayan state's lands to Mexico. While the indigenous Maya continued to conduct guerrilla attacks against the Mexicans, together with the fall of Creoles minority-rule in the western Yucatan, this marked the end of the Cruzob state.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CRUZOB_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CRUZOB_STRATEGY">
+			<Text>The Cruzob is a military-focussed Scouting Unit, but with lower combat strength than the Commando it replaces. So how to make use of it? Not only can the Cruzob be mobilized quickly, including with Faith, they are very highly promoted with bonuses normally unavailable to their Unit Class, starting with Shock III. This means they have exceptional strength when Flanking, meaning large numbers of Cruzob can be used to overrun the enemy.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY">
+			<Text>Mesopotamian Levy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY_TEXT">
+			<Text>The Mesopotamia Rifles, or Iraq Levies, were a majority Assyrian force, and the first Iraqi military force established by the British in British controlled Iraq. The Levies originated during the First World War. After Iraq became a British Mandate, the force was composed mostly of Assyrians but also some Kurds and Iraqi Turkmen who lived in the north of the country. Eventually the Levies enlisted mainly Assyrian soldiers with British officers. The unit initially defended the northern frontiers of the Province of Mosul when Turkey claimed the province and massed its army across the frontiers.[NEWLINE][NEWLINE]The Levies distinguished themselves in May 1941 during the Anglo-Iraqi War where Assyrians defeated a large force of 15.000 Iraqi Nazis with British air support in multiple battles. The Assyrians also defeated other Nazi Arabs in campaigns in Syria and Lebanon and were also used in other theatres of the Second World War, including in the Balkans and Italy. The force thereafter grew and survived until it was disbanded when control of RAF Habbaniya and RAF Shaibah was handed to Iraq in 1957.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY_STRATEGY">
+			<Text>The Mesopotamian Levy trains rapidly owing to its lower cost and conversion of Food into Production, allowing you to field a large force even if your infrastructure is more geared towards growth. When fielded, the Levy has very strong bonuses in Desert and near Rivers, defending your homeland or pushing into those neighbouring terrains that rightfully belong under your banner!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHLAH">
+			<Text>Baghlah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHLAH_TEXT">
+			<Text>A baghlah is a large deep-sea dhow, a traditional Arabic sailing vessel. Their average length was 100 ft (30 m) with an average weight of 275 tons and they required a crew of at least 30 sailors. Baghlahs were widely used in the past centuries as merchant ships in the Indian Ocean and the minor seas around the Arabian Peninsula. These ships were also part of the pirate fleets operating from semi-independent or completely independent harbours in Persia or along the Arabian Peninsula.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHLAH_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHLAH_STRATEGY">
+			<Text>The advent of the Caravel poses a choice between exploration and naval offense. The Baghlah very much encourages the latter. Since it can engage in combat to acquire Gold, you can use a modest fleet to pay for the construction of a mighty navy capable of dominating the coasts. Baghlah arrive with full XP when purchased, and ready to move. Being able to Move After Attacking, which is normally locked behind the Blitz Promotion, allows a very early ability to rapidly overwhelm even Cities.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_HIGHLANDER">
+			<Text>Highlander</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_HIGHLANDER_TEXT">
+			<Text>Though initially a word simply used to describe someone from the Highlands of Scotland, the term "Highlander" has gone on to be used in a military sense. Highlander started off by forming clans in their native lands, creating a unique identity for them and their kinsmen. Over the years, this evolved into the Scottish surnames - the prefix "mac", which is all too often used in a faux-Scottish sense, indicated that the person is a "son of" the name that follows. As weaponry evolved, Highlander became increasingly trained in gunpowder technology, which was put to great - and devastating - use during the turmoil of the Stuart era. Scotland's military regiments, though the Highlander in particular, would often have marching bands that still exist to this day. Performances from these marching bands often feature the Bagpipes, a distinctive Scottish sound that is commonly associated with the Highlander. Though the Highlands is probably one of the most distinctive areas of Scottish culture, the consensus is that they will mostly vote No in the referendum.[NEWLINE][NEWLINE]The first Highland regiment, the Black Watch, was originally raised in 1881 from clans openly loyal to the status quo in order for the government to better police the Highlands, which were deemed to be both rebellious and lawless by the contemporary British establishment. However, due to a pressing need for personnel in North America during the Seven Years' War, William Pitt the Elder made the decision to raise new Highland regiments to fight in this global conflict. Scottish regiments and in particular Highland regiments, went on to make significant contributions to the military expansion, history, and maintenance of the British Empire in the 19th and 20th centuries. The Highlander, 4th Battalion, Royal Regiment of Scotland continued to have a Gaelic motto (Cuidich 'n Righ which means "Help the King") into the 21st Century.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_HIGHLANDER_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_HIGHLANDER_STRATEGY">
+			<Text>The Gatling Gun is when the Ranged Unit line moves from being quite lethal offensively to being more defensive, with a penalty against Cities and Foritified Units (as well as Armor). The Highlander delays this to the Machine Gun, staying relevant for longer. Moreover it shares its defensive promotion bonus in an aura, like a Great General, so make sure you have pipers spread throughout your army as you run over your foes!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_VIKING">
+			<Text>Viking</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VIKING_TEXT">
+			<Text>Vikings were seafaring people originally from Scandinavia who, from the late 8th to the late 11th centuries raided, pirated, traded, and settled throughout parts of Europe. They also voyaged as far as the Mediterranean, North Africa, the Middle East, Greenland, and Vinland (present-day Newfoundland in Canada, North America). Expert sailors and navigators of their characteristic longships, Vikings established Norse settlements and governments in the British Isles, the Faroe Islands, Iceland, Greenland, Normandy, and the Baltic coast, as well as along the Dnieper and Volga trade routes across Eastern Europe where they were also known as Varangians. The Normans, Norse-Gaels, Rus, Faroese, and Icelanders emerged from these Norse colonies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VIKING_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VIKING_STRATEGY">
+			<Text>The Viking is an early Pioneer that can cross the Ocean and grab the best settling spots before anyone else. Except of course that Barbarians will be there, ready. Not to worry, the Viking has combat strength reasonable for the Medieval Era, which means these Settlers will have no trouble carving out the newest colony of your great Empire! What is more, they settle Cities with advanced infrastructure including Lighthouses, so as soon as you discover Compass you can establish connections back to the motherland.</Text>
+		</Row>
+
+		<!-- denmark later boat -->
+		<Row Tag="TXT_KEY_UNIT_CD_TROLLE">
+			<Text>Kystforsvarsskib</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TROLLE_TEXT">
+			<Text>Coastal defence ships were armoured warships built as mobile coastal artillery mostly during the period from 1860 to 1920. They were small, often cruiser-sized warships that sacrificed speed and range for armour and armament. They were usually attractive to nations that either could not afford full-sized battleships or could be satisfied by specially designed shallow-draft vessels capable of littoral operations close to their own shores.[NEWLINE][NEWLINE]The Herluf Trolle class of coastal defense ships was built for the Royal Danish Navy in response to a naval construction program in neighboring Imperial Germany. Denmark's naval strategy was entirely defensive; the coastal defense ships like Herluf Trolle were intended to guard the island of Zealand (where the capital at Copenhagen lay) in combination with coastal artillery batteries, and defensive minefields, and to support flotillas of torpedo boats in the confined waters of the Danish Straits. Built in the late 1890s and early 1900s, the Danish ships were armed with a main battery of two 240 mm (9.4 in) guns and were capable of a top speed of 15.5 knots (28.7 km/h; 17.8 mph).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TROLLE_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TROLLE_STRATEGY">
+			<Text>Our design rationale goes here</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_KAIMILOA">
+			<Text>Kaimiloa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KAIMILOA_TEXT">
+			<Text>HHMS Kaimiloa was a warship of the Hawaiian Royal Navy. The ship was formerly the Explorer, a 170-ton schooner, built in England in 1871. Kaimiloa sailed from Hawaii to Samoa and other Pacific islands in 1887 in an effort by King Kalākaua to form a confederation of Polynesian states to counteract European imperialism. The instance nearly resulted in military conflict between the Kingdom of Hawaii and the German Empire, who viewed Samoa as their possession in the Pacific.[NEWLINE][NEWLINE]Twenty-four of the crew members were young Hawaiians who were enrolled in reform school, and who were placed on the ship's crew with only one month of training. Due to the music program which was in effect at the reform school, some of these crew members were also members of a military band. During negotiations in Samoa the military band held a concert for the townspeople of Apia, which helped to build up good relations between them and the Hawaiians. This was the only voyage conducted by Kaimiloa for the Hawaiian navy. The crew were disbanded on August 29, and the ship was decommissioned on August 30. After this, Charles Palikapu Kaleikoa reformed the Royal Hawaiian Band and continued to play in it until his retirement 40 years later.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KAIMILOA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_KAIMILOA_STRATEGY">
+			<Text>As repurposed schooners, Kaimiloa Class ships do not require Iron. This allows you to amass a large offensive navy even if your island-based nation may not have many raw materials. These vessels are also crafty, moving through rival territory to position for the attack. Separately, when you start producing Kaimiloa you gain a boost to Great Admiral production from your Musicians, allowing you to add key commanders to your force. Finally, when these ships are either decommissioned or upgraded you receive Culture based on how much XP they gained, making the desire to use them in action even greater.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS">
+			<Text>Txatkunee'xs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS_TEXT">
+			<Text>Meaning "Killerwhale with Fins All Around", Txatkunee'xs was a crest of the Killerwhale Tribe of the Tasimshian Nation, analogous to the the Gisk'aast Tribe of the Nisga'a and Gitxsan nations, who also use the term Fireweed Clan. These nations live around the modern British Columbia--Alaska border having migrated southward. Fireweed (or rosebay) is native to boreal forests, and is used a medicine in the Upper Inlet Dena'ina, who treat pus-filled boils or cuts by placing a piece of the raw stem on the afflicted area. This is said to draw the pus out of the cut or boil and prevents a cut with pus in it from healing over too quickly. Today it is the symbol of the Yukon, whilst the territory north of British Columbia.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS_STRATEGY">
+			<Text>The Txatkunee'xs is a stronger Spearman that heals away from home in a way usually reserved for Scouting Units. This makes them excellent for hunting down Barbarians and even a weak neighbour. The best usage is across River deltas and attacking from the Coast with the Amphibious Promotion, and you can do these attacks even without the Technology for Embarkation. When clearing good sites along the shoreline, they can immediately produce Fishing Boats for you, giving a nice bit of extra tempo.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_UMIAK">
+			<Text>Umiak</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_UMIAK_TEXT">
+			<Text>The umiak is a type of open skin boat, used by the Yupik and Inuit, and was originally found in all coastal areas from Siberia to Greenland. First used in Thule times, it has traditionally been used in summer, for moving people and possessions to seasonal hunting grounds, and for hunting whales and walrus. Because the umiak has no keel, the sails cannot be used for tacking. In return it can be carried over the drift or shore ice to the open water by a few people. Further the boat is very quiet, which is key for hunting polar whales which are sensitive to noise and move under the ice to avoid hunters.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_UMIAK_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_UMIAK_STRATEGY">
+			<Text>For your Coastal areas the Umiak doubles as both Work Boat and Scout. It gains XP from Scouting like its land cousins which allows you to build up a stronger Ranged Naval Unit that other Civilizations are able to, and you also receive Food whilst doing so. These bonuses are limited by the size of the coastal regions accessible, so it is important to place your Cities on different seas to allow access to the most tiles possible.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_STRADIOTI">
+			<Text>Stradiot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_STRADIOTI_TEXT">
+			<Text>The Stradioti were mercenary units from the Balkans recruited mainly by states of Southern Europe and Central Europe from the 15th century until the middle of the 18th century. They were largely of Albanian origin (about 80%), others were of Greek (most of whom were captains) and South Slavic origin. The stradioti wore particular caps, which were very similar to those of the Albanian ethnographic region of Labëria, with conical shape and a small extension, which earned them the name cappelletii in Venice. They pioneered light cavalry tactics in European armies in the early modern era. It has been suggested that a ready pool of Albanian stradioti was the product of the northern Albanian tribal system of feud (Gjakmarrja) and consequent emigration. They were known for cutting off the heads of dead or captured enemies, and according to Commines they were paid by their leaders one ducat per head.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_STRADIOTI_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_STRADIOTI_STRATEGY">
+			<Text>Stradioti have the features of a Mercenary Unit which means they can be quickly amassed with Gold without loss of XP. If you have a strong economy, unlocking the Stradioti allows a sudden and powerful attack. The unusual Ambush Promotions make the Stradioti stronger in Rough Terrain than normal Skirmisher Units, and if they survive later into the game their is a niche usage against Armor. However their true strength is lost on upgrade, the Gjakmarrja Promotion that gives large amounts of yields and maybe more significantly a heal on kill, which is usually reserved for those that fight in Melee.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHATUR">
+			<Text>Tolu-Batyr</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHATUR_TEXT">
+			<Text>The Tolu-Batyr, or Baghatur, is a historical honorific title for a "hero" or "valiant warrior". The term was first used by the steppe peoples to the north and west of China proper as early as the 7th century as evidenced in Sui dynasty records; It is attested for the Second Turkic Khaganate in the 6th century, and among the Bulgars of the First Bulgarian Empire in the 6th century, but it became most widespread in the 13th century in the Mongol Empire. The title persisted in its successor-states, and later came to be adopted also as a regnal title in the Ilkhanate and the Timurid dynasty, among others.[NEWLINE][NEWLINE]The concept is present in Turco-Mongol folklore, one instance is the Bashkir epic poem Ural-batyr, referring to heroes of extraordinary courage, fearlessness, and decisiveness, often portrayed as being descended from heaven and capable of performing extraordinary deeds. It therefore formed the heroic ideal Turkic and Mongolic warriors strove to live up to, hence its use as a military honorific of glory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHATUR_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BAGHATUR_STRATEGY">
+			<Text>Most comparable to a Juggernaut Unit, the Tolu-Batyr is limited to one copy but becomes quickly very powerful. It is a Mounted (and later Armored) Unit and Can Move After Attacking, but it does not have the same negatives as other Mounted Units like reduced strength against Cities. Early on, its ability to heal in Neutral Territory more effectively makes it ideal for hunting down Barbarians and even receiving additional Great General Points from the combat you engage in, paving the way to the earliest possible obtaining of the Leadership aura for further conquest.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_MOUKAHLA">
+			<Text>Moukahla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MOUKAHLA_TEXT">
+			<Text>The Moukahla is a traditional firearm originating from North Africa, particularly prevalent in Algeria and Morocco. This type of gun, also known as a "muskala" or "moukhala", is a muzzle-loading rifle, often ornately decorated and crafted by skilled artisans. The Moukahla played a significant role in the region's history, especially during the 18th and 19th centuries. It was used by local tribes for hunting and warfare, providing a strategic advantage due to its range and firepower compared to earlier weapons like bows and arrows. [NEWLINE][NEWLINE]Typically, the Moukahla features intricate metalwork and carvings, with silver and brass inlays adorning its wooden stock. These decorations often have cultural and symbolic significance, reflecting the rich heritage of the regions where the gun was made. The production of these firearms required considerable expertise, with gunsmiths passing down their techniques through generations. While no longer widely used for practical purposes, the Moukahla remains a valuable cultural artifact, symbolizing the craftsmanship and historical legacy of North African weaponry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MOUKAHLA_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MOUKAHLA_STRATEGY">
+			<Text>The Moukahla differs in two key respects from the Rifleman it replaces. The first is its strength against Cities, which the Rifleman lacks without special Promotions. A set of Moukahla against a poorly defended City can be very profitable for you and irritating for you enemy. The second and more significant way is in Desert, where the Moukahla fights with ferocity. As this Unit unlocks, you should be poised to take control of the map's remaining Desert tiles.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI">
+			<Text>Ma-har-o-luk'ti</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI_TEXT">
+			<Text>The Ma-har-o-luk'ti was the Brave subclan of the Turtle Clan of the Lenni Lenape (or Delaware) indigenous people of the Northeastern Woodlands. They were adept at hunting in their native river valleys, using 100 or more men standing in a line, beating thigh bones on their palms to drive animals like bears, deer, and even beavers to the river, where they could be killed easily for meat and fur. The success of these methods allowed the tribe to maintain a larger population than other, nomadic hunter-gatherer peoples in North America at the time, could support.[NEWLINE][NEWLINE]In 1634, the Iroquoian-speaking Susquehannock went to war with the Lenape over access to trade with the Dutch at New Amsterdam and vassalized them. This is believed to be in large part because the Lenape were denied access to horses and firearms, whilst the Iroquois were armed by the Dutch. During the French and Indian War, the Lenape sided with the Kingdom of France which meant that European settlers continued to attack them after the war, often to such an extent that the dead since the wars outnumbered those killed during the war. It is known that when Christian Missionaries arrived and insisted on Lenapes abandoning traditional warfare practices they alienated them from other Lenape and Native American groups, who revered warriors. Over time the white population forcibly moved the Lenape state-by-state to Oklahoma.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI_STRATEGY">
+			<Text>No horses? No problem. The Ma-har-o-luk'ti plays the role of a Mounted Unit but without the characteristic defensive drawbacks, including the resource requirement. What is more, the Units scale automatically, saving on Gold for upgrades. You gain Influence when using the Ma-har-o-luk'ti in combat, so find an enemy to fight even if you don't intend on conquering them! The mobile attacker role is fulfilled most effectively alonger Rivers, where these Turtle Clan warriors move at double rate and have no combat penalty (they are not, however, Amphibious).</Text>
+		</Row>
+
+	</Language_en_US>
+</GameData>

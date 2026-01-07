@@ -31,7 +31,7 @@ VALUES
 	('BUILDING_D_FOR_SYNCRETISM', 'YIELD_FAITH', 200);
 
 -- update the rationalism policy
-UPDATE Policies SET ReligiousUnrestFlatReductionGlobal = 0 WHERE Type = 'POLICY_FREE_THOUGHT';
+UPDATE Policies SET ReligiousUnrestFlatReduction = 0 WHERE Type = 'POLICY_FREE_THOUGHT';
 
 INSERT INTO Policy_YieldModifiers
 	(PolicyType, YieldType, Yield)
@@ -123,7 +123,7 @@ WHERE SpecificCivRequired = 1 OR Type IN (
 	'IMPROVEMENT_PLANTATION',
 	-- hidden unique improvements
 	'IMPROVEMENT_POLDER_WATER',
-	'IMPROVEMENT_MONGOLIA_ORDO'
+	'IMPROVEMENT_ORDO'
 );
 
 CREATE TRIGGER HarmonyUICustomCivs

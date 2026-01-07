@@ -1,0 +1,34 @@
+--Released beta 24th Dec 2025
+-----------------------------
+v 1
+-----------------------------
+-- fixed some Row tags to Replace for Reindeer compatibility
+-- fixed trigger that made custom civs that loaded after CD not work
+-- changed Vietnam to Mandala (from Far Eastern) while we wait for compatibility
+-- gave Poland the West Slavic (SUBCULTURE_JFD_CENTRAL_SLAVIC) subculture
+-- added first SubCulture compatibility in Cultures/SubCultures
+ - Voivode : Great General with defensive and economic bonuses
+ - Dwor : Gallery/Manor replacement with free Opera House and yields, especially from policy unlock
+-- Added missing Baghlah strategic view icon
+-- Tolu-Batyr pushed back to Military Strategy (Prod cost doubles) and XP gain % lowered to 60 (from 100)
+-- added missing Building_WLTKDYieldMod copy statements (Sun Dance Site was missing it)
+-- Blocked Sun Dancer promo if you have an Animal Promotion already (prevents stacking multiple)
+-- Disabled food conversion on Mesopotamian Levy (lowers pop too weak)
+-- Added Boarding Party 1 to Baghlah, so they carry over more on upgrade (lowered CS by 1 to compensate)
+-- Grouped Sun Dancer and Izzat in the pedia, making them easier to find, and fixed a text error there
+-- Sun Dance Site WLTKD turns dropped to 10 (was 20)
+-- Undying Turtle defense boost increased to 15% (was 10%)
+-- Added Liquor to the Embrapa list of buffed resources
+-----------------------------
+v 2
+-----------------------------
+-- Removed unnecessary dependencies copied over from another mod (no effect atm but housekeeping)
+-- Halved the Pillage Gold on the Distillery (was 40)
+-- Fixed Voivode flag
+-- Added Lighthouse to Viking free buildings on found
+-- Airborne Ranger is now correctly Recon
+-- Grocer replacements now provide yields to Coca and Liquor
+-- Building_YieldModifiers now copied from base buildings (National Exhibit 10% culture)
+-- Dwor now 50% expensive than the base building, like the Barbican
+-- Removed Scotland and Louisiana from compatibility file since it was updated
+-- Reenabled food conversion on Mesopotamian Levy after DLL change not to consume pop

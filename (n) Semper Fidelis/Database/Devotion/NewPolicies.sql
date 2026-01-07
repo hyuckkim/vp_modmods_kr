@@ -37,7 +37,7 @@ WHERE SpecificCivRequired = 1 OR Type IN (
 	'IMPROVEMENT_HOLY_SITE',
 	-- hidden unique improvements
 	'IMPROVEMENT_POLDER_WATER',
-	'IMPROVEMENT_MONGOLIA_ORDO'
+	'IMPROVEMENT_ORDO'
 );
 
 CREATE TRIGGER DevoUICustomCivs

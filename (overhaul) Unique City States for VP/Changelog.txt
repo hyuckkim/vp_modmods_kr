@@ -1,4 +1,13 @@
 ﻿Changelog:
+v18.3:
+- CityStateStatusHelper.lua changes:
+	- reworked (and also fixed) contender tooltip function:
+		- now highlights your civ wiht green;
+		- defeated major civs are shifted to the bottom of the list;
+		- added missing tag label (deleted from VP);
+	- changed tag and reworked Unique Unit tooltip part;
+- fixed Potala Palace Wonder Popup text;
+
 v18.2:
 - reworked all dummy buildings' and policies' tags and names;
 - fixed:

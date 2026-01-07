@@ -18,7 +18,7 @@ UPDATE Policies
 SET
 	CatchSpiesModifier = 0,
 	FreeSpy = 0,
-	IlliteracyFlatReductionGlobal = 2
+	IlliteracyFlatReduction = 2
 WHERE Type = 'POLICY_DOUBLE_AGENTS';
 
 DELETE FROM Policy_YieldForSpyID WHERE PolicyType = 'POLICY_DOUBLE_AGENTS';
@@ -172,7 +172,7 @@ SET Text = 'Atomic Spies'
 WHERE Tag = 'TXT_KEY_POLICY_YOUNG_PIONEERS';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Atomic Spies[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Technology and 100 [ICON_VP_SPY_POINTS] Spy Points. Spies [COLOR_POSITIVE_TEXT]siphon[ENDCOLOR] +100% more [ICON_RESEARCH] Science. +100% [ICON_PRODUCTION] Production towards [COLOR_YELLOW]Atomic Bombs[ENDCOLOR]. '
+SET Text = '[COLOR_POSITIVE_TEXT]Atomic Spies[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Technology and 100 [ICON_SPY_POINT] Spy Points. Spies [COLOR_POSITIVE_TEXT]siphon[ENDCOLOR] +100% more [ICON_RESEARCH] Science. +100% [ICON_PRODUCTION] Production towards [COLOR_YELLOW]Atomic Bombs[ENDCOLOR]. '
 WHERE Tag = 'TXT_KEY_POLICY_YOUNG_PIONEERS_HELP';
 
 UPDATE Language_en_US
@@ -186,7 +186,7 @@ YieldChange = 4
 WHERE PolicyType = 'POLICY_NATIONALIZATION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Nationalization[ENDCOLOR]: Each [ICON_VP_OFFICE] Corporate Office counts as a Franchise. Foreign Franchises no longer benefit your Corporation, you can no longer construct [ICON_VP_FRANCHISE] Franchises in foreign Cities (except Vassals) and vice versa. +4 [ICON_RESEARCH] Science from all Corporation Offices.'
+SET Text = '[COLOR_POSITIVE_TEXT]Nationalization[ENDCOLOR]: Each [ICON_OFFICE] Corporate Office counts as a Franchise. Foreign Franchises no longer benefit your Corporation, you can no longer construct [ICON_FRANCHISE] Franchises in foreign Cities (except Vassals) and vice versa. +4 [ICON_RESEARCH] Science from all Corporation Offices.'
 WHERE Tag = 'TXT_KEY_POLICY_NATIONALIZATION_HELP';
 
 -- cultural revolution.  This is one of those lame ones
@@ -206,7 +206,7 @@ VALUES
 -- bit of great leap forward flavor
 -- wide happiness already exists in public school tenet, go for a bit different
 UPDATE Policy_BuildingClassHappiness SET 
-BuildingClassType = 'BUILDINGCLASS_COAL_PLANT',
+BuildingClassType = 'BUILDINGCLASS_REFINERY',
 Happiness = 5
 WHERE PolicyType = 'POLICY_DICTATORSHIP_PROLETARIAT';
 
@@ -218,7 +218,7 @@ WHERE Tag = 'TXT_KEY_POLICY_DICTATORSHIP_PROLETARIAT_HELP';
 
 UPDATE Policies SET
 	GreatEngineerRateModifier = 50,
-	IlliteracyFlatReductionGlobal = 0
+	IlliteracyFlatReduction = 0
 WHERE Type = 'POLICY_ACADEMY_SCIENCES';
 
 DELETE FROM Policy_BuildingClassYieldChanges WHERE PolicyType = 'POLICY_ACADEMY_SCIENCES';

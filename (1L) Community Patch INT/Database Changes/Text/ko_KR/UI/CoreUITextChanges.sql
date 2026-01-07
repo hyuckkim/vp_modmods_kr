@@ -105,7 +105,7 @@ WHERE Tag = 'TXT_KEY_PRODUCTION_RESOURCES_REQUIRED';
 
 -- Building
 UPDATE Language_ko_KR
-SET Text = '{1: number "''[ICON_HAPPINESS_1] 행복: ''#,''[ICON_HAPPINESS_3] 불행: ''#"}'
+SET Text = '[ICON_HAPPINESS_1] 행복: {2_Sign}{1_Num}'
 WHERE Tag = 'TXT_KEY_PRODUCTION_BUILDING_HAPPINESS';
 
 UPDATE Language_ko_KR
@@ -156,8 +156,8 @@ WHERE Tag = 'TXT_KEY_YIELD_FROM_RELIGION';
 UPDATE Language_ko_KR
 SET Text = '[ICON_BULLET] [ICON_CITIZEN] 인구에서 {2_IconString} {1_Num}'
 WHERE Tag = 'TXT_KEY_YIELD_FROM_POP';
-UPDATE Language_ko_KR
 
+UPDATE Language_ko_KR
 SET Text = '[ICON_BULLET] 그외 다른 출처에서 {2_IconString} {1_Num}'
 WHERE Tag = 'TXT_KEY_YIELD_FROM_MISC';
 

@@ -65,7 +65,7 @@ WHERE Tag = 'TXT_KEY_POLICY_INDUSTRIAL_ESPIONAGE_HELP';
 -- police state. too much overlap with foritifed borders, spy effect doesnt make sense since you arent going for sci victory. redesign
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Police State[ENDCOLOR]: The [ICON_CAPITAL] Capital gains +6% [ICON_TOURISM] Tourism for every 100 [ICON_VP_SPY_POINTS] Spy Points ever accumulated (up to 30%). +3 [ICON_HAPPINESS_1] Local Happiness from every Police Station. -25% Yield penalties for [ICON_PUPPET] Puppeted Cities.'
+SET Text = '[COLOR_POSITIVE_TEXT]Police State[ENDCOLOR]: The [ICON_CAPITAL] Capital gains +6% [ICON_TOURISM] Tourism for every 100 [ICON_SPY_POINT] Spy Points ever accumulated (up to 30%). +3 [ICON_HAPPINESS_1] Local Happiness from every Police Station. -25% Yield penalties for [ICON_PUPPET] Puppeted Cities.'
 WHERE Tag = 'TXT_KEY_POLICY_POLICE_STATE_HELP';
 
 DELETE FROM Policy_BuildingClassSecurityChanges WHERE PolicyType = 'POLICY_POLICE_STATE';
@@ -139,7 +139,7 @@ YieldChange = 5
 WHERE PolicyType = 'POLICY_INFILTRATION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Third Position[ENDCOLOR]: [ICON_VP_FRANCHISE] Corporate Franchises count double in the Cities of Civilizations you are at least [COLOR_MAGENTA]Popular[ENDCOLOR] with, and this does not count for your Global Franchise maximum. Can establish 5 additional [ICON_VP_FRANCHISE] Franchises in foreign Cities. +5 [ICON_PRODUCTION] Production from all [ICON_VP_OFFICE] Corporate Offices.'
+SET Text = '[COLOR_POSITIVE_TEXT]Third Position[ENDCOLOR]: [ICON_FRANCHISE] Corporate Franchises count double in the Cities of Civilizations you are at least [COLOR_MAGENTA]Popular[ENDCOLOR] with, and this does not count for your Global Franchise maximum. Can establish 5 additional [ICON_FRANCHISE] Franchises in foreign Cities. +5 [ICON_PRODUCTION] Production from all [ICON_OFFICE] Corporate Offices.'
 WHERE Tag = 'TXT_KEY_POLICY_INFILTRATION_HELP';
 
 UPDATE Language_en_US

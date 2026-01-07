@@ -50,7 +50,7 @@ SET
 WHERE Type = 'POLICY_COVERT_ACTION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Covert Action[ENDCOLOR]: Receive 100 [ICON_VP_SPY_POINTS] Spy Points. The [ICON_CAPITAL] Capital gains +3% [ICON_GOLD] Gold for every 100 [ICON_VP_SPY_POINTS] Spy Points ever accumulated (up to 30%). When successfully [ICON_PUPPET] Rigging an election in a City-State, the [ICON_INFLUENCE] Influence you gain and other Players lose is increased by +50%.'
+SET Text = '[COLOR_POSITIVE_TEXT]Covert Action[ENDCOLOR]: Receive 100 [ICON_SPY_POINT] Spy Points. The [ICON_CAPITAL] Capital gains +3% [ICON_GOLD] Gold for every 100 [ICON_SPY_POINT] Spy Points ever accumulated (up to 30%). When successfully [ICON_PUPPET] Rigging an election in a City-State, the [ICON_INFLUENCE] Influence you gain and other Players lose is increased by +50%.'
 WHERE Tag = 'TXT_KEY_POLICY_COVERT_ACTION_HELP';
 
 INSERT INTO Policy_YieldModifierFromActiveSpies
@@ -140,7 +140,7 @@ YieldChange = 4
 WHERE PolicyType = 'POLICY_GLOBALIZATION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Transnationalism[ENDCOLOR]: Each turn, increases the chance that a [ICON_VP_FRANCHISE] Corporate Franchise will appear in a foreign City to 15% (normally 5%). Global Franchise maximum increased by 25%, and every Town counts as a [ICON_VP_FRANCHISE] Franchise. +4 [ICON_CULTURE] Culture from all [ICON_VP_OFFICE] Corporation Offices.'
+SET Text = '[COLOR_POSITIVE_TEXT]Transnationalism[ENDCOLOR]: Each turn, increases the chance that a [ICON_FRANCHISE] Corporate Franchise will appear in a foreign City to 15% (normally 5%). Global Franchise maximum increased by 25%, and every Town counts as a [ICON_FRANCHISE] Franchise. +4 [ICON_CULTURE] Culture from all [ICON_OFFICE] Corporation Offices.'
 WHERE Tag = 'TXT_KEY_POLICY_GLOBALIZATION_HELP';
 
 -- universal healthcare. also weak for t2 and hospital is probably already built in important cities

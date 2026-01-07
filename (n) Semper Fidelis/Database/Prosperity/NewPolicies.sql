@@ -75,7 +75,7 @@ WHERE SpecificCivRequired = 1 OR Type IN (
 	'IMPROVEMENT_MANUFACTORY',
 	-- hidden unique improvements
 	'IMPROVEMENT_POLDER_WATER',
-	'IMPROVEMENT_MONGOLIA_ORDO'
+	'IMPROVEMENT_ORDO'
 );
 
 CREATE TRIGGER ProsperityUICustomCivs

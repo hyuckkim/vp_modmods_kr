@@ -621,20 +621,12 @@
 				('BUILDING_GATE_OF_SUN',	'FLAVOR_SCIENCE',		60);
 --------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
--- PARTHENON
-	UPDATE Buildings SET MaxStartEra = 'ERA_MEDIEVAL' WHERE Type = 'BUILDING_PARTHENON';
-	UPDATE Buildings SET WonderSplashAnchor = 'R,T' WHERE Type = 'BUILDING_PARTHENON';
-	---------------------------------------------------------
-	UPDATE Buildings SET Water = 1, MinAreaSize = 10, Hill = 1, IsNoWater = 1 WHERE Type = 'BUILDING_PARTHENON' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=2);
-	UPDATE Buildings SET Hill = 1 WHERE Type = 'BUILDING_PARTHENON' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
---------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------
 -- NALANDA
-	/*UPDATE Buildings SET MaxStartEra = 'ERA_MEDIEVAL' WHERE Type = 'BUILDING_NALANDA';
+	UPDATE Buildings SET MaxStartEra = 'ERA_MEDIEVAL' WHERE Type = 'BUILDING_NALANDA';
 	UPDATE Buildings SET WonderSplashAnchor = 'R,B' WHERE Type = 'BUILDING_NALANDA';
 	---------------------------------------------------------
 	UPDATE Buildings SET Water = 1, MinAreaSize = 10, Hill = 1, IsNoWater = 1 WHERE Type = 'BUILDING_NALANDA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=2);
-	UPDATE Buildings SET Hill = 1 WHERE Type = 'BUILDING_NALANDA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);*/
+	UPDATE Buildings SET Hill = 1 WHERE Type = 'BUILDING_NALANDA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
 --------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- EL GHRIBA SYNAGOGUE (NEW)
@@ -2101,7 +2093,7 @@
 	UPDATE Buildings SET WonderSplashAnchor = 'R,C' WHERE Type = 'BUILDING_SOLOVIETSKY';
 	---------------------------------------------------------
 	UPDATE Buildings SET Water = 1, MinAreaSize = 10, NearbyTerrainRequired = 'TERRAIN_TUNDRA' WHERE Type = 'BUILDING_SOLOVIETSKY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=2);
-	UPDATE Buildings SET NearbyTerrainRequired = 'TERRAIN_TUNDRA' WHERE Type = 'BUILDING_SOLOVIETSKY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
+	UPDATE Buildings SET Water = 1, MinAreaSize = 10 WHERE Type = 'BUILDING_SOLOVIETSKY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-SETTING-REQUIREMENT' AND Value=1);
 	---------------------------------------------------------
 	UPDATE Buildings SET ExtraCityHitPoints = 50, Defense = 500 WHERE Type = 'BUILDING_SOLOVIETSKY';
 
@@ -2299,6 +2291,10 @@
 				(BuildingType,			YieldType,			Yield)
 	VALUES		('BUILDING_BROOKLYN',	'YIELD_PRODUCTION',	50),
 				('BUILDING_BROOKLYN',	'YIELD_SCIENCE',	50);
+
+	INSERT INTO Building_GreatPersonProgressFromConstruction
+				(BuildingType,			GreatPersonType,		EraType,			Value) 
+	VALUES		('BUILDING_BROOKLYN',	'GREATPERSON_DIPLOMAT',	'ERA_INDUSTRIAL',	10);
 	---------------------------------------------------------
 	INSERT INTO Building_Flavors 
 				(BuildingType,			FlavorType,			Flavor)
@@ -4088,7 +4084,7 @@ UPDATE Buildings SET PolicyType = 'POLICY_HONOR_FINISHER' 		WHERE Type IN ('BUIL
 UPDATE Buildings SET PolicyType = 'POLICY_PIETY_FINISHER' 		WHERE Type IN ('BUILDING_SISTINE_CHAPEL') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Buildings SET PolicyType = 'POLICY_PATRONAGE_FINISHER'	WHERE Type IN ('BUILDING_SUMMER_PALACE') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Buildings SET PolicyType = 'POLICY_AESTHETICS_FINISHER'	WHERE Type IN ('BUILDING_MARAE_ARAHURAHU') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
-UPDATE Buildings SET PolicyType = 'POLICY_COMMERCE_FINISHER'	WHERE Type IN ('BUILDING_AKIHABARA') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
+UPDATE Buildings SET PolicyType = 'POLICY_COMMERCE_FINISHER'	WHERE Type IN ('BUILDING_BROOKLYN') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Buildings SET PolicyType = 'POLICY_EXPLORATION_FINISHER'	WHERE Type IN ('BUILDING_PANAMA_CANAL') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Buildings SET PolicyType = 'POLICY_RATIONALISM_FINISHER'	WHERE Type IN ('BUILDING_POLAR_EXPEDITION') AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 
@@ -4124,18 +4120,18 @@ SELECT		'BUILDING_SUMMER_PALACE',			'BUILDINGCLASS_OLD_BRIDGE'			WHERE EXISTS (S
 SELECT		'BUILDING_BIG_BEN',					'BUILDINGCLASS_SUMMER_PALACE'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
 SELECT		'BUILDING_KILWA_KISIWANI',			'BUILDINGCLASS_SUMMER_PALACE'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
 SELECT		'BUILDING_OLD_BRIDGE',				'BUILDINGCLASS_SUMMER_PALACE'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_MARAE_ARAHURAHU',					'BUILDINGCLASS_LOUVRE'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_MARAE_ARAHURAHU',					'BUILDINGCLASS_MONTE_CARLO'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_MARAE_ARAHURAHU',					'BUILDINGCLASS_MUSEUM_ISLAND'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_LOUVRE',					'BUILDINGCLASS_MARAE_ARAHURAHU'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_MONTE_CARLO',				'BUILDINGCLASS_MARAE_ARAHURAHU'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_MUSEUM_ISLAND',			'BUILDINGCLASS_MARAE_ARAHURAHU'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_AKIHABARA',				'BUILDINGCLASS_BROADWAY'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_AKIHABARA',				'BUILDINGCLASS_RUHR_VALLEY'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_AKIHABARA',				'BUILDINGCLASS_BANFF'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_BROADWAY',				'BUILDINGCLASS_AKIHABARA'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_RUHR_VALLEY',				'BUILDINGCLASS_AKIHABARA'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
-SELECT		'BUILDING_BANFF',					'BUILDINGCLASS_AKIHABARA'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_MARAE_ARAHURAHU',			'BUILDINGCLASS_LOUVRE'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_MARAE_ARAHURAHU',			'BUILDINGCLASS_MONTE_CARLO'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_MARAE_ARAHURAHU',			'BUILDINGCLASS_MUSEUM_ISLAND'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_LOUVRE',					'BUILDINGCLASS_MARAE_ARAHURAHU'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_MONTE_CARLO',				'BUILDINGCLASS_MARAE_ARAHURAHU'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_MUSEUM_ISLAND',			'BUILDINGCLASS_MARAE_ARAHURAHU'		WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_BROOKLYN',				'BUILDINGCLASS_BROADWAY'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_BROOKLYN',				'BUILDINGCLASS_RUHR_VALLEY'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_BROOKLYN',				'BUILDINGCLASS_BANFF'				WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_BROADWAY',				'BUILDINGCLASS_BROOKLYN'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_RUHR_VALLEY',				'BUILDINGCLASS_BROOKLYN'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
+SELECT		'BUILDING_BANFF',					'BUILDINGCLASS_BROOKLYN'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
 SELECT		'BUILDING_PANAMA_CANAL',			'BUILDINGCLASS_BRANDENBURG_GATE'	WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
 SELECT		'BUILDING_PANAMA_CANAL',			'BUILDINGCLASS_PENTAGON'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
 SELECT		'BUILDING_PANAMA_CANAL',			'BUILDINGCLASS_WHITE_SANDS'			WHERE EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) UNION ALL
@@ -4155,7 +4151,7 @@ UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Alhambra[EN
 UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Golden Pavilion[ENDCOLOR]', 		'Wonders: [COLOR_CYAN]Sistine Chapel[ENDCOLOR], [COLOR_CYAN]Golden Pavilion[ENDCOLOR]') 	WHERE Tag = 'TXT_KEY_POLICY_BRANCH_PIETY_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Kilwa Kisiwani[ENDCOLOR]', 		'Wonders: [COLOR_CYAN]Summer Palace[ENDCOLOR], [COLOR_CYAN]Kilwa Kisiwani[ENDCOLOR]') 		WHERE Tag = 'TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1) AND NOT EXISTS (SELECT * FROM BuildingClasses WHERE Type='BUILDINGCLASS_DUMMY_EE');
 UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Museum Island[ENDCOLOR]', 			'Wonders: [COLOR_CYAN]Marae Arahurahu[ENDCOLOR], [COLOR_CYAN]Museum Island[ENDCOLOR]') 		WHERE Tag = 'TXT_KEY_POLICY_BRANCH_AESTHETICS_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
-UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Broadway[ENDCOLOR]', 				'Wonders: [COLOR_CYAN]Akihabara Electric Town[ENDCOLOR], [COLOR_CYAN]Broadway[ENDCOLOR]') 	WHERE Tag = 'TXT_KEY_POLICY_BRANCH_COMMERCE_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
+UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Broadway[ENDCOLOR]', 				'Wonders: [COLOR_CYAN]Brooklyn Bridge[ENDCOLOR], [COLOR_CYAN]Broadway[ENDCOLOR]') 	WHERE Tag = 'TXT_KEY_POLICY_BRANCH_COMMERCE_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Pentagon[ENDCOLOR]', 				'Wonders: [COLOR_CYAN]Panama Canal[ENDCOLOR], [COLOR_CYAN]Pentagon[ENDCOLOR]') 				WHERE Tag = 'TXT_KEY_POLICY_BRANCH_EXPLORATION_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 UPDATE Language_en_US SET Text = REPLACE(Text, 'Wonders: [COLOR_CYAN]Bletchley Park[ENDCOLOR]', 		'Wonders: [COLOR_CYAN]Polar Expedition[ENDCOLOR], [COLOR_CYAN]Bletchley Park[ENDCOLOR]') 	WHERE Tag = 'TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP' AND EXISTS (SELECT * FROM Community WHERE Type='MW-SETTING-POLICIES' AND Value=1);
 --============================================--
@@ -4382,15 +4378,15 @@ WHERE Type IN (SELECT 'BUILDING_'||WType FROM MWfVPConfig WHERE WActive = 0);
 		FROM Units a, Unit_ResourceQuantityRequirements b
 		WHERE a.Type IN ('UNIT_EMISSARY', 'UNIT_ENVOY', 'UNIT_DIPLOMAT', 'UNIT_AMBASSADOR') AND a.Type = b.UnitType;
 	
-		INSERT INTO Units (Type, 		   Class, 			Combat, BaseSightRange, Cost, FaithCost, RequiresFaithPurchaseEnabled,  GlobalFaithPurchaseCooldown, PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas, MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, PolicyType, 				  PrereqTech, ObsoleteTech, CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra)
-		SELECT			   Type||'_FAITH', Class||'_FAITH',	Combat, BaseSightRange, Cost, 0,		 0,								0, 							 PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas, MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_DUMMY_ANGKOR_WAT', PrereqTech, NULL,			CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra
+		INSERT INTO Units (Type, 		   Class, 			Combat, BaseSightRange, Cost, FaithCost, RequiresFaithPurchaseEnabled,  GlobalFaithPurchaseCooldown, PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, PortraitIndex, IconAtlas,			 MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, PolicyType, 				  PrereqTech, ObsoleteTech, CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra)
+		SELECT			   Type||'_FAITH', Class||'_FAITH',	Combat, BaseSightRange, Cost, 0,		 0,								0, 							 PurchaseCooldown, Moves, Immobile, CombatClass, Domain, GoodyHutUpgradeUnitClass, XPValueAttack, IsMounted, Description, Civilopedia, Strategy, Help, Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, UnitFlagIconOffset, UnitFlagAtlas, 0,			  'MW_DIPLO_UNIT_ATLAS', MoveRate, ShowInPedia, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_DUMMY_ANGKOR_WAT', PrereqTech, NULL,			CivilianAttackPriority, MinAreaSize, ProductionCostAddedPerEra
 		FROM Units
 		WHERE Type IN ('UNIT_EMISSARY', 'UNIT_ENVOY', 'UNIT_DIPLOMAT', 'UNIT_AMBASSADOR');
 
-		UPDATE Units SET FaithCost = 200 WHERE Type = 'UNIT_EMISSARY_FAITH';
-		UPDATE Units SET FaithCost = 500 WHERE Type = 'UNIT_ENVOY_FAITH';
-		UPDATE Units SET FaithCost = 800 WHERE Type = 'UNIT_DIPLOMAT_FAITH';
-		UPDATE Units SET FaithCost = 1100 WHERE Type = 'UNIT_AMBASSADOR_FAITH';
+		UPDATE Units SET FaithCost = 200, PortraitIndex = 0 WHERE Type = 'UNIT_EMISSARY_FAITH';
+		UPDATE Units SET FaithCost = 500, PortraitIndex = 1 WHERE Type = 'UNIT_ENVOY_FAITH';
+		UPDATE Units SET FaithCost = 800, PortraitIndex = 2 WHERE Type = 'UNIT_DIPLOMAT_FAITH';
+		UPDATE Units SET FaithCost = 1100, PortraitIndex = 3 WHERE Type = 'UNIT_AMBASSADOR_FAITH';
 		
 		-- faith_purchase_of_diplomatic_units (lua_ability)
 	-- Chichen Itza

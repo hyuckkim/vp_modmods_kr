@@ -12,7 +12,7 @@ SET Text = 'Direct Action'
 WHERE Tag = 'TXT_KEY_POLICY_UNITED_FRONT';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Direct Action[ENDCOLOR]: Gain 20 [ICON_SILVER_FIST] Supply. Receive 100 [ICON_VP_SPY_POINTS] Spy Points. Receive 75 [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism when you identify a foreign [ICON_SPY] Spy, scaling with Era.'
+SET Text = '[COLOR_POSITIVE_TEXT]Direct Action[ENDCOLOR]: Gain 20 [ICON_SILVER_FIST] Supply. Receive 100 [ICON_SPY_POINT] Spy Points. Receive 75 [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism when you identify a foreign [ICON_SPY] Spy, scaling with Era.'
 WHERE Tag = 'TXT_KEY_POLICY_UNITED_FRONT_HELP';
 
 INSERT INTO Policy_YieldForSpyID

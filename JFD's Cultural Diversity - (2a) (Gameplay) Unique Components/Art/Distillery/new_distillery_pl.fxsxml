@@ -1,0 +1,9 @@
+<Asset>
+	<Mesh file="new_rum_distillery_pl.gr2" source="Max" />
+	<DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+	<BoneUsage>
+		<Bone name="FX_PillagedSmoke" />
+		<Bone name="Line01" />
+	</BoneUsage>
+	<TimedTrigger file="FX_Triggers_distillery_pl.ftsxml" source="Tool" model="Box01" state="0,1,2,3" />
+</Asset>

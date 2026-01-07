@@ -145,7 +145,7 @@
 			<Text>Radicalization</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_TERRORISM_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Radicalization[ENDCOLOR]: Receive 100 [ICON_VP_SPY_POINTS] Spy Points. Receive 100 [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLDEN_AGE] Golden Age Points when you perform a [ICON_SPY] Spy Mission, scaling with Era. Spies stationed in a foreign City gain +10 Network Points per turn.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Radicalization[ENDCOLOR]: Receive 100 [ICON_SPY_POINT] Spy Points. Receive 100 [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_GOLDEN_AGE] Golden Age Points when you perform a [ICON_SPY] Spy Mission, scaling with Era. Spies stationed in a foreign City gain +10 Network Points per turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_TERRORISM_TEXT">
 			<Text>In recent decades, Islamic terrorism has garnered global attention, driven by extremist interpretations of Islam and fueled by grievances ranging from political oppression to religious sectarianism. The tactics of indiscriminate violence and intimidation employed by groups like Al-Qaeda and ISIS have left a trail of devastation and fear. Similarly, the IRA's campaign of violence in Northern Ireland, rooted in nationalist aspirations and grievances against British rule, resulted in decades of bloodshed and conflict. The use of bombings, assassinations, and other terrorist tactics aimed to advance their political objectives and destabilize the status quo. In India, incidents of Hindu extremist violence, such as the bombings carried out by groups like the Rashtriya Swayamsevak Sangh (RSS), have targeted religious minorities and fueled communal tensions. These acts of terror often stem from ethnonationalist ideologies and seek to assert dominance or retaliate against perceived threats.</Text>
@@ -237,7 +237,7 @@
 			<Text>Not-For-Profits</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DEVO_CORPORATIONS_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Not-For-Profits[ENDCOLOR]: +50% [ICON_RELIGION] Pressure to foreign Cities connected via [ICON_INTERNATIONAL_TRADE] Trade Routes. Every Holy Site counts as an additional [ICON_VP_FRANCHISE] Franchise. +5 [ICON_PEACE] Faith from all [ICON_VP_OFFICE] Corporate Offices.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Not-For-Profits[ENDCOLOR]: +50% [ICON_RELIGION] Pressure to foreign Cities connected via [ICON_INTERNATIONAL_TRADE] Trade Routes. Every Holy Site counts as an additional [ICON_FRANCHISE] Franchise. +5 [ICON_PEACE] Faith from all [ICON_OFFICE] Corporate Offices.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DEVO_CORPORATIONS_TEXT">
 			<Text>Not-for-profits are incorporated entities who provide a social, education, medical, or other non-commercially motivated service. Some are domestic, others operate overseas. While not all are religious, western international aid organizations can be seen to have their roots in Christian missionary work, which has historically involved the establishment of schools, hospitals, and orphanages, alongside efforts to spread religious teachings and values. Similarly, Islamic waqf institutions, which date back to the early days of Islam, have played a crucial role in providing charitable services such as education, healthcare, and social welfare. Indeed zakat (giving of alms) is one of the five pillars of Islam. From Buddhist monastic traditions to Hindu dharmashalas and Sikh langar kitchens, diverse communities have embraced the ethos of seva (selfless service) to uplift the marginalized and alleviate suffering.</Text>
@@ -248,7 +248,7 @@
 			<Text>Fundamentalism</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FUNDAMENTALISM_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Fundamentalism[ENDCOLOR]: Unlocks the [COLOR_CYAN]Prayer[ENDCOLOR] Process. +6 [ICON_PEACE] Faith from [ICON_VP_ARTIFACT] Artifacts and +6 [ICON_RESEARCH] Science from [ICON_VP_GREATWRITING] Great Works of Writing. [ICON_INQUISITOR] Inquisitors gain the [COLOR_POSITIVE_TEXT]Church Militant[ENDCOLOR] Promotion.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Fundamentalism[ENDCOLOR]: Unlocks the [COLOR_CYAN]Prayer[ENDCOLOR] Process. +6 [ICON_PEACE] Faith from [ICON_ARTIFACT] Artifacts and +6 [ICON_RESEARCH] Science from [ICON_GW_WRITING] Great Works of Writing. [ICON_INQUISITOR] Inquisitors gain the [COLOR_POSITIVE_TEXT]Church Militant[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FUNDAMENTALISM_TEXT">
 			<Text>Characterized by a commitment to the absolute truth and the authority of sacred scriptures, Fundamentalism shapes the fabric of highly religious societies. Inspired by the belief in the inerrancy of religious texts, adherents uphold traditional teachings and doctrines as immutable truths, guiding every aspect of individual and communal life. The ways in which fundamentalist regimes confront the challenges of modernity and societal change is often one of rejection, but new concepts can also be assimilated using a logic based in religious concepts: an example would be the Catholic Church accepting the existence of the Big Bang.</Text>

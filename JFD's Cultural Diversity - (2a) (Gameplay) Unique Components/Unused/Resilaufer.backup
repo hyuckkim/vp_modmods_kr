@@ -1,0 +1,44 @@
+-- =============================================================
+-- Reislaufer (Pikeman)
+-- earlier is better. Predates "Tercio" type units
+-- ==============================================================
+INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
+	SELECT	('ART_DEF_UNIT_LS_SWISS_UU_UNIT'), DamageStates, Formation
+	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_PIKEMAN');
+
+INSERT INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType,UnitMemberInfoType,NumMembers)
+	SELECT	('ART_DEF_UNIT_LS_SWISS_UU_UNIT'), ('ART_DEF_UNIT_MEMBER_LS_SWISS_UU_UNIT'), NumMembers
+	FROM ArtDefine_UnitInfoMemberInfos WHERE (UnitInfoType = 'ART_DEF_UNIT_PIKEMAN');
+
+INSERT INTO ArtDefine_UnitMemberCombats (UnitMemberType, EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+	SELECT	('ART_DEF_UNIT_MEMBER_LS_SWISS_UU_UNIT'), EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
+	FROM ArtDefine_UnitMemberCombats WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_PIKEMAN');
+
+INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+	SELECT ('ART_DEF_UNIT_MEMBER_LS_SWISS_UU_UNIT'), "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+	FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_PIKEMAN');
+
+INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
+	SELECT	('ART_DEF_UNIT_MEMBER_LS_SWISS_UU_UNIT'), Scale, ZOffset, Domain, ('reislaufer.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
+	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_PIKEMAN');
+
+INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
+  VALUES ('ART_DEF_UNIT_LS_SWISS_UU_UNIT', 'Unit', 'sv_reislaufer.dds');
+-- ======================================================================
+
+UPDATE Units SET
+PurchaseOnly = 1,
+MoveAfterPurchase = 1,
+Combat = Combat + 4,
+RequiresFaithPurchaseEnabled = 0,
+Cost = Cost + 20
+WHERE Type = 'UNIT_CD_REISLAUFER';
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+	('UNIT_CD_REISLAUFER', 'PROMOTION_FORMATION_2');
+
+UPDATE Language_en_US SET
+Text = 'Requires the [ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_SHORT_DESC}[ENDCOLOR] Cultural Group. Starts with the [COLOR_POSITIVE_TEXT]Formation I[ENDCOLOR] Promotion like the Pikeman it replaces, but additionally [COLOR_POSITIVE_TEXT]Formation II[ENDCOLOR]. It is also considerably stronger and more expensive. Can be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]May only be purchased with [ICON_GOLD] Gold or [ICON_PEACE] Faith and receives full XP. Can move immediately after being purchased.'
+WHERE Tag = 'TXT_KEY_UNIT_CD_REISLAUFER_HELP';

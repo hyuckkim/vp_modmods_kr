@@ -10,8 +10,8 @@
 			<AIDelayNoReligion>true</AIDelayNoReligion>
 			<!-- not sure how this works so let's not use it -->
 			<!--<LockedWithoutReligion>true</LockedWithoutReligion>-->
-			<FirstAdopterFreePolicies>1</FirstAdopterFreePolicies>			
-			<SecondAdopterFreePolicies>1</SecondAdopterFreePolicies>
+			<FirstAdopterFreePolicies>0</FirstAdopterFreePolicies>			
+			<SecondAdopterFreePolicies>0</SecondAdopterFreePolicies>
 		</Row>
 		<Row>
 			<Type>POLICY_BRANCH_HARMONY</Type>
@@ -23,8 +23,8 @@
 			<AIDelayNoReligion>true</AIDelayNoReligion>
 			<!-- not sure how this works so let's not use it -->
 			<!--<LockedWithoutReligion>true</LockedWithoutReligion>-->
-			<FirstAdopterFreePolicies>1</FirstAdopterFreePolicies>		
-			<SecondAdopterFreePolicies>1</SecondAdopterFreePolicies>
+			<FirstAdopterFreePolicies>0</FirstAdopterFreePolicies>		
+			<SecondAdopterFreePolicies>0</SecondAdopterFreePolicies>
 		</Row>
 		<Row>
 			<Type>POLICY_BRANCH_PROSPERITY</Type>
@@ -36,8 +36,8 @@
 			<AIDelayNoReligion>true</AIDelayNoReligion>
 			<!-- not sure how this works so let's not use it -->
 			<!--<LockedWithoutReligion>true</LockedWithoutReligion>-->
-			<FirstAdopterFreePolicies>1</FirstAdopterFreePolicies>		
-			<SecondAdopterFreePolicies>1</SecondAdopterFreePolicies>
+			<FirstAdopterFreePolicies>0</FirstAdopterFreePolicies>		
+			<SecondAdopterFreePolicies>0</SecondAdopterFreePolicies>
 		</Row>
 	</PolicyBranchTypes>
 	<Concepts>

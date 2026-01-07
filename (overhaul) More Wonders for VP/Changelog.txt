@@ -1,4 +1,34 @@
 MW Changelog:
+v24.5:
+- fixed:
+	- Globe Theater: multiple errors in lua requirement;
+	- Palace of Westminster: wrong number of CSs in splash text;
+	- Solovietsky Monastery: now correct Coast requirement (in light version) supporting production boost to Naval Units;
+
+v24.4:
+- sounds:
+	- added all missing quote sounds (by @Hokath);
+	- fixed Slater Mill quote sound;
+	- reworked incomplete Mount Rushmore sound;
+	- deleted unused Motherland Calls quote sound (it was readded with different quote by VP?);
+	- equalized all new sounds' volume and raised it a bit to be closer to original lector;
+	- marked wonders with no woman version (there's a man version copied);
+- changed:
+	- Brooklyn Bridge: added new ability (by @gwennog);
+	- Angkor Wat: new Diplo units (that can be bought with Faith) have now separated slightly changed icons;
+	- added new text tags to replace lua custom texts;
+- fixed:
+	- Brooklyn Bridge: now correctly set as a Industry Wonder;
+	- Parthenon/Nalanda: forgotten requirement swap is now done;
+	- St. Peters Basilica: added missing Help text;
+	- Eye of the Sahara: now tech boosts are spread through techs (all tech boosts were added at Satellites);
+	- theming bonuses:
+		- corrected Help texts of VP World Wonders having Theming Bonuses;
+		- added missing Theming Bonuses to Help texts of MW World Wonders;
+	- added help texts to World Wonder dummy buildings and added prefixes to their names;
+	- temporarily (I hope) fixed missing Help texts (until VP finds the issue);
+	- numerous text fixes and optimizations;
+
 v24.3:
 - reworked all dummy buildings' and policies' tags and names;
 
