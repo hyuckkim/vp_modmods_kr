@@ -74,7 +74,8 @@ function Jar_Tongariro_CityCanConstruct(playerID, cityID, buildingType)
 end
 GameEvents.CityCanConstruct.Add(Jar_Tongariro_CityCanConstruct)
 
-local iFVolcano = GameInfoTypes.FEATURE_VOLCANO_NEW
+local iFVolcano = GameInfoTypes.FEATURE_JAR_VOLCANO
+local iEruption = GameInfoTypes.IMPROVEMENT_JAR_ERUPTION
 
 function Jar_PompeiiWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold, bIncludeFaithOrCulture)
 	local pPlayer = Players[iPlayer]	
@@ -95,99 +96,108 @@ function Jar_TongariroWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold,
 	end	
 end
 GameEvents.CityConstructed.Add(Jar_TongariroWonderDummyPolicy)
+--==========================================================================================================================
+-- VOLCANO PLACEMENT ON MAP
+--==========================================================================================================================
+local MinDistanceVolcanoes = Game.GetCommunityOptions("JAR_VOLCANOES_MINDISTANCE")
 
---[[function Jar_VolcanoFood2AdjacentTiles(iPlotX, iPlotY, iPlotOwner, iOldFeature, iNewFeature)
-	local pPlot = Map.GetPlot(iPlotX, iPlotY);
-	if pPlot then
-		if iNewFeature == iFVolcano then
-			for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-				if pAdjacentPlot and (not pAdjacentPlot:IsWater()) and (not pAdjacentPlot:IsMountain()) and pPlot:GetFeatureType() ~= iFVolcano then
-					Game.SetPlotExtraYield(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), GameInfo.Yields.YIELD_FOOD.ID, 1 )				
-				end
+for iPlot = 0, Map.GetNumPlots() - 1 do
+    local pPlot = Map.GetPlotByIndex(iPlot)
+	if pPlot:GetImprovementType() == iEruption and pPlot:GetFeatureType() == -1 then
+		pPlot:SetFeatureType(iFVolcano)
+	end
+	if pPlot:GetImprovementType() == -1 and pPlot:GetFeatureType() == iFVolcano and pPlot:IsMountain() then
+		pPlot:SetImprovementType(iEruption)
+	end	
+end
+
+function Jar_Volcano_Adjustments(iPlayer)
+	local pPlayer = Players[iPlayer]
+	if not pPlayer:IsAlive() then return end
+	if not pPlayer:IsHuman() then return end
+	local tVolcanoHills = {}
+	if Game.GetElapsedGameTurns() == 1 then
+		for iPlot = 0, Map.GetNumPlots() - 1 do
+			local pPlot = Map.GetPlotByIndex(iPlot)
+			if pPlot:GetImprovementType() == iEruption and pPlot:GetFeatureType() == -1 then
+				pPlot:SetFeatureType(iFVolcano)
 			end
-		end
-		if iOldFeature == iFVolcano then
-			for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-				if pAdjacentPlot and (not pAdjacentPlot:IsWater()) and (not pAdjacentPlot:IsMountain()) and pPlot:GetFeatureType() ~= iFVolcano then
-					Game.SetPlotExtraYield(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), GameInfo.Yields.YIELD_FOOD.ID, -1 )				
-				end
+			if pPlot:GetFeatureType() == GameInfoTypes.FEATURE_JAR_VOLCANO_P then
+				pPlot:SetTerrainType(TerrainTypes.TERRAIN_MOUNTAIN, false, true)
+				pPlot:SetPlotType(PlotTypes.PLOT_MOUNTAIN);
+				pPlot:SetFeatureType(-1)
+				pPlot:SetFeatureType(iFVolcano)
 			end
 		end
 	end
 end
-GameEvents.TileFeatureChanged.Add(Jar_VolcanoFood2AdjacentTiles)]]
---==========================================================================================================================
--- VOLCANO PLACEMENT ON MAP
---==========================================================================================================================
-local VolcanoPercent = Game.GetCommunityOptions("JAR_VOLCANOES_PERCENT")
-local MinDistanceVolcanoes = Game.GetCommunityOptions("JAR_VOLCANOES_MINDISTANCE")
-local MaxDistanceFromAtoll = 2
+GameEvents.PlayerDoTurn.Add(Jar_Volcano_Adjustments)
 
 function Jar_PlaceVolcanoes()
-	local tEligiblePlots = {}
+	local tVolcanoPlots = {}
 	for plotLoop = Map.GetNumPlots() - 1, 0, -1 do
 		local pPlot = Map.GetPlotByIndex(plotLoop)
-		if pPlot:IsHills() and pPlot:GetResourceType()== -1 and pPlot:GetImprovementType() == -1 and tAllowedFeatures[pPlot:GetFeatureType()] and not pPlot:IsUnit() then
-			local iAdjacentLand = 0
-			for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-				if pAdjacentPlot and not pAdjacentPlot:IsWater() then
-					iAdjacentLand = iAdjacentLand +1
+		local bMount = pPlot:IsMountain() and pPlot:GetFeatureType() == -1
+		if bMount and pPlot:GetResourceType()== -1 and pPlot:GetImprovementType() == -1 and not pPlot:IsUnit() then
+			local CanPlace = true
+			local iAdjacentLand = 0			
+            -- Check if distance is far enough from other volcanoes
+            for k, PlVplot in ipairs(tVolcanoPlots) do
+                if Map.PlotDistance(pPlot:GetX(), pPlot:GetY(), PlVplot:GetX(), PlVplot:GetY()) < MinDistanceVolcanoes then
+                   CanPlace = false
+                    break
+                end
+            end
+			if CanPlace then
+				for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+					local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
+					if pAdjacentPlot and not pAdjacentPlot:IsWater() then
+						iAdjacentLand = iAdjacentLand +1
+					end
+				end			
+				if iAdjacentLand >2 then
+					table.insert(tVolcanoPlots, pPlot)
 				end
-			end			
-			if iAdjacentLand >2 and GetRandom(1, 100) <= VolcanoPercent then
-				table.insert(tEligiblePlots, pPlot)
 			end
 		end		
 	end
-	local tNearPlots = {}
-	for k, v in pairs(tEligiblePlots) do
-		tNearPlots[k] = {}
-		for a, b in pairs(tEligiblePlots) do
-			local distance = Map.PlotDistance(v:GetX(), v:GetY(), b:GetX(), b:GetY())
-			if b ~= v and distance < MinDistanceVolcanoes then
-				table.insert(tNearPlots[k], b)
-			end
-		end
-	end	
-	local tVolcanoPlots = {}
-	local tAvoidPlots = {}
-	local imax = #tEligiblePlots
-	local i=1
-	while( i <= imax ) do
-		if next (tEligiblePlots) ~= nil then
-			local randNum = GetRandom(1, #tEligiblePlots)
-			table.insert(tVolcanoPlots, tEligiblePlots[ randNum ] )
-			if next (tNearPlots[randNum]) ~= nil then
-				for index, value in pairs(tNearPlots[randNum]) do
-					table.insert(tAvoidPlots, value )
+	for plotLoop = Map.GetNumPlots() - 1, 0, -1 do
+		local pPlot = Map.GetPlotByIndex(plotLoop)
+		local bHill= pPlot:IsHills() and tAllowedFeatures[pPlot:GetFeatureType()]
+		if bHill and pPlot:GetResourceType()== -1 and pPlot:GetImprovementType() == -1 and not pPlot:IsUnit() then
+			local CanPlace = true
+			local iAdjacentLand = 0			
+            -- Check if distance is far enough from other volcanoes
+            for k, PlVplot in ipairs(tVolcanoPlots) do
+                if Map.PlotDistance(pPlot:GetX(), pPlot:GetY(), PlVplot:GetX(), PlVplot:GetY()) < MinDistanceVolcanoes then
+                   CanPlace = false
+                    break
+                end
+            end
+			if CanPlace then
+				for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+					local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
+					if pAdjacentPlot and not pAdjacentPlot:IsWater() then
+						iAdjacentLand = iAdjacentLand +1
+					end
+				end			
+				if iAdjacentLand >2 then
+					table.insert(tVolcanoPlots, pPlot)
 				end
 			end
-			table.remove(tEligiblePlots, randNum)
-		end	
-		i = i+1
+		end		
 	end
-	local tVolcanoPlots2 = {}
 	for k, v in pairs(tVolcanoPlots) do
-		local bcheck = true
-		for a, b in pairs(tAvoidPlots) do
-			if v:GetX() == b:GetX() and v:GetY() == b:GetY() then
-				bcheck = false
-			end
+		if v:IsMountain() then
+			v:SetImprovementType(iEruption)
+		elseif v:IsHills() then
+			v:SetFeatureType(GameInfoTypes.FEATURE_JAR_VOLCANO_P)
 		end
-		if bcheck then
-			table.insert(tVolcanoPlots2, v )
-		end
-	end
-	for k, v in pairs(tVolcanoPlots2) do
-		v:SetFeatureType(iFVolcano)
 		print(k .. ") Volcano placed: " .. v:GetX() .. ", " .. v:GetY() )
 		
 		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 			local pAdjacentPlot = Map.PlotDirection(v:GetX(), v:GetY(), direction)
-			if pAdjacentPlot and (not pAdjacentPlot:IsWater()) and (not pAdjacentPlot:IsMountain()) and pPlot:GetFeatureType() ~= iFVolcano then
+			if pAdjacentPlot and (not pAdjacentPlot:IsWater()) and (not pAdjacentPlot:IsMountain()) and pAdjacentPlot:GetFeatureType() ~= iFVolcano then
 				Game.SetPlotExtraYield(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), GameInfo.Yields.YIELD_FOOD.ID, 1 )				
 			end
 		end		
@@ -210,7 +220,7 @@ function Jar_VolcanoEruption(iPlayer, iCityID, iEvent)
 	if iEvent == GameInfoTypes.CITY_EVENT_JAR_VOLCANO_1 or iEvent == GameInfoTypes.CITY_EVENT_JAR_VOLCANO_2 then
 		for i = 0, pCity:GetNumCityPlots() - 1, 1 do
 			local pPlot = pCity:GetCityIndexPlot(i)
-			if pPlot:GetFeatureType() == iFVolcano then
+			if pPlot:GetFeatureType() == iFVolcano or pPlot:GetImprovementType() == iEruption then
 				for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 					local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
 					if pAdjacentPlot and pAdjacentPlot:GetImprovementType() > 2 then

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2ec6979e-3b1a-4d6e-9e92-b3b6eea4fb9f" version="8">
+  <Properties>
+    <Name>!Jarcast's Volcanoes for VP</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Adds the Volcano as spawnable feature on the map.</Teaser>
+    <Description>[ICON_BULLET]Compatible with any mapscript.
+[NEWLINE][ICON_BULLET]Volcanoes yield +1 [ICON_FOOD] Food to adjacent tiles.
+[NEWLINE][ICON_BULLET]Goddess of Nature belief applies also to Volcanoes;
+[NEWLINE][ICON_BULLET]Existing and modded buildings, policies, traits involving mountains provide same bonuses to Volcanoes.
+[NEWLINE][ICON_BULLET] 2 new World Wonder requiring a Volcano nearby: Pompeii ([ICON_RESEARCH] Archaeology, 1300 [ICON_PRODUCTION]), Tongariro National Park ([ICON_RESEARCH] Biology, 1550 [ICON_PRODUCTION])
+[NEWLINE][ICON_BULLET] 2 new Buildings requiring a Volcano nearby: Obsidian Works ([ICON_RESEARCH] Construction, 85 [ICON_PRODUCTION], 1 GoldMaintenance), Volcano Observatory ([ICON_RESEARCH] Scientific Theory, 900 [ICON_PRODUCTION], 4 GoldMaintenance).
+[NEWLINE][ICON_BULLET] Krakatoa, Fuji, Kilimanjaro count as Volcanoes for building requirements. If More Wonders for VP is enabled also Mt. Paektu and Dallol.</Description>
+    <Authors>Jarcast, ghost_toast, zai4z</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/volcanoes-for-vp.689150/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="8e54eb87-31e8-4fcd-aafe-ede055b463d0" minversion="0" maxversion="999" title="Even More Resources for Vox Populi" />
+    <Mod id="6f6c20b3-020c-4c62-9668-38e87eb66065" minversion="0" maxversion="999" title="Jarcast's Prehistoric Era" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="16DFDBC827FB6BC7E372520BAF025828" import="1">Art/EventEruption.dds</File>
+    <File md5="34428A5B9A5EFFF40E419DE7D32FB038" import="1">Art/Jar_Pompeii_audio.mp3</File>
+    <File md5="BDDB348FB054F19D13826F5CBCF4DFD0" import="1">Art/Jar_Pompeii_splash.dds</File>
+    <File md5="E694D1D6F5CE3550D91C5991A5061AED" import="1">Art/Jar_Tongariro_audio.mp3</File>
+    <File md5="FAED7AED72421E1C0074BAF5A59F5407" import="1">Art/Jar_Tongariro_splash.dds</File>
+    <File md5="63423B91D985CD24C8CDF2EB5023D301" import="1">Art/Jar_Volcano_IconAtlas_128.dds</File>
+    <File md5="75B46BB05A482A42B2CD8B15462A728A" import="1">Art/Jar_Volcano_IconAtlas_256.dds</File>
+    <File md5="7CA2FDF9BF5F15F3E7163F973C3D804A" import="1">Art/Jar_Volcano_IconAtlas_45.dds</File>
+    <File md5="C886EA534AED9857D953177D30BA4CF6" import="1">Art/Jar_Volcano_IconAtlas_64.dds</File>
+    <File md5="E0F560E4C98DD6CC74AB384B276DDA04" import="1">Art/Jar_Volcano_IconAtlas_80.dds</File>
+    <File md5="A75112C4A8C3825B78AEC902F23CC378" import="1">Art/ObsidianFontIcon_22.ggxml</File>
+    <File md5="B29FA633573217C5656FFF80C5283B27" import="1">Art/Obsidian/Anc_Obsidian_Quarry.fxsxml</File>
+    <File md5="AF4D71998D70D9C9FC6BFF561B2333E8" import="1">Art/Obsidian/Anc_Obsidian_Quarry.gr2</File>
+    <File md5="577EF72CBF5DE34C59A79AE2805AF0C0" import="1">Art/Obsidian/FX_Triggers_PL_IND_Obsidian_Quarry.ftsxml</File>
+    <File md5="EB6E85A9D5526B91232C28ABD84B8CC4" import="1">Art/Obsidian/HB_Anc_Obsidian_Quarry.fxsxml</File>
+    <File md5="F2DC56A1DB605EAFDBE067FF357000F6" import="1">Art/Obsidian/HB_Anc_Obsidian_Quarry.gr2</File>
+    <File md5="A1F402EC5D8A9800714DF40C5FB58515" import="1">Art/Obsidian/HB_IND_Obsidian_Quarry.fxsxml</File>
+    <File md5="58A134B84FF68AC5FA616718604C0D2A" import="1">Art/Obsidian/HB_IND_Obsidian_Quarry.gr2</File>
+    <File md5="53A4145EDF11E8E0B6AB74EC1566BB02" import="1">Art/Obsidian/IND_Obsidian_Quarry.fxsxml</File>
+    <File md5="6E42EEA433E73717B67A1EB9C5C8866B" import="1">Art/Obsidian/IND_Obsidian_Quarry.gr2</File>
+    <File md5="82853F9783035CA65D500140F4D12285" import="1">Art/Obsidian/Obsidian.fxsxml</File>
+    <File md5="6B439BE4E4099D991D76CD904B5A691B" import="1">Art/Obsidian/Obsidian.gr2</File>
+    <File md5="B865CF8DD2412F3196A0B0702032B12F" import="1">Art/Obsidian/Obsidian_Decal_DIFF.dds</File>
+    <File md5="8E47C27E3B3A3BDD707E51E2914525BE" import="1">Art/Obsidian/Obsidian_Ore_Decal_H.dds</File>
+    <File md5="5380507E945AA1FDB440D8CE49050AC3" import="1">Art/Obsidian/Obsidian_Ore_DIFF.dds</File>
+    <File md5="98FF3577DA9D23BF5555ABF6A34D8907" import="1">Art/Obsidian/Obsidian_Ore_SREF.dds</File>
+    <File md5="46C06D5E482F705E9A92A4A714089BE8" import="1">Art/Obsidian/Obsidian_Quarry_Decal_D.dds</File>
+    <File md5="CA2CA09675248E8BEFE7F02F648F7522" import="1">Art/Obsidian/Obsidian_Quarry_Decal_H.dds</File>
+    <File md5="2B122DA51ECC9F0181E1183C211C16F9" import="1">Art/Obsidian/Obsidian_Quarry_Rock_D.dds</File>
+    <File md5="98FF3577DA9D23BF5555ABF6A34D8907" import="1">Art/Obsidian/Obsidian_Quarry_Rock_S.dds</File>
+    <File md5="1728329DE592057D261F9E7D511EDBB0" import="1">Art/Obsidian/PL_Anc_Obsidian_Quarry.fxsxml</File>
+    <File md5="794AC86E13BB22964B5DC4A8C13D733A" import="1">Art/Obsidian/PL_Anc_Obsidian_Quarry.gr2</File>
+    <File md5="B98F6AFF07104F04372013C60CD7D879" import="1">Art/Obsidian/PL_IND_Obsidian_Quarry.fxsxml</File>
+    <File md5="9345A6F50FC00C91AC500594FC885814" import="1">Art/Obsidian/PL_IND_Obsidian_Quarry.gr2</File>
+    <File md5="78D5FC9057E21727DBBD8AB309A8D395" import="1">Art/Obsidian/PL_Obsidian_Quarry_Rock_D.dds</File>
+    <File md5="98FF3577DA9D23BF5555ABF6A34D8907" import="1">Art/Obsidian/PL_Obsidian_Quarry_Rock_S.dds</File>
+    <File md5="F78D324DD1A532620DC32C30B17C2122" import="1">Art/Obsidian/SV_Obsidian.dds</File>
+    <File md5="B9648E561C106A7FD2242998751837C0" import="1">Art/Obsidian_FontIcon.dds</File>
+    <File md5="E48229648E39B2962F65D86B4808B1B9" import="1">Art/VillaMisteriAffresco.dds</File>
+    <File md5="62F955CB730DE6A3A011290170C697C9" import="1">Art/Volcano/Dormant.dds</File>
+    <File md5="A9BE1267EF53ED4B1363837AA1BB19DA" import="1">Art/Volcano/Dormant.fxsxml</File>
+    <File md5="8B2C539390EBE6B6DC1616AA3B3ED007" import="1">Art/Volcano/Dormant.gr2</File>
+    <File md5="0C9D3F5E09C9579B88EABF026BD42443" import="1">Art/Volcano/Eruption2.dds</File>
+    <File md5="1CAAAF94EA7BB056A7C14BAA4DFDA735" import="1">Art/Volcano/Eruption2.fxsxml</File>
+    <File md5="62ACFBC107B1EEE7D03EB2CDA871FE7C" import="1">Art/Volcano/Eruption2.gr2</File>
+    <File md5="A2ED2C601A87AE832B5A51C97FB10E9A" import="1">Art/Volcano/feature_volcano_2.fxsxml</File>
+    <File md5="9C793E1D17ACAD46818D66578D0144DE" import="1">Art/Volcano/FX_Triggers_Eruption.ftsxml</File>
+    <File md5="774D219798EED8AC55EF8E8902A19079" import="1">Art/Volcano/no_height_decal.dds</File>
+    <File md5="18732B8BDF9FF864FC46285D02064DC6" import="1">Art/Volcano/Volcano_2.dds</File>
+    <File md5="C1A16B23C419BC4CCB94DB6927DB9E17" import="1">Art/Volcano/volcano_2.gr2</File>
+    <File md5="0D8ACCAFCDA3C9577CFA692BD0480EFF" import="0">Jar_Volcano_EventsDefine.sql</File>
+    <File md5="DD41D91AB002116505DBD5C2EE03F277" import="0">Jar_VolcanoesFunctions.lua</File>
+    <File md5="9CD7AF12DB1DF3FC992A8AC9CCBD75C9" import="0">Jar_Volcano_GameDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Jar_Volcano_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Jar_Volcano_EventsDefine.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Jar_VolcanoesFunctions.lua">
+      <Name>Jar_VolcanoesFunctions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
