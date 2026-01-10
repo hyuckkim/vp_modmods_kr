@@ -44,7 +44,7 @@
 			<Text>Earthly Paradise</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_PARADISE">
-			<Text>Gain 10 [ICON_GOLD] Gold when a Building is constructed, scaling with Era, and 30 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith when you construct a World Wonder for each City following your [ICON_RELIGION] Religion (max 25 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Place of Truth National Wonder[ENDCOLOR] (+2 [ICON_PEACE] Faith, +6 [ICON_PRODUCTION] Production, +10% [ICON_PRODUCTION] Production towards Buildings; +5 [ICON_PRODUCTION] Production from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).</Text>
+			<Text>Gain 20 [ICON_GOLD] Gold when a Building is constructed, scaling with Era, and 50 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith when you construct a World Wonder for each City following your [ICON_RELIGION] Religion (max 25 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Place of Truth National Wonder[ENDCOLOR] (+2 [ICON_PEACE] Faith, +6 [ICON_PRODUCTION] Production, +10% [ICON_PRODUCTION] Production towards Buildings; +5 [ICON_PRODUCTION] Production from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PLACE_OF_TRUTH_HELP">
 			<Text>+10% [ICON_PRODUCTION] Production towards Buildings. +5 [ICON_PRODUCTION] Production from all Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your Religion (scaling with map size). Reduces [ICON_HAPPINESS_3] Religious Unrest, and allows you to select a Reformation Belief.[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this city by 25%, and increases the city's resistance to conversion by 20%.[NEWLINE][NEWLINE] Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegates in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.</Text>
@@ -154,13 +154,13 @@
 			<Text>A Daoguan is a place of worship in Taoism. The structure and function of a Daoguan can vary according to the Taoist school the temple belongs to. For example, guan of the Quanzhen School are monasteries where celibate daoshi live.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_HELP">
-			<Text>+25% Religious pressure and +10% Religious resistance in this city.[NEWLINE][NEWLINE]+25% [ICON_GREAT_PEOPLE] Great People rate in City, and 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+			<Text>+20 [ICON_SPY] City Security. Boost Pressure of [ICON_RELIGION] Religious Majority emanating from this City by +25%, and increases the City's resistance to [ICON_RELIGION] Religious conversion by 10%.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. [NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from Distress. [NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_STRATEGY">
 			<Text>Can only be built in cities following a religion with the Daoguans belief. Construct this building by purchasing it with [ICON_PEACE] Faith. The Daoguan offers bonuses towards Great People generation.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_TOOLTIP">
-			<Text>+5 [ICON_PEACE] Faith[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_DAOGUAN_HELP}</Text>
+			<Text>+4 [ICON_PEACE] Faith[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_DAOGUAN_HELP}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_JUBILEE_SHORT">
 			<Text>Jubilee</Text>

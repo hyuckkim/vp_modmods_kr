@@ -10,8 +10,9 @@ SET Text = 'Division of Labor'
 WHERE Tag = 'TXT_KEY_POLICY_TRADE_UNIONS';
 
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]Division of Labor[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture from Armories, Workshops, Windmills, Factories, and Coaling Stations.[NEWLINE][ICON_BULLET][ICON_CONNECTED] City Connections generate +4 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.'
+SET Text = '[COLOR_POSITIVE_TEXT]Division of Labor[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture from Armories, Workshops, Windmills, Factories, and Coaling Stations.[NEWLINE][ICON_BULLET]+5 [ICON_GOLD] Golde from [ICON_INTERNATIONAL_TRADE] International Trade Routes.'
 WHERE Tag = 'TXT_KEY_POLICY_TRADE_UNIONS_HELP';
+-- [ICON_CONNECTED] City Connections generate +4 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.
 
 UPDATE Language_ko_KR
 SET Text = 'Subsidies'

@@ -64,13 +64,13 @@ VALUES	('BELIEF_CITY_OF_GOD', 	'YIELD_CULTURE', 	25),
 
 INSERT INTO Belief_YieldPerWorldWonderConstruction
 		(BeliefType, 			YieldType, 			Yield)
-VALUES	('BELIEF_PARADISE', 	'YIELD_CULTURE', 	30),
-		('BELIEF_PARADISE', 	'YIELD_GOLD', 		30),
-		('BELIEF_PARADISE', 	'YIELD_FAITH',		30);
+VALUES	('BELIEF_PARADISE', 	'YIELD_CULTURE', 	25), -- original: 50
+		('BELIEF_PARADISE', 	'YIELD_GOLD', 		25),
+		('BELIEF_PARADISE', 	'YIELD_FAITH',		25);
 
 INSERT INTO Belief_YieldPerConstruction
 		(BeliefType, 			YieldType, 			Yield)
-VALUES	('BELIEF_PARADISE', 	'YIELD_GOLD', 		10);
+VALUES	('BELIEF_PARADISE', 	'YIELD_GOLD', 		10); -- original: 20
 
 INSERT INTO BuildingClasses
 		(Type, 								Description, 							DefaultBuilding, 				MaxPlayerInstances)
@@ -186,6 +186,7 @@ INSERT INTO Buildings
 		(Type, 					BuildingClass, 				Description, 					Civilopedia, 						Strategy, 								Help,  								ReligiousPressureModifier, 	ConversionModifier, GreatWorkSlotType,				GreatWorkCount, GreatPeopleRateModifier, 	NoUnhappfromXSpecialists, 	DistressFlatReduction, 	Cost, UnlockedByBelief, FaithCost, NukeImmune, ConquestProb, ArtDefineTag, MinAreaSize, IconAtlas,	 			PortraitIndex)
 SELECT	'BUILDING_DAOGUAN', 	'BUILDINGCLASS_DAOGUAN', 	'TXT_KEY_BUILDING_DAOGUAN', 	'TXT_KEY_BUILDING_DAOGUAN_PEDIA', 	'TXT_KEY_BUILDING_DAOGUAN_STRATEGY', 	'TXT_KEY_BUILDING_DAOGUAN_HELP', 	25, 						-10, 				'GREAT_WORK_SLOT_LITERATURE', 	1, 				25, 						1, 							1, 						Cost, UnlockedByBelief, FaithCost, NukeImmune, ConquestProb, ArtDefineTag, MinAreaSize, 'NEW_BELIEFS_ATLAS', 	4
 FROM Buildings WHERE Type = 'BUILDING_CHURCH';
+UPDATE Buildings SET GreatPeopleRateModifier=0, SpySecurityModifier=20 WHERE Type = 'BUILDING_DAOGUAN';
 
 INSERT INTO Building_YieldChanges
 		(BuildingType, 					YieldType, 					Yield)
@@ -197,7 +198,7 @@ VALUES
 		('BUILDING_SWEAT_LODGE', 		'YIELD_SCIENCE', 			2),
 		('BUILDING_DAR_E_MEHR', 		'YIELD_FAITH', 				3),
 		('BUILDING_DAR_E_MEHR', 		'YIELD_CULTURE', 			2),
-		('BUILDING_DAOGUAN', 			'YIELD_FAITH', 				5);
+		('BUILDING_DAOGUAN', 			'YIELD_FAITH', 				4);
 
 INSERT INTO Building_Flavors
 	(BuildingType, FlavorType, Flavor)
@@ -212,7 +213,7 @@ VALUES
 	('BUILDING_SWEAT_LODGE', 		'FLAVOR_RELIGION', 		30),
 	('BUILDING_DAR_E_MEHR', 		'FLAVOR_CULTURE', 		20),
 	('BUILDING_DAR_E_MEHR', 		'FLAVOR_RELIGION', 		40),
-	('BUILDING_DAOGUAN', 			'FLAVOR_GREAT_PEOPLE', 	20),
+	('BUILDING_DAOGUAN', 			'FLAVOR_ESPIONAGE', 	20),
 	('BUILDING_DAOGUAN', 			'FLAVOR_RELIGION', 		50),
 	('BUILDING_AKAPANA', 			'FLAVOR_RELIGION', 		200),
 	('BUILDING_AKAPANA', 			'FLAVOR_SCIENCE', 		15),
@@ -296,9 +297,9 @@ UPDATE Units SET RequiresFaithPurchaseEnabled = '1'	WHERE Type = 'UNIT_AMBASSADO
 --UPDATE Units SET BeliefRequired = 'BELIEF_WORD_OF_GOD'	WHERE Type = 'UNIT_AMBASSADOR';
 
 UPDATE Units SET FaithCost = '200' WHERE Type = 'UNIT_EMISSARY';
-UPDATE Units SET FaithCost = '400' WHERE Type = 'UNIT_ENVOY';
-UPDATE Units SET FaithCost = '700' WHERE Type = 'UNIT_DIPLOMAT';
-UPDATE Units SET FaithCost = '900' WHERE Type = 'UNIT_AMBASSADOR';
+UPDATE Units SET FaithCost = '300' WHERE Type = 'UNIT_ENVOY';
+UPDATE Units SET FaithCost = '500' WHERE Type = 'UNIT_DIPLOMAT';
+UPDATE Units SET FaithCost = '700' WHERE Type = 'UNIT_AMBASSADOR';
 ---------------------------------------------------------------------------------------------------------------------
 -- Orthodoxy --
 ---------------------------------------------------------------------------------------------------------------------
@@ -356,11 +357,11 @@ VALUES	('BELIEF_GOD_OF_STORMS',	'PROMOTION_GOD_OF_STORMS'),
 -- UnitPromotions
 --------------------------------		
 INSERT INTO UnitPromotions
-		(Type,                      Description,                      	Help,                                   Sound,             CannotBeChosen,	DefenseMod, ExperiencePercent,	ReligiousPressureModifier,	IgnoreTerrainCost, 	WorkRateMod, 	PortraitIndex,	IconAtlas,      		PediaType, 		PediaEntry)
-VALUES	('PROMOTION_GOD_OF_STORMS', 'TXT_KEY_PROMOTION_GOD_OF_STORMS', 	'TXT_KEY_PROMOTION_GOD_OF_STORMS_HELP', 'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					0, 					0,           	54,           	'extraPromo_Atlas',		'PEDIA_SHARED', 'TXT_KEY_PROMOTION_GOD_OF_STORMS'),
-		('PROMOTION_WARRIOR_MONK', 	'TXT_KEY_PROMOTION_WARRIOR_MONK', 	'TXT_KEY_PROMOTION_WARRIOR_MONK_HELP',  'AS2D_IF_LEVELUP', 1, 				20, 		33,					30,      					0, 					0,           	6,           	'promoVP_atlas_04',	'PEDIA_MELEE', 	'TXT_KEY_PROMOTION_WARRIOR_MONK'),
-		('PROMOTION_ANIMISM', 		'TXT_KEY_PROMOTION_ANIMISM', 		'TXT_KEY_PROMOTION_ANIMISM_HELP',    	'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					1, 					0,           	29,           	'promoVP_atlas_01',		'PEDIA_SHARED', 'TXT_KEY_PROMOTION_ANIMISM'),
-		('PROMOTION_WORK_ETHIC', 	'TXT_KEY_PROMOTION_WORK_ETHIC', 	'TXT_KEY_PROMOTION_WORK_ETHIC_HELP',    'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					0, 					25,           	36,           	'extraPromo_Atlas',		'PEDIA_SHARED', 'TXT_KEY_PROMOTION_WORK_ETHIC');
+		(Type,                      Description,                      	Help,                                   Sound,             CannotBeChosen,	DefenseMod, ExperiencePercent,	ReligiousPressureModifier,	IgnoreTerrainCost, 	WorkRateMod, 	PortraitIndex,	IconAtlas,      			PediaType, 		PediaEntry)
+VALUES	('PROMOTION_GOD_OF_STORMS', 'TXT_KEY_PROMOTION_GOD_OF_STORMS', 	'TXT_KEY_PROMOTION_GOD_OF_STORMS_HELP', 'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					0, 					0,           	54,           	'PROMOTION_ATLAS_VP_06',	'PEDIA_SHARED', 'TXT_KEY_PROMOTION_GOD_OF_STORMS'),
+		('PROMOTION_WARRIOR_MONK', 	'TXT_KEY_PROMOTION_WARRIOR_MONK', 	'TXT_KEY_PROMOTION_WARRIOR_MONK_HELP',  'AS2D_IF_LEVELUP', 1, 				20, 		33,					30,      					0, 					0,           	6,           	'PROMOTION_ATLAS_VP_04',	'PEDIA_MELEE', 	'TXT_KEY_PROMOTION_WARRIOR_MONK'),
+		('PROMOTION_ANIMISM', 		'TXT_KEY_PROMOTION_ANIMISM', 		'TXT_KEY_PROMOTION_ANIMISM_HELP',    	'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					1, 					0,           	29,           	'PROMOTION_ATLAS_VP_01',	'PEDIA_SHARED', 'TXT_KEY_PROMOTION_ANIMISM'),
+		('PROMOTION_WORK_ETHIC', 	'TXT_KEY_PROMOTION_WORK_ETHIC', 	'TXT_KEY_PROMOTION_WORK_ETHIC_HELP',    'AS2D_IF_LEVELUP', 1, 				0, 			0,					0,      					0, 					25,           	36,           	'PROMOTION_ATLAS_VP_06',	'PEDIA_SHARED', 'TXT_KEY_PROMOTION_WORK_ETHIC');
 --------------------------------
 -- UnitPromotions_UnitCombats
 --------------------------------
@@ -400,14 +401,11 @@ VALUES		('PROMOTION_GOD_OF_STORMS', 'YIELD_FAITH', 		2);
 --------------------------------
 INSERT INTO IconTextureAtlases 
 		(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('NewBeliefPromoAtlas', 		256, 		'PDanNewBeliefs_PI_256.dds', 	1, 				1),
-		('NewBeliefPromoAtlas', 		64, 		'PDanNewBeliefs_PI_064.dds', 	1, 				1),
-		('NewBeliefPromoAtlas', 		45, 		'PDanNewBeliefs_PI_045.dds', 	1, 				1),
-		('NewBeliefPromoAtlas', 		32, 		'PDanNewBeliefs_PI_032.dds', 	1, 				1),
-		('NewBeliefPromoAtlas', 		16, 		'PDanNewBeliefs_PI_016.dds', 	1, 				1),
-		('NEW_BELIEFS_ATLAS', 			256, 		'MoreBeliefs256.dds',			7, 				2),
+VALUES	('NEW_BELIEFS_ATLAS', 			256, 		'MoreBeliefs256.dds',			7, 				2),
 		('NEW_BELIEFS_ATLAS', 			128, 		'MoreBeliefs128.dds',			7, 				2),
 		('NEW_BELIEFS_ATLAS', 			80, 		'MoreBeliefs080.dds',			7, 				2),
 		('NEW_BELIEFS_ATLAS', 			64, 		'MoreBeliefs064.dds',			7, 				2),
 		('NEW_BELIEFS_ATLAS', 			45, 		'MoreBeliefs045.dds',			7, 				2),
 		('NEW_BELIEFS_ATLAS', 			32, 		'MoreBeliefs032.dds',			7, 				2);
+--==========================================================================================================================
+--==========================================================================================================================

@@ -3,34 +3,34 @@
 ---------------------------------------------
 INSERT INTO UnitPromotions
 	(Type, Description, Help, PediaEntry,
-	PediaType, PortraitIndex, IconAtlas, IsVisibleAboveFlag, CannotBeChosen, TechPrereq, RankList, OrderPriority,
+	PediaType, PortraitIndex, IconAtlas, IsVisibleAboveFlag, CannotBeChosen, TechPrereq, RankList, RankNumber, OrderPriority,
 	VisibilityChange, IsNearbyPromotion, NearbyRange, GiveDomain, GiveOutsideFriendlyLandsModifier, GiveHPHealedIfEnemyKilled)
 VALUES
 	('PROMOTION_PORTUGAL_UA_1', 'TXT_KEY_PROMOTION_PORTUGAL_UA_1', 'TXT_KEY_PROMOTION_PORTUGAL_UA_1_HELP', 'TXT_KEY_PROMOTION_PORTUGAL_UA_1',
-	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_OPTICS', 'PORTUGAL', 793,
+	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_OPTICS', 'PORTUGAL', 1, 793,
 	 0, 0, 0, NULL, 0, 0),
 	('PROMOTION_PORTUGAL_UA_2', 'TXT_KEY_PROMOTION_PORTUGAL_UA_2', 'TXT_KEY_PROMOTION_PORTUGAL_UA_2_HELP', 'TXT_KEY_PROMOTION_PORTUGAL_UA_2',
-	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_COMPASS', 'PORTUGAL', 793,
+	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_COMPASS', 'PORTUGAL', 2, 793,
 	 0, 0, 0, NULL, 0, 0),
 	('PROMOTION_PORTUGAL_UA_3', 'TXT_KEY_PROMOTION_PORTUGAL_UA_3', 'TXT_KEY_PROMOTION_PORTUGAL_UA_3_HELP', 'TXT_KEY_PROMOTION_PORTUGAL_UA_3',
-	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_NAVIGATION', 'PORTUGAL', 793,
+	'PEDIA_SHARED', 8, 'PROMOTION_ATLAS_VP_01', 1, 1, 'TECH_NAVIGATION', 'PORTUGAL', 3, 793,
 	 0, 0, 0, NULL, 0, 0),
 	('PROMOTION_MARE_CLAUSUM', 'TXT_KEY_PROMOTION_MARE_CLAUSUM', 'TXT_KEY_PROMOTION_MARE_CLAUSUM_HELP', 'TXT_KEY_PROMOTION_MARE_CLAUSUM',
-	'PEDIA_NAVAL', 47, 'PROMOTION_ATLAS_VP_00', 1, 1, NULL, NULL, 208,
-	 0, 1, 5, 'DOMAIN_SEA', 25, 0);
+	'PEDIA_NAVAL', 47, 'PROMOTION_ATLAS_VP_00', 1, 1, NULL, NULL, 0, 208,
+	 0, 1, 4, 'DOMAIN_SEA', 25, 15);
 -- visibility part doesnt work on cargo ships due to DLL special case
 
 INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_1', 'Padrões I'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_1_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_1_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Sailing[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_2', 'Padrões II'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_2_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_2_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Compass[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_3', 'Padrões III'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_3_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_3_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Navigation[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_MARE_CLAUSUM', 'Mare Clausum'),
-	('TXT_KEY_PROMOTION_MARE_CLAUSUM_HELP', 'Friendly Naval Units within 5 tiles gain +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].');
+	('TXT_KEY_PROMOTION_MARE_CLAUSUM_HELP', 'Friendly Naval Units within 4 tiles heal [COLOR_POSITIVE_TEXT]15 HP[ENDCOLOR] if the defeat an enemy Unit, and gain +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].');
 
 INSERT INTO UnitPromotions_UnitCombats
 	(PromotionType, UnitCombatType)
@@ -72,10 +72,8 @@ INSERT INTO Trait_FreePromotionUnitCombats
 SELECT
 	'TRAIT_EXTRA_TRADE', c.Type, p.Type
 FROM UnitPromotions p, UnitCombatInfos c WHERE
-p.Type IN ('PROMOTION_PORTUGAL_UA_1') AND
+p.Type IN ('PROMOTION_PORTUGAL_UA_1', 'PROMOTION_PORTUGAL_UA_2', 'PROMOTION_PORTUGAL_UA_3') AND
 c.Type IN ('UNITCOMBAT_CARGO', 'UNITCOMBAT_RECON', 'UNITCOMBAT_NAVALMELEE', 'UNITCOMBAT_NAVALRANGED', 'UNITCOMBAT_SUBMARINE', 'UNITCOMBAT_CARRIER');
-
--- , 'PROMOTION_PORTUGAL_UA_2', 'PROMOTION_PORTUGAL_UA_3'
 
 DELETE FROM Trait_YieldFromRouteMovement WHERE TraitType = 'TRAIT_EXTRA_TRADE';
 
@@ -93,7 +91,7 @@ WHERE Tag = 'TXT_KEY_TRAIT_EXTRA_TRADE_SHORT';
 UPDATE Buildings SET 
 FreePromotion = 'PROMOTION_MARE_CLAUSUM',
 ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_COIMBRA_HELP',
-TRVisionBoost = 5
+TRVisionBoost = 4
 WHERE Type = 'BUILDING_UNIVERSITY_OF_COIMBRA';
 
 UPDATE Language_en_US SET
@@ -154,6 +152,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_UNIVERSITY_OF_COIMBRA_HELP';
 -- bandeirantes changes 
 ----------------------------------------------------------------
 UPDATE UnitPromotions SET
+LostWithUpgrade = 1,  -- the influence effect is likely too strong to stick around
 PortraitIndex = 51,
 InfluenceFromCombatXpTimes100 = 200
 --,BarbarianCombatBonus = 25

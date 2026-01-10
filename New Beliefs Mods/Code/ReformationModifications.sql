@@ -34,5 +34,5 @@ INSERT INTO Belief_YieldChangeWorldWonder
 VALUES	('BELIEF_UNDERGROUND_SECT', 'YIELD_CULTURE', 	2);
 
 UPDATE Language_en_US
-SET Text = 'May build Amphitheaters, Opera Houses, Museums, Broadcast Towers, and Stadiums with [ICON_PEACE] Faith. These buildings and all World Wonders produce +2 [ICON_CULTURE] Culture each.'
+SET Text = 'May build Amphitheaters, Opera Houses, Museums, and Broadcast Towers with [ICON_PEACE] Faith. These buildings and all World Wonders produce +2 [ICON_CULTURE] Culture each.'
 WHERE Tag = 'TXT_KEY_BELIEF_UNDERGROUND_SECT';

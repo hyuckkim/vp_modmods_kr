@@ -5,13 +5,13 @@ INSERT INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_1', 'Padrões I'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_1_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_1_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Sailing[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_2', 'Padrões II'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_2_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_2_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Compass[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_PORTUGAL_UA_3', 'Padrões III'),
-	('TXT_KEY_PROMOTION_PORTUGAL_UA_3_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.'),
+	('TXT_KEY_PROMOTION_PORTUGAL_UA_3_HELP', 'Gain 1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture when revealing tiles.[NEWLINE]This value is multiplied by 12 for Natural Wonders, 4 for Ancient Ruins, and 3 for Resources.[NEWLINE]Available once you have researched [COLOR_CYAN]Navigation[ENDCOLOR].'),
 	('TXT_KEY_PROMOTION_MARE_CLAUSUM', 'Mare Clausum'),
-	('TXT_KEY_PROMOTION_MARE_CLAUSUM_HELP', 'Friendly Naval Units within 5 tiles gain +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].');
+	('TXT_KEY_PROMOTION_MARE_CLAUSUM_HELP', 'Friendly Naval Units within 4 tiles heal [COLOR_POSITIVE_TEXT]15 HP[ENDCOLOR] if the defeat an enemy Unit, and gain +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].');
 --------------------------------------------------------
 -- Update the Portugese UA
 --------------------------------------------------------

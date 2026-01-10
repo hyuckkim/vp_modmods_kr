@@ -390,7 +390,7 @@
 				  </Box>
 				  <!-- RELIGIOUS -->
 				  <Box ID="ReligiousBox" Size="618,199" Color="255,255,255,0">
-					  <Image Size="128,128" Anchor="R,C" Texture="EVC_Victories.dds" TextureOffset="0,128" Color="255,255,255,100"/>
+					  <Image Size="128,128" Anchor="R,C" Texture="EVC_Victories_256.dds" TextureOffset="0,128" Color="255,255,255,100"/>
 					  <Label Offset="5,3" Font="TwCenMT24" String="TXT_KEY_VICTORYSCREEN_RELIGIOUS"/>
 					  <Label ID="ReligiousLabel" Offset="5,45" Anchor="C.T" Font="TwCenMT16"/>
 					  <Box ID="ReligiousVictoryProgress" Size="618,142" Color="0,0,0,0">

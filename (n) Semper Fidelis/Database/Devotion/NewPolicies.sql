@@ -216,6 +216,11 @@ INSERT INTO Unit_ResourceQuantityRequirements
 SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',	ResourceType
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
 
+INSERT INTO UnitGameplay2DScripts 	
+		(UnitType, 				SelectionSound, FirstSelectionSound)
+SELECT	'UNIT_DEVOTION_NUCLEAR_MISSILE',		SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_NUCLEAR_MISSILE';
+
 -- nuclear bomb dummy
 INSERT INTO UnitClasses
 		(Type, 					DefaultUnit)
@@ -264,6 +269,10 @@ INSERT INTO Unit_ResourceQuantityRequirements
 SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',	ResourceType
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ATOMIC_BOMB';
 
+INSERT INTO UnitGameplay2DScripts 	
+		(UnitType, 				SelectionSound, FirstSelectionSound)
+SELECT	'UNIT_DEVOTION_ATOMIC_BOMB',		SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_ATOMIC_BOMB';
 
 
 

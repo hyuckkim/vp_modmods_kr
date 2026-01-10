@@ -27,26 +27,6 @@ VALUES
 ('TXT_KEY_LEAGUE_PROJECT_REWARD_WARGAMES_3_HELP', 'Menin Gate wonder appears in [ICON_CAPITAL] Capital. (Receive +2 [ICON_HAPPINESS_1] Happiness in the City in which it is built. Receive 20 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever an owned unit is killed, scaling with Era. Forts, Citadels and Landmarks provide +2 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points when worked.)'),
 	('TXT_KEY_LEAGUE_PROJECT_REWARD_WARGAMES_3_HELP', 'Menin Gate wonder appears in [ICON_CAPITAL] Capital. (Receive +2 [ICON_HAPPINESS_1] Happiness in the City in which it is built. Receive 20 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever an owned unit is killed, scaling with Era. Forts, Citadels and Landmarks provide +2 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points when worked.)');
 
--- replace free policies with flat culture
-
-UPDATE Buildings SET
-FreePolicies = 0
-WHERE Type IN ('BUILDING_KREMLIN', 'BUILDING_STATUE_OF_LIBERTY', 'BUILDING_PRORA_RESORT');
-
-INSERT INTO Building_InstantYield
-	(BuildingType, YieldType, Yield)
-SELECT
-	Type, 'YIELD_CULTURE', 10000
-FROM Buildings WHERE Type IN ('BUILDING_KREMLIN', 'BUILDING_STATUE_OF_LIBERTY', 'BUILDING_PRORA_RESORT');
-
-UPDATE Language_en_US SET 
-Text = Replace(Text, '1 Free Social Policy.', '+10,000 [ICON_CULTURE] Culture when completed.')
-WHERE Tag IN ('TXT_KEY_WONDER_KREMLIN_HELP', 'TXT_KEY_WONDER_STATUE_OF_LIBERTY_HELP', 'TXT_KEY_WONDER_PRORA_RESORT_HELP');
-UPDATE Language_en_US SET 
-Text = Replace(Text, 'Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy.', '+10,000 [ICON_CULTURE] Culture when completed.')
-WHERE Tag IN ('TXT_KEY_WONDER_KREMLIN_HELP', 'TXT_KEY_WONDER_STATUE_OF_LIBERTY_HELP', 'TXT_KEY_WONDER_PRORA_RESORT_HELP');
-
-
 -- change score from GWs
 UPDATE Defines SET Value = '10' WHERE Name = 'SCORE_GREAT_WORK_MULTIPLIER';
 -- base is 4

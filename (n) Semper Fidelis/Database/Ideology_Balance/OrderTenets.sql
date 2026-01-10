@@ -137,7 +137,8 @@ WHERE Tag = 'TXT_KEY_POLICY_WORKERS_FACULTIES_HELP';
 UPDATE Policies
 SET
 	NewCityExtraPopulation = 6,
-	FreePopulation = 0
+	FreePopulation = 0,
+	RetainRazedTerritory = 1
 WHERE Type = 'POLICY_RESETTLEMENT';
 
 --INSERT INTO Policy_YieldChangeTradeRoute
@@ -151,7 +152,7 @@ VALUES
 	('POLICY_RESETTLEMENT', 'YIELD_FOOD', 5);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Resettlement[ENDCOLOR]: No Partisans from [ICON_RAZING] Razing enemy Cities. New Cities have +6 [ICON_CITIZEN] Population. +1 [ICON_FOOD] Food in all Cities for every 5 Military Units in the Empire.'
+SET Text = '[COLOR_POSITIVE_TEXT]Resettlement[ENDCOLOR]: No Partisans from [ICON_RAZING] Razing enemy Cities and you retain all owned tiles. New Cities have +6 [ICON_CITIZEN] Population. +1 [ICON_FOOD] Food in all Cities for every 5 Military Units in the Empire.'
 WHERE Tag = 'TXT_KEY_POLICY_RESETTLEMENT_HELP';
 
 -- great leap forward. renamed atomic spies. move yield from non-specialist and replace with free atomic bomb

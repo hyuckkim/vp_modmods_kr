@@ -26,10 +26,10 @@ WHERE Tag = 'TXT_KEY_POLICY_CREATIVE_EXPRESSION';
 INSERT INTO Policy_YieldGPExpend
 	(PolicyType, YieldType, Yield)
 VALUES
-	('POLICY_OPEN_SOCIETY', 'YIELD_TOURISM', 75);
+	('POLICY_OPEN_SOCIETY', 'YIELD_TOURISM', 50);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Freedom of Speech[ENDCOLOR]: The rate at which [ICON_GREAT_PEOPLE] Great People are born is increased by 33%. -2 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom in all Cities. Expending a [ICON_GREAT_PEOPLE] Great Person grants 75 [ICON_TOURISM] Tourism, scaling with Era.'
+SET Text = '[COLOR_POSITIVE_TEXT]Freedom of Speech[ENDCOLOR]: The rate at which [ICON_GREAT_PEOPLE] Great People are born is increased by 33%. -2 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom in all Cities. Expending a [ICON_GREAT_PEOPLE] Great Person grants 50 [ICON_TOURISM] Tourism, scaling with Era.'
 WHERE Tag = 'TXT_KEY_POLICY_OPEN_SOCIETY_HELP';
 
 UPDATE Language_en_US
@@ -112,18 +112,14 @@ UPDATE Language_en_US
 SET Text = '[COLOR_POSITIVE_TEXT]New Deal[ENDCOLOR]: Great Person Improvements produce +6 of a yield ([ICON_GREAT_ENGINEER]/[ICON_GREAT_GENERAL][ICON_PRODUCTION], [ICON_GREAT_MERCHANT][ICON_GOLD], [ICON_GREAT_SCIENTIST][ICON_RESEARCH], [ICON_DIPLOMAT][ICON_CULTURE], [ICON_PROPHET][ICON_PEACE]), and +2 [ICON_TOURISM] Tourism. [ICON_RES_ARTIFACTS] Landmarks produce +8 [ICON_TOURISM] Tourism. Cities generate +10% [ICON_GOLD] Gold and [ICON_TOURISM] Tourism during "We Love The King Day".'
 WHERE Tag = 'TXT_KEY_POLICY_NEW_DEAL_HELP';
 
--- capitalism. small boop to 3 things with some tourism 
+-- capitalism. unfashionable these days. the effect is v strong tho
 
 UPDATE Language_en_US
 SET Text = 'Social Welfare'
 WHERE Tag = 'TXT_KEY_POLICY_CAPITALISM';
 
-UPDATE Policies SET
-	TradeRouteTourismModifier = 10
-WHERE Type = 'POLICY_CAPITALISM';
-
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Social Welfare[ENDCOLOR]: 2 [ICON_CITIZEN] Specialists in each of your cities generate +1 [ICON_HAPPINESS_1] Happiness instead of -1 [ICON_HAPPINESS_3] Unhappiness from Urbanization. Specialists generate +1 [ICON_GOLD] Gold and [ICON_RESEARCH] Science. The [ICON_TOURISM] Tourism modifier for [ICON_INTERNATIONAL_TRADE] Trade Routes with other Civilizations is increased by +10%.'
+SET Text = '[COLOR_POSITIVE_TEXT]Social Welfare[ENDCOLOR]: 2 [ICON_CITIZEN] Specialists in each of your cities generate +1 [ICON_HAPPINESS_1] Happiness instead of -1 [ICON_HAPPINESS_3] Unhappiness from Urbanization. Specialists generate +1 [ICON_GOLD] Gold and [ICON_RESEARCH] Science.'
 WHERE Tag = 'TXT_KEY_POLICY_CAPITALISM_HELP';
 
 --Keynesian Economics
@@ -132,6 +128,15 @@ WHERE Tag = 'TXT_KEY_POLICY_CAPITALISM_HELP';
 UPDATE Language_en_US
 SET Text = 'Social Welfare is a type of government support intended to ensure that members of a society can meet basic human needs, broadly encompassing support for those in old age, the maintenance of children, medical treatment, parental and sick leave, unemployment and disability benefits, and legal representation. In a welfare (but not socalist) state, provision of social services acts form of insurance to those who find themselves unable to work whilst the economy otherwise operates on capitalist, market principles. Welfare is also justified on moral grounds, as a tool for reducing inequality and achieving social justice.[NEWLINE][NEWLINE]Borne out of the widespread concern in the 19th century for the industrial poor, the first welfare state was Imperial Germany (1871-1918), where the Bismarck government introduced social security in 1889. The United Kingdom introduced forms of social security around 1913, and adopted the welfare state with the National Insurance Act 1946, during the Attlee government (1944-1951). A pillar of most mixed-market economies, state provision of support to those in need represented the western post-war consensus and was accepted across the political spectrum by conservatives, liberals and socialists until the neoliberal revolution of the 1970s. It would eventually be reimagined by the Third Way social liberals of the 1990s into the form we know today.'
 WHERE Tag = 'TXT_KEY_POLICY_CAPITALISM_TEXT';
+
+-- self determination, very situational, give a second niche
+UPDATE Language_en_US
+SET Text = '[COLOR_POSITIVE_TEXT]Self Determination[ENDCOLOR]: [COLOR_POSITIVE_TEXT]Liberating[ENDCOLOR] a City gives 15 XP to all Units, 50 [ICON_INFLUENCE] Influence with all [ICON_CITY_STATE] City-States, and 40 [ICON_RESEARCH] Science, scaling with Era and City [ICON_CITIZEN] Population. The Liberated City gains an Arsenal and 6 Units. The [ICON_TOURISM] Tourism modifier for [ICON_INTERNATIONAL_TRADE] Trade Routes with other Civilizations is increased by +10%.'
+WHERE Tag = 'TXT_KEY_POLICY_URBANIZATION_HELP';
+
+UPDATE Policies SET
+	TradeRouteTourismModifier = 10
+WHERE Type = 'POLICY_URBANIZATION';
 
 -- transnationalism yields very low
 
@@ -225,7 +230,3 @@ WHERE Tag = 'TXT_KEY_POLICY_TREATY_ORGANIZATION_HELP';
 UPDATE Language_en_US
 SET Text = '[COLOR_POSITIVE_TEXT]Their Finest Hour[ENDCOLOR]: All cities get +2 [ICON_AIRPORT] Air Unit Slots. Each Air Unit stationed in a city increases the City''s [ICON_STRENGTH] Defense by 3. Can build [COLOR_YELLOW]B17 Bombers[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP';
-
-UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Self Determination[ENDCOLOR]: [COLOR_POSITIVE_TEXT]Liberating[ENDCOLOR] a City gives 15 XP to all Units, 50 [ICON_INFLUENCE] Influence with all [ICON_CITY_STATE] City-States, and 40 [ICON_RESEARCH] Science, scaling with Era and City [ICON_CITIZEN] Population. The Liberated City gains an Arsenal and 6 Units.'
-WHERE Tag = 'TXT_KEY_POLICY_URBANIZATION_HELP';

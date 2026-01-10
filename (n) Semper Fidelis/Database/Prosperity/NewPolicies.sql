@@ -256,6 +256,11 @@ SELECT	'UNIT_PROSPERITY_MISSIONARY',	'UNITCLASS_PROSPERITY_MISSIONARY',	Combat, 
 0, Range, Special, DefaultUnitAI, Suicide, HurryCostModifier, NukeDamageLevel, ProjectPrereq, 'POLICY_EXALTATION', PrereqTech, ReligionSpreads, ReligiousStrength, SpreadReligion, 1
 FROM Units WHERE Type = 'UNIT_MISSIONARY';
 
+INSERT INTO UnitGameplay2DScripts 	
+		(UnitType, 	SelectionSound, FirstSelectionSound)
+SELECT	'UNIT_PROSPERITY_MISSIONARY',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_MISSIONARY';
+
 INSERT INTO Policy_UnitClassReplacements
 	(PolicyType, ReplacedUnitClassType, ReplacementUnitClassType)
 VALUES

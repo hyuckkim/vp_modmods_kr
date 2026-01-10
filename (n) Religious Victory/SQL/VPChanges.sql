@@ -28,16 +28,17 @@ SELECT
 FROM Yields a WHERE a.Type in ('YIELD_FAITH', 'YIELD_CULTURE', 'YIELD_TOURISM');
 
 UPDATE Language_en_US
-SET Text = 'Reduces minimum Policy requirement for Wonders by 1. Prophets of this [ICON_RELIGION] Religion 25% stronger, cost 25% less [ICON_PEACE] Faith. +3 [ICON_PEACE] Faith, [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism from Holy Sites. If this is the majority Religion, Follower reduction from rival [ICON_INQUISITOR] Inquisitors and [ICON_PROPHET] Prophets is halved.'
+SET Text = Replace(Text, '+3 to base Holy Site yields.', '+3 [ICON_PEACE] Faith, [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism from Holy Sites.')
 WHERE Tag = 'TXT_KEY_BELIEF_MESSIAH';
 
+-- change fealty policy and description, this can be an issue with other modmods
 
 UPDATE Policies
 SET FaithCostModifier = 0
 WHERE Type = 'POLICY_PIETY';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Fealty[ENDCOLOR] enhances your ability to defend and leverage your [ICON_RELIGION] Majority Religion.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting Fealty grants:[ENDCOLOR][NEWLINE][ICON_BULLET]Can purchase Monasteries with [ICON_PEACE] Faith (+3 [ICON_FOOD] Food, +3 [ICON_RESEARCH] Science, +2 [ICON_PEACE] Faith, converts 10% of [ICON_PEACE] Faith Purchase into [ICON_GOLD]).[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Faith costs for purchasing Buildings, Missionaries, and Inquisitors.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Each Fealty policy unlocked grants:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PEACE] Faith and [ICON_STRENGTH] Strength in every City.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting all Policies in Fealty grants:[ENDCOLOR][NEWLINE][ICON_BULLET]Unlocks building the [COLOR_POSITIVE_TEXT]Red Fort[ENDCOLOR].[NEWLINE][ICON_BULLET]+25% [ICON_TOURISM] Tourism modifier for [COLOR_POSITIVE_TEXT]Shared Religion[ENDCOLOR].[NEWLINE][ICON_BULLET]Cities that follow your [ICON_RELIGION] Majority Religion generate +3 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, [ICON_SCIENCE] Science, and [ICON_CULTURE] Culture.[NEWLINE][ICON_BULLET]Allows for the purchase of [ICON_GREAT_ARTIST] Great Artists with [ICON_PEACE] Faith starting in the Industrial Era.'
+SET Text = Replace(Text, '(+3 [ICON_FOOD] Food, +3 [ICON_RESEARCH] Science, +2 [ICON_PEACE] Faith).[NEWLINE][ICON_BULLET]-25% [ICON_PEACE] Faith costs for purchasing Buildings, Missionaries, and Inquisitors.', '(+3 [ICON_FOOD] Food, +3 [ICON_RESEARCH] Science, +2 [ICON_PEACE] Faith, converts 10% of [ICON_PEACE] Faith Purchases into [ICON_GOLD] Gold).')
 WHERE Tag = 'TXT_KEY_POLICY_BRANCH_PIETY_HELP';
 
 -- Monastery
@@ -47,7 +48,7 @@ INSERT INTO Building_YieldFromFaithPurchase
 VALUES		('BUILDING_MONASTERY',	'YIELD_GOLD',		10);
 
 UPDATE Language_en_US
-SET Text = 'Religious building purchased with [ICON_PEACE] Faith. Converts 10% of [ICON_PEACE] Faith Purchase into [ICON_GOLD]. [NEWLINE][NEWLINE]Requires the adoption of the [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_PIETY}[ENDCOLOR] Policy Branch.'
+SET Text = 'Religious building purchased with [ICON_PEACE] Faith. Converts 10% of [ICON_PEACE] Faith Purchases into [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Requires the adoption of the [COLOR_MAGENTA]{TXT_KEY_POLICY_BRANCH_PIETY}[ENDCOLOR] Policy Branch.'
 WHERE Tag = 'TXT_KEY_BUILDING_MONASTERY_HELP';
 
 UPDATE Language_en_US
@@ -80,7 +81,7 @@ VALUES
 	('POLICY_ORGANIZED_RELIGION', 'IMPROVEMENT_HOLY_SITE', 'YIELD_TOURISM', 5);
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Organized Religion[ENDCOLOR][NEWLINE][ICON_BULLET]25% Pressure from owned Cities following your [ICON_RELIGION] Primary Religion.[NEWLINE][ICON_BULLET]+1 [ICON_PEACE] Faith from Specialists.[NEWLINE][ICON_BULLET]+5 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism from Holy Sites.'
+SET Text = '[COLOR_POSITIVE_TEXT]Organized Religion[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PEACE] Faith from Specialists.[NEWLINE][ICON_BULLET]+5 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism from Holy Sites.[NEWLINE][ICON_BULLET]25% Pressure from owned Cities following your [ICON_RELIGION] Primary Religion.'
 WHERE Tag = 'TXT_KEY_POLICY_ORGANIZED_RELIGION_HELP';
 
 -- name swap
@@ -95,7 +96,7 @@ SET Text = 'Fiefdoms'
 WHERE Tag = 'TXT_KEY_POLICY_THEOCRACY';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Fiefdoms[ENDCOLOR][NEWLINE][ICON_BULLET]+33% Yields from Internal [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][ICON_BULLET]Completing an Internal [ICON_INTERNATIONAL_TRADE] Trade Route triggers a Historic Event as if completing an International [ICON_INTERNATIONAL_TRADE] Trade Route.[NEWLINE][ICON_BULLET]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom in all Cities.'
+SET Text = Replace(Text, 'Divine Right', 'Fiefdoms')
 WHERE Tag = 'TXT_KEY_POLICY_THEOCRACY_HELP';
 
 UPDATE Language_en_US
@@ -112,7 +113,7 @@ SET Text = 'Divine Right'
 WHERE Tag = 'TXT_KEY_POLICY_REFORMATION';
 
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Divine Right[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every 10 Military Units in Empire.[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production and +100% [ICON_CULTURE_LOCAL] Border Growth during "[COLOR_POSITIVE_TEXT]We Love the King Day[ENDCOLOR]."'
+SET Text = Replace(Text, 'Fiefdoms', 'Divine Right')
 WHERE Tag = 'TXT_KEY_POLICY_REFORMATION_HELP';
 
 UPDATE Language_en_US

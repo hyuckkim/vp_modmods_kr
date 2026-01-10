@@ -138,6 +138,28 @@
 			<PurchaseCooldown>15</PurchaseCooldown>
 		</Row>
 	</Units>
+	<UnitGameplay2DScripts>
+		<Row>
+			<UnitType>UNIT_LOCUST</UnitType>
+			<SelectionSound>AS2D_SELECT_TANK</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_TANK</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROSPERITY_ARTIST</UnitType>
+			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound>
+			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROSPERITY_WRITER</UnitType>
+			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound>
+			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROSPERITY_MUSICIAN</UnitType>
+			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound>
+			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound>
+		</Row>
+	</UnitGameplay2DScripts>
 	<ArtDefine_UnitInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_PROSPERITY_WRITER</Type>

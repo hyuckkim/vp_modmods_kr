@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9995d43e-e75b-41aa-802e-af3dcfed1675" version="4">
+  <Properties>
+    <Name>!Jarcast's Cities of Marble for VP</Name>
+    <Teaser>Adds 13 new National Wonders.</Teaser>
+    <Description>Adds 13 new National Wonders.</Description>
+    <Authors>Jarcast</Authors>
+    <SpecialThanks>machiavelli</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/jarcasts-cities-of-marble-for-vp.688025/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="999" title="Bare Necessities" />
+    <Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" minversion="0" maxversion="999" title="framedarchitecture's National Wonders Collection" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    <Mod id="8562c016-f5bb-40f1-b37e-d3b40d3fg13e" minversion="0" maxversion="999" title="Canada for VP" />
+    <Mod id="9c2470ae-57d8-4dc8-ba30-739b9d678410" minversion="0" maxversion="999" title="Hisatsinom/Pueblo for VP" />
+    <Mod id="a6fd44de-5fe5-45b1-a2b8-77a69e910182" minversion="0" maxversion="999" title="Scotland for VP" />
+    <Mod id="42c4728e-4544-4520-8488-4bb430e27e34" minversion="0" maxversion="999" title="Papal States for VP" />
+    <Mod id="cc3e1671-2832-40dc-9bfd-8e053d3b76b2" minversion="0" maxversion="999" title="Timurids for VP" />
+    <Mod id="1ae35ed6-47d1-4057-81e1-25b50b5829ec" minversion="0" maxversion="999" title="Zimbabwe for VP" />
+    <Mod id="4abc16dc-5010-47d1-af6a-7d51a2674a35" minversion="0" maxversion="999" title="Kushan Empire for VP" />
+    <Mod id="5bc5cebf-f7fc-4cf7-8669-726e58ad476e" minversion="0" maxversion="999" title="Ireland for VP" />
+    <Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" minversion="0" maxversion="999" title="Louisiana for VP" />
+    <Mod id="clqm1mt6-al70-p2m7-0dm7-1g5oc5o39f34" minversion="0" maxversion="999" title="Manchus for VP" />
+    <Mod id="7762c016-f5bb-40f1-b37e-d3b40d4gh23e" minversion="0" maxversion="999" title="Phoenicia for VP" />
+    <Mod id="ef652953-24c3-4316-b0af-1bdd2c2a61eb" minversion="0" maxversion="999" title="Hittites for VP" />
+    <Mod id="17304572-5735-44c1-a981-29be1ff401b6" minversion="0" maxversion="999" title="Brittany for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era for VP" />
+    <Mod id="35e27828-cf22-4aec-b087-08169fa4e430" minversion="0" maxversion="999" title="Leugi's Israel for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="71D0E91E49C0FF1865F025035B57AA12" import="1">Art/JarCoM_Atlas_128.dds</File>
+    <File md5="24B1B3BBE08750DBFDD3FA44DAD3FA02" import="1">Art/JarCoM_Atlas_256.dds</File>
+    <File md5="398ABB1F831101C90228F3A0C8971CA0" import="1">Art/JarCoM_Atlas_45.dds</File>
+    <File md5="CAADD0F7798FB7E0863AE8C970AC3947" import="1">Art/JarCoM_Atlas_64.dds</File>
+    <File md5="AF5AD84D293284425C9B8C7CA748435D" import="1">Art/JarCoM_Atlas_80.dds</File>
+    <File md5="D362870FA9D5ECDF748C64588685FA47" import="0">Building_FreeBuildingClassFoundedCity.lua</File>
+    <File md5="760E14BD64D07B845EE9A6AACB3E9E7D" import="0">JarCoM_GameDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>JarCoM_GameDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Building_FreeBuildingClassFoundedCity.lua">
+      <Name>Building_FreeBuildingClassFoundedCity.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

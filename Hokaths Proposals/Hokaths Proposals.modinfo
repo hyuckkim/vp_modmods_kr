@@ -156,6 +156,7 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Portugal.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Sweden.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Persia.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civ_Balance/Rome.sql</File>
 
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.sql</File>
 			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Forts/Forts.xml</File>
@@ -328,9 +329,8 @@
 		<UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Ethiopia.sql</UpdateDatabase>
 		<UpdateDatabase>Civ_Balance/Persia.sql</UpdateDatabase>
-		<!--    -- need DLL change --
 		<UpdateDatabase>Civ_Balance/Portugal.sql</UpdateDatabase>
-		-->
+		<UpdateDatabase>Civ_Balance/Rome.sql</UpdateDatabase>
 		
 		<!--<UpdateDatabase>Forts/Forts.sql</UpdateDatabase>
 		<UpdateDatabase>Forts/Forts.xml</UpdateDatabase>-->

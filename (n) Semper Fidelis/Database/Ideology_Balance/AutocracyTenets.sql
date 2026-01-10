@@ -46,20 +46,16 @@ SET Text = 'Border control comprises measures taken by governments to monitor an
 WHERE Tag = 'TXT_KEY_POLICY_FORTIFIED_BORDERS_TEXT';
 
 
--- Lebensraum. remove unbalaceable nightmare that is citadel boost. give border growth yields
+-- Lebensraum. remove raze-and-resettle and reactivate border growth yields
 
 UPDATE Policies
 SET
-	CultureBombBoost = 0
+	RetainRazedTerritory = 0,
+	PlotCultureExponentModifier = -20
 WHERE Type = 'POLICY_INDUSTRIAL_ESPIONAGE';
 
-INSERT INTO Policy_YieldFromKills
-	(PolicyType, YieldType, Yield)
-VALUES
-	('POLICY_INDUSTRIAL_ESPIONAGE', 'YIELD_CULTURE_LOCAL', 250);
-
 UPDATE Language_en_US
-SET Text = '[COLOR_POSITIVE_TEXT]Lebensraum[ENDCOLOR]: Receive 10 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points when your borders expand, scaling with Era. Receive [ICON_CULTURE_LOCAL] Border Growth Points when you kill a Unit equal to 250% of its [ICON_STRENGTH] Strength.'
+SET Text = '[COLOR_POSITIVE_TEXT]Lebensraum[ENDCOLOR]: Receive 10 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points when your borders expand, scaling with Era. Culture cost of tiles reduced by 20% (exponentially) in all Cities. Citadels may also be built in foreign territory adjacent to your borders.'
 WHERE Tag = 'TXT_KEY_POLICY_INDUSTRIAL_ESPIONAGE_HELP';
 
 -- police state. too much overlap with foritifed borders, spy effect doesnt make sense since you arent going for sci victory. redesign

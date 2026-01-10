@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="d600c443-2f04-469a-9475-e857284d5992" version="20">
+<Mod id="d600c443-2f04-469a-9475-e857284d5992" version="19">
   <Properties>
     <Name>New Beliefs Mods</Name>
     <Stability>Alpha</Stability>
@@ -22,7 +22,7 @@
     <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
     <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
     <Dlc id="BBB0D085-A0B1-4475-B007-3E549CF3ADC3" minversion="0" maxversion="999" />
-	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
   <References />
   <Blocks />
@@ -40,11 +40,6 @@
 	<File md5="82865ed4a2ef3d9313425c500e795083" import="1">Art/MoreBeliefs080.dds</File>
 	<File md5="a63af842f309efb1c595d08abc760e15" import="1">Art/MoreBeliefs128.dds</File>
 	<File md5="47d1484af08bad90b2452cdd2d1a5cab" import="1">Art/MoreBeliefs256.dds</File>
-	<File md5="7fe3215701ed0c61d1886f31a0e4c732" import="1">Art/PDanNewBeliefs_PI_016.dds</File>
-	<File md5="fb1ba6a5348da6fc7b86f7ab1c27ca02" import="1">Art/PDanNewBeliefs_PI_032.dds</File>
-	<File md5="93d3b2e899f17c9aaf79f4660e742de3" import="1">Art/PDanNewBeliefs_PI_045.dds</File>
-	<File md5="4ba4d076b6ac69dbce6f81ddd3d3c14f" import="1">Art/PDanNewBeliefs_PI_064.dds</File>
-	<File md5="b46847d6d71620f0d96531ff0aff53e8" import="1">Art/PDanNewBeliefs_PI_256.dds</File>
   </Files>
   <Actions>
     <OnModActivated>
