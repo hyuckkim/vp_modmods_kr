@@ -9,12 +9,24 @@ FreeUnitPrereqTech = 'TECH_IRON_WORKING',
 CapitalBuildingModifier = 25,
 CityStateCombatModifier = 0,
 AnnexedCityStatesGiveYields = 0,
-CityConnectionTradeRouteChange = 100
+FreeCapitalBuilding = 'BUILDING_DUMMY_ROME'
+--,CityConnectionTradeRouteChange = 100  -- flat change
 WHERE Type = 'TRAIT_CAPITAL_BUILDINGS_CHEAPER';
 
 UPDATE Language_en_US SET 
 Text = '+25% [ICON_PRODUCTION] Production towards Buildings present in [ICON_CAPITAL] Capital. +100% [ICON_GOLD] Gold/[ICON_PRODUCTION] Production from [ICON_CONNECTED] City Connections/[ICON_INDUSTRIAL_CONNECTED] Industrial City Connections in all Cities. '
 WHERE Tag = 'TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER';
+
+INSERT INTO BuildingClasses 
+	(DefaultBuilding, 	Type, 	Description)
+VALUES	('BUILDING_DUMMY_ROME',		'BUILDINGCLASS_DUMMY_ROME',	'TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT');
+
+INSERT INTO Buildings
+	(Type, 	BuildingClass, 	IsDummy,	Cost,	FaithCost,	
+	GreatWorkCount,	PrereqTech,	MinAreaSize,	NeverCapture,	Description, 	Help, CityConnectionTradeRouteModifier) 
+VALUES	
+	('BUILDING_DUMMY_ROME', 	'BUILDINGCLASS_DUMMY_ROME',	1,			-1,		-1,			
+	-1,	null,		-1,	1,		'TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT',	'TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER', 100);
 
 ---------------------------------------------------------------
 -- Fornix

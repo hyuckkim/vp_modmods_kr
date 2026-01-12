@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="8634880a-749f-4d64-aa68-560378e0f007" version="3">
+<Mod id="8634880a-749f-4d64-aa68-560378e0f007" version="4">
   <Properties>
-    <Name>Jarcast &amp; Hokath's Additional Luxuries</Name>
+    <Name>!Jarcast &amp; Hokath's Additional Luxuries</Name>
     <Stability>Beta</Stability>
-    <Teaser>Adds Alpaca, Camel and Quartz luxury resources</Teaser>
+    <Teaser>Adds Alpaca, Camel, Feathers and Quartz luxury resources</Teaser>
     <Description>New Luxury Resources:
 [NEWLINE][ICON_BULLET]Alpaca (pasture, hill)
 [NEWLINE][ICON_BULLET]Camel (pasture, desert)
+[NEWLINE][ICON_BULLET]Feathers (camp, forest/jungle)
 [NEWLINE][ICON_BULLET]Quartz (quarry, hill).</Description>
     <Authors>Jarcast, Hokath</Authors>
     <HideSetupGame>0</HideSetupGame>
@@ -27,15 +28,17 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="B1F28708B8717564DFE6CC951C437D60" import="1">Art/AddLuxResAtlas128.dds</File>
-    <File md5="E3FCDD5E730A20F26E1062D528AF1AF2" import="1">Art/AddLuxResAtlas256.dds</File>
-    <File md5="3F366A7FDF68BB7B6F25C13BA0CFD03A" import="1">Art/AddLuxResAtlas45.dds</File>
-    <File md5="D4EF75AF3DBAB592C9457ABB274B50B9" import="1">Art/AddLuxResAtlas64.dds</File>
-    <File md5="F5B649B5EAE8F9DE7FD7D3422F11CCEB" import="1">Art/AddLuxResAtlas80.dds</File>
+    <File md5="094EA9EE083A48C9DAE14B543E5197BD" import="1">Art/AddLuxResAtlas128.dds</File>
+    <File md5="20C7E295E12EFEEECCEA05FF64A84046" import="1">Art/AddLuxResAtlas256.dds</File>
+    <File md5="43D5C5104D0A8D7E281D43E86B74121C" import="1">Art/AddLuxResAtlas45.dds</File>
+    <File md5="37F4D237682B9136121779046F509C19" import="1">Art/AddLuxResAtlas64.dds</File>
+    <File md5="C50DF08025F2F28105246FC4BFC2C083" import="1">Art/AddLuxResAtlas80.dds</File>
     <File md5="44758A5B80C527427BB7DC1FE50C1ACF" import="1">Art/FontIcons/AlpacaFontIcon_22.dds</File>
     <File md5="1A79DEFF5BD44D221FE47115D13D4E7A" import="1">Art/FontIcons/AlpacaFontIcon_22.ggxml</File>
     <File md5="E381FA07E8D7A04F363D01BD29C56E72" import="1">Art/FontIcons/CamelFontIcon_22.dds</File>
     <File md5="46432168013B381FCCAEDE2688852146" import="1">Art/FontIcons/CamelFontIcon_22.ggxml</File>
+    <File md5="309851F1DC70C16F1A6B883BF3368A15" import="1">Art/FontIcons/FeathersFontIcon_22.dds</File>
+    <File md5="C14644EB06272538F7827B932E4D066E" import="1">Art/FontIcons/FeathersFontIcon_22.ggxml</File>
     <File md5="00F4FD53E5A3DA26612C4C7C715EC36A" import="1">Art/FontIcons/QuartzFontIcon_22.ggxml</File>
     <File md5="18087295C3B0C7F2C9A7F2ACA98E1ABF" import="1">Art/FontIcons/QuartzFontIcon_22.dds</File>
     <File md5="97F2676ED349FC5A5C61D7038BD065AA" import="1">Art/Resources/Alpaca/alpaca_v2.dds</File>
@@ -44,6 +47,21 @@
     <File md5="BBB57016C6F3534C418810ACE352C15F" import="1">Art/Resources/Camel/camel_resource_diff.dds</File>
     <File md5="A1F7B6FAFD3461ED710C917984DF8CC4" import="1">Art/Resources/Camel/resource_camel.fxsxml</File>
     <File md5="233C7169F8468B7D77122801944C9D31" import="1">Art/Resources/Camel/resource_camel.gr2</File>
+    <File md5="7D72CC6175F2A8291466469BC3BB773B" import="1">Art/Resources/Feathers/BarbarianCampBase.dds</File>
+    <File md5="62BF33611AF4A7338AD64C9C077C2ECD" import="1">Art/Resources/Feathers/er_burial_ground.fxsxml</File>
+    <File md5="C71DB314B79EE56A79DCEFF04D11D415" import="1">Art/Resources/Feathers/er_burial_ground.gr2</File>
+    <File md5="61A3D2A36259FD931A54386B1C5808D1" import="1">Art/Resources/Feathers/er_burial_vulture_diff.dds</File>
+    <File md5="1F281D9450751300E2080421A9DBAC61" import="1">Art/Resources/Feathers/er_burial_vulture_sref.dds</File>
+    <File md5="F07DEAC9E0DEE390E267F657064A9CBC" import="1">Art/Resources/Feathers/feathers_diff.dds</File>
+    <File md5="1F281D9450751300E2080421A9DBAC61" import="1">Art/Resources/Feathers/feathers_sref.dds</File>
+    <File md5="BA49C4CA10D57067378D8C67B0E4F1A9" import="1">Art/Resources/Feathers/fx_blk_blk4x4.dds</File>
+    <File md5="3C477511FB981A80EF16E63BAA3DA845" import="1">Art/Resources/Feathers/fx_triggers_haradcamp_P.ftsxml</File>
+    <File md5="6267BC82EF7477E4AEF044C9F3C62F52" import="1">Art/Resources/Feathers/harad.fxsxml</File>
+    <File md5="FCA5981BCD9C3086246A6F503CD05899" import="1">Art/Resources/Feathers/haradcamp.gr2</File>
+    <File md5="FCA5981BCD9C3086246A6F503CD05899" import="1">Art/Resources/Feathers/haradcamp_P.gr2</File>
+    <File md5="09CF65434AE0A6A6636538F9D79979A3" import="1">Art/Resources/Feathers/harad_P.fxsxml</File>
+    <File md5="386844734751865CF64B1FF088984150" import="1">Art/Resources/Feathers/Wonder_grnd_diff.dds</File>
+    <File md5="3E72CE4C071592D55FB4C08E3D4FCE87" import="1">Art/Resources/Feathers/wonder_grnd_h.dds</File>
     <File md5="14E63A4EA9312C8AC8663E7D283038C9" import="1">Art/Resources/Quartz/HB_QUARRY_IND_QUARTZ.fxsxml</File>
     <File md5="6AA376CA190C925860FF66BC5D164A35" import="1">Art/Resources/Quartz/HB_QUARRY_IND_QUARTZ.gr2</File>
     <File md5="B33F21DAA34E2B1EE4BAC4CFD6D20590" import="1">Art/Resources/Quartz/HB_QUARRY_MID_QUARTZ.fxsxml</File>
@@ -63,14 +81,15 @@
     <File md5="0A88ADCA1AF8A1A938FD14B42315F3A0" import="1">Art/Resources/Quartz/Resource_QUARTZ.gr2</File>
     <File md5="B6366B0243D2B2611FDC473B8AB35D45" import="1">Art/sv_Alpaca.dds</File>
     <File md5="AF4A790D75AA33821A60A261B0E6B703" import="1">Art/sv_Camel.dds</File>
+    <File md5="571C9CE03723BF8D41FFF40DB91E315B" import="0">Art/sv_Feathers.dds</File>
     <File md5="95E584F296A02819476C70ACE6440AC2" import="1">Art/sv_Quartz.dds</File>
-    <File md5="B309612BB1197E4ACC9F0764AE9207E2" import="0">Resources_ArtDefines.sql</File>
-    <File md5="9AE8599750A08B61BBE0354D26D454C4" import="0">Resources_GameDefines.sql</File>
+    <File md5="E00ACB35C5CF26D1BEAC01413A50CBEC" import="0">Resources_ArtDefines.sql</File>
+    <File md5="FE9B7C0C2DB6C0DEA3E2620C08DB475E" import="0">Resources_GameDefines.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>Resources_GameDefines.sql</UpdateDatabase>
       <UpdateDatabase>Resources_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Resources_GameDefines.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
 </Mod>
