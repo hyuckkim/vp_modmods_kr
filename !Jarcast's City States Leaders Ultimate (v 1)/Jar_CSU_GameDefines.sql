@@ -295,12 +295,10 @@ SELECT 	'MINOR_CIV_'||CSName,	'FLAVOR_GOLD',			10 FROM JarCityStatesDefine WHERE
 --======================================================================================================================================
 INSERT INTO MajorBlocksMinor
 		(MajorCiv, 						MinorCiv)
-SELECT 	'CIVILIZATION_INDIA',			'MINOR_CIV_DELHI'			UNION ALL
-SELECT 	'CIVILIZATION_CHINA',			'MINOR_CIV_LANTAU'			UNION ALL
-SELECT 	'CIVILIZATION_LS_VIETNAM',		'MINOR_CIV_CO_LOA'			UNION ALL
-SELECT 	'CIVILIZATION_JFD_PAPAL_STATES','MINOR_CIV_VATICAN_CITY'	UNION ALL
-SELECT 	'CIVILIZATION_JAR_NANMADOL',	'MINOR_CIV_NAN_MADOL'		UNION ALL
-SELECT 	'CIVILIZATION_JAR_MARAJOARA',	'MINOR_CIV_CAMUTINS'		;
+SELECT 	'CIVILIZATION_INDIA',			'MINOR_CIV_DELHI'		UNION ALL
+SELECT 	'CIVILIZATION_LS_VIETNAM',		'MINOR_CIV_CO_LOA'		UNION ALL
+SELECT 	'CIVILIZATION_JAR_NANMADOL',	'MINOR_CIV_NAN_MADOL'	UNION ALL
+SELECT 	'CIVILIZATION_JAR_MARAJOARA',	'MINOR_CIV_CAMUTINS'	;
 --======================================================================================================================================
 -- Remove shitty or conflictual VP5 City States
 --======================================================================================================================================

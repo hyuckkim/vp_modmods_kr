@@ -3,7 +3,7 @@
   <Properties>
     <Name>(1L) Community Patch INT</Name>
     <Stability>Beta</Stability>
-    <Teaser>(5.1) 문명 5의 버그 수정, AI 개선, 게임 최적화 및 API 확장</Teaser>
+    <Teaser>(5.1.1) 문명 5의 버그 수정, AI 개선, 게임 최적화 및 API 확장</Teaser>
     <Description>문명 5 멋진 신세계 DLL에 대한 핵심 AI 개선 사항과 버그 수정 사항이 포함되어 있습니다. 또한 Vox Populi 비공식 확장팩과 관련 모드에 대한 지원도 포함되어 있습니다.</Description>
     <Authors>hyuckkim, HANDANI</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
@@ -49,6 +49,7 @@
     <File md5="DF075603D14B08CA6FFD17A176F6F30E" import="0">Database Changes/Text/ko_KR/Minors/CoreMinorTextChanges.sql</File>
     <File md5="EABA9BB62F298E44FAC8EF002CD3C8B1" import="0">Database Changes/Text/ko_KR/Notifications/CoreNewNotificationText.xml</File>
     <File md5="E57C3D4C4767242A559067A9FEA37B0A" import="0">Database Changes/Text/ko_KR/Notifications/CoreNotificationTextChanges.sql</File>
+    <File md5="B446E9AA1679F6CAF5F2F6FC227501D2" import="0">Database Changes/Text/ko_KR/Policies/CorePolicyTextChanges.sql</File>
     <File md5="F0D93DDFD5DEF449A339A562975209C1" import="0">Database Changes/Text/ko_KR/Religions/CoreReligionTextChanges.sql</File>
     <File md5="8C060BFD3113EF5A0BEAD46BA047F746" import="0">Database Changes/Text/ko_KR/UI/CoreNewUIText.xml</File>
     <File md5="48820A641B622BE90F68FAB6C65B4060" import="0">Database Changes/Text/ko_KR/UI/CoreUITextChanges.sql</File>
@@ -83,6 +84,7 @@
       <UpdateDatabase>Database Changes/Text/ko_KR/Minors/CoreMinorTextChanges.sql</UpdateDatabase>
       <UpdateDatabase>Database Changes/Text/ko_KR/Notifications/CoreNewNotificationText.xml</UpdateDatabase>
       <UpdateDatabase>Database Changes/Text/ko_KR/Notifications/CoreNotificationTextChanges.sql</UpdateDatabase>
+      <UpdateDatabase>Database Changes/Text/ko_KR/Policies/CorePolicyTextChanges.sql</UpdateDatabase>
       <UpdateDatabase>Database Changes/Text/ko_KR/Religions/CoreReligionTextChanges.sql</UpdateDatabase>
       <UpdateDatabase>Database Changes/Text/ko_KR/UI/CoreNewUIText.xml</UpdateDatabase>
       <UpdateDatabase>Database Changes/Text/ko_KR/UI/CoreUITextChanges.sql</UpdateDatabase>
