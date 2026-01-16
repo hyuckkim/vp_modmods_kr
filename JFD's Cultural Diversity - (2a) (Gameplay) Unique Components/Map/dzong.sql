@@ -25,12 +25,13 @@ INSERT INTO ArtDefine_Landmarks
 -- Improvements
 --------------------------------
 INSERT INTO Improvements
-		(Type,						Description,						Civilopedia, 							Help,									ArtDefineTag,		ConnectsAllResources,	MountainsMakesValid,
-BuildableOnResources, InAdjacentFriendly, NoTwoAdjacent, CreatedByGreatPerson, DefenseModifier, NearbyEnemyDamage,
- PillageGold, Permanent, CultureBombRadius, MakesPassable, GrantsVisionXTiles, IconAtlas,			PortraitIndex)
+	(Type,						Description,			Civilopedia, 		Help,		ArtDefineTag,		ConnectsAllResources,	MountainsMakesValid, 
+	BuildableOnResources, InAdjacentFriendly, NoTwoAdjacent, CreatedByGreatPerson, DefenseModifier, NearbyEnemyDamage, NoFollowUp,
+	 PillageGold, Permanent, CultureBombRadius, MakesPassable, GrantsVisionXTiles, IconAtlas,			PortraitIndex)
 SELECT	
 	'IMPROVEMENT_JAR_DZONG',	'TXT_KEY_IMPROVEMENT_JAR_DZONG',	'TXT_KEY_IMPROVEMENT_JAR_DZONG_TEXT',	'TXT_KEY_IMPROVEMENT_JAR_DZONG_HELP',	'ART_DEF_IMPROVEMENT_JAR_DZONG', 1, 1,
-	BuildableOnResources, InAdjacentFriendly, NoTwoAdjacent, CreatedByGreatPerson, DefenseModifier, NearbyEnemyDamage, PillageGold,	Permanent, CultureBombRadius, MakesPassable, 2, 				 'CD_ECONOMIC_ATLAS',	54
+	BuildableOnResources, InAdjacentFriendly, NoTwoAdjacent, CreatedByGreatPerson, DefenseModifier, NearbyEnemyDamage, NoFollowUp,
+	 PillageGold,	Permanent, CultureBombRadius, MakesPassable, 2, 				 'CD_ECONOMIC_ATLAS',	54
 FROM Improvements  WHERE Type= 'IMPROVEMENT_CITADEL';
 ------------------------------	
 -- Improvement_Flavors

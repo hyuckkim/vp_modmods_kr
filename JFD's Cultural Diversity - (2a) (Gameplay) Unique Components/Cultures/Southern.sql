@@ -43,6 +43,7 @@ REPLACE INTO Language_en_US
 	(Tag, Text)
 SELECT
 	'TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI_HELP', 'Requires the [ICON_CULTURE_JFD_SOUTHERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_SOUTHERN_SHORT_DESC}[ENDCOLOR] Cultural Group.';
+
 INSERT INTO Building_YieldFromProcessModifier
 	(BuildingType, YieldType, Yield)
 VALUES

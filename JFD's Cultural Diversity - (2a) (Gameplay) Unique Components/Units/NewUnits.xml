@@ -4,7 +4,8 @@
 		<Row>
 			<Type>UNITCLASS_CD_BAGHATUR</Type>
 			<Description>TXT_KEY_UNIT_CD_BAGHATUR</Description>
-			<DefaultUnit>UNIT_CD_BAGHATUR</DefaultUnit>
+			<DefaultUnit>NONE</DefaultUnit>
+			<!-- UNIT_CD_BAGHATUR -->
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
 	</UnitClasses>

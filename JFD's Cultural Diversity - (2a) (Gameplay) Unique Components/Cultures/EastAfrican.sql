@@ -117,7 +117,7 @@ BEGIN
 END;
 
 UPDATE Language_en_US SET
-Text = 'Replaces the [ICON_GREAT_MERCHANT] Great Merchant for the [ICON_CULTURE_JFD_EAST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_AFRICAN_SHORT_DESC}[ENDCOLOR] Cultural Group. Receive 10% progress towards a [ICON_GREAT_MERCHANT] Jumbe in the [ICON_CAPITAL] Capital whenever you adopt a [COLOR_MAGENTA]Policy[ENDCOLOR].[NEWLINE][NEWLINE]Starts with the [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR], [COLOR_POSITIVE_TEXT]Adept[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Noble[ENDCOLOR] Promotions. Trade Missions from the Jumbe generate 50% more base [ICON_GOLD] Gold.[NEWLINE][NEWLINE]When you expend a Jumbe, all Strategic Resources in the Empire gain +1 [ICON_GOLDEN_AGE] Golden Age Point, all [ICON_MERCHANT] Merchants gain +1 [ICON_FOOD] Food, and all Cities gain +1 [ICON_TOURISM] Tourism.'
+Text = 'Replaces the [ICON_GREAT_MERCHANT] Great Merchant for the [ICON_CULTURE_JFD_EAST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_AFRICAN_SHORT_DESC}[ENDCOLOR] Cultural Group. Receive 10% progress towards a [ICON_GREAT_MERCHANT] Jumbe in the [ICON_CAPITAL] Capital whenever you adopt a [COLOR_MAGENTA]Policy[ENDCOLOR].[NEWLINE][NEWLINE]Starts with the [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR], [COLOR_POSITIVE_TEXT]Adept[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Noble[ENDCOLOR] Promotions. Trade Missions from the Jumbe generate 50% more base [ICON_GOLD] Gold.[NEWLINE][NEWLINE]When you expend a Jumbe, all Strategic Resources in the Empire gain +1 [ICON_GOLDEN_AGE] Golden Age Point, all Harbors gain +2 [ICON_FOOD] Food, and the [ICON_CAPITAL] Capital gains +3 [ICON_TOURISM] Tourism.'
 WHERE Tag = 'TXT_KEY_UNIT_CD_JUMBE_HELP';
 
 -- -----------------------

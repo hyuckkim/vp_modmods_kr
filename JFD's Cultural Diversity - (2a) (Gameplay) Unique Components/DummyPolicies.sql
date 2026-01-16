@@ -115,6 +115,19 @@ BEGIN
 	UPDATE Civilization_JFD_CultureTypes 
 	SET CultureType = 'CULTURE_JFD_WEST_AFRICAN'
 	WHERE CivilizationType IN ('CIVILIZATION_ANCIENT_LIBYA_MOD');
+
+	-- need some hardcoding for warriors due to the starting units issue
+	INSERT INTO Civilization_UnitClassOverrides
+		(CivilizationType, UnitClassType, UnitType)
+	SELECT
+		NEW.CivilizationType, 'UNITCLASS_WARRIOR', 'UNIT_CD_SLAGANZ'
+	WHERE NEW.CultureType = 'CULTURE_JFD_CENTRAL';
+
+	INSERT INTO Civilization_UnitClassOverrides
+		(CivilizationType, UnitClassType, UnitType)
+	SELECT
+		NEW.CivilizationType, 'UNITCLASS_WARRIOR', 'UNIT_CD_AGIRU'
+	WHERE NEW.CultureType = 'CULTURE_JFD_EAST_AFRICAN';
 END;
 
 INSERT INTO Civilization_BuildingClassOverrides

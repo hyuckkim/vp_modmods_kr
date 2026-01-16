@@ -1,3 +1,5 @@
+UPDATE Defines SET Value = 6 WHERE Name = 'NUM_UNIQUE_COMPONENTS';
+--------------------------------------------------------------------------
 -- levatine gets changed after this in Reassignments.sql
 --==========================================================================================================================
 --========================================================================================================================== 
@@ -27,6 +29,8 @@ VALUES
 	('CIVILIZATION_IA_KUSHAN', 'CULTURE_JFD_STEPPE', null),
 	('CIVILIZATION_HININ_HISATSINOM', 'CULTURE_JFD_GREAT_PLAINS',	null),
 	('CIVILIZATION_COLONIALCANADA',	'CULTURE_JFD_COLONIAL',	'AS2D_SOUND_JFD_AMERICAN'),
+	('CIVILIZATION_HININ_SCOTLAND', 'CULTURE_CD_CELTIC', 'AS2D_SOUND_JFD_GAELIC'),
+	('CIVILIZATION_JFD_IRELAND_BRIAN_BORU', 'CULTURE_CD_CELTIC', 'AS2D_SOUND_JFD_GAELIC'),
 	('CIVILIZATION_HININ_AINU', 'CULTURE_JFD_POLAR', null),
 	('CIVILIZATION_HININ_IMAZIGHEN', 'CULTURE_JFD_WEST_AFRICAN', null);  -- saharan
 

@@ -103,9 +103,11 @@ INSERT INTO Building_RiverPlotYieldChanges
 VALUES
 	('BUILDING_CD_GHAT', 'YIELD_FAITH', 1);
 
+DELETE FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_CD_GHAT';
+
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
 VALUES
 	('BUILDING_CD_GHAT', 'YIELD_FAITH', 1),
 	('BUILDING_CD_GHAT', 'YIELD_GOLD', 1),
-	('BUILDING_CD_GHAT', 'YIELD_CULTURE', 1);
+	('BUILDING_CD_GHAT', 'YIELD_CULTURE', 2);

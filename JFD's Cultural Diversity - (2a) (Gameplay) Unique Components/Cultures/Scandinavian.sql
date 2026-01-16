@@ -133,7 +133,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_CD_MEAD_HALL_HELP';
 INSERT INTO Building_YieldFromCombatExperienceTimes100
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_CD_MEAD_HALL', 'YIELD_GOLDEN_AGE_POINTS', 50);
+	('BUILDING_CD_MEAD_HALL', 'YIELD_GOLDEN_AGE_POINTS', 100);
 
 INSERT INTO Building_YieldChangesPerGoldenAge
 	(BuildingType, YieldType, Yield, YieldCap)

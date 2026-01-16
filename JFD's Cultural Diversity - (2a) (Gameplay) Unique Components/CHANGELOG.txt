@@ -30,5 +30,15 @@ v 2
 -- Grocer replacements now provide yields to Coca and Liquor
 -- Building_YieldModifiers now copied from base buildings (National Exhibit 10% culture)
 -- Dwor now 50% expensive than the base building, like the Barbican
--- Removed Scotland and Louisiana from compatibility file since it was updated
+-- Removed Louisiana from compatibility file since it was updated (Celtic are kept because of load order weirdness)
 -- Reenabled food conversion on Mesopotamian Levy after DLL change not to consume pop
+-- Merged 5.1 CivilopediaScreen.lua
+-- Fixed Dzong not having Fortifications
+-- Added Define to interface with VP UI
+-- Fixed load order problem for Central Europe and East African Warrior UUs 
+-- Fixed Celtic event triggering on Workshop not Metalsmith
+-- Renamed Banco dei Cambi to Campsor and updated text
+-- Fixed Ethiopia Jumbe text
+-- Removed old Food/BGP on kill from Slaganz
+-- Fixed Ghat tooltip looking like it only had 1 culture
+-- Increased GAP to 100 (was 50) percent of XP on Mead Hall based on feedback
