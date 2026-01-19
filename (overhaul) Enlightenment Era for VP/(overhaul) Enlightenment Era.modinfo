@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="18">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="19">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -28,9 +28,6 @@
   <Dependencies>
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
-  <References>
-    <Mod id="9784d016-f5cc-80b3-b37e-a73cdc315fe9" minversion="0" maxversion="999" title="Torpedo Boat" />
-  </References>
   <Blocks>
     <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
     <Mod id="af398f38-90a0-45f0-9831-6c712c86061b" minversion="0" maxversion="999" title="(8) VP-EE Compatibility" />
@@ -123,17 +120,19 @@
     <File md5="96B095DE275E74C651C065D39B32F558" import="1">Art/Unit Models/Carrack/Carrack_diff.dds</File>
     <File md5="997802481AF18082ADECA48D2FBFAF93" import="1">Art/Unit Models/Carrack/Carrack_sref.dds</File>
 
-    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/Galleon/GrandCarrack_flag.dds</File>
-    <File md5="0294BA39DF9332E341A6E7D89308D954" import="1">Art/Unit Models/Galleon/sv_GrandCarrack.dds</File>
-    <File md5="235805143A760DDD9F22EDBA552F9774" import="1">Art/Unit Models/Galleon/u_british_carrack.fxsxml</File>
-    <File md5="44FF879C9C7ABAD55C7503F2CA84BEE9" import="1">Art/Unit Models/Galleon/u_british_carrack.gr2</File>
-    <File md5="53050466E292627D9D1EB25FF313B2D2" import="1">Art/Unit Models/Galleon/u_grand_carrack_damg_diff.dds</File>
-    <File md5="7F5EAA15149BD31A9D73334D9B6432F1" import="1">Art/Unit Models/Galleon/u_grand_carrack_diff.dds</File>
-    <File md5="7AFC633E0B37941897D553FDA038A426" import="1">Art/Unit Models/Galleon/u_grand_carrack_sref.dds</File>
-    <File md5="CE968A1D4137601E6422D6BB3943C3F0" import="1">Art/Unit Models/Galleon/mod_spanish_galleon.fxsxml</File>
-    <File md5="CAC8D7B4306429CA8069F1C9E7F4FA46" import="1">Art/Unit Models/Galleon/mod_spanish_galleon.gr2</File>
-    <File md5="CD264FD2DC9AB16168597C97FD61E178" import="1">Art/Unit Models/Galleon/mod_spanish_galleon_diff.dds</File>
-    <File md5="CE4A3E13B815756437E70EF0EE44642F" import="1">Art/Unit Models/Galleon/mod_spanish_galleon_sref.dds</File>
+	<!-- civ 4 with 2 decks of guns -->
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/GalleonCannons_diff.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/GalleonCannons_sref.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/GalleonHull_diff.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/GalleonHull_sref.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/WarGalleon.fxsxml</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/WarGalleon/WarGalleon.gr2</File>
+
+	<!-- civ 4 with 1 deck of guns -->
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/Galleon/RussianGalleon.gr2</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/Galleon/RussianGalleon_sref.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/Galleon/RussianGalleon_diff.dds</File>
+    <File md5="7AFC633E0B37941897D553FDA038A421" import="1">Art/Unit Models/Galleon/RussianGalleon.fxsxml</File>
 
     <File md5="480B2BC2DF69254A5F26102F62B460DD" import="1">Art/Unit Models/Explorer/conquistador_musketman.dds</File>
     <File md5="163CDF867415B69FD0EAB1A1216A7171" import="1">Art/Unit Models/Explorer/conquistador_musketman_2.dds</File>
@@ -256,7 +255,8 @@
     <File md5="0DA4AF9822143D7DC3153D4439ADEA6A" import="1">Sounds/Quotes/Wonders/VersaillesAudio.mp3</File>
     <File md5="32D8E689D585853234BCAF477053E0BB" import="1">Sounds/Quotes/Wonders/WatPhraKaewAudio.mp3</File>
 
-    <File md5="726639F1F0C8F0D6DA9F6C2311A9F048" import="0">SQL/ArtDef/EECarrackDefines.sql</File>
+    <File md5="726639F1F0C8F0D6DA9F6C2311A9F048" import="0">SQL/ArtDef/EECarrackDefine.sql</File>
+    <File md5="726639F1F0C8F0D6DA9F6C2311A9F048" import="0">SQL/ArtDef/EEGalleonDefine.sql</File>
     <File md5="C8FE7AC12B9D0C81EC02C46F30856BDF" import="0">SQL/ArtDef/EEDragoonDefine.sql</File>
     <File md5="CF779F5EF8286F73BB31F775B5F2A5A9" import="0">SQL/ArtDef/EEExplorerDefine.sql</File>
     <File md5="2033175767DBA6F147F0674C9AC888AD" import="0">SQL/ArtDef/EEFieldGunDefine.sql</File>
@@ -286,7 +286,8 @@
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>SQL/ArtDef/EECarrackDefines.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ArtDef/EEGalleonDefine.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ArtDef/EECarrackDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EEDragoonDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EEExplorerDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EEFieldGunDefine.sql</UpdateDatabase>

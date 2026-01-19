@@ -114,17 +114,21 @@ INSERT INTO Building_FeatureYieldChanges
 SELECT
 	'BUILDING_WORKSHOP', 'FEATURE_FOREST', 'YIELD_PRODUCTION', 1;
 
+/*
 UPDATE Language_en_US
 SET Text = '{TXT_KEY_BUILDING_STABLE}s and Pharmacies in the City produce +2 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production from Forests worked by this City. +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms, Marshes, and Lakes.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along trade routes inside your Civilization.'
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_HELP';
+*/
 
 UPDATE Language_en_US
 SET Text = 'The Windmill is a Medieval-era building which increases the [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output of a City based on the nearby terrain: from Forests, Farms, Marshes, and Lakes. It also provides additional Food if the requisite infrastructure exists in the City.'
 WHERE Tag = 'TXT_KEY_BUILDING_WORKSHOP_STRATEGY';
 
+/*
 UPDATE Language_en_US
 SET Text = '+1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Farms and +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Pastures worked by the City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]Requires 2 [ICON_RES_HORSE] Horses.'
 WHERE Tag = 'TXT_KEY_BUILDING_AGRIBUSINESS_HELP';
+*/
 
 ----------------------
 -- Workshop
@@ -174,6 +178,7 @@ WHERE y.Type IN ('YIELD_GOLDEN_AGE_POINTS', 'YIELD_CULTURE')
 AND b.Type IN (SELECT Type FROM Buildings WHERE Type = 'BUILDING_WINDMILL');
 
 -- update the help text
+/*
 UPDATE Language_en_US SET
 Text = '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Nearby [ICON_RES_STONE] Stone: +1 [ICON_PRODUCTION] Production and [ICON_GOLDEN_AGE] Golden Age Point.[NEWLINE]Nearby [ICON_RES_MARBLE] Marble: +1 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Point.'
 WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
@@ -181,6 +186,7 @@ WHERE Tag='TXT_KEY_BUILDING_WINDMILL_HELP';
 UPDATE Language_en_US
 SET Text = Replace(Text, '+1 [ICON_PRODUCTION] Production from Forests worked by this City, and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the City.', '25% of the [ICON_PRODUCTION] Production of the City is added to the City''s current [ICON_PRODUCTION] Production after a new [ICON_CITIZEN] Citizen is born. +15% [ICON_PRODUCTION] Production when constructing Buildings.')
 WHERE Tag ='TXT_KEY_BUILDING_WINDMILL_HELP';
+*/
 
 UPDATE Language_en_US
 SET Text = 'The Workshop boosts Production in strong Cities, and improves your ability to move Production to weaker ones with Internal Trade Routes. It also improves the Aqueduct growth bonus, which is best when high Production can also be paired with rapid growth, whether that is a small City getting off the ground or a larger City with ample Food.'
@@ -189,6 +195,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY';
 ------------------------------------------------------------
 -- compatibility
 ------------------------------------------------------------
+/*
 INSERT OR REPLACE INTO Language_en_US (Tag, Text)
 SELECT 'TXT_KEY_BUILDING_ATLOOH_HELP_EE',
 '+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City. [ICON_ARTIST] Artist Specialists in the City generate +2 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_PEACE] Faith. Provides 1 copy of the [ICON_RES_JAR_DIYOGI] Diyogi Luxury Resource. +1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]' || Text || '[NEWLINE][NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_GOLD] Gold.'
@@ -198,6 +205,7 @@ UPDATE Language_en_US SET Text = REPLACE(Text, '+1 [ICON_PRODUCTION] Production 
 WHERE Tag = 'TXT_KEY_BUILDING_ATLOOH_HELP_EE';
 
 UPDATE Buildings SET Help = 'TXT_KEY_BUILDING_ATLOOH_HELP_EE' WHERE Type = 'BUILDING_JAR_ATLOOH';
+*/
 
 CREATE TRIGGER IF NOT EXISTS EE_Navajo_compatibility AFTER INSERT ON Buildings
 WHEN NEW.Type = 'BUILDING_JAR_ATLOOH'

@@ -520,6 +520,32 @@ Compatibility
 -- Updated keys for VP 5.0
 -- Merged 4UC compatibility files into the mod proper
 
+Buildings
+-- Drydock Well-Maintained Promotion now 20% (up from 15%) but only if the Unit started with full HP
+
+Wonders
+-- Tower of Buddhist Incense now affects Manor instead of Chancery, and +1 Yields
+
+Units
+-- Fixed Cacador getting double class promos
+
 Art
 -- Longswordsman now uses a reskinned Jerusalem Longsword model to match the icon
+
+----------------
+-- v19
+----------------
+Compatibility
+-- Torpedo boat stuff removed. 
+  We should follow the convention that big mods do not reference small mods to prevent cyclic dependencies (CTD)
+
+Units
+-- Galleons now upgrade to Frigates
+  Too confusing to upgrade to Cruiser, especially since it is now at Exploration
+  We could delay the ObsoleteTech but it's better to be consistent I think, and fix the issue elsewhere
+
+Art
+-- Armada now has unique model (was same as Galleon)
+-- Corvette now has unique model (was either same as Carrack or "Privateer", which is a Frigate with a jolly roger)
+-- Longsword is now not always yellow, but has team color
 

@@ -22,11 +22,12 @@ SET Text = '투우장은 스페인의 독특한 건축물로, 동물원보다 �
 WHERE Tag = 'TXT_KEY_BUILDING_BULLRING_STRATEGY';
 
 ------------------------------------------
+/*
 -- 모로코 리아드
 UPDATE Language_ko_KR
 SET Text = '완공 시, 이 도시에 이미 건설된 건물 및 불가사의 8개마다 [ICON_GOLD] 골드와 [ICON_CULTURE] 문화를 획득합니다. 매 시대마다 [ICON_GOLD] 골드 +1, [ICON_CULTURE] 문화 +1이 증가합니다. 도시는 설원과 작업 가능한 타일 내의 산 하나당 [ICON_GOLD] 골드 +1, [ICON_TOURISM] 관광 +1이 증가합니다. 이 도시에서 작업 중인 오아시스에서 [ICON_TOURISM] 관광 +5를 얻습니다.[NEWLINE][NEWLINE]이 도시에서 [ICON_INVEST] 골드를 사용하여 유닛을 구매하거나 건물에 투자할 경우, 비용의 10%가 [ICON_TOURISM] 관광 산출량으로 전환됩니다.[NEWLINE][NEWLINE][ICON_WONDER] 세계 불가사의와 타일에서 비롯된 [ICON_CULTURE] 문화의 50%가 도시 [ICON_TOURISM]관광 산출량에 더해집니다. 걸작으로 인한 [ICON_TOURISM] 관광 산출량이 +25% 증가합니다.[NEWLINE][NEWLINE]이곳에서 시작하여 다른 문명을 목표로 하는 [ICON_CARAVAN]/[ICON_CARGO_SHIP] 교역로를 완성하면 [COLOR_POSITIVE_TEXT]역사적 이벤트[ENDCOLOR]가 발생하거나 기존 이벤트가 강화됩니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_RIAD_HELP';
-
+*/
 ------------------------------------------
 -- 가부키 극장
 UPDATE Language_ko_KR

@@ -92,26 +92,6 @@ BEGIN
 	SELECT NEW.TraitType,'IMPROVEMENT_LANDMARK_AFRI',NEW.YieldType,	NEW.Yield;
 END;
 --------------------------------------------------------------------------------------------------------------------------
--- Trait_ImprovementYieldChangesFromGoldenAge
---------------------------------------------------------------------------------------------------------------------------
-INSERT INTO Trait_ImprovementYieldChangesFromGoldenAge
-		(TraitType, ImprovementType,     		YieldType, Yield, YieldCap)
-SELECT	 TraitType, 'IMPROVEMENT_LANDMARK_EURO',YieldType, Yield, YieldCap FROM Trait_ImprovementYieldChangesFromGoldenAge WHERE ImprovementType='IMPROVEMENT_LANDMARK' UNION ALL
-SELECT	 TraitType, 'IMPROVEMENT_LANDMARK_ASIA',YieldType, Yield, YieldCap FROM Trait_ImprovementYieldChangesFromGoldenAge WHERE ImprovementType='IMPROVEMENT_LANDMARK' UNION ALL
-SELECT	 TraitType, 'IMPROVEMENT_LANDMARK_AMER',YieldType, Yield, YieldCap FROM Trait_ImprovementYieldChangesFromGoldenAge WHERE ImprovementType='IMPROVEMENT_LANDMARK' UNION ALL
-SELECT	 TraitType, 'IMPROVEMENT_LANDMARK_AFRI',YieldType, Yield, YieldCap FROM Trait_ImprovementYieldChangesFromGoldenAge WHERE ImprovementType='IMPROVEMENT_LANDMARK';
-
-CREATE TRIGGER IF NOT EXISTS JarLandmarkCV05 AFTER INSERT ON Trait_ImprovementYieldChangesFromGoldenAge
-WHEN NEW.ImprovementType = 'IMPROVEMENT_LANDMARK'
-BEGIN
-	INSERT INTO Trait_ImprovementYieldChangesFromGoldenAge
-			(TraitType,	ImprovementType,			YieldType,			Yield, YieldCap)
-	SELECT NEW.TraitType,'IMPROVEMENT_LANDMARK_EURO',NEW.YieldType,	NEW.Yield, NEW.YieldCap UNION ALL
-	SELECT NEW.TraitType,'IMPROVEMENT_LANDMARK_ASIA',NEW.YieldType,	NEW.Yield, NEW.YieldCap UNION ALL
-	SELECT NEW.TraitType,'IMPROVEMENT_LANDMARK_AMER',NEW.YieldType,	NEW.Yield, NEW.YieldCap UNION ALL
-	SELECT NEW.TraitType,'IMPROVEMENT_LANDMARK_AFRI',NEW.YieldType,	NEW.Yield, NEW.YieldCap;
-END;
---------------------------------------------------------------------------------------------------------------------------
 -- Trait_YieldChangesPerImprovementBuilt
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Trait_YieldChangesPerImprovementBuilt

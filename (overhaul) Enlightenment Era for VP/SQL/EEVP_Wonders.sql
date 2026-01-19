@@ -78,8 +78,13 @@ WHERE Type = 'BUILDING_MAUSOLEUM';
 
 ------------------------
 -- National Wonder: Tower of Buddhist Incense (aka Summer Palace). 
--- Hokath: Rename current one as extension 
+-- Hokath: Rename current one as extensio, and change to Manor from Chancery
 ------------------------
+
+UPDATE Building_BuildingClassYieldChanges SET 
+BuildingClassType = 'BUILDINGCLASS_EE_MANOR',
+YieldChange = YieldChange + 1
+WHERE BuildingType = 'BUILDING_SUMMER_PALACE';
 
 INSERT INTO Buildings
 	(Type, BuildingClass, Description, Civilopedia, Strategy, Help,

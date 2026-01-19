@@ -14,9 +14,11 @@ VALUES
 DELETE FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_THEATRE';
 
 -- Zoo
+/*
 UPDATE Language_en_US
 SET Text = '+500 [ICON_RESEARCH] Science when completed. +1 [ICON_CULTURE] Culture from Camps worked by this City. Nearby Jungle and Forest tiles gain +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.'
 WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_HELP';
+*/
 
 UPDATE Language_en_US
 SET Text = 'Mass construction of Zoos in all your Cities will give you a sudden burst of Science to reach a more advanced Tech. Zoos also represent one of the first sources of Tourism on Tiles. They are much more important to unlock if your Empire is heavily forested, or if you have a large number of Camp Luxuries.'
@@ -65,9 +67,11 @@ SELECT
 FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_HOTEL';
 
 -- Hotels
+/*
 UPDATE Language_en_US
 SET Text = 'City gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism on Snow and for every Mountain within the workable Tiles. +5 [ICON_TOURISM] Tourism from Oases worked by this City.[NEWLINE][NEWLINE]33% of the [ICON_CULTURE] Culture from [ICON_WONDER] World Wonders and Tiles is added to the [ICON_TOURISM] Tourism output of the City. [ICON_TOURISM] Tourism output from Great Works +25%.[NEWLINE][NEWLINE]Completing a [ICON_CARAVAN]/[ICON_CARGO_SHIP] Trade Route originating here and targeting another Civilization, triggers a (or strengthens an existing) [COLOR_POSITIVE_TEXT]Historic Event[ENDCOLOR].'
 WHERE Tag = 'TXT_KEY_BUILDING_HOTEL_HELP';
+*/
 
 DELETE FROM Improvement_TechYieldChanges WHERE ImprovementType = 'IMPROVEMENT_MOAI' AND TechType = 'TECH_ARCHAEOLOGY' and YieldType = 'YIELD_TOURISM';
 

@@ -17,7 +17,7 @@ INSERT INTO Units (Type, Class, PrereqTech, Combat, Moves, RequiresFaithPurchase
 ('UNIT_EE_DRAGOON',	  'UNITCLASS_EE_DRAGOON',       'TECH_EE_MANUFACTURING',34, 5, 1,  'UNITCOMBAT_ARCHER',      'DOMAIN_LAND', 'UNITAI_RANGED',      30, 10,  9, 'UNITCLASS_CAVALRY'),
 ('UNIT_EE_CUIRASSIER',    'UNITCLASS_EE_CUIRASSIER',    'TECH_RIFLING',         48, 4, 1,  'UNITCOMBAT_MOUNTED',     'DOMAIN_LAND', 'UNITAI_FAST_ATTACK', 30,  0,  0, 'UNITCLASS_WWI_TANK'),
 ('UNIT_EE_CARRACK',       'UNITCLASS_EE_CARRACK',       'TECH_EE_REFRACTION',   32, 4, 0,  'UNITCOMBAT_NAVALMELEE',  'DOMAIN_SEA',  'UNITAI_ATTACK_SEA',  50,  9, 19, 'UNITCLASS_PRIVATEER'),
-('UNIT_EE_GALLEON',       'UNITCLASS_EE_GALLEON',       'TECH_EE_EXPLORATION',  20, 4, 0,  'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA',  'UNITAI_ASSAULT_SEA', 50,  5,  5, 'UNITCLASS_CRUISER'),
+('UNIT_EE_GALLEON',       'UNITCLASS_EE_GALLEON',       'TECH_EE_EXPLORATION',  20, 4, 0,  'UNITCOMBAT_NAVALRANGED', 'DOMAIN_SEA',  'UNITAI_ASSAULT_SEA', 50,  5,  5, 'UNITCLASS_FRIGATE'),
 ('UNIT_EE_2HANDER',       'UNITCLASS_EE_2HANDER',       'TECH_CHEMISTRY',       28, 2, 1,  'UNITCOMBAT_MELEE',       'DOMAIN_LAND', 'UNITAI_ATTACK',      25, 33, 11, 'UNITCLASS_EE_GRENADIER'),
 ('UNIT_EE_LINE_INFANTRY', 'UNITCLASS_EE_LINE_INFANTRY', 'TECH_EE_FLINTLOCK',    31, 2, 1,  'UNITCOMBAT_GUN',         'DOMAIN_LAND', 'UNITAI_DEFENSE',     30,  1,  1, 'UNITCLASS_RIFLEMAN'),
 ('UNIT_EE_GRENADIER',     'UNITCLASS_EE_GRENADIER',     'TECH_EE_WARSHIPS',     35, 2, 1,  'UNITCOMBAT_GUN',         'DOMAIN_LAND', 'UNITAI_ATTACK',      30, 11, 14, 'UNITCLASS_GREAT_WAR_INFANTRY');
@@ -43,13 +43,15 @@ WHERE Type IN (
 UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_EE_EXPLORER' WHERE Type = 'UNIT_EE_ADVENTURER'; -- model has still an old name
 UPDATE Units SET IconAtlas   = 'UNIT_ATLAS_2' WHERE Type = 'UNIT_EE_CARRACK';
 UPDATE Units SET UnitFlagAtlas = 'UNIT_FLAG_ATLAS', UnitFlagIconOffset = 33 WHERE Type = 'UNIT_EE_2HANDER';  -- old landsknecht flag
--- Spanish Galleon Model Tweaks
+-- Spanish Galleon Model will be the Galleon, and the WarGalleon (2 decks) the Armada
 UPDATE ArtDefine_UnitInfoMemberInfos SET NumMembers = 1 WHERE UnitInfoType = 'ART_DEF_UNIT_U_SPANISH_GALLEON';
-UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, Model = 'mod_spanish_galleon.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON';
 UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_U_SPANISH_GALLEON' WHERE Type = 'UNIT_EE_GALLEON';
-
+UPDATE Units SET UnitArtInfo = 'ART_DEF_UNIT_EE_GALLEON' WHERE Type = 'UNIT_ARMADA';
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset)
 VALUES ('ART_DEF_UNIT_U_SPANISH_GALLEON', 'Unit', 'sv_Galleon.dds');
+-- Instead of reusing another ship's art, we have a sleaker, 1 deck model for the Corvette
+UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.13, ZOffset = -2, Model = 'RussianGalleon.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_CORVETTE';
+UPDATE ArtDefine_UnitMemberInfos SET Model = 'RussianGalleon.fxsxml' WHERE Type = 'ART_DEF_UNIT_MEMBER_CORVETTE';
 
 -- Ships
 UPDATE Units
@@ -624,55 +626,13 @@ BEGIN
 END;
 
 -------------------------------------------------------
--- Ranged Ships
+-- galleon
 -------------------------------------------------------
 
--- Frigate changes
-UPDATE Units SET PrereqTech = 'TECH_EE_WARSHIPS'
-WHERE Class IN ('UNITCLASS_FRIGATE', 'UNITCLASS_PRIVATEER');
-
-UPDATE Units SET 
-Combat = 28,
-RangedCombat = 36
-WHERE Class = 'UNITCLASS_FRIGATE';
-
-UPDATE Units SET 
-Combat = Combat+1,
-RangedCombat = RangedCombat+2
-WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
-
-INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
-SELECT Type, 'RESOURCE_IRON', 1
-FROM Units WHERE Class = 'UNITCLASS_FRIGATE';
-
-UPDATE Unit_BuildingClassPurchaseRequireds SET
-BuildingClassType = 'BUILDINGCLASS_EE_DRYDOCK'
-WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_FRIGATE');
-
--- galleon
 UPDATE Units SET 
 RangedCombat = 29, Range = 1,
-ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_CRUISER')
+ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_FRIGATE')
 WHERE Type = 'UNIT_EE_GALLEON';
-
--- compatibility with torpedo boat
-/* 
-UPDATE Units SET 
-PrereqTech = 'TECH_STEAM_POWER',
-Cost = 750
-WHERE Type = 'UNIT_TORPEDO' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
-
-DELETE FROM Unit_ResourceQuantityRequirements
-WHERE UnitType = 'UNIT_TORPEDO';
-*/
-
-UPDATE Units
-SET ObsoleteTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_TORPEDO')
-WHERE Type = 'UNIT_EE_GALLEON' AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
-
-UPDATE Unit_ClassUpgrades SET 
-UnitClassType = 'UNITCLASS_TORPEDO' WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_EE_GALLEON')
-AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
@@ -719,6 +679,32 @@ BEGIN
 		GoodyHutUpgradeUnitClass = 'UNITCLASS_EE_GALLEON'
 	WHERE Type = NEW.UnitType AND Class = NEW.UnitClassType;
 END;
+
+-------------------------------------------------------
+-- Frigate
+-------------------------------------------------------
+
+-- Frigate changes
+UPDATE Units SET PrereqTech = 'TECH_EE_WARSHIPS'
+WHERE Class IN ('UNITCLASS_FRIGATE', 'UNITCLASS_PRIVATEER');
+
+UPDATE Units SET 
+Combat = 28,
+RangedCombat = 36
+WHERE Class = 'UNITCLASS_FRIGATE';
+
+UPDATE Units SET 
+Combat = Combat+1,
+RangedCombat = RangedCombat+2
+WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
+
+INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
+SELECT Type, 'RESOURCE_IRON', 1
+FROM Units WHERE Class = 'UNITCLASS_FRIGATE';
+
+UPDATE Unit_BuildingClassPurchaseRequireds SET
+BuildingClassType = 'BUILDINGCLASS_EE_DRYDOCK'
+WHERE UnitType IN (SELECT Type FROM Units WHERE Class = 'UNITCLASS_FRIGATE');
 
 ---------------------------------------------------
 -- 2Hander
@@ -958,7 +944,7 @@ Range = 1,
 Class = 'UNITCLASS_EE_GALLEON',
 Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
 FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
-PrereqTech = (SELECT PrereqTech FROM Units WHERE Type = 'UNIT_EE_GALLEON'),
+PrereqTech = 'TECH_ASTRONOMY',  -- early unlock
 ObsoleteTech = (SELECT ObsoleteTech FROM Units WHERE Type = 'UNIT_CRUISER')
 WHERE Type = 'UNIT_TREASURE_SHIP';
 
@@ -969,11 +955,6 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
 SELECT 'UNIT_TREASURE_SHIP', 'PROMOTION_NAVAL_INACCURACY';
 
 UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_GALLEON' WHERE UnitType = 'UNIT_TREASURE_SHIP';
-
-UPDATE Unit_ClassUpgrades SET 
-UnitClassType = 'UNITCLASS_TORPEDO' WHERE UnitType = 'UNIT_TREASURE_SHIP'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1)
-AND EXISTS (SELECT 1 FROM Units WHERE Type = 'UNIT_TORPEDO');
 
 UPDATE Language_en_US SET 
 Text = 'The Treasure Ship is a Chinese unique unit. It is much sturdier than the Galleon it replaces. You can use your Treasure Ship to passively bring City-States under your sway, or take advantage of its sturdiness to dominate coastal empires.'
@@ -1025,7 +1006,6 @@ WHERE Tag = 'TXT_KEY_UNIT_ARMADA_STRATEGY';
 --------------------------------
 -- Cacadores
 UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_SKIRMISHER' WHERE UnitType = 'UNIT_CACADOR';
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_GATLINGGUN' WHERE UnitType = 'UNIT_CACADOR';
 	
 UPDATE Units SET 
 Class = 'UNITCLASS_EE_SKIRMISHER',

@@ -37,7 +37,7 @@ INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) VA
 ('PROMOTION_2HANDER', 'UNITCLASS_TERCIO', 33),
 ('PROMOTION_2HANDER', 'UNITCLASS_FREE_COMPANY', 33);
 
-UPDATE UnitPromotions SET CombatPercent = 15 WHERE Type = 'PROMOTION_EE_DRYDOCK';
+UPDATE UnitPromotions SET CombatPercent = 20, MinEffectiveHealth = 100 WHERE Type = 'PROMOTION_EE_DRYDOCK';
 UPDATE UnitPromotions SET ExtraNavalMovement = 2, EmbarkExtraVisibility = 2 WHERE Type = 'PROMOTION_EE_ADVENTURER';
 UPDATE UnitPromotions SET CombatPercent = 25 WHERE Type = 'PROMOTION_EE_FASIL_GHEBBI';
 
