@@ -5,12 +5,17 @@
     <ProjectGuid>{da32a1aa-e475-43c1-a557-3f2e1ea20edb}</ProjectGuid>
     <Name>(overhaul) Enlightenment Era for VP INT</Name>
     <Guid>fa8e0af1-732f-4ee8-b6f6-41faa8c33a42</Guid>
-    <ModVersion>14</ModVersion>
+    <ModVersion>19</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the Enlightenment Era for VP</Teaser>
-    <Description>Translation of the Enlightenment Era for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP용 계몽　시대 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
-    <Authors>HANDANI</Authors>
-    <SpecialThanks>CAYM, 디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <Teaser>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]를 포함하여 게임 범위를 확장합니다.</Teaser>
+    <Description>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]는 과학적 사고가 극적으로 발전한 시기였습니다.
+[NEWLINE]Vox Populi 모드가 필요합니다.
+[NEWLINE][NEWLINE]주요 제작자: Pouakai, Janboruta, Sukritact - EE, zwei833 - RER.
+[NEWLINE]Vox Populi 버전은 Infixo님이 제작했습니다.
+[NEWLINE]adan_enslavo님이 v4 버전으로, N.Core님이 v5 버전으로 업데이트했으며, CAYM님이 VP 4.4 ~ 4.19 버전을 지원하기 위해 v6 ~ 10 버전으로 수정했습니다.
+[NEWLINE]Hokath님이 v5로 업데이트했습니다.</Description>
+    <Authors>Hokath, CAYM, Pouakai, JFD, Janboruta, Sukritact, zwei833, Infixo</Authors>
+    <SpecialThanks>Xony, pandasnail, phantomaxl1207, barrizqi, Chrisy15, Enginseer, Padre19, Aldebaran1997, Gazebo, N.CORE</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -20,7 +25,8 @@
     <AssemblyName>(overhaul) Enlightenment Era for VP INT</AssemblyName>
     <RootNamespace>(overhaul) Enlightenment Era for VP INT</RootNamespace>
     <ModReferences />
-    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <Homepage>
+    </Homepage>
     <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -37,7 +43,17 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Buildings.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>SQL/EEVP_Other.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Policies.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -81,7 +97,15 @@
     <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SQL\EEVP_Buildings.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="SQL\EEVP_Other.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\EEVP_Policies.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
