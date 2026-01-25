@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="5329d7c7-bd67-4853-9563-b733e1204484" version="4">
   <Properties>
-    <Name>Horem's Aloe Vera bonus resource (v 4) INT</Name>
+    <Name>!Horem's Aloe Vera bonus resource INT</Name>
     <Stability>Beta</Stability>
-    <Teaser>Translation of the Horem's Aloe Vera bonus resource</Teaser>
-    <Description>Translation of the Horem's Aloe Vera bonus resource into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Horem의 알로에 베라 보너스 자원 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
-    <Authors>HANDANI</Authors>
-    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <Teaser>평평한 사막 타일에서 생성되는 보너스 자원인 알로에 베라를 추가하세요.</Teaser>
+    <Description>평평한 사막 타일에서 생성되는 보너스 자원인 알로에 베라를 추가하세요.
+[NEWLINE][ICON_BULLET] [ICON_GOLD] 골드 +1
+[NEWLINE][ICON_BULLET] [ICON_FOOD] 식량 +1 , 재배지 건설 시 [ICON_RESEARCH] 과학 +2</Description>
+    <Authors>Horem, Jarcast</Authors>
+    <SpecialThanks>Flamingcheesepie</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
-    <Homepage>http://github.com/handanikr/</Homepage>
+    <Homepage>http://https://forums.civfanatics.com/threads/aloe-vera-bonus-resource.687565/</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>

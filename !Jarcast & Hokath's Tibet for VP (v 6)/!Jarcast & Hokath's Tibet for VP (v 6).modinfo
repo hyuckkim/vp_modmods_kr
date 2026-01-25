@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a3a83028-4df9-4050-a996-0c29cb719bf0" version="6">
+  <Properties>
+    <Name>!Jarcast &amp; Hokath's Tibet for VP</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Adds [COLOR_POSITIVE_TEXT]Tibet[ENDCOLOR] led by Songtsen Gampo to the game.</Teaser>
+    <Description>[ICON_BULLET]UA - Chos Rgyal
+[NEWLINE][ICON_BULLET]UU - Dob-Dob
+[NEWLINE][ICON_BULLET]UI - Yak Pasture
+[NEWLINE][ICON_BULLET]UB - Kumbum (Temple)
+[NEWLINE][ICON_BULLET]UU2 - Rtakhrab Pai'dpung (Knight)</Description>
+    <Authors>Jarcast, Hokath</Authors>
+    <SpecialThanks>gwennog, ghost_toast</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+  </Dependencies>
+  <References>
+    <Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="0" maxversion="999" title="JFD's Cultural Diversity (Core)" />
+    <Mod id="e576894a-ed2b-4033-be14-ed1c8ceb81d3" minversion="0" maxversion="999" title="Hazel's Map Labels" />
+    <Mod id="7fdd72a5-d4ae-441c-bc4e-2e3d2a26cff4" minversion="0" maxversion="999" title="BrutalSamurai's Ethnic Units" />
+    <Mod id="8670da15-d435-44ea-9758-7438cb321411" minversion="0" maxversion="999" title="Gedemon's R.E.D. Modpack" />
+    <Mod id="6010e6f6-918e-48b8-9332-d60783bd8fb5" minversion="0" maxversion="999" title="Tomatekh's Historical Religions Complete" />
+    <Mod id="36e88483-48fe-4545-b85f-bafc50dde315" minversion="0" maxversion="999" title="YnAEMP v. 25" />
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="(overhaul) Unique City States for VP" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era for VP" />
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders for VP" />
+    <Mod id="6f6c20b3-020c-4c62-9668-38e87eb66065" minversion="0" maxversion="999" title="Jarcast's Prehistoric Era" />
+    <Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" minversion="0" maxversion="999" title="Unit Scaling and Formation for VP" />
+    <Mod id="5523ddf9-fa49-4262-b586-172581f8f573" minversion="0" maxversion="999" title="Hokath's Religious Victory" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="303D44B8053EF180A45B704DE88E2273" import="1">Art/Atlas/DobDobAction_45.dds</File>
+    <File md5="2279C01C7F697C176DAC72BA81710AB5" import="1">Art/Atlas/DobDobAction_64.dds</File>
+    <File md5="D6E6B0FB3F7263556EB0028A8A205536" import="1">Art/Atlas/flag_DobDob.dds</File>
+    <File md5="8BB8403B6B12F02A7C260FCA7FA84DCC" import="1">Art/Atlas/FontIcons_Yak.dds</File>
+    <File md5="9AAFF091208F12BFFB3383A3C1810AF5" import="1">Art/Atlas/FontIcons_Yak.ggxml</File>
+    <File md5="A42A6A5A6B77C574390C79AA4A1BF789" import="1">Art/Atlas/Jar_Tibet_PI_016.dds</File>
+    <File md5="71A22125631D375FD9ECE4C88A71780A" import="1">Art/Atlas/Jar_Tibet_PI_032.dds</File>
+    <File md5="A08A07CA6FD5740D3D9320D35295D447" import="1">Art/Atlas/Jar_Tibet_PI_045.dds</File>
+    <File md5="9CFB888D1C9E061E469910C591F9E088" import="1">Art/Atlas/Jar_Tibet_PI_064.dds</File>
+    <File md5="0BE4A209119EFE7869532DC9DDBE60C9" import="1">Art/Atlas/Jar_Tibet_PI_256.dds</File>
+    <File md5="BA1197891E1D12794D0E5EACACDD3F48" import="1">Art/Atlas/sv_DobDob.dds</File>
+    <File md5="E55C165786019D8496144D70FE676D51" import="1">Art/Atlas/Tibet_IconAtlas_128.dds</File>
+    <File md5="12FC30E1DA1FFCE4F135E281704D54FC" import="1">Art/Atlas/Tibet_IconAtlas_24.dds</File>
+    <File md5="17AB55C266424F0E75B5C1E2AC90F408" import="1">Art/Atlas/Tibet_IconAtlas_256.dds</File>
+    <File md5="9B117B46F4080C7AB73F018BB1E0F6D1" import="1">Art/Atlas/Tibet_IconAtlas_32.dds</File>
+    <File md5="BAA4FC1A221C6227AB390B2B8042CD79" import="1">Art/Atlas/Tibet_IconAtlas_45.dds</File>
+    <File md5="66B5A0BAC6398DB4D5C3B2BB34D09F32" import="1">Art/Atlas/Tibet_IconAtlas_48.dds</File>
+    <File md5="EC5D2BCABD1BE8D0536893421CB7D4F3" import="1">Art/Atlas/Tibet_IconAtlas_64.dds</File>
+    <File md5="AFEA7FD4364A4FAF2C7A2C12D54B59EF" import="1">Art/Atlas/Tibet_IconAtlas_80.dds</File>
+    <File md5="E25F633CB148E5407BB78C7E777290B3" import="1">Art/Audio/TibetAmbience.mp3</File>
+    <File md5="0C9FCA20F1EACA14B5C6A91A5D483DCB" import="1">Art/Audio/TibetDoM.mp3</File>
+    <File md5="39227ACF3D3359BF4489FD56B6EC1093" import="1">Art/Audio/TibetPeace.mp3</File>
+    <File md5="69E755938296A17015D28CF6FF27BB70" import="1">Art/Audio/TibetWar.mp3</File>
+    <File md5="9FF8432306BD20B5DEA6DDB5BC81E72E" import="1">Art/Dob-Dob/buddhist_missionary.fxsxml</File>
+    <File md5="B74596E1453A1FFAFA55670E576322D9" import="1">Art/Dob-Dob/buddhist_missionary.gr2</File>
+    <File md5="4F846618B32DDBA39096598CDABD37BF" import="1">Art/Dob-Dob/buddhist_missionary_diff2.dds</File>
+    <File md5="4FCBBA6A841E372B33E7530510A7A684" import="1">Art/Dob-Dob/buddhist_missionary_sref2.dds</File>
+    <File md5="86A3559EC448946C9DED1AB6043EC631" import="1">Art/DOM_Tibet.dds</File>
+    <File md5="A5A7BFE7AB7AEC94CF6F6BB800D8C812" import="1">Art/Atlas/sv_Rtakhrab.dds</File>
+    <File md5="2A8BF8C85178A3A24396F36BAC2F1DA9" import="1">Art/Atlas/flag_Rtakhrab.dds</File>
+    <File md5="DCEAD473E26D32B903E73771AE1F8D56" import="1">Art/Rtakhrab/Knight_China.dds</File>
+    <File md5="8F1623F7700F96F5F1F63445F860E3B8" import="1">Art/Rtakhrab/Knight_China.fxsxml</File>
+    <File md5="76093248416349CC632C122F69D1AAC2" import="1">Art/Rtakhrab/Knight_China.gr2</File>
+    <File md5="0FF92525112631CDA5AAB671E6761B02" import="1">Art/Rtakhrab/Knight_China_gloss.dds</File>
+    <File md5="754881107C02349672A75A6BC2A21A70" import="1">Art/Rtakhrab/Knight_China_Horse.dds</File>
+    <File md5="37E4F7526EDD9ED60400FB6BF5CF47C6" import="1">Art/Rtakhrab/Knight_China_Horse_gloss.dds</File>
+    <File md5="2AB3F34D4B4B62598DCA486F4C84399E" import="1">Art/TibetDiploMod.dds</File>
+    <File md5="909E8DE5E3810CCE8C9838C2346E079D" import="1">Art/Tibet_Leaderhead.xml</File>
+    <File md5="7D4D6EC4892F94979503C67F7E5D7CD7" import="1">Art/Tibet_Map512.dds</File>
+    <File md5="574E1D73FEECA0188046F566A076C88D" import="1">Art/Yak/resource_yak.fxsxml</File>
+    <File md5="8BAEE3A4E626D288F1884FDBE51A5ABF" import="1">Art/Yak/sv_Yak.dds</File>
+    <File md5="FDC002E61F90203BFBA046E0F54510AD" import="1">Art/Yak/yak.gr2</File>
+    <File md5="F667A65FB2CF2B5D94F0675B55091817" import="1">Art/Yak/yak_1.dds</File>
+    <File md5="3CAE664B5363F302797D707616CFF62D" import="1">Art/Yak/yak_2.dds</File>
+    <File md5="037DCED9E92CA45E5A202351753CEE9A" import="0">Core/Tibet_GameText.xml</File>
+    <File md5="46E8E19BDDE1FED75B968141ADDED7BB" import="0">Core/Tibet_GameDefines.sql</File>
+    <File md5="3B6DCABE11A35109EAB41D6F03AE3797" import="0">Core/Tibet_ArtDefines.sql</File>
+    <File md5="CCF5362970E6E3592DFB212C1A5BC66D" import="0">Core/Tibet_ModSupport.sql</File>
+    <File md5="A3387EC54A4069322CA3DBC0925F339E" import="0">Lua/Tibet_Functions.lua</File>
+    <File md5="D9146E54DE0AD450EE8CAA8C61C66E46" import="1">Lua/Utilities/C15_IteratorPack_v3.lua</File>
+    <File md5="5690A1B2ACA2729FD9D55156E232AB1A" import="1">Lua/Utilities/PlotIterators.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/Tibet_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Tibet_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Tibet_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Tibet_ModSupport.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Tibet_Functions.lua">
+      <Name>Tibet_Functions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

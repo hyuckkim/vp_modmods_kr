@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_en_US>
+		<!--RYOGA'S UNIQUE CULTURAL INFLUENCE-->
+		<Row Tag="TXT_KEY_GENERIC_JFD_PAPAL_STATES_INFLUENTIAL_ON_AI_1">
+			<Text>Our people are now practicing your liturgies and donating their money to your Church. I worry the rest of the world will also succumb to the influence of your culture.</Text>
+		</Row>
+		<!-- SUKRITACT's DECISIONS -->
+		<!--Declare the Kingdom of God-->
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD">
+			<Text>Declare the Kingdom of God</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD_DESC">
+			<Text>
+				Ours is a state conceived of piety and virtue, and for ages past the Papal States have maintained its God-fearing reverence. It is time that we declare ourselves the Kingdom of God on Earth, and truly make our authority on matters of faith known throughout the world.[NEWLINE]
+				[NEWLINE]Requirement/Restrictions:
+				[NEWLINE][ICON_BULLET]Player must be the Papal States
+				[NEWLINE][ICON_BULLET]Player must have founded a religion
+				[NEWLINE][ICON_BULLET]Religious unity must be at least 90% (religious unity is currently {1_Unity}%)
+				[NEWLINE][ICON_BULLET]May only be enacted once per game
+				[NEWLINE]Costs:
+				[NEWLINE][ICON_BULLET]{2_Gold} [ICON_GOLD] Gold
+				[NEWLINE][ICON_BULLET]{3_Faith} [ICON_PEACE] Faith
+				[NEWLINE][ICON_BULLET]1 [ICON_MAGISTRATES] Magistrates
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]Receive 1 free Land Unit in your [ICON_CAPITAL] Capital for every 5 Cities following your Religion whenever another Civilization declares war on you
+				[NEWLINE][ICON_BULLET]Receive two free Disciples
+				[NEWLINE][ICON_BULLET]Your empire becomes known as the Kingdom of God
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD_ENACTED_DESC">
+			<Text>
+				Ours is a state conceived of piety and virtue, and for ages past the Papal States have maintained it's God-fearing reverence. It is time that we declare ourselves the Kingdom of God on Earth, and truly make our authority on matters of faith known throughout the world.[NEWLINE]
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]Receive 1 free Land Unit in your [ICON_CAPITAL] Capital for every 5 Cities following your Religion whenever another Civilization declares war on you
+				[NEWLINE][ICON_BULLET]Receive two free Disciples
+				[NEWLINE][ICON_BULLET]Your empire becomes known as the Kingdom of God
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_PAPAL_STATES_KINGDOM_OF_GOD_DESC">
+			<Text>The Kingdom of God</Text>
+			<Plurality>2</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPAL_KINGDOM_OF_GOD">
+			<Text>Julius II has declared the Papal States to be the Kingdom of God on Earth.</Text>
+		</Row>
+		<!--Institute the Societas Jesu-->
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU">
+			<Text>Institute the Societas Jesu</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU_DESC">
+			<Text>
+				Heretics and Heathens, Infidels and Blasphemers! These wretches infest this world like a plague, and have diluted the message of our Holy Mother Church. Let us make it our active mission to counter the false words being spread throughout the world by institutionalising the Society of Jesus and its members; the Jesuits.[NEWLINE]
+				[NEWLINE]Requirement/Restrictions:
+				[NEWLINE][ICON_BULLET]Player must be the Papal States
+				[NEWLINE][ICON_BULLET]Player must have founded a religion
+				[NEWLINE][ICON_BULLET]All religions must have been founded
+				[NEWLINE][ICON_BULLET]May only be enacted once per game
+				[NEWLINE]Costs:
+				[NEWLINE][ICON_BULLET]{1_Gold} [ICON_GOLD] Gold
+				[NEWLINE][ICON_BULLET]{2_Faith} [ICON_PEACE] Faith
+				[NEWLINE][ICON_BULLET]1 [ICON_MAGISTRATES] Magistrates
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]-15% [ICON_PEACE] Faith costs for purchasing Buildings, Missionaries, and Inquisitors.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU_ENACTED_DESC">
+			<Text>
+				Heretics and Heathens, Infidels and Blasphemers! These wretches infest this world like a plague, and have diluted the message of our Holy Mother Church. Let us make it our active mission to counter the false words being spread throughout the world by institutionalising the Society of Jesus and its members; the Jesuits[NEWLINE]
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]-15% [ICON_PEACE] Faith costs for purchasing Buildings, Missionaries, and Inquisitors.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPAL_JESUITS">
+			<Text>Julius II of the Papal States has instituted the Society of Jesus to counter mass heresies throughout the world.</Text>
+		</Row>
+		<!-- MORE UNIQUE COMPONENTS FOR VP -->
+		<!-- Vatican Museums -->
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS">
+			<Text>Vatican Museums</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_PEDIA">
+			<Text>
+				The Vatican Museums are Christian and art museums located within the city boundaries of the Vatican City. They display works from the immense collection amassed by Popes throughout the centuries including some of the most renowned classical sculptures and most important masterpieces of Renaissance art in the world. The museums contain roughly 70,000 works, of which 20,000 are on display, and currently employ 640 people who work in 40 different administrative, scholarly, and restoration departments.[NEWLINE]
+
+				[NEWLINE]Pope Julius II founded the museums in the early 16th century. The Sistine Chapel, with its ceiling decorated by Michelangelo and the Stanze di Raffaello decorated by Raphael, are on the visitor route through the Vatican Museums. In 2013, they were visited by 6 million people, which combined makes it the 6th most visited art museum in the world.[NEWLINE]
+
+				[NEWLINE]There are 54 galleries, or sale, in total, with the Sistine Chapel, notably, being the very last sala within the Museum. It is one of the largest museums in the world.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_STRATEGY">
+			<Text>The Vatican Museums is the unique Hermitage replacement for the Papal States. This National Wonder produces +1 [ICON_CULTURE] Culture for every 2 [ICON_CITIZEN] Citizens in the City, and +25% [ICON_CULTURE] Culture for the City. It also significantly increases [ICON_TOURISM] Tourism in all of your Cities, and grants you a free Great Artist. Build this to boost your [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_THEMING_BONUS_VATICAN_MUSEUMS">
+			<Text>Musea Vaticana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VATICAN_MUSEUMS_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Art from different Civilizations.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_ko_KR>
+		<!--RYOGA'S UNIQUE CULTURAL INFLUENCE-->
+		<Row Tag="TXT_KEY_GENERIC_JFD_PAPAL_STATES_INFLUENTIAL_ON_AI_1">
+			<Text>우리 백성들은 이제 당신의 관습을 따르며, 헌금을 교회에 바치고 있습니다. 나머지 세계도 당신의 문화의 영향을 받아들일까 걱정됩니다.</Text>
+		</Row>
+		<!-- SUKRITACT's DECISIONS -->
+		<!--Declare the Kingdom of God-->
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD">
+			<Text>하나님의 왕국 선포</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD_DESC">
+			<Text> 우리의 국가는 경건함과 덕으로 세워졌으며, 교황령은 오랜 세월 동안 신을 경외하는 마음을 간직해왔습니다. 이제 우리는 스스로를 지상의 하나님의 왕국으로 선포하고, 신앙의 문제에 있어 우리의 권위를 전 세계에 알릴 때입니다.[NEWLINE] [NEWLINE]요구 조건: [NEWLINE][ICON_BULLET]플레이어는 교황령이어야 합니다 [NEWLINE][ICON_BULLET]종교를 창시했어야 합니다 [NEWLINE][ICON_BULLET]종교 통일도가 최소 90% 이상이어야 합니다 (현재 종교 통일도는 {1_Unity}%) [NEWLINE][ICON_BULLET]게임당 한 번만 시행할 수 있습니다 [NEWLINE]비용: [NEWLINE][ICON_BULLET]{2_Gold} [ICON_GOLD] 골드 [NEWLINE][ICON_BULLET]{3_Faith} [ICON_PEACE] 신앙 [NEWLINE][ICON_BULLET]1 [ICON_MAGISTRATES] 외교관 [NEWLINE]보상: [NEWLINE][ICON_BULLET]다른 문명이 당신에게 전쟁을 선포할 때마다 당신의 [ICON_CAPITAL] 수도에 당신의 종교를 따르는 도시 5개마다 1개의 무료 육상 유닛을 획득합니다 [NEWLINE][ICON_BULLET]무료 제자 유닛 2기를 획득합니다 [NEWLINE][ICON_BULLET]당신의 제국은 '하나님의 왕국'으로 알려집니다 </Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_KINGDOM_OF_GOD_ENACTED_DESC">
+			<Text>이제 우리는 하나님의 왕국으로 새로 태어났습니다.[NEWLINE][NEWLINE]보상: [NEWLINE][ICON_BULLET]다른 문명이 당신에게 선전포고할 때마다 당신의 [ICON_CAPITAL] 수도에 당신의 종교를 따르는 도시 5개마다 1개의 무료 육상 유닛을 획득합니다 [NEWLINE][ICON_BULLET]무료 제자 유닛 2기를 획득합니다 [NEWLINE][ICON_BULLET]당신의 제국은 '하나님의 왕국'으로 알려집니다 </Text>
+		</Row>
+		<Row Tag="TXT_KEY_JFD_PAPAL_STATES_KINGDOM_OF_GOD_DESC">
+			<Text>하나님의 왕국</Text>
+			<Plurality>2</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPAL_KINGDOM_OF_GOD">
+			<Text>율리우스 2세가 교황령을 지상의 하나님의 왕국으로 선포했습니다.</Text>
+		</Row>
+		<!--Institute the Societas Jesu-->
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU">
+			<Text>예수회 창설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU_DESC">
+			<Text> 세상은 이단과 이교, 신성모독으로 물들어가고 있습니다. 이 타락한 자들은 세상에 역병처럼 들끓으며, 우리의 성스러운 어머니 교회의 말씀을 훼손하고 있습니다. 이제 우리는 예수회와 그 일원인 예수회 신부들을 제도화하여, 세상에 퍼진 거짓된 교리를 적극적으로 반박하는 사명을 수행해야 합니다.[NEWLINE] [NEWLINE]요구 조건: [NEWLINE][ICON_BULLET]플레이어는 교황령이어야 합니다 [NEWLINE][ICON_BULLET]종교를 창시했어야 합니다 [NEWLINE][ICON_BULLET]모든 종교가 창시되어 있어야 합니다 [NEWLINE][ICON_BULLET]게임당 한 번만 시행할 수 있습니다 [NEWLINE]비용: [NEWLINE][ICON_BULLET]{1_Gold} [ICON_GOLD] 골드 [NEWLINE][ICON_BULLET]{2_Faith} [ICON_PEACE] 신앙 [NEWLINE][ICON_BULLET]1 [ICON_MAGISTRATES] 관리관 [NEWLINE]보상: [NEWLINE][ICON_BULLET]건물, 선교사, 이단 심문관 구매 시 필요한 [ICON_PEACE] 신앙 비용 -15% </Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_JFD_PAPAL_STATES_SOCIETAS_JESU_ENACTED_DESC">
+			<Text> 이단자들과 이교도들, 불신자들과 신성모독자들! 이 타락한 자들은 세상에 역병처럼 들끓으며, 우리의 성스러운 어머니 교회의 말씀을 훼손하고 있습니다. 이제 우리는 예수회와 그 일원인 예수회 신부들을 제도화하여, 세상에 퍼진 거짓된 교리를 적극적으로 반박하는 사명을 수행해야 합니다.[NEWLINE] [NEWLINE]보상: [NEWLINE][ICON_BULLET]건물, 선교사, 이단 심문관 구매 시 필요한 [ICON_PEACE] 신앙 비용 -15% </Text>
+		</Row>
+		<Row Tag="TXT_KEY_WORLD_EVENT_JFD_PAPAL_JESUITS">
+			<Text>율리우스 2세가 전 세계에 퍼진 이단의 물결을 저지하기 위해 교황령에 예수회를 창설했습니다.</Text>
+		</Row>
+		<!-- MORE UNIQUE COMPONENTS FOR VP -->
+		<!-- Vatican Museums -->
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS">
+			<Text>바티칸 박물관</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_PEDIA">
+		<Text> 바티칸 박물관은 바티칸 시국 내에 위치한 기독교 및 미술 박물관으로, 수세기에 걸쳐 교황들이 수집한 방대한 컬렉션을 전시하고 있습니다. 이 중에는 세계적으로 손꼽히는 고전 조각들과 르네상스 시대의 가장 중요한 걸작들이 포함되어 있습니다. 박물관은 약 7만 점의 소장품을 보유하고 있으며, 이 중 2만 점이 전시되고 있습니다. 현재는 40개의 행정, 학술, 복원 부서에서 640명이 근무 중입니다.[NEWLINE]
+[NEWLINE]바티칸 박물관은 16세기 초 교황 율리우스 2세가 설립했습니다. 미켈란젤로가 천장을 장식한 시스티나 성당과 라파엘로가 장식한 라파엘로의 방은 바티칸 박물관 관람 경로의 일부입니다. 2013년에는 600만 명이 방문하여, 전 세계에서 여섯 번째로 많이 방문한 미술관이 되었습니다.[NEWLINE]
+
+[NEWLINE]총 54개의 전시실이 있으며, 특히 시스티나 성당은 박물관 관람의 마지막 전시 공간입니다. 이 박물관은 세계에서 가장 큰 규모의 미술관 중 하나입니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_STRATEGY">
+			<Text>바티칸 박물관은 교황령의 고유 국립 위인관 건물로, 이 도시에 있는 [ICON_CITIZEN] 인구 2명마다 +1 [ICON_CULTURE] 문화 생산, 도시에 +25% [ICON_CULTURE] 문화 보너스를 제공합니다. 모든 도시에 [ICON_TOURISM] 관광을 크게 증가시키며, 무료 [ICON_GREAT_ARTIST] 위대한 예술가를 제공합니다. [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 크게 높이고 증진할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VATICAN_MUSEUMS_HELP">
+			<Text> 바티칸 박물관을 건설하면 무료 [ICON_GREAT_ARTIST] 위대한 예술가를 획득합니다.[NEWLINE][NEWLINE]도시 내 [ICON_CITIZEN] 인구 2명마다 +1 [ICON_CULTURE] 문화. 이 도시에 +25% [ICON_CULTURE] 문화. 예술 작품 슬롯 4개 포함. 모든 예배당마다 +2 [ICON_TOURISM] 관광.[NEWLINE][NEWLINE]세계 불가사의, 자연 불가사의, 개선 시설에서 발생하는 [ICON_CULTURE] 문화의 25%가 모든 도시의 [ICON_TOURISM] 관광 수치에 추가됩니다. 모든 도시에서 위대한 예술 작품으로부터 얻는 [ICON_TOURISM] 관광 수치가 25% 증가합니다.[NEWLINE][NEWLINE]도시에 오페라 하우스가 없어도 건설할 수 있습니다. [ICON_PRODUCTION] 생산 비용과 [ICON_CITIZEN] 인구 요구치는 보유 도시 수에 따라 증가합니다.[NEWLINE][NEWLINE]테마가 적용되면 +10 [ICON_GOLD] 골드를 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_THEMING_BONUS_VATICAN_MUSEUMS">
+			<Text>바티칸 미술관</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VATICAN_MUSEUMS_THEMING_BONUS_HELP">
+			<Text>보너스를 극대화하려면, 위대한 예술 작품 슬롯을 서로 다른 문명의 작품으로 모두 채워야 합니다.</Text>
+		</Row>
+		<!-- JFD'S EXCE RESOURCES FOR VP -->
+		<Row Tag="TXT_KEY_BUILDING_JFD_CHAPEL_HELP_EXCE_RESOURCES">
+			<Text>테마가 적용되면 +3 [ICON_PEACE] 신앙을 제공합니다.[NEWLINE][ICON_HAPPINESS_3] 종교 불만을 줄이고 종교 압력을 +25% 증가시킵니다. 음악 작품 슬롯 2개를 포함합니다.[NEWLINE]근처에 [ICON_RES_INCENSE] 유향이 있으면: +1 [ICON_CULTURE] 문화, +1 [ICON_GOLD] 골드.[NEWLINE]근처에 [ICON_RES_WINE] 포도주가 있으면: +1 [ICON_CULTURE] 문화, +1 [ICON_GOLD] 골드.[NEWLINE]근처에 [ICON_RES_AMBER] 호박이 있으면: +1 [ICON_CULTURE] 문화, +1 [ICON_GOLD] 골드.[NEWLINE]근처에 [ICON_RES_JFD_SAFFRON] 사프란이 있으면: +1 [ICON_CULTURE] 문화, +1 [ICON_PEACE] 신앙.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>
