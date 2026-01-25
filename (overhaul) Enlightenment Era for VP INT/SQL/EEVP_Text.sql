@@ -18,7 +18,7 @@ UPDATE Language_ko_KR SET Text = 'VIII' WHERE Tag = 'TXT_KEY_ERA_6_ABBREV'; -- �
 UPDATE Language_ko_KR SET Text = 'IX'   WHERE Tag = 'TXT_KEY_ERA_7_ABBREV'; -- 정보화
 
 --------------------------------------------------------------------------------------------------------------------------
--- 세계 의회
+-- WORLD CONGRESS
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_LEAGUE_WORLD_CONGRESS_4', '{@1_Ordinal} {@2_CityName} 세계 의회'),
@@ -66,7 +66,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_SOVEREIGNTY_QUOTE', '[NEWLINE][TAB][TAB]"국가란 인공적인 인간에 불과하며, 그 주권은 인공적인 영혼으로서 온 몸에 생명과 운동을 부여한다."[NEWLINE][TAB][TAB] - 토머스 홉스[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_WARSHIPS', '탄약고'),
-('TXT_KEY_TECH_EE_WARSHIPS_DESC', '관포병의 초창기에는 탄약을 별도의 비무장 마차나 차량에 실어 운반했습니다. 이런 부드러운 차체로 된 차량은 적의 공격과 무기 고장으로 인한 폭발에 매우 ​​취약했습니다. 따라서 포병대를 설치하는 일환으로 준비된 탄약을 보관하는 데 지정된 장소가 사용될 것입니다. 견인포대의 경우, 가능하다면 임시 화기는 구덩이 또는 자연 경사지에 놓이거나 모래주머니나 토목공사로 둘러싸여 있을 것입니다. 군함에서는 탄약고를 수면 아래에 두었습니다. 특히 화재나 선박 내에서 위험한 비상 상황이 발생할 경우 탄약고를 쉽게 침수시킬 수 있었기 때문입니다. 탄약고 내부에는 절대로 불꽃이 허용되지 않았습니다.'),
+('TXT_KEY_TECH_EE_WARSHIPS_DESC', '관포병의 초창기에는 탄약을 별도의 비무장 마차나 차량에 실어 운반했습니다. 이런 부드러운 차체로 된 차량은 적의 공격과 무기 고장으로 인한 폭발에 매우 취약했습니다. 따라서 포병대를 설치하는 일환으로 준비된 탄약을 보관하는 데 지정된 장소가 사용될 것입니다. 견인포대의 경우, 가능하다면 임시 화기는 구덩이 또는 자연 경사지에 놓이거나 모래주머니나 토목공사로 둘러싸여 있을 것입니다. 군함에서는 탄약고를 수면 아래에 두었습니다. 특히 화재나 선박 내에서 위험한 비상 상황이 발생할 경우 탄약고를 쉽게 침수시킬 수 있었기 때문입니다. 탄약고 내부에는 절대로 불꽃이 허용되지 않았습니다.'),
 ('TXT_KEY_TECH_EE_WARSHIPS_HELP', '계몽 시대 해군의 필수 원거리 유닛인 [COLOR_POSITIVE_TEXT]프리깃[ENDCOLOR]을 건조할 수 있습니다.'),
 ('TXT_KEY_TECH_EE_WARSHIPS_QUOTE', '[NEWLINE][TAB][TAB]"기뢰는 엿이나 먹으라하고 전속전진해!"[NEWLINE][TAB][TAB] - 데이비드 글래스고 패러것 제독[NEWLINE][TAB]'),
 
@@ -85,19 +85,19 @@ WHERE Tag = 'TXT_KEY_TECH_ASTRONOMY_QUOTE';
 --------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
--- 양손 무기
+-- Two Hander
 ('TXT_KEY_PROMOTION_2HANDER', '대검'),
-('TXT_KEY_PROMOTION_2HANDER_HELP', '창병, 장창병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드로 인해 손실됨[ENDCOLOR].'),
--- 파실 게비 아우라
+('TXT_KEY_PROMOTION_2HANDER_HELP', '창병, 장창병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드시 손실됨[ENDCOLOR].'),
+-- Fasil Ghebbi Aura
 ('TXT_KEY_PROMOTION_EE_FASIL_GHEBBI', '카타마 순찰대'),
 ('TXT_KEY_PROMOTION_EE_FASIL_GHEBBI_HELP', '[COLOR_CYAN]파실 게비[ENDCOLOR]의 3타일 범위에 있을 때 [ICON_STRENGTH] 전투력 +25%'),
--- 기함
+-- Flagship
 ('TXT_KEY_PROMOTION_EE_FIRST_RATE', '기함'),
 ('TXT_KEY_PROMOTION_EE_FIRST_RATE_HELP', '이 승급을 가진 유닛 [COLOR_POSITIVE_TEXT]근처[ENDCOLOR]에서 턴을 시작하는 해군 유닛의 [ICON_STRENGTH] 방어력 +20%'),
--- 모험가
-('TXT_KEY_PROMOTION_EE_ADVENTURER', '큰까마귀''수비'),
+-- Adventurer
+('TXT_KEY_PROMOTION_EE_ADVENTURER', '큰까마귀'' 수비'),
 ('TXT_KEY_PROMOTION_EE_ADVENTURER_HELP', '유닛이 승선 중일 때 [ICON_MOVES] 이동력 +1, [ICON_VP_VISION] 시야 +2'),
--- 건선거
+-- Drydock
 ('TXT_KEY_PROMOTION_EE_DRYDOCK', '이상 무'),
 ('TXT_KEY_PROMOTION_EE_DRYDOCK_HELP', '유닛이 최대 체력으로 턴 시작시 [ICON_STRENGTH] 전투력 +20%');
 
@@ -142,21 +142,22 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_CUIRASSIER_PEDIA', '최초의 흉갑기병은 무장기병이나 창기병과 같은 기갑기병이 창을 버리고 권총을 주무기로 채택한 결과로 탄생했습니다. 이 프랑스어 용어는 ''퀴레이스를 입은 사람''을 의미하며, 그들이 착용했던 흉갑을 가리킵니다. 실제로 흉갑기병의 갑옷은 매우 비쌌으며, 비교적 가벼운 갑옷을 착용한 화승총병보다 세 배 이상 비쌌습니다.[NEWLINE][NEWLINE]17세기 후반에 기병은 팔다리 갑옷을 잃고 흉갑만 착용하게 되었으며, 때로는 투구도 쓰게 되었습니다. 이 시기에 검은 흉갑기병의 주력 무기가 되었고, 권총은 부차적인 용도로 전락했다. 흉갑기병은 나폴레옹 전쟁 동안 더욱 두각을 나타냈으며, 마지막으로 제1차 세계 대전(1914~1918) 초기에 실전에 투입되었습니다.'),
 ('TXT_KEY_UNIT_EE_CUIRASSIER_STRATEGY', '산업 시대의 근접 기마 유닛인 흉갑기병은 창기병의 상위 유닛으로, 르네상스 시대의 전임 유닛과 거의 동일한 역할을 수행합니다. 적의 위치를 허를 찌르고 후방으로 돌격하는 데 사용하세요.');
 -- 울란 백과 텍스트
--- 유럽에서 울란 기병대는 원래 리투아니아의 비정규 기병대였으며, 18세기에 폴란드, 프랑스, ​​러시아, 프로이센, 작센, 오스트리아를 포함한 여러 나라에서 채택되었습니다. 중기병이 착용하는 흉갑이 무게와 비용 면에서 현대 화기에 대항하기에 점차 비실용적이라는 것이 입증되면서, 경기병을 운용하는 것이 점점 더 인기를 얻게 되었다. 실제로 1914년 당시 독일 후사르, 용기병, 흉갑기병 연대 역시 창을 사용했기 때문에 프랑스와 영국 측에서는 모든 독일 기병을 "울란(Uhlans)"이라고 부르는 경향이 있었습니다.[NEWLINE][NEWLINE]청나라 군사 조직에서 팔기군의 모든 부대에는 장창이 지급되었습니다. 중국어에서는 창과 랜스를 구분하지 않지만, 1766년 문서에 근위사단 발리언트 기병대에 지급되었다는 기록이 있는 것으로 보아 주로 랜스로 사용되었음을 알 수 있습니다.
+-- 유럽에서 울란 기병대는 원래 리투아니아의 비정규 기병대였으며, 18세기에 폴란드, 프랑스, 러시아, 프로이센, 작센, 오스트리아를 포함한 여러 나라에서 채택되었습니다. 중기병이 착용하는 흉갑이 무게와 비용 면에서 현대 화기에 대항하기에 점차 비실용적이라는 것이 입증되면서, 경기병을 운용하는 것이 점점 더 인기를 얻게 되었다. 실제로 1914년 당시 독일 후사르, 용기병, 흉갑기병 연대 역시 창을 사용했기 때문에 프랑스와 영국 측에서는 모든 독일 기병을 "울란(Uhlans)"이라고 부르는 경향이 있었습니다.[NEWLINE][NEWLINE]청나라 군사 조직에서 팔기군의 모든 부대에는 장창이 지급되었습니다. 중국어에서는 창과 랜스를 구분하지 않지만, 1766년 문서에 근위사단 발리언트 기병대에 지급되었다는 기록이 있는 것으로 보아 주로 랜스로 사용되었음을 알 수 있습니다.
 
--- Update VP CUIRASSIER text
+-- VP 흉갑기병 텍스트 업데이트
 UPDATE Language_ko_KR SET
 Text = '화승총기병'
 WHERE Tag = 'TXT_KEY_UNIT_CUIRASSIER';
 
-UPDATE Language_ko_KR  SET
+UPDATE Language_ko_KR SET
 Text = '화승총기병은 빠른 기동성과 원거리 공격 능력을 갖춘 르네상스 시대의 병종입니다. 그것들을 이용하여 적을 괴롭히고 전쟁 노력을 지원하십시오.'
 WHERE Tag = 'TXT_KEY_CIV5_CUIRASSIER_STRATEGY';
  
-UPDATE Language_ko_KR  SET
+UPDATE Language_ko_KR SET
 Text = '화승총기병은 카빈총의 일종을 사용하는 것이 특징이었는데, 가장 초기에 사용된 카빈총은 ''하르케부스''라고 불렸습니다(이 단어는 더 무거운 보병용 무기인 아르케부스에서 유래했습니다).이 기병들은 가슴과 등판이 달린 철제 흉갑과 가재 꼬리 모양의 솥처럼 얼굴이 드러나는 투구만 착용한 가벼운 갑옷을 입고 있었다. 이 때문에 철제 흉갑이 고급 가죽 코트보다 일반적으로 저렴했기 때문에 군복을 갖추는 데 비용이 많이 들지 않았습니다. 16세기 후반부터 다음 세기 초 수십 년까지, 화승총기병은 그보다 앞선 시대의 페트로넬과 마찬가지로 반창기병이나 권총 기병과 같은 중무장 기병을 지원하는 역할을 맡았습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_CUIRASSIER_TEXT';
 
+INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 전열보병
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY', '전열보병'),
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY_HELP', ''),
@@ -208,14 +209,14 @@ WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTE_TEXT';
 
 UPDATE Language_ko_KR 
 SET Text = '모험가를 대체하는 브라질만의 르네상스 시대 유닛입니다. 모험가보다 빠르고 강력하며, 더 일찍 이용 가능합니다. 공개되지 않은 타일을 탐험하면 골드, 문화, 과학을 생성합니다. 이러한 산출량은 가장 가까운 소유 도시에 합산됩니다. 또한 자신의 영토 내에 요새, 채석장, 광산, 브라질우드 벌목장을 개선할 수 있는 능력을 가지고 있으며, 야만인에 대해 더 강력합니다. 이 유닛을 사용해 탐험하고, 남아 있는 야만인 주둔지를 소탕하고, 국경 도시에 귀중한 산출을 창출하세요.'
-WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES_STRATEGY';
+WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTE_STRATEGY';
 
 -- 양손 검병
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_2HANDER', '양손 검병'),
 ('TXT_KEY_UNIT_EE_2HANDER_HELP', ''),
 ('TXT_KEY_UNIT_EE_2HANDER_PEDIA', '르네상스 시대에 이탈리아와 스페인에서 활동했던 양손 검병입니다. 테르시오 대형의 측면을 보호하는 임무를 맡은 보조 부대로서, 그들은 레콩키스타가 끝나고 이탈리아 전쟁이 시작될 때까지 매우 활발하게 활동했습니다. 16세기 중반, 테르시오에서 머스킷병과 장창병의 위치가 모호하여 전투가 머스킷병의 집중 공격과 장창병의 견고한 방어로 완료되었기 때문에, 머스킷병과 장창병에게 검술 교육을 하는 것이 더 낫다는 이유로 이들을 훈련시켰습니다. 이들은 도태되었습니다. 그러나 여전히 비정규전에서 사용되었으며, 유럽처럼 테르시오 방진을 짜고 엮는 것이 불가능했던 아메리카 정복 과정에서 핵심적인 역할을 했습니다.실제로 화약의 공급과 수요가 제한된 상황에서 총기는 심리적인 충격은 컸지만, 실제로는 그 효과가 크게 감소했습니다. 반면, 스페인 검찰관들의 톨레도 강철 검은 당시 아메리카 원주민의 기술로는 극복하기 어려웠습니다. 당시 원주민들은 칼을 빼앗아도 어떻게 다루어야 할지 몰라 창끝에 묶어 창처럼 사용했습니다.'),
-('TXT_KEY_UNIT_EE_2HANDER_STRATEGY', '양손 검병은 장검병보다 훨씬 강력하며, 창병, {TXT_KEY_UNIT_PIKEMAN}, {TXT_KEY_UNIT_SPANISH_TERCIO} 그리고 {TXT_KEY_UNIT_FCOMPANY}를 공격할 때 파괴적인 전투 보너스를 얻습니다.'),
+('TXT_KEY_UNIT_EE_2HANDER_STRATEGY', '양손 검병은 장검병보다 훨씬 강력하며, 창병, {TXT_KEY_UNIT_PIKEMAN}, {TXT_KEY_UNIT_SPANISH_TERCIO} 그리고 {TXT_KEY_UNIT_FREE_COMPANY}를 공격할 때 파괴적인 전투 보너스를 얻습니다.');
 
 -- 프랑스 머스킷병
 UPDATE Language_ko_KR
@@ -256,7 +257,6 @@ WHERE Tag = 'TXT_KEY_CIV5_SPAIN_TERCIO_TEXT';
 UPDATE Language_ko_KR
 SET Text = '투사체 교전'
 WHERE Tag = 'TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE';
-
 -- 맞춤형 백과 텍스트가 있는 것 같습니다.
 UPDATE Language_ko_KR
 SET Text = '투사체 교전'
@@ -291,7 +291,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_GRENADIER', '척탄병'),
 ('TXT_KEY_UNIT_EE_GRENADIER_HELP', ''),
 ('TXT_KEY_UNIT_EE_GRENADIER_PEDIA', '척탄병은 역사적으로 화승총을 사용하는 것 외에도 포위 작전에서 수류탄을 던지는 돌격 전문 군인이었습니다. 척탄병의 뚜렷한 전투 기능은 17세기 중반에 확립되었는데, 당시 척탄병은 가장 강하고 몸집이 큰 군인들 중에서 모집되었습니다. 18세기에 이르러 수류탄을 던지는 척탄병은 덜 필요한 전문가가 되었지만, 전투에서 척탄병은 포위전에서 요새를 습격하는 등 선봉 공격을 지휘하는 신체적으로 강인한 군인이었습니다.[NEWLINE][NEWLINE]1700년경, 영국군과 다른 군대의 척탄병들은 주교의 모자 모양이나 때로는 곰가죽 모양의 모자를 채택했으며, 보통은 수놓은 천으로 연대 휘장을 장식했습니다. 두 무기 모두 17세기 후반에 다양한 군대에 등장하기 시작했는데, 그 이유는 당시 척탄병들이 수류탄을 던질 때 총을 휘두르려면 챙이 넓은 보병 모자를 써야 했기 때문입니다.'),
-('TXT_KEY_UNIT_EE_GRENADIER_STRATEGY', '척탄병은 화약 시대에 대근접용 대검을 대체했으며, 전반적으로 공격적인 병력으로서 더욱 강력해졌습니다.'),
+('TXT_KEY_UNIT_EE_GRENADIER_STRATEGY', '척탄병은 화약 시대에 대근접용 대검을 대체했으며, 전반적으로 공격적인 병력으로서 더욱 강력해졌습니다.');
 
 --------------------------------------------------------------------------------------------------------------------------
 -- 불가사의
@@ -324,7 +324,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_TORRE_QUOTE', '[NEWLINE]"금은 보물이며, 그것을 소유한 사람은 이 세상에서 원하는 모든 것을 이룰 수 있고, 영혼을 천국으로 인도하는 데 성공한다."[NEWLINE] - 크리스토퍼 콜럼버스[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_TORRE_PEDIA', '토레 델 오로(스페인어로 황금의 탑)는 당시 스페인 남부를 점령하고 있던 베르베르인에 의해 13세기에 스페인 도시 세비야에 건설되었습니다. 원래는 군사용 감시탑으로 건설되었지만, 레콩키스타와 신대륙 발견 이후에는 일종의 금고로 사용되어 스페인의 보물선단을 통해 신대륙에서 운반된 귀금속을 저장했으며, 이로 인해 세비야는 의도치 않게 매우 부유한 도시이자 "신대륙으로의 관문"으로 변모했습니다.'),
 -- 베르사유
-('TXT_KEY_BUILDING_EE_VERSAILLES', '베르사유 궁전'),
+('TXT_KEY_BUILDING_EE_VERSAILLES', '베르사유'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_HELP', ''),
 ('TXT_KEY_WONDER_EE_VERSAILLES_QUOTE', '[NEWLINE]"내가 약속을 만들 때마다 불만을 품은 사람 백 명과 배은망덕한 사람 한 명이 생긴다."[NEWLINE] - 루이 14세[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_PEDIA', '베르사유 궁전은 18세기 프랑스 미술의 가장 아름다운 업적 중 하나입니다. 이곳은 원래 루이 13세의 사냥터였으며, 그의 아들 루이 14세가 이곳을 변형하고 확장하여 1682년에 프랑스의 법정과 정부를 베르사유로 옮겼습니다. 프랑스 혁명까지 그곳에 살았던 세 명의 프랑스 왕은 각각 이곳을 더 아름답게 만들기 위해 개선 공사를 했습니다.[NEWLINE][NEWLINE]이 궁전은 1789년에 공식적인 권력의 중심지로서의 지위를 잃었지만, 1830년에 왕위에 오른 루이 필리프의 명령으로 설립된 프랑스 역사 박물관이라는 새로운 역할을 맡았습니다. 그때 궁전의 많은 방이 새로운 소장품을 보관하기 위해 인수되었고, 20세기 초까지 추가되어 프랑스 역사의 이정표를 추적했습니다.'),
@@ -372,7 +372,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_SEMINARY_HELP', ''),
 ('TXT_KEY_BUILDING_EE_SEMINARY_STRATEGY', '신학교는 게임에서 해제되는 마지막 종교 건물 중 하나입니다. 폴리테크닉이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_SEMINARY_PEDIA', '신학교(Seminary, School of theology), 신학대학(Seminary, Theological college), 또는 신학대학원(Divinity school)은 학생(때때로 신학생이라고 함)에게 성경과 신학을 교육하여 일반적으로 성직자, 학문 분야 또는 주로 기독교 사역을 위한 성직 안수를 준비시키는 교육 기관입니다. 근대에 신학교가 설립된 것은 트리엔트 공의회 이후 반종교개혁에 따른 로마 가톨릭 개혁의 결과입니다. 트리엔트 신학교는 영적 형성과 개인적 훈련에 큰 중점을 두었으며, 기초로서 철학을 공부하고, 궁극적으로 신학을 공부했습니다. 미국에서 가장 오래된 가톨릭 신학교는 1791년에 설립된 볼티모어의 세인트 메리 신학교 및 대학입니다. 유대교의 유사한 개념은 예시바와 미드라샤 시스템이며 이슬람에서는 종종 마드라사를 언급합니다. (이 용어는 훨씬 더 광범위합니다.)'),
--- Tavern
+-- 태번
 ('TXT_KEY_BUILDING_EE_TAVERN', '태번'),
 ('TXT_KEY_BUILDING_EE_TAVERN_HELP', ''),
 ('TXT_KEY_BUILDING_EE_TAVERN_STRATEGY', '태번은 새로운 지역을 발견했을 때 얻을 수 있는 경험치 부족을 보완함으로써 정찰 계열에 활력을 불어넣습니다. 또한, 이는 해당 유닛이 가장 잘 수행하는 경우가 많은 약탈 행위를 보상합니다. 태번의 또 다른 역할은 대부분의 식량 제공 보너스 자원의 가치를 높여 해안 도시에 투자한 것에 대한 보상을 제공하는 것입니다.'),
