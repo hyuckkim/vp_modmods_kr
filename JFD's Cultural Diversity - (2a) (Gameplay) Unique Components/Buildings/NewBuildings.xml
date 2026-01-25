@@ -264,6 +264,16 @@
 			<PortraitIndex>29</PortraitIndex>
 		</Row>
 		<Row>
+			<Type>BUILDING_CD_COMMANDERY</Type>
+			<BuildingClass>BUILDINGCLASS_CASTLE</BuildingClass>
+			<Description>TXT_KEY_BUILDING_CD_COMMANDERY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CD_COMMANDERY_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_CD_COMMANDERY_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_CD_COMMANDERY_STRATEGY</Strategy>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<PortraitIndex>34</PortraitIndex>
+		</Row>
+		<Row>
 			<Type>BUILDING_CD_BAGGATAWAY</Type>
 			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
 			<Description>TXT_KEY_BUILDING_CD_BAGGATAWAY</Description>

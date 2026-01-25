@@ -1,10 +1,10 @@
 --======================================================================================================================================--
 -- DEFINES
 --======================================================================================================================================--
-UPDATE Defines SET Value = 50 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_SAME_ERA_COST_MODIFIER'; --original: 25
-UPDATE Defines SET Value = 30 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_PREVIOUS_ERA_COST_MODIFIER'; --original: 15
-UPDATE Defines SET Value = 20 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_SECOND_PREVIOUS_ERA_COST_MODIFIER'; --original: 10
-UPDATE Defines SET Value = 10 WHERE Name = 'BALANCE_CORE_WORLD_WONDER_EARLIER_ERA_COST_MODIFIER'; --original: 5
+UPDATE Defines SET Value = 50 WHERE Name = 'BALANCE_WORLD_WONDER_SAME_ERA_COST_MODIFIER'; --original: 25
+UPDATE Defines SET Value = 30 WHERE Name = 'BALANCE_WORLD_WONDER_PREVIOUS_ERA_COST_MODIFIER'; --original: 15
+UPDATE Defines SET Value = 20 WHERE Name = 'BALANCE_WORLD_WONDER_SECOND_PREVIOUS_ERA_COST_MODIFIER'; --original: 10
+UPDATE Defines SET Value = 10 WHERE Name = 'BALANCE_WORLD_WONDER_EARLIER_ERA_COST_MODIFIER'; --original: 5
 
 UPDATE Language_en_US
 SET Text = 'Additional [ICON_PRODUCTION] Production Cost due to owned World Wonders: [COLOR_NEGATIVE_TEXT]{1_Num}%[ENDCOLOR].
@@ -144,9 +144,7 @@ UPDATE Buildings SET PortraitIndex = 32 WHERE Type='BUILDING_KELDUR_HALL';
 UPDATE Buildings SET PortraitIndex = 33 WHERE Type='BUILDING_KASUBI_TOMBS';
 UPDATE Buildings SET PortraitIndex = 34 WHERE Type='BUILDING_BANAUE';
 UPDATE Buildings SET PortraitIndex = 35 WHERE Type='BUILDING_SHAOLIN';
+--UPDATE Buildings SET PortraitIndex = 36 WHERE Type='BUILDING_KARAKORAM_HIGHWAY';
 --UPDATE Buildings SET PortraitIndex = 37 WHERE Type='BUILDING_BURJ_KHALIFA';
---UPDATE Buildings SET PortraitIndex = 38 WHERE Type='BUILDING_KARAKORAM_HIGHWAY';
-
-UPDATE Buildings SET PortraitIndex = 36, IconAtlas='ATLAS_JAR_WONDERS' WHERE Type='BUILDING_PALACE_GARDEN';
 --======================================================================================================================================--
 --======================================================================================================================================--

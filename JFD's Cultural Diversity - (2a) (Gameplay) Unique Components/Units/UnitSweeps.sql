@@ -156,6 +156,27 @@ BaseLandAirDefense = (
     WHERE bc.Type = Units.Class
     LIMIT 1
 ),
+AirUnitCap = (
+    SELECT b.AirUnitCap
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+Immobile = (
+    SELECT b.Immobile
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+NoSupply = (
+    SELECT b.NoSupply
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
 PurchaseCooldown = (
     SELECT b.PurchaseCooldown
     FROM Units AS b
@@ -179,6 +200,34 @@ RequiresFaithPurchaseEnabled = (
 ),
 Mechanized = (
     SELECT b.Mechanized
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+SpreadReligion = (
+    SELECT b.SpreadReligion
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+ReligionSpreads = (
+    SELECT b.ReligionSpreads
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+ReligiousStrength = (
+    SELECT b.ReligiousStrength
+    FROM Units AS b
+    JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
+    WHERE bc.Type = Units.Class
+    LIMIT 1
+),
+FoundReligion = (
+    SELECT b.FoundReligion
     FROM Units AS b
     JOIN UnitClasses AS bc ON bc.DefaultUnit = b.Type
     WHERE bc.Type = Units.Class

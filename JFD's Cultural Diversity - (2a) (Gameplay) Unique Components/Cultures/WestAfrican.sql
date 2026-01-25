@@ -169,6 +169,24 @@ BEGIN
 	cl.LeaderheadType = lt.LeaderType;
 END;
 
+-- this didnt help
+/*
+CREATE TRIGGER DjeliTrait
+AFTER INSERT ON Traits
+BEGIN
+	INSERT INTO Trait_GreatPersonProgressFromKills
+		(TraitType, GreatPersonType, Value)
+	SELECT
+		lt.TraitType, 'GREATPERSON_MUSICIAN', 2
+	FROM Leader_Traits lt, Civilization_Leaders cl, Civilization_JFD_CultureTypes jfc
+	WHERE 
+	jfc.CultureType = 'CULTURE_JFD_CENTRAL_AFRICAN' AND
+	jfc.CivilizationType = cl.CivilizationType AND 
+	cl.LeaderheadType = lt.LeaderType AND
+	NEW.Type = lt.TraitType;
+END;
+*/
+
 UPDATE Units SET
 TourismBonusTurns = 10
 WHERE Type = 'UNIT_CD_DJELI';

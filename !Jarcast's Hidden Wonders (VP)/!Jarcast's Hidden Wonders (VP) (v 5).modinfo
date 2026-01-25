@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="0b6a31c9-fdda-442b-898c-185a49f12d16" version="4">
+<Mod id="0b6a31c9-fdda-442b-898c-185a49f12d16" version="5">
   <Properties>
     <Name>!Jarcast's Hidden Wonders (VP)</Name>
     <Stability>Beta</Stability>
@@ -61,16 +61,16 @@
     <File md5="0D95CE588AB48041319FFA5344893E30" import="1">Art/06- Atomic Era/NEFT_DASHLARI_splash.dds</File>
     <File md5="1EEEFFA46B35E190FF4F5A19B6EA19F0" import="1">Art/06- Atomic Era/WATSON_RC_splash.dds</File>
     <File md5="3B1DCBC31264F71B331AE60915083878" import="1">Art/07- Information Era/BURJ_KHALIFA_splash.dds</File>
-    <File md5="A0D0FB167C61EB5D653825ABA5E8F4BB" import="1">Art/Jar_Wonders_128.dds</File>
-    <File md5="C4F9A5D649F11C1E54754CF8F36A3B3F" import="1">Art/Jar_Wonders_256.dds</File>
-    <File md5="A7524070A92C715541DC9EC81079AAC4" import="1">Art/Jar_Wonders_45.dds</File>
-    <File md5="954DE99488F0F290B1291316127C1E60" import="1">Art/Jar_Wonders_64.dds</File>
-    <File md5="10E4D741FD6D281B3116E427FFA896F7" import="1">Art/Jar_Wonders_80.dds</File>
-    <File md5="0CDB774CFA22647AE8A742B6B40891E6" import="0">Core/General_Defines.sql</File>
-    <File md5="021E2BF26E76A9B4194F8E6B928BC201" import="0">Core/Wonders_GameText.sql</File>
-    <File md5="59BD6D46AAF28FE2ADD291D4C24DA78E" import="0">Core/WWonders_Defines.sql</File>
+    <File md5="E69785FCA20AD02E9ED73630B353477A" import="1">Art/Jar_Wonders_128.dds</File>
+    <File md5="0E75CC1DFFE3279E5D12DBB6E506EAEB" import="1">Art/Jar_Wonders_256.dds</File>
+    <File md5="94846D3250C487E3273B716AAF326E03" import="1">Art/Jar_Wonders_45.dds</File>
+    <File md5="D76E5415CF89BD9766D753F97C5CD026" import="1">Art/Jar_Wonders_64.dds</File>
+    <File md5="6DB2FED63FB6D8ECD16A26CAA9B5E614" import="1">Art/Jar_Wonders_80.dds</File>
+    <File md5="50C022F5725F256A5319D06D1EBBBE39" import="0">Core/General_Defines.sql</File>
+    <File md5="CAC950E733B694C5113241D6E6482DA0" import="0">Core/Wonders_GameText.sql</File>
+    <File md5="79790569001FB9BA4D4337E14E3B785B" import="0">Core/WWonders_Defines.sql</File>
     <File md5="6C1749894C40074E5150EDC3CA5086FD" import="0">Lua/highlight.lua</File>
-    <File md5="0B50112D0E939BE902A19B7417918F45" import="0">Lua/WWonders_Functions.lua</File>
+    <File md5="FB0E5D8FDE289FA8063AE3AA69210497" import="0">Lua/WWonders_Functions.lua</File>
     <File md5="5DEDFE8041AEE8BBFF2EC7B2B7ACD0F1" import="1">Popup/WonderPopup.lua</File>
     <File md5="C5FF77C0C8C2D752C3AB0247156710E3" import="1">Popup/WonderPopup.xml</File>
   </Files>

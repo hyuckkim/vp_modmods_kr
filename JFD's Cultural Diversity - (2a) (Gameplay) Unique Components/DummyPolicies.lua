@@ -22,7 +22,13 @@ local function CD_DummyAssignment(playerID, plotX, plotY)
 	if city ~= player:GetCapitalCity() then return end
 	
 	-- get the id in the JFD table. new ones added at end.
-	local cultureID = player:GetCultureType()
+	local cultureID, subCultureID = player:GetCultureType()
+
+	-- special check for subcultures that need it
+	if (subCultureID == 15) then
+		player:SetHasPolicy(GameInfoTypes['POLICY_CD_WESTERN_IBERIAN'], 1)
+		print("the extra dummy assignment " .. subCultureID .. " is complete for " .. playerID)
+	end
 
 	-- im not directly editing JFD's mod atm so
 	-- his order must now match our order.

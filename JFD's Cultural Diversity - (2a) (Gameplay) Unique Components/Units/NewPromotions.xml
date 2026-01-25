@@ -97,6 +97,7 @@
 			<PortraitIndex>38</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<!-- PROMOTIONS_IMPROVEMENT_BONUS in .sql -->
 			<NearbyImprovementCombatBonus>25</NearbyImprovementCombatBonus>
 			<NearbyImprovementBonusRange>1</NearbyImprovementBonusRange>
 			<CombatBonusImprovement>IMPROVEMENT_FORT</CombatBonusImprovement>
@@ -165,7 +166,7 @@
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
-			<GiveHPHealedIfEnemyKilled>10</GiveHPHealedIfEnemyKilled>
+			<HPHealedIfDestroyEnemy>10</HPHealedIfDestroyEnemy>
 			<PillageFortificationsOnKill>1</PillageFortificationsOnKill>
 		</Row>
 		<Row>
@@ -229,7 +230,7 @@
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
-			<BarbarianCombatBonus>25</BarbarianCombatBonus>
+			<BarbarianCombatBonus>25</BarbarianCombatBonus>	
 		</Row>
 
 		<Row>
@@ -407,8 +408,8 @@
 			<IsNearbyPromotion>1</IsNearbyPromotion>
 			<NearbyRange>2</NearbyRange>
 			<GiveDomain>DOMAIN_LAND</GiveDomain>
+			<GiveHPHealedIfEnemyKilled>15</GiveHPHealedIfEnemyKilled>
 			<GiveDefenseMod>20</GiveDefenseMod>
-			<GiveHPHealedIfEnemyKilled>20</GiveHPHealedIfEnemyKilled>
 		</Row>
 		<Row>
 			<Type>PROMOTION_CD_VOIVODE_2</Type>
@@ -433,6 +434,22 @@
 			<IconAtlas>PROMOTION_ATLAS_VP_01</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+		</Row>
+
+		<Row>
+			<Type>PROMOTION_CD_VARANGIAN</Type>
+			<Description>TXT_KEY_PROMOTION_CD_VARANGIAN</Description>
+			<Help>TXT_KEY_PROMOTION_CD_VARANGIAN_HELP</Help>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_VARANGIAN</PediaEntry>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<CannotBeChosen>1</CannotBeChosen>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<RiverDoubleMove>1</RiverDoubleMove>
+			<River>1</River>
+			<EmbarkFlatCost>1</EmbarkFlatCost>
+			<LostWithUpgrade>1</LostWithUpgrade>
 		</Row>
 
 		<Row>
@@ -561,25 +578,65 @@
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<MaxHitPointsChange>10</MaxHitPointsChange>
 		</Row>
+		<Row>
+			<Type>PROMOTION_CD_BRIGADE</Type>
+			<Description>TXT_KEY_PROMOTION_CD_BRIGADE</Description>
+			<Help>TXT_KEY_PROMOTION_CD_BRIGADE_HELP</Help>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_BRIGADE</PediaEntry>
+			<PortraitIndex>41</PortraitIndex>
+			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<CannotBeChosen>1</CannotBeChosen>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<PillageBonusStrength>25</PillageBonusStrength>
+			<IsNearbyPromotion>1</IsNearbyPromotion>
+			<NearbyFriendlyCityCombatMod>15</NearbyFriendlyCityCombatMod>
+			<NearbyRange>3</NearbyRange>
+			<AdjacentTileHealChange>5</AdjacentTileHealChange>
+		</Row>
+		<Row>
+			<Type>PROMOTION_CD_BRIGADE_2</Type>
+			<Description>TXT_KEY_PROMOTION_CD_BRIGADE_2</Description>
+			<Help>TXT_KEY_PROMOTION_CD_BRIGADE_2_HELP</Help>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_BRIGADE_2</PediaEntry>
+			<PortraitIndex>40</PortraitIndex>
+			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<CannotBeChosen>1</CannotBeChosen>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<LostWithUpgrade>1</LostWithUpgrade>
+		</Row>
+		<Row>
+			<Type>PROMOTION_CD_CONDOR</Type>
+			<Description>TXT_KEY_PROMOTION_CD_CONDOR</Description>
+			<Help>TXT_KEY_PROMOTION_CD_CONDOR_HELP</Help>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_CONDOR</PediaEntry>
+			<PortraitIndex>42</PortraitIndex>
+			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<CannotBeChosen>1</CannotBeChosen>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<InterceptionDefenseDamageModifier>-25</InterceptionDefenseDamageModifier>
+		</Row>
 	</UnitPromotions>
 
 	<UnitPromotions_Plagues>
-		<Row>
+		<Replace>
 			<PromotionType>PROMOTION_CD_DARTS</PromotionType>
 			<PlaguePromotionType>PROMOTION_SWAMP_TEACHING_PLAGUE</PlaguePromotionType>
 			<DomainType>DOMAIN_LAND</DomainType>
 			<ApplyOnAttack>1</ApplyOnAttack>
 			<ApplyOnDefense>0</ApplyOnDefense>
 			<ApplyChance>100</ApplyChance>
-		</Row>
-		<Row>
+		</Replace>
+		<Replace>
 			<PromotionType>PROMOTION_DMS_BOLAS</PromotionType>
 			<PlaguePromotionType>PROMOTION_DMS_BOLAS_HIT</PlaguePromotionType>
 			<DomainType>DOMAIN_LAND</DomainType>
 			<ApplyOnAttack>1</ApplyOnAttack>
 			<ApplyOnDefense>0</ApplyOnDefense>
 			<ApplyChance>100</ApplyChance>
-		</Row>
+		</Replace>
 	</UnitPromotions_Plagues>
 
 	<UnitPromotions_UnitCombats>
@@ -824,6 +881,17 @@
 			<YieldType>YIELD_TOURISM</YieldType>
 			<Yield>300</Yield>
 		</Row>
+
+		<Row>
+			<PromotionType>PROMOTION_CD_BRIGADE_2</PromotionType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>1000</Yield>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CD_CONDOR</PromotionType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1000</Yield>
+		</Row>
 	</UnitPromotions_YieldFromCombatExperienceTimes100>
 	<UnitPromotions_Terrains>
 		<Row>
@@ -869,6 +937,17 @@
 		</Row>
 
 		<Row>
+			<PromotionType>PROMOTION_CD_STOMP</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<DoubleMove>1</DoubleMove>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CD_STOMP</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<DoubleMove>1</DoubleMove>
+		</Row>
+
+		<Row>
 			<PromotionType>PROMOTION_CD_PAGAN_SOLDIERS</PromotionType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<Attack>0</Attack>
@@ -894,6 +973,12 @@
 			<PromotionType>PROMOTION_CD_WANGARA</PromotionType>
 			<YieldType>YIELD_TOURISM</YieldType>
 			<Yield>20</Yield>
+			<IsEraScaling>0</IsEraScaling>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CD_BRIGADE_2</PromotionType>
+			<YieldType>YIELD_TOURISM</YieldType>
+			<Yield>200</Yield>
 			<IsEraScaling>0</IsEraScaling>
 		</Row>
 	</UnitPromotions_InstantYields>
@@ -1050,7 +1135,7 @@
 			<Text>Tribal Division</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_TRIBAL_HELP">
-			<Text>Double [ICON_MOVES] Movement along Rivers, and no penalty for attacking across them.[NEWLINE]Ignore Terrain Costs from, and double Healing in, [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR].</Text>
+			<Text>Eliminate combat penalties for attacking over Rivers.[NEWLINE]Double [ICON_MOVES] Movement along Rivers.[NEWLINE]Ignore Terrain Costs from, and double Healing in, [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR].</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE">
@@ -1217,21 +1302,28 @@
 			<Text>Bulwark</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_VOIVODE_HELP">
-			<Text>Land Units within 2 tiles gain +20% [ICON_STRENGTH] Combat Strength when Defending, and heal 15 HP if they kill an enemy Unit.</Text>
+			<Text>Land Units within 2 tiles heal [COLOR_POSITIVE_TEXT]15 HP[ENDCOLOR] if they kill an enemy Unit, and gain +20% [ICON_STRENGTH] Combat Strength when Defending.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_VOIVODE_2">
 			<Text>Palsgrave</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_VOIVODE_2_HELP">
-			<Text>If stationed in a City, grants +25% [ICON_PRODUCTION] Production to Military Units.[NEWLINE]Nearby Cities gain 10% [ICON_STRENGTH] Combat Strength.</Text>
+			<Text>If stationed in a City, grants +25% [ICON_PRODUCTION] Production to Military Units.[NEWLINE]Adjacent Cities gain 10% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_PAGAN_SOLDIERS">
 			<Text>Pagan Soldiers</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_PAGAN_SOLDIERS_HELP">
-			<Text>+25% [ICON_STRENGTH] Defense in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR].[NEWLINE]Ignore Terrain Cost from [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR].</Text>
+			<Text>+25% [ICON_STRENGTH] Defense in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR].[NEWLINE]Ignore Terrain Cost from [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Marsh[ENDCOLOR].[NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade.[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_CD_VARANGIAN">
+			<Text>Monoxyla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_VARANGIAN_HELP">
+			<Text>Eliminate combat penalties for attacking over Rivers.[NEWLINE]Double [ICON_MOVES] Movement along Rivers.[NEWLINE]Embarking costs only 1 [ICON_MOVES] Movement.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_AMANOKAL_STEALTH">
@@ -1252,7 +1344,7 @@
 			<Text>Stomp Dance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_STOMP_HELP">
-			<Text>Eliminate combat penalties for attacking over Rivers.[NEWLINE]Double [ICON_MOVES] Movement along Rivers.[NEWLINE]+1 [ICON_INFLUENCE] Influence with the nearest [ICON_CITY_STATE] City-State for every XP earned in Combat.</Text>
+			<Text>Eliminate combat penalties for attacking over Rivers.[NEWLINE]Double [ICON_MOVES] Movement along Rivers and in Forest or Jungle.[NEWLINE]+1 [ICON_INFLUENCE] Influence with the nearest [ICON_CITY_STATE] City-State for every XP earned in Combat.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_BATIR">
@@ -1312,12 +1404,34 @@
 			<Text>Max HP increased by 10.</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_PROMOTION_LIBYAN_DESERT_RAIDER">
+		<Row Tag="TXT_KEY_PROMOTION_CD_BRIGADE">
+			<Text>¡No Pasarán!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_BRIGADE_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength within 3 tiles of a [COLOR_POSITIVE_TEXT]Friendly City[ENDCOLOR].[NEWLINE]+25% [ICON_STRENGTH] Combat Strength in tiles with [COLOR_NEGATIVE_TEXT]Pillaged[ENDCOLOR] Improvements.[NEWLINE]+5 HP when [COLOR_POSITIVE_TEXT]Healing[ENDCOLOR] for Units adjacent to this tile.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_CD_BRIGADE_2">
+			<Text>Internationale</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_BRIGADE_2_HELP">
+			<Text>Grants an Instant Boost of 200 [ICON_TOURISM] Tourism.[NEWLINE]Gain 10 [ICON_TOURISM] Tourism for every XP earned in Combat.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_CD_CONDOR">
+			<Text>Jericho Trumpets</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_CONDOR_HELP">
+			<Text>-25% Damage received when performing an [COLOR_POSITIVE_TEXT]Air Strike[ENDCOLOR].[NEWLINE]Gain 10 [ICON_RESEARCH] Science for every XP earned in Combat.</Text>
+		</Row>
+
+
+		<Replace Tag="TXT_KEY_PROMOTION_LIBYAN_DESERT_RAIDER">
 			<Text>Fezzan Marauder</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_LIBYAN_DESERT_RAIDER_HELP">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_LIBYAN_DESERT_RAIDER_HELP">
 			<Text>Double [ICON_MOVES] Movement on [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR].[NEWLINE]20% less Damage from [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Steal [ICON_GOLD] Gold equal to 75% of Damage inflicted when attacking [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR], capped at 10x [ICON_STRENGTH] City Strength.</Text>
-		</Row>
+		</Replace>
 
 	</Language_en_US>
 </GameData>

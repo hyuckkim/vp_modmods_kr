@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="510755cb-e70a-4860-bc8b-2c627f0cb096" version="44">
+<Mod id="510755cb-e70a-4860-bc8b-2c627f0cb096" version="51">
   <Properties>
     <Name>Maritime Weather+</Name>
     <Stability>Alpha</Stability>
@@ -39,7 +39,7 @@
     <File md5="426B068617A08E96FFBB278DF760A6E8" import="1">Art/Storm_45.dds</File>
     <File md5="38D3D728848BE396136CE51E91E9329E" import="1">Art/Storm_64.dds</File>
     <File md5="9B2938F03F200B8BD8EF31299AC87626" import="1">Art/Storm_80.dds</File>
-    <File md5="EDBA586BBA5B7B0DEC70B13B40D4C354" import="1">MBweather.lua</File>
+    <File md5="E3231AB05D36EDFDD0A3DCE3CBCBE947" import="1">MBweather.lua</File>
     <File md5="4328AC16DD71A472EFF79731E644CC51" import="0">MBweatherDB.sql</File>
     <File md5="99BFD4BEFA15CA94E9590BA3430B8C1E" import="0">MBweatherEvents.lua</File>
   </Files>

@@ -237,13 +237,7 @@ end
 
 function MBPstormSpawner(spawnPlot, bSpawnAdjacent, iFeatureType)
 	--local iFeatureType = spawnPlot:GetFeatureType();
-	if iFeatureType == -1 then
-		if spawnPlot:IsWater() then
-			spawnPlot:SetFeatureType(tWeatherFeature);
-		else
-			spawnPlot:SetFeatureType(tWeatherLandFeature);
-		end
-	elseif iFeatureType == tFloodPlainsFeature then
+	if iFeatureType == tFloodPlainsFeature then
 		spawnPlot:SetFeatureType(tFloodPlainsWeatherFeature);
 	elseif iFeatureType == tAtollFeature then
 		spawnPlot:SetFeatureType(tAtollWeatherFeature);
@@ -257,6 +251,12 @@ function MBPstormSpawner(spawnPlot, bSpawnAdjacent, iFeatureType)
 		spawnPlot:SetFeatureType(tJungleWeatherFeature);
 		local hexPos = ToHexFromGrid({x = spawnPlot:GetX(), y = spawnPlot:GetY()})
 		Events.SerialEventJungleCreated(hexPos.x, hexPos.y)--]]
+	else
+		if spawnPlot:IsWater() then
+			spawnPlot:SetFeatureType(tWeatherFeature);
+		else
+			spawnPlot:SetFeatureType(tWeatherLandFeature);
+		end
 	end
 	MBPstormArtDrawer(spawnPlot);
 	MBPstorms[#MBPstorms + 1] = spawnPlot; -- Add storm to tracking table

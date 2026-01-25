@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="630b44f7-b08a-40f5-a099-1f43728b7af1" version="50">
+  <Properties>
+    <Name>Maritime Battles+</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>MB+[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Compatibility: VP[ENDCOLOR]</Teaser>
+    <Description>Movement, combat, etc. mod for VP's naval and coastal game</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>Mk Z, SMAN, WHoward, Keukotis, Ghost Toast, VP dev team and supporters</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="148" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="afd6586f-4079-4d40-93f1-211c9d7fd0e6" minversion="0" maxversion="999" title="Hex Conquer VP" />
+    <Mod id="675ba5ec-dc5a-400f-9864-8170568d04e5" minversion="0" maxversion="999" title="Enhanced Naval Warfare for Vox Populi" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era (Vox Populi)" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="(over) More Unique Components for VP" />
+  </References>
+  <Blocks>
+    <Mod id="1d55dd4a-d422-4bce-bcf9-61ae63c82ac9" minversion="0" maxversion="999" title="Friendly Waters" />
+    <Mod id="461c1bee-33c1-4c16-bcd9-f9769a11c28f" minversion="0" maxversion="999" title="Buildings - Lighthouse Near Sea" />
+    <Mod id="a2e3016d-75a8-42a6-b63b-610a6f99505d" minversion="0" maxversion="999" title="Magellan Expedition Wonder" />
+  </Blocks>
+  <Files>
+    <File md5="97271EED65BC374AEB30AF8F3F33132D" import="0">MBPbuildings.sql</File>
+    <File md5="3E279073C748C4A97F733F210C4588BD" import="1">Magellan/Art/magellan_icon128.dds</File>
+    <File md5="1EB8A773EF650C39DD3E9DDF9199E8CF" import="1">Magellan/Art/magellan_icon256.dds</File>
+    <File md5="317B8A379599808D7398667722952B64" import="1">Magellan/Art/magellan_icon45.dds</File>
+    <File md5="8B4ADBB27209D0B0E4A09EEA2E2C6C3D" import="1">Magellan/Art/magellan_icon64.dds</File>
+    <File md5="5003E6C9D500EF9115A4F0F980BB3834" import="1">Magellan/Art/magellan_icon80.dds</File>
+    <File md5="E2C0C33A5D19C697E66D2E7D313C9667" import="1">Magellan/Art/magellan_splash.dds</File>
+    <File md5="F20BC73F74244B0364DDD5F36BE32BAB" import="0">Magellan/magellan_buildcheck.lua</File>
+    <File md5="241DABA285715C35BCBDFEC84B5F8EAC" import="0">Magellan/XML/magellan_Promotions.xml</File>
+    <File md5="85C0522EFE2AC2A8441AED9C62A35134" import="0">Magellan/XML/magellan_Buildings.xml</File>
+    <File md5="81AE43E5B37232269B6A40482453F91C" import="0">Magellan/XML/magellan_IconTextureAtlases.xml</File>
+    <File md5="3E946198C025C43B29530C18C9166B2C" import="0">Magellan/XML/magellan_text_EN_US.xml</File>
+    <File md5="817FF20CC9ABD47AB3C1D56A12695CE1" import="0">MBP-VPbalance.sql</File>
+    <File md5="B1D29621B8527322A8987DFCB40DAA70" import="0">MBPpromotions.sql</File>
+    <File md5="55BECA308BEECFB9090F68EAD4A559D9" import="0">MBP-VPsettings.sql</File>
+    <File md5="819C8177FC5CFD0C63A523A6F8BF4835" import="0">MBPmain.lua</File>
+    <File md5="FFFDF26DEAAEC2833AEEB90C8D238F2F" import="1">TradeWaters/Lighthouse/Art/fx_triggers_indlighthouse.ftsxml</File>
+    <File md5="B8D7311EB090C3A039C3910DE8F3FAEB" import="1">TradeWaters/Lighthouse/Art/fx_triggers_rennlighthouse.ftsxml</File>
+    <File md5="9A37CB532E1ACE094501DEA5885CE31B" import="1">TradeWaters/Lighthouse/Art/lighthouseSV.dds</File>
+    <File md5="923A97F951AE37D430364DE59BD5EF38" import="1">TradeWaters/Lighthouse/Art/MBindlighthouse.fxsxml</File>
+    <File md5="321B198BDD2A84473796094FB6660218" import="1">TradeWaters/Lighthouse/Art/MBindlighthouse.gr2</File>
+    <File md5="61ACBD280292A80F3946F8DA6D11DDAB" import="1">TradeWaters/Lighthouse/Art/MBindlighthouse_diff.dds</File>
+    <File md5="F7184A805FFDCAC71DFF3AF26CE2226D" import="1">TradeWaters/Lighthouse/Art/MBindlighthouse_sref.dds</File>
+    <File md5="A1A676AD04211DEB55E8CD4711DE94CB" import="1">TradeWaters/Lighthouse/Art/MBrennlighthouse.fxsxml</File>
+    <File md5="37681F21B45DCB25CB4164E50F408117" import="1">TradeWaters/Lighthouse/Art/MBrennlighthouse.gr2</File>
+    <File md5="98FD57F676C8FB43E00466D4000D6578" import="1">TradeWaters/Lighthouse/Art/MBrennlighthouse_diff.dds</File>
+    <File md5="971262B5E28EA8A3DE725346C4A8CDCC" import="1">TradeWaters/Lighthouse/Art/MBrennlighthouse_sref.dds</File>
+    <File md5="5D6F516B9D7760DB4CA3EBFE254A0104" import="0">TradeWaters/Lighthouse/Lighthouse.sql</File>
+    <File md5="7799B2EC91813958AC31275B7CF6A586" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon032.dds</File>
+    <File md5="F280485B9403C61F126DFE8203ABCA34" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon045.dds</File>
+    <File md5="715072CAEFC68D388FEA4B1E35A4F548" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon064.dds</File>
+    <File md5="79139B3BC78704E99345F77D69E614E6" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon080.dds</File>
+    <File md5="B1A9414B904F5C7B0357DA87B27488B5" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon128.dds</File>
+    <File md5="34EEA67FC6027044BC4E472F6ED609B2" import="1">TradeWaters/MaritimeSchool/Art/maritimeSchool_icon256.dds</File>
+    <File md5="6054FC5B964EF2DFDCF690A8DE4B158E" import="0">TradeWaters/MaritimeSchool/Art/MaritimeSchool_icons.xml</File>
+    <File md5="F3B397E8E4B110348BC137E7E304152B" import="0">TradeWaters/MaritimeSchool/MaritimeSchool_Promotions.xml</File>
+    <File md5="11138C21C0D84CBA1A7266A01B82BD8F" import="0">TradeWaters/MaritimeSchool/MaritimeSchool.xml</File>
+    <File md5="4AF198E4C016472A9F14E41BBE3BEE18" import="1">TradeWaters/Port/Art/harborSV.dds</File>
+    <File md5="28C2381DC5B6404D18BB937FEEAA1F66" import="1">TradeWaters/Port/Art/MBharbor_anc.dds</File>
+    <File md5="6E10F160933E6774E593FF18C9D8303E" import="1">TradeWaters/Port/Art/MBharbor_anc.fxsxml</File>
+    <File md5="254077B75D0968C7F65BE086E6F89711" import="1">TradeWaters/Port/Art/MBharbor_anc.gr2</File>
+    <File md5="1D3ADF7FFBFE3C941CEEECFCD66C7584" import="1">TradeWaters/Port/Art/MBharbor_anc_sref.dds</File>
+    <File md5="80E8FB3B56B36E75CDFB65F84923ECC4" import="1">TradeWaters/Port/Art/MBharbor_ind.fxsxml</File>
+    <File md5="5EE713BBE1CB72B6143AD191E9CF71EE" import="1">TradeWaters/Port/Art/MBharbor_ind.gr2</File>
+    <File md5="1989F19A1B57605D4241BC832C662A1E" import="1">TradeWaters/Port/Art/MBharbor_ind_diff.dds</File>
+    <File md5="D095E88E4F4A000BC6BFC3624071BC08" import="1">TradeWaters/Port/Art/MBharbor_ind_sref.dds</File>
+    <File md5="81BAF4E4346B1A964541E8648FDC30DD" import="0">TradeWaters/Port/Harbor.sql</File>
+    <File md5="ACCBF0B3F53EE5A2D48C920EEAF21953" import="0">TradeWaters/TradeWaters.lua</File>
+    <File md5="343A5A193733EC78CE3127D27C844E59" import="0">TradeWaters/TradeWaters.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MBP-VPsettings.sql</UpdateDatabase>
+      <UpdateDatabase>MBP-VPbalance.sql</UpdateDatabase>
+      <UpdateDatabase>MBPpromotions.sql</UpdateDatabase>
+      <UpdateDatabase>Magellan/XML/magellan_text_EN_US.xml</UpdateDatabase>
+      <UpdateDatabase>Magellan/XML/magellan_IconTextureAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>Magellan/XML/magellan_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/Lighthouse/Lighthouse.sql</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/MaritimeSchool/MaritimeSchool.xml</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/Port/Harbor.sql</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/TradeWaters.xml</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/MaritimeSchool/MaritimeSchool_Promotions.xml</UpdateDatabase>
+      <UpdateDatabase>TradeWaters/MaritimeSchool/Art/MaritimeSchool_icons.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Magellan/magellan_buildcheck.lua">
+      <Name>MagellanBuildingCheck</Name>
+      <Description>Checks if city is eligible to build Magellan's Expedition</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="TradeWaters/TradeWaters.lua">
+      <Name>Trade Waters lua functions</Name>
+      <Description>adds trade water plots to map per improvement etc</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

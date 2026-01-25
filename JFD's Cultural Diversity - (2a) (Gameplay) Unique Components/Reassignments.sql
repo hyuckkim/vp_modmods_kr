@@ -87,17 +87,30 @@ UPDATE JFD_CultureTypes SET ShortDescription = 'TXT_KEY_CULTURE_CD_CELTIC_SHORT_
 -- sub cultures 
 -----------------
 INSERT INTO JFD_CultureSubTypes
-		(CultureType,					Type,										LowerTag,						ShortDescription)
-VALUES	('CULTURE_JFD_CENTRAL',		'SUBCULTURE_JFD_CENTRAL_SLAVIC',			'JFD_CentralSlavic',			'TXT_KEY_CULTURE_SUB_JFD_CENTRAL_SLAVIC_SHORT_DESC');
+	(CultureType,					Type,										LowerTag,						ShortDescription)
+VALUES	
+	('CULTURE_JFD_CENTRAL',		'SUBCULTURE_CD_CENTRAL_SLAVIC',			'CD_CentralSlavic',			'TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC'),
+	('CULTURE_JFD_WESTERN',		'SUBCULTURE_CD_WESTERN_IBERIAN',			'CD_Iberian',			'TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC');
 
 INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
-	('TXT_KEY_CULTURE_SUB_JFD_CENTRAL_SLAVIC_SHORT_DESC', 'West Slavic');
+	('TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC', 'West Slavic'),
+	('TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC', 'Iberian');
 
 UPDATE Civilization_JFD_CultureTypes SET
-SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC'
+SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC'
 WHERE CivilizationType = 'CIVILIZATION_POLAND';
+
+UPDATE Civilization_JFD_CultureTypes SET
+CultureType = 'CULTURE_JFD_WESTERN',
+SubCultureType = 'SUBCULTURE_CD_WESTERN_IBERIAN'
+WHERE CivilizationType = 'CIVILIZATION_SPAIN';
+
+UPDATE Civilization_JFD_CultureTypes SET
+SubCultureType = 'SUBCULTURE_CD_WESTERN_IBERIAN'
+WHERE CivilizationType = 'CIVILIZATION_PORTUGAL';
+
 
 ----------------------------------------------
 -- changes to existing cultures
@@ -137,12 +150,6 @@ UPDATE Language_en_US SET
 Text = 'Guinean'
 WHERE Tag = 'TXT_KEY_CULTURE_JFD_CENTRAL_AFRICAN_SHORT_DESC';
 
--- load order might be an issue so do it both ways
--- do this again with a trigger in DummyPolicies.sql
-UPDATE Civilization_JFD_CultureTypes SET
-CultureType = 'CULTURE_JFD_CENTRAL_AFRICAN'
-WHERE CivilizationType IN ('CIVILIZATION_CL_NIGERIA');
-
 ---------------------------------------------
 UPDATE Language_en_US SET
 Text = 'Levantine'
@@ -177,17 +184,6 @@ UPDATE Civilization_JFD_CultureTypes SET
 CultureType = 'CULTURE_JFD_WEST_AFRICAN'
 WHERE CivilizationType = 'CIVILIZATION_MOROCCO';
 
--- this means garamantes should be treated separately as they copy morocco
--- load order might be an issue so do it both ways
--- do this again with a trigger in DummyPolicies.sql
-UPDATE Civilization_JFD_CultureTypes SET
-CultureType = 'CULTURE_JFD_WEST_AFRICAN'
-WHERE CivilizationType IN ('CIVILIZATION_ANCIENT_LIBYA_MOD');
-
-UPDATE Civilization_JFD_CultureTypes SET
-CultureType = 'CULTURE_JFD_WESTERN'
-WHERE CivilizationType = 'CIVILIZATION_SPAIN';
-
 UPDATE Civilization_JFD_CultureTypes SET
 CultureType = 'CULTURE_JFD_MID_EASTERN'
 WHERE CivilizationType = 'CIVILIZATION_PERSIA';
@@ -206,7 +202,6 @@ UPDATE Civilization_JFD_CultureTypes SET
 CultureType = 'CULTURE_JFD_POLAR'
 WHERE CivilizationType = 'CIVILIZATION_RUSSIA';
 */
-
 
 
 

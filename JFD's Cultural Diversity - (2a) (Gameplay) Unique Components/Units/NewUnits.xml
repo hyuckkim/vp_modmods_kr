@@ -8,6 +8,13 @@
 			<!-- UNIT_CD_BAGHATUR -->
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+		<Row>
+			<Type>UNITCLASS_CD_INTERNATIONAL_BRIGADE</Type>
+			<Description>TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE</Description>
+			<DefaultUnit>NONE</DefaultUnit>
+			<!-- UNIT_CD_INTERNATIONAL_BRIGADE -->
+			<MaxPlayerInstances>6</MaxPlayerInstances>
+		</Row>
 	</UnitClasses>
 	<Units>
 		<!---------- economic units ----------->
@@ -170,6 +177,20 @@
 		</Row>
 		<!-- 9 is pracinha -->
 		<Row>
+			<Type>UNIT_CD_VARANGIAN</Type>
+			<Class>UNITCLASS_LONGSWORDSMAN</Class>
+			<Description>TXT_KEY_UNIT_CD_VARANGIAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_VARANGIAN_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_VARANGIAN_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_VARANGIAN_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_JFD_VARANGIAN</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>10</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>10</PortraitIndex>
+		</Row>		
+		<!-- backup -->
+		<Row>
 			<Type>UNIT_CD_VOI</Type>
 			<Class>UNITCLASS_SPEARMAN</Class>
 			<Description>TXT_KEY_UNIT_CD_VOI</Description>
@@ -178,9 +199,9 @@
 			<Help>TXT_KEY_UNIT_CD_VOI_HELP</Help>
 			<UnitArtInfo>ART_DEF_UNIT_VOI</UnitArtInfo>
 			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
-			<UnitFlagIconOffset>10</UnitFlagIconOffset>
+			<UnitFlagIconOffset>32</UnitFlagIconOffset>
 			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
-			<PortraitIndex>10</PortraitIndex>
+			<PortraitIndex>32</PortraitIndex>
 		</Row>		
 		<Row>
 			<Type>UNIT_CD_VOIVODE</Type>
@@ -432,6 +453,33 @@
 			<PortraitIndex>28</PortraitIndex>
 		</Row>
 		<!--------- 29 is western, ship of the line ---->
+		<Row>
+			<Type>UNIT_CD_INTERNATIONAL_BRIGADE</Type>
+			<Class>UNITCLASS_FOREIGNLEGION</Class>
+			<Description>TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_GH_BRIGADE</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>41</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>41</PortraitIndex>
+		</Row>
+		<Row>
+			<Type>UNIT_CD_CONDOR_LEGION</Type>
+			<Class>UNITCLASS_WWI_BOMBER</Class>
+			<Description>TXT_KEY_UNIT_CD_CONDOR_LEGION</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_CONDOR_LEGION_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_CONDOR_LEGION_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_CONDOR_LEGION_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_UC_CONDOR</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>42</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>42</PortraitIndex>
+		</Row>
+
 		<Row>
 			<Type>UNIT_CD_MAHAROLUKTI</Type>
 			<Class>UNITCLASS_HORSEMAN</Class>

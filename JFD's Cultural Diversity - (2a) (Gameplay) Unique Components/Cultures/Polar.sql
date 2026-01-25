@@ -78,13 +78,10 @@ FROM Language_en_US WHERE Tag = 'TXT_KEY_UNIT_CD_UMIAK_HELP';
 
 DELETE FROM Building_ResourceQuantityRequirements WHERE BuildingType = 'BUILDING_CD_REINDEER_DISTRICT';
 
--- naturally, this doesnt work
-/*
 INSERT INTO Building_ResourcePlotsToPlace
 	(BuildingType, ResourceType, NumPlots, ResourceQuantityToPlace)
 VALUES
 	('BUILDING_CD_REINDEER_DISTRICT', 'RESOURCE_REINDEER', 2, 1);
-*/
 
 INSERT INTO Building_ResourceYieldChanges
 	(BuildingType, ResourceType, YieldType, Yield)
@@ -111,3 +108,4 @@ INSERT INTO Building_YieldChanges
 VALUES
 	('BUILDING_CD_REINDEER_DISTRICT', 'YIELD_CULTURE', 3),
 	('BUILDING_CD_REINDEER_DISTRICT', 'YIELD_CULTURE_LOCAL', 10);
+

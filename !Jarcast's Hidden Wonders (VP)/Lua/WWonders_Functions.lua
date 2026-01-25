@@ -77,6 +77,7 @@ end
 
 tUniqueForts = {}
 tUniqueForts[GameInfoTypes.IMPROVEMENT_FORT] = true
+tUniqueForts[GameInfoTypes.IMPROVEMENT_APLEKTON] = true
 --==========================================================================================================================
 -- FUNCTIONS
 --==========================================================================================================================
@@ -185,8 +186,8 @@ GameEvents.CityConstructed.Add(Jar_BanaueWonderPlaceRice)
 --==========================================================================================================================
 function Jar_HoryujiCultureReligiousUnits(playerID, cityID, unitID, isGold, isFaith)
 	local pPlayer = Players[playerID]
-	local pCity = player:GetCityByID(cityID)
-	local pUnit = player:GetUnitByID(unitID)
+	local pCity = pPlayer:GetCityByID(cityID)
+	local pUnit = pPlayer:GetUnitByID(unitID)
 	if pPlayer:CountNumBuildings(GameInfoTypes.BUILDING_HORYUJI) <1 then return end
 	if pUnit:GetUnitClassType() == GameInfoTypes.UNITCLASS_MISSIONARY or pUnit:GetUnitClassType() == GameInfoTypes.UNITCLASS_INQUISITOR then
 		local bonus = 20*math.max(1, pPlayer:GetCurrentEra())
@@ -205,7 +206,7 @@ GameEvents.CityTrained.Add(Jar_HoryujiCultureReligiousUnits)
 --==========================================================================================================================
 -- Great Kyz Kala
 --==========================================================================================================================
-function Jar_CanConstructKyzKala(ePlayer, eCity, eBuilding)
+--[[function Jar_CanConstructKyzKala(ePlayer, eCity, eBuilding)
 	local pPlayer = Players[ePlayer]
 	if not pPlayer:IsAlive() then return false end
 	local pCity = pPlayer:GetCityByID(eCity)
@@ -221,7 +222,7 @@ function Jar_CanConstructKyzKala(ePlayer, eCity, eBuilding)
 	end
 	return true
 end
-GameEvents.CityCanConstruct.Add(Jar_CanConstructKyzKala)
+GameEvents.CityCanConstruct.Add(Jar_CanConstructKyzKala)]]
 
 function Jar_KyzKalaWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold, bIncludeFaithOrCulture)
 	local pPlayer = Players[iPlayer]	
@@ -342,18 +343,6 @@ function Jar_JetavanaramayaWonderDummyPolicy(iPlayer, iCity, iBuilding, bInclude
 	end	
 end
 GameEvents.CityConstructed.Add(Jar_JetavanaramayaWonderDummyPolicy)
---==========================================================================================================================
--- Tlachihualtepetl
---==========================================================================================================================
-function Jar_TlachihualtepetlWonderDummyPolicy(iPlayer, iCity, iBuilding, bIncludeGold, bIncludeFaithOrCulture)
-	local pPlayer = Players[iPlayer]	
-	local pCity = pPlayer:GetCityByID(iCity)
-	if iBuilding ~= GameInfoTypes.BUILDING_TLACHIHUALTEPETL then return end
-	if not pPlayer:HasPolicy(GameInfoTypes.POLICY_TLACHIHUALTEPETL) then
-		pPlayer:GrantPolicy(GameInfoTypes.POLICY_TLACHIHUALTEPETL, true)
-	end	
-end
-GameEvents.CityConstructed.Add(Jar_TlachihualtepetlWonderDummyPolicy)
 --==========================================================================================================================
 -- Larabanga Mosque
 --==========================================================================================================================

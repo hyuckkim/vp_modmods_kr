@@ -5,9 +5,14 @@
 -- Resources: AITradeModifier, AIObjective, MinLandPercent, RandApp1, RandApp2, RandApp3, RandApp4,
 -- Player, TilesPer, ConstAppearance, PlacementOrder, GroupRange, GroupRand, Normalize
 INSERT OR REPLACE INTO Resources
-	(Type,				Description,					Civilopedia,							Help,								ResourceClassType,		ArtDefineTag,				AltArtDefineTag,	ArtDefineTagHeavy,	AltArtDefineTagHeavy,	TechReveal,	PolicyReveal,	TechCityTrade,	TechObsolete,	AIStopTradingEra,	Happiness,	WonderProductionMod,	WonderProductionModObsoleteEra, StartingResourceQuantity,	MinAreaSize,	MinLatitude,	MaxLatitude,	ResourceUsage,	PresentOnAllValidPlots, Area,	Hills,	Flatlands,	NoRiverSide,	OnlyMinorCivs,	IconString,			PortraitIndex,	IconAtlas) 
+	(Type,				Description,					Civilopedia,							Help,								ResourceClassType,		ArtDefineTag,				AltArtDefineTag,	ArtDefineTagHeavy,	AltArtDefineTagHeavy,	TechReveal,	
+	PolicyReveal,	TechCityTrade,	TechObsolete,	AIStopTradingEra,	Happiness,	WonderProductionMod,	WonderProductionModObsoleteEra, StartingResourceQuantity,	
+	MinAreaSize,	MinLatitude,	MaxLatitude,	ResourceUsage,	PresentOnAllValidPlots, Area,	Hills,	Flatlands,	NoRiverSide,	OnlyMinorCivs,	IconString,			PortraitIndex,	IconAtlas) 
 VALUES
-	('RESOURCE_REINDEER',	'TXT_KEY_RESOURCE_REINDEER',	'TXT_KEY_CIV5_RESOURCE_REINDEER_TEXT',	'TXT_KEY_RESOURCE_REINDEER_HELP',	'RESOURCECLASS_BONUS',	'ART_DEF_RESOURCE_REINDEER',null,				null,				null,					'TECH_AGRICULTURE',	null,	'TECH_AGRICULTURE',null,			null,				0,			0,						null,							0,							3,				0,				90,				0,				0,						0,		0,		0,			0,				0,			'[ICON_RES_REINDEER]',	53,			'CD_ECONOMIC_ATLAS');
+	('RESOURCE_REINDEER',	'TXT_KEY_RESOURCE_REINDEER',	'TXT_KEY_CIV5_RESOURCE_REINDEER_TEXT',	'TXT_KEY_RESOURCE_REINDEER_HELP',	
+	'RESOURCECLASS_BONUS',	'ART_DEF_RESOURCE_REINDEER',null,				null,				null,					'TECH_AGRICULTURE',
+	null,	'TECH_AGRICULTURE',null,			null,		0,		0,		null,			0,							
+	3,	0,	90,		0,		0,		0,		1,		1,			0,	0,	'[ICON_RES_REINDEER]',	53,		'CD_ECONOMIC_ATLAS');
 
 UPDATE Resources SET 
 LandResource=1, 

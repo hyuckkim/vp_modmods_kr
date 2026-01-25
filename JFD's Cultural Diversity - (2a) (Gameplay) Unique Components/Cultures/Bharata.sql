@@ -1,6 +1,6 @@
 -- ============================
 -- Sepoy (Musketman)
--- cheap
+-- stronger together
 -- ==============================
 ------------------------------
 -- ArtDefine_UnitInfos

@@ -12,8 +12,9 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_XON_STRATEGY">
-			<Text>Every Xon you expend increases the power of your Empire with a combination of yield and military bonuses. In particular each new Xon increases the yields of Holy Sites, meaning the Improvement has a much higher value to the Patagonian Culture than your average Civilization.</Text>
+			<Text>Every Xon you expend increases the power of your Empire with a combination of military and yield bonuses. In particular, each new Xon increases the yields of Holy Sites, meaning the Improvement has a much higher value to members of the Patagonian Culture than to your average Civilization.</Text>
 		</Row>
+		<!-- details of the bonuses are appended in the Cultures/Patagonian.sql file -->
 
 		<Row Tag="TXT_KEY_UNIT_CD_DJELI">
 			<Text>Djéli</Text>
@@ -166,13 +167,13 @@
 			<Text>Airborne Ranger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_RANGER_TEXT">
-			<Text>The Civilopedia text goes here</Text>
+			<Text>This is already written</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_RANGER_HELP">
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_RANGER_STRATEGY">
-			<Text>Our design rationale goes here</Text>
+			<Text>This is updated elsewhere</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CD_VOI">
@@ -188,6 +189,19 @@
 			<Text>Voi are an irregular force: a Spearman-style defensive Unit with the Recon-line feel of moving freely through Forests and Marsh. This makes them much more mobile than most Units of the Ancient Era, which allows you to overextend your armies and Cities in a way that a Civilization of a different Cultural Group would not be able to reinforce. While not strictly offensive in nature, if your opponent settles particularly rugged terrain, you may be able to use that to your advantage by swarming them with Voi before they can connect up roads, chop down forests, and drain Marshes. To this end, Voi can move immediately after purchase, allowing you to squeeze out every last drop of tempo from the early game.</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_UNIT_CD_VARANGIAN">
+			<Text>Varangian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VARANGIAN_TEXT">
+			<Text>The Varangians were Scandinavian warriors, traders and settlers, who settled in the territories of present-day Belarus, Russia and Ukraine from the 8th and 9th centuries and established the state of Kievan Rus' as well as the principalities of Polotsk and Turov. Engaging in trade, piracy, and mercenary service, Varangians roamed the river systems and portages of Gardariki, as the areas north of the Black Sea were known in the Norse sagas.[NEWLINE][NEWLINE]The Varangians controlled the Volga trade route, connecting the Baltic to the Caspian Sea and the Dnieper and Dniester trade route leading to the Black Sea and Constantinople. Attracted by the riches of Constantinople, the Varangian Rus' began the Rus'-Byzantine Wars, some of which resulted in advantageous trade treaties. At least from the early 10th century, many Varangians served as mercenaries in the Byzantine Army, constituting the elite Varangian Guard (the bodyguards of Byzantine emperors). Eventually most were converted from Norse paganism to Orthodox Christianity, culminating in the Christianization of Kievan Rus' in 988.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VARANGIAN_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_VARANGIAN_STRATEGY">
+			<Text>Varganians are an enormously versatile Unit that functions as a mercenary, requiring Gold to acquire. They come with a number of Promotions normally accessible only to other Civilizations, granting power and speed near attacking and pillaging, particularly over Rivers.</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE">
 			<Text>Voivode</Text>
 		</Row>
@@ -195,7 +209,7 @@
 			<Text>The title voevodas originally occurs in the work of the 10th-century Byzantine emperor Constantine VII in his De Administrando Imperio, in reference to Hungarian military leaders. It broadened into a title denoting a military leader or warlord in Central, Southeastern and Eastern Europe in use since the Early Middle Ages. In the Polish-Lithuanian Commonwealth, voivode was interchangeably used with palsgrave, which was the chief commander of the army next in rank to the King. This was more an office than a court rank, similar to the Grand Duke of Bosnia. In the Tsardom of Russia, a voivode was a military governor. Among the Danube principalities, voivode was considered a princely title.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE_HELP">
-			<Text></Text>
+			<Text>Requires the [ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC}[ENDCOLOR] Cultural Group.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_VOIVODE_STRATEGY">
 			<Text>Voivode have additional defensive merit compared to the Great General it replaces, and they work best stationed in Cities where they boost unit production, as well as city defense. West Slavic Civilizations will do best fighting a defensive war that they then turn into an offensive or diplomatic win. Along these lines, you can get away with a less robust military and then quickly spin up a defensive force when the invited attack arrives.</Text>
@@ -434,6 +448,32 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CD_MOUKAHLA_STRATEGY">
 			<Text>The Moukahla differs in two key respects from the Rifleman it replaces. The first is its strength against Cities, which the Rifleman lacks without special Promotions. A set of Moukahla against a poorly defended City can be very profitable for you and irritating for you enemy. The second and more significant way is in Desert, where the Moukahla fights with ferocity. As this Unit unlocks, you should be poised to take control of the map's remaining Desert tiles.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE">
+			<Text>International Brigade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_TEXT">
+			<Text>The Brigadas Internacionales were volunteer soldiers organized by the Communist International to assist the Popular Front government of the Second Spanish Republic during the Spanish Civil War. The International Brigades existed for two years, from 1936 until 1938. It is estimated that during the entire war, there were some 32,000 Brigaders. The movement was strongly supported by the Comintern in the Soviet Union, which supplied arms, logistics, military advisers and the support of the NKVD. The largest number of volunteers came from France (where the French Communist Party had many members) and communist exiles from Italy and Germany. Many Jews were part of the brigades, being particularly numerous within the volunteers coming from the United States, Poland, Romania, France, Great Britain, and Argentina. They participated in the battles of Madrid, Jarama, Guadalajara, Brunete, Belchite, Teruel, Aragon, and the Ebro.[NEWLINE][NEWLINE]The Battle of Madrid was a major success for the Republic, and staved off the prospect of a rapid defeat at the hands of Francisco Franco's forces. The role of the International Brigades in this victory was generally recognized but was exaggerated by Comintern propaganda so that the outside world heard only of their victories and not those of Spanish units. So successful was such propaganda that the British Ambassador, Sir Henry Chilton, declared that there were no Spaniards in the army which had defended Madrid. However, most of the subsequent engagements ended in defeat. For the last year of its existence, the International Brigades were integrated into the Spanish Republican Army as part of the Spanish Foreign Legion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_HELP">
+			<Text>Can be upgraded from Foreign Legion.[NEWLINE]Receive 6 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Units the first time you enter a [ICON_WAR] War in the [COLOR_CYAN]Modern Era[ENDCOLOR].[NEWLINE]Requires the [ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] Sub-Cultural Group.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_STRATEGY">
+			<Text>The international Brigade is a Mercenary Unit that unlocks between the Foreign Legion and the Mercenary. In fact, if you are able to create Foreign Legion, they can upgrade directly into International Brigades. All Brigades created grant an instant boost of Tourism, but you can only have a maximum of 6 at once. Happily, you will receive 6 for Free when entering your first Modern war, giving you a big boost. Brigades upgrade to Infantry and stop generating extra Tourism, but they retain their powerful Promotions: both from the Foreign Legion it mimics, and the potent ¡No Pasarán!. Whatever your ideology, fight against those who would oppress you or, more pressingly, beat you to the victory screen!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION">
+			<Text>Condor Legion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_TEXT">
+			<Text>The Condor Legion was a unit composed of military personnel from the air force and army of Nazi Germany, which served with the Nationalists during the Spanish Civil War of July 1936 to March 1939. After the 17 July 1936 military coup in Spain began the Spanish Civil War, the Nationalists requested support from Germany and Italy. Wary of starting a larger war in Europe, German involvement was hidden from the foreign and the economic ministries, and was funded with three million Reichsmarks.[NEWLINE][NEWLINE]The Condor Legion fleet originally consisted of three squadrons of Ju 52 bombers and three squadrons of Heinkel He 51 fighters. Command was given to Hugo Sperrle, a military aviator in World War I. During the civil war, German general staff were particularly interested in developing methods of strategic bombing, which were used widely in the Second World War shortly afterwards. The Condor Legion were widely hated for perceived atrocities, with the bombing of Guernica drawing international outrage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_HELP">
+			<Text>Requires the [ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] Sub-Cultural Group.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_STRATEGY">
+			<Text>Condor legion drops bombs better.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI">

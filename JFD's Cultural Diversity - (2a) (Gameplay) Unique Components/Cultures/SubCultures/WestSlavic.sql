@@ -89,13 +89,13 @@ VALUES
 -- clear their main-culture assignment 
 ---------------------
 DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType IN (
-SELECT CivilizationType FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC')
+SELECT CivilizationType FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC')
 AND UnitType IN (
 SELECT Type FROM Units WHERE IconAtlas IN ('CD_ECONOMIC_ATLAS', 'CD_MILITARY_ATLAS')
 );
 
 DELETE FROM Civilization_BuildingClassOverrides WHERE CivilizationType IN (
-SELECT CivilizationType FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC')
+SELECT CivilizationType FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC')
 AND BuildingType IN (
 SELECT Type FROM Buildings WHERE IconAtlas IN ('CD_ECONOMIC_ATLAS', 'CD_MILITARY_ATLAS')
 );
@@ -107,14 +107,14 @@ INSERT INTO Civilization_UnitClassOverrides
 	(CivilizationType, UnitClassType, UnitType)
 SELECT
 	CivilizationType, 'UNITCLASS_GREAT_GENERAL', 'UNIT_CD_VOIVODE'
-FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC';
+FROM Civilization_JFD_CultureTypes WHERE SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC';
 
 INSERT INTO Civilization_BuildingClassOverrides
 	(CivilizationType, BuildingClassType, BuildingType)
 SELECT
 	c.CivilizationType, b.BuildingClass, 'BUILDING_CD_DWOR'
 FROM Civilization_JFD_CultureTypes c, Buildings b WHERE 
-c.SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC'
+c.SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC'
 AND
 b.Type = 'BUILDING_CD_DWOR';
 
@@ -122,7 +122,7 @@ b.Type = 'BUILDING_CD_DWOR';
 -- compatibility with future west slavic custom civs
 --------------------
 CREATE TRIGGER WestSlavicComponents
-AFTER INSERT ON Civilization_JFD_CultureTypes WHEN NEW.SubCultureType = 'SUBCULTURE_JFD_CENTRAL_SLAVIC'
+AFTER INSERT ON Civilization_JFD_CultureTypes WHEN NEW.SubCultureType = 'SUBCULTURE_CD_CENTRAL_SLAVIC'
 BEGIN
 	INSERT INTO Civilization_UnitClassOverrides
 		(CivilizationType, UnitClassType, UnitType)

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/25/2020 6:33:11 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN">
+			<Text>Magellan's Expedition</Text>
+		</Row><!--
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN_VISION">
+			<Text></Text>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN_HELP">
+			<Text>+1 [ICON_MOVES] Naval Movement if out-of-combat for at least a turn, and +1 Sight temporarily during combat turns.</Text>
+		</Row><!--
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN_VISION_HELP">
+			<Text>[COLOR_UNIT_TEXT]Magellan Vision[ENDCOLOR][NEWLINE][NEWLINE]+1 [COLOR_POSITIVE_TEXT]Visibility[ENDCOLOR] Range</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN_VISION_PEDIA">
+			<Text>Magellan's Expedition Vision</Text>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_MAGELLAN_PEDIA">
+			<Text>Magellan's Expedition</Text>
+		</Row>
+	</Language_en_US>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MAGELLAN</Type>
+			<Description>TXT_KEY_PROMOTION_MAGELLAN</Description>
+			<Help>TXT_KEY_PROMOTION_MAGELLAN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>28</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
+			<HasPostCombatPromotions>false</HasPostCombatPromotions>
+			<ExtraNavalMovement>1</ExtraNavalMovement>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MAGELLAN_PEDIA</PediaEntry>
+		</Row>
+		<!--
+		<Row>
+			<Type>PROMOTION_MAGELLAN_VISION</Type>
+			<Description>TXT_KEY_PROMOTION_MAGELLAN_VISION</Description>
+			<Help>TXT_KEY_PROMOTION_MAGELLAN_VISION_HELP</Help>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
+			<HasPostCombatPromotions>false</HasPostCombatPromotions>
+			<ExtraNavalMovement>-1</ExtraNavalMovement>
+			<VisibilityChange>1</VisibilityChange>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MAGELLAN_VISION_PEDIA</PediaEntry>
+			<PromotionDuration>0</PromotionDuration>
+		</Row>
+		-->
+	</UnitPromotions>
+	
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MAGELLAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MAGELLAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<!--
+		<Row>
+			<PromotionType>PROMOTION_MAGELLAN_VISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MAGELLAN_VISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		-->
+	</UnitPromotions_UnitCombats>
+</GameData>

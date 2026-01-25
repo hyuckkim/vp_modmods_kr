@@ -21,6 +21,30 @@ UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_UNIT_CREATED';
 -- (VP) ResourceType - allows for Building to be unlocked by a specific resource being owned (can be strategic or luxury)
 -- (VP) RequiresRail - rail connection
 --======================================================================================================================================--
+-- FreeBuildingThisCity
+--======================================================================================================================================--
+UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_MANDIR' 		WHERE Type = 'BUILDING_ANGKOR_WAT';
+UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_TEOCALLI' 	WHERE Type = 'BUILDING_CHICHEN_ITZA';
+UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_CATHEDRAL'	WHERE Type = 'BUILDING_NOTRE_DAME';
+
+CREATE TRIGGER IF NOT EXISTS JarFreeRelBuildings1 AFTER UPDATE ON Buildings WHEN NEW.FreeBuildingThisCity IS NULL
+AND NEW.Type = 'BUILDING_ANGKOR_WAT'
+BEGIN
+	UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_MANDIR' 		WHERE Type = NEW.Type;
+END;
+
+CREATE TRIGGER IF NOT EXISTS JarFreeRelBuildings2 AFTER UPDATE ON Buildings WHEN NEW.FreeBuildingThisCity IS NULL
+AND NEW.Type = 'BUILDING_CHICHEN_ITZA'
+BEGIN
+	UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_TEOCALLI' 	WHERE Type = NEW.Type;
+END;
+
+CREATE TRIGGER IF NOT EXISTS JarFreeRelBuildings3 AFTER UPDATE ON Buildings WHEN NEW.FreeBuildingThisCity IS NULL
+AND NEW.Type = 'BUILDING_NOTRE_DAME'
+BEGIN
+	UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_CATHEDRAL'	WHERE Type = NEW.Type;
+END;
+--======================================================================================================================================--
 -- ANCIENT ERA
 --======================================================================================================================================--
 -- NIPISAT
@@ -253,7 +277,7 @@ VALUES	('BUILDING_HORYUJI',	'SPECIALIST_WRITER',	'YIELD_FAITH',	2);
 UPDATE Buildings SET
 	Cost = (SELECT Cost FROM Buildings WHERE Type='BUILDING_ALHAMBRA'), NumPoliciesNeeded = 7,
 	PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
-	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_ALHAMBRA'),
+	MaxStartEra = (SELECT MaxStartEra FROM Buildings WHERE Type='BUILDING_ALHAMBRA'), IsNoCoast= 1,
 	SpecialistType = 'SPECIALIST_CIVIL_SERVANT', SpecialistCount=1, FreeBuildingThisCity = 'BUILDINGCLASS_CASTLE', Defense = 500
 WHERE Type = 'BUILDING_KYZ_KALA';
 
@@ -331,7 +355,7 @@ INSERT INTO Building_BuildingClassYieldChanges
 SELECT DISTINCT	'BUILDING_ASSISI', a.Type, 				'YIELD_GOLD', 1
 FROM BuildingClasses a, Buildings b, Building_YieldChanges c
 WHERE a.Type = b.BuildingClass AND b.Type = c.BuildingType AND a.DefaultBuilding = b.Type
-AND a.MaxGlobalInstances = -1 AND a.MaxPlayerInstances = -1 AND b.IsDummy = 0 AND c.YieldType = 'YIELD_FAITH';
+AND a.MaxGlobalInstances = -1 AND a.MaxPlayerInstances = -1 AND b.IsDummy = 0 AND b.Cost > 0 AND c.YieldType = 'YIELD_FAITH';
 
 INSERT INTO Building_Flavors 	
 		(BuildingType, 		FlavorType,			Flavor)
@@ -470,7 +494,7 @@ SELECT 	'BUILDING_PADUA_GARDEN', 'BUILDINGCLASS_GARDEN', 'YIELD_SCIENCE', 2;
 
 INSERT INTO Building_ImprovementYieldChangesGlobal 
 (BuildingType,				ImprovementType,		YieldType,		Yield) VALUES
-('BUILDING_PADUA_GARDEN',	'IMPROVEMENT_ACADEMY',	'YIELD_FOOD',	3);
+('BUILDING_PADUA_GARDEN',	'IMPROVEMENT_ACADEMY',	'YIELD_PRODUCTION',	2);
 
 INSERT INTO Building_ResourceYieldChangesGlobal 
 		(BuildingType,			ResourceType,	YieldType,			Yield) 
@@ -530,8 +554,8 @@ CREATE TRIGGER IF NOT EXISTS JarHarmandirSahib AFTER INSERT ON Belief_BuildingCl
 AND NEW.BeliefType IN (SELECT Type FROM Beliefs WHERE Follower= 1)
 BEGIN
 	INSERT INTO Building_BuildingClassYieldChanges
-			(BuildingType, 				BuildingClassType,		YieldType, YieldChange)
-	SELECT 	'BUILDING_HARMANDIR_SAHIB', NEW.BuildingClassType, 	'YIELD_FOOD', 2;
+			(BuildingType, 			BuildingClassType,	YieldType, YieldChange)
+	SELECT 	'BUILDING_HARMANDIR',	NEW.BuildingClassType, 	'YIELD_FOOD', 3;
 END;
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- LARABANGA MOSQUE
@@ -681,27 +705,18 @@ INSERT INTO Building_ImprovementYieldChangesGlobal
 VALUES	('BUILDING_LAFERRIERE',	'IMPROVEMENT_FORT',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_FORT',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_FORT',	'YIELD_CULTURE',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_APLEKTON',	'YIELD_PRODUCTION',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_APLEKTON',	'YIELD_FOOD',		2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_APLEKTON',	'YIELD_CULTURE',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_PRODUCTION',	2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_FOOD',		2),
 		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_CITADEL_JAR_ATOLL',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_MONGOLIA_ORDO',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ZULU_KRAAL',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ZULU_KRAAL',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ZULU_KRAAL',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_TOMATEKH_BENIN_IYA',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_HININ_IMAZIGHEN_IMAJAL',	'YIELD_CULTURE',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_PRODUCTION',	2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_FOOD',		2),
-		('BUILDING_LAFERRIERE',	'IMPROVEMENT_AINU_CASI',	'YIELD_CULTURE',	2);
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ORDO',	'YIELD_PRODUCTION',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ORDO',	'YIELD_FOOD',		2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ORDO',	'YIELD_CULTURE',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ISIBAYA',	'YIELD_PRODUCTION',	2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ISIBAYA',	'YIELD_FOOD',		2),
+		('BUILDING_LAFERRIERE',	'IMPROVEMENT_ISIBAYA',	'YIELD_CULTURE',	2);
 
 INSERT INTO Building_Flavors 	
 		(BuildingType, 			FlavorType,				Flavor)
@@ -883,7 +898,7 @@ VALUES	('BUILDING_TE_TII_MARAE', 'BUILDINGCLASS_COURTHOUSE', 1);
 
 INSERT INTO Building_BuildingClassYieldChanges
 		(BuildingType, 			BuildingClassType,			YieldType, YieldChange)
-SELECT 	'BUILDING_TE_TII_MARAE', 'BUILDINGCLASS_COURTHOUSE', 'YIELD_PRODUCTION', 3;
+SELECT 	'BUILDING_TE_TII_MARAE', 'BUILDINGCLASS_COURTHOUSE', 'YIELD_PRODUCTION', 5;
 
 INSERT INTO GreatWorks
 		(Type,						Description,						GreatWorkClassType,			Image,							Quote) 
@@ -891,9 +906,9 @@ VALUES	('GREAT_WORK_TREATY_WATANGI','TXT_KEY_GREAT_WORK_TREATY_WATANGI','GREAT_W
 
 INSERT INTO Building_DomainFreeExperiencePerGreatWorkGlobal
 		(BuildingType, 				DomainType, Experience)
-VALUES	('BUILDING_TE_TII_MARAE', 	'DOMAIN_LAND', 5),
-		('BUILDING_TE_TII_MARAE', 	'DOMAIN_SEA', 5),
-		('BUILDING_TE_TII_MARAE', 	'DOMAIN_AIR', 5);
+VALUES	('BUILDING_TE_TII_MARAE', 	'DOMAIN_LAND', 3),
+		('BUILDING_TE_TII_MARAE', 	'DOMAIN_SEA', 3),
+		('BUILDING_TE_TII_MARAE', 	'DOMAIN_AIR', 3);
 		
 INSERT INTO Building_Flavors 	
 		(BuildingType, 				FlavorType,				Flavor)
@@ -987,8 +1002,8 @@ WHERE Type = 'BUILDING_CHANGI_AIRPORT';
 
 INSERT INTO Building_YieldChanges
 (BuildingType, YieldType, Yield) VALUES
-('BUILDING_CHANGI_AIRPORT','YIELD_CULTURE',2),
-('BUILDING_CHANGI_AIRPORT','YIELD_GOLD',2);
+('BUILDING_CHANGI_AIRPORT','YIELD_CULTURE',4),
+('BUILDING_CHANGI_AIRPORT','YIELD_GOLD',4);
 
 INSERT INTO Building_BuildingClassYieldChanges
 		(BuildingType, 				BuildingClassType,		YieldType, YieldChange)

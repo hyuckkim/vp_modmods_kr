@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="99c7f9e2-1ff4-9941-8gc7-41bde72g3g99" version="2">
+<Mod id="99c7f9e2-1ff4-9941-8gc7-41bde72g3g99" version="4">
 	<Properties>
 		<Name>JFD's Cultural Diversity - (2a) (Gameplay) Unique Components</Name>
 		<Teaser>VP compatible to be used alongside Cultural Diversity</Teaser>
@@ -274,6 +274,12 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/voi_slavs.gr2</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/sv_Voi.dds</File>
 
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/sv_MercVarangian.dds</File>
+
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.fxsxml</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.gr2</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.dds</File>
@@ -412,6 +418,22 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/Crossbowman_Rome.gr2</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/sv_gastraphetes.dds</File>
 
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/sv_Brigade.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_2.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_3.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_4.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_5.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_6.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/sv_Condor.dds</File>
+
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/sv_coca.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/Coca_fonticon.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/Coca_fonticon.ggxml</File>
@@ -486,7 +508,6 @@
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/NewResources.xml</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/Reindeer.sql</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Map/ResourceSpawner.lua</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/MapText.xml</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/dzong.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/distillery.xml</File>
@@ -502,6 +523,7 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/UnitSweeps.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/NewPromotions.xml</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/DjeliText.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/Voi.sql</File>
 		
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Pacific.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Scandinavian.sql</File>
@@ -534,6 +556,7 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/WestAfrican.sql</File>
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/SubCultures/WestSlavic.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/SubCultures/Iberian.sql</File>
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/India.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/Songhai.sql</File>
@@ -578,6 +601,7 @@
 		<UpdateDatabase>Units/UnitSweeps.sql</UpdateDatabase>
 		<UpdateDatabase>Units/NewPromotions.xml</UpdateDatabase>
 		<UpdateDatabase>Units/DjeliText.xml</UpdateDatabase>
+		<UpdateDatabase>Units/Voi.sql</UpdateDatabase>
 
 		<!-- this updates icons on already added units and buildings -->
 		<!-- it also sets the overrides -->
@@ -615,6 +639,7 @@
 		<UpdateDatabase>Cultures/WestAfrican.sql</UpdateDatabase>
 
 		<UpdateDatabase>Cultures/SubCultures/WestSlavic.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/SubCultures/Iberian.sql</UpdateDatabase>
 
 		<UpdateDatabase>Civilizations/India.sql</UpdateDatabase>
 		<UpdateDatabase>Civilizations/Songhai.sql</UpdateDatabase>
@@ -626,10 +651,6 @@
 	    <EntryPoint type="InGameUIAddin" file="DummyPolicies.lua">
 	      <Name>CDDummies</Name>
 	      <Description>Allocate each civ a dummy to mark their culture</Description>
-	    </EntryPoint>
-	    <EntryPoint type="InGameUIAddin" file="Map/ResourceSpawner.lua">
-	      <Name>ResourceSpawner</Name>
-	      <Description>Do the job the ResourcePlotsToPlace is meant to do</Description>
 	    </EntryPoint>
 	    <EntryPoint type="InGameUIAddin" file="Units/EventTrigger.lua">
 	      <Name>UnitEvents</Name>

@@ -75,7 +75,7 @@
 			<Text>Dwór are mansions that were historically owned by the szlachta of the Polish–Lithuanian Commonwealth. More modest homes of provincial nobility were called dwórek, or "little manors". The countryside was the preferred location for one's residence, as the nobility, following the sarmatism ideology, felt contempt for the cities. Early renaissance mansions were based on a rectangular design, with corner chambers (alkierze) and a porch. The style evolved over time, and larger palaces boasted many guest rooms, a chapel, and even their own opera house. In the 17th and 18th centuries, a view emerged that identified particular manor architecture with 'Polishness', treating it as native and unique. It gained particular traction in the 19th century during the period of Romanticism.[NEWLINE][NEWLINE]Lithuania was occupied by Soviets in 1944, the manor houses themselves and their remaining land were nationalized and repurposed, mostly as schools, living quarters or administrative centers of collective farms. In Poland, the ideologically-driven nationalization policies and architectural preservation guidelines enacted during the early years of the communist Polish People's Republic contributed to the destruction of many manor houses. Before World War II, there were tens of thousands of manors. Today, only over 2,000 remain, often in very poor condition.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_DWOR_HELP">
-			<Text></Text>
+			<Text>Requires the [ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC}[ENDCOLOR] Cultural Group.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_DWOR_STRATEGY">
 			<Text>The Dwor continues the Polish niche of constructing two buildings at once, giving a Free Opera House in the City. If you had already constructed an Opera House, you will instead be refunded the Production as an instant boost. However the major effect is its yields from unlocking Policies, which grant a large local boost to the key yields of Food, Production, and Border Growth Points. When the Polish Unique Ability grants you two additional tenets, this will cause an explosion in growth, so be ready! Whenever your borders expand, you will receive increased yields compared to the standard buildings, a small bonus that over time pays for the maintenance and opportunity cost of building the Dwor.</Text>
@@ -262,7 +262,8 @@
 			<Text>Reindeer Herding District</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT_HELP">
-			<Text>Requires the [ICON_CULTURE_JFD_POLAR] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_POLAR_SHORT_DESC}[ENDCOLOR] Cultural Group.[NEWLINE]Place up to 2 copies of [ICON_RES_REINDEER] Reindeer near the City.</Text>
+			<Text>Requires the [ICON_CULTURE_JFD_POLAR] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_POLAR_SHORT_DESC}[ENDCOLOR] Cultural Group.</Text>
+		<!-- [NEWLINE]Place up to 2 copies of [ICON_RES_REINDEER] Reindeer near the City. -->
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT_STRATEGY">
 			<Text>The Agribusiness is a powerful building in Food rich Cities working many Farms and Pastures, but as a Polar Civilization you are unlike to count many such location within your core Empire. Not to worry, the Reindeer Herding District brings additional Resources and Terrains into the list of benefits, actually becoming more powerful the more arctic terrain you have acquired! What is more, they spawn additional bonus Reindeer nearby to improve otherwise barren tiles further. Since the Reindeer Herding District does not require Horses, you should build it everywhere, even though its unique bonuses are restricted to certain biomes.</Text>
@@ -281,7 +282,7 @@
 			<Text>*this is updated in another file*</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI_STRATEGY">
-			<Text>Campsores add Naval synergies to the Bank, benefitting your Coastal Cities both with yields on infrastructure as well as Production towards ships of all kinds. As such, you will want to value the Coast a lot more. On top of this, Merchants generate some Culture, making them preferred over other Specialists. All these things will get you more Gold but if you need to perform some serious maneuvers your Wealth process will be even more effective.</Text>
+			<Text>The Campsore adds naval synergies to the Bank, benefitting your Coastal Cities both with yields on infrastructure as well as Production towards ships of all kinds. As such, you will want to value the Coast a lot more. On top of this, Merchants generate some Culture, making them preferred over other Specialists. All these things will get you more Gold but if you need to perform some serious maneuvers your Wealth process will be even more effective.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_CD_BOKH_PLAZA">
@@ -308,6 +309,19 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CD_EAST_INDIA_STRATEGY">
 			<Text>The first thing to note is that this Unique National Wonder grants yields to Harbors, so think carefully about how to settle as many Coastal Cities as you can get away with. Although the East India Company does not have to be built on Water, and you still receive its global XP bonus wherever you construct it, you can only take advantage of its Sea Route bonuses with a Coastal City. Although the Chartered Company can be placed tactically to obtain a particular Monopoly bonus, the East India Company is provides several important yield bonuses to the City it is in, making it more desirable to have in a City that can work many Merchants. If you picked Tradition, this will almost certainly be the Capital, but if you aren't then pay attention to your distribution of Specialists so as to extract the most value from your Great Person Points.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_CD_COMMANDERY">
+			<Text>Commenda</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_COMMANDERY_TEXT">
+			<Text>A commandery (latin: commenda) was the smallest administrative division of the European landed properties of a military religious order. During the Reconquista of the Iberian peninsula, commanderies formed a dense network of frontier fortresses, anchoring Christian expansion southward. Kings of León, Castile, Aragón, and Portugal granted vast tracts of land to the orders in exchange for military service, trusting them to defend exposed borders and repopulate contested regions.[NEWLINE][NEWLINE]Beyond their military role, commanderies became engines of colonization and economic development. They oversaw the construction of roads, irrigation works, and villages, encouraged Christian settlement, and collected rents and tithes from dependent communities. Over time, they grew wealthy and politically influential, their commanders rivaling secular nobles and even monarchs in power.[NEWLINE][NEWLINE]By the late Middle Ages, the era that had given rise to the great military orders was fading. The fall of the last Muslim stronghold in Granada in 1492 deprived the orders of their original purpose, while their independence made them targets of reform and royal centralization. Some were absorbed into the crowns of Spain and Portugal, their Commanderies secularized and redistributed. Others, most famously the Templars, were forcibly dissolved by papal decree, their fortresses confiscated and their order extinguished.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_COMMANDERY_HELP">
+			<Text>Requires the [ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] Sub-Cultural Group.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_COMMANDERY_STRATEGY">
+			<Text>Retaining all the defensive benefits of the Castle it replaces, the Commandery also has a number of effects usually only found on Buildings unlocked by religious Beliefs. They generate Faith, Pressure, and resist foreign conversion. Indeed they can even be purchased directly using Faith! Lastly, all the Cities with Commanderies constructed will have Melee and Mounted Units that belong to the General Chapter, allowing them to drive forward your Faith engine and man your defensive Fortifications for extra yields. The units are built faster the more Beliefs have been added to your Religion. Make good use of them before the advent of Gunpowder and Armor render the landed elite obsolete!</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_CD_BAGGATAWAY">

@@ -1,11 +1,11 @@
-﻿<?xml version="2.1" encoding="utf-8"?>
-<Mod id="523b9731-6348-15a3-77fd-26303c13dc91" version="2.1">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="523b9731-6348-15a3-77fd-26303c13dc91" version="3">
   <Properties>
     <Name>UI - Horizontal Leaders' Portraits for VP</Name>
     <Stability>Alpha</Stability>
     <Teaser></Teaser>
-    <Description>The diplomacy list with all the leaders portrait that is displayed on the right side of the screen on a vertical orientation is now displayed on a horizontal line, similar to newer civilization games. This comes with a drawback, I removed the extra floating text like score, gold and trade items that were displayed right before the portraits (still present in tooltip) and also the list with city-states (Trade Opportunities for VP as a solution for city-states).</Description>
-    <Authors>Aqinu</Authors>
+    <Description>The diplomacy list with all the leaders portrait that is displayed on the right side of the screen on a vertical orientation is now displayed on a horizontal line, similar to newer civilization games. This comes with a drawback, I removed the extra floating text like score, gold and trade items that were displayed right before the portraits (still present in tooltip).</Description>
+    <Authors>Aqinu, Jarcast</Authors>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>0</AffectsSavedGames>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -18,7 +18,7 @@
     <ReloadUnitSystem>0</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="Based" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
   </Dependencies>
   <References />
   <Blocks />

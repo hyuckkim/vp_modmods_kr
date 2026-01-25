@@ -1,0 +1,15 @@
+<Asset>
+  <Mesh file="MBIndLighthouse.gr2" source="Max" />
+  <Texture file="MBIndLighthouse_DIFF.dds" source="Max" />
+  <Texture file="MBIndLighthouse_SREF.dds" source="Max" />
+  <Texture file="Dirt_Rubble_SREF.dds" source="Max" />
+  <Texture file="Marble_ore_DIFF.dds" source="Max" />
+  <Texture file="Unit_Environment_Dull.dds" source="Max" />
+  <Texture file="Unit_Environment_Sharp.dds" source="Max" />
+  <Texture file="Unit_Irradiance.dds" source="Max" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <TimedTrigger file="fx_triggers_indlighthouse.ftsxml" source="Tool" model="IndLighthouse" state="0,1,2,3" />
+  <BoneUsage>
+    <Bone name="FX_LighthouseLight" />
+  </BoneUsage>
+</Asset>

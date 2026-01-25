@@ -5,7 +5,7 @@ v 1
 -- fixed some Row tags to Replace for Reindeer compatibility
 -- fixed trigger that made custom civs that loaded after CD not work
 -- changed Vietnam to Mandala (from Far Eastern) while we wait for compatibility
--- gave Poland the West Slavic (SUBCULTURE_JFD_CENTRAL_SLAVIC) subculture
+-- gave Poland the West Slavic (SUBCULTURE_CD_CENTRAL_SLAVIC) subculture
 -- added first SubCulture compatibility in Cultures/SubCultures
  - Voivode : Great General with defensive and economic bonuses
  - Dwor : Gallery/Manor replacement with free Opera House and yields, especially from policy unlock
@@ -42,3 +42,24 @@ v 2
 -- Removed old Food/BGP on kill from Slaganz
 -- Fixed Ghat tooltip looking like it only had 1 culture
 -- Increased GAP to 100 (was 50) percent of XP on Mead Hall based on feedback
+-------------------------------
+v 3 
+-------------------------------
+-- Voi retired to city-state gift
+-- New Varangian UU for Eastern culture
+-- Fixed Xon not being able to Found Religion, and listed the unique bonuses in its Strategy text entry
+-- Fixed Sun Dance Raven promo not healing
+-- Refactored some compatibility code, will need redownload of Benin, Nigeria, and Garamantes
+-------------------------------
+v 4
+-------------------------------
+-- Reindeer and Coca now spawn correctly from Building_ResourcePlotsToPlace (instead of using lua)
+-- Spain and Portugal now part of the Iberian (SUBCULTURE_CD_WESTERN_IBERIAN) subculture
+ - International Brigade : Unique Class Merc Unit at Flight that generates Tourism and has unusual mechanics
+ - Commanderia : Castle replacement that has aspects of Belief buildings and the General Chapter promo locally
+-- General Chapter now correctly obsoletes with Gun/Armor upgrade
+-- Commanderia now also grants up to 20% Prod to Melee and Mounted based on the number of unlocked Beliefs
+-- Added Condor Legion CS Gift (will eventually be able to choose between this and the International Brigade)
+-- Maharolukti now correctly gain double movement in Forest/Jungle
+
+

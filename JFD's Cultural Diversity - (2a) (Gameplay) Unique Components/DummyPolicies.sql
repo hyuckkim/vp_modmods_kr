@@ -79,6 +79,12 @@ SET PolicyType = (
 )
 WHERE IconAtlas = 'CD_MILITARY_ATLAS';
 
+-- and for sub cultures
+INSERT INTO Policies
+	(Type, Description, IsDummy)
+VALUES
+	('POLICY_CD_WESTERN_IBERIAN', 'TXT_KEY_PLACEHOLDER', 1);
+
 -- =================
 -- set civ overrides
 -- =================
@@ -100,21 +106,11 @@ BEGIN
 	FROM Units b, CDDummies d
 	WHERE 
 	  (CASE
-		WHEN NEW.CivilizationType = 'CIVILIZATION_CL_NIGERIA' THEN 'CULTURE_JFD_CENTRAL_AFRICAN'
-		WHEN NEW.CivilizationType = 'CIVILIZATION_ANCIENT_LIBYA_MOD' THEN 'CULTURE_JFD_WEST_AFRICAN'
 		WHEN NEW.CultureType = 'CULTURE_JFD_LEVANTINE' THEN 'CULTURE_JFD_MESOPOTAMIC'
 		ELSE NEW.CultureType 
  	  END) = d.CultureType 
 	AND d.PolicyType = b.PolicyType AND 
 	b.IconAtlas IN ('CD_ECONOMIC_ATLAS', 'CD_MILITARY_ATLAS');
-
-	UPDATE Civilization_JFD_CultureTypes 
-	SET CultureType = 'CULTURE_JFD_CENTRAL_AFRICAN'
-	WHERE CivilizationType IN ('CIVILIZATION_CL_NIGERIA');
-
-	UPDATE Civilization_JFD_CultureTypes 
-	SET CultureType = 'CULTURE_JFD_WEST_AFRICAN'
-	WHERE CivilizationType IN ('CIVILIZATION_ANCIENT_LIBYA_MOD');
 
 	-- need some hardcoding for warriors due to the starting units issue
 	INSERT INTO Civilization_UnitClassOverrides

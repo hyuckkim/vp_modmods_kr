@@ -1445,7 +1445,7 @@ OuterStack
 ================================-->
 	<Container ID="Scrap" Hidden="1"/>
 
-	<Stack ID="OuterStack" Anchor="R,B" StackGrowth="Top" Padding="0" Offset="0,240" >
+	<Stack ID="OuterStack" Anchor="R,B" StackGrowth="Top" Padding="0" Offset="0,530" >
 
 		<Stack ID="BigStack" Anchor="R,B" StackGrowth="Left" Padding="0" >
 
@@ -1621,11 +1621,9 @@ CivPanel
 		<ScrollPanel ID="CivScrollPanel" Anchor="R,T" Offset="18,0" Vertical="0" AutoScrollBar="1" Size="600,60" ConsumeMouseOver="1" ConsumeMouseButton="1">
 			<Stack ID="CivStack" Anchor="R,T" StackGrowth="Right">
 				<Stack ID="MajorStack" Anchor="R,T" Padding="0" StackGrowth="Left" />
-				<Stack ID="MinorStack" Anchor="R,T" Padding="0" StackGrowth="Left" />
 			</Stack>
 		</ScrollPanel>
 	</Container>
-	
 
 
 	<!-- LeaderButtonInstance -->
@@ -1658,7 +1656,7 @@ CivPanel
 			<Stack Anchor="C,T" Offset="0,115" Padding="4" StackGrowth="Right">
 				<Label ID="TheirTradeItems" Font="TwCenMT16" FontStyle="Stroke" Color0="Beige,255" Color1="Black,155" /> 
 			</Stack>
-			<Stack Anchor="C,T" Offset="0,140" Padding="4" StackGrowth="Right">
+			<Stack Anchor="C,T" Offset="0,145" Padding="4" StackGrowth="Right">
 				<Label ID="OurTradeItems" Font="TwCenMT16" FontStyle="Stroke" Color0="Beige,255" Color1="Black,155" /> 
 			</Stack>
 			<!-- Icon Flags -->
@@ -1687,6 +1685,20 @@ CivPanel
 		</Button>
 	</Instance>
 
+	<Container ID="CtSPanel" Anchor="R,T" Offset="0,80" >
+		<ScrollPanel ID="CtSScrollPanel" Anchor="R,T" Offset="18,0" Vertical="1" AutoScrollBar="1" Size="120,60" ConsumeMouseOver="1" ConsumeMouseButton="1" >
+
+			<!-- Scroll Controls -->
+			<ScrollBar Style="VertSlider" Anchor="R,C" Length="18" AnchorSide="o,i" />
+			<UpButton Style="ScrollBarUp" Anchor="R,T" AnchorSide="o,i" />
+			<DownButton Style="ScrollBarDown" Anchor="R,B" AnchorSide="o,i" />
+
+			<Stack ID="CtSStack" Anchor="R,T" StackGrowth="Bottom" >
+				<Stack ID="MinorStack" Anchor="R,T" Padding="0" StackGrowth="Bottom" />
+			</Stack>
+		</ScrollPanel>
+	</Container>
+	
 	<Instance Name="CityStateInstance" >
 		<Button ID="Button" Anchor="R,T" Size="32,32" Texture="32x32CityWorker.dds">
 			<!-- Minor Icon -->

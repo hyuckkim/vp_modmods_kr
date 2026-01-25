@@ -76,14 +76,15 @@ VALUES
 	('BUILDING_CD_YATIRI', 'TERRAIN_MOUNTAIN', 'YIELD_FAITH', 50);
 
 -- i hate this table.
---INSERT INTO Building_ResourcePlotsToPlace
---	(BuildingType, ResourceType, NumPlots, ResourceQuantityToPlace)
---VALUES
---	('BUILDING_CD_YATIRI', 'RESOURCE_COCA', 1, 1);
+INSERT INTO Building_ResourcePlotsToPlace
+	(BuildingType, ResourceType, NumPlots, ResourceQuantityToPlace)
+VALUES
+	('BUILDING_CD_YATIRI', 'RESOURCE_COCA', 1, 1);
 
 UPDATE Language_en_US SET
-Text = Replace(Text, 'Cultural Group. ', 'Cultural Group.[NEWLINE]Place up to 1 copy of [ICON_RES_COCA] Coca near the City.')
+Text = Replace(Text, 'Cultural Group. ', 'Cultural Group.')
 WHERE Tag = 'TXT_KEY_BUILDING_CD_YATIRI_HELP';
+-- [NEWLINE]Place up to 1 copy of [ICON_RES_COCA] Coca near the City.
 --  Land Units in this City heal [COLOR_POSITIVE_TEXT]10[ENDCOLOR] HP per turn, whether or not they take an action. City gains +1 [ICON_PEACE] Faith for every 2 Mountains within 3 tiles.
 
 INSERT INTO Building_YieldChanges

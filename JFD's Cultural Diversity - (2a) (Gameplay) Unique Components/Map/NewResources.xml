@@ -152,10 +152,12 @@
 			<PlantResource>true</PlantResource>
 			<IsMonopoly>1</IsMonopoly>
 			<Hills>1</Hills>
-			<Flatlands>1</Flatlands>
+			<Flatlands>0</Flatlands>
 			<TechImproveable>TECH_CHEMISTRY</TechImproveable>
 			<ResourceUsage>2</ResourceUsage>
 			<Happiness>2</Happiness>
+			<MaxLatitude>90</MaxLatitude>
+			<MinAreaSize>3</MinAreaSize>
 		</Row>
 		<Row>
 			<Type>RESOURCE_MC_RUM</Type>

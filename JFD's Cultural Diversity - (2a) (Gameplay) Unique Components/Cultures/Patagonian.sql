@@ -118,13 +118,9 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREAT_PROPHET';
 -- =======================
 -- Xon (Great Prophet)
 -- =======================
-UPDATE UNITS SET
-ReligionSpreads = 4,
-ReligiousStrength = 1000
-WHERE Type = 'UNIT_CD_XON';
 
 UPDATE Language_en_US SET
-Text = 'Replaces the [ICON_PROPHET] Great Prophet for the [ICON_CULTURE_CD_PATAGONIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_PATAGONIAN_SHORT_DESC}[ENDCOLOR] Cultural Group.[NEWLINE]In addition to the usual abilities of the Great Prophet, expending a Xon triggers the next in a series of 7 unique Empire-wide bonuses.'
+Text = 'Replaces the [ICON_PROPHET] Great Prophet for the [ICON_CULTURE_CD_PATAGONIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_PATAGONIAN_SHORT_DESC}[ENDCOLOR] Cultural Group.[NEWLINE]In addition to the usual abilities of the Great Prophet, expending a Xon triggers the next in a series of 7 permanent Empire-wide bonuses.'
 WHERE Tag = 'TXT_KEY_UNIT_CD_XON_HELP';
 
 -- -----------------------
@@ -211,7 +207,7 @@ INSERT INTO Language_en_US
 	(Tag, Text)
 VALUES
 	('TXT_KEY_XON_EVENT', 'The Next World'),
-	('TXT_KEY_XON_EVENT_HELP', 'The body of our xon lies undistrubed as their spirit travels to achieve wonderful deeds. Before they passed, they spoke to our people of a dream. A dream in which our people live on in a new world. This vision has much to teach us, let us act.'),
+	('TXT_KEY_XON_EVENT_HELP', 'The body of our Xon lies undisturbed as their spirit travels to achieve wonderful deeds. Before they passed, they spoke to our people of a dream. A dream in which, together, we live on in a new world. This vision has much to teach us, let us act.'),
 
 	('TXT_KEY_EVENT_XON_CHOICE_1', 'Follow the [ICON_CULTURE_LOCAL] Dream of a New Land'),
 	('TXT_KEY_EVENT_XON_CHOICE_1_HELP', 'All Features in the Empire yield +1 [ICON_CULTURE_LOCAL] Border Growth Points, increased to +5 [ICON_CULTURE_LOCAL] Border Growth Points for Natural Wonders.[NEWLINE]Holy Sites in the Empire yield +2 [ICON_CULTURE] Culture.'),
@@ -233,5 +229,11 @@ VALUES
 
 	('TXT_KEY_EVENT_XON_CHOICE_7', 'Find the [ICON_GOLDEN_AGE] Path to the Next World'),
 	('TXT_KEY_EVENT_XON_CHOICE_7_HELP', 'A [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE]Holy Sites in the Empire yield +5 [ICON_GOLDEN_AGE] Golden Age Points.');
+
+
+UPDATE Language_en_US SET
+Text = Text || '[NEWLINE][NEWLINE]Bonuses are unlocked as follows:[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_1_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_2_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_3_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_4_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_5_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_6_HELP}[NEWLINE][ICON_BULLET]{TXT_KEY_EVENT_XON_CHOICE_7_HELP}'
+WHERE Tag = 'TXT_KEY_UNIT_CD_XON_STRATEGY';
+
 
 

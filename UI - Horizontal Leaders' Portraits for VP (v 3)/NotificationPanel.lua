@@ -6,6 +6,7 @@
 -- code is common using gk_mode and bnw_mode switches
 -------------------------------------------------
 include( "EUI_tooltips" )
+include( "InfoTooltipInclude" )
 
 Events.SequenceGameInitComplete.Add(function()
 print("Loading EUI notification panel",ContextPtr,os.clock(),[[ 
@@ -33,6 +34,7 @@ local unpack = unpack
 --EUI_utilities
 local IconLookup = EUI.IconLookup
 local IconHookup = EUI.IconHookup
+local GetMoodInfo = EUI.GetMoodInfo
 local CivIconHookup = EUI.CivIconHookup
 local PushScratchDeal = EUI.PushScratchDeal
 local PopScratchDeal = EUI.PopScratchDeal
@@ -47,9 +49,6 @@ local GetCityStateStatusToolTip = GetCityStateStatusToolTip
 local GetAllyToolTip = GetAllyToolTip
 local GetActiveQuestText = GetActiveQuestText
 local GetActiveQuestToolTip = GetActiveQuestToolTip
-
---EUI_tooltips
-local GetMoodInfo = EUI.GetMoodInfo
 
 local ButtonPopupTypes = ButtonPopupTypes
 local ContextPtr = ContextPtr
@@ -360,8 +359,10 @@ local function ProcessStackSizes( resetCivPanelElevator )
 		Controls.MinorStack:CalculateSize()
 		Controls.MajorStack:CalculateSize()
 		Controls.CivStack:CalculateSize()
+		Controls.CtSStack:CalculateSize()
 		local halfTotalStackHeight = math_floor(maxTotalStackHeight / 2)
-		local civStackHeight = Controls.CivStack:GetSizeY()
+		--local civStackHeight = Controls.CivStack:GetSizeY()
+		local civStackHeight = Controls.CtSStack:GetSizeY()
 
 		if smallStackHeight + civStackHeight <= maxTotalStackHeight then
 			halfTotalStackHeight = false
@@ -376,18 +377,27 @@ local function ProcessStackSizes( resetCivPanelElevator )
 		end
 
 		Controls.CivScrollPanel:SetHide( not halfTotalStackHeight )
+		Controls.CtSScrollPanel:SetHide( not halfTotalStackHeight )
 		if halfTotalStackHeight then
 			Controls.CivStack:ChangeParent( Controls.CivScrollPanel )
 			Controls.CivScrollPanel:SetSizeY( civStackHeight )
 			Controls.CivScrollPanel:CalculateInternalSize()
+			
+			Controls.CtSStack:ChangeParent( Controls.CtSScrollPanel )
+			Controls.CtSScrollPanel:SetSizeY( civStackHeight )
+			Controls.CtSScrollPanel:CalculateInternalSize()
 			if resetCivPanelElevator then
 				Controls.CivScrollPanel:SetScrollValue( 0 )
+				Controls.CtSScrollPanel:SetScrollValue( 0 )
 			end
 		else
 			Controls.CivStack:ChangeParent( Controls.CivPanel )
+			Controls.CtSStack:ChangeParent( Controls.CtSPanel )
 		end
 		Controls.CivPanel:ReprocessAnchoring()
 --		Controls.CivPanel:SetSizeY( civStackHeight )
+		Controls.CtSPanel:ReprocessAnchoring()
+--		Controls.CtSPanel:SetSizeY( civStackHeight )
 	else
 		smallStackHeight = math_min( smallStackHeight, maxTotalStackHeight )
 	end
@@ -753,7 +763,7 @@ function( playerID, cityID, x, y, isWithGold, isWithFaithOrCulture )
 		local city = g_activePlayer:GetCityByID( cityID )
 		--print( "CityTileNotification:", city and city:GetName(), x, y, plot, city and city:GetCityPlotIndex(plot) )
 
-		if plot and city and ( ( plot:GetWorkingCity() and not city:IsPuppet() ) or Game.GetResourceUsageType( plot:GetResourceType( g_activeTeamID ) ) > 0 )
+		if plot and city and ( ( plot:GetWorkingCity() and not city:IsPuppet() ) or (plot:GetResourceType( g_activeTeamID ) ~= -1 and Game.GetResourceUsageType( plot:GetResourceType( g_activeTeamID ) ) > 0 ))
 		-- valid plot, either worked by city which is not a puppet, or has some kind of resource we can use
 		then
 			g_activePlayer:AddNotification( NotificationTypes.NOTIFICATION_CITY_TILE,
@@ -1580,18 +1590,12 @@ local function UpdateCivListNow()
 					end
 				end
 			end
-
-			if #ourTradeItems < 2 then
+			instance.TheirTradeItems:SetText( table_concat( theirTradeItems ) )
+			if #ourTradeItems < 4 then
 				instance.OurTradeItems:SetText( table_concat( ourTradeItems ) )
 			else
-				ourTradeItems[2] = "..." --"[ICON_PLUS]"
-				instance.OurTradeItems:SetText( table_concat( ourTradeItems, nil, 1, 2 ) )
-			end
-			if #theirTradeItems < 2 then
-				instance.TheirTradeItems:SetText( table_concat( theirTradeItems ) )
-			else
-				theirTradeItems[2] = "..." --"[ICON_PLUS]"
-				instance.TheirTradeItems:SetText( table_concat( theirTradeItems, nil, 1, 2 ) )
+				ourTradeItems[4] = "..." --"[ICON_PLUS]"
+				instance.OurTradeItems:SetText( table_concat( ourTradeItems, nil, 1, 4 ) )
 			end
 
 			-- disable the button if we have a pending deal with this player
@@ -1695,7 +1699,7 @@ end
 for playerID = 0, GameDefines.MAX_CIV_PLAYERS-1 do
 
 	local player = Players[ playerID ]
-	if player and (player:IsEverAlive() or player:IsPotentiallyAlive()) and not player:IsMinorCiv() then
+	if player and (player:IsEverAlive() or player:IsPotentiallyAlive()) then
 		--print( "Setting up civilization ribbon player ID", playerID )
 		local instance = { -playerID, 0, 0, 0 }
 
