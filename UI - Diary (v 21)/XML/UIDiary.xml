@@ -24,15 +24,15 @@
     <Row Tag="TXT_KEY_DIARY_RA_COMPLETE"              Text="Research Agreement Completes (with {1_civ})"/>
 
     <!-- Entries with calculated end dates, which will change with the players fortunes -->
-    <Row Tag="TXT_KEY_DIARY_GA_START"                 Text="Golden Age Start (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"       Text="Next Policy Choice (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"        Text="{1_tech} Researched (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_WW_COMPLETE"              Text="{1_building} (World Wonder) Completed (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_NW_COMPLETE"              Text="{1_building} (National Wonder) Completed (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"         Text="{1_project} Completed (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"        Text="[COLOR_WARNING_TEXT]BANKRUPT!!![ENDCOLOR] (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_GA_START"                 Text="Golden Age Start (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"       Text="Next Policy Choice (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"        Text="{1_tech} Researched (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_WW_COMPLETE"              Text="{1_building} (World Wonder) Completed (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_NW_COMPLETE"              Text="{1_building} (National Wonder) Completed (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"         Text="{1_project} Completed (predicted)"/>
+    <Row Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"        Text="[COLOR_WARNING_TEXT]BANKRUPT!!![ENDCOLOR] (predicted)"/>
     <Row Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"         Text="Savings Target ([ICON_GOLD]{1_amount}) Reached (예상)"/>
-    <Row Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"      Text="Automatic Faith Purchase ({1_item}) (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"      Text="Automatic Faith Purchase ({1_item}) (predicted)"/>
 
     <Row Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"            Text="Close"/>
     

@@ -70,7 +70,7 @@
 							<PullDown Anchor="C,C" Offset="0,-2" Style="GenericPullDown" ScrollThreshold="110" Size="200,27" AutoSizePopUp="1" SpaceForScroll="1" ID="SortByPullDown" />
 						</Box>
 				</Stack>
-				<CheckBox ID="SortByActivation" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="TXT_KEY_SORT_ACT" IsChecked="1"/>
+				<CheckBox ID="SortByActivation" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="Sort by Enabled" IsChecked="1"/>
 				<CheckBox ID="ShowDLCMods" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="TXT_KEY_MODDING_SHOWDLCMODS" IsChecked="0"/>
 			</Stack>
 

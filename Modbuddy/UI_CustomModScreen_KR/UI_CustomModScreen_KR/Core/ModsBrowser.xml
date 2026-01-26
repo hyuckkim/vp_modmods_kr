@@ -37,7 +37,7 @@
 
 					<Box Size="485,50" Anchor="C,C" Offset="0,0" Color="White.0" >
 						<Label ID="SelectedModName" Anchor="C,C" Offset="0,0" Font="TwCenMT24" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="TXT_KEY_MOD_TITLE" />
-						<Label ID="SelectedModID" Anchor="C,C" Offset="0,20" Font="TwCenMT14" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="111111111111111" />
+						<Label ID="SelectedModID" Anchor="C,C" Offset="0,20" Font="TwCenMT14" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="TXT_KEY_MOD_DESC" />
 					</Box>
 
 					<Image Anchor="C,C" Offset="0,0"  Texture="bar500x2.dds" Size="485.1" />
@@ -70,7 +70,7 @@
 							<PullDown Anchor="C,C" Offset="0,-2" Style="GenericPullDown" ScrollThreshold="110" Size="200,27" AutoSizePopUp="1" SpaceForScroll="1" ID="SortByPullDown" />
 						</Box>
 				</Stack>
-				<CheckBox ID="SortByActivation" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="TXT_KEY_SORT_BY_ACT" IsChecked="1"/>
+				<CheckBox ID="SortByActivation" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="Sort by Enabled" IsChecked="1"/>
 				<CheckBox ID="ShowDLCMods" Style="SquareCheck" Anchor="L,T" Offset="0,0" ToolTip="TXT_KEY_MODDING_SHOWDLCMODS" IsChecked="0"/>
 			</Stack>
 

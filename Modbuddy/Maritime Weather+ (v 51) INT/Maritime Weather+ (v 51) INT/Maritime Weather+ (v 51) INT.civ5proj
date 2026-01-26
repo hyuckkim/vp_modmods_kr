@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{208c7986-03ae-49c6-b31b-b83f6f955bc9}</ProjectGuid>
+    <Name>Maritime Weather+ (v 51) INT</Name>
+    <Guid>ae2736cc-5335-4d06-9d08-14eb1a96e641</Guid>
+    <ModVersion>51</ModVersion>
+    <Stability>Alpha</Stability>
+    <Teaser>해상에 초점을 맞춘 날씨 모드</Teaser>
+    <Description>절차적 규칙 체계를 통해 날씨 발생 및 이동을 제어하여 바다에 폭풍을 추가합니다.</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>ghost toast, zai4z, whoward, VP &amp;amp; CF communities</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Maritime Weather+ (v 6) INT</AssemblyName>
+    <RootNamespace>Maritime Weather+ (v 6) INT</RootNamespace>
+    <ModReferences />
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>MBweatherDB.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Maritime Weather+</Name>
+        <Id>510755cb-e70a-4860-bc8b-2c627f0cb096</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <Homepage>
+    </Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="MBweatherDB.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

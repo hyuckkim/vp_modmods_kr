@@ -10,14 +10,11 @@
 		<Row Tag="TXT_KEY_MOD_DESC">
 			<Text>Mod Description 1</Text>
 		</Row>
-		<Row Tag="TXT_KEY_SORT_ACT">
-			<Text>Sort by Enabled</Text>
-		</Row>
 		<Row Tag="TXT_KEY_DISABLE_ALLBTN">
-			<Text>[COLOR_NEGATIVE_TEXT]Disable All</Text>
+			<Text>[COLOR_NEGATIVE_TEXT]Disable All[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_ENABLE_ALLBTN">
-			<Text>[COLOR_POSITIVE_TEXT]Enable All</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Enable All[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEL_USERDATA">
 			<Text>Delete Userdata</Text>
@@ -33,14 +30,11 @@
 		<Row Tag="TXT_KEY_MOD_DESC">
 			<Text>모드 내용 1</Text>
 		</Row>
-		<Row Tag="TXT_KEY_SORT_ACT">
-			<Text>활성화 기준 정렬</Text>
-		</Row>
 		<Row Tag="TXT_KEY_DISABLE_ALLBTN">
-			<Text>[COLOR_NEGATIVE_TEXT]모두 비활성화</Text>
+			<Text>[COLOR_NEGATIVE_TEXT]모두 비활성화[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_ENABLE_ALLBTN">
-			<Text>[COLOR_POSITIVE_TEXT]모두 활성화</Text>
+			<Text>[COLOR_POSITIVE_TEXT]모두 활성화[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEL_USERDATA">
 			<Text>사용자 정보 삭제</Text>

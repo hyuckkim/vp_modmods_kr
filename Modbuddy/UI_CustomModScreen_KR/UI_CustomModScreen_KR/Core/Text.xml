@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MOD_EXCLUSIVE">
+			<Text>This mod is exclusive.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MOD_TITLE">
+			<Text>Mod Title 1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MOD_DESC">
+			<Text>Mod Description 1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DISABLE_ALLBTN">
+			<Text>[COLOR_NEGATIVE_TEXT]Disable All[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ENABLE_ALLBTN">
+			<Text>[COLOR_POSITIVE_TEXT]Enable All[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEL_USERDATA">
+			<Text>Delete Userdata</Text>
+		</Row>
+	</Language_en_US>
 	<Language_ko_KR>
 		<Row Tag="TXT_KEY_MOD_EXCLUSIVE">
 			<Text>이 모드는 독점적입니다.</Text>
@@ -7,14 +27,14 @@
 		<Row Tag="TXT_KEY_MOD_TITLE">
 			<Text>모드 제목 1</Text>
 		</Row>
-		<Row Tag="TXT_KEY_SORT_BY_ACT">
-			<Text>활성화 기준 정렬</Text>
+		<Row Tag="TXT_KEY_MOD_DESC">
+			<Text>모드 내용 1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DISABLE_ALLBTN">
-			<Text>[COLOR_NEGATIVE_TEXT]모두 비활성화</Text>
+			<Text>[COLOR_NEGATIVE_TEXT]모두 비활성화[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_ENABLE_ALLBTN">
-			<Text>[COLOR_POSITIVE_TEXT]모두 활성화</Text>
+			<Text>[COLOR_POSITIVE_TEXT]모두 활성화[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEL_USERDATA">
 			<Text>사용자 정보 삭제</Text>
