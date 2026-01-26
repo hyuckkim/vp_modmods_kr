@@ -116,13 +116,13 @@ VALUES ('TXT_KEY_UNIT_TORPEDO_STRATEGY', 'The Torpedo Boat is a high-speed attac
 
 -- Pedia: Game Info (top)
 INSERT INTO Language_en_US (Tag, Text)
-VALUES ('TXT_KEY_UNIT_TORPEDO_HELP', 'The Torpedo Boat is a vigilant defender of the high seas. Fast and deadly is essential for naval sorties.');
+VALUES ('TXT_KEY_UNIT_TORPEDO_HELP', '');
 
 
 
 
 -------------------------NAVAL_BONUS-----------------------------------------------------
-UPDATE UnitPromotions SET OrderPriority = 824, FlagPromoOrder = 824, PortraitIndex = 31, IconAtlas = 'extraPromo_Atlas' WHERE Type = 'PROMOTION_NAVAL_BONUS';
+UPDATE UnitPromotions SET OrderPriority = 834, FlagPromoOrder = 834, PortraitIndex = 31, IconAtlas = 'PROMOTION_ATLAS_VP_06' WHERE Type = 'PROMOTION_NAVAL_BONUS';
 DELETE FROM UnitPromotions_UnitCombatMods WHERE PromotionType = 'PROMOTION_NAVAL_BONUS';
 
 UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_NAVAL_BONUS_HELP', PediaEntry = 'TXT_KEY_PROMOTION_NAVAL_BONUS', SimpleHelpText = 0 WHERE Type = 'PROMOTION_NAVAL_BONUS';
@@ -135,7 +135,7 @@ INSERT INTO UnitPromotions_UnitCombatMods
 VALUES
     ('PROMOTION_NAVAL_BONUS', 'UNITCOMBAT_NAVALRANGED', 25);
 
-INSERT INTO UnitPromotions_Terrains
+INSERT INTO UnitPromotions_TerrainModifiers
 	(PromotionType, TerrainType, Attack)
 VALUES
     ('PROMOTION_NAVAL_BONUS', 'TERRAIN_COAST', 10);
@@ -145,7 +145,7 @@ VALUES
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, OrderPriority, FlagPromoOrder)
 VALUES
-   ('PROMOTION_COAST_GUARD_1', 'TXT_KEY_PROMOTION_COAST_GUARD_1', 'TXT_KEY_PROMOTION_COAST_GUARD_1_HELP', 'AS2D_IF_LEVELUP', 1, 1, 28, 'extraPromo_Atlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_COAST_GUARD_1', 825, 825);
+   ('PROMOTION_COAST_GUARD_1', 'TXT_KEY_PROMOTION_COAST_GUARD_1', 'TXT_KEY_PROMOTION_COAST_GUARD_1_HELP', 'AS2D_IF_LEVELUP', 1, 1, 28, 'PROMOTION_ATLAS_VP_06', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_COAST_GUARD_1', 835, 835);
    
 
    
@@ -154,12 +154,12 @@ UPDATE UnitPromotions SET FriendlyLandsAttackModifier = 10 WHERE Type = 'PROMOTI
  INSERT INTO Language_en_US (Tag, Text)
 VALUES
     ('TXT_KEY_PROMOTION_COAST_GUARD_1', 'Patrol I'),
-    ('TXT_KEY_PROMOTION_COAST_GUARD_1_HELP', '+10% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Inside of Friendly Territory[ENDCOLOR].[NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade.[ENDCOLOR]');
+    ('TXT_KEY_PROMOTION_COAST_GUARD_1_HELP', '+10% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Inside of Friendly Territory[ENDCOLOR].[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade.[ENDCOLOR]');
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 VALUES
-    ('UNIT_TORPEDO', 'PROMOTION_OCEAN_HALF_MOVES'),
+    ('UNIT_TORPEDO', 'PROMOTION_SHALLOW_DRAFT'),
 	('UNIT_TORPEDO', 'PROMOTION_COAST_GUARD_1'),
     ('UNIT_TORPEDO', 'PROMOTION_NAVAL_BONUS');
 	
@@ -169,14 +169,14 @@ VALUES
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, OrderPriority, FlagPromoOrder)
 VALUES
- ('PROMOTION_CONVOY', 'TXT_KEY_PROMOTION_CONVOY', 'TXT_KEY_PROMOTION_CONVOY_HELP', 'AS2D_IF_LEVELUP', 0, 0, 27, 'extraPromo_Atlas', 'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_CONVOY', 317, 317);
+ ('PROMOTION_CONVOY', 'TXT_KEY_PROMOTION_CONVOY', 'TXT_KEY_PROMOTION_CONVOY_HELP', 'AS2D_IF_LEVELUP', 0, 0, 27, 'PROMOTION_ATLAS_VP_06', 'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_CONVOY', 337, 337);
  
 INSERT INTO UnitPromotions_UnitCombats
 		(PromotionType,					UnitCombatType,			PediaType)
 VALUES	('PROMOTION_CONVOY',			'UNITCOMBAT_NAVALMELEE',	null); 
 
 UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_NAVIGATOR_1', PromotionPrereqOr2 = 'PROMOTION_NAVIGATOR_2', 
-PromotionPrereqOr3 = 'PROMOTION_IMPERIALISM_OPENER', PromotionPrereqOr4 = 'PROMOTION_TREASURE_FLEET', 
+PromotionPrereqOr3 = 'PROMOTION_IMPERIALISM', PromotionPrereqOr4 = 'PROMOTION_TREASURE_FLEET', 
 VisibilityChange = -1, TechPrereq = 'TECH_RADIO', SeeInvisible = 'INVISIBLE_SUBMARINE', 
 CombatBonusFromNearbyUnitClass = 'UNITCLASS_CARGO_SHIP', NearbyUnitClassBonusRange = 2, NearbyUnitClassBonus = 15 WHERE Type = 'PROMOTION_CONVOY';
 
@@ -210,11 +210,14 @@ DELETE FROM UnitPromotions_UnitCombats WHERE PromotionType = 'PROMOTION_SEE_INVI
 
 
 UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP', PediaEntry = 'TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE', SimpleHelpText = 0 WHERE Type = 'PROMOTION_INVISIBLE_SUBMARINE';
+
+
+
 UPDATE Language_en_US SET Text = 'Silent Hunter' WHERE Tag = 'TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE';
 
 INSERT INTO Language_en_US
 			(Tag,															Text)
-VALUES		('TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP',	'Unit [COLOR_POSITIVE_TEXT]is Invisible[ENDCOLOR] when not adjacent to an Enemy Units without special ability.');
+VALUES		('TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP',	'Unit [COLOR_POSITIVE_TEXT]is Invisible[ENDCOLOR] when not adjacent to an Enemy Units or without special ability.');
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -246,10 +249,16 @@ VALUES		('TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP',	'Unit [COLOR_POSITIVE_TEX
 -- Add plague promo
 UPDATE Language_en_US SET Text = 'Lost Contact' WHERE Tag = 'TXT_KEY_PROMOTION_SIGHT_PENALTY';
 UPDATE Language_en_US SET Text = '-1 [ICON_VP_VISION] Sight.[NEWLINE]-2 [ICON_MOVES] Movement.[NEWLINE]Lasts for 1 turn.' WHERE Tag = 'TXT_KEY_PROMOTION_SIGHT_PENALTY_HELP';
-UPDATE UnitPromotions SET LostWithUpgrade = 0, PromotionDuration = 1, MovesChange = -2, PlagueID = 10, FlagPromoOrder = 4, OrderPriority = 4, PediaEntry = 'TXT_KEY_PROMOTION_SIGHT_PENALTY' WHERE Type = 'PROMOTION_SIGHT_PENALTY';
+UPDATE UnitPromotions SET LostWithUpgrade = 0, PromotionDuration = 1, MovesChange = -2, PlagueID = 10, FlagPromoOrder = 5, OrderPriority = 5, PediaEntry = 'TXT_KEY_PROMOTION_SIGHT_PENALTY' WHERE Type = 'PROMOTION_SIGHT_PENALTY';
 
 --Change Hunter Killer
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_WOLFPACK_3', SeeInvisible = NULL, PlaguePromotion = 'PROMOTION_SIGHT_PENALTY', PlagueChance = 100, SplashDamage = 10, PortraitIndex = 61, IconAtlas = 'extraPromo_Atlas' WHERE Type = 'PROMOTION_HUNTER_KILLER';
+UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_WOLFPACK_3', SeeInvisible = NULL, SplashDamage = 10, PortraitIndex = 61, IconAtlas = 'PROMOTION_ATLAS_VP_06' WHERE Type = 'PROMOTION_HUNTER_KILLER';
+
+INSERT INTO UnitPromotions_Plagues
+	(PromotionType, PlaguePromotionType, DomainType, ApplyOnAttack, ApplyOnDefense)
+VALUES
+	('PROMOTION_HUNTER_KILLER', 'PROMOTION_SIGHT_PENALTY', 'DOMAIN_SEA', 1, 0);
+
 UPDATE Language_en_US SET Text = 'Inflict the [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_SIGHT_PENALTY}[ENDCOLOR] status on Enemy Naval Units when attacking, reducing their [ICON_MOVES] Movement by 2 and [ICON_VP_VISION] Sight by 1 for 1 Turn.
 [NEWLINE]Deal [COLOR_POSITIVE_TEXT]10 Damage[ENDCOLOR] to all Enemy Units [COLOR_POSITIVE_TEXT]adjacent to[ENDCOLOR] the target Unit (within [ICON_RANGE_STRENGTH] Range) when attacking.
 [NEWLINE]This Damage ignores damage reduction, but does not affect Units in [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR] and [COLOR_NEGATIVE_TEXT]Fortifications[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_HUNTER_KILLER_HELP';
@@ -259,20 +268,25 @@ DELETE FROM UnitPromotions_UnitCombatMods WHERE PromotionType = 'PROMOTION_HUNTE
 
 
 -- Change Periscope Depth
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_INVISIBLE_SUBMARINE', PortraitIndex = 0, IconAtlas = 'ENW_PI_ATLAS', RankList = 'DIVE', RankNumber = 1, OrderPriority = 310, FlagPromoOrder = 310 WHERE Type = 'PROMOTION_PERISCOPE_DEPTH';
-UPDATE UnitPromotions SET RangedDefenseMod = 0, ChangeDamageValue = -3 WHERE Type = 'PROMOTION_PERISCOPE_DEPTH';
+UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_INVISIBLE_SUBMARINE', PortraitIndex = 52, IconAtlas = 'PROMOTION_ATLAS_VP_04', RankList = 'DIVE', RankNumber = 1, OrderPriority = 310, FlagPromoOrder = 310 WHERE Type = 'PROMOTION_PERISCOPE_DEPTH';
+UPDATE UnitPromotions SET RangedDefenseMod = 0, DamageTakenMod = -10 WHERE Type = 'PROMOTION_PERISCOPE_DEPTH';
 UPDATE Language_en_US SET Text = 'Dive I' WHERE Tag = 'TXT_KEY_PROMOTION_PERISCOPE_DEPTH';
-UPDATE Language_en_US SET Text = '-3 Damage from all sources.[NEWLINE]Withdraw from Melee Attack if there is an open tile behind this Unit, once per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_PERISCOPE_DEPTH_HELP';
+UPDATE Language_en_US SET Text = '-10% Damage received from Combat.[NEWLINE]+500 [ICON_GOLD] Gold when plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE]Withdraw from Melee Attack if there is an open tile behind this Unit, once per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_PERISCOPE_DEPTH_HELP';
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, RankList, RankNumber, OrderPriority, FlagPromoOrder)
 VALUES
-  ('PROMOTION_DIVE', 'TXT_KEY_PROMOTION_DIVE', 'TXT_KEY_PROMOTION_DIVE_HELP', 'AS2D_IF_LEVELUP', 0, 0, 1, 'ENW_PI_ATLAS', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_DIVE', 'DIVE', 2, 310, 310);
+  ('PROMOTION_DIVE', 'TXT_KEY_PROMOTION_DIVE', 'TXT_KEY_PROMOTION_DIVE_HELP', 'AS2D_IF_LEVELUP', 0, 0, 53, 'PROMOTION_ATLAS_VP_04', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_DIVE', 'DIVE', 2, 310, 310);
 	
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_PERISCOPE_DEPTH', PlagueIDImmunity = 1, ChangeDamageValue = -3 WHERE Type = 'PROMOTION_DIVE';
+UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_PERISCOPE_DEPTH', DamageTakenMod = -10 WHERE Type = 'PROMOTION_DIVE';
 
+INSERT INTO UnitPromotions_BlockedPromotions
+	(PromotionType, BlockedPromotionType)
+VALUES
+	('PROMOTION_DIVE', 'PROMOTION_BOARDED_1'),
+	('PROMOTION_DIVE', 'PROMOTION_BOARDED_2');
 
 INSERT INTO UnitPromotions_UnitCombats
 		(PromotionType,					UnitCombatType,			PediaType)
@@ -281,7 +295,7 @@ VALUES	('PROMOTION_DIVE',			'UNITCOMBAT_SUBMARINE',	null);
 INSERT INTO Language_en_US (Tag, Text)
 VALUES
     ('TXT_KEY_PROMOTION_DIVE', 'Dive II'),
-    ('TXT_KEY_PROMOTION_DIVE_HELP', '-3 Damage from all sources.[NEWLINE]Immune to the [COLOR_POSITIVE_TEXT]Boarded[ENDCOLOR] status.');
+    ('TXT_KEY_PROMOTION_DIVE_HELP', '-10% Damage received from Combat.[NEWLINE]+500 [ICON_GOLD] Gold when plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE]Immune to the [COLOR_POSITIVE_TEXT]Boarded[ENDCOLOR] status.');
   
 -- Move Suply
 UPDATE UnitPromotions SET PromotionPrereqOr3 = 'PROMOTION_INVISIBLE_SUBMARINE' WHERE Type = 'PROMOTION_SUPPLY';	
@@ -291,8 +305,8 @@ UPDATE UnitPromotions SET PromotionPrereqOr3 = 'PROMOTION_INVISIBLE_SUBMARINE' W
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, OrderPriority, FlagPromoOrder)
 VALUES
-   ('PROMOTION_INTERDICTOR', 'TXT_KEY_PROMOTION_INTERDICTOR', 'TXT_KEY_PROMOTION_INTERDICTOR_HELP', 'AS2D_IF_LEVELUP', 0, 0, 55, 'extraPromo_Atlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_INTERDICTOR', 337, 337),
-    ('PROMOTION_END_AROUND', 'TXT_KEY_PROMOTION_END_AROUND', 'TXT_KEY_PROMOTION_END_AROUND_HELP', 'AS2D_IF_LEVELUP', 0, 0, 10, 'promoVP_atlas_04', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_END_AROUND', 338, 338);
+   ('PROMOTION_INTERDICTOR', 'TXT_KEY_PROMOTION_INTERDICTOR', 'TXT_KEY_PROMOTION_INTERDICTOR_HELP', 'AS2D_IF_LEVELUP', 0, 0, 55, 'PROMOTION_ATLAS_VP_06', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_INTERDICTOR', 337, 337),
+    ('PROMOTION_END_AROUND', 'TXT_KEY_PROMOTION_END_AROUND', 'TXT_KEY_PROMOTION_END_AROUND_HELP', 'AS2D_IF_LEVELUP', 0, 0, 10, 'PROMOTION_ATLAS_VP_04', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_END_AROUND', 338, 338);
 	
 INSERT INTO UnitPromotions_UnitCombats
 		(PromotionType,					UnitCombatType,			PediaType)
@@ -317,11 +331,11 @@ VALUES
 
 	
 -- Move Wolfpack
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_SUPPLY' WHERE Type = 'PROMOTION_TRUE_WOLFPACK';
+UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_SUPPLY' WHERE Type = 'PROMOTION_VP_WOLFPACK';
 
 -- Remove Indomitable
-DELETE FROM UnitPromotions_UnitCombats WHERE PromotionType = 'PROMOTION_TARGETING_4' AND UnitCombatType = 'UNITCOMBAT_SUBMARINE';
-UPDATE UnitPromotions SET PromotionPrereqOr2 = NULL WHERE Type = 'PROMOTION_TARGETING_4';
+DELETE FROM UnitPromotions_UnitCombats WHERE PromotionType = 'PROMOTION_INDOMITABLE' AND UnitCombatType = 'UNITCOMBAT_SUBMARINE';
+UPDATE UnitPromotions SET PromotionPrereqOr2 = NULL WHERE Type = 'PROMOTION_INDOMITABLE';
 
 -- Add Minelayer
 UPDATE UnitPromotions SET PromotionPrereqOr2 = 'PROMOTION_WOLFPACK_2' WHERE Type = 'PROMOTION_MINELAYER';
@@ -331,21 +345,32 @@ INSERT INTO UnitPromotions_UnitCombats
 VALUES	('PROMOTION_MINELAYER',		'UNITCOMBAT_SUBMARINE',	null);
 
 --------------------------Scavenger & HighSeaRaider----------------------------------------------------
-UPDATE Units SET HighSeaRaider = 1 WHERE Type IN ('UNIT_SUBMARINE', 'UNIT_ATTACK_SUBMARINE', 'UNIT_NUCLEAR_SUBMARINE');
+--UPDATE Units SET HighSeaRaider = 1 WHERE Type IN ('UNIT_SUBMARINE', 'UNIT_ATTACK_SUBMARINE', 'UNIT_NUCLEAR_SUBMARINE');
+
+INSERT INTO UnitPromotions_YieldFromTRPlunder
+	(PromotionType, YieldType, Yield)
+VALUES
+	('PROMOTION_PERISCOPE_DEPTH', 'YIELD_GOLD', 500),
+	('PROMOTION_DIVE', 'YIELD_GOLD', 500),
+	('PROMOTION_VP_WOLFPACK', 'YIELD_GOLD', 1000);
+	
+UPDATE Language_en_US
+	SET Text = Text || '[NEWLINE]+1000 [ICON_GOLD] Gold when plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.'
+	WHERE Tag = 'TXT_KEY_PROMOTION_VP_WOLFPACK_HELP';	
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 VALUES
-    ('UNIT_SUBMARINE', 'PROMOTION_SCOUT_XP_PILLAGE'),
-	('UNIT_ATTACK_SUBMARINE', 'PROMOTION_SCOUT_XP_PILLAGE'),
-	('UNIT_NUCLEAR_SUBMARINE', 'PROMOTION_SCOUT_XP_PILLAGE');
+    ('UNIT_SUBMARINE', 'PROMOTION_SCAVENGER'),
+	('UNIT_ATTACK_SUBMARINE', 'PROMOTION_SCAVENGER'),
+	('UNIT_NUCLEAR_SUBMARINE', 'PROMOTION_SCAVENGER');
 --------------------------TXT----------------------------------------------------
 
-UPDATE Language_en_US SET Text = 'Naval Raider Units' WHERE Tag = 'TXT_KEY_UNITCOMBAT_SUBMARINE';
+UPDATE Language_en_US SET Text = 'Naval Raider' WHERE Tag = 'TXT_KEY_UNITCOMBAT_SUBMARINE';
 
 UPDATE	Language_en_US SET
 		Text = REPLACE(Text, 'Submarine', 'Naval Raider')
-		WHERE Tag = 'TXT_KEY_PROMOTION_TRUE_WOLFPACK_HELP';
+		WHERE Tag = 'TXT_KEY_PROMOTION_VP_WOLFPACK_HELP';
 		
 UPDATE	Language_en_US SET
 		Text = REPLACE(Text, 'Submarines', 'Naval Raiders')
@@ -397,12 +422,12 @@ UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 7 WHERE Type 
 
 
 
-UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 10 WHERE Type = 'UNIT_MISSILE_DESTROYER';
-UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 8 WHERE Type = 'UNIT_EARLY_DESTROYER';
+UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 10 WHERE Type = 'UNIT_SENSOR_COMBAT_SHIP';
+UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 8 WHERE Type = 'UNIT_DESTROYER';
 
 
 
-UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 2 WHERE Type = 'UNIT_FCOMPANY';
+UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 2 WHERE Type = 'UNIT_FREE_COMPANY';
 UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 4 WHERE Type = 'UNIT_COMMANDO';
 UPDATE Units SET IconAtlas = 'TORPEDO_UNIT_ATLAS', PortraitIndex = 5 WHERE Type = 'UNIT_ANTI_TANK_GUN';
 

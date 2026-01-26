@@ -1,0 +1,56 @@
+
+		<!-- old entry -->
+		<Row>
+			<Type>BUILDING_CD_KURGAN</Type>
+			<BuildingClass>BUILDINGCLASS_SHRINE</BuildingClass>
+			<Description>TXT_KEY_BUILDING_CD_KURGAN</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CD_KURGAN_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_CD_KURGAN_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_CD_KURGAN_STRATEGY</Strategy>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<PortraitIndex>35</PortraitIndex>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_CD_KURGAN">
+			<Text>Kurgan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_KURGAN_TEXT">
+			<Text>The Civilopedia text goes here</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_KURGAN_HELP">
+			<Text>*this is updated in another file*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CD_KURGAN_STRATEGY">
+			<Text>Our design rationale goes here</Text>
+		</Row>
+
+-- =======================
+-- Kurgan (Shrine)
+-- =======================
+
+-- there is no shrine help text (null)
+REPLACE INTO Language_en_US 
+	(Tag, Text)
+VALUES
+	('TXT_KEY_BUILDING_CD_KURGAN_HELP', 'Requires the [ICON_CULTURE_JFD_STEPPE] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_STEPPE_SHORT_DESC}[ENDCOLOR] Cultural Group. ');
+
+UPDATE Buildings SET
+Defense = 300
+WHERE Type = 'BUILDING_CD_KURGAN';
+
+INSERT INTO Building_InstantYield
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_KURGAN', 'YIELD_CULTURE', 15),
+	('BUILDING_CD_KURGAN', 'YIELD_GOLD', 15);
+
+INSERT INTO Building_YieldFromGPExpend
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_CD_KURGAN', 'YIELD_GOLD', 10),
+	('BUILDING_CD_KURGAN', 'YIELD_CULTURE', 10);
+
+UPDATE Language_en_US SET
+Text = Replace(Text, 'Cultural Group. ', 'Cultural Group.[NEWLINE][NEWLINE]+15 [ICON_GOLD] Gold and [ICON_CULTURE] Culture when completed. The [ICON_CAPITAL] Capital receives 10 [ICON_GOLD] Gold and [ICON_CULTURE] Culture when whenever you expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.')
+WHERE Tag = 'TXT_KEY_BUILDING_CD_KURGAN_HELP';
+

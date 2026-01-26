@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" version="21">
+  <Properties>
+    <Name>JFD's Cultural Diversity - (1) (Core) Utilities</Name>
+    <Teaser>[COLOR_CYAN]Core Utilities[ENDCOLOR] for Cultural Diversity.</Teaser>
+    <Description>[COLOR_CYAN]Core Utilities[ENDCOLOR] for Cultural Diversity.</Description>
+    <Authors>JFD</Authors>
+    <SpecialThanks>Janboruta, Sukritact, Reedstilt, Tomatekh, Leugi, TheLohoped, Zwei[NEWLINE][NEWLINE]Deliverator, Wolfdog, Guandao, sss64sss, Senshi, Scissor_Fingers</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="1f941088-b185-4159-865c-472df81247b2" minversion="0" maxversion="999" title="Events and Decisions" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+    <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="Unique City-States" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="A8EED1786159D79C9B9FE5B59C128845" import="1">Art/Fonts/FontIcons_Aboriginal_22.dds</File>
+    <File md5="07DFF6D9BD9A2D527EB52DE4875E839F" import="1">Art/Fonts/FontIcons_Aboriginal_22.ggxml</File>
+    <File md5="17114BF0BAC69B49D8A7A742B7024F46" import="1">Art/Fonts/FontIcons_Andean_22.dds</File>
+    <File md5="6A872DB22B939D2D7FBF35F3D8F91455" import="1">Art/Fonts/FontIcons_Andean_22.ggxml</File>
+    <File md5="9016E92EE00ED506078D9368E245EE80" import="1">Art/Fonts/FontIcons_Bantu_22.dds</File>
+    <File md5="12873BEB6D7A8B9974737BDD0E967388" import="1">Art/Fonts/FontIcons_Bantu_22.ggxml</File>
+    <File md5="7971AB2DB124148E958A7002251F7A14" import="1">Art/Fonts/FontIcons_Bharata_22.dds</File>
+    <File md5="D015DEE0797002EA0D1E12289FADCCDD" import="1">Art/Fonts/FontIcons_Bharata_22.ggxml</File>
+    <File md5="04E8726771DC83CBD02FC88FE4E85537" import="1">Art/Fonts/FontIcons_Central_22.dds</File>
+    <File md5="B1A662123DFCF350A024B6EC4B781497" import="1">Art/Fonts/FontIcons_Central_22.ggxml</File>
+    <File md5="83F46E0667EB9ACFA4503C5BAB2F28FF" import="1">Art/Fonts/FontIcons_Classical_22.dds</File>
+    <File md5="4201AEE3A7DEFFAD97FA870925CA83A1" import="1">Art/Fonts/FontIcons_Classical_22.ggxml</File>
+    <File md5="03961087B01311051AFC59173080A51C" import="1">Art/Fonts/FontIcons_Colonial_22.dds</File>
+    <File md5="C1CF749AFCC6D14FF6800B184E5EE841" import="1">Art/Fonts/FontIcons_Colonial_22.ggxml</File>
+    <File md5="BDC84B8D0064A7D0F8B4F0CC7583D668" import="1">Art/Fonts/FontIcons_EastAfrican_22.dds</File>
+    <File md5="3DFCD340F3D6577C2A5658BD4725F26F" import="1">Art/Fonts/FontIcons_EastAfrican_22.ggxml</File>
+    <File md5="8195BF310D22AB9097FBD44A8553849D" import="1">Art/Fonts/FontIcons_Eastern_22.dds</File>
+    <File md5="9311871D42DEADD905FA98478D3700A8" import="1">Art/Fonts/FontIcons_Eastern_22.ggxml</File>
+    <File md5="3D65AAA1C7E1F71434A1BD24C2213A86" import="1">Art/Fonts/FontIcons_EastIndies_22.dds</File>
+    <File md5="CB1671FDB2FAF7F186BBA3A1FADE1E0B" import="1">Art/Fonts/FontIcons_EastIndies_22.ggxml</File>
+    <File md5="AA551FA2007651147195D240B4BB4959" import="1">Art/Fonts/FontIcons_GreatPlains_22.dds</File>
+    <File md5="91E8380CC9A77267693DAED717BE2477" import="1">Art/Fonts/FontIcons_GreatPlains_22.ggxml</File>
+    <File md5="7046B87ED3A956A4231ED2BD84291DF4" import="1">Art/Fonts/FontIcons_Himalayan_22.dds</File>
+    <File md5="3FB6FFE2F0A269D8F4307FA5CC9AED50" import="1">Art/Fonts/FontIcons_Himalayan_22.ggxml</File>
+    <File md5="9979D94A326FE9245B0BE55573576C46" import="1">Art/Fonts/FontIcons_MidEastern_22.dds</File>
+    <File md5="47CAD1DC685D0F9FFC0856E929C33A96" import="1">Art/Fonts/FontIcons_MidEastern_22.ggxml</File>
+    <File md5="1CCBA8700898E918FC3275DF24E94E06" import="1">Art/Fonts/FontIcons_Amazonian_22.dds</File>
+    <File md5="5FC367AAE388F7AA6AF7F90440594590" import="1">Art/Fonts/FontIcons_Amazonian_22.ggxml</File>
+    <File md5="8EDC1B2D5D41F7C2358F4EB456B684C6" import="1">Art/Fonts/FontIcons_Indochina_22.dds</File>
+    <File md5="DE534A79A4A1A3853E8FC4D28C80C86F" import="1">Art/Fonts/FontIcons_Indochina_22.ggxml</File>
+    <File md5="A48E6238959F145673DAB798310849A7" import="1">Art/Fonts/FontIcons_Mesoamerican_22.dds</File>
+    <File md5="D55CDF632B9C4CFB38AE7B7CD542ED1B" import="1">Art/Fonts/FontIcons_Mesoamerican_22.ggxml</File>
+    <File md5="AD95589E92BD37ADA87B6DE583577D7C" import="1">Art/Fonts/FontIcons_Mesopotamic_22.dds</File>
+    <File md5="18786AFA4E23EDA7E06F91B1C3EA6663" import="1">Art/Fonts/FontIcons_Mesopotamic_22.ggxml</File>
+    <File md5="C7323365BE12FC41C58A00587601FDF3" import="1">Art/Fonts/FontIcons_Northern_22.dds</File>
+    <File md5="C80E06C96CF8DB12CD3D64DBB03926C6" import="1">Art/Fonts/FontIcons_Northern_22.ggxml</File>
+    <File md5="1FD0EC6EA383D2197092BD26D52CF73B" import="1">Art/Fonts/FontIcons_Oceanic_22.dds</File>
+    <File md5="32957712F24920DE1E539BC687E27FA8" import="1">Art/Fonts/FontIcons_Oceanic_22.ggxml</File>
+    <File md5="A3768C7BBE8D913E74DADF66AA0B2F85" import="1">Art/Fonts/FontIcons_FarEastern_22.dds</File>
+    <File md5="428E9CACDD9C07BDF70270AEA49734A3" import="1">Art/Fonts/FontIcons_FarEastern_22.ggxml</File>
+    <File md5="0956257F54942F309CE53DFF6F8D2961" import="1">Art/Fonts/FontIcons_Pacific_22.dds</File>
+    <File md5="787E3E7A92CF01A32EE26F3D98D89E13" import="1">Art/Fonts/FontIcons_Pacific_22.ggxml</File>
+    <File md5="54887DD97D3256375061BCB25BF44DD8" import="1">Art/Fonts/FontIcons_Polar_22.dds</File>
+    <File md5="3AC53CE0A005CB330737602324863893" import="1">Art/Fonts/FontIcons_Polar_22.ggxml</File>
+    <File md5="B50EBC5F99A06DE7D5520042DC667B8B" import="1">Art/Fonts/FontIcons_CentralAfrican_22.dds</File>
+    <File md5="26885C2A4602F85DD307FCDF571589EE" import="1">Art/Fonts/FontIcons_CentralAfrican_22.ggxml</File>
+    <File md5="8B5092E1F59BABFE707C8D6AC52C53CF" import="1">Art/Fonts/FontIcons_Levantine_22.dds</File>
+    <File md5="D5AAC6B17FF4FC615487A68B0851D627" import="1">Art/Fonts/FontIcons_Levantine_22.ggxml</File>
+    <File md5="B9DAD5D1BD44AC963E33B0D576746B3C" import="1">Art/Fonts/FontIcons_Southern_22.dds</File>
+    <File md5="8E645DAE602F0F12E0D68433FD733F4D" import="1">Art/Fonts/FontIcons_Southern_22.ggxml</File>
+    <File md5="CE5B0653590209943D9A9A3197B47456" import="1">Art/Fonts/FontIcons_Steppe_22.dds</File>
+    <File md5="D129FE767491A3F5C64D8CB24EA6A45F" import="1">Art/Fonts/FontIcons_Steppe_22.ggxml</File>
+    <File md5="1E1B474C5B3E1631F3C6842A31BD092D" import="1">Art/Fonts/FontIcons_Totalitarian_22.dds</File>
+    <File md5="86C059D2345731C53BFB31AB5F49C9C7" import="1">Art/Fonts/FontIcons_Totalitarian_22.ggxml</File>
+    <File md5="29283238817B8522A62433501DA05708" import="1">Art/Fonts/FontIcons_WestAfrican_22.dds</File>
+    <File md5="D39D1E85B689B9BAEFCC45C98B9FDCB1" import="1">Art/Fonts/FontIcons_WestAfrican_22.ggxml</File>
+    <File md5="EF5D7CCAE9B7BE0E13EA7B38C7CF5EAE" import="1">Art/Fonts/FontIcons_Western_22.dds</File>
+    <File md5="C4BC6EB22C3640CCED4808935C0F6DAC" import="1">Art/Fonts/FontIcons_Western_22.ggxml</File>
+    <File md5="83BBBC07206CA7D4CDAC551B4365A324" import="1">Art/Fonts/FontIcons_Woodlands_22.dds</File>
+    <File md5="EC739D4F8914C63BA333053A51EC9104" import="1">Art/Fonts/FontIcons_Woodlands_22.ggxml</File>
+    <File md5="FDDFF7C7F42A1C506B168CE577BD0F3D" import="1">Art/Icons/AboriginalAlpha_48.dds</File>
+    <File md5="8B2E7B83F519A4B26914ADB6073339A7" import="1">Art/Icons/Aboriginal_256.dds</File>
+    <File md5="1C5BF6789DA6C451C02BB6A913D80336" import="1">Art/Icons/Aboriginal_45.dds</File>
+    <File md5="A69AFB00E5621EC64A0B508C3A593883" import="1">Art/Icons/Aboriginal_64.dds</File>
+    <File md5="338EB7E1651325520B8F0CB92C8F2A82" import="1">Art/Icons/Aboriginal_80.dds</File>
+    <File md5="80E4E73338E7F0D90DA31C9F73CAF509" import="1">Art/Icons/AmazonianAlpha_48.dds</File>
+    <File md5="DFF9B0551150C9FE84F3B0D85C9DE126" import="1">Art/Icons/AndeanAlpha_48.dds</File>
+    <File md5="21419E647B5B1D93D610B6E4F3352573" import="1">Art/Icons/Andean_256.dds</File>
+    <File md5="7513FA3C5889AC46BC2EA167FD1786A7" import="1">Art/Icons/Andean_45.dds</File>
+    <File md5="0921B429052618987DFC57C28005A18E" import="1">Art/Icons/Andean_64.dds</File>
+    <File md5="19EF446B6C7BAA7EFCDFDC4DF615312D" import="1">Art/Icons/Andean_80.dds</File>
+    <File md5="DED075A0E295454C46A42E821C30FF0D" import="1">Art/Icons/BantuAlpha_48.dds</File>
+    <File md5="E5977D9A8AE7CD15607111CEFB941E58" import="1">Art/Icons/Bantu_256.dds</File>
+    <File md5="0F984B20FAB48DFFF43B487C167F0021" import="1">Art/Icons/Bantu_45.dds</File>
+    <File md5="2C186CD0300B6221FA2FE67B99AFC4B0" import="1">Art/Icons/Bantu_64.dds</File>
+    <File md5="E059A7C63705699B9BF95D29EA3D5A74" import="1">Art/Icons/Bantu_80.dds</File>
+    <File md5="507AB87D5ADF11B1FD205BD9AE478368" import="1">Art/Icons/BharataAlpha_48.dds</File>
+    <File md5="F3C535D75A582E6051A964D4888FB85C" import="1">Art/Icons/Bharata_256.dds</File>
+    <File md5="F8CFCBF96D4515EE828975068AE26F60" import="1">Art/Icons/Bharata_45.dds</File>
+    <File md5="C7833D686B8BF3342E64F86C44975D7C" import="1">Art/Icons/Bharata_64.dds</File>
+    <File md5="9A47A320F354AEB6B4621AC19154F7DA" import="1">Art/Icons/Bharata_80.dds</File>
+    <File md5="840D5287F5AD1F9865BD2F0155E01CC2" import="1">Art/Icons/CentralAfricanAlpha_48.dds</File>
+    <File md5="6801432A62F99B728FB8606AE80791F3" import="1">Art/Icons/CentralAfrica_256.dds</File>
+    <File md5="2BA650BCB8A49FE96E984EB6FE6D286C" import="1">Art/Icons/CentralAfrica_45.dds</File>
+    <File md5="F8F13EF7A871FEFC748552011003A2DC" import="1">Art/Icons/CentralAfrica_64.dds</File>
+    <File md5="AFDF0D7A4959B9B6C9B02B9FA031EA40" import="1">Art/Icons/CentralAfrica_80.dds</File>
+    <File md5="3BC15F1904FE71FD35675B73504242AD" import="1">Art/Icons/CentralAlpha_48.dds</File>
+    <File md5="664B9E8EC0072D78282114E155663A66" import="1">Art/Icons/Central_256.dds</File>
+    <File md5="41039ADE93CD891EC270B45E878A710B" import="1">Art/Icons/Central_45.dds</File>
+    <File md5="ED5893F08CA502FE683CCB4256809D3E" import="1">Art/Icons/Central_64.dds</File>
+    <File md5="ACAAF40247352B039A6210EDD2E3877A" import="1">Art/Icons/Central_80.dds</File>
+    <File md5="05CE0EF30E41E2145FB377CCEA1CB203" import="1">Art/Icons/ClassicalAlpha_48.dds</File>
+    <File md5="298E08DC9262BB4C386B60B8A2434A61" import="1">Art/Icons/Classical_256.dds</File>
+    <File md5="4E7BB5845072C4B3EDF1A99A9E907D85" import="1">Art/Icons/Classical_45.dds</File>
+    <File md5="34957757C43DDF4EF19D1AD0E188B06E" import="1">Art/Icons/Classical_64.dds</File>
+    <File md5="DFC671092B18A34805B2ABC051240C10" import="1">Art/Icons/Classical_80.dds</File>
+    <File md5="92ADA8435B6D3DEB7D9C69F79BD9BAA9" import="1">Art/Icons/ColonialAlpha_48.dds</File>
+    <File md5="7092003B3281B0F12DE378DE4650BD37" import="1">Art/Icons/Colonial_256.dds</File>
+    <File md5="F068BEFF3C5CEFFDDE0AF0E8002D1771" import="1">Art/Icons/Colonial_45.dds</File>
+    <File md5="D330FF2EDB8159C718068D2BA5BB580C" import="1">Art/Icons/Colonial_64.dds</File>
+    <File md5="0D994D1FDEED7D37665F8B5342E97906" import="1">Art/Icons/Colonial_80.dds</File>
+    <File md5="18481D170FD438D35E27E08117035A2B" import="1">Art/Icons/EastAfricanAlpha_48.dds</File>
+    <File md5="7CD09554C9AC987AF89D4826E1F96245" import="1">Art/Icons/EastAfrican_256.dds</File>
+    <File md5="1F42F5D4BC31F3E6CB9651EB8264279D" import="1">Art/Icons/EastAfrican_45.dds</File>
+    <File md5="1B459DC6EDE1E89FBA9CAEC8D61D5CC2" import="1">Art/Icons/EastAfrican_64.dds</File>
+    <File md5="393FFE441A97307EFA257BD10DFB4C0D" import="1">Art/Icons/EastAfrican_80.dds</File>
+    <File md5="23F929814964A1301C4FF836E42D478B" import="1">Art/Icons/EasternAlpha_48.dds</File>
+    <File md5="CBC844B55908125EFA527FA4266537AC" import="1">Art/Icons/Eastern_256.dds</File>
+    <File md5="288CEE820190E5F5D09DAA43DE26727C" import="1">Art/Icons/Eastern_45.dds</File>
+    <File md5="42A2C83224019BC5260B0F17104A4689" import="1">Art/Icons/Eastern_64.dds</File>
+    <File md5="47675161DFF742B77499BA60C0BFE04C" import="1">Art/Icons/Eastern_80.dds</File>
+    <File md5="D21636D8A0D288E8856ABBBF64964CDA" import="1">Art/Icons/EastIndiesAlpha_48.dds</File>
+    <File md5="D0FDD4FBBB91DB7F7FFD577DE2D46EE2" import="1">Art/Icons/EastIndies_256.dds</File>
+    <File md5="2AB479FC9F04E0FA79BED31C7228C5AE" import="1">Art/Icons/EastIndies_45.dds</File>
+    <File md5="5B023E7C4165EF40F45B47F0BE6E715D" import="1">Art/Icons/EastIndies_64.dds</File>
+    <File md5="084C755D61BD8C8C74F43DE578E89D14" import="1">Art/Icons/EastIndies_80.dds</File>
+    <File md5="2A50F0C6F2C3AE4D10F7559B5CB5D155" import="1">Art/Icons/FarEasternAlpha_48.dds</File>
+    <File md5="E5BBDD2BFA5FB591E78643543B4B3192" import="1">Art/Icons/GreatPlainsAlpha_48.dds</File>
+    <File md5="DBF4DB42E75001833DD071760253A538" import="1">Art/Icons/GreatPlains_256.dds</File>
+    <File md5="118D8D394C02713F9F107463ED7CEEBD" import="1">Art/Icons/GreatPlains_45.dds</File>
+    <File md5="A4FA6F2C4571763C1356527F12E62F1A" import="1">Art/Icons/GreatPlains_64.dds</File>
+    <File md5="04564E1A34DA9E980FC32460E7B698F2" import="1">Art/Icons/GreatPlains_80.dds</File>
+    <File md5="7163C8C198C551C0F485C24A4600750A" import="1">Art/Icons/HimalayanAlpha_48.dds</File>
+    <File md5="46E32CD2561676705926A974B6BA571C" import="1">Art/Icons/Himalayan_256.dds</File>
+    <File md5="CF488E1CC4F7DA8E4D310057741ABAC1" import="1">Art/Icons/Himalayan_45.dds</File>
+    <File md5="9DD364AA3863A3F670A4C75E0C4EE001" import="1">Art/Icons/Himalayan_64.dds</File>
+    <File md5="0BFC3E1E6B2ED740A7CE8A8DC132592E" import="1">Art/Icons/Himalayan_80.dds</File>
+    <File md5="068C37D1DC687C27CB52142E0B6B6EBA" import="1">Art/Icons/IndochinaAlpha_48.dds</File>
+    <File md5="E46F5F4D3859D0E725FEB2C8DE809BAE" import="1">Art/Icons/Iranian_256.dds</File>
+    <File md5="DC0B76F67809D87BB71F05FDDDAF1D6F" import="1">Art/Icons/Iranian_45.dds</File>
+    <File md5="FCBCFDFDF773F07819B2BF1D0CE58421" import="1">Art/Icons/Iranian_64.dds</File>
+    <File md5="2DCD2B7E0CB4B829F7DD0190F9F053C2" import="1">Art/Icons/Iranian_80.dds</File>
+    <File md5="9D2713E5868EF2B09EE4DEE908F7C5A6" import="1">Art/Icons/LevantineAlpha_48.dds</File>
+    <File md5="2447CD443005CBF1D3328F20D6C6539F" import="1">Art/Icons/MesoamericanAlpha_48.dds</File>
+    <File md5="912A8066E3B8FE6D37CD9342A0F4E133" import="1">Art/Icons/MesopotamicAlpha_48.dds</File>
+    <File md5="DE6B2D5959FEEE12AA871123413D60A8" import="1">Art/Icons/MidEasternAlpha_48.dds</File>
+    <File md5="A83D48F2EA1C8CE819E28EE0A0277811" import="1">Art/Icons/MidEastern_256.dds</File>
+    <File md5="AC38CC4B3B014329831191DED9E2BCAD" import="1">Art/Icons/MidEastern_45.dds</File>
+    <File md5="594C73FEADF220F9FE250E4216A9B811" import="1">Art/Icons/MidEastern_64.dds</File>
+    <File md5="E1FEEF5196137EA01971AD6293266B9F" import="1">Art/Icons/MidEastern_80.dds</File>
+    <File md5="FF5905AFF073B05DC4EE3A130D249664" import="1">Art/Icons/Amazonian_256.dds</File>
+    <File md5="41873CBE99D9F42C10345BF8A2FF95A5" import="1">Art/Icons/Amazonian_45.dds</File>
+    <File md5="0FA7C2000E707BF4997587CB1F64CC9A" import="1">Art/Icons/Amazonian_64.dds</File>
+    <File md5="4BC7907EFF9E3BC6A13ACEBEEC80E1ED" import="1">Art/Icons/Amazonian_80.dds</File>
+    <File md5="D0D8CACE7446E49EB13CDCBCF59D8C1D" import="1">Art/Icons/Indochina_256.dds</File>
+    <File md5="990BE38D71461FC17F1CCD3438178201" import="1">Art/Icons/Indochina_45.dds</File>
+    <File md5="7437B4D33DA8E4A4AB921B5EB189B95C" import="1">Art/Icons/Indochina_64.dds</File>
+    <File md5="54FB35DC9AEAD7438079C64C6D7A4CC5" import="1">Art/Icons/Indochina_80.dds</File>
+    <File md5="A55BE8C5AFF62D7DADC3AC63A8C20D2E" import="1">Art/Icons/Mesoamerican_256.dds</File>
+    <File md5="0308D08358646DA1AB3A229675F6B878" import="1">Art/Icons/Mesoamerican_45.dds</File>
+    <File md5="0609997676FFC22A8141627630105C4D" import="1">Art/Icons/Mesoamerican_64.dds</File>
+    <File md5="0E30AFBB38DA39FE324FB120CA10A596" import="1">Art/Icons/Mesoamerican_80.dds</File>
+    <File md5="D67559E5D33B00B98DAA5BE32A9623BF" import="1">Art/Icons/Mesopotamic_256.dds</File>
+    <File md5="2222EEB62EC7FC79192C4A2942FB5840" import="1">Art/Icons/Mesopotamic_45.dds</File>
+    <File md5="5BBE5FC3F58FC922D43F5BE9D7ED5FD2" import="1">Art/Icons/Mesopotamic_64.dds</File>
+    <File md5="DDA77D8CB2A9AFD6598467B41F6E38D0" import="1">Art/Icons/Mesopotamic_80.dds</File>
+    <File md5="F610F9B3514ED93924EB607462DB1173" import="1">Art/Icons/NorthernAlpha_48.dds</File>
+    <File md5="553F4F47F34F1103A5B4CCF24F871E62" import="1">Art/Icons/Northern_256.dds</File>
+    <File md5="6DD5C46628D63987AF81CCCF67D45FD2" import="1">Art/Icons/Northern_45.dds</File>
+    <File md5="C32EAE70C6770E1990363E51887EB6F3" import="1">Art/Icons/Northern_64.dds</File>
+    <File md5="251EF1348520A7BA76AB2BE6C255B5DF" import="1">Art/Icons/Northern_80.dds</File>
+    <File md5="82334C5E78CCED67E450CD376A5DE308" import="1">Art/Icons/OceanicAlpha_48.dds</File>
+    <File md5="1E0E3D5EFB3B66370B6F3BDCCADB3E8B" import="1">Art/Icons/Oceanic_256.dds</File>
+    <File md5="CAB6B81BB46E4CC9008FF4449220E84E" import="1">Art/Icons/Oceanic_45.dds</File>
+    <File md5="E1E93ABFEF0D458BCCCDD3A255152E53" import="1">Art/Icons/Oceanic_64.dds</File>
+    <File md5="6DCBC7EBD29069E06BEBA58F8D390AD0" import="1">Art/Icons/Oceanic_80.dds</File>
+    <File md5="8FFDE0B77B4D1FF19547DE4AB93BCB4A" import="1">Art/Icons/FarEastern_256.dds</File>
+    <File md5="5212296CBC640ECFF3366EFB30EA9ACF" import="1">Art/Icons/FarEastern_45.dds</File>
+    <File md5="29CCC4328BCAC1A2393AB6973D8C37EE" import="1">Art/Icons/FarEastern_64.dds</File>
+    <File md5="CC21A3B70A606E4A7AF2EF0070437008" import="1">Art/Icons/FarEastern_80.dds</File>
+    <File md5="711BFE97D6B21820E161151214BB189B" import="1">Art/Icons/PacificAlpha_48.dds</File>
+    <File md5="5097C0F9B366A18C8C3C91B4867909E9" import="1">Art/Icons/Pacific_256.dds</File>
+    <File md5="96FD1D344E88E7B50EDD71992A7D5ABC" import="1">Art/Icons/Pacific_45.dds</File>
+    <File md5="D9607BF7A4FD80280E30605559ADABC0" import="1">Art/Icons/Pacific_64.dds</File>
+    <File md5="31E9C3E976E473E26D1D3D2AA0547C85" import="1">Art/Icons/Pacific_80.dds</File>
+    <File md5="1A92DE92F48C36934A07F25EABEFDA9F" import="1">Art/Icons/PolarAlpha_48.dds</File>
+    <File md5="442843887611C412BB554344CE46BDEB" import="1">Art/Icons/Polar_256.dds</File>
+    <File md5="D224522FA6A3E928B5B9AA418B69F565" import="1">Art/Icons/Polar_45.dds</File>
+    <File md5="FBE88F2B3EEFC3F177733662AC51624D" import="1">Art/Icons/Polar_64.dds</File>
+    <File md5="74B2E024D727D7D63A607D9E1B33B21E" import="1">Art/Icons/Polar_80.dds</File>
+    <File md5="0D3E2F461973F0748EBA3F5F67365536" import="1">Art/Icons/Levantine_256.dds</File>
+    <File md5="41BA5E135766D10EC5155A251165EBAA" import="1">Art/Icons/Levantine_45.dds</File>
+    <File md5="0A5C9FB4023328DD90540CEE66529E71" import="1">Art/Icons/Levantine_64.dds</File>
+    <File md5="DC088A6D49ACBA75F24EC03DE7214863" import="1">Art/Icons/Levantine_80.dds</File>
+    <File md5="29C36C976852A5C0578703E22B2A3B9E" import="1">Art/Icons/SouthernAlpha_48.dds</File>
+    <File md5="D5F85467F028C83936C5C9E048D66FE9" import="1">Art/Icons/Southern_256.dds</File>
+    <File md5="E56E131B9DD54CEB18D722EA6FCEA6A8" import="1">Art/Icons/Southern_45.dds</File>
+    <File md5="E9A4FC101488E2D46BC254AC0308DD01" import="1">Art/Icons/Southern_64.dds</File>
+    <File md5="B065D1C3BA10341D30E61A0F767824CE" import="1">Art/Icons/Southern_80.dds</File>
+    <File md5="349C1E73A68AA6F5F16B48F3990B7E8B" import="1">Art/Icons/SteppeAlpha_48.dds</File>
+    <File md5="B992CE9E6292EEF2DAB70370FBE84881" import="1">Art/Icons/Steppe_256.dds</File>
+    <File md5="A8EFA24D6D21C83E0F42918708DD808A" import="1">Art/Icons/Steppe_45.dds</File>
+    <File md5="3C8AA0B522DC43C23002390E8381497D" import="1">Art/Icons/Steppe_64.dds</File>
+    <File md5="B19F0ACBE7BB8CEBDE0A5D51AC112C57" import="1">Art/Icons/Steppe_80.dds</File>
+    <File md5="91B19C80DDB2BD9266CEF07449F35714" import="1">Art/Icons/TotalitarianAlpha_48.dds</File>
+    <File md5="B8E46B1F3E7B9221DE713AD974FD2931" import="1">Art/Icons/Totalitarian_256.dds</File>
+    <File md5="F71169CEB8ACC88AB3980AAA0C64C497" import="1">Art/Icons/Totalitarian_45.dds</File>
+    <File md5="65AD639378EA406439B4AD0A8B12BCEB" import="1">Art/Icons/Totalitarian_64.dds</File>
+    <File md5="4BE7E714A7F97FF3207E92B4EF32AC04" import="1">Art/Icons/Totalitarian_80.dds</File>
+    <File md5="94FF68FF04C80411908C082E0607ED78" import="1">Art/Icons/WestAfricanAlpha_48.dds</File>
+    <File md5="6E5D3A92B31A6F73D264ECDD63732965" import="1">Art/Icons/WestAfrican_256.dds</File>
+    <File md5="BDDFB72FA2A76F1B83EFF9E564214B96" import="1">Art/Icons/WestAfrican_45.dds</File>
+    <File md5="294FCE25F7F999DF469C3B3720E5942A" import="1">Art/Icons/WestAfrican_64.dds</File>
+    <File md5="E5E7C165A2D4235FC428018ECD57A0ED" import="1">Art/Icons/WestAfrican_80.dds</File>
+    <File md5="382F2DF0327F5F3826AFD7D4B230FD80" import="1">Art/Icons/WesternAlpha_48.dds</File>
+    <File md5="BEE714437D75C1F0F5E3AFF77532497E" import="1">Art/Icons/Western_256.dds</File>
+    <File md5="4881B958161604575F09E84244A78F00" import="1">Art/Icons/Western_45.dds</File>
+    <File md5="6CA9F8F417B4900EFF85E1DC05BA1FE2" import="1">Art/Icons/Western_64.dds</File>
+    <File md5="03B6D3252009956E7E589966CFAFA9FB" import="1">Art/Icons/Western_80.dds</File>
+    <File md5="C7D90BC2356319FF9FCD636C668638EA" import="1">Art/Icons/WoodlandsAlpha_48.dds</File>
+    <File md5="E659565DFE7A6DEA8FED8045C17D3477" import="1">Art/Icons/Woodlands_256.dds</File>
+    <File md5="55FC9F82DFBFF4234F5CD53DFB019BC1" import="1">Art/Icons/Woodlands_45.dds</File>
+    <File md5="45B000581C1E624D51C2C9E0957DE797" import="1">Art/Icons/Woodlands_64.dds</File>
+    <File md5="4698525C184A0F29647831E29C3267C6" import="1">Art/Icons/Woodlands_80.dds</File>
+    <File md5="D830EA4B74507A47AD6DE2A03999E707" import="1">Art/UI/MeterBarFrame150.dds</File>
+    <File md5="C26A22F78FF4D90FA42B1F5BC635D263" import="1">Art/UI/meterbarframe164.dds</File>
+    <File md5="B39CE8D4451D7549E476466D8F225114" import="1">Art/UI/meterbargreatpersonback164.dds</File>
+    <File md5="EADA3F7AF38161F6AB1DFA3B600F67B6" import="0">Core/CulDiv_Audio.sql</File>
+    <File md5="CF34A1EA94B57AA1F37A342AD8778131" import="0">Core/CulDiv_CityStates.sql</File>
+    <File md5="16E11B1337A26E3414EC20D3C057492C" import="0">Core/CulDiv_DefeatScreenTag.sql</File>
+    <File md5="514187A3D484576A80EBE0A6EA34B6DA" import="0">Core/CulDiv_Icons.sql</File>
+    <File md5="4C14FE3F9FCC633079ADE6351F5D84F3" import="0">Core/CulDiv_ModSupport.sql</File>
+    <File md5="B68C7ABDC3F6E9D75E79F424C519B280" import="0">Core/CulDiv_Civilizations.sql</File>
+    <File md5="FD8208E2CA67CFB92573545F4FB5324A" import="0">Core/CulDiv_Cultures.sql</File>
+    <File md5="8B4ED75D5D9C63678646F275901D8CCE" import="0">Core/CulDiv_GameText.xml</File>
+    <File md5="EAD930BE58F884861170ADEFB87343D5" import="0">Core/CulDiv_Master.sql</File>
+    <File md5="12D4528C32C45231A941F46B4298E0E5" import="0">Core/CulDiv_SoundtrackTag.sql</File>
+    <File md5="ED3C1E66B36ED8654012391F5D89430C" import="0">Core/CulDiv_SplashScreenTag.sql</File>
+    <File md5="AACB676E8A80810A576FDFC9253A8840" import="0">Core/CulDiv_UnitDialogueTags.sql</File>
+    <File md5="704625194DB62FC61550E98AA2AB0C3F" import="0">Credits.txt</File>
+    <File md5="9AFC0B5A50B2C2A1978334BCD8A81800" import="0">Lua/JFD_CulDiv_DawnOfManPopup.lua</File>
+    <File md5="7ADC0D86B33E92DA64C10C0C78E5EC2B" import="0">Lua/JFD_CulDiv_DawnOfManPopup.xml</File>
+    <File md5="63C31A84C2DC0DF96C9E246079F9E307" import="1">Lua/Utilities/JFD_CulDivUtils.lua</File>
+    <File md5="F9C4DF8F32E6BD2D2DCE9AA5E980E962" import="1">Audio/Sounds/DawnOfMan.wav</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/CulDiv_Master.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_Audio.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_CityStates.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_Civilizations.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_Cultures.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_Icons.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_ModSupport.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_DefeatScreenTag.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_SplashScreenTag.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_SoundtrackTag.sql</UpdateDatabase>
+      <UpdateDatabase>Core/CulDiv_UnitDialogueTags.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/JFD_CulDiv_DawnOfManPopup.xml">
+      <Name>JFD_CulDiv_DawnOfManPopup.xml</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

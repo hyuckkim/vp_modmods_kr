@@ -50216,8 +50216,8 @@
 		<Column name="EntityEvent" type="text"  default="NULL"/>
 		<Column name="IconIndex" type="integer"  default="-1"/>
 		<Column name="IconAtlas" type="text"  default="NULL"/>
-		<Column name="ShowInPedia" type="boolean"  default="0"/>
-		<Column name="ShowInTechTree" type="boolean"  default="0"/>
+		<Column name="ShowInPedia" type="boolean"  default="1"/>
+		<Column name="ShowInTechTree" type="boolean"  default="1"/>
 	</Table> 
 	<Builds>
 		<Delete />
@@ -62909,8 +62909,8 @@
 		<Column name="Civilopedia" type="text"  default="NULL"/>
 		<Column name="CivilopediaTag" type="text"  />
 		<Column name="Strategy" type="text"  />
-		<Column name="Playable" type="boolean"  default="0"/>
-		<Column name="AIPlayable" type="boolean"  default="0"/>
+		<Column name="Playable" type="boolean"  default="1"/>
+		<Column name="AIPlayable" type="boolean"  default="1"/>
 		<Column name="ShortDescription" type="text"  default="NULL"/>
 		<Column name="Adjective" type="text"  default="NULL"/>
 		<Column name="DefaultPlayerColor" type="text"  default="NULL"/>
@@ -91477,9 +91477,9 @@
 		<Column name="Description" type="text"  />
 		<Column name="Help" type="text"  />
 		<Column name="Default" type="boolean"  default="0"/>
-		<Column name="Visible" type="boolean"  default="0"/>
-		<Column name="SupportsSinglePlayer" type="boolean"  default="0"/>
-		<Column name="SupportsMultiplayer" type="boolean"  default="0"/>
+		<Column name="Visible" type="boolean"  default="1"/>
+		<Column name="SupportsSinglePlayer" type="boolean"  default="1"/>
+		<Column name="SupportsMultiplayer" type="boolean"  default="1"/>
 	</Table> 
 	<GameOptions>
 		<Delete />
@@ -101492,8 +101492,8 @@
 	<Table name="Improvement_ResourceTypes">
 		<Column name="ImprovementType" type="text"  />
 		<Column name="ResourceType" type="text"  />
-		<Column name="ResourceMakesValid" type="boolean"  default="0"/>
-		<Column name="ResourceTrade" type="boolean"  default="0"/>
+		<Column name="ResourceMakesValid" type="boolean"  default="1"/>
+		<Column name="ResourceTrade" type="boolean"  default="1"/>
 		<Column name="DiscoveryRand" type="integer"  default="0"/>
 		<Column name="QuantityRequirement" type="integer"  default="0"/>
 	</Table> 
@@ -124603,20 +124603,20 @@
 		<Column name="RequireBiggestLandmass" type="boolean"  default="0"/>
 		<Column name="AvoidBiggestLandmass" type="boolean"  default="0"/>
 		<Column name="RequireFreshWater" type="boolean"  default="0"/>
-		<Column name="AvoidFreshWater" type="boolean"  default="0"/>
-		<Column name="LandBased" type="boolean"  default="0"/>
+		<Column name="AvoidFreshWater" type="boolean"  default="1"/>
+		<Column name="LandBased" type="boolean"  default="1"/>
 		<Column name="RequireLandAdjacentToOcean" type="boolean"  default="0"/>
 		<Column name="AvoidLandAdjacentToOcean" type="boolean"  default="0"/>
 		<Column name="RequireLandOnePlotInland" type="boolean"  default="0"/>
 		<Column name="AvoidLandOnePlotInland" type="boolean"  default="0"/>
 		<Column name="RequireLandTwoOrMorePlotsInland" type="boolean"  default="0"/>
 		<Column name="AvoidLandTwoOrMorePlotsInland" type="boolean"  default="0"/>
-		<Column name="CoreTileCanBeAnyPlotType" type="boolean"  default="0"/>
+		<Column name="CoreTileCanBeAnyPlotType" type="boolean"  default="1"/>
 		<Column name="CoreTileCanBeFlatland" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeHills" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeMountain" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeOcean" type="boolean"  default="0"/>
-		<Column name="CoreTileCanBeAnyTerrainType" type="boolean"  default="0"/>
+		<Column name="CoreTileCanBeAnyTerrainType" type="boolean"  default="1"/>
 		<Column name="CoreTileCanBeGrass" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBePlains" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeDesert" type="boolean"  default="0"/>
@@ -124624,7 +124624,7 @@
 		<Column name="CoreTileCanBeSnow" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeShallowWater" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeDeepWater" type="boolean"  default="0"/>
-		<Column name="CoreTileCanBeAnyFeatureType" type="boolean"  default="0"/>
+		<Column name="CoreTileCanBeAnyFeatureType" type="boolean"  default="1"/>
 		<Column name="CoreTileCanBeNoFeature" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeForest" type="boolean"  default="0"/>
 		<Column name="CoreTileCanBeJungle" type="boolean"  default="0"/>
@@ -124678,7 +124678,7 @@
 		<Column name="MaximumAllowedAdjacentDesert" type="integer"  default="99"/>
 		<Column name="AdjacentTilesAvoidTundra" type="boolean"  default="0"/>
 		<Column name="MaximumAllowedAdjacentTundra" type="integer"  default="99"/>
-		<Column name="AdjacentTilesAvoidSnow" type="boolean"  default="0"/>
+		<Column name="AdjacentTilesAvoidSnow" type="boolean"  default="1"/>
 		<Column name="MaximumAllowedAdjacentSnow" type="integer"  default="0"/>
 		<Column name="AdjacentTilesAvoidShallowWater" type="boolean"  default="0"/>
 		<Column name="MaximumAllowedAdjacentShallowWater" type="integer"  default="99"/>
@@ -124713,7 +124713,7 @@
 		<Column name="MaximumAllowedAdjacentFloodPlains" type="integer"  default="99"/>
 		<Column name="AdjacentTilesAvoidMarsh" type="boolean"  default="0"/>
 		<Column name="MaximumAllowedAdjacentMarsh" type="integer"  default="99"/>
-		<Column name="AdjacentTilesAvoidIce" type="boolean"  default="0"/>
+		<Column name="AdjacentTilesAvoidIce" type="boolean"  default="1"/>
 		<Column name="MaximumAllowedAdjacentIce" type="integer"  default="0"/>
 		<Column name="AdjacentTilesAvoidAtoll" type="boolean"  default="0"/>
 		<Column name="MaximumAllowedAdjacentAtoll" type="integer"  default="99"/>
@@ -126935,115 +126935,115 @@
 			<ID>0</ID> 
 			<NotificationType>NOTIFICATION_GENERIC</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>1</ID> 
 			<NotificationType>NOTIFICATION_TECH</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>2</ID> 
 			<NotificationType>NOTIFICATION_FREE_TECH</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>3</ID> 
 			<NotificationType>NOTIFICATION_POLICY</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>4</ID> 
 			<NotificationType>NOTIFICATION_PRODUCTION</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>5</ID> 
 			<NotificationType>NOTIFICATION_MET_MINOR</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>6</ID> 
 			<NotificationType>NOTIFICATION_MINOR</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>7</ID> 
 			<NotificationType>NOTIFICATION_MINOR_QUEST</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>8</ID> 
 			<NotificationType>NOTIFICATION_ENEMY_IN_TERRITORY</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>9</ID> 
 			<NotificationType>NOTIFICATION_CITY_RANGE_ATTACK</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>10</ID> 
 			<NotificationType>NOTIFICATION_BARBARIAN</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>11</ID> 
 			<NotificationType>NOTIFICATION_GOODY</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>12</ID> 
 			<NotificationType>NOTIFICATION_BUY_TILE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>13</ID> 
 			<NotificationType>NOTIFICATION_CITY_GROWTH</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>14</ID> 
 			<NotificationType>NOTIFICATION_CITY_TILE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>15</ID> 
 			<NotificationType>NOTIFICATION_DEMAND_RESOURCE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>16</ID> 
 			<NotificationType>NOTIFICATION_UNIT_PROMOTION</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>17</ID> 
 			<NotificationType>NOTIFICATION_WONDER_COMPLETED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>18</ID> 
 			<NotificationType>NOTIFICATION_WONDER_COMPLETED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>19</ID> 
@@ -127055,25 +127055,25 @@
 			<ID>20</ID> 
 			<NotificationType>NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>21</ID> 
 			<NotificationType>NOTIFICATION_GOLDEN_AGE_ENDED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>22</ID> 
 			<NotificationType>NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>23</ID> 
 			<NotificationType>NOTIFICATION_STARVING</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>24</ID> 
@@ -127085,7 +127085,7 @@
 			<ID>25</ID> 
 			<NotificationType>NOTIFICATION_WAR</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>26</ID> 
@@ -127097,19 +127097,19 @@
 			<ID>27</ID> 
 			<NotificationType>NOTIFICATION_PEACE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>28</ID> 
 			<NotificationType>NOTIFICATION_VICTORY</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>29</ID> 
 			<NotificationType>NOTIFICATION_UNIT_DIED</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>30</ID> 
@@ -127133,7 +127133,7 @@
 			<ID>33</ID> 
 			<NotificationType>NOTIFICATION_CAPITAL_RECOVERED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>34</ID> 
@@ -127145,85 +127145,85 @@
 			<ID>35</ID> 
 			<NotificationType>NOTIFICATION_DISCOVERED_LUXURY_RESOURCE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>36</ID> 
 			<NotificationType>NOTIFICATION_DISCOVERED_STRATEGIC_RESOURCE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>37</ID> 
 			<NotificationType>NOTIFICATION_DISCOVERED_BONUS_RESOURCE</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>38</ID> 
 			<NotificationType>NOTIFICATION_DIPLO_VOTE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>39</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_RACE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>40</ID> 
 			<NotificationType>NOTIFICATION_EXPLORATION_RACE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>41</ID> 
 			<NotificationType>NOTIFICATION_DIPLOMACY_DECLARATION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>42</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_GPT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>43</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_RESOURCE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>44</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_OPEN_BORDERS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>45</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_DEFENSIVE_PACT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>46</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_RESEARCH_AGREEMENT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>47</ID> 
 			<NotificationType>NOTIFICATION_DEAL_EXPIRED_TRADE_AGREEMENT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>48</ID> 
 			<NotificationType>NOTIFICATION_TECH_AWARD</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>49</ID> 
@@ -127247,559 +127247,559 @@
 			<ID>52</ID> 
 			<NotificationType>NOTIFICATION_PROJECT_COMPLETED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>53</ID> 
 			<NotificationType>NOTIFICATION_REBELS</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>54</ID> 
 			<NotificationType>NOTIFICATION_FREE_POLICY</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>55</ID> 
 			<NotificationType>NOTIFICATION_FREE_GREAT_PERSON</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>56</ID> 
 			<NotificationType>NOTIFICATION_DENUNCIATION_EXPIRED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>57</ID> 
 			<NotificationType>NOTIFICATION_FRIENDSHIP_EXPIRED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>58</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_FOUNDED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>59</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_FOUNDED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>60</ID> 
 			<NotificationType>NOTIFICATION_PANTHEON_FOUNDED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>61</ID> 
 			<NotificationType>NOTIFICATION_PANTHEON_FOUNDED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>62</ID> 
 			<NotificationType>NOTIFICATION_FOUND_PANTHEON</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>63</ID> 
 			<NotificationType>NOTIFICATION_FOUND_RELIGION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>64</ID> 
 			<NotificationType>NOTIFICATION_ENHANCE_RELIGION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>65</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_ENHANCED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>66</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_ENHANCED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>67</ID> 
 			<NotificationType>NOTIFICATION_SPY_CREATED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>68</ID> 
 			<NotificationType>NOTIFICATION_SPY_STOLE_TECH</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>69</ID> 
 			<NotificationType>NOTIFICATION_SPY_CANT_STEAL_TECH</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>70</ID> 
 			<NotificationType>NOTIFICATION_CAN_BUILD_MISSIONARY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>71</ID> 
 			<NotificationType>NOTIFICATION_OTHER_PLAYER_NEW_ERA</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>72</ID> 
 			<NotificationType>NOTIFICATION_SPY_EVICTED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>73</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_SPREAD</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>74</ID> 
 			<NotificationType>NOTIFICATION_TECH_STOLEN_SPY_DETECTED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>75</ID> 
 			<NotificationType>NOTIFICATION_TECH_STOLEN_SPY_IDENTIFIED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>76</ID> 
 			<NotificationType>NOTIFICATION_SPY_WAS_KILLED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>77</ID> 
 			<NotificationType>NOTIFICATION_SPY_KILLED_A_SPY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>78</ID> 
 			<NotificationType>NOTIFICATION_SPY_REPLACEMENT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>79</ID> 
 			<NotificationType>NOTIFICATION_MAYA_LONG_COUNT</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>80</ID> 
 			<NotificationType>NOTIFICATION_FAITH_GREAT_PERSON</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>81</ID> 
 			<NotificationType>NOTIFICATION_SPY_PROMOTION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>82</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_DECEPTION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>83</ID> 
 			<NotificationType>NOTIFICATION_SPY_RIG_ELECTION_SUCCESS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>84</ID> 
 			<NotificationType>NOTIFICATION_SPY_RIG_ELECTION_FAILURE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>85</ID> 
 			<NotificationType>NOTIFICATION_SPY_RIG_ELECTION_ALERT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>86</ID> 
 			<NotificationType>NOTIFICATION_SPY_YOU_STAGE_COUP_SUCCESS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>87</ID> 
 			<NotificationType>NOTIFICATION_SPY_YOU_STAGE_COUP_FAILURE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>88</ID> 
 			<NotificationType>NOTIFICATION_SPY_STAGE_COUP_SUCCESS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>89</ID> 
 			<NotificationType>NOTIFICATION_SPY_STAGE_COUP_FAILURE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>90</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_BUILDING_SNEAK_ATTACK_ARMY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>91</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_BUILDING_SNEAK_ATTACK_AMPHIBIOUS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>92</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>93</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_KNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>94</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>95</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_KNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>96</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>97</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>98</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_KNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>99</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>100</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_KNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>101</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_UNKNOWN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>102</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_ERROR</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>103</ID> 
 			<NotificationType>NOTIFICATION_AUTOMATIC_FAITH_PURCHASE_STOPPED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>104</ID> 
 			<NotificationType>NOTIFICATION_EXPANSION_PROMISE_EXPIRED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>105</ID> 
 			<NotificationType>NOTIFICATION_BORDER_PROMISE_EXPIRED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>106</ID> 
 			<NotificationType>NOTIFICATION_TRADE_ROUTE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>107</ID> 
 			<NotificationType>NOTIFICATION_TRADE_ROUTE_BROKEN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>108</ID> 
 			<NotificationType>NOTIFICATION_RELIGION_SPREAD_NATURAL</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>109</ID> 
 			<NotificationType>NOTIFICATION_INTRIGUE_CONSTRUCTING_WONDER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>110</ID> 
 			<NotificationType>NOTIFICATION_MINOR_BUYOUT</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>111</ID> 
 			<NotificationType>NOTIFICATION_REQUEST_RESOURCE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>112</ID> 
 			<NotificationType>NOTIFICATION_LIBERATED_MAJOR_CITY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>113</ID> 
 			<NotificationType>NOTIFICATION_RESURRECTED_MAJOR_CIV</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>114</ID> 
 			<NotificationType>NOTIFICATION_ADD_REFORMATION_BELIEF</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>115</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_CALL_FOR_PROPOSALS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>116</ID> 
 			<NotificationType>NOTIFICATION_CHOOSE_ARCHAEOLOGY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>117</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_CALL_FOR_VOTES</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>118</ID> 
 			<NotificationType>NOTIFICATION_CHOOSE_IDEOLOGY</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>119</ID> 
 			<NotificationType>NOTIFICATION_IDEOLOGY_CHOSEN</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>120</ID> 
 			<NotificationType>NOTIFICATION_DIPLOMAT_EJECTED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>121</ID> 
 			<NotificationType>NOTIFICATION_INTERNATIONAL_TRADE_UNIT_PLUNDERED_TRADER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>122</ID> 
 			<NotificationType>NOTIFICATION_INTERNATIONAL_TRADE_UNIT_PLUNDERED_TRADEE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>123</ID> 
 			<NotificationType>NOTIFICATION_REFORMATION_BELIEF_ADDED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>124</ID> 
 			<NotificationType>NOTIFICATION_REFORMATION_BELIEF_ADDED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>125</ID> 
 			<NotificationType>NOTIFICATION_GREAT_WORK_COMPLETED_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>2</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>126</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_VOTING_DONE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>127</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_VOTING_SOON</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>128</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_SOMEONE_INFLUENTIAL</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>129</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_WITHIN_TWO</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>130</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_WITHIN_TWO_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>131</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_WITHIN_ONE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>132</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_WITHIN_ONE_ACTIVE_PLAYER</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>133</ID> 
 			<NotificationType>NOTIFICATION_CULTURE_VICTORY_NO_LONGER_INFLUENTIAL</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>134</ID> 
 			<NotificationType>NOTIFICATION_PLAYER_RECONNECTED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>135</ID> 
 			<NotificationType>NOTIFICATION_PLAYER_DISCONNECTED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>136</ID> 
 			<NotificationType>NOTIFICATION_TURN_MODE_SEQUENTIAL</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>137</ID> 
 			<NotificationType>NOTIFICATION_TURN_MODE_SIMULTANEOUS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>138</ID> 
 			<NotificationType>NOTIFICATION_HOST_MIGRATION</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>139</ID> 
 			<NotificationType>NOTIFICATION_PLAYER_CONNECTING</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>140</ID> 
 			<NotificationType>NOTIFICATION_CITY_REVOLT_POSSIBLE</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>141</ID> 
 			<NotificationType>NOTIFICATION_CITY_REVOLT</NotificationType> 
 			<Welcomeness>-1</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>142</ID> 
 			<NotificationType>NOTIFICATION_PLAYER_KICKED</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>143</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_PROJECT_COMPLETE</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 		<Row> 
 			<ID>144</ID> 
 			<NotificationType>NOTIFICATION_LEAGUE_PROJECT_PROGRESS</NotificationType> 
 			<Welcomeness>0</Welcomeness> 
-			<Urgent>0</Urgent> 
+			<Urgent>false</Urgent> 
 		</Row>
 	</Notifications> 
 
@@ -152874,7 +152874,7 @@
 	<Table name="TacticalMoves">
 		<Column name="ID" type="integer"  primarykey="true" autoincrement="true" />
 		<Column name="Type" type="text"  unique="true" notnull="true" />
-		<Column name="OperationsCanRecruit" type="boolean"  default="0"/>
+		<Column name="OperationsCanRecruit" type="boolean"  default="1"/>
 		<Column name="DominanceZoneMove" type="boolean"  default="0"/>
 		<Column name="OffenseFlavorWeight" type="integer"  />
 		<Column name="DefenseFlavorWeight" type="integer"  />
@@ -166578,371 +166578,6 @@
 			<UnitType>UNIT_SWEDISH_HAKKAPELIITTA</UnitType> 
 			<SelectionSound>AS2D_SELECT_HORSEMAN</SelectionSound> 
 			<FirstSelectionSound>AS2D_BIRTH_HORSEMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_KNIGHT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_KNIGHT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SPANISH_TERCIO</UnitType> 
-			<SelectionSound>AS2D_SELECT_PIKEMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_PIKEMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_ETHIOPIAN_MEHAL_SEFARI</UnitType> 
-			<SelectionSound>AS2D_SELECT_MUSKETMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_MUSKETMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GALLEASS</UnitType> 
-			<SelectionSound>AS2D_SELECT_TRIREME</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TRIREME</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GATLINGGUN</UnitType> 
-			<SelectionSound>AS2D_SELECT_CANNON</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_CANNON</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GREAT_ADMIRAL</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GREAT_WAR_INFANTRY</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_INQUISITOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MACHINE_GUN</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MARINE</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MISSIONARY</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_PRIVATEER</UnitType> 
-			<SelectionSound>AS2D_SELECT_FRIGATE</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_FRIGATE</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_PROPHET</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_TRIPLANE</UnitType> 
-			<SelectionSound>AS2D_SELECT_FIGHTER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_FIGHTER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_WWI_BOMBER</UnitType> 
-			<SelectionSound>AS2D_SELECT_BOMBER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_BOMBER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_WWI_TANK</UnitType> 
-			<SelectionSound>AS2D_SELECT_TANK</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TANK</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_ARCHAEOLOGIST</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_ASSYRIAN_SIEGE_TOWER</UnitType> 
-			<SelectionSound>AS2D_SELECT_CATAPULT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CATAPULT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BARBARIAN_AXMAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARCHER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARCHER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BAZOOKA</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARTILLERY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARTILLERY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BERBER_CAVALRY</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BRAZILIAN_PRACINHA</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_CARAVAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_CARGO_SHIP</UnitType> 
-			<SelectionSound>AS2D_SELECT_CARRIER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CARRIER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_KRIS_SWORDSMAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_SWORDSMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SWORDSMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MUSICIAN</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_POLISH_WINGED_HUSSAR</UnitType> 
-			<SelectionSound>AS2D_SELECT_KNIGHT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_KNIGHT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_PORTUGUESE_NAU</UnitType> 
-			<SelectionSound>AS2D_SELECT_FRIGATE</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_FRIGATE</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SHOSHONE_COMANCHE_RIDERS</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType> 
-			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_VENETIAN_GALLEASS</UnitType> 
-			<SelectionSound>AS2D_SELECT_TRIREME</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TRIREME</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_VENETIAN_MERCHANT</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_WRITER</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_XCOM_SQUAD</UnitType> 
-			<SelectionSound>AS2D_SELECT_PARATROOPER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_PARATROOPER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_ZULU_IMPI</UnitType> 
-			<SelectionSound>AS2D_SELECT_PIKEMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_PIKEMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MONGOLIAN_KESHIK</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MONGOLIAN_KHAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_INCAN_SLINGER</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARCHER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARCHER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_KNIGHT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_KNIGHT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SPANISH_TERCIO</UnitType> 
-			<SelectionSound>AS2D_SELECT_PIKEMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_PIKEMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_POLYNESIAN_MAORI_WARRIOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_AZTEC_JAGUAR</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_AZTEC_JAGUAR</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_DANISH_BERSERKER</UnitType> 
-			<SelectionSound>AS2D_SELECT_WARRIER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_WARRIER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_DANISH_SKI_INFANTRY</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_KOREAN_HWACHA</UnitType> 
-			<SelectionSound>AS2D_SELECT_CANNON</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CANNON</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_KOREAN_TURTLE_SHIP</UnitType> 
-			<SelectionSound>AS2D_SELECT_CARAVEL</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CARAVEL</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BABYLONIAN_BOWMAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARCHER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARCHER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_AUSTRIAN_HUSSAR</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BYZANTINE_CATAPHRACT</UnitType> 
-			<SelectionSound>AS2D_SELECT_KNIGHT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_KNIGHT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_BYZANTINE_DROMON</UnitType> 
-			<SelectionSound>AS2D_SELECT_CARAVEL</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CARAVEL</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_CARTHAGINIAN_FOREST_ELEPHANT</UnitType> 
-			<SelectionSound>AS2D_SELECT_SIAMESE_WAR_ELEPHANT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SIAMESE_WAR_ELEPHANT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_CARTHAGINIAN_QUINQUEREME</UnitType> 
-			<SelectionSound>AS2D_SELECT_TRIREME</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TRIREME</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_CELT_PICTISH_WARRIOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_SWORDSMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SWORDSMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARCHER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARCHER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_DUTCH_SEA_BEGGAR</UnitType> 
-			<SelectionSound>AS2D_SELECT_FRIGATE</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_FRIGATE</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_ETHIOPIAN_MEHAL_SEFARI</UnitType> 
-			<SelectionSound>AS2D_SELECT_MUSKETMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_MUSKETMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GALLEASS</UnitType> 
-			<SelectionSound>AS2D_SELECT_TRIREME</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TRIREME</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GATLINGGUN</UnitType> 
-			<SelectionSound>AS2D_SELECT_CANNON</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_CANNON</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GREAT_ADMIRAL</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_GREAT_WAR_INFANTRY</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_HUN_BATTERING_RAM</UnitType> 
-			<SelectionSound>AS2D_SELECT_CATAPULT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CATAPULT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_HUN_HORSE_ARCHER</UnitType> 
-			<SelectionSound>AS2D_SELECT_CAVALRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_CAVALRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_INQUISITOR</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MACHINE_GUN</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MARINE</UnitType> 
-			<SelectionSound>AS2D_SELECT_INFANTRY</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_INFANTRY</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MAYAN_ATLATLIST</UnitType> 
-			<SelectionSound>AS2D_SELECT_ARCHER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_ARCHER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_MISSIONARY</UnitType> 
-			<SelectionSound>AS2D_SELECT_SETTLER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_SETTLER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_PRIVATEER</UnitType> 
-			<SelectionSound>AS2D_SELECT_FRIGATE</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_FRIGATE</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_PROPHET</UnitType> 
-			<SelectionSound>AS2D_BUILD_UNIT</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SWEDISH_CAROLEAN</UnitType> 
-			<SelectionSound>AS2D_SELECT_MUSKETMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BUILD_MUSKETMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_SWEDISH_HAKKAPELIITTA</UnitType> 
-			<SelectionSound>AS2D_SELECT_HORSEMAN</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_HORSEMAN</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_TRIPLANE</UnitType> 
-			<SelectionSound>AS2D_SELECT_FIGHTER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_FIGHTER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_WWI_BOMBER</UnitType> 
-			<SelectionSound>AS2D_SELECT_BOMBER</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_BOMBER</FirstSelectionSound> 
-		</Row>
-		<Row> 
-			<UnitType>UNIT_WWI_TANK</UnitType> 
-			<SelectionSound>AS2D_SELECT_TANK</SelectionSound> 
-			<FirstSelectionSound>AS2D_BIRTH_TANK</FirstSelectionSound> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType> 
@@ -204229,7 +203864,7 @@
 		<Column name="LeaderPromotion" type="text"  default="NULL"/>
 		<Column name="LeaderExperience" type="integer"  default="0"/>
 		<Column name="DontShowYields" type="boolean"  default="0"/>
-		<Column name="ShowInPedia" type="boolean"  default="0"/>
+		<Column name="ShowInPedia" type="boolean"  default="1"/>
 		<Column name="MoveRate" type="text"  default="BIPED"/>
 		<Column name="UnitFlagIconOffset" type="integer"  default="0"/>
 		<Column name="PortraitIndex" type="integer"  default="-1"/>

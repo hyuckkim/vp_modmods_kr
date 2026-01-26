@@ -87,8 +87,8 @@ INSERT INTO Building_ResourceYieldChanges
 	(BuildingType, ResourceType, YieldType, Yield)
 VALUES
     ('BUILDING_WORKSHOP', 'RESOURCE_OAK', 'YIELD_GOLD', 2),
-	('BUILDING_KREPOST', 'RESOURCE_OAK', 'YIELD_PRODUCTION', 1),
-    ('BUILDING_KREPOST', 'RESOURCE_OAK', 'YIELD_GOLD', 1);
+	('BUILDING_KREPOST', 'RESOURCE_OAK', 'YIELD_PRODUCTION', 2),
+    ('BUILDING_KREPOST', 'RESOURCE_OAK', 'YIELD_GOLD', 2);
 
 
 
@@ -152,12 +152,13 @@ VALUES	('RESOURCE_OAK',  'UNITCOMBAT_SIEGE',                null, 		'ERA_RENAISS
 INSERT INTO Building_ResourceQuantityRequirements
 	(BuildingType, ResourceType, Cost)
 VALUES
-    ('BUILDING_COAL_PLANT', 'RESOURCE_OAK', 3);
+    ('BUILDING_REFINERY', 'RESOURCE_OAK', 3);
 
-UPDATE BuildingClasses SET MaxPlayerInstances = -1 WHERE Type = 'BUILDINGCLASS_COAL_PLANT';
-UPDATE Language_en_US
-SET Text = 'Produces 1 [ICON_RES_IRON] Iron, [ICON_RES_COAL] Coal, and [ICON_RES_OIL] Oil.'
-WHERE Tag = 'TXT_KEY_BUILDING_COAL_PLANT_HELP';
+UPDATE BuildingClasses SET MaxPlayerInstances = -1 WHERE Type = 'BUILDINGCLASS_REFINERY';
+					 
+																						   
+											   
+
 
 
 DELETE FROM Unit_ResourceQuantityRequirements WHERE UnitType IN ('UNIT_BB_IRONCLAD', 'UNIT_CRUISER', 'UNIT_BB_SHIP_OF_THE_LINE', 'UNIT_ENGLISH_SHIPOFTHELINE');
@@ -167,6 +168,8 @@ VALUES ('UNIT_BB_IRONCLAD', 'RESOURCE_IRON', 1);
 
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 VALUES 
+('UNIT_TREASURE_SHIP',	'RESOURCE_OAK',	1),
+('UNIT_DJONG',	'RESOURCE_OAK',	1),
 ('UNIT_TREBUCHET',	'RESOURCE_OAK',	1),
 ('UNIT_KOREAN_HWACHA',	'RESOURCE_OAK',	1),
 ('UNIT_FRIGATE',	'RESOURCE_OAK',	1),
@@ -191,12 +194,12 @@ INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_CIV5_RESOURCE_OAK_TEXT', 'Timber is a vital resource in the pre-industrial era, enabling the construction of ships and siege weapons. Like other strategic resources, Timber must be connected to your trade network to be used.'),
 ('TXT_KEY_RESOURCE_MONOPOLY_STRAT_OAK', '[COLOR_POSITIVE_TEXT]Strategic Monopoly Bonus:[ENDCOLOR] Units gain +10% [ICON_STRENGTH] Strength when defending.');
 
-INSERT INTO Improvement_ResourceTypes -- this is just to prevent the bug where the resource graphic shows up when you put a GPTI on the tile
-		(ResourceType, ImprovementType)
-SELECT	r.Type, i.Type
-FROM Resources r, Improvements i WHERE r.Type IN('RESOURCE_OAK', 'RESOURCE_CAMEL') AND i.CreatedByGreatPerson = 1;
+																																			
+								 
+					 
+																												  
 
-	
+
 ---------------------------------------------------------
 -- EAST_INDIA
 ---------------------------------------------------------
@@ -231,25 +234,29 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield) VALUES
 ('BUILDING_EAST_INDIA_COMP', 'YIELD_CULTURE', 1); 
 
 	UPDATE Buildings SET NumTradeRouteBonus = 1 WHERE Type = 'BUILDING_EAST_INDIA_COMP';
+	
+
+	
+	INSERT INTO Building_YieldChangesPerMonopoly
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_EAST_INDIA_COMP', 'YIELD_GOLD', 10);
 		
-	INSERT INTO Building_FreeUnits 
-				(BuildingType,					UnitType,				NumUnits)
-	VALUES		('BUILDING_EAST_INDIA_COMP',		'UNIT_GREAT_ADMIRAL',	1);
+
 	
 	INSERT INTO Building_UnitCombatProductionModifiersGlobal 	
 				(BuildingType,				UnitCombatType,				Modifier) 
-	VALUES		('BUILDING_EAST_INDIA_COMP',	'UNITCOMBAT_CARRIER',		10),
-				('BUILDING_EAST_INDIA_COMP',	'UNITCOMBAT_CARGO',			10);
+	VALUES		('BUILDING_EAST_INDIA_COMP',	'UNITCOMBAT_CARGO',			50);
+														   
 
 INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
 ('BUILDING_EAST_INDIA_COMP',	'FLAVOR_WONDER',		20),
 ('BUILDING_EAST_INDIA_COMP',	'FLAVOR_NAVAL',			25),
-('BUILDING_EAST_INDIA_COMP',	'FLAVOR_GREAT_PEOPLE',	15),
+														
 ('BUILDING_EAST_INDIA_COMP',	'FLAVOR_PRODUCTION',	5);
 
 INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EAST_INDIA_COMP', 'East India Company'),
-('TXT_KEY_WONDER_EAST_INDIA_COMP_HELP', 'Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_ADMIRAL] Great Admiral.[NEWLINE] Gain 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_INTERNATIONAL_TRADE] Trade Route slots. +10% [ICON_PRODUCTION] Production towards Naval Capital Units and Cargo Ships in all Cities. Also grants 4 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_RES_OAK] Timber.'),
+('TXT_KEY_WONDER_EAST_INDIA_COMP_HELP', ''),
 ('TXT_KEY_WONDER_EAST_INDIA_COMP_QUOTE', '[NEWLINE]"All other lands found on the western side of the boundary shall belong to the King and Queen of Castille - and their successors."[NEWLINE] - Treaty of Tordesillas[NEWLINE]'),
 ('TXT_KEY_WONDER_EAST_INDIA_COMP_PEDIA', 'The East India Company was an joint-stock company and was formed to trade in the Indian Ocean region.The company gained control of large parts of the Indian subcontinent and colonised parts of Southeast Asia and Hong Kong. At its peak, the company was the largest corporation in the world by various measures and had its own armed forces.');
-		

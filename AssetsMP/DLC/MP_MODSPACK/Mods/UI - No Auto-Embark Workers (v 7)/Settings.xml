@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<PNM_Mods>
+		<Row>
+			<Mod>1299a368-f6c8-4d02-af55-2fc863dd2fb4</Mod>
+			<Description>UI - No Auto-Embark Workers</Description>
+			<Name>Workers</Name>
+			<Tooltip>No Auto-Embark Workers</Tooltip>
+		</Row>
+	</PNM_Mods>
+
+	<PNM_Options>
+		<Row>
+			<Mod>1299a368-f6c8-4d02-af55-2fc863dd2fb4</Mod>
+			<Type>OPTION_WORKER_EMBARK_LAKE</Type>
+			<Description>Workers are allowed to embark over lakes</Description>
+			<Name>Embark Lakes</Name>
+			<Tooltip>Workers can embark over lakes</Tooltip>
+			<Default>true</Default>
+			<Order>1</Order>
+		</Row>
+		<Row>
+			<Mod>1299a368-f6c8-4d02-af55-2fc863dd2fb4</Mod>
+			<Type>OPTION_WORKER_EMBARK_OCEAN</Type>
+			<Description>Workers are allowed to embark over lakes and oceans</Description>
+			<Name>Embark Oceans</Name>
+			<Tooltip>Workers can embark over lakes and oceans</Tooltip>
+			<Default>false</Default>
+			<Order>2</Order>
+		</Row>
+	</PNM_Options>
+</GameData>

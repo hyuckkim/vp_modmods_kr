@@ -1,0 +1,45 @@
+<Asset>
+
+	<Mesh file="B52.gr2"/>
+	<TimedTrigger file="fx_triggers_EAW_B52.ftsxml"/>
+	
+	<Animation file="StealthBomber_Run.gr2" ec="1400"/>
+	<Animation file="StealthBomber_Idle.gr2" ec="1000"/>
+	<Animation file="StealthBomber_Attack_Air.gr2" ec="1100"/>
+	<Animation file="StealthBomber_Bombardment.gr2" ec="1180"/>
+	<Animation file="StealthBomber_DeathA.gr2" ec="1200"/>
+	<Animation file="StealthBomber_DeathA_Idle.gr2" ec="1220"/>
+	<Animation file="StealthBomber_DeathB.gr2" ec="2200"/>
+	<Animation file="StealthBomber_DeathB_Idle.gr2" ec="2220"/>
+	<Texture file="Unit_Environment_Dull.dds"/>
+	<Texture file="Unit_Environment_Sharp.dds"/>
+	<Texture file="Unit_Irradiance.dds"/>
+	<Texture file="B52.dds"/>
+	<Texture file="stealthbomber_gloss.dds"/>
+	<AnimGraph file="IDLE_A_GRAPH.dge"/>
+	<AnimGraph file="DEATH_FINAL_GRAPH.dge"/>
+	<AnimGraph file="RUNNING_LOOP_GRAPH.dge"/>
+	<AnimGraph file="PLANES_ATTACK_02.dge"/>
+	<AnimGraph file="PLANES_DEATH.dge"/>
+	<StateMachine file="AIRPLANE_STATE_01.fsmxml"/>
+	
+	<BoneUsage>
+		<Bone name="bone_BODY"/>
+		<Bone name="bone_TAIL"/>		
+		<Bone name="bone_TAIL_end"/>
+		<Bone name="bone_WING_REAR_R"/>
+		<Bone name="bone_WING_REAR_L"/>
+		<Bone name="fx_PROJECTILE_01"/>	
+		<Bone name="fx_PROJECTILE_02"/>
+		<Bone name="fx_PROJECTILE_03"/>
+		<Bone name="fx_PROJECTILE_04"/>
+		<Bone name="fx_PROJECTILE_05"/>
+		<Bone name="fx_PROJECTILE_06"/>
+		<Bone name="fx_PROPELLER_bone01"/>
+		<Bone name="fx_PROPELLER_bone02"/>
+		<Bone name="fx_PROPELLER_bone03"/>
+		<Bone name="fx_PROPELLER_bone04"/>
+	</BoneUsage>
+	
+</Asset>
+

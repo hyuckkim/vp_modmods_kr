@@ -1,7 +1,7 @@
 ﻿; Inno Script Studio Wizard로 생성된 스크립트입니다.
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
-#define MyAppName "VP 한국어"
+#define MyAppName "VP 한국어 모드 모음"
 #define MyAppVersion "5.1.2"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
@@ -99,6 +99,8 @@ Source: "..\Gedemon's YnAEMP KR\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP KR"; F
 ;Source: "..\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion recursesubdirs;	Components: hp
 Source: "..\InGame Editor+ (v 47)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 47)"; Flags: ignoreversion recursesubdirs;	Components: ige
 Source: "..\JFD's Civilizations - Papal States for VP (v 11)\*"; DestDir: "{app}\MODS\JFD's Civilizations - Papal States for VP (v 11)"; Flags: ignoreversion recursesubdirs;	Components: papa
+Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion recursesubdirs;	Components: his
+Source: "..\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: his
 Source: "..\Maritime Weather+ (v 51)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 51)"; Flags: ignoreversion recursesubdirs;	Components: mb
 Source: "..\Maritime Weather+ (v 51) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 51) INT"; Flags: ignoreversion recursesubdirs;	Components: mb
 ;Source: "..\Misc Tweaks for VP (v 5.1)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.1)"; Flags: ignoreversion recursesubdirs;	Components: mt
@@ -146,8 +148,8 @@ Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ig
 Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
 Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect\csbu
-Source: "..\UI\UI_SukMainMenu_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu_KR"; Flags: ignoreversion recursesubdirs; Components: smm
-Source: "..\UI\UI_CustomModScreen_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen_KR"; Flags: ignoreversion recursesubdirs; Components: cms
+Source: "..\UI\UI_SukMainMenu_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu_KR"; Flags: ignoreversion recursesubdirs; Components: menu\smm
+Source: "..\UI\UI_CustomModScreen_KR\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_CustomModScreen_KR"; Flags: ignoreversion recursesubdirs; Components: menu\cms
 Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignoreversion recursesubdirs; Components: vp
 ; 참고: 공유 시스템 파일에서 "Flags: ignoreversion"을 사용하지 마십시오.
 
@@ -155,26 +157,29 @@ Source: "..\VPUI Text\VPUI_tips_ko_kr.xml"; DestDir: "{app}\Text"; Flags: ignore
 Name: "vp"; Description: "Vox Populi 한국어 번역"; Types: VP VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning fixed
 Name: "vpnvc"; Description: "세계 의회 투표 문명 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
 
-Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "cd"; Description: "대륙 이동설"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ynaemp"; Description: "Gedemon의 YnAEMP"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "fnv"; Description: "모하비 황무지 - 폴아웃 뉴 베가스"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ras"; Description: "진정한 고급 설정(Really Advanced Setup)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "df"; Description: "월드 오브 로어 - 드래곤페이블"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "cd"; Description: "지도: 대륙 이동설"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "fnv"; Description: "지도: 모하비 황무지 - 폴아웃 뉴 베가스"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "df"; Description: "지도: 월드 오브 로어 - 드래곤페이블"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "textures"; Description: "지도 텍스처"; Types: Custom; Flags: disablenouninstallwarning
-Name: "textures\vt"; Description: "선명한 질감"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
-Name: "textures\at"; Description: "예술적인 질감"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "textures\vt"; Description: "선명한 텍스처"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "textures\at"; Description: "예술적인 텍스처"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "civselect"; Description: "지도자 선택 화면"; Types: Custom; Flags: disablenouninstallwarning
-Name: "civselect\cs"; Description: "진정한 대체 지도자"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
-Name: "civselect\csbu"; Description: "진정한 대체 지도자 제거 (문명 선택 기본 화면)"; Types: Custom; Flags: exclusive disablenouninstallwarning
-Name: "smm"; Description: "새로운 메인 메뉴"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "cms"; Description: "사용자 정의 모드 메뉴"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "civselect\csbu"; Description: "문명 선택 기본 화면"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "civselect\cs"; Description: "진정한 대체 지도자"; Types: Custom; Flags: exclusive disablenouninstallwarning
+
+Name: "menu"; Description: "메인 메뉴 혹은 모드 메뉴 바꾸기"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "menu\cms"; Description: "사용자 정의 모드 메뉴"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "menu\smm"; Description: "새로운 메인 메뉴"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
 Name: "icv"; Description: "개선된 도시 화면 (Improved City View)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ige"; Description: "인게임 에디터(InGame Editor+)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vppt"; Description: "승급 트리 (Promotion Tree)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "qt"; Description: "빠른 턴 (Quick Turns)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "his"; Description: "게임 속도: 역사적 (Longer Eras - Historic)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "asb"; Description: "건물 자동 판매(Auto-Sell Buildings)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ast"; Description: "고대 유적지 도움말(Antiquity Site Tooltips)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "amp"; Description: "자동 지도 핀(Auto Map Pins)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -208,7 +213,7 @@ Name: "emr\u"; Description: "UCS(고유 도시 국가)용"; Types: Custom; Flags
 Name: "cm"; Description: "Jarcast의 대리석의 도시(Cities of Marble)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "hw"; Description: "Jarcast의 숨겨진 불가사의(Hidden Wonders)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vol"; Description: "Jarcast의 화산(Volcanoes)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-Name: "mb"; Description: "해상 날씨(Maritime Weather+)"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "mb"; Description: "해상 날씨(Maritime Weather+)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "civ6"; Description: "Sukritact의 문명 6 스타일 도시 이름(Sukritact's Civ VI Style City Names)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "luv"; Description: "zai4z의 랜드마크 문화 다양성(Landmark Cultural Variation)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 

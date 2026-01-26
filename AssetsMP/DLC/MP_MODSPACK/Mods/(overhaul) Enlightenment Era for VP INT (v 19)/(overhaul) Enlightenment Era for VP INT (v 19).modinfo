@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" version="19">
+  <Properties>
+    <Name>(overhaul) Enlightenment Era for VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]를 포함하여 게임 범위를 확장합니다.</Teaser>
+    <Description>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]는 과학적 사고가 극적으로 발전한 시기였습니다.
+[NEWLINE]Vox Populi 모드가 필요합니다.
+[NEWLINE][NEWLINE]주요 제작자: Pouakai, Janboruta, Sukritact - EE, zwei833 - RER.
+[NEWLINE]Vox Populi 버전은 Infixo님이 제작했습니다.
+[NEWLINE]adan_enslavo님이 v4 버전으로, N.Core님이 v5 버전으로 업데이트했으며, CAYM님이 VP 4.4 ~ 4.19 버전을 지원하기 위해 v6 ~ 10 버전으로 수정했습니다.
+[NEWLINE]Hokath님이 v5로 업데이트했습니다.</Description>
+    <Authors>Hokath, CAYM, Pouakai, JFD, Janboruta, Sukritact, zwei833, Infixo</Authors>
+    <SpecialThanks>Xony, pandasnail, phantomaxl1207, barrizqi, Chrisy15, Enginseer, Padre19, Aldebaran1997, Gazebo, N.CORE</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="D771B6F5897EBA6D98A83E715D4BB574" import="0">SQL/EEVP_Buildings.sql</File>
+    <File md5="E9EAB0935D023914CF69647A233EA906" import="0">SQL/EEVP_Other.sql</File>
+    <File md5="417171C101B6E0E6BECB19814BF8031F" import="0">SQL/EEVP_Policies.sql</File>
+    <File md5="A82691197E5FF6AD96F080E8B4A1D0A3" import="0">SQL/EEVP_Text.sql</File>
+    <File md5="46AA69E44E05B88355DDAF72668578FC" import="0">SQL/EEVP_Wonders.sql</File>
+    <File md5="28A9B61419E3C67B658F6BE5562DAE58" import="0">SQL/Hotel_Zoo_Swap.sql</File>
+    <File md5="C33CF8CA712F2EC79BDCE199444A1C4A" import="0">SQL/Observatory.sql</File>
+    <File md5="4196F456B3F9586C7E3274B9CB807131" import="0">SQL/Windmill_Workshop_Swap.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/EEVP_Buildings.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Other.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Policies.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Text.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/EEVP_Wonders.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Hotel_Zoo_Swap.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Observatory.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Windmill_Workshop_Swap.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

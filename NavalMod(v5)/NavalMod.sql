@@ -109,7 +109,7 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 --               │                     │                                                  │            │
 --               │                     └────────────────────────────────────┐             │            │
 --               │                                                          │             │            │
---               ├─┬─► Belt Armor ───► Armor Plating III  ─► Supply         │             │            │
+--               ├─┬─► Belt Armor ───► Armor Plating III                    │             │            │
 --               │ │                                                        ├──► Indirect ├───►  Range ├──► Flagship
 --               └─┼───────────────────┬─► F Engagement I─► F Engagement II │             │            │
 --                 │                   │                                    │             │            │
@@ -121,7 +121,7 @@ INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPer
 --                                                                Battlecruiser
 --                                                                
 ----------------------------------------------------------------------------------------------------------------------------
-UPDATE Language_en_US SET Text = 'Naval Capital Units' WHERE Tag = 'TXT_KEY_UNITCOMBAT_CARRIER';
+UPDATE Language_en_US SET Text = 'Naval Capital' WHERE Tag = 'TXT_KEY_UNITCOMBAT_CARRIER';
 UPDATE	Language_en_US SET
 		Text = REPLACE(Text, 'Carriers', 'Capital Ships')
 		WHERE Tag IN ('TXT_KEY_LEAGUE_PROJECT_REWARD_TREASURE_FLEET_3_HELP', 'TXT_KEY_BUILDING_GRAND_CANAL_HELP','TXT_KEY_PROMOTIONS_PEDIA_CARSUB');
@@ -129,24 +129,24 @@ UPDATE	Language_en_US SET
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, RankList, RankNumber, OrderPriority, FlagPromoOrder)
 VALUES
-	 ('PROMOTION_DEEP_DRAFT', 'TXT_KEY_PROMOTION_DEEP_DRAFT', 'TXT_KEY_PROMOTION_DEEP_DRAFT_HELP', 'AS2D_IF_LEVELUP', 1, 0, 10, 'promoVP_atlas_01', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_DEEP_DRAFT', NULL, 0, 903, 903),
-	('PROMOTION_ESCORT', 'TXT_KEY_PROMOTION_ESCORT', 'TXT_KEY_PROMOTION_ESCORT_HELP', 'AS2D_IF_LEVELUP', 1, 1, 34, 'promoVP_atlas_01', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_ESCORT', NULL, 0, 830, 830),
-    ('PROMOTION_FIRE_CONTROL', 'TXT_KEY_PROMOTION_FIRE_CONTROL', 'TXT_KEY_PROMOTION_FIRE_CONTROL_HELP', 'AS2D_IF_LEVELUP', 1, 1, 59, 'promoVP_atlas_03', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_FIRE_CONTROL', NULL, 0, 830, 830),
-    ('PROMOTION_BATTLE_LINE_MOD', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD_HELP', 'AS2D_IF_LEVELUP', 1, 1, 3, 'naval_promoAtlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD', NULL, 0, 830, 830),
-    ('PROMOTION_ALL_BIG_GUN', 'TXT_KEY_PROMOTION_ALL_BIG_GUN', 'TXT_KEY_PROMOTION_ALL_BIG_GUN_HELP', 'AS2D_IF_LEVELUP', 1, 1, 63, 'promoVP_atlas_03', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_ALL_BIG_GUN', NULL, 0, 830, 830),
-    ('PROMOTION_IRON_HULL', 'TXT_KEY_PROMOTION_IRON_HULL', 'TXT_KEY_PROMOTION_IRON_HULL_HELP', 'AS2D_IF_LEVELUP', 1, 1, 30, 'extraPromo_Atlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_IRON_HULL', NULL, 0, 830, 830),
-	('PROMOTION_WARSHIP', 'TXT_KEY_PROMOTION_WARSHIP', 'TXT_KEY_PROMOTION_WARSHIP_HELP', 'AS2D_IF_LEVELUP', 1, 1, 2, 'naval_promoAtlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_WARSHIP', NULL, 0, 827, 827),
-	('PROMOTION_HEAVY_FIRE', 'TXT_KEY_PROMOTION_HEAVY_FIRE', 'TXT_KEY_PROMOTION_HEAVY_FIRE_HELP', 'AS2D_IF_LEVELUP', 1, 1, 6, 'promoVP_atlas_00', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HEAVY_FIRE', NULL, 0, 828, 828),
-    ('PROMOTION_HIGH_P_ROUND', 'TXT_KEY_PROMOTION_HIGH_P_ROUND', 'TXT_KEY_PROMOTION_HIGH_P_ROUND_HELP', 'AS2D_IF_LEVELUP', 1, 1, 2, 'promoVP_atlas_00', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HIGH_P_ROUND', NULL, 0, 829, 829),
-	 ('PROMOTION_FLAGSHIP', 'TXT_KEY_PROMOTION_FLAGSHIP', 'TXT_KEY_PROMOTION_FLAGSHIP_HELP', 'AS2D_IF_LEVELUP', 0, 0, 4, 'naval_promoAtlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLAGSHIP', NULL, 0, 337, 337),
+	 ('PROMOTION_DEEP_DRAFT', 'TXT_KEY_PROMOTION_DEEP_DRAFT', 'TXT_KEY_PROMOTION_DEEP_DRAFT_HELP', 'AS2D_IF_LEVELUP', 0, 1, 10, 'PROMOTION_ATLAS_VP_01', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_DEEP_DRAFT', NULL, 0, 903, 903),
+	('PROMOTION_ESCORT', 'TXT_KEY_PROMOTION_ESCORT', 'TXT_KEY_PROMOTION_ESCORT_HELP', 'AS2D_IF_LEVELUP', 1, 1, 34, 'PROMOTION_ATLAS_VP_01', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_ESCORT', NULL, 0, 830, 830),
+    ('PROMOTION_FIRE_CONTROL', 'TXT_KEY_PROMOTION_FIRE_CONTROL', 'TXT_KEY_PROMOTION_FIRE_CONTROL_HELP', 'AS2D_IF_LEVELUP', 1, 1, 59, 'PROMOTION_ATLAS_VP_03', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_FIRE_CONTROL', NULL, 0, 830, 830),
+    ('PROMOTION_BATTLE_LINE_MOD', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD_HELP', 'AS2D_IF_LEVELUP', 1, 1, 54, 'naval_promoAtlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_BATTLE_LINE_MOD', NULL, 0, 830, 830),
+    ('PROMOTION_ALL_BIG_GUN', 'TXT_KEY_PROMOTION_ALL_BIG_GUN', 'TXT_KEY_PROMOTION_ALL_BIG_GUN_HELP', 'AS2D_IF_LEVELUP', 1, 1, 63, 'PROMOTION_ATLAS_VP_03', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_ALL_BIG_GUN', NULL, 0, 830, 830),
+    ('PROMOTION_IRON_HULL', 'TXT_KEY_PROMOTION_IRON_HULL', 'TXT_KEY_PROMOTION_IRON_HULL_HELP', 'AS2D_IF_LEVELUP', 1, 1, 30, 'PROMOTION_ATLAS_VP_06', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_IRON_HULL', NULL, 0, 830, 830),
+	('PROMOTION_WARSHIP', 'TXT_KEY_PROMOTION_WARSHIP', 'TXT_KEY_PROMOTION_WARSHIP_HELP', 'AS2D_IF_LEVELUP', 1, 1, 53, 'naval_promoAtlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_WARSHIP', NULL, 0, 827, 827),
+	('PROMOTION_HEAVY_FIRE', 'TXT_KEY_PROMOTION_HEAVY_FIRE', 'TXT_KEY_PROMOTION_HEAVY_FIRE_HELP', 'AS2D_IF_LEVELUP', 0, 1, 6, 'PROMOTION_ATLAS_VP_00', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HEAVY_FIRE', NULL, 0, 828, 828),
+    ('PROMOTION_HIGH_P_ROUND', 'TXT_KEY_PROMOTION_HIGH_P_ROUND', 'TXT_KEY_PROMOTION_HIGH_P_ROUND_HELP', 'AS2D_IF_LEVELUP', 1, 1, 2, 'PROMOTION_ATLAS_VP_00', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HIGH_P_ROUND', NULL, 0, 829, 829),
+	 ('PROMOTION_FLAGSHIP', 'TXT_KEY_PROMOTION_FLAGSHIP', 'TXT_KEY_PROMOTION_FLAGSHIP_HELP', 'AS2D_IF_LEVELUP', 0, 0, 62, 'naval_promoAtlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLAGSHIP', NULL, 0, 337, 337),
 	('PROMOTION_S_BOMBARDMENT', 'TXT_KEY_PROMOTION_S_BOMBARDMENT', 'TXT_KEY_PROMOTION_S_BOMBARDMENT_HELP', 'AS2D_IF_LEVELUP', 0, 0, 55, 'PROMOTION_ATLAS', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_S_BOMBARDMENT', NULL, 0, 341, 341),
-    ('PROMOTION_BATTLECRUISER', 'TXT_KEY_PROMOTION_BATTLECRUISER', 'TXT_KEY_PROMOTION_BATTLECRUISER_HELP', 'AS2D_IF_LEVELUP', 0, 0, 6, 'naval_promoAtlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_BATTLECRUISER', NULL, 0, 339, 339),
+    ('PROMOTION_BATTLECRUISER', 'TXT_KEY_PROMOTION_BATTLECRUISER', 'TXT_KEY_PROMOTION_BATTLECRUISER_HELP', 'AS2D_IF_LEVELUP', 0, 0, 55, 'naval_promoAtlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_BATTLECRUISER', NULL, 0, 339, 339),
     ('PROMOTION_BELT_ARMOR', 'TXT_KEY_PROMOTION_BELT_ARMOR', 'TXT_KEY_PROMOTION_BELT_ARMOR_HELP', 'AS2D_IF_LEVELUP', 0, 0, 13, 'EXPANSION2_PROMOTION_ATLAS', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_BELT_ARMOR', 'ARMOR_PLATING', 2, 109, 109),
-    ('PROMOTION_FLEET_ENG_I', 'TXT_KEY_PROMOTION_FLEET_ENG_I', 'TXT_KEY_PROMOTION_FLEET_ENG_I_HELP', 'AS2D_IF_LEVELUP', 0, 0, 48, 'extraPromo_Atlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLEET_ENG_I', 'FLEET_ENG', 1, 102, 102),
-    ('PROMOTION_FLEET_ENG_II', 'TXT_KEY_PROMOTION_FLEET_ENG_II', 'TXT_KEY_PROMOTION_FLEET_ENG_II_HELP', 'AS2D_IF_LEVELUP', 0, 0, 49, 'extraPromo_Atlas', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLEET_ENG_II', 'FLEET_ENG', 2, 102, 102),
-    ('PROMOTION_NAVAL_ARTL_I', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I_HELP', 'AS2D_IF_LEVELUP', 0, 0, 0, 'promoVP_atlas_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I', 'NAVAL_ARTL', 1, 101, 101),
-    ('PROMOTION_NAVAL_ARTL_II', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II_HELP', 'AS2D_IF_LEVELUP', 0, 0, 1, 'promoVP_atlas_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II', 'NAVAL_ARTL', 2, 101, 101),
-    ('PROMOTION_NAVAL_ARTL_III', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III_HELP', 'AS2D_IF_LEVELUP', 0, 0, 2, 'promoVP_atlas_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III', 'NAVAL_ARTL', 3, 101, 101);
+    ('PROMOTION_FLEET_ENG_I', 'TXT_KEY_PROMOTION_FLEET_ENG_I', 'TXT_KEY_PROMOTION_FLEET_ENG_I_HELP', 'AS2D_IF_LEVELUP', 0, 0, 48, 'PROMOTION_ATLAS_VP_06', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLEET_ENG_I', 'FLEET_ENG', 1, 102, 102),
+    ('PROMOTION_FLEET_ENG_II', 'TXT_KEY_PROMOTION_FLEET_ENG_II', 'TXT_KEY_PROMOTION_FLEET_ENG_II_HELP', 'AS2D_IF_LEVELUP', 0, 0, 49, 'PROMOTION_ATLAS_VP_06', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_FLEET_ENG_II', 'FLEET_ENG', 2, 102, 102),
+    ('PROMOTION_NAVAL_ARTL_I', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I_HELP', 'AS2D_IF_LEVELUP', 0, 0, 0, 'PROMOTION_ATLAS_VP_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_I', 'NAVAL_ARTL', 1, 101, 101),
+    ('PROMOTION_NAVAL_ARTL_II', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II_HELP', 'AS2D_IF_LEVELUP', 0, 0, 1, 'PROMOTION_ATLAS_VP_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_II', 'NAVAL_ARTL', 2, 101, 101),
+    ('PROMOTION_NAVAL_ARTL_III', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III_HELP', 'AS2D_IF_LEVELUP', 0, 0, 2, 'PROMOTION_ATLAS_VP_03', 'PEDIA_CARSUB', 'TXT_KEY_PROMOTION_NAVAL_ARTL_III', 'NAVAL_ARTL', 3, 101, 101);
 ------------------------------------------------------
 INSERT INTO UnitPromotions_UnitCombats
 		(PromotionType,					UnitCombatType,			PediaType)
@@ -156,7 +156,7 @@ INSERT INTO UnitPromotions_UnitCombats
 	    ('PROMOTION_RANGE', 'UNITCOMBAT_CARRIER',	null),
         ('PROMOTION_INDIRECT_FIRE', 'UNITCOMBAT_CARRIER',	null),
 	    ('PROMOTION_SPLASH_1', 'UNITCOMBAT_CARRIER',	null),
-	    ('PROMOTION_BARRAGE_4', 'UNITCOMBAT_CARRIER',	null),
+	    ('PROMOTION_FIRING_DOCTRINE', 'UNITCOMBAT_CARRIER',	null),
         ('PROMOTION_FLAGSHIP',			'UNITCOMBAT_CARRIER',	null),
         ('PROMOTION_FLEET_ENG_I',			'UNITCOMBAT_CARRIER',	null),
         ('PROMOTION_FLEET_ENG_II',			'UNITCOMBAT_CARRIER',	null),
@@ -166,10 +166,39 @@ INSERT INTO UnitPromotions_UnitCombats
         ('PROMOTION_NAVAL_ARTL_I',			'UNITCOMBAT_CARRIER',	null),
         ('PROMOTION_NAVAL_ARTL_II',			'UNITCOMBAT_CARRIER',	null),
 		('PROMOTION_NAVAL_ARTL_III',		'UNITCOMBAT_CARRIER',	null);
+
+
+-- Escort	
+INSERT INTO UnitPromotions_UnitCombats
+	(PromotionType, UnitCombatType)
+VALUES
+	('PROMOTION_ESCORT', 'UNITCOMBAT_NAVALMELEE');
+	
+INSERT INTO Technology_FreePromotions
+	(TechType, PromotionType)
+VALUES
+	('TECH_ELECTRICITY', 'PROMOTION_ESCORT');	
+
+INSERT INTO UnitPromotions_CombatModPerAdjacentUnitCombat
+	(PromotionType, UnitCombatType, Modifier)
+VALUES
+   ('PROMOTION_ESCORT', 'UNITCOMBAT_NAVALRANGED', 5),
+   ('PROMOTION_ESCORT', 'UNITCOMBAT_CARRIER', 5);
+	
+-- Autocracy
+INSERT INTO UnitPromotions_UnitCombats
+	(PromotionType, UnitCombatType)
+VALUES
+	('PROMOTION_MARE_NOSTRUM', 'UNITCOMBAT_CARRIER');	
+
+INSERT INTO UnitPromotions_BlockedPromotions
+	(PromotionType, BlockedPromotionType)
+VALUES
+	('PROMOTION_ANTI_AIR', 'PROMOTION_MARE_NOSTRUM');	
 ----------------------------------------------------------------		
 UPDATE UnitPromotions SET OutsideFriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_FLEET_ENG_I' OR Type = 'PROMOTION_FLEET_ENG_II';
 
-INSERT INTO UnitPromotions_Terrains
+INSERT INTO UnitPromotions_TerrainModifiers
 	(PromotionType, TerrainType, Attack)
 VALUES
     ('PROMOTION_FLEET_ENG_I', 'TERRAIN_OCEAN', 10),		
@@ -202,12 +231,18 @@ SELECT
 FROM UnitPromotions
 WHERE RankList = 'NAVAL_ARTL';
 
-UPDATE UnitPromotions SET PlagueIDImmunity = 1 WHERE Type = 'PROMOTION_WARSHIP';	
+INSERT INTO UnitPromotions_BlockedPromotions
+	(PromotionType, BlockedPromotionType)
+VALUES
+	('PROMOTION_WARSHIP', 'PROMOTION_BOARDED_1'),
+	('PROMOTION_WARSHIP', 'PROMOTION_BOARDED_2');
+
+	
    
 INSERT INTO UnitPromotions_Terrains
-	(PromotionType, TerrainType, ExtraMove)
+	(PromotionType, TerrainType, HalfMove)
 VALUES
-    ('PROMOTION_DEEP_DRAFT', 'TERRAIN_COAST', 1);  
+    ('PROMOTION_DEEP_DRAFT', 'TERRAIN_COAST', 1); 
 
 UPDATE UnitPromotions SET MaxHitPointsChange = 20 WHERE Type = 'PROMOTION_WARSHIP';
 
@@ -219,14 +254,12 @@ VALUES
 INSERT INTO Unit_FreePromotions
 	(UnitType, PromotionType)
 VALUES
-    ('UNIT_GALLEASS', 'PROMOTION_HEAVY_FIRE'),
-	('UNIT_VENETIAN_GALLEASS', 'PROMOTION_HEAVY_FIRE'),
-	('UNIT_MISSILE_CRUISER', 'PROMOTION_HEAVY_FIRE'),
+    ('UNIT_TREASURE_SHIP', 'PROMOTION_HEAVY_FIRE'),
+    ('UNIT_MISSILE_CRUISER', 'PROMOTION_HEAVY_FIRE'),
 	('UNIT_BATTLESHIP', 'PROMOTION_HEAVY_FIRE'),
     ('UNIT_DREADNOUGHT', 'PROMOTION_HEAVY_FIRE'),
 	('UNIT_CRUISER', 'PROMOTION_HEAVY_FIRE'),
 	('UNIT_FRIGATE', 'PROMOTION_HEAVY_FIRE');
-
 INSERT INTO UnitPromotions_CombatModPerAdjacentUnitCombat
 	(PromotionType, UnitCombatType, Defense)
 VALUES
@@ -238,24 +271,13 @@ UPDATE UnitPromotions SET AttackFullyHealedMod = 20 WHERE Type = 'PROMOTION_ALL_
 
 UPDATE UnitPromotions SET AttackMod = 10 WHERE Type = 'PROMOTION_FIRE_CONTROL';
 	
-INSERT INTO Unit_FreePromotions
-	(UnitType, PromotionType)
-SELECT
-	Type, 'PROMOTION_ESCORT'
-FROM Units
-WHERE CombatClass = 'UNITCOMBAT_NAVALMELEE';
 
-INSERT INTO UnitPromotions_CombatModPerAdjacentUnitCombat
-	(PromotionType, UnitCombatType, Modifier)
-VALUES
-   ('PROMOTION_ESCORT', 'UNITCOMBAT_NAVALRANGED', 5),
-   ('PROMOTION_ESCORT', 'UNITCOMBAT_CARRIER', 5);
 		
 ---------------------------------------------------------------
 INSERT INTO Language_en_US (Tag, Text)
 VALUES
 	('TXT_KEY_PROMOTION_DEEP_DRAFT', 'Deep Draft'),
-    ('TXT_KEY_PROMOTION_DEEP_DRAFT_HELP', 'Entering [COLOR_NEGATIVE_TEXT]Coastal[ENDCOLOR] costs +1 [ICON_MOVES] Movement (does not stack).'),
+    ('TXT_KEY_PROMOTION_DEEP_DRAFT_HELP', 'Half [ICON_MOVES] Movement in [COLOR_NEGATIVE_TEXT]Coast[ENDCOLOR].[NEWLINE]Entering [COLOR_NEGATIVE_TEXT]Shoal[ENDCOLOR] costs +1 [ICON_MOVES] Movement.'),
 	('TXT_KEY_PROMOTION_HIGH_P_ROUND', 'High Penetration Rounds'),
     ('TXT_KEY_PROMOTION_HIGH_P_ROUND_HELP', '+25% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Naval Capital Units except Carriers[ENDCOLOR].'),
     ('TXT_KEY_PROMOTION_WARSHIP', 'Warship'),
@@ -300,19 +322,31 @@ UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_NAVAL_ARTL_II' WHERE T
 UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_COASTAL_RAIDER_1', PromotionPrereqOr2 = 'PROMOTION_NAVAL_ARTL_I', TechPrereq = 'TECH_INDUSTRIALIZATION' WHERE Type = 'PROMOTION_BELT_ARMOR';
 UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_COASTAL_RAIDER_3' WHERE Type = 'PROMOTION_BATTLECRUISER' OR Type = 'PROMOTION_S_BOMBARDMENT';	
 
-UPDATE CustomModOptions SET Value = 1 WHERE Name = 'CORE_AREA_EFFECT_PROMOTIONS';	
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_BARRAGE_4', PromotionPrereqOr2 = 'PROMOTION_S_BOMBARDMENT' WHERE Type = 'PROMOTION_FLAGSHIP';
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'API_AREA_EFFECT_PROMOTIONS';	
+UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_FIRING_DOCTRINE', PromotionPrereqOr2 = 'PROMOTION_S_BOMBARDMENT' WHERE Type = 'PROMOTION_FLAGSHIP';
 UPDATE UnitPromotions SET IsNearbyPromotion = 1, NearbyRange = 2, GiveDomain = 'DOMAIN_SEA', GiveCombatMod = 15 WHERE Type = 'PROMOTION_FLAGSHIP';
   
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_ANTI_AIR' WHERE Type IN ('PROMOTION_ARMOR_PLATING_1', 'PROMOTION_FLIGHT_DECK_1');
+--UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_ANTI_AIR' WHERE Type IN ('PROMOTION_ARMOR_PLATING_1', 'PROMOTION_FLIGHT_DECK_1');
 UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_ARMOR_PLATING_2', PromotionPrereqOr2 = 'PROMOTION_BELT_ARMOR', TechPrereq = 'TECH_NUCLEAR_FISSION', PromotionPrereq = NULL WHERE Type = 'PROMOTION_ARMOR_PLATING_3';		
 UPDATE UnitPromotions SET CannotBeChosen = 0, PromotionPrereqOr1 = 'PROMOTION_COASTAL_RAIDER_2', PromotionPrereqOr2 = 'PROMOTION_NAVAL_ARTL_II' WHERE Type = 'PROMOTION_INDIRECT_FIRE';		
-UPDATE UnitPromotions SET PromotionPrereqOr3 = 'PROMOTION_NAVAL_ARTL_III' WHERE Type = 'PROMOTION_SPLASH_1' OR Type = 'PROMOTION_BARRAGE_4';
+UPDATE UnitPromotions SET PromotionPrereqOr3 = 'PROMOTION_NAVAL_ARTL_III' WHERE Type = 'PROMOTION_SPLASH_1' OR Type = 'PROMOTION_FIRING_DOCTRINE';
 UPDATE UnitPromotions SET PromotionPrereqOr3 = 'PROMOTION_COASTAL_RAIDER_3', PromotionPrereqOr4 = 'PROMOTION_NAVAL_ARTL_III' WHERE Type = 'PROMOTION_RANGE';
-UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_WARSHIP' WHERE Type = 'PROMOTION_COASTAL_RAIDER_1' OR Type = 'PROMOTION_NAVAL_ARTL_I';
-UPDATE UnitPromotions SET PromotionPrereqOr2 = 'PROMOTION_ESCORT' WHERE Type = 'PROMOTION_COASTAL_RAIDER_1';
+--UPDATE UnitPromotions SET PromotionPrereqOr1 = 'PROMOTION_WARSHIP' WHERE Type = 'PROMOTION_COASTAL_RAIDER_1' OR Type = 'PROMOTION_NAVAL_ARTL_I';
+--UPDATE UnitPromotions SET PromotionPrereqOr2 = 'PROMOTION_ESCORT' WHERE Type = 'PROMOTION_COASTAL_RAIDER_1';
 
 
+INSERT INTO UnitPromotions_BlockedPromotions
+	(PromotionType, BlockedPromotionType)
+VALUES
+	('PROMOTION_WARSHIP', 'PROMOTION_SUPPLY'),
+	('PROMOTION_WARSHIP', 'PROMOTION_ARMOR_PLATING_1'),
+	('PROMOTION_WARSHIP', 'PROMOTION_FLIGHT_DECK_1');
+	
+INSERT INTO UnitPromotions_BlockedPromotions
+	(PromotionType, BlockedPromotionType)
+VALUES
+	('PROMOTION_ANTI_AIR', 'PROMOTION_COASTAL_RAIDER_1'),
+	('PROMOTION_ANTI_AIR', 'PROMOTION_NAVAL_ARTL_I');
 ------------------------------------------------------------------------------
 -- SHIP_OF_THE_LINE
 ----------------------------------------------------
@@ -381,6 +415,7 @@ VALUES
    ('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_WARSHIP'),
 	('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_DEEP_DRAFT'),   
 	('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_ONLY_DEFENSIVE'),
+	('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_NAVAL_INACCURACY'),
 	('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_HIGH_P_ROUND'),
 	('UNIT_BB_SHIP_OF_THE_LINE', 'PROMOTION_BATTLE_LINE_MOD');
 
@@ -395,7 +430,7 @@ VALUES ('TXT_KEY_UNIT_BB_SHIP_OF_THE_LINE_PEDIA', 'A ship of the line was a type
 
 -- Pedia: Strategy (middle)
 INSERT INTO Language_en_US (Tag, Text)
-VALUES ('TXT_KEY_UNIT_BB_SHIP_OF_THE_LINE_HELP', 'Powerful Renaissance-era naval capital unit. Excels in direct combat with other ships and supports coastal assaults.');
+VALUES ('TXT_KEY_UNIT_BB_SHIP_OF_THE_LINE_HELP', '');
 
 -- Pedia: Game Info (top)
 INSERT INTO Language_en_US (Tag, Text)
@@ -443,6 +478,7 @@ VALUES
   	('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_WARSHIP'),
 	('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_DEEP_DRAFT'),	 
 	('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_ONLY_DEFENSIVE'),
+	('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_NAVAL_INACCURACY'),
 	('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_HIGH_P_ROUND'),
     ('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_BATTLE_LINE_MOD'),
     ('UNIT_ENGLISH_SHIPOFTHELINE', 'PROMOTION_SPLASH_1'),
@@ -456,7 +492,7 @@ SET Text = 'First Rate'
 WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE';
 
 UPDATE Language_en_US
-SET Text = 'Unique English {TXT_KEY_UNIT_BB_SHIP_OF_THE_LINE} that specializes in wresting control of sea and coast with extra vision and splash damage. Starts with [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_SPLASH_1}[ENDCOLOR] and [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_SPLASH_2}[ENDCOLOR].'
+SET Text = ''
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SHIPOFTHELINE';
 
 UPDATE Language_en_US
@@ -499,20 +535,20 @@ SET Text = 'Industrial-era melee naval unit. Supports fleet operations by engagi
 WHERE Tag = 'TXT_KEY_UNIT_IRONCLAD_STRATEGY';
 
 UPDATE Language_en_US
-SET Text = 'A very powerful melee naval unit, the Gun Boat is essential in protecting the huge steamships.'
+SET Text = ''
 WHERE Tag = 'TXT_KEY_UNIT_HELP_IRONCLAD';
 
 UPDATE Language_en_US
 SET Text = 'Steam Frigate'
-WHERE Tag = 'TXT_KEY_DESC_CRUISER';
+WHERE Tag = 'TXT_KEY_UNIT_CRUISER';
 
 UPDATE Language_en_US
 SET Text = 'Steam Frigates (including screw frigates) and the smaller steam corvettes, steam sloops, steam gunboats and steam schooners, were steam-powered warships that were not meant to stand in the line of battle. The first such ships were paddle steamers. Later on the invention of screw propulsion enabled construction of screw-powered versions of the traditional frigates, corvettes, sloops and gunboats.'
-WHERE Tag = 'TXT_KEY_CIV5_CRUISER_PEDIA';
+WHERE Tag = 'TXT_KEY_UNIT_CRUISER_TEXT';
 
 UPDATE Language_en_US
 SET Text = 'Industrial-era ranged naval unit. Delivers sustained fire support against ships and cities from a safe distance. Vulnerable to melee ships and torpedo boats.'
-WHERE Tag = 'TXT_KEY_CIV5_CRUISER_STRATEGY';
+WHERE Tag = 'TXT_KEY_UNIT_CRUISER_STRATEGY';
 
 
 
@@ -583,7 +619,8 @@ INSERT INTO Unit_FreePromotions
 VALUES
     ('UNIT_BB_IRONCLAD', 'PROMOTION_WARSHIP'),
 	('UNIT_BB_IRONCLAD', 'PROMOTION_DEEP_DRAFT'), 
-	('UNIT_BB_IRONCLAD', 'PROMOTION_ONLY_DEFENSIVE'),
+	('UNIT_BB_IRONCLAD', 'PROMOTION_ONLY_DEFENSIVE'),	
+	('UNIT_BB_IRONCLAD', 'PROMOTION_NAVAL_INACCURACY'),
 	('UNIT_BB_IRONCLAD', 'PROMOTION_HIGH_P_ROUND'), 
 	('UNIT_BB_IRONCLAD', 'PROMOTION_IRON_HULL');
 
@@ -596,7 +633,7 @@ VALUES ('TXT_KEY_UNIT_BB_IRONCLAD_PEDIA', 'An ironclad was a steam-propelled war
 
 -- Pedia: Strategy (middle)
 INSERT INTO Language_en_US (Tag, Text)
-VALUES ('TXT_KEY_UNIT_BB_IRONCLAD_HELP', 'Heavily armored naval unit effective in ship-to-ship combat and coastal bombardment.');
+VALUES ('TXT_KEY_UNIT_BB_IRONCLAD_HELP', '');
 
 -- Pedia: Game Info (top)
 INSERT INTO Language_en_US (Tag, Text)
@@ -605,10 +642,10 @@ VALUES ('TXT_KEY_UNIT_BB_IRONCLAD_STRATEGY', 'The Ironclad is a powerful Industr
 --Cruiser
 UPDATE Units SET
     UnitArtInfo = 'ART_DEF_UNIT_CRUISER', 
-	UnitFlagAtlas = 'CRUISER_FLAG_ATLAS', 
+	UnitFlagAtlas = 'UNIT_FLAG_ATLAS_VP_2', 
 	UnitFlagIconOffset = 0, 
-	IconAtlas = 'ICON_ATLAS_ENW', 
-	PortraitIndex = 11
+	IconAtlas = 'UNIT_ATLAS_VP_2', 
+	PortraitIndex = 27
 WHERE Type = 'UNIT_DREADNOUGHT';
 
 UPDATE Language_en_US
@@ -620,7 +657,7 @@ SET Text = 'A cruiser is a type of warship. The term has been in use for several
 WHERE Tag = 'TXT_KEY_UNIT_DREADNOUGHT_PEDIA';
 
 UPDATE Language_en_US
-SET Text = 'Modern-era ranged naval unit. Designed for long-range engagements against ships and cities. Must be protected from close-quarters threats.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Land attacks can only be performed on Coastal tiles.[ENDCOLOR]'
+SET Text = ''
 WHERE Tag = 'TXT_KEY_UNIT_DREADNOUGHT_HELP';
 
 UPDATE Language_en_US
@@ -660,7 +697,7 @@ VALUES
 	1, 1, 1, 0, 0,
 	0, 10, 0, 0, 'BOAT',
 	5, 1, 5,
-  'ART_DEF_UNIT_DREADNOUGHT', 'FLAG_ATLAS_ENW', 2, 'ICON_ATLAS_ENW', 2, 0);
+  'ART_DEF_UNIT_DREADNOUGHT', 'UNIT_FLAG_ATLAS_VP_2', 29, 'UNIT_ATLAS_VP_2', 29, 0);
 
 
 	
@@ -696,6 +733,7 @@ VALUES
     ('UNIT_BB_DREADNOUGHT', 'PROMOTION_WARSHIP'),	
 	('UNIT_BB_DREADNOUGHT', 'PROMOTION_DEEP_DRAFT'),
     ('UNIT_BB_DREADNOUGHT', 'PROMOTION_ONLY_DEFENSIVE'),	
+	('UNIT_BB_DREADNOUGHT', 'PROMOTION_NAVAL_INACCURACY'),
 	('UNIT_BB_DREADNOUGHT', 'PROMOTION_HIGH_P_ROUND'),
 	('UNIT_BB_DREADNOUGHT', 'PROMOTION_ALL_BIG_GUN') ;
 	
@@ -709,8 +747,7 @@ VALUES ('TXT_KEY_UNIT_BB_DREADNOUGHT_PEDIA', 'The Dreadnought was the predominan
 
 -- Pedia: Strategy (middle)
 INSERT INTO Language_en_US (Tag, Text)
-VALUES ('TXT_KEY_UNIT_BB_DREADNOUGHT_HELP', 'Modern-era capital ship. Combines heavy firepower and thick armor, ideal for dominating naval battles and bombarding coastal cities.');
-
+VALUES ('TXT_KEY_UNIT_BB_DREADNOUGHT_HELP', '');
 -- Pedia: Game Info (top)
 INSERT INTO Language_en_US (Tag, Text)
 VALUES ('TXT_KEY_UNIT_BB_DREADNOUGHT_STRATEGY', 'The Dreadnought marks a turning point in naval warfare — an all-big-gun battleship capable of overwhelming any earlier vessel. It leads fleets with devastating long-range firepower and thick armor, but requires support to protect against faster ships and submarines.');
@@ -737,7 +774,7 @@ SET Text = 'A heavy cruiser was a type of cruiser, a naval warship designed for 
 WHERE Tag = 'TXT_KEY_CIV5_INDUSTRIAL_BATTLESHIP_TEXT';
 
 UPDATE Language_en_US
-SET Text = 'Heavily armed cruiser that provides ranged naval fire support. Effective against ships and coastal targets.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Land attacks can only be performed on Coastal tiles.[ENDCOLOR]'
+SET Text = ''
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BATTLESHIP';
 
 UPDATE Language_en_US
@@ -811,6 +848,7 @@ VALUES
     ('UNIT_BB_BATTLESHIP', 'PROMOTION_WARSHIP'),
 	('UNIT_BB_BATTLESHIP', 'PROMOTION_DEEP_DRAFT'),
 	('UNIT_BB_BATTLESHIP', 'PROMOTION_ONLY_DEFENSIVE'),
+	('UNIT_BB_BATTLESHIP', 'PROMOTION_NAVAL_INACCURACY'),
 	('UNIT_BB_BATTLESHIP', 'PROMOTION_HIGH_P_ROUND'),
     ('UNIT_BB_BATTLESHIP', 'PROMOTION_FIRE_CONTROL');
 
@@ -823,8 +861,7 @@ VALUES ('TXT_KEY_UNIT_BB_BATTLESHIP_PEDIA', 'A battleship is a large, heavily ar
 
 -- Pedia: Strategy (middle)
 INSERT INTO Language_en_US (Tag, Text)
-VALUES ('TXT_KEY_UNIT_BB_BATTLESHIP_HELP', 'Powerful ranged capital ship. Excels at leading fleets with devastating naval artillery and strong defenses.');
-
+VALUES ('TXT_KEY_UNIT_BB_BATTLESHIP_HELP', '');
 -- Pedia: Game Info (top)
 INSERT INTO Language_en_US (Tag, Text)
 VALUES ('TXT_KEY_UNIT_BB_BATTLESHIP_STRATEGY', 'With unrivaled firepower and armor, the Battleship excels at striking enemy fleets and surviving the fiercest naval battles.');
@@ -876,21 +913,212 @@ UPDATE	Language_en_US SET
 		Text = REPLACE(Text, 'Naval Ranged Units', 'Naval Ranged and Capital Units except Carriers')
 		WHERE Tag = 'TXT_KEY_PROMOTION_NAVAL_BONUS_HELP' AND EXISTS (SELECT * FROM Units WHERE Type='UNIT_TORPEDO');
 	
+-----------------------------------------------------------------
 
+	INSERT INTO		Unit_FreePromotions
+		(UnitType,				PromotionType)
+VALUES	('UNIT_CARRIER', 'PROMOTION_DEEP_DRAFT'),
+        ('UNIT_SUPERCARRIER', 'PROMOTION_DEEP_DRAFT'),
+        ('UNIT_SUBMARINE', 'PROMOTION_DEEP_DRAFT'),
+        ('UNIT_ATTACK_SUBMARINE', 'PROMOTION_DEEP_DRAFT'),  
+		('UNIT_NUCLEAR_SUBMARINE', 'PROMOTION_DEEP_DRAFT');
 	
 --------------------EXP--------------------------------------------	
 
 --Combat = Melee+Ranged/2, RangedCombat = RCS Ranged + 5
 
-UPDATE Units SET Combat = 35, RangedCombat = 40 WHERE Type = 'UNIT_BB_SHIP_OF_THE_LINE'; --25/35--40
-UPDATE Units SET Combat = 40, RangedCombat = 45 WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE'; --28/38
-UPDATE Units SET Combat = 50, RangedCombat = 60 WHERE Type = 'UNIT_BB_IRONCLAD'; --40/55 -- 55
-UPDATE Units SET Combat = 60, RangedCombat = 70 WHERE Type = 'UNIT_BB_DREADNOUGHT';--50/65 --70
-UPDATE Units SET Combat = 70, RangedCombat = 80 WHERE Type = 'UNIT_BB_BATTLESHIP';--60/75 --80
-UPDATE Units SET Combat = 75, RangedCombat = 80 WHERE Type = 'UNIT_MISSILE_CRUISER';--75/80--
+UPDATE Units
+SET Combat = 35, RangedCombat = 42
+WHERE Type = 'UNIT_BB_SHIP_OF_THE_LINE';
+
+
+UPDATE Units
+SET Combat = 40, RangedCombat = 48
+WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
+
+
+UPDATE Units
+SET Combat = 50, RangedCombat = 60
+WHERE Type = 'UNIT_BB_IRONCLAD';
+
+
+UPDATE Units
+SET Combat = 60, RangedCombat = 70
+WHERE Type = 'UNIT_BB_DREADNOUGHT';
+
+
+UPDATE Units
+SET Combat = 70, RangedCombat = 80
+WHERE Type = 'UNIT_BB_BATTLESHIP';
+
+
+UPDATE Units
+SET Combat = 75, RangedCombat = 85
+WHERE Type = 'UNIT_MISSILE_CRUISER';
+
+UPDATE Units SET Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_CRUISER'), FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_CRUISER') WHERE Type IN ('UNIT_BB_SHIP_OF_THE_LINE', 'UNIT_ENGLISH_SHIPOFTHELINE'); 
+UPDATE Units SET Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_DREADNOUGHT'), FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_DREADNOUGHT') WHERE Type = 'UNIT_BB_IRONCLAD'; 
+UPDATE Units SET Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_BATTLESHIP'), FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_BATTLESHIP') WHERE Type = 'UNIT_BB_DREADNOUGHT' OR Type = 'UNIT_YAMATO';
+UPDATE Units SET Cost = (SELECT Cost FROM Units WHERE Type = 'UNIT_MISSILE_CRUISER'), FaithCost = (SELECT FaithCost FROM Units WHERE Type = 'UNIT_MISSILE_CRUISER') WHERE Type = 'UNIT_BB_BATTLESHIP';
+UPDATE Units SET Cost = 3000, FaithCost = 1600 WHERE Type = 'UNIT_MISSILE_CRUISER';
 
 
 
 
 
 
+--==========================================================================================================================
+-- ART DEFINES
+--==========================================================================================================================	
+-- ArtDefine_StrategicView
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_StrategicView 
+		(StrategicViewType, 				TileType,		Asset)
+VALUES	('ART_DEF_UNIT_JFD_MIKASA', 		'Unit', 		'sv_Mikasa.dds');
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitInfos
+--------------------------------------------------------------------------------------------------------------------------		
+
+
+INSERT INTO ArtDefine_UnitInfos 
+		(Type, 								DamageStates,	Formation)
+SELECT	'ART_DEF_UNIT_JFD_MIKASA', 			DamageStates, 	Formation
+FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_BATTLESHIP';
+
+
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitInfoMemberInfos
+--------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ArtDefine_UnitInfoMemberInfos 	
+		(UnitInfoType,						UnitMemberInfoType,					NumMembers)
+SELECT	'ART_DEF_UNIT_JFD_MIKASA', 			'ART_DEF_UNIT_MEMBER_JFD_MIKASA',	NumMembers
+FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_BATTLESHIP';
+
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberCombats
+--------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ArtDefine_UnitMemberCombats 
+		(UnitMemberType,					EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+SELECT	'ART_DEF_UNIT_MEMBER_JFD_MIKASA',	EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
+FROM ArtDefine_UnitMemberCombats WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BATTLESHIP';
+
+
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberCombatWeapons
+--------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ArtDefine_UnitMemberCombatWeapons	
+		(UnitMemberType,					"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+SELECT	'ART_DEF_UNIT_MEMBER_JFD_MIKASA',	"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BATTLESHIP';
+
+
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberInfos
+--------------------------------------------------------------------------------------------------------------------------
+
+
+INSERT INTO ArtDefine_UnitMemberInfos 	
+		(Type, 								Scale, ZOffset, Domain, Model, 						MaterialTypeTag, MaterialTypeSoundOverrideTag)
+SELECT	'ART_DEF_UNIT_MEMBER_JFD_MIKASA',	Scale, ZOffset, Domain, 'Mikasa_BB.fxsxml',			MaterialTypeTag, MaterialTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_BATTLESHIP';
+
+--==========================================================================================================================
+-- ICON ATLASES
+--==========================================================================================================================	
+-- IconTextureAtlases
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 									IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES	('JFD_JAPAN_MEIJI_FLAG_ATLAS', 				32, 		'JFD_JapanMeiji_UnitFlagAtlas_32.dds',		2, 				1),
+        ('JFD_JAPAN_MEIJI_ATLAS', 					256, 		'JFD_JapanMeiji_IconAtlas_256.dds',			2, 				2),
+		('JFD_JAPAN_MEIJI_ATLAS', 					128, 		'JFD_JapanMeiji_IconAtlas_128.dds',			2, 				2),
+		('JFD_JAPAN_MEIJI_ATLAS', 					80, 		'JFD_JapanMeiji_IconAtlas_80.dds',			2, 				2),
+		('JFD_JAPAN_MEIJI_ATLAS', 					64, 		'JFD_JapanMeiji_IconAtlas_64.dds',			2, 				2),
+		('JFD_JAPAN_MEIJI_ATLAS', 					45, 		'JFD_JapanMeiji_IconAtlas_45.dds',			2, 				2),
+		('JFD_JAPAN_MEIJI_ATLAS', 					32, 		'JFD_JapanMeiji_IconAtlas_32.dds',			2, 				2);
+--==========================================================================================================================	
+--==========================================================================================================================	
+UPDATE Units SET IconAtlas = 'JFD_JAPAN_MEIJI_ATLAS', PortraitIndex = 3, UnitFlagAtlas = 'JFD_JAPAN_MEIJI_FLAG_ATLAS', UnitFlagIconOffset = 1, UnitArtInfo = 'ART_DEF_UNIT_JFD_MIKASA' WHERE Type = 'UNIT_YAMATO';
+
+-- Yamato (ranged)
+
+UPDATE Units SET
+    Cost = 1800,
+	FaithCost = 1200,
+    Class = 'UNITCLASS_BB_DREADNOUGHT',
+	CombatClass = 'UNITCOMBAT_CARRIER',
+	PrereqTech = 'TECH_ELECTRICITY',
+    ObsoleteTech = 'TECH_ROBOTICS',
+	ExtraMaintenanceCost = 2,
+	Combat = 65,
+    RangedCombat = 75,
+	Moves = 4,
+	Range = 2,
+	BaseLandAirDefense = 5
+WHERE Type = 'UNIT_YAMATO';
+
+DELETE FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_YAMATO' AND BuildingClassType = 'BUILDINGCLASS_MILITARY_ACADEMY';
+DELETE FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_YAMATO';
+
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
+VALUES ('UNIT_YAMATO', 'UNITCLASS_BB_BATTLESHIP');
+
+UPDATE Civilization_UnitClassOverrides
+SET UnitClassType = 'UNITCLASS_BB_DREADNOUGHT'
+WHERE UnitType = 'UNIT_YAMATO';
+
+DELETE FROM Unit_AITypes WHERE UnitAIType = 'UNITAI_ESCORT_SEA' AND UnitType = 'UNIT_YAMATO';
+DELETE FROM Unit_Flavors WHERE UnitType = 'UNIT_YAMATO';
+
+INSERT INTO Unit_AITypes (UnitType, UnitAIType)
+VALUES
+	('UNIT_YAMATO', 'UNITAI_ATTACK_SEA');
+
+INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor)
+VALUES
+	('UNIT_YAMATO', 'FLAVOR_NAVAL', 48),
+	('UNIT_YAMATO', 'FLAVOR_NAVAL_RECON', 20);
+
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_YAMATO';
+ 
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+    ('UNIT_YAMATO', 'PROMOTION_WARSHIP'),	
+	('UNIT_YAMATO', 'PROMOTION_DEEP_DRAFT'),
+    ('UNIT_YAMATO', 'PROMOTION_ONLY_DEFENSIVE'), 
+	('UNIT_YAMATO', 'PROMOTION_NAVAL_INACCURACY'),		
+	('UNIT_YAMATO', 'PROMOTION_HIGH_P_ROUND'),
+	('UNIT_YAMATO', 'PROMOTION_ALL_BIG_GUN') ;
+	
+	   
+INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
+VALUES ('UNIT_YAMATO', 'RESOURCE_COAL', 1);
+
+UPDATE UnitPromotions SET AttackFullyHealedMod = 25 WHERE Type = 'PROMOTION_TAIKAN_KYOHO';
+
+UPDATE Language_en_US SET Text = 'Kantai Kessen' WHERE Tag = 'TXT_KEY_PROMOTION_TAIKAN_KYOHO';
+UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Full Health Units[ENDCOLOR].[NEWLINE]Gain 300% of the [ICON_STRENGTH] Combat Strength of defeated Enemy Units as [ICON_GREAT_ADMIRAL] Great Admiral Points.' WHERE Tag = 'TXT_KEY_PROMOTION_TAIKAN_KYOHO_HELP';
+
+UPDATE Unit_YieldOnCompletion SET Yield = 500 WHERE UnitType = 'UNIT_YAMATO' AND YieldType = 'YIELD_GOLDEN_AGE_POINTS';
+DELETE FROM Unit_Bounties WHERE UnitType = 'UNIT_YAMATO';
+
+UPDATE UnitPromotions_YieldFromKills SET Yield = 300 WHERE PromotionType = 'PROMOTION_TAIKAN_KYOHO';
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+	('UNIT_YAMATO', 'PROMOTION_HOMELAND_GUARDIAN'),
+	('UNIT_YAMATO', 'PROMOTION_TAIKAN_KYOHO');
+
+UPDATE Language_en_US SET Text = 'Mikasa' WHERE Tag = 'TXT_KEY_UNIT_YAMATO';
+UPDATE Language_en_US SET Text = 'Mikasa is a pre-dreadnought battleship built for the Imperial Japanese Navy (IJN) in the late 1890s, and is the only ship of her class. Named after Mount Mikasa in Nara, Japan, the ship served as the flagship of Vice Admiral Tōgō Heihachirō throughout the Russo-Japanese War of 1904–1905, including the Battle of Port Arthur on the second day of the war and the Battles of the Yellow Sea and Tsushima. ' WHERE Tag = 'TXT_KEY_UNIT_YAMATO_TEXT';
+
+
+------------------------------------------------------------------------------------------------------------------------------

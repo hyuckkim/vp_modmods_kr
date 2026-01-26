@@ -226,8 +226,9 @@ PlotListTypes = {
 };
 
 NUM_REGION_TYPES = 11;
-NUM_IMPACT_LAYERS = 14;
+NUM_IMPACT_LAYERS = 15;
 NUM_IMPACT_TREES = 0; -- Padre	  
+NUM_IMPACT_COAST = 0; -- Padre								   
 MAX_MAJOR_CIVS = GameDefines.MAX_MAJOR_CIVS;
 MAX_MINOR_CIVS = GameDefines.MAX_MINOR_CIVS;
 ------------------------------------------------------------------------------
@@ -375,6 +376,7 @@ function AssignStartingPlots.Create()
 		GetLowFertilityCompensations = AssignStartingPlots.GetLowFertilityCompensations,
 		MeasureStartPlacementFertilityOfArea = AssignStartingPlots.MeasureStartPlacementFertilityOfArea,
 		GetLandmassBoundaries = AssignStartingPlots.GetLandmassBoundaries,
+		AddShoals = AssignStartingPlots.AddShoals,									
 	};
 
 	findStarts:__Init();
@@ -2403,7 +2405,7 @@ function AssignStartingPlots:DetermineRegionTypes()
 		local hillsCount = terrainCounts[5];
 		-- local peaksCount = terrainCounts[6];
 		-- local lakeCount = terrainCounts[7];
-		-- local coastCount = terrainCounts[8];
+		local coastCount = terrainCounts[8];
 		-- local oceanCount = terrainCounts[9];
 		-- local iceCount = terrainCounts[10];
 		local grassCount = terrainCounts[11];
@@ -2509,6 +2511,7 @@ function AssignStartingPlots:DetermineRegionTypes()
 			end
 						if found_region then  
 				NUM_IMPACT_TREES = NUM_IMPACT_TREES + treesCount --Padre
+				NUM_IMPACT_COAST = NUM_IMPACT_COAST + coastCount --Padre														   
 				end
 		end
 
@@ -2523,6 +2526,7 @@ function AssignStartingPlots:DetermineRegionTypes()
 	end
 
 print("Map Generation - Timber - Number Tree = ", NUM_IMPACT_TREES);																	  
+print("Map Generation - Coast - Number Coastal = ", NUM_IMPACT_COAST);																	  
 	-- Added by azum4roll: Support for Mountain and Snow "bias"
 	-- This changes one region to a "Mountain region" or "Snow region", if a civ with the respective start bias exists
 	-- It's possible that there's no snow/mountain on the map, so we need to handle it later in BalanceAndAssign
@@ -10887,6 +10891,347 @@ function AssignStartingPlots:AdjustTiles()
 	end
 end
 ------------------------------------------------------------------------------
+-- PlaceShoals
+------------------------------------------------------------------------------
+																			  
+function AssignStartingPlots:AddShoals()
+
+    print("PlaceShoals: start")
+
+    --------------------------------------------------------------------------
+    -- CONSTANTE
+    --------------------------------------------------------------------------
+    local featureShoals = GameInfoTypes.FEATURE_SHOALS
+    local featureAtoll  = GameInfoTypes.FEATURE_ATOLL
+    local featureIce    = GameInfoTypes.FEATURE_ICE
+    local terrainOcean  = TerrainTypes.TERRAIN_OCEAN
+    local terrainMountain  = TerrainTypes.TERRAIN_MOUNTAIN
+    local dirCount      = DirectionTypes.NUM_DIRECTION_TYPES
+
+    local coastCount = NUM_IMPACT_COAST
+    if coastCount <= 0 then return end
+
+    --------------------------------------------------------------------------
+    -- PROCENT SHOALS: 12.00% – 15.00%
+    --------------------------------------------------------------------------
+    local pctInt = 1200 + Map.Rand(301, "Shoals percent")  -- 1200..1500
+    local pct = pctInt / 100.0
+    local target = math.floor(coastCount * pct / 100 + 0.5)
+
+	  
+    print(string.format("PlaceShoals: coast=%d pct=%.2f target=%d", coastCount, pct, target))
+		  
+   
+
+    local numPlots = Map.GetNumPlots()
+
+    --------------------------------------------------------------------------
+    -- UTILS
+    --------------------------------------------------------------------------
+    local function PlotDir(plot, dir)
+        return Map.PlotDirection(plot:GetX(), plot:GetY(), dir)
+    end
+
+    --------------------------------------------------------------------------
+    -- VALIDARE DE BAZĂ (DLL SHORTCUTS)
+    --------------------------------------------------------------------------
+    local function IsValidBaseCandidate(plot)
+        if not plot then return false end
+        if plot:IsLake() then return false end
+        if not plot:IsTerrainCoast() then return false end
+        if plot:GetResourceType() ~= -1 then return false end
+        if plot:GetFeatureType() ~= -1 then return false end
+
+        -- interdicții ferme
+        if plot:IsAdjacentToTerrain(terrainOcean) then return false end
+        if plot:IsAdjacentToFeature(featureIce) then return false end
+  
+
+        -- trebuie adiacent la land sau shoal
+        if not (plot:IsAdjacentToLand() or plot:IsAdjacentToFeature(featureShoals)) then
+            return false
+        end
+
+        return true
+    end
+
+    --------------------------------------------------------------------------
+    -- CountCoastRadius3 (nemodificat logic) + cache
+    --------------------------------------------------------------------------
+    local coastRadius3Cache = {}
+
+    local function CountCoastRadius3(startPlot)
+																				 
+        local visited = {}
+        local queue = { { plot = startPlot, dist = 0 } }
+        visited[startPlot:GetIndex()] = true
+
+        local qh = 1
+        local count = 0
+
+        while queue[qh] do
+            local node = queue[qh]
+            qh = qh + 1
+
+            local p = node.plot
+            local d = node.dist
+
+            if d > 0 and p:IsTerrainCoast() and not p:IsLake() then
+                count = count + 1
+            end
+
+            if d < 3 then
+                for dir = 0, dirCount - 1 do
+                    local adj = PlotDir(p, dir)
+                    if adj then
+                        local idx = adj:GetIndex()
+                        if not visited[idx] and adj:IsTerrainCoast() and not adj:IsLake() then
+                            visited[idx] = true
+                            table.insert(queue, { plot = adj, dist = d + 1 })
+                        end
+                    end
+                end
+            end
+        end
+
+        return count
+    end
+
+    local function CountCoastRadius3Cached(plot)
+        local idx = plot:GetIndex()
+        local v = coastRadius3Cache[idx]
+        if v ~= nil then return v end
+        v = CountCoastRadius3(plot)
+        coastRadius3Cache[idx] = v
+        return v
+    end
+
+    --------------------------------------------------------------------------
+    -- REGIUNI SHOAL
+    --------------------------------------------------------------------------
+		 
+	
+    local regionCount = math.max(1, math.floor((coastCount / 200) * (pct / 9) + 0.5))
+  
+
+    local regions = {}
+
+    for i = 1, regionCount do
+        local tries = 0
+        while tries < 200 do
+            tries = tries + 1
+            local p = Map.GetPlotByIndex(Map.Rand(numPlots, "shoal region"))
+            if p and p:IsTerrainCoast() and not p:IsLake() then
+                table.insert(regions, { x = p:GetX(), y = p:GetY() })
+                break
+            end
+        end
+    end
+
+    --------------------------------------------------------------------------
+    -- ComputeWeight (folosește cache pentru CountCoastRadius3)
+																						 
+    --------------------------------------------------------------------------
+    local function ComputeWeight(plot)
+        local w = 10 + CountCoastRadius3Cached(plot) * 3
+
+				 
+
+        if plot:IsAdjacentToTerrain(terrainMountain) then w = w + 15 end
+        if plot:IsAdjacentToFeature(featureShoals) then w = w + 10 end
+        if plot:IsAdjacentToFeature(featureAtoll) then w = w + 5 end
+																		  
+        if plot:IsRiverSide() then w = w + 5 end
+
+        for _, r in ipairs(regions) do
+            local d = Map.PlotDistance(plot:GetX(), plot:GetY(), r.x, r.y)
+            if d <= 6 then
+                w = w + (6 - d) * 5
+            end
+        end
+
+        return w
+    end
+
+    --------------------------------------------------------------------------
+    -- CONSTRUIRE CANDIDAȚI INIȚIALI
+																	 
+																					  
+														   
+    --------------------------------------------------------------------------
+    local candidates = {}
+    local candidateMap = {}
+    local weights = {}
+
+    for i = 0, numPlots - 1 do
+        local plot = Map.GetPlotByIndex(i)
+        if IsValidBaseCandidate(plot) then
+            local idx = plot:GetIndex()
+            table.insert(candidates, { plot = plot, idx = idx })
+            candidateMap[idx] = #candidates
+        end
+    end
+
+    if #candidates == 0 then return end
+
+														   
+    target = math.min(target, #candidates)
+
+										 
+    for i, entry in ipairs(candidates) do
+        weights[i] = ComputeWeight(entry.plot)
+    end
+
+    --------------------------------------------------------------------------
+    -- FUNCȚII PENTRU ADĂUGARE / ELIMINARE CANDIDAT
+    --------------------------------------------------------------------------
+    local function AddCandidate(plot)
+        local idx = plot:GetIndex()
+        if candidateMap[idx] then return end
+        table.insert(candidates, { plot = plot, idx = idx })
+        candidateMap[idx] = #candidates
+        weights[#candidates] = ComputeWeight(plot)
+    end
+
+    local function RemoveCandidateByPos(pos)
+        local last = #candidates
+        if pos < 1 or pos > last then return end
+        local removed = candidates[pos]
+        candidateMap[removed.idx] = nil
+        if pos < last then
+            candidates[pos] = candidates[last]
+            weights[pos] = weights[last]
+            candidateMap[candidates[pos].idx] = pos
+        end
+        candidates[last] = nil
+        weights[last] = nil
+    end
+
+    local function RemoveCandidateByPlotIndex(plotIndex)
+        local pos = candidateMap[plotIndex]
+        if pos then RemoveCandidateByPos(pos) end
+    end
+
+    local function RevalidatePlot(plot)
+        local idx = plot:GetIndex()
+        local isValid = IsValidBaseCandidate(plot)
+        local pos = candidateMap[idx]
+        if isValid then
+            if not pos then
+                AddCandidate(plot)
+            else
+                weights[pos] = ComputeWeight(plot)
+            end
+        else
+            if pos then
+                RemoveCandidateByPos(pos)
+            end
+        end
+    end
+
+    --------------------------------------------------------------------------
+    -- SELECȚIE PONDERATĂ EFICIENTĂ
+																	  
+    --------------------------------------------------------------------------
+    local function BuildPrefixInt(weights)
+        local prefix = {}
+        local acc = 0
+        for i, w in ipairs(weights) do
+																					  
+            local wi = math.max(0, math.floor(w * 1000 + 0.5))
+            acc = acc + wi
+            prefix[i] = acc
+        end
+        return prefix, acc
+    end
+
+    local function BinarySearchPrefix(prefix, r)
+													
+        local lo, hi = 1, #prefix
+        while lo < hi do
+            local mid = math.floor((lo + hi) / 2)
+            if prefix[mid] > r then
+                hi = mid
+            else
+                lo = mid + 1
+            end
+        end
+        return lo
+    end
+
+    local function PickWeighted()
+        if #weights == 0 then return nil end
+        local prefix, totalInt = BuildPrefixInt(weights)
+        if totalInt <= 0 then return nil end
+        local r = Map.Rand(totalInt, "pick shoal")
+        local pos = BinarySearchPrefix(prefix, r)
+        return pos
+    end
+
+    --------------------------------------------------------------------------
+    -- ACTUALIZĂRI DUPĂ PLASARE
+																				  
+    --------------------------------------------------------------------------
+    local function UpdateAfterPlacement(plotPlaced)
+														 
+        RemoveCandidateByPlotIndex(plotPlaced:GetIndex())
+
+																				   
+        for dir = 0, dirCount - 1 do
+            local adj = PlotDir(plotPlaced, dir)
+            if adj then
+                RevalidatePlot(adj)
+            end
+        end
+    end
+
+    --------------------------------------------------------------------------
+    -- BUCLE PRINCIPALĂ DE PLASARE
+    --------------------------------------------------------------------------
+    local placed = 0
+    local attempts = 0
+    local maxAttempts = target * 10 + 200
+
+    while placed < target and attempts < maxAttempts and #candidates > 0 do
+        attempts = attempts + 1
+
+        local pos = PickWeighted()
+        if not pos then break end
+
+        local entry = candidates[pos]
+        if entry then
+            local plot = entry.plot
+									 
+						 
+		   
+
+							   
+
+																										   
+            if IsValidBaseCandidate(plot) then 
+			
+                plot:SetFeatureType(featureShoals, -1)
+                placed = placed + 1
+
+													
+                UpdateAfterPlacement(plot)
+            else
+                RemoveCandidateByPlotIndex(plot:GetIndex())
+            end
+        else
+            RemoveCandidateByPos(pos)
+													   
+        end
+
+					
+    end
+
+	  
+    print(string.format("PlaceShoals: placed %d shoals after %d attempts", placed, attempts))
+
+   
+end
+------------------------------------------------------------------------------
 function AssignStartingPlots:PrintFinalResourceTotalsToLog()
 	print("-");
 	print("--- Table of Results, New Start Finder ---");
@@ -11534,6 +11879,8 @@ function AssignStartingPlots:PlaceResourcesAndCityStates(args)
 	print("Map Generation - Fix Tile Graphics");
 	self:AdjustTiles();
 
+	  print("Map Generation - Add Shoals");
+	self:AddShoals();
 	-- Necessary to implement placement of Natural Wonders, and possibly other plot-type changes.
 	-- This operation must be saved for last, as it invalidates all regional data by resetting landmass/area IDs.
 	Map.RecalculateAreas();

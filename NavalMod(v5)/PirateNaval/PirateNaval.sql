@@ -90,15 +90,20 @@ FROM Unit_Flavors WHERE UnitType = 'UNIT_CARAVEL';
 -- UnitPromotions
 --==========================================================================================================================
 INSERT INTO UnitPromotions
-		(Type, 								Description,		 IgnoreZOC,      			Help,	  VisibilityChange,  CannotBeChosen,	CannotBeCaptured, LostWithUpgrade,	PortraitIndex,	IconAtlas, 			PediaType, 				PediaEntry)
-SELECT	'PROMOTION_PIRATE_PADREXIX', 		'TXT_KEY_PIRATE_X',		 1,        'TXT_KEY_PIRATE', 	     1,                        1,          1,                  1, 		            19, 	'extraPromo_Atlas', 	'PEDIA_NAVAL',		'TXT_KEY_PIRATE_X';
+		(Type, 								Description,		 IgnoreZOC,      			Help,	  VisibilityChange,  CannotBeChosen,	CannotBeCaptured, LostWithUpgrade,	PortraitIndex,	IconAtlas, 			PediaType, 				PediaEntry, FlagPromoOrder,	OrderPriority)
+SELECT	'PROMOTION_PIRATE_PADREXIX', 		'TXT_KEY_PIRATE_X',		 1,        'TXT_KEY_PIRATE', 	     1,                        1,          1,                  1, 		            19, 	'PROMOTION_ATLAS_VP_06', 	'PEDIA_NAVAL',		'TXT_KEY_PIRATE_X', 506, 506;
+
+INSERT INTO UnitPromotions_Features
+	(PromotionType, FeatureType, IgnoreTerrainCostIn)
+VALUES
+    ('PROMOTION_PIRATE_PADREXIX', 'FEATURE_SHOALS', 1);
 
 INSERT INTO Unit_FreePromotions
 		(UnitType,								PromotionType)
 VALUES	  ('UNIT_BARBARIAN_PIRATE',		'PROMOTION_PRIZE_SHIPS'),
          ('UNIT_BARBARIAN_PIRATE',		'PROMOTION_BOARDING_PARTY_1'),
 		('UNIT_BARBARIAN_PIRATE',		'PROMOTION_PIRATE_PADREXIX'),
-		('UNIT_BARBARIAN_PIRATE',		'PROMOTION_PRESS_GANGS');
+		('UNIT_BARBARIAN_PIRATE',		'PROMOTION_COMMERCE_RAIDER');
 
 INSERT INTO Unit_FreePromotions
 		(UnitType, 				PromotionType)
@@ -121,6 +126,6 @@ a term derived from the name of its Berber inhabitants. Their predation extended
  19th century. Following the Napoleonic Wars and the Congress of Vienna in 1814 to 1815, European powers agreed upon the need to suppress the Barbary corsairs entirely and the threat was largely subdued. 
 Occasional incidents occurred, including two Barbary wars between the United States and the Barbary States, until finally terminated by the French conquest of Algiers in 1830.'),
 ('TXT_KEY_UNIT_BARBARIAN_PIRATE_STRATEGY', 'Use the Corsair Pirate to spread fear and terror upon the oceans near and far.'),
-('TXT_KEY_UNIT_BARBARIAN_PIRATE_HELP', 'Fast naval melee unit specializing on piracy on the high seas.'),
+('TXT_KEY_UNIT_BARBARIAN_PIRATE_HELP', ''),
 ('TXT_KEY_PIRATE_X', 'Tortuga'),
-('TXT_KEY_PIRATE', 'Ignores [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR].[NEWLINE]+1 Sight.');
+('TXT_KEY_PIRATE', 'Ignores [COLOR_POSITIVE_TEXT]Zone of Control[ENDCOLOR].[NEWLINE]Ignore Terrain Cost in [COLOR_POSITIVE_TEXT]Shoal[ENDCOLOR].[NEWLINE]+1 Sight.');

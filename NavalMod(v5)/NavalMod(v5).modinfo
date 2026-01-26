@@ -25,7 +25,31 @@
   </References>
   <Blocks/>
 <Files>
-
+    <File md5="00000000000000000000000000000002" import="1">Shoals/Art/Underwater/Padre2_BuildingAtlas_128.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Shoals/Art/Underwater/Padre2_BuildingAtlas_256.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Shoals/Art/Underwater/Padre2_BuildingAtlas_45.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Shoals/Art/Underwater/Padre2_BuildingAtlas_64.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Shoals/Art/Underwater/Padre2_BuildingAtlas_80.dds</File>
+   <File md5="519E80240E31CCE4B7EDF371918B3D53" import="1">Shoals/Art/Underwater/FX_Triggers_Underwater.ftsxml</File>
+    <File md5="13EA986CCA8F986C1261603A34F14963" import="1">Shoals/Art/Underwater/Underwater.fxsxml</File>
+    <File md5="DE476B686BD748C250BB4B6B382C0543" import="1">Shoals/Art/Underwater/Underwater.gr2</File>
+    <File md5="71314DB2D8CDF847B3E6116B4CF8CE35" import="1">Shoals/Art/Underwater/Underwater_decal.dds</File>
+    <File md5="4EA7A06D380EC41C034023733AF50716" import="1">Shoals/Art/Underwater/Underwater_diff.dds</File>
+    <File md5="3CF34AD754944D9659F8478F5EAE29D8" import="1">Shoals/Art/Underwater/Underwater_Rocks_diff.dds</File>
+    <File md5="637B7650D7A9441D1907365419F85A75" import="0">Shoals/FeatureShoals.sql</File>
+	
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/Mikasa_BB.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/Mikasa_BB.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/mikasa_bb_diff.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/mikasa_bb_sref.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/sv_Mikasa.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_32.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_45.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_64.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_IconAtlas_80.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Mikasa/JFD_JapanMeiji_UnitFlagAtlas_32.dds</File>
     <File md5="00000000000000000000000000000000" import="1">Art/sv_ShipoftheLine.dds</File>
     <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_256.dds</File>
     <File md5="00000000000000000000000000000000" import="1">Art/Naval_Units_128.dds</File>
@@ -106,6 +130,7 @@
 </Files>
 	<Actions>
 		<OnModActivated>
+		              <UpdateDatabase>Shoals/FeatureShoals.sql</UpdateDatabase>
                       <UpdateDatabase>NavalMod.sql</UpdateDatabase> 
                       <UpdateDatabase>Scurvy/Scurvy.sql</UpdateDatabase> 
                       <UpdateDatabase>Timber/Timber_Resources.sql</UpdateDatabase> 

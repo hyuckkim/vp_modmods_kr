@@ -9,12 +9,11 @@ SELECT 'BuildingPMOD_ICON_ATLAS', '45', 'BuildingPIconAtlas45.dds', 3, 3;
 
 INSERT INTO UnitPromotions
 		(Type,								Description,								Help, 					EnemyDamageChance,		EnemyDamage, NeutralDamageChance,	NeutralDamage,	IsLostOnMove,	CannotBeChosen,	PortraitIndex,	   IconAtlas, 			PediaType, 			        PediaEntry,              OrderPriority, FlagPromoOrder)
-SELECT	'PROMOTION_SCURVY',				'TXT_KEY_PROMOTION_SCURVY', 			'TXT_KEY_PROMOTION_SCURVY_HELP', 	25,							5,			 25,					5,				1,				1,				50,		    'extraPromo_Atlas',	     'PEDIA_SHARED',		'TXT_KEY_PROMOTION_SCURVY',	11,         11;	 
+SELECT	'PROMOTION_SCURVY',				'TXT_KEY_PROMOTION_SCURVY', 			'TXT_KEY_PROMOTION_SCURVY_HELP', 	25,							5,			 25,					5,				1,				1,				50,		    'PROMOTION_ATLAS_VP_06',	     'PEDIA_SHARED',		'TXT_KEY_PROMOTION_SCURVY',	11,         11;	 
 
 INSERT INTO UnitPromotions
 		(Type,								Description,								Help, 									 NegatesPromotion,			Sound,		OrderPriority,	FlagPromoOrder, CannotBeChosen,	PortraitIndex,	     IconAtlas, 							PediaType, 			PediaEntry)
-SELECT	'PROMOTION_SCURVY_IMMUNITY',	'TXT_KEY_PROMOTION_SCURVY_IMMUNITY', 	'TXT_KEY_PROMOTION_SCURVY_IMMUNITY_HELP',	'PROMOTION_SCURVY',		'AS2D_IF_LEVELUP',			9999,	    9999,         1,				4,				'extraPromo_Atlas',	            'PEDIA_SHARED',		'TXT_KEY_PROMOTION_SCURVY_IMMUNITY';	
-
+SELECT	'PROMOTION_SCURVY_IMMUNITY',	'TXT_KEY_PROMOTION_SCURVY_IMMUNITY', 	'TXT_KEY_PROMOTION_SCURVY_IMMUNITY_HELP',	'PROMOTION_SCURVY',		'AS2D_IF_LEVELUP',			9999,	    9999,         1,				4,				'PROMOTION_ATLAS_VP_06',	            'PEDIA_SHARED',		'TXT_KEY_PROMOTION_SCURVY_IMMUNITY';	
 
 
 UPDATE UnitPromotions SET ShowInUnitPanel = 0 WHERE Type = 'PROMOTION_SCURVY_IMMUNITY';
@@ -41,13 +40,15 @@ INSERT INTO UnitPromotions_UnitCombats (PromotionType, UnitCombatType) VALUES
 	('PROMOTION_SCURVY', 		'UNITCOMBAT_NAVALRANGED'),
     ('PROMOTION_SCURVY', 		'UNITCOMBAT_NAVALMELEE');
 
+INSERT INTO Unit_FreePromotions
+		(UnitType,								PromotionType)
+VALUES	  ('UNIT_PORTUGUESE_NAU',		'PROMOTION_SCURVY_IMMUNITY');
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO UnitPromotions
 		(Type,								Description,								Help, 						Sound,		ExperiencePercent,	CannotBeChosen,	LostWithUpgrade,  PortraitIndex,	     IconAtlas, 				PediaType, 			PediaEntry,                          OrderPriority, FlagPromoOrder)
-SELECT	'PROMOTION_FA_SEA_ACADEMY',	'TXT_KEY_PROMOTION_FA_SEA_ACADEMY', 	'TXT_KEY_PROMOTION_FA_SEA_ACADEMY_HELP',	'AS2D_IF_LEVELUP',		50,	          1,				1,                 58,				'extraPromo_Atlas',	            'PEDIA_SHARED',		'TXT_KEY_PROMOTION_FA_SEA_ACADEMY',	200,         200;
-
+SELECT	'PROMOTION_FA_SEA_ACADEMY',	'TXT_KEY_PROMOTION_FA_SEA_ACADEMY', 	'TXT_KEY_PROMOTION_FA_SEA_ACADEMY_HELP',	'AS2D_IF_LEVELUP',		50,	          1,				1,                 58,				'PROMOTION_ATLAS_VP_06',	            'PEDIA_SHARED',		'TXT_KEY_PROMOTION_FA_SEA_ACADEMY',	200,         200;
 INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_PROMOTION_FA_SEA_ACADEMY', 'Naval Academy'),
 ('TXT_KEY_PROMOTION_FA_SEA_ACADEMY_HELP', '+50% Experience gained from combat.[NEWLINE][COLOR_NEGATIVE_TEXT]Lost on upgrade.[ENDCOLOR]');
@@ -119,20 +120,21 @@ INSERT INTO Policy_BuildingClassProductionModifiers (PolicyType, BuildingClassTy
 SELECT DISTINCT PolicyType, 'BUILDINGCLASS_NAVIGATION_SCHOOL', ProductionModifier
 FROM Policy_BuildingClassProductionModifiers WHERE PolicyType = 'POLICY_LEGALISM';
 
+
 ---------------------------MILITATY_PORT-----------------------------------------------
 INSERT INTO UnitPromotions
 	(Type, Description, Help, Sound, LostWithUpgrade, CannotBeChosen, PortraitIndex, IconAtlas, PediaType, PediaEntry, OrderPriority, FlagPromoOrder)
 VALUES
-   ('PROMOTION_COAST_GUARD_2', 'TXT_KEY_PROMOTION_COAST_GUARD_2', 'TXT_KEY_PROMOTION_COAST_GUARD_2_HELP', 'AS2D_IF_LEVELUP', 0, 1, 29, 'extraPromo_Atlas', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_COAST_GUARD_2', 160, 160);
+   ('PROMOTION_COAST_GUARD_2', 'TXT_KEY_PROMOTION_COAST_GUARD_2', 'TXT_KEY_PROMOTION_COAST_GUARD_2_HELP', 'AS2D_IF_LEVELUP', 0, 1, 29, 'PROMOTION_ATLAS_VP_06', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_COAST_GUARD_2', 160, 160);
    
 
    
-UPDATE UnitPromotions SET FriendlyHealChange = 5, FriendlyLandsAttackModifier = 10 WHERE Type = 'PROMOTION_COAST_GUARD_2';   
+UPDATE UnitPromotions SET FriendlyLandsModifier = 10 WHERE Type = 'PROMOTION_COAST_GUARD_2';   
 
  INSERT INTO Language_en_US (Tag, Text)
 VALUES
     ('TXT_KEY_PROMOTION_COAST_GUARD_2', 'Patrol II'),
-    ('TXT_KEY_PROMOTION_COAST_GUARD_2_HELP', '+10% [ICON_STRENGTH] Combat Strength when attacking and +5 HP when Healing [COLOR_POSITIVE_TEXT]Inside of Friendly Territory[ENDCOLOR].');
+    ('TXT_KEY_PROMOTION_COAST_GUARD_2_HELP', '+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]Inside of Friendly Territory[ENDCOLOR].');
 
 
 
@@ -160,16 +162,14 @@ INSERT INTO UnitPromotions_UnitCombats
 		(PromotionType,					UnitCombatType,			PediaType)
 VALUES	('PROMOTION_COAST_GUARD_2',			'UNITCOMBAT_NAVALMELEE',	null); 
 
+INSERT INTO Building_DomainProductionModifiers (BuildingType, DomainType, Modifier) VALUES
+('BUILDING_MILITATY_PORT', 'DOMAIN_SEA', 15);
+
 INSERT INTO Building_UnitCombatFreeExperiences
 	(BuildingType, UnitCombatType, Experience)
 VALUES
-	('BUILDING_MILITATY_PORT', 'UNITCOMBAT_NAVALRANGED', 15),
-	('BUILDING_MILITATY_PORT', 'UNITCOMBAT_SUBMARINE', 15),
-	('BUILDING_MILITATY_PORT', 'UNITCOMBAT_CARRIER', 15);
-	
-INSERT INTO Unit_ProductionModifierBuildings (UnitType, BuildingType, ProductionModifier)
-SELECT Type,	'BUILDING_MILITATY_PORT', 20 
-FROM Units WHERE CombatClass = 'UNITCOMBAT_NAVALRANGED' OR CombatClass = 'UNITCOMBAT_CARRIER' OR CombatClass = 'UNITCOMBAT_SUBMARINE';	
+	('BUILDING_MILITATY_PORT', 'UNITCOMBAT_CARRIER', 5),
+	('BUILDING_SEAPORT', 'UNITCOMBAT_CARRIER', 5);
 	
 INSERT INTO Building_ClassesNeededInCity
 	(BuildingType, BuildingClassType)
@@ -184,8 +184,6 @@ VALUES
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_MILITATY_PORT', 'YIELD_SCIENCE', 2;
 
-UPDATE Unit_BuildingClassPurchaseRequireds SET BuildingClassType = 'BUILDINGCLASS_MILITATY_PORT' WHERE BuildingClassType = 'BUILDINGCLASS_SEAPORT';
-
 INSERT INTO Unit_BuildingClassRequireds
 	(UnitType, BuildingClassType)
 VALUES
@@ -193,6 +191,7 @@ VALUES
 	('UNIT_SUPERCARRIER', 'BUILDINGCLASS_SEAPORT'),
 	('UNIT_BB_IRONCLAD', 'BUILDINGCLASS_SEAPORT'),
 	('UNIT_BB_DREADNOUGHT', 'BUILDINGCLASS_SEAPORT'),
+	('UNIT_YAMATO', 'BUILDINGCLASS_SEAPORT'),
     ('UNIT_BB_BATTLESHIP', 'BUILDINGCLASS_SEAPORT');	
 
 INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
@@ -204,20 +203,15 @@ INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor) VALUES
 
 INSERT INTO Language_en_US (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_MILITATY_PORT', 'Naval Base'),
-('TXT_KEY_BUILDING_MILITATY_PORT_HELP', '+10% City''s [ICON_RANGE_STRENGTH] Ranged Strike Damage. +20% [ICON_PRODUCTION] Production when construct and +15 XP when building Naval Capital, Naval Ranged and Naval Raider Units. +1 [ICON_WAR] Military Supply.'),
+('TXT_KEY_BUILDING_MILITATY_PORT_HELP', ''),
 ('TXT_KEY_BUILDING_MILITATY_PORT_STRATEGY', 'The Naval Base is a building which improves defense and naval production alson increases Military Units supplied by this City''s by 1.'),
 ('TXT_KEY_BUILDING_MILITATY_PORT_PEDIA', 'A Naval Base is a military base, where warships and naval ships are docked when they have no mission at sea or need to restock. Ships may also undergo repairs. Some naval bases are temporary homes to aircraft that usually stay on ships but are undergoing maintenance while the ship is in port.');
 	
 -------------- Seaport
+
+DELETE FROM Building_DomainProductionModifiers WHERE BuildingType = 'BUILDING_SEAPORT';
+
 UPDATE Buildings
 SET
  CitySupplyModifier = 0
 WHERE BuildingClass = 'BUILDINGCLASS_SEAPORT';
-
-UPDATE Language_en_US
-SET Text = '+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from all Coast and Ocean tiles. +2 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Sea Resources worked by this City.[NEWLINE][NEWLINE]Forms an [ICON_INDUSTRIAL_CONNECTED] Industrial City Connection with other Cities via water if they also have Seaports.[NEWLINE][NEWLINE]Can only be constructed in a Coastal City.'
-WHERE Tag = 'TXT_KEY_BUILDING_SEAPORT_HELP';
-
-UPDATE Language_en_US
-SET Text = 'The Seaport is an Industrial-era building, requiring a Harbor. It increases the [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output of water tiles and allows for Industrial City Connections over Water (see Concepts for more details).'
-WHERE Tag = 'TXT_KEY_BUILDING_SEAPORT_STRATEGY';
