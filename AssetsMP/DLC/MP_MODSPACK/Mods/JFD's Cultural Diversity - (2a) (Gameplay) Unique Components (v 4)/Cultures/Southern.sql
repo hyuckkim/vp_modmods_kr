@@ -14,6 +14,7 @@ WHERE Type = 'ART_DEF_UNIT_MEMBER_DJSH_STRADIOT';
 UPDATE Units SET
 PurchaseOnly = 1,
 MoveAfterPurchase = 1,
+PurchaseCooldown = 0,
 Combat = Combat + 1,
 RangedCombat = RangedCombat + 2
 WHERE Type = 'UNIT_CD_STRADIOTI';

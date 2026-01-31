@@ -2,7 +2,7 @@
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
 #define MyAppName "VP 한국어 모드 모음"
-#define MyAppVersion "5.1.2"
+#define MyAppVersion "5.1.3"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
 #define SourcePath ".."
@@ -171,8 +171,8 @@ Name: "civselect"; Description: "지도자 선택 화면"; Types: Custom; Flags:
 Name: "civselect\csbu"; Description: "문명 선택 기본 화면"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
 Name: "civselect\cs"; Description: "진정한 대체 지도자"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
-Name: "menu"; Description: "메인 메뉴 혹은 모드 메뉴 바꾸기"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
-Name: "menu\cms"; Description: "사용자 정의 모드 메뉴"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
+Name: "menu"; Description: "메인 메뉴 혹은 모드 메뉴 바꾸기"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "menu\cms"; Description: "사용자 정의 모드 메뉴"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "menu\smm"; Description: "새로운 메인 메뉴"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
 Name: "icv"; Description: "개선된 도시 화면 (Improved City View)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning

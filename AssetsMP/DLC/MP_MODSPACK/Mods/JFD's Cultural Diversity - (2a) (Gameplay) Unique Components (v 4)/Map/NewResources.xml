@@ -204,8 +204,7 @@
 			<TerrainType>TERRAIN_HILL</TerrainType>
 		</Row>
 	</Resource_TerrainBooleans>
-	<!-- these stupid bloody tables -->
-	<!--<Resource_FeatureTerrainBooleans>
+	<Resource_FeatureTerrainBooleans>
 		<Row>
 			<ResourceType>RESOURCE_COCA</ResourceType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
@@ -228,7 +227,7 @@
 			<ResourceType>RESOURCE_COCA</ResourceType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 		</Row>
-	</Resource_FeatureBooleans>-->
+	</Resource_FeatureBooleans>
 	<Resource_MonopolyCombatModifiers>
 		<Row>
 			<ResourceType>RESOURCE_COCA</ResourceType>

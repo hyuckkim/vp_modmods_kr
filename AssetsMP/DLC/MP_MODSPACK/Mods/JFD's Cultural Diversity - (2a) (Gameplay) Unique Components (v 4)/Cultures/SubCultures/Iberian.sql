@@ -130,7 +130,9 @@ Combat = 60,
 PrereqTech = 'TECH_FLIGHT',
 ObsoleteTech = 'TECH_MOBILE_TACTICS',
 PurchaseOnly = 1,
-MoveAfterPurchase = 1
+MoveAfterPurchase = 1,
+PurchaseCooldown = 0,
+NoSupply = 1
 WHERE Type = 'UNIT_CD_INTERNATIONAL_BRIGADE';
 
 UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_INFANTRY' WHERE UnitType = 'UNIT_CD_INTERNATIONAL_BRIGADE';

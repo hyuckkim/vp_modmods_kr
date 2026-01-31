@@ -442,7 +442,7 @@
 			<Help>TXT_KEY_PROMOTION_CD_VARANGIAN_HELP</Help>
 			<PediaType>PEDIA_MELEE</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CD_VARANGIAN</PediaEntry>
-			<PortraitIndex>37</PortraitIndex>
+			<PortraitIndex>39</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
@@ -1053,7 +1053,7 @@
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_CD_TEUTONIC</PromotionType>
-			<YieldType>YIELD_FAITH</YieldType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
 

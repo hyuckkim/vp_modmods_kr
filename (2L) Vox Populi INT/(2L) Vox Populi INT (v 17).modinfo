@@ -3,7 +3,7 @@
   <Properties>
     <Name>(2L) Vox Populi INT</Name>
     <Stability>Beta</Stability>
-    <Teaser>(5.1.2) 문명 5: 멋진 신세계의 비공식 확장 및 재조정 프로젝트</Teaser>
+    <Teaser>(5.1.3) 문명 5: 멋진 신세계의 비공식 확장 및 재조정 프로젝트</Teaser>
     <Description>문명 5를 더욱 즐겁고 흥미진진한 게임으로 만들기 위해 밸런스 변경, 게임플레이 개선, 완전히 새로운 게임 시스템이 포함되었습니다.</Description>
     <Authors>hyuckkim, HANDANI</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
@@ -28,7 +28,7 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="7AFD7BAF91BB6DE20F43E9BDBB4FB735" import="0">Core Files/Overrides/CivilopediaScreen.lua</File>
+    <File md5="66281A946E4B68E180BB9593B6714F82" import="0">Core Files/Overrides/CivilopediaScreen.lua</File>
     <File md5="91EA30067A01B6A388F3F5B590557608" import="0">Database Changes/Text/ko_KR/AI/DiplomacyResponseTextChanges.sql</File>
     <File md5="1EA879F80F8818532A8A3CB6CBBFA4FB" import="0">Database Changes/Text/ko_KR/AI/NewDiplomacyResponseText.xml</File>
     <File md5="A3FA48F29B2096ADE35190764B5428F4" import="0">Database Changes/Text/ko_KR/Beliefs/BeliefTextChanges.sql</File>
@@ -43,7 +43,7 @@
     <File md5="6D7D2224EB0D1D7F2B7F907FD21A0B91" import="0">Database Changes/Text/ko_KR/City/ProcessTextChanges.sql</File>
     <File md5="E5524DB01775B7099456D4EC88539099" import="0">Database Changes/Text/ko_KR/City/ProjectTextChanges.sql</File>
     <File md5="74EA508852BC4402615B5085E58CDCBE" import="0">Database Changes/Text/ko_KR/City/SpecialistTextChanges.sql</File>
-    <File md5="B02D5466F5EFB69A8174E9EF7AD68B3B" import="0">Database Changes/Text/ko_KR/Civilizations/CivilizationTextChanges.sql</File>
+    <File md5="E20FCC24DBE9C650D5C8E653BEA0AB9C" import="0">Database Changes/Text/ko_KR/Civilizations/CivilizationTextChanges.sql</File>
     <File md5="F1B0D15F157C2D3572F1AE1F590FC0B4" import="0">Database Changes/Text/ko_KR/Civilizations/NewCivilizationText.xml</File>
     <File md5="6BFA92C4D04BE9AFCDCFBD656E57A6B6" import="0">Database Changes/Text/ko_KR/Concepts/ConceptTextChanges.sql</File>
     <File md5="EA905BE7B8868360EA47893160491D0F" import="0">Database Changes/Text/ko_KR/Concepts/NewConceptText.xml</File>
@@ -65,7 +65,7 @@
     <File md5="77E8B35E2F457FFDF88D4E867A175BBA" import="0">Database Changes/Text/ko_KR/Tech/TechTextChanges.sql</File>
     <File md5="6048F2549BA5E6F204D1C8F447F5CA55" import="0">Database Changes/Text/ko_KR/UI/InterfaceModeTextChanges.sql</File>
     <File md5="D218BE3F8790ADD0321A764C2B72D75A" import="0">Database Changes/Text/ko_KR/UI/NewUIText.sql</File>
-    <File md5="F79D737C42C9EF9CC1F1991DDF858EC0" import="0">Database Changes/Text/ko_KR/UI/NewUIText.xml</File>
+    <File md5="464290D1BEBE33C5C8CAE47D41320FFD" import="0">Database Changes/Text/ko_KR/UI/NewUIText.xml</File>
     <File md5="025CA5B9CE8663B23FEC604BA5D52FBE" import="0">Database Changes/Text/ko_KR/UI/UITextChanges.sql</File>
     <File md5="79FC4F12649AB1D2640761B7D45C1F48" import="0">Database Changes/Text/ko_KR/UnitPromotions/NewPromotionText.xml</File>
     <File md5="A6110F4622E191B6D449E5A8FD697561" import="0">Database Changes/Text/ko_KR/UnitPromotions/PromotionTextChanges.sql</File>

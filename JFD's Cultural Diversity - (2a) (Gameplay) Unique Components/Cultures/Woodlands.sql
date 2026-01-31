@@ -86,7 +86,7 @@ DELETE FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_CD_MAHAROLU
 INSERT INTO Unit_EraCombatStrength 	
 	(UnitType, 			EraType,			CombatStrength)
 SELECT	'UNIT_CD_MAHAROLUKTI',	'ERA_CLASSICAL',	16 UNION ALL
-SELECT	'UNIT_CD_MAHAROLUKTI',	'ERA_MEDIEVAL',		23 ;
+SELECT	'UNIT_CD_MAHAROLUKTI',	'ERA_MEDIEVAL',		24 ;
 
 REPLACE INTO Language_en_US 
 	(Tag, Text)
@@ -94,7 +94,7 @@ SELECT
 	'TXT_KEY_UNIT_CD_MAHAROLUKTI_HELP', 'Requires the [ICON_CULTURE_JFD_WOODLANDS] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WOODLANDS_SHORT_DESC}[ENDCOLOR] Cultural Group.'
 FROM Language_en_US WHERE Tag = 'TXT_KEY_UNIT_HELP_KNIGHT';	
 
---  Is slower and does not require [ICON_RES_HORSE] Horses like the Horseman or Knight it replaces; while it can gain defensive bonuses, it still counts as Mounted Unit for Promotions. Starts with the [COLOR_POSITIVE_TEXT]Stomp Dance[ENDCOLOR] Promotion that makes it much faster and stronger fighting near Rivers, and earns [ICON_INFLUENCE] Influence from XP.[NEWLINE][NEWLINE]To replace both Mounted Units, it has a [ICON_STRENGTH] Combat Strength and [ICON_PRODUCTION] Cost that increases with Era: gaining +3 [ICON_STRENGTH]/+35 [ICON_PRODUCTION] in the Classical and another +7 [ICON_STRENGTH]/+35 [ICON_PRODUCTION] in the Medieval.
+--  Is slower and does not require [ICON_RES_HORSE] Horses like the Horseman or Knight it replaces; while it can gain defensive bonuses, it still counts as Mounted Unit for Promotions. Starts with the [COLOR_POSITIVE_TEXT]Stomp Dance[ENDCOLOR] Promotion that makes it much faster and stronger fighting near Rivers, and earns [ICON_INFLUENCE] Influence from XP.[NEWLINE][NEWLINE]To replace both Mounted Units, it has a [ICON_STRENGTH] Combat Strength and [ICON_PRODUCTION] Cost that increases with Era: gaining +3 [ICON_STRENGTH]/+35 [ICON_PRODUCTION] in the Classical and another +8 [ICON_STRENGTH]/+35 [ICON_PRODUCTION] in the Medieval.
 
 -- =======================
 -- Baggataway Field (Zoo)

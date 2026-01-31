@@ -43,7 +43,8 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_SWORDSMAN';
 UPDATE Units SET
 Combat = Combat + 2,
 PurchaseOnly = 1,
-MoveAfterPurchase = 1
+MoveAfterPurchase = 1,
+PurchaseCooldown = 0
 WHERE Type = 'UNIT_CD_VARANGIAN';
 
 INSERT INTO Unit_FreePromotions
@@ -54,7 +55,7 @@ VALUES
 	('UNIT_CD_VARANGIAN', 'PROMOTION_ATTACK_BONUS_SWEDEN');
 
 UPDATE Language_en_US SET
-Text = 'Requires the [ICON_CULTURE_JFD_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EASTERN_SHORT_DESC}[ENDCOLOR] Cultural Group.'
+Text = 'Requires the [ICON_CULTURE_JFD_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EASTERN_SHORT_DESC}[ENDCOLOR] Cultural Group.[NEWLINE]May only be purchased with [ICON_GOLD] Gold or [ICON_PEACE] Faith.'
 WHERE Tag = 'TXT_KEY_UNIT_CD_VARANGIAN_HELP';
 
 -- =======================

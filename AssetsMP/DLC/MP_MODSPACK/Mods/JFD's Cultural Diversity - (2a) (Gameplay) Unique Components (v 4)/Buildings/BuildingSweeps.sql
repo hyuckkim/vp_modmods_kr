@@ -108,6 +108,20 @@ PovertyFlatReduction = (
     WHERE bc.Type = Buildings.BuildingClass
     LIMIT 1
 ),
+ReligiousUnrestFlatReduction = (
+    SELECT b.ReligiousUnrestFlatReduction
+    FROM Buildings AS b
+    JOIN BuildingClasses AS bc ON bc.DefaultBuilding = b.Type
+    WHERE bc.Type = Buildings.BuildingClass
+    LIMIT 1
+),
+ReligiousUnrestFlatReductionGlobal = (
+    SELECT b.ReligiousUnrestFlatReductionGlobal
+    FROM Buildings AS b
+    JOIN BuildingClasses AS bc ON bc.DefaultBuilding = b.Type
+    WHERE bc.Type = Buildings.BuildingClass
+    LIMIT 1
+),
 NoUnhappfromXSpecialists = (
     SELECT b.NoUnhappfromXSpecialists
     FROM Buildings AS b
