@@ -171,7 +171,7 @@ Name: "civselect"; Description: "지도자 선택 화면"; Types: Custom; Flags:
 Name: "civselect\csbu"; Description: "문명 선택 기본 화면"; Types: VPMAX Custom; Flags: exclusive disablenouninstallwarning
 Name: "civselect\cs"; Description: "진정한 대체 지도자"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
-Name: "menu"; Description: "메인 메뉴 혹은 모드 메뉴 바꾸기"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "menu"; Description: "메인 메뉴 혹은 모드 메뉴 바꾸기"; Types: Custom; Flags: disablenouninstallwarning
 Name: "menu\cms"; Description: "사용자 정의 모드 메뉴"; Types: Custom; Flags: exclusive disablenouninstallwarning
 Name: "menu\smm"; Description: "새로운 메인 메뉴"; Types: Custom; Flags: exclusive disablenouninstallwarning
 
