@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" version="13">
+<Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" version="14">
   <Properties>
     <Name>(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP</Name>
     <Stability>Alpha</Stability>
@@ -169,7 +169,7 @@
 	<File md5="25fdae8780827c6e669255b1dd9cc774" import="0">Core/GH_Louisiana_GameDefines_Diplomacy.sql</File>
 	<File md5="4ec862f287a39fd1b08b5e070cd20869" import="0">Core/GH_Louisiana_GameText.xml</File>
 	<File md5="ca41f65d5fe840dab1d4dcc66699fcf0" import="0">Core/GH_Louisiana_GameText_Diplomacy.xml</File>
-	<File md5="f75caa7527cd226e2f357cf17dfd6da7" import="0">Core/GH_Louisiana_ModSupport.sql</File>
+	<File md5="f6e0db7dc3aa395b0c901ddb1cb739a9" import="0">Core/GH_Louisiana_ModSupport.sql</File>
 	<File md5="1ddc72bba1fb1d62b32b48a10395ca3c" import="0">Lua/GH_Louisiana_Functions.lua</File>
 	<File md5="d63dc8bb6aa0f310dd55b264db49c7e2" import="1">Lua/Utilities/PlotIterators.lua</File>
   </Files>
@@ -180,7 +180,7 @@
       <UpdateDatabase>Core/GH_Louisiana_GameDefines_Diplomacy.sql</UpdateDatabase>
       <UpdateDatabase>Core/GH_Louisiana_GameText.xml</UpdateDatabase>
       <UpdateDatabase>Core/GH_Louisiana_GameText_Diplomacy.xml</UpdateDatabase>
-      <UpdateDatabase>Core/GH_Louisiana_ModSupport.xml</UpdateDatabase>	  
+      <UpdateDatabase>Core/GH_Louisiana_ModSupport.sql</UpdateDatabase>	  
     </OnModActivated>
   </Actions>
   <EntryPoints>
