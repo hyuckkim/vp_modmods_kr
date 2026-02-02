@@ -1596,9 +1596,6 @@
 		<Row Tag="TXT_KEY_BUILDING_ATLOOH">
 			<Text>디요기 아틀로흐</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ATLOOH_HELP">
-			<Text>[ICON_RES_JAR_DIYOGI] 디요기 사치 자원의 사본을 1 제공합니다.</Text>
-		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDING_ATLOOH_TEXT">
 			<Text>아틀로흐는 직물을 짜는 행위를 뜻하는 나바호어 동사입니다. [NEWLINE]17세기 푸에블로인에게 직조를 배운 뒤, 나바호는 곧 독창적인 양식을 발전시켰습니다. 복잡한 기하학 무늬, 선명한 색감, 양털 같은 자연 소재 사용으로 구분되며, 수직 베틀에서 수작업으로 만들어집니다. 각 작품은 문화적 의미와 이야기를 담고 있으며, 직조가의 개성과 나바호 우주관을 반영합니다. 그 아름다움과 장인정신으로 나바호 양탄자와 담요는 수집 가치가 높으며, 예술성과 문화유산으로 기려집니다.</Text>
 		</Row>
@@ -1671,7 +1668,7 @@
 		</Row>	
 		<!-- DIPLOMACY: VANILLA LINES -->
 		<!-- Human repeats an action too much, gets the following responses -->
-@ -352,967 +355,968 @@
+		<Row Tag="TXT_KEY_LEADER_JAR_MANUELITO_REPEAT_TOO_MUCH">
 			<Text>...</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_JAR_MANUELITO_REPEAT_TRADE_1">
