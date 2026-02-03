@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_TITLE">
+			<Text>[COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR]을(를) 발견하여 1 [ICON_HAPPINESS_1] 행복을 얻었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_HAPPINESS">
+			<Text>(사용되지 않음)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS">
+			<Text>[NEWLINE][NEWLINE]기본 산출량:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_PER_ERA">
+			<Text>(시대별 산출량: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_ADJACENT">
+			<Text>[NEWLINE]인접 타일 산출량: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_YIELDS_RIVER">
+			<Text>[NEWLINE]강 산출량: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]능력:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PASSABLE">
+			<Text>[NEWLINE][ICON_BULLET][ICON_RESEARCH] [COLOR_CYAN]{1_Tech}[ENDCOLOR] 연구 후 통과 가능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_MOVE_END">
+			<Text>[NEWLINE][ICON_BULLET]타일 진입 시 유닛의 [ICON_ARROW_RIGHT] 이동 [COLOR_NEGATIVE_TEXT]중단[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_GOLD_FIRST_FIND">
+			<Text>[NEWLINE][ICON_BULLET]최초 발견자: {1_Gold} [ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_GOLD_NEXT_FIND">
+			<Text>[NEWLINE][ICON_BULLET]후속 발견자: {1_Gold} [ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_DEFENSE">
+			<Text>[NEWLINE][ICON_BULLET]타일 방어력: +{1_Defense}% [ICON_STRENGTH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_DAMAGE">
+			<Text>[NEWLINE][ICON_BULLET]유닛에게 피해: 턴당 [COLOR_NEGATIVE_TEXT]-{1_Damage} HP[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_OTHER_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]소유자 능력 (도시 경계 내에 있을 경우):</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_MAP_ABILITIES_HEADER">
+			<Text>[NEWLINE][NEWLINE]지도 능력 (지도 생성에 영향):</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET][ICON_FOOD] [COLOR_POSITIVE_TEXT]담수[ENDCOLOR] 공급원</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FREE_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]모든[ENDCOLOR] {1_Unit_types} [COLOR_YIELD_GOLD]유닛[ENDCOLOR]에게 승급 부여: {2_Promotion} ({3_Help})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_NEAR_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]근처의[ENDCOLOR] {1_Unit_types} [COLOR_YIELD_GOLD]유닛[ENDCOLOR]에게 승급 부여: {2_Promotion} ({3_Help})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_LOCATION_PROMOTION">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]타일 위의[ENDCOLOR] {1_Unit_types} [COLOR_YIELD_GOLD]유닛[ENDCOLOR]에게 승급 부여: {2_Promotion} ({3_Help})</Text>
+		</Row>
+
+
+		<!-- Unit types elligible for promotions (for text purpose) -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_EVERLASTING_YOUTH"> <!-- Fountain of Youth -->
+			<Text>[COLOR_YIELD_GOLD]근접 군사[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_SACRED_STEPS"> <!-- Sri Pada -->
+			<Text>[COLOR_YIELD_GOLD]민간[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_KAILASH">
+			<Text>[COLOR_YIELD_GOLD]선교사[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_ULURU">
+			<Text>[COLOR_YIELD_GOLD]외교[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_ALTITUDE_TRAINING"> <!-- Kilimanjaro -->
+			<Text>[COLOR_YIELD_GOLD]정찰[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_SOLOMONS_MINES">
+			<Text>[COLOR_YIELD_GOLD]노동자[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_BERMUDA_TRIANGLE">
+			<Text>[COLOR_YIELD_GOLD]모든[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_DALLOL">
+			<Text>[COLOR_YIELD_GOLD]공성[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_CAUSEWAY">
+			<Text>[COLOR_YIELD_GOLD]고고학자[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_MT_EVEREST">
+			<Text>[COLOR_YIELD_GOLD]정찰[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_HA_LONG">
+			<Text>[COLOR_YIELD_GOLD]해상[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PROMOTION_DETAILS_PROMOTION_AURORA">
+			<Text>[COLOR_YIELD_GOLD]지상[ENDCOLOR]</Text>
+		</Row>
+
+
+
+		<!-- Special common abilities -->
+		<!--<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_FEATURE_BERMUDA_A">
+			<Text>[NEWLINE][ICON_BULLET]타일 위에서 [COLOR_NEGATIVE_TEXT]유닛 정지[ENDCOLOR]</Text>
+		</Row>-->
+
+
+
+		<!-- Special abilities -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_A">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_GREY]해양 사치 자원[ENDCOLOR]에 +1 [ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]어선[ENDCOLOR]에 +1 [ICON_FOOD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_C">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]어선[ENDCOLOR]에 +1 [ICON_FOOD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CRATER">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]우주선 부품[ENDCOLOR] 건설 시 제국 내 +20% [ICON_PRODUCTION][NEWLINE][ICON_BULLET][ICON_RESEARCH] 기술 연구 시마다 시대에 비례하여 10 [ICON_GOLDEN_AGE] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FUJI">
+			<Text>[NEWLINE][ICON_BULLET]인근 도시에 +3 [ICON_GREAT_ARTIST][NEWLINE][ICON_BULLET]인근 도시에 +2 [ICON_GREAT_WRITER][NEWLINE][ICON_BULLET]인근 도시에 +1 [ICON_GREAT_MUSICIAN]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MESA">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 모든 도시에 +1 [ICON_SILVER_FIST] 군사 보급 한도[NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]기마 군사 유닛[ENDCOLOR] 건설 시 제국 내 +20% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_VOLCANO">
+			<Text>[NEWLINE][ICON_BULLET]인근 도시의 과학자에게 +1 [ICON_FOOD] 및 +1 [ICON_RESEARCH][NEWLINE][ICON_BULLET]인근 도시에 +2 [ICON_GREAT_SCIENTIST]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GIBRALTAR">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 +5% [ICON_STRENGTH] 도시 방어력[NEWLINE][ICON_BULLET]게임 시작 시 8 [ICON_CITY_STATE] 도시 국가마다 +1 [ICON_DIPLOMAT] 세계 의회 투표권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GEYSER">
+			<Text>[NEWLINE][ICON_BULLET]모든 기술자에게 +1 [ICON_RESEARCH][NEWLINE][ICON_BULLET]제국 내 -10% [ICON_HAPPINESS_3] 요구 보정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FOUNTAIN_YOUTH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_POTOSI">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] 교역로[NEWLINE][ICON_BULLET]모든 [ICON_RES_SILVER] [COLOR_GREY]은[ENDCOLOR]에 +1 [ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EL_DORADO">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_RES_GOLD] [COLOR_GREY]금[ENDCOLOR]에 +1 [ICON_PEACE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SRI_PADA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_GREAT_WORK] 걸작에 +1 [ICON_PEACE] 및 +1 [ICON_GOLDEN_AGE][NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]성지[ENDCOLOR]에 +1 [ICON_PEACE] 및 +1 [ICON_GOLDEN_AGE][NEWLINE][ICON_BULLET]이 자연 경관을 소유할 때마다 시대에 비례하여 50 [ICON_PEACE] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_KAILASH">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_YIELD_FOOD]기념비[ENDCOLOR] 및 [COLOR_YIELD_FOOD]사원[ENDCOLOR]에 +2 [ICON_PEACE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ULURU">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]외교 유닛[ENDCOLOR] 건설 시 제국 내 +20% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LAKE_VICTORIA">
+			<Text>[NEWLINE][ICON_BULLET]제국 전역에 [ICON_FOOD] 교역로 설립 가능[NEWLINE][ICON_BULLET]제국 내 -10% [ICON_GOLD] 가속 비용 보정</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_KILIMANJARO">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_RES_IVORY] [COLOR_GREY]상아[ENDCOLOR]에 +1 [ICON_CULTURE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SOLOMONS_MINES">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]광산[ENDCOLOR]에 +1 [ICON_GOLDEN_AGE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_A">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_YIELD_FOOD]공장[ENDCOLOR] 및 [COLOR_YIELD_FOOD]발전소[ENDCOLOR]에 +2 [ICON_PRODUCTION][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]우주선 부품[ENDCOLOR] 건설 시 제국 내 +7% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_YIELD_FOOD]공장[ENDCOLOR] 및 [COLOR_YIELD_FOOD]발전소[ENDCOLOR]에 +1 [ICON_PRODUCTION][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]우주선 부품[ENDCOLOR] 건설 시 제국 내 +3% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_A">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]랜드마크[ENDCOLOR]에 +6% [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_CITY_BROWN]랜드마크[ENDCOLOR]에 +14% [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_EVEREST">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 +5% [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_RETBA">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 +5% [ICON_FOOD][NEWLINE][ICON_BULLET][ICON_HAPPINESS_1] 사랑해 주간 동안 제국 내 +10% [ICON_FOOD][NEWLINE][ICON_BULLET][ICON_CITIZEN] 시민 탄생 시 시대에 비례하여 15 [ICON_TOURISM] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LUMI_BAY">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_RES_FISH] [COLOR_GREY]물고기[ENDCOLOR] 및 [ICON_RES_TROPICAL_FISH] [COLOR_GREY]열대어[ENDCOLOR]에 +1 [ICON_RESEARCH][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]민간 유닛[ENDCOLOR] 생성 시 25 [ICON_TOURISM] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DALLOL">
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RES_SYLVITE] [COLOR_GREY]실바이트[ENDCOLOR][NEWLINE][ICON_BULLET]제국 내 -5% [ICON_HAPPINESS_3] 지루함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_PAEKTU">
+			<Text>[NEWLINE][ICON_BULLET]최초 소유자는 인근 도시에 고유 건물: [COLOR_YIELD_FOOD]산 아래 태어난 자의 제단[ENDCOLOR]과 고유 [ICON_GW_ART] 예술 걸작([COLOR_CULTURE_STORED]백두산 정상에 선 김일성과 김정일[ENDCOLOR]) 및 기타 보너스를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_A">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_CYAN]석공술[ENDCOLOR]에서 +1 [ICON_CULTURE][NEWLINE][ICON_BULLET][COLOR_CYAN]고고학[ENDCOLOR]에서 +2 [ICON_TOURISM][NEWLINE][ICON_BULLET][COLOR_CYAN]인공위성[ENDCOLOR]에서 +5 [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_B">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_CYAN]석공술[ENDCOLOR]에서 +1 [ICON_CULTURE][NEWLINE][ICON_BULLET][COLOR_CYAN]고고학[ENDCOLOR]에서 +2 [ICON_TOURISM][NEWLINE][ICON_BULLET][COLOR_CYAN]인공위성[ENDCOLOR]에서 +5 [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_C">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_CYAN]석공술[ENDCOLOR]에서 +1 [ICON_CULTURE][NEWLINE][ICON_BULLET][COLOR_CYAN]고고학[ENDCOLOR]에서 +2 [ICON_TOURISM][NEWLINE][ICON_BULLET][COLOR_CYAN]인공위성[ENDCOLOR]에서 +5 [ICON_TOURISM]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BLUE_HOLE">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_CITY_BROWN]어선[ENDCOLOR] 또는 [COLOR_CITY_BROWN]해상 플랫폼[ENDCOLOR]으로 개발 가능[NEWLINE][ICON_BULLET]3개의 후반 게임, [COLOR_NEGATIVE_TEXT]상호 배타적인[ENDCOLOR], 해안 도시 고유 건물 건설 가능: [COLOR_YIELD_FOOD]스쿠버 다이빙 리조트[ENDCOLOR], [COLOR_YIELD_FOOD]심해 연구 시설[ENDCOLOR] 또는 [COLOR_YIELD_FOOD]심해 잠수정 도킹 베이[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_A">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_YIELD_FOOD]작가 길드[ENDCOLOR]에 +4 [ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [COLOR_YIELD_FOOD]작가 길드[ENDCOLOR]에 +2 [ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_A">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]해상 근접 유닛[ENDCOLOR] 건설 시 제국 내 +5% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_ARTIFACT] 유물에 +1 [ICON_CULTURE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]해상 근접 유닛[ENDCOLOR] 건설 시 제국 내 +5% [ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ZHANGJIAJIE">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_GREAT_WORK] 걸작에 +2 [ICON_GOLDEN_AGE][NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] 위인 소모 시 시대에 비례하여 50 [ICON_TOURISM] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_A">
+			<Text>[NEWLINE][ICON_BULLET]유닛 사망 시 2 [ICON_PEACE][ENDCOLOR][NEWLINE][ICON_BULLET]모든 도시에서 3% [ICON_PEACE]가 [ICON_RESEARCH]로 전환됨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_B">
+			<Text>[NEWLINE][ICON_BULLET]유닛 사망 시 2 [ICON_PEACE][ENDCOLOR][NEWLINE][ICON_BULLET]모든 도시에서 3% [ICON_PEACE]가 [ICON_RESEARCH]로 전환됨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_C">
+			<Text>[NEWLINE][ICON_BULLET]유닛 사망 시 2 [ICON_PEACE][ENDCOLOR][NEWLINE][ICON_BULLET]모든 도시에서 3% [ICON_PEACE]가 [ICON_RESEARCH]로 전환됨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ARCH">
+			<Text>[NEWLINE][ICON_BULLET]인근 도시의 [ICON_CONNECTED] 도시 연결 및 [ICON_INDUSTRIAL_CONNECTED] 산업 도시 연결에서 +20% [ICON_GOLD][NEWLINE][ICON_BULLET]인근 도시의 내부 [ICON_INTERNATIONAL_TRADE] 교역로 종료 시 시대에 비례하여 40 [ICON_GOLD] 및 15 [ICON_CULTURE] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_A">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_GW_ART] 예술 걸작에 +2 [ICON_PEACE][NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 동안 제국 내 +3% [ICON_GREAT_ARTIST] 및 +3% [ICON_GREAT_SCIENTIST]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_B">
+			<Text>[NEWLINE][ICON_BULLET]모든 [ICON_GW_ART] 예술 걸작에 +2 [ICON_PEACE][NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 동안 제국 내 +3% [ICON_GREAT_ARTIST] 및 +3% [ICON_GREAT_SCIENTIST]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_JEJU_DO">
+			<Text>[NEWLINE][ICON_BULLET]인근 도시에 +2 [ICON_GREAT_ARTIST][NEWLINE][ICON_BULLET]인근 도시에서 [ICON_GREAT_ARTIST] 위대한 예술가 탄생 시, [COLOR_POSITIVE_TEXT][ICON_GOLDEN_AGE] 황금기 시작[ENDCOLOR] 능력으로 얻을 수 있는 잠재적 [ICON_GOLDEN_AGE]의 25%에 해당하는 [ICON_GOLD] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_A">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 새로 생성된 각 [COLOR_YIELD_GOLD]잠수함 유닛[ENDCOLOR]에게 7 XP 부여[NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 시작 시 시대에 비례하여 10 [ICON_RESEARCH] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_B">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 새로 생성된 각 [COLOR_YIELD_GOLD]잠수함 유닛[ENDCOLOR]에게 7 XP 부여[NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 시작 시 시대에 비례하여 10 [ICON_RESEARCH] 획득</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_C">
+			<Text>[NEWLINE][ICON_BULLET]제국 내 새로 생성된 각 [COLOR_YIELD_GOLD]잠수함 유닛[ENDCOLOR]에게 7 XP 부여[NEWLINE][ICON_BULLET][ICON_GOLDEN_AGE] 황금기 시작 시 시대에 비례하여 10 [ICON_RESEARCH] 획득</Text>
+		</Row>
+
+		
+
+		<!-- Map abilities -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_A">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 최대 5개의 서로 다른 [COLOR_CITY_GREEN]지물[ENDCOLOR] 또는 [COLOR_GREY]자원[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_B">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 최대 5개의 서로 다른 [COLOR_CITY_GREEN]지물[ENDCOLOR] 또는 [COLOR_GREY]자원[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_C">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 최대 5개의 서로 다른 [COLOR_CITY_GREEN]지물[ENDCOLOR] 또는 [COLOR_GREY]자원[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CRATER">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_FUJI">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MESA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_VOLCANO">
+			<Text>[NEWLINE][ICON_BULLET]2번째 물 타일 링에 최대 3개의 [COLOR_CITY_BLUE]추가 섬 타일[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GIBRALTAR">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GEYSER">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_FOUNTAIN_YOUTH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_POTOSI">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 2 [ICON_RES_SILVER] [COLOR_GREY]은[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EL_DORADO">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 2 [ICON_RES_GOLD] [COLOR_GREY]금[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SRI_PADA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_SINAI">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_KAILASH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ULURU">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_LAKE_VICTORIA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_KILIMANJARO">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SOLOMONS_MINES">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SALAR_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SALAR_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CAUSEWAY_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CAUSEWAY_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_EVEREST">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_RETBA">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BERMUDA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_LUMI_BAY">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DALLOL">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_PAEKTU">
+			<Text>[NEWLINE][ICON_BULLET]지도상에 3개의 [COLOR_CITY_GREEN]새로운 강[ENDCOLOR]의 발원지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_BLUE_HOLE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_A">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 최대 2 [ICON_RES_TROPICAL_FISH] [COLOR_GREY]열대어[ENDCOLOR] 및 최대 1 [ICON_RES_TORTOISE] [COLOR_GREY]자이언트 거북[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_B">
+			<Text>[NEWLINE][ICON_BULLET]인접 타일에 최대 2 [ICON_RES_TROPICAL_FISH] [COLOR_GREY]열대어[ENDCOLOR] 및 최대 1 [ICON_RES_TORTOISE] [COLOR_GREY]자이언트 거북[ENDCOLOR] 생성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_HA_LONG_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_HA_LONG_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ZHANGJIAJIE">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ARCH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_JEJU_DO">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_C">
+			<Text></Text>
+		</Row>
+
+
+
+		<!-- Quotes -->
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_A">
+			<Text>"유기체는 이산화탄소를 독으로 생각하지 않습니다. 껍질, 산호를 만드는 식물과 유기체는 그것을 구성 요소로 생각합니다."[NEWLINE] - 재닌 베니어스[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_B">
+			<Text>"유기체는 이산화탄소를 독으로 생각하지 않습니다. 껍질, 산호를 만드는 식물과 유기체는 그것을 구성 요소로 생각합니다."[NEWLINE] - 재닌 베니어스[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_NEW_REEF_C">
+			<Text>"유기체는 이산화탄소를 독으로 생각하지 않습니다. 껍질, 산호를 만드는 식물과 유기체는 그것을 구성 요소로 생각합니다."[NEWLINE] - 재닌 베니어스[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CRATER">
+			<Text>"사실 우리는 이제 이 크레이터가 아마도 금속성일 것으로 추정되는 작은 소행성인 외계 물체가 지구와 충돌하여 생긴 것임을 증명할 수 있습니다."[NEWLINE] - 다니엘 배린저[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_FUJI">
+			<Text>"오 달팽이여, 후지산을 오르거라, 하지만 천천히, 천천히!"[NEWLINE] - 고바야시 잇사[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MESA">
+			<Text>"웅장하고 깊은 협곡과 우뚝 솟은 봉우리가 있는 콜로라도 고원은 인간에게 특별히 호의적인 환경이 아니었습니다. 이곳은 평평한 고원과 메사 또는 수직 벽 협곡, 얼음으로 뒤덮인 봉우리 또는 사막 모래, 견딜 수 없는 더위 또는 북극 눈보라, 엄청난 건조함 또는 천둥 같은 급류 등 극단의 땅입니다."[NEWLINE] - 도널드 L. 바스[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_VOLCANO">
+			<Text>"나는 크라카토아 섬이 우리 눈앞에 완전히 불타버리고 불모지가 되어 있는 것을 보고 놀랐으며, 네 곳에서 큰 불덩어리를 뿜어내고 있었습니다."[NEWLINE] - 요한 빌헬름 포겔[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GIBRALTAR">
+			<Text>"주위를 둘러보라, 제군들, 영광스러운 불빛에 비친 바위가 얼마나 아름다운지 보라."[NEWLINE] - 조지 오거스터스 엘리엇[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GEYSER">
+			<Text>"우리가 머무는 동안 일정한 간격으로 9번 분출했으며, 끓는 물기둥은 매번 90~125피트 높이로 솟구쳤고 15~20분 동안 지속되었습니다. 우리는 그것을 올드 페이스풀이라고 이름 지었습니다."[NEWLINE] - 너새니얼 P. 랭포드[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_FOUNTAIN_YOUTH">
+			<Text>"젊음의 샘은 있습니다. 그것은 당신의 마음, 당신의 재능, 당신이 당신의 삶과 당신이 사랑하는 사람들의 삶에 가져오는 창의성입니다. 이 원천을 활용하는 법을 배우면 진정으로 나이를 이길 수 있습니다."[NEWLINE] - 소피아 로렌[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_POTOSI">
+			<Text>"나는 부유한 포토시, 세상의 보물, 모든 산의 왕이자 왕들의 부러움이다."[NEWLINE] - 포토시의 첫 번째 문장[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EL_DORADO">
+			<Text>"이것이 그 유명한 엘도라도가 된 의식으로, 수많은 생명과 재산을 앗아갔습니다."[NEWLINE] - 후안 로드리게스 프레일레[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SRI_PADA">
+			<Text>"오랜 기다림 끝에 그는 정상에 올라 부처님의 발자국을 묵상할 수 있었습니다. 정상에서 그는 북서쪽으로 실론 왕국을, 반대편으로는 바다를 보았습니다."[NEWLINE] - 바즈라보디의 순례 기록[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_SINAI">
+			<Text>"여호와께서 시내 산 위에서 모세에게 이르시기를 마치신 때에 증거판 둘을 모세에게 주시니 이는 돌판이요 하나님이 친히 쓰신 것이더라."[NEWLINE] - 출애굽기 31:18[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_KAILASH">
+			<Text>"경건한 자들을 가르친 후 브라흐마 경은 조상들과 사람들의 지도자들을 데리고 자신의 처소에서 주인이 그토록 아끼는 모든 산 중의 으뜸인 카일라스, 시바 경의 거처로 떠났습니다."[NEWLINE] - 바가바타 푸라나[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ULURU">
+			<Text>"호주는 지구상에서 가장 큰 생명체인 그레이트 배리어 리프와 가장 큰 단일체인 에어즈 록(또는 이제 공식적이고 더 존중하는 원주민 이름인 울룰루)의 고향입니다."[NEWLINE] - 빌 브라이슨[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_LAKE_VICTORIA">
+			<Text>"나는 늙은 아버지 나일강이 의심할 여지 없이 빅토리아 냔자에서 발원한다는 것을 보았고, 내가 예언했듯이 그 호수는 우리 종교적 신념의 첫 번째 설명자를 키운 성스러운 강의 위대한 원천입니다."[NEWLINE] - 존 해닝 스피크[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_KILIMANJARO">
+			<Text>"알고 보니 킬리만자로산은 와이파이가 안 돼서 탄자니아에서 2주 동안 여행 중인 사람들과 이야기하며 보내야 했습니다."[NEWLINE] - 낸시 본즈[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SOLOMONS_MINES">
+			<Text>"내 눈으로 하얀 죽음 뒤에 있는 솔로몬의 보물 창고에 저장된 수많은 다이아몬드를 보았지만, 마녀 탐지기 가굴의 배신으로 인해 나는 아무것도 가져오지 못했고 목숨만 겨우 건졌습니다."[NEWLINE] - 솔로몬 왕의 광산, 25페이지[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SALAR_A">
+			<Text>"사막에서 소금의 목소리를 들었을 때 나는 그 고독 속에서 몸을 떨었다."[NEWLINE] - 파블로 네루다[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_SALAR_B">
+			<Text>"사막에서 소금의 목소리를 들었을 때 나는 그 고독 속에서 몸을 떨었다."[NEWLINE] - 파블로 네루다[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CAUSEWAY_A">
+			<Text>"엄청난 지진이나 다른 끔찍한 자연의 격변으로 황폐해진 거대한 구조물의 잔해."[NEWLINE] - 필립 딕슨 하디[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_CAUSEWAY_B">
+			<Text>"엄청난 지진이나 다른 끔찍한 자연의 격변으로 황폐해진 거대한 구조물의 잔해."[NEWLINE] - 필립 딕슨 하디[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_EVEREST">
+			<Text>"아무도 에베레스트산을 두 번째로 오른 사람은 기억하지 않는다."[NEWLINE] - 에드먼드 힐러리 경[NEWLINE][NEWLINE]"에베레스트산에 오른 두 번째 사람이 되는 것이 부끄러운 일이라면, 나는 이 부끄러움을 안고 살아야 할 것이다."[NEWLINE] - 텐징 노르가이[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_RETBA">
+			<Text>"물, 물은 어디에나 있지만 마실 물은 한 방울도 없구나."[NEWLINE] - 새뮤얼 테일러 콜리지[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_A">
+			<Text>"버뮤다 삼각지대는 많은 사람이 생각하는 것보다 훨씬 오래되었습니다. 해양 탐험 초기부터 선원들은 이상한 광경을 목격했습니다."[NEWLINE] - C.R. 헤일[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_B">
+			<Text>"버뮤다 삼각지대는 많은 사람이 생각하는 것보다 훨씬 오래되었습니다. 해양 탐험 초기부터 선원들은 이상한 광경을 목격했습니다."[NEWLINE] - C.R. 헤일[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BERMUDA_C">
+			<Text>"버뮤다 삼각지대는 많은 사람이 생각하는 것보다 훨씬 오래되었습니다. 해양 탐험 초기부터 선원들은 이상한 광경을 목격했습니다."[NEWLINE] - C.R. 헤일[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_LUMI_BAY">
+			<Text>"불, 번개, 별 또는 생명체에서 나오는 빛의 방출은 모든 인간의 관심을 끕니다. 생물 발광의 경우 빛은 이상한 빛, 마법적이고 신비한 무언가를 가지고 있습니다."[NEWLINE] - 카시우스 스테바니[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DALLOL">
+			<Text>"에티오피아 달롤에 오신 것을 환영합니다. 이곳은 공기가 유독하고 땅이 산을 뱉어내며 담수가 없습니다!"[NEWLINE] - 내셔널 지오그래픽 TV[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MT_PAEKTU">
+			<Text>"봄날에도 가리라 겨울날에도 가리라, 백두산 백두산 내 마음의 고향."[NEWLINE] - "가리라 백두산으로", 북한 노래[NEWLINE][NEWLINE]"동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세."[NEWLINE] - "애국가", 대한민국 국가[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_A">
+			<Text>"이상하게도, 이것은 운석의 상처가 아니라 무지개에서 영감을 받은 색 구성표를 가진 깊이 침식된 돔으로 보입니다."[NEWLINE] - 크리스 해드필드[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_B">
+			<Text>"이상하게도, 이것은 운석의 상처가 아니라 무지개에서 영감을 받은 색 구성표를 가진 깊이 침식된 돔으로 보입니다."[NEWLINE] - 크리스 해드필드[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_EYE_OF_SAHARA_C">
+			<Text>"이상하게도, 이것은 운석의 상처가 아니라 무지개에서 영감을 받은 색 구성표를 가진 깊이 침식된 돔으로 보입니다."[NEWLINE] - 크리스 해드필드[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_BLUE_HOLE">
+			<Text>"스쿠버 다이버와 스노클러들은 수십 년 동안 표층수를 순항해 왔지만, 더 깊이 모험하여 어둠 너머에 무엇이 있는지 탐험한 사람은 거의 없습니다."[NEWLINE] - 스티브 카메론과 레베카 윌킨[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GALAPAGOS_A">
+			<Text>"이 군도는 그 자체로 작은 세계이거나, 오히려 아메리카에 부속된 위성으로, 그곳에서 몇몇 길 잃은 식민지 개척자들을 얻었고 토착민의 일반적인 성격을 받았습니다."[NEWLINE] - 찰스 다윈[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_GALAPAGOS_B">
+			<Text>"이 군도는 그 자체로 작은 세계이거나, 오히려 아메리카에 부속된 위성으로, 그곳에서 몇몇 길 잃은 식민지 개척자들을 얻었고 토착민의 일반적인 성격을 받았습니다."[NEWLINE] - 찰스 다윈[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_HA_LONG_A">
+			<Text>"내 바다가 싫으면 내 바다에서 낚시하지 마. 내 계곡에서 나가고 내 산을 내버려 둬."[NEWLINE] - 마 레이니[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_HA_LONG_B">
+			<Text>"내 바다가 싫으면 내 바다에서 낚시하지 마. 내 계곡에서 나가고 내 산을 내버려 둬."[NEWLINE] - 마 레이니[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ZHANGJIAJIE">
+			<Text>"산은 이 세상의 모든 것을 이성적으로 설명할 수 없다는 것을 가르쳐준다."[NEWLINE] - 알렉산데르 르보프[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_A">
+			<Text>"(...) 섬세한 빛의 거대한 커튼이 걸려 떨렸다. 옅은 녹색과 장미색, 가장 연약한 천처럼 투명하고, 아래쪽 가장자리에는 지옥의 불처럼 깊고 불타는 진홍색이 가장 숙련된 무용수보다 더 우아하게 느슨하게 흔들리고 반짝였다."[NEWLINE] - 필립 풀먼[NEWLINE][NEWLINE]"어떤 사람들은 오로라를 향해 휘파람을 불거나 다른 소리를 내면 오로라가 더 활발해지거나 조상과 대화하는 방법으로 사용한다고 믿습니다 (...)."[NEWLINE] - 앤디 롱[NEWLINE]</Text>
+			<!-- CUT PART The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, -->
+			<!-- or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe. -->
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_B">
+			<Text>"(...) 섬세한 빛의 거대한 커튼이 걸려 떨렸다. 옅은 녹색과 장미색, 가장 연약한 천처럼 투명하고, 아래쪽 가장자리에는 지옥의 불처럼 깊고 불타는 진홍색이 가장 숙련된 무용수보다 더 우아하게 느슨하게 흔들리고 반짝였다."[NEWLINE] - 필립 풀먼[NEWLINE][NEWLINE]"어떤 사람들은 오로라를 향해 휘파람을 불거나 다른 소리를 내면 오로라가 더 활발해지거나 조상과 대화하는 방법으로 사용한다고 믿습니다 (...)."[NEWLINE] - 앤디 롱[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_C">
+			<Text>"(...) 섬세한 빛의 거대한 커튼이 걸려 떨렸다. 옅은 녹색과 장미색, 가장 연약한 천처럼 투명하고, 아래쪽 가장자리에는 지옥의 불처럼 깊고 불타는 진홍색이 가장 숙련된 무용수보다 더 우아하게 느슨하게 흔들리고 반짝였다."[NEWLINE] - 필립 풀먼[NEWLINE][NEWLINE]"어떤 사람들은 오로라를 향해 휘파람을 불거나 다른 소리를 내면 오로라가 더 활발해지거나 조상과 대화하는 방법으로 사용한다고 믿습니다 (...)."[NEWLINE] - 앤디 롱[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ARCH">
+			<Text>"델리키트 아치와 같이 자연에서 나온 기이하고 사랑스럽고 환상적인 물체는 우리에게 상기시켜 주는 묘한 능력이 있습니다... 저 밖에는 우리보다 훨씬 더 오래되고 더 크고 더 깊은 다른 세상이 있다는 것을..."[NEWLINE] - 에드워드 애비[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_A">
+			<Text>"단샤 풍경의 보라색 색조는 사람들에게 천상의 느낌을 주며 전통 중국 문화에서 권위, 부, 행운과 관련이 있습니다."[NEWLINE] - 유네스코[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_B">
+			<Text>"단샤 풍경의 보라색 색조는 사람들에게 천상의 느낌을 주며 전통 중국 문화에서 권위, 부, 행운과 관련이 있습니다."[NEWLINE] - 유네스코[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_JEJU_DO">
+			<Text>"아무도 침묵하는 화산을 진지하게 받아들이지 않기 때문입니다!"[NEWLINE] - 메흐메트 무라트 일단[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_A">
+			<Text>"달 표면에 가본 사람이 마리아나 해구 바닥에 가본 사람보다 더 많습니다."[NEWLINE] - 제임스 카메론[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_B">
+			<Text>"달 표면에 가본 사람이 마리아나 해구 바닥에 가본 사람보다 더 많습니다."[NEWLINE] - 제임스 카메론[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_C">
+			<Text>"달 표면에 가본 사람이 마리아나 해구 바닥에 가본 사람보다 더 많습니다."[NEWLINE] - 제임스 카메론[NEWLINE]</Text>
+		</Row>
+		
+
+
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK">
+			<Text>자연 경관 개요</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DIPLO_CORNER_HOOK_TT">
+			<Text>발견된 모든 자연 경관과 그 능력을 보여줍니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_OVERVIEW">
+			<Text>자연 경관 개요</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_NAME">
+			<Text>이름</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_CIV">
+			<Text>백과사전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_OWNER">
+			<Text>소유자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_DISTANCE">
+			<Text>거리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_NAME_TT">
+			<Text>좌클릭: 이름순 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_CIV_TT">
+			<Text>좌클릭: 이름순 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_OWNER_TT">
+			<Text>좌클릭: 현재 소유자 알파벳순 정렬[NEWLINE]우클릭: 현재 소유자 알파벳순 정렬 (당신을 맨 위로)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_HEADER_DISTANCE_TT">
+			<Text>좌클릭: 당신의 도시로부터 최단 거리순 정렬[NEWLINE]우클릭: 최단 거리에 있는 당신의 도시순 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_OWNER_UNKNOWN_TT">
+			<Text>알 수 없음</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_NATURAL_WONDER_NO_WONDER">
+			<Text>아직 자연 경관을 발견하지 못했습니다!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_NATURAL_WONDER_COUNT">
+			<Text>발견한 자연 경관: {1_Color}{2_WondersFound}[ENDCOLOR]/{3_WondersOnMap}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NATURAL_WONDER_DISTANCE">
+			<Text>[COLOR_CYAN]{2_ClosestCity}[ENDCOLOR]에서[NEWLINE]{1_Distance} 타일</Text>
+		</Row>
+
+		
+		
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_A">
+			<Text>그레이트 배리어 리프 (중심)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_B">
+			<Text>그레이트 배리어 리프 (측면)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_NEW_REEF_C">
+			<Text>그레이트 배리어 리프 (측면)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_FEATURE_REEF"/>
+			<Set Text="[COLOR:50:50:50:255](사용되지 않음) 그레이트 배리어 리프[ENDCOLOR]"/>
+		</Update>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_SALAR_A">
+			<Text>우유니 소금사막 (대)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_SALAR_B">
+			<Text>우유니 소금사막 (소)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_TEXT">
+			<Text>볼리비아 남서부에 위치한 우유니 소금사막은 해발 약 3,650미터(11,975피트) 높이에 10,000제곱킬로미터 이상을 덮고 있는 세계 최대의 소금 평원입니다. 민친 호수와 나중에 타우카 호수를 포함한 선사 시대 호수가 점차 증발하면서 수만 년에 걸쳐 형성되어 광대한 소금 껍질 층을 남겼습니다. 표면 아래에는 현대 기술, 특히 충전식 배터리에 점점 더 중요해지는 자원인 리튬의 지구상에서 가장 풍부한 매장량 중 하나가 있습니다. 수 세기 동안 아이마라족과 케추아족을 포함한 지역 사회는 평원에서 소금을 수확하고 이 지역을 문화 및 경제 활동에 통합했습니다. 20세기와 21세기에 우유니 소금사막은 광물 자원뿐만 아니라 초현실적인 자연의 아름다움으로 세계적인 인정을 받았습니다. [NEWLINE][NEWLINE]오늘날 우유니 소금사막은 전 세계 방문객을 끌어들이는 볼리비아의 가장 상징적인 목적지 중 하나입니다. 우기에는 얇은 물 층이 평원을 거대한 자연 거울로 바꾸어 하늘을 완벽하게 반사하여 구름 위를 걷는 듯한 착각을 불러일으킵니다. 이 지역에는 또한 거대한 선인장이 점재해 있는 잉카와시섬과 지역의 산업 과거를 반영하는 우유니 마을 근처의 기차 무덤과 같은 독특한 랜드마크가 있습니다. 관광 외에도 소금 평원은 리튬 매장량으로 인해 볼리비아의 경제적 미래에 중요한 역할을 합니다. 자연의 경이로움이자 필수 자원인 우유니 소금사막은 지질학, 문화, 세계적 중요성의 놀라운 교차점으로 서 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_CAUSEWAY_A">
+			<Text>자이언츠 코즈웨이 (바다)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_CAUSEWAY_B">
+			<Text>자이언츠 코즈웨이 (육지)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_CAUSEWAY_TEXT">
+			<Text>북아일랜드 앤트림주 북부 해안에 위치한 자이언츠 코즈웨이는 약 40,000개의 서로 맞물린 현무암 기둥으로 구성된 자연 지질학적 경이로움입니다. 약 5,000만~6,000만 년 전 격렬한 화산 활동 기간에 용융된 현무암이 급격히 냉각되고 수축하면서 독특한 육각형 모양을 만들었습니다. 이 유적지는 오랫동안 과학자와 방문객 모두를 매료시켜 화산 과정에 대한 통찰력을 제공하는 동시에 신화와 전설에 영감을 주었습니다. 아일랜드 민속에서 코즈웨이는 거인 핀 맥쿨(Fionn mac Cumhaill)이 라이벌 거인과 대결하기 위해 스코틀랜드로 가는 다리로 지었다고 전해지며, 이 형성물에 연상적인 이름을 부여했습니다. 17세기 초부터 문헌에 기록된 이 유적지는 계몽주의 시대에 자연사의 중요한 상징이 되어 학자와 관광객 모두를 끌어들였습니다. [NEWLINE][NEWLINE]오늘날 자이언츠 코즈웨이는 유네스코 세계문화유산이자 북아일랜드에서 가장 인기 있는 명소 중 하나로 인정받고 있습니다. 일부는 높이가 12미터에 달하는 현무암 기둥은 바다로 이어지는 초현실적인 징검다리 풍경을 만들어 매년 수백만 명의 방문객을 사로잡습니다. 주변 절벽과 해안 풍경은 드라마틱한 배경을 더하며 방문자 센터는 역사적, 지질학적, 문화적 맥락을 제공합니다. 과학적 중요성 외에도 자이언츠 코즈웨이는 자연과 신화의 조화를 계속 구현하며 지구의 자연력과 인간 스토리텔링의 지속적인 상상력을 모두 상징합니다.</Text>
+		</Row>
+
+
+
+		<!-- This name have already existed in Civ 5 files! -->
+		<!--<Row Tag="TXT_KEY_FEATURE_MT_EVEREST">
+			<Text>Mt. Everest</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>-->
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_EVEREST_TEXT">
+			<Text>네팔과 중국 티베트 자치구 국경의 히말라야산맥에 위치한 에베레스트산은 해발 8,848.86미터(29,031.7피트)로 지구상에서 가장 높은 산입니다. 약 6,000만 년 전 인도 지각판이 유라시아판과 충돌하여 히말라야산맥을 밀어 올렸을 때 형성되었습니다. 네팔에서는 사가르마타, 티베트에서는 초모랑마로 알려진 이 산은 오랫동안 지역 사회에 문화적, 영적 중요성을 지니고 있었습니다. 서양의 탐험은 19세기 영국 측량사들이 히말라야 지도를 작성하면서 시작되었으며, 1856년에 이 봉우리는 공식적으로 세계 최고봉으로 확인되었습니다. 수년간의 시도 끝에 뉴질랜드의 에드먼드 힐러리 경과 네팔의 셰르파 텐징 노르가이가 1953년 5월 29일 최초로 등정을 확인하여 등산 역사상 가장 위대한 업적 중 하나를 기록했습니다. [NEWLINE][NEWLINE]오늘날 에베레스트산은 자연의 웅장함의 세계적인 상징이자 전 세계 등반가들에게 도전적인 목적지입니다. 매년 수천 명이 정상에 도달하려고 시도하며 종종 눈사태, 강풍, 희박한 공기, 혹한 등 극한의 조건에 직면합니다. 이 산은 또한 과밀, 환경 파괴, 그리고 그러한 원정을 가능하게 하는 지역 셰르파 가이드들이 직면한 위험으로 인해 논란의 장소가 되었습니다. 이러한 어려움에도 불구하고 에베레스트는 "세계의 지붕"으로서 계속해서 경외감을 불러일으키며 인간의 인내, 야망, 지구상에서 가장 강력한 풍경의 지속적인 매력을 나타냅니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_RETBA">
+			<Text>레트바 호수</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_RETBA_TEXT">
+			<Text>락 로즈(Lac Rose)라고도 알려진 레트바 호수는 세네갈 다카르 북동쪽, 대서양 연안에서 가까운 거리에 위치한 눈에 띄는 분홍색 호수입니다. 선명한 색조는 미세조류인 두날리엘라 살리나(Dunaliella salina)가 붉은 색소를 생성하여 햇빛을 흡수하고 호수의 높은 염도에서 번성하기 때문에 나타납니다. 염분 농도가 가장 강한 건기에는 물이 가장 강렬한 분홍색과 붉은색을 띠어 자연의 경이로움이자 주요 명소가 됩니다. 역사적으로 이 호수는 소금 생산의 중요한 장소였으며 지역 노동자들이 오늘날까지 계속되는 과정으로 광물을 수확했습니다. 수 세대 동안 레트바 호수의 소금은 인근 지역 사회의 중요한 경제적 자원이었으며 호수를 세네갈의 문화 및 상업 역사와 연결했습니다. [NEWLINE][NEWLINE]현대에 들어 레트바 호수는 특이한 아름다움뿐만 아니라 문화적 랜드마크로서 세계적인 인정을 받았습니다. 2007년까지 파리-다카르 랠리의 종착점으로 유명하여 이 유적지에 국제적인 관심을 불러일으켰습니다. 호수는 약 3제곱킬로미터에 걸쳐 있으며 얕아서 소금 수확자들이 걸어 들어가 손으로 소금을 모으기 쉽고, 종종 가혹한 염분으로부터 보호하기 위해 피부에 시어 버터를 바릅니다. 경제적 역할 외에도 레트바 호수는 세네갈 자연 유산의 상징이 되어 관광객, 과학자, 사진작가 모두를 끌어들입니다. 모래언덕과 대서양 해안선을 배경으로 반짝이는 분홍색 물은 서아프리카에서 가장 독특하고 기억에 남는 풍경 중 하나입니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_BERMUDA">
+			<Text>버뮤다 삼각지대</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_BERMUDA_TEXT">
+			<Text>악마의 삼각지대라고도 알려진 버뮤다 삼각지대는 마이애미(플로리다), 버뮤다, 산후안(푸에르토리코)으로 둘러싸인 북대서양의 느슨하게 정의된 지역입니다. 20세기 중반 경계 내에서 선박과 항공기가 불가사의하게 실종되었다는 보고로 인해 악명 높아졌습니다. 가장 유명한 사건은 1945년 12월 훈련 임무 중 사라진 미 해군 폭격기 5대로 구성된 비행 19편의 실종과 그들을 찾아 나선 구조 비행기의 실종이었습니다. 300명 이상의 승무원과 함께 USS 사이클롭스호가 사라진 1918년 사건과 같은 초기 사례가 전설을 더했습니다. 1960년대와 1970년대에 작가와 언론인들은 이러한 사건을 선정적으로 다루어 자기 이상, 거대 파도, 외계인 개입에 이르기까지 다양한 이론을 부채질하여 버뮤다 삼각지대를 세계의 위대한 현대 미스터리 중 하나로 굳혔습니다. [NEWLINE][NEWLINE]실제로 과학적 조사에 따르면 버뮤다 삼각지대는 다른 교통량이 많은 해양 지역보다 실종 사고가 더 많이 발생하지 않습니다. 사건에 대한 설명은 종종 갑작스러운 폭풍, 강력한 멕시코 만류, 메탄 하이드레이트, 인간의 실수와 같은 자연적 요인을 지적합니다. 그럼에도 불구하고 버뮤다 삼각지대는 대중문화에 깊이 뿌리 박혀 위험과 음모의 분위기를 강조하는 책, 영화, 텔레비전 프로그램에 영감을 줍니다. 오늘날 이곳은 지리적 위험 구역이라기보다는 미지의 상징으로, 미스터리와 미지의 것에 대한 인류의 매력을 반영합니다. 그 지속적인 명성은 버뮤다 삼각지대가 신화, 해양 역사, 과학적 회의론 사이에서 균형을 이루며 계속해서 상상력을 사로잡도록 보장합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_LUMI_BAY">
+			<Text>생물 발광 만</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_LUMI_BAY_TEXT">
+			<Text>일반적으로 푸에르토리코 비에케스섬의 모스키토 만을 가리키는 생물 발광 만은 세계에서 가장 밝은 생물 발광 만으로 간주됩니다. 독특한 빛은 와편모충류(Pyrodinium bahamense)라는 미생물에서 나오는데, 물속의 움직임에 의해 자극을 받으면 빛을 냅니다. 이 자연 현상은 수 세기 동안 존재해 왔으며 원주민 타이노족은 빛나는 물을 신비롭고 신성하게 여겼습니다. 이 만은 식민지 시대에 더 널리 알려졌으며 이후 과학자들은 이렇게 밀집된 생물 발광 유기체가 번성할 수 있는 섬세한 생태적 균형을 이해하기 위해 연구해 왔습니다. 2008년 기네스 세계 기록은 모스키토 만을 지구상에서 가장 밝은 생물 발광 만으로 공식 선언했습니다. [NEWLINE][NEWLINE]오늘날 생물 발광 만은 푸에르토리코의 가장 유명한 자연 명소 중 하나로, 어두운 밤에 카약이나 보트를 타고 빛나는 물을 건너는 방문객들을 끌어들입니다. 만의 밝기는 맹그로브가 늘어선 해안, 얕은 깊이, 외해와의 제한된 연결 등 여러 요인이 결합되어 와편모충류에게 이상적인 환경을 조성하기 때문입니다. 파하르도의 라구나 그란데와 라하스의 라 파르게라와 같이 푸에르토리코에는 다른 생물 발광 만이 있지만 모스키토 만이 가장 장관입니다. 오염, 과도한 보트 타기, 수질 변화가 취약한 생태계를 위협할 수 있으므로 보존 노력이 중요합니다. 이 만은 자연의 경이로움이자 희귀하고 마법 같은 현상을 보존하는 데 있어 환경 관리의 중요성을 상기시키는 존재로 서 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_DALLOL">
+			<Text>달롤</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_DALLOL_TEXT">
+			<Text>에티오피아 북부 다나킬 저지대에 위치한 달롤은 지구상에서 가장 극단적이고 지질학적으로 독특한 장소 중 하나입니다. 이 지역은 해수면보다 약 125미터(410피트) 아래에 있어 세계에서 가장 낮은 육지 저지대 중 하나입니다. 화산 및 지각 활동으로 형성되었으며 표면 아래 마그마 챔버에 의해 구동되는 열수 시스템이 있습니다. 달롤은 1926년에 드문 수증기 폭발을 겪었으며, 이로 인해 초현실적인 풍경을 정의하는 크레이터가 생성되었습니다. 시간이 지남에 따라 화산 열과 지하 소금 매장량의 상호 작용으로 온천, 산성 연못, 소금 형성물, 광물 테라스의 만화경이 만들어졌습니다. 역사적으로 아파르족은 수 세기 동안 이 지역에서 소금을 채굴하여 낙타 대상(caravan)을 이용해 에티오피아 전역으로 소금 판을 운송하여 달롤을 고대 무역 네트워크에 연결했습니다. [NEWLINE][NEWLINE]오늘날 달롤은 종종 외계 풍경과 닮았다고 묘사되는 다른 세상 같은 풍경으로 유명합니다. 밝은 녹색과 노란색에서 짙은 빨간색과 흰색에 이르는 선명한 색상은 열수 활동에 의해 퇴적된 유황, 산화철 및 기타 광물에 의해 발생합니다. 기온은 종종 45°C(113°F)를 초과하며 지구상에서 가장 뜨거운 거주지 중 하나로 꼽힙니다. 가혹함에도 불구하고 이 지역은 극한 환경에서 생존하는 유기체인 극한 미생물을 연구하는 과학자들과 기이한 아름다움에 이끌린 모험적인 여행자들을 끌어들입니다. 그러나 환경은 취약하고 위험하며 유독 가스, 끓는웅덩이, 불안정한 지각이 있습니다. 따라서 달롤은 자연의 경이로움이자 자연 실험실로서 지구의 극한과 다른 행성의 조건에 대한 유사성을 제공합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_MT_PAEKTU">
+			<Text>백두산</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_PAEKTU_TEXT">
+			<Text>중국에서 장백산으로도 알려진 백두산은 북한과 중국 국경에 걸쳐 있는 화산 봉우리입니다. 높이 2,744미터(9,003피트)로 한반도와 중국 동북부에서 가장 높은 산입니다. 지질학적으로 백두산은 기록된 역사상 가장 큰 분화 중 하나인 서기 946년경의 거대한 분화로 형성된 거대한 칼데라가 있는 성층 화산입니다. "천년 분화"라고도 불리는 이 사건은 화산재를 일본과 북극까지 퍼뜨렸습니다. 수 세기 동안 이 산은 깊은 문화적, 역사적 중요성을 지니고 있었습니다. 한국 신화에서는 최초의 한국 왕국인 고조선의 건국자 단군의 전설적인 탄생지이며, 중국에서는 만주족의 기원 및 제국 정체성과 연결되어 있습니다. [NEWLINE][NEWLINE]오늘날 백두산은 자연적 상징이자 정치적 상징으로 남아 있습니다. 정상 칼데라는 드라마틱한 절벽으로 둘러싸인 깨끗한 분화구 호수인 천지로 채워져 있으며 순례자, 관광객, 연구자들의 주요 목적지입니다. 북한에게 이 산은 김일성의 항일 게릴라 활동, 심지어 김정일의 탄생과 공식적인 서사로 연결된 신성한 혁명 유적지로 찬양받습니다. 중국 측에서는 인기 있는 국립공원이자 생태 관광지입니다. 아름다움에도 불구하고 과학자들은 미래에 다시 분화할 수 있다고 경고함에 따라 백두산의 화산 활동은 면밀히 모니터링되고 있습니다. 따라서 이 산은 지질학, 신화, 정치가 독특하게 혼합되어 공유된 자연 유산이자 국가 정체성의 논쟁적인 상징 역할을 합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_EYE_OF_SAHARA">
+			<Text>사하라의 눈</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_EYE_OF_SAHARA_TEXT">
+			<Text>리차트 구조라고도 알려진 사하라의 눈은 모리타니 우아단 근처 사하라 사막에 위치한 거대한 원형 지질 구조입니다. 지름이 약 40km(25마일)에 달해 우주에서 가장 잘 보이며 사막 바닥에서 올려다보는 거대한 눈을 닮았습니다. 1960년대 우주비행사들에 의해 처음 전 세계적인 주목을 받은 이 구조는 처음에는 충돌 크레이터로 생각되었습니다. 그러나 지질학자들은 이제 이것이 수억 년에 걸친 융기와 침식으로 형성된 깊이 침식된 지질 돔으로 원생대 시대로 거슬러 올라가는 암석층을 노출시킨다고 믿습니다. 규암, 사암 및 기타 암석의 동심원 고리는 지구의 지질 역사를 연구하기 위한 독특한 랜드마크입니다. [NEWLINE][NEWLINE]오늘날 사하라의 눈은 과학적 호기심이자 문화적 경이로움으로 남아 있습니다. 주변 지역에서는 석기 시대 도구를 포함한 중요한 고고학적 발견이 이루어져 사하라 사막의 초기 인류 역사와 연결됩니다. 눈에 띄는 외관은 또한 신화와 추측을 불러일으켰으며 일부는 원형 고리 모양 때문에 플라톤의 아틀란티스 묘사에 영감을 주었을 수 있다고 제안했습니다. 외딴 사막 위치 때문에 통행량이 많지는 않지만 미스터리에 흥미를 느끼는 탐험가, 연구자, 모험적인 여행자들을 끌어들입니다. 리차트 구조는 지구상에서 가장 독특한 자연 형성물 중 하나로 서 있으며 지질학의 느리고 강력한 힘을 구현하는 동시에 인간의 상상력을 자극합니다.</Text>
+		</Row>
+		
+		
+		
+		<Row Tag="TXT_KEY_FEATURE_BLUE_HOLE">
+			<Text>그레이트 블루홀</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_BLUE_HOLE_TEXT">
+			<Text>그레이트 블루홀은 벨리즈 해안, 벨리즈 산호초 보호구역 시스템의 일부인 라이트하우스 리프 중앙 근처에 위치한 거대한 해양 싱크홀입니다. 너비 약 300미터(984피트), 깊이 120미터(394피트) 이상으로 마지막 빙하기 동안 해수면 상승으로 석회암 동굴 시스템이 침수되어 지붕이 무너졌을 때 형성되었습니다. 이 유적지는 1971년 유명한 해양 탐험가 자크 쿠스토가 지구상 최고의 다이빙 장소 중 하나로 선언하면서 전 세계적으로 인정을 받았으며 지질학적, 생태학적 중요성에 대한 국제적인 관심을 불러일으켰습니다. 블루홀은 이후 세계에서 두 번째로 큰 산호초 시스템인 벨리즈 산호초의 일부로 유네스코 세계문화유산이 되었습니다. [NEWLINE][NEWLINE]오늘날 그레이트 블루홀은 자연의 경이로움이자 다이버와 과학자들에게 최고의 목적지입니다. 그 깊이는 고대 지질 역사의 증거를 제공하는 종유석, 석회암 형성물, 동굴을 드러냅니다. 주변 해역에는 암초 상어, 그루퍼, 활기찬 산호 등 다양한 해양 생물이 서식하고 있지만 구멍 자체 내의 생물 다양성은 더 깊은 곳의 낮은 산소 수치로 인해 제한적입니다. 위에서 보면 거의 완벽한 원형 모양과 눈에 띄는 짙은 파란색이 산호초의 청록색 얕은 곳과 대조되어 지구상에서 가장 많이 사진이 찍히는 자연적 특징 중 하나입니다. 과학적 장소이자 관광 명소인 그레이트 블루홀은 자연사, 해양 생태학, 지구의 숨겨진 깊이에 대한 인간의 매력의 교차점을 구현합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_GALAPAGOS_A">
+			<Text>갈라파고스 (대)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_GALAPAGOS_B">
+			<Text>갈라파고스 (소)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_GALAPAGOS_TEXT">
+			<Text>태평양에 있는 에콰도르 군도인 갈라파고스 제도는 독특한 생물 다양성과 과학적 사고를 형성하는 데 있어 역사적 역할로 세계적으로 유명합니다. 수백만 년에 걸친 화산 활동으로 형성된 이 섬들은 에콰도르 해안에서 약 1,000km(620마일) 떨어져 있습니다. 1535년 스페인 주교 토마스 데 베를랑가의 배가 우연히 그곳으로 표류했을 때 유럽인들에 의해 처음 기록되었습니다. 수 세기 동안 이 섬들은 고래잡이와 해적들의 기착지 역할을 했으며, 그들은 식량으로 자이언트 거북을 착취하고 생태적 피해를 남겼습니다. 갈라파고스는 1835년 찰스 다윈이 HMS 비글호를 타고 방문했을 때 세계적인 중요성을 얻었습니다. 다윈은 여러 섬에 걸쳐 종의 변이를 관찰하면서 자연 선택에 의한 진화론에 기여한 아이디어를 개발하여 군도를 과학의 역사와 영원히 연결했습니다. [NEWLINE][NEWLINE]오늘날 갈라파고스 제도는 유네스코 세계문화유산이자 지구상에서 가장 신중하게 보호되는 생태계 중 하나입니다. 군도는 13개의 주요 섬, 6개의 작은 섬, 수많은 암초로 구성되어 있으며 바다이구아나, 푸른발얼가니새, 자이언트 거북, 적도 북쪽에서 발견되는 유일한 펭귄 종인 갈라파고스 펭귄과 같은 상징적인 종의 서식지입니다. 섬의 고립으로 인해 많은 고유종이 진화하여 진화의 살아있는 실험실이 되었습니다. 섬들이 침입종, 기후 변화, 인간 활동으로 인한 위협에 직면해 있기 때문에 엄격한 보존 조치가 관광과 어업을 규제합니다. 생태 보존과 생태 관광의 균형을 맞추는 갈라파고스는 생물 다양성의 취약한 성역이자 자연계를 보호해야 할 인류의 책임의 상징으로 남아 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_HA_LONG_A">
+			<Text>하롱베이 (주)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_HA_LONG_B">
+			<Text>하롱베이 (부)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_HA_LONG_TEXT">
+			<Text>베트남 북부 꽝닌성에 위치한 하롱베이는 석회암 카르스트와 에메랄드빛 바다의 드라마틱한 바다 풍경으로 유명한 유네스코 세계문화유산입니다. 만은 약 1,500제곱킬로미터에 걸쳐 있으며 거의 2,000개의 섬과 암초를 포함하고 있으며 그중 다수는 무성한 식물로 덮여 있습니다. 지질학적으로 이 형성물은 수백만 년에 걸쳐 침식, 지각 활동, 해수면 상승 및 하강 과정을 통해 생성되어 오늘날 볼 수 있는 눈에 띄는 절벽, 동굴, 기둥을 형성했습니다. 역사적으로 이 만은 수천 년 동안 사람이 거주해 왔으며 고고학적 증거는 18,000년 전으로 거슬러 올라가는 초기 인류 정착지를 가리킵니다. "하강하는 용"을 의미하는 "하롱"이라는 이름은 베트남 전설에서 유래했는데, 신들이 땅을 보호하기 위해 보낸 용들이 보석과 옥을 뱉어 섬과 암초가 되었다고 합니다. [NEWLINE][NEWLINE]오늘날 하롱베이는 자연의 아름다움과 문화적 중요성으로 유명한 베트남의 가장 상징적인 목적지 중 하나입니다. 만에는 수상 어촌 마을이 있어 지역 사회가 수 세대 동안 물 위에서의 삶에 적응해 왔습니다. 또한 산호초, 맹그로브 숲, 다양한 해양 및 조류 생물을 지원하는 독특한 생태계로 생물 다양성이 풍부합니다. 관광은 주요 산업이 되었으며 크루즈, 카약, 동굴 탐험이 가장 인기 있는 활동 중 하나입니다. 그러나 만은 오염과 과잉 개발로 인한 환경 문제에 직면해 있어 보존을 위해 지속 가능한 관리가 필수적입니다. 지질학적 경이로움, 문화유산, 살아있는 전통을 결합한 하롱베이는 자연의 보물이자 베트남 정체성의 중요한 부분으로 서 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_ZHANGJIAJIE">
+			<Text>장가계</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_ZHANGJIAJIE_TEXT">
+			<Text>중국 후난성에 위치한 장가계는 우뚝 솟은 사암 기둥, 깊은 협곡, 무성한 숲으로 세계적으로 유명하여 초현실적이고 거의 다른 세상 같은 풍경을 만들어냅니다. 이 독특한 석영-사암 형성물은 수백만 년에 걸쳐 물리적 풍화, 지각 변동, 침식을 통해 형성되어 3,000개 이상의 좁은 봉우리와 첨탑을 만들었습니다. 이 지역은 오랜 인간 거주 역사를 가지고 있으며 초기 농경 공동체와 지역 토가족 및 묘족 소수 민족의 문화 발전 증거가 있습니다. 1982년 장가계 국가삼림공원은 중국 최초의 국가삼림공원이 되었으며 나중에 무릉원 풍경구의 일부를 형성하여 1992년 유네스코 세계문화유산으로 지정되었습니다. [NEWLINE][NEWLINE]오늘날 장가계는 숨 막히는 풍경으로 매년 수백만 명의 방문객을 끌어들이는 유명한 자연 명소입니다. 이 공원은 제임스 카메론의 영화 아바타에 나오는 떠다니는 할렐루야 산맥에 영감을 주어 국제적인 인지도를 크게 높였습니다. 영화적 명성 외에도 장가계는 장가계 대협곡을 가로지르는 유리 바닥 다리와 같은 명소를 제공하는데, 이는 세계에서 가장 높고 긴 다리 중 하나입니다. 생물 다양성 또한 놀랍고 희귀 식물 종과 야생 동물이 보호된 숲에서 번성하고 있습니다. 지질학적 경이로움, 문화유산, 현대 관광 혁신을 결합한 장가계는 중국의 자연미와 세계적인 문화적 영향력을 모두 나타냅니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_AURORA">
+			<Text>오로라</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_AURORA_TEXT">
+			<Text>북반구에서는 오로라 보레알리스, 남반구에서는 오로라 오스트랄리스로 알려진 오로라 빛은 태양풍의 하전 입자가 지구 자기장 및 대기와 충돌하여 발생하는 자연광 현상입니다. 이러한 상호 작용은 산소 및 질소와 같은 가스를 자극하여 극지방 하늘 전체에 녹색, 빨간색, 파란색, 보라색 빛의 반짝이는 파도를 생성합니다. 이 현상은 수천 년 동안 관찰되고 신화화되었습니다. 북유럽 전설은 발키리의 갑옷에서 반사된 빛으로 묘사했고 이누이트 사람들은 하늘에서 노는 고인의 영혼이라고 믿었습니다. 초기 과학적 추측은 햇빛의 반사에서 화산 방출에 이르기까지 다양했지만 현대적 설명은 20세기 우주 및 대기 과학의 발전과 함께 등장하여 오로라를 태양 활동 및 지자기 폭풍과 연결했습니다. [NEWLINE][NEWLINE]오늘날 오로라는 자연의 경이로움일 뿐만 아니라 과학적 연구 대상이자 인기 있는 여행 경험이기도 합니다. 노르웨이, 핀란드, 캐나다, 알래스카, 남극 대륙과 같은 고위도 지역에서 특히 태양 활동이 활발한 기간에 가장 잘 보입니다. 오로라에 대한 현대 연구는 태양 폭풍으로 인한 지자기 교란이 지구의 위성, 전력망, 통신 시스템에 영향을 미칠 수 있으므로 우주 기상 연구에 기여합니다. 여행자들에게 오로라 관찰은 버킷리스트 경험이 되었으며 빛을 쫓는 것을 중심으로 전체 관광 산업이 구축되었습니다. 과학적 중요성을 연구하든 아름다움에 감탄하든 오로라 빛은 지구와 태양 사이의 강력한 연결을 구현하며 신화, 문화, 과학을 숨 막히는 천체 디스플레이에 혼합합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_ARCH">
+			<Text>델리키트 아치</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_ARCH_TEXT">
+			<Text>유타주 모압 근처 아치스 국립공원에 위치한 델리키트 아치는 미국에서 가장 유명한 자연 암석 형성물 중 하나이자 미국 남서부의 지속적인 상징입니다. 높이 약 16미터(52피트), 너비 14미터(46피트)의 독립형 사암 아치는 수백만 년에 걸쳐 엔트라다 사암의 침식을 통해 형성되었으며 바람, 물, 서리에 의해 형성되었습니다. 유트족과 파이우트족을 포함한 아메리카 원주민 문화가 한때 이 지역에 거주했으며 아치 근처에서 여전히 볼 수 있는 암각화를 남겼습니다. 오랫동안 지역적으로 알려져 있었지만 델리키트 아치는 20세기에 유타의 독특한 풍경을 보존하려는 운동의 일환으로 전국적인 명성을 얻었으며 결국 유타 번호판, 우표, 수많은 사진에 등장하는 아이콘이 되었습니다.[NEWLINE][NEWLINE]오늘날 델리키트 아치는 아치스 국립공원에서 가장 많이 방문하고 사진이 찍히는 특징으로 매년 수십만 명의 방문객을 끌어들입니다. 아치까지의 하이킹은 적당히 힘든 5km(3마일) 왕복 코스로, 특히 붉은 바위가 사막 하늘을 배경으로 찬란하게 빛나는 일몰 때 형성물을 가까이서 목격하려는 여행자들에게 인기 있는 순례지가 되었습니다. 시각적 매력 외에도 델리키트 아치는 인내와 자연의 아름다움의 상징이기도 하며 콜로라도 고원을 정의하는 침식과 시간의 취약한 균형을 구현합니다. 엄격한 보존 조치가 유적지를 보호하여 이 자연의 경이로움이 지질학적 경이로움이자 유타의 문화적 상징으로서 미래 세대를 위해 보존되도록 보장합니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_A">
+			<Text>장예 단샤 (주)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_B">
+			<Text>장예 단샤 (부)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_DANXIA_TEXT">
+			<Text>중국 간쑤성에 위치한 장예 단샤는 "그림 같은" 풍경을 만드는 선명한 색상의 암석층으로 유명한 장엄한 지질 형성물입니다. 이 형성물은 2,400만 년에 걸쳐 붉은 사암과 광물 퇴적물이 축적되어 생성되었으며 나중에 지각 활동에 의해 융기되고 바람과 물에 의해 침식되어 구르는 언덕, 가파른 절벽, 특이한 암석 모양이 되었습니다. 눈에 띄는 빨간색, 노란색, 녹색, 주황색 색조는 암석 내의 산화철 및 기타 미량 광물의 결과입니다. 이 지역은 수 세기 동안 지역적으로 알려져 있었지만 20세기 후반에야 더 널리 알려졌으며 2010년 중국 단샤 지형 풍경의 일부로 유네스코 세계문화유산이 되었습니다.[NEWLINE][NEWLINE]오늘날 장예 단샤는 종종 "무지개 산"이라고 불리는 중국에서 가장 독특한 자연의 경이로움 중 하나로 찬사를 받고 있습니다. 산책로, 전망대, 관광 시설을 통해 방문객들은 취약한 환경을 보존하면서 안전하게 지역을 탐험할 수 있습니다. 초현실적인 풍경은 사진, 여행 미디어, 영화의 인기 있는 주제가 되어 간쑤성 관광을 활성화했습니다. 시각적 아름다움 외에도 장예 단샤는 지구의 지질 역사에 대한 통찰력을 제공하며 층층이 쌓인 암석은 기후와 환경 변화의 자연적 기록 역할을 합니다. 과학적 중요성과 숨 막히는 미학을 결합한 장예 단샤는 자연의 걸작이자 귀중한 교육 자원으로 서 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_JEJU_DO">
+			<Text>성산일출봉</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_JEJU_DO_TEXT">
+			<Text>일출봉이라고도 알려진 성산일출봉은 대한민국 제주도에 위치한 화산 응회암 원뿔입니다. 10만 년 전 뜨거운 마그마가 얕은 바닷물과 폭발적으로 상호 작용했을 때 수성화산 분출에 의해 형성되었습니다. 그 결과 지름 약 600미터, 깊이 90미터의 가파른 분화구가 생겼고 3면이 절벽으로 둘러싸여 있습니다. 역사적으로 봉우리와 주변 땅은 지역 사회에서 방목과 농사에 사용되었으며 제주의 유명한 해녀(여성 잠수부)들은 오랫동안 해안을 따라 조개류와 해초를 채취해 왔습니다. 지질학적, 문화적 중요성을 인정받아 성산일출봉은 2007년 제주 화산섬 및 용암 동굴 유네스코 세계문화유산의 일부로 등재되었습니다.[NEWLINE][NEWLINE]오늘날 성산일출봉은 한국의 가장 상징적인 랜드마크 중 하나이자 주요 관광 명소입니다. 특히 탁 트인 일출 전망으로 유명하여 동해 위로 떠오르는 해를 보기 위해 동트기 전에 정상에 오르는 방문객들을 끌어들입니다. 주변 지역은 또한 야생화 들판과 전통적인 섬 생계를 지원하는 해양 생태계로 생물 다양성이 풍부합니다. 접근하기 쉽고 잘 보존된 이 유적지는 제주의 화산 기원과 자연의 아름다움을 상징하며 지질학적 경이로움과 문화유산을 혼합합니다. 과학적 장소이자 문화적 보물인 성산일출봉은 제주도의 자연, 역사, 인간 삶의 조화를 계속 구현하고 있습니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_A">
+			<Text>마리아나 해구 (중심)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_B">
+			<Text>마리아나 해구 (측면)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_C">
+			<Text>마리아나 해구 (측면)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MARIANA_TEXT">
+			<Text>마리아나 제도 동쪽 서태평양에 위치한 마리아나 해구는 지구상에서 가장 깊은 자연 해구로 챌린저 해연이라고 불리는 가장 낮은 지점에서 약 10,984미터(36,037피트)까지 떨어집니다. 태평양판이 더 작은 마리아나판 아래로 섭입하여 형성된 이 해구는 판 구조론이 작용하는 놀라운 예입니다. 세계의 바다를 연구하기 위한 선구적인 과학 항해 중 하나인 챌린저 탐사(1872~1876) 중에 처음 확인되었습니다. 1960년 미 해군 중위 돈 월시와 스위스 해양학자 자크 피카드는 잠수정 트리에스테를 타고 챌린저 해연으로 내려가 해구의 심연에 대한 최초의 유인 탐사를 기록하며 역사를 만들었습니다. 그 이후로 2012년 영화감독 제임스 카메론을 포함하여 소수의 사람들만이 그 깊이에 도달하여 그러한 탐험의 어려움과 중요성을 모두 강조했습니다.[NEWLINE][NEWLINE]오늘날 마리아나 해구는 과학 연구와 인간 호기심의 초점입니다. 짓누르는 압력, 영하에 가까운 온도, 영원한 어둠이 특징인 극한 환경에는 미생물, 단각류 및 특별한 조건에서 생존하도록 적응된 기타 유기체를 포함한 독특한 생명체가 서식합니다. 이러한 생태계에 대한 연구는 생명의 회복력에 대한 통찰력을 제공하며 생명 공학 및 외계 유기체 탐색에 영향을 미칩니다. 해구는 또한 섭입대가 해양 지각을 재활용하고 지진 활동에 영향을 미치기 때문에 지구의 지질학 및 기후 조절을 이해하는 데 중요한 역할을 합니다. 인간 탐험의 상징이자 얼마나 많은 것이 알려지지 않았는지를 상기시키는 마리아나 해구는 지구 바다의 궁극적인 개척지를 나타냅니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

@@ -62,7 +62,8 @@ Source: "..\!Jarcast and Hokath's Additional Luxuries INT\*"; DestDir: "{app}\MO
 Source: "..\!Jarcast & Hokath's Tibet for VP (v 6)\*"; DestDir: "{app}\MODS\!Jarcast & Hokath's Tibet for VP (v 6)"; Flags: ignoreversion recursesubdirs;	Components: tibet
 Source: "..\!Jarcast's Cities of Marble for VP (v 4)\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 4)"; Flags: ignoreversion recursesubdirs;	Components: cm
 Source: "..\!Jarcast's Cities of Marble for VP (v 4) INT\*"; DestDir: "{app}\MODS\!Jarcast's Cities of Marble for VP (v 4) INT"; Flags: ignoreversion recursesubdirs;	Components: cm
-;Source: "..\!Jarcast's City States Leaders Ultimate (v 1)\*"; DestDir: "{app}\MODS\!Jarcast's City States Leaders Ultimate (v 1)"; Flags: ignoreversion recursesubdirs;	Components: cslu
+Source: "..\!Jarcast's City States Leaders Ultimate (v 1)\*"; DestDir: "{app}\MODS\!Jarcast's City States Leaders Ultimate (v 1)"; Flags: ignoreversion recursesubdirs;	Components: cslu
+Source: "..\!Jarcast's City States Leaders Ultimate INT\*"; DestDir: "{app}\MODS\!Jarcast's City States Leaders Ultimate INT"; Flags: ignoreversion recursesubdirs;	Components: cslu
 Source: "..\!Jarcast's Hidden Wonders (VP)\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP)"; Flags: ignoreversion recursesubdirs;	Components: hw
 Source: "..\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion recursesubdirs;	Components: hw
 Source: "..\!Jarcast's Italy for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Italy for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: italy
@@ -80,15 +81,18 @@ Source: "..\(overhaul) Enhanced Air Warfare 4VP INT\*"; DestDir: "{app}\MODS\(ov
 Source: "..\(overhaul) Enlightenment Era for VP\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(overhaul) Enlightenment Era for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Enlightenment Era for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ee
 Source: "..\(ui) List Enhancements for VP KR\*"; DestDir: "{app}\MODS\(ui) List Enhancements for VP KR"; Flags: ignoreversion recursesubdirs;	Components: le
-;Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
-;Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
+Source: "..\(overhaul) More Wonders for VP\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP"; Flags: ignoreversion recursesubdirs;	Components: mw
+Source: "..\(overhaul) More Wonders for VP INT\*"; DestDir: "{app}\MODS\(overhaul) More Wonders for VP INT"; Flags: ignoreversion recursesubdirs;	Components: mw
+Source: "..\(overhaul) Unique City States for VP\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP"; Flags: ignoreversion recursesubdirs;	Components: ucs
+Source: "..\(overhaul) Unique City States for VP INT\*"; DestDir: "{app}\MODS\(overhaul) Unique City States for VP INT"; Flags: ignoreversion recursesubdirs;	Components: ucs
 Source: "..\(Primary) - Gwennog's France - Philippe Auguste for VP (v.9)\*"; DestDir: "{app}\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.9)"; Flags: ignoreversion recursesubdirs;	Components: france
 ;Source: "..\(text) Promotion Overhaul for VP\*"; DestDir: "{app}\MODS\(text) Promotion Overhaul for VP"; Flags: ignoreversion recursesubdirs;	Components: po
-;Source: "..\(ui) City-States Leaders for VP\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP"; Flags: ignoreversion recursesubdirs;	Components: csl
+Source: "..\(ui) City-States Leaders for VP\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP"; Flags: ignoreversion recursesubdirs;	Components: csl
+Source: "..\(ui) City-States Leaders for VP INT\*"; DestDir: "{app}\MODS\(ui) City-States Leaders for VP INT"; Flags: ignoreversion recursesubdirs;	Components: csl
 Source: "..\(ui) Trade Opportunities for VP\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP"; Flags: ignoreversion recursesubdirs;	Components: to
 Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Trade Opportunities for VP INT"; Flags: ignoreversion recursesubdirs;	Components: to
 Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion recursesubdirs;	Components: wp
-Source: "..\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.13)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.13)"; Flags: ignoreversion recursesubdirs;	Components: louis
+Source: "..\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)"; Flags: ignoreversion recursesubdirs;	Components: louis
 Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
 Source: "..\Continental Drift (v 3)\*"; DestDir: "{app}\MODS\Continental Drift (v 3)"; Flags: ignoreversion recursesubdirs;	Components: cd
 Source: "..\Even More Resources for Vox Populi (v 15)\*"; DestDir: "{app}\MODS\(overhaul) Even More Resources for Vox Populi (v 15)"; Flags: ignoreversion recursesubdirs;	Components: emr\n
@@ -96,8 +100,10 @@ Source: "..\Even More Resources for Vox Populi (v 15) INT\*"; DestDir: "{app}\MO
 Source: "..\Even More Resources for Vox Populi UCS (v 15)\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS (v 15)"; Flags: ignoreversion recursesubdirs;	Components: emr\u
 Source: "..\Even More Resources for Vox Populi UCS INT\*"; DestDir: "{app}\MODS\Even More Resources for Vox Populi UCS INT"; Flags: ignoreversion recursesubdirs;	Components: emr\u
 Source: "..\Gedemon's YnAEMP KR\*"; DestDir: "{app}\MODS\Gedemon's YnAEMP KR"; Flags: ignoreversion recursesubdirs;	Components: ynaemp
+Source: "..\Historical Religions Complete (BNW or GK) (v 45)\*"; DestDir: "{app}\MODS\Historical Religions Complete (BNW or GK) (v 45)"; Flags: ignoreversion recursesubdirs;	Components: hrc
 ;Source: "..\Hokaths Proposals\*"; DestDir: "{app}\MODS\Hokaths Proposals"; Flags: ignoreversion recursesubdirs;	Components: hp
 Source: "..\InGame Editor+ (v 47)\*"; DestDir: "{app}\MODS\InGame Editor+ (v 47)"; Flags: ignoreversion recursesubdirs;	Components: ige
+Source: "..\Jarcast's Bigger Huge Map for Communitu_79a (v 5)\*"; DestDir: "{app}\MODS\Jarcast's Bigger Huge Map for Communitu_79a (v 5)"; Flags: ignoreversion recursesubdirs;	Components: comm
 Source: "..\JFD's Civilizations - Papal States for VP (v 11)\*"; DestDir: "{app}\MODS\JFD's Civilizations - Papal States for VP (v 11)"; Flags: ignoreversion recursesubdirs;	Components: papa
 Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8)"; Flags: ignoreversion recursesubdirs;	Components: his
 Source: "..\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: his
@@ -160,6 +166,7 @@ Name: "vpnvc"; Description: "세계 의회 투표 문명 색상 제거"; Types: 
 Name: "ynaemp"; Description: "Gedemon의 YnAEMP"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ras"; Description: "진정한 고급 설정(Really Advanced Setup)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "map"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "comm"; Description: "지도: Jarcast의 더 거대한 Communitu (Huge Map for Communitu_79a)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "cd"; Description: "지도: 대륙 이동설"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "fnv"; Description: "지도: 모하비 황무지 - 폴아웃 뉴 베가스"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "df"; Description: "지도: 월드 오브 로어 - 드래곤페이블"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -186,6 +193,7 @@ Name: "amp"; Description: "자동 지도 핀(Auto Map Pins)"; Types: VPUI VPEX V
 Name: "ch"; Description: "도시 행복도(City Happiness)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "cp"; Description: "도시 생산력(City Production)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "cr"; Description: "도시 종교(City Religions)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "csl"; Description: "도시 국가 지도자(City-States Leaders)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "uid"; Description: "일기장(Diary)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "er"; Description: "개선된 순위(Enhanced Rankings)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ga"; Description: "골드 알림(Gold Alerts)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -205,6 +213,10 @@ Name: "ee"; Description: "계몽 시대(Enlightenment Era)"; Types: VPEX VPMAX C
 Name: "eaw"; Description: "개선된 항공전(Enhanced Air Warfare)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "bn"; Description: "필수 품목(Bare Necessities)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "mw"; Description: "더 많은 불가사의(More Wonders)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "ucs"; Description: "고유 도시 국가(Unique City States)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "cslu"; Description: "Jarcast의 도시 국가 지도자 얼티메이트(City States Leaders Ultimate)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "hrc"; Description: "역사적 종교 컴플리트(Historical Religions Complete)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "Aloe"; Description: "Horem의 알로에 베라 보너스 자원(Aloe Vera Bonus Resource)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "al"; Description: "Jarcast와 Hokath의 추가 사치(Additional Luxuries)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "emr"; Description: "더 많은 자원(Even More Resources)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -272,6 +284,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(over) More Unique Components for VP (v 89)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overL) More Unique Components for VP (v 89) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Cultural Diversity - (1) (Core) Utilities (v 21)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Cultural Diversity - (2) (Art) Splash Screens (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Cultural Diversity - (2) (Sound) Unit Dialogue (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Cultural Diversity - (2a) (Gameplay) Unique Components"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Cultural Diversity INT"
@@ -282,6 +295,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast & Hokath's Tibet for VP (v 6)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 4)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 4) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's City States Leaders Ultimate (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's City States Leaders Ultimate (v 1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Italy for VP (v 3)"
@@ -295,20 +310,29 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enhanced Air Warfare 4VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Enlightenment Era for VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) More Wonders for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) More Wonders for VP INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Unique City States for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Unique City States for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi (v 15)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(overhaul) Even More Resources for Vox Populi (v 15) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) City-States Leaders for VP"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) City-States Leaders for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) List Enhancements for VP KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(Primary) - Gwennog's France - Philippe Auguste for VP (v.9)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Trade Opportunities for VP"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Trade Opportunities for VP INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(ui) Wonder Planner For VP KR"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.13)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Auto-Sell Buildings (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Continental Drift (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Even More Resources for Vox Populi UCS (v 15)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Even More Resources for Vox Populi UCS INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Gedemon's YnAEMP KR"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Historical Religions Complete (BNW or GK) (v 45)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\InGame Editor+ (v 47)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Jarcast's Bigger Huge Map for Communitu_79a (v 5)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Civilizations - Papal States for VP (v 11)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Battles+ (v 50)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 51)"

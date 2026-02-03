@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "!Jarcast's City States Leaders Ultimate INT", "!Jarcast's City States Leaders Ultimate INT\!Jarcast's City States Leaders Ultimate INT.civ5proj", "{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Default|x86.ActiveCfg = Default|x86
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Default|x86.Build.0 = Default|x86
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Package Only|x86.ActiveCfg = Package Only|x86
+		{DDDDAE35-F868-4BE1-90B1-7A9CFE419078}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

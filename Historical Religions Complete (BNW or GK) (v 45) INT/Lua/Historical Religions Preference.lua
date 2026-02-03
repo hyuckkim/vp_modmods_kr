@@ -46,7 +46,7 @@ for pPlayer=0, GameDefines.MAX_MAJOR_CIVS-1 do
 
 			if (pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_DMS_NURAGIC) then
 				if religionID == rAtanodjuwaja then
-					local tquery = {"UPDATE Language_en_US SET Text = 'Cult of Waters' WHERE Tag = 'TXT_KEY_RELIGION_HELLENISM_4_MYSTERIES'"}
+					local tquery = {"UPDATE Language_ko_KR SET Text = '물의 숭배' WHERE Tag = 'TXT_KEY_RELIGION_HELLENISM_4_MYSTERIES'"}
 					for i,iQuery in pairs(tquery) do
 						for result in DB.Query(iQuery) do
 						end
@@ -67,7 +67,7 @@ function HRMiscNames(ePlayer, holyCityId, eReligion, eBelief1, eBelief2, eBelief
 
 		if (pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_DMS_NURAGIC) then
 			if eReligion == rAtanodjuwaja then
-				local tquery = {"UPDATE Language_en_US SET Text = 'Cult of Waters' WHERE Tag = 'TXT_KEY_RELIGION_HELLENISM_4_MYSTERIES'"}
+				local tquery = {"UPDATE Language_ko_KR SET Text = '물의 숭배' WHERE Tag = 'TXT_KEY_RELIGION_HELLENISM_4_MYSTERIES'"}
 				for i,iQuery in pairs(tquery) do
 					for result in DB.Query(iQuery) do
 					end

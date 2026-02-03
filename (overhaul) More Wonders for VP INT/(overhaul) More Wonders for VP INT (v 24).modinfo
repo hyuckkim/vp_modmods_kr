@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="43b6b232-5380-40da-8511-d9578cdb9131" version="24">
+  <Properties>
+    <Name>(overhaul) More Wonders for VP INT</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Vox Populi를 위한 더 많은 세계 불가사의</Teaser>
+    <Description>이 모드는 Vox Populi에 더 많은 세계 불가사의를 추가합니다. 현재 (공식적으로) VP 4.4.X 버전과 호환됩니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="55853724F8D698D23E7E6B5B3B76CFE9" import="0">1.WorldWonders/SQL/MainRulesForWorldWonders.sql</File>
+    <File md5="336B627204514F163B2934D365B52596" import="0">1.WorldWonders/SQL/WorldWondersDefinitions.sql</File>
+    <File md5="DA7C11908085D1A6080903E94EBBBC3B" import="0">1.WorldWonders/SQL/WorldWondersTexts.sql</File>
+    <File md5="7C89A10B3574EF0EB3776EFABB421A1E" import="0">2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</File>
+    <File md5="94F0C59BE70F90EB3D68A266D521EA1F" import="0">2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</File>
+    <File md5="3CB0451FC3632BA29C5088B10C28430B" import="0">2.NaturalWonders/XML/NaturalWondersTexts.xml</File>
+    <File md5="8DCCE6BBF5568ED84B4DA8E14FB0789F" import="0">Buildings/BuildingsDefinitions.sql</File>
+    <File md5="BC8C30937EE6A7743DE067B4EE625341" import="0">Resources/ResourcesDefinitions.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>1.WorldWonders/SQL/MainRulesForWorldWonders.sql</UpdateDatabase>
+      <UpdateDatabase>1.WorldWonders/SQL/WorldWondersDefinitions.sql</UpdateDatabase>
+      <UpdateDatabase>1.WorldWonders/SQL/WorldWondersTexts.sql</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/SQL/NaturalWondersCivilopediaTexts.sql</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/SQL/UniqueNaturalWondersAbilities.sql</UpdateDatabase>
+      <UpdateDatabase>2.NaturalWonders/XML/NaturalWondersTexts.xml</UpdateDatabase>
+      <UpdateDatabase>Buildings/BuildingsDefinitions.sql</UpdateDatabase>
+      <UpdateDatabase>Resources/ResourcesDefinitions.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

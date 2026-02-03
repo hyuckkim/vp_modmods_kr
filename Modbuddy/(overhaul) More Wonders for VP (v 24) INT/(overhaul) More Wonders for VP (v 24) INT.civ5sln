@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "(overhaul) More Wonders for VP (v 24) INT", "(overhaul) More Wonders for VP (v 24) INT\(overhaul) More Wonders for VP (v 24) INT.civ5proj", "{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Default|x86.ActiveCfg = Default|x86
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Default|x86.Build.0 = Default|x86
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Package Only|x86.ActiveCfg = Package Only|x86
+		{6CB14E43-AF1D-428D-BFDC-761E5B3D478E}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

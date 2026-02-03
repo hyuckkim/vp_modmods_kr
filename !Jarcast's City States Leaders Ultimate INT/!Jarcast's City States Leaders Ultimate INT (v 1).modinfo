@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b2dd24e1-e1d8-4b3b-8455-13e767f9c7d2" version="1">
+  <Properties>
+    <Name>!Jarcast's City States Leaders Ultimate INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>지도자 아이콘이 있는 도시 국가를 추가하여 총 275개의 도시 국가를 표시합니다.</Teaser>
+    <Description>지도자 아이콘이 있는 도시 국가를 추가하여 총 275개의 도시 국가를 표시합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="9115abcb-fc9a-4763-9996-db87595e2395" minversion="0" maxversion="999" title="!Jarcast's City States Leaders Ultimate" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="7672138ECB151D69DC378D4F6752783C" import="0">CSL-UCS.sql</File>
+    <File md5="71A43ECB163F2570B58CE1107D267949" import="0">Jar_CSU_GameText.sql</File>
+    <File md5="AABF0160766D87D1CE4221C8158021BE" import="0">Jar_CSU_LeaderDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>CSL-UCS.sql</UpdateDatabase>
+      <UpdateDatabase>Jar_CSU_GameText.sql</UpdateDatabase>
+      <UpdateDatabase>Jar_CSU_LeaderDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
