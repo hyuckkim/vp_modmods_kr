@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f674865e-0473-4dde-8969-bed680045b74" version="1">
+  <Properties>
+    <Name>!Jarcast's Permafrost Alive (v 1) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>눈 덮인 언덕을 강화하고, 지형에 북극 야생 동물 보너스 자원을 추가합니다.</Teaser>
+    <Description>눈 덮인 언덕을 강화하고, 지형에 북극 야생 동물 보너스 자원을 추가합니다.</Description>
+    <Authors>Jarcast</Authors>
+    <SpecialThanks>HANDANI</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="0291971b-09c4-4b78-a066-ce2c66df8966" minversion="0" maxversion="999" title="!Jarcast's Permafrost Alive" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="6232306492D5A5E0FBC0F477F6E2F608" import="0">Jar_Permafrost.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Jar_Permafrost.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

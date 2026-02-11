@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a5fa1810-a6ac-437b-aa03-8c5f6f8bff4f" version="1">
+  <Properties>
+    <Name>zuiLeaderHead KR</Name>
+    <Stability>Beta</Stability>
+    <Teaser>새롭게 만들고 디자인한 지도자 대화 UI 입니다.</Teaser>
+    <Description>VP(+EUI)를 위해 디자인 되었습니다.
+[NEWLINE]CP만으로도 아마 작동할 수 있습니다.
+[NEWLINE]바닐라에서는 작동하지 않습니다.
+[NEWLINE]
+[NEWLINE]저장된 게임을 수정하지 않습니다.
+[NEWLINE]VP 업데이트로 고장나지 않을거라 생각합니다.
+[NEWLINE]교역 화면은 추후에 구현될 예정입니다!
+[NEWLINE]
+[NEWLINE]문제가 있다면 VP 디스코드의 제 채널에 알려주세요.
+[NEWLINE]- #schnetziomi5
+[NEWLINE]혹은 여기라도요.
+[NEWLINE]- 깃허브: https://github.com/schnetziomi5/schnetziomi5_Civ5-VP
+</Description>
+    <Authors>schnetziomi5</Authors>
+    <SpecialThanks>HANDANI</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/schnetziomi5/schnetziomi5_Civ5-VP</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <References>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
+  </References>
+  <Dependencies />
+  <Blocks />
+  <Files>
+    <File md5="C07DA3D4C2470FD15519E0996F5F7457" import="1">include/LH_api.lua</File>
+    <File md5="F775B94BDDCD7D2734204B579AA9F137" import="1">include/LH_chat.lua</File>
+    <File md5="5206AE7F5651EBBE97B289D1994FEF04" import="1">include/LH_discuss.lua</File>
+    <File md5="F7CE867299C2AE962017333F9A689893" import="1">LeaderHeadRoot.lua</File>
+    <File md5="42D16329F6415D54A12E390BF5DD4E39" import="1">LeaderHeadRoot.xml</File>
+    <File md5="208EB6249D674A89BA1630EF897009A3" import="0">Text.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>LeaderHeadRoot.xml</UpdateDatabase>
+      <UpdateDatabase>Text.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

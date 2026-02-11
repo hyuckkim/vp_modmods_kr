@@ -319,4 +319,14 @@ SELECT	'COLOR_PLAYER_MINOR_HUARI',				0.690,		0.722,		0.788,		1       UNION ALL 
 SELECT	'COLOR_PLAYER_MINOR_PIR_E_SABZ', 		0.267,		0.647,		1,			1       UNION ALL -- 44A5FF
 SELECT	'COLOR_PLAYER_MINOR_DELHI',				0.118,		0.247,		0.400,		1       ; 		  -- 1E3F66
 --======================================================================================================================================
+-- VTUBER ITA
+--======================================================================================================================================
+INSERT INTO Colors 
+		(Type, 									Red, 		Green, 		Blue, 		Alpha)
+SELECT	'COLOR_PLAYER_MINOR_SINGALEK',	    	0.878,		0.009,		0.494,	    1       UNION ALL -- = Yerevan
+SELECT	'COLOR_PLAYER_MINOR_LULENA',	    	0,			0.776,		0.427,	    1       UNION ALL -- = Vancouver
+SELECT	'COLOR_PLAYER_MINOR_LALLAWAFFLE',	   	1,			0.564,		0,		    1       UNION ALL -- = Genoa
+SELECT	'COLOR_PLAYER_MINOR_NYMELINE',	    	1,			0.227,		0,	  		1       UNION ALL -- = Hanoi
+SELECT	'COLOR_PLAYER_MINOR_CHEN_MEI_LING',		0.608,		0.688,		1,			1       ;		  -- = Ife
+--======================================================================================================================================
 --======================================================================================================================================

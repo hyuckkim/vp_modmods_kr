@@ -2,7 +2,7 @@
 ; INNO SETUP 스크립트 파일을 만드는 방법에 대한 자세한 내용은 설명서를 참조하세요!
 
 #define MyAppName "VP 한국어 모드 모음"
-#define MyAppVersion "5.1.3"
+#define MyAppVersion "5.1.4"
 #define MyAppPublisher "HANDANI"
 #define MyAppURL "https://github.com/handanikr/vp_modmods_kr"
 #define SourcePath ".."
@@ -68,6 +68,8 @@ Source: "..\!Jarcast's Hidden Wonders (VP)\*"; DestDir: "{app}\MODS\!Jarcast's H
 Source: "..\!Jarcast's Hidden Wonders (VP) INT\*"; DestDir: "{app}\MODS\!Jarcast's Hidden Wonders (VP) INT"; Flags: ignoreversion recursesubdirs;	Components: hw
 Source: "..\!Jarcast's Italy for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Italy for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: italy
 Source: "..\!Jarcast's Ndongo-Matamba for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's Ndongo-Matamba for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: nm
+Source: "..\!Jarcast's Permafrost Alive (v 1)\*"; DestDir: "{app}\MODS\!Jarcast's Permafrost Alive (v 1)"; Flags: ignoreversion recursesubdirs;	Components: pa
+Source: "..\!Jarcast's Permafrost Alive (v 1) INT\*"; DestDir: "{app}\MODS\!Jarcast's Permafrost Alive (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: pa
 Source: "..\!Jarcast's The Navajo for VP (v 3)\*"; DestDir: "{app}\MODS\!Jarcast's The Navajo for VP (v 3)"; Flags: ignoreversion recursesubdirs;	Components: navajo
 Source: "..\!Jarcast's Volcanoes for VP (v 8)\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 8)"; Flags: ignoreversion recursesubdirs;	Components: vol
 Source: "..\!Jarcast's Volcanoes for VP (v 8) INT\*"; DestDir: "{app}\MODS\!Jarcast's Volcanoes for VP (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: vol
@@ -145,6 +147,7 @@ Source: "..\Wake All and Upgrade All Units In Military Overview (v 1)\*"; DestDi
 Source: "..\Wake All and Upgrade All Units In Military Overview (v 1) INT\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: waua
 Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion recursesubdirs;	Components: df
 Source: "..\zai4z's Landmark Cultural Variation (v 1)\*"; DestDir: "{app}\MODS\zai4z's Landmark Cultural Variation (v 1)"; Flags: ignoreversion recursesubdirs;	Components: luv
+Source: "..\zuiLeaderHead KR\*"; DestDir: "{app}\MODS\zuiLeaderHead KR"; Flags: ignoreversion recursesubdirs;	Components: zui
 
 Source: "..\Assets\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vp
 Source: "..\Assets_votes\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vpnvc
@@ -207,6 +210,7 @@ Name: "to"; Description: "교역 기회(Trade Opportunities)"; Types: VPUI VPEX 
 Name: "hn"; Description: "행복 알림(Happiness notifications)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "waua"; Description: "전체 깨우기와 전체 업그레이드(Wake All and Upgrade All Units In Military Overview)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "wp"; Description: "불가사의 계획서(Wonder Planner)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
+Name: "zui"; Description: "ZUI 지도자 화면(zuiLeaderHead)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "uc"; Description: "문화 요소(5/6 UC)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ee"; Description: "계몽 시대(Enlightenment Era)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -225,6 +229,7 @@ Name: "emr\u"; Description: "UCS(고유 도시 국가)용"; Types: Custom; Flags
 Name: "cm"; Description: "Jarcast의 대리석의 도시(Cities of Marble)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "hw"; Description: "Jarcast의 숨겨진 불가사의(Hidden Wonders)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "vol"; Description: "Jarcast의 화산(Volcanoes)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "pa"; Description: "Jarcast의 영구동토층 생존(Permafrost Alive)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "mb"; Description: "해상 날씨(Maritime Weather+)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "civ6"; Description: "Sukritact의 문명 6 스타일 도시 이름(Sukritact's Civ VI Style City Names)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "luv"; Description: "zai4z의 랜드마크 문화 다양성(Landmark Cultural Variation)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -301,6 +306,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Italy for VP (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Ndongo-Matamba for VP (v 3)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Permafrost Alive (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Permafrost Alive (v 1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's The Navajo for VP (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Volcanoes for VP (v 8)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Volcanoes for VP (v 8) INT"
@@ -371,6 +378,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\World of Lore - DragonFable (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\zai4z's Landmark Cultural Variation (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\zuiLeaderHead"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\zuiLeaderHead KR"
 
 [Code]
 

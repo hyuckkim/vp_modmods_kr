@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "zuiLeaderHead KR", "zuiLeaderHead KR\zuiLeaderHead KR.civ5proj", "{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Default|x86.ActiveCfg = Default|x86
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Default|x86.Build.0 = Default|x86
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Package Only|x86.ActiveCfg = Package Only|x86
+		{A4AD19CF-D9C3-4256-835C-30C48FFFF2D9}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

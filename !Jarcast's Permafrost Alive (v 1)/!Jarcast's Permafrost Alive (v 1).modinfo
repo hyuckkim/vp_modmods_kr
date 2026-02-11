@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0291971b-09c4-4b78-a066-ce2c66df8966" version="1">
+  <Properties>
+    <Name>!Jarcast's Permafrost Alive</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Buffs snow hills and adds Polar Wild Game bonus resource to the terrain.</Teaser>
+    <Description>Buffs snow hills and adds Polar Wild Game bonus resource to the terrain.</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="B848CD5EB1935AE755D328D7322D8A3F" import="1">Art/PolarWildGameFontIcon.dds</File>
+    <File md5="3D6DF7CF2833BF1A89779A7A129C1DE7" import="1">Art/PolarWildGameFontIcon.ggxml</File>
+    <File md5="2B49577C58FF0B175355B36E616C638A" import="1">Art/PolarWildGame_045.dds</File>
+    <File md5="CA470C459A97C81923A2DC9111CFD4DB" import="1">Art/PolarWildGame_064.dds</File>
+    <File md5="395D542D268D345209811BB7F4B9C888" import="1">Art/PolarWildGame_080.dds</File>
+    <File md5="ABC11EE9E2DC9D0129B9AA84F15F9582" import="1">Art/PolarWildGame_128.dds</File>
+    <File md5="20F00CFA853090C3CC7F7736F7E5F2EA" import="1">Art/PolarWildGame_256.dds</File>
+    <File md5="A04E8440AFA84541197C470F8A7D769B" import="1">Art/sv_PolarWildGame.dds</File>
+    <File md5="5A5CEA23F3A0D7E1DDCEE774C99000AF" import="0">Communitu_PolarAdjustments.lua</File>
+    <File md5="C822EDCDAF212F6757CDF0E9401B3AF0" import="0">Jar_Permafrost.sql</File>
+    <File md5="B4B19A6E3044B6111037AFB41A9D2227" import="1">Model/resource_whitefurs.fxsxml</File>
+    <File md5="3F83ADA22B37C3AA17E4B2C1F26A572B" import="1">Model/Resource_WhiteFurs.gr2</File>
+    <File md5="E75272AADD630089A3EB6CE73FFC658F" import="1">Model/white_furs_diff.dds</File>
+    <File md5="470728A3433128800D6EDDA181A5BA25" import="1">ASP_polarwildgame.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Jar_Permafrost.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="PreMapGenScript" file="ASP_polarwildgame.lua">
+      <Name>ASP_polarwildgame.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Communitu_PolarAdjustments.lua">
+      <Name>PolarCommunitu_Adjustments.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

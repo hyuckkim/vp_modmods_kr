@@ -167,7 +167,7 @@ SELECT	'MINOR_CIV_PAGO_PAGO',		'pagopago_leadericon.dds',		'Samoa',						'Salama
 /*N*/SELECT	'MINOR_CIV_KOTA_BATU',	'kota_batu_leadericon.dds',		'the Brunei Empire',			'Bolkiah ibn Sulaiman',	'Sultan',	'TopHatPaladin'	UNION ALL
 /*N*/SELECT	'MINOR_CIV_LANTAU',		'lantau_leadericon.dds',		'the Guangdong Pirate Confederation','Ching Shih',	'Leader',		'TPangolin'		UNION ALL
 -- Mercantile
-SELECT	'MINOR_CIV_HARAPPA',		'mohenjodaro_leadericon.dds',	'the Harappans',				'Went-Antu',	'',					'Janboruta'		UNION ALL
+SELECT	'MINOR_CIV_HARAPPA',		'harappa_leadericon.dds',		'the Harappans',				'Went-Antu',	'',					'Janboruta'		UNION ALL
 SELECT	'MINOR_CIV_NOVGOROD',		'novgorod_leadericon.dds',		'the Novgorod Republic',		'Aleksandr Nevsky',	'Prince',		'Janboruta'		UNION ALL
 SELECT	'MINOR_CIV_SEGOU',			'segou_leadericon.dds',			'the Bambara Kingdom',			'Bitòn Coulibaly',	'King',			'RawSasquatch'	UNION ALL
 SELECT	'MINOR_CIV_MARRAKECH',		'marrakech_leadericon.dds',		'the Almoravids',				'Zaynab an-Nafzawiyyah','Queen',	'Arilasqueto'	UNION ALL
@@ -199,6 +199,14 @@ SELECT	'MINOR_CIV_SHEDET',			'shedet_leadericon.dds',		'Egypt',						'Djoser',		
 SELECT	'MINOR_CIV_HUARI',			'huari_leadericon.dds',			'the Wari',						'Lady of Huarmey',		'',			'TopHatPaladin'	UNION ALL
 /*N*/SELECT	'MINOR_CIV_PIR_E_SABZ',	'piresabz_leadericon.dds',		'the Sasanian Empire',			'Shapur II',	'Shahanshah',		'TopHatPaladin' UNION ALL
 /*N*/SELECT	'MINOR_CIV_DELHI',		'delhi_leadericon.dds',			'the Delhi Sultanate',			'Raziyat al-Din',	'Sultan',		'DarthKyofu';
+
+INSERT OR REPLACE INTO MinorCivLeaders
+		(Type,						LeaderIcon,					LeaderPlace,						LeaderName,					LeaderTitle,	LeaderArtistName)
+SELECT	'MINOR_CIV_SINGALEK',		'singalek_leadericon.dds',	'the Silvaeji-Neo Silvae Ministry',	'Silver Midnight Wishes',	'',				''	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT	'MINOR_CIV_LULENA',			'lulena_leadericon.dds',	'Silvandral',						'Lulena',					'Dragon',		''	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT	'MINOR_CIV_LALLAWAFFLE',	'lalla_leadericon.dds',		'Poponzo',							'Lalla Waffle',				'Witch Apprentice',	''	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT	'MINOR_CIV_NYMELINE',		'nymeline_leadericon.dds',	'La Clinica',						'Nymeline',					'Bunny Nurse',	''	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT	'MINOR_CIV_CHEN_MEI_LING',	'meiling_leadericon.dds',	'the Garden of Oblivion',			'Chen Mei Ling',			'Kumiho',		''	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 );
 --======================================================================================================================================
 -- BASE 
 --======================================================================================================================================

@@ -542,6 +542,23 @@ SELECT 'TXT_KEY_CIV5_CO_LOA_TEXT', 					'Co Loa, an ancient citadel located near
 SELECT 'TXT_KEY_CITYSTATE_DELHI', 				'Delhi' UNION ALL
 SELECT 'TXT_KEY_CITYSTATE_DELHI_ADJ', 				'Delhi' UNION ALL
 SELECT 'TXT_KEY_CIV5_DELHI_TEXT', 					'The Delhi Sultanate, established in 1206, was a series of Muslim dynasties that ruled much of northern India until 1526, marking a transformative era in Indian history characterized by the introduction of Islamic governance, architecture, and culture. It began with the Mamluk (Slave) dynasty founded by Qutb al-Din Aibak and later included the Khalji, Tughlaq, Sayyid, and Lodi dynasties. Among its rulers, Razia Sultan (aka Raziyat al-Din) stands out as the first and only female monarch to sit on the throne of Delhi, reigning from 1236 to 1240. The daughter of Sultan Iltutmish, Razia was known for her intelligence, administrative skill, and progressive vision, challenging gender norms by dressing as a man and leading armies in person. Despite her competence, she faced strong opposition from conservative nobles unwilling to accept a female ruler, ultimately leading to her overthrow and death.';
+
+INSERT INTO Language_en_US (Tag, Text)
+SELECT 'TXT_KEY_CITYSTATE_SINGALEK', 			'Silvaeji Forest'		WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_SINGALEK_ADJ', 			'Silvaeji'			WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CIV5_SINGALEK_TEXT', 				''					WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LULENA', 				'Silvandral'			WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LULENA_ADJ', 				'Silvandral'		WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CIV5_LULENA_TEXT', 					''					WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_LALLAWAFFLE', 		'Poponzo'				WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL 
+SELECT 'TXT_KEY_CITYSTATE_LALLAWAFFLE_ADJ', 		'Popontial'			WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CIV5_LALLAWAFFLE_TEXT', 			''					WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_NYMELINE', 			'La Clinica'			WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL 
+SELECT 'TXT_KEY_CITYSTATE_NYMELINE_ADJ', 			'La Clinica'		WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CIV5_NYMELINE_TEXT', 				'' 					WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CITYSTATE_CHEN_MEI_LING', 		'Garden of Oblivion'	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL 
+SELECT 'TXT_KEY_CITYSTATE_CHEN_MEI_LING_ADJ', 	   'Garden of Oblivion' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 ) UNION ALL
+SELECT 'TXT_KEY_CIV5_CHEN_MEI_LING_TEXT', 			''					WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='JAR_CSL_ITA_VTUBERS' AND Value= 1 );
 --=====================================================================
 UPDATE Language_en_US
 SET Text = 'Karakorum'
