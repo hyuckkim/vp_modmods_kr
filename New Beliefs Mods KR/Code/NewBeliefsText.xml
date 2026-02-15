@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/10/2020 10:34:42 PM -->
+<GameData>
+	<Language_ko_KR>
+		<!-- Pantheon Beliefs -->
+		<Row Tag="TXT_KEY_BELIEF_GOD_OF_STORMS_SHORT">
+			<Text>God of Storms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_GOD_OF_STORMS">
+			<Text>+2 [ICON_PEACE] Faith in Cities with a Garrison. Gain 15 [ICON_PEACE] Faith and [ICON_PRODUCTION] Production when a unit Pillages a non-road Improvement. Does not Scale with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOD_OF_STORMS">
+			<Text>God of Storms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOD_OF_STORMS_HELP">
+			<Text>+2 [ICON_PEACE] Faith per turn when Garrisoned in a City.[NEWLINE]Gain [ICON_PEACE] Faith and [ICON_PRODUCTION] Production from Pillaging non-road Improvements.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_TRICKSTER_GOD_SHORT">
+			<Text>Trickster God</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_TRICKSTER_GOD">
+			<Text>12 [ICON_PEACE] Faith and [ICON_RESEARCH] Science when you Build a non-Road Improvement. Does not Scale with Era.</Text>
+		</Row>
+		<!-- Founder Belief -->
+		<Row Tag="TXT_KEY_BELIEF_CITY_OF_GOD_SHORT">
+			<Text>City of God</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_CITY_OF_GOD">
+			<Text>When a [ICON_CITIZEN] Citizen is born in your Holy City, gain 25 [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PEACE] Faith for each City following your [ICON_RELIGION] Religion (max 25 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Sacred Garden National Wonder[ENDCOLOR] (+3 [ICON_PEACE] Faith, +5 [ICON_CULTURE] Culture; +5 [ICON_FOOD] Food from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEAVENLY_GROTTO_HELP">
+			<Text>+5 [ICON_GOLD] Gold from all Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your Religion (scaling with map size). Reduces [ICON_HAPPINESS_3] Religious Unrest, and allows you to select a Reformation Belief.[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this city by 25%, and increases the city's resistance to conversion by 20%.[NEWLINE][NEWLINE] Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegates in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEAVENLY_GROTTO_STRATEGY">
+			<Text>Build the Heavenly Grotto to gain [ICON_HAPPINESS_1] Happiness and to improve all Holy Sites. Constructing this National Wonder will also allow you to choose a Reformation Belief. May only be constructed in a Holy City, and only if at least 15% of the global population follows your Religion (scaling with map size).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HEAVENLY_GROTTO_PEDIA">
+			<Text>A grotto is a type of cavern, often closely associated with water. Grottos are a prominent feature of many religious and garden settings as places of contemplation. One of the most impressive collection of grottos is the Longmen Grottos in Luoyang, China, which houses tens of thousands of Buddhas, stelae, and inscriptions.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_BUILDING_HEAVENLY_GROTTO">
+			<Text>Heavenly Grotto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_PARADISE_SHORT">
+			<Text>Earthly Paradise</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_PARADISE">
+			<Text>Gain 10 [ICON_GOLD] Gold when a Building is constructed, scaling with Era, and 30 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith when you construct a World Wonder for each City following your [ICON_RELIGION] Religion (max 25 Cities).[NEWLINE]Unlocks [COLOR_POSITIVE_TEXT]Place of Truth National Wonder[ENDCOLOR] (+2 [ICON_PEACE] Faith, +6 [ICON_PRODUCTION] Production, +10% [ICON_PRODUCTION] Production towards Buildings; +5 [ICON_PRODUCTION] Production from [ICON_RELIGION] Holy Sites; unlocks [COLOR_POSITIVE_TEXT]Reformation Belief[ENDCOLOR]).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PLACE_OF_TRUTH_HELP">
+			<Text>+10% [ICON_PRODUCTION] Production towards Buildings. +5 [ICON_PRODUCTION] Production from all Holy Sites.[NEWLINE][NEWLINE]May only be constructed in a Holy City, and only if at least 15% of the global population follows your Religion (scaling with map size). Reduces [ICON_HAPPINESS_3] Religious Unrest, and allows you to select a Reformation Belief.[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this city by 25%, and increases the city's resistance to conversion by 20%.[NEWLINE][NEWLINE] Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegates in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PLACE_OF_TRUTH_STRATEGY">
+			<Text>Build the Place of Truth to gain [ICON_PRODUCTION] Production and to improve all Holy Sites. Constructing this National Wonder will also allow you to choose a Reformation Belief. May only be constructed in a Holy City, and only if at least 15% of the global population follows your Religion (scaling with map size).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PLACE_OF_TRUTH_PEDIA">
+			<Text>The Place of Truth was an ancient artisan village which housed the labourers and crafstmen that built the Valley of Kings, cutting and decorating the tombs of countless Pharoahs. In addition to being a vast public works project in its own right, the Place of Truth was also the site of history's first recorded worker's strike, when the workers performed a sit-in strike in protest over the lack of rations and supplies for their compensation.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_BUILDING_PLACE_OF_TRUTH">
+			<Text>Place of Truth</Text>
+		</Row>
+				
+		<Row Tag="TXT_KEY_BELIEF_LIBATIONS_SHORT">
+			<Text>Libations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_LIBATIONS">
+			<Text>Immediately Unlocks the [COLOR_POSITIVE_TEXT]Akapana National Wonder[ENDCOLOR] (+100% Religious Pressure from this City; +5 [ICON_PEACE] Faith from [ICON_RELIGION] Holy Sites). Can perform [COLOR_POSITIVE_TEXT]Challa Rituals[ENDCOLOR], which add +1 of All Yields to the Akapana (Max of +25).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AKAPANA">
+			<Text>Akapana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AKAPANA_HELP">
+			<Text>May only be constructed in a Holy City. +5 [ICON_PEACE] Faith from all Holy Sites.[NEWLINE][NEWLINE]Unlocks the Ability to perform [COLOR_POSITIVE_TEXT]Challa Rituals[ENDCOLOR] by spending [ICON_PEACE] Faith, which add +1 of All Yield Types to the Akapana (Max of +25). After performing 10 Challa Rituals, you may select a Reformation Belief.[NEWLINE][NEWLINE]Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this city by 100%, and increases the city's resistance to conversion by 20%.[NEWLINE][NEWLINE] Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every 10 Cities following your [ICON_RELIGION] Religion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AKAPANA_STRATEGY">
+			<Text>The Akapana is not like other Founder Belief National Wonders, because it can be purchased with Faith immediately upon founding, rather than being unlocked after a certain proportion of the population follows your religion. However, the Akapana does not allow you to found immediately after building it. Instead, you need to spend faith to upgrade your Akapana by performing Challa Rituals. Each Challa Ritual gets you closer to reforming your religion, and adds yields to the Akapana, making it a powerful economic boost to your empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AKAPANA_PEDIA">
+			<Text>On the shores of Lake Titicaca are the remains of one of the most powerful and influential cultures to appear in the Andean mountains: Tiwanaku. Long before the Incan Empire, the priests and nobles of Tiwanaku cultivated a hegemony over modern day Bolivia and northern Chile, based solely on cultural and religious influence. Within Tiwanaku was a sprawling complex of temples and courtyards for various rituals and rites, but the greatest of them all was the Akapana, a gargantuan manmade stepped pyramid in the shape of a modified Andean Cross.[NEWLINE][NEWLINE]The Akapana's resemblance to the nearby mountains was not an accident, just as the mountains surrounding Lake Titicaca feed the great lake with their spring water, the Akapana is believed to have collected rainwater on its flat upper surface and funneled it into a depression at the centre. The centre of the pyramid contained a hole, filled with loose stones, which permitted water to drain out of the Akapana's center, and down into a moat surrounding the temple complex. Thus, the Akapana would have been seen as a holy mountain in its own right, blessing the city with its water. The act of pouring and collecting water and sacred drinks was central to many Andean religions, which presented gifts to the earth by pouring out drinks or burying meals and trinkets.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_POLICY_AKAPANA_DUMMY">
+			<Text>Akapana Dummy Policy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_AKAPANA_STACKS">
+			<Text>Akapana Stacks Dummy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_AKAPANA_REFORM">
+			<Text>Akapana Reformation Dummy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AKAPANA_CHALLA_RITUAL">
+			<Text>Perform Challa Ritual</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AKAPANA_CHALLA_RITUAL_TEXT">
+			<Text>The Challa rituals are a central part of worship to Pachamama, the earth deity of many Pre-Columbian Andean cultures. Each day, priests would prepare a cup of chicha -- a kind of beer made from corn -- and spill a small amount as an offering to Pachamama before drinking the rest. We do not know for sure where the ritual originated, but the city of Tiwanaku contained one of the oldest and grandest temple complexes where these ceremonies took place.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AKAPANA_CHALLA_RITUAL_STRATEGY">
+			<Text>If you have adopted the Libations founder belief, use your faith to perform Challa rituals which make your Akapana wonder stronger. Can perform a [COLOR_NEGATIVE_TEXT]Max of 25[ENDCOLOR] Challa Rituals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AKAPANA_CHALLA_RITUAL_HELP">
+			<Text>Spend [ICON_PEACE] Faith to perform a Challa Ritual, adding +1 of All Yields to your [COLOR_POSITIVE_TEXT]Akapana National Wonder[ENDCOLOR].[NEWLINE][NEWLINE]Requires adopting the [COLOR_POSITIVE_TEXT]Libations[ENDCOLOR] Founder Belief and constructing the [COLOR_POSITIVE_TEXT]Akapana[ENDCOLOR] in this City. Can perform a [COLOR_NEGATIVE_TEXT]Max of 25[ENDCOLOR] Challa Rituals.</Text>
+		</Row>
+		<!-- Follower Beliefs -->
+		<Row Tag="TXT_KEY_BELIEF_SWEAT_LODGE_SHORT">
+			<Text>Sweat Lodges</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_SWEAT_LODGE">
+			<Text>Use [ICON_PEACE] Faith to purchase Sweat Lodges.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEAT_LODGE">
+			<Text>Sweat Lodge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEAT_LODGE_PEDIA">
+			<Text>A sweat lodge is a small domed hut used by various North American Indigenous cultures for dry heat sessions, similar to a sauna. The religious traditions surrounding these sessions, often referred to simpy as 'sweats', differ greatly between nations, but often include purification and initiation rituals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEAT_LODGE_STRATEGY">
+			<Text>Can only be built in cities following a religion with the Sweat Lodges belief. Construct this building by purchasing it with [ICON_PEACE] Faith. This building and makes your units heal faster in the city, and boosts nearby Camps and Plantations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEAT_LODGE_HELP">
+			<Text>-1 [ICON_HAPPINESS_3] Unhappiness from Distress. +25% Religious pressure and +10% Religious resistance in this city.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to nearby Plantations and Camps. Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SWEAT_LODGE_TOOLTIP">
+			<Text>+2 [ICON_PEACE] Faith[NEWLINE]+2 [ICON_RESEARCH] Science[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_SWEAT_LODGE_HELP}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_DAR_E_MEHR_SHORT">
+			<Text>Dar-e Mehr</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_DAR_E_MEHR">
+			<Text>Use [ICON_PEACE] Faith to purchase Dar-e Mehr.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAR_E_MEHR">
+			<Text>Dar-e Mehr</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAR_E_MEHR_PEDIA">
+			<Text>The Zoroastrian Fire Temples, or Dar-e Mehr, were the centers of Persian religious life. Water and fire are honoured as the main components of ritual purification in Zoroatrianism. Fire, Atar, is held in special regard as the manifestation of Ahura Mazda, the singular creator god of Zoroastrianism. The altar inside the Dar-e Mehr is kept perpetually lit and purifying ash from the fire is used in the priests' various rituals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAR_E_MEHR_HELP">
+			<Text>Reduces [ICON_HAPPINESS_3] Unhappiness from Boredom. +25% Religious pressure and +10% Religious resistance in this city.[NEWLINE][NEWLINE]10% of [ICON_CULTURE] Culture created by the City counts as [ICON_PEACE] Faith Per Turn. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAR_E_MEHR_STRATEGY">
+			<Text>Can only be built in cities following a religion with the Dar-e Mehr belief. Construct this building by purchasing it with [ICON_PEACE] Faith. The Dar-e Mehr offers modest Faith and Culture bonuses. Dar-e Mehr offers huge potential for faith generation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAR_E_MEHR_TOOLTIP">
+			<Text>+3 [ICON_PEACE] Faith[NEWLINE]+2 [ICON_CULTURE] Culture[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_DAR_E_MEHR_HELP}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_DAOGUAN_SHORT">
+			<Text>Daoguans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_DAOGUAN">
+			<Text>Use [ICON_PEACE] Faith to purchase Daoguans.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAOGUAN">
+			<Text>Daoguan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_PEDIA">
+			<Text>A Daoguan is a place of worship in Taoism. The structure and function of a Daoguan can vary according to the Taoist school the temple belongs to. For example, guan of the Quanzhen School are monasteries where celibate daoshi live.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_HELP">
+			<Text>+25% Religious pressure and +10% Religious resistance in this city.[NEWLINE][NEWLINE]+25% [ICON_GREAT_PEOPLE] Great People rate in City, and 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_STRATEGY">
+			<Text>Can only be built in cities following a religion with the Daoguans belief. Construct this building by purchasing it with [ICON_PEACE] Faith. The Daoguan offers bonuses towards Great People generation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_DAOGUAN_TOOLTIP">
+			<Text>+5 [ICON_PEACE] Faith[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_DAOGUAN_HELP}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_JUBILEE_SHORT">
+			<Text>Jubilee</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_JUBILEE">
+			<Text>+2 [ICON_HAPPINESS_1] Happiness in the City. +1 [ICON_GOLDEN_AGE] Golden Age Points for every 2 followers in the City (max +10 [ICON_GOLDEN_AGE] Golden Age Points)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WARRIOR_MONKS_SHORT">
+			<Text>Martial Arts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WARRIOR_MONKS">
+			<Text>Melee and Gun Units trained in the City following this Religion gain the [COLOR_POSITIVE_TEXT]Warrior Monk[ENDCOLOR] Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WARRIOR_MONK">
+			<Text>Warrior Monk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WARRIOR_MONK_HELP">
+			<Text>+20% [ICON_STRENGTH] Defense and +33% Experience.[NEWLINE]When Garrisoned in a City, the City gains +30% Religious Pressure.</Text>
+		</Row>
+		<!-- Enhancer Beliefs -->
+		<Row Tag="TXT_KEY_BELIEF_EMIRATES_SHORT">
+			<Text>Emirates</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_EMIRATES">
+			<Text>Pressure tripled to friendly [ICON_CITY_STATE] City-States and foreign Cities connected via [ICON_INTERNATIONAL_TRADE] Trade Routes. 2 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture for each active [ICON_INTERNATIONAL_TRADE] Trade Route</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_ANIMISM_SHORT">
+			<Text>Animism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_ANIMISM">
+			<Text>[ICON_MISSIONARY] Missionaries of this Religion ignore terrain movement costs. +1 [ICON_CULTURE] Culture and [ICON_FOOD] Food from Unimproved Features and Natural Wonders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANIMISM">
+			<Text>Animism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANIMISM_HELP">
+			<Text>Unit ignores terrain Movement costs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WORD_OF_GOD_SHORT">
+			<Text>Word of God</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WORD_OF_GOD">
+			<Text>Can purchase Diplomatic Units with [ICON_PEACE] Faith. +5 [ICON_INFLUENCE] Influence with City-States when [ICON_MISSIONARY] Missionaries spread your [ICON_RELIGION] Religion to them, scaling with Era.</Text>
+		</Row>
+		<!-- Reformation Beliefs -->
+		<Row Tag="TXT_KEY_BELIEF_ORTHODOXY_SHORT">
+			<Text>Orthodoxy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_ORTHODOXY">
+			<Text>May purchase Courthouses, Constabularies, and Police Stations with [ICON_PEACE] Faith. These buildings produce +4 [ICON_GOLD] Gold and +2 [ICON_PEACE] Faith each. Units gain +15% [ICON_STRENGTH] Combat Strength within the borders of any city following your Religion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WORK_ETHIC1_SHORT">
+			<Text>Work Ethic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_WORK_ETHIC1">
+			<Text>May purchase Workshops, Windmills, and Factories with [ICON_PEACE] Faith. These buildings produce +2 [ICON_PRODUCTION] Production. Tile improvement rate increased by 25% for Workers and Archaeologists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WORK_ETHIC">
+			<Text>Work Ethic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_WORK_ETHIC_HELP">
+			<Text>+25% Tile Improvement Speed</Text>
+		</Row>
+	</Language_ko_KR> 
+</GameData>

@@ -28,7 +28,7 @@ WHERE Tag = 'TXT_KEY_CIVILOPEDIA_UNITS_MODERN_JETFIGHTER_TEXT';
 
 ----- Finest Hour TXT Update
 UPDATE Language_ko_KR
-SET Text = '[COLOR_POSITIVE_TEXT]그들의 최고의 순간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.'
+SET Text = '[COLOR_POSITIVE_TEXT]최상의 시간[ENDCOLOR]: [ICON_STRENGTH] 도시에서의 전투력이 33% 증가합니다. 모든 도시의 항공 유닛 [ICON_PRODUCTION] 생산력이 +25% 증가합니다. [COLOR_YELLOW]B-17 폭격기[ENDCOLOR]와 [COLOR_YELLOW]B-52 폭격기[ENDCOLOR]를 제작할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_POLICY_THEIR_FINEST_HOUR_HELP';
 
 ----- Policy Military TXT Update
@@ -47,37 +47,6 @@ SET Text = '제로센은 독재 이념의 고유 유닛입니다. 공중 우위 
 WHERE Tag = 'TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY';
 
 -----------------------------------------------------------------------------------------------------------
------ TECH UPDATE
-
------ Stealth Bomber @ TECH_NANOTECHNOLOGY 
-UPDATE Units SET PrereqTech = 'TECH_NANOTECHNOLOGY' WHERE Type = 'UNIT_STEALTH_BOMBER';
-
------ Stealth Fighter @ TECH_STEALTH
-UPDATE Units SET PrereqTech = 'TECH_STEALTH' WHERE Type = 'UNIT_JET_FIGHTER';
-
------------------------------------------------------------------------------------------------------------
------ UNITS UPGRADE SET
-
------ Upgrades: Stealth Fighter > Advanced Fighter
-DELETE FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_JET_FIGHTER';
-INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-VALUES ('UNIT_JET_FIGHTER', 'UNITCLASS_ADVJET');
-
------ Upgrades: B-17 / Bomber > Strategic Bomber
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_ULTJETBOMB' WHERE UnitType = 'UNIT_AMERICAN_B17';
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_ULTJETBOMB' WHERE UnitType = 'UNIT_BOMBER';
-
------------------------------------------------------------------------------------------------------------
------ OBSOLETE SET
-
------ New obsolescence rules
-UPDATE Units SET ObsoleteTech = 'TECH_STEALTH' WHERE Type = 'UNIT_FIGHTER'; -- Jet Fighter (Oil SR) is never obsolete
-UPDATE Units SET ObsoleteTech = 'TECH_LASERS' WHERE Type = 'UNIT_BOMBER'; -- Jet Bomber (Oil SR) is never obsolete
-UPDATE Units SET ObsoleteTech = 'TECH_GLOBALIZATION' WHERE Type = 'UNIT_JET_FIGHTER'; -- Advanced Fighter (Alu SR) is superior tan Stealth Fighter
-UPDATE Units SET ObsoleteTech = 'TECH_LASERS' WHERE Type = 'UNIT_AMERICAN_B17'; -- B-52 is never obsolete
-UPDATE Units SET ObsoleteTech = 'TECH_STEALTH' WHERE Type = 'UNIT_JAPANESE_ZERO'; -- MiG-29 is never obsolete
-
------------------------------------------------------------------------------------------------------------
 ----- P-80 INSERT
 
 ----- Pentagon gives 2x P-80 Shooting Star instead of 2x Stealth Fighters
@@ -86,88 +55,3 @@ UPDATE Building_FreeUnits SET UnitType = 'UNIT_EARLYJET' WHERE BuildingType = 'B
 UPDATE Language_ko_KR
 SET Text = '[COLOR_MAGENTA]제국주의[ENDCOLOR] 계열 정책 완료가 필요합니다. 모든 도시의 군사 유닛 보급 한도가 1만큼, 항공 유닛 보급 한도가 2만큼 증가합니다. 완료 시 도시에 전용으로 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] P-80 슈팅스타 2대를 획득합니다. 도시 내 항공 유닛 [ICON_PRODUCTION] 생산력이 +50% 증가하고, 도시 내에서 항공 유닛을 생산할 시 +20 XP를 획득합니다. 소유한 [ICON_SPY] 스파이는 고급 행동을 통해 유닛 [ICON_PRODUCTION] 생산을 방해할 가능성이 훨씬 더 높습니다.'
 WHERE Tag = 'TXT_KEY_WONDER_PENTAGON_HELP';
-
------------------------------------------------------------------------------------------------------------
------ Upgrades / Tenet
-
------ Medium Bomber now upgrades into B-52 if you have POLICY_THEIR_FINEST_HOUR
------ Monoplane now upgrades into MiG-29 if you have POLICY_MILITARISM
-INSERT INTO Policy_UnitClassReplacements
-	(PolicyType, ReplacedUnitClassType, ReplacementUnitClassType)
-VALUES
-	('POLICY_MILITARISM', 'UNITCLASS_JET27', 'UNITCLASS_MIG29');
-	
-INSERT INTO Policy_UnitClassReplacements
-	(PolicyType, ReplacedUnitClassType, ReplacementUnitClassType)
-VALUES
-	('POLICY_THEIR_FINEST_HOUR', 'UNITCLASS_STRBOMB', 'UNITCLASS_B52');
-
------------------------------------------------------------------------------------------------------------
------ ArtDefine_ UPDATE
-
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.6 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER'; -- was 1.79999995231628
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.7 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_AMERICAN_B17'; -- was 1.20000004768372
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.3 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_FIGHTER'; -- was 1.60000002384186
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.7 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER'; -- was 1.60000002384186
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.72 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_JAPANESE_ZERO'; -- was 1.60000002384186
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 2.5 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER'; -- was 3
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 2 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_STEALTHBOMBER'; -- was more
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 1.36 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_BOMBER'; -- was more
-
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 0.37 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_FIGHTER'; -- was 0.25
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 0.41 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_FIGHTER'; -- was 0.5
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 0.35 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_JAPANESE_ZERO'; -- was 0.25
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 0.45 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_JAPANESE_ZERO'; -- was 0.5
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 0.21 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_BOMBER'; -- was more
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 0.31 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_BOMBER'; -- was more
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 0.32 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER'; -- was more
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 0.42 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER'; -- was more
-
-UPDATE ArtDefine_UnitMemberCombats SET AttackRadius = 125 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER'; -- was 135
-
-UPDATE ArtDefine_UnitMemberCombatWeapons SET ProjectileSpeed = 1 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_WW1_FIGHTER' AND "Index" = 1 AND SubIndex = 1; -- was 1.29999995231628
-UPDATE ArtDefine_UnitMemberCombatWeapons SET ProjectileSpeed = 1.5 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER' AND "Index" = 0 AND SubIndex = 1; -- was 3
-UPDATE ArtDefine_UnitMemberCombatWeapons SET ProjectileSpeed = 1.6 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_JAPANESE_ZERO' AND "Index" = 0 AND SubIndex = 1; -- was 1.29999995231628
-UPDATE ArtDefine_UnitMemberCombatWeapons SET ProjectileSpeed = 2.3 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER' AND "Index" = 0 AND SubIndex = 0; -- was 3
-UPDATE ArtDefine_UnitMemberCombatWeapons SET ProjectileSpeed = 2.4 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER' AND "Index" = 1 AND SubIndex = 1; -- was 3
-
-UPDATE ArtDefine_UnitInfoMemberInfos SET NumMembers = 3 WHERE UnitInfoType = 'ART_DEF_UNIT_JET_FIGHTER'; -- was 1
-
------------------------------------------------------------------------------------------------------------
------ UnitGameplay2DScripts / Audio_3DSounds UPDATE
-
-UPDATE UnitGameplay2DScripts SET SelectionSound = 'AS2D_SELECT_GOTHA', FirstSelectionSound = 'AS2D_SELECT_GOTHA' WHERE UnitType = 'UNIT_WWI_BOMBER'; -- was vanilla UNIT_BOMBER sound
-UPDATE UnitGameplay2DScripts SET SelectionSound = 'AS2D_SELECT_AVROL', FirstSelectionSound = 'AS2D_SELECT_AVROL' WHERE UnitType = 'UNIT_BOMBER'; -- was vanilla UNIT_BOMBER sound
-UPDATE UnitGameplay2DScripts SET SelectionSound = 'AS2D_SELECT_B17', FirstSelectionSound = 'AS2D_SELECT_B17' WHERE UnitType = 'UNIT_AMERICAN_B17'; -- was vanilla UNIT_BOMBER sound
-UPDATE UnitGameplay2DScripts SET SelectionSound = 'AS2D_SELECT_B2', FirstSelectionSound = 'AS2D_SELECT_B2' WHERE UnitType = 'UNIT_STEALTH_BOMBER'; -- was weird!
-UPDATE UnitGameplay2DScripts SET SelectionSound = 'AS2D_SELECT_FOK', FirstSelectionSound = 'AS2D_SELECT_FOK' WHERE UnitType = 'UNIT_TRIPLANE'; -- was vanilla UNIT_FIGHTER
-
-UPDATE Audio_3DSounds SET MaxVolume = 59,	MinVolume = 41 WHERE ScriptID = 'AS3D_UNIT_STEALTH_BOMBER_STEALTH_BOMBER_TURN' AND SoundID = 'SND_UNIT_STEALTH_BOMBER_TURN' AND SoundType = 'GAME_SFX'; -- was 75,75
-
------------------------------------------------------------------------------------------------------------
------ FLAVOR SET
-
------ Unit_Flavors
-UPDATE Unit_Flavors SET Flavor = 17 WHERE UnitType = 'UNIT_JET_FIGHTER' AND FlavorType = 'FLAVOR_ANTIAIR'; -- was 15
-
------ Technology_Flavors
-UPDATE Technology_Flavors SET Flavor = 20 WHERE TechType = 'TECH_STEALTH' AND FlavorType = 'FLAVOR_AIR'; -- was 10
-UPDATE Technology_Flavors SET Flavor = 20 WHERE TechType = 'TECH_LASERS' AND FlavorType = 'FLAVOR_AIR'; -- was 10
-UPDATE Technology_Flavors SET Flavor = 10 WHERE TechType = 'TECH_LASERS' AND FlavorType = 'FLAVOR_OFFENSE'; -- was 5
-
-INSERT INTO Technology_Flavors
-	(TechType, FlavorType, Flavor)
-VALUES
-	('TECH_ATOMIC_THEORY', 'FLAVOR_AIR', 25),             -- _EARLYMONOPLAN and _MEDIUMBOMBER
-	('TECH_ATOMIC_THEORY', 'FLAVOR_OFFENSE', 15),
-	
-	('TECH_TELECOM', 'FLAVOR_AIR', 25),                   -- _JET27 and _JETBOMB
-	('TECH_TELECOM', 'FLAVOR_OFFENSE', 15),
-	
-	('TECH_PARTICLE_PHYSICS', 'FLAVOR_AIR', 25),          -- _STEALTH_BOMBER
-	('TECH_PARTICLE_PHYSICS', 'FLAVOR_OFFENSE', 15),
-	
-	('TECH_GLOBALIZATION', 'FLAVOR_AIR', 25),             -- _ADVJET
-	('TECH_GLOBALIZATION', 'FLAVOR_OFFENSE', 15),
-	
-	('TECH_STEALTH', 'FLAVOR_OFFENSE', 12);               -- _JET_FIGHTER

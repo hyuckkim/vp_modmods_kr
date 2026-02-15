@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f78d7560-ecf0-4f48-9a5c-f2fb4b6ca22a" version="2">
+  <Properties>
+    <Name>Mechanized Infantry with Soldiers, Resized</Name>
+    <Teaser>Adds soldiers to the Mechanized Infantry unit</Teaser>
+    <Description>This mod changes the Mechanized Infantry unit so that its unit art includes four modern soldiers and two vehicles.  The mod is intended to give greater flavor to the latest infantry unit in the game, by having a formation with soldiers on foot in addition to the vehicles.  
+
+This variant of the mod reduces the size of the soldiers for purposes of scale.  The default version contains soldiers that are the same size as Paratroopers.</Description>
+    <Authors>Tidal Resonance</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="0535bb64-ee44-4155-b032-a4c7ce121642" minversion="0" maxversion="999" title="Mechanized Infantry with Soldiers" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="2640438C22E70A38B044529133375510" import="1">modernsoldier.fxsxml</File>
+    <File md5="67B562119CF09F395C53DB7C897A7ADC" import="1">modernsoldier.gr2</File>
+    <File md5="E5388FF5F7F052F989FB51EDECAB21CA" import="1">modernsoldier_diff.dds</File>
+    <File md5="9400B2DEE71509778579721C68695764" import="0">XML &amp; SQL/Modernsoldier and MI.sql</File>
+    <File md5="4AB950463446DDADEA5E9F795B653921" import="1">XML &amp; SQL/UnitFormations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML &amp; SQL/Modernsoldier and MI.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

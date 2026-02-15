@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="51922c19-1326-4031-add9-834cf7d2fbc2" version="1">
+  <Properties>
+    <Name>3 Units per Tile</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Allows 3 units per tile.</Teaser>
+    <Description>Changes global defines to allow 3 units per tile. When attacking an enemy stack the unit with the highest combat strength is attacked first, likewise for defending. The unit art determines who is on top of the stack, not the unit icon.</Description>
+    <Authors>Moo Zedong</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1B41AF9F59F90F772BD95B353B81C06F" import="0">GlobalDefines.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>GlobalDefines.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

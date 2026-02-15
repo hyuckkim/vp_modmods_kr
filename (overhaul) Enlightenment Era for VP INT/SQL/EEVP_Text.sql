@@ -22,7 +22,7 @@ UPDATE Language_ko_KR SET Text = 'IX'   WHERE Tag = 'TXT_KEY_ERA_7_ABBREV'; -- �
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_LEAGUE_WORLD_CONGRESS_4', '{@1_Ordinal} {@2_CityName} 세계 의회'),
-('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY', '세계 의회는 계속 성장하고 있습니다'),
+('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY', '세계 의회는 계속 성장하고 있습니다.'),
 ('TXT_KEY_LEAGUE_SPECIAL_SESSION_WORLD_ASSEMBLY_HELP',
 	'전 세계 각국의 급격한 변화는 국제 관계 또한 빠르게 변화시키고 있으며, 이로 인해 세계 의회는 새로운 도전에 대응하기 위해 적응해야 합니다. 의회를 이끌어갈 차기 개최국을 선정하기 위해 특별 회의가 소집됩니다.');
 --------------------------------------------------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ SET Text = REPLACE(Text, '병영, 무기고, 사관 학교, ', '병영, 무기�
 WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
 
 --------------------------------------------------------------------------------------------------------------------------
--- Tech
+-- 기술
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_EXPLORATION', '탐험'),
@@ -53,7 +53,8 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_TECH_EE_EXPLORATION_QUOTE', '[NEWLINE][TAB][TAB]"우리는 탐험을 멈추지 않을 것이다. 그리고 우리의 모든 탐험이 끝나는 그날 비로소 우리는 최초의 시작점에 도착하여 그곳이 어디였는지 처음으로 알게 될 것이다."[NEWLINE][TAB][TAB] - T. S. 엘리엇[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_FLINTLOCK', '플린트락'),
-('TXT_KEY_TECH_EE_FLINTLOCK_DESC', '플린트락은 머스킷이나 소총의 화약에 불을 붙이기 위해 부싯돌을 사용하는 특정한 잠금 방식으로 설명할 수도 있고, 17세기, 18세기, 19세기의 무기 전체를 지칭할 수도 있습니다. 프랑스에서 처음 개발된 이 무기는 부싯돌 조각으로 만들어졌는데, 이 부싯돌을 강철(프리젠이라고 함)로 치면 불꽃이 생기고, 이 불꽃이 화약이 담긴 팬에 떨어지면서 불이 붙어 무기가 발사되는 방식이었습니다.[NEWLINE][NEWLINE]플린트락 소총은 이전의 매치락 소총보다 개량되었기 때문에 빠르게 인기를 얻었으며, 1630년대에는 영국 내전에서 복무하는 용기병이 선호하는 무기로 명성을 얻었고, 1700년대에는 대부분 유럽 보병의 제식 무기로 자리 잡았습니다. 19세기 중반까지 이러한 지위를 유지했지만, 이후 점차 폐지되고 퍼커션 캡으로 대체되었고, 나중에는 탄환 기반 시스템으로 대체되었습니다.'),('TXT_KEY_TECH_EE_FLINTLOCK_HELP', '화약 유닛의 생산력을 늘릴 수 있습니다.'),
+('TXT_KEY_TECH_EE_FLINTLOCK_DESC', '플린트락은 머스킷이나 소총의 화약에 불을 붙이기 위해 부싯돌을 사용하는 특정한 잠금 방식으로 설명할 수도 있고, 17세기, 18세기, 19세기의 무기 전체를 지칭할 수도 있습니다. 프랑스에서 처음 개발된 이 무기는 부싯돌 조각으로 만들어졌는데, 이 부싯돌을 강철(프리젠이라고 함)로 치면 불꽃이 생기고, 이 불꽃이 화약이 담긴 팬에 떨어지면서 불이 붙어 무기가 발사되는 방식이었습니다.[NEWLINE][NEWLINE]플린트락 소총은 이전의 매치락 소총보다 개량되었기 때문에 빠르게 인기를 얻었으며, 1630년대에는 영국 내전에서 복무하는 용기병이 선호하는 무기로 명성을 얻었고, 1700년대에는 대부분 유럽 보병의 제식 무기로 자리 잡았습니다. 19세기 중반까지 이러한 지위를 유지했지만, 이후 점차 폐지되고 퍼커션 캡으로 대체되었고, 나중에는 탄환 기반 시스템으로 대체되었습니다.'),
+('TXT_KEY_TECH_EE_FLINTLOCK_HELP', '화약 유닛의 생산력을 늘릴 수 있습니다.'),
 ('TXT_KEY_TECH_EE_FLINTLOCK_QUOTE', '[NEWLINE][TAB][TAB]"전쟁에 대비하는 것은 평화를 유지하는 가장 효과적인 수단이다."[NEWLINE][TAB][TAB] - 조지 워싱턴[NEWLINE][TAB]'),
 
 ('TXT_KEY_TECH_EE_FORTIFICATION', '성채'),
@@ -63,7 +64,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 
 ('TXT_KEY_TECH_EE_HUMANISM', '인본주의'),
 --TXT_KEY_TECH_EE_HUMANISM_DESC - 바닐라 게임의 TXT_KEY_TECH_HUMANISM_DESC 를 사용
-('TXT_KEY_TECH_EE_HUMANISM_QUOTE', '[NEWLINE][TAB][TAB]"인간이 무어란 말이냐? 불쌍하고 하찮은 모순 덩어리들이 아니더냐!"[NEWLINE][TAB][TAB] - 드라큘라 백작 [NEWLINE][TAB]'),
+('TXT_KEY_TECH_EE_HUMANISM_QUOTE', '[NEWLINE][TAB][TAB]"인간이 무어란 말이냐? 불쌍하고 하찮은 모순 덩어리들이 아니더냐!"[NEWLINE][TAB][TAB] - 드라큘라 백작[NEWLINE][TAB]'),
 ('TXT_KEY_TECH_EE_HUMANISM_HELP', '[COLOR_POSITIVE_TEXT]아카데미[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]응접실[ENDCOLOR]모두 건설할 수 있습니다. 이 두 건물은 상호 배타적이며, 각각 도시의 과학 또는 문화 산출량을 높여줍니다.'),
 
 ('TXT_KEY_TECH_EE_MANUFACTURING', '제조업'),
@@ -101,7 +102,7 @@ WHERE Tag = 'TXT_KEY_TECH_ASTRONOMY_QUOTE';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 양손 무기
 ('TXT_KEY_PROMOTION_2HANDER', '대검'),
-('TXT_KEY_PROMOTION_2HANDER_HELP', '창병, 파이크병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드로 인해 손실됨[ENDCOLOR].'),
+('TXT_KEY_PROMOTION_2HANDER_HELP', '창병, 장창병, 테르시오, 란츠크네히트를 공격할 때 [ICON_STRENGTH] 공격력 +33%[NEWLINE][COLOR_NEGATIVE_TEXT]업그레이드로 인해 손실됨[ENDCOLOR].'),
 -- 파실 게비 아우라
 ('TXT_KEY_PROMOTION_EE_FASIL_GHEBBI', '카타마 순찰대'),
 ('TXT_KEY_PROMOTION_EE_FASIL_GHEBBI_HELP', '[COLOR_CYAN]파실 게비[ENDCOLOR]의 3타일 범위에 있을 때 [ICON_STRENGTH] 전투력 +25%'),
@@ -109,14 +110,14 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_PROMOTION_EE_FIRST_RATE', '기함'),
 ('TXT_KEY_PROMOTION_EE_FIRST_RATE_HELP', '이 승급을 가진 유닛 [COLOR_POSITIVE_TEXT]근처[ENDCOLOR]에서 턴을 시작하는 해군 유닛의 [ICON_STRENGTH] 방어력 +20%'),
 -- 모험가
-('TXT_KEY_PROMOTION_EE_ADVENTURER', '모험가'),
-('TXT_KEY_PROMOTION_EE_ADVENTURER_HELP', '유닛이 승선 중일 때 [ICON_MOVES] 이동력 +1, 시야 +2'),
+('TXT_KEY_PROMOTION_EE_ADVENTURER', '큰까마귀''수비'),
+('TXT_KEY_PROMOTION_EE_ADVENTURER_HELP', '유닛이 승선 중일 때 [ICON_MOVES] 이동력 +1, [ICON_VP_VISION] 시야 +2'),
 -- 건선거
 ('TXT_KEY_PROMOTION_EE_DRYDOCK', '이상 무'),
 ('TXT_KEY_PROMOTION_EE_DRYDOCK_HELP', '해군 유닛 [ICON_STRENGTH] 전투력 +15%');
 
 --------------------------------------------------------------------------------------------------------------------------
--- UNITS
+-- 유닛
 --------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
@@ -162,9 +163,9 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY_PEDIA', '17세기 중반에 총이 대량으로 보급되면서 전장은 선형 전술이 지배하게 되었고, 이에 따라 보병은 길고 얇은 대열로 배치되어 일제 사격을 했습니다. 전열은 2열, 3열, 또는 4열의 병사들로 구성되었습니다. 활강 머스킷총은 사거리가 비교적 짧았고, 재장전 속도도 느렸기 때문에 적의 사상자를 극대화하기 위해서는 대규모 대열 사격이 필수적이었습니다. 이 전열은 가장 광범위한 화력 배치를 가능하게 하므로 기본적인 전투 대형으로 여겨졌습니다. 나폴레옹 전쟁 이후, 보병은 주력 전투 부대로 계속 배치되었고, 경보병은 화력 지원을 제공하고 부대의 움직임을 엄호했습니다. 새로운 무기가 발명되면서 전열보병이라는 개념은 쇠퇴하기 시작했습니다. 대열을 지어 걷는 병사들은 너무나 쉬운 표적이 되었습니다. 소총의 정확도와 발사 속도가 향상되고, 개틀링 기관총과 기관총이 발명되면서, 근접전 보병은 적에게 접근하기도 전에 막대한 손실을 입게 되었습니다. 20세기에 들어서면서 보병들은 점차 전투에서 산병 스타일의 경보병 전술을 채택하게 되었고, 훈련을 위해 일반 보병 훈련을 유지하게 되었습니다.'),
 ('TXT_KEY_UNIT_EE_LINE_INFANTRY_STRATEGY', '계몽 시대의 표준 화약 유닛으로, 테르시오보다 업그레이드되어 상당히 성능이 뛰어납니다. 전열보병은 계몽군의 중추를 이루며, 다른 근접 유닛과 싸우고 공성 및 원거리 부대를 보호하는 데 사용됩니다.');
 
--- 스웨덴 캐롤리언
+-- 스웨덴 카롤리너
 UPDATE Language_ko_KR
-SET Text = '캐롤리언은 계몽 시대 스웨덴 군대의 중추였습니다. 그들은 행동을 수행하더라도 매 턴마다 치유를 할 수 있는 행군 승급을 가지고 시작합니다. 캐롤리언은 위대한 장군과 함께 배치될 경우 전투력이 15% 증가하고, 유닛을 처치한 후 전진하면 인접한 모든 유닛에 피해를 입힙니다.'
+SET Text = '카롤리너는 계몽 시대 스웨덴 군대의 중추였습니다. 그들은 행동을 수행하더라도 매 턴마다 치유를 할 수 있는 행군 승급을 가지고 시작합니다. 카롤리너는 위대한 장군과 함께 배치될 경우 전투력이 15% 증가하고, 유닛을 처치한 후 전진하면 인접한 모든 유닛에 피해를 입힙니다.'
 WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- 미국 미니트맨
@@ -229,7 +230,7 @@ WHERE Tag = 'TXT_KEY_UNIT_BANDEIRANTES_HELP';
 -- 양손 검병
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_UNIT_EE_2HANDER', '양손 검병'),
-('TXT_KEY_UNIT_EE_2HANDER_PEDIA', '르네상스 시대에 이탈리아와 스페인에서 활동했던 양손 검병입니다. 테르시오 대형의 측면을 보호하는 임무를 맡은 보조 부대로서, 그들은 레콩키스타가 끝나고 이탈리아 전쟁이 시작될 때까지 매우 활발하게 활동했습니다.16세기 중반, 테르시오에서 머스킷병과 파이크 창병의 위치가 모호하여 전투가 머스킷병의 집중 공격과 파이크병의 견고한 방어로 완료되었기 때문에, 머스킷병과 파이크 창병에게 검술 교육을 하는 것이 더 낫다는 이유로 이들을 훈련시켰습니다. 이들은 도태되었습니다. 그러나 여전히 비정규전에서 사용되었으며, 유럽처럼 테르시오 방진을 짜고 엮는 것이 불가능했던 아메리카 정복 과정에서 핵심적인 역할을 했습니다.실제로 화약의 공급과 수요가 제한된 상황에서 총기는 심리적인 충격은 컸지만, 실제로는 그 효과가 크게 감소했습니다. 반면, 스페인 검찰관들의 톨레도 강철 검은 당시 아메리카 원주민의 기술로는 극복하기 어려웠습니다. 당시 원주민들은 칼을 빼앗아도 어떻게 다루어야 할지 몰라 창끝에 묶어 창처럼 사용했습니다.'),
+('TXT_KEY_UNIT_EE_2HANDER_PEDIA', '르네상스 시대에 이탈리아와 스페인에서 활동했던 양손 검병입니다. 테르시오 대형의 측면을 보호하는 임무를 맡은 보조 부대로서, 그들은 레콩키스타가 끝나고 이탈리아 전쟁이 시작될 때까지 매우 활발하게 활동했습니다. 16세기 중반, 테르시오에서 머스킷병과 장창병의 위치가 모호하여 전투가 머스킷병의 집중 공격과 장창병의 견고한 방어로 완료되었기 때문에, 머스킷병과 장창병에게 검술 교육을 하는 것이 더 낫다는 이유로 이들을 훈련시켰습니다. 이들은 도태되었습니다. 그러나 여전히 비정규전에서 사용되었으며, 유럽처럼 테르시오 방진을 짜고 엮는 것이 불가능했던 아메리카 정복 과정에서 핵심적인 역할을 했습니다.실제로 화약의 공급과 수요가 제한된 상황에서 총기는 심리적인 충격은 컸지만, 실제로는 그 효과가 크게 감소했습니다. 반면, 스페인 검찰관들의 톨레도 강철 검은 당시 아메리카 원주민의 기술로는 극복하기 어려웠습니다. 당시 원주민들은 칼을 빼앗아도 어떻게 다루어야 할지 몰라 창끝에 묶어 창처럼 사용했습니다.'),
 ('TXT_KEY_UNIT_EE_2HANDER_STRATEGY', '양손 검병은 장검병보다 훨씬 강력하며, 창병, {TXT_KEY_UNIT_PIKEMAN}, {TXT_KEY_UNIT_SPANISH_TERCIO} 그리고 {TXT_KEY_UNIT_FCOMPANY}를 공격할 때 파괴적인 전투 보너스를 얻습니다.'),
 ('TXT_KEY_UNIT_EE_2HANDER_HELP', '초기 르네상스 시대의 근접 유닛입니다. 창병, {TXT_KEY_UNIT_PIKEMAN}, {TXT_KEY_UNIT_SPANISH_TERCIO} 그리고 {TXT_KEY_UNIT_FCOMPANY}에 추가 [ICON_WAR] 공격력 +33%를 줍니다. [COLOR_POSITIVE_TEXT]엄폐 I[ENDCOLOR] 승급을 가지고 시작합니다.');
 
@@ -238,7 +239,7 @@ UPDATE Language_ko_KR
 SET Text = '적에게 빠른 공격을 가하는 데 탁월한 프랑스 고유 {TXT_KEY_UNIT_EE_2HANDER}입니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_2HANDER}[ENDCOLOR] 승급 대신, 더 빠르게 움직이고 통제 구역(ZOC)를 무시할 수 있습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSKETEER';
 UPDATE Language_ko_KR
-SET Text = 'The {TXT_KEY_UNIT_FRENCH_MUSKETEER} 프랑스 유닛으로 {TXT_KEY_UNIT_EE_2HANDER}을 대체 합니다.더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
+SET Text = '{TXT_KEY_UNIT_FRENCH_MUSKETEER}은 프랑스 유닛으로 {TXT_KEY_UNIT_EE_2HANDER}을 대체 합니다. 더욱 강력해졌으며, 더 빠르게 움직이고 통제 구역(ZOC)을 무시할 수 있는 다양한 승급이 있습니다.'
 WHERE Tag = 'TXT_KEY_UNIT_FRENCH_MUSKETEER_STRATEGY';
 
 -- 독일 란츠크네히트 (도펠죌트너)
@@ -246,14 +247,23 @@ UPDATE Language_ko_KR
 SET Text = '도펠죌트너'
 WHERE Tag = 'TXT_KEY_UNIT_GERMAN_LANDSKNECHT';
 UPDATE Language_ko_KR
-SET Text = '용병으로 특화된 독일 고유의 {TXT_KEY_UNIT_EE_2HANDER}으로, 구매 시 즉시 이동할 수 있으며 경험치 패널티나 재사용 대기시간이 없습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR] 승급을 가지고 시작합니다.'
+SET Text = '용병으로 특화된 독일 고유의 {TXT_KEY_UNIT_EE_2HANDER}으로, 구매 즉시 이동할 수 있으며 경험치 패널티나 재사용 대기시간이 없습니다. [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_1}[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_FORMATION_2}[ENDCOLOR] 승급을 가지고 시작합니다.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_LANDSKNECHT';
 UPDATE Language_ko_KR
 SET Text = '{TXT_KEY_UNIT_GERMAN_LANDSKNECHT}는 {TXT_KEY_UNIT_EE_2HANDER}을 대체하는 독일의 고유 유닛입니다. 체력이 가득 찬 유닛에 대한 전투 보너스가 있으며, 승선한 유닛에 대한 보너스가 더 큽니다. 훈련이나 구매 비용이 약간 저렴하고, 구매하면 전체 경험치를 얻고 즉시 이동할 수 있습니다.[NEWLINE][NEWLINE]빠른 배치와 체력이 충분한 유닛에 대한 보너스를 활용해 전쟁의 첫 턴에서 적을 놀라게 하고 적의 전선을 빠르게 무너뜨리세요. 가격이 저렴하기 때문에 선물로도 좋습니다. 한 번에 여러 유닛을 구매하고, 근처 도시 국가로 가져가서 단기 및 장기적으로 영향력의 이점을 얻으세요.'
 WHERE Tag = 'TXT_KEY_UNIT_GERMAN_LANDSKNECHT_STRATEGY';
 UPDATE Language_ko_KR
-SET Text = '도펠죌트너 또는 "이중 급여 지급자"는 유럽 전쟁의 창총진 시대에 등장해 자원하여 최전선에서 싸우고 두 배의 급여를 받는 사람들을 말합니다. 부대의 약 4분의 1은 파이크병 앞에서 날개를 형성한 최전선 군인이었고, 파이크병은 석궁병 및/또는 화승총병을 방어했습니다. 도펠죌트너의 주된 무기는 가벼운 원거리 무기였지만, 적의 창과 그 휘두르는 자의 머리를 자르는 데 사용된 것은 거대한 양손검인 츠바이헨더였습니다!'
+SET Text = '도펠죌트너 또는 "2배 급료 병사"는 유럽 전쟁의 창총진 시대에 등장해 자원하여 최전선에서 싸우고 두 배의 급여를 받는 사람들을 말합니다. 부대의 약 4분의 1은 장창병 앞에서 날개를 형성한 최전선 군인이었고, 장창병은 석궁병 및/또는 화승총병을 방어했습니다. 도펠죌트너의 주된 무기는 가벼운 원거리 무기였지만, 적의 창과 그 휘두르는 자의 머리를 자르는 데 사용된 것은 거대한 양손검인 츠바이헨더였습니다!'
 WHERE Tag = 'TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_LANDSKNECHT_TEXT';
+
+-- 네덜란드 바다 거지(Geuzen)
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '{TXT_KEY_UNIT_PRIVATEER}', '카락')
+WHERE Tag = 'TXT_KEY_UNIT_SEA_BEGGAR_STRATEGY';
+
+UPDATE Language_ko_KR
+SET Text = '도시와 선박을 모두 공격하는 데 특화된 고유한 네덜란드 카락입니다. [COLOR_POSITIVE_TEXT]선봉[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]보급[ENDCOLOR] 승급을 가지고 시작합니다.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_SEA_BEGGAR';
 
 -- 테르시오
 UPDATE Language_ko_KR
@@ -266,7 +276,7 @@ UPDATE Language_ko_KR
 SET Text = '철을 필요로 하지 않았던 이전 방어 유닛들처럼, 창총진은 최전선에서 든든한 기반을 제공합니다. 또한 [COLOR_POSITIVE_TEXT]파이크 전술[ENDCOLOR]을 사용할 수 있어 적에게 공격을 개시할 때 공격적으로 활용할 수 있습니다. 그러나 르네상스 시대에 강력한 양손 검병이 등장하면서 처음으로 직접적인 대항마가 탄생했습니다. 따라서 기마 유닛이 덜 위협적이기는 하지만, 단 하나의 실패 지점도 없는 효과적인 군대 구성을 설계하는 데 여전히 주의를 기울여야 합니다.'
 WHERE Tag = 'TXT_KEY_CIV5_SPAIN_TERCIO_STRATEGY';
 UPDATE Language_ko_KR
-SET Text = '창총진은 15세기 후반과 16세기 초반에 처음 등장한 전술적 대형을 말하며, 17세기 후반에 총검이 개발될 때까지 사용되었습니다. 이러한 유형의 부대는 파이크로 무장한 군인과 화승총 그리고/또는 머스킷총으로 무장한 군인을 결합했습니다. 칼, 도끼, 석궁과 같은 다른 무기도 가끔 사용되었습니다. 이 대형은 원래 신성 로마 제국 보병대(란츠크네히트)와 스페인 보병대(테르시오)에 의해 개발되었습니다.[NEWLINE][NEWLINE]이 전술은 종종 4m가 넘는 강화된 장창인 파이크를 이용한 통제에 달려 있습니다. 방어적으로는 뛰어나지만, 다루기 힘들어서 기동성이 떨어지기 쉬웠고, 오직 잘 훈련된 부대만이 효과적인 공격 방식으로 사용할 수 있었습니다. 이러한 약점을 극복하기 위해 파이크병은 매우 원시적인 (매치락) 화기인 화승총과 짝을 이루었습니다. 창총진은 매우 성공적이어서 당시의 많은 전투는 움직일 수 없는 많은 수의 병사들이 서로를 밀치고 치명적인 압도로 이어지는 "파이크 밀기(Push of Pike)"로 알려졌으며, 파이크병의 무장을 해제하기 위해 특별히 거대한 대검이 제작되었습니다.'
+SET Text = '창총진은 15세기 후반과 16세기 초반에 처음 등장한 전술적 대형을 말하며, 17세기 후반에 총검이 개발될 때까지 사용되었습니다. 이러한 유형의 부대는 파이크로 무장한 군인과 화승총 그리고/또는 머스킷총으로 무장한 군인을 결합했습니다. 칼, 도끼, 석궁과 같은 다른 무기도 가끔 사용되었습니다. 이 대형은 원래 신성 로마 제국 보병대(란츠크네히트)와 스페인 보병대(테르시오)에 의해 개발되었습니다.[NEWLINE][NEWLINE]이 전술은 종종 4m가 넘는 강화된 장창인 파이크를 이용한 통제에 달려 있습니다. 방어적으로는 뛰어나지만, 다루기 힘들어서 기동성이 떨어지기 쉬웠고, 오직 잘 훈련된 부대만이 효과적인 공격 방식으로 사용할 수 있었습니다. 이러한 약점을 극복하기 위해 장창병은 매우 원시적인 (매치락) 화기인 화승총과 짝을 이루었습니다. 창총진은 매우 성공적이어서 당시의 많은 전투는 움직일 수 없는 많은 수의 병사들이 서로를 밀치고 치명적인 압도로 이어지는 "파이크 밀기(Push of Pike)"로 알려졌으며, 장창병의 무장을 해제하기 위해 특별히 거대한 대검이 제작되었습니다.'
 WHERE Tag = 'TXT_KEY_CIV5_SPAIN_TERCIO_TEXT';
 
 UPDATE Language_ko_KR
@@ -322,7 +332,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_ROYALSOC_PEDIA', '왕립학회, 공식적으로는 자연지식 증진을 위한 런던 왕립학회는 학술단체이자 영국의 국립 과학 아카데미입니다. 이 학회는 과학과 그 혜택을 장려하고, 과학의 우수성을 인정하고, 뛰어난 과학을 지원하고, 정책, 교육, 대중 참여를 위한 과학적 조언을 제공하며, 국제적, 글로벌 협력을 촉진하는 등 다양한 역할을 수행합니다. 1660년 11월 28일에 설립되었으며, 찰스 2세로부터 왕실 헌장을 받았으며, 세계에서 가장 오랫동안 지속적으로 존재해 온 과학 아카데미입니다.[NEWLINE][NEWLINE]1739년까지 회원 수는 110명에서 약 300명으로 늘어났고, 1703년부터 아이작 뉴턴 경이 회장으로 재임하는 동안 1727년 그가 사망할 때까지 학회의 명성이 높아졌으며, 왕립학회의 철학 논문집이 정기적으로 발간되었습니다. 뉴턴은 회장으로 재임하는 동안 자신의 권한을 남용했다는 논란이 있습니다. 미적분학의 발명을 두고 고트프리트 라이프니츠와 분쟁이 있었는데, 그는 자신의 지위를 이용해 "공정한" 위원회를 임명하여 결정을 내리게 하였고, 결국 위원회의 이름으로 자신이 쓴 보고서를 출판했다.'),
 -- 톱카프
 ('TXT_KEY_BUILDING_EE_TOPKAPI', '톱카프 궁전'),
-('TXT_KEY_WONDER_EE_TOPKAPI_HELP', '방어 건물의 [ICON_PEACE] 신앙이 +1 증가합니다.  [ICON_GREAT_WORK] 걸작과 [ICON_VP_ARTIFACT] 유물 슬롯 2개가 포함되어 있으며, [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 유물이 제공됩니다.  [COLOR_POSITIVE_TEXT]테마[ENDCOLOR]가 있는 경우 [ICON_PRODUCTION] 생산력과 [ICON_RESEARCH] 과학이 +3 증가합니다.'),
+('TXT_KEY_WONDER_EE_TOPKAPI_HELP', '문명의 방어 건물에서 [ICON_PEACE] 신앙이 +1 증가합니다.  [ICON_GREAT_WORK] 걸작과 [ICON_VP_ARTIFACT] 유물 슬롯 2개가 포함되어 있으며, [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 유물이 제공됩니다.  [COLOR_POSITIVE_TEXT]테마[ENDCOLOR]가 있는 경우 [ICON_PRODUCTION] 생산력과 [ICON_RESEARCH] 과학이 +3 증가합니다.'),
 ('TXT_KEY_WONDER_EE_TOPKAPI_QUOTE', '[NEWLINE]"이 도시와 건물은 내 것이다. 하지만 포로와 전리품, 금과 미인 같은 보물은 너의 용맹에 맡기겠다. 부자가 되고 행복해지라."[NEWLINE] - 메흐메트 2세[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_TOPKAPI_PEDIA', '보스포루스 해협을 내려다보는 톱카프 궁전은 터키 이스탄불의 유럽 쪽에 위치한 대규모 궁전 단지입니다. 이 도시는 "정복자(Fatih)" 메흐메드 2세의 명령으로 건설되었는데, 그는 이 도시를 비잔틴 제국으로부터 점령하고 이스탄불로 개명하였고, 이는 오스만 제국의 성공적인 포위 공격 이후 도시를 재건하려는 계획의 일환이었다. 이 궁전은 오스만 술탄의 통치 기간 중 약 4세기 동안 공식 거주지로 사용되었으며, 1856년 술탄 압뒬메지트 1세가 보스포루스 해협 위쪽에 새로 지은 궁전으로 궁정을 옮길 때까지 지속되었습니다. 톱카프 궁전은 실제로 궁전이라기보다는 성벽으로 둘러싸인 마을에 가깝습니다. 하나의 중앙 건물이 있는 것이 아니라 여러 개의 작은 건물과 많은 안뜰이 있습니다. 이곳에는 술탄이 수집한 유물과 오스만 제국이 멸망한 후 궁전이 박물관으로 바뀐 후 수집한 유물과 인공물이 많이 보관되어 있습니다. 이 중에는 메카의 대모스크(마스지드 알하람)로 가는 문 등 이슬람 세계에서 신성한 유물이 있으며, 예언자 무함마드의 망토와 칼이라고 전해지는 것도 있습니다. 다른 품목으로는 실크로드 무역에서 수집한 것이 많이 있는데, 4개 왕조에 걸쳐 수집된 다양한 중국 도자기와 약 13세기에 걸친 이슬람 무기 소장품이 있습니다. 궁전은 대부분 아직도 온전하게 보존되어 있지만, 일부는 지진이나 화재로 인해 소실되었습니다.'),
 -- 토레 델 오로
@@ -332,7 +342,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_TORRE_PEDIA', '토레 델 오로(스페인어로 황금의 탑)는 당시 스페인 남부를 점령하고 있던 베르베르인에 의해 13세기에 스페인 도시 세비야에 건설되었습니다. 원래는 군사용 감시탑으로 건설되었지만, 레콩키스타와 신대륙 발견 이후에는 일종의 금고로 사용되어 스페인의 보물선단을 통해 신대륙에서 운반된 귀금속을 저장했으며, 이로 인해 세비야는 의도치 않게 매우 부유한 도시이자 "신대륙으로의 관문"으로 변모했습니다.'),
 -- 베르사유
 ('TXT_KEY_BUILDING_EE_VERSAILLES', '베르사유 궁전'),
-('TXT_KEY_WONDER_EE_VERSAILLES_HELP', '해당 건축물이 지어진 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 화랑이 제공됩니다.[NEWLINE]문명 내 모든 도시에서 생산된 [ICON_GOLD] 골드의 10%가 턴 당 [ICON_CULTURE] 문화로 간주됩니다.[NEWLINE]소유한 모든 기념비, 원형 극장, 화랑, 오페라 극장이 [ICON_GOLD] 골드 +2를 얻습니다.'),
+('TXT_KEY_WONDER_EE_VERSAILLES_HELP', '해당 건축물이 지어진 도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 화랑이 제공됩니다.[NEWLINE]문명 내 모든 도시에서 생산된 [ICON_GOLD] 골드의 15%가 턴 당 [ICON_CULTURE] 문화로 간주됩니다.[NEWLINE]소유한 모든 화랑, 동물 전시관, 오페라 극장이 [ICON_GOLD] 골드 +2를 얻습니다.'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_QUOTE', '[NEWLINE]"내가 약속을 만들 때마다 불만을 품은 사람 백 명과 배은망덕한 사람 한 명이 생긴다."[NEWLINE] - 루이 14세[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_VERSAILLES_PEDIA', '베르사유 궁전은 18세기 프랑스 미술의 가장 아름다운 업적 중 하나입니다. 이곳은 원래 루이 13세의 사냥터였으며, 그의 아들 루이 14세가 이곳을 변형하고 확장하여 1682년에 프랑스의 법정과 정부를 베르사유로 옮겼습니다. 프랑스 혁명까지 그곳에 살았던 세 명의 프랑스 왕은 각각 이곳을 더 아름답게 만들기 위해 개선 공사를 했습니다.[NEWLINE][NEWLINE]이 궁전은 1789년에 공식적인 권력의 중심지로서의 지위를 잃었지만, 1830년에 왕위에 오른 루이 필리프의 명령으로 설립된 프랑스 역사 박물관이라는 새로운 역할을 맡았습니다. 그때 궁전의 많은 방이 새로운 소장품을 보관하기 위해 인수되었고, 20세기 초까지 추가되어 프랑스 역사의 이정표를 추적했습니다.'),
 -- 왓 프라깨오
@@ -342,7 +352,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_WAT_PHRA_KAEW_PEDIA', '왓 프라깨오, 또는 에메랄드 불상의 사원(공식 명칭은 왓 프라 시 라따나 사사다람)은 태국에서 가장 중요한 불교 사원으로 여깁니다. 방콕의 역사적인 중심지, 방콕 왕국 경내에 위치한 이곳에는 하나의 옥 덩어리를 정교하게 조각한 매우 존경받는 부처상인 프라깨오 모라꼿(에메랄드 불상)이 모셔져 있습니다. 에메랄드 불상(프라 푸타 마하 마니 랏타나 빠티마꼰)은 북쪽의 란나 양식으로 만들어진 명상하는 자세의 불상으로, 기원 후 15세기에 만들어졌습니다.[NEWLINE][NEWLINE]여러 개의 단 위에 높이 세워진 불상에는 왕을 제외하고는 누구도 접근할 수 없습니다. 여름, 겨울, 우기에 맞춰 1년에 세 번씩 바뀌는 계절별 망토가 동상을 덮고 있습니다. 매우 중요한 의식인 옷 갈아입히기는 왕만이 계절마다 나라에 행운을 가져오기 위해 행하는 의식입니다.[NEWLINE][NEWLINE]이 사원의 건설은 1785년 푸타욧파 쭐랄록(라마 1세) 왕이 수도를 톤부리에서 방콕으로 옮긴 데서 시작되었습니다. 다른 사원과는 달리 이곳에는 승려들이 거주하는 공간이 없습니다. 대신 정교하게 장식된 성스러운 건물, 조각상, 탑만 있을 뿐입니다. 본관은 에메랄드 불상을 모신 중앙의 "우보솟"(성직서품식장)입니다.'),
 -- 불향각
 ('TXT_KEY_BUILDING_EE_SUMMER_PALACE', '여름 궁전'),
-('TXT_KEY_BUILDING_EE_SUMMER_PALACE_HELP', '[ICON_CAPITAL] 수도 근처에 당신이 선택한 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] [ICON_GREAT_PEOPLE] 위인을 제공합니다. 문명의 모든 동물원에 [ICON_TOURISM] 관광이 +2 증가합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산 비용과 [ICON_CITIZEN] 인구 요구 사항은 소유한 도시의 수에 따라 증가합니다.'),
+('TXT_KEY_BUILDING_EE_SUMMER_PALACE_HELP', '[ICON_CAPITAL] 수도 근처에 당신이 선택한 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] [ICON_GREAT_PEOPLE] 위인을 제공합니다. 문명의 모든 동물 전시관에 [ICON_TOURISM] 관광이 +2 증가합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산 비용과 [ICON_CITIZEN] 인구 요구 사항은 소유한 도시의 수에 따라 증가합니다.'),
 ('TXT_KEY_BUILDING_EE_SUMMER_PALACE_PEDIA', '중세 후기와 근대 초기에 단계적으로 건설된 이화원은 청나라 초기의 권력과 위력을 보여주는 거대하고 화려한 건물이었으며, 베이징에 있는 황제의 정거처와 맞먹는 곳이었습니다. 아름다운 조경, 무성한 정원, 멋진 전망으로 유명한 이화원은 근대 초기 중국의 권력을 상징하는 중요한 장소이자 인기 있는 관광지입니다.'),
 ('TXT_KEY_BUILDING_EE_SUMMER_PALACE_STRATEGY', '이 국가 불가사의의 주요 볼거리는 단순한 위인입니다. 또한 모든 동물원에 관광을 제공하여 계몽 시대에 잠금 해제되는 다른 인구당 생산력 건물과 동등한 수준으로 끌어올립니다.');
 
@@ -350,6 +360,7 @@ REPLACE INTO Language_ko_KR
 	(Tag, Text)
 VALUES
 	('TXT_KEY_BUILDING_SUMMER_PALACE', '불향각'),
+	('TXT_KEY_BUILDING_SUMMER_PALACE_HELP', '[ICON_RES_PAPER] 종이 +1을 받습니다. 모든 도시에서 외교 유닛 [ICON_PRODUCTION] 생산이 +20% 증가합니다. 모든 외교 유닛은 [COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_NOBILITY}[ENDCOLOR] 승급을 받습니다. 모든 사무국은 [ICON_GOLD] 골드 +3, [ICON_CULTURE] 문화 +1을 얻습니다.[NEWLINE][NEWLINE]문명에 [COLOR_POSITIVE_TEXT]여름 궁전[ENDCOLOR]이 건설되어 있어야 합니다.'),
 	('TXT_KEY_CIV5_BUILDINGS_SUMMER_PALACE_TEXT', '여름 궁전의 만수산 정면 언덕 중앙에 위치한 이 탑은 원래 황학루와 비슷하게 지어진 9층 불교 탑이 될 예정이었습니다. 건륭제는 8층이 완공된 직후 공사를 중단하라고 명령했습니다. 매월 음력 1일과 15일, 서태후는 탑을 방문하여 분향하고 기도를 드렸습니다. [NEWLINE][NEWLINE]이화원은 1749년 청나라 건륭제의 명령으로 베이징에 건설된 정원, 호수, 건물로 이루어진 복합 단지입니다. 궁전과 주변 농경지에는 상수도와 관개 시설이 필요했기 때문에 이 프로젝트를 위해서는 해당 지역에 인공 호수를 조성해야 했습니다. 궁전의 디자인은 중국의 신화, 전설, 자연과 인간이 만든 경이로움의 다양한 측면을 바탕으로 만들어졌습니다. 이 궁전은 청나라와 함께 쇠퇴하였고, 제2차 아편전쟁 중에는 영국과 프랑스에 의해 피해를 입었습니다. 청나라가 멸망한 후, 이 궁궐은 이제 권력을 잃은 옛 황실의 소유가 되었습니다. 마지막 황제 푸이가 축출된 후 1924년에 대중에게 공개되었습니다. 1953년 이래 중화인민공화국 정부는 궁전을 개조했고, 현재는 세계문화유산으로 지정되었습니다.');
 
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
@@ -359,7 +370,7 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_WONDER_EE_DERWENT_MILLS_PEDIA', '더웬트 밸리 방직소는 영국 더비셔주의 더웬트 강을 따라 위치한 세계문화유산입니다. 현대적인 공장, 혹은 "공장" 시스템은 18세기에 리처드 아크라이트가 개발한 새로운 면방적 기술을 수용하기 위해 이곳에서 탄생했습니다. 기술의 발전으로 면화를 지속적으로 생산하는 것이 가능해졌습니다.이 시스템은 계곡 전체에 걸쳐 채택되었고, 나중에 퍼져서 1788년에는 영국에 아크라이트 유형의 공장이 200개가 넘었습니다. 아크라이트의 발명품과 노동 조직 시스템은 유럽과 미국으로 수출되었습니다.[NEWLINE][NEWLINE]수력 발전은 1719년 존 롬베가 더비에 있는 자신의 제사소에서 처음으로 영국에 도입했지만, 1770년대에 면화 생산 과정에 수력을 적용한 사람은 리처드 아크라이트였습니다. 그가 특허를 받은 수력 방적기 덕분에 면화를 계속해서 뽑을 수 있었고, 이는 비숙련 노동자라도 면화를 생산할 수 있다는 것을 의미합니다. 크롬포드 공장은 아크라이트의 첫 번째 공장이 있던 곳이며, 근처의 크롬포드 마을은 당시 새로 온 노동자들을 위해 상당히 확장되었습니다. 이러한 생산 시스템과 노동자 주택은 계곡 전체에 걸쳐 모방되었습니다. 노동력을 확보하기 위해서는 공장 노동자들을 위한 주택을 건설해야 했습니다. 따라서 공장 주인들은 공장 주변에 새로운 정착지를 건설했으며, 때로는 학교, 예배당, 시장과 같은 편의 시설을 갖춘 기존 지역 사회를 개발하기도 했습니다. 대부분의 주택은 여전히 존재하며 사용되고 있습니다. 공장에서 생산된 공산품을 판매할 새로운 시장을 개척하기 위해 운송 인프라가 건설되었습니다.'),
 --벨렝 탑
 ('TXT_KEY_BUILDING_EE_BELEM_TOWER', '벨렝 탑'),
-('TXT_KEY_WONDER_EE_BELEM_TOWER_HELP', '[COLOR_POSITIVE_TEXT]무료[ENDCOLOR] [ICON_GREAT_ADMIRAL] 위대한 제독과 두 명의 모험가가 도시 근처에 나타납니다. 이 도시에서 훈련된 지상 유닛은 승선 시 [ICON_STRENGTH] 방어력이 +20% 증가하고 [ICON_VP_VISION] 시야가 +1 증가합니다.[NEWLINE][NEWLINE]도시는 해안에 건설되어야 합니다.'),
+('TXT_KEY_WONDER_EE_BELEM_TOWER_HELP', '도시에 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 태번을 받고, 도시 근처에 무료 모험가 두 명이 나타납니다. 이 도시에서 생성된 지상 유닛(과거 또는 미래)은 승선 시 [ICON_MOVES] 이동력이 +1, [ICON_VP_VISION] 시야가 +2 증가합니다.[NEWLINE][NEWLINE]도시는 해안에 건설되어야 합니다.'),
 ('TXT_KEY_WONDER_EE_BELEM_TOWER_QUOTE', '[NEWLINE]"그리고 바다는 각자에게 새로운 희망을 줄 것이다... 그의 잠은 고향에 대한 꿈을 가져다 줄 것이다."[NEWLINE] - 크리스토퍼 콜럼버스[NEWLINE]'),
 ('TXT_KEY_WONDER_EE_BELEM_TOWER_PEDIA', '벨렝 탑은 리스본 시 바로 외곽, 타구스강 어귀에 자리잡고 있습니다. 탑에 대한 아이디어는 주앙 2세로부터 나왔지만, 그는 계획이나 건축이 시작되기 전에 죽었습니다. 대신 그의 후계자인 마누엘 1세가 탑을 설계하고 건설했습니다. 특이한 점은 리스본의 취약한 해안을 방어하기 위한 방어 시설로 의도된 일종의 해상 요새로 작은 섬에 건설되었다는 것입니다. 그러나 이 탑은 원래 내륙에 지어졌지만 리스본 대지진으로 인해 바다로 옮겨졌다는 믿음이 널리 퍼져 있습니다. 이 건물은 1519년에 완공되었고, 그 후 몇 년 동안 잠재적인 공격에 더 효과적으로 대처할 수 있도록 개선되고 강화되었습니다. 그러나 벨렝 탑은 아마도 포르투갈 르네상스에서의 역할, 혹은 더 구체적으로는 신대륙 식민화의 상징으로 가장 잘 알려져 있을 것입니다. 포르투갈의 조선 중심지 바로 외곽에 위치한 섬 요새인 벨렝 탑은 처녀 항해를 떠나는 배들이 보는 마지막 광경이었을 것입니다. 후년에 이 탑은 선박이 세금을 내야 하는 세관의 역할도 맡았으며, 리스본의 주요 항해 감시초소 역할도 맡았습니다.수년에 걸쳐 해안 수비대로서의 역량 덕분에 군사 수비대 역할도 수행했습니다. 오늘날 벨렝 탑은 오랜 역사를 지녔을 뿐만 아니라 포르투갈 후기 고딕 양식의 건물 형태인 마누엘 양식의 가장 뛰어난 건축물 중 하나로 여겨지기 때문에 인기 있는 관광지입니다.');
 
@@ -375,13 +386,13 @@ WHERE Tag = 'TXT_KEY_WONDER_SISTINE_CHAPEL_HELP';
 INSERT INTO Language_ko_KR (Tag, Text) VALUES
 -- 아카데미
 ('TXT_KEY_BUILDING_EE_ACADEMY', '폴리테크닉'),
-('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 기술을 잠금 해제하면 [ICON_RESEARCH] 과학 +20과 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR].가 있어서는 안 됩니다.'),
-('TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY', '폴리테크닉은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 계몽 시대의 건물입니다. 응접실이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 과학 중 하나를 전문으로 삼아야 합니다.'),
+('TXT_KEY_BUILDING_EE_ACADEMY_HELP', '도시 [ICON_CITIZEN] 시민 6명당 [ICON_RESEARCH] 과학 +1이 증가합니다. 이 도시에서 [ICON_GOLD] 골드 구매 비용이 10% 감소합니다. 이 도시에서 [ICON_CITIZEN] 시민이 태어나면 [ICON_RESEARCH] 과학 +15와 [ICON_GREAT_GENERAL] 위대한 장군 점수 10점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]도시에서 [ICON_GREAT_SCIENTIST] 위대한 과학자, [ICON_GREAT_ENGINEER] 위대한 기술자, [ICON_GREAT_MERCHANT] 위대한 상인, [ICON_DIPLOMAT] 위대한 외교관의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]신학교[ENDCOLOR]가 있어서는 안 됩니다.'),
+('TXT_KEY_BUILDING_EE_ACADEMY_STRATEGY', '폴리테크닉은 도시의 [ICON_RESEARCH] 과학 생산량을 늘리는 르네상스 시대의 건물입니다. 신학교가 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_ACADEMY_PEDIA', '폴리테크닉 또는 그랑에콜은 프랑스와 함께 모로코, 튀니지 등의 다른 나라에도 있는 최고 수준의 전문 교육 기관으로, 아이비 리그나 옥스브리지 같은 다른 엘리트 기관과 비교할 수 있습니다. 최초의 폴리테크닉은 1794년 프랑스 혁명 당시 공학자와 군 장교 부족 문제를 해결하기 위해 수학자 가스파르 몽주에 의해 설립되었고, 1804년 나폴레옹 1세에 의해 군사화되었습니다. 프랑스 국방부의 감독을 받고 있습니다. 대학과는 별개로 운영되기 때문에 대부분 프랑스의 학사(Licence) 학위를 제공하지 않고, 공학계 준박사 학위(écoles d’ingénieurs)와 같은 그랑제콜 석사 학위를 제공합니다.'),
 -- 신학교
 ('TXT_KEY_BUILDING_EE_SEMINARY', '신학교'),
-('TXT_KEY_BUILDING_EE_SEMINARY_HELP', '도시에 거주하는 [ICON_CITIZEN] 시민 6명당 [ICON_PEACE] 신앙이 +1 증가합니다. 이 도시에서 구매한 모든 [ICON_PEACE] 신앙 금액의 10%를 환불받습니다. 기술을 잠금 해제하면 [ICON_PEACE] 신앙 10개와 [ICON_GOLDEN_AGE] 황금기 점수 20점을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]모든 [ICON_MISSIONARY] 선교사의 초기 종교적 힘이 5% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]폴리테크닉[ENDCOLOR]이 있어서는 안 됩니다.'),
-('TXT_KEY_BUILDING_EE_SEMINARY_STRATEGY', '예수님을 사랑하세요. 예수님을 사랑하세요.'),
+('TXT_KEY_BUILDING_EE_SEMINARY_HELP', '도시에 거주하는 [ICON_CITIZEN] 시민 6명당 [ICON_PEACE] 신앙이 +1 증가합니다. 이 도시에서 구매한 모든 [ICON_PEACE] 신앙 금액의 10%를 환불받습니다. 이 도시에서 [ICON_CITIZEN] 시민이 태어나면 [ICON_PEACE] 신앙 10과 [ICON_GOLDEN_AGE] 황금기 점수 20을 받습니다. (시대에 따라 조정)[NEWLINE][NEWLINE]모든 [ICON_MISSIONARY] 선교사의 초기 종교적 힘이 5% 증가합니다.[NEWLINE][NEWLINE]도시에는 [COLOR_NEGATIVE_TEXT]폴리테크닉[ENDCOLOR]이 있어서는 안 됩니다.'),
+('TXT_KEY_BUILDING_EE_SEMINARY_STRATEGY', '신학교는 게임에서 해제되는 마지막 종교 건물 중 하나입니다. 폴리테크닉이 있는 도시에는 건설할 수 없으므로, 도시는 문화나 신앙 중 하나를 전문으로 삼아야 합니다.'),
 ('TXT_KEY_BUILDING_EE_SEMINARY_PEDIA', '신학교(Seminary, School of theology), 신학대학(Seminary, Theological college), 또는 신학대학원(Divinity school)은 학생(때때로 신학생이라고 함)에게 성경과 신학을 교육하여 일반적으로 성직자, 학문 분야 또는 주로 기독교 사역을 위한 성직 안수를 준비시키는 교육 기관입니다. 근대에 신학교가 설립된 것은 트리엔트 공의회 이후 반종교개혁에 따른 로마 가톨릭 개혁의 결과입니다. 트리엔트 신학교는 영적 형성과 개인적 훈련에 큰 중점을 두었으며, 기초로서 철학을 공부하고, 궁극적으로 신학을 공부했습니다. 미국에서 가장 오래된 가톨릭 신학교는 1791년에 설립된 볼티모어의 세인트 메리 신학교 및 대학입니다. 유대교의 유사한 개념은 예시바와 미드라샤 시스템이며 이슬람에서는 종종 마드라사를 언급합니다. (이 용어는 훨씬 더 광범위합니다.)'),
 -- 방직소
 ('TXT_KEY_BUILDING_EE_CLOTH_MILL', '방직소'),
@@ -400,13 +411,13 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_GUNSMITH_PEDIA', '화기 제작자는 총기의 설계, 개조, 제조 및 수리에 전념하는 숙련된 장인입니다. 1790년대에 일라이 휘트니의 밀 리버 조병창이 생기기 전, 1800년대 중반에 새뮤얼 콜트가 하트퍼드(미국)와 런던(영국)에 있는 자신의 공장에서 권총을 대량 생산할 당시, 화기 제작소는 모든 "문명화된" 정착지에서 필수적인 시설이었습니다.'),
 -- 영주 저택
 ('TXT_KEY_BUILDING_EE_MANOR', '영주 저택'),
-('TXT_KEY_BUILDING_EE_MANOR_HELP', '국경이 확장되면 [ICON_GOLDEN_AGE] 황금기 점수가 20점 증가합니다. (시대에 따라 조정) 호수 타일에서 [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1이 증가합니다. 도시에서 일하는 마을에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1,  [ICON_CULTURE] 문화 +1.[NEWLINE][ICON_RES_JADE] 옥: [ICON_CULTURE] 문화 +1, [ICON_GOLDEN_AGE] 황금기 점수 +2[NEWLINE][ICON_RES_AMBER] 호박: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1[NEWLINE][ICON_RES_PEARLS] 진주: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1.[NEWLINE][ICON_RES_INCENSE] 향료: [ICON_PEACE] 신앙 +2'),
+('TXT_KEY_BUILDING_EE_MANOR_HELP', '국경이 확장되면 [ICON_FOOD] 식량이 +10 증가합니다. (시대에 따라 조정) 호수 타일에서 [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1이 증가합니다. 도시에서 일하는 마을에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.[NEWLINE][NEWLINE][ICON_RES_DEER] 사슴: [ICON_FOOD] 식량 +1,  [ICON_CULTURE] 문화 +1.[NEWLINE][ICON_RES_JADE] 옥: [ICON_CULTURE] 문화 +1, [ICON_GOLDEN_AGE] 황금기 점수 +2[NEWLINE][ICON_RES_AMBER] 호박: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1[NEWLINE][ICON_RES_PEARLS] 진주: [ICON_CULTURE] 문화 +1, [ICON_TOURISM] 관광 +2[NEWLINE][ICON_RES_LAPIS] 청금석: [ICON_CULTURE] 문화 +1, [ICON_PEACE] 신앙 +1, [ICON_GOLDEN_AGE] 황금기 점수 +1.[NEWLINE][ICON_RES_INCENSE] 향료: [ICON_PEACE] 신앙 +2'),
 ('TXT_KEY_BUILDING_EE_MANOR_STRATEGY', '영주 저택은 도시 반경 내에 존재하는 사치 자원을 기반으로 문화와 신앙과 같은 수익성 있는 산출물을 제공하므로, 나열된 사치 자원이 근처에 있다면 바람직합니다. 또한 게임 계획에 맞는 황금기 점수를 생성하는 여러 가지 방법을 제공하지만, 다른 건물을 위해 포기할 수도 있습니다.'),
 ('TXT_KEY_BUILDING_EE_MANOR_PEDIA', '중세 시대에 영주 저택은 영주(또는 주택 관리인)의 거주지였으며, 봉건 영지의 행정 중심지였습니다. 중세 저택은 일반적으로 해당 국가나 지역의 평화로운 정착 정도에 비례하여 요새화되었습니다. 이곳은 세속적인 마을 생활의 중심지 역할을 했으며, 그레이트 홀은 장원 재판소와 소작농 집회의 장소였습니다. 경제가 번영하고 더 넓은 주거 공간에 대한 수요가 증가하면서 16세기 영주 저택은 르네상스풍 시골 주택으로 변화했습니다. 영국에서는 더욱 정교한 건물이 건설되었으며, 이는 새로운 시대의 형식을 반영합니다. 주택은 대개 규칙적인 사각형 평면을 이루었고, 홀의 크기와 중요성은 상대적으로 작았습니다. 후년에 영국에서 영주 저택이라는 명칭은 영지적 기반이 없는 대규모 시골 저택을 지칭하게 되면서 특별한 의미를 잃었습니다.'),
 -- 카페 (구 살롱)
 ('TXT_KEY_BUILDING_EE_SALON', '카페'),
 ('TXT_KEY_BUILDING_EE_SALON_HELP', '도시에 거주하는 [ICON_CITIZEN] 시민 6명당 [ICON_FOOD] 식량이 1 증가합니다. 도시에서 [ICON_GREAT_WRITER] 위대한 작가, [ICON_GREAT_ARTIST] 위대한 예술가, [ICON_GREAT_MUSICIAN] 위대한 음악가의 비율이 +20% 증가합니다.[NEWLINE][NEWLINE][ICON_RES_SPICES] 향신료: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_CITRUS] 감귤: [ICON_FOOD] 식량 +2, [ICON_RESEARCH] 과학 +1[NEWLINE] [ICON_RES_COCOA] 코코아: [ICON_GOLD] 골드 +2,  [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_COFFEE] 커피: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_TEA] 차: [ICON_FOOD] 식량 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_SUGAR] 설탕: [ICON_FOOD] 식량 +2, [ICON_GOLD] 골드 +2[NEWLINE][NEWLINE]이 도시의 전문가 1명이 더 이상 [ICON_URBANIZATION] 도시화로 인한 [ICON_HAPPINESS_3] 불행을 생성하지 않습니다.'),
-('TXT_KEY_BUILDING_EE_SALON_PEDIA', '최초의 커피하우스는 15세기에 아라비아 반도의 다마스쿠스에 나타났고, 그 후 16세기에 오스만 제국의 수도 이스탄불로 퍼졌고, 이후 바그다드에도 진출했습니다. 커피하우스는 사람들이 모여 커피를 마시고, 대화를 나누고, 체스나 백개먼과 같은 보드 게임을 하고, 이야기와 음악을 듣고, 뉴스와 정치를 논의하는 인기 있는 만남의 장소가 되었습니다. 그들은 그들이 끌어들인 고객 유형과 자유롭고 솔직한 담론으로 인해 "지혜의 학교"로 알려지게 되었습니다.[NEWLINE][NEWLINE]최초의 비엔나 커피하우스는 실제로 요하네스 디오다토라는 아르메니아 상인이 열었습니다. 그는 1685년에 빈에 정식으로 커피하우스를 열었습니다. 시간이 지나면서 합스부르크 왕가의 빈에는 작가, 예술가, 음악가, 지식인, 취미가와 금융가들이 커피숍에서 만나는 특별한 커피하우스 문화가 발전했습니다. 사람들은 카드나 체스를 두었고, 일하고, 책을 읽고, 생각하고, 작곡하고, 토론하고, 논쟁하고, 관찰하고, 그저 이야기를 나누었습니다. 커피하우스에서는 모든 투숙객에게 국내외 신문을 무료로 제공했기 때문에 많은 정보를 얻을 수 있었습니다. 이런 형태의 커피하우스 문화는 19세기에 합스부르크 제국 전역으로 퍼졌습니다.'),
+('TXT_KEY_BUILDING_EE_SALON_PEDIA', '최초의 카페는 15세기에 아라비아 반도의 다마스쿠스에 나타났고, 그 후 16세기에 오스만 제국의 수도 이스탄불로 퍼졌고, 이후 바그다드에도 진출했습니다. 카페는 사람들이 모여 커피를 마시고, 대화를 나누고, 체스나 백개먼과 같은 보드 게임을 하고, 이야기와 음악을 듣고, 뉴스와 정치를 논의하는 인기 있는 만남의 장소가 되었습니다. 그들은 그들이 끌어들인 고객 유형과 자유롭고 솔직한 담론으로 인해 "지혜의 학교"로 알려지게 되었습니다.[NEWLINE][NEWLINE]최초의 비엔나 카페는 실제로 요하네스 디오다토라는 아르메니아 상인이 열었습니다. 그는 1685년에 빈에 정식으로 카페를 열었습니다. 시간이 지나면서 합스부르크 왕가의 빈에는 작가, 예술가, 음악가, 지식인, 취미가와 금융가들이 커피숍에서 만나는 특별한 카페 문화가 발전했습니다. 사람들은 카드나 체스를 두었고, 일하고, 책을 읽고, 생각하고, 작곡하고, 토론하고, 논쟁하고, 관찰하고, 그저 이야기를 나누었습니다. 카페에서는 모든 투숙객에게 국내외 신문을 무료로 제공했기 때문에 많은 정보를 얻을 수 있었습니다. 이런 형태의 카페 문화는 19세기에 합스부르크 제국 전역으로 퍼졌습니다.'),
 ('TXT_KEY_BUILDING_EE_SALON_STRATEGY', '카페는 해당 지역의 사치품에 따라 많은 산출물에 소액의 보너스를 제공하는데, 사치품의 풍부함에 따라 이 건물을 건설하는 데 얼마나 높은 우선순위를 두어야 할지가 결정됩니다. 카페는 또한 문화적 위인을 얻는 속도를 높여주고, 필요한 전문가 슬롯을 채우는 데 도움이 되는 무료 식량을 제공합니다.'),
 -- 태번
 ('TXT_KEY_BUILDING_EE_TAVERN', '태번'),
@@ -418,11 +429,11 @@ INSERT INTO Language_ko_KR (Tag, Text) VALUES
 ('TXT_KEY_BUILDING_EE_WEIGH_HOUSE_HELP', '도시에 거주하는 시민 6명당 [ICON_GOLD] 골드가 +1 증가합니다. 유입되는 [ICON_ARROW_LEFT] 교역로에서 도시는 [ICON_GOLD] 골드 +2를 생성하고, [ICON_ARROW_RIGHT] 교역로 소유자는 [ICON_GOLD] 골드 +1를 생성합니다.[NEWLINE][NEWLINE] [ICON_RES_GOLD] 금: [ICON_GOLD] 골드 +2, [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_SILVER] 은: [ICON_GOLD] 골드 +2 , [ICON_RESEARCH] 과학 +1[NEWLINE][ICON_RES_COPPER] 구리: [ICON_PRODUCTION] 생산력 +2, [ICON_GOLD] 골드 +2[NEWLINE][ICON_RES_GEMS] 보석: [ICON_GOLD] 골드 +3[NEWLINE][ICON_RES_SALT] 소금: [ICON_FOOD] 식량 +1, [ICON_GOLD] 골드 +1, [ICON_RESEARCH] 과학 +1'),
 ('TXT_KEY_BUILDING_EE_WEIGH_HOUSE_STRATEGY', '화물 계량소는 [ICON_GOLD] 골드 생산량을 늘려주며, 특정 사치 자원이 근처에 있거나 도시가 국제 교역로에 관여하는 경우 생산량이 늘어납니다.'),
 ('TXT_KEY_BUILDING_EE_WEIGH_HOUSE_PEDIA', '화물 계량소는 도시 내 무역에 세금을 안정적으로 부과하고 무역 상품의 양과 품질에 대한 분쟁을 정확하게 해결하기 위해 상품의 무게를 측정하는 건물입니다. 이런 건물은 도시, 상인 길드가 관리하거나, 드물지만 외국 상인이 도시 내에서 특별한 특권을 부여받기도 했습니다. 국제 표준 측정법이 보급되기 전에는 일반적인 화물 계량소를 도시의 시장이나 중심지 근처, 혹은 시청, 길드 집회소, 법원 청사 안에서 찾을 수 있었습니다.'),
--- 동물원
-('TXT_KEY_BUILDING_EE_MENAGERIE', '동물원'),
+-- 동물 전시관
+('TXT_KEY_BUILDING_EE_MENAGERIE', '동물 전시관'),
 ('TXT_KEY_BUILDING_EE_MENAGERIE_HELP', '도시에 거주하는  [ICON_CITIZEN] 시민 6명당 [ICON_TOURISM] 관광 +1을 증가합니다. 완성되면 [ICON_TOURISM] 관광 +250을 받습니다.[NEWLINE][NEWLINE][ICON_RES_HORSE] 말: [ICON_PRODUCTION] 생산력 +1 [ICON_CULTURE] 문화 +1[NEWLINE][ICON_RES_BANANA] 바나나: [ICON_GOLD] 골드 +2, [ICON_TOURISM] 관광 +1[NEWLINE][ICON_RES_IVORY] 상아: [ICON_PRODUCTION] 생산력+2, [ICON_TOURISM] 관광+2[NEWLINE][ICON_RES_WHALE] 고래:[ICON_RESEARCH] 과학 +2 [NEWLINE][ICON_RES_CORAL] 산호: [ICON_RESEARCH] 과학+1, [ICON_CULTURE] 문화 +1[NEWLINE][NEWLINE][ICON_CULTURE]무료로 인한 [ICON_HAPPINESS_3] 불행 -1'),
-('TXT_KEY_BUILDING_EE_MENAGERIE_STRATEGY', '동물원은 근처 자원에 따라 과학, 문화, 관광 등의 수확을 높여줍니다. 자원이 풍부한지에 따라 이 건물을 건설하는 것이 얼마나 시급한지가 결정됩니다. 모든 관광에 보너스가 있으며, 원자재 생산물과 교역로 완성으로 얻는 산출량도 보너스입니다.'),
-('TXT_KEY_BUILDING_EE_MENAGERIE_PEDIA', '동물원은 전시를 위해 키우는 이국적인 동물을 모아 놓은 곳이거나, 이런 동물을 모아 두는 장소로, 현대 동물원이나 동물원 정원의 전신입니다. 이 용어는 17세기 프랑스에서 처음 사용되었으며, 가정이나 가축의 관리를 지칭하는 용어였습니다. 이국적인 동물들이 아프리카와 동양으로 항해할 때 포획되어 유럽으로 돌아와 상류 계층을 자극하는 신분 상징으로 판매되었습니다. 사자, 원숭이, 앵무새, 코끼리, 호랑이, 곰은 모두 얻기 어렵고 살아 있는 상태로 키우는 데 비용이 많이 들었으며, 종종 이해되지 않거나 쉽게 구할 수 없는 매우 특별한 식단이 필요했습니다. 중세 시대에도 유럽 전역의 여러 군주들은 왕실 내에 동물원을 운영했습니다. 중세 영국에서 가장 유명한 동물 컬렉션은 1204년 초에 시작된 런던의 타워 동물원이었습니다. 이곳은 1199년부터 1216년까지 영국을 통치했던 왕 존에 의해 세워졌으며, 사자와 곰을 키웠던 것으로 알려져 있습니다.');
+('TXT_KEY_BUILDING_EE_MENAGERIE_STRATEGY', '동물 전시관은 근처 자원에 따라 과학, 문화, 관광 등의 수확을 높여줍니다. 자원이 풍부한지에 따라 이 건물을 건설하는 것이 얼마나 시급한지가 결정됩니다. 모든 관광에 보너스가 있으며, 원자재 생산물과 교역로 완성으로 얻는 산출량도 보너스입니다.'),
+('TXT_KEY_BUILDING_EE_MENAGERIE_PEDIA', '동물 전시관은 전시를 위해 키우는 이국적인 동물을 모아 놓은 곳이거나, 이런 동물을 모아 두는 장소로, 현대 동물원이나 동물학 정원의 전신입니다. 이 용어는 17세기 프랑스에서 처음 사용되었으며, 가정이나 가축의 관리를 지칭하는 용어였습니다. 이국적인 동물들이 아프리카와 동양으로 항해할 때 포획되어 유럽으로 돌아와 상류 계층을 자극하는 신분 상징으로 판매되었습니다. 사자, 원숭이, 앵무새, 코끼리, 호랑이, 곰은 모두 얻기 어렵고 살아 있는 상태로 키우는 데 비용이 많이 들었으며, 종종 이해되지 않거나 쉽게 구할 수 없는 매우 특별한 식단이 필요했습니다. 중세 시대에도 유럽 전역의 여러 군주들은 왕실 내에 동물 전시관을 운영했습니다. 중세 영국에서 가장 유명한 동물 컬렉션은 1204년 초에 시작된 런던의 타워 동물원이었습니다. 이곳은 1199년부터 1216년까지 영국을 통치했던 왕 존에 의해 세워졌으며, 사자와 곰을 키웠던 것으로 알려져 있습니다.');
 
 UPDATE Language_ko_KR
 SET Text = '오페라 극장은 도시의 [ICON_CULTURE] 문화를 증진시키는 계몽 시대의 건물입니다. 또한 도시의 위대한 음악가 비율과 음악가 길드의 가치도 높여줍니다. 걸작 음악을 위한 슬롯 1개가 포함되어 있습니다. 건설하려면 도시에 원형 극장이 필요합니다.'
@@ -433,7 +444,7 @@ SET Text = Replace(Text, '도시에서 [ICON_CULTURE] 문화가 5% 증가합니�
 WHERE Tag = 'TXT_KEY_BUILDING_OPERA_HOUSE_HELP';
 
 UPDATE Language_ko_KR
-SET Text = Replace(Text, '도시 내  [ICON_GREAT_ARTIST] 위대한 예술가 비율이 +33% 증가합니다.', '도시 내  [ICON_GREAT_ARTIST] 위대한 예술가 비율이 +33% 증가합니다. 도시 내의 저택, 동물원, 카페에서 [ICON_CULTURE] 문화와 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.')
+SET Text = Replace(Text, '도시 내  [ICON_GREAT_ARTIST] 위대한 예술가 비율이 +33% 증가합니다.', '도시 내  [ICON_GREAT_ARTIST] 위대한 예술가 비율이 +33% 증가합니다. 도시 내의 저택, 동물 전시관, 카페에서 [ICON_CULTURE] 문화와 [ICON_GOLDEN_AGE] 황금기 점수가 +1 증가합니다.')
 WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_GALLERY');
 
 UPDATE Language_ko_KR
@@ -453,11 +464,11 @@ SET Text = '이 도시에서 [ICON_CITIZEN] 시민이 태어날 때마다 [ICON_
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 
 UPDATE Language_ko_KR
-SET Text = '약제상은 르네상스 시대 건물로, 도시에 수로를 건설한 경우에만 건설할 수 있습니다. 송수로와 마찬가지로 약제상은 도시가 더 빨리 성장하고 빈곤에 맞서는 데 도움이 됩니다. 또한 이 건물은 신앙의 산출량을 증가시키며, (폴리테크닉에만 있는) 신학교를 제외하면 신앙의 산출량을 증가시키는 마지막 건물입니다.'
+SET Text = '약국은 르네상스 시대 건물로, 도시에 수로를 건설한 경우에만 건설할 수 있습니다. 송수로와 마찬가지로 약국은 도시가 더 빨리 성장하고 빈곤에 맞서는 데 도움이 됩니다. 또한 이 건물은 신앙의 산출량을 증가시키며, (폴리테크닉에만 있는) 신학교를 제외하면 신앙의 산출량을 증가시키는 마지막 건물입니다.'
 WHERE Tag = 'TXT_KEY_BUILDING_GROCER_STRATEGY';
 
 UPDATE Language_ko_KR
-SET Text = '약제상 또는 약국은 약, 연고, 약초 치료제, 상처 드레싱 등 의약품을 판매하는 일종의 상점입니다. 상점에는 약품의 사용법에 대한 조언은 물론, 가정요법에 대한 조언도 제공할 수 있는 전문가들이 있었습니다. 중세와 르네상스 시대 유럽의 약국은 종종 가족 사업이었거나 수녀들이 지역 수도원에서 운영했기 때문에 약국의 상당 부분을 여성이 운영했습니다.[NEWLINE][NEWLINE]약사의 일에는 많은 지식과 전문적인 교육이 필요하며, 이는 이 직업에 지위와 존경을 가져다주었습니다. 약사와 약제사의 역할은 현대 화학과 약리학의 선구자 역할을 했습니다.'
+SET Text = '약국은 약, 연고, 약초 치료제, 상처 드레싱 등 의약품을 판매하는 일종의 상점입니다. 상점에는 약품의 사용법에 대한 조언은 물론, 가정요법에 대한 조언도 제공할 수 있는 전문가들이 있었습니다. 중세와 르네상스 시대 유럽의 약국은 종종 가족 사업이었거나 수녀들이 지역 수도원에서 운영했기 때문에 약국의 상당 부분을 여성이 운영했습니다.[NEWLINE][NEWLINE]약사의 일에는 많은 지식과 전문적인 교육이 필요하며, 이는 이 직업에 지위와 존경을 가져다주었습니다. 약사와 약제사의 역할은 현대 화학과 약리학의 선구자 역할을 했습니다.'
 WHERE Tag = 'TXT_KEY_CIV5_BUILDINGS_GROCER_TEXT';
 
 ----------------------------------------------------
@@ -470,11 +481,3 @@ WHERE Tag = 'TXT_KEY_BUILDING_FORTRESS_STRATEGY';
 UPDATE Language_ko_KR
 SET Text = REPLACE(Text, '르네상스 시대', '계몽 시대')
 WHERE Tag = 'TXT_KEY_BUILDING_WINDMILL_STRATEGY';
-
-UPDATE Language_ko_KR
-SET Text = REPLACE(Text, '근처 정글과 숲 타일은 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광이 +1 증가합니다.', '')
-WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_HELP';
-
-UPDATE Language_ko_KR
-SET Text = REPLACE(Text, '추가 문화를 생산하고 근처 정글 및 숲 타일의 문화 가치를 높입니다.', '그리고 추가적인 문화를 생산합니다.')
-WHERE Tag = 'TXT_KEY_BUILDING_THEATRE_STRATEGY';

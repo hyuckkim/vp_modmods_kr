@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ - UI/WonderRace.xml
+ - Author: Cynther
+ - Based on work by: hambil
+ - Created by ModBuddy on 4/10/2013 6:53:13 AM
+-->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_WR_WINNING">
+			<Text>You are winning a wonder race!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_WINNING_TOOLTIP">
+			<Text>You are beating {1_player} to {2_wonder}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_LOSING">
+			<Text>You are losing a wonder race!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_LOSING_TOOLTIP">
+			<Text>{1_player} is beating you to {2_wonder}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_BUTTON_CLOSE">
+			<Text>Close</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_CAPTION_OPTIONS">
+			<Text>Wonder Race Options</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_CAPTION_DIALOG">
+			<Text>Wonder Race Notification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_LOADING_ERROR">
+			<Text>An [COLOR_RED]ERROR[ENDCOLOR] occurred while loading the Wonder Race mod</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYTURNDIFFERENCE">
+			<Text>Notify Build Time Difference</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYTURNDIFFERENCE_TOOLTIP">
+			<Text>Turn [COLOR_GREEN]ON[ENDCOLOR] to have notifications inform you how many turns you are ahead or behind the leading competitor.[NEWLINE]Turn [COLOR_RED]OFF[ENDCOLOR] for notifications to simply tell you whether you are ahead or behind.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYCOMPETITORID">
+			<Text>Notify Competitor Identity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYCOMPETITORID_TOOLTIP">
+			<Text>Turn [COLOR_GREEN]ON[ENDCOLOR] for notifications to include the identity of the other player competing for a wonder (if that player has not been met, only the player number will be shown).[NEWLINE]Turn [COLOR_RED]OFF[ENDCOLOR] for competing players to be anonymous.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYONDETECTWONDER">
+			<Text>Notify On Wonder Detection</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_NOTIFYONDETECTWONDER_TOOLTIP">
+			<Text>Turn [COLOR_GREEN]ON[ENDCOLOR] to be notified about ANY wonder being constructed by other players.[NEWLINE]Turn [COLOR_RED]OFF[ENDCOLOR] to be notified only of wonders your are currently building.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_REPEATLOSINGNOTIFICATION">
+			<Text>Repeat Losing Notification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WR_OPTION_REPEATLOSINGNOTIFICATION_TOOLTIP">
+			<Text>Turn [COLOR_GREEN]ON[ENDCOLOR] to be reminded every turn when you are behind in a wonder race but continue building it.[NEWLINE]Turn [COLOR_RED]OFF[ENDCOLOR] to be notified only once per wonder.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

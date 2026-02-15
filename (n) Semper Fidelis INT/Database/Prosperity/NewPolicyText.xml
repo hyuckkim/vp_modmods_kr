@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_PROSPERITY">
+			<Text>Prosperity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_PROSPERITY_HELP">
+			<Text>Greed, for want of a better word, is good.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROSPERITY_TITLE">
+			<Text>{@1: gender feminine?Chief Executive; other?Chief Executive;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_PROSPERITY_HEADING3_TITLE">
+			<Text>[COLOR_POSITIVE_TEXT]Prosperity[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_PROSPERITY_HEADING3_BODY">
+			<Text>The Prosperity ideology is aimed at the wealthy Civilization that seeks to win through sheer economic dominance. [COLOR_YELLOW]This ideology unlocks upon entering the Atomic Era, or unlocking 18 Policies and having advanced at least to the Industrial Era, whichever comes first.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_PROSPERITY_ADV_QUEST">
+			<Text>What is Prosperity?</Text>
+		</Row>
+		<!-------------tier 1----------------------------->
+
+		<Row Tag="TXT_KEY_POLICY_CHAUTAUQUA">
+			<Text>Great Awakening</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHAUTAUQUA_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Great Awakening[ENDCOLOR]: Enter a [ICON_GOLDEN_AGE] Golden Age. Unlocks the [COLOR_CYAN]Chautauqua[ENDCOLOR] Building, and can purchase them with [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHAUTAUQUA_TEXT">
+			<Text>The Great Awakening was a series of religious revivals in American Christian history. Historians and theologians identify three, or sometimes four, waves of increased religious enthusiasm between the early 18th century and the late 20th century. Each of these "Great Awakenings" was characterized by widespread revivals led by evangelical Protestant ministers, a sharp increase of interest in religion, a profound sense of conviction and redemption on the part of those affected, an increase in evangelical church membership, and the formation of new religious movements and denominations.[NEWLINE][NEWLINE]Chautauqua is an adult education and social movement in the United States that peaked in popularity in the late 19th and early 20th centuries. Chautauqua assemblies expanded and spread throughout rural America until the mid-1920s. The Chautauqua brought entertainment and culture for the whole community, with speakers, teachers, musicians, showmen, preachers, and specialists of the day. U.S. President Theodore Roosevelt is often quoted as saying that Chautauqua is "the most American thing in America".</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HEROIC_INVENTION">
+			<Text>Heroic Invention</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HEROIC_INVENTION_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Heroic Invention[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_SCIENTIST] Great Scientist. Expending a [ICON_GREAT_ENGINEER] Great Engineer or a [ICON_GREAT_MERCHANT] Great Merchant grants 200 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HEROIC_INVENTION_TEXT">
+			<Text>The heroic theory of invention and scientific development is the view that the principal authors of inventions and scientific discoveries are unique heroic individuals—i.e., "great scientists" or "geniuses". It is the scientific version of the Great Man Theory, which is an approach to the study of history popularised in the 19th century according to which history can be largely explained by the impact of great men, or heroes. In contrast, the theory of multiple discovery would state that most inventions and scientific discoveries are made independently and simultaneously by multiple inventors and scientists. They are more a product of the contemporary available knowledge and not any unlikely insight.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CORPORATE_ESPIONAGE">
+			<Text>Industrial Espionage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CORPORATE_ESPIONAGE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Industrial Espionage[ENDCOLOR]: Receive 200 [ICON_VP_SPY_POINTS] Spy Points. The [ICON_CAPITAL] Capital gains +3% [ICON_RESEARCH] Science for every 100 [ICON_VP_SPY_POINTS] Spy Points ever accumulated (up to 30%).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CORPORATE_ESPIONAGE_TEXT">
+			<Text>Father Francois Xavier d'Entrecolles, who visited Jingdezhen, China in 1712 and later used this visit to reveal the manufacturing methods of Chinese porcelain to Europe, is sometimes considered to have conducted an early case of industrial espionage. Generally, it is any case where methods like theft or bribery are used to aquire intellectual property, such as information on industrial manufacture, or operational information, such sales data, prospective bids, or marketing strategies. As well as orchestrating espionage on commercial organizations, governments can also be targets – for example, to determine the terms of a tender for a government contract. Former CIA Director James Woolsey acknowledged in 2000 that the United States steals economic secrets from foreign firms and their governments "with espionage, with communications, with reconnaissance satellites".</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_INTELLECTUAL_PROPERTY">
+			<Text>Intellectual Property</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTELLECTUAL_PROPERTY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Intellectual Property[ENDCOLOR]: Gain 200 [ICON_GOLD] Gold when you discover a [COLOR_CYAN]Technology[ENDCOLOR], scaling with Era. +5 [ICON_GOLD] Gold from [ICON_GREAT_WORK] Great Works. +20 [ICON_SPY] City Security from Research Labs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTELLECTUAL_PROPERTY_TEXT">
+			<Text>Intellectual property is a category of property that includes intangible creations of the human intellect. There are many types of intellectual property, and some countries recognize more than others. The best-known types are patents, copyrights, trademarks, and trade secrets. The term "intellectual property" began to be used in the 19th century, though it was not until the late 20th century that intellectual property became commonplace in most of the world's legal systems.[NEWLINE][NEWLINE]The theory underpinning the concept is rather curious. The intangible nature of intellectual property presents difficulties when compared with traditional property like land or goods. Unlike traditional property, intellectual property is "indivisible", since an unlimited number of people can in theory "consume" an intellectual good without its being depleted. Ownership is also hard to define because while landowners can surround their land with a robust fence and hire armed guards to protect it, producers of information or literature can usually do little to stop their first buyer from replicating it and selling it at a lower price. Balancing rights so that they are strong enough to encourage the creation of intellectual goods but not so strong that they prevent the goods' wide use is the primary focus of modern intellectual property law.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_LAISSEZ_FAIRE">
+			<Text>Laissez-Faire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LAISSEZ_FAIRE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Laissez-Faire[ENDCOLOR]: The [ICON_CAPITAL] Capital generates +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the Empire. When you [COLOR_POSITIVE_TEXT]Liberate[ENDCOLOR] a City it gains a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Caravansary, Customs House, Bank, Hotel, and Airport.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LAISSEZ_FAIRE_TEXT">
+			<Text>Laissez-faire is a type of economic system in which transactions between private groups of people are free from any form of economic interventionism (such as subsidies or regulations) and so can be seen as purely competitive (and therefore just). The doctrine of laissez-faire became an integral part of 19th-century European liberalism. Just as liberals supported freedom of thought in the intellectual sphere, so were they equally prepared to champion the principles of free markets.[NEWLINE][NEWLINE#However, doctrines of Self-Determination like those pursued by Wilson after the First World War, while seen on the one hand as moral principles, were simultaneously economic doctrines aimed to increase the influence of the United States at the expense of the european imperial powers. Free trade between unequal partners, as pure competition, is not in both parties' best interests. This international flavor of laissez-faire policy is therefore difficult to separate from (neo)colonialism.[NEWLINE][NEWLINE]Although no government can be said to have established a true laissez-faire system (even during the Roaring Twenties, the United States collected an income tax and imposed trade tariffs) the ideal of unrestrained market capitalism has never left the discourse. As classical liberalism declined in popularity, due in part to the Great Depression, a new school of economics arose with the establishment of the Mont Pelerin Society in 1947, whose founding members included Friedrich Hayek, Milton Friedman, Karl Popper, George Stigler and Ludwig von Mises. Culminating with the elections of Margaret Thatcher and Ronald Reagan, this "neoliberal" school remains a dominant force in western political economy.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_COMPANY_TOWNS">
+			<Text>Company Towns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMPANY_TOWNS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Company Towns[ENDCOLOR]: Villages, Towns, Manufactories, Unique Improvements, and City Tiles generate +4 [ICON_GOLD] Gold. +2 [ICON_PRODUCTION] Production and [ICON_PEACE] Faith from [ICON_VP_MERCHANT] Merchants. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Customs House in all Cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMPANY_TOWNS_TEXT">
+			<Text>A company town is a place where all or most of the stores and housing in the town are owned by the same company that is also the main employer. Traditional settings for company towns were where extractive industries – coal, metal mines, lumber – had established a monopoly franchise. Dam sites and war-industry camps founded other company towns. One of the most significant and most substantial early company towns in the United States was Pullman, developed in the 1880s just outside the Chicago city limits. The entirely company-owned town provided housing, markets, a library, churches, and entertainment for the 6,000 company employees and an equal number of dependents.[NEWLINE][NEWLINE]The extreme control over both the economic and political landscape presented to workers appealed to powerful conservatives who desired - either for religious or political reasons - the gentrification of the working class. However workers were not so keen, and by the 1920s widespread ownership of automobiles meant workers no longer needed to live near their workplaces and now had access to more employment opportunities. The Roosevelt administration dealt the final blow to end American company towns by raising minimum wages, encouraging industrial self-governance, and pushing for the owners of company towns to "consider the question of plans for eventual employee ownership of homes".</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_TEMPERANCE">
+			<Text>Temperance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TEMPERANCE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Temperance[ENDCOLOR]: Generate +12 [ICON_FOOD] Food and +4 [ICON_PEACE] Faith in Cities following your [ICON_RELIGION] Majority Religion. Unlocks the [COLOR_CYAN]Speakeasy[ENDCOLOR] Building.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TEMPERANCE_TEXT">
+			<Text>Temperance is a social movement promoting partial or complete abstinence from consumption of alcoholic beverages. During the 19th and early 20th centuries, the temperance movement became prominent in many countries, particularly in English-speaking, Scandinavian, and majority Protestant ones, and it eventually led to national prohibitions in Canada (1918 to 1920), Norway (spirits only from 1919 to 1926), Finland (1919 to 1932), and the United States (1920 to 1933), as well as provincial prohibition in India (1948 to present). In most cases these failed due to widespread bootlegging, a failure of enforcement, and an ultimate lack of sufficient popular support.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_VENTURE_CAPITAL">
+			<Text>Venture Capital</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_VENTURE_CAPITAL_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Venture Capital[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Bank in every City, and increase the [ICON_RESEARCH] Science received from [ICON_INVEST] Investments and Purchases by +15%. +4 [ICON_GOLD] Gold from [ICON_VP_ENGINEER] Engineers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_VENTURE_CAPITAL_TEXT">
+			<Text>Venture capital is a form of private equity financing provided to startup, early-stage, and emerging companies, that have been deemed to have high growth potential. Start-ups are usually based on an innovative technology or business model and often come from high technology industries such as information technology or biotechnology. Venture capitalists take on the risk of financing start-ups in the hopes that some of the companies they support will become successful. In return they may ask for as much as an 80% stake, and often a controlling stake.  Because startups face high uncertainty, investments have high rates of failure. In the United States, venture capital investing reached $209.4 billion in 2022, the second-highest investment year in history.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PHARMA_MARKETING">
+			<Text>Pharmaceutical Marketing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PHARMA_MARKETING_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Pharmaceutical Marketing[ENDCOLOR]: Gain 25 [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born, scaling with Era. +4 [ICON_FOOD] Food from [ICON_VP_SCIENTIST] Scientists. +5% [ICON_GOLD] Gold and [ICON_RESEARCH] Science from Hospitals, Research Labs, and Medical Labs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PHARMA_MARKETING_TEXT">
+			<Text>Only two countries as of 2008 allow direct to consumer advertising of medicine: the United States and New Zealand. In these cases, copywriters either create a disease out of a non-pathologic physical condition or promote a particular medication. As a result patients will inquire about, or even demand a medication they have seen advertised on television. At the same time, pharmaceutical drugs are the only major health care service in which the producer is able to set prices with little constraint. Between 2000 and 2018, 35 of the largest drug companies in the United States received a combined revenue of $11.5 trillion with a gross profit of $8.6 trillion.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_FOREIGN_INVESTMENT">
+			<Text>Foreign Direct Investment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FOREIGN_INVESTMENT_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Foreign Direct Investment[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] copy of every [ICON_VP_FRANCHISE] Corporate Franchise in all Cities, and in all [COLOR_POSITIVE_TEXT]Liberated[ENDCOLOR] Cities. +1 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE_LOCAL] Border Growth Point from all [ICON_VP_FRANCHISE] Corporate Franchises. +8 [ICON_GOLD] Gold from all [ICON_VP_OFFICE] Corporate Offices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FOREIGN_INVESTMENT_TEXT">
+			<Text>A foreign direct investment (FDI) refers to purchase of an asset in another country, such that it gives direct control to the purchaser over the asset (e.g. purchase of land and building). It includes mergers and acquisitions, building new facilities, reinvesting profits earned from overseas operations, and intra company loans. Many countries prohibit foreign entities from obtaining direct control (a controlling stake) in national assets. From 1992 until at least 2023, the United States and China have been the top two destinations for FDI.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PROFESSIONAL_SPORT">
+			<Text>Professional Sport</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PROFESSIONAL_SPORT_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Professional Sport[ENDCOLOR]: +100% [ICON_PRODUCTION] Production towards Stadiums. Cities with Stadiums generate +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture. Every World Congress Session, gain 10 [ICON_GOLD] Gold and [ICON_CULTURE] Culture for every [ICON_DIPLOMAT] Delegate you control, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PROFESSIONAL_SPORT_TEXT">
+			<Text>Professionalism in sport has come to the fore through a combination of developments. Mass media and increased leisure have brought larger audiences, so that sports organizations or teams can command large incomes. As a result, more sportspeople can afford to make sport their primary career, devoting the training time necessary to modern levels of achievement. This proficiency has also helped boost the popularity of sports. However in many cases salaries go quite beyond a living wage. For instance, in 2024 the Los Angeles Dodgers baseball team is set to pay 70 million dollars to its highest-paid player, Shohei Ohtani.[NEWLINE][NEWLINE]Professional athleticism has been a traditional object of criticism by proponents of the amateur philosophy of sport, according to which the central ethos of sport is competition performed for its own sake and pure enjoyment rather than as a means of earning a living. Arguments against amateurism often appeal to the argument that amateurism in sport favors the classes who can afford not to be paid to play, and is thus a covert form of prejudice against lower classes.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_EXALTATION">
+			<Text>Exaltation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_EXALTATION_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Exaltation[ENDCOLOR]: Can purchase Missionaries with [ICON_GOLD] Gold, but the [ICON_PEACE] Faith cost is [COLOR_NEGATIVE_TEXT]increased[ENDCOLOR] by 25%. Unlocks the [COLOR_CYAN]House of the Lord[ENDCOLOR] National Wonder.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_EXALTATION_TEXT">
+			<Text>Exaltation is a belief in Mormonism that after death some people will reach the highest level of salvation in the celestial kingdom and eternally live in God's presence, continue as families, become gods, create worlds, and make spirit children over whom they will govern. To obtain this, Mormons must perform certain "saving ordninances". One of these (for worthy males 18 years and older) is receiving the Melchizedek priesthood. A rite of passage after receiving the priesthood is to embark on a two-year proselytizing mission, the practice for which the Mormon church is most well-known.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_TELEVANGELISM">
+			<Text>Televangelism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TELEVANGELISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Televangelism[ENDCOLOR]: +100% [ICON_PRODUCTION] Production towards Broadcast Towers. Cities with Broadcast Towers generate +15% [ICON_GOLD] Gold and [ICON_PEACE] Faith. Cities following your [ICON_RELIGION] Primary Religion generate +50% Pressure and +10 [ICON_CULTURE_LOCAL] Border Growth Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TELEVANGELISM_TEXT">
+			<Text>Televangelism (a portmanteau of television and evangelism) denotes the utilization of mass media platforms for the marketing of religious messages, particularly Christianity. Fulton J. Sheen, who successfully switched to television in 1951 after two decades of popular radio broadcasts, was annointed by Time magazine called "the first 'televangelist'". The 1960s and early 1970s, saw television replace radio as the primary home entertainment medium, but also corresponded with a further rise in Evangelical Christianity. Many well-known televangelists began during this period, and most developed their own media networks, news exposure, and political influence. Indeed their lifestyles have drawn much criticism, including from within the faith, for being opulent and materialistic.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_MILITARY_CONTRACTORS">
+			<Text>Military Contractors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MILITARY_CONTRACTORS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Military Contractors[ENDCOLOR]: Military Units purchased with [ICON_GOLD] Gold receive [COLOR_POSITIVE_TEXT]full XP[ENDCOLOR]. +1 [ICON_GREAT_GENERAL] Great General Point from [ICON_VP_ENGINEER] Engineers and [ICON_VP_SCIENTIST] Scientists. Can build [COLOR_YELLOW]M22 Locusts[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MILITARY_CONTRACTORS_TEXT">
+			<Text>Referring to both munitions manufacturing as well as actual private security companies, governments have often purchased additional firepower in exchange for currency. However today contractors that use armed force in a war zone may be considered unlawful combatants in reference to a concept that is outlined in the Geneva Conventions and explicitly stated by the 2006 American Military Commissions Act. Still, according to a 2008 study by the Office of the Director of National Intelligence, private contractors make up 29% of the workforce in the United States Intelligence Community and cost the equivalent of 49% of their personnel budgets.[NEWLINE][NEWLINE]Modern PMCs trace their origins back to a group of ex-SAS veterans in 1965 who, under the leadership of the founder of the SAS, David Stirling and John Woodhouse, founded WatchGuard International (formerly with offices in Sloane Street before moving to South Audley Street in Mayfair) as a private company that could be contracted out for security and military purposes. Dramatic growth in the number and size of such companies occurred at the end of the Cold War. The exodus of over 6 million military personnel from Western militaries in the 1990s expanded the recruiting pool. Since then private military has been deployed on everything from the response to Hurricane Katrina to anti-piracy measures in Somalia.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_POLICY_COMMERCIAL_AEROSPACE">
+			<Text>Commerical Aerospace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMMERCIAL_AEROSPACE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Commerical Aerospace[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_MERCHANT] Great Merchant. Gain 50 [ICON_RESEARCH] Science when creating Air and Missile Units, scaling with Era. You can [ICON_INVEST] Invest in [COLOR_YELLOW]Spaceship Parts[ENDCOLOR] with [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMMERCIAL_AEROSPACE_TEXT">
+			<Text>An aerospace manufacturer is a company or individual involved in the various aspects of designing, building, testing, selling, and maintaining aircraft, aircraft parts, missiles, satellites, or spacecraft. While it was in 1903, following their pioneering research and experiments with wing design and aircraft control, that the Wright brothers successfully incorporated all of the required elements to create and fly the first aeroplane, it was not until 1984 that Ronald Reagan passed the Commerical Space Launch Act. Arianespace became the world's first commercial launch service provider in the early 1980s. Subsequently, large defense contractors began to develop and operate space launch systems, which were derived from government rockets, though in practice NASA kept private spaceflight illegal until 2004.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROSPERITY_AERO">
+			<Text>Ahead of Ready</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROSPERITY_AERO_HELP">
+			<Text>Gain 25 [ICON_RESEARCH] Science when gained, scaling with Era.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_MASS_MEDIA">
+			<Text>Media Culture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MASS_MEDIA_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Media Culture[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_MERCHANT] Great Merchant. May purchase [ICON_GREAT_WORK] Great Works with [ICON_GOLD] Gold. Creating a [ICON_GREAT_WORK] Great Work reduces the [ICON_TURNS_REMAINING] Game Timer by 5 Turns (minimum 375 Turns).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MASS_MEDIA_TEXT">
+			<Text>Media culture refers to the general Western capitalist society that emerged and developed during the 20th century under the influence of mass media. The term highlights the extensive impact and intellectual influence of the media, primarily television, but also the press, radio, and cinema, on public opinion, tastes, and values. Critics often apportion blame for what they perceive as a degradation of the quality of culture to the pressures of mass media. While of course many examples can be found of superficial, bland, or formulaic output marketed at the lowest common denominator, at the same time the financing available to create new art and the reach with which to disseminate it has never been greater.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CHARISMATA">
+			<Text>Charismata</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHARISMATA_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Charismata[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_MERCHANT] Great Merchant. Expending a [ICON_GREAT_MERCHANT] Great Merchant grants 400 [ICON_PEACE] Faith, scaling with Era. Unlocks [COLOR_POSITIVE_TEXT]4[ENDCOLOR] [COLOR_CYAN]Megachurch[ENDCOLOR] [ICON_WONDER] World Wonders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHARISMATA_TEXT">
+			<Text>A charism is an extraordinary power given by the Holy Spirit. These abilities, often termed "charismatic gifts", are the word of knowledge, increased faith, the gifts of healing, the gift of miracles, prophecy, the discernment of spirits, and speaking in tongues. While many denominations believe these overt miracles to be gone from the world, others, such as Pentecostals, believe in a restoration of apostolic power. In addition to baptism and what Methodists call "entire sanctification", there was a third baptism in the Holy Spirit that manifested as speaking in tongues. The last century has seen many post-Pentecostal and non-denominational sects that additionally believe in a prosperity gospel - that faith, confession, and "charitable donations" will bring physical and financial health as a blessing from God.</Text>
+		</Row>
+
+	</Language_ko_KR>
+</GameData>

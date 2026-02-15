@@ -1,0 +1,1 @@
+-- UPDATE Buildings SET FaithCost = 300, UnlockedByBelief = 1 WHERE BuildingClass = 'BUILDINGCLASS_LIBRARY';

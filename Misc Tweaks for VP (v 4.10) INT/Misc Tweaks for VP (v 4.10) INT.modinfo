@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="74b51a96-d149-442a-81fa-5143794eac7a" version="12">
+  <Properties>
+    <Name>Misc Tweaks for VP (v 4.10) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Misc Tweaks for VP (v 4.10) INT</Teaser>
+    <Description>Translation of the Misc Tweaks for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 기타 수정 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8562c016-f5bb-79a3-b37e-a73cba215fe9" minversion="0" maxversion="999" title="Misc Tweaks for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="DCCEE1EC77A36F97A71CD5C2F8CD3AA0" import="0">Civilizations/England.sql</File>
+    <File md5="69893DC12911EDCA0B7BA024C61A021D" import="0">Civilizations/Polynesia.sql</File>
+    <File md5="AD0F2F97C11CD98E2CA18CC62596B604" import="0">Civilizations/Songhai.sql</File>
+    <File md5="47EC8E9F81B96403785B75F8102943EF" import="0">LandUnitChanges.sql</File>
+    <File md5="8E1F7BE7FBAB072E719B88C365EE20C4" import="0">NavalUnitChanges.sql</File>
+    <File md5="DCE3FCA1F709E855B2BCA8FD6AAB5CF8" import="0">SkirmisherChanges.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Civilizations/England.sql</UpdateDatabase>
+      <UpdateDatabase>Civilizations/Polynesia.sql</UpdateDatabase>
+      <UpdateDatabase>Civilizations/Songhai.sql</UpdateDatabase>
+      <UpdateDatabase>LandUnitChanges.sql</UpdateDatabase>
+      <UpdateDatabase>NavalUnitChanges.sql</UpdateDatabase>
+      <UpdateDatabase>SkirmisherChanges.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_DESCRIPTION">
+			<Text>A Beast Stalks the City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_HELP">
+			<Text>Rumours have begun to filter into the Palace that a monstrous beast stalks the city streets at the dead of night. Eye-witnesses claim that the beast is a demon, others claim it is the elusive wild haggis. Regardless, it is beginning to disquiet the city, and so the matter must be dealt with.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_1">
+			<Text>I shall hunt this beast myself; it shall pay tribute to my enduring grace as ruler.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_1_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_2">
+			<Text>Send out the guard and bring back the pelt of this beast.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_3">
+			<Text>I do not address mere rumours. I have an empire to run.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_3_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_4">
+			<Text>Capture it, put it in a zoo, and charge extra to have it seen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_THEBEAST_CHOICE_4_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR]</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

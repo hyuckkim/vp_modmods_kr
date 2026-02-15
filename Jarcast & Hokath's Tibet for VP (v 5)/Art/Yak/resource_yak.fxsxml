@@ -1,0 +1,26 @@
+<Asset>
+  <Mesh file="yak.gr2" source="Max" />
+  <Animation file="Cow_Idle01.gr2" name="Idle01" ec="1000" source="Max" />
+  <Animation file="Cow_Idle02.gr2" name="Idle02" ec="1001" source="Max" />
+  <Animation file="Cow_Idle03.gr2" name="Idle03" ec="1002" source="Max" />
+  <Animation file="Cow_Idle04.gr2" name="Idle04" ec="1003" source="Max" />
+  <Texture file="Resource_Cow_Decal_D.dds" source="Max" />
+  <Texture file="Resource_Cow_Decal_H.dds" source="Max" />
+  <Texture file="Resource_Cow_Fence_DIFF.dds" source="Max" />
+  <Texture file="Black_SREF.dds" source="Max" />
+  <Texture file="Unit_Environment_Dull.dds" source="Max" />
+  <Texture file="Unit_Environment_Sharp.dds" source="Max" />
+  <Texture file="Unit_Irradiance.dds" source="Max" />
+  <Texture file="Resource_Cow01_DIFF.dds" source="Max" />
+  <Texture file="Resource_Cow02_DIFF.dds" source="Max" />
+  <Texture file="Resource_Cow03_DIFF.dds" source="Max" />
+  <Texture file="Generic_Grey_8.dds" source="Max" />
+  <Texture file="Hex_Char_Decal_D.dds" source="Max" />
+  <Texture file="Hex_Char_Decal_H.dds" source="Max" />
+  <BoneUsage>
+    <Bone name="FX_PillagedSmoke" />
+  </BoneUsage>
+  <TimedTrigger file="FX_Triggers_Cow_PL.ftsxml" source="Tool" model="NodePiece" state="3" />
+  <TimedTrigger file="FX_Triggers_Cow.ftsxml" source="Tool" model="NodePiece" state="0,1,2" />
+  <DecisionTree file="LandmarkDecisionTree.ddtxml" source="Tool" />
+</Asset>

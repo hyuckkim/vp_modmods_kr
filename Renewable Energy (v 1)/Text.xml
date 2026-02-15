@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07-Nov-14 13:58:57 -->
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_SOLAR_PLANT_HELP"/>
+			<Set Text="City must not be built on or next to Snow or Tundra and must not contain a Nuclear Plant.[NEWLINE][NEWLINE]City must have a Factory."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_SOLAR_PLANT_STRATEGY"/>
+			<Set Text="A Solar Plant is a late-game building which increases [ICON_PRODUCTION] Production in a city. The city must not be constructed on or adjacent to a Snow or Desert tile in order to build the Solar Plant and must not contain a Nuclear Plant. The city must possess a Factory before it can be constructed."/>
+		</Update>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM">
+			<Text>Wind Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM_HELP">
+			<Text>City must have a Solar Plant.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM_STRATEGY">
+			<Text>A Wind Farm is a late-game building which increases [ICON_PRODUCTION] Production in a city, alongside a Solar Plant. The city must possess a Solar Plant before it can be constructed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WIND_FARM_TEXT">
+			<Text>A wind farm or wind park is a group of wind turbines in the same location used to produce energy. A large wind farm may consist of several hundred individual wind turbines and cover an extended area of hundreds of square miles, but the land between the turbines may be used for agricultural or other purposes. A wind farm can also be located offshore.[NEWLINE][NEWLINE]Many of the largest operational onshore wind farms are located in the United States and China. For example, the Gansu Wind Farm in China has a capacity of over 5,000 MW of power with a goal of 20,000 MW by 2020. The Alta Wind Energy Center in California, United States is the largest onshore wind farm outside of China, with a capacity of 1,020 MW. As of April 2013, the 630 MW London Array in the UK is the largest offshore wind farm in the world, followed by the 504 MW Greater Gabbard wind farm in the UK.</Text>
+		</Row>
+	</Language_en_US>
+
+	<Language_ko_KR>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_SOLAR_PLANT_HELP"/>
+			<Set Text="City must not be built on or next to Snow or Tundra and must not contain a Nuclear Plant.[NEWLINE][NEWLINE]City must have a Factory."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_SOLAR_PLANT_STRATEGY"/>
+			<Set Text="A Solar Plant is a late-game building which increases [ICON_PRODUCTION] Production in a city. The city must not be constructed on or adjacent to a Snow or Desert tile in order to build the Solar Plant and must not contain a Nuclear Plant. The city must possess a Factory before it can be constructed."/>
+		</Update>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM">
+			<Text>Wind Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM_HELP">
+			<Text>City must have a Solar Plant.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WIND_FARM_STRATEGY">
+			<Text>A Wind Farm is a late-game building which increases [ICON_PRODUCTION] Production in a city, alongside a Solar Plant. The city must possess a Solar Plant before it can be constructed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WIND_FARM_TEXT">
+			<Text>A wind farm or wind park is a group of wind turbines in the same location used to produce energy. A large wind farm may consist of several hundred individual wind turbines and cover an extended area of hundreds of square miles, but the land between the turbines may be used for agricultural or other purposes. A wind farm can also be located offshore.[NEWLINE][NEWLINE]Many of the largest operational onshore wind farms are located in the United States and China. For example, the Gansu Wind Farm in China has a capacity of over 5,000 MW of power with a goal of 20,000 MW by 2020. The Alta Wind Energy Center in California, United States is the largest onshore wind farm outside of China, with a capacity of 1,020 MW. As of April 2013, the 630 MW London Array in the UK is the largest offshore wind farm in the world, followed by the 504 MW Greater Gabbard wind farm in the UK.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

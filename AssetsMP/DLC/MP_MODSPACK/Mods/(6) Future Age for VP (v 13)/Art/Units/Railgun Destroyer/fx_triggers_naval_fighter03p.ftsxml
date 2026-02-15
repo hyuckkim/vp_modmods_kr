@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trigger_system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1160">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1800">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1580">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2220">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1200">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1520">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2160">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1620">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1400">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2040">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1002">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1130">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1180">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1500">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1120">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1440">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1220">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1540">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2180">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1640">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1100">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1420">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1040">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1003">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1140">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2100">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1560">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2200">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+      <track id="5" name="Effect" />
+      <track id="6" name="Effect" />
+    </event_track>
+    <event_track ec="1290">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1020">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1285">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1710">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1280">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1600">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1705">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1700">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2020">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerEffect" id="0" time="0" duration="3.33333349" repeat="0" ec="1000" track="2" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="1" time="0" duration="4.5" repeat="0" ec="1040" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="2" time="0.2678789" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="3" time="0.259560078" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="4" time="0.35824573" duration="0" repeat="0" ec="1100" track="1" event="ART_DEF_PEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="5" time="0.389935672" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="6" time="0.449195176" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="7" time="0.5038383" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="8" time="0.6824243" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="9" time="0.126700372" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="10" time="0.7229966" duration="0" repeat="0" ec="1100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="11" time="0.262154579" duration="0.085" repeat="0" ec="1100" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_R_01" />
+    <trigger type="FTimedTriggerEffect" id="12" time="0.391279042" duration="0.085" repeat="0" ec="1100" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_R_02" />
+    <trigger type="FTimedTriggerTransfer" id="13" time="0.463603735" duration="0" repeat="0" ec="1100" track="3" refid="12" speed="0" tangent.x="-0.9349147" tangent.y="-1.73535142E-07" tangent.z="0.354872435" />
+    <trigger type="FTimedTriggerTransfer" id="14" time="0.33814925" duration="0" repeat="0" ec="1100" track="3" refid="13" speed="0" tangent.x="-0.934914649" tangent.y="-2.35601348E-07" tangent.z="0.354872644" />
+    <trigger type="FTimedTriggerEffect" id="15" time="0" duration="1.33333337" repeat="0" ec="1100" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerAction" id="16" time="0.168821543" duration="0" repeat="0" ec="1100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="17" time="0.541245759" duration="0" repeat="0" ec="1100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="18" time="0.7231649" duration="0" repeat="0" ec="1100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="19" time="0.306262285" duration="0" repeat="0" ec="1100" track="4" action="1" />
+    <trigger type="FTimedTriggerEffect" id="20" time="0.2734427" duration="0.025" repeat="0" ec="1100" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_R_01" />
+    <trigger type="FTimedTriggerEffect" id="21" time="0.398743" duration="0.025" repeat="0" ec="1100" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_R_02" />
+    <trigger type="FTimedTriggerEffect" id="22" time="0.1296294" duration="0" repeat="0" ec="1100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_R_01" />
+    <trigger type="FTimedTriggerEffect" id="23" time="0.6803365" duration="0" repeat="0" ec="1100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_R_02" />
+    <trigger type="FTimedTriggerEffect" id="24" time="0.5078112" duration="0" repeat="0" ec="1100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_R_01" />
+    <trigger type="FTimedTriggerEffect" id="25" time="0.2597304" duration="0" repeat="0" ec="1100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_R_02" />
+    <trigger type="FTimedTriggerSound" id="26" time="0" duration="0.67" repeat="0" ec="1120" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_LOOP" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="27" time="0" duration="0.67" repeat="0" ec="1120" track="1" event="AS3D_UNIT_MISSILE_CRUISER_MISSILE_CRUISER_RUN" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="28" time="0.194444433" duration="0" repeat="0" ec="1120" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY_RUN" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="29" time="0" duration="0.6666667" repeat="0" ec="1120" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="30" time="0" duration="0.6666667" repeat="0" ec="1120" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="31" time="0" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="32" time="0.542233" duration="0" repeat="0" ec="1130" track="1" event="ART_DEF_PEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="33" time="1.0018518" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="34" time="1.29444468" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="35" time="0.12777783" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="36" time="0.6354239" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="37" time="0.43353197" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="38" time="0.2698201" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="39" time="0.399157673" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="40" time="0.598353148" duration="0" repeat="0" ec="1130" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="41" time="0.264006436" duration="0.085" repeat="0" ec="1130" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_R_03" />
+    <trigger type="FTimedTriggerEffect" id="42" time="0.389306664" duration="0.085" repeat="0" ec="1130" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_L_01" />
+    <trigger type="FTimedTriggerTransfer" id="43" time="0.328949243" duration="0" repeat="0" ec="1130" track="3" refid="42" speed="0" tangent.x="-0.743063748" tangent.y="-7.9757956E-05" tangent.z="0.6692206" />
+    <trigger type="FTimedTriggerTransfer" id="44" time="0.45953396" duration="0" repeat="0" ec="1130" track="3" refid="43" speed="0" tangent.x="0.795255959" tangent.y="-3.89992529E-05" tangent.z="0.60627383" />
+    <trigger type="FTimedTriggerTransfer" id="45" time="0.5143305" duration="0" repeat="0" ec="1130" track="3" refid="44" speed="0" tangent.x="-0.9040775" tangent.y="-0.002192168" tangent.z="0.427363127" />
+    <trigger type="FTimedTriggerEffect" id="46" time="0" duration="1.33333337" repeat="0" ec="1130" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerTransfer" id="47" time="0.651610732" duration="0" repeat="0" ec="1130" track="3" refid="46" speed="0" tangent.x="0.7959109" tangent.y="-5.3394735E-05" tangent.z="0.605413854" />
+    <trigger type="FTimedTriggerEffect" id="48" time="0.602831244" duration="0.025" repeat="0" ec="1130" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_L_04" />
+    <trigger type="FTimedTriggerEffect" id="49" time="0.4421356" duration="0.025" repeat="0" ec="1130" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_L_02" />
+    <trigger type="FTimedTriggerEffect" id="50" time="0.2714703" duration="0.025" repeat="0" ec="1130" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_R_03" />
+    <trigger type="FTimedTriggerEffect" id="51" time="0.396770626" duration="0.025" repeat="0" ec="1130" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_L_01" />
+    <trigger type="FTimedTriggerEffect" id="52" time="0.5933949" duration="0.077" repeat="0" ec="1130" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_L_04" />
+    <trigger type="FTimedTriggerEffect" id="53" time="0.4346715" duration="0.095" repeat="0" ec="1130" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_L_02" />
+    <trigger type="FTimedTriggerSound" id="54" time="0.179629639" duration="0" repeat="0" ec="1140" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="55" time="0.00185185194" duration="0" repeat="0" ec="1140" track="1" event="AS3D_UNIT_MISSILE_CRUISER_MISSILE_CRUISER_STOP" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="56" time="0.0574074052" duration="0" repeat="0" ec="1140" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="57" time="0" duration="0.533333361" repeat="0" ec="1140" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="58" time="1.05370367" duration="0" repeat="0" ec="1160" track="1" event="AS3D_IMPACT_LASERLG_CITY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="59" time="0" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="60" time="0.238888979" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="61" time="0.429629773" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="62" time="0.642592669" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="63" time="0.8518518" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="64" time="0.0629629642" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="65" time="0.8425926" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="66" time="0.231481537" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="67" time="1.11851859" duration="0" repeat="0" ec="1160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="68" time="0.2351847" duration="0.05" repeat="0" ec="1160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="69" time="0.6462958" duration="0.05" repeat="0" ec="1160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="70" time="0.4289862" duration="0.05" repeat="0" ec="1160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="71" time="0.8493566" duration="0.05" repeat="0" ec="1160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="72" time="0" duration="1.33333337" repeat="0" ec="1160" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="73" time="0" duration="1.33333337" repeat="0" ec="1160" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="74" time="0" duration="0.13" repeat="0" ec="1160" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerAction" id="75" time="0.6814815" duration="0" repeat="0" ec="1160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="76" time="0.890740752" duration="0" repeat="0" ec="1160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="77" time="0.2689665" duration="0" repeat="0" ec="1160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="78" time="0.4668138" duration="0" repeat="0" ec="1160" track="4" action="2" />
+    <trigger type="FTimedTriggerEffect" id="79" time="0.545133" duration="0.15" repeat="0" ec="1160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="80" time="0.7496778" duration="0.15" repeat="0" ec="1160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="81" time="0.132170171" duration="0.15" repeat="0" ec="1160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="82" time="0.3311592" duration="0.15" repeat="0" ec="1160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="83" time="0" duration="0.13" repeat="0" ec="1160" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerSound" id="84" time="0.377777874" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="85" time="0.385185272" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="86" time="0.6055556" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="87" time="0.61296314" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="88" time="1.00370431" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="89" time="0.0629629642" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="90" time="0.00185185182" duration="0" repeat="0" ec="1180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="91" time="0.3826899" duration="0.05" repeat="0" ec="1180" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="92" time="0.6111106" duration="0.05" repeat="0" ec="1180" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="93" time="0" duration="1.33333337" repeat="0" ec="1180" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="94" time="0" duration="1.33333337" repeat="0" ec="1180" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerAction" id="95" time="0.416666657" duration="0" repeat="0" ec="1180" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="96" time="0.65" duration="0" repeat="0" ec="1180" track="4" action="2" />
+    <trigger type="FTimedTriggerEffect" id="97" time="0.08216994" duration="0.2" repeat="0" ec="1180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="98" time="0.284862816" duration="0.15" repeat="0" ec="1180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="99" time="0.511799634" duration="0.15" repeat="0" ec="1180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="100" time="0.0848628059" duration="0.2" repeat="0" ec="1180" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerSound" id="101" time="0" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_IMPACT_$(WEAPON)" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="102" time="0.355555624" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_UNDERWATER" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="103" time="0.07962965" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_LOOP" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="104" time="0.0101553136" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_EXPLODE" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="105" time="0.135244474" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_CARAVEL_SINK" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="106" time="0.290740848" duration="0" repeat="0" ec="1200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_EXPLODE" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="107" time="0" duration="0" repeat="0" ec="1200" track="2" event="ART_DEF_PEFFECT_EXP_METAL_SHIP_DEATH_MD_01" bone="Bone_Root" />
+    <trigger type="FTimedTriggerEffect" id="108" time="0.09074101" duration="1" repeat="0" ec="1200" track="2" event="ART_DEF_VEFFECT_BOAT_SINKING_MD_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="109" time="0.0190561414" duration="0.1" repeat="0" ec="1200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Explosion_01" />
+    <trigger type="FTimedTriggerEffect" id="110" time="0.207407519" duration="0.05" repeat="0" ec="1200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="Missle_L_B" />
+    <trigger type="FTimedTriggerEffect" id="111" time="0.308005" duration="0.03" repeat="0" ec="1200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_R_02" />
+    <trigger type="FTimedTriggerEffect" id="112" time="0.35931924" duration="0.08" repeat="0" ec="1200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Explosion_02" />
+    <trigger type="FTimedTriggerEffect" id="113" time="0.4336921" duration="0.05" repeat="0" ec="1200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Explosion_03" />
+    <trigger type="FTimedTriggerEffect" id="114" time="0.2921144" duration="0" repeat="0" ec="1200" track="5" event="ART_DEF_VEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="FX_Muzz_Proj_R_02" />
+    <trigger type="FTimedTriggerEffect" id="115" time="0.133333" duration="0" repeat="0" ec="1200" track="5" event="ART_DEF_VEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="Bone_RightTurrent_Rot01" />
+    <trigger type="FTimedTriggerEffect" id="116" time="0.448193848" duration="0" repeat="0" ec="1200" track="5" event="ART_DEF_VEFFECT_EXP_METAL_SHIP_DEATH_SM_01" bone="FX_Explosion_03" />
+    <trigger type="FTimedTriggerEffect" id="117" time="0.3611111" duration="0" repeat="0" ec="1200" track="6" event="ART_DEF_VEFFECT_MECHINFANTRY_EXPLOSION_DEATH" bone="FX_Explosion_04" />
+    <trigger type="FTimedTriggerSound" id="118" time="0.233333334" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="119" time="0.107407406" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="120" time="0.192592591" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="121" time="0.05" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="122" time="0.07777778" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="123" time="0.00185185182" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="124" time="0.327777773" duration="0" repeat="0" ec="1280" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="125" time="0" duration="0.6666667" repeat="0" ec="1280" track="2" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="126" time="0" duration="3.00000024" repeat="0" ec="1285" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="127" time="0.00185185182" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="128" time="0.0333333351" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="129" time="0.109259255" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="130" time="0.07777778" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="131" time="0.05" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="132" time="0.192592591" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="133" time="0.233333334" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="134" time="0.327777773" duration="0" repeat="0" ec="1290" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="135" time="0" duration="1" repeat="0" ec="1290" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="136" time="0" duration="0.67" repeat="0" ec="1400" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_LOOP" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="137" time="0.4888889" duration="0" repeat="0" ec="1400" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY_RUN" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="138" time="0" duration="0.67" repeat="0" ec="1400" track="1" event="AS3D_UNIT_MISSILE_CRUISER_MISSILE_CRUISER_RUN" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="139" time="0" duration="0.6666667" repeat="0" ec="1400" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="140" time="0" duration="0.400000036" repeat="0" ec="1420" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="141" time="0.185185179" duration="0" repeat="0" ec="1440" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="142" time="0.0657706559" duration="0" repeat="0" ec="1440" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="143" time="0.00370370341" duration="0" repeat="0" ec="1440" track="1" event="AS3D_UNIT_MISSILE_CRUISER_MISSILE_CRUISER_STOP" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="144" time="0" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="145" time="0.25" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="146" time="0.1574074" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="147" time="0.148148149" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="148" time="0.0451613" duration="0" repeat="0" ec="1500" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="-1" />
+    <trigger type="FTimedTriggerEffect" id="149" time="0" duration="0.8333334" repeat="0" ec="1500" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="150" time="0" duration="3.00000024" repeat="0" ec="1520" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="151" time="0" duration="5.00000048" repeat="0" ec="1540" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="152" time="0" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MECH_RAILGUN_CHARGE" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="153" time="0.201851845" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="154" time="0.055555556" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="155" time="0.109259263" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="156" time="0.125925928" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="157" time="0.244444445" duration="0" repeat="0" ec="1560" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="158" time="0.109259263" duration="0" repeat="0" ec="1580" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="159" time="0.122222222" duration="0" repeat="0" ec="1580" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="160" time="0.244444445" duration="0" repeat="0" ec="1580" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="161" time="0" duration="0" repeat="0" ec="1580" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="162" time="0.025925925" duration="0" repeat="0" ec="1580" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="163" time="0" duration="0.6666667" repeat="0" ec="1580" track="2" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="164" time="0.00370370364" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="165" time="0.109259263" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="166" time="0.244444445" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="167" time="0" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MECH_RAILGUN_CHARGE" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="168" time="0.201851845" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="169" time="0.125925928" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="170" time="0.055555556" duration="0" repeat="0" ec="1600" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="171" time="0" duration="0.6666667" repeat="0" ec="1600" track="2" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="172" time="0" duration="5.00000048" repeat="0" ec="1620" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="173" time="0.109259263" duration="0" repeat="0" ec="1640" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="174" time="0" duration="0" repeat="0" ec="1640" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="175" time="0.025925925" duration="0" repeat="0" ec="1640" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="176" time="0.240740746" duration="0" repeat="0" ec="1640" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="177" time="0.124074079" duration="0" repeat="0" ec="1640" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="178" time="0" duration="0.666667" repeat="0" ec="1640" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="179" time="0.109259263" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="180" time="0" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="181" time="0.025925925" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_SPRAY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="182" time="0.237037063" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_END" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="183" time="0.133333325" duration="0" repeat="0" ec="1800" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="184" time="0" duration="3.33333349" repeat="0" ec="2000" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="185" time="0" duration="4.666667" repeat="0" ec="2040" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerSound" id="186" time="0.42037046" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="187" time="0.268518478" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="188" time="0.4" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="189" time="0.194444522" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="190" time="0.553703964" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="191" time="0.6537038" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_HELICOPTER_GUNSHIP_MECH_ROCKET" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="192" time="0.09629627" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="193" time="0.435959637" duration="0" repeat="0" ec="2100" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="194" time="0.264006436" duration="0.085" repeat="0" ec="2100" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_L_03" />
+    <trigger type="FTimedTriggerEffect" id="195" time="0.391279042" duration="0.085" repeat="0" ec="2100" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_ROCKET_PROJECTILE" bone="FX_Missile_L_04" />
+    <trigger type="FTimedTriggerEffect" id="196" time="0" duration="1.33333337" repeat="0" ec="2100" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerTransfer" id="197" time="0.3314815" duration="0" repeat="0" ec="2100" track="3" refid="196" speed="0" tangent.x="0.934250832" tangent.y="-3.00890775E-07" tangent.z="0.356616557" />
+    <trigger type="FTimedTriggerTransfer" id="198" time="0.4648148" duration="0" repeat="0" ec="2100" track="3" refid="197" speed="0" tangent.x="0.9342509" tangent.y="0" tangent.z="0.356616557" />
+    <trigger type="FTimedTriggerAction" id="199" time="0.125925913" duration="0" repeat="0" ec="2100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="200" time="0.24814786" duration="0" repeat="0" ec="2100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="201" time="0.466666818" duration="0" repeat="0" ec="2100" track="4" action="1" />
+    <trigger type="FTimedTriggerAction" id="202" time="0.5962963" duration="0" repeat="0" ec="2100" track="4" action="1" />
+    <trigger type="FTimedTriggerEffect" id="203" time="0.2734427" duration="0.025" repeat="0" ec="2100" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_L_03" />
+    <trigger type="FTimedTriggerEffect" id="204" time="0.398743" duration="0.025" repeat="0" ec="2100" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Muzz_Proj_L_04" />
+    <trigger type="FTimedTriggerEffect" id="205" time="0.09444422" duration="0" repeat="0" ec="2100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_L_01" />
+    <trigger type="FTimedTriggerEffect" id="206" time="0.1912119" duration="0" repeat="0" ec="2100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_L_02" />
+    <trigger type="FTimedTriggerEffect" id="207" time="0.4300334" duration="0" repeat="0" ec="2100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_L_01" />
+    <trigger type="FTimedTriggerEffect" id="208" time="0.5562624" duration="0" repeat="0" ec="2100" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_L_02" />
+    <trigger type="FTimedTriggerSound" id="209" time="0" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="210" time="0.0629629642" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="211" time="0.220370457" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="212" time="0.233333439" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="213" time="0.43148154" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="214" time="0.6462964" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="215" time="0.838888943" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="216" time="0.849999964" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="217" time="1.05370367" duration="0" repeat="0" ec="2160" track="1" event="AS3D_IMPACT_LASERLG_CITY" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="218" time="1.11851859" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="219" time="0.75555557" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="220" time="1.21296287" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="221" time="0.0759258941" duration="0" repeat="0" ec="2160" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="222" time="0.2351847" duration="0.05" repeat="0" ec="2160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="223" time="0.4289862" duration="0.05" repeat="0" ec="2160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="224" time="0.6462958" duration="0.05" repeat="0" ec="2160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="225" time="0.8493566" duration="0.05" repeat="0" ec="2160" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="226" time="0" duration="1.33333337" repeat="0" ec="2160" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="227" time="0" duration="1.33333337" repeat="0" ec="2160" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerAction" id="228" time="0.2689665" duration="0" repeat="0" ec="2160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="229" time="0.4668138" duration="0" repeat="0" ec="2160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="230" time="0.6814815" duration="0" repeat="0" ec="2160" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="231" time="0.890740752" duration="0" repeat="0" ec="2160" track="4" action="2" />
+    <trigger type="FTimedTriggerEffect" id="232" time="0" duration="0.13" repeat="0" ec="2160" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="233" time="0.3311592" duration="0.15" repeat="0" ec="2160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="234" time="0.545133" duration="0.15" repeat="0" ec="2160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="235" time="0.7496778" duration="0.15" repeat="0" ec="2160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="236" time="0.132170171" duration="0.15" repeat="0" ec="2160" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="237" time="0" duration="0.13" repeat="0" ec="2160" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerSound" id="238" time="0.9314814" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="239" time="0.848148167" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_A" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="240" time="0.774074137" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="241" time="0.6074077" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="242" time="0.598148346" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="243" time="0.349999964" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="244" time="0.385185331" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="245" time="0.377777874" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_INFANTRY_RIFLE_FIRE_T1" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="246" time="0.0629629642" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="247" time="0" duration="0" repeat="0" ec="2180" track="1" event="AS3D_UNIT_MISSILE_CRUISER_TANK_TURRET_MOVE_B" bone="" tier="0" />
+    <trigger type="FTimedTriggerEffect" id="248" time="0.382689863" duration="0.05" repeat="0" ec="2180" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon" />
+    <trigger type="FTimedTriggerEffect" id="249" time="0.6111106" duration="0.05" repeat="0" ec="2180" track="2" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="FX_Muzzel_Front_Cannon01" />
+    <trigger type="FTimedTriggerEffect" id="250" time="0" duration="1.33333" repeat="0" ec="2180" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerEffect" id="251" time="0" duration="1.33333" repeat="0" ec="2180" track="3" event="ART_DEF_VEFFECT_WAKE_TRAIL_SM_01" bone="World_Center" />
+    <trigger type="FTimedTriggerAction" id="252" time="0.416666657" duration="0" repeat="0" ec="2180" track="4" action="2" />
+    <trigger type="FTimedTriggerAction" id="253" time="0.65" duration="0" repeat="0" ec="2180" track="4" action="2" />
+    <trigger type="FTimedTriggerEffect" id="254" time="0.511799634" duration="0.15" repeat="0" ec="2180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="255" time="0.08216994" duration="0.2" repeat="0" ec="2180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun01" />
+    <trigger type="FTimedTriggerEffect" id="256" time="0.284862816" duration="0.15" repeat="0" ec="2180" track="5" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerEffect" id="257" time="0.0848628059" duration="0.2" repeat="0" ec="2180" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_MACHINE_GUN_MUZZLE" bone="Bone_FrntTurret_Gun" />
+    <trigger type="FTimedTriggerSound" id="258" time="0.00740687363" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_IMPACT_$(WEAPON)" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="259" time="0.342592657" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_UNDERWATER" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="260" time="0.111111112" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_EXPLODE" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="261" time="0.0537037" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MODERN_ARMOR_MDRN_ARMR_CANNON" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="262" time="0.0777777955" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_OCEAN_LOOP" bone="" tier="0" />
+    <trigger type="FTimedTriggerSound" id="263" time="0.02281958" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_EXPLODE" bone="" tier="-1" />
+    <trigger type="FTimedTriggerSound" id="264" time="0.249462" duration="0" repeat="0" ec="2200" track="1" event="AS3D_UNIT_MISSILE_CRUISER_CARAVEL_SINK" bone="" tier="-1" />
+    <trigger type="FTimedTriggerEffect" id="265" time="0.009259259" duration="0" repeat="0" ec="2200" track="2" event="ART_DEF_PEFFECT_EXP_METAL_SHIP_DEATH_MD_01" bone="Bone_Root" />
+    <trigger type="FTimedTriggerEffect" id="266" time="0.205854326" duration="0.75" repeat="0" ec="2200" track="2" event="ART_DEF_VEFFECT_BOAT_SINKING_LONG_DESTROYER" bone="Bone_Root" />
+    <trigger type="FTimedTriggerEffect" id="267" time="0.283264965" duration="0.2" repeat="0" ec="2200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Explosion_03" />
+    <trigger type="FTimedTriggerEffect" id="268" time="0.0574075133" duration="0.05" repeat="0" ec="2200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="Bone_Cannon_R_02" />
+    <trigger type="FTimedTriggerEffect" id="269" time="0.4698909" duration="0.03" repeat="0" ec="2200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="AIM_MisslesB_DR" />
+    <trigger type="FTimedTriggerEffect" id="270" time="0.1818402" duration="0.15" repeat="0" ec="2200" track="4" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_LAUNCH_SMOKE" bone="FX_Explosion_03" />
+    <trigger type="FTimedTriggerEffect" id="271" time="0.087036714" duration="0" repeat="0" ec="2200" track="5" event="ART_DEF_VEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="Bone_Cannon_R_02" />
+    <trigger type="FTimedTriggerEffect" id="272" time="0.5461745" duration="0" repeat="0" ec="2200" track="5" event="ART_DEF_VEFFECT_EXP_METAL_SHIP_DEATH_XSM_01" bone="FX_Explosion_00" />
+    <trigger type="FTimedTriggerEffect" id="273" time="0.151851758" duration="0" repeat="0" ec="2200" track="6" event="ART_DEF_VEFFECT_MECHINFANTRY_EXPLOSION_DEATH" bone="Bone_LeftTurrent_Rot02" />
+    <trigger type="FTimedTriggerEffect" id="274" time="0.4007073" duration="0" repeat="0" ec="2200" track="6" event="ART_DEF_VEFFECT_ROCKET_ARTILLERY_EXPLOSION_DEATH" bone="FX_Explosion_02" />
+  </triggers>
+</trigger_system>

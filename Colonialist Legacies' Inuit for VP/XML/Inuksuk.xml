@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/8/2014 11:05:00 AM -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_INUKSUK</Type>
+			<Description>TXT_KEY_IMPROVEMENT_INUKSUK</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_INUKSUK_TEXT</Civilopedia>
+			<Help>TXT_KEY_CIV5_IMPROVEMENTS_IMPROVEMENT_INUKSUK_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_INUUIT_INUKSHUK</ArtDefineTag>
+			<SpecificCivRequired>true</SpecificCivRequired>
+			<CivilizationType>CIVILIZATION_CLINUIT</CivilizationType>
+			<InAdjacentFriendly>0</InAdjacentFriendly>
+			<NewOwner>0</NewOwner>
+			<CultureBombRadius>0</CultureBombRadius>
+			<PillageGold>5</PillageGold>
+			<NoTwoAdjacent>true</NoTwoAdjacent>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>INUKSUK_ICON</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_INUKSUK</BuildType>
+		</Row>
+	</Unit_Builds>
+	<Builds>
+		<Row>
+			<Type>BUILD_INUKSUK</Type>
+			<PrereqTech>TECH_TRAPPING</PrereqTech>
+			<Time>700</Time>
+			<ImprovementType>IMPROVEMENT_INUKSUK</ImprovementType>
+			<Description>TXT_KEY_BUILD_INUKSUK</Description>
+			<Help>TXT_KEY_BUILD_INUKSUK_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_INUKSUK_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<HotKey>KB_K</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>1</IconIndex>
+			<IconAtlas>INUKSUK_ICON</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_INUKSUK</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>300</Time>
+			<Production>30</Production>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_IMPROVEMENT_INUKSUK">
+			<Text>설원의 등대</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_INUKSUK_TEXT">
+			<Text>설원의 등대는 이누이트, 이누피앗, 칼라알리트, 유피크 등 북미 북극권 민족들이 쌓아 올린 돌 무더기 구조물입니다. 설원의 등대는 주로 길잡이 역할을 하는 지표로 사용되며, 보급품 저장소, 사냥 및 낚시 지점, 또는 신성한 장소를 표시하는 데 쓰이기도 합니다. 기능이 복합적으로 쓰이는 경우도 많습니다. 열린 툰드라 지형에는 자연적인 이정표가 드물기 때문에, 북극권 민족들은 스스로 이러한 독창적인 구조물을 세워 지형에 자신들만의 예술적 흔적을 남겼습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_IMPROVEMENT_INUKSUK_HELP">
+			<Text>수렵 기술을 연구하면 건설할 수 있습니다. 툰드라와 설원에 건설할 수 있으나, 다른 설원의 등대와 인접해서는 안 됩니다. [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산, [ICON_CULTURE] 문화를 제공합니다.[NEWLINE][NEWLINE]건설 시 인접한 모든 중립 타일을 즉시 획득합니다. 인접한 [COLOR_POSITIVE_TEXT]설원[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]툰드라[ENDCOLOR] 타일에 +1 [ICON_PRODUCTION] 생산을 추가로 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_INUKSUK">
+			<Text>[LINK=IMPROVEMENT_INUKSUK]설원의 등대[\LINK]를 건설합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_INUKSUK_HELP">
+			<Text>설원의 등대를 건설합니다. [ICON_FOOD] 식량, [ICON_PRODUCTION] 생산, [ICON_CULTURE] 문화를 제공합니다. 건설 시 인접한 모든 중립 타일을 즉시 획득하며, 인접한 [COLOR_POSITIVE_TEXT]설원[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]툰드라[ENDCOLOR] 타일에 +1 [ICON_PRODUCTION] 생산을 추가로 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_INUKSUK_REC">
+			<Text>[ICON_FOOD] 식량, [ICON_PRODUCTION] 생산, [ICON_CULTURE] 문화를 증가시킵니다. 건설 시 인접한 모든 중립 타일을 즉시 획득하며, 인접한 [COLOR_POSITIVE_TEXT]설원[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]툰드라[ENDCOLOR] 타일에 +1 [ICON_PRODUCTION] 생산을 추가로 제공합니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

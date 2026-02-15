@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="afd6586f-4079-4d40-93f1-211c9d7fd0e6" version="7">
+  <Properties>
+    <Name>Hex Conquer VP</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Hex Conquer and Release, modded for VP[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Compatibility: VP[ENDCOLOR]</Teaser>
+    <Description>Land-based Combat units, excluding siege and recon (V4+), are able to conquer enemy's plots, as long as they are adjacent to own territory (V4+).  Cities control only adjacent tiles on capture.  Citadels similarly control adjacent plots, and can be captured via occupation.  V4+ requires fort tiles to be captured via occupying directly, rather than also being capturable from an adjacent tile. V4+ releases razing cities' tiles back to nearby cities (if any exist) rather than reverting tiles to unowned.  Land and water tiles can only be conquered by land and water units, respectively (V5+).  User options can now be set for custom functionality (V6+).</Description>
+    <Authors>Matviyko Rozumiyko, Tekamthi</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References />
+  <Blocks>
+    <Mod id="1628ab1d-e2c1-4b6c-ace5-062618249248" minversion="0" maxversion="999" title="Hex Conquer and Release" />
+  </Blocks>
+  <Files>
+    <File md5="0DBEA3D99AFE9C603272A3C2F7997C54" import="1">CityConquer.lua</File>
+    <File md5="90E7FCE877C39046C42E14CCA8F2E1CC" import="1">Conquer.lua</File>
+    <File md5="A7594C693E31D53D4BC874B0667FFA1B" import="0">VPmodsettings.sql</File>
+    <File md5="846C5B92EEB0A5B3F79B4CF625ADB614" import="0">Main.lua</File>
+    <File md5="7D905007B2AD6527408CFBA265EF6DAB" import="1">Release.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>VPmodsettings.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Main.lua">
+      <Name>Hex Conquer n Release VP</Name>
+      <Description>Hex Conquer mod adapted for VP</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="abb7721a-0201-4297-ae87-0de0100ec98c" version="11">
+  <Properties>
+    <Name>UI - Summary Clock</Name>
+    <Teaser>Displays a clock in the Top Panel</Teaser>
+    <Description>Displays a clock in the Top Panel</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Mordino for the German translation</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?119297-MOD-UI-Summary-Clock</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="79528124E37C95E52E38B940658B7FE1" import="0">UI/InGame/SummaryBar.lua</File>
+    <File md5="E91E864E278D2531DDBF12712D14995F" import="0">UI/InGame/SummaryBar.xml</File>
+    <File md5="01F5A289EFBD966C25F3E5240380CC57" import="0">UI/SummaryClock.lua</File>
+    <File md5="6F7D97AADBF66FE183B451F56D8CF2B9" import="0">UI/SummaryClock.xml</File>
+    <File md5="87AD68D129F18E71D6C226B26A9EB12D" import="1">UI/SummaryClock_SummaryBarHook.lua</File>
+    <File md5="58389513A3038AA62A672B5D1C1427E9" import="0">XML/UISummaryClock.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UISummaryClock.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/SummaryClock.xml">
+      <Name>Clock Summary</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="SummaryBarAddin" file="UI/SummaryClock_SummaryBarHook.lua">
+      <Name>Clock Summary Bar Addin</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/InGame/SummaryBar.xml">
+      <Name>Modular Summary Bar</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="761aea79-2c11-4c3e-95e5-9b4b1879c4e5" version="4">
+  <Properties>
+    <Name>UI - City Religions</Name>
+    <Teaser>Adds a popup showing religion and followers for all cities in the empire</Teaser>
+    <Description>Displays religion and followers for all cities in the empire.
+
+Permits buildings and units to be purchased with Faith in any city from a single summary screen</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>German translation: AndreP; EUI Icon: Lynnes</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="21e78f1f-06f9-4147-ac61-75aa7c403d18" minversion="3" maxversion="999" title="Utils - Modular DiploCorner" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="ECD17469B8E1C2EA9B53D65618556573" import="1">ART/EUI_DC45_CityReligion.dds</File>
+    <File md5="83289A9DF77824A1AD95C5DAF28D72C4" import="0">UI/CityReligions.lua</File>
+    <File md5="58EE0E5AB11CC9C6B57296A0E35772FA" import="0">UI/CityReligions.xml</File>
+    <File md5="4186C88CD483743420845517DBD295F2" import="0">XML/UICityReligions.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UICityReligions.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/CityReligions.xml">
+      <Name>City Religions</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

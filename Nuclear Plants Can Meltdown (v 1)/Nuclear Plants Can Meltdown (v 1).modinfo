@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b47f71e7-34fe-468f-b7e7-8f5ed1786e2e" version="1">
+  <Properties>
+    <Name>Nuclear Plants Can Meltdown</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Nuclear Plants Can Meltdown</Teaser>
+    <Description>Every turn every Nuclear Plant has a chance that it will have a meltdown, just like in Civ 4. This also makes Solar Plants more desireable. I recommend my Solar Plant Fix mod so they are a viable option.
+
+The chance changes based on game speed:
+Marathon: 0.33%
+Epic: 0.66%
+Standard: 1.00%
+Quick: 1.50%
+
+
+--Compatibility--
+-Does not require any exp.
+-Doesn't seem to notice when a mod changes the game speed settings (even when it's enabled first), so the Superquick mod works as normal but doesn't double the chance of meltdowns like it should. If anyone can figure out why, please let me know and I will fix it.
+
+--Direct Download--</Description>
+    <Authors>Tofusojo</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1150B93729D445FEBA1B87EE43149D62" import="0">Nuclear Plant Test.xml</File>
+    <File md5="5DACCB7DAA6AD60FB58225B32439E033" import="0">Nuclear Plants Can Meltdown.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Nuclear Plant Test.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Nuclear Plants Can Meltdown.lua">
+      <Name>Nuclear Plants Can Meltdown</Name>
+      <Description>Nuclear Plants Can Meltdown</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_UNIT_LOCUST">
+			<Text>M22 Locust</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_HELP">
+			<Text>Mobile Ranged Unit that can Paradrop. Is slightly weaker than the Light Tank, but does not replace it. Starts with the [COLOR_POSITIVE_TEXT]Parthian Tacitcs[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Prosperity[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Military Contractors[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_STRATEGY">
+			<Text>With the extreme mobility of Parthian Tactics and the ability to Paradrop, you can pillage everything behind enemy lines in a way Recon Units never could. Although weaker on the defense than a Light Tank, you can always send Paratroopers along to defend your airborne skirmishers, making use of the flanking bonus to launch a devastating flanking attack on your foes.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LOCUST_TEXT">
+			<Text>The M22 Locust, officially Light Tank (Airborne), M22, was an American-designed airborne light tank which was produced during World War II. The Locust began development in 1941 after the British War Office requested that the American government design a purpose-built airborne light tank which could be transported by glider into battle to support British airborne forces. The United States Army Ordnance Department selected Marmon-Herrington to design and build the tank. Eight were used during Operation Varsity in March 1945. The tanks did not perform well in action; several were damaged during the landing process and one was knocked out by a German self-propelled gun. Only two Locusts were able to reach their planned rendezvous point and go into action, occupying a piece of high ground along with an infantry company.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST">
+			<Text>Animator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Art.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_ARTIST_TEXT">
+			<Text>An animator is an artist who creates images, known as frames, which give an illusion of movement called animation when displayed in rapid sequence. Animators can work in a variety of fields including film, television, and video games. Animation is closely related to filmmaking and like filmmaking is extremely labor-intensive, which means that most significant works require the collaboration of several animators. As a result of the ongoing transition from traditional 2D to 3D computer animation, the animator's traditional task of redrawing and repainting the same character 24 times a second (for each second of finished animation) has now been superseded by the modern task of developing dozens (or hundreds) of movements of different parts of a character in a virtual scene.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER">
+			<Text>Scriptwriter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_WRITER_TEXT">
+			<Text>A screenwriter (also called scriptwriter, scribe, or scenarist) is someone who practices the craft of writing for visual mass media, known as screenwriting. These can include short films, feature-length films, television programs, television commercials, video games, and the growing area of online web series. There are a legion of would-be screenwriters who attempt to enter the film industry, but it often takes years of trial and error, failure, and gritty persistence to achieve success. In Writing Screenplays that Sell, Michael Hague writes, "Screenplays have become, for the last half of [the twentieth] century, what the Great American Novel was for the first half. Closet writers who used to dream of the glory of getting into print now dream of seeing their story on the big or small screen."</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN">
+			<Text>Disc Jockey</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_HELP">
+			<Text>When you [ICON_INVEST] Purchase this unit it creates a [ICON_GREAT_WORK] Great Work of Music.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_STRATEGY">
+			<Text>Great Works give important yields, including Tourism. However they also generate Score. By combining the Timer-reducing effect of the Media Culture Tenet with the ability to Purchase Score-increasing Great Works with Gold, Prosperity is able to literally buy the spot of Score-leader and maybe even win the game purely as a result of their extreme wealth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PROSPERITY_MUSICIAN_TEXT">
+			<Text>A disc jockey, more commonly abbreviated as DJ, is a person who plays recorded music for an audience. Playing recorded music for dancing and parties rose with the mass marketing of home phonographs in the late 19th century. British radio disc jockey Jimmy Savile hosted his first live dance party in 1943 using a single turntable and a makeshift sound system. Four years later, Savile began using two turntables welded together to form a single DJ console. In 1947, the Whisky à Gogo opened in Paris as the first discotheque. In 1959, one of the first discos in Germany, the Scotch Club, opened in Aachen and visiting journalist Klaus Quirini (later DJ Heinrich) made comments, conducted audience games, and announced songs while playing records. The first song he played was the hit Ein Schiff wird kommen by Lale Andersen.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GREAT_WORK_PROSPERITY">
+			<Text>[COLOR_MAGENTA]Media Culture[ENDCOLOR] has created a [ICON_GREAT_WORK] Great Work. [COLOR_POSITIVE_TEXT]{2_GWType}[ENDCOLOR] has been added to your collection in the [COLOR_CYAN]{3_Building}[ENDCOLOR] of {1_City}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_WORK_PROSPERITY_TITLE">
+			<Text>New Great Work!</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

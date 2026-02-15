@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_en_US>
+    <Row Tag="TXT_KEY_DIARY_FORMAT"    Text="{1_icon} {2_prefix}{3_turn} - {4_entry}"/>
+    <Row Tag="TXT_KEY_DIARY_PREFIX"    Text="+"/>
+    <Row Tag="TXT_KEY_DIARY_MAYAN_SEP" Text="[NEWLINE][NEWLINE]-----[NEWLINE]"/>
+
+    <Row Tag="TXT_KEY_DIARY_NOTHING"   Text="Nothing to see here"/>
+
+    <!-- Entries with fixed end dates -->
+    <Row Tag="TXT_KEY_DIARY_GA_END"                   Text="Golden Age End"/>
+    <Row Tag="TXT_KEY_DIARY_CITY_RESISTANCE"          Text="{1_city} exits resistance"/>
+    <Row Tag="TXT_KEY_DIARY_PEACE_END"                Text="Peace Treaty Expires (with {1_civ})"/>
+    <Row Tag="TXT_KEY_DIARY_GOLD_TRADE_END"           Text="Gold Trade Expires (from {1_civ})"/>
+    <Row Tag="TXT_KEY_DIARY_GPT_TRADE_END"            Text="GPT Trade Expires (from {1_civ})"/>
+    <Row Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"   Text="GPT Trade Expires (from {1_civ} x{2_count})"/>
+    <Row Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"           Text="War with {1_civ} against {2_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"           Text="Steal Technology from {2_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"     Text="Rigging Elections in {2_cs}"/>
+    <Row Tag="TXT_KEY_DIARY_UN_VOTE"                  Text="UN Vote"/>
+    <Row Tag="TXT_KEY_DIARY_LEAGUE_VOTE"              Text="League Vote"/>
+
+    <!-- Entries with known end dates, which could be terminated by DoW -->
+    <Row Tag="TXT_KEY_DIARY_RA_COMPLETE"              Text="Research Agreement Completes (with {1_civ})"/>
+
+    <!-- Entries with calculated end dates, which will change with the players fortunes -->
+    <Row Tag="TXT_KEY_DIARY_GA_START"                 Text="Golden Age Start (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"       Text="Next Policy Choice (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"        Text="{1_tech} Researched (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_WW_COMPLETE"              Text="{1_building} (World Wonder) Completed (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_NW_COMPLETE"              Text="{1_building} (National Wonder) Completed (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"         Text="{1_project} Completed (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"        Text="[COLOR_WARNING_TEXT]BANKRUPT!!![ENDCOLOR] (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"         Text="Savings Target ([ICON_GOLD]{1_amount}) Reached (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"      Text="Automatic Faith Purchase ({1_item}) (예상)"/>
+
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"            Text="Close"/>
+    
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"       Text="[ICON_HAPPINESS_1] Include Golden Ages"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES" Text="[ICON_GOLD] Include Finances"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_CITIES"   Text="[ICON_RESISTANCE] Include Cities"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"  Text="[ICON_PRODUCTION] Include Wonders"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES" Text="[ICON_CULTURE] Include Policy Predictions"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"    Text="[ICON_RESEARCH] Include Technology Predictions"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"       Text="[ICON_RESEARCH] Include Research Agreements"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"    Text="[ICON_INFLUENCE] Include Peace Agreements"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"    Text="[ICON_INFLUENCE] Include Diplomatic Agreements"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"    Text="[ICON_SPY] Include Espionage"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"    Text="[ICON_PEACE] Include Faith Purchases"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"   Text="[ICON_INFLUENCE] Include Voting"/>
+
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"    Text="Use absolute turns"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT" Text="Check to display turn number, uncheck to display number of turns remaining."/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"      Text="Maximum entries"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"   Text="Number of entries to display in the list"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"        Text="Maximum turns"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"     Text="Entries taking longer than this to complete will be excluded.  Use 0 to include all entries."/>
+
+	  <Row Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK"      Text="Diary Options"/>
+	  <Row Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK_TT"   Text="Configure Diary options (entries, length, etc)"/>
+  </Language_en_US>
+
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_DIARY_FORMAT"    Text="{1_icon} {2_prefix}{3_turn} - {4_entry}"/>
+		<Row Tag="TXT_KEY_DIARY_PREFIX"    Text="+"/>
+		<Row Tag="TXT_KEY_DIARY_MAYAN_SEP" Text="[NEWLINE][NEWLINE]-----[NEWLINE]"/>
+
+		<Row Tag="TXT_KEY_DIARY_NOTHING"   Text="Noch kein Eintrag"/>
+
+		<Row Tag="TXT_KEY_DIARY_GA_END"                   Text="Ende des Goldenen Zeitalters"/>
+		<Row Tag="TXT_KEY_DIARY_PEACE_END"                Text="Friedensvertrag (mit {1_civ}) beendet"/>
+		<Row Tag="TXT_KEY_DIARY_GOLD_TRADE_END"           Text="Goldbetrag endet (von {1_civ})"/>
+		<Row Tag="TXT_KEY_DIARY_GPT_TRADE_END"            Text="Gold pro Runde endet (von {1_civ})"/>
+		<Row Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"   Text="Gold pro Runde endet (von {1_civ} x{2_count})"/>
+		<Row Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"           Text="Gemeinsamer Krieg mit {1_civ} gegen {2_civ}"/>
+		<Row Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"           Text="Technologie gestohlen von {2_civ}"/>
+		<Row Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"     Text="Wahlmanipulation in {2_cs}"/>
+		<Row Tag="TXT_KEY_DIARY_UN_VOTE"                  Text="Runde(n) bis zur UN Abstimmung"/>
+		<Row Tag="TXT_KEY_DIARY_LEAGUE_VOTE"              Text="Verabschiedung von Resolutionen"/>
+
+		<!-- Entries with known end dates, which could be terminated by DoW -->
+		<Row Tag="TXT_KEY_DIARY_RA_COMPLETE"              Text="Forschungsabkommen (mit {1_civ}) beendet"/>
+
+		<!-- Entries with calculated end dates, which will change with the players fortunes -->
+		<Row Tag="TXT_KEY_DIARY_GA_START"                 Text="Runde(n) bis zum Goldenen Zeitalter"/>
+		<Row Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"       Text="Runde(n) bis zur nächsten Sozialpolitik"/>
+		<Row Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"        Text="Runde(n) bis {1_tech} erforscht"/>
+		<Row Tag="TXT_KEY_DIARY_WW_COMPLETE"              Text="Runde(n) bis {1_building} (Welt Wunder) fertig gestellt"/>
+		<Row Tag="TXT_KEY_DIARY_NW_COMPLETE"              Text="Runde(n) bis {1_building} (National Wunder) fertig gestellt"/>
+		<Row Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"         Text="Runde(n) bis {1_project} fertig gestellt"/>
+		<Row Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"        Text="Runde(n) bis zum [COLOR_WARNING_TEXT]Bankrot![ENDCOLOR]"/>
+		<Row Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"         Text="Runde(n) bis Zielsumme ([ICON_GOLD]{1_amount}) erreicht"/>
+		<Row Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"      Text="Runde(n) bis zum automatischen Glaubenskauf ({1_item})"/>
+
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"            Text="Schließen"/>
+
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"       Text="[ICON_HAPPINESS_1] Goldene Zeitalter anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES" Text="[ICON_GOLD] Finanzen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"  Text="[ICON_PRODUCTION] Wunder anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES" Text="[ICON_CULTURE] Sozialpolitik Prognosen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"    Text="[ICON_RESEARCH] Technologie Prognosen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"       Text="[ICON_RESEARCH] Forschungsabkommen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"    Text="[ICON_PEACE] Friedensabkommen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"    Text="[ICON_INFLUENCE] Diplomatieabkommen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"    Text="[ICON_SPY] Spionage anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"    Text="[ICON_PEACE] Kauf mit Glauben"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"   Text="[ICON_INFLUENCE] Abstimmungen anzeigen"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"    Text="Absolute Runden"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT" Text="Wähle zwischen der absoluten und den verbleibenden Runden."/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"      Text="Maximale Einträge"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"   Text="Anzahl der Einträge, die in der Liste zu sehen sind"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"        Text="Maximale Runden"/>
+		<Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"     Text="Keine Einträge anzeigen, die länger als die vorgegeben Runden dauern.  0 zeigt alle Einträge an."/>
+	</Language_DE_DE>
+
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_DIARY_FORMAT"    Text="{1_icon} {2_prefix}{3_turn} - {4_entry}"/>
+    <Row Tag="TXT_KEY_DIARY_PREFIX"    Text="+"/>
+    <Row Tag="TXT_KEY_DIARY_MAYAN_SEP" Text="[NEWLINE][NEWLINE]-----[NEWLINE]"/>
+
+    <Row Tag="TXT_KEY_DIARY_NOTHING"   Text="여기에는 볼 것이 없음"/>
+
+    <!-- 고정된 종료 날짜가 있는 항목 -->
+    <Row Tag="TXT_KEY_DIARY_GA_END"                   Text="황금기 끝"/>
+    <Row Tag="TXT_KEY_DIARY_CITY_RESISTANCE"          Text="{1_city}시가 저항에서 벗어남"/>
+    <Row Tag="TXT_KEY_DIARY_PEACE_END"                Text="평화 협정 만료: {1_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_GOLD_TRADE_END"           Text="골드 교역 만료: {1_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_GPT_TRADE_END"            Text="GPT 교역 만료: {1_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"   Text="GPT 교역 만료: {1_civ} x{2_count}"/>
+    <Row Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"           Text="{2_civ}에 대한 {1_civ}와의 협동 전쟁"/>
+    <Row Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"           Text="기술 훔치기: {2_civ}"/>
+    <Row Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"     Text="선거 조작: {2_cs}"/>
+    <Row Tag="TXT_KEY_DIARY_UN_VOTE"                  Text="국제연합 투표"/>
+    <Row Tag="TXT_KEY_DIARY_LEAGUE_VOTE"              Text="연맹 투표"/>
+
+    <!-- DoW에 의해 종료될 수 있는 알려진 종료 날짜가 있는 항목 -->
+    <Row Tag="TXT_KEY_DIARY_RA_COMPLETE"              Text="연구 협약 완료: {1_civ}"/>
+
+    <!-- 플레이어의 운명에 따라 변경될 수 있는 계산된 종료 날짜가 있는 항목 -->
+    <Row Tag="TXT_KEY_DIARY_GA_START"                 Text="황금기 시작 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"       Text="다음 정책 선택 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"        Text="{1_tech} 연구 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_WW_COMPLETE"              Text="{1_building} (세계 불가사의) 완성 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_NW_COMPLETE"              Text="{1_building} (국가 불가사의) 완성 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"         Text="{1_project} 완료 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"        Text="[COLOR_WARNING_TEXT]파산!!![ENDCOLOR] (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"         Text="저축 목표액 ([ICON_GOLD] {1_amount} 골드) 달성 (예상)"/>
+    <Row Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"      Text="자동 신앙 구매 ({1_item}) (예상)"/>
+
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"            Text="닫기"/>
+    
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"       Text="[ICON_HAPPINESS_1] 황금기 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES" Text="[ICON_GOLD] 재정 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_CITIES"   Text="[ICON_RESISTANCE] 도시 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"  Text="[ICON_PRODUCTION] 불가사의 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES" Text="[ICON_CULTURE] 정책 예측 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"    Text="[ICON_RESEARCH] 기술 예측 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"       Text="[ICON_RESEARCH] 연구 협약 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"    Text="[ICON_INFLUENCE] 평화 협정 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"    Text="[ICON_INFLUENCE] 외교 협정 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"    Text="[ICON_SPY] 스파이 활동 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"    Text="[ICON_PEACE] 신앙 구매 포함"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"   Text="[ICON_INFLUENCE] 투표 포함"/>
+
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"    Text="절대 턴 사용"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT" Text="선택하면 턴 숫자가 표시되고, 선택 해제하면 남은 턴 숫자가 표시됩니다."/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"      Text="최대 항목"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"   Text="목록에 표시할 항목 수"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"        Text="최대 턴"/>
+    <Row Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"     Text="이보다 더 오랜 시간이 걸리는 항목은 제외됩니다. 모든 항목을 포함하려면 0을 사용합니다."/>
+
+	  <Row Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK"      Text="일기 설정"/>
+	  <Row Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK_TT"   Text="일기 설정 구성 (항목, 길이, 기타 등등)"/>
+  </Language_ko_KR>
+</GameData>

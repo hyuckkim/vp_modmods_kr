@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="ab0e0b35-5899-4dc2-9ffd-762c2b57e450" version="15">
+<Mod id="5d9ccb7a-9c04-499b-afdf-c6b4a3410612" version="15">
   <Properties>
     <Name>Really Advanced Setup INT</Name>
     <Stability>Beta</Stability>
@@ -8,6 +8,7 @@
     <Authors>HANDANI</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -25,11 +26,49 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="07AC3CFB17BD537006037A283822C80C" import="0">XML/GTAS_HelpText.xml</File>
+    <File md5="CC40996E9886E3313B75A87D72449EB2" import="0">Lua/GTAS_ScrollText.lua</File>
+    <File md5="CBB85773E475C18794799C7D08CA666D" import="0">Lua/GTAS_StartBias.lua</File>
+    <File md5="33470532661B80DDD3F71C4EDE13E785" import="0">PlotPlacement/GTAS_PlotPlacement.lua</File>
+    <File md5="EF443883A20D386BAFB1D73BE5F3151B" import="0">Types/GTAS_ResourceTypes.lua</File>
+    <File md5="CD9288852966DDC28B7C8F19C1C00B33" import="0">Types/GTAS_WonderTypes .lua</File>
+    <File md5="6974907A071775D0FD22B1F866BA741B" import="0">UI Overrides/AdvancedSetup.lua</File>
+    <File md5="2982D843A9EFF34A97B6D93736394E6F" import="0">UI Overrides/AdvancedSetup.xml</File>
+    <File md5="42E33ABC24DC45D25E76CF37E94E66A0" import="0">UI/CivBonus/GTAS_CivFeatures.xml</File>
+    <File md5="CEDAD3E53C84CAB3631EF09737C5222F" import="0">UI/CivBonus/GTAS_CivResources.xml</File>
+    <File md5="F4E85EBD9496A88CCBD5D106BA2AF8BB" import="0">UI/CivBonus/GTAS_CivStartBonus.xml</File>
+    <File md5="8BDFDD57C1480A82116412C2DDD3D7D7" import="0">UI/CivBonus/GTAS_CivTerrain.xml</File>
+    <File md5="557F5369FC51C63A02791927E61EB140" import="0">UI/CivBonus/GTAS_CivUnits.xml</File>
+    <File md5="96815EB3D482590C0DF3E7E3D48662C8" import="0">UI/CivBonus/GTAS_CivWonders.xml</File>
+    <File md5="503C60B85AD71BE50185AEA0105313E6" import="0">UI/Main/GTAS_CivBonusPanel.xml</File>
+    <File md5="BA8E6195879BBD9444544BE0D80EA027" import="0">UI/Main/GTAS_CivPanel.xml</File>
+    <File md5="AD58D964C48D47FB56448545D97AE7C9" import="0">UI/Main/GTAS_GamePanel.xml</File>
+    <File md5="D99B34007EF20F8AF0F3A187463925BA" import="0">UI/Main/GTAS_MapBonusPanel.xml</File>
+    <File md5="3EEBE2FBB44B8E322A004C45520125E6" import="0">UI/Main/GTAS_MapPanel.xml</File>
+    <File md5="5E1C60978B07CB5AA89C1C5E04339FC6" import="0">UI/MapBonus/GTAS_MapFeatures.xml</File>
+    <File md5="6F479E5B3437C32CCF72C3AC7449CAA7" import="0">UI/MapBonus/GTAS_MapResources.xml</File>
+    <File md5="232CC52E79C675C4AE0AFC16E92C99FF" import="0">UI/MapBonus/GTAS_MapTerrain.xml</File>
+    <File md5="08BECDF59EBF264DCDD9C46F28C68037" import="0">UI/MapBonus/GTAS_MapWonders.xml</File>
+    <File md5="F8BC20FA4173BA14D3F5A2F8B03A93EC" import="0">XML/GTAS_HelpText.xml</File>
     <File md5="552C32EA0811D7FF4B2D5CD72D5E284A" import="0">XML/GTAS_ModText.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivFeatures.xml</UpdateDatabase>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivResources.xml</UpdateDatabase>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivStartBonus.xml</UpdateDatabase>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivTerrain.xml</UpdateDatabase>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivUnits.xml</UpdateDatabase>
+      <UpdateDatabase>UI/CivBonus/GTAS_CivWonders.xml</UpdateDatabase>
+      <UpdateDatabase>UI/Main/GTAS_CivBonusPanel.xml</UpdateDatabase>
+      <UpdateDatabase>UI/Main/GTAS_CivPanel.xml</UpdateDatabase>
+      <UpdateDatabase>UI/Main/GTAS_GamePanel.xml</UpdateDatabase>
+      <UpdateDatabase>UI/Main/GTAS_MapBonusPanel.xml</UpdateDatabase>
+      <UpdateDatabase>UI/Main/GTAS_MapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>UI/MapBonus/GTAS_MapFeatures.xml</UpdateDatabase>
+      <UpdateDatabase>UI/MapBonus/GTAS_MapResources.xml</UpdateDatabase>
+      <UpdateDatabase>UI/MapBonus/GTAS_MapTerrain.xml</UpdateDatabase>
+      <UpdateDatabase>UI/MapBonus/GTAS_MapWonders.xml</UpdateDatabase>
+      <UpdateDatabase>UI Overrides/AdvancedSetup.xml</UpdateDatabase>
       <UpdateDatabase>XML/GTAS_HelpText.xml</UpdateDatabase>
       <UpdateDatabase>XML/GTAS_ModText.xml</UpdateDatabase>
     </OnModActivated>

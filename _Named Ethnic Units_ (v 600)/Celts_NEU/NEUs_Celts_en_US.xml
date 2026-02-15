@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--CELTS-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_WARRIOR">
+			<Text>[COLOR_SELECTED_TEXT]Gallic Warrior[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Cleddyf Hir[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_SCOUT">
+			<Text>[COLOR_SELECTED_TEXT]Mordaith[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_SWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Horned Swordsman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Highlander Regiment[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_CELTS_CROSSBOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Cymru Longbowman[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

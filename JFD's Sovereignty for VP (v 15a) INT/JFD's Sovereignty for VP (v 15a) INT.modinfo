@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="791acb48-d815-4fce-af18-26bdeab368d5" version="15">
+  <Properties>
+    <Name>JFD's Sovereignty for VP (v 15a) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the JFD's Sovereignty for VP</Teaser>
+    <Description>Translation of the JFD's Sovereignty for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP JFD의 주권 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>hyuckkim</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/hyuckkim/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d769cac9-5608-4826-9f7f-2d308b287ea6" minversion="0" maxversion="999" title="JFD's Sovereignty for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="12B39A68C09BB8B937A7AADBD97DC5CA" import="0">Core/Sovereignty_Buildings.sql</File>
+    <File md5="102F4300E8EA416FE959FB63E0FAD6F7" import="0">Core/Sovereignty_GameText.sql</File>
+    <File md5="974D92948510F71D123D3E704D75B64C" import="0">Core/Sovereignty_GameText.xml</File>
+    <File md5="DEFAF6AE8631C1283BB48CB8EB76AEEC" import="0">Core/Sovereignty_GameText_Interface.xml</File>
+    <File md5="D50FF1F877F0CB8883040C7BF37CD7B4" import="0">Core/Sovereignty_GameText_Reforms.xml</File>
+    <File md5="6F4B7EA2207C9B3BB54788998F743766" import="0">Core/Sovereignty_GameText_Titles.xml</File>
+    <File md5="62F217987B76375A26044E862BDD7DF7" import="0">Core/Sovereignty_Wonders.sql</File>
+    <File md5="A215BB4303233709DE837D26E5A671D2" import="0">Lua/Utilities/JFD_Sovereignty_Utils.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/Sovereignty_Buildings.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Interface.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Reforms.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_GameText_Titles.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Sovereignty_Wonders.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

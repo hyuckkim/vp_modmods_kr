@@ -1,0 +1,104 @@
+Units
+-- Scout Units have 2 Movement
+-- Scout Units have Ignore Terrain Cost from:
+  Forest
+  Jungle
+  Hill
+  Desert
+-- +2 Combat Strength to all Scout class units
+-- +2 Combat Strength to all Explorer class units
+-- +3 Combat Strength to all Commando class units
+-- +4 Combat Strength to all Paratrooper class units
+
+Terrain
+  revert changes that simplified the combat bonuses on tiles
+-- -10% Defense in Tundra and Desert
+-- -15% Defense in Snow
+-- +15% Defense in Marsh and Oasis
+-- +10% Defense in Flood Plains
+
+Improvements
+-- +15% Defense on Town
+-- +10% Defense on Village and Manufactory
+
+Unit Promotions
+  the theme here is to either negate or flip terrain effects
+  first rework the Trailblazer line
+  -- Trailblazer I
+    +25% Attack in Forest and Jungle
+    +10% Strength outside Friendly Territory
+  -- Trailblazer II
+    +20% Defense in Tundra and Desert
+    +10% Strength outside Friendly Territory
+  -- Trailblazer III
+    +1 Move (on land)
+    Can move after attacking
+    Ignore Zone of Control
+
+  now rework some existing promos
+  -- Altitude Training (Mt. Kili promo)
+    Recon units can learn with Survivalism I or Trailblazer II
+    +20% Attack in Hills
+    Can move through Mountains
+
+  -- Infiltrators (+15% CS Outside, +15% against Wounded, +10% if not adjacent)
+    Recon can learn with Covert II, see below
+
+  -- Coup de Grace (+30% against enemies below half HP)
+    Recon can learn with Covert II, see below
+
+  -- Amphibious 
+   Now requires Sailing tech, to stop early scout pick for stupid AI
+   Recon units can learn with Survivialism II or Trailblazer I
+
+  -- Frogman
+   Requires Amphibious and Railroad tech
+   Loses no penalty from attacking by sea (obsolete with Amphib)
+   Gains +1 Embarked Movement
+
+  -- Commando (Commando promotion)
+   Now called Tactical Retreat (couldn't civilopedia search for it!)
+   Requires Railroad
+   Requires Survivalism III or Trailblazer III
+   Not free for Commando anymore (kept on the Kelpht)
+
+  -- Ambush I 
+   Recon can learn with Surivalism II or Trailblazer II
+
+  now add some more promotions
+  -- Ski Infantry
+    Requires Altitude Training
+    Double Movement and no costs in Snow and Mountain
+    +25% Attack in Mountain
+    +30% Defense in Snow
+
+  -- Stillwater Training
+    Requires Amphibious
+    +15% Attack in Marsh and Oasis
+    Applies a "Venom" Plague that reduces healing for 3 turns    
+
+  -- Sabateur I
+    Requires Survivalism I or Trailblazer I and the Masonry tech (AI)
+    +33% against Siege
+    15 Science from Pillaging, scaling with Era
+
+  -- Sabateur II
+    +33% against Siege
+    15 Science from Pillaging, scaling with Era
+
+  -- Demolition Expert
+    Requires Sabateur II or Commando, and Dynamite tech
+    15 AoE damage on Pillaging
+
+  -- Covert I
+    Requires Amphibious or Sabateur I
+    10 Healing at start of turn in enemy territory
+    +50% Attack against Fortified enemies
+
+  -- Covert II
+    10 Healing at start of turn in enemy territory
+    +50% Attack against Fortified enemies
+
+  -- Black Ops
+    Requires Covert II or Frogman, and Dynamite
+    +50% Attack against Full Health Units

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT16" FontStyle="Base" Color="Beige" ColorSet="Beige_Black" ID="SummaryBar" Hidden="1">
+  <Instance Name="SummaryInstance" >
+    <TextButton Anchor="R,T" String="SUMMARY!" ColorLayer0="255,0,255,255" ID="SummaryButton" ToolTipType="TooltipTypeTopPanel"/>
+  </Instance>
+
+  <!-- Compatibility with Enhanced User Interface -->
+  <Image Anchor="C,T" Texture="TopPanelBar.dds" Size="512,32" ConsumeMouse="true" ID="TopPanelBarC" Hidden="1">
+	<Image Anchor="L,T" AnchorSide="O,I" Offset="-9,-30" Texture="Dec32x64Left.dds" Size="32,64" ConsumeMouse="true" />
+	<Image Anchor="R,T" AnchorSide="O,I" Offset="-9,-30" Texture="Dec32x64Right.dds" Size="32,64" ConsumeMouse="true" />
+  </Image>
+
+  <!-- If the summaries overlay the Turn/Date/Help/Menu buttons, increase 300 below to shift the summaries further left -->
+  <Stack Anchor="R,T" Offset="300,6" Padding="10" StackGrowth="Left" ID="SummaryStack"/>
+</Context>

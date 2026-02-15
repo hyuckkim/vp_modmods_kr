@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "World Congress Reformation INT", "World Congress Reformation INT\World Congress Reformation INT.civ5proj", "{26893705-0554-43D9-884F-BB83A3EC8B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Default|x86.ActiveCfg = Default|x86
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Default|x86.Build.0 = Default|x86
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Package Only|x86.ActiveCfg = Package Only|x86
+		{26893705-0554-43D9-884F-BB83A3EC8B4C}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

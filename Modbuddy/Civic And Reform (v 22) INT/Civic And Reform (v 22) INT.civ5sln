@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Civic And Reform (v 22) INT", "Civic And Reform INT\Civic And Reform (v 22) INT.civ5proj", "{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Default|x86.ActiveCfg = Default|x86
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Default|x86.Build.0 = Default|x86
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Package Only|x86.ActiveCfg = Package Only|x86
+		{C3FE785C-74DB-4AD9-8519-FF7C768A55A4}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

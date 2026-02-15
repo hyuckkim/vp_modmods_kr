@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cc0273b5-b46c-4b70-a9f1-e89fc08e373f" version="1">
+  <Properties>
+    <Name>Renewable Energy</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>More realistic alternative to Solar Plant Fix</Teaser>
+    <Description>This mod is meant to be a more realistic alternative to my Solar Plant Fix mod. 
+
+-Instead of the Desert restriction, Solar Plant cannot be built on or next to Snow or Tundra tiles 
+This simulates their impracticality near the poles where they would get a lot less sunlight and helps to limit them as the Desert tile restriction used to, but no where near as badly. 
+
+-Solar Plant requires Aluminum 
+Realistic and helps to limit them, so they aren't the obvious choice if you would rather spend your Uranium on something other than Nuclear Plants...you know, like nuclear powered toaster ovens.
+
+-Solar Plants are half as powerful as Nuclear Plants
+For realism
+
+-New building: Wind Farm (at Ecology)
+Requires Solar Plant. Together they are as strong as a Nuclear Plant, but cost more to build and maintain.
+
+
+--Compatibiliy--
+-Alternative to Solar Plant Fix, so can't have both
+-Works well with Nuclear Plant Fix, if you want even more realism
+-Built into Techtree Overhaul, though with some adjustments
+
+--Direct Download--
+For direct download if Steam is acting up or you are a Mac user: 
+
+Just open the zip file and copy/paste or move the folder inside to your Civ 5 Mods folder alongside your other mods and it should appear in your mod list in game.</Description>
+    <Authors>Tofusojo</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks>
+    <Mod id="8c38b888-642e-4912-b5e4-7546800001c3" minversion="0" maxversion="999" title="Solar Plant Fix" />
+    <Mod id="265a41e4-afb6-45d3-b361-fa16d74a8a70" minversion="0" maxversion="999" title="Techtree Overhaul" />
+  </Blocks>
+  <Files>
+    <File md5="6BA2151F601DA323E9D0D5EB456BA1D4" import="0">Art/Art.xml</File>
+    <File md5="9BEDE3AFEF2215DAE58D5C127E1C5204" import="1">Art/TTOmodIconAtlas128.dds</File>
+    <File md5="456FEB2131EB76A9CF4C27237326B186" import="1">Art/TTOmodIconAtlas256.dds</File>
+    <File md5="FAEBFB5FCCF4C3E9144A58914CD85BCA" import="1">Art/TTOmodIconAtlas45.dds</File>
+    <File md5="EE9DD94460CD95773C538B420EA114FC" import="1">Art/TTOmodIconAtlas64.dds</File>
+    <File md5="656C096DE18CE8F2E72B2C89AA66E1E9" import="0">Renewable Energy.xml</File>
+    <File md5="9F3D39CE29001E0943C5F5C474DC3165" import="0">Solar Plant Fix.lua</File>
+    <File md5="0BD82A6C128CABCA965E46A126BB8431" import="0">Text.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Renewable Energy.xml</UpdateDatabase>
+      <UpdateDatabase>Text.xml</UpdateDatabase>
+      <UpdateDatabase>Art/Art.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Solar Plant Fix.lua">
+      <Name>Solar Plant Fix</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

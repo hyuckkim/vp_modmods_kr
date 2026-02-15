@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c12bdc20-b6f7-4547-a9b8-f6ac4c1bcfeb" version="2">
+  <Properties>
+    <Name>Music Changer</Name>
+    <Teaser>This very simple mod adds a button on the top right corner of the screen that allows you to skip the current music playing.</Teaser>
+    <Description>This very simple mod adds a button on the top right corner of the screen that allows you to skip the current music playing, thus avoiding going [ICON_HAPPINESS_3] crazy while having to listen to the songs you dislikes.</Description>
+    <Authors>Richard</Authors>
+    <SpecialThanks>whoward69</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4B9E5F8C9802DA5CB61E2B564DA77359" import="0">UI/Select.lua</File>
+    <File md5="BC7242168F0E97ACE9189AC4EDC560A4" import="0">UI/Select.xml</File>
+    <File md5="A040BC92C893F01AB9C92F1D5227E930" import="0">UI/MusicButton.lua</File>
+    <File md5="7E2BCBE360A97A88AE57A0C23C75A727" import="0">UI/MusicButton.xml</File>
+    <File md5="92F34704E4A72996A975903099BCB1CF" import="0">XML/SelectText.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/SelectText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/MusicButton.xml">
+      <Name>MusicButton</Name>
+      <Description>The music button</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

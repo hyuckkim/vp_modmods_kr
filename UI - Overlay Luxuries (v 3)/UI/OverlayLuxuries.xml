@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context Name="Luxuries" Hidden="1">
+  <Box ID="LuxuriesOptions" Anchor="R,B" Size="200,180" Offset="0,0" Color="0,0,0,0">
+	  <Image Anchor="C,T" Offset="0,5" Texture="bar300x2.dds" TextureOffset="100,0" Size="140,1" />
+
+	  <Container ID="SelectedLuxuries">
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,5"    TextOffset="30,0" IsChecked="0" ID="RESOURCE_WHALE" String="[ICON_RES_WHALE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,28"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_PEARLS" String="[ICON_RES_PEARLS]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,51"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_CRAB" String="[ICON_RES_CRAB]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,74"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_TRUFFLES" String="[ICON_RES_TRUFFLES]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,97"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_IVORY" String="[ICON_RES_IVORY]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,120"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_FUR" String="[ICON_RES_FUR]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,143"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_MARBLE" String="[ICON_RES_MARBLE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="10,166"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_SALT" String="[ICON_RES_SALT]" />
+
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,5"    TextOffset="30,0" IsChecked="0" ID="RESOURCE_COPPER" String="[ICON_RES_COPPER]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,28"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_GOLD" String="[ICON_RES_GOLD]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,51"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_SILVER" String="[ICON_RES_SILVER]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,74"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_GEMS" String="[ICON_RES_GEMS]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,97"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_SUGAR" String="[ICON_RES_SUGAR]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,120"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_CITRUS" String="[ICON_RES_CITRUS]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,143"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_PEPPER" String="[ICON_RES_PEPPER]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="70,166"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_COCOA" String="[ICON_RES_COCOA]" />
+
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,5"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_DYE" String="[ICON_RES_DYE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,28"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_SILK" String="[ICON_RES_SILK]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,51"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_COTTON" String="[ICON_RES_COTTON]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,74"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_WINE" String="[ICON_RES_WINE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,97"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_INCENSE" String="[ICON_RES_INCENSE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,120" TextOffset="30,0" IsChecked="0" ID="RESOURCE_SPICES" String="[ICON_RES_SPICES]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,143" TextOffset="30,0" IsChecked="0" ID="RESOURCE_CLOVES" String="[ICON_RES_CLOVES]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="130,166" TextOffset="30,0" IsChecked="0" ID="RESOURCE_NUTMEG" String="[ICON_RES_NUTMEG]" />
+    </Container>
+  </Box>
+</Context>

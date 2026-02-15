@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d600c443-2f04-469a-9475-e857284d5992" version="20">
+  <Properties>
+    <Name>New Beliefs Mods</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Adds new Founder, Enhancer, Follower and Reformation beliefs to the game.</Teaser>
+    <Description>Adds new Founder, Enhancer, Follower and Reformation beliefs to the game.</Description>
+    <Authors>pineappledan, HungryForFood</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+    <Dlc id="BBB0D085-A0B1-4475-B007-3E549CF3ADC3" minversion="0" maxversion="999" />
+	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="bf8df7545832e55cbe13bdce0c1b8715" import="0">Code/EnhancerModifications.sql</File>
+    <File md5="838ece1033bf7c7468e873e79ba2a3ec" import="0">Code/FollowerModifications.sql</File>
+	<File md5="f4afe93ad799484b1d512cc20e93efd1" import="0">Code/FounderModifications.sql</File>
+	<File md5="1d88cdbd59663dcdab7a4011e43c57d6" import="0">Code/ReformationModifications.sql</File>
+    <File md5="3588b8a8010f88846007457cf3cb87fd" import="0">Code/NewBeliefs.sql</File>
+    <File md5="df4f398bc90c4281e5ae23d3c4e3a65d" import="0">Code/NewBeliefsText.xml</File>
+	<File md5="fe6d1fed11fa60277fb6a2f73efb8be2" import="0">Code/NewBeliefs.lua</File>
+	<File md5="1faa54e75907ac6d60e102855f8d2fb8" import="1">Art/MoreBeliefs032.dds</File>
+	<File md5="198b1b3c7cfb3cd29ff1b2bb101964d2" import="1">Art/MoreBeliefs045.dds</File>
+	<File md5="b22aec18befbaf9a5288d0e94d6edb00" import="1">Art/MoreBeliefs064.dds</File>
+	<File md5="82865ed4a2ef3d9313425c500e795083" import="1">Art/MoreBeliefs080.dds</File>
+	<File md5="a63af842f309efb1c595d08abc760e15" import="1">Art/MoreBeliefs128.dds</File>
+	<File md5="47d1484af08bad90b2452cdd2d1a5cab" import="1">Art/MoreBeliefs256.dds</File>
+	<File md5="7fe3215701ed0c61d1886f31a0e4c732" import="1">Art/PDanNewBeliefs_PI_016.dds</File>
+	<File md5="fb1ba6a5348da6fc7b86f7ab1c27ca02" import="1">Art/PDanNewBeliefs_PI_032.dds</File>
+	<File md5="93d3b2e899f17c9aaf79f4660e742de3" import="1">Art/PDanNewBeliefs_PI_045.dds</File>
+	<File md5="4ba4d076b6ac69dbce6f81ddd3d3c14f" import="1">Art/PDanNewBeliefs_PI_064.dds</File>
+	<File md5="b46847d6d71620f0d96531ff0aff53e8" import="1">Art/PDanNewBeliefs_PI_256.dds</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Code/EnhancerModifications.sql</UpdateDatabase>
+	  <UpdateDatabase>Code/FollowerModifications.sql</UpdateDatabase>
+	  <UpdateDatabase>Code/FounderModifications.sql</UpdateDatabase>
+	  <UpdateDatabase>Code/ReformationModifications.sql</UpdateDatabase>
+      <UpdateDatabase>Code/NewBeliefs.sql</UpdateDatabase>
+      <UpdateDatabase>Code/NewBeliefsText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+	<EntryPoint type="InGameUIAddin" file="Code/NewBeliefs.lua">
+		<Name>Akapana Bonus</Name>
+		<Description>Challa Ritual for Akapana</Description>
+	</EntryPoint>
+  </EntryPoints>
+</Mod>

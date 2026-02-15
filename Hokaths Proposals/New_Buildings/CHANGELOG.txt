@@ -1,0 +1,176 @@
+New Buildings
+  It's been noted that later in the game there are slightly too few buildings, let's start to address that
+
+  Archive (Theology)
+  -- 1 Science and Culture
+  -- +2 Gold from Oases (from Garden)
+   - Garden moved back to Civil Service and its Citrus and Cocoa bonuses moved to Circus
+  -- 2 Slots for Writing, +2 Culture and +1 Science if Themed
+   - Amphitheater reduced to 1 Slot
+   - Artistry Cultural Exchange buffs Archive instead of Amphitheater
+  -- When a GP is born here, gain 50% of your Empire's Tourism output as Science and Culture
+    New "tall" effect to be built in Cities specialized in generating GPs
+  -- The Chartarium Religious NW gives +3 Faith to all Archives
+  -- Reformations rebalanced as follows
+   - Faith of the Masses now Amphi, Opera, and Broadcast; +2 Faith; +2 Food/Prod/Culture per Luxury
+   - Divine Teachings now Uni, School, Lab; +2 Sci; 15 Gold when Spreading
+   - NEW Custodianship is Archive, Gallery, Museum; +2 Tourism; +5 Food, 3 Sci, 2 Tourism in Cities over 20 pop
+
+  Observatory
+    No longer has a Policy requirement
+    Requires a University in the City
+    +1 (from 2) Science and 1 (from 2) Scientist Slot(s)
+      They unlock at Astronomy in T1 Renaissance, as makes sense!
+      Public School loses its Scientist slot to keep the number of slots the same. (not like highschoolers are making serious breakthroughs)
+    +3 Science from Atolls
+      As many Observatories are located here as opposed to Mountains
+    +1 Science and GA Point to Harbor in the City
+    +25% Sea Route Range
+    Harbor reduced from 50% Range to 25% Range
+      Astrolabes etc.
+    +1 Faith from Buildings that must be purchased with Faith
+      Religious significance of observatories even into more recent history -- see the pedia text!
+
+  Sewer (Steam Power)
+    sits between Grocer and Hospital in the growth line
+  -- +1 Science
+  -- 50% Food output as instant yield on Citizen Birth
+  -- 10% Food carried over on Citizen Birth
+  -- +1 Food and +1 Science on Lake
+  -- +2 Science on Marsh
+    even with Windmill these tiles were bad for Industrial+
+  -- +1 Production from River tiles
+    not enough pro-River bonuses for my liking. Helps pay for construction cost.
+  -- 1 Poverty reduction
+  -- 1 Poverty reduction removed from Grocer (renamed Apothecary and icon changed)
+
+  Restaurant (Biology)
+    sits between Zoo and Stadium in the instant yield line
+  -- +2 Food and +1 Culture
+  -- +400 Gold when Built
+  -- +1 Culture from nearby Farms
+  -- +2 Culture from nearby Plantations
+  -- +2 Gold and Tourism from Hotel, Agribusiness, and Marina in the City
+    none of these are essential/guaranteed 
+  -- 1 Urbanization reduction
+
+  Cinema (Electricity)
+    requires a Gallery
+  -- +2 Culture
+  -- +1 Happiness
+  -- +2 Gold, Science, and Culture from Writers, Artists, and Musicians
+  -- +1 Gold and Tourism from Desert tiles
+  -- +2 Science from Village and Town  
+  -- +4 Science and +2 Culture at Computers
+
+  Airfield (Replaceable Parts)
+    required for the Airport and Military Base
+    required to purchase Fighter, Bomber, and Helicopter Units
+  -- +2 Science
+  -- 50 HP, 5 Dmg to Air Strikes
+  -- +2 Gold and Tourism per World Wonder in the City
+  -- +20% Production to Air and Hovering Units
+  -- +1 Air Unit Capacity
+    Airport reduced to +2, Military Base gains +1
+
+  ------ Three mutually exclusive buildings -----
+  Country Club (Atomic Theory)
+  -- Requires Hotel and Stock Exchange, exclusive with Ski Resort and Marina
+  -- +2 Gold and Culture
+  -- +2 Gold and Culture from Villages, Towns, and Lakes
+  -- 5% Gold converted to Culture
+  -- 1 Urbanization reduction
+
+  Ski Resort (Rocketry)
+  -- Requires Hotel and nearby Mountain, exclusive with Country Club and Marina
+  -- +5 Border Growth
+  -- +5 Gold, Culture, and Tourism per 2 Mountains
+  -- +1 Gold, Culture, and Tourism per 2 Tundra
+  -- +1 Gold, Culture, and Tourism per Snow
+  -- 20% of Tourism converted to Gold
+  -- 1 Urbanization reduction
+
+  Marina (Refrigeration)
+  -- Requires Hotel and Seaport, exclusive with Ski Resort and Country Club
+  -- +3 Food
+  -- +1 Gold, Culture, and Tourism from Coast (not Ocean)
+  -- +2 Gold, Culture, and Tourism from Atolls
+  -- 20% of Tourism converted to Gold
+  -- +5 Gold from Sea Trade Routes
+  -- 1 Urbanization reduction
+  --------------------------------------
+  
+  Supermarket (Refrigeration)
+  -- Requires Hospital and Industrial Connection
+  -- +4 Food
+  -- Converts 25% Gold Purchases to Food
+  -- +50% City Connection Yields
+    Lowered from 200% because we have Airports now (and it affects Production!)
+  -- 1 Urbanization reduction
+  -- Internal Routes get +10 Food
+    
+  Hospital has Urbanization removed (down from 2) to conserve total amount available
+    was already a very strong building and you can get free ones with Universal Healthcare
+
+  Pipeline (Combined Arms)
+  -- Requires Factory and Industrial Connection
+    Factory req. means you need to spend a Coal
+  -- +2 Science
+  -- 20 Production and Science on border expand, scaling with Era
+  -- +50% City Connection Yields
+  -- Internal Routes get +6 Production
+  -- +2 Production, Gold, and Border Growth Points for all Oil in the Empire
+    This is an Interpretive Centre-style bonus for Oil that will hopefully make even "colony cities" worth it
+    Though you have a bit of work to get it online!
+
+  Ice Station (Nuclear Fission)
+  -- Requires adjacent Snow tile
+  -- +5 Food and Science
+  -- 5% Science in *all Cities*
+    You can read this as Snow Cities being free from the empire cost scaler on tech costs
+  -- +3 Science from Snow tiles
+  -- +1 Science from Sea tiles
+  
+  Arcade (Computers)
+  -- +2 Gold, Science, and Culture, with another +8 at The Internet
+  -- 35 Science on new Citizen Birth, scaling with Era
+  -- 100 Culture on Tech unlock, scaling with Era
+  -- *No* Unhappiness from Boredom
+    intended to be a building that lets Science civs delay Cultural Dominance over themselves
+
+  Mass Transit (Electronics)
+  -- +3 Production and Tourism
+  -- +20% All Yields output as instant boost on new Citizen Birth
+  -- +10 Food to all Power Plants
+  -- -1 Poverty
+  -- Required 2 Iron and an Industrial Connection
+    Intended to be a greedy building for the late game. Risky if you might need the Iron.
+
+  Police Station moved to Radar
+
+  Nightclub (Telecom)
+  -- +3 Gold and Culture
+  -- 750 Tourism when built
+  -- 200% Tourism output as instant boost on new Citizen Birth
+    combo with Supermarket and Food focus for the final burst of Tourism before the end
+  -- 50 Tourism from Spy Action (with Spy Rework module)
+  -- 1 Urbanization reduction
+
+  Interpretive Centre moved to Satellites
+
+  Missile Silo (Advanced Ballistics)
+  -- Requires Military Base and 1 Aluminium
+  -- 25% City Attack (not strength)
+  -- +1 Attack Range
+  -- 1 Free Guided Missile
+  -- +100% Production to Missiles
+  -- Nuclear Missile "Shielded Silo" Promotion now given by Silo to all Missiles
+    So Nuclear Missile doesnt have it by default anymore
+
+  Industrial Estate (Mobile Tactics)
+  -- +6 Food and +4 Production
+  -- 15% of Investments and Purchases converted into Production
+  -- +8 to Land and Sea Trade Routes
+  -- +8/+8 to City and Owner for incoming Trade Routes
+  -- +12/+12 Internal Route yields
+  -- Requires Industrial Connection

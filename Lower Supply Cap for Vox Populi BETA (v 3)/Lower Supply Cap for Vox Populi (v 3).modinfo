@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="abbade81-2894-41e9-SUPP-SWVPx13a770d" version="3">
+  <Properties>
+    <Name>Lower Supply Cap for Vox Populi</Name>
+    <Stability>Beta</Stability>
+    <Teaser>--</Teaser>
+    <Description>Lower Supply Cap</Description>
+    <Authors>balparmak</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="1" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="17498aae-f116-4961-83cf-2fc270dc56dc" minversion="1" maxversion="999" title="Promotion Flags EUI (for VP)" />
+    <Mod id="8562c016-f5bb-79hg-b37e-a3b40d3yg13f" minversion="1" maxversion="999" title="pDan's Tweaks" />
+    <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="1" maxversion="999" title="Enlightement Era for VP" />
+    <Mod id="675ba5ec-dc5a-400f-9864-8170568d04e5" minversion="1" maxversion="999" title="Enhanced Naval Warfare" />
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="1" maxversion="999" title="4UC" />
+    <Mod id="02484922-a809-4f03-b6f2-naval7f23111" minversion="1" maxversion="999" title="Naval Supply for Vox Populi" />
+  </References>
+  <Blocks/>
+  <Files>
+    <File md5="CB324101CECEAE628FC901F89817S38D" import="0">LowerSupply.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>LowerSupply.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

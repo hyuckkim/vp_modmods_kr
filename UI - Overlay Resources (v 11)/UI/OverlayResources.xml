@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context Name="Resources" Hidden="1">
+  <Box ID="ResourcesOptions" Anchor="R,B" Size="200,165" Offset="0,0" Color="0,0,0,0">
+    <Image Anchor="C,T" Offset="0,5" Texture="bar300x2.dds" TextureOffset="100,0" Size="140,1" />
+
+    <Container ID="SelectedResources">
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,5"    TextOffset="30,0" IsChecked="0" ID="RESOURCE_WHEAT" String="[ICON_RES_WHEAT]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,28"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_COW" String="[ICON_RES_COW]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,51"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_BISON" String="[ICON_RES_BISON]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,74"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_SHEEP" String="[ICON_RES_SHEEP]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,97"   TextOffset="30,0" IsChecked="0" ID="RESOURCE_DEER" String="[ICON_RES_DEER]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,120"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_BANANA" String="[ICON_RES_BANANA]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="30,143"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_SHONE" String="[ICON_RES_STONE]" />
+
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,5"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_FISH" String="[ICON_RES_FISH]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,28"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_HORSE" String="[ICON_RES_HORSE]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,51"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_IRON" String="[ICON_RES_IRON]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,74"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_COAL" String="[ICON_RES_COAL]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,97"  TextOffset="30,0" IsChecked="0" ID="RESOURCE_OIL" String="[ICON_RES_OIL]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,120" TextOffset="30,0" IsChecked="0" ID="RESOURCE_ALUMINUM" String="[ICON_RES_ALUMINUM]" />
+      <CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,143" TextOffset="30,0" IsChecked="0" ID="RESOURCE_URANIUM" String="[ICON_RES_URANIUM]" />
+      <!-- CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="110,143" TextOffset="30,0" IsChecked="0" ID="RESOURCE_ARTIFACTS" String="[ICON_RES_ARTIFACTS]" / -->
+    </Container>
+  </Box>
+</Context>

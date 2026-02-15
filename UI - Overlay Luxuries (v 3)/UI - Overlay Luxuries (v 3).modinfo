@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ef3f23d4-a288-4c50-9937-0934dd2ed07e" version="3">
+  <Properties>
+    <Name>UI - Overlay Luxuries</Name>
+    <Teaser>Highlight individual luxuries in strategic view</Teaser>
+    <Description>Adds a "Luxuries" option to the overlay drop-down menu in the strategic view and adds check-boxes for each luxury; only selected luxuries are highlighted.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?117570-MOD-UI-Resources</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="DA133FA5D69AAB8737C6BD00C3EE4F87" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="670CDAF950A4FB6CA9781A539C0696E9" import="0">UI/OverlayLuxuries.lua</File>
+    <File md5="0DA87A13C29366587A1BD141820BE356" import="0">UI/OverlayLuxuries.xml</File>
+    <File md5="E0DA5A5699269636F1E1A130FEE3F96B" import="1">UI/OverlayLuxuries_MiniMapOverlayHook.lua</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+    <File md5="762C4771E28F1AF75760DFF0798AE9A3" import="0">XML/UILuxuries.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UILuxuries.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayLuxuries.xml">
+      <Name>Luxuries</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayLuxuries_MiniMapOverlayHook.lua">
+      <Name>Luxuries MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

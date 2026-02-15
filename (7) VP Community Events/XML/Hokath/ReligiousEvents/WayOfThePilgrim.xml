@@ -10,7 +10,7 @@
 			<RandomChanceDelta>20</RandomChanceDelta>
 			<EventCooldown>0</EventCooldown>
 			<IsOneShot>false</IsOneShot>
-			<RequiredAnywhereBuildingClass>BUILDINGCLASS_RELIQUARY</RequiredAnywhereBuildingClass>
+			<RequiredAnywhereBuildingClass>BUILDINGCLASS_RELIGIOUS_LIBRARY</RequiredAnywhereBuildingClass>
 		</Row>
 	</Events>
 	<EventChoices>
@@ -280,14 +280,14 @@
 		</Row>
 		<Row>
 			<EventChoiceType>EVENT_WAY_OF_THE_PILGRIM_CHOICE_1</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_RELIQUARY</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_RELIGIOUS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_TOURISM</YieldType>
 			<YieldChange>1</YieldChange>
 		</Row>
 
 		<Row>
 			<EventChoiceType>EVENT_WAY_OF_THE_PILGRIM_CHOICE_3</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_RELIQUARY</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_RELIGIOUS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_TOURISM</YieldType>
 			<YieldChange>1</YieldChange>
 		</Row>
@@ -357,7 +357,7 @@
 	<EventChoice_BuildingClassYieldModifier>
 		<Row>
 			<EventChoiceType>EVENT_WAY_OF_THE_PILGRIM_CHOICE_4</EventChoiceType>
-			<BuildingClassType>BUILDINGCLASS_RELIQUARY</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_RELIGIOUS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_TOURISM</YieldType>
 			<Modifier>20</Modifier>
 		</Row>

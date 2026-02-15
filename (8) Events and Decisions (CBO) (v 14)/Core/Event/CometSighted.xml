@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMETSIGHTED_DESCRIPTION">
+			<Text>Comet Sighted!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_COMETSIGHTED_HELP">
+			<Text>People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Some believe that this portends fell times ahead. Others believe that they are in fact pixie fairies floating in the sky.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1">
+			<Text>It's an omen, the end is nigh!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1_DISABLED">
+			<Text>We live in good times, no such thing for nonsense!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1_HELP">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {2_InstantYield}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Short [ICON_RESISTANCE] Resistance![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2">
+			<Text>Thank goodness we live in such enlightened time to witness this beauty.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Short [ICON_HAPPINESS_1] We Love The King Day![ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2_DISABLED">
+			<Text>The end is coming and you dare say we live in an enlightened time?!</Text>
+		</Row>
+	</Language_en_US>
+	<Events>
+		<Row>
+			<Type>PLAYER_EVENT_COMETSIGHTED</Type>
+			<Description>TXT_KEY_PLAYER_EVENT_COMETSIGHTED_DESCRIPTION</Description>
+			<Help>TXT_KEY_PLAYER_EVENT_COMETSIGHTED_HELP</Help>
+			<EventArt>Event_Comet.dds</EventArt>
+			<EventClass>EVENT_CLASS_NEUTRAL</EventClass>
+			<EventAudio>AS2D_INTERFACE_CITY_TILE</EventAudio>
+			<RandomChance>15</RandomChance>
+			<RandomChanceDelta>1</RandomChanceDelta>
+			<NumChoices>2</NumChoices>
+		</Row>
+	</Events>
+	<EventChoices>
+		<Row>
+			<Type>PLAYER_EVENT_COMETSIGHTED_CHOICE_1</Type>
+			<Description>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1</Description>
+			<Help>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1_HELP</Help>
+			<DisabledTooltip>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_1_DISABLED</DisabledTooltip>
+			<EventChoiceAudio>AS2D_EVENT_ECITYREVOLT</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EraScaling>true</EraScaling>
+			<ObsoleteEra>ERA_RENAISSANCE</ObsoleteEra>
+			<ResistanceTurns>2</ResistanceTurns>
+		</Row>
+		<Row>
+			<Type>PLAYER_EVENT_COMETSIGHTED_CHOICE_2</Type>
+			<Description>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2</Description>
+			<Help>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2_HELP</Help>
+			<DisabledTooltip>TXT_KEY_EVENT_COMETSIGHTED_CHOICE_2_DISABLED</DisabledTooltip>
+			<EventChoiceAudio>AS2D_EVENT_ECROWDCHEER</EventChoiceAudio>
+			<EventDuration>30</EventDuration>
+			<EraScaling>true</EraScaling>
+			<RequiredEra>ERA_RENAISSANCE</RequiredEra>
+			<WLTKDTurns>5</WLTKDTurns>
+		</Row>
+	</EventChoices>
+	<Event_ParentEvents>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_1</EventChoiceType>
+			<EventType>PLAYER_EVENT_COMETSIGHTED</EventType>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_2</EventChoiceType>
+			<EventType>PLAYER_EVENT_COMETSIGHTED</EventType>
+		</Row>
+	</Event_ParentEvents>
+	<EventChoice_InstantYield>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_1</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>-125</Yield>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_2</EventChoiceType>
+			<YieldType>YIELD_GOLDEN_AGE_POINTS</YieldType>
+			<Yield>125</Yield>
+		</Row>
+	</EventChoice_InstantYield>
+	<EventChoiceFlavors>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_1</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<EventChoiceType>PLAYER_EVENT_COMETSIGHTED_CHOICE_2</EventChoiceType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</EventChoiceFlavors>
+</GameData>

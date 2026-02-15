@@ -1,0 +1,16 @@
+<Asset>
+	<Mesh file="Kilombo_B.gr2" source="Max" />
+	<Texture file="Decals_Parts_Ancient_01_B.dds" source="Max" />
+	<Texture file="Decals_Parts_Ancient_01_H.dds" source="Max" />
+	<Texture file="Decals_Parts_Ancient_02_B.dds" source="Max" />
+	<Texture file="Decals_Parts_Ancient_02_H.dds" source="Max" />
+	
+	<Texture file="VIL_Tribal_B.dds" source="Max" />
+	<Texture file="Black.dds" source="Max" />
+	<Texture file="Generic_Grey_8.dds" source="Max" />
+	<DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+	<BoneUsage>
+		<Bone name="FX_firepit_center" />
+	</BoneUsage>
+	<TimedTrigger file="fx_triggers_Kilombo.ftsxml" source="Tool" model="VIL_Barbarian" state="0,1,2,3"/>
+</Asset>

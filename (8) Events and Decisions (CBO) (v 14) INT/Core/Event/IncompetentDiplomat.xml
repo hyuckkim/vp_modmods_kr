@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_EVENT_INCOMPETENTDIPLOMAT_CHOICE_1">
+			<Text>Incompetent Diplomat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCOMPETENTDIPLOMAT_CHOICE_1_HELP">
+			<Text>A diplomat with a lack of tact has made some outrageous statements in front of [COLOR_TECH_TEXT]{1_CS_Adj}[ENDCOLOR] dignitaries, shocking and angering them. With these statements, our country is in a state of embarassment and damaged relations![NEWLINE][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {3_Num} [ICON_INFLUENCE] Influence with[ENDCOLOR] [COLOR_TECH_TEXT]{2_CS}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCOMPETENTDIPLOMAT_CHOICE_2_HELP">
+			<Text>One of our diplomats has mistakenly implied the [COLOR_TECH_TEXT]{1_CS_Adj}[ENDCOLOR] leader to be an incompetent leader..[NEWLINE][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {3_Num} [ICON_INFLUENCE] Influence with[ENDCOLOR] [COLOR_TECH_TEXT]{2_CS}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_INCOMPETENTDIPLOMAT_CHOICE_3_HELP">
+			<Text>[COLOR_TECH_TEXT]{1_CS_Adj}[ENDCOLOR] officials has denounced us informing the world that we are not to be trusted and has refused to do any business with us![NEWLINE][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {3_Num} [ICON_INFLUENCE] Influence with[ENDCOLOR] [COLOR_TECH_TEXT]{2_CS}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMPETENTDIPLOMAT_CHOICE_1">
+			<Text>Good Diplomacy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMPETENTDIPLOMAT_CHOICE_1_HELP">
+			<Text>Good trade deals and agreements has made [COLOR_TECH_TEXT]{2_CS}[ENDCOLOR] prosperous with many of the [COLOR_TECH_TEXT]{1_CS_Adj}[ENDCOLOR] thanking you to their success![NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {3_Num} [ICON_INFLUENCE] Influence with {2_CS}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_COMPETENTDIPLOMAT_CHOICE_2_HELP">
+			<Text>Our diplomat has made a successful arrangement benefitting both of our people.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {3_Num} [ICON_INFLUENCE] Influence with {2_CS}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSREGIMECHANGE_CHOICE_1">
+			<Text>City-State Revolution!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSREGIMECHANGE_CHOICE_1_HELP">
+			<Text>A revolution has happened at [COLOR_TECH_TEXT]{1_Personality}[ENDCOLOR]. Within the new government, [COLOR_TECH_TEXT]{1_Personality}[ENDCOLOR] seems to be [COLOR_TECH_TEXT]{2_CS}[ENDCOLOR]. We should take note of this!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSREGIMECHANGE_CHOICE_1_NOTIFY_SHORT">
+			<Text>Change in Personality</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSREGIMECHANGE_CHOICE_1_NOTIFY">
+			<Text>Recently, a city-state around the world has changed their goverment's personality based on a revolution!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATE">
+			<Text>City-State Liberation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATE_HELP">
+			<Text>You have liberated the city-state and they are thankful for your actions. They ask what government will you install for them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_1">
+			<Text>A friendlier government to all nations!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_2">
+			<Text>A neutral government who does not interfere unless necessary.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_3">
+			<Text>A hostile government to deter foreign colonization!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_4">
+			<Text>An irrational goverment may be best.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_1_HELP">
+			<Text>[ICON_BULLET]City-State becomes [COLOR_TECH_TEXT]Friendly[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]+5 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_2_HELP">
+			<Text>[ICON_BULLET]City-State becomes [COLOR_TECH_TEXT]Neutral[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_3_HELP">
+			<Text>[ICON_BULLET]City-State becomes [COLOR_TECH_TEXT]Hostile[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]-5 [ICON_OCCUPIED] Morality[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+15 [ICON_INFLUENCE] Influence[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CSLIBERATION_CHOICE_4_HELP">
+			<Text>[ICON_BULLET]City-State becomes [COLOR_TECH_TEXT]Irrational[ENDCOLOR][NEWLINE][ICON_BULLET]An equal chance to either have +5/-5 Morality.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

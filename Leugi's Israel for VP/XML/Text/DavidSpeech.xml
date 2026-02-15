@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/18/2013 1:17:59 PM -->
+<GameData>
+	<Language_ko_KR>
+
+		<!--General phrases -->
+		<!--Greeting (first time meeting) -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_FIRSTGREETING_1">
+			<Text>이스라엘 왕국에 오신 것을 환영하오. 나는 다윗 왕이오. 주께서 우리 모두에게 복을 내리시길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_FIRSTGREETING_2">
+			<Text>반갑소. 나는 이스라엘의 다윗 왕이오. 피를 흘리는 일이 없기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_FIRSTGREETING_3">
+			<Text>하늘과 땅의 주께서 우리 땅에 복을 내려주시길. 나는 이스라엘의 다윗 왕이오.</Text>
+		</Row>
+		<!--Reacts to his bluff being called -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_WARBLUFF_1">
+			<Text>그리하리다. 이제 주의 군대를 맞이할 준비를 하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_WARBLUFF_2">
+			<Text>만군의 주께서 그대의 우상을 무너뜨리시리라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_WARBLUFF_3">
+			<Text>나는 주께 기도하였노라. 이 전쟁은 그대 것이 아니오.</Text>
+		</Row>
+		<!--Gloats after winning a war -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_WINWAR_1">
+			<Text>만군의 여호와께서 우리 편이시니, 그대의 패배는 머지않았소.</Text>
+		</Row>
+		<!--Submissive after losing a war -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_LOSEWAR_1">
+			<Text>주께서 그대에게 공의를 행하시리라.</Text>
+		</Row>
+		<!--Defeated and removed from game -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEFEATED_1">
+			<Text>주께서 내 백성을 벌하셨지만, 우리는 다시 주의 길로 돌아가리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEFEATED_2">
+			<Text>이것이 끝일지라도, 주께서는 그분의 백성과 맺은 언약을 지키실 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEFEATED_3">
+			<Text>나의 하나님이여, 어찌하여 나를 버리셨나이까?</Text>
+		</Row>
+
+		<!--Neutral -->
+		<!--Greetings (subsequent meetings) -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_1">
+			<Text>그대에게 평안을 빕니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_2">
+			<Text>안녕하시오.</Text>
+		</Row>
+		<!--Goodbye -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_1">
+			<Text>안녕히 가시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_2">
+			<Text>다음에 다시 뵙기를.</Text>
+		</Row>
+		<!--Trade offer from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_YES_NEUTRAL">
+			<Text>내 백성이 그대의 제안을 받아들였소.</Text>
+		</Row>
+		<!--Trade offer from player - sweeten the deal -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_NEUTRAL_1">
+			<Text>아니오, 그건 충분치 않소. 그대의 제안은 공정하지 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_NEUTRAL_2">
+			<Text>아니오…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_NEUTRAL_3">
+			<Text>내 백성은 그대의 제안에 동의하지 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_NEUTRAL_4">
+			<Text>그 정도로는 공정하지 않소. 더 나은 제안을 하시오.</Text>
+		</Row>
+		<!--Trade offer from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NO_NEUTRAL">
+			<Text>아니오, 내 백성이 거부하였소…</Text>
+		</Row>
+		<!--Demand for tribute from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_YES_NEUTRAL">
+			<Text>좋소. 그러나 훗날 우리도 같은 대우를 받기를 바라오.</Text>
+		</Row>
+		<!--Demand for tribute from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_NO_NEUTRAL">
+			<Text>그대의 탐욕은 그대의 오만보다도 크도다. 그대의 터무니없는 요구는 거절하오.</Text>
+		</Row>
+		<!--Requests a trade -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADEREQUEST_NEUTRAL">
+			<Text>내 백성과 나는 그대께 제안을 하려 왔소.</Text>
+		</Row>
+		<!--Demands tribute -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEMANDTRIBUTE_NEUTRAL">
+			<Text>내 백성이 도움을 필요로 하오. 그래서 이 몸이 직접 찾아왔소.</Text>
+		</Row>
+		<!--Agrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_AGREE_SHORT_1">
+			<Text>좋소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_AGREE_SHORT_2">
+			<Text>그리하리다.</Text>
+		</Row>
+		<!--Disagrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_1">
+			<Text>결코 안 되오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_2">
+			<Text>아니오.</Text>
+		</Row>
+		<!--Let's hear it -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_LETSHEARIT_1">
+			<Text>들어보겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_LETSHEARIT_2">
+			<Text>내 백성이 그대의 말을 들을 것이오…</Text>
+		</Row>
+
+		<!--Happy -->
+		<!--Greetings (subsequent meetings) -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_3">
+			<Text>그대에게 인사를 올리오, 벗이여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_4">
+			<Text>그대는 이 땅에 환영받는 이요. 낯선 자가 아니오.</Text>
+		</Row>
+		<!--Goodbye -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_3">
+			<Text>그대의 길에 주께서 안전을 허락하시길.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_4">
+			<Text>다시 만날 날이 있기를.</Text>
+		</Row>
+		<!--Trade offer from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_YES_HAPPY">
+			<Text>내 백성은 언제나 그대의 제안을 기쁘게 받아들이오.</Text>
+		</Row>
+		<!--Trade offer from player - sweeten the deal -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_HAPPY_1">
+			<Text>우리가 원하는 바는 그보다 많소. 더 말씀해보시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_HAPPY_2">
+			<Text>벗이여, 그대라 해도 이 제안은 받아들이기 어렵소…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_HAPPY_3">
+			<Text>거의 맞았소. 그러나 아직 부족하오.</Text>
+		</Row>
+		<!--Trade offer from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NO_HAPPY">
+			<Text>유감이오, 그대의 제안은 받아들일 수 없소, 벗이여.</Text>
+		</Row>
+		<!--Demand for tribute from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_YES_HAPPY">
+			<Text>우리가 돕겠소, 벗이여. 하지만 우리 또한 도움이 필요할 때 같은 대우를 기대하오.</Text>
+		</Row>
+		<!--Demand for tribute from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_NO_HAPPY">
+			<Text>애석하오! 이번에는 그대의 요청을 받아들일 수 없소. 우리 없이 길을 찾아야 할 것이오.</Text>
+		</Row>
+		<!--Demands tribute -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEMANDTRIBUTE_HAPPY">
+			<Text>그대는 내 백성의 친구가 되었소. 지금 우리는 절박한 상황에 처했소. 그대의 도움이 간절하오. </Text>
+		</Row>
+		<!--Requests a trade -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADEREQUEST_HAPPY">
+			<Text>오시오, 벗이여. 우리 땅에 금과 은이 돌처럼 흔해지게 합시다.</Text>
+		</Row>
+		<!--Agrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_AGREE_SHORT_3">
+			<Text>물론이오.</Text>
+		</Row>
+		<!--Disagrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_3">
+			<Text>우리는 사양하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_4">
+			<Text>그럴 수는 없소.</Text>
+		</Row>
+		<!--Let's hear it -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_LETSHEARIT_3">
+			<Text>그대는 말할 자격이 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_LETSHEARIT_4">
+			<Text>자, 이렇게 마주했으니 말해보시오.</Text>
+		</Row>
+
+		<!--Angry -->
+		<!--Greetings (subsequent meetings) -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_5">
+			<Text>그대, 무슨 흉계를 꾸미는 것이오? 불경한 자여!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GREETING_6">
+			<Text>무엇을 원하시오? 그대는 환영받지 못하오.</Text>
+		</Row>
+		<!--Goodbye -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_5">
+			<Text>이 대화는 너무 오래 끌었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_GOODBYE_6">
+			<Text>우리의 일은 끝났소.</Text>
+		</Row>
+		<!--Trade offer from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_YES_ANGRY">
+			<Text>마침내 그대가 이치에 맞는 일을 하였구려…</Text>
+		</Row>
+		<!--Trade offer from player - sweeten the deal -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_ANGRY_1">
+			<Text>공정한 거래가 무엇인지 아시오? 이 제안으론 부족하오. 더 나은 것을 내놓으시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_ANGRY_2">
+			<Text>그것으로는 안 되오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NEEDMORE_ANGRY_3">
+			<Text>그대는 더 잘해야 하오.</Text>
+		</Row>
+
+		<!--Trade offer from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADE_NO_ANGRY">
+			<Text>그대의 제안은 그대처럼 불쾌하오.</Text>
+		</Row>
+		<!--Demand for tribute from player - yes -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_YES_ANGRY">
+			<Text>그대가 원하는 것을 주겠소. 그러나 그 대가를 치르게 될 것이오.</Text>
+		</Row>
+		<!--Demand for tribute from player - no -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRIBUTE_NO_ANGRY">
+			<Text>그대는 그것을 얻지 못하오…</Text>
+		</Row>
+		<!--Demands tribute -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DEMANDTRIBUTE_ANGRY">
+			<Text>그대가 화해할 기회를 주겠소. 받아들이겠소?</Text>
+		</Row>
+		<!--Requests a trade -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_TRADEREQUEST_ANGRY">
+			<Text>이제라도 해방을 위해 싸울 수 있음을 증명하시오…</Text>
+		</Row>
+		<!--Agrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_AGREE_SHORT_4">
+			<Text>그리하리다.</Text>
+		</Row>
+		<!--Disagrees -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_5">
+			<Text>그대의 생각은 늘 폭력적이오. 거절하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_6">
+			<Text>받아들일 수 없소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DISAGREE_SHORT_7">
+			<Text>아니오.</Text>
+		</Row>
+		<!--Let's hear it -->
+		<Row Tag="TXT_KEY_LEADER_DAVID_LETSHEARIT_5">
+			<Text>말하시오, 그대가 굳이 원한다면…</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LEADER_DAVID_DECLAREWAR_1">
+			<Text>이제 내 백성이 그대에게 맞서 일어설 때요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DECLAREWAR_2">
+			<Text>전능하신 주께서 그대의 종말을 명하셨소! 우리는 그 명령을 따를 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_DECLAREWAR_3">
+			<Text>응징의 날이 다가왔도다! 우리는 그대의 멍에에서 벗어나리라!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LEADER_DAVID_ATTACKED_1">
+			<Text>그대에게선 아무 기대도 하지 않았소. 주께서 우리를 구원하시리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_ATTACKED_2">
+			<Text>이스라엘의 자손은, 어떤 대가를 치르더라도, 자유를 위해 싸우리라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_DAVID_ATTACKED_3">
+			<Text>결국 이렇게 되었구려… 끝까지 싸울 것을 명심하시오!</Text>
+		</Row>
+	</Language_ko_KR>
+
+</GameData>

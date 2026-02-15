@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_HARMONY">
+			<Text>Harmony</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_HARMONY_HELP">
+			<Text>We can build a better world.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HARMONY_TITLE">
+			<Text>{@1: gender feminine?Spokeswoman; other?Spokesman;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_HARMONY_HEADING3_TITLE">
+			<Text>[COLOR_POSITIVE_TEXT]Harmony[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_HARMONY_HEADING3_BODY">
+			<Text>The Harmony ideology is aimed at the peaceful Civilization that seeks to win without dominating others. [COLOR_YELLOW]This ideology unlocks upon entering the Atomic Era, or unlocking 18 Policies and having advanced at least to the Industrial Era, whichever comes first.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SOCIALPOLICY_HARMONY_ADV_QUEST">
+			<Text>What is Harmony?</Text>
+		</Row>
+		<!-------------tier 1----------------------------->
+
+		<Row Tag="TXT_KEY_POLICY_ASYLUM">
+			<Text>Refuge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ASYLUM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Refuge[ENDCOLOR]: +1 [ICON_INTERNATIONAL_TRADE] Trade Route. All Cities gain +3 [ICON_CITIZEN] Citizens and +8 [ICON_STRENGTH] Defense. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_DIPLOMAT] Great Diplomat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ASYLUM_TEXT">
+			<Text>Closely related to the ancient juridical concept of asylum, under which people persecuted by their own rulers might be protected by another sovereign authority, such as a second country or another entity which in medieval times could offer sanctuary, a refugee is someone who according to the Convention relating to the Status of Refugees "is unable or unwilling to return to their country of origin owing to a well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group, or political opinion." The first international co-ordination of refugee affairs came with the creation by the League of Nations in 1921 of the High Commission for Refugees and the appointment of Fridtjof Nansen as its head. Nansen and the commission were charged with assisting the approximately 1,500,000 people who fled the Russian Revolution of 1917 and the subsequent civil war (1917–1921).[NEWLINE][NEWLINE]The rise of Nazism led to a gigantic increase in refugee numbers, and by the end of the war Europe had over 40 million refugrees. Second only to the Jews, perhaps the most well-known set of displaced persons were the Polish Air Forces, who continued to fight the Axis despite Poland itself falling in 1939. Indeed, a total of 145 Polish fighter pilots served in the RAF during the Battle of Britain. Polish flying skills were well-developed from the invasion of Poland and being highly motivated by patriotism for revenge the pilots were regarded as fearless and sometimes bordering on reckless. By late 1940 the American visitor Ralph Ingersoll reported that the Poles were "the talk of London" because of their victories. Although at first the Poles memorised basic English sentences to identify themselves if shot down over Britain to avoid being mistaken as Germans, Ingersoll wrote that such pilots returned with "a girl on each arm. They say the girls cannot resist the Poles, nor the Poles the girls". Due to the fact that Poland ended the war under Soviet occupation, only a small proportion of the pilots returned to Poland.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_NATURAL_MATERIALS">
+			<Text>Natural Materials</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_NATURAL_MATERIALS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Natural Materials[ENDCOLOR]: Lumbermills and Quarries produce +1 [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_RESEARCH] Science. Cities earn +20 [ICON_FOOD] Food when they construct Buildings, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_NATURAL_MATERIALS_TEXT">
+			<Text>A natural material is any product or physical matter that comes from plants, animals, or the ground which is not man-made. Minerals and the metals that can be extracted from them (without further modification) are also considered to belong into this category. At the microscopic level, one of the defining features of natural materials is their structural and mechanical heterogeneity which generally encompasses exceptional performances. This heterogeneity arises from the complex interplay between the various components, which vary in size, shape, and properties, which can result in variations in the mechanical and structural properties of the material at different length scales and is achieved through the specific environmental conditions for their formation and, in most cases, over hundred thousand years of adaptation and optimization processes. But perhaps most crucially they have much reduced energy and waste footprints compared to synthetic (often fossil fuel derived) alternatives.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_SYNCRETISM">
+			<Text>Syncretism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SYNCRETISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Syncretism[ENDCOLOR]: Cities gain +2 [ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith for every World Religion that has [COLOR_POSITIVE_TEXT]at least one[ENDCOLOR] follower there, and they benefit from the second most popular Religion's [COLOR_CYAN]Pantheon[ENDCOLOR]. No [ICON_HAPPINESS_3] Unhappiness from [ICON_RELIGION] Religious Unrest.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SYNCRETISM_TEXT">
+			<Text>Syncretism involves the merging or assimilation of several originally discrete traditions, especially in the theology and mythology of religion, thus asserting an underlying unity and allowing for an inclusive approach to other faiths. While syncretism in art and culture is sometimes likened to eclecticism, in the realm of religion, it specifically denotes a more integrated merging of beliefs into a unified system, distinct from eclecticism, which implies a selective adoption of elements from different traditions without necessarily blending them into a new, cohesive belief system. Syncretism also manifests in politics, known as syncretic politics.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_INTL_ED">
+			<Text>International Education</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTL_ED_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]International Education[ENDCOLOR]: Resting [ICON_INFLUENCE] Influence with all [ICON_CITY_STATE] City-States increased by [COLOR_POSITIVE_TEXT]20[ENDCOLOR]. Gain 25 [ICON_CULTURE] Culture when creating a Diplomatic Unit, scaling with Era. [COLOR_CYAN]Allied[ENDCOLOR] [ICON_CITY_STATE] City-States will occasionally grant you [ICON_GREAT_PEOPLE] Great People.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTL_ED_TEXT">
+			<Text>International education refers to a dynamic concept that involves a journey or movements of people, minds, or ideas across political and cultural frontiers. The chief outcome in comparison to other theories of education is an enhanced international attitude and awareness. From an ideological perspective, international education has a focus on moral development, by influencing the creation of "positive attitudes towards peace, international understanding and responsible world citizenship". From a pragmatic approach, international education can relate to economic and cultural globalization. An example of a project focussed on the idea would be the International Baccalaureate, a two-year educational programme primarily aimed at 16-to-19-year-olds in 140 countries around the world. The programme provides an internationally accepted qualification for entry into higher education and is recognized by many universities worldwide. It was developed in the early-to-mid-1960s in Geneva, Switzerland, by a group of international educators.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_INTL_ED">
+			<Text>Visiting Scholar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_INTL_ED_HELP">
+			<Text>Gain 25 [ICON_CULTURE] Culture when gained, scaling with Era.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HUMANITARIANISM">
+			<Text>Humanitarianism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HUMANITARIANISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Humanitarianism[ENDCOLOR]: +100% [ICON_PRODUCTION] Production towards Wire Services. Unlocks the [COLOR_CYAN]Aid Agency[ENDCOLOR] Building, and can purchase them with [ICON_PEACE] Faith. [COLOR_NEGATIVE_TEXT]You can no longer [ICON_PIRATE] Bully City-States.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HUMANITARIANISM_TEXT">
+			<Text>Humanitarianism is a value system centered on human life, whereby humans practice benevolent treatment and provide assistance to other humans to reduce suffering and improve the conditions of humanity for moral, altruistic, and emotional reasons. One aspect involves voluntary emergency aid overlapping with human rights advocacy, actions taken by governments, development assistance, and domestic philanthropy. Other critical issues include correlation with religious beliefs, motivation of aid between altruism, market affinity, social control imperialism and neo-colonialism, gender and class relations, and humanitarian agencies.[NEWLINE][NEWLINE]While humanitarianism on a local and national level can be traced far back in history, scholars of international politics tend to identify the advent of global humanitarian impulses to the 19th century. The creation of the International Red Cross in 1863 is considered a key juncture in global humanitarianism. The scope of humanitarianism has expanded over time alongside shifting perceptions of who counts as "human" and whose lives are worth saving.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_COMMUNAL_LIFE">
+			<Text>Communal Life</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMMUNAL_LIFE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Communal Life[ENDCOLOR]: Camps, Plantations, Fishing Boats, Academies, and all Unique Improvements produce +2 [ICON_CULTURE] Culture. Receive an additional 5 [ICON_HAPPINESS_1] Happiness from every Natural Wonder.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_COMMUNAL_LIFE_TEXT">
+			<Text>A commune, or intentional community, is a voluntary residential community which is designed to foster a high degree of social cohesion and teamwork. Members typically unite around shared values, beliefs, or a common vision, which may be political, religious, spiritual, or simply focused on the practical benefits of cooperation and mutual support. As early as 1650, in England a group called The Diggers tried to reform the existing social order with an agrarian lifestyle based on their ideas for the creation of small, egalitarian rural communities. In imperial Russia, the vast majority of Russian peasants held their land in communal ownership within a mir community, which acted as a village government and a cooperative. In the years immediately following the revolutions of 1917 Tolstoyan communities proliferated in Russia, but later they were eventually wiped out or stripped of their independence as collectivisation and ideological purges got under way in the late 1920s. At a similar time Kibbutzim were founded in Israel, which are also examples of officially organized communes, the first of which were based on agriculture. One commune that played a large role in the hippie movement in the United States was Kaliflower, a utopian living cooperative that existed in San Francisco between 1967 and 1973 built on values of free love and anti-capitalism.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CONSERVATIONISTS">
+			<Text>Conservationists</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CONSERVATIONISTS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Conservationists[ENDCOLOR]: Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Zoo in every City, where the +1 [ICON_TOURISM] Tourism bonus to Forests and Jungle is replaced by +1 [ICON_FOOD] Food, [ICON_RESEARCH] Science, and [ICON_PEACE] Faith. All Land Units receive the [COLOR_POSITIVE_TEXT]Orienteer[ENDCOLOR] Promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CONSERVATIONISTS_TEXT">
+			<Text>The conservation movement, also known as nature conservation, is a political, environmental, and social movement that seeks to manage and protect natural resources, including animal, fungus, and plant species as well as their habitat for the future. The conservation movement can be traced back to John Evelyn's work Sylva, presented as a paper to the Royal Society in 1662. Published as a book two years later, it was one of the most highly influential texts on forestry ever published. Timber resources in England were becoming dangerously depleted at the time, and Evelyn advocated the importance of conserving the forests by managing the rate of depletion and ensuring that the cut down trees get replenished.[NEWLINE][NEWLINE]Conservation was revived in the mid-19th century, with the first practical application of scientific conservation principles to the forests of India. The conservation ethic that began to evolve included three core principles: that human activity damaged the environment, that there was a civic duty to maintain the environment for future generations, and that scientific, empirically based methods should be applied to ensure this duty was carried out. Meanwhile in the United States, President Roosevelt put conservationist issues high on the national agenda. He worked with all the major figures of the movement, especially his chief advisor on the matter, Gifford Pinchot and was deeply committed to conserving natural resources. He encouraged the Newlands Reclamation Act of 1902 to promote federal construction of dams to irrigate small farms and placed 230 million acres under federal protection. Roosevelt set aside more federal land for national parks and nature preserves than all of his predecessors combined. In spite of all this, today deforestation, desertification and all manner of habitat destroying climatic events are perhaps worse than ever, and international movement in this area is sorely needed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_ORIENTEER">
+			<Text>Orienteer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_ORIENTEER_HELP">
+			<Text>Double [ICON_MOVES] Movement in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Jungle[ENDCOLOR] tiles.[NEWLINE]+20% [ICON_WORKER] Work Rate when building or repairing Improvements or Routes.</Text>
+		</Row>
+
+		<!-------------tier 2----------------------------->
+
+		<Row Tag="TXT_KEY_POLICY_NATUROPATHY">
+			<Text>Naturopathy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_NATUROPATHY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Naturopathy[ENDCOLOR]: Cities produce +1 [ICON_FOOD] Food and [ICON_PEACE] Faith for every 5 non-Specialist [ICON_CITIZEN] Citizens. Unlocks the [COLOR_CYAN]Clinic[ENDCOLOR] Building, and can purchase them with [ICON_PEACE] Faith.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_NATUROPATHY_TEXT">
+			<Text>Naturopathy, or naturopathic medicine, is a form of alternative medicine. A wide array of practices branded as "natural", "non-invasive", or promoting "self-healing" are employed by its practitioners, who are known as naturopaths. Difficult to generalize, these treatments range from the pseudoscientific and thoroughly discredited, like homeopathy, to the widely accepted, like certain forms of psychotherapy. The ideology and methods of naturopathy are based on vitalism and folk medicine rather than evidence-based medicine, although practitioners may also use techniques supported by evidence including scientific method and even clinical trials. Naturopathy has its roots in the 19th-century Natural Cure movement of Europe. In Scotland, Thomas Allinson started advocating his "Hygienic Medicine" in the 1880s, promoting a natural diet and exercise with avoidance of tobacco and overwork. Beginning in the 1970s, there was a revival of interest in the United States and Canada, in conjunction with the "holistic health" movement. As of 2009, fifteen U.S. states, Puerto Rico, the US Virgin Islands and the District of Columbia licensed naturopathic doctors, and the State of Washington requires insurance companies to offer reimbursement for services provided by naturopathic physicians. On the other hand, some states such as South Carolina and Tennessee prohibit the practice of naturopathy.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_POSTCOLONIALISM">
+			<Text>Postcolonialism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_POSTCOLONIALISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Postcolonialism[ENDCOLOR]: +2 [ICON_INTERNATIONAL_TRADE] Trade Routes. [COLOR_NEGATIVE_TEXT]Yields from [ICON_PUPPET] Puppet Cities are reduced by a further 20%.[ENDCOLOR] Courthouses cost 10 [COLOR_NEGATIVE_TEXT]extra[ENDCOLOR] [ICON_GOLD] Gold to maintain, but increase [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR] by 15%. While at [ICON_WAR] War, gain [COLOR_POSITIVE_TEXT]100[ENDCOLOR] Resting [ICON_INFLUENCE] Influence with [COLOR_CYAN]Allied[ENDCOLOR] [ICON_CITY_STATE] City-States.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_POSTCOLONIALISM_TEXT">
+			<Text>Postcolonialism is the critical academic study of the cultural, political and economic consequences of colonialism and imperialism, focusing on the impact of human control and exploitation of colonized people and their lands. The field started to emerge in the 1960s, as scholars from previously colonized countries began publishing on the lingering effects of colonialism, developing a critical theory analysis of the history, culture, literature, and discourse of (usually European) imperial power. Colonialism was presented as "the extension of civilization," which ideologically justified the self-ascribed racial and cultural superiority of the Western world over the non-Western world. From the mid- to the late-nineteenth century, such racialist group-identity language was the cultural common-currency justifying geopolitical competition amongst the European and American empires and meant to protect their over-extended economies. Especially in the colonization of the Far East and in the late-nineteenth century Scramble for Africa, the representation of a homogeneous European identity justified colonization. Yet, the modern political concept of postcolonialism is often the allyship of the white scholar and the ethnic other, together offering critique on the economic policy, military apparatus, and transnational corporations as vehicles driving present-day colonialism.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_DISARMAMENT">
+			<Text>Disarmament</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DISARMAMENT_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Disarmament[ENDCOLOR]: Can train [COLOR_YELLOW]Peacekeepers[ENDCOLOR]. Pay -85% Unit [ICON_GOLD] Gold Maintenance costs. [COLOR_NEGATIVE_TEXT]Cannot construct Missiles or Nuclear Weapons.[ENDCOLOR] Receive [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_CULTURE] Culture when you kill a Barbarian Unit equal to 200% of its [ICON_STRENGTH] Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DISARMAMENT_TEXT">
+			<Text>Nuclear disarmament is the act of reducing or eliminating nuclear weapons. Its end state can also be a nuclear-weapons-free world, in which nuclear weapons are completely eliminated. The term denuclearization is also used to describe the process leading to complete nuclear disarmament. The first public argument over nuclear weapons was Operation Crossroads, which was a series of nuclear weapon tests conducted by the United States at Bikini Atoll in the Pacific Ocean in the summer of 1946. Its purpose was to test the effect of nuclear weapons on naval ships. Pressure to cancel Operation Crossroads came from scientists and diplomats. Manhattan Project scientists argued that further nuclear testing was unnecessary and environmentally dangerous. Progress was slow due to animosity between the two Cold War superpowers, and a period of reasonably unsuccessful but energetic protest emerged.[NEWLINE][NEWLINE]In the 1980s, a movement for nuclear disarmament again gained strength in the light of the weapons build-up and statements of US President Ronald Reagan. Reagan had "a world free of nuclear weapons" as his personal mission, though he was largely scorned for this in Europe. Reagan was able to start discussions on nuclear disarmament with Soviet Union. He changed the name "SALT" (Strategic Arms Limitation Talks) to "START" (Strategic Arms Reduction Talks), and these conferences with Mikhail Gorbachev were a signficant factor leading to the end of the Soviet Union. Reagen himself was strongly affected by dramatised depictions of global thermonuclear war; today, it is difficult to comprehend the level of uncertainty - and indeed horror - of living with the threat of imminent human extinction.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PEACEKEEPER">
+			<Text>Peacekeeper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PEACEKEEPER_HELP">
+			<Text>Recon Unit that is more resilient than the Special Forces it replaces. Instead of a combat bonus attacking, it has a larger bonus when defending. Can enter rival territory without Open Borders. Starts with the [COLOR_POSITIVE_TEXT]Survivalism I[ENDCOLOR], [COLOR_POSITIVE_TEXT]Survivalism II[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Ignore Terrain Cost[ENDCOLOR] Promotions.[NEWLINE][NEWLINE]Only available to Civilizations following the [COLOR_MAGENTA]Harmony[ENDCOLOR] Ideology. Requires the [COLOR_MAGENTA]Disarmament[ENDCOLOR] Tenet to be unlocked.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PEACEKEEPER_TEXT">
+			<Text>Peacekeeping by the United Nations is a role of the UN's Department of Peace Operations as an "instrument developed by the organization as a way to help countries torn by conflict to create the conditions for lasting peace". Peacekeepers monitor and observe peace processes in post-conflict areas and assist ex-combatants in implementing the peace agreements they may have signed. Such assistance comes in many forms, including separating former combatants, confidence-building measures, power-sharing arrangements, electoral assistance, strengthening the rule of law, and economic and social development. The first peacekeeping mission was initiated in 1948. This mission, the United Nations Truce Supervision Organization (UNTSO), was sent to the newly created State of Israel, where a conflict between the Israelis and the Arab states concerning the creation of Israel had just reached a ceasefire. The UNTSO remains in operation to this day, although the Israeli–Palestinian conflict has persisted. Indeed the list of failures is at least as long as the list of successes. Most infamously exemplified by events during the Bosnian War when a UN Protection Force contingent of 370 lightly armed Dutch soldiers failed to deter the capture of the town of Srebrenica and the subsequent massacre of over 8000 Muslims, the first act of genocide in Europe since World War II. [NEWLINE][NEWLINE]Chapter VII of the United Nations Charter further gives the United Nations Security Council the power and responsibility to take collective action to maintain international peace and security. Most of these operations are established and implemented by the United Nations itself, with troops obeying UN operational control. In these cases, peacekeepers remain members of their respective armed forces, and do not constitute an independent "UN army", as the UN does not have such a force. In cases where direct UN involvement is not considered appropriate or feasible, the Council authorizes regional organizations such as NATO, the Economic Community of West African States, or coalitions of willing countries to perform peacekeeping or peace-enforcement tasks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PEACEKEEPER_STRATEGY">
+			<Text>Between Paradrop, Ignores Terrain Cost, and being able to enter rival territory without Open Borders, Peacekeepers have unlimited license to roam the map. Their Survivalism Promotions heal them even far from home, and the Disarmament Policy gives them large yields for tracking down the always-attackable Barbarians and bringing them to justice. More than this proactive strategy, the Peacekeeper also is sturdy on defense, with double strength to hold the line against attack, making them ideal for role-compression.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_WORLD_POLICE">
+			<Text>World Police</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HARMONY_WORLD_POLICE_HELP">
+			<Text>+50% [ICON_STRENGTH] Combat Strength when defending.[NEWLINE]Can enter rival territory without Open Borders.[NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade.[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_WORLD_HERITAGE">
+			<Text>World Heritage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_WORLD_HERITAGE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]World Heritage[ENDCOLOR]: Gain 250 [ICON_RESEARCH] Science when you construct [ICON_WONDER] World Wonders, scaling with Era. Unlocks [COLOR_POSITIVE_TEXT]7[ENDCOLOR] [COLOR_CYAN]UNESCO[ENDCOLOR] [ICON_WONDER] World Wonders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_WORLD_HERITAGE_TEXT">
+			<Text>World Heritage Sites are landmarks and areas with legal protection by an international convention administered by UNESCO for having cultural, historical, or scientific significance. UNESCO was founded in 1945 as the successor to the League of Nations' International Committee on Intellectual Cooperation. UNESCO's founding mission, which was shaped by the events of World War II, is to advance peace, sustainable development and human rights by facilitating collaboration and dialogue among nations. To be selected, a World Heritage Site is nominated by their host country and determined by the international committee to be a unique landmark which is geographically and historically identifiable, having a special cultural or physical significance, and be under a system of legal protection. For example, World Heritage Sites might be ancient ruins or historical structures, buildings, cities, deserts, forests, islands, lakes, monuments, mountains or wilderness areas.[NEWLINE][NEWLINE]A site may be added to the List of World Heritage in Danger if conditions threaten the characteristics for which the landmark or area was inscribed on the World Heritage List. Such problems may involve armed conflict and war, natural disasters, pollution, poaching, or uncontrolled urbanisation or human development. This danger list is intended to increase international awareness of the threats and to encourage counteractive measures. Thankfully, there are a number of sites that were previously listed as being in danger, but they were later removed from the list after improvements in management and conservation.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_INTERNATIONAL_LAW">
+			<Text>International Law</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTERNATIONAL_LAW_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]International Law[ENDCOLOR]: +25 [ICON_SPY] City Security from Courthouses and Wire Services. Every World Congress Session, gain 3 [ICON_GREAT_GENERAL] Great General and [ICON_GREAT_ADMIRAL] Great Admiral Points for every [ICON_DIPLOMAT] Delegate you control, scaling with Era. While at [ICON_WAR] War, the [COLOR_POSITIVE_TEXT]unit gift rate[ENDCOLOR] from [ICON_CITY_STATE] Militaristic City-States doubles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INTERNATIONAL_LAW_TEXT">
+			<Text>Traditionally, international law differs from state-based domestic legal systems in that it operates largely through consent, since there is no universally accepted authority to enforce it upon sovereign states. The first permanent institution established for the purpose of settling international disputes was the Permanent Court of Arbitration (PCA), which was created by the Hague Peace Conference of 1899. Initiated by the Russian Tsar Nicholas II, the conference involved all the world's major powers, as well as several smaller states, and resulted in the first multilateral treaties concerned with the conduct of warfare.[NEWLINE][NEWLINE]After the disasters of the World Wars, internation cooperation intensified to form a codified legal system, with treaties like the Geneva Convention. Chapter VII of the UN Charter gives it power to take decisive and binding actions against states committing "a threat to the peace, breach of the peace, or an act of aggression" for collective security although prior to 1990, it has only intervened once, in the case of Korea in 1950. Today there are more than one hundred international courts. Perhaps the most widely reported on is the International Criminal Court in The Hague, Netherlands. It is the first and only permanent international court with jurisdiction to prosecute individuals for the international crimes of genocide, crimes against humanity, war crimes and the crime of aggression.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_LIVING_HISTORY">
+			<Text>Living Tradition</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LIVING_HISTORY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Living Tradition[ENDCOLOR]: Cities with Interpretive Centres generate +20% [ICON_PEACE] Faith. Owned [ICON_VP_ARTIFACT] Artifacts have +2 [ICON_TOURISM] Tourism replaced by +2 to [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR]. 20% of the cost of [ICON_PEACE] Faith Purchases are converted into [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LIVING_HISTORY_TEXT">
+			<Text>A Living Tradition can be used to mean 'an intellectual and/or practical discipline centred in a long-standing cultural heritage, usually preserved and handed down through an oral tradition and heritage or apprenticeship system; involving wisdom, reflective practice, and continuity; based on universal values of truth, goodness, and beauty, the practice of which promotes the oneness of being.' Practioners or 'bearers' will find their own blend of innovation and traditionalism, infusing the heritage and legacy of their tradition with life through their own contribution. This definition of what constitutes a living tradition is not limited to traditional arts and crafts such as storytelling, embroidery, engraving, architecture, or calligraphy. It extends to the practice of the arts and crafts of poetry, philosophy, education, and politics. For example we can understand the intepretation and exposition of religious texts in an established religion, like Catholicism, as an act of living tradition.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENVIRONMENTAL_REGS">
+			<Text>Environmental Regulations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ENVIRONMENTAL_REGS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Environmental Regulations[ENDCOLOR]: Foreign [ICON_VP_FRANCHISE] Corporate Franchises provide +6 [ICON_FOOD] Food and [ICON_GOLD] Gold. Every Manufactory counts as an additional [ICON_VP_FRANCHISE] Franchise. +8 [ICON_FOOD] Food from all [ICON_VP_OFFICE] Corporate Offices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ENVIRONMENTAL_REGS_TEXT">
+			<Text>Environmental regulations are laws governing management of natural resources, such as forests, minerals, or fisheries; and related topics such as environmental impact assessments. Environmental law is seen as the body of laws concerned with the protection of living things (human beings inclusive) from the harm that human activity may immediately or eventually cause to them or their species. Perhaps the first modern example is during the "Great Stink" of 1858, the dumping of sewerage into the River Thames began to smell so ghastly in the summer heat that Parliament had to be evacuated. Ironically, the Metropolitan Commission of Sewers Act 1848 had allowed the Metropolitan Commission for Sewers to close cesspits around the city in an attempt to "clean up" but this simply led people to pollute the river. In 19 days, Parliament passed a further Act to build the London sewerage system. London also suffered from terrible air pollution, and this culminated in the "Great Smog" of 1952, which in turn triggered its own legislative response: the Clean Air Act 1956.[NEWLINE][NEWLINE]Today, such regulations must necessarily be not only domestic but also international. Multilateral environmental agreements sometimes create an International Organization, Institution or Body responsible for implementing the agreement. Major examples are the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) and the International Union for Conservation of Nature (IUCN). Debates over the necessity, fairness, and cost of environmental regulation are ongoing, as well as regarding the appropriateness of regulations versus market solutions to achieve even agreed-upon ends. Meanwhile, environmental burdens are ever more shifting to the Global South as the climate crisis worsens...</Text>
+		</Row>
+
+		<!-------------tier 3----------------------------->
+
+		<Row Tag="TXT_KEY_POLICY_DEEP_ECOLOGY">
+			<Text>Deep Ecology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DEEP_ECOLOGY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Deep Ecology[ENDCOLOR]: +3 [ICON_PEACE] Faith from all Bonus Resources. 25% of [ICON_PEACE] Faith created by each City is converted to [ICON_CULTURE] Culture. Adopting a [COLOR_MAGENTA]Policy[ENDCOLOR] reduces the [ICON_TURNS_REMAINING] Game Timer by [COLOR_POSITIVE_TEXT]15 Turns[ENDCOLOR] (minimum 375 Turns).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DEEP_ECOLOGY_TEXT">
+			<Text>Deep ecology is an environmental philosophy that promotes the inherent worth of all living beings regardless of their instrumental utility to human needs, and argues that modern human societies should be restructured in accordance with such ideas. Deep ecologists argue that the natural world is a complex of relationships in which the existence of organisms is dependent on the existence of others within ecosystems. Therefore the living environment as a whole should be respected and regarded as having certain basic moral and legal rights to live and flourish, independent of its instrumental benefits for human use. It is described as "deep" because it is regarded as looking more deeply into the reality of humanity's relationship with the natural world, arriving at philosophically more profound conclusions than those of mainstream environmentalism, such as pursuing (non-coercive) population decline and reversing economic devlopment/growth.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ONE_WORLD">
+			<Text>Migration Theology</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ONE_WORLD_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Migration Theology[ENDCOLOR]: +1 [ICON_INTERNATIONAL_TRADE] Trade Route. +400% [ICON_RELIGION] Pressure to foreign Cities connected via [ICON_INTERNATIONAL_TRADE] Trade Routes. All [ICON_INTERNATIONAL_TRADE] Trade Routes produce +50% more yields.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_ONE_WORLD_TEXT">
+			<Text>Many nation states have agreed and disagreed on the topic of open borders and free migration, with some countries allowing people to travel freely from country to country and state to state without the risk of deportation or punishment. In the past, many states had open international borders either in practice or due to a lack of any legal restriction. Many authors, such as John Maynard Keynes, have identified the early 20th century and particularly World War I as the point when such controls became common. Today, perhaps the only remaining example is Svalbard, where all people, regardless of citizenship are allowed to live and work without a visa or residence permit, as long as they demonstrate they are able to support themselves. During the Cold War, a migration paradox arose in which some of the communist states forbade emigration, while the "Free World" would freely accept the defectors. The brain drain this caused in Eastern Europe eventually grew to the mass border crossings that led to the fall of the Berlin Wall and the subsequent disintegration of the Soviet Union.[NEWLINE][NEWLINE]Beyond the political, having freedom of movement and a choice of where on Earth to live is a deeply personal - even spiritual - desire. Indeed, in Islam the doctrine of Hijrah suggest that freedom of movement is both a human right and a duty to God. Religious figures like Buddha and Jesus practised "a theology of migration", where their central story is one of travel. While clearly linked to proselytisation and - at least in Christianity - evangelising mission, the implications for ethics are significant. According to some adherents, immigrants to a country should have the same rights as legal residents if simply because their world religion believes, fundamentally, that everyone is divine.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CLIMATE_CRISIS">
+			<Text>Climate Summits</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CLIMATE_CRISIS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Climate Summits[ENDCOLOR]: +100% [ICON_PRODUCTION] Production when training Diplomatic Units. +3 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture from [ICON_CSD_CIVIL_SERVANT] Civil Servants. Expending a [ICON_DIPLOMAT] Great Diplomat grants 500 [ICON_RESEARCH] Science, scaling with Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CLIMATE_CRISIS_TEXT">
+			<Text>Since the 1950s, droughts and heat waves have appeared simultaneously with increasing frequency. However before the 1980s it was unclear, based on temperature data back to the 18th century, whether the warming effect of increased greenhouse gases was stronger than the cooling effect of airborne particulates in air pollution. Satellite-assisted modelling and evidence from examining Antarctic ice cores began to reveal that the effect of increased CO2 production could be severe. After a crisis around damage to the ozone layer that required international cooperation to address, the UN established the Intergovernmental Panel on Climate Change (IPCC) to collate and assess evidence on climate change, while politicians like Margaret Thatcher and later Al Gore raised the profile of the issue in their respective countries. In 1997 after the second IPCC report, developed nations agree in Kyoto to reduce carbon emissions by 5% by 2012, though the US senate does not ratify the Protocol.[NEWLINE][NEWLINE]Today, every year, countries who have joined the United Nations Framework Convention on Climate Change (UNFCCC) meet to measure progress and negotiate multilateral responses to climate change. There are 198 Parties to the Convention. In spite of some progress, the IPCC expects the 20-year average global temperature to exceed +1.5 °C in the early 2030s. Depending on how certain feedback cycles shift (so called "Tipping Points"), this may lead to irreversible changes in the Earth's climate. The diplomatic challenge of solving the issue of anthropogenic climate change is therefore possibly the greatest challenge mankind has yet faced.</Text>
+		</Row>
+
+	</Language_en_US>
+</GameData>

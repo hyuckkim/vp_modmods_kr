@@ -1,0 +1,8 @@
+<Asset>
+	<Mesh file="clouds.gr2" source="Max" />
+	<DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+	<TimedTrigger file="Cloud.ftsxml" source="Tool" model="Fuji" state="0,1,2,3" />
+	<BoneUsage>
+		<Bone name="FX_Fuji" />
+	</BoneUsage>
+</Asset>

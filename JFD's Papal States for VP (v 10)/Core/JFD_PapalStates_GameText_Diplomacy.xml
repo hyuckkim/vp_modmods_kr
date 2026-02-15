@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/23/2013 1:27:25 PM -->
+<GameData>
+	<Language_ko_KR>
+		<!-- DIPLOMACY: VANILLA Vanilla -->
+		<!--First Greeting messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_FIRSTGREETING_1">
+			<Text>그래, 또 하나의 불쌍한 자가 무릎 꿇으러 왔군. 나는 율리우스 2세다. 교황령을 제국의 영광으로 되돌리려면 할 일이 많다. 그러니 서두르지.</Text>
+		</Row>
+		<!--Defeated messages from AI leaders-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DEFEATED_1">
+			<Text>성 베드로께서 네 천국 입문을 거부하시길.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DEFEATED_2">
+			<Text>이 추악한 짓에 대해, 신의 눈 아래에서 오래도록 고통받기를 바란다.</Text>
+		</Row>
+		<!--First Greeting from leaders that don't have their own file yet-->
+		<!-- Human repeats an action too much, gets the following responses -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_REPEAT_TOO_MUCH">
+			<Text>입조심하라. 넌 우리를 심히 짜증나게 하고 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_REPEAT_TRADE_1">
+			<Text>이미 이 거래가 불쾌하다고 말하지 않았느냐?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_REPEAT_1">
+			<Text>다시 보게 될 줄은 몰랐군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_REPEAT_1">
+			<Text>교황에게 계속 귀찮게 굴다니, 매우 불쾌하도다.</Text>
+		</Row>
+		<!-- Greetings -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_POLITE_HELLO_1">
+			<Text>반가운 얼굴이군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_POLITE_HELLO_2">
+			<Text>다시 뵙게 되어 기쁘도다. 무엇을 원하는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_NEUTRAL_HELLO_1">
+			<Text>인사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_NEUTRAL_HELLO_3">
+			<Text>무슨 이야기를 나누고 싶은가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_NEUTRAL_HELLO_4">
+			<Text>오늘은 무슨 일로 왔는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_NEUTRAL_HELLO_5">
+			<Text>말하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_NEUTRAL_HELLO_6">
+			<Text>시작하지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HELLO_1">
+			<Text>그대의 간사한 혀는 익히 들었다. 짧게 말하라, 곧 떠날 테니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HELLO_2">
+			<Text>왜 왔는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HELLO_3">
+			<Text>성스러운 교회에 무슨 볼일인가, 사악한 자여?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_DESTRUCTION_LOOMS_1">
+			<Text>우리는 멸망 직전에 있다. 그런데도 그대는 거지의 빵마저 훔치려 드는가. 무엇을 원하는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_DESTRUCTION_LOOMS_2">
+			<Text>패배가 눈앞에 다가왔다는 걸 안다. 항복 조건을 논하러 온 것인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AT_WAR_WANTS_PEACE_1">
+			<Text>이 전쟁을 끝낼 때가 되지 않았는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AT_WAR_WANTS_PEACE_2">
+			<Text>두 나라의 안녕을 위해 평화를 맺자.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AT_WAR_WANTS_PEACE_3">
+			<Text>무기를 내려놓을 때가 왔다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AT_WAR_HOSTILE_1">
+			<Text>우리가 무슨 큰 죄를 지었다고 참회하러 왔단 말인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_BROKEN_MILITARY_PROMISE_1">
+			<Text>악마의 꼭두각시 같은 혀를 가진 자와는 거래하지 않겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_WORKING_WITH_1">
+			<Text>반가운 친구여, 무엇을 도와드릴까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_COOP_WAR_1">
+			<Text>머지않아 {1_ThirdPlayerName:textkey}의 악행은 바로잡힐 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HUMAN_AT_WAR_1">
+			<Text>우리는 그쪽의 패배를 기도하고 있다. 그래야 조금은 겸손을 배우겠지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HUMAN_AT_WAR_2">
+			<Text>너의 이단을 향한 전쟁은 곧 끝날 것이며, 그 승자가 네 불경한 땅의 주인이 되리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HUMAN_AT_WAR_1">
+			<Text>이 험난한 전쟁 속에서도 그대의 무사함을 기도하네. 무엇을 도와드릴까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_AGGRESSIVE_MILITARY_1">
+			<Text>네 군대가 우리 국경에 가까이 와 있다. 허세를 부리러 온 것이냐, 아니면 그냥 시간 낭비하러 온 것이냐?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AGGRESSIVE_MILITARY_1">
+			<Text>그대의 군대 배치는 다소 우려스럽다. 평화를 원한다면 철수하라. 자, 무슨 이야기인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_1">
+			<Text>그대의 도시와 인구 확장은 마치 역병처럼 땅을 물들이고 있다. 다시는 안 보게 될 날이 기다려진다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AGGRESSIVE_EXPANSION_1">
+			<Text>이번 기회에 말하자면, 그대의 확장은 내 측근들을 불안하게 만들고 있다. 앞으로 문제가 없길 바란다. 무슨 이야기를 나눌까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_1">
+			<Text>그대가 영토를 사들이는 모습은 탐욕 그 자체다. 도둑질은 가장 비열한 죄악이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_AGGRESSIVE_PLOT_BUYING_1">
+			<Text>최근 우리 근처에서 영토를 사들이는 것이 우려스럽다. 관계를 위해 신중히 행동하길 권하겠다. 이제, 무슨 일로 오셨는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_FRIENDLY_STRONG_MILITARY_1">
+			<Text>그대의 강력한 군대에 대한 소문은 익히 들었다. 이를 죄로 만들지 않도록 성모 교회에 귀의하길 권하겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_FRIENDLY_STRONG_ECONOMY_1">
+			<Text>당신의 제국이 부유하다는 소문이 있다. 교회에 약간의 기부를 고려해주시길 바란다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HUMAN_FEW_CITIES">
+			<Text>도시 국가와 시간을 보내는 것은 언제나 즐겁다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HUMAN_SMALL_ARMY">
+			<Text>평화를 추구하는 것도 좋지만, 전쟁 준비도 필요한 법. 그런데 당신은 그 둘 다 준비가 안 된 듯하군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_HOSTILE_HUMAN_IS_WARMONGER">
+			<Text>피로 물든 죄를 지은 자가 감히 우리 앞에 나타나다니?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_TOO_SOON_FOR_DOF_1">
+			<Text>이는 성모 교회에 최선의 이익이 되지 않는다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOF_AI_DENOUNCE_REQUEST_1">
+			<Text>친구여, 중요한 일이 있다. {1_CivName}과의 관계가 끊어졌으니, 그들을 규탄해줬으면 한다. 어떠한가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOF_NOT_HONORED_1">
+			<Text>이 심각한 불명예에 몹시 실망하였다.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 규탄했습니다! 현재 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DENOUNCING_FRIEND_1">
+			<Text>이제 정말 지긋지긋하군. 전 세계 지도자들에게 너와 함께하는 건 실수라고 말했다.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 규탄했습니다! 현재 전쟁 상태는 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DENOUNCING_FRIEND_2">
+			<Text>됐도다. 그대의 악행을 온 세상에 알릴 때가 지났도다.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 비난했습니다! 참고: 현재 전쟁 중은 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_TO_BEING_DENOUNCED_1">
+			<Text>그렇다면 그대는 하느님을 모독한 것이로군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DOFED_FRIEND_1">
+			<Text>오오, {1_CivName}과 우정을 맺었다 하더군. 반가운 소식이요. 우리 또한 그들과 우호적인 관계를 유지하고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DOFED_ENEMY_1">
+			<Text>{1_CivName}과 지나치게 가까워지는 일은 피하는 것이 좋을 것이오. 그렇지 않다면... 서로 불편한 일이 생길 수 있겠지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DENOUNCED_FRIEND_1">
+			<Text>우리는 {1_CivName}과 과거 함께 일한 적이 있으며, 그들을 깊이 존중하고 있소. 그 점을 명심해주시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DENOUNCED_ENEMY_1">
+			<Text>{1_CivName}에게 우리와 같은 불쾌감을 느끼는 이가 또 있다니 반갑소. 그들은 도무지 믿을 수 없는 족속이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DOF_SO_AI_DOF_1">
+			<Text>우리 사이가 이리 돈독하니, {1_CivName}과도 우정을 맺은 걸 눈치챘소. 우리도 그리했으니, 이 동맹이 훗날 큰 결실을 맺길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DENOUNCE_SO_AI_DENOUNCE_1">
+			<Text>{1_CivName}은 문명 세계에 해만 끼치는 존재라는 그대의 신념에 깊이 공감하오. 우리의 공동 규탄이 그들에게 교훈이 되길 빌지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DOF_SO_AI_DENOUNCE_1">
+			<Text>허, 이제 해충이 번식하는 것 같구려. 그대와 {1_CivName}, 둘 다 상대해야 한다니 골치 아프겠소. 곧 훈계를 내려야겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DENOUNCE_SO_AI_DOF_1">
+			<Text>그대가 미워하는 자라면, 그와 우정을 쌓을 가치가 충분하다는 뜻이겠지. {1_CivName}에게 내 안부를 전하시오.</Text>
+		</Row>
+		<!-- LEADER_JULIUS_II Diplo Text -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_AGGRESSIVE_MILITARY_WARNING_1">
+			<Text>그대의 군대가 우리 문 앞에 이르렀다는 것, 다 알고 있소. 싸움을 피하지 않겠소. 이 거룩한 궁정을 결코 떠나지 않을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_AGGRESSIVE_MILITARY_WARNING_1">
+			<Text>우리 성지 근처에 그대의 병력들이 집결하고 있다는 제보를 받았소. 그 지휘관에게 철수를 명하시오. 길을 잘못 든 자이니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_KILLED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}을 침략한 그대의 행보를 보니, 약속이란 그대에겐 무가치한 말인 모양이오. 한심하기 그지없군. 세상이 그대의 죄를 알게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}을 향한 무차별적 공격, 결코 눈감지 않겠소. 계속해서 폭력을 일삼는다면 반드시 대가를 치르게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_SERIOUS_WARNING_1">
+			<Text>그대의 팽창주의는 우리를 모욕하는 행위요. 그에 따르는 대가가 있을 줄 아시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_WARNING_1">
+			<Text>그대가 교회의 영토를 넘보는 모습이 심히 거슬리오. 다시 생각해보길 권하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_WARNING_2">
+			<Text>그대가 눈에 띄는 땅마다 차지하는 그 습성, 이미 주지의 사실이 되었소. 더는 그러지 않기를 충고하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_WARNING_3">
+			<Text>그대가 거룩한 교황령의 땅을 계속 침범한다면, 우리 사이에 우정이라는 것은 있을 수 없을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_WARNING_4">
+			<Text>그대의 정착민들이 우리 영토 근처에 자리를 잡는 것은 양국 간의 관계에 심각한 부담을 주고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EXPANSION_BROKEN_PROMISE_1">
+			<Text>확실히 말하지 않았소? 더는 확장하지 않겠다던 그 맹세는 헛된 말이었단 말이오? 그 대가를 치르게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PLOT_BUYING_SERIOUS_WARNING_1">
+			<Text>그대가 교황청 근처 땅을 사들이는 그 거친 방식은 실로 모욕적이오. 좀 더 훌륭한 이웃일 줄 알았건만.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PLOT_BUYING_WARNING_1">
+			<Text>그대가 내 근처의 땅을 사들였다는 소식에 심히 놀랐소. 사태가 커지지 않도록 신중히 행동하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PLOT_BUYING_BROKEN_PROMISE_1">
+			<Text>우리를 향한 땅 구매를 멈추겠다던 말, 새빨간 거짓이었구려. 이 모욕은 결코 가볍게 넘기지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PLOT_BUYING_BROKEN_PROMISE_2">
+			<Text>우리는 진심으로 실망했소. 당신이라면 영토 획득을 멈춰줄 줄 알았건만, 기대를 저버렸군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_1">
+			<Text>이 세상에서 진정한 우군을 찾기란 참으로 어렵소. 그대 제국과 협력 협정을 맺고 싶소이다. 어찌 생각하오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_2">
+			<Text>위대한 지도자시여, 협력 협정을 체결하실 의향이 있소? 우리 양국 사이에 오래도록 이어질 인연을 맺고자 하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_3">
+			<Text>밝은 미래를 함께 열어갑시다. 협력 협정으로 씨앗을 뿌려 봄이 어떻겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_4">
+			<Text>이 험한 세상, 혼자서는 버틸 수 없소. 서로 돕는 길밖에 없소. 우리 협력 협정 맺어보지 않겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DEC_FRIENDSHIP_1">
+			<Text>우리는 그대와의 우정을 천명하고 싶소. 그대의 경건함과 덕망은 모든 지도자들의 귀감이라 여겨지오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DENOUNCE_1">
+			<Text>그대의 죄악을 세상에 알릴 때가 왔소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 비난했습니다! 참고: 현재 전쟁 중은 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DENOUNCE_2">
+			<Text>그대의 신성모독을 더는 참을 수 없도다. 이로써 그대는 성교회의 환영을 영원히 잃었소.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]그들이 우리를 공개적으로 비난했습니다! 참고: 현재 전쟁 중은 아닙니다.[ENDCOLOR])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COOP_WAR_REQUEST_1">
+			<Text>{1_PlayerName:textkey}은 가장 악질적인 이단을 저질렀소. 전쟁을 통해서만이 그들의 땅을 거룩한 교회 품으로 되돌릴 수 있소. 우리와 함께 이 성전을 수행해주시길 청하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COOP_WAR_REQUEST_2">
+			<Text>{1_PlayerName:textkey}은 교황령과 성모 교회의 적이오. 그대여, 함께 이 성전에 나서주시길 간청하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COOP_WAR_TIME_1">
+			<Text>때가 되었소. {1_PlayerName:textkey}를 향한 이 거룩한 성전에, 우리와 함께하시지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_NOW_UNFORGIVABLE_1">
+			<Text>그대의 행위는 이제 용서받을 수 없소. 성교회와 그대 사이의 화해는 더 이상 있을 수 없도다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_NOW_ENEMY_1">
+			<Text>상황이 이리 되니, 그대를 우리의 적이라 간주할 수밖에 없소. 교황청의 권익을 지키기 위해 필요한 모든 수단을 강구할 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COMPLIMENT_1">
+			<Text>그대와의 우정을 진심으로 귀히 여기오. 이 관계가 오래도록 이어지길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_BOOT_KISSING_1">
+			<Text>그대는 현명하고 위대한 통치자요. 우리 같은 약한 이들에게도 자비를 베풀어 주시길 청하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_BOOT_KISSING_2">
+			<Text>오 위대한 이여, 그대는 약한 자들의 희망이요, 강함과 미덕의 본보기가 되어주시기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WARMONGER_1">
+			<Text>그대의 지나친 공격성, 우리도 잘 알고 있소. 계속된다면 파멸은 피할 수 없을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WARMONGER_2">
+			<Text>그대는 문명과는 거리가 먼 야만인처럼 보이오. 그대의 행동은 이미 많은 이들의 주목을 받고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WARMONGER_3">
+			<Text>그대의 피에 굶주린 행보는 이미 온 세상의 화젯거리다. 이제 등을 조심하게.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WARMONGER_4">
+			<Text>지나친 관심은 화를 부르기 마련이니라. 지금의 너는 지나치게 눈에 띄고 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_MINOR_CIV_COMPETITION_1">
+			<Text>그대와 {1_MinorCivName:textkey} 사이에 이상한 정이 생긴 듯하군. 모르고 있었겠지만, 그들은 이미 성좌의 보호 아래 있다. 그대는 발을 거두는 편이 좋을 게야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_MINOR_CIV_COMPETITION_2">
+			<Text>{1_MinorCivName:textkey}과의 관계가 깊어졌다고 들었다. 좋다, 그러나 그들의 수호는 성좌가 맡겠다. 우리 둘 중 누가 다치지 않으려면 말이지.</Text>
+		</Row>
+		<!--Insults-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_LEADER_JULIUS_II_1">
+			<Text>그대가 참으로 한심하다는 사실을 눈치채고 말았다. 이 사실을 나눔이 의무인 줄 알았노라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_LEADER_JULIUS_II_2">
+			<Text>오, 또 그대냐. 우리 성좌가 아끼는 자그마한 도시국가 같군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_LEADER_JULIUS_II_3">
+			<Text>슬슬 그대의 낯이 지겹도다. 진심으로 언젠가 자취를 감추어주길 바란다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_LEADER_JULIUS_II_4">
+			<Text>오, 그대였나. 미안하도다. 가끔은 그대를 쳐내야 할 야만인들과 착각하곤 하네.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_MILITARY_1">
+			<Text>참고로 알려주마. 그대 군대는 어찌나 초라한지, 등 뒤를 항상 조심해야 할 것이야.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_MILITARY_2">
+			<Text>그딴 병력으로 제국을 유지하고 있다니 기적이로다. 야만인에게조차 쓸려나가지 않은 게 신의 은총이 아니고 무엇이랴?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_NUKE_1">
+			<Text>우리의 말은 핵무기로 뒷받침된다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_BULLY_1">
+			<Text>세상에는 약자를 괴롭히며 만족을 얻는 자들이 있다 하더라. 그대도 그렇게 생각하지 않는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_UNHAPPINESS_1">
+			<Text>그대 국민의 통곡 소리가 이곳까지 들려온다. 뭔가 조치를 취하지 않는다면 그들은 참된 문명으로 떠나갈지도 모르겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_UNHAPPINESS_2">
+			<Text>그토록 불행한 백성을 이끄는 자로서 아직도 자리에 앉아 있다니, 경이로울 따름이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_CITIES_1">
+			<Text>그대의 제국은 어쩌다 이리도 왜소해졌는가? 영토 확장을 잊은 것인가, 아니면 능력이 부족한 것인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_POPULATION_1">
+			<Text>여행자들이 그러더군. 그대 제국의 경제는 보기 안쓰러울 정도라고. 약간 애원해보게, 혹시 도와줄지도 모르니. 아니, 농담이네. 도와주지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_CULTURE_1">
+			<Text>이 무슨 비극인가... 그대 제국은 참으로 무지하고 천박하도다. 백성들은 하루 종일 돌을 두드리는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INSULT_CULTURE_2">
+			<Text>소문에 따르면, 그대의 문화 수준이 어찌나 낮은지 야만인들조차 그 땅을 꺼린다 하더라.</Text>
+		</Row>
+		<!--Public Declarations-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DECLARATION_PROTECT_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey}는 이제 {1_MinorCivName:textkey}를 보호할 것이라 온 세상에 알린다. 이 도시국가를 공격하면 큰 외교적 손해와 전쟁의 위험을 각오해야 할 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DECLARATION_ABANDON_CITY_STATE_1">
+			<Text>{2_MajorCivName:textkey}는 더 이상 {1_MinorCivName:textkey}의 보호를 보장하지 않기로 하였다.</Text>
+		</Row>
+		<!--Human is asking the AI for something-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_REPEAT_NO_1">
+			<Text>이미 같은 말을 여러 번 하지 않았는가. 대답은 변함없이 "아니다."</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DONT_SETTLE_YES_1">
+			<Text>좋다. 당분간 그대 제국 근처에 정착하지 않도록 하겠노라. 미래에는 보다 너그러운 이웃이 되길 바라지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DONT_SETTLE_YES_2">
+			<Text>그리 하도록 하지. 그대의 주변에 정착하지 않겠소. 협조는 그대가 잘하는 일이 아닌 듯하군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DONT_SETTLE_NO_1">
+			<Text>용납할 수 없소. 우리는 주권을 가진 자이며, 원하는 땅에 정착할 권리가 있소. 이 모욕은 오래 기억될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DONT_SETTLE_NO_2">
+			<Text>하느님을 이토록 모욕하는 발언을 하다니? 잊지 않을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DONT_SETTLE_NO_3">
+			<Text>감히 이런 무엄을? 우리를 우습게 여기는 것이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_YES_1">
+			<Text>좋소. 굳건한 우정이 우리 제국을 함께 번영케 하길 빌겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_YES_2">
+			<Text>훌륭한 제안이오. 우리 동맹은 온 세계의 부러움을 사게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WORK_WITH_US_YES_3">
+			<Text>기꺼이 수락하겠소. 우리의 제국이 우정 속에 번영하길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DECLINE_1">
+			<Text>이제는 거절할 수밖에 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DECLINE_2">
+			<Text>유감입니다만, 지금은 어렵겠군요. 다음 기회에 다시 이야기해 보지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DECLINE_3">
+			<Text>이 동맹은 성좌의 이익에 부합하지 않으므로, 사양하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COOP_WAR_YES_1">
+			<Text>현명한 판단입니다. 전장을 향해 나아갑시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_COOP_WAR_SOON_1">
+			<Text>흥미로운 제안입니다. 받아들이겠습니다. 다만 아직 성좌는 준비되지 않았으니 10턴만 시간을 주십시오. 준비가 되면 다시 연락드리겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_YES_1">
+			<Text>좋습니다. 평화를 지키기 위해서라면 감내하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_YES_2">
+			<Text>우리는 평화를 위해 필요한 일을 하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_YES_3">
+			<Text>좋습니다. 그러나 기억하십시오, 이런 요구는 그대의 명예를 해칠 수 있습니다. 그것이 그대에게 어떤 의미가 있을지는 모르겠지만 말입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_WEAK_1">
+			<Text>제발, 그런 요구를 할 처지가 아니지 않습니까.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_WEAK_2">
+			<Text>그대가 자신의 힘 없는 모습을 잘 알았으면 좋겠군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_WEAK_3">
+			<Text>속 보이는 협박이군요. 우리에겐 두려울 것이 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_WEAK_4">
+			<Text>하하! 그대 따위가 우리에게 요구를 하다니, 우습군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_HOSTILE_1">
+			<Text>성스러운 교회를 모욕하려 드는 겁니까? 그토록 원한다면, 힘으로 빼앗아 보시지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_HOSTILE_2">
+			<Text>우리를 꺾으려면, 우리 시신 위로 지나가야 할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_HOSTILE_3">
+			<Text>그게 필요하다면, 와서 가져가 보시지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_HOSTILE_4">
+			<Text>용납할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_HOSTILE_5">
+			<Text>우습군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_MUCH_1">
+			<Text>그대의 욕심은 지나칩니다. 그대의 탐욕을 위해 우리 나라를 가난에 몰아넣을 순 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_MUCH_2">
+			<Text>안 됩니다. 우리는 존엄을 지키고자 이 큰 재화를 거저 넘길 수는 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_MUCH_3">
+			<Text>우리의 재화를 탐하려는 그대의 탐욕은 도를 넘었습니다. 그런 요구는 그만하십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_SOON_1">
+			<Text>이렇게 빠르게 다시 협박하다니? 우리는 그대 같은 사악한 자의 요구를 단호히 거절합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_SOON_2">
+			<Text>또다시 요구하십니까? 탐욕은 악덕 중의 악덕이라 들었습니다만, 지도자께선 모르시나 보군요…</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_DEMAND_REFUSE_TOO_SOON_3">
+			<Text>남의 수고의 열매를 또 빼앗겠다니요? 그대의 탐욕은 이미 전설이 되었습니다. 결코 받아들일 수 없습니다.</Text>
+		</Row>
+		<!--Deal Offers and related-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_LETS_HEAR_IT_1">
+			<Text>그 제안을 들어보지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_LETS_HEAR_IT_2">
+			<Text>무슨 이야기를 하려는 겁니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PEACE_OFFER_1">
+			<Text>평화로 돌아갑시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PEACE_OFFER_2">
+			<Text>전쟁으로 우리 존재가 정의되어선 안 됩니다. 평화의 시간이 도래했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DEMAND_1">
+			<Text>성좌는 그대에게 요구할 것이 있습니다. 우리는 조세를 부과합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_REQUEST_ITEM_1">
+			<Text>주님의 뜻이라면, 그대의 도움을 받아야겠습니다. 실망시키지 않으리라 믿습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_OPEN_BORDERS_EXCHANGE_1">
+			<Text>성좌와 그대 나라 사이에 자유로운 통행이 가능하다면 더할 나위 없이 현명할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_OPEN_BORDERS_OFFER_1">
+			<Text>그대 영토를 통과할 수 있도록 협상하고자 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PLAN_RESEARCH_AGREEMENT_1">
+			<Text>그대의 위대한 나라와 연구 협정을 체결하고자 합니다. 양측 모두 150 [ICON_GOLD]을 부담해야 합니다. 어떻게 생각하십니까?[NEWLINE][NEWLINE](수락하더라도 즉시 체결되진 않습니다)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESEARCH_AGREEMENT_OFFER_1">
+			<Text>연구 협정은 상호 간에 유익한 협약이며, 우정을 더욱 굳건히 할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RENEW_DEAL_1">
+			<Text>이 협정은 우리 두 나라를 더욱 강하게 만들었습니다. 다시 한 번 이 협정을 맺어, 번영을 이어갑시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WANT_MORE_RENEW_DEAL_1">
+			<Text>이 협정의 가치는 시간이 지나며 희미해졌습니다. 재계약하려면, 그대의 제안이 더 좋아야 하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_LUXURY_TRADE_1">
+			<Text>그대의 사치 자원을 교환하고 싶습니다.</Text>
+		</Row>
+		<!-- AI Attacked by another player -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_HOSTILE_1">
+			<Text>그대는 성좌만이 아닌, 성스러운 교회 전체를 공격한 셈입니다. 그리고 우리를 지키려는 이들도 말이지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_WEAK_HOSTILE_1">
+			<Text>비록 그대의 군세가 강하더라도, 우리는 절대 사악함에 무릎 꿇지 않을 것입니다. 하느님에 대한 믿음은 어떤 군대보다 강하니.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_STRONG_HOSTILE_1">
+			<Text>우리 군세는 그대보다 열 배는 강하며, 신앙은 더욱 굳건합니다. 무엇으로 우리를 꺾겠다는 것이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_STRONG_HOSTILE_2">
+			<Text>우리를 공격한 것은 실수였습니다. 우리는 이 세상과 저 세상에 모두 동맹이 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_STRONG_HOSTILE_3">
+			<Text>전쟁을 선포하다니, 어리석은 판단이었군요. 그러나 우리도 그만큼의 대가를 치르게 하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_STRONG_HOSTILE_4">
+			<Text>그 결정, 반드시 뉘우치게 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_EXCITED_1">
+			<Text>우리는 이 싸움에서 물러서지 않을 것입니다. 우리는 성 베드로의 열쇠를 지닌 자이며, 그 열쇠는 결코 헛되이 떨어지지 않을 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_EXCITED_2">
+			<Text>그대의 파멸을 통해 하느님을 기쁘게 할 수 있다면, 이 얼마나 기쁜 일이겠습니까.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_WEAK_EXCITED_1">
+			<Text>이 전쟁이야말로 하느님께서 주신 기회라 믿습니다. 교황군은 결코 쓰러지지 않을 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_STRONG_EXCITED_1">
+			<Text>그대의 판단력이 흐려진 듯합니다. 하느님께 맞서는 이 전쟁에서 그대에게는 승산이 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_SAD_1">
+			<Text>그대의 행위는 우리를 깊은 슬픔에 빠뜨렸습니다... 그런 자들에겐 지옥에 특별한 자리가 마련되어 있겠지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_SAD_2">
+			<Text>우리를 이렇게 공격하다니? 그대의 오만함은 끝이 없군요. 언젠가 반드시 심판을 받게 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_SAD_3">
+			<Text>타인의 약점을 이용해 승리를 쟁취하려는 자여, 그 길이 참된 정의라 믿는가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_SAD_4">
+			<Text>어찌 이런 일을 저지를 수 있단 말인가? 물러가라, 불경한 자여.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_BETRAYED_1">
+			<Text>신뢰를 배신하다니... 이 치욕을 온 세상이 알게 될 것이다.</Text>
+		</Row>
+		<!-- AI Declaring War-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LEADER_JULIUS_II_1">
+			<Text>우리 두 제국은 끝내 뜻을 함께하지 못하겠군. 이 싸움은 전장에서 마무리짓자.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LEADER_JULIUS_II_2">
+			<Text>예견된 일이었다. 결국 이렇게 마주치게 되었군. 누가 신의 뜻을 받들 자인지 가리자.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LEADER_JULIUS_II_3">
+			<Text>이제 싸울 때다. 하느님의 뜻을 따르는 자만이 승리하리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_ATTACKED_MILITARY_PROMISE_BROKEN_1">
+			<Text>네가 한 맹세를 저버렸으니, 이 배신을 세상이 알게 될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LAND_1">
+			<Text>이 땅에서 우리의 운명은 충돌할 수밖에 없었지. 누가 살아남을 자격이 있는지 보도록 하지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LAND_2">
+			<Text>너무 가까이 다가왔군. 내 제국은 더 넓은 영토를 필요로 한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_LAND_3">
+			<Text>네 땅은 곧 우리의 것이 될 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_1">
+			<Text>이 세계는 본좌의 것이다. 이제 그 의미를 너에게 보여주마.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_2">
+			<Text>운명은 우리를 이 분열된 세계의 구원자로 택하셨다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_3">
+			<Text>너와 같은 이교도 무리를 멸한 뒤, 역사는 우리에게 미소 지을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_4">
+			<Text>솔직히 말해, 너도 사라져야 하고, 다른 자들도 마찬가지다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_5">
+			<Text>너는 우리 지배를 향한 행로에 놓인 하나의 디딤돌일 뿐이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WORLD_CONQUEST_6">
+			<Text>지금이 바로 계획을 실행할 때다. 어리석은 자여, 너도 예외는 아니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_1">
+			<Text>지금이 기회다. 너를 무너뜨리겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_2">
+			<Text>오랜 기다림은 끝났다. 너의 허술한 틈을 찔러 우리 뜻을 이루겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_3">
+			<Text>이 날만을 기다려왔다. 유언장을 준비해두는 게 좋을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_4">
+			<Text>이제는 우리의 시간이다. 너를 꺾고, 승리에 한 걸음 다가가리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_5">
+			<Text>운명은 너의 편이 아니다. 이런 나약함으로 우리의 길을 막으려 하다니, 어리석도다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_6">
+			<Text>상황을 더는 외면할 수 없도다. 지금이 아니면 영원히 기회를 잃게 되리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_7">
+			<Text>경쟁자를 제거할 기회를 놓칠 수는 없지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_OPPORTUNITY_8">
+			<Text>네가 보여준 나약함이 우리에겐 절호의 기회로 다가왔도다. 유감이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_1">
+			<Text>불가능한 과업일지라도, 너와 네가 믿는 모든 것을 무너뜨릴 방법을 우리는 반드시 찾겠다. 실패하더라도 기꺼이 싸우겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_2">
+			<Text>너는 강하나, 우리는 너를 이길 길을 찾을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_3">
+			<Text>너는 그 누구보다 사악하도다. 우리의 피 한 방울까지 너를 무너뜨릴 것을 맹세하노라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_4">
+			<Text>네 힘은 막강하나, 우리는 물러서지 않는다. 반드시 승리의 길을 찾을 것이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_5">
+			<Text>지금이 결단의 때다. 승산은 없을지언정, 우리는 맞서 싸우겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_6">
+			<Text>신의 가호가 함께하기를. 우리는 너의 강함에도 굴하지 않으리라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_7">
+			<Text>우리는 원치 않았으나, 지금이야말로 너를 꺾을 유일한 기회일지도 모른다. 전장에서 보자꾸나.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_DESPERATE_8">
+			<Text>멸망이 기다린다 해도, 물러선다면 결국엔 같은 운명을 맞이할 뿐이니라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_BETRAYAL_1">
+			<Text>우정을 가장한 우리의 행보가 예의는 아니었겠지. 하지만 역사의 이름을 남긴 자 중 누가 예의를 따랐던가? 이제 안식을 준비하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_BETRAYAL_2">
+			<Text>너의 약점이 우리의 기회로구나. 우리를 믿은 게 실수였다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_BETRAYAL_3">
+			<Text>배신이라 부르지 말라. 그저 '우정의 재해석'일 뿐이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_BETRAYAL_4">
+			<Text>사실 널 그리 좋아하진 않았다. 연기하기도 지쳤지. 이제 그만 끝내자. 죽을 준비는 되었겠지?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DOW_WEAK_BETRAYAL_1">
+			<Text>승산이 없다는 것쯤은 안다. 하지만 우리의 속셈은 이쯤에서 드러나야 했고, 남은 것은 기도뿐이다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WAR_DEMAND_REFUSED_1">
+			<Text>좋다. 우리 군이 직접 네 땅에서 그 대가를 걷어가겠다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WAR_DEMAND_REFUSED_2">
+			<Text>그렇다면 전쟁이로다.</Text>
+		</Row>
+		<!--AI Responses to a human peace offer-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PEACE_WHAT_WILL_HUMAN_OFFER_1">
+			<Text>네 제안은 무엇이냐?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PEACE_WHAT_WILL_HUMAN_OFFER_2">
+			<Text>무엇을 원하느냐?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_PEACE_WHAT_WILL_HUMAN_OFFER_3">
+			<Text>평화를 얻기 위한 대가는 무엇인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_NO_PEACE_1">
+			<Text>오늘은 평화를 말할 수 없겠다. 다음 기회를 기다리도록 하라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_NO_PEACE_2">
+			<Text>지금은 협상의 때가 아닙니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_NO_PEACE_3">
+			<Text>아직 해결되지 않은 일이 남아 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_TOO_SOON_NO_PEACE_1">
+			<Text>하느님의 진노가 가라앉기 전에는 평화를 논할 수 없습니다.</Text>
+		</Row>
+		<!--AI Responses to a discussion mode topics-->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_PLEASED_1">
+			<Text>훌륭하도다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_PLEASED_2">
+			<Text>기쁘도다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_PLEASED_3">
+			<Text>이 소식이 매우 반갑습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_PLEASED_4">
+			<Text>좋은 소식이군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_THANKFUL_1">
+			<Text>감사를 표하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_THANKFUL_2">
+			<Text>그대는 진정 훌륭한 통치자이십니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_THANKFUL_3">
+			<Text>역사는 그대의 위대한 행적을 길이 기억할 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_DISAPPOINTED_1">
+			<Text>안타까운 일이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_DISAPPOINTED_2">
+			<Text>그럼, 다음 기회를 기다리겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_DISAPPOINTED_3">
+			<Text>유감이군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SO_BE_IT_1">
+			<Text>좋습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SO_BE_IT_2">
+			<Text>그 책임은 온전히 그대에게 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SO_BE_IT_3">
+			<Text>그 결정을 곧 후회하게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RETURNED_CIVILIAN_1">
+			<Text>포로들을 풀어준 데에 대하여 감사를 드리오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RETURNED_CIVILIAN_2">
+			<Text>성스러운 교회를 대신하여 보여주신 행동에 깊이 감사드리오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RETURNED_CIVILIAN_3">
+			<Text>감사하오. 이 일이 양국의 우애를 더욱 굳건히 하는 전환점이 되기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CULTURE_BOMBED_1">
+			<Text>이런 무례가! 대가를 치르게 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CULTURE_BOMBED_2">
+			<Text>전쟁을 부추기려는 것이라면, 성공하고 있군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_1">
+			<Text>그래도 솔직한 건 인정하지. 그게 그대의 유일한 미덕일지도 모르지만.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_1">
+			<Text>믿기 어려운 말이로군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_AGGRESSIVE_MILITARY_WARNING_BAD_1">
+			<Text>우려하던 바가 현실이 되었군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_AGGRESSIVE_MILITARY_WARNING_GOOD_1">
+			<Text>진심이라 믿고 싶소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_ATTACKED_MINOR_BAD_1">
+			<Text>그렇게 나올 셈인가 보군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_ATTACKED_MINOR_GOOD_1">
+			<Text>그래, 그 말이 맞다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_ATTACKED_MINOR_BAD_1">
+			<Text>우리의 결정은 교회의 이익을 위한 것이었음을 다시금 확신하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_BAD_1">
+			<Text>그대와는 대화가 불가능하다는 사실이 안타깝소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_BAD_2">
+			<Text>그렇다면 더이상 나눌 말도 없겠군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_BAD_3">
+			<Text>그대는 우리를 실망시켰소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_RESPONSE_BAD_4">
+			<Text>이 일은 두 나라 사이에 긴장을 불러일으킬 것이오.</Text>
+		</Row>
+		<!-- DIPLOMACY: BWN Vanilla -->
+		<!-- Statements to player -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_ATTACKED_YOUR_MINOR_1">
+			<Text>우리 군은 방금 그대의 하찮은 도시국가 하나를 침공했소. {@1_MinorCivName}의 땅은 곧 우리의 영토가 될 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_ATTACKED_YOUR_MINOR_2">
+			<Text>어머나, 우리가 그대의 친구 {@1_MinorCivName}을 공격해버렸네요. 뭔가 조치를 취해보시지요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_ATTACKED_YOUR_MINOR_1">
+			<Text>어쩌다 보니 그대가 보호하는 {@1_MinorCivName}을 공격하게 되었소. 애초에 충돌하려던 의도는 없었지만, 어쩔 수 없는 선택이었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_ATTACKED_YOUR_MINOR_2">
+			<Text>우리 제국이 {@1_MinorCivName}을 공격했단 소식을 들었소. 의도한 바는 아니었으니, 이 일로 우리 사이가 틀어지지 않길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EMBASSY_EXCHANGE_1">
+			<Text>대사관을 교환함으로써 외교를 보다 고도화하는 방안을 고려해보는 것이 어떻겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_EMBASSY_OFFER_1">
+			<Text>그대의 수도에 우리 대사관을 설치하고자 하오. 어찌 생각하시오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_BULLIED_PROTECTED_CITY_STATE_1">
+			<Text>{@1_MinorCivName}에 대한 그대의 횡포는 참을 수 없소. 교황청이 보호하는 도시국가에 대한 착취는 즉각 중단하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_BULLIED_PROTECTED_CITY_STATE_2">
+			<Text>{@1_MinorCivName}에게 무슨 짓을 했는지 다 들었소. 그들이 우리의 보호 아래 있다는 걸 몰랐던 겁니까? 더는 우리를 시험하지 마시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_BULLIED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}에게 조공을 요구했는데, 순순히 내주더군요. 그들을 보호하겠다는 그대의 약속이 얼마나 허망한지 증명된 셈이지요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_BULLIED_YOUR_MINOR_2">
+			<Text>그 조그만 친구 {@1_MinorCivName}은 밀어붙이기 정말 쉬운 상대더군요. 우리 요구에 순순히 응했고, 그대가 뭘 할 수 있을 것 같지도 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_BULLIED_YOUR_MINOR_1">
+			<Text>{@1_MinorCivName}이 그대의 보호 아래 있다는 건 알고 있소. 우리가 그들을 압박한 것이 사실이라면, 그대가 우리보다 그들의 편에 서지 않기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_BULLIED_YOUR_MINOR_2">
+			<Text>우리 군이 {@1_MinorCivName}에게서 조공을 받은 일이 있었던 것 같소. 의도한 바는 아니었으니, 이 일이 우리 관계를 해치지 않기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SAME_POLICIES_FREEDOM_1">
+			<Text>지혜로운 지도자시여, 따뜻한 인사를 전하오! 그대 또한 자유의 길을 따르기로 했다는 사실에 기쁨을 금할 수 없소. 억압에 맞서 싸울 자유 세계에 하나의 강대한 동지가 더 생겼군요!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SAME_POLICIES_ORDER_1">
+			<Text>동지여, 반갑소! 질서의 길을 택한 그대에게 환영을 표하오. 우리 제국의 다음 5개년 계획 속에서 협력할 기회가 생기기를 기대하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SAME_POLICIES_AUTOCRACY_1">
+			<Text>위대한 황제시여, 환영하오! 자율의 길을 택한 그대와 함께 오직 가장 강한 국가만이 위대한 미래에 도달하리라는 믿음을 공유하게 되어 기쁘오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CAUGHT_YOUR_SPY_HOSTILE_1">
+			<Text>그대의 더러운 첩자가 어찌하여 우리의 기초 기술 중 하나를 훔쳐갔단 말이오? 이것이 평화롭게 나눌 수 있는 마지막 대화가 될지도 모르겠군요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CAUGHT_YOUR_SPY_FRIENDLY_1">
+			<Text>우리의 기술을 훔친 건 알고 있지만, 두 번 다시 그런 일이 없을 것이라는 굳은 맹세가 있다면 이번만은 눈감아 드리겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_CAUGHT_YOUR_SPY_GOOD_1">
+			<Text>그대가 이 하찮은 도둑질을 그만두기로 한 데 대해 기쁘게 생각하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_CAUGHT_YOUR_SPY_BAD_1">
+			<Text>그대의 무례함은 전혀 놀랍지 않소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_STOP_SPYING_YES_1">
+			<Text>그대의 요청에 따라, 우리 첩자들은 더는 그대 영토 내에서 활동하지 않을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_STOP_SPYING_NO_1">
+			<Text>우리 첩자들은 문명을 위협으로부터 지키기 위한 존재요. 그대가 뭐라 하든 그들은 우리의 뜻에 따라 움직일 뿐이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_WARNED_ABOUT_INTRIGUE_1">
+			<Text>{@1_CivAdjective}의 음모를 알려주셔서 감사하오. 덕분에 우리가 대비할 수 있게 되었소. 그대의 고마운 도움을 잊지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_SHARE_INTRIGUE_DECEPTION_1">
+			<Text>우리 첩자들이 {1_PlayerName}이 그대를 상대로 음모를 꾸미고 있음을 밝혀냈소. 그대도 자국의 첩자들이 알아낸 정보를 우리와 공유해주시기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_SHARE_INTRIGUE_ARMY_SNEAK_ATTACK_KNOWN_CITY_1">
+			<Text>{1_PlayerName}이 군대를 이끌고 {2_CityName} 도시에 기습 공격을 준비 중이란 사실을 알아냈소. 그대도 우리에게 첩보를 공유해주시길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_SHARE_INTRIGUE_ARMY_SNEAK_ATTACK_UNKNOWN_CITY_1">
+			<Text>{1_PlayerName}이 군대를 이끌고 그대의 도시를 향해 기습 공격 중이라 하오. 우리 또한 그러한 정보는 공유되기를 기대하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_SHARE_INTRIGUE_AMPHIBIOUS_SNEAK_ATTACK_KNOWN_CITY_1">
+			<Text>{1_PlayerName}이 해상 병력과 함께 {2_CityName} 도시에 기습 공격을 시도하고 있다는 소식을 들었소. 그대 또한 첩보를 우리와 나눠주시길 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_SHARE_INTRIGUE_AMPHIBIOUS_SNEAK_ATTACK_UNKNOWN_CITY_1">
+			<Text>{1_PlayerName}이 해상 병력과 함께 그대의 문명을 향해 기습 공격을 준비 중이라 하오. 우리도 그런 정보를 공유받기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_KILLED_YOUR_SPY_1">
+			<Text>그대의 첩자가 우리 기술을 훔치려다 사살되었소. 조용히 책이나 읽고 배우는 편이 훨씬 안전하다는 걸 명심하시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_KILLED_MY_SPY_1">
+			<Text>최근 우리 요원의 행동으로 혼란이 있었던 점 유감스럽게 생각하오. 불쾌함은 고인에게 남겨주시기를.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CONFRONT_YOU_KILLED_MY_SPY_1">
+			<Text>안녕하시오. 혹시 최근 그 '첩보 사건' 때문에 찾아오셨소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SUSPECT_YOU_OF_SPYING_1">
+			<Text>우리 도시 중 하나가 침입당했고 기술이 도난당했소. 그대와는 무관한 일이라 확신할 수 있을까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SUSPECT_YOU_OF_SPYING_2">
+			<Text>그대가 우리 문명을 염탐하고 있다는 확신이 들었소. 누군가 다치기 전에 그만두는 것이 좋을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_STOP_CONVERSIONS_1">
+			<Text>그대가 우리 제국에서 벌이고 있는 그 더러운 신성모독 행위를 알고 있소. 즉시 그만두시길 요청하오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_KILLED_MY_SPY_UNFORGIVEN_1">
+			<Text>용서받지 못할 일도 있다는 것을 알고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_KILLED_MY_SPY_FORGIVEN_1">
+			<Text>이 난처한 상황을 넘어가주시니 기쁘오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_STOP_CONVERSIONS_GOOD_1">
+			<Text>그대가 전도를 멈추기로 한 것에 대해 감사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_STOP_CONVERSIONS_BAD_1">
+			<Text>그대의 종교 열정은 매우 불편하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_STOP_CONVERSIONS_AGREE_1">
+			<Text>그대 뜻대로, 우리 선교사들은 더 이상 그대 도시에서 신앙을 전파하지 않겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_STOP_CONVERSIONS_DISAGREE_1">
+			<Text>그대의 반대에도 불구하고, 우리 신도들은 참된 신앙을 전할 것이오. 그대가 백성을 무지 속에 방치하려 하더라도 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_WILL_ACCEPT_SURRENDER_1">
+			<Text>그대의 무조건 항복을 손꼽아 기다리고 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_WILL_ACCEPT_SURRENDER_2">
+			<Text>전면적인 항복 제안이라면 수용할 만하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_GREETING_WILL_ACCEPT_SURRENDER_3">
+			<Text>완전히 멸망하기 전에 협상하는 것이 현명할 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_LIKE_HUMAN_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대해 제안한 건 잘 들었소. 우리의 목표와도 일치하니, 기쁜 마음이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_LIKE_HUMAN_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 그대의 제안은 매우 마음에 들었소. 진심으로 감사하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_DISLIKE_HUMAN_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대한 그대의 제안은 우리 이익에 정면으로 반하는 행위요. 부디 이 일이 전쟁으로 번지지 않기를 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_DISLIKE_HUMAN_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 그대의 제안은 유감스럽소. 정치를 그런 하찮은 방식으로 휘두르다니, 더 나은 방법이 있을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_SUPPORTED_OUR_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대한 우리의 제안이 그대의 대표들 덕분에 통과되었소. 계속 협력하길 바라며, 은혜는 꼭 갚겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_SUPPORTED_OUR_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 우리의 제안이 그대의 지지로 성공했소. 함께라면 위대한 일을 해낼 수 있을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_FOILED_OUR_PROPOSAL_1">
+			<Text>{1_LeagueName}에 대한 우리의 제안이 그대 대표들에 의해 실패했소. 그런 행동을 가볍게 넘기지 않을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_FOILED_OUR_PROPOSAL_2">
+			<Text>{1_LeagueName}에 대한 우리의 제안은 그대 덕분에 무산되었소. 앞으로는 우리도 그대의 제안을 지지하지 않을 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_SUPPORTED_OUR_HOSTING_1">
+			<Text>세계 의회의 주최를 우리에게 맡겨주어 감사하오. {1_LeagueName}에서 위대한 성과를 기대하겠소.</Text>
+		</Row>
+		<!-- Responses to player -->
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_BULLIED_MINOR_BAD_1">
+			<Text>그건 두고 보도록 하지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HOSTILE_WE_BULLIED_MINOR_GOOD_1">
+			<Text>그래, 맞는 말이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_WE_BULLIED_MINOR_BAD_1">
+			<Text>우리 결정이 우리 백성과 국가를 위한 최선이었다는 믿음엔 변함이 없소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_HUMAN_BULLIED_MINOR_GOOD_1">
+			<Text>좋소. 상황을 예의주시하겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_TRADE_CANT_MATCH_OFFER_1">
+			<Text>그대가 만족할 만큼의 거래는 우리로선 감당할 수 없소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_TRADE_CANT_MATCH_OFFER_2">
+			<Text>우리가 제안할 수 있는 어떤 협상도 그대에겐 불공평할 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_STOP_DIGGINGX_1">
+			<Text>그대가 우리 땅에서 유물을 찾고 있다는 걸 알고 있소. 이제 그만두시지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_STOP_DIGGING_DISAGREE_1">
+			<Text>유물 하나 때문에 우리의 계획을 멈출 수는 없소. 양해 바라오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_STOP_DIGGING_AGREE_1">
+			<Text>그대 뜻대로, 유물 탐사는 중단하겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_STOP_DIGGING_BAD_1">
+			<Text>정말 이 일을 키워야겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_RESPONSE_HUMAN_STOP_DIGGING_GOOD_1">
+			<Text>우리 요청을 들어주어 감사하오. 우리 땅의 유물은 우리 백성의 것이오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DIPLO_DISCUSS_DONT_STOP_DIGGING">
+			<Text>우리는 우리 땅을 마음대로 파헤치겠소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_DIPLO_DISCUSS_STOP_DIGGING">
+			<Text>그대의 문화유산을 훔치려 한 것에 대해 모욕의 의도는 없었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_AI_BY_FREEDOM_1">
+			<Text>그대의 자유와 평등이라는 부르주아적 메시지에 우리 백성이 물들었소. 이젠 거리에서 시위를 하겠다고 나서는 지경이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_AI_BY_ORDER_1">
+			<Text>그대의 이념적 음모로 인해 우리 땅에 질서 혁명이 일어날까 두렵소. 이 노동자 파업이 끝나기나 하겠소?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_AI_BY_AUTOCRACY_1">
+			<Text>그대의 절대 권력에 의한 통치 메시지가 우리 백성의 마음을 흔들었소. 우리도 그런 두려운 전체주의 국가를 따라야 한단 말이오?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_HUMAN_BY_FREEDOM_1">
+			<Text>그대 백성은 자유를 요구하고 있소. 억압의 벽을 허물고 자유와 진보의 대열에 합류하시지!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_HUMAN_BY_ORDER_1">
+			<Text>그대 땅의 억눌린 노동자들은 불만이 가득하오. 그대가 원하든 아니든, 역사는 우리 편이오. 우리는 그대를 묻을 것이오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_CIVIL_RESISTANCE_ON_HUMAN_BY_AUTOCRACY_1">
+			<Text>그대의 불안한 백성은 강한 지도자를 원하고 있소. 손만 놓고 있지 말고, 우리와 함께 역사를 써 내려가시지.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SWITCHED_TO_FREEDOM_1">
+			<Text>함께 자유의 여정에 오르게 된 그대를 환영하오. 각자 무엇을 할 수 있을지를 묻기보다, 함께 무엇을 할 수 있을지를 생각해봅시다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SWITCHED_TO_ORDER_1">
+			<Text>아이를 8년만 맡기시오. 그러면 평생 사회주의자가 될 것이오. 그대의 노동자 계급이 진실을 깨달았고, 우리는 그들을 질서의 투쟁으로 환영하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_SWITCHED_TO_AUTOCRACY_1">
+			<Text>전제주의로 전향한 결정을 후회하지 않게 될 것이오. 국가 안에 모든 것을, 국가 밖엔 아무것도 없고, 국가에 반대되는 것도 없어야 하오. 강한 지도자와 강한 국가만이 이 세계를 영광된 시대로 이끌 수 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_JULIUS_II_INFLUENTIAL_ON_HUMAN_1">
+			<Text>그대 땅의 관광객들이 우리 기념품을 사가는 모습이 기록적인 수준에 이르렀다고 하오. 우리 문명의 위대한 예술은 누구든 감탄케 하는 법이지요.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

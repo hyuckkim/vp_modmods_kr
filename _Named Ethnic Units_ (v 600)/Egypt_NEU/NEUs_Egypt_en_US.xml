@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--EGYPT-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_COMPOSITE_BOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Medjay[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_SWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Khopesh Swordsman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Army of Ra[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_PIKEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Army of Amun[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_ARCHER">
+			<Text>[COLOR_SELECTED_TEXT]Horn Bow[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_SPEARMAN">
+			<Text>[COLOR_SELECTED_TEXT]Mereh[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_EGYPT_SCOUT">
+			<Text>[COLOR_SELECTED_TEXT]Bal[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

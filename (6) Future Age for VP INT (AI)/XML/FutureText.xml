@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_PROMOTION_ORBITAL_DROP">
+			<Text>궤도 강하</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ORBITAL_DROP_HELP">
+			<Text>유닛을 맵 어디에든지 배치할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE">
+			<Text>므네모시네 학습</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MNEMOSYNE_EXPERIENCE_HELP">
+			<Text>승급 경험치를 25% 더 빨리 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PARADROP_2">
+			<Text>항공우주 공수</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PARADROP_2_HELP">
+			<Text>다음 턴에 최대 40타일 떨어진 곳까지 공중 투하 가능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_PARADROP_2">
+			<Text>최대 40타일 떨어진 곳까지 공중 투하 가능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NETWORKED">
+			<Text>전투 네트워크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NETWORKED_HELP">
+			<Text>다른 아군 유닛과 인접 시 [ICON_STRENGTH]전투력 [COLOR_POSITIVE_TEXT]+10%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NETWORKED">
+			<Text>다른 아군 유닛과 인접 시 [ICON_STRENGTH]전투력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PARASITISM">
+			<Text>기생</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PARASITISM_HELP">
+			<Text>약탈 시 이동력 소모 없음 및 [COLOR_NEGATIVE_TEXT]적[ENDCOLOR] 또는 [COLOR_PLAYER_GRAY]중립[ENDCOLOR] 영토에서 치유 시 +10 HP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_PARASITISM">
+			<Text>약탈 시 이동력 소모 없음 및 [COLOR_NEGATIVE_TEXT]적[ENDCOLOR] 또는 [COLOR_PLAYER_GRAY]중립[ENDCOLOR] 영토에서 치유 시 +10 HP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_AUTO_REPAIR">
+			<Text>자동 수리</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_AUTO_REPAIR_HELP">
+			<Text>우호 영토 내에서, 매 턴 치유 시 [COLOR_GREEN]+10 HP[ENDCOLOR] 및 [ICON_STRENGTH]전투력 +10.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_AUTO_REPAIR">
+			<Text>우호 영토 내에서, 매 턴 치유 시 [COLOR_GREEN]+10 HP[ENDCOLOR] 및 [ICON_STRENGTH]전투력 +10.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_PROMOTION_FW_HEALING_CORE">
+			<Text>지원중계기 주둔</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_HEALING_CORE_HELP">
+			<Text>로봇 유닛, 해상 유닛 매 턴 체력 [COLOR_GREEN]+10[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_HEALING_CORE">
+			<Text>로봇 유닛, 해상 유닛 매 턴 체력 [COLOR_GREEN]+10[ENDCOLOR]</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_FW_SKYNET_LINK">
+			<Text>스카이넷 업링크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SKYNET_LINK_HELP">
+			<Text>[ICON_STRENGTH]전투력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_SKYNET_LINK">
+			<Text>[ICON_STRENGTH]전투력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_THALASSOCRACY">
+			<Text>해상 지배권</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_THALASSOCRACY_HELP">
+			<Text>모든 해군 유닛에 [ICON_MOVES]이동력 +2, 시야 +1 및 [ICON_STRENGTH]전투력 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_THALASSOCRACY">
+			<Text>모든 해군 유닛에 [ICON_MOVES]이동력 +2, 시야 +1 및 [ICON_STRENGTH]전투력 +10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEPHILIM">
+			<Text>네필림 유전자</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEPHILIM_HELP">
+			<Text>[ICON_STRENGTH]전투력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NEPHILIM">
+			<Text>[ICON_STRENGTH]전투력 +10%</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_FW_NANOHIVE_PROMOTION">
+			<Text>군체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NANOHIVE_PROMOTION_HELP">
+			<Text>2 타일 내의 아군 유닛을 매 턴 10 HP씩 치유하고, 2 타일 내의 적 유닛에게 매 턴 10 HP의 피해를 줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NANOHIVE_PROMOTION">
+			<Text>2 타일 내의 아군 유닛을 매 턴 10 HP씩 치유하고, 2 타일 내의 적 유닛에게 매 턴 10 HP의 피해를 줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEXUS">
+			<Text>통솔 네트워크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NEXUS_HELP">
+			<Text>2 타일 내의 적 유닛의 전투력을 20% 감소시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NEXUS">
+			<Text>2 타일 내의 적 유닛의 전투력을 20% 감소시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_MUTATION">
+			<Text>돌연변이 바이러스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_MUTATION_HELP">
+			<Text>[COLOR_CYAN]돌연변이 바이러스[ENDCOLOR] - 부상당한 유닛 공격 시 [ICON_STRENGTH]전투력 [COLOR_POSITIVE_TEXT]+10%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_MUTATION">
+			<Text>[COLOR_CYAN]돌연변이 바이러스[ENDCOLOR] - 부상당한 유닛 공격 시 [ICON_STRENGTH]전투력 [COLOR_POSITIVE_TEXT]+10%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_GENGINEERED">
+			<Text>유전자 조작</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_GENGINEERED_HELP">
+			<Text>유전자 조작 승급 선택권을 부여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_GENGINEERED">
+			<Text>유전자 조작 승급 선택권을 부여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS">
+			<Text>아드레날린 분비선</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS_HELP">
+			<Text>험지에서 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+15%[ENDCOLOR] (공격 및 방어 시).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_ADRENAL_GLANDS">
+			<Text>험지에서 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+15%[ENDCOLOR] (공격 및 방어 시).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT">
+			<Text>포식자 본능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT_HELP">
+			<Text>숲과 정글 지역에서 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+25%[ENDCOLOR] (공격 및 방어 시).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_PREDATOR_INSTINCT">
+			<Text>숲과 정글 지역에서 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+25%[ENDCOLOR] (공격 및 방어 시).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES">
+			<Text>강화된 반사신경</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES_HELP">
+			<Text>원거리 공격에 대한 보너스 25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_VISION">
+			<Text>강화된 시력</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_VISION_HELP">
+			<Text>시야 +1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES">
+			<Text>강화된 근육</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES_HELP">
+			<Text>이동력 +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_URBAN_WARFARE">
+			<Text>시가전</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_URBAN_WARFARE_HELP">
+			<Text>[COLOR_GREEN]도시 공격 시[ENDCOLOR] [ICON_STRENGTH]전투력 보너스 +33%.[NEWLINE]도시로부터 받는 피해 33% 감소</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_CHAMELEON">
+			<Text>광형태적 위장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_CHAMELEON_HELP">
+			<Text>적 유닛과 인접할 때까지 투명 상태.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_CHAMELEON">
+			<Text>적 유닛과 인접할 때까지 투명 상태.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOMODS">
+			<Text>바이오모드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOMODS_HELP">
+			<Text>바이오모드 승급 선택권을 부여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NUCLEAR_SMR">
+			<Text>소형원자로</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_NUCLEAR_SMR_HELP">
+			<Text>이 유닛이 사망 시, 인접한 적 유닛에게 20의 피해를 줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_TOXIN_MOD">
+			<Text>독성 모드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_TOXIN_MOD_HELP">
+			<Text>이 유닛이 사망 시, 인접한 적 유닛에게 10의 피해를 줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BOOST_MOD">
+			<Text>강화 모드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BOOST_MOD_HELP">
+			<Text>전투력 +10%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD">
+			<Text>생체 재생</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_BIOREGENERATION_MOD_HELP">
+			<Text>인접 타일의 유닛은 치유 시 +5 HP를 받습니다.[NEWLINE]적 유닛을 파괴하면 +10 HP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD">
+			<Text>인공 폐</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SYNTHETIC_LUNGS_MOD_HELP">
+			<Text>유닛은 산을 건널 수 있고 언덕에서 이동력이 두 배가 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD">
+			<Text>시력 강화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_VISION_ENHANCEMENT_MOD_HELP">
+			<Text>적의 약점이 드러납니다. 손상된 유닛에 대한 전투력 +15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_REFLEX_MOD">
+			<Text>반사신경 강화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_REFLEX_MOD_HELP">
+			<Text>근접 공격에서 후퇴할 확률 15%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD">
+			<Text>충격파 방어막</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_SHOCK_WAVE_SHIELD_MOD_HELP">
+			<Text>[COLOR_GREEN]요새화[ENDCOLOR]하는 동안, 인접한 적 유닛은 매 턴 시작 시 [COLOR_GREEN]10의 피해[ENDCOLOR]를 입습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_IMPACT_MOD">
+			<Text>충격 모드</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_IMPACT_MOD_HELP">
+			<Text>[COLOR_GREEN]이동 시[ENDCOLOR] 유닛은 모든 새로운 인접 적 유닛에게 5의 [COLOR_GREEN]피해[ENDCOLOR]를 입힙니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AUGMENTED">
+			<Text>강화된 외교관</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AUGMENTED_HELP">
+			<Text>외교 임무 수행 시 [ICON_INFLUENCE]영향력 105를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUBORBITAL_EVASION">
+			<Text>준궤도 폭격기 회피</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUBORBITAL_EVASION_HELP">
+			<Text>요격 회피 확률 40%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PLASMA_EVASION">
+			<Text>플라즈마 폭격기 회피</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PLASMA_EVASION_HELP">
+			<Text>요격 회피 확률 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SPACE_EVASION">
+			<Text>우주 회피</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SPACE_EVASION_HELP">
+			<Text>지구 탈출 속도로 요격 회피 확률 60%.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2">
+			<Text>스텔스 무인 전투기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_TEXT">
+			<Text>드론 기술과 자율 컴퓨터 시스템의 발전은 공중 우위 역할을 수행할 수 있는 고도화된 드론 전투기의 개발로 이어졌습니다. 전투기 개발의 주요 제한 요소 중 하나는 인간 요소였는데, 이는 인간의 몸이 견딜 수 있는 G압력에 한계가 있었기 때문입니다. 자동화된 전투기는 이러한 제한이 없으므로 현대 공학의 전체 능력을 발휘할 수 있었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_STRATEGY">
+			<Text>스텔스 무인 전투기는 미래형 공중 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_HELP">
+			<Text>하늘을 지배하고 다가오는 적 항공기를 요격하도록 설계된 공중 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER">
+			<Text>준궤도 폭격기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_TEXT">
+			<Text>폭격기의 사거리와 타격력을 한계까지 끌어올리기 위한 노력의 일환으로, 실제로 궤도에 오르는 것보다 짧은 대기권을 비행할 수 있는 새로운 세대의 폭격기가 개발되었습니다. 이 고도에서는 요격하기가 극도로 어려웠고, 반 탄도 궤적으로 얇은 대기를 통해 빠르게 이동할 수 있었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_STRATEGY">
+			<Text>준궤도 폭격기는 미래형 원거리 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_HELP">
+			<Text>적 유닛과 도시에 죽음의 비를 내리는 장거리 공중 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER">
+			<Text>우주 폭격기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_TEXT">
+			<Text>우주 폭격기는 넥서스 또는 헬리캐리어에 탑재 가능한 고유의 우주 폭격 유닛으로, 넥서스의 전략적 공격 능력을 확보하는 핵심 요소입니다. 이들은 공중부양 시설인 헬리캐리어와 넥서스의 진지한 공격력을 구현하며, 고도로 집중된 넥서스의 명령 노드에 의해 효과적으로 지휘받습니다. 우주 폭격기는 첨단 스마트 재료를 활용한 설계로, 극한의 우주 환경에서도 공격을 수행할 수 있습니다. 이들은 강력한 엔진과 대량의 폭탄, 레이저 등 다양한 무기를 탑재하여 대규모 공격을 수행할 수 있습니다. 우주 폭격기는 강력한 방어막을 통해 적의 반격으로부터 스스로를 보호하며, 넥서스가 위협 요인으로부터 안전하게 지키는 역할을 수행합니다. 이를 통해 인류의 우주 식민지화를 지원하고, 위험 요인을 미리 제거하는 중요한 역할을 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_STRATEGY">
+			<Text>고유의 우주선 폭격기. 넥서스와 헬리캐리어에 탑승할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_BOMBER_HELP">
+			<Text>고유의 우주선 폭격기. 넥서스와 항공모함에 탑승할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER">
+			<Text>우주 전투기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_TEXT">
+			<Text>우주 전투기는 넥서스 또는 헬리캐리어에 탑재 가능한 고유의 우주 전투기 유닛입니다. 이들은 공중부양 시설인 헬리캐리어와 넥서스의 핵심 방어라인을 이루며, 넥서스의 고도로 집중된 명령 노드에 의해 효과적으로 조종되고 제어됩니다. 우주 전투기는 공중에서 대기권 내외로 공격을 가할 수 있는 능력과 함께, 강력한 우주 전투 능력을 가지고 있습니다. 우주 전투기는 첨단 스마트 재료를 활용한 설계로, 우주에서의 활동을 위해 특별히 만들어진 유닛입니다. 이들은 극한의 우주 환경에서도 작동할 수 있는 강력한 엔진과 미사일, 레이저 등 다양한 무기를 탑재하고 있습니다. 또한, 이들은 강력한 방어막을 통해 적의 공격으로부터 스스로를 보호하고, 넥서스를 지키는 역할을 수행합니다. 이를 통해 인류의 우주 식민지화를 지원하는 중요한 요소로 작용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_STRATEGY">
+			<Text>고유의 우주선 전투기. 넥서스와 헬리캐리어에 탑승할 수 있습니다. 다른 항공기에 비해 사거리와 전투 능력이 향상되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACE_FIGHTER_HELP">
+			<Text>요격 및 공중 소탕에 좋은 고유의 우주선 전투기. 넥서스와 항공모함에 탑승할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON">
+			<Text>오토마타</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_TEXT">
+			<Text>최초의 로봇이 개발된 이래로 로봇 병사라는 개념은 존재해 왔습니다. 제2차 세계 대전 초기에 원격 제어 기계로 일부 성공을 거두었지만, 자율 전투 기계의 개념이 실현 가능한 것처럼 보이기 시작한 것은 20세기 말 드론 전투 차량이 배치되기 전까지는 아니었습니다. 종종 "자동 장치"라고 불리는 자율 무기 시스템이 전장에서 실용화되려면 여전히 보다 광범위한 인지 기술 개발이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_STRATEGY">
+			<Text>오토마타는 미래형 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AUTOMATON_HELP">
+			<Text>그룹으로 있을 때 더 강한 저렴하고 강력한 미래 유닛입니다. 자동생산시설과 무인관리기지가 있는 도시에서 더 빨리 건설됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA">
+			<Text>키메라</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_TEXT">
+			<Text>유전공학의 발전으로 다양한 필요성을 충족시키기 위해 완전히 새로운 생물체를 만들 수 있게 되면서, 많은 새로운 키메라들이 전투 환경에서 활용되도록 개발되었습니다. 포식자 본능과 빠르게 움직이고, 험준한 지형을 가로질러 이동하며, 심지어는 적응적인 위장 능력까지 가진 이들 키메라는 인간 군대에게 무서운 존재로 입증되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_STRATEGY">
+			<Text>키메라는 미래 시대의 기마 및 기동 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CHIMERA_HELP">
+			<Text>매우 다재다능하고 기동성이 뛰어난 미래 시대 유닛으로, 요새화된 유닛에 강합니다. 매 턴 치유됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA">
+			<Text>바이오-타이탄</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_TEXT">
+			<Text>생명공학의 끝을 보여주는 바이오-타이탄은 거대한 유기체로서, 전적으로 전투를 위해 설계되었습니다. 유전자 키메라와 다양한 전투형태가 점차 복잡해지며, 일부 생명 공학자들은 전투형태가 어느 정도의 파워를 가질 수 있는지 확인하기로 결정했습니다. 바이오-타이탄은 고대 공룡의 유전자 복제를 통해 얻은 지식을 활용하여, 지구에서 가장 거대한 생명체 중 일부를 복제해 유전자를 가속했습니다. 거기서 멈추지 않고, 놀랍게도 이는 강력한 에너지원인 소형원자로를 유기체 내부에 통합하는 연구의 결과도 얻었습니다. 이런 생체 외의 에너지원의 유입으로 인해 바이오-타이탄의 신진대사는 강화되었으며, 이는 그들의 성장, 회복 능력, 그리고 전투에서의 성능에 극적인 영향을 끼쳤습니다. 이러한 신체 내부의 원자로는 기존의 방사성 동위원소 생성기를 대체했으며, 이를 통해 유기체가 강력한 에너지를 생성하고 저장할 수 있게 되었습니다. 이 기술은 바이오-타이탄이 대학살 로봇을 능가하는 아주 강력한 공격력을 가지게 해 주었으며, 동시에 그들에게는 유기적 전투 형태에서의 뛰어난 재생 능력도 부여했습니다. 바이오-타이탄은 이제 그 어떤 전투도 두렵지 않으며, 그들의 강력함과 생명력은 인간의 공학과 생명 공학의 극한을 보여주는 증거가 되었습니다. 이를 통해 우리는 인간이 자연과 공학을 결합하여 어떻게 무한한 가능성을 창출해낼 수 있는지를 보게 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_STRATEGY">
+			<Text>바이오-타이탄은 미래시대 근접 유닛입니다. 대학살 로봇보다 느리지만 강합니다. 또한 이중 공격을 허용하는 타이탄 승급을 가지고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYDRA_HELP">
+			<Text>게임 최후반의 가장 강력한 유닛 중 하나입니다. 대학살 로봇보다 느리지만 더 강합니다. 거대함으로 인해 시야가 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM">
+			<Text>유전자변형충</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_TEXT">
+			<Text>원래의 생명공학 키메라들은 대체로 수명이 짧았고, 몇몇은 기본적인 생존 본능과 장기 생존에 필요한 기관조차 부족했습니다. 이런 초기 전투 형태의 대부분은 더 성공적으로 사용되었지만, 바이오-타이탄의 출현으로 인해 이러한 방식의 전투는 나중에 재검토되었습니다. 바이오-타이탄의 개발과 별개로 이 초기 키메라들은 주로 적의 공격을 방해하고 혼란을 일으키는 역할을 담당했습니다. 이들은 일종의 지원 유닛으로, 적의 진영에 빠르고 무자비하게 돌진하여 적의 전략을 흐트리는 역할을 수행했습니다. 이들의 임무는 적의 주의를 분산시키고, 공격을 지연시키며, 가급적 많은 혼란과 손상을 입히는 것이었습니다. 생명력이 풍부하지 않더라도, 이들은 에너지 저장량이 높아 죽을 때까지 계속해서 활동할 수 있었습니다. 위장 시스템이 결여되어 있음에도 불구하고, 그들의 주요 임무는 적을 공격하고 괴롭히는 것이었기 때문에, 생존보다는 공격적인 행동이 요구되었습니다. 이러한 이유로 그들은 가차 없이 공격하고, 적의 방어를 깨트리며, 지속적으로 적에게 압박을 가하는 역할을 수행했습니다. 그들의 유일한 목표는 적을 향해 끝없이 돌진하는 것이었고, 이는 그들을 강력하고 무자비한 공격자로 만들었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_STRATEGY">
+			<Text>유전자변형충은 미래시대의 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SWARM_HELP">
+			<Text>공격 시 3턴 동안 강력한 신경독 효과를 유발하는 기동성 있고 약한 유닛입니다. 지원이 있다면 타이탄 유닛에 효과적입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY">
+			<Text>유기 보병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_TEXT">
+			<Text>유전 공학 및 강제 조직 성장의 발전으로 인해 유기 복합 재료 및 임플란트 분야의 개발이 증가했습니다. 이러한 발전의 대부분은 군인의 성능을 향상시키는 재생 방탄복 및 전투 임플란트를 개발하는 데 사용되는 군사 목적으로 전환되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_STRATEGY">
+			<Text>유기 보병은 미래시대의 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOINFANTRY_HELP">
+			<Text>미래의 정예 유닛이며, 건설에 임플란트가 필요한 최초의 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER">
+			<Text>클론 트루퍼</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_TEXT">
+			<Text>이들 클론들은 '육성'되어 전쟁을 준비하며, 1단계 갑옷을 착용하고 있습니다. 이 갑옷은 가벼운 플라스토이드 합금 복합체로 이루어진 스무 개의 몸에 딱 맞는 판들로 구성되어 있습니다. 이들 판들은 마그네토닉 그립션 패널을 통해 검은색 온도 조절 바디슈트에 밀봉되어 있습니다. 이 바디슈트도 기압이 조절되어 있어, 일시적으로 우주의 진공에 대한 보호를 제공하며, 바디 글러브는 클론을 극한의 추위와 열로부터 보호합니다. 갑옷의 디자인은 만달로리안 갑옷을 연상시키며, 독특한 T자형 바이저가 있는 헬멧을 포함합니다. 그러나 그 장점에도 불구하고, 1단계 갑옷은 트루퍼들이 착용하기 불편하게 만들었는데, 이는 카미노인들이 인간의 인체공학에 익숙하지 않았기 때문입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_STRATEGY">
+			<Text>클론 트루퍼는 기본적인 미래시대 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CLONETROOPER_HELP">
+			<Text>미래 시대에 ADN 균으로 생산할 수 있는 유닛입니다. 재생 능력이 향상됩니다. [ICON_RES_ADN_FUNGUS]ADN 균 1개가 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT">
+			<Text>돌연변이</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_TEXT">
+			<Text>가장 초기 형태의 유전자 조작 기술이 완성되자마자, 종종 강력한 새 슈퍼 군인이나 생물 무기를 만드는 것을 목표로 인간을 대상으로 실험을 시도하는 비윤리적인 조직이 생길 수밖에 없었습니다. 그러나 종종 이러한 조잡한 실험은 무시무시한 괴물을 낳았지만, 많은 사람들이 전투에서 유용하게 만든 뛰어난 내구성과 재생 능력을 가지고 있는 것으로 알려졌습니다. 가장 교활한 사례는 또한 사망 시 방출되는 위험한 바이러스를 포함하여, 종종 공격자들 사이에서 광기를 유발했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_STRATEGY">
+			<Text>매 턴마다 그리고 적 유닛을 죽인 후 치유하는 공격 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MUTANT_HELP">
+			<Text>스스로 치유하는 기동성 있는 유닛입니다. 부상당한 유닛에 대해 더 강해집니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER">
+			<Text>바이오 트루퍼</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_TEXT">
+			<Text>생물학적 변형의 발전은 결국 인체에 대한 광범위한 변형을 허용하여, 더 이상 인간처럼 보이지 않을 정도였습니다. 종종 바이오트루퍼(biotroopers)라고 불리는 생체 개조 군인의 개발에서 가장 분명한 곳은 없습니다. 이 병사들은 강화 갑옷을 입은 보병만큼 빠르고 내구성이 강했지만, 병참 요구가 적고 전투 피해를 비교적 쉽게 재생할 수 있는 능력이 있었습니다. 바이오트루퍼는 덜 변형된 개인에 대해 어느 정도의 불안감을 유발하는 경향이 있었지만, 일반적으로 생태 도시 사이에 고립된 커뮤니티를 형성하게 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_STRATEGY">
+			<Text>바이오트루퍼는 미래시대의 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIOTROOPER_HELP">
+			<Text>험지를 통과할 수 있고 적 영토에서 더 강한 미래의 정예 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT">
+			<Text>나노-배틀슈트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_TEXT">
+			<Text>나노-배틀슈트는 인간 병사에게 비할 데 없는 보호와 힘을 제공했지만, 여전히 그 운용을 위해서는 인간의 조종이 필수적이었습니다. 인공지능의 발전이 로봇 유닛을 탄생시켰고, 이들은 인간 병사만큼 뛰어난 전투 능력을 보였지만, 결국 그들이 대응해야 했던 새로운 위협에 대해서는 인간의 직접적인 개입이 필요하게 되었습니다. 티라노사우르스나 키메라 같은 거대한 괴물류 유닛이 전장에 등장함에 따라, 이들을 효과적으로 상대하기 위해선 인간의 민첩성과 결정력이 필요했습니다. 그 결과, 인간이 직접 조종하며, 손을 자유자재로 사용할 수 있는 이족 보행형 기계 갑옷이 개발되었습니다. 이러한 갑옷은 인간의 직접적인 조종 아래에서 거대한 괴물들을 상대하는 데 있어 매우 효율적이었으며, 전투가 끝난 후에는 다양한 민간 임무에도 재투입될 수 있는 유연성을 가지고 있었습니다. 이 과정에서 로봇 유닛의 자동화된 효율성과 인간의 조종이 필요한 기계의 유연성 사이에서 적절한 균형이 필요하다는 것이 명확해졌습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_STRATEGY">
+			<Text>나노-배틀슈트는 미래형 보병 유닛입니다. 빠르지만 탱크처럼 전투 후에는 움직일 수 없습니다. 그들의 주된 책임은 언제나처럼 땅을 차지하고 지키는 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_HELP">
+			<Text>원거리 공격과 기마 유닛에 대한 효과적인 방어력을 보이는 미래 시대 보병 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS">
+			<Text>슈퍼 솔져</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_TEXT">
+			<Text>슈퍼솔져는 유전적 변형, 이식 또는 인공두뇌 증강을 통해 정상적인 인간의 한계나 능력을 넘어 작전을 수행할 수 있는 개념의 군인입니다. 슈퍼솔져는 군사 공상 과학 문학, 영화 및 비디오 게임에서 일반적입니다. 허구의 슈퍼솔저들은 보통 외과적 수단, 우생학, 유전 공학, 사이버네틱 임플란트, 약물, 세뇌, 충격적인 사건, 극단적인 훈련 요법 또는 기타 과학적 및 사이비 과학적 수단을 통해 크게 강화됩니다. 예능에서 그런 프로그램을 만든 사람들은 강조점에 따라 미친 과학자나 준엄한 군인으로 여겨지는 경우가 많습니다. 그들의 프로그램은 일반적으로 과학이나 군사력을 추구하는 데 있어 윤리적 경계를 넘어섰기 때문입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_STRATEGY">
+			<Text>슈퍼 솔져는 적 영토에 진입할 수 있는 중요한 게릴라 침투 부대입니다. 정찰 드론 유닛, 구축함, 잠수함에 탐지당하며, 공격하거나 다른 유닛 바로 옆에 인접하면 탐지당합니다. 몰래 다른 유닛에 접근해 큰 피해를 주거나, 적 영토에 침투하여 시설물을 파괴하거나, 위인을 파괴하거나, 우주선 부품 이동을 방해하는 등의 공작 파괴를 진행할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERSOLDIERS_HELP">
+			<Text>슈퍼 솔져는 적 영토에 진입할 수 있는 중요한 게릴라 침투 부대입니다. [COLOR_PLAYER_PURPLE]카멜레온[ENDCOLOR] 승급이 있어, 적에게 탐지당하지 않습니다. 공격을 하거나, 탐지가 가능한 유닛 시야에 있거나, 다른 유닛 바로 옆에 인접하면 탐지당합니다. 적 영토에 침입하여 적을 방해할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER">
+			<Text>궤도 강하 쇼크 트루퍼</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_TEXT">
+			<Text>궤도 강하 쇼크 트루퍼 또는 우주 해병대는 궤도 강하 충격 보병과 특수전 전술을 전문으로 하는 특수 작전 군대입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_STRATEGY">
+			<Text>궤도 강하 쇼크 트루퍼 분대는 빠른 반응과 신속한 대응을 위해 설계되었으며, 시야 반경이 있는 한 순간 통지에 전 세계 어디에나 배치할 수 있습니다. 적의 전선이나 진지를 기습하거나, 전략적 타일 시설을 공격하거나, 신속한 대응 지원군으로 배치하거나, 단순히 적에 맞서 전선을 유지하는 등 ODST가 할 수 없는 일은 거의 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ORBITAL_DROP_SHOCK_TROOPER_HELP">
+			<Text>탱크처럼 전투 후에는 움직일 수 없는 빠르고 강력한 미래의 보병입니다. 아군 영토 내에서 턴을 시작하는 한, 맵 어디에나 배치할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY">
+			<Text>로봇 보병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_TEXT">
+			<Text>강화 갑옷이 인간 병사에게 비할 데 없는 보호와 힘을 제공했지만, 여전히 슈트를 작동시키려면 인간이 필요합니다. 인공 지능의 발전은 결국 궁극의 군인, 즉 인간과 동등하게 싸울 수 있는 로봇 유닛으로 이어졌습니다. 최소한의 인간 통제로 많은 수의 로봇 유닛을 배치하는 것에 대한 많은 우려가 있었지만, 그렇게 한 사회는 그들이 전장에서 매우 효율적이고 효과적이라는 것을 발견했으며, 평화 시기에 민간 임무에 다시 적응시키는 데 관련된 문제가 적었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_STRATEGY">
+			<Text>로봇 보병은 일반 오토마타보다 더 강력한 궁극의 대장갑 보병 유닛입니다. 그룹으로 있을 때 더 강력합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_HELP">
+			<Text>그룹으로 있을 때 더 강한 강력한 미래 유닛입니다. 자동생산시설과 무인관리기지가 있는 도시에서 더 빨리 건설됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS">
+			<Text>콜로서스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_HELP">
+			<Text>콜로서스는 로봇 보병보다 더 강력한 대장갑 보병 유닛입니다. 이 최종 원거리 유닛은 간접 사격(장애물 너머로 공격 가능)이 가능하며 그룹으로 있을 때 더 강력합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_TEXT">
+			<Text>
+				전략적 방어의 원칙 중 하나는 공격보다 방어에 더 적은 병력이 필요하다는 것입니다. 방어자는 자신이 지키고 있는 위치에 대한 깊은 이해를 바탕으로 자원을 더 효율적으로 배치할 수 있습니다. 실제로 가장 기본적인 군사 AI 시스템조차도 제한된 시간과 정보로 효과적인 방어를 구축할 수 있습니다. 그러나 고급 AI 시스템이 개입하면 이러한 방어는 훨씬 더 효율적이고 효과적이 됩니다. 이러한 방식으로 개발된 것이 인지 신경전자 방어 등록부(CNDR)인데, 이 시스템은 강력한 연결성과 높은 모듈성을 바탕으로 들어오는 위협을 관찰, 보고, 적응 및 대응하는 최고의 방어 능력을 제공합니다. 이 시스템은 또한 로봇 군단의 통신 제어가 발생할 경우를 대비한 능력도 갖추고 있습니다. 특히 CNDR 시스템은 방어 유닛인 콜로서스의 핵심 구성 요소로 작용합니다. 콜로서스는 강력한 플라즈마 포로 무장되어 있으며, 그 자체로 높은 방어력을 보유하고 있습니다. CNDR 시스템의 도움을 받아 콜로서스는 들어오는 위협에 더 빠르고 정확하게 대응할 수 있으며, 동시에 로봇 군단의 전체적인 운용을 통제할 수 있게 됩니다. 이러한 방식으로 CNDR과 콜로서스는 서로 완벽하게 연결되어 있어 군사 전략의 새로운 차원을 열어놓았습니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_COLOSSUS_STRATEGY">
+			<Text>
+				콜로서스는 발사기에 플라즈마 포를 장착한 강력한 원거리 로봇 유닛입니다. 강력하고 견고한 방어용 원거리 궁수 유닛입니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK">
+			<Text>레일건 기갑</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_TEXT">
+			<Text>전통적인 탱크 무기는 수십 년 동안 계속해서 개선되어 왔지만, 전기동력 무기는 더 파괴적인 잠재력을 가지고 있습니다. 전통적인 대포들은 점점 더 세이보탄을 채택하여 적의 갑옷을 관통하였는데, 이 탄환들은 더 작은 영역에 더 많은 에너지를 집중할 수 있었지만, 레일건은 비슷하게 작은 표면 영역을 가진 탄환을 더 빠르게 발사할 수 있었습니다. 가장 초기의 레일건들은 해군 선박에 장착되었지만, 발전소와 에너지 시스템의 발전은 결국 갑옷 차량에 장착할 수 있는 새로운 세대의 레일건을 이끌어냈습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_STRATEGY">
+			<Text>레일건 기갑은 미래형 기갑 탱크이며, [ICON_RES_NANOMAT]나노물질의 혜택을 받는 최초의 유닛이기도 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_HELP">
+			<Text>[ICON_RES_NANOMAT]나노물질로부터 혜택을 받는 빠르고 강력한 미래형 탱크입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS">
+			<Text>이동식 다연장 로켓포</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_TEXT">
+			<Text>이 다연장 로켓포는 1분도 안 되는 시간에 12발의 지대지 미사일을 발사하는 고도로 기동성이 뛰어난 자동 시스템입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_STRATEGY">
+			<Text>다연장 로켓포는 이전 모델에 비해 기동성과 시야가 더 좋은 미래 이전의 공성 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HIMARS_HELP">
+			<Text>이전 모델보다 기동성과 시야가 더 좋은 강력한 공성 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY">
+			<Text>기계 포병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_TEXT">
+			<Text>바퀴 달린 차량과 궤도 차량이 여전히 가장 실용적이지만, 다리가 있는 전투 차량의 개념은 오랫동안 엔지니어와 과학자의 상상력을 사로잡았습니다. 실행 가능한 다리가 있는 차량을 만들기 위한 실험이 수행되는 것은 불가피했으며, 가장 초기의 실용적인 프로토타입은 다리가 여러 개인 프레임이었습니다. 이 보행기는 추적 차량조차 갈 수 없는 거친 지형을 횡단할 수 있었지만, 대부분은 바퀴가 달린 보조 이동 시스템을 갖추고 있어 걷는 것보다 더 빠른 속도로 도로와 매끄러운 지형을 따라 운전할 수 있었습니다. 그들의 관절형 프레임은 탱크 대포의 반동을 견디는 데 어려움이 있었고, 따라서 그들은 일반적으로 문제를 피하기 위해 미사일 시스템을 장착했습니다. 이 기계는 포병 플랫폼으로 유용해졌으며, 재래식 차량이 접근할 수 없는 위치에서 발사할 수 있어 그들을 저지하려는 노력을 혼란스럽게 만들었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_STRATEGY">
+			<Text>기계 포병은 미래시대의 공성 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_HELP">
+			<Text>미래의 강력한 공성 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE">
+			<Text>지크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_TEXT">
+			<Text>지크는 기존의 탱크와 다르게 이족보행이 가능한 미래시대의 강력한 유닛입니다. 이족보행과 AI 연구 개발을 통해서 무게중심과 관절을 자유 자제로 다룰 수 있게 되었습니다. 실제로 아직 신소재의 한계로 인해 가격과 성능, 이동력을 고려할 때는 강과 습지 같은 곳에서 이동력을 잃지 않는 장점이 있었습니다. 높은 시야를 통해 전장을 잘 볼 수 있지만, 높은 위치로 인해 적의 낮은 무게중심이 있는 탱크에게 포격기회가 증가하는 단점이 있었습니다. 하지만, 티라노 사우르스, 키메라와 같은 공룡류의 빠른 게릴라 유닛이 등장함에 따라 적의 빠른 이동 및 강의 이동의 제한을 피하기 위해서 이족 보행 로봇이 필요하게 되어 개발이 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_STRATEGY">
+			<Text>지크는 강력한 이족보행의 기계 타워이지만, 대신 나노물질 2개가 필요합니다. 이전 모델인 바퀴 달린 탱크와 달리 강이나 습지에 막히지 않습니다. 공격 직후 이동할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ZEKE_HELP">
+			<Text>이중 갑옷을 가진 강력한 탱크 유닛이지만, 재료 비용도 두 배입니다. 기동성은 이전 탱크와 비슷하지만 강이나 습지에 방해받지 않습니다. 시야가 1 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM">
+			<Text>건담</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_TEXT">
+			<Text>건담은 미래시대의 강력한 방어 유닛입니다. 무게중심과 관절을 자유 자제로 다룰 수 있게 되었습니다. 높은 시야를 통해 전장을 잘 볼 수 있지만, 높은 위치로 인해 적의 낮은 무게중심이 있는 탱크에게 포격기회가 증가하는 단점이 있었습니다. 실제로 아직 신소재의 한계로 인해 가격과 성능, 이동력을 고려할 때는 강과 습지 같은 곳에서 이동력을 잃지 않고 부스터를 통해 이동할 수 있는 장점이 있었습니다. 이족보행 로봇인 지크와 대학살 로봇과 비슷하지만, 인간이 파일럿으로 탑승하여 조종하는 시스템입니다. 인류는 유전적 진화와 디지털 동화를 의존하지 않고, 순수 인류의 능력을 극대화하며 과학기술의 장점을 발휘할 수 있는 건담을 개발하게 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_STRATEGY">
+			<Text>건담은 최종 화약 및 강력한 방어 로봇형 무기입니다. 강에 막히지 않으며 세계 거의 모든 곳에 공수할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_GUNDAM_HELP">
+			<Text>건담은 최종 화약 및 강력한 방어 로봇형 무기입니다. 강에 막히지 않으며 세계 거의 모든 곳에 공수할 수 있습니다. 시야가 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL">
+			<Text>버톨 건쉽</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_TEXT">
+			<Text>수직 이착륙 항공기의 기술이 발전함에 따라, 점점 더 다양한 디자인이 나타나기 시작하여 표준 헬리콥터 건쉽을 대체했습니다. 점점 더 많은 수의 수직이착륙 항공기가 제트 터빈을 사용했지만, 엔진이 회전하거나 추진력을 조절할 수 있도록 설계되었습니다. 이 항공기는 버톨 기능으로 인해 종종 속기로 버톨이라고 불립니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_STRATEGY">
+			<Text>버톨은 적의 기갑 유닛을 사냥하도록 설계된 미래형 공중 유닛으로, 이제 바다를 건널 수 있지만 공격할 수는 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_HELP">
+			<Text>현대 및 레일건 기갑과 싸우는 데 특화된 유닛입니다. 산과 대양 위를 떠다닐 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK">
+			<Text>호버탱크</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_TEXT">
+			<Text>어떤 지형이든 호버링하여 통과할 수 있는 탱크의 개념은 오랫동안 공상과학 소설의 주요 소재였습니다. 그러나 결국 재료 공학, 발전소 및 제어 시스템의 발전으로 이것이 현실이 되었습니다. 개선된 발전소를 통해 버톨은 지상 기반 탱크와 경쟁할 수 있는 충분한 장갑을 운반할 수 있도록 구성될 수 있었고, 정교한 전문가 시스템과 사이버네틱 제어를 통해 승무원은 공기역학적으로 불안정한 우주선을 다룰 수 있었습니다. 이 새로운 유닛은 이전 버톨만큼 빠르지만 탱크만큼 중무장하고 무장했습니다. 종종 그들은 EMP 탄두가 장착된 미사일로 구성되어, 생체 개조를 활용하는 보병에 대해 덜 성공적인 것으로 입증되었지만 고급 장갑 유닛을 파괴할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_STRATEGY">
+			<Text>호버탱크는 적의 기갑 유닛을 사냥하도록 설계된 미래형 공중 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_HELP">
+			<Text>레일건 기갑 및 거대 죽음의 로봇과 싸우는 데 특화된 유닛입니다. 산과 대양 위를 떠다닐 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB">
+			<Text>사이버 잠수함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_TEXT">
+			<Text>잠수함 승선 생활은 선원들에게 항상 스트레스가 많았으며, 극도로 제한된 구역에서 오랜 시간을 보내야 했습니다. 컴퓨터 시스템이 더욱 정교해짐에 따라, 필요한 승무원 수를 줄이기 위해 잠수함에 탑재된 많은 프로세스를 최대한 자동화하려고 시도하고 자동화하는 것이 자연스러운 결론이었습니다. 나노 물질의 발전은 또한 더 빨리 움직이고 더 멀리 있는 목표물을 타격할 수 있는 차세대 잠수함 선체와 어뢰 무기를 가능하게 했습니다. 광범위한 자동화 및 컴퓨터 지원 제어로 인해 이 차세대 잠수함은 사이버잠수함이라고 불립니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_STRATEGY">
+			<Text>사이버 잠수함은 미래시대의 잠수함입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CYBERSUB_HELP">
+			<Text>구축함, 미사일 순양함, 아스널쉽, 그리고 다른 잠수함을 제외한 모든 유닛에게는 인접하거나 공격 전까진 보이지 않습니다. 2개의 미사일을 탑재할 수 있으며, 해상 유닛을 공격하는데 특화되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER">
+			<Text>줌왈트 구축함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_TEXT">
+			<Text>개발 이후 구축함은 현대 해군에서 없어서는 안 될 부분이었습니다. 고속 및 센서 제품군을 통해 적 선박과 잠수함을 탐지하는 첫 번째 방어선 역할을 할 수 있습니다. 그러나 재료 공학 및 센서 기술의 발전으로 인해 디자인이 지속적으로 업그레이드되었습니다. 특히 센서 시스템의 효율성을 높이기 위한 스텔스 기술과 컴퓨터 시스템의 출현으로 이러한 새로운 첨단 구축함은 해군에서 더욱 필수적인 부분이 되었습니다. 21세기 구축함은 수상 전투함의 글로벌 표준입니다. 그들은 레이더 단면을 작게 유지하기 위해 복잡한 모서리와 틈새가 없는 크고 슬래브 측면과 같은 기능을 표시하는 경향이 있으며, 발사 준비가 된 많은 수의 미사일 및 헬리콥터 비행 갑판 및 격납고를 운반하기 위한 수직 발사 시스템입니다. 하드웨어와 소프트웨어가 결합되어 더 넓은 감지 범위, 향상된 감도 및 더 정확한 식별이 가능합니다. 이들 선박 중 단 한 척만이 탄도 미사일, 순항 미사일, 적 항공기 및 수상함으로부터 전체 함대를 동시에 방어할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_STRATEGY">
+			<Text>줌왈트 구축함은 구축함의 미래형 버전입니다. 매우 강력하고 값비싼 해상 근접 유닛으로, 멀리서 잠수함을 추적하고 모든 공중 위협에 효과적으로 대처할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEODESTROYER_HELP">
+			<Text>4개의 미사일을 장착할 수 있는 이 매우 강력한 해상 근접 유닛은 멀리서도 잠수함을 볼 수 있습니다. 줌왈트 구축함의 가치는 공중 유닛을 요격하는 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP">
+			<Text>아스널쉽</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_TEXT">
+			<Text>아스널쉽은 중형 미사일, 대부분 순항 미사일을 위한 500개의 수직 발사 베이를 갖도록 의도된 부유식 미사일 플랫폼에 대한 개념입니다. 일부 해군 독트린에서는 컴퓨터 시스템이 더욱 정교해짐에 따라 일부는 대체로 자율적이 되도록 전환되었지만, 무기고 함선은 다른 함선에 의해 원격으로 지휘됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_STRATEGY">
+			<Text>아스널쉽은 미사일 순양함의 미래시대 후속 모델입니다. 4개의 미사일 유닛을 탑재할 수 있을 뿐만 아니라 강력한 원거리 공격도 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ARSENAL_SHIP_HELP">
+			<Text>아스널쉽은 미사일 순양함의 미래시대 후속 모델입니다. 4개의 미사일 유닛을 탑재할 수 있을 뿐만 아니라 강력한 원거리 공격도 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER">
+			<Text>첨단 이지스 항공모함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_HELP">
+			<Text>항공기 10대(승급 시 최대 13대)를 탑재하며, 시야, 장갑, 대공 무기가 더 좋습니다.[NEWLINE][NEWLINE]한 번에 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]대의 항공모함만 활성화할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_STRATEGY">
+			<Text>첨단 이지스 항공모함은 전투기, 폭격기(스텔스 폭격기 제외) 및 원자 폭탄을 운반하는 특수 선박입니다. 슈퍼캐리어는 직접 공격할 수 없지만, 탑재하는 항공기는 해상에서 가장 강력한 공격 무기가 됩니다. 방어적으로는 근거리 지상 및 장거리 공중 공격 모두로부터 자신을 방어할 수 있지만, 슈퍼캐리어는 여전히 약하며 미사일 구축함과 핵 잠수함의 호위를 받아야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SUPERCARRIER_TEXT">
+			<Text>첨단 이지스 항공모함은 핵 항공모함의 나노기술 진화형입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE">
+			<Text>하이브리드 드론</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_TEXT">
+			<Text>바이오컴퓨터와 유기 합성물의 발전으로 생물학적 구성요소를 기존 무인 장치에 통합하는 실험이 이루어졌습니다. 하이브리드 드론이라고 불리는 이 유닛의 유기적 구성 요소는 특정 보병 유닛을 위해 개발된 재생 기술로 인해 현장에서 유닛을 수리하고 유지하는 것을 더 쉽게 만들었습니다. 한 가지 특이한 부작용은 드론이 거의 동물적인 충동을 발전시키는 것처럼 보였고, 특히 적의 항공기, 특히 느리게 움직이는 잠수함과 기갑 유닛에 포식자가 되는 것 같았습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_STRATEGY">
+			<Text>하이브리드 드론은 미래시대의 호버링 정찰 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYBRID_DRONE_HELP">
+			<Text>미래 시대의 정찰 유닛입니다. 잠수함과 기갑 유닛과 싸우는데 특화되었습니다. 매 턴 스스로 체력을 회복하며, 이동이 가능합니다. 대양 위를 지날 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB">
+			<Text>반물질 핵융합 핵폭탄</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_TEXT">
+			<Text>반물질 핵융합 폭탄은 현재의 과학 및 기술 원칙을 뛰어넘는 무기입니다. 이 무기는 반물질과 물질의 상호 작용에 의해 발생하는 엄청난 에너지를 활용하며, 이를 핵융합과 결합함으로써 그 파괴력을 한층 더 강화시킵니다. 이 무기의 기본 원리는 반물질을 이용하여 초고온 및 초고압 환경을 생성하고, 이로 인해 수소 동위원소들이 융합하는 것입니다. 융합 과정에서 방출되는 에너지는 추가적으로 반물질과 물질의 상호 작용을 촉진시키며, 이 결과 더 많은 에너지를 방출하게 됩니다. 이렇게 해서 생성된 에너지는 지표면에 광범위하고 파괴적인 영향을 미칩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_STRATEGY">
+			<Text>폭발할 때 순수 핵융합 핵폭탄은 폭발 반경 2타일 내에 있는 모든 도시와 유닛을 파괴합니다. 공격 시 자동으로 파괴됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_THERMONUCLEAR_BOMB_HELP">
+			<Text>적에게 궁극의 파괴를 퍼부으십시오. 도시에 막대한 피해를 주고 폭발 반경에 있는 모든 유닛을 죽입니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]맨해튼 프로젝트[ENDCOLOR]와 3개의 [ICON_RES_URANIUM]우라늄이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE">
+			<Text>바이오 드론</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_TEXT">
+			<Text>생명공학과 유기합성물에 대한 혁신적인 발전은 바이오드론, 즉 유기체 기반의 드론의 실험적인 개발로 이어졌습니다. 바이오드론은 생체 유전자 기술과 고도의 기술적 혁신이 결합된 결과물로, 독특한 특성을 갖고 있습니다. 특히 그들은 발전된 생존 본능을 가지고 있어, 잠수함과 위장된 보병을 민감하게 탐지하고 파괴하는 능력을 보유하고 있습니다. 바이오드론의 생체 구성 요소들은 자체 수리와 보전 능력을 부여해줍니다. 이는 특정 보병 유닛들을 위해 개발된 재생 기술 때문인데, 이로 인해 그들은 전장에서의 지속성과 장기적인 활동 능력을 향상시킵니다. 또한, 바이오드론은 예상치 못한 결과를 가져왔는데, 드론들이 동물과 같은 본능을 개발하는 것처럼 보였습니다. 그들은 잠수함과 위장된 보병에 대해 특히 민감하게 반응하였고, 기갑 유닛에 대해서도 확실한 반응을 보였습니다. 이러한 세부적인 특성은 바이오드론을 매우 효과적인 정찰 유닛으로 만들며, 그들의 존재는 전장에서 중요한 정보를 수집하고, 적을 파괴하는 데 결정적인 역할을 하게 만듭니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_STRATEGY">
+			<Text>바이오드론은 미래시대의 궁극적인 정찰 유닛이며, 빠른 테러 조기진압을 할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIODRONE_HELP">
+			<Text>매우 강력한 호버링 정찰 유닛입니다. 매턴 스스로 체력을 회복하며, 빠르게 이동이 가능합니다. 잠수함과 기갑유닛과 싸우는데 특화되었습니다. 대양 위를 지날 수 있습니다. 장애물과 상관없이 6타일의 상공을 감시할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE">
+			<Text>레일건 미사일</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_TEXT">
+			<Text>나노 재료 공학 및 추진 기술의 개선은 유도 미사일 설계의 도약으로 이어졌습니다. 초경량 프레임의 램제트 엔진을 사용하는 이 차세대 미사일은 초음속 속도에 도달할 수 있어, 대응이 이루어지기 전에 더 멀리서 공격할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_STRATEGY">
+			<Text>레일건 미사일은 유도 미사일의 미래형 버전입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_MISSILE_HELP">
+			<Text>적의 유닛이나 도시에 타격을 주는 일회용 미사일입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE">
+			<Text>플라즈마 폭탄 미사일</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_TEXT">
+			<Text>플라즈마와 초전도체 융합을 통해 레일건 미사일의 파괴력을 극도로 향상시킬 수 있었습니다. 기존의 초경량의 레일건의 초음속의 속도에서 그 안에 플라즈마 현상을 이용하여 파괴력을 올릴 수 있었으며, 더 진보된 나노기술로 더 멀리서 공격할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_STRATEGY">
+			<Text>플라즈마 미사일은 레일건 미사일의 미래형 버전입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_HELP">
+			<Text>적의 유닛이나 도시에 타격을 주는 일회용 미사일입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER">
+			<Text>크롤러 SAM 발사대</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_TEXT">
+			<Text>크롤러 SAM는 혁신적인 물류 방법으로 기존의 재보급 시스템의 한계를 뛰어넘은 첨단 대공 유닛입니다. 크롤러 SAM은 소형원자로를 장착하여 에너지원을 확보하여 이동성을 개선시켰으며, 또한 강력한 플라즈마 미사일을 지속적으로 생산하여 갖출 수 있게 되었습니다. 이 유닛은 스스로 제작한 미사일을 활용하여 공중의 적을 효과적으로 공격하고, 또한 자체 방어를 위해 사용됩니다. 이런 능력으로 인해 크롤러 SAM은 공중 위협에 대응하면서 동시에 지상의 유닛에게 군수 지원을 제공하는 데 필수적인 역할을 합니다. 이 유닛은 복잡한 물류 문제를 해결하면서 전술적 유연성을 제공함으로써 전투의 새로운 패러다임을 제시합니다. 이 유닛은 궁극적으로는 전술 전장에서의 우위를 결정하는 주요 요소가 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_STRATEGY">
+			<Text>크롤러 SAM은 미사일 유닛 4개를 탑재할 수 있는 대공 유닛입니다. 플레이어별 최대 4개 보유가 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_HELP">
+			<Text>4개의 미사일이 탑재가능하고 한 턴에 3번 연속 공격이 가능한 미래 시대의 대공 유닛입니다. 최대 4기만 보유 가능합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL">
+			<Text>엔젤</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_TEXT">
+			<Text>전장에서 보행형 자주포가 우세하게 사용되는 가운데, 보행형 자주포의 단점을 보완하기 위해 엔젤이 탄생하였습니다. 이 극강의 전투 유닛은 진보된 재료 공학과 소형원자로 발전기의 발전을 기반으로 만들어져, 보행형 자주포가 대면하던 일부 병참 및 방어 관련 문제를 해결하였습니다. 엔젤은 기존의 보행형 자주포에 비해 더욱 견고한 방어력을 보여줍니다. 이는 신소재의 활용과 핵융합 발전 기술의 발전을 바탕으로한 방어막 시스템으로 가능하게 되었습니다. 이 방어막 시스템은 무거운 무기의 공격력에 대해 견딜 수 있게 해주며, 동시에 근접 유닛의 물리적 공격에도 강력한 저항력을 보여줍니다. 또한, 이 유닛은 뛰어난 공성 능력을 지니고 있습니다. 소형 핵융합 발전소는 극한의 출력을 제공하여, 플라즈마 포를 장착하여 강력한 공격력을 발휘할 수 있습니다. 이로 인해 엔젤은 전장에서 강력한 돌파력을 지닌 공성 유닛으로 활약하게 됩니다. 엔젤은 자신의 방어력을 강화하고 공격력을 극대화시키는 것을 통해 전장에서의 군세를 결정지을 수 있습니다. 이 유닛은 미래의 전장에서 후방을 지원하고, 공격의 선봉도 책임지는 중요한 역할을 차지할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_STRATEGY">
+			<Text>엔젤은 미사일 유닛 1개를 탑재할 수 있는 공성 유닛입니다. 최대 4기만 보유할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ANGEL_HELP">
+			<Text>1개의 미사일이 탑재가능한 미래 시대의 공성 유닛입니다. 최대 4기만 보유 가능합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE">
+			<Text>나노하이브</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_TEXT">
+			<Text>나노머신, 특히 나노어셈블러와 나노디스어셈블러의 개발은 불가피하게 이러한 장치를 무기화하고 군사적 목적으로 활용하려는 검색으로 이어졌습니다. 단기간의 나노스웜이 미사일 페이로드로 전달되어 일부 성공을 거두었지만, 대부분의 나노스웜은 전장 조건에서 장기간 생존하는 데 어려움을 겪었습니다. 결국 나노하이브(nanohives)라고 불리는 자율운반체를 사용하여 나노머신 무리를 전장으로 보내는 아이디어가 고안되었습니다. 정교한 저고도 호버링 기술을 사용하여 이 나노하이브는 거의 모든 지형을 가로질러 전면으로 가져올 수 있었습니다. 적절한 프로그래밍을 통해 나노하이브는 아군 유닛을 치료하고 적 유닛을 공격하는 데 할당되어, 분자 수준에서 분해되는 대상을 느리지만 가차 없이 분해할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_STRATEGY">
+			<Text>나노하이브는 아군 유닛을 치료하고 매 턴 2타일 내에 있는 적 유닛에게 피해를 주는 미래시대 헬리콥터 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE_HELP">
+			<Text>매 턴 2타일 이내의 아군 유닛의 체력을 회복시키고 적 유닛에 피해를 줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS">
+			<Text>넥서스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_TEXT">
+			<Text>미래 시대 전쟁의 궁극적인 전환점은 넥서스의 등장으로 표현됩니다. 넥서스는 식민지화를 위해 디자인된 고급 항우주기지로서, 우주의 가혹한 조건에서도 인간 생활을 지원하도록 설계되었습니다. 첨단 스마트 재료와 소형 핵융합 발전소의 결합으로, 이 공중에 떠 있는 복합체는 사실상 우주에서의 자립 생활과 효과적인 방어를 가능하게 합니다. 넥서스의 중심에는 사람들의 생활 공간과 함께 고도로 집중된 명령 노드가 있습니다. 이 노드는 지속적인 전투 상황 분석을 제공하고, 넥서스 주변의 상황에 따라 필요한 업데이트를 실시간으로 제공합니다. 또한, 넥서스 내부에는 손상된 부품을 즉시 수리하거나 인간이 살아가는 데 필요한 물자를 만들어내는 나노 하이브가 설치되어 있어 자립성을 높였습니다. 넥서스는 우주 전투기와 폭격기를 보유하고 있어, 적에 대한 방어나 공격이 필요할 때 이들을 즉시 배치할 수 있습니다. 이러한 우주 전투체는 넥서스의 레일건과 미사일 배터리와 함께 연동되어 적에게 강력한 화력 지원을 제공합니다. [NEWLINE][NEWLINE]마지막으로, 넥서스는 자체적으로 매우 강력한 방어 시스템을 갖추고 있습니다. 이는 넥서스를 공격하려는 적을 효과적으로 저지하며, 동시에 넥서스 내부의 생명체와 시설을 보호하는 역할을 수행합니다. 이처럼 넥서스는 우주에서의 생활과 생존을 위한 강력한 기지이자, 인류의 우주 식민지화를 위한 중요한 발판으로서의 역할을 수행하게 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_STRATEGY">
+			<Text>넥서스는 아군 유닛을 치료하는 동시에 전투력을 감소시키고 매 턴 인접한 적 유닛에게 피해를 주는 미래형 지원 유닛입니다. 문명 내에 넥서스를 4개 이상 소유할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_NEXUS_HELP">
+			<Text>미래 시대의 보조형 유닛으로 아군 유닛의 체력을 매 턴 회복시키는 반면, 인접한 적 유닛에 피해를 주고 전투력도 떨어뜨립니다. 항공기 4대를 탑재할 수 있습니다. 문명당 4개로 제한됩니다.</Text>
+		</Row>
+	
+		<Row Tag="TXT_KEY_UNIT_FW_AIRBORNE_FORCES">
+			<Text>공수부대</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_FW_AIRBORNE_FORCES">
+			<Text>아군 영토로부터 최대 5타일까지 공중 투하가 가능한 강력한 보병 유닛입니다. 공수 후에도 이동 및 약탈을 할 수 있지만, 다음 턴까지 전투를 할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_AIRBORNE_FORCES_STRATEGY">
+			<Text>공수부대는 후반 게임의 보병입니다. 기계화 보병 유닛만큼 강력합니다. 그러나 최대 5타일 떨어진 곳까지 낙하산으로 이동할 수 있습니다(아군 영토에서 시작할 때). 이를 통해 공수 부대는 말 그대로 적의 위치를 뛰어넘고 도로망을 파괴하고 중요한 자원을 약탈하는 등 그의 전선 뒤에서 대혼란을 일으킬 수 있습니다. 공수 부대는 그러한 임무를 수행할 때 큰 위험에 처하므로, 목표가 그만한 가치가 있는지 확인하십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FW_AIRBORNE_FORCES_TEXT">
+			<Text>공수 부대는 일반적으로 경보병으로, 항공기로 이동하고 일반적으로 낙하산으로 전투에 "투하"하도록 설정된 군대입니다. 따라서 그들은 적진 뒤에 배치될 수 있으며, 경고 없이 거의 모든 곳에 배치할 수 있습니다. 포메이션은 항공기의 수와 크기에 의해서만 제한되므로, 충분한 용량이 주어지면 몇 분 안에 거대한 힘이 "갑자기" 나타날 수 있으며, 이를 수직 포위라고 합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES">
+			<Text>스페이스 마린</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_HELP">
+			<Text>아군 영토로부터 공중 투하가 가능한 강력한 정찰 지상 유닛입니다. 강하 후에도 이동 및 약탈을 할 수 있지만, 다음 턴까지 전투를 할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_STRATEGY">
+			<Text>스페이스 마린은 후반부 도시의 공략을 돕는 정찰 지상 유닛입니다. 아군 영토에서 궤도 강하할 수 있습니다. 이를 통해 스페이스 마린은 말 그대로 적의 위치를 뛰어넘고 도로망을 파괴하고 중요한 자원을 약탈하는 등 그의 전선 뒤에서 대혼란을 일으킬 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_SPACEMARINES_TEXT">
+			<Text>스페이스 마린 또는 아뎁투스 아스타르테스는 인류의 수호자이자 인류 황제의 전사 중 가장 위대한 전사입니다. 그들은 거의 인간이 아니지만 초인간적입니다. 가혹한 유전자 조작, 심리 조절 및 엄격한 훈련을 통해 정상인보다 모든 면에서 우월하게 되었습니다. 스페이스 마린의 갑옷은 여러 겹의 세라마이트와 아다만티움으로 구성되어 있으며, 터미네이터 아머는 움직임을 향상시키기 위해 사용자 자신의 신경 및 근육 시스템에 연결되는 전기동력 섬유 다발과 서보 지원 인터페이스로 꿰어져 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_TREX">
+			<Text>티라노사우루스 렉스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_TEXT">
+			<Text>가장 상징적인 공룡 중 하나인 티라노사우루스 렉스를 부활시키려는 노력은 불가피했습니다. 유전자 조작의 혜택을 받은 쥬라기 공원의 티라노사우루스 렉스는 강력하고 빠르지만, 그 힘 때문에 도망치는 동물을 상대하기가 어렵습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_STRATEGY">
+			<Text>쥬라기 공원에서 탈출한 공격적인 공룡 유닛. 비용이 들지 않으며 개활지에서 더 잘 사냥합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TREX_HELP">
+			<Text>쥬라기 공원에서 탈출한 공격적인 공룡 유닛입니다. 비용이 들지 않으며 개활지에서 더 잘 사냥합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS">
+			<Text>트리케라톱스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_TEXT">
+			<Text>초식공룡의 상징인 트리케라톱스는 느리게 움직이지만, 가죽과 뼈판으로 엄청난 보호를 받습니다. 일부 동물은 포로 상태에서 탈출하여 제거하기 위해 대전차 무기가 필요했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_STRATEGY">
+			<Text>쥬라기 공원에서 탈출한 방어형 공룡 유닛. 비용이 들지 않으며 무거운 차량을 뒤집을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_TRICERATOPS_HELP">
+			<Text>쥬라기 공원에서 탈출한 방어형 공룡 유닛입니다. 비용이 들지 않으며 무거운 차량을 뒤집을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR">
+			<Text>벨로시랩터</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_TEXT">
+			<Text>쥬라기 공원의 유전적으로 재설계된 공룡 중 가장 무서운 벨로시랩터는 매우 지능적이며, 종종 포로에서 탈출하는 방법을 찾으려고 노력합니다. 티라노사우르스만큼 강하지도 않고 트리케라톱스만큼 강하지도 않지만, 매우 빠르며 일단 탈출하면 사냥하기 어려울 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_STRATEGY">
+			<Text>쥬라기 공원에서 탈출한 기동성 있는 공룡 유닛. 비용이 들지 않으며 식생 지대에서 더 잘 사냥합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAPTOR_HELP">
+			<Text>쥬라기 공원에서 탈출한 기동성 있는 공룡 유닛입니다. 비용이 들지 않으며 식생 지대에서 더 잘 사냥합니다.</Text>
+		</Row>
+	
+
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM">
+			<Text>첨단 이동식 SAM</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_STRATEGY">
+			<Text>첨단 이동식 SAM(지대공) 유닛은 군대에 대공 방어를 제공합니다. 첨단 이동식 SAM 유닛은 4개의 헥스 내에서 적 항공기 폭격 목표물을 요격하고 사격할 수 있습니다(단, 턴당 유닛 하나만). 이러한 부대는 비공중 공격에 상당히 취약하므로 보병이나 기갑 유닛을 동반해야 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_HELP">
+			<Text>인근 유닛을 폭격하려는 적 항공기를 요격합니다. 미사일 2개를 탑재할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MODERN_MOBILE_SAM_PEDIA">
+			<Text>헬리콥터가 보다 효율적인 살인 기계로 발전함에 따라, 보병은 제트 전투기가 제기하는 위험은 말할 것도 없고 점점 커지는 위협에 맞서 싸우도록 설계된 무기를 개발했습니다. 현대의 "SAM(지대공 미사일)은 빠르고 가벼우며, 레이더를 탑재했기 때문에 적 항공기를 "포착"하고 거기에 달려들어 엄청난 폭발을 일으킴으로써 장갑이 약한 비행기나 헬기에 가능한 모든 종류의 치명타를 입힐 수 있습니다. 이에 대한 대응으로 스텔스성이 더 강한 항공기들이 만들어졌고, 더 진보된 미사일 방해기술도 항공기들을 확실하게 괴롭혀줄 뿐만 아니라, 아군의 지상 유닛에게는 공중으로부터의 위협에 대한 든든한 방어막이 되어줍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_JAVELIN">
+			<Text>재블린</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELP_JAVELIN">
+			<Text>정보화 시대 후반의 원거리 유닛으로, 기갑 유닛에 특화되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_JAVELIN_STRATEGY">
+			<Text>재블린은 이전 모델인 바주카보다 사거리가 길고 더 많은 피해를 줍니다. 중장갑 군용 차량을 타격하고 파괴하도록 설계되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_FW_JAVELIN_TEXT">
+			<Text>재블린(첨단 대전차 무기 시스템-중형)은 특히 기갑 유닛에 막대한 피해를 입힐 수 있는 원거리 유닛입니다. 사거리 3을 자랑하는 가장 강력한 원거리 유닛이지만, 이동이 느리고 방어 시 약합니다. 따라서 적 유닛을 소모시키는 데 사용해야 합니다. 기존 바주카보다 사거리가 길고 피해량이 더 많습니다. 기관총처럼 주변 적 유닛을 약화시킵니다. 공격 시 이동식 대전차 미사일은 요새화된 유닛과 도시에 피해를 덜 입히지만, 기갑 부대에는 더 많은 피해를 줍니다. 이것은 훌륭한 방어 부대가 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ATGM">
+			<Text>ATGM 차량</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELP_ATGM">
+			<Text>정보화 시대 후반의 원거리 유닛으로, 기갑 유닛에 특화되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ATGM_STRATEGY">
+			<Text>ATGM 차량은 이전 모델인 재블린보다 기동성이 뛰어나고 더 많은 피해를 줍니다. 중장갑 군용 차량을 타격하고 파괴하도록 설계되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_FW_ATGM_TEXT">
+			<Text>ATGM 차량(대전차 유도 미사일 차량)은 특히 기갑 유닛에 막대한 피해를 입힐 수 있는 원거리 유닛입니다. 사거리 3을 자랑하는 가장 강력한 원거리 유닛이지만, 방어 시 약합니다. 따라서 적 유닛을 소모시키는 데 사용해야 합니다. 기존 바주카보다 사거리, 기동성, 피해량이 더 많습니다. 기관총처럼 주변 적 유닛을 약화시킵니다. 공격 시 이동식 대전차 미사일은 요새화된 유닛과 도시에 피해를 덜 입히지만, 기갑 부대에는 더 많은 피해를 줍니다. 이것은 훌륭한 방어 부대가 됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVIL_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>강화 외골격(파워 아머, 강화 갑옷, 강화 슈트, 사이버네틱 슈트, 사이버네틱 아머, 엑소슈트, 하드슈트, 엑소프레임 또는 증강 기동성이라고도 함)은 주로 사람이 착용하는 외골격과 같은 프레임워크와 팔다리 움직임을 위한 활성화 에너지의 적어도 일부를 공급하는 전원 공급 장치로 구성된 동력 이동 기계입니다. 그 디자인은 등받이를 제공하고, 사용자의 동작을 감지하고, 기어를 관리하는 모터에 신호를 보내는 것을 목표로 합니다. 외골격은 어깨, 허리, 허벅지를 지탱하고, 무거운 물건을 들거나 들기 위한 움직임을 보조하고 허리의 스트레스를 낮춥니다. 가장 초기에 알려진 외골격 유사 장치는 1890년 러시아 엔지니어 니콜라스 야긴이 개발한 운동 보조 장치였습니다. 수동적이고 인력이 필요했지만, 압축 가스 주머니에 저장된 에너지를 사용하여 이동을 지원했습니다. 파워 아머는 공상과학 소설의 영역에 불과했지만, 오늘날에는 간단하고 '저렴'하게 제작할 수 있으며 의료, 민간, 산업 및 물론 군사 분야에서 이미 사용되고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>파워 아머 보병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_STRATEGY_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>파워 아머 보병은 일반 보병보다 더 강하고 빠르게 건설할 수 있습니다. 빠르지만 탱크처럼 전투 후에는 움직일 수 없습니다. 그들의 주된 책임은 언제나처럼 땅을 차지하고 지키는 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HELP_UNIT_FW_POWER_ARMOR_INFANTRY">
+			<Text>특별한 자원이 필요 없는 빠르고 기본적인 미래의 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ELITE_MERCENARIES">
+			<Text>정예 용병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ENHANCED_MERCENARIES">
+			<Text>강화된 용병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_MERCENARIES">
+			<Text>바이오 용병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED">
+			<Text>대륙간 탄도 미사일</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNIT_FW_ADVANCED_MISSILE_GUIDED_TEXT">
+			<Text>대륙간 탄도미사일(ICBM)은 5,500킬로미터(3,400마일) 이상의 사거리를 가진 탄도 미사일로, 일반적으로 핵무기(하나 이상의 핵탄두)를 운반하도록 설계되었습니다. 대부분의 현대 설계는 다중 독립 목표 재진입 차량(MIRV)을 지원하여, 단일 미사일이 여러 탄두를 운반하고 각각이 다른 목표를 공격할 수 있도록 합니다.[NEWLINE][NEWLINE]초기 ICBM은 정확도가 제한되어 있어 도시와 같은 큰 목표에만 사용할 수 있었습니다. 그들은 억지력을 가까이에 두는 '안전한' 기지 옵션으로 여겨졌고, 공격하기 어려울 것입니다. 군사 목표에 대한 공격은 필요한 경우에도 유인 폭격기의 사용을 여전히 요구했습니다. 2세대와 3세대 설계는 정확도를 크게 향상시켜 가장 작은 지점 목표도 성공적으로 공격할 수 있게 되었습니다. 크기의 유사한 진화는 같은 미사일들이 잠수함에 배치되게 했는데, 이들은 잠수함 발사 탄도 미사일(SLBM)로 알려져 있습니다. 잠수함은 육상 미사일보다 더 안전한 기지 옵션으로, 바다를 자유롭게 이동할 수 있습니다. 이러한 기능의 진화는 유인 폭격기를 전선에서 퇴출시키고, 육상 기반의 ICBM은 크게 SLBM에게 양보했습니다.[NEWLINE][NEWLINE]ICBM은 다른 탄도 미사일과 사거리와 속도로 구별됩니다: 중거리 탄도 미사일(IRBM), 중거리 탄도 미사일(MRBM), 단거리 탄도 미사일(SRBM) - 이러한 짧은 사거리의 탄도 미사일들은 집합적으로 전역 탄도 미사일이라고 불립니다. 대륙간, 중간, 중거리, 단거리로 어떤 범위를 분류할지에 대한 단일화된, 표준화된 정의는 없습니다.[NEWLINE][NEWLINE]비핵 ICBM의 발사는 너무도 위협적이라 핵 반응을 요구하므로, 이러한 무기의 군사적 가치는 사라집니다. ICBM의 최대 알려진 사거리는 16,000km(RSM-56 불라바)입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED_STRATEGY">
+			<Text>세계의 어떤 부분을 만질 수 있는 힘을 갖고 싶을 때 사용해야 할 도구입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_ADVANCED_MISSILE_GUIDED_HELP">
+			<Text>ICBM은 엄청난 사거리를 가진 첨단 유도 미사일이며 유지 비용이 없습니다. 건설에 [ICON_RES_OIL]석유 1개가 필요합니다.</Text>
+		</Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB">
+      <Text>탄도 미사일 잠수함</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_STRATEGY">
+      <Text>일반 핵 잠수함보다 더 강하고 강력합니다. 이것 역시 대부분의 유닛에게는 보이지 않고 다른 잠수함을 볼 수 있지만, 공격하거나 다른 유닛에 인접할 때 보입니다. 가장 중요한 것은 탄도 미사일 잠수함이 유도 미사일과 핵 미사일(최대 8개)을 운반할 수 있다는 것입니다. 이 함선은 많은 수의 미사일을 운반하여 적에게 죽음의 비를 내리는 데 탁월합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_HELP">
+      <Text>탄도 미사일 잠수함은 구축함과 다른 잠수함을 제외한 모든 유닛에게 보이지 않습니다. 2개의 미사일을 탑재할 수 있습니다. 해군 유닛에 매우 강합니다. [ICON_RES_URANIUM]우라늄이 필요합니다.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_FW_MECHASUB_PEDIA">
+      <Text>
+		  탄도 미사일 잠수함은 핵 잠수함의 업그레이드이며 첨단 탄도학 발견 시 사용할 수 있습니다. 구식이 되지 않습니다. [ICON_RES_URANIUM]우라늄이 필요합니다. 이 유닛을 건설하려면 수상함 조선소가 필요합니다. 문명당 4개로 제한됩니다.[NEWLINE][NEWLINE]탄도 미사일 잠수함은 핵탄두가 장착된 잠수함 발사 탄도 미사일(SLBM)을 배치할 수 있는 잠수함입니다. 미국 해군의 탄도 미사일 잠수함에 대한 선체 분류 기호는 SSB와 SSBN입니다. SS는 잠수함(또는 잠수정), B는 탄도 미사일, N은 원자력 잠수함을 나타냅니다.[NEWLINE][NEWLINE]이러한 잠수함은 핵 억지력 때문에 냉전의 주요 무기 체계가 되었습니다. 그들은 목표물로부터 수천 킬로미터 떨어진 곳에서 미사일을 발사할 수 있고 소음이 적기 때문에 탐지하기 어렵기 때문에, 선제 공격 시 생존 가능한 억지력이 되고 핵 억지력의 상호 확증 파괴 정책의 핵심 요소가 됩니다. 그들의 배치는 미국과 소련/러시아에 의해 지배되었으며, 프랑스, 영국, 중국 및 인도와 함께 적은 수의 서비스를 제공했습니다.
+	  </Text>
+    </Row>	 
+	  
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE">
+			<Text>메가하이브</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_TEXT">
+			<Text>성간 여행이 가능한 메가하이브는 아마도 AI 기술의 궁극적인 표현일 것입니다. 어떤 지형이든 호버링할 수 있는 능력은 비교할 수 없는 기동성을 제공하며, 자체 원거리 공격으로 놀라운 전투 능력을 발휘합니다. 그러나 자체적으로 도시를 점령할 수 없으므로, 이를 지원하기 위해 최소한 일부 지상 유닛이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_STRATEGY">
+			<Text>메가하이브는 모든 지형을 횡단할 수 있는 우주선 유닛입니다. 도시 공격 시 전투 보너스가 있지만, 점령할 수는 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_MEGAHIVE_HELP">
+			<Text>어떤 지형이든 횡단할 수 있는 고유의 우주선 호버링 유닛입니다. 도시 공격 시 전투 보너스가 있지만, 점령할 수는 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE">
+			<Text>첨단 헬리콥터</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_HELP">
+			<Text>기갑 탱크와 싸우고 산 위를 떠다니는 데 특화된 유닛입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_STRATEGY">
+			<Text>첨단 헬리콥터는 도시를 점령할 수 없다는 점을 제외하면 대부분의 측면에서 지상 유닛과 같은 역할을 하는 치명적인 공중 유닛입니다. 7칸의 이동은 매우 빠르고, 산을 포함한 모든 지형 유형을 맑은 것처럼 이동할 수 있지만, 물을 건너려면 착수해야 합니다. 현대 헬리콥터는 탱크와 싸울 때 막대한 전투 보너스를 받습니다. 85의 힘과 상대를 압도하는 능력으로 거대 죽음의 로봇을 이길 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_APACHE_TEXT">
+			<Text>보잉 AH-64 아파치는 꼬리날개형 랜딩기어 배열과 2인 승무원을 위한 탠덤 조종석을 갖춘 4날 쌍발 엔진 공격 헬리콥터입니다. 표적 획득 및 야간 투시 시스템을 위한 노즈 마운트 센서 제품군이 특징입니다. 기체 전방 동체 아래 메인 랜딩 기어 사이에 장착된 30mm(1.18인치) M230 체인 건으로 무장합니다. 그것은 일반적으로 AGM-114 헬파이어 미사일과 히드라 70 로켓 포드의 혼합을 운반하는 스터브 윙 파일론에 장착된 4개의 하드 포인트를 가지고 있습니다. AH-64는 전투 생존성을 향상시키기 위해 많은 양의 시스템 중복성을 가지고 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER">
+			<Text>바이오 순양함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_HELP">
+			<Text>미래 시대의 마지막 강력한 원거리 해상 유닛입니다. 매 턴 체력을 회복하며 이동할 수 있습니다. 미사일 4개를 포함합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_TEXT">
+			<Text>첨단 생물기술과 유전자 연구의 새로운 시대에서, 해군의 순양함은 혁명적인 변화를 겪었습니다. 유전자 가속에 대한 돌파구와 광범위한 해양 및 해양생물에 대한 연구에서 얻은 지식을 활용하여, 해군은 선박의 선체에 대한 변화를 추진하게 되었습니다. 이러한 변화는 기존에 사용되던 방식과는 크게 달라, 이제 선박은 매우 빠르게 이동하고 복구하는 능력을 갖게 되었습니다. 이 변화의 핵심은 기체가 자동으로 회복하는 시스템입니다. 이 시스템은 생물학적 회복 시스템의 알고리즘을 채택하여, 손상된 선체를 빠르게 수리할 수 있게 해줍니다. 이 기술은 하이브리드 드론에 대한 연구의 결과물로, 기체의 회복 능력을 극대화하고, 훨씬 더 긴 선박 수명을 보장할 수 있습니다. 선박의 기본 구조는 여전히 기존에 사용되던 방식을 따르지만, 이런 혁신적인 기술은 더욱 효과적인 방식으로 선박을 운용할 수 있게 해주었습니다. 그들은 여전히 레이더와 총을 장착하고 바다 어디든지 이동할 수 있지만, 이제는 훨씬 더 큰 무기와 더 두꺼운 방어구를 탑재할 수 있는 기회를 얻게 되었습니다. 해양 생물에 대한 첨단 연구 덕분에, 이제는 포식자로부터 보호받거나, 심해에서 효과적으로 작업을 수행하거나, 심지어는 적대적인 환경에서도 생존할 수 있는 능력을 가진 선박을 개발할 수 있게 되었습니다. 이 혁신은 인류에게 바다에서의 생활을 재구성하는 새로운 방법을 제공했습니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_CRUISER_STRATEGY">
+			<Text>바다를 지배하여 문명의 강력함을 적에게 알려주십시오. 뛰어난 생존력으로 바다에서의 강력함을 적에게 보여줍시다!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER">
+			<Text>바이오 구축함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_HELP">
+			<Text>미래 시대의 마지막 강력한 근접 해상 유닛입니다. 매 턴 체력을 회복하며, 멀리서도 잠수함을 볼 수 있습니다. 이동이 가능합니다. 미사일 4개를 포함합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_TEXT">
+			<Text>첨단 생물기술과 유전자 연구의 새로운 시대에 도래한 해군의 구축함은 전례 없는 변화를 겪었습니다. 유전자 가속에 대한 돌파구와 해양 및 해양생물에 대한 포괄적인 연구에서 얻은 지식을 활용하여, 해군은 구축함의 선체 변화를 추진했습니다. 이 변화의 결과로, 구축함은 이제 더욱 빠르게 이동하고 복구할 수 있는 능력을 갖게 되었습니다. 해양 생물에 대한 첨단 연구는 선체 디자인과 방어 시스템에 혁신적인 변화를 가져왔습니다. 이제는 해양의 가장 깊은 곳에 숨어있는 잠수함을 탐지하거나, 해상에서의 위력을 과시하거나, 심지어는 도시를 공략하는 데 필요한 능력을 가진 구축함을 개발할 수 있게 되었습니다. 이 혁신은 인류에게 바다에서의 전술적 우위를 확보하는 새로운 방법을 제공했습니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_BIO_DESTROYER_STRATEGY">
+			<Text>매우 강력하고 값비싼 해상 근접 유닛으로, 멀리서 잠수함을 추적하고 모든 공중 위협에 효과적으로 대처할 수 있습니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER">
+			<Text>레일건 구축함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_HELP">
+			<Text>미래 시대의 강력한 근접 해상 유닛입니다. 멀리서도 잠수함을 볼 수 있습니다. 미사일 4개를 포함합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_TEXT">
+			<Text>레일건 구축함은 현대의 첨단 과학 기술이 접목된 최신형 해군 선박입니다. 이 구축함은 전통적인 발사체 무기를 대체한 레일건, 즉 전자기파를 이용한 고속 발사 무기를 주력 무기로 장착하고 있습니다. 레일건은 초고속으로 발사체를 쏘아내어 대상을 파괴하는 무기로, 광속에 가까운 속도와 엄청난 에너지를 통해 엄청난 파괴력을 자랑합니다. 구축함은 원래 수면하의 위협물, 특히 잠수함을 탐지하고 제거하는 역할을 했었습니다. 그러나 레일건 구축함은 이런 기능을 넘어서 더욱 강력한 공격 능력과 방어 능력을 갖게 되었습니다. 레일건의 특성상 대기를 통한 저항이 없으므로 그 탄도가 놀라울 만큼 정확하며, 타깃에 도달하는 속도가 매우 빨라 적의 대응 시간을 크게 줄입니다. 이러한 능력은 다양한 무기와 센서들로 무장한 현대의 해군 전투에서 매우 중요합니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_DESTROYER_STRATEGY">
+			<Text>매우 강력하고 값비싼 해상 근접 유닛으로, 멀리서 잠수함을 추적하고 모든 공중 위협에 효과적으로 대처할 수 있습니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER">
+			<Text>레일건 순양함</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_HELP">
+			<Text>미래 시대의 강력한 원거리 해상 유닛입니다. 미사일 4개를 포함합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_TEXT">
+			<Text>레일건 순양함은 더 큰 플랫폼을 가진 레일건 무기 시스템을 탑재한 해군의 주력 전투 선박입니다. 이 순양함은 레일건 구축함보다 더 크고 강력한 레일건을 갖추고 있어, 더 멀리, 더 정확하게, 그리고 더 파괴적으로 공격할 수 있습니다. 순양함의 역할은 공격력과 방어력을 균형있게 갖추고, 다양한 미션을 수행하는 것입니다. 레일건 순양함은 이런 요구사항을 충족시키면서도, 그 놀라운 레일건 무기로 인해 상대적으로 강력한 화력을 갖게 되었습니다. 레일건의 고속과 고에너지 특성 덕분에, 이 순양함은 해상에서의 우위를 확보하고, 도시를 포위하거나 공격하는 데 효과적입니다. 전자기파 과학과 공학의 최첨단 기술을 활용하여 성능을 높였습니다. 이들은 현대 해군의 힘을 보여주는 좋은 예시이며, 그들의 강력한 레일건은 바다 위에서도 강력한 위력을 보여줍니다.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_CRUISER_STRATEGY">
+			<Text>바다를 지배하여 문명의 강력함을 적에게 알려주십시오. 뛰어난 생존력으로 바다에서의 강력함을 적에게 보여줍시다!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER">
+			<Text>플라즈마 폭격기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_TEXT">
+			<Text>지상 목표를 대상으로 하는 막강한 공격력을 가지고 있습니다. 플라즈마 폭격기는 플라즈마 에너지를 활용하는 엔진과 함께 초전도체 기술을 사용하여 플라즈마 미사일을 개발하였습니다. 이 미사일은 고에너지 상태의 플라즈마를 이용하여 엄청난 파괴력을 발휘하며, 폭격기가 안전한 고도에서 목표를 정확하게 공격할 수 있도록 합니다. 또한, 스텔스 기능은 이 폭격기가 적의 방어망을 피하면서 목표 지점에 접근할 수 있게 해줍니다. 이런 기능을 통해 최고의 정밀 공격 능력을 가진 폭격기로 자리매김하게 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_STRATEGY">
+			<Text>넥서스와 헬리캐리어로만 옮길 수 있는 플라즈마 고출력 엔진을 적용한 폭격기입니다. 적의 방공 시설을 피해 도시와 유닛을 공략하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_BOMBER_HELP">
+			<Text>넥서스와 헬리캐리어로만 옮길 수 있는 플라즈마 고출력 엔진을 적용한 폭격기입니다. 나노물질이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER">
+			<Text>플라즈마 전투기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_TEXT">
+			<Text>고도의 스텔스 기술과 초전도체를 활용한 강력한 플라즈마 엔진 추진력을 결합한, 현대 전투공간에서 핵심적인 역할을 하는 전투기입니다. 고유의 플라즈마 엔진은 대기 중의 이온화된 입자를 사용하여 엄청난 추진력을 발생시키며, 이는 플라즈마전투기가 빠르고 유연하게 움직이면서도 상대적으로 적은 에너지를 소비하도록 해줍니다. 또한, 이러한 엔진은 전투기가 적의 탐지를 피하면서 높은 고도에서 비행하도록 해줍니다. 이 전투기의 무기로는 초전도체를 활용한 레일건이 탑재되어 있어, 대량의 플라즈마를 고속으로 발사하여 대기권 내외에서 강력한 공격을 가할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_STRATEGY">
+			<Text>넥서스와 헬리캐리어로만 옮길 수 있는 플라즈마 고출력 엔진을 적용한 전투기입니다. 적의 방공 시설을 피해 도시와 유닛을 공략하고 적의 공습으로부터 도시와 헬리캐리어를 방어하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_PLASMA_FIGHTER_HELP">
+			<Text>넥서스와 헬리캐리어로만 옮길 수 있는 플라즈마 고출력 엔진을 적용한 전투기입니다. 나노물질이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER">
+			<Text>헬리캐리어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_TEXT">
+			<Text>헬리캐리어는 고도의 기술과 신기술의 결합으로 탄생한 공중 유닛입니다. 이는 항공모함의 기능을 대체하고, 이를 훨씬 넘어선 유연성과 기동성을 제공하는 혁신적인 전투 및 지원 플랫폼입니다. 첨단 우주선 엔진을 개발하는 도중에 지속적으로 공중에 부양한 기술을 얻게 되었고, 엄청 빠르지는 않지만 준수하게 움직일 수 있는 이 헬리캐리어는 기존의 어떤 항공 유닛의 단점을 보완하고 유연하게 작전을 수행할 수 있게 해줍니다. 이는 거의 모든 종류의 기상 조건과 환경에서 작동하도록 설계되었으며, 어떤 지역에서든 공중 지원을 제공할 수 있습니다. 헬리캐리어는 각종 전투 및 지원 임무를 수행하는 데 필요한 다양한 장비와 시스템을 갖추고 있습니다. 고속 전투기, 전투 헬리콥터, 무인 항공기 등 다양한 공중 유닛을 운용할 수 있으며, 고강도 레이저 및 미사일 시스템 등 강력한 무기를 통해 대기상의 위협에 대응할 수 있습니다. 또한, 헬리캐리어는 복잡한 센서와 통신 장비를 통해 전장에서의 정보 수집 및 분석, 그리고 신속한 명령 전달을 가능하게 합니다. 이를 통해 헬리캐리어는 공중에서의 감시, 통신, 지휘, 제어, 인텔리전스 기능을 모두 수행하며, 그 결과로 전술적인 우위를 취하는 데 결정적인 역할을 합니다. 전반적으로 헬리캐리어는 그 혁신적인 디자인과 기능을 통해 전투 지원의 새로운 기준을 제시하며, 그 경계를 끊임없이 확장하고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_STRATEGY">
+			<Text>헬리캐리어는 지상으로 호버링이 가능한 미래형 지원 유닛입니다. 문명 내에 헬리캐리어를 4개 이상 소유할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FW_HELICARRIER_HELP">
+			<Text>미래 시대의 보조형 유닛으로 지상으로 호버링이 가능하며, 기본 6대의 항공기가 탑재가능합니다. 문명당 4개로 제한됩니다.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_UNIT_ADVANCED_MEC_INFANTRY">
+			<Text>첨단 기계화 보병</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ADVANCED_MEC_INFANTRY">
+			<Text>믿을 수 없을 정도로 빠르고 강력한 이 후반 게임 유닛은 건설에 알루미늄이 필요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ADVANCED_MEC_INFANTRY_STRATEGY">
+			<Text>첨단 기계화 보병은 기계화 보병보다 더 강하고 빠릅니다. 빠른 것 외에도 첨단 기계화 보병은 현대 기갑처럼 전투 후 이동하며, 행동을 취해도 치유할 수 있습니다. 보병과 기갑 차량의 혼합입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_UNITS_ADVANCED_MEC_INFANTRY_TEXT">
+			<Text>강화 외골격(파워 아머, 강화 갑옷, 강화 슈트, 사이버네틱 슈트, 사이버네틱 아머, 엑소슈트, 하드슈트, 엑소프레임 또는 증강 기동성이라고도 함)은 주로 사람이 착용하는 외골격과 같은 프레임워크와 팔다리 움직임을 위한 활성화 에너지의 적어도 일부를 공급하는 전원 공급 장치로 구성된 동력 이동 기계입니다. [NEWLINE] [NEWLINE]이러한 묘사는 착용자의 능력을 증강시키기 위해 설계된 기계적 및 전자적 메커니즘을 가진 전투복으로 설명될 수 있습니다. 다른 파워 아머는 탱크 크기 또는 훨씬 더 큰 이족 보행 차량처럼 훨씬 더 크게 묘사됩니다. 메카와 파워 아머 사이의 경계는 필연적으로 모호합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_TITLE">
+			<Text>분산 컴퓨팅</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING">
+			<Text>분산 컴퓨팅</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_DESC">
+			<Text>컴퓨팅 시스템의 발전으로 인해 점점 더 광범위한 컴퓨터 네트워크에 배포되었습니다. 병렬 처리를 통해 다양한 계산을 동시에 수행할 수 있으므로 계산을 더 빠르게 수행할 수 있으며, 분산 컴퓨터 네트워크는 더 이상 단일 시스템에 국한되지 않으므로 기계적 오류에 대해 보다 유연하고 탄력적인 시스템을 생성합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]버톨[ENDCOLOR], 호버링 군사 유닛, [COLOR_POSITIVE_TEXT]아스널쉽[ENDCOLOR], 미래형 원거리 해군 유닛, 그리고 [ICON_RESEARCH]과학을 증가시키는 [COLOR_POSITIVE_TEXT]연구 서버[ENDCOLOR]와 [ICON_PRODUCTION]생산을 증가시키는 [COLOR_POSITIVE_TEXT]자동생산시설[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GRID_COMPUTING_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"갑자기 우리는 많은 통제권을 잃었습니다. 인터넷을 끌 수 없습니다. 스마트폰을 끌 수 없습니다. 컴퓨터를 끌 수 없습니다." -- 스티브 워즈니악[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_TITLE">
+			<Text>환경주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM">
+			<Text>환경주의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_DESC">
+			<Text>생태계와 그 작동 방식에 대한 인식이 높아짐에 따라, 인간 활동이 생태계에 미치는 영향에 대한 우려도 커졌습니다. 환경주의는 환경 보호와 환경의 건강을 강조하는 광범위한 사회 운동입니다. 그것은 자연 환경의 합법적인 보존, 복원 및 개선을 옹호하며, 일반적으로 오염을 통제하고 자연의 다양성을 장려하려고 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_HELP">
+			<Text>[ICON_PRODUCTION]생산을 증가시키는 [COLOR_POSITIVE_TEXT]지열 발전소[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]조력 발전소[ENDCOLOR]를 건설할 수 있습니다. 또한 노동자가 [ICON_CULTURE]문화와 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]자연보호구역[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENVIRONMENTALISM_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"우리는 우리에게 좋은 것이 세상에도 좋을 것이라는 가정 하에 살아왔습니다. 우리는 틀렸습니다. 우리는 세상에 좋은 것이 우리에게도 좋을 것이라는 반대의 가정 하에 살 수 있도록 삶을 바꿔야 합니다. 그리고 그것은 우리가 세상을 알고 세상에 좋은 것이 무엇인지 배우기 위해 노력해야 한다는 것을 요구합니다." -- 웬델 베리[NEWLINE][TAB]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TECH_FW_AUGMENTED_REALITY_TITLE">
+			<Text>증강 현실</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUGMENTED_REALITY">
+			<Text>증강 현실</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_TITLE">
+			<Text>초전도-플라즈마 에너지 역학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY">
+			<Text>초전도-플라즈마 에너지 역학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_DESC">
+			<Text>초전도-플라즈마 에너지역학은 초전도 기술과 플라즈마 기술의 결합을 통해 이루어진 혁신적인 학문 분야입니다. 이 분야의 연구는 강력한 자기장을 생성하고, 이를 이용하여 플라즈마를 제어하는 기술을 개발하였습니다. 이 학문 분야는 우리의 에너지 생산 방식에 혁신을 가져왔습니다. 초전도-플라즈마 에너지역학을 이용하면 핵융합 반응을 안정적으로 제어할 수 있게 되었는데, 이는 안전하고 효율적인 에너지를 제공하는 강력한 수단이 될 수 있습니다. 이를 통해 플라즈마를 제어하고 높은 에너지 상태를 유지할 수 있게 되어, 효율적인 핵융합 에너지 생성이 가능하게 되었습니다. 또한, 이 기술은 고속 전자장 비행체의 연구와 개발에도 쓰였습니다. 이는 고도의 에너지 효율성과 높은 전력 출력을 가능하게 하여, 이전보다 더 빠른 우주선을 만드는 데 사용되었습니다. 마지막으로, 초전도-플라즈마 에너지역학의 기술은 무기 체계에도 영향을 미쳤습니다. 플라즈마를 이용한 무기는 강력한 파괴력을 가지고 있으며, 이는 군사 전략에 큰 변화를 가져왔습니다. 초전도-플라즈마 에너지역학은 미래의 기술 발전에 중추적인 역할을 할 것으로 예상되며, 이는 우리의 삶을 여러 가지 방면에서 크게 바꿀 것으로 기대됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_HELP">
+			<Text>도시를 공략하는데 도움을 주는 보행형 자주포와 자기부상 열차가 가능하여 초고속 철도를 도시에 건설할 수 있습니다. 플라즈마 폭격기와 전투기를 양산할 수 있습니다. 또한, 양자역학적인 부분이 개선되어 우주 정거장 내에서도 다양한 모듈로 발전시킬 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCONDUCTIVITY_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"물리학은 예언이 정확할 뿐만 아니라 일상적인 일을 하는 유일한 직업입니다."[NEWLINE][TAB][TAB] - 닐 디그래스 타이슨[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_TITLE">
+			<Text>우주 개발</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_DESC">
+			<Text>세계의 각 정부는 여전히 우주 탐사에 투자할 수 있는 가장 많은 자원을 가지고 있지만, 상업 기업은 우주에 대한 사유화된 접근 기회에 점점 더 관심을 갖게 되었습니다. 어느 쪽이든 궤도 개발은 점점 더 복잡해지는 궤도 통신 네트워크를 촉진하고 유지하는 데 도움이 될 뿐만 아니라, 연구 및 산업 생산 모두에 기회를 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_HELP">
+			<Text>우주선 공장과 우주선 발사시설을 건설하여 우주 개발을 할 수 있습니다. 관련 연구를 통해서 배틀 슈트라는 방어형 지상 유닛을 생산할 수 있습니다. 외부환경에 적응하기 위해 대체육 공장에 대한 기술도 발전하였습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORBITAL_DEV_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"달 및 기타 천체를 포함한 우주 공간의 탐사 및 사용은 경제 또는 과학 발전 정도에 관계없이 모든 국가의 이익과 이익을 위해 수행되어야 하며, 모든 인류의 영역이 될 것입니다."[NEWLINE][TAB][TAB] - 달 및 기타 천체를 포함한 우주 공간의 탐사 및 사용에 관한 국가 활동을 규율하는 원칙에 관한 조약 제1조[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_TITLE">
+			<Text>환경 우생학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_DESC">
+			<Text>적절한 공급과 환경을 통해 인간, 동물, 식물의 최적의 생활 조건을 확립하는 것과 관련된 과학입니다. 만약 파시즘이 당신의 이념이라면, 우생학은 특정 집단 구성원에게 유리하도록 인간 집단의 유전적 품질을 개선하여 개인적 특성을 강화할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_HELP">
+			<Text>AND 균을 사용하여 클론 트루퍼와 친환경 마을을 건설할 수 있습니다. ADN 균을 활용하는 균류 농업 실험실과 바다 생산량을 늘리는 건물을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_EUTHENICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"사람들은 사지마비 환자인 제 친구 메리에게 "네겐 아직 정신이 남아있구나."라고 말하곤 했어요. 그러자 메리는 "난 아직 몸이 남아있단다."라고 말했죠. 세상은 제 육체와 결별하고 머릿속에 살라고 해요... 저는 육체 없는 사람이 되고 싶지 않아요."[NEWLINE][TAB][TAB] - 앤 핑거[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_TITLE">
+			<Text>유기화합물</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_DESC">
+			<Text>유전자 조작 방법이 점점 더 정교해짐에 따라, 유전학을 사용하여 더욱 효과적인 장기와 유기 성분을 생산할 가능성이 커지고 있습니다. 인간 게놈을 대규모로 조작하면 더 효과적인 결과를 얻을 수 있지만, 작업의 복잡성으로 인해 나머지 숙주 신체가 심각한 문제를 겪더라도 특정 기준에 맞춰 유기 구성 요소를 조작하는 데 집중하기가 더 쉽습니다. 이런 조작된 숙주 신체를 이용해 증강된 장기를 배양하는 것에 대한 윤리적 우려가 있기는 하지만, 근로자의 생산성과 효율성을 높이거나 전장에서 더욱 강력한 군인을 만드는 데 있어 이런 숙주 신체가 점점 더 가치 있고 유용하다는 것이 증명되고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_HELP">
+			<Text>강화된 신체 보병과 하이브리드 드론을 제작할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ORGANICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"생명은 본질적으로 가치가 하락하는 자산입니다."[NEWLINE][TAB][TAB] - 수잔 마저리 필딩, 원거리 행성의 관리, 방식, 자원[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_TITLE">
+			<Text>기전 공학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_DESC">
+			<Text>21세기 초기에 개발된 기전 공학은 전기 및 컴퓨터 공학, 통신, 기계 설계에서의 통제 시스템의 시너지적 혼합에 이르기까지 여러 학계를 넘나들고 있습니다. 콜로니 과학자들이 이룬 인공 두뇌학과 결합하여 ‘깡통’ 기계로부터 선진 자동화를 이루게 합니다. 비용이 저렴한 관리체계를 자유롭게 반복적인 형태로 프로그램화한 기전공학은 기본 소비 물자를 효율적으로 자동 생산하는 시스템을 경제적으로 활용할 수 있게 하였습니다. 정교한 가동부 없이도 가구, 의류 및 수공구를 포함해 어떤 분야에서도 인간 노동력을 최소화하여 대량 생산을 가능하게 합니다. 기전 공학의 파생적 한 부분으로 인간 생체를 기계 부품과 결합하고자 생체공학 분야도 있습니다. 이는 보통 제거 가능한 전동 근전성 또는 외골격계와 같은 탈착이 가능한 형태로 이뤄져 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_HELP">
+			<Text>기전 공학은 모바일 및 탄도 LEV 장치를 포함하여 원격으로 작동되는 기계 및 로봇의 개발을 가능하게 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MECHATRONICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"우리 인간이 장인의 솜씨를 잃지 않는 한 기계는 결국 숙련된 기계 도제로 남을 것입니다."[NEWLINE][TAB][TAB] -후타마, 우리 모두는 번영할 것입니다[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_TITLE">
+			<Text>친환경 동력 장치</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_DESC">
+			<Text>원유를 그대로 태우는 전기발전기에서 초대형 '태양광 스쿠프'에 이르기까지, 옛 지구에서 에너지를 생산하는 방식은 점점 줄어가는 자원과의 사투였습니다. 이 행성에서는 기존의 것이든 앞으로 개발할 수 있는 것이든 자원이 풍부하기 때문에 , 점점 성장하는 콜로니에 에너지를 생산하여 공급하는 자체는 큰 문제가 되지 않았습니다. 콜로니 첫 세대의 공학자들에게 자원을 뽑아내어 활용하는 것과 혁신적인 발전소와 에너지 수송 시스템을 만드는 것은 단지 시간문제일 뿐이었습니다. 콜로니의 인류는 다양한 방법을 활용하는 것이 낯선 행성에서 살아남는 법이라는 것을 입증해 보였습니다. 옛 지구에서 에너지 위기로 고통을 겪었던 사실을 상기해 보면, 오늘날에도 환경 보전과 지속력이 강한 동력 장치를 만드는 연구는 여전히 가장 중요하다고 할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_HELP">
+			<Text>밀 자원에서 석유를 추출할 수 있습니다. 도시, 산업 단지, 첨단 에너지 연구 단지를 강화하기 위해 발전기를 건설하세요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_POWER_SYSTEMS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"인공 동력원이 필요하다는 것은 근거 없는 소리입니다. 생태계는 스스로 동력을 공급합니다. 인류가 주변 환경과 조화롭게 살아가는 법을 배운다면 동력 역시 주변 환경에서 얻을 수 있습니다."[NEWLINE][TAB][TAB] - 다오밍 소추아, 과학 도덕 제12권[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_TITLE">
+			<Text>우주역학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_DESC">
+			<Text>우주역학을 궤도 비행과 항성간 지도작성과 관련된 실용적인 사안에 적용하는 문제는 콜로니를 위한 연구 중에서도 가장 필수적인 주제가 되었습니다. 이주단이 우주로 귀환하는 문제를 고려했을 때, 우주역학자들은 뉴턴과 케플러의 고대 법칙을 기반으로 자유 궤도, 원궤도, 타원 궤도, 포물선 궤도, 쌍곡선 궤도라는 불변의 공식에 의존했습니다. 그러나 설계 및 에너지원이 발전하면서, 또한 이 행성의 질량과 회전주기가 지구와는 다르기 때문에, 속도와 궤도 주기를 상대적으로 늘리고 줄이는 것이 가능해졌습니다. 얼마 안 가 이 행성의 하늘에는 온갖 종류의 인공위성이 떠다니게 되었습니다. 이로 인해 여러 개척지의 시민들 사이에서 가까운 우주의 '지리'를 알고 싶다는 호기심이 붐을 이루었고, 그 결과 수많은 천문관이 새로이 지어졌습니다. 또한 우주 공간에서 인간이 각종 탐사를 수행하는 것이 자신의 생전에 가능할 것이라고 생각하는 사람들이 많아지면서, 우주에 대한 연구 지원금도 부쩍 늘어났습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_HELP">
+			<Text>천체역학은 우주 항해를 가능하게 합니다. "우주 감시 네트워크"</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ASTRODYNAMICS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"우리가 별들 사이를 거닐면서도 여전히 경외감을 갖는다는 것, 그 사실에서 나는 언제나 아름다움을 발견합니다."[NEWLINE][TAB][TAB] - 사마타르 자마 바르, 이것은 유배가 아니다[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_TITLE">
+			<Text>인공 장기 이식</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS">
+			<Text>인공 장기 이식</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_DESC">
+			<Text>임플란트는 살아있는 조직에 이식되거나 접합되는 인공 장치입니다. 다양한 유형과 효과가 있으며, 대부분 돌연변이처럼 작동하지만 숙주의 몸에 외과적으로 이식해야 하는 인공물입니다. 이러한 임플란트 사용에 대한 윤리적 우려가 있지만, 노동자의 생산성과 효율성을 향상시키거나 전장에서 더 강력한 군인을 만드는 데 있어 점점 더 가치 있고 유용하다는 것이 입증되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_HELP">
+			<Text>인공 장기 이식으로 빠른 보행이 가능하고, 신체 재생 능력이 뛰어난 생체 강화 보병을 생산할 수 있으며, 외부 적에게 눈에 띄지 않는 뮤턴트 외교관을 생산 할 수 있습니다. 그리고 임플란트 시술소를 건설하여 지상유닛을 강화할 수 있습니다. 에이팩스 센터를 설치하면 스파이의 능력이 강화되며, 위대한 외교관을 얻을 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_IMPLANTS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"그가 모든 자 곧 작은 자나 큰 자나 부자나 가난한 자나 자유인이나 종으로 그 오른손에나 이마에 표를 받게 하사 아무도 매매를 못하게 하시니, 표나 짐승의 이름이나 그 이름의 수를 가진 자를 제외하고."[NEWLINE][TAB][TAB] - 요한계시록, 성경[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_TITLE">
+			<Text>신경 인터페이스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE">
+			<Text>신경 인터페이스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_DESC">
+			<Text>기계가 점점 더 정교해짐에 따라, 기계와 상호 작용하는 데 필요한 인터페이스도 정교해졌습니다. 신체의 연장선인 생각으로 기계를 제어할 수 있다는 것은 기계의 도움으로 복잡한 작업을 훨씬 더 간단하게 수행할 수 있게 해주는 놀라운 성과일 것입니다. 그러나 뇌는 그 자체로 매우 복잡한 기관이며, 직접적인 인터페이스를 달성하는 것은 상당한 도전입니다. 그러나 컴퓨터와 다른 기술 장치 및 인간의 신경 사이의 연결을 구축하여 기술 장치의 운동 제어와 감각 입력을 모두 허용하는 데 진전이 이루어지고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_HELP">
+			<Text>가장 진보된 잠수함 유닛인 [COLOR_POSITIVE_TEXT]사이버 잠수함[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NEURAL_INTERFACE_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"사진은 천 마디 말보다 가치가 있습니다. 인터페이스는 천 장의 사진보다 가치가 있습니다."[NEWLINE][TAB][TAB] - 벤 슈나이더만[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_TITLE">
+			<Text>인지 공학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH">
+			<Text>인지 공학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_DESC">
+			<Text>점점 더 작은 규모의 장치를 생산하는 능력이 발전함에 따라, 컴퓨터 시스템을 거의 모든 항목이나 재료에 통합할 수 있는 능력도 생겼고, 네트워크 컴퓨팅의 발달로 가전 제품이나 기타 물체를 점점 더 "스마트"하게 만들 수 있게 되었습니다. 예를 들어 스마트 홈은 다양한 방의 활동을 모니터링하고 필요에 따라 조명이나 온도를 조정하여 전력을 절약할 수 있습니다. 스마트 기기는 사용량을 모니터링하고 필요에 따라 새로운 음식이나 기타 공급품을 주문할 시기를 결정할 수도 있습니다. 더욱이, 함께 작동하는 단순한 "스마트" 시스템도 점점 더 지능적인 창발적 행동을 나타낼 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_HELP">
+			<Text>자동화 시스템과 인지공학이 만나서 공격형 로봇과 아스널쉽을 생산 할 수 있습니다. 네트워크 중심지를 설치하여 도시간 서브 연결을 강화할 수 있습니다. 버추얼 아이돌 세계 불가사의를 건설 할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COGNITIVE_TECH_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"디지털 행동은 인간 행동의 복제일 뿐입니다."[NEWLINE][TAB][TAB] - 폴 파파디미트리우[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_TITLE">
+			<Text>희귀자원 탐사</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_DESC">
+			<Text>희귀자원 탐사를 통해 얻은 것에서 추출한 나노 물질의 개발은 새로운 물질과 구조를 생성하기 위해 분자 및 원자 수준에서 물질을 조작하는 것이 가능하다는 것을 보여주었습니다. 진정한 나노기술을 찾는 다음 과제는 이 정도 규모의 실제 작동 구성 요소(전원, 모터 및 기타 기계 부품)를 생산하여 나노 규모의 기계가 작업을 수행할 수 있도록 하는 것입니다. 나노 수준에서 분자를 조작할 수 있도록 점점 더 정교한 도구가 고안되어, 정교하고 미래 지향적인 재료를 훨씬 더 일반적이고 사용 가능하게 만듭니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_HELP">
+			<Text>깊은 바닷 속 채굴 및 지구 탐사를 가능하게 되어 많은 도시의 생산과 바다에서 나노물질을 채굴할 수 있습니다. 언덕과 산의 광물 탐사도 가능하여 도시의 산출량을 증가시킬 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_QUANTUM_COMPUTERS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"무한과 불가분은 우리의 유한한 이해를 초월합니다. 전자는 크기 때문에, 후자는 작기 때문에 결합할 때 어떤지 상상해 보십시오."[NEWLINE][TAB][TAB] - 갈릴레오 갈릴레이[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_TITLE">
+			<Text>설계된 생명체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING">
+			<Text>설계된 생명체</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_DESC">
+			<Text>인간 게놈의 유전적 변형이 인간 증강에 가장 유망한 반면, 인간 게놈은 수백만 년의 진화의 산물이기 때문에 매우 복잡한 노력입니다. 더 간단한 작업은 식물과 동물에서 발견되는 것과 같은 훨씬 단순한 게놈을 취하여 이를 보다 과감하게 수정하거나 완전히 새로운 게놈을 생성하는 것입니다. 시간이 지나면서 유전자 조작 실험은 완전히 새로운 유기체를 만들고 조작할 수 있는 능력으로 이어져, "유전자 엔지니어링"이라는 용어의 합성어인 "유전자 공학"이라는 용어로 이어집니다. 특정 생태적 틈새 및 기타 역할을 채우기 위해 살아있는 유기체를 조작하는 능력을 통해, 특정 요구 또는 욕구를 충족시키기 위해 환경을 조작하는 것이 점점 더 가능해집니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]키메라[ENDCOLOR], 유전적으로 조작된 전투 유닛, 그리고 돌연변이와 키메라의 생산을 증가시키고 새로 생성된 유닛에 고유한 승급을 제공하는 [COLOR_POSITIVE_TEXT]바이오생명체 생산시설[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GENGINEERING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"모든 것이 변한다는 사실을 깨닫는다면 붙잡고 싶은 것이 아무것도 없을 것입니다. 죽음을 두려워하지 않는다면 이루지 못할 것이 없습니다."[NEWLINE][TAB][TAB] - 노자, 도덕경[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_TITLE">
+			<Text>생체 변형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_DESC">
+			<Text>유전자 엔지니어링(gengineering)이라는 용어가 유전자 조작을 통해 완전히 새로운 유기체를 만드는 것을 의미한다면, 생체변형(biomodification)은 기존 유기체를 취하여 다양한 방식으로 능력을 향상시키기 위해 변형하는 것을 의미합니다. 특히, 인간 게놈의 수정은 전투에서의 강도와 내구성, 위험한 환경에서 작업할 수 있는 능력 등 다양한 요구를 충족할 수 있는 증강된 형태에 개인을 적응시킬 수 있습니다. 생체 개조가 점점 더 널리 퍼지면서, "인간"을 구성하는 정의가 흐려지기 시작하지만 인간이 살고 일할 수 있는 환경이 더 많아집니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_HELP">
+			<Text>가장 강력한 유전 공학 보병인 [COLOR_POSITIVE_TEXT]바이오트루퍼[ENDCOLOR]와 돌연변이 및 키메라의 생산을 증가시키고 새로 생성된 유닛에 고유한 승급을 제공하는 [COLOR_POSITIVE_TEXT]바이오강화 센터[ENDCOLOR], 그리고 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드를 증가시키는 [COLOR_POSITIVE_TEXT]유전자조작 시설[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_BIOMODIFICATION_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"인간으로서 우리의 유일한 가치 척도는 존재의 고통을 줄이는 데 기반을 둔 척도입니다."[NEWLINE][TAB][TAB] - H.P. 러브크래프트[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_TITLE">
+			<Text>인공 환경</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_DESC">
+			<Text>우주 공간의 유인 탐사 및 거주는 가능한 가장 적대적인 환경 중 하나에서 인간을 유지하는 데 사용할 수 있는 기술의 상당한 발전이 필요합니다. 특히 숨 쉴 수 있는 공기와 마실 수 있는 물, 음식을 제공할 수 있는 자급자족 환경이 필요할 것이다. 그러나 이러한 기술은 우주 여행에만 적용되는 것은 아닙니다. 지하, 건조 지역 또는 바다 아래에 자족적인 환경을 조성하여 인간이 거주할 수 있는 공간의 양을 크게 늘릴 수 있기 때문입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_HELP">
+			<Text>[ICON_FOOD]식량 산출량을 늘리기 위해 [COLOR_POSITIVE_TEXT]수직 농장[ENDCOLOR]과 [COLOR_POSITIVE_TEXT]수경재배지구[ENDCOLOR]를 건설하고, 도시 방어를 향상시키기 위해 [COLOR_POSITIVE_TEXT]지오프론트[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"인공적인 인간 환경이 될수록 '자연'이라는 단어는 가치를 나타내는 용어가 됩니다."[NEWLINE][TAB][TAB] - 웬델 베리[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_TITLE">
+			<Text>우주 궤도 생산</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_DESC">
+			<Text>우주궤도생산은 지구 궤도에서 이루어지는 다양한 생물학적 및 비생물학적 원재료의 배양, 정제, 제조, 및 생산을 포괄하는 개념이다. 이는 과학적 연구와 상업적 우주산업의 범위를 넘나들며, 우주 환경에서의 생산 시스템에 대한 광범위한 적용 가능성을 제시한다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_HELP">
+			<Text>게임 후반부에 강력한 정찰 유닛인 X-COM을 생산할 수 있습니다. 또한 생산 및 나노물질을 제공하는 우주궤도 정제소와 우주궤도 식량재배시설을 만들 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ADAMANTIUM_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"아다만티움의 까다로운 점은, 만약 당신이 그 원료인 액체 형태를 처리하게 된다면, 그것을 그대로 유지하고 뜨겁게 유지해야 한다는 것입니다. 왜냐하면 금속이 식으면 파괴할 수 없기 때문입니다."[NEWLINE][TAB][TAB] - 엑스맨[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_TITLE">
+			<Text>생태건축학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_DESC">
+			<Text>'아콜로지'라는 용어는 '건축'과 '생태'라는 단어의 합성어이며, 인구 밀도가 매우 높은 서식지에 대한 건축 설계 원칙의 비전입니다. 생태학은 주어진 생태계에 대한 인간 거주의 영향을 줄이도록 설계되었다는 점에서 단순히 큰 건물과 구별됩니다. 고고학적 삶에 적응하려면 검소함과 공유된 사회적 자원에 대한 강조가 증가하고 개인 공간이 줄어들면서 사회적 및 문화적 적응이 필요할 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_HELP">
+			<Text>도시의 공중 수용량을 증가시키는 [COLOR_POSITIVE_TEXT]항공우주 복합시설[ENDCOLOR], [ICON_FOOD]식량을 증가시키는 [COLOR_POSITIVE_TEXT]우주궤도 식량재배시설[ENDCOLOR], 그리고 제국 전역의 정보 허브, 유통 허브, 복합도시 허브를 개선하는 [COLOR_POSITIVE_TEXT]중앙 통제 센터[ENDCOLOR]를 건설할 수 있습니다. 또한 노동자가 [ICON_FOOD]식량과 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]완전환경도시[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ARCOLOGIES_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"건축은 인간 생태계의 물리적 형태이며, 최고의 에너지와 의도적인 흐름을 허용하는 물질의 구성입니다."[NEWLINE][TAB][TAB] - 파올로 솔레리[NEWLINE][TAB]</Text>
+		</Row>
+			
+		<Row Tag="TXT_KEY_TECH_FW_AI_TITLE">
+			<Text>인공지능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI">
+			<Text>인공지능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_DESC">
+			<Text>인공 지능은 기계와 소프트웨어가 보여주는 지능입니다. 기술적으로 모든 지능형 에이전트는 환경을 인식하고 성공 가능성을 극대화하는 조치를 취할 수 있지만, 구어적으로는 상당한 수준의 자기 인식과 감각을 나타내는 기계 또는 소프트웨어를 말하며, 인간과 유사한 수준의 지능을 나타냅니다. "스마트" 장치 및 기타 형태의 인지 기술의 발달로 이러한 목표를 달성하는 것이 가능해졌습니다. 그러나 그러한 지능이 진정한 "인간" 방식으로 생각하지 않을 수 있으므로, 라이벌이 되거나 적대적이 될 수 있다는 우려가 있습니다. 인류를 향해. 그러나 지능적 행동이 논리적이거나 인간과 같은 것으로 정의될 수 있듯이, 인류가 지능적으로 행동하는 한 그러한 새로운 지능이 인류에게 호의적이거나 우호적일 수도 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_HELP">
+			<Text>[ICON_RESEARCH]과학과 [ICON_CULTURE]문화를 증가시키는 [COLOR_POSITIVE_TEXT]AI 네트워크[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AI_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"나는 생각한다, 고로 나는 존재한다"[NEWLINE][TAB][TAB] - 르네 데카르트[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_TITLE">
+			<Text>사이버네틱스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS">
+			<Text>사이버네틱스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_DESC">
+			<Text>과학으로서 사이버네틱스가 정보를 수신, 저장 및 처리하여 제어에 사용할 수 있는 모든 성질의 시스템에 대한 연구에 광범위하게 관심이 있지만, 자극과 행동 사이의 연결에 대한 연구는 다음과 같은 일반적인 인식에 적합합니다. 인간과 기계 사이의 인터페이스에 대한 연구, 기계적 센서와 에이전트가 인간의 의사 결정 프로세스와 통합되는 방법. 그러나 사이버네틱스는 순수 기계 시스템(인공 지능 및 창발적 행동 연구)뿐만 아니라 생물학적 및 사회적 시스템에도 적용될 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_HELP">
+			<Text>게임에서 가장 진보된 기동 유닛인 [COLOR_POSITIVE_TEXT]호버탱크[ENDCOLOR]와 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드를 증가시키는 [COLOR_POSITIVE_TEXT]원격현실 허브[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CYBERNETICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"미래의 세계는 로봇 노예의 시중을 받기 위해 누울 수 있는 편안한 해먹이 아니라, 지능의 한계에 맞서 훨씬 더 힘든 투쟁이 될 것입니다." -- 노버트 와이너[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_TITLE">
+			<Text>생태이론</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY">
+			<Text>생태이론</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_DESC">
+			<Text>환경주의가 인간 활동에 대항하여 자연을 보호하는 것과 관련된 사회적 운동이기는 하지만, "자연"과 "인간성"을 서로 별개의 것으로 간주하는 결점도 가지고 있습니다. 생태계에 대한 연구가 진행됨에 따라, 인간과 환경을 보다 총체적으로 보려고 하는 움직임이 증가하기 시작하여 사람들이 자신을 단일 통합 시스템의 일부로 보도록 권장합니다. 이러한 새로운 생태 철학(또는 "생태학")의 보다 급진적인 지지자들 중 일부는 인간과 환경을 모두 수정하여 서로 더 조화롭게 살 수 있도록 생각해야 한다고 주장합니다. 그리고 그들이 있는 그대로의 환경은 더 많은 갈등으로 이어질 가능성이 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_HELP">
+			<Text>[ICON_CULTURE]문화와 [ICON_HAPPINESS_1]행복을 제공하는 [COLOR_POSITIVE_TEXT]생태친화시설[ENDCOLOR]과 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]바이오공장[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ECOTHEORY_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"모든 생명체는 밀접하게 연결되어 있으며, 이러한 친밀함에서 식별 능력이 발생하고 그 자연스러운 결과로 비폭력이 실천됩니다."[NEWLINE][TAB][TAB] - 아르네 내스[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_TITLE">
+			<Text>나노물질</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS">
+			<Text>나노물질</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_DESC">
+			<Text>나노물질 연구는 미세 가공 연구를 지원하기 위해 개발된 재료 계측 및 합성의 발전을 활용하여 나노기술에 대한 재료 과학 기반 접근 방식을 취합니다. 나노 규모의 구조를 가진 재료는 종종 독특한 광학적, 전자적 또는 기계적 특성을 가지고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_HELP">
+			<Text>미래형 보병 유닛인 [COLOR_POSITIVE_TEXT]파워 아머 보병[ENDCOLOR]과 나노물질을 제공하는 [COLOR_POSITIVE_TEXT]나노물질 제조소[ENDCOLOR]를 건설할 수 있습니다. 또한 노동자가 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]발전기[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOMATERIALS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"먼 행성의 탄소 원자가 DNA로 재배열되고, 미생물이 형성되고, 등뼈가 자라며, 바다 주위를 헤엄치고, 양서류로 변이되어 마른 땅으로 기어들어갔습니다. 그리고 마침내 택시가 우주의 입에 나타났습니다."[NEWLINE][TAB][TAB] - 마크 코긴스, "불멸의 게임"[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_TITLE">
+			<Text>유전자 변형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS">
+			<Text>유전자 변형</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_DESC">
+			<Text>기존 유기체를 복제하는 기술이 성숙함에 따라, 이전에는 존재하지 않았던 특성을 통합한 새로운 유전자 변형 유기체의 개발이 증가했습니다. 대부분의 형질전환 유기체는 특수 식물 종묘장과 같은 통제된 환경에서만 자라고 발달할 수 있지만, 새로운 생태이론은 과학자들이 생태계와 환경의 복잡한 상호작용을 이해하는 데 도움을 주어, 기존의 생태적 균형을 깨뜨리지 않고 개방된 환경에서 생존할 수 있는 보다 안정적인 형질전환 유기체를 허용합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_HELP">
+			<Text>유전자 연구단지를 건설하여 생산과 골드, 식량의 산출량을 증가시킬 수 있습니다. 목장, 어선, 재배지, 야영지의 골드 산출량이 증가합니다. 회복력이 뛰어난 돌연변이 유닛을 생산할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TRANSGENICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"크고 갑작스러운 변화만큼 인간의 마음에 고통스러운 것은 없습니다."[NEWLINE][TAB][TAB] - 메리 셸리, 프랑켄슈타인[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_TITLE">
+			<Text>복제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING">
+			<Text>복제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_DESC">
+			<Text>생물학과 의학의 발전하는 연구는 인공 임신을 위한 방법을 만들고 세포 수준에서 유기체를 조작하는 것으로 이어졌습니다. 실험실 환경에서 유기체를 인공적으로 배양하는 능력이 달성되면, 특히 유용한 유기체를 복제할 수 있는 능력에 관심이 돌았고, 결국 실제 인간을 복제할 수 있는 수단을 찾게 되었습니다. 그럼에도 불구하고, 유기체를 유전적으로 복제하는 것은 가능하지만, 그 유기체는 환경적 영향으로 인해 이전 세대의 일란성 쌍둥이로 성숙하지 못할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]복제 연구소[ENDCOLOR]와 인근 자원을 강화하는 [COLOR_POSITIVE_TEXT]수산양식 연구소[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_CLONING_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"사람들과 함께 잠자리에 들고 아기를 만들 수 있는데 왜 사람들을 복제하려고 합니까? 자, 어리석은 짓입니다."[NEWLINE][TAB][TAB] - 레이 브래드버리[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_TITLE">
+			<Text>유전자 조작</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP">
+			<Text>유전자 조작</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_DESC">
+			<Text>DNA의 발견과 유전적 수준에서 유기체를 조작하는 능력이 증가함에 따라, 일부 사람들은 다양한 방법으로 유기체를 개선하기 위한 노력의 일환으로 유기체의 유전적 구성을 조작하는 효과를 조사하게 되었습니다. 그러나 유전자 조작은 매우 문제가 될 수 있습니다. 유전적으로 변형된 더 단순한 유기체도 의도하지 않은 생물학적 및 환경적 영향을 미칠 수 있기 때문입니다. 인간 유전자 변형의 가능성은 많은 사회적, 윤리적 우려가 있는 문제이지만, 일부 사람들은 잠재적인 이점이 그러한 위험을 능가할 것이라고 생각합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_HELP">
+			<Text>스스로 치유할 수 있는 저렴한 보병 유닛인 [COLOR_POSITIVE_TEXT]돌연변이[ENDCOLOR]와 특정 자원에 보너스를 제공하고 [ICON_GREAT_PEOPLE]위인 생산을 증가시키는 [COLOR_POSITIVE_TEXT]유전자 연구소[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_GEN_MANIP_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"우리는 현재 상태를 유지하면서 필요한 것이 될 수 없습니다."[NEWLINE][TAB][TAB] - 맥스 드 프리[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_TITLE">
+			<Text>슈퍼컴퓨터와 디지털화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS">
+			<Text>슈퍼컴퓨터와 디지털화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_DESC">
+			<Text>슈퍼컴퓨터는 범용 컴퓨터에 비해 높은 수준의 연산 능력을 갖춘 컴퓨터입니다.[NEWLINE][NEWLINE]슈퍼컴퓨터는 1960년대에 도입되었으며 최초의 슈퍼컴퓨터는 몇 개의 프로세서만 사용했습니다. 1990년대에는 수천 개의 프로세서가 장착된 기계가 등장하기 시작했고, 20세기 말에는 수만 개의 "기성품" 프로세서가 장착된 대규모 병렬 슈퍼컴퓨터가 표준이 되었습니다.[NEWLINE][NEWLINE]슈퍼컴퓨터는 계산 과학 분야에서 중요한 역할을 하며, 양자 역학, 일기 예보, 기후 연구, 석유 및 가스 탐사, 분자 모델링(화학 물질의 구조 및 특성 계산 화합물, 생물학적 거대 분자, 고분자 및 결정) 및 물리적 시뮬레이션(예: 우주 초기 순간의 시뮬레이션, 비행기 및 우주선 공기 역학, 핵무기의 폭발 및 핵융합)은 결국 디지털 혁명으로 이어질 것입니다. 지난 세기 중반부터 일어나고 있는 4차 산업혁명으로 알고 있습니다. 인공지능, 증강현실, 가상현실, 블록체인, 암호화폐, 3D프린터, 빅데이터, 로보틱스 등의 기술을 포함하는 물리, 디지털, 생물학적 영역의 경계를 허무는 기술의 융합이 특징이다. 물리적, 디지털 및 생물학적 세계가 계속 융합함에 따라, 새로운 기술과 플랫폼을 통해 시민들은 점점 더 정부와 소통하고, 의견을 표명하고, 노력을 조정하고, 공공 기관의 감독을 피할 수 있습니다. 동시에 정부는 널리 퍼진 감시 시스템과 디지털 인프라를 제어할 수 있는 능력을 기반으로 인구에 대한 통제를 강화할 수 있는 새로운 기술적 힘을 얻게 될 것이며, 이는 국가 및 국제 안보의 본질에 중대한 영향을 미치고 분쟁의 가능성과 본질 모두에 영향을 미칠 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_HELP">
+			<Text>도시의 골드 산출량을 증가시키는 전자 상거래 서버를 건설할 수 있습니다. 도시의 보안을 강화하는 사이버 경찰서를 건설할 수 있습니다. 도시의 랜드마크, 마을 등을 알리는 통신기지국을 건설할 수 있습니다. 국경을 탐색하여 일차 방어선을 구축하는 UAV를 생산할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SUPERCOMPUTERS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"우리는 현재 상태를 유지하면서 필요한 것이 될 수 없습니다."[NEWLINE][TAB][TAB] - 맥스 드 프리[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_TITLE">
+			<Text>미래형 탄도학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS">
+			<Text>미래형 탄도학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_DESC">
+			<Text>인공위성의 개발과 발사는 과학과 기술, 특히 우주 개발의 분야에서 크게 발전을 가져왔습니다. 이런 기술적 진보는 단순히 과학의 경계를 넓히는 것이 아니라, 우리의 세계와 우주에 대한 이해를 향상시키는 역할을 하였습니다. 또한, 이러한 기술적 도약은 대륙간 탄도 미사일(ICBM)의 개발과 생산에도 크게 기여하였습니다. ICBM의 기술은 그 자체로 복잡하며, 이를 가능하게 하는 많은 분야에서 기술적 도약이 요구됩니다. 고도의 물리학, 재료 과학, 전자기학, 제어 시스템 등은 모두 이러한 고급 무기 시스템의 설계와 구현에 중요한 요소입니다. 이러한 분야에서의 기술적 발전은 ICBM 뿐만 아니라 다른 종류의 미사일, 우주선, 및 항공기에도 적용될 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_HELP">
+			<Text>대륙간 탄도 미사일을 생산할 수 있습니다. 향상된 작전 능력으로 장군과 제독의 능력이 올라갑니다. 미래형 보병인 파워 아머 보병을 생산할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_FUTURE_BALLISTICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"과학과 기술이 발전함에 따라 '불가능'이란 단어는 사전에서 지워져야 한다." [NEWLINE][TAB][TAB] - 로버트 H. 고다드, 로켓과 우주 비행의 선구자.[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_TITLE">
+			<Text>문화전파학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS">
+			<Text>문화전파학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_DESC">
+			<Text>밈(한 사람의 마음에서 다른 사람의 마음으로 전달될 수 있는 문화적 아이디어, 상징 또는 관행을 포함하는 독립적인 단위)의 개발 및 확산에 대한 연구입니다. 그들은 복제, 돌연변이 및 선택 압력에 반응하는 방식에서 유전자에 대한 문화적 유사체로 일부 사람들에 의해 간주됩니다. 밈학 연구는 시간이 지남에 따라 사회와 문화가 어떻게 발전하고 진화하는지 이해하는 데 도움이 될 수 있지만, 일부에서는 그것이 궁극적으로 사람들이 사회를 보다 바람직한 형태로 조작하고 형성하는 데 도움이 될 수도 있다고 제안합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_HELP">
+			<Text>[ICON_CULTURE]문화를 증가시키는 [COLOR_POSITIVE_TEXT]엔터테인먼트 서버[ENDCOLOR]와 베테랑 유닛 훈련에 도움이 되는 [COLOR_POSITIVE_TEXT]VR 훈련 센터[ENDCOLOR]를 건설할 수 있습니다. 또한 노동자가 [ICON_FOOD]식량, [ICON_CULTURE]문화, [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]친환경 마을[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MEMETICS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"가장 중무장한 경찰 국가도 항상 모든 시민에게 폭력을 행사할 수 없습니다. 밈 관리는 훨씬 더 미묘합니다. 위협적인 대안에 대한 전염성 두려움."[NEWLINE][TAB][TAB] - 피터 와츠, 블라인드사이트[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_TITLE">
+			<Text>자율 시스템</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS">
+			<Text>자율 시스템</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_DESC">
+			<Text>인지 기술이 발전함에 따라, 완전 자율 기계 시스템이 점점 더 실현 가능해졌습니다. 완전히 지각하거나 자각하지는 못하지만, 이러한 시스템은 예상치 못한 상황을 처리할 수 있을 만큼 충분히 복잡한 의사 결정을 할 수 있었습니다. 이를 통해 인간 운영자는 더 간단한 지침과 명령을 제공할 수 있었고, 기계 시스템은 감독이 덜 필요해져 통제된 환경이 아닌 실제 환경에서 점점 더 실용적이 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_HELP">
+			<Text>가장 강력한 해군 근접 유닛인 [COLOR_POSITIVE_TEXT]첨단 구축함[ENDCOLOR]과 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]무인관리기지[ENDCOLOR], 그리고 지열 발전소와 광산을 개선하는 [COLOR_POSITIVE_TEXT]시추공[ENDCOLOR]을 건설할 수 있습니다. 또한 노동자가 [ICON_PRODUCTION]생산과 [ICON_GOLD]골드를 제공하고 매 턴 인근 유닛을 치유하는 [COLOR_POSITIVE_TEXT]지원 중계기[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"다른 사람이 당신을 위해 할 수 있는 일을 스스로 하지 마십시오."[NEWLINE][TAB][TAB] - 애거서 크리스티, 헤라클레스의 과업[NEWLINE][TAB]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_TITLE">
+			<Text>초월적 건축물</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES">
+			<Text>초월적 건축물</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_DESC">
+			<Text>도시 개발을 향한 생태학의 개념을 확장하면, 재료 공학 및 기타 기술의 발전으로 언젠가는 공학의 엄청난 위업을 달성할 수 있게 될 것입니다. 주변 환경에 미치는 영향을 최소화합니다. 그러한 구조는 엄청난 성취가 될 것이며, 의심할 여지없이 인간 사회에 똑같이 큰 영향을 미칠 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_HELP">
+			<Text>가장 강력한 공성 유닛인 [COLOR_POSITIVE_TEXT]크롤러[ENDCOLOR]와 [ICON_GOLD]골드를 제공하는 [COLOR_POSITIVE_TEXT]복합도시 허브[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HYPERSTRUCTURES_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"인간은 자신의 도구의 도구가 되었습니다."[NEWLINE][TAB][TAB] - 데이비드 소로[NEWLINE][TAB]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TECH_FW_MICROSCALE_ENGINEERING_TITLE">
+			<Text>초미세 공학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_MICROSCALE_ENGINEERING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"무한과 불가분은 우리의 유한한 이해를 초월합니다. 전자는 크기 때문에, 후자는 작기 때문에 결합할 때 어떤지 상상해 보십시오."[NEWLINE][TAB][TAB] - 갈릴레오 갈릴레이[NEWLINE][TAB]
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_TITLE">
+			<Text>호모 슈페리어</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"나는 너에게 초인을 가르친다. 인간은 능가할 존재다."[NEWLINE][TAB][TAB] - 프리드리히 니체[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_DESC">
+			<Text>생체 개조와 사이버네틱스가 완전히 성숙함에 따라, 거의 무한한 방식으로 인체를 보강하는 것이 가능해졌습니다. 인간은 더 강하고 똑똑하며 더 오래 살 수 있고, 상대적으로 질병이나 부상에서 자유로울 수 있습니다. 그러한 인간 증강에 대한 윤리적, 심지어 논리적인 우려가 있지만, 인류는 한계를 초월할 태세를 갖추게 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HOMO_SUPERIOR_HELP">
+			<Text>과학 승리에 필요한 우주선 부품 중 하나인 [COLOR_POSITIVE_TEXT]우주선 동면실[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_TITLE">
+			<Text>디지털 사회</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"당신이 있는 그대로 있으면 결국 사람들이 당신에게 올 것입니다."[NEWLINE][TAB][TAB] - 로베르 두아노[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_DESC">
+			<Text>인공 지능의 확산과 사이버네틱스의 발전으로 인간이 마음-기계 인터페이스와 텔레프레즌스를 활용할 수 있게 됨에 따라, 마음과 성격이 신체와 연결된다는 개념은 점점 시대에 뒤떨어지고 있습니다. 컴퓨터 네트워크와 기술의 발전으로 사람들은 지구상 어디에서나 자신을 투사하거나 완전히 인공적인 세계를 인식할 수 있습니다. 궁극적으로 그러한 사회는 물리적 세계에 대한 우려를 버릴 수 있으며, 정체성은 신체가 아닌 정신에 의해서만 결정되며, 인식은 주로 인류가 살고 있는 전자 환경과의 상호 작용에 의해 결정될 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_DIGITAL_SOCIETY_HELP">
+			<Text>[ICON_PRODUCTION]생산, [ICON_RESEARCH]과학, [ICON_GOLD]골드, [ICON_CULTURE]문화를 증가시키지만 인구를 감소시키는 [COLOR_POSITIVE_TEXT]두뇌 업로드 시설[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+
+		
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_TITLE">
+			<Text>스마트 물질</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"모든 것은 변하며, 변하지 않는 것은 아무것도 없습니다."[NEWLINE][TAB][TAB] - 싯다르타 고타마[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_DESC">
+			<Text>나노기술의 절정은 "스마트 소재"의 개발이 될 것입니다. 이 소재는 실제로 지능형 나노머신으로 구성되어 환경이나 기타 자극에 스스로 적응할 수 있는 소재입니다. 이와 같은 나노 기계는 함께 작동하여 인간이 자신의 환경(건축 대피소 또는 필요에 따라 다른 물체)을 완벽하게 제어할 수 있게 합니다. 나노머신의 특성과 분포에 따라 개인 방어 또는 운송과 같은 다른 역할도 수행할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SMART_MATERIALS_HELP">
+			<Text>강력한 항공모함 및 지원 유닛인 [COLOR_POSITIVE_TEXT]넥서스[ENDCOLOR] 유닛과 도시 방어를 개선하고 [ICON_HAPPINESS_1]행복을 증가시키는 [COLOR_POSITIVE_TEXT]나노로봇 생성기[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_TITLE">
+			<Text>에너지 이론</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"우주의 비밀을 찾으려면 에너지, 주파수 및 진동의 관점에서 생각하세요."[NEWLINE][TAB][TAB] - 니콜라 테슬라[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_DESC">
+			<Text>우주가 작동하는 원리에 대한 인간의 조사는 가장 작고 가장 높은 에너지 상태에서 우주의 기능에 대한 조사로 이어졌습니다. 이 연구의 가장 확실한 산물은 태양계의 확장된 탐사 및 개발에서 찾을 수 있으며, 그 결과 행성간 식민지 사이에서 우주선을 추진할 수 있는 강력한 부스터 엔진을 만들 뿐만 아니라, 차세대 우주 정거장 및 다른 기지의 개발을 촉진할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_ENERGY_THEORY_HELP">
+			<Text>과학 승리에 필요한 우주선 부품 중 하나인 [COLOR_POSITIVE_TEXT]우주선 부스터[ENDCOLOR]와 [COLOR_POSITIVE_TEXT]우주선 공장[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]달 기지[ENDCOLOR]를 건설할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_TITLE">
+			<Text>유전자 가속</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_QUOTE">
+			<Text>
+				[NEWLINE][TAB][TAB]"인간은 이 생명의 그물을 짜는 것이 아닙니다. 그는 단지 그것의 한 가닥일 뿐입니다. 그가 거미줄에 무엇을 하든지 그는 자신에게 하는 것입니다."[NEWLINE][TAB][TAB] - 시애틀 추장[NEWLINE][TAB]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_DESC">
+			<Text>유전자 가속은 생명 과학의 정점의 기술로, 인류는 신의 영역에 도전하게 되었습니다. 종의 진화를 가속화하거나 새로운 종을 창조하는데 이용됩니다. 이 과학적인 접근법은 전장에서도 전략적 깊이를 더욱 향상시키며, 플레이어들이 특별한 능력을 가진 강력한 유닛을 만드는 데 도움을 줍니다. 이 기술은 크게 두 가지 방법으로 활용됩니다. 첫째, "유전자 강화"는 기존 생명체의 유전자를 개선하여 그들의 능력을 향상시킵니다. 이는 체력, 속도, 지능 등의 특성을 강화하며, 강화된 유닛은 전투에서 많은 이점을 가져다 줍니다. 둘째, "유전자 창조"는 새로운 생명체를 창조하는 방식으로, 전투에 특화된 독특한 능력을 가진 새로운 유닛을 만들어냅니다. 이는 신의 영역에 도전하는 인류가 만들어낸 궁극적인 도구로 볼 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_TERRAFORMING_HELP">
+			<Text>이동력이 빠르고 상대방을 괴롭히는 유전자변형충과 궁극의 정찰 유닛인 바이오드론을 생산할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_TITLE">
+			<Text>우주 식민지화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"지구에서 별까지 쉬운 길은 없습니다."[NEWLINE][TAB][TAB] - 세네카[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_DESC">
+			<Text>인류는 항상 탐험과 확장, 지평선 너머에 있는 것을 찾기 위한 근본적인 욕구를 느껴왔습니다. 우주는 인류가 확장하고 탐험할 수 있는 광활한 영역인 궁극적인 개척지를 제공합니다. 인간이 다른 항성계로 여행할 수 있게 해주는 기술 수준의 달성은 최초의 도구 개발만큼이나 인류 역사에서 중추적일 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_SPACE_COLONIZATION_HELP">
+			<Text>과학 승리에 필요한 우주선 부품 중 하나인 [COLOR_POSITIVE_TEXT]우주선 엔진[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_TITLE">
+			<Text>컴퓨트로늄</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"인간은 기술 개발이 허용하는 만큼만 훌륭합니다."[NEWLINE][TAB][TAB] - 조지 오웰[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_DESC">
+			<Text>컴퓨트로늄은 매사추세츠 공과대학의 노먼 마골러스와 토마소 토폴리가 거의 모든 실제 물체의 컴퓨터 모델링을 위한 기질인 "프로그래밍 가능한 물질"로 사용할 수 있다고 가정한 물질입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_COMPUTRONIUM_HELP">
+			<Text>과학 승리에 필요한 우주선 부품 중 하나인 [COLOR_POSITIVE_TEXT]우주선 조종석[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_TITLE">
+			<Text>인류 증강</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"마음만 먹으면, 케이가 야마시타 업그레이드 중 하나가 아닌지 항상 궁금했습니다. 부신피질 자극 호르몬이 너무 많고 모노아민 산화 효소가 너무 적습니까?"[NEWLINE][TAB][TAB] - 아담 워렌, 천사의 역병[NEWLINE][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_DESC">
+			<Text>유전적 생체 변형과 사이버네틱스의 발전으로 인간의 증강에 대한 무한한 가능성이 가능해졌습니다. 인체의 거의 모든 구성 요소는 통에서 재배되거나 사이버네틱한 대체품으로 대체될 수 있습니다. 그러나 결국 일부는 기본 인류가 너무 많은 수정만 허용할 수 있는 한계로 보기 시작했고, 인간 게놈의 개선된 버전을 설정하기 위해 더 많은 실험이 시작되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_HUMAN_AUGMENTATION_HELP">
+			<Text>[ICON_RESEARCH]과학과 [ICON_PRODUCTION]생산을 증가시키는 [COLOR_POSITIVE_TEXT]인공 출산 시설[ENDCOLOR]을 건설할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TECH_FW_NUCLEAR_FUSION_HELP">
+			<Text>대학살 로봇을 생산할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_FW_NANOTECHNOLOGY_HELP">
+			<Text>나노물질을 사용하는 강력한 레일건 탱크를 생산할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_FW_FUTURE">
+			<Text>미래 시대</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_FW_FUTURE_SHORT">
+			<Text>미래</Text>
+		</Row>
+<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY">
+			<Text>완전환경도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY_TEXT">
+			<Text>완전환경도시(아콜로지)는 많은 사람들이 완전하게까지는 아니더라도 그 안의 닫힌 환경만으로 일상 생활이 가능하게끔 만들어진 거대한 구조물입니다.[NEWLINE][NEWLINE]이 맞춤형 시설은 건설된 타일에 [ICON_FOOD]식량 2와 [ICON_GOLD]골드 2를 제공하며, 도시에 인접하면 추가로 [ICON_FOOD]식량 +1과 [ICON_GOLD]골드 +1, 해안에 인접하면 [ICON_GOLD]골드 +2를 제공합니다. 다른 완전환경도시와 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_FOOD]식량 2, [ICON_GOLD]골드 2, [ICON_PRODUCTION]생산 2를 제공하며, 도시에 인접하면 추가로 [ICON_FOOD]식량 +1과 [ICON_GOLD]골드 +1, 해안에 인접하면 [ICON_GOLD]골드 +2를 제공합니다. 다른 완전환경도시와 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY">
+			<Text>완전환경도시 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY_HELP">
+			<Text>타일의 식량, 과학 및 골드 산출량을 증가시키는 완전환경도시를 건설합니다. 방어 보너스 100%를 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_ARCOLOGY_REC">
+			<Text>타일의 식량, 과학 및 골드 산출량을 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME">
+			<Text>수경재배지구</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME_TEXT">
+			<Text>인위적인 식량 재배 방법은 시간이 지남에 따라 점점 더 정교해지고 있습니다. 수경재배와 수기경재배와 같은 새로운 기술의 출현은 농작물이 전적으로 인공적인 환경에서 재배될 수 있다는 것을 의미하며, 보통 시민들을 먹이기 위해 애쓰는 지역사회는 이제 더 비옥한 지역에서 식량을 수입할 필요 없이 근처에서 농작물을 재배할 수 있습니다.[NEWLINE][NEWLINE]이 시설은 인근의 모든 농장이나 계단식 농장에 인접하여 건설하면 추가로 [ICON_FOOD]식량 +1을 제공하고, [ICON_RESEARCH]과학 +1을 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_FOOD]식량 3, [ICON_RESEARCH]과학 2, [ICON_PRODUCTION]생산 1을 제공합니다. 인접한 모든 농장과 계단식 농장은 [ICON_RESEARCH]과학 +1을 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME">
+			<Text>수경재배지구 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME_HELP">
+			<Text>타일의 식량, 과학 및 생산 산출량을 증가시키는 수경재배지구를 건설합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HYDROPONICS_DOME_REC">
+			<Text>타일의 식량, 과학 및 생산 산출량을 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX">
+			<Text>산업단지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX_TEXT">
+			<Text>산업단지는 기업이 사회 또는 정치 시스템이나 제도에 얽혀 이러한 시스템으로부터 수익경제를 창출하거나 지지하는 사회경제적 개념입니다. 이러한 복합단지는 사회와 개인의 최선의 이익에 관계 없이, 그리고 종종 희생을 감수하면서 자신의 재정적 이익을 추구한다고 합니다. 공단 내 기업은 사회적 또는 정치적 목표를 진전시키기 위해 만들어졌을 수 있지만, 대부분 목표에 도달하지 못할 때 이익을 얻습니다. 공단은 사회적으로 해롭거나 비효율적인 시스템을 유지함으로써 재정적으로 이익을 얻을 수 있습니다. 생산을 촉진하고 규모의 경제를 장려하기 위해 업계가 함께 그룹화됨에 따라, 공장, 조립 공장, 주조 공장 및 기타 산업용 건물의 규모가 점점 더 크고 복잡한 컬렉션이 나타나기 시작합니다. 산업단지는 공장만큼 효과적이지는 않지만, 생산에는 큰 도움이 될 수 있습니다. 이 개념은 드와이트 아이젠하워 대통령이 1961년 1월 17일 고별사에서 대중화했습니다. 아이젠하워는 군사 산업 단지라고 불리는 "민주 정부에 대한 위협"을 묘사했습니다. 이 복합단지는 미국 무기산업의 수익성과 군복무, 무기산업, 그리고 미국에 물품을 제공하는 다른 사업의 다양한 분야에 고용된 시민들의 수 때문에 미국 사회의 경제적, 정치적, 정신적인 영역에 "부당한 영향"을 받는 군 체제를 포함했습니다. "복합"은 군사적 목표에 도움이 되는 다자경제의 창조와 더불어, 군의 이론적 목표(평화)와 반대되는 다자주의(지속적 이익)의 목표에서 발생하는 역설에서 발생합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX_HELP">
+			<Text>이 시설은 [ICON_PRODUCTION]생산 5와 [ICON_GOLD]골드 2를 제공합니다. 또한 인접한 모든 제조소에 [ICON_PRODUCTION]생산 3을 추가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX">
+			<Text>산업단지 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX_HELP">
+			<Text>타일과 인접한 제조소의 생산 산출량을 증가시키는 산업단지를 건설합니다. 방어 보너스 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX_REC">
+			<Text>타일의 생산 산출량을 증가시키고 인접한 제조소는 생산 3을 얻습니다.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC">
+			<Text>첨단에너지 연구단지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC_TEXT">
+			<Text>과학이 발전함에 따라, 우주의 비밀을 더 깊이 탐구하는 데 필요한 도구들도 발전했습니다. 아직 많은 연구가 학술적이고 이론적인 수준에서 수행되고 있지만, 양자역학, 천체물리학 및 입자물리학의 신비를 탐구하는 데 필요한 도구는 전문화된 첨단 연구소와 연구 센터를 필요로 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_HERC_HELP">
+			<Text>이 시설은 [ICON_RESEARCH]과학 5와 [ICON_GOLD]골드 2를 제공합니다. 또한 인접한 모든 아카데미에 [ICON_RESEARCH]과학 3을 추가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HERC_HELP">
+			<Text>타일과 인접한 아카데미의 과학 산출량을 증가시키는 첨단에너지 연구단지를 건설합니다. 방어 보너스 +20%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_HERC_REC">
+			<Text>타일의 과학 산출량을 증가시키고 인접한 아카데미는 과학 3을 얻습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE">
+			<Text>자연보호구역</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE_TEXT">
+			<Text>과학의 진보는 인류에게 환경을 조작할 수 있는 도구의 수를 증가시켰지만, 이것은 또한 자연 그대로의 환경이 점점 더 부족해지고 있다는 것을 의미하기도 합니다. 자연 생태계를 보존할 것인지, 생태 관광 산업을 장려할 것인지, 점점 더 많은 자연 보호 구역이 확보되고 있습니다.[NEWLINE][NEWLINE]이 시설은 건설된 타일에 [ICON_CULTURE]문화 3과 [ICON_RESEARCH]과학 2를 제공합니다.[NEWLINE][NEWLINE]타일에 인접한 야영지, 브라질 소방목 벌목장, 간척지, 자연보호구역에서 [ICON_CULTURE]문화가 추가로 +1 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_PRESERVE_HELP">
+			<Text>이 시설은 건설된 타일에 [ICON_CULTURE]문화, [ICON_RESEARCH]과학, [ICON_TOURISM]관광을 제공합니다.[NEWLINE][NEWLINE]타일에 인접한 야영지, 브라질 소방목 벌목장, 간척지, 자연보호구역에서 [ICON_CULTURE]문화가 추가로 +1 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE">
+			<Text>자연보호구역 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE_HELP">
+			<Text>타일의 문화 및 과학 산출량을 증가시키는 자연보호구역을 건설합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_PRESERVE_REC">
+			<Text>타일의 문화 및 과학 산출량을 증가시킵니다. 다른 보호구역에 인접한 경우 [ICON_CULTURE] 보너스.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL">
+			<Text>친환경 마을</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL_TEXT">
+			<Text>도시화가 환경에 미치는 영향에 대한 인식이 높아짐에 따라, 보다 환경 친화적이고 지속 가능한 커뮤니티를 구축하기 위한 수많은 노력이 있었습니다. 이러한 공동체는 특히 그 이후에 나타나기 시작한 훨씬 더 밀집된 호와 비교하면 항상 다소 작은 규모였지만, 자급자족했고, 상대적으로 오염되지 않은 황야의 지역에 위치한 그들의 위치는 생태관광가들에게 특정한 매력을 가지고 있다는 것을 의미했습니다.[NEWLINE][NEWLINE]이 시설은 인접한 모든 농장이나 계단식 농장에 [ICON_FOOD]식량 +1을 추가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_BIOWELL_HELP">
+			<Text>인접한 모든 농장, 계단식 농장은 [ICON_FOOD]식량 +1을 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL">
+			<Text>친환경 마을 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL_HELP">
+			<Text>식량, 문화를 증가시키는 친환경 마을을 건설합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_BIOWELL_REC">
+			<Text>식량, 문화를 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE">
+			<Text>유전자 연구단지</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE_TEXT">
+			<Text>유전자 조작과 공학에서의 대부분의 실험이 도심에 위치한 전용 유전자 조작 및 유전자 변환 연구소에서 이루어졌지만, 점점 더 다양한 생물 제조 공정의 개발은 통제된 환경에서 떨어진 유전자 실험 및 개발에 전념하는 센터의 필요성을 증가시켰습니다. 도시들의. 미개발 지역에 세워진 이 유전자 센터들은 자연 환경 내에서 유전자 변형 유기체의 영향을 연구했습니다.[NEWLINE][NEWLINE]이 맞춤형 시설은 대부분의 식량을 생산으로 대체하며, 건설된 타일에 [ICON_FOOD]식량 1, [ICON_GOLD]골드 2, [ICON_PRODUCTION]생산 4를 제공합니다. 또한 인접한 교역소에 [ICON_GOLD]골드 +2, 인접한 목장에 [ICON_PRODUCTION]생산 +2, 인접한 모든 어선에 [ICON_FOOD]식량 +2, 인접한 모든 농장에 [ICON_FOOD]식량 +2를 추가합니다. 다른 유전자 연구단지와 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENOCENTRE_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_FOOD]식량 1, [ICON_GOLD]골드 2, [ICON_PRODUCTION]생산 4를 제공합니다. 또한 인접한 교역소에 [ICON_GOLD]골드 +2, 인접한 목장에 [ICON_PRODUCTION]생산 +2, 인접한 모든 어선에 [ICON_FOOD]식량 +2를 추가합니다. 물 위에도 건설 가능. 다른 유전자 연구단지와 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE">
+			<Text>유전자 연구단지 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE_HELP">
+			<Text>타일의 식량, 생산, 골드 및 방어(100%) 산출량을 증가시키는 유전자 연구단지를 건설합니다. 물 위에도 건설 가능.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENOCENTRE_REC">
+			<Text>타일의 식량, 생산, 골드 및 방어(100%) 산출량을 증가시킵니다. 물 위에도 건설 가능.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY">
+			<Text>통신기지국</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY_TEXT">
+			<Text>통신기지국은 지역간의 정보 교환을 용이하게 하기 위한 전용의 설비입니다. 처음에는 교역소에 비해 골드가 약간 증가하지만, 조사된 기술에 따라서는 추가적인 문화나 과학도 제공될 수 있습니다. 단, 통신기지국은 서로 인접하게 구축할 수 없기 때문에 구축할 수 있는 수가 제한됩니다.[NEWLINE][NEWLINE]이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 2를 제공합니다.[NEWLINE][NEWLINE]타일에 인접한 마을, 성지, 랜드마크, 문명의 특수 타일 시설에서 [ICON_CULTURE]문화가 추가로 [COLOR_POSITIVE_TEXT]1[ENDCOLOR] 증가합니다. 다른 통신기지국과 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_COMM_ARRAY_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 2, [ICON_CULTURE]문화 2, [ICON_RESEARCH]과학 2를 제공합니다. 언덕에 건설하면 과학 및 골드 보너스 1. 다른 통신기지국과 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY">
+			<Text>통신기지국 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY_HELP">
+			<Text>타일의 과학, 문화 및 골드 산출량을 증가시키는 통신기지국을 건설합니다. 언덕에 보너스.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_COMM_ARRAY_REC">
+			<Text>타일의 과학, 문화 및 골드 산출량을 증가시킵니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR">
+			<Text>발전기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR_TEXT">
+			<Text>점점 더 많은 산업이 자동화됨에 따라, 그들은 이용 가능한 발전소와 발전기에 대한 전력 수요를 증가했습니다. 가장 고도로 산업화된 자동화된 지역은 산업에 전력을 공급하는 데 도움이 되는 수많은 보조 발전기를 개발하기 시작했습니다.[NEWLINE][NEWLINE]이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 5와 [ICON_PRODUCTION]생산 2를 제공합니다.[NEWLINE][NEWLINE]인접한 소도시, 산업단지, 첨단산업단지, 유전자연구단지, 완전환경도시 시설의 [ICON_GOLD]골드가 +1 증가합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_GENERATOR_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 5와 [ICON_PRODUCTION]생산 2를 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR">
+			<Text>발전기 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR_HELP">
+			<Text>타일의 골드 및 생산 산출량을 증가시키는 발전기를 건설합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_GENERATOR_REC">
+			<Text>인접한 모든 소도시, 연구-산업단지로 [ICON_GOLD]골드 +1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE">
+			<Text>지원 중계기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE_TEXT">
+			<Text>군 부대가 점점 더 정교해지면서, 현장에서의 장비 유지보수가 점점 더 어려워졌습니다. 이는 특히 광범위한 사이버네틱을 이용한 군대에서 널리 퍼져 지원 중계기의 개발을 이끌었습니다. 이러한 모듈식 시설은 강력한 방어 위치뿐만 아니라 광범위한 수리 시설과 작업장을 제공하여 현장 유닛을 위한 기술적으로 정교한 장비를 유지관리하는 데 도움이 되었습니다.[NEWLINE][NEWLINE]이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 3과 [ICON_PRODUCTION]생산 3을 제공하며, 도시에 인접하면 추가로 [ICON_RESEARCH]과학 +1과 [ICON_GOLD]골드 +1, 언덕에 건설하면 [ICON_PRODUCTION]생산 +2, [ICON_FOOD]식량 +1을 제공합니다. 또한 매 턴 인근 적 유닛에게 20 HP의 피해를 줍니다. 다른 지원 중계기와 인접하여 건설할 수 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_CORE_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_GOLD]골드 3과 [ICON_RESEARCH]과학 3을 제공하며, 도시에 인접하면 추가로 [ICON_RESEARCH]과학 +1과 [ICON_GOLD]골드 +1, 언덕에 건설하면 [ICON_PRODUCTION]생산 +2, [ICON_FOOD]식량 +1을 제공합니다. 또한 매 턴 인근 적에게 피해를 주고 아군을 20 HP씩 치유합니다. 다른 지원 중계기와 인접하여 건설할 수 없습니다. 선박이 통과할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE">
+			<Text>지원 중계기 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE_HELP">
+			<Text>골드와 과학을 제공하고 인근 적에게 20 HP의 피해를 주는 지원 중계기를 건설합니다. 도시 인접 시 과학/골드 보너스 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_CORE_REC">
+			<Text>타일의 골드와 과학 산출량을 증가시키고, 매 턴 인근 적에게 20 HP의 피해를 주고 아군을 치유합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH">
+			<Text>균류 농장 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH_HELP">
+			<Text>돌연변이 유닛을 건설하기 위한 ADN 균류 자원을 제공하는 균류 농장을 건설합니다. 방어 보너스 +50% 및 인근 적 유닛에게 10의 피해. 현재 지형 특성을 제거하지 않으며 선박이 통과할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_FUNGAL_GROWTH_REC">
+			<Text>숲, 정글 또는 습지를 온전하게 유지하면서 건설된 타일에 [ICON_FOOD]식량 2, [ICON_RESEARCH]과학 2, [ICON_CULTURE]문화 2를 제공합니다. 또한 턴이 종료되거나 인접한 모든 유닛에게 10 HP 피해를 입힙니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH">
+			<Text>균류 농장</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH_TEXT">
+			<Text>폴루스 돌연변이 바이러스의 방출로 가장 눈에 띄는 효과는 식물이 곰팡이 생장으로 변이하는 것입니다. 특이한 식물의 형태는 환경으로부터 감각 정보를 해석할 수 있게 해주는 신경과 같은 구조를 발달시키고, 심지어 그들이 적대적이라고 생각하는 사람들에 대한 독소와 생화학적 공격으로 반응함으로써, 곰팡이에 의해 넘쳐나는 지역을 그들이 통과할 준비가 되지 않은 사람들에게 매우 위험하게 만드는 것이 관찰되었습니다. 그러나, 그 곰팡이 자체는 또한 인간이나 돌연변이의 영향을 받은 동물들과 공생하고 있는 것으로 보이며, 그들에게 유용한 영양분과 의약품과 같은 다른 귀중한 물질을 제공합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH_HELP">
+			<Text>이 맞춤형 시설은 건설된 타일에 [ICON_FOOD]식량 2, [ICON_RESEARCH]과학 2, [ICON_CULTURE]문화 2를 제공합니다. 또한 턴이 종료되거나 인접한 모든 유닛에게 10 HP 피해를 입힙니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT">
+			<Text>[LINK=IMPROVEMENT_FW_VAULT]핵 격납고[\LINK] 건설</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT_HELP">
+			<Text>타일에 최대 3개의 핵 미사일을 배치할 수 있으며, 주둔 유닛에게 낙진 면역을 부여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FW_VAULT_REC">
+			<Text>이 타일에서 방어력 +25%를 제공하며, 타일에 최대 3개의 핵 미사일을 배치할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT">
+			<Text>핵 격납고</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT_TEXT">
+			<Text>낙진 대피소는 핵 폭발로 인한 방사능 먼지나 잔해로부터 보호하기 위해 특별히 지정된 밀폐된 공간입니다. 많은 방사능 대피소들이 냉전 동안 민방위 조치로 건설되었습니다. [NEWLINE][NEWLINE]핵 폭발 동안, 폭발로 인해 기화된 물질은 폭발에서 나오는 중성자를 흡수하게 되고, 이로 인해 방사능을 가지게 됩니다. 이 물질이 비를 통해 응축될 때, 땅에 있는 화산재처럼 가벼운 먼지와 모래질의 물질을 형성합니다. 방사성 낙진은 알파 입자와 베타 입자, 그리고 감마선을 방출합니다. [NEWLINE][NEWLINE]이러한 매우 방사능이 강한 물질의 대부분은 지구로 떨어지며, 시야 내의 모든 것을 방사능에 노출시키는 중대한 위험이 됩니다. 낙진 대피소는 거주자들이 방사능이 더 안전한 수준으로 붕괴될 때까지 유해한 낙진에 대한 노출을 최소화하도록 설계되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FW_VAULT_HELP">
+			<Text>핵 격납고는 미사일 격납고와 낙진 대피소의 기능을 모두 수행합니다. [NEWLINE][NEWLINE]최대 3개의 핵 미사일을 저장할 수 있으며, 이 타일에 주둔하는 유닛에게 낙진 면역을 제공합니다.</Text>
+		</Row>			
+		<Row Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT">
+			<Text>인간 게놈 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_GENOME_PROJECT_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 인간 게놈 프로젝트에 기여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING">
+			<Text>소행성 채굴 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_FW_ASTEROID_MINING_HELP">
+			<Text>이 도시의 [ICON_PRODUCTION]생산을 소행성 채굴 프로젝트에 기여합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT">
+			<Text>인간 게놈 프로젝트</Text>
+		</Row>
+        <Row Tag="TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP">
+			<Text>도시에서 일하는 모든 전문가는 현재 가치의 +1을 얻고 모든 위인 점수를 3만큼 변경합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_GENOME_PROJECT_SPLASH">
+			<Text>인간 게놈 프로젝트는 인간의 유전자를 더 잘 이해하기 위해 인간 게놈을 지도화하려는 노력입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1">
+			<Text>연구 교환</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1_HELP">
+			<Text>연구소는 [ICON_RESEARCH]과학 +2를 얻습니다. 의학 연구소는 [ICON_FOOD]식량 +2를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2">
+			<Text>유전자 치료</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2_HELP">
+			<Text>모든 도시는 [ICON_CITIZEN]시민 +1을 얻습니다. 유전자 연구소는 [ICON_RESEARCH]과학 +2를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3">
+			<Text>응용 유전체학</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP">
+			<Text>[ICON_CAPITAL]수도에 인간 게놈 프로젝트 불가사의가 나타납니다. ({TXT_KEY_WONDER_FW_GENOME_PROJECT_HELP})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT">
+			<Text>인간 게놈 프로젝트</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_GENOME_PROJECT_HELP">
+			<Text>인간 게놈 프로젝트 자금 지원 프로젝트를 시작합니다. 일단 시작되면, 문명은 도시 생산 목록에서 선택하여 완료에 [ICON_PRODUCTION]생산을 기여할 수 있습니다. 완료되면, 문명은 기여한 정도에 따라 보너스를 받습니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_GENOME_PROJECT_1_HELP}[NEWLINE][NEWLINE]어떤 문명이든 유전자 조작을 발견하면 사용할 수 있습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING">
+			<Text>국제 소행성 채굴 회의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_FW_ASTEROID_MINING_SPLASH">
+			<Text>국제 소행성 채굴 회의는 태양계, 특히 소행성대의 광대한 광물 자원을 어떻게 개발, 분배 또는 보호할지에 대한 국제 협약을 수립하기 위해 소집되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1">
+			<Text>M형 소행성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP">
+			<Text>[ICON_RES_ALUMINUM]알루미늄 3개, [ICON_RES_IRON]철 2개, [ICON_RES_NANOMAT]나노물질 1개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2">
+			<Text>S형 소행성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP">
+			<Text>[ICON_RES_NANOMAT]나노물질 6개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3">
+			<Text>C형 소행성</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP">
+			<Text>[ICON_CAPITAL]수도에 세레스 우주정거장 불가사의가 나타나고 [ICON_RES_URANIUM]우라늄 2개를 얻습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING">
+			<Text>국제 소행성 채굴 회의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOLUTION_FW_ASTEROID_MINING_HELP">
+			<Text>국제 소행성 채굴 회의 자금 지원 프로젝트를 시작합니다. 일단 시작되면, 문명은 도시 생산 목록에서 선택하여 완료에 [ICON_PRODUCTION]생산을 기여할 수 있습니다. 완료되면, 문명은 기여한 정도에 따라 보너스를 받습니다.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_FW_ASTEROID_MINING_1_HELP}[NEWLINE][NEWLINE]어떤 문명이든 우주 개발을 발견하면 사용할 수 있습니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

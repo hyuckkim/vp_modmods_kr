@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5dcfb430-cfd4-4262-84f7-8db1e3fd6284" version="5">
+  <Properties>
+    <Name>Jarcast's Bigger Huge Map for Communitu_79a</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Fork of the Communitu_79a v3.1.0 mapscript with an option for larger Huge map.</Teaser>
+    <Description>Fork of the Communitu_79a v3.1.0 mapscript with an additional option for larger Huge maps.
+[NEWLINE]5 selectable sizes:
+[NEWLINE][ICON_BULLET]Normal Huge (97x66)
+[NEWLINE][ICON_BULLET]Huge x1.25 (109x74)
+[NEWLINE][ICON_BULLET]Huge x1.5 (119x81)
+[NEWLINE][ICON_BULLET]Huge x2 (138x93)
+[NEWLINE][ICON_BULLET]Giant Earth-like (160x108)</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+    <Mod id="6010e6f6-918e-48b8-9332-d60783bd8fb5" minversion="0" maxversion="999" title="Historical Religions Complete" />
+  </Dependencies>
+  <References>
+    <Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs Mods" />
+    <Mod id="34feb829-33fb-4241-956f-462e6877e070" minversion="0" maxversion="999" title="Really Advanced Setup" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="5E6B93DD20D75C16E64876837EC74617" import="0">JarCommunitu_79a.lua</File>
+    <File md5="14C8E1C7AA909857C2AA8EDD237DAD82" import="0">Jar_BiggerMapFunctions.lua</File>
+    <File md5="A0E4D1E13068A7F124E2F60847A6CFB2" import="0">Jar_Worlds_GameDefines.sql</File>
+    <File md5="750951C55FC3EB84800817F39D94A20A" import="0">UserSettings.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>UserSettings.sql</UpdateDatabase>
+      <UpdateDatabase>Jar_Worlds_GameDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Jar_BiggerMapFunctions.lua">
+      <Name>Jar_BiggerMapFunctions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MapScript" file="JarCommunitu_79a.lua">
+      <Name>JarCommunitu_79a.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="a3495d04-39c7-4f8d-b693-2ab34d522795" version="14">
+<Mod id="b137e5f6-f7d8-4c70-bd70-37e9515b1dc0" version="14">
   <Properties>
     <Name>(ui) Wonder Planner For VP INT</Name>
     <Stability>Beta</Stability>
     <Teaser>Translation of the (ui) Wonder Planner For VP</Teaser>
-    <Description>Translation of the (ui) Wonder Planner For VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE](ui) VP용 불가사의 플래너 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Description>Translation of the (ui) Wonder Planner For VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE](ui) VP용 불가사의 계획서 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
     <Authors>HANDANI</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
@@ -22,14 +22,12 @@
   </Properties>
   <Dependencies>
     <Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" minversion="0" maxversion="999" title="(ui) Wonder Planner for VP" />
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
-  <References>
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
-  </References>
+  <References />
   <Blocks />
   <Files>
-    <File md5="48ACEA27B45675B561D548B394D86C31" import="0">Text/WonderPlannerTexts.xml</File>
+    <File md5="CCDDBBF174D55FFF1C570232600DC01F" import="0">Text/WonderPlannerTexts.xml</File>
+    <File md5="CAF677459DB6D3BAD31AD176DA80F565" import="0">UI/WonderPlanner.lua</File>
   </Files>
   <Actions>
     <OnModActivated>

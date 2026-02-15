@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2fec6753-7ac8-443b-8844-1cb2d55f93de" version="1">
+  <Properties>
+    <Name>UI - Overlay Unimproved Tiles</Name>
+    <Teaser>Highlight unimproved tiles in strategic view</Teaser>
+    <Description>Adds an "Unimproved Tiles" option to the overlay drop-down menu in the strategic view and adds check-boxes for luxuries, strategics, workable bonuses, workable tiles and unupgraded roads; only selected items are highlighted.</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>biship for the suggestion</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="99B60C741AE798E71309250E909F7668" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="991E972D881517C05FA1317407BF66D4" import="0">UI/OverlayUnimprovedTiles.lua</File>
+    <File md5="5EDB7D1E25D205A885E7003C2A2B2B53" import="0">UI/OverlayUnimprovedTiles.xml</File>
+    <File md5="59898BF100A738D1417B685BC8781D02" import="1">UI/OverlayUnimprovedTiles_MiniMapOverlayHook.lua</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+    <File md5="E075CE034F6DAF6EF761B13C7C074640" import="0">XML/UIUnimprovedTiles.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIUnimprovedTiles.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayUnimprovedTiles.xml">
+      <Name>Unimproved Tiles</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayUnimprovedTiles_MiniMapOverlayHook.lua">
+      <Name>Unimproved Tiles MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

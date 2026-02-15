@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="4ec42e0b-df3e-4d02-adfe-a9ff7de17e21" version="1">
+  <Properties>
+    <Name>Large Minimap for VP wth EUI only</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Enlarge the minimap when using VP with EUI.</Teaser>
+    <Description>Enlarge the minimap when using VP with EUI.</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="92DADFE0988AC08730FDEA1491D0A79B" import="1">ActionInfoPanel.lua</File>
+    <File md5="3C6C98909078E8F007C77B107629CD94" import="1">ActionInfoPanel.xml</File>
+    <File md5="95DEF513C49A6E6A06B271C098BDC4DB" import="1">MiniMapPanel.xml</File>
+    <File md5="A87ADB40348735E120B60ECF9CE8BB2D" import="1">NotificationPanel.lua</File>
+    <File md5="63A39431CC74EE2296D91EDB2D3F3D77" import="1">NotificationPanel.xml</File>
+    <File md5="594E225CB92D646EFB0DE25B1F9ADB0B" import="0">readme.txt</File>
+  </Files>
+</Mod>

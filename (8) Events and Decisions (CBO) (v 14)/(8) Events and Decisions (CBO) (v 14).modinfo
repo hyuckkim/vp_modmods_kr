@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e569b799-91d5-4360-b407-be5146fcec32" version="14">
+  <Properties>
+    <Name>(8) Events and Decisions (CBO)</Name>
+    <Teaser>Events and Decisions for CBO</Teaser>
+    <Description>Events and Decision compatible for CBO</Description>
+    <Authors>Techpriest Enginseer, Sukitract</Authors>
+    <SpecialThanks>Sukitract</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi" />
+    <Mod id="ef8387f0-b053-4c84-90ce-c3c5cb21a580" minversion="0" maxversion="999" title="Community Patch Events" />
+  </Dependencies>
+  <References>
+    <Mod id="828b5b4b-7c62-4afb-a43f-034b596ef5e4" minversion="0" maxversion="999" title="Compatibility Files" />
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="Compatibility Files" />
+  </References>
+  <Blocks>
+    <Mod id="1f941088-b185-4159-865c-472df81247b2" minversion="0" maxversion="999" title="Events and Decisions" />
+  </Blocks>
+  <Files>
+    <File md5="13CEA281AE04D3295B540C7C3F03548F" import="1">Art/Atlas/CoreDecisions_Atlas_128.dds</File>
+    <File md5="584B870FC8B5157876D09CC3F0E9AFDE" import="1">Art/Atlas/CoreDecisions_Atlas_256.dds</File>
+    <File md5="39B6185C5AC3E87BE1152B27655BF8A7" import="1">Art/Atlas/CoreDecisions_Atlas_45.dds</File>
+    <File md5="FB5847336C5739EB3931FABB3095E20A" import="1">Art/Atlas/CoreDecisions_Atlas_64.dds</File>
+    <File md5="D7BFC1BADE08CAE40578661767EA3F3C" import="1">Art/Atlas/CoreDecisions_Atlas_80.dds</File>
+    <File md5="CBEBE0EA044AC31D8C589BA3C7EA55A3" import="1">Art/Atlas/DC45_EnactDecision.dds</File>
+    <File md5="90D1C1143C6385CDDF4D4D6EEC5CE8A7" import="1">Art/Atlas/NotificationDecision128.dds</File>
+    <File md5="51041718D881EC33D80D0FE047531701" import="1">Art/Event_Pictures/Benevolence.dds</File>
+    <File md5="5EBB8FDEFB5FE485B0BDB34D2EB8D891" import="1">Art/Event_Pictures/Event_AntiGov.dds</File>
+    <File md5="2F7D43DD0709EBD2E4B5568CB52FD905" import="1">Art/Event_Pictures/Event_Artist.dds</File>
+    <File md5="605628D845662D3175C1E55B4BDB25FA" import="1">Art/Event_Pictures/Event_Beast.dds</File>
+    <File md5="6438D54CFDBD3B08AEFBA944237FA22B" import="1">Art/Event_Pictures/Event_Industrialization.dds</File>
+    <File md5="CC0031F1BA72E13985F04EAC5778A260" import="1">Art/Event_Pictures/Event_Philosophy.dds</File>
+    <File md5="EC4B579626D4EEF6381DF6887DEDD302" import="1">Art/Event_Pictures/Event_CivilService.dds</File>
+    <File md5="5F9C4CA08DDE8CAF5E039679B929FC15" import="1">Art/Event_Pictures/Event_Comet.dds</File>
+    <File md5="B0A75E8FBFA5FB162710A34B8C9E0A7B" import="1">Art/Event_Pictures/Event_Diplomat.dds</File>
+    <File md5="D71752D38B1B7AB70DB6F1A06B681211" import="1">Art/Event_Pictures/Event_Eclipse.dds</File>
+    <File md5="35A3FA80D0080E314A990D749287F6EC" import="1">Art/Event_Pictures/Event_Eiffel.dds</File>
+    <File md5="D3ECD098B100FE5501BD36D5CEB6BBD2" import="1">Art/Event_Pictures/Event_Gold.dds</File>
+    <File md5="D431F6A27374856B8DDBFB2F62F5D3EC" import="1">Art/Event_Pictures/Event_Harvest.dds</File>
+    <File md5="B2CAEC9C271EB7F7F4372305CE43769D" import="1">Art/Event_Pictures/Event_Knight.dds</File>
+    <File md5="AF38725C9B350F09FA3F877988514E6C" import="1">Art/Event_Pictures/Event_Lair.dds</File>
+    <File md5="CB1BA9AB7A2A131BD0AB050CCD08BB9C" import="1">Art/Event_Pictures/Event_Natives.dds</File>
+    <File md5="395E2C1636BE195AA0AF484DCA6E3AD1" import="1">Art/Event_Pictures/Event_Parliament.dds</File>
+    <File md5="CEFA3720A4924929E83267CF76444C3C" import="1">Art/Event_Pictures/Event_Revolt.dds</File>
+    <File md5="D5713C745954893E3E98C3A92D9BFB49" import="1">Art/Event_Pictures/Event_Scroll.dds</File>
+    <File md5="969E0D94900A464F43E8CA747CE04720" import="1">Art/Event_Pictures/Event_Workshop.dds</File>
+    <File md5="DD745970ACA1DD10ABDE50D66E77E0B0" import="1">Art/Event_Pictures/Malevolence.dds</File>
+    <File md5="BE21DB8E80813CB5FFB0C548308EB7E7" import="1">Art/Event_Pictures/Pragmatic.dds</File>
+    <File md5="821CD8AD302425A07CBC77537574536F" import="1">Art/FontIcons/Decisions_FontIcon.dds</File>
+    <File md5="7CC06EBB8A92511C7C43ACFA22951759" import="1">Art/FontIcons/Decisions_fonticons.ggxml</File>
+    <File md5="B1E95A10DAECCE4B152DFCD34D7CE1F0" import="1">Art/FontIcons/Events_FontIcon.dds</File>
+    <File md5="1C35AA851639971A5850BDDE05612BAF" import="1">Art/FontIcons/Events_fonticons.ggxml</File>
+    <File md5="79F775E87AD8A1561ECAA87F560969AD" import="1">Art/FontIcons/Magistrates_fonticon.dds</File>
+    <File md5="076F47AE5D267B59F426B769964BA7B4" import="1">Art/FontIcons/Magistrates_fonticons.ggxml</File>
+    <File md5="5AE17944D8ED31762CC8D0CA73712E99" import="1">Art/WonderConceptSanMarco.dds</File>
+    <File md5="AB0BAB960537CC42047B2CF7C1A649DA" import="0">Core/DecisionsAddinSupport.sql</File>
+    <File md5="69BF192A70BD3113A5285084806C7D12" import="0">Core/Decisions/BroughtOverNewUnits.sql</File>
+    <File md5="BCF0A77CA4308745BE22BAAD09E86ED9" import="1">Core/Decisions/Civ Decisions/CivDecisions.lua</File>
+    <File md5="8BE6F0F5B9D161B4888AABFE1DFD5CE5" import="0">Core/Decisions/Civ Decisions/CivDecisions.sql</File>
+    <File md5="77AE5C1E17031A3068FCD6C5D8D3DDA9" import="0">Core/Decisions/Civ Decisions/CivDecisions_EN_US.xml</File>
+    <File md5="61F1A8E282EC61E58C5A2956D9666476" import="0">Core/Decisions/Civ Decisions/SanMarco_EN_US.xml</File>
+    <File md5="4031D125BF2A4D035FD22132C4C68D99" import="1">Core/Decisions/Core Decisions/CoreDecisions.lua</File>
+    <File md5="59503716EBD1EA75814A7AF950A7C857" import="0">Core/Decisions/Core Decisions/CoreDecisions.sql</File>
+    <File md5="1AF6C53D8B1FAC2852E30C0F949ED76B" import="0">Core/Decisions/Core Decisions/CoreDecisions_EN_US.xml</File>
+    <File md5="33CF32579B95A62290934BF70547803B" import="0">Core/Decisions/EventMadeDecisions.xml</File>
+    <File md5="00E56F632EE61F74E890172F696A05E5" import="1">Core/Decisions/Religious Decisions/ReligiousDecisions.lua</File>
+    <File md5="3A3BA79ED7777AF90C641B827F654C65" import="0">Core/Decisions/Religious Decisions/ReligiousDecisions_EN_US.xml</File>
+    <File md5="0223C1B62F147F3A1D1E45AF3424E04E" import="0">Core/Decisions_IconTextureAtlases.xml</File>
+    <File md5="2E3FF1CADF9A7020BE0A58942E77008C" import="0">Core/Event/GiftToTheStates.xml</File>
+    <File md5="04B9FC8FAF0811BEB3C1183D0824A1F3" import="0">Core/Event/IncompetentDiplomat.xml</File>
+    <File md5="823956B756F50B8B333314266230410D" import="0">Core/Event/MagistratesEater.xml</File>
+    <File md5="229F0AED376C2C307F42FE4DF074DDFD" import="0">Core/Event/MonstrousBeast.xml</File>
+    <File md5="1238414F4A4D97BAC47549CB88B48140" import="0">Core/Event/TechnologicalBreakthrough.xml</File>
+    <File md5="16ADA37634CDC61CCF7D3217322F153A" import="0">Core/MoralityUpdateToOldEvents.sql</File>
+    <File md5="6648A4CE37BFB45FABB9461BDDE15EEE" import="0">Core/Event/CometSighted.xml</File>
+    <File md5="7DA1A0B0FFA38DA86E68C24CC6EC3636" import="0">Core/Event/Deletion.sql</File>
+    <File md5="B62F971BD145A751B22F62554A92073F" import="0">Core/Event/DestituteNoble.xml</File>
+    <File md5="91746700E5343BFEB6386B329357169D" import="0">Core/Event/DiploChanging.xml</File>
+    <File md5="38DA02D50E98541EB85F50743E19575C" import="0">Core/Event/EiffelProtest.xml</File>
+    <File md5="63AA7FA95128713643C970418E773D76" import="0">Core/Event/ExcellentOfficials.xml</File>
+    <File md5="6B3533354E68827F26FD3FE2F829ED75" import="0">Core/Event/Mercenary.xml</File>
+    <File md5="4B1B6A81975833B5495990108758E1C9" import="0">Core/Event/SettlementEvents/AntiGov.xml</File>
+    <File md5="D87677C727A47B6B44656485018B876A" import="0">Core/Event/SettlementEvents/Natives.xml</File>
+    <File md5="AD6E863BD5DFDB29E810623DB478A471" import="0">Core/Event/SettlementEvents/NewDisease.xml</File>
+    <File md5="2BFEE4C0AED87980EE44968946A4EC72" import="0">Core/Event/SettlementEvents/SacredRuins.xml</File>
+    <File md5="65ADF8F1335DFF4EA09FAE1EE1660A3F" import="0">Core/Event/SettlementEvents/SettlementEventEnglish.xml</File>
+    <File md5="207DBBFF4AE4446EF46DE7E95A153708" import="0">Core/Event/SocialReform.xml</File>
+    <File md5="090753BAC6C99592447416CD6C3AFF87" import="1">EventsAndDecisions_Settings.lua</File>
+    <File md5="DEC099CF37A2A3ABC5FA7EFEB9C6D0F1" import="0">Lua/BuildingResourcePerEra.lua</File>
+    <File md5="52FA7F16770D5B6656A9096C45010B76" import="0">Lua/BuildingYieldFromCityStates.lua</File>
+    <File md5="00351E6BA8486C6E1119AAB6A8F19762" import="1">Lua/EventsAndDecisions_Utilities.lua</File>
+    <File md5="ECA62F30732B6ADBB594EE5E260AE238" import="0">Lua/LuaEvents/LuaEvents.PlayerEnteredNewEra.lua</File>
+    <File md5="5244308719C5B41D37E35BCE6F354D41" import="1">Lua/PlotIterators.lua</File>
+    <File md5="1F27C1E67A74B81C03AD62C56CB2D56A" import="0">Lua/San Marco/SanMarco_Functions.lua</File>
+    <File md5="6CB8C241C57E8D228C8B7DC21552560F" import="0">Lua/San Marco/SanMarco_Functions.xml</File>
+    <File md5="8A5FC22EB73A2C2106DE16D1A3E98AF2" import="1">Lua/Sukritact_SaveUtils.lua</File>
+    <File md5="396C9E73910D4B1F52D85F4C9DD41C59" import="1">Lua/TableSaverLoader/EnD_TSLSerializerV3.lua</File>
+    <File md5="7C83BC818781F9DFFDA2B2A06BC8978F" import="1">Lua/TableSaverLoader/TableSaverLoader016.lua</File>
+    <File md5="FC62CA3A1C67B71BA4D3CCAD467DF9D0" import="1">Lua/TableSaverLoader/TSLSerializerCoreV3.lua</File>
+    <File md5="3A6B19A36D0DDFB2BB6D381F4DA13706" import="1">Lua/TableSaverLoader/TSL_Sukritact_SaveUtils.lua</File>
+    <File md5="64DF635BD57CDEB13DC1038934568A7E" import="0">Lua/UI/CityInfoStack.lua</File>
+    <File md5="120EB71025973A8A48B38314241DD0B3" import="0">Lua/UI/CityInfoStack.xml</File>
+    <File md5="9269943D59FAA032932449B93A001DCB" import="0">Lua/UI/EnactDescisionsPopup.lua</File>
+    <File md5="C6415E65EF21C7D489B2A7DE4AC50317" import="0">Lua/UI/EnactDescisionsPopup.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/DecisionsAddinSupport.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Core Decisions/CoreDecisions.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Core Decisions/CoreDecisions_EN_US.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Civ Decisions/CivDecisions.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Civ Decisions/CivDecisions_EN_US.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Religious Decisions/ReligiousDecisions_EN_US.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions_IconTextureAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/Civ Decisions/SanMarco_EN_US.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/BroughtOverNewUnits.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Decisions/EventMadeDecisions.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/Deletion.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Event/CometSighted.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/DestituteNoble.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/EiffelProtest.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/ExcellentOfficials.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/GiftToTheStates.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/IncompetentDiplomat.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/Mercenary.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/MonstrousBeast.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SocialReform.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/TechnologicalBreakthrough.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/DiploChanging.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SettlementEvents/Natives.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SettlementEvents/AntiGov.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SettlementEvents/SettlementEventEnglish.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SettlementEvents/NewDisease.xml</UpdateDatabase>
+      <UpdateDatabase>Core/Event/SettlementEvents/SacredRuins.xml</UpdateDatabase>
+      <UpdateDatabase>Core/MoralityUpdateToOldEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Event/MagistratesEater.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/BuildingResourcePerEra.lua">
+      <Name>BuildingResourcePerEra</Name>
+      <Description>BuildingResourcePerEra</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/BuildingYieldFromCityStates.lua">
+      <Name>BuildingYieldFromCityStates</Name>
+      <Description>BuildingYieldFromCityStates</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/UI/EnactDescisionsPopup.xml">
+      <Name>EnactDecisionsPopup</Name>
+      <Description>EnactDecisionsPopup</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/UI/CityInfoStack.xml">
+      <Name>CityInfoStack</Name>
+      <Description>CityInfoStack</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/San Marco/SanMarco_Functions.lua">
+      <Name>SanMarco_Functions</Name>
+      <Description>SanMarco_Functions</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/LuaEvents/LuaEvents.PlayerEnteredNewEra.lua">
+      <Name>PlayerEnteredNewEra</Name>
+      <Description>PlayerEnteredNewEra</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

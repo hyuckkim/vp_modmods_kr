@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3ea46c4f-6e13-46bf-ba28-71a3ffa85b53" version="12">
+  <Properties>
+    <Name>(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>[ICON_BULLET]Adds [COLOR_CYAN]Louisiana[ENDCOLOR], under the great Joseph Broussard, a.k.a. Beausoleil! as a playable Civilization.
+			[NEWLINE][ICON_BULLET]Requires at least the [COLOR_POSITIVE_TEXT]4.2[ENDCOLOR] version of Vox Populi and MUCfVP (tested also with VP4.21.1).</Teaser>
+    <Description>Adds Louisiana, under the great Joseph Broussard, a.k.a. Beausoleil!</Description>
+    <Authors>Gwennog et Hinin</Authors>
+    <SpecialThanks>look at the forum page</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="(over) More Unique Components for VP" />
+  </References>
+  <Blocks />
+  <Files>
+	<File md5="692ddf1d1afb0914695abb5b83c2815a" import="0">4UC/4UC_GH_Louisiana_Compatibility.sql</File>
+	<File md5="3aee5a3ad9b5c364bd9e52290be6b6b1" import="0">4UC/4UC_GH_Louisiana_Functions.lua</File>
+	<File md5="300b2684fdbcf01fba8c2b06e7971877" import="0">4UC/4UC_GH_Louisiana_GameText.xml</File>
+	<File md5="7bbed5ad6b6c62fdb3e4b8ae1dee11a0" import="1">Art/Icons/Flag_Louisiana_GVoyageur.dds</File>
+	<File md5="9b88fdd5ba3caec8f15aedb75d88065b" import="1">Art/Icons/Flag_Louisiana_Krewe.dds</File>
+	<File md5="0b8c7ac06e0dcd5af6fdfebabf0e1bc0" import="1">Art/Icons/GH_Louisiana_Atlas_032.dds</File>
+	<File md5="59a6f4215e0fd91f0a727f911812935f" import="1">Art/Icons/GH_Louisiana_Atlas_045.dds</File>
+	<File md5="3ee9f71d880aeb91f76786060e25e2b8" import="1">Art/Icons/GH_Louisiana_Atlas_064.dds</File>
+	<File md5="7f88445539b9e623d2e3047bdb21021c" import="1">Art/Icons/GH_Louisiana_Atlas_080.dds</File>
+	<File md5="f17b040212dda4f6e7411786208789a0" import="1">Art/Icons/GH_Louisiana_Atlas_128.dds</File>
+	<File md5="aaee590c155ae2ce080ff88770e4e3b5" import="1">Art/Icons/GH_Louisiana_Atlas_256.dds</File>
+	<File md5="2231e202d043209db981eaf847396d3a" import="1">Art/Icons/LouisianaAlpha128.dds</File>
+	<File md5="3fb5754aa1bd7c3ddb08a79d2ac07559" import="1">Art/Icons/LouisianaAlpha16.dds</File>
+	<File md5="0db072eae873d47af0f5b39ca2ccb0f6" import="1">Art/Icons/LouisianaAlpha24.dds</File>
+	<File md5="311ef6d2a638ab1b476c1aed1b999ed5" import="1">Art/Icons/LouisianaAlpha256.dds</File>
+	<File md5="974ebdf2a11ea8266ab6facdec471f8f" import="1">Art/Icons/LouisianaAlpha32.dds</File>
+	<File md5="5e7b760b0e636635d275f9c9491540a5" import="1">Art/Icons/LouisianaAlpha48.dds</File>
+	<File md5="baa69df039df86e8025ca6add00c8f91" import="1">Art/Icons/LouisianaAlpha64.dds</File>
+	<File md5="931958d894f187a7b891fd1285b248b8" import="1">Art/Icons/LouisianaAlpha80.dds</File>
+	<File md5="694d03364a608c443af47971b4039e62" import="1">Art/Icons/sv_Cajun_Cabin.dds</File>
+	<File md5="b14e5c106de712fc7d7e8aaf9bd78df6" import="1">Art/Icons/sv_Louisiana_GVoyageur.dds</File>
+	<File md5="c6460e7ef6a33b4086110d5826224a0d" import="1">Art/Icons/sv_Louisiana_Krewe.dds</File>
+	<File md5="338f6b4cb2d7ccac56bad64098c8a676" import="1">Art/Icons/3DModel/Anishinaabe_Ogichidaa/CL_Ogichidaa.dds</File>
+	<File md5="765072d82d6be794b3f0b6cf3b823483" import="1">Art/Icons/3DModel/Anishinaabe_Ogichidaa/CL_Ogichidaa.gr2</File>
+	<File md5="4405d08d71154a6ef8080bc9939d7b12" import="1">Art/Icons/3DModel/Anishinaabe_Ogichidaa/GV_Ogichidaa.fxsxml</File>
+	<File md5="ad045e31e935c18c2233af25c6c0163d" import="1">Art/Icons/3DModel/Appalachia_Skirmisher/GV_skirmisher.fxsxml</File>
+	<File md5="ac41c06ba721315512f26433220fedf7" import="1">Art/Icons/3DModel/Appalachia_Skirmisher/no_gloss.dds</File>
+	<File md5="c7abb27c750827f2d30c26be6375236e" import="1">Art/Icons/3DModel/Appalachia_Skirmisher/skirmisher.dds</File>
+	<File md5="47bfb384d114a91b844b1b00382c68f9" import="1">Art/Icons/3DModel/Appalachia_Skirmisher/skirmisher.gr2</File>
+	<File md5="827131a79db7960bdf75b6c8b78b0292" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin.fxsxml</File>
+	<File md5="03f98bf72a738c4d79796a343952ce7a" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin.gr2</File>
+	<File md5="80585bb787007c826ae9ba564ff5c80d" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_DIFF.dds</File>
+	<File md5="830468bdf745b6007298c8a8e96d41c7" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_DIFF_PL.dds</File>
+	<File md5="5dd6f32899017aa7ce8790e3a943803b" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_hb.fxsxml</File>
+	<File md5="03f98bf72a738c4d79796a343952ce7a" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_hb.gr2</File>
+	<File md5="901dfba85640a06332580f153e617a31" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_pl.fxsxml</File>
+	<File md5="1e50d6afada6275981d1e433d58ff0d9" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_pl.gr2</File>
+	<File md5="34c7f7911118b8ef8c15984449e1440b" import="1">Art/Icons/3DModel/Bayou_Cabin/Bayou_Cabin_SREF.dds</File>
+	<File md5="fc5f5ef5fbf8eabbedba380d45ba7d7e" import="1">Art/Icons/3DModel/Chasqui/GV_IncaScout.dds</File>
+	<File md5="132572be1f6b473dddb75c5aa5515051" import="1">Art/Icons/3DModel/Chasqui/GV_IncaScout.fbx</File>
+	<File md5="9d6f85b1272783df00e5f2115e76efc7" import="1">Art/Icons/3DModel/Chasqui/GV_IncaScout.fxsxml</File>
+	<File md5="72d4895aeb796f53033000e8cb0f3253" import="1">Art/Icons/3DModel/Chasqui/GV_IncaScout.gr2</File>
+	<File md5="775d14f9c2c705aca94c54405bb3d993" import="1">Art/Icons/3DModel/Chasqui/GV_IncaScout_sref.dds</File>
+	<File md5="f4d7042166a6fabd557a4c3377d099c1" import="1">Art/Icons/3DModel/Cherokee_Aniwina/civ5_irogwi1.gr2</File>
+	<File md5="6ce49639a6d8c67a3ddf5eb878ce60f7" import="1">Art/Icons/3DModel/Cherokee_Aniwina/GV_Aniwina.fxsxml</File>
+	<File md5="b089d567d510005c1aadbb6bb54615e4" import="1">Art/Icons/3DModel/Cherokee_Aniwina/irogwi1.dds</File>
+	<File md5="c215a2a64d99d3eb60058ffbe086ceea" import="1">Art/Icons/3DModel/Cherokee_Aniwina/irogwi1I.blend</File>
+	<File md5="490c6d3814f24c7c4e96f4fe8de4033d" import="1">Art/Icons/3DModel/Cherokee_Aniwina/irogwi1_sref.dds</File>
+	<File md5="bb3843687eb3e15f8ef748444a9e186b" import="1">Art/Icons/3DModel/Grand_Voyageur/Grand_Voyageur.fxsxml</File>
+	<File md5="47f7c7ebfe4864fb52232a374cbc87ad" import="1">Art/Icons/3DModel/Grand_Voyageur/Grand_Voyageur.gr2</File>
+	<File md5="ce1ab8634de498e0b24bac4c4f4263bb" import="1">Art/Icons/3DModel/Grand_Voyageur/Grand_Voyageur_diff.dds</File>
+	<File md5="8f41baf821145d1b45daa138a90053e3" import="1">Art/Icons/3DModel/Grand_Voyageur/Grand_Voyageur_sref.dds</File>
+	<File md5="9a0f0b4d893f04f860b16b24b564b744" import="1">Art/Icons/3DModel/Hammock_Gunman/black_4x4.dds</File>
+	<File md5="0b566474bab7c9a6c759d361b3107b5f" import="1">Art/Icons/3DModel/Hammock_Gunman/CuirassierMusket.dds</File>
+	<File md5="70d7caa7fd4718c545ed8c1f2bb3b664" import="1">Art/Icons/3DModel/Hammock_Gunman/feathers_64.dds</File>
+	<File md5="20a2557c99ccdd3b39186c9174c7edbc" import="1">Art/Icons/3DModel/Hammock_Gunman/GV_Hammock.fxsxml</File>
+	<File md5="f1144003774057c8a24dc5364946605d" import="1">Art/Icons/3DModel/Hammock_Gunman/native_rifleman.gr2</File>
+	<File md5="5f94f57f071c31a8b49c0f019d1642cc" import="1">Art/Icons/3DModel/Hammock_Gunman/Native_Warrior.dds</File>
+	<File md5="c2c94a8031506724eba91d3af931bb0f" import="1">Art/Icons/3DModel/Hammock_Gunman/scout05.dds</File>
+	<File md5="6b28ad9158c11028078b5d43a1d5d1c1" import="1">Art/Icons/3DModel/Iroquois_Musketman/civ5_iromu1.gr2</File>
+	<File md5="f5f878941e755790f21eb64bfba7ec07" import="1">Art/Icons/3DModel/Iroquois_Musketman/GV_IroquoisMusketman.fxsxml</File>
+	<File md5="2ac1e94e4c7bdf54a411befa71a8df05" import="1">Art/Icons/3DModel/Iroquois_Musketman/iromu1.dds</File>
+	<File md5="4eb1a39d6ce0082bc25f7c61688f9fd0" import="1">Art/Icons/3DModel/Iroquois_Musketman/iromu1_sref.dds</File>
+	<File md5="5190d99906e0dc20e29afcfbe55ad293" import="1">Art/Icons/3DModel/Iroquois_Scout/civ5_irosc1.gr2</File>
+	<File md5="cee00a13841c6045e2c6fca9bcc10239" import="1">Art/Icons/3DModel/Iroquois_Scout/GV_Scout_Iroquois.fxsxml</File>
+	<File md5="9baa3e9e85a167baac2b5984eac23354" import="1">Art/Icons/3DModel/Iroquois_Scout/irosc1.dds</File>
+	<File md5="f4f7272c6e2c028fa2127a2716f9435f" import="1">Art/Icons/3DModel/Iroquois_Scout/irosc1_sref.dds</File>
+	<File md5="7abaf38aa57547efe90a98a9e944f295" import="1">Art/Icons/3DModel/Krewe/Krewe_sref.dds</File>
+	<File md5="c96123b3c64e00641e0dd818c4076d2a" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_1.dds</File>
+	<File md5="abd24c69206b03ae7cce416a135eef2e" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_1.fxsxml</File>
+	<File md5="3470930c2a24e0223329eb898e39dea5" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_1.gr2</File>
+	<File md5="a7006c038a517c520b57e0def40a4d9e" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_2.dds</File>
+	<File md5="8f17eb8e471ef6e47e616a6e5f1081da" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_2.fxsxml</File>
+	<File md5="09a773390616cea7e6a3521037bdda85" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_2.gr2</File>
+	<File md5="8a34b2e393afcc5beb435c1774b4d81c" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_3.dds</File>
+	<File md5="fc2e0feca87342c1452078b7605c3188" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_3.fxsxml</File>
+	<File md5="a1f3bae29ff6e36c41b29b34c46a442a" import="1">Art/Icons/3DModel/Krewe/Louisiana_Krewe_3.gr2</File>
+	<File md5="540cfc67ee11495fbc8787bf9072fdeb" import="1">Art/Icons/PI/Louisiana_PI_016.dds</File>
+	<File md5="1973bbfafc2b8c0c86990ddde1146170" import="1">Art/Icons/PI/Louisiana_PI_032.dds</File>
+	<File md5="85a1fc16e3c157c00eafe08ea88056bf" import="1">Art/Icons/PI/Louisiana_PI_045.dds</File>
+	<File md5="fb494f4c34e5c0cb6cb81b9923b869d7" import="1">Art/Icons/PI/Louisiana_PI_064.dds</File>
+	<File md5="cb82cdf82995a177a08dcf22c42db12c" import="1">Art/Icons/PI/Louisiana_PI_256.dds</File>
+	<File md5="0548ded409afbea8175837b0ab9e586a" import="1">Art/Icons/Shrimp/ShrimpFontIcons.dds</File>
+	<File md5="fa7a9bff1c03e8cdaf1012029d8f5027" import="1">Art/Icons/Shrimp/ShrimpFontIcons_22.ggxml</File>
+	<File md5="46c2f34d7b7e6fb480be0e5a6bb9f321" import="1">Art/Icons/Shrimp/Shrimp_045.dds</File>
+	<File md5="e830787776ef99c8f68a398a08ed95f1" import="1">Art/Icons/Shrimp/Shrimp_064.dds</File>
+	<File md5="eca3cd4f27d25b0383a2948933f55c10" import="1">Art/Icons/Shrimp/Shrimp_080.dds</File>
+	<File md5="ef137a0298f05199262aa8e89ff35cda" import="1">Art/Icons/Shrimp/Shrimp_256.dds</File>
+	<File md5="ef137a0298f05199262aa8e89ff35cda" import="1">Art/Icons/Shrimp/sv_shrimp.dds</File>
+	<File md5="2eed5a473b4e3caef12650fbac4a6fce" import="1">Art/Leaderscene/GH_Louisiana_Beausoleil_Leaderscene.dds</File>
+	<File md5="c9df1ab1e1f4ba9d5364ae2ec8a5c7d1" import="1">Art/Leaderscene/GH_Louisiana_Beausoleil_Leaderscene.xml</File>
+	<File md5="1bf6c81a3029f3cfbe273607e2893dfe" import="1">Art/Maps/GH_Beausoleil_DOM.dds</File>
+	<File md5="6eb6eb36d698eec759f6a660f7d145e6" import="1">Art/Maps/GH_Louisiana_Map.dds</File>
+	<File md5="a77db1a6e00e256d2a68349128a559e4" import="1">Art/Music_Picture/BG_01_Allen_Toussaint.dds</File>
+	<File md5="8250c1df69fac6c24afdad4438d67288" import="1">Art/Music_Picture/BG_03_Aurora_Nealand.dds</File>
+	<File md5="29ee8d8f82c68b6f3418dc62b3cd0f44" import="1">Art/Music_Picture/BG_05_Clifton_Chenier.dds</File>
+	<File md5="c65907231718c29a296d411a4e44a6db" import="1">Art/Music_Picture/BG_06_Creedence_Clearwater_Revival.dds</File>
+	<File md5="0d05310f657394c4611d041fda6843a8" import="1">Art/Music_Picture/BG_07_Dr_John.dds</File>
+	<File md5="16b310c62530d8380b449d91cbdd0bf3" import="1">Art/Music_Picture/BG_08_Rod_Bernard.dds</File>
+	<File md5="57c0603e96a3bb71190d601e5ec9a46d" import="1">Art/Music_Picture/BG_09_Fat_Domino.dds</File>
+	<File md5="0fb7df772a8c7a87d43dff83612939c1" import="1">Art/Music_Picture/BG_10_Jelly_Roll_Morton.dds</File>
+	<File md5="bb660e68b17711ce14c754c7ab7aebc8" import="1">Art/Music_Picture/BG_12_Kid_Ory.dds</File>
+	<File md5="7f644e96f8e2fddbe0d62a15f98fada7" import="1">Art/Music_Picture/BG_13_Lightnin_slim.dds</File>
+	<File md5="6374e18ad4b383db6b7e16f5335dd97c" import="1">Art/Music_Picture/BG_14_Louis_Armstrong.dds</File>
+	<File md5="d2555bdbf2535a5f3ff510d171cb9779" import="1">Art/Music_Picture/BG_15_Mahalia_Jackson.dds</File>
+	<File md5="ff546c2ec6c8b6b5c1d0a60e19d7428e" import="1">Art/Music_Picture/BG_16_Professor_Longhair.dds</File>
+	<File md5="38139b8f687b3efc0a726da907f6503d" import="1">Art/Music_Picture/BG_18_Sydney_Bechet.dds</File>
+	<File md5="bf2182c8a07d72b2eba3935193d0a766" import="1">Art/Music_Picture/BG_19_The_Meters.dds</File>
+	<File md5="9e42e090e53b3decbbf96fdbdc0054c3" import="1">Art/Music_Picture/BG_21_Zachary_Richard.dds</File>
+	<File md5="14cde0727973eda4d9be4218866a7d6c" import="1">Art/Music_Picture/BG_22_Zydeco_Joe.dds</File>
+	<File md5="82d2e0f7fa285ad95c32e083f93fb402" import="1">Art/Music_Picture/BG_23_Jon_Batiste.dds</File>
+	<File md5="dbd28b5b9b58b95547cbc5c93cf11fb8" import="1">Art/Music_Picture/BG_Blues.dds</File>
+	<File md5="9661c9556433c12da2e05120c562627e" import="1">Art/Music_Picture/BG_Cajun.dds</File>
+	<File md5="9be38a394c9d5c8bb45ffce0cc07ce05" import="1">Art/Music_Picture/BG_Cajun_Zydeco.dds</File>
+	<File md5="f10c69b1348817ebeb4a3fb0e825468b" import="1">Audio/Beausoleil_Peace.mp3</File>
+	<File md5="8077d51cf8c1790e3a83fe3d4081d94e" import="1">Audio/Beausoleil_War.mp3</File>
+	<File md5="33c9808ac1daf7e4d2a12d62d1b55822" import="1">Audio/K__001.mp3</File>
+	<File md5="3f78d34df218b6d8dbef282095ae3ce4" import="1">Audio/K__002.mp3</File>
+	<File md5="8dcb65f4abf42d803b52fb4dc23672b5" import="1">Audio/K__003.mp3</File>
+	<File md5="41abf489575a0b7bbee0635d7740ccfe" import="1">Audio/K__004.mp3</File>
+	<File md5="61814eb30ad1a954b405612778c88d7b" import="1">Audio/K__005.mp3</File>
+	<File md5="c10c3898bd0545705033a063b8f0d5be" import="1">Audio/K__006.mp3</File>
+	<File md5="fc57cbf7ff697f062879e86e663f587f" import="1">Audio/K__007.mp3</File>
+	<File md5="b66c7313cecad155437320cd9aec5f64" import="1">Audio/K__008.mp3</File>
+	<File md5="9fe56531bb504669418c9199d76dbcd3" import="1">Audio/K__009.mp3</File>
+	<File md5="a632bbfb5f9ba060d437985361a602ba" import="1">Audio/K__010.mp3</File>
+	<File md5="6f5554ee2d234bc9a163fafbe56cc928" import="1">Audio/K__011.mp3</File>
+	<File md5="d6aa139cb01a55aa669c39a9d8a495c6" import="1">Audio/K__012.mp3</File>
+	<File md5="c915f6a98985662377da2667892de39e" import="1">Audio/K__013.mp3</File>
+	<File md5="536f28c3e9746471231c5851a466c5fc" import="1">Audio/K__014.mp3</File>
+	<File md5="6dbbf07b4799ae2886fdb50cde6cf45b" import="1">Audio/K__015.mp3</File>
+	<File md5="9271a8f9980b40cff38027188d23d0e5" import="1">Audio/K__016.mp3</File>
+	<File md5="a154d6943309dc72b2cbe3845797ab95" import="1">Audio/K__017.mp3</File>
+	<File md5="4e863e36042e765e44380cb745d49a0f" import="1">Audio/K__018.mp3</File>
+	<File md5="b64f4590dbcb8eb87c0cdfeab1dd16fc" import="1">Audio/K__019.mp3</File>
+	<File md5="08732af6a828a1ab672e810a9a0d3777" import="1">Audio/K__020.mp3</File>
+	<File md5="5db34f8dba1da715c44a6904ac31c252" import="1">Audio/K__021.mp3</File>
+	<File md5="39d256fcfdd34456f6600aaaea70db67" import="1">Audio/K__022.mp3</File>
+	<File md5="0145613d41ff525a527072813ab72dc8" import="1">Audio/K__023.mp3</File>
+	<File md5="7d1491047415778eba26ce958a4508a2" import="0">Core/GH_Louisiana_ArtDefines.sql</File>
+	<File md5="b15065d5602099b908b6381436cc5145" import="0">Core/GH_Louisiana_GameDefines.sql</File>
+	<File md5="25fdae8780827c6e669255b1dd9cc774" import="0">Core/GH_Louisiana_GameDefines_Diplomacy.sql</File>
+	<File md5="e330001e0fa5b524b5e3f8b3c3a39dfc" import="0">Core/GH_Louisiana_GameText.xml</File>
+	<File md5="ca41f65d5fe840dab1d4dcc66699fcf0" import="0">Core/GH_Louisiana_GameText_Diplomacy.xml</File>
+	<File md5="2c5ef6c6944b29a81af13a73b1c64f6f" import="0">Lua/GH_Louisiana_Functions.lua</File>
+	<File md5="d63dc8bb6aa0f310dd55b264db49c7e2" import="1">Lua/Utilities/PlotIterators.lua</File>
+	<File md5="5754b1be6e37a2f9d04d9d4149e5cddf" import="1">Lua/Utilities/SaveUtils.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/GH_Louisiana_ArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/GH_Louisiana_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/GH_Louisiana_GameDefines_Diplomacy.sql</UpdateDatabase>
+      <UpdateDatabase>Core/GH_Louisiana_GameText.xml</UpdateDatabase>
+      <UpdateDatabase>Core/GH_Louisiana_GameText_Diplomacy.xml</UpdateDatabase>
+	  <UpdateDatabase>4UC/4UC_GH_Louisiana_Compatibility.sql</UpdateDatabase>
+	  <UpdateDatabase>4UC/4UC_GH_Louisiana_GameText.xml</UpdateDatabase>	  
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/GH_Louisiana_Functions.lua">
+      <Name>GH_Louisiana_Functions</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="4UC/4UC_GH_Louisiana_Functions.lua">
+      <Name>4UC_GH_Louisiana_Functions</Name>
+      <Description>
+      </Description>
+	</EntryPoint>
+  </EntryPoints>
+</Mod>

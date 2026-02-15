@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "WAAUAUIMO INT", "WAAUAUIMO INT\WAAUAUIMO INT.civ5proj", "{AA8FE240-9083-408F-9B08-5928C32B34A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Default|x86.ActiveCfg = Default|x86
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Default|x86.Build.0 = Default|x86
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Package Only|x86.ActiveCfg = Package Only|x86
+		{AA8FE240-9083-408F-9B08-5928C32B34A2}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

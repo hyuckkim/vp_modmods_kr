@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--SPAIN-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Fusilero[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_KNIGHT">
+			<Text>[COLOR_SELECTED_TEXT]Caballero[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_PIKEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Piquero[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_WARRIOR">
+			<Text>[COLOR_SELECTED_TEXT]Caetrati[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_PARATROOPER">
+			<Text>[COLOR_SELECTED_TEXT]Brigada Almogávares[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_SPAIN_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Infantería[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

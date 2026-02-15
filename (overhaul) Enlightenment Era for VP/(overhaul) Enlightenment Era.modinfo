@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="14">
+<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" version="16">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP</Name>
     <Teaser>Expands the game to include the [COLOR_POSITIVE_TEXT]Enlightenment Era[ENDCOLOR].</Teaser>
@@ -28,7 +28,9 @@
   <Dependencies>
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
-  <References />
+  <References>
+    <Mod id="9784d016-f5cc-80b3-b37e-a73cdc315fe9" minversion="0" maxversion="999" title="Torpedo Boat" />
+  </References>
   <Blocks>
     <Mod id="ce8aa614-7ef7-4a45-a179-5329869e8d6d" minversion="0" maxversion="999" title="Enlightenment Era" />
     <Mod id="af398f38-90a0-45f0-9831-6c712c86061b" minversion="0" maxversion="999" title="(8) VP-EE Compatibility" />
@@ -74,7 +76,6 @@
     <File md5="C0139EB58B3E579C480334B7F15699FA" import="1">Art/Atlases/Units/RER_UNITS_atlas_64.dds</File>
     <File md5="57F7125992D72E4E6782DE1058E8C77A" import="1">Art/Atlases/Units/RER_UNITS_atlas_80.dds</File>
     <File md5="63DBEA3C9A68ECE52947B3AFF733FF1C" import="1">Art/Atlases/Units/Unit Flags/Enlightenment_UnitFlags_32.dds</File>
-    <File md5="88660A6952D141496108A10558598C05" import="1">Art/Atlases/Units/Unit Flags/LandsknechtFlag.dds</File>
     <File md5="447695836D843885AC0C6A5C9E85BE09" import="1">Art/Atlases/Units/Unit Flags/sv_2hander.dds</File>
     <File md5="25AA5E4360A27D848F5DFA9BA0354F68" import="1">Art/Atlases/Units/Unit Flags/sv_Carrack.dds</File>
     <File md5="B819136D316FC157307FD84A39D50891" import="1">Art/Atlases/Units/Unit Flags/sv_Dragoon.dds</File>
@@ -82,12 +83,15 @@
     <File md5="C509B6310155B4C133A288C453BB2345" import="1">Art/Atlases/Units/Unit Flags/sv_FieldGun.dds</File>
     <File md5="321FE6BE3AC922A3F4512846AB45711B" import="1">Art/Atlases/Units/Unit Flags/sv_Galleon.dds</File>
     <File md5="FE96BB4A1626EE4B306D907FF8D682C2" import="1">Art/Atlases/Units/Unit Flags/sv_Landsknecht.dds</File>
+    <File md5="88660A6952D141496108A10558598C05" import="1">Art/Atlases/Units/Unit Flags/LandsknechtFlag.dds</File>
     <File md5="9626BDF4DFC2B0A9F97CC55325BA397C" import="1">Art/Atlases/Units/Unit Flags/sv_Line_Infantry.dds</File>
     <File md5="491F831F873CC3A793FB8F7F61BE8D9C" import="1">Art/Atlases/Units/Unit Flags/sv_ShipoftheLine.dds</File>
     <File md5="14F42BFDF97CFCD443560FEDE2650C6F" import="1">Art/Atlases/Units/Unit Flags/sv_Skirmisher.dds</File>
     <File md5="8805C748FF57C52322FC9E566BAFDE88" import="1">Art/Atlases/Units/Unit Flags/sv_Uhlan.dds</File>
-    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/BombardFlag.dds</File>
     <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/sv_Bombard.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/BombardFlag.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/sv_Cuirassier.dds</File>
+    <File md5="00000000000000000000000000000002" import="1">Art/Atlases/Units/Unit Flags/flag_Cuirassier.dds</File>
 
     <File md5="B20DE2D0E51368D396CA3F26A21617C5" import="1">Art/Atlases/Wonders/Enlightenment_Wonders_128.dds</File>
     <File md5="8A74C56D776D108A5959339CC9E2D22F" import="1">Art/Atlases/Wonders/Enlightenment_Wonders_256.dds</File>
@@ -178,15 +182,6 @@
     <File md5="74BC99243EC3342CE443E5E5A2C1DC6E" import="1">Art/Unit Models/Dragoon/CarabinierGuard.dds</File>
     <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Dragoon/CarabinierGuard_sref.dds</File>
 
-    <File md5="F2F9FB35212A5944D17EEABCCC997FE2" import="1">Art/Unit Models/Ship of the Line/shipoftheline.fxsxml</File>
-    <File md5="70CBBFB6EE6A7321C7C1EF75A9404F91" import="1">Art/Unit Models/Ship of the Line/shipoftheline.gr2</File>
-    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Unit Models/Ship of the Line/shipoftheline_diff.dds</File>
-    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Unit Models/Ship of the Line/shipoftheline_dmg_diff.dds</File>
-    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Unit Models/Ship of the Line/shipoftheline_sref.dds</File>
-    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_diff.dds</File>
-    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_dmg_diff.dds</File>
-    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_sref.dds</File>
-
     <File md5="622FD133E9BC01AE23B8C049A126E8B3" import="1">Art/Unit Models/Skirmisher/civ5_engmm1.fxsxml</File>
     <File md5="DBB87A7D7EB7288E063383CE7359399B" import="1">Art/Unit Models/Skirmisher/civ5_engmm1.gr2</File>
     <File md5="D6FD89034E3F5FA0C6B4827EDC4F77B5" import="1">Art/Unit Models/Skirmisher/engmm1.dds</File>
@@ -197,19 +192,48 @@
     <File md5="34351D1368AEB6685A4C2E468E4B7E72" import="1">Art/Unit Models/Terc/TER_PIKE_piquero.gr2</File>
     <File md5="55D2A7C187E45D58FB688D5FFDBCFD1F" import="1">Art/Unit Models/Terc/TER_PIKE_sref.dds</File>
 
-    <File md5="D0C4BEB025D5A5ABB61E064DF03F9C0E" import="1">Art/Unit Models/Uhlan/gerlr1.blend</File>
-    <File md5="7AB2730CB0FE653F11961FEC01B3BFDE" import="1">Art/Unit Models/Uhlan/gerlr1.dds</File>
-    <File md5="E293930068E4151E47DFEEC55606C2FA" import="1">Art/Unit Models/Uhlan/gerlr1.fbx</File>
-    <File md5="2501B7E45C14B210CCD1549FF819D2BF" import="1">Art/Unit Models/Uhlan/gerlr1.fxsxml</File>
-    <File md5="76F2BD42FCBC78E4ED51005C4EF88029" import="1">Art/Unit Models/Uhlan/gerlr1.gr2</File>
-    <File md5="D1CCFC3064BBA4A6439F5F71403F79BF" import="1">Art/Unit Models/Uhlan/gerlr1_sref.dds</File>
-
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_bombard.fxsxml</File>
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_bombard.gr2</File>
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_Bombard_DIFF.dds</File>
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_Bombard_SREF.dds</File>
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_musketman_diff.dds</File>
     <File md5="R0000000000000000000000000000002" import="1">Art/Unit Models/Bombard/RER_musketman_sref.dds</File>
+
+    <File md5="3262446C952B043739B202CFE7AF4296" import="1">Art/Unit Models/Sword_Cuirassier/ca_sw1.fxsxml</File>
+    <File md5="CEC592408E19F0A849FB0D5FEC0353B4" import="1">Art/Unit Models/Sword_Cuirassier/ca_sw1.gr2</File>
+    <File md5="74BC99243EC3342CE443E5E5A2C1DC6E" import="1">Art/Unit Models/Sword_Cuirassier/ca_sw1.dds</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Sword_Cuirassier/ca_sw1.indiedefs</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Sword_Cuirassier/ca_sw1_sref.dds</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Sword_Cuirassier/hakkapeliitta_diff.dds</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/Sword_Cuirassier/hakkapeliitta_sref.dds</File>
+
+    <File md5="7151B191973CDBA2713C1CD1A1EBA93F" import="1">Art/Unit Models/Harquebusier/harquebusier.fxsxml</File>
+    <File md5="34351D1368AEB6685A4C2E468E4B7E72" import="1">Art/Unit Models/Harquebusier/harquebusier.gr2</File>
+    <File md5="55D2A7C187E45D58FB688D5FFDBCFD1F" import="1">Art/Unit Models/Harquebusier/confederate_cavalry_sref.dds</File>
+    <File md5="630FF05F9A7D08517EC29BE411F41410" import="1">Art/Unit Models/Harquebusier/confederate_cavalry_diff.dds</File>
+
+	<!-- not used atm
+    <File md5="F2F9FB35212A5944D17EEABCCC997FE2" import="1">Art/Unit Models/Ship of the Line/shipoftheline.fxsxml</File>
+    <File md5="70CBBFB6EE6A7321C7C1EF75A9404F91" import="1">Art/Unit Models/Ship of the Line/shipoftheline.gr2</File>
+    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Unit Models/Ship of the Line/shipoftheline_diff.dds</File>
+    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Unit Models/Ship of the Line/shipoftheline_dmg_diff.dds</File>
+    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Unit Models/Ship of the Line/shipoftheline_sref.dds</File>
+    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_diff.dds</File>
+    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_dmg_diff.dds</File>
+    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Unit Models/Ship of the Line/u_english_shipoftheline_sref.dds</File>
+
+    <File md5="3262446C952B043739B202CFE7AF4296" import="1">Art/Unit Models/New_Cuirassier/freca1.fxsxml</File>
+    <File md5="CEC592408E19F0A849FB0D5FEC0353B4" import="1">Art/Unit Models/New_Cuirassier/freca1.gr2</File>
+    <File md5="74BC99243EC3342CE443E5E5A2C1DC6E" import="1">Art/Unit Models/New_Cuirassier/freca1.dds</File>
+    <File md5="2C689BED06EF457D40A95B2F76B4A5B6" import="1">Art/Unit Models/New_Cuirassier/freca1_sref.dds</File>
+
+    <File md5="D0C4BEB025D5A5ABB61E064DF03F9C0E" import="1">Art/Unit Models/Uhlan/gerlr1.blend</File>
+    <File md5="7AB2730CB0FE653F11961FEC01B3BFDE" import="1">Art/Unit Models/Uhlan/gerlr1.dds</File>
+    <File md5="E293930068E4151E47DFEEC55606C2FA" import="1">Art/Unit Models/Uhlan/gerlr1.fbx</File>
+    <File md5="2501B7E45C14B210CCD1549FF819D2BF" import="1">Art/Unit Models/Uhlan/gerlr1.fxsxml</File>
+    <File md5="76F2BD42FCBC78E4ED51005C4EF88029" import="1">Art/Unit Models/Uhlan/gerlr1.gr2</File>
+    <File md5="D1CCFC3064BBA4A6439F5F71403F79BF" import="1">Art/Unit Models/Uhlan/gerlr1_sref.dds</File>
+	-->
 
     <File md5="3FD392D8BA1D8BB87F1CCB5AA2EE25ED" import="0">Lua/VPEE_Functions.lua</File>
 
@@ -240,6 +264,8 @@
     <File md5="67C88FD8BB78FFB166D57F5BE398CC39" import="0">SQL/ArtDef/EESkirmisherDefine.sql</File>
     <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EEUhlanDefine.sql</File>
     <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EE2HanderDefine.sql</File>
+    <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EECuirassierDefine.sql</File>
+    <File md5="CA3595A1903BBF9EAB9FB4D27E1380AF" import="0">SQL/ArtDef/EEHarquebusierDefine.sql</File>
 
     <File md5="A708F87F60F9088B3CAA6719F2D3F073" import="0">SQL/EEVP_Buildings.sql</File>
     <File md5="06458F101B05F1854FE78E80E15C0B3C" import="0">SQL/EEVP_Eras.sql</File>
@@ -267,9 +293,11 @@
       <UpdateDatabase>SQL/ArtDef/EESkirmisherDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EEUhlanDefine.sql</UpdateDatabase>
       <UpdateDatabase>SQL/ArtDef/EE2HanderDefine.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ArtDef/EECuirassierDefine.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ArtDef/EEHarquebusierDefine.sql</UpdateDatabase>
+
       <UpdateDatabase>SQL/EEVP_Eras.sql</UpdateDatabase>
       <UpdateDatabase>SQL/EEVP_Techs.sql</UpdateDatabase>
-
       <UpdateDatabase>SQL/EEVP_Buildings.sql</UpdateDatabase>
 
       <UpdateDatabase>SQL/Windmill_Workshop_Swap.sql</UpdateDatabase>

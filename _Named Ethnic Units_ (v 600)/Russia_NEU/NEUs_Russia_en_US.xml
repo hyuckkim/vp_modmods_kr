@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--RUSSIA-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_MARINE">
+			<Text>[COLOR_SELECTED_TEXT]Spetsnaz[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_HELICOPTER_GUNSHIP">
+			<Text>[COLOR_SELECTED_TEXT]Mil Mi-8[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Strelki[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Red Army Brigade[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_TANK">
+			<Text>[COLOR_SELECTED_TEXT]T-34-85[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_RUSSIA_BOMBER">
+			<Text>[COLOR_SELECTED_TEXT]Tupolev Tu-95[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

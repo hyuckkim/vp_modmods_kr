@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b2eb6d1e-1fcb-4a0d-upai-51691aa312da" version="3">
+  <Properties>
+    <Name>Unit Production AI </Name>
+    <Teaser>Unit Production AI </Teaser>
+    <Description>Unit Production AI </Description>
+    <Authors>bal</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="101" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="15" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A52" import="0">NewStrategies.sql</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A56" import="0">NewUnitAITypes.sql</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A54" import="0">NewLeaderFlavors.sql</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313B55" import="0">NewTechFlavors.sql</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A55" import="0">NewUnitFlavors.sql</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A57" import="0">Formations.xml</File>
+    <File md5="47FD1DD19298DCDFE7D9D90708313A59" import="0">Triggers.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>NewStrategies.sql</UpdateDatabase>
+      <UpdateDatabase>NewUnitAITypes.sql</UpdateDatabase>
+      <UpdateDatabase>NewLeaderFlavors.sql</UpdateDatabase>
+      <UpdateDatabase>NewTechFlavors.sql</UpdateDatabase>
+      <UpdateDatabase>NewUnitFlavors.sql</UpdateDatabase>
+      <UpdateDatabase>Formations.xml</UpdateDatabase>
+      <UpdateDatabase>Triggers.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+  </EntryPoints>
+</Mod>

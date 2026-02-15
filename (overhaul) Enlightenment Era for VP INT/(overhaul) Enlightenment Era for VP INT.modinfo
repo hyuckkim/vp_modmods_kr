@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" version="14">
+<Mod id="fa8e0af1-732f-4ee8-b6f6-41faa8c33a42" version="16">
   <Properties>
     <Name>(overhaul) Enlightenment Era for VP INT</Name>
     <Stability>Beta</Stability>
@@ -21,7 +21,6 @@
     <ReloadUnitSystem>1</ReloadUnitSystem>
   </Properties>
   <Dependencies>
-    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="(overhaul) Enlightenment Era for VP" />
   </Dependencies>
   <References />

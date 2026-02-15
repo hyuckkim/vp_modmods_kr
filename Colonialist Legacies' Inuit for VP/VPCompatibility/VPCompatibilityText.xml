@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/3/2014 5:36:46 PM -->
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_UNATATTIK">
+			<Text>우나타틱</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_UNATATTIK_TEXT">
+			<Text>우나타틱은 소규모 이누이트 부족 간에 반복되던 복수 전쟁을 위해 어린 시절부터 단련된 전사들이었습니다. 젊은이는 전투에서 더 빠르고 민첩하게 움직일 수 있도록 어릴 때부터 선발되었습니다. 많은 전사들이 우나악, 즉 작살을 사냥용으로뿐만 아니라 치명적인 무기로 사용했습니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_UNATATTIK_STRATEGY">
+			<Text>우나타틱은 석궁병을 대체하는 고유 유닛입니다. 약간 더 튼튼하며, 정찰병처럼 지형을 무시하고 이동할 수 있어 기동성이 뛰어납니다. 치명적인 우나악은 우나타틱의 공격 사거리를 줄이는 대신, 공격받은 유닛의 이동 속도를 감소시킵니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_CLINUIT_UNATATTIK">
+			<Text>튼튼한 중세 시대 육상 유닛입니다. 이누이트만 생산할 수 있습니다. 지형 이동 비용을 무시합니다. 이 유닛에게 공격당한 적은 다음 턴에 [ICON_MOVES] 이동력이 1 감소합니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TALLUK">
+			<Text>탈룩</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TALLUK_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]설원[ENDCOLOR]에서 이동력이 2배입니다. 유닛은 빙하를 건널 수 있습니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNAAK">
+			<Text>우나악</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNAAK_HELP">
+			<Text>+25% [ICON_STRENGTH] 방어력. -1 [ICON_RANGE_STRENGTH] 사거리.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]공격 후[ENDCOLOR], 방어하던 적 유닛이 표식됩니다. 표식된 유닛은 [COLOR_POSITIVE_TEXT]다음 턴[ENDCOLOR]에 [ICON_ARROW_RIGHT] 이동력이 감소합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNAAK_ON_UNIT">
+			<Text>작살명중</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNAAK_ON_UNIT_HELP">
+			<Text>-2 [ICON_ARROW_RIGHT] 이동력.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_QAMUTIIK">
+			<Text>카무틱</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_CLINUIT_QAMUTIIK">
+			<Text>즉시 사용 가능한 다용도 기병 유닛입니다. 이누이트만 생산할 수 있습니다. 대체하는 전차 궁수보다 느리지만, [ICON_RES_HORSE] 말이 필요 없고 험지에서도 이동 속도가 느려지지 않습니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]정찰[ENDCOLOR] 승급을 무료로 받습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_QAMUTIIK_TEXT">
+			<Text>카무틱은 이누이트가 얼음 위를 효율적이고 안전하게 이동하기 위해 사용했던 개썰매입니다. 치와와와 함께, 이누이트견은 현재 존재하는 마지막 진정한 신세계견 중 하나로, 유럽인의 도래 이후 아메리카 대륙의 다른 개 품종들은 질병과 교배로 대부분 사라졌습니다. 이 품종은 1950년대 이누이트가 영구 정착지로 강제 이주되던 시기 거의 사라질 뻔했지만, 현재는 개체 수가 회복되어 이누이트의 문화유산과 여가의 중요한 일부로 소중히 여겨지고 있습니다. 본래의 역할은 대부분 스노모빌이 대신하고 있지만요.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CLINUIT_QAMUTIIK_STRATEGY">
+			<Text>카무틱은 게임 시작부터 사용 가능하며, 사실상 개척자와 전차 궁수를 모두 대체합니다. 카무틱을 이용해 지형을 정찰하고 초반 우위를 확보하세요. 대체하는 전차 궁수와 달리 말 없이도 생산할 수 있으며 험지에서 속도가 느려지지 않습니다. 다만 공격력이 약간 낮고 이동력이 1만큼 적습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CLINUIT_IGLOO">
+			<Text>이글루</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CLINUIT_IGLOO_HELP">
+			<Text>이 도시에서 시작해 다른 문명을 대상으로 한 [ICON_INTERNATIONAL_TRADE] 육상 교역로가 완료되면, 최근 [ICON_CULTURE] 문화 및 [ICON_TOURISM] 관광 생산량을 기반으로 해당 문명과의 [ICON_TOURISM] 관광이 증가합니다.[NEWLINE][NEWLINE]완료 시 인접한 개선되지 않은 [COLOR_POSITIVE_TEXT]설원[ENDCOLOR] 타일에 [COLOR_POSITIVE_TEXT]이글루비악[ENDCOLOR] 개선물이 건설됩니다.[NEWLINE][NEWLINE]도시가 일하는 설원 또는 툰드라 타일 3개마다 +1 [ICON_CULTURE] 문화, [ICON_GOLD] 골드, [ICON_FOOD] 식량을 얻습니다.[NEWLINE]도시가 일하는 해안, 바다, 사막 타일 3개마다 +1 [ICON_GOLD] 골드, [ICON_PRODUCTION] 생산을 얻습니다.[NEWLINE][NEWLINE]이 도시의 [ICON_GREAT_MERCHANT] 상인 전문가들은 +1 [ICON_GOLD] 골드를 추가로 얻습니다. [ICON_INTERNATIONAL_TRADE] 육상 교역로의 범위가 50% 증가하고 +3 [ICON_GOLD] 골드를 추가로 얻습니다.[NEWLINE]인근 [ICON_RES_TRUFFLES] 트러플: +2 [ICON_GOLD] 골드.[NEWLINE]인근 [ICON_RES_COTTON] 면화: +1 [ICON_PRODUCTION] 생산, +1 [ICON_CULTURE] 문화.[NEWLINE]인근 [ICON_RES_FUR] 모피: +1 [ICON_GOLD] 골드, +1 [ICON_PRODUCTION] 생산.[NEWLINE]인근 [ICON_RES_FLAX] 아마: +1 [ICON_GOLD] 골드, +1 [ICON_PEACE] 신앙.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CLINUIT_IGLOO_STRATEGY">
+			<Text>이글루는 도시의 교역 이익을 증대시키는 이누이트 고유 건물입니다. 대체하는 캐러밴소와 달리, 이글루는 물 타일을 포함한 다양한 비주류 타일을 일할 때 큰 보너스를 제공합니다.[NEWLINE][NEWLINE]도시에 이글루를 완공하면 사용 가능한 설원 타일에 고유 개선물인 이글루비악이 건설됩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CLINUIT_IGLOO_TEXT">
+			<Text>이글루 또는 이글루비악은 이누크가 눈으로 만든 일종의 피난처입니다. 눈은 내부에 갇힌 공기 주머니 덕분에 단열재 역할을 하기 때문에 사용됩니다. 외부 온도가 −45°C까지 떨어져도, 내부는 체온만으로 −7°C에서 최대 16°C까지 올라갈 수 있습니다.[NEWLINE][NEWLINE]이글루를 짓는 데 사용되는 눈은 잘 잘라서 쌓을 수 있을 정도의 구조적 강도를 가져야 합니다. 가장 적합한 눈은 바람에 의해 단단히 다져진 눈으로, 얼음 결정이 서로 엉겨 붙어 구조를 지탱해줍니다. 눈을 잘라낸 자리는 보통 이글루의 하부 구조로 사용됩니다. 때때로 출입구에는 짧은 터널이 만들어져 문을 열었을 때 바람과 열 손실을 줄입니다. 눈의 우수한 단열 특성 덕분에 사람이 머무는 이글루 내부는 놀라울 정도로 따뜻하고 쾌적합니다. 어떤 경우에는 채광을 위해 투명한 얼음 블록을 한 개 끼워 넣기도 했습니다. 동물 가죽은 문 덮개로 사용되어 따뜻한 공기를 내부에 유지했습니다. 겨울 피난처로 사용된 이글루에는 얼음과 순록 가죽으로 만든 침대가 있었으며, 이러한 ‘얼음 침대’는 이 지역과 이누이트 문화에만 존재하는 독특한 요소입니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_INUIT_IGLOO">
+			<Text>이글루비악</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_INUIT_IGLOO_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]이글루[ENDCOLOR] 건물을 완공하면 인접한 [COLOR_POSITIVE_TEXT]설원[ENDCOLOR] 타일에 즉시 건설되는 개선물입니다. [ICON_FOOD] 식량, [ICON_CULTURE] 문화, [ICON_GOLD] 골드를 제공합니다. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_INUIT_IGLOO_TEXT">
+			<Text>이글루 또는 이글루비악은 이누크가 눈으로 만든 일종의 피난처입니다. 눈은 내부에 갇힌 공기 주머니 덕분에 단열재 역할을 하여 사용됩니다. 외부 온도는 −45°C까지 내려갈 수 있지만, 내부 온도는 체온만으로도 −7°C에서 16°C까지 올라갈 수 있습니다.[NEWLINE][NEWLINE]이글루를 짓는 데 쓰이는 눈은 자르고 쌓을 수 있을 정도로 구조적 강도가 있어야 합니다. 가장 적합한 눈은 바람에 의해 다져진 눈으로, 얼음 결정이 서로 엉겨 구조를 유지하게 됩니다. 눈을 잘라낸 자리는 보통 피난처의 하부 구조로 사용됩니다. 때때로 출입구에는 짧은 터널이 만들어져 문을 열 때 바람과 열 손실을 줄여줍니다. 눈의 뛰어난 단열 성능 덕분에 사람이 머무는 이글루 내부는 놀랍도록 따뜻하고 쾌적합니다. 경우에 따라 채광을 위해 투명한 얼음 블록 하나를 끼워 넣기도 했습니다. 따뜻한 공기를 유지하기 위해 동물 가죽이 문 덮개로 사용되었습니다. 겨울 피난처로 쓰인 이글루에는 얼음과 순록 가죽으로 만든 침대가 있었고, 이러한 ‘얼음 침대’는 이 지역과 이누이트 문화에만 존재하는 독특한 요소입니다. </Text>
+		</Row>		
+	</Language_ko_KR>
+</GameData>

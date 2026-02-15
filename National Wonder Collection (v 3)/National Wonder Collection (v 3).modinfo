@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="12f72070-3f4d-425a-bef0-b6c14a3738ac" version="3">
+  <Properties>
+    <Name>National Wonder Collection</Name>
+    <Teaser>Adds 6 new National Wonders [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]For Vanilla, G&amp;K, BNW, any DLC[ENDCOLOR]</Teaser>
+    <Description>[ICON_BULLET][COLOR_POSITIVE_TEXT]Central Bank[ENDCOLOR]: For every Mutual Open Borders agreement, earn 2% (up to 8%) interest on current Gold Income. Must be built in the Capital. Requires a Bank in every city. (Available at Scientific Theory)
+[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Central Terminal[ENDCOLOR]: Factories: +1 Gold. Owned tiles with a Road are instantly upgraded to a Railroad. Requires a Factory in this and one other city. (Available at Railroad)
+[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Hydroelectric Power Company[ENDCOLOR]: All cities on this continent receive Electric Power. Electric Power increases Science, Gold and Production in its city. Must be built in a city on a river. (Available at Electronics)
+[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]National Military Academy[ENDCOLOR]: Great Generals spawn 20% faster. Free Arsenal in this city. +15 XP and +15% Production for all Land Units. Requires an Armory in every city. (Available at Gunpowder)
+[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]National Naval Academy[ENDCOLOR]: A free Great Admiral appears in the city upon completion. +15 XP and +15% Production for all Sea Units. Grants the Seamanship Promotion to each naval unit produced in this city. Requires a Seaport in the city. (Available at Navigation)
+[NEWLINE][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]National Air Force Academy[ENDCOLOR]: +25% Production for all Air Units. Grants the Evasion Promotion to each air unit produced in this city. Requires a Military Academy in the city. (Available at Flight)</Description>
+    <Authors>FramedArchitecture</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="EC867693E4D80B08BA7B852619944FB4" import="0">Airforce Academy/NW_AirAcademy.sql</File>
+    <File md5="CE4B28843C7EA0E9987AE666730497C6" import="0">Central Bank/NW_CentralBank.lua</File>
+    <File md5="94EC5C1DFFE40F9AB8CBD9355F47061F" import="0">Central Bank/NW_CentralBank.sql</File>
+    <File md5="C68E36A813265A7541C8E69938224014" import="0">Central Station/NW_CentralStation.lua</File>
+    <File md5="D8228597D849C42C5D64B2A78364C662" import="0">Central Station/NW_CentralStation.sql</File>
+    <File md5="F429AE15B17D6B983ECBC934C0298BD2" import="0">Electric Company/NW_ElectricCompany.lua</File>
+    <File md5="B213A81E4BEC2E1173D22FA3E9A72E21" import="0">Electric Company/NW_ElectricCompany.sql</File>
+    <File md5="A49D0F0D0309998150BF93C04929A257" import="0">Military Academy/NW_MilitaryAcademy.sql</File>
+    <File md5="7476740E91EC026F9612096206238ACF" import="0">Naval Academy/NW_NavalAcademy.sql</File>
+    <File md5="BA7992EB3B79802162B51A28B5EB9D86" import="1">NW Global/Art/NWAtlas128.dds</File>
+    <File md5="E0A5C1AEEC7CCF5B50965909C709811E" import="1">NW Global/Art/NWAtlas256.dds</File>
+    <File md5="153348CEAF6F12417A0CAFD7FAFA271C" import="1">NW Global/Art/NWAtlas45.dds</File>
+    <File md5="0F8C0C049AE0F9FB32BBE96905DF68CC" import="1">NW Global/Art/NWAtlas64.dds</File>
+    <File md5="41429FC8CCAD393A2B059B4F60F5E692" import="1">NW Global/Art/NWAtlas80.dds</File>
+    <File md5="3E9DC2E6F7C7C0E4DBE43A1C1AA3856B" import="0">NW Global/NW_IconAtlas.sql</File>
+    <File md5="CBD1F2C01A9C540C838E574441C5D2DE" import="0">NW Global/NW_Text.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>NW Global/NW_IconAtlas.sql</UpdateDatabase>
+      <UpdateDatabase>NW Global/NW_Text.xml</UpdateDatabase>
+      <UpdateDatabase>Central Bank/NW_CentralBank.sql</UpdateDatabase>
+      <UpdateDatabase>Central Station/NW_CentralStation.sql</UpdateDatabase>
+      <UpdateDatabase>Electric Company/NW_ElectricCompany.sql</UpdateDatabase>
+      <UpdateDatabase>Military Academy/NW_MilitaryAcademy.sql</UpdateDatabase>
+      <UpdateDatabase>Naval Academy/NW_NavalAcademy.sql</UpdateDatabase>
+      <UpdateDatabase>Airforce Academy/NW_AirAcademy.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Central Station/NW_CentralStation.lua">
+      <Name>NW_CentralStation</Name>
+      <Description>NW_CentralStation</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Central Bank/NW_CentralBank.lua">
+      <Name>NW_CentralBank</Name>
+      <Description>NW_CentralBank</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Electric Company/NW_ElectricCompany.lua">
+      <Name>NW_ElectricCompany</Name>
+      <Description>NW_ElectricCompany</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

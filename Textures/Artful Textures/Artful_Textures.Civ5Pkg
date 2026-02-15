@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ5Package>
+	<GUID>{55e0a83f-96a2-4264-8415-f571d237caa8}</GUID>
+	<Version>1</Version>
+	<Priority>050</Priority>
+	<Key>532bbe7a761d4f13916fb9f2e41af30a</Key>
+	<PTags>
+		<Tag>Version</Tag>
+	</PTags>
+	<Name>
+		<Value language="en_US">Artful Textures</Value>
+	</Name>
+	<Description>
+	<Value language="en_US">Artful Textures</Value>
+	</Description>
+	<UISkin name="BaseGame" set="BaseGame" platform="Common">
+		<GameplaySkin>
+			<GameData>oasis_snapshot.fxsxml</GameData>
+			<Directory>Terrain</Directory>
+		</GameplaySkin>
+	</UISkin>
+</Civ5Package>
