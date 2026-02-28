@@ -1,9 +1,13 @@
 Changelog:
+v25:
+- changed City-State requirement colour;
+- added new check for Natural Wonders resources (marked with White colour);
+
 v24:
 - adapted to VP 5.0;
 - minor changes to text formatting for resources from mods:
 	- now monopoly bonuses listed with bullet points;
-	- each monopoly bonus is now moved to new line;
+	- if resource has more than one monopoly bonus (separated with semicolon sign) each bonus will be shown in separated line;
 	- replaced "M.B." abbreviation with monopoly icon;
 	- changed colours for some resource sources from modmods;
 

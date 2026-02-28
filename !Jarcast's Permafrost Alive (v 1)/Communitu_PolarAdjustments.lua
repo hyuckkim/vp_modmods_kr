@@ -49,7 +49,7 @@ if IsUsingMapScript("JarCommunitu_79a", true) and Map.GetWorldSize() == GameInfo
 	elseif Map.GetCustomOption(17) == 3 then
 		MinDistancePolarGame = 5
 	elseif Map.GetCustomOption(17) == 4 or Map.GetCustomOption(17) == 5 then
-		MinDistancePolarGame = Round(MinDistancePolarGame *2)
+		MinDistancePolarGame = 6
 	end
 end
 

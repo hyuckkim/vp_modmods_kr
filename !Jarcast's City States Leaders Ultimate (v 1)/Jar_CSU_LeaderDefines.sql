@@ -283,17 +283,10 @@ WHERE Type = 'MINOR_CIV_VATICAN_CITY';
 
 UPDATE MinorCivLeaders SET LeaderIcon = 'wellington_leadericon2.dds', LeaderArtistName = 'Janboruta'
 WHERE Type = 'MINOR_CIV_WELLINGTON';
--- UCS Finished
-UPDATE MinorCivLeaders SET LeaderIcon = 'karasjohka_leadericonX.dds', LeaderName = 'Rijkuo-Maja', LeaderTitle = 'Noaidi',
-	LeaderArtistName = 'Arilasqueto'
-WHERE Type = 'MINOR_CIV_KARASJOHKA';
-
-UPDATE MinorCivLeaders SET LeaderIcon = 'granada_leadericonX.dds', LeaderName = 'Muhammad V', LeaderArtistName = 'Urdnot'
-WHERE Type = 'MINOR_CIV_GRANADA';
 --======================================================================================================================================
 --======================================================================================================================================
 CREATE TRIGGER Jar_CSUBaseReplacement
-AFTER INSERT ON MinorCivLeaders WHEN (NEW.Type ='MINOR_CIV_YANGCHENG')
+AFTER INSERT ON MinorCivLeaders WHEN (NEW.Type ='MINOR_CIV_ZURICH')
 BEGIN
 UPDATE MinorCivLeaders SET LeaderIcon = 'almaty_leadericon2.dds', LeaderPlace = 'the Kazakh Khanate', LeaderName = 'Ablai Khan',
 	LeaderTitle = '', LeaderArtistName = 'DuskJockey'
@@ -368,13 +361,6 @@ WHERE Type = 'MINOR_CIV_VATICAN_CITY';
 
 UPDATE MinorCivLeaders SET LeaderIcon = 'wellington_leadericon2.dds', LeaderArtistName = 'Janboruta'
 WHERE Type = 'MINOR_CIV_WELLINGTON';
--- UCS Finished
-UPDATE MinorCivLeaders SET LeaderIcon = 'karasjohka_leadericonX.dds', LeaderName = 'Rijkuo-Maja', LeaderTitle = 'Noaidi',
-	LeaderArtistName = 'Arilasqueto'
-WHERE Type = 'MINOR_CIV_KARASJOHKA';
-
-UPDATE MinorCivLeaders SET LeaderIcon = 'granada_leadericonX.dds', LeaderName = 'Muhammad V', LeaderArtistName = 'Urdnot'
-WHERE Type = 'MINOR_CIV_GRANADA';
 
 END;
 --======================================================================================================================================

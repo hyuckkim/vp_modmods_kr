@@ -55,7 +55,7 @@ UPDATE Buildings
 SET WonderSplashImage='Barnenez_splash.dds', Cost = (SELECT Cost FROM Buildings WHERE Type = 'BUILDING_STONEHENGE'),
 PrereqTech = (SELECT PrereqTech FROM Buildings WHERE Type = 'BUILDING_SMOKEHOUSE'), WonderSplashAudio = 'AS2D_WONDER_BARNENEZ',
 NumPoliciesNeeded = (SELECT NumPoliciesNeeded FROM Buildings WHERE Type='BUILDING_STONEHENGE'), MaxStartEra = 'ERA_CLASSICAL',
-SpecialistType='SPECIALIST_SCIENTIST', GreatPeopleRateChange=1, FreeBuildingThisCity = 'BUILDINGCLASS_SMOKEHOUSE'
+SpecialistType='SPECIALIST_SCIENTIST', GreatPeopleRateChange= 1, FreeBuildingThisCity = 'BUILDINGCLASS_SMOKEHOUSE'
 WHERE Type = 'BUILDING_BARNENEZ';
 
 INSERT INTO Building_YieldChanges (BuildingType,YieldType, Yield)
@@ -67,12 +67,14 @@ INSERT INTO Building_BuildingClassYieldChanges
 		(BuildingType,			BuildingClassType,		YieldType,		YieldChange) 
 VALUES	('BUILDING_BARNENEZ',	'BUILDINGCLASS_SMOKEHOUSE','YIELD_FAITH',	1);
 
-INSERT INTO Building_InstantYield (BuildingType, YieldType, Yield)
-SELECT 'BUILDING_BARNENEZ', 'YIELD_SCIENCE', 50;
+INSERT INTO Building_FreeUnits 
+(BuildingType,			UnitType,		NumUnits) VALUES
+('BUILDING_BARNENEZ',	'UNIT_WORKER',	1);
 
 INSERT INTO Building_Flavors (BuildingType, FlavorType, Flavor)
-SELECT 'BUILDING_BARNENEZ', 'FLAVOR_PRODUCTION', 50  UNION ALL
-SELECT 'BUILDING_BARNENEZ', 'FLAVOR_SCIENCE', 10  UNION ALL
+SELECT 'BUILDING_BARNENEZ', 'FLAVOR_TILE_IMPROVEMENT', 25  UNION ALL
+SELECT 'BUILDING_BARNENEZ', 'FLAVOR_GROWTH', 20  UNION ALL
+SELECT 'BUILDING_BARNENEZ', 'FLAVOR_PRODUCTION', 20  UNION ALL
 SELECT 'BUILDING_BARNENEZ', 'FLAVOR_WONDER', 20 ;
 
 INSERT OR REPLACE INTO Language_en_US 
@@ -80,7 +82,7 @@ INSERT OR REPLACE INTO Language_en_US
 ('TXT_KEY_BUILDING_BARNENEZ',		'Barnenez'),
 ('TXT_KEY_WONDER_BARNENEZ_QUOTE',	'[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]'),
 ('TXT_KEY_WONDER_BARNENEZ_PEDIA',	'The Barnenez cairn, located in Brittany, France, is one of the oldest and largest megalithic monuments in Europe. Often called the "Parthenon of prehistory", it is a massive stone burial mound measuring about 70 meters long, 25 meters wide, and up to 9 meters high. Built primarily of granite and schist, the cairn contains eleven burial chambers, accessible through narrow passageways. The interior walls are decorated with carved symbols such as axes and serpentine motifs, reflecting the ritual and symbolic importance of the structure. Its sheer scale and complexity highlight the advanced organizational and architectural abilities of Neolithic communities. [NEWLINE][NEWLINE]The history of Barnenez dates back to around 4800–4200 BCE, during the early Neolithic period, making it older than Stonehenge and the Egyptian pyramids. It was constructed in two main phases: the first involved building smaller tombs, later unified into one vast cairn. Over millennia, the site was used for burials and ceremonial purposes, but it fell into obscurity until rediscovered in the 19th century. In the 1950s, quarrying activities threatened its survival, but archaeological excavations revealed its significance, leading to preservation efforts. Today, the Cairn of Barnenez stands as a remarkable testament to Europe''s prehistoric past and is recognized as one of the earliest examples of monumental stone architecture in human history.'),
-('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'+1 [ICON_GOLDEN_AGE] Golden Age Point. [NEWLINE]Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_SMOKEHOUSE} and 50 [ICON_RESEARCH] Science in the City in which it is built. [NEWLINE]All owned Smokehouses gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_WONDER_BARNENEZ_HELP_CUT',	'');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
@@ -117,7 +119,7 @@ INSERT OR REPLACE INTO Language_en_US
 ('TXT_KEY_BUILDING_NEWGRANGE',		'Newgrange'),
 ('TXT_KEY_WONDER_NEWGRANGE_QUOTE',	'[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]'),
 ('TXT_KEY_WONDER_NEWGRANGE_PEDIA',	'Newgrange, located in County Meath, Ireland, is a prehistoric passage tomb and one of the most iconic monuments of Neolithic Europe. Built around 3200 BCE, it predates Stonehenge and the Great Pyramids of Giza. The structure consists of a large circular mound over 85 meters in diameter and 13 meters high, covering a long passageway that leads to a central cruciform chamber. The mound is edged with 97 massive kerbstones, many of which are decorated with intricate megalithic art, including spirals, lozenges, and concentric circles. Newgrange is particularly famous for its alignment with the winter solstice sunrise: each year, on the shortest days, sunlight enters through a specially designed roof box and illuminates the inner chamber, demonstrating the builders'' advanced astronomical knowledge. [NEWLINE][NEWLINE]The history of Newgrange is tied to Ireland''s earliest farming communities, who constructed it as part of the Brú na Bóinne complex, alongside Knowth and Dowth. It is believed to have served both as a tomb and as a ceremonial site, with its alignment linking it to seasonal cycles and beliefs about life, death, and renewal. Over the centuries, Newgrange fell into disuse, becoming shrouded in myth and legend; in medieval times, it was associated with the Tuatha Dé Danann, the mythological deities of Ireland. Rediscovered and excavated in the late 17th and 20th centuries, it has since been restored and is now a UNESCO World Heritage Site. Today, Newgrange is celebrated as one of the most important archaeological and cultural treasures in Ireland, attracting thousands of visitors annually.'),
-('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] {TXT_KEY_BUILDING_GRANARY} in the City in which it is built. [NEWLINE]Gain 20 [ICON_GOLDEN_AGE] Golden Age Points when a new [ICON_CITIZEN] Citizen is born in the City, scaling with Era. [NEWLINE]All owned Granaries gain +1 [ICON_PEACE] Faith.');
+('TXT_KEY_WONDER_NEWGRANGE_HELP_CUT',	'');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
@@ -190,7 +192,7 @@ INSERT OR REPLACE INTO Language_en_US
 ('TXT_KEY_BUILDING_CATALHOYUK',		'Catalhoyuk'),
 ('TXT_KEY_WONDER_CATALHOYUK_QUOTE',	'[NEWLINE]"Society is the union of men and not the men themselves."[NEWLINE] - Montesquieu[NEWLINE]'),
 ('TXT_KEY_WONDER_CATALHOYUK_PEDIA',	'Catalhoyuk, situated in central Turkey, stands as a captivating archaeological marvel, providing a window into the complex social and cultural dynamics of one of the world''s earliest known urban centers. Inhabited around 7500 BCE during the Neolithic period, Catalhoyuk represents an extraordinary example of early urbanization. The settlement''s unique layout consists of tightly packed mud-brick houses, interconnected in a maze-like fashion. The absence of streets and the interconnected rooftops suggest a communal lifestyle with shared spaces and a close-knit community, reflecting the sophisticated organization of this ancient society. [NEWLINE][NEWLINE]One of the most remarkable aspects of Catalhoyuk is the rich array of wall paintings found within the houses. These murals depict scenes of daily life, including hunting, farming, and intricate symbolic imagery. The vibrant artwork provides valuable insights into the inhabitants'' beliefs, rituals, and activities, offering a unique glimpse into the cultural and spiritual dimensions of Neolithic life. The prevalence of bull motifs in the art has sparked discussions about the possible existence of a bull cult, emphasizing the significance of religious practices in the community. [NEWLINE][NEWLINE]Catalhoyuk holds a pivotal role in the history of agriculture and animal domestication. Excavations have revealed evidence of early agricultural practices, including the cultivation of cereals, and the domestication of animals such as sheep and cattle. The site''s importance in understanding the transition from hunter-gatherer lifestyles to settled agricultural communities is underscored by its designation as a UNESCO World Heritage Site in 2012. Catalhoyuk remains a focal point for archaeologists and historians, shedding light on the foundations of human civilization during the Neolithic era.'),
-('TXT_KEY_WONDER_CATALHOYUK_HELP_CUT',		'+2 [ICON_CITIZEN] Population in the City. [NEWLINE]All Bonus and Strategic animal resources ([ICON_RES_SHEEP]/ [ICON_RES_COW]/ [ICON_RES_DEER]/ [ICON_RES_BISON]/ [ICON_RES_HORSE]): +1 [ICON_PEACE] Faith.');
+('TXT_KEY_WONDER_CATALHOYUK_HELP_CUT',		'');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
@@ -212,25 +214,29 @@ INSERT INTO Building_ImprovementYieldChanges
 		(BuildingType,			ImprovementType,		YieldType,		Yield) 
 VALUES	('BUILDING_LIANGZHU',	'IMPROVEMENT_QUARRY',	'YIELD_CULTURE',	1);
 
-INSERT INTO Building_ResourceYieldChangesGlobal
+REPLACE INTO Building_ResourceYieldChangesGlobal
 		(BuildingType, ResourceType, YieldType, 	Yield)
-SELECT	'BUILDING_LIANGZHU',	Type,'YIELD_FOOD',	1
+SELECT 	'BUILDING_LIANGZHU',	Type,'YIELD_FOOD',	1
 FROM Resources WHERE RockResource=1 AND ResourceClassType='RESOURCECLASS_LUXURY';
 
 CREATE TRIGGER IF NOT EXISTS JarLiangzhu1 AFTER INSERT ON Resources
 WHEN NEW.RockResource=1 AND NEW.ResourceClassType='RESOURCECLASS_LUXURY'
 BEGIN
-	INSERT INTO Building_ResourceYieldChangesGlobal
-					(BuildingType, 		ResourceType, YieldType, 	Yield)
-	SELECT DISTINCT	'BUILDING_LIANGZHU',NEW.Type,	'YIELD_FOOD',	1;
+	DELETE FROM Building_ResourceYieldChangesGlobal WHERE BuildingType='BUILDING_LIANGZHU'
+	AND ResourceType= NEW.Type;
+	REPLACE INTO Building_ResourceYieldChangesGlobal
+			(BuildingType, 		ResourceType, YieldType, 	Yield)
+	SELECT 'BUILDING_LIANGZHU',NEW.Type,	'YIELD_FOOD',	1;
 END;
 
 CREATE TRIGGER IF NOT EXISTS JarLiangzhu2 AFTER UPDATE ON Resources
 WHEN NEW.RockResource=1 AND NEW.ResourceClassType='RESOURCECLASS_LUXURY'
 BEGIN
-	INSERT INTO Building_ResourceYieldChangesGlobal
-					(BuildingType, 		ResourceType, YieldType, 	Yield)
-	SELECT DISTINCT	'BUILDING_LIANGZHU',NEW.Type,	'YIELD_FOOD',	1;
+	DELETE FROM Building_ResourceYieldChangesGlobal WHERE BuildingType='BUILDING_LIANGZHU'
+	AND ResourceType= NEW.Type;
+	REPLACE INTO Building_ResourceYieldChangesGlobal
+			(BuildingType, 		ResourceType, YieldType, 	Yield)
+	SELECT 	'BUILDING_LIANGZHU',NEW.Type,	'YIELD_FOOD',	1;
 END;
 
 INSERT OR REPLACE INTO Building_Flavors
@@ -247,7 +253,7 @@ INSERT OR REPLACE INTO Language_en_US
 ('TXT_KEY_BUILDING_LIANGZHU',		'Liangzhu'),
 ('TXT_KEY_WONDER_LIANGZHU_QUOTE',	'[NEWLINE]"He who is unable to live in society, or who has no need because he is sufficient for himself, must be either a beast or a god."[NEWLINE] - Aristotle[NEWLINE]'),
 ('TXT_KEY_WONDER_LIANGZHU_PEDIA',	'Liangzhu, an ancient cultural and archaeological site near Hangzhou in the Yangtze River Delta, represents a remarkable testament to the sophistication of one of the earliest complex societies in ancient China. Flourishing during the Late Neolithic period from around 3300 BCE to 2200 BCE, the Liangzhu culture has left an indelible mark on our understanding of early Chinese civilization. At the heart of Liangzhu''s cultural legacy lies its exquisite jade artifacts, including bi disks and cong tubes, reflecting the society''s reverence for jade as a symbol of prestige, ritual significance, and spiritual beliefs. The intricate craftsmanship of these artifacts exemplifies the advanced technical skills and artistic sensibilities of the Liangzhu people. [NEWLINE][NEWLINE]The Liangzhu archaeological site reveals evidence of complex urban planning, showcasing carefully designed earthenware structures, raised roads, and artificial ponds. The presence of large burial mounds with ceremonial offerings suggests a socially stratified society, indicating the existence of a ruling elite. The layout of the Liangzhu city points to a high level of organization and the implementation of advanced agricultural techniques, notably wetland agriculture, which utilized the region''s abundant water resources for rice cultivation. These elements collectively reflect the cultural, social, and technological achievements of the Liangzhu people, positioning them as pioneers in early Chinese civilization. [NEWLINE][NEWLINE]Recognizing its significance, Liangzhu was inscribed as a UNESCO World Heritage Site in 2019, underscoring its importance in advancing our knowledge of early urban development, social complexity, and cultural innovation in ancient China. The site stands as a testament to the enduring legacy of the Liangzhu culture and its role in shaping the foundations of Chinese civilization.'),
-('TXT_KEY_WONDER_LIANGZHU_HELP_CUT',	'Places 2 new [ICON_RES_JADE] Jade resources inside City range if possible. [NEWLINE]+1 [ICON_CULTURE] Culture from Quarries worked by the City. [NEWLINE][NEWLINE]All Luxury rock resources ([ICON_RES_GOLD]/ [ICON_RES_SILVER]/ [ICON_RES_GEMS]/ [ICON_RES_MARBLE]/ [ICON_RES_COPPER]/ [ICON_RES_SALT]/ [ICON_RES_AMBER]/ [ICON_RES_JADE]/ [ICON_RES_LAPIS]): +1 [ICON_FOOD] Food.[NEWLINE]');
+('TXT_KEY_WONDER_LIANGZHU_HELP_CUT',	'');
 
 INSERT OR REPLACE INTO Language_en_US 
 		(Tag, 							 Text)
@@ -275,6 +281,13 @@ BEGIN
 	
 	UPDATE Buildings SET FreeBuildingThisCity = 'BUILDINGCLASS_SHRINE' WHERE Type = 'BUILDING_GOEBEKLI_TEPE';	
 END;
+--======================================================================================================================================--
+-- BASE WONDERS
+--======================================================================================================================================--
+INSERT OR REPLACE INTO Building_YieldChanges
+(BuildingType,		YieldType,	Yield) VALUES
+('BUILDING_PYRAMID', 'YIELD_CULTURE', 2),
+('BUILDING_PYRAMID', 'YIELD_GOLDEN_AGE_POINTS', 1);
 --======================================================================================================================================--
 -- Audio_Sounds
 --======================================================================================================================================--

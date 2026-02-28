@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" version="17">
+<Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" version="18">
   <Properties>
     <Name>(ui) Wonder Planner for VP</Name>
     <Teaser>Lists built and available Wonders with their focus</Teaser>
@@ -26,10 +26,10 @@
   <Blocks />
   <Files>
     <File md5="37ACAED1C2397A2AA1F6DD93790B2ED2" import="1">Art/WonderPlannerLogo.dds</File>
-    <File md5="EB8EE8BEA175FA60780E489697DF3320" import="0">Changelog.txt</File>
+    <File md5="CEF1C809344D6E0782639E354F57D020" import="0">Changelog.txt</File>
     <File md5="48FE7B9542D5B41835CB0F8725474525" import="0">Text/WonderPlannerTexts.xml</File>
     <File md5="3B7B1EE92949FC3B7B9308074F036BEB" import="1">UI/NewSaveUtils.lua</File>
-    <File md5="95821EAF5AAC10DB0F07A8E6E62BDCC6" import="0">UI/WonderPlanner.lua</File>
+    <File md5="B392AFFF7534F60404B745F66C16711F" import="0">UI/WonderPlanner.lua</File>
     <File md5="F28F92502AAAD9E2E3AD2C133F11C546" import="0">UI/WonderPlanner.xml</File>
   </Files>
   <Actions>

@@ -590,7 +590,7 @@ function OnDisplay()
 	-- Active Quests
 	UpdateActiveQuests()
 
-	-- UCS Info Tab
+	--[[ UCS Info Tab
 	local sUCSInfoHide = true
 	local tUCSBonuses = {}
 	
@@ -640,7 +640,7 @@ function OnDisplay()
 		Controls.UCSLabel:SetText(sUCSInfoTitle)
 		Controls.UCSInfo:SetToolTipString(sTextEnableUCS)
 		Controls.UCSLabel:SetToolTipString(sTextEnableUCS)
-	end
+	end]]
 
 	-- Peace
 	if not isAtWar then

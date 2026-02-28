@@ -125,7 +125,7 @@ AFTER INSERT ON Resources
 WHEN NEW.Type = 'RESOURCE_DOGO_CANARIO'
 BEGIN
     INSERT INTO BuildingClasses (Type)
-	VALUES		('BUILDINGCLASS_DUMMY_CSL_UCS_TRG');
+	VALUES ('BUILDINGCLASS_DUMMY_CSL_UCS_TRG');
 
 	INSERT INTO MinorCivLeaders
 				(Type,							LeaderIcon,						LeaderPlace,									LeaderName,								LeaderTitle,			LeaderArtistName)

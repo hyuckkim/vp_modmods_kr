@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="9115abcb-fc9a-4763-9996-db87595e2395" version="1">
+<Mod id="9115abcb-fc9a-4763-9996-db87595e2395" version="2">
   <Properties>
     <Name>!Jarcast's City States Leaders Ultimate</Name>
     <Teaser>Adds more City States with leader icons for a total of 275 City States.</Teaser>
@@ -29,6 +29,7 @@
     <Mod id="7db75fa8-0dd6-424d-8130-b79c37b04398" minversion="0" maxversion="999" title="(ui) Meaningful Colours" />
   </Blocks>
   <Files>
+    <File md5="17FB22AE5E91FC75E8DFB39F4D34FFD7" import="1">Art/chevak_leadericon2.dds</File>
     <File md5="0D1BCED02C2BE6DC843C6CA98B410C81" import="1">Art/karasjohka_leadericonX.dds</File>
     <File md5="8AC7728AC1B9E50163CC295DD8FB233C" import="1">Art/New1/cailin_leadericon.dds</File>
     <File md5="E0A5BB5B7E6779D0AD42B8555E0A76C2" import="1">Art/New1/dettah_leadericon.dds</File>
@@ -194,12 +195,14 @@
     <File md5="33F5C30D17A1643FB337C9EE5F859C73" import="1">Art/VtuberITA/meiling_leadericon.dds</File>
     <File md5="F389D7B69FE73EF0D8E52D6DEEC3D0CF" import="1">Art/VtuberITA/nymeline_leadericon.dds</File>
     <File md5="89162B09FBB1D6F1AA4C8D3298BC994A" import="1">Art/VtuberITA/singalek_leadericon.dds</File>
-    <File md5="B968C77FC318E0B09169D98AB799CC3E" import="0">CSL-UCS.sql</File>
+    <File md5="8EB29372A8DC29B5DEB4430729742918" import="1">CityStateDiploPopup/CityStateDiploPopup.lua</File>
+    <File md5="D17AFFADCBF3492B245D70D2EFF17165" import="1">CityStateDiploPopup/CityStateDiploPopup.xml</File>
+    <File md5="14DAD85C84022A050CEC44EB39EFF435" import="0">CSL-UCS.sql</File>
     <File md5="C199A6C02CF38B242BFD2B4FE69C6344" import="0">Jar_CSU_CulturalDiversity.sql</File>
     <File md5="8DA25EFD36BAA6D8D76E74FD38A8341A" import="0">Jar_CSU_Colors.sql</File>
-    <File md5="A15E3768F9AE802DFB364711458B44AF" import="0">Jar_CSU_GameDefines.sql</File>
-    <File md5="6FCD38842E398175051B685D4FA899D2" import="0">Jar_CSU_GameText.sql</File>
-    <File md5="AA2A7DBE94994F98D419148E7E3F460F" import="0">Jar_CSU_LeaderDefines.sql</File>
+    <File md5="D1419198EB0130ABD4ED1F3A5BCB9E53" import="0">Jar_CSU_GameDefines.sql</File>
+    <File md5="A9C22BC1B71FEB23A52FF752138FBEE6" import="0">Jar_CSU_GameText.sql</File>
+    <File md5="28F683A33CF6674CA4084EFCCFD233A2" import="0">Jar_CSU_LeaderDefines.sql</File>
   </Files>
   <Actions>
     <OnModActivated>

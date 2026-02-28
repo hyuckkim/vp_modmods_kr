@@ -48,12 +48,12 @@ INSERT INTO LocalizedText (Language, Tag, Text) VALUES
 ('en_US', 'TXT_KEY_BELIEF_JINJA_SHORT', 'Jinjas'),
 ('en_US', 'TXT_KEY_BELIEF_GOMPA_SHORT', 'Gompas'),
 --
-('en_US', 'TXT_KEY_BUILDING_NATIVEMOUND_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE]+3 [ICON_GOLD] Gold [NEWLINE][NEWLINE]{TXT_KEY_BUILDING_NATIVEMOUND_HELP}'),
-('en_US', 'TXT_KEY_BUILDING_AUL_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE]+1 [ICON_PRODUCTION] Production[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness[NEWLINE][NEWLINE]{TXT_KEY_BUILDING_AUL_HELP}'),
-('en_US', 'TXT_KEY_BUILDING_SACREDCAVE_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE]+2 [ICON_PRODUCTION] Production [NEWLINE]+3 [ICON_TOURISM] Tourism[NEWLINE]{TXT_KEY_BUILDING_SACREDCAVE_HELP}'),
-('en_US', 'TXT_KEY_BUILDING_XUEMIAO_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE][NEWLINE]{TXT_KEY_BUILDING_XUEMIAO_HELP}'),
-('en_US', 'TXT_KEY_BUILDING_JINJA_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE][NEWLINE]{TXT_KEY_BUILDING_JINJA_HELP}'),
-('en_US', 'TXT_KEY_BUILDING_GOMPA_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE][NEWLINE]{TXT_KEY_BUILDING_GOMPA_HELP}'),
+('en_US', 'TXT_KEY_BUILDING_NATIVEMOUND_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE]+3 [ICON_GOLD] Gold [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]+1 [ICON_FOOD] Food from City-State Friends; +1 [ICON_FOOD] Food, [ICON_PEACE] Faith from City-State Allies.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.'),
+('en_US', 'TXT_KEY_BUILDING_AUL_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE]+1 [ICON_PRODUCTION] Production [NEWLINE]+1 [ICON_GREAT_GENERAL] Great General Point[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production for every 2 Grassland or Plains tiles worked by the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty.'),
+('en_US', 'TXT_KEY_BUILDING_SACREDCAVE_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE]+2 [ICON_PRODUCTION] Production [NEWLINE]+3 [ICON_TOURISM] Tourism [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]+1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture from nearby Hills. [NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RELIGION] Religious Unrest.'),
+('en_US', 'TXT_KEY_BUILDING_XUEMIAO_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]+1 [ICON_RESEARCH] Science from Specialists in this City. [NEWLINE]+1 [ICON_PEACE] Faith from Great Person improvements worked by this City. [NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.'),
+('en_US', 'TXT_KEY_BUILDING_JINJA_TOOLTIP', '+2 [ICON_PEACE] Faith [NEWLINE]+2 [ICON_GOLDEN_AGE] Golden Age Points [NEWLINE]+1 [ICON_GREAT_ADMIRAL] Great Admiral Point. [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]+1 [ICON_PEACE] Faith from Coast and Ocean tiles. +1 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture from Atolls and Sea Resources worked by this City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.'),
+('en_US', 'TXT_KEY_BUILDING_GOMPA_TOOLTIP', '+3 [ICON_PEACE] Faith [NEWLINE]+3 [ICON_STRENGTH] City Defense [NEWLINE][NEWLINE]+25% [ICON_RELIGION] Religious pressure and +10% Religious conversion resistance in this City. [NEWLINE]City gains +1 [ICON_FOOD] Food and [ICON_PEACE] Faith for every Mountain within 3 tiles of the City. [NEWLINE]Receive 5 [ICON_RESEARCH] Science whenever you unlock a Policy, scaling with Era.'),
 --
 ('en_US', 'TXT_KEY_BELIEF_FOT', 'May build Aqueducts, Grocers, Hospitals, and Medical Labs with [ICON_PEACE] Faith. These buildings produce +3 [ICON_FOOD] Food. We Love the King Day boosts the [ICON_FOOD] Food output of a city by 10%.'),
 ('en_US', 'TXT_KEY_BELIEF_FOT_SHORT', 'Food for Thought'),
@@ -130,12 +130,11 @@ SELECT 'BUILDING_GOMPA', 'TERRAIN_MOUNTAIN', 'YIELD_FOOD', 100;
 
 INSERT INTO Building_YieldPerFriend
 		(BuildingType, YieldType, Yield)
-SELECT 'BUILDING_NATIVEMOUND', 'YIELD_FOOD', 1 UNION ALL
-SELECT 'BUILDING_NATIVEMOUND', 'YIELD_GOLD', 1;
+SELECT 'BUILDING_NATIVEMOUND', 'YIELD_FOOD', 1;
 
 INSERT INTO Building_YieldPerAlly
 		(BuildingType, YieldType, Yield)
-SELECT 'BUILDING_NATIVEMOUND', 'YIELD_FOOD', 2 UNION ALL
+SELECT 'BUILDING_NATIVEMOUND', 'YIELD_FOOD', 1 UNION ALL
 SELECT 'BUILDING_NATIVEMOUND', 'YIELD_FAITH', 1;
 
 INSERT INTO Building_YieldChanges

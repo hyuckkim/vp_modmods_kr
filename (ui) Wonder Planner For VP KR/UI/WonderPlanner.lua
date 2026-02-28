@@ -60,7 +60,7 @@ local g_sColorPolicyFinisher = '[COLOR_MAGENTA]'
 local g_sColorPolicy = '[COLOR:255:170:255:255]' 	-- Policies not being Policy Branch Finishers
 local g_sColorCorporation = '[COLOR_YIELD_FOOD]'
 local g_sColorCongress = '[COLOR:45:150:50:255]'
-local g_sColorUniqueCs = '[COLOR:140:140:140:255]'	-- Lhasa
+local g_sColorUniqueCs = '[COLOR:200:200:200:255]'	-- Lhasa
 local g_sColorUniqueCiv = '[COLOR:45:90:170:255]'	-- America
 
 local g_sColorGold = '[COLOR_YIELD_GOLD]'

@@ -29,7 +29,7 @@ function AssignStartingPlots.PlaceBonusResources(ASP)
     resources_to_place = {
         {ASP.polarwildgame_ID, 1, 100, 1, 1}
     };
-	local ResFrequency = 15 * resMultiplier
+	local ResFrequency = 10 * resMultiplier
 	local tPlotList = ASP.global_resource_plot_lists;
     ASP:ProcessResourceList(ResFrequency, ImpactLayers.LAYER_BONUS, tPlotList[PlotListTypes.FLAT_SNOW], resources_to_place);
 	print("Polar Wild Game frequency: " .. ResFrequency)

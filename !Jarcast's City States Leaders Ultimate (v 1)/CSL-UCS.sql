@@ -29,7 +29,7 @@ INSERT OR REPLACE INTO MinorCivLeaders
 		SELECT	'MINOR_CIV_BALKH',				'balkh_leadericon.dds',			'the Greco-Bactrian Kingdom',					'Demetrios I',							'King',					'tarcisiocm'						 UNION ALL	
 		SELECT	'MINOR_CIV_BEDULU',				'bedulu_leadericon.dds',		'the Kingdom of Bali',							'Mahendradatta',						'Queen',				'TopHatPaladin'						 UNION ALL	
 		SELECT	'MINOR_CIV_CANOSSA',			'canossa_leadericon.dds',		'the March of Tuscany',							'Matilda',								'Margravine',			'DuskJockey'						 UNION ALL
-		SELECT	'MINOR_CIV_CHEVAK',				'chevak_leadericon.dds',		"the Yup'ik",									'Apanuugpak',							'General',				'Mosile'							 UNION ALL	
+		SELECT	'MINOR_CIV_CHEVAK',				'chevak_leadericon2.dds',		"the Yup'ik",									'Apanuugpak',							'General',				'Arilasqueto'						 UNION ALL	
 --		SELECT	'MINOR_CIV_CLERMONT',			'clermont_leadericon.dds',		'the Duchy of Aquitaine',						'Urban II',								'Pope',					'DarthKyofu'						 UNION ALL	
 		SELECT	'MINOR_CIV_DAKKAR',				'dakkar_leadericon.dds',		'the Adal Empire',								'Sabr ad-Din III',						'Sultan',				'Lime'								 UNION ALL	
 		SELECT	'MINOR_CIV_DALI',				'dali_leadericon.dds',			'the Kingdom of Dali',							'Duan Siping',							'Commander',			'Grant'								 UNION ALL	
@@ -93,6 +93,13 @@ INSERT OR REPLACE INTO MinorCivLeaders
 		SELECT	'MINOR_CIV_VADUZ',				'vaduz_leadericon.dds',			'the Principality of Liechtenstein',			'Johann II',							'Prince',				'DuskJockey'						 UNION ALL	
 		SELECT	'MINOR_CIV_WOOTEI_NIICIE',		'wootei_niicie_leadericon.dds',	'the Arapaho',									'Pretty Nose',							'War Chief',			'Arilasqueto'						 UNION ALL	
 		SELECT	'MINOR_CIV_YANGCHENG',			'yangcheng_leadericon.dds',		'the Xia Dynasty',								'Yu',									'Emperor',				'Janboruta'							;
+
+UPDATE MinorCivLeaders SET LeaderIcon = 'karasjohka_leadericonX.dds', LeaderName = 'Rijkuo-Maja', LeaderTitle = 'Noaidi',
+	LeaderArtistName = 'Arilasqueto'
+WHERE Type = 'MINOR_CIV_KARASJOHKA';
+
+UPDATE MinorCivLeaders SET LeaderIcon = 'granada_leadericonX.dds', LeaderName = 'Muhammad V', LeaderArtistName = 'Urdnot'
+WHERE Type = 'MINOR_CIV_GRANADA';
 
 DELETE FROM MinorCivLeaders WHERE Type IN
 ('MINOR_CIV_AMBRACIA', 'MINOR_CIV_ARMAGH', 'MINOR_CIV_BALLEY_CHASHTAL', 'MINOR_CIV_CLERMONT', 'MINOR_CIV_GWYNEDD',

@@ -7,6 +7,7 @@
     <Description>Buffs snow hills and adds Polar Wild Game bonus resource to the terrain.</Description>
     <Authors>Jarcast</Authors>
     <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/jarcasts-permafrost-alive.701982/</Homepage>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -21,7 +22,9 @@
   <Dependencies>
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
   </Dependencies>
-  <References />
+  <References>
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders for VP" />
+  </References>
   <Blocks />
   <Files>
     <File md5="B848CD5EB1935AE755D328D7322D8A3F" import="1">Art/PolarWildGameFontIcon.dds</File>
@@ -32,12 +35,12 @@
     <File md5="ABC11EE9E2DC9D0129B9AA84F15F9582" import="1">Art/PolarWildGame_128.dds</File>
     <File md5="20F00CFA853090C3CC7F7736F7E5F2EA" import="1">Art/PolarWildGame_256.dds</File>
     <File md5="A04E8440AFA84541197C470F8A7D769B" import="1">Art/sv_PolarWildGame.dds</File>
-    <File md5="5A5CEA23F3A0D7E1DDCEE774C99000AF" import="0">Communitu_PolarAdjustments.lua</File>
+    <File md5="A54E37C2DC3C636FE8BDBC82FA485D6F" import="0">Communitu_PolarAdjustments.lua</File>
     <File md5="C822EDCDAF212F6757CDF0E9401B3AF0" import="0">Jar_Permafrost.sql</File>
     <File md5="B4B19A6E3044B6111037AFB41A9D2227" import="1">Model/resource_whitefurs.fxsxml</File>
     <File md5="3F83ADA22B37C3AA17E4B2C1F26A572B" import="1">Model/Resource_WhiteFurs.gr2</File>
     <File md5="E75272AADD630089A3EB6CE73FFC658F" import="1">Model/white_furs_diff.dds</File>
-    <File md5="470728A3433128800D6EDDA181A5BA25" import="1">ASP_polarwildgame.lua</File>
+    <File md5="73E4A015E04A01E43D24B637FDDCA4C0" import="1">ASP_polarwildgame.lua</File>
   </Files>
   <Actions>
     <OnModActivated>

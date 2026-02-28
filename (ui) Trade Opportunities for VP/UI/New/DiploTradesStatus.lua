@@ -43,6 +43,7 @@ local g_sColorCyan = "[COLOR_CYAN]"
 local g_sColorOrange = "[COLOR_YIELD_FOOD]"
 
 local g_sColorWhite = "[COLOR_WHITE]"
+local g_sColorLightGrey = "[COLOR:200:200:200:255]"
 local g_sColorBrown = "[COLOR_CITY_BROWN]"
 local g_sColorCityGreen = "[COLOR_CITY_GREEN]"
 
@@ -212,7 +213,7 @@ function GetCivControl(im, ePlayer, bCanTrade)
 			if resource.ResourceUsage == 1 then
 				g_sColorResourceName = g_sColorResourceStrategic
 			end
-			local sColorOfSource = g_sColorWhite
+			local sColorOfSource = g_sColorLightGrey
 			
 			if controlHeader == nil then
 				local sSource = ""
@@ -235,16 +236,28 @@ function GetCivControl(im, ePlayer, bCanTrade)
 						for quantity in GameInfo.Building_ResourceQuantity{ResourceType=resource.Type} do
 							for building in GameInfo.Buildings{Type=quantity.BuildingType} do
 								sSource = L(building.Description)
-								sColorOfSource = g_sColorOrange
-								break
+								
+								if building.IsDummy then
+									sColorOfSource = g_sColorWhite
+									break
+								else
+									sColorOfSource = g_sColorOrange
+									break
+								end
 							end
 						end
 
 						for plot in GameInfo.Building_ResourcePlotsToPlace{ResourceType=resource.Type} do
 							for building in GameInfo.Buildings{Type=plot.BuildingType} do
 								sSource = L(building.Description)
-								sColorOfSource = g_sColorOrange
-								break
+								
+								if building.IsDummy then
+									sColorOfSource = g_sColorWhite
+									break
+								else
+									sColorOfSource = g_sColorOrange
+									break
+								end
 							end
 						end
 					end

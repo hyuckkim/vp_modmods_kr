@@ -283,7 +283,7 @@ UPDATE Buildings
 SET FoodKept = 10, WLTKDTurns = 10, EnhancedYieldTech = 'TECH_ENGINEERING'
 WHERE Type = 'BUILDING_TCS_CISTERN';
 
-UPDATE	Buildings
+UPDATE Buildings
 SET CityConnectionTradeRouteModifier = 3, GreatPeopleRateModifier = 10
 WHERE Type = 'BUILDING_TCS_TOWN_COUNCIL';
 	

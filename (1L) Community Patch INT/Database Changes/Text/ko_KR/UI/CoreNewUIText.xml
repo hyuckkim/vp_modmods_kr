@@ -1027,52 +1027,52 @@
 			<Text>턴 당 총 [ICON_GOLD] 골드 {1_Gold}당 세계 의회 [ICON_DIPLOMAT] 대표단, 원래 세계에 있었던 [ICON_CITY_STATE] 도시 국가 수의 1/4로 제한</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_DOF">
-			<Text>+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]2[ENDCOLOR] active Declarations of Friendship with your Empire</Text>
+			<Text>당신의 문명과의 우호 선언이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]개 활성화될 때마다 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_DP">
-			<Text>+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every active Defensive Pact with your Empire</Text>
+			<Text>당신의 문명과 체결한 유효한 방위 조약 하나당 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_CAPITALS">
-			<Text>+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]Foreign[ENDCOLOR] original [ICON_CAPITAL] Capital Cities you control</Text>
+			<Text>당신이 통제하는 [COLOR_POSITIVE_TEXT]외국[ENDCOLOR] [ICON_CAPITAL] 수도 하나당 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_RESEARCH_AGREEMENTS">
-			<Text>+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every active Research Agreement with your Empire</Text>
+			<Text>당신의 문명과 체결한 유효한 연구 협정 하나당 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_RELIGION">
-			<Text>+1 [ICON_DIPLOMAT] Delegate in the World Congress for every {1: plural 1?City; other?{1_Num} Cities;} following your [ICON_RELIGION] Primary Religion</Text>
+			<Text>당신의 [ICON_RELIGION] 대중 종교를 믿는 모든 도시마다 [ICON_DIPLOMAT] 세계 의회 대표단 +1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTES">
-			<Text>{2_Sign}{1_Num} [ICON_INTERNATIONAL_TRADE] Trade {1: plural 1?Route; other?Routes;}</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] 교역로 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_LAND_ETR_ORIGIN_GOLD">
-			<Text>{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_CARAVAN] Land International Trade Routes originated from this City</Text>
+			<Text>이 도시에서 출발하는 [ICON_CARAVAN] 지상 교역로로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SEA_ETR_ORIGIN_GOLD">
-			<Text>{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_CARGO_SHIP] Sea International Trade Routes originated from this City</Text>
+			<Text>이 도시에서 출발하는 [ICON_CARGO_SHIP] 해상 교역로로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num} </Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ETR_DESTINATION_OUR_GOLD">
-			<Text>{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City</Text>
+			<Text>이 도시를 목표로 하는 [ICON_INTERNATIONAL_TRADE] 국제 교역로를 통해 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ETR_DESTINATION_THEIR_GOLD">
-			<Text>{2_Sign}{1_Num} [ICON_GOLD] Gold to Origin City of [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] 국제 교역로의 출발 도시에서 이 도시로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_RESOURCE_DIVERSITY_MODIFIER">
-			<Text>{2_Sign}{1_Num}% Resource Diversity for [ICON_INTERNATIONAL_TRADE] Trade Routes</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] 교역로의 자원 다양화 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_LAND_TRADE_ROUTE_RANGE_MODIFIER">
-			<Text>{2_Sign}{1_Num}% Range for [ICON_CARAVAN] Land Trade Routes</Text>
+			<Text>[ICON_CARAVAN] 지상 교역 범위 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SEA_TRADE_ROUTE_RANGE_MODIFIER">
-			<Text>{2_Sign}{1_Num}% Range for [ICON_CARGO_SHIP] Sea Trade Routes</Text>
+			<Text>[ICON_CARGO_SHIP] 해상 교역 범위 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTE_DURATION_MODIFIER">
-			<Text>{2_Sign}{1_Num}% Duration for [ICON_INTERNATIONAL_TRADE] Trade Routes</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] 교역로 소요 기간 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTE_DURATION_MODIFIER_LOCAL">
-			<Text>{2_Sign}{1_Num}% Duration for [ICON_INTERNATIONAL_TRADE] Trade Routes originated from this City</Text>
+			<Text>이 도시에서 출발하는 [ICON_INTERNATIONAL_TRADE] 교역로의 소요 기간 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_UNIT_EXTRA_SIGHT">
-			<Text>{2_Sign}{1_Num} Sight for Trade Units</Text>
+			<Text>교역 유닛 시야 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_UNIT_SPEED_MULTIPLIER">
 			<Text>교역 유닛 속도 {1_Num}x</Text>
@@ -1546,28 +1546,28 @@
 			<Text>같은 지역 내 도시에 {1_YieldModifiers}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_CORPORATION_YIELD_MODIFIER_TR_WITH_FRANCHISE">
-			<Text>{1_YieldModifiers} to [ICON_INTERNATIONAL_TRADE] Trade Routes targeting Cities with [ICON_FRANCHISE] Established Franchise of this Corporation</Text>
+			<Text>[ICON_FRANCHISE] 이 기업의 프랜차이즈가 이미 건설된 도시를 대상으로 하는 [ICON_INTERNATIONAL_TRADE] 교역로에 {1_YieldModifiers}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_CORPORATION_YIELD_MODIFIER_TR_WITH_FRANCHISE_CITY">
-			<Text>{1_YieldModifiers} per [ICON_INTERNATIONAL_TRADE] Trade Route targeting Cities with [ICON_FRANCHISE] Established Franchise of this Corporation</Text>
+			<Text>[ICON_FRANCHISE] 이 기업의 프랜차이즈가 이미 설립된 도시를 대상으로 하는 [ICON_INTERNATIONAL_TRADE] 교역로 당 {1_YieldModifiers}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BUILDING">
-			<Text>[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BUILDING_GLOBAL">
-			<Text>[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR] in any City: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET] 모든 도시의 [COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] 행복</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_BUILDING">
 			<Text>[ICON_BULLET][COLOR_YIELD_FOOD]{1_Building:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_BUILDING_GLOBAL">
-			<Text>[ICON_BULLET][COLOR_YIELD_FOOD]{1_Building:textkey}[ENDCOLOR] in any City: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]모든 도시의 [COLOR_YIELD_FOOD]{1_Building:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_LOCAL_RESOURCE">
-			<Text>[ICON_BULLET]Each {3_ResourceIcon} {1_Resource:textkey} connected to City: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]도시로 연결된 각 {3_ResourceIcon} {1_Resource:textkey}: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_LOCAL_RESOURCE">
-			<Text>[ICON_BULLET]Each {3_ResourceIcon} {4_Resource:textkey} connected to City: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET]도시로 연결된 각 {3_ResourceIcon} {4_Resource:textkey}: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_MOUNTAINS">
 			<Text>[ICON_BULLET]도시에서 3타일 이내에 있는 각 산: {1_YieldBoosts}</Text>
@@ -1576,16 +1576,16 @@
 			<Text>[ICON_BULLET]각 도시가 소유한 설원 타일: {1_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_WORKED_TERRAIN">
-			<Text>[ICON_BULLET]Each worked [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Terrain:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]작업중인 각 [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Terrain:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_WORKED_FEATURE">
-			<Text>[ICON_BULLET]Each worked [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Feature:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]작업중인 각 [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Feature:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_IMPROVEMENT">
-			<Text>[ICON_BULLET]Each [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR] owned by City: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]도시가 보유중인 각 [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_IMPROVEMENT_GLOBAL">
-			<Text>[ICON_BULLET]Each [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR] in Empire: {2_YieldBoosts}</Text>
+			<Text>[ICON_BULLET]문명의 각 [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_TECH">
 			<Text>[ICON_BULLET][COLOR_CYAN]{1_Tech:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
@@ -1594,19 +1594,19 @@
 			<Text>[ICON_BULLET][COLOR_MAGENTA]{1_Policy:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_POLICY_STATE_RELIGION">
-			<Text>[ICON_BULLET][COLOR_MAGENTA]{1_Policy:textkey}[ENDCOLOR]: {2_YieldBoosts} when City follows your [ICON_RELIGION] Primary Religion</Text>
+			<Text>[ICON_BULLET][COLOR_MAGENTA]{1_Policy:textkey}[ENDCOLOR]: 도시가 당신의 [ICON_RELIGION] 대중 종교를 믿을 경우 {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_POLICY">
-			<Text>[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CITY_SECURITY_FROM_POLICY">
-			<Text>[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_CITY_SECURITY] City Security</Text>
+			<Text>[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: [ICON_CITY_SECURITY] 도시 보안 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_BELIEF">
 			<Text>[ICON_BULLET][COLOR_WHITE]{1_Belief:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BELIEF">
-			<Text>[ICON_BULLET][COLOR_WHITE]{3_Belief:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET][COLOR_WHITE]{3_Belief:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_CORPORATION">
 			<Text>[ICON_BULLET][COLOR_YIELD_GOLD]{1_Corporation:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
@@ -1615,19 +1615,19 @@
 			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Civ:textkey}[ENDCOLOR]: {2_YieldBoosts}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_ACCOMPLISHMENT">
-			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness</Text>
+			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_XP_FOR_DOMAIN_FROM_ACCOMPLISHMENT">
-			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num} XP for [COLOR_YELLOW]{4_Domain:textkey}[ENDCOLOR]</Text>
+			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: [COLOR_YELLOW]{4_Domain:textkey}[ENDCOLOR]의 경험치 {2_Sign}{1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_UNIT_COMBAT_PRODUCTION_MODIFIER_FROM_ACCOMPLISHMENT">
-			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num}% [ICON_PRODUCTION] Production for [COLOR_YELLOW]{4_UnitCombat:textkey}[ENDCOLOR] Units</Text>
+			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]:  [COLOR_YELLOW]{4_UnitCombat:textkey}[ENDCOLOR]의 [ICON_PRODUCTION] 생산력 {2_Sign}{1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PLAYER_INSTANCE_FROM_ACCOMPLISHMENT">
-			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{2_Accomplishment:textkey}[ENDCOLOR]: May build {1_Num} more of this Building</Text>
+			<Text>[ICON_BULLET][COLOR_WATER_TEXT]{2_Accomplishment:textkey}[ENDCOLOR]: 이 건물을 {1_Num}개 더 지을 수 있음</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_PLAYER_INSTANCE_SUFFIX">
-			<Text>({1_Num} more from Accomplishments)</Text>
+			<Text>(Accomplishment에서 {1_Num}만큼 더)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_ERA">
 			<Text>[ICON_BULLET] 고전 시대 이후 모든 새 시대: {1_YieldBoosts}</Text>
