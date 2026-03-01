@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_WONDERPLANNER_OVERVIEW">
+			<Text>불가사의 계획표</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_PLANNER">
+			<Text>가능</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_BUILT">
+			<Text>건설됨</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_UNKNOWN">
+			<Text>알려지지 않음</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_WONDERPLANNER_DESTROYED">
+			<Text>파괴됨</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDERPLANNER_ERA_LIMIT">
+			<Text>시대 제한: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_NO_ERA_LIMIT">
+			<Text>시대 제한 비활성화</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_WONDER">
+			<Text>불가사의</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NAME_TT">
+			<Text>[COLOR_POSITIVE_TEXT]불가사의[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY">
+			<Text>도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CITY_TT">
+			<Text>[COLOR_POSITIVE_TEXT]문명[ENDCOLOR]을 기준으로 정렬한 다음 [COLOR_POSITIVE_TEXT]도시[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH">
+			<Text>기술/도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TECH_TT">
+			<Text>[COLOR_POSITIVE_TEXT]기술/도시[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED">
+			<Text>#</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_NEEDED_TT">
+			<Text>[COLOR_POSITIVE_TEXT]필요한 기술[ENDCOLOR] 수를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR">
+			<Text>연도</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_YEAR_TT">
+			<Text>[COLOR_POSITIVE_TEXT]건설 연도[ENDCOLOR]를 기준으로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FOOD_TT">
+			<Text>[COLOR_POSITIVE_TEXT]식량 생산[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]성장[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CONSTRUCTION_TT">
+			<Text>[COLOR_POSITIVE_TEXT]건설 속도[ENDCOLOR]가 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GOLD_TT">
+			<Text>[COLOR_POSITIVE_TEXT]재산[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GA_TT">
+			<Text>[COLOR_POSITIVE_TEXT]황금기[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TRADE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]거래[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_SCIENCE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]연구 역량[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_CULTURE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]문화적 영향력[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_GREATPEOPLE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]전문가[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]위인[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TOURISM_TT">
+			<Text>[COLOR_POSITIVE_TEXT]관광[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FAITH_TT">
+			<Text>[COLOR_POSITIVE_TEXT]종교[ENDCOLOR]에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_HAPPY_TT">
+			<Text>[COLOR_POSITIVE_TEXT]행복[ENDCOLOR]이 증가하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_OFFENSE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]공격력[ENDCOLOR]을 강화하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_FREEUNIT_TT">
+			<Text>[COLOR_POSITIVE_TEXT]무료 유닛[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]무료 건물[ENDCOLOR]을 제공하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_EXPANSION_TT">
+			<Text>[COLOR_POSITIVE_TEXT]확장[ENDCOLOR]에 도움을 주는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_DEFENSE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]방어력[ENDCOLOR]을 강화하는 불가사의 그룹</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_ESPIONAGE_TT">
+			<Text>[COLOR_POSITIVE_TEXT]외교[ENDCOLOR] 또는 [COLOR_POSITIVE_TEXT]간첩[ENDCOLOR] 활동에 영향을 미치는 불가사의 그룹</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_TOP">
+			<Text>aaaa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_ALMOST_TOP">
+			<Text>aaac</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_MIDDLE">
+			<Text>bbbb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_SORT_BOTTOM">
+			<Text>zzzz</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_YEAR_AD">
+			<Text> AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_YEAR_BC">
+			<Text> BC</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_WONDERPLANNER_GRANTED">
+			<Text>Granted</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_DESTROYED">
+			<Text>파괴되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_OUTDATED">
+			<Text>OUTDATED!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDERPLANNER_COLORED_NAME">
+			<Text>{1_Color}{2_Name} ({3_Reason})[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_COLORED_NAME_HOLY">
+			<Text>{1_Color}{2_Name} (Holy)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_COLORED_NAME_CORPO">
+			<Text>{1_Color}{2_Name}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_RELIGION">
+			<Text>Player has not founded any {1_ColorHolyCity}Religion[ENDCOLOR] nor has a {1_ColorHolyCity}Holy City[ENDCOLOR] of other Religion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_IDEOLOGY">
+			<Text>플레이어는 아직 {1_ColorIdeology}{2_IdeologyBranch}[ENDCOLOR] 이념을 해제하지 않았습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_POLICY_BRANCH">
+			<Text>Player has not finished {1_ColorPolicyBranch}{2_PolicyBranch}[ENDCOLOR] Branch yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_POLICY">
+			<Text>플레이어는 아직 {1_ColorPolicy}{2_PolicyBranch}[ENDCOLOR] 정책을 해제하지 않았습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_WORLD_PROJECT">
+			<Text>{1_ColorCongress}{2_WorldProject}[ENDCOLOR] Project has not been passed yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_MISSING_ALLIANCE">
+			<Text>Player is not allied to {1_ColorCS}{2_CS}[ENDCOLOR], doesn't have an {1_ColorCS}Embassy[ENDCOLOR] on its territory nor has enough {1_ColorCS}[ICON_INFLUENCE] Influence[ENDCOLOR] with it</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_LOCKED_WRONG_CIVILIZATION">
+			<Text>Only {1_ColorCivilization}{2_Civilization}[ENDCOLOR] can construct this World Wonder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_1">
+			<Text>[ICON_BULLET] 무료 {1_great_person}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2A1">
+			<Text>[ICON_BULLET]1 slot for {1_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2A2">
+			<Text>[ICON_BULLET]{1_spec_count} slots for {2_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2B">
+			<Text>[ICON_BULLET]+{1_gpp_rate}{2_icon}/Turn </Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2C">
+			<Text>[ICON_BULLET]+{1_gpp_rate}%{2_icon}/Turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2D">
+			<Text>[ICON_BULLET]{1_gpp_rate}{2_icon} on [ICON_PRODUCTION] {3_Era} Building Construction (scaling with Era)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_2E">
+			<Text>[ICON_BULLET]{1_gpp_rate}%{2_icon} on [ICON_PRODUCTION] {3_Era} Building Construction</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3A">
+			<Text>[ICON_BULLET]무료 [ICON_GREAT_PEOPLE] 위인</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3B">
+			<Text>[ICON_BULLET]+{1_gpp_rate_mod}%[ICON_GREAT_PEOPLE]/Turn in Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3C">
+			<Text>[ICON_BULLET]+{1_gpp_rate_mod}%[ICON_GREAT_PEOPLE]/Turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3D">
+			<Text>[ICON_BULLET]+{1_gpp_rate_mod}%[ICON_GREAT_PEOPLE]/Turn per [ICON_RES_MARRIAGE] Marriage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3E">
+			<Text>[ICON_BULLET]+{1_gpp_rate_mod}%[ICON_GREAT_PEOPLE]/Turn per local [ICON_GREAT_WORK] Theme</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_3F">
+			<Text>[ICON_BULLET]{1_gpp_rate_mod}[ICON_GREAT_PEOPLE] towards most advanced [ICON_GREAT_PEOPLE] on [ICON_CITIZEN] Birth (scaling with Era)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_GPP_VER_EXTENSION">
+			<Text>{1_tooltip} in Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY">
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES">
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_ONE">
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다. ({1_Color}+1[ENDCOLOR]개 숨겨짐)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_HIDDEN_MORE">
+			<Text>[COLOR_POSITIVE_TEXT]1[ENDCOLOR]개 도시에서 이용 가능합니다. ({1_Color}+{2_Hidden}[ENDCOLOR]개 숨겨짐)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_ONE">
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다. ({2_Color}+1[ENDCOLOR]개 숨겨짐)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_HIDDEN_MORE">
+			<Text>[COLOR_POSITIVE_TEXT]{1_NumCity}[ENDCOLOR]개 도시에서 이용 가능합니다. ({2_Color}+{3_Hidden}[ENDCOLOR]개 숨겨짐)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITIES_LIST">
+			<Text>[COLOR_YIELD_GOLD]{1_Wonder}[ENDCOLOR]를 건설할 수 있는 도시:[NEWLINE][ICON_BULLET]</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_TT_CONSTRUCTING">
+			<Text>{1_Color}{2_City} (constructing)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_CITY_TT_BLOCKED">
+			<Text>{1_Color}{2_City} (blocked)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK">
+			<Text>불가사의 상태</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDERPLANNER_DIPLO_CORNER_HOOK_TT">
+			<Text>어떤 불가사의를 목표로 할지 결정하기 위한 도구</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

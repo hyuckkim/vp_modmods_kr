@@ -45,10 +45,7 @@ Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 Source: "..\AssetsMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: vp
 Source: "..\Assets_votesMP\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: nvc
 Source: "..\MPMaps\*"; DestDir: "{code:GetCIVDir}\Assets\Maps"; Flags: ignoreversion recursesubdirs; Components: maps
-Source: "..\UI\UI_SukMainMenu\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\UI_SukMainMenu"; Flags: ignoreversion recursesubdirs; Components: sukmm
-Source: "..\UI\CivSelection\DLC\*"; DestDir: "{code:GetCIVDir}\Assets\DLC"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
-Source: "..\UI\CivSelection\UI\*"; DestDir: "{code:GetCIVDir}\Assets\UI"; Flags: ignoreversion recursesubdirs; Components: civselect\cs
-Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect\csbu
+Source: "..\UI\CivSelection\Backup\*"; DestDir: "{code:GetCIVDir}\Assets"; Flags: ignoreversion recursesubdirs; Components: civselect
 Source: "..\Textures\Artful Textures\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\Artful Textures"; Flags: ignoreversion recursesubdirs; Components: texture\at
 Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ignoreversion recursesubdirs; Components: texture\vt
 
@@ -58,10 +55,7 @@ Source: "..\Textures\VT\*"; DestDir: "{code:GetCIVDir}\Assets\DLC\VT"; Flags: ig
 Name: "vp"; Description: "VP + UI + 5/6 UC + 계몽"; Types: VP Custom; Flags: disablenouninstallwarning fixed
 Name: "maps"; Description: "추가 지도: 문명 5 지도 폴더에 복사"; Types: VP Custom; Flags: disablenouninstallwarning
 Name: "nvc"; Description: "세계 의회 투표 문명 이름 색상 제거"; Types: Custom; Flags: disablenouninstallwarning
-Name: "sukmm"; Description: "메인 메뉴 배경+ (Main Menu BG+)"; Types: Custom; Flags: disablenouninstallwarning
-Name: "civselect"; Description: "지도자 선택 화면"; Types: Custom; Flags: disablenouninstallwarning
-Name: "civselect\csbu"; Description: "문명 선택 기본 화면"; Types: Custom; Flags: exclusive disablenouninstallwarning
-Name: "civselect\cs"; Description: "진정한 대체 지도자 (True Alternative Leaders)"; Types: Custom; Flags: exclusive disablenouninstallwarning
+Name: "civselect"; Description: "문명 선택 기본 화면"; Types: Custom; Flags: disablenouninstallwarning
 Name: "texture"; Description: "지도 텍스처"; Types: Custom; Flags: disablenouninstallwarning
 Name: "texture\vt"; Description: "선명한 텍스처 (Vibrant Textures)"; Types: VP Custom; Flags: exclusive disablenouninstallwarning
 Name: "texture\at"; Description: "예술적인 텍스처 (Artful Textures)"; Types: Custom; Flags: exclusive disablenouninstallwarning
@@ -115,6 +109,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Cities of Marble for VP (v 4) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's City States Leaders Ultimate (v 1)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's City States Leaders Ultimate (v 1) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's City States Leaders Ultimate INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Hidden Wonders (VP) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\!Jarcast's Italy for VP (v 3)"
@@ -154,6 +149,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\InGame Editor+ (v 47)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Jarcast's Bigger Huge Map for Communitu_79a (v 5)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\JFD's Civilizations - Papal States for VP (v 11)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Longer Eras - Historic (v 8)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Longer Eras - Historic (v 8) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Battles+ (v 50)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 51)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 51) INT"

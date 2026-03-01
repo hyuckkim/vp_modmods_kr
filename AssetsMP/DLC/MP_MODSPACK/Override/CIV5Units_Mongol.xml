@@ -2818,11 +2818,6 @@
 				Afraid
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_AFRICA"> 
-			<Text>
-				Choose african music.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_AGGRESSIVE_MILITARY_WARNING_1"> 
 			<Text>
 				It's come to my attention that you have a large number of Units near my borders. I request that you move them elsewhere to avoid causing undue distress to my citizens.
@@ -3503,11 +3498,6 @@
 				All civilizations are constantly at war with each other.[NEWLINE]Diplomacy should be the least of your concerns.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_AMERICA"> 
-			<Text>
-				Choose traditional native american music.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_AMERICAN_TITLE"> 
 			<Text>
 				Chief {1_PlayerName:textkey} of {2_CivName:textkey}
@@ -3606,31 +3596,6 @@
 		<Replace Tag="TXT_KEY_APU_SHORT"> 
 			<Text>
 				Apu
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_1"> 
-			<Text>
-				{2_Era} {1_CivAdj} Battlefield
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_2"> 
-			<Text>
-				{2_Era} {1_CivAdj} Battlefield
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_3"> 
-			<Text>
-				{2_Era} {1_CivAdj} Primitive Camp
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_4"> 
-			<Text>
-				{2_Era} {1_CivAdj} Prehistoric Ruins
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_5"> 
-			<Text>
-				{2_Era} {1_CivAdj} Ruined City
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ARTIFACT_ANCIENT_CAMP"> 
@@ -3931,11 +3896,6 @@
 		<Replace Tag="TXT_KEY_ART_STOLEN_SUMMARY"> 
 			<Text>
 				Art plundered!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ASIA"> 
-			<Text>
-				Choose asian music.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ASKIA_EXPANSION_SERIOUS_WARNING_1"> 
@@ -27062,21 +27022,6 @@
 				Zwolle
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE"> 
-			<Text>
-				City Resistance
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_HEADING"> 
-			<Text>
-				Resistance ended in {1_CityName}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_TEXT"> 
-			<Text>
-				The City of {1_CityName}  has exited [ICON_RESISTANCE] resitance
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CITY_NOT_PRODUCING"> 
 			<Text>
 				{1_CityName} is not currently producing anything.
@@ -50090,41 +50035,6 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Your Offices
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CP_BUILD_PROGRESS_TT"> 
-			<Text>
-				{1_Done} of {2_Total}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITIES"> 
-			<Text>
-				Cities
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY"> 
-			<Text>
-				City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY_TT"> 
-			<Text>
-				Click to enter City View screen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CURRENT"> 
-			<Text>
-				Build
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK"> 
-			<Text>
-				City Production
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				Manage all City Production from one summary screen
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CP_DIPLO_DP"> 
 			<Text>
 				Defensive Pact
@@ -50145,229 +50055,9 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				[COLOR_POSITIVE_TEXT]Vassal of[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS"> 
-			<Text>
-				Focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_CULTURE"> 
-			<Text>
-				Click to set city focus to [ICON_CULTURE]Culture
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_DEFAULT"> 
-			<Text>
-				Click to set city focus to the default
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FAITH"> 
-			<Text>
-				Click to set city focus to [ICON_PEACE]Faith
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FOOD"> 
-			<Text>
-				Click to set city focus to [ICON_FOOD]Food
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GOLD"> 
-			<Text>
-				Click to set city focus to [ICON_GOLD]Gold
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GP"> 
-			<Text>
-				Click to set city focus to [ICON_GREAT_PEOPLE]Great People
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_PRODUCTION"> 
-			<Text>
-				Click to set city focus to [ICON_PRODUCTION]Production
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_SCIENCE"> 
-			<Text>
-				Click to set city focus to [ICON_RESEARCH]Science
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CP_HAPPINESS_EXPLANATION"> 
 			<Text>
 				This is the empire-wide breakdown. [ICON_HAPPINESS_1] Happiness counters [ICON_HAPPINESS_3] Unhappiness in each city. Unhappiness is limited by the size of the city, except for Urbanization!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_CITIZENS_TT"> 
-			<Text>
-				City has manually allocated specialists
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_GROWTH_TT"> 
-			<Text>
-				City is avoiding growth
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_TILES_TT"> 
-			<Text>
-				City has manually allocated (locked) tiles
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_OVERVIEW"> 
-			<Text>
-				Production
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PROGRESS"> 
-			<Text>
-				Progress
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PUPPET_WARNING"> 
-			<Text>
-				[COLOR_RED]All Puppet cities will revert to [ICON_GOLD]Gold focus at the end of your turn![ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_ICON_TT"> 
-			<Text>
-				Click to sort by current production item
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_PROGRESS_TT"> 
-			<Text>
-				Click to sort by current production progress
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_TURNS_TT"> 
-			<Text>
-				Click to sort by current production turns remaining
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_CULTURE_TT"> 
-			<Text>
-				Click to sort by culture per turn
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FAITH_TT"> 
-			<Text>
-				Click to sort by faith per turn
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_CULTURE_TT"> 
-			<Text>
-				Click to sort by culture focus, right click to set all cities to culture focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_DEFAULT_TT"> 
-			<Text>
-				Click to sort by default focus, right click to set all cities to default focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FAITH_TT"> 
-			<Text>
-				Click to sort by faith focus, right click to set all cities to faith focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FOOD_TT"> 
-			<Text>
-				Click to sort by food focus, right click to set all cities to food focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GOLD_TT"> 
-			<Text>
-				Click to sort by gold focus, right click to set all cities to gold focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GP_TT"> 
-			<Text>
-				Click to sort by great people focus, right click to set all cities to great people focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_PRODUCTION_TT"> 
-			<Text>
-				Click to sort by production focus, right click to set all cities to production focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_SCIENCE_TT"> 
-			<Text>
-				Click to sort by science focus, right click to set all cities to science focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOOD_TT"> 
-			<Text>
-				Click to sort by surplus food
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_GOLD_TT"> 
-			<Text>
-				Click to sort by gold income per turn
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_CITIZENS_TT"> 
-			<Text>
-				Click to sort by cities with manually allocated specialists
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_GROWTH_TT"> 
-			<Text>
-				Click to sort by cities avoiding growth
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_TILES_TT"> 
-			<Text>
-				Click to sort by cities with manually allocated tiles
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_NAME_TT"> 
-			<Text>
-				Click to sort by city name
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_POP_TT"> 
-			<Text>
-				Click to sort by city population
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_PRODUCTION_TT"> 
-			<Text>
-				Click to sort by production per turn
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_SCIENCE_TT"> 
-			<Text>
-				Click to sort by science per turn
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_STATUS_TT"> 
-			<Text>
-				Click to sort by city status
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_CAPITAL_TT"> 
-			<Text>
-				Capital City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_OCCUPIED_TT"> 
-			<Text>
-				Occupied City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_PUPPET_TT"> 
-			<Text>
-				Puppet City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RAZING_TT"> 
-			<Text>
-				Burning!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RESISTANCE_TT"> 
-			<Text>
-				In Resistance!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_TURNS"> 
-			<Text>
-				Turns
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CREDITS"> 
@@ -50493,101 +50183,6 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		<Replace Tag="TXT_KEY_CREDIT_GRANNY"> 
 			<Text>
 				Uses Granny [RED]Animation[/RED]. Copyright (C) 1999-2010 by RAD Game Tools, Inc.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITIES"> 
-			<Text>
-				Cities
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY"> 
-			<Text>
-				City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY_TT"> 
-			<Text>
-				Click to enter City View screen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK"> 
-			<Text>
-				City Religions
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				Manage all City Religions from one summary screen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_FOCUS"> 
-			<Text>
-				Focus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE"> 
-			<Text>
-				Buildings/Units available for purchase with [ICON_PEACE] Faith (excluding Missionary/Inquisitor)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_OVERVIEW"> 
-			<Text>
-				Religions
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_PURCHASES"> 
-			<Text>
-				Purchases
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT"> 
-			<Text>
-				Click to sort by {1_Religion}[NEWLINE]({2_CivilizationName} - {3_HolyCity})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_NAME_TT"> 
-			<Text>
-				Click to sort by city name
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_POP_TT"> 
-			<Text>
-				Click to sort by city population
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_RELIGION_TT"> 
-			<Text>
-				Click to sort by city religion
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_STATUS_TT"> 
-			<Text>
-				Click to sort by city status
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_CAPITAL_TT"> 
-			<Text>
-				Capital City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT"> 
-			<Text>
-				Occupied City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_PUPPET_TT"> 
-			<Text>
-				Puppet City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RAZING_TT"> 
-			<Text>
-				Burning!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT"> 
-			<Text>
-				In Resistance!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CSTATE_CANNOT_BULLY"> 
@@ -52516,236 +52111,6 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		<Replace Tag="TXT_KEY_DENOUNCING_FRIEND_4"> 
 			<Text>
 				There is no point in hiding it any longer: I used to like you, but now I hate you.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]They have publicly denounced us![ENDCOLOR])
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_CITY_RESISTANCE"> 
-			<Text>
-				{1_city} exits resistance
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"> 
-			<Text>
-				War with {1_civ} against {2_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK"> 
-			<Text>
-				Diary Options
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				Configure Diary options (entries, length, etc)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"> 
-			<Text>
-				Automatic Faith Purchase ({1_item}) (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"> 
-			<Text>
-				[COLOR_WARNING_TEXT]BANKRUPT!!![ENDCOLOR] (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"> 
-			<Text>
-				Savings Target ([ICON_GOLD]{1_amount}) Reached (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FORMAT"> 
-			<Text>
-				{1_icon} {2_prefix}{3_turn} - {4_entry}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_END"> 
-			<Text>
-				Golden Age End
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_START"> 
-			<Text>
-				Golden Age Start (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GOLD_TRADE_END"> 
-			<Text>
-				Gold Trade Expires (from {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_END"> 
-			<Text>
-				GPT Trade Expires (from {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"> 
-			<Text>
-				GPT Trade Expires (from {1_civ} x{2_count})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_LEAGUE_VOTE"> 
-			<Text>
-				League Vote
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_MAYAN_SEP"> 
-			<Text>
-				[NEWLINE][NEWLINE]-----[NEWLINE]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"> 
-			<Text>
-				Next Policy Choice (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NOTHING"> 
-			<Text>
-				Nothing to see here
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NW_COMPLETE"> 
-			<Text>
-				{1_building} (National Wonder) Completed (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"> 
-			<Text>
-				Use absolute turns
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT"> 
-			<Text>
-				Check to display turn number, uncheck to display number of turns remaining.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"> 
-			<Text>
-				Close
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_CITIES"> 
-			<Text>
-				[ICON_RESISTANCE] Include Cities
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"> 
-			<Text>
-				[ICON_INFLUENCE] Include Diplomatic Agreements
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"> 
-			<Text>
-				[ICON_PEACE] Include Faith Purchases
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES"> 
-			<Text>
-				[ICON_GOLD] Include Finances
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"> 
-			<Text>
-				[ICON_HAPPINESS_1] Include Golden Ages
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"> 
-			<Text>
-				[ICON_INFLUENCE] Include Peace Agreements
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES"> 
-			<Text>
-				[ICON_CULTURE] Include Policy Predictions
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"> 
-			<Text>
-				[ICON_RESEARCH] Include Research Agreements
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"> 
-			<Text>
-				[ICON_SPY] Include Espionage
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"> 
-			<Text>
-				[ICON_RESEARCH] Include Technology Predictions
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"> 
-			<Text>
-				[ICON_INFLUENCE] Include Voting
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"> 
-			<Text>
-				[ICON_PRODUCTION] Include Wonders
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"> 
-			<Text>
-				Maximum entries
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"> 
-			<Text>
-				Number of entries to display in the list
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"> 
-			<Text>
-				Maximum turns
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"> 
-			<Text>
-				Entries taking longer than this to complete will be excluded.  Use 0 to include all entries.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PEACE_END"> 
-			<Text>
-				Peace Treaty Expires (with {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PREFIX"> 
-			<Text>
-				+
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"> 
-			<Text>
-				{1_project} Completed (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RA_COMPLETE"> 
-			<Text>
-				Research Agreement Completes (with {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"> 
-			<Text>
-				{1_tech} Researched (predicted)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"> 
-			<Text>
-				Rigging Elections in {2_cs}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"> 
-			<Text>
-				Steal Technology from {2_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_UN_VOTE"> 
-			<Text>
-				UN Vote
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_WW_COMPLETE"> 
-			<Text>
-				{1_building} (World Wonder) Completed (predicted)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_DIFFICULTY_UNHAPPINESS_MOD"> 
@@ -61487,11 +60852,6 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				[COLOR_CYAN]Unit will withdraw from the attack[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_EUROPE"> 
-			<Text>
-				Choose european music.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_EUROPEAN_CITYSTATE_FOUND"> 
 			<Text>
 				You have earned {1_AdmiralPoints} Great Admiral Points for finding a City State. Use them to discover China or perform a "trade mission".
@@ -68946,41 +68306,6 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		<Replace Tag="TXT_KEY_GOLD_ADV_QUEST"> 
 			<Text>
 				What is gold and what can I do with it?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_AMOUNT"> 
-			<Text>
-				[ICON_GOLD]Amount:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_AMOUNT_TT"> 
-			<Text>
-				Target [ICON_GOLD]gold amount (use an amount of [ICON_GOLD]0 to disable gold alerts)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_BUTTON_OK"> 
-			<Text>
-				Set
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_DEFAULT_MESSAGE"> 
-			<Text>
-				You have enough [ICON_GOLD]gold to buy a settler
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_HEADING"> 
-			<Text>
-				Gold Alert Details
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_MESSAGE"> 
-			<Text>
-				Message:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_MESSAGE_TT"> 
-			<Text>
-				Message to display when target [ICON_GOLD]gold amount has been reached
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOLD_ANCIENTRUINS_ADV_QUEST"> 
@@ -80170,21 +79495,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Resources & Happiness
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS"> 
-			<Text>
-				Buildings
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS_BUY_BUILDINGS"> 
-			<Text>
-				Available Local Happiness Buildings
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUY_BUILDING_TT"> 
-			<Text>
-				{1_BuildingName}, Click to buy [ICON_HAPPINESS_1]{2_Happiness} for {3_CostIcon}{4_Cost}
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_CAUSESUNHAPPINESS_ADV_QUEST"> 
 			<Text>
 				What causes unhappiness?
@@ -80228,39 +79538,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_GREEN]What Causes Happiness[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_CITY_NAME"> 
-			<Text>
-				City
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_CITY_NAME_TT"> 
-			<Text>
-				Currently building {1_building}
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_CORPORATION_TYPES_BODY"> 
 			<Text>
 				[COLOR_POSITIVE_TEXT]Corporation Types[ENDCOLOR]: there are seven Corporations available in Vox Populi. Each of these can only be constructed once (and only one per player), so choose wisely! For more on this, see the [COLOR_POSITIVE_TEXT]Corporations[ENDCOLOR] Tab of the Civilopedia.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES"> 
-			<Text>
-				Courthouses
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES_NONE"> 
-			<Text>
-				You have no annexed cities in need of a Courthouse
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK"> 
-			<Text>
-				City Happiness
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				Manage all City Happiness from one summary screen
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_FROM_LEAGUES"> 
@@ -80341,21 +79621,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_HAPPINESS_OCCUPIED_CITIES_TITLE"> 
 			<Text>
 				[COLOR_GREEN]Occupied and Resisting Cities[ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_OVERVIEW"> 
-			<Text>
-				Happiness
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS"> 
-			<Text>
-				Puppets
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS_NONE"> 
-			<Text>
-				You have no puppet cities
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_PUPPET_CITIES_ADV_QUEST"> 
@@ -80501,11 +79766,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_HAVENT_MET"> 
 			<Text>
 				You have not yet met this player!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HEADER"> 
-			<Text>
-				Please choose your music ethnicity.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HELP"> 
@@ -104969,121 +104229,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Open Main Menu
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_AUTO_UNIMPROVED_RESOURCE"> 
-			<Text>
-				Unimproved {1}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_DELETE"> 
-			<Text>
-				Delete
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_EDIT"> 
-			<Text>
-				Edit
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_MOVE"> 
-			<Text>
-				Move
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_1"> 
-			<Text>
-				[ICON_TEAM_2]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_10"> 
-			<Text>
-				[ICON_STAR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_2"> 
-			<Text>
-				[ICON_TEAM_3]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_3"> 
-			<Text>
-				[ICON_TEAM_9]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_4"> 
-			<Text>
-				[ICON_TEAM_5]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_5"> 
-			<Text>
-				[ICON_TEAM_7]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_6"> 
-			<Text>
-				[ICON_WAR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_7"> 
-			<Text>
-				[ICON_CITY_STATE]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_8"> 
-			<Text>
-				[ICON_CAPITAL]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_9"> 
-			<Text>
-				[ICON_HAPPINESS_1]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_FLAG_UNKNOWN"> 
-			<Text>
-				[ICON_TEAM_11]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TEXT"> 
-			<Text>
-				Sort by notes
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TYPE"> 
-			<Text>
-				Sort by type
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TEXT"> 
-			<Text>
-				Notes
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TOGGLE_TT"> 
-			<Text>
-				Show/Hide pins
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TT"> 
-			<Text>
-				Click to view, right-click to edit, shift-right-click to delete
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TYPE"> 
-			<Text>
-				Type
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_DELETE_TITLE"> 
-			<Text>
-				Delete this pin?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_EDIT_TITLE"> 
-			<Text>
-				Enter the pin details
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_MAP_1_RANDOM"> 
 			<Text>
 				1 Random
@@ -108145,11 +107290,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MERCHANT_RESULT"> 
 			<Text>
 				You have gained {1_Num} [ICON_GOLD] Gold and {2_Num} [ICON_INFLUENCE] Influence from the Diplomatic Mission!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MIDEASTERN"> 
-			<Text>
-				Choose middle eastern music.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MIG29_TEXT"> 
@@ -118045,11 +117185,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				{TXT_KEY_GRAMMAR_UPPER_A_AN &lt;&lt; {1_Name}} has been purchased in {2_City}.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED"> 
-			<Text>
-				Your worker automation has been cancelled as they are about to embark.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_BARB_CAMP_CONVERTS"> 
 			<Text>
 				The barbarians in this Encampment have joined your army and given you [ICON_GOLD]!
@@ -121198,11 +120333,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATIC_FAITH_PURCHASE"> 
 			<Text>
 				Automatic Faith Purchase
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED"> 
-			<Text>
-				Worker automation cancelled!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_BARB_CAMP_CONVERTS"> 
@@ -124998,61 +124128,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PEDIA_MAINT_LABEL"> 
 			<Text>
 				Maintenance:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_EXTENDED"> 
-			<Text>
-				Text for the extended area
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_1"> 
-			<Text>
-				Heading 1:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_2"> 
-			<Text>
-				Heading 2:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_3"> 
-			<Text>
-				Heading 3:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_INFO"> 
-			<Text>
-				Text for the main info area
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_NOTES"> 
-			<Text>
-				Text for the designers notes area
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_STRATEGY"> 
-			<Text>
-				Text for the strategy area
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_SUMMARY"> 
-			<Text>
-				Text for the summary area
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_1"> 
-			<Text>
-				Text 1
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_2"> 
-			<Text>
-				Text 2
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_3"> 
-			<Text>
-				Text 3
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_MONOPOLY_RESOURCE_NAME"> 
@@ -145533,11 +144608,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				To maximize your bonus, make sure the Great Work Slots are all filled with Art from the same Era and Civilization.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_SKIP"> 
-			<Text>
-				Skips the current music playing.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_SKIP_TURN"> 
 			<Text>
 				SKIP UNIT'S TURN
@@ -159135,21 +158205,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_TERRAIN_JUNGLE_HEADING3_TITLE"> 
 			<Text>
 				Jungle
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_ADV_QUEST"> 
-			<Text>
-				How can I make notes on the map?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_BODY"> 
-			<Text>
-				Map pins enable you to add notes to the maps (both in main and strategic views).[NEWLINE][NEWLINE]Press Control-X and then click on the map to place one or more pins.  Press Control-X again to return to normal map mode.[NEWLINE][NEWLINE]Hover over a pin to read its note.  Right-click the pin to edit, move or delete it.[NEWLINE][NEWLINE]Press Shift-X to toggle all pins on or off.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_TITLE"> 
-			<Text>
-				Map Pins
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_MARSH_ADV_QUEST"> 
@@ -173445,156 +172500,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 	</Language_en_US>
 	<Language_DE_DE>
-		<Replace Tag="TXT_KEY_HAPPINESS_OVERVIEW"> 
-			<Text>
-				Zufriedenheit
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS"> 
-			<Text>
-				Gebäude
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES"> 
-			<Text>
-				Gerichtsgebäude
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS"> 
-			<Text>
-				Marionetten
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_CITY_NAME"> 
-			<Text>
-				Stadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS_BUY_BUILDINGS"> 
-			<Text>
-				Verfügbare lokale Zufriedenheits-Gebäude
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUY_BUILDING_TT"> 
-			<Text>
-				{1_BuildingName}, klicken zum kaufen [ICON_HAPPINESS_1]{2_Happiness} für {3_CostIcon}{4_Cost}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES_NONE"> 
-			<Text>
-				Du hast keine annektierten Städte und brauchst kein Gerichtsgebäude
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS_NONE"> 
-			<Text>
-				Du hast keine Marionetten
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK"> 
-			<Text>
-				Stadtzufriedenheit
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				übersicht der Städtezufriedenheit
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_OVERVIEW"> 
-			<Text>
-				Religionen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITIES"> 
-			<Text>
-				Städte
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_PURCHASES"> 
-			<Text>
-				Kaufen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY"> 
-			<Text>
-				Stadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_FOCUS"> 
-			<Text>
-				Fokus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE"> 
-			<Text>
-				Verfügbare Gebäude/Einheiten zum Kauf mit Glauben [ICON_PEACE] (außer Missionare/Inquisitoren)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_CAPITAL_TT"> 
-			<Text>
-				Hauptstadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT"> 
-			<Text>
-				Anektiert
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_PUPPET_TT"> 
-			<Text>
-				Marionette
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT"> 
-			<Text>
-				Widerstand!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RAZING_TT"> 
-			<Text>
-				Brennt!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY_TT"> 
-			<Text>
-				Klicken f��tadtbildschirm
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_POP_TT"> 
-			<Text>
-				Klicken um nach Wachstum zu sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_STATUS_TT"> 
-			<Text>
-				Klicken um nach Status zu sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_RELIGION_TT"> 
-			<Text>
-				Klicken um nach Religion zu sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_NAME_TT"> 
-			<Text>
-				Klicken um nach Name zu sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT"> 
-			<Text>
-				Klicken um nach {1_Religion}[NEWLINE]({2_CivilizationName} - {3_HolyCity}) zu sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK"> 
-			<Text>
-				Stadtreligionen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				Religionsübersicht
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_RANKINGS_DIPLO_CORNER_HOOK"> 
 			<Text>
 				Zivilisations Ranglisten
@@ -173763,76 +172668,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_DUDE_P"> 
 			<Text>
 				Die Schweizer illustrierten Chroniken wurden veröffentlicht:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_EDIT"> 
-			<Text>
-				Bearbeiten
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_MOVE"> 
-			<Text>
-				Bewegen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_DELETE"> 
-			<Text>
-				Entfernen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_EDIT_TITLE"> 
-			<Text>
-				Details eintragen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_DELETE_TITLE"> 
-			<Text>
-				Pin entfernen?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TT"> 
-			<Text>
-				Klick zum Fokussieren, Rechtsklick zum Bearbeiten, Shift + Rechtsklicks zum Entfernen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TYPE"> 
-			<Text>
-				Art
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TYPE"> 
-			<Text>
-				Sortiert nach Art
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TEXT"> 
-			<Text>
-				Notizen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TEXT"> 
-			<Text>
-				Sortiert nach Notizen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TOGGLE_TT"> 
-			<Text>
-				Pins ein-/ausblenden
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_ADV_QUEST"> 
-			<Text>
-				Wie kann ich Notizen auf der Karte machen?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_BODY"> 
-			<Text>
-				Karten-Pins ermöglichen die Notizen auf der Karte zu machen (auch in der strategischen Ansicht)[NEWLINE][NEWLINE]Drücke STRG + X und Klicke zum Platzieren eines oder mehrerer Pins auf die Karte. Drücke nochmals STRG + X, um wider in den normalen Kartenmodus zu kommen.[NEWLINE][NEWLINE]Fahre mit der Maus über einen Pin, um die Notizen zu lesen. Per Rechtsklick auf einen Pin, kann dieser bearbeitet, bewegt oder entfernt werden.[NEWLINE][NEWLINE]Drücke SHIFT + X um alle Pins ein- oder auszuschalten.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_TITLE"> 
-			<Text>
-				Karten Pins
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IGE_EDIT"> 
@@ -174935,471 +173770,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Spiel gespeichert als '{1_FileName}'.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CP_OVERVIEW"> 
-			<Text>
-				Produktion
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITIES"> 
-			<Text>
-				Städte
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PUPPET_WARNING"> 
-			<Text>
-				[COLOR_RED]Alle Marionetten, werden am Ende der Rund auf [ICON_GOLD]Gold Fokus wechseln[ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY"> 
-			<Text>
-				Stadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS"> 
-			<Text>
-				Fokus
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CURRENT"> 
-			<Text>
-				Bau
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PROGRESS"> 
-			<Text>
-				Fortschritt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_TURNS"> 
-			<Text>
-				Runden
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_CAPITAL_TT"> 
-			<Text>
-				Hauptstadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_OCCUPIED_TT"> 
-			<Text>
-				Besetzt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_PUPPET_TT"> 
-			<Text>
-				Marionette
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RESISTANCE_TT"> 
-			<Text>
-				Widerstand!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RAZING_TT"> 
-			<Text>
-				Brennt!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY_TT"> 
-			<Text>
-				Zur Stadt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_POP_TT"> 
-			<Text>
-				Nach Größe sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_STATUS_TT"> 
-			<Text>
-				Nach Status sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_NAME_TT"> 
-			<Text>
-				Nach Name sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_PRODUCTION_TT"> 
-			<Text>
-				Nach Produktion pro Runde sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOOD_TT"> 
-			<Text>
-				Nach Nahrungsüberschuß sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_SCIENCE_TT"> 
-			<Text>
-				Nach Wissenschaft pro Runde sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_GOLD_TT"> 
-			<Text>
-				Nach Gold pro Runde sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_CULTURE_TT"> 
-			<Text>
-				Nach Kultur pro Runde sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FAITH_TT"> 
-			<Text>
-				Nach Glauben pro Runde sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_DEFAULT_TT"> 
-			<Text>
-				Nach Standard Fokus sortieren, rechts klick um Standard Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_PRODUCTION_TT"> 
-			<Text>
-				Nach Produktions Fokus sortieren, rechts klick um Produktions Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FOOD_TT"> 
-			<Text>
-				Nach Wachstums Fokus sortieren, rechts klick um Wachstums Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_SCIENCE_TT"> 
-			<Text>
-				Nach Wissenschafts Fokus sortieren, rechts klick um Wissenschafts Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GOLD_TT"> 
-			<Text>
-				Nach Gold Fokus sortieren, rechts klick um Gold Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_CULTURE_TT"> 
-			<Text>
-				Nach Kultur Fokus sortieren, rechts klick um Kultur Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FAITH_TT"> 
-			<Text>
-				Nach Glauben Fokus sortieren, rechts klick um Glauben Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GP_TT"> 
-			<Text>
-				Nach Spezialisten Fokus sortieren, rechts klick um Spezialisten Fokus für alle Städte einzustellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_TILES_TT"> 
-			<Text>
-				Nach manueller Bewirtschaftung sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_CITIZENS_TT"> 
-			<Text>
-				Nach manueller Spezialisten Steuerung sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_GROWTH_TT"> 
-			<Text>
-				Nach Wachstums Stop sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_ICON_TT"> 
-			<Text>
-				Nach aktueller Produktion sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_PROGRESS_TT"> 
-			<Text>
-				Nach Produktions Fortschritt sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_TURNS_TT"> 
-			<Text>
-				Nach Runden bis zur Fertigstellung sortieren
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_DEFAULT"> 
-			<Text>
-				Auf Standard Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_PRODUCTION"> 
-			<Text>
-				Auf [ICON_PRODUCTION]Produktions Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FOOD"> 
-			<Text>
-				Auf [ICON_FOOD]Wachstums Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_SCIENCE"> 
-			<Text>
-				Auf [ICON_RESEARCH]Wissenschafts Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GOLD"> 
-			<Text>
-				Auf [ICON_GOLD]Gold Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_CULTURE"> 
-			<Text>
-				Auf [ICON_CULTURE]Kultur Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FAITH"> 
-			<Text>
-				Auf [ICON_PEACE]Glaubens Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GP"> 
-			<Text>
-				Auf [ICON_GREAT_PEOPLE]Spezialisten Fokus einstellen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_TILES_TT"> 
-			<Text>
-				Stadt hat manuelle Bewirtschaftung
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_CITIZENS_TT"> 
-			<Text>
-				Stadt hat manuelle Spezialisten Steuerung
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_GROWTH_TT"> 
-			<Text>
-				Stadt hat Wachstums Stop
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_BUILD_PROGRESS_TT"> 
-			<Text>
-				{1_Done} von {2_Total}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK"> 
-			<Text>
-				Städteproduktion
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				übersicht der Städteproduktion
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FORMAT"> 
-			<Text>
-				{1_icon} {2_prefix}{3_turn} - {4_entry}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PREFIX"> 
-			<Text>
-				+
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_MAYAN_SEP"> 
-			<Text>
-				[NEWLINE][NEWLINE]-----[NEWLINE]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NOTHING"> 
-			<Text>
-				Noch kein Eintrag
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_END"> 
-			<Text>
-				Ende des Goldenen Zeitalters
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PEACE_END"> 
-			<Text>
-				Friedensvertrag (mit {1_civ}) beendet
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GOLD_TRADE_END"> 
-			<Text>
-				Goldbetrag endet (von {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_END"> 
-			<Text>
-				Gold pro Runde endet (von {1_civ})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"> 
-			<Text>
-				Gold pro Runde endet (von {1_civ} x{2_count})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"> 
-			<Text>
-				Gemeinsamer Krieg mit {1_civ} gegen {2_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"> 
-			<Text>
-				Technologie gestohlen von {2_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"> 
-			<Text>
-				Wahlmanipulation in {2_cs}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_UN_VOTE"> 
-			<Text>
-				Runde(n) bis zur UN Abstimmung
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_LEAGUE_VOTE"> 
-			<Text>
-				Verabschiedung von Resolutionen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RA_COMPLETE"> 
-			<Text>
-				Forschungsabkommen (mit {1_civ}) beendet
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_START"> 
-			<Text>
-				Runde(n) bis zum Goldenen Zeitalter
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"> 
-			<Text>
-				Runde(n) bis zur nächsten Sozialpolitik
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"> 
-			<Text>
-				Runde(n) bis {1_tech} erforscht
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_WW_COMPLETE"> 
-			<Text>
-				Runde(n) bis {1_building} (Welt Wunder) fertig gestellt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NW_COMPLETE"> 
-			<Text>
-				Runde(n) bis {1_building} (National Wunder) fertig gestellt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"> 
-			<Text>
-				Runde(n) bis {1_project} fertig gestellt
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"> 
-			<Text>
-				Runde(n) bis zum [COLOR_WARNING_TEXT]Bankrot![ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"> 
-			<Text>
-				Runde(n) bis Zielsumme ([ICON_GOLD]{1_amount}) erreicht
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"> 
-			<Text>
-				Runde(n) bis zum automatischen Glaubenskauf ({1_item})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"> 
-			<Text>
-				Schließen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"> 
-			<Text>
-				[ICON_HAPPINESS_1] Goldene Zeitalter anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES"> 
-			<Text>
-				[ICON_GOLD] Finanzen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"> 
-			<Text>
-				[ICON_PRODUCTION] Wunder anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES"> 
-			<Text>
-				[ICON_CULTURE] Sozialpolitik Prognosen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"> 
-			<Text>
-				[ICON_RESEARCH] Technologie Prognosen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"> 
-			<Text>
-				[ICON_RESEARCH] Forschungsabkommen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"> 
-			<Text>
-				[ICON_PEACE] Friedensabkommen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"> 
-			<Text>
-				[ICON_INFLUENCE] Diplomatieabkommen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"> 
-			<Text>
-				[ICON_SPY] Spionage anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"> 
-			<Text>
-				[ICON_PEACE] Kauf mit Glauben
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"> 
-			<Text>
-				[ICON_INFLUENCE] Abstimmungen anzeigen
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"> 
-			<Text>
-				Absolute Runden
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT"> 
-			<Text>
-				Wähle zwischen der absoluten und den verbleibenden Runden.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"> 
-			<Text>
-				Maximale Einträge
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"> 
-			<Text>
-				Anzahl der Einträge, die in der Liste zu sehen sind
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"> 
-			<Text>
-				Maximale Runden
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"> 
-			<Text>
-				Keine Einträge anzeigen, die länger als die vorgegeben Runden dauern.  0 zeigt alle Einträge an.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CITYVIEW_SPECIALISTS"> 
 			<Text>
 				Spezialisten
@@ -175408,16 +173778,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CITYVIEW_EMPLOYED_AT"> 
 			<Text>
 				{1_Specialist} beschäftigt in {2_Building}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED"> 
-			<Text>
-				Arbeiter Automatisierung abgebrochen!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED"> 
-			<Text>
-				Ihre Arbeiter Automatisierung wurde abgebrochen, da er das Land verlassen wollte.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMO_INTERCEPTION_TOOL_TIP"> 
@@ -183067,11 +181427,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				두려워함
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_AFRICA"> 
-			<Text>
-				아프리카 음악을 선택합니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_AGGRESSIVE_MILITARY_WARNING_1"> 
 			<Text>
 				그대가 우리 국경에 다수 군사를 주둔시키는 것이 보였소. 국민이 불안해하니 다른 곳으로 이동시켜 주었으면 하오.
@@ -183752,11 +182107,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				모든 문명이 항상 전쟁 중입니다.[NEWLINE]외교는 고려하지 않아도 됩니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_AMERICA"> 
-			<Text>
-				전통적인 아메리카 원주민 음악을 선택합니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_AMERICAN_TITLE"> 
 			<Text>
 				{2_CivName:textkey}의 제독 {1_PlayerName:textkey}
@@ -183855,31 +182205,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_APU_SHORT"> 
 			<Text>
 				아푸
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_1"> 
-			<Text>
-				{2_Era} {1_CivAdj} 전쟁터
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_2"> 
-			<Text>
-				{2_Era} {1_CivAdj} 전쟁터
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_3"> 
-			<Text>
-				{2_Era} {1_CivAdj} 원시 야영지
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_4"> 
-			<Text>
-				{2_Era} {1_CivAdj} 선사 시대 유적
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ARCH_SITE_TYPE_5"> 
-			<Text>
-				{2_Era} {1_CivAdj} 도시 폐허
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ARTIFACT_ANCIENT_CAMP"> 
@@ -184210,11 +182535,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_ART_STOLEN_SUMMARY"> 
 			<Text>
 				걸작 약탈!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_ASIA"> 
-			<Text>
-				아시아 음악을 선택합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_ASKIA_EXPANSION_SERIOUS_WARNING_1"> 
@@ -211985,21 +210305,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				2
 			</Plurality>
 		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE"> 
-			<Text>
-				City Resistance
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_HEADING"> 
-			<Text>
-				{1_CityName}에서 저항이 끝남
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_TEXT"> 
-			<Text>
-				{1_CityName}시가 [ICON_RESISTANCE] 저항에서 벗어남
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CITY_NOT_PRODUCING"> 
 			<Text>
 				{1_CityName}에서 아무것도 생산하고 있지 않습니다.
@@ -235294,41 +233599,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				당신 문명의 오피스
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CP_BUILD_PROGRESS_TT"> 
-			<Text>
-				{1_Done} / {2_Total}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITIES"> 
-			<Text>
-				도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY"> 
-			<Text>
-				도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CITY_TT"> 
-			<Text>
-				도시 보기 화면으로 들어가기
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_CURRENT"> 
-			<Text>
-				건설
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK"> 
-			<Text>
-				도시 생산력
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				한 개의 요약 화면에서 모든 도시 생산력 관리
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CP_DIPLO_DP"> 
 			<Text>
 				방어 조약
@@ -235349,229 +233619,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_POSITIVE_TEXT]종속국 :[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS"> 
-			<Text>
-				초점
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_CULTURE"> 
-			<Text>
-				도시 초점을 [ICON_CULTURE] 문화 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_DEFAULT"> 
-			<Text>
-				도시 초점을 기본값으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FAITH"> 
-			<Text>
-				도시 초점을 [ICON_PEACE] 신앙 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_FOOD"> 
-			<Text>
-				도시 초점을 [ICON_FOOD] 식량 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GOLD"> 
-			<Text>
-				도시 초점을 [ICON_GOLD] 골드 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_GP"> 
-			<Text>
-				도시 초점을 [ICON_GREAT_PEOPLE] 위인 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_PRODUCTION"> 
-			<Text>
-				도시 초점을 [ICON_PRODUCTION] 생산력 중심으로 하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_FOCUS_SCIENCE"> 
-			<Text>
-				도시 초점을 [ICON_RESEARCH] 과학 중심으로 하려면 클릭
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CP_HAPPINESS_EXPLANATION"> 
 			<Text>
 				문명 전역의 행복/불행을 반영합니다.[ICON_HAPPINESS_1]행복은 각 도시의 [ICON_HAPPINESS_3]불행에 대항합니다. 불행은 도시화를 제외하면 도시의 규모에 의해 제한됩니다!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_CITIZENS_TT"> 
-			<Text>
-				도시에서 수동으로 전문가를 할당
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_GROWTH_TT"> 
-			<Text>
-				도시의 성장을 회피
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_MANUAL_TILES_TT"> 
-			<Text>
-				도시에서 타일을 수동으로 할당 (잠금)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_OVERVIEW"> 
-			<Text>
-				생산
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PROGRESS"> 
-			<Text>
-				경과
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_PUPPET_WARNING"> 
-			<Text>
-				[COLOR_RED]모든 괴뢰 도시는 턴이 끝나면 [ICON_GOLD] 골드에 집중합니다![ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_ICON_TT"> 
-			<Text>
-				현재 생산하는 품목 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_PROGRESS_TT"> 
-			<Text>
-				현재 생산 진행 상황 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_BUILD_TURNS_TT"> 
-			<Text>
-				현재 남은 생산 턴 수를 기준으로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_CULTURE_TT"> 
-			<Text>
-				문화 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FAITH_TT"> 
-			<Text>
-				클릭해 신앙 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_CULTURE_TT"> 
-			<Text>
-				문화 중심으로 정렬하려면 클릭, 모든 도시를 문화 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_DEFAULT_TT"> 
-			<Text>
-				기본 초점으로 정렬하려면 클릭, 모든 도시를 기본 초점으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FAITH_TT"> 
-			<Text>
-				신앙 중심으로 정렬하려면 클릭, 모든 도시를 신앙 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_FOOD_TT"> 
-			<Text>
-				식량 중심으로 정렬하려면 클릭, 모든 도시를 식량 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GOLD_TT"> 
-			<Text>
-				골드 중심으로 정렬하려면 클릭, 모든 도시를 골드 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_GP_TT"> 
-			<Text>
-				위인 중심으로 정렬하려면 클릭, 모든 도시를 위인 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_PRODUCTION_TT"> 
-			<Text>
-				생산력 중심으로 정렬하려면 클릭, 모든 도시를 생산력 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOCUS_SCIENCE_TT"> 
-			<Text>
-				과학 중심으로 정렬하려면 클릭, 모든 도시를 과학 중심으로 하려면 마우스 오른쪽 버튼을 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_FOOD_TT"> 
-			<Text>
-				남은 식량 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_GOLD_TT"> 
-			<Text>
-				턴당 골드 소득 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_CITIZENS_TT"> 
-			<Text>
-				수동으로 할당된 전문가가 있는 도시 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_GROWTH_TT"> 
-			<Text>
-				성장을 피하고 있는 도시 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_MANUAL_TILES_TT"> 
-			<Text>
-				수동으로 할당된 타일이 있는 도시 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_NAME_TT"> 
-			<Text>
-				도시 이름 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_POP_TT"> 
-			<Text>
-				도시 인구 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_PRODUCTION_TT"> 
-			<Text>
-				턴당 생산력 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_SCIENCE_TT"> 
-			<Text>
-				과학 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_SORT_STATUS_TT"> 
-			<Text>
-				도시 상태 순서로 정렬하려면 클릭
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_CAPITAL_TT"> 
-			<Text>
-				수도
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_OCCUPIED_TT"> 
-			<Text>
-				점령된 도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_PUPPET_TT"> 
-			<Text>
-				괴뢰 도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RAZING_TT"> 
-			<Text>
-				불타는 중!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_STATUS_RESISTANCE_TT"> 
-			<Text>
-				저항 중!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CP_TURNS"> 
-			<Text>
-				턴
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CREDITS"> 
@@ -235592,101 +233642,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CREDIT_GRANNY"> 
 			<Text>
 				Uses Granny [RED]Animation[/RED]. Copyright (C) 1999-2010 by RAD Game Tools, Inc.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITIES"> 
-			<Text>
-				도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY"> 
-			<Text>
-				도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_CITY_TT"> 
-			<Text>
-				클릭해 도시 보기 화면으로 들어가기
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK"> 
-			<Text>
-				도시 종교
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				한 개의 요약 화면에서 모든 도시 종교 관리
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_FOCUS"> 
-			<Text>
-				집중
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE"> 
-			<Text>
-				[ICON_PEACE] 신앙으로 구매 가능한 건물/유닛 (선교사/이단심문관 제외)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_OVERVIEW"> 
-			<Text>
-				종교
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_PURCHASES"> 
-			<Text>
-				구매
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT"> 
-			<Text>
-				클릭해 {1_Religion}별로 정렬[NEWLINE]({2_CivilizationName} - {3_HolyCity})
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_NAME_TT"> 
-			<Text>
-				클릭해 도시 이름별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_POP_TT"> 
-			<Text>
-				클릭해 도시 인구별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_RELIGION_TT"> 
-			<Text>
-				클릭해 도시 종교별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_SORT_STATUS_TT"> 
-			<Text>
-				클릭해 도시 상태별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_CAPITAL_TT"> 
-			<Text>
-				수도
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT"> 
-			<Text>
-				점령된 도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_PUPPET_TT"> 
-			<Text>
-				괴뢰 도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RAZING_TT"> 
-			<Text>
-				불타는 중!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT"> 
-			<Text>
-				저항 중!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CSTATE_CANNOT_BULLY"> 
@@ -237605,236 +235560,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_DENOUNCING_FRIEND_4"> 
 			<Text>
 				더 이상 감출 필요가 없어 말합니다. 나는 당신은 좋아했지만, 지금은 당신을 싫어합니다.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]이들은 우리를 공개적으로 비난했습니다![ENDCOLOR])
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_CITY_RESISTANCE"> 
-			<Text>
-				{1_city}시가 저항에서 벗어남
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_COOP_WAR"> 
-			<Text>
-				{2_civ}에 대한 {1_civ}와의 협동 전쟁
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK"> 
-			<Text>
-				일기 설정
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				일기 설정 구성 (항목, 길이, 기타 등등)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FAITH_NEXT_PURCHASE"> 
-			<Text>
-				자동 신앙 구매 ({1_item}) (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_BANKRUPT"> 
-			<Text>
-				[COLOR_WARNING_TEXT]파산!!![ENDCOLOR] (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FINANCES_SAVINGS"> 
-			<Text>
-				저축 목표액 ([ICON_GOLD] {1_amount} 골드) 달성 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_FORMAT"> 
-			<Text>
-				{1_icon} {2_prefix}{3_turn} - {4_entry}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_END"> 
-			<Text>
-				황금기 끝
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GA_START"> 
-			<Text>
-				황금기 시작 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GOLD_TRADE_END"> 
-			<Text>
-				골드 교역 만료: {1_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_END"> 
-			<Text>
-				GPT 교역 만료: {1_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_GPT_TRADE_MULTIPLE_END"> 
-			<Text>
-				GPT 교역 만료: {1_civ} x{2_count}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_LEAGUE_VOTE"> 
-			<Text>
-				연맹 투표
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_MAYAN_SEP"> 
-			<Text>
-				[NEWLINE][NEWLINE]-----[NEWLINE]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NEXT_POLICY_CHOICE"> 
-			<Text>
-				다음 정책 선택 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NOTHING"> 
-			<Text>
-				여기에는 볼 것이 없음
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_NW_COMPLETE"> 
-			<Text>
-				{1_building} (국가 불가사의) 완성 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN"> 
-			<Text>
-				절대 턴 사용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_ABSOLUTE_TURN_TT"> 
-			<Text>
-				선택하면 턴 숫자가 표시되고, 선택 해제하면 남은 턴 숫자가 표시됩니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_CLOSE"> 
-			<Text>
-				닫기
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_CITIES"> 
-			<Text>
-				[ICON_RESISTANCE] 도시 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_DIPLO"> 
-			<Text>
-				[ICON_INFLUENCE] 외교 협정 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FAITH"> 
-			<Text>
-				[ICON_PEACE] 신앙 구매 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_FINANCES"> 
-			<Text>
-				[ICON_GOLD] 재정 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_GA"> 
-			<Text>
-				[ICON_HAPPINESS_1] 황금기 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_PEACE"> 
-			<Text>
-				[ICON_INFLUENCE] 평화 협정 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_POLICIES"> 
-			<Text>
-				[ICON_CULTURE] 정책 예측 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_RA"> 
-			<Text>
-				[ICON_RESEARCH] 연구 협약 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_SPIES"> 
-			<Text>
-				[ICON_SPY] 스파이 활동 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_TECHS"> 
-			<Text>
-				[ICON_RESEARCH] 기술 예측 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_VOTING"> 
-			<Text>
-				[ICON_INFLUENCE] 투표 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_INCLUDE_WONDERS"> 
-			<Text>
-				[ICON_PRODUCTION] 불가사의 포함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES"> 
-			<Text>
-				최대 항목
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_ENTRIES_TT"> 
-			<Text>
-				목록에 표시할 항목 수
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS"> 
-			<Text>
-				최대 턴
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_OPTIONS_MAX_TURNS_TT"> 
-			<Text>
-				이보다 더 오랜 시간이 걸리는 항목은 제외됩니다. 모든 항목을 포함하려면 0을 사용합니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PEACE_END"> 
-			<Text>
-				평화 협정 만료: {1_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PREFIX"> 
-			<Text>
-				+
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_PROJECT_COMPLETE"> 
-			<Text>
-				{1_project} 완료 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RA_COMPLETE"> 
-			<Text>
-				연구 협약 완료: {1_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_RESEARCH_COMPLETE"> 
-			<Text>
-				{1_tech} 연구 (예상)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_RIGGING_ELECTION"> 
-			<Text>
-				선거 조작: {2_cs}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_SPY_STEAL_TECH"> 
-			<Text>
-				기술 훔치기: {2_civ}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_UN_VOTE"> 
-			<Text>
-				국제연합 투표
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DIARY_WW_COMPLETE"> 
-			<Text>
-				{1_building} (세계 불가사의) 완성 (예상)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_DIFFICULTY_UNHAPPINESS_MOD"> 
@@ -246640,11 +244365,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_CYAN]유닛이 후퇴함[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_EUROPE"> 
-			<Text>
-				유럽 ​​음악을 선택합니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_EUROPEAN_CITYSTATE_FOUND"> 
 			<Text>
 				도시 국가를 발견해 {1_AdmiralPoints}점의 위대한 제독 점수를 얻었습니다. 점수를 사용해 중국을 발견하거나 '무역 임무'를 수행하세요.
@@ -254237,41 +251957,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_GOLD_ADV_QUEST"> 
 			<Text>
 				골드란 무엇이고 그것으로 뭘 할 수 있나요?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_AMOUNT"> 
-			<Text>
-				[ICON_GOLD] 금액:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_AMOUNT_TT"> 
-			<Text>
-				목표 [ICON_GOLD] 골드 금액 (0을 사용하면 골드 알림 비활성화)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_BUTTON_OK"> 
-			<Text>
-				설정
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_DEFAULT_MESSAGE"> 
-			<Text>
-				길잡이
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_HEADING"> 
-			<Text>
-				골드 알림
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_MESSAGE"> 
-			<Text>
-				메시지:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_GOLD_ALERT_MESSAGE_TT"> 
-			<Text>
-				[ICON_GOLD] 골드가 목표한 금액에 도달했을 때 표시할 메시지
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GOLD_ANCIENTRUINS_ADV_QUEST"> 
@@ -266629,21 +264314,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				자원과 행복
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS"> 
-			<Text>
-				건물
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUILDINGS_BUY_BUILDINGS"> 
-			<Text>
-				이용 가능한 지역 행복 건물
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_BUY_BUILDING_TT"> 
-			<Text>
-				{1_BuildingName}, Click to buy [ICON_HAPPINESS_1]{2_Happiness} for {3_CostIcon}{4_Cost}
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_CAUSESUNHAPPINESS_ADV_QUEST"> 
 			<Text>
 				무엇이 불행을 야기하나요?
@@ -266687,39 +264357,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_GREEN]행복을 만드는 것[ENDCOLOR]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_CITY_NAME"> 
-			<Text>
-				도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_CITY_NAME_TT"> 
-			<Text>
-				{1_building} 현재 건설 중
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_CORPORATION_TYPES_BODY"> 
 			<Text>
 				[COLOR_POSITIVE_TEXT]기업 종류[ENDCOLOR]: Vox Populi에서 사용할 수 있는 7개의 기업이 있습니다. 이들 각각은 한 번만 건설할 수 있으므로(플레이어당 하나만) 현명하게 선택하십시오! 자세한 내용은 [COLOR_POSITIVE_TEXT]기업[ENDCOLOR] 탭을 참조하십시오.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES"> 
-			<Text>
-				법원
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_COURTHOUSES_NONE"> 
-			<Text>
-				법원이 필요한 합병된 도시 없음
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK"> 
-			<Text>
-				도시 행복도
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_DIPLO_CORNER_HOOK_TT"> 
-			<Text>
-				한 개의 요약 화면에서 모든 도시 행복을 관리
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_FROM_LEAGUES"> 
@@ -266800,21 +264440,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_HAPPINESS_OCCUPIED_CITIES_TITLE"> 
 			<Text>
 				[COLOR_GREEN]점령되어 저항하는 도시[ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_OVERVIEW"> 
-			<Text>
-				행복도
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS"> 
-			<Text>
-				괴뢰
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HAPPINESS_PUPPETS_NONE"> 
-			<Text>
-				괴뢰 도시 없음
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HAPPINESS_PUPPET_CITIES_ADV_QUEST"> 
@@ -266965,11 +264590,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_HAVENT_MET"> 
 			<Text>
 				당신은 이 문명을 만나지 못했습니다!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_HEADER"> 
-			<Text>
-				듣고자 하는 민족의 음악을 선택해 주세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_HELP"> 
@@ -292400,66 +290020,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				메인 메뉴 열기
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_AUTO_UNIMPROVED_RESOURCE"> 
-			<Text>
-				시설 없는 {1}
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_DELETE"> 
-			<Text>
-				Delete
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_EDIT"> 
-			<Text>
-				Edit
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_CONTEXT_MOVE"> 
-			<Text>
-				Move
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TEXT"> 
-			<Text>
-				노트별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_SORT_TYPE"> 
-			<Text>
-				유형별로 정렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TEXT"> 
-			<Text>
-				노트
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TOGGLE_TT"> 
-			<Text>
-				핀 보기/숨기기
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TT"> 
-			<Text>
-				왼쪽 클릭으로 보기, 오른쪽 클릭으로 수정, Shift + 오른쪽 클릭으로 삭제
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_LIST_TYPE"> 
-			<Text>
-				유형
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_DELETE_TITLE"> 
-			<Text>
-				이 핀을 삭제하시겠습니까?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MAPPINS_POPUP_EDIT_TITLE"> 
-			<Text>
-				핀 세부 정보 입력
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_MAP_1_RANDOM"> 
 			<Text>
 				무작위 규모 바다 1개
@@ -295644,11 +293204,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_MERCHANT_RESULT"> 
 			<Text>
 				외교 임무를 수행하여 {1_Num} [ICON_GOLD]골드와 {2_Num} [ICON_INFLUENCE]영향력을 획득했습니다!
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_MIDEASTERN"> 
-			<Text>
-				중동 음악을 선택합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MIG29_TEXT"> 
@@ -306193,11 +303748,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				{2_City}에서 {1_Name}{1: plural 1?을; 2?를;} 구입했습니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED"> 
-			<Text>
-				당신의 노동자 자동화는 승선 직전에 취소되었습니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_BARB_CAMP_CONVERTS"> 
 			<Text>
 				야만인 주둔지의 야만인이 [ICON_GOLD]골드를 가지고 당신의 군대로 합류했습니다!
@@ -309349,11 +306899,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATIC_FAITH_PURCHASE"> 
 			<Text>
 				자동 신앙 구입
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED"> 
-			<Text>
-				노동자의 자동화가 취소되었습니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_BARB_CAMP_CONVERTS"> 
@@ -313167,61 +310712,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PEDIA_MAINT_LABEL"> 
 			<Text>
 				유지비
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_EXTENDED"> 
-			<Text>
-				확장된 영역에 대한 내용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_1"> 
-			<Text>
-				제목 1:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_2"> 
-			<Text>
-				제목 2:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_HEADER_3"> 
-			<Text>
-				제목 3:
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_INFO"> 
-			<Text>
-				주요 정보 영역에 대한 내용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_NOTES"> 
-			<Text>
-				디자이너 노트 영역에 대한 내용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_STRATEGY"> 
-			<Text>
-				전략 영역에 대한 내용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_SUMMARY"> 
-			<Text>
-				요약 영역에 대한 내용
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_1"> 
-			<Text>
-				내용 1
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_2"> 
-			<Text>
-				내용 2
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_PEDIA_MAP_PINS_TEXT_3"> 
-			<Text>
-				내용 3
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_MONOPOLY_RESOURCE_NAME"> 
@@ -320880,7 +318370,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_CITY_SECURITY_FROM_POLICY"> 
 			<Text>
-				[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_CITY_SECURITY] City Security
+				[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: [ICON_CITY_SECURITY] 도시 보안 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_CITY_SECURITY_PER_X_POPULATION"> 
@@ -320995,12 +318485,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_ETR_DESTINATION_OUR_GOLD"> 
 			<Text>
-				{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City
+				이 도시를 목표로 하는 [ICON_INTERNATIONAL_TRADE] 국제 교역로를 통해 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_ETR_DESTINATION_THEIR_GOLD"> 
 			<Text>
-				{2_Sign}{1_Num} [ICON_GOLD] Gold to Origin City of [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City
+				[ICON_INTERNATIONAL_TRADE] 국제 교역로의 출발 도시에서 이 도시로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXCLUSIVE_GLOBAL"> 
@@ -321020,7 +318510,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_PLAYER_INSTANCE_SUFFIX"> 
 			<Text>
-				({1_Num} more from Accomplishments)
+				(Accomplishment에서 {1_Num}만큼 더)
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES"> 
@@ -321030,12 +318520,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_CAPITALS"> 
 			<Text>
-				+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]Foreign[ENDCOLOR] original [ICON_CAPITAL] Capital Cities you control
+				당신이 통제하는 [COLOR_POSITIVE_TEXT]외국[ENDCOLOR] [ICON_CAPITAL] 수도 하나당 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_DOF"> 
 			<Text>
-				+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]2[ENDCOLOR] active Declarations of Friendship with your Empire
+				당신의 문명과의 우호 선언이 [COLOR_POSITIVE_TEXT]2[ENDCOLOR]개 활성화될 때마다 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_DP"> 
@@ -321050,12 +318540,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_RELIGION"> 
 			<Text>
-				+1 [ICON_DIPLOMAT] Delegate in the World Congress for every {1: plural 1?City; other?{1_Num} Cities;} following your [ICON_RELIGION] Primary Religion
+				당신의 [ICON_RELIGION] 대중 종교를 믿는 모든 도시마다 [ICON_DIPLOMAT] 세계 의회 대표단 +1
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_FROM_RESEARCH_AGREEMENTS"> 
 			<Text>
-				+{1_Num} [ICON_DIPLOMAT] Delegate in the World Congress for every active Research Agreement with your Empire
+				당신의 문명과 체결한 유효한 연구 협정 하나당 [ICON_DIPLOMAT] 세계 의회 대표단 +{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_VOTES_SCALING"> 
@@ -321305,32 +318795,32 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_ACCOMPLISHMENT"> 
 			<Text>
-				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BELIEF"> 
 			<Text>
-				[ICON_BULLET][COLOR_WHITE]{3_Belief:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET][COLOR_WHITE]{3_Belief:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BUILDING"> 
 			<Text>
-				[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_BUILDING_GLOBAL"> 
 			<Text>
-				[ICON_BULLET][COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR] in any City: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET] 모든 도시의 [COLOR_YIELD_FOOD]{3_Building:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] 행복
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_LOCAL_RESOURCE"> 
 			<Text>
-				[ICON_BULLET]Each {3_ResourceIcon} {4_Resource:textkey} connected to City: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET]도시로 연결된 각 {3_ResourceIcon} {4_Resource:textkey}: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_POLICY"> 
 			<Text>
-				[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: {2_Sign}{1_Num} [ICON_HAPPINESS_1] Happiness
+				[ICON_BULLET][COLOR_MAGENTA]{3_Policy:textkey}[ENDCOLOR]: [ICON_HAPPINESS_1] 행복 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_FROM_POLICY_CAPITAL"> 
@@ -321665,12 +319155,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_LAND_ETR_ORIGIN_GOLD"> 
 			<Text>
-				{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_CARAVAN] Land International Trade Routes originated from this City
+				이 도시에서 출발하는 [ICON_CARAVAN] 지상 교역로로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_LAND_TRADE_ROUTE_RANGE_MODIFIER"> 
 			<Text>
-				{2_Sign}{1_Num}% Range for [ICON_CARAVAN] Land Trade Routes
+				[ICON_CARAVAN] 지상 교역 범위 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_LOCAL_EFFECTS"> 
@@ -321720,7 +319210,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_MEDIAN_CHANGES"> 
 			<Text>
-				예상 수요 중간값 변화:
+				예상 수요 중앙값 변화:
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_MILITARY_PRODUCTION_MODIFIER"> 
@@ -321895,7 +319385,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PLAYER_INSTANCE_FROM_ACCOMPLISHMENT"> 
 			<Text>
-				[ICON_BULLET][COLOR_WATER_TEXT]{2_Accomplishment:textkey}[ENDCOLOR]: May build {1_Num} more of this Building
+				[ICON_BULLET][COLOR_WATER_TEXT]{2_Accomplishment:textkey}[ENDCOLOR]: 이 건물을 {1_Num}개 더 지을 수 있음
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PLOT_BOOST"> 
@@ -321965,17 +319455,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PROCESS_EFFICIENCY_MODIFIER_DISTRESS"> 
 			<Text>
-				{1: number "'+'##;'-'##"}% conversion rate and {1: number "'-'##;'+'##"}% [ICON_FOOD]/[ICON_PRODUCTION] Basic Needs Median Modifier from [COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] Process
+				[COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] 프로세스 전환율 {1: number "'+'##;'-'##"}% 및 [ICON_FOOD]/[ICON_PRODUCTION] 기본 욕구 중앙값 보정 {1: number "'-'##;'+'##"}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PROCESS_EFFICIENCY_MODIFIER_NEED"> 
 			<Text>
-				{1: number "'+'##;'-'##"}% conversion rate and {1: number "'-'##;'+'##"}% {2_Yields} Median Modifier from [COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] Process
+				[COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] 프로세스 전환율 {1: number "'+'##;'-'##"}% 및 {2_Yields} 중앙값 보정 {1: number "'-'##;'+'##"}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PROCESS_EFFICIENCY_MODIFIER_RELIGIOUS_UNREST"> 
 			<Text>
-				{1: number "'+'##;'-'##"}% conversion rate and {1: number "'-'##;'+'##"}% Religious Unrest from [COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] Process
+				[COLOR_PLAYER_CYAN]{2_Process:textkey}[ENDCOLOR] 프로세스 전환율 {1: number "'+'##;'-'##"}% 및 종교적 불안 {1: number "'-'##;'+'##"}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION"> 
@@ -322085,7 +319575,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_RESOURCE_DIVERSITY_MODIFIER"> 
 			<Text>
-				{2_Sign}{1_Num}% Resource Diversity for [ICON_INTERNATIONAL_TRADE] Trade Routes
+				[ICON_INTERNATIONAL_TRADE] 교역로의 자원 다양화 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_RIVER"> 
@@ -322120,12 +319610,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_SEA_ETR_ORIGIN_GOLD"> 
 			<Text>
-				{2_Sign}{1_Num} [ICON_GOLD] Gold to [ICON_CARGO_SHIP] Sea International Trade Routes originated from this City
+				이 도시에서 출발하는 [ICON_CARGO_SHIP] 해상 교역로로 운송되는 [ICON_GOLD] 골드 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_SEA_TRADE_ROUTE_RANGE_MODIFIER"> 
 			<Text>
-				{2_Sign}{1_Num}% Range for [ICON_CARGO_SHIP] Sea Trade Routes
+				[ICON_CARGO_SHIP] 해상 교역 범위 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_SECONDARY_PANTHEON"> 
@@ -322260,22 +319750,22 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTES"> 
 			<Text>
-				{2_Sign}{1_Num} [ICON_INTERNATIONAL_TRADE] Trade {1: plural 1?Route; other?Routes;}
+				[ICON_INTERNATIONAL_TRADE] 교역로 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTE_DURATION_MODIFIER"> 
 			<Text>
-				{2_Sign}{1_Num}% Duration for [ICON_INTERNATIONAL_TRADE] Trade Routes
+				[ICON_INTERNATIONAL_TRADE] 교역로 소요 기간 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_ROUTE_DURATION_MODIFIER_LOCAL"> 
 			<Text>
-				{2_Sign}{1_Num}% Duration for [ICON_INTERNATIONAL_TRADE] Trade Routes originated from this City
+				이 도시에서 출발하는 [ICON_INTERNATIONAL_TRADE] 교역로의 소요 기간 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_UNIT_EXTRA_SIGHT"> 
 			<Text>
-				{2_Sign}{1_Num} Sight for Trade Units
+				교역 유닛 시야 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_UNIT_SPEED_MULTIPLIER"> 
@@ -322305,7 +319795,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_UNIT_COMBAT_PRODUCTION_MODIFIER_FROM_ACCOMPLISHMENT"> 
 			<Text>
-				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num}% [ICON_PRODUCTION] Production for [COLOR_YELLOW]{4_UnitCombat:textkey}[ENDCOLOR] Units
+				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]:  [COLOR_YELLOW]{4_UnitCombat:textkey}[ENDCOLOR]의 [ICON_PRODUCTION] 생산력 {2_Sign}{1_Num}%
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_UNIT_COPY"> 
@@ -322415,7 +319905,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_XP_FOR_DOMAIN_FROM_ACCOMPLISHMENT"> 
 			<Text>
-				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: {2_Sign}{1_Num} XP for [COLOR_YELLOW]{4_Domain:textkey}[ENDCOLOR]
+				[ICON_BULLET][COLOR_WATER_TEXT]{3_Accomplishment:textkey}[ENDCOLOR]: [COLOR_YELLOW]{4_Domain:textkey}[ENDCOLOR]의 경험치 {2_Sign}{1_Num}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_ACCOMPLISHMENT"> 
@@ -322440,7 +319930,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_BUILDING_GLOBAL"> 
 			<Text>
-				[ICON_BULLET][COLOR_YIELD_FOOD]{1_Building:textkey}[ENDCOLOR] in any City: {2_YieldBoosts}
+				[ICON_BULLET]모든 도시의 [COLOR_YIELD_FOOD]{1_Building:textkey}[ENDCOLOR]: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_CITY_STATE_ALLIES"> 
@@ -322485,17 +319975,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_IMPROVEMENT"> 
 			<Text>
-				[ICON_BULLET]Each [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR] owned by City: {2_YieldBoosts}
+				[ICON_BULLET]도시가 보유중인 각 [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR]: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_IMPROVEMENT_GLOBAL"> 
 			<Text>
-				[ICON_BULLET]Each [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR] in Empire: {2_YieldBoosts}
+				[ICON_BULLET]문명의 각 [COLOR_POSITIVE_TEXT]{1_Improvement:textkey}[ENDCOLOR]: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_LOCAL_RESOURCE"> 
 			<Text>
-				[ICON_BULLET]Each {3_ResourceIcon} {1_Resource:textkey} connected to City: {2_YieldBoosts}
+				[ICON_BULLET]도시로 연결된 각 {3_ResourceIcon} {1_Resource:textkey}: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_MONOPOLIES"> 
@@ -322525,7 +320015,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_POLICY_STATE_RELIGION"> 
 			<Text>
-				[ICON_BULLET][COLOR_MAGENTA]{1_Policy:textkey}[ENDCOLOR]: {2_YieldBoosts} when City follows your [ICON_RELIGION] Primary Religion
+				[ICON_BULLET][COLOR_MAGENTA]{1_Policy:textkey}[ENDCOLOR]: 도시가 당신의 [ICON_RELIGION] 대중 종교를 믿을 경우 {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_POPULATION"> 
@@ -322565,12 +320055,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_WORKED_FEATURE"> 
 			<Text>
-				[ICON_BULLET]Each worked [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Feature:textkey}[ENDCOLOR]: {2_YieldBoosts}
+				[ICON_BULLET]작업중인 각 [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Feature:textkey}[ENDCOLOR]: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_BOOST_FROM_WORKED_TERRAIN"> 
 			<Text>
-				[ICON_BULLET]Each worked [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Terrain:textkey}[ENDCOLOR]: {2_YieldBoosts}
+				[ICON_BULLET]작업중인 각 [COLOR_PLAYER_DARK_GREEN_TEXT]{1_Terrain:textkey}[ENDCOLOR]: {2_YieldBoosts}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_BUILDING_YIELD_CHANGE"> 
@@ -322665,12 +320155,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_CORPORATION_YIELD_MODIFIER_TR_WITH_FRANCHISE"> 
 			<Text>
-				{1_YieldModifiers} to [ICON_INTERNATIONAL_TRADE] Trade Routes targeting Cities with [ICON_FRANCHISE] Established Franchise of this Corporation
+				[ICON_FRANCHISE] 이 기업의 프랜차이즈가 이미 건설된 도시를 대상으로 하는 [ICON_INTERNATIONAL_TRADE] 교역로에 {1_YieldModifiers}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_CORPORATION_YIELD_MODIFIER_TR_WITH_FRANCHISE_CITY"> 
 			<Text>
-				{1_YieldModifiers} per [ICON_INTERNATIONAL_TRADE] Trade Route targeting Cities with [ICON_FRANCHISE] Established Franchise of this Corporation
+				[ICON_FRANCHISE] 이 기업의 프랜차이즈가 이미 설립된 도시를 대상으로 하는 [ICON_INTERNATIONAL_TRADE] 교역로 당 {1_YieldModifiers}
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PRODUCTION_COST"> 
@@ -334665,11 +332155,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_SISTINE_CHAPEL_THEMING_BONUS_HELP"> 
 			<Text>
 				보너스를 극대화 하려면 모든 걸작 슬롯을 [COLOR_POSITIVE_TEXT]같은 시대[ENDCOLOR]에 [COLOR_POSITIVE_TEXT]같은 문명[ENDCOLOR]이 만든 [COLOR_YELLOW]예술품[ENDCOLOR]으로 채우십시오.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_SKIP"> 
-			<Text>
-				현재 재생 중인 음악을 건너뜁니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SKIP_TURN"> 
@@ -350576,21 +348061,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_TERRAIN_JUNGLE_HEADING3_TITLE"> 
 			<Text>
 				정글
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_ADV_QUEST"> 
-			<Text>
-				지도에 노트를 어떻게 남길 수 있나요?
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_BODY"> 
-			<Text>
-				지도 핀을 사용하면 지도에 노트를 추가할 수 있습니다. (기본 보기와 전략 보기 모두)[NEWLINE][NEWLINE]Control + X를 누른 다음 지도를 클릭하여 하나 이상의 핀을 배치합니다. 일반 지도 모드로 돌아가려면 Control + X를 다시 누르세요.[NEWLINE][NEWLINE]핀 위에 마우스를 올려 놓으면 노트를 읽을 수 있습니다. 핀을 마우스 오른쪽 버튼으로 클릭하면 편집, 이동 또는 삭제가 가능합니다.[NEWLINE][NEWLINE]Shift + X를 눌러 모든 핀을 켜거나 끕니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_TITLE"> 
-			<Text>
-				지도 핀
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TERRAIN_MARSH_ADV_QUEST"> 
