@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a685c6da-bc8f-445f-9e83-5d606b136887" version="8">
+  <Properties>
+    <Name>UI - Overlay Barbarians</Name>
+    <Teaser>Highlight barbarian camps and units in strategic view</Teaser>
+    <Description>Adds a "Barbarians" option to the overlay drop-down menu in the strategic view that highlights known barbarian camps and units
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?119169-MOD-UI-Barbarians</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="98E510F078FAFDE3AC2216D8D4A9A9FC" import="0">UI/OverlayBarbarians.lua</File>
+    <File md5="A7627C7B376234B9368F6CF30368A2AA" import="0">UI/OverlayBarbarians.xml</File>
+    <File md5="EF3955328CABF991ACA22176FE308397" import="1">UI/OverlayBarbarians_MiniMapOverlayHook.lua</File>
+    <File md5="CE90E64631121465387E3421BEA09DCC" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="7B4DF9BCC28D443806501CC9558F3B84" import="0">XML/UIBarbarians.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIBarbarians.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayBarbarians.xml">
+      <Name>Barbarians</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayBarbarians_MiniMapOverlayHook.lua">
+      <Name>Barbarians MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9784d016-f5cc-80b3-b37e-a73cdc315fe9" version="19">
+	<Properties>
+		<Name>TorpedoBoat</Name>
+		<Teaser>TorpedoBoat for VP</Teaser>
+		<Description>Miscellaneous changes for VP</Description>
+		<Authors>PadreXIX</Authors>
+		<HideSetupGame>0</HideSetupGame>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+		<SupportsSinglePlayer>1</SupportsSinglePlayer>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SupportsHotSeat>1</SupportsHotSeat>
+		<SupportsMac>0</SupportsMac>
+		<ReloadAudioSystem>1</ReloadAudioSystem>
+		<ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+		<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+		<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+	<Dependencies>
+		 <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="1" maxversion="999" title="Vox Populi" />
+	</Dependencies>
+  <References/>
+  <Blocks/>
+<Files>  
+    <File md5="00000000000000000000000000000000" import="1">Art/Porte-Avions_2.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Porte-Avions_2.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Porte-Avions_2.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Porte-Avions_2_gloss.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/fx_triggers_torpedoboat.ftsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SMSElster.gr2</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SMSElsterSREF.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SMSElster.fxsxml</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SMSElster.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/SV_Torpedo.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/Torpedo_UnitFlagAtlas.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NavalModIcon128.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NavalModIcon256.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NavalModIcon045.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NavalModIcon064.dds</File>
+    <File md5="00000000000000000000000000000000" import="1">Art/NavalModIcon080.dds</File>
+    <File md5="00000000000000000000000000000000" import="0">TorpedoBoat.sql</File>
+</Files>
+	<Actions>
+		<OnModActivated>
+                    <UpdateDatabase>TorpedoBoat.sql</UpdateDatabase>
+                 </OnModActivated>
+	</Actions>
+
+</Mod>

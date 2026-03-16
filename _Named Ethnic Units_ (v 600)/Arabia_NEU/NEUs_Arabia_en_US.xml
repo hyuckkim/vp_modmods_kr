@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--ARABIA-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_RIFLEMAN">
+			<Text>[COLOR_SELECTED_TEXT]Alraami[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_COMPOSITE_BOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Rashidun Bowman[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_KNIGHT">
+			<Text>[COLOR_SELECTED_TEXT]Faris[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Sayf Aljihad[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_SPEARMAN">
+			<Text>[COLOR_SELECTED_TEXT]Alramah[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_ARABIA_CROSSBOWMAN">
+			<Text>[COLOR_SELECTED_TEXT]Alqaws Altawil[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

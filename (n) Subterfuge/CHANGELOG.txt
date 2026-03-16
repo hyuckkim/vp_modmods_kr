@@ -1,0 +1,94 @@
+Buildings
+  Jail (Metal Casting)
+    -- +2 Production
+    -- 5 City Security
+    -- 10 Gold on Border Expand, scaling with Era
+    -- +1 Production from Quarries
+    -- 20 Border Growth Points on Spy Mission
+    -- prereq for Constabulary
+
+  Constabulary (Banking)
+    -- Increased to 20 flat Security
+    -- Decreased from 1 Security per 2 to 1 Security per 4
+    -- Requires Jail
+
+  State Treasury (Banking)
+    -- renamed Printing Press
+    -- Uses State Treasury art (Tradition building has new art in Early_Trees folder)
+    -- +3 Gold and +2 Science
+    -- 1 Security per 6 Citizens
+    -- Moved Literacy Promotion to Printing House below
+    -- Added 25 Gold on election Rig
+    -- White Tower now State Treasury replacement, mutatis mutandis
+
+  Printing House (Printing Press)
+    -- uses old Printing Press icon
+    -- Requires Chancery. Wire Service now requires this.
+    -- 20 City Security
+    -- 500 Cost, 4 Gold maintenance (T1 Renaissance costs)
+       1 Civil Servant Slot
+       Literacy Promotion (from Printing Press), now locally instead
+       +1 Gold for every CS Friend
+       +1 Gold and Science for every CS Ally
+
+  Penitentiary (Industrialization)
+    -- 5 border growth
+    -- 20 Food and Border Growth when conducting a Spy Mission, scaling with Era
+    -- 10 Security and 1 Security per 4
+      So now you have 1 per 2 again
+    -- +1 Gold and Border Growth Points from Tundra Tiles
+    -- Workers gain 20% Work Rate if built here
+    -- 5% Empire Size Reduction 
+    -- Colonists make a Penitentiary upon Founding (earlier than unlock!)
+    -- Requires Constabulary
+
+  Casino (Corporations)
+    -- +1 Gold, +6 when Computers is discovered
+    -- 30 Gold and Culture when conducting a Spy Mission, scaling with Era
+    -- 10 Culture and Tourism when borders expand, scaling with Era
+    -- +5 Culture from Oasis tiles
+    -- Requires Hotel and Penitentiary
+
+  Sorting Office (Combustion)
+    -- +2 Tourism
+    -- 10 city Security
+    -- 15% Purchase/Investment Gold converted to Border Growth Points
+    -- +20% City connection yields in this City 
+    -- +3/+3 Trade Route yields
+    -- +3 Land Trade Route Gold
+    -- Requires Hotel and Industrial City Connection
+    -- Required for an Airport
+
+Wonders
+  Alamut Fortress (Guilds)
+    -- +2 Science, +1 Culture, +3 Defence, +1 GDipPoint
+    -- Receive 100 Spy Points
+    -- 100 Faith when conducting a Spy Mission, scaling with Era
+    -- Garden, Universities, and Castles in this City +1 Science and Faith
+    -- Requires nearby Mountain
+
+  Port Royal (Navigation)
+    -- +1 Culture, +1 GMerchantPoint
+    -- 100 Spy Points
+    -- 150 Gold and Culture when conducting a Spy Mission, scaling with Era
+    -- +3 Gold to Sea Trade Routes
+    -- Naval Melee Units from this City have the Piracy Promotion
+    -- Requires Harbor
+
+  Chateau d'If (Rifling)
+    -- +2 Production, +1 Culture, +2 GWriterPoints
+    -- 100 Spy Points
+    -- Free Penitentiary in the City
+    -- Completing an Industrial Era+ Building gives 10% progress to a GDiplomat
+    -- Requires Coast and Bastion Fort
+
+  General Post Office (Military Science)
+    -- National Wonder 35 Pop base
+    -- +1 Culture, +2 Production, +3 Gold, +1 GDipPoint
+    -- Civil Servant Slot
+    -- All Civil Servants in this City gain +1 Production, Gold, and Tourism
+    -- 100 Spy Points
+    -- 10% yields from City Connections in the Empire
+    -- Free Sorting Office 
+    -- +2 Tourism from CS Friends, +2 Food and Tourism from Allies
+  

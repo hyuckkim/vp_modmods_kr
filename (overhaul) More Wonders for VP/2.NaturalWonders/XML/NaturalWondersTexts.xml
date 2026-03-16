@@ -23,10 +23,10 @@
 			<Text>[NEWLINE][NEWLINE]Abilities:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_PASSABLE">
-			<Text>[NEWLINE][ICON_BULLET]passable after researching [COLOR_CYAN]{1_Tech}[ENDCOLOR]</Text>
+			<Text>[NEWLINE][ICON_BULLET]passable after researching [ICON_RESEARCH] [COLOR_CYAN]{1_Tech}[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_MOVE_END">
-			<Text>[NEWLINE][ICON_BULLET]entering the tile finishes movement</Text>
+			<Text>[NEWLINE][ICON_BULLET]entering the tile [COLOR_NEGATIVE_TEXT]stops[ENDCOLOR] unit's [ICON_ARROW_RIGHT] Movement</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_GOLD_FIRST_FIND">
 			<Text>[NEWLINE][ICON_BULLET]first finder: {1_Gold} [ICON_GOLD]</Text>
@@ -47,16 +47,16 @@
 			<Text>[NEWLINE][NEWLINE]Map abilities (affect map creation):</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FRESH_WATER">
-			<Text>[NEWLINE][ICON_BULLET]is a source of [COLOR_POSITIVE_TEXT]Fresh Water[ENDCOLOR]</Text>
+			<Text>[NEWLINE][ICON_BULLET]is a source of [ICON_FOOD] [COLOR_POSITIVE_TEXT]Fresh Water[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_FREE_PROMOTION">
-			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]all[ENDCOLOR] {1_Unit_types} units: {2_Promotion} ({3_Help})</Text>
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]all[ENDCOLOR] {1_Unit_types} [COLOR_YIELD_GOLD]Units[ENDCOLOR]: {2_Promotion} ({3_Help})</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_NEAR_PROMOTION">
-			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]nearby[ENDCOLOR] {1_Unit_types} units: {2_Promotion} ({3_Help})</Text>
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to [COLOR_POSITIVE_TEXT]nearby[ENDCOLOR] {1_Unit_types} [COLOR_YIELD_GOLD]Units[ENDCOLOR]: {2_Promotion} ({3_Help})</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_LOCATION_PROMOTION">
-			<Text>[NEWLINE][ICON_BULLET]promotion granted to {1_Unit_types} units [COLOR_POSITIVE_TEXT]on the tile[ENDCOLOR]: {2_Promotion} ({3_Help})</Text>
+			<Text>[NEWLINE][ICON_BULLET]promotion granted to {1_Unit_types} [COLOR_YIELD_GOLD]Units[ENDCOLOR] [COLOR_POSITIVE_TEXT]on the tile[ENDCOLOR]: {2_Promotion} ({3_Help})</Text>
 		</Row>
 
 
@@ -100,99 +100,106 @@
 
 
 
+		<!-- Special common abilities -->
+		<!--<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_COMMON_FEATURE_BERMUDA_A">
+			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on the tile</Text>
+		</Row>-->
+
+
+
 		<!-- Special abilities -->
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_A">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/all Sea luxury resources</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to all [COLOR_GREY]Sea Luxury Resources[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_B">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD]/all Fishing Boats</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to all [COLOR_CITY_BROWN]Fishing Boats[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_NEW_REEF_C">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD]/all Fishing Boats</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] to all [COLOR_CITY_BROWN]Fishing Boats[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CRATER">
-			<Text>[NEWLINE][ICON_BULLET]10 [ICON_GOLDEN_AGE] every time you research a [ICON_RESEARCH] Technology[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Spaceship Parts[ENDCOLOR][NEWLINE][ICON_BULLET]grants 10 [ICON_GOLDEN_AGE] every time you research a [ICON_RESEARCH] Technology, scaling with Era</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FUJI">
-			<Text>[NEWLINE][ICON_BULLET]+3 [ICON_GREAT_ARTIST] in Capital[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_WRITER] in Capital[NEWLINE][ICON_BULLET]+1 [ICON_GREAT_MUSICIAN] in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+3 [ICON_GREAT_ARTIST] in nearby City[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_WRITER] in nearby City[NEWLINE][ICON_BULLET]+1 [ICON_GREAT_MUSICIAN] in nearby City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MESA">
-			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION][ICON_PRODUCTION] towards Mounted Military Units[NEWLINE][ICON_BULLET]+1 [ICON_SILVER_FIST][ICON_SILVER_FIST] Military Supply Cap</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_SILVER_FIST] Military Supply Cap for every City in the Empire[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Mounted Military Units[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_VOLCANO">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD], +1 [ICON_RESEARCH]/all Scientists[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_SCIENTIST] in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] and +1 [ICON_RESEARCH] to Scientists in nearby City[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_SCIENTIST] in nearby City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GIBRALTAR">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_STRENGTH][ICON_STRENGTH][NEWLINE][ICON_BULLET]+1 [ICON_DIPLOMAT] World Congress Vote for every 8 [ICON_CITY_STATE] City-States at the start of the game</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_STRENGTH] City Defense in the Empire[NEWLINE][ICON_BULLET]+1 [ICON_DIPLOMAT] World Congress Vote for every 8 [ICON_CITY_STATE] City-States at the start of the game</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GEYSER">
-			<Text>[NEWLINE][ICON_BULLET]-10% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Needs Modifier[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/all Engineers</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to all Engineers[NEWLINE][ICON_BULLET]-10% [ICON_HAPPINESS_3] Needs Modifier in the Empire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_FOUNTAIN_YOUTH">
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_POTOSI">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_SILVER][ICON_RES_SILVER]</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to all [ICON_RES_SILVER] [COLOR_GREY]Silver[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EL_DORADO">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PEACE]/[ICON_RES_GOLD][ICON_RES_GOLD]</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PEACE] to all [ICON_RES_GOLD] [COLOR_GREY]Gold[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SRI_PADA">
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_SINAI">
-			<Text>[NEWLINE][ICON_BULLET]50 [ICON_PEACE] every time you gain possesion of this Natural Wonder[NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]+1 [ICON_PEACE], +1 [ICON_GOLDEN_AGE]/all Holy Sites</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PEACE] and +1 [ICON_GOLDEN_AGE] to all [ICON_GREAT_WORK] Great Works[NEWLINE][ICON_BULLET]+1 [ICON_PEACE] and +1 [ICON_GOLDEN_AGE] to all [COLOR_CITY_BROWN]Holy Sites[ENDCOLOR][NEWLINE][ICON_BULLET]grants 50 [ICON_PEACE] every time you gain possession of this Natural Wonder, scaling with Era</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_KAILASH">
-			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE]/all Monuments and Temples</Text>
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE] to all [COLOR_YIELD_FOOD]Monuments[ENDCOLOR] and [COLOR_YIELD_FOOD]Temples[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ULURU">
-			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] towards Diplomatic Units in Capital</Text>
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Diplomatic Units[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LAKE_VICTORIA">
-			<Text>[NEWLINE][ICON_BULLET]allows establishing [ICON_FOOD] Trade Routes across the Empire[NEWLINE][ICON_BULLET]-10% [ICON_GOLD][ICON_GOLD] Hurry Cost Modifier</Text>
+			<Text>[NEWLINE][ICON_BULLET]allows establishing [ICON_FOOD] Trade Routes across the Empire[NEWLINE][ICON_BULLET]-10% [ICON_GOLD] Hurry Cost Modifier in the Empire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_KILIMANJARO">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE]/[ICON_RES_IVORY][ICON_RES_IVORY]</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] to all [ICON_RES_IVORY] [COLOR_GREY]Ivory[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SOLOMONS_MINES">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_GOLDEN_AGE]/all Mines</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_GOLDEN_AGE] to all [COLOR_CITY_BROWN]Mines[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_A">
-			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION]/all Factories and (any) Power Plants[NEWLINE][ICON_BULLET]+7% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] to all [COLOR_YIELD_FOOD]Factories[ENDCOLOR] and [COLOR_YIELD_FOOD]Power Plants[ENDCOLOR][NEWLINE][ICON_BULLET]+7% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Spaceship Parts[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_SALAR_B">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION]/all Factories and (any) Power Plants[NEWLINE][ICON_BULLET]+3% [ICON_PRODUCTION][ICON_PRODUCTION] during construction of Spaceship Parts</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] to all [COLOR_YIELD_FOOD]Factories[ENDCOLOR] and [COLOR_YIELD_FOOD]Power Plants[ENDCOLOR][NEWLINE][ICON_BULLET]+3% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Spaceship Parts[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_A">
-			<Text>[NEWLINE][ICON_BULLET]+6% [ICON_TOURISM][ICON_TOURISM]/all Landmarks</Text>
+			<Text>[NEWLINE][ICON_BULLET]+6% [ICON_TOURISM] to all [COLOR_CITY_BROWN]Landmarks[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_CAUSEWAY_B">
-			<Text>[NEWLINE][ICON_BULLET]+14% [ICON_TOURISM][ICON_TOURISM]/all Landmarks</Text>
+			<Text>[NEWLINE][ICON_BULLET]+14% [ICON_TOURISM] to all [COLOR_CITY_BROWN]Landmarks[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_EVEREST">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_TOURISM][ICON_TOURISM]</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_TOURISM] in the Empire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_RETBA">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_FOOD][ICON_FOOD][NEWLINE][ICON_BULLET]+10% [ICON_FOOD][ICON_FOOD] during [ICON_HAPPINESS_1] WLTKD[NEWLINE][ICON_BULLET]15 [ICON_TOURISM] every time a [ICON_CITIZEN] Citizen is born</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_FOOD] in the Empire[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] in the Empire during [ICON_HAPPINESS_1] WLTKD[NEWLINE][ICON_BULLET]grants 15 [ICON_TOURISM] every time a [ICON_CITIZEN] Citizen is born, scaling with Era</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_A">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_B">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BERMUDA_C">
-			<Text>[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]stops unit[ENDCOLOR] on its tiles</Text>
+			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_LUMI_BAY">
-			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH]/[ICON_RES_FISH][ICON_RES_FISH], [ICON_RES_TROPICAL_FISH][ICON_RES_TROPICAL_FISH][NEWLINE][ICON_BULLET]25 [ICON_TOURISM] every time a Civilian unit is created</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to all [ICON_RES_FISH] [COLOR_GREY]Fish[ENDCOLOR] and [ICON_RES_TROPICAL_FISH] [COLOR_GREY]Tropical Fish[ENDCOLOR][NEWLINE][ICON_BULLET]grants 25 [ICON_TOURISM] every time a [COLOR_YIELD_GOLD]Civilian Unit[ENDCOLOR] is created</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DALLOL">
-			<Text>[NEWLINE][ICON_BULLET]+1 flat [ICON_RES_SYLVITE][NEWLINE][ICON_BULLET]-5% [ICON_HAPPINESS_3][ICON_HAPPINESS_3] Boredom</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_RES_SYLVITE] [COLOR_GREY]Sylvite[ENDCOLOR][NEWLINE][ICON_BULLET]-5% [ICON_HAPPINESS_3] Boredom in the Empire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MT_PAEKTU">
-			<Text>[NEWLINE][ICON_BULLET]first owner gets unique building in the City nearby: [COLOR_YIELD_FOOD]Altar of the Born under the Mountain[ENDCOLOR] with unique [ICON_GREAT_WORK] [COLOR_CULTURE_STORED]Kim Il-sung and Kim Jong-il standing at the peak of Mount Paektu[ENDCOLOR], and other bonuses</Text>
+			<Text>[NEWLINE][ICON_BULLET]first owner gets an Unique Building in the City nearby: [COLOR_YIELD_FOOD]Altar of the Born under the Mountain[ENDCOLOR] with an unique [ICON_GW_ART] Great Work of Art ([COLOR_CULTURE_STORED]Kim Il-sung and Kim Jong-il standing at the peak of Mount Paektu[ENDCOLOR]), and other bonuses</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_EYE_OF_SAHARA_A">
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
@@ -204,44 +211,65 @@
 			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] at [COLOR_CYAN]Masonry[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_TOURISM] at [COLOR_CYAN]Archaeology[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_TOURISM] at [COLOR_CYAN]Satellites[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_BLUE_HOLE">
-			<Text>[NEWLINE][ICON_BULLET]can be improved with [COLOR_POSITIVE_TEXT]Fishing Boat[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Offshore Platform[ENDCOLOR][NEWLINE][ICON_BULLET]allows construction of 3 late game coastal city buildings: [COLOR_YIELD_FOOD]Scuba Diving Resort[ENDCOLOR], [COLOR_YIELD_FOOD]Deep Ocean Research Facility[ENDCOLOR] and [COLOR_YIELD_FOOD]Bathyscaphe Docking Bay[ENDCOLOR]</Text>
+			<Text>[NEWLINE][ICON_BULLET]can be improved with [COLOR_CITY_BROWN]Fishing Boat[ENDCOLOR] or [COLOR_CITY_BROWN]Offshore Platform[ENDCOLOR][NEWLINE][ICON_BULLET]allows for construction of 3 late game, [COLOR_NEGATIVE_TEXT]mutually exclusive[ENDCOLOR], Coastal City Unique Buildings: [COLOR_YIELD_FOOD]Scuba Diving Resort[ENDCOLOR], [COLOR_YIELD_FOOD]Deep Ocean Research Facility[ENDCOLOR] or [COLOR_YIELD_FOOD]Bathyscaphe Docking Bay[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_A">
-			<Text>[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] to all Writers' Guilds</Text>
+			<Text>[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] to all [COLOR_YIELD_FOOD]Writers' Guilds[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_GALAPAGOS_B">
-			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] to all Writers' Guilds</Text>
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] to all [COLOR_YIELD_FOOD]Writers' Guilds[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_A">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE]</Text>
+			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Naval Melee Units[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_HA_LONG_B">
-			<Text>[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION][ICON_PRODUCTION] towards Naval Melee Units[NEWLINE][ICON_BULLET]+1 [ICON CULTURE] to all [ICON_GREAT_WORK] Artifacts</Text>
+			<Text>[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] to all [ICON_ARTIFACT] Artifacts[NEWLINE][ICON_BULLET]+5% [ICON_PRODUCTION] in the Empire during construction of [COLOR_YIELD_GOLD]Naval Melee Units[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ZHANGJIAJIE">
-			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GOLDEN_AGE]/[ICON_GREAT_WORK][ICON_GREAT_WORK][NEWLINE][ICON_BULLET]50 [ICON_TOURISM] every time a [ICON_GREAT_PEOPLE] Great Person is expended</Text>
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GOLDEN_AGE] to all [ICON_GREAT_WORK] Great Works[NEWLINE][ICON_BULLET]grants 50 [ICON_TOURISM] every time a [ICON_GREAT_PEOPLE] Great Person is expended, scaling with Era</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_A">
-			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE] is converted into [ICON_RESEARCH] in every City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_B">
-			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE] is converted into [ICON_RESEARCH] in every City</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_AURORA_C">
-			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE][ICON_PEACE] is converted into [ICON_RESEARCH][ICON_RESEARCH]</Text>
+			<Text>[NEWLINE][ICON_BULLET]2 [ICON_PEACE] on unit's Death[ENDCOLOR][NEWLINE][ICON_BULLET]3% [ICON_PEACE] is converted into [ICON_RESEARCH] in every City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_ARCH">
+			<Text>[NEWLINE][ICON_BULLET]+20% [ICON_GOLD] from [ICON_CONNECTED] City Connections and [ICON_INDUSTRIAL_CONNECTED] Industrial City Connections in nearby City[NEWLINE][ICON_BULLET]grants 40 [ICON_GOLD] and 15 [ICON_CULTURE] every time an Internal [ICON_INTERNATIONAL_TRADE] Trade Route in nearby City ends, scaling with Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_A">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE] to all [ICON_GW_ART] Great Works of Art[NEWLINE][ICON_BULLET]+3% [ICON_GREAT_ARTIST] and +3% [ICON_GREAT_SCIENTIST] in the Empire during [ICON_GOLDEN_AGE] Golden Ages</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_DANXIA_B">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_PEACE] to all [ICON_GW_ART] Great Works of Art[NEWLINE][ICON_BULLET]+3% [ICON_GREAT_ARTIST] and +3% [ICON_GREAT_SCIENTIST] in the Empire during [ICON_GOLDEN_AGE] Golden Ages</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_JEJU_DO">
+			<Text>[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_ARTIST] in nearby City[NEWLINE][ICON_BULLET]when a [ICON_GREAT_ARTIST] Great Artist is born in nearby City, gain [ICON_GOLD] equal to 25% of his potential [ICON_GOLDEN_AGE] from [COLOR_POSITIVE_TEXT]Starting a [ICON_GOLDEN_AGE] Golden Age[ENDCOLOR] ability</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_A">
+			<Text>[NEWLINE][ICON_BULLET]grants 7 XP to each newly created [COLOR_YIELD_GOLD]Submarine Unit[ENDCOLOR] in the Empire[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_B">
+			<Text>[NEWLINE][ICON_BULLET]grants 7 XP to each newly created [COLOR_YIELD_GOLD]Submarine Unit[ENDCOLOR] in the Empire[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_FEATURE_MARIANA_C">
+			<Text>[NEWLINE][ICON_BULLET]grants 7 XP to each newly created [COLOR_YIELD_GOLD]Submarine Unit[ENDCOLOR] in the Empire[NEWLINE][ICON_BULLET]grants 10 [ICON_RESEARCH] every time a [ICON_GOLDEN_AGE] Golden Age starts, scaling with Era</Text>
 		</Row>
 
-
+		
 
 		<!-- Map abilities -->
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_A">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 5 different [COLOR_CITY_GREEN]Features[ENDCOLOR] or [COLOR_GREY]Resources[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_B">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 5 different [COLOR_CITY_GREEN]Features[ENDCOLOR] or [COLOR_GREY]Resources[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_NEW_REEF_C">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]5 different features or resources[ENDCOLOR] on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 5 different [COLOR_CITY_GREEN]Features[ENDCOLOR] or [COLOR_GREY]Resources[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_CRATER">
 			<Text></Text>
@@ -253,7 +281,7 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_VOLCANO">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to [COLOR_POSITIVE_TEXT]3 additional island tiles[ENDCOLOR] in the 2nd ring of water</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 3 [COLOR_CITY_BLUE]additional Island Tiles[ENDCOLOR] in the 2nd ring of water</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GIBRALTAR">
 			<Text></Text>
@@ -265,10 +293,10 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_POTOSI">
-			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_SILVER] on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_SILVER] [COLOR_GREY]Silver[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EL_DORADO">
-			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_GOLD] on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns 2 [ICON_RES_GOLD] [COLOR_GREY]Gold[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_SRI_PADA">
 			<Text></Text>
@@ -325,7 +353,7 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MT_PAEKTU">
-			<Text>[NEWLINE][ICON_BULLET]is a source of [COLOR_POSITIVE_TEXT]3 new Rivers[ENDCOLOR] on the map</Text>
+			<Text>[NEWLINE][ICON_BULLET]is a source of 3 [COLOR_CITY_GREEN]new Rivers[ENDCOLOR] on the map</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_EYE_OF_SAHARA_A">
 			<Text></Text>
@@ -340,10 +368,10 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_A">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] Tropical Fish and up to 1 [ICON_RES_TORTOISE] Giant Tortoise on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] [COLOR_GREY]Tropical Fish[ENDCOLOR] and up to 1 [ICON_RES_TORTOISE] [COLOR_GREY]Giant Tortoise[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_GALAPAGOS_B">
-			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] Tropical Fish and up to 1 [ICON_RES_TORTOISE] Giant Tortoise on adjacent tiles</Text>
+			<Text>[NEWLINE][ICON_BULLET]spawns up to 2 [ICON_RES_TROPICAL_FISH] [COLOR_GREY]Tropical Fish[ENDCOLOR] and up to 1 [ICON_RES_TORTOISE] [COLOR_GREY]Giant Tortoise[ENDCOLOR] on adjacent tiles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_HA_LONG_A">
 			<Text></Text>
@@ -361,6 +389,27 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_AURORA_C">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_ARCH">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_DANXIA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_JEJU_DO">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_A">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_B">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_EXTENDED_MAP_FEATURE_MARIANA_C">
 			<Text></Text>
 		</Row>
 
@@ -488,16 +537,36 @@
 			<Text>"Mountains teach that not everything in this world can be rationally explained."[NEWLINE] - Aleksander Lwow[NEWLINE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_A">
-			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
+			<Text>"(...) great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors (...)."[NEWLINE] - Andy Long[NEWLINE]</Text>
+			<!-- CUT PART The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, -->
+			<!-- or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe. -->
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_B">
-			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!---->
+			<Text>"(...) great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors (...)."[NEWLINE] - Andy Long[NEWLINE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_AURORA_C">
-			<Text>"The sight filled the northern sky; the immensity of it was scarcely conceivable. As if from Heaven itself, great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]</Text>
-			<!--[NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors or even that the aurora will come down and take their heads off, thus making them observe it in silence and awe."[NEWLINE] - Andy Long[NEWLINE]-->
+			<Text>"(...) great curtains of delicate light hung and trembled. Pale green and rose-pink, and as transparent as the most fragile fabric, and at the bottom edge a profound fiery crimson like the fires of Hell, they swung and shimmered loosely with more grace than the most skillful dancer."[NEWLINE] - Philip Pullman[NEWLINE][NEWLINE]"Some believe that whistling and making other sounds at the aurora will either cause it to become more active, use it as a way to speak to their ancestors (...)."[NEWLINE] - Andy Long[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_ARCH">
+			<Text>"A weird, lovely, fantastic object out of nature like Delicate Arch has the curious ability to remind us... that out there is a different world, older and greater and deeper by far than ours..."[NEWLINE] - Edward Abbey[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_A">
+			<Text>"The purple hues of Danxia landscapes give people a sense of heavenliness, and are associated with authority, wealth, and good fortune in traditional Chinese culture."[NEWLINE] - UNESCO[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_DANXIA_B">
+			<Text>"The purple hues of Danxia landscapes give people a sense of heavenliness, and are associated with authority, wealth, and good fortune in traditional Chinese culture."[NEWLINE] - UNESCO[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_JEJU_DO">
+			<Text>"Because no one takes a silent volcano seriously!"[NEWLINE] - Mehmet Murat Ildan[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_A">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_B">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MORE_NATURAL_WONDERS_QUOTE_FEATURE_MARIANA_C">
+			<Text>"There have been more people on the surface of the moon than to the bottom of the Mariana Trench."[NEWLINE] - James Cameron[NEWLINE]</Text>
 		</Row>
 		
 
@@ -579,11 +648,8 @@
 			<Text>Salar de Uyuni (small)</Text>
 			<Gender>neuter:no_article</Gender>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_A_TEXT">
-			<Text>Salar de Uyuni is the largest salt flat in the world. When wet, its surface becomes a massive mirror, which is famously beautiful. Several species of flamingo use Salar de Uyuni as their breeding ground. Salar de Uyuni is particularly rich in lithium salt, and contains over half of the world's lithium reserves. Its large, flat surface is excellent for calibrating distance measurements in satellites. Satellites have been able to measure distances from points on the earth accurate to within an inch when calibrated against the surface of Salar de Uyuni.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_B_TEXT">
-			<Text>Salar de Uyuni is the largest salt flat in the world. When wet, its surface becomes a massive mirror, which is famously beautiful. Several species of flamingo use Salar de Uyuni as their breeding ground. Salar de Uyuni is particularly rich in lithium salt, and contains over half of the world's lithium reserves. Its large, flat surface is excellent for calibrating distance measurements in satellites. Satellites have been able to measure distances from points on the earth accurate to within an inch when calibrated against the surface of Salar de Uyuni.</Text>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_SALAR_TEXT">
+			<Text>Salar de Uyuni, located in southwest Bolivia, is the world's largest salt flat, covering more than 10,000 square kilometers at an elevation of about 3,650 meters (11,975 feet) above sea level. It was formed over tens of thousands of years as prehistoric lakes, including Lake Minchin and later Lake Tauca, gradually evaporated, leaving behind vast layers of salt crust. Beneath the surface lies one of the planet's richest reserves of lithium, a resource increasingly important for modern technology, particularly in rechargeable batteries. For centuries, local communities, including the Aymara and Quechua, have harvested salt from the flats and incorporated the region into their cultural and economic practices. In the 20th and 21st centuries, Salar de Uyuni gained global recognition not only for its mineral wealth but also for its surreal natural beauty. [NEWLINE][NEWLINE]Today, Salar de Uyuni is one of Bolivia's most iconic destinations, attracting visitors from around the world. In the rainy season, a thin layer of water transforms the flats into a massive natural mirror, reflecting the sky so perfectly that it creates the illusion of walking in the clouds. The area also features unique landmarks such as the Incahuasi Island, dotted with giant cacti, and train graveyards near the town of Uyuni that reflect the region's industrial past. Besides tourism, the salt flat plays a crucial role in Bolivia's economic future due to its lithium deposits. As both a natural wonder and a vital resource, Salar de Uyuni stands as a striking intersection of geology, culture, and global significance.</Text>
 		</Row>
 
 
@@ -597,7 +663,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_CAUSEWAY_TEXT">
-			<Text>Giant's Causeway is large cluster of hexagonal basalt columns formed from an ancient volcanic eruption. The tallest columns reach approximately 40 feet high. The columns formed during the Paleocene Epoch when molten basalt cooled and cracked into columns in a process similar to how cracks form in drying mud. According to legend, the causeway was built by an Irish giant in order to respond to a challenge issued by a Scottish giant. The causeway between the islands was destroyed in the resulting fight, with Giant's Causeway the principle remains. There is a smaller cluster of basalt columns across the North Sea in Scotland formed as part of the same ancient lava flow, leading to speculation that these matching columns inspired the legend.</Text>
+			<Text>The Giant's Causeway, located on the northern coast of County Antrim in Northern Ireland, is a natural geological wonder made up of about 40,000 interlocking basalt columns. It was formed around 50 to 60 million years ago during a period of intense volcanic activity, when molten basalt cooled rapidly and contracted, creating the distinctive hexagonal shapes. The site has long fascinated scientists and visitors alike, offering insight into volcanic processes while inspiring myths and legends. In Irish folklore, the Causeway was said to have been built by the giant Fionn mac Cumhaill (Finn McCool) as a bridge to Scotland to confront a rival giant, giving the formation its evocative name. Documented in writing as early as the 17th century, the site became an important symbol of natural history during the Enlightenment, drawing both scholars and tourists. [NEWLINE][NEWLINE]Today, the Giant's Causeway is recognized as a UNESCO World Heritage Site and one of the most popular attractions in Northern Ireland. The basalt columns, some rising as high as 12 meters, create a surreal, stepping-stone landscape that leads into the sea, captivating millions of visitors each year. The surrounding cliffs and coastal scenery add to its dramatic setting, while a visitor center offers historical, geological, and cultural context. Beyond its scientific importance, the Giant's Causeway continues to embody the blend of nature and myth, symbolizing both the power of Earth's natural forces and the enduring imagination of human storytelling.</Text>
 		</Row>
 
 
@@ -608,7 +674,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>-->
 		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_EVEREST_TEXT">
-			<Text>Mount Everest is the tallest mountain in the world, towering 29,029 feet (8,848 meters) above sea level. The mountain reaches to the stratosphere, causing wind speeds to routinely exceed 100 miles per hour at the summit. The atmospheric pressure at the peak of Mount Everest is roughly one third of the pressure at sea level. In 1953, Tenzing Norgay and Edmund Hillary became the first humans known to have ascended to the summit. However, it is possible that Everest was summited in 1924 when George Mallory and Andrew Irving disappeared into clouds high on the mountain. Tragically, they did not successfully descend the mountain, and whether they reached the peak first is unknown. Mount Everest is named after Sir George Everest, a former Surveyor General of India. Everest himself opposed this name, arguing that there were local names for the mountain which would be better choices.</Text>
+			<Text>Mount Everest, located in the Himalayas on the border of Nepal and the Tibet Autonomous Region of China, is the tallest mountain on Earth, standing at 8,848.86 meters (29,031.7 feet) above sea level. It was formed around 60 million years ago when the Indian tectonic plate collided with the Eurasian plate, thrusting up the Himalayas. Known as Sagarmatha in Nepal and Chomolungma in Tibet, the mountain has long held cultural and spiritual significance for local communities. Western exploration began in the 19th century when British surveyors mapped the Himalayas, and in 1856, the peak was officially identified as the world's highest. After years of attempts, Sir Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa of Nepal, made the first confirmed ascent on May 29, 1953, marking one of the greatest achievements in mountaineering history. [NEWLINE][NEWLINE]Today, Mount Everest is both a global symbol of natural majesty and a challenging destination for climbers from around the world. Thousands attempt to reach its summit each year, often facing extreme conditions including avalanches, high winds, thin air, and severe cold. The mountain has also become a site of controversy due to overcrowding, environmental degradation, and the dangers faced by local Sherpa guides who make such expeditions possible. Despite these challenges, Everest continues to inspire awe as the "roof of the world", representing human endurance, ambition, and the enduring allure of Earth's most formidable landscapes.</Text>
 		</Row>
 
 
@@ -618,7 +684,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_RETBA_TEXT">
-			<Text>TODO</Text>
+			<Text>Lake Retba, also known as Lac Rose, is a striking pink-colored lake located northeast of Dakar, Senegal, just a short distance from the Atlantic coast. Its vivid hue comes from the presence of the microalgae Dunaliella salina, which produces a red pigment to absorb sunlight and thrive in the lake's high salinity. During the dry season, when salt concentration is strongest, the water takes on its most intense pink and reddish tones, making it a natural wonder and a major attraction. Historically, the lake has been an important site for salt production, with local workers harvesting the mineral in a process that continues today. For generations, salt from Lake Retba has been a vital economic resource for nearby communities, linking the lake to Senegal's cultural and commercial history. [NEWLINE][NEWLINE]In modern times, Lake Retba has gained global recognition not only for its unusual beauty but also as a cultural landmark. It was famously the finishing point of the Paris-Dakar Rally until 2007, which brought international attention to the site. The lake spans about 3 square kilometers and is shallow, making it easy for salt harvesters to wade in and collect salt by hand, often coating their skin with shea butter to protect against the harsh salinity. Beyond its economic role, Lake Retba has become a symbol of Senegalese natural heritage, drawing tourists, scientists, and photographers alike. Its shimmering pink waters, set against sand dunes and the Atlantic coastline, make it one of West Africa's most unique and memorable landscapes.</Text>
 		</Row>
 
 
@@ -628,7 +694,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_BERMUDA_TEXT">
-			<Text>TODO</Text>
+			<Text>The Bermuda Triangle, also known as the Devil's Triangle, is a loosely defined area of the North Atlantic Ocean bounded by Miami (Florida), Bermuda, and San Juan (Puerto Rico). It became infamous in the mid-20th century due to reports of mysterious disappearances of ships and aircraft within its boundaries. The most famous incident was the loss of Flight 19, a squadron of five U.S. Navy bombers that vanished in December 1945 during a training mission, followed by the disappearance of a rescue plane sent after them. Earlier cases, such as the 1918 vanishing of the USS Cyclops with over 300 crew members, added to the legend. In the 1960s and 1970s, authors and journalists sensationalized these events, fueling theories that ranged from magnetic anomalies and rogue waves to extraterrestrial involvement, cementing the Bermuda Triangle as one of the world's great modern mysteries. [NEWLINE][NEWLINE]In reality, scientific investigations suggest that the Bermuda Triangle does not experience more disappearances than other heavily traveled ocean regions. Explanations for the incidents often point to natural factors such as sudden storms, strong Gulf Stream currents, methane hydrates, and human error. Despite this, the Bermuda Triangle remains deeply embedded in popular culture, inspiring books, films, and television programs that highlight its aura of danger and intrigue. Today, it is less a geographical danger zone than a symbol of the unknown, reflecting humanity's fascination with mystery and the uncharted. Its enduring reputation ensures that the Bermuda Triangle continues to capture the imagination, balancing between myth, maritime history, and scientific skepticism.</Text>
 		</Row>
 
 
@@ -638,7 +704,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_LUMI_BAY_TEXT">
-			<Text>TODO</Text>
+			<Text>Bioluminescent Bay, commonly referring to Mosquito Bay on the island of Vieques, Puerto Rico, is considered the brightest bioluminescent bay in the world. Its unique glow comes from microscopic organisms called dinoflagellates (Pyrodinium bahamense), which emit light when disturbed by movement in the water. This natural phenomenon has existed for centuries, with Indigenous Taino people regarding the glowing waters as mystical and sacred. The bay gained broader recognition during the colonial period and has since been studied by scientists seeking to understand the delicate ecological balance that allows such dense concentrations of bioluminescent organisms to thrive. In 2008, the Guinness World Records officially declared Mosquito Bay the brightest bioluminescent bay on Earth. [NEWLINE][NEWLINE]Today, Bioluminescent Bay is one of Puerto Rico's most famous natural attractions, drawing visitors who kayak or boat across its glowing waters on dark nights. The brightness of the bay is due to a combination of factors, including its mangrove-lined shores, shallow depth, and limited connection to the open sea, which together create an ideal environment for the dinoflagellates. While there are other bioluminescent bays in Puerto Rico, such as Laguna Grande in Fajardo and La Parguera in Lajas, Mosquito Bay remains the most spectacular. Conservation efforts are crucial, as pollution, excessive boating, and changes in water quality can threaten the fragile ecosystem. The bay stands as both a natural wonder and a reminder of the importance of environmental stewardship in preserving rare and magical phenomena.</Text>
 		</Row>
 
 
@@ -648,7 +714,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_DALLOL_TEXT">
-			<Text>TODO</Text>
+			<Text>Dallol, located in the Danakil Depression of northern Ethiopia, is one of the most extreme and geologically unique places on Earth. The area sits about 125 meters (410 feet) below sea level, making it one of the lowest land depressions in the world. It was shaped by volcanic and tectonic activity, with a hydrothermal system powered by a magma chamber below the surface. Dallol experienced a rare phreatic eruption in 1926, which created craters that still define its surreal landscape. Over time, the interaction of volcanic heat with underground salt deposits produced a kaleidoscope of hot springs, acid ponds, salt formations, and mineral terraces. Historically, the Afar people have mined salt in the region for centuries, using camel caravans to transport slabs of salt across Ethiopia, linking Dallol to ancient trade networks. [NEWLINE][NEWLINE]Today, Dallol is renowned for its otherworldly scenery, often described as resembling an alien landscape. Its vivid colors—ranging from bright greens and yellows to deep reds and whites—are caused by sulfur, iron oxide, and other minerals deposited by hydrothermal activity. Temperatures frequently exceed 45°C (113°F), and it is often cited as one of the hottest inhabited places on Earth. Despite its harshness, the area attracts scientists studying extremophiles (organisms that survive in extreme environments) as well as adventurous travelers drawn to its bizarre beauty. However, the environment is fragile and dangerous, with toxic gases, scalding pools, and unstable crusts. Dallol thus stands as both a natural wonder and a natural laboratory, offering insight into Earth's extremes and even analogs for conditions on other planets.</Text>
 		</Row>
 
 
@@ -658,7 +724,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_MT_PAEKTU_TEXT">
-			<Text>TODO</Text>
+			<Text>Paektu Mountain, also known as Changbai Mountain in China, is a volcanic peak straddling the border between North Korea and China. Rising to 2,744 meters (9,003 feet), it is the highest mountain on the Korean Peninsula and in northeastern China. Geologically, Paektu is a stratovolcano with a massive caldera formed by a colossal eruption around 946 CE, one of the largest eruptions in recorded history. This event, sometimes called the "Millennium Eruption", spread ash as far as Japan and even the Arctic. For centuries, the mountain has held deep cultural and historical significance: in Korean mythology, it is the legendary birthplace of Dangun, the founder of the first Korean kingdom, Gojoseon, while in China, it is tied to Manchu origins and imperial identity. [NEWLINE][NEWLINE]Today, Paektu Mountain remains both a natural and political symbol. Its summit caldera is filled by Heaven Lake, a pristine crater lake surrounded by dramatic cliffs, which is a major destination for pilgrims, tourists, and researchers. For North Korea, the mountain is celebrated as a sacred revolutionary site, linked in official narratives to the anti-Japanese guerrilla activities of Kim Il-sung and even to the birth of Kim Jong-il. On the Chinese side, it is a popular national park and eco-tourism site. Despite its beauty, Paektu is closely monitored for volcanic activity, as scientists warn it could erupt again in the future. The mountain thus embodies a unique blend of geology, mythology, and politics, serving as both a shared natural heritage and a contested symbol of national identity.</Text>
 		</Row>
 
 
@@ -668,7 +734,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_EYE_OF_SAHARA_TEXT">
-			<Text>TODO</Text>
+			<Text>The Eye of the Sahara, also known as the Richat Structure, is a massive circular geological formation located in the Sahara Desert near Ouadane, Mauritania. Spanning about 40 kilometers (25 miles) in diameter, it is so large that it is best seen from space, where it resembles a giant eye staring up from the desert floor. First brought to global attention by astronauts in the 1960s, the structure was initially thought to be an impact crater. However, geologists now believe it is a deeply eroded geological dome formed by uplift and erosion over hundreds of millions of years, exposing layers of rock that date back to the Proterozoic era. Its concentric rings of quartzite, sandstone, and other rocks make it a unique landmark for studying Earth's geologic history. [NEWLINE][NEWLINE]Today, the Eye of the Sahara remains both a scientific curiosity and a cultural marvel. The area surrounding it has yielded important archaeological finds, including Stone Age tools, linking it to early human history in the Sahara. Its striking appearance has also sparked myths and speculation, with some proposing that it may have inspired Plato's description of Atlantis due to its circular, ringed shape. While not heavily trafficked because of its remote desert location, it draws explorers, researchers, and adventurous travelers intrigued by its mystery. The Richat Structure stands as one of the most distinctive natural formations on Earth, embodying the slow, powerful forces of geology while fueling the human imagination.</Text>
 		</Row>
 		
 		
@@ -678,7 +744,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_BLUE_HOLE_TEXT">
-			<Text>TODO</Text>
+			<Text>The Great Blue Hole is a massive marine sinkhole located off the coast of Belize, near the center of Lighthouse Reef, part of the Belize Barrier Reef Reserve System. Measuring about 300 meters (984 feet) across and over 120 meters (394 feet) deep, it was formed during the last Ice Age, when rising sea levels flooded a limestone cave system and caused its roof to collapse. The site gained worldwide recognition in 1971 when famed ocean explorer Jacques Cousteau declared it one of the top diving locations on the planet, bringing international attention to its geological and ecological significance. The Blue Hole has since become a UNESCO World Heritage Site as part of the Belize Barrier Reef, the second-largest coral reef system in the world. [NEWLINE][NEWLINE]Today, the Great Blue Hole is both a natural wonder and a premier destination for divers and scientists. Its depths reveal stalactites, limestone formations, and caves that provide evidence of its ancient geological history. The surrounding waters are home to a variety of marine life, including reef sharks, groupers, and vibrant corals, though biodiversity within the hole itself is limited due to low oxygen levels at greater depths. From above, its nearly perfect circular shape and striking deep-blue color contrasted with the turquoise shallows of the reef make it one of the most photographed natural features on Earth. As both a scientific site and a tourist attraction, the Great Blue Hole embodies the intersection of natural history, marine ecology, and human fascination with Earth's hidden depths.</Text>
 		</Row>
 
 
@@ -692,7 +758,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_GALAPAGOS_TEXT">
-			<Text>TODO</Text>
+			<Text>The Galápagos Islands, an Ecuadorian archipelago in the Pacific Ocean, are world-renowned for their unique biodiversity and historical role in shaping scientific thought. Formed by volcanic activity over millions of years, the islands are located about 1,000 kilometers (620 miles) off the coast of Ecuador. They were first recorded by Europeans in 1535 when Spanish bishop Tomás de Berlanga's ship drifted there accidentally. For centuries, the islands served as a stopover for whalers and pirates, who exploited their giant tortoises for food and left ecological damage in their wake. The Galápagos gained global importance in 1835 when Charles Darwin visited aboard the HMS Beagle. Observing variations among species across different islands, Darwin developed ideas that contributed to his theory of evolution by natural selection, forever linking the archipelago to the history of science. [NEWLINE][NEWLINE]Today, the Galápagos Islands are a UNESCO World Heritage Site and one of the most carefully protected ecosystems on Earth. The archipelago consists of 13 main islands, 6 smaller islands, and numerous islets, home to iconic species such as marine iguanas, blue-footed boobies, giant tortoises, and Galápagos penguins—the only penguin species found north of the equator. The islands' isolation has allowed many endemic species to evolve, making them a living laboratory of evolution. Strict conservation measures regulate tourism and fishing, as the islands face threats from invasive species, climate change, and human activity. Balancing ecological preservation with eco-tourism, the Galápagos remain both a fragile sanctuary of biodiversity and a symbol of humanity's responsibility to protect the natural world.</Text>
 		</Row>
 
 
@@ -706,7 +772,7 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_HA_LONG_TEXT">
-			<Text>TODO</Text>
+			<Text>Ha Long Bay, located in northern Vietnam in Quang Ninh Province, is a UNESCO World Heritage Site famed for its dramatic seascape of limestone karsts and emerald waters. The bay covers around 1,500 square kilometers and contains nearly 2,000 islands and islets, many of which are topped with lush vegetation. Geologically, the formations were created over millions of years through processes of erosion, tectonic activity, and rising and falling sea levels, shaping the striking cliffs, caves, and pillars seen today. Historically, the bay has been inhabited for thousands of years, with archaeological evidence pointing to early human settlements dating back 18,000 years. The name "Ha Long", meaning "Descending Dragon", comes from Vietnamese legend, which tells of dragons sent by the gods to protect the land by spitting jewels and jade that became the islands and islets. [NEWLINE][NEWLINE]Today, Ha Long Bay is one of Vietnam's most iconic destinations, celebrated for its natural beauty and cultural significance. The bay is home to floating fishing villages, where communities have adapted to life on the water for generations. It is also rich in biodiversity, with coral reefs, mangrove forests, and unique ecosystems that support a wide variety of marine and bird life. Tourism has become a major industry, with cruises, kayaking, and cave exploration among the most popular activities. However, the bay faces environmental challenges from pollution and overdevelopment, making sustainable management essential for its preservation. Combining geological wonder, cultural heritage, and living tradition, Ha Long Bay stands as both a natural treasure and a vital part of Vietnam's identity.</Text>
 		</Row>
 
 
@@ -716,17 +782,69 @@
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_ZHANGJIAJIE_TEXT">
-			<Text>TODO</Text>
+			<Text>Zhangjiajie, located in Hunan Province, China, is world-famous for its towering sandstone pillars, deep ravines, and lush forests that create a surreal, almost otherworldly landscape. These unique quartz-sandstone formations were shaped over millions of years through physical weathering, tectonic shifts, and erosion, giving rise to more than 3,000 narrow peaks and spires. The area has a long history of human habitation, with evidence of early farming communities and cultural development among local Tujia and Miao ethnic groups. In 1982, Zhangjiajie National Forest Park became the first national forest park in China, later forming part of the Wulingyuan Scenic and Historic Interest Area, which was designated a UNESCO World Heritage Site in 1992. [NEWLINE][NEWLINE]Today, Zhangjiajie is a celebrated natural attraction, drawing millions of visitors annually for its breathtaking scenery. The park inspired the floating Hallelujah Mountains in James Cameron's film Avatar, which greatly boosted its international recognition. Beyond its cinematic fame, Zhangjiajie offers attractions such as the glass-bottom bridge spanning the Zhangjiajie Grand Canyon, one of the highest and longest of its kind in the world. Its biodiversity is equally remarkable, with rare plant species and wildlife thriving in its protected forests. Combining geological wonder, cultural heritage, and modern tourism innovation, Zhangjiajie represents both China's natural beauty and its global cultural influence.</Text>
 		</Row>
 
 
 
 		<Row Tag="TXT_KEY_FEATURE_AURORA">
-			<Text>Aurora Borealis</Text>
+			<Text>Aurora</Text>
 			<Gender>neuter:no_article</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_FEATURES_AURORA_TEXT">
-			<Text>TODO</Text>
+			<Text>The aurora lights, known as the Aurora Borealis in the Northern Hemisphere and Aurora Australis in the Southern Hemisphere, are natural light displays caused by charged particles from the solar wind colliding with Earth's magnetic field and atmosphere. These interactions excite gases such as oxygen and nitrogen, producing shimmering waves of green, red, blue, and purple light across the polar skies. The phenomenon has been observed and mythologized for millennia: Norse legends described them as reflections from Valkyries' armor, while Inuit peoples believed they were spirits of the departed playing in the sky. Early scientific speculation ranged from reflections of sunlight to volcanic emissions, but the modern explanation emerged in the 20th century with advances in space and atmospheric science, linking the auroras to solar activity and geomagnetic storms. [NEWLINE][NEWLINE]Today, auroras are not only a natural wonder but also a subject of scientific study and a popular travel experience. They are most visible in high-latitude regions such as Norway, Finland, Canada, Alaska, and Antarctica, particularly during periods of high solar activity. Modern research into auroras contributes to space weather studies, as geomagnetic disturbances caused by solar storms can affect satellites, power grids, and communication systems on Earth. For travelers, aurora viewing has become a bucket-list experience, with entire tourism industries built around chasing the lights. Whether studied for their scientific significance or admired for their beauty, the aurora lights embody the powerful connection between the Earth and the Sun, blending myth, culture, and science in a breathtaking celestial display.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_ARCH">
+			<Text>Delicate Arch</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_ARCH_TEXT">
+			<Text>Delicate Arch, located in Arches National Park near Moab, Utah, is one of the most famous natural rock formations in the United States and an enduring symbol of the American Southwest. The freestanding sandstone arch, rising about 16 meters (52 feet) high and 14 meters (46 feet) wide, was formed over millions of years through erosion of Entrada Sandstone, shaped by wind, water, and frost. Native American cultures, including the Ute and Paiute peoples, once inhabited the region, leaving behind rock art that can still be found near the arch. Although it was long known locally, Delicate Arch gained national prominence in the 20th century as part of the movement to preserve Utah’s unique landscapes, eventually becoming an icon featured on Utah license plates, postage stamps, and countless photographs.[NEWLINE][NEWLINE]Today, Delicate Arch is the most visited and photographed feature in Arches National Park, attracting hundreds of thousands of visitors annually. The hike to the arch, a moderately strenuous 5-kilometer (3-mile) round trip, has become a popular pilgrimage for travelers seeking to witness the formation up close, especially at sunset when the red rock glows brilliantly against the desert sky. Beyond its visual appeal, Delicate Arch is also a symbol of endurance and natural beauty, embodying the fragile balance of erosion and time that defines the Colorado Plateau. Strict conservation measures protect the site, ensuring that this natural wonder remains preserved for future generations as both a geological marvel and a cultural emblem of Utah.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_A">
+			<Text>Zhangye Danxia (primary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_DANXIA_B">
+			<Text>Zhangye Danxia (secondary)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_DANXIA_TEXT">
+			<Text>Zhangye Danxia, located in Gansu Province, China, is a spectacular geological formation known for its vividly colored rock layers that create a "painted" landscape. These formations were created over 24 million years through the accumulation of red sandstone and mineral deposits, later uplifted by tectonic activity and eroded by wind and water into rolling hills, steep cliffs, and unusual rock shapes. The striking red, yellow, green, and orange hues are the result of iron oxide and other trace minerals within the rocks. Although the area was known locally for centuries, it only gained wider recognition in the late 20th century and became a UNESCO World Heritage Site in 2010 as part of China's Danxia landform landscapes.[NEWLINE][NEWLINE]Today, Zhangye Danxia is celebrated as one of China's most unique natural wonders, often referred to as the "Rainbow Mountains". Boardwalks, viewing platforms, and tourism facilities allow visitors to safely explore the region while preserving its fragile environment. The surreal scenery has made it a popular subject for photography, travel media, and films, boosting tourism in Gansu Province. Beyond its visual beauty, Zhangye Danxia also offers insights into Earth's geological history, with its layered rocks serving as a natural record of shifting climates and environments. Combining scientific significance with breathtaking aesthetics, Zhangye Danxia stands as both a natural masterpiece and a valuable educational resource.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_JEJU_DO">
+			<Text>Seongsan Ilchulbong</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_JEJU_DO_TEXT">
+			<Text>Seongsan Ilchulbong, also known as Sunrise Peak, is a volcanic tuff cone located on Jeju Island, South Korea. It was formed over 100,000 years ago by hydrovolcanic eruptions, when hot magma interacted explosively with shallow seawater. The result was a steep-sided crater about 600 meters in diameter and 90 meters deep, surrounded by cliffs on three sides. Historically, the peak and surrounding lands were used by local communities for grazing and farming, while Jeju's famous haenyeo (female divers) have long collected shellfish and seaweed along its shores. In recognition of its geological and cultural importance, Seongsan Ilchulbong was inscribed as part of the Jeju Volcanic Island and Lava Tubes UNESCO World Heritage Site in 2007.[NEWLINE][NEWLINE]Today, Seongsan Ilchulbong is one of South Korea's most iconic landmarks and a major tourist attraction. It is particularly renowned for its panoramic sunrise views, drawing visitors who hike to the summit before dawn to watch the sun rise over the East Sea. The surrounding area is also rich in biodiversity, with fields of wildflowers and marine ecosystems that support traditional island livelihoods. Accessible and well-preserved, the site is a symbol of Jeju's volcanic origins and natural beauty, blending geological wonder with cultural heritage. As both a scientific site and a cultural treasure, Seongsan Ilchulbong continues to embody the harmony between nature, history, and human life on Jeju Island.</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_A">
+			<Text>Mariana Trench (main)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_B">
+			<Text>Mariana Trench (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_FEATURE_MARIANA_C">
+			<Text>Mariana Trench (side)</Text>
+			<Gender>neuter:no_article</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_FEATURES_MARIANA_TEXT">
+			<Text>The Mariana Trench, located in the western Pacific Ocean east of the Mariana Islands, is the deepest natural trench on Earth, plunging to about 10,984 meters (36,037 feet) at its lowest known point, called the Challenger Deep. Formed by the subduction of the Pacific Plate beneath the smaller Mariana Plate, the trench is a striking example of plate tectonics in action. It was first identified during the Challenger expedition (1872–1876), one of the pioneering scientific voyages to study the world's oceans. In 1960, U.S. Navy Lieutenant Don Walsh and Swiss oceanographer Jacques Piccard made history by descending to the Challenger Deep in the submersible Trieste, marking the first manned exploration of the trench's abyss. Since then, only a handful of people, including filmmaker James Cameron in 2012, have reached its depths, underscoring both the difficulty and significance of such expeditions.[NEWLINE][NEWLINE]Today, the Mariana Trench is a focal point of scientific research and human curiosity. Its extreme environment-characterized by crushing pressures, near-freezing temperatures, and perpetual darkness- hosts unique life forms, including microbes, amphipods, and other organisms adapted to survive under extraordinary conditions. Studies of these ecosystems provide insight into the resilience of life and have implications for biotechnology and the search for extraterrestrial organisms. The trench also plays an important role in understanding Earth's geology and climate regulation, as subduction zones recycle oceanic crust and influence seismic activity. Both a symbol of human exploration and a reminder of how much remains unknown, the Mariana Trench represents the ultimate frontier of Earth's oceans.</Text>
 		</Row>
 	</Language_en_US>
 </GameData>

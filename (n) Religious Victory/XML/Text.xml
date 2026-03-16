@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/19/2014 10:51:44 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_VICTORY_RELIGIOUS">
+			<Text>Religious</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORY_RELIGIOUS_BANG">
+			<Text>Religious Victory!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORYSCREEN_RELIGIOUS">
+			<Text>[ICON_VICTORY_RELIGIOUS] Religious</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VP_RELIGIOUS_VICTORY_DISABLED">
+			<Text>Religious Victory is disabled.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NO_RELIGIONS_FOUNDED">
+			<Text>No Religions Have Been Founded Yet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORY_FLAVOR_RELIGIOUS">
+			<Text>You have united the world through faith.  People from all nations recognize your religion as the one true path.  No other faith or philosophy can claim the allegiance your religion commands, nor other kings wield its power.  All men look to your prophets for guidance, and pray that this unprecedented unity will bring about a lasting peace.  Long will the world remember your miraculous achievement.</Text>
+		</Row>
+
+		
+
+		<Row Tag="TXT_KEY_TOPIC_VICTORY_RELIGIOUS">
+			<Text>[COLOR_GREEN]Religious Victory[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORY_RELIGIOUS_BODY">
+			<Text>To win a Religious Victory you must achieve Ascendance. This is done in three steps.[NEWLINE][ICON_BULLET]Step 1: Make your Religion Dominant. Make sure a supermajority of Cities follow your Owned (Founded or Conquered) Religion. The threshold is reduced from 100% by 3% for every Holy Site you have created, and by 2% for every Era that you have advanced.[NEWLINE][ICON_BULLET]Buy the Sage unit in your Capital. This Civilian unit costs a large amount of Faith and requires an Enhanced Religion.[NEWLINE][ICON_BULLET]On an improvable tile, use the Sage's Ascendance action and protect them until it completes. Takes 25 turns base, reduced by work rate increasing effects.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORY_RELIGIOUS_DESCRIPTION">
+			<Text>{TXT_KEY_TOPIC_VICTORY_RELIGIOUS}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VICTORY_RELIGIOUS_ADV_QUEST">
+			<Text>How can Religion win you the game?</Text>
+		</Row>
+
+		
+		<Row Tag="TXT_KEY_UNIT_SAGE">
+			<Text>Sage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SAGE_HELP">
+			<Text>Game winning unit for the Religious Victory. May only be obtained by purchasing with [ICON_PEACE] Faith in your [ICON_CAPITAL] Capital while your [ICON_RELIGION] Religion is dominant over the world. Your Religion must have been Enhanced.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SAGE_TEXT">
+			<Text>The stoic formulation of ``the sage'' is essentially a perfect moral agent, the ideal human, perfect in action and thought, whom we should all ascribe to as an ideal for ourselves. The sage is a platonic ideal, a person that only exists in the world of forms; a person whose every word, thought and action is in conformity with what a God would do in his place; whose righteousness is such that them acting almost makes the action right in and of itself.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SAGE_STRATEGY">
+			<Text>Once you buy this unit all other players are alerted. Don't expect them to just sit around while you claim victory!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_D_RV">
+			<Text>a Dominant Religion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAGE">
+			<Text>Ascendance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAGE_HELP">
+			<Text>Meditate for (base) 25 turns. Upon completion your insight brings about an era of world peace, heaven on earth, and the end of the game.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_VP_RELIGIOUS_STATUS">
+			<Text>{1_ReligiousIcon} {2_Religion}[NEWLINE]Owner: {5_Player}[NEWLINE]Spread: {3_Spread}%[NEWLINE]They need {4_Denominator}% to be dominant.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VP_RELIGIOUS_STATUS_UNMET">
+			<Text>{1_ReligiousIcon} {2_Religion}[NEWLINE]Owner: Unknown[NEWLINE]Spread: {3_Spread}%[NEWLINE]They need {4_Denominator}% to be dominant.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VP_RELIGIOUS_STATUS_PLAYER">
+			<Text>{1_ReligiousIcon} {2_Religion}[NEWLINE]Owner: {5_Player}[NEWLINE]Spread: {3_Spread}%[NEWLINE]You need {4_Denominator}% to be dominant.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>eData>

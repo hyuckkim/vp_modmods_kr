@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d0fc4301-64ce-4890-bbbb-08afeb3ab31f" version="1">
+  <Properties>
+    <Name>JFD's Cultural Diversity - (2) (Art) Splash Screens</Name>
+    <Teaser>[COLOR_CYAN]Splash Screen[ENDCOLOR] component for Cultural Diversity. Click for details.</Teaser>
+    <Description>Adds distinct era and defeat splash screens for each Culture.</Description>
+    <Authors>JFD</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="0" maxversion="999" title="JFD's Cultural Diversity - (1) (Core) Utilities" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="954D10AD5A568D3B79048EDD120CB151" import="1">Art/Images/Defeat/African/Bantu/DefeatScreen_JFD_BantuEarly.dds</File>
+    <File md5="95D071123CB8A604B1FB6A3EC1FAAF86" import="1">Art/Images/Defeat/African/Bantu/DefeatScreen_JFD_BantuLate.dds</File>
+    <File md5="327CE5A0A7FB82A9A58B1299E0FC5574" import="1">Art/Images/Defeat/African/Bantu/DefeatScreen_JFD_BantuMid.dds</File>
+    <File md5="F23E6B497A1F3C2896A60963C26E045E" import="1">Art/Images/Defeat/African/Central African/DefeatScreen_JFD_CentralAfricanEarly.dds</File>
+    <File md5="00DEE4F1B7061E5B4E5AFD8AEFAE6CDE" import="1">Art/Images/Defeat/African/Central African/DefeatScreen_JFD_CentralAfricanLate.dds</File>
+    <File md5="8BD179FB989323CD7E2A360C76CA69B7" import="1">Art/Images/Defeat/African/Central African/DefeatScreen_JFD_CentralAfricanMid.dds</File>
+    <File md5="F1ADAAFECC0B57AB5E071DDB5EFFA76E" import="1">Art/Images/Defeat/African/East African/DefeatScreen_JFD_EastAfricanEarly.dds</File>
+    <File md5="E6BCD98CEDA3F8F4DE7BC0713BC94843" import="1">Art/Images/Defeat/African/East African/DefeatScreen_JFD_EastAfricanLate.dds</File>
+    <File md5="4AEE4CD5A13C32ACB2FE8859365E1FBE" import="1">Art/Images/Defeat/African/East African/DefeatScreen_JFD_EastAfricanMid.dds</File>
+    <File md5="BD3D3070ADFC98D991167F2B4EC4B28E" import="1">Art/Images/Defeat/African/East African/DefeatScreen_JFD_EastAfricanEthiopianMid.dds</File>
+    <File md5="D3530E492BF3D7985508862ECD72369D" import="1">Art/Images/Defeat/African/West African/DefeatScreen_JFD_WestAfricanEarly.dds</File>
+    <File md5="654E399623ED8F269260BD2EE70BB2CE" import="1">Art/Images/Defeat/African/West African/DefeatScreen_JFD_WestAfricanLate.dds</File>
+    <File md5="8F5281A00387A2C8F2F2DD69BD4C1A7C" import="1">Art/Images/Defeat/African/West African/DefeatScreen_JFD_WestAfricanMid.dds</File>
+    <File md5="AFCF19D8AC3139E4752DB6EB8E6BC594" import="1">Art/Images/Defeat/America/Andean/DefeatScreen_JFD_AndeanEarly.dds</File>
+    <File md5="FF8FA024D5A9084D00155BF33F5311B2" import="1">Art/Images/Defeat/America/Andean/DefeatScreen_JFD_AndeanLate.dds</File>
+    <File md5="6F008BD6316FECFD47324DD1DBF88D91" import="1">Art/Images/Defeat/America/Andean/DefeatScreen_JFD_AndeanMid.dds</File>
+    <File md5="55659F4A08EC9A99ECC632676CD0B0C3" import="1">Art/Images/Defeat/America/Great Plains/DefeatScreen_JFD_GreatPlainsEarly.dds</File>
+    <File md5="708BB68ED8AB40817FBC410596A64606" import="1">Art/Images/Defeat/America/Great Plains/DefeatScreen_JFD_GreatPlainsLate.dds</File>
+    <File md5="06917531330D56A024BB08EEDD97F75E" import="1">Art/Images/Defeat/America/Great Plains/DefeatScreen_JFD_GreatPlainsMid.dds</File>
+    <File md5="D55AD26B75D3744FB3EF6DFFDD29911A" import="1">Art/Images/Defeat/America/Katuje/DefeatScreen_JFD_KatujeEarly.dds</File>
+    <File md5="B32CD723632925773AA98C5375DBCA9E" import="1">Art/Images/Defeat/America/Katuje/DefeatScreen_JFD_KatujeLate.dds</File>
+    <File md5="38C3AB115AEFA39333BA6D11F7EFB0CD" import="1">Art/Images/Defeat/America/Katuje/DefeatScreen_JFD_KatujeMid.dds</File>
+    <File md5="8CA693D43B88FDE91A21C0890B0E5CB1" import="1">Art/Images/Defeat/America/Mesoamerican/DefeatScreen_JFD_MesoamericanEarly.dds</File>
+    <File md5="FB15D6C41298C2E853AA9C3BFC8FC521" import="1">Art/Images/Defeat/America/Mesoamerican/DefeatScreen_JFD_MesoamericanLate.dds</File>
+    <File md5="3E8FF63CADEE49951DED9B41BB1064D9" import="1">Art/Images/Defeat/America/Mesoamerican/DefeatScreen_JFD_MesoamericanMid.dds</File>
+    <File md5="4FE88D484CF7147359C10750C10E7536" import="1">Art/Images/Defeat/America/Pacific/DefeatScreen_JFD_PacificEarly.dds</File>
+    <File md5="849738CF74BBF8016B41ECFAA1321A77" import="1">Art/Images/Defeat/America/Pacific/DefeatScreen_JFD_PacificLate.dds</File>
+    <File md5="0C7DD45D5CB6F434B9CE3E1641005187" import="1">Art/Images/Defeat/America/Pacific/DefeatScreen_JFD_PacificMid.dds</File>
+    <File md5="005E4F87215091C17FE74303E63787A3" import="1">Art/Images/Defeat/America/Polar/DefeatScreen_JFD_PolarEarly.dds</File>
+    <File md5="9792C62E1BA1F73ADFA9DA4AFE3B3156" import="1">Art/Images/Defeat/America/Polar/DefeatScreen_JFD_PolarLate.dds</File>
+    <File md5="9DB902136ECA1E3DD57E28A4E1FB367B" import="1">Art/Images/Defeat/America/Polar/DefeatScreen_JFD_PolarMid.dds</File>
+    <File md5="76DEA3C1FDD511AE630DBFC9C7205B69" import="1">Art/Images/Defeat/America/Woodlands/DefeatScreen_JFD_WoodlandsEarly.dds</File>
+    <File md5="C34DA5FAEBEF3DC7FE03BF209E4D7545" import="1">Art/Images/Defeat/America/Woodlands/DefeatScreen_JFD_WoodlandsLate.dds</File>
+    <File md5="38AB2907A1E66582BD4CF53669AA7EA1" import="1">Art/Images/Defeat/America/Woodlands/DefeatScreen_JFD_WoodlandsMid.dds</File>
+    <File md5="A38155BA3136FEC338FA050EFF447EB6" import="1">Art/Images/Defeat/Asia/Bharata/DefeatScreen_JFD_BharataEarly.dds</File>
+    <File md5="4B7465E918BC992AB76E7697D722B5F8" import="1">Art/Images/Defeat/Asia/Bharata/DefeatScreen_JFD_BharataLate.dds</File>
+    <File md5="421D388751C7FC4714366CE89549FB28" import="1">Art/Images/Defeat/Asia/Bharata/DefeatScreen_JFD_BharataMid.dds</File>
+    <File md5="F3A81E20DDF6A8BE6FE9D51A17FFA8F1" import="1">Art/Images/Defeat/Asia/East Indies/DefeatScreen_JFD_EastIndiesEarly.dds</File>
+    <File md5="7610BAE211EF72C8577FC9E1DA0FB9A7" import="1">Art/Images/Defeat/Asia/East Indies/DefeatScreen_JFD_EastIndiesLate.dds</File>
+    <File md5="E801645F6970A84E67047CA543726875" import="1">Art/Images/Defeat/Asia/East Indies/DefeatScreen_JFD_EastIndiesMid.dds</File>
+    <File md5="00F761321E6D32565580B7557D97D60F" import="1">Art/Images/Defeat/Asia/Far Eastern/DefeatScreen_JFD_FarEasternEarly.dds</File>
+    <File md5="D3DB3ABBC264847B2A8AF7DE24B4FFE4" import="1">Art/Images/Defeat/Asia/Far Eastern/DefeatScreen_JFD_FarEasternLate.dds</File>
+    <File md5="B881E1B9225BEA094885F3C7884A3668" import="1">Art/Images/Defeat/Asia/Far Eastern/DefeatScreen_JFD_FarEasternJapaneseLate.dds</File>
+    <File md5="8FBE0CA9FD2BA692CDFB817C3F9097C8" import="1">Art/Images/Defeat/Asia/Far Eastern/DefeatScreen_JFD_FarEasternMid.dds</File>
+    <File md5="E0B294BD16C9015B81ACCB5B3BFA2C37" import="1">Art/Images/Defeat/Asia/Himalayan/DefeatScreen_JFD_HimalayanEarly.dds</File>
+    <File md5="27AA044F4CD6B718AFEB5BB101A51C72" import="1">Art/Images/Defeat/Asia/Himalayan/DefeatScreen_JFD_HimalayanLate.dds</File>
+    <File md5="E2A903E088D8749159EF5790F25188D9" import="1">Art/Images/Defeat/Asia/Himalayan/DefeatScreen_JFD_HimalayanMid.dds</File>
+    <File md5="6E9A3573926D4D256C34F0D8163D9B8B" import="0">Art/Images/Defeat/Asia/Indochina/DefeatScreen_JFD_IndochinaEarly.dds</File>
+    <File md5="7E0F49D75D10B541450133B92CA40C55" import="0">Art/Images/Defeat/Asia/Indochina/DefeatScreen_JFD_IndochinaLate.dds</File>
+    <File md5="33B2C797BDE43ADF7D287CF24031EB7E" import="0">Art/Images/Defeat/Asia/Indochina/DefeatScreen_JFD_IndochinaMid.dds</File>
+    <File md5="F43E641484533150058A9A6755B71A47" import="1">Art/Images/Defeat/Asia/Steppe/DefeatScreen_JFD_SteppeEarly.dds</File>
+    <File md5="887DFFFDBB3B43707D2F713C84A26727" import="1">Art/Images/Defeat/Asia/Steppe/DefeatScreen_JFD_SteppeLate.dds</File>
+    <File md5="A1BD1D126839694EED2D0ABAA0B3D002" import="1">Art/Images/Defeat/Asia/Steppe/DefeatScreen_JFD_SteppeTurkicLate.dds</File>
+    <File md5="8C37881F2E5A1790CF0BFE5215B2EF9F" import="1">Art/Images/Defeat/Asia/Steppe/DefeatScreen_JFD_SteppeMid.dds</File>
+    <File md5="5C0F935B4B4548986B03A54061F2C1AD" import="1">Art/Images/Defeat/Europe/Central/DefeatScreen_JFD_CentralEarly.dds</File>
+    <File md5="D4F94E1A9DC82041788181F43D2DAF7A" import="1">Art/Images/Defeat/Europe/Central/DefeatScreen_JFD_CentralLate.dds</File>
+    <File md5="C6B9405AA342C65733C98BF0C61012F8" import="1">Art/Images/Defeat/Europe/Central/DefeatScreen_JFD_CentralMid.dds</File>
+    <File md5="249F6013A2C27E1792A08DB8DE253EFF" import="1">Art/Images/Defeat/Europe/Classical/DefeatScreen_JFD_ClassicalEarly.dds</File>
+    <File md5="6115360E4F6806B0594E81AC3BF36286" import="1">Art/Images/Defeat/Europe/Classical/DefeatScreen_JFD_ClassicalRomanEarly.dds</File>
+    <File md5="787C25CA6AB31D26BFC56CDAF957CBCB" import="1">Art/Images/Defeat/Europe/Classical/DefeatScreen_JFD_ClassicalLate.dds</File>
+    <File md5="7927EE543F0D913EE31A2CD581719127" import="1">Art/Images/Defeat/Europe/Classical/DefeatScreen_JFD_ClassicalMid.dds</File>
+    <File md5="55EF7D7E75A417A2E7DDD4EF0A5794AC" import="1">Art/Images/Defeat/Europe/Colonial/DefeatScreen_JFD_ColonialEarly.dds</File>
+    <File md5="CC2D70AB1808472D5A0B392170983BA7" import="1">Art/Images/Defeat/Europe/Colonial/DefeatScreen_JFD_ColonialLate.dds</File>
+    <File md5="F6AE4BC5C083CA3E05856A27D453E079" import="1">Art/Images/Defeat/Europe/Colonial/DefeatScreen_JFD_ColonialAmericanLate.dds</File>
+    <File md5="A6C30E591238742845615390414E6589" import="1">Art/Images/Defeat/Europe/Colonial/DefeatScreen_JFD_ColonialLatinLate.dds</File>
+    <File md5="458A27BF219854569928341512610EDA" import="1">Art/Images/Defeat/Europe/Colonial/DefeatScreen_JFD_ColonialMid.dds</File>
+    <File md5="485C8E2161F417213A4BB8C7A21B2169" import="1">Art/Images/Defeat/Europe/Eastern/DefeatScreen_JFD_EasternByzantineMid.dds</File>
+    <File md5="2DD896DE967819F63A475B8090CC059D" import="1">Art/Images/Defeat/Europe/Eastern/DefeatScreen_JFD_EasternEarly.dds</File>
+    <File md5="D35BC908D8AB7012A7D146A5C6695E35" import="1">Art/Images/Defeat/Europe/Eastern/DefeatScreen_JFD_EasternLate.dds</File>
+    <File md5="81D698CD3EC5251A4406D89BA235B06B" import="1">Art/Images/Defeat/Europe/Eastern/DefeatScreen_JFD_EasternMid.dds</File>
+    <File md5="CB9B2F2FF0A84DD5C91EADADE236C2D7" import="1">Art/Images/Defeat/Europe/Northern/DefeatScreen_JFD_NorthernEarly.dds</File>
+    <File md5="477775FE88674CC09BD420FDB00A4663" import="1">Art/Images/Defeat/Europe/Northern/DefeatScreen_JFD_NorthernLate.dds</File>
+    <File md5="33C7CA0BC1243570DA62EB47E6FC2BF6" import="1">Art/Images/Defeat/Europe/Northern/DefeatScreen_JFD_NorthernMid.dds</File>
+    <File md5="6711D260F6E2D9EAE6D3061E74A2D301" import="1">Art/Images/Defeat/Europe/Northern/DefeatScreen_JFD_NorthernCelticMid.dds</File>
+    <File md5="ECE5B3D636CD45A5C47FE77D76FF9B12" import="1">Art/Images/Defeat/Europe/Southern/DefeatScreen_JFD_SouthernEarly.dds</File>
+    <File md5="62F3C2FC6C906F53AD1D4078D237A7A5" import="1">Art/Images/Defeat/Europe/Southern/DefeatScreen_JFD_SouthernLate.dds</File>
+    <File md5="69844ACFA84BB75E36B92BFBC0A23CF3" import="1">Art/Images/Defeat/Europe/Southern/DefeatScreen_JFD_SouthernPapalMid.dds</File>
+    <File md5="F45F492AFC803162B3DEBA3C96D9C9F2" import="1">Art/Images/Defeat/Europe/Southern/DefeatScreen_JFD_SouthernMid.dds</File>
+    <File md5="3F552A6E44ED191006AE163F9868CAE7" import="1">Art/Images/Defeat/Europe/Totalitarian/DefeatScreen_JFD_TotalitarianEarly.dds</File>
+    <File md5="8D7CEBBBCCF46815560734EF59D28335" import="1">Art/Images/Defeat/Europe/Totalitarian/DefeatScreen_JFD_TotalitarianLate.dds</File>
+    <File md5="BE6B3005CD48B17DC9DF8D23CBAB4C0E" import="1">Art/Images/Defeat/Europe/Totalitarian/DefeatScreen_JFD_TotalitarianMid.dds</File>
+    <File md5="350CB169876211C335AFD0EE0F17BCA2" import="1">Art/Images/Defeat/Europe/Western/DefeatScreen_JFD_WesternEarly.dds</File>
+    <File md5="67093FF27E7DE9E56788F577BD9310F1" import="1">Art/Images/Defeat/Europe/Western/DefeatScreen_JFD_WesternLate.dds</File>
+    <File md5="B380A3B0B9C308E7D485A2F8AC51D3B0" import="1">Art/Images/Defeat/Europe/Western/DefeatScreen_JFD_WesternBritishLate.dds</File>
+    <File md5="0B2EAA624097926288F528FCB93E4F9C" import="1">Art/Images/Defeat/Europe/Western/DefeatScreen_JFD_WesternMid.dds</File>
+    <File md5="B09E97185856FE2A23E689A4DD504AE0" import="1">Art/Images/Defeat/Middle-Eastern/Levantine/DefeatScreen_JFD_LevantineEarly.dds</File>
+    <File md5="8E666C81345D159FB1684DA99ED4656D" import="1">Art/Images/Defeat/Middle-Eastern/Levantine/DefeatScreen_JFD_LevantineLate.dds</File>
+    <File md5="967E83DB2BF175BE3C5D8E789C848B05" import="1">Art/Images/Defeat/Middle-Eastern/Levantine/DefeatScreen_JFD_LevantineMid.dds</File>
+    <File md5="E72BB2A1D1C12A33E78F3B06B264D829" import="1">Art/Images/Defeat/Middle-Eastern/Mesopotamic/DefeatScreen_JFD_MesopotamicPersianEarly.dds</File>
+    <File md5="4CD772991075BE4BE7013DB0B945CEEF" import="1">Art/Images/Defeat/Middle-Eastern/Mesopotamic/DefeatScreen_JFD_MesopotamicEarly.dds</File>
+    <File md5="B227C0A4B51296AE4A4B91E126AC1088" import="1">Art/Images/Defeat/Middle-Eastern/Mesopotamic/DefeatScreen_JFD_MesopotamicEgyptianEarly.dds</File>
+    <File md5="B6145CEBB61E94A14AA9D692AB0EBB1A" import="1">Art/Images/Defeat/Middle-Eastern/Mesopotamic/DefeatScreen_JFD_MesopotamicLate.dds</File>
+    <File md5="A2879E710AFCFF0DC2E8D34F8AF40513" import="1">Art/Images/Defeat/Middle-Eastern/Mesopotamic/DefeatScreen_JFD_MesopotamicMid.dds</File>
+    <File md5="2352F9708C017BC71AB63971AEE9B286" import="1">Art/Images/Defeat/Middle-Eastern/Mid Eastern/DefeatScreen_JFD_MidEasternEarly.dds</File>
+    <File md5="14183117AC59D69888362244BEDC6D80" import="1">Art/Images/Defeat/Middle-Eastern/Mid Eastern/DefeatScreen_JFD_MidEasternLate.dds</File>
+    <File md5="72ABDDDC0456B4072DB0055A81818482" import="1">Art/Images/Defeat/Middle-Eastern/Mid Eastern/DefeatScreen_JFD_MidEasternMid.dds</File>
+    <File md5="983DF4BF5F6FF8945457415715989238" import="1">Art/Images/Defeat/Middle-Eastern/Mid Eastern/DefeatScreen_JFD_MidEasternOttomanMid.dds</File>
+    <File md5="F87538F14F6269338AD429DF94052B21" import="1">Art/Images/Defeat/Oceania/Aboriginal/DefeatScreen_JFD_AboriginalEarly.dds</File>
+    <File md5="21162C227130184347ED6A53C7EECD67" import="1">Art/Images/Defeat/Oceania/Aboriginal/DefeatScreen_JFD_AboriginalLate.dds</File>
+    <File md5="6A4BA90A828E891CD276A7AE1873CC7C" import="1">Art/Images/Defeat/Oceania/Aboriginal/DefeatScreen_JFD_AboriginalMid.dds</File>
+    <File md5="F2ABB89C24BFDF83DFD9B61DB182F876" import="1">Art/Images/Defeat/Oceania/Oceanic/DefeatScreen_JFD_OceanicEarly.dds</File>
+    <File md5="178D30C7F3F091A31C5AA4E679BDE027" import="1">Art/Images/Defeat/Oceania/Oceanic/DefeatScreen_JFD_OceanicLate.dds</File>
+    <File md5="41CCFDC45623200CB44867ECE0E5F798" import="1">Art/Images/Defeat/Oceania/Oceanic/DefeatScreen_JFD_OceanicMid.dds</File>
+    <File md5="2A2793A78500A91D806D9DB7D1E8EB45" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Atomic.dds</File>
+    <File md5="7B0D0A7EB3278C40AA3E3B75F12840BD" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Classical.dds</File>
+    <File md5="84EE4AF43BDCD1B111A855FADB50DC31" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Enlightenment.dds</File>
+    <File md5="184700E7549C54111D6683447831CB81" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Future.dds</File>
+    <File md5="FAB0CD8637F7195D499545BB262469E1" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Industrial.dds</File>
+    <File md5="1E0F9E1FC23053A03D770E3E0BDD4167" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Medievel.dds</File>
+    <File md5="1F7B6A76A07F819522CAA69438AE62E7" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Modern.dds</File>
+    <File md5="319CD06E12F832A5880B130D9947F22D" import="1">Art/Images/Era/African/Bantu/Era_JFD_Bantu_Renissance.dds</File>
+    <File md5="D30FC5F582AF168F2E633955DB50A69F" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Industrial.dds</File>
+    <File md5="44237F45564935004A9065E7EA7E387F" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Atomic.dds</File>
+    <File md5="B53CF482909BEE323563D630E83294AD" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Classical.dds</File>
+    <File md5="A21F7B6F33A07DBF615343C4923FEF6A" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Enlightenment.dds</File>
+    <File md5="4ABEC4ED07B4E11FD21B0D593C431621" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Future.dds</File>
+    <File md5="293FAF831CCE9A86726D1BB323EFD0B6" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Medievel.dds</File>
+    <File md5="AC1EBAFCF0190DB160756D4F8138D85F" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Modern.dds</File>
+    <File md5="77631A2673FB905F00ED6967427F3110" import="1">Art/Images/Era/African/Central African/Era_JFD_CentralAfrican_Renissance.dds</File>
+    <File md5="73712F9639AA4494432564AF01882D30" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Atomic.dds</File>
+    <File md5="63D682F83903A8316789377F52A6FCA6" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Classical.dds</File>
+    <File md5="0F9B2AD9D5966CFB3531BDE2C4DE7B92" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Enlightenment.dds</File>
+    <File md5="4B2E1DC59F2A99E0473BEF7CEB032D3D" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Future.dds</File>
+    <File md5="0D021C9F8FC21DF7940F040EF974DB5F" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Industrial.dds</File>
+    <File md5="4794682948601C03C420263AE3B25CAE" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Medievel.dds</File>
+    <File md5="EDD84A25039E7CFC0B444AA2246B24D9" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Atomic.dds</File>
+    <File md5="762B6CE2E8E84C179E1F07F54A08F44D" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Industrial.dds</File>
+    <File md5="266B594B009DBFCC5B7A6F0EDC1D27C2" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Medievel.dds</File>
+    <File md5="E2556D247A45E62F23B9D0A8F9DB9595" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Modern.dds</File>
+    <File md5="35E117A440BD9510DF941E43C1D4FB4B" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Classical.dds</File>
+    <File md5="757C6924ED1E59F411294D0B78FCCDB0" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Enlightenment.dds</File>
+    <File md5="CB8BB00DFF2E1278716FC868256CF360" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Future.dds</File>
+    <File md5="60D775FCF174E4239B92DD7408194737" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Modern.dds</File>
+    <File md5="9568A406A5B31242102B87E72716B00B" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfricanEthiopian_Renissance.dds</File>
+    <File md5="8EE8D1ED8FCC4DD85B3F13A7F97F5F03" import="1">Art/Images/Era/African/East African/Era_JFD_EastAfrican_Renissance.dds</File>
+    <File md5="20805183B0D24845339933A4DFC37FBA" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Atomic.dds</File>
+    <File md5="8C66EE81CAF8B34CF58AABC3EF5AB5B7" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Classical.dds</File>
+    <File md5="F92A85415CE3D0B2B25D2BF290563EEF" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Enlightenment.dds</File>
+    <File md5="8426E0F8D52CEB901F0F57F4E55AD869" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Future.dds</File>
+    <File md5="E0990DD9BE4F7357A44EC31E887E3E09" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Industrial.dds</File>
+    <File md5="3171B5A0744F1DC3F669EBCCD47E2737" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Medievel.dds</File>
+    <File md5="BCDD30AD7BB0D6EC702898AED93CC01B" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Modern.dds</File>
+    <File md5="7909C43B0F09231DEF1AF6136AB5B45D" import="1">Art/Images/Era/African/West African/Era_JFD_WestAfrican_Renissance.dds</File>
+    <File md5="F6263FCC7D39687486796E0CF363D190" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Atomic.dds</File>
+    <File md5="CB72E09FE8F56B4EEE816F33290D40F2" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Classical.dds</File>
+    <File md5="07C77F439589746017CBC00D1966D9D0" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Enlightenment.dds</File>
+    <File md5="36A8571C7174BB3681B538C9AAAFD853" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Future.dds</File>
+    <File md5="4FA7D3B6D5F18C428E29E2F1AF926436" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Industrial.dds</File>
+    <File md5="45126362F9857AEDB80AF21693040DE9" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Medievel.dds</File>
+    <File md5="1C16CD7D3D415A7BA37A8EC0BB12CA99" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Modern.dds</File>
+    <File md5="681012B104427C3F47F7005776835CD8" import="1">Art/Images/Era/American/Andean/Era_JFD_Andean_Renissance.dds</File>
+    <File md5="9C8086C8AFEB4A36DE31D6AEAD263F02" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Atomic.dds</File>
+    <File md5="F8C968C2BF80A3C9D35C3182124C43F0" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Classical.dds</File>
+    <File md5="042EF4B4FE2C4B5B29D9927DD29C8D9A" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Enlightenment.dds</File>
+    <File md5="E95E6440B25D75CE6C4957745F2D1B94" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Future.dds</File>
+    <File md5="D900DC7F131C0466B01DEBC663DDB84B" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Industrial.dds</File>
+    <File md5="56151720B316993751A93A0E6D636EED" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Medievel.dds</File>
+    <File md5="5FB25CD76694BFAF5BD27F899C34D18E" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Modern.dds</File>
+    <File md5="EB4D27E799EBFF93F1619E072A06A410" import="1">Art/Images/Era/American/Great Plains/Era_JFD_GreatPlains_Renissance.dds</File>
+    <File md5="425940AB226BFB9F336ED31797FEDDDC" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Atomic.dds</File>
+    <File md5="5B9CE8819B903B016AE49E03E20D1656" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Classical.dds</File>
+    <File md5="5E2D6692E02A825D16650B680267B7D7" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Enlightenment.dds</File>
+    <File md5="6374D591B6D92EC7AA1A9DF0CC24721D" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Future.dds</File>
+    <File md5="C8BE9CED8D815DAB421E5A9B6B46A6F7" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Industrial.dds</File>
+    <File md5="FE518E70900AF465F825BAF73A0F98C3" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Medievel.dds</File>
+    <File md5="3737C05AADBB4C99F6D5D6202A8D1EC9" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Modern.dds</File>
+    <File md5="4078B6A17B5F30BE7051436479BE6510" import="1">Art/Images/Era/American/Katuje/Era_JFD_Katuje_Renissance.dds</File>
+    <File md5="64D49564F5D16381C75C9F0A86B26C6D" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Atomic.dds</File>
+    <File md5="E20D9F7320B128FF93CBC8A8432C4293" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Classical.dds</File>
+    <File md5="D76D925E66470D0246592834CE233B3E" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Enlightenment.dds</File>
+    <File md5="CC71EB2FC03F2FDB991BEC0B0E061F20" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Future.dds</File>
+    <File md5="9B70E04D1CAE75F9E1EC3F9B5C83E032" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Industrial.dds</File>
+    <File md5="5D4D9E14323BB9A88EDA39B1BDAAF4DC" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Medievel.dds</File>
+    <File md5="D4F721F93F176A1CC6DD1ECF2C2B1B0E" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Modern.dds</File>
+    <File md5="92ECAC4B981AF8193BD875E9D5B4E5ED" import="1">Art/Images/Era/American/Meso/Era_JFD_Mesoamerican_Renissance.dds</File>
+    <File md5="3E2EFF2BE3EE0F4A9F8BBDFF1CB65F8A" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Atomic.dds</File>
+    <File md5="90266E02BDB572B1FBCD20FC5416DE02" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Classical.dds</File>
+    <File md5="6A79B19C42FBDC0321E6021AF22B6C7B" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Enlightenment.dds</File>
+    <File md5="CB7E0456383E0BCAEF6288F993CD2F3B" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Future.dds</File>
+    <File md5="172720F58450A8F8E986D0050294CE72" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Industrial.dds</File>
+    <File md5="31107A9298451B034DB10A2397E25E81" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Medievel.dds</File>
+    <File md5="BF30A5C6CAC149CF890F4D922A8EAED2" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Modern.dds</File>
+    <File md5="82B7E73752AE5CE9DDC09F1EC799DFAC" import="1">Art/Images/Era/American/Pacific/Era_JFD_Pacific_Renissance.dds</File>
+    <File md5="D4AE40955E6A5A8970B992F611A1E709" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Atomic.dds</File>
+    <File md5="22856EBFC4F2F299CB3DE5BB970B9165" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Classical.dds</File>
+    <File md5="FAF2F0D2F0A51D6467BC7DBD9551E6EE" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Enlightenment.dds</File>
+    <File md5="A365F9CB6C258E5A9679071197E63F95" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Future.dds</File>
+    <File md5="7E21B4D953F10C708B1F82E6B2157DAA" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Industrial.dds</File>
+    <File md5="96B63CC651C45AC63702DE8BE44A41C6" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Medievel.dds</File>
+    <File md5="AF885FE7E67C20B23F0D707A1C66225E" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Modern.dds</File>
+    <File md5="09967600877B2A604F255841D2C04B93" import="1">Art/Images/Era/American/Polar/Era_JFD_Polar_Renissance.dds</File>
+    <File md5="EB0F8014A6893586202A6B7C9B03D129" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Atomic.dds</File>
+    <File md5="F8426F6320A2735448B70C098538926B" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Classical.dds</File>
+    <File md5="2AE6B1224F8BAE8364A6D564F779751A" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Enlightenment.dds</File>
+    <File md5="45665D3FD37EE409BC74BAB6404817F5" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Future.dds</File>
+    <File md5="F909549A164EB2A846FC2691E9B3AA0D" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Industrial.dds</File>
+    <File md5="79EDBEDABCD64035E6CC5B002091BC0F" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Medievel.dds</File>
+    <File md5="3624B6928416ACE86C4FA5DC1FF9C3C5" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Modern.dds</File>
+    <File md5="69F0B1A2C28D5CD207DC984DA28998D3" import="1">Art/Images/Era/American/Woodlands/Era_JFD_Woodlands_Renissance.dds</File>
+    <File md5="DF5FE7659D79D629978539832945A262" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Atomic.dds</File>
+    <File md5="6919797FD19C71D3C90E2FB537E5B311" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Classical.dds</File>
+    <File md5="788A910797385453E9D12239F3C3F7E6" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Enlightenment.dds</File>
+    <File md5="2A80CDEF46089D55B3255FDEDAA32F12" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Future.dds</File>
+    <File md5="609AC8466E048CADF4D8123129ECE82E" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Industrial.dds</File>
+    <File md5="6BF223A9882871D7E5ADDD8BA6CC18FC" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Medievel.dds</File>
+    <File md5="ACC62F719DED06CE452D82C0BC5B62A9" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Modern.dds</File>
+    <File md5="ADB052599042D6E5010A3BC7191ED9F3" import="1">Art/Images/Era/Asian/Bharata/Era_JFD_Bharata_Renissance.dds</File>
+    <File md5="D14B3777032BB40D2A792BA27C87A3C3" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Atomic.dds</File>
+    <File md5="D7269FFFD70F2733BC37D7C9453C64E6" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Classical.dds</File>
+    <File md5="873C8EF785B55DBD2EB2EF8A506A1FC5" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Enlightenment.dds</File>
+    <File md5="9D269E123768900C23A8B44457BC874D" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Future.dds</File>
+    <File md5="045AC1DAF173E8FBE5148E354C4CDA7A" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Industrial.dds</File>
+    <File md5="643FD870736EB95D096C09E2781D2D43" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Medievel.dds</File>
+    <File md5="3BB456BF9690221A3208F67939CAA1C1" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Modern.dds</File>
+    <File md5="4CAED94C3E7E8E94830B7D79371DD4CB" import="1">Art/Images/Era/Asian/East Indies/Era_JFD_EastIndies_Renissance.dds</File>
+    <File md5="525FEB6BC8A5B521977C70FBB86D8421" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Atomic.dds</File>
+    <File md5="0B151F0BCA44451F8B3CFBD430B1BC6F" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Classical.dds</File>
+    <File md5="EB27B4E1EAE35B20301721F72B4761DE" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Enlightenment.dds</File>
+    <File md5="EA5A2030472F0B63E5CC05B7995F95B4" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Future.dds</File>
+    <File md5="6D2E20A3BA5DED3E94510D994CA5C244" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Industrial.dds</File>
+    <File md5="DFFBC99515967BAEB7AC7395992737B3" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Medievel.dds</File>
+    <File md5="EF94C5FDBF21AFFD980444AD72A0FED6" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Modern.dds</File>
+    <File md5="C13FCD6F0A0988244D4F7AD2BBF62D51" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEasternJapanese_Renissance.dds</File>
+    <File md5="6DE27EF83C1BF99526E56477C3220EE9" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Atomic.dds</File>
+    <File md5="8D879665F06197829237ECEE6B2439CD" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Classical.dds</File>
+    <File md5="AE85888F3DB9D6EB0866FB60F7F161D8" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Enlightenment.dds</File>
+    <File md5="8F00C433FF1D766CA0D9D61417FBF715" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Future.dds</File>
+    <File md5="008A4D10BBFF273621F4EC0A0772B272" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Industrial.dds</File>
+    <File md5="56F3A889FADD3709F9CB8EB213A5A81C" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Medievel.dds</File>
+    <File md5="E483CEA1BB28F4FB1D2873E0CC374D50" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Modern.dds</File>
+    <File md5="9F7C5841EB20D4D31D05132C373290ED" import="1">Art/Images/Era/Asian/Far Eastern/Era_JFD_FarEastern_Renissance.dds</File>
+    <File md5="A51791F39BA9E6B6E48D7129D7699C02" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Atomic.dds</File>
+    <File md5="99EC702CF62BC69AA28FA33A6593FA26" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Classical.dds</File>
+    <File md5="39724298356230F91F03BA763FC9A2CA" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Enlightenment.dds</File>
+    <File md5="45CB3BB192266507336E6F600F14329B" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Future.dds</File>
+    <File md5="9DFE782CDB77FFD0AD4F40A6E8DA3E83" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Industrial.dds</File>
+    <File md5="2E6CD8DCBB6EA7B606A6EB41677B3A87" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Medievel.dds</File>
+    <File md5="61D1A67E2A8F175282D35A70D74D1BEA" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Modern.dds</File>
+    <File md5="AFEB49D6210FED009C8BBA93BFB9CA51" import="1">Art/Images/Era/Asian/Himalayan/Era_JFD_Himalayan_Renissance.dds</File>
+    <File md5="FFAFD3F046D60ABDC75D7FC86F5734AF" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Atomic.dds</File>
+    <File md5="5B74D9B55F5B0371E68B2BB9CF6D0D56" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Classical.dds</File>
+    <File md5="DFFE2D1560642A0312772346D5E0E463" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Enlightenment.dds</File>
+    <File md5="C81039610202D43CF07648C43D70BF1A" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Future.dds</File>
+    <File md5="3F25DA5F85D4248C6212EEA5A61621F9" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Industrial.dds</File>
+    <File md5="8538005A340761CF2BC3523B2A575C44" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Medievel.dds</File>
+    <File md5="D84D84816230D5898A17AAAC1DB51D9E" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Modern.dds</File>
+    <File md5="3AFA59698C15C7591BBF9EB5901AA6CF" import="1">Art/Images/Era/Asian/Indochina/Era_JFD_Indochina_Renissance.dds</File>
+    <File md5="390DF5B77F1835BBC966657C3ED6061E" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Atomic.dds</File>
+    <File md5="CA78FDB35C6845903810457D8AA2373C" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Classical.dds</File>
+    <File md5="46D96489989FF443125DD8018E7394A0" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Enlightenment.dds</File>
+    <File md5="3A582A48A5E3CEA9ADFCB4E991F69AFE" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Future.dds</File>
+    <File md5="21AAA8164020EBE9A369F81604F316BB" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Industrial.dds</File>
+    <File md5="095653B5EDB8CE463E3BAC80EF464C33" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Medievel.dds</File>
+    <File md5="05A36E2FA0993422D5C6FD11CD33C8E2" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Modern.dds</File>
+    <File md5="FC1ADBBAB672673B11C4269BDF07F4F1" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_SteppeTurkic_Renissance.dds</File>
+    <File md5="E413B88D7C5F4927600597055298C82D" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Atomic.dds</File>
+    <File md5="40DB6913A5D447BA9D3E09CEAB6BF4D1" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Classical.dds</File>
+    <File md5="62138A83269095522ACE3D580D3E0359" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Enlightenment.dds</File>
+    <File md5="289B5D6515576D1652B882E962CAD210" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Future.dds</File>
+    <File md5="C73D0F6DCED21312270A1A52495328A2" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Industrial.dds</File>
+    <File md5="610A4E058DCA646CFC7070E3BC16EF62" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Medievel.dds</File>
+    <File md5="52C0CBBF80FC2497C2E901E88945ED38" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Modern.dds</File>
+    <File md5="6657AE8274B2510B850BF41300CADA54" import="1">Art/Images/Era/Asian/Steppe/Era_JFD_Steppe_Renissance.dds</File>
+    <File md5="E1C4B402D8EBB92DF478C1D725BD53CE" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Atomic.dds</File>
+    <File md5="2614A8AF488F0EE76E49BBD09966F5A1" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Classical.dds</File>
+    <File md5="EAC2104F1328639C2719630AFEB49305" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Enlightenment.dds</File>
+    <File md5="463ABBD15A4EEB0276755D724976C959" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Future.dds</File>
+    <File md5="CC4D035EE3876400949944473FA2B2EA" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Industrial.dds</File>
+    <File md5="88066A8C8366136B4A003B576421C2D5" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Medievel.dds</File>
+    <File md5="AE9133932B587C4B8B6418B6CAF5337F" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Modern.dds</File>
+    <File md5="45DE435E7A597F07DC930B69256471F8" import="1">Art/Images/Era/European/Central/Era_JFD_Central_Renissance.dds</File>
+    <File md5="3959028423A50A22F7AE097E56166592" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Atomic.dds</File>
+    <File md5="4B9D5604468A754B1F265B0DD33830C4" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Classical.dds</File>
+    <File md5="1B85AD3824D5C5547C29AC13CC5F8A59" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Enlightenment.dds</File>
+    <File md5="C7F1CF0C37EE14FBA03F7C475C72B1D4" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Future.dds</File>
+    <File md5="B41D047D61C102889A983BF8556A0E27" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Industrial.dds</File>
+    <File md5="73A77647CE7D1ADD3C17CB56929992C2" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Medievel.dds</File>
+    <File md5="4B2F3DB6CD0459A9B0CC345A5958BA34" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Modern.dds</File>
+    <File md5="C004DBB65C94239ECE93B1BFE3B38AAF" import="1">Art/Images/Era/European/Classical/Era_JFD_ClassicalRoman_Renissance.dds</File>
+    <File md5="EC6F21FBAEAEC85718BD1C7BB80B725F" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Atomic.dds</File>
+    <File md5="62FFE3D04BC86DC3AE7847E579BD45BF" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Classical.dds</File>
+    <File md5="DB239A103554118197A37C7F22D66ACB" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Enlightenment.dds</File>
+    <File md5="B96FD3BA7A84333663B1652DE2F1E334" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Future.dds</File>
+    <File md5="3759C2CB0C67E3A21C755746A9ACEC0F" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Industrial.dds</File>
+    <File md5="19C887460F61EC7148C64AC4909F08C8" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Medievel.dds</File>
+    <File md5="B899E199320EA93E7BD43B6CA917BBA6" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Modern.dds</File>
+    <File md5="3DF9A0D336A89939C14F17D40337DA14" import="1">Art/Images/Era/European/Classical/Era_JFD_Classical_Renissance.dds</File>
+    <File md5="11ED2FBA8B918C5B078682FB4D2DDDEC" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Classical.dds</File>
+    <File md5="A6E1367139B17C41D32B7C62F42AAB60" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Medievel.dds</File>
+    <File md5="B18739972475A1491D7895A7E495233A" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Modern.dds</File>
+    <File md5="E00FE6C1C1E150C8039842982A131582" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Renissance.dds</File>
+    <File md5="537F904C6EDA861E9EB895B4945ABF53" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Enlightenment.dds</File>
+    <File md5="07D5A19653B767574DA1DA96DCDA4D13" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Future.dds</File>
+    <File md5="DA9469557399259A6AFC2A5A7BDBE119" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Atomic.dds</File>
+    <File md5="9E390BA1E4C4EB336C6EAC007F4B3303" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Classical.dds</File>
+    <File md5="6E8F8B10126BC4CBCBB995561810B4D1" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Enlightenment.dds</File>
+    <File md5="86298B75FAD3C53647723B311494EA1E" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Future.dds</File>
+    <File md5="584E16CF71145423E7FAC01F1A8E7604" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Industrial.dds</File>
+    <File md5="2FDBDF549E46EA0F9C58301373C94A90" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Medievel.dds</File>
+    <File md5="E6F3F943F15C0874B5E36242997E912F" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Modern.dds</File>
+    <File md5="4CC77FA502538A6332A99AC453829E39" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Atomic.dds</File>
+    <File md5="57A58858A70C16C269ED8AC020CBC469" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialLatin_Renissance.dds</File>
+    <File md5="9DEEA884A1DAC77AB44A21ABD3DA514C" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Atomic.dds</File>
+    <File md5="26FBEA3CEC3B3C04B42A027A47C4B835" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Classical.dds</File>
+    <File md5="72C4E7237978CF615B6B25285974BCBA" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Enlightenment.dds</File>
+    <File md5="88AD32B4A6B27CD955717DAEC9A12C87" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Future.dds</File>
+    <File md5="46AE35FC7FCF697A99EF5B8B15DC5A24" import="1">Art/Images/Era/European/Colonial/Era_JFD_ColonialAmerican_Industrial.dds</File>
+    <File md5="491CA8B9EED447EDCBF3CD16BE58F73B" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Industrial.dds</File>
+    <File md5="86BFE1DD54A70FC0FDE44074442EE0B0" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Medievel.dds</File>
+    <File md5="32F5E8601D609AEBE6C4FAEE491CBDBC" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Modern.dds</File>
+    <File md5="1F00E400CB8F819E7BC9BD1F403D4420" import="1">Art/Images/Era/European/Colonial/Era_JFD_Colonial_Renissance.dds</File>
+    <File md5="04F051304E28704C5107411B4645D977" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Atomic.dds</File>
+    <File md5="D81883B233C9F2966802070227D89629" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Classical.dds</File>
+    <File md5="653854B90088292250D904BFF1F6932D" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Enlightenment.dds</File>
+    <File md5="C1FEA47D17D2E4B806D7E23297AF4D1D" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Future.dds</File>
+    <File md5="7A359BF17B74F978F1D8280017C900F4" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Industrial.dds</File>
+    <File md5="D3C4595651120CBD2654BC0FF177978B" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Medievel.dds</File>
+    <File md5="082915EE1F71F0E2750991CACC9A2F8E" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Modern.dds</File>
+    <File md5="D6987E8FEC59CAFC33D18388C2C44F7F" import="1">Art/Images/Era/European/Eastern/Era_JFD_EasternByzantine_Renissance.dds</File>
+    <File md5="044D281080C290614190475570646734" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Atomic.dds</File>
+    <File md5="38D118289FA83AC0B411BBE56617A1B2" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Classical.dds</File>
+    <File md5="FCEDA60DAF83A2C937947DBEBC4D552B" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Enlightenment.dds</File>
+    <File md5="D4C344B3D15191BC6FF8D41DA8ED3161" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Future.dds</File>
+    <File md5="1813DDF8E455E986E613C6ED77F540EE" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Industrial.dds</File>
+    <File md5="EBDE11620DFA4E0A76EE98661361A9EE" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Medievel.dds</File>
+    <File md5="BC5D02E93FB8C75926DEE9D4776EA43C" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Modern.dds</File>
+    <File md5="05D0CF66CB1A6F4E0801BE85897298CB" import="1">Art/Images/Era/European/Eastern/Era_JFD_Eastern_Renissance.dds</File>
+    <File md5="984F5F0D1731BA325FF58531D2E40345" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Atomic.dds</File>
+    <File md5="DCAA2485AFA68CE685FD160EA07B3099" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Classical.dds</File>
+    <File md5="EB7031AB8BC6C9DBB61F76799F2D34B0" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Enlightenment.dds</File>
+    <File md5="C188F3C4651AB475AC3461606A55BF8F" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Future.dds</File>
+    <File md5="31E7F6D2AA6556216EBDA03195B7DE94" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Industrial.dds</File>
+    <File md5="C7C211AE58F461A38CD04A93307EF3CA" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Medievel.dds</File>
+    <File md5="8E360BE8C88C582D7D8C8D0652983249" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Modern.dds</File>
+    <File md5="0AACDF82EC4AC2E569D5E4894F36CE87" import="1">Art/Images/Era/European/Northern/Era_JFD_NorthernCeltic_Renissance.dds</File>
+    <File md5="9D4A7CDD64F0E26D54DB5294110C218D" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Atomic.dds</File>
+    <File md5="2FC2BC045DCB5DBC9B0A3C1DADE5D419" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Classical.dds</File>
+    <File md5="26745B532677CB82EFC781435C7EC68C" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Enlightenment.dds</File>
+    <File md5="2BB853EB6DB21F30E4EC017B2C781D6B" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Future.dds</File>
+    <File md5="31E7F6D2AA6556216EBDA03195B7DE94" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Industrial.dds</File>
+    <File md5="D4163177226F5446C72C3C7BBC7F9C40" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Medievel.dds</File>
+    <File md5="B1011D0D325F62BC05BAC7C41A3EFBBF" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Modern.dds</File>
+    <File md5="8D13CA4F3CF9E9E4A8FCA947C30E6889" import="1">Art/Images/Era/European/Northern/Era_JFD_Northern_Renissance.dds</File>
+    <File md5="B911ED8AAD7578AFD46FDECA4AF25E84" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Atomic.dds</File>
+    <File md5="74CE1B3BE20903906376F1E9C1115EEA" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Classical.dds</File>
+    <File md5="0C5202F3EF8FD47D823684630CE5BFDA" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Enlightenment.dds</File>
+    <File md5="B7452866E1FA341347902A0F594FBE96" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Future.dds</File>
+    <File md5="246C82FDAE17697CA2BD4D479B53A547" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Industrial.dds</File>
+    <File md5="69148075397DD6BAB4DAB8BC950FBCD2" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Medievel.dds</File>
+    <File md5="B1CFFC0124633F3E1CC62808B34BAEB4" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Modern.dds</File>
+    <File md5="16B79D1A9F8999A9FF7B64E29ABA745C" import="1">Art/Images/Era/European/Southern/Era_JFD_SouthernPapal_Renissance.dds</File>
+    <File md5="2EB45888173101EB1F3693072D02A311" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Atomic.dds</File>
+    <File md5="7FDD0207AA1EA3395055456C3F200D86" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Classical.dds</File>
+    <File md5="7E57604D23ECC8DE6926A5BCAB1A2283" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Enlightenment.dds</File>
+    <File md5="EE7734FEFE5BE59EFE62EF8AC584892C" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Future.dds</File>
+    <File md5="D6404C17B31F4900C386B3EEFC39D3D1" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Industrial.dds</File>
+    <File md5="962A9F4FFCCD922BC33DF89532F8CAB3" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Medievel.dds</File>
+    <File md5="FF896C8481275B408ED4B6E36E2CA323" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Modern.dds</File>
+    <File md5="19517BD74853032CC376E0336614F2CC" import="1">Art/Images/Era/European/Southern/Era_JFD_Southern_Renissance.dds</File>
+    <File md5="3AF77F8C212EE08EF0112D79445ACD73" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Atomic.dds</File>
+    <File md5="2CB5AB9FFF39FFD298DD1D8C8FC0A3CC" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Classical.dds</File>
+    <File md5="DC60A8CC991E815948746FBBC166E6C6" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Enlightenment.dds</File>
+    <File md5="7E85CDEE0980FDA4D9474B27EAF50DE5" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Future.dds</File>
+    <File md5="75FCF7837E7E8B01FBAFF0FE9D572D14" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Industrial.dds</File>
+    <File md5="D22D0E6F1F0F7EEE1C7568FC4A29839C" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Medievel.dds</File>
+    <File md5="B4100C6F7AC916AFBAD69BFB2A9DD8AD" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Modern.dds</File>
+    <File md5="AE3BB182BB4E5EAA9D0C5515114FE456" import="1">Art/Images/Era/European/Totalitarian/Era_JFD_Totalitarian_Renissance.dds</File>
+    <File md5="4B02A0BF96B3062AF5086A958CA83E23" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Atomic.dds</File>
+    <File md5="34016ECE1B4369C4062C266AE732155D" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Classical.dds</File>
+    <File md5="5EC7F9EE32B7814F2E8C9847FEFA213B" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Enlightenment.dds</File>
+    <File md5="1A37F8FA1B2FDA13B73354C1BC4E7F2B" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Future.dds</File>
+    <File md5="0881E5AB688A06828D57A6946E71647E" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Industrial.dds</File>
+    <File md5="2D2EF754040BE4F4025EE0504B337683" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Medievel.dds</File>
+    <File md5="AFF665A3A5630C57DF1DAA932803981E" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Modern.dds</File>
+    <File md5="F659845391C6BF5AEF6CDD157FFD7D99" import="1">Art/Images/Era/European/Western/Era_JFD_WesternBritish_Renissance.dds</File>
+    <File md5="A0143260631366ABC982CDBCFAA4EB4E" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Atomic.dds</File>
+    <File md5="D8D1D01D470115029B4EB9913BE78872" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Classical.dds</File>
+    <File md5="5A77EF644528A9C70F9A7B67012207B1" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Enlightenment.dds</File>
+    <File md5="51B6CC1ACA33F6289813F23B9748C180" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Future.dds</File>
+    <File md5="1A74C8C9736CC7CE7ABB34A06EDFE722" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Industrial.dds</File>
+    <File md5="102689FF0F5077213F38961145FE48DC" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Medievel.dds</File>
+    <File md5="32BD7766CA7C15138F6B6DB91AE8A4F2" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Modern.dds</File>
+    <File md5="A2F50F71C741C471ACC2C02C13467EAB" import="1">Art/Images/Era/European/Western/Era_JFD_Western_Renissance.dds</File>
+    <File md5="AA0EAC9D0F6B99133A1D3F239C1E8185" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Atomic.dds</File>
+    <File md5="4B5DC06E7FBAD4CEA758A10DD0E693C7" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Classical.dds</File>
+    <File md5="9EC59F00A09E6777AD612CC6F47EA549" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Enlightenment.dds</File>
+    <File md5="CBE2EC5374EEED1FC6121A316D8FA055" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Future.dds</File>
+    <File md5="287A80E08EF614F75E5EA6ACC6E1984D" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Industrial.dds</File>
+    <File md5="F01092AD6B33358EBC94FF3A66C50477" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Medievel.dds</File>
+    <File md5="0CFA29349A736C75329DC5FC5157C1B6" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Modern.dds</File>
+    <File md5="12F9F0FE4FA0160F8F9A71C95FD4A1EE" import="1">Art/Images/Era/Middle-Eastern/Levantine/Era_JFD_Levantine_Renissance.dds</File>
+    <File md5="147577595DA80AABA8977C5FAF7B54F5" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Atomic.dds</File>
+    <File md5="0E0342EAD3F33C1F9D618206BFCAFAC5" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Classical.dds</File>
+    <File md5="4E1DC9CA5B3F7EA18F3A01D5B63728DF" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Enlightenment.dds</File>
+    <File md5="35938257CFCAE19DE7B16EF19A918A3C" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Future.dds</File>
+    <File md5="2FB24198142AFAA6B6C596DE91B5D654" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Industrial.dds</File>
+    <File md5="F22E29A158DF043373DF2C6B250647C8" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Medievel.dds</File>
+    <File md5="19FC74400C4CC5A728A562ED2800A124" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Modern.dds</File>
+    <File md5="DF3A50061C9BF4B64A6DDD99495E0D20" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicPersian_Renissance.dds</File>
+    <File md5="3E776EC59E31F79A8173BE8069BF3954" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Atomic.dds</File>
+    <File md5="2AB40203D9E6C8B33CFDAF9518445186" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Classical.dds</File>
+    <File md5="9F390A970CE50C9E10968BEDA277800C" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Enlightenment.dds</File>
+    <File md5="5E251AB9703517221A83FBA4C9DACF26" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Future.dds</File>
+    <File md5="7358061DACE7D8CF92B379F5BC2D906E" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Industrial.dds</File>
+    <File md5="5E9B10990341EDAF43913762C32BC0F3" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Medievel.dds</File>
+    <File md5="2CA3349A0E06D1D675D2945B41727962" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Modern.dds</File>
+    <File md5="B19AD253F8D4F6A720CE403FCBBE216A" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_MesopotamicEgyptian_Renissance.dds</File>
+    <File md5="D3CA5262A3438B9D631CB3C0F6CCE39A" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Atomic.dds</File>
+    <File md5="BEF0C43ADB2E320DB8A93B8ACCF64A82" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Classical.dds</File>
+    <File md5="3D635DC461A0D9B54D16AB521EA4EBC7" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Enlightenment.dds</File>
+    <File md5="4A4319393A5C40E83F18DA0F5E31B98D" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Future.dds</File>
+    <File md5="A291E00D1470DB5E79EC5E37386F5B2E" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Industrial.dds</File>
+    <File md5="9368B4C5920BB92B4B65071E0E12E766" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Medievel.dds</File>
+    <File md5="627960DD837D89A13B5E6BAAD9F481DC" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Modern.dds</File>
+    <File md5="5FA12EB3CA2CFED5BD324EB59D4C4B77" import="1">Art/Images/Era/Middle-Eastern/Mesopotamic/Era_JFD_Mesopotamic_Renissance.dds</File>
+    <File md5="621037BE020770F747C96588D9BEF0E0" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Atomic.dds</File>
+    <File md5="9C16875710AEEE9ACFE2F0EB883302BA" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Classical.dds</File>
+    <File md5="26516D2BB440C3941F234C583BF10646" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Enlightenment.dds</File>
+    <File md5="E6D0EEE5F85F9C6893F31024F8B515D8" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Future.dds</File>
+    <File md5="C282FE71BE4215009A58C096D28AD7CD" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Industrial.dds</File>
+    <File md5="CBC29C377D9A698A336FF4C2BDC8B5A9" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Medievel.dds</File>
+    <File md5="48F467067799CB836D72F9E91AE261C5" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Modern.dds</File>
+    <File md5="242F4243DDB8118E33FC040DFE6D3DD3" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEasternOttoman_Renissance.dds</File>
+    <File md5="3A1E94269810B4853C78B91AAA3A8A11" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Atomic.dds</File>
+    <File md5="D89E9457DAE8B40D7028918662D98C55" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Classical.dds</File>
+    <File md5="51004D3DF484BB2F97F9E89A22961CD4" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Enlightenment.dds</File>
+    <File md5="48E02A21C4E7961C5930FC3ECF9F5FA2" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Future.dds</File>
+    <File md5="9870B0BA6746FB88DF37978240F525E7" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Industrial.dds</File>
+    <File md5="21E6DB687B75524F445EEC26751FDF78" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Medievel.dds</File>
+    <File md5="AB7CE1E84F7F1140DF9FBF05614BF164" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Modern.dds</File>
+    <File md5="5A277F3853B9BFF9D46A2966C03FD745" import="1">Art/Images/Era/Middle-Eastern/Mid Eastern/Era_JFD_MidEastern_Renissance.dds</File>
+    <File md5="9496BBDC72723A03811DEF9E28DD75DF" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Atomic.dds</File>
+    <File md5="328FFDC4C9BDCC87CF73A5D83BCF7E4D" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Classical.dds</File>
+    <File md5="F24DD92505EBA420D8B7101F2DC6797A" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Enlightenment.dds</File>
+    <File md5="A89E99BF75346AEEFC0AAC0B6D17F7B8" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Future.dds</File>
+    <File md5="36838583C301DE4B006F51022EEA5093" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Industrial.dds</File>
+    <File md5="BC4A6C0A92BE7A72DBB33B111AEA3100" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Medievel.dds</File>
+    <File md5="C4BD158EFBED99ED7B2D9AFC632294F8" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Modern.dds</File>
+    <File md5="07C896B1E240F6677A0D10F1A9DB8EA2" import="1">Art/Images/Era/Oceania/Aboriginal/Era_JFD_Aboriginal_Renissance.dds</File>
+    <File md5="440B770161EB07018784786B75338154" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Atomic.dds</File>
+    <File md5="9BF5BFEA676D3E1FD1D5D8CE0B2D861E" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Classical.dds</File>
+    <File md5="009020DBFBA07051E720FC0FD3243F38" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Enlightenment.dds</File>
+    <File md5="71129133F46F52F1E2FA2A365129763D" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Future.dds</File>
+    <File md5="2260F3CB564091D7DAB0082CD7304B76" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Industrial.dds</File>
+    <File md5="04BA2B638497F3C8821FEDB317BD1CD0" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Medievel.dds</File>
+    <File md5="1A8EA13296F89805A905CA8B47F1F70D" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Modern.dds</File>
+    <File md5="083B409B46B3450E0AC8EA96AA1341F1" import="1">Art/Images/Era/Oceania/Oceanic/Era_JFD_Oceanic_Renissance.dds</File>
+    <File md5="EF13AE40BF850BCEFC93C689BCB5332A" import="0">Core/SplashScreens_GameText.xml</File>
+    <File md5="120C51C433AE4E10868B3E5EAB3480D9" import="0">Core/SplashScreens_Eras.sql</File>
+    <File md5="D5087EBFD9B5520FB0C94114ECE26B88" import="1">Lua/UI/Overrides/EndGameMenu.lua</File>
+    <File md5="9DC6DB2DA0A4858FF1AFEFCF49957148" import="1">Lua/UI/Overrides/EndGameMenu.xml</File>
+    <File md5="44B0CE47A3680AC9D4F0CEB592CEECAB" import="1">Lua/UI/Overrides/NewEraPopup.lua</File>
+    <File md5="40569E809DDBE0240DD548E836EBC35E" import="1">Lua/UI/Overrides/NewEraPopup.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/SplashScreens_Eras.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

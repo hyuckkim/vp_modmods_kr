@@ -1,0 +1,34 @@
+-- 식민주의 (해군 전통)
+UPDATE Language_ko_KR
+SET Text = REPLACE(Text, '병영, 무기고, 사관 학교, ', '병영, 무기고, 화기제작소, 사관 학교, ')
+WHERE Tag = 'TXT_KEY_POLICY_NAVAL_TRADITION_HELP';
+
+-- 노동 분업
+--UPDATE Language_ko_KR
+--SET Text = REPLACE(Text, '작업장, 공장,', '작업장, 방직소, 공장,')
+--WHERE Tag = 'TXT_KEY_POLICY_TRADE_UNIONS_HELP';
+
+-- 중상주의 (산업)
+--UPDATE Language_ko_KR
+--SET Text = REPLACE(Text, '은행, 증권 거래소', '은행, 화물 계량소, 증권 거래소')
+--WHERE Tag = 'TXT_KEY_POLICY_MERCANTILISM_HELP';
+
+-------------------------------------
+-- 새로운 기술로 인해 인본주의 + 텍스트 이름을 변경합니다.
+--------------------------------------
+
+UPDATE Language_ko_KR
+SET Text = '후원'
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS';
+
+UPDATE Language_ko_KR
+SET Text = Replace(Text, '인본주의', '후원')
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS_HELP';
+
+--- 오래된 외교 정책 설명에서
+UPDATE Language_ko_KR
+SET Text = '후원 정책은 부유하고 권력 있는 사람들(종종 귀족)이 사회에서 재능 있는 장인을 지원하는 정책입니다. 많은 고대 사회에서 사회의 부는 몇몇 개인, 예를 들어 왕족이나 대상인에게 집중되었습니다. 화가, 조각가, 음악가, 기타 재능 있는 예술가들은 엘리트를 위해 일했습니다. 왜냐하면 엘리트만이 그들에게 돈을 지불할 수 있었기 때문입니다. 평민들에게는 불공평할지 몰라도, 이 시스템은 레오나르도 다빈치, 벤 존슨, 모차르트와 같은 뛰어난 작품을 탄생시켰습니다. 오늘날 이 시스템은 일종의 부활을 누리고 있으며, 개인보다는 대기업이 후원자 역할을 맡고 있습니다.'
+WHERE Tag = 'TXT_KEY_POLICY_CULTURAL_CENTERS_TEXT';
+
+-- old
+--인본주의는 인간 개인과 집단의 가치와 행위 능력을 강조하는 철학적, 윤리적 입장이며, 일반적으로 확립된 교리나 신앙(신앙주의)보다 비판적 사고와 증거(합리주의, 경험주의)를 선호합니다. 인본주의라는 용어의 의미는 이를 동일시하는 지적 운동이 잇따라 일어나면서 변화해 왔습니다. 그러나 일반적으로 인본주의는 "인간 본성"에 대한 어떤 개념을 긍정하는 관점을 말합니다(때로는 반인본주의와 대조됩니다).

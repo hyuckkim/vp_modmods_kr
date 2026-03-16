@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/24/2013 10:24:12 PM -->
+<GameData>
+	<Language_ko_KR>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_PROTECTED_BY" />
+			<Set Text="보호국:" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_LABEL_CONTENDER" />
+			<Set Text="경쟁자:" />
+		</Update>
+		
+		<!-- UCS compatibility -->
+		<Row Tag="TXT_KEY_CSL_POPUP_UCS_MAIN_TEXT">
+			<Text>활성 [ICON_CITY_STATE][NEWLINE]보너스</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_UCS_TOOLTIP_TITLE">
+			<Text>활성 [ICON_CITY_STATE] 도시 국가 보너스 목록:[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_UCS_NO_BONUS_FOUND">
+			<Text>현재 [ICON_CITY_STATE] 도시 국가로부터 받는 보너스가 없습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_UCS_NO_UCS_FOUND">
+			<Text>[ICON_CITY_STATE] 도시 국가로부터 보너스를 받으려면 [COLOR_YELLOW]Unique City-States[ENDCOLOR] 모드를 활성화해야 합니다.</Text>
+		</Row>
+		
+		<!-- New tags -->
+		<Row Tag="TXT_KEY_CSL_POPUP_LEADER">
+			<Text>{2_LeaderPlace}의 {1_LeaderName}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_UNDER_SOI_TT">
+			<Text>이 도시 국가는 [COLOR_CYAN]세력권[ENDCOLOR] 아래에 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_CONTENDER_INFLUENCE">
+			<Text>{1_ContenderInf} [ICON_INFLUENCE] (동맹이 되기까지 {2_MissingInf} [ICON_INFLUENCE] 남음)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_RESOURCE_LABEL">
+			<Text>자원:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_RESOURCE_LIST">
+			<Text>{1_Icon} {2_Color}{3_Name} ({4_Amount})[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_POPUP_JERK_NO_QUESTS">
+			<Text>[COLOR_NEGATIVE_TEXT]{1_JerkTurns}턴 동안 퀘스트 없음.[ENDCOLOR]</Text>
+		</Row>
+		
+
+
+		<!-- Mini Civilopedia -->
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ALMATY">
+			<Text>자니벡 칸은 칭기즈 칸의 후손이자 1465년과 1466년 우즈베크 칸 아불 하이르 칸에 대한 성공적인 반란 이후 1473년부터 1480년까지 카자흐 칸국의 공동 창시자이자 제2대 칸이었습니다.[NEWLINE][NEWLINE]그는 1422년부터 1427년까지 킵차크 칸국의 칸이었던 바락의 아들이었으며, 바락은 전 백장 한국의 에미르들에게 독살당했습니다. 바락 칸의 아버지는 칭기즈 칸의 직계 후손인 우루스 칸의 손자 코이리착이었습니다. 칭기즈 칸은 주치 칸의 아버지, 주치 칸은 투카이-티무르의 아버지, 투카이-티무르는 우즈-티무르의 아버지, 우즈-티무르는 호자의 아버지, 호자는 바다쿤-우글란의 아버지, 바다쿤-우글란은 우루스 칸의 아버지, 우루스 칸은 코이르착 칸의 아버지, 코이르착 칸은 바락 칸의 아버지, 바락 칸은 자니벡의 아버지입니다.[NEWLINE][NEWLINE]그는 백장 한국의 유명한 우루스 칸의 후손이기도 한 친척 케레이와 함께 분파 그룹을 이끌었습니다. 그의 지혜로 인해 카자흐어로 "현명한"을 의미하는 "아즈"라는 칭호를 받아 아즈-자니벡이라고 불렸습니다. 그의 아들 카심 칸은 백성들의 법을 성문화했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ANTANANARIVO">
+			<Text>라나발로나 1세는 경쟁자들을 제치고 1829년 왕위에 올랐습니다. 라다마 1세 왕이 사망한 후, 라나발로나는 외세의 영향력과 자급자족에 대해 신중한 정책을 추구하여 유럽 열강과의 경제적, 정치적 관계를 축소하고 해안 도시 풀포인트에 대한 프랑스의 공격을 격퇴했으며 런던 선교회 회원들이 시작한 작지만 성장하는 마다가스카르 기독교 운동을 억제하기 위한 강력한 조치를 취했습니다.[NEWLINE][NEWLINE]그녀는 공공 사업 프로젝트를 완료하고 메리나 군인 상비군을 개발하기 위해 "파놈포아나"(세금 납부로서의 강제 노동)라는 전통적인 관행을 많이 사용했으며, 이 군대를 배치하여 섬의 외곽 지역을 평정하고 영토를 더욱 확장했습니다. 잦은 전쟁, 질병, 힘든 강제 노동, 탕게나 관목의 독성 열매를 사용한 가혹한 시련 재판이 결합되어 33년 통치 기간 동안 군인과 민간인 모두 높은 사망률을 기록했으며, 마다가스카르의 인구는 1833년 500만 명에서 1839년 250만 명으로 감소했습니다.[NEWLINE][NEWLINE]그녀의 정책은 일반적으로 비난을 받았으며 기껏해야 폭군, 최악의 경우 미친 사람으로 묘사되었습니다. 그녀의 아들 라다마 2세 왕은 통치 기간 동안 그녀의 정책 중 일부를 갑자기 뒤집었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ANTWERP">
+			<Text>로베르 3세(플랑드르의 사자)는 1273년부터 느베르 백작이었고 1305년부터 사망할 때까지 플랑드르 백작이었습니다. 그는 장인인 시칠리아의 샤를 1세 편에서 마지막 호엔슈타우펜 왕조인 만프레드와 콘라딘에 맞서 싸웠을 때 이탈리아에서 군사적 명성을 얻었습니다. 1270년 그는 성 루이가 이끄는 제8차 십자군 원정에 참여했습니다. 십자군 원정에서 돌아온 후 그는 플랑드르를 프랑스 왕실 영토에 추가하려는 프랑스 왕 필리프 4세의 시도에 맞서 아버지의 충실한 정치적, 군사적 조력자가 되었습니다.[NEWLINE][NEWLINE]"당피에르의 기"는 프랑스 왕과의 모든 봉건적 유대를 끊었습니다. 저항이 가망 없어 보이자 로베르는 아버지, 형제 크레브쾨르의 윌리엄과 함께 포로가 되어 프랑스 왕에게 끌려가는 것을 허용했습니다. 그는 시농 성에 갇혔습니다. 그는 아버지가 감옥에서 사망한 후인 1305년까지 풀려나지 않았습니다.[NEWLINE][NEWLINE]아티스-쉬르-오르주 평화 조약의 체결은 로베르 백작의 통치를 특징지었습니다. 그러나 1310년 4월 그는 프랑스에 급진적으로 저항하기 시작했고 신민들과 가족의 지원으로 프랑스 왕에 맞설 수 있었습니다. 1319년 로베르가 릴로 진군했을 때 겐트의 민병대는 그와 함께 레이에강을 건너기를 거부했습니다. 손자 느베르의 루이 1세도 그를 압박하자 로베르는 전투를 포기하고 1320년 파리로 가서 프랑스 왕과의 봉건적 유대를 회복했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BELGRADE">
+			<Text>카라조르제 페트로비치는 1804-1813년 제1차 세르비아 봉기 동안 오스만 제국으로부터 조국의 독립을 위한 투쟁을 이끈 세르비아 혁명가였습니다.[NEWLINE][NEWLINE]그는 1788-1791년 오스트리아-튀르크 전쟁 동안 오스트리아가 무장시키고 훈련시킨 합스부르크 및 오스만 세르비아인 민병대인 세르비아 자유 군단의 일원으로 두각을 나타냈습니다. 1791년 오스트리아와 세르비아 반군의 패배 후 보복을 두려워하여 그와 가족은 오스트리아 제국으로 도망쳐 1794년까지 그곳에서 살았습니다.[NEWLINE][NEWLINE]1804년 초, 다히로 알려진 변절한 오스만 예니체리에 의한 세르비아 족장 학살 이후 파샬릭의 세르비아인들이 반란을 일으켰습니다. 카라조르제는 생존한 족장들의 회의에서 다히에 대항하는 봉기를 이끌도록 만장일치로 선출되었습니다. 6개월 이내에 대부분의 다히 지도자들이 카라조르제의 군대에 의해 체포되어 처형되었습니다. 다히 저항의 마지막 잔재가 분쇄된 후 카라조르제와 그의 추종자들은 광범위한 자치권을 요구했고, 술탄 셀림은 이를 완전한 독립을 향한 첫걸음으로 해석했습니다. 셀림은 즉시 반군에 대한 지하드를 선포했지만 1806년까지 반군은 베오그라드와 스메데레보를 포함한 파샬릭의 모든 주요 도시를 점령하고 무슬림 주민들을 추방했습니다. 1806-1812년 러시아-튀르크 전쟁의 요구에 부담을 느낀 셀림은 세르비아인들에게 광범위한 자치권을 제안했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BOGOTA">
+			<Text>시몬 볼리바르(해방자)는 남미의 독립 운동을 이끈 베네수엘라의 군사 및 정치 지도자였습니다.[NEWLINE][NEWLINE]볼리바르는 해외에서 교육을 받았고 스페인에서 살았습니다. 1803년부터 1805년까지 볼리바르는 로마에서 끝나는 그랜드 투어를 시작하여 스페인 제국의 통치를 끝내겠다고 맹세했습니다. 나폴레옹의 반도 전쟁으로 인해 아메리카에서 그들의 권위가 약해지자 볼리바르는 스페인 아메리카 독립 전쟁에서 열성적인 전투원이자 정치인이 되었습니다.[NEWLINE][NEWLINE]볼리바르는 민병대 장교로 싸웠으며 제1, 제2 베네수엘라 공화국과 누에바 그라나다 연합주를 위해 왕당파 군대와 싸웠습니다. 1815년 스페인 군대가 누에바 그라나다를 진압한 후 볼리바르는 자메이카로 망명해야 했습니다. 아이티에서 볼리바르는 아이티 혁명 지도자 알렉상드르 페숑을 만나 친구가 되었습니다. 스페인 아메리카에서 노예제를 폐지하겠다고 약속한 후 볼리바르는 페숑으로부터 군사적 지원을 받아 베네수엘라로 돌아왔습니다. 그는 1817년에 제3공화국을 수립한 다음 1819년에 안데스 산맥을 넘어 누에바 그라나다를 해방시켰습니다. 볼리바르와 그의 동맹들은 1819년 누에바 그라나다, 1821년 베네수엘라와 파나마, 1822년 에콰도르, 1824년 페루, 1825년 볼리비아에서 스페인을 물리쳤습니다. 베네수엘라, 누에바 그라나다, 에콰도르, 파나마는 콜롬비아 공화국(그란 콜롬비아)으로 합병되었고 볼리바르가 대통령이 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BRATISLAVA">
+			<Text>스바토플루크 1세는 모라비아 내의 공국을 통치했으며 나중에 대모라비아의 통치자가 되었는데, 대모라비아는 그의 통치 기간(870-871, 871-894) 동안 최대 영토 확장을 달성했습니다.[NEWLINE][NEWLINE]870년 스바토플루크는 동프랑크 왕국 루트비히 2세의 봉신이었던 라스티슬라프를 폐위시키고 프랑크인들에게 넘겼으며, 프랑크인들은 스바토플루크도 투옥했습니다. 모라비아인들이 프랑크인들에게 반란을 일으킨 후 스바토플루크는 석방되어 반군을 이끌고 침략자들에게 승리를 거두었습니다. 874년 포르ch하임(독일)에서 체결된 평화 조약에 따라 동프랑크 왕국에 공물을 바쳐야 했지만, 그는 다음 해에 프랑크인들의 관심 영역 밖으로 영토를 확장할 수 있었습니다. 그의 군대는 882년 동프랑크 왕국 내의 판노니아 변경백령을 침공하기도 했습니다.[NEWLINE][NEWLINE]스바토플루크는 교황들과 좋은 관계를 맺었으며 그와 그의 백성들은 880년 교황청의 보호를 공식적으로 받았습니다. 교황 스테파노 5세는 885년에 쓴 편지에서 그를 "왕"이라고 부르기도 했습니다. 스바토플루크는 고대 교회 슬라브어로 전례를 거행하는 것에 반대하는 독일 성직자들을 달래고 싶어 했던 것으로 보이며, 886년 메토디우스가 사망한 후 그의 제자들을 모라비아에서 추방했습니다.[NEWLINE][NEWLINE]그가 죽은 지 얼마 지나지 않아 스바토플루크의 대모라비아 왕국은 아들들 사이의 권력 투쟁과 헝가리인들의 습격이 심화되는 가운데 붕괴되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BRUSSELS">
+			<Text>알베르 1세는 1909년 12월 23일부터 1934년 사망할 때까지 벨기에의 왕이었습니다. 그는 벨기에 대부분이 독일군에 점령되었던 제1차 세계 대전(1914-1918), 1919년 6월 베르사유 조약 채택, 국제 연맹의 루안다-우룬디 위임 통치와 함께 벨기에의 해외 영토로서 벨기에령 콩고 통치, 전쟁 후 벨기에 재건, 대공황의 첫 5년(1929-1934)을 포함한 벨기에 역사의 다사다난한 기간 동안 통치했습니다.[NEWLINE][NEWLINE]그는 제1차 세계 대전 중의 역할과 관련하여 벨기에에서 "기사 왕" 또는 "군인 왕"으로 널리 불립니다. 전쟁이 끝날 무렵 벨기에, 영국, 프랑스 사단으로 구성된 플랑드르 군집단의 사령관으로서 알베르는 점령된 벨기에를 해방시킨 전쟁의 마지막 공세를 이끌었습니다.[NEWLINE][NEWLINE]1925년 알베르는 현재 콩고 민주 공화국인 곳에 아프리카 최초의 국립공원인 비룽가 국립공원을 설립했습니다. 이 기간 동안 그는 또한 미국을 방문한 최초의 재위 중인 유럽 군주였습니다.[NEWLINE][NEWLINE]알베르는 1934년 벨기에 동부에서 등산 사고로 58세의 나이로 사망했으며 아들 레오폴드 3세가 뒤를 이었습니다. 그의 죽음에 대해서는 여전히 공식 버전에 의문을 제기하고 왕이 살해당했다(또는 자살했다)고 암시하는 몇 가지 음모론이 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BUCHAREST">
+			<Text>블라드 3세(가시공, 드라큘라)는 왈라키아 역사상 가장 중요한 통치자이자 루마니아의 국가 영웅인 보이보드였습니다.[NEWLINE][NEWLINE]블라드는 아버지의 충성을 확보하기 위해 1442년 오스만 제국에 인질로 잡혀 있었습니다. 1447년 헝가리 섭정 존 후냐디가 왈라키아를 침공한 후 블라드는 오스만 제국의 도움으로 지위를 되찾으려 했지만 실패했습니다. 1456년 그는 이번에는 헝가리의 지원을 받아 사촌을 왕좌에서 몰아내기 위해 왈라키아를 침공했습니다. 그런 다음 그는 자신의 지위를 강화하기 위해 보야르들 사이에서 숙청을 시작했으며 반대파를 지원한 트란실바니아 작센인들과도 갈등을 빚어 포로들을 왈라키아로 데려가 꼬챙이에 꿰어 죽였습니다.[NEWLINE][NEWLINE]오스만 술탄 메흐메드 2세가 블라드에게 경의를 표하라고 명령했을 때 블라드는 그의 사절들을 붙잡아 꼬챙이에 꿰어 죽였습니다. 1462년 그는 오스만 영토를 공격하여 수만 명의 투르크인과 무슬림 불가리아인을 학살했습니다. 메흐메드는 블라드를 교체하기 위해 왈라키아에 대한 캠페인을 시작했지만 곧 암살을 피해 도망쳤습니다. 블라드는 헝가리 왕 마티아스 코르비누스에게 도움을 요청했지만 코르비누스는 그를 투옥했습니다.[NEWLINE][NEWLINE]블라드는 1463년부터 1475년까지 비셰그라드에 갇혀 있다가 몰다비아의 스테판 3세의 요청으로 풀려났습니다. 그는 보스니아에서 오스만 제국에 맞서 코르비누스 군대에서 싸우던 중 전사했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BUDAPEST">
+			<Text>성 이슈트반 왕으로도 알려진 이슈트반 1세는 1038년 사망할 때까지 헝가리인의 마지막 대공이자 헝가리의 첫 번째 왕이었습니다. 부모 모두 세례를 받았지만 이슈트반은 가족 중 독실한 기독교인이 된 첫 번째 구성원이었습니다.[NEWLINE][NEWLINE]그는 1000년 또는 1001년에 교황 실베스테르 2세가 보낸 왕관으로 대관식을 치렀습니다. 그는 1030년 신성 로마 제국 황제 콘라트 2세의 침략군을 헝가리에서 철수시켜 왕국의 독립을 보호했습니다.[NEWLINE][NEWLINE]이슈트반은 적어도 하나의 대주교구, 6개의 주교구, 3개의 베네딕토회 수도원을 설립하여 헝가리 교회가 신성 로마 제국의 대주교들로부터 독립적으로 발전하도록 이끌었습니다. 그의 지방 행정 시스템은 요새를 중심으로 조직되고 왕실 관리가 관리하는 카운티를 기반으로 했습니다. 헝가리는 그의 통치 기간 동안 지속적인 평화의 시기를 누렸으며 서유럽, 성지, 콘스탄티노플 사이를 여행하는 순례자와 상인들이 선호하는 경로가 되었습니다.[NEWLINE][NEWLINE]그의 죽음 이후 수십 년 동안 내전이 이어졌습니다. 그는 1083년 교황 그레고리오 7세에 의해 아들 에메릭, 차나드 주교 게라르드와 함께 시성되었습니다. 헝가리에서 그의 축일(8월 20일)은 건국 기념일로 알려진 국가 건국을 기념하는 공휴일이기도 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BUENOS_AIRES">
+			<Text>에비타라고도 불리는 에바 페론은 아르헨티나의 영부인을 역임한 아르헨티나의 정치인, 활동가, 배우, 자선가였습니다.[NEWLINE][NEWLINE]1934년 15세의 나이에 그녀는 무대, 라디오, 영화 배우로서의 경력을 쌓기 위해 수도 부에노스아이레스로 이사했습니다. 그녀는 1944년 후안 페론 대령을 만나 이듬해 결혼했고 1946년 그가 아르헨티나 대통령으로 선출되었을 때 주로 노동권을 대변함으로써 친페론주의 노동조합 내에서 강력한 인물이 되었습니다. 그녀는 또한 노동부와 보건부를 운영하고 자선 단체인 "에바 페론 재단"을 설립 및 운영했으며 아르헨티나의 여성 참정권을 옹호하고 미국 최초의 대규모 여성 정당인 여성 페론당을 창당하고 운영했습니다.[NEWLINE][NEWLINE]1951년 에바 페론은 아르헨티나 부통령직에 대한 페론주의 지명을 위한 출마를 선언하여 "데스카미사도스"라고 불리는 저소득층 및 노동계급 아르헨티나인인 페론주의 정치 기반으로부터 큰 지지를 받았습니다. 반대와 건강 악화로 인해 결국 그녀는 후보를 사퇴해야 했습니다.[NEWLINE][NEWLINE]1952년 33세의 나이로 암으로 사망하기 직전 에바 페론은 아르헨티나 의회로부터 "국가의 영적 지도자"라는 칭호를 받았습니다. 그녀는 사망 시 일반적으로 국가 원수에게 주어지는 특권인 국장을 치렀습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BYBLOS">
+			<Text>아히람 자신은 비블로스나 다른 도시 국가의 왕이라는 칭호를 받지 않았습니다. 그는 아들 이토바알 1세가 계승했다고 하는데, 그는 비블로스의 왕이라는 칭호를 명시적으로 받은 최초의 인물이며, 이는 텍스트 결락에 대한 오래된 오독 때문입니다. 결락의 새로운 재구성에 따르면 아히람의 아들 이름은 [필]시바알로 읽어야 하며 이토바알이라는 독법은 무시해야 합니다. 비블로스의 초기 왕 목록은 다시 추가 연구 대상입니다.[NEWLINE][NEWLINE]아히람은 현재 1923년 프랑스 발굴자 피에르 몽테가 비블로스 왕실 묘지의 무덤 V에서 발견한 석관으로 주로 알려져 있습니다.[NEWLINE][NEWLINE]석관은 얕은 부조 조각과 페니키아 비문으로 유명합니다. 알려진 5개의 비블로스 왕실 비문 중 하나인 이 비문은 완전히 발달된 페니키아 알파벳의 가장 초기 사례로 간주됩니다. 페니키아 알파벳은 그리스어, 라틴어, 키릴 알파벳, 히브리어, 아랍어, 우르두어 아브자드를 포함하여 현재 전 세계의 수많은 문자 체계의 모체 알파벳으로 여겨집니다. 일부 학자들에게는 유럽으로의 알파벳 전파의 기원을 나타냅니다.[NEWLINE][NEWLINE]아히람은 다른 고대 오리엔트 소스에서는 증명되지 않았지만 일부 학자들은 히브리어 성경에 언급된 동시대의 히람 왕과 관련이 있을 수 있다고 제안했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_CAHOKIA">
+			<Text>투스칼루사(1540년 사망)는 현재 미국 앨라배마주에 있는 미시시피 추장국의 최고 추장이었습니다. 그의 백성은 아마도 나중에 이 지역에 나타난 여러 남부 아메리카 원주민 연맹(촉토족과 크릭족)의 조상이었을 것입니다.[NEWLINE][NEWLINE]투스칼루사는 스페인 정복자 에르난도 데 소토에 맞서 요새화된 마을에서 마빌라 전투를 이끈 것으로 유명합니다. 스페인 사람들이 그의 영토를 통과할 때 인질로 잡힌 후 투스칼루사는 마빌라에서 납치범들에 대한 기습 공격을 조직했지만 결국 패배했습니다.[NEWLINE][NEWLINE]당시 기록에 따르면 최고 추장은 키가 매우 크고 체격이 좋았으며 일부 연대기 작가들은 투스칼루사가 스페인 사람들보다 1피트 반이나 더 컸다고 말했습니다. 서부 머스코기어 요소인 타슈카와 로사에서 유래한 그의 이름은 "검은 전사"를 의미합니다.[NEWLINE][NEWLINE]"그의 외모는 위엄이 넘쳤다. 그는 키가 크고 근육질이며 날씬하고 균형 잡혀 있었다. 그는 많은 영토와 수많은 사람들의 주군이었으며 가신들과 이웃 국가들에게 똑같이 두려움의 대상이었다." - 1557년 에르난도 데 소토가 쓴 글.[NEWLINE][NEWLINE]앨라배마주의 현대 도시 터스컬루사는 그의 이름을 따서 명명되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_CAPE_TOWN">
+			<Text>요한 "얀" 반 리베크는 네덜란드 동인도 회사(DEIC)의 네덜란드 항해사이자 식민지 관리였습니다.[NEWLINE][NEWLINE]그는 인도차이나 통킹에 있는 DEIC 무역소의 책임자였습니다. 1645년 그 직위에서 해임된 후 그는 희망봉에 보급소를 설치할 것을 주장하기 시작했습니다. DEIC는 마침내 그에게 1652년 미래의 남아프리카 공화국에 초기 정착지 지휘를 맡아달라고 요청했습니다. 그는 테이블 베이, 미래의 케이프타운 부지에 세 척의 배를 상륙시켰습니다.[NEWLINE][NEWLINE]반 리베크는 1652년부터 1662년까지 케이프 사령관이었습니다. 그는 포트 데 괴데 후프("희망의 요새")라는 요새를 건설하고 테이블 베이의 자연 정박지를 개선하고 곡물, 과일, 채소를 심고 원주민 코이족으로부터 가축을 얻는 임무를 맡았습니다. 요새는 진흙, 점토, 목재로 만들어졌으며 나중에 반 리베크가 케이프를 떠난 후 1666년에서 1679년 사이에 지어진 희망의 성으로 대체되었습니다.[NEWLINE][NEWLINE]얀 반 리베크는 1677년 자바의 바타비아(자카르타)에서 사망했습니다. 그는 특히 아파르트헤이트 시대에 남아프리카 공화국에 엄청난 문화적, 역사적 중요성을 지니고 있습니다. 많은 아프리카너들은 그를 국가의 건국 아버지로 봅니다. 결과적으로 그의 이미지는 1994년까지 발행된 우표와 지폐에 어디에나 등장했습니다. 케이프타운 시의 문장은 반 리베크 가문의 문장을 기반으로 합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_COLOMBO">
+			<Text>돈 스티븐 세나나야케는 실론의 정치가였습니다. 그는 실론의 자치권 확립으로 이어진 스리랑카 독립 운동의 지도자로 부상하여 실론의 초대 총리가 되었습니다. 그는 "국부"로 간주됩니다.[NEWLINE][NEWLINE]보탈레 마을의 기업가에게서 태어난 세나나야케는 측량부에서 서기로 잠시 일하기 전에 무트왈의 S. 토마스 대학에서 교육을 받았습니다. 가족 사업에 합류하여 그는 가족 소유의 농장과 카하타가하 흑연 광산을 관리했습니다. 형제들과 함께 세나나야케는 금주 운동에 적극적으로 참여했으며, 이는 1915년 신할라-무슬림 폭동 이후 독립 운동으로 성장했습니다. 이 폭동으로 세나나야케 형제는 46일 동안 기소 없이 수감되었습니다.[NEWLINE][NEWLINE]그는 1924년 네곰보에서 실론 입법부 의원으로 무투표 당선되어 입법부 비공식 의원 그룹의 비서가 되었습니다. 1931년 그는 실론 국가 평의회 의원으로 선출되어 농업 및 토지부 장관을 역임했으며 나중에 실론 제1대 의회 의원으로 선출되어 1947년부터 1952년 사망할 때까지 총리를 역임했습니다.[NEWLINE][NEWLINE]D.S. 세나나야케는 신할라족과 일부 무슬림에게 존경받지만 그의 시민권법으로 사실상 선거권을 박탈당한 타밀족에게는 존경받지 못합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_FLORENCE">
+			<Text>위대한 로렌초로 알려진 로렌초 디 피에로 데 메디치는 이탈리아의 정치가, 은행가, 피렌체 공화국의 사실상의 통치자였으며 이탈리아 르네상스 문화의 가장 강력하고 열정적인 후원자였습니다.[NEWLINE][NEWLINE]그는 거물, 외교관, 정치인이자 학자, 예술가, 시인의 후원자였습니다. 후원자로서 그는 보티첼리와 미켈란젤로와 같은 예술가를 후원한 것으로 가장 잘 알려져 있습니다. 그는 수십 년 동안 이탈리아 반도의 정치 상황을 안정시킨 국가 동맹인 이탈리아 동맹 내에서 힘의 균형을 유지했으며 그의 삶은 이탈리아 르네상스의 성숙기 및 피렌체의 황금기와 일치했습니다.[NEWLINE][NEWLINE]외교 정책 측면에서 로렌초는 1454년 이탈리아 동맹의 균형이라는 이름으로 교황 식스토 4세의 영토 야망을 저지하려는 분명한 계획을 보여주었습니다. 이러한 이유로 로렌초는 파치 음모(1478)의 대상이 되었으며, 그 과정에서 그의 동생 줄리아노가 암살당했습니다.[NEWLINE][NEWLINE]다양한 이탈리아 국가들 사이에서 그가 지지했던 1454년 로디 평화 조약은 그의 죽음과 함께 붕괴되었습니다. 그는 피렌체의 메디치 예배당에 묻혔습니다.[NEWLINE][NEWLINE]교황 레오 10세가 된 그의 둘째 아들 조반니는 1512년 스페인 군대와 교황청 군대의 도움으로 도시를 탈환했습니다. 로렌초의 조카인 줄리오 데 메디치도 가톨릭 교회의 교황 클레멘스 7세가 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_GENEVA">
+			<Text>장 칼뱅은 종교 개혁 당시 프랑스의 신학자, 목사, 개혁가였습니다. 그는 칼뱅주의 발전의 주요 인물이었습니다.[NEWLINE][NEWLINE]칼뱅주의 교리는 아우구스티누스 및 기타 기독교 전통의 영향을 받고 정교화되었습니다. 칼뱅을 신앙의 최고 해설자로 여기는 다양한 회중, 개혁 및 장로 교회는 전 세계로 퍼졌습니다.[NEWLINE][NEWLINE]칼뱅은 원래 인문주의 변호사로 훈련받았습니다. 그는 1530년경 로마 가톨릭 교회와 결별했습니다. 프랑스에서 개신교 기독교인에 대한 광범위한 치명적인 폭력으로 종교적 긴장이 폭발한 후 칼뱅은 스위스 바젤로 도망쳐 1536년 기독교 강요 초판을 출판했습니다. 같은 해 칼뱅은 프랑스인 기욤 파렐에게 제네바의 종교 개혁에 참여하도록 영입되었습니다. 그러나 도시의 통치 위원회는 그들의 아이디어 구현에 저항하여 추방되었습니다. 그는 스트라스부르로 가서 프랑스 난민 교회의 목사가 되었습니다.[NEWLINE][NEWLINE]그는 제네바의 개혁 운동을 계속 지원했으며 1541년 도시의 교회를 이끌도록 다시 초청받았습니다. 돌아온 후 칼뱅은 강력한 반대에도 불구하고 새로운 형태의 교회 정부와 전례를 도입했습니다. 이 기간 동안 칼뱅은 제네바와 유럽 전역에서 종교 개혁을 추진하며 말년을 보냈습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_GENOA">
+			<Text>멜피의 대공 안드레아 도리아는 제노바의 정치가, 콘도티에로, 제독으로 생애 동안 제노바 공화국에서 중요한 역할을 했습니다.[NEWLINE][NEWLINE]1528년 9월 안드레아 도리아와 그의 군대는 프랑스군을 제노바에서 몰아냈고 도시의 환영을 받았습니다. 제노바의 통치자로서 도리아는 공화국의 헌법을 귀족적인 의미로 개혁하여 지난 수 세기 동안 공화국을 괴롭혔던 파벌을 제거했습니다. 그는 제노바의 영주권과 심지어 도제직 제안을 거절했지만 "종신 검열관" 직책을 수락했습니다.[NEWLINE][NEWLINE]원래 종신직이었던 도제직은 2년으로 단축되었습니다. 동시에 평민은 자격이 없는 것으로 선언되었고 도제 임명은 대의회와 소의회 구성원에게 위임되었습니다. 그의 개혁된 제노바 공화국 헌법은 1797년 공화국이 끝날 때까지 지속되었습니다.[NEWLINE][NEWLINE]1528년부터 사망할 때까지 도리아는 제노바 공화국 의회에서 지배적인 영향력을 행사했습니다. 그는 또한 당대 최고의 해군 지도자로 간주됩니다.[NEWLINE][NEWLINE]제독을 기리기 위해 여러 배의 이름이 명명되었으며, 가장 유명한 것은 1951년에 진수되어 1956년 충돌 후 침몰한 이탈리아 여객선 SS 안드레아 도리아입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_HANOI">
+			<Text>리타이또는 리 왕조의 건국 황제이자 대월의 제6대 통치자로 1009년부터 1028년까지 재위했습니다.[NEWLINE][NEWLINE]1010년 그는 수도를 호아루에서 비옥한 홍강 삼각주의 초기 수도였던 다이라(오늘날의 하노이) 부지로 옮기기로 결정했습니다. 리 심장부 너머의 외곽 지역은 결혼으로 리 가문과 동맹을 맺은 가문들의 손에 있었습니다.[NEWLINE][NEWLINE]리타이또는 평원을 "10도"로 나누는 계획을 포기하고 자연스럽게 동남아시아 만다라 시스템과 유사한 24로로 대체했습니다.[NEWLINE][NEWLINE]1011년 리타이또는 군대를 일으켜 현재의 타인호아와 응에안인 남부 지방의 반군을 공격했습니다. 그는 그곳에서 2년 동안 캠페인을 벌여 마을을 불태우고 지역 지도자들을 체포했습니다. 1012년 바다로 돌아오는 동안 큰 폭풍이 그의 배를 침몰시킬 위협을 가했는데, 그는 이를 자신이 많은 사람들에게 가져온 폭력에 대한 신의 심판으로 이해했습니다. 1013-1015년 리타이또는 윈난의 대리국과 동맹을 맺은 하니족을 평정하기 위해 현대 하장성 북부 산악 지대로 군인을 보냈습니다.[NEWLINE][NEWLINE]불교 승려로 삶을 시작한 리타이또는 불교를 실천하고 국교로 장려했습니다. 그는 불교 성직자와 기관에 많은 지원을 했으며 대월 전역에 탑을 짓기 위해 돈을 기부했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_HONG_KONG">
+			<Text>호산카이로 태어난 카이 호 경은 식민지 홍콩의 홍콩 법정 변호사, 의사, 수필가였습니다. 그는 홍콩 지역 사회와 영국 식민 정부 간의 관계에서 중요한 역할을 했습니다.[NEWLINE][NEWLINE]1882년 그는 홍콩의 대학 풍경을 바꾸는 일에 착수했습니다. 카이 호 경은 사람들의 인정을 받았을 뿐만 아니라 영국이 대중에게 오해를 받을 수 있는 여러 건강 관련 시설을 가능하게 하도록 도왔습니다. 1887년 중국인을 위한 홍콩 의과 대학이 문을 열었습니다. 그는 한의사들도 서양 의학에 중점을 둔 기관의 혜택을 받을 수 있도록 주도했습니다. 이 대학은 나중에 1910년 홍콩 대학교가 설립되는 기반이 되었습니다.[NEWLINE][NEWLINE]그는 개혁 운동의 지지자이자 쑨원의 스승으로 기억됩니다. 평생 동안 그는 쑨원과 중국의 만주족이 이끄는 청나라를 전복시키려는 그의 혁명을 소리 높여 지지했습니다. 양무운동에 대한 다작 비평가인 호는 중국이 입헌 군주제를 발전시키는 데 있어 영국 시스템을 따를 것을 옹호했습니다.[NEWLINE][NEWLINE]카이탁 공항은 1925년 비행장에 대한 아이디어가 처음 언급되기 훨씬 전인 1914년에 그의 이름을 따서 명명되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_IFE">
+			<Text>오두두와는 요루바의 신성한 왕이자 이페 제국의 전설적인 창시자이며 요루바 종교의 창조신(오리샤)입니다.[NEWLINE][NEWLINE]전통에 따르면 그는 요루바 성지인 일레-이페의 올로핀 칭호를 보유했습니다. 그는 이페에서 잠시 통치했으며 요루바랜드의 여러 독립 왕조의 시조 역할도 했습니다.[NEWLINE][NEWLINE]요루바 종교 전통에서 오두두와는 창조신 올로두마레가 물 위에 땅을 창조하기 위해 하늘에서 보낸 신성하거나 반신적인 존재로 여겨집니다. 이러한 믿음은 요루바 전통주의자들에 의해 창조 이야기의 초석으로 여겨집니다. 이 이야기에서 오두두와는 올로두마레로부터 존재의 바구니를 가져간 올로핀 오테테라고도 알려져 있습니다. 역사적 기록에 따르면 그는 이페 동쪽의 공동체인 오케 오라에서 이페 계곡으로 이주했습니다. 그의 통치 시기와 기간은 확실하지 않지만 요루바 영성에서는 오두두와가 시간 자체만큼 오래되었다고 믿습니다.[NEWLINE][NEWLINE]오두두와는 그 이전에 13개 엘루의 느슨하게 동맹을 맺은 공동체 그룹으로 존재했던 통일된 이페의 첫 번째 통치자였습니다. 그는 또한 요루바랜드의 다양한 독립 왕조의 건국 아버지이며 오늘날 "영웅, 전사, 지도자, 요루바 민족의 아버지"로 숭배받고 있습니다.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ADEJE">
+			<Text>티네르페 "대왕"은 테네리페섬(스페인 카나리아 제도)의 관체 멘세이(원주민 왕)였던 전설적인 영웅이었습니다. 그는 14세기 말에 살았던 것으로 추정됩니다.[NEWLINE][NEWLINE]그는 카스티야가 카나리아 제도를 정복하기 전날 섬을 통치했던 멘세이 순타의 아들이었습니다. 티네르페 대왕은 1494년 정복되기 약 100년 전에 아데헤(모든 전임자들과 마찬가지로)에 살았습니다.[NEWLINE][NEWLINE]티네르페가 죽자 그의 아들들은 섬을 9개의 왕국으로 나누었습니다. 정복 당시 이 왕국들의 왕은 다음과 같았습니다.[NEWLINE]- 아카이모 또는 아카이모 (타코론테 멘세야토의 멘세이),[NEWLINE]- 아조나: (아보나 멘세야토의 멘세이),[NEWLINE]- 아냐테르베: (귀마르 멘세야토의 멘세이),[NEWLINE]- 벤코모: (타오로 멘세야토의 멘세이),[NEWLINE]- 베네하로: (아나가 멘세야토의 멘세이),[NEWLINE]- 펠리카르: (이코데 멘세야토의 멘세이),[NEWLINE]- 펠리노르: (아데헤 멘세야토의 멘세이),[NEWLINE]- 로멘: (다우테 멘세야토의 멘세이),[NEWLINE]- 테게스테: (테게스테 멘세야토의 멘세이).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_TAIWAN">
+			<Text>쑨원은 중화민국(RoC)과 그 첫 번째 정당인 국민당을 창당한 중국의 의사, 혁명가, 정치가, 정치 철학자였습니다. 그는 대만("국부")과 중화인민공화국("혁명 선구자") 모두에서 청나라 통치를 종식시키는 데 중요한 역할을 한 것으로 존경받습니다. 그는 1911년 혁명의 최고 지도자였으며 중화민국 임시 정부의 초대 총통을 역임했습니다.[NEWLINE][NEWLINE]광둥성의 농민 가정에서 태어난 쑨원은 하와이에서 해외 교육을 받고 중국으로 돌아와 홍콩 의과 대학을 졸업했습니다. 그는 4대 도적 중 한 명으로 중국 남부, 영국, 일본에서 지하 반청 혁명가들을 이끌었습니다. 그는 또한 흥중회나 동맹회와 같은 몇 가지 저항 운동을 창설했습니다.[NEWLINE][NEWLINE]1911년 혁명의 성공 이후 쑨원은 강력한 북양군을 통제하던 위안스카이 장군에게 총통직을 양보해야 했고 결국 일본으로 망명했습니다. 쑨원은 1916년 위안스카이가 사망한 후 군벌들에게 도전하기 위해 중국 공산당과 제1차 국공 합작을 결성했습니다. 그는 1925년에 사망하여 후계자 장제스 치하에서 당이 국가를 통일하는 것을 보지 못했습니다.[NEWLINE][NEWLINE]그의 정치 철학인 삼민주의는 쑨원이 작곡한 중화민국 국가로 기념되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_CHEVAK">
+			<Text>베링해 연안에 위치한 넬슨섬의 이누이트족 신화에서 아파누가크는 때로는 실수투성이 전사로 묘사되어 장수하고 때로는 비열한 악당으로 묘사되는 문화 영웅입니다.[NEWLINE][NEWLINE]아파누가크는 아직 어린 소년이었을 때 부모를 모두 잃고 고아가 되었다고 합니다. 주변 사람들은 그를 공격하고 괴롭혔지만, 그는 어른이 되면 복수할 시간이 충분할 것이라고 믿고 그들에게 보복하거나 소리치지 않았습니다. 아파누가크는 마을 집에서 늙어 죽었습니다.[NEWLINE][NEWLINE]그는 강하고 용감하며 숙련된 전사이자 수호자로 상상됩니다. 그는 적보다 더 높이 점프할 수 있었고 목소리는 학과 닮았다고 합니다.</Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_AL_TIRABIN">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_AMBRACIA">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ANANGULA">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ANDORRA">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_ARMAGH">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_AYUTTHAYA">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BAGAN">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BALKH">
+			<Text></Text>
+		</Row>-->
+		<!--<Row Tag="TXT_KEY_CSL_LEADER_SHORT_MINOR_CIV_BEDULU">
+			<Text></Text>
+		</Row>-->
+		
+		
+		
+		<!-- Personality texts -->
+		<!-- First meeting texts (7) -->
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_1">
+			<Text>반갑습니다, 위대한 지도자여. 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]을(를) 대표합니다. 당신의 강력한 제국과 강력하고 지속적인 평화를 구축할 수 있기를 바랍니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_2">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]에 오신 것을 환영합니다! 우리는 오랫동안 당신과 같은 강력한 동맹을 기다려 왔습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_3">
+			<Text>만나서 반갑습니다. 자비로운 [COLOR_CYAN]{1_civ}[ENDCOLOR] 국가에 오신 것을 환영합니다. 우리의 지식을 당신과 공유하기를 기대합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_4">
+			<Text>할렐루야! 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 당신의 강력한 제국에 대해 들었습니다. 편히 계십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_5">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]에서 인사드립니다! 당신의 국민들과 강력한 파트너십을 맺기를 기대합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_6">
+			<Text>어서 오십시오! 당신에 대한 많은 이야기를 들었습니다. [COLOR_CYAN]{1_civ}[ENDCOLOR]을(를) 방문해 주셔서 기쁩니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_FRIENDLY_7">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]에서 이렇게 강력한 통치자를 보게 되어 반갑습니다. 우리를 위한 큰 계획이 있기를 바랍니다!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_1">
+			<Text>반갑습니다. 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 사람들입니다. 우리를 공정하게 대하면 평화를 얻을 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_2">
+			<Text>안녕하세요, 지나가는 분. 당신은 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 영토에 들어왔습니다. 우리는 문제를 원하지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_3">
+			<Text>좋은 날입니다. [COLOR_CYAN]{1_civ}[ENDCOLOR] 국가는 새로운 지인을 환영합니다. 친절하게 대해 주시면 기꺼이 보답하겠습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_4">
+			<Text>반갑습니다, 낯선 사람. [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 무엇을 찾고 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_5">
+			<Text>안녕하세요! [COLOR_CYAN]{1_civ}[ENDCOLOR]에서는 손님을 기대하지 않았습니다. 무엇을 도와드릴까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_6">
+			<Text>환영합니다! [COLOR_CYAN]{1_civ}[ENDCOLOR]까지의 긴 여행으로 매우 피곤해 보이시는군요. 무엇을 도와드릴까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_NEUTRAL_7">
+			<Text>반갑습니다, 여행자여. [COLOR_CYAN]{1_civ}[ENDCOLOR]을(를) 어떻게 찾으셨습니까? 우리는 지금까지 외부와의 접촉을 피해 왔습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_1">
+			<Text>멈춰라, 낯선 사람! 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 강력한 사람들이다. 우리를 가볍게 여기면 위험할 것이다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_2">
+			<Text>조심해! [COLOR_CYAN]{1_civ}[ENDCOLOR]와 전쟁을 시작하려 하지 마라. 우리는 우리 국민을 방어하는 법을 알고 있다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_3">
+			<Text>움직이지 마, 낯선 사람! [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 너희 종류에 대한 많은 이야기를 들었다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_4">
+			<Text>음, 그래서 [COLOR_CYAN]{1_civ}[ENDCOLOR]와 친구가 되고 싶다는 건가? 친절하긴 하지만, 우리는 낯선 사람을 믿지 않아!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_5">
+			<Text>이런 우연이! 우리 점쟁이가 세상의 종말이 올 것을 예견했지. 이것이 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 온 목적이냐?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_6">
+			<Text>저런, 저런. [COLOR_CYAN]{1_civ}[ENDCOLOR]에는 관심이 없는 것 같군.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_HOSTILE_7">
+			<Text>오, 신이시여! 딱 필요한 게 왔군! [COLOR_CYAN]{1_civ}[ENDCOLOR]의 피에 굶주린 폭군이라니.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_1">
+			<Text>우리가 문을 두드리는 자들이지만, 지금은 당신이 먼저니 우리가 유일한 건 아닌 것 같군, 그러니... 신경 쓰지 마시오. [COLOR_CYAN]{1_civ}[ENDCOLOR]에 온 것을 환영하오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_2">
+			<Text>신들이 우리에게 예언자를 보내셨다! [COLOR_CYAN]{1_civ}[ENDCOLOR]의 사람들은 이런 선물에 감사하라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_3">
+			<Text>정말?! 당신이 우리의 주인이 될 거라는 건가? [COLOR_CYAN]{1_civ}[ENDCOLOR]에는 주인이 필요 없다고 생각하는데. 하지만 그에 대해 이야기해 볼 수는 있겠지?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_4">
+			<Text>우리는 왜 정찰병들이 이렇게 아름다운 나라 [COLOR_CYAN]{1_civ}[ENDCOLOR]을(를) 방문하지 않는지 궁금했소... 그러다 우리가 그렇게 대단하지 않다고 생각했지... 그리고 이제 당신이 있군. 어떻게 해야 할까? 허, 어떻게 해야 할까...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_5">
+			<Text>어제 땅에 떨어진 별이 당신인가? 우리는 그것을 보았고 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 모든 사람들이 당신의 방문을 기다리고 있었소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_6">
+			<Text>왜 [COLOR_CYAN]{1_civ}[ENDCOLOR]이(가) 당신을 쳐다봐야 하지? 당신이 특별한 존재라고 생각하나? 무엇이 당신을 우리보다 낫게 만드는가? 옷? 무기? 더 많은 것들이 있고, 우리는 당신의 평범한 상상력을 넘어선 것을 보도록 가르칠 수 있소.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_IRRATIONAL_7">
+			<Text>오, 오, 드디어! 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 문제를 도와줄 사람을 찾고 있었소. 누구나 문제가 있지만, 우리는 심각한 문제가 있지. 심각한 문제가 뭔지 아나? 아, 모른다고? 그럼 알게 될 거야...</Text>
+		</Row>
+
+
+		<!-- Trait texts (7) -->
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_1">
+			<Text>서로 다른 문화는 항상 서로에게 이익이 될 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_2">
+			<Text>부디 우리 문화를 알아가십시오. 우리에게 중요합니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_3">
+			<Text>우리는 당신의 나라에서 문화 혁명을 시작할 수 있습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_4">
+			<Text>우리는 문화 유물을 교환하는 데 관심이 있습니다. 가지고 계신 게 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_5">
+			<Text>모든 문화는 흥미롭습니다. 우리도 당신의 문화에 대해 더 알고 싶습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_6">
+			<Text>강력한 문화가 승리의 열쇠입니다! 그리고 당신은 세계를 정복하고 싶어 하죠, 그렇죠?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_CULTURED_7">
+			<Text>우리는 당신이 우리 문화를 받아들이기를 원합니다. 괜찮으십니까?</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_1">
+			<Text>우리는 훌륭한 군사 지식을 가지고 있습니다. 당신 군대의 힘을 키울 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_2">
+			<Text>영광스러운 전투는 우리의 삶의 방식입니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_3">
+			<Text>우리는 당신을 위해 특수 부대를 훈련시킬 수 있습니다. 와서 확인해 보십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_4">
+			<Text>우리는 전쟁의 기술을 연구했습니다. 당신에게 독특한 기술을 가르쳐 줄 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_5">
+			<Text>전쟁을 시작하는 건 어떻습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_6">
+			<Text>당신이 세계 최고의 군대를 훈련시켰다고 들었습니다. 우리는 그것이 꽤 마음에 듭니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MILITARISTIC_7">
+			<Text>때로는 전쟁이 무의미합니다. 하지만 때로는 유일한 선택이기도 합니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_1">
+			<Text>우리는 당신 문명의 성장을 가속화하는 데 도움을 줄 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_2">
+			<Text>우리는 당신의 국민을 먹일 충분한 식량을 제공할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_3">
+			<Text>당신의 국민들이 굶주리고 있는 것이 보입니다! 우리가 도울 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_4">
+			<Text>올해 수확이 좋았으니 자원을 좀 나눠드릴 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_5">
+			<Text>우리 식량 비축량을 보시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_6">
+			<Text>우리는 물건 교환하는 것을 좋아합니다. 당신이 원하는 만큼 식량을 제공할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MARITIME_7">
+			<Text>우리 과일을 확인해 보십시오! 채소를 맛보십시오! 생선 냄새를 맡아보십시오! 향신료를 즐기십시오!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_1">
+			<Text>우리는 당신의 시민들을 행복하게 해줄 많은 사치품을 가지고 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_2">
+			<Text>우리의 부는 어떤 강력한 지도자도 부끄럽게 만들 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_3">
+			<Text>사치품을 찾고 있다면 제대로 찾아오셨습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_4">
+			<Text>우리는 누구라도 행복하게 만들 수 있는 충분한 금을 가지고 있습니다. 당신 같은 지도자라도 말이죠!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_5">
+			<Text>사치품, 사치품, 그리고 다시 한번 사치품! 그것이 공존의 열쇠입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_6">
+			<Text>사람들을 행복하게 만드는 유일한 것은 돈입니다. 그것을 부정하는 사람은 바보입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_MERCANTILE_7">
+			<Text>우리의 길드, 은행, 조폐국, 시장은 꿈을 가능하게 합니다. 당신의 꿈은 무엇입니까?</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_1">
+			<Text>우리는 당신의 종교적 전통을 키우는 데 도움을 줄 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_2">
+			<Text>우리 사원에서 기도하면 신들이 당신의 죄를 용서해 줄지도 모릅니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_3">
+			<Text>용서를 구하고 있다면 제대로 찾아오셨습니다. 기도하고 회개하십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_4">
+			<Text>우리의 신성한 장소는 당신의 국민과 기도하고 싶은 모든 사람에게 열려 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_5">
+			<Text>우리는 신들과 대화할 수 있습니다! 기억하십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_6">
+			<Text>우리는 세계의 종교 수도입니다. 그것을 부정하는 자는 이단이며 화형에 처해야 합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_GREETING_RELIGIOUS_7">
+			<Text>죄를 고백하러 오셨습니까?</Text>
+		</Row>
+
+		
+		<!-- Bonus texts (7) -->
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_1">
+			<Text>국고에 금을 좀 모았습니다. 우리 국가에서 드리는 {1_Value} [ICON_GOLD] 금입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_2">
+			<Text>누구나 돈이 필요하죠! 이 {1_Value} [ICON_GOLD] 금을 가지고 가십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_3">
+			<Text>이 {1_Value} [ICON_GOLD] 금이 도움이 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_4">
+			<Text>부디 이 {1_Value} [ICON_GOLD] 금을 현명하게 사용하십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_5">
+			<Text>{1_Value} [ICON_GOLD] 금을 가져가는 것을 잊지 마십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_6">
+			<Text>당신에게 {1_Value} [ICON_GOLD] 금을 선물하고 싶습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD_7">
+			<Text>기분이 좋습니다. 당신을 위한 {1_Value} [ICON_GOLD] 금입니다!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_1">
+			<Text>{1_Value} [ICON_CULTURE] 문화 가치가 있는 소중한 예술품을 드리고 싶습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_2">
+			<Text>우리의 문화 유물은 당신의 제국에 좋은 추가 요소가 될 것입니다. 당신의 손에 {1_Value} [ICON_CULTURE] 문화를 놓습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_3">
+			<Text>{1_Value} [ICON_CULTURE] 문화는 현재 우리 박물관에 있는 전부입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_4">
+			<Text>우리 예술을 감상하십시오! 이 {1_Value} [ICON_CULTURE] 문화는 이제 당신의 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_5">
+			<Text>당신을 위해 {1_Value} [ICON_CULTURE] 문화를 조각했습니다. 국민들에게 보여주십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_6">
+			<Text>당신을 위한 여분의 {1_Value} [ICON_CULTURE] 문화가 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE_7">
+			<Text>이 {1_Value} [ICON_CULTURE] 문화는 우리에 대한 당신의 태도를 바꿀 것입니다.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_1">
+			<Text>발전을 촉진하기 위해 {1_Value} [ICON_FOOD] 식량으로 가득 찬 이 수레를 가져가십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_2">
+			<Text>{1_Value} [ICON_FOOD] 식량이 담긴 이 용기들은 당신의 국민을 위한 것입니다. 그들을 먹이십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_3">
+			<Text>우리 시장의 신선한 {1_Value} [ICON_FOOD] 식량을 이용할 수 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_4">
+			<Text>현지 식사를 좋아하십니까? 맛보실 수 있도록 {1_Value} [ICON_FOOD] 식량이 준비되어 있습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_5">
+			<Text>아마도 이 {1_Value} [ICON_FOOD] 식량이 우리의 관계를 강화할까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_6">
+			<Text>{1_Value} [ICON_FOOD] 식량이 담긴 용기를 당신의 문명으로 운송했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD_7">
+			<Text>{1_Value} [ICON_FOOD] 식량을 마음대로 사용하십시오. 국민들과 나누십시오!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_1">
+			<Text>우리의 종교 유물은 {1_Value} [ICON_PEACE] 신앙의 가치가 있습니다. 부디 가져가십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_2">
+			<Text>신들이 당신에게 {1_Value} [ICON_PEACE] 신앙을 보냈습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_3">
+			<Text>우리 예언자들이 신들을 기쁘게 했고, 그들이 당신에게 {1_Value} [ICON_PEACE] 신앙을 보냈습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_4">
+			<Text>부디 {1_Value} [ICON_PEACE] 신앙의 가치가 있는 이 신성한 십자가를 가져가십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_5">
+			<Text>당신 문명의 어두운 미래가 보입니다. 아마도 이 {1_Value} [ICON_PEACE] 신앙이 당신을 깨달음으로 인도하는 데 도움이 될 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_6">
+			<Text>신들이 당신에게 {1_Value} [ICON_PEACE] 신앙을 보내기로 결정했습니다. 그들의 친절에 감사하십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH_7">
+			<Text>우리가 당신을 위해 한마디 했습니다. 신들이 듣고 {1_Value} [ICON_PEACE] 신앙을 전송했습니다.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_1">
+			<Text>우리는 당신을 위해 [COLOR_CYAN]{1_Value}[ENDCOLOR]을(를) 훈련시켰습니다. 그의 능력을 현명하게 사용하십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_2">
+			<Text>우리 캠프의 [COLOR_CYAN]{1_Value}[ENDCOLOR]이(가) 당신과 합류하고 싶어 합니다. 그는 지금 당신의 명령을 받을 준비가 되었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_3">
+			<Text>당신을 위한 신병: [COLOR_CYAN]{1_Value}[ENDCOLOR]입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_4">
+			<Text>우리 최고의 [COLOR_CYAN]{1_Value}[ENDCOLOR] 중 하나를 고용하는 것은 어떻습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_5">
+			<Text>우리는 당신의 연합에 가입하고 싶습니다. 이 [COLOR_CYAN]{1_Value}[ENDCOLOR]을(를) 받으십시오. 우리의 헌신을 보여드리고 싶습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_6">
+			<Text>[COLOR_CYAN]{1_Value}[ENDCOLOR]은(는) 매우 유용할 수 있습니다. 당신을 위해 하나 준비했습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT_7">
+			<Text>[COLOR_CYAN]{1_Value}[ENDCOLOR]이(가) 필요하다고 들었습니다. 하나 제공해 드릴 수 있습니다!</Text>
+		</Row>
+		
+		
+		<!-- Greeting texts (when not first) (8) -->
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_1">
+			<Text>환영합니다! [COLOR_CYAN]{1_civ}[ENDCOLOR]에 당신이 나타나서 놀랐습니다! 부디 우리 친구가 되어 주십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_2">
+			<Text>만나서 반갑습니다! 불행히도 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 누군가 올 줄 몰라서 선물로 준비한 것이 없습니다. 용서해 주십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_3">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]에 오신 것을 환영합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_4">
+			<Text>반갑습니다, 강력한 지도자여. 당신은 세계 최고의 장소인 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 있습니다. 아무것도 드릴 수 없어 유감입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_5">
+			<Text>정말 멋진 날입니다! [COLOR_CYAN]{1_civ}[ENDCOLOR]에 오신 것을 환영합니다! 도착을 알리셨어야 했습니다. 우리는 준비되지 않았습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_6">
+			<Text>이 날을 찬양하라! [COLOR_CYAN]{1_civ}[ENDCOLOR]에 오신 것을 환영합니다! 알았더라면 준비를 좀 했을 텐데...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_7">
+			<Text>신들을 찬양하라! 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 누군가 도착할 것이라고 의심했습니다. 우리는 그 가혹한 시기를 살아남기 위해 가진 모든 것을 썼습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_FRIENDLY_8">
+			<Text>정말 놀랍군요! 아무것도 드릴 수 없어 진심으로 죄송합니다. 부디 [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 환영받는 기분을 느끼십시오.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_1">
+			<Text>반갑습니다. 당신에게 줄 것은 없습니다. [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 물러가십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_2">
+			<Text>안녕하세요. [COLOR_CYAN]{1_civ}[ENDCOLOR]와의 우정이 지금 당신이 감당할 수 있는 전부입니다. 감사히 여기십시오!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_3">
+			<Text>안녕하세요. 당신은 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 들어왔습니다. 조심하십시오, 우리는 문제를 원하지 않습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_4">
+			<Text>안녕하세요! 당신은 [COLOR_CYAN]{1_civ}[ENDCOLOR]을 위해 아무것도 가지고 있지 않으니, 우리도 당신을 위해 아무것도 없습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_5">
+			<Text>좋은 날입니다. [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 무엇을 찾고 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_6">
+			<Text>어떻게 지내십니까? [COLOR_CYAN]{1_civ}[ENDCOLOR]이 마음에 드십니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_7">
+			<Text>어떻게 지내십니까? [COLOR_CYAN]{1_civ}[ENDCOLOR]을 여행하면 우리 국가에 대한 당신의 태도를 바꿀 것입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_NEUTRAL_8">
+			<Text>좋은 아침입니다, 낯선 사람. [COLOR_CYAN]{1_civ}[ENDCOLOR]은 어떤 갈등에도 연루되고 싶지 않다는 것을 말씀드리고 싶습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_1">
+			<Text>안녕. [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 아무것도 얻을 생각 마라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_2">
+			<Text>멈춰! [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 물러가라! 우리는 아무것도 주지 않을 것이다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_3">
+			<Text>움직이지 마! 너는 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 무단 침입하고 있다! 돌아서서 가라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_4">
+			<Text>허, 또 다른 찬탈자군. [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 무엇을 원하나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_5">
+			<Text>저런, 저런! [COLOR_CYAN]{1_civ}[ENDCOLOR]이 네 앞에 무릎 꿇기를 기대하나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_6">
+			<Text>두 걸음 물러서! 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 접근하는 사람은 누구든 죽이라는 명령을 받았다. 죽고 싶나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_7">
+			<Text>누구냐? 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 아무도 기대하지 않았다. 가는 게 좋을 거다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_HOSTILE_8">
+			<Text>누가 [COLOR_CYAN]{1_civ}[ENDCOLOR]에 대해 말했나? 그들을 죽여버리겠다!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_1">
+			<Text>우리가 당신을 어떻게 해야 할까, 응? 강력한 통치자에 대한 소문이 있었는데, 당신이 그 사람인가? 그런 사람이 [COLOR_CYAN]{1_civ}[ENDCOLOR]을 방문할까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_2">
+			<Text>우리는 당신을 죽여야 할지 살려줘야 할지 모르겠어... 어려운 결정이야... 보통 [COLOR_CYAN]{1_civ}[ENDCOLOR]은 예상치 못한 방문을 용납하지 않아.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_3">
+			<Text>우리는 매일 새로운 사람들을 만나. 우리는 [COLOR_CYAN]{1_civ}[ENDCOLOR]의 기준을 충족하지 못한 많은 사람을 죽였어. 당신이 그 사람인가?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_4">
+			<Text>사느냐 죽느냐? 이것이 우리가 [COLOR_CYAN]{1_civ}[ENDCOLOR]에서 묻는 질문이야. 이 오래된 딜레마를 해결하도록 도와줄 수 있나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_5">
+			<Text>오, 돌아왔나? 어제 [COLOR_CYAN]{1_civ}[ENDCOLOR]을 떠난 줄 알았는데? 아! 당신은 우리가 생각했던 그 사람이 아니군. 미안, 너무 닮아서...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_6">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]이 선의를 가진 누군가를 찾을 때까지 많은 문명이 재로 변할 거야. 선택받은 사람인 척하지 마!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_7">
+			<Text>[COLOR_CYAN]{1_civ}[ENDCOLOR]에 온 것을 환영해. 여기서는 먹여주고 위대한 것들에 대해 이야기하지. 당신이 우리를 속이려 하지 않는다면 말이야... 그러면 우리는 주저 없이 당신을 죽일 거야. 명심해!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP_IRRATIONAL_8">
+			<Text>가버려! 너무 많은 사람이 우리가 취약하다고 생각하고 속이려 했어... 우리, [COLOR_CYAN]{1_civ}[ENDCOLOR]은 작은 나라일 뿐이야. 우리는 위대한 일을 해. 우리는 서로 돕지. 다른 사람들처럼 그것을 파괴하려 하지 마!</Text>
+		</Row>
+		
+		
+		<!-- Nothing -->
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_NOTHING_1">
+			<Text>그냥 아무것도 아닙니다.</Text>
+		</Row>
+		
+		
+		<!-- Visit texts (10) -->
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_1">
+			<Text>우리 보호자가 오셨다! 신들이 당신과 함께하기를!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_2">
+			<Text>반갑습니다, 우리의 구세주여! 당신의 나라를 위해 무엇을 할 수 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_3">
+			<Text>안녕하세요, 우리 친구여! 우리 합의는 괜찮습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_4">
+			<Text>다시 오신 것을 환영합니다, 강력한 통치자여! 당신이 그렇게 강력한 것을 보니 기쁩니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_5">
+			<Text>신들이 당신을 우리에게 보냈습니다! 우리는 이제 안전합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_6">
+			<Text>다시 오신 것을 환영합니다! 오랜만입니다. 우리 합의를 계속하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_7">
+			<Text>반갑습니다! 당신이 보호를 제안한 지 꽤 되었습니다. 우리 국민들은 지역 이웃들을 두려워합니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_8">
+			<Text>다시 만나서 반갑습니다! 당신의 날개 아래 평화와 번영이 있습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_9">
+			<Text>다시 안녕하십니까, 보호자여! 우리는 이웃들과 더 넓은 연합에 대해 생각했습니다. 그들도 방문해 보십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_PROTECTED_10">
+			<Text>하! 우리는 당신이 곧 올 줄 알았습니다! 그리고 아무도 우리를 믿지 않았죠. 당신의 보호가 우리 생명을 구합니다!</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_1">
+			<Text>다시 만나서 기쁩니다! 무엇을 도와드릴까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_2">
+			<Text>다시 안녕하십니까! 무슨 일로 오셨습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_3">
+			<Text>반갑습니다! 우리의 관계가 최상의 상태이기를 바랍니다. 무엇을 도와드릴까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_4">
+			<Text>만나서 반갑습니다! 이야기 좀 하시겠습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_5">
+			<Text>이런 우연이! 우리도 당신과 이야기하고 싶었습니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_6">
+			<Text>오랜만입니다. 우리 요청을 이행하셨습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_7">
+			<Text>안녕하세요, 어떻게 지내십니까? 오늘은 이야기하기 좋은 날입니다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_8">
+			<Text>만나서 반갑습니다! 뭐 좀 드시겠습니까? 지쳐 보이십니다. 무슨 일이 있었는지 말씀해 주십시오.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_9">
+			<Text>맙소사, 유령 같아 보이십니다! 무슨 일입니까? 우리가 어떻게 도와드릴까요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_FRIENDLY_10">
+			<Text>형제자매 여러분, 다시 환영합니다! 무엇이 필요하십니까?</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_1">
+			<Text>안녕하세요. 무슨 일로 다시 오셨습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_2">
+			<Text>좋은 날입니다, 현명한 통치자여. 우리에게 원하는 것이 있습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_3">
+			<Text>다시 안녕하십니까. 우리는 문제를 원하지 않습니다. 무슨 일로 우리 도시에 오셨습니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_4">
+			<Text>안녕하세요. 우리는 해야 할 일을 합니다. 당신은요?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_5">
+			<Text>반갑습니다. 이렇게 강력한 통치자가 우리 도시에 무슨 일입니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_6">
+			<Text>안녕. 또 뭔가 필요한 모양이군요...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_7">
+			<Text>반갑습니다. 당신의 최근 행동 이후, 우리는 당신과 협력하고 싶은지 확신할 수 없습니다. 이것은 우리에게 더 많은 문제를 가져올 수 있습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_8">
+			<Text>허, 또 당신이군요. 우리 이웃들은 당신을 믿지 않습니다. 우리가 왜 믿어야 합니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_9">
+			<Text>좋은 아침입니다. 어떻게 지내십니까? 당신이 여기 있는 것에 의문이 듭니다. 이번에는 우리에게 무엇을 원하십니까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_NEUTRAL_10">
+			<Text>오, 나의 주군. 지난번에 서로 이해했다고 생각했습니다. 모든 것을 다시 설명해야 합니까?</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_1">
+			<Text>으악, 또 너냐! 다시는 보지 않기를 바랐는데.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_2">
+			<Text>오, 너구나. 지난번 만남 이후로 우리 관계가 변하지 않았다는 것을 잊지 마라.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_3">
+			<Text>저런, 저런. 우리에게 뭔가 필요한가? 또?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_4">
+			<Text>흥! 우리에게 도움을 원하나? 꿈도 꾸지 마라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_5">
+			<Text>멈춰! 한 번 경고했다! 다음번에는 죽여버리겠다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_6">
+			<Text>경고! 제한 구역에 들어오고 있다! 신원을 밝혀라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_7">
+			<Text>너는 환영받지 못한다! 무엇을 원하나?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_8">
+			<Text>우리는 너로부터 우리 국민을 보호하기 위해 군대를 건설하고 있다.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_9">
+			<Text>움직이지 마! 여기 나타나지 말라고 했을 텐데!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_HOSTILE_10">
+			<Text>우리가 함께 일할 수 있을 거라고 생각했다. 우리가 얼마나 틀렸는지! 꺼져라!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_1">
+			<Text>지금은 당신과 이야기할 기분이 아니야. 아마 내일. 어쩌면 영원히.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_2">
+			<Text>아! 또 당신이군! 언제나 반가워. 막 주제를 꺼내려던 참이었는데... 그게 뭐였지!?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_3">
+			<Text>어-오, 오늘 여기서 뭐 하는 거야?! 내일로 약속하지 않았나? 흠... 그럼 계획을 바꿔야겠군, 그렇지?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_4">
+			<Text>우리는 이런 만남을 좋아해. 수다를 좀 떨 수 있잖아. 우리는 친구지, 그렇지? 어제는 당신을 배신하고 싶었을지 모르지만, 알다시피, 그날은 지구상의 모든 사람을 미워했던 날 중 하나였어. 당신과 심지어 신까지 포함해서.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_5">
+			<Text>적어도 한 번은 도착을 알릴 수 있었잖아?! 다른 사람들도 개인적인 용무가 있다고 생각하지 않아, 응?! 이기적인 놈...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_6">
+			<Text>만나서 반가워! 앉아. 와인? 스테이크? 막 식사를 대접하려던 참이었는데, 예상치 못한 손님을 위한 자리는 항상 하나 더 있지, 그리고 오늘은 당신인 것 같군! 말해봐, 뭘 원해?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_7">
+			<Text>당신이 우리의 비밀을 알아내고 싶어 한다는 걸 알지만, 이번에는 안 돼. 필요한 게 뭔지 말하고 당신 비밀은 지키고 가버려!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_8">
+			<Text>저 달이 보여? 징조를 읽을 수 있어? 아니? 허, 그거 참 안됐군...</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_9">
+			<Text>한 사람이 오면, 다른 사람은 우리를 떠나지. 우리에게는 항상 그랬어. 당신은 전자일까 후자일까?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_DIPLO_HELLO_PEACE_IRRATIONAL_10">
+			<Text>당신을 보면 이상한 느낌이 들어... 우리 점성술사가 그것에 대해 더 말해줄 수 있을 텐데, 더 알고 싶나?</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

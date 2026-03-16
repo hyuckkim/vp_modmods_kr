@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f48" version="2">
+	<Properties>
+		<Name>Subterfuge</Name>
+		<Teaser>Mod to implement and test proposal for new spy mechanics</Teaser>
+		<Description>Alters elements of base Vox Populi</Description>
+		<Authors>Hokath</Authors>
+		<HideSetupGame>0</HideSetupGame>
+		<AffectsSavedGames>1</AffectsSavedGames>
+		<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+		<SupportsSinglePlayer>1</SupportsSinglePlayer>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SupportsHotSeat>1</SupportsHotSeat>
+		<SupportsMac>1</SupportsMac>
+		<ReloadAudioSystem>1</ReloadAudioSystem>
+		<ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+		<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+		<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+		<Dependencies>
+			<Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="52" maxversion="999" title="Community Patch - Core" />
+			<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="17" maxversion="999" title="VP" />
+		</Dependencies>
+		<References>
+			<Mod id="259c3593-34dd-4fdd-bd7d-8ed67cc0797c" minversion="0" maxversion="999" title="More Unique Components for VP" />
+    			<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="5" maxversion="999" title="Hokaths  Tweaks"/>
+    			<Mod id="d600c443-2f04-469a-9475-e857284d5992" minversion="0" maxversion="999" title="New Beliefs"/>
+		</References>
+ 		<Blocks>
+    			<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="4" title="Hokaths Tweaks"/>
+  		</Blocks>
+		<Files>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Icons/SpyRework_IconTextureAtlases.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/SpyRework_256.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/SpyRework_128.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/SpyRework_80.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/SpyRework_64.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/SpyRework_45.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/ChateaudIf_Splash.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/Alamut_Splash.dds</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Icons/PortRoyal_Splash.dds</File>
+
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NewBuildings.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/Prison.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/Jail.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/Treasury_and_Press.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/OtherBuildings.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NewWonders.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/Casino.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/PostOffice.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NetCafe.sql</File>
+
+			<!-- this is where FreeSpies is times by 10 etc -->
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Defines.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">DiploToPoints.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Religion.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Concepts_Update.sql</File>
+
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Lua/DiploMission.lua</File>
+
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Events/NewMissions.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Events/NewMissionText.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Events/SpyChanges.sql</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Events/EspionageOverview.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Events/EspionageOverview.lua</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="1">Events/EspionageChoicePopup.xml</File>
+
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">China/China.xml</File>
+			<File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">China/China.sql</File>
+		</Files>
+	<Actions>
+	<OnModActivated>
+		<UpdateDatabase>Icons/SpyRework_IconTextureAtlases.xml</UpdateDatabase>
+
+		<UpdateDatabase>Buildings/NewBuildings.xml</UpdateDatabase>
+		<UpdateDatabase>Buildings/Prison.sql</UpdateDatabase>
+		<UpdateDatabase>Buildings/Jail.sql</UpdateDatabase>
+		<UpdateDatabase>Buildings/Treasury_and_Press.sql</UpdateDatabase>
+		<UpdateDatabase>Buildings/OtherBuildings.sql</UpdateDatabase>
+		<UpdateDatabase>Buildings/NewWonders.xml</UpdateDatabase>
+		<UpdateDatabase>Buildings/Casino.sql</UpdateDatabase>
+		<UpdateDatabase>Buildings/PostOffice.sql</UpdateDatabase>
+
+		<UpdateDatabase>Defines.sql</UpdateDatabase>
+		<UpdateDatabase>DiploToPoints.sql</UpdateDatabase>
+		<UpdateDatabase>Religion.sql</UpdateDatabase>
+		<UpdateDatabase>Concepts_Update.sql</UpdateDatabase>
+
+		<UpdateDatabase>Events/SpyChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Events/NewMissions.xml</UpdateDatabase>
+		<UpdateDatabase>Events/NewMissionText.xml</UpdateDatabase>
+
+		<UpdateDatabase>China/China.xml</UpdateDatabase>
+		<UpdateDatabase>China/China.sql</UpdateDatabase>
+
+		<UpdateDatabase>Buildings/NetCafe.sql</UpdateDatabase>
+	</OnModActivated>
+	</Actions>
+	<EntryPoints>
+		<EntryPoint type="InGameUIAddin" file="Lua/DiploMission.lua">
+			<Name>DiploMission</Name>
+			<Description>For Great Diplomat to give Spy Points</Description>
+		</EntryPoint>
+	</EntryPoints>
+</Mod>

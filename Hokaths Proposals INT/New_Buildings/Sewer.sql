@@ -1,0 +1,10 @@
+UPDATE Language_ko_KR
+SET Text = Replace(Text,  '[NEWLINE][NEWLINE][ICON_GOLD] 빈곤으로 인한 [ICON_HAPPINESS_3] 불행이 -1 감소합니다.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
+
+INSERT INTO Language_ko_KR (Tag, Text)
+VALUES	('TXT_KEY_BUILDING_SEWER',			'하수도'),
+		('TXT_KEY_BUILDING_SEWER_TEXT',		'고고학적 발견에 따르면, 가장 초기의 하수 시스템 중 일부는 기원전 3천년에 현재 파키스탄에 위치한 고대 도시인 하라파와 모헨조다로에서 개발된 것으로 나타났습니다. 원시적인 하수도는 건물 옆 땅에 파여 있었습니다. 현대적인 하수 시설이 발명되기 전에는 인간의 배설물을 모으는 정화조가 가장 널리 사용된 위생 시스템이었습니다. 중세 시대에는 폐기물을 정화조에 모아 "갈퀴(rakers)"라고 불리는 일꾼들이 주기적으로 비우곤 했는데, 갈퀴는 이를 도시 외곽의 농부들에게 비료로 판매하곤 했습니다.[NEWLINE][NEWLINE]현대 하수 시스템은 19세기 중반에 중공업화와 도시화로 인해 위생 환경이 악화되자 이에 대한 대응책으로 처음 건설되었습니다. 오염된 물 공급으로 인해 1832년, 1849년, 1855년에 런던에서 콜레라가 창궐하여 수만 명이 사망했습니다. 이로 인해 조셉 바젤게트(Joseph Bazalgette)는 폐기물을 안전하게 제거하기 위해 광대한 지하 하수 시스템을 건설하게 되었습니다. 바젤게트의 시스템과 이후 유럽 대륙에 건설된 다른 시스템은 하수를 비료로 사용하기 위해 농지로 펌핑하지 않았습니다. 단순히 인구 밀집 지역에서 멀리 떨어진 자연 수로로 하수를 흘려보내고 다시 환경으로 펌핑했습니다.'),
+		('TXT_KEY_BUILDING_SEWER_STRATEGY',	'하수도는 시민이 태어난 후 식량을 운반하는 건물 계열에 속하며, 기하급수적으로 늘어나는 인구에 맞서 싸웁니다. 또한, 황금기 동안과 [ICON_CITIZEN] 시민이 태어날 때마다 도시의 원자재 식량 생산량을 늘리고, 이로 인해 발생하는 빈곤과 싸웁니다. 또한 근처의 습지, 호수, 오아시스에 식량과 과학을 제공합니다. 마지막 이점으로, 강 타일 생산은 시간이 지남에 따라 건설 비용을 지불하는 데 도움이 될 것입니다. 하수도를 이용해 산업 시대에 등장한 건물의 인구 증가 폭을 극대화하세요.'),
+		('TXT_KEY_BUILDING_SEWER_HELP',		'');
+-- 10% of [ICON_FOOD] Food is carried over, and 50% of the [ICON_FOOD] Food output of the City is added as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Nearby Marshes: +2 [ICON_RESEARCH] Science.[NEWLINE]River Tiles: +1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty.

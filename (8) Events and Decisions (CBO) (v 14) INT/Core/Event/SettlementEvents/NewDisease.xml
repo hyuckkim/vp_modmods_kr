@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_DESCRIPTION">
+			<Text>Disease Outbreak</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_HELP">
+			<Text>A strange disease on this land has begun infecting our newly settled city with mysterious symptoms that appears to be impossible to treat. Advisors suggest we continue living here, so that the inhabitants can build up a "defense" against it as seen with the many observed animals here.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_1">
+			<Text>Keep our inhabitants well-rested. Even if we can't treat this, it may contain medical properties.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_2">
+			<Text>No. Move these people out.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_3">
+			<Text>Hard decisions always look easier after you make them. Our descendants will thank us for having the courage to do this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_1_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+1 [ICON_RESEARCH] Science in the City.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-1 [ICON_FOOD] Food in the City.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]+3 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_RESEARCH_STORED]25% for +1 [ICON_FLOWER] Morality[ENDCOLOR][NEWLINE][ICON_BULLET]50% for [ICON_PEACE] Morality[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]25% for -1 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NEWDISEASE_CHOICE_3_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+3 [ICON_FOOD] Food in the City.[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]-3 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>	
+	</Language_ko_KR>
+</GameData>

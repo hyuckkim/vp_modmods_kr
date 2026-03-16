@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_SOCIALREFORM_DESCRIPTION">
+			<Text>Social Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_SOCIALREFORM_HELP">
+			<Text>Your advisors have proposed a number of policies that would likely profit our nation greatly if taken into effect. They are extremely radical however and many of the public refuse to accept this. There is a slight chance of them rebelling.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_1">
+			<Text>Ignore the proposals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2">
+			<Text>Implement the proposals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_SOCIALREFORM_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {1_YieldCost}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]20% chance of [ICON_RESISTANCE] Anarchy![ENDCOLOR]</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

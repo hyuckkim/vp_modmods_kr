@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_DESTITUTENOBLE_DESCRIPTION">
+			<Text>Destitute Noble</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_DESTITUTENOBLE_HELP">
+			<Text>A destitute nobleman has arrived at your court. He is without a Lord or Lady to serve and pledges his service to your name. The nobleman is ragged and unkempt, but adorned with many scars, and has evidently fielded many battles. It is up to you what is to be done with him.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_1">
+			<Text>Have him cleaned up and suited with armor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_1_DISABLED">
+			<Text>You do not have enough gold to hire him at his service.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_1_HELP">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Lose {2_InstantYield}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Gain a free Great General[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]+4 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_2">
+			<Text>Who is this person? Turn him away! We don't need him stinking up the Court!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_RESEARCH_STORED]25% for +2 [ICON_FLOWER] Morality[ENDCOLOR][NEWLINE][ICON_BULLET]50% for [ICON_PEACE] Morality[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]25% for -2 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_3">
+			<Text>Confiscate what little estate he possesses and then have him executed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_DESTITUTENOBLE_CHOICE_3_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Gain {2_InstantYield}.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]-4 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

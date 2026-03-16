@@ -1,0 +1,379 @@
+Religion
+  Pantheons.sql
+  Goddess of Renewal
+  -- Changed +2 Science to +2 Faith on the Market
+    This Pantheon might now actually stand a chance of Founding in reasonable time
+    All* other Building-buffing Pantheons have +2 Faith on that Building
+
+  -- Removed 1 Faith / 5 from God-King
+    It effectively dominates Ancestor Worship atm
+   
+  WarReligions.sql looks to make the military appeal of Religion better
+  -- New Enhancer "Cremation" to contend with Zealotry
+   - 200% Combat Strength as Faith when your Units die
+   - 10 Culture on Birth
+   - 1 Happiness from City on River
+
+  -- Teocalli remake to sort out Faith engine runaway
+   - Faith on kill to 20 GAP only if the Unit is created in that City, scaling
+   - loses XP
+   - 20% Prod to Units in City
+   - Loses Supply, moved to Gurdwara
+   - Pressure increased to 50%
+   - +1 Happiness base
+
+  -- New Founder "Eternal Glory"
+   - +4 Production, Faith, Border Growth to Courthouses 
+   - +2 " for every Foreign City following the Religion
+   - caps at 40 cities
+   - Heavenly Stair NW: Faith/BGP on kills in all Cities and 5 GAdPoints to Holy Sites
+       old Teocalli but rebalanced and now locked behind Reformation
+
+  -- New Founder "Mastery"
+   - +1 Happines per 8 Followers in non-Enemy Foreign Cities
+       if you think about it, this will actually cause DoW on you
+   - +1 Science and Culture for every 2 Followers in City-States
+   - max 80 followers
+   - Martial Sanctum NW: 15 XP to newly created Units in City and 5 GGPoints to Holy Sites
+       old Teocalli but now locked behind Reformation
+   - Mastery follower renamed "Abstinence" and Asceticism renamed "Remedy"
+
+  -- Hero Worship changed to "Ritual Sacrifice"
+   - Loses conquest yields
+     non-scaling not appropriate for Founder imo
+   - +1 Food and Prod in Holy City for every 2 Followers of Foreign Religions 
+   - max 100 followers
+   - 50 Faith and GAP for every converted Citizen when using Inquisitor
+   - Great Altar NW +% prod changed to 20 Food and Prod on kill during Golden Age
+
+  -- New Enhancer "Dharma War"
+   - City conquer bonus from Hero Worship
+     some niche cases really liked this effect (e.g. Japan), so keep it somewhere
+   - 200% strength to Tourism on kill
+
+  ReligionChanges.sql continues some of these lines of thought
+  -- Theocratic Rule renamed Pilgrimage
+   - +15% WTLKD Yields removed since they don't require spread
+   - +1 Gold, Faith, and Tourism in the Holy City for every 4 Followers of this Religion in Foreign Cities 
+   - max 400 Followers
+
+  -- Divine Inheritance loses +% Golden Age yields in Capital as it doesn't required spread
+   - +1 Food, Border Growth Points, and Golden Age Points in the Holy City for every 4 Followers of this Religion in owned Cities 
+     spread but to yourself!
+   - max 400 Followers
+   
+  -- Sacred Calendar changed
+   - named "Annual Festivals" to separate a bit from Mayan UA
+   - "We Love the King Day" boosts the Faith, Culture, and Gold output of a City by 10%. 
+      moved from old Theocratic rule and nerfed slightly 
+   - +40% [ICON_CULTURE_LOCAL] Border Growth Rate in all owned Cities. 
+   - Missionaries of this Religion are 25% stronger.
+
+  -- Symbolism changed (following More Beliefs)
+   - Reduce minimum Policy requirement for [ICON_WONDER] World Wonders by 1 
+     this is moved from Prophecy, which is already v strong
+   - gain +2 [ICON_HAPPINESS_1] Happiness for every 8 Cities following this Religion 
+   - max 24 Cities
+   - +33% Great Person Rate in Holy City during Golden Ages.
+
+  -- Orthodoxy changed (following More Beliefs)
+   - renamed Ecumenism
+   - 20% (50% on Press) Spread Rate 
+   - 20% Spread Distance
+   - Holy City gains +15% All Yields during a Golden Age.
+      moved from old Divine Inheritance and nerfed slightly 
+
+  -- Universalism buffed
+   -Science/Prod to per 4 from per 5 foreign followers
+   -Faith/Gold to per 5 from per 10 of your religion in foreign cities
+      This belief was just so weak compared to everything else. if you fully convert a foreign city you get 1 or 2 gold? big whoop.
+      meanwhile, Prophecy and Zealotry are out there
+
+  -- New Enhancer "Sacred Geometry" (for Wonder Whores)
+   - Expending a [ICON_GREAT_ENGINEER] Great Engineer grants 25 Science and Faith for every City following this Religion 
+   - max 20 Cities
+   - +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all World Wonders
+   - +5 [ICON_GREAT_MUSICIAN] Great Musician points in the Holy City.
+   
+  -- New Reformation "Exodus" (for Terra maps and seafarers)
+   - Expending a Great Admiral grants 25 Faith and Golden Age Points for every City following this Religion 
+   - max 20 Cities
+   - Settler and Religious Units gain +2 Naval moves, +1 Naval Sight, 1 move Embark/Disembark.
+   - +2 Culture and Great Admiral Points if the City is Coastal.
+
+  -- New Reformation "Cargo Cult" (for fun)
+   - May purchase (Airfields and) Airports with Faith
+   - Double yields from Natural Wonders
+   - 5 GAP in Holy City per Pantheon (caps at 8)
+
+  -- New Follower "Sacred Bull"
+   - +1 All Yields from Cattle
+     fun that if you have some Cattle, you really want to get this religion to that City
+   - Holy Cow!
+
+  -- Thrift
+   - 1 Gold per 2
+   - no cap
+   - +1 Gold from Bonus Resources
+
+  -- Asceticism/Remedy
+   - 1 Food per 2
+   - no cap
+   - 4 Food if you have a Specialist
+
+  -- Diligence
+   - 1 Prod per 2
+   - no cap
+   - 2 Prod for each trade route to/from
+
+  -- Creativity
+   - 1 Culture per 3
+   - no cap
+   - 1 Culture from Great Works
+
+  -- Scholarship
+   - 1 Science per 3
+   - no cap
+   - 2 Science from Universities
+
+  -- Communalism
+   - +2 Food added to the existing Production
+
+  -- Mastery/Abstinence
+   - Labourers included
+
+Great People Bulbing
+  First addressing the raw numbers on the bulbs themselves, and how they scale
+  Celtic UGPTI adjust to remain half a real improvement
+  
+  Scientist 
+    Counts 75% more turns (5)
+    Scales 60% less with Academies (4% each)
+
+  Writer
+    Counts 50% more turns (7)
+    Scales 66% less with Great Works (1%)
+  
+  Artist
+    Scales 50% less with themes (10%)
+
+  The idea is to split To The Glory of God into 3 beliefs.
+  Sets of 3 great people corresponding to the 3 of each era (of policy branches)
+  So one is Engineer/Writer/General, one Artist/Diplomat/Musician, one Scientist/Admiral/Merchant
+  With normal play you get 2 that you didn't have before.
+  This isn't yet possible with the DLL.
+  In the meantime we will use a placeholder effect of +yields on those Specialists
+
+  To The Glory of God
+  --Ability to buy all GP with faith removed -- too strong, flexible, AI unfriendly
+  --Medieval Set
+  --Yields increased to 5 (from 3) and cap to 30​ (from 20)
+
+  Radical Sects 
+  -- Ancient Set
+  -- 15 Food/Faith/Culture on Border Growth, scaling
+
+  Charitable Fundraising
+  --Industrial Set
+  --1 food per 10 GPT (capped at half followers)
+  --8 Faith and Gold on Building Construction
+
+Building Changes
+  Stoneworks (feat. Arena, Forge, Workshop)
+  -- Moved +1 Culture from Arena to Stoneworks
+    Arena is super strong, while Stoneworks is often skipped without a relevant Monopoly
+  -- Removed nearby resource requirements from Stoneworks
+    Other Ancient Buildings like Herbalist and Smokehouse don't do this, it should go
+    Can also lead to weird things where you get Stone beyond the working radius and this suddenly pops up in your City,
+      even though it won't really give you any yields if you build it...
+  -- Moved Internal Production effect to the Forge
+    Even without the other changes, internal production is too important to Tradition start to lock behind the Stoneworks
+    Since this is the precursor to the Workshop we also save on text there!  
+  -- Remove +1 Production 
+  -- Gain 10 Production on border expand
+    Gives small reason to build without bonuses and not affecting happiness calculation
+    Border growth is more interesting than the flat +1, which is already on Forge (e.g. more valuable to Authority than Progress, etc)
+
+  Caravansary
+  -- +1 Food and Gold to Marsh tiles
+    Marshes are a 4 yield tile with Herbalist, but the Marsh start (Sugar, Bananas) does not reward you from removing them
+    This makes Marsh start better while maintaining its unique delay-improvement, rush building playstyle
+    And possibly even extends it to Marsh Truffles start (since Caravansary boosts Truffles)
+    Caravansary is also a fairly niche building for many starts, this broadens its usefulness
+  -- is now the prereq BuildingClass for Customs Houses 
+
+  Garden
+  -- Added 2 Tourism to Lake Tiles
+    Lakes don't get a boost for a long time and are a pretty naff 6 yield tile until Windmill
+    Early Tourism won't break the game, but does give an interesting edge to a Civ with many Lakes
+    (Also fixed strategy text, was incorrect in base VP)
+
+  Windmill (feat. Agribusiness)
+  -- Removed +1 Food to Granary (!) and Grocer
+    For tiny yields this is a waste of text
+  -- Added flat +2 Food
+  -- Lowered Marsh bonus to +1/+1
+    This is to prepare for other changes to Marsh. Currently they are useless even with this so don't worry.
+  -- Added +1 Production/+1 Gold to Farms
+    In many cases Farms are useless at this point in the game. Feels bad to me.
+  -- Lowered Farm boost to +1/+1 on Agribusiness
+    Same overall power as before with Windmill, avoid inflation
+  -- Did not change Danish Andel. UB
+
+  Zoo
+  -- Gains +1 Culture to Camp
+    Camps on Forests are ok, but Bison on Plains for example become fairly worthless
+    Culture on Tiles will convert to Tourism
+  -- Added +1 Culture/+1 Tourism to Camp on Spanish Bull Ring 4UC
+  -- Zoo loses +2 Culture
+    We want to avoid big yield inflation, especially in Culture
+    Circus and Stadium don't give Culture (now neither does Arena)
+  -- Loses Historic Event on Trade Routes
+    In the wrong building line and really doesn't fit. See Hotel below
+
+  Public School and Broadcast Tower
+  -- Public School Scaler lowered to +1 Science per 4 Citizens (from 2) 
+    Science in the late game is too high and this scaler I think bears a lot of the blame, it is very high
+    for such a valuable yield and only gets stronger as Cities grow.
+  -- Broadcast Tower scaler lowered to +1/+1 Culture/Tourism per 4 Citizens (from 2)
+    With a longer game Culture levels will be too high so this is lowered accordingly
+
+  Factory
+    Removed +2 Production all other Factories
+      This bonus can get out of control in certain circumstances -- every City working Processes 80% of the time
+    Added +3 Production to all Factories to Refinery
+      This delays the bonus and caps it at 5 Cities, preventing runaway.
+
+  Hotel
+    I *hate* how these are only for niche Cities, and even then they are bad at their job
+    I don't want to make them `build everywhere', but increase the number of use cases
+  -- Gains +5 Tourism from Oasis
+    This is a left-behind Feature that had several building interactions in the early game
+  -- Gains +1 Gold and Tourism per Mountain in the workable Tiles
+    We have precious few Mountain interactions in the game
+  -- Gains +1 Gold and Tourism from Snow
+    The Rationalism policy I've removed so something for Snow is needed
+  -- Gains Historic Event on Trade Route from the Zoo
+  -- Increased Culture->Tourism to 33% (from 25%)
+    This is the headline new effect at this point in the game, but it is so minor
+    -- Morocco Riad at 50%
+    -- Removed +1 Tourism at Archaeology for Maoi statues to keep same-ish output
+  -- Requires the Customs House
+    no startup city should build this
+    why doesnt the customs house line go anywhere! also why doesnt it require caravansary...
+
+  Airports
+    These are a key location in the modern world, yet in VP they only benefit the Military!?
+  -- Airports give +1 Tourism per 3 Citizens
+  -- Airport give +3 Gold and Tourism to nearby Atolls
+       I want to go on Holiday so bad my dudes
+       As it is not a Sea Resource it gets a bit left behind in yields by the end game
+  -- +5% Yields from City Connections *in all Cities*
+       Can become significant in a big empire with many destinations
+  -- Requires a Hotel
+
+  Mine Field
+    Overly niche to the extent I rarely both, especially if im on the offensive
+  -- +2 Science
+  -- +15 XP for Sea Units
+  -- Naval Melee Units from this City get the Minelayer promotion
+  -- Minelayer promotion no longer chosen, and no downside
+
+National Wonders
+  Changes to encourage `specialization'
+  
+  National Epic
+  -- No longer boosts GP rate to GEMS
+
+  Circus Maximus
+  -- 1 Merchant Point and +25% Merchant Rate
+  -- 1 Merchant Slot
+  -- No Longer boosts Culture during WLTKD
+
+  Grand Temple
+  -- 10% Culture during WLTKD
+  -- 1 Culture and GAP from Holy Site
+    encourages Holy Site here, though spreading Holy Site can be better for Happiness
+
+  Imperial College
+  -- 1 Faith and Tourism from Academies worked by the City
+    encourages Academies to be placed here
+  [ON HOLD]
+  -- Cannot be built in the Capital (City with a Palace)
+    creating tension with Capital which usually has National College % boost
+  [/ON HOLD]
+
+  School of Philosophy 
+  -- 1 Scientist Point and +25% Scientist Rate  
+  -- 1 Scientist Slot
+  
+  Scrivener's Office 
+  -- 25% Civil Servant Rate 
+
+  Master Shipwright (Mathematics)
+  -- Icon by Putmalk
+  -- Requires Lighthouse and Coastal City
+    encourage having at least one Coastal City
+  -- 2 Prod, 2 Science, 1 Culture
+  -- 1 Engineer Point and +25% to Engineers  
+  -- 1 Engineer Slot
+  -- +15% Prod to Naval Units in City
+  -- Nearby Fishing Boats +1 Prod 
+
+Unit Changes
+  Anti-Air Units have range reduced by 2 hexes (i.e. AA is now 1 range, SAM is now 2 range)
+    This should be a niche unit to fight an opponent with planes, but right now it shuts down all air attacks, returning the game to land combat when it should transition
+  
+  SAM 
+    Gains ability to carry 2 missiles (and requisite AI setting)
+      Experimental! Have seen AI rebase to them. They have fired during this time but its not 100% certain that was from the SAM (probably)
+
+  XCOM and GDR Pushed back to last tech column. Whatever you think about their inclusion it doesn't make sense to have them contemporary with real units.
+
+UnitPromotions
+  Ordnance Survey
+    -- New promo
+    -- Double movement in Hills. Can use Enemy Routes.
+    -- Free to all Land Units at Ballistics
+      The idea is to get over the late-game immobility of armies. Tried many options, this is favourite.
+
+  Engineering Corps
+    -- Moved earlier to Dynamite
+      Mountain roads are cool, want them faster.
+      Above (new) promo needs to be at Ballistics timing-wise, so unstack
+
+Terrain
+  Atolls
+    For some reason their Feature map effects were removed
+    They are the only real thing on Coast Tiles (outside Natural Wonders), so they should do something to make the map more tactical for naval combat
+  -- Requires 4 Moves (up from 1)
+  -- Has SeeThrough = 1, blocks sight like a Forest
+  -- Has +25% Defense bonus, same as Forest
+
+  Desert
+    +1 Production to Flatland Desert tiles
+      symmetrising with Tundra and making it like all previous Civ installments.
+      getting Desert Incense is so sad right now...
+
+Improvements
+  Camps 
+    -- no longer remove Marshes
+    -- -2 Food if on Marsh
+      Makes the Marsh Truffles start playable (but not OP)
+
+  Work Boats removed
+
+  Fishing Boats
+    -- Can be built by Workers
+    -- 4 turns, 3 lower than other basic improvements because embark/disembark & pillage compensation
+    -- Still destroyed if pillaged (animation too bad)
+
+  Offshore Platforms
+    -- Can be built by Workers
+    -- 8 turns, like the Well -1 for pillage
+    -- Still destroyed if pillaged (animation too bad)
+
+  Bananas
+  -- Plantation improvement now gives 2 Food (down from 3), but 1 Science (up from 0)
+    This means that it is no longer awkward to improve Jungle Banana because you lose the Science from University
+    It's lame to see Banana and think "I wish that wasn't there so I could build a lumbermill"

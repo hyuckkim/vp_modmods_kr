@@ -47,21 +47,21 @@ UPDATE Language_ko_KR
 SET Text = '[COLOR_YELLOW]위대한 작가[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATWRITER_HEADING3_TITLE';
 UPDATE Language_ko_KR
-SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 작가는 [ICON_VP_GREATWRITING] 걸작 문학 ([ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 각각 생성)을 만들 수 있고, 문학은 빈 슬롯이 있는 적절한 건물 (원형극장, 국가 서사시, 영웅 서사시, 왕립 도서관 등)이 있는 가장 가까운 도시에 배치됩니다. 위대한 작가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: {TXT_KEY_MISSION_GIVE_POLICIES}[ENDCOLOR][NEWLINE]위대한 작가는 정치 논문을 작성해, 많은 양의 [ICON_CULTURE] 문화를 얻을 수 있으며, [COLOR_YELLOW]이 양은 걸작 문학마다 3%씩 증가합니다[ENDCOLOR]. 위대한 작가는 이 과정에서 소모됩니다.'
+SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 작가는 [ICON_GW_WRITING] 걸작 문학 ([ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 각각 생성)을 만들 수 있고, 문학은 빈 슬롯이 있는 적절한 건물 (원형극장, 국가 서사시, 영웅 서사시, 왕립 도서관 등)이 있는 가장 가까운 도시에 배치됩니다. 위대한 작가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: {TXT_KEY_MISSION_GIVE_POLICIES}[ENDCOLOR][NEWLINE]위대한 작가는 정치 논문을 작성해, 많은 양의 [ICON_CULTURE] 문화를 얻을 수 있으며, [COLOR_YELLOW]이 양은 걸작 문학마다 3%씩 증가합니다[ENDCOLOR]. 위대한 작가는 이 과정에서 소모됩니다.'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATWRITER_HEADING3_BODY';
 
 UPDATE Language_ko_KR
 SET Text = '[COLOR_YELLOW]위대한 예술가[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATARTIST_HEADING3_TITLE';
 UPDATE Language_ko_KR
-SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 예술가는 [ICON_VP_GREATART] 걸작 예술품 ([ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 각각 생성) 을 만들 수 있고, 예술품은 빈 슬롯이 있는 적절한 건물 (궁전, 박물관, 대성당 등)이 있는 가장 가까운 도시에 배치됩니다. 위대한 예술가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: 황금기 점수[ENDCOLOR][NEWLINE]위대한 예술가를 소모해 [COLOR_YELLOW]황금기 점수를 얻을 수 있고, 이것은 [ICON_GOLDEN_AGE] 황금기를 시작할 수 있습니다. (추가 [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드, [ICON_CULTURE] 문화). 생성되는 황금기 점수의 양은 직전 15턴 동안의 [ICON_TOURISM] 관광과 [ICON_GOLDEN_AGE] 황금기 점수로 결정되며, 걸작 예술품마다 20%씩 증가합니다.[ENDCOLOR]'
+SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 예술가는 [ICON_GW_ART] 걸작 예술품 ([ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 각각 생성) 을 만들 수 있고, 예술품은 빈 슬롯이 있는 적절한 건물 (궁전, 박물관, 대성당 등)이 있는 가장 가까운 도시에 배치됩니다. 위대한 예술가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: 황금기 점수[ENDCOLOR][NEWLINE]위대한 예술가를 소모해 [COLOR_YELLOW]황금기 점수를 얻을 수 있고, 이것은 [ICON_GOLDEN_AGE] 황금기를 시작할 수 있습니다. (추가 [ICON_PRODUCTION] 생산, [ICON_GOLD] 골드, [ICON_CULTURE] 문화). 생성되는 황금기 점수의 양은 직전 15턴 동안의 [ICON_TOURISM] 관광과 [ICON_GOLDEN_AGE] 황금기 점수로 결정되며, 걸작 예술품마다 20%씩 증가합니다.[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATARTIST_HEADING3_BODY';
 
 UPDATE Language_ko_KR
 SET Text = '[COLOR_YELLOW]위대한 음악가[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATMUSICIAN_HEADING3_TITLE';
 UPDATE Language_ko_KR
-SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 음악가를 사용해 빈 슬롯 (오페라 극장 또는 방송탑)이 있는 가장 가까운 도시에 [ICON_VP_GREATMUSIC] 걸작 음악을 만들 수 있습니다. 위대한 음악가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: 콘서트 투어[ENDCOLOR][NEWLINE]위대한 음악가는 다른 문명으로 여행해 콘서트 투어를 해,  [COLOR_YELLOW]대상 문명으로의 관광을 10턴 동안 100% 증가시킵니다. (보유한 [ICON_VP_GREATMUSIC] 걸작 음악마다 1턴 추가) 또한 모든 도시에서 [ICON_HAPPINESS_1] 행복을 1 얻습니다. 대상 문명과 전쟁 중이거나[ICON_TOURISM] 대상 문명에게로의 문화적 영향력이 [ENDCOLOR][COLOR_MAGENTA]매우 유명함[ENDCOLOR][COLOR_YELLOW] 이상이면 능력을 사용할 수 없습니다.[ENDCOLOR] 이 능력은 위인을 소모합니다.[NEWLINE][NEWLINE]'
+SET Text = '[COLOR_CYAN]특수 능력: 걸작 생성[ENDCOLOR][NEWLINE]위대한 음악가를 사용해 빈 슬롯 (오페라 극장 또는 방송탑)이 있는 가장 가까운 도시에 [ICON_GW_MUSIC] 걸작 음악을 만들 수 있습니다. 위대한 음악가는 이 과정에서 소모됩니다.[NEWLINE][NEWLINE][COLOR_CYAN]특수 능력: 콘서트 투어[ENDCOLOR][NEWLINE]위대한 음악가는 다른 문명으로 여행해 콘서트 투어를 해,  [COLOR_YELLOW]대상 문명으로의 관광을 10턴 동안 100% 증가시킵니다. (보유한 [ICON_GW_MUSIC] 걸작 음악마다 1턴 추가) 또한 모든 도시에서 [ICON_HAPPINESS_1] 행복을 1 얻습니다. 대상 문명과 전쟁 중이거나[ICON_TOURISM] 대상 문명에게로의 문화적 영향력이 [ENDCOLOR][COLOR_MAGENTA]매우 유명함[ENDCOLOR][COLOR_YELLOW] 이상이면 능력을 사용할 수 없습니다.[ENDCOLOR] 이 능력은 위인을 소모합니다.[NEWLINE][NEWLINE]'
 WHERE Tag = 'TXT_KEY_SPECIALISTSANDGP_GREATMUSICIAN_HEADING3_BODY';
 
 UPDATE Language_ko_KR
@@ -169,7 +169,7 @@ UPDATE Language_ko_KR
 SET Text = '[COLOR_YELLOW]문화 승리[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_VICTORY_CULTURAL_HEADING3_TITLE';
 UPDATE Language_ko_KR
-SET Text = '문화 승리를 하려면, 문명에 지배적인 문화 영향력을 행사하고 [COLOR_YELLOW]세계 시민 의정서를 완료해야 합니다. 이념을 채택하고 여론이 [ENDCOLOR][COLOR_POSITIVE_TEXT]만족[ENDCOLOR][COLOR_YELLOW]한 상태여야 합니다. [ENDCOLOR]이것은 당신이 만든 [ICON_GREAT_WORK] 걸작과 당신이 발견한 [ICON_VP_ARTIFACT] 유물에 의해 생성된 관광을 통해 달성됩니다. 당신이 생성하는 관광은 다른 문명에 지속적으로 영향을 미치며, 그 효과는 국경 개방, 무역로, 종교와 이념 공유, 연구 협정 등을 통해 증폭됩니다.[NEWLINE][NEWLINE]전체 게임에 대한 누적 관광 출력이 게임에 남아 있는 각 문명의 누적 문화 출력을 초과할 때 여론이 [COLOR_POSITIVE_TEXT]만족[ENDCOLOR]하면 [COLOR_YELLOW]세계 시민 의정서를 구성할 수 있습니다.[ENDCOLOR]'
+SET Text = '문화 승리를 하려면, 문명에 지배적인 문화 영향력을 행사하고 [COLOR_YELLOW]세계 시민 의정서를 완료해야 합니다. 이념을 채택하고 여론이 [ENDCOLOR][COLOR_POSITIVE_TEXT]만족[ENDCOLOR][COLOR_YELLOW]한 상태여야 합니다. [ENDCOLOR]이것은 당신이 만든 [ICON_GREAT_WORK] 걸작과 당신이 발견한 [ICON_ARTIFACT] 유물에 의해 생성된 관광을 통해 달성됩니다. 당신이 생성하는 관광은 다른 문명에 지속적으로 영향을 미치며, 그 효과는 국경 개방, 무역로, 종교와 이념 공유, 연구 협정 등을 통해 증폭됩니다.[NEWLINE][NEWLINE]전체 게임에 대한 누적 관광 출력이 게임에 남아 있는 각 문명의 누적 문화 출력을 초과할 때 여론이 [COLOR_POSITIVE_TEXT]만족[ENDCOLOR]하면 [COLOR_YELLOW]세계 시민 의정서를 구성할 수 있습니다.[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_VICTORY_CULTURAL_HEADING3_BODY';
 
 UPDATE Language_ko_KR
@@ -228,7 +228,7 @@ UPDATE Language_ko_KR
 SET Text = '[COLOR_YELLOW]경험치 제한[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_BARBARIAN_POINTLIMITS_HEADING3_TITLE';
 UPDATE Language_ko_KR
-SET Text = '야만인 유닛과 싸울 때, 훈련이 덜 된 유닛은 경험치를 얻습니다. 그러나 이미 [COLOR_YELLOW]45 XP[ENDCOLOR]를 획득한 (또는 그만큼을 진급으로 교환한) 유닛은 더 이상 야만인과의 전투에서 XP를 얻을 수 없습니다.'
+SET Text = '야만인 유닛과 싸울 때, 훈련이 덜 된 유닛은 경험치를 얻습니다. 그러나, 이미 경험치를 [COLOR_YELLOW]45[ENDCOLOR] 획득한 유닛은 더 이상 야만인과의 전투에서 경험치를 얻을 수 없고 경험치를 [COLOR_YELLOW]70[ENDCOLOR] 획득한 유닛은 더 이상 도시 국가와의 전투에서 경험치를 얻을 수 없습니다.'
 WHERE Tag = 'TXT_KEY_BARBARIAN_POINTLIMITS_HEADING3_BODY';
 
 UPDATE Language_ko_KR
@@ -322,7 +322,6 @@ SET Text = '비록 인구가 여전히 불행에 영향을 미치지만, 도시�
 [COLOR_NEGATIVE_TEXT]문맹[ENDCOLOR]: 문맹은 도시의 [ICON_RESEARCH] 과학 산출에 기반합니다. 과학 건물을 건설하거나 더 발전한 국가에 교역로를 보내 문맹을 줄일 수 있습니다. 연구의 생산 또한 문맹을 막을 수 있습니다. [NEWLINE]
 [COLOR_NEGATIVE_TEXT]무료[ENDCOLOR]: 무료는 도시의 [ICON_CULTURE] 문화 산출에 기반합니다. 무료는 특히 중요한데, 무료가 높다면 다른 문명이 관광 보너스를 받을 수 있기 때문입니다. 턴마다 문화를 제공하는 건물을 건설하거나 더 문화적으로 발전한 국가에 교역로를 보내 무료를 없앨 수 있습니다. 걸작 또한 무료를 감소시키기 위해 옮겨질 수 있습니다. 문화의 생산 또한 무료를 막을 수 있습니다.[NEWLINE]
 [COLOR_NEGATIVE_TEXT]종교 분쟁[ENDCOLOR]: 종교 분쟁은 도시 내의 종교적 다양성에 의해 발생합니다. 만약 도시에 대중 종교가 있다면, 너무 많은 시민들이 대중 종교를 따르지 않을 때 불행이 생성됩니다. 선교사 또는 이단심문관으로 소수 종교를 없애 해결할 수 있습니다.[NEWLINE]
-
 
 [NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]불행의 다른 원인들[ENDCOLOR]: 요구로 인한 불행 외에도, 도시에 영향을 미치는 불행의 다른 원인들도 있습니다.[NEWLINE]
 [COLOR_NEGATIVE_TEXT]기아[ENDCOLOR]: 도시의 식량 생산이 0보다 낮으면, 각 식량마다 1 불행이 발생합니다. 따라서 굶주린 도시는 불행이 매우 크게 증가합니다. 주로 적 유닛이 작업중인 타일을 약탈하고 막으면 기아가 발생하게 됩니다.[NEWLINE]

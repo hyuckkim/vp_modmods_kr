@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<ArtDefine_UnitInfos>
+		<Row>
+			<Type>ART_DEF_UNIT_WHALE_MWB</Type>
+			<DamageStates>1</DamageStates>
+			<Formation>UnFormed</Formation>
+		</Row>
+	</ArtDefine_UnitInfos>
+	
+	
+	<ArtDefine_UnitInfoMemberInfos>
+		<Row>
+			<UnitInfoType>ART_DEF_UNIT_WHALE_MWB</UnitInfoType>
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_WHALE_MWB</UnitMemberInfoType>
+			<NumMembers>1</NumMembers>
+		</Row>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitMemberInfos>
+		<Row>
+			<Type>ART_DEF_UNIT_MEMBER_WHALE_MWB</Type>
+			<Scale>0.025</Scale>
+			<Domain>Sea</Domain>
+			<Model>basilosaurus.fxsxml</Model>
+			<MaterialTypeTag>CLOTH</MaterialTypeTag>
+			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+		</Row>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitMemberCombats>
+		<Row>
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_WHALE_MWB</UnitMemberType>
+			<EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk</EnableActions>
+			<MoveRadius>7.0</MoveRadius>
+			<ShortMoveRadius>24.0</ShortMoveRadius>
+			<ShortMoveRate>0.349999994039536</ShortMoveRate>
+			<TurnRateMin>0.5</TurnRateMin>
+			<TurnRateMax>0.75</TurnRateMax>
+			<TurnFacingRateMin>15.0</TurnFacingRateMin>
+			<TurnFacingRateMax>20.0</TurnFacingRateMax>
+			<HasStationaryMelee>0</HasStationaryMelee>
+			<HasRefaceAfterCombat>1</HasRefaceAfterCombat>
+		</Row>
+	</ArtDefine_UnitMemberCombats>
+	<ArtDefine_UnitMemberCombatWeapons>
+		<Row>
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_WHALE_MWB</UnitMemberType>
+			<Index>0</Index>
+			<SubIndex>0</SubIndex>
+			<WeaponTypeTag>BLUNT</WeaponTypeTag>
+			<WeaponTypeSoundOverrideTag>BLUNT</WeaponTypeSoundOverrideTag>
+		</Row>
+	</ArtDefine_UnitMemberCombatWeapons>
+	<ArtDefine_StrategicView>
+		<Row>
+			<StrategicViewType>ART_DEF_UNIT_WHALE_MWB</StrategicViewType>
+			<TileType>Unit</TileType>
+			<Asset>SV_ShipOfTheLine.dds</Asset>
+		</Row>
+	</ArtDefine_StrategicView>
+</GameData>

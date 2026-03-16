@@ -1,0 +1,2 @@
+UPDATE Building_YieldChangesPerPop SET Yield = 25 WHERE BuildingType IN ('BUILDING_PUBLIC_SCHOOL', 'BUILDING_BROADCAST_TOWER');
+

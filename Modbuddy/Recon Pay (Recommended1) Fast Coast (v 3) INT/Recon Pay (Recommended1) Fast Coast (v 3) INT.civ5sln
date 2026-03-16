@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Recon Pay (Recommended1) Fast Coast (v 3) INT", "Recon Pay (Recommended1) Fast Coast (v 3) INT\Recon Pay (Recommended1) Fast Coast (v 3) INT.civ5proj", "{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Default|x86.ActiveCfg = Default|x86
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Default|x86.Build.0 = Default|x86
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Package Only|x86.ActiveCfg = Package Only|x86
+		{1F7B2446-4552-4D7F-911D-F5A3DEF6B014}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

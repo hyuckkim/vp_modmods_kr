@@ -1,0 +1,471 @@
+-- seed vault
+-- first move freedom NW. why is this on biology anyway?
+UPDATE Buildings SET PrereqTech = 'TECH_ELECTRICITY' WHERE Type = 'BUILDING_INTERNATIONAL_FINANCE_CENTER';
+
+INSERT INTO Building_YieldModifiers
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_FOOD', 5),
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_SCIENCE', 5);
+
+INSERT INTO Building_ResourceYieldChangesGlobal
+	(BuildingType, ResourceType, YieldType, Yield)
+SELECT
+	'BUILDING_HARMONY_SEED_VAULT', Type, 'YIELD_FOOD', 1
+FROM Resources WHERE PlantResource = 1 UNION ALL
+SELECT
+	'BUILDING_HARMONY_SEED_VAULT', Type, 'YIELD_SCIENCE', 1
+FROM Resources WHERE PlantResource = 1;
+
+UPDATE Buildings SET
+FreePolicies = 1,
+ExtraLeagueVotes=12
+WHERE Type = 'BUILDING_HARMONY_SEED_VAULT';
+
+-- Rue Voltaire
+UPDATE Buildings SET
+FreePolicies = 1
+WHERE Type = 'BUILDING_RUE_VOLTAIRE';
+
+INSERT INTO Building_WLTKDYieldMod
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_FOOD', 10),
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 10);
+
+INSERT INTO Building_YieldFromPolicyUnlock
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 50);
+
+-- galathea
+UPDATE Buildings SET
+FreePolicies = 1,
+GreatWorkCount = 1, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT'
+WHERE Type = 'BUILDING_GALATHEA';
+
+INSERT INTO Building_InstantYield
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_GALATHEA', 'YIELD_SCIENCE', 2000);
+
+INSERT INTO Building_BuildingClassYieldChanges
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_GALATHEA', 'BUILDINGCLASS_MUSEUM', 'YIELD_SCIENCE', 5);
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_GALATHEA', 'BUILDINGCLASS_SEAPORT');
+
+-- woodstock
+UPDATE Buildings SET
+FreePolicies = 1,
+Happiness = 2,
+GreatWorkCount = 3, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_MUSIC',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_WOODSTOCK_HELP'
+WHERE Type = 'BUILDING_WOODSTOCK';
+
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_WOODSTOCK', 'IMPROVEMENT_FARM', 'YIELD_FAITH', 2),
+	('BUILDING_WOODSTOCK', 'IMPROVEMENT_FARM', 'YIELD_CULTURE', 2);
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WOODSTOCK', 'YIELD_GOLDEN_AGE_POINTS', 20);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WOODSTOCK', 'TXT_KEY_THEMING_BONUS_WOODSTOCK', 20, 1, 0, NULL, NULL, NULL, 
+								  1, 0, 0, 0, 2);
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_THEMING_BONUS_WOODSTOCK', 'Age of Aquarius'),
+	('TXT_KEY_THEMING_BONUS_WOODSTOCK_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with Music from the same Era and created by you.');
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_WOODSTOCK', 'BUILDINGCLASS_AGRIBUSINESS');
+
+-- World Heritage wonders
+-- dinosaur
+UPDATE Buildings SET
+FreeArtifacts = 2,
+GreatWorkCount = 2, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_DINOSAUR_HELP',
+River = 1,
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_DINOSAUR';
+
+INSERT INTO Building_LocalResourceOrs
+	(BuildingType, ResourceType)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'RESOURCE_STONE'),
+	('BUILDING_WH_DINOSAUR', 'RESOURCE_IRON');
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'YIELD_SCIENCE', 8);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_DINOSAUR', 'TXT_KEY_THEMING_BONUS_DINOSAUR', 8, 1, 0, 0, 1, 0, 
+												1, 0, 0, 0, 3);
+
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_THEMING_BONUS_DINOSAUR', 'Spectacular Logjam'),
+	('TXT_KEY_THEMING_BONUS_DINOSAUR_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Artifacts from the same Era and created by you.');
+
+-- abu simbel
+UPDATE Buildings SET
+NearbyTerrainRequired = 'TERRAIN_DESERT',
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+GreatWorkCount = 4, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_ABU_SIMBEL_HELP',
+FreeArtifacts = 4
+WHERE Type = 'BUILDING_WH_ABU_SIMBEL';
+
+INSERT INTO Building_InstantYield
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_SCIENCE', 4000);
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES	
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_GOLD', 15);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_ABU_SIMBEL', 'TXT_KEY_THEMING_BONUS_ABU_SIMBEL', 15, 1, 0, 0, 1, 0, 
+									1, 0, 0, 0, 8);
+
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_THEMING_BONUS_ABU_SIMBEL', 'Beloved by Amun'),
+	('TXT_KEY_THEMING_BONUS_ABU_SIMBEL_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 4 Artifacts from the same Era and created by you.');
+
+-- cologne cathedral
+UPDATE Buildings SET
+Happiness = 1,
+ConversionModifier = -20,
+ReligiousPressureModifier = 25,
+GreatWorkCount = 4, 
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL_HELP',
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_COLOGNE_CATHEDRAL';
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_GOLD', 10),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 10);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL', 20, 0, 1, 0, 0, 1, 
+												1, 0, 0, 0, 4);
+
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL', 'Shrine of the Three Kings'),
+	('TXT_KEY_THEMING_BONUS_COLOGNE_CATHEDRAL_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Great Works of Art and 2 Artifacts with all 4 being from different Eras and all created by you.');
+
+INSERT INTO Building_YieldChangesPerPopInEmpire
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_GOLD', 10),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 10);
+
+-- butrint
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+GreatWorkCount = 2, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+ThemingBonusHelp = 'TXT_KEY_THEMING_BONUS_BUTRINT_HELP'
+WHERE Type = 'BUILDING_WH_BUTRINT';
+
+INSERT INTO Building_LocalFeatureAnds
+	(BuildingType, FeatureType)
+VALUES
+	('BUILDING_WH_BUTRINT', 'FEATURE_MARSH');
+
+INSERT INTO Building_ThemingYieldBonus
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_BUTRINT', 'YIELD_GOLD', 6),
+	('BUILDING_WH_BUTRINT', 'YIELD_CULTURE', 6);
+
+INSERT INTO Building_ThemingBonuses
+	(BuildingType, Description, Bonus, SameEra, UniqueEras, MustBeArt,  MustBeArtifact, MustBeEqualArtArtifact, 
+	RequiresOwner, RequiresAnyButOwner, RequiresSamePlayer, RequiresUniquePlayers, AIPriority, ConsecutiveEras)
+VALUES
+	('BUILDING_WH_BUTRINT', 'TXT_KEY_THEMING_BONUS_BUTRINT', 12, 1, 0, 0, 1, 0, 
+								1, 0, 0, 0, 5, 1);
+
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+	('TXT_KEY_THEMING_BONUS_BUTRINT', 'Albanian National Park'),
+	('TXT_KEY_THEMING_BONUS_BUTRINT_HELP', 'To maximize your bonus, make sure the Great Work Slots are filled with 2 Artifacts from consecutive Eras and created by you.');
+
+-- sangay
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+NearbyMountainRequired = 1
+WHERE Type = 'BUILDING_WH_SANGAY';
+
+INSERT INTO Building_LocalFeatureAnds
+	(BuildingType, FeatureType)
+VALUES
+	('BUILDING_WH_SANGAY', 'FEATURE_JUNGLE');
+
+INSERT INTO Building_BuildingClassLocalYieldChanges
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_AGRIBUSINESS', 'YIELD_FOOD', -5),
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_AGRIBUSINESS', 'YIELD_SCIENCE', 10),
+	('BUILDING_WH_SANGAY', 'BUILDINGCLASS_AGRIBUSINESS', 'YIELD_CULTURE', 10);
+
+INSERT INTO Building_ImprovementYieldChangesGlobal
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_GOLD', -1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_PRODUCTION', -1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_FAITH', 1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_SCIENCE', 1),
+	('BUILDING_WH_SANGAY', 'IMPROVEMENT_LUMBERMILL', 'YIELD_FOOD', 1);
+
+-- timbuktu
+UPDATE Buildings SET
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER'
+WHERE Type = 'BUILDING_WH_TIMBUKTU';
+
+INSERT INTO Building_BuildingClassYieldChanges
+        (BuildingType, BuildingClassType, YieldType, YieldChange)
+SELECT  'BUILDING_WH_TIMBUKTU', b.BuildingClass, a.Type, 2
+FROM Buildings b, Yields a WHERE b.Cost = -1 AND b.FaithCost > 0 AND a.Type IN ('YIELD_CULTURE', 'YIELD_GOLD');
+
+INSERT INTO Building_YieldChangeWorldWonder        
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_TIMBUKTU', 'YIELD_GOLD', 2),
+	('BUILDING_WH_TIMBUKTU', 'YIELD_FOOD', 2),
+	('BUILDING_WH_TIMBUKTU', 'YIELD_SCIENCE', 2);
+
+-- sirvansahlar
+UPDATE Buildings SET
+Water = 1,
+MinAreaSize = 10,
+FreeBuildingThisCity = 'BUILDINGCLASS_INTERPRETIVE_CENTER',
+Happiness = 1,
+BuildingDefenseModifier = 10,
+GreatWorkCount = 1, 
+FreeArtifacts = 1,
+GreatWorkSlotType = 'GREAT_WORK_SLOT_ART_ARTIFACT',
+WLTKDTurns = 20
+WHERE Type = 'BUILDING_WH_SIRVANSAHLAR';
+
+INSERT INTO Building_YieldPerFriend
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_GOLD', 3);
+
+INSERT INTO Building_YieldPerAlly
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_GOLD', 3);
+
+
+------------------
+-- do these all together because it is convenient 
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'YIELD_CULTURE', 4),
+
+	('BUILDING_RUE_VOLTAIRE', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WOODSTOCK', 'YIELD_CULTURE', 1),
+
+	('BUILDING_GALATHEA', 'YIELD_SCIENCE', 4),
+	('BUILDING_GALATHEA', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_DINOSAUR', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_ABU_SIMBEL', 'YIELD_CULTURE', 1),
+
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_CULTURE', 1),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'YIELD_FAITH', 4),	
+
+	('BUILDING_WH_SANGAY', 'YIELD_CULTURE', 2),
+	('BUILDING_WH_SANGAY', 'YIELD_SCIENCE', 4),	
+	('BUILDING_WH_SANGAY', 'YIELD_FAITH', 4),
+
+	('BUILDING_WH_BUTRINT', 'YIELD_CULTURE', 2),
+	('BUILDING_WH_BUTRINT', 'YIELD_GOLD', 3),	
+
+	('BUILDING_WH_TIMBUKTU', 'YIELD_CULTURE', 1),	
+	('BUILDING_WH_TIMBUKTU', 'YIELD_SCIENCE', 1),	
+	('BUILDING_WH_TIMBUKTU', 'YIELD_FAITH', 1),	
+
+	('BUILDING_WH_SIRVANSAHLAR', 'YIELD_CULTURE', 2);
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'BUILDINGCLASS_LABORATORY'),
+	('BUILDING_WH_TIMBUKTU', 'BUILDINGCLASS_MOSQUE'),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'BUILDINGCLASS_CATHEDRAL'),	
+	('BUILDING_WH_ABU_SIMBEL', 'BUILDINGCLASS_HYDRO_PLANT');
+
+INSERT INTO Building_Flavors
+	(BuildingType, FlavorType, Flavor)
+VALUES
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_WONDER', 10),
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_GROWTH', 40),
+	('BUILDING_HARMONY_SEED_VAULT', 'FLAVOR_SCIENCE', 40),
+
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_WONDER', 40),
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_GROWTH', 30),
+	('BUILDING_RUE_VOLTAIRE', 'FLAVOR_CULTURE', 60),
+
+	('BUILDING_WOODSTOCK', 'FLAVOR_WONDER', 40),
+	('BUILDING_WOODSTOCK', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WOODSTOCK', 'FLAVOR_CULTURE', 30),
+	('BUILDING_WOODSTOCK', 'FLAVOR_HAPPINESS', 30),
+
+	('BUILDING_GALATHEA', 'FLAVOR_WONDER', 40),
+	('BUILDING_GALATHEA', 'FLAVOR_ARCHAEOLOGY', 30),
+	('BUILDING_GALATHEA', 'FLAVOR_SCIENCE', 60),
+
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_ARCHAEOLOGY', 40),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_SCIENCE', 25),
+	('BUILDING_WH_DINOSAUR', 'FLAVOR_CULTURE', 30),	
+
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_WONDER', 60),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_ARCHAEOLOGY', 60),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_SCIENCE', 40),
+	('BUILDING_WH_ABU_SIMBEL', 'FLAVOR_CULTURE', 60),
+
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_WONDER', 50),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_RELIGION', 40),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_GOLD', 40),
+	('BUILDING_WH_COLOGNE_CATHEDRAL', 'FLAVOR_CULTURE', 40),
+
+	('BUILDING_WH_SANGAY', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_SANGAY', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_GROWTH', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_SCIENCE', 30),
+	('BUILDING_WH_SANGAY', 'FLAVOR_CULTURE', 10),
+
+	('BUILDING_WH_BUTRINT', 'FLAVOR_WONDER', 50),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_ARCHAEOLOGY', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_GOLD', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_SCIENCE', 30),
+	('BUILDING_WH_BUTRINT', 'FLAVOR_CULTURE', 40),
+
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_WONDER', 90),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_RELIGION', 30),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_GOLD', 20),
+	('BUILDING_WH_TIMBUKTU', 'FLAVOR_CULTURE', 20),
+
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_WONDER', 40),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_ARCHAEOLOGY', 15),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_GROWTH', 30),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_DIPLOMACY', 30),
+	('BUILDING_WH_SIRVANSAHLAR', 'FLAVOR_CITY_DEFENSE', 40);
+
+-----------------------------------------------------------------
+-- Text
+-----------------------------------------------------------------
+INSERT INTO Language_en_US
+	(Tag, Text)
+VALUES
+      -- national wonder
+	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT', 'Seed Bank'),
+	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR]. +5% [ICON_FOOD] Food and +5% [ICON_RESEARCH] Science in the City in which it is built. Receive 1 [COLOR_POSITIVE_TEXT]Additional[ENDCOLOR] [ICON_DIPLOMAT] Delegate in the World Congress for every [COLOR_POSITIVE_TEXT]12[ENDCOLOR] [ICON_CITY_STATE] City-States originally in the World. All [COLOR_POSITIVE_TEXT]Plant[ENDCOLOR] Resources in the Empire gain +1 [ICON_FOOD] Food and [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.'),
+	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_STRATEGY', 'Unlike the National Wonders of other Ideologies, the Harmony Seed Bank has no requirement on its World Congress Votes, but in return there is no way to increase them. Instead, the Seed Bank increases your yields by boost the output of around half the Resources in the game, in all your Cities.'),
+	('TXT_KEY_BUILDING_HARMONY_SEED_VAULT_TEXT', 'A seed bank stores seeds to preserve genetic diversity. It also functions as a library for the genes that plant breeders need to increase yield, disease resistance, drought tolerance, nutritional quality, taste, etc. of crops. Collections of seeds stored at constant low temperature and low moisture are guarded against loss of genetic resources that are otherwise maintained in situ or in field collections. Seeds may be viable for hundreds and even thousands of years. The oldest carbon-14-dated seed that has grown into a viable plant was a Judean date palm seed about 2,000 years old, recovered from excavations at the palace of Herod the Great in Israel. Naturally, seed banks are expected to play a greater role as climate change progresses.'),
+
+	-- world wonders
+	('TXT_KEY_WONDER_RUE_VOLTAIRE', 'Rue Voltaire'),
+	('TXT_KEY_WONDER_RUE_VOLTAIRE_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR]. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Receive 50 [ICON_CULTURE] Culture when you adopt a Policy, scaling with Era. +10% [ICON_FOOD] Food and [ICON_CULTURE] Culture in the City during "We Love the King Day".'),
+	('TXT_KEY_WONDER_RUE_VOLTAIRE_QUOTE', '[NEWLINE]"It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets."[NEWLINE] - Voltaire[NEWLINE]'),
+	('TXT_KEY_WONDER_RUE_VOLTAIRE_TEXT', 'The Boulevard Voltaire is a well-known boulevard in the 11th arrondissement of Paris. It was created by Baron Georges-Eug ne Haussmann during the reign of French emperor Napoleon III. The boulevard is a great axis joining two historical squares associated with the French Revolution, the Place de la R publique and the Place de la Nation, and the boulevard is a main hub for left-wing demonstrations with the Republic and Nation squares as the focal points. The boulevard also has the Bataclan Theatre, built in 1864 by the architect Charles Duval. The boulevard, particularly between its cross-sections with the Boulevard Richard-Lenoir and the Place L on-Blum is host to great textile firms.'),
+
+	('TXT_KEY_WONDER_GALATHEA', 'Galathea Deep Sea Expedition'),
+	('TXT_KEY_WONDER_GALATHEA_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have a Seaport. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. +2000 [ICON_RESEARCH] Science when completed. Every Museum in the Empire yields +5 [ICON_RESEARCH] Science. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_ARTIFACT] Artifact. Contains 1 slot for [ICON_GREAT_WORK] Great Works of Art or Artifacts.'),
+	('TXT_KEY_WONDER_GALATHEA_QUOTE', '[NEWLINE]"True wisdom is like an ocean; the deeper you go the greater the treasures you''ll find."[NEWLINE] - Matshona Dhliwayo[NEWLINE]'),
+	('TXT_KEY_WONDER_GALATHEA_TEXT', 'The second Galathea Expedition was conceived in 1941 in discussions between journalist and author Hakon Mielche and oceanographer and ichthyologist Anton Frederik Bruun. The expedition eventually started in 1950, with its main purpose deep sea oceanography. For the use of the expedition a British sloop, HMS Leith, was acquired and renamed HDMS Galathea, which left Copenhagen in October 1950 carrying a crew of about 100 seamen and scientists. From 1950 to 1952 the expedition carried out a program of scientific exploration; the highlight occurred in July 1951 when, while investigating the Philippine Trench, scientists secured biological material from a record depth of 10,190 m (33,430 ft). This was sensational as it had been assumed that life could not exist at this sea depth; when they returned to Copenhagen in June 1952 the ship was welcomed by a crowd of 20,000 people.'),
+
+	('TXT_KEY_WONDER_WOODSTOCK', 'Woodstock'),
+	('TXT_KEY_WONDER_WOODSTOCK_HELP', 'Requires [ICON_IDEOLOGY_HARMONY] [COLOR_MAGENTA]Harmony[ENDCOLOR] and the City must have an Agribusiness. Receive 1 [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Social Policy. Contains 3 slots for [ICON_GW_MUSIC] Great Works of Musics. [NEWLINE][NEWLINE]Nearby Farms: +2 [ICON_CULTURE] Culture and [ICON_PEACE] Faith.[NEWLINE]+20 [ICON_GOLDEN_AGE] Golden Age Points if Themed.'),
+	('TXT_KEY_WONDER_WOODSTOCK_QUOTE', '[NEWLINE]"When the power of love overcomes the love of power, the world will know peace."[NEWLINE] - Jimi Hendrix[NEWLINE]'),
+	('TXT_KEY_WONDER_WOODSTOCK_TEXT', 'The Woodstock Music and Art Fair, commonly referred to as Woodstock, was a music festival held from August 15 to 18, 1969, on Max Yasgur''s dairy farm in Bethel, New York, 40 miles (65 km) southwest of the town of Woodstock. Billed as "an Aquarian Exposition: 3 Days of Peace & Music" and alternatively referred to as the Woodstock Rock Festival, it attracted an audience of more than 460,000. Thirty-two acts performed outdoors despite overcast and sporadic rain. It was one of the largest music festivals in history and became synonymous with the counterculture of the 1960s.'),
+
+     -- world heritage wonders
+	('TXT_KEY_WONDER_WH_DINOSAUR', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Dinosaur Monument'),
+	('TXT_KEY_WONDER_WH_DINOSAUR_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy, a nearby [ICON_RES_STONE] Stone and/or [ICON_RES_IRON] Iron Resource, and the City must be on a River. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City and 2 [ICON_ARTIFACT] Artifacts. Contains 2 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+8 [ICON_RESEARCH] Science if Themed.'),
+	('TXT_KEY_WONDER_WH_DINOSAUR_QUOTE', '[NEWLINE]"Your scientists were so preoccupied with whether or not they could, they didn''t stop to think if they should."[NEWLINE] - Dr. Ian Malcolm in "Jurassic Park"[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_DINOSAUR_TEXT', 'Dinosaur National Monument is an American national monument located on the southeast flank of the Uinta Mountains on the border between Colorado and Utah at the confluence of the Green and Yampa rivers. The dinosaur fossil beds (bone beds) were discovered in 1909 by Earl Douglass, a paleontologist working for the Carnegie Museum of Natural History who happened upon a specimen while hiking. He and his crews excavated thousands of fossils and shipped them back to the museum in Pittsburgh, but part of the site was left for educational purposes.[NEWLINE][NEWLINE]Conservation work included constructing a road to the quarry, removal of overburden covering the bone-bearing strata, and building of a small, temporary museum. World War II interrupted work, but this was resumed in 1951 with the building of a small metal building over the east portion of the quarry to test whether bone was abundant enough to warrant a larger, more permanent building. This more permanent building was erected in the mid-1950s as part of the National Park Service Mission 66 plan. Around this time, plans made by the U.S. Bureau of Reclamation on a billion dollar damming project began to arouse opposition in the early 1950s when it was announced that one of the sites would be in the middle of Dinosaur National Monument. The controversy assumed major proportions, dominating conservation politics for years.'),
+
+	('TXT_KEY_WONDER_WH_ABU_SIMBEL', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Abu Simbel'),
+	('TXT_KEY_WONDER_WH_ABU_SIMBEL_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy, a Hydroelectric Power Plant, and a nearby Desert tile. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City and 4 [ICON_ARTIFACT] Artifacts. +4000 [ICON_RESEARCH] Science when completed. Contains 4 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+15 [ICON_GOLD] Gold if Themed.'),
+	('TXT_KEY_WONDER_WH_ABU_SIMBEL_QUOTE', '[NEWLINE]"And on the pedestal these words appear ''My name is Ozymandias, king of kings: Look on my works, ye Mighty and despair!"[NEWLINE] - Percy Bysshe Shelley[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_ABU_SIMBEL_TEXT', 'Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan Governorate, Upper Egypt, near the border with Sudan. The twin temples were originally carved out of the mountainside in the 13th century BC, during the 19th Dynasty reign of the Pharaoh Ramesses II to commemorate his heroic leadership at the Battle of Kadesh. Amazingly, the complex was relocated in its entirety in 1968 to higher ground to avoid it being submerged by Lake Nasser, the Aswan Dam reservoir. As part of International Campaign to Save the Monuments of Nubia, an artificial hill was made from a domed structure to house the Abu Simbel Temples, under the supervision of a Polish archaeologist, Kazimierz Micha?owski, from the Polish Centre of Mediterranean Archaeology University of Warsaw.'),
+
+	('TXT_KEY_WONDER_WH_COLOGNE_CATHEDRAL', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Cologne Cathedral'),
+	('TXT_KEY_WONDER_WH_COLOGNE_CATHEDRAL_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy and a Cathedral in the City. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City. Boosts Pressure of [ICON_RELIGION] Religious Majority emanating from this City by 25%, and increases the City''s resistance to conversion by 20%. +1 [ICON_GOLD] Gold and [ICON_PEACE] Faith for every [COLOR_POSITIVE_TEXT]10[ENDCOLOR] [ICON_CITIZEN] Citizens in the Empire. Contains 4 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+10 [ICON_GOLD] Gold and [ICON_PEACE] Faith if Themed.'),
+	('TXT_KEY_WONDER_WH_COLOGNE_CATHEDRAL_QUOTE', '[NEWLINE]"People in those old times had convictions; we moderns only have opinions. And it needs more than a mere opinion to erect a Gothic cathedral."[NEWLINE] - Heinrich Heine[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_COLOGNE_CATHEDRAL_TEXT', 'Cologne Cathedral is a renowned monument of German Catholicism and Gothic architecture and was declared a World Heritage Site in 1996. It is Germany''s most visited landmark, attracting an average of 6 million people a year. At 157 m (515 ft), the cathedral is the tallest twin-spired church in the world. Unfortunately, the twin spires of the cathedral were an easily recognizable navigational landmark for Allied aircraft bombing during World War II. The cathedral suffered fourteen hits by aerial bombs during the war. Badly damaged, it nevertheless remained standing in an otherwise completely flattened city. Repairs of the war damage were completed in 1956. A repair to part of the northwest tower, carried out in 1944 using poor-quality brick taken from a nearby ruined building, remained visible as a reminder of the war until 2005, when it was restored to its original appearance. Repair and maintenance work is constantly being carried out in the building, which is rarely free of scaffolding, as wind, rain, and pollution slowly eat away at the stones. The Dombauh tte, established to build the cathedral and keep it in repair, employs skilled stonemasons for the purpose. Half the costs of repair and maintenance are still borne by the Dombauverein, a charity setup by the friends of the Cathedral.'),
+
+	('TXT_KEY_WONDER_WH_SANGAY', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Sangay Park'),
+	('TXT_KEY_WONDER_WH_SANGAY_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy, a nearby Mountain, and a nearby Jungle Feature. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City. Agribusinesses in the City have their +5 [ICON_FOOD] Food replaced by +10 [ICON_RESEARCH] Science and [ICON_CULTURE] Culture. Lumbermills in the Empire have +1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold replaced by +1 [ICON_FOOD] Food, [ICON_RESEARCH] Science, and [ICON_PEACE] Faith.'),
+	('TXT_KEY_WONDER_WH_SANGAY_QUOTE', '[NEWLINE]"The rich and powerful countries are trying to wreck as much as possible... at the opposite extreme are countries like Ecudaor. They''re trying to save the commons."[NEWLINE] - Noam Chomsky[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_SANGAY_TEXT', 'With its outstanding natural beauty and two active volcanoes, the Sangay National Park illustrates within its 270,000 hectares the entire spectrum of ecosystems of Ecuador. These include glacial and volcanic ecosystems, cloud forests, Amazon rainforest, wetlands, lakes, and the fragile moorlands and grasslands of the highlands. The area was placed on the World Heritage List in Danger from 1992 to 2005, mainly due to the construction of the Guamote - Macas road, as well as from threats caused by grazing and illegal hunting.  The park was seriously affected by the building of the road, which now separates the World Heritage site from the southern extension of the park. Impacts included contamination of the Upano River and nearby lakes, the use of dynamite, microclimate changes and indirect effects including new settlements, cattle ranching, illegal hunting and deforestation.  However, in 2005 a new management plan was adopted defining strategies for the restoration of the zones affected by the road, as well as developing participative management of the park in order to reduce conflicts over land use and the relationship between the local population and wildlife.  Following this the park was removed from the List in of World Heritage in Danger.'),
+
+	('TXT_KEY_WONDER_WH_BUTRINT', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Butrint Wetlands'),
+	('TXT_KEY_WONDER_WH_BUTRINT_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy and a nearby Marsh Feature. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City and 1 [ICON_ARTIFACT] Artifact. Contains 2 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+6 [ICON_GOLD] Gold and [ICON_CULTURE] Culture if Themed.'),
+	('TXT_KEY_WONDER_WH_BUTRINT_QUOTE', '[NEWLINE]"They are strewn with the wreckage of dead Empires - past Powers - only the Albanian goes on for ever."[NEWLINE] - Edith Durham[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_BUTRINT_TEXT', 'Butrint, located in the south of Albania approximately 20km from the modern city of Saranda, has a special atmosphere created by a combination of archaeology, monuments and nature in the Mediterranean. From 800 BC until the arrival of the Romans, Butrint was influenced by Greek culture, bearing elements of a "polis" and being settled by Chaonian tribes. In 44 BC Butrint became a Roman colony and expanded considerably on reclaimed marshland, primarily to the south across the Vivari Channel, where an aqueduct was built. Butrint manifests several vulnerable aspects. Potentially these vulnerabilities could threaten the integrity of the property in the long term. To avoid threats to integrity and authenticity, monitoring and controlling the vulnerabilities are crucial issues in the Management Plan of Butrint on Archaeology and Monuments. Currently, the protection and conservation of the archeological monuments is covered by the Law on Cultural Heritage. The natural values of the Butrint Wetlands were recognized by the Ramsar Convention in 2002. In 2005, based on the Law on Protected Areas, Butrint was declared a National Park covering 86 km squared.'),
+
+	('TXT_KEY_WONDER_WH_TIMBUKTU', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Timbuktu Medina'),
+	('TXT_KEY_WONDER_WH_TIMBUKTU_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy and a Mosque in the City. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City. All Buildings in the Empire that [COLOR_POSITIVE_TEXT]must[ENDCOLOR] be purchased with [ICON_PEACE] Faith produce +2 [ICON_CULTURE] Culture and [ICON_GOLD] Gold. [ICON_WONDER] World Wonders in the City gain +2 [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_RESEARCH] Science.'),
+	('TXT_KEY_WONDER_WH_TIMBUKTU_QUOTE', '[NEWLINE]"You''re going to Timbuktu, if it''s the last thing I do!"[NEWLINE] - Edgar in Disney''s "The Aristocats"[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_TIMBUKTU_TEXT', 'Founded in the 5th century, the economic and cultural apogee of Timbuktu came about during the15th and 16th centuries. It was an important centre for the diffusion of Islamic culture with the University of Sankore. However, in the modern day, rampant urbanization is threatening the architecture, and the large public squares and markets. Contemporary structures have made irretrievable breaches in the original parcelling and obviously exceed the scale of the traditional buildings. This process is ongoing and most recently a new very large institute was built on one of the public squares, compromising the integrity of the Sankore Mosque. Urban development pressures, associated with the lack of maintenance and flooding, resulting from the heavy rains, threaten the coherence and integrity of the urban fabric and its relation to the property. In collaboration with UNESCO, local authorities are extending the buffer zone around the site by approximately 500 m to assure the protection of the entire Timbuktu Medina.'),
+
+	('TXT_KEY_WONDER_WH_SIRVANSAHLAR', '[COLOR_MAGENTA]UNESCO:[ENDCOLOR] Baku Palace'),
+	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_HELP', 'Requires the [COLOR_MAGENTA]World Heritage[ENDCOLOR] Policy and the City must be built on the Coast. Receive a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Interpretive Centre in the City and 1 [ICON_ARTIFACT] Artifact. Start [COLOR_POSITIVE_TEXT]20[ENDCOLOR] Turns of "We Love the King Day". +10% [ICON_STRENGTH] Defense in the City. Contains 1 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.[NEWLINE][NEWLINE][ICON_CITY_STATE]City-State [COLOR_POSITIVE_TEXT]Friend[ENDCOLOR] Bonus: +3 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture each.[NEWLINE][ICON_CITY_STATE]City-State [COLOR_CYAN]Ally[ENDCOLOR] Bonus: +3 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture each.'),
+	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_QUOTE', '[NEWLINE]"Baku is like an old forgotten book that you discover in your grandmother''s attic. Once you''ve wiped off the dust and delved into its pages, you stand amazed at its treasures."[NEWLINE] - Reza Deghati[NEWLINE]'),
+	('TXT_KEY_WONDER_WH_SIRVANSAHLAR_TEXT', 'The Palace of the Shirvanshahs is a 15th-century palace built by the Shirvanshahs and described by UNESCO as "one of the pearls of Azerbaijan''s architecture". It is located in the Inner City of Baku and, together with the Maiden Tower, forms an ensemble of historic monuments inscribed under the UNESCO World Heritage List of Historical Monuments. Since its construction the quality of the site deteriorated, and there were even attempts to demolish it. During the existence of the Azerbaijan Democratic Republic (1918 1920), a number of measures were taken to study and fix architectural monuments. In 1920, the cleaning of the palace from the age-old layers of garbage and partial repairs began, accompanied by archaeological reconnaissance. Restoration continued until, in 1992, work on the palace complex began under Niyazi Rzayev, it was due to this final stage that the historical part of Baku earned its World Heritage status. SInce then the city has became a venue for major international events, such as the 57th Eurovision Song Contest in 2012, the European Grand Prix in 2016, and the final of the 2018-19 UEFA Europa League.');
+

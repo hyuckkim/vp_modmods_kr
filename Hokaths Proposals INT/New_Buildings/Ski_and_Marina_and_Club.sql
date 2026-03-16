@@ -1,0 +1,20 @@
+INSERT INTO Language_ko_KR
+	(Tag, Text)
+VALUES
+	('TXT_KEY_SKI_RESORT_HELP', ''),
+-- +5 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Mountain tiles within the workable territory of the City. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism for every 2 Tundra tiles worked by the City, and for every Snow tile. 20% of [ICON_TOURISM] Tourism created by the City counts as [ICON_GOLD] Gold Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City must be built on or next to Mountain. City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Country Club or Marina.
+	('TXT_KEY_SKI_RESORT', '스키 리조트'),
+	('TXT_KEY_CIV5_SKI_RESORT_TEXT', '스키 리조트는 스키, 스노보드 및 기타 겨울 스포츠를 위해 개발된 리조트입니다. 유럽에서는 대부분 스키 리조트가 스키장 내 또는 스키장에 인접한 도시나 마을입니다. 스키장은 피스트(스키 트레일)와 스키 리프트 시스템을 갖춘 산악 지역입니다. 북미에서는 스키장이 도시에서 멀리 떨어진 곳에 있는 경우가 더 흔하기 때문에 스키 리조트는 대개 목적지 리조트이며, 종종 목적에 맞게 건설되고 자체적으로 완비되어 있으며 스키가 주 활동입니다.'),	
+	('TXT_KEY_SKI_RESORT_STRATEGY', '스키 리조트는 산 타일을 사용한 도시에 가장 적합한 건물입니다. 또한 툰드라와 눈에서 큰 보너스를 제공하여 많은 양의 골드, 문화, 관광을 생산하고 관광을 더 많은 골드로 전환합니다! 스키 리조트를 지을 시간이 있다면 꼭 지으세요! 하지만 당신 도시의 관광 산업은 그렇게 클 수 없습니다! 마리나, 컨트리 클럽, 스키 리조트 건물 중에서 선호하는 지형에 따라 선택해야 합니다.'),	
+
+	('TXT_KEY_MARINA_HELP', ''),
+-- +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism from all Coast Tiles and an additional +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism from all Atolls and Sea Resources worked by the City. 20% of [ICON_TOURISM] Tourism created by the City counts as [ICON_GOLD] Gold Per Turn. [ICON_CARGO_SHIP] Sea Trade Routes gain +5 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]Can only be constructed in a Coastal City. City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Country Club or Ski Resort.
+	('TXT_KEY_MARINA', '마리나'),
+	('TXT_KEY_CIV5_MARINA_TEXT', '마리나는 요트와 소형 보트를 위한 계류 시설과 용품을 갖춘 부두나 분지입니다. 선착장은 호수나 바다와 연결된 강둑을 따라 위치할 수 있습니다. 마리나는 종종 리조트의 구성 요소이며 요트맨뿐만 아니라 관광객을 위한 모든 시설을 갖추고 있습니다.'),	
+	('TXT_KEY_MARINA_STRATEGY', '마리나는 해안 도시에 가장 적합한 건물입니다. 이는 많은 양의 골드, 문화, 관광을 생산하며, 관광을 더 많은 골드로 전환합니다! 마리나를 지을 시간이 있다면 꼭 지으세요! 하지만 당신 도시의 관광 산업은 그렇게 클 수 없습니다! 마리나, 컨트리 클럽, 스키 리조트 건물 중에서 선호하는 지형에 따라 선택해야 합니다.'),
+
+	('TXT_KEY_GOLFCLUB_HELP', ''),
+-- +2 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all Villages, Towns, and Lakes worked by the City. 5% of [ICON_GOLD] Gold created by the City counts as [ICON_CULTURE] Culture Per Turn.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.[NEWLINE][NEWLINE]City [COLOR_NEGATIVE_TEXT]cannot have[ENDCOLOR] a Ski Resort or Marina.
+	('TXT_KEY_GOLFCLUB', '컨트리 클럽'),
+	('TXT_KEY_CIV5_GOLFCLUB_TEXT', '컨트리 클럽은 개인이 소유한 클럽으로, 종종 회원 정원이 정해져 있으며 초대나 후원을 통해서만 입장이 가능하며, 일반적으로 다양한 레크리에이션 스포츠와 식사 및 오락 시설을 제공합니다. 런던과 같은 대도시에서는 신사클럽이 18세기에 커피숍이 차지했던 역할의 일부를 대신하게 되었습니다. 이후 미국에서는 1880년에서 1930년 사이에 상류 계층 엘리트들이 최초의 현대식 컨트리 클럽을 설립했습니다. 1920년대 산업화, 소득 증가, 교외화로 인해 컨트리 클럽의 수가 크게 늘어났습니다. 시간이 지나면서 회원 자격 제한은 완화되었지만, 고객의 소득 계층은 여전히 상류층이었습니다. 그 반대편에는 오로지 레크리에이션에 중점을 두고 할인된 가격으로 제공하는 헬스클럽이나 체육관이 있습니다. 이 두 극단 사이 어딘가에 골프가 주요 또는 유일한 스포츠 활동인 클럽이 있습니다. 실제로, 특히 미국과 캐나다 외 지역에서는 컨트리 클럽을 단순히 골프 클럽이라고 부르는 것이 일반적입니다.'),	
+	('TXT_KEY_GOLFCLUB_STRATEGY', '마리나나 스키 리조트를 만들어 도시를 주요 관광지로 만드는 대신, 컨트리 클럽을 만들어 부유한 상류층만 이용할 수 있도록 할 수 있습니다. 타일에서 골드와 문화를 얻을 수는 있지만 관광은 얻을 수 없습니다. 더욱이 관광에서 골드를 생산하는 대신, 골드에서 생산하는 문화의 양도 적어질 것입니다.');

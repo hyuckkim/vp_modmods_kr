@@ -1,0 +1,54 @@
+UPDATE Buildings
+SET
+	SpySecurityModifierPerXPop = 90, -- ESPIONAGE_SECURITY_PER_POPULATION_BUILDING_SCALER = 360, so 90/360 gives 1 per 4 population in city
+	SpySecurityModifier = 15
+WHERE BuildingClass = 'BUILDINGCLASS_CONSTABLE';
+
+-- this must load first before the appending occurs
+/*
+UPDATE Language_en_US
+SET Text = 'Gain 15 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
+WHERE Tag = 'TXT_KEY_BUILDING_CONSTABLE_HELP';
+
+UPDATE Language_en_US
+SET Text = 'Gain 15 [ICON_SPY] City Security, plus 1 for every four [ICON_CITIZEN] Citizens in the City. When you capture or identify a foreign Spy in this City, gain 50 [ICON_CULTURE] Culture, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_RESEARCH] Science in this City for every Global Monopoly on Empire.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art or Artifact. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD] and [ICON_PRODUCTION] Distress.'
+WHERE Tag = 'TXT_KEY_BUILDING_NETHERLANDS_SCHUTTERIJ_HELP';
+*/
+
+UPDATE Building_ClassesNeededInCity SET
+BuildingClassType = 'BUILDINGCLASS_PRISON'
+WHERE BuildingType = 'BUILDING_POLICE_STATION';
+
+INSERT INTO Building_YieldFromSpyAttack
+	(BuildingType, YieldType, Yield)
+SELECT
+	Type, 'YIELD_FOOD', 50
+FROM Buildings WHERE BuildingClass IN ('BUILDINGCLASS_PRISON');
+
+INSERT INTO Building_YieldFromSpyAttack
+	(BuildingType, YieldType, Yield)
+SELECT
+	Type, 'YIELD_CULTURE_LOCAL', 50
+FROM Buildings WHERE BuildingClass IN ('BUILDINGCLASS_PRISON');
+
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+SELECT
+	Type, 'YIELD_CULTURE_LOCAL', 5
+FROM Buildings WHERE BuildingClass IN ('BUILDINGCLASS_PRISON');
+
+INSERT INTO Building_TerrainYieldChanges
+	(BuildingType, TerrainType, YieldType, Yield)
+VALUES
+	('BUILDING_PRISON', 'TERRAIN_TUNDRA', 'YIELD_CULTURE_LOCAL', 1),
+	('BUILDING_PRISON', 'TERRAIN_TUNDRA', 'YIELD_GOLD', 1);
+
+INSERT INTO Unit_BuildOnFound
+	(UnitType, BuildingClassType)
+SELECT
+	Type, 'BUILDINGCLASS_PRISON'
+FROM Units WHERE Class = 'UNITCLASS_COLONIST';
+
+UPDATE Language_en_US
+SET Text = 'Use this unit to construct new cities. It cannot defend itself, so accompany it with a combat unit. When founded, cities built by Colonists start with 5 Citizens, claim additional territory, and automatically receive the following selection of buildings:[NEWLINE][NEWLINE][ICON_BULLET] Amphitheater[NEWLINE][ICON_BULLET] Aqueduct[NEWLINE][ICON_BULLET] Arena[NEWLINE][ICON_BULLET] Barracks[NEWLINE][ICON_BULLET] Council[NEWLINE][ICON_BULLET] Forge[NEWLINE][ICON_BULLET] Granary[NEWLINE][ICON_BULLET] Harbor[NEWLINE][ICON_BULLET] Herbalist[NEWLINE][ICON_BULLET] Library[NEWLINE][ICON_BULLET] Lighthouse[NEWLINE][ICON_BULLET] Market[NEWLINE][ICON_BULLET] Monument[NEWLINE][ICON_BULLET] Shrine[NEWLINE][ICON_BULLET] Smokehouse[NEWLINE][ICON_BULLET] Temple[NEWLINE][ICON_BULLET] Water Mill (if applicable)[NEWLINE][ICON_BULLET] Well (if applicable)[NEWLINE][ICON_BULLET] Windmill[NEWLINE][ICON_BULLET] Workshop[NEWLINE][ICON_BULLET] Prison[NEWLINE][NEWLINE]Note: the bonuses for constructing buildings from the Progress and Industry policy branches do not apply to the buildings constructed by Colonists!'
+WHERE Tag = 'TXT_KEY_UNIT_COLONIST_STRATEGY';

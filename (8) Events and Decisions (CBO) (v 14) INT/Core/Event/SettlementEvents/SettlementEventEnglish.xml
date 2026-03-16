@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_BUILDING_BENEVOLENCE">
+			<Text>[ICON_FLOWER] Benevolence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BENEVOLENCE_HELP">
+			<Text>Beneficent: +20% [ICON_GREAT_PEOPLE] Great People Generation in all cities.
+			[NEWLINE]Benevolence: Along with Beneficent's bonus, +10% [ICON_FOOD] Food in all cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PRAGMATIC">
+			<Text>[ICON_PEACE] Pragmatic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PRAGMATIC_HELP">
+			<Text>+1 [ICON_CULTURE] Culture and +1 [ICON_RESEARCH] Science to Villages. +2 [ICON_CULTURE] Culture and +2 [ICON_RESEARCH] Science to Towns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALEVOLENCE">
+			<Text>[ICON_OCCUPIED] Malevolence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALEVOLENCE_HELP">
+			<Text>Maleficent: All combat units earn the [COLOR_POSITIVE_TEXT]Malevolent[ENDCOLOR] promotion, gaining +15% [ICON_STRENGTH] Combat Strength.
+			[NEWLINE]Malevolence: Along with Maleficent's bonus, +10% [ICON_GOLD] Gold in all cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MALEVOLENCE">
+			<Text>Malevolent</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MALEVOLENCE_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY">
+			<Text>Moral Philosophy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_DESC">
+			<Text>Indeed, our study of philosophy has developed to the point where there are three major groups of study. One propose we as a nation should propser only when the lowest of all is prospering. For the greater good they call it. Another propose survivalism and natural selection. Only the strong will succumb the weak. While another rejects both of these proposals and propose that we let things take their own course. What do you suppose we support?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_1">
+			<Text>We should all live and help each other for the greater good!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_1_DESC">
+			<Text>[ICON_BULLET][COLOR_RESEARCH_STORED]+5 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_1_NOTIFICATION">
+			<Text>The government support the cause of the greater good!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_2">
+			<Text>Let things take their own course without intervention.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_2_DESC">
+			<Text>[ICON_BULLET][COLOR_GREY]Nothing happens.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_2_NOTIFICATION">
+			<Text>The government support the cause of non-intervention!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_3">
+			<Text>And we are strong are we not? We are not weak!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_3_DESC">
+			<Text>[ICON_BULLET][COLOR_WARNING_TEXT]-5 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_PHILOSOPHY_OUTCOME_3_NOTIFICATION">
+			<Text>The government support the cause of natural selection!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE">
+			<Text>Civil Reforms</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_DESC">
+			<Text>With political services and reform coming onto our new government, we must decide what to welcome and reject. Your foreign advisor suggest we adopt policies that involves the welfare of the people. Your economic advisor suggest that we should be more open toward trade offers allowing more mercenaries and foreign markets to flow into our economy. Your military advisor however recommends we reform our justice and military system to uphold our might across the nation and the world. What do you insist we do?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_1">
+			<Text>Listen to the foreign advisor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_1_DESC">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-5% [ICON_GOLD] Poverty Rate among the nation.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]+3 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_1_NOTIFICATION">
+			<Text>The reformed government wins the approval of the commoners!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_2">
+			<Text>Listen to the economic advisor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_2_DESC">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-2% [ICON_STRENGTH] Crime Rate among the nation.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]-2% [ICON_GOLD] Poverty Rate among the nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_2_NOTIFICATION">
+			<Text>The reformed nation opens its borders to foreign markets.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_3">
+			<Text>Listen to the military advisor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_3_DESC">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-5% [ICON_STRENGTH] Crime Rate among the nation.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]-3 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_CIVILSERVICE_OUTCOME_3_NOTIFICATION">
+			<Text>The reformed government has a stronger military and justice system.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

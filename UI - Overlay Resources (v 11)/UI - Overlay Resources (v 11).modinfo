@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f2968890-fe71-41d4-b609-805097365935" version="11">
+  <Properties>
+    <Name>UI - Overlay Resources</Name>
+    <Teaser>Highlight individual resources in strategic view</Teaser>
+    <Description>Changes the "Resources" option of the overlay drop-down menu in the strategic view and adds check-boxes for each resource; only selected resources are highlighted.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?117570-MOD-UI-Resources</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="45B68A32BA7BE4335F13E70F50A20172" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="97B111941D68942BF9168EFE16060FFA" import="0">UI/OverlayResources.lua</File>
+    <File md5="3E765F761802513ACC8218BCD9A469A9" import="0">UI/OverlayResources.xml</File>
+    <File md5="CFE70F24EA84EB19344A51F4584EC303" import="1">UI/OverlayResources_MiniMapOverlayHook.lua</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+    <File md5="81176BD91BF134F74897F8DEFB0B9646" import="0">XML/UIResources.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UIResources.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayResources.xml">
+      <Name>Resources</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayResources_MiniMapOverlayHook.lua">
+      <Name>Resources MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

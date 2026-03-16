@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9db218ee-7efa-4b4c-c234-014666n8l33t" version="2">
+  <Properties>
+    <Name>(n) Semper Fidelis</Name>
+    <Teaser>Adds 3 new Ideologies for Vox Populi, focussed on the Religious Victory</Teaser>
+    <Description>Includes: 
+	[NEWLINE][ICON_BULLET]Devotion -- a religious-fundementalism themed ideology
+	[NEWLINE][ICON_BULLET]Harmony -- an environmentalism and international-cooperation themed ideology		
+	[NEWLINE][ICON_BULLET]Prosperity -- a neoliberalism themed ideology
+	[NEWLINE][ICON_BULLET]Ideology Balance -- changes to the base ideologies to (a) be compatible and (b) be balanced with the additions
+[NEWLINE][NEWLINE]Does not include:
+	[NEWLINE][ICON_BULLET]Religious Victory -- this is a separate mod
+    </Description>
+    <Authors>Hokath</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi"/>
+  </Dependencies>
+  <References>    
+    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="5" maxversion="999" title="Hokaths  Tweaks"/>
+    <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="VP EUI Compatibility"/>
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="(overhaul) More Wonders for VP"/>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="UCS" /> 
+    <Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" minversion="0" maxversion="999" title="Unit Scaling"/>
+  </References>
+  <Blocks>
+    <Mod id="5db211be-2efa-4b3c-b021-014046f8233a" minversion="0" maxversion="999" title="Devotion Ideology"/>   
+    <Mod id="6db212bt-7efa-4b3c-b123-014046n8233f" minversion="0" maxversion="999" title="Harmony Ideology"/>
+    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="4" title="Hokaths Tweaks"/>
+    <Mod id="6eab2123-f4cb-401a-a165-55833306c1ae" minversion="0" maxversion="12" title="Bare Necessities (processes)"/>
+    <Mod id="04760492-5523-4cee-85b3-9146f5edc34f" minversion="0" maxversion="20" title="LS Durrani"/>
+  </Blocks>
+  <Files>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Locust/M4.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Locust/M4SREF.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Locust/M4.gr2</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Locust/M4.fxsxml</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Locust/shermanflag32.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="0">Assets/Locust/ShermanArtInfo.sql</File>
+
+    <File md5="F6FB62B5AB4F761F3A7854F0E440A2CC" import="1">Assets/Mujah/ararm1.blend</File>
+    <File md5="6B057A1537D48E7FE27AAEB2678AE905" import="1">Assets/Mujah/ararm1.dds</File>
+    <File md5="8B6CEC6F521710D67923837FBC1256D3" import="1">Assets/Mujah/ararm1.fbx</File>
+    <File md5="224F0A6B9338A1343446A49E7370D0C6" import="1">Assets/Mujah/ararm1.fxsxml</File>
+    <File md5="084D8C3F0FD095D3C16CDEDA54A6E7A5" import="1">Assets/Mujah/ararm1.gr2</File>
+    <File md5="F5FC75850857B9EF802154EAD6D9087B" import="1">Assets/Mujah/ararm1_sref.dds</File>
+    <File md5="0AE72C3101A07F800707299518EBB4FC" import="1">Assets/Mujah/ararm2.dds</File>
+    <File md5="B62B2C4D5A68CAA92F9AC852CB26C2AF" import="1">Assets/Mujah/ararm2.fxsxml</File>
+    <File md5="9C6A8A654EDAF3C30D84D40CBE1C343D" import="1">Assets/Mujah/ararm2.gr2</File>
+    <File md5="0DF56130DA2C1F5A9F2A33D1AB108D18" import="1">Assets/Mujah/ararm2_sref.dds</File>
+    <File md5="5631E05F5F024620114B12B63C68022C" import="1">Assets/Mujah/ararm3.dds</File>
+    <File md5="344E6864AF7438A7BB8DACFD2B5D1E2F" import="1">Assets/Mujah/ararm3.fxsxml</File>
+    <File md5="8E63678C521D50CFFC9B7CA76A5100DF" import="1">Assets/Mujah/ararm3.gr2</File>
+    <File md5="0809F8BDC11558C96CFEDEAB41DFA21F" import="1">Assets/Mujah/ararm3_sref.dds</File>
+    <File md5="C3FA7DBABA172A0CF9B10049DBF16FA9" import="1">Assets/Mujah/MujahUnitAlphaAtlas.dds</File>
+    <File md5="A2179FDD33DEB800AF0032A019C18991" import="1">Assets/Mujah/SV_MujahUnit.dds</File>
+    <File md5="33da58768198c0df76372314ec912bb7" import="0">Assets/Mujah/MujArtDefine.sql</File>
+
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/no_gloss.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/Paratrooper_Hungary.blend</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/Paratrooper_Hungary.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/Paratrooper_Hungary.fxsxml</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/Paratrooper_Hungary.gr2</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/Peacekeeper/no_gloss.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Peacekeeper/PeacekeeperUnitAlphaAtlas.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="0">Assets/Peacekeeper/PeacekeeperArtDefine.sql</File>
+
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/SocialPoliciesDevotion.dds</File>
+    <File md5="4b6ed496ad41b1b6e4a96086d7e29f14" import="1">Assets/SocialPoliciesDevotion_long.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/SocialPoliciesProsperity.dds</File>
+    <File md5="4b6ed496ad41b1b6e4a96086d7e29f14" import="1">Assets/SocialPoliciesProsperity_long.dds</File>
+    <File md5="CD2C3E3ACEB1C57B674D412B6B29C0E8" import="1">Assets/SocialPoliciesHarmony.dds</File>
+    <File md5="4b6ed496ad41b1b6e4a96086d7e29f14" import="1">Assets/SocialPoliciesHarmony_long.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/EVC_Victories.dds</File>
+
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_256.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_64.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_45.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_32.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Semper_PromoAtlas_16.dds</File>
+
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_45.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_64.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_80.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_PolicyAtlas_256.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_FontIcons.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/SF_FontIcons.ggxml</File>
+
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_256.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_128.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_80.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_64.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Prosperity_45.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Devotion_256.dds</File>
+    <File md5="f1fda0d60a5212a2931b0c564d95321a" import="1">Assets/Devotion_128.dds</File>
+    <File md5="7601d125866d0bf978f1164956125532" import="1">Assets/Devotion_80.dds</File>
+    <File md5="dab965332957c2d120b32bf4e35ee507" import="1">Assets/Devotion_64.dds</File>
+    <File md5="aef1627d0ed4c2325ee65df60d92e289" import="1">Assets/Devotion_45.dds</File>
+    <File md5="3c9bd57ed32a8aef5946e3f1a0f91c38" import="1">Assets/Harmony_256.dds</File>
+    <File md5="f1fda0d60a5212a2931b0c564d95321a" import="1">Assets/Harmony_128.dds</File>
+    <File md5="7601d125866d0bf978f1164956125532" import="1">Assets/Harmony_80.dds</File>
+    <File md5="dab965332957c2d120b32bf4e35ee507" import="1">Assets/Harmony_64.dds</File>
+    <File md5="aef1627d0ed4c2325ee65df60d92e289" import="1">Assets/Harmony_45.dds</File>
+    <File md5="dab965332957c2d120b32bf4e35ee507" import="1">Assets/Harmony_32.dds</File>
+    <File md5="aef1627d0ed4c2325ee65df60d92e289" import="1">Assets/Harmony_16.dds</File>
+
+    <File md5="4ff617bddaa3662b2485119f8536fcd5" import="0">Assets/IconTextureAtlases.xml</File>
+
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_CadetChapel_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_CrystalCathedral_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_DreamCity_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Epcot_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_GrahaNginden_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_RioCathedral_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_YoidoGospel_splash.dds</File>
+    <File md5="273fbffc5efffb7c53b2e6b4572b1091" import="1">Assets/Wonder_splash/Wonder_Kartarpur_splash.dds</File>
+    <File md5="af3dbcbdcb964c06ba96c9a6902a5e0b" import="1">Assets/Wonder_splash/Wonder_MeccaHotel_splash.dds</File>
+    <File md5="5d1c8bd3e48a5be7dcf4084f2efb91cf" import="1">Assets/Wonder_splash/Wonder_VaranasiTemple_splash.dds</File>
+    <File md5="56e6ee2e5c12d0e4cbb042070fa014a9" import="1">Assets/Wonder_splash/Wonder_UbudiahMosque_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_RueVoltaire_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Woodstock_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Galathea_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Volkeshalle_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Dinosaur_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_AbuSimbel_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_CologneCathedral_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Butrint_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Sangay_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Sirvansahlar_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Timbuktu_splash.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Assets/Wonder_splash/Wonder_Volkeshalle_splash.dds</File>
+
+    <File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Database/Ideology_Balance/AutocracyTenets.sql</File>
+    <File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Database/Ideology_Balance/OrderTenets.sql</File>
+    <File md5="aef34d02e3bfc08cc48c19b93f8df840" import="0">Database/Ideology_Balance/FreedomTenets.sql</File>
+
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/PolicyBranchTypes.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Might.sql</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Shared.sql</File>    
+
+    <File md5="529f0f40d0a3b7b0968c96f3da06a3d7" import="0">Database/Prosperity/NewPolicyText.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/NewPolicies.xml</File>   
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/NewPolicies.sql</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/NewUnits.xml</File> 
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/NewWonders.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/NewWonders.sql</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Prosperity/BaseIdeologyChanges.sql</File>
+
+    <File md5="529f0f40d0a3b7b0968c96f3da06a3d7" import="0">Database/Devotion/NewPolicyText.xml</File>
+    <File md5="ADF628353EEF7637A8412EEF31AEA35B" import="0">Database/Devotion/NewUnits.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Devotion/NewPolicies.xml</File>
+    <File md5="2b11d84bd26033c7b4c8621f01e7dbde" import="0">Database/Devotion/NewPolicies.sql</File>
+    <File md5="89183b1f3d18a33cb2da5be6d11af0bc" import="0">Database/Devotion/NewWonders.xml</File>
+    <File md5="e306904897820977b897f686c04f0b16" import="0">Database/Devotion/NewWonderText.xml</File>
+
+    <File md5="529f0f40d0a3b7b0968c96f3da06a3d7" import="0">Database/Harmony/NewPolicyText.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/NewPolicies.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/NewUnits.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/NewPolicies.sql</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/NewWonders.xml</File>
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/NewWonders.sql</File>   
+    <File md5="aebc865d64f9fbdaeb30d273ca8ddf2a" import="0">Database/Harmony/BaseIdeologyChanges.sql</File>
+
+    <File md5="431d06e0a82b98f0b0bc7f5350e98f59" import="1">Overrides/ChooseIdeologyPopup.xml</File>
+    <File md5="995e055f24e2eb4b134a11e4dcbe40e6" import="1">Overrides/ChooseIdeologyPopup.lua</File>
+    <!-- right now we are overwriting EUI. maybe we load these first and then overwrite those too, then user can deleted EUI folder? -->
+    <File md5="806da076146aeb447120dc71edabb65f" import="1">Overrides/SocialPolicyPopup.lua</File>
+    <File md5="7a286fc6116555db4f22346416e05dea" import="0">Overrides/WonderDeleter.sql</File>    
+    <File md5="7a286fc6116555db4f22346416e05dea" import="0">Overrides/FreePolicyChange.sql</File>    
+    <File md5="806da076146aeb447120dc71edabb65f" import="1">VP3a/SocialPolicyPopup.lua</File>   
+    <File md5="806da076146aeb447120dc71edabb65f" import="1">VP3a/SocialPolicyPopup.xml</File>
+
+    <File md5="806da076146aeb447120dc71edabb65f" import="1">Lua/AdoptIdeologies.lua</File>
+    <File md5="806da076146aeb447120dc71edabb65f" import="1">Lua/TimeVictoryPolicies.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Assets/Locust/ShermanArtInfo.sql</UpdateDatabase>
+      <UpdateDatabase>Assets/Mujah/MujArtDefine.sql</UpdateDatabase>
+      <UpdateDatabase>Assets/Peacekeeper/PeacekeeperArtDefine.sql</UpdateDatabase>
+
+      <UpdateDatabase>Assets/IconTextureAtlases.xml</UpdateDatabase>
+
+      <UpdateDatabase>Database/PolicyBranchTypes.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Shared.sql</UpdateDatabase>
+
+      <UpdateDatabase>Database/Ideology_Balance/AutocracyTenets.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Ideology_Balance/OrderTenets.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Ideology_Balance/FreedomTenets.sql</UpdateDatabase>
+
+      <UpdateDatabase>Database/Prosperity/NewPolicyText.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Prosperity/NewPolicies.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Prosperity/NewUnits.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Prosperity/NewWonders.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Prosperity/NewPolicies.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Prosperity/NewWonders.sql</UpdateDatabase>     
+      <UpdateDatabase>Database/Prosperity/BaseIdeologyChanges.sql</UpdateDatabase>
+
+      <UpdateDatabase>Database/Devotion/NewPolicyText.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Devotion/NewWonderText.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Devotion/NewUnits.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Devotion/NewPolicies.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Devotion/NewPolicies.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Devotion/NewWonders.xml</UpdateDatabase>
+
+      <UpdateDatabase>Database/Harmony/NewPolicyText.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Harmony/NewPolicies.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Harmony/NewUnits.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Harmony/NewWonders.xml</UpdateDatabase>
+      <UpdateDatabase>Database/Harmony/NewPolicies.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Harmony/NewWonders.sql</UpdateDatabase>     
+      <UpdateDatabase>Database/Harmony/BaseIdeologyChanges.sql</UpdateDatabase>
+
+      <UpdateDatabase>Database/Might.sql</UpdateDatabase>
+
+      <UpdateDatabase>Overrides/WonderDeleter.sql</UpdateDatabase>
+      <UpdateDatabase>Overrides/FreePolicyChange.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/TimeVictoryPolicies.lua">
+      <Name>TimeVictoryPolicies</Name>
+      <Description>For the time victory T3 tenets</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/AdoptIdeologies.lua">
+      <Name>AdoptFidelis</Name>
+      <Description>For the AI to choose Semper Fidelis ideologies</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

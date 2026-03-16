@@ -1607,7 +1607,7 @@
 					</Box>
 
 					<Box Color="0,0,0,0" Size="284,34">
-						<PullDown  Anchor="L,T" ScrollThreshold="110" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourWritingPullDown">
+						<PullDown  Anchor="L,T" ScrollThreshold="250" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourWritingPullDown">
 							<ButtonData>
 								<GridButton Style="SquareButton" Anchor="L,C" >
 									<Stack Anchor="L,T" StackGrowth="Right" Offset="0,0" Padding="0">
@@ -1662,7 +1662,7 @@
 					</Box>
 
 					<Box Color="0,0,0,0" Size="284,34">
-						<PullDown  Anchor="L,T" ScrollThreshold="110" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourArtPullDown">
+						<PullDown  Anchor="L,T" ScrollThreshold="250" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourArtPullDown">
 							<ButtonData>
 								<GridButton Style="SquareButton" Anchor="L,C" >
 									<Stack Anchor="L,T" StackGrowth="Right" Offset="0,0" Padding="0">
@@ -1717,7 +1717,7 @@
 					</Box>
 
 					<Box Color="0,0,0,0" Size="284,34">
-						<PullDown  Anchor="L,T" ScrollThreshold="110" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourArtifactPullDown">
+						<PullDown  Anchor="L,T" ScrollThreshold="250" Size="282,34" Offset="1,0" AutoSizePopup="0" ID="YourArtifactPullDown">
 							<ButtonData>
 								<GridButton Style="SquareButton" Anchor="L,C" >
 									<Stack Anchor="L,T" StackGrowth="Right" Offset="0,0" Padding="0">
@@ -1864,7 +1864,7 @@
 			<!-- Culture Victory Tab Content-->
 			<Box Size="953,459" Color="0,0,0,0" ID="CultureVictoryPanel" Hidden="1">
 				<!-- Column Headers -->
-				<Stack Anchor="L,T" StackGrowth="Right" Offset="28,20" Padding="0">
+				<Stack Anchor="L,T" StackGrowth="Right" Offset="08,20" Padding="0">
 					<Button ID="VictoryPlayerNameHeader" Anchor="C,C" Size="200,24" Style="BoxButton">
 						<ShowOnMouseOver>
 							<AlphaAnim Anchor="C,C" Offset="0,0" Size="260,30" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">

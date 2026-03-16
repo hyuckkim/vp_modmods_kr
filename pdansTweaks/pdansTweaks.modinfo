@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8562c016-f5bb-79hg-b37e-a3b40d3yg13l" version="36">
+	<Properties>
+	<Name>pineappledan's Vox Populi Tweaks</Name>
+	<Teaser>Alters unit lines and buildings, adds new units, and changes some civilizations</Teaser>
+	<Description>Alters stuff for Vox Populi</Description>
+	<Authors>pineappledan</Authors>
+	<HideSetupGame>0</HideSetupGame>
+	<AffectsSavedGames>1</AffectsSavedGames>
+	<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+	<SupportsSinglePlayer>1</SupportsSinglePlayer>
+	<SupportsMultiplayer>1</SupportsMultiplayer>
+	<SupportsHotSeat>1</SupportsHotSeat>
+	<SupportsMac>1</SupportsMac>
+	<ReloadAudioSystem>1</ReloadAudioSystem>
+	<ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+	<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+	<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+	<Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+	</Dependencies>
+	<References>
+	</References>
+	<Files>
+	<File md5="6032315024f0cbe141ea21a6eda9f715" import="0">Policies/PolicyChanges.sql</File>
+	<File md5="3238b0f5af9931fc73a43eb02a2ee528" import="0">Civilizations/BrazilChanges.sql</File>
+<!--	<File md5="d9729feb74992cc3482b350163a1a010" import="0">Civilizations/CarthageChanges.sql</File>	-->
+	<File md5="dfjkhkjahjkhfk4jhfakwje4t34438ff" import="0">Civilizations/KoreaChanges.sql</File>
+	<File md5="shdfkrysurysueue347r4873w478yfff" import="0">Civilizations/FranceChanges.sql</File>
+	<File md5="vjanfl4qkun4o3heoiodbhsjiawjp8sh" import="0">Civilizations/JapanChanges.sql</File>
+	<File md5="slrj38xk3jxhth8hdgw1nwid945ud7ln" import="0">Civilizations/JapanChanges.lua</File>	
+	<File md5="6226f7cbe59e99a90b5cef6f94f966fd" import="0">Civilizations/IndiaChanges.sql</File>
+	<File md5="8d0c8f9d1a9539021fda006427b993b9" import="0">Civilizations/NetherlandsChanges.sql</File>
+	<File md5="e130e5e618f15cee7a519d8b7b8306a0" import="0">Civilizations/SonghaiChanges.sql</File>
+	<File md5="6d2eb0254751d64657a6589a748a00fd" import="0">Civilizations/ThiccChina.sql</File>
+    <File md5="9354547F0AC14536F3C9DC7EC7EA44B6" import="0">Civilizations/ThiccChina.lua</File>
+	<File md5="3a4a5bfd5114f2278d260887ea4f78cb" import="0">Civilizations/MongoliaChanges.sql</File>
+	<File md5="036d4ba6e8112c37ba7d2b23ad15a5c5" import="0">Compatibility/4UCCompatibility.sql</File>
+	<File md5="9f488a2829a2c1019ca79f25bcd4d05c" import="0">Compatibility/CustomCivsCompatibility.sql</File>
+	<File md5="49f0bad299687c62334182178bfd75d8" import="0">Units/ZeppelinLine/Zeppelin.sql</File>
+	<File md5="b447c27a00e3a348881b0030177000cd" import="1">Units/ZeppelinLine/UAV/fx_triggers_sman_uav_Predator.ftsxml</File>
+	<File md5="9f1019eeb4f3b35a43241388c227be57" import="1">Units/ZeppelinLine/UAV/SMAN_UAV_Predator.fxsxml</File>
+	<File md5="5060daf735472da82b647fc56c196695" import="1">Units/ZeppelinLine/UAV/SMAN_UAV_Predator.gr2</File>
+	<File md5="7815696ecbf1c96e6894b779456d330e" import="1">Units/ZeppelinLine/UAV/SMAN_UAV_Predator_diff.dds</File>
+	<File md5="e0d9d3862dfb270de65719d43749df5e" import="1">Units/ZeppelinLine/UAV/SMAN_UAV_Predator_sref.dds</File>
+	<File md5="95998cea0e79ab27ae6ff8ce280d2a7c" import="1">Units/ZeppelinLine/UAV/UAV_SV.dds</File>
+	<File md5="048b4aac266599b4f55eba4c7e15ce48" import="1">Units/ZeppelinLine/UAV/UAV_UnitFlag32.dds</File>
+	<File md5="43c670160d1337d0b227db0ec5b8561a" import="1">Units/ZeppelinLine/Zeppelin/WWI_Zeppelin_Flag.dds</File>
+	<File md5="77d2c302534fec4cf857e8eb05603c50" import="1">Units/ZeppelinLine/Zeppelin/WWI_Zeppelin_SV.dds</File>
+	<File md5="10a529a08ae349cb1f685ffb9e0261fc" import="1">Units/ZeppelinLine/Zeppelin/ZeppelinSREF.dds</File>
+	<File md5="f999a806999abae1cfb66958dd7630c2" import="1">Units/ZeppelinLine/Zeppelin/ZeppelinTC.dds</File>
+	<File md5="fa6dda6aeddc032482582d9b51c5a82c" import="1">Units/ZeppelinLine/Zeppelin/ZeppelinTC.fxsxml</File>
+	<File md5="7443f0799bcaaa5ce260a0ae6c221778" import="1">Units/ZeppelinLine/Zeppelin/ZeppelinTC.gr2</File>
+	<File md5="0a683b1588023dde3689c1b5055d7c5d" import="1">LateGame/NationalParks/Art/crater.dds</File>
+	<File md5="2fde2fc68de66a1558c755805a7ae54a" import="1">LateGame/NationalParks/Art/destroyed_city.dds</File>
+	<File md5="ab42ec6ef554547df11f1c5862918297" import="1">LateGame/NationalParks/Art/outpost.dds</File>
+	<File md5="ec01bfe7656a7c778d3c3b21da4d8f31" import="1">LateGame/NationalParks/Art/WatchTower.fxsxml</File>
+	<File md5="d5cf3834b2cc7e97d267207c8675c3b9" import="1">LateGame/NationalParks/Art/WatchTower.gr2</File>
+	<File md5="4c2dc96d789b104fe6ce911984d4d2ed" import="1">LateGame/NationalParks/Art/WatchTower_HB.fxsxml</File>
+	<File md5="cb132b3e7a8ed03adca97dbe1c37c808" import="1">LateGame/NationalParks/Art/WatchTower_HB.gr2</File>
+	<File md5="25D0744DE8F298AAEDADE7DD87C9EBBB" import="1">LateGame/NationalParks/Art/ForestAtlas256.dds</File>
+    <File md5="2590A909FE43EF3C4F3C4DF804B00B54" import="1">LateGame/NationalParks/Art/ForestAtlas64.dds</File>
+    <File md5="0F1BADC81E1418ED51E2655779599CFC" import="1">LateGame/NationalParks/Art/SV_PlantForest.dds</File>
+    <File md5="4689427241EEF750A5029550C109F4CE" import="1">LateGame/NationalParks/Art/UnitAction45_Forest.dds</File>
+    <File md5="CE7E214F179A6328C803EA80631C0DD5" import="1">LateGame/NationalParks/Art/UnitAction64_Forest.dds</File>
+    <File md5="9F6B2A579578EFA25FD0B3349A028556" import="0">LateGame/NationalParks/Database/NationalPark.sql</File>
+    <File md5="F51A3D79EA84DF7CD59FE217B4F9C20E" import="0">LateGame/NationalParks/Database/NationalPark.xml</File>
+	<File md5="67dd22ecc3613785bf7bed71a6d023a4" import="0">LateGame/GrocerRework/Supermarket.sql</File>
+	<File md5="ee229283f5c8e8db567334075e86f2ff" import="0">LateGame/GrocerRework/Supermarket.lua</File>
+	<File md5="127acc0527ac85a577622c1a63c2744c" import="1">LateGame/GrocerRework/Pharmacy045.dds</File>
+	<File md5="39b8dd963b280b8b89481d74fb11c769" import="1">LateGame/GrocerRework/Pharmacy064.dds</File>
+	<File md5="2267d0d465d57ab9491c1aa8c5ed17d0" import="1">LateGame/GrocerRework/Pharmacy080.dds</File>
+	<File md5="eca7e9157692470c43aa89355f09236c" import="1">LateGame/GrocerRework/Pharmacy128.dds</File>
+	<File md5="91a1f69effcb0d810224f2931d1a91b0" import="1">LateGame/GrocerRework/Pharmacy256.dds</File>
+	</Files>
+	<Actions>
+	<OnModActivated>
+		<UpdateDatabase>Policies/PolicyChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/BrazilChanges.sql</UpdateDatabase>
+<!--		<UpdateDatabase>Civilizations/CarthageChanges.sql</UpdateDatabase> -->
+		<UpdateDatabase>Civilizations/KoreaChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/JapanChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/FranceChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/NetherlandsChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/SonghaiChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/IndiaChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/ThiccChina.sql</UpdateDatabase>		
+		<UpdateDatabase>Civilizations/MongoliaChanges.sql</UpdateDatabase>
+		<UpdateDatabase>Compatibility/4UCCompatibility.sql</UpdateDatabase>
+		<UpdateDatabase>Compatibility/CustomCivsCompatibility.sql</UpdateDatabase>
+		<UpdateDatabase>LateGame/GrocerRework/Supermarket.sql</UpdateDatabase>
+		<UpdateDatabase>LateGame/NationalParks/Database/NationalPark.sql</UpdateDatabase>
+		<UpdateDatabase>LateGame/NationalParks/Database/NationalPark.xml</UpdateDatabase>
+		<UpdateDatabase>Units/ZeppelinLine/Zeppelin.sql</UpdateDatabase>
+	</OnModActivated>
+	</Actions>
+	<EntryPoints>
+	<EntryPoint type="InGameUIAddin" file="Civilizations/JapanChanges.lua">
+		<Name>Sakoku Japan</Name>
+		<Description>Lua for Japan</Description>
+	</EntryPoint>		
+	<EntryPoint type="InGameUIAddin" file="Civilizations/ThiccChina.lua">
+		<Name>Thicc China</Name>
+		<Description>Lua for China</Description>
+	</EntryPoint>	
+	<EntryPoint type="InGameUIAddin" file="LateGame/GrocerRework/Supermarket.lua">
+		<Name>Supermarket Function</Name>
+		<Description>Gives food to Supermarkets</Description>
+    </EntryPoint>
+	</EntryPoints>
+</Mod>

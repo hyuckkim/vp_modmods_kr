@@ -1,0 +1,83 @@
+
+
+		<Row>
+			<Type>BUILDINGCLASS_D_FOR_BASADI</Type>
+			<DefaultBuilding>BUILDING_D_FOR_BASADI</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_D_FOR_BASADI_HELP</Description>
+		</Row>
+		<Row>
+			<Type>BUILDING_D_FOR_BASADI</Type>
+			<BuildingClass>BUILDINGCLASS_D_FOR_BASADI</BuildingClass>
+			<Description>TXT_KEY_BUILDING_D_FOR_BASADI</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_D_FOR_BASADI_TEXT</Civilopedia>
+			<Help>TXT_KEY_BUILDING_D_FOR_BASADI_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_D_FOR_BASADI_STRATEGY</Strategy>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<ShowInPedia>0</ShowInPedia>
+			<Cost>-1</Cost>
+		</Row>
+		
+
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_BASADI">
+			<Text>Basadi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_BASADI_HELP">
+			<Text>This is a dummy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_BASADI_STRATEGY">
+			<Text>This is a dummy. See [LINK=IMPROVEMENT_THP_BASADI]Basadi[\LINK].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_D_FOR_BASADI_TEXT">
+			<Text></Text>
+		</Row>
+
+
+--========================
+-- Basadi (Holy Site)
+--========================
+INSERT INTO Trait_BuildsUnitClasses
+	(TraitType, UnitClassType, BuildType)
+SELECT
+	Type, 'UNITCLASS_PROPHET', 'BUILD_THP_BASADI' 
+FROM Traits a, Leader_Traits b, Civilization_Leaders c, Civilization_JFD_CultureTypes d
+WHERE a.Type = b.TraitType AND b.LeaderType = c.LeaderheadType AND 
+c.CivilizationType = d.CivilizationType AND d.CultureType = 'CULTURE_JFD_BHARATA';
+
+INSERT INTO Trait_NoBuilds	
+			(TraitType, 		BuildType)
+SELECT	
+	Type,	'BUILD_HOLY_SITE'
+FROM Traits a, Leader_Traits b, Civilization_Leaders c, Civilization_JFD_CultureTypes d
+WHERE a.Type = b.TraitType AND b.LeaderType = c.LeaderheadType AND 
+c.CivilizationType = d.CivilizationType AND d.CultureType = 'CULTURE_JFD_BHARATA';
+
+CREATE TRIGGER BasadiTrait
+AFTER INSERT ON Civilization_JFD_CultureTypes WHEN NEW.CultureType = 'CULTURE_JFD_BHARATA'
+BEGIN
+	INSERT INTO Trait_BuildsUnitClasses
+		(TraitType, UnitClassType, BuildType)
+	SELECT
+		lt.TraitType, uc.Type, 'BUILD_THP_BASADI'
+	FROM Leader_Traits lt, Civilization_Leaders cl, UnitClasses uc
+	WHERE 
+	uc.Type IN ('UNITCLASS_PROPHET') AND
+	NEW.CivilizationType = cl.CivilizationType AND 
+	cl.LeaderheadType = lt.LeaderType;
+
+	INSERT INTO Trait_NoBuilds
+		(TraitType, BuildType)
+	SELECT
+		lt.TraitType, b.Type
+	FROM Leader_Traits lt, Civilization_Leaders cl, Builds b
+	WHERE 
+	b.Type IN ('BUILD_HOLY_SITE') AND
+	NEW.CivilizationType = cl.CivilizationType AND 
+	cl.LeaderheadType = lt.LeaderType;
+END;
+
+-- this is a UI workaround
+REPLACE INTO Language_en_US 
+	(Tag, Text)
+SELECT
+	'TXT_KEY_BUILDING_D_FOR_BASADI_HELP', 'Requires the [ICON_CULTURE_JFD_BHARATA] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_BHARATA_SHORT_DESC}[ENDCOLOR] Cultural Group. Replaces the Holy Site.';

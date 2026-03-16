@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0b6a31c9-fdda-442b-898c-185a49f12d16" version="5">
+  <Properties>
+    <Name>!Jarcast's Hidden Wonders (VP)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Adds 28 more World Wonders to the game.</Teaser>
+    <Description>28 new World Wonders.</Description>
+    <Authors>Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/threads/jarcasts-hidden-wonders-for-vp.698137/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References>
+    <Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders for VP" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="21A4B764C03D1D2454F32FBA7CC46B46" import="1">Art/01- Pre-Medieval/BANAUE_splash.dds</File>
+    <File md5="A8432DE1C92D9772B5021F18732AD452" import="1">Art/02- Medieval/CHURCH_NATIVITY_splash.dds</File>
+    <File md5="68AA85C951AC296E0F9F71F414416151" import="1">Art/02- Medieval/HORYUJI_splash.dds</File>
+    <File md5="D2FDD5E063F77302B770E1C922B25F1A" import="1">Art/02- Medieval/JETAVANARAMAYA_splash.dds</File>
+    <File md5="CD65252A1EC879531A9C5D28B9B6EC8E" import="1">Art/02- Medieval/KELDUR_HALL_splash.dds</File>
+    <File md5="B10E25D4D5A856D4332CA37250CF9832" import="1">Art/02- Medieval/OLD_NEW_SYNAGOGUE_splash.dds</File>
+    <File md5="D5501B7DCF28D863174E88AE31CA68B3" import="1">Art/02- Medieval/SHAOLIN_splash.dds</File>
+    <File md5="CC3E591AEF4F3D9B8874F5407346CC32" import="1">Art/03- Renaissance/KESHGARH_QILA_splash.dds</File>
+    <File md5="9C5E670F72E7A070C5752F9E28DF4470" import="1">Art/03- Renaissance/PADUA_GARDEN_splash.dds</File>
+    <File md5="E4A673D0EB69469B5952B0CF52B8E8AF" import="1">Art/03- Renaissance/TAKTSANG_splash.dds</File>
+    <File md5="703F1AD060F658B71FB2D3CEB2D7A94F" import="1">Art/04- Industrial/CAPITOLINE_splash.dds</File>
+    <File md5="35092849FE1B5FEE93B65479EA6C7910" import="1">Art/04- Industrial/HUMBERSTONE_STLAURA_splash.dds</File>
+    <File md5="F57DFC90CA0E473D780BF0A016A2FA08" import="1">Art/04- Industrial/KASUBI_TOMBS_splash.dds</File>
+    <File md5="CACEF5AB43E7913DBB29FE4CC633F87B" import="1">Art/04- Industrial/LAFERRIERE_splash.dds</File>
+    <File md5="B16621EA6FA67F76E2C110DB2676D762" import="1">Art/04- Industrial/OMBILIN_MINE_splash.dds</File>
+    <File md5="02ADE045E391FEEBD88EF485577FBA1C" import="1">Art/04- Industrial/TE_TII_MARAE_splash.dds</File>
+    <File md5="F8C529633EA6701B13D8ED44EEB0DF5D" import="1">Art/04- Industrial/VICTORIA_TERMINUS_splash.dds</File>
+    <File md5="FFCDC83A6BD8605B98CCE2B8ECD23197" import="1">Art/05- Modern/JOHNS_HOPKINS_splash.dds</File>
+    <File md5="D796F7075700F26E199F4E25B2CC555B" import="1">Art/05- Modern/MAX_PLANCK_SOC_splash.dds</File>
+    <File md5="CFE130BE97BF1C0F91FA0AE7340C67DE" import="1">Art/06- Atomic Era/CHANGI_AIRPORT_splash.dds</File>
+    <File md5="7EA65A7C3378B5C7E064B9D24836E4C8" import="1">Art/05- Modern/GOLDEN_GATE_splash.dds</File>
+    <File md5="1148A4658A2436AD097D2D8547E27CDB" import="1">Art/01- Pre-Medieval/AKRAGATOS_splash.dds</File>
+    <File md5="2184FE02430F04CB7C407EF153579DEC" import="1">Art/01- Pre-Medieval/NIPISAT_splash.dds</File>
+    <File md5="F125CC40D93553369AEAAA25B697A4AF" import="1">Art/01- Pre-Medieval/PISCINA_MIR_splash.dds</File>
+    <File md5="188493104BFC07F12B52824CD72A7402" import="1">Art/02- Medieval/ASSISI_splash.dds</File>
+    <File md5="CED2C1269D75C2ECFD3ADA935A463B92" import="1">Art/02- Medieval/KYZ_KALA_splash.dds</File>
+    <File md5="D19E4BB0105AF346F097E25D2374177D" import="1">Art/02- Medieval/LARABANGA_splash.dds</File>
+    <File md5="FF0756E60CDDF940C90F5ECFBEC69F88" import="1">Art/02- Medieval/ST_CATHERINE_splash.dds</File>
+    <File md5="7E61EEF671A160B2D7276DC0B7C2A5B7" import="1">Art/03- Renaissance/CHANGDEOKGUNG_splash.dds</File>
+    <File md5="18E29168D822054BB3EE7D8AF7A54F7C" import="1">Art/03- Renaissance/DAMNOEN_SADUAK_splash.dds</File>
+    <File md5="8C01071D7B02481831C595AA076BB872" import="1">Art/06- Atomic Era/KARAKORAM_HIGHWAY_splash.dds</File>
+    <File md5="0D95CE588AB48041319FFA5344893E30" import="1">Art/06- Atomic Era/NEFT_DASHLARI_splash.dds</File>
+    <File md5="1EEEFFA46B35E190FF4F5A19B6EA19F0" import="1">Art/06- Atomic Era/WATSON_RC_splash.dds</File>
+    <File md5="3B1DCBC31264F71B331AE60915083878" import="1">Art/07- Information Era/BURJ_KHALIFA_splash.dds</File>
+    <File md5="E69785FCA20AD02E9ED73630B353477A" import="1">Art/Jar_Wonders_128.dds</File>
+    <File md5="0E75CC1DFFE3279E5D12DBB6E506EAEB" import="1">Art/Jar_Wonders_256.dds</File>
+    <File md5="94846D3250C487E3273B716AAF326E03" import="1">Art/Jar_Wonders_45.dds</File>
+    <File md5="D76E5415CF89BD9766D753F97C5CD026" import="1">Art/Jar_Wonders_64.dds</File>
+    <File md5="6DB2FED63FB6D8ECD16A26CAA9B5E614" import="1">Art/Jar_Wonders_80.dds</File>
+    <File md5="50C022F5725F256A5319D06D1EBBBE39" import="0">Core/General_Defines.sql</File>
+    <File md5="6D9199487C9749248FB138D72878794D" import="0">Core/Wonders_GameText.sql</File>
+    <File md5="79790569001FB9BA4D4337E14E3B785B" import="0">Core/WWonders_Defines.sql</File>
+    <File md5="6C1749894C40074E5150EDC3CA5086FD" import="0">Lua/highlight.lua</File>
+    <File md5="FB0E5D8FDE289FA8063AE3AA69210497" import="0">Lua/WWonders_Functions.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/General_Defines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/WWonders_Defines.sql</UpdateDatabase>
+      <UpdateDatabase>Core/Wonders_GameText.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/WWonders_Functions.lua">
+      <Name>WWonders_Functions.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/highlight.lua">
+      <Name>highlight.lua</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

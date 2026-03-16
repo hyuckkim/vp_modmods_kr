@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5329d7c7-bd67-4853-9563-b733e1204484" version="4">
+  <Properties>
+    <Name>!Horem's Aloe Vera bonus resource INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>평평한 사막 타일에서 생성되는 보너스 자원인 알로에 베라를 추가하세요.</Teaser>
+    <Description>평평한 사막 타일에서 생성되는 보너스 자원인 알로에 베라를 추가하세요.
+[NEWLINE][ICON_BULLET] [ICON_GOLD] 골드 +1
+[NEWLINE][ICON_BULLET] [ICON_FOOD] 식량 +1 , 재배지 건설 시 [ICON_RESEARCH] 과학 +2</Description>
+    <Authors>Horem, Jarcast</Authors>
+    <SpecialThanks>Flamingcheesepie</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://forums.civfanatics.com/threads/aloe-vera-bonus-resource.687565/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="c2c3797b-2728-417c-94c8-f30410528bf2" minversion="0" maxversion="999" title="Horem's Aloe Vera bonus resource" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="2EC1CF1050F171037A3A4E5D9621D17E" import="0">Jar_Aloe_Defines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Jar_Aloe_Defines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

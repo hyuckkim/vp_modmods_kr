@@ -26,10 +26,7 @@ g_UseSmallIcons = true
 
 include( "TechButtonInclude" )
 local IconHookup = IconHookup
-local GatherInfoAboutUniqueStuff = GatherInfoAboutUniqueStuff
 local AddSmallButtonsToTechButton = AddSmallButtonsToTechButton
-local freeString = freeString
-local lockedString = lockedString
 
 include( "TechHelpInclude" )
 local GetHelpTextForTech = GetHelpTextForTech
@@ -102,9 +99,23 @@ local g_coloredPipe = { x=1.0, y=1.0, z=0.0, w=0.5 }
 
 local g_maxTechNameLength = 22 - Locale.Length(L"TXT_KEY_TURNS")
 
+local freeString = L("TXT_KEY_FREE")
+local lockedString = "[ICON_LOCKED]"
+
 local CloseTechTree
 local g_queueInfo = {} --afw
 local g_blockedTechs = {} --afw
+
+local tooltipInstance = {};
+TTManager:GetTypeControlTable("TechTreeTooltip", tooltipInstance);
+
+--- Shorthand for setting a custom tooltip and adjusting its size
+--- @param tooltip TooltipInstance
+--- @param strTooltip string
+local function SetTooltip(tooltip, strTooltip)
+	tooltip.TechTreeTooltipText:SetText(strTooltip);
+	tooltip.TechTreeTooltipGrid:DoAutoSize();
+end
 -------------------------------------------------
 -- Tech Pipe Management
 -------------------------------------------------
@@ -227,7 +238,7 @@ local function RefreshDisplayOfSpecificTech( tech )
 	local thisTechButton = g_techButtons[ techID ]
 	local canResearchThisTech = g_activePlayer:CanResearch( techID )
 	local turnText = L( "TXT_KEY_STR_TURNS", g_activePlayer:GetResearchTurnsLeft( techID, true ) )
-	local researchPerTurn = g_activePlayer:GetScience()
+	local researchPerTurn = g_activePlayer:GetScienceTimes100()
 
 	if showDiscoveredBy then --afw
 --		local modifier = g_activePlayer:CalculateResearchModifier(techID)
@@ -262,15 +273,22 @@ local function RefreshDisplayOfSpecificTech( tech )
 	--print("RefreshDisplayOfSpecificTech afw Stuff done")
 	-- Rebuild the small buttons if needed
 	if g_NeedsFullRefresh then
-		AddSmallButtonsToTechButton( thisTechButton, tech, g_maxSmallButtons, 45, 1, g_activePlayerID)
+		AddSmallButtonsToTechButton( thisTechButton, tech, g_maxSmallButtons, 45, g_activePlayerID)
 	end
 	if g_EspionageViewMode then
 		thisTechButton.TechButton:SetDisabled(true);
 	else
-		thisTechButton.TechButton:RegisterCallback( Mouse.eMouseEnter, setTechToolTip )
+		-- Use a closure to track if we're already setting the tooltip
+		local bSettingTooltip = false
+		thisTechButton.TechButton:SetToolTipCallback(function ()
+			if bSettingTooltip then return end
+			bSettingTooltip = true
+			SetTooltip(tooltipInstance, GetHelpTextForTech(techID, false, g_activePlayerID))
+			bSettingTooltip = false
+		end)
 		thisTechButton.TechButton:SetDisabled(false);
 	end
-	
+
 	local showAlreadyResearched, showFreeTech, showCurrentlyResearching, showAvailable, showUnavailable, showLocked, queueUpdate, queueText, turnLabel, isClickable
 
 	if g_activeTeamTechs:HasTech( techID ) then
@@ -301,7 +319,7 @@ local function RefreshDisplayOfSpecificTech( tech )
 		isClickable = true -- to clear research queue
 --[[
 		-- turn on the meter
-		local currentResearchProgress = g_activePlayer:GetResearchProgress( techID )
+		local currentResearchProgress = g_activePlayer:GetResearchProgressTimes100( techID ) / 100
 		local researchNeeded = g_activePlayer:GetResearchCost( techID )
 		local currentResearchPlusThisTurn = currentResearchProgress + researchPerTurn
 		local researchProgressPercent = currentResearchProgress / researchNeeded
@@ -398,13 +416,13 @@ end
 
 local function QueueInfo() -- afw
 	g_queueInfo = {}
-	local researchPerTurn = g_activePlayer:GetScience()
-	local overflow = g_activePlayer:GetOverflowResearch()
+	local researchPerTurn = g_activePlayer:GetScienceTimes100() / 100
+	local overflow = g_activePlayer:GetOverflowResearchTimes100() / 100
 	for tech in GameInfo.Technologies() do
 		local techID = tech.ID
 		local pos = g_activePlayer:GetQueuePosition( techID )
 		if pos > 0 then
-			local currentResearchProgress = g_activePlayer:GetResearchProgress( techID )
+			local currentResearchProgress = g_activePlayer:GetResearchProgressTimes100( techID ) / 100
 			local researchNeeded = g_activePlayer:GetResearchCost( techID )
 			local remaining = researchNeeded + overflow - currentResearchProgress
 --			print("AFW Tech:", pos, techID, currentResearchProgress, researchNeeded, overflow, remaining, tech.Description )
@@ -552,7 +570,15 @@ for tech in GameInfo.Technologies() do
 	-- add the input handler to this button
 	thisTechButton.TechButton:SetVoids( techID, -1 )
 	thisTechButton.TechButton:RegisterCallback( Mouse.eRClick, TechPedia )
-	thisTechButton.TechButton:RegisterCallback( Mouse.eMouseEnter, setTechToolTip )
+
+	-- Use a closure to track if we're already setting the tooltip
+	local bSettingTooltip = false
+	thisTechButton.TechButton:SetToolTipCallback(function ()
+		if bSettingTooltip then return end
+		bSettingTooltip = true
+		SetTooltip(tooltipInstance, GetHelpTextForTech(techID, false, g_activePlayerID))
+		bSettingTooltip = false
+	end)
 
 	if g_scienceEnabled then
 		thisTechButton.TechButton:RegisterCallback( Mouse.eLClick, TechSelected )
@@ -608,13 +634,9 @@ local function InitActivePlayerData(OverridePlayer)
 		g_activePlayerID = OverridePlayer
 	end
 	g_activePlayer = Players[g_activePlayerID]
-	g_activeCivType = GameInfo.Civilizations[g_activePlayer:GetCivilizationType()].Type
 	g_activeTeamID = g_activePlayer:GetTeam()
 	g_activeTeam = Teams[g_activeTeamID]
 	g_activeTeamTechs = g_activeTeam:GetTeamTechs()
-
-	-- gather info about this active player's unique units and buldings
-	GatherInfoAboutUniqueStuff( g_activeCivType )
 
 	g_NeedsFullRefresh = true
 	return RefreshDisplay("Init")

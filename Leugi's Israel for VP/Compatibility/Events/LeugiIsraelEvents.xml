@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<!-- Bathsheba -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA">
+			<Text>Bathsheba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_DESC">
+			<Text>헷 사람 우리아의 아내 밧세바는 왕국에서 누구보다도 아름답습니다. 이제 그녀는 당신의 아이를 임신했습니다. 간통이 드러나지 않도록 당신은 우리아를 죽음으로 내몰고 밧세바를 아내로 맞이했습니다. 그러나 그것만으로는 충분하지 않았습니다. 주님의 명을 받은 예언자 나단이 궁정에 나타나, 당신의 죄와 불의를 꾸짖고 있습니다.[NEWLINE]</Text>
+		</Row>
+		<!-- Bathseba: Outcome 1 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_1">
+			<Text>당신의 죄를 고백하고 회개합니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_1">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT][ICON_FAITH] 신앙을 모두 잃습니다[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT][ICON_GOLDEN_AGE] 황금기 점수를 모두 잃고, 황금기가 진행 중이라면 종료됩니다[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]위대한 선지자를 한 명 무료로 획득합니다[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_1_NOTIFICATION">
+			<Text>당신은 예언자 나단에게 죄를 고백했습니다</Text>
+		</Row>
+		<!-- Bathseba: Outcome 2 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_2">
+			<Text>예언자 나단을 죽입니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_2">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT][ICON_HAPPINESS_1] 불행 {1_iUnhappiness} 생성[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_2_NOTIFICATION">
+			<Text>당신은 예언자 나단을 죽였습니다</Text>
+		</Row>
+		<!-- Bathseba: Outcome 3 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_3">
+			<Text>예언자 나단에게 뇌물을 건넵니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_3">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]{1_iGold} [ICON_GOLD] 골드를 잃습니다[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]25% 확률로 위대한 선지자를 얻고, 75% 확률로 모든 [ICON_FAITH] 신앙을 잃습니다[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OUTCOME_RESULT_3_NOTIFICATION">
+			<Text>당신은 예언자 나단에게 뇌물을 주었습니다</Text>
+		</Row>
+		
+		
+		<!-- Bathsheba: TEXTS -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_BATHSEBA_OTHERS_ALERT">
+			<Text>예언자 나단이 다윗 왕의 죄를 고발하고 있습니다!</Text>
+		</Row>
+
+
+		
+		<!-- ============================================================================================== -->
+
+		<!-- Battle of Jericho -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO">
+			<Text>여리고 전투</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO_DESC">
+			<Text>현재의 전투는 치열했습니다. 우리 첩자들은 라합의 보호 속에 무사히 귀환했고, 그 중 한 사람인 신실한 요수아가 우리 군을 이끌고 요단강을 건너고 있습니다. 그는 주님께서 계시하신 전략을 받았습니다. 적 도시 근처에서 신성한 뿔나팔을 울리는 것으로 충분할 것입니다. 그들의 성벽이 무너질 것입니다![NEWLINE]
+			</Text>
+		</Row>
+		<!-- Jericho: Outcome 1 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO_OUTCOME_1">
+			<Text>나팔을 불어라!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO_OUTCOME_RESULT_1">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]살아있는 모든 위대한 선지자에게 주변 유닛에게 공성 보너스를 주는 승급을 부여합니다[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO_OUTCOME_RESULT_1_NOTIFICATION">
+			<Text>우리 사제들이 여리고 성벽을 향해 신성한 뿔나팔을 울렸습니다!</Text>
+		</Row>
+		
+		
+
+
+		<!-- Jericho: TEXTS -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_JERICHO_OTHERS_ALERT">
+			<Text>요수아가 이스라엘 군을 위한 새로운 전략을 밝혔습니다!</Text>
+		</Row>
+
+
+		<!-- ============================================================================================== -->
+		<!-- ============================================================================================== -->
+
+		<!-- Heir Problems -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR">
+			<Text>후계자 문제</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_DESC">
+			<Text>장남 암논이 죽은 지 오래입니다. 이제 신의 선택을 받은 왕가의 계승자를 정해야 합니다. 둘째지만 이제 맏아들인 압살롬은 매력적인 지도자로서 왕좌를 기다리고 있습니다. 하지만 예언자들은 주님께서 축복하신 솔로몬을 후계자로 삼아야 한다고 권합니다. 누구를 후계자로 삼으시겠습니까?[NEWLINE]
+			</Text>
+		</Row>
+		<!-- Heir: Outcome 1 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_1">
+			<Text>압살롬을 선택한다 – 그는 정당한 후계자입니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_RESULT_1">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_NumMagistrates} [ICON_RES_MAGISTRATES] 외교관을 획득합니다[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_RESULT_1_NOTIFICATION">
+			<Text>압살롬이 이스라엘의 왕위 계승자가 되었습니다!</Text>
+		</Row>
+		<!-- Heir: Outcome 2 -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_2">
+			<Text>솔로몬을 선택한다 – 그는 주님께서 선택하신 자입니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_RESULT_2">
+			<Text>
+				[ICON_BULLET][COLOR_NEGATIVE_TEXT]압살롬이 반란을 일으키며 {1_cityname} 도시가 야만인에게 넘어갑니다[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLDEN_AGE] 황금기가 시작되며, {2_NumFaith} [ICON_PEACE] 신앙을 획득합니다[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OUTCOME_RESULT_2_NOTIFICATION">
+			<Text>솔로몬이 이스라엘의 왕위 계승자가 되었습니다!</Text>
+		</Row>
+
+
+
+		<!-- Heir: TEXTS -->
+		<Row Tag="TXT_KEY_EVENT_ISRAEL_HEIR_OTHERS_ALERT">
+			<Text>다윗 왕이 왕위를 계승할 자를 선택했습니다!</Text>
+		</Row>
+
+
+		<!-- ============================================================================================== -->
+		<!-- ============================================================================================== -->
+
+	</Language_ko_KR>
+
+	<Civilizations>
+		<Update>
+			<Set ArtStyleType="ARTSTYLE_MIDDLE_EAST"/>
+			<Where Type="CIVILIZATION_BARBARIAN"/>
+		</Update>
+	</Civilizations>
+	<Leaders>
+		<Update>
+			<Set ArtDefineTag="Huns_Attila_Scene.xml"/>
+			<Where Type="LEADER_BARBARIAN"/>
+		</Update>
+	</Leaders>
+</GameData>

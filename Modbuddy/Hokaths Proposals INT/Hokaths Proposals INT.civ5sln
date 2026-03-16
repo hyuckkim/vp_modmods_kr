@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Hokaths Proposals INT", "Hokaths Proposals (INT)\Hokaths Proposals INT.civ5proj", "{4D077A04-1B85-4547-A244-8437F5924F81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Default|x86.ActiveCfg = Default|x86
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Default|x86.Build.0 = Default|x86
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Package Only|x86.ActiveCfg = Package Only|x86
+		{4D077A04-1B85-4547-A244-8437F5924F81}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

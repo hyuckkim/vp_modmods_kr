@@ -1,0 +1,16 @@
+<Asset>
+  <Mesh file="Underwater.gr2" source="Max" />
+  <Texture file="CityBase_SREF.dds" source="Max" />
+  <Texture file="CubeLight_Generic_32.dds" source="Max" />
+  <Texture file="Environment_Steel_Dull_32.dds" source="Max" />
+  <Texture file="Environment_Steel_Sharp_64.dds" source="Max" />
+  <Texture file="Norman_Fort_SREF.dds" source="Max" />
+  <Texture file="Underwater_diff.dds" source="Max" />
+  <Texture file="Underwater_decal.dds" source="Max" />
+  <Texture file="Underwater_Rocks_diff.dds" source="Max" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <TimedTrigger file="FX_Triggers_Underwater.ftsxml" source="Tool" model="Model_Clams" state="0,1,2,3" />
+  <BoneUsage>
+    <Bone name="FX_Point" />
+  </BoneUsage>
+</Asset>

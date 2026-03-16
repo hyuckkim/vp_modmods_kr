@@ -1,0 +1,14 @@
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CIRCUMNAVIGATION';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_RED_COMBAT';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_RED_COMBAT_ENDED';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'PROMOTIONS_HALF_MOVE';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_RED_TURN';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_NEW_ERA';
+--UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CAN_MOVE_INTO';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CITY';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CITY_RAZING';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_UNIT_ACTIONS';
+--UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_TERRAFORMING';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_TILE_REVEALED';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_PLOT';
+--UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'API_TRADEROUTES';

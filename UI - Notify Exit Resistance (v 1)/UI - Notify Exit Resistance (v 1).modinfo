@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="1c475529-d173-475f-baef-3f56766a3ffc" version="1">
+  <Properties>
+    <Name>UI - Notify Exit Resistance</Name>
+    <Teaser>Adds a notification as a city exits resistance</Teaser>
+    <Description>When a captured city ends its resistance, a notification is shown</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Icon: qqqbbb</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="65FDC66BF1FD4227E1883D73383231D9" import="1">ART/resistance.dds</File>
+    <File md5="BC4A29EC212DAB9101D8B71253F39351" import="0">LUA/UINotifyExitResistance.lua</File>
+    <File md5="F1612B3C7F17528855A8E6662510E431" import="1">UI/ResistanceNotification.lua</File>
+    <File md5="EE7D69F53607BA79C0E44D0F57E2D193" import="1">UI/ResistanceNotification.xml</File>
+    <File md5="6708779E369CFA92CE432F3A6C51B920" import="0">XML/UINotifyExitResistance.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UINotifyExitResistance.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/UINotifyExitResistance.lua">
+      <Name>UINotifyExitResistance</Name>
+      <Description>UINotifyExitResistance</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomNotificationAddin" file="UI/ResistanceNotification.lua">
+      <Name>Resistance Notification</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

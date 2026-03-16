@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_StrategicView
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_StrategicView
+            (StrategicViewType,							TileType,   Asset)
+VALUES      ('ART_DEF_UNIT_GPUZ_BALEARIC_SLINGER',		'Unit',     'sv_balearic.dds');
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitInfos
+--------------------------------------------------------------------------------------------------------------------------			
+INSERT INTO ArtDefine_UnitInfos 
+		(Type, 									DamageStates,	Formation)
+SELECT	('ART_DEF_UNIT_GPUZ_BALEARIC_SLINGER'),	DamageStates, 	Formation
+FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_U_INCAN_SLINGER';	
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitInfoMemberInfos
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_UnitInfoMemberInfos 	
+		(UnitInfoType,							UnitMemberInfoType,	NumMembers)
+SELECT	'ART_DEF_UNIT_GPUZ_BALEARIC_SLINGER', 	'ART_DEF_UNIT_MEMBER_GPUZ_BALEARIC_SLINGER', NumMembers
+FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_U_INCAN_SLINGER';
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberCombats
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_UnitMemberCombats 
+		(UnitMemberType,								EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+SELECT	'ART_DEF_UNIT_MEMBER_GPUZ_BALEARIC_SLINGER',	EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
+FROM ArtDefine_UnitMemberCombats WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER';
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberCombatWeapons
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_UnitMemberCombatWeapons	
+		(UnitMemberType,								"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+SELECT	'ART_DEF_UNIT_MEMBER_GPUZ_BALEARIC_SLINGER',	"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_MEMBER_UNIT_U_INCAN_SLINGER';
+--------------------------------------------------------------------------------------------------------------------------
+-- ArtDefine_UnitMemberInfos
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ArtDefine_UnitMemberInfos 	
+		(Type, 											Scale,	ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
+SELECT	'ART_DEF_UNIT_MEMBER_GPUZ_BALEARIC_SLINGER',	Scale,	ZOffset, Domain, 'balearic_slinger.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER';
+---------------------------------------------------------------------------------------------------------------------------
+
+-- update with when 4UC
+DELETE FROM Civilization_UnitClassOverrides WHERE UnitType = 'UNIT_CARTHAGE_SHOPHET';
+UPDATE Units SET MinorCivGift = 1 WHERE Type = 'UNIT_CARTHAGE_SHOPHET';
+
+INSERT INTO Civilization_UnitClassOverrides
+	(CivilizationType, UnitClassType, UnitType)
+VALUES
+	('CIVILIZATION_CARTHAGE', 'UNITCLASS_VP_SLINGER', 'UNIT_CD_BALEARIC');
+
+UPDATE Units SET
+Combat = Combat + 0,
+RangedCombat = RangedCombat + 2,
+Range = 2,
+MoveAfterPurchase = 1,
+PurchaseOnly = 1
+WHERE Type = 'UNIT_CD_BALEARIC';
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+	('UNIT_CD_BALEARIC', 'PROMOTION_WITHDRAW_BEFORE_MELEE');
+
+UPDATE Language_en_US SET
+Text = 'Unique Carthaginian Slinger with higher [ICON_RANGE_STRENGTH] Attack. Can [COLOR_POSITIVE_TEXT]Withdraw from Melee Attack[ENDCOLOR] once per turn if a free tile is available.[NEWLINE][NEWLINE]May only be purchased with [ICON_GOLD] Gold and receives full XP. Can move immediately after being purchased.'
+WHERE Tag = 'TXT_KEY_UNIT_CD_BALEARIC_HELP';
+
+
+
+		<Row>
+			<Type>UNIT_CD_BALEARIC</Type>
+			<Class>UNITCLASS_VP_SLINGER</Class>
+			<Description>TXT_KEY_UNIT_CD_BALEARIC</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_BALEARIC_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_BALEARIC_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_BALEARIC_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_GPUZ_BALEARIC_SLINGER</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>45</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>45</PortraitIndex>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_BALEARIC">
+			<Text>Qalla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BALEARIC_TEXT">
+			<Text>The Balearic slingers (qalla in Punic), indigenous to the Balearic Islands, were warriors from ancient times famed for their mastery in the art of using the sling. They also served as mercenaries for both Carthaginian and Roman forces, particularly during the post-Talayotic era. According to chroniclers, Hannibal had approximately 2000 Balearic slingers, positioned at the forefront of his army during the early stages of the Italian campaign, responsible for initiating the fight to harass the Romans. He attached great importance to these troops and protected them throughout the campaign as irreplaceable soldiers. The reason for their military effectiveness lay in the greater range and precision of the sling compared to the bow.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BALEARIC_HELP">
+			<Text>*this is updated in another file*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_BALEARIC_STRATEGY">
+			<Text>Balearic Slingers are effectively to be preferred to Archers, but you are limited in how many you can accumulate by their cost. As with everything in Carthage's early game you must manage your abundant Gold carefully. If you wish to launch an offensive, then maximising your number of Balearic Slingers is a key objective. Although even Archers soon become obsolete, the immensely powerful ability to Withdraw from Melee Attack is kept on upgrade, so your investment holds its value into the mid-game.</Text>
+		</Row>

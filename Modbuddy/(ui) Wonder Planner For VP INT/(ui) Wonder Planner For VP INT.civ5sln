@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "(ui) Wonder Planner For VP INT", "(ui) Wonder Planner For VP INT\(ui) Wonder Planner For VP INT.civ5proj", "{AF492A13-822D-4A64-90D3-89B044C33D30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Default|x86.ActiveCfg = Default|x86
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Default|x86.Build.0 = Default|x86
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Package Only|x86.ActiveCfg = Package Only|x86
+		{AF492A13-822D-4A64-90D3-89B044C33D30}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

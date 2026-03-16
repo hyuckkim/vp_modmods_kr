@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5523ddf9-fa49-4262-b586-172581f8f573" version="2">
+  <Properties>
+    <Name>(n) Religious Victory</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Adds Religious Victory</Teaser>
+    <Description>[COLOR_POSITIVE_TEXT]Religious Victory[ENDCOLOR]
+[NEWLINE]
+[NEWLINE]Establish: You must own an Enhanced Religion.
+[NEWLINE]Spread: Your religion must be dominant in 100% of the cities on the map. Threshold reduced by 2% for every Era that passes and by 3% for every Holy Site you construct.
+[NEWLINE]Sage: While your religion is dominant, buy the Sage unit in your Capital. Defend them for the 20 turns it takes to complete their meditation, and you win.
+[NEWLINE][NEWLINE]
+[COLOR_POSITIVE_TEXT]Credits[ENDCOLOR]
+[NEWLINE]Thanks to Pdan and Jarcast for helpful discussions.
+[NEWLINE]Sage model and skin from Fantasy Army by S-Man
+[NEWLINE]
+[NEWLINE]Based on the Extra Victory Conditions mod by Barbarian King (aka Stephen)
+[NEWLINE]Victory symbols by averysillyman
+[NEWLINE]Special Thanks to whoward69 for his great tutorials on UI editing</Description>
+    <Authors>Hokath</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="89" maxversion="999" title="(1) Community Patch - Core" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Vox Populi"/>
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4CD3D785097EAA4C9CABDF5D0C70F116" import="1">Art/CoronationOfCharlemagne.dds</File>
+    <File md5="4270E07B078D97590B6294FF373198D7" import="1">Art/EVCIconBG45.dds</File>
+    <File md5="8B917EB30774F037319019A32765F508" import="1">Art/EVCIconBG45_GoldFramed-BNW.dds</File>
+    <File md5="2E6226BBF4F286BBE0A6067220775725" import="1">Art/EVC_FontIcons.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Art/EVC_Victories_256.dds</File>
+    <File md5="C0497E21B5B7CA5AC09B8D968FBABD74" import="1">Art/EVCFontIcons.ggxml</File>
+    <File md5="0bd214230bb7534f7b208020cfe2c311" import="1">Art/Monk256.dds</File>
+    <File md5="41a249e0b16ad48cf40d146c6a2728ca" import="1">Art/Monk128.dds</File>
+    <File md5="3c7cca9ab6adde3afe8868772c93df0c" import="1">Art/Monk080.dds</File>
+    <File md5="b9918580f5e15d347af6ff7d21c21c08" import="1">Art/Monk064.dds</File>
+    <File md5="87e4fe63e46a8a98232e9a355461b205" import="1">Art/Monk045.dds</File>
+    <File md5="a5ea940c99bf1637fa977ce8abd9d0fd" import="1">Art/SageFlagAlpha32.dds</File>
+    <File md5="8F9D001BE4D396CFFA81BFAD1940FE4D" import="1">Art/Magus/sv_magus.dds</File>
+    <File md5="64F5EAF1C29A90FF41BA5C09B84DFE59" import="1">Art/Magus/WIZARDM3_MAP00.dds</File>
+    <File md5="AB2DDCF6210FCCDB8D148A6560E7B5C2" import="1">Art/Magus/WIZARDM3_MAP01.dds</File>
+    <File md5="107B940C5323419FB308CBAC3757D114" import="1">Art/Magus/WIZARDM3_MAP02.dds</File>
+    <File md5="D2388F52AE04FD443A51AEEDE39CA775" import="1">Art/Magus/Wizard_M6.fxsxml</File>
+    <File md5="6CFCDB6F5605F3E0F7B351EAE7D590FD" import="1">Art/Magus/Wizard_M6.gr2</File>
+    <File md5="FBF13F1E2E69DAAAE9E552A8BDA375DA" import="0">Art/Magus/06-PsionicistArtDefines.xml</File>
+    <File md5="AB264154A95A194B781A4E814334C9F9" import="1">Lua/ReligiousVictory.lua</File>
+    <File md5="BEEFD4DD388A0B0F3FBB6F0685A7FD8B" import="1">Sounds/Speech_Religious_Victory.mp3</File>
+    <File md5="F70AF536C0BF4E0A1F1410CB47CCB835" import="1">UI/AdvancedSetup.lua</File>
+    <File md5="6EA47310509D57047B6D1CE649BDFAA0" import="1">UI/EndGameMenu.lua</File>
+    <File md5="60E8993845D4DD0931246C9E95CA047E" import="1">UI/VictoryProgress.lua</File>
+    <File md5="F859FACB6C9D2C4BABE0E3D3221FB004" import="1">UI/VictoryProgress.xml</File>
+    <File md5="C05CD2BA3EE65D2D7EFC9A936B344DF5" import="0">XML/IconFontMapping.xml</File>
+    <File md5="216DC32DAD079AC3586D5054AEFF0F56" import="0">XML/Text.xml</File>
+    <File md5="01B0F0DD5210744F683EEA63BE31ACE3" import="0">XML/Victories.xml</File>
+    <File md5="3AC565FB769409FD01759730CF695268" import="0">XML/VictorySpeech.xml</File>
+    <File md5="aea04772bbf1f76270d2c99432264a63" import="0">XML/NewUnits.xml</File>
+    <File md5="92e301d69a4c23d900c0f1d2eac00ce8" import="0">SQL/VPChanges.sql</File>
+    <File md5="a6bec60fd6afea68033fb2680f420569" import="0">SQL/CustomModOptions.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Art/Magus/06-PsionicistArtDefines.xml</UpdateDatabase>
+      <UpdateDatabase>XML/IconFontMapping.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Text.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Victories.xml</UpdateDatabase>
+      <UpdateDatabase>XML/VictorySpeech.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewUnits.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/VPChanges.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/CustomModOptions.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/ReligiousVictory.lua">
+      <Name>ReligiousVictory</Name>
+      <Description>Adds Religious Victory code</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

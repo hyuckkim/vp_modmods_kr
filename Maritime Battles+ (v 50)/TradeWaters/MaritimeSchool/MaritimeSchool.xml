@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/6/2013 9:23:44 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_MARITIME_SCHOOL">
+			<Text>Maritime Academy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MARITIME_SCHOOL_HELP">
+			<Text>Units become capable of Double [ICON_MOVES] Movement along Sea [ICON_CARGO_SHIP] Trade Routes when out-of-combat. +15 XP to Naval units trained in this city. +1 [ICON_WAR] Military Supply.[NEWLINE][NEWLINE]Your civilization must discover 80% of the Ocean to build a Maritime Academy.  City must be built on the Coast and have a Seaport.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MARITIME_SCHOOL_PEDIA">
+			<Text>Cartographers, shipbuilders, and educated captains just don’t come out of nowhere - many of these scholars and labor men were trained in institutions known loosely as Maritime Schools. Experienced captains and learned scholars would share their accumulated nautical knowledge at the school, which would then impart this wisdom upon the less experienced. Weather patterns of new routes were charted, cartographers were instructed in the use of the latest and greatest of instruments, and new kinds of ships were designed and constructed.[NEWLINE][NEWLINE]It is commonly believed that Henry the Navigator of Portugal started the first Maritime School at his villa at Sagres. While he did keep a large group of cartographers to chart the coastlines of parts of Africa, no defining evidence has yet been found of a centralized school for navigators and scholars.</Text>
+		</Row>
+	</Language_en_US>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MARITIME_SCHOOL</Type>
+			<DefaultBuilding>BUILDING_MARITIME_SCHOOL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_MARITIME_SCHOOL</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MARITIME_SCHOOL</Type>
+			<BuildingClass>BUILDINGCLASS_MARITIME_SCHOOL</BuildingClass>
+			<Cost>400</Cost>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<Help>TXT_KEY_BUILDING_MARITIME_SCHOOL_HELP</Help>
+			<Description>TXT_KEY_BUILDING_MARITIME_SCHOOL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MARITIME_SCHOOL_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_NATIONAL_COLLEGE</ArtDefineTag>
+			<Water>true</Water>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>10</MinAreaSize>
+			<NumCityCostMod>25</NumCityCostMod>
+			<HurryCostModifier>-20</HurryCostModifier>
+			<CitySupplyFlat>1</CitySupplyFlat>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>MARITIME_SCHOOL_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Buildings>
+	<!-- YIELDS -->
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ImprovementYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ImprovementYieldChanges>
+	<Building_FeatureYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_FeatureYieldChanges>
+	<!-- XP TO SEA UNITS -->
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Experience>15</Experience>
+		</Row>
+	</Building_DomainFreeExperiences>
+	<!-- SEAPORT REQUIREMENT -->
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<!-- FLAVORS -->
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MARITIME_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
+</GameData>

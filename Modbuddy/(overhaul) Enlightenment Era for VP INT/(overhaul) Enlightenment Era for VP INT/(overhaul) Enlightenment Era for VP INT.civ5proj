@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{da32a1aa-e475-43c1-a557-3f2e1ea20edb}</ProjectGuid>
+    <Name>(overhaul) Enlightenment Era for VP INT</Name>
+    <Guid>fa8e0af1-732f-4ee8-b6f6-41faa8c33a42</Guid>
+    <ModVersion>19</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]를 포함하여 게임 범위를 확장합니다.</Teaser>
+    <Description>[COLOR_POSITIVE_TEXT]계몽 시대[ENDCOLOR]는 과학적 사고가 극적으로 발전한 시기였습니다.
+[NEWLINE]Vox Populi 모드가 필요합니다.
+[NEWLINE][NEWLINE]주요 제작자: Pouakai, Janboruta, Sukritact - EE, zwei833 - RER.
+[NEWLINE]Vox Populi 버전은 Infixo님이 제작했습니다.
+[NEWLINE]adan_enslavo님이 v4 버전으로, N.Core님이 v5 버전으로 업데이트했으며, CAYM님이 VP 4.4 ~ 4.19 버전을 지원하기 위해 v6 ~ 10 버전으로 수정했습니다.
+[NEWLINE]Hokath님이 v5로 업데이트했습니다.</Description>
+    <Authors>Hokath, CAYM, Pouakai, JFD, Janboruta, Sukritact, zwei833, Infixo</Authors>
+    <SpecialThanks>Xony, pandasnail, phantomaxl1207, barrizqi, Chrisy15, Enginseer, Padre19, Aldebaran1997, Gazebo, N.CORE</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>(overhaul) Enlightenment Era for VP INT</AssemblyName>
+    <RootNamespace>(overhaul) Enlightenment Era for VP INT</RootNamespace>
+    <ModReferences />
+    <Homepage>
+    </Homepage>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(overhaul) Enlightenment Era for VP</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Buildings.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Other.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Policies.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Text.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/EEVP_Wonders.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/Hotel_Zoo_Swap.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/Observatory.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/Windmill_Workshop_Swap.sql</FileName>
+      </Action>
+    </ModActions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\EEVP_Buildings.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\EEVP_Other.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\EEVP_Policies.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\EEVP_Text.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\EEVP_Wonders.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\Hotel_Zoo_Swap.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\Observatory.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\Windmill_Workshop_Swap.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

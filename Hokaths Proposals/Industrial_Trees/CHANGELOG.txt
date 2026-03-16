@@ -1,0 +1,176 @@
+Industrial Trees
+
+  Rationalism
+    unleashes a wave of new Citizens by providing large Happiness and Food bonuses. Simultaneously boosts the output of the resulting Golden Ages and Specialists, especially Scientists.  --> Use this to "thicken" your wide Empire. Or go crazy Tall with Great Scientists!
+   -- Tree Structure is now
+     Liberalism
+     Mass Education
+     Secularism (requires Liberalism)
+     Emancipation (requires Liberalism)
+     Employment Law (requires Emancipation and Mass Education)
+
+     .X..X
+     /\  |
+     X.X.|
+       \ /
+     ...X.
+
+  -- Opener 
+    Loses +3 Science and +2 Production on Strategics
+    Loses +% Science in all Cities
+    Gains +1 Science and Culture from Scientists
+    Gains +33% Great Scientist Rate
+    Gains +10% Growth in all Cities
+   
+  -- Scaler
+    Loses +% Science in all Cities
+    Gains +5% Growth in all Cities
+
+  -- Liberalism (was Scientific Revolution)
+    Loses ability to make Observatories
+    Loses +2 Science on Jungle/Snow
+      This was a very strange choice
+    Gains +2 Gold and +1 Production from Specialists
+    Gains +25% GP Rate during a Golden Age
+
+  -- Mass Education (was Enlightenment)
+    (Receive 1 Free Tech)
+    Loses +1 Happiness from Universities
+    Gains +3 Food, +2 Culture, and +1 Happiness from Public Schools
+    Gains +100% Production towards Public Schools
+
+  -- Secularism (was Free Thought)
+    (-5 Religious Unrest)
+    Loses Great Scientist bonuses
+    Gains +10% Science during a Golden Age
+    Gains +3 Production and Gold from Academies
+      A bonus to Great Scientists before you bulb them
+
+  -- Emancipation (was Rights of Man)
+    Loses Needs Reduction
+    Loses Science from Golden Age
+    Loses yields on Villages
+    Gains Culture and GAP per citizen oneshot boost
+    Gains 10% Food during a Golden Age
+    Gains +1 Happiness per 8 Citizens (note Progress must also change due to bug)
+    ~~Gains +1 Happiness from Zoo, Museum, and Hotel~~
+
+  -- Employment Law (was Empiricism)
+    (+1 Food per Citizen)
+    Gains +1 Production per Citizen
+    Loses 25% Growth in all Cities
+    Loses +3% Science per GW (up to 20%)
+      This is too Tall-specific, belongs in Freedom imo
+    Gains 50% of Happiness converted to Culture
+    
+  -- Finisher
+    (Purchase GS with Faith)
+    (12 Security in all Cities)
+    +25% Yields from GS Bulb
+      Save the big science for a completed tree, no dipping in
+
+
+  Imperialism
+  -- Tree Structure is now
+    Civilizing Mission
+    Regimental System
+    Colonialism
+    Exploitation (requires Colonialism)
+    Martial Law (requires all three T1)
+
+  -- Colonialism
+    Split the Citadels into their own bullet point and add Manufactory
+      Nice symmetry with each of the 3 main GPTI having a buff in each tree
+    Now +2 Science, Culture, and Great Admiral Points (up from 2 Science, 1 Culture)
+      More interesting to have some Admiralty on here
+
+  -- Exploitation
+    Loses yields from Farm/Plantation/Camp
+    Gains +2 Food, Production, and Border Growth on Luxury Resources
+      Luxuries are concentrated in the regions, so you get most out of this if you've taken over another civ
+  
+  -- Martial Law
+    Upped Penalty Reduction to 30% from 20%.
+      This policy is most of the strength, but it is actually not great compared to Industry
+      Industry is +15% to all (after some buildings) and affects all cities
+      This is similar to 20% to all with no buildings, but only affects puppets
+      30% packs a bigger punch, makes Annex less necessary (important for v. big empire modifers etc),
+      and end you up at a neat 50% yield reduction on puppets, which is easier to quantify for the player.
+    Can at earliest by the 4th policy to compensate increased strength and prevent extreme christmas-treeing with Industry
+
+  -- Finisher
+    Gains "Reveals Hidden Antiquity Sites" from Artistry finisher
+      Ideological pressure is a huge problem for Imperialism, this helps fight that
+      Hidden sites on Artistry doesn't make great sense, since archaeology won't be unlocked for a long time
+
+  Industry
+  -- Splash art changed to "Industry" with the man in the top hat standing by the train, rather than the "Commerce" ships
+  -- Tree Structure is now
+    Division of Labor
+    Subsidies
+    Entrepreneurship (requires Division of Labor)
+    Mercantilism (requires Subsidies)
+    Gold Standard (requires Mercantilism and Division of Labor)
+
+    ..X.X
+      | |
+    ..|.X
+      /\/
+    .X.X.
+    
+    Note due to graphical glitch in CiV, cannot put Entrepreneurship on second row!
+
+  -- Opener
+    Increased purchase reduction to 10%
+    Gains +50% Great Merchant rate
+    Gains +100% Coaling Station Production boost
+      You need this early or you won't use it!
+    Loses +2 Trade Routes
+      Too strong for an opener
+
+  -- Division of Labor
+    +1 Culture (not Gold) and +1 Production instead of 3% boosts
+      We will have a Culture side and a Science side to the tree
+      3% boosts are too strong: I checked recently and it was 10+ culture in my 10th City and like 30 in my Capital
+    List changed to remove Forge and include Armory
+    Loses 100% to Coaling Stations
+    +4/+4 Prod/Gold from City Connections
+
+  -- Subsidies (was Free Trade -- can't have Free Trade and Mercantilism in same tree!)
+    Loses 50% Great Merchant Rate
+    Loses 5 Gold from Trade Routes
+    Loses -2 Poverty
+    +1 Happiness from Windmills
+      Moved happiness bonus earlier and on a building you might not have
+    Gain -50% Tile maintenance
+      So with Authority your Railroads are free!
+    Gains the 15 Science on building construction, scaling with Era
+
+  -- Entrepreneurship
+    Loses +1 Happiness from Workshops
+    +2 Production and +1 Gold from Mine/*Farm*/Lumbermill
+      The "spammable" improvements
+    Gains +3 Food and Culture on every Town
+    +2 Gold and +1 Culture on every Village
+      Note potential for Culture on Tiles -> Tourism
+      A bonus to Great Merchants outside of Trade Mission
+
+  -- Mercantilism
+    +1 Gold (from Culture) and +1 Science instead of 3% boosts
+      This is the Science side
+      3% boosts are too strong
+    List changed to remove Market and include Hotel
+    Gains +2 Trade Routes
+
+  -- Gold Standard (was Protectionism -- too close to Mercantilism)
+    (Gold Investment 10% boost)
+    WLTKD boost is now 10% Gold and Culture rather than Food and Science
+      reduce overlap with Rationalism GA boosts
+    Gains +25% instant yields from Great Merchants 
+    Loses +33% yields from internal trade
+      This is in Fealty nowadays
+
+  -- Finisher
+    Loses yields from Specialists
+    Gains +2 Science and +1 Production from Bonus Resources
+      Bonus resources are everywhere, so its direct wide scaling    

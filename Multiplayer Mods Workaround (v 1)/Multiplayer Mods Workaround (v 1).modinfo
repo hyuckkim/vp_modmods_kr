@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c70dee73-8179-4a19-a3e5-1d931908ff43" version="1">
+  <Properties>
+    <Name>Multiplayer Mods Workaround</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Workaround to convince Civ 5 to allow multiplayer games with mods. This is NOT user-friendly.</Teaser>
+    <Description>Workaround to convince Civ 5 to allow multiplayer games with mods. This is NOT user-friendly, but it's what we've got. 
+
+Requires BOTH Gods and King and Brave New World. 
+
+VERY IMPORTANT NOTE: this download only enables you try to make your own multiplayer mods pack. It does NOT automatically make multiplayer mods work. Once you have downloaded, read the instructions at: http://forums.civfanatics.com/showthread.php?t=533238 (or check out the pictures above). 
+
+Note: If you are using a mod with custom DLL, trying to make a multilanguage mod, or are just having problems, the civfanatics link has more comprehensive instructions and troubleshooting. Or, post a comment below and I may answer. 
+
+Based on preliminary work from Gedemon. I DID NOT start this (though I and others have made improvements). 
+
+Making a pack requires PC, but using a made pack tolerates any mixture of PCs and Macs. [http://steamcommunity.com/sharedfiles/filedetails/?id=361391109 is the version you want if you want non-English and multilanguage support; I will update the steam workshop version when I next get on the right computer] 
+
+Alternatively, try out the pre-made mod packs list below: 
+
+Everyone who wants to join a multiplayer mod game must do the following, and use the same pack. The pack must be removed again to play regular civ 5. When starting a game with fake dlc pack, use the normal multiplayer menu (NOT the mods menu). 
+
+Windows: 
+1. Copy paste the folder into Steam\SteamApps\common\Sid Meier's Civilization V\assets\DLC. 
+
+MAC: 
+You will probably have to use command+shift+period to reveal hidden files. 
+1. Navigate to Macintosh HD/Users/{Username}/Libraries/Application Support/Steam/SteamApps/common/Sid Meier's Civilization V 
+2. Right_click &gt; Civlization V &gt; Show Package Contents 
+3. Place dlc folder in Contents/Home/Assets/DLC 
+
+Linux: As pointed out by a commenter: 
+
+"Also, the Mod Packs do work on Linux, you have to convert filenames to all lowercase (as Linux is case sensitive). See https://github.com/Gedemon/Civ5-MultiPlayer-ModsPack-Maker/issues/1" 
+(I have not personally tried this, though) 
+
+Lynnes: Community Balance Patch for Multiplayer: http://forums.civfanatics.com/showthread.php?t=553187 
+
+cicero225's Anime Pack: http://forums.civfanatics.com/showpost.php?p=13882609&amp;postcount=499 
+
+Haken Browning's Wish for a World-centered Anime Pack http://forums.civfanatics.com/showpost.php?p=13431034&amp;amp;postcount=2 
+
+Emeralis Wish for the World centric modpack (various anime civs) http://forums.civfanatics.com/showthread.phpp=13473053#post13473053. 
+
+Athaboros Quality of Life modpack 
+http://forums.civfanatics.com/showpost.php?p=13536932&amp;amp;postcount=102 
+
+Gothic Empire's Light Pack 
+http://forums.civfanatics.com/showpost.php?p=13750841&amp;postcount=271 
+(Working link: {LINK REMOVED} 
+
+Serp's Multiplayer Improved Experience pack 
+http://forums.civfanatics.com/showpost.php?p=13779673&amp;postcount=315 
+
+CivAddiction’s Multiplayer Modpack – CP+CSD+C4DF+Serp’s+And More! (BETA) 
+http://forums.civfanatics.com/showpost.php?p=13790439&amp;postcount=358 
+
+Bacon Bomb's Ultimate Civ Modded MP Experience: http://forums.civfanatics.com/showpost.php?p=13650481&amp;postcount=172 Link in post is dead, though, so use https://drive.google.com/file/d/0B_QtChYZXeeDcjF6Yk9HdDhQTXM/view?usp=sharing for downloads. 
+
+Khundian's JFD Civs Pack 
+Originally http://forums.civfanatics.com/showpost.php?p=13610295&amp;postcount=127, but the only working link right now is here: 
+https://www.reddit.com/r/civ/comments/30ditw/multiplayer_modpack_30_civs_as_dlc_for_use_in/ 
+
+darkchaos452 Pack (experimental) 
+http://forums.civfanatics.com/showpost.php?p=14129689&amp;postcount=696 
+
+(I encourage anyone who has successfully made a working, tested modpack to share a link for others)</Description>
+    <Authors>Cicero225 (Originally: Gedemon)</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="EBCBBA14AB5808A53352F3B182B8EC88" import="1">CvGameCore_MPMPMaker.dll</File>
+    <File md5="44F483A1F0BA760C2A32496C24537772" import="1">MPMP_Maker.lua</File>
+  </Files>
+  <Actions>
+    <OnGetDLLPath>
+      <SetDllPath>CvGameCore_MPMPMaker.dll</SetDllPath>
+    </OnGetDLLPath>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="MPMP_Maker.lua">
+      <Name>MPMP Maker</Name>
+      <Description>MPMP Maker</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

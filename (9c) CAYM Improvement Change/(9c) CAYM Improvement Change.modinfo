@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f8a91551-3173-4d14-8ec9-0f6ec290b10f" version="9">
+  <Properties>
+    <Name>(9c) CAYM Improvement Change</Name>
+    <Teaser>1. Adds the [COLOR_POSITIVE_TEXT]Trench improvement[ENDCOLOR] to the standard game. [NEWLINE]2. Use Great Engineer and build [COLOR_POSITIVE_TEXT]HORSE, IRON, COAL, OIL Prospecting[ENDCOLOR]</Teaser>
+    <Description></Description>
+    <Authors>Caym</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>1</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+  </Dependencies>
+  <References>
+    <Mod id="5cfa5cfc-fe0f-456f-8003-73e6b56865c1" minversion="0" maxversion="999" title="(1L) Community Patch Localized" />
+    <Mod id="64830ab8-3276-4f3c-916c-1e23f17993d6" minversion="0" maxversion="999" title="(2L) Community Balance Overhaul Localized" />
+    <Mod id="bf6d0feb-443e-4d49-9f2b-fe3335d5b972" minversion="0" maxversion="999" title="(3aL) VP - EUI Compatibility Files Localized" />
+    <Mod id="dbf896aa-27fd-4510-87d7-f797391250db" minversion="0" maxversion="999" title="(4bL) UI - Promotion Tree for VP Localized" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="3EFDAD822D304A957F010783274756D6" import="0">Trench/Trench.sql</File>
+    <File md5="T10CCAC8C7D653663FD420EECBBA1318" import="0">Trench/Trench.lua</File>
+    <File md5="AD54871F3B9471A1A4BC0A80698E9767" import="1">Trench/Art/TOON_016.dds</File>
+    <File md5="8ADFB4C8E44B2143A19A3555897E4703" import="1">Trench/Art/TOON_032.dds</File>
+    <File md5="B7556610E40EDB9A53AC80B16C65B038" import="1">Trench/Art/TOON_045.dds</File>
+    <File md5="774954F87023848B42B6A3B85B1CACD6" import="1">Trench/Art/TOON_064.dds</File>
+    <File md5="410CCAC8C7D653663FD420EECBBA1318" import="1">Trench/Art/TOON_256.dds</File>
+    <File md5="HA20D9D56235B43768E14E013B4C62FA" import="0">Resourcemake/ProspectingResource.lua</File>
+    <File md5="D8441C03011BBBE78A16411DC0E65F32" import="0">Resourcemake/Resourcemake.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Trench/Trench.sql</UpdateDatabase>
+      <UpdateDatabase>Resourcemake/Resourcemake.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Trench/Trench.lua">
+      <Name>Trench</Name>
+      <Description>based</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Resourcemake/ProspectingResource.lua">
+      <Name>ProspectingResource</Name>
+      <Description>based</Description>
+    </EntryPoint> 
+  </EntryPoints>
+</Mod>

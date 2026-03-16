@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 31-Oct-14 13:21:44 -->
+<GameData><!--
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_NUCLEAR_PLANT"/>
+			<Set Cost="1"/>
+		</Update>
+	</Buildings>
+
+	<Building_ClassesNeededInCity>
+		<Delete BuildingType="BUILDING_NUCLEAR_PLANT"/>
+	</Building_ClassesNeededInCity>
+
+	<Building_ResourceQuantityRequirements>
+		<Delete BuildingType="BUILDING_NUCLEAR_PLANT"/>
+	</Building_ResourceQuantityRequirements>-->
+</GameData>

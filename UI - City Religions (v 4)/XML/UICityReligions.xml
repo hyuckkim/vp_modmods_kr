@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CR_OVERVIEW">
+			<Text>Religions</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITIES">
+			<Text>Cities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_PURCHASES">
+			<Text>Purchases</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY">
+			<Text>City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_FOCUS">
+			<Text>Focus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE">
+			<Text>Buildings/Units available for purchase with [ICON_PEACE] Faith (excluding Missionary/Inquisitor)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_STATUS_CAPITAL_TT">
+			<Text>Capital City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT">
+			<Text>Occupied City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_PUPPET_TT">
+			<Text>Puppet City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT">
+			<Text>In Resistance!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RAZING_TT">
+			<Text>Burning!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY_TT">
+			<Text>Click to enter City View screen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_POP_TT">
+			<Text>Click to sort by city population</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_STATUS_TT">
+			<Text>Click to sort by city status</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_RELIGION_TT">
+			<Text>Click to sort by city religion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_NAME_TT">
+			<Text>Click to sort by city name</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT">
+			<Text>Click to sort by {1_Religion}[NEWLINE]({2_CivilizationName} - {3_HolyCity})</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK" Text="City Religions"/>
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT" Text="Manage all City Religions from one summary screen"/>
+	</Language_en_US>
+
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_CR_OVERVIEW">
+			<Text>Religionen</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITIES">
+			<Text>St&#228;dte</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_PURCHASES">
+			<Text>Kaufen</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY">
+			<Text>Stadt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_FOCUS">
+			<Text>Fokus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE">
+			<Text>Verf&#252;gbare Geb&#228;ude/Einheiten zum Kauf mit Glauben [ICON_PEACE] (au&#223;er Missionare/Inquisitoren)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_STATUS_CAPITAL_TT">
+			<Text>Hauptstadt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT">
+			<Text>Anektiert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_PUPPET_TT">
+			<Text>Marionette</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT">
+			<Text>Widerstand!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RAZING_TT">
+			<Text>Brennt!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY_TT">
+			<Text>Klicken f��tadtbildschirm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_POP_TT">
+			<Text>Klicken um nach Wachstum zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_STATUS_TT">
+			<Text>Klicken um nach Status zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_RELIGION_TT">
+			<Text>Klicken um nach Religion zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_NAME_TT">
+			<Text>Klicken um nach Name zu sortieren</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT">
+			<Text>Klicken um nach {1_Religion}[NEWLINE]({2_CivilizationName} - {3_HolyCity}) zu sortieren</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK" Text="Stadtreligionen"/>
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT" Text="Religions&#252;bersicht"/>
+	</Language_DE_DE>
+
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CR_OVERVIEW">
+			<Text>종교</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITIES">
+			<Text>도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_PURCHASES">
+			<Text>구매</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY">
+			<Text>도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_FOCUS">
+			<Text>집중</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_ITEMS_FOR_PURCHASE">
+			<Text>[ICON_PEACE] 신앙으로 구매 가능한 건물/유닛 (선교사/이단심문관 제외)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_STATUS_CAPITAL_TT">
+			<Text>수도</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_OCCUPIED_TT">
+			<Text>점령된 도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_PUPPET_TT">
+			<Text>괴뢰 도시</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RESISTANCE_TT">
+			<Text>저항 중!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_STATUS_RAZING_TT">
+			<Text>불타는 중!</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_CITY_TT">
+			<Text>클릭해 도시 보기 화면으로 들어가기</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_POP_TT">
+			<Text>클릭해 도시 인구별로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_STATUS_TT">
+			<Text>클릭해 도시 상태별로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_RELIGION_TT">
+			<Text>클릭해 도시 종교별로 정렬</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CR_SORT_NAME_TT">
+			<Text>클릭해 도시 이름별로 정렬</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_SORT_CITY_RELIGION_TT">
+			<Text>클릭해 {1_Religion}별로 정렬[NEWLINE]({2_CivilizationName} - {3_HolyCity})</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK" Text="도시 종교"/>
+		<Row Tag="TXT_KEY_CR_DIPLO_CORNER_HOOK_TT" Text="한 개의 요약 화면에서 모든 도시 종교 관리"/>
+	</Language_ko_KR>
+</GameData>

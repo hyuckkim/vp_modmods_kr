@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<Language_ko_KR>
+		<Replace Tag="TXT_KEY_TP_UNHAPPINESS_UNITS">
+			<Text>{1_Num}이 결정, 유닛 또는 기타 출처로 인해 발생했습니다.</Text>
+		</Replace>
+		<!-- Psalms -->
+		<Row Tag="TXT_KEY_DECISIONS_LEUGI_ISRAEL_PSALMS">
+			<Text>시편을 짓습니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_LEUGI_ISRAEL_PSALMS_DESC">
+			<Text>우리 백성이 신앙심을 잃고 이교 신들의 신하로 전락하고 있습니다. 만군의 주께 기도드려 백성들이 다시 그분을 따를 수 있도록 영감을 받아야 합니다. 시편을 지어 신앙을 되찾게 도웁시다. [NEWLINE][NEWLINE]요구 사항 / 제한 조건: [NEWLINE][ICON_BULLET]플레이어는 다윗이어야 합니다 [NEWLINE][ICON_BULLET]시대마다 한 번만 시행할 수 있습니다 [NEWLINE][ICON_BULLET]‘문자’ 기술을 발견했어야 합니다 [NEWLINE][ICON_BULLET]종교를 창시했어야 합니다 [NEWLINE][ICON_BULLET]플레이어의 종교가 제국 내 다수 종교여야 합니다 [NEWLINE]비용: [NEWLINE][ICON_BULLET]{1_NumCulture} [ICON_CULTURE] 문화 [NEWLINE]보상: [NEWLINE][ICON_BULLET]제국 내 자신의 종교를 신봉하는 시민 1명당 {2_Faith} [ICON_PEACE] 신앙을 획득합니다 [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]참고: 문화 비용은 제국 내 종교 통일도에 따라 감소하며, 시대가 바뀔수록 증가합니다. 현재 종교 통일도는 {3_Percent}%이며, 시행 시 {4_FaithReceived} [ICON_FAITH] 신앙을 얻게 됩니다[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_LEUGI_ISRAEL_PSALMS_ENACTED_DESC">
+			<Text>우리의 경건한 백성을 위해 새로운 시편과 경전을 지었습니다. 주께서 기뻐하실 것입니다![NEWLINE][NEWLINE]보상: [NEWLINE][ICON_BULLET]시민들로부터 [ICON_PEACE] 신앙을 받았습니다.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DECISIONS_LEUGI_ISRAEL_PSALMS_SOLOMON">
+			<Text>영감을 담은 잠언을 짓습니다</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DECISIONS_LEUGI_ISRAEL_PSALMS_SOLOMON_DESC">
+			<Text>우리 백성이 신앙심을 잃고 이교 신들의 하수인이 되어가고 있습니다. 만군의 주께 기도드려 백성들이 다시 그분을 따를 수 있도록 영감을 받아야 합니다. 지혜로운 말씀이 신앙을 회복시키는 데 도움이 될 수 있습니다. [NEWLINE][NEWLINE]요구 사항 / 제한 조건: [NEWLINE][ICON_BULLET]플레이어는 솔로몬이어야 합니다 [NEWLINE][ICON_BULLET]시대마다 한 번만 시행할 수 있습니다 [NEWLINE]비용: [NEWLINE][ICON_BULLET]{1_NumCulture} [ICON_CULTURE] 문화 [NEWLINE]보상: [NEWLINE][ICON_BULLET]제국 내 자신의 종교를 신봉하는 시민 1명당 {2_Faith} [ICON_PEACE] 신앙을 획득합니다.
+			</Text>
+		</Row>
+		
+		
+	</Language_ko_KR>
+
+
+</GameData>
+

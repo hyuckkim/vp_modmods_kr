@@ -1,0 +1,23 @@
+UPDATE Features SET
+Defense = 15
+WHERE Type IN ('FEATURE_MARSH', 'FEATURE_OASIS');
+
+UPDATE Features SET
+Defense = 10
+WHERE Type = 'FEATURE_FLOOD_PLAINS';
+
+UPDATE Terrains SET
+Defense = -10
+WHERE Type IN ('TERRAIN_TUNDRA', 'TERRAIN_DESERT');
+
+UPDATE Terrains SET
+Defense = -15
+WHERE Type = 'TERRAIN_SNOW';
+
+UPDATE Improvements SET
+DefenseModifier = 15
+WHERE Type = 'IMPROVEMENT_CUSTOMS_HOUSE';
+
+UPDATE Improvements SET
+DefenseModifier = 10
+WHERE Type IN ('IMPROVEMENT_TRADING_POST', 'IMPROVEMENT_MANUFACTORY');

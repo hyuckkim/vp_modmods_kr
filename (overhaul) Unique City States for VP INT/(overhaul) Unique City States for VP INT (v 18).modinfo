@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d92d4f73-9248-44c5-89b0-5cd1bbb4c5ab" version="18">
+  <Properties>
+    <Name>(overhaul) Unique City States for VP INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>문명 6의 종주국 개념에서 영감을 받은 이 모드는 Vox Populi에 해당 개념을 도입하여 도시 국가들이 동맹을 맺을 때 고유한 특성을 느낄 수 있도록 합니다.
+
+두 모드의 종주국 개념이 기본적으로 동일하기 때문에 Sukr</Teaser>
+    <Description>문명 6의 종주국 개념에서 영감을 받은 이 모드는 Vox Populi에 해당 개념을 도입하여 도시 국가들이 동맹을 맺을 때 고유한 특성을 느낄 수 있도록 합니다.
+
+두 모드의 종주국 개념이 기본적으로 동일하기 때문에 Sukritact의 종주국 모드와는 호환되지 않습니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="(overhaul) Unique City States for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="D5FFD0B2B1721E0609FE6953908DFEDC" import="0">SQL/Bonuses.sql</File>
+    <File md5="ACB88C0C669CEFAD76E96F2D3EBEBEAE" import="0">XML/UCSTexts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/Bonuses.sql</UpdateDatabase>
+      <UpdateDatabase>XML/UCSTexts.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e7d74219-36eb-4cce-842a-7991254a255e" version="1">
+  <Properties>
+    <Name>Faster Non-Aircraft Animations</Name>
+    <Teaser>Faster unit movement animations for non-aircraft units (4x speed)! This sort of replicates the 'quick movement' effect of Civ 6</Teaser>
+    <Description>Faster unit movement animations for non-aircraft units (4x speed)! This sort of replicates the 'quick movement' effect of Civ 6 and brings it to Civ 5 - with this mod enabled and 'Quick Movement' disabled, you'll still see the movement animations but they'll happen 4x as fast! Credit goes to Serp at CivFanatics for writing the code - I merely put it into mod form and uploaded it to Steam, with Serp's permission. NOTE: As of 2021y05m09d, this mod is compatible with Vox Populi!</Description>
+    <Authors>Mikhail</Authors>
+    <SpecialThanks>Serp at CivFanatics</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="C715CA75A152BCEFB14A8C0ECB62EB48" import="0">FasterNonAircraft.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>FasterNonAircraft.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

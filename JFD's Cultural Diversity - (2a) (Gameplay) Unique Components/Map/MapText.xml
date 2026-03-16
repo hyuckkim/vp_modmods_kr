@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>	
+	<Language_en_US>	
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_DZONG">
+			<Text>Dzong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_DZONG_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_JAR_DZONG_TEXT">
+			<Text>Unique [ICON_CULTURE_JFD_HIMALAYAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_HIMALAYAN_SHORT_DESC}[ENDCOLOR] replacement for the Citadel and the Holy Site. The Dzong can be constructed by expending a [ICON_GREAT_GENERAL] Great General or a [ICON_PROPHET] Great Prophet.Claims adjacent tiles when constructed, +1 [ICON_WAR] Military Unit Supply, and the unit is consumed.[NEWLINE][NEWLINE]+100% [ICON_STRENGTH] Defense to owned Units on the tile. Deals 30 damages to hostile Units ending their turn next to it. Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it. Benefits from the Policy and Tech bonuses for both the Citadel and the Holy Site.[NEWLINE][NEWLINE]Dzong architecture is a distinctive type of fortress architecture found in the present and former Tibetan Buddhist kingdoms of the Himalayas. The architecture is massive in style with towering exterior walls surrounding a complex of courtyards, temples, administrative offices, and monks' accommodation.[NEWLINE][NEWLINE]Originating in the 7th century CE, Dzongs serve as the religious, military, administrative, and social centers of their district. They are often the site of an annual Tshechu or other religious festivals. The rooms inside the dzong are typically allocated half to administrative function (such as the office of the penlop or governor), and half to religious function, primarily the temple and housing for monks. This division between administrative and religious functions reflects the idealized duality of power between the religious and administrative branches of government. [NEWLINE]By tradition, dzongs are constructed without the use of architectural plans, instead construction proceeds under the direction of a high lama who establishes each dimension by means of spiritual inspiration. Dzongs were frequently built on a hilltop or mountain spur. If the dzong is built on the side of a valley wall, a smaller dzong or watchtower is typically built directly uphill from the main dzong with the purpose of keeping the slope clear of attackers who might otherwise shoot downward into the courtyard of the main dzong below.[NEWLINE][NEWLINE]With their strategic locations atop hills or cliffs, dzongs served as bastions of Tibetan civilization, fostering the spread of Buddhism and serving as centers for religious teachings and ceremonies. Over the centuries, various dynasties and rulers expanded and fortified these structures, adding layers of cultural and historical significance. Despite facing challenges such as invasions and political upheavals, many dzongs have endured, symbolizing the resilience and heritage of Tibet. Today, these ancient fortresses continue to attract visitors from around the world, offering a glimpse into Tibet's rich past and serving as reminders of its enduring cultural identity.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_JAR_DZONG">
+			<Text>Construct a [LINK=IMPROVEMENT_JAR_DZONG]Dzong[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_JAR_DZONG_HELP">
+			<Text>Unique [ICON_CULTURE_JFD_HIMALAYAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_HIMALAYAN_SHORT_DESC}[ENDCOLOR] replacement for the Citadel and the Holy Site. The Dzong can be constructed by expending a [ICON_GREAT_GENERAL] Great General or a [ICON_PROPHET] Great Prophet. Claims adjacent tiles when constructed, +1 [ICON_WAR] Military Unit Supply, and the unit is consumed.[NEWLINE][NEWLINE]+100% [ICON_STRENGTH] Defense to owned Units on the tile. Deals 30 damages to hostile Units ending their turn next to it. Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it. Benefits from the Policy and Tech bonuses for both the Citadel and the Holy Site.</Text>
+		</Row>
+	
+		<Row Tag="TXT_KEY_IMPROVEMENT_THP_BASADI">
+			<Text>Basadi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_THP_BASADI_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_THP_BASADI_TEXT">
+			<Text>The effects go here.[NEWLINE][NEWLINE]A Jain temple, Derasar, or Basadi is the place of worship for the followers of Jainism, housing icons of Tirthankaras for devotion. Some of the earliest examples of Jain architecture are of the Indian rock-cut architecture tradition, whereby structures are produced by carving material out of solid rock. These traditions were initially shared with Buddhism, and by the end of the classical period, Hinduism. Maru-Gurjara architecture or the "Solanki style", is a particular temple style from Gujarat and Rajasthan (both regions with a strong Jain presence) that originated in both Hindu and Jain temples around the year 1000, but became enduringly popular with Jain patrons. It has remained in use, in somewhat modified form, to the present day, indeed also becoming popular again for some Hindu temples in the 20th century.[NEWLINE][NEWLINE]Temples were typically funded by wealthy Jain individuals or families. For this reason, and often the smaller numbers of Jains in the population, Jain temples tend to be at the small or middle end of the range of sizes, but at pilgrimage sites they may cluster in large groups -- there are altogether several hundred at Palitana, tightly packed within several high-walled compounds called "tuks" or "tonks". Temple etiquette involves bathing and changing into fresh clothes, removing shoes and socks, and all leather items. One must not eat or have visited the washroom between changing clothes and entering the temple, after which one remains silent.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_THP_BASADI">
+			<Text>Construct a [LINK=IMPROVEMENT_THP_BASADI]Basadi[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_THP_BASADI_HELP">
+			<Text>Requires the [ICON_CULTURE_JFD_BHARATA] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_BHARATA_SHORT_DESC}[ENDCOLOR] Cultural Group. The Basadi can be constructed by expending a [ICON_PROPHET] Great Prophet.[NEWLINE][NEWLINE]effects.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_THP_BASADI_REC">
+			<Text>Constructing a Basadi here would be good!</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

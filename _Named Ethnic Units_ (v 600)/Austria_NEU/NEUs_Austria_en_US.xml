@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--AUSTRIA-->
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AUSTRIA_GREAT_WAR_INFANTRY">
+			<Text>[COLOR_SELECTED_TEXT]Fußtruppen[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AUSTRIA_TANK">
+			<Text>[COLOR_SELECTED_TEXT]Panzer IV Ausf G[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AUSTRIA_LONGSWORDSMAN">
+			<Text>[COLOR_SELECTED_TEXT]Langschwertkämpfer[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AUSTRIA_WARRIOR">
+			<Text>[COLOR_SELECTED_TEXT]Bajuwaren-Krieger[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_ETHNIC_UNIT_AUSTRIA_PARATROOPER">
+			<Text>[COLOR_SELECTED_TEXT]Fallschirmjäger[ENDCOLOR]</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" version="10">
+<Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" version="13">
   <Properties>
     <Name>(6) Future Age for VP</Name>
     <Stability>Beta</Stability>
     <Teaser>Extending Civ V with [COLOR_POSITIVE_TEXT]Future Age[ENDCOLOR] for VP.</Teaser>
-    <Description>Extends the Information Era with the new Future Era, new technologies, buildings, units and fun !</Description>
+    <Description>Extends the Information Era with the new Future Era, new technologies, buildings and units.</Description>
     <Authors>madmax + caym</Authors>
     <HideSetupGame>0</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
@@ -13,7 +13,7 @@
     <SupportsMultiplayer>1</SupportsMultiplayer>
     <SupportsHotSeat>1</SupportsHotSeat>
     <SupportsMac>1</SupportsMac>
-    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadAudioSystem>1</ReloadAudioSystem>SV_TunnelS
     <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
     <ReloadUnitSystem>1</ReloadUnitSystem>
@@ -22,9 +22,12 @@
     <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
     <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
     <Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
+    <!-- <Mod id="c7bf7064-d1b1-4708-9e93-7a1560868582" minversion="0" maxversion="999" title="(4a) Promotion Icons for VP" /> -->
+    <!-- <Mod id="be2d13ee-d18d-410e-8f04-7cd19cd99a98" minversion="0" maxversion="999" title="(4b) UI - Promotion Tree for VP" /> -->
   </Dependencies>
   <References>
     <Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era" />
+    <Mod id="9562c016-f5bb-79hg-b37e-a3b40d3yg13a" minversion="0" maxversion="999" title="CAYM Unit Change" />
   </References>
   <Blocks />
   <Files>
@@ -74,6 +77,7 @@
     <File md5="9F06D19B07F68705C9601986CBA7163A" import="0">Lua/FutureLua.lua</File>
     <File md5="D7B255F32E2BA218DAACE63CFE00F1DB" import="1">Lua/NewEraPopup.lua</File>
 
+    <File md5="9785F947A7B30138E87ED613B71674B5" import="1">Sounds/Basilosaurus-000.wav</File>
     <File md5="9785F947A7B30138E87ED613B71674B5" import="1">Sounds/trex-000.wav</File>
     <File md5="32CEBF003AA51E85ED27437DE5859B97" import="1">Sounds/trex-001.wav</File>
     <File md5="F81818E3F162CC15336E63D8194A900D" import="1">Sounds/trex-002.wav</File>
@@ -155,7 +159,6 @@
     <File md5="840E73AA63733F709694155361AC48K8" import="1">Art/Atlas/ImperialUnitAtlas64.dds</File>
     <File md5="1EED0D0E142CA37D4C168B8E3F1990F5" import="1">Art/Atlas/ImperialUnitAtlas80.dds</File>
 
-    <File md5="A6EE06EEEDF45B77A0744F7E776B890D" import="1">Art/Improvements/sv_Vault.dds</File>
     <File md5="C37CD8CF3CE3F19DB6BCEB31335A0320" import="1">Art/Improvements/angeltower.dds</File>
     <File md5="C0E69DF5B9D410938A5CC7A13DA3F269" import="1">Art/Improvements/Arcology_Base_Destroyed_DIFF.dds</File>
     <File md5="9DE852EC0EE9836D291BF072D98EFD79" import="1">Art/Improvements/Arcology_Base_Destroyed_GLOSS.dds</File>
@@ -314,18 +317,23 @@
     <File md5="ABD58E1CDC37C25C4D69B2D2FE1154FC" import="1">Art/Improvements/PholusGrowth.gr2</File>
     <File md5="E2248C3BE81001A1A52920D24C49E8ED" import="1">Art/Improvements/quarrymodern.dds</File>
     <File md5="201B8F860475BA1DEF04AA5CD85CA630" import="1">Art/Improvements/ReactorCore.dds</File>
-    <File md5="D843D614A966F1307F3F463EABFCE3CC" import="1">Art/Improvements/sv_Arcology.dds</File>
-    <File md5="2773648BC86830978D5CCC823E6A3865" import="1">Art/Improvements/sv_Biowell.dds</File>
-    <File md5="43DFF0BCB7DC74392075049F464D44A2" import="1">Art/Improvements/sv_CommArray.dds</File>
-    <File md5="05744A93BBC3AE2BF416D41F2CBAAE37" import="1">Art/Improvements/sv_FungalGrowth.dds</File>
-    <File md5="9101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/sv_Generator.dds</File>
-    <File md5="D2C565210643E10498B5DCB17F1EEEE6" import="1">Art/Improvements/sv_Genocentre.dds</File>
-    <File md5="8AA59F449B6979A3D8C33015BB9B4977" import="1">Art/Improvements/sv_HERC.dds</File>
-    <File md5="C127C9D37E78BC198667F06EBC16E353" import="1">Art/Improvements/sv_HydroponicsDome.dds</File>
-    <File md5="7DDC84A042F201E593B6C5869028B585" import="1">Art/Improvements/sv_IndustrialSite.dds</File>
-    <File md5="76CB123474C54F3ED1CFD94693C4959D" import="1">Art/Improvements/sv_NaturePreserve.dds</File>
-    <File md5="41C04E02ABB17D9E95DFF2264A7C0F6D" import="1">Art/Improvements/sv_SupportCore.dds</File>
-
+    <File md5="2773648BC86830978D5CCC823E6A3865" import="1">Art/Improvements/SV_Biowell.dds</File>
+    <File md5="43DFF0BCB7DC74392075049F464D44A2" import="1">Art/Improvements/SV_CommArray.dds</File>
+    <File md5="05744A93BBC3AE2BF416D41F2CBAAE37" import="1">Art/Improvements/SV_FungalGrowth.dds</File>
+    <File md5="7DDC84A042F201E593B6C5869028B585" import="1">Art/Improvements/SV_IndustrialSite.dds</File>
+    <File md5="76CB123474C54F3ED1CFD94693C4959D" import="1">Art/Improvements/SV_NaturePreserve.dds</File>
+    <File md5="8AA59F449B6979A3D8C33015BB9B4977" import="1">Art/Improvements/SV_HERC.dds</File>
+    <File md5="C127C9D37E78BC198667F06EBC16E353" import="1">Art/Improvements/SV_HydroponicsDome.dds</File>
+    <File md5="9101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/SV_Generator.dds</File>
+    <File md5="W101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/SV_Generator_WATER.dds</File>
+    <File md5="D2C565210643E10498B5DCB17F1EEEE6" import="1">Art/Improvements/SV_Genocentre.dds</File>
+    <File md5="D2C565210643E10498B5DCB17F1EEEE6" import="1">Art/Improvements/SV_Genocentre_WATER.dds</File>
+    <File md5="41C04E02ABB17D9E95DFF2264A7C0F6D" import="1">Art/Improvements/SV_SupportCore.dds</File>
+    <File md5="41C04E02ABB17D9E95DFF2264A7C0F6D" import="1">Art/Improvements/SV_SupportCore_WATER.dds</File>
+    <File md5="D843D614A966F1307F3F463EABFCE3CC" import="1">Art/Improvements/SV_Arcology.dds</File>
+    <File md5="D843D614A966F1307F3F463EABFCE3CC" import="1">Art/Improvements/SV_Arcology_WATER.dds</File>
+    <File md5="2101C228D37152E328CE34FD71C4D596" import="1">Art/Improvements/SV_Underseatunnel.dds</File>
+    <File md5="A6EE06EEEDF45B77A0744F7E776B890D" import="1">Art/Improvements/SV_Vault.dds</File>
     <File md5="CFE8861B2357DCEA5E239675D7B6E6F8" import="1">Art/Resources/FutureFontIcons.dds</File>
     <File md5="B8E04F6D15B7AA0F5DCDCE7B838020DE" import="1">Art/Resources/FutureFontIcons.ggxml</File>
 
@@ -600,10 +608,9 @@
     <File md5="9616D652918AB07C023BFA0531166913" import="1">Art/Units/Modern Helicopter/IconAtlas64.dds</File>
     <File md5="B76946708A25F8F9873F1D671F87483C" import="1">Art/Units/Modern Helicopter/IconAtlas80.dds</File>
     <File md5="56AE3669C7B094969253EB1CAC48E96A" import="1">Art/Units/Modern Helicopter/IconAtlasFlag.dds</File>
-    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Tiger_diff(german).dds</File>
-    <File md5="D827BDFE22B39970863A9E49B8D66776" import="1">Art/Units/Modern Helicopter/Model/tiger_germany.fxsxml</File>
-    <File md5="612EF5D9B4469E114594996666942E65" import="1">Art/Units/Modern Helicopter/Model/Tiger_Germany.gr2</File>
-    <File md5="33881021B7D2B83112222067A095F3EA" import="1">Art/Units/Modern Helicopter/Model/Tiger_sref.dds</File>
+    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.dds</File>
+    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.fxsxml</File>
+    <File md5="724DD6082E3B52EE66C59874ACFA0FA5" import="1">Art/Units/Modern Helicopter/Model/Ka52.gr2</File>
     <File md5="11F498D79F232464379C4337E5C823FD" import="1">Art/Units/Power Armor/PowerArmor.fxsxml</File>
     <File md5="A39C02BF9D0D3341B510C83AE1B9F64F" import="1">Art/Units/Power Armor/PowerArmor.gr2</File>
     <File md5="DABFA22C33DD94F21004A970A85BA490" import="1">Art/Units/Power Armor/powerarmor_body_diffuse-Alpha.dds</File>
@@ -1799,25 +1806,26 @@
 
     <File md5="AC63206D1B159F7A59C308AAD217D0D7" import="1">Art/Wonders/Angelnet_Splash.dds</File>
     <File md5="ZZC92D258F46A795BE112898781326PE" import="1">Art/Wonders/ApexCentre_Splash.dds</File>
-    <File md5="CC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Wonders/AsteroidMining_Splash.dds</File>
-
+    <File md5="CC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Wonders/DeepResource_Splash.dds</File>
+    <File md5="NC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Wonders/Nuclearfusion_Splash.dds</File>
     <File md5="13320A30151FAD82C6750C50116F1141" import="1">Art/Wonders/CitadelStation_Splash.dds</File>
     <File md5="7E16AA981B3620E7C2E2650DF0E19175" import="1">Art/Wonders/DataHaven_Splash.dds</File>
     <File md5="EBC8BFE1AD222CF4C1EFFA4D84D1D8D3" import="1">Art/Wonders/DigitalEmancipation_Splash.dds</File>
     <File md5="BE9979FE5B9043DFF999F873139B2345" import="1">Art/Wonders/EnrichmentCentre_Splash.dds</File>
     <File md5="D1D9186934B7F0E11069846DBBEC724B" import="1">Art/Wonders/FWBionicTower_Splash.dds</File>
     <File md5="D08A63CC114A3F11B3C17FC433B30E5C" import="1">Art/Wonders/FWBuenosAiresForum_Splash.dds</File>
-    <File md5="672508870079967D17B815DB92208910" import="1">Art/Wonders/FWFloatingIslands_Splash.dds</File>
+    <File md5="672508870079967D17B815DB92208910" import="1">Art/Wonders/FWLaputa_Splash.dds</File>
     <File md5="A12418D4B512243172118859ED664791" import="1">Art/Wonders/FWShimizuMCP_Splash.dds</File>
     <File md5="193DB537E5C9B32CB81AE0E1E1273273" import="1">Art/Wonders/FWSkyCity_Splash.dds</File>
     <File md5="ACC908C711B5DD2CC7B4D142217554CA" import="1">Art/Wonders/FWUltimaTower_Splash.dds</File>
     <File md5="5EABF31CC84EAB10FD2E48F12D9E5E2C" import="1">Art/Wonders/GeneVault_Splash.dds</File>
     <File md5="6D4CEBDB282B186F2BAC9978085D0BCE" import="1">Art/Wonders/GenomeProject_Splash.dds</File>
-    <File md5="5FB88744D9F91BD36F7539D3A8363DDC" import="1">Art/Wonders/Helios_Splash.dds</File>
+    <File md5="CD4CEBDB282B186F2BAC9978085D0BCE" import="1">Art/Wonders/AInetworkProject_Splash.dds</File>
+    <File md5="5FB88744D9F91BD36F7539D3A8363DDC" import="1">Art/Wonders/Skyhook_Splash.dds</File>
     <File md5="B9DBA099C9B3BD1DFCFE48047FE7F7C8" import="1">Art/Wonders/JurassicPark_Splash.dds</File>
-    <File md5="9E90E841CD4144298CA3DD900E61B751" import="1">Art/Wonders/KingdomTowerCT_Splash.dds</File>
-    <File md5="44C62D258F46A295BE442898131326DE" import="1">Art/Wonders/LivingCity_Splash.dds</File>
-    <File md5="F1642C649A949250018E95F8DE756721" import="1">Art/Wonders/MiapolisCT_Splash.dds</File>
+    <File md5="9E90E841CD4144298CA3DD900E61B751" import="1">Art/Wonders/CreationOratorium_Splash.dds</File>
+    <File md5="44C62D258F46A295BE442898131326DE" import="1">Art/Wonders/HiveCity_Splash.dds</File>
+    <File md5="F1642C649A949250018E95F8DE756721" import="1">Art/Wonders/EdenProject_Splash.dds</File>
     <File md5="EBBBF0DB3B8D5AED9282C0C9957EE534" import="1">Art/Wonders/Mnemosyne_Splash.dds</File>
     <File md5="D99EBF1324584810B419122A62519939" import="1">Art/Wonders/NephilimGeneTemplate_Splash.dds</File>
     <File md5="56456E8B39E7417885895271E01127F0" import="1">Art/Wonders/OrbitalRefinery_Splash.dds</File>
@@ -1955,6 +1963,7 @@
     <File md5="9E406DE17438B5FBF36859377E4F7F36" import="0">XML/FutureImprovements.xml</File>
     <File md5="F8B733BF5C85F9718DCB5621C464FEZ1" import="0">XML/FutureTechnologies.xml</File>
     <File md5="288831CB920E4B1A30B84DD1DD98A7EE" import="0">XML/FutureText.xml</File>
+    <File md5="388831CB920E4B1A30B84DD1DD98A7EE" import="0">XML/FutureText_KR.xml</File>
     <File md5="0BCEE9FC89E26F5340EEE145861C8BD6" import="0">XML/IconAtlases.xml</File>
     <File md5="265831PB870E4B1A30G84ZZ1DE98P7EE" import="0">XML/Resolutions.xml</File>
     <File md5="2F8BFF6F4A099AB9B1BF1F4A2740016F" import="0">XML/ResourceIcons.xml</File>
@@ -1962,6 +1971,7 @@
     <File md5="98EF605A7A6B607A149C707EF7715C99" import="0">XML/TechTreeAdjustment.sql</File>
     <File md5="AA196416E09829DFF69FA657CF0G071E" import="0">XML/Wonders.sql</File>
     <File md5="CAYM6416E09829DFF69FA657CF0G071E" import="0">XML/FutureText.sql</File>
+    <File md5="CAYMK416E09829DFF69FA657CF0G071E" import="0">XML/FutureText_KR.sql</File>
 
     <File md5="MC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Mobileartillery/3DModel/M109SKorea.fxsxml</File>
     <File md5="MA9658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Mobileartillery/3DModel/M109SKorea.gr2</File>
@@ -1988,14 +1998,72 @@
     <File md5="YC3A347364D01843737AD36B22B1D51A" import="1">VP_Imagechange/Mechanizedinfantry/MechanizedinfantryFlag.dds</File>
     <File md5="YC3A347364D01843737AD36B22B1D51A" import="1">VP_Imagechange/Mechanizedinfantry/SV_mechanizedinfantry</File>
 
+    <File md5="10FBE81A38F4D40FBB262AA7848681E8" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Attack.gr2</File>
+    <File md5="82C1973B3CED9ACEFFFE2C2003A603D4" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Bombard_Defense.gr2</File>
+    <File md5="4E5C1205401B54CBE76140F440D3200D" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathA.gr2</File>
+    <File md5="5D434BEDA164FA4674D624BBD5D5D2A1" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathA_Idle.gr2</File>
+    <File md5="90EEA8E512E8E0B848BD323FE8A99780" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathB.gr2</File>
+    <File md5="0208C41187615F90A266AB8AF44EFF0A" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_DeathB_Idle.gr2</File>
+    <File md5="17FA15D5AF19204D2FBDDBDF0BCD6313" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fidget.gr2</File>
+    <File md5="B63A001D59F2A07B413BB02898D2E656" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fortify.gr2</File>
+    <File md5="4DB8C1D2B17255833878519BA8CF4568" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Fortify_Idle.gr2</File>
+    <File md5="A6DDF301AB9DFC99838E77EC71416A0C" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Idle.gr2</File>
+    <File md5="DCB52786F02DF0FE8C8C64A68733041A" import="1">VP_Imagechange/PMC/3DModel/Animations/ModernMarine_Run.gr2</File>
+    <File md5="5B8FBDD532486EB60ECB727286CA7706" import="1">VP_Imagechange/PMC/3DModel/fx_triggers_modernmarine.ftsxml</File>
+    <File md5="0C2333EFA1EDD7298133E5D6EE6ADFD8" import="1">VP_Imagechange/PMC/3DModel/RM_Cdo_diff.dds</File>
+    <File md5="F0FED20AE11A4AD6A674FDF4D7DB1C0D" import="1">VP_Imagechange/PMC/3DModel/RM_Cdo_sref.dds</File>
+    <File md5="DA0764D8380400021A633B87C6512075" import="1">VP_Imagechange/PMC/3DModel/RM_Commando.fxsxml</File>
+    <File md5="246C7DC6211DF16B7BB154C6BE0EACC9" import="1">VP_Imagechange/PMC/3DModel/RM_Commando.gr2</File>
+    <File md5="246C7DC6211DF16B7BB154C6BE0EACC9" import="0">VP_Imagechange/PMC/3DModel/PMCArtDefines.sql</File>
+    <File md5="MA495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/PMC/PMC_256.dds</File>
+    <File md5="MC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/PMC/PMC_128.dds</File>
+    <File md5="M29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/PMC/PMC_080.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/PMC_064.dds</File>
+    <File md5="M3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/PMC/PMC_045.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/PMCFlag.dds</File>
+    <File md5="M0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/PMC/SV_CAYM_PMC.dds</File>
+    <File md5="M3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/PMC/CAYM_PMC.dds</File>
+
+    <File md5="95998cea0e79ab27ae6ff8ce280d2a7c" import="1">VP_Imagechange/UAV/UAV_SV.dds</File>
+    <File md5="048b4aac266599b4f55eba4c7e15ce48" import="1">VP_Imagechange/UAV/UAV_UnitFlag32.dds</File>
+    <File md5="E6C382609B837B34C60039C0D808471A" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.fxsxml</File>
+    <File md5="5E9F35EEA82C3E0720D0276C6ADF1A52" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.gr2</File>
+    <File md5="210F0AAF9CCA036907E90DC209C525F7" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter_diff.dds</File>
+    <File md5="6B32B7D4FEE94C70CDE92DC6490D1187" import="1">VP_Imagechange/UAV/SMAN_IEUP_CASFighter_sref.dds</File>
+    <File md5="37064B6BB3B92D34BFEBE5D46896D1FC" import="0">VP_Imagechange/UAV/SMAN_IEUP_CASFighter.xml</File>
+
     <File md5="3A9D5C3EE6A1E9EE060EA648545E4310" import="1">VP_Imagechange/NuclearVault/ART/missilesilo.dds</File>
     <File md5="F9268DAC7B388FBF37524C255242E9E6" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.fxsxml</File>
     <File md5="530E37C540848B82BADB13139912994A" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo.gr2</File>
     <File md5="E19B2CA8FA2652337E897876E53D8BE3" import="1">VP_Imagechange/NuclearVault/ART/MissileSilo_PL.fxsxml</File>
+
+    <File md5="43c670160d1337d0b227db0ec5b8561a" import="1">VP_Imagechange/Zeppelin/WWI_Zeppelin_Flag.dds</File>
+    <File md5="77d2c302534fec4cf857e8eb05603c50" import="1">VP_Imagechange/Zeppelin/WWI_Zeppelin_SV.dds</File>
+    <File md5="10a529a08ae349cb1f685ffb9e0261fc" import="1">VP_Imagechange/Zeppelin/ZeppelinSREF.dds</File>
+    <File md5="f999a806999abae1cfb66958dd7630c2" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.dds</File>
+    <File md5="za6dda6aeddc032482582d9b51c5a82c" import="1">VP_Imagechange/Zeppelin/fx_triggers_zeppelin.ftsxml</File>
+    <File md5="fa6dda6aeddc032482582d9b51c5a82c" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.fxsxml</File>
+    <File md5="7443f0799bcaaa5ce260a0ae6c221778" import="1">VP_Imagechange/Zeppelin/ZeppelinTC.gr2</File>
+
+    <File md5="P2345DB3761021105C1263AE7A7C99E2" import="0">VP_Imagechange/Paratrooper/3DModel/ParatrooperArtdefine.sql</File>
+    <File md5="PC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.fxsxml</File>
+    <File md5="P29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.gr2</File>
+    <File md5="P0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/3DModel/Paratrooper_France.dds</File>
+    <File md5="P3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/3DModel/no_gloss.dds</File>
+    <File md5="P6345DB3761021105C1263AE7A7C99E2" import="1">VP_Imagechange/Paratrooper/Paratrooper_256.dds</File>
+    <File md5="PC495115B209658C585382DAD65F75FE" import="1">VP_Imagechange/Paratrooper/Paratrooper_128.dds</File>
+    <File md5="P29658DE06ECA4DFE4483A1047F741FE" import="1">VP_Imagechange/Paratrooper/Paratrooper_080.dds</File>
+    <File md5="P0985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/Paratrooper_064.dds</File>
+    <File md5="P3B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/Paratrooper_045.dds</File>
+    <File md5="P2985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlag.dds</File>
+    <File md5="P4B8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatrooper.dds</File>
+    <File md5="PA985F983F71D87B4F34DAE2513A0DC8" import="1">VP_Imagechange/Paratrooper/CaymparatrooperFlaga.dds</File>
+    <File md5="PAB8352224C6E1BD150C466D106F39BF" import="1">VP_Imagechange/Paratrooper/SV_Caymparatroopera.dds</File>
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>VP_Imagechange/Mechanizedinfantry/3DModel/MechanizedinfantryArtDefines.sql</UpdateDatabase>
+      <UpdateDatabase>XML/EraSplashScreen.sql</UpdateDatabase>
+      <UpdateDatabase>XML/FutureTechnologies.xml</UpdateDatabase>
       <UpdateDatabase>XML/Units/ArtDefines.sql</UpdateDatabase>
       <UpdateDatabase>XML/Units/ArtDefines.xml</UpdateDatabase>
       <UpdateDatabase>XML/Units/FutureUnitIconAtlases.xml</UpdateDatabase>
@@ -2005,20 +2073,18 @@
       <UpdateDatabase>XML/Units/UnitsUpdates.sql</UpdateDatabase>
       <UpdateDatabase>XML/Units/UnitSound.sql</UpdateDatabase>
       <UpdateDatabase>XML/Buildings.sql</UpdateDatabase>
-      <UpdateDatabase>XML/EraSplashScreen.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureEras.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureImprovements.sql</UpdateDatabase>
       <UpdateDatabase>XML/FutureImprovements.xml</UpdateDatabase>
-      <UpdateDatabase>XML/FutureTechnologies.xml</UpdateDatabase>
-      <UpdateDatabase>XML/FutureTechnologies.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.xml</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText_KR.xml</UpdateDatabase>
       <UpdateDatabase>XML/IconAtlases.xml</UpdateDatabase>
       <UpdateDatabase>XML/Resolutions.xml</UpdateDatabase>
       <UpdateDatabase>XML/TechTreeAdjustment.sql</UpdateDatabase>
       <UpdateDatabase>XML/Wonders.sql</UpdateDatabase>
       <UpdateDatabase>XML/Resources.sql</UpdateDatabase>
-      <UpdateDatabase>XML/ResourceIcons.xml</UpdateDatabase>
       <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText_KR.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

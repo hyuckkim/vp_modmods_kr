@@ -1,0 +1,10 @@
+UPDATE Language_ko_KR
+SET Text = Replace(Text, ' 도시에 동물원이 필요합니다.', '')
+WHERE Tag = 'TXT_KEY_BUILDING_STADIUM_HELP';
+
+INSERT INTO Language_ko_KR (Tag, Text)
+VALUES	('TXT_KEY_BUILDING_RESTAURANT',			'레스토랑'),
+		('TXT_KEY_BUILDING_RESTAURANT_TEXT',		'파리에서 이 단어를 사용한 최초의 현대식 "레스토랑"은 고기와 계란으로 만든 국물인 부용(Bouillon)을 제공하는 식당들이었는데, 부용은 건강과 활력을 회복시켜 준다고 알려져 있었습니다. 이런 종류의 최초의 레스토랑은 1765년 또는 1766년에 마튀랭 로즈 드 샹투아조(Mathurin Roze de Chantoiseau)가 뤼 데 풀리(rue des Poulies)에 문을 열었는데, 이곳은 현재 루브르 거리(Rue de Louvre)의 일부입니다. 이전 식당들과는 달리 우아하게 꾸며져 있었고, 고기 육수 외에도 마카로니를 포함한 여러 가지 "원기 회복" 요리 메뉴를 제공했습니다. 음식이나 수프를 주문할 수 있는 최초의 식당은 아니지만, 다양한 선택이 가능한 메뉴를 제공한 최초의 식당으로 여겨집니다.[NEWLINE][NEWLINE]1898년에 문을 연 호텔 리츠(Ritz) 파리의 레스토랑은 고급 요리의 셰프인 오귀스트 에스코피에(Auguste Escoffier)에 의해 유명해졌습니다. 주방이 시끄럽고 난동이 심한 곳이었으며 직장에서 술을 마시는 것이 흔한 일이었던 시대에, 에스코피에는 직원들에게 청결, 규율, 조용함을 요구했습니다. 주방에 질서를 가져오기 위해 그는 자신의 군 경험을 활용하여 주방 직원을 조직하는 위계적 여단(hierarchical brigade) 제도를 개발했는데, 이 제도는 오늘날에도 여전히 많은 레스토랑에서 표준으로 사용되고 있습니다. 이를 통해 이 직업은 예술적 측면뿐 아니라 수익 측면에서도 새로운 차원으로 격상되었습니다.'),
+		('TXT_KEY_BUILDING_RESTAURANT_STRATEGY',	'레스토랑은 경기장에서 시작된 건축 방식을 이어가며, 건설 시 즉시 골드를 얻을 수 있을 뿐만 아니라 식량을 생산하는 농장과 재배지의 가치도 높여 도시의 문화 생산량을 늘릴 수 있습니다. 음식에 초점을 맞추면 더 많은 전문가를 고용할 수 있고, 레스토랑은 추가적으로 한 명의 전문가를 불행에서 해방시켜줍니다. 또한, 호텔, 기업형 농장, 마리나와 함께 건설하면 건물의 골드 유지 관리 비용을 줄일 수 있으며, 그렇게 하면 관광도 얻을 수 있습니다!'),
+		('TXT_KEY_BUILDING_RESTAURANT_HELP',		'');
+-- +400 [ICON_GOLD] Gold when completed. +2 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism from Hotels, Agribusinesses, and Marina in this City.[NEWLINE][NEWLINE]Nearby Farm: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby Plantation: +2 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization.

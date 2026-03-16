@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="efabfe24-7cef-4e5a-ade3-2c9de5b48374" version="8">
+  <Properties>
+    <Name>Hokaths Proposals INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Hokaths Proposals</Teaser>
+    <Description>Translation of the Hokaths Proposals into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]Hokath의 제안 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="0" maxversion="999" title="Hokath's Proposals" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="08C1773E78F66A1019F4BBB78754A835" import="0">Civ_Balance/Brazil.sql</File>
+    <File md5="52FBC0BDBD8B4591A7192325E996E825" import="0">Civ_Balance/Celts.sql</File>
+    <File md5="155DB04C8C934812FA2DE2191A171C75" import="0">Civ_Balance/Ethiopia.sql</File>
+    <File md5="B8CA3C4A8468F40CFF9E2446286A599C" import="0">Civ_Balance/Mongolia.sql</File>
+    <File md5="40B03DA8F76E61FFB1D9C1321469402D" import="0">Civ_Balance/Netherlands.sql</File>
+    <File md5="6D78BACACD5AF23085A902A28A3D43E8" import="0">Civ_Balance/Sweden.sql</File>
+    <File md5="7F58178461FC6F5ADAEB2C3D78F73D11" import="0">Corporations_Changes/Changes.sql</File>
+    <File md5="7B1B1F38F5354CFC64A434C670D40D42" import="0">Corporations_Changes/Mall/mallbuilding.xml</File>
+    <File md5="0916F5F9CDB07340747E6C32C3BF0392" import="0">Corporations_Changes/NewText.xml</File>
+    <File md5="A17A8EA2793FEA1036EB31C62903BC49" import="0">Corporations_Changes/WTC/WTC_Text_ko_KR.xml</File>
+    <File md5="69AFF5B9C2676CE918B819FF6D99E2AC" import="0">Early_Trees/Artistry_tweak.sql</File>
+    <File md5="26C1FDE7D5B0370B5D627812ED07D3C5" import="0">Early_Trees/Authority_tweak.sql</File>
+    <File md5="EB3E3D8FB98F6BFE4C8F0F3853704464" import="0">Early_Trees/Fealty_tweak.sql</File>
+    <File md5="9968D2CF988B947597974ECB9F2FD450" import="0">Early_Trees/Glove_Authority/Authority.sql</File>
+    <File md5="336789873E4B854DDEC15EDD8FAC03C3" import="0">Early_Trees/Statecraft_tweak.sql</File>
+    <File md5="957BBAD3B1EFBB49895DC077F0FC40A0" import="0">Early_Trees/Tradition_tweak.sql</File>
+    <File md5="C09EBF6D16D850C1832AE12714010F0C" import="0">Early_Trees/Tree_descriptions.sql</File>
+    <File md5="E57B5805214F1F95998A207583136C92" import="0">Forts/Forts.sql</File>
+    <File md5="16BFD54CA68F3EF6746CF72D0E75F6BB" import="0">Forts/Forts.xml</File>
+    <File md5="9875EB528A0D9E7FC067DB79B346D2F8" import="0">Industrial_Trees/Imperialism_changes.sql</File>
+    <File md5="4A03836C0ED5FA1A078C213247F1AE90" import="0">Industrial_Trees/Industry_changes.sql</File>
+    <File md5="204DA11AE3F2C3AECE2CA21BB9077907" import="0">Industrial_Trees/Rationalism_changes.sql</File>
+    <File md5="ECEC72C8CE6D04887050C690C0D4B3BB" import="0">Misc/Airport_tweak.sql</File>
+    <File md5="25A740F9E47324D5D8CB5C6DB8456D5E" import="0">Misc/Desert.sql</File>
+    <File md5="45DBB8E71919F546CCE1CA063CDDF0B8" import="0">Misc/Factory_and_Refinery.sql</File>
+    <File md5="98735A43AF4F810639201728ABC4A98A" import="0">Misc/Garden.sql</File>
+    <File md5="88EA251AAA0A0448EEF54769727FB9D7" import="0">Misc/HotelandZoo.sql</File>
+    <File md5="89FD3D6520A16A17CA72B831DAA9DD3B" import="0">Misc/InterceptRange.sql</File>
+    <File md5="CD462F46F4661F45E07FC8EE731BA6D0" import="0">Misc/MarshCamp.sql</File>
+    <File md5="B763F5FFFEB9A52A1914BD64CF35EB3B" import="0">Misc/Marsh_Caravansary.sql</File>
+    <File md5="6E789059C07D7B8E4B068B2B2DE01E0B" import="0">Misc/Minefield.sql</File>
+    <File md5="23923752B729BEC7B04724662C653915" import="0">Misc/Pantheons.sql</File>
+    <File md5="1D3B7647899EF50EB0040B43CB426520" import="0">Misc/PublicSchool_and_BroadcastTower.sql</File>
+    <File md5="B86DADE7CA7A0352C798D3B78E0F5C09" import="0">Misc/SAM_Missiles.sql</File>
+    <File md5="C9E7C4198C7AF3E87C9CE56B846C7252" import="0">Misc/Stoneworks_tweak.sql</File>
+    <File md5="6DE16D13F20F4192DDAE0A2A287F8A17" import="0">Misc/Windmill_from_Agri.sql</File>
+    <File md5="FA8B5D6A029C88A476182EAD95AE50A8" import="0">Misc/Work_Boats.sql</File>
+    <File md5="BA7F2F2716FA1217DC939F5975E5D0A3" import="0">New_Buildings/Aerodrome.sql</File>
+    <File md5="98CA9AAEC4091C29D92106F915DE0252" import="0">New_Buildings/Arcade.sql</File>
+    <File md5="0AC2B288BB1C94885F70B339AD69BCA7" import="0">New_Buildings/Cinema.sql</File>
+    <File md5="069AB7F9C84FCAFCA8CD430D9D6EFFB9" import="0">New_Buildings/Grocer_rebalance.sql</File>
+    <File md5="E80BBDD43DEE2511497EDD8699692C04" import="0">New_Buildings/Hospital_nerf.sql</File>
+    <File md5="314B1BC158A2C1FEA71B6D0DEAF069BD" import="0">New_Buildings/IndustrialEstate.sql</File>
+    <File md5="F77B5772B37AB109EA64A9DBA55EA1D6" import="0">New_Buildings/Nightclub.sql</File>
+    <File md5="35DD839D21A3B0480B3EDF3509D04F4A" import="0">New_Buildings/Observatory.sql</File>
+    <File md5="E7B307E389D70D158B90706ED783B220" import="0">New_Buildings/Pipeline.sql</File>
+    <File md5="6EB3738561479C3FDF686DA319543A5C" import="0">New_Buildings/PolarStation.sql</File>
+    <File md5="725163D3CEB6F2846216156A15A2B2E6" import="0">New_Buildings/PublicTransport.sql</File>
+    <File md5="4CEFA4C210E2AEE1D0C0BD9B21268486" import="0">New_Buildings/Restaurant.sql</File>
+    <File md5="A791BC4BA533A3A5801A9A00EE38E76E" import="0">New_Buildings/Sewer.sql</File>
+    <File md5="13E3E7ADA4C9C138BAA935641FB30D5E" import="0">New_Buildings/Silo.sql</File>
+    <File md5="3E3759EB75B28B5C1EC564BDDFCB03ED" import="0">New_Buildings/Ski_and_Marina_and_Club.sql</File>
+    <File md5="1F344A341927876D84840E45E10D8D4B" import="0">New_Buildings/Supermarket.sql</File>
+    <File md5="0133DB6BE04CEA8A1F636BE0D6280888" import="0">Pikeman_Rework/Billman_GameDefines.sql</File>
+    <File md5="ED95C31E7E23D3463718AF462988AD3A" import="0">Pikeman_Rework/TwoHander_GameDefines.sql</File>
+    <File md5="F9BBBA12CF0F4194731BEE1AFD7E87B2" import="0">Recon_Rework/NewPromotions.xml</File>
+    <File md5="7DF3E69B51420B15563B30451825ED71" import="0">Recon_Rework/PromoChanges.sql</File>
+    <File md5="A2469BF7EFF0568F8E7DE3E0AC5B03C9" import="0">Siege_Rework/Field.sql</File>
+    <File md5="9ED77A7FEE2CF6B4E92DBC535762576A" import="0">Siege_Rework/Indirect.sql</File>
+    <File md5="0B818179D92B419EA70413166B966985" import="0">Siege_Rework/NewPromotions.xml</File>
+    <File md5="755CA2BE8279C7E468974DCAD6557E50" import="0">Siege_Rework/Range.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Civ_Balance/Brazil.sql</UpdateDatabase>
+      <UpdateDatabase>Civ_Balance/Celts.sql</UpdateDatabase>
+      <UpdateDatabase>Civ_Balance/Ethiopia.sql</UpdateDatabase>
+      <UpdateDatabase>Civ_Balance/Mongolia.sql</UpdateDatabase>
+      <UpdateDatabase>Civ_Balance/Netherlands.sql</UpdateDatabase>
+      <UpdateDatabase>Civ_Balance/Sweden.sql</UpdateDatabase>
+      <UpdateDatabase>Corporations_Changes/Mall/mallbuilding.xml</UpdateDatabase>
+      <UpdateDatabase>Corporations_Changes/WTC/WTC_Text_ko_KR.xml</UpdateDatabase>
+      <UpdateDatabase>Corporations_Changes/Changes.sql</UpdateDatabase>
+      <UpdateDatabase>Corporations_Changes/NewText.xml</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Glove_Authority/Authority.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Artistry_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Authority_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Fealty_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Statecraft_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Tradition_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Early_Trees/Tree_descriptions.sql</UpdateDatabase>
+      <UpdateDatabase>Forts/Forts.sql</UpdateDatabase>
+      <UpdateDatabase>Forts/Forts.xml</UpdateDatabase>
+      <UpdateDatabase>Industrial_Trees/Imperialism_changes.sql</UpdateDatabase>
+      <UpdateDatabase>Industrial_Trees/Industry_changes.sql</UpdateDatabase>
+      <UpdateDatabase>Industrial_Trees/Rationalism_changes.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Airport_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Desert.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Factory_and_Refinery.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Garden.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/HotelandZoo.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/InterceptRange.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Marsh_Caravansary.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/MarshCamp.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Minefield.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Pantheons.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/PublicSchool_and_BroadcastTower.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/SAM_Missiles.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Stoneworks_tweak.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Windmill_from_Agri.sql</UpdateDatabase>
+      <UpdateDatabase>Misc/Work_Boats.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Aerodrome.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Arcade.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Cinema.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Grocer_rebalance.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Hospital_nerf.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/IndustrialEstate.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Nightclub.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Observatory.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Pipeline.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/PolarStation.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/PublicTransport.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Restaurant.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Sewer.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Silo.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Ski_and_Marina_and_Club.sql</UpdateDatabase>
+      <UpdateDatabase>New_Buildings/Supermarket.sql</UpdateDatabase>
+      <UpdateDatabase>Pikeman_Rework/Billman_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Pikeman_Rework/TwoHander_GameDefines.sql</UpdateDatabase>
+      <UpdateDatabase>Recon_Rework/NewPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>Recon_Rework/PromoChanges.sql</UpdateDatabase>
+      <UpdateDatabase>Siege_Rework/Field.sql</UpdateDatabase>
+      <UpdateDatabase>Siege_Rework/Indirect.sql</UpdateDatabase>
+      <UpdateDatabase>Siege_Rework/NewPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>Siege_Rework/Range.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

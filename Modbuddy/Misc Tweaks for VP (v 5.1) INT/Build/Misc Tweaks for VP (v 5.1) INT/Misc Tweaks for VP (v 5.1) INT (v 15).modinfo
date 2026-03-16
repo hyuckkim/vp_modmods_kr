@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="938ba69b-0a03-481e-b81a-ceca90aaf6fe" version="15">
+  <Properties>
+    <Name>Misc Tweaks for VP (v 5.1) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>VP 5.0+ 버전 이상 전용</Teaser>
+    <Description>VP 경험 개선을 위한 여러 가지 변경 사항.</Description>
+    <Authors>azum4roll</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8562c016-f5bb-79a3-b37e-a73cba215fe9" minversion="0" maxversion="999" title="Misc Tweaks for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="7F22B9D1639CDBD12F6DF8EB40C3F9A9" import="0">Civilizations/Netherlands.sql</File>
+    <File md5="3E5870DDB9EC497C44E7B6590CCB3BB1" import="0">Civilizations/Polynesia.sql</File>
+    <File md5="AD0F2F97C11CD98E2CA18CC62596B604" import="0">Civilizations/Songhai.sql</File>
+    <File md5="D26EA85EEDA6CC7FD63984D37B8B78C7" import="0">Civilizations/Sweden.sql</File>
+    <File md5="D1A7077888E37274542281823760A773" import="0">LandUnitChanges.sql</File>
+    <File md5="8E1F7BE7FBAB072E719B88C365EE20C4" import="0">NavalUnitChanges.sql</File>
+    <File md5="F5F5DE2C61EF36E54A4625A83145BCB6" import="0">OtherChanges.sql</File>
+    <File md5="DCE3FCA1F709E855B2BCA8FD6AAB5CF8" import="0">SkirmisherChanges.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Civilizations/Netherlands.sql</UpdateDatabase>
+      <UpdateDatabase>Civilizations/Polynesia.sql</UpdateDatabase>
+      <UpdateDatabase>Civilizations/Songhai.sql</UpdateDatabase>
+      <UpdateDatabase>Civilizations/Sweden.sql</UpdateDatabase>
+      <UpdateDatabase>LandUnitChanges.sql</UpdateDatabase>
+      <UpdateDatabase>NavalUnitChanges.sql</UpdateDatabase>
+      <UpdateDatabase>OtherChanges.sql</UpdateDatabase>
+      <UpdateDatabase>SkirmisherChanges.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

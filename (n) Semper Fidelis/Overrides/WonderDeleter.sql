@@ -1,0 +1,96 @@
+
+CREATE TEMP TABLE Helper (
+	BuildingType TEXT
+);
+
+INSERT INTO Helper 
+VALUES
+    ('BUILDING_MECCA_HOTEL'), 
+    ('BUILDING_VARANASI_TEMPLE'), 
+    ('BUILDING_UBUDIAH_MOSQUE'),
+    ('BUILDING_CADET'),
+    ('BUILDING_RIO_CATHEDRAL'),
+    ('BUILDING_WOODSTOCK'),
+    ('BUILDING_GALATHEA');
+
+DELETE FROM Buildings
+WHERE Type IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_BuildingClassYieldChanges
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ClassesNeededInCity
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_Flavors
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_LocalResourceOrs
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldChanges
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldChangesPerReligion
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_TechEnhancedYieldChanges
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ThemingBonuses
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_GreatPersonProgressFromConstruction
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_InstantYield
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_DomainFreeExperiencesGlobal
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldFromConstruction
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldFromGPExpend
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldFromPillageGlobal
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ThemingYieldBonus
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_YieldFromCombatExperienceTimes100
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ClassNeededAnywhere
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ClassNeededNowhere
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DELETE FROM Building_ImprovementYieldChanges
+WHERE BuildingType IN (SELECT * FROM Helper)
+AND NOT EXISTS (SELECT * FROM Buildings WHERE Type = 'BUILDING_SIKU_QUANSHU');
+
+DROP Table Helper;

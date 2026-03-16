@@ -33,6 +33,7 @@ for row in GameInfo.Features() do
 		tNaturalWonders[row.ID] = {
 			Description		= L(row.Description),
 			Civilopedia		= L(row.Civilopedia),
+			Help			= L(row.Help),
 			PortraitIndex	= row.PortraitIndex,
 			IconAtlas		= row.IconAtlas
 		}
@@ -161,7 +162,7 @@ function ShowHideHandler(bIsHide, bInitState)
 			instance.NaturalWonderCivButton:RegisterCallback(Mouse.eLClick, OnCivilopediaLeftClick)
 			instance.NaturalWonderCivButton:SetVoid1(eFeature)
 			
-			local sCivilopediaEntry = naturalWonder.Civilopedia
+			local sCivilopediaEntry = naturalWonder.Help -- replaced with custom short text (was naturalWonder.Civilopedia)
 			instance.NaturalWonderCivButton:SetToolTipString(sCivilopediaEntry)
 
 			-- current owner

@@ -1,0 +1,145 @@
+Note: Max Franchises is 25 for assessing scaling bonuses
+General
+-- There is a new Corporation called Populi Medicine, its yield is Faith, with +% Faith route bonus
+-- Monopoly HQs require one of their resources locally to build. Monopolies are no longer required
+  This allows you to, roughly, pick any Corporation. You might not be able to make it in the Capital.
+-- the resource sets are organized as follows
+  Trader Sids: Cocoa, Salt, Spice, Sugar, Coffee, Cloves/Nutmeg/Pepper
+  Centaurus Extractors: Whale, Crab, Coral, Pearls
+  Hexxon Refinery: Coal, Oil, Uranium, Glass, Brazilwood
+  Giorgio Armeier: Perfume, Silk, Cotton, Dye, Fur
+  Firaxite Materials: Iron, Aluminum, Marble, Copper, Porcelain
+  TwoKay Foods: Horse, Wine, Truffles, Citrus, Olive
+  Civilized Jewelers: Lapis, Gold, Silver, Gems, Amber, Jewelry
+  Populi Medicine: Ivory, Tobacco, Incense, Jade, Tea
+-- Franchises AND Offices give +5 (food/prod/gold) or +3 (culture/sci/faith) (up from +1) to all Corporation Resources locally
+  If you do have a monopoly, you might want the matching Corporation!
+  Hexxon gives +8 Border Growth Points
+-- Reduced the Office yield bonus per Franchise to +1 for all Corporations 
+  except for Food and Gold which are +2
+  and Border Growth which is +3
+-- Reduced all yield modifiers for sending Trade Routes to Franchises from 10% to 3%
+-- Corporation yield bonus to buildings have been reduced in strength, it now affects 1 late game building
+    with more late game buildings we can redo some of these (i.e. supermarket, marina)
+  Trader Sids: +4 Gold from Broadcast Tower
+  Centaurus Extractors: +8 Production from Mine Field
+  Hexxon Refinery: +5 Production, Science, and Border Growth Points from Refinery (since otherwise pretty rubbish)
+  Giorgio Armeier: +4 Culture from Shopping Mall (see below)
+  Firaxite Materials: +3 Science from Stock Exchange
+  TwoKay Foods: +5 Food from Agribusiness (would change to Restaurant with New Buildings)
+  Civilized Jewelers: +6 Golden Age Points from Airport
+  Populi Medicine: +3 Faith from Hospital
+-- Corporations have new global Specialist yields
+  Trader Sids: +3 Food from Merchants
+  Centaurus Extractors: +1 Gold to all Specialists
+  Hexxon Refinery: +2 Science from Engineers
+  Giorgio Armeier: +2 Culture, Gold, Tourism from Artists (see below)
+  Firaxite Materials: +2 Production from Scientists
+  TwoKay Foods: no bonus
+    The idea is not to supercharge tall, but to 'thicken' wide
+  Civilized Jewelers: +1 Tourism to all Specialists
+  Populi Medicine: +3 Gold from Civil Servants
+-- Corporations now have internal trade bonuses on their Offices
+  Trader Sids: 50 Gold on Internal TR Finish
+  Centaurus Extractors: +6 Production on Internal TR
+  Hexxon Refinery: 100 Border Growth on Internal TR Finish
+  Giorgio Armeier: 80 Tourism on Internal TR Finish
+  Firaxite Materials: 40 Science on Internal TR Finish
+  TwoKay Foods: +10 Food on Internal TR
+  Civilized Jewelers: 75 Golden Age Points on Internal TR Finish
+  Populi Medicine: 40 Culture on Internal TR Finish
+    Internal TR is a supported strategy but Corporations have had almost all their power in International Routes, this intends to bring Internal TRs up in power to compete. I tried to be conservative, but numbers may be too high. I based on the Kabuki Theatre (50 Culture and much earlier, but a UB). 
+
+Specific
+-- Corporation tooltips are updated to suggest to the player what victory conditions they support
+  Trader Sids: Diplomatic
+  Centaurus Extractors: Spaceship and Cultural
+  Hexxon Refinery: Spaceship and Domination
+  Giorgio Armeier: Cultural
+  Firaxite Materials: Spaceship
+  TwoKay Foods: Domination
+  Civilized Jewelers: Cultural and Diplomatic
+  Populi Medicine: Domination and Diplomatic
+    This is both an aid to the new player and to inform our design
+-- The following Corporations give more than 1 Trade Route
+  Civilized Jewelers: +2 Trade Routes total
+  Populi Medicine: +2 Trade Routes total
+  Trader Sids: +3 Trade Routes total
+    Intended to boost Tourism, City-State Influence, rate of Franchise gain, etc.    
+-- Firaxite Materials and Centaurus Extractors swap Trade Route bonuses (flat sci and % sci)
+-- Special effects (all Corporations have one, like +100% Sea Range or Reveal Fog of War)
+     Giorgio Armeier:
+       Trade Routes sent to you give their *owner* +5 Gold
+         Encourages people to trade with you and get the +% Tourism boost, also interacts with their Building the Shopping Mall (see below)
+     TwoKay Foods: 
+       1 Horse per Franchise
+         Like Hexxon, these count towards Monopolies
+     Firaxite Materials:
+       Trade Routes are no longer invulnerable
+         On the premier Science Corporation this is too uninteractive
+         In general I think this bonus is not very healthy, so I won't be adding anywhere else
+       1 Iron per Franchise and 1 Aluminum per 2 Franchises 
+         Like Hexxon, these count towards Monopolies
+     Populi Medicine:
+       Trade Routes sent to you give you +5 Gold
+         Opposite reasoning, trying to discourage people from Tourism-bombing you
+     Hexxon Refinery
+       5 oil and coal, with +1 per franchise (moved from office)
+       Loses +15% production to Oil/Aluminium/Uranium Units
+
+  Offices
+  -- These are in addition to above Internal TR bonuses and +1 Yield per Franchise
+  -- Any unlisted previous bonuses are removed
+    Trader Sids:
+      Incoming Route +4 Gold to you, +2 Gold for them
+      +2% Production per CS Trade Route on Empire
+    Centaurus Extractors:
+      +1 Production and Culture from Sea Tiles
+      +1 Science and Culture from Sea Resources
+        Inteded to promote Culture->Tourism effects
+    Hexxon Refinery: 
+      loses +1 oil and coal per 3 franchises, instead has border growth points from franchises
+      +15% Production to Military Units
+      Convert 25% Production Cost to Science on training Military Units
+    Giorgio Armeier:
+      +2% GPP per Franchise (moved and nerfed from Civilized Jewelers)
+      1 Artist Slot
+    Firaxite Materials:
+      10% Production to Buildings (down from 20%)
+      10 Science when constructing a Building, scaling with Era
+      +8 Science on Building after discovering Electronics
+    TwoKay Foods:
+      -2% Empire Size Modifier in all Cities (down from -5)
+        Note this is a global bonus and is very, very strong
+      -1 to all Needs
+    Civilized Jewelers:
+      +10% Gold and Tourism during GA
+        I haven't tested yet this table works with Tourism yet
+      +1 Gold per CS friend, +2 Gold and +1 Tourism per Ally
+      -- also added +1 Tourism / 2 Citizens to the Airport, their building. 
+        Need to have a longer discussion about the Airport...
+    Populi Medicine:
+      1 Happiness per 6 Policies adopted
+      15 Influence with all City-States upon construction
+
+Building Changes
+  -- Maintenance cost for Franchises increased from 1 to 6
+    Franchises are stronger and this represents an initial trade-off
+  -- Add Shopping Mall Building at Flight, use to turn Franchises into a bonus!
+    2000 Production Cost, 7 Maintenance
+    Requires a Grocer in the City
+    +3 Tourism, +2 Gold
+    +4 Culture and +2 Tourism to all Franchises in the City
+      This gets you your money back from the maintenance, and the Culture helps resist Tourism
+    Incoming Route +2 Gold to you, +2 Gold for them
+    5% of all Gold Purchases are converted to Tourism
+      Half strength of proposed Riad bonus, together they will equal Bank conversion to Science
+  -- Add World Trade Center at Telecom, fun little addition to have a Corporation Wonder
+    2300 Production Cost
+    +1 Culture, +4 Tourism, +5 Gold
+    2 Great Merchant Points
+    Receive 1 Delegate in the World Congress for every 12 City-States originally in the World
+    Gain 1 additional Trade Route
+    Incoming Route +6 Gold to you, +6 Gold for them
+    All Corporate Franchises in the Empire yield +5 Gold and +4 Tourism
+    

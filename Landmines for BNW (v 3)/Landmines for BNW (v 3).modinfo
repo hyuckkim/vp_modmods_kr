@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0276191b-0079-45a4-8874-dc5dd6003b9b" version="3">
+  <Properties>
+    <Name>Landmines for BNW</Name>
+    <Teaser>Modern units may lay traps for unwitting enemies![NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Requires Brave New World[ENDCOLOR]</Teaser>
+    <Description>Gods and Kings Expansion Optional</Description>
+    <Authors>FramedArchitecture</Authors>
+    <SpecialThanks>whoward for PlotIterators</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="3DEDA379FCFD05C8EE0AEC42D2273237" import="1">Art/LandmineAction45.dds</File>
+    <File md5="01DC826D942C4A842F8105FCB297DE21" import="1">Art/LandmineAction64.dds</File>
+    <File md5="CE56A40246BC0AAE857F3541E428CC66" import="1">Art/LandmineAtlas256.dds</File>
+    <File md5="6560CA014C4068552E3019191974B7FC" import="1">Art/LandmineAtlas64.dds</File>
+    <File md5="1B80E3238FCB1D2F1DD81D593693DEB4" import="1">Art/SV_Landmine.dds</File>
+    <File md5="AED046A754B878817AE6CDFE273F792D" import="0">Database/Landmines.sql</File>
+    <File md5="B52E6A5ADFA5744F343C6657FB389E60" import="0">Database/Landmines_Text.xml</File>
+    <File md5="7F6B21D9F85D393995DBBD73EECEA462" import="1">Lua/Landmines_AI.lua</File>
+    <File md5="0D7757F2AC7530EDCE6709A4CE12152B" import="1">Lua/Landmines_Functions.lua</File>
+    <File md5="EE3153B46D5DA98F37A8002080EDE129" import="1">Lua/Landmines_Main.lua</File>
+    <File md5="02C1B3C03249532E1C5FCF32599A5CCA" import="1">Lua/Utilities/PlotIterators.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Database/Landmines.sql</UpdateDatabase>
+      <UpdateDatabase>Database/Landmines_Text.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Landmines_Main.lua">
+      <Name>Landmines_Main</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

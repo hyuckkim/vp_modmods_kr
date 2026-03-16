@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0f96f649-aaf6-45f3-9b5c-65010eac2669" version="4">
+  <Properties>
+    <Name>Capture Great People for VP</Name>
+    <Teaser>Great People are either captured (GA/GW/GMu/GE/GS/GMe/GD/GP, diplomatic units), provide a boost to the player (Space Ship Parts) or a bonus to the unit (GG/GA)</Teaser>
+    <Description>Great People are either captured (GA/GW/GMu/GE/GS/GMe/GD/GP, diplomatic units), provide a [ICON_RESEARCH] boost to the player (Space Ship Parts) or a bonus to the unit (GG/GA). [NEWLINE][NEWLINE]Go to [COLOR_CYAN]http://www.picknmixmods.com/mods/CivV/Global/Capture%20Great%20People.html [/COLOR]to get the original version of this mod.</Description>
+    <Authors>William Howard (enhancement update for VP by UndeadDevel), Jarcast</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="2D371539BD8164446765943FF0574A91" import="0">LUA/GlobalCaptureGreatPeople.lua</File>
+    <File md5="CCD1C00A634C1015CD80DF08B2FC48B4" import="0">SQL/GlobalCaptureGreatPeople.sql</File>
+    <File md5="CC11FF97088E0D3076E2A4545DBD9397" import="1">UI/CaptureGpNotification.lua</File>
+    <File md5="6A3AC5C46FA837716337CBA497C24E40" import="1">UI/CaptureGpNotification.xml</File>
+    <File md5="C0FDFF2958E9C3D54A451EB39AD97916" import="0">XML/GlobalCaptureGreatPeople.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/GlobalCaptureGreatPeople.sql</UpdateDatabase>
+      <UpdateDatabase>XML/GlobalCaptureGreatPeople.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalCaptureGreatPeople.lua">
+      <Name>GlobalCaptureGreatPeople</Name>
+      <Description>GlobalCaptureGreatPeople</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomNotificationAddin" file="UI/CaptureGpNotification.lua">
+      <Name>Capture GP Notification</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

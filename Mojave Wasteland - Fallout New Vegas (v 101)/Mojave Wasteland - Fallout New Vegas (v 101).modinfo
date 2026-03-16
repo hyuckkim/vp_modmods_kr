@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="21f46be4-0fd1-4a94-a16f-b11745e3c7f0" version="101">
+  <Properties>
+    <Name>Mojave Wasteland - Fallout: New Vegas</Name>
+    <Stability>Beta</Stability>
+    <Teaser>A map of the Mojave Wasteland, including lands in Nevada, California and Arizona.</Teaser>
+    <Description>A map of the Mojave Wasteland, including lands in Nevada, California and Arizona.</Description>
+    <Authors>Seamus, That's the Dog</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="C205FF474E3D425947C240270316DFE2" import="0">Maps/MojaveWastelandFNV.Civ5Map</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="Map" file="Maps/MojaveWastelandFNV.Civ5Map">
+      <Name>Mojave Wasteland</Name>
+      <Description>A map of the Mojave Wasteland, including lands in Nevada, California and Arizona.</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

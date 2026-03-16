@@ -1,0 +1,26 @@
+UPDATE Units SET AirInterceptRange = 1 WHERE AirInterceptRange = 3;
+
+UPDATE Units SET AirInterceptRange = 2 WHERE AirInterceptRange = 4;
+
+UPDATE Units SET AirInterceptRange = 3 WHERE AirInterceptRange = 5;
+
+UPDATE Unit_Flavors SET Flavor = 10 WHERE FlavorType = 'FLAVOR_ANTI_AIR' AND UnitType = 'UNIT_ANTI_AIRCRAFT_GUN';
+
+UPDATE Unit_Flavors SET Flavor = 20 WHERE FlavorType = 'FLAVOR_ANTI_AIR' AND UnitType = 'UNIT_MOBILE_SAM';
+
+-- Anti-Aircraft Gun
+UPDATE Language_en_US
+SET Text = 'These specialized artillery units will automatically attack any air unit bombing a target within 1 tile. (They can only intercept one unit per turn.) They are quite weak in combat against other ground units and should be defended by stronger units when under threat of ground attack.'
+WHERE Tag = 'TXT_KEY_UNIT_ANTI_AIRCRAFT_STRATEGY';
+
+-- Mobile SAM
+UPDATE Language_en_US
+SET Text = 'Mobile SAM (surface-to-air) units provide an advancing army with anti-air defense. Mobile SAM units can intercept and shoot at enemy aircraft bombing targets within 2 hexes (but only one unit per turn). These units are fairly vulnerable to non-air attack and should be accompanied by infantry or armor.'
+WHERE Tag = 'TXT_KEY_UNIT_MOBILE_SAM_STRATEGY';
+
+-- Carrier
+UPDATE Language_en_US
+SET Text = 'The Carrier is a specialized vessel which carries fighter airplanes, bombers, and atomic bombs. The Carrier itself is unable to attack, but the aircraft it carries make it the most powerful offensive weapon afloat. Defensively, however, the Carrier is weak and should be escorted by destroyers and submarines. Carriers are, however, armed with anti-air weaporny, and will automatically attack any air unit bombing a target within 2 tiles. (They can only intercept one unit per turn.)'
+WHERE Tag = 'TXT_KEY_UNIT_CARRIER_STRATEGY';
+
+-- other texts dont seem to mention specifics about the range

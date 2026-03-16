@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
+		<!-- former VP tags -->
+		<Row Tag="TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER">
+			<Text>[ICON_INFLUENCE] Resting Points of all Major Civilizations:</Text>
+		</Row>
+
 		<!-- text for gaining bonuses with CSs -->
 		<Row Tag="TXT_KEY_UCS_BONUS_ALLY">
 			<Text>You became an Ally of [COLOR_CYAN]{1_CS}[ENDCOLOR] and you are first in queue to benefit from the knowledge, technologies, experience and informations of its citizens. Watch for the new bonuses from this City-State.</Text>
@@ -42,10 +47,10 @@
 			<Text>Terrified</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CS_ACTIVE_BONUS_HEADER">
-			<Text>[COLOR_LIGHT_GREY]City-State''s bonuses given to Major Player:[ENDCOLOR]</Text>
+			<Text>[COLOR_LIGHT_GREY]City-State's bonuses given to Major Player:[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CS_PASSIVE_BONUS_HEADER">
-			<Text>[COLOR_LIGHT_GREY]City-State''s passive abilities:[ENDCOLOR]</Text>
+			<Text>[COLOR_LIGHT_GREY]City-State's passive abilities:[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_HELPER_ACTION_MARRIAGE">
 			<Text>[COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] available!</Text>
@@ -56,8 +61,8 @@
 		<Row Tag="TXT_KEY_UCS_HELPER_AT_WAR">
 			<Text>[ICON_WAR] At war with: [COLOR_NEGATIVE_TEXT]{1_AtWarWith}[ENDCOLOR]</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CS_UU_QUICK_INFO">
-			<Text>Unique Unit: [COLOR_YIELD_FOOD]{1_Unique_Unit}[ENDCOLOR] available at [COLOR_CYAN]{2_Tech}[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_UCS_UU_QUICK_INFO">
+			<Text>Unique Unit: [COLOR_YIELD_GOLD]{1_Unique_Unit}[ENDCOLOR] available at [ICON_RESEARCH] [COLOR_CYAN]{2_Tech}[ENDCOLOR].</Text>
 		</Row>
 
 
@@ -343,22 +348,52 @@
 			<Text>Strength for the people!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_SADDARVAZEH">
-			<Text>[COLOR_CYAN]{1_Saddarvazeh}[ENDCOLOR].</Text>
+			<Text>[COLOR_CYAN]{1_Saddarvazeh}[ENDCOLOR] prays to the Zoroaster for help in spreading the word to different nations. This time, their voices are heard and awarded with a new [COLOR_POSITIVE_TEXT]Missionary[ENDCOLOR], who is immediately put under your command in [COLOR_CYAN]{2_City}[ENDCOLOR]. Use it wisely!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_SADDARVAZEH_TITLE">
 			<Text>Zoroaster Speaks!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_ERA">
-			<Text>[COLOR_CYAN]{1_Irunea}[ENDCOLOR].</Text>
+			<Text>New Era is always a gigantic strength boost for [COLOR_CYAN]{1_Irunea}[ENDCOLOR]. Doubled efforts mean, that your youngest City, [COLOR_CYAN]{2_City}[ENDCOLOR] receives a [COLOR_POSITIVE_TEXT]Workboat[ENDCOLOR] to support your further developement!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_ERA_TITLE">
 			<Text>Basques celebrate a new era!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_SETTLE">
-			<Text>[COLOR_CYAN]{1_Irunea}[ENDCOLOR].</Text>
+			<Text>[COLOR_CYAN]{1_Irunea}[ENDCOLOR] leaders crave for fast economic expansion on new coastal territories. They built a [COLOR_POSITIVE_TEXT]Workboat[ENDCOLOR] and passed it to your recently founded City, [COLOR_CYAN]{2_City}[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UCS_BONUS_IRUNEA_SETTLE_TITLE">
 			<Text>Basques supports a new colony!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_NGAZARGAMU">
+			<Text>With another investment in your military power you can guarantee the safety of local paths in your empire. [COLOR_CYAN]{1_Ngazargamu}[ENDCOLOR] praises the God for that, giving you {2_Faith} [ICON_PEACE].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_NGAZARGAMU_TITLE">
+			<Text>God is the only one you should fear!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VADUZ">
+			<Text>Collectioners from [COLOR_CYAN]{1_Vaduz}[ENDCOLOR] found a fantastic artistic creation and immediately invested some money to buy it. [COLOR_CYAN]{2_City}[ENDCOLOR] gained {3_Points} [ICON_GREAT_PEOPLE] Great Person Points towards a {4_GreatPerson}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_VADUZ_TITLE">
+			<Text>Art purchases!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SANANDAJ_ERA">
+			<Text>[COLOR_CYAN]{1_Sanandaj}[ENDCOLOR] once again is thrown into the diplomatic storm, but, as history has shown before, they know how to move the odds onto their side. Use freshly recruited [COLOR_POSITIVE_TEXT]Envoy[ENDCOLOR] to gain the advantage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SANANDAJ_ERA_TITLE">
+			<Text>New challenges of the upcoming era!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SANANDAJ_DIPLO">
+			<Text>[COLOR_CYAN]{1_Sanandaj}[ENDCOLOR] is grateful for your recent diplomatic efforts. Training {2_Unit} over military units is always a tough choice, but you chose the right peaceful path and got {3_Culture} [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_SANANDAJ_DIPLO_TITLE">
+			<Text>Diplomacy is the key!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BAGHCASARAY">
+			<Text>[COLOR_CYAN]{1_Baghcasaray}[ENDCOLOR] is known of its prosperous slave market. Because of your long-term relationship, they give you one of their slaves, and he immediately starts working for you in [COLOR_CYAN]{2_City}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UCS_BONUS_BAGHCASARAY_TITLE">
+			<Text>Slave captured!</Text>
 		</Row>
 	</Language_en_US>
 </GameData>

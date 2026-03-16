@@ -180,6 +180,21 @@
 					<ID>MINOR_CIV_MENDYARRUP</ID>
 					<AudioScript>AS2D_MINOR_CIV_MOGADISHU</AudioScript>
 				</MinorCivSound>
+				<MinorCivSound>
+					<ID>MINOR_CIV_BALLEY_CHASHTAL</ID>
+					<AudioScript>AS2D_MINOR_CIV_RAGUSA</AudioScript>
+				</MinorCivSound>
+				<MinorCivSound>
+					<ID>MINOR_CIV_KAGYRGYN</ID>
+					<AudioScript>AS2D_MINOR_CIV_RIGA</AudioScript>
+				</MinorCivSound>
+				<!-- <AudioScript>AS2D_MINOR_CIV_CAPE_TOWN</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_MOMBASA</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_UR</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_BYBLOS</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_SYDNEY</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_WELLINGTON</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_QUEBEC_CITY</AudioScript> -->
 
 		<!-- Mercantile -->
 		<MinorCivSound>
@@ -238,6 +253,11 @@
 					<ID>MINOR_CIV_TUNIS</ID>
 					<AudioScript>AS2D_MINOR_CIV_SINGAPORE</AudioScript>
 				</MinorCivSound>
+				<!-- <AudioScript>AS2D_MINOR_CIV_ANTWERP</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_ANTANANARIVO</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_COLOMBO</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_MELBOURNE</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_ZANZIBAR</AudioScript> -->
 
 		<!-- Militaristic -->
 		<MinorCivSound>
@@ -309,11 +329,15 @@
 					<AudioScript>AS2D_MINOR_CIV_BELGRADE</AudioScript>
 				</MinorCivSound>
 				<MinorCivSound>
+					<ID>MINOR_CIV_BALKH</ID>
+					<AudioScript>AS2D_MINOR_CIV_BELGRADE</AudioScript>
+				</MinorCivSound>
+				<MinorCivSound>
 					<ID>MINOR_CIV_TBILISI</ID>
 					<AudioScript>AS2D_MINOR_CIV_SIDON</AudioScript>
 				</MinorCivSound>
 				<MinorCivSound>
-					<ID>MINOR_CIV_BALKH</ID>
+					<ID>MINOR_CIV_BAGHCASARAY</ID>
 					<AudioScript>AS2D_MINOR_CIV_SIDON</AudioScript>
 				</MinorCivSound>
 
@@ -326,10 +350,10 @@
 			<ID>MINOR_CIV_ANDORRA</ID>
 			<AudioScript>AS2D_MINOR_CIV_WARSAW</AudioScript>
 		</MinorCivSound>
-			<MinorCivSound>
-				<ID>MINOR_CIV_GWYNEDD</ID>
-				<AudioScript>AS2D_MINOR_CIV_VIENNA</AudioScript> <!-- >VADUZ -->
-			</MinorCivSound>
+		<MinorCivSound>
+			<ID>MINOR_CIV_VADUZ</ID>
+			<AudioScript>AS2D_MINOR_CIV_VIENNA</AudioScript>
+		</MinorCivSound>
 				<MinorCivSound>
 					<ID>MINOR_CIV_THIMPHU</ID>
 					<AudioScript>AS2D_MINOR_CIV_BRUSSELS</AudioScript>
@@ -362,6 +386,18 @@
 					<ID>MINOR_CIV_NAN_MADOL</ID>
 					<AudioScript>AS2D_MINOR_CIV_KUALA_LUMPUR</AudioScript>
 				</MinorCivSound>
+				<MinorCivSound>
+					<ID>MINOR_CIV_GWYNEDD</ID>
+					<AudioScript>AS2D_MINOR_CIV_BUCHAREST</AudioScript>
+				</MinorCivSound>
+				<MinorCivSound>
+					<ID>MINOR_CIV_GWYNEDD</ID>
+					<AudioScript>AS2D_MINOR_CIV_KABUL</AudioScript>
+				</MinorCivSound>
+				<!-- <AudioScript>AS2D_MINOR_CIV_BUENOS_AIRES</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_MONACO</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_MILAN</AudioScript> -->
+				<!-- <AudioScript>AS2D_MINOR_CIV_FLORENCE</AudioScript> -->
 
 		<!-- Religious -->
 		<MinorCivSound>
@@ -425,11 +461,19 @@
 			<AudioScript>AS2D_MINOR_CIV_IFE</AudioScript>
 		</MinorCivSound>
 		<MinorCivSound>
+			<ID>MINOR_CIV_MATONJENI</ID>
+			<AudioScript>AS2D_MINOR_CIV_IFE</AudioScript>
+		</MinorCivSound>
+		<MinorCivSound>
 			<ID>MINOR_CIV_ISKANWAYA</ID>
 			<AudioScript>AS2D_MINOR_CIV_LA_VENTA</AudioScript>
 		</MinorCivSound>
 		<MinorCivSound>
 			<ID>MINOR_CIV_TIWANAKU</ID>
+			<AudioScript>AS2D_MINOR_CIV_LA_VENTA</AudioScript>
+		</MinorCivSound>
+		<MinorCivSound>
+			<ID>MINOR_CIV_NGAZARGAMU</ID>
 			<AudioScript>AS2D_MINOR_CIV_LA_VENTA</AudioScript>
 		</MinorCivSound>
 </MinorCivsSounds>

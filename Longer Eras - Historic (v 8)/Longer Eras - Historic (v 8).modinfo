@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="44a1244d-5b92-455d-b75f-6d8889da295a" version="8">
+  <Properties>
+    <Name>Longer Eras - Historic</Name>
+    <Teaser>Normal game with Marathon research times.</Teaser>
+    <Description>Creates a new era called Historic that takes the base game stats of a Normal game and increases science requirements for technology by 300% to be on par with a Marathon game. It also:
+-Moves "Convert Production into Wealth" to mining so you are not forced to make a large amount of units
+-Increases  Wealth and Science research to 50% of cities production (was 25%)
+-Increases Happiness of all buildings that supply Happiness by (1) with the exception of buildings that provide a Unhappiness Modifier.
+-Decreases the AI's want for building settlers so that they don't cover the map in bases due to not having anything else to build in the longer eras. 
+-Increases Religious costs for several units/buildings so you don't become overrun with missionarys (both yours and theirs) and keeps everyone honest with the ability to buy great people with faith. 
+
+I got the original idea for this mod from Richard Conway's mod Extended Eras: 
+http://steamcommunity.com/sharedfiles/filedetails/?id=78516377 
+
+Unfortunately for us it seemed he stopped updating his mod and it suffered from various crashes. I recreated that mod from the ground up but left out some of the extras he had included in his mod to make sure I did not run into conflicts. 
+
+The things Extended Eras included that I have not are: 
+-Unlimited EXP from barbarians 
+-Reduce cost to upgrade units 
+-Gold from capturing cities increased 
+-Increased number of barbarians 
+-Allows Research Focus to be available earlier in the game as city production 
+
+I attempted to just keep the nuts and bolts of the original mod so that I could minimize the issues with crashing that Extended Eras had. 
+
+This mod is for G&amp;K/BNW, I am not sure if it will work unless you have both expansions. If I get enough people who need a different version (or I stop being lazy) I will do up the other versions. 
+
+If you enjoy this mod please rate it up so I know I did something right! Thanks for checking it out.</Description>
+    <Authors>Chuck Finely</Authors>
+    <SpecialThanks>Richard Conway</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>3</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="22735D20F21B016B757FA556A8C29A52" import="0">XML/Historic.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Historic.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

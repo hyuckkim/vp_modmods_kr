@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5f44bd86-5449-4945-93a8-7af26b829219" version="1">
+  <Properties>
+    <Name>Route Planner for VP (v 1) INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Route Planner</Teaser>
+    <Description>Translation of the Route Planner into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]경로 계획서 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="bca6cd72-0578-4732-a16b-4a0789001a6b" minversion="0" maxversion="999" title="Route Planner for VP" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="6F8F25A9E72D995055093A73B65804E3" import="0">XML/RoutePlanner_KO_KR.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/RoutePlanner_KO_KR.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

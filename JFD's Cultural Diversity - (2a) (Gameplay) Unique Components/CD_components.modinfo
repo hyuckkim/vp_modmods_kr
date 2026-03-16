@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="99c7f9e2-1ff4-9941-8gc7-41bde72g3g99" version="6">
+	<Properties>
+		<Name>JFD's Cultural Diversity - (2a) (Gameplay) Unique Components</Name>
+		<Teaser>VP compatible to be used alongside Cultural Diversity</Teaser>
+		<Description>Adds 2 Unique Components to every Civilization based on their Cultural Group. That is, every Civ (included those modded to be compatible with Cultural Diversity) gain a:[NEWLINE][ICON_BULLET] Unique Military Unit[NEWLINE][ICON_BULLET] Unique Economic Component (Building, Improvement, Civilian/GP Unit)[NEWLINE][NEWLINE]Introduces the Scandinavian and Patagonian Cultural Groups. Northern is renamed to Celtic. Merges the Levantine and Mesopotamic Cultural Groups. All three have new icons. To better delineate Culture and Geography the West African group is renamed "Saharan", the Central African group is renamed "Guinean", and the East African group is not currently renamed.[NEWLINE][NEWLINE]For gameplay purposes the following Civilizations have had their Cultural Group reassigned:[NEWLINE][ICON_BULLET] Sweden to Scandinavian[NEWLINE][ICON_BULLET] Spain to Western[NEWLINE][ICON_BULLET] Morocco to Saharan[NEWLINE][ICON_BULLET] Persia to Middle Eastern[NEWLINE][ICON_BULLET] Carthage to Classical[NEWLINE]If you prefer to play with a different Cultural Grouping they are easy to change, see the Reassignment.sql file for examples.[NEWLINE][NEWLINE]Components are designed with base VP and all currently available (and some not-yet available) Custom Civilizations in mind. For example, we have tried to avoid putting Unique Units on the same upgrade track (or at least separated them by several tiers), and tried to look for options that do not place many components in the same era, with a view to having many more later components.[NEWLINE][NEWLINE]To give more design space the following changes are made to base VP:[NEWLINE][ICON_BULLET] Indian Harrapan Reservoir changed from Aqueduct to Well/Watermill[NEWLINE][ICON_BULLET] Indian Qila (will be) changed from Castle to Bastion Fort[NEWLINE][ICON_BULLET] Danish Longship (Caravel) changed to Herluf Trolle (Destroyer)[NEWLINE][ICON_BULLET] Songhai UA promotion extended to all Units (includes new Economic Component).</Description>
+		<Authors>Hokath, Gwennog, Jarcast</Authors>
+		<HideSetupGame>0</HideSetupGame>
+		<AffectsSavedGames>1</AffectsSavedGames>
+		<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+		<SupportsSinglePlayer>1</SupportsSinglePlayer>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SupportsHotSeat>1</SupportsHotSeat>
+		<SupportsMac>1</SupportsMac>
+		<ReloadAudioSystem>1</ReloadAudioSystem>
+		<ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+		<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+		<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+		<Dependencies>
+			<Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="52" maxversion="999" title="Community Patch - Core" />
+    			<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="17" maxversion="999" title="(2) Vox Populi 5.0" />
+			<Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="16" maxversion="999" title="JFD's Cultural Diversity - (1) (Core) Utilities" />
+		</Dependencies>
+		<References>
+			<Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" minversion="0" maxversion="999" title="(3a) VP - EUI Compatibility Files" />
+			<Mod id="87b2deae-83cb-9b88-9017-79e741d3739c" minversion="0" maxversion="999" title="Enlightenment Era for VP" />
+			<Mod id="9f801bd1-a762-4fa6-b2d0-b3245c8fb464" minversion="0" maxversion="999" title="Unit Scaling and Formations" />
+			<Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="0" maxversion="999" title="UCS" />
+			<Mod id="3e151552-1683-4881-b736-8ee89226f599" minversion="0" maxversion="999" title="More Wonders" />
+			<!-- dependencies is not enough apparently? but why tho -->
+			<Mod id="31a31d1c-b9d7-45e1-842c-23232d66cd47" minversion="16" maxversion="999" title="JFD's Cultural Diversity - (1) (Core) Utilities" />
+		</References>
+ 		<Blocks>
+    			<Mod id="a3a83028-4df9-4050-a996-0c29cb719bf0" minversion="0" maxversion="5" title="Tibet with Dzong"/>   
+		</Blocks>
+		<Files>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__010.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__020.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__030.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__040.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__050.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__060.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__070.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__080.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__090.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__100.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__110.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__120.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__130.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__140.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__150.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__160.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__170.mp3</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_016.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_032.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_045.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_064.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Art/Promotions/PromoAtlas.xml</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/CD_Flags_32.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Art/Units/FlagAtlas.xml</File>
+
+			<!-- 
+		-----------------------------------------------------------------------------------------------------------------
+			-- art backup -- 
+		-----------------------------------------------------------------------------------------------------------------
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Balearic/balearic_slinger.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Balearic/balearic_slinger_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Balearic/balearic_slinger.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Balearic/sv_balearic.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Reislaufer/reislaufer.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Reislaufer/reislaufer_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Reislaufer/reislaufer_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Reislaufer/reislaufer.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Reislaufer/sv_reislaufer.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/Arquebusier.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/Arquebusier_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/Arquebusier_diffLS.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/Arquebusier_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/Arquebusier.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arquebusier/sv_arquebusier.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Redshanks/Composite_Bowman_Russia.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Redshanks/Composite_Bowman_Russia.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Redshanks/Composite_Bowman_Russia.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Redshanks/Composite_Bowman_Russia_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Redshanks/sv_redshanks.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia_DIFF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/XP_Eia_DIFF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia_SREF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/XP_Eia_SREF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia_DMG_DIFF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/XP_Eia_DMG_DIFF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia_DMG_SREF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/XP_Eia_DMG_SREF.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/Eia.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Pahi/pahi_sv.dds</File>
+
+  			<File md5="0C42A27227B3932A39D32374C743C3FC" import="1">Art/Basadi/Basadi_main.fxsxml</File>
+   			<File md5="DDBC1BA3F2C10C0B93BF6C0E792A52A5" import="1">Art/Basadi/Basadi_main.gr2</File>
+  			<File md5="92DC2BEBA22540A540ED79CA348DEC52" import="1">Art/Basadi/Basadi_hb.fxsxml</File>
+  			<File md5="8926D9902AB2A9B22ED7C0AD512C2827" import="1">Art/Basadi/Basadi_hb.gr2</File>
+			<File md5="D8AF04C72B193BBF038FDDECE3B4F621" import="1">Art/Basadi/Basadi_pl.fxsxml</File>
+ 			<File md5="DB05C416BBEF58B8EF73F26939027C1D" import="1">Art/Basadi/Basadi_pl.gr2</File>
+  			<File md5="365F50964B2B013BB6D3C65557A4DD56" import="1">Art/Basadi/Pagod6.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Basadi/sv_basadi.dds</File>
+		-----------------------------------------------------------------------------------------------------------------
+			-->
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/pekingfieldforce.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/pekingfieldforce.fbx</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/pekingfieldforce.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/pekingfieldforce.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/pekingfieldforce_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tuntian/sv_PekingForce.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Viking/Longswordsman_Viking.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Viking/Longswordsman_Viking_v3.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Viking/Longswordsman_Viking_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Viking/Longswordsman_Viking_v3.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Viking/viking_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Xon/yekamush_model.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Xon/black_4x4.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Xon/yekamush_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Xon/yekamush.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Xon/xon_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/IndianScout/indianscout_sv.dds</File>
+	
+			<!-- backup
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/er_mc_dartblower.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/er_mc_dartblower_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/no_gloss_4x4.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/fx_triggers_er_mc_dartblower.ftsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/er_mc_dartblower.gr2</File>
+			-->
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/guarani.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/guarani_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/guarani.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dartblower/sv_dartblower.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Moukahla/babrm1.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Moukahla/babrm_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Moukahla/babrm1.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Moukahla/babrm1.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Moukahla/sv_Moukahla.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Ancient/Amanokal.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Ancient/Amanokal_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Ancient/Amanokal_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Ancient/Amanokal.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Industrial/u_afghanistan_camel_gunner.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Industrial/u_afghanistan_camel_gunner_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Industrial/u_afghanistan_camel_gunner_camel_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/Industrial/u_afghanistan_camel_gunner.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Amanokal/sv_Imajaghan.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Baghlah/baghlah.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Baghlah/baghlah_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Baghlah/baghlah_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Baghlah/baghlah.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Baghlah/sv_baghlah.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Cruzob/civ5_irogwi1.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Cruzob/irogwi1_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Cruzob/irogwi1.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Cruzob/civ5_irogwi1.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Cruzob/sv_cruzob.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/sepoy.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/u_sepoy.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/sepoy_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/sepoy_1.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/Sepoy.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/u_maratha_sepoy.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Sepoy/sv_sepoy.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wangara/ZimbabweanGano.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wangara/ZimbabweanGano_Sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wangara/ZimbabweanGano_Diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wangara/ZimbabweanGano.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wangara/wangara_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/civ5_irohm5.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/irohm5.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/irohm5_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/irohorse5.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/irohorse5_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/civ5_irohm5.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Bolas/sv_bolas.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kololo/Nevonda.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kololo/Nevonda.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kololo/Nevonda.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kololo/sv_Kololo.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Penjajap/WarJunk.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Penjajap/WarJunk_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Penjajap/WarJunk_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Penjajap/WarJunk.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Penjajap/sv_penjajap.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/Horseman_Turkey.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/Horseman_Turkey.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/Horseman_Turkey_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/Horseman_Turkey_Horse.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/Horseman_Turkey.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Baghatur/sv_baghatur.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Xazg/er_kalmyk_xazg.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Xazg/er_kalmyk_xazg_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Xazg/er_kalmyk_xazg_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Xazg/er_kalmyk_xazg.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/ToluBatyr/Xazg/sv_xazg.dds</File>
+
+			<File md5="9309774C33232FFC6E47E09F56BDD3C5" import="1">Art/Units/ToluBatyr/T72/edited_aim_attack_city_to_run.dge</File>
+    			<File md5="FA9CE373BB700CFCD8F0FA3A955B1E69" import="1">Art/Units/ToluBatyr/T72/edited_aim_attack_to_run_graph.dge</File>
+   			<File md5="BA4F6AEB27527AB47CC284B27C8288A8" import="1">Art/Units/ToluBatyr/T72/edited_aim_bombard_defend_loop_graph.dge</File>
+    			<File md5="CD02EC91E73F396297C2B3434A8BA034" import="1">Art/Units/ToluBatyr/T72/edited_aim_combat_ready_graph.dge</File>
+    			<File md5="6B4338103039DFBD431A44C89DA198D6" import="1">Art/Units/ToluBatyr/T72/edited_aim_death_final_graph.dge</File>
+    			<File md5="F9F109E1E43FD75DFC765D9B3A43CE48" import="1">Art/Units/ToluBatyr/T72/edited_aim_death_graph.dge</File>
+    			<File md5="7A5A0ADFBBB05D6E4FB126383988B264" import="1">Art/Units/ToluBatyr/T72/edited_aim_enter_combat_ready_graph.dge</File>
+    			<File md5="34488A641F9D948D865BBECF8B3878DF" import="1">Art/Units/ToluBatyr/T72/edited_aim_enter_fortify.dge</File>
+    			<File md5="F245B80AAC985C0011FEE5CBF3FB25DF" import="1">Art/Units/ToluBatyr/T72/edited_aim_fidgets_graph.dge</File>
+    			<File md5="65FED4E2E20D7512D6B5E92C1CD37EF7" import="1">Art/Units/ToluBatyr/T72/edited_aim_fortify_fidget_graph.dge</File>
+    			<File md5="F758D65157483D32C6763F817B216937" import="1">Art/Units/ToluBatyr/T72/edited_aim_fortify_graph.dge</File>
+    			<File md5="C2C8D0ADFA388980A03E814BF2B335F5" import="1">Art/Units/ToluBatyr/T72/edited_aim_fortify_leave_graph.dge</File>
+    			<File md5="EF6168FF0903555EDCBB9FD626CFB00F" import="1">Art/Units/ToluBatyr/T72/edited_aim_idle_graph.dge</File>
+    			<File md5="268797759660DA55A0F792A966EB586B" import="1">Art/Units/ToluBatyr/T72/edited_aim_idle_offset_continue_true_graph.dge</File>
+    			<File md5="C4D8B3EB164B5525B92514645521D0C3" import="1">Art/Units/ToluBatyr/T72/edited_aim_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    			<File md5="189E34C23C7A19F2C190E1ACB4212C91" import="1">Art/Units/ToluBatyr/T72/edited_aim_leave_combat_ready.dge</File>
+    			<File md5="225D164523FE1270306005CCD71B075A" import="1">Art/Units/ToluBatyr/T72/edited_aim_melee_attacks.dge</File>
+    			<File md5="A64E86033B61613B4F39979D5603E65F" import="1">Art/Units/ToluBatyr/T72/edited_aim_running_loop.dge</File>
+    			<File md5="BCF1F945C0CBE7A1C9F62E5B46F84F99" import="1">Art/Units/ToluBatyr/T72/edited_aim_start_running.dge</File>
+    			<File md5="7B0232A8BE345EB899FF221FBD7BDCFB" import="1">Art/Units/ToluBatyr/T72/edited_aim_stop_running.dge</File>
+    			<File md5="2506D6C118D6A9FB915723F731C95FD4" import="1">Art/Units/ToluBatyr/T72/edited_aim_transitions_for_idles.dge</File>
+    			<File md5="108FD3B4BAAB4A605BF70CCD44F20E8B" import="1">Art/Units/ToluBatyr/T72/edited_fx_triggers_tank.ftsxml</File>
+    			<File md5="B233D27FC1FA1DB1127E263DC20D30DB" import="1">Art/Units/ToluBatyr/T72/edited_mechanized_aim_state_01.fsmxml</File>
+    			<File md5="F2120D1D60A090D0816127A32FD7DB98" import="1">Art/Units/ToluBatyr/T72/Heavy_Tank_IS-3.psd</File>
+    			<File md5="E3AB073684E53D3D3303411C112C44CE" import="1">Art/Units/ToluBatyr/T72/IS-3.blend</File>
+    			<File md5="BDF5C0A8870C8EEF855747295C1C903F" import="1">Art/Units/ToluBatyr/T72/IS-3.dds</File>
+    			<File md5="1D499F0D29631C67648A506945C1F8F2" import="1">Art/Units/ToluBatyr/T72/IS-3.fxsxml</File>
+    			<File md5="858BECE6AB4FEB7FF890DF6D230A26E5" import="1">Art/Units/ToluBatyr/T72/IS-3.gr2</File>
+    			<File md5="5C4E1B92F55C9E81689E18F260061325" import="1">Art/Units/ToluBatyr/T72/IS-3.jpg</File>
+    			<File md5="AC41C06BA721315512F26433220FEDF7" import="1">Art/Units/ToluBatyr/T72/no_gloss.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/AlbanianStradiot.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/AlbanianStradiot_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/StradiotHorse_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/black_4x4.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/AlbanianStradiot.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Stradioti/stradioti_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/Voivode_v2.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/Voivode_v2_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/Voivode_v2.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/Voivode_Horse_v2.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/Voivode_v2.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voivode/sv_voivode.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/voi_slavs.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/voi_slavs_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/voi_slavs.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/voi_slavs.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Voi/sv_Voi.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/VarangianGuard.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Varangian/sv_MercVarangian.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm1_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm2.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm2.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm2.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm2_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm3.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm3.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm3.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Highlander/celrm3_sref.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Agiru/sv_agiru.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Agiru/Maasai_Moran.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Agiru/Maasai Moran.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Agiru/Maasi_Moran_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Agiru/Maasi_Moran_diff.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Maharolukti/civ5_iropi1.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Maharolukti/civ5_iropi1_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Maharolukti/civ5_iropi1.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Maharolukti/civ5_iropi1.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Maharolukti/maharolukti_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/SonghaiScout.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/SonghaiScout_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/SonghaiScout.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/SonghaiScout.fbx</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/SonghaiScout.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Djeli/sv_djeli.dds</File>
+
+			<File md5="B4C7A8C24D6797C475633A4024B09574" import="1">Art/Units/Boita/fx_triggers_kadatpadai.ftsxml</File>
+			<File md5="C884A8681EFC93EC14FCC52B5566E7FE" import="1">Art/Units/Boita/kadatpadai.fxsxml</File>
+			<File md5="BF5A6B9AC90757D3B88A4DBF67EF8D38" import="1">Art/Units/Boita/kadatpadai.gr2</File>
+			<File md5="98EBC9EFEA2E8FF56BFFDAAA0555A5A8" import="1">Art/Units/Boita/kadatpadai_attacka.gr2</File>
+			<File md5="770C3254AB7B19C541D444B98A4969C9" import="1">Art/Units/Boita/kadatpadai_attackb.gr2</File>
+			<File md5="8D584F8089630A6D2E187753E67EA1A5" import="1">Art/Units/Boita/kadatpadai_bombard_defense.gr2</File>
+			<File md5="AE51392B573FD8F357BF44429C718141" import="1">Art/Units/Boita/kadatpadai_bombard_defense_idle.gr2</File>
+			<File md5="DFFDF944E74532D6EB5F8AB1DF478297" import="1">Art/Units/Boita/kadatpadai_bombard_defense_idle_trans_idlea.gr2</File>
+			<File md5="910655BF05DEDC9C66D2566A6646BB2C" import="1">Art/Units/Boita/kadatpadai_charge_run.gr2</File>
+			<File md5="A512EE5ED9674F3826ECDC86331D18BE" import="1">Art/Units/Boita/kadatpadai_charge_start_run.gr2</File>
+			<File md5="5C2935E73FD443D08102E8857DE41151" import="1">Art/Units/Boita/kadatpadai_combat_ready.gr2</File>
+			<File md5="C180249A97ACA9DC3C4AC6995A5C2509" import="1">Art/Units/Boita/kadatpadai_combat_ready_idle.gr2</File>
+			<File md5="CF97D8D8C8369A8F303329E5965F9639" import="1">Art/Units/Boita/kadatpadai_combat_ready_idle_trans_idlea.gr2</File>
+			<File md5="E2812AF366496AE09E3B6005AA59EC5E" import="1">Art/Units/Boita/kadatpadai_damage_diff.dds</File>
+			<File md5="0E0385B94C811F890DEE37CA0D9C9EA3" import="1">Art/Units/Boita/kadatpadai_deatha.gr2</File>
+			<File md5="9571E1F462ACA3421130905668D63865" import="1">Art/Units/Boita/kadatpadai_deatha_idle.gr2</File>
+			<File md5="D57DB05FFCDC01DAA5F87B3D6CE9401A" import="1">Art/Units/Boita/kadatpadai_deathb.gr2</File>
+			<File md5="D09AB038A11874D156728F4FB3E01D07" import="1">Art/Units/Boita/kadatpadai_deathb_idle.gr2</File>
+			<File md5="D4F48DBF7A6995C4ED20E313922A657F" import="1">Art/Units/Boita/kadatpadai_diff.dds</File>
+			<File md5="7347290892BB545A275B8E4985DBBA3B" import="1">Art/Units/Boita/kadatpadai_fidgeta.gr2</File>
+			<File md5="FAE0F633E4F1F7551B6DC05F6A6C59EA" import="1">Art/Units/Boita/kadatpadai_fidgetb.gr2</File>
+			<File md5="33F44D20A96E2C1994DB0ECF896733A9" import="1">Art/Units/Boita/kadatpadai_fortify.gr2</File>
+			<File md5="E29048EA811228BB0507B8AD8343AC52" import="1">Art/Units/Boita/kadatpadai_fortify_idle.gr2</File>
+			<File md5="F15A3F088DF1FADBA40F17A0A9B7C62B" import="1">Art/Units/Boita/kadatpadai_fortify_idle_fidget.gr2</File>
+			<File md5="B96D92EBC787B3A9519296399D90D8A9" import="1">Art/Units/Boita/kadatpadai_fortify_idle_trans_combat_ready_idle.gr2</File>
+			<File md5="6A87416EB094BFF2A743DD4B4E0DA520" import="1">Art/Units/Boita/kadatpadai_fortify_idle_trans_idlea.gr2</File>
+			<File md5="A26918A91EE45E4AAF8EC5C007D7CFA1" import="1">Art/Units/Boita/kadatpadai_idlea.gr2</File>
+			<File md5="E6CA61DBF1E5A17EE96A45405EF8D5F2" import="1">Art/Units/Boita/kadatpadai_idlea_trans_idleb.gr2</File>
+			<File md5="C0F0CA4A475CEF5519395C62223A8F1B" import="1">Art/Units/Boita/kadatpadai_idleb.gr2</File>
+			<File md5="6F043F7FC0B6A3BC9A60E2BDBBE1E7CF" import="1">Art/Units/Boita/kadatpadai_idleb_trans_idlea.gr2</File>
+			<File md5="1BBEB67A298939EAB6A0FB9667DFDA08" import="1">Art/Units/Boita/kadatpadai_rig.gr2</File>
+			<File md5="694C2D513802004F4B5560A3AFC36996" import="1">Art/Units/Boita/kadatpadai_run.gr2</File>
+			<File md5="523A1602673A2731307FCBA20E011AFE" import="1">Art/Units/Boita/kadatpadai_sref.dds</File>
+			<File md5="DA9B51CA03DC57820004352FFC46B54F" import="1">Art/Units/Boita/kadatpadai_start_run.gr2</File>
+			<File md5="B9EB37D9BA57CCA70158E4BD4E5EA919" import="1">Art/Units/Boita/kadatpadai_stop_run.gr2</File>
+			<File md5="0052F577A2F98CA5E71C483A89714D05" import="1">Art/Units/Boita/kadatpadai_victory.gr2</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Txatkuneexs/pooky_tluu_tseeii.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Txatkuneexs/pooky_tluu_tseeii_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Txatkuneexs/pooky_tluu_tseeii_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Txatkuneexs/pooky_tluu_tseeii.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Txatkuneexs/sv_txatkuneexs.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/IroncladBB.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/fx_trigger_ironcladc.ftsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/IroncladBB_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/IroncladBB_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/IroncladBB.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Kaimiloa/sv_kaimiloa.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dapon/Archer_China.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dapon/Archer_China.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dapon/Archer_China_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dapon/Archer_China.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Dapon/sv_dapon.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Levy/u_slovakian_dobrovolnik.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Levy/u_slovakian_dobrovolnik_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Levy/u_slovakian_dobrovolnik_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Levy/u_slovakian_dobrovolnik.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Levy/sv_dapon.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/Llanero.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/Llanero.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/Llanero_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/Llanero_Horse.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/Llanero.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Tupamarista/sv_tupamarista.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Slaganz/BearWarrior.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Slaganz/BearWarrior.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Slaganz/BearWarrior_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Slaganz/BearWarrior.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Slaganz/sv_slaganz.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wehrmacht/Infantry_German.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wehrmacht/Infantry_German.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wehrmacht/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wehrmacht/Infantry_German.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Wehrmacht/sv_wehrmacht.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Herluf/Herluftrolleclass.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Herluf/Herluftrolleclass_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Herluf/Herluftrolleclass_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Herluf/Herluftrolleclass.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Herluf/sv_trolle.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Goleyo/goleyo.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Goleyo/goleyo_sref.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Goleyo/goleyo_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Goleyo/goleyo.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Goleyo/sv_goleyo.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Umiak/anan_model.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Umiak/anan_rower.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Umiak/anan_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Umiak/anan.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Umiak/umiak_sv.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/Crossbowman_Rome.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/Crossbowman_Rome.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/Crossbowman_Rome_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/Crossbowman_Rome.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Arcu/sv_gastraphetes.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/International_Brigades.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Brigade/sv_Brigade.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_2.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_3.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_4.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_5.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain_6.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/no_gloss.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/Heinkel_He-111_Spain.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Units/Condor/sv_Condor.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/sv_coca.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/Coca_fonticon.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CocaLeaf/Coca_fonticon.ggxml</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Reindeer/resource_reindeer.fxsxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Reindeer/resource_reindeer.gr2</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Reindeer/resource_reindeer_diff.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Reindeer/Reindeer_Font.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Reindeer/Reindeer_Font.ggxml</File>
+
+  			<File md5="0C42A27227B3932A39D32374C743C3FC" import="1">Art/Dzong/Dzong_B.fxsxml</File>
+   			<File md5="DDBC1BA3F2C10C0B93BF6C0E792A52A5" import="1">Art/Dzong/Dzong_B.gr2</File>
+  			<File md5="92DC2BEBA22540A540ED79CA348DEC52" import="1">Art/Dzong/Dzong_HB.fxsxml</File>
+  			<File md5="8926D9902AB2A9B22ED7C0AD512C2827" import="1">Art/Dzong/Dzong_HB.gr2</File>
+ 			<File md5="904187955A4A829400FB226B25B59D13" import="1">Art/Dzong/dzong_pil.dds</File>
+			<File md5="D8AF04C72B193BBF038FDDECE3B4F621" import="1">Art/Dzong/Dzong_PL.fxsxml</File>
+ 			<File md5="DB05C416BBEF58B8EF73F26939027C1D" import="1">Art/Dzong/Dzong_PL.gr2</File>
+  			<File md5="365F50964B2B013BB6D3C65557A4DD56" import="1">Art/Dzong/fortasia10-1.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Dzong/sv_dzong.dds</File>
+
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/distillery_decal.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/distillery_diff.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/distillery_pl_diff.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/distillery_sref.dds</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/MC_Rum_fonticon.dds</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/MC_Rum_fonticon.ggxml</File>
+  			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/fx_triggers_distillery_pl.ftsxml</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_distillery.fxsxml</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_distillery_hb.fxsxml</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_distillery_pl.fxsxml</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_rum_distillery.gr2</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_rum_distillery_hb.gr2</File>
+			<File md5="675B7ED3F73EAE4A87C4095F1DBD357F" import="1">Art/Distillery/new_rum_distillery_pl.gr2</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Economic_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Economic_128.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Economic_80.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Economic_64.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Economic_45.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Military_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Military_128.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Military_80.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Military_64.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/CD_Military_45.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Crescent_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Crescent_80.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Crescent_64.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Crescent_45.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Crescent_22.ggxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Crescent_22.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Scandinavian_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Scandinavian_80.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Scandinavian_64.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Scandinavian_45.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/ScandinavianAlpha_48.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Scandinavian_22.ggxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Scandinavian_22.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Nandu_256.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Nandu_80.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Nandu_64.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Nandu_45.dds</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Nandu_22.ggxml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/FontIcons_Nandu_22.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/griotbackground.dds</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Art/IconAtlas.xml</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/NewResources.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/Reindeer.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/MapText.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/dzong.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Map/distillery.xml</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NewBuildingText.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/NewBuildings.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Buildings/BuildingSweeps.sql</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Units/EventTrigger.lua</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/NewUnitText.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/NewUnits.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/UnitArtDefs.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/UnitSweeps.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/NewPromotions.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/DjeliText.xml</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Units/Voi.sql</File>
+		
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Pacific.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Scandinavian.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Celtic.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/MidEastern.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Bantu.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Bharata.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Mandala.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Steppe.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Mesopotamic.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Andean.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/EastIndies.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Patagonian.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/EastAfrican.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Saharan.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/FarEastern.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Mesoamerican.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Woodlands.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Western.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Classical.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Central.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Eastern.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Polar.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/GreatPlains.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Himalayan.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Colonial.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Southern.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Amazonian.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/Oceanic.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/WestAfrican.sql</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/SubCultures/WestSlavic.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Cultures/SubCultures/Iberian.sql</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/India.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/Songhai.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/Denmark.sql</File>
+
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Compatibility.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Reassignments.sql</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">DummyPolicies.sql</File>					
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">DummyPolicies.lua</File>
+		</Files>
+	<Actions>
+	<OnModActivated>
+		<UpdateDatabase>Art/Promotions/PromoAtlas.xml</UpdateDatabase>
+		<UpdateDatabase>Art/Units/FlagAtlas.xml</UpdateDatabase>
+		<UpdateDatabase>Art/IconAtlas.xml</UpdateDatabase>
+
+		<UpdateDatabase>Compatibility.sql</UpdateDatabase> 
+		<!-- reassignments affects compatibility table -->
+		<UpdateDatabase>Reassignments.sql</UpdateDatabase>
+
+		<UpdateDatabase>Map/NewResources.xml</UpdateDatabase>
+		<UpdateDatabase>Map/Reindeer.sql</UpdateDatabase>
+		<UpdateDatabase>Map/MapText.xml</UpdateDatabase>
+		<UpdateDatabase>Map/dzong.sql</UpdateDatabase>
+		<UpdateDatabase>Map/distillery.xml</UpdateDatabase>
+
+		<UpdateDatabase>Buildings/NewBuildingText.xml</UpdateDatabase>
+		<UpdateDatabase>Buildings/NewBuildings.xml</UpdateDatabase>
+		<UpdateDatabase>Buildings/BuildingSweeps.sql</UpdateDatabase>
+
+		<UpdateDatabase>Units/NewUnitText.xml</UpdateDatabase>
+		<UpdateDatabase>Units/NewUnits.xml</UpdateDatabase>
+		<UpdateDatabase>Units/UnitArtDefs.xml</UpdateDatabase>
+		<UpdateDatabase>Units/UnitSweeps.sql</UpdateDatabase>
+		<UpdateDatabase>Units/NewPromotions.xml</UpdateDatabase>
+		<UpdateDatabase>Units/DjeliText.xml</UpdateDatabase>
+		<UpdateDatabase>Units/Voi.sql</UpdateDatabase>
+
+		<!-- this updates icons on already added units and buildings -->
+		<!-- it also sets the overrides -->
+		<UpdateDatabase>DummyPolicies.sql</UpdateDatabase>
+		<!-- some policies are then set NULL in /Cultures/ -->
+
+		<UpdateDatabase>Cultures/Pacific.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Scandinavian.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Celtic.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/MidEastern.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Bantu.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Bharata.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Mandala.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Steppe.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Mesopotamic.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Andean.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/EastIndies.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Patagonian.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/EastAfrican.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Saharan.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/FarEastern.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Mesoamerican.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Woodlands.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Western.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Classical.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Central.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Eastern.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Polar.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/GreatPlains.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Himalayan.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Colonial.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Southern.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Amazonian.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/Oceanic.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/WestAfrican.sql</UpdateDatabase>
+
+		<UpdateDatabase>Cultures/SubCultures/WestSlavic.sql</UpdateDatabase>
+		<UpdateDatabase>Cultures/SubCultures/Iberian.sql</UpdateDatabase>
+
+		<UpdateDatabase>Civilizations/India.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/Songhai.sql</UpdateDatabase>
+		<UpdateDatabase>Civilizations/Denmark.sql</UpdateDatabase>
+
+	</OnModActivated>
+	</Actions>
+	<EntryPoints>
+	    <EntryPoint type="InGameUIAddin" file="DummyPolicies.lua">
+	      <Name>CDDummies</Name>
+	      <Description>Allocate each civ a dummy to mark their culture</Description>
+	    </EntryPoint>
+	    <EntryPoint type="InGameUIAddin" file="Units/EventTrigger.lua">
+	      <Name>UnitEvents</Name>
+	      <Description>Activate GP Events on birth</Description>
+	    </EntryPoint>
+	</EntryPoints>
+</Mod>

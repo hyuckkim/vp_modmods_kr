@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{80eb2ca6-6f49-4f80-9125-b33e10a1a3d8}</ProjectGuid>
+    <Name>Recon Pay (Recommended2) Fast Rivers (v 6) INT</Name>
+    <Guid>93a0004c-9a0e-4caf-b727-87db43c12831</Guid>
+    <ModVersion>6</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Translation of the Recon Pay (Recommended2) Fast Rivers into several non-English languages. Currently to Korean only.[NEWLINE][</Teaser>
+    <Description>Translation of the Recon Pay (Recommended2) Fast Rivers into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]정찰 유닛 이동 강화 (권장 2) 빠른 강 모드의 비영어권 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Recon Pay (Recommended2) Fast Rivers INT</AssemblyName>
+    <RootNamespace>Recon Pay (Recommended2) Fast Rivers INT</RootNamespace>
+    <ModReferences />
+    <Homepage>http://github.com/handanikr</Homepage>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>RiparianFeature.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Recon Pay (Recommended2) Fast Rivers</Name>
+        <Id>4b4be32f-72f5-48b7-98a2-acad04934bb0</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="RiparianFeature.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

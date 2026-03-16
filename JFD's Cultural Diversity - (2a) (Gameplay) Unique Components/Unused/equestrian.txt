@@ -1,0 +1,49 @@
+-- ============================
+-- Companion Cavalry (Knight)
+-- upped to knight
+-- ==============================
+
+INSERT INTO Civilization_UnitClassOverrides
+	(CivilizationType, UnitClassType, UnitType)
+SELECT
+	CivilizationType, 'UNITCLASS_KNIGHT', 'UNIT_GREEK_COMPANIONCAVALRY'
+FROM Civilization_JFD_CultureTypes WHERE CultureType = 'CULTURE_JFD_CLASSICAL';
+
+CREATE TRIGGER ClassicalEquestrian
+AFTER INSERT ON Civilization_JFD_CultureTypes WHEN NEW.CultureType = 'CULTURE_JFD_CLASSICAL'
+BEGIN
+	INSERT INTO Civilization_UnitClassOverrides
+		(CivilizationType, UnitClassType, UnitType)
+	SELECT
+		NEW.CivilizationType, 'UNITCLASS_KNIGHT', 'UNIT_GREEK_COMPANIONCAVALRY';
+END;
+
+UPDATE Units SET 
+Combat = 22,
+Cost = 150,
+FaithCost = 275,
+PrereqTech = 'TECH_CURRENCY',
+ObsoleteTech = 'TECH_COMBUSTION',
+MinorCivGift = 0,
+GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER',
+Class = 'UNITCLASS_KNIGHT'
+WHERE Type = 'UNIT_GREEK_COMPANIONCAVALRY';
+
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_LANCER' WHERE UnitType = 'UNIT_GREEK_COMPANIONCAVALRY';
+
+-- Companion Cavalry
+UPDATE Language_en_US
+SET Text = 'Equestrian'
+WHERE Tag = 'TXT_KEY_UNIT_GREEK_COMPANIONCAVALRY';
+
+UPDATE Language_en_US
+SET Text = 'Requires the [ICON_CULTURE_JFD_CLASSICAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CLASSICAL_SHORT_DESC}[ENDCOLOR] Cultural Group. Is weaker, cheaper, comes sooner, and is slightly faster than the Knight. Starts with the [COLOR_POSITIVE_TEXT]Great Generals[ENDCOLOR] Promotion, earning more [ICON_GREAT_GENERAL] Great General Points from combat. If on the same tile as a Great General, has +25% [ICON_STRENGTH] Combat Strength, and Generals that are stacked with this Unit start the turn with an equal amount of [ICON_MOVES] Movement.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_COMPANION_CAVALRY';
+
+UPDATE Language_en_US
+SET Text = 'Equestrian are faster than the Knight and unlock earlier. However, alone, they are slightly weaker. They help generate Great Generals more rapidly than other units, and benefit greatly from being stacked with one. Use a stacked Great General''s increased movement speed to keep up with its Equestrian retinue.'
+WHERE Tag = 'TXT_KEY_UNIT_GREEK_COMPANIONCAVALRY_STRATEGY';
+
+UPDATE Language_en_US
+SET Text = 'Classical civilizations heavy cavalry and it was almost always men from aristocratic and noble houses that served in this role in military campaigns. Simply, both ownership of war horses and also weaponry and armor was something only the very wealthy could afford. These units can therefore be seen as a precursor to the landed, martial elite of the Medieval period: the first Knights.[NEWLINE][NEWLINE]Developed In Macedonian Greece, the Hetaroi. In Rome, Equites. We know less about Carthage. Their army employed many mercenaries and while they certainly employed Numidian mercenaries as excellent light cavalry, heavy cavalry included Carthaginian citizens that otherwise only served as officers or in the elite Sacred Band. It was combined cavalry and elephant charges that broke the Roman infantry at the Battle of Bagradas River in 255 BC, repelling Rome from Africa in the first Punic War.'
+WHERE Tag = 'TXT_KEY_CIV5_ANTIQUITY_COMPANIONCAVALRY_TEXT';

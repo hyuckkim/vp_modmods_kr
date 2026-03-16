@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Gedemon's YnAEMP INT", "Gedemon's YnAEMP INT\Gedemon's YnAEMP INT.civ5proj", "{BBD5570D-B997-4523-982D-0DCA15BD01B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Default|x86.ActiveCfg = Default|x86
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Default|x86.Build.0 = Default|x86
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Package Only|x86.ActiveCfg = Package Only|x86
+		{BBD5570D-B997-4523-982D-0DCA15BD01B7}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

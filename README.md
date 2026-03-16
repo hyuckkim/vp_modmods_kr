@@ -1,108 +1,46 @@
 # vp_modmods_kr
+<img width="330" height="330" alt="vpkr" src="https://github.com/user-attachments/assets/3bdbbb84-48fe-42ae-853e-8b48f1cbf6bf" />
 
-### 나이틀리 버전 자동 배포 [[모드]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-build/master/Vox%20Populi%20INT%2B.zip) [[모드팩]](https://nightly.link/handanikr/vp_modmods_kr/workflows/inno-mpbuild/master/VP%20INT%20Modpack%2B.zip)
+**환영합니다!**
 
-### (아마도) 더 이상 업데이트가 없는 VP용 모드입니다. 최신 VP에서 정상 작동을 보증하지 않습니다.
+여기는 문명 5의 모드인 [VP(Vox Populi)의 한국어 모드](https://github.com/handanikr/vp_kr/)와 함께 쓸 수 있는 **VP용 한국어 모드들**을 모아 놓은 깃허브 저장소입니다.
 
-1. VP의 한국어 번역 모드:
-- (1L) Community Patch INT
-- (2L) Vox Populi INT
-- (3aL) VP - EUI Compatibility Files INT
-- (4aL) Squads for VP INT
-- (overL) More Unique Components for VP (v 88) INT
+본래 이 저장소는 일부 수명을 다한 VP용 모드들과 그 번역본들을 아카이빙 해놓은 일종의 기록 저장소였습니다. 하지만, 유명 VP용 모드나 편의성을 개선해주는 모드들을 포함하길 원하는 수요를 확인한 HANDANI에 의해 상호 간에 모드 충돌이 없으면서 문명 5가 강제로 종료되지 않는 선에서 얼마나 더 많은 모드가 현재도 작동 가능한 상태인가를 확인하다 어느새 현재와 같은 대규모 모드 집합체로 발전했습니다.
 
-2. VP에서 별도로 분리된 모드:
-- (7) VP Community Events  
-  VP에 내장된 이벤트는 데모 버전 수준으로 이 모드를 설치해야 이벤트가 풍성해집니다.
-- (over) More Unique Components for VP (v 88)  
-  이 모드는 VP에서 별도로 분리된 건 아니지만, 추후 VP 5.0에서 합쳐질 예정인 모드입니다.
-- UI - Promotion Tree for VP  
-  유닛의 승급 트리를 보여주는 모드로 관리 인원이 없어 별도로 분리 되었습니다.
+**<> Code ▼ 버튼을 누르고 Download ZIP**을 누르면 모드와 전체 소스를 받을 수 있습니다.
 
-3. VP용 모드-모드:
+## Vox Populi가 뭔가요?
 
-- (6) Future Age for VP  
-  미래 시대를 추가해주는 모드로 여러 다른 게임의 지적재산권이 활용된 모드입니다.
+![image](https://github.com/user-attachments/assets/da5db707-67b1-410c-9d00-02d408b056be)
 
-- (7a) VP Events Overhaul (Expansion Pack system)  
-  VP 커뮤니티 이벤트 모드를 오버홀하는 모드입니다. 
+[Vox Populi](https://forums.civfanatics.com/forums/community-patch-project.497/) 는 문명 5의 유명 Overhaul 모드로 2014년도에 Community Patch Project라는 이름으로 시작해 2016년 5월 14일부터 Vox Populi(라틴어로 인민의 목소리), 줄여섯 VP라고 불리게 되었습니다.
 
-- (overhaul) Enlightenment Era for VP  
-  계몽 시대를 추가해주는 모드로 최근 VP 4.22 버전에 맞춰 업데이트 되었으며 추후 VP 5.0용으로 업데이트될 예정입니다.
+10년이 넘는 세월동안 여전히 개발을 멈추지 않고 발전하고 있는 모드로 사실상 사후관리가 끝난 문명 5를 대신하는 비공식 확장팩에 준하는 수준의 인기를 받아왔습니다.
 
-- (overhaul) More Wonders for VP  
-  자연 불가사의를 늘려주는 모드입니다.
+Overhaul 모드란 게임 전체를 전반적으로 수정하는 모드를 말합니다. 즉, Vox Populi는 문명 5의 모든 게임 요소인 기술, 문화 트리, 유닛, 문명 특성, 승급, 전투 전략 등을 모두 바꿉니다. 
 
-- [Unique City States for VP](https://gall.dcinside.com/civilization/265235)  
-  모든 도시국가에 각각의 특성을 추가하는 모드입니다.
+## Vox populi 받기
 
-- (text) Promotion Overhaul for VP  
-  승급 설명을 개선시켜주는 모드입니다.
+**한국어로 VP 모드를 플레이하려면 원본 VP 모드와 한국어 모드 둘 다 설치해야 합니다! (모드팩은 상관 없음)**
 
-- (ui) City-States Leaders for VP  
-  도시 국가에 지도자를 추가해주는 모드입니다.
+[Vox Populi 설치 프로그램 받기](https://github.com/LoneGazebo/Community-Patch-DLL/releases)
 
-- (ui) List Enhancements for VP  
-  도시 화면의 유닛 목록을 개선시켜주는 모드입니다.
+최신 버전이 가장 위로 올라오며 최신 글에서:
 
-- (visual) Unit Scaling and Formation for VP (v 12)  
-  유닛의 비율과 배치를 현실적이게 바꿔주는 모드입니다.
+![image](https://github.com/user-attachments/assets/1e78f3fb-89fb-4a9f-b6d2-e13fba5c093e)
 
-- Civic And Reform (v 22)  
-  이 모드도 VP의 시스템을 바꾸는 모드 중 하나인데 솔직히 아직 이해를 못 했습니다.
+▶ Assets을 눌러주면 🔽 Assets으로 바뀌면서 그 아래에 파일들이 나옵니다. 이 중 Vox.Populi.버전명.exe 라는 형식으로 된 것이 설치 파일입니다.
 
-- InGame Editor+ (v 46)  
-  약칭 IGE라 불리는 모드로 게임 도중 게임 내의 요소들을 수정할 수 있게 해주는 모드입니다.
+일반적으로는 그냥 다음만 계속 눌러주면 설치가 끝납니다만, 만일 EUI를 설치하고 싶지 않거나, 43 문명 선택을 추가하고자 하신다면, 중간에 선택지가 나오기 때문에 무작정 다음만 누르시면 안 됩니다.
 
-- Quick Turns (v 10)  
-  게임 내의 애니메이션을 보다 자유롭게 끄고 킬 수 있게 해주는 모드입니다.
+기본 경로에 문명 5가 설치되어 있지 않다면, 마지막으로 문명 5가 설치된 곳을 선택해달라는 말이 한 번 나오니 어디에 설치하셨는지 그 경로를 찾아주시면 됩니다.
 
-- Vox Populi's Bare Necessities (v 12)  
-  VP에 여러가지 요소들을 추가해주는 모드입니다.
+## 설치법
 
-- World Congress Reformation (v 12)  
-  세계 의회를 재구성하는 모드입니다.
+### 공식 배포 [[바로가기]](https://github.com/handanikr/vp_modmods_kr/releases)  
 
-- [JFD's Sovereignty for VP](https://gall.dcinside.com/civilization/275728)  
-  공화정, 과두정같은 정부를 선택하고 정부가 선호하는 법안과 정부와 관련된 불가사의가 추가되는 모드입니다. 구버전은 번역이 있지만 13버전에서 추가된 내용을 수정해서 올렸습니다.
+<img width="499" height="392" alt="image" src="https://github.com/user-attachments/assets/6765ef89-47be-4d4c-b2c6-d8fe40ae2a53" />  
 
-- [Better Lakes for VP](https://forums.civfanatics.com/resources/better-lakes-for-vp.28446/)  
-  호수에 염호와 민물고기를 추가하고, 이들을 강화하는 건물들을 추가하는 모드입니다.
+모드 설치 프로그램에서는 사용자 정의 설치로 원하는 모드를 선택하거나 제외하고 설치하실 수 있습니다.  
 
-- [Community Patch Events](https://forums.civfanatics.com/threads/community-patch-events-development.569321/)  
-  VP에 총 12개밖에 없어서 인기가 없는 이벤트를 약 200개정도 추가하는 모드입니다.  
-  ※ ChatGPT에게 번역을 전적으로 맡겨서 번역 품질을 장담할 수 없습니다.
-
-- [UI - Promotion Tree for VP](https://forums.civfanatics.com/threads/ui-promotion-tree-for-vp.690546/)  
-  관리할 사람이 없어 본편 VP에서 빠진 승급 트리 모드입니다.
-
-- [Enhanced Air Warfare 4VP](https://forums.civfanatics.com/threads/enhanced-air-warfare-4vp.656114/post-16250264)  
-  VP에 정식으로 채용된 해군과 달리 여전히 추가되지 않고 있는 공군입니다.
-
-- [Trade Opportunities for VP](https://forums.civfanatics.com/threads/trade-opportunities-for-vp.636230/)  
-  현재 교역과 외교 상황, 문명 간 관계 등을 외교 화면에서 표와 그래프로 볼 수 있게 해주는 모드입니다.
-
-- [Wonder Planner For VP](https://forums.civfanatics.com/threads/wonder-planner-for-vp.636588/)  
-  현 게임의 불가사의 현황과 정보를 표로 볼 수 있게 만들어주는 모드입니다.
-
-- [Really Advanced Setup](https://forums.civfanatics.com/threads/really-advanced-setup.486324/)  
-  게임을 시작하기 전의 고급 설정 화면을 훨씬 더 세세하게 바꿔주는 모드입니다.  
-  ※ 현재 번역은 할 수 있는 만큼 했으나 보이는 부분들 중 번역이 불가한 구간이 있어 번역 진행이 멈췄습니다.
-
-- [UI - Enhanced Rankings](https://www.picknmixmods.com/mods/CivV/UI/Enhanced%20Rankings.html)  
-  문명 순위 화면을 언제든지 볼 수 있도록 해주는 모드입니다.
-
-- [UI - Improved City View](https://forums.civfanatics.com/threads/ui-improved-city-view-vox-populi-with-eui.627067/post-16473637)  
-  34UC 다음으로 VP 채용설이 나오고 있는 도시 화면 향상 모드입니다.
-
-- [Upgrade All Units Button In Military Overview](https://forums.civfanatics.com/resources/upgrade-all-units-button-in-military-overview.30443/)  
-  모든 유닛을 한 번에 업그레이드 하는 버튼을 군사 화면에 추가하는 단순한 모드입니다.
-
-- [City State Leaders II](https://forums.civfanatics.com/threads/city-states-leaders-ii.473670/)  
-  도시 국가에 초상화를 추가해주는 모드입니다.
-
-- [Elephant Sound When Circus Built](https://forums.civfanatics.com/threads/elephant-sound-when-circus-built.690742/))  
-  서커스 건물의 건설이 완료되면 코끼리 소리가 나는 사소하지만 직관적인 모드입니다.
-
-- [Reworked Top Panel](https://forums.civfanatics.com/threads/bals-qol-ui-mods-and-stuff-linked-units-assign-all-to-project-commander-borders-military-log-etc.674267/post-16460166)  
-  게임 내에서 상단 패널 UI를 개선해주는 모드입니다.
+VP 원본과 마찬가지로 [Inno Setup](https://jrsoftware.org)으로 만들어진 설치 프로그램으로 모드를 자동으로 설치할 수 있습니다.  

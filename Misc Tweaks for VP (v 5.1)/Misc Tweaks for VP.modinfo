@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8562c016-f5bb-79a3-b37e-a73cba215fe9" version="15">
+	<Properties>
+		<Name>Misc Tweaks for VP</Name>
+		<Teaser>for VP 5.0+</Teaser>
+		<Description>Miscellaneous changes aimed for improving VP experience</Description>
+		<Authors>azum4roll</Authors>
+		<HideSetupGame>0</HideSetupGame>
+		<AffectsSavedGames>1</AffectsSavedGames>
+		<MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+		<SupportsSinglePlayer>1</SupportsSinglePlayer>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SupportsHotSeat>1</SupportsHotSeat>
+		<SupportsMac>1</SupportsMac>
+		<ReloadAudioSystem>1</ReloadAudioSystem>
+		<ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+		<ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+		<ReloadUnitSystem>1</ReloadUnitSystem>
+	</Properties>
+	<Dependencies>
+		<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="17" maxversion="999" title="(2) Community Balance Overhaul" />
+	</Dependencies>
+	<References>
+		<Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="144" maxversion="999" title="(1) Community Patch" />
+		<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="17" maxversion="999" title="(2) Community Balance Overhaul" />
+		<Mod id="e2474689-763b-4adf-a4e1-ff981818f7c6" minversion="3" maxversion="999" title="JFD's Civilizations - Japan (Meiji) for Vox Populi" />
+		<Mod id="f5d1b4e6-a48d-4311-9af3-c59ce1c11d0e" minversion="9" maxversion="999" title="JFD's Civilizations - Japan (Tojo) for Vox Populi" />
+		<Mod id="4abc16dc-5010-47d1-af6a-7d51a2674a35" minversion="2" maxversion="999" title="Kushan Empire for VP" />
+		<Mod id="dcdaabd2-b224-4680-bdc0-d8692a1a1249" minversion="0" maxversion="999" title="Colonialist Legacies’ Inuit for VP" />
+		<Mod id="a08a3228-022a-4681-b1a1-aab5dcccb857" minversion="0" maxversion="999" title="JFD's Prussia (Frederick) for VP" />
+		<Mod id="e18fa286-5ee0-4869-b15f-cc7291280e86" minversion="0" maxversion="999" title="Afghanistan for VP" />
+		<Mod id="clqm1mt6-al70-p2m7-0dm7-1g5oc5o39f34" minversion="6" maxversion="999" title="Manchus for VP" />
+		<Mod id="8dac91b6-191b-4698-b762-0256963343ac" minversion="2" maxversion="999" title="Jarcast's The Navajo for VP" />
+		<Mod id="b1382f7b-6a9d-4f35-80f5-6467bed3fa7e" minversion="1" maxversion="999" title="Hololive - Ouro Kronii's Kronii" />
+		<Mod id="b2eb6d1e-1fcb-4a0d-829c-51691aa3183a" minversion="17" maxversion="999" title="Unique City-States" />
+		<Mod id="98c7f9e2-1gg3-5841-8gc7-41bde72f2f47" minversion="7" maxversion="999" title="Hokath's Proposals" />
+		<Mod id="9db218ee-7efa-4b4c-c234-014666n8l33t" minversion="1" maxversion="999" title="Semper Fidelis" />
+	</References>
+	<Files>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf0" import="0">SkirmisherChanges.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf1" import="0">NavalUnitChanges.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf2" import="0">LandUnitChanges.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf3" import="0">OtherChanges.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf4" import="0">Civilizations/Netherlands.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf5" import="0">Civilizations/Polynesia.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf6" import="0">Civilizations/Songhai.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf7" import="0">Civilizations/Sweden.sql</File>
+		<File md5="a3582fe0df0bfbd583f97bbf7ed5fbf8" import="0">Compatibility/Hokaths Proposals.sql</File>
+	</Files>
+	<Actions>
+		<OnModActivated>
+			<UpdateDatabase>SkirmisherChanges.sql</UpdateDatabase>
+			<UpdateDatabase>NavalUnitChanges.sql</UpdateDatabase>
+			<UpdateDatabase>LandUnitChanges.sql</UpdateDatabase>
+			<UpdateDatabase>OtherChanges.sql</UpdateDatabase>
+			<UpdateDatabase>Civilizations/Netherlands.sql</UpdateDatabase>
+			<UpdateDatabase>Civilizations/Polynesia.sql</UpdateDatabase>
+			<UpdateDatabase>Civilizations/Songhai.sql</UpdateDatabase>
+			<UpdateDatabase>Civilizations/Sweden.sql</UpdateDatabase>
+			<UpdateDatabase>Compatibility/Hokaths Proposals.sql</UpdateDatabase>
+		</OnModActivated>
+	</Actions>
+	<EntryPoints>
+	</EntryPoints>
+</Mod>

@@ -1,0 +1,122 @@
+
+		<Row>
+			<Type>UNIT_CD_REDSHANKS</Type>
+			<Class>UNITCLASS_CROSSBOWMAN</Class>
+			<Description>TXT_KEY_UNIT_CD_REDSHANKS</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_REDSHANKS_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_REDSHANKS_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_REDSHANKS_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_SENSHI_REDSHANKS</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>21</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>21</PortraitIndex>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CD_REDSHANKS">
+			<Text>Redshanks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_REDSHANKS_TEXT">
+			<Text>Redshank was a nickname for Scottish mercenaries from the Highlands and Western Isles contracted to fight in Ireland; they were a prominent feature of Irish armies throughout the 16th century. They were called redshanks because they went dressed in plaids and waded bare-legged through rivers in the coldest weather. The redshanks were usually armed alike, principally with bows (the short bow of Scotland and Ireland, rather than the longbow of Wales and England) and, initially, two-handed claymores or Lochaber axes. English observers reported that some Highlanders fighting in Ireland wore chain mail, long obsolete elsewhere.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_REDSHANKS_HELP">
+			<Text>*this is updated in another file*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_REDSHANKS_STRATEGY">
+			<Text>The big downside of Crossbows is their poor defense, making them vulnerable to the ubiquitous Knight. Redshanks improve on this by being hardier, especially in Rough terrain. Their adjacency bonus, along with their Mercenary attributes, make them easy to mass even if you haven't previously invested in Composite Bowmen. This allows for a later Medieval mobilization with a forward-looking objective of converting into an army of Muskets.</Text>
+		</Row>
+
+-- ============================
+-- Redshanks (Crossbowman)
+-- Mercenary
+-- ==============================
+UPDATE ArtDefine_UnitInfoMemberInfos SET 
+NumMembers = (SELECT NumMembers FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_CROSSBOWMAN' LIMIT 1) 
+WHERE UnitInfoType = 'ART_DEF_UNIT_SENSHI_REDSHANKS';
+
+UPDATE ArtDefine_UnitMemberInfos SET 
+Scale = (SELECT Scale FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_CROSSBOWMAN' LIMIT 1) 
+WHERE Type = 'ART_DEF_UNIT_SENSHI_REDSHANKS';
+--=============================================
+
+UPDATE Units SET
+PurchaseOnly = 1,
+MoveAfterPurchase = 1,
+Combat = Combat + 3
+WHERE Type = 'UNIT_CD_REDSHANKS';
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+	('UNIT_CD_REDSHANKS', 'PROMOTION_WOODSMAN'),
+	('UNIT_CD_REDSHANKS', 'PROMOTION_ADJACENT_BONUS');
+
+UPDATE Language_en_US SET
+Text = 'Requires the [ICON_CULTURE_JFD_NORTHERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_CELTIC_SHORT_DESC}[ENDCOLOR] Cultural Group. Has higher [ICON_STRENGTH] Combat Strength than the Crossbowman it replaces, and gains addition strength for every adjacent friendly Unit. Starts with the [COLOR_POSITIVE_TEXT]Woodsman[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]May only be purchased with [ICON_GOLD] Gold or [ICON_PEACE] Faith and receives full XP. Can move immediately after being purchased.'
+WHERE Tag = 'TXT_KEY_UNIT_CD_REDSHANKS_HELP';
+
+
+  <ArtDefine_UnitInfos>
+    <Row>
+      <Type>ART_DEF_UNIT_SENSHI_REDSHANKS</Type>
+      <DamageStates>1</DamageStates>
+      <Formation>Archer</Formation>
+    </Row>
+  </ArtDefine_UnitInfos>
+  <ArtDefine_UnitInfoMemberInfos>
+    <Row>
+      <UnitInfoType>ART_DEF_UNIT_SENSHI_REDSHANKS</UnitInfoType>
+      <UnitMemberInfoType>ART_DEF_UNIT_MEMBER_SENSHI_REDSHANKS</UnitMemberInfoType>
+      <NumMembers>12</NumMembers>
+    </Row>
+  </ArtDefine_UnitInfoMemberInfos>
+  <ArtDefine_UnitMemberInfos>
+    <Row>
+      <Type>ART_DEF_UNIT_MEMBER_SENSHI_REDSHANKS</Type>
+      <Scale>0.140000000596046</Scale>
+      <Model>Composite_Bowman_Russia.fxsxml</Model>
+      <MaterialTypeTag>CLOTH</MaterialTypeTag>
+      <MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+    </Row>
+  </ArtDefine_UnitMemberInfos>
+  <ArtDefine_UnitMemberCombats>
+    <Row>
+      <UnitMemberType>ART_DEF_UNIT_MEMBER_SENSHI_REDSHANKS</UnitMemberType>
+      <EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk AttackCharge</EnableActions>
+      <ShortMoveRadius>12.0</ShortMoveRadius>
+      <ShortMoveRate>0.349999994039536</ShortMoveRate>
+      <TargetHeight>8.0</TargetHeight>
+      <HasShortRangedAttack>1</HasShortRangedAttack>
+      <HasLongRangedAttack>1</HasLongRangedAttack>
+      <HasRefaceAfterCombat>1</HasRefaceAfterCombat>
+      <ReformBeforeCombat>1</ReformBeforeCombat>
+    </Row>
+  </ArtDefine_UnitMemberCombats>
+  <ArtDefine_UnitMemberCombatWeapons>
+    <Row>
+      <UnitMemberType>ART_DEF_UNIT_MEMBER_SENSHI_REDSHANKS</UnitMemberType>
+      <Index>0</Index>
+      <SubIndex>0</SubIndex>
+      <ProjectileSpeed>5.30000019073486</ProjectileSpeed>
+      <WeaponTypeTag>ARROW</WeaponTypeTag>
+      <WeaponTypeSoundOverrideTag>ARROW</WeaponTypeSoundOverrideTag>
+      <MissTargetSlopRadius>10.0</MissTargetSlopRadius>
+    </Row>
+    <Row>
+      <UnitMemberType>ART_DEF_UNIT_MEMBER_SENSHI_REDSHANKS</UnitMemberType>
+      <Index>1</Index>
+      <SubIndex>0</SubIndex>
+      <VisKillStrengthMin>10.0</VisKillStrengthMin>
+      <VisKillStrengthMax>20.0</VisKillStrengthMax>
+      <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      <MissTargetSlopRadius>10.0</MissTargetSlopRadius>
+    </Row>
+  </ArtDefine_UnitMemberCombatWeapons>
+  <ArtDefine_StrategicView>
+    <Row>
+      <StrategicViewType>ART_DEF_UNIT_SENSHI_REDSHANKS</StrategicViewType>
+      <TileType>Unit</TileType>
+      <Asset>sv_redshanks.dds</Asset>
+    </Row>
+  </ArtDefine_StrategicView>
+

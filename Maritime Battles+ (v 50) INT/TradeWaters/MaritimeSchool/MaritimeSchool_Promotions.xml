@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/25/2020 6:33:11 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_REPLENISHMENT">
+			<Text>Replenishment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPLENISHMENT_HELP">
+			<Text>Unit can heal outside friendly territory.  Expires after 5 turns, or after combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPLENISHMENT_PEDIA">
+			<Text>Replenishment</Text>
+		</Row>
+	</Language_en_US>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_REPLENISHMENT</Type>
+			<Description>TXT_KEY_PROMOTION_REPLENISHMENT</Description>
+			<Help>TXT_KEY_PROMOTION_REPLENISHMENT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>56</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
+			<HasPostCombatPromotions>true</HasPostCombatPromotions>
+			<HealOutsideFriendly>true</HealOutsideFriendly>
+			<PromotionDuration>5</PromotionDuration>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_REPLENISHMENT_PEDIA</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_REPLENISHMENT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPLENISHMENT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPLENISHMENT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPLENISHMENT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+</GameData>

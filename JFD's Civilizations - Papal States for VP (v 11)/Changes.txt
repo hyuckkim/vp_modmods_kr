@@ -1,0 +1,156 @@
+v1 (changes from JFD's release)
+--------------------------------------------------------------
+UA: Apostolic See
+- Removed +1 Faith, -1 Culture to Palace (0 Culture in Palace is extremely crippling, especially in VP).
+- Added +3 Faith to Palace, Great Works, National Wonders, and World Wonders. (does not include Tradition buildings)
+- Removed can purchase Disciples (Disciples are now the UU, mainly so that it works better with the AI).
+- Added all Missionaries get +50% religious strength.
+
+UB: Chapel (replaces Temple)
+- Increased number of Great Work slots to 2 from 1.
+- Bonus from filling the Great Work slot now coded as a theming bonus when filled with your Great Works (AI understands that better, and it looks nicer in the UI).
+- Theming yield is 3 (culture and tourism), and the bonus is 3 faith.
+- Costs less Production, 100 instead of 200.
+- No Gold maintenance.
+- All three Chapels have the same Religious Pressure and Unhappiness modifiers as the Temple.
+- First Chapel now has Music slots (to be the same as the Temple).
+- Second Chapel now has Art or Artifact slots (they are scarce early game, with only Palace and the Tradition building available until Medieval).
+- Third Chapel now has Writing slots (Amphitheaters unlock fairly early).
+- First Chapel gets the same resource yield bonuses as Temple.
+- Second and Third Chapel no longer shows up in the leader screen, and no longer requires a certain amount of followers of your religion.
+
+UU: Disciple (standalone)
+- Now a UU rather than part of the UA.
+- Can only be Faith bought in the capital, and has 8 turns of purchase cooldown (on Standard).
+- Has a base Faith cost of 300.
+- Faith cost scales in the same way as other regular Faith purchases (Missionaries, Inquisitors, etc).
+
+UU: Swiss Guard (replaces Landsknecht with More UCs)
+- Now a City State gift only unit (unless More UCs is installed).
+- Can only be purchased with Gold or Faith.
+- Does not need the Authority finisher for Gold purchase.
+- Does not need Zealotry for Faith purchase.
+- Tourism bonus changed to a 10% yield modifier when garrisoned (retained on upgrade).
+- Capital defense heal now changed to 25HP heal on all kills (retained on upgrade).
+
+UW: Vatican Museums (replaces Hermitage with More UCs)
+- 1 additional Great Work of Art slot.
+- Free Great Artist.
+- +25% Culture in the city instead of +10%.
+- 1 Culture per 2 Citizens instead of per 4.
+- +10 Gold from when themed instead of +5.
+- +10 bonus Culture and Tourism when themed, instead of +6.
+- 25% of Culture from World Wonders, Natural Wonders, Improvements added to Tourism, 25% more Tourism from Great Works. Affects all cities. Same effect as National Visitor Centre (stacks).
+- +2 Tourism to Chapels (all three types).
+
+Event: The Holy See (for Enginseer's Community Event)
+- Choice 1: Free Great Person.
+- Choice 2: -25% Culture cost of acquiring new tiles, +1 Gold from Farms, Camps, and Pastures.
+- Choice 3: +2 Faith, Culture, and Tourism to all Great Works.
+- Choice 4: All units gain Faith and Culture when killing an enemy unit (equal to 50% of the enemy's combat strength).
+- Choice 5: -25% reduction of religious unrest and poverty.
+- Choice 6: +4 Faith and Culture, and +1 Tourism in holy city or capital for every 10 followers of your religion (yours and foreign cities).
+
+Event: Banquet of Chestnuts
+- Yield values now scale with era.
+- Choice 1: Golden Age Points gained increased to 600.
+- Choice 2: Faith gained increased to 300.
+
+Event: Inquisition
+- Yield values now scale with era.
+- Choice 2: Now requires 60 Gold, and grants 30 Faith.
+
+Decision: Declare the Kingdom of God
+- Costs decreased, but now scale with era (about the same in Renaissance).
+- Now requires 1 Magistrate.
+- Removed 2 Magistrate reward.
+- New reward: spawns 1 free unit in your capital per 5 cities following your religion whenever a war begins.
+
+Decision: Institute the Societas Jesu
+- Costs decreased, but now scale with era (about the same in Renaissance).
+- Now has a gold cost as well (same cost as faith).
+- Changed effect from 50% of your population converted per turn to 15% less faith cost for missionaries, inquisitors, and buildings (previous one was far too strong).
+
+Compatibility: JFD's Cultural Diversity
+- Will now correctly use the Southern Papal soundtracks.
+
+--------------------------------------------------------------
+v2
+--------------------------------------------------------------
+Misc
+- Reordered the mod reference list, hopefully fixing the mod load order issues with 4UC.
+
+--------------------------------------------------------------
+v3
+--------------------------------------------------------------
+Misc
+- Using triggers now, hopefully fixing the mod load order issues with 4UC.
+
+--------------------------------------------------------------
+v4
+--------------------------------------------------------------
+UB: Chapel (replaces Temple)
+- Increased production cost from 100 to 150.
+
+UU: Swiss Guard (replaces Landsknecht with More UCs)
+- Fixed not being able to upgraded (upgrades to Tercio).
+
+--------------------------------------------------------------
+v5
+--------------------------------------------------------------
+UA: Apostolic See
+- Faith to Palace, Great Works, National Wonders, and World Wonders decreased from +3 to +2.
+
+UB: Chapel (replaces Temple)
+- Theming bonus changed from 3 Faith, to 3 Gold/Golden Age Points/Culture for the Literature/Art/Music Chapels.
+
+UU: Disciple (standalone)
+- Now gives GAP when expended, like the current Great Artist (previously gave Golden Age turns like the old Great Artists).
+
+Event: The Holy See (for Enginseer's Community Event)
+- Choice 1: Free Great Person now requires Reinassance instead of Classical (in line with changes in Community Event).
+
+--------------------------------------------------------------
+v6
+--------------------------------------------------------------
+UB: Chapel (replaces Temple)
+- Now correctly gives -1 Unhappiness to religious intolerance, like the Temple (only applies to the first Chapel).
+
+UU: Swiss Guard (standalone) (requires 4UC)
+- Now a standalone unit (no longer replaces Landsknecht).
+
+Misc
+- Added icons for Papal promotions, credit to Asterix Rage.
+- Fixed default civ event (Brave New World) showing up when playing Papal States.
+
+--------------------------------------------------------------
+v7
+--------------------------------------------------------------
+UU: Swiss Guard (standalone) (requires 4UC)
+- Fixed not being buildable.
+
+--------------------------------------------------------------
+v8
+--------------------------------------------------------------
+Misc
+- Fixed mod conflict with new version 8/16 onwards (mod will fail to load).
+
+UU: Swiss Guard (standalone) (requires 4UC)
+- Fixed yield from garrison not working with new versions of VP.
+
+--------------------------------------------------------------
+v9
+--------------------------------------------------------------
+Misc
+- Compatibility with VP 3.0+
+--------------------------------------------------------------
+v10 (by Jarcast)
+--------------------------------------------------------------
+Misc
+- changed leader from Pius IX to Julius II ( https://steamcommunity.com/sharedfiles/filedetails/?id=3390690799 )
+- changed civ icon and alpha icon
+- changed civ colors
+- changed map and leader art
+- changed leader text
+
+

@@ -18,13 +18,15 @@ VALUES		('TXT_KEY_PROMOTION_FLETCHER',		'Yerba de la Fleche'),
 
 INSERT INTO UnitPromotions 
 			(Type,						Description,						Help,									Sound,				CannotBeChosen, LostWithUpgrade,	PortraitIndex,	IconAtlas,						PediaType,			PediaEntry) 
-VALUES		('PROMOTION_FLETCHER',		'TXT_KEY_PROMOTION_FLETCHER',		'TXT_KEY_PROMOTION_FLETCHER_HELP',		'AS2D_IF_LEVELUP',	1,				1,					20,				'PROMOTION_MORE_WONDERS_ATLAS',	'PEDIA_RANGED',		'TXT_KEY_PROMOTION_FLETCHER');
+VALUES		('PROMOTION_FLETCHER',		'TXT_KEY_PROMOTION_FLETCHER',		'TXT_KEY_PROMOTION_FLETCHER_HELP',		'AS2D_IF_LEVELUP',	1,				1,					20,				'PROMOTION_MORE_WONDERS_ATLAS',	'PEDIA_SHARED',		'TXT_KEY_PROMOTION_FLETCHER');
 
 UPDATE UnitPromotions SET AttackWoundedMod = 50 WHERE Type = 'PROMOTION_FLETCHER';
 
-/*INSERT INTO UnitPromotions_UnitCombats
+INSERT INTO UnitPromotions_UnitCombats
 			(PromotionType,				UnitCombatType)
-VALUES		('PROMOTION_FLETCHER',		'UNITCOMBAT_ARCHER');*/
+VALUES		('PROMOTION_FLETCHER',		'UNITCOMBAT_ARCHER'),
+			('PROMOTION_FLETCHER',		'UNITCOMBAT_MELEE'),
+			('PROMOTION_FLETCHER',		'UNITCOMBAT_MOUNTED');
 --============================================--
 -- BUILDINGS
 --============================================--
@@ -45,10 +47,10 @@ INSERT INTO Language_en_US
 			(Tag,									Text) 
 VALUES		('TXT_KEY_BUILDING_FLETCHER',			'Fletcher'),
 			('TXT_KEY_BUILDING_FLETCHER_PEDIA',		'TODO'),
-			('TXT_KEY_BUILDING_FLETCHER_HELP',		'[COLOR_POSITIVE_TEXT]Yerba de la Fleche[ENDCOLOR] promotion for all Archery units. +10% [ICON_PRODUCTION] Production towards Archery units in this City.[NEWLINE][NEWLINE]Nearby [ICON_RES_TROPICAL_FISH] Tropical Fish: +2 [ICON_PRODUCTION] Production.'),
+			('TXT_KEY_BUILDING_FLETCHER_HELP',		''),
 			('TXT_KEY_BUILDING_SEAFOOD',			'Seafood Station'),
 			('TXT_KEY_BUILDING_SEAFOOD_PEDIA',		'TODO'),
-			('TXT_KEY_BUILDING_SEAFOOD_HELP',		'5% of the City''s [ICON_FOOD] Food is converted into [ICON_TOURISM] Tourism every turn. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Music.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Nearby [ICON_RES_FISH] Fish: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CRAB] Crab: +1 [ICON_FOOD] Food and +1 [ICON_TOURISM] Tourism.[NEWLINE]Nearby [ICON_RES_TROPICAL_FISH] Tropical Fish: +1 [ICON_FOOD] Food and +1 [ICON_TOURISM] Tourism.');
+			('TXT_KEY_BUILDING_SEAFOOD_HELP',		'');
 
 INSERT INTO Building_LocalResourceOrs
 			(BuildingType,			ResourceType) 
@@ -81,14 +83,12 @@ VALUES		('BUILDING_FLETCHER',	'UNITCOMBAT_ARCHER',		10);
 --============================================--
 -- COMPATIBILITY
 --============================================--
--- Loisiana
-UPDATE Language_en_US SET Text = Text||'[NEWLINE]Nearby [ICON_RES_SHRIMP] Shrimp: +1 [ICON_FOOD] Food and +1 [ICON_TOURISM] Tourism.' WHERE Tag = 'TXT_KEY_BUILDING_SEAFOOD_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-CIV-LOI' AND Value= 1);
-
+-- Louisiana
 INSERT INTO Building_LocalResourceOrs
 			(BuildingType,		ResourceType) 
-SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP' WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-CIV-LOI' AND Value= 1);
+SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP' WHERE EXISTS (SELECT * FROM BuildingClasses WHERE Type='BUILDINGCLASS_DUMMY_LOUISIANA');
 
 INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,		ResourceType,		YieldType,			Yield) 
-SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP',	'YIELD_FOOD',		1 WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-CIV-LOI' AND Value= 1) UNION ALL
-SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP',	'YIELD_TOURISM',	1 WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='MW-CIV-LOI' AND Value= 1);
+SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP',	'YIELD_FOOD',		1 WHERE EXISTS (SELECT * FROM BuildingClasses WHERE Type='BUILDINGCLASS_DUMMY_LOUISIANA') UNION ALL
+SELECT		'BUILDING_SEAFOOD',	'RESOURCE_SHRIMP',	'YIELD_TOURISM',	1 WHERE EXISTS (SELECT * FROM BuildingClasses WHERE Type='BUILDINGCLASS_DUMMY_LOUISIANA');

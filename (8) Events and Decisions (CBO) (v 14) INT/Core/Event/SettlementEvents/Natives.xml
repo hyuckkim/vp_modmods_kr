@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_DESCRIPTION">
+			<Text>Native Encounter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_HELP">
+			<Text>The locals in this area has numbered to a small amount of tribal natives. They have no desire to assimilate into our culture. What do you suppose we do?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_1">
+			<Text>They were here first, we must respect their wishes and expand around them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_2">
+			<Text>If we don't claim the land, someone else will. Relocate them onto reservations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_3">
+			<Text>You can never have too many slaves. Seize their land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_1_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+1 [ICON_HAPPINESS_1] Happiness[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Short [ICON_HAPPINESS_1] We Love the King Day in this city.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]+5 [ICON_FLOWER] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_2_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+1 [ICON_CITIZEN] Population[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Short [ICON_RESISTANCE] Resistance in the city.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_RESEARCH_STORED]25% for +2 [ICON_FLOWER] Morality[ENDCOLOR][NEWLINE][ICON_BULLET]50% for [ICON_PEACE] Morality[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]25% for -2 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_EVENT_NATIVES_CHOICE_3_HELP">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+1 [ICON_CITIZEN] Population[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+25 [ICON_PRODUCTION] Production.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]2 hostile units spawn near the city.[ENDCOLOR][NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]-5 [ICON_OCCUPIED] Morality[ENDCOLOR]</Text>
+		</Row>	
+	</Language_ko_KR>
+</GameData>

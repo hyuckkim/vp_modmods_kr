@@ -1,5 +1,3 @@
-print("This is the modded CityStateStatusHelper from EUI - CBP- CSD")
-------------------------------------------------------
 -- CityStateStatusHelper.lua
 -- Author: Anton Strenger
 --
@@ -38,7 +36,11 @@ local civ5_mode = type(MouseOverStrategicViewResource) == "function"
 
 local newLine = "[NEWLINE]"
 
-local iEmbassy = GameInfoTypes.IMPROVEMENT_EMBASSY
+--local iEmbassy = GameInfoTypes.IMPROVEMENT_EMBASSY
+local tIsEmbassyImprovement = {}
+for row in DB.Query("SELECT ID FROM Improvements WHERE IsEmbassy=1") do
+    tIsEmbassyImprovement[row.ID] = true
+end
 
 local eMinorTraitCultured = MinorCivTraitTypes.MINOR_CIV_TRAIT_CULTURED
 local eMinorTraitMilitaristic = MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC
@@ -471,12 +473,21 @@ function GetCityStateStatusToolTip(majorPlayerID, minorPlayerID, isFullInfo)
 			local sUniqueUnitTech = unitSQL.PrereqTech
 			local sUniqueUnitTechName = L(GameInfo.Technologies{Type=sUniqueUnitTech}().Description)
 			
-			table_insert(tips, L("TXT_KEY_CS_UU_QUICK_INFO", sUniqueUnitName, sUniqueUnitTechName) .. newLine)
+			table_insert(tips, L("TXT_KEY_UCS_UU_QUICK_INFO", sUniqueUnitName, sUniqueUnitTechName) .. newLine)
 		end
 		
 		-- Possible actions:	
 			-- Embassies
-			if minorPlayer:GetImprovementCount(iEmbassy) > 0 then
+			local bIsEmbassyCheck = false
+			
+			for k, v in pairs(tIsEmbassyImprovement) do
+				if minorPlayer:GetImprovementCount(k) > 0 then
+					bIsEmbassyCheck = true
+					break
+				end
+			end
+
+			if bIsEmbassyCheck --[[minorPlayer:GetImprovementCount(iEmbassy) > 0--]] then
 				table_insert(tips, L("TXT_KEY_CSTATE_CANNOT_EMBASSY"))
 			else
 				table_insert(tips, L("TXT_KEY_CSTATE_CAN_EMBASSY"))
@@ -489,7 +500,7 @@ function GetCityStateStatusToolTip(majorPlayerID, minorPlayerID, isFullInfo)
 		
 			-- Marriage (only Austria UA)
 			if minorPlayer:CanMajorMarry(majorPlayerID) then
-				table_insert(tips, "[ICON_RES_MARRIAGE]" .. L("TXT_KEY_UCS_HELPER_ACTION_MARRIAGE"))
+				table_insert(tips, "[ICON_MARRIAGE]" .. L("TXT_KEY_UCS_HELPER_ACTION_MARRIAGE"))
 			end
 		
 		-- Influence
@@ -700,19 +711,15 @@ function GetContenderInfoTT(majorPlayerID, minorPlayerID)
 	
 	if not pMinor then return "error" end
 
-	local sAnchorInfluence = ""
-	local iHighestInfluence = 0
+	local pMajorPlayer = Players[majorPlayerID]
+	local sAnchorList = ""
 	local influencetips = {}
-
+	
 	for ePlayer = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
 		if Players[ePlayer]:IsEverAlive() then
-			local iInfluence = pMinor:GetMinorCivFriendshipAnchorWithMajor(ePlayer)
+			local iAnchor = pMinor:GetMinorCivFriendshipAnchorWithMajor(ePlayer)
 			
-			if iInfluence ~= 0 then
-				influencetips["PlayerID" .. ePlayer] = iInfluence
-			end
-		else
-			influencetips["PlayerID" .. ePlayer] = 0
+			influencetips["PlayerID" .. ePlayer] = iAnchor
 		end
 	end
 
@@ -721,18 +728,24 @@ function GetContenderInfoTT(majorPlayerID, minorPlayerID)
 	table.sort(sortedinfluencetips, function(a, b) return a[2] < b[2] end)
 
 	for _, v in ipairs(sortedinfluencetips) do
-		if Teams[Players[majorPlayerID]:GetTeam()]:IsHasMet(Players[tonumber(v[1].sub(v[1], 9))]:GetTeam()) then
-			if Players[tonumber(v[1].sub(v[1], 9))]:IsAlive() then
-				sAnchorInfluence = "[NEWLINE][ICON_BULLET]" .. Players[tonumber(v[1].sub(v[1], 9))]:GetCivilizationShortDescription() .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE") .. sAnchorInfluence
+		local pOtherMajorPlayer = Players[tonumber(string.sub(v[1], 9))]
+		local sOtherMajorPlayerCivDesc = pOtherMajorPlayer:GetCivilizationShortDescription()
+		local sCurrentRow = sOtherMajorPlayerCivDesc .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE")
+		
+		if Teams[pMajorPlayer:GetTeam()]:IsHasMet(pOtherMajorPlayer:GetTeam()) then
+			if pOtherMajorPlayer:IsAlive() then
+				if pMajorPlayer == pOtherMajorPlayer then
+					sAnchorList = "[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]" .. sCurrentRow .. "[ENDCOLOR]" .. sAnchorList
+				else
+					sAnchorList = "[NEWLINE][ICON_BULLET]" .. sCurrentRow .. sAnchorList
+				end
 			else
-				sAnchorInfluence = "[NEWLINE][ICON_BULLET][COLOR_GREY]" .. Players[tonumber(v[1].sub(v[1], 9))]:GetCivilizationShortDescription() .. ": " .. v[2] .. " " .. Locale.Lookup("TXT_KEY_VP_RESTING_INFLUENCE") .. sAnchorInfluence
+				sAnchorList =  sAnchorList .. "[NEWLINE][ICON_BULLET][COLOR_GREY]" .. sCurrentRow .. "[ENDCOLOR]"
 			end
 		end
 	end
 
-	if sAnchorInfluence == "" then return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER2", pMinor:GetName()) end
-
-	return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER", pMinor:GetName()) .. sAnchorInfluence
+	return Locale.Lookup("TXT_KEY_POP_CSTATE_LABEL_CONTENDER_TT_HEADER", pMinor:GetName()) .. sAnchorList
 end
 
 local isMinorCivQuestForPlayer
@@ -789,12 +802,12 @@ function GetActiveQuestText(majorPlayerID, minorPlayerID)
 		-- CBP
 		-- Denied Quest Influence
 		if minorPlayer:IsQuestInfluenceDisabled(majorPlayerID) then
-			sIconTextOther = sIconTextOther .. "[ICON_VP_NOINFLUENCE]"
+			sIconTextOther = sIconTextOther .. "[ICON_NOINFLUENCE]"
 		end
 			
 		-- Married
 		if bnw_mode and minorPlayer:IsMarried(majorPlayerID) then
-			sIconTextOther = sIconTextOther .. "[ICON_RES_MARRIAGE]"
+			sIconTextOther = sIconTextOther .. "[ICON_MARRIAGE]"
 		end
 			
 		-- Coup
@@ -1017,12 +1030,12 @@ function GetActiveQuestToolTip(majorPlayerID, minorPlayerID)
 		-- CBP
 		-- Denied Quest Influence
 		if minorPlayer:IsQuestInfluenceDisabled(majorPlayerID) then
-			table_insert(tTooltipOther,"[ICON_VP_NOINFLUENCE] " .. L("TXT_KEY_CITY_STATE_DISABLED_QUEST_INFLUENCE_YES_TT", minorPlayer:GetName()))
+			table_insert(tTooltipOther,"[ICON_NOINFLUENCE] " .. L("TXT_KEY_CITY_STATE_DISABLED_QUEST_INFLUENCE_YES_TT", minorPlayer:GetName()))
 		end
 
 		-- Married
 		if minorPlayer:IsMarried(majorPlayerID) then
-			table_insert(tTooltipOther,"[ICON_RES_MARRIAGE] " .. L("TXT_KEY_DIPLO_MAJOR_CIV_DIPLO_STATE_MARRIED_TT"))
+			table_insert(tTooltipOther,"[ICON_MARRIAGE] " .. L("TXT_KEY_DIPLO_MAJOR_CIV_DIPLO_STATE_MARRIED_TT"))
 		end
 
 		-- Coup

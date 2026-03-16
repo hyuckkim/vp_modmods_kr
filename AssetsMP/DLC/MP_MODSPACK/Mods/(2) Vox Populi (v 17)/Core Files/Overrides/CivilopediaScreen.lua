@@ -5,12 +5,25 @@ print("This is the modded CivilopediaScreen.lua from 'CBP'")
 include( "InstanceManager" );
 include( "IconSupport" );
 --CBP
+include("InfoTooltipInclude");
 include( "TechHelpInclude" );
 --END
 
 -- table.sort method for sorting alphabetically.
+-- Civilization-specific entries (starting with "[COLOR_POSITIVE_TEXT]") are sorted after regular entries.
 function Alphabetically(a, b)
-	return Locale.Compare(a.entryName, b.entryName) == -1;
+	local aStartsWithColorText = string.sub(a.entryName, 1, 1) == "[";
+	local bStartsWithColorText = string.sub(b.entryName, 1, 1) == "[";
+
+	-- If one starts with "[" and the other doesn't, sort the one that doesn't first
+	if aStartsWithColorText and not bStartsWithColorText then
+		return false;
+	elseif not aStartsWithColorText and bStartsWithColorText then
+		return true;
+	else
+		-- Both are the same type (both with or without color text), sort alphabetically
+		return Locale.Compare(a.entryName, b.entryName) == -1;
+	end
 end
 
 local portraitSize = 256;
@@ -136,6 +149,7 @@ local g_CorpFranchiseManager = InstanceManager:new( "CorporationBuildingInstance
 --END
 local g_LocalResourcesManager = InstanceManager:new( "LocalResourceInstance", "LocalResourceButton", Controls.LocalResourcesInnerFrame );
 local g_RequiredPromotionsManager = InstanceManager:new( "RequiredPromotionInstance", "RequiredPromotionButton", Controls.RequiredPromotionsInnerFrame );
+local g_LeadsToPromotionsManager = InstanceManager:new( "LeadsToPromotionInstance", "LeadsToPromotionButton", Controls.LeadsToPromotionsInnerFrame );
 local g_RequiredPoliciesManager = InstanceManager:new( "RequiredPolicyInstance", "RequiredPolicyButton", Controls.RequiredPoliciesInnerFrame );
 local g_FreeFormTextManager = InstanceManager:new( "FreeFormTextInstance", "FFTextFrame", Controls.FFTextStack );
 local g_BBTextManager = InstanceManager:new( "BBTextInstance", "BBTextFrame", Controls.BBTextStack );
@@ -143,6 +157,7 @@ local g_LeadersManager = InstanceManager:new( "LeaderInstance", "LeaderButton", 
 local g_UniqueUnitsManager = InstanceManager:new( "UniqueUnitInstance", "UniqueUnitButton", Controls.UniqueUnitsInnerFrame );
 local g_UniqueBuildingsManager = InstanceManager:new( "UniqueBuildingInstance", "UniqueBuildingButton", Controls.UniqueBuildingsInnerFrame );
 local g_UniqueImprovementsManager = InstanceManager:new( "UniqueImprovementInstance", "UniqueImprovementButton", Controls.UniqueImprovementsInnerFrame );
+local g_UniqueProjectsManager = InstanceManager:new( "UniqueProjectInstance", "UniqueProjectButton", Controls.UniqueProjectsInnerFrame );
 local g_StartAlongRegionManager = InstanceManager:new( "StartAlongRegionInstance", "StartAlongRegionButton", Controls.StartAlongRegionInnerFrame );
 local g_StartPriorityRegionManager = InstanceManager:new( "StartPriorityRegionInstance", "StartPriorityRegionButton", Controls.StartPriorityRegionInnerFrame );
 local g_StartAvoidRegionManager = InstanceManager:new( "StartAvoidRegionInstance", "StartAvoidRegionButton", Controls.StartAvoidRegionInnerFrame );
@@ -506,6 +521,25 @@ CivilopediaCategory[CategoryUnits].PopulateList = function()
 	function AddArticle(categoryID, entryID, unit)
 		local article = {};
 		local name = Locale.ConvertTextKey( unit.Description )
+
+		-- Check if this is a civilization-specific unit
+		local unitInfo = GameInfo.Units[unit.ID];
+		if unitInfo then
+			local civNames = {};
+			for override in GameInfo.Civilization_UnitClassOverrides("UnitType = '" .. unitInfo.Type .. "'") do
+				local civ = GameInfo.Civilizations[override.CivilizationType];
+				if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+					table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+				end
+			end
+
+			-- If it's civilization-specific, prepend the civilization name(s)
+			if #civNames > 0 then
+				local civNameStr = table.concat(civNames, ", ");
+				name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+			end
+		end
+
 		article.entryName = name;
 		article.entryID = unit.ID;
 		article.entryCategory = CategoryUnits;
@@ -792,6 +826,25 @@ CivilopediaCategory[CategoryBuildings].PopulateList = function()
 	function AddArticle(categoryID, entryID, building)
 		local article = {};
 		local name = Locale.ConvertTextKey( building.Description )
+
+		-- Check if this is a civilization-specific building
+		local buildingInfo = GameInfo.Buildings[building.ID];
+		if buildingInfo then
+			local civNames = {};
+			for override in GameInfo.Civilization_BuildingClassOverrides("BuildingType = '" .. buildingInfo.Type .. "'") do
+				local civ = GameInfo.Civilizations[override.CivilizationType];
+				if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+					table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+				end
+			end
+
+			-- If it's civilization-specific, prepend the civilization name(s)
+			if #civNames > 0 then
+				local civNameStr = table.concat(civNames, ", ");
+				name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+			end
+		end
+
 		article.entryName = name;
 		article.entryID = building.ID;
 		article.entryCategory = CategoryBuildings;
@@ -895,6 +948,22 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 		if thisBuildingClass.MaxGlobalInstances > 0 and not building.IsCorporation then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
+
+			-- Check if this is a civilization-specific wonder
+			local civNames = {};
+			for override in GameInfo.Civilization_BuildingClassOverrides("BuildingType = '" .. building.Type .. "'") do
+				local civ = GameInfo.Civilizations[override.CivilizationType];
+				if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+					table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+				end
+			end
+
+			-- If it's civilization-specific, prepend the civilization name(s)
+			if #civNames > 0 then
+				local civNameStr = table.concat(civNames, ", ");
+				name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+			end
+
 			article.entryName = name;
 			article.entryID = building.ID;
 			article.entryCategory = CategoryWonders;
@@ -926,6 +995,22 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 		if thisBuildingClass.MaxPlayerInstances == 1 then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
+
+			-- Check if this is a civilization-specific national wonder
+			local civNames = {};
+			for override in GameInfo.Civilization_BuildingClassOverrides("BuildingType = '" .. building.Type .. "'") do
+				local civ = GameInfo.Civilizations[override.CivilizationType];
+				if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+					table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+				end
+			end
+
+			-- If it's civilization-specific, prepend the civilization name(s)
+			if #civNames > 0 then
+				local civNameStr = table.concat(civNames, ", ");
+				name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+			end
+
 			article.entryName = name;
 			article.entryID = building.ID;
 			article.entryCategory = CategoryWonders;
@@ -957,7 +1042,11 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 		if(bIgnore ~= true) then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
-			article.entryName = name;
+			if (building.CivilizationType ~= nil and GameInfo.Civilizations[building.CivilizationType] ~= nil) then
+				article.entryName = "[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[building.CivilizationType].Adjective) .. ")[ENDCOLOR] " .. name;
+			else
+				article.entryName = name;
+			end
 			article.entryID = building.ID + 1000;
 			article.entryCategory = CategoryWonders;
 			article.tooltipTextureOffset, article.tooltipTexture = IconLookup( building.PortraitIndex, buttonSize, building.IconAtlas );
@@ -970,7 +1059,7 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 			tableid = tableid + 1;
 
 			-- index by various keys
-			searchableList[Locale.ToLower(name)] = article;
+			searchableList[Locale.ToLower(article.entryName)] = article;
 			searchableTextKeyList[building.Description] = article;
 			categorizedList[(CategoryWonders * absurdlyLargeNumTopicsInCategory) + building.ID + 1000] = article;
 		end
@@ -989,6 +1078,22 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 		if thisBuildingClass.MaxGlobalInstances > 0 and building.IsCorporation then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
+
+			-- Check if this is a civilization-specific corporation
+			local civNames = {};
+			for override in GameInfo.Civilization_BuildingClassOverrides("BuildingType = '" .. building.Type .. "'") do
+				local civ = GameInfo.Civilizations[override.CivilizationType];
+				if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+					table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+				end
+			end
+
+			-- If it's civilization-specific, prepend the civilization name(s)
+			if #civNames > 0 then
+				local civNameStr = table.concat(civNames, ", ");
+				name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+			end
+
 			article.entryName = name;
 			article.entryID = building.ID;
 			article.entryCategory = CategoryWonders;
@@ -1031,7 +1136,7 @@ CivilopediaCategory[CategoryPolicies].PopulateList = function()
 			local article = {};
 			local name = Locale.ConvertTextKey( policy.Description )
 			if policy.Level and policy.Level > 0 then
-				article.entryName = "([COLOR_POSITIVE_TEXT]".. policy.Level .. "[ENDCOLOR]) " .. name;
+				article.entryName = "[COLOR_POSITIVE_TEXT](".. policy.Level .. ")[ENDCOLOR] " .. name;
 			else
 				article.entryName = name;
 			end
@@ -1123,6 +1228,23 @@ CivilopediaCategory[CategoryPeople].PopulateList = function()
 		if unit.PrereqTech == nil and unit.Special ~= nil then
 			local article = {};
 			local name = Locale.ConvertTextKey( unit.Description )
+			-- Check if this is a civilization-specific unit
+			local unitInfo = GameInfo.Units[unit.ID];
+			if unitInfo then
+				local civNames = {};
+				for override in GameInfo.Civilization_UnitClassOverrides("UnitType = '" .. unitInfo.Type .. "'") do
+					local civ = GameInfo.Civilizations[override.CivilizationType];
+					if civ and civ.Type ~= "CIVILIZATION_MINOR" then
+						table.insert(civNames, Locale.ConvertTextKey(civ.Adjective));
+					end
+				end
+
+				-- If it's civilization-specific, prepend the civilization name(s)
+				if #civNames > 0 then
+					local civNameStr = table.concat(civNames, ", ");
+					name = "[COLOR_POSITIVE_TEXT](" .. civNameStr .. ")[ENDCOLOR] " .. name;
+				end
+			end
 			article.entryName = name;
 			article.entryID = unit.ID + 1000;
 			article.entryCategory = CategoryPeople;
@@ -1395,7 +1517,11 @@ CivilopediaCategory[CategoryImprovements].PopulateList = function()
 			-- add an article to the list (localized name, unit tag, etc.)
 			local article = {};
 			local name = Locale.ConvertTextKey( row.Description );
-			article.entryName = name;
+			if (row.CivilizationType ~= nil and GameInfo.Civilizations[row.CivilizationType] ~= nil) then
+				article.entryName = "[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[row.CivilizationType].Adjective) .. ")[ENDCOLOR] " .. name;
+			else
+				article.entryName = name;
+			end
 			article.entryID = row.ID;
 			article.entryCategory = CategoryImprovements;
 			article.tooltipTextureOffset, article.tooltipTexture = IconLookup( row.PortraitIndex, buttonSize, row.IconAtlas );
@@ -1489,7 +1615,7 @@ CivilopediaCategory[CategoryBeliefs].PopulateList = function()
  			local article = {};
  			local name = Locale.ConvertTextKey( belief.ShortDescription )
 			if (belief.CivilizationType ~= nil and GameInfo.Civilizations[belief.CivilizationType] ~= nil) then
-				article.entryName = "([COLOR_POSITIVE_TEXT]" .. Locale.ConvertTextKey(GameInfo.Civilizations[belief.CivilizationType].Adjective) .. "[ENDCOLOR]) " .. name;
+				article.entryName = "[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[belief.CivilizationType].Adjective) .. ")[ENDCOLOR] " .. name;
 			else
 				article.entryName = name;
 			end
@@ -2105,7 +2231,7 @@ CivilopediaCategory[CategoryCorporations].DisplayHomePage = function()
 	Controls.ArticleID:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_CORPORATIONS_PAGE_LABEL" ));
 
 	local portraitIndex = 6;
-	local portraitAtlas = "CORP_ATLAS";
+	local portraitAtlas = "CORPORATION_ATLAS_VP";
 
 	for row in DB.Query("SELECT PortraitIndex, IconAtlas from Corporations ORDER By Random() LIMIT 1") do
 		portraitIndex = row.PortraitIndex;
@@ -2154,7 +2280,61 @@ end
 function UpdateNarrowTextBlock( localizedString, label, innerFrame, outerFrame )
 	local contentSize;
 	local frameSize = {};
-	label:SetText( localizedString );
+	
+    -- Handle wrapping by checking width after each word
+    local words = {};
+    local currentLine = "";
+    local wrappedText = "";
+	local offset = 10;
+  
+    -- Split the input into words, preserving [NEWLINE] and icon strings
+    for word in string.gmatch(localizedString, "[^%s]+") do
+      table.insert(words, word);
+    end
+  
+    for i, word in ipairs(words) do
+      -- Handle explicit newlines
+      if word == "[NEWLINE]" then
+        if wrappedText ~= "" then
+          wrappedText = wrappedText .. "[NEWLINE]";
+        end
+        currentLine = "";
+      else
+        -- Test if adding this word exceeds width
+        local testLine;
+        if currentLine == "" then
+          testLine = word;
+        else
+          testLine = currentLine .. " " .. word;
+        end
+  
+        label:SetText( testLine );
+        contentSize = label:GetSize();
+  
+        if contentSize.x > narrowInnerFrameWidth - offset and currentLine ~= "" then
+          -- Word doesn't fit, start new line
+          if wrappedText ~= "" then
+            wrappedText = wrappedText .. "[NEWLINE]";
+          end
+          wrappedText = wrappedText .. currentLine;
+          currentLine = word;
+        else
+          -- Word fits, add to current line
+          currentLine = testLine;
+        end
+      end
+    end
+  
+    -- Add remaining text
+    if currentLine ~= "" then
+      if wrappedText ~= "" then
+        wrappedText = wrappedText .. "[NEWLINE]";
+      end
+      wrappedText = wrappedText .. currentLine;
+    end
+  
+    -- Set final wrapped text and measure
+    label:SetText( wrappedText );
 	contentSize = label:GetSize();
 	frameSize.x = narrowInnerFrameWidth;
 	frameSize.y = contentSize.y + textPaddingFromInnerFrame;
@@ -2353,12 +2533,18 @@ CivilopediaCategory[CategoryGameConcepts].SelectArticle = function( conceptID, s
 	ClearArticle();
 
 	if shouldAddToList == addToList then
+		local article = categorizedList[(CategoryGameConcepts * absurdlyLargeNumTopicsInCategory) + conceptID];
+		if article then
 		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryGameConcepts * absurdlyLargeNumTopicsInCategory) + conceptID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: GameConcepts Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryGameConcepts * absurdlyLargeNumTopicsInCategory) + conceptID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if conceptID ~= -1 then
@@ -2410,12 +2596,18 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryTech * absurdlyLargeNumTopicsInCategory) + techID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryTech * absurdlyLargeNumTopicsInCategory) + techID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Tech Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryTech * absurdlyLargeNumTopicsInCategory) + techID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if techID ~= -1 then
@@ -2506,7 +2698,15 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 						textureSheet = defaultErrorTextureSheet;
 						textureOffset = nullOffset;
 					end
-					UpdateSmallButton( buttonAdded, thisUnitInstance.UnlockedUnitImage, thisUnitInstance.UnlockedUnitButton, textureSheet, textureOffset, CategoryUnits, Locale.ConvertTextKey( thisUnitInfo.Description ), thisUnitInfo.ID );
+					-- Check if unlocked unit is a Great Person
+					local unlockedCategory = CategoryUnits;
+					local unlockedEntryID = thisUnitInfo.ID;
+					if thisUnitInfo.PrereqTech == nil and thisUnitInfo.Special ~= nil then
+						-- This is a Great Person, use CategoryPeople with offset
+						unlockedCategory = CategoryPeople;
+						unlockedEntryID = thisUnitInfo.ID + 1000;
+					end
+					UpdateSmallButton( buttonAdded, thisUnitInstance.UnlockedUnitImage, thisUnitInstance.UnlockedUnitButton, textureSheet, textureOffset, unlockedCategory, Locale.ConvertTextKey( thisUnitInfo.Description ), unlockedEntryID );
 					buttonAdded = buttonAdded + 1;
 				end
 			end
@@ -2693,12 +2893,18 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unitID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unitID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Unit Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unitID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if unitID ~= -1 then
@@ -2906,7 +3112,15 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 							textureSheet = defaultErrorTextureSheet;
 							textureOffset = nullOffset;
 						end
-						UpdateSmallButton( buttonAdded, thisUpgradeInstance.UpgradeImage, thisUpgradeInstance.UpgradeButton, textureSheet, textureOffset, CategoryUnits, Locale.ConvertTextKey( obs.Description ), obs.ID );
+						-- Check if upgrade unit is a Great Person
+						local upgradeCategory = CategoryUnits;
+						local upgradeEntryID = obs.ID;
+						if obs.PrereqTech == nil and obs.Special ~= nil then
+							-- This is a Great Person, use CategoryPeople with offset
+							upgradeCategory = CategoryPeople;
+							upgradeEntryID = obs.ID + 1000;
+						end
+						UpdateSmallButton( buttonAdded, thisUpgradeInstance.UpgradeImage, thisUpgradeInstance.UpgradeButton, textureSheet, textureOffset, upgradeCategory, Locale.ConvertTextKey( obs.Description ), upgradeEntryID );
 						buttonAdded = buttonAdded + 1;
 					end
 				end
@@ -2923,7 +3137,15 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 							textureSheet = defaultErrorTextureSheet;
 							textureOffset = nullOffset;
 						end
-						UpdateSmallButton( buttonAdded, thisUpgradeInstance.UpgradeImage, thisUpgradeInstance.UpgradeButton, textureSheet, textureOffset, CategoryUnits, Locale.ConvertTextKey( upgradeUnit.Description ), upgradeUnit.ID );
+						-- Check if upgrade unit is a Great Person
+						local upgradeCategory = CategoryUnits;
+						local upgradeEntryID = upgradeUnit.ID;
+						if upgradeUnit.PrereqTech == nil and upgradeUnit.Special ~= nil then
+							-- This is a Great Person, use CategoryPeople with offset
+							upgradeCategory = CategoryPeople;
+							upgradeEntryID = upgradeUnit.ID + 1000;
+						end
+						UpdateSmallButton( buttonAdded, thisUpgradeInstance.UpgradeImage, thisUpgradeInstance.UpgradeButton, textureSheet, textureOffset, upgradeCategory, Locale.ConvertTextKey( upgradeUnit.Description ), upgradeEntryID );
 						buttonAdded = buttonAdded + 1;
 					end
 				end
@@ -2945,7 +3167,7 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 		g_ReplacesManager:ResetInstances();
 		buttonAdded = 0;
 		for unitClassType, _ in pairs(replacesUnitClass) do
-			for replacedUnit in DB.Query("SELECT u.ID, u.Description, u.PortraitIndex, u.IconAtlas from Units as u inner join UnitClasses as uc on u.Type = uc.DefaultUnit where uc.Type = ?", unitClassType) do
+			for replacedUnit in DB.Query("SELECT u.ID, u.Description, u.PortraitIndex, u.IconAtlas, u.PrereqTech, u.Special from Units as u inner join UnitClasses as uc on u.Type = uc.DefaultUnit where uc.Type = ?", unitClassType) do 
 				local thisUnitInstance = g_ReplacesManager:GetInstance();
 				if thisUnitInstance then
 					local textureOffset, textureSheet = IconLookup( replacedUnit.PortraitIndex, buttonSize, replacedUnit.IconAtlas );
@@ -2953,7 +3175,15 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 						textureSheet = defaultErrorTextureSheet;
 						textureOffset = nullOffset;
 					end
-					UpdateSmallButton( buttonAdded, thisUnitInstance.ReplaceImage, thisUnitInstance.ReplaceButton, textureSheet, textureOffset, CategoryUnits, Locale.ConvertTextKey( replacedUnit.Description ), replacedUnit.ID );
+					-- Check if replaced unit is a Great Person
+					local replacedCategory = CategoryUnits;
+					local replacedEntryID = replacedUnit.ID;
+					if replacedUnit.PrereqTech == nil and replacedUnit.Special ~= nil then
+						-- This is a Great Person, use CategoryPeople with offset
+						replacedCategory = CategoryPeople;
+						replacedEntryID = replacedUnit.ID + 1000;
+					end
+					UpdateSmallButton( buttonAdded, thisUnitInstance.ReplaceImage, thisUnitInstance.ReplaceButton, textureSheet, textureOffset, replacedCategory, Locale.ConvertTextKey( replacedUnit.Description ), replacedEntryID );
 					buttonAdded = buttonAdded + 1;
 				end
 			end
@@ -2981,9 +3211,7 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 		UpdateButtonFrame( buttonAdded, Controls.CivilizationsInnerFrame, Controls.CivilizationsFrame );
 
 		-- update the game info
-		if thisUnit.Help then
-			UpdateTextBlock( Locale.ConvertTextKey( thisUnit.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
-		end
+		UpdateTextBlock(GetHelpTextForUnit(unitID, true, nil, true, true), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame);
 
 		-- update the strategy info
 		if thisUnit.Strategy then
@@ -2998,142 +3226,143 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 		-- update the related images
 		Controls.RelatedImagesFrame:SetHide( true );
 
-		-- Infixo Extended info
-		local sText = "[COLOR_CYAN]Abilities[ENDCOLOR] of this unit:"; -- change to TXT_KEY_ later
-		local function AnalyzeUnit(...)
-			sText = sText .. AnalyzeObjectField(thisUnit, ...);
+		-- Infixo Extended info (only shown in debug mode)
+		if Game and Game.IsDebugMode() then
+			local sText = "[COLOR_CYAN]Abilities[ENDCOLOR] of this unit:"; -- change to TXT_KEY_ later
+			local function AnalyzeUnit(...)
+				sText = sText .. AnalyzeObjectField(thisUnit, ...);
+			end
+			AnalyzeUnit("Domain", "Domains", "Domain");
+			--AnalyzeUnit("MinAreaSize");
+			if thisUnit.MinAreaSize > 0 and thisUnit.MinAreaSize < 10 then sText = sText.."[NEWLINE][ICON_BULLET]Moves on [COLOR_CYAN]Sea[ENDCOLOR] and [COLOR_CYAN]Lake[ENDCOLOR]"; end
+			if thisUnit.MinAreaSize >= 10 then sText = sText.."[NEWLINE][ICON_BULLET]Moves on [COLOR_CYAN]Sea[ENDCOLOR] only"; end
+			AnalyzeUnit("CombatClass", "UnitCombatInfos", "Class");
+			--AnalyzeUnit("IsMounted");
+			if thisUnit.IsMounted then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_CYAN]Mounted[ENDCOLOR] unit"; end
+			AnalyzeUnit("Special", "SpecialUnits", "Special unit");
+			AnalyzeUnit("GoodyHutUpgradeUnitClass", "UnitClasses", "Upgraded by Ruins to");
+			AnalyzeUnit("PolicyType", "Policies", "Requires policy");
+			AnalyzeUnit("ProjectPrereq", "Projects", "Requires project");
+			AnalyzeUnit("SpaceshipProject", "Projects", "Produced by spaceship project");
+			AnalyzeUnit("ResourceType", "Resources", "Requires");
+			AnalyzeUnit("BeliefRequired", "Beliefs", "Requires belief");
+			AnalyzeUnit("Trade");
+			--AnalyzeUnit("DefaultUnitAI", "UnitAIInfos", "AI"); -- AI stuff
+			AnalyzeUnit("BaseSightRange", "[ICON_VIEW_CITY]");
+			AnalyzeUnit("PurchaseOnly");
+			AnalyzeUnit("MoveAfterPurchase");
+			--AnalyzeUnit("RequiresFaithPurchaseEnabled"); -- internal
+			AnalyzeUnit("Immobile");
+			AnalyzeUnit("Capture", "UnitClasses", "Captured as");
+			--AnalyzeUnit("CivilianAttackPriority"); -- AI stuff
+			AnalyzeUnit("Food");
+			AnalyzeUnit("NoBadGoodies");
+			AnalyzeUnit("RivalTerritory");
+			AnalyzeUnit("MilitarySupport");
+			AnalyzeUnit("MilitaryProduction");
+			AnalyzeUnit("Pillage");
+			AnalyzeUnit("PillagePrereqTech");
+			AnalyzeUnit("Found");
+			AnalyzeUnit("FoundAbroad");
+			AnalyzeUnit("CultureBombRadius");
+			AnalyzeUnit("GoldenAgeTurns");
+			AnalyzeUnit("FreePolicies");
+			AnalyzeUnit("OneShotTourism");
+			AnalyzeUnit("OneShotTourismPercentOthers");
+			AnalyzeUnit("IgnoreBuildingDefense");
+			AnalyzeUnit("PrereqResources");
+			AnalyzeUnit("Suicide");
+			AnalyzeUnit("CaptureWhileEmbarked");
+			AnalyzeUnit("HurryCostModifier");
+			AnalyzeUnit("AirInterceptRange", "[ICON_RANGE_STRENGTH]");
+			AnalyzeUnit("AirUnitCap", "[ICON_AIRSTRIKE_DEFENSE]");
+			AnalyzeUnit("NukeDamageLevel");
+			AnalyzeUnit("WorkRate");
+			AnalyzeUnit("NumFreeTechs", "");
+			AnalyzeUnit("BaseBeakersTurnsToCount", "");
+			AnalyzeUnit("BaseCultureTurnsToCount", "");
+			AnalyzeUnit("BaseHurry");
+			AnalyzeUnit("HurryMultiplier");
+			AnalyzeUnit("BaseGold", "");
+			AnalyzeUnit("NumGoldPerEra");
+			AnalyzeUnit("SpreadReligion");
+			AnalyzeUnit("RemoveHeresy");
+			AnalyzeUnit("ReligionSpreads", "[ICON_MISSIONARY]");
+			AnalyzeUnit("ReligiousStrength", "[ICON_PEACE]");
+			AnalyzeUnit("FoundReligion");
+			AnalyzeUnit("RequiresEnhancedReligion");
+			AnalyzeUnit("ProhibitsSpread");
+			AnalyzeUnit("CanBuyCityState");
+			AnalyzeUnit("RangeAttackOnlyInDomain");
+			AnalyzeUnit("RangeAttackIgnoreLOS");
+			AnalyzeUnit("NumExoticGoods", "");
+			AnalyzeUnit("DomainCargo", "Domains", "Cargo domain");
+			AnalyzeUnit("SpecialCargo", "SpecialUnits", "Special cargo");
+			AnalyzeUnit("SpecialUnitCargoLoad", "SpecialUnits", "Special cargo load");
+			AnalyzeUnit("Conscription", "");
+			AnalyzeUnit("ExtraMaintenanceCost", "[ICON_GOLD]");
+			--AnalyzeUnit("NoMaintenance");
+			if thisUnit.NoMaintenance then sText = sText.."[NEWLINE][ICON_BULLET]Maintenance [COLOR_POSITIVE_TEXT]Free[ENDCOLOR]"; end
+			AnalyzeUnit("Unhappiness");
+			--AnalyzeUnit("UnitArtInfo");
+			--AnalyzeUnit("UnitArtInfoCulturalVariation");
+			--AnalyzeUnit("UnitArtInfoEraVariation");
+			AnalyzeUnit("LeaderPromotion", "UnitPromotions", "Leader promotion");
+			AnalyzeUnit("LeaderExperience");
+			AnalyzeUnit("DontShowYields");
+			--AnalyzeUnit("ShowInPedia");
+			AnalyzeUnit("MoveRate"); -- MovementRates doesn't have Description
+			AnalyzeUnit("FoundMid");
+			AnalyzeUnit("FoundLate");
+			AnalyzeUnit("CityAttackOnly");
+			AnalyzeUnit("CulExpOnDisbandUpgrade");
+			AnalyzeUnit("PuppetPurchaseOverride");
+			AnalyzeUnit("GoodyModifier");
+			AnalyzeUnit("SupplyCapBoost");
+			AnalyzeUnit("NumFreeLux", "");
+			AnalyzeUnit("GPExtra");
+			AnalyzeUnit("MinorCivGift");
+			AnalyzeUnit("NoMinorCivGift");
+			AnalyzeUnit("PurchaseCooldown", "");
+			AnalyzeUnit("GlobalFaithPurchaseCooldown");
+			--AnalyzeUnit("BaseLandAirDefense");
+			AnalyzeUnit("FreeUpgrade");
+			AnalyzeUnit("UnitEraUpgrade");
+			AnalyzeUnit("WarOnly");
+			AnalyzeUnit("WLTKDFromBirth");
+			AnalyzeUnit("GoldenAgeFromBirth");
+			AnalyzeUnit("CultureBoost");
+			AnalyzeUnit("ExtraAttackHealthOnKill");
+			AnalyzeUnit("HighSeaRaider");
+			AnalyzeUnit("NumInfPerEra");
+			AnalyzeUnit("SendCanMoveIntoEvent");
+			AnalyzeUnit("CannotEmbark");
+			AnalyzeUnit("NoMinorGifts");
+			AnalyzeUnit("MoveAfterUpgrade");
+			AnalyzeUnit("PromotionClass", "UnitCombatInfos", "Promotion class");
+			AnalyzeUnit("CanRepairFleet");
+			AnalyzeUnit("CanChangePort");
+			AnalyzeUnit("NumberStackingUnits");
+			AnalyzeUnit("StackCombat");
+			AnalyzeUnit("FriendlyLandsPromotion");
+			AnalyzeUnit("NumberOfCultureBombs");
+			--AnalyzeUnit("MaxHitPoints"); -- internal
+			AnalyzeUnit("CargoCombat");
+			--AnalyzeUnit("ObsoleteTech");
+			if thisUnit.ObsoleteTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Obsoletes with [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisUnit.ObsoleteTech].Description).."[ENDCOLOR]"; end
+			--------------------
+			local bShow = false;
+			local sql = [[
+				SELECT BuildingClasses.Description
+				FROM Unit_BuildingClassPurchaseRequireds INNER JOIN BuildingClasses ON Unit_BuildingClassPurchaseRequireds.BuildingClassType = BuildingClasses.Type
+				WHERE Unit_BuildingClassPurchaseRequireds.UnitType = ?]];
+			for row in DB.Query(sql, thisUnit.Type) do
+				if not bShow then sText = sText.."[NEWLINE][COLOR_CYAN]Buildings[ENDCOLOR] required to purchase this unit:"; bShow = true; end -- change to TXT_KEY_ later
+				sText = sText.."[NEWLINE][ICON_BULLET]"..Locale.Lookup(row.Description);
+			end
+			UpdateTextBlock( sText, Controls.ExtendedLabel,  Controls.ExtendedInnerFrame,  Controls.ExtendedFrame );
+			-- end Infixo
 		end
-		AnalyzeUnit("Domain", "Domains", "Domain");
-		--AnalyzeUnit("MinAreaSize");
-		if thisUnit.MinAreaSize > 0 and thisUnit.MinAreaSize < 10 then sText = sText.."[NEWLINE][ICON_BULLET]Moves on [COLOR_CYAN]Sea[ENDCOLOR] and [COLOR_CYAN]Lake[ENDCOLOR]"; end
-		if thisUnit.MinAreaSize >= 10 then sText = sText.."[NEWLINE][ICON_BULLET]Moves on [COLOR_CYAN]Sea[ENDCOLOR] only"; end
-		AnalyzeUnit("CombatClass", "UnitCombatInfos", "Class");
-		--AnalyzeUnit("IsMounted");
-		if thisUnit.IsMounted then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_CYAN]Mounted[ENDCOLOR] unit"; end
-		AnalyzeUnit("Special", "SpecialUnits", "Special unit");
-		AnalyzeUnit("GoodyHutUpgradeUnitClass", "UnitClasses", "Upgraded by Ruins to");
-		AnalyzeUnit("PolicyType", "Policies", "Requires policy");
-		AnalyzeUnit("ProjectPrereq", "Projects", "Requires project");
-		AnalyzeUnit("SpaceshipProject", "Projects", "Produced by spaceship project");
-		AnalyzeUnit("ResourceType", "Resources", "Requires");
-		AnalyzeUnit("BeliefRequired", "Beliefs", "Requires belief");
-		AnalyzeUnit("Trade");
-		--AnalyzeUnit("DefaultUnitAI", "UnitAIInfos", "AI"); -- AI stuff
-		AnalyzeUnit("BaseSightRange", "[ICON_VIEW_CITY]");
-		AnalyzeUnit("PurchaseOnly");
-		AnalyzeUnit("MoveAfterPurchase");
-		--AnalyzeUnit("RequiresFaithPurchaseEnabled"); -- internal
-		AnalyzeUnit("Immobile");
-		AnalyzeUnit("Capture", "UnitClasses", "Captured as");
-		--AnalyzeUnit("CivilianAttackPriority"); -- AI stuff
-		AnalyzeUnit("Food");
-		AnalyzeUnit("NoBadGoodies");
-		AnalyzeUnit("RivalTerritory");
-		AnalyzeUnit("MilitarySupport");
-		AnalyzeUnit("MilitaryProduction");
-		AnalyzeUnit("Pillage");
-		AnalyzeUnit("PillagePrereqTech");
-		AnalyzeUnit("Found");
-		AnalyzeUnit("FoundAbroad");
-		AnalyzeUnit("CultureBombRadius");
-		AnalyzeUnit("GoldenAgeTurns");
-		AnalyzeUnit("FreePolicies");
-		AnalyzeUnit("OneShotTourism");
-		AnalyzeUnit("OneShotTourismPercentOthers");
-		AnalyzeUnit("IgnoreBuildingDefense");
-		AnalyzeUnit("PrereqResources");
-		AnalyzeUnit("Suicide");
-		AnalyzeUnit("CaptureWhileEmbarked");
-		AnalyzeUnit("HurryCostModifier");
-		AnalyzeUnit("AirInterceptRange", "[ICON_RANGE_STRENGTH]");
-		AnalyzeUnit("AirUnitCap", "[ICON_AIRSTRIKE_DEFENSE]");
-		AnalyzeUnit("NukeDamageLevel");
-		AnalyzeUnit("WorkRate");
-		AnalyzeUnit("NumFreeTechs", "");
-		AnalyzeUnit("BaseBeakersTurnsToCount", "");
-		AnalyzeUnit("BaseCultureTurnsToCount", "");
-		AnalyzeUnit("RushBuilding");
-		AnalyzeUnit("BaseHurry");
-		AnalyzeUnit("HurryMultiplier");
-		AnalyzeUnit("BaseGold", "");
-		AnalyzeUnit("NumGoldPerEra");
-		AnalyzeUnit("SpreadReligion");
-		AnalyzeUnit("RemoveHeresy");
-		AnalyzeUnit("ReligionSpreads", "[ICON_MISSIONARY]");
-		AnalyzeUnit("ReligiousStrength", "[ICON_PEACE]");
-		AnalyzeUnit("FoundReligion");
-		AnalyzeUnit("RequiresEnhancedReligion");
-		AnalyzeUnit("ProhibitsSpread");
-		AnalyzeUnit("CanBuyCityState");
-		AnalyzeUnit("RangeAttackOnlyInDomain");
-		AnalyzeUnit("RangeAttackIgnoreLOS");
-		AnalyzeUnit("NumExoticGoods", "");
-		AnalyzeUnit("DomainCargo", "Domains", "Cargo domain");
-		AnalyzeUnit("SpecialCargo", "SpecialUnits", "Special cargo");
-		AnalyzeUnit("SpecialUnitCargoLoad", "SpecialUnits", "Special cargo load");
-		AnalyzeUnit("Conscription", "");
-		AnalyzeUnit("ExtraMaintenanceCost", "[ICON_GOLD]");
-		--AnalyzeUnit("NoMaintenance");
-		if thisUnit.NoMaintenance then sText = sText.."[NEWLINE][ICON_BULLET]Maintenance [COLOR_POSITIVE_TEXT]Free[ENDCOLOR]"; end
-		AnalyzeUnit("Unhappiness");
-		--AnalyzeUnit("UnitArtInfo");
-		--AnalyzeUnit("UnitArtInfoCulturalVariation");
-		--AnalyzeUnit("UnitArtInfoEraVariation");
-		AnalyzeUnit("LeaderPromotion", "UnitPromotions", "Leader promotion");
-		AnalyzeUnit("LeaderExperience");
-		AnalyzeUnit("DontShowYields");
-		--AnalyzeUnit("ShowInPedia");
-		AnalyzeUnit("MoveRate"); -- MovementRates doesn't have Description
-		AnalyzeUnit("FoundMid");
-		AnalyzeUnit("FoundLate");
-		AnalyzeUnit("CityAttackOnly");
-		AnalyzeUnit("CulExpOnDisbandUpgrade");
-		AnalyzeUnit("PuppetPurchaseOverride");
-		AnalyzeUnit("GoodyModifier");
-		AnalyzeUnit("SupplyCapBoost");
-		AnalyzeUnit("NumFreeLux", "");
-		AnalyzeUnit("GPExtra");
-		AnalyzeUnit("MinorCivGift");
-		AnalyzeUnit("NoMinorCivGift");
-		AnalyzeUnit("PurchaseCooldown", "");
-		AnalyzeUnit("GlobalFaithPurchaseCooldown");
-		--AnalyzeUnit("BaseLandAirDefense");
-		AnalyzeUnit("FreeUpgrade");
-		AnalyzeUnit("UnitEraUpgrade");
-		AnalyzeUnit("WarOnly");
-		AnalyzeUnit("WLTKDFromBirth");
-		AnalyzeUnit("GoldenAgeFromBirth");
-		AnalyzeUnit("CultureBoost");
-		AnalyzeUnit("ExtraAttackHealthOnKill");
-		AnalyzeUnit("HighSeaRaider");
-		AnalyzeUnit("NumInfPerEra");
-		AnalyzeUnit("SendCanMoveIntoEvent");
-		AnalyzeUnit("CannotEmbark");
-		AnalyzeUnit("NoMinorGifts");
-		AnalyzeUnit("MoveAfterUpgrade");
-		AnalyzeUnit("PromotionClass", "UnitCombatInfos", "Promotion class");
-		AnalyzeUnit("CanRepairFleet");
-		AnalyzeUnit("CanChangePort");
-		AnalyzeUnit("NumberStackingUnits");
-		AnalyzeUnit("StackCombat");
-		AnalyzeUnit("FriendlyLandsPromotion");
-		AnalyzeUnit("NumberOfCultureBombs");
-		--AnalyzeUnit("MaxHitPoints"); -- internal
-		AnalyzeUnit("CargoCombat");
-		--AnalyzeUnit("ObsoleteTech");
-		if thisUnit.ObsoleteTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Obsoletes with [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisUnit.ObsoleteTech].Description).."[ENDCOLOR]"; end
-		--------------------
-		local bShow = false;
-		local sql = [[
-			SELECT BuildingClasses.Description
-			FROM Unit_BuildingClassPurchaseRequireds INNER JOIN BuildingClasses ON Unit_BuildingClassPurchaseRequireds.BuildingClassType = BuildingClasses.Type
-			WHERE Unit_BuildingClassPurchaseRequireds.UnitType = ?]];
-		for row in DB.Query(sql, thisUnit.Type) do
-			if not bShow then sText = sText.."[NEWLINE][COLOR_CYAN]Buildings[ENDCOLOR] required to purchase this unit:"; bShow = true; end -- change to TXT_KEY_ later
-			sText = sText.."[NEWLINE][ICON_BULLET]"..Locale.Lookup(row.Description);
-		end
-		UpdateTextBlock( sText, Controls.ExtendedLabel,  Controls.ExtendedInnerFrame,  Controls.ExtendedFrame );
-		-- end Infixo
 	end
 
 	ResizeEtc();
@@ -3151,12 +3380,18 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryPromotions * absurdlyLargeNumTopicsInCategory) + promotionID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryPromotions * absurdlyLargeNumTopicsInCategory) + promotionID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Promotion Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryPromotions * absurdlyLargeNumTopicsInCategory) + promotionID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if promotionID ~= -1 then
@@ -3201,99 +3436,34 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 		CheckPromotionPrereqOr("PromotionPrereqOr4");
 		CheckPromotionPrereqOr("PromotionPrereqOr5");
 		CheckPromotionPrereqOr("PromotionPrereqOr6");
-		--[[
-		if thisPromotion.PromotionPrereqOr1 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr1];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		if thisPromotion.PromotionPrereqOr2 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr2];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		if thisPromotion.PromotionPrereqOr3 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr3];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		if thisPromotion.PromotionPrereqOr4 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr4];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		if thisPromotion.PromotionPrereqOr5 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr5];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		if thisPromotion.PromotionPrereqOr6 then
-			local thisReq = GameInfo.UnitPromotions[thisPromotion.PromotionPrereqOr6];
-			if thisReq then
-				local thisRequiredPromotionInstance = g_RequiredPromotionsManager:GetInstance();
-				if thisRequiredPromotionInstance then
-					local textureOffset, textureSheet = IconLookup( thisReq.PortraitIndex, buttonSize, thisReq.IconAtlas );
-					if textureOffset == nil then
-						textureSheet = defaultErrorTextureSheet;
-						textureOffset = nullOffset;
-					end
-					UpdateSmallButton( buttonAdded, thisRequiredPromotionInstance.RequiredPromotionImage, thisRequiredPromotionInstance.RequiredPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( thisReq.Description ), thisReq.ID );
-					buttonAdded = buttonAdded + 1;
-				end
-			end
-		end
-		--]]
+
 		UpdateButtonFrame( buttonAdded, Controls.RequiredPromotionsInnerFrame, Controls.RequiredPromotionsFrame );
+
+		buttonAdded = 0
+		g_LeadsToPromotionsManager:ResetInstances();
+		for loopPromotion in GameInfo.UnitPromotions() do
+			if (loopPromotion["PromotionPrereqOr1"] == thisPromotion.Type or 
+					loopPromotion["PromotionPrereqOr2"] == thisPromotion.Type or
+					loopPromotion["PromotionPrereqOr3"] == thisPromotion.Type or
+					loopPromotion["PromotionPrereqOr4"] == thisPromotion.Type or
+					loopPromotion["PromotionPrereqOr5"] == thisPromotion.Type or
+					loopPromotion["PromotionPrereqOr6"] == thisPromotion.Type) then
+				print("Leads To Promotion:" .. loopPromotion.Type)
+				local thisLeadsToPromotionInstance = g_LeadsToPromotionsManager:GetInstance();
+				if thisLeadsToPromotionInstance then
+					local textureOffset, textureSheet = IconLookup( loopPromotion.PortraitIndex, buttonSize, loopPromotion.IconAtlas );
+					if textureOffset == nil then
+						textureSheet = defaultErrorTextureSheet;
+						textureOffset = nullOffset;
+					end
+					UpdateSmallButton( buttonAdded, thisLeadsToPromotionInstance.LeadsToPromotionImage, thisLeadsToPromotionInstance.LeadsToPromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( loopPromotion.Description ), loopPromotion.ID );
+					buttonAdded = buttonAdded + 1;
+				end
+			end
+		end
+
+		UpdateButtonFrame( buttonAdded, Controls.LeadsToPromotionsInnerFrame, Controls.LeadsToPromotionsFrame );
+
 
 		-- update the game info
 		if thisPromotion.Help then
@@ -3448,7 +3618,6 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 		if thisPromotion.BarbarianOnly then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_CYAN]Barbarian Only[ENDCOLOR]"; end
 		AnalyzePromotion("CityStateOnly");
 		AnalyzePromotion("StrongerDamaged");
-		AnalyzePromotion("MountainsDoubleMove");
 		AnalyzePromotion("CombatBonusFromNearbyUnitClass");
 		AnalyzePromotion("NearbyUnitClassBonusRange");
 		AnalyzePromotion("NearbyUnitClassBonus");
@@ -3462,19 +3631,14 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 		AnalyzePromotion("ConvertDomain")
 		AnalyzePromotion("WonderProductionModifier");
 		AnalyzePromotion("LandAirDefenseBonus", "");
-		AnalyzePromotion("PlagueChance");
-		AnalyzePromotion("PlaguePriority");
 		AnalyzePromotion("PlagueID");
-		AnalyzePromotion("PlaguePromotion");
-		AnalyzePromotion("PlagueIDImmunity");
 		AnalyzePromotion("StackedGreatGeneralXP");
 		AnalyzePromotion("GoodyHutYieldBonus");
 		--AnalyzePromotion("GainsXPFromScouting");
 		if thisPromotion.GainsXPFromScouting == 1 then sText = sText.."[NEWLINE][ICON_BULLET]Gains XP from Scouting"; end
-		--AnalyzePromotion("GainsXPFromPillaging");
-		if thisPromotion.GainsXPFromPillaging == 1 then sText = sText.."[NEWLINE][ICON_BULLET]Gains XP from Pillaging"; end
 		--AnalyzePromotion("GainsXPFromSpotting");
 		if thisPromotion.GainsXPFromSpotting == 1 then sText = sText.."[NEWLINE][ICON_BULLET]Gains XP from Spotting"; end
+		AnalyzePromotion("XPFromPillaging");
 		AnalyzePromotion("MultiAttackBonus");
 		AnalyzePromotion("DamageReductionCityAssault");
 		AnalyzePromotion("PillageBonusStrength");
@@ -3581,15 +3745,33 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 		-- Negatives at the end
 		if thisPromotion.CannotBeChosen then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Cannot be chosen[ENDCOLOR]"; end
 		if thisPromotion.LostWithUpgrade then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Lost with Upgrade[ENDCOLOR]"; end
+
 		-- Promo lines (Unit Combats)
-		sText = sText.."[NEWLINE][COLOR_CYAN]Combat Types[ENDCOLOR] eligible for this promotion:"; -- change to TXT_KEY_ later
+		local bShowText = false
+		local sTmpText = ""
+		sTmpText = sTmpText.."[NEWLINE][COLOR_CYAN]Combat Types[ENDCOLOR] eligible for this promotion:"; -- change to TXT_KEY_ later
 		for row in DB.Query("SELECT UnitCombatInfos.Description FROM UnitPromotions_UnitCombats INNER JOIN UnitCombatInfos ON UnitPromotions_UnitCombats.UnitCombatType = UnitCombatInfos.Type WHERE UnitPromotions_UnitCombats.PromotionType = ? ORDER BY UnitPromotions_UnitCombats.UnitCombatType", thisPromotion.Type) do
-			sText = sText.."[NEWLINE][ICON_BULLET]"..Locale.Lookup(row.Description);
+			sTmpText = sTmpText.."[NEWLINE][ICON_BULLET]"
+			for row2 in DB.Query("SELECT MountedOnly FROM UnitPromotions WHERE Type = ? and MountedOnly = 1", thisPromotion.Type) do
+				sTmpText = sTmpText.. "Mounted "
+			end
+			sTmpText = sTmpText..Locale.Lookup(row.Description);
+			bShowText = true
 		end
+		if (bShowText) then
+			sText = sText .. sTmpText
+		end
+		
 		-- Units list
-		sText = sText.."[NEWLINE][COLOR_CYAN]Units[ENDCOLOR] that are granted this promotion:"; -- change to TXT_KEY_ later
+		bShowText = false
+		sTmpText = ""
+		sTmpText = sTmpText.."[NEWLINE][COLOR_CYAN]Units[ENDCOLOR] that are granted this promotion:"; -- change to TXT_KEY_ later
 		for row in DB.Query("SELECT Units.Description FROM Unit_FreePromotions INNER JOIN Units ON Unit_FreePromotions.UnitType = Units.Type WHERE Unit_FreePromotions.PromotionType = ? ORDER BY Unit_FreePromotions.UnitType", thisPromotion.Type) do
-			sText = sText.."[NEWLINE][ICON_BULLET]"..Locale.Lookup(row.Description);
+			sTmpText = sTmpText.."[NEWLINE][ICON_BULLET]"..Locale.Lookup(row.Description);
+			bShowText = true
+		end
+		if (bShowText) then
+			sText = sText .. sTmpText
 		end
 		UpdateTextBlock( sText, Controls.ExtendedLabel,  Controls.ExtendedInnerFrame,  Controls.ExtendedFrame );
 		-- end Infixo
@@ -4254,7 +4436,13 @@ function SelectBuildingOrWonderArticle( buildingID )
 					textureSheet = defaultErrorTextureSheet;
 					textureOffset = nullOffset;
 				end
-				UpdateSmallButton( buttonAdded, thisBuildingInstance.ReplaceImage, thisBuildingInstance.ReplaceButton, textureSheet, textureOffset, CategoryBuildings, Locale.ConvertTextKey( defaultBuilding.Description ), defaultBuilding.ID );
+				local buildingCategory = CategoryBuildings;
+				local defaultBuildingClass = GameInfo.BuildingClasses[defaultBuilding.BuildingClass];
+				local defaultBuildingInfo = GameInfo.Buildings[defaultBuildingClass.DefaultBuilding];
+				if defaultBuildingClass and (defaultBuildingClass.MaxGlobalInstances > 0 or (defaultBuildingClass.MaxPlayerInstances == 1 and defaultBuildingInfo.SpecialistCount == 0) or defaultBuildingClass.MaxTeamInstances > 0) then
+					buildingCategory = CategoryWonders;
+				end
+				UpdateSmallButton( buttonAdded, thisBuildingInstance.ReplaceImage, thisBuildingInstance.ReplaceButton, textureSheet, textureOffset, buildingCategory, Locale.ConvertTextKey( defaultBuilding.Description ), defaultBuilding.ID );
 				buttonAdded = buttonAdded + 1;
 			end
 		end
@@ -4294,12 +4482,7 @@ function SelectBuildingOrWonderArticle( buildingID )
 		UpdateButtonFrame( buttonAdded, Controls.GreatWorksInnerFrame, Controls.GreatWorksFrame );
 
 		-- update the game info
-		if thisBuilding.Help then
-			-- Don't add text if it's the same as the strategy text
-			if (thisBuilding.Help ~= thisBuilding.Strategy) then
-				UpdateTextBlock( Locale.ConvertTextKey( thisBuilding.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
-			end
-		end
+		UpdateTextBlock(GetHelpTextForBuilding(buildingID, true, nil, false, nil, true), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame);
 
 		-- update the strategy info
 		if thisBuilding.Strategy then
@@ -4315,328 +4498,329 @@ function SelectBuildingOrWonderArticle( buildingID )
 			UpdateTextBlock( Locale.ConvertTextKey( thisBuilding.Quote ), Controls.SilentQuoteLabel, Controls.SilentQuoteInnerFrame, Controls.SilentQuoteFrame );
 		end
 
-		-- Infixo more info
-		local sText = "[COLOR_CYAN]Features[ENDCOLOR] of this building:"; -- change to TXT_KEY_ later
-		-- Generic info from main table
-		local function AnalyzeBuilding(sField, sSuffix)
-			--print("AnalyzeBuilding", sField, sSuffix)
-			sText = sText .. AnalyzeObjectField(thisBuilding, sField, sSuffix);
-		end
-		--AnalyzeBuilding("CapitalOnly", "");
-		if thisBuilding.CapitalOnly then sText = sText.."[NEWLINE][ICON_BULLET]Only in [ICON_CAPITAL] [COLOR_CYAN]Capital[ENDCOLOR]"; end
-		--AnalyzeBuilding("UnlockedByBelief");
-		if thisBuilding.UnlockedByBelief then sText = sText.."[NEWLINE][ICON_BULLET]Unlocked by [COLOR_CYAN]Belief[ENDCOLOR]"; end
-		--AnalyzeBuilding("UnlockedByLeague");
-		if thisBuilding.UnlockedByLeague then sText = sText.."[NEWLINE][ICON_BULLET]Unlocked by [COLOR_CYAN]World Congress[ENDCOLOR]"; end
-		--AnalyzeBuilding("PolicyBranchType");
-		if thisBuilding.PolicyBranchType ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.PolicyBranchTypes[thisBuilding.PolicyBranchType].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("PolicyType");
-		if thisBuilding.PolicyType ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Policies[thisBuilding.PolicyType].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("IsCorporation");
-		if thisBuilding.IsCorporation then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_CYAN]Corporation[ENDCOLOR]"; end
-		AnalyzeBuilding("TeamShare");
-		AnalyzeBuilding("Water");
-		--AnalyzeBuilding("MinAreaSize");
-		if thisBuilding.MinAreaSize > 0 and thisBuilding.MinAreaSize < 10 then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]Lake[ENDCOLOR]"; end
-		if thisBuilding.MinAreaSize >= 10 then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]Coast[ENDCOLOR]"; end
-		AnalyzeBuilding("River");
-		AnalyzeBuilding("FreshWater");
-		AnalyzeBuilding("Mountain");
-		AnalyzeBuilding("NearbyMountainRequired");
-		AnalyzeBuilding("Hill");
-		AnalyzeBuilding("Flat");
-		--AnalyzeBuilding("NearbyTerrainRequired");
-		if thisBuilding.NearbyTerrainRequired ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Terrains[thisBuilding.NearbyTerrainRequired].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("ProhibitedCityTerrain");
-		if thisBuilding.ProhibitedCityTerrain ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Prohibited [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Terrains[thisBuilding.ProhibitedCityTerrain].Description).."[ENDCOLOR]"; end
-		AnalyzeBuilding("BorderObstacle", "");
-		AnalyzeBuilding("PlayerBorderObstacle", "");
-		AnalyzeBuilding("Capital");
-		AnalyzeBuilding("GoldenAge");
-		AnalyzeBuilding("MapCentering");
-		AnalyzeBuilding("AllowsWaterRoutes");
-		AnalyzeBuilding("AllowsIndustrialWaterRoutes");
-		AnalyzeBuilding("AllowsAirRoutes");
-		AnalyzeBuilding("ExtraLuxuries");
-		AnalyzeBuilding("DiplomaticVoting");
-		AnalyzeBuilding("AffectSpiesNow");
-		AnalyzeBuilding("NullifyInfluenceModifier");
-		AnalyzeBuilding("LeagueCost");
-		AnalyzeBuilding("HolyCity");
-		AnalyzeBuilding("NumCityCostMod");
-		AnalyzeBuilding("CitiesPrereq");
-		AnalyzeBuilding("LevelPrereq");
-		AnalyzeBuilding("CultureRateModifier");
-		AnalyzeBuilding("GlobalCultureRateModifier");
-		AnalyzeBuilding("GreatPeopleRateModifier");
-		AnalyzeBuilding("GlobalGreatPeopleRateModifier");
-		AnalyzeBuilding("GreatGeneralRateModifier");
-		AnalyzeBuilding("GreatPersonExpendGold");
-		AnalyzeBuilding("GoldenAgeModifier");
-		AnalyzeBuilding("UnitUpgradeCostMod");
-		AnalyzeBuilding("Experience");
-		AnalyzeBuilding("GlobalExperience");
-		AnalyzeBuilding("FoodKept");
-		AnalyzeBuilding("Airlift");
-		AnalyzeBuilding("AirModifier", "[ICON_AIRSTRIKE_DEFENSE]");
-		AnalyzeBuilding("NukeModifier");
-		AnalyzeBuilding("NukeExplosionRand");
-		AnalyzeBuilding("HealRateChange", "HP");
-		AnalyzeBuilding("UnmoddedHappiness", "[ICON_HAPPINESS_1]");
-		AnalyzeBuilding("Happiness", "[ICON_HAPPINESS_1]");
-		AnalyzeBuilding("HappinessPerCity", "[ICON_HAPPINESS_1]");
-		AnalyzeBuilding("HappinessPerXPolicies", "[ICON_HAPPINESS_1]");
-		AnalyzeBuilding("UnhappinessModifier");
-		AnalyzeBuilding("CityCountUnhappinessMod");
-		AnalyzeBuilding("NoOccupiedUnhappiness");
-		AnalyzeBuilding("WorkerSpeedModifier");
-		AnalyzeBuilding("MilitaryProductionModifier");
-		AnalyzeBuilding("SpaceProductionModifier");
-		AnalyzeBuilding("GlobalSpaceProductionModifier");
-		AnalyzeBuilding("BuildingProductionModifier");
-		AnalyzeBuilding("WonderProductionModifier");
-		AnalyzeBuilding("CityConnectionTradeRouteModifier");
-		AnalyzeBuilding("CapturePlunderModifier");
-		AnalyzeBuilding("PolicyCostModifier");
-		AnalyzeBuilding("PlotCultureCostModifier");
-		AnalyzeBuilding("GlobalPlotCultureCostModifier");
-		AnalyzeBuilding("PlotBuyCostModifier");
-		AnalyzeBuilding("GlobalPlotBuyCostModifier");
-		AnalyzeBuilding("GlobalPopulationChange", "[ICON_CITIZEN]");
-		AnalyzeBuilding("TechShare");
-		AnalyzeBuilding("FreeTechs", "[ICON_RESEARCH]");
-		AnalyzeBuilding("FreePolicies", "[ICON_CULTURE]");
-		AnalyzeBuilding("FreeGreatPeople", "[ICON_GREAT_PEOPLE]");
-		AnalyzeBuilding("MedianTechPercentChange");
-		AnalyzeBuilding("Gold");
-		AnalyzeBuilding("AllowsRangeStrike");
-		AnalyzeBuilding("Espionage");
-		AnalyzeBuilding("AllowsFoodTradeRoutes");
-		AnalyzeBuilding("AllowsProductionTradeRoutes");
-		AnalyzeBuilding("GlobalDefenseMod");
-		AnalyzeBuilding("MinorFriendshipChange");
-		AnalyzeBuilding("VictoryPoints");
-		AnalyzeBuilding("ExtraMissionarySpreads", "[ICON_MISSIONARY]");
-		AnalyzeBuilding("ReligiousPressureModifier");
-		AnalyzeBuilding("BasePressureModifierGlobal");
-		AnalyzeBuilding("EspionageModifier");
-		AnalyzeBuilding("GlobalEspionageModifier");
-		AnalyzeBuilding("ExtraSpies", "[ICON_SPY]");
-		AnalyzeBuilding("SpyRankChange", "");
-		AnalyzeBuilding("InstantSpyRankChange", "");
-		AnalyzeBuilding("TradeRouteRecipientBonus", "[ICON_GOLD]");
-		AnalyzeBuilding("TradeRouteTargetBonus", "[ICON_GOLD]");
-		AnalyzeBuilding("NumTradeRouteBonus", "[ICON_INTERNATIONAL_TRADE]");
-		AnalyzeBuilding("LandmarksTourismPercent");
-		AnalyzeBuilding("InstantMilitaryIncrease");
-		AnalyzeBuilding("GreatWorksTourismModifier");
-		AnalyzeBuilding("XBuiltTriggersIdeologyChoice");
-		AnalyzeBuilding("TradeRouteSeaDistanceModifier");
-		AnalyzeBuilding("TradeRouteSeaGoldBonus", "");
-		AnalyzeBuilding("TradeRouteLandDistanceModifier");
-		AnalyzeBuilding("TradeRouteLandGoldBonus", "");
-		AnalyzeBuilding("CityStateTradeRouteProductionModifier");
-		AnalyzeBuilding("GreatScientistBeakerModifier");
-		AnalyzeBuilding("VictoryPrereq");
-		--AnalyzeBuilding("ObsoleteTech");
-		if thisBuilding.ObsoleteTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Obsolete with [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisBuilding.ObsoleteTech].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("EnhancedYieldTech");
-		if thisBuilding.EnhancedYieldTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Additional yields with [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisBuilding.EnhancedYieldTech].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("FreeBuilding");
-		if thisBuilding.FreeBuilding ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.FreeBuilding].Description).."[ENDCOLOR] in all Cities"; end
-		--AnalyzeBuilding("FreeBuildingThisCity");
-		if thisBuilding.FreeBuildingThisCity ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.FreeBuildingThisCity].Description).."[ENDCOLOR] in the City"; end
-		--AnalyzeBuilding("FreePromotion");
-		if thisBuilding.FreePromotion ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]All units receive [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.FreePromotion].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("TrainedFreePromotion");
-		if thisBuilding.TrainedFreePromotion ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Units trained in the city receive [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.TrainedFreePromotion].Description).."[ENDCOLOR]"; end
-		--AnalyzeBuilding("FreePromotionRemoved");
-		if thisBuilding.FreePromotionRemoved ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Removes [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.FreePromotionRemoved].Description).."[ENDCOLOR]"; end
-		AnalyzeBuilding("ReplacementBuildingClass");
-		--AnalyzeBuilding("FreeGreatWork");
-		if thisBuilding.FreeGreatWork ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.GreatWorks[thisBuilding.FreeGreatWork].Description).."[ENDCOLOR]"; end
-		AnalyzeBuilding("SpecialistExtraCulture");
-		AnalyzeBuilding("ExtraLeagueVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("CityWall");
-		--AnalyzeBuilding("DisplayPosition");
-		AnalyzeBuilding("ArtInfoCulturalVariation");
-		AnalyzeBuilding("ArtInfoEraVariation");
-		AnalyzeBuilding("ArtInfoRandomVariation");
-		AnalyzeBuilding("IsNoWater");
-		AnalyzeBuilding("IsNoRiver");
-		AnalyzeBuilding("NumPoliciesNeeded", "");
-		AnalyzeBuilding("NationalPopRequired", "");
-		AnalyzeBuilding("LocalPopRequired", "");
-		AnalyzeBuilding("BorderObstacleCity");
-		AnalyzeBuilding("BorderObstacleWater");
-		AnalyzeBuilding("AllowsFoodTradeRoutesGlobal");
-		AnalyzeBuilding("AllowsProductionTradeRoutesGlobal");
-		AnalyzeBuilding("CityConnectionGoldModifier");
-		AnalyzeBuilding("BasicNeedsMedianModifier");
-		AnalyzeBuilding("GoldMedianModifier");
-		AnalyzeBuilding("ScienceMedianModifier");
-		AnalyzeBuilding("CultureMedianModifier");
-		AnalyzeBuilding("ReligiousUnrestModifier");
-		AnalyzeBuilding("BasicNeedsMedianModifierGlobal");
-		AnalyzeBuilding("GoldMedianModifierGlobal");
-		AnalyzeBuilding("ScienceMedianModifierGlobal");
-		AnalyzeBuilding("CultureMedianModifierGlobal");
-		AnalyzeBuilding("ReligiousUnrestModifierGlobal");
-		AnalyzeBuilding("LocalUnhappinessModifier");
-		AnalyzeBuilding("GlobalBuildingGoldMaintenanceMod");
-		AnalyzeBuilding("NationalFollowerPopRequired");
-		AnalyzeBuilding("GlobalFollowerPopRequired");
-		AnalyzeBuilding("IsReformation");
-		AnalyzeBuilding("ResourceType");
-		--if thisPromotion.TechPrereq ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Technologies[thisPromotion.TechPrereq].Description).."[ENDCOLOR]"; end
-		AnalyzeBuilding("PuppetPurchaseOverride");
-		AnalyzeBuilding("SingleLeagueVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("AllowsPuppetPurchase");
-		AnalyzeBuilding("GrantsRandomResourceTerritory", "");
-		AnalyzeBuilding("ResourceQuantityToPlace");
-		AnalyzeBuilding("TradeReligionModifier");
-		--AnalyzeBuilding("NeedBuildingThisCity");
-		if thisBuilding.NeedBuildingThisCity ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.NeedBuildingThisCity].Description).."[ENDCOLOR] in the City"; end
-		AnalyzeBuilding("WLTKDTurns", "");
-		AnalyzeBuilding("EventTourism", "[ICON_TOURISM]");
-		AnalyzeBuilding("AlwaysHeal", "HP");
-		AnalyzeBuilding("CitySupplyModifier", "[ICON_SILVER_FIST]");
-		AnalyzeBuilding("CitySupplyModifierGlobal", "[ICON_SILVER_FIST]");
-		AnalyzeBuilding("CitySupplyFlat", "[ICON_WAR]");
-		AnalyzeBuilding("CitySupplyFlatGlobal", "[ICON_WAR]");
-		AnalyzeBuilding("CityRangedStrikeRange", "");
-		AnalyzeBuilding("CityIndirectFire");
-		AnalyzeBuilding("RangedStrikeModifier");
-		AnalyzeBuilding("ExtraMissionaryStrengthGlobal");
-		AnalyzeBuilding("ReformationFollowerReduction");
-		AnalyzeBuilding("ResourceDiversityModifier");
-		AnalyzeBuilding("FinishLandTRTourism", "[ICON_TOURISM]");
-		AnalyzeBuilding("FinishSeaTRTourism", "[ICON_TOURISM]");
-		AnalyzeBuilding("VotesPerGPT", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("RequiresIndustrialCityConnection", "");
-		AnalyzeBuilding("CivilizationRequired");
-		AnalyzeBuilding("PurchaseCooldown");
-		AnalyzeBuilding("CityAirStrikeDefense", "[ICON_STRENGTH]");
-		AnalyzeBuilding("BuildAnywhere");
-		AnalyzeBuilding("FreeArtifacts", "");
-		AnalyzeBuilding("VassalLevyEra");
-		if thisBuilding.EventChoiceRequiredActive ~= nil then
-			local sDesc = ""
-			for choice in DB.Query("SELECT Description FROM EventChoices WHERE Type = ?", thisBuilding.EventChoiceRequiredActive) do sDesc = choice.Description end
-			sText = sText.."[NEWLINE][ICON_BULLET]Requires Event Choice: [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
-		end
-		--AnalyzeBuilding("EventChoiceRequiredActive");
-		--AnalyzeBuilding("CityEventChoiceRequiredActive");
-		if thisBuilding.CityEventChoiceRequiredActive ~= nil then
-			local sDesc = ""
-			for choice in DB.Query("SELECT Description FROM CityEventChoices WHERE Type = ?", thisBuilding.CityEventChoiceRequiredActive) do sDesc = choice.Description end
-			sText = sText.."[NEWLINE][ICON_BULLET]Requires City Event Choice: [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
-		end
-		AnalyzeBuilding("GPRateModifierPerXFranchises");
-		AnalyzeBuilding("TRSpeedBoost");
-		AnalyzeBuilding("TRVisionBoost");
-		AnalyzeBuilding("DPToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("SecondaryPantheon");
-		AnalyzeBuilding("IsDummy");
-		AnalyzeBuilding("AnyWater");
-		AnalyzeBuilding("BuildingDefenseModifier");
-		AnalyzeBuilding("DamageReductionFlat", "");
-		AnalyzeBuilding("GlobalLandmarksTourismPercent");
-		AnalyzeBuilding("GlobalGreatWorksTourismModifier");
-		AnalyzeBuilding("FaithToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("CapitalsToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("DoFToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("RAToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
-		AnalyzeBuilding("GPExpendInfluence");
-		AnalyzeBuilding("AddsFreshWater");
-		AnalyzeBuilding("PurchaseOnly");
-		AnalyzeBuilding("CityWorkingChange");
-		AnalyzeBuilding("GlobalCityWorkingChange");
-		AnalyzeBuilding("GlobalConversionModifier");
-		AnalyzeBuilding("ConversionModifier");
-		AnalyzeBuilding("PlayerBorderGainlessPillage");
-		AnalyzeBuilding("CityGainlessPillage");
-		AnalyzeBuilding("HurryCostModifier");
-		AnalyzeBuilding("NeverCapture");
-		AnalyzeBuilding("NukeInterceptionChance");
-		AnalyzeBuilding("NukeImmune");
-		AnalyzeBuilding("ConquestProb", "");
-		AnalyzeBuilding("NumRequiredTier3Tenets");
-		--AnalyzeBuilding("FreeStartEra");
-		if thisBuilding.FreeStartEra ~= nil then
-			local sDesc = ""
-			for era in DB.Query("SELECT Description FROM Eras WHERE Type = ?", thisBuilding.FreeStartEra) do sDesc = era.Description end
-			sText = sText.."[NEWLINE][ICON_BULLET]Free in [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
-		end
-		--AnalyzeBuilding("MaxStartEra");
-		if thisBuilding.MaxStartEra ~= nil then
-			local sDesc = ""
-			for era in DB.Query("SELECT Description FROM Eras WHERE Type = ?", thisBuilding.MaxStartEra) do sDesc = era.Description end
-			sText = sText.."[NEWLINE][ICON_BULLET]Only until [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
-		end
-		-------------------
-		local function AnalyzeBuildingYields(sTable, sFieldName, sRefTable, sFlags, sInfo)
-			--print("AnalyzeBuildingYields", sTable, sFieldName, sRefTable, sFlags, sInfo)
-			local sLocText = "";
-			--"SELECT [sTable].Yield, [sRefTable].Description
-			--FROM [sTable]
-			--INNER JOIN [sRefTable] ON [sTable].[sFieldName] = [sRefTable].Type
-			--WHERE [sTable].BuildingType = ?
-			--ORDER BY YieldType" -]]
-			if sRefTable == "" then
-				local sql = string.format(
-					"SELECT %s.Yield%s as Yield, Yields.IconString FROM %s INNER JOIN Yields ON %s.YieldType = Yields.Type WHERE %s.BuildingType = ? ORDER BY YieldType",
-					sTable, sFlags, sTable, sTable, sTable);
-				--print("Executing SQL ", sql);
-				for row in DB.Query(sql, thisBuilding.Type) do
-					sLocText = sLocText..string.format("%+d%s", row.Yield, row.IconString);
-				end
-			else
-				local sql = string.format(
-					"SELECT %s.Yield%s as Yield, Yields.IconString, %s.Description FROM %s INNER JOIN Yields ON %s.YieldType = Yields.Type INNER JOIN %s ON %s.%s = %s.Type WHERE %s.BuildingType = ? ORDER BY %s.Type, YieldType",
-					sTable, sFlags, sRefTable, sTable, sTable, sRefTable, sTable, sFieldName, sRefTable, sTable, sRefTable);
-				--print("Executing SQL ", sql);
-				local sGroup = "";
-				for row in DB.Query(sql, thisBuilding.Type) do
-					if sGroup == "" then
-						sLocText = sLocText..string.format("[NEWLINE][ICON_BULLET]%+d%s ", row.Yield, row.IconString);
-						sGroup = row.Description;
-					elseif row.Description == sGroup then
-						sLocText = sLocText..string.format("%+d%s ", row.Yield, row.IconString);
-					else
-						sLocText = sLocText.."from "..Locale.Lookup(sGroup);
-						sLocText = sLocText..string.format("[NEWLINE][ICON_BULLET]%+d%s ", row.Yield, row.IconString);
-						sGroup = row.Description;
+		-- Infixo more info (only shown in debug mode)
+		if Game and Game.IsDebugMode() then
+			local sText = "[COLOR_CYAN]Features[ENDCOLOR] of this building:"; -- change to TXT_KEY_ later
+			-- Generic info from main table
+			local function AnalyzeBuilding(sField, sSuffix)
+				--print("AnalyzeBuilding", sField, sSuffix)
+				sText = sText .. AnalyzeObjectField(thisBuilding, sField, sSuffix);
+			end
+			--AnalyzeBuilding("CapitalOnly", "");
+			if thisBuilding.CapitalOnly then sText = sText.."[NEWLINE][ICON_BULLET]Only in [ICON_CAPITAL] [COLOR_CYAN]Capital[ENDCOLOR]"; end
+			--AnalyzeBuilding("UnlockedByBelief");
+			if thisBuilding.UnlockedByBelief then sText = sText.."[NEWLINE][ICON_BULLET]Unlocked by [COLOR_CYAN]Belief[ENDCOLOR]"; end
+			--AnalyzeBuilding("UnlockedByLeague");
+			if thisBuilding.UnlockedByLeague then sText = sText.."[NEWLINE][ICON_BULLET]Unlocked by [COLOR_CYAN]World Congress[ENDCOLOR]"; end
+			--AnalyzeBuilding("PolicyBranchType");
+			if thisBuilding.PolicyBranchType ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.PolicyBranchTypes[thisBuilding.PolicyBranchType].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("PolicyType");
+			if thisBuilding.PolicyType ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Policies[thisBuilding.PolicyType].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("IsCorporation");
+			if thisBuilding.IsCorporation then sText = sText.."[NEWLINE][ICON_BULLET][COLOR_CYAN]Corporation[ENDCOLOR]"; end
+			AnalyzeBuilding("TeamShare");
+			AnalyzeBuilding("Water");
+			--AnalyzeBuilding("MinAreaSize");
+			if thisBuilding.MinAreaSize > 0 and thisBuilding.MinAreaSize < 10 then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]Lake[ENDCOLOR]"; end
+			if thisBuilding.MinAreaSize >= 10 then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]Coast[ENDCOLOR]"; end
+			AnalyzeBuilding("River");
+			AnalyzeBuilding("FreshWater");
+			AnalyzeBuilding("Mountain");
+			AnalyzeBuilding("NearbyMountainRequired");
+			AnalyzeBuilding("Hill");
+			AnalyzeBuilding("Flat");
+			--AnalyzeBuilding("NearbyTerrainRequired");
+			if thisBuilding.NearbyTerrainRequired ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Terrains[thisBuilding.NearbyTerrainRequired].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("ProhibitedCityTerrain");
+			if thisBuilding.ProhibitedCityTerrain ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Prohibited [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Terrains[thisBuilding.ProhibitedCityTerrain].Description).."[ENDCOLOR]"; end
+			AnalyzeBuilding("BorderObstacle", "");
+			AnalyzeBuilding("PlayerBorderObstacle", "");
+			AnalyzeBuilding("Capital");
+			AnalyzeBuilding("GoldenAge");
+			AnalyzeBuilding("MapCentering");
+			AnalyzeBuilding("AllowsWaterRoutes");
+			AnalyzeBuilding("AllowsIndustrialWaterRoutes");
+			AnalyzeBuilding("AllowsAirRoutes");
+			AnalyzeBuilding("ExtraLuxuries");
+			AnalyzeBuilding("DiplomaticVoting");
+			AnalyzeBuilding("AffectSpiesNow");
+			AnalyzeBuilding("NullifyInfluenceModifier");
+			AnalyzeBuilding("LeagueCost");
+			AnalyzeBuilding("HolyCity");
+			AnalyzeBuilding("NumCityCostMod");
+			AnalyzeBuilding("CitiesPrereq");
+			AnalyzeBuilding("LevelPrereq");
+			AnalyzeBuilding("CultureRateModifier");
+			AnalyzeBuilding("GlobalCultureRateModifier");
+			AnalyzeBuilding("GreatPeopleRateModifier");
+			AnalyzeBuilding("GlobalGreatPeopleRateModifier");
+			AnalyzeBuilding("GreatGeneralRateModifier");
+			AnalyzeBuilding("GreatPersonExpendGold");
+			AnalyzeBuilding("GoldenAgeModifier");
+			AnalyzeBuilding("UnitUpgradeCostMod");
+			AnalyzeBuilding("Experience");
+			AnalyzeBuilding("GlobalExperience");
+			AnalyzeBuilding("FoodKept");
+			AnalyzeBuilding("Airlift");
+			AnalyzeBuilding("AirModifier", "[ICON_AIRSTRIKE_DEFENSE]");
+			AnalyzeBuilding("NukeModifier");
+			AnalyzeBuilding("NukeExplosionRand");
+			AnalyzeBuilding("HealRateChange", "HP");
+			AnalyzeBuilding("UnmoddedHappiness", "[ICON_HAPPINESS_1]");
+			AnalyzeBuilding("Happiness", "[ICON_HAPPINESS_1]");
+			AnalyzeBuilding("HappinessPerCity", "[ICON_HAPPINESS_1]");
+			AnalyzeBuilding("HappinessPerXPolicies", "[ICON_HAPPINESS_1]");
+			AnalyzeBuilding("UnhappinessModifier");
+			AnalyzeBuilding("CityCountUnhappinessMod");
+			AnalyzeBuilding("NoOccupiedUnhappiness");
+			AnalyzeBuilding("WorkerSpeedModifier");
+			AnalyzeBuilding("MilitaryProductionModifier");
+			AnalyzeBuilding("SpaceProductionModifier");
+			AnalyzeBuilding("GlobalSpaceProductionModifier");
+			AnalyzeBuilding("BuildingProductionModifier");
+			AnalyzeBuilding("WonderProductionModifier");
+			AnalyzeBuilding("CityConnectionTradeRouteModifier");
+			AnalyzeBuilding("CapturePlunderModifier");
+			AnalyzeBuilding("PolicyCostModifier");
+			AnalyzeBuilding("PlotCultureCostModifier");
+			AnalyzeBuilding("GlobalPlotCultureCostModifier");
+			AnalyzeBuilding("PlotBuyCostModifier");
+			AnalyzeBuilding("GlobalPlotBuyCostModifier");
+			AnalyzeBuilding("GlobalPopulationChange", "[ICON_CITIZEN]");
+			AnalyzeBuilding("TechShare");
+			AnalyzeBuilding("FreeTechs", "[ICON_RESEARCH]");
+			AnalyzeBuilding("FreePolicies", "[ICON_CULTURE]");
+			AnalyzeBuilding("FreeGreatPeople", "[ICON_GREAT_PEOPLE]");
+			AnalyzeBuilding("MedianTechPercentChange");
+			AnalyzeBuilding("Gold");
+			AnalyzeBuilding("AllowsRangeStrike");
+			AnalyzeBuilding("Espionage");
+			AnalyzeBuilding("AllowsFoodTradeRoutes");
+			AnalyzeBuilding("AllowsProductionTradeRoutes");
+			AnalyzeBuilding("GlobalDefenseMod");
+			AnalyzeBuilding("MinorFriendshipChange");
+			AnalyzeBuilding("VictoryPoints");
+			AnalyzeBuilding("ExtraMissionarySpreads", "[ICON_MISSIONARY]");
+			AnalyzeBuilding("ReligiousPressureModifier");
+			AnalyzeBuilding("BasePressureModifierGlobal");
+			AnalyzeBuilding("EspionageModifier");
+			AnalyzeBuilding("GlobalEspionageModifier");
+			AnalyzeBuilding("ExtraSpies", "[ICON_SPY]");
+			AnalyzeBuilding("SpyRankChange", "");
+			AnalyzeBuilding("InstantSpyRankChange", "");
+			AnalyzeBuilding("TradeRouteRecipientBonus", "[ICON_GOLD]");
+			AnalyzeBuilding("TradeRouteTargetBonus", "[ICON_GOLD]");
+			AnalyzeBuilding("NumTradeRouteBonus", "[ICON_INTERNATIONAL_TRADE]");
+			AnalyzeBuilding("LandmarksTourismPercent");
+			AnalyzeBuilding("InstantMilitaryIncrease");
+			AnalyzeBuilding("GreatWorksTourismModifier");
+			AnalyzeBuilding("XBuiltTriggersIdeologyChoice");
+			AnalyzeBuilding("TradeRouteSeaDistanceModifier");
+			AnalyzeBuilding("TradeRouteSeaGoldBonus", "");
+			AnalyzeBuilding("TradeRouteLandDistanceModifier");
+			AnalyzeBuilding("TradeRouteLandGoldBonus", "");
+			AnalyzeBuilding("CityStateTradeRouteProductionModifier");
+			AnalyzeBuilding("GreatScientistBeakerModifier");
+			AnalyzeBuilding("VictoryPrereq");
+			--AnalyzeBuilding("ObsoleteTech");
+			if thisBuilding.ObsoleteTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Obsolete with [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisBuilding.ObsoleteTech].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("EnhancedYieldTech");
+			if thisBuilding.EnhancedYieldTech ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Additional yields with [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.Technologies[thisBuilding.EnhancedYieldTech].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("FreeBuilding");
+			if thisBuilding.FreeBuilding ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.FreeBuilding].Description).."[ENDCOLOR] in all Cities"; end
+			--AnalyzeBuilding("FreeBuildingThisCity");
+			if thisBuilding.FreeBuildingThisCity ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.FreeBuildingThisCity].Description).."[ENDCOLOR] in the City"; end
+			--AnalyzeBuilding("FreePromotion");
+			if thisBuilding.FreePromotion ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]All units receive [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.FreePromotion].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("TrainedFreePromotion");
+			if thisBuilding.TrainedFreePromotion ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Units trained in the city receive [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.TrainedFreePromotion].Description).."[ENDCOLOR]"; end
+			--AnalyzeBuilding("FreePromotionRemoved");
+			if thisBuilding.FreePromotionRemoved ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Removes [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.UnitPromotions[thisBuilding.FreePromotionRemoved].Description).."[ENDCOLOR]"; end
+			AnalyzeBuilding("ReplacementBuildingClass");
+			--AnalyzeBuilding("FreeGreatWork");
+			if thisBuilding.FreeGreatWork ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]"..Locale.Lookup(GameInfo.GreatWorks[thisBuilding.FreeGreatWork].Description).."[ENDCOLOR]"; end
+			AnalyzeBuilding("SpecialistExtraCulture");
+			AnalyzeBuilding("ExtraLeagueVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("CityWall");
+			--AnalyzeBuilding("DisplayPosition");
+			AnalyzeBuilding("ArtInfoCulturalVariation");
+			AnalyzeBuilding("ArtInfoEraVariation");
+			AnalyzeBuilding("ArtInfoRandomVariation");
+			AnalyzeBuilding("IsNoWater");
+			AnalyzeBuilding("IsNoRiver");
+			AnalyzeBuilding("NumPoliciesNeeded", "");
+			AnalyzeBuilding("NationalPopRequired", "");
+			AnalyzeBuilding("LocalPopRequired", "");
+			AnalyzeBuilding("BorderObstacleCity");
+			AnalyzeBuilding("BorderObstacleWater");
+			AnalyzeBuilding("AllowsFoodTradeRoutesGlobal");
+			AnalyzeBuilding("AllowsProductionTradeRoutesGlobal");
+			AnalyzeBuilding("CityConnectionGoldModifier");
+			AnalyzeBuilding("BasicNeedsMedianModifier");
+			AnalyzeBuilding("GoldMedianModifier");
+			AnalyzeBuilding("ScienceMedianModifier");
+			AnalyzeBuilding("CultureMedianModifier");
+			AnalyzeBuilding("ReligiousUnrestModifier");
+			AnalyzeBuilding("BasicNeedsMedianModifierGlobal");
+			AnalyzeBuilding("GoldMedianModifierGlobal");
+			AnalyzeBuilding("ScienceMedianModifierGlobal");
+			AnalyzeBuilding("CultureMedianModifierGlobal");
+			AnalyzeBuilding("ReligiousUnrestModifierGlobal");
+			AnalyzeBuilding("LocalUnhappinessModifier");
+			AnalyzeBuilding("GlobalBuildingGoldMaintenanceMod");
+			AnalyzeBuilding("NationalFollowerPopRequired");
+			AnalyzeBuilding("GlobalFollowerPopRequired");
+			AnalyzeBuilding("IsReformation");
+			AnalyzeBuilding("ResourceType");
+			--if thisPromotion.TechPrereq ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_CYAN]"..Locale.Lookup(GameInfo.Technologies[thisPromotion.TechPrereq].Description).."[ENDCOLOR]"; end
+			AnalyzeBuilding("PuppetPurchaseOverride");
+			AnalyzeBuilding("SingleLeagueVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("AllowsPuppetPurchase");
+			AnalyzeBuilding("GrantsRandomResourceTerritory", "");
+			AnalyzeBuilding("TradeReligionModifier");
+			--AnalyzeBuilding("NeedBuildingThisCity");
+			if thisBuilding.NeedBuildingThisCity ~= nil then sText = sText.."[NEWLINE][ICON_BULLET]Requires [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(GameInfo.BuildingClasses[thisBuilding.NeedBuildingThisCity].Description).."[ENDCOLOR] in the City"; end
+			AnalyzeBuilding("WLTKDTurns", "");
+			AnalyzeBuilding("EventTourism", "[ICON_TOURISM]");
+			AnalyzeBuilding("AlwaysHeal", "HP");
+			AnalyzeBuilding("CitySupplyModifier", "[ICON_SILVER_FIST]");
+			AnalyzeBuilding("CitySupplyModifierGlobal", "[ICON_SILVER_FIST]");
+			AnalyzeBuilding("CitySupplyFlat", "[ICON_WAR]");
+			AnalyzeBuilding("CitySupplyFlatGlobal", "[ICON_WAR]");
+			AnalyzeBuilding("CityRangedStrikeRange", "");
+			AnalyzeBuilding("CityIndirectFire");
+			AnalyzeBuilding("RangedStrikeModifier");
+			AnalyzeBuilding("ExtraMissionaryStrengthGlobal");
+			AnalyzeBuilding("ReformationFollowerReduction");
+			AnalyzeBuilding("ResourceDiversityModifier");
+			AnalyzeBuilding("FinishLandTRTourism", "[ICON_TOURISM]");
+			AnalyzeBuilding("FinishSeaTRTourism", "[ICON_TOURISM]");
+			AnalyzeBuilding("VotesPerGPT", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("RequiresIndustrialCityConnection", "");
+			AnalyzeBuilding("CivilizationRequired");
+			AnalyzeBuilding("PurchaseCooldown");
+			AnalyzeBuilding("CityAirStrikeDefense", "[ICON_STRENGTH]");
+			AnalyzeBuilding("BuildAnywhere");
+			AnalyzeBuilding("FreeArtifacts", "");
+			AnalyzeBuilding("VassalLevyEra");
+			if thisBuilding.EventChoiceRequiredActive ~= nil then
+				local sDesc = ""
+				for choice in DB.Query("SELECT Description FROM EventChoices WHERE Type = ?", thisBuilding.EventChoiceRequiredActive) do sDesc = choice.Description end
+				sText = sText.."[NEWLINE][ICON_BULLET]Requires Event Choice: [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
+			end
+			--AnalyzeBuilding("EventChoiceRequiredActive");
+			--AnalyzeBuilding("CityEventChoiceRequiredActive");
+			if thisBuilding.CityEventChoiceRequiredActive ~= nil then
+				local sDesc = ""
+				for choice in DB.Query("SELECT Description FROM CityEventChoices WHERE Type = ?", thisBuilding.CityEventChoiceRequiredActive) do sDesc = choice.Description end
+				sText = sText.."[NEWLINE][ICON_BULLET]Requires City Event Choice: [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
+			end
+			AnalyzeBuilding("GPRateModifierPerXFranchises");
+			AnalyzeBuilding("TRSpeedBoost");
+			AnalyzeBuilding("TRVisionBoost");
+			AnalyzeBuilding("DPToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("SecondaryPantheon");
+			AnalyzeBuilding("IsDummy");
+			AnalyzeBuilding("AnyWater");
+			AnalyzeBuilding("BuildingDefenseModifier");
+			AnalyzeBuilding("DamageReductionFlat", "");
+			AnalyzeBuilding("GlobalLandmarksTourismPercent");
+			AnalyzeBuilding("GlobalGreatWorksTourismModifier");
+			AnalyzeBuilding("FaithToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("CapitalsToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("DoFToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("RAToVotes", "[COLOR_POSITIVE_TEXT]votes[ENDCOLOR]");
+			AnalyzeBuilding("GPExpendInfluence");
+			AnalyzeBuilding("AddsFreshWater");
+			AnalyzeBuilding("PurchaseOnly");
+			AnalyzeBuilding("CityWorkingChange");
+			AnalyzeBuilding("GlobalCityWorkingChange");
+			AnalyzeBuilding("GlobalConversionModifier");
+			AnalyzeBuilding("ConversionModifier");
+			AnalyzeBuilding("PlayerBorderGainlessPillage");
+			AnalyzeBuilding("CityGainlessPillage");
+			AnalyzeBuilding("HurryCostModifier");
+			AnalyzeBuilding("NeverCapture");
+			AnalyzeBuilding("NukeInterceptionChance");
+			AnalyzeBuilding("NukeImmune");
+			AnalyzeBuilding("ConquestProb", "");
+			AnalyzeBuilding("NumRequiredTier3Tenets");
+			--AnalyzeBuilding("FreeStartEra");
+			if thisBuilding.FreeStartEra ~= nil then
+				local sDesc = ""
+				for era in DB.Query("SELECT Description FROM Eras WHERE Type = ?", thisBuilding.FreeStartEra) do sDesc = era.Description end
+				sText = sText.."[NEWLINE][ICON_BULLET]Free in [COLOR_POSITIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
+			end
+			--AnalyzeBuilding("MaxStartEra");
+			if thisBuilding.MaxStartEra ~= nil then
+				local sDesc = ""
+				for era in DB.Query("SELECT Description FROM Eras WHERE Type = ?", thisBuilding.MaxStartEra) do sDesc = era.Description end
+				sText = sText.."[NEWLINE][ICON_BULLET]Only until [COLOR_NEGATIVE_TEXT]"..Locale.Lookup(sDesc).."[ENDCOLOR]"
+			end
+			-------------------
+			local function AnalyzeBuildingYields(sTable, sFieldName, sRefTable, sFlags, sInfo)
+				--print("AnalyzeBuildingYields", sTable, sFieldName, sRefTable, sFlags, sInfo)
+				local sLocText = "";
+				--"SELECT [sTable].Yield, [sRefTable].Description
+				--FROM [sTable]
+				--INNER JOIN [sRefTable] ON [sTable].[sFieldName] = [sRefTable].Type
+				--WHERE [sTable].BuildingType = ?
+				--ORDER BY YieldType" -]]
+				if sRefTable == "" then
+					local sql = string.format(
+						"SELECT %s.Yield%s as Yield, Yields.IconString FROM %s INNER JOIN Yields ON %s.YieldType = Yields.Type WHERE %s.BuildingType = ? ORDER BY YieldType",
+						sTable, sFlags, sTable, sTable, sTable);
+					--print("Executing SQL ", sql);
+					for row in DB.Query(sql, thisBuilding.Type) do
+						sLocText = sLocText..string.format("%+d%s", row.Yield, row.IconString);
 					end
+				else
+					local sql = string.format(
+						"SELECT %s.Yield%s as Yield, Yields.IconString, %s.Description FROM %s INNER JOIN Yields ON %s.YieldType = Yields.Type INNER JOIN %s ON %s.%s = %s.Type WHERE %s.BuildingType = ? ORDER BY %s.Type, YieldType",
+						sTable, sFlags, sRefTable, sTable, sTable, sRefTable, sTable, sFieldName, sRefTable, sTable, sRefTable);
+					--print("Executing SQL ", sql);
+					local sGroup = "";
+					for row in DB.Query(sql, thisBuilding.Type) do
+						if sGroup == "" then
+							sLocText = sLocText..string.format("[NEWLINE][ICON_BULLET]%+d%s ", row.Yield, row.IconString);
+							sGroup = row.Description;
+						elseif row.Description == sGroup then
+							sLocText = sLocText..string.format("%+d%s ", row.Yield, row.IconString);
+						else
+							sLocText = sLocText.."from "..Locale.Lookup(sGroup);
+							sLocText = sLocText..string.format("[NEWLINE][ICON_BULLET]%+d%s ", row.Yield, row.IconString);
+							sGroup = row.Description;
+						end
+					end
+					if sGroup ~= "" then sLocText = sLocText.."from "..Locale.Lookup(sGroup); end
 				end
-				if sGroup ~= "" then sLocText = sLocText.."from "..Locale.Lookup(sGroup); end
+				if sLocText ~= "" then
+					sText = sText.."[NEWLINE]"..sInfo..sLocText;
+				end
 			end
-			if sLocText ~= "" then
-				sText = sText.."[NEWLINE]"..sInfo..sLocText;
-			end
+			-- main yields from building
+			--AnalyzeBuildingYields("Building_YieldChanges", 				 "", 					"", "", "");
+			--AnalyzeBuildingYields("Building_YieldChangesPerPop", 			 "", 					"", "%", "");
+			--AnalyzeBuildingYields("Building_YieldModifiers", 			     "", 					"", "%", "");
+			--                     secondary table                            field name           ref table         flags info text
+			AnalyzeBuildingYields("Building_TerrainYieldChanges",   	     "TerrainType", 		"Terrains",			"", 		"Yields from [COLOR_CYAN]Terrain[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_FeatureYieldChanges",            "FeatureType",       	"Features",			"", 		"Yields from [COLOR_CYAN]Features[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_ResourceYieldChanges",           "ResourceType",      	"Resources", 		"", 		"Yields from [COLOR_CYAN]Resources[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_SeaResourceYieldChanges", 		 "", 					"", 				"", 		"Yields from [COLOR_CYAN]Sea Resources[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_ImprovementYieldChanges",        "ImprovementType",   	"Improvements",  	"", 		"Yields from [COLOR_CYAN]Improvements[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_PlotYieldChanges",               "PlotType",          	"Plots",         	"", 		"Yields from [COLOR_CYAN]Tiles[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_LakePlotYieldChanges",           "",                  	"",             	"", 		"Yields from [COLOR_CYAN]Lake[ENDCOLOR] tiles:");
+			AnalyzeBuildingYields("Building_RiverPlotYieldChanges", 		 "", 					"", 				"", 		"Yields from [COLOR_CYAN]River[ENDCOLOR] tiles:");
+			AnalyzeBuildingYields("Building_SeaPlotYieldChanges", 			 "", 					"", 				"", 		"Yields from [COLOR_CYAN]Sea[ENDCOLOR] tiles:");
+			AnalyzeBuildingYields("Building_BuildingClassLocalYieldChanges", "BuildingClassType", 	"BuildingClasses", 	"Change", 	"Yields from [COLOR_CYAN]Buildings[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_SpecialistYieldChangesLocal",    "SpecialistType", 		"Specialists", 		"", 		"Yields from [COLOR_CYAN]Specialists[ENDCOLOR]:");
+			-- global changes
+			AnalyzeBuildingYields("Building_ImprovementYieldChangesGlobal",  "ImprovementType",   	"Improvements",    	"", 		"Yields from [COLOR_CYAN]Improvements[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_BuildingClassYieldChanges",      "BuildingClassType", 	"BuildingClasses", 	"Change", 	"Yields from [COLOR_CYAN]Buildings[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
+			AnalyzeBuildingYields("Building_SpecialistYieldChanges", 		 "SpecialistType", 		"Specialists", 		"", 		"Yields from [COLOR_CYAN]Specialists[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
+			-------------------
+			UpdateTextBlock( sText, Controls.ExtendedLabel,  Controls.ExtendedInnerFrame,  Controls.ExtendedFrame );
 		end
-		-- main yields from building
-		--AnalyzeBuildingYields("Building_YieldChanges", 				 "", 					"", "", "");
-		--AnalyzeBuildingYields("Building_YieldChangesPerPop", 			 "", 					"", "%", "");
-		--AnalyzeBuildingYields("Building_YieldModifiers", 			     "", 					"", "%", "");
-		--                     secondary table                            field name           ref table         flags info text
-		AnalyzeBuildingYields("Building_TerrainYieldChanges",   	     "TerrainType", 		"Terrains",			"", 		"Yields from [COLOR_CYAN]Terrain[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_FeatureYieldChanges",            "FeatureType",       	"Features",			"", 		"Yields from [COLOR_CYAN]Features[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_ResourceYieldChanges",           "ResourceType",      	"Resources", 		"", 		"Yields from [COLOR_CYAN]Resources[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_SeaResourceYieldChanges", 		 "", 					"", 				"", 		"Yields from [COLOR_CYAN]Sea Resources[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_ImprovementYieldChanges",        "ImprovementType",   	"Improvements",  	"", 		"Yields from [COLOR_CYAN]Improvements[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_PlotYieldChanges",               "PlotType",          	"Plots",         	"", 		"Yields from [COLOR_CYAN]Tiles[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_LakePlotYieldChanges",           "",                  	"",             	"", 		"Yields from [COLOR_CYAN]Lake[ENDCOLOR] tiles:");
-		AnalyzeBuildingYields("Building_RiverPlotYieldChanges", 		 "", 					"", 				"", 		"Yields from [COLOR_CYAN]River[ENDCOLOR] tiles:");
-		AnalyzeBuildingYields("Building_SeaPlotYieldChanges", 			 "", 					"", 				"", 		"Yields from [COLOR_CYAN]Sea[ENDCOLOR] tiles:");
-		AnalyzeBuildingYields("Building_BuildingClassLocalYieldChanges", "BuildingClassType", 	"BuildingClasses", 	"Change", 	"Yields from [COLOR_CYAN]Buildings[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_SpecialistYieldChangesLocal",    "SpecialistType", 		"Specialists", 		"", 		"Yields from [COLOR_CYAN]Specialists[ENDCOLOR]:");
-		-- global changes
-		AnalyzeBuildingYields("Building_ImprovementYieldChangesGlobal",  "ImprovementType",   	"Improvements",    	"", 		"Yields from [COLOR_CYAN]Improvements[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_BuildingClassYieldChanges",      "BuildingClassType", 	"BuildingClasses", 	"Change", 	"Yields from [COLOR_CYAN]Buildings[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
-		AnalyzeBuildingYields("Building_SpecialistYieldChanges", 		 "SpecialistType", 		"Specialists", 		"", 		"Yields from [COLOR_CYAN]Specialists[ENDCOLOR] in [COLOR_POSITIVE_TEXT]all Cities[ENDCOLOR]:");
-		-------------------
-		UpdateTextBlock( sText, Controls.ExtendedLabel,  Controls.ExtendedInnerFrame,  Controls.ExtendedFrame );
 		-- end Infixo
 
 		-- update the related images
@@ -4654,12 +4838,18 @@ CivilopediaCategory[CategoryBuildings].SelectArticle = function( buildingID, sho
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + buildingID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + buildingID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Building Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + buildingID)
 		end
-		endTopic = currentTopic;
 	end
 
 	SelectBuildingOrWonderArticle( buildingID );
@@ -4678,12 +4868,18 @@ CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldA
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryWonders * absurdlyLargeNumTopicsInCategory) + wonderID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryWonders * absurdlyLargeNumTopicsInCategory) + wonderID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Wonder Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryWonders * absurdlyLargeNumTopicsInCategory) + wonderID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if wonderID < 1000 then
@@ -4782,9 +4978,7 @@ CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldA
 			UpdateButtonFrame( buttonAdded, Controls.RequiredBuildingsInnerFrame, Controls.RequiredBuildingsFrame );
 
 			-- update the game info
-			if thisProject.Help then
-				UpdateTextBlock( Locale.ConvertTextKey( thisProject.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
-			end
+			UpdateTextBlock(GetHelpTextForProject(projectID, nil, true), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame);
 
 			-- update the strategy info
 			if (thisProject.Strategy) then
@@ -4814,12 +5008,18 @@ CivilopediaCategory[CategoryPolicies].SelectArticle = function( policyID, should
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryPolicies * absurdlyLargeNumTopicsInCategory) + policyID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryPolicies * absurdlyLargeNumTopicsInCategory) + policyID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Policy Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryPolicies * absurdlyLargeNumTopicsInCategory) + policyID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if policyID ~= -1 then
@@ -4929,12 +5129,18 @@ CivilopediaCategory[CategoryPeople].SelectArticle =  function( rawPeopleID, shou
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryPeople * absurdlyLargeNumTopicsInCategory) + rawPeopleID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryPeople * absurdlyLargeNumTopicsInCategory) + rawPeopleID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Specialist Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryPeople * absurdlyLargeNumTopicsInCategory) + rawPeopleID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if rawPeopleID < 1000 then
@@ -5031,10 +5237,86 @@ CivilopediaCategory[CategoryPeople].SelectArticle =  function( rawPeopleID, shou
 
 			-- list the buildings that can spawn this unit
 
-			-- update the game info
-			if thisPerson.Help then
-				UpdateTextBlock( Locale.ConvertTextKey( thisPerson.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+			-- update free promotions (Abilities)
+			g_PromotionsManager:ResetInstances();
+			buttonAdded = 0;
+
+			local condition = "UnitType = '" .. thisPerson.Type .. "'";
+			for row in GameInfo.Unit_FreePromotions( condition ) do
+				local promotion = GameInfo.UnitPromotions[row.PromotionType];
+				if promotion then
+					local thisPromotionInstance = g_PromotionsManager:GetInstance();
+					if thisPromotionInstance then
+						local textureOffset, textureSheet = IconLookup( promotion.PortraitIndex, buttonSize, promotion.IconAtlas );
+						if textureOffset == nil then
+							textureSheet = defaultErrorTextureSheet;
+							textureOffset = nullOffset;
+						end
+						UpdateSmallButton( buttonAdded, thisPromotionInstance.PromotionImage, thisPromotionInstance.PromotionButton, textureSheet, textureOffset, CategoryPromotions, Locale.ConvertTextKey( promotion.Description ), promotion.ID );
+						buttonAdded = buttonAdded + 1;
+					end
+				end
 			end
+			UpdateButtonFrame( buttonAdded, Controls.FreePromotionsInnerFrame, Controls.FreePromotionsFrame );
+
+			-- Are we a unique unit?  If so, who do I replace?
+			local replacesUnitClass = {};
+			local specificCivs = {};
+
+			local classOverrideCondition = string.format("UnitType='%s' and CivilizationType <> 'CIVILIZATION_BARBARIAN' and CivilizationType <> 'CIVILIZATION_MINOR'", thisPerson.Type);
+			for row in GameInfo.Civilization_UnitClassOverrides(classOverrideCondition) do
+				specificCivs[row.CivilizationType] = 1;
+				replacesUnitClass[row.UnitClassType] = 1;
+			end
+
+			g_ReplacesManager:ResetInstances();
+			buttonAdded = 0;
+			for unitClassType, _ in pairs(replacesUnitClass) do
+				for replacedUnit in DB.Query("SELECT u.ID, u.Description, u.PortraitIndex, u.IconAtlas, u.PrereqTech, u.Special from Units as u inner join UnitClasses as uc on u.Type = uc.DefaultUnit where uc.Type = ?", unitClassType) do
+					local thisUnitInstance = g_ReplacesManager:GetInstance();
+					if thisUnitInstance then
+						local textureOffset, textureSheet = IconLookup( replacedUnit.PortraitIndex, buttonSize, replacedUnit.IconAtlas );
+						if textureOffset == nil then
+							textureSheet = defaultErrorTextureSheet;
+							textureOffset = nullOffset;
+						end
+						-- Check if replaced unit is a Great Person
+						local replacedCategory = CategoryUnits;
+						local replacedEntryID = replacedUnit.ID;
+						if replacedUnit.PrereqTech == nil and replacedUnit.Special ~= nil then
+							-- This is a Great Person, use CategoryPeople with offset
+							replacedCategory = CategoryPeople;
+							replacedEntryID = replacedUnit.ID + 1000;
+						end
+						UpdateSmallButton( buttonAdded, thisUnitInstance.ReplaceImage, thisUnitInstance.ReplaceButton, textureSheet, textureOffset, replacedCategory, Locale.ConvertTextKey( replacedUnit.Description ), replacedEntryID );
+						buttonAdded = buttonAdded + 1;
+					end
+				end
+			end
+			UpdateButtonFrame( buttonAdded, Controls.ReplacesInnerFrame, Controls.ReplacesFrame );
+
+			g_CivilizationsManager:ResetInstances();
+			buttonAdded = 0;
+			for civilizationType, _ in pairs(specificCivs) do
+
+				local civ = GameInfo.Civilizations[civilizationType];
+				if(civ ~= nil) then
+					local thisCivInstance = g_CivilizationsManager:GetInstance();
+					if thisCivInstance then
+						local textureOffset, textureSheet = IconLookup( civ.PortraitIndex, buttonSize, civ.IconAtlas );
+						if textureOffset == nil then
+							textureSheet = defaultErrorTextureSheet;
+							textureOffset = nullOffset;
+						end
+						UpdateSmallButton( buttonAdded, thisCivInstance.CivilizationImage, thisCivInstance.CivilizationButton, textureSheet, textureOffset, CategoryCivilizations, Locale.ConvertTextKey( civ.ShortDescription ), civ.ID );
+						buttonAdded = buttonAdded + 1;
+					end
+				end
+			end
+			UpdateButtonFrame( buttonAdded, Controls.CivilizationsInnerFrame, Controls.CivilizationsFrame );
+
+			-- update the game info
+			UpdateTextBlock(GetHelpTextForUnit(greatPersonID, true, nil, true, true), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame);
 
 			-- update the strategy info
 			if (thisPerson.Strategy) then
@@ -5084,12 +5366,18 @@ CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, s
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryCivilizations * absurdlyLargeNumTopicsInCategory) + rawCivID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryCivilizations * absurdlyLargeNumTopicsInCategory) + rawCivID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Civilization Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryCivilizations * absurdlyLargeNumTopicsInCategory) + rawCivID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if rawCivID < 1000 then
@@ -5146,21 +5434,12 @@ CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, s
 
 								local unitCategory = CategoryUnits;
 								local unitEntryID = thisUnitInfo.ID;
-								--if(thisUnitInfo.Special == "SPECIALUNIT_PEOPLE") then
-									---- Either a great person or specialist.
-									--unitCategory = CategoryPeople;
-									--
-									---- Figure out which one it is!
-									--local bIsSpecialist = false;
-									--for row in GameInfo.Specialists{GreatPeopleUnitClass = thisUnitInfo.Class} do
-										--bIsSpecialist = true;
-										--break;
-									--end
-									--
-									--if(bIsSpecialist == false) then
-										--unitEntryID = unitEntryID + 1000;
-									--end
-								--end
+								-- Check if this is a Great Person
+								if thisUnitInfo.PrereqTech == nil and thisUnitInfo.Special ~= nil then
+									-- This is a Great Person, use CategoryPeople with offset
+									unitCategory = CategoryPeople;
+									unitEntryID = thisUnitInfo.ID + 1000;
+								end
 
 								UpdateSmallButton( buttonAdded, thisUnitInstance.UniqueUnitImage, thisUnitInstance.UniqueUnitButton, textureSheet, textureOffset, unitCategory, Locale.ConvertTextKey( thisUnitInfo.Description ), unitEntryID);
 								buttonAdded = buttonAdded + 1;
@@ -5227,6 +5506,53 @@ CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, s
 					end
 				end
 				UpdateButtonFrame( buttonAdded, Controls.UniqueImprovementsInnerFrame, Controls.UniqueImprovementsFrame );
+
+				-- get unique improvements that don't use CivilizationRequired. Flag is to set OrderPriority = 90. Can combine with above block perhaps?
+                local CD_condition = "Type IN (SELECT ImprovementType FROM Builds WHERE OrderPriority = 90 AND Type IN (SELECT BuildType FROM Trait_BuildsUnitClasses WHERE TraitType IN (SELECT TraitType FROM Leader_Traits WHERE LeaderType IN (SELECT LeaderheadType FROM Civilization_Leaders WHERE CivilizationType = '" .. thisCiv.Type .. "'))))";
+				for thisImprovement in GameInfo.Improvements( CD_condition ) do
+					local thisImprovementInstance = g_UniqueImprovementsManager:GetInstance();
+					if thisImprovementInstance then
+
+						if not IconHookup( thisImprovement.PortraitIndex, buttonSize, thisImprovement.IconAtlas, thisImprovementInstance.UniqueImprovementImage ) then
+							thisImprovementInstance.UniqueImprovementImage:SetTexture( defaultErrorTextureSheet );
+							thisImprovementInstance.UniqueImprovementImage:SetTextureOffset( nullOffset );
+						end
+
+						--move this button
+						thisImprovementInstance.UniqueImprovementButton:SetOffsetVal( (buttonAdded % numberOfButtonsPerRow) * buttonSize + buttonPadding, math.floor(buttonAdded / numberOfButtonsPerRow) * buttonSize + buttonPadding );
+
+						thisImprovementInstance.UniqueImprovementButton:SetToolTipString( Locale.ConvertTextKey( thisImprovement.Description ) );
+						thisImprovementInstance.UniqueImprovementButton:SetVoids( thisImprovement.ID, addToList );
+						thisImprovementInstance.UniqueImprovementButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryImprovements].SelectArticle );
+
+						buttonAdded = buttonAdded + 1;
+					end
+				end
+				UpdateButtonFrame( buttonAdded, Controls.UniqueImprovementsInnerFrame, Controls.UniqueImprovementsFrame );
+
+				-- list of unique projects
+				g_UniqueProjectsManager:ResetInstances();
+				buttonAdded = 0;
+				for thisProject in GameInfo.Projects( condition ) do
+					local thisProjectInstance = g_UniqueProjectsManager:GetInstance();
+					if thisProjectInstance then
+
+						if not IconHookup( thisProject.PortraitIndex, buttonSize, thisProject.IconAtlas, thisProjectInstance.UniqueProjectImage ) then
+							thisProjectInstance.UniqueProjectImage:SetTexture( defaultErrorTextureSheet );
+							thisProjectInstance.UniqueProjectImage:SetTextureOffset( nullOffset );
+						end
+
+						--move this button
+						thisProjectInstance.UniqueProjectButton:SetOffsetVal( (buttonAdded % numberOfButtonsPerRow) * buttonSize + buttonPadding, math.floor(buttonAdded / numberOfButtonsPerRow) * buttonSize + buttonPadding );
+
+						thisProjectInstance.UniqueProjectButton:SetToolTipString( Locale.ConvertTextKey( thisProject.Description ) );
+						thisProjectInstance.UniqueProjectButton:SetVoids( thisProject.ID + 1000, addToList );
+						thisProjectInstance.UniqueProjectButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryWonders].SelectArticle );
+
+						buttonAdded = buttonAdded + 1;
+					end
+				end
+				UpdateButtonFrame( buttonAdded, Controls.UniqueProjectsInnerFrame, Controls.UniqueProjectsFrame );
 
  				g_StartAlongRegionManager:ResetInstances();
 				buttonAdded = 0;
@@ -5585,12 +5911,18 @@ CivilopediaCategory[CategoryCityStates].SelectArticle = function( cityStateID, s
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryCityStates * absurdlyLargeNumTopicsInCategory) + cityStateID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryCityStates * absurdlyLargeNumTopicsInCategory) + cityStateID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: City-State Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryCityStates * absurdlyLargeNumTopicsInCategory) + cityStateID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if cityStateID ~= -1 then
@@ -5630,12 +5962,18 @@ CivilopediaCategory[CategoryTerrain].SelectArticle = function( rawTerrainID, sho
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryTerrain * absurdlyLargeNumTopicsInCategory) + rawTerrainID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryTerrain * absurdlyLargeNumTopicsInCategory) + rawTerrainID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Terrain Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryTerrain * absurdlyLargeNumTopicsInCategory) + rawTerrainID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if rawTerrainID < 1000 then
@@ -5987,12 +6325,18 @@ CivilopediaCategory[CategoryResources].SelectArticle = function( resourceID, sho
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryResources * absurdlyLargeNumTopicsInCategory) + resourceID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryResources * absurdlyLargeNumTopicsInCategory) + resourceID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Resource Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryResources * absurdlyLargeNumTopicsInCategory) + resourceID)
 		end
-		endTopic = currentTopic;
 	end
 
 	local thisPlayer = nil;
@@ -6243,12 +6587,18 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 	ClearArticle();
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryImprovements * absurdlyLargeNumTopicsInCategory) + improvementID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryImprovements * absurdlyLargeNumTopicsInCategory) + improvementID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Improvement Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryImprovements * absurdlyLargeNumTopicsInCategory) + improvementID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if improvementID ~= -1 and improvementID < 1000 then
@@ -6360,9 +6710,9 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 
 			numYields = 0;
 			yieldString = "";
-			terrainString = "";
-			fullstring = "";
-			baseTerrain = "";
+			local terrainString = "";
+			local fullstring = "";
+			local baseTerrain = "";
 			for row in GameInfo.Improvement_AdjacentTerrainYieldChanges( condition ) do
 				numYields = numYields + 1;
 				local Terrain = GameInfo.Terrains[row.TerrainType];
@@ -6389,8 +6739,9 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 
 			numYields = 0;
 			yieldString = "";
-			improvementString = "";
-			fullstring = "";
+			local improvementString = "";
+			local fullstring = "";
+			local hasFractionalYield = false
 			baseImprovement = "";
 			for row in GameInfo.Improvement_YieldPerXAdjacentImprovement ( condition ) do
 				numYields = numYields + 1;
@@ -6410,19 +6761,14 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 						local decimalYield = tostring(math.ceil(100*row.Yield/row.NumRequired)/100);
 						yieldString = decimalYield:gsub('%.?0*$', '');
 						-- should give X.17, X.2, X.34, X.5, X.67, X.84, X
+						if decimalYield ~= math.floor(decimalYield) then
+							hasFractionalYield = true
+						end
 					else
 						yieldString = row.Yield;
 					end
 					yieldString = " +" .. yieldString .. GameInfo.Yields[row.YieldType].IconString;
-					local teststring = fullstring .. Locale.ConvertTextKey( yieldString );
-					-- SetText will extract x and y dimensions of the label; use this to determine if we need to wrap
-					Controls.AdjacentImprovYieldLabel:SetText( teststring );
-					contentSize = Controls.AdjacentImprovYieldLabel:GetSize();
-					if contentSize.x > narrowInnerFrameWidth then
-						fullstring = fullstring .. "[NEWLINE]  " .. Locale.ConvertTextKey( yieldString );
-					else
-						fullstring = teststring;
-					end
+					fullstring = fullstring .. Locale.ConvertTextKey( yieldString );
 				end
 			end
 			for row in GameInfo.Improvement_YieldPerXAdjacentTerrain ( condition ) do
@@ -6440,30 +6786,28 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 						local decimalYield = tostring(math.ceil(100*row.Yield/row.NumRequired)/100);
 						yieldString = decimalYield:gsub('%.?0*$', '');
 						-- should give X.17, X.2, X.34, X.5, X.67, X.84, X
+						if decimalYield ~= math.floor(decimalYield) then
+							hasFractionalYield = true
+						end
 					else
 						yieldString = row.Yield;
 					end
 					yieldString = " +" .. yieldString .. GameInfo.Yields[row.YieldType].IconString;
-					local teststring = fullstring .. Locale.ConvertTextKey( yieldString );
-					-- SetText will extract x and y dimensions of the label; use this to determine if we need to wrap
-					Controls.AdjacentImprovYieldLabel:SetText( teststring );
-					contentSize = Controls.AdjacentImprovYieldLabel:GetSize();
-					if contentSize.x > narrowInnerFrameWidth then
-						fullstring = fullstring .. "[NEWLINE]  " .. Locale.ConvertTextKey( yieldString );
-					else
-						fullstring = teststring;
-					end
+					fullstring = fullstring .. Locale.ConvertTextKey( yieldString );
 				end
 			end
 			if numYields == 0 then
 				Controls.AdjacentImprovYieldFrame:SetHide( true );
 			else
+				if hasFractionalYield then
+					fullstring = fullstring .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_PEDIA_ADJACENT_YIELDS_EXPLANATION");
+				end
 				Controls.AdjacentImprovYieldFrame:SetHide( false );
 				UpdateNarrowTextBlock( fullstring, Controls.AdjacentImprovYieldLabel, Controls.AdjacentImprovYieldInnerFrame, Controls.AdjacentImprovYieldFrame );
 			end
 
-			local numYields = 0;
-			local yieldString = "";
+			numYields = 0;
+			yieldString = "";
 			for row in GameInfo.Improvement_YieldPerEra( condition ) do
 				numYields = numYields + 1;
 				if row.Yield > 0 then
@@ -6678,12 +7022,18 @@ CivilopediaCategory[CategoryBeliefs].SelectArticle = function(entryID, shouldAdd
 	offset = offset + entryID[2];
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + offset];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + offset];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Belief Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + offset)
 		end
-		endTopic = currentTopic;
 	end
 
 	if (entryID ~= nil) then
@@ -6713,7 +7063,7 @@ CivilopediaCategory[CategoryBeliefs].SelectArticle = function(entryID, shouldAdd
 
 				-- update the name
 				if (thisBelief.CivilizationType ~= nil and GameInfo.Civilizations[thisBelief.CivilizationType] ~= nil) then
-					Controls.ArticleID:LocalizeAndSetText("([COLOR_POSITIVE_TEXT]" .. Locale.ConvertTextKey(GameInfo.Civilizations[thisBelief.CivilizationType].Adjective) .. "[ENDCOLOR]) " .. Locale.ConvertTextKey(thisBelief.ShortDescription));
+					Controls.ArticleID:LocalizeAndSetText("[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[thisBelief.CivilizationType].Adjective) .. ")[ENDCOLOR] " .. Locale.ConvertTextKey(thisBelief.ShortDescription));
 				else
 					Controls.ArticleID:LocalizeAndSetText(thisBelief.ShortDescription);
 				end
@@ -6741,12 +7091,18 @@ CivilopediaCategory[CategoryWorldCongress].SelectArticle = function(entryID, sho
 	offset = offset + entryID[2];
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryWorldCongress * absurdlyLargeNumTopicsInCategory) + offset];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryWorldCongress * absurdlyLargeNumTopicsInCategory) + offset];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: World Congress Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryWorldCongress * absurdlyLargeNumTopicsInCategory) + offset)
 		end
-		endTopic = currentTopic;
 	end
 
 	if (entryID ~= nil) then
@@ -6855,12 +7211,18 @@ CivilopediaCategory[CategoryCorporations].SelectArticle = function(corporationID
 	local buttonAdded = 0;
 
 	if shouldAddToList == addToList then
-		currentTopic = currentTopic + 1;
-		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryCorporations * absurdlyLargeNumTopicsInCategory) + corporationID];
-		for i = currentTopic + 1, endTopic, 1 do
-			listOfTopicsViewed[i] = nil;
+		local article = categorizedList[(CategoryCorporations * absurdlyLargeNumTopicsInCategory) + corporationID];
+		if article then
+			currentTopic = currentTopic + 1;
+			listOfTopicsViewed[currentTopic] = article
+			for i = currentTopic + 1, endTopic, 1 do
+				listOfTopicsViewed[i] = nil;
+			end
+			endTopic = currentTopic;
+		else
+			print("Warning: Corporation Article could not be added to list of viewed topics: List ID " .. 
+				(CategoryCorporations * absurdlyLargeNumTopicsInCategory) + corporationID)
 		end
-		endTopic = currentTopic;
 	end
 
 	if (corporationID ~= -1 and corporationID < 1000) then
@@ -9028,6 +9390,7 @@ function ClearArticle()
 	Controls.RevealedResourcesFrame:SetHide( true );
 	Controls.RequiredResourcesFrame:SetHide( true );
 	Controls.RequiredPromotionsFrame:SetHide( true );
+	Controls.LeadsToPromotionsFrame:SetHide( true );
 	Controls.LocalResourcesFrame:SetHide( true );
 	Controls.WorkerActionsFrame:SetHide( true );
 	Controls.UnlockedProjectsFrame:SetHide( true );
@@ -9050,6 +9413,7 @@ function ClearArticle()
 	Controls.UniqueUnitsFrame:SetHide( true );
 	Controls.UniqueBuildingsFrame:SetHide( true );
 	Controls.UniqueImprovementsFrame:SetHide( true );
+	Controls.UniqueProjectsFrame:SetHide( true );
 	Controls.StartAlongRegionFrame:SetHide( true );
 	Controls.StartPriorityRegionFrame:SetHide( true );
 	Controls.StartAvoidRegionFrame:SetHide( true );
@@ -9136,7 +9500,7 @@ Controls.ForwardButton:RegisterCallback( Mouse.eLClick, OnForwardButtonClicked )
 -------------------------------------------------------------------------------
 
 function SearchForPediaEntry( searchString )
-
+	
 	UIManager:SetUICursor( 1 );
 
     if( searchString ~= nil and searchString ~= "" ) then
@@ -9306,23 +9670,34 @@ Controls.SearchEditBox:RegisterCallback( OnSearchTextEnter );
 
 function OnSearchNotFoundOK()
 	Controls.SearchFoundNothing:SetHide(true);
+	Controls.SearchEditBox:TakeFocus()
 end
 Controls.OK:RegisterCallback(Mouse.eLClick, OnSearchNotFoundOK );
 
 function InputHandler( uiMsg, wParam, lParam )
-    if(uiMsg == KeyEvents.KeyDown) then
+	if(uiMsg == KeyEvents.KeyDown) then
 		if(not Controls.SearchFoundNothing:IsHidden()) then
 			if(wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN) then
 				Controls.SearchFoundNothing:SetHide(true);
+				Controls.SearchEditBox:TakeFocus()
 				return true;
 			end
 		else
+			if wParam == Keys.F and UIManager:GetControl() then
+				Controls.SearchEditBox:TakeFocus()
+				return true
+			end
+
 			if(wParam == Keys.VK_ESCAPE) then
 				OnClose();
 				return true;
 			end
 		end
-    end
+
+		if ContextPtr and not ContextPtr:IsHidden() then
+			return true
+		end
+	end
 end
 ContextPtr:SetInputHandler( InputHandler );
 
@@ -9345,7 +9720,7 @@ function ShowHideHandler( isHide )
 				CivilopediaCategory[CategoryHomePage].DisplayHomePage();
 			end
 		end
-
+		Controls.SearchEditBox:TakeFocus()
 	end
 end
 ContextPtr:SetShowHideHandler( ShowHideHandler );

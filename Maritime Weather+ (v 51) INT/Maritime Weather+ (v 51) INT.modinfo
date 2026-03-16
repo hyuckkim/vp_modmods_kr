@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ae2736cc-5335-4d06-9d08-14eb1a96e641" version="51">
+  <Properties>
+    <Name>Maritime Weather+ (v 51) INT</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>해상에 초점을 맞춘 날씨 모드</Teaser>
+    <Description>절차적 규칙 체계를 통해 날씨 발생 및 이동을 제어하여 바다에 폭풍을 추가합니다.</Description>
+    <Authors>Tekamthi</Authors>
+    <SpecialThanks>ghost toast, zai4z, whoward, VP &amp;amp; CF communities</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="510755cb-e70a-4860-bc8b-2c627f0cb096" minversion="0" maxversion="999" title="Maritime Weather+" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="E53D00A60F5713FFB7DE578ABF244E20" import="0">MBweatherDB.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>MBweatherDB.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

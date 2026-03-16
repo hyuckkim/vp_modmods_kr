@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED">
+			<Text>Worker automation cancelled!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED">
+			<Text>Your worker automation has been cancelled as they are about to embark.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_de_DE>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED">
+			<Text>Arbeiter Automatisierung abgebrochen!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED">
+			<Text>Ihre Arbeiter Automatisierung wurde abgebrochen, da er das Land verlassen wollte.</Text>
+		</Row>
+	</Language_de_DE>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_AUTOMATION_CANCELLED">
+			<Text>노동자의 자동화가 취소되었습니다!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_AUTOMATION_CANCELLED">
+			<Text>당신의 노동자 자동화는 승선 직전에 취소되었습니다.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>

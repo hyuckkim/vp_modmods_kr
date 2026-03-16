@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="4c4c3336-e07a-4ee2-8fa6-2b9e0054c1d1" version="8">
+  <Properties>
+    <Name>UI - Overlay City Limits</Name>
+    <Teaser>Highlight city limits in strategic view</Teaser>
+    <Description>Adds a "City Limits" option to the overlay drop-down menu in the strategic view that displays the limits (workable tiles) of cities, using different colours for the player's cities, AI cities and City States.
+
+Hooks into the MiniMap Panel Overlay drop-down via the "Utils - Modular MiniMap Overlays" mod</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?116901-MOD-UI-City-Limits</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UI</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1C6BAFEF7FDDAF4AC74A5B89C9203949" import="0">UI/OverlayCityLimits.lua</File>
+    <File md5="9D95308F5E2892FF1107CE2C4693B2CA" import="0">UI/OverlayCityLimits.xml</File>
+    <File md5="8C7725720F1BBC44772701826F8C6810" import="1">UI/OverlayCityLimits_MiniMapOverlayHook.lua</File>
+    <File md5="C92920D0D37DAF684A2A85AF901D86A6" import="1">UI/InGame/WorldView/MiniMapPanel.lua</File>
+    <File md5="30DA347A84335FF224FA613C969A35F0" import="1">UI/InGame/WorldView/MiniMapPanel.xml</File>
+    <File md5="FE3F121F39FEA89B446AA42C6DBADB82" import="0">XML/UICityLimits.xml</File>
+    <File md5="26B4CA382FB46E2F40C92A570E66A47E" import="0">XML/MiniMapPanel.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/MiniMapPanel.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UICityLimits.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/OverlayCityLimits.xml">
+      <Name>City Limits</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="MiniMapOverlayAddin" file="UI/OverlayCityLimits_MiniMapOverlayHook.lua">
+      <Name>City Limits MiniMap Overlay Hook</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

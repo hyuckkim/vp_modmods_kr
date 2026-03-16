@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Even More Resources for Vox Populi UCS INT", "Even More Resources for Vox Populi UCS INT\Even More Resources for Vox Populi UCS INT.civ5proj", "{97436402-E79B-42FA-BCA2-4429672C3265}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Default|x86.ActiveCfg = Default|x86
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Default|x86.Build.0 = Default|x86
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Package Only|x86.ActiveCfg = Package Only|x86
+		{97436402-E79B-42FA-BCA2-4429672C3265}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_en_US>
+    <Row Tag="TXT_KEY_GOLD_ALERT_HEADING">
+      <Text>Gold Alert Details</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_MESSAGE">
+      <Text>Message:</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_MESSAGE_TT">
+      <Text>Message to display when target [ICON_GOLD]gold amount has been reached</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_AMOUNT">
+      <Text>[ICON_GOLD]Amount:</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_AMOUNT_TT">
+      <Text>Target [ICON_GOLD]gold amount (use an amount of [ICON_GOLD]0 to disable gold alerts)</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_BUTTON_OK">
+      <Text>Set</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_GOLD_ALERT_DEFAULT_MESSAGE">
+      <Text>You have enough [ICON_GOLD]gold to buy a settler</Text>
+    </Row>
+  </Language_en_US>
+  <Language_ko_KR>
+    <Row Tag="TXT_KEY_GOLD_ALERT_HEADING">
+      <Text>골드 알림</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_MESSAGE">
+      <Text>메시지:</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_MESSAGE_TT">
+      <Text>[ICON_GOLD] 골드가 목표한 금액에 도달했을 때 표시할 메시지</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_AMOUNT">
+      <Text>[ICON_GOLD] 금액:</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_AMOUNT_TT">
+      <Text>목표 [ICON_GOLD] 골드 금액 (0을 사용하면 골드 알림 비활성화)</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GOLD_ALERT_BUTTON_OK">
+      <Text>설정</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_GOLD_ALERT_DEFAULT_MESSAGE">
+      <Text>길잡이</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

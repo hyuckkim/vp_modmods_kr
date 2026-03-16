@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{7c52f2fb-df99-453c-b364-225324a2831d}</ProjectGuid>
+    <Name>(overhaul) Unique City States for VP INT</Name>
+    <Guid>d92d4f73-9248-44c5-89b0-5cd1bbb4c5ab</Guid>
+    <ModVersion>18</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>문명 6의 종주국 개념에서 영감을 받은 이 모드는 Vox Populi에 해당 개념을 도입하여 도시 국가들이 동맹을 맺을 때 고유한 특성을 느낄 수 있도록 합니다.
+
+두 모드의 종주국 개념이 기본적으로 동일하기 때문에 Sukr</Teaser>
+    <Description>문명 6의 종주국 개념에서 영감을 받은 이 모드는 Vox Populi에 해당 개념을 도입하여 도시 국가들이 동맹을 맺을 때 고유한 특성을 느낄 수 있도록 합니다.
+
+두 모드의 종주국 개념이 기본적으로 동일하기 때문에 Sukritact의 종주국 모드와는 호환되지 않습니다.</Description>
+    <Authors>HANDANI</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>(overhaul) Unique City States for VP INT</AssemblyName>
+    <RootNamespace>(overhaul) Unique City States for VP INT</RootNamespace>
+    <ModReferences />
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>(overhaul) Unique City States for VP</Name>
+        <Id>b2eb6d1e-1fcb-4a0d-829c-51691aa3183a</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/Bonuses.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/UCSTexts.xml</FileName>
+      </Action>
+    </ModActions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+    <Folder Include="XML\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\Bonuses.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\UCSTexts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

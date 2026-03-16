@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bd202052-8a8c-4b7f-8a75-ee95043c6051" version="1">
+  <Properties>
+    <Name>Auto-Sell Buildings [ICON_INVEST]</Name>
+    <Stability>Stable</Stability>
+    <Teaser>Automatically sells all buildings in a razing city</Teaser>
+    <Description>The following turn after a city has been set ablaze by a human player, all sellable buildings will be deleted and the total gold refunded</Description>
+    <Authors>[COLOR_CYAN]zai4z[ENDCOLOR]</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="A097B1E020767D87C8725E73FC3CAED4" import="0">Lua/AutoSellBuildings.lua</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/AutoSellBuildings.lua">
+      <Name>AutoSellBuildings</Name>
+      <Description>Automatically sells all buildings in a razing city</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

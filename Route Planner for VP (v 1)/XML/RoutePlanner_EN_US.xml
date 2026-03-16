@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/27/2023 3:19:45 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_RP_ROUTE_PLANNER">
+			<Text>Route Planner</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_SHOW_CITY_CONNECTIONS">
+			<Text>Show City Connections</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_SHOW_ROAD_PLANS">
+			<Text>Show Road Plans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_EXPLAIN_AUTOMATED_ROUTES">
+			<Text>Explain Automated Routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_DRAW_ROAD_PLAN">
+			<Text>Road Plan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_DRAW_PRIORITY_CONSTRUCTION_PLAN">
+			<Text>Priority Construction Plan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_ERASE_ROAD_PLANS">
+			<Text>Erase Road Plans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_DRAW_NO_BUILD_ZONE">
+			<Text>No-Build Zone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_ALL_NO_BUILD">
+			<Text>Mark All Tiles No-Build</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_ALL_RESET">
+			<Text>Reset All Tile Plans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_FINISH_DRAWING">
+			<Text>Finish Drawing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_MAIN_ROUTE">
+			<Text>Main Route</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_SHORTCUT_ROUTE">
+			<Text>Shortcut Route</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_STRATEGIC_ROUTE">
+			<Text>Strategic Route</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_LEGEND">
+			<Text>Legend</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_CLOSE">
+			<Text>Close</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_TT_DRAW_ROAD_PLAN">
+			<Text>Right click when hovering over a tile and drag to paint a road plan that automated workers will prefer when choosing between similar routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_TT_DRAW_PRIORITY_CONSTRUCTION_PLAN">
+			<Text>Right click when hovering over a tile and drag to paint a work order for a route that will task closest automated workers to start building roads here immediately</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_TT_ERASE_ROAD_PLANS">
+			<Text>Right click when hovering over a tile and drag to erase existing plans and reset them to their default behavior</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_TT_DRAW_NO_BUILD_ZONE">
+			<Text>Right click when hovering over a tile and drag to paint a no-build zone where automated workers will never build roads</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_MAP_HIGHLIGHTS">
+			<Text>Map Highlights</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_DRAW_TOOLS">
+			<Text>Draw Tools</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RP_WHOLE_MAP_ACTIONS">
+			<Text>Whole Map Actions</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

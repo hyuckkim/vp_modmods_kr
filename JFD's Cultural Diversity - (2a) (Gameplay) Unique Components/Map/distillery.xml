@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<GameData>
+	<ArtDefine_LandmarkTypes>
+		<Row>
+			<Type>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</Type>
+			<LandmarkType>Improvement</LandmarkType>
+			<FriendlyName>MC_BUCCANEER_DISTILLERY</FriendlyName>
+		</Row>
+	</ArtDefine_LandmarkTypes>
+	<ArtDefine_Landmarks>
+		<Row>
+			<Era>Ancient</Era>
+			<State>UnderConstruction</State>
+			<Scale>1</Scale>
+			<ImprovementType>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<LayoutHandler>SNAPSHOT</LayoutHandler>
+			<ResourceType>ART_DEF_RESOURCE_ALL</ResourceType>
+			<Model>new_distillery_hb.fxsxml</Model>
+			<TerrainContour>1</TerrainContour>
+		</Row>
+		<Row>
+			<Era>Ancient</Era>
+			<State>Constructed</State>
+			<Scale>1</Scale>
+			<ImprovementType>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<LayoutHandler>SNAPSHOT</LayoutHandler>
+			<ResourceType>ART_DEF_RESOURCE_ALL</ResourceType>
+			<Model>new_distillery.fxsxml</Model>
+			<TerrainContour>1</TerrainContour>
+		</Row>
+		<Row>
+			<Era>Ancient</Era>
+			<State>Pillaged</State>
+			<Scale>1</Scale>
+			<ImprovementType>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<LayoutHandler>SNAPSHOT</LayoutHandler>
+			<ResourceType>ART_DEF_RESOURCE_ALL</ResourceType>
+			<Model>new_distillery_pl.fxsxml</Model>
+			<TerrainContour>1</TerrainContour>
+		</Row>
+	</ArtDefine_Landmarks>
+	<ArtDefine_StrategicView>
+		<Row>
+			<StrategicViewType>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</StrategicViewType>
+			<TileType>Improvement</TileType>
+			<Asset>sv_distillery.dds</Asset>
+		</Row>
+	</ArtDefine_StrategicView>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</Type>
+			<Description>TXT_KEY_MC_BUCCANEER_DISTILLERY</Description>
+			<Civilopedia>TXT_KEY_MC_BUCCANEER_DISTILLERY_TEXT</Civilopedia>
+			<Help>TXT_KEY_MC_BUCCANEER_DISTILLERY_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ArtDefineTag>
+			<!--<ImprovementUpgrade>IMPROVEMENT_MC_BUCCANEER_DISTILLERY_VINTAGE</ImprovementUpgrade>
+			<UpgradeTime>2</UpgradeTime>-->
+			<PillageGold>20</PillageGold>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<ImprovementResource>RESOURCE_MC_RUM</ImprovementResource>
+		</Row>
+		<!-- theres a bugged interaction between upgrade and improvementresource where it doesnt connect it -->
+		<!--<Row>
+			<Type>IMPROVEMENT_MC_BUCCANEER_DISTILLERY_VINTAGE</Type>
+			<Description>TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE</Description>
+			<Civilopedia>TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE_TEXT</Civilopedia>
+			<Help>TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ArtDefineTag>
+			<PillageGold>40</PillageGold>
+			<PortraitIndex>62</PortraitIndex>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+			<ImprovementResource>RESOURCE_MC_RUM</ImprovementResource>
+		</Row>-->
+	</Improvements>
+	<Improvement_Flavors>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Improvement_Flavors>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<ResourceType>RESOURCE_WHEAT</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<ResourceType>RESOURCE_RICE</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<ResourceType>RESOURCE_MAIZE</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<ResourceType>RESOURCE_BANANA</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<ResourceType>RESOURCE_MC_RUM</ResourceType>
+		</Row>
+	</Improvement_ResourceTypes>
+	<Builds>
+		<Row>
+			<Type>BUILD_MC_BUCCANEER_DISTILLERY</Type>
+			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<Time>800</Time>
+			<ImprovementType>IMPROVEMENT_MC_BUCCANEER_DISTILLERY</ImprovementType>
+			<Description>TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY</Description>
+			<Help>TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>90</OrderPriority>
+			<CtrlDown>1</CtrlDown>
+			<IconIndex>63</IconIndex>
+			<IconAtlas>CD_ECONOMIC_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_MC_BUCCANEER_DISTILLERY</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Time>200</Time>
+			<Production>0</Production>
+			<Cost>0</Cost>
+			<Remove>0</Remove>
+		</Row>
+	</BuildFeatures>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY">
+			<Text>Distillery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY_HELP">
+			<Text>Requires the [ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] Cultural Group. Can create Distilleries on [ICON_RES_WHEAT] Wheat, [ICON_RES_MAIZE] Maize, [ICON_RES_RICE] Rice, and [ICON_RES_BANANA] Bananas that converts them to the [ICON_RES_MC_RUM] Liquor Luxury Resource. Liquor provides +1 [ICON_CULTURE] Culture to [ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] Empires with each [ICON_GOLDEN_AGE] Golden Age (max +5).</Text>
+<!-- When a City has a Distillery for long enough, receive +3 [ICON_GOLD] Gold and [ICON_CULTURE] Culture from all nearby Distilleries and a sum of [ICON_GREAT_MERCHANT] Great Merchant Points. -->
+		</Row>
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY_TEXT">
+			<Text>Requires the [ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] Cultural Group. Can create Distilleries on [ICON_RES_WHEAT] Wheat, [ICON_RES_MAIZE] Maize, [ICON_RES_RICE] Rice, and [ICON_RES_BANANA] Bananas that converts them to the [ICON_RES_MC_RUM] Liquor Luxury Resource. Liquor provides +1 [ICON_CULTURE] Culture to [ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] Empires with each [ICON_GOLDEN_AGE] Golden Age (max +5).[NEWLINE][NEWLINE]In 1500, German alchemist Hieronymus Brunschwig published Liber de arte distillandi de simplicibus (The Book of the Art of Distillation out of Simple Ingredients), the first book solely dedicated to the subject of distillation, followed in 1512 by a much expanded version. Right after that, in 1518, the oldest surviving distillery in Europe, The Green Tree Distillery, was founded. Early forms of distillation involved batch processes using one vaporization and one condensation in vessels called restorts and alembics. These evolved into the pot sitll, which is still used in the production of liquor, in spite of the fact that more modern techniques, including pre-heating and reflux, have since been developed.[NEWLINE][NEWLINE]Distilling was most likely brought to present-day Kentucky in the late 18th century by Scots, Scots-Irish, and other settlers (including English, Irish, Welsh, German, and French) who began to farm the area. Although many distilleries operated in Bourbon County historically, no distilleries operated there between 1919, when Prohibition began in Kentucky, and late 2014, when a small distillery opened – a period of 95 years. After World War II whiskey transitioned from a primarily domestic product to a major export product. The war introduced many American soldiers to whiskey, and veterans boosted a growing domestic demand. The postwar economic boom and the rise of consumer culture fueled whiskey's golden age in the 1950s and 1960s, solidifying its place in global markets.[NEWLINE][NEWLINE]Many historians now believe that rum-making found its way to the Caribbean islands along with sugarcane and its cultivation methods from Brazil. The traditional history of modern-style rum tells of its invention in the Caribbean, in the 17th century, by slaves on sugarcane plantations, who discovered that molasses, a by-product of the sugar refining process, could be fermented to produce alcohol, and then distilled. Rum plays a part in the culture of most islands of the West Indies as well as the Maritime provinces and Newfoundland, in Canada. It has associations with the Royal Navy (where it was mixed with water or beer to make grog) and Caribbean piracy (where it was consumed as bumbo).</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE">
+			<Text>Vintage Distillery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE_HELP">
+			<Text>Upgrades from the base Distillery when worked for X turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_BUCCANEER_DISTILLERY_VINTAGE_TEXT">
+			<Text>I cant believe they overturned prohibition.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY">
+			<Text>Construct a [LINK=IMPROVEMENT_MC_BUCCANEER_DISTILLERY]Distillery[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY_HELP">
+			<Text>Unlocked at the discovery of Chemistry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_BUCCANEER_DISTILLERY_REC">
+			<Text>It will increase the amount of [ICON_FOOD] Food and [ICON_GOLD] Gold provided by this tile and change the Resource on this tile to a [ICON_RES_MC_RUM] Liquor Luxury Resource.</Text>
+		</Row>
+	</Language_en_US>
+
+
+</GameData>

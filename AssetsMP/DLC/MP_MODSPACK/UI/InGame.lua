@@ -144,6 +144,16 @@ function ClickSelect( wParam, lParam )
 		local bAlt = UIManager:GetAlt();
 		local bCtrl = UIManager:GetControl();
 		UI.LocationSelect(plot, bCtrl, bAlt, bShift);
+		-- fix the bug that no unit is being selected when clicking on a city tile
+		if (not bCityScreenOpen and plot:IsCity() and plot:GetOwner() == Game.GetActivePlayer()) then
+			local pSelectedUnit =  UI.GetHeadSelectedUnit()
+			if (pSelectedUnit == NULL or pSelectedUnit:GetX() ~= plot:GetX() or pSelectedUnit:GetY() ~= plot:GetY()) then
+				local pUnit = plot:GetBestDefender(plot:GetOwner(), -1)
+				if pUnit then
+					UI.SelectUnit(pUnit);
+				end
+			end
+		end
 	end
 	return true;
 end
@@ -1269,6 +1279,15 @@ end
 
 Events.GameViewTypeChanged.Add(OnGameViewTypeChanged);
 
+---------------------------------------------------------------------------------------
+-- Remove the super global VP table when the game is ended (e.g. back to main menu),
+-- in case ModMapData persists across mod unloading
+---------------------------------------------------------------------------------------
+ContextPtr:SetShutdown(function ()
+	print("Shutting down InGame.lua");
+	MapModData.VP = nil;
+	MapModData.CommonContext = nil;
+end);
 
 ---------------------------------------------------------------------------------------
 -- Support for Modded Add-in UI's
@@ -1300,71 +1319,14 @@ ContextPtr:LoadNewContext("OverlayAntiquities")
 ContextPtr:LoadNewContext("RandomVCPopup")
 ContextPtr:LoadNewContext("VassalageOverview")
 ContextPtr:LoadNewContext("Squads")
-ContextPtr:LoadNewContext("EventLUA")
-ContextPtr:LoadNewContext("CompatibilityFile")
 ContextPtr:LoadNewContext("VPEE_Functions")
 ContextPtr:LoadNewContext("WonderPlanner")
-ContextPtr:LoadNewContext("buildingChecks")
-ContextPtr:LoadNewContext("resourcePlacement")
-ContextPtr:LoadNewContext("ElephantSoundOnCircusBuild")
+ContextPtr:LoadNewContext("AutoSellBuildings")
 ContextPtr:LoadNewContext("IGE_Loader")
+ContextPtr:LoadNewContext("JFD_CulDiv_DawnOfManPopup")
+ContextPtr:LoadNewContext("JFD_CulDiv_UnitDialogue_Functions")
+ContextPtr:LoadNewContext("DummyPolicies")
+ContextPtr:LoadNewContext("EventTrigger")
 ContextPtr:LoadNewContext("QuickTurns")
 ContextPtr:LoadNewContext("QuickTurnsDialog")
 ContextPtr:LoadNewContext("PromotionTree")
-ContextPtr:LoadNewContext("AltiCur")
-ContextPtr:LoadNewContext("Amazonas")
-ContextPtr:LoadNewContext("Armada")
-ContextPtr:LoadNewContext("BaanChang")
-ContextPtr:LoadNewContext("Ballista")
-ContextPtr:LoadNewContext("Bancogiro")
-ContextPtr:LoadNewContext("Barbican")
-ContextPtr:LoadNewContext("BeerHall")
-ContextPtr:LoadNewContext("BuffaloPound")
-ContextPtr:LoadNewContext("BullRing")
-ContextPtr:LoadNewContext("Cacadores")
-ContextPtr:LoadNewContext("Charbagh")
-ContextPtr:LoadNewContext("Chasqui")
-ContextPtr:LoadNewContext("Corsair")
-ContextPtr:LoadNewContext("Dhanuraashi")
-ContextPtr:LoadNewContext("Etemenanki")
-ContextPtr:LoadNewContext("ExaminationHall")
-ContextPtr:LoadNewContext("Fornix")
-ContextPtr:LoadNewContext("GreatTurkishBombard")
-ContextPtr:LoadNewContext("Hippodrome")
-ContextPtr:LoadNewContext("Holkan")
-ContextPtr:LoadNewContext("HueyTeocalli")
-ContextPtr:LoadNewContext("Induna")
-ContextPtr:LoadNewContext("IronChariot")
-ContextPtr:LoadNewContext("Iziko")
-ContextPtr:LoadNewContext("Kabuki")
-ContextPtr:LoadNewContext("Kibitum")
-ContextPtr:LoadNewContext("Klepht")
-ContextPtr:LoadNewContext("KruppGun")
-ContextPtr:LoadNewContext("Landwehr")
-ContextPtr:LoadNewContext("Langskib")
-ContextPtr:LoadNewContext("Latifundium")
-ContextPtr:LoadNewContext("Mamluk")
-ContextPtr:LoadNewContext("MonolithicChurch")
-ContextPtr:LoadNewContext("Parthenon")
-ContextPtr:LoadNewContext("Pitz")
-ContextPtr:LoadNewContext("Gumey")
-ContextPtr:LoadNewContext("Qila")
-ContextPtr:LoadNewContext("Qullqa")
-ContextPtr:LoadNewContext("Ranch")
-ContextPtr:LoadNewContext("Riad")
-ContextPtr:LoadNewContext("Salon")
-ContextPtr:LoadNewContext("Schutterij")
-ContextPtr:LoadNewContext("SeirMorb")
-ContextPtr:LoadNewContext("Shophet")
-ContextPtr:LoadNewContext("Sofa")
-ContextPtr:LoadNewContext("Tadodaho")
-ContextPtr:LoadNewContext("Tarkhan")
-ContextPtr:LoadNewContext("Telpochcalli")
-ContextPtr:LoadNewContext("Tersane")
-ContextPtr:LoadNewContext("TeutonicOrder")
-ContextPtr:LoadNewContext("Tophet")
-ContextPtr:LoadNewContext("University of Coimbra")
-ContextPtr:LoadNewContext("XiafanGuanjun")
-ContextPtr:LoadNewContext("Yamato")
-ContextPtr:LoadNewContext("YassaCourt")
-ContextPtr:LoadNewContext("YellowBrow")

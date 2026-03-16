@@ -1,0 +1,3 @@
+UPDATE Language_ko_KR
+SET Text = '[COLOR_POSITIVE_TEXT]체력이 50% 이상인 유닛[ENDCOLOR]을 공격할 때 [ICON_STRENGTH] 전투력이 +30% 증가합니다.'
+WHERE Tag = 'TXT_KEY_PROMOTION_HAKKAA_PAALLE_HELP';

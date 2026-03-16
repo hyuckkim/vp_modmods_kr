@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black" Font="TwCenMT16" FontStyle="Shadow" Name="LeaderHeadRoot" >
+
+	<Image Anchor="C,C" Offset="0,0" Texture="alexander.dds" Size="Full,Full" ID="BackupTexture"  Hidden="True" />
+
+	<Box Anchor="C,C" Offset="0,0" Color="0,0,0,0" Size="Full,Full" ID="RootOptions" >
+		
+		<GridButton Style="FrameButton200" Offset="40,40" Anchor="L,T" String="TXT_KEY_BACKUP_EXIT" ID="BACKUP_EXIT" Hidden="1" />
+		<GridButton Style="FrameButton200" Offset="40,40" Anchor="L,B" String="TXT_KEY_SHOW_HIS" ID="CHAT_TOGGLE" />
+		
+		<ScrollPanel ID="ScrollPanel" Offset="0,100" AutoScrollBar="1" Size="550,800" Anchor="C,B" Vertical="1" >
+
+			<!-- Scroll Controls -->
+			<ScrollBar Offset="30,0" Style="VertSlider" Length="400" Anchor="R,C" AnchorSide="O,I" ID="SBar" />
+			<UpButton  Offset="30,-209"  Style="ScrollBarUp"  Anchor="R,C" AnchorSide="O,I" />
+			<DownButton Offset="30,209" Style="ScrollBarDown"  Anchor="R,C" AnchorSide="O,I" />
+			
+			
+			<Stack Anchor="C,B" Padding="10" StackGrowth="Bottom" ID="MessageStack" />
+		
+		</ScrollPanel>
+		
+		<Stack ID="REPLY_STACK" Anchor="C,B" Offset="0,20" Padding="10" StackGrowth="Bottom" />
+		
+		<Stack ID="DIPLO_STACK" Anchor="R,B" Offset="100,40" Padding="10" StackGrowth="Top" />
+		
+		<Button Anchor="C,C" Size="Full,Full" ID="LeaderPickerOverlay" Hidden="1" ConsumeMouseOver="1">
+			<Box Size="Full,Full" Color="0,0,0,64" />
+			<Grid Size="500,500" Anchor="R,B" Offset="0,0" Style="GridBlackIndent8" ID="LeaderPickerPanel" ConsumeMouseOver="1">
+				<Grid Anchor="C,C" Offset="0,0" Size="504,504" Padding="0,0" Style="Grid9Frame" Hidden="0" ID="LeaderPickerBorder"/>
+				<Grid Size="200,32" Anchor="L,T" Offset="40,-32" Style="GridBlackIndent8" ConsumeMouseOver="1">
+					<Grid Anchor="C,C" Size="204,36" Style="Grid9Frame" />
+					<Label Anchor="C,C" String="TXT_KEY_LEADER_PICK" ID="LeaderPickerText" Font="TwCenMT20"/>
+				</Grid>
+			</Grid>
+			
+		</Button>
+	</Box>
+	
+	<Instance Name="LeaderButtonInstance">
+		<Container Size="80,80" Anchor="L,T" ID="Panel">
+			<GridButton ID="Button" Size="70,70" Anchor="C,C">
+				<GridData Style="Grid9DarkBlue8Button" />
+				
+				<Image Anchor="C,C" Texture="IconFrame64.dds" Size="64.64" ID="HEADFRAME" >
+					<Image ID="HEAD" Offset="0,0" Anchor="C,C" Size="64.64" Texture="LeaderPortraits512.dds" >
+						<Image ID="CivIconBG" Size="32.32" Anchor="C,C" Offset="0,18" TextureOffset="32,0" Texture="CivIconBGSizes.dds" >
+							<Image ID="CivIconShadow" Size="24.24" Anchor="C,C" Offset="1,1" Texture="CivSymbolAtlas16.dds" Color="Black.128" />
+							<Image ID="CivIcon" Size="24.24" Anchor="C,C" Texture="CivSymbolsColor256.dds" />
+						</Image>
+					</Image>
+				</Image>
+				<Grid Anchor="C,C" Offset="0,0" Size="74,74" Padding="0,0" Style="Grid9Frame" Hidden="0" />
+				<ShowOnMouseOver>
+					<AlphaAnim Anchor="C,C" Offset="0,0" Size="70,70" TextureOffset="0.0"  Pause="0" Cycle="Bounce" Speed="1" AlphaStart="0" AlphaEnd=".3" >
+						<Grid  Size="70,70" Anchor="C,C" Offset="0,0" Style="Grid9Highlight8" />
+					</AlphaAnim>
+				</ShowOnMouseOver>
+			</GridButton>
+		</Container>
+	</Instance>
+	
+	
+	
+	<Instance Name="MessageInstance"><Container ID="MESSAGE" Size="550,94" >
+	
+		<Grid Size="120,24" Anchor="C,T" Style="GridBlackIndent8" ID="TURNPANEL">
+			<Grid Anchor="C,C" Size="124,28" Style="Grid9Frame" ID="TURN_BORDER" />
+			<Label Anchor="C,C" String="TXT_KEY_TURN_TIME" ID="TURN" />
+		</Grid>
+		
+		<Grid Size="520,94" Anchor="L,T" Offset="0,0" Style="GridBlackIndent8" ID="PAN">
+			<Grid Anchor="C,C" Offset="0,0" Size="524,98" Padding="0,0" Style="Grid9Frame" Hidden="0" ID="BORDER"/>
+			<Label Anchor="L,T"  Offset="32,12"  String="TXT_KEY_HEAD_LINE" Font="TwCenMT22" ID="TITLE" />
+			<Label Anchor="L,T"  Offset="32,32" WrapWidth="470" LeadingOffset="-8" Font="TwCenMT20"  String="TXT_KEY_MSG_LBL" ID="TEXT" />
+			<!-- Them Symbol CivIconFrame64 -->
+			<Image Anchor="L,T" Offset="-32,-24" Texture="IconFrame64.dds" Size="64.64" ID="HEADFRAME" >
+				<!--Image Anchor="C,C" Offset="0,18" Texture="IconFrame64.dds" Size="32.32" ID="ICONFRAME" /-->
+				<Image ID="HEAD" Offset="0,0" Anchor="C,C" Size="64.64" Texture="LeaderPortraits512.dds" >
+					<Image ID="CivIconBG" Size="32.32" Anchor="C,C" Offset="0,18" TextureOffset="32,0" Texture="CivIconBGSizes.dds" >
+						<Image ID="CivIconShadow" Size="24.24" Anchor="C,C" Offset="1,1" Texture="CivSymbolAtlas16.dds" Color="Black.128" />
+						<Image ID="CivIcon" Size="24.24" Anchor="C,C" Texture="CivSymbolsColor256.dds" />
+					</Image>
+				</Image>
+			</Image>
+		</Grid>
+		
+		<Image Anchor="C,B" Offset="0,2" TextureOffset="0.0" Texture="bar300x2.dds" Size="320,2" ID="SEP" />
+		
+	</Container></Instance>
+	
+	<Instance Name="REPLY_BUTTON">
+		<GridButton ID="BUTTON"  Size="550,24" Anchor="C,B" Offset="0,0">
+			<GridData Style="Grid9DarkBlue8Button" />
+			<Label ID="TEXT" Anchor="C,C" String="TXT_KEY_DIPLO_DISUCSS_STAY_AWAY" Offset="0,0" Color0="255.255.200.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT18" FontStyle="Shadow"  />
+			<Grid Anchor="C,C" Offset="0,0" Size="554,28" Padding="0,0" Style="Grid9Frame" />
+		</GridButton>
+	</Instance>
+	
+	<Instance Name="DIPLO_BUTTON">
+		<GridButton ID="BUTTON" Style="FrameButton200" Anchor="R,T" Offset="0,0" String="TXT_KEY_DIPLO_BTN" />
+	</Instance>
+	
+	
+	
+	<LuaContext FileName="Assets/UI/InGame/LeaderHead/DiploTrade" ID="DiploTrade" Hidden="True" />
+
+	
+</Context>

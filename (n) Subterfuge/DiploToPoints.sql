@@ -1,0 +1,21 @@
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_GREAT_PEOPLE';
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_PLAYER_TURN';
+
+UPDATE Buildings SET
+ExtraSpies = 5
+WHERE Type = 'BUILDING_D_FOR_SPYPOINTS';
+
+UPDATE Language_en_US
+SET Text = 'If the unit is inside City-State territory that you are not at war with, this order will expend the unit.[COLOR_POSITIVE_TEXT] There are three units capable of this Mission, each with different abilities:[ENDCOLOR][NEWLINE][ICON_BULLET]   [COLOR_POSITIVE_TEXT]Diplomatic Units:[ENDCOLOR] Receive [ICON_INFLUENCE] Influence with the City-State based on the unit''s promotions.[NEWLINE][ICON_BULLET]   [COLOR_POSITIVE_TEXT]Great Diplomats:[ENDCOLOR] Receive a large amount of [ICON_INFLUENCE] Influence with the City-State, increased with each Era, and the [ICON_INFLUENCE] Influence of all other major civilizations known to the City-State will be decreased with this City-State by the same amount. Receive 50 [ICON_VP_SPY_POINTS] Spy Points.[NEWLINE][ICON_BULLET]   [COLOR_POSITIVE_TEXT]Great Merchant:[ENDCOLOR] Receive a large amount of [ICON_GOLD] Gold and an instant "We Love the King Day" in all owned cities for 5 turns, both scaling by [COLOR_POSITIVE_TEXT]25%[ENDCOLOR] for every owned Town that you control. This action will consume the unit.'
+WHERE Tag = 'TXT_KEY_MISSION_CONDUCT_TRADE_MISSION_HELP';
+
+-- Also increase the [ICON_INFLUENCE] Resting Influence with the City-State by 30. 
+UPDATE UNITS SET
+RestingPointChange = 0
+WHERE Class = 'UNITCLASS_GREAT_DIPLOMAT';
+
+-- scrivener at 50, so first gdip is a spy, then every 2
+UPDATE Buildings SET
+ExtraSpies = 5
+WHERE BuildingClass = 'BUILDINGCLASS_SCRIVENERS_OFFICE';
+

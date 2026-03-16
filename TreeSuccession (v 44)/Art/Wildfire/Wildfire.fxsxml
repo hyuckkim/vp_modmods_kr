@@ -1,0 +1,8 @@
+<Asset>
+  <Mesh file="Wildfire.gr2" source="Max" />
+  <BoneUsage>
+    <Bone name="FX_Volcano" />
+  </BoneUsage>
+  <TimedTrigger file="Wildfire.ftsxml" source="Tool" model="Volcano" state="0,1,2,3" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+</Asset>

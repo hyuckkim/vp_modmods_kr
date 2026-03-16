@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ed2bcb8e-7b51-4799-bd3d-aaf96bb00c54" version="10">
+  <Properties>
+    <Name>(6) Future Age for VP INT (AI)</Name>
+    <Stability>Beta</Stability>
+    <Teaser>AI Translation of the Future Age for VP</Teaser>
+    <Description>AI Translation of the Future Age for VP into several non-English languages. Currently to Korean only.[NEWLINE][NEWLINE]VP 미래 시대 모드의 비영어권 AI 번역 모드입니다. 현재는 한국어만 가능합니다.</Description>
+    <Authors>CAYM, Gemini 2.5 Pro</Authors>
+    <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://github.com/handanikr/vp_modmods_kr</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="a1dfe224-6cd8-4519-a58a-c417b59cdf99" minversion="0" maxversion="999" title="(6) Future Age for VP" />
+  </Dependencies>
+  <References>
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="EEAEDC4431D06867AFE34D68111A83B3" import="0">XML/Buildings.sql</File>
+    <File md5="F8DAF9025C795C94CA0E79ED8A15640F" import="0">XML/FutureText.sql</File>
+    <File md5="A6A9398FF95902B91AA715CAE7E8FC2D" import="0">XML/FutureText.xml</File>
+    <File md5="01B84BBDAACD7D44CA6BDDFC167A7890" import="0">XML/Units/Promotions.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Units/Promotions.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Buildings.sql</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText.sql</UpdateDatabase>
+      <UpdateDatabase>XML/FutureText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

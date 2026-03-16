@@ -1,0 +1,204 @@
+
+		<Row>
+			<Type>UNIT_CD_AMANOKAL</Type>
+			<Class>UNITCLASS_GREAT_GENERAL</Class>
+			<Description>TXT_KEY_UNIT_CD_AMANOKAL</Description>
+			<Civilopedia>TXT_KEY_UNIT_CD_AMANOKAL_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CD_AMANOKAL_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_CD_AMANOKAL_HELP</Help>
+			<UnitArtInfo>ART_DEF_UNIT_TUAREG_IMAJAGHAN</UnitArtInfo>
+			<UnitFlagAtlas>CD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>28</UnitFlagIconOffset>
+			<IconAtlas>CD_MILITARY_ATLAS</IconAtlas>
+			<PortraitIndex>28</PortraitIndex>
+		</Row>
+
+
+
+-- ============================
+-- Amanokal (Unique Great Person)
+-- Gained when a war starts
+-- ==============================
+--=========================================================================================================================
+-- ArtDefine_StrategicView
+--=========================================================================================================================
+INSERT INTO ArtDefine_StrategicView
+            (StrategicViewType,                     TileType,   Asset)
+VALUES      ('ART_DEF_UNIT_TUAREG_IMAJAGHAN',        'Unit',     'sv_Imajaghan.dds');
+--=========================================================================================================================
+-- ArtDefine_UnitInfos
+--=========================================================================================================================          
+INSERT INTO ArtDefine_UnitInfos
+            (Type,									 DamageStates,   Formation)
+SELECT      ('ART_DEF_UNIT_TUAREG_IMAJAGHAN'),       DamageStates,   Formation
+FROM ArtDefine_UnitInfos WHERE  (Type = 'ART_DEF_UNIT_U_ARABIAN_CAMELARCHER');
+
+INSERT INTO ArtDefine_UnitInfos
+            (Type,									 DamageStates,   Formation)
+SELECT      ('ART_DEF_UNIT_TUAREG_IMAJAGHAN_INDUSTRIAL'),       DamageStates,   Formation
+FROM ArtDefine_UnitInfos WHERE  (Type = 'ART_DEF_UNIT_U_MORROCAN_BERBER_CAVALRY');
+--=========================================================================================================================
+-- ArtDefine_UnitInfoMemberInfos
+--=========================================================================================================================  
+INSERT INTO ArtDefine_UnitInfoMemberInfos  
+            (UnitInfoType,							 UnitMemberInfoType,							NumMembers)
+SELECT      ('ART_DEF_UNIT_TUAREG_IMAJAGHAN'),       ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN'),		1
+FROM ArtDefine_UnitInfoMemberInfos WHERE (UnitInfoType = 'ART_DEF_UNIT_U_ARABIAN_CAMELARCHER');
+
+INSERT INTO ArtDefine_UnitInfoMemberInfos  
+            (UnitInfoType,							 UnitMemberInfoType,							NumMembers)
+SELECT      ('ART_DEF_UNIT_TUAREG_IMAJAGHAN_INDUSTRIAL'),       ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN_INDUSTRIAL'),		1
+FROM ArtDefine_UnitInfoMemberInfos WHERE (UnitInfoType = 'ART_DEF_UNIT_U_MORROCAN_BERBER_CAVALRY');
+--=========================================================================================================================
+-- ArtDefine_UnitMemberCombats
+--=========================================================================================================================
+INSERT INTO ArtDefine_UnitMemberCombats
+            (UnitMemberType,							EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN'),   EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
+FROM ArtDefine_UnitMemberCombats WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_ARABIAN_CAMELARCHER');
+
+INSERT INTO ArtDefine_UnitMemberCombats
+            (UnitMemberType,							EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN_INDUSTRIAL'),   EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
+FROM ArtDefine_UnitMemberCombats WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY');
+--=========================================================================================================================
+-- ArtDefine_UnitMemberCombatWeapons
+--=========================================================================================================================
+INSERT INTO ArtDefine_UnitMemberCombatWeapons  
+            (UnitMemberType,							"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN'),   "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_ARABIAN_CAMELARCHER');
+
+INSERT INTO ArtDefine_UnitMemberCombatWeapons  
+            (UnitMemberType,							"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN_INDUSTRIAL'),   "Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberCombatWeapons WHERE (UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY');
+--=========================================================================================================================
+-- ArtDefine_UnitMemberInfos 
+--=========================================================================================================================   
+INSERT INTO ArtDefine_UnitMemberInfos  
+            (Type,                                  Scale, ZOffset, Domain, Model,                  MaterialTypeTag, MaterialTypeSoundOverrideTag)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN'),    Scale, ZOffset, Domain, 'Amanokal.fxsxml',   MaterialTypeTag, MaterialTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_U_ARABIAN_CAMELARCHER');
+
+INSERT INTO ArtDefine_UnitMemberInfos  
+            (Type,                                  Scale, ZOffset, Domain, Model,                  MaterialTypeTag, MaterialTypeSoundOverrideTag)
+SELECT      ('ART_DEF_UNIT_MEMBER_TUAREG_IMAJAGHAN_INDUSTRIAL'),    Scale, ZOffset, Domain, ('u_afghanistan_camel_gunner.fxsxml'),   MaterialTypeTag, MaterialTypeSoundOverrideTag
+FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY');
+--=========================================================================================================================
+-- cant do this because u get way too many and that's before you exploit it
+--INSERT INTO Trait_FreeUnitClassesDOW
+--	(TraitType, UnitClassType, Number)
+--SELECT
+--	lt.TraitType, 'UNITCLASS_CD_AMANOKAL', 1
+--FROM Civilization_JFD_CultureTypes c, Leader_Traits lt, Civilization_Leaders cl
+--WHERE 
+--c.CultureType = 'CULTURE_JFD_WEST_AFRICAN' AND 
+--c.CivilizationType = cl.CivilizationType AND 
+--cl.LeaderheadType = lt.LeaderType;
+
+--CREATE TRIGGER AmanokalWarTrait
+--AFTER INSERT ON Civilization_JFD_CultureTypes WHEN NEW.CultureType = 'CULTURE_JFD_WEST_AFRICAN'
+--BEGIN
+--	INSERT INTO Trait_FreeUnitClassesDOW
+--		(TraitType, UnitClassType, Number)
+--	SELECT
+--		lt.TraitType, 'UNITCLASS_CD_AMANOKAL', 1
+--	FROM Leader_Traits lt, Civilization_Leaders cl
+--	WHERE 
+--	NEW.CivilizationType = cl.CivilizationType AND 
+--	cl.LeaderheadType = lt.LeaderType;
+--END;
+
+UPDATE Units SET
+NumFreeLux = 2,
+BaseCultureTurnsToCount = 8,
+Moves = 4,
+UnitArtInfoEraVariation = 1
+WHERE Type = 'UNIT_CD_AMANOKAL';
+
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+VALUES
+	--('UNIT_CD_AMANOKAL', 'PROMOTION_MILITARY_TRADITION'),
+	--('UNIT_CD_AMANOKAL', 'PROMOTION_LEADERSHIP'),
+	('UNIT_CD_AMANOKAL', 'PROMOTION_CD_AMANOKAL'),
+	('UNIT_CD_AMANOKAL', 'PROMOTION_CD_AMANOKAL_STEALTH');
+
+INSERT INTO Unit_Builds
+	(UnitType, BuildType)
+VALUES
+	('UNIT_CD_AMANOKAL', 'BUILD_CUSTOMS_HOUSE');
+
+--INSERT INTO Unit_EraCombatStrength 	
+--	(UnitType, 			EraType,			CombatStrength)
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_CLASSICAL',	Combat FROM Units WHERE Type='UNIT_HORSEMAN' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_MEDIEVAL',		Combat FROM Units WHERE Type='UNIT_KNIGHT' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_RENAISSANCE',	Combat FROM Units WHERE Type='UNIT_LANCER' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_ENLIGHTENMENT',    Combat+5 FROM Units WHERE Type='UNIT_LANCER' AND EXISTS (SELECT * FROM Eras WHERE Type = 'ERA_ENLIGHTENMENT') UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_INDUSTRIAL',	Combat FROM Units WHERE Type='UNIT_CAVALRY' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_MODERN',		Combat FROM Units WHERE Type='UNIT_WWI_TANK' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_POSTMODERN',	Combat FROM Units WHERE Type='UNIT_TANK' UNION ALL
+--SELECT	'UNIT_CD_AMANOKAL',	'ERA_FUTURE',		Combat FROM Units WHERE Type='UNIT_MODERN_ARMOR';
+
+--INSERT INTO Unit_AITypes
+--	(UnitType, UnitAIType)
+--VALUES
+--	('UNIT_CD_AMANOKAL', 'UNITAI_DEFENSE'),
+--	('UNIT_CD_AMANOKAL', 'UNITAI_ATTACK');
+
+REPLACE INTO Language_en_US 
+	(Tag, Text)
+SELECT
+	'TXT_KEY_UNIT_CD_AMANOKAL_HELP', 'Requires the [ICON_CULTURE_JFD_WEST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WEST_AFRICAN_SHORT_DESC}[ENDCOLOR] Cultural Group. Boosts the [ICON_STRENGTH] Strength of nearby Friendly Units like the Great General it replaces. When you gain an {TXT_KEY_UNIT_CD_AMANOKAL} receive a boost of 200 [ICON_GOLD] Gold, scaling with Era. Ignores Terrain Cost from [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR]. Friendly Units that start the turn stacked gain +1 [ICON_WAR] Attack.[NEWLINE][NEWLINE]This Unit and Friendly Units within 1 tile are Invisible to non-adjacent, non-attacked Units.[NEWLINE][NEWLINE]In addition to the Citadel, {TXT_KEY_UNIT_CD_AMANOKAL}s can be expended to build a Town, write a Political Treatise, or conduct a Voyage of Discovery.'
+FROM Language_en_US WHERE Tag = 'TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY';	
+
+
+		<Row Tag="TXT_KEY_UNIT_CD_AMANOKAL">
+			<Text>Amanokal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AMANOKAL_TEXT">
+			<Text>A collection of Tuareg tribes, each led by a noble, forms a confederation whose chieftain, the amanokal, is elected from among the nobles. The chieftain is the overlord during times of war, and receives tribute and taxes from tribes as a sign of their submission to his authority. The nobles originally had a monopoly on carrying arms and owning camels, and were the warriors of the Tuareg regions of the Sahara. They may have achieved their social status by subjugating other Tuareg castes, keeping arms to defend their properties and vassals.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AMANOKAL_HELP">
+			<Text>*this is updated in another file*</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CD_AMANOKAL_STRATEGY">
+			<Text>It is always nice to receive a Great General, but an Amanokal is even better. When there are no good Citadels to place, this replacement can put down a Town, or even use missions from the Great Writer and Great Admiral if they should be more beneficial. Their use is not just economic -- although the Gold they arrive with can be invested -- as they confer the extra attack (like Blitz) to their companion Units each turn, allowing powerful strikes especially by those with Ranged Attacks. Finally they cloak their adjacent Units, conferring Invisibility which is also best used for hiding Ranged Units, but in general allows for daring raids and sudden, decapitating assaults.</Text>
+		</Row>
+
+
+		<Row>
+			<Type>PROMOTION_CD_AMANOKAL</Type>
+			<Description>TXT_KEY_PROMOTION_CD_AMANOKAL</Description>
+			<Help>TXT_KEY_PROMOTION_CD_AMANOKAL_HELP</Help>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CD_AMANOKAL</PediaEntry>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<CannotBeChosen>1</CannotBeChosen>
+			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
+			<IsNearbyPromotion>1</IsNearbyPromotion>
+			<NearbyRange>0</NearbyRange>
+			<GiveDomain>DOMAIN_LAND</GiveDomain>
+			<GiveExtraAttacks>1</GiveExtraAttacks>
+			<GiveOnlyOnStartingTurn>1</GiveOnlyOnStartingTurn>
+		</Row>
+
+
+		<Row>
+			<PromotionType>PROMOTION_CD_AMANOKAL</PromotionType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>200</Yield>
+			<IsEraScaling>1</IsEraScaling>
+		</Row>
+	</UnitPromotions_InstantYields>
+
+		<Row Tag="TXT_KEY_PROMOTION_CD_AMANOKAL">
+			<Text>Amghar Tribute</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CD_AMANOKAL_HELP">
+			<Text>Receive 200 [ICON_GOLD] Gold when you gain an Amanokal, scaling with Era.[NEWLINE]Friendly Units that start the turn stacked gain +1 [ICON_WAR] Attack.[NEWLINE]Ignore Terrain Cost from [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR].</Text>
+		</Row>
+
+

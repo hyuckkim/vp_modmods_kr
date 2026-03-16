@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ko_KR>
+		<Row Tag="TXT_KEY_BUILDING_CHATEAU_DIF">
+			<Text>Chateau d'If</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_CHATEAU_DIF_HELP">
+			<Text></Text>
+	<!-- Can only be constructed in a Coastal City with a Bastion Fort. Receive 100 [ICON_SPY_POINT] Spy Points. Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Penitentiary in the City. When you complete a building from the Industrial Era or later, gain 10% progress towards a [ICON_DIPLOMAT] Great Diplomat.-->
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_CHATEAU_DIF_QUOTE">
+			<Text>[NEWLINE]"Only he who has experienced extreme misfortune is capable of feeling extreme happiness. One must have wanted to die to know how good it is to live."[NEWLINE] - Alexandre Dumas, The Count of Monte Cristo[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_CHATEAU_DIF_PEDIA">
+			<Text>A fortress located on the Ile d'If, the smallest island in the Frioul archipelago, situated about 1.5 kilometres offshore from Marseille in southeastern France. Built in the 16th century, it later served as a prison until the end of the 19th century. The isolated location and dangerous offshore currents soon made it one of the most feared and notorious jails in France. The embalmed body of general Jean Baptiste Kléber was repatriated to France after his assassination in Cairo in 1800. First Consul Napoleon Bonaparte, fearing that his tomb would become a symbol to Republicanism, ordered that the body stay at the château. It remained there for 18 years, until King Louis XVIII granted Kléber a proper burial in his native Strasbourg. The fortress was demilitarized and opened to the public in 1890. It is famous for being one of the settings of Alexandre Dumas's adventure novel The Count of Monte Cristo.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ALAMUT">
+			<Text>Alamut Fortress</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_ALAMUT_HELP">
+			<Text></Text>
+	<!-- Can only be constructed in a City with a nearby Mountain. Receive 100 [ICON_SPY_POINT] Spy Points. Gain 100 [ICON_PEACE] Faith when you perform a Spy Mission, scaling with Era. Gardens, Universities, and Castles in this City gain +1 [ICON_RESEARCH] Science and [ICON_PEACE] Faith.-->
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_ALAMUT_QUOTE">
+			<Text>[NEWLINE]"Nothing is true. Everything is permitted."[NEWLINE] - Hassan-i Sabbah[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_ALAMUT_PEDIA">
+			<Text>The 'eagle's nest' is a mountain fortress at an altitude of 2163 meters at the central Alborz, in the Iranian stanza of Qazvin, about 100 kilometers from Tehran. In 1090 AD, the Alamut Castle, a mountain fortress in present-day Iran, came into the possession of Hassan-i Sabbah, a champion of the Nizari Ismaili cause. Until 1256, Alamut functioned as the headquarters of the Nizari Ismaili state and was thought impregnable to any military attack and was fabled for its heavenly gardens, library, and laboratories where philosophers, scientists, and theologians could debate in intellectual freedom.[NEWLINE][NEWLINE]In 1256, Rukn al-Din Khurshah surrendered the fortress to the invading Mongols, who dismantled it and destroyed its famous library holdings. Though commonly assumed that the Mongol conquest obliterated the Nizari Ismailis presence at Alamut, the fortress was recaptured in 1275 by Nizari forces, demonstrating that while the destruction and damage to the Ismailis in that region was extensive, it was not the complete annihilation attempted by the Mongols.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_PORT_ROYAL">
+			<Text>Port Royal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PORT_ROYAL_HELP">
+			<Text></Text>
+	<!-- Can only be constructed in a City with a Harbor. Receive 100 [ICON_SPY_POINT] Spy Points. Gain 150 [ICON_GOLD] Gold and [ICON_CULTURE] Culture when you perform a Spy Mission, scaling with Era. [ICON_CARGO_SHIP] Sea Trade Routes gain +3 [ICON_GOLD] Gold. Naval Melee Units created by this City (past or future) receive the [COLOR_POSITIVE_TEXT]Piracy[ENDCOLOR] Promotion.-->
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PORT_ROYAL_QUOTE">
+			<Text>[NEWLINE]"I'm dishonest, and a dishonest man you can always trust to be dishonest. Honestly. It's the honest ones you want to watch out for."[NEWLINE] - Captain Jack Sparrow in Disney's "Pirates of the Caribbean"[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_PORT_ROYAL_PEDIA">
+			<Text>Port Royal is a town located at the end of the Palisadoes, at the mouth of Kingston Harbour, in southeastern Jamaica. Founded in 1494 by the Spanish, it was once the largest and most prosperous city in the Caribbean, functioning as the centre of shipping and commerce in the Caribbean Sea by the latter half of the 17th century. It was destroyed by an earthquake on 7 June 1692 and its accompanying tsunami, leading to the establishment of Kingston, the capital and the most populated and prosperous city in Jamaica.[NEWLINE][NEWLINE]Port Royal provided a safe harbour initially for privateers and subsequently for pirates plying the shipping lanes to and from Spain and Panama. By the 1660s the city had, for some, become a pirate utopia and had gained a reputation as the "Sodom of the New World". However following famous pirvateer-turned-knight of the realm Henry Morgan's appointment as lieutenant governor, Port Royal began to change. Pirates were no longer needed to defend the city and the selling of slaves took on greater importance. Upstanding citizens disliked the reputation the city had acquired and, in 1687, Jamaica passed anti-piracy laws. Consequently, instead of being a safe haven for pirates, Port Royal became noted as their place of execution.</Text>
+		</Row>
+	</Language_ko_KR>
+</GameData>
