@@ -67,7 +67,9 @@ SELECT
 FROM Language_en_US WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 
 UPDATE Buildings SET
-AlwaysHeal = 10
+AlwaysHeal = 10,
+UnlockedByBelief = 0,
+FaithCost = 400
 WHERE Type = 'BUILDING_CD_YATIRI';
 
 INSERT INTO Building_YieldPerXTerrainTimes100

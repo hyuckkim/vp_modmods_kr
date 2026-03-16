@@ -68,6 +68,31 @@ v 4
 -- Sobor now reduces religious unrest like the Grand Temple
 -- Stradiot and Varangian now have no purchase cooldown
 -- International Brigade does not require supply
-
+-------------------------------
+v 5
+-------------------------------
+-- In Enlightenment Era, East India Company is at Exploration instead (i.e. still 1 tech earlier than Econ)
+-- Fixed Metalsmith event typo allowing certain metals to be discovered together (should be only 1 per city)
+-- Removed the UI overrides folder as it is now incorporated into VP
+-- Metalsmith now gives +2 Gold/Prod/Culture from Bank/Constabulary/Gallery
+-- Metalsmith no longer fires multiple times per city (EventDuration needs to be large, not -1, which is special)
+-- Fixed East India Company update statement affecting all buildings (!)
+-- Highlander now makes human noises when selected, instead of mechanical ones
+-- West Slavic and Iberian now have Splash screens and soundtracks set
+-- Promotions now make the "level up sound"
+-- Bolas promo is no longer lost on upgrade
+-- Bolas plague changed to double movement cost (was not working as intended)
+-- Bolas Rider no longer has Accuracy I but +1 RCS
+-- Added trigger compatibility for Xon events (new Features or Resources being added)
+-- Gave plagues new IDs starting from 100 so they stack with Incan dazed (and each other)
+-- Venom plague (Amazonian UU) now prevents all healing for 3 turns (was -10 healing for 5 turns)
+-------------------------------
+v 6
+-------------------------------
+-- Patagonia Bolas code refactored for better compatibility with custom civs
+-- Refactored Djeli Great Works of Music to avoid bug where they wouldn't load in. Also added 1 more.
+-- Sepoy are now Marksmen in EE
+-- Buildings whose base very can be purchased with faith given a particular belief now correctly also require that belief
+-- Yaitiri can now be purchased with 400 Faith
 
 

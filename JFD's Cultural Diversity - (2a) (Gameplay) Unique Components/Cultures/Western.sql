@@ -136,6 +136,9 @@ UPDATE Buildings SET
 	NumCityCostMod = 10
 WHERE Type = 'BUILDING_CD_EAST_INDIA';
 
+-- if EE is active economics is moved so need to adjust
+UPDATE Buildings SET PrereqTech = 'TECH_EE_EXPLORATION' WHERE Type = 'BUILDING_CD_EAST_INDIA' AND EXISTS (SELECT 1 FROM Eras WHERE Type = 'ERA_ENLIGHTENMENT');
+
 INSERT INTO Building_SpecialistYieldChangesLocal
 	(BuildingType, SpecialistType, YieldType, Yield)
 SELECT

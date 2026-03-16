@@ -88,22 +88,23 @@ VALUES			('UNIT_CD_DJELI',	'TXT_KEY_GRIOT_UNIQUE_NAME_01',	'GREAT_WORK_GRIOT_01'
 INSERT INTO Audio_Sounds
 	(SoundID, FileName, LoadType, DontCache)
 VALUES
-	('SND_GRIOT_M__01', 'Adama_Drame_Sya', 'Streamed', 0),
-	('SND_GRIOT_M__02', 'Ali_Farka_Toure_Kenouna', 'Streamed', 0),
-	('SND_GRIOT_M__03', 'Ami_Koita_Mamaya', 'Streamed', 0),
-	('SND_GRIOT_M__04', 'Ballake_Sissoko_Demba_Kunda', 'Streamed', 0),
-	('SND_GRIOT_M__05', 'Boubacar_Traore_Hona', 'Streamed', 0),
-	('SND_GRIOT_M__06', 'Kandia_Kouyate_Sora', 'Streamed', 0),
-	('SND_GRIOT_M__07', 'Kasse_Mady_Diabate_Eh_Ya_Ye', 'Streamed', 0),
-	('SND_GRIOT_M__08', 'Madou_Sidiki_Diabate_Famadenke', 'Streamed', 0),
-	('SND_GRIOT_M__09', 'Mah_Damba_Kamako', 'Streamed', 0),
-	('SND_GRIOT_M__10', 'Mamani_Keita_Kanou', 'Streamed', 0),
-	('SND_GRIOT_M__11', 'Miriam_Makeba_Pata_Pata', 'Streamed', 0),
-	('SND_GRIOT_M__12', 'Salif_Keita_Madan', 'Streamed', 0),
-	('SND_GRIOT_M__13', 'Sona_Jobarteh_Jarabi', 'Streamed', 0),
-	('SND_GRIOT_M__14', 'Toumani_Diabate_Konkoba', 'Streamed', 0),
-	('SND_GRIOT_M__15', 'Yande_Codou_Sene_Natangue', 'Streamed', 0),
-	('SND_GRIOT_M__16', 'Youssou_Ndour_Birima', 'Streamed', 0);
+	('SND_GRIOT_M__01', 'M_CD__010', 'Streamed', 0),
+	('SND_GRIOT_M__02', 'M_CD__020', 'Streamed', 0),
+	('SND_GRIOT_M__03', 'M_CD__030', 'Streamed', 0),
+	('SND_GRIOT_M__04', 'M_CD__040', 'Streamed', 0),
+	('SND_GRIOT_M__05', 'M_CD__050', 'Streamed', 0),
+	('SND_GRIOT_M__06', 'M_CD__060', 'Streamed', 0),
+	('SND_GRIOT_M__07', 'M_CD__070', 'Streamed', 0),
+	('SND_GRIOT_M__08', 'M_CD__080', 'Streamed', 0),
+	('SND_GRIOT_M__09', 'M_CD__090', 'Streamed', 0),
+	('SND_GRIOT_M__10', 'M_CD__100', 'Streamed', 0),
+	('SND_GRIOT_M__11', 'M_CD__110', 'Streamed', 0),
+	('SND_GRIOT_M__12', 'M_CD__120', 'Streamed', 0),
+	('SND_GRIOT_M__13', 'M_CD__130', 'Streamed', 0),
+	('SND_GRIOT_M__14', 'M_CD__140', 'Streamed', 0),
+	('SND_GRIOT_M__15', 'M_CD__150', 'Streamed', 0),
+	('SND_GRIOT_M__16', 'M_CD__160', 'Streamed', 0),
+	('SND_GRIOT_M__17', 'M_CD__170', 'Streamed', 0);
 
 INSERT INTO Audio_2DSounds
 	(ScriptID, SoundID, SoundType, TaperSoundtrackVolume)
@@ -123,7 +124,8 @@ VALUES
 	('AS2D_GRIOT_M__13', 'SND_GRIOT_M__13', 'GAME_MUSIC_STINGS', 0.0),
 	('AS2D_GRIOT_M__14', 'SND_GRIOT_M__14', 'GAME_MUSIC_STINGS', 0.0),
 	('AS2D_GRIOT_M__15', 'SND_GRIOT_M__15', 'GAME_MUSIC_STINGS', 0.0),
-	('AS2D_GRIOT_M__16', 'SND_GRIOT_M__16', 'GAME_MUSIC_STINGS', 0.0);
+	('AS2D_GRIOT_M__16', 'SND_GRIOT_M__16', 'GAME_MUSIC_STINGS', 0.0),
+	('AS2D_GRIOT_M__17', 'SND_GRIOT_M__17', 'GAME_MUSIC_STINGS', 0.0);
 
 INSERT INTO GreatWorks 
 			(Type, 				GreatWorkClassType,			Description,					Audio,				Image)
@@ -142,7 +144,8 @@ VALUES			('GREAT_WORK_GRIOT_01', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_
 			('GREAT_WORK_GRIOT_13', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_13',	'AS2D_GRIOT_M__13',	'griotbackground.dds'),
 			('GREAT_WORK_GRIOT_14', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_14',	'AS2D_GRIOT_M__14',	'griotbackground.dds'),
 			('GREAT_WORK_GRIOT_15', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_15',	'AS2D_GRIOT_M__15',	'griotbackground.dds'),
-			('GREAT_WORK_GRIOT_16', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_16',	'AS2D_GRIOT_M__16',	'griotbackground.dds');
+			('GREAT_WORK_GRIOT_16', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_16',	'AS2D_GRIOT_M__16',	'griotbackground.dds'),
+			('GREAT_WORK_GRIOT_17', 	'GREAT_WORK_MUSIC',	'TXT_KEY_GREAT_WORK_GRIOT_17',	'AS2D_GRIOT_M__17',	'griotbackground.dds');
 --==========================================================================================================================		
 --==========================================================================================================================	
 

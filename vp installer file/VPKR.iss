@@ -51,7 +51,7 @@ Source: "..\(4aL) Squads for VP INT\*"; Excludes: "\*.civ5proj,*.civ5sln,*.civ5s
 Source: "..\UI - Promotion Tree for VP\*"; DestDir: "{app}\MODS\UI - Promotion Tree for VP"; Flags: ignoreversion recursesubdirs;	Components: vppt
 Source: "..\JFD's Cultural Diversity - (1) (Core) Utilities (v 21)\*"; DestDir: "{app}\MODS\JFD's Cultural Diversity - (1) (Core) Utilities (v 21)"; Flags: ignoreversion recursesubdirs;	Components: uc
 Source: "..\JFD's Cultural Diversity - (2) (Art) Splash Screens (v 1)\*"; DestDir: "{app}\MODS\JFD's Cultural Diversity - (2) (Art) Splash Screens (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uc
-Source: "..\JFD's Cultural Diversity - (2) (Sound) Unit Dialogue (v 1)*"; DestDir: "{app}\MODS\JFD's Cultural Diversity - (2) (Sound) Unit Dialogue (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uc
+Source: "..\JFD's Cultural Diversity - (2) (Sound) Unit Dialogue (v 1)\*"; DestDir: "{app}\MODS\JFD's Cultural Diversity - (2) (Sound) Unit Dialogue (v 1)"; Flags: ignoreversion recursesubdirs;	Components: uc
 Source: "..\JFD's Cultural Diversity - (2a) (Gameplay) Unique Components\*"; DestDir: "{app}\MODS\JFD's Cultural Diversity - (2a) (Gameplay) Unique Components"; Flags: ignoreversion recursesubdirs;	Components: uc
 Source: "..\JFD's Cultural Diversity INT\*"; DestDir: "{app}\MODS\JFD's Cultural Diversity INT"; Flags: ignoreversion recursesubdirs;	Components: uc
 
@@ -96,6 +96,7 @@ Source: "..\(ui) Trade Opportunities for VP INT\*"; DestDir: "{app}\MODS\(ui) Tr
 Source: "..\(ui) Wonder Planner For VP KR\*"; DestDir: "{app}\MODS\(ui) Wonder Planner For VP KR"; Flags: ignoreversion recursesubdirs;	Components: wp
 Source: "..\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)\*"; DestDir: "{app}\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)"; Flags: ignoreversion recursesubdirs;	Components: louis
 Source: "..\Auto-Sell Buildings (v 1)\*"; DestDir: "{app}\MODS\Auto-Sell Buildings (v 1)"; Flags: ignoreversion recursesubdirs;	Components: asb
+Source: "..\Capture Great People for VP (v 4)\*"; DestDir: "{app}\MODS\Capture Great People for VP (v 4)"; Flags: ignoreversion recursesubdirs;	Components: cgp
 Source: "..\Continental Drift (v 3)\*"; DestDir: "{app}\MODS\Continental Drift (v 3)"; Flags: ignoreversion recursesubdirs;	Components: cd
 Source: "..\Even More Resources for Vox Populi (v 15)\*"; DestDir: "{app}\MODS\(overhaul) Even More Resources for Vox Populi (v 15)"; Flags: ignoreversion recursesubdirs;	Components: emr\n
 Source: "..\Even More Resources for Vox Populi (v 15) INT\*"; DestDir: "{app}\MODS\(overhaul) Even More Resources for Vox Populi (v 15) INT"; Flags: ignoreversion recursesubdirs;	Components: emr\n
@@ -111,8 +112,8 @@ Source: "..\Longer Eras - Historic (v 8)\*"; DestDir: "{app}\MODS\Longer Eras - 
 Source: "..\Longer Eras - Historic (v 8) INT\*"; DestDir: "{app}\MODS\Longer Eras - Historic (v 8) INT"; Flags: ignoreversion recursesubdirs;	Components: his
 Source: "..\Maritime Weather+ (v 51)\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 51)"; Flags: ignoreversion recursesubdirs;	Components: mb
 Source: "..\Maritime Weather+ (v 51) INT\*"; DestDir: "{app}\MODS\Maritime Weather+ (v 51) INT"; Flags: ignoreversion recursesubdirs;	Components: mb
-;Source: "..\Misc Tweaks for VP (v 5.1)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.1)"; Flags: ignoreversion recursesubdirs;	Components: mt
-;Source: "..\Misc Tweaks for VP (v 5.1) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.1) INT"; Flags: ignoreversion recursesubdirs;	Components: mt
+Source: "..\Misc Tweaks for VP (v 5.1)\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.1)"; Flags: ignoreversion recursesubdirs;	Components: mt
+Source: "..\Misc Tweaks for VP (v 5.1) INT\*"; DestDir: "{app}\MODS\Misc Tweaks for VP (v 5.1) INT"; Flags: ignoreversion recursesubdirs;	Components: mt
 Source: "..\Mojave Wasteland - Fallout New Vegas (v 101)\*"; DestDir: "{app}\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"; Flags: ignoreversion recursesubdirs;	Components: fnv
 Source: "..\Music Changer (v 2)\*"; DestDir: "{app}\MODS\Music Changer (v 2)"; Flags: ignoreversion recursesubdirs;	Components: mc
 Source: "..\Quick Turns (v 10)\*"; DestDir: "{app}\MODS\Quick Turns (v 10)"; Flags: ignoreversion recursesubdirs;	Components: qt
@@ -142,7 +143,6 @@ Source: "..\UI - Improved City View (Vox Populi EUI) INT\*"; DestDir: "{app}\MOD
 Source: "..\UI - Map Pins (v 17)\*"; DestDir: "{app}\MODS\UI - Map Pins (v 17)"; Flags: ignoreversion recursesubdirs;	Components: mp
 Source: "..\UI - No Auto-Embark Workers (v 7)\*"; DestDir: "{app}\MODS\UI - No Auto-Embark Workers (v 7)"; Flags: ignoreversion recursesubdirs;	Components: naew
 Source: "..\UI - Notify Exit Resistance (v 1)\*"; DestDir: "{app}\MODS\UI - Notify Exit Resistance (v 1)"; Flags: ignoreversion recursesubdirs;	Components: ner
-Source: "..\VP Happiness notifications (v 1) KR\*"; DestDir: "{app}\MODS\VP Happiness notifications (v 1) KR"; Flags: ignoreversion recursesubdirs;	Components: hn
 Source: "..\Wake All and Upgrade All Units In Military Overview (v 1)\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1)"; Flags: ignoreversion recursesubdirs;	Components: waua
 Source: "..\Wake All and Upgrade All Units In Military Overview (v 1) INT\*"; DestDir: "{app}\MODS\Wake All and Upgrade All Units In Military Overview (v 1) INT"; Flags: ignoreversion recursesubdirs;	Components: waua
 Source: "..\World of Lore - DragonFable (v 1)\*"; DestDir: "{app}\MODS\World of Lore - DragonFable (v 1)"; Flags: ignoreversion recursesubdirs;	Components: df
@@ -197,7 +197,6 @@ Name: "mc"; Description: "배경음 바꾸기(Music Changer)"; Types: VPUI VPEX 
 Name: "naew"; Description: "노동자 자동 승선 막기(No Auto-Embark Workers)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ner"; Description: "저항 탈출 알림(Notify Exit Resistance)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "to"; Description: "교역 기회(Trade Opportunities)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
-Name: "hn"; Description: "행복 알림(Happiness notifications)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "waua"; Description: "전체 깨우기와 전체 업그레이드(Wake All and Upgrade All Units In Military Overview)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "wp"; Description: "불가사의 계획서(Wonder Planner)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
 Name: "zui"; Description: "ZUI 지도자 화면(zuiLeaderHead)"; Types: VPUI VPEX VPMAX Custom; Flags: disablenouninstallwarning
@@ -207,6 +206,7 @@ Name: "ee"; Description: "계몽 시대(Enlightenment Era)"; Types: VPEX VPMAX C
 Name: "eaw"; Description: "개선된 항공전(Enhanced Air Warfare)"; Types: VPEX VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "bn"; Description: "필수 품목(Bare Necessities)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "cgp"; Description: "위인 포획(Capture Great People)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "mw"; Description: "더 많은 불가사의(More Wonders)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "ucs"; Description: "고유 도시 국가(Unique City States)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "cslu"; Description: "Jarcast의 도시 국가 지도자 얼티메이트(City States Leaders Ultimate)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -230,7 +230,7 @@ Name: "rp\c1"; Description: "(핵심 1) 탐험 밸런서"; Types: VPMAX Custom; 
 Name: "rp\r1"; Description: "(권장 1) 빠른 해안"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "rp\r2"; Description: "(권장 2) 빠른 강"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "rp\r3"; Description: "(권장 3) 빠른 해안의"; Types: VPMAX Custom; Flags: disablenouninstallwarning
-;Name: "mt"; Description: "기타 조정(Misc Tweaks)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
+Name: "mt"; Description: "기타 조정(Misc Tweaks)"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 
 Name: "tibet"; Description: "Jarcast와 Hokath의 티베트"; Types: VPMAX Custom; Flags: disablenouninstallwarning
 Name: "italy"; Description: "Jarcast의 이탈리아"; Types: VPMAX Custom; Flags: disablenouninstallwarning
@@ -324,6 +324,7 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.13)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\(Unity) - GH's Louisiana - Joseph Beausoleil Broussard for VP (v.14)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Auto-Sell Buildings (v 1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Capture Great People for VP (v 4)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Continental Drift (v 3)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Even More Resources for Vox Populi UCS (v 15)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Even More Resources for Vox Populi UCS INT"
@@ -337,6 +338,8 @@ Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Battles+ (v 50)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 51)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Maritime Weather+ (v 51) INT"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 5.1)"
+Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Misc Tweaks for VP (v 5.1) INT"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Mojave Wasteland - Fallout New Vegas (v 101)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Music Changer (v 2)"
 Type: filesandordirs; Name: "{userdocs}\My Games\Sid Meier's Civilization 5\MODS\Quick Turns (v 10)"

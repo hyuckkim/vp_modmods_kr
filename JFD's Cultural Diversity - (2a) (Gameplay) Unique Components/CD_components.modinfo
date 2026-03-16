@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="99c7f9e2-1ff4-9941-8gc7-41bde72g3g99" version="4">
+<Mod id="99c7f9e2-1ff4-9941-8gc7-41bde72g3g99" version="6">
 	<Properties>
 		<Name>JFD's Cultural Diversity - (2a) (Gameplay) Unique Components</Name>
 		<Teaser>VP compatible to be used alongside Cultural Diversity</Teaser>
@@ -35,22 +35,23 @@
     			<Mod id="a3a83028-4df9-4050-a996-0c29cb719bf0" minversion="0" maxversion="5" title="Tibet with Dzong"/>   
 		</Blocks>
 		<Files>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Adama_Drame_Sya.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Ali_Farka_Toure_Kenouna.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Ami_Koita_Mamaya.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Ballake_Sissoko_Demba_Kunda.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Boubacar_Traore_Hona.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Kandia_Kouyate_Sora.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Kasse_Mady_Diabate_Eh_Ya_Ye.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Madou_Sidiki_Diabate_Famadenke.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Mah_Damba_Kamako.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Mamani_Keita_Kanou.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Miriam_Makeba_Pata_Pata.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Salif_Keita_Madan.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Sona_Jobarteh_Jarabi.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Toumani_Diabate_Konkoba.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Yande_Codou_Sene_Natangue.mp3</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/Youssou_Ndour_Birima.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__010.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__020.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__030.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__040.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__050.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__060.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__070.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__080.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__090.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__100.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__110.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__120.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__130.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__140.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__150.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__160.mp3</File>
+			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Sounds/M_CD__170.mp3</File>
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_016.dds</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Art/Promotions/Cultural_Diversity_PI_Atlas_032.dds</File>
@@ -561,14 +562,6 @@
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/India.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/Songhai.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Civilizations/Denmark.sql</File>
-
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/GameSetupScreen.xml</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/GameSetupScreen.lua</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/SelectCivilization.xml</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/SelectCivilization.lua</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/PopulateUniques.lua</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/UniqueBonuses.lua</File>
-			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="1">Overrides/CivilopediaScreen.lua</File>
 
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Compatibility.sql</File>
 			<File md5="def34d02e3bfc08cc48c19b93f8df840" import="0">Reassignments.sql</File>

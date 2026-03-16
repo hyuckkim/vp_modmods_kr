@@ -53,28 +53,29 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_HEAVY_SKIRMISHE
 
 UPDATE Units SET
 Combat = Combat + 2,
-RangedCombat = RangedCombat + 2
+RangedCombat = RangedCombat + 3
 WHERE Type = 'UNIT_CD_BOLAS_RIDER';
-
-INSERT INTO UnitPromotions_Terrains
-	(PromotionType, TerrainType, ExtraMove)
-SELECT
-	'PROMOTION_DMS_BOLAS_HIT', Type, 2
-FROM Terrains WHERE Water = 0;
 
 INSERT INTO Unit_FreePromotions 	
 	(UnitType, 			PromotionType)
 VALUES	
-	('UNIT_CD_BOLAS_RIDER', 	'PROMOTION_DMS_BOLAS'),
-	('UNIT_CD_BOLAS_RIDER', 	'PROMOTION_ACCURACY_1');
+	('UNIT_CD_BOLAS_RIDER', 	'PROMOTION_DMS_BOLAS');
+
+-- this has to be done in sql to avoid mod incompatibility
+INSERT INTO UnitPromotions_Plagues
+        (PromotionType, PlaguePromotionType, DomainType, ApplyOnAttack, ApplyOnDefense, ApplyChance)
+  SELECT  'PROMOTION_DMS_BOLAS', 'PROMOTION_DMS_BOLAS_HIT', 'DOMAIN_LAND', 1, 0, 100
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM UnitPromotions_Plagues
+    WHERE PromotionType = 'PROMOTION_DMS_BOLAS'
+);
 
 REPLACE INTO Language_en_US 
 	(Tag, Text)
 SELECT
 	'TXT_KEY_UNIT_CD_BOLAS_RIDER_HELP', 'Requires the [ICON_CULTURE_CD_PATAGONIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_PATAGONIAN_SHORT_DESC}[ENDCOLOR] Cultural Group.'
 FROM Language_en_US WHERE Tag = 'TXT_KEY_UNIT_CUIRASSIER_HELP';	
-
---  Is stronger than the Cuirassier that it replaces. Has +15% [ICON_RANGED_STRENGTH] Attack against Units in [COLOR_POSITIVE_TEXT]Open Terrain[ENDCOLOR], and Land Units hit by a Bola have their Movement Costs increased by 2 for 1 turn. Starts with the [COLOR_POSITIVE_TEXT]Accuracy I[ENDCOLOR] Promotion.
 
 --==========================================================================================================================
 -- Art Defines
@@ -176,8 +177,21 @@ FROM Features;
 
 UPDATE EventChoice_FeatureYieldChange SET
 YieldChange = 5
-WHERE FeatureType IN (SELECT Type FROM Features WHERE NaturalWonder = 1) AND
+WHERE FeatureType IN (SELECT Type FROM Features WHERE (NaturalWonder = 1 OR PseudoNaturalWonder = 1)) AND
 EventChoiceType = 'EVENT_XON_CHOICE_1';
+
+CREATE TRIGGER XonNewFeature
+AFTER INSERT ON Features
+BEGIN
+    INSERT INTO EventChoice_FeatureYieldChange
+        (EventChoiceType, FeatureType, YieldType, YieldChange)
+    VALUES ('EVENT_XON_CHOICE_1', NEW.Type, 'YIELD_CULTURE_LOCAL',
+        CASE
+            WHEN (NEW.NaturalWonder = 1 OR NEW.PseudoNaturalWonder = 1) THEN 5
+            ELSE 1
+        END
+    );
+END;
 
 INSERT INTO EventChoice_ResourceYieldChange
 	(EventChoiceType, ResourceType, YieldType, YieldChange)
@@ -185,6 +199,15 @@ SELECT
 	'EVENT_XON_CHOICE_3', Type, 'YIELD_FOOD', 1
 FROM Resources
 WHERE IsMonopoly = 0 AND Type NOT IN ('RESOURCE_ARTIFACTS', 'RESOURCE_HIDDEN_ARTIFACTS');
+
+CREATE TRIGGER XonNewResource
+AFTER INSERT ON Resources
+BEGIN
+	INSERT INTO EventChoice_ResourceYieldChange
+		(EventChoiceType, ResourceType, YieldType, YieldChange)
+	SELECT
+		'EVENT_XON_CHOICE_3', NEW.Type, 'YIELD_FOOD', 1;
+END;
 
 INSERT INTO EventChoice_SpecialistYieldChange
 	(EventChoiceType, SpecialistType, YieldType, YieldChange)
@@ -221,7 +244,7 @@ VALUES
 	('TXT_KEY_EVENT_XON_CHOICE_4', 'Fight the [ICON_GREAT_GENERAL] Dream of War'),
 	('TXT_KEY_EVENT_XON_CHOICE_4_HELP', 'All Melee and Gun Units receive the [COLOR_POSITIVE_TEXT]Dream Warrior[ENDCOLOR] Promotion, fighting stronger when Damaged and when near Holy Sites.[NEWLINE]Holy Sites in the Empire yield +1 [ICON_GREAT_GENERAL] Great General Point.'),
 
-	('TXT_KEY_EVENT_XON_CHOICE_5', 'Embrace the [ICON_TOURISM] Dream of Healing'),
+	('TXT_KEY_EVENT_XON_CHOICE_5', 'Embrace the [ICON_PEACE] Dream of Healing'),
 	('TXT_KEY_EVENT_XON_CHOICE_5_HELP', 'All non-Armor Land Units receive the [COLOR_POSITIVE_TEXT]Surge of Life[ENDCOLOR] Promotion, doubling healing on [COLOR_POSITIVE_TEXT]Plains[ENDCOLOR] tiles.[NEWLINE]Holy Sites in the Empire yield +3 [ICON_PEACE] Faith.'),
 
 	('TXT_KEY_EVENT_XON_CHOICE_6', 'Accept the [ICON_RESEARCH] Dream of Awakening'),

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <CustomModOptions>
+  	<Replace Name="GLOBAL_NO_LOST_GREATWORKS" Value="1"/>
+  	<Replace Name="EVENTS_UNIT_CAPTURE" Value="1"/>
+  </CustomModOptions>
+  
+  <UnitPromotions>
+  	<Row>
+  		<Type>PROMOTION_HEROES</Type>
+  		<Description>TXT_KEY_PROMOTION_HEROES</Description>
+  		<Help>TXT_KEY_PROMOTION_HEROES_HELP</Help>
+  		<Sound>AS2D_IF_LEVELUP</Sound>
+  		<CannotBeChosen>true</CannotBeChosen>
+  		<NearbyEnemyCombatMod>-15</NearbyEnemyCombatMod>
+  		<NearbyEnemyCombatRange>2</NearbyEnemyCombatRange>
+  		<PortraitIndex>43</PortraitIndex>
+  		<IconAtlas>PROMOTION_ATLAS_VP_06</IconAtlas>
+  		<PediaType>PEDIA_ATTRIBUTES</PediaType>
+  		<PediaEntry>TXT_KEY_PROMOTION_HEROES</PediaEntry>
+  	</Row>
+  </UnitPromotions>
+  
+  <Language_en_US>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES">
+  		<Text>War Heroes</Text>
+  	</Row>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES_HELP">
+  		<Text>-15%[ICON_STRENGTH] Combat Strength penalty to Enemy Units within 2 tiles. [NEWLINE][NEWLINE]Heroes have captured an enemy Great General (or Admiral). Their reputation preceeds them, and as such instills awe in enemies around them.</Text>
+  	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP" Text="Capture Great People"/>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_HEADING">
+        <Text>Captured a {1_GpType}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_BOOST">
+        <Text>Your {2_UnitName} captured a {1_GpType} and gained {3_Icon}{4_Amount}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PROMOTION">
+        <Text>Your {2_UnitName} captured a {1_GpType} and gained the {TXT_KEY_PROMOTION_HEROES} promotion</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_UNIT">
+        <Text>Your {2_UnitName} captured a {1_GpType}</Text>
+	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PIONEER">
+        <Text>Your {2_UnitName} captured a {1_GpType}. [NEWLINE][ICON_CAPITAL] {3_Capital}: +1 [ICON_CITIZEN].</Text>
+    </Row>
+  </Language_en_US>
+  
+  <Language_de_DE>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES">
+  		<Text>Helden</Text>
+  	</Row>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES_HELP">
+  		<Text>Diese Helden haben einen gegnerischen General oder Admiral gefangen genommen. Ihr Ruf eilt ihnen vorraus und flößt nahegelegenen Gegnern Ehrfurcht ein.</Text>
+  	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP" Text="Capture Great People"/>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_HEADING">
+        <Text>Einen {1_GpType} gefangen genommen</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_BOOST">
+        <Text>Dein {2_UnitName} hat einen {1_GpType} gefangen genommen und erbeutet {3_Icon}{4_Amount}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PROMOTION">
+        <Text>Dein {2_UnitName} hat einen {1_GpType} gefangen genommen und erhält die {TXT_KEY_PROMOTION_HEROES} Beförderung</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_UNIT">
+        <Text>Dein {2_UnitName} hat einen {1_GpType} gefangen genommen</Text>
+    </Row>
+  </Language_de_DE>
+  
+  <Language_RU_RU>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES">
+  		<Text>Герои</Text>
+  	</Row>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES_HELP">
+  		<Text>Эти Герои арестовали противный Генерал или Адмирал. Ихния слава их обгонает и внушает уважение к блиским противникам.</Text>
+  	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP" Text="Capture Great People"/>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_HEADING">
+        <Text>Арестован одого {1_GpType}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_BOOST">
+        <Text>Ваш {2_UnitName} арестовал одого {1_GpType} и захватил {3_Icon}{4_Amount}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PROMOTION">
+        <Text>Ваш {2_UnitName} арестовал одого {1_GpType} и получил повышения {TXT_KEY_PROMOTION_HEROES}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_UNIT">
+        <Text>Ваш {2_UnitName} арестовал одого {1_GpType}</Text>
+    </Row>
+  </Language_RU_RU>
+  
+  <Language_ko_KR>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES">
+  		<Text>전쟁 영웅</Text>
+  	</Row>
+  	<Row Tag="TXT_KEY_PROMOTION_HEROES_HELP">
+  		<Text>2 타일 이내의 적 유닛에게 [ICON_STRENGTH] 전투력 -15% 감소 페널티를 부여합니다.[NEWLINE][NEWLINE]영웅이 적의 위대한 장군(또는 제독)을 사로잡았습니다. 그들의 명성은 자자하며, 그로 인해 주변의 적들에게 경외감을 불러일으킵니다.</Text>
+  	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP" Text="위인 포획"/>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_HEADING">
+        <Text>{1_GpType} 포획</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_BOOST">
+        <Text>당신의 {2_UnitName} 유닛이 {1_GpType} 포획과 함께 {3_Icon}{4_Amount} 획득</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PROMOTION">
+        <Text>당신의 {2_UnitName} 유닛이 {1_GpType} 포획과 함께 {TXT_KEY_PROMOTION_HEROES} 승급 획득</Text>
+    </Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_UNIT">
+        <Text>당신의 {2_UnitName} 유닛이 {1_GpType} 포획</Text>
+	</Row>
+    <Row Tag="TXT_KEY_NOTIFICATIONS_CAPTURE_GP_TEXT_PIONEER">
+        <Text>당신의 {2_UnitName} 유닛이 {1_GpType} 포획에 성공했습니다.[NEWLINE][ICON_CAPITAL] {3_Capital}: [ICON_CITIZEN] 시민이 +1 증가합니다.</Text>
+    </Row>
+  </Language_ko_KR>
+</GameData>

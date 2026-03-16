@@ -103,7 +103,7 @@ VALUES
 UPDATE Buildings
 SET
 	RequiresIndustrialCityConnection = 1,
-	TradeRouteLandGoldBonus = 3,
+	TradeRouteLandGoldBonus = 300,
 	TradeRouteRecipientBonus = 3,
 	TradeRouteTargetBonus = 3,
 	CityConnectionGoldModifier = 20,

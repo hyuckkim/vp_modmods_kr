@@ -9,6 +9,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_XON_HEAL</PediaEntry>
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
@@ -20,6 +21,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_XON_WAR</PediaEntry>
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<StrongerDamaged>1</StrongerDamaged>
@@ -35,6 +37,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_WANGARA</PediaEntry>
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
@@ -47,6 +50,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_LIBYAN_DESERT_RAIDER</PediaEntry>
 			<PortraitIndex>3</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CityAttackPlunderModifier>75</CityAttackPlunderModifier>
@@ -61,6 +65,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_AMANOKAL_STEALTH</PediaEntry>
 			<PortraitIndex>4</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<IsNearbyPromotion>1</IsNearbyPromotion>
@@ -78,6 +83,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_BAGPIPES</PediaEntry>
 			<PortraitIndex>37</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<NearbyRange>1</NearbyRange>
@@ -96,6 +102,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_ARCU</PediaEntry>
 			<PortraitIndex>38</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<!-- PROMOTIONS_IMPROVEMENT_BONUS in .sql -->
 			<NearbyImprovementCombatBonus>25</NearbyImprovementCombatBonus>
@@ -113,6 +120,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_MESOPOTAMIC</PediaEntry>
 			<PortraitIndex>5</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<WorkRateMod>25</WorkRateMod>
@@ -125,6 +133,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_TRIBAL</PediaEntry>
 			<PortraitIndex>6</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<RiverDoubleMove>1</RiverDoubleMove>
@@ -139,6 +148,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_PEDIA</PediaEntry>
 			<PortraitIndex>7</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<HasPostCombatPromotions>1</HasPostCombatPromotions>
@@ -151,6 +161,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_EAGLE_PEDIA</PediaEntry>
 			<PortraitIndex>8</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IgnoreZOC>1</IgnoreZOC>
@@ -164,6 +175,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_RAVEN_PEDIA</PediaEntry>
 			<PortraitIndex>9</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<HPHealedIfDestroyEnemy>10</HPHealedIfDestroyEnemy>
@@ -177,6 +189,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_BUFFALO_PEDIA</PediaEntry>
 			<PortraitIndex>10</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<RangedDefenseMod>20</RangedDefenseMod>
@@ -191,6 +204,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_COYOTE_PEDIA</PediaEntry>
 			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<MovesChange>1</MovesChange>
@@ -203,6 +217,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_SUN_DANCE_TURTLE_PEDIA</PediaEntry>
 			<PortraitIndex>12</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<SameTileHealChange>5</SameTileHealChange>
@@ -216,6 +231,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_PANZER</PediaEntry>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 		</Row>
@@ -228,6 +244,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_TEUTONIC</PediaEntry>
 			<PortraitIndex>14</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<BarbarianCombatBonus>25</BarbarianCombatBonus>	
@@ -241,6 +258,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_UMIAK</PediaEntry>
 			<PortraitIndex>15</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<!-- <CanCrossIce>1</CanCrossIce>  -->
@@ -256,6 +274,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_GJAKMARRJA</PediaEntry>
 			<PortraitIndex>16</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<LostWithUpgrade>1</LostWithUpgrade>
@@ -270,6 +289,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_AMAZONIAN</PediaEntry>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 		</Row>
@@ -281,6 +301,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_DARTS</PediaEntry>
 			<PortraitIndex>18</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<LostWithUpgrade>1</LostWithUpgrade>
 			<CannotBeChosen>1</CannotBeChosen>
@@ -293,13 +314,12 @@
 			<PediaEntry>TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE</PediaEntry>
 			<PortraitIndex>19</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
-			<PromotionDuration>5</PromotionDuration>
-			<PlagueID>2</PlagueID>
-			<EnemyHealChange>-10</EnemyHealChange>
-			<NeutralHealChange>-10</NeutralHealChange>
-			<FriendlyHealChange>-10</FriendlyHealChange>
+			<PromotionDuration>4</PromotionDuration>
+			<PlagueID>100</PlagueID>
+			<CannotHeal>1</CannotHeal>
 		</Replace>
 
 		<Row>
@@ -310,6 +330,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_FIREWEED</PediaEntry>
 			<PortraitIndex>20</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<NeutralHealChange>5</NeutralHealChange>
@@ -325,6 +346,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_INKARRI</PediaEntry>
 			<PortraitIndex>21</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<AoEHealOnPillage>10</AoEHealOnPillage>
@@ -338,6 +360,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_IZZAT_PEDIA</PediaEntry>
 			<PortraitIndex>22</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<HasPostCombatPromotions>1</HasPostCombatPromotions>
@@ -350,6 +373,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_IZZAT_BRAHMIN_PEDIA</PediaEntry>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<AttackModPerSamePromotionAttack>15</AttackModPerSamePromotionAttack>
@@ -363,6 +387,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_IZZAT_KSHATRIYA_PEDIA</PediaEntry>
 			<PortraitIndex>24</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<AttackModPerSamePromotionAttack>15</AttackModPerSamePromotionAttack>
@@ -376,6 +401,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_IZZAT_VAISHYA_PEDIA</PediaEntry>
 			<PortraitIndex>25</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<AttackModPerSamePromotionAttack>15</AttackModPerSamePromotionAttack>
@@ -389,6 +415,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_IZZAT_SHUDRA_PEDIA</PediaEntry>
 			<PortraitIndex>26</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
 			<AttackModPerSamePromotionAttack>15</AttackModPerSamePromotionAttack>
@@ -403,6 +430,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_VOIVODE</PediaEntry>
 			<PortraitIndex>27</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<IsNearbyPromotion>1</IsNearbyPromotion>
@@ -419,6 +447,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_VOIVODE_2</PediaEntry>
 			<PortraitIndex>28</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<MilitaryProductionModifier>25</MilitaryProductionModifier>
@@ -432,6 +461,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_PAGAN_SOLDIERS</PediaEntry>
 			<PortraitIndex>40</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS_VP_01</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 		</Row>
@@ -444,6 +474,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_VARANGIAN</PediaEntry>
 			<PortraitIndex>39</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<RiverDoubleMove>1</RiverDoubleMove>
@@ -460,6 +491,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_KHASHED</PediaEntry>
 			<PortraitIndex>29</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 		</Row>
@@ -472,6 +504,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_STOMP</PediaEntry>
 			<PortraitIndex>30</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<RiverDoubleMove>1</RiverDoubleMove>
@@ -487,6 +520,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_BATIR</PediaEntry>
 			<PortraitIndex>31</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<LostWithUpgrade>1</LostWithUpgrade>
@@ -503,6 +537,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_KAKAP</PediaEntry>
 			<PortraitIndex>32</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<LostWithUpgrade>1</LostWithUpgrade>
@@ -519,8 +554,9 @@
 			<PediaEntry>TXT_KEY_PROMOTION_DMS_BOLAS</PediaEntry>
 			<PortraitIndex>33</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
-			<LostWithUpgrade>1</LostWithUpgrade>
+			<LostWithUpgrade>0</LostWithUpgrade>
 			<CannotBeChosen>1</CannotBeChosen>
 			<OpenRangedAttackMod>15</OpenRangedAttackMod>
 		</Replace>
@@ -532,11 +568,11 @@
 			<PediaEntry>TXT_KEY_PROMOTION_DMS_BOLAS_HIT</PediaEntry>
 			<PortraitIndex>34</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<CannotBeChosen>1</CannotBeChosen>
-			<PlagueID>2</PlagueID>
+			<PlagueID>101</PlagueID>
 			<PromotionDuration>1</PromotionDuration>
-			<MovesChange>-2</MovesChange>
 		</Replace>
 
 		<Row>
@@ -547,6 +583,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_MFECANE</PediaEntry>
 			<PortraitIndex>35</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 		</Row>
@@ -558,6 +595,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_WARCHIEF</PediaEntry>
 			<PortraitIndex>36</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<NearbyRange>3</NearbyRange>
@@ -574,6 +612,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_BOKH</PediaEntry>
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>0</IsVisibleAboveFlag>
 			<MaxHitPointsChange>10</MaxHitPointsChange>
@@ -586,6 +625,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_BRIGADE</PediaEntry>
 			<PortraitIndex>41</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<PillageBonusStrength>25</PillageBonusStrength>
@@ -602,6 +642,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_BRIGADE_2</PediaEntry>
 			<PortraitIndex>40</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<LostWithUpgrade>1</LostWithUpgrade>
@@ -614,6 +655,7 @@
 			<PediaEntry>TXT_KEY_PROMOTION_CD_CONDOR</PediaEntry>
 			<PortraitIndex>42</PortraitIndex>
 			<IconAtlas>CD_PROMO_ATLAS</IconAtlas>
+			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>1</CannotBeChosen>
 			<IsVisibleAboveFlag>1</IsVisibleAboveFlag>
 			<InterceptionDefenseDamageModifier>-25</InterceptionDefenseDamageModifier>
@@ -629,6 +671,7 @@
 			<ApplyOnDefense>0</ApplyOnDefense>
 			<ApplyChance>100</ApplyChance>
 		</Replace>
+	<!--
 		<Replace>
 			<PromotionType>PROMOTION_DMS_BOLAS</PromotionType>
 			<PlaguePromotionType>PROMOTION_DMS_BOLAS_HIT</PlaguePromotionType>
@@ -637,6 +680,7 @@
 			<ApplyOnDefense>0</ApplyOnDefense>
 			<ApplyChance>100</ApplyChance>
 		</Replace>
+	-->
 	</UnitPromotions_Plagues>
 
 	<UnitPromotions_UnitCombats>
@@ -890,7 +934,7 @@
 		<Row>
 			<PromotionType>PROMOTION_CD_CONDOR</PromotionType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1000</Yield>
+			<Yield>2000</Yield>
 		</Row>
 	</UnitPromotions_YieldFromCombatExperienceTimes100>
 	<UnitPromotions_Terrains>
@@ -901,6 +945,37 @@
 			<DoubleMove>1</DoubleMove>
 			<IgnoreTerrainCostFrom>1</IgnoreTerrainCostFrom>
 		</Row>
+
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
+		<Replace>
+			<PromotionType>PROMOTION_DMS_BOLAS_HIT</PromotionType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+			<HalfMove>1</HalfMove>
+		</Replace>
 
 		<Row>
 			<PromotionType>PROMOTION_CD_XON_HEAL</PromotionType>
@@ -1229,13 +1304,13 @@
 			<Text>Blowpipe</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_DARTS_HELP">
-			<Text>Inflict the [COLOR_POSITIVE_TEXT]Venom[ENDCOLOR] status on enemy Units when attacking, reducing their healing by 10 for 5 Turns.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].</Text>
+			<Text>Inflict the [COLOR_POSITIVE_TEXT]Venom[ENDCOLOR] status on enemy Units when attacking, preventing them from healing for 4 Turns.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].</Text>
 		</Row>		
 		<Replace Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE">
 			<Text>Venom</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE_HELP">
-			<Text>[COLOR_NEGATIVE_TEXT]Healing reduced by 10[ENDCOLOR] for 5 Turns.</Text>
+			<Text>[COLOR_NEGATIVE_TEXT]Cannot Heal[ENDCOLOR] for 4 Turns.</Text>
 		</Replace>
 	
 		<Row Tag="TXT_KEY_PROMOTION_CD_FIREWEED">
@@ -1365,13 +1440,13 @@
 			<Text>Shome</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HELP">
-			<Text>Increases [ICON_MOVES] Movement costs for Land targets by 2 for 1 turn.[NEWLINE]+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength when attacking [COLOR_POSITIVE_TEXT]Units in Open Terrain[ENDCOLOR].</Text>
+			<Text>Inflict the [COLOR_POSITIVE_TEXT]Karjenken[ENDCOLOR] status on Enemy Land Units when attacking, doubling their [ICON_MOVES] Movement costs for 1 turn.[NEWLINE]+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength when attacking [COLOR_POSITIVE_TEXT]Units in Open Terrain[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HIT">
 			<Text>Karjenken</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HIT_HELP">
-			<Text>All Land tiles cost 2 extra [ICON_MOVES] Movement for one turn.</Text>
+			<Text>All Land tiles cost double [ICON_MOVES] Movement for one turn.</Text>
 		</Replace>
 
 		<Row Tag="TXT_KEY_PROMOTION_CD_MFECANE">
@@ -1422,7 +1497,7 @@
 			<Text>Jericho Trumpets</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CD_CONDOR_HELP">
-			<Text>-25% Damage received when performing an [COLOR_POSITIVE_TEXT]Air Strike[ENDCOLOR].[NEWLINE]Gain 10 [ICON_RESEARCH] Science for every XP earned in Combat.</Text>
+			<Text>-25% Damage received when performing an [COLOR_POSITIVE_TEXT]Air Strike[ENDCOLOR].[NEWLINE]Gain 20 [ICON_RESEARCH] Science for every XP earned in Combat.</Text>
 		</Row>
 
 

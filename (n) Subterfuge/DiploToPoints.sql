@@ -17,8 +17,5 @@ WHERE Class = 'UNITCLASS_GREAT_DIPLOMAT';
 -- scrivener at 50, so first gdip is a spy, then every 2
 UPDATE Buildings SET
 ExtraSpies = 5
-WHERE BuildingClass = 'BUILDINGCLASS_COURT_SCRIBE';
-
-UPDATE Language_en_US SET Text = "Receive 50 [ICON_VP_SPY_POINTS] Spy Points. " || Text
-WHERE Tag IN (SELECT Help FROM Buildings WHERE BuildingClass = 'BUILDINGCLASS_COURT_SCRIBE');
+WHERE BuildingClass = 'BUILDINGCLASS_SCRIVENERS_OFFICE';
 

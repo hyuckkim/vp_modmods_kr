@@ -247,6 +247,13 @@ ReligiousPressureModifier = (
     JOIN BuildingClasses AS bc ON bc.DefaultBuilding = b.Type
     WHERE bc.Type = Buildings.BuildingClass
     LIMIT 1
+),
+UnlockedByBelief = (
+    SELECT b.UnlockedByBelief
+    FROM Buildings AS b
+    JOIN BuildingClasses AS bc ON bc.DefaultBuilding = b.Type
+    WHERE bc.Type = Buildings.BuildingClass
+    LIMIT 1
 )
 WHERE IconAtlas = 'CD_ECONOMIC_ATLAS';
 
