@@ -61044,7 +61044,7 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		</Replace>
 		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_5"> 
 			<Text>
-				Embrace the [ICON_TOURISM] Dream of Healing
+				Embrace the [ICON_PEACE] Dream of Healing
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_5_HELP"> 
@@ -71888,6 +71888,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Youssou N'Dour is a Senegalese singer, songwriter, musician, composer, occasional actor, businessman, and politician.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_PERSON_GRIOT_17_DESC"> 
+			<Text>
+				Oumou Sangaré (born 25 February 1968) is a Malian Wassoulou singer of Fula descent.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_GREAT_PERSON_GUERDIAN"> 
 			<Text>
 				Guderian
@@ -76893,6 +76898,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Birima
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_GRIOT_17"> 
+			<Text>
+				Diaraby Nene
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_GREAT_WORK_GUANGLING_SAN"> 
 			<Text>
 				Guangling San
@@ -79298,6 +79308,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_GRIOT_UNIQUE_NAME_16"> 
 			<Text>
 				Youssou N'Dour
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GRIOT_UNIQUE_NAME_17"> 
+			<Text>
+				Oumou Sangaré
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GROWTH_MOD_BELIEF"> 
@@ -135361,7 +135376,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_CONDOR_HELP"> 
 			<Text>
-				-25% Damage received when performing an [COLOR_POSITIVE_TEXT]Air Strike[ENDCOLOR].[NEWLINE]Gain 10 [ICON_RESEARCH] Science for every XP earned in Combat.
+				-25% Damage received when performing an [COLOR_POSITIVE_TEXT]Air Strike[ENDCOLOR].[NEWLINE]Gain 20 [ICON_RESEARCH] Science for every XP earned in Combat.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_DARTS"> 
@@ -135371,7 +135386,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_DARTS_HELP"> 
 			<Text>
-				Inflict the [COLOR_POSITIVE_TEXT]Venom[ENDCOLOR] status on enemy Units when attacking, reducing their healing by 10 for 5 Turns.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].
+				Inflict the [COLOR_POSITIVE_TEXT]Venom[ENDCOLOR] status on enemy Units when attacking, preventing them from healing for 4 Turns.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_FIREWEED"> 
@@ -136151,7 +136166,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HELP"> 
 			<Text>
-				Increases [ICON_MOVES] Movement costs for Land targets by 2 for 1 turn.[NEWLINE]+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength when attacking [COLOR_POSITIVE_TEXT]Units in Open Terrain[ENDCOLOR].
+				Inflict the [COLOR_POSITIVE_TEXT]Karjenken[ENDCOLOR] status on Enemy Land Units when attacking, doubling their [ICON_MOVES] Movement costs for 1 turn.[NEWLINE]+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength when attacking [COLOR_POSITIVE_TEXT]Units in Open Terrain[ENDCOLOR].
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HIT"> 
@@ -136161,7 +136176,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DMS_BOLAS_HIT_HELP"> 
 			<Text>
-				All Land tiles cost 2 extra [ICON_MOVES] Movement for one turn.
+				All Land tiles cost double [ICON_MOVES] Movement for one turn.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_DOGFIGHTING_1"> 
@@ -138831,7 +138846,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_SWAMP_TEACHING_PLAGUE_HELP"> 
 			<Text>
-				[COLOR_NEGATIVE_TEXT]Healing reduced by 10[ENDCOLOR] for 5 Turns.
+				[COLOR_NEGATIVE_TEXT]Cannot Heal[ENDCOLOR] for 4 Turns.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_TAIKAN_KYOHO"> 
@@ -185322,29 +185337,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_ARCH_PARK_HELP"> 
 			<Text>
-				[ICON_CULTURE_CD_CRESCENT] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MESOPOTAMIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]이 도시에서 훈련된 고고학자는 사막에서 지형 비용을 무시하는 특수 승급을 얻으며, 고고학자 생산 속도가 50% 증가합니다. 랜드마크 시설에서 [ICON_CULTURE] 문화, [ICON_TOURISM] 관광, [ICON_GOLD] 금을 각각 +4씩 추가로 얻습니다.[NEWLINE][NEWLINE]가능한 테마 보너스:
-  [NEWLINE][ICON_BULLET] [COLOR:255:230:150:255]같은 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_GW_ART] 예술품 2개: [ICON_CULTURE] 및 [ICON_TOURISM] +10.
-  [NEWLINE][ICON_BULLET] [COLOR:255:230:150:255]같은 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_ARTIFACT] 유물 2개: [ICON_CULTURE] 및 [ICON_TOURISM] +20.
-  [NEWLINE][ICON_BULLET] [COLOR:255:230:150:255]같은 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 예술품 1개와 유물 1개 쌍: [ICON_CULTURE] 및 [ICON_TOURISM] +12.
-  [NEWLINE][ICON_BULLET] 시대와 상관없는 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_GW_ART] 예술품 2개: [ICON_CULTURE] 및 [ICON_TOURISM] +8.
-  [NEWLINE][ICON_BULLET] 시대와 상관없는 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_ARTIFACT] 유물 2개: [ICON_CULTURE] 및 [ICON_TOURISM] +16.
-  [NEWLINE]위의 모든 보너스는 [COLOR_POSITIVE_TEXT]외국[ENDCOLOR] 걸작일 경우 [COLOR_NEGATIVE_TEXT]절반[ENDCOLOR]의 수치로 적용됩니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_ARCH_PARK_STRATEGY"> 
 			<Text>
-				고고학은 작지만 중요한 시스템으로, 잠금 해제가 게임의 마지막 단계를 알리는 신호입니다. 고고학은 사실상 레이스이기 때문에 더 빠르게 발굴할 수 있다는 점에서
-				공격적으로나 방어적으로나 큰 이점을 얻을 수 있습니다. 유물이 확보되면 고고학 공원은 테마를 지원하고, 유물이 문명에서 나온 것이라면 두 배의 보너스를 지급합니다.
-				랜드마크가 더 빠른 속도라면, 특히 제국에서 유물을 구할 수 없는 경우에도 마찬가지로 강화되므로 걱정하지 마세요!
+				고고학은 작지만 중요한 시스템으로, 잠금 해제가 게임의 마지막 단계를 알리는 신호입니다. 고고학은 사실상 레이스이기 때문에 더 빠르게 발굴할 수 있다는 점에서 공격적으로나 방어적으로나 큰 이점을 얻을 수 있습니다. 유물이 확보되면 고고학 공원은 테마를 지원하고, 유물이 문명에서 나온 것이라면 두 배의 보너스를 지급합니다. 랜드마크가 더 빠른 속도라면, 특히 제국에서 유물을 구할 수 없는 경우에도 마찬가지로 강화되므로 걱정하지 마세요!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_ARCH_PARK_TEXT"> 
 			<Text>
-				고고학 공원은 과거 인류 활동의 증거가 보존되고 탐험과 교육을 위해 대중에게 개방된 장소입니다. 이 공원들은 종종 특정 시대의 역사와 문화에 대한 통찰력을
-				제공하는 건물, 구조물 또는 풍경과 같은 잘 보존된 유적지를 특징으로 합니다. 이 공원들은 방문객을 유치하고 지역 경제에 기여하는 문화 관광의 가시적인 사례로 활용될
-				수 있습니다. 종종 취약한 경제에 중요한 역할을 하기 때문에, 대부분의 현대 레반트 주들은 문화 유적지를 자체 고대 유물부 산하에 두고 있습니다.
-				[NEWLINE][NEWLINE]이집트는 기자와 스핑크스 피라미드, 사카라 네크로폴리스, 룩소르와 카르낙의 사원 단지, 그리고 왕들의 계곡을 포함한 고고학 공원으로
-				가장 유명한 장소입니다. 시리아와 이라크에서는 아슈르, 에르빌 성채, 하트라, 사마라, 바빌론, 니네베, 우르, 카르발라와 같이 여행이 덜 잘 된 장소들이 있습니다.
+				고고학 공원은 과거 인류 활동의 증거가 보존되고 탐험과 교육을 위해 대중에게 개방된 장소입니다. 이 공원들은 종종 특정 시대의 역사와 문화에 대한 통찰력을 제공하는 건물, 구조물 또는 풍경과 같은 잘 보존된 유적지를 특징으로 합니다. 이 공원들은 방문객을 유치하고 지역 경제에 기여하는 문화 관광의 가시적인 사례로 활용될 수 있습니다. 종종 취약한 경제에 중요한 역할을 하기 때문에, 대부분의 현대 레반트 주들은 문화 유적지를 자체 고대 유물부 산하에 두고 있습니다. [NEWLINE][NEWLINE]이집트는 기자와 스핑크스 피라미드, 사카라 네크로폴리스, 룩소르와 카르낙의 사원 단지, 그리고 왕들의 계곡을 포함한 고고학 공원으로 가장 유명한 장소입니다. 시리아와 이라크에서는 아슈르, 에르빌 성채, 하트라, 사마라, 바빌론, 니네베, 우르, 카르발라와 같이 여행이 덜 잘 된 장소들이 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BAGGATAWAY"> 
@@ -185354,7 +185357,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BAGGATAWAY_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_WOODLANDS] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WOODLANDS_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]모든 도시 국가와의 우호도가 10 증가하며, 이 도시에서 훈련된 유닛은 [COLOR_POSITIVE_TEXT]프록세노스(Proxenos)[ENDCOLOR] 승급을 얻습니다. 평원 타일에서 [ICON_CULTURE] 문화를 제공하고, "왕의 사랑을 받는 날(WLTKD)" 동안 [ICON_TOURISM] 관광 산출량이 15% 증가합니다. 또한 외교 임무 수행 시 정찰, 화약, 궁수 유닛의 생산 보너스를 얻습니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BAGGATAWAY_STRATEGY"> 
@@ -185369,31 +185372,22 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI"> 
 			<Text>
-				방코 데이 캄비
+				캠프소어
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_SOUTHERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_SOUTHERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 도시의 [ICON_GOLD] 금 변환(Process) 효율이 15% 증가하며, 해상 유닛 생산 시 [ICON_PRODUCTION] 생산력 보너스 +20%를 얻습니다. 전문가 [ICON_CITIZEN] 상인이 [ICON_CULTURE] 문화를 생산하며, 항만 및 항구 건물에서 추가 [ICON_GOLD] 금과 [ICON_TOURISM] 관광을 제공합니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI_STRATEGY"> 
 			<Text>
-				방코 데이 캄비는 은행에 해상 시너지를 추가하여, 해안 도시의 기반 시설 산출량을 높일 뿐만 아니라 모든 종류의 함선 생산에도 도움을 줍니다. 따라서 해안의
-				가치를 훨씬 높게 평가해야 합니다. 게다가 전문가인 상인이 약간의 문화도 생성하므로 다른 전문가보다 선호됩니다. 이 모든 요소는 더 많은 금을 가져다줄 것이며,
-				중대한 작전이 필요할 때 '부(Wealth)' 프로세스를 더욱 효과적으로 만들어 줄 것입니다.
+				캠프소어는 은행에 해군 시너지 효과를 더해 해안 도시에 기반 시설 수익률과 모든 종류의 함선 생산력 향상이라는 이점을 제공합니다. 따라서 해안 지역의 가치를 더욱 높여야 합니다. 또한, 상인들은 문화도 생성하므로 다른 전문가보다 선호됩니다. 이 모든 것들이 더 많은 금을 벌어다 주지만, 중요한 전략적 작전을 수행해야 할 때는 부의 축적 과정이 훨씬 더 효과적일 것입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BANCO_DEI_CAMBI_TEXT"> 
 			<Text>
-				방코 데이 캄비는 서기 1150년경 등장한 최초의 현대적 은행 실체였습니다. 이 은행은 환전상들이 상인들의 요청에 따라 지역 주조 화폐로 환전해 주던
-				장소였습니다. 여러 국가에서 유통되는 동전들 사이의 수많은 차이점을 파악하는 환전상의 능력은 진정한 예술로 여겨졌으며, 고리대금업으로 간주되지 않기 위해 미묘한
-				경계선을 지켜야 했습니다. 이는 결국 13세기 베네치아 공화국에서 곡물 사무국이 예금과 대출을 모두 포함하는 은행 업무를 수행하며
-				확장되었습니다.[NEWLINE][NEWLINE]르네상스 시대에 은행업이 확장됨에 따라 소규모 환전상들은 좀 더 자유로운 전당포 성격의 '반키 아 미누토(banchi
-				a minuto)'가 되거나, 더 격식 있는 '반키 아페르티(banchi aperti)'가 되었습니다. 후자는 공공 광장 야외에서 영업하며 테이블(타볼라, 이들의
-				총칭인 '타볼리'의 유래) 위에 놓인 하나의 장부에 모든 거래를 기록했고, 법에 따라 고객이 지켜보는 앞에서만 계좌 이체를 할 수 있었습니다. 이와 유사하게 반키
-				아페르티 간의 이체도 야외에서 구두로 이루어졌습니다. 시간이 흐르면서 복식부기의 도입과 함께 메디치 은행과 같은 '반키 그로시(banchi grossi)'가 유럽
-				경제를 지배하게 되었습니다.
+				캠프소어(Campsores)는 서기 1150년경에 등장한 환전상으로, 상인들의 요청에 따라 지역 주조 방식에 따라 동전을 교환해 주었습니다. 다양한 국가에서 유통되는 동전의 차이점을 기억하는 능력은 진정한 기술로 여겨졌으며, 고리대금으로 간주되지 않도록 아슬아슬한 경계를 넘나들었습니다. 또한 예금 보관 서비스를 제공하고 투자금에 대한 이자를 지급하는 등, 최초의 근대적 은행 형태를 띠었습니다. 이러한 형태는 13세기 베네치아 공화국에서 곡물 사무소가 예금과 대출을 포함한 은행업을 운영하면서 더욱 확장되었습니다. 르네상스 시대에 은행업이 확장됨에 따라 소규모 환전상들은 전당포와 유사한 형태의 자유로운 "반키 아 미누토(banchi a minuto)" 또는 보다 품격 있는 "반키 아페르티(banchi aperti)"로 발전했습니다. 후자의 은행들은 공공 광장에서 공개적으로 영업을 했으며, 모든 거래 내역을 탁자나 "반쿠스(bancus)"라고 불리는 책상 위에 놓인 하나의 장부에 기록했습니다. 법률에 따라 고객이 지켜보는 앞에서만 계좌 간 이체를 해야 했습니다. 마찬가지로, 개방형 은행(banchi aperti) 간의 이체도 밖에서 구두로 이루어졌습니다. 시간이 흐르면서 그들의 영향력이 국제적으로 확대됨에 따라, 메디치 은행과 같은 법인 형태의 "대형 은행(banchi grossi)"들이 유럽 경제를 지배하게 되었고, 복식부기 제도가 등장하게 되었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BOKH_PLAZA"> 
@@ -185403,25 +185397,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BOKH_PLAZA_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_STEPPE] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_STEPPE_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]도시의 [ICON_HAPPINESS_4] 행복도를 1 증가시키며, 이 도시에서 생산되는 유닛에게 [COLOR_POSITIVE_TEXT]보흐(Bokh)[ENDCOLOR] 승급을 부여합니다. 원형 경기장 및 경기장 건물의 [ICON_CULTURE] 문화와 [ICON_FOOD] 식량 출력을 5% 강화하고 추가 [ICON_HAPPINESS_4] 행복을 제공합니다. 또한 도시 인구가 성장할 때마다 [ICON_PRODUCTION] 생산력을 획득하며, 유닛 생산 시 [ICON_TOURISM] 관광을 생성합니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BOKH_PLAZA_STRATEGY"> 
 			<Text>
-				축제 광장은 호텔에 두 가지 목적을 부여합니다. 문화와 성장률을 전반적으로 높여줄 뿐만 아니라, 늘어난 시민들을 부양하기 위한 행복도도 제공합니다. 실제로
-				도시 인구가 성장할 때마다 즉시 생산량을 획득할 수 있습니다. 유닛을 훈련할 경우 해당 유닛들은 추가 체력(HP)을 얻으며, 유닛이 생성될 때마다 관광 수치가
-				증가하여 호텔의 본래 역할을 더욱 강화합니다. 문화 및 성장률의 퍼센트 보너스와 추가 행복도는 도시에 먼저 경기장(Arena)이 있어야 하며, 이후에는
-				경기장(Stadium)이 있어야 활성화된다는 점에 유의하십시오. 따라서 원자론 기술에 도달하면 이 보너스는 사실상 두 배가 됩니다.
+				축제 광장은 호텔에 두 가지 목적을 부여합니다. 문화와 성장률을 전반적으로 높여줄 뿐만 아니라, 늘어난 시민들을 부양하기 위한 행복도도 제공합니다. 실제로 도시 인구가 성장할 때마다 즉시 생산량을 획득할 수 있습니다. 유닛을 훈련할 경우 해당 유닛들은 추가 체력(HP)을 얻으며, 유닛이 생성될 때마다 관광 수치가 증가하여 호텔의 본래 역할을 더욱 강화합니다. 문화 및 성장률의 퍼센트 보너스와 추가 행복도는 도시에 먼저 경기장(Arena)이 있어야 하며, 이후에는 경기장(Stadium)이 있어야 활성화된다는 점에 유의하십시오. 따라서 원자론 기술에 도달하면 이 보너스는 사실상 두 배가 됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_BOKH_PLAZA_TEXT"> 
 			<Text>
-				몽골에서 아나톨리아에 이르기까지, 유목 민족들은 초원에서 살아남기 위해 필요한 기술과 훈족에서 몽골에 이르는 역대 제국들의 원동력이 된 독보적인 기마술에
-				뿌리를 둔 독특한 스포츠들을 즐겨왔습니다. 대규모 축제에는 국가에 따라 여러 종목의 경기가 포함되며, 오늘날에는 '노마드 게임'이라 불리는 올림픽과 유사한 국제적인
-				행사도 열리고 있습니다. 활쏘기와 장거리 경마 같은 전통적인 종목뿐만 아니라, 민속 음식, 전통 의상, 그리고 서사적인 스토리텔링 예술까지 이 게임을 통해
-				장려됩니다.[NEWLINE][NEWLINE]핀란드 몽골 원정대의 악셀 헤이켈은 1891년 7월 27일부터 8월 7일까지 우르가(현 몽골의 수도 울란바토르)에 10일간
-				머무는 동안 목격한 씨름(브흐) 대회에 대해 기록했습니다. 당시 우르가 게임은 현재의 수흐바타르 광장 바로 북쪽에 위치했던 옛 중앙 광장에서 열렸습니다. 발바닥이나
-				손바닥 이외의 신체 부위가 땅에 닿으면 경기에서 패배하게 됩니다. 오늘날에도 다른 행사들과 함께 매년 7월이면 국가적인 나담 축제가 여전히 개최되고 있습니다.
+				몽골에서 아나톨리아에 이르기까지, 유목 민족들은 초원에서 살아남기 위해 필요한 기술과 훈족에서 몽골에 이르는 역대 제국들의 원동력이 된 독보적인 기마술에 뿌리를 둔 독특한 스포츠들을 즐겨왔습니다. 대규모 축제에는 국가에 따라 여러 종목의 경기가 포함되며, 오늘날에는 '노마드 게임'이라 불리는 올림픽과 유사한 국제적인 행사도 열리고 있습니다. 활쏘기와 장거리 경마 같은 전통적인 종목뿐만 아니라, 민속 음식, 전통 의상, 그리고 서사적인 스토리텔링 예술까지 이 게임을 통해 장려됩니다.[NEWLINE][NEWLINE]핀란드 몽골 원정대의 악셀 헤이켈은 1891년 7월 27일부터 8월 7일까지 우르가(현 몽골의 수도 울란바토르)에 10일간 머무는 동안 목격한 씨름(브흐) 대회에 대해 기록했습니다. 당시 우르가 게임은 현재의 수흐바타르 광장 바로 북쪽에 위치했던 옛 중앙 광장에서 열렸습니다. 발바닥이나 손바닥 이외의 신체 부위가 땅에 닿으면 경기에서 패배하게 됩니다. 오늘날에도 다른 행사들과 함께 매년 7월이면 국가적인 나담 축제가 여전히 개최되고 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_CASSAVA_PIT"> 
@@ -185436,27 +185422,57 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_CASSAVA_PIT_STRATEGY"> 
 			<Text>
-				카사바 구덩이는 추가 식량의 초기 공급원이자 이를 산출하는 식물 보너스 자원 근처에 정착하는 가치를 높입니다. 곡창의 기본 보너스가 상당히 강화되었습니다.
-				카사바 구덩이에서 얻을 수 있는 훨씬 더 많은 식량의 용도 중 하나는 그렇지 않으면 감당할 수 없었던 전문가 슬롯을 운영하는 것입니다. 게임이 진행됨에 따라 이
-				보너스의 가치는 상대적으로 약해지지만, 추가로 5%의 보너스가 유지되어 더 높은 인구 가치에 도달할 수 있습니다. 마지막으로, 냉장 기술에서 효과가 발생하여 최종
-				게임에 들어갈 때 특정 연구 경로를 제안합니다.
+				카사바 구덩이는 추가 식량의 초기 공급원이자 이를 산출하는 식물 보너스 자원 근처에 정착하는 가치를 높입니다. 곡창의 기본 보너스가 상당히 강화되었습니다. 카사바 구덩이에서 얻을 수 있는 훨씬 더 많은 식량의 용도 중 하나는 그렇지 않으면 감당할 수 없었던 전문가 슬롯을 운영하는 것입니다. 게임이 진행됨에 따라 이 보너스의 가치는 상대적으로 약해지지만, 추가로 5%의 보너스가 유지되어 더 높은 인구 가치에 도달할 수 있습니다. 마지막으로, 냉장 기술에서 효과가 발생하여 최종 게임에 들어갈 때 특정 연구 경로를 제안합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_CASSAVA_PIT_TEXT"> 
 			<Text>
-				카사바, 유카 또는 타피오카라고도 알려진 카사바는 다른 주요 뿌리 작물과 달리 식용 뿌리가 휴면 상태의 기관이 아니며 건기 동안 식물을 보존하는 데 자연적인
-				기능을 하지 않는 것으로 보입니다. 따라서 뿌리는 본질적으로 생존에 적응하지 못하고 수확 후 빠르게 변질되어 며칠 내에 혈관 변색이 발생하여 뿌리가 맛이 없습니다.
-				예로부터 아마존 아메리카 원주민들이 사용해 온 신선한 카사바 뿌리를 저장하는 한 가지 방법은 수확한 뿌리를 구덩이나 참호에 묻는 것으로, 이는 아마도 카사바를
-				수확하지 않은 채로 두는 일반적인 관행에서 비롯된 기술일 것입니다.[NEWLINE][NEWLINE]냉장 및 냉동 기술이 등장한 이후 카사바를 수출하는 것이
-				가능해졌습니다. 빵, 케이크 및 쿠키에 사용되는 밀가루로 만들 수 있습니다. 브라질에서는 파로파, 조리된 가루 카사바로 만든 건조 식품을 버터에 구워 반찬으로 먹거나
-				다른 음식에 뿌려 먹습니다. 이후 대만 문화권으로 확산된 카사바 '주스'는 고운 가루로 건조되어 버블티의 쫄깃한 토핑인 버블을 만드는 데 사용되는 인기 전분인
-				타피오카를 만드는 데 사용됩니다. 카사바로 만든 알코올 음료로는 카우임(브라질), 카시리(베네수엘라, 가이아나, 수리남), 파라카리 또는 카리(베네수엘라, 가이아나,
-				수리남), 니하만치(남미 원주민) 등이 있습니다.
+				카사바, 유카 또는 타피오카라고도 알려진 카사바는 다른 주요 뿌리 작물과 달리 식용 뿌리가 휴면 상태의 기관이 아니며 건기 동안 식물을 보존하는 데 자연적인 기능을 하지 않는 것으로 보입니다. 따라서 뿌리는 본질적으로 생존에 적응하지 못하고 수확 후 빠르게 변질되어 며칠 내에 혈관 변색이 발생하여 뿌리가 맛이 없습니다. 예로부터 아마존 아메리카 원주민들이 사용해 온 신선한 카사바 뿌리를 저장하는 한 가지 방법은 수확한 뿌리를 구덩이나 참호에 묻는 것으로, 이는 아마도 카사바를 수확하지 않은 채로 두는 일반적인 관행에서 비롯된 기술일 것입니다.[NEWLINE][NEWLINE]냉장 및 냉동 기술이 등장한 이후 카사바를 수출하는 것이 가능해졌습니다. 빵, 케이크 및 쿠키에 사용되는 밀가루로 만들 수 있습니다. 브라질에서는 파로파, 조리된 가루 카사바로 만든 건조 식품을 버터에 구워 반찬으로 먹거나 다른 음식에 뿌려 먹습니다. 이후 대만 문화권으로 확산된 카사바 '주스'는 고운 가루로 건조되어 버블티의 쫄깃한 토핑인 버블을 만드는 데 사용되는 인기 전분인 타피오카를 만드는 데 사용됩니다. 카사바로 만든 알코올 음료로는 카우임(브라질), 카시리(베네수엘라, 가이아나, 수리남), 파라카리 또는 카리(베네수엘라, 가이아나, 수리남), 니하만치(남미 원주민) 등이 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_COMMANDERY"> 
+			<Text>
+				코멘다
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_COMMANDERY_HELP"> 
+			<Text>
+				[ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] 하위 문화 그룹이 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_COMMANDERY_STRATEGY"> 
+			<Text>
+				기존 성채의 모든 방어적 이점을 그대로 유지하면서도, 코멘더리는 종교적 신념으로 해금되는 건물에서만 볼 수 있는 다양한 효과를 제공합니다. 신앙, 압력을 생성하고 외국의 개종을 막아줍니다. 심지어 신앙으로 직접 구매할 수도 있습니다! 또한, 사령부가 건설된 모든 도시는 장군 계열의 근접 및 기마 유닛을 보유하게 되어 신앙 생산을 촉진하고 방어 시설을 강화하여 추가 생산량을 확보할 수 있습니다. 종교적 신념이 높을수록 유닛 생산 속도가 빨라지므로, 화약과 갑옷이 등장하여 지상 정예 유닛이 쓸모없어지기 전에 이 유닛들을 잘 활용하세요!
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_COMMANDERY_TEXT"> 
+			<Text>
+				코멘더리(라틴어: commenda)는 군사 종교 기사단이 소유한 유럽의 토지 재산 중 가장 작은 행정 단위였습니다. 이베리아 반도의 레콩키스타 시대에 코멘다리들은 국경 요새의 촘촘한 네트워크를 형성하여 기독교의 남쪽 확장을 뒷받침했습니다. 레온, 카스티야, 아라곤, 포르투갈의 왕들은 군사적 봉사를 대가로 기사단에 광대한 토지를 하사하며, 노출된 국경을 방어하고 분쟁 지역을 재정착시킬 수 있을 것이라고 믿었습니다. 군사적 역할 외에도 코멘다리는 식민지화와 경제 발전의 원동력이 되었습니다. 도로, 관개 시설, 마을 건설을 감독하고, 기독교 정착을 장려했으며, 종속 공동체로부터 임대료와 십일조를 징수했습니다. 시간이 흐르면서 코멘다리는 부와 정치적 영향력을 키웠고, 사령관들은 세속 귀족이나 심지어 군주와 맞먹는 권력을 행사했습니다. 중세 후기에 이르러 위대한 군사 기사단이 등장했던 시대는 저물어 가고 있었습니다. 1492년 그라나다의 마지막 무슬림 거점이 함락되면서 기사단은 본래의 목적을 잃었고, 독립적인 지위를 유지했다는 이유로 개혁과 왕권 강화의 표적이 되었습니다. 일부는 스페인과 포르투갈 왕실에 흡수되었고, 그들의 사령부는 세속화되어 재분배되었습니다. 반면, 가장 유명한 템플 기사단은 교황의 칙령으로 강제 해산되었고, 요새는 몰수당했으며 기사단은 완전히 소멸되었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_DJELI_HELP"> 
 			<Text>
-				구술가가
+				젤리
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_DWOR"> 
+			<Text>
+				드보르
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_DWOR_HELP"> 
+			<Text>
+				[ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_DWOR_STRATEGY"> 
+			<Text>
+				드보르는 폴란드 고유의 특징인 두 건물을 동시에 건설할 수 있는 기능을 제공하며, 도시에 오페라 하우스를 무료로 건설할 수 있게 해줍니다. 이미 오페라 하우스를 건설했다면, 드보르 건설로 인해 발생한 생산력 증가분을 즉시 돌려받게 됩니다. 하지만 드보르의 가장 큰 장점은 정책을 해제하여 식량, 생산력, 국경 확장 포인트 등 주요 자원 생산량을 대폭 증가시킬 수 있다는 점입니다. 폴란드 고유 능력으로 두 가지 추가 교리를 얻게 되면 성장이 폭발적으로 증가하므로, 이에 대비해야 합니다! 국경이 확장될 때마다 일반 건물보다 더 많은 생산량을 얻게 되는데, 이 작은 보너스가 장기적으로 드보르 건설에 드는 유지비와 기회비용을 충분히 상쇄해 줍니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_CD_DWOR_TEXT"> 
+			<Text>
+				드보르(Dwór)는 역사적으로 폴란드-리투아니아 연방의 슐라흐타(szlachta, 귀족) 소유의 대저택을 의미합니다. 지방 귀족의 소박한 집은 드보르(dwórek, 작은 저택)라고 불렸습니다. 귀족들은 사르마티즘 이념을 따르며 도시를 경멸했기 때문에 시골을 거주지로 선호했습니다. 초기 르네상스 시대의 저택은 모서리 방(알키에르제, alkierze)과 현관을 갖춘 직사각형 구조를 기반으로 했습니다. 건축 양식은 시간이 흐르면서 발전하여 더 큰 궁전에는 여러 개의 객실, 예배당, 심지어 오페라 하우스까지 갖추게 되었습니다. 17세기와 18세기에는 특정 저택 건축 양식을 '폴란드다움'의 상징으로 여기는 관점이 생겨났고, 이를 폴란드 고유의 독특한 건축 양식으로 간주했습니다. 특히 19세기 낭만주의 시대에 큰 인기를 얻었습니다.[NEWLINE][NEWLINE]리투아니아는 1944년 소련에 점령되었고, 장원 저택과 남은 토지는 국유화되어 대부분 학교, 주거 시설 또는 집단 농장의 행정 센터로 용도가 변경되었습니다. 폴란드에서는 공산주의 폴란드 인민 공화국 초기 이념적 국유화 정책과 건축물 보존 지침으로 인해 많은 장원 저택이 파괴되었습니다. 제2차 세계 대전 이전에는 수만 채의 장원 저택이 있었지만, 오늘날에는 2,000채 남짓만 남아 있으며, 그마저도 매우 열악한 상태인 경우가 많습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_EAST_INDIA"> 
@@ -185466,7 +185482,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_EAST_INDIA_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WESTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]해상 교역로에서 [ICON_GOLD] 금 보너스를 400% 획득하며, 제국 전체의 빈곤 수치를 줄이고 자원 다양성 보너스를 25% 증가시킵니다. 도시의 전문가 [ICON_CITIZEN] 상인이 모든 종류의 산출량(+1)을 추가로 생산하며 위대한 상인 출현 속도가 20% 빨라집니다. 또한 독점 중인 자원 하나당 [ICON_FOOD] 식량, [ICON_TOURISM] 관광, 위대한 제독 점수를 획득하며, 전 세계에 배치되는 모든 해상 유닛이 추가 경험치를 얻습니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_EAST_INDIA_STRATEGY"> 
@@ -185486,24 +185502,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FAIKAVA_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_OCEANIC] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_OCEANIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. "왕의 날"이 시작될 때마다 [ICON_TOURISM] 관광 100과 [ICON_FOOD] 식량 100을 즉시 획득합니다. 음악가 전문가 슬롯 1개를 제공하며, 이 전문가로 인한 [ICON_HAPPINESS_4] 불행이 발생하지 않습니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FAIKAVA_STRATEGY"> 
 			<Text>
-				국왕 경축일 보너스를 받으면, 자신의 섬 제국에 잠재적인 희소성이 있음에도 불구하고 가능한 한 많은 자원을 확보하고 싶을 것입니다. 또한, 모든 도시에
-				추가적인 뮤지션 자리를 확보할 수 있어 문화적 승리가 더욱 매력적입니다. 게다가, 파이카바는 도시화 포인트를 억제하여 뮤지션의 활동을 더욱 쉽게 만들어줍니다!
+				국왕 경축일 보너스를 받으면, 자신의 섬 제국에 잠재적인 희소성이 있음에도 불구하고 가능한 한 많은 자원을 확보하고 싶을 것입니다. 또한, 모든 도시에 추가적인 뮤지션 자리를 확보할 수 있어 문화적 승리가 더욱 매력적입니다. 게다가, 파이카바는 도시화 포인트를 억제하여 뮤지션의 활동을 더욱 쉽게 만들어줍니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FAIKAVA_TEXT"> 
 			<Text>
-				카바는 태평양 전역에서 의학적, 종교적, 정치적, 문화적, 사회적 목적으로 사용됩니다. 전통적인 카바 음료는 파이퍼 메티스티쿰 식물의 신선하거나 말린 뿌리를
-				수성 추출하여 준비됩니다. 이러한 문화는 식물을 매우 존중하며 매우 중요하게 여깁니다. 예를 들어, 피지에서는 공식적인 야코나(카바) 의식이 종종 중요한 사회적,
-				정치적 또는 종교적 기능을 동반하며, 이는 보통 묶은 뿌리를 세부(선물)로 의식적으로 제시하고 야코나를 마시는 것을 포함합니다.[NEWLINE][NEWLINE]사모아
-				카와는 이푸 타우 '아바'라고 불리는 광택이 나는 코코넛 하프에 담겨 제공됩니다. 전체 의식은 매우 의식화되어 있으며, 다양한 시기에 사용될 구체적인 제스처와 문구가
-				있습니다. 일반적으로 어떤 의식에서든 고위 추장의 딸이 혼합하여 사용합니다. 통가에서는 밤마다 칼라푸("클럽"을 뜻하는 통가)에서 카바를 마실 수 있으며, 이를
-				파이카바("카바를 하다")라고도 합니다. 현대 문화에서는 남성만 카바를 마시지만, 이를 제공하는 여성들도 참석할 수 있습니다. 남성들은 정치, 스포츠, 전통 및
-				문화에 대해 이야기하고, 농담을 하며 전통적인 사랑 노래를 부르며 기타와 함께 부르기도 합니다. 현재 유명한 일부 현악 밴드는 파이카바에서 유래했습니다.
+				카바는 태평양 전역에서 의학적, 종교적, 정치적, 문화적, 사회적 목적으로 사용됩니다. 전통적인 카바 음료는 파이퍼 메티스티쿰 식물의 신선하거나 말린 뿌리를 수성 추출하여 준비됩니다. 이러한 문화는 식물을 매우 존중하며 매우 중요하게 여깁니다. 예를 들어, 피지에서는 공식적인 야코나(카바) 의식이 종종 중요한 사회적, 정치적 또는 종교적 기능을 동반하며, 이는 보통 묶은 뿌리를 세부(선물)로 의식적으로 제시하고 야코나를 마시는 것을 포함합니다.[NEWLINE][NEWLINE]사모아 카와는 이푸 타우 '아바'라고 불리는 광택이 나는 코코넛 하프에 담겨 제공됩니다. 전체 의식은 매우 의식화되어 있으며, 다양한 시기에 사용될 구체적인 제스처와 문구가 있습니다. 일반적으로 어떤 의식에서든 고위 추장의 딸이 혼합하여 사용합니다. 통가에서는 밤마다 칼라푸("클럽"을 뜻하는 통가)에서 카바를 마실 수 있으며, 이를 파이카바("카바를 하다")라고도 합니다. 현대 문화에서는 남성만 카바를 마시지만, 이를 제공하는 여성들도 참석할 수 있습니다. 남성들은 정치, 스포츠, 전통 및 문화에 대해 이야기하고, 농담을 하며 전통적인 사랑 노래를 부르며 기타와 함께 부르기도 합니다. 현재 유명한 일부 현악 밴드는 파이카바에서 유래했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FLOATING_MARKET"> 
@@ -185513,21 +185522,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FLOATING_MARKET_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_INDOCHINA] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_INDOCHINA_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 강에 인접한 모든 타일에서 [ICON_GOLD] 골드 +1을 얻습니다. 호수 타일은 [ICON_GOLD] 골드 +1을 생산합니다. 이 도시에서 출발하는 내부 식량 [ICON_INTERNATIONAL_TRADE] 교역로는 [ICON_FOOD] 식량 +4를 추가로 생성합니다.[NEWLINE][NEWLINE]
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FLOATING_MARKET_STRATEGY"> 
 			<Text>
-				플로팅 마켓은 강력한 보너스를 제공하지만 특정 지형 및 보너스 자원에 한정되어 있습니다. 따라서 만다라 문명은 담수에 풍부한 지역을 빠르게 정착시켜 초기 게임
-				고유 구성 요소를 극대화하는 데 필요한 이점을 제공해야 합니다.
+				플로팅 마켓은 강력한 보너스를 제공하지만 특정 지형 및 보너스 자원에 한정되어 있습니다. 따라서 만다라 문명은 담수에 풍부한 지역을 빠르게 정착시켜 초기 게임 고유 구성 요소를 극대화하는 데 필요한 이점을 제공해야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_FLOATING_MARKET_TEXT"> 
 			<Text>
-				플로팅 마켓은 보트에서 상품을 판매하는 시장입니다. 수상 운송이 일상 생활에서 중요한 역할을 했던 시대와 장소에서 시작된 이 시장은 주로 미얀마, 태국,
-				인도네시아, 베트남, 스리랑카, 방글라데시, 인도에서 발견됩니다. 고고학자들은 베트남의 델타 강에 4,500년 전부터 광범위한 무역 네트워크가 존재했을 가능성이
-				높다는 증거를 발견했습니다. 제공되는 대표적인 상품으로는 망고, 바나나와 같은 과일, 코코넛 쌀 만두, 옷과 모자와 같은 디저트, 양초, 수공예품, 그림과 같은 요리
-				등이 있습니다. 오늘날 많은 플로팅 마켓은 주로 관광 명소로 운영되고 있습니다.
+				플로팅 마켓은 보트에서 상품을 판매하는 시장입니다. 수상 운송이 일상 생활에서 중요한 역할을 했던 시대와 장소에서 시작된 이 시장은 주로 미얀마, 태국, 인도네시아, 베트남, 스리랑카, 방글라데시, 인도에서 발견됩니다. 고고학자들은 베트남의 델타 강에 4,500년 전부터 광범위한 무역 네트워크가 존재했을 가능성이 높다는 증거를 발견했습니다. 제공되는 대표적인 상품으로는 망고, 바나나와 같은 과일, 코코넛 쌀 만두, 옷과 모자와 같은 디저트, 양초, 수공예품, 그림과 같은 요리 등이 있습니다. 오늘날 많은 플로팅 마켓은 주로 관광 명소로 운영되고 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_GHAT"> 
@@ -185542,44 +185547,32 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_GHAT_STRATEGY"> 
 			<Text>
-				가트는 그들이 대체하는 목욕탕과 같은 선택적이거나 "잎"인 건물입니다. 그 결과, 강은 바라타 그룹에게 훨씬 더 가치가 있으며, 이를 정착시키려는 강력한
-				동기가 있습니다. 특히, 리버는 엄청난 양의 신앙심을 불러일으킬 수 있으며, 이는 비용이 들더라도 도시가 강에 위치해야 한다는 것을 의미합니다.
+				가트는 그들이 대체하는 목욕탕과 같은 선택적이거나 "잎"인 건물입니다. 그 결과, 강은 바라타 그룹에게 훨씬 더 가치가 있으며, 이를 정착시키려는 강력한 동기가 있습니다. 특히, 리버는 엄청난 양의 신앙심을 불러일으킬 수 있으며, 이는 비용이 들더라도 도시가 강에 위치해야 한다는 것을 의미합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_GHAT_TEXT"> 
 			<Text>
-				가트는 강이나 연못의 둑을 따라 목욕이나 화장 장소, 바라나시의 가트족, 도비 가트족 또는 아파라바시 가트족과 같은 수역이나 부두로 이어지는 일련의
-				계단입니다. 특히 라지 가트족은 모한다스 카람찬드 간디와 그의 뒤를 이은 수많은 정치 지도자들의 화장지였습니다. 이 단어는 인도 아대륙 외의 일부 지역에서도
-				사용됩니다. 예를 들어 말레이시아 페낭의 조지 타운에서는 "가트"라는 라벨을 사용하여 부두를 매립하기 전에 가트족으로 끝났던 거리의 연장선을 식별합니다.
+				가트는 강이나 연못의 둑을 따라 목욕이나 화장 장소, 바라나시의 가트족, 도비 가트족 또는 아파라바시 가트족과 같은 수역이나 부두로 이어지는 일련의 계단입니다. 특히 라지 가트족은 모한다스 카람찬드 간디와 그의 뒤를 이은 수많은 정치 지도자들의 화장지였습니다. 이 단어는 인도 아대륙 외의 일부 지역에서도 사용됩니다. 예를 들어 말레이시아 페낭의 조지 타운에서는 "가트"라는 라벨을 사용하여 부두를 매립하기 전에 가트족으로 끝났던 거리의 연장선을 식별합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KARAOKE_LOUNGE"> 
 			<Text>
-				노래방
+				가라오케
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KARAOKE_LOUNGE_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_FAR_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_FAR_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KARAOKE_LOUNGE_STRATEGY"> 
 			<Text>
-				노래방은 문화적 승리를 위한 전쟁의 마지막 무기입니다. 첫 번째 보너스는 뮤지션에게 부스트되며, 이는 관광 출력에 가장 직접적인 영향을 미치는 위대한 인물을
-				생성합니다. 두 번째 보너스는 넓은 제국에 대한 보너스로, 즉각적인 관광과 뮤지션 길드에 대한 수익이 제국의 규모에 따라 증가합니다. 세 번째 보너스는 동전의
-				반대편으로, 시민이 도시에서 태어나면 음식을 관광이 많은 도시나 도시로 유도하여 마지막 공격 우위를 확보할 수 있습니다.
+				가라오케는 문화적 승리를 위한 전쟁의 마지막 무기입니다. 첫 번째 보너스는 뮤지션에게 부스트되며, 이는 관광 출력에 가장 직접적인 영향을 미치는 위대한 인물을 생성합니다. 두 번째 보너스는 넓은 제국에 대한 보너스로, 즉각적인 관광과 뮤지션 길드에 대한 수익이 제국의 규모에 따라 증가합니다. 세 번째 보너스는 동전의 반대편으로, 시민이 도시에서 태어나면 음식을 관광이 많은 도시나 도시로 유도하여 마지막 공격 우위를 확보할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KARAOKE_LOUNGE_TEXT"> 
 			<Text>
-				가라오케는 일반적으로 나이트클럽과 바에서 제공되는 인터랙티브 엔터테인먼트 시스템의 일종으로, 사람들이 마이크를 사용하여 미리 녹음된 반주에 맞춰 노래를 따라
-				부르는 방식입니다. 노래방의 음악 콘텐츠는 잘 알려진 인기 곡을 악기로 연주한 것입니다. 최근에는 가사를 동영상 화면에 표시하고 움직이는 심볼, 색상 변경 또는
-				뮤직비디오 이미지와 함께 사용하여 가수를 안내하는 것이 일반적입니다. 전 세계 가라오케 시장은 약 100억 달러의 가치가 있는 것으로 추정됩니다. 카세트 테이프를
-				사용하는 노래방 기계의 전신은 1970년대에 일본과 필리핀에서 처음 등장했습니다. 1980년대에는 일본 기업에서 레이저디스크를 사용하여 제조한 상업용 버전이 전
-				세계적으로 출시되면서 인기가 급증했습니다. [NEWLINE][NEWLINE]아시아에서 노래방 박스는 가장 인기 있는 유형의 노래방입니다. 노래방은 한 시간 또는 반
-				시간 단위로 대여하는 노래방 장비가 있는 중소형 객실로, 보다 친밀한 분위기를 제공합니다. 이러한 유형의 노래방은 종종 전용 업소로, 일부는 다층과 음식 서비스를
-				포함한 다양한 편의시설을 갖추고 있지만 호텔과 비즈니스 시설에서도 노래방 박스를 제공하는 경우가 있습니다. 한국에서는 가라오케를 노래방이라고 부릅니다. 중국 본토와
-				대만에서는 가라오케를 KTV라고 부릅니다.
+				가라오케는 일반적으로 나이트클럽과 바에서 제공되는 인터랙티브 엔터테인먼트 시스템의 일종으로, 사람들이 마이크를 사용하여 미리 녹음된 반주에 맞춰 노래를 따라 부르는 방식입니다. 노래방의 음악 콘텐츠는 잘 알려진 인기 곡을 악기로 연주한 것입니다. 최근에는 가사를 동영상 화면에 표시하고 움직이는 심볼, 색상 변경 또는 뮤직비디오 이미지와 함께 사용하여 가수를 안내하는 것이 일반적입니다. 전 세계 가라오케 시장은 약 100억 달러의 가치가 있는 것으로 추정됩니다. 카세트 테이프를 사용하는 노래방 기계의 전신은 1970년대에 일본과 필리핀에서 처음 등장했습니다. 1980년대에는 일본 기업에서 레이저디스크를 사용하여 제조한 상업용 버전이 전 세계적으로 출시되면서 인기가 급증했습니다.[NEWLINE][NEWLINE]아시아에서 노래방 박스는 가장 인기 있는 유형의 노래방입니다. 노래방은 한 시간 또는 반 시간 단위로 대여하는 노래방 장비가 있는 중소형 객실로, 보다 친밀한 분위기를 제공합니다. 이러한 유형의 노래방은 종종 전용 업소로, 일부는 다층과 음식 서비스를 포함한 다양한 편의시설을 갖추고 있지만 호텔과 비즈니스 시설에서도 노래방 박스를 제공하는 경우가 있습니다. 한국에서는 가라오케를 노래방이라고 부릅니다. 중국 본토와 대만에서는 가라오케를 KTV라고 부릅니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KGOTLA"> 
@@ -185594,16 +185587,13 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KGOTLA_STRATEGY"> 
 			<Text>
-				경찰대 종종 가장 큰 도시를 위해 예약된 틈새 건물입니다. 고틀라 특정 전문가와 인근 목초지의 음식에 주목할 만한 보너스를 제공하여 이를 심화하고 확장합니다.
-				그러나 두 번째 측면은 완전히 다르며, 제국 내 모든 궁정에 프로덕션을 제공합니다. +1 행복 보너스와 함께 반투 플레이어는 제국의 넓이를 사용하여 모든 부속 도시에
+				경찰대 종종 가장 큰 도시를 위해 예약된 틈새 건물입니다. 고틀라 특정 전문가와 인근 목초지의 음식에 주목할 만한 보너스를 제공하여 이를 심화하고 확장합니다. 그러나 두 번째 측면은 완전히 다르며, 제국 내 모든 궁정에 프로덕션을 제공합니다. +1 행복 보너스와 함께 반투 플레이어는 제국의 넓이를 사용하여 모든 부속 도시에
 				큰 힘을 실어 전쟁을 촉진할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_KGOTLA_TEXT"> 
 			<Text>
-				고틀라는 보츠와나 마을과 레소토 및 남아프리카 시골에 위치한 공공 회의, 지역 사회 위원회 또는 전통적인 법적 법정입니다. 일반적으로 마을 이장이나 이장이
-				주도하며, 공동체의 결정은 항상 합의에 의해 이루어집니다. 이장들은 보통 이장의 고문으로 일합니다. 다른 사람이 발언하는 동안 아무도 방해할 수 없습니다. 이러한
-				전통 때문에 보츠와나는 세계에서 가장 오래된 민주주의 국가 중 하나라고 주장합니다.
+				고틀라는 보츠와나 마을과 레소토 및 남아프리카 시골에 위치한 공공 회의, 지역 사회 위원회 또는 전통적인 법적 법정입니다. 일반적으로 마을 이장이나 이장이 주도하며, 공동체의 결정은 항상 합의에 의해 이루어집니다. 이장들은 보통 이장의 고문으로 일합니다. 다른 사람이 발언하는 동안 아무도 방해할 수 없습니다. 이러한 전통 때문에 보츠와나는 세계에서 가장 오래된 민주주의 국가 중 하나라고 주장합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MEAD_HALL"> 
@@ -185613,22 +185603,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MEAD_HALL_HELP"> 
 			<Text>
-				[ICON_CULTURE_CD_SCANDINAVIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_NORTHERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]인근의 [ICON_RES_RICE] 쌀, [ICON_RES_MAIZE] 옥수수, [ICON_RES_WHEAT] 밀에서 [ICON_GOLDEN_AGE] 황금기 점수 +1을 얻습니다. 유닛이 전투 경험치를 얻을 때마다 [ICON_GOLDEN_AGE] 황금기 점수를 획득하며, 황금기가 시작될 때마다 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광 산출량이 영구적으로 증가합니다(최대 10).
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MEAD_HALL_STRATEGY"> 
 			<Text>
-				미드 홀은 전투 경험치를 황금기 점수로 변환하므로 플레이어는 초기 바스 건물과 신앙, 예술성과 합리주의 정책 등 황금기와 상호작용하는 보너스를 찾아야 합니다.
-				미드 홀 자체가 혜택을 주며, 증가하는 보너스를 쌓아 문화 승리의 디딤돌로 만들 수도 있습니다!
+				미드 홀은 전투 경험치를 황금기 점수로 변환하므로 플레이어는 초기 바스 건물과 신앙, 예술성과 합리주의 정책 등 황금기와 상호작용하는 보너스를 찾아야 합니다. 미드 홀 자체가 혜택을 주며, 증가하는 보너스를 쌓아 문화 승리의 디딤돌로 만들 수도 있습니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MEAD_HALL_TEXT"> 
 			<Text>
-				미드 홀 또는 연회장은 손님을 맞이하고 공동체 사회 생활의 중심지 역할을 하기 위해 지어진 큰 건물이었습니다. 5세기부터 중세 초기까지 이러한 건물은 영주나
-				왕과 그의 신하들의 거주지였습니다. 맥주와 미드는 축제 기간 동안 제공되었으며, 그곳에서 음악이 연주되고, 시를 낭송하며, 보드 게임과 주사위 게임이 진행되었으며,
-				이야기가 전해졌습니다.[NEWLINE][NEWLINE]스노리 스투를루손이 기록한 전설에 따르면, 하임스크링글라에서 9세기 후반 베를란드 족장 아치는 노르웨이 왕
-				하랄드 페어헤어와 스웨덴 왕 에릭 아이문드손을 초대했지만, 노르웨이 왕은 새로 지어진 호화로운 건물에 머물렀습니다. 왜냐하면 그는 왕 중 막내였고 가장 큰 가능성을
-				가진 왕이었기 때문입니다. 반면에 나이 든 스웨덴 왕은 오래된 연회장에 머물러야 했습니다. 스웨덴 왕은 너무 굴욕감을 느껴 아치를 죽였습니다.
+				미드 홀 또는 연회장은 손님을 맞이하고 공동체 사회 생활의 중심지 역할을 하기 위해 지어진 큰 건물이었습니다. 5세기부터 중세 초기까지 이러한 건물은 영주나 왕과 그의 신하들의 거주지였습니다. 맥주와 미드는 축제 기간 동안 제공되었으며, 그곳에서 음악이 연주되고, 시를 낭송하며, 보드 게임과 주사위 게임이 진행되었으며, 이야기가 전해졌습니다.[NEWLINE][NEWLINE]스노리 스투를루손이 기록한 전설에 따르면, 하임스크링글라에서 9세기 후반 베를란드 족장 아치는 노르웨이 왕 하랄드 페어헤어와 스웨덴 왕 에릭 아이문드손을 초대했지만, 노르웨이 왕은 새로 지어진 호화로운 건물에 머물렀습니다. 왜냐하면 그는 왕 중 막내였고 가장 큰 가능성을 가진 왕이었기 때문입니다. 반면에 나이 든 스웨덴 왕은 오래된 연회장에 머물러야 했습니다. 스웨덴 왕은 너무 굴욕감을 느껴 아치를 죽였습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_METALSMITH"> 
@@ -185643,19 +185628,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_METALSMITH_STRATEGY"> 
 			<Text>
-				금속세공사의 주요 결과물인 문화는 작업 중인 광산에서 나오기 때문에 중세 이전에 켈트족 플레이어는 많은 언덕 타일을 가진 도시들을 정착시키기 위해 노력해야
-				합니다. 모든 도시에 대해 무작위 메탈을 받게 되며, 도시가 적을 경우 이는 미미한 이점을 가지지만, 중요한 문턱을 넘으면 글로벌 독점을 통제할 수 있어 경제적
-				우위를 향한 독특한 길을 열어줍니다.
+				금속세공사의 주요 결과물인 문화는 작업 중인 광산에서 나오기 때문에 중세 이전에 켈트족 플레이어는 많은 언덕 타일을 가진 도시들을 정착시키기 위해 노력해야 합니다. 모든 도시에 대해 무작위 메탈을 받게 되며, 도시가 적을 경우 이는 미미한 이점을 가지지만, 중요한 문턱을 넘으면 글로벌 독점을 통제할 수 있어 경제적 우위를 향한 독특한 길을 열어줍니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_METALSMITH_TEXT"> 
 			<Text>
-				청동 기술은 기원전 2천 년 훨씬 이전에 영국에 도입되었지만, 기원전 500년경에 이르러서야 청동기(금세공뿐만 아니라)의 섬 전통이 진정한 우위를 점하게
-				되었습니다. 영국 금속공예와 대륙 갈리아의 금속공예는 기원전 2세기까지 대략 평행선을 따라 발전했습니다. 초기 켈트족은 그리스와 에스트루칸 디자인에서 많이
-				차용했지만, 오늘날 라 테네(La Tene)로 알려진 독특한 켈트 감성을 발전시켰습니다. [뉴라인] 켈스서와 다른 걸작들을 제작한 영국과 아일랜드의 중세 초기 예술은
-				영어권의 많은 일반 대중에게 "켈트 예술"을 예술사에서 섬 예술이라고 부릅니다. 고고학자들은 일반적으로 기원전 1000년경부터 로마 제국의 정복까지 유럽 철기 시대의
-				문화를 가리킬 때 "켈트 예술"을 사용합니다. 18세기부터 현대까지의 켈트 부흥은 주로 영국 제도에서 자기 정체성과 민족주의를 표현하기 위한 현대 켈트족의 의식적인
-				노력으로 시작되었으며, 켈트족의 십자가 장례 기념비부터 인종 간 문신까지 오늘날에도 여전히 인기를 끌고 있습니다.
+				청동 기술은 기원전 2천 년 훨씬 이전에 영국에 도입되었지만, 기원전 500년경에 이르러서야 청동기(금세공뿐만 아니라)의 섬 전통이 진정한 우위를 점하게 되었습니다. 영국 금속공예와 대륙 갈리아의 금속공예는 기원전 2세기까지 대략 평행선을 따라 발전했습니다. 초기 켈트족은 그리스와 에스트루칸 디자인에서 많이 차용했지만, 오늘날 라 테네(La Tene)로 알려진 독특한 켈트 감성을 발전시켰습니다. [뉴라인] 켈스서와 다른 걸작들을 제작한 영국과 아일랜드의 중세 초기 예술은 영어권의 많은 일반 대중에게 "켈트 예술"을 예술사에서 섬 예술이라고 부릅니다. 고고학자들은 일반적으로 기원전 1000년경부터 로마 제국의 정복까지 유럽 철기 시대의 문화를 가리킬 때 "켈트 예술"을 사용합니다. 18세기부터 현대까지의 켈트 부흥은 주로 영국 제도에서 자기 정체성과 민족주의를 표현하기 위한 현대 켈트족의 의식적인 노력으로 시작되었으며, 켈트족의 십자가 장례 기념비부터 인종 간 문신까지 오늘날에도 여전히 인기를 끌고 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MILPA"> 
@@ -185665,54 +185643,37 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MILPA_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_MESOAMERICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MESOAMERICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 도시에서 경작하는 농장에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +1, 초원에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +2를 얻습니다. 도시에서 생산하는 [ICON_FOOD] 식량의 10%가 턴 당 [ICON_GOLD] 골드로 계산됩니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말 2마리가 필요합니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MILPA_STRATEGY"> 
 			<Text>
-				말이 필요하지 않기 때문에 밀파는 어디에서나 구축할 수 있습니다. 따라서 메소아메리카 플레이어는 충분한 도시를 확보할 수 있는 한 다른 문화 그룹보다 더 많은
-				인구가 최종 게임에 진입할 수 있도록 준비해야 합니다. 이를 위해 밀파는 더 많이 확보할수록 강해져 넓은 제국에 대한 인센티브가 더욱 커집니다. 또한 농업 비즈니스의
-				보너스는 문화와 신앙으로 확대되어 농장이 그렇지 않은 농장보다 더 수익성이 높아집니다(예: 제재소에 비해).
+				말이 필요하지 않기 때문에 밀파는 어디에서나 구축할 수 있습니다. 따라서 메소아메리카 플레이어는 충분한 도시를 확보할 수 있는 한 다른 문화 그룹보다 더 많은 인구가 최종 게임에 진입할 수 있도록 준비해야 합니다. 이를 위해 밀파는 더 많이 확보할수록 강해져 넓은 제국에 대한 인센티브가 더욱 커집니다. 또한 농업 비즈니스의 보너스는 문화와 신앙으로 확대되어 농장이 그렇지 않은 농장보다 더 수익성이 높아집니다(예: 제재소에 비해).
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_MILPA_TEXT"> 
 			<Text>
-				농업에서 밀파는 식량 작물을 재배하는 밭이며, 특히 멕시코의 유카탄 반도에서 메소아메리카 전역에서 사용되는 작물 재배 시스템입니다. 마야족과 다른 메소아메리카
-				민족의 농업 경제를 기반으로 한 밀파 시스템은 인공 살충제와 인공 비료를 사용하지 않고 옥수수, 콩, 호박 등의 작물을 생산하는 데 사용됩니다. 이는 토지 보존과
-				작물 순환을 통해 가능합니다. 또한 밀파 작물은 영양적으로(환경적으로도) 상호 보완적입니다. 또한 밀파 재배는 종교적, 사회적 중요성이 종종 영양적, 경제적 중요성을
-				초과하는 것으로 보이는 기관에 도움이 되는 농부들 간의 복잡한 상호작용과 관계를 포함합니다.
+				농업에서 밀파는 식량 작물을 재배하는 밭이며, 특히 멕시코의 유카탄 반도에서 메소아메리카 전역에서 사용되는 작물 재배 시스템입니다. 마야족과 다른 메소아메리카 민족의 농업 경제를 기반으로 한 밀파 시스템은 인공 살충제와 인공 비료를 사용하지 않고 옥수수, 콩, 호박 등의 작물을 생산하는 데 사용됩니다. 이는 토지 보존과 작물 순환을 통해 가능합니다. 또한 밀파 작물은 영양적으로(환경적으로도) 상호 보완적입니다. 또한 밀파 재배는 종교적, 사회적 중요성이 종종 영양적, 경제적 중요성을 초과하는 것으로 보이는 기관에 도움이 되는 농부들 간의 복잡한 상호작용과 관계를 포함합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_NATIONAL_EXHIBIT"> 
 			<Text>
-				국립 박물관
+				국립 전시회
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_NATIONAL_EXHIBIT_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_CLASSICAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CLASSICAL_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE]가능한 테마 보너스:
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]연속된 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 예술품 2개와 유물 2개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +25.
-[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 예술품 2개와 유물 2개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +20.
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]연속된 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 유물 4개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +20.
-[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 유물 4개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +15.
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]연속된 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 예술품 4개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +20.
-[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]자국[ENDCOLOR] 예술품 4개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +15.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_NATIONAL_EXHIBIT_STRATEGY"> 
 			<Text>
-				국립 전시회는 왕실 컬렉션의 문화 보너스를 넘어서는 행사입니다. 게다가 테마 보너스는 훨씬 더 커질 수 있습니다. 모든 예술품 또는 모든 유물에서 테마가
-				작동하며, 연속적인 시대 테마로 사용하면 5의 산출을 얻을 수 있습니다. 하지만 가장 좋은 것은 반 예술품- 반 유물이며, 연속적인 시대 테마를 맞춘다면 25의
-				산출을 얻을 수 있습니다. 얻을 수 있습니다. 실제로 이러한 문화 그룹 구성 요소를 고려하여 테마 보너스를 늘리는 예술 정책을 강력히 고려해야 합니다. 마지막으로
-				모든 갤러리와 박물관의 수익성이 높아지므로 문화 인프라를 느슨하게 해서는 안 되며, 이는 예술 정책을 지지하는 또 다른 포인트입니다.
+				국립 전시회는 왕실 컬렉션의 문화 보너스를 넘어서는 행사입니다. 게다가 테마 보너스는 훨씬 더 커질 수 있습니다. 모든 예술품 또는 모든 유물에서 테마가 작동하며, 연속적인 시대 테마로 사용하면 5의 산출을 얻을 수 있습니다. 하지만 가장 좋은 것은 반 예술품- 반 유물이며, 연속적인 시대 테마를 맞춘다면 25의 산출을 얻을 수 있습니다. 얻을 수 있습니다. 실제로 이러한 문화 그룹 구성 요소를 고려하여 테마 보너스를 늘리는 예술 정책을 강력히 고려해야 합니다. 마지막으로 모든 갤러리와 박물관의 수익성이 높아지므로 문화 인프라를 느슨하게 해서는 안 되며, 이는 예술 정책을 지지하는 또 다른 포인트입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_NATIONAL_EXHIBIT_TEXT"> 
 			<Text>
-				고전 역사는 고대 제국의 후계 국가들에게 흥미, 관광, 그리고 진정한 국가적 자부심의 원천이 됩니다. 이를 위해 고고학적 및 추가적인 박물관 명소가
-				중요합니다. 예를 들어, 로마 미술관은 이탈리아 로마 시 전역의 여러 건물에 여러 지점을 두고 있는 박물관입니다. 이 박물관은 고대 로마 시대의 고고학적 발견에
-				중점을 두고 로마의 이전 및 초기 역사 전시물을 전시합니다. 유사하게 아테네의 에트니코 아르카이올로고 무시오는 선사 시대부터 후기 고대까지 그리스 전역의 다양한
-				고고학적 장소에서 발견된 가장 중요한 유물들을 소장하고 있으며, 전 세계에서 가장 풍부한 그리스 고대 유물 컬렉션을 소장하고 있습니다.
+				고전 역사는 고대 제국의 후계 국가들에게 흥미, 관광, 그리고 진정한 국가적 자부심의 원천이 됩니다. 이를 위해 고고학적 및 추가적인 박물관 명소가 중요합니다. 예를 들어, 로마 미술관은 이탈리아 로마 시 전역의 여러 건물에 여러 지점을 두고 있는 박물관입니다. 이 박물관은 고대 로마 시대의 고고학적 발견에 중점을 두고 로마의 이전 및 초기 역사 전시물을 전시합니다. 유사하게 아테네의 에트니코 아르카이올로고 무시오는 선사 시대부터 후기 고대까지 그리스 전역의 다양한	고고학적 장소에서 발견된 가장 중요한 유물들을 소장하고 있으며, 전 세계에서 가장 풍부한 그리스 고대 유물 컬렉션을 소장하고 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PALM_MILL"> 
@@ -185722,23 +185683,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PALM_MILL_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_EAST_INDIES] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_INDIES_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PALM_MILL_STRATEGY"> 
 			<Text>
-				정유 공장은 선택 사항이며 때로는 불필요한 건물이지만 팜유 공장은 정반대입니다. 수는 제한되어 있지만 이 독특한 구성 요소의 마지막 사본을 모두 필요로 할
-				것입니다. 아마도 가장 중요한 보너스는 추가 석유일 것이며, 이는 독점 보너스의 다음 단계를 확보하는 데 도움이 될 수 있으므로 인구가 많은 도시에 있는 건물을 원할
-				것입니다. 대농장과 제재소에도 상당한 수익 보너스가 제공되며(첫 번째 보너스와 다소 반대되는 식량 감소에 주목하세요), 이는 위치 선택에 영향을 미칠 수 있으며 해상
-				무역로를 강화할 수 있습니다. 선호하는 사용 사례가 무엇이든 정글을 현실로 만들기 위해서는 정글이 필요하므로 충분하지 않다면 찾아봐야 합니다!
+				정유 공장은 선택 사항이며 때로는 불필요한 건물이지만 팜유 공장은 정반대입니다. 수는 제한되어 있지만 이 독특한 구성 요소의 마지막 사본을 모두 필요로 할 것입니다. 아마도 가장 중요한 보너스는 추가 석유일 것이며, 이는 독점 보너스의 다음 단계를 확보하는 데 도움이 될 수 있으므로 인구가 많은 도시에 있는 건물을 원할 것입니다. 대농장과 제재소에도 상당한 수익 보너스가 제공되며(첫 번째 보너스와 다소 반대되는 식량 감소에 주목하세요), 이는 위치 선택에 영향을 미칠 수 있으며 해상 교역로를 강화할 수 있습니다. 선호하는 사용 사례가 무엇이든 정글을 현실로 만들기 위해서는 정글이 필요하므로 충분하지 않다면 찾아봐야 합니다!
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PALM_MILL_TEXT"> 
 			<Text>
-				전 세계 팜유의 거의 90%가 인도네시아와 말레이시아에서 생산됩니다. 팜유는 코코넛 오일과 함께 포화도가 높은 몇 안 되는 식물성 지방 중 하나이며 상온에서
-				반고체입니다. 아프리카, 동남아시아 및 브라질 일부 지역의 열대 벨트에서 흔히 사용되는 요리 재료로 비누와 세제의 중요한 발포제인 메틸 에스테르로 에스테르 교환
-				반응을 일으켜 바이오디젤의 기반을 형성합니다. 팜유 산업은 야자수가 재배되는 열대 지방의 산림전용에 크게 기여하고 있으며 재배자들의 인권 침해 의혹으로 인해 사회
-				문제의 요인으로 지목되고 있습니다.
+				전 세계 팜유의 거의 90%가 인도네시아와 말레이시아에서 생산됩니다. 팜유는 코코넛 오일과 함께 포화도가 높은 몇 안 되는 식물성 지방 중 하나이며 상온에서 반고체입니다. 아프리카, 동남아시아 및 브라질 일부 지역의 열대 벨트에서 흔히 사용되는 요리 재료로 비누와 세제의 중요한 발포제인 메틸 에스테르로 에스테르 교환 반응을 일으켜 바이오디젤의 기반을 형성합니다. 팜유 산업은 야자수가 재배되는 열대 지방의 산림전용에 크게 기여하고 있으며 재배자들의 인권 침해 의혹으로 인해 사회 문제의 요인으로 지목되고 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PETROCHEMICAL_PLANT"> 
@@ -185748,25 +185703,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PETROCHEMICAL_PLANT_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_MID_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MID_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 석유 우물 및 해상 플랫폼에서 [ICON_GOLD] 금 +4와 [ICON_SCIENCE] 과학 +4를 제공합니다. 건설 시 인근 타일 2곳에 [ICON_RES_OIL] 석유 자원을 생성합니다. 교역로를 보내거나 받을 때 추가 보너스를 제공합니다.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PETROCHEMICAL_PLANT_STRATEGY"> 
 			<Text>
-				석유는 최종 게임의 핵심 부분입니다. 중동 플레이어는 항상 정제소의 일반적인 공급 이상의 초과 석유를 확보할 수 있으며, 이는 외교적(및 경제적) 목표나
-				군사적 목표를 위해 사용할 수 있습니다. 석유화학 공장은 또한 금과 과학을 제공하며, 부분적으로는 무역로에서, 부분적으로는 석유 개선 자체에서 제공합니다. 더 많은
-				석유를 확보하는 것은 일반적으로 많은 활발한 국제 무역로를 누리는 것과는 반대되므로 두 가지 이점을 모두 활용하려면 신중한 전략이 필요합니다.
+				석유는 최종 게임의 핵심 부분입니다. 중동 플레이어는 항상 정제소의 일반적인 공급 이상의 초과 석유를 확보할 수 있으며, 이는 외교적(및 경제적) 목표나 군사적 목표를 위해 사용할 수 있습니다. 석유화학 공장은 또한 금과 과학을 제공하며, 부분적으로는 무역로에서, 부분적으로는 석유 개선 자체에서 제공합니다. 더 많은 석유를 확보하는 것은 일반적으로 많은 활발한 국제 무역로를 누리는 것과는 반대되므로 두 가지 이점을 모두 활용하려면 신중한 전략이 필요합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_PETROCHEMICAL_PLANT_TEXT"> 
 			<Text>
-				중동은 석유 생산과 석유화학 공장의 주요 허브로, 많은 OPEC 회원국이 이 지역에 위치해 있습니다. OPEC은 석유 생산과 가격을 규제하는 데 중요한 역할을
-				하며, 이는 글로벌 석유 시장과 더 나아가 석유화학 산업에 영향을 미칩니다. 이 지역은 하류 정제 및 석유화학에 대한 집중도가 높아지고 있으며, 상당한 투자와 생산
-				능력 추가가 계획되어 있습니다. 전 세계 검증된 석유 매장량의 79.5%가 OPEC 국가 내에 위치해 있으며, 중동만 OPEC 전체 매장량의 67.2%를 차지하는
-				것으로 추정됩니다. [NEWLINE][NEWLINE]1960년대와 1970년대 일련의 조치로 OPEC은 지배적인 영미 석유 회사('세븐 시스터즈')의 과점에서 벗어나
-				산유국에 유리한 방향으로 글로벌 석유 생산 시스템을 재편했습니다. 1970년대에는 석유 생산 제한으로 인해 유가가 급격히 상승하여 세계 경제에 장기적이고 광범위한
-				영향을 미쳤습니다. 1980년대 이후 OPEC은 회원국들이 서로에 대한 약속을 속이는 일이 빈번하고, 회원국의 약속이 OPEC이 없더라도 할 일을 반영하기 때문에
-				세계 석유 공급과 유가 안정에 미치는 영향은 제한적이었습니다.
+				중동은 석유 생산과 석유화학 공장의 주요 허브로, 많은 OPEC 회원국이 이 지역에 위치해 있습니다. OPEC은 석유 생산과 가격을 규제하는 데 중요한 역할을 하며, 이는 글로벌 석유 시장과 더 나아가 석유화학 산업에 영향을 미칩니다. 이 지역은 하류 정제 및 석유화학에 대한 집중도가 높아지고 있으며, 상당한 투자와 생산 능력 추가가 계획되어 있습니다. 전 세계 검증된 석유 매장량의 79.5%가 OPEC 국가 내에 위치해 있으며, 중동만 OPEC 전체 매장량의 67.2%를 차지하는 것으로 추정됩니다. [NEWLINE][NEWLINE]1960년대와 1970년대 일련의 조치로 OPEC은 지배적인 영미 석유 회사('세븐 시스터즈')의 과점에서 벗어나 산유국에 유리한 방향으로 글로벌 석유 생산 시스템을 재편했습니다. 1970년대에는 석유 생산 제한으로 인해 유가가 급격히 상승하여 세계 경제에 장기적이고 광범위한 영향을 미쳤습니다. 1980년대 이후 OPEC은 회원국들이 서로에 대한 약속을 속이는 일이 빈번하고, 회원국의 약속이 OPEC이 없더라도 할 일을 반영하기 때문에 세계 석유 공급과 유가 안정에 미치는 영향은 제한적이었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_POTLATCH_HOUSE"> 
@@ -185776,26 +185723,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_POTLATCH_HOUSE_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_PACIFIC] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_PACIFIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]50턴마다 50 [ICON_GOLD] 금을 [COLOR_NEGATIVE_TEXT]소모[ENDCOLOR]하여 50 [ICON_CULTURE] 문화, 25 [ICON_GOLDEN_AGE] 황금기 점수 및 [ICON_DIPLOMAT] 위대한 외교관 점수를 획득합니다. (시대에 비례)
+				[COLOR_Culture_STORED] 태평양 [ENDCOLOR] 문화 그룹이 필요합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_POTLATCH_HOUSE_STRATEGY"> 
 			<Text>
-				포틀래치 하우스는 이례적으로 서커스의 일회성 문화를 시대에 따라 확장되는 반복적인 이벤트로 바꾸고 있습니다. 그럴 때마다 높은 위대한 외교관 점수를 포함하여
-				희귀한 수확량을 얻지만 귀중품이 파괴되면서 골드도 잃게 됩니다! 물고기와 사슴에서 이 중 일부를 회수하여 추가 수확량을 창출할 수 있습니다. 따라서 독특한 요소를
-				최대한 활용하기 위해 해안과 숲을 정착시키는 것을 고려해 보세요.
+				포틀래치 하우스는 이례적으로 서커스의 일회성 문화를 시대에 따라 확장되는 반복적인 이벤트로 바꾸고 있습니다. 그럴 때마다 높은 위대한 외교관 점수를 포함하여 희귀한 수확량을 얻지만 귀중품이 파괴되면서 골드도 잃게 됩니다! 물고기와 사슴에서 이 중 일부를 회수하여 추가 수확량을 창출할 수 있습니다. 따라서 독특한 요소를 최대한 활용하기 위해 해안과 숲을 정착시키는 것을 고려해 보세요.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_POTLATCH_HOUSE_TEXT"> 
 			<Text>
-				포틀래치는 캐나다와 미국 태평양 북서부 해안의 원주민들이 전통적으로 주요 정부 기관, 입법 기관, 경제 시스템을 대표하는 선물 축제입니다. 포틀래치는 지도자의
-				부와 권력을 과시하기 위해 부나 귀중한 물건을 주거나 파괴하는 것을 포함합니다. 포틀래치는 또한 가족, 가문, 국제적 연결, 초자연적 세계와의 인간적 연결을
-				재확인하는 데 중점을 둡니다. 포틀래치는 해안 지역 사람들이 특정 영토와 자원에 대해 논의하고, 협상하며, 권리와 사용을 확인하는 엄격한 자원 관리 체제로도
-				사용됩니다. 포틀래치는 종종 음악, 춤, 노래, 스토리텔링, 연설, 농담과 게임을 포함합니다. 초자연적인 것을 기리는 것과 구술 역사를 암송하는 것은 많은 포틀래치의
-				핵심 부분입니다.[NEWLINE][NEWLINE]이 행사는 일반적으로 귀족들이 이끄는 복잡한 코그나틱 친족 그룹인 누마임(numaym), 즉 '하우스(House)'가
-				주최했으며, 여기에는 일반인과 가끔 노예들도 포함됩니다. 선물로는 저장 가능한 음식(올리찬, 양초고기, 기름 또는 말린 음식), 카누, 노예, 장식용 "코퍼" 등이
-				포함되었습니다. 포틀래치는 마스크와 기타 물건과 관련된 직함이 새로운 직책으로 "고정"되는 경우였습니다. 이러한 경우 두 가지 종류의 직함이 이전되었습니다. 첫째,
-				각 누마임에는 여러 "석"이라는 이름의 직책이 있었으며, 이는 포틀래치에 앉을 자리를 주었습니다. 이들은 사냥, 낚시 및 베리링 지역에 대한 권리를 부여했습니다.
+				포틀래치는 캐나다와 미국 태평양 북서부 해안의 원주민들이 전통적으로 주요 정부 기관, 입법 기관, 경제 시스템을 대표하는 선물 축제입니다. 포틀래치는 지도자의 부와 권력을 과시하기 위해 부나 귀중한 물건을 주거나 파괴하는 것을 포함합니다. 포틀래치는 또한 가족, 가문, 국제적 연결, 초자연적 세계와의 인간적 연결을 재확인하는 데 중점을 둡니다. 포틀래치는 해안 지역 사람들이 특정 영토와 자원에 대해 논의하고, 협상하며, 권리와 사용을 확인하는 엄격한 자원 관리 체제로도 사용됩니다. 포틀래치는 종종 음악, 춤, 노래, 스토리텔링, 연설, 농담과 게임을 포함합니다. 초자연적인 것을 기리는 것과 구술 역사를 암송하는 것은 많은 포틀래치의 핵심 부분입니다.[NEWLINE][NEWLINE]이 행사는 일반적으로 귀족들이 이끄는 복잡한 코그나틱 친족 그룹인 누마임(numaym), 즉 '하우스(House)'가 주최했으며, 여기에는 일반인과 가끔 노예들도 포함됩니다. 선물로는 저장 가능한 음식(올리찬, 양초고기, 기름 또는 말린 음식), 카누, 노예, 장식용 "코퍼" 등이 포함되었습니다. 포틀래치는 마스크와 기타 물건과 관련된 직함이 새로운 직책으로 "고정"되는 경우였습니다. 이러한 경우 두 가지 종류의 직함이 이전되었습니다. 첫째, 각 누마임에는 여러 "석"이라는 이름의 직책이 있었으며, 이는 포틀래치에 앉을 자리를 주었습니다. 이들은 사냥, 낚시 및 베리링 지역에 대한 권리를 부여했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT"> 
@@ -185805,22 +185743,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_POLAR] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_POLAR_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 툰드라 및 눈원 타일에서 [ICON_FOOD] 식량과 [ICON_GOLD] 금 보너스를 제공합니다. 순록 자원에서 [ICON_TOURISM] 관광과 [ICON_GOLD] 금을 추가로 얻으며, 모든 야영지 시설의 산출량이 증가합니다.[NEWLINE][NEWLINE]도시에서 경작하는 농장에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +1, 초원에서 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 골드 +2를 얻습니다. 도시에서 생산하는 [ICON_FOOD] 식량의 10%가 턴 당 [ICON_GOLD] 골드로 계산됩니다.[NEWLINE][NEWLINE][ICON_RES_HORSE]말 2마리가 필요합니다.
+				[ICON_CULTURE_JFD_POLAR][COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_POLAR_SHORT_DESC}[ENDCOLOR] 문화권이 필요합니다.[NEWLINE]도시 근처에 최대 2개의 [ICON_RES_REINDEER] 순록 자원을 생성합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT_STRATEGY"> 
 			<Text>
-				기업형 농장은 많은 농장과 목장을 가동하는 식량이 풍부한 도시에서 강력한 건물입니다. 하지만 극지 문명은 본토 내에 그런 입지를 확보하기 어렵습니다. 걱정
-				마십시오. 순록 사육 지구는 추가적인 자원과 지형 혜택을 제공하며, 북극 지형을 더 많이 확보할수록 더욱 강력해집니다! 게다가 근처에 추가 순록을 생성하여 황폐한
-				타일을 비옥하게 개선합니다. 이 건물은 말을 필요로 하지 않으므로, 고유 보너스가 특정 바이옴에 국한되더라도 모든 곳에 건설하는 것이 좋습니다.
+				기업형 농장은 많은 농장과 목장을 가동하는 식량이 풍부한 도시에서 강력한 건물입니다. 하지만 극지 문명은 본토 내에 그런 입지를 확보하기 어렵습니다. 걱정 마십시오. 순록 사육 지구는 추가적인 자원과 지형 혜택을 제공하며, 북극 지형을 더 많이 확보할수록 더욱 강력해집니다! 게다가 근처에 추가 순록을 생성하여 황폐한 타일을 비옥하게 개선합니다. 이 건물은 말을 필요로 하지 않으므로, 고유 보너스가 특정 바이옴에 국한되더라도 모든 곳에 건설하는 것이 좋습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_REINDEER_DISTRICT_TEXT"> 
 			<Text>
-				순록 사육은 가족, 지구, 사미족 및 야쿠트족 마을, 소포즈(집단 농장)와 같은 협동 형태 내에서 개인들에 의해 이루어집니다. 현대 고고학 자료(암각화)에
-				따르면, 순록의 가축화는 약 2~3천 년 전 러시아와 몽골 사이의 사얀 산맥에서 처음 시작된 것으로 추정됩니다. 실제로 순록은 북부 지역에 자연적으로 속하는 유일한
-				반가축화 동물입니다. 오늘날 환북극 지역 전체에서 약 10만 명의 사람들이 광대한 지역에 걸쳐 순록 사육에 종사하고 있습니다. 예를 들어, 스웨덴의 경우 국토의 약
-				55%가 순록 사육 지구로 지정되어 있습니다.
+				순록 사육은 가족, 지구, 사미족 및 야쿠트족 마을, 소포즈(집단 농장)와 같은 협동 형태 내에서 개인들에 의해 이루어집니다. 현대 고고학 자료(암각화)에 따르면, 순록의 가축화는 약 2~3천 년 전 러시아와 몽골 사이의 사얀 산맥에서 처음 시작된 것으로 추정됩니다. 실제로 순록은 북부 지역에 자연적으로 속하는 유일한 반가축화 동물입니다. 오늘날 환북극 지역 전체에서 약 10만 명의 사람들이 광대한 지역에 걸쳐 순록 사육에 종사하고 있습니다. 예를 들어, 스웨덴의 경우 국토의 약 55%가 순록 사육 지구로 지정되어 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SOBOR"> 
@@ -185830,29 +185763,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SOBOR_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. [NEWLINE]가능한 테마 보너스:
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]같은 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_GW_MUSIC] 음악 작품 2개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +16.
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]연속된 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_GW_MUSIC] 음악 작품 2개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +12.
-[NEWLINE][ICON_BULLET][COLOR:255:230:150:255]서로 다른 시대[ENDCOLOR]의 [COLOR_POSITIVE_TEXT]자국[ENDCOLOR] [ICON_GW_MUSIC] 음악 작품 2개 배치 시 [ICON_CULTURE] 및 [ICON_TOURISM] +8.
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SOBOR_STRATEGY"> 
 			<Text>
-				소보르에는 음악가와 위대한 작품에 대한 추가 보너스가 있으며, 건물로서 이 두 가지를 직접 지원합니다. 사용 가능한 두 개의 음악 슬롯은 가장 이르게 사용할
-				수 있는 음악 슬롯 중 하나입니다! 같은 시대에 두 개를 제작할 수 있다면 보너스를 극대화할 수 있지만, 연속적인 시대는 약간 더 나빠질 뿐입니다. 초기에는 어려울
-				수 있으므로 예술가 없는 위대한 인물 정책을 고려해 보세요. 또한, 권위 정책 부서의 정책과 같은 특정 즉각적인 수익 전략을 촉진하는 신앙 기반의 국경 포인트도
-				있습니다.
+				소보르에는 음악가와 위대한 작품에 대한 추가 보너스가 있으며, 건물로서 이 두 가지를 직접 지원합니다. 사용 가능한 두 개의 음악 슬롯은 가장 이르게 사용할 수 있는 음악 슬롯 중 하나입니다! 같은 시대에 두 개를 제작할 수 있다면 보너스를 극대화할 수 있지만, 연속적인 시대는 약간 더 나빠질 뿐입니다. 초기에는 어려울 수 있으므로 예술가 없는 위대한 인물 정책을 고려해 보세요. 또한, 권위 정책 부서의 정책과 같은 특정 즉각적인 수익 전략을 촉진하는 신앙 기반의 국경 포인트도 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SOBOR_TEXT"> 
 			<Text>
-				동방 정교회에서 소보르는 신앙, 도덕성, 의식, 정경 및 문화 생활 문제를 다루기 위해 교회를 대표하는 다른 성직자 및 평신도 대표들과 함께 공식적인 모임
-				또는 평신도 회의를 의미합니다. 이러한 에큐메니칼 회의는 신학을 결정하는 데 중심적인 역할을 했습니다. 예를 들어 동방 정교회는 성령이 성부로부터 진행되며 라틴
-				교회가 니케 신조에 추가한 필리오케 조항("그리고 성자")을 거부한다고 주장하며, 이는 어떤 회의도 추가할 것을 요구하지 않았다는 이유에서입니다.
-				[NEWLINE][NEWLINE]정교회의 신성한 예배는 성직자, 합창단, 회중에 의해 예배 시작부터 끝까지 전체적으로 찬양됩니다. 비잔틴 성가는 동로마 제국
-				시대(AD 330년부터 1453년까지)와 관련이 있으며 초기 기독교 교회의 유대인과 시리아 전통에서 발전했습니다. 그러나 북부 슬라브인들은 해시계 지역 유형의 자메니
-				성가를 통해 진화한 더 간단한 음계를 사용했습니다. 러시아 전례 성가(일부 우크라이나 및 발칸 교회 포함)는 서기 988년 키예프 루스 사람들로부터 발전했습니다.
-				14세기에는 교회에 러시아 요소가 사용되기 시작했습니다. 16세기까지 러시아 성가는 비잔틴 양식과 많은 연관이 있었습니다.
+				동방 정교회에서 소보르는 신앙, 도덕성, 의식, 정경 및 문화 생활 문제를 다루기 위해 교회를 대표하는 다른 성직자 및 평신도 대표들과 함께 공식적인 모임 또는 평신도 회의를 의미합니다. 이러한 에큐메니칼 회의는 신학을 결정하는 데 중심적인 역할을 했습니다. 예를 들어 동방 정교회는 성령이 성부로부터 진행되며 라틴 교회가 니케 신조에 추가한 필리오케 조항("그리고 성자")을 거부한다고 주장하며, 이는 어떤 회의도 추가할 것을 요구하지 않았다는 이유에서입니다. [NEWLINE][NEWLINE]정교회의 신성한 예배는 성직자, 합창단, 회중에 의해 예배 시작부터 끝까지 전체적으로 찬양됩니다. 비잔틴 성가는 동로마 제국 시대(AD 330년부터 1453년까지)와 관련이 있으며 초기 기독교 교회의 유대인과 시리아 전통에서 발전했습니다. 그러나 북부 슬라브인들은 해시계 지역 유형의 자메니 성가를 통해 진화한 더 간단한 음계를 사용했습니다. 러시아 전례 성가(일부 우크라이나 및 발칸 교회 포함)는 서기 988년 키예프 루스 사람들로부터 발전했습니다. 14세기에는 교회에 러시아 요소가 사용되기 시작했습니다. 16세기까지 러시아 성가는 비잔틴 양식과 많은 연관이 있었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SUN_DANCE"> 
@@ -185862,27 +185783,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SUN_DANCE_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_GREAT_PLAINS] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_GREAT_PLAINS_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 
+				*다른 파일에서 수정됩니다*
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SUN_DANCE_STRATEGY"> 
 			<Text>
-				도시에서 건설한 태양의 제단은 국왕 경축일을 강화하며, 필요한 자원을 확보할 수 없을 때를 대비해 공공 작업을 수행하여 수동으로 활성화할 수 있습니다. 또한,
-				해당 도시를 선택하여 근접 전투, 총기 및 정찰 부대를 위한 강력한 승급 세트를 제공할 수도 있습니다. 따라서 이 내셔널 원더의 가장 확실한 후보는 수도이지만, 다른
-				인프라와 원더에 집중하면서 다른 도시들에 분산시키고 싶은 추가적인 제작 요구 사항을 염두에 두어야 합니다.
+				도시에서 건설한 태양의 제단은 국왕 경축일을 강화하며, 필요한 자원을 확보할 수 없을 때를 대비해 공공 작업을 수행하여 수동으로 활성화할 수 있습니다. 또한, 해당 도시를 선택하여 근접 전투, 총기 및 정찰 부대를 위한 강력한 승급 세트를 제공할 수도 있습니다. 따라서 이 내셔널 원더의 가장 확실한 후보는 수도이지만, 다른 인프라와 불가사의에 집중하면서 다른 도시들에 분산시키고 싶은 추가적인 제작 요구 사항을 염두에 두어야 합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_SUN_DANCE_TEXT"> 
 			<Text>
-				선댄스는 주로 평원 문화와 아메리카 원주민 종교 내의 새로운 운동에 의해 수행되는 북미 의식입니다. 독립적인 밴드의 멤버들은 개인적 및 공동체 희생 의식을
-				통해 세상과 초자연적인 것에 대한 믿음을 재확인하기 위해 모입니다. 일반적으로 젊은 남성들은 먹거나 마시지 않고 며칠 밤낮으로 반연속적으로 춤을 추곤 했습니다. 일부
-				문화권에서는 자멸이 행해지거나 행해지기도 했습니다. 의식용 파이프도 일반적으로 사용되며, 연기는 창조주나 다른 강력한 동물 영혼들의 주의를 끌기 위해 기도하는 것으로
-				여겨집니다.[NEWLINE][NEWLINE]일반적으로 선댄스는 무용수들에게 가혹한 시련이며, 사람들을 위해 희생하는 신체적, 영적 시험입니다. 젊은 남성들은 기둥
-				주위에서 춤을 추다가 "가슴 피부에 박힌 넓은 끈"에 묶여 쓰러지고 피부가 찢어질 때까지 춤을 춥니다. 가족과 친구들은 주변 캠프에 머물며 무용수들을 지지하며
-				기도합니다. 지역 사회는 최소 1년 동안 의식을 준비하기 위해 계획하고 조직합니다.[NEWLINE][NEWLINE]선댄스는 군사 활동과 관련하여 영적 힘을 부여하고
-				갈등의 시기에 공동체의 힘을 강화하는 동시에 미래에 대한 지식을 얻는 데 자주 사용되었습니다. 리틀 빅혼 전투 이전에, 앉은 황소는 선댄스 비전을 가지고 있었는데,
-				이 비전은 미군 병사들이 하늘에서 거꾸로 그들의 캠프로 넘어졌습니다. 그는 이를 위대한 정신 창조자인 와칸 탱카가가 미군 병사들이 승리한 전투에서 그들을 공격하지만
-				전사들에게 전멸당할 것이라는 메시지로 해석했습니다.
+				선댄스는 주로 평원 문화와 아메리카 원주민 종교 내의 새로운 운동에 의해 수행되는 북미 의식입니다. 독립적인 밴드의 멤버들은 개인적 및 공동체 희생 의식을 통해 세상과 초자연적인 것에 대한 믿음을 재확인하기 위해 모입니다. 일반적으로 젊은 남성들은 먹거나 마시지 않고 며칠 밤낮으로 반연속적으로 춤을 추곤 했습니다. 일부 문화권에서는 자멸이 행해지거나 행해지기도 했습니다. 의식용 파이프도 일반적으로 사용되며, 연기는 창조주나 다른 강력한 동물 영혼들의 주의를 끌기 위해 기도하는 것으로 여겨집니다.[NEWLINE][NEWLINE]일반적으로 선댄스는 무용수들에게 가혹한 시련이며, 사람들을 위해 희생하는 신체적, 영적 시험입니다. 젊은 남성들은 기둥 주위에서 춤을 추다가 "가슴 피부에 박힌 넓은 끈"에 묶여 쓰러지고 피부가 찢어질 때까지 춤을 춥니다. 가족과 친구들은 주변 캠프에 머물며 무용수들을 지지하며 기도합니다. 지역 사회는 최소 1년 동안 의식을 준비하기 위해 계획하고 조직합니다.[NEWLINE][NEWLINE]선댄스는 군사 활동과 관련하여 영적 힘을 부여하고 갈등의 시기에 공동체의 힘을 강화하는 동시에 미래에 대한 지식을 얻는 데 자주 사용되었습니다. 리틀 빅혼 전투 이전에, 앉은 황소는 선댄스 비전을 가지고 있었는데, 이 비전은 미군 병사들이 하늘에서 거꾸로 그들의 캠프로 넘어졌습니다. 그는 이를 위대한 정신 창조자인 와칸 탱카가가 미군 병사들이 승리한 전투에서 그들을 공격하지만 전사들에게 전멸당할 것이라는 메시지로 해석했습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_TEUTONIC_ORDER"> 
@@ -185892,21 +185803,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_TEUTONIC_ORDER_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]모든 도시의 [ICON_STRENGTH] 방어력이 10% 증가하고 [ICON_SILVER_FIST] 군사 보급을 +1 제공합니다. 제국의 모든 연병장에서 [ICON_PEACE] 신앙을 +2 생성합니다.[NEWLINE][NEWLINE]제국의 모든 근접 및 기승 유닛이 [COLOR_POSITIVE_TEXT]총회 지부[ENDCOLOR] 승급을 얻습니다. 이 승급은 유닛이 도시나 요새에 주둔할 때 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 금을 추가하며, 획득한 경험치에 비례해 [ICON_PEACE] 신앙을 얻고 야만인을 상대로 [ICON_STRENGTH] 전투력 보너스를 얻습니다.[NEWLINE][NEWLINE]
+				[ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_TEUTONIC_ORDER_STRATEGY"> 
 			<Text>
-				튜튼 기사단은 신앙 건물로 생각해야 합니다. 총기 및 갑옷 부대가 등장하기 전까지 군대의 대부분은 "일반 장"에 속하며, 다른 보너스 중에서도 XP로부터
-				신앙을 얻습니다. 또한 신앙 건물과 같이 신앙과 함께 구매해야 하는 건물이 더 강하며, 막사로부터 신앙을 받습니다. 함께 군사 투자는 종교적 성과로 전환될 수
-				있습니다. 선순환을 만들고 싶다면 광신을 더 고려할 수 있습니다.
+				튜튼 기사단은 신앙 건물로 생각해야 합니다. 총기 및 갑옷 부대가 등장하기 전까지 군대의 대부분은 "일반 장"에 속하며, 다른 보너스 중에서도 XP로부터 신앙을 얻습니다. 또한 신앙 건물과 같이 신앙과 함께 구매해야 하는 건물이 더 강하며, 막사로부터 신앙을 받습니다. 함께 군사 투자는 종교적 성과로 전환될 수 있습니다. 선순환을 만들고 싶다면 광신을 더 고려할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_TEUTONIC_ORDER_TEXT"> 
 			<Text>
-				튜튼 기사단은 약 1190년경 예루살렘 왕국 아크레에서 군사 단체로 설립된 가톨릭 종교 기관입니다. 예루살렘에 있는 독일 성모 마리아 가문의 형제단은
-				기독교인들의 성지 순례를 돕고 병원을 설립하기 위해 결성되었습니다. 이 단체의 회원들은 역사적으로 튜턴 기사단으로 알려져 있으며, 중세 시대에 성지와 발트 십자군
-				전쟁에서 가톨릭 통치를 지원하고 동유럽의 가톨릭 신자들을 위한 군사적 보호를 제공하는 십자군 군사 단체로 활동해 왔습니다.
+				튜튼 기사단은 약 1190년경 예루살렘 왕국 아크레에서 군사 단체로 설립된 가톨릭 종교 기관입니다. 예루살렘에 있는 독일 성모 마리아 가문의 형제단은 기독교인들의 성지 순례를 돕고 병원을 설립하기 위해 결성되었습니다. 이 단체의 회원들은 역사적으로 튜턴 기사단으로 알려져 있으며, 중세 시대에 성지와 발트 십자군 전쟁에서 가톨릭 통치를 지원하고 동유럽의 가톨릭 신자들을 위한 군사적 보호를 제공하는 십자군 군사 단체로 활동해 왔습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_YATIRI"> 
@@ -185916,23 +185823,17 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_YATIRI_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_ANDEAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_ANDEAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE]도시 근처에 [ICON_RES_COCA] 코카 자원을 최대 1개 배치합니다.
+				[ICON_CULTURE_JFD_ANDEAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_ANDEAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_YATIRI_STRATEGY"> 
 			<Text>
-				야티리는 당신의 신앙 산출을 증가시키고, 산 근처에서 효과적입니다. 군대에 약간의 보너스를 제공해, 도시에서 회복하는 유닛이 이른 병원처럽 회복할 수 있게
-				합니다. 또한 사치 자원 코카를 제공하며 독접 보너스로는 모든 유닛의 전투력과 방어력을 향상시킵니다. 이 두 보너스는 광신과 함께 사용할 수 있습니다.
+				야티리는 당신의 신앙 산출을 증가시키고, 산 근처에서 효과적입니다. 군대에 약간의 보너스를 제공해, 도시에서 회복하는 유닛이 이른 병원처럽 회복할 수 있게 합니다. 또한 사치 자원 코카를 제공하며 독접 보너스로는 모든 유닛의 전투력과 방어력을 향상시킵니다. 이 두 보너스는 광신과 함께 사용할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CD_YATIRI_TEXT"> 
 			<Text>
-				야티리는 볼리비아, 칠레, 페루의 아이마라족 사이에서 의료 종사자이자 지역사회 치유자로, 코카 잎과 같은 상징과 재료를 모두 사용합니다. 야티리가 되기 위한
-				사람의 소명에는 여러 가지 요인이 작용합니다. 그러나 이 소명의 확인은 일반적으로 미혼의 아이마라가 산속에서 무리를 지어 나가는 번개로
-				특징지어집니다.[NEWLINE][NEWLINE]기독교 교회는 또한 야티리의 역할이 현대 종교 수행에서 불필요하며 이교도의 한 형태라고 인식하여 종종 야티리를 배척해
-				왔습니다. 현 정부 관계자들이 교황청과의 콩코르다트 조건과 관행에 따라 가톨릭 목사가 있었을 수도 있는 사건에서 야티리의 존재를 공개적으로 지지하면서 상황이
-				바뀌었습니다. 그럼에도 불구하고 대부분의 안데스 사람들의 일반적인 관행은 두 전통의 관습을 혼합하는데, 예를 들어 모든 형태의 재산에 부여되는 축복인 샬라에서는
-				파차마마와 가톨릭 기도에 대한 희생으로 이루어지는 경우가 많습니다.
+				야티리는 볼리비아, 칠레, 페루의 아이마라족 사이에서 의료 종사자이자 지역사회 치유자로, 코카 잎과 같은 상징과 재료를 모두 사용합니다. 야티리가 되기 위한 사람의 소명에는 여러 가지 요인이 작용합니다. 그러나 이 소명의 확인은 일반적으로 미혼의 아이마라가 산속에서 무리를 지어 나가는 번개로 특징지어집니다.[NEWLINE][NEWLINE]기독교 교회는 또한 야티리의 역할이 현대 종교 수행에서 불필요하며 이교도의 한 형태라고 인식하여 종종 야티리를 배척해 왔습니다. 현 정부 관계자들이 교황청과의 콩코르다트 조건과 관행에 따라 가톨릭 목사가 있었을 수도 있는 사건에서 야티리의 존재를 공개적으로 지지하면서 상황이 바뀌었습니다. 그럼에도 불구하고 대부분의 안데스 사람들의 일반적인 관행은 두 전통의 관습을 혼합하는데, 예를 들어 모든 형태의 재산에 부여되는 축복인 샬라에서는 파차마마와 가톨릭 기도에 대한 희생으로 이루어지는 경우가 많습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CEILIDH_HALL"> 
@@ -187353,7 +187254,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_COTHON_STRATEGY"> 
 			<Text>
-				{TXT_KEY_BUILDING_IRONWORKS}를 대체하는 카르타고의 고유 건물입니다. {TXT_KEY_BUILDING_IRONWORKS}의 모든 보너스에 더해, {TXT_KEY_BUILDING_GREAT_COTHON}은 다음과 같은 혜택을 제공합니다: 모든 해안 도시의 {TXT_KEY_BUILDING_HARBOR} 무료 제공, 추가 [ICON_INTERNATIONAL_TRADE] 교역로 2개 확보, 교역로의 기점과 종점 도시에 추가 [ICON_GOLD] 금 제공 및 건설된 도시의 빈곤(Poverty) 수치 감소, 제국 내 모든 등대와 항만 시설 강화 등이 있습니다. {TXT_KEY_BUILDING_IRONWORKS}와 달리 [COLOR_CYAN]고전 시대[ENDCOLOR]의 [COLOR_CYAN]{TXT_KEY_TECH_CURRENCY_TITLE}[ENDCOLOR] 연구 시 해제됩니다. 별도의 건물 요구 조건은 없으나 반드시 해안 도시에만 건설할 수 있습니다.
+				{TXT_KEY_BUILDING_IRONWORKS}를 대체하는 고유한 카르타고식 건물입니다. {TXT_KEY_BUILDING_IRONWORKS}의 보너스에 더해, {TXT_KEY_BUILDING_GREAT_COTHON}은 모든 해안 도시에 무료 {TXT_KEY_BUILDING_HARBOR}, 2 개의 [ICON_INTERNATIONAL_TRADE] 교역로, [ICON_GOLD] 교역로에서 보내고 받는 양쪽이 모두 골드를 획득하고, 건설된 도시의 빈곤 감소 효과를 일정량만큼 획득하며, 문명 내 모든 등대와 항구의 생산력을 향상시킵니다. {TXT_KEY_BUILDING_IRONWORKS}와 달리, {TXT_KEY_BUILDING_GREAT_COTHON}은 [COLOR_CYAN]고전 시대[ENDCOLOR]에 [COLOR_CYAN]{TXT_KEY_TECH_CURRENCY_TITLE}[ENDCOLOR] 발견과 함께 만들 수 있습니다. {TXT_KEY_BUILDING_GREAT_COTHON}은 건설에 필요한 어떠한 조건도 없지만, 해안 도시에서만 건설할 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GREAT_COTHON_TEXT"> 
@@ -189758,7 +189659,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SMOKEHOUSE_HELP"> 
 			<Text>
-				[NEWLINE]인근의 [ICON_RES_REINDEER] 순록: [ICON_FOOD] 식량 +1.
+				
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SMOKEHOUSE_STRATEGY"> 
@@ -195878,16 +195779,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				산 근처의 눈이 녹아내려 큰 눈사태가 일어났습니다. 도시 주변의 마을과 농장이 최대 2개씩 약탈됩니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CITY_EVENT_CD_VINTAGE"> 
-			<Text>
-				훌륭한 빈티지
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_EVENT_CD_VINTAGE_HELP"> 
-			<Text>
-				주류 산업이 충분히 정착되어 생산량의 일부를 숙성시킴으로써 더 깊고 복합적인 풍미를 만들어내기 시작했습니다.[NEWLINE][NEWLINE]인근 증류소가 [ICON_GOLD] 금과 [ICON_CULTURE] 문화을 +3씩 얻습니다. {4_GPChange}만큼 획득합니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CITY_EVENT_CORRUPTION"> 
 			<Text>
 				도시 부패
@@ -196646,16 +196537,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CITY_EVENT_PLANTATION_RARE_CROP_CHOICE_1_HELP"> 
 			<Text>
 				당신의 농부들은 도시 근처의 재배지에서 전에 본 적이 없는 희귀한 식물을 발견했습니다다. 연구원들은 그것을 연구하는 것에 흥분하고 있습니다! +{2_InstantYield} 획득.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_EVENT_POTLATCH"> 
-			<Text>
-				포틀래치 의식
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CITY_EVENT_POTLATCH_HELP"> 
-			<Text>
-				부유한 가문이 포틀래치 하우스에서 호화로운 모임을 주최했습니다. {2_InstantYield} 및 [ICON_DIPLOMAT] 위대한 외교관 점수를 획득합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CITY_EVENT_SEVERE_DROUGHT_CHOICE_1_DESCRIPTION"> 
@@ -212169,7 +212050,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_BRAZILIAN_PRACINHA_TEXT"> 
 			<Text>
-				"레인저"라는 용어는 17세기부터 특수 정예 경보병을 묘사하는 데 사용되었습니다. 오늘날 미국의 제75레인저연대는 미국 육군 특수작전사령부(USASOC) 산하의 정예 공중강습 경보병 전투 부대입니다. 이들은 제2차 세계 대전 당시 창설된 6개 대대 중 3개 대대, 그리고 동남아시아 전선에서 활약한 "메릴의 약탈자들"로 알려진 제5307 혼성 부대의 혈통을 잇고 있습니다. 현대 레인저의 6개 대대는 한국, 베트남, 그레나다, 파나마, 아프가니스탄, 이라크 등에 투입되었습니다.[NEWLINE][NEWLINE]이와 유사하게 남미에서는 "흡연하는 코브라(Cobras Fumantes)"라는 별명을 가진 브라질 원정군이 제2차 세계 대전 지중해 전선에서 연합군의 일원으로 참전한 브라질 육군 및 공군 부대로 활약했습니다. 이들은 보병 사단, 연락 비행대, 전투기 대대를 포함하여 약 25,900명의 병력으로 구성되었습니다. 종전까지 이들은 2명의 장군과 약 900명의 장교를 포함하여 20,573명의 추축군 포로를 잡아들이는 전과를 올렸습니다.
+				브라질 상선 18척이 독일 잠수함 때문에 대서양에서 격침당하자 브라질은 1942년 12월에 나치 독일과 파시즘 이탈리아에 전쟁을 선포하고 연합국에 가담했다. 1944년 초, 2만 7,500명의 남녀가 군사 훈련을 받아 브라질 원정군으로 파견되었는데, 브라질에서는 프라시나스 브라질레로라고 했다. 브라질 국민은 파견군의 업적을 하나하나 들여다보면서, 브라질이 유럽에 능동적으로 참전한 유일한 남미대륙 국가라는 사실을 자랑스러워했다. 무장은 미군이나 영국군만 못했지만, 브라질 군대는 용맹과 기백을 가지고 찬사와 영광을 받았으나 대전으로 1천 명이 전사했다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_BRAZIL_FACTOID_HEADING"> 
@@ -220801,6 +220682,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_PORCELAIN_TEXT"> 
 			<Text>
 				중국에서 약 3,000년 전에 최초로 만들어진 도자기는 점토를 가열해 다양한 모양과 크기로 만든 반투명 공예품이다. 예술가와 공예가들은 수 세기에 걸쳐 도자기의 미적 감각을 살리면서 동시에 물리적 내구성을 강화해 사용 효율을 높이는 방법을 연구했다. 도자기로 만든 식기 역시 중국에서 처음 만들어졌기 때문에 유럽에서는 흔히 '차이나'라고 불린다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_RESOURCE_REINDEER_TEXT"> 
+			<Text>
+				순록 또는 카리부는 북극, 아북극, 툰드라, 한대림, 산악 지역 등 북유럽, 시베리아, 북아메리카에 서식하는 환북극권 분포를 보이는 사슴의 한 종입니다. 순록은 이동성 개체군과 정착성 개체군으로 나뉘며, 무리의 규모는 지역에 따라 크게 다릅니다. 툰드라 아종은 극한의 추위에 적응했으며, 일부는 장거리 이동에 적응했습니다. 순록은 암컷에게 뿔이 있는 것이 사슴과(Cervidae)의 특징입니다. 순록은 전 세계에서 대규모로 성공적으로 반가축화된 유일한 사슴입니다. 야생 순록과 가축 순록은 선사 시대부터 북극 지역 사람들에게 중요한 식량, 의복, 주거 자원이었습니다. 오늘날에도 순록은 여전히 사육되고 사냥됩니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_RICE_TEXT"> 
@@ -239230,16 +239116,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				[ICON_BULLET] [COLOR_POSITIVE_TEXT]{1_Num:number "#.##"}[ENDCOLOR] [ICON_FOOD]/[ICON_PRODUCTION]필요분 초과
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_DJELI_EVENT"> 
-			<Text>
-				음유시인의 영감
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_DJELI_EVENT_HELP"> 
-			<Text>
-				향후 {4_Turns} 동안:[NEWLINE][ICON_BULLET] 모든 [ICON_MUSICIAN] 음악가 및 음악가 길드에서 [ICON_TOURISM] 관광 +5를 생성합니다.[NEWLINE][ICON_BULLET] 모든 [ICON_GREAT_WORK] 걸작에서 [ICON_CULTURE] 문화 +3을 얻습니다.[NEWLINE][ICON_BULLET] 모든 국가 불가사의에서 [ICON_PEACE] 신앙 +2를 생산합니다.[NEWLINE][NEWLINE]추가로 활성화하면 지속 시간이 연장됩니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_DLC_ALLOWED"> 
 			<Text>
 				DLC 허용
@@ -244513,76 +244389,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_EVENT_SPY_RANK"> 
 			<Text>
 				[NEWLINE] [ICON_BULLET] 이 선택을 할만큼 스파이의 등급이 높지 않습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_1"> 
-			<Text>
-				[ICON_CULTURE_LOCAL] 새로운 땅의 꿈을 따름
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_1_HELP"> 
-			<Text>
-				제국 내 모든 지형 특성에서 [ICON_CULTURE_LOCAL] 국경 확장 점수를 +1 얻으며, 자연경관의 경우 +5를 얻습니다.[NEWLINE]제국 내 성지 타일에서 [ICON_CULTURE] 문화 +2를 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_2"> 
-			<Text>
-				[ICON_PRODUCTION] 고향의 꿈을 건설함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_2_HELP"> 
-			<Text>
-				제국 내 모든 사원의 [ICON_PRODUCTION] 생산력이 10% 증가합니다.[NEWLINE]제국 내 성지 타일에서 [ICON_PRODUCTION] 생산력 +2를 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_3"> 
-			<Text>
-				[ICON_FOOD] 사냥의 꿈을 쫓음
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_3_HELP"> 
-			<Text>
-				제국 내 모든 보너스 자원에서 [ICON_FOOD] 식량 +1을 얻습니다.[NEWLINE]제국 내 성지 타일에서 [ICON_FOOD] 식량 +3을 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_4"> 
-			<Text>
-				[ICON_GREAT_GENERAL] 전쟁의 꿈에 맞섬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_4_HELP"> 
-			<Text>
-				모든 근접 및 화약 유닛이 [COLOR_POSITIVE_TEXT]꿈의 전사[ENDCOLOR] 승급을 획득하여, 피해를 입었을 때와 성지 근처에서 더 강력하게 싸웁니다.[NEWLINE]제국 내 성지 타일에서 [ICON_GREAT_GENERAL] 위대한 장군 점수 +1을 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_5"> 
-			<Text>
-				[ICON_TOURISM] 치유의 꿈을 수용함
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_5_HELP"> 
-			<Text>
-				기갑을 제외한 모든 지상 유닛이 [COLOR_POSITIVE_TEXT]생명의 파동[ENDCOLOR] 승급을 획득하여, [COLOR_POSITIVE_TEXT]평원[ENDCOLOR] 타일에서 회복량이 두 배가 됩니다.[NEWLINE]제국 내 성지 타일에서 [ICON_PEACE] 신앙 +3을 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_6"> 
-			<Text>
-				[ICON_RESEARCH] 각성의 꿈을 받아들임
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_6_HELP"> 
-			<Text>
-				모든 전문가가 [ICON_RESEARCH] 과학 +1을 얻습니다.[NEWLINE]제국 내 성지 타일에서 [ICON_RESEARCH] 과학 +4를 얻습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_7"> 
-			<Text>
-				[ICON_GOLD_AGE] 내세로 향하는 길을 찾음
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_EVENT_XON_CHOICE_7_HELP"> 
-			<Text>
-				[ICON_GOLDEN_AGE] 황금기가 시작됩니다.[NEWLINE]제국 내 성지 타일에서 [ICON_GOLDEN_AGE] 황금기 점수 +5를 얻습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_EVENT_YIELD_DURATION"> 
@@ -268849,26 +268655,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_JOINING_GAME_IN_PROGRESS"> 
 			<Text>
 				게임에 참가하는 중
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_JUMBE_EVENT"> 
-			<Text>
-				오피르의 선물
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_JUMBE_EVENT_HELP"> 
-			<Text>
-				[ICON_BULLET] 제국의 전략 자원이 [ICON_GOLDEN_AGE] 황금기 점수 +1을 얻습니다.[NEWLINE][ICON_BULLET] 모든 항구가 [ICON_FOOD] 식량 +2를 얻습니다.[NEWLINE][ICON_BULLET] [ICON_CAPITAL] 수도가 [ICON_TOURISM] 관광 +3을 생산합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]이 효과들은 중첩됩니다.[ENDCOLOR]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_KAIMILOA_EVENT"> 
-			<Text>
-				멀리 찾는 자
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_KAIMILOA_EVENT_HELP"> 
-			<Text>
-				선원들을 훈련하는 과정에서 음악적 소질이 있는 젊은이들을 이례적으로 많이 징집했습니다. 이들은 인상적인 군악대를 결성했습니다.[NEWLINE][NEWLINE]향후 {4_Turns} 동안 모든 [ICON_MUSICIAN] 음악가가 [ICON_GREAT_ADMIRAL] 위대한 제독 점수를 +2 생성합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_KEYBOARD_BACKSPACE"> 
@@ -296417,12 +296203,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_MOD_CULDIV_SPLASH_SCREENS_SUMMARY"> 
 			<Text>
-				각 문화마다 고유한 시대 및 패배 스플래시 화면을 추가합니다.
+				각 문화권별로 고유한 시대 및 패배 스플래시 화면을 추가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MOD_CULDIV_UNIT_DIALOGUE_SUMMARY"> 
 			<Text>
-				유닛 선택, 동작 및 이동에 대한 유닛 대화를 추가합니다
+				문명 IV 처럼 유닛 선택, 행동, 이동에 대한 유닛 대화 기능을 추가합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MOD_INTERNET_LOBBY"> 
@@ -322218,6 +322004,36 @@ The ship has weather'd every rack; the prize we sought is won."
 				최대 체력(HP)이 10 증가합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_BRIGADE"> 
+			<Text>
+				그들은 지나갈 수 없다!
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_BRIGADE_2"> 
+			<Text>
+				인터내셔널가
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_BRIGADE_2_HELP"> 
+			<Text>
+				즉시 [ICON_TOURISM] 관광 점수 200을 획득합니다.[NEWLINE]전투에서 획득한 경험치 1당 [ICON_TOURISM] 관광 점수 10을 획득합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_BRIGADE_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]아군 도시[ENDCOLOR]로부터 3 타일 이내의 [ICON_STRENGTH] 전투력이 +15% 증가합니다. [COLOR_NEGATIVE_TEXT]약탈[ENDCOLOR]된 시설이 있는 타일에서는 [ICON_STRENGTH] 전투력이 +25% 증가합니다. 이 타일에 인접한 유닛은 [COLOR_POSITIVE_TEXT]회복[ENDCOLOR]시 체력이 +5 증가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_CONDOR"> 
+			<Text>
+				예리코 나팔
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_CONDOR_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]공습[ENDCOLOR] 시 받는 피해가 -25% 감소합니다.[NEWLINE]전투에서 획득하는 경험치 마다 [ICON_RESEARCH] 과학 20을 얻습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_DARTS"> 
 			<Text>
 				독침 관악기
@@ -322273,6 +322089,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				이번 턴에 공격한 이 승급 보유 유닛 하나당 [ICON_RANGE_STRENGTH] 원거리 공격력이 15% 증가합니다(최대 +60%).[NEWLINE]도시나 요새 시설에 주둔할 경우, 유닛의 [ICON_STRENGTH] 전투력 8마다 [ICON_PEACE] 신앙을 +1씩 추가합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_BRAHMIN_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](바타라)[ENDCOLOR] 브라만 팔탄
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_HELP"> 
 			<Text>
 				전투 후 무작위로 고유한 [ICON_CULTURE_JFD_BHARATA] [COLOR_POSITIVE_TEXT]카스트 승급[ENDCOLOR]을 얻습니다.
@@ -322288,6 +322109,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				이번 턴에 공격한 이 승급 보유 유닛 하나당 [ICON_RANGE_STRENGTH] 원거리 공격력이 15% 증가합니다(최대 +60%).[NEWLINE]도시나 요새 시설에 주둔할 경우, 유닛의 [ICON_STRENGTH] 전투력 8마다 [ICON_GREAT_GENERAL] 위대한 장군 점수를 +1씩 추가합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_KSHATRIYA_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](바타라)[ENDCOLOR] 크샤트리아 팔탄
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](바타라)[ENDCOLOR] 이자트
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_SHUDRA"> 
 			<Text>
 				수드라 팔탄
@@ -322298,6 +322129,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				이번 턴에 공격한 이 승급 보유 유닛 하나당 [ICON_RANGE_STRENGTH] 원거리 공격력이 15% 증가합니다(최대 +60%).[NEWLINE]도시나 요새 시설에 주둔할 경우, 유닛의 [ICON_STRENGTH] 전투력 8마다 [ICON_PRODUCTION] 생산력을 +2씩 추가합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_SHUDRA_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](바타라)[ENDCOLOR] 수드라 팔탄
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_VAISHYA"> 
 			<Text>
 				바이샤 팔탄
@@ -322306,6 +322142,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_VAISHYA_HELP"> 
 			<Text>
 				이번 턴에 공격한 이 승급 보유 유닛 하나당 [ICON_RANGE_STRENGTH] 원거리 공격력이 15% 증가합니다(최대 +60%).[NEWLINE]도시나 요새 시설에 주둔할 경우, 유닛의 [ICON_STRENGTH] 전투력 8마다 [ICON_FOOD] 식량과 [ICON_GOLD] 금을 +1씩 추가합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_IZZAT_VAISHYA_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](바타라)[ENDCOLOR] 바이샤 팔탄
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_KAKAP"> 
@@ -322393,6 +322234,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				[COLOR_POSITIVE_TEXT]원거리 공격[ENDCOLOR]에 대한 방어력이 20% 증가합니다.[NEWLINE][COLOR_NEGATIVE_TEXT]적 도시[ENDCOLOR]에 인접했을 때 [ICON_STRENGTH] 전투력이 20% 증가합니다.[NEWLINE]경험치를 얻을 때마다 3의 [ICON_PRODUCTION] 생산력을 생성합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_BUFFALO_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 강력한 버팔로
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_COYOTE"> 
 			<Text>
 				야생의 코요테
@@ -322401,6 +322247,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_COYOTE_HELP"> 
 			<Text>
 				[ICON_MOVES] 이동력이 1 증가합니다.[NEWLINE][COLOR_POSITIVE_TEXT]기병 유닛[ENDCOLOR]을 상대로 [ICON_STRENGTH] 전투력이 20% 증가합니다.[NEWLINE]경험치를 얻을 때마다 4의 [ICON_FOOD] 식량을 생성합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_COYOTE_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 야생의 코요테
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_EAGLE"> 
@@ -322413,9 +322264,19 @@ The ship has weather'd every rack; the prize we sought is won."
 				통제 구역(ZOC)을 무시합니다.[NEWLINE][COLOR_POSITIVE_TEXT]체력이 가득 찬[ENDCOLOR] 적을 공격할 때 [ICON_STRENGTH] 전투력이 20% 증가합니다.[NEWLINE]경험치를 얻을 때마다 2의 [ICON_CULTURE] 문화를 생성합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_EAGLE_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 불가침의 독수리
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_HELP"> 
 			<Text>
 				전투 후 무작위로 고유한 [ICON_CULTURE_JFD_GREAT_PLAINS] [COLOR_POSITIVE_TEXT]동물 승급[ENDCOLOR]을 획득합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 태양의 무희
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_RAVEN"> 
@@ -322428,6 +322289,11 @@ The ship has weather'd every rack; the prize we sought is won."
 				적 처치 시 체력을 [COLOR_POSITIVE_TEXT]10[ENDCOLOR]만큼 회복하며 타일 위의 모든 [COLOR_POSITIVE_TEXT]방어 시설[ENDCOLOR]을 [ICON_RAZING] 약탈합니다.[NEWLINE]타일 [ICON_RAZING] 약탈 시 15의 [ICON_CULTURE] 문화를 획득하며, 이 수치는 시대에 따라 증가합니다.[NEWLINE]경험치를 얻을 때마다 2의 [ICON_RESEARCH] 과학을 생성합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_RAVEN_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 도둑질하는 까마귀
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_TURTLE"> 
 			<Text>
 				불멸의 거북이
@@ -322436,6 +322302,11 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_TURTLE_HELP"> 
 			<Text>
 				회복 시 체력을 [COLOR_POSITIVE_TEXT]5[ENDCOLOR]만큼 추가로 회복합니다.[NEWLINE][COLOR_POSITIVE_TEXT]태양의 무희[ENDCOLOR] 승급 자격이 있는 인접한 아군 유닛 하나당 방어력이 10% 증가합니다.[NEWLINE]경험치를 얻을 때마다 2의 [ICON_PEACE] 신앙을 생성합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_SUN_DANCE_TURTLE_PEDIA"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT](대평원)[ENDCOLOR] 불멸의 거북이
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_TEUTONIC"> 
@@ -322466,6 +322337,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_CD_UMIAK_HELP"> 
 			<Text>
 				빙하 타일에 진입할 수 있습니다.[NEWLINE]지도를 밝힐 때마다 타일당 가장 가까운 도시에 1의 [ICON_FOOD] 식량을 제공합니다. 이 수치는 자연경관 발견 시 12배, 고대 유적 발견 시 4배, 자원 발견 시 3배로 증폭됩니다.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]유닛 업그레이드 시 사라집니다.[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_VARANGIAN"> 
+			<Text>
+				모노킬라
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CD_VARANGIAN_HELP"> 
+			<Text>
+				강을 건너 공격할 때 발생하는 전투 페널티를 제거합니다.[NEWLINE]강을 따라 이동할 때 [ICON_MOVES] 이동력이 두 배가 됩니다.[NEWLINE]승선 비용으로 [ICON_MOVES] 이동력 1 소모합니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CD_VOIVODE"> 
@@ -324019,7 +323900,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOMELAND_GUARDIAN_BOOGALOO_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]우군 영토[ENDCOLOR]에서 [ICON_STRENGTH] 전투력이 15% 증가합니다.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]유닛 업그레이드 시 사라집니다[ENDCOLOR].
+				자국 영토에서 전투 시 [ICON_STRENGTH]전투력 보너스 [COLOR_POSITIVE_TEXT]+15%[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_HOMELAND_GUARDIAN_HELP"> 
@@ -328008,6 +327889,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				공장과 철갑함이 사용합니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_COCA"> 
+			<Text>
+				코카
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_COCA_TEXT"> 
+			<Text>
+				코카는 남아메리카 서부 원산의 에리트로실라세아과에 속하는 재배종 네 종의 잎을 가리킵니다. 이 식물은 각성 효과, 통증 완화, 식욕 억제, 고산병 치료 등 다양한 약용 및 영양학적 용도로 유명합니다. 잎은 전통적으로 씹거나 차로 우려 마십니다. 스페인 정복자들은 코카가 피로나 굶주림 속에서도 노동력을 높여준다는 점에 주목했습니다. 오늘날 코카는 향정신성 알칼로이드인 코카인으로 가장 잘 알려져 있습니다. 코카 잎의 알칼로이드 함량은 비교적 낮아 한 번의 코카인 추출에 많은 양의 잎이 필요합니다. 코카 잎 추출물은 한때 다양한 의약품 및 소비재에 널리 사용되었지만, 20세기 초 규제 물질로 지정되어 북미와 유럽 시장에서 퇴출되었습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_COFFEE"> 
 			<Text>
 				커피
@@ -328216,9 +328107,24 @@ The ship has weather'd every rack; the prize we sought is won."
 				대리석
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MC_RUM"> 
+			<Text>
+				증류주
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MC_RUM_PEDIA"> 
+			<Text>
+				증류주는 곡물, 과일, 채소 또는 설탕을 알코올 발효시킨 후 증류하여 만든 알코올 음료입니다. 증류 과정에서 알코올이 농축되어 최종적으로 얻어지는 액상의 알코올 도수가 높아집니다. 보드카, 럼, 진, 테킬라 등이 증류주의 대표적인 예입니다. 브랜디나 위스키처럼 증류주를 오크통에서 숙성시키기도 하고, 압생트처럼 향료를 첨가하여 향이 첨가된 증류주를 만들기도 합니다.[NEWLINE][NEWLINE][ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] 문화 집단의 증류소 시설을 통해 보너스 자원을 변환하여 배치됩니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY"> 
 			<Text>
 				(당신의 문명) {1_Monopoly}%
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY_COMBAT_STRENGTH"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]독점 보너스:[ENDCOLOR] 모든 유닛에게 [ICON_STRENGTH] 전투력 +5%를 줍니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_MONOPOLY_GA_LENGTH"> 
@@ -328458,6 +328364,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_RESOURCE_POTENTIAL_STRATEGIC"> 
 			<Text>
 				잠재적 글로벌 및 전략 자원 독점 보너스:[NEWLINE][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_REINDEER"> 
+			<Text>
+				순록
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOURCE_REINDEER_HELP"> 
+			<Text>
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_RICE"> 
@@ -348369,61 +348285,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				성역
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_A"> 
-			<Text>
-				위대한 행렬
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_AC"> 
-			<Text>
-				시대의 후원
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_AF"> 
-			<Text>
-				르네상스의 축
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_AFC"> 
-			<Text>
-				서구 문명의 요람
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_F"> 
-			<Text>
-				대리석의 도시
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_FC"> 
-			<Text>
-				천재의 유산
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_NATIONAL_EXHIBIT_HELP"> 
-			<Text>
-				보너스를 최대화하려면 걸작 슬롯을 자신이 직접 발굴/제작하고 연속된 시대에 속하는 유물 2개와 예술품 2개로 채우십시오.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_SOBOR_1"> 
-			<Text>
-				즈나메니 성가
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_SOBOR_2"> 
-			<Text>
-				오비코드 다성음악
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_SOBOR_3"> 
-			<Text>
-				스티케라리온 정전
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_THEMING_BONUS_CD_SOBOR_HELP"> 
-			<Text>
-				보너스를 최대화하려면 걸작 음악 슬롯을 자신이 직접 제작하고 같은 시대에 속하는 음악 작품들로 채우십시오.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_THEMING_BONUS_EE_TOPKAPI"> 
 			<Text>
 				왕실 보물 박물관
@@ -352251,7 +352112,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BRAZILIAN_PRACINHA"> 
 			<Text>
-				공중 강습 레인저
+				프라싱야
 			</Text>
 			<Plurality>
 				2
@@ -352259,7 +352120,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY"> 
 			<Text>
-				공중강습 레인저는 공수부대보다 훨씬 더 강인합니다. 특히 생존주의 I과 DFPs 승급 덕분에 맷집이 훨씬 좋아졌으며, 낙하한 지점을 훨씬 효과적으로 사수할 수 있습니다. 이 유닛을 공격에 성공적으로 투입한다면 막대한 양의 황금기 점수를 보상으로 얻게 될 것입니다. 레인저가 앞장섭니다!
+				적 유닛을 처치해 황금기를 불러오는 근접 유닛입니다. 해외 영토에서 적을 처치해 당신의 문명이 문화 승리를 달성하도록 도우십시오. 도시 국가에서만 선물로 받을 수 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BRUTE"> 
@@ -352452,7 +352313,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_AGIRU_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_EAST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_AGIRU_STRATEGY"> 
@@ -352485,26 +352346,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				최초의 휴대용 쇠뇌는 고대 그리스에서 사용되었습니다. 서기 1세기 그리스 작가인 알렉산드리아의 헤론은 그의 저서 '벨로포이카'에서 유명한 공학자 크테시비오스(기원전 285~222년경 활동)의 초기 기록을 인용하여 이를 설명했습니다. 이 무기는 복합궁의 힘을 이용했으며, 개머리판 뒤쪽의 오목한 부분에 배를 대고 눌러서 시위를 당기는 방식이었습니다. 이 방식은 손으로 당기는 활보다 훨씬 더 많은 에너지를 축적할 수 있었습니다. 헤론은 이 '가스트라페테스(Gastraphetes)'를 훗날 투석기의 전신으로 정의하며, 그 발명 시기를 기원전 420년 이전으로 추정했습니다. 기원전 397년 모티아 공성전과 같은 그리스-포에니 전쟁에서 사용된 기록이 있으며, 카르타고인들은 시칠리아에서 그리스의 투석기와 쇠뇌 설계를 복제했습니다. 기원전 340년경 그리스의 요새들은 상단에 셔터가 달린 창문이 있는 높은 탑을 갖추기 시작했는데, 이는 살상용 화살 발사기를 배치하기 위한 것으로 보입니다.[NEWLINE][NEWLINE]로마의 저술가 베게티우스(서기 4세기경 활동)는 아르쿠발리스타(Arcuballista)나 마누발리스타(Manuballista) 같은 화살 발사 무기의 사용을 반복해서 언급했습니다. 대부분의 학자들은 이 용어 중 하나 또는 둘 다 휴대용 기계 무기를 의미한다는 데 동의하지만, 이것이 굴절식 활인지 비틀림 동력을 이용한 것인지에 대해서는 의견이 갈립니다. 직선형 개머리판을 가진 중세 쇠뇌와 달리, 아르쿠발리스타는 석조 부조에서 독특한 조각 손잡이가 뒤쪽에 달려 있는 모습으로 묘사됩니다. 이 독특한 구조 때문에, 이 손잡이를 뒤로 당기는 동작이 트리거 바와 연결되어 회전 너트를 해제하는 방식이었을 것이라는 추측이 제기되기도 했습니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_ARQUEBUSIER"> 
-			<Text>
-				아르케부스병
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_ARQUEBUSIER_HELP"> 
-			<Text>
-				nil
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_ARQUEBUSIER_STRATEGY"> 
-			<Text>
-				아르케부스병은 머스킷병 이전에 등장하는 강력한 화약 유닛입니다. 원거리 공격 능력을 갖추고 있어 적이 접근하기 전에 막대한 피해를 줄 수 있습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_ARQUEBUSIER_TEXT"> 
-			<Text>
-				아르케부스(Arquebus)는 초기 형태의 화승총으로, 중세 말기에 등장하여 전쟁의 양상을 영원히 바꾸어 놓았습니다. 초기에는 무겁고 조작이 불편했지만, 장갑을 관통할 수 있는 위력 덕분에 기사 계급의 몰락을 가속화했습니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BAGHATUR"> 
 			<Text>
 				톨루-바투르
@@ -352512,7 +352353,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BAGHATUR_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_STEPPE] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_STEPPE_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][ICON_PRODUCTION] 생산력을 통해서만 훈련할 수 있습니다.[NEWLINE][NEWLINE]시대에 따라 전투력이 자동으로 강화되는 강력한 영웅 유닛입니다. [COLOR_CYAN]르네상스 시대[ENDCOLOR] 이후에 탄생하면 [COLOR_POSITIVE_TEXT]밍간(Mingghan)[ENDCOLOR] 승급을 얻으며, [COLOR_CYAN]원자력 시대[ENDCOLOR] 이후에는 [COLOR_POSITIVE_TEXT]장갑 보강 I[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]기동성[ENDCOLOR] 승급을 얻고 기갑 유닛으로 취급됩니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BAGHATUR_STRATEGY"> 
@@ -352532,7 +352373,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BAGHLAH_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_MID_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MID_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 캐러밸보다 약간 더 강력하며 공격 후 이동할 수 있습니다. [COLOR_POSITIVE_TEXT]해적질[ENDCOLOR] 승급을 보유한 상태로 시작하여, 적 유닛을 처치하거나 도시를 공격할 때 [ICON_GOLD] 금을 획득합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BAGHLAH_STRATEGY"> 
@@ -352552,7 +352393,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BOITA_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_INDOCHINA] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_INDOCHINA_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 삼단노선보다 강력하지만 생산 비용이 더 비쌉니다. 외국 타일에 인접했을 때 판매할 수 있는 이국적인 화물을 보유하며, [ICON_CAPITAL] 수도와의 거리에 비례하여 최대 400 [ICON_GOLD] 금과 30 XP를 획득합니다. 보이타를 해체하거나 업그레이드할 때, 해당 유닛이 보유한 총 XP만큼의 [ICON_CULTURE] 문화을 획득합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BOITA_STRATEGY"> 
@@ -352572,7 +352413,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_CD_PATAGONIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_PATAGONIAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 흉갑기병보다 강력합니다. [COLOR_POSITIVE_TEXT]개활지[ENDCOLOR]에 있는 유닛을 공격할 때 [ICON_RANGED_STRENGTH] 원거리 전투력이 15% 증가하며, 이 유닛의 볼라(Bola)에 맞은 지상 유닛은 1턴 동안 이동 비용이 2만큼 증가합니다. [COLOR_POSITIVE_TEXT]명중 I[ENDCOLOR] 승급을 보유한 상태로 시작합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_BOLAS_RIDER_STRATEGY"> 
@@ -352585,6 +352426,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				볼라스(Bolas)는 식민지 시대 남아메리카의 가우초들이 사용한 것으로 가장 유명하지만, 콜럼버스 이전의 정착지 유적에서도 발견됩니다. 특히 파타고니아의 원주민(주로 테우엘체족)은 이를 사용해 200파운드에 달하는 과나코와 레아를 사냥했습니다. 마푸체족과 잉카 군대 역시 전투에서 볼라스를 사용했습니다. 마푸체 전사들은 아라우카니아 점령기(1861~1883) 동안 칠레 군대와의 교전에서 볼라스를 적극적으로 활용했습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION"> 
+			<Text>
+				콘도르 군단
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_HELP"> 
+			<Text>
+				[ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] 하위 문화 그룹이 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_STRATEGY"> 
+			<Text>
+				콘도르 군단이 폭탄 투하를 더 잘합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_CONDOR_LEGION_TEXT"> 
+			<Text>
+				콘도르 군단은 나치 독일 공군과 육군으로 구성된 부대로, 1936년 7월부터 1939년 3월까지 스페인 내전에서 국민군을 지원했습니다. 1936년 7월 17일 스페인에서 군사 쿠데타가 발생하여 내전이 발발하자, 국민군은 독일과 이탈리아에 지원을 요청했습니다. 유럽에서 더 큰 전쟁이 일어나는 것을 우려한 독일은 외무부와 경제부에 개입 사실을 숨긴 채 300만 라이히스마르크를 지원했습니다.[NEWLINE][NEWLINE]콘도르 군단은 초기에는 Ju 52 폭격기 3개 편대와 He 51 전투기 3개 편대로 구성되었습니다. 지휘관은 제1차 세계 대전 참전 용사인 휴고 슈페를레였습니다. 스페인 내전 기간 동안 독일 참모부는 전략 폭격 기법 개발에 특히 관심을 가졌고, 이는 이후 제2차 세계 대전에서 널리 사용되었습니다. 콘도르 군단은 게르니카 폭격과 같은 만행으로 국제적인 비난을 받았습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_CRUZOB"> 
 			<Text>
 				크루소브
@@ -352592,7 +352453,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_CRUZOB_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_MESOAMERICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MESOAMERICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][ICON_PEACE] 신앙으로 구매할 수 있습니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_CRUZOB_STRATEGY"> 
@@ -352632,7 +352493,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_DAPON_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_HIMALAYAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_HIMALAYAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][ICON_PEACE] 신앙으로 구매할 수 있습니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_DAPON_STRATEGY"> 
@@ -352652,7 +352513,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_DJELI_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_CENTRAL_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다. 적 유닛을 처치할 때마다 [ICON_CAPITAL] 수도에서 다음 [ICON_GREAT_MUSICIAN] 젤리(Djeli) 탄생에 필요한 점수의 2%를 획득합니다. 젤리를 소모하면 15턴 동안 모든 [ICON_GREAT_WORK] 걸작에 [ICON_CULTURE] 문화 +3, 모든 국가 불가사의에 [ICON_PEACE] 신앙 +2, 그리고 모든 [ICON_MUSICIAN] 음악가 및 음악가 길드에 [ICON_TOURISM] 관광 +5 보너스를 부여합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_DJELI_STRATEGY"> 
@@ -352672,7 +352533,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_GOLEYO_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_CENTRAL_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_CENTRAL_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 전차 궁수보다 [ICON_RANGE_STRENGTH] 원거리 공격력은 낮지만 [ICON_STRENGTH] 전투력은 훨씬 높습니다. 전차 궁수와 달리 지형 페널티를 받지 않으며 [ICON_RES_HORSE] 전략 자원(말)이 필요하지 않습니다. [COLOR_POSITIVE_TEXT]숲의 지킴이[ENDCOLOR] 승급을 보유한 상태로 시작합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_GOLEYO_STRATEGY"> 
@@ -352712,7 +352573,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_GREAT_PLAINS] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_GREAT_PLAINS_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_INDIAN_SCOUT_STRATEGY"> 
@@ -352725,6 +352586,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				유럽 식민지 개척자들은 1634~1638년의 피쿼트 전쟁, 미국 독립 전쟁, 1812년 전쟁 등에서 인디언 동맹군을 모집했습니다. 미국 원주민들은 남북 전쟁 당시 양측 모두에서 싸웠으며, 제2차 세계 대전에서 활약한 '코드 토커'와 같은 해외 군사 임무에도 참여했습니다. 인디언 정찰대(Indian Scouts)는 19세기 말과 20세기 초 미국 서부에서 활발히 활동했습니다. 1916년 판초 비야를 추격하기 위해 존 J. 퍼싱 장군의 멕시코 원정에 동행한 이들도 포함됩니다. 인디언 정찰대는 1947년 마지막 대원이 애리조나주 포트 후아추카에서 퇴역하면서 공식적으로 해체되었습니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE"> 
+			<Text>
+				국제 여단
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_HELP"> 
+			<Text>
+				외인부대에서 업그레이드할 수 있습니다.[NEWLINE][COLOR_CYAN]현대 시대[ENDCOLOR]에 [ICON_WAR] 전쟁에 처음 참가할 때 6개의 [COLOR_POSITIVE_TEXT]무료[ENDCOLOR] 유닛을 받습니다.[NEWLINE][ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_WESTERN_IBERIAN_SHORT_DESC}[ENDCOLOR] 하위 문화 그룹이 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_STRATEGY"> 
+			<Text>
+				국제여단은 외인부대와 용병 사이에서 해금되는 용병 부대입니다. 실제로 외인부대를 창설할 수 있다면, 외인부대를 국제여단으로 바로 업그레이드할 수 있습니다. 모든 여단은 창설 즉시 관광 수입을 증가시키지만, 동시에 최대 6개까지만 보유할 수 있습니다. 다행히 첫 현대 전쟁에 참전할 때 6개의 여단을 무료로 지급받으므로 큰 도움이 됩니다. 여단은 군수품을 소모하지 않으므로, 갑자기 최대 보유량을 초과하게 되더라도 걱정할 필요가 없습니다![NEWLINE][NEWLINE]여단은 보병으로 업그레이드되고 추가 관광 수입 생성은 중단되지만, 강력한 진급 능력은 그대로 유지합니다. 여기에는 외인부대에서 유래한 진급 능력과 강력한 "멈추지 마라!" 진급 능력이 모두 포함됩니다. 어떤 이념을 따르든, 당신을 억압하려는 자들과, 더 나아가 승리 화면을 가로채려는 자들에 맞서 싸우십시오!
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_INTERNATIONAL_BRIGADE_TEXT"> 
+			<Text>
+				국제 여단(Brigadas Internacionales)은 스페인 내전 당시 제2차 스페인 공화국의 인민전선 정부를 지원하기 위해 공산주의 인터내셔널이 조직한 자원병 부대였습니다. 국제여단은 1936년부터 1938년까지 2년간 활동했으며, 전쟁 기간 동안 약 3만 2천 명의 병력이 참여한 것으로 추산됩니다. 이 부대는 소련의 코민테른의 강력한 지원을 받았는데, 코민테른은 무기, 병참, 군사 고문, 그리고 내무인민위원회(NKVD)의 지원을 제공했습니다. 자원병의 대부분은 프랑스(프랑스 공산당 당원이 많았음)와 이탈리아 및 독일 출신의 공산주의 망명자들로 구성되었습니다. 유대인들도 많이 참여했는데, 특히 미국, 폴란드, 루마니아, 프랑스, 영국, 아르헨티나 출신 자원병들 중에 상당수가 있었습니다. 그들은 마드리드, 하라마, 과달라하라, 브루네테, 벨치테, 테루엘, 아라곤, 에브로 전투에 참전했습니다.[NEWLINE][NEWLINE]마드리드 전투는 공화국에 큰 성공을 가져다주었고, 프란시스코 프랑코의 군대에 의한 빠른 패배를 막아냈습니다. 이 승리에서 국제여단의 역할은 일반적으로 인정되었지만, 코민테른의 선전으로 과장되어 외부 세계는 스페인 부대의 승리가 아닌 국제여단의 승리만을 접하게 되었습니다. 이러한 선전은 매우 성공적이어서 영국 대사 헨리 칠튼 경은 마드리드를 방어한 군대에 스페인인은 한 명도 없었다고 선언하기까지 했습니다. 그러나 이후 대부분의 전투는 패배로 끝났습니다. 국제여단은 해체 마지막 해에 스페인 외인부대의 일부로 스페인 공화국군에 편입되었습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY"> 
 			<Text>
 				메소포타미아 레비
@@ -352732,7 +352613,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_CD_CRESCENT] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_MESOPOTAMIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 라이플병보다 약간 저렴합니다. [COLOR:255:230:150:255]부족 분과[ENDCOLOR] 승급을 보유하여 [COLOR_POSITIVE_TEXT]사막[ENDCOLOR] 타일에서 지형 비용을 무시하고 회복량이 두 배가 되며, [COLOR_POSITIVE_TEXT]강[ENDCOLOR]을 건너 공격할 때의 페널티가 없고 강을 따라 이동할 때 [ICON_MOVES] 이동력이 두 배가 됩니다.[NEWLINE][NEWLINE]이 유닛을 훈련하는 동안 도시의 [ICON_FOOD] 성장이 정지됩니다. 유닛이 완성되면 도시의 [ICON_CITIZEN] 인구가 1 감소합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_IRAQ_LEVY_STRATEGY"> 
@@ -352752,7 +352633,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_JUMBE_HELP"> 
 			<Text>
-				[ICON_CULTURE_JFD_EAST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹의 [ICON_GREAT_MERCHANT] 위대한 상인을 대체합니다. [COLOR_MAGENTA]정책[ENDCOLOR]을 채택할 때마다 [ICON_CAPITAL] 수도에서 [ICON_GREAT_MERCHANT] 줌베 생산을 위한 진행도를 10% 획득합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]읽기 쓰기 능력[ENDCOLOR], [COLOR_POSITIVE_TEXT]숙련자[ENDCOLOR], [COLOR_POSITIVE_TEXT]귀족[ENDCOLOR] 승급을 보유한 상태로 시작합니다. 줌베의 통상 사절단 임무는 기본 [ICON_GOLD] 금을 50% 더 많이 생성합니다.[NEWLINE][NEWLINE]줌베를 소모하면 제국의 모든 전략 자원이 [ICON_GOLDEN_AGE] 황금기 점수 +1을 얻고, 모든 [ICON_MERCHANT] 상인은 [ICON_FOOD] 식량 +1을 얻으며, 모든 도시는 [ICON_TOURISM] 관광 +1을 얻습니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_JUMBE_STRATEGY"> 
@@ -352772,7 +352653,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_KAIMILOA_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_OCEANIC] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_OCEANIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE]첫 번째 카이미로아를 획득하면 20턴 동안 모든 [ICON_MUSICIAN] 음악가가 [ICON_GREAT_ADMIRAL] 위대한 제독 점수를 +2 생성합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_KAIMILOA_STRATEGY"> 
@@ -352812,7 +352693,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_WOODLANDS] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WOODLANDS_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 기병 및 기사와 달리 속도가 느리고 [ICON_RES_HORSE] 전략 자원(말)이 필요하지 않습니다. 방어 보너스를 받을 수 있지만, 승급 계산 시에는 여전히 기갑 유닛으로 취급됩니다. [COLOR_POSITIVE_TEXT]스톰프 댄스(Stomp Dance)[ENDCOLOR] 승급을 보유하여 강 근처에서 전투력과 이동력이 크게 상승하며, 획득한 경험치에 비례해 [ICON_INFLUENCE] 영향력을 얻습니다.[NEWLINE][NEWLINE]두 기병 유닛을 모두 대체하기 위해 시대에 따라 [ICON_STRENGTH] 전투력과 [ICON_PRODUCTION] 생산 비용이 증가합니다. 고전 시대에 +3 [ICON_STRENGTH]/+35 [ICON_PRODUCTION], 중세 시대에 추가로 +7 [ICON_STRENGTH]/+35 [ICON_PRODUCTION] 보너스를 얻습니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_MAHAROLUKTI_STRATEGY"> 
@@ -352832,7 +352713,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_MOUKAHLA_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_WEST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WEST_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 전열보병보다 약간 더 강력합니다. [COLOR_POSITIVE_TEXT]사막 전사[ENDCOLOR] 승급을 보유하여 [COLOR_POSITIVE_TEXT]사막[ENDCOLOR] 타일에서 전투력이 증가하며, [COLOR_POSITIVE_TEXT]페잔 약탈자[ENDCOLOR] 승급을 통해 사막에서 [ICON_MOVES] 이동력이 두 배가 되고 도시로부터 받는 피해가 감소하며 도시를 공격할 때 입힌 피해만큼 [ICON_GOLD] 금을 훔쳐옵니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_MOUKAHLA_STRATEGY"> 
@@ -352852,7 +352733,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_PENJAJAP_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_EAST_INDIES] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EAST_INDIES_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_PENJAJAP_STRATEGY"> 
@@ -352872,32 +352753,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_RANGER_STRATEGY"> 
 			<Text>
-				설계 근거가 여기에 들어갑니다.
+				이 내용은 다른 곳에서 업데이트되었습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_RANGER_TEXT"> 
 			<Text>
-				시빌로피디아 텍스트가 여기에 들어갑니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_REISLAUFER"> 
-			<Text>
-				라이슬로이퍼
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_REISLAUFER_HELP"> 
-			<Text>
-				nil
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_REISLAUFER_STRATEGY"> 
-			<Text>
-				라이슬로이퍼는 장창병을 대체하며, 도시 국가의 군사 유닛을 처리하거나 험난한 지형에서 방어할 때 탁월한 성능을 발휘합니다. 특히 기갑 및 기병 유닛에 대한 강력한 대항 수단이 됩니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_REISLAUFER_TEXT"> 
-			<Text>
-				라이슬로이퍼는 중세 후기와 르네상스 시대에 활약한 스위스 용병들입니다. 그들은 밀집된 장창 방진을 사용하여 당시 유럽 전장을 지배하던 기사들의 돌격에 맞섰습니다. 이들의 엄격한 규율과 무자비함은 유럽 전역에 명성을 떨쳤으며, 이후 독일의 랜드스네히트 같은 다른 보병 전술의 모델이 되었습니다.
+				이미 쓰여진 내용입니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_SEPOY"> 
@@ -352947,7 +352808,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_STRADIOTI_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_SOUTHERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_SOUTHERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][ICON_GOLD] 금 또는 [ICON_PEACE] 신앙으로만 구매할 수 있습니다.[NEWLINE][NEWLINE]대체하는 중기병보다 약간 더 강력합니다. [COLOR_POSITIVE_TEXT]매복 I[ENDCOLOR] 및 [COLOR_POSITIVE_TEXT]매복 II[ENDCOLOR] 승급을 보유하여 [COLOR_POSITIVE_TEXT]험지[ENDCOLOR] 공격 시 유리합니다. 또한 [COLOR_POSITIVE_TEXT]자크마르야(Gjakmarrja)[ENDCOLOR] 승급을 통해 적 처치 시 [ICON_GOLD] 금과 [ICON_CULTURE] 문화를 획득하며 체력을 30 회복합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_STRADIOTI_STRATEGY"> 
@@ -352972,7 +352833,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TROLLE_STRATEGY"> 
 			<Text>
-				이 유닛은 자국 해안 근처에서 싸울 때 막강한 방어력을 발휘합니다. 대양 항해 성능은 떨어지지만, 좁은 해협이나 도시 근처에서 적의 대형 함대를 저지하는 데 매우 효율적입니다.
+				우리의 설계 의도는 여기에 설명되어 있습니다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TROLLE_TEXT"> 
@@ -352987,7 +352848,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TUNTIAN_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_FAR_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_FAR_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TUNTIAN_STRATEGY"> 
@@ -353027,7 +352888,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_PACIFIC] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_PACIFIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]대체하는 창병보다 강력하며, 소모되지 않고 해상 자원을 개발할 수 있습니다. [COLOR_POSITIVE_TEXT]수륙양용[ENDCOLOR] 승급과 [COLOR_POSITIVE_TEXT]불꽃바늘 연고[ENDCOLOR] 승급을 보유하여 [COLOR_YELLOW]중립[ENDCOLOR] 및 [COLOR_NEGATIVE_TEXT]적대[ENDCOLOR] 영토에서 더 많이 회복할 수 있습니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_TXATKUNEEXS_STRATEGY"> 
@@ -353047,7 +352908,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_UMIAK_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_POLAR] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_POLAR_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][ICON_GREAT_ADMIRAL] 위대한 제독처럼 항구를 이동할 수 있습니다.[NEWLINE][NEWLINE]소모되지 않고 [COLOR_POSITIVE_TEXT]해상 자원[ENDCOLOR]을 개발할 수 있으며, [COLOR_POSITIVE_TEXT]빙하[ENDCOLOR] 타일에 진입할 수 있습니다. 정찰을 통해 가장 가까운 도시에 [ICON_FOOD] 식량을 제공합니다. 정찰 시 XP를 획득하는 [COLOR_POSITIVE_TEXT]정찰[ENDCOLOR] 승급을 보유한 상태로 시작합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_UMIAK_STRATEGY"> 
@@ -353060,6 +352921,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				우미악은 유픽과 이누이트족이 사용하는 개방형 가죽 배의 일종으로, 본래 시베리아에서 그린란드에 이르는 모든 해안 지역에서 발견되었습니다. 툴레 시대에 처음 사용된 이 배는 전통적으로 여름철에 사람과 소지품을 계절 사냥터로 옮기거나 고래와 바다표범을 사냥하는 데 쓰였습니다. 우미악은 용골이 없기 때문에 돛을 이용해 역풍을 거슬러 항해(Tacking)할 수는 없지만, 그 대신 몇 명의 인원만으로도 유빙이나 해안 얼음 위를 가로질러 개활지까지 운반할 수 있다는 장점이 있습니다. 또한 소리에 민감하여 사냥꾼을 피하기 위해 얼음 밑으로 이동하는 북극고래를 사냥할 때 핵심적인 요소인 '정숙성'이 매우 뛰어납니다.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VARANGIAN"> 
+			<Text>
+				바랑인
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VARANGIAN_HELP"> 
+			<Text>
+				nil
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VARANGIAN_STRATEGY"> 
+			<Text>
+				바랑인들은 골드를 사용하여 획득할 수 있는, 매우 다재다능한 용병 유닛입니다. 이들은 다른 문명에서만 사용할 수 있는 다양한 특화 능력을 보유하고 있어, 특히 강을 건너 공격 및 약탈 시 공격력과 속도를 크게 향상시켜 줍니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VARANGIAN_TEXT"> 
+			<Text>
+				바랑인들은 8세기와 9세기부터 현재의 벨라루스, 러시아, 우크라이나 지역에 정착한 스칸디나비아 출신의 전사, 상인, 정착민으로, 키예프 루스 국가와 폴로츠크 및 투로프 공국을 세웠습니다. 무역, 해적 행위, 용병 활동에 종사한 바랑인들은 노르드 사가에서 흑해 북쪽 지역을 일컫는 가르다리키 강 유역과 항구를 누비고 다녔습니다. 바랑인들은 발트해와 카스피해를 연결하는 볼가 무역로와 흑해 및 콘스탄티노플로 이어지는 드네프르 강과 드네스트르 강 무역로를 장악했습니다. 콘스탄티노플의 풍요로움에 매료된 바랑 루스는 루스-비잔틴 전쟁을 일으켰고, 이 전쟁 중 일부는 유리한 무역 조약으로 이어졌습니다. 적어도 10세기 초부터 많은 바랑인들은 비잔틴 제국군에서 용병으로 복무했으며, 비잔틴 황제의 경호대인 정예 바랑인 친위대를 구성했습니다. 결국 대부분은 노르드 이교에서 정교회로 개종했으며, 이는 988년 키예프 루스의 기독교화로 절정에 달했습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_VIKING"> 
 			<Text>
 				바이킹
@@ -353067,7 +352948,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_VIKING_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_CD_SCANDINAVIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_NORTHERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE][NEWLINE]진보된 기반 시설과 추가 [ICON_CITIZEN] 인구를 가진 새로운 도시를 건설합니다. 대체하는 개척자(Pioneer)와 달리 상당한 [ICON_STRENGTH] 전투력을 보유하고 있으며, 즉시 [COLOR_POSITIVE_TEXT]대양[ENDCOLOR]을 건널 수 있습니다.[NEWLINE][NEWLINE]이 유닛을 훈련하는 동안 도시의 [ICON_FOOD] 성장이 정지됩니다. 유닛이 완성되면 도시의 [ICON_CITIZEN] 인구가 1 감소합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_VIKING_STRATEGY"> 
@@ -353085,9 +352966,29 @@ The ship has weather'd every rack; the prize we sought is won."
 				보이
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VOIVODE"> 
+			<Text>
+				보이보드
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VOIVODE_HELP"> 
+			<Text>
+				[ICON_CULTURE_JFD_CENTRAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_SUB_CD_CENTRAL_SLAVIC_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VOIVODE_STRATEGY"> 
+			<Text>
+				보이보드는 기존의 대장군에 비해 방어력이 뛰어나며, 도시에 배치하면 유닛 생산과 도시 방어력을 모두 향상시킬 수 있어 가장 효과적입니다. 서슬라브 문명은 방어적인 전쟁을 벌인 후 공격이나 외교적 승리를 거두는 전략을 구사하는 것이 가장 유리합니다. 이러한 전략을 통해 강력한 군사력을 갖추지 않고도 적의 공격이 시작되면 신속하게 방어 병력을 증강할 수 있습니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CD_VOIVODE_TEXT"> 
+			<Text>
+				'보이보다스(voivodas)'라는 칭호는 원래 10세기 비잔틴 제국의 콘스탄티누스 7세 황제가 그의 저서 《제국 통치론(De Administrando Imperio)》에서 헝가리 군사 지도자들을 지칭할 때 처음 등장했습니다. 이후 중세 초기부터 중부, 남동부, 동유럽에서 군사 지도자 또는 군벌을 가리키는 칭호로 널리 사용되었습니다. 폴란드-리투아니아 연방에서는 '보이보드(voivode)'라는 칭호가 '팔스그라베(palsgrave)'와 같은 의미로 사용되었는데, 팔스그라베는 왕 다음으로 높은 서열의 군 최고 사령관을 의미했습니다. 이는 궁정 직위라기보다는 관직에 가까웠으며, 보스니아 대공과 유사한 지위였습니다. 러시아 제국에서는 보이보드가 군사 총독을 의미했습니다. 다뉴브 강 유역의 공국들 사이에서는 보이보드가 공작의 칭호로 여겨졌습니다.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_VOI_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_EASTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_EASTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_VOI_STRATEGY"> 
@@ -353107,7 +353008,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER_HELP"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_WEST_AFRICAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WEST_AFRICAN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.[NEWLINE]이 유닛으로 무역 임무를 수행하면 [ICON_INFLUENCE] 영향력뿐만 아니라 100 [ICON_GOLD] 금을 추가로 획득합니다.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]{TXT_KEY_PROMOTION_CD_WANGARA}[ENDCOLOR] 승급을 보유하여 [COLOR_POSITIVE_TEXT]사막[ENDCOLOR]에서 [ICON_MOVES] 이동력이 두 배가 되며, 무역 임무 수행 시 20 [ICON_CULTURE] 문화와 [ICON_TOURISM] 관광을 일시불로 획득합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_WANGARA_TRADER_STRATEGY"> 
@@ -353120,26 +353021,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				왕가라는 풀라니족에 뿌리를 둔 디아스포라 공동체로, 사하라 종단 무역을 포함하여 서아프리카 전역에서 장거리 무역을 전문으로 하는 상인 집단이었습니다. 가나 제국에서 기원한 왕가라는 시간이 흐르며 팀북투, 아가데즈, 카노, 가오 등 수많은 공동체와 민족 집단에 통합되었습니다.[NEWLINE][NEWLINE]역사 기록에서 왕가라에 대한 첫 언급은 사금 무역을 하던 가나 제국 산하의 부족으로 나타납니다. 알 바크리는 그들을 "세네갈강과 니제르강 지역의 금 무역 전문가"라고 불렀습니다. 왕가라의 첫 번째 상업적 확장은 9세기에서 11세 사이 타크루르와 푸타 잘론 지역으로 이루어졌습니다. 12세기에서 14세기 사이에는 무역망을 동쪽의 가오 제국과 차드호 분지, 남쪽의 기니 고원과 볼타강까지 확장했습니다.[NEWLINE][NEWLINE]이러한 전략적 이동은 마그레브와 안달루시아 지역의 정치적 패권과 상업 활동의 결과로 증가한 무역로 물동량에 대한 대응이었으며, 부분적으로는 사하라 남부에서 가나 제국의 정치적 이익을 공고히 하려는 노력이었습니다. 수년간 현지 인구와 동화된 후, 많은 왕가라 공동체는 단순한 소닝케족이라는 민족성보다는 그들만의 독자적인 사회 계층으로서의 정체성을 더 강하게 갖게 되었습니다.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_WEHRMACHT"> 
-			<Text>
-				국방군
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_WEHRMACHT_HELP"> 
-			<Text>
-				nil
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_WEHRMACHT_STRATEGY"> 
-			<Text>
-				보병을 대체하는 이 유닛은 '전격전(Blitz)' 승급을 보유한 상태로 시작하므로, 자신의 체력을 대가로 적의 방어선을 즉시 돌파할 수 있습니다. 하지만 이들의 진정한 강점은 기갑 유닛과 적절히 배치되었을 때 전투력이 비약적으로 상승한다는 점에 있습니다. 이를 통해 압도적이고 갑작스러운 화력으로 믿기 힘든 승리를 거둘 수 있습니다.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_CD_WEHRMACHT_TEXT"> 
-			<Text>
-				1933년 나치가 권력을 장악한 후, 아돌프 히틀러의 가장 노골적이고 호전적인 행보 중 하나는 현대적인 공격 능력을 갖춘 무장 세력인 국방군(Wehrmacht)을 창설한 것이었습니다. 이는 잃어버린 영토를 되찾고 새로운 영토를 획득하여 주변국을 지배하려는 나치 정권의 장기적 목표를 수행하기 위함이었습니다. 지상군 자체는 육군(Heer)이라 불렸습니다. 보병의 90%가 도보 보병이었음에도 불구하고 기갑 사단이 매우 눈에 띄는 역할을 수행했는데, 전차가 적의 방어선을 돌파하여 적 부대를 고립시키면 그 뒤를 따르는 보병들이 신속하게 적군을 섬멸하거나 생포하는 전술을 구사했습니다.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_XON"> 
 			<Text>
 				혼
@@ -353147,7 +353028,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_XON_HELP"> 
 			<Text>
-				[ICON_CULTURE_CD_PATAGONIAN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_CD_PATAGONIAN_SHORT_DESC}[ENDCOLOR] 문화 그룹의 [ICON_PROPHET] 위대한 예연자를 대체합니다.[NEWLINE]위대한 예언자의 일반적인 능력 외에도, 손(Xon)을 소모하면 제국 전체에 적용되는 7가지 고유 보너스 중 다음 단계를 순차적으로 활성화합니다.
+				nil
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CD_XON_STRATEGY"> 
@@ -354630,7 +354511,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA"> 
 			<Text>
-				[ICON_CULTURE_JFD_COLONIAL] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_COLONIAL_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BYZANTINE_CATAPHRACT"> 
@@ -355125,7 +355006,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_SHIPOFTHELINE"> 
 			<Text>
-				이 유닛을 사용하려면 [ICON_CULTURE_JFD_WESTERN] [COLOR:182:17:254:255]{TXT_KEY_CULTURE_JFD_WESTERN_SHORT_DESC}[ENDCOLOR] 문화 그룹이 필요합니다.
+				
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_SHOSHONE_COMANCHE_RIDERS"> 
@@ -362486,16 +362367,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_XBALANQUE_SHORT"> 
 			<Text>
 				츠바란쿠
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_XON_EVENT"> 
-			<Text>
-				내세(The Next World)
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_XON_EVENT_HELP"> 
-			<Text>
-				우리 손(xon)의 육신은 평온히 누워 있으나, 그 영혼은 경이로운 업적을 이루기 위해 여행 중입니다. 그는 떠나기 전 우리 백성에게 새로운 세상에서 살아가는 꿈에 대해 이야기했습니다. 이 환상은 우리에게 가르침을 줍니다. 이제 행동합시다.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_XP"> 

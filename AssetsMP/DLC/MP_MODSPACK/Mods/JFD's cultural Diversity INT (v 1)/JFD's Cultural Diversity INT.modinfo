@@ -5,10 +5,10 @@
     <Stability>Beta</Stability>
     <Teaser>JFD's cultural Diversity의 한글 번역</Teaser>
     <Description>JFD's cultural Diversity (6uc라고 부르는 것) 의 한글 번역 모드입니다.</Description>
-    <Authors>HANDANI</Authors>
+    <Authors>hyuckkim</Authors>
     <SpecialThanks>디시인사이드 문명 갤러리(DCinside Civilization Gallery)</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
-    <Homepage>http://github.com/handanikr/</Homepage>
+    <Homepage>http://github.com/hyuckkim</Homepage>
     <AffectsSavedGames>0</AffectsSavedGames>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
     <SupportsMultiplayer>1</SupportsMultiplayer>
@@ -24,8 +24,8 @@
   </Dependencies>
   <Blocks />
   <Files>
-    <File md5="6A022837FA019527B6449F27D365F919" import="0">NewText.xml</File>
-    <File md5="6A022837FA019527B6449F27D365F919" import="0">TextChanged.sql</File>
+    <File md5="2ea1a3ac4cd975cefa10c19fcf4490bb" import="0">NewText.xml</File>
+    <File md5="d8e87c743548a2f93ee55c27a8a1ea15" import="0">TextChanged.sql</File>
   </Files>
   <Actions>
     <OnModActivated>

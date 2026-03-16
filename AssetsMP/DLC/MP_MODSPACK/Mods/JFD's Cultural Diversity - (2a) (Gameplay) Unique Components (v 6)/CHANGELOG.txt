@@ -1,0 +1,98 @@
+--Released beta 24th Dec 2025
+-----------------------------
+v 1
+-----------------------------
+-- fixed some Row tags to Replace for Reindeer compatibility
+-- fixed trigger that made custom civs that loaded after CD not work
+-- changed Vietnam to Mandala (from Far Eastern) while we wait for compatibility
+-- gave Poland the West Slavic (SUBCULTURE_CD_CENTRAL_SLAVIC) subculture
+-- added first SubCulture compatibility in Cultures/SubCultures
+ - Voivode : Great General with defensive and economic bonuses
+ - Dwor : Gallery/Manor replacement with free Opera House and yields, especially from policy unlock
+-- Added missing Baghlah strategic view icon
+-- Tolu-Batyr pushed back to Military Strategy (Prod cost doubles) and XP gain % lowered to 60 (from 100)
+-- added missing Building_WLTKDYieldMod copy statements (Sun Dance Site was missing it)
+-- Blocked Sun Dancer promo if you have an Animal Promotion already (prevents stacking multiple)
+-- Disabled food conversion on Mesopotamian Levy (lowers pop too weak)
+-- Added Boarding Party 1 to Baghlah, so they carry over more on upgrade (lowered CS by 1 to compensate)
+-- Grouped Sun Dancer and Izzat in the pedia, making them easier to find, and fixed a text error there
+-- Sun Dance Site WLTKD turns dropped to 10 (was 20)
+-- Undying Turtle defense boost increased to 15% (was 10%)
+-- Added Liquor to the Embrapa list of buffed resources
+-----------------------------
+v 2
+-----------------------------
+-- Removed unnecessary dependencies copied over from another mod (no effect atm but housekeeping)
+-- Halved the Pillage Gold on the Distillery (was 40)
+-- Fixed Voivode flag
+-- Added Lighthouse to Viking free buildings on found
+-- Airborne Ranger is now correctly Recon
+-- Grocer replacements now provide yields to Coca and Liquor
+-- Building_YieldModifiers now copied from base buildings (National Exhibit 10% culture)
+-- Dwor now 50% expensive than the base building, like the Barbican
+-- Removed Louisiana from compatibility file since it was updated (Celtic are kept because of load order weirdness)
+-- Reenabled food conversion on Mesopotamian Levy after DLL change not to consume pop
+-- Merged 5.1 CivilopediaScreen.lua
+-- Fixed Dzong not having Fortifications
+-- Added Define to interface with VP UI
+-- Fixed load order problem for Central Europe and East African Warrior UUs 
+-- Fixed Celtic event triggering on Workshop not Metalsmith
+-- Renamed Banco dei Cambi to Campsor and updated text
+-- Fixed Ethiopia Jumbe text
+-- Removed old Food/BGP on kill from Slaganz
+-- Fixed Ghat tooltip looking like it only had 1 culture
+-- Increased GAP to 100 (was 50) percent of XP on Mead Hall based on feedback
+-------------------------------
+v 3 
+-------------------------------
+-- Voi retired to city-state gift
+-- New Varangian UU for Eastern culture
+-- Fixed Xon not being able to Found Religion, and listed the unique bonuses in its Strategy text entry
+-- Fixed Sun Dance Raven promo not healing
+-- Refactored some compatibility code, will need redownload of Benin, Nigeria, and Garamantes
+-------------------------------
+v 4
+-------------------------------
+-- Reindeer and Coca now spawn correctly from Building_ResourcePlotsToPlace (instead of using lua)
+-- Spain and Portugal now part of the Iberian (SUBCULTURE_CD_WESTERN_IBERIAN) subculture
+ - International Brigade : Unique Class Merc Unit at Flight that generates Tourism and has unusual mechanics
+ - Commanderia : Castle replacement that has aspects of Belief buildings and the General Chapter promo locally
+-- General Chapter now correctly obsoletes with Gun/Armor upgrade
+-- Commanderia now also grants up to 20% Prod to Melee and Mounted based on the number of unlocked Beliefs
+-- Added Condor Legion CS Gift (will eventually be able to choose between this and the International Brigade)
+-- Maharolukti now correctly gain double movement in Forest/Jungle
+-- Distillery can no longer be replaced by Plantation
+-- Coca can now be placed in Forest and Jungle
+-- Monoxyla now has the correct promo icon
+-- General Chapter yields from Fortifications are now correctly set according to the text (Cities were already)
+-- Sobor now reduces religious unrest like the Grand Temple
+-- Stradiot and Varangian now have no purchase cooldown
+-- International Brigade does not require supply
+-------------------------------
+v 5
+-------------------------------
+-- In Enlightenment Era, East India Company is at Exploration instead (i.e. still 1 tech earlier than Econ)
+-- Fixed Metalsmith event typo allowing certain metals to be discovered together (should be only 1 per city)
+-- Removed the UI overrides folder as it is now incorporated into VP
+-- Metalsmith now gives +2 Gold/Prod/Culture from Bank/Constabulary/Gallery
+-- Metalsmith no longer fires multiple times per city (EventDuration needs to be large, not -1, which is special)
+-- Fixed East India Company update statement affecting all buildings (!)
+-- Highlander now makes human noises when selected, instead of mechanical ones
+-- West Slavic and Iberian now have Splash screens and soundtracks set
+-- Promotions now make the "level up sound"
+-- Bolas promo is no longer lost on upgrade
+-- Bolas plague changed to double movement cost (was not working as intended)
+-- Bolas Rider no longer has Accuracy I but +1 RCS
+-- Added trigger compatibility for Xon events (new Features or Resources being added)
+-- Gave plagues new IDs starting from 100 so they stack with Incan dazed (and each other)
+-- Venom plague (Amazonian UU) now prevents all healing for 3 turns (was -10 healing for 5 turns)
+-------------------------------
+v 6
+-------------------------------
+-- Patagonia Bolas code refactored for better compatibility with custom civs
+-- Refactored Djeli Great Works of Music to avoid bug where they wouldn't load in. Also added 1 more.
+-- Sepoy are now Marksmen in EE
+-- Buildings whose base very can be purchased with faith given a particular belief now correctly also require that belief
+-- Yaitiri can now be purchased with 400 Faith
+
+
